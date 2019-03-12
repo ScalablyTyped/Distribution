@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Environment extends js.Object {
   @JSName("addEventListener")
   var addEventListener_Original: downshiftLib.Anon_Abort = js.native
-  var document: reactLib.Document = js.native
+  var document: stdLib.Document = js.native
   @JSName("removeEventListener")
   var removeEventListener_Original: downshiftLib.Anon_AbortAfterprint = js.native
   def addEventListener(`type`: java.lang.String): scala.Unit = js.native

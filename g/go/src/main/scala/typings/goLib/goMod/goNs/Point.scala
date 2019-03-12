@@ -158,33 +158,33 @@ trait Point extends js.Object {
 object Point {
   @scala.inline
   def apply(
-    add: js.Function1[Point, Point],
-    copy: js.Function0[Point],
-    direction: js.Function2[scala.Double, scala.Double, scala.Double],
-    directionPoint: js.Function1[Point, scala.Double],
-    distanceSquared: js.Function2[scala.Double, scala.Double, scala.Double],
-    distanceSquaredPoint: js.Function1[Point, scala.Double],
-    equalTo: js.Function2[scala.Double, scala.Double, scala.Boolean],
-    equals: js.Function1[Point, scala.Boolean],
-    equalsApprox: js.Function1[Point, scala.Boolean],
-    isReal: js.Function0[scala.Boolean],
-    normalize: js.Function0[Point],
-    offset: js.Function2[scala.Double, scala.Double, Point],
-    projectOntoLineSegment: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, Point],
-    projectOntoLineSegmentPoint: js.Function2[Point, Point, Point],
-    rotate: js.Function1[scala.Double, Point],
-    scale: js.Function2[scala.Double, scala.Double, Point],
-    set: js.Function1[Point, Point],
-    setRectSpot: js.Function2[Rect, Spot, Point],
-    setSpot: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, Spot, Point],
-    setTo: js.Function2[scala.Double, scala.Double, Point],
-    snapToGrid: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, Point],
-    snapToGridPoint: js.Function2[Point, Size, Point],
-    subtract: js.Function1[Point, Point],
+    add: Point => Point,
+    copy: () => Point,
+    direction: (scala.Double, scala.Double) => scala.Double,
+    directionPoint: Point => scala.Double,
+    distanceSquared: (scala.Double, scala.Double) => scala.Double,
+    distanceSquaredPoint: Point => scala.Double,
+    equalTo: (scala.Double, scala.Double) => scala.Boolean,
+    equals: Point => scala.Boolean,
+    equalsApprox: Point => scala.Boolean,
+    isReal: () => scala.Boolean,
+    normalize: () => Point,
+    offset: (scala.Double, scala.Double) => Point,
+    projectOntoLineSegment: (scala.Double, scala.Double, scala.Double, scala.Double) => Point,
+    projectOntoLineSegmentPoint: (Point, Point) => Point,
+    rotate: scala.Double => Point,
+    scale: (scala.Double, scala.Double) => Point,
+    set: Point => Point,
+    setRectSpot: (Rect, Spot) => Point,
+    setSpot: (scala.Double, scala.Double, scala.Double, scala.Double, Spot) => Point,
+    setTo: (scala.Double, scala.Double) => Point,
+    snapToGrid: (scala.Double, scala.Double, scala.Double, scala.Double) => Point,
+    snapToGridPoint: (Point, Size) => Point,
+    subtract: Point => Point,
     x: scala.Double,
     y: scala.Double
   ): Point = {
-    val __obj = js.Dynamic.literal(add = add, copy = copy, direction = direction, directionPoint = directionPoint, distanceSquared = distanceSquared, distanceSquaredPoint = distanceSquaredPoint, equalTo = equalTo, equals = equals, equalsApprox = equalsApprox, isReal = isReal, normalize = normalize, offset = offset, projectOntoLineSegment = projectOntoLineSegment, projectOntoLineSegmentPoint = projectOntoLineSegmentPoint, rotate = rotate, scale = scale, set = set, setRectSpot = setRectSpot, setSpot = setSpot, setTo = setTo, snapToGrid = snapToGrid, snapToGridPoint = snapToGridPoint, subtract = subtract, x = x, y = y)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), copy = js.Any.fromFunction0(copy), direction = js.Any.fromFunction2(direction), directionPoint = js.Any.fromFunction1(directionPoint), distanceSquared = js.Any.fromFunction2(distanceSquared), distanceSquaredPoint = js.Any.fromFunction1(distanceSquaredPoint), equalTo = js.Any.fromFunction2(equalTo), equals = js.Any.fromFunction1(equals), equalsApprox = js.Any.fromFunction1(equalsApprox), isReal = js.Any.fromFunction0(isReal), normalize = js.Any.fromFunction0(normalize), offset = js.Any.fromFunction2(offset), projectOntoLineSegment = js.Any.fromFunction4(projectOntoLineSegment), projectOntoLineSegmentPoint = js.Any.fromFunction2(projectOntoLineSegmentPoint), rotate = js.Any.fromFunction1(rotate), scale = js.Any.fromFunction2(scale), set = js.Any.fromFunction1(set), setRectSpot = js.Any.fromFunction2(setRectSpot), setSpot = js.Any.fromFunction5(setSpot), setTo = js.Any.fromFunction2(setTo), snapToGrid = js.Any.fromFunction4(snapToGrid), snapToGridPoint = js.Any.fromFunction2(snapToGridPoint), subtract = js.Any.fromFunction1(subtract), x = x, y = y)
   
     __obj.asInstanceOf[Point]
   }

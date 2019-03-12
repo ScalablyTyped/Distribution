@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class QueryTable protected () extends js.Object {
   var AdjustColumnWidth: scala.Boolean = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var BackgroundQuery: scala.Boolean = js.native
   var CommandText: java.lang.String = js.native
   var CommandType: XlCmdType = js.native
@@ -25,7 +25,7 @@ class QueryTable protected () extends js.Object {
   var FieldNames: scala.Boolean = js.native
   var FillAdjacentFormulas: scala.Boolean = js.native
   var HasAutoFormat: scala.Boolean = js.native
-  val ListObject: ListObject = js.native
+  val ListObject: activexDashExcelLib.ExcelNs.ListObject = js.native
   var MaintainConnection: scala.Boolean = js.native
   var Name: java.lang.String = js.native
   @JSName("Parameters")
@@ -46,16 +46,16 @@ class QueryTable protected () extends js.Object {
   var RowNumbers: scala.Boolean = js.native
   var SaveData: scala.Boolean = js.native
   var SavePassword: scala.Boolean = js.native
-  val Sort: Sort = js.native
+  val Sort: activexDashExcelLib.ExcelNs.Sort = js.native
   var SourceConnectionFile: java.lang.String = js.native
   var SourceDataFile: java.lang.String = js.native
   var Sql: js.Any = js.native
   var TablesOnlyFromHTML: scala.Boolean = js.native
-  var TextFileColumnDataTypes: activexDashInteropLib.SafeArray[XlColumnDataType] = js.native
+  var TextFileColumnDataTypes: stdLib.SafeArray[XlColumnDataType] = js.native
   var TextFileCommaDelimiter: scala.Boolean = js.native
   var TextFileConsecutiveDelimiter: scala.Boolean = js.native
   var TextFileDecimalSeparator: java.lang.String = js.native
-  var TextFileFixedColumnWidths: activexDashInteropLib.SafeArray[scala.Double] = js.native
+  var TextFileFixedColumnWidths: stdLib.SafeArray[scala.Double] = js.native
   var TextFileOtherDelimiter: java.lang.String = js.native
   var TextFileParseType: XlTextParsingType = js.native
   var TextFilePlatform: scala.Double = js.native
@@ -76,7 +76,7 @@ class QueryTable protected () extends js.Object {
   var WebSelectionType: XlWebSelectionType = js.native
   var WebSingleBlockTextImport: scala.Boolean = js.native
   var WebTables: java.lang.String = js.native
-  val WorkbookConnection: WorkbookConnection = js.native
+  val WorkbookConnection: activexDashExcelLib.ExcelNs.WorkbookConnection = js.native
   def CancelRefresh(): scala.Unit = js.native
   def Delete(): scala.Unit = js.native
   def Destination(Address: java.lang.String): Range = js.native

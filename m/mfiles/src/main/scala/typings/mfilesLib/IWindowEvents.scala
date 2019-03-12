@@ -12,12 +12,12 @@ trait IWindowEvents extends IEvents {
 object IWindowEvents {
   @scala.inline
   def apply(
-    Register: js.Function2[mfilesLib.MFilesNs.Event, js.Function, scala.Double],
-    Unregister: js.Function1[scala.Double, scala.Unit],
-    OnCloseWindow: js.Function0[scala.Boolean] = null
+    Register: (mfilesLib.MFilesNs.Event, js.Function) => scala.Double,
+    Unregister: scala.Double => scala.Unit,
+    OnCloseWindow: () => scala.Boolean = null
   ): IWindowEvents = {
-    val __obj = js.Dynamic.literal(Register = Register, Unregister = Unregister)
-    if (OnCloseWindow != null) __obj.updateDynamic("OnCloseWindow")(OnCloseWindow)
+    val __obj = js.Dynamic.literal(Register = js.Any.fromFunction2(Register), Unregister = js.Any.fromFunction1(Unregister))
+    if (OnCloseWindow != null) __obj.updateDynamic("OnCloseWindow")(js.Any.fromFunction0(OnCloseWindow))
     __obj.asInstanceOf[IWindowEvents]
   }
 }

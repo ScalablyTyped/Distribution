@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Carousel: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsCarouselMod.CarouselProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    CarouselProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
       reactLib.HTMLDivElement
     ]), 

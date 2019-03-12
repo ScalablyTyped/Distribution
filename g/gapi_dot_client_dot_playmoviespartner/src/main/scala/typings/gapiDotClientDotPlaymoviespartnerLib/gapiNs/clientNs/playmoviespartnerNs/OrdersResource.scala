@@ -25,16 +25,10 @@ trait OrdersResource extends js.Object {
 object OrdersResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountIdAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Order]
-    ],
-    list: js.Function1[
-      gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountIdAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListOrdersResponse]
-    ]
+    get: gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountIdAlt => gapiDotClientLib.gapiNs.clientNs.Request[Order],
+    list: gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountIdAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ListOrdersResponse]
   ): OrdersResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[OrdersResource]
   }

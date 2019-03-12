@@ -53,20 +53,15 @@ object XStarBasicAccess {
   @scala.inline
   def apply(
     LibraryContainer: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
-    acquire: js.Function0[scala.Unit],
-    addDialog: js.Function3[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      scala.Unit
-    ],
-    addModule: js.Function4[java.lang.String, java.lang.String, java.lang.String, java.lang.String, scala.Unit],
-    createLibrary: js.Function4[java.lang.String, java.lang.String, java.lang.String, java.lang.String, scala.Unit],
-    getLibraryContainer: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addDialog: (java.lang.String, java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]) => scala.Unit,
+    addModule: (java.lang.String, java.lang.String, java.lang.String, java.lang.String) => scala.Unit,
+    createLibrary: (java.lang.String, java.lang.String, java.lang.String, java.lang.String) => scala.Unit,
+    getLibraryContainer: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XStarBasicAccess = {
-    val __obj = js.Dynamic.literal(LibraryContainer = LibraryContainer, acquire = acquire, addDialog = addDialog, addModule = addModule, createLibrary = createLibrary, getLibraryContainer = getLibraryContainer, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(LibraryContainer = LibraryContainer, acquire = js.Any.fromFunction0(acquire), addDialog = js.Any.fromFunction3(addDialog), addModule = js.Any.fromFunction4(addModule), createLibrary = js.Any.fromFunction4(createLibrary), getLibraryContainer = js.Any.fromFunction0(getLibraryContainer), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XStarBasicAccess]
   }

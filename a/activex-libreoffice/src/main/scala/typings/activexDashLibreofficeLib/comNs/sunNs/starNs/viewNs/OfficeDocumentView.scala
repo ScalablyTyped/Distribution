@@ -16,20 +16,17 @@ object OfficeDocumentView {
   def apply(
     Selection: js.Any,
     ViewSettings: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
-    acquire: js.Function0[scala.Unit],
-    addSelectionChangeListener: js.Function1[XSelectionChangeListener, scala.Unit],
-    getControl: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlModel, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl
-    ],
-    getSelection: js.Function0[js.Any],
-    getViewSettings: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeSelectionChangeListener: js.Function1[XSelectionChangeListener, scala.Unit],
-    select: js.Function1[js.Any, scala.Boolean]
+    acquire: () => scala.Unit,
+    addSelectionChangeListener: XSelectionChangeListener => scala.Unit,
+    getControl: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlModel => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl,
+    getSelection: () => js.Any,
+    getViewSettings: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeSelectionChangeListener: XSelectionChangeListener => scala.Unit,
+    select: js.Any => scala.Boolean
   ): OfficeDocumentView = {
-    val __obj = js.Dynamic.literal(Selection = Selection, ViewSettings = ViewSettings, acquire = acquire, addSelectionChangeListener = addSelectionChangeListener, getControl = getControl, getSelection = getSelection, getViewSettings = getViewSettings, queryInterface = queryInterface, release = release, removeSelectionChangeListener = removeSelectionChangeListener, select = select)
+    val __obj = js.Dynamic.literal(Selection = Selection, ViewSettings = ViewSettings, acquire = js.Any.fromFunction0(acquire), addSelectionChangeListener = js.Any.fromFunction1(addSelectionChangeListener), getControl = js.Any.fromFunction1(getControl), getSelection = js.Any.fromFunction0(getSelection), getViewSettings = js.Any.fromFunction0(getViewSettings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeSelectionChangeListener = js.Any.fromFunction1(removeSelectionChangeListener), select = js.Any.fromFunction1(select))
   
     __obj.asInstanceOf[OfficeDocumentView]
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val RangeInput: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsRangeInputMod.RangeInputProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    RangeInputProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
       reactLib.HTMLInputElement
     ]), 

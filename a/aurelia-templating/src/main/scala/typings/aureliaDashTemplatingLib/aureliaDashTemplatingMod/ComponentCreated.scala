@@ -18,8 +18,8 @@ trait ComponentCreated extends js.Object {
 
 object ComponentCreated {
   @scala.inline
-  def apply(created: js.Function2[View, View, scala.Unit]): ComponentCreated = {
-    val __obj = js.Dynamic.literal(created = created)
+  def apply(created: (View, View) => scala.Unit): ComponentCreated = {
+    val __obj = js.Dynamic.literal(created = js.Any.fromFunction2(created))
   
     __obj.asInstanceOf[ComponentCreated]
   }

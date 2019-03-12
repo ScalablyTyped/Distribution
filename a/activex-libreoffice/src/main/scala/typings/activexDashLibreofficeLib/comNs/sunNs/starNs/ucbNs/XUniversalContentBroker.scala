@@ -16,25 +16,25 @@ trait XUniversalContentBroker
 object XUniversalContentBroker {
   @scala.inline
   def apply(
-    abort: js.Function1[scala.Double, scala.Unit],
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    compareContentIds: js.Function2[XContentIdentifier, XContentIdentifier, scala.Double],
-    createCommandIdentifier: js.Function0[scala.Double],
-    createContentIdentifier: js.Function1[java.lang.String, XContentIdentifier],
-    deregisterContentProvider: js.Function2[XContentProvider, java.lang.String, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    execute: js.Function3[Command, scala.Double, XCommandEnvironment, js.Any],
-    queryContent: js.Function1[XContentIdentifier, XContent],
-    queryContentProvider: js.Function1[java.lang.String, XContentProvider],
-    queryContentProviders: js.Function0[activexDashInteropLib.SafeArray[ContentProviderInfo]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerContentProvider: js.Function3[XContentProvider, java.lang.String, scala.Boolean, XContentProvider],
-    release: js.Function0[scala.Unit],
-    releaseCommandIdentifier: js.Function1[scala.Double, scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+    abort: scala.Double => scala.Unit,
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    compareContentIds: (XContentIdentifier, XContentIdentifier) => scala.Double,
+    createCommandIdentifier: () => scala.Double,
+    createContentIdentifier: java.lang.String => XContentIdentifier,
+    deregisterContentProvider: (XContentProvider, java.lang.String) => scala.Unit,
+    dispose: () => scala.Unit,
+    execute: (Command, scala.Double, XCommandEnvironment) => js.Any,
+    queryContent: XContentIdentifier => XContent,
+    queryContentProvider: java.lang.String => XContentProvider,
+    queryContentProviders: () => stdLib.SafeArray[ContentProviderInfo],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerContentProvider: (XContentProvider, java.lang.String, scala.Boolean) => XContentProvider,
+    release: () => scala.Unit,
+    releaseCommandIdentifier: scala.Double => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit
   ): XUniversalContentBroker = {
-    val __obj = js.Dynamic.literal(abort = abort, acquire = acquire, addEventListener = addEventListener, compareContentIds = compareContentIds, createCommandIdentifier = createCommandIdentifier, createContentIdentifier = createContentIdentifier, deregisterContentProvider = deregisterContentProvider, dispose = dispose, execute = execute, queryContent = queryContent, queryContentProvider = queryContentProvider, queryContentProviders = queryContentProviders, queryInterface = queryInterface, registerContentProvider = registerContentProvider, release = release, releaseCommandIdentifier = releaseCommandIdentifier, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction1(abort), acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), compareContentIds = js.Any.fromFunction2(compareContentIds), createCommandIdentifier = js.Any.fromFunction0(createCommandIdentifier), createContentIdentifier = js.Any.fromFunction1(createContentIdentifier), deregisterContentProvider = js.Any.fromFunction2(deregisterContentProvider), dispose = js.Any.fromFunction0(dispose), execute = js.Any.fromFunction3(execute), queryContent = js.Any.fromFunction1(queryContent), queryContentProvider = js.Any.fromFunction1(queryContentProvider), queryContentProviders = js.Any.fromFunction0(queryContentProviders), queryInterface = js.Any.fromFunction1(queryInterface), registerContentProvider = js.Any.fromFunction3(registerContentProvider), release = js.Any.fromFunction0(release), releaseCommandIdentifier = js.Any.fromFunction1(releaseCommandIdentifier), removeEventListener = js.Any.fromFunction1(removeEventListener))
   
     __obj.asInstanceOf[XUniversalContentBroker]
   }

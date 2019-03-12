@@ -23,32 +23,14 @@ trait ListingsResource extends js.Object {
 object ListingsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    deleteall: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Listing]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListingsListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Listing]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Listing]
-    ]
+    delete: gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    deleteall: gapiDotClientDotAndroidpublisherLib.Anon_AltEditId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Listing],
+    list: gapiDotClientDotAndroidpublisherLib.Anon_AltEditId => gapiDotClientLib.gapiNs.clientNs.Request[ListingsListResponse],
+    patch: gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Listing],
+    update: gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Listing]
   ): ListingsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, deleteall = deleteall, get = get, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), deleteall = js.Any.fromFunction1(deleteall), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[ListingsResource]
   }

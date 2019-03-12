@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def convertKindToModulePath(kind: java.lang.String): java.lang.String = js.native
   def convertKindToViewPath(kind: java.lang.String): java.lang.String = js.native
-  def create(element: stdLib.HTMLElement, settings: durandalLib.pluginsWidgetMod.WidgetSettings): scala.Unit = js.native
+  def create(element: stdLib.HTMLElement, settings: WidgetSettings): scala.Unit = js.native
   def create(
     element: stdLib.HTMLElement,
-    settings: durandalLib.pluginsWidgetMod.WidgetSettings,
+    settings: WidgetSettings,
     bindingContext: knockoutLib.KnockoutBindingContext
   ): scala.Unit = js.native
   def mapKind(kind: java.lang.String): scala.Unit = js.native

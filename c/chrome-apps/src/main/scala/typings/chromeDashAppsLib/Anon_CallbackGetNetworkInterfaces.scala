@@ -19,14 +19,11 @@ object Anon_CallbackGetNetworkInterfaces {
   @scala.inline
   def apply(
     getNetworkInterfaces: js.Function1[
-      js.Function1[
-        /* networkInterfaces */ js.Array[chromeDashAppsLib.chromeNs.systemNs.networkNs.NetworkInterface], 
-        scala.Unit
-      ], 
+      /* networkInterfaces */ js.Array[chromeDashAppsLib.chromeNs.systemNs.networkNs.NetworkInterface], 
       scala.Unit
-    ]
+    ] => scala.Unit
   ): Anon_CallbackGetNetworkInterfaces = {
-    val __obj = js.Dynamic.literal(getNetworkInterfaces = getNetworkInterfaces)
+    val __obj = js.Dynamic.literal(getNetworkInterfaces = js.Any.fromFunction1(getNetworkInterfaces))
   
     __obj.asInstanceOf[Anon_CallbackGetNetworkInterfaces]
   }

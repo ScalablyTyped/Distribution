@@ -113,30 +113,30 @@ trait ASPxClientRecurrenceInfo extends js.Object {
 object ASPxClientRecurrenceInfo {
   @scala.inline
   def apply(
-    GetDayNumber: js.Function0[scala.Double],
-    GetDuration: js.Function0[scala.Double],
-    GetEnd: js.Function0[stdLib.Date],
-    GetMonth: js.Function0[scala.Double],
-    GetOccurrenceCount: js.Function0[scala.Double],
-    GetPeriodicity: js.Function0[scala.Double],
-    GetRange: js.Function0[ASPxClientRecurrenceRange],
-    GetRecurrenceType: js.Function0[ASPxClientRecurrenceType],
-    GetStart: js.Function0[stdLib.Date],
-    GetWeekDays: js.Function0[ASPxClientWeekDays],
-    GetWeekOfMonth: js.Function0[ASPxClientWeekOfMonth],
-    SetDayNumber: js.Function1[scala.Double, scala.Unit],
-    SetDuration: js.Function1[js.Any, scala.Unit],
-    SetEnd: js.Function1[stdLib.Date, scala.Unit],
-    SetMonth: js.Function1[scala.Double, scala.Unit],
-    SetOccurrenceCount: js.Function1[scala.Double, scala.Unit],
-    SetPeriodicity: js.Function1[scala.Double, scala.Unit],
-    SetRange: js.Function1[ASPxClientRecurrenceRange, scala.Unit],
-    SetRecurrenceType: js.Function1[ASPxClientRecurrenceType, scala.Unit],
-    SetStart: js.Function1[stdLib.Date, scala.Unit],
-    SetWeekDays: js.Function1[ASPxClientWeekDays, scala.Unit],
-    SetWeekOfMonth: js.Function1[ASPxClientWeekOfMonth, scala.Unit]
+    GetDayNumber: () => scala.Double,
+    GetDuration: () => scala.Double,
+    GetEnd: () => stdLib.Date,
+    GetMonth: () => scala.Double,
+    GetOccurrenceCount: () => scala.Double,
+    GetPeriodicity: () => scala.Double,
+    GetRange: () => ASPxClientRecurrenceRange,
+    GetRecurrenceType: () => ASPxClientRecurrenceType,
+    GetStart: () => stdLib.Date,
+    GetWeekDays: () => ASPxClientWeekDays,
+    GetWeekOfMonth: () => ASPxClientWeekOfMonth,
+    SetDayNumber: scala.Double => scala.Unit,
+    SetDuration: js.Any => scala.Unit,
+    SetEnd: stdLib.Date => scala.Unit,
+    SetMonth: scala.Double => scala.Unit,
+    SetOccurrenceCount: scala.Double => scala.Unit,
+    SetPeriodicity: scala.Double => scala.Unit,
+    SetRange: ASPxClientRecurrenceRange => scala.Unit,
+    SetRecurrenceType: ASPxClientRecurrenceType => scala.Unit,
+    SetStart: stdLib.Date => scala.Unit,
+    SetWeekDays: ASPxClientWeekDays => scala.Unit,
+    SetWeekOfMonth: ASPxClientWeekOfMonth => scala.Unit
   ): ASPxClientRecurrenceInfo = {
-    val __obj = js.Dynamic.literal(GetDayNumber = GetDayNumber, GetDuration = GetDuration, GetEnd = GetEnd, GetMonth = GetMonth, GetOccurrenceCount = GetOccurrenceCount, GetPeriodicity = GetPeriodicity, GetRange = GetRange, GetRecurrenceType = GetRecurrenceType, GetStart = GetStart, GetWeekDays = GetWeekDays, GetWeekOfMonth = GetWeekOfMonth, SetDayNumber = SetDayNumber, SetDuration = SetDuration, SetEnd = SetEnd, SetMonth = SetMonth, SetOccurrenceCount = SetOccurrenceCount, SetPeriodicity = SetPeriodicity, SetRange = SetRange, SetRecurrenceType = SetRecurrenceType, SetStart = SetStart, SetWeekDays = SetWeekDays, SetWeekOfMonth = SetWeekOfMonth)
+    val __obj = js.Dynamic.literal(GetDayNumber = js.Any.fromFunction0(GetDayNumber), GetDuration = js.Any.fromFunction0(GetDuration), GetEnd = js.Any.fromFunction0(GetEnd), GetMonth = js.Any.fromFunction0(GetMonth), GetOccurrenceCount = js.Any.fromFunction0(GetOccurrenceCount), GetPeriodicity = js.Any.fromFunction0(GetPeriodicity), GetRange = js.Any.fromFunction0(GetRange), GetRecurrenceType = js.Any.fromFunction0(GetRecurrenceType), GetStart = js.Any.fromFunction0(GetStart), GetWeekDays = js.Any.fromFunction0(GetWeekDays), GetWeekOfMonth = js.Any.fromFunction0(GetWeekOfMonth), SetDayNumber = js.Any.fromFunction1(SetDayNumber), SetDuration = js.Any.fromFunction1(SetDuration), SetEnd = js.Any.fromFunction1(SetEnd), SetMonth = js.Any.fromFunction1(SetMonth), SetOccurrenceCount = js.Any.fromFunction1(SetOccurrenceCount), SetPeriodicity = js.Any.fromFunction1(SetPeriodicity), SetRange = js.Any.fromFunction1(SetRange), SetRecurrenceType = js.Any.fromFunction1(SetRecurrenceType), SetStart = js.Any.fromFunction1(SetStart), SetWeekDays = js.Any.fromFunction1(SetWeekDays), SetWeekOfMonth = js.Any.fromFunction1(SetWeekOfMonth))
   
     __obj.asInstanceOf[ASPxClientRecurrenceInfo]
   }

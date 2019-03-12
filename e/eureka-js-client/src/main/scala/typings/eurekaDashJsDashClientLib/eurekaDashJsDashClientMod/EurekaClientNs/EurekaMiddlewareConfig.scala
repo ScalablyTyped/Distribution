@@ -11,8 +11,8 @@ trait EurekaMiddlewareConfig extends js.Object {
 
 object EurekaMiddlewareConfig {
   @scala.inline
-  def apply(requestMiddleware: js.Function2[js.Any, js.Function1[/* opts */ js.Any, scala.Unit], scala.Unit]): EurekaMiddlewareConfig = {
-    val __obj = js.Dynamic.literal(requestMiddleware = requestMiddleware)
+  def apply(requestMiddleware: (js.Any, js.Function1[/* opts */ js.Any, scala.Unit]) => scala.Unit): EurekaMiddlewareConfig = {
+    val __obj = js.Dynamic.literal(requestMiddleware = js.Any.fromFunction2(requestMiddleware))
   
     __obj.asInstanceOf[EurekaMiddlewareConfig]
   }

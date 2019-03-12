@@ -20,7 +20,7 @@ class SmartArtNode protected () extends js.Object {
   val ParentNode: SmartArtNode = js.native
   @JSName("Shapes")
   val Shapes_Original: ShapeRange = js.native
-  val TextFrame2: TextFrame2 = js.native
+  val TextFrame2: activexDashOfficeLib.OfficeNs.TextFrame2 = js.native
   val Type: MsoSmartArtNodeType = js.native
   /**
     * @param Position [Position=1]

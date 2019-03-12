@@ -27,12 +27,12 @@ trait Message extends js.Object {
 object Message {
   @scala.inline
   def apply(
-    cancel: js.Function0[scala.Unit],
-    hide: js.Function0[scala.Unit],
-    show: js.Function0[scala.Unit],
-    update: js.Function1[MessageOptions, scala.Unit]
+    cancel: () => scala.Unit,
+    hide: () => scala.Unit,
+    show: () => scala.Unit,
+    update: MessageOptions => scala.Unit
   ): Message = {
-    val __obj = js.Dynamic.literal(cancel = cancel, hide = hide, show = show, update = update)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[Message]
   }

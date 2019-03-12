@@ -20,9 +20,9 @@ object SwitcherCallBackParam {
     newViewModel: js.Any,
     node: stdLib.Element,
     oldViewModel: js.Any,
-    valueAccessor: js.Function0[js.Any]
+    valueAccessor: () => js.Any
   ): SwitcherCallBackParam = {
-    val __obj = js.Dynamic.literal(isInitial = isInitial, newViewModel = newViewModel, node = node, oldViewModel = oldViewModel, valueAccessor = valueAccessor)
+    val __obj = js.Dynamic.literal(isInitial = isInitial, newViewModel = newViewModel, node = node, oldViewModel = oldViewModel, valueAccessor = js.Any.fromFunction0(valueAccessor))
   
     __obj.asInstanceOf[SwitcherCallBackParam]
   }

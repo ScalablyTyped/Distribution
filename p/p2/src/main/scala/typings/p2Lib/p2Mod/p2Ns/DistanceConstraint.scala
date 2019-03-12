@@ -27,22 +27,22 @@ object DistanceConstraint {
     collideConnected: scala.Boolean,
     distance: scala.Double,
     equeations: js.Array[Equation],
-    getMaxForce: js.Function0[scala.Double],
+    getMaxForce: () => scala.Double,
     localAnchorA: js.Tuple2[scala.Double, scala.Double],
     localAnchorB: js.Tuple2[scala.Double, scala.Double],
     lowerLimit: scala.Double,
     lowerLimitEnabled: scala.Boolean,
     maxForce: scala.Double,
     position: scala.Double,
-    setMaxForce: js.Function1[scala.Double, scala.Unit],
-    setRelaxation: js.Function1[scala.Double, scala.Unit],
-    setStiffness: js.Function1[scala.Double, scala.Unit],
+    setMaxForce: scala.Double => scala.Unit,
+    setRelaxation: scala.Double => scala.Unit,
+    setStiffness: scala.Double => scala.Unit,
     `type`: scala.Double,
-    update: js.Function0[scala.Unit],
+    update: () => scala.Unit,
     upperLimit: scala.Double,
     upperLimitEnabled: scala.Boolean
   ): DistanceConstraint = {
-    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, collideConnected = collideConnected, distance = distance, equeations = equeations, getMaxForce = getMaxForce, localAnchorA = localAnchorA, localAnchorB = localAnchorB, lowerLimit = lowerLimit, lowerLimitEnabled = lowerLimitEnabled, maxForce = maxForce, position = position, setMaxForce = setMaxForce, setRelaxation = setRelaxation, setStiffness = setStiffness, update = update, upperLimit = upperLimit, upperLimitEnabled = upperLimitEnabled)
+    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, collideConnected = collideConnected, distance = distance, equeations = equeations, getMaxForce = js.Any.fromFunction0(getMaxForce), localAnchorA = localAnchorA, localAnchorB = localAnchorB, lowerLimit = lowerLimit, lowerLimitEnabled = lowerLimitEnabled, maxForce = maxForce, position = position, setMaxForce = js.Any.fromFunction1(setMaxForce), setRelaxation = js.Any.fromFunction1(setRelaxation), setStiffness = js.Any.fromFunction1(setStiffness), update = js.Any.fromFunction0(update), upperLimit = upperLimit, upperLimitEnabled = upperLimitEnabled)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DistanceConstraint]
   }

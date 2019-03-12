@@ -12,8 +12,8 @@ trait IWorkflows extends js.Object {
 
 object IWorkflows {
   @scala.inline
-  def apply(Count: scala.Double, Item: js.Function1[scala.Double, IWorkflow]): IWorkflows = {
-    val __obj = js.Dynamic.literal(Count = Count, Item = Item)
+  def apply(Count: scala.Double, Item: scala.Double => IWorkflow): IWorkflows = {
+    val __obj = js.Dynamic.literal(Count = Count, Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[IWorkflows]
   }

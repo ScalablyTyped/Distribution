@@ -18,11 +18,11 @@ trait TextArea
   @JSName("componentDidUpdate")
   def componentDidUpdate_MTextArea(prevProps: TextAreaProps): scala.Unit = js.native
   def focus(): scala.Unit = js.native
-  def handleKeyDown(e: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLTextAreaElement]): scala.Unit = js.native
-  def handleTextareaChange(e: reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLTextAreaElement]): scala.Unit = js.native
+  def handleKeyDown(e: reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLTextAreaElement]): scala.Unit = js.native
+  def handleTextareaChange(e: reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLTextAreaElement]): scala.Unit = js.native
   def renderTextArea(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def resizeOnNextFrame(): scala.Unit = js.native
   def resizeTextarea(): scala.Unit = js.native
-  def saveTextAreaRef(textArea: reactLib.HTMLTextAreaElement): scala.Unit = js.native
+  def saveTextAreaRef(textArea: stdLib.HTMLTextAreaElement): scala.Unit = js.native
 }
 

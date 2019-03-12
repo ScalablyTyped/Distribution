@@ -18,13 +18,13 @@ object textarea {
     cols: scala.Int | scala.Double = null,
     default: java.lang.String = null,
     rows: scala.Int | scala.Double = null,
-    validate: js.Function0[scala.Boolean] = null
+    validate: () => scala.Boolean = null
   ): textarea = {
     val __obj = js.Dynamic.literal()
     if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default)
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction0(validate))
     __obj.asInstanceOf[textarea]
   }
 }

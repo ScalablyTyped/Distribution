@@ -26,16 +26,12 @@ trait XDigestContextSupplier
 object XDigestContextSupplier {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getDigestContext: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
-      XDigestContext
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDigestContext: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]) => XDigestContext,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDigestContextSupplier = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getDigestContext = getDigestContext, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDigestContext = js.Any.fromFunction2(getDigestContext), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDigestContextSupplier]
   }

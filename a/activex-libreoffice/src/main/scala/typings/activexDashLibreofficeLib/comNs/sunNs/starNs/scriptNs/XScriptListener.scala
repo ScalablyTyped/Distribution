@@ -20,14 +20,14 @@ trait XScriptListener
 object XScriptListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    approveFiring: js.Function1[ScriptEvent, js.Any],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    firing: js.Function1[ScriptEvent, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    approveFiring: ScriptEvent => js.Any,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    firing: ScriptEvent => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XScriptListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, approveFiring = approveFiring, disposing = disposing, firing = firing, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), approveFiring = js.Any.fromFunction1(approveFiring), disposing = js.Any.fromFunction1(disposing), firing = js.Any.fromFunction1(firing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XScriptListener]
   }

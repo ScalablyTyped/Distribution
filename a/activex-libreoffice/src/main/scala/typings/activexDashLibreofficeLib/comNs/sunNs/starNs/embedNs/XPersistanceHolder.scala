@@ -26,13 +26,13 @@ trait XPersistanceHolder
 object XPersistanceHolder {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    connectPersistance: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream, scala.Unit],
-    disconnectPersistence: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    connectPersistance: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream => scala.Unit,
+    disconnectPersistence: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XPersistanceHolder = {
-    val __obj = js.Dynamic.literal(acquire = acquire, connectPersistance = connectPersistance, disconnectPersistence = disconnectPersistence, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), connectPersistance = js.Any.fromFunction1(connectPersistance), disconnectPersistence = js.Any.fromFunction0(disconnectPersistence), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XPersistanceHolder]
   }

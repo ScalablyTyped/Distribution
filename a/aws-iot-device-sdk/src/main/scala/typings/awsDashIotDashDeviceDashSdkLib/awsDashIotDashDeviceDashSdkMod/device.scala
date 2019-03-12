@@ -41,7 +41,7 @@ class device ()
   @JSName("on")
   def on_error(
     event: awsDashIotDashDeviceDashSdkLib.awsDashIotDashDeviceDashSdkLibStrings.error,
-    listener: js.Function1[/* error */ nodeLib.Error | java.lang.String, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error | java.lang.String, scala.Unit]
   ): this.type = js.native
   /** Emitted when a message is received on a topic not related to any Thing Shadows */
   @JSName("on")
@@ -69,7 +69,7 @@ class device ()
     topic: java.lang.String,
     message: java.lang.String,
     options: mqttLib.typesLibClientDashOptionsMod.IClientPublishOptions,
-    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* error */ js.UndefOr[stdLib.Error], scala.Unit]
   ): mqttLib.mqttMod.Client = js.native
   // The following publish, subscribe, unsubscribe and end Definitions
   // are derived from the mqtt definition as they are re-surfaced through
@@ -93,7 +93,7 @@ class device ()
     topic: java.lang.String,
     message: nodeLib.Buffer,
     options: mqttLib.typesLibClientDashOptionsMod.IClientPublishOptions,
-    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* error */ js.UndefOr[stdLib.Error], scala.Unit]
   ): mqttLib.mqttMod.Client = js.native
   /**
     * Subscribe to a topic or topics

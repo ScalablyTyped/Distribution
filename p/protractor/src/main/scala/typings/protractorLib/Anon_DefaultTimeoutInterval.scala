@@ -45,7 +45,7 @@ object Anon_DefaultTimeoutInterval {
     defaultTimeoutInterval: scala.Int | scala.Double = null,
     grep: java.lang.String = null,
     invertGrep: js.UndefOr[scala.Boolean] = js.undefined,
-    print: js.Function0[scala.Unit] = null,
+    print: () => scala.Unit = null,
     random: js.UndefOr[scala.Boolean] = js.undefined,
     seed: java.lang.String = null,
     showColors: js.UndefOr[scala.Boolean] = js.undefined
@@ -55,7 +55,7 @@ object Anon_DefaultTimeoutInterval {
     if (defaultTimeoutInterval != null) __obj.updateDynamic("defaultTimeoutInterval")(defaultTimeoutInterval.asInstanceOf[js.Any])
     if (grep != null) __obj.updateDynamic("grep")(grep)
     if (!js.isUndefined(invertGrep)) __obj.updateDynamic("invertGrep")(invertGrep)
-    if (print != null) __obj.updateDynamic("print")(print)
+    if (print != null) __obj.updateDynamic("print")(js.Any.fromFunction0(print))
     if (!js.isUndefined(random)) __obj.updateDynamic("random")(random)
     if (seed != null) __obj.updateDynamic("seed")(seed)
     if (!js.isUndefined(showColors)) __obj.updateDynamic("showColors")(showColors)

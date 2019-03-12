@@ -19,24 +19,12 @@ trait UnsampledReportsResource extends js.Object {
 object UnsampledReportsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrintProfileId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrintProfileId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UnsampledReport]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UnsampledReport]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresultsOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UnsampledReports]
-    ]
+    delete: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrintProfileId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrintProfileId => gapiDotClientLib.gapiNs.clientNs.Request[UnsampledReport],
+    insert: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[UnsampledReport],
+    list: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresultsOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[UnsampledReports]
   ): UnsampledReportsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[UnsampledReportsResource]
   }

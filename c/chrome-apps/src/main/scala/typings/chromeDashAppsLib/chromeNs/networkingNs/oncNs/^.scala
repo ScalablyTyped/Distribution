@@ -29,11 +29,7 @@ object ^ extends js.Object {
     * Sends the GUID of the network and the corresponding captive portal status.
     */
   val onPortalDetectionCompleted: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function2[
-      /* networkGuid */ java.lang.String, 
-      /* status */ chromeDashAppsLib.chromeNs.networkingNs.oncNs.CaptivePortalStatus, 
-      scala.Unit
-    ]
+    js.Function2[/* networkGuid */ java.lang.String, /* status */ CaptivePortalStatus, scala.Unit]
   ] = js.native
   /**
     * Creates a new network configuration from properties.
@@ -48,12 +44,12 @@ object ^ extends js.Object {
   @JSName("createNetwork")
   def createNetwork_setter(
     shared: chromeDashAppsLib.chromeDashAppsLibNumbers.`false`,
-    properties: chromeDashAppsLib.chromeNs.networkingNs.oncNs.NetworkConfigProperties[chromeDashAppsLib.chromeDashAppsLibStrings.setter]
+    properties: NetworkConfigProperties[chromeDashAppsLib.chromeDashAppsLibStrings.setter]
   ): scala.Unit = js.native
   @JSName("createNetwork")
   def createNetwork_setter(
     shared: chromeDashAppsLib.chromeDashAppsLibNumbers.`false`,
-    properties: chromeDashAppsLib.chromeNs.networkingNs.oncNs.NetworkConfigProperties[chromeDashAppsLib.chromeDashAppsLibStrings.setter],
+    properties: NetworkConfigProperties[chromeDashAppsLib.chromeDashAppsLibStrings.setter],
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -61,13 +57,13 @@ object ^ extends js.Object {
     * Note, the type might represent multiple network types (e.g. 'Wireless').
     * @param networkType The type of network to disable.
     */
-  def disableNetworkType(networkType: chromeDashAppsLib.chromeNs.networkingNs.oncNs.NetworkType): scala.Unit = js.native
+  def disableNetworkType(networkType: NetworkType): scala.Unit = js.native
   /**
     * Enables any devices matching the specified network type.
     * Note, the type might represent multiple network types (e.g. 'Wireless').
     * @param networkType The type of network to enable.
     */
-  def enableNetworkType(networkType: chromeDashAppsLib.chromeNs.networkingNs.oncNs.NetworkType): scala.Unit = js.native
+  def enableNetworkType(networkType: NetworkType): scala.Unit = js.native
   /**
     * Forgets a network configuration by clearing any configured properties for the network with GUID networkGuid.
     * This may also include any other networks with matching identifiers (e.g. WiFi SSID and Security).
@@ -85,57 +81,32 @@ object ^ extends js.Object {
     */
   def getCaptivePortalStatus(
     networkGuid: java.lang.String,
-    callback: js.Function1[
-      /* result */ chromeDashAppsLib.chromeNs.networkingNs.oncNs.CaptivePortalStatus, 
-      scala.Unit
-    ]
+    callback: js.Function1[/* result */ CaptivePortalStatus, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Returns states of available networking devices.
     * @param callback Called with a list of devices and their state.
     */
-  def getDeviceStates(
-    callback: js.Function1[
-      /* result */ js.Array[chromeDashAppsLib.chromeNs.networkingNs.oncNs.DeviceStates], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def getDeviceStates(callback: js.Function1[/* result */ js.Array[DeviceStates], scala.Unit]): scala.Unit = js.native
   /**
     * Gets the global policy properties.
     * These properties are not expected to change during a session.
     */
-  def getGlobalPolicy(
-    callback: js.Function1[
-      /* result */ chromeDashAppsLib.chromeNs.networkingNs.oncNs.GlobalPolicy, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def getGlobalPolicy(callback: js.Function1[/* result */ GlobalPolicy, scala.Unit]): scala.Unit = js.native
   /**
     * Gets the merged properties of the network with id networkGuid from the sources:
     * User settings, shared settings, user policy, device policy and the currently active settings.
     * @param networkGuid The GUID of the network to get properties for.
     * @param callback Called with the managed network properties when received.
     */
-  def getManagedProperties(
-    networkGuid: java.lang.String,
-    callback: js.Function1[
-      /* result */ chromeDashAppsLib.chromeNs.networkingNs.oncNs.ManagedProperties, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def getManagedProperties(networkGuid: java.lang.String, callback: js.Function1[/* result */ ManagedProperties, scala.Unit]): scala.Unit = js.native
   /**
     * Returns a list of network objects with the same properties provided by *getState*.
     * A filter is provided to specify the type of networks returned and to limit the number of networks.
     * Networks are ordered by the system based on their priority, with connected or connecting networks listed first.
     * @param callback Called with a interface of networks and their state properties when received.
     */
-  def getNetworks(
-    filter: chromeDashAppsLib.chromeNs.networkingNs.oncNs.Filter,
-    callback: js.Function1[
-      /* result */ js.Array[chromeDashAppsLib.chromeNs.networkingNs.oncNs.NetworkStateProperties], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def getNetworks(filter: Filter, callback: js.Function1[/* result */ js.Array[NetworkStateProperties], scala.Unit]): scala.Unit = js.native
   /**
     * Gets all the properties of the network with id *networkGuid*.
     * Includes all properties of the network (read-only and read/write values).
@@ -145,7 +116,7 @@ object ^ extends js.Object {
   def getProperties(
     networkGuid: java.lang.String,
     callback: js.Function1[
-      /* result */ chromeDashAppsLib.chromeNs.networkingNs.oncNs.NetworkProperties[
+      /* result */ NetworkProperties[
         chromeDashAppsLib.chromeDashAppsLibStrings.unmanaged, 
         chromeDashAppsLib.chromeDashAppsLibStrings.full
       ], 
@@ -166,10 +137,7 @@ object ^ extends js.Object {
     */
   def getState(
     networkGuid: java.lang.String,
-    callback: js.Function1[
-      /* result */ chromeDashAppsLib.chromeNs.networkingNs.oncNs.NetworkStateProperties, 
-      scala.Unit
-    ]
+    callback: js.Function1[/* result */ NetworkStateProperties, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Requests that the networking subsystem scan for new networks and update the list returned by *getVisibleNetworks*.
@@ -184,7 +152,7 @@ object ^ extends js.Object {
     * @param networkType If provided, requests a scan specific to the type. For Cellular a mobile network scan will be requested if supported.
     * @since Chrome 63.
     */
-  def requestNetworkScan(networkType: chromeDashAppsLib.chromeNs.networkingNs.oncNs.NetworkType): scala.Unit = js.native
+  def requestNetworkScan(networkType: NetworkType): scala.Unit = js.native
   /**
     * Sets the properties of the network with id *networkGuid*.
     * This is only valid for configured networks (Source != None).
@@ -197,12 +165,12 @@ object ^ extends js.Object {
   @JSName("setProperties")
   def setProperties_setter(
     networkGuid: java.lang.String,
-    properties: chromeDashAppsLib.chromeNs.networkingNs.oncNs.NetworkConfigProperties[chromeDashAppsLib.chromeDashAppsLibStrings.setter]
+    properties: NetworkConfigProperties[chromeDashAppsLib.chromeDashAppsLibStrings.setter]
   ): scala.Unit = js.native
   @JSName("setProperties")
   def setProperties_setter(
     networkGuid: java.lang.String,
-    properties: chromeDashAppsLib.chromeNs.networkingNs.oncNs.NetworkConfigProperties[chromeDashAppsLib.chromeDashAppsLibStrings.setter],
+    properties: NetworkConfigProperties[chromeDashAppsLib.chromeDashAppsLibStrings.setter],
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   /**

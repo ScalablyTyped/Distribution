@@ -91,24 +91,24 @@ trait MoreLikeThisFieldQuery extends Query {
 object MoreLikeThisFieldQuery {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    analyzer: js.Function1[java.lang.String, MoreLikeThisFieldQuery],
-    boost: js.Function1[scala.Double, MoreLikeThisFieldQuery],
-    boostTerms: js.Function1[scala.Double, MoreLikeThisFieldQuery],
-    failOnUnsupportedField: js.Function1[scala.Boolean, MoreLikeThisFieldQuery],
-    field: js.Function1[java.lang.String, MoreLikeThisFieldQuery],
-    likeText: js.Function1[java.lang.String, MoreLikeThisFieldQuery],
-    maxDocFreq: js.Function1[scala.Double, MoreLikeThisFieldQuery],
-    maxQueryTerms: js.Function1[scala.Double, MoreLikeThisFieldQuery],
-    maxWordLen: js.Function1[scala.Double, MoreLikeThisFieldQuery],
-    minDocFreq: js.Function1[scala.Double, MoreLikeThisFieldQuery],
-    minTermFreq: js.Function1[scala.Double, MoreLikeThisFieldQuery],
-    minWordLen: js.Function1[scala.Double, MoreLikeThisFieldQuery],
-    percentTermsToMatch: js.Function1[scala.Double, MoreLikeThisFieldQuery],
-    stopWords: js.Function1[js.Array[_], MoreLikeThisFieldQuery],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    analyzer: java.lang.String => MoreLikeThisFieldQuery,
+    boost: scala.Double => MoreLikeThisFieldQuery,
+    boostTerms: scala.Double => MoreLikeThisFieldQuery,
+    failOnUnsupportedField: scala.Boolean => MoreLikeThisFieldQuery,
+    field: java.lang.String => MoreLikeThisFieldQuery,
+    likeText: java.lang.String => MoreLikeThisFieldQuery,
+    maxDocFreq: scala.Double => MoreLikeThisFieldQuery,
+    maxQueryTerms: scala.Double => MoreLikeThisFieldQuery,
+    maxWordLen: scala.Double => MoreLikeThisFieldQuery,
+    minDocFreq: scala.Double => MoreLikeThisFieldQuery,
+    minTermFreq: scala.Double => MoreLikeThisFieldQuery,
+    minWordLen: scala.Double => MoreLikeThisFieldQuery,
+    percentTermsToMatch: scala.Double => MoreLikeThisFieldQuery,
+    stopWords: js.Array[_] => MoreLikeThisFieldQuery,
+    toJSON: () => js.Any
   ): MoreLikeThisFieldQuery = {
-    val __obj = js.Dynamic.literal(_type = _type, analyzer = analyzer, boost = boost, boostTerms = boostTerms, failOnUnsupportedField = failOnUnsupportedField, field = field, likeText = likeText, maxDocFreq = maxDocFreq, maxQueryTerms = maxQueryTerms, maxWordLen = maxWordLen, minDocFreq = minDocFreq, minTermFreq = minTermFreq, minWordLen = minWordLen, percentTermsToMatch = percentTermsToMatch, stopWords = stopWords, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), analyzer = js.Any.fromFunction1(analyzer), boost = js.Any.fromFunction1(boost), boostTerms = js.Any.fromFunction1(boostTerms), failOnUnsupportedField = js.Any.fromFunction1(failOnUnsupportedField), field = js.Any.fromFunction1(field), likeText = js.Any.fromFunction1(likeText), maxDocFreq = js.Any.fromFunction1(maxDocFreq), maxQueryTerms = js.Any.fromFunction1(maxQueryTerms), maxWordLen = js.Any.fromFunction1(maxWordLen), minDocFreq = js.Any.fromFunction1(minDocFreq), minTermFreq = js.Any.fromFunction1(minTermFreq), minWordLen = js.Any.fromFunction1(minWordLen), percentTermsToMatch = js.Any.fromFunction1(percentTermsToMatch), stopWords = js.Any.fromFunction1(stopWords), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[MoreLikeThisFieldQuery]
   }

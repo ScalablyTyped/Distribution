@@ -34,7 +34,7 @@ trait TextFieldProps
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
   ] = js.undefined
   var lineWidth: js.UndefOr[scala.Double] = js.undefined
-  var onPress: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
+  var onPress: js.UndefOr[js.Function1[/* event */ stdLib.Event, scala.Unit]] = js.undefined
   var prefix: js.UndefOr[java.lang.String] = js.undefined
   var renderAccessory: js.UndefOr[js.Function0[reactLib.reactMod.Global.JSXNs.Element]] = js.undefined
   @JSName("style")
@@ -112,122 +112,44 @@ object TextFieldProps {
     nativeID: java.lang.String = null,
     needsOffscreenAlphaCompositing: js.UndefOr[scala.Boolean] = js.undefined,
     numberOfLines: scala.Int | scala.Double = null,
-    onAccessibilityAction: js.Function0[scala.Unit] = null,
-    onAccessibilityTap: js.Function0[scala.Unit] = null,
-    onBlur: js.Function1[
-      /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputFocusEventData], 
-      scala.Unit
-    ] = null,
-    onChange: js.Function1[
-      /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputChangeEventData], 
-      scala.Unit
-    ] = null,
-    onChangeText: js.Function1[/* text */ java.lang.String, scala.Unit] = null,
-    onContentSizeChange: js.Function1[
-      /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputContentSizeChangeEventData], 
-      scala.Unit
-    ] = null,
-    onEndEditing: js.Function1[
-      /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputEndEditingEventData], 
-      scala.Unit
-    ] = null,
-    onFocus: js.Function1[
-      /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputFocusEventData], 
-      scala.Unit
-    ] = null,
-    onKeyPress: js.Function1[
-      /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputKeyPressEventData], 
-      scala.Unit
-    ] = null,
-    onLayout: js.Function1[/* event */ reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent, scala.Unit] = null,
-    onMagicTap: js.Function0[scala.Unit] = null,
-    onMoveShouldSetResponder: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
-    onMoveShouldSetResponderCapture: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
-    onPress: js.Function1[/* event */ reactLib.Event, scala.Unit] = null,
-    onResponderEnd: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderGrant: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderMove: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderReject: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderRelease: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderStart: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderTerminate: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderTerminationRequest: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
-    onScroll: js.Function1[
-      /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputScrollEventData], 
-      scala.Unit
-    ] = null,
-    onSelectionChange: js.Function1[
-      /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputSelectionChangeEventData], 
-      scala.Unit
-    ] = null,
-    onStartShouldSetResponder: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
-    onStartShouldSetResponderCapture: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
-    onSubmitEditing: js.Function1[
-      /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputSubmitEditingEventData], 
-      scala.Unit
-    ] = null,
-    onTouchCancel: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onTouchEnd: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onTouchEndCapture: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onTouchMove: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onTouchStart: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
+    onAccessibilityAction: () => scala.Unit = null,
+    onAccessibilityTap: () => scala.Unit = null,
+    onBlur: /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputFocusEventData] => scala.Unit = null,
+    onChange: /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputChangeEventData] => scala.Unit = null,
+    onChangeText: /* text */ java.lang.String => scala.Unit = null,
+    onContentSizeChange: /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputContentSizeChangeEventData] => scala.Unit = null,
+    onEndEditing: /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputEndEditingEventData] => scala.Unit = null,
+    onFocus: /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputFocusEventData] => scala.Unit = null,
+    onKeyPress: /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputKeyPressEventData] => scala.Unit = null,
+    onLayout: /* event */ reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent => scala.Unit = null,
+    onMagicTap: () => scala.Unit = null,
+    onMoveShouldSetResponder: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onMoveShouldSetResponderCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onPress: /* event */ stdLib.Event => scala.Unit = null,
+    onResponderEnd: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderGrant: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderMove: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderReject: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderRelease: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderStart: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderTerminate: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderTerminationRequest: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onScroll: /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputScrollEventData] => scala.Unit = null,
+    onSelectionChange: /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputSelectionChangeEventData] => scala.Unit = null,
+    onStartShouldSetResponder: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onStartShouldSetResponderCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onSubmitEditing: /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputSubmitEditingEventData] => scala.Unit = null,
+    onTouchCancel: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onTouchEnd: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onTouchEndCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onTouchMove: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onTouchStart: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
     placeholder: java.lang.String = null,
     placeholderTextColor: java.lang.String = null,
     pointerEvents: reactDashNativeLib.reactDashNativeLibStrings.`box-none` | reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.`box-only` | reactDashNativeLib.reactDashNativeLibStrings.auto = null,
     prefix: java.lang.String = null,
     removeClippedSubviews: js.UndefOr[scala.Boolean] = js.undefined,
-    renderAccessory: js.Function0[reactLib.reactMod.Global.JSXNs.Element] = null,
+    renderAccessory: () => reactLib.reactMod.Global.JSXNs.Element = null,
     renderToHardwareTextureAndroid: js.UndefOr[scala.Boolean] = js.undefined,
     returnKeyLabel: java.lang.String = null,
     returnKeyType: reactDashNativeLib.reactDashNativeMod.ReturnKeyTypeOptions = null,
@@ -312,44 +234,44 @@ object TextFieldProps {
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
     if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(onAccessibilityAction)
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(onAccessibilityTap)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onChangeText != null) __obj.updateDynamic("onChangeText")(onChangeText)
-    if (onContentSizeChange != null) __obj.updateDynamic("onContentSizeChange")(onContentSizeChange)
-    if (onEndEditing != null) __obj.updateDynamic("onEndEditing")(onEndEditing)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
-    if (onLayout != null) __obj.updateDynamic("onLayout")(onLayout)
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(onMagicTap)
-    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(onMoveShouldSetResponder)
-    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(onMoveShouldSetResponderCapture)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
-    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(onResponderEnd)
-    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(onResponderGrant)
-    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(onResponderMove)
-    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(onResponderReject)
-    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(onResponderRelease)
-    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(onResponderStart)
-    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(onResponderTerminate)
-    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(onResponderTerminationRequest)
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
-    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(onSelectionChange)
-    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(onStartShouldSetResponder)
-    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(onStartShouldSetResponderCapture)
-    if (onSubmitEditing != null) __obj.updateDynamic("onSubmitEditing")(onSubmitEditing)
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel)
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
-    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(onTouchEndCapture)
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction0(onAccessibilityAction))
+    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onChangeText != null) __obj.updateDynamic("onChangeText")(js.Any.fromFunction1(onChangeText))
+    if (onContentSizeChange != null) __obj.updateDynamic("onContentSizeChange")(js.Any.fromFunction1(onContentSizeChange))
+    if (onEndEditing != null) __obj.updateDynamic("onEndEditing")(js.Any.fromFunction1(onEndEditing))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
+    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
+    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
+    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))
+    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(js.Any.fromFunction1(onMoveShouldSetResponderCapture))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
+    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(js.Any.fromFunction1(onResponderEnd))
+    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(js.Any.fromFunction1(onResponderGrant))
+    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(js.Any.fromFunction1(onResponderMove))
+    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(js.Any.fromFunction1(onResponderReject))
+    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(js.Any.fromFunction1(onResponderRelease))
+    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(js.Any.fromFunction1(onResponderStart))
+    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(js.Any.fromFunction1(onResponderTerminate))
+    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(js.Any.fromFunction1(onResponderTerminationRequest))
+    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
+    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(js.Any.fromFunction1(onSelectionChange))
+    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1(onStartShouldSetResponder))
+    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1(onStartShouldSetResponderCapture))
+    if (onSubmitEditing != null) __obj.updateDynamic("onSubmitEditing")(js.Any.fromFunction1(onSubmitEditing))
+    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
+    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(js.Any.fromFunction1(onTouchEndCapture))
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (placeholderTextColor != null) __obj.updateDynamic("placeholderTextColor")(placeholderTextColor)
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews)
-    if (renderAccessory != null) __obj.updateDynamic("renderAccessory")(renderAccessory)
+    if (renderAccessory != null) __obj.updateDynamic("renderAccessory")(js.Any.fromFunction0(renderAccessory))
     if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid)
     if (returnKeyLabel != null) __obj.updateDynamic("returnKeyLabel")(returnKeyLabel)
     if (returnKeyType != null) __obj.updateDynamic("returnKeyType")(returnKeyType)

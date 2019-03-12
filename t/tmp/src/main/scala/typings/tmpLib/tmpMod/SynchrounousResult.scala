@@ -13,8 +13,8 @@ trait SynchrounousResult extends js.Object {
 
 object SynchrounousResult {
   @scala.inline
-  def apply(fd: scala.Double, name: java.lang.String, removeCallback: js.Function0[scala.Unit]): SynchrounousResult = {
-    val __obj = js.Dynamic.literal(fd = fd, name = name, removeCallback = removeCallback)
+  def apply(fd: scala.Double, name: java.lang.String, removeCallback: () => scala.Unit): SynchrounousResult = {
+    val __obj = js.Dynamic.literal(fd = fd, name = name, removeCallback = js.Any.fromFunction0(removeCallback))
   
     __obj.asInstanceOf[SynchrounousResult]
   }

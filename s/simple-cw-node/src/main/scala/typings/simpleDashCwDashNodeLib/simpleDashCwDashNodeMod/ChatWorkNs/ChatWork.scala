@@ -35,7 +35,7 @@ trait ChatWork extends js.Object {
     api: java.lang.String,
     args: js.Any,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* res */ superagentLib.superagentMod.requestNs.Response, 
       scala.Unit
     ]
@@ -45,7 +45,7 @@ trait ChatWork extends js.Object {
     method: java.lang.String,
     api: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* res */ superagentLib.superagentMod.requestNs.Response, 
       scala.Unit
     ]
@@ -55,7 +55,7 @@ trait ChatWork extends js.Object {
     api: java.lang.String,
     args: js.Any,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* res */ superagentLib.superagentMod.requestNs.Response, 
       scala.Unit
     ]
@@ -64,7 +64,7 @@ trait ChatWork extends js.Object {
   def del(
     api: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* res */ superagentLib.superagentMod.requestNs.Response, 
       scala.Unit
     ]
@@ -74,7 +74,7 @@ trait ChatWork extends js.Object {
     api: java.lang.String,
     args: js.Any,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* res */ superagentLib.superagentMod.requestNs.Response, 
       scala.Unit
     ]
@@ -83,7 +83,7 @@ trait ChatWork extends js.Object {
   def get(
     api: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* res */ superagentLib.superagentMod.requestNs.Response, 
       scala.Unit
     ]
@@ -93,7 +93,7 @@ trait ChatWork extends js.Object {
   def get_contacts(
     api: simpleDashCwDashNodeLib.simpleDashCwDashNodeLibStrings.contacts,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* res */ superagentLib.superagentMod.requestNs.Response, 
       scala.Unit
     ]
@@ -103,7 +103,7 @@ trait ChatWork extends js.Object {
   def get_me(
     api: simpleDashCwDashNodeLib.simpleDashCwDashNodeLibStrings.me,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* res */ superagentLib.superagentMod.requestNs.Response, 
       scala.Unit
     ]
@@ -113,7 +113,7 @@ trait ChatWork extends js.Object {
   def `get_my/status`(
     api: simpleDashCwDashNodeLib.simpleDashCwDashNodeLibStrings.`my/status`,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* res */ superagentLib.superagentMod.requestNs.Response, 
       scala.Unit
     ]
@@ -122,7 +122,7 @@ trait ChatWork extends js.Object {
   def `get_my/tasks`(
     api: simpleDashCwDashNodeLib.simpleDashCwDashNodeLibStrings.`my/tasks`,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* res */ superagentLib.superagentMod.requestNs.Response, 
       scala.Unit
     ]
@@ -132,7 +132,7 @@ trait ChatWork extends js.Object {
   def get_rooms(
     api: simpleDashCwDashNodeLib.simpleDashCwDashNodeLibStrings.rooms,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* res */ superagentLib.superagentMod.requestNs.Response, 
       scala.Unit
     ]
@@ -144,7 +144,7 @@ trait ChatWork extends js.Object {
     api: java.lang.String,
     args: js.Any,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* res */ superagentLib.superagentMod.requestNs.Response, 
       scala.Unit
     ]
@@ -153,7 +153,7 @@ trait ChatWork extends js.Object {
   def post(
     api: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* res */ superagentLib.superagentMod.requestNs.Response, 
       scala.Unit
     ]
@@ -163,7 +163,7 @@ trait ChatWork extends js.Object {
     api: simpleDashCwDashNodeLib.simpleDashCwDashNodeLibStrings.rooms,
     args: js.Any,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* res */ superagentLib.superagentMod.requestNs.Response, 
       scala.Unit
     ]
@@ -173,7 +173,7 @@ trait ChatWork extends js.Object {
     api: java.lang.String,
     args: js.Any,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* res */ superagentLib.superagentMod.requestNs.Response, 
       scala.Unit
     ]
@@ -182,7 +182,7 @@ trait ChatWork extends js.Object {
   def put(
     api: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* res */ superagentLib.superagentMod.requestNs.Response, 
       scala.Unit
     ]

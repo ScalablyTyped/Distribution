@@ -23,12 +23,12 @@ trait XSystemTransferable
 object XSystemTransferable {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getData: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getData: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSystemTransferable = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getData = getData, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getData = js.Any.fromFunction1(getData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSystemTransferable]
   }

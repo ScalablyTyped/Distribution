@@ -13,10 +13,10 @@ trait IHashComputation extends js.Object {
 object IHashComputation {
   @scala.inline
   def apply(
-    append: js.Function1[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, scala.Unit],
-    getValueAndReset: js.Function0[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer]
+    append: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer => scala.Unit,
+    getValueAndReset: () => winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer
   ): IHashComputation = {
-    val __obj = js.Dynamic.literal(append = append, getValueAndReset = getValueAndReset)
+    val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), getValueAndReset = js.Any.fromFunction0(getValueAndReset))
   
     __obj.asInstanceOf[IHashComputation]
   }

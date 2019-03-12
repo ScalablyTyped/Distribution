@@ -40,10 +40,10 @@ object TimePickerAndroidStatic {
   @scala.inline
   def apply(
     dismissedAction: reactDashNativeLib.reactDashNativeLibStrings.dismissedAction,
-    open: js.Function1[TimePickerAndroidOpenOptions, js.Promise[TimePickerAndroidOpenReturn]],
+    open: TimePickerAndroidOpenOptions => js.Promise[TimePickerAndroidOpenReturn],
     timeSetAction: reactDashNativeLib.reactDashNativeLibStrings.timeSetAction
   ): TimePickerAndroidStatic = {
-    val __obj = js.Dynamic.literal(dismissedAction = dismissedAction, open = open, timeSetAction = timeSetAction)
+    val __obj = js.Dynamic.literal(dismissedAction = dismissedAction, open = js.Any.fromFunction1(open), timeSetAction = timeSetAction)
   
     __obj.asInstanceOf[TimePickerAndroidStatic]
   }

@@ -17,14 +17,14 @@ trait RecordSourceSelectorProxy extends js.Object {
 object RecordSourceSelectorProxy {
   @scala.inline
   def apply(
-    create: js.Function2[DataID, java.lang.String, RecordProxy],
-    delete: js.Function1[DataID, scala.Unit],
-    get: js.Function1[DataID, RecordProxy | scala.Null],
-    getPluralRootField: js.Function1[java.lang.String, js.Array[RecordProxy] | scala.Null],
-    getRoot: js.Function0[RecordProxy],
-    getRootField: js.Function1[java.lang.String, RecordProxy | scala.Null]
+    create: (DataID, java.lang.String) => RecordProxy,
+    delete: DataID => scala.Unit,
+    get: DataID => RecordProxy | scala.Null,
+    getPluralRootField: java.lang.String => js.Array[RecordProxy] | scala.Null,
+    getRoot: () => RecordProxy,
+    getRootField: java.lang.String => RecordProxy | scala.Null
   ): RecordSourceSelectorProxy = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, getPluralRootField = getPluralRootField, getRoot = getRoot, getRootField = getRootField)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getPluralRootField = js.Any.fromFunction1(getPluralRootField), getRoot = js.Any.fromFunction0(getRoot), getRootField = js.Any.fromFunction1(getRootField))
   
     __obj.asInstanceOf[RecordSourceSelectorProxy]
   }

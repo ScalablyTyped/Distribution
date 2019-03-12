@@ -29,17 +29,13 @@ trait XUriBinding
 object XUriBinding {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getUriBinding: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setUriBinding: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    getUriBinding: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setUriBinding: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream) => scala.Unit
   ): XUriBinding = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getUriBinding = getUriBinding, queryInterface = queryInterface, release = release, setUriBinding = setUriBinding)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getUriBinding = js.Any.fromFunction1(getUriBinding), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setUriBinding = js.Any.fromFunction2(setUriBinding))
   
     __obj.asInstanceOf[XUriBinding]
   }

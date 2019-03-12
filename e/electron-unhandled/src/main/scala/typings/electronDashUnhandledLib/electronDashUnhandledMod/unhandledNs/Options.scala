@@ -13,11 +13,11 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    logger: js.Function1[/* err */ stdLib.Error, scala.Unit] = null,
+    logger: /* err */ stdLib.Error => scala.Unit = null,
     showDialog: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (logger != null) __obj.updateDynamic("logger")(js.Any.fromFunction1(logger))
     if (!js.isUndefined(showDialog)) __obj.updateDynamic("showDialog")(showDialog)
     __obj.asInstanceOf[Options]
   }

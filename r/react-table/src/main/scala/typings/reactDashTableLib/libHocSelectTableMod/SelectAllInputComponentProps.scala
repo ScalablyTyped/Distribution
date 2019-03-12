@@ -13,8 +13,8 @@ trait SelectAllInputComponentProps extends js.Object {
 
 object SelectAllInputComponentProps {
   @scala.inline
-  def apply(checked: scala.Boolean, onClick: js.Function0[js.Any], selectType: SelectType): SelectAllInputComponentProps = {
-    val __obj = js.Dynamic.literal(checked = checked, onClick = onClick, selectType = selectType)
+  def apply(checked: scala.Boolean, onClick: () => js.Any, selectType: SelectType): SelectAllInputComponentProps = {
+    val __obj = js.Dynamic.literal(checked = checked, onClick = js.Any.fromFunction0(onClick), selectType = selectType)
   
     __obj.asInstanceOf[SelectAllInputComponentProps]
   }

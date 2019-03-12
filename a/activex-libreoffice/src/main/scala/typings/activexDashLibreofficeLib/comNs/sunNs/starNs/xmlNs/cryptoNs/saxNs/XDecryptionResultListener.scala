@@ -26,16 +26,12 @@ trait XDecryptionResultListener
 object XDecryptionResultListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    decrypted: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.cryptoNs.SecurityOperationStatus, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    decrypted: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.cryptoNs.SecurityOperationStatus) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDecryptionResultListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, decrypted = decrypted, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), decrypted = js.Any.fromFunction2(decrypted), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDecryptionResultListener]
   }

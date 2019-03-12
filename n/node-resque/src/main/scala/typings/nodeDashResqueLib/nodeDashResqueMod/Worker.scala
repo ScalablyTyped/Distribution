@@ -23,7 +23,7 @@ class Worker protected ()
   @JSName("on")
   def on_error(
     event: nodeDashResqueLib.nodeDashResqueLibStrings.error,
-    cb: js.Function3[/* error */ nodeLib.Error, /* queue */ java.lang.String, /* job */ Job[_], scala.Unit]
+    cb: js.Function3[/* error */ stdLib.Error, /* queue */ java.lang.String, /* job */ Job[_], scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_failure(
@@ -74,7 +74,7 @@ class Worker protected ()
   @JSName("once")
   def once_error(
     event: nodeDashResqueLib.nodeDashResqueLibStrings.error,
-    cb: js.Function3[/* error */ nodeLib.Error, /* queue */ java.lang.String, /* job */ Job[_], scala.Unit]
+    cb: js.Function3[/* error */ stdLib.Error, /* queue */ java.lang.String, /* job */ Job[_], scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_failure(

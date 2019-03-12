@@ -10,11 +10,11 @@ trait Anon_Attributes
   extends org.scalablytyped.runtime.Instantiable0[
       bookshelfLib.bookshelfMod.BookshelfNs.Model[bookshelfLib.bookshelfMod.BookshelfNs.Model[js.Any]]
     ] {
-  var NoRowsDeletedError: createDashErrorLib.createDashErrorMod.createErrorNs.Error[nodeLib.Error] = js.native
-  var NoRowsUpdatedError: createDashErrorLib.createDashErrorMod.createErrorNs.Error[nodeLib.Error] = js.native
+  var NoRowsDeletedError: createDashErrorLib.createDashErrorMod.createErrorNs.Error[stdLib.Error] = js.native
+  var NoRowsUpdatedError: createDashErrorLib.createDashErrorMod.createErrorNs.Error[stdLib.Error] = js.native
   // See https://github.com/tgriesser/bookshelf/blob/0.9.4/src/errors.js
   // See https://github.com/tgriesser/bookshelf/blob/0.9.4/src/model.js#L1280
-  var NotFoundError: createDashErrorLib.createDashErrorMod.createErrorNs.Error[nodeLib.Error] = js.native
+  var NotFoundError: createDashErrorLib.createDashErrorMod.createErrorNs.Error[stdLib.Error] = js.native
   def collection[T /* <: bookshelfLib.bookshelfMod.BookshelfNs.Model[_] */](): bookshelfLib.bookshelfMod.BookshelfNs.Collection[T] = js.native
   def collection[T /* <: bookshelfLib.bookshelfMod.BookshelfNs.Model[_] */](models: js.Array[T]): bookshelfLib.bookshelfMod.BookshelfNs.Collection[T] = js.native
   def collection[T /* <: bookshelfLib.bookshelfMod.BookshelfNs.Model[_] */](models: js.Array[T], options: bookshelfLib.bookshelfMod.BookshelfNs.CollectionOptions[T]): bookshelfLib.bookshelfMod.BookshelfNs.Collection[T] = js.native

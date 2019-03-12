@@ -60,9 +60,9 @@ trait OptionsClipboard extends js.Object {
 object OptionsClipboard {
   @scala.inline
   def apply(
-    clipboardCopied: js.Function0[scala.Unit],
-    clipboardPasteError: js.Function0[scala.Unit],
-    clipboardPasted: js.Function0[scala.Unit],
+    clipboardCopied: () => scala.Unit,
+    clipboardPasteError: () => scala.Unit,
+    clipboardPasted: () => scala.Unit,
     clipboard: scala.Boolean | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.copy | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.paste = null,
     clipboardCopyConfig: tabulatorDashTablesLib.Anon_ColumnCalcs | scala.Boolean = null,
     clipboardCopyFormatter: tabulatorDashTablesLib.tabulatorDashTablesLibStrings.table | (js.Function1[/* rowData */ js.Array[_], java.lang.String]) = null,
@@ -72,7 +72,7 @@ object OptionsClipboard {
     clipboardPasteAction: tabulatorDashTablesLib.tabulatorDashTablesLibStrings.insert | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.update | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.replace = null,
     clipboardPasteParser: java.lang.String | (js.Function1[/* clipboard */ js.Any, js.Array[_]]) = null
   ): OptionsClipboard = {
-    val __obj = js.Dynamic.literal(clipboardCopied = clipboardCopied, clipboardPasteError = clipboardPasteError, clipboardPasted = clipboardPasted)
+    val __obj = js.Dynamic.literal(clipboardCopied = js.Any.fromFunction0(clipboardCopied), clipboardPasteError = js.Any.fromFunction0(clipboardPasteError), clipboardPasted = js.Any.fromFunction0(clipboardPasted))
     if (clipboard != null) __obj.updateDynamic("clipboard")(clipboard.asInstanceOf[js.Any])
     if (clipboardCopyConfig != null) __obj.updateDynamic("clipboardCopyConfig")(clipboardCopyConfig.asInstanceOf[js.Any])
     if (clipboardCopyFormatter != null) __obj.updateDynamic("clipboardCopyFormatter")(clipboardCopyFormatter.asInstanceOf[js.Any])

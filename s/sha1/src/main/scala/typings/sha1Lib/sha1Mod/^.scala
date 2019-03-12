@@ -16,6 +16,6 @@ object ^ extends js.Object {
     * @returns the resultant SHA1 hash of the given message
     */
   def apply(message: java.lang.String | nodeLib.Buffer): java.lang.String | stdLib.Uint8Array = js.native
-  def apply(message: java.lang.String | nodeLib.Buffer, options: sha1Lib.sha1Mod.Sha1Options): java.lang.String | stdLib.Uint8Array = js.native
+  def apply(message: java.lang.String | nodeLib.Buffer, options: Sha1Options): java.lang.String | stdLib.Uint8Array = js.native
 }
 

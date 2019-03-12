@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react/dist/commonjs/collections/Form/FormTextArea", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.StatelessComponent[
-    semanticDashUiDashReactLib.distCommonjsCollectionsFormFormTextAreaMod.FormTextAreaProps
-  ] = js.native
+  val default: reactLib.reactMod.ReactNs.StatelessComponent[FormTextAreaProps] = js.native
 }
 

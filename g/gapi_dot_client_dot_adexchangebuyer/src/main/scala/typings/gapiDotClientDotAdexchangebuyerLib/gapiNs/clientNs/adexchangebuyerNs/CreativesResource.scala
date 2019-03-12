@@ -23,32 +23,14 @@ trait CreativesResource extends js.Object {
 object CreativesResource {
   @scala.inline
   def apply(
-    addDeal: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltBuyerCreativeId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltBuyerCreativeIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Creative]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Creative]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltBuyerCreativeIdDealsStatusFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CreativesList]
-    ],
-    listDeals: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltBuyerCreativeIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CreativeDealIds]
-    ],
-    removeDeal: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltBuyerCreativeId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ]
+    addDeal: gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltBuyerCreativeId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltBuyerCreativeIdFields => gapiDotClientLib.gapiNs.clientNs.Request[Creative],
+    insert: gapiDotClientDotAdexchangebuyerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Creative],
+    list: gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltBuyerCreativeIdDealsStatusFilter => gapiDotClientLib.gapiNs.clientNs.Request[CreativesList],
+    listDeals: gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltBuyerCreativeIdFields => gapiDotClientLib.gapiNs.clientNs.Request[CreativeDealIds],
+    removeDeal: gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltBuyerCreativeId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   ): CreativesResource = {
-    val __obj = js.Dynamic.literal(addDeal = addDeal, get = get, insert = insert, list = list, listDeals = listDeals, removeDeal = removeDeal)
+    val __obj = js.Dynamic.literal(addDeal = js.Any.fromFunction1(addDeal), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), listDeals = js.Any.fromFunction1(listDeals), removeDeal = js.Any.fromFunction1(removeDeal))
   
     __obj.asInstanceOf[CreativesResource]
   }

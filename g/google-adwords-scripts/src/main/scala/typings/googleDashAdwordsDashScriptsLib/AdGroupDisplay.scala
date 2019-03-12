@@ -19,20 +19,20 @@ trait AdGroupDisplay extends Display {
 object AdGroupDisplay {
   @scala.inline
   def apply(
-    audiences: js.Function0[AdWordsSelector[Audience]],
-    excludedAudiences: js.Function0[AdWordsSelector[ExcludedAudience]],
-    excludedKeywords: js.Function0[AdWordsSelector[ExcludedDisplayKeyword]],
-    excludedPlacements: js.Function0[AdWordsSelector[ExcludedPlacement]],
-    excludedTopics: js.Function0[AdWordsSelector[Topic]],
-    keywords: js.Function0[AdWordsSelector[DisplayKeyword]],
-    newAudienceBuilder: js.Function0[AudienceBuilder[Audience]],
-    newKeywordBuilder: js.Function0[DisplayKeywordBuilder[DisplayKeyword]],
-    newPlacementBuilder: js.Function0[PlacementBuilder[Placement]],
-    newTopicBuilder: js.Function0[TopicBuilder[Topic]],
-    placements: js.Function0[AdWordsSelector[Placement]],
-    topics: js.Function0[AdWordsSelector[Topic]]
+    audiences: () => AdWordsSelector[Audience],
+    excludedAudiences: () => AdWordsSelector[ExcludedAudience],
+    excludedKeywords: () => AdWordsSelector[ExcludedDisplayKeyword],
+    excludedPlacements: () => AdWordsSelector[ExcludedPlacement],
+    excludedTopics: () => AdWordsSelector[Topic],
+    keywords: () => AdWordsSelector[DisplayKeyword],
+    newAudienceBuilder: () => AudienceBuilder[Audience],
+    newKeywordBuilder: () => DisplayKeywordBuilder[DisplayKeyword],
+    newPlacementBuilder: () => PlacementBuilder[Placement],
+    newTopicBuilder: () => TopicBuilder[Topic],
+    placements: () => AdWordsSelector[Placement],
+    topics: () => AdWordsSelector[Topic]
   ): AdGroupDisplay = {
-    val __obj = js.Dynamic.literal(audiences = audiences, excludedAudiences = excludedAudiences, excludedKeywords = excludedKeywords, excludedPlacements = excludedPlacements, excludedTopics = excludedTopics, keywords = keywords, newAudienceBuilder = newAudienceBuilder, newKeywordBuilder = newKeywordBuilder, newPlacementBuilder = newPlacementBuilder, newTopicBuilder = newTopicBuilder, placements = placements, topics = topics)
+    val __obj = js.Dynamic.literal(audiences = js.Any.fromFunction0(audiences), excludedAudiences = js.Any.fromFunction0(excludedAudiences), excludedKeywords = js.Any.fromFunction0(excludedKeywords), excludedPlacements = js.Any.fromFunction0(excludedPlacements), excludedTopics = js.Any.fromFunction0(excludedTopics), keywords = js.Any.fromFunction0(keywords), newAudienceBuilder = js.Any.fromFunction0(newAudienceBuilder), newKeywordBuilder = js.Any.fromFunction0(newKeywordBuilder), newPlacementBuilder = js.Any.fromFunction0(newPlacementBuilder), newTopicBuilder = js.Any.fromFunction0(newTopicBuilder), placements = js.Any.fromFunction0(placements), topics = js.Any.fromFunction0(topics))
   
     __obj.asInstanceOf[AdGroupDisplay]
   }

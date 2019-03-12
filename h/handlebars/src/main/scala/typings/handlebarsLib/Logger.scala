@@ -23,10 +23,10 @@ object Logger {
     INFO: scala.Double,
     WARN: scala.Double,
     level: scala.Double,
-    log: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    log: (scala.Double, java.lang.String) => scala.Unit,
     methodMap: org.scalablytyped.runtime.NumberDictionary[java.lang.String]
   ): Logger = {
-    val __obj = js.Dynamic.literal(DEBUG = DEBUG, ERROR = ERROR, INFO = INFO, WARN = WARN, level = level, log = log, methodMap = methodMap)
+    val __obj = js.Dynamic.literal(DEBUG = DEBUG, ERROR = ERROR, INFO = INFO, WARN = WARN, level = level, log = js.Any.fromFunction2(log), methodMap = methodMap)
   
     __obj.asInstanceOf[Logger]
   }

@@ -51,7 +51,7 @@ object ConnectAppOptions {
     name: java.lang.String = null,
     port: scala.Int | scala.Double = null,
     root: java.lang.String | js.Array[java.lang.String] = null,
-    serverInit: js.Function1[/* server */ nodeLib.httpMod.Server | nodeLib.httpsMod.Server, scala.Unit] = null,
+    serverInit: /* server */ nodeLib.httpMod.Server | nodeLib.httpsMod.Server => scala.Unit = null,
     silent: js.UndefOr[scala.Boolean] = js.undefined
   ): ConnectAppOptions = {
     val __obj = js.Dynamic.literal()
@@ -65,7 +65,7 @@ object ConnectAppOptions {
     if (name != null) __obj.updateDynamic("name")(name)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (serverInit != null) __obj.updateDynamic("serverInit")(serverInit)
+    if (serverInit != null) __obj.updateDynamic("serverInit")(js.Any.fromFunction1(serverInit))
     if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
     __obj.asInstanceOf[ConnectAppOptions]
   }

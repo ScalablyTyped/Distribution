@@ -296,7 +296,7 @@ object ResponsiveNavigationProps {
   @scala.inline
   def apply(
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
     breakpoint: scala.Int | scala.Double = null,
     menuIcon: MenuIconProps = null,
     titleBar: TitleBarProps = null,

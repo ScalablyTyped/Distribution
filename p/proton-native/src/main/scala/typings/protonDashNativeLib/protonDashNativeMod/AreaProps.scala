@@ -51,13 +51,13 @@ object AreaProps {
     fill: java.lang.String = null,
     fillOpacity: scala.Int | scala.Double = null,
     label: java.lang.String = null,
-    onKeyDown: js.Function1[/* event */ KeyboardEvent, scala.Boolean] = null,
-    onKeyUp: js.Function1[/* event */ KeyboardEvent, scala.Boolean] = null,
-    onMouseDown: js.Function1[/* event */ MouseEvent, scala.Unit] = null,
-    onMouseEnter: js.Function0[scala.Unit] = null,
-    onMouseLeave: js.Function0[scala.Unit] = null,
-    onMouseMove: js.Function1[/* event */ protonDashNativeLib.Anon_Buttons, scala.Unit] = null,
-    onMouseUp: js.Function1[/* event */ MouseEvent, scala.Unit] = null,
+    onKeyDown: /* event */ KeyboardEvent => scala.Boolean = null,
+    onKeyUp: /* event */ KeyboardEvent => scala.Boolean = null,
+    onMouseDown: /* event */ MouseEvent => scala.Unit = null,
+    onMouseEnter: () => scala.Unit = null,
+    onMouseLeave: () => scala.Unit = null,
+    onMouseMove: /* event */ protonDashNativeLib.Anon_Buttons => scala.Unit = null,
+    onMouseUp: /* event */ MouseEvent => scala.Unit = null,
     row: scala.Int | scala.Double = null,
     span: protonDashNativeLib.Anon_X = null,
     stretchy: js.UndefOr[scala.Boolean] = js.undefined,
@@ -77,13 +77,13 @@ object AreaProps {
     if (fill != null) __obj.updateDynamic("fill")(fill)
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
+    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction0(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction0(onMouseLeave))
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
+    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
     if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     if (span != null) __obj.updateDynamic("span")(span)
     if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy)

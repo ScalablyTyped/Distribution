@@ -16,11 +16,11 @@ object LocalStorage {
   @scala.inline
   def apply(
     _data: js.Any,
-    getItem: js.Function1[js.Any, js.Any],
-    removeItem: js.Function1[js.Any, scala.Unit],
-    setItem: js.Function2[js.Any, js.Any, js.Any]
+    getItem: js.Any => js.Any,
+    removeItem: js.Any => scala.Unit,
+    setItem: (js.Any, js.Any) => js.Any
   ): LocalStorage = {
-    val __obj = js.Dynamic.literal(_data = _data, getItem = getItem, removeItem = removeItem, setItem = setItem)
+    val __obj = js.Dynamic.literal(_data = _data, getItem = js.Any.fromFunction1(getItem), removeItem = js.Any.fromFunction1(removeItem), setItem = js.Any.fromFunction2(setItem))
   
     __obj.asInstanceOf[LocalStorage]
   }

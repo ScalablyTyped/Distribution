@@ -45,13 +45,13 @@ object JobType {
     category: java.lang.String,
     constructor: js.Function,
     description: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     id: java.lang.String,
     name: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     state: java.lang.String
   ): JobType = {
-    val __obj = js.Dynamic.literal(category = category, constructor = constructor, description = description, hasOwnProperty = hasOwnProperty, id = id, name = name, propertyIsEnumerable = propertyIsEnumerable, state = state)
+    val __obj = js.Dynamic.literal(category = category, constructor = constructor, description = description, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), state = state)
   
     __obj.asInstanceOf[JobType]
   }

@@ -22,15 +22,15 @@ trait DocumentOrShadowRoot extends js.Object {
 object DocumentOrShadowRoot {
   @scala.inline
   def apply(
-    caretPositionFromPoint: js.Function2[scala.Double, scala.Double, CaretPosition | scala.Null],
-    caretRangeFromPoint: js.Function2[scala.Double, scala.Double, Range],
-    elementFromPoint: js.Function2[scala.Double, scala.Double, Element | scala.Null],
-    elementsFromPoint: js.Function2[scala.Double, scala.Double, Array[Element]],
-    getSelection: js.Function0[Selection | scala.Null],
+    caretPositionFromPoint: (scala.Double, scala.Double) => CaretPosition | scala.Null,
+    caretRangeFromPoint: (scala.Double, scala.Double) => Range,
+    elementFromPoint: (scala.Double, scala.Double) => Element | scala.Null,
+    elementsFromPoint: (scala.Double, scala.Double) => Array[Element],
+    getSelection: () => Selection | scala.Null,
     styleSheets: StyleSheetList,
     activeElement: Element = null
   ): DocumentOrShadowRoot = {
-    val __obj = js.Dynamic.literal(caretPositionFromPoint = caretPositionFromPoint, caretRangeFromPoint = caretRangeFromPoint, elementFromPoint = elementFromPoint, elementsFromPoint = elementsFromPoint, getSelection = getSelection, styleSheets = styleSheets)
+    val __obj = js.Dynamic.literal(caretPositionFromPoint = js.Any.fromFunction2(caretPositionFromPoint), caretRangeFromPoint = js.Any.fromFunction2(caretRangeFromPoint), elementFromPoint = js.Any.fromFunction2(elementFromPoint), elementsFromPoint = js.Any.fromFunction2(elementsFromPoint), getSelection = js.Any.fromFunction0(getSelection), styleSheets = styleSheets)
     if (activeElement != null) __obj.updateDynamic("activeElement")(activeElement)
     __obj.asInstanceOf[DocumentOrShadowRoot]
   }

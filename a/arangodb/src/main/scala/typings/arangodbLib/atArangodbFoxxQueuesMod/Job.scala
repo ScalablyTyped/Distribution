@@ -28,7 +28,7 @@ trait Job extends js.Object {
 object Job {
   @scala.inline
   def apply(
-    abort: js.Function0[scala.Unit],
+    abort: () => scala.Unit,
     created: scala.Double,
     data: js.Any,
     delayUntil: scala.Double,
@@ -46,7 +46,7 @@ object Job {
     failure: java.lang.String = null,
     success: java.lang.String = null
   ): Job = {
-    val __obj = js.Dynamic.literal(abort = abort, created = created, data = data, delayUntil = delayUntil, failures = failures, maxFailures = maxFailures, modified = modified, queue = queue, repeatDelay = repeatDelay, repeatTimes = repeatTimes, repeatUntil = repeatUntil, runFailures = runFailures, runs = runs, status = status)
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), created = created, data = data, delayUntil = delayUntil, failures = failures, maxFailures = maxFailures, modified = modified, queue = queue, repeatDelay = repeatDelay, repeatTimes = repeatTimes, repeatUntil = repeatUntil, runFailures = runFailures, runs = runs, status = status)
     __obj.updateDynamic("type")(`type`)
     if (failure != null) __obj.updateDynamic("failure")(failure)
     if (success != null) __obj.updateDynamic("success")(success)

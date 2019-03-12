@@ -35,23 +35,23 @@ trait IVaultNamedACLOperations extends js.Object {
 object IVaultNamedACLOperations {
   @scala.inline
   def apply(
-    AddNamedACLAdmin: js.Function1[INamedACLAdmin, INamedACLAdmin],
-    GetMatchingNamedACLForAccessControlList: js.Function4[IAccessControlList, scala.Boolean, scala.Boolean, scala.Boolean, INamedACL],
-    GetMatchingNamedACLForAccessControlListComponent: js.Function3[IAccessControlListComponent, scala.Boolean, scala.Boolean, INamedACL],
-    GetNamedACL: js.Function1[scala.Double, INamedACL],
-    GetNamedACLAdmin: js.Function1[scala.Double, INamedACLAdmin],
-    GetNamedACLIDByAlias: js.Function1[java.lang.String, scala.Double],
-    GetNamedACLIDByGUID: js.Function1[java.lang.String, scala.Double],
-    GetNamedACLWithRefresh: js.Function2[scala.Double, scala.Boolean, INamedACL],
-    GetNamedACLs: js.Function0[INamedACLs],
-    GetNamedACLsByTypeAdmin: js.Function1[mfilesLib.MFilesNs.MFNamedACLType, INamedACLsAdmin],
-    GetNamedACLsWithRefresh: js.Function1[scala.Boolean, INamedACLs],
-    IsNamedACLUsedInAutomaticPermissionsAdmin: js.Function1[scala.Double, scala.Boolean],
-    RemoveNamedACLWithPropagationAdmin: js.Function2[scala.Double, scala.Boolean, scala.Unit],
-    UpdateNamedACLAdmin: js.Function1[INamedACLAdmin, scala.Unit],
-    UpdateNamedACLWithPropagationAdmin: js.Function3[INamedACLAdmin, scala.Boolean, scala.Boolean, scala.Unit]
+    AddNamedACLAdmin: INamedACLAdmin => INamedACLAdmin,
+    GetMatchingNamedACLForAccessControlList: (IAccessControlList, scala.Boolean, scala.Boolean, scala.Boolean) => INamedACL,
+    GetMatchingNamedACLForAccessControlListComponent: (IAccessControlListComponent, scala.Boolean, scala.Boolean) => INamedACL,
+    GetNamedACL: scala.Double => INamedACL,
+    GetNamedACLAdmin: scala.Double => INamedACLAdmin,
+    GetNamedACLIDByAlias: java.lang.String => scala.Double,
+    GetNamedACLIDByGUID: java.lang.String => scala.Double,
+    GetNamedACLWithRefresh: (scala.Double, scala.Boolean) => INamedACL,
+    GetNamedACLs: () => INamedACLs,
+    GetNamedACLsByTypeAdmin: mfilesLib.MFilesNs.MFNamedACLType => INamedACLsAdmin,
+    GetNamedACLsWithRefresh: scala.Boolean => INamedACLs,
+    IsNamedACLUsedInAutomaticPermissionsAdmin: scala.Double => scala.Boolean,
+    RemoveNamedACLWithPropagationAdmin: (scala.Double, scala.Boolean) => scala.Unit,
+    UpdateNamedACLAdmin: INamedACLAdmin => scala.Unit,
+    UpdateNamedACLWithPropagationAdmin: (INamedACLAdmin, scala.Boolean, scala.Boolean) => scala.Unit
   ): IVaultNamedACLOperations = {
-    val __obj = js.Dynamic.literal(AddNamedACLAdmin = AddNamedACLAdmin, GetMatchingNamedACLForAccessControlList = GetMatchingNamedACLForAccessControlList, GetMatchingNamedACLForAccessControlListComponent = GetMatchingNamedACLForAccessControlListComponent, GetNamedACL = GetNamedACL, GetNamedACLAdmin = GetNamedACLAdmin, GetNamedACLIDByAlias = GetNamedACLIDByAlias, GetNamedACLIDByGUID = GetNamedACLIDByGUID, GetNamedACLWithRefresh = GetNamedACLWithRefresh, GetNamedACLs = GetNamedACLs, GetNamedACLsByTypeAdmin = GetNamedACLsByTypeAdmin, GetNamedACLsWithRefresh = GetNamedACLsWithRefresh, IsNamedACLUsedInAutomaticPermissionsAdmin = IsNamedACLUsedInAutomaticPermissionsAdmin, RemoveNamedACLWithPropagationAdmin = RemoveNamedACLWithPropagationAdmin, UpdateNamedACLAdmin = UpdateNamedACLAdmin, UpdateNamedACLWithPropagationAdmin = UpdateNamedACLWithPropagationAdmin)
+    val __obj = js.Dynamic.literal(AddNamedACLAdmin = js.Any.fromFunction1(AddNamedACLAdmin), GetMatchingNamedACLForAccessControlList = js.Any.fromFunction4(GetMatchingNamedACLForAccessControlList), GetMatchingNamedACLForAccessControlListComponent = js.Any.fromFunction3(GetMatchingNamedACLForAccessControlListComponent), GetNamedACL = js.Any.fromFunction1(GetNamedACL), GetNamedACLAdmin = js.Any.fromFunction1(GetNamedACLAdmin), GetNamedACLIDByAlias = js.Any.fromFunction1(GetNamedACLIDByAlias), GetNamedACLIDByGUID = js.Any.fromFunction1(GetNamedACLIDByGUID), GetNamedACLWithRefresh = js.Any.fromFunction2(GetNamedACLWithRefresh), GetNamedACLs = js.Any.fromFunction0(GetNamedACLs), GetNamedACLsByTypeAdmin = js.Any.fromFunction1(GetNamedACLsByTypeAdmin), GetNamedACLsWithRefresh = js.Any.fromFunction1(GetNamedACLsWithRefresh), IsNamedACLUsedInAutomaticPermissionsAdmin = js.Any.fromFunction1(IsNamedACLUsedInAutomaticPermissionsAdmin), RemoveNamedACLWithPropagationAdmin = js.Any.fromFunction2(RemoveNamedACLWithPropagationAdmin), UpdateNamedACLAdmin = js.Any.fromFunction1(UpdateNamedACLAdmin), UpdateNamedACLWithPropagationAdmin = js.Any.fromFunction3(UpdateNamedACLWithPropagationAdmin))
   
     __obj.asInstanceOf[IVaultNamedACLOperations]
   }

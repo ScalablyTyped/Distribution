@@ -38,7 +38,7 @@ object TabsProps {
     justify: grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end = null,
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null,
     messages: grommetLib.Anon_TabContents = null,
-    onActive: js.Function1[/* repeated */ js.Any, _] = null
+    onActive: /* repeated */ js.Any => _ = null
   ): TabsProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
@@ -49,7 +49,7 @@ object TabsProps {
     if (justify != null) __obj.updateDynamic("justify")(justify.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (onActive != null) __obj.updateDynamic("onActive")(onActive)
+    if (onActive != null) __obj.updateDynamic("onActive")(js.Any.fromFunction1(onActive))
     __obj.asInstanceOf[TabsProps]
   }
 }

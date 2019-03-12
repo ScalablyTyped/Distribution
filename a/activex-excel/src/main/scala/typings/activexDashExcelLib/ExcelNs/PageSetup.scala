@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PageSetup protected () extends js.Object {
   var AlignMarginsHeaderFooter: scala.Boolean = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var BlackAndWhite: scala.Boolean = js.native
   var BottomMargin: scala.Double = js.native
   var CenterFooter: java.lang.String = js.native
@@ -49,7 +49,7 @@ class PageSetup protected () extends js.Object {
   var PrintHeadings: scala.Boolean = js.native
   var PrintNotes: scala.Boolean = js.native
   @JSName("PrintQuality")
-  var PrintQuality_Original: activexDashInteropLib.SafeArray[scala.Double] with (js.Function1[
+  var PrintQuality_Original: stdLib.SafeArray[scala.Double] with (js.Function1[
     /* Index */ activexDashExcelLib.activexDashExcelLibNumbers.`1` | activexDashExcelLib.activexDashExcelLibNumbers.`2`, 
     scala.Double
   ]) = js.native

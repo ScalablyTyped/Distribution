@@ -20,13 +20,13 @@ object XFrameSetModel {
   @scala.inline
   def apply(
     Source: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getSource: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setSource: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getSource: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setSource: java.lang.String => scala.Unit
   ): XFrameSetModel = {
-    val __obj = js.Dynamic.literal(Source = Source, acquire = acquire, getSource = getSource, queryInterface = queryInterface, release = release, setSource = setSource)
+    val __obj = js.Dynamic.literal(Source = Source, acquire = js.Any.fromFunction0(acquire), getSource = js.Any.fromFunction0(getSource), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setSource = js.Any.fromFunction1(setSource))
   
     __obj.asInstanceOf[XFrameSetModel]
   }

@@ -13,17 +13,17 @@ trait Targeting extends VideoCampaignTargeting {
 object Targeting {
   @scala.inline
   def apply(
-    adSchedules: js.Function0[AdWordsSelector[AdSchedule]],
-    audiences: js.Function0[AdWordsSelector[SearchCampaignAudience]],
-    excludedAudiences: js.Function0[AdWordsSelector[SearchCampaignExcludedAudience]],
-    excludedContentLabels: js.Function0[AdWordsSelector[ExcludedContentLabel]],
-    excludedLocations: js.Function0[AdWordsSelector[ExcludedLocation]],
-    languages: js.Function0[AdWordsSelector[Language]],
-    platforms: js.Function0[AdWordsSelector[Platform]],
-    targetedLocations: js.Function0[AdWordsSelector[TargetedLocation]],
-    targetedProximities: js.Function0[AdWordsSelector[TargetedProximity]]
+    adSchedules: () => AdWordsSelector[AdSchedule],
+    audiences: () => AdWordsSelector[SearchCampaignAudience],
+    excludedAudiences: () => AdWordsSelector[SearchCampaignExcludedAudience],
+    excludedContentLabels: () => AdWordsSelector[ExcludedContentLabel],
+    excludedLocations: () => AdWordsSelector[ExcludedLocation],
+    languages: () => AdWordsSelector[Language],
+    platforms: () => AdWordsSelector[Platform],
+    targetedLocations: () => AdWordsSelector[TargetedLocation],
+    targetedProximities: () => AdWordsSelector[TargetedProximity]
   ): Targeting = {
-    val __obj = js.Dynamic.literal(adSchedules = adSchedules, audiences = audiences, excludedAudiences = excludedAudiences, excludedContentLabels = excludedContentLabels, excludedLocations = excludedLocations, languages = languages, platforms = platforms, targetedLocations = targetedLocations, targetedProximities = targetedProximities)
+    val __obj = js.Dynamic.literal(adSchedules = js.Any.fromFunction0(adSchedules), audiences = js.Any.fromFunction0(audiences), excludedAudiences = js.Any.fromFunction0(excludedAudiences), excludedContentLabels = js.Any.fromFunction0(excludedContentLabels), excludedLocations = js.Any.fromFunction0(excludedLocations), languages = js.Any.fromFunction0(languages), platforms = js.Any.fromFunction0(platforms), targetedLocations = js.Any.fromFunction0(targetedLocations), targetedProximities = js.Any.fromFunction0(targetedProximities))
   
     __obj.asInstanceOf[Targeting]
   }

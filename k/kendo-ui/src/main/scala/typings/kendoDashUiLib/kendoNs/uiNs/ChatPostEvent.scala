@@ -14,14 +14,14 @@ trait ChatPostEvent extends ChatEvent {
 object ChatPostEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Chat,
     from: js.Any = null,
     text: java.lang.String = null,
     timestamp: stdLib.Date = null
   ): ChatPostEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (from != null) __obj.updateDynamic("from")(from)
     if (text != null) __obj.updateDynamic("text")(text)
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)

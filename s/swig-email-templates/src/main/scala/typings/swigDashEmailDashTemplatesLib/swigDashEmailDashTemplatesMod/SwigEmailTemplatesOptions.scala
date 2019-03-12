@@ -22,8 +22,8 @@ object SwigEmailTemplatesOptions {
     juice: js.Any = null,
     loader: swigLib.swigMod.TemplateLoader = null,
     locals: js.Any = null,
-    rewrite: js.Function1[/* $ */ jqueryLib.JQueryStatic, scala.Unit] = null,
-    rewriteUrl: js.Function1[/* href */ java.lang.String, java.lang.String] = null,
+    rewrite: /* $ */ jqueryLib.JQueryStatic => scala.Unit = null,
+    rewriteUrl: /* href */ java.lang.String => java.lang.String = null,
     root: java.lang.String = null,
     tagControls: js.Array[java.lang.String] = null,
     varControls: js.Array[java.lang.String] = null
@@ -35,8 +35,8 @@ object SwigEmailTemplatesOptions {
     if (juice != null) __obj.updateDynamic("juice")(juice)
     if (loader != null) __obj.updateDynamic("loader")(loader)
     if (locals != null) __obj.updateDynamic("locals")(locals)
-    if (rewrite != null) __obj.updateDynamic("rewrite")(rewrite)
-    if (rewriteUrl != null) __obj.updateDynamic("rewriteUrl")(rewriteUrl)
+    if (rewrite != null) __obj.updateDynamic("rewrite")(js.Any.fromFunction1(rewrite))
+    if (rewriteUrl != null) __obj.updateDynamic("rewriteUrl")(js.Any.fromFunction1(rewriteUrl))
     if (root != null) __obj.updateDynamic("root")(root)
     if (tagControls != null) __obj.updateDynamic("tagControls")(tagControls)
     if (varControls != null) __obj.updateDynamic("varControls")(varControls)

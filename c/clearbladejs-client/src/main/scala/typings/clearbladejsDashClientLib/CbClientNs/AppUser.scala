@@ -23,18 +23,18 @@ object AppUser {
   @scala.inline
   def apply(
     URI: java.lang.String,
-    allUsers: js.Function2[Query, CbCallback, scala.Unit],
+    allUsers: (Query, CbCallback) => scala.Unit,
     callTimeout: scala.Double,
-    count: js.Function2[Query, CbCallback, scala.Unit],
+    count: (Query, CbCallback) => scala.Unit,
     endpoint: java.lang.String,
-    getUser: js.Function1[CbCallback, scala.Unit],
-    setPassword: js.Function3[java.lang.String, java.lang.String, CbCallback, scala.Unit],
-    setUser: js.Function2[js.Object, CbCallback, scala.Unit],
+    getUser: CbCallback => scala.Unit,
+    setPassword: (java.lang.String, java.lang.String, CbCallback) => scala.Unit,
+    setUser: (js.Object, CbCallback) => scala.Unit,
     systemKey: java.lang.String,
     systemSecret: java.lang.String,
     user: APIUser
   ): AppUser = {
-    val __obj = js.Dynamic.literal(URI = URI, allUsers = allUsers, callTimeout = callTimeout, count = count, endpoint = endpoint, getUser = getUser, setPassword = setPassword, setUser = setUser, systemKey = systemKey, systemSecret = systemSecret, user = user)
+    val __obj = js.Dynamic.literal(URI = URI, allUsers = js.Any.fromFunction2(allUsers), callTimeout = callTimeout, count = js.Any.fromFunction2(count), endpoint = endpoint, getUser = js.Any.fromFunction1(getUser), setPassword = js.Any.fromFunction3(setPassword), setUser = js.Any.fromFunction2(setUser), systemKey = systemKey, systemSecret = systemSecret, user = user)
   
     __obj.asInstanceOf[AppUser]
   }

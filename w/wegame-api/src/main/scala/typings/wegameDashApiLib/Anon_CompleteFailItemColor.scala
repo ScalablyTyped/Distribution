@@ -23,16 +23,16 @@ object Anon_CompleteFailItemColor {
   @scala.inline
   def apply(
     itemList: js.Array[java.lang.String],
-    complete: js.Function0[scala.Unit] = null,
-    fail: js.Function0[scala.Unit] = null,
+    complete: () => scala.Unit = null,
+    fail: () => scala.Unit = null,
     itemColor: java.lang.String = null,
-    success: js.Function0[scala.Unit] = null
+    success: () => scala.Unit = null
   ): Anon_CompleteFailItemColor = {
     val __obj = js.Dynamic.literal(itemList = itemList)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (itemColor != null) __obj.updateDynamic("itemColor")(itemColor)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[Anon_CompleteFailItemColor]
   }
 }

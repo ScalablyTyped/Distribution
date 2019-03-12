@@ -26,11 +26,11 @@ object FeatureEditResult {
   def apply(
     constructor: js.Function,
     error: FeatureEditResultError,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     objectId: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): FeatureEditResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor, error = error, hasOwnProperty = hasOwnProperty, objectId = objectId, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, error = error, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), objectId = objectId, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[FeatureEditResult]
   }

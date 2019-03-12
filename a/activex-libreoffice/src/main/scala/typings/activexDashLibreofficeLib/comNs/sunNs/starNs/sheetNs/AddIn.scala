@@ -60,22 +60,22 @@ object AddIn {
   def apply(
     Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
     ServiceName: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getArgumentDescription: js.Function2[java.lang.String, scala.Double, java.lang.String],
-    getCompatibilityNames: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[LocalizedName]],
-    getDisplayArgumentName: js.Function2[java.lang.String, scala.Double, java.lang.String],
-    getDisplayCategoryName: js.Function1[java.lang.String, java.lang.String],
-    getDisplayFunctionName: js.Function1[java.lang.String, java.lang.String],
-    getFunctionDescription: js.Function1[java.lang.String, java.lang.String],
-    getLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
-    getProgrammaticCategoryName: js.Function1[java.lang.String, java.lang.String],
-    getProgrammaticFuntionName: js.Function1[java.lang.String, java.lang.String],
-    getServiceName: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit]
+    acquire: () => scala.Unit,
+    getArgumentDescription: (java.lang.String, scala.Double) => java.lang.String,
+    getCompatibilityNames: java.lang.String => stdLib.SafeArray[LocalizedName],
+    getDisplayArgumentName: (java.lang.String, scala.Double) => java.lang.String,
+    getDisplayCategoryName: java.lang.String => java.lang.String,
+    getDisplayFunctionName: java.lang.String => java.lang.String,
+    getFunctionDescription: java.lang.String => java.lang.String,
+    getLocale: () => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    getProgrammaticCategoryName: java.lang.String => java.lang.String,
+    getProgrammaticFuntionName: java.lang.String => java.lang.String,
+    getServiceName: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => scala.Unit
   ): AddIn = {
-    val __obj = js.Dynamic.literal(Locale = Locale, ServiceName = ServiceName, acquire = acquire, getArgumentDescription = getArgumentDescription, getCompatibilityNames = getCompatibilityNames, getDisplayArgumentName = getDisplayArgumentName, getDisplayCategoryName = getDisplayCategoryName, getDisplayFunctionName = getDisplayFunctionName, getFunctionDescription = getFunctionDescription, getLocale = getLocale, getProgrammaticCategoryName = getProgrammaticCategoryName, getProgrammaticFuntionName = getProgrammaticFuntionName, getServiceName = getServiceName, queryInterface = queryInterface, release = release, setLocale = setLocale)
+    val __obj = js.Dynamic.literal(Locale = Locale, ServiceName = ServiceName, acquire = js.Any.fromFunction0(acquire), getArgumentDescription = js.Any.fromFunction2(getArgumentDescription), getCompatibilityNames = js.Any.fromFunction1(getCompatibilityNames), getDisplayArgumentName = js.Any.fromFunction2(getDisplayArgumentName), getDisplayCategoryName = js.Any.fromFunction1(getDisplayCategoryName), getDisplayFunctionName = js.Any.fromFunction1(getDisplayFunctionName), getFunctionDescription = js.Any.fromFunction1(getFunctionDescription), getLocale = js.Any.fromFunction0(getLocale), getProgrammaticCategoryName = js.Any.fromFunction1(getProgrammaticCategoryName), getProgrammaticFuntionName = js.Any.fromFunction1(getProgrammaticFuntionName), getServiceName = js.Any.fromFunction0(getServiceName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setLocale = js.Any.fromFunction1(setLocale))
   
     __obj.asInstanceOf[AddIn]
   }

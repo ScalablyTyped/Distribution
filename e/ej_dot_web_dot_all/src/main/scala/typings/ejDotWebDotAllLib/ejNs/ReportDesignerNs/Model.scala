@@ -70,43 +70,43 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    ajaxBeforeLoad: js.Function1[/* e */ AjaxBeforeLoadEventArgs, scala.Unit] = null,
-    ajaxError: js.Function1[/* e */ AjaxErrorEventArgs, scala.Unit] = null,
-    ajaxSuccess: js.Function1[/* e */ AjaxSuccessEventArgs, scala.Unit] = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    ajaxBeforeLoad: /* e */ AjaxBeforeLoadEventArgs => scala.Unit = null,
+    ajaxError: /* e */ AjaxErrorEventArgs => scala.Unit = null,
+    ajaxSuccess: /* e */ AjaxSuccessEventArgs => scala.Unit = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     locale: java.lang.String = null,
-    openReportClick: js.Function1[/* e */ OpenReportClickEventArgs, scala.Unit] = null,
-    reportModified: js.Function1[/* e */ ReportModifiedEventArgs, scala.Unit] = null,
-    reportOpened: js.Function1[/* e */ ReportOpenedEventArgs, scala.Unit] = null,
+    openReportClick: /* e */ OpenReportClickEventArgs => scala.Unit = null,
+    reportModified: /* e */ ReportModifiedEventArgs => scala.Unit = null,
+    reportOpened: /* e */ ReportOpenedEventArgs => scala.Unit = null,
     reportPath: java.lang.String = null,
-    reportSaved: js.Function1[/* e */ ReportSavedEventArgs, scala.Unit] = null,
+    reportSaved: /* e */ ReportSavedEventArgs => scala.Unit = null,
     reportServerUrl: java.lang.String = null,
-    saveReportClick: js.Function1[/* e */ SaveReportClickEventArgs, scala.Unit] = null,
+    saveReportClick: /* e */ SaveReportClickEventArgs => scala.Unit = null,
     serviceAuthorizationToken: java.lang.String = null,
     serviceUrl: java.lang.String = null,
-    toolbarClick: js.Function1[/* e */ ToolbarClickEventArgs, scala.Unit] = null,
-    toolbarRendering: js.Function1[/* e */ ToolbarRenderingEventArgs, scala.Unit] = null,
+    toolbarClick: /* e */ ToolbarClickEventArgs => scala.Unit = null,
+    toolbarRendering: /* e */ ToolbarRenderingEventArgs => scala.Unit = null,
     toolbarSettings: ToolbarSettings = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (ajaxBeforeLoad != null) __obj.updateDynamic("ajaxBeforeLoad")(ajaxBeforeLoad)
-    if (ajaxError != null) __obj.updateDynamic("ajaxError")(ajaxError)
-    if (ajaxSuccess != null) __obj.updateDynamic("ajaxSuccess")(ajaxSuccess)
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (ajaxBeforeLoad != null) __obj.updateDynamic("ajaxBeforeLoad")(js.Any.fromFunction1(ajaxBeforeLoad))
+    if (ajaxError != null) __obj.updateDynamic("ajaxError")(js.Any.fromFunction1(ajaxError))
+    if (ajaxSuccess != null) __obj.updateDynamic("ajaxSuccess")(js.Any.fromFunction1(ajaxSuccess))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (openReportClick != null) __obj.updateDynamic("openReportClick")(openReportClick)
-    if (reportModified != null) __obj.updateDynamic("reportModified")(reportModified)
-    if (reportOpened != null) __obj.updateDynamic("reportOpened")(reportOpened)
+    if (openReportClick != null) __obj.updateDynamic("openReportClick")(js.Any.fromFunction1(openReportClick))
+    if (reportModified != null) __obj.updateDynamic("reportModified")(js.Any.fromFunction1(reportModified))
+    if (reportOpened != null) __obj.updateDynamic("reportOpened")(js.Any.fromFunction1(reportOpened))
     if (reportPath != null) __obj.updateDynamic("reportPath")(reportPath)
-    if (reportSaved != null) __obj.updateDynamic("reportSaved")(reportSaved)
+    if (reportSaved != null) __obj.updateDynamic("reportSaved")(js.Any.fromFunction1(reportSaved))
     if (reportServerUrl != null) __obj.updateDynamic("reportServerUrl")(reportServerUrl)
-    if (saveReportClick != null) __obj.updateDynamic("saveReportClick")(saveReportClick)
+    if (saveReportClick != null) __obj.updateDynamic("saveReportClick")(js.Any.fromFunction1(saveReportClick))
     if (serviceAuthorizationToken != null) __obj.updateDynamic("serviceAuthorizationToken")(serviceAuthorizationToken)
     if (serviceUrl != null) __obj.updateDynamic("serviceUrl")(serviceUrl)
-    if (toolbarClick != null) __obj.updateDynamic("toolbarClick")(toolbarClick)
-    if (toolbarRendering != null) __obj.updateDynamic("toolbarRendering")(toolbarRendering)
+    if (toolbarClick != null) __obj.updateDynamic("toolbarClick")(js.Any.fromFunction1(toolbarClick))
+    if (toolbarRendering != null) __obj.updateDynamic("toolbarRendering")(js.Any.fromFunction1(toolbarRendering))
     if (toolbarSettings != null) __obj.updateDynamic("toolbarSettings")(toolbarSettings)
     __obj.asInstanceOf[Model]
   }

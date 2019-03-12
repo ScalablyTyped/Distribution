@@ -38,13 +38,13 @@ trait ASPxClientRibbonGroup extends js.Object {
 object ASPxClientRibbonGroup {
   @scala.inline
   def apply(
-    GetVisible: js.Function0[scala.Boolean],
+    GetVisible: () => scala.Boolean,
     index: scala.Double,
     name: java.lang.String,
     ribbon: ASPxClientRibbon,
     tab: ASPxClientRibbonTab
   ): ASPxClientRibbonGroup = {
-    val __obj = js.Dynamic.literal(GetVisible = GetVisible, index = index, name = name, ribbon = ribbon, tab = tab)
+    val __obj = js.Dynamic.literal(GetVisible = js.Any.fromFunction0(GetVisible), index = index, name = name, ribbon = ribbon, tab = tab)
   
     __obj.asInstanceOf[ASPxClientRibbonGroup]
   }

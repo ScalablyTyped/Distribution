@@ -28,16 +28,12 @@ trait XFilterGroupManager
 object XFilterGroupManager {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    appendFilterGroup: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair], 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    appendFilterGroup: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XFilterGroupManager = {
-    val __obj = js.Dynamic.literal(acquire = acquire, appendFilterGroup = appendFilterGroup, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), appendFilterGroup = js.Any.fromFunction2(appendFilterGroup), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XFilterGroupManager]
   }

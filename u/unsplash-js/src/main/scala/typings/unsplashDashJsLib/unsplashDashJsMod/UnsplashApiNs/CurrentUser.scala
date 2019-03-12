@@ -13,10 +13,10 @@ trait CurrentUser extends js.Object {
 object CurrentUser {
   @scala.inline
   def apply(
-    profile: js.Function0[js.Promise[stdLib.Response]],
-    updateProfile: js.Function1[unsplashDashJsLib.Anon_Bio, js.Promise[stdLib.Response]]
+    profile: () => js.Promise[stdLib.Response],
+    updateProfile: unsplashDashJsLib.Anon_Bio => js.Promise[stdLib.Response]
   ): CurrentUser = {
-    val __obj = js.Dynamic.literal(profile = profile, updateProfile = updateProfile)
+    val __obj = js.Dynamic.literal(profile = js.Any.fromFunction0(profile), updateProfile = js.Any.fromFunction1(updateProfile))
   
     __obj.asInstanceOf[CurrentUser]
   }

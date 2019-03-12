@@ -31,7 +31,7 @@ object DocumentToObjectOptions {
     depopulate: js.UndefOr[scala.Boolean] = js.undefined,
     getters: js.UndefOr[scala.Boolean] = js.undefined,
     minimize: js.UndefOr[scala.Boolean] = js.undefined,
-    transform: js.Function3[/* doc */ js.Any, /* ret */ js.Any, /* options */ js.Any, _] = null,
+    transform: (/* doc */ js.Any, /* ret */ js.Any, /* options */ js.Any) => _ = null,
     versionKey: js.UndefOr[scala.Boolean] = js.undefined,
     virtuals: js.UndefOr[scala.Boolean] = js.undefined
   ): DocumentToObjectOptions = {
@@ -39,7 +39,7 @@ object DocumentToObjectOptions {
     if (!js.isUndefined(depopulate)) __obj.updateDynamic("depopulate")(depopulate)
     if (!js.isUndefined(getters)) __obj.updateDynamic("getters")(getters)
     if (!js.isUndefined(minimize)) __obj.updateDynamic("minimize")(minimize)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction3(transform))
     if (!js.isUndefined(versionKey)) __obj.updateDynamic("versionKey")(versionKey)
     if (!js.isUndefined(virtuals)) __obj.updateDynamic("virtuals")(virtuals)
     __obj.asInstanceOf[DocumentToObjectOptions]

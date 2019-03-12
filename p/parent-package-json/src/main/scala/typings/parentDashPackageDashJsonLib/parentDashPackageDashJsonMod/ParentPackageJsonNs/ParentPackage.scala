@@ -14,11 +14,11 @@ trait ParentPackage extends js.Object {
 object ParentPackage {
   @scala.inline
   def apply(
-    parse: js.Function0[org.scalablytyped.runtime.StringDictionary[js.Any]],
+    parse: () => org.scalablytyped.runtime.StringDictionary[js.Any],
     path: java.lang.String,
-    read: js.Function0[java.lang.String]
+    read: () => java.lang.String
   ): ParentPackage = {
-    val __obj = js.Dynamic.literal(parse = parse, path = path, read = read)
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction0(parse), path = path, read = js.Any.fromFunction0(read))
   
     __obj.asInstanceOf[ParentPackage]
   }

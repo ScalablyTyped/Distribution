@@ -105,7 +105,7 @@ object GridsterOptions {
     min_rows: scala.Int | scala.Double = null,
     namespace: java.lang.String = null,
     resize: GridsterResizable = null,
-    serialize_params: js.Function2[/* $w */ JQuery, /* wgd */ GridsterCoords, _] = null,
+    serialize_params: (/* $w */ JQuery, /* wgd */ GridsterCoords) => _ = null,
     widget_base_dimensions: js.Array[jqueryDotGridsterLib.jqueryDotGridsterLibStrings.auto | scala.Double] = null,
     widget_margins: js.Array[scala.Double] = null,
     widget_selector: java.lang.String | js.Array[stdLib.HTMLElement] = null
@@ -124,7 +124,7 @@ object GridsterOptions {
     if (min_rows != null) __obj.updateDynamic("min_rows")(min_rows.asInstanceOf[js.Any])
     if (namespace != null) __obj.updateDynamic("namespace")(namespace)
     if (resize != null) __obj.updateDynamic("resize")(resize)
-    if (serialize_params != null) __obj.updateDynamic("serialize_params")(serialize_params)
+    if (serialize_params != null) __obj.updateDynamic("serialize_params")(js.Any.fromFunction2(serialize_params))
     if (widget_base_dimensions != null) __obj.updateDynamic("widget_base_dimensions")(widget_base_dimensions)
     if (widget_margins != null) __obj.updateDynamic("widget_margins")(widget_margins)
     if (widget_selector != null) __obj.updateDynamic("widget_selector")(widget_selector.asInstanceOf[js.Any])

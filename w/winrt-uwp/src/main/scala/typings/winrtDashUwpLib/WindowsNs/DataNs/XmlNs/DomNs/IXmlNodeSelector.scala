@@ -38,12 +38,12 @@ trait IXmlNodeSelector extends js.Object {
 object IXmlNodeSelector {
   @scala.inline
   def apply(
-    selectNodes: js.Function1[java.lang.String, XmlNodeList],
-    selectNodesNS: js.Function2[java.lang.String, js.Any, XmlNodeList],
-    selectSingleNode: js.Function1[java.lang.String, IXmlNode],
-    selectSingleNodeNS: js.Function2[java.lang.String, js.Any, IXmlNode]
+    selectNodes: java.lang.String => XmlNodeList,
+    selectNodesNS: (java.lang.String, js.Any) => XmlNodeList,
+    selectSingleNode: java.lang.String => IXmlNode,
+    selectSingleNodeNS: (java.lang.String, js.Any) => IXmlNode
   ): IXmlNodeSelector = {
-    val __obj = js.Dynamic.literal(selectNodes = selectNodes, selectNodesNS = selectNodesNS, selectSingleNode = selectSingleNode, selectSingleNodeNS = selectSingleNodeNS)
+    val __obj = js.Dynamic.literal(selectNodes = js.Any.fromFunction1(selectNodes), selectNodesNS = js.Any.fromFunction2(selectNodesNS), selectSingleNode = js.Any.fromFunction1(selectSingleNode), selectSingleNodeNS = js.Any.fromFunction2(selectSingleNodeNS))
   
     __obj.asInstanceOf[IXmlNodeSelector]
   }

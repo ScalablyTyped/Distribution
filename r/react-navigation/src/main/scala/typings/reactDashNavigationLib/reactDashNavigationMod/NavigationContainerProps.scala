@@ -30,12 +30,7 @@ object NavigationContainerProps {
   def apply[S, O](
     navigation: NavigationScreenProp[S, NavigationParams] = null,
     navigationOptions: O = null,
-    onNavigationStateChange: js.Function3[
-      /* prevNavigationState */ NavigationState, 
-      /* nextNavigationState */ NavigationState, 
-      /* action */ NavigationAction, 
-      js.UndefOr[scala.Unit | scala.Null]
-    ] = null,
+    onNavigationStateChange: (/* prevNavigationState */ NavigationState, /* nextNavigationState */ NavigationState, /* action */ NavigationAction) => js.UndefOr[scala.Unit | scala.Null] = null,
     persistenceKey: java.lang.String = null,
     renderLoadingExperimental: reactLib.reactMod.ReactNs.ComponentType[js.Object] = null,
     screenProps: js.Any = null,
@@ -45,7 +40,7 @@ object NavigationContainerProps {
     val __obj = js.Dynamic.literal()
     if (navigation != null) __obj.updateDynamic("navigation")(navigation)
     if (navigationOptions != null) __obj.updateDynamic("navigationOptions")(navigationOptions.asInstanceOf[js.Any])
-    if (onNavigationStateChange != null) __obj.updateDynamic("onNavigationStateChange")(onNavigationStateChange)
+    if (onNavigationStateChange != null) __obj.updateDynamic("onNavigationStateChange")(js.Any.fromFunction3(onNavigationStateChange))
     if (persistenceKey != null) __obj.updateDynamic("persistenceKey")(persistenceKey)
     if (renderLoadingExperimental != null) __obj.updateDynamic("renderLoadingExperimental")(renderLoadingExperimental.asInstanceOf[js.Any])
     if (screenProps != null) __obj.updateDynamic("screenProps")(screenProps)

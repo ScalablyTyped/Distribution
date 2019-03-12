@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class RuleConditions protected () extends js.Object {
   val Account: AccountRuleCondition = js.native
   val AnyCategory: RuleCondition = js.native
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Body: TextRuleCondition = js.native
   val BodyOrSubject: TextRuleCondition = js.native
   val CC: RuleCondition = js.native

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var Behavior: js.Function = js.native
-  var Emitter: emissaryLib.emissaryMod.IEmitterStatic = js.native
+  var Emitter: IEmitterStatic = js.native
   var Signal: js.Function = js.native
-  var Subscriber: emissaryLib.emissaryMod.ISubscriberStatic = js.native
+  var Subscriber: ISubscriberStatic = js.native
   var combine: js.Function = js.native
 }
 

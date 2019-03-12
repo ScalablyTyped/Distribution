@@ -33,7 +33,7 @@ trait Legend
     *
     * If `VOID` , the legend position is solely determined by the {@link AnchorPosition} .
     */
-  var RelativePosition: RelativePosition = js.native
+  var RelativePosition: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.RelativePosition = js.native
   /** Determines, whether the legend should be rendered by the view. */
   var Show: scala.Boolean = js.native
   /**

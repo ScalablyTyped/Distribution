@@ -13,10 +13,10 @@ trait SjclCipher extends js.Object {
 object SjclCipher {
   @scala.inline
   def apply(
-    decrypt: js.Function1[js.Array[scala.Double], js.Array[scala.Double]],
-    encrypt: js.Function1[js.Array[scala.Double], js.Array[scala.Double]]
+    decrypt: js.Array[scala.Double] => js.Array[scala.Double],
+    encrypt: js.Array[scala.Double] => js.Array[scala.Double]
   ): SjclCipher = {
-    val __obj = js.Dynamic.literal(decrypt = decrypt, encrypt = encrypt)
+    val __obj = js.Dynamic.literal(decrypt = js.Any.fromFunction1(decrypt), encrypt = js.Any.fromFunction1(encrypt))
   
     __obj.asInstanceOf[SjclCipher]
   }

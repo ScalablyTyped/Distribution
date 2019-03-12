@@ -16,11 +16,11 @@ object Item {
   @scala.inline
   def apply(
     data: js.Object,
-    destroy: js.Function1[CbCallback, scala.Unit],
-    refresh: js.Function1[CbCallback, scala.Unit],
-    save: js.Function1[CbCallback, scala.Unit]
+    destroy: CbCallback => scala.Unit,
+    refresh: CbCallback => scala.Unit,
+    save: CbCallback => scala.Unit
   ): Item = {
-    val __obj = js.Dynamic.literal(data = data, destroy = destroy, refresh = refresh, save = save)
+    val __obj = js.Dynamic.literal(data = data, destroy = js.Any.fromFunction1(destroy), refresh = js.Any.fromFunction1(refresh), save = js.Any.fromFunction1(save))
   
     __obj.asInstanceOf[Item]
   }

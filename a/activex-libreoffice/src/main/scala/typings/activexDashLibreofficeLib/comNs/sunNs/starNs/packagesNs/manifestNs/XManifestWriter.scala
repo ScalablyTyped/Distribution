@@ -23,18 +23,14 @@ trait XManifestWriter
 object XManifestWriter {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    writeManifestSequence: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
-        activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-      ], 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    writeManifestSequence: (activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ]) => scala.Unit
   ): XManifestWriter = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, writeManifestSequence = writeManifestSequence)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), writeManifestSequence = js.Any.fromFunction2(writeManifestSequence))
   
     __obj.asInstanceOf[XManifestWriter]
   }

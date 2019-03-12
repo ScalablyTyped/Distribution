@@ -46,7 +46,7 @@ trait App extends js.Object {
     * console.log(app.options.databaseURL === config.databaseURL);  // true
     * ```
     */
-  var options: coreDashJsLib.Object = js.native
+  var options: js.Object = js.native
   /**
     * Gets the {@link firebase.auth.Auth `Auth`} service for the current app.
     *

@@ -29,26 +29,26 @@ object RevoluteConstraint {
     bodyA: Body,
     bodyB: Body,
     collideConnected: scala.Boolean,
-    disableMotor: js.Function0[scala.Unit],
-    enableMotor: js.Function0[scala.Unit],
+    disableMotor: () => scala.Unit,
+    enableMotor: () => scala.Unit,
     equeations: js.Array[Equation],
-    getMotorSpeed: js.Function0[scala.Double],
+    getMotorSpeed: () => scala.Double,
     lowerLimit: scala.Double,
     lowerLimitEnabled: scala.Boolean,
     motorEnabled: scala.Boolean,
-    motorIsEnabled: js.Function0[scala.Boolean],
+    motorIsEnabled: () => scala.Boolean,
     motorMaxForce: scala.Double,
     motorSpeed: scala.Double,
-    setLimits: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setMotorSpeed: js.Function1[scala.Double, scala.Unit],
-    setRelaxation: js.Function1[scala.Double, scala.Unit],
-    setStiffness: js.Function1[scala.Double, scala.Unit],
+    setLimits: (scala.Double, scala.Double) => scala.Unit,
+    setMotorSpeed: scala.Double => scala.Unit,
+    setRelaxation: scala.Double => scala.Unit,
+    setStiffness: scala.Double => scala.Unit,
     `type`: scala.Double,
-    update: js.Function0[scala.Unit],
+    update: () => scala.Unit,
     upperLimit: scala.Double,
     upperLimitEnabled: scala.Boolean
   ): RevoluteConstraint = {
-    val __obj = js.Dynamic.literal(angle = angle, bodyA = bodyA, bodyB = bodyB, collideConnected = collideConnected, disableMotor = disableMotor, enableMotor = enableMotor, equeations = equeations, getMotorSpeed = getMotorSpeed, lowerLimit = lowerLimit, lowerLimitEnabled = lowerLimitEnabled, motorEnabled = motorEnabled, motorIsEnabled = motorIsEnabled, motorMaxForce = motorMaxForce, motorSpeed = motorSpeed, setLimits = setLimits, setMotorSpeed = setMotorSpeed, setRelaxation = setRelaxation, setStiffness = setStiffness, update = update, upperLimit = upperLimit, upperLimitEnabled = upperLimitEnabled)
+    val __obj = js.Dynamic.literal(angle = angle, bodyA = bodyA, bodyB = bodyB, collideConnected = collideConnected, disableMotor = js.Any.fromFunction0(disableMotor), enableMotor = js.Any.fromFunction0(enableMotor), equeations = equeations, getMotorSpeed = js.Any.fromFunction0(getMotorSpeed), lowerLimit = lowerLimit, lowerLimitEnabled = lowerLimitEnabled, motorEnabled = motorEnabled, motorIsEnabled = js.Any.fromFunction0(motorIsEnabled), motorMaxForce = motorMaxForce, motorSpeed = motorSpeed, setLimits = js.Any.fromFunction2(setLimits), setMotorSpeed = js.Any.fromFunction1(setMotorSpeed), setRelaxation = js.Any.fromFunction1(setRelaxation), setStiffness = js.Any.fromFunction1(setStiffness), update = js.Any.fromFunction0(update), upperLimit = upperLimit, upperLimitEnabled = upperLimitEnabled)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RevoluteConstraint]
   }

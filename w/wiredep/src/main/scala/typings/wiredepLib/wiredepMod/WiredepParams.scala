@@ -58,7 +58,7 @@ trait WiredepParams extends js.Object {
     *  - "PKG_NOT_INSTALLED" (a Bower package was not found)
     *  - "BOWER_COMPONENTS_MISSING" (cannot find the `bower_components` directory)
     */
-  var onError: js.UndefOr[js.Function1[/* err */ nodeLib.Error, scala.Unit]] = js.undefined
+  var onError: js.UndefOr[js.Function1[/* err */ stdLib.Error, scala.Unit]] = js.undefined
   /**
     * @param {string} filePath name of file that was updated
     */
@@ -91,10 +91,10 @@ object WiredepParams {
     fileTypes: FileTypes = null,
     ignorePath: java.lang.String | stdLib.RegExp = null,
     includeSelf: js.UndefOr[scala.Boolean] = js.undefined,
-    onError: js.Function1[/* err */ nodeLib.Error, scala.Unit] = null,
-    onFileUpdated: js.Function1[/* filePath */ java.lang.String, scala.Unit] = null,
-    onMainNotFound: js.Function1[/* pkg */ java.lang.String, scala.Unit] = null,
-    onPathInjected: js.Function1[/* fileObject */ FileObject, scala.Unit] = null,
+    onError: /* err */ stdLib.Error => scala.Unit = null,
+    onFileUpdated: /* filePath */ java.lang.String => scala.Unit = null,
+    onMainNotFound: /* pkg */ java.lang.String => scala.Unit = null,
+    onPathInjected: /* fileObject */ FileObject => scala.Unit = null,
     overrides: js.Object = null,
     src: java.lang.String | js.Array[java.lang.String] = null
   ): WiredepParams = {
@@ -108,10 +108,10 @@ object WiredepParams {
     if (fileTypes != null) __obj.updateDynamic("fileTypes")(fileTypes)
     if (ignorePath != null) __obj.updateDynamic("ignorePath")(ignorePath.asInstanceOf[js.Any])
     if (!js.isUndefined(includeSelf)) __obj.updateDynamic("includeSelf")(includeSelf)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onFileUpdated != null) __obj.updateDynamic("onFileUpdated")(onFileUpdated)
-    if (onMainNotFound != null) __obj.updateDynamic("onMainNotFound")(onMainNotFound)
-    if (onPathInjected != null) __obj.updateDynamic("onPathInjected")(onPathInjected)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onFileUpdated != null) __obj.updateDynamic("onFileUpdated")(js.Any.fromFunction1(onFileUpdated))
+    if (onMainNotFound != null) __obj.updateDynamic("onMainNotFound")(js.Any.fromFunction1(onMainNotFound))
+    if (onPathInjected != null) __obj.updateDynamic("onPathInjected")(js.Any.fromFunction1(onPathInjected))
     if (overrides != null) __obj.updateDynamic("overrides")(overrides)
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     __obj.asInstanceOf[WiredepParams]

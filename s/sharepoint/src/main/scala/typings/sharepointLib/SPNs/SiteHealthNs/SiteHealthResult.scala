@@ -15,8 +15,8 @@ class SiteHealthResult ()
   def get_ruleIsRepairable(): scala.Boolean = js.native
   def get_ruleName(): java.lang.String = js.native
   def get_status(): SiteHealthStatusType = js.native
-  def get_timeStamp(): microsoftDashAjaxLib.Date = js.native
+  def get_timeStamp(): stdLib.Date = js.native
   def set_status(value: SiteHealthStatusType): scala.Unit = js.native
-  def set_timeStamp(value: microsoftDashAjaxLib.Date): scala.Unit = js.native
+  def set_timeStamp(value: stdLib.Date): scala.Unit = js.native
 }
 

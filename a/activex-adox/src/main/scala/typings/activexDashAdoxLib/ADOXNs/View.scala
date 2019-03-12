@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class View protected () extends js.Object {
   var `ADOX.View_typekey`: View = js.native
   var Command: activexDashAdodbLib.ADODBNs.Command = js.native
-  val DateCreated: activexDashInteropLib.VarDate = js.native
-  val DateModified: activexDashInteropLib.VarDate = js.native
+  val DateCreated: stdLib.VarDate = js.native
+  val DateModified: stdLib.VarDate = js.native
   val Name: java.lang.String = js.native
 }
 

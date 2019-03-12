@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SubscribeFailData extends SubscribeData {
-  var error: nodeLib.Error
+  var error: stdLib.Error
 }
 
 object SubscribeFailData {
   @scala.inline
   def apply(
     channel: java.lang.String,
-    error: nodeLib.Error,
+    error: stdLib.Error,
     poolIndex: scala.Double,
     targetURI: java.lang.String
   ): SubscribeFailData = {

@@ -121,13 +121,13 @@ object Options {
     instructionsRefreshing: java.lang.String = null,
     instructionsReleaseToRefresh: java.lang.String = null,
     mainElement: java.lang.String = null,
-    onInit: js.Function0[scala.Unit] = null,
+    onInit: () => scala.Unit = null,
     onRefresh: js.Function0[js.Thenable[scala.Unit]] | js.Function0[scala.Unit] = null,
     passive: js.UndefOr[scala.Boolean] = js.undefined,
     ptrElement: java.lang.String = null,
     refreshTimeout: scala.Int | scala.Double = null,
-    resistanceFunction: js.Function1[/* input */ scala.Double, scala.Double] = null,
-    shouldPullToRefresh: js.Function0[scala.Boolean] = null,
+    resistanceFunction: /* input */ scala.Double => scala.Double = null,
+    shouldPullToRefresh: () => scala.Boolean = null,
     triggerElement: java.lang.String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
@@ -142,13 +142,13 @@ object Options {
     if (instructionsRefreshing != null) __obj.updateDynamic("instructionsRefreshing")(instructionsRefreshing)
     if (instructionsReleaseToRefresh != null) __obj.updateDynamic("instructionsReleaseToRefresh")(instructionsReleaseToRefresh)
     if (mainElement != null) __obj.updateDynamic("mainElement")(mainElement)
-    if (onInit != null) __obj.updateDynamic("onInit")(onInit)
+    if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction0(onInit))
     if (onRefresh != null) __obj.updateDynamic("onRefresh")(onRefresh.asInstanceOf[js.Any])
     if (!js.isUndefined(passive)) __obj.updateDynamic("passive")(passive)
     if (ptrElement != null) __obj.updateDynamic("ptrElement")(ptrElement)
     if (refreshTimeout != null) __obj.updateDynamic("refreshTimeout")(refreshTimeout.asInstanceOf[js.Any])
-    if (resistanceFunction != null) __obj.updateDynamic("resistanceFunction")(resistanceFunction)
-    if (shouldPullToRefresh != null) __obj.updateDynamic("shouldPullToRefresh")(shouldPullToRefresh)
+    if (resistanceFunction != null) __obj.updateDynamic("resistanceFunction")(js.Any.fromFunction1(resistanceFunction))
+    if (shouldPullToRefresh != null) __obj.updateDynamic("shouldPullToRefresh")(js.Any.fromFunction0(shouldPullToRefresh))
     if (triggerElement != null) __obj.updateDynamic("triggerElement")(triggerElement)
     __obj.asInstanceOf[Options]
   }

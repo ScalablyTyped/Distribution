@@ -12,12 +12,9 @@ trait WebDriverBarrier extends js.Object {
 object WebDriverBarrier {
   @scala.inline
   def apply(
-    onCommand: js.Function1[
-      blockingDashProxyLib.builtLibWebdriverUnderscoreCommandsMod.WebDriverCommand, 
-      js.Promise[scala.Unit]
-    ]
+    onCommand: blockingDashProxyLib.builtLibWebdriverUnderscoreCommandsMod.WebDriverCommand => js.Promise[scala.Unit]
   ): WebDriverBarrier = {
-    val __obj = js.Dynamic.literal(onCommand = onCommand)
+    val __obj = js.Dynamic.literal(onCommand = js.Any.fromFunction1(onCommand))
   
     __obj.asInstanceOf[WebDriverBarrier]
   }

@@ -19,7 +19,7 @@ trait GMXMLHttpRequestResult
 object GMXMLHttpRequestResult {
   @scala.inline
   def apply(
-    abort: js.Function0[scala.Unit],
+    abort: () => scala.Unit,
     finalUrl: java.lang.String,
     readyState: scala.Double,
     responseHeaders: java.lang.String,
@@ -27,7 +27,7 @@ object GMXMLHttpRequestResult {
     status: scala.Double,
     statusText: java.lang.String
   ): GMXMLHttpRequestResult = {
-    val __obj = js.Dynamic.literal(abort = abort, finalUrl = finalUrl, readyState = readyState, responseHeaders = responseHeaders, responseText = responseText, status = status, statusText = statusText)
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), finalUrl = finalUrl, readyState = readyState, responseHeaders = responseHeaders, responseText = responseText, status = status, statusText = statusText)
   
     __obj.asInstanceOf[GMXMLHttpRequestResult]
   }

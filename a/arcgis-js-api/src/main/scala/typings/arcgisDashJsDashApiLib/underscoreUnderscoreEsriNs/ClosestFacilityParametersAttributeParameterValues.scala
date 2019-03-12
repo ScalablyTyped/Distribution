@@ -32,12 +32,12 @@ object ClosestFacilityParametersAttributeParameterValues {
   def apply(
     attributeName: java.lang.String,
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     parameterName: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     value: java.lang.String
   ): ClosestFacilityParametersAttributeParameterValues = {
-    val __obj = js.Dynamic.literal(attributeName = attributeName, constructor = constructor, hasOwnProperty = hasOwnProperty, parameterName = parameterName, propertyIsEnumerable = propertyIsEnumerable, value = value)
+    val __obj = js.Dynamic.literal(attributeName = attributeName, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), parameterName = parameterName, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value)
   
     __obj.asInstanceOf[ClosestFacilityParametersAttributeParameterValues]
   }

@@ -51,7 +51,7 @@ object Rule {
     pop: scala.Int | scala.Double = null,
     push: java.lang.String = null,
     `type`: TypeMapper = null,
-    value: js.Function1[/* x */ java.lang.String, java.lang.String] = null
+    value: /* x */ java.lang.String => java.lang.String = null
   ): Rule = {
     val __obj = js.Dynamic.literal()
     if (error != null) __obj.updateDynamic("error")(error)
@@ -61,7 +61,7 @@ object Rule {
     if (pop != null) __obj.updateDynamic("pop")(pop.asInstanceOf[js.Any])
     if (push != null) __obj.updateDynamic("push")(push)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(js.Any.fromFunction1(value))
     __obj.asInstanceOf[Rule]
   }
 }

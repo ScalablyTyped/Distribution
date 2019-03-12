@@ -4085,7 +4085,7 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Emphasis: Emphasis = "Emphasis".asInstanceOf[Emphasis]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def Empty: Empty = "Empty".asInstanceOf[Empty]
   @scala.inline
   def End: End = "End".asInstanceOf[End]
   @scala.inline

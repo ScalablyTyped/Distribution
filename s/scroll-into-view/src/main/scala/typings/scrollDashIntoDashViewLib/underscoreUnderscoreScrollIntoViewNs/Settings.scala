@@ -18,15 +18,15 @@ object Settings {
   @scala.inline
   def apply(
     align: Alignment = null,
-    ease: js.Function1[/* value */ scala.Double, scala.Double] = null,
+    ease: /* value */ scala.Double => scala.Double = null,
     time: scala.Int | scala.Double = null,
-    validTarget: js.Function2[/* target */ stdLib.HTMLElement, /* parentsScrolled */ scala.Double, scala.Boolean] = null
+    validTarget: (/* target */ stdLib.HTMLElement, /* parentsScrolled */ scala.Double) => scala.Boolean = null
   ): Settings = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align)
-    if (ease != null) __obj.updateDynamic("ease")(ease)
+    if (ease != null) __obj.updateDynamic("ease")(js.Any.fromFunction1(ease))
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (validTarget != null) __obj.updateDynamic("validTarget")(validTarget)
+    if (validTarget != null) __obj.updateDynamic("validTarget")(js.Any.fromFunction2(validTarget))
     __obj.asInstanceOf[Settings]
   }
 }

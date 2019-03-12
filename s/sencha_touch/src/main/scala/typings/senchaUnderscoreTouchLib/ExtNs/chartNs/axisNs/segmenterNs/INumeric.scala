@@ -48,77 +48,59 @@ trait INumeric extends ISegmenter {
 object INumeric {
   @scala.inline
   def apply(
-    add: js.Function3[
-      /* value */ js.UndefOr[js.Any], 
-      /* step */ js.UndefOr[js.Any], 
-      /* unit */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
+    add: (/* value */ js.UndefOr[js.Any], /* step */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => scala.Unit = null,
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
-    align: js.Function3[
-      /* value */ js.UndefOr[js.Any], 
-      /* step */ js.UndefOr[js.Any], 
-      /* unit */ js.UndefOr[js.Any], 
-      _
-    ] = null,
+    align: (/* value */ js.UndefOr[js.Any], /* step */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => _ = null,
     alternateClassName: js.Any = null,
     axis: senchaUnderscoreTouchLib.ExtNs.chartNs.axisNs.IAxis = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
-    diff: js.Function3[
-      /* min */ js.UndefOr[js.Any], 
-      /* max */ js.UndefOr[js.Any], 
-      /* unit */ js.UndefOr[js.Any], 
-      scala.Double
-    ] = null,
-    exactStep: js.Function2[/* start */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any], _] = null,
+    destroy: () => scala.Unit = null,
+    diff: (/* min */ js.UndefOr[js.Any], /* max */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => scala.Double = null,
+    exactStep: (/* start */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any]) => _ = null,
     extend: java.lang.String = null,
-    from: js.Function1[/* value */ js.UndefOr[js.Any], _] = null,
-    getAxis: js.Function0[senchaUnderscoreTouchLib.ExtNs.chartNs.axisNs.IAxis] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    from: /* value */ js.UndefOr[js.Any] => _ = null,
+    getAxis: () => senchaUnderscoreTouchLib.ExtNs.chartNs.axisNs.IAxis = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
-    preferredStep: js.Function2[/* min */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any], _] = null,
-    renderer: js.Function2[/* value */ js.UndefOr[js.Any], /* context */ js.UndefOr[js.Any], java.lang.String] = null,
+    preferredStep: (/* min */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any]) => _ = null,
+    renderer: (/* value */ js.UndefOr[js.Any], /* context */ js.UndefOr[js.Any]) => java.lang.String = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setAxis: js.Function1[
-      /* axis */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.chartNs.axisNs.IAxis], 
-      scala.Unit
-    ] = null,
+    setAxis: /* axis */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.chartNs.axisNs.IAxis] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null
   ): INumeric = {
     val __obj = js.Dynamic.literal()
-    if (add != null) __obj.updateDynamic("add")(add)
+    if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction3(add))
     if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (align != null) __obj.updateDynamic("align")(align)
+    if (align != null) __obj.updateDynamic("align")(js.Any.fromFunction3(align))
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
     if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (diff != null) __obj.updateDynamic("diff")(diff)
-    if (exactStep != null) __obj.updateDynamic("exactStep")(exactStep)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
+    if (diff != null) __obj.updateDynamic("diff")(js.Any.fromFunction3(diff))
+    if (exactStep != null) __obj.updateDynamic("exactStep")(js.Any.fromFunction2(exactStep))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (getAxis != null) __obj.updateDynamic("getAxis")(getAxis)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (from != null) __obj.updateDynamic("from")(js.Any.fromFunction1(from))
+    if (getAxis != null) __obj.updateDynamic("getAxis")(js.Any.fromFunction0(getAxis))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
-    if (preferredStep != null) __obj.updateDynamic("preferredStep")(preferredStep)
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (preferredStep != null) __obj.updateDynamic("preferredStep")(js.Any.fromFunction2(preferredStep))
+    if (renderer != null) __obj.updateDynamic("renderer")(js.Any.fromFunction2(renderer))
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setAxis != null) __obj.updateDynamic("setAxis")(setAxis)
+    if (setAxis != null) __obj.updateDynamic("setAxis")(js.Any.fromFunction1(setAxis))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (uses != null) __obj.updateDynamic("uses")(uses)

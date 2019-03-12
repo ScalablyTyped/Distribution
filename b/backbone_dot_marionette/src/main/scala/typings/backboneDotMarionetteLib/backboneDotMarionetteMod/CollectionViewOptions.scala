@@ -82,12 +82,7 @@ object CollectionViewOptions {
     emptyView: js.Function0[backboneDotMarionetteLib.Anon_ClassProperties] | backboneDotMarionetteLib.Anon_ClassProperties = null,
     emptyViewOptions: js.Function0[ViewOptions[TModel]] | ViewOptions[TModel] = null,
     events: EventsHash = null,
-    filter: js.Function3[
-      /* child */ js.UndefOr[TModel], 
-      /* index */ js.UndefOr[scala.Double], 
-      /* collection */ js.UndefOr[TCollection], 
-      scala.Boolean
-    ] = null,
+    filter: (/* child */ js.UndefOr[TModel], /* index */ js.UndefOr[scala.Double], /* collection */ js.UndefOr[TCollection]) => scala.Boolean = null,
     id: java.lang.String = null,
     model: TModel = null,
     modelEvents: EventsHash = null,
@@ -113,7 +108,7 @@ object CollectionViewOptions {
     if (emptyView != null) __obj.updateDynamic("emptyView")(emptyView.asInstanceOf[js.Any])
     if (emptyViewOptions != null) __obj.updateDynamic("emptyViewOptions")(emptyViewOptions.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction3(filter))
     if (id != null) __obj.updateDynamic("id")(id)
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (modelEvents != null) __obj.updateDynamic("modelEvents")(modelEvents)

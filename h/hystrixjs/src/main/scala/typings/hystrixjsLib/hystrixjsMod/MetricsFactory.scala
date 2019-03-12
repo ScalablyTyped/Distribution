@@ -14,11 +14,11 @@ trait MetricsFactory extends js.Object {
 object MetricsFactory {
   @scala.inline
   def apply(
-    getAllMetrics: js.Function0[js.Array[CommandMetrics]],
-    getOrCreate: js.Function1[MetricsProperties, CommandMetrics],
-    resetCache: js.Function0[scala.Unit]
+    getAllMetrics: () => js.Array[CommandMetrics],
+    getOrCreate: MetricsProperties => CommandMetrics,
+    resetCache: () => scala.Unit
   ): MetricsFactory = {
-    val __obj = js.Dynamic.literal(getAllMetrics = getAllMetrics, getOrCreate = getOrCreate, resetCache = resetCache)
+    val __obj = js.Dynamic.literal(getAllMetrics = js.Any.fromFunction0(getAllMetrics), getOrCreate = js.Any.fromFunction1(getOrCreate), resetCache = js.Any.fromFunction0(resetCache))
   
     __obj.asInstanceOf[MetricsFactory]
   }

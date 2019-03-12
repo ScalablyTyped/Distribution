@@ -13,12 +13,9 @@ trait PerformanceReportResource extends js.Object {
 object PerformanceReportResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltEndDateTime, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PerformanceReportList]
-    ]
+    list: gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltEndDateTime => gapiDotClientLib.gapiNs.clientNs.Request[PerformanceReportList]
   ): PerformanceReportResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[PerformanceReportResource]
   }

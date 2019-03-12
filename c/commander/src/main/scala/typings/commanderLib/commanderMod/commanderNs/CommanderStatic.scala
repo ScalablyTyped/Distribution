@@ -12,12 +12,12 @@ trait CommanderStatic
     /* name */ js.UndefOr[/* name */ java.lang.String], 
     commanderLib.commanderMod.localNs.Command
   ] = js.native
-  var CommandOptions: CommandOptions = js.native
+  var CommandOptions: commanderLib.commanderMod.commanderNs.CommandOptions = js.native
   var Option: org.scalablytyped.runtime.Instantiable2[
     /* flags */ java.lang.String, 
     /* description */ js.UndefOr[/* description */ java.lang.String], 
     commanderLib.commanderMod.localNs.Option
   ] = js.native
-  var ParseOptionsResult: ParseOptionsResult = js.native
+  var ParseOptionsResult: commanderLib.commanderMod.commanderNs.ParseOptionsResult = js.native
 }
 

@@ -76,39 +76,12 @@ object TableRowProps {
     displayBorder: js.UndefOr[scala.Boolean] = js.undefined,
     hoverable: js.UndefOr[scala.Boolean] = js.undefined,
     hovered: js.UndefOr[scala.Boolean] = js.undefined,
-    onCellClick: js.Function3[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
-      /* row */ scala.Double, 
-      /* column */ scala.Double, 
-      scala.Unit
-    ] = null,
-    onCellHover: js.Function3[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
-      /* row */ scala.Double, 
-      /* column */ scala.Double, 
-      scala.Unit
-    ] = null,
-    onCellHoverExit: js.Function3[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
-      /* row */ scala.Double, 
-      /* column */ scala.Double, 
-      scala.Unit
-    ] = null,
-    onRowClick: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
-      /* row */ scala.Double, 
-      scala.Unit
-    ] = null,
-    onRowHover: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
-      /* row */ scala.Double, 
-      scala.Unit
-    ] = null,
-    onRowHoverExit: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
-      /* row */ scala.Double, 
-      scala.Unit
-    ] = null,
+    onCellClick: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* row */ scala.Double, /* column */ scala.Double) => scala.Unit = null,
+    onCellHover: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* row */ scala.Double, /* column */ scala.Double) => scala.Unit = null,
+    onCellHoverExit: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* row */ scala.Double, /* column */ scala.Double) => scala.Unit = null,
+    onRowClick: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* row */ scala.Double) => scala.Unit = null,
+    onRowHover: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* row */ scala.Double) => scala.Unit = null,
+    onRowHoverExit: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* row */ scala.Double) => scala.Unit = null,
     rowNumber: scala.Int | scala.Double = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
     selected: js.UndefOr[scala.Boolean] = js.undefined,
@@ -120,12 +93,12 @@ object TableRowProps {
     if (!js.isUndefined(displayBorder)) __obj.updateDynamic("displayBorder")(displayBorder)
     if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable)
     if (!js.isUndefined(hovered)) __obj.updateDynamic("hovered")(hovered)
-    if (onCellClick != null) __obj.updateDynamic("onCellClick")(onCellClick)
-    if (onCellHover != null) __obj.updateDynamic("onCellHover")(onCellHover)
-    if (onCellHoverExit != null) __obj.updateDynamic("onCellHoverExit")(onCellHoverExit)
-    if (onRowClick != null) __obj.updateDynamic("onRowClick")(onRowClick)
-    if (onRowHover != null) __obj.updateDynamic("onRowHover")(onRowHover)
-    if (onRowHoverExit != null) __obj.updateDynamic("onRowHoverExit")(onRowHoverExit)
+    if (onCellClick != null) __obj.updateDynamic("onCellClick")(js.Any.fromFunction3(onCellClick))
+    if (onCellHover != null) __obj.updateDynamic("onCellHover")(js.Any.fromFunction3(onCellHover))
+    if (onCellHoverExit != null) __obj.updateDynamic("onCellHoverExit")(js.Any.fromFunction3(onCellHoverExit))
+    if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction2(onRowClick))
+    if (onRowHover != null) __obj.updateDynamic("onRowHover")(js.Any.fromFunction2(onRowHover))
+    if (onRowHoverExit != null) __obj.updateDynamic("onRowHoverExit")(js.Any.fromFunction2(onRowHoverExit))
     if (rowNumber != null) __obj.updateDynamic("rowNumber")(rowNumber.asInstanceOf[js.Any])
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)

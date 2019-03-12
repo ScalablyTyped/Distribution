@@ -24,15 +24,15 @@ trait Relation extends BaseObject {
 object Relation {
   @scala.inline
   def apply(
-    add: js.Function1[Object, scala.Unit],
+    add: Object => scala.Unit,
     key: java.lang.String,
     parent: Object,
-    query: js.Function0[Query],
-    remove: js.Function1[Object, scala.Unit],
+    query: () => Query,
+    remove: Object => scala.Unit,
     targetClassName: java.lang.String,
-    toJSON: js.Function0[js.Any]
+    toJSON: () => js.Any
   ): Relation = {
-    val __obj = js.Dynamic.literal(add = add, key = key, parent = parent, query = query, remove = remove, targetClassName = targetClassName, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), key = key, parent = parent, query = js.Any.fromFunction0(query), remove = js.Any.fromFunction1(remove), targetClassName = targetClassName, toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[Relation]
   }

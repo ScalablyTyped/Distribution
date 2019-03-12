@@ -18,13 +18,13 @@ trait ConsoleMessage extends js.Object {
 object ConsoleMessage {
   @scala.inline
   def apply(
-    args: js.Function0[js.Array[JSHandle]],
-    location: js.Function0[ConsoleMessageLocation],
-    text: js.Function0[java.lang.String],
-    `type`: js.Function0[ConsoleMessageType]
+    args: () => js.Array[JSHandle],
+    location: () => ConsoleMessageLocation,
+    text: () => java.lang.String,
+    `type`: () => ConsoleMessageType
   ): ConsoleMessage = {
-    val __obj = js.Dynamic.literal(args = args, location = location, text = text)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(args = js.Any.fromFunction0(args), location = js.Any.fromFunction0(location), text = js.Any.fromFunction0(text))
+    __obj.updateDynamic("type")(js.Any.fromFunction0(`type`))
     __obj.asInstanceOf[ConsoleMessage]
   }
 }

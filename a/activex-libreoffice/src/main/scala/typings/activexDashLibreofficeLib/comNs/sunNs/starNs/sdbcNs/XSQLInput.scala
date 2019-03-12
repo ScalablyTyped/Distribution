@@ -53,7 +53,7 @@ trait XSQLInput
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readBytes(): activexDashInteropLib.SafeArray[scala.Double]
+  def readBytes(): stdLib.SafeArray[scala.Double]
   /**
     * reads the next attribute in the stream as a Unicode string.
     * @returns the attribute; if the value is SQL NULL, return null.
@@ -151,31 +151,31 @@ trait XSQLInput
 object XSQLInput {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    readArray: js.Function0[XArray],
-    readBinaryStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
-    readBlob: js.Function0[XBlob],
-    readBoolean: js.Function0[scala.Boolean],
-    readByte: js.Function0[scala.Double],
-    readBytes: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    readCharacterStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
-    readClob: js.Function0[XClob],
-    readDate: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date],
-    readDouble: js.Function0[scala.Double],
-    readFloat: js.Function0[scala.Double],
-    readInt: js.Function0[scala.Double],
-    readLong: js.Function0[scala.Double],
-    readObject: js.Function0[js.Any],
-    readRef: js.Function0[XRef],
-    readShort: js.Function0[scala.Double],
-    readString: js.Function0[java.lang.String],
-    readTime: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time],
-    readTimestamp: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime],
-    release: js.Function0[scala.Unit],
-    wasNull: js.Function0[scala.Boolean]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    readArray: () => XArray,
+    readBinaryStream: () => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    readBlob: () => XBlob,
+    readBoolean: () => scala.Boolean,
+    readByte: () => scala.Double,
+    readBytes: () => stdLib.SafeArray[scala.Double],
+    readCharacterStream: () => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    readClob: () => XClob,
+    readDate: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date,
+    readDouble: () => scala.Double,
+    readFloat: () => scala.Double,
+    readInt: () => scala.Double,
+    readLong: () => scala.Double,
+    readObject: () => js.Any,
+    readRef: () => XRef,
+    readShort: () => scala.Double,
+    readString: () => java.lang.String,
+    readTime: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
+    readTimestamp: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime,
+    release: () => scala.Unit,
+    wasNull: () => scala.Boolean
   ): XSQLInput = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, readArray = readArray, readBinaryStream = readBinaryStream, readBlob = readBlob, readBoolean = readBoolean, readByte = readByte, readBytes = readBytes, readCharacterStream = readCharacterStream, readClob = readClob, readDate = readDate, readDouble = readDouble, readFloat = readFloat, readInt = readInt, readLong = readLong, readObject = readObject, readRef = readRef, readShort = readShort, readString = readString, readTime = readTime, readTimestamp = readTimestamp, release = release, wasNull = wasNull)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), readArray = js.Any.fromFunction0(readArray), readBinaryStream = js.Any.fromFunction0(readBinaryStream), readBlob = js.Any.fromFunction0(readBlob), readBoolean = js.Any.fromFunction0(readBoolean), readByte = js.Any.fromFunction0(readByte), readBytes = js.Any.fromFunction0(readBytes), readCharacterStream = js.Any.fromFunction0(readCharacterStream), readClob = js.Any.fromFunction0(readClob), readDate = js.Any.fromFunction0(readDate), readDouble = js.Any.fromFunction0(readDouble), readFloat = js.Any.fromFunction0(readFloat), readInt = js.Any.fromFunction0(readInt), readLong = js.Any.fromFunction0(readLong), readObject = js.Any.fromFunction0(readObject), readRef = js.Any.fromFunction0(readRef), readShort = js.Any.fromFunction0(readShort), readString = js.Any.fromFunction0(readString), readTime = js.Any.fromFunction0(readTime), readTimestamp = js.Any.fromFunction0(readTimestamp), release = js.Any.fromFunction0(release), wasNull = js.Any.fromFunction0(wasNull))
   
     __obj.asInstanceOf[XSQLInput]
   }

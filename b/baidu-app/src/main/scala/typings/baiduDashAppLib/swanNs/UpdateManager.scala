@@ -17,12 +17,12 @@ trait UpdateManager extends js.Object {
 object UpdateManager {
   @scala.inline
   def apply(
-    applyUpdate: js.Function0[scala.Unit],
-    onCheckForUpdate: js.Function1[js.Function1[/* res */ baiduDashAppLib.Anon_HasUpdate, scala.Unit], scala.Unit],
-    onUpdateFailed: js.Function1[js.Function1[/* res */ js.Any, scala.Unit], scala.Unit],
-    onUpdateReady: js.Function1[js.Function1[/* res */ baiduDashAppLib.Anon_Confirm, scala.Unit], scala.Unit]
+    applyUpdate: () => scala.Unit,
+    onCheckForUpdate: js.Function1[/* res */ baiduDashAppLib.Anon_HasUpdate, scala.Unit] => scala.Unit,
+    onUpdateFailed: js.Function1[/* res */ js.Any, scala.Unit] => scala.Unit,
+    onUpdateReady: js.Function1[/* res */ baiduDashAppLib.Anon_Confirm, scala.Unit] => scala.Unit
   ): UpdateManager = {
-    val __obj = js.Dynamic.literal(applyUpdate = applyUpdate, onCheckForUpdate = onCheckForUpdate, onUpdateFailed = onUpdateFailed, onUpdateReady = onUpdateReady)
+    val __obj = js.Dynamic.literal(applyUpdate = js.Any.fromFunction0(applyUpdate), onCheckForUpdate = js.Any.fromFunction1(onCheckForUpdate), onUpdateFailed = js.Any.fromFunction1(onUpdateFailed), onUpdateReady = js.Any.fromFunction1(onUpdateReady))
   
     __obj.asInstanceOf[UpdateManager]
   }

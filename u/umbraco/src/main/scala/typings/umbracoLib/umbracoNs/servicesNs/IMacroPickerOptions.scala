@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
   */
 trait IMacroPickerOptions extends js.Object {
   /*callback function*/
-  var callback: angularLib.angularMod.Global.Function
+  var callback: js.Function
 }
 
 object IMacroPickerOptions {
   @scala.inline
-  def apply(callback: angularLib.angularMod.Global.Function): IMacroPickerOptions = {
+  def apply(callback: js.Function): IMacroPickerOptions = {
     val __obj = js.Dynamic.literal(callback = callback)
   
     __obj.asInstanceOf[IMacroPickerOptions]

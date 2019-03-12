@@ -11,15 +11,15 @@ object ^ extends js.Object {
   def listLazyRoutes(
     moduleMeta: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileNgModuleMetadata,
     reflector: atAngularCompilerLib.srcAotStaticUnderscoreReflectorMod.StaticReflector
-  ): js.Array[atAngularCompilerLib.srcAotLazyUnderscoreRoutesMod.LazyRoute] = js.native
+  ): js.Array[LazyRoute] = js.native
   def parseLazyRoute(
     route: java.lang.String,
     reflector: atAngularCompilerLib.srcAotStaticUnderscoreReflectorMod.StaticReflector
-  ): atAngularCompilerLib.srcAotLazyUnderscoreRoutesMod.LazyRoute = js.native
+  ): LazyRoute = js.native
   def parseLazyRoute(
     route: java.lang.String,
     reflector: atAngularCompilerLib.srcAotStaticUnderscoreReflectorMod.StaticReflector,
     module: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol
-  ): atAngularCompilerLib.srcAotLazyUnderscoreRoutesMod.LazyRoute = js.native
+  ): LazyRoute = js.native
 }
 

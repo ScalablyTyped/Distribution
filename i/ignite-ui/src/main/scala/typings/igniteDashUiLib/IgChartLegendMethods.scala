@@ -39,15 +39,15 @@ trait IgChartLegendMethods extends js.Object {
 object IgChartLegendMethods {
   @scala.inline
   def apply(
-    changeGlobalLanguage: js.Function0[scala.Unit],
-    changeGlobalRegional: js.Function0[scala.Unit],
-    changeLocale: js.Function1[js.Object, scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    exportVisualData: js.Function0[scala.Unit],
-    id: js.Function0[java.lang.String],
-    widget: js.Function0[scala.Unit]
+    changeGlobalLanguage: () => scala.Unit,
+    changeGlobalRegional: () => scala.Unit,
+    changeLocale: js.Object => scala.Unit,
+    destroy: () => scala.Unit,
+    exportVisualData: () => scala.Unit,
+    id: () => java.lang.String,
+    widget: () => scala.Unit
   ): IgChartLegendMethods = {
-    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, exportVisualData = exportVisualData, id = id, widget = widget)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = js.Any.fromFunction0(changeGlobalLanguage), changeGlobalRegional = js.Any.fromFunction0(changeGlobalRegional), changeLocale = js.Any.fromFunction1(changeLocale), destroy = js.Any.fromFunction0(destroy), exportVisualData = js.Any.fromFunction0(exportVisualData), id = js.Any.fromFunction0(id), widget = js.Any.fromFunction0(widget))
   
     __obj.asInstanceOf[IgChartLegendMethods]
   }

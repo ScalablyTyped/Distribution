@@ -25,12 +25,12 @@ object WebSceneUpdateFromOptionsThumbnailSize {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     height: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     width: scala.Double
   ): WebSceneUpdateFromOptionsThumbnailSize = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, height = height, propertyIsEnumerable = propertyIsEnumerable, width = width)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), height = height, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), width = width)
   
     __obj.asInstanceOf[WebSceneUpdateFromOptionsThumbnailSize]
   }

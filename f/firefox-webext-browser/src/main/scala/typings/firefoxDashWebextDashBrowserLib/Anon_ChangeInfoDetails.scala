@@ -46,25 +46,14 @@ trait Anon_ChangeInfoDetails extends js.Object {
 object Anon_ChangeInfoDetails {
   @scala.inline
   def apply(
-    get: js.Function1[
-      Anon_FirstPartyDomain, 
-      js.Promise[firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.Cookie]
-    ],
-    getAll: js.Function1[
-      Anon_Domain, 
-      js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.Cookie]]
-    ],
-    getAllCookieStores: js.Function0[
-      js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.CookieStore]]
-    ],
+    get: Anon_FirstPartyDomain => js.Promise[firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.Cookie],
+    getAll: Anon_Domain => js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.Cookie]],
+    getAllCookieStores: () => js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.CookieStore]],
     onChanged: WebExtEvent[js.Function1[/* changeInfo */ Anon_Cause, scala.Unit]],
-    remove: js.Function1[Anon_FirstPartyDomain, js.Promise[js.UndefOr[Anon_FirstPartyDomainName]]],
-    set: js.Function1[
-      Anon_DomainExpirationDate, 
-      js.Promise[js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.Cookie]]
-    ]
+    remove: Anon_FirstPartyDomain => js.Promise[js.UndefOr[Anon_FirstPartyDomainName]],
+    set: Anon_DomainExpirationDate => js.Promise[js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.Cookie]]
   ): Anon_ChangeInfoDetails = {
-    val __obj = js.Dynamic.literal(get = get, getAll = getAll, getAllCookieStores = getAllCookieStores, onChanged = onChanged, remove = remove, set = set)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), getAll = js.Any.fromFunction1(getAll), getAllCookieStores = js.Any.fromFunction0(getAllCookieStores), onChanged = onChanged, remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction1(set))
   
     __obj.asInstanceOf[Anon_ChangeInfoDetails]
   }

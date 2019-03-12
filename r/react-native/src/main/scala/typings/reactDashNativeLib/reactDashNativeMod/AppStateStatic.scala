@@ -21,11 +21,11 @@ trait AppStateStatic extends js.Object {
 object AppStateStatic {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[AppStateEvent, js.Function1[/* state */ AppStateStatus, scala.Unit], scala.Unit],
+    addEventListener: (AppStateEvent, js.Function1[/* state */ AppStateStatus, scala.Unit]) => scala.Unit,
     currentState: AppStateStatus,
-    removeEventListener: js.Function2[AppStateEvent, js.Function1[/* state */ AppStateStatus, scala.Unit], scala.Unit]
+    removeEventListener: (AppStateEvent, js.Function1[/* state */ AppStateStatus, scala.Unit]) => scala.Unit
   ): AppStateStatic = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, currentState = currentState, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), currentState = currentState, removeEventListener = js.Any.fromFunction2(removeEventListener))
   
     __obj.asInstanceOf[AppStateStatic]
   }

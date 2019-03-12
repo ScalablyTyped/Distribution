@@ -25,32 +25,29 @@ object DefinitionContainer {
   @scala.inline
   def apply(
     Count: scala.Double,
-    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementNames: stdLib.SafeArray[java.lang.String],
     ElementType: activexDashLibreofficeLib.`type`,
-    acquire: js.Function0[scala.Unit],
-    addRefreshListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XRefreshListener, scala.Unit],
-    createEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
-    createInstance: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    createInstanceWithArguments: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
-    ],
-    getByIndex: js.Function1[scala.Double, js.Any],
-    getByName: js.Function1[java.lang.String, js.Any],
-    getCount: js.Function0[scala.Double],
-    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    hasByName: js.Function1[java.lang.String, scala.Boolean],
-    hasElements: js.Function0[scala.Boolean],
-    insertByName: js.Function2[java.lang.String, js.Any, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    refresh: js.Function0[scala.Unit],
-    release: js.Function0[scala.Unit],
-    removeByName: js.Function1[java.lang.String, scala.Unit],
-    removeRefreshListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XRefreshListener, scala.Unit],
-    replaceByName: js.Function2[java.lang.String, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    addRefreshListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XRefreshListener => scala.Unit,
+    createEnumeration: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration,
+    createInstance: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    createInstanceWithArguments: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getByIndex: scala.Double => js.Any,
+    getByName: java.lang.String => js.Any,
+    getCount: () => scala.Double,
+    getElementNames: () => stdLib.SafeArray[java.lang.String],
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    hasByName: java.lang.String => scala.Boolean,
+    hasElements: () => scala.Boolean,
+    insertByName: (java.lang.String, js.Any) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    refresh: () => scala.Unit,
+    release: () => scala.Unit,
+    removeByName: java.lang.String => scala.Unit,
+    removeRefreshListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XRefreshListener => scala.Unit,
+    replaceByName: (java.lang.String, js.Any) => scala.Unit
   ): DefinitionContainer = {
-    val __obj = js.Dynamic.literal(Count = Count, ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, addRefreshListener = addRefreshListener, createEnumeration = createEnumeration, createInstance = createInstance, createInstanceWithArguments = createInstanceWithArguments, getByIndex = getByIndex, getByName = getByName, getCount = getCount, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, insertByName = insertByName, queryInterface = queryInterface, refresh = refresh, release = release, removeByName = removeByName, removeRefreshListener = removeRefreshListener, replaceByName = replaceByName)
+    val __obj = js.Dynamic.literal(Count = Count, ElementNames = ElementNames, ElementType = ElementType, acquire = js.Any.fromFunction0(acquire), addRefreshListener = js.Any.fromFunction1(addRefreshListener), createEnumeration = js.Any.fromFunction0(createEnumeration), createInstance = js.Any.fromFunction0(createInstance), createInstanceWithArguments = js.Any.fromFunction1(createInstanceWithArguments), getByIndex = js.Any.fromFunction1(getByIndex), getByName = js.Any.fromFunction1(getByName), getCount = js.Any.fromFunction0(getCount), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), insertByName = js.Any.fromFunction2(insertByName), queryInterface = js.Any.fromFunction1(queryInterface), refresh = js.Any.fromFunction0(refresh), release = js.Any.fromFunction0(release), removeByName = js.Any.fromFunction1(removeByName), removeRefreshListener = js.Any.fromFunction1(removeRefreshListener), replaceByName = js.Any.fromFunction2(replaceByName))
   
     __obj.asInstanceOf[DefinitionContainer]
   }

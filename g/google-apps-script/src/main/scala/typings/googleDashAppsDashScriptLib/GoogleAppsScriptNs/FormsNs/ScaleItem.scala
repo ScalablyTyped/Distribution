@@ -35,33 +35,29 @@ trait ScaleItem extends js.Object {
 object ScaleItem {
   @scala.inline
   def apply(
-    createResponse: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ItemResponse],
-    duplicate: js.Function0[ScaleItem],
-    getGeneralFeedback: js.Function0[QuizFeedback],
-    getHelpText: js.Function0[java.lang.String],
-    getId: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getLeftLabel: js.Function0[java.lang.String],
-    getLowerBound: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getPoints: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getRightLabel: js.Function0[java.lang.String],
-    getTitle: js.Function0[java.lang.String],
-    getType: js.Function0[ItemType],
-    getUpperBound: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    isRequired: js.Function0[scala.Boolean],
-    setBounds: js.Function2[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      ScaleItem
-    ],
-    setGeneralFeedback: js.Function1[QuizFeedback, ScaleItem],
-    setHelpText: js.Function1[java.lang.String, ScaleItem],
-    setLabels: js.Function2[java.lang.String, java.lang.String, ScaleItem],
-    setPoints: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ScaleItem],
-    setRequired: js.Function1[scala.Boolean, ScaleItem],
-    setTitle: js.Function1[java.lang.String, ScaleItem]
+    createResponse: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => ItemResponse,
+    duplicate: () => ScaleItem,
+    getGeneralFeedback: () => QuizFeedback,
+    getHelpText: () => java.lang.String,
+    getId: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getIndex: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getLeftLabel: () => java.lang.String,
+    getLowerBound: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getPoints: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getRightLabel: () => java.lang.String,
+    getTitle: () => java.lang.String,
+    getType: () => ItemType,
+    getUpperBound: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    isRequired: () => scala.Boolean,
+    setBounds: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => ScaleItem,
+    setGeneralFeedback: QuizFeedback => ScaleItem,
+    setHelpText: java.lang.String => ScaleItem,
+    setLabels: (java.lang.String, java.lang.String) => ScaleItem,
+    setPoints: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => ScaleItem,
+    setRequired: scala.Boolean => ScaleItem,
+    setTitle: java.lang.String => ScaleItem
   ): ScaleItem = {
-    val __obj = js.Dynamic.literal(createResponse = createResponse, duplicate = duplicate, getGeneralFeedback = getGeneralFeedback, getHelpText = getHelpText, getId = getId, getIndex = getIndex, getLeftLabel = getLeftLabel, getLowerBound = getLowerBound, getPoints = getPoints, getRightLabel = getRightLabel, getTitle = getTitle, getType = getType, getUpperBound = getUpperBound, isRequired = isRequired, setBounds = setBounds, setGeneralFeedback = setGeneralFeedback, setHelpText = setHelpText, setLabels = setLabels, setPoints = setPoints, setRequired = setRequired, setTitle = setTitle)
+    val __obj = js.Dynamic.literal(createResponse = js.Any.fromFunction1(createResponse), duplicate = js.Any.fromFunction0(duplicate), getGeneralFeedback = js.Any.fromFunction0(getGeneralFeedback), getHelpText = js.Any.fromFunction0(getHelpText), getId = js.Any.fromFunction0(getId), getIndex = js.Any.fromFunction0(getIndex), getLeftLabel = js.Any.fromFunction0(getLeftLabel), getLowerBound = js.Any.fromFunction0(getLowerBound), getPoints = js.Any.fromFunction0(getPoints), getRightLabel = js.Any.fromFunction0(getRightLabel), getTitle = js.Any.fromFunction0(getTitle), getType = js.Any.fromFunction0(getType), getUpperBound = js.Any.fromFunction0(getUpperBound), isRequired = js.Any.fromFunction0(isRequired), setBounds = js.Any.fromFunction2(setBounds), setGeneralFeedback = js.Any.fromFunction1(setGeneralFeedback), setHelpText = js.Any.fromFunction1(setHelpText), setLabels = js.Any.fromFunction2(setLabels), setPoints = js.Any.fromFunction1(setPoints), setRequired = js.Any.fromFunction1(setRequired), setTitle = js.Any.fromFunction1(setTitle))
   
     __obj.asInstanceOf[ScaleItem]
   }

@@ -44,16 +44,16 @@ trait ScriptFilter extends Filter {
 object ScriptFilter {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cache: js.Function1[scala.Boolean, ScriptFilter],
-    cacheKey: js.Function1[java.lang.String, ScriptFilter],
-    lang: js.Function1[java.lang.String, ScriptFilter],
-    name: js.Function1[java.lang.String, ScriptFilter],
-    params: js.Function1[js.Object, ScriptFilter],
-    script: js.Function1[java.lang.String, ScriptFilter],
-    toJSON: js.Function0[ScriptFilter]
+    _type: () => java.lang.String,
+    cache: scala.Boolean => ScriptFilter,
+    cacheKey: java.lang.String => ScriptFilter,
+    lang: java.lang.String => ScriptFilter,
+    name: java.lang.String => ScriptFilter,
+    params: js.Object => ScriptFilter,
+    script: java.lang.String => ScriptFilter,
+    toJSON: () => ScriptFilter
   ): ScriptFilter = {
-    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, lang = lang, name = name, params = params, script = script, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), lang = js.Any.fromFunction1(lang), name = js.Any.fromFunction1(name), params = js.Any.fromFunction1(params), script = js.Any.fromFunction1(script), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[ScriptFilter]
   }

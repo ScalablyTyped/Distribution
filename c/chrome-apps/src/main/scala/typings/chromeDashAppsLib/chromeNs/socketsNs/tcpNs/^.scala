@@ -108,7 +108,7 @@ object ^ extends js.Object {
     */
   def secure(
     socketId: chromeDashAppsLib.chromeNs.integer,
-    options: chromeDashAppsLib.chromeNs.socketsNs.tcpNs.SecureOptions,
+    options: SecureOptions,
     callback: js.Function1[/* result */ chromeDashAppsLib.chromeNs.integer, scala.Unit]
   ): scala.Unit = js.native
   /**

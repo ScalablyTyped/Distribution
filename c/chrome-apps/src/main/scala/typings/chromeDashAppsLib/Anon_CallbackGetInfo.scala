@@ -13,12 +13,9 @@ trait Anon_CallbackGetInfo extends js.Object {
 object Anon_CallbackGetInfo {
   @scala.inline
   def apply(
-    getInfo: js.Function1[
-      js.Function1[/* info */ chromeDashAppsLib.chromeNs.systemNs.cpuNs.CpuInfo, scala.Unit], 
-      scala.Unit
-    ]
+    getInfo: js.Function1[/* info */ chromeDashAppsLib.chromeNs.systemNs.cpuNs.CpuInfo, scala.Unit] => scala.Unit
   ): Anon_CallbackGetInfo = {
-    val __obj = js.Dynamic.literal(getInfo = getInfo)
+    val __obj = js.Dynamic.literal(getInfo = js.Any.fromFunction1(getInfo))
   
     __obj.asInstanceOf[Anon_CallbackGetInfo]
   }

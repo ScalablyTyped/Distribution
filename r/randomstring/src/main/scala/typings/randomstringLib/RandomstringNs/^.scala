@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def generate(): java.lang.String = js.native
-  def generate(options: randomstringLib.RandomstringNs.GenerateOptions): java.lang.String = js.native
+  def generate(options: GenerateOptions): java.lang.String = js.native
   def generate(options: scala.Double): java.lang.String = js.native
 }
 

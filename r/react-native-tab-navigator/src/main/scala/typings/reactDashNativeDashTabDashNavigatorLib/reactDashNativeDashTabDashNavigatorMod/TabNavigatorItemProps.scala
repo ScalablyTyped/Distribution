@@ -57,10 +57,10 @@ object TabNavigatorItemProps {
   def apply(
     allowFontScaling: js.UndefOr[scala.Boolean] = js.undefined,
     badgeText: java.lang.String | scala.Double = null,
-    onPress: js.Function0[scala.Unit] = null,
-    renderBadge: js.Function0[reactLib.reactMod.Global.JSXNs.Element] = null,
-    renderIcon: js.Function0[reactLib.reactMod.Global.JSXNs.Element] = null,
-    renderSelectedIcon: js.Function0[reactLib.reactMod.Global.JSXNs.Element] = null,
+    onPress: () => scala.Unit = null,
+    renderBadge: () => reactLib.reactMod.Global.JSXNs.Element = null,
+    renderIcon: () => reactLib.reactMod.Global.JSXNs.Element = null,
+    renderSelectedIcon: () => reactLib.reactMod.Global.JSXNs.Element = null,
     selected: js.UndefOr[scala.Boolean] = js.undefined,
     selectedTitleStyle: reactDashNativeLib.reactDashNativeMod.TextStyle = null,
     tabStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
@@ -70,10 +70,10 @@ object TabNavigatorItemProps {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling)
     if (badgeText != null) __obj.updateDynamic("badgeText")(badgeText.asInstanceOf[js.Any])
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
-    if (renderBadge != null) __obj.updateDynamic("renderBadge")(renderBadge)
-    if (renderIcon != null) __obj.updateDynamic("renderIcon")(renderIcon)
-    if (renderSelectedIcon != null) __obj.updateDynamic("renderSelectedIcon")(renderSelectedIcon)
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
+    if (renderBadge != null) __obj.updateDynamic("renderBadge")(js.Any.fromFunction0(renderBadge))
+    if (renderIcon != null) __obj.updateDynamic("renderIcon")(js.Any.fromFunction0(renderIcon))
+    if (renderSelectedIcon != null) __obj.updateDynamic("renderSelectedIcon")(js.Any.fromFunction0(renderSelectedIcon))
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
     if (selectedTitleStyle != null) __obj.updateDynamic("selectedTitleStyle")(selectedTitleStyle)
     if (tabStyle != null) __obj.updateDynamic("tabStyle")(tabStyle)

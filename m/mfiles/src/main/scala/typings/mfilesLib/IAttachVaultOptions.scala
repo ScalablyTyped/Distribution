@@ -21,8 +21,8 @@ trait IAttachVaultOptions extends js.Object {
 object IAttachVaultOptions {
   @scala.inline
   def apply(
-    Clone: js.Function0[IAttachVaultOptions],
-    DisableAll: js.Function0[scala.Unit],
+    Clone: () => IAttachVaultOptions,
+    DisableAll: () => scala.Unit,
     DisableEventHandlers: scala.Boolean,
     DisableExportImportJobs: scala.Boolean,
     DisableExportedDataSets: scala.Boolean,
@@ -32,7 +32,7 @@ object IAttachVaultOptions {
     Flags: mfilesLib.MFilesNs.MFAttachVaultOptionsFlag,
     UpdateAttachmentGUID: scala.Boolean
   ): IAttachVaultOptions = {
-    val __obj = js.Dynamic.literal(Clone = Clone, DisableAll = DisableAll, DisableEventHandlers = DisableEventHandlers, DisableExportImportJobs = DisableExportImportJobs, DisableExportedDataSets = DisableExportedDataSets, DisableExternalObjectTypes = DisableExternalObjectTypes, DisableExternalSources = DisableExternalSources, DisableExternalUserGroups = DisableExternalUserGroups, Flags = Flags, UpdateAttachmentGUID = UpdateAttachmentGUID)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), DisableAll = js.Any.fromFunction0(DisableAll), DisableEventHandlers = DisableEventHandlers, DisableExportImportJobs = DisableExportImportJobs, DisableExportedDataSets = DisableExportedDataSets, DisableExternalObjectTypes = DisableExternalObjectTypes, DisableExternalSources = DisableExternalSources, DisableExternalUserGroups = DisableExternalUserGroups, Flags = Flags, UpdateAttachmentGUID = UpdateAttachmentGUID)
   
     __obj.asInstanceOf[IAttachVaultOptions]
   }

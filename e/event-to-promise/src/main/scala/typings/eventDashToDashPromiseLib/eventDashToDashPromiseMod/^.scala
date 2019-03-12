@@ -20,7 +20,7 @@ object ^ extends js.Object {
   def apply(
     emitter: eventDashToDashPromiseLib.EventSource,
     event: java.lang.String,
-    options: eventDashToDashPromiseLib.eventDashToDashPromiseMod.EventToPromiseOptions
+    options: EventToPromiseOptions
   ): js.Promise[_] = js.native
   def multi(emitter: eventDashToDashPromiseLib.EventSource, successEvents: js.Array[java.lang.String]): js.Promise[_] = js.native
   def multi(

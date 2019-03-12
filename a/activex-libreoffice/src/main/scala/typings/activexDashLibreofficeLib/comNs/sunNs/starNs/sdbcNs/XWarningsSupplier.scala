@@ -39,13 +39,13 @@ object XWarningsSupplier {
   @scala.inline
   def apply(
     Warnings: js.Any,
-    acquire: js.Function0[scala.Unit],
-    clearWarnings: js.Function0[scala.Unit],
-    getWarnings: js.Function0[js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    clearWarnings: () => scala.Unit,
+    getWarnings: () => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XWarningsSupplier = {
-    val __obj = js.Dynamic.literal(Warnings = Warnings, acquire = acquire, clearWarnings = clearWarnings, getWarnings = getWarnings, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Warnings = Warnings, acquire = js.Any.fromFunction0(acquire), clearWarnings = js.Any.fromFunction0(clearWarnings), getWarnings = js.Any.fromFunction0(getWarnings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XWarningsSupplier]
   }

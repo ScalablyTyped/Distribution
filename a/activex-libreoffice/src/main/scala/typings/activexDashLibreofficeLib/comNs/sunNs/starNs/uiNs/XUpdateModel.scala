@@ -17,12 +17,12 @@ trait XUpdateModel
 object XUpdateModel {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    updateModel: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel, scala.Unit]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    updateModel: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel => scala.Unit
   ): XUpdateModel = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, updateModel = updateModel)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), updateModel = js.Any.fromFunction1(updateModel))
   
     __obj.asInstanceOf[XUpdateModel]
   }

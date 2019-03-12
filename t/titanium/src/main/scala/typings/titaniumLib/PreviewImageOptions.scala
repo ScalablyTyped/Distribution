@@ -26,14 +26,14 @@ trait PreviewImageOptions extends js.Object {
 object PreviewImageOptions {
   @scala.inline
   def apply(
-    error: js.Function1[/* param0 */ PreviewImageError, _] = null,
+    error: /* param0 */ PreviewImageError => _ = null,
     image: titaniumLib.TitaniumNs.Blob = null,
-    success: js.Function1[/* param0 */ js.Any, _] = null
+    success: /* param0 */ js.Any => _ = null
   ): PreviewImageOptions = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (image != null) __obj.updateDynamic("image")(image)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[PreviewImageOptions]
   }
 }

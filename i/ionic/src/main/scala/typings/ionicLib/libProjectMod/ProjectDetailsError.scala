@@ -19,7 +19,7 @@ class ProjectDetailsError protected ()
   code: ProjectDetailsErrorCode, /**
     * The underlying error that caused this error.
     */
-  error: nodeLib.Error) = this()
+  error: stdLib.Error) = this()
   /**
     * Unique code for this error.
     */

@@ -19,24 +19,12 @@ trait Built_in_variablesResource extends js.Object {
 object Built_in_variablesResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CreateBuiltInVariableResponse]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKeyOauthtokenPath, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    list: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListEnabledBuiltInVariablesResponse]
-    ],
-    revert: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKeyOauthtokenPath, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RevertBuiltInVariableResponse]
-    ]
+    create: gapiDotClientDotTagmanagerLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[CreateBuiltInVariableResponse],
+    delete: gapiDotClientDotTagmanagerLib.Anon_AltFieldsKeyOauthtokenPath => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    list: gapiDotClientDotTagmanagerLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[ListEnabledBuiltInVariablesResponse],
+    revert: gapiDotClientDotTagmanagerLib.Anon_AltFieldsKeyOauthtokenPath => gapiDotClientLib.gapiNs.clientNs.Request[RevertBuiltInVariableResponse]
   ): Built_in_variablesResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, list = list, revert = revert)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), list = js.Any.fromFunction1(list), revert = js.Any.fromFunction1(revert))
   
     __obj.asInstanceOf[Built_in_variablesResource]
   }

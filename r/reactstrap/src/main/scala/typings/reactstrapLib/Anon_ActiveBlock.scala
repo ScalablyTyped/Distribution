@@ -12,7 +12,7 @@ trait Anon_ActiveBlock extends js.Object {
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
-  var innerRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[reactLib.HTMLButtonElement]] = js.undefined
+  var innerRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[stdLib.HTMLButtonElement]] = js.undefined
   var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[_]] = js.undefined
   var outline: js.UndefOr[scala.Boolean] = js.undefined
   var size: js.UndefOr[js.Any] = js.undefined
@@ -29,7 +29,7 @@ object Anon_ActiveBlock {
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[reactLib.HTMLButtonElement] = null,
+    innerRef: reactLib.reactMod.ReactNs.Ref[stdLib.HTMLButtonElement] = null,
     onClick: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
     outline: js.UndefOr[scala.Boolean] = js.undefined,
     size: js.Any = null,

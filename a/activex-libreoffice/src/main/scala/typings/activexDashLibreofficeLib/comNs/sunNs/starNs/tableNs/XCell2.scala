@@ -32,19 +32,19 @@ object XCell2 {
     Formula: java.lang.String,
     Type: CellContentType,
     Value: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getError: js.Function0[scala.Double],
-    getFormula: js.Function0[java.lang.String],
-    getType: js.Function0[CellContentType],
-    getValue: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setFormula: js.Function1[java.lang.String, scala.Unit],
-    setFormulaResult: js.Function1[scala.Double, scala.Unit],
-    setFormulaString: js.Function1[java.lang.String, scala.Unit],
-    setValue: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    getError: () => scala.Double,
+    getFormula: () => java.lang.String,
+    getType: () => CellContentType,
+    getValue: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setFormula: java.lang.String => scala.Unit,
+    setFormulaResult: scala.Double => scala.Unit,
+    setFormulaString: java.lang.String => scala.Unit,
+    setValue: scala.Double => scala.Unit
   ): XCell2 = {
-    val __obj = js.Dynamic.literal(Error = Error, Formula = Formula, Type = Type, Value = Value, acquire = acquire, getError = getError, getFormula = getFormula, getType = getType, getValue = getValue, queryInterface = queryInterface, release = release, setFormula = setFormula, setFormulaResult = setFormulaResult, setFormulaString = setFormulaString, setValue = setValue)
+    val __obj = js.Dynamic.literal(Error = Error, Formula = Formula, Type = Type, Value = Value, acquire = js.Any.fromFunction0(acquire), getError = js.Any.fromFunction0(getError), getFormula = js.Any.fromFunction0(getFormula), getType = js.Any.fromFunction0(getType), getValue = js.Any.fromFunction0(getValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setFormula = js.Any.fromFunction1(setFormula), setFormulaResult = js.Any.fromFunction1(setFormulaResult), setFormulaString = js.Any.fromFunction1(setFormulaString), setValue = js.Any.fromFunction1(setValue))
   
     __obj.asInstanceOf[XCell2]
   }

@@ -11,8 +11,8 @@ trait IGetActivationFactory extends js.Object {
 
 object IGetActivationFactory {
   @scala.inline
-  def apply(getActivationFactory: js.Function1[java.lang.String, js.Any]): IGetActivationFactory = {
-    val __obj = js.Dynamic.literal(getActivationFactory = getActivationFactory)
+  def apply(getActivationFactory: java.lang.String => js.Any): IGetActivationFactory = {
+    val __obj = js.Dynamic.literal(getActivationFactory = js.Any.fromFunction1(getActivationFactory))
   
     __obj.asInstanceOf[IGetActivationFactory]
   }

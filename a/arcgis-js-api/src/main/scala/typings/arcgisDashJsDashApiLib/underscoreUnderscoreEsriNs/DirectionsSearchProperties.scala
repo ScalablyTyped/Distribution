@@ -115,8 +115,8 @@ object DirectionsSearchProperties {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     activeSourceIndex: scala.Int | scala.Double = null,
     allPlaceholder: java.lang.String = null,
     autoNavigate: js.UndefOr[scala.Boolean] = js.undefined,
@@ -135,7 +135,7 @@ object DirectionsSearchProperties {
     view: MapView | SceneView = null,
     viewModel: SearchViewModel = null
   ): DirectionsSearchProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (activeSourceIndex != null) __obj.updateDynamic("activeSourceIndex")(activeSourceIndex.asInstanceOf[js.Any])
     if (allPlaceholder != null) __obj.updateDynamic("allPlaceholder")(allPlaceholder)
     if (!js.isUndefined(autoNavigate)) __obj.updateDynamic("autoNavigate")(autoNavigate)

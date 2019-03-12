@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val connectWithLifecycle: reactDashReduxLib.reactDashReduxMod.Connect = js.native
-  def applyLifecycle[P, S](component: reactLib.reactMod.ReactNs.ComponentClass[P, S]): reactLib.reactMod.ReactNs.ComponentClass[
-    P with (reactDashLifecycleDashComponentLib.reactDashLifecycleDashComponentMod.LifecycleDispatchProps[P, S]), 
-    reactLib.reactMod.ReactNs.ComponentState
-  ] = js.native
+  def applyLifecycle[P, S](component: reactLib.reactMod.ReactNs.ComponentClass[P, S]): reactLib.reactMod.ReactNs.ComponentClass[P with (LifecycleDispatchProps[P, S]), reactLib.reactMod.ReactNs.ComponentState] = js.native
 }
 

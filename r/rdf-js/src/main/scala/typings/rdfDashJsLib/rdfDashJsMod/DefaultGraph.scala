@@ -26,11 +26,11 @@ trait DefaultGraph
 object DefaultGraph {
   @scala.inline
   def apply(
-    equals: js.Function1[Term, scala.Boolean],
+    equals: Term => scala.Boolean,
     termType: rdfDashJsLib.rdfDashJsLibStrings.DefaultGraph,
     value: rdfDashJsLib.rdfDashJsLibStrings.Empty
   ): DefaultGraph = {
-    val __obj = js.Dynamic.literal(equals = equals, termType = termType, value = value)
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), termType = termType, value = value)
   
     __obj.asInstanceOf[DefaultGraph]
   }

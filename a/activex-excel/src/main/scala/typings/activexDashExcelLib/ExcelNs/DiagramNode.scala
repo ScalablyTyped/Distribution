@@ -17,7 +17,7 @@ class DiagramNode protected () extends js.Object {
   var Layout: activexDashOfficeLib.OfficeNs.MsoOrgChartLayoutType = js.native
   val Parent: js.Any = js.native
   val Root: DiagramNode = js.native
-  val Shape: Shape = js.native
+  val Shape: activexDashExcelLib.ExcelNs.Shape = js.native
   val TextShape: Shape = js.native
   /**
     * @param pos [pos=2]

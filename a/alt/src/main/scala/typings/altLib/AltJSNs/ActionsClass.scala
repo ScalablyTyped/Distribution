@@ -14,13 +14,13 @@ trait ActionsClass extends js.Object {
 object ActionsClass {
   @scala.inline
   def apply(
-    dispatch: js.Function1[/* repeated */ js.Any, scala.Unit],
+    dispatch: /* repeated */ js.Any => scala.Unit,
     actions: Actions = null,
-    generateActions: js.Function1[/* repeated */ java.lang.String, scala.Unit] = null
+    generateActions: /* repeated */ java.lang.String => scala.Unit = null
   ): ActionsClass = {
-    val __obj = js.Dynamic.literal(dispatch = dispatch)
+    val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch))
     if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (generateActions != null) __obj.updateDynamic("generateActions")(generateActions)
+    if (generateActions != null) __obj.updateDynamic("generateActions")(js.Any.fromFunction1(generateActions))
     __obj.asInstanceOf[ActionsClass]
   }
 }

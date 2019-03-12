@@ -30,23 +30,15 @@ object StripeStatic {
     applePay: StripeApplePay,
     bankAccount: StripeBankAccount,
     card: StripeCard,
-    cardType: js.Function1[java.lang.String, StripeCardDataBrand],
-    createToken: js.Function2[
-      StripeCardTokenData, 
-      js.Function2[/* status */ scala.Double, /* response */ StripeCardTokenResponse, scala.Unit], 
-      scala.Unit
-    ],
-    getToken: js.Function2[
-      java.lang.String, 
-      js.Function2[/* status */ scala.Double, /* response */ StripeCardTokenResponse, scala.Unit], 
-      scala.Unit
-    ],
-    setPublishableKey: js.Function1[java.lang.String, scala.Unit],
-    validateCVC: js.Function1[java.lang.String, scala.Boolean],
-    validateCardNumber: js.Function1[java.lang.String, scala.Boolean],
-    validateExpiry: js.Function2[java.lang.String, java.lang.String, scala.Boolean]
+    cardType: java.lang.String => StripeCardDataBrand,
+    createToken: (StripeCardTokenData, js.Function2[/* status */ scala.Double, /* response */ StripeCardTokenResponse, scala.Unit]) => scala.Unit,
+    getToken: (java.lang.String, js.Function2[/* status */ scala.Double, /* response */ StripeCardTokenResponse, scala.Unit]) => scala.Unit,
+    setPublishableKey: java.lang.String => scala.Unit,
+    validateCVC: java.lang.String => scala.Boolean,
+    validateCardNumber: java.lang.String => scala.Boolean,
+    validateExpiry: (java.lang.String, java.lang.String) => scala.Boolean
   ): StripeStatic = {
-    val __obj = js.Dynamic.literal(applePay = applePay, bankAccount = bankAccount, card = card, cardType = cardType, createToken = createToken, getToken = getToken, setPublishableKey = setPublishableKey, validateCVC = validateCVC, validateCardNumber = validateCardNumber, validateExpiry = validateExpiry)
+    val __obj = js.Dynamic.literal(applePay = applePay, bankAccount = bankAccount, card = card, cardType = js.Any.fromFunction1(cardType), createToken = js.Any.fromFunction2(createToken), getToken = js.Any.fromFunction2(getToken), setPublishableKey = js.Any.fromFunction1(setPublishableKey), validateCVC = js.Any.fromFunction1(validateCVC), validateCardNumber = js.Any.fromFunction1(validateCardNumber), validateExpiry = js.Any.fromFunction2(validateExpiry))
   
     __obj.asInstanceOf[StripeStatic]
   }

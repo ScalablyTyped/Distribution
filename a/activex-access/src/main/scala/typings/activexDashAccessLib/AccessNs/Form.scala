@@ -38,7 +38,7 @@ class Form protected () extends js.Object {
   var AllowPivotChartView: scala.Boolean = js.native
   var AllowPivotTableView: scala.Boolean = js.native
   var AllowUpdating: scala.Double = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   var AutoCenter: scala.Boolean = js.native
   var AutoResize: scala.Boolean = js.native
   var BatchUpdates: scala.Boolean = js.native
@@ -116,7 +116,7 @@ class Form protected () extends js.Object {
   var FilterOn: scala.Boolean = js.native
   var FilterOnLoad: scala.Boolean = js.native
   var FitToScreen: scala.Boolean = js.native
-  val Form: Form = js.native
+  val Form: activexDashAccessLib.AccessNs.Form = js.native
   var FormName: java.lang.String = js.native
   var FrozenColumns: scala.Double = js.native
   var GridX: scala.Double = js.native
@@ -140,7 +140,7 @@ class Form protected () extends js.Object {
   var MinButton: scala.Boolean = js.native
   var MinMaxButtons: scala.Double = js.native
   var Modal: scala.Boolean = js.native
-  val Module: Module = js.native
+  val Module: activexDashAccessLib.AccessNs.Module = js.native
   var MouseWheel: java.lang.String = js.native
   var MouseWheelMacro: java.lang.String = js.native
   var Moveable: scala.Boolean = js.native
@@ -228,7 +228,7 @@ class Form protected () extends js.Object {
   var PivotTableChange: java.lang.String = js.native
   var PivotTableChangeMacro: java.lang.String = js.native
   var PopUp: scala.Boolean = js.native
-  var Printer: Printer = js.native
+  var Printer: activexDashAccessLib.AccessNs.Printer = js.native
   @JSName("Properties")
   val Properties_Original: Properties = js.native
   var PrtDevMode: js.Any = js.native
@@ -316,8 +316,8 @@ class Form protected () extends js.Object {
   def Refresh(): scala.Unit = js.native
   def Repaint(): scala.Unit = js.native
   def Requery(): scala.Unit = js.native
-  def Section(Index: AcFormSection): Section = js.native
-  def Section(Index: java.lang.String): Section = js.native
+  def Section(Index: AcFormSection): activexDashAccessLib.AccessNs.Section = js.native
+  def Section(Index: java.lang.String): activexDashAccessLib.AccessNs.Section = js.native
   def SectionOld(Index: js.Any): Section = js.native
   def SetFocus(): scala.Unit = js.native
   def Undo(): scala.Unit = js.native

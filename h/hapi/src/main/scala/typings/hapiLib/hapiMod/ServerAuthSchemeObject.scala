@@ -67,27 +67,19 @@ trait ServerAuthSchemeObject extends js.Object {
 object ServerAuthSchemeObject {
   @scala.inline
   def apply(
-    authenticate: js.Function2[Request, ResponseToolkit, hapiLib.hapiMod.LifecycleNs.ReturnValue],
+    authenticate: (Request, ResponseToolkit) => hapiLib.hapiMod.LifecycleNs.ReturnValue,
     api: ServerAuthSchemeObjectApi = null,
     options: hapiLib.Anon_Payload = null,
-    payload: js.Function2[
-      /* request */ Request, 
-      /* h */ ResponseToolkit, 
-      hapiLib.hapiMod.LifecycleNs.ReturnValue
-    ] = null,
-    response: js.Function2[
-      /* request */ Request, 
-      /* h */ ResponseToolkit, 
-      hapiLib.hapiMod.LifecycleNs.ReturnValue
-    ] = null,
-    verify: js.Function1[/* auth */ RequestAuth, js.Promise[scala.Unit]] = null
+    payload: (/* request */ Request, /* h */ ResponseToolkit) => hapiLib.hapiMod.LifecycleNs.ReturnValue = null,
+    response: (/* request */ Request, /* h */ ResponseToolkit) => hapiLib.hapiMod.LifecycleNs.ReturnValue = null,
+    verify: /* auth */ RequestAuth => js.Promise[scala.Unit] = null
   ): ServerAuthSchemeObject = {
-    val __obj = js.Dynamic.literal(authenticate = authenticate)
+    val __obj = js.Dynamic.literal(authenticate = js.Any.fromFunction2(authenticate))
     if (api != null) __obj.updateDynamic("api")(api)
     if (options != null) __obj.updateDynamic("options")(options)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
-    if (response != null) __obj.updateDynamic("response")(response)
-    if (verify != null) __obj.updateDynamic("verify")(verify)
+    if (payload != null) __obj.updateDynamic("payload")(js.Any.fromFunction2(payload))
+    if (response != null) __obj.updateDynamic("response")(js.Any.fromFunction2(response))
+    if (verify != null) __obj.updateDynamic("verify")(js.Any.fromFunction1(verify))
     __obj.asInstanceOf[ServerAuthSchemeObject]
   }
 }

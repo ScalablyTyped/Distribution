@@ -175,7 +175,7 @@ object ArcGISImageService {
     copyright: java.lang.String,
     definitionExpression: java.lang.String,
     domainFields: js.Array[Field],
-    fetchImage: js.Function3[Extent, scala.Double, scala.Double, arcgisDashJsDashApiLib.IPromise[_]],
+    fetchImage: (Extent, scala.Double, scala.Double) => arcgisDashJsDashApiLib.IPromise[_],
     fields: js.Array[Field],
     format: java.lang.String,
     fullExtent: Extent,
@@ -195,7 +195,7 @@ object ArcGISImageService {
     url: java.lang.String,
     version: scala.Double
   ): ArcGISImageService = {
-    val __obj = js.Dynamic.literal(compressionQuality = compressionQuality, compressionTolerance = compressionTolerance, copyright = copyright, definitionExpression = definitionExpression, domainFields = domainFields, fetchImage = fetchImage, fields = fields, format = format, fullExtent = fullExtent, hasMultidimensions = hasMultidimensions, hasRasterAttributeTable = hasRasterAttributeTable, imageMaxHeight = imageMaxHeight, imageMaxWidth = imageMaxWidth, mosaicRule = mosaicRule, multidimensionalInfo = multidimensionalInfo, pixelType = pixelType, popupTemplate = popupTemplate, rasterAttributeTable = rasterAttributeTable, rasterAttributeTableFieldPrefix = rasterAttributeTableFieldPrefix, rasterFields = rasterFields, renderingRule = renderingRule, spatialReference = spatialReference, url = url, version = version)
+    val __obj = js.Dynamic.literal(compressionQuality = compressionQuality, compressionTolerance = compressionTolerance, copyright = copyright, definitionExpression = definitionExpression, domainFields = domainFields, fetchImage = js.Any.fromFunction3(fetchImage), fields = fields, format = format, fullExtent = fullExtent, hasMultidimensions = hasMultidimensions, hasRasterAttributeTable = hasRasterAttributeTable, imageMaxHeight = imageMaxHeight, imageMaxWidth = imageMaxWidth, mosaicRule = mosaicRule, multidimensionalInfo = multidimensionalInfo, pixelType = pixelType, popupTemplate = popupTemplate, rasterAttributeTable = rasterAttributeTable, rasterAttributeTableFieldPrefix = rasterAttributeTableFieldPrefix, rasterFields = rasterFields, renderingRule = renderingRule, spatialReference = spatialReference, url = url, version = version)
   
     __obj.asInstanceOf[ArcGISImageService]
   }

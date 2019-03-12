@@ -124,7 +124,7 @@ import scala.scalajs.js.annotation._
     when there isn't enough space below the control. */
   var menuPlacement: js.UndefOr[reactDashSelectLib.libTypesMod.MenuPlacement] = js.undefined
   /* Whether the menu should use a portal, and where it should attach */
-  var menuPortalTarget: js.UndefOr[reactLib.HTMLElement | scala.Null] = js.undefined
+  var menuPortalTarget: js.UndefOr[stdLib.HTMLElement | scala.Null] = js.undefined
   /* The CSS position value of the menu, when "fixed" extra layout management is required */
   var menuPosition: js.UndefOr[reactDashSelectLib.libTypesMod.MenuPosition] = js.undefined
   /* Whether to block scroll events when the menu is open */
@@ -168,14 +168,14 @@ import scala.scalajs.js.annotation._
   /* Fired when the user scrolls to the bottom of the menu */
   var onMenuScrollToBottom: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
   /* Fired when the user scrolls to the top of the menu */
   var onMenuScrollToTop: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
@@ -225,17 +225,9 @@ object Props {
     defaultValue: reactDashSelectLib.libTypesMod.ValueType[OptionType] = null,
     delimiter: java.lang.String = null,
     escapeClearsValue: js.UndefOr[scala.Boolean] = js.undefined,
-    filterOption: js.Function2[
-      /* option */ reactDashSelectLib.libFiltersMod.Option, 
-      /* rawInput */ java.lang.String, 
-      scala.Boolean
-    ] = null,
+    filterOption: (/* option */ reactDashSelectLib.libFiltersMod.Option, /* rawInput */ java.lang.String) => scala.Boolean = null,
     formatGroupLabel: reactDashSelectLib.libBuiltinsMod.formatGroupLabel[OptionType] = null,
-    formatOptionLabel: js.Function2[
-      /* option */ OptionType, 
-      /* labelMeta */ FormatOptionLabelMeta[OptionType], 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    formatOptionLabel: (/* option */ OptionType, /* labelMeta */ FormatOptionLabelMeta[OptionType]) => reactLib.reactMod.ReactNs.ReactNode = null,
     getOptionLabel: reactDashSelectLib.libBuiltinsMod.getOptionLabel[OptionType] = null,
     getOptionValue: reactDashSelectLib.libBuiltinsMod.getOptionValue[OptionType] = null,
     hideSelectedOptions: js.UndefOr[scala.Boolean] = js.undefined,
@@ -247,58 +239,36 @@ object Props {
     isDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     isLoading: js.UndefOr[scala.Boolean] = js.undefined,
     isMulti: js.UndefOr[scala.Boolean] = js.undefined,
-    isOptionDisabled: js.Function2[
-      /* option */ OptionType, 
-      /* options */ reactDashSelectLib.libTypesMod.OptionsType[OptionType], 
-      scala.Boolean | reactDashSelectLib.reactDashSelectLibNumbers.`false`
-    ] = null,
-    isOptionSelected: js.Function2[
-      /* option */ OptionType, 
-      /* options */ reactDashSelectLib.libTypesMod.OptionsType[OptionType], 
-      scala.Boolean
-    ] = null,
+    isOptionDisabled: (/* option */ OptionType, /* options */ reactDashSelectLib.libTypesMod.OptionsType[OptionType]) => scala.Boolean | reactDashSelectLib.reactDashSelectLibNumbers.`false` = null,
+    isOptionSelected: (/* option */ OptionType, /* options */ reactDashSelectLib.libTypesMod.OptionsType[OptionType]) => scala.Boolean = null,
     isRtl: js.UndefOr[scala.Boolean] = js.undefined,
     isSearchable: js.UndefOr[scala.Boolean] = js.undefined,
-    loadingMessage: js.Function1[/* obj */ reactDashSelectLib.Anon_InputValue, java.lang.String | scala.Null] = null,
+    loadingMessage: /* obj */ reactDashSelectLib.Anon_InputValue => java.lang.String | scala.Null = null,
     maxMenuHeight: scala.Int | scala.Double = null,
     menuIsOpen: js.UndefOr[scala.Boolean] = js.undefined,
     menuPlacement: reactDashSelectLib.libTypesMod.MenuPlacement = null,
-    menuPortalTarget: reactLib.HTMLElement = null,
+    menuPortalTarget: stdLib.HTMLElement = null,
     menuPosition: reactDashSelectLib.libTypesMod.MenuPosition = null,
     menuShouldBlockScroll: js.UndefOr[scala.Boolean] = js.undefined,
     menuShouldScrollIntoView: js.UndefOr[scala.Boolean] = js.undefined,
     minMenuHeight: scala.Int | scala.Double = null,
     name: java.lang.String = null,
-    noOptionsMessage: js.Function1[/* obj */ reactDashSelectLib.Anon_InputValue, java.lang.String | scala.Null] = null,
+    noOptionsMessage: /* obj */ reactDashSelectLib.Anon_InputValue => java.lang.String | scala.Null = null,
     onBlur: reactDashSelectLib.libTypesMod.FocusEventHandler = null,
-    onChange: js.Function2[
-      /* value */ reactDashSelectLib.libTypesMod.ValueType[OptionType], 
-      /* action */ reactDashSelectLib.libTypesMod.ActionMeta, 
-      scala.Unit
-    ] = null,
+    onChange: (/* value */ reactDashSelectLib.libTypesMod.ValueType[OptionType], /* action */ reactDashSelectLib.libTypesMod.ActionMeta) => scala.Unit = null,
     onFocus: reactDashSelectLib.libTypesMod.FocusEventHandler = null,
-    onInputChange: js.Function2[
-      /* newValue */ java.lang.String, 
-      /* actionMeta */ reactDashSelectLib.libTypesMod.InputActionMeta, 
-      scala.Unit
-    ] = null,
+    onInputChange: (/* newValue */ java.lang.String, /* actionMeta */ reactDashSelectLib.libTypesMod.InputActionMeta) => scala.Unit = null,
     onKeyDown: reactDashSelectLib.libTypesMod.KeyboardEventHandler = null,
-    onMenuClose: js.Function0[scala.Unit] = null,
-    onMenuOpen: js.Function0[scala.Unit] = null,
-    onMenuScrollToBottom: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
-      scala.Unit
-    ] = null,
-    onMenuScrollToTop: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
-      scala.Unit
-    ] = null,
+    onMenuClose: () => scala.Unit = null,
+    onMenuOpen: () => scala.Unit = null,
+    onMenuScrollToBottom: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event] => scala.Unit = null,
+    onMenuScrollToTop: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event] => scala.Unit = null,
     openMenuOnClick: js.UndefOr[scala.Boolean] = js.undefined,
     openMenuOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
     options: reactDashSelectLib.libTypesMod.GroupedOptionsType[OptionType] | reactDashSelectLib.libTypesMod.OptionsType[OptionType] = null,
     pageSize: scala.Int | scala.Double = null,
     placeholder: java.lang.String = null,
-    screenReaderStatus: js.Function1[/* obj */ reactDashSelectLib.Anon_Count, java.lang.String] = null,
+    screenReaderStatus: /* obj */ reactDashSelectLib.Anon_Count => java.lang.String = null,
     styles: reactDashSelectLib.libStylesMod.StylesConfig = null,
     tabIndex: java.lang.String = null,
     tabSelectsValue: js.UndefOr[scala.Boolean] = js.undefined,
@@ -323,9 +293,9 @@ object Props {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
     if (!js.isUndefined(escapeClearsValue)) __obj.updateDynamic("escapeClearsValue")(escapeClearsValue)
-    if (filterOption != null) __obj.updateDynamic("filterOption")(filterOption)
+    if (filterOption != null) __obj.updateDynamic("filterOption")(js.Any.fromFunction2(filterOption))
     if (formatGroupLabel != null) __obj.updateDynamic("formatGroupLabel")(formatGroupLabel)
-    if (formatOptionLabel != null) __obj.updateDynamic("formatOptionLabel")(formatOptionLabel)
+    if (formatOptionLabel != null) __obj.updateDynamic("formatOptionLabel")(js.Any.fromFunction2(formatOptionLabel))
     if (getOptionLabel != null) __obj.updateDynamic("getOptionLabel")(getOptionLabel)
     if (getOptionValue != null) __obj.updateDynamic("getOptionValue")(getOptionValue)
     if (!js.isUndefined(hideSelectedOptions)) __obj.updateDynamic("hideSelectedOptions")(hideSelectedOptions)
@@ -337,11 +307,11 @@ object Props {
     if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled)
     if (!js.isUndefined(isLoading)) __obj.updateDynamic("isLoading")(isLoading)
     if (!js.isUndefined(isMulti)) __obj.updateDynamic("isMulti")(isMulti)
-    if (isOptionDisabled != null) __obj.updateDynamic("isOptionDisabled")(isOptionDisabled)
-    if (isOptionSelected != null) __obj.updateDynamic("isOptionSelected")(isOptionSelected)
+    if (isOptionDisabled != null) __obj.updateDynamic("isOptionDisabled")(js.Any.fromFunction2(isOptionDisabled))
+    if (isOptionSelected != null) __obj.updateDynamic("isOptionSelected")(js.Any.fromFunction2(isOptionSelected))
     if (!js.isUndefined(isRtl)) __obj.updateDynamic("isRtl")(isRtl)
     if (!js.isUndefined(isSearchable)) __obj.updateDynamic("isSearchable")(isSearchable)
-    if (loadingMessage != null) __obj.updateDynamic("loadingMessage")(loadingMessage)
+    if (loadingMessage != null) __obj.updateDynamic("loadingMessage")(js.Any.fromFunction1(loadingMessage))
     if (maxMenuHeight != null) __obj.updateDynamic("maxMenuHeight")(maxMenuHeight.asInstanceOf[js.Any])
     if (!js.isUndefined(menuIsOpen)) __obj.updateDynamic("menuIsOpen")(menuIsOpen)
     if (menuPlacement != null) __obj.updateDynamic("menuPlacement")(menuPlacement)
@@ -351,22 +321,22 @@ object Props {
     if (!js.isUndefined(menuShouldScrollIntoView)) __obj.updateDynamic("menuShouldScrollIntoView")(menuShouldScrollIntoView)
     if (minMenuHeight != null) __obj.updateDynamic("minMenuHeight")(minMenuHeight.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (noOptionsMessage != null) __obj.updateDynamic("noOptionsMessage")(noOptionsMessage)
+    if (noOptionsMessage != null) __obj.updateDynamic("noOptionsMessage")(js.Any.fromFunction1(noOptionsMessage))
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onInputChange != null) __obj.updateDynamic("onInputChange")(onInputChange)
+    if (onInputChange != null) __obj.updateDynamic("onInputChange")(js.Any.fromFunction2(onInputChange))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onMenuClose != null) __obj.updateDynamic("onMenuClose")(onMenuClose)
-    if (onMenuOpen != null) __obj.updateDynamic("onMenuOpen")(onMenuOpen)
-    if (onMenuScrollToBottom != null) __obj.updateDynamic("onMenuScrollToBottom")(onMenuScrollToBottom)
-    if (onMenuScrollToTop != null) __obj.updateDynamic("onMenuScrollToTop")(onMenuScrollToTop)
+    if (onMenuClose != null) __obj.updateDynamic("onMenuClose")(js.Any.fromFunction0(onMenuClose))
+    if (onMenuOpen != null) __obj.updateDynamic("onMenuOpen")(js.Any.fromFunction0(onMenuOpen))
+    if (onMenuScrollToBottom != null) __obj.updateDynamic("onMenuScrollToBottom")(js.Any.fromFunction1(onMenuScrollToBottom))
+    if (onMenuScrollToTop != null) __obj.updateDynamic("onMenuScrollToTop")(js.Any.fromFunction1(onMenuScrollToTop))
     if (!js.isUndefined(openMenuOnClick)) __obj.updateDynamic("openMenuOnClick")(openMenuOnClick)
     if (!js.isUndefined(openMenuOnFocus)) __obj.updateDynamic("openMenuOnFocus")(openMenuOnFocus)
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (screenReaderStatus != null) __obj.updateDynamic("screenReaderStatus")(screenReaderStatus)
+    if (screenReaderStatus != null) __obj.updateDynamic("screenReaderStatus")(js.Any.fromFunction1(screenReaderStatus))
     if (styles != null) __obj.updateDynamic("styles")(styles)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex)
     if (!js.isUndefined(tabSelectsValue)) __obj.updateDynamic("tabSelectsValue")(tabSelectsValue)

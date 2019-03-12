@@ -17,16 +17,10 @@ trait ZonesResource extends js.Object {
 object ZonesResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserUserIpZone, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Zone]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ZoneList]
-    ]
+    get: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserUserIpZone => gapiDotClientLib.gapiNs.clientNs.Request[Zone],
+    list: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ZoneList]
   ): ZonesResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ZonesResource]
   }

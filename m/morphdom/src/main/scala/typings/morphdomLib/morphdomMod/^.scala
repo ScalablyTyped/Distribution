@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(fromNode: stdLib.Node, toNode: stdLib.Node | java.lang.String): scala.Unit = js.native
-  def apply(
-    fromNode: stdLib.Node,
-    toNode: stdLib.Node | java.lang.String,
-    options: morphdomLib.morphdomMod.MorphDomOptions
-  ): scala.Unit = js.native
+  def apply(fromNode: stdLib.Node, toNode: stdLib.Node | java.lang.String, options: MorphDomOptions): scala.Unit = js.native
 }
 

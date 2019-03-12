@@ -12,12 +12,9 @@ trait BackButtonOptions extends js.Object {
 
 object BackButtonOptions {
   @scala.inline
-  def apply(
-    click: js.Function1[/* e */ BackButtonClickEvent, scala.Unit] = null,
-    name: java.lang.String = null
-  ): BackButtonOptions = {
+  def apply(click: /* e */ BackButtonClickEvent => scala.Unit = null, name: java.lang.String = null): BackButtonOptions = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[BackButtonOptions]
   }

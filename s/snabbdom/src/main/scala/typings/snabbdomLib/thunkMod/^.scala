@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("snabbdom/thunk", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: snabbdomLib.thunkMod.ThunkFn = js.native
-  val thunk: snabbdomLib.thunkMod.ThunkFn = js.native
+  val default: ThunkFn = js.native
+  val thunk: ThunkFn = js.native
 }
 

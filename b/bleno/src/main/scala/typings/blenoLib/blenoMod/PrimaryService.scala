@@ -14,10 +14,10 @@ object PrimaryService {
   @scala.inline
   def apply(
     characteristics: js.Array[Characteristic],
-    toString: js.Function0[java.lang.String],
+    toString: () => java.lang.String,
     uuid: java.lang.String
   ): PrimaryService = {
-    val __obj = js.Dynamic.literal(characteristics = characteristics, toString = toString, uuid = uuid)
+    val __obj = js.Dynamic.literal(characteristics = characteristics, toString = js.Any.fromFunction0(toString), uuid = uuid)
   
     __obj.asInstanceOf[PrimaryService]
   }

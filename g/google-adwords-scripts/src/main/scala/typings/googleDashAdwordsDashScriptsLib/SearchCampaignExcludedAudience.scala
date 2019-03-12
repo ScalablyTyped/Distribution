@@ -15,13 +15,13 @@ trait SearchCampaignExcludedAudience extends isCampaignChild {
 object SearchCampaignExcludedAudience {
   @scala.inline
   def apply(
-    getAudienceId: js.Function0[scala.Double],
-    getCampaign: js.Function0[Campaign],
-    getId: js.Function0[scala.Double],
-    getName: js.Function0[java.lang.String],
-    remove: js.Function0[scala.Unit]
+    getAudienceId: () => scala.Double,
+    getCampaign: () => Campaign,
+    getId: () => scala.Double,
+    getName: () => java.lang.String,
+    remove: () => scala.Unit
   ): SearchCampaignExcludedAudience = {
-    val __obj = js.Dynamic.literal(getAudienceId = getAudienceId, getCampaign = getCampaign, getId = getId, getName = getName, remove = remove)
+    val __obj = js.Dynamic.literal(getAudienceId = js.Any.fromFunction0(getAudienceId), getCampaign = js.Any.fromFunction0(getCampaign), getId = js.Any.fromFunction0(getId), getName = js.Any.fromFunction0(getName), remove = js.Any.fromFunction0(remove))
   
     __obj.asInstanceOf[SearchCampaignExcludedAudience]
   }

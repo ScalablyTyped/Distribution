@@ -34,29 +34,29 @@ trait ASPxClientHtmlEditorImageDialog extends ASPxClientHtmlEditorMediaDialogBas
 object ASPxClientHtmlEditorImageDialog {
   @scala.inline
   def apply(
-    GetBorderColorColorEdit: js.Function0[ASPxClientColorEdit],
-    GetBorderStyleComboBox: js.Function0[ASPxClientComboBox],
-    GetBorderWidthSpinEdit: js.Function0[ASPxClientSpinEdit],
-    GetBottomMarginTextBox: js.Function0[ASPxClientTextBox],
-    GetCancelButton: js.Function0[ASPxClientButton],
-    GetCreateThumbnailCheckBox: js.Function0[ASPxClientCheckBox],
-    GetCssClassNameComboBox: js.Function0[ASPxClientComboBox],
-    GetDescriptionTextBox: js.Function0[ASPxClientTextBox],
-    GetFormLayout: js.Function0[ASPxClientFormLayout],
-    GetHeightSpinEdit: js.Function0[ASPxClientSpinEdit],
-    GetLeftMarginTextBox: js.Function0[ASPxClientTextBox],
-    GetMediaFileSelector: js.Function0[ASPxClientMediaFileSelector],
-    GetMoreOptionsCheckBox: js.Function0[ASPxClientCheckBox],
-    GetOkButton: js.Function0[ASPxClientButton],
-    GetPositionComboBox: js.Function0[ASPxClientComboBox],
-    GetRightMarginTextBox: js.Function0[ASPxClientTextBox],
-    GetSizeComboBox: js.Function0[ASPxClientComboBox],
-    GetThumbnailNameTextBox: js.Function0[ASPxClientTextBox],
-    GetTopMarginTextBox: js.Function0[ASPxClientTextBox],
-    GetWidthSpinEdit: js.Function0[ASPxClientSpinEdit],
-    GetWrapTextCheckBox: js.Function0[ASPxClientCheckBox]
+    GetBorderColorColorEdit: () => ASPxClientColorEdit,
+    GetBorderStyleComboBox: () => ASPxClientComboBox,
+    GetBorderWidthSpinEdit: () => ASPxClientSpinEdit,
+    GetBottomMarginTextBox: () => ASPxClientTextBox,
+    GetCancelButton: () => ASPxClientButton,
+    GetCreateThumbnailCheckBox: () => ASPxClientCheckBox,
+    GetCssClassNameComboBox: () => ASPxClientComboBox,
+    GetDescriptionTextBox: () => ASPxClientTextBox,
+    GetFormLayout: () => ASPxClientFormLayout,
+    GetHeightSpinEdit: () => ASPxClientSpinEdit,
+    GetLeftMarginTextBox: () => ASPxClientTextBox,
+    GetMediaFileSelector: () => ASPxClientMediaFileSelector,
+    GetMoreOptionsCheckBox: () => ASPxClientCheckBox,
+    GetOkButton: () => ASPxClientButton,
+    GetPositionComboBox: () => ASPxClientComboBox,
+    GetRightMarginTextBox: () => ASPxClientTextBox,
+    GetSizeComboBox: () => ASPxClientComboBox,
+    GetThumbnailNameTextBox: () => ASPxClientTextBox,
+    GetTopMarginTextBox: () => ASPxClientTextBox,
+    GetWidthSpinEdit: () => ASPxClientSpinEdit,
+    GetWrapTextCheckBox: () => ASPxClientCheckBox
   ): ASPxClientHtmlEditorImageDialog = {
-    val __obj = js.Dynamic.literal(GetBorderColorColorEdit = GetBorderColorColorEdit, GetBorderStyleComboBox = GetBorderStyleComboBox, GetBorderWidthSpinEdit = GetBorderWidthSpinEdit, GetBottomMarginTextBox = GetBottomMarginTextBox, GetCancelButton = GetCancelButton, GetCreateThumbnailCheckBox = GetCreateThumbnailCheckBox, GetCssClassNameComboBox = GetCssClassNameComboBox, GetDescriptionTextBox = GetDescriptionTextBox, GetFormLayout = GetFormLayout, GetHeightSpinEdit = GetHeightSpinEdit, GetLeftMarginTextBox = GetLeftMarginTextBox, GetMediaFileSelector = GetMediaFileSelector, GetMoreOptionsCheckBox = GetMoreOptionsCheckBox, GetOkButton = GetOkButton, GetPositionComboBox = GetPositionComboBox, GetRightMarginTextBox = GetRightMarginTextBox, GetSizeComboBox = GetSizeComboBox, GetThumbnailNameTextBox = GetThumbnailNameTextBox, GetTopMarginTextBox = GetTopMarginTextBox, GetWidthSpinEdit = GetWidthSpinEdit, GetWrapTextCheckBox = GetWrapTextCheckBox)
+    val __obj = js.Dynamic.literal(GetBorderColorColorEdit = js.Any.fromFunction0(GetBorderColorColorEdit), GetBorderStyleComboBox = js.Any.fromFunction0(GetBorderStyleComboBox), GetBorderWidthSpinEdit = js.Any.fromFunction0(GetBorderWidthSpinEdit), GetBottomMarginTextBox = js.Any.fromFunction0(GetBottomMarginTextBox), GetCancelButton = js.Any.fromFunction0(GetCancelButton), GetCreateThumbnailCheckBox = js.Any.fromFunction0(GetCreateThumbnailCheckBox), GetCssClassNameComboBox = js.Any.fromFunction0(GetCssClassNameComboBox), GetDescriptionTextBox = js.Any.fromFunction0(GetDescriptionTextBox), GetFormLayout = js.Any.fromFunction0(GetFormLayout), GetHeightSpinEdit = js.Any.fromFunction0(GetHeightSpinEdit), GetLeftMarginTextBox = js.Any.fromFunction0(GetLeftMarginTextBox), GetMediaFileSelector = js.Any.fromFunction0(GetMediaFileSelector), GetMoreOptionsCheckBox = js.Any.fromFunction0(GetMoreOptionsCheckBox), GetOkButton = js.Any.fromFunction0(GetOkButton), GetPositionComboBox = js.Any.fromFunction0(GetPositionComboBox), GetRightMarginTextBox = js.Any.fromFunction0(GetRightMarginTextBox), GetSizeComboBox = js.Any.fromFunction0(GetSizeComboBox), GetThumbnailNameTextBox = js.Any.fromFunction0(GetThumbnailNameTextBox), GetTopMarginTextBox = js.Any.fromFunction0(GetTopMarginTextBox), GetWidthSpinEdit = js.Any.fromFunction0(GetWidthSpinEdit), GetWrapTextCheckBox = js.Any.fromFunction0(GetWrapTextCheckBox))
   
     __obj.asInstanceOf[ASPxClientHtmlEditorImageDialog]
   }

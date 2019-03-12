@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 package object mNs {
   type CompareCallback = js.Function4[
-    /* err */ nodeLib.Error, 
+    /* err */ stdLib.Error, 
     /* isEqual */ scala.Boolean, 
     /* equality */ scala.Double, 
     /* raw */ scala.Double, 
     js.Any
   ]
-  type GetterCallback[T] = js.Function2[/* err */ nodeLib.Error, /* value */ T, js.Any]
+  type GetterCallback[T] = js.Function2[/* err */ stdLib.Error, /* value */ T, js.Any]
   type WriteCallback = js.Function4[
-    /* err */ nodeLib.Error, 
+    /* err */ stdLib.Error, 
     /* stdout */ java.lang.String, 
     /* stderr */ java.lang.String, 
     /* cmd */ java.lang.String, 

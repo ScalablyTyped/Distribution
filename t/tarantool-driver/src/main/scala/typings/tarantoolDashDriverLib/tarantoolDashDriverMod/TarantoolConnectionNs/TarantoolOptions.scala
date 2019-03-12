@@ -26,7 +26,7 @@ object TarantoolOptions {
     password: java.lang.String = null,
     port: scala.Int | scala.Double = null,
     reserveHosts: js.Array[java.lang.String] = null,
-    retryStrategy: js.Function1[/* times */ scala.Double, scala.Double] = null,
+    retryStrategy: /* times */ scala.Double => scala.Double = null,
     timeout: scala.Int | scala.Double = null,
     username: java.lang.String = null
   ): TarantoolOptions = {
@@ -37,7 +37,7 @@ object TarantoolOptions {
     if (password != null) __obj.updateDynamic("password")(password)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (reserveHosts != null) __obj.updateDynamic("reserveHosts")(reserveHosts)
-    if (retryStrategy != null) __obj.updateDynamic("retryStrategy")(retryStrategy)
+    if (retryStrategy != null) __obj.updateDynamic("retryStrategy")(js.Any.fromFunction1(retryStrategy))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username)
     __obj.asInstanceOf[TarantoolOptions]

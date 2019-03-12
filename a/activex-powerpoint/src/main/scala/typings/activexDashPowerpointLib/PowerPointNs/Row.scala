@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.Row")
 @js.native
 class Row protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   val Cells: CellRange = js.native
   var Height: scala.Double = js.native
   val Parent: js.Any = js.native

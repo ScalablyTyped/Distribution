@@ -13,8 +13,8 @@ trait Button extends js.Object {
 
 object Button {
   @scala.inline
-  def apply(name: java.lang.String, onClick: js.Function0[scala.Unit], primary: scala.Boolean): Button = {
-    val __obj = js.Dynamic.literal(name = name, onClick = onClick, primary = primary)
+  def apply(name: java.lang.String, onClick: () => scala.Unit, primary: scala.Boolean): Button = {
+    val __obj = js.Dynamic.literal(name = name, onClick = js.Any.fromFunction0(onClick), primary = primary)
   
     __obj.asInstanceOf[Button]
   }

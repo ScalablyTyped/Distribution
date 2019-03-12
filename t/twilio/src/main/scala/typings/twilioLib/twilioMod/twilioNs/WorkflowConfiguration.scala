@@ -16,9 +16,9 @@ object WorkflowConfiguration {
   def apply(
     taskRouting: TaskRoutingConfiguration,
     task_routing: TaskRoutingConfiguration,
-    toJSON: js.Function0[java.lang.String]
+    toJSON: () => java.lang.String
   ): WorkflowConfiguration = {
-    val __obj = js.Dynamic.literal(taskRouting = taskRouting, task_routing = task_routing, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(taskRouting = taskRouting, task_routing = task_routing, toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[WorkflowConfiguration]
   }

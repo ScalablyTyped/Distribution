@@ -16,13 +16,13 @@ trait PageProtection extends js.Object {
 object PageProtection {
   @scala.inline
   def apply(
-    addUser: js.Function1[java.lang.String, scala.Unit],
-    getUsers: js.Function0[js.Array[java.lang.String]],
-    isProtected: js.Function0[scala.Boolean],
-    removeUser: js.Function1[java.lang.String, scala.Unit],
-    setProtected: js.Function1[scala.Boolean, scala.Unit]
+    addUser: java.lang.String => scala.Unit,
+    getUsers: () => js.Array[java.lang.String],
+    isProtected: () => scala.Boolean,
+    removeUser: java.lang.String => scala.Unit,
+    setProtected: scala.Boolean => scala.Unit
   ): PageProtection = {
-    val __obj = js.Dynamic.literal(addUser = addUser, getUsers = getUsers, isProtected = isProtected, removeUser = removeUser, setProtected = setProtected)
+    val __obj = js.Dynamic.literal(addUser = js.Any.fromFunction1(addUser), getUsers = js.Any.fromFunction0(getUsers), isProtected = js.Any.fromFunction0(isProtected), removeUser = js.Any.fromFunction1(removeUser), setProtected = js.Any.fromFunction1(setProtected))
   
     __obj.asInstanceOf[PageProtection]
   }

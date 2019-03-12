@@ -15,13 +15,10 @@ trait Pattern5[T1, T2, T3, T4, T5] extends js.Object {
 object Pattern5 {
   @scala.inline
   def apply[T1, T2, T3, T4, T5](
-    and: js.Function1[Observable[js.Any], Pattern6[T1, T2, T3, T4, T5, js.Any]],
-    thenDo: js.Function1[
-      js.Function5[/* item1 */ T1, /* item2 */ T2, /* item3 */ T3, /* item4 */ T4, /* item5 */ T5, js.Any], 
-      Plan[js.Any]
-    ]
+    and: Observable[js.Any] => Pattern6[T1, T2, T3, T4, T5, js.Any],
+    thenDo: js.Function5[/* item1 */ T1, /* item2 */ T2, /* item3 */ T3, /* item4 */ T4, /* item5 */ T5, js.Any] => Plan[js.Any]
   ): Pattern5[T1, T2, T3, T4, T5] = {
-    val __obj = js.Dynamic.literal(and = and, thenDo = thenDo)
+    val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), thenDo = js.Any.fromFunction1(thenDo))
   
     __obj.asInstanceOf[Pattern5[T1, T2, T3, T4, T5]]
   }

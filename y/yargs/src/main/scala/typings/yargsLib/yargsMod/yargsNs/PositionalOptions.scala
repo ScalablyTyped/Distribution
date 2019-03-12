@@ -28,7 +28,7 @@ object PositionalOptions {
   def apply(
     alias: java.lang.String | js.Array[java.lang.String] = null,
     choices: Choices = null,
-    coerce: js.Function1[/* arg */ js.Any, _] = null,
+    coerce: /* arg */ js.Any => _ = null,
     conflicts: java.lang.String | js.Array[java.lang.String] | (org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]) = null,
     default: js.Any = null,
     desc: java.lang.String = null,
@@ -41,7 +41,7 @@ object PositionalOptions {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (choices != null) __obj.updateDynamic("choices")(choices)
-    if (coerce != null) __obj.updateDynamic("coerce")(coerce)
+    if (coerce != null) __obj.updateDynamic("coerce")(js.Any.fromFunction1(coerce))
     if (conflicts != null) __obj.updateDynamic("conflicts")(conflicts.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default)
     if (desc != null) __obj.updateDynamic("desc")(desc)

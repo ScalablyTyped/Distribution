@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.NameSpace")
 @js.native
 class NameSpace protected () extends js.Object {
-  val Accounts: Accounts = js.native
-  val AddressLists: AddressLists = js.native
-  val Application: Application = js.native
+  val Accounts: activexDashOutlookLib.OutlookNs.Accounts = js.native
+  val AddressLists: activexDashOutlookLib.OutlookNs.AddressLists = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val AutoDiscoverConnectionMode: OlAutoDiscoverConnectionMode = js.native
   val AutoDiscoverXml: java.lang.String = js.native
-  val Categories: Categories = js.native
+  val Categories: activexDashOutlookLib.OutlookNs.Categories = js.native
   val Class: OlObjectClass = js.native
   val CurrentProfileName: java.lang.String = js.native
   val CurrentUser: Recipient = js.native
@@ -21,14 +21,14 @@ class NameSpace protected () extends js.Object {
   val ExchangeConnectionMode: OlExchangeConnectionMode = js.native
   val ExchangeMailboxServerName: java.lang.String = js.native
   val ExchangeMailboxServerVersion: java.lang.String = js.native
-  val Folders: Folders = js.native
+  val Folders: activexDashOutlookLib.OutlookNs.Folders = js.native
   val MAPIOBJECT: js.Any = js.native
   val Offline: scala.Boolean = js.native
   var `Outlook.NameSpace_typekey`: NameSpace = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
-  val Stores: Stores = js.native
-  val SyncObjects: SyncObjects = js.native
+  val Stores: activexDashOutlookLib.OutlookNs.Stores = js.native
+  val SyncObjects: activexDashOutlookLib.OutlookNs.SyncObjects = js.native
   val Type: java.lang.String = js.native
   def AddStore(Store: js.Any): scala.Unit = js.native
   def AddStoreEx(Store: js.Any, Type: OlStoreType): scala.Unit = js.native

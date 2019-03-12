@@ -12,17 +12,17 @@ trait IObservableMap[K, V] extends IMap[K, V] {
 object IObservableMap {
   @scala.inline
   def apply[K, V](
-    clear: js.Function0[scala.Unit],
-    first: js.Function0[IIterator[IKeyValuePair[K, V]]],
-    getView: js.Function0[IMapView[K, V]],
-    hasKey: js.Function1[K, scala.Boolean],
-    insert: js.Function2[K, V, scala.Boolean],
-    lookup: js.Function1[K, V],
+    clear: () => scala.Unit,
+    first: () => IIterator[IKeyValuePair[K, V]],
+    getView: () => IMapView[K, V],
+    hasKey: K => scala.Boolean,
+    insert: (K, V) => scala.Boolean,
+    lookup: K => V,
     onmapchanged: js.Any,
-    remove: js.Function1[K, scala.Unit],
+    remove: K => scala.Unit,
     size: scala.Double
   ): IObservableMap[K, V] = {
-    val __obj = js.Dynamic.literal(clear = clear, first = first, getView = getView, hasKey = hasKey, insert = insert, lookup = lookup, onmapchanged = onmapchanged, remove = remove, size = size)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), first = js.Any.fromFunction0(first), getView = js.Any.fromFunction0(getView), hasKey = js.Any.fromFunction1(hasKey), insert = js.Any.fromFunction2(insert), lookup = js.Any.fromFunction1(lookup), onmapchanged = onmapchanged, remove = js.Any.fromFunction1(remove), size = size)
   
     __obj.asInstanceOf[IObservableMap[K, V]]
   }

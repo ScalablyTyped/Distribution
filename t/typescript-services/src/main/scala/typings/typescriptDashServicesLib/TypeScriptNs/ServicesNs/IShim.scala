@@ -11,8 +11,8 @@ trait IShim extends js.Object {
 
 object IShim {
   @scala.inline
-  def apply(dispose: js.Function1[js.Any, scala.Unit]): IShim = {
-    val __obj = js.Dynamic.literal(dispose = dispose)
+  def apply(dispose: js.Any => scala.Unit): IShim = {
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction1(dispose))
   
     __obj.asInstanceOf[IShim]
   }

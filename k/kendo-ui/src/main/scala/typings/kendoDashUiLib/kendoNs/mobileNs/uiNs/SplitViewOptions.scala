@@ -15,15 +15,15 @@ trait SplitViewOptions extends js.Object {
 object SplitViewOptions {
   @scala.inline
   def apply(
-    init: js.Function1[/* e */ SplitViewInitEvent, scala.Unit] = null,
+    init: /* e */ SplitViewInitEvent => scala.Unit = null,
     name: java.lang.String = null,
-    show: js.Function1[/* e */ SplitViewShowEvent, scala.Unit] = null,
+    show: /* e */ SplitViewShowEvent => scala.Unit = null,
     style: java.lang.String = null
   ): SplitViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (init != null) __obj.updateDynamic("init")(init)
+    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (name != null) __obj.updateDynamic("name")(name)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[SplitViewOptions]
   }

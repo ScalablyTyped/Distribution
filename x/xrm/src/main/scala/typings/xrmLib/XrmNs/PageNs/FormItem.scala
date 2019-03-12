@@ -14,12 +14,8 @@ trait FormItem
 
 object FormItem {
   @scala.inline
-  def apply(
-    getId: js.Function0[java.lang.String],
-    getLabel: js.Function0[java.lang.String],
-    navigate: js.Function0[scala.Unit]
-  ): FormItem = {
-    val __obj = js.Dynamic.literal(getId = getId, getLabel = getLabel, navigate = navigate)
+  def apply(getId: () => java.lang.String, getLabel: () => java.lang.String, navigate: () => scala.Unit): FormItem = {
+    val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId), getLabel = js.Any.fromFunction0(getLabel), navigate = js.Any.fromFunction0(navigate))
   
     __obj.asInstanceOf[FormItem]
   }

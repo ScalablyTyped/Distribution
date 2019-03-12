@@ -21,17 +21,11 @@ trait WebGLProgram extends js.Object {
 object WebGLProgram {
   @scala.inline
   def apply(
-    __SPECTOR_rebuildProgram: js.Function4[
-      /* vertexSourceCode */ java.lang.String, 
-      /* fragmentSourceCode */ java.lang.String, 
-      /* onCompiled */ js.Function1[WebGLProgram, scala.Unit], 
-      /* onError */ js.Function1[/* message */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ] = null,
+    __SPECTOR_rebuildProgram: (/* vertexSourceCode */ java.lang.String, /* fragmentSourceCode */ java.lang.String, /* onCompiled */ js.Function1[WebGLProgram, scala.Unit], /* onError */ js.Function1[/* message */ java.lang.String, scala.Unit]) => scala.Unit = null,
     transformFeedback: WebGLTransformFeedback = null
   ): WebGLProgram = {
     val __obj = js.Dynamic.literal()
-    if (__SPECTOR_rebuildProgram != null) __obj.updateDynamic("__SPECTOR_rebuildProgram")(__SPECTOR_rebuildProgram)
+    if (__SPECTOR_rebuildProgram != null) __obj.updateDynamic("__SPECTOR_rebuildProgram")(js.Any.fromFunction4(__SPECTOR_rebuildProgram))
     if (transformFeedback != null) __obj.updateDynamic("transformFeedback")(transformFeedback)
     __obj.asInstanceOf[WebGLProgram]
   }

@@ -137,14 +137,10 @@ object RequestOptions {
   def apply(
     agent: nodeLib.httpMod.Agent = null,
     auth: java.lang.String = null,
-    beforeRequest: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    beforeRequest: /* repeated */ js.Any => scala.Unit = null,
     ca: java.lang.String | nodeLib.Buffer | js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = null,
     cert: java.lang.String | nodeLib.Buffer = null,
-    checkAddress: js.Function2[
-      /* ip */ java.lang.String, 
-      /* family */ scala.Double | java.lang.String, 
-      scala.Boolean
-    ] = null,
+    checkAddress: (/* ip */ java.lang.String, /* family */ scala.Double | java.lang.String) => scala.Boolean = null,
     ciphers: java.lang.String = null,
     consumeWriteStream: js.UndefOr[scala.Boolean] = js.undefined,
     content: java.lang.String | nodeLib.Buffer = null,
@@ -156,7 +152,7 @@ object RequestOptions {
     enableProxy: js.UndefOr[scala.Boolean] = js.undefined,
     fixJSONCtlChars: js.UndefOr[scala.Boolean] = js.undefined,
     followRedirect: js.UndefOr[scala.Boolean] = js.undefined,
-    formatRedirectUrl: js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Unit] = null,
+    formatRedirectUrl: (/* a */ js.Any, /* b */ js.Any) => scala.Unit = null,
     gzip: js.UndefOr[scala.Boolean] = js.undefined,
     headers: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     httpsAgent: nodeLib.httpsMod.Agent = null,
@@ -180,10 +176,10 @@ object RequestOptions {
     val __obj = js.Dynamic.literal()
     if (agent != null) __obj.updateDynamic("agent")(agent)
     if (auth != null) __obj.updateDynamic("auth")(auth)
-    if (beforeRequest != null) __obj.updateDynamic("beforeRequest")(beforeRequest)
+    if (beforeRequest != null) __obj.updateDynamic("beforeRequest")(js.Any.fromFunction1(beforeRequest))
     if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (checkAddress != null) __obj.updateDynamic("checkAddress")(checkAddress)
+    if (checkAddress != null) __obj.updateDynamic("checkAddress")(js.Any.fromFunction2(checkAddress))
     if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)
     if (!js.isUndefined(consumeWriteStream)) __obj.updateDynamic("consumeWriteStream")(consumeWriteStream)
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
@@ -195,7 +191,7 @@ object RequestOptions {
     if (!js.isUndefined(enableProxy)) __obj.updateDynamic("enableProxy")(enableProxy)
     if (!js.isUndefined(fixJSONCtlChars)) __obj.updateDynamic("fixJSONCtlChars")(fixJSONCtlChars)
     if (!js.isUndefined(followRedirect)) __obj.updateDynamic("followRedirect")(followRedirect)
-    if (formatRedirectUrl != null) __obj.updateDynamic("formatRedirectUrl")(formatRedirectUrl)
+    if (formatRedirectUrl != null) __obj.updateDynamic("formatRedirectUrl")(js.Any.fromFunction2(formatRedirectUrl))
     if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (httpsAgent != null) __obj.updateDynamic("httpsAgent")(httpsAgent)

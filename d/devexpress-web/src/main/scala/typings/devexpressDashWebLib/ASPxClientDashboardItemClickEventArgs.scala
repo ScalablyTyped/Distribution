@@ -50,19 +50,15 @@ trait ASPxClientDashboardItemClickEventArgs extends ASPxClientEventArgs {
 object ASPxClientDashboardItemClickEventArgs {
   @scala.inline
   def apply(
-    GetAxisPoint: js.Function1[java.lang.String, ASPxClientDashboardItemDataAxisPoint],
-    GetData: js.Function0[ASPxClientDashboardItemData],
-    GetDeltas: js.Function0[js.Array[ASPxClientDashboardItemDataDelta]],
-    GetDimensions: js.Function1[java.lang.String, js.Array[ASPxClientDashboardItemDataDimension]],
-    GetMeasures: js.Function0[js.Array[ASPxClientDashboardItemDataMeasure]],
+    GetAxisPoint: java.lang.String => ASPxClientDashboardItemDataAxisPoint,
+    GetData: () => ASPxClientDashboardItemData,
+    GetDeltas: () => js.Array[ASPxClientDashboardItemDataDelta],
+    GetDimensions: java.lang.String => js.Array[ASPxClientDashboardItemDataDimension],
+    GetMeasures: () => js.Array[ASPxClientDashboardItemDataMeasure],
     ItemName: java.lang.String,
-    RequestUnderlyingData: js.Function2[
-      ASPxClientDashboardItemRequestUnderlyingDataCompleted, 
-      js.Array[java.lang.String], 
-      scala.Unit
-    ]
+    RequestUnderlyingData: (ASPxClientDashboardItemRequestUnderlyingDataCompleted, js.Array[java.lang.String]) => scala.Unit
   ): ASPxClientDashboardItemClickEventArgs = {
-    val __obj = js.Dynamic.literal(GetAxisPoint = GetAxisPoint, GetData = GetData, GetDeltas = GetDeltas, GetDimensions = GetDimensions, GetMeasures = GetMeasures, ItemName = ItemName, RequestUnderlyingData = RequestUnderlyingData)
+    val __obj = js.Dynamic.literal(GetAxisPoint = js.Any.fromFunction1(GetAxisPoint), GetData = js.Any.fromFunction0(GetData), GetDeltas = js.Any.fromFunction0(GetDeltas), GetDimensions = js.Any.fromFunction1(GetDimensions), GetMeasures = js.Any.fromFunction0(GetMeasures), ItemName = ItemName, RequestUnderlyingData = js.Any.fromFunction2(RequestUnderlyingData))
   
     __obj.asInstanceOf[ASPxClientDashboardItemClickEventArgs]
   }

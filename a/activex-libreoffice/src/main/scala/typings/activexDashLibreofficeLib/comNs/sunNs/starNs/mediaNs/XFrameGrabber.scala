@@ -16,10 +16,8 @@ trait XFrameGrabber extends js.Object {
 
 object XFrameGrabber {
   @scala.inline
-  def apply(
-    grabFrame: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic]
-  ): XFrameGrabber = {
-    val __obj = js.Dynamic.literal(grabFrame = grabFrame)
+  def apply(grabFrame: scala.Double => activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic): XFrameGrabber = {
+    val __obj = js.Dynamic.literal(grabFrame = js.Any.fromFunction1(grabFrame))
   
     __obj.asInstanceOf[XFrameGrabber]
   }

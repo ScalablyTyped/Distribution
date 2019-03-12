@@ -28,15 +28,11 @@ object Anon_DocumentMutationId {
     updateQueries: org.scalablytyped.runtime.StringDictionary[apolloDashClientLib.dataStoreMod.QueryWithUpdater],
     variables: js.Any,
     optimisticResponse: js.Object | js.Function = null,
-    update: js.Function2[
-      /* proxy */ apolloDashCacheLib.libTypesDataProxyMod.DataProxy, 
-      /* mutationResult */ js.Object, 
-      scala.Unit
-    ] = null
+    update: (/* proxy */ apolloDashCacheLib.libTypesDataProxyMod.DataProxy, /* mutationResult */ js.Object) => scala.Unit = null
   ): Anon_DocumentMutationId = {
     val __obj = js.Dynamic.literal(document = document, mutationId = mutationId, updateQueries = updateQueries, variables = variables)
     if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction2(update))
     __obj.asInstanceOf[Anon_DocumentMutationId]
   }
 }

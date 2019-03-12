@@ -23,10 +23,10 @@ object IMessageDialog {
     content: java.lang.String,
     defaultCommandIndex: scala.Double,
     options: MessageDialogOptions,
-    showAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[IUICommand]],
+    showAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[IUICommand],
     title: java.lang.String
   ): IMessageDialog = {
-    val __obj = js.Dynamic.literal(cancelCommandIndex = cancelCommandIndex, commands = commands, content = content, defaultCommandIndex = defaultCommandIndex, options = options, showAsync = showAsync, title = title)
+    val __obj = js.Dynamic.literal(cancelCommandIndex = cancelCommandIndex, commands = commands, content = content, defaultCommandIndex = defaultCommandIndex, options = options, showAsync = js.Any.fromFunction0(showAsync), title = title)
   
     __obj.asInstanceOf[IMessageDialog]
   }

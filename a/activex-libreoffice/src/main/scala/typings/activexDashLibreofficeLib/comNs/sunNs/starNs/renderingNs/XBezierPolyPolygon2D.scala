@@ -41,8 +41,8 @@ trait XBezierPolyPolygon2D extends XPolyPolygon2D {
     nNumberOfPolygons: scala.Double,
     nPointIndex: scala.Double,
     nNumberOfPoints: scala.Double
-  ): activexDashInteropLib.SafeArray[
-    activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealBezierSegment2D]
+  ): stdLib.SafeArray[
+    stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealBezierSegment2D]
   ]
   /**
     * Set a single point on the poly-polygon.
@@ -80,49 +80,26 @@ object XBezierPolyPolygon2D {
   def apply(
     FillRule: FillRule,
     NumberOfPolygons: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addPolyPolygon: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
-      XPolyPolygon2D, 
-      scala.Unit
+    acquire: () => scala.Unit,
+    addPolyPolygon: (activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, XPolyPolygon2D) => scala.Unit,
+    getBezierSegment: (scala.Double, scala.Double) => activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealBezierSegment2D,
+    getBezierSegments: (scala.Double, scala.Double, scala.Double, scala.Double) => stdLib.SafeArray[
+      stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealBezierSegment2D]
     ],
-    getBezierSegment: js.Function2[
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealBezierSegment2D
-    ],
-    getBezierSegments: js.Function4[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      activexDashInteropLib.SafeArray[
-        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealBezierSegment2D]
-      ]
-    ],
-    getFillRule: js.Function0[FillRule],
-    getNumberOfPolygonPoints: js.Function1[scala.Double, scala.Double],
-    getNumberOfPolygons: js.Function0[scala.Double],
-    isClosed: js.Function1[scala.Double, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setBezierSegment: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealBezierSegment2D, 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ],
-    setBezierSegments: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
-        activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealBezierSegment2D]
-      ], 
-      scala.Double, 
-      scala.Unit
-    ],
-    setClosed: js.Function2[scala.Double, scala.Boolean, scala.Unit],
-    setFillRule: js.Function1[FillRule, scala.Unit]
+    getFillRule: () => FillRule,
+    getNumberOfPolygonPoints: scala.Double => scala.Double,
+    getNumberOfPolygons: () => scala.Double,
+    isClosed: scala.Double => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setBezierSegment: (activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealBezierSegment2D, scala.Double, scala.Double) => scala.Unit,
+    setBezierSegments: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealBezierSegment2D]
+    ], scala.Double) => scala.Unit,
+    setClosed: (scala.Double, scala.Boolean) => scala.Unit,
+    setFillRule: FillRule => scala.Unit
   ): XBezierPolyPolygon2D = {
-    val __obj = js.Dynamic.literal(FillRule = FillRule, NumberOfPolygons = NumberOfPolygons, acquire = acquire, addPolyPolygon = addPolyPolygon, getBezierSegment = getBezierSegment, getBezierSegments = getBezierSegments, getFillRule = getFillRule, getNumberOfPolygonPoints = getNumberOfPolygonPoints, getNumberOfPolygons = getNumberOfPolygons, isClosed = isClosed, queryInterface = queryInterface, release = release, setBezierSegment = setBezierSegment, setBezierSegments = setBezierSegments, setClosed = setClosed, setFillRule = setFillRule)
+    val __obj = js.Dynamic.literal(FillRule = FillRule, NumberOfPolygons = NumberOfPolygons, acquire = js.Any.fromFunction0(acquire), addPolyPolygon = js.Any.fromFunction2(addPolyPolygon), getBezierSegment = js.Any.fromFunction2(getBezierSegment), getBezierSegments = js.Any.fromFunction4(getBezierSegments), getFillRule = js.Any.fromFunction0(getFillRule), getNumberOfPolygonPoints = js.Any.fromFunction1(getNumberOfPolygonPoints), getNumberOfPolygons = js.Any.fromFunction0(getNumberOfPolygons), isClosed = js.Any.fromFunction1(isClosed), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setBezierSegment = js.Any.fromFunction3(setBezierSegment), setBezierSegments = js.Any.fromFunction2(setBezierSegments), setClosed = js.Any.fromFunction2(setClosed), setFillRule = js.Any.fromFunction1(setFillRule))
   
     __obj.asInstanceOf[XBezierPolyPolygon2D]
   }

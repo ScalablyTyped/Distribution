@@ -23,11 +23,11 @@ trait SuiteFunctions extends js.Object {
 object SuiteFunctions {
   @scala.inline
   def apply(
-    create: js.Function1[CreateOptions, mochaLib.MochaNs.Suite],
-    only: js.Function1[CreateOptions, mochaLib.MochaNs.Suite],
-    skip: js.Function1[CreateOptions, mochaLib.MochaNs.Suite]
+    create: CreateOptions => mochaLib.MochaNs.Suite,
+    only: CreateOptions => mochaLib.MochaNs.Suite,
+    skip: CreateOptions => mochaLib.MochaNs.Suite
   ): SuiteFunctions = {
-    val __obj = js.Dynamic.literal(create = create, only = only, skip = skip)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), only = js.Any.fromFunction1(only), skip = js.Any.fromFunction1(skip))
   
     __obj.asInstanceOf[SuiteFunctions]
   }

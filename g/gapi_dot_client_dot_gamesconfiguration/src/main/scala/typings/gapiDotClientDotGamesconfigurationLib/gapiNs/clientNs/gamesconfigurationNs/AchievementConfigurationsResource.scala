@@ -23,32 +23,14 @@ trait AchievementConfigurationsResource extends js.Object {
 object AchievementConfigurationsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotGamesconfigurationLib.Anon_AchievementId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotGamesconfigurationLib.Anon_AchievementId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AchievementConfiguration]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotGamesconfigurationLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AchievementConfiguration]
-    ],
-    list: js.Function1[
-      gapiDotClientDotGamesconfigurationLib.Anon_AltApplicationId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AchievementConfigurationListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotGamesconfigurationLib.Anon_AchievementId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AchievementConfiguration]
-    ],
-    update: js.Function1[
-      gapiDotClientDotGamesconfigurationLib.Anon_AchievementId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AchievementConfiguration]
-    ]
+    delete: gapiDotClientDotGamesconfigurationLib.Anon_AchievementId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotGamesconfigurationLib.Anon_AchievementId => gapiDotClientLib.gapiNs.clientNs.Request[AchievementConfiguration],
+    insert: gapiDotClientDotGamesconfigurationLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[AchievementConfiguration],
+    list: gapiDotClientDotGamesconfigurationLib.Anon_AltApplicationId => gapiDotClientLib.gapiNs.clientNs.Request[AchievementConfigurationListResponse],
+    patch: gapiDotClientDotGamesconfigurationLib.Anon_AchievementId => gapiDotClientLib.gapiNs.clientNs.Request[AchievementConfiguration],
+    update: gapiDotClientDotGamesconfigurationLib.Anon_AchievementId => gapiDotClientLib.gapiNs.clientNs.Request[AchievementConfiguration]
   ): AchievementConfigurationsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[AchievementConfigurationsResource]
   }

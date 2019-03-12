@@ -124,78 +124,66 @@ object ILoadMask {
   def apply(
     IBindable: extjsLib.ExtNs.utilNs.IBindable = null,
     IComponent: IComponent = null,
-    afterRender: js.Function0[scala.Unit] = null,
-    afterShow: js.Function0[scala.Unit] = null,
+    afterRender: () => scala.Unit = null,
+    afterShow: () => scala.Unit = null,
     baseCls: java.lang.String = null,
-    bindStore: js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IStore], scala.Unit] = null,
-    bindStoreListeners: js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit] = null,
-    center: js.Function0[IComponent] = null,
-    doConstrain: js.Function1[/* constrainTo */ js.UndefOr[js.Any], scala.Unit] = null,
-    getStore: js.Function0[extjsLib.ExtNs.dataNs.IAbstractStore] = null,
-    getStoreListeners: js.Function1[/* store */ js.UndefOr[js.Any], _] = null,
-    hide: js.Function0[IComponent] = null,
+    bindStore: /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IStore] => scala.Unit = null,
+    bindStoreListeners: /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore] => scala.Unit = null,
+    center: () => IComponent = null,
+    doConstrain: /* constrainTo */ js.UndefOr[js.Any] => scala.Unit = null,
+    getStore: () => extjsLib.ExtNs.dataNs.IAbstractStore = null,
+    getStoreListeners: /* store */ js.UndefOr[js.Any] => _ = null,
+    hide: () => IComponent = null,
     maskCls: java.lang.String = null,
     msg: java.lang.String = null,
     msgCls: java.lang.String = null,
-    onBindStore: js.Function2[
-      /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
-      /* initial */ js.UndefOr[scala.Boolean], 
-      scala.Unit
-    ] = null,
-    onDestroy: js.Function0[scala.Unit] = null,
-    onDisable: js.Function0[scala.Unit] = null,
-    onHide: js.Function0[scala.Unit] = null,
-    onShow: js.Function0[scala.Unit] = null,
-    onUnbindStore: js.Function2[
-      /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
-      /* initial */ js.UndefOr[scala.Boolean], 
-      scala.Unit
-    ] = null,
+    onBindStore: (/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], /* initial */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
+    onDestroy: () => scala.Unit = null,
+    onDisable: () => scala.Unit = null,
+    onHide: () => scala.Unit = null,
+    onShow: () => scala.Unit = null,
+    onUnbindStore: (/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], /* initial */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
     renderTpl: js.Any = null,
-    setActive: js.Function2[
-      /* active */ js.UndefOr[scala.Boolean], 
-      /* newActive */ js.UndefOr[IComponent], 
-      scala.Unit
-    ] = null,
-    show: js.Function0[IComponent] = null,
+    setActive: (/* active */ js.UndefOr[scala.Boolean], /* newActive */ js.UndefOr[IComponent]) => scala.Unit = null,
+    show: () => IComponent = null,
     store: extjsLib.ExtNs.dataNs.IStore = null,
     target: IComponent = null,
-    toBack: js.Function0[IComponent] = null,
-    toFront: js.Function1[/* preventFocus */ js.UndefOr[scala.Boolean], IComponent] = null,
-    unbindStoreListeners: js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit] = null,
+    toBack: () => IComponent = null,
+    toFront: /* preventFocus */ js.UndefOr[scala.Boolean] => IComponent = null,
+    unbindStoreListeners: /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore] => scala.Unit = null,
     useMsg: js.UndefOr[scala.Boolean] = js.undefined,
     useTargetEl: js.UndefOr[scala.Boolean] = js.undefined
   ): ILoadMask = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IBindable)
     js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (afterRender != null) __obj.updateDynamic("afterRender")(afterRender)
-    if (afterShow != null) __obj.updateDynamic("afterShow")(afterShow)
+    if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction0(afterRender))
+    if (afterShow != null) __obj.updateDynamic("afterShow")(js.Any.fromFunction0(afterShow))
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (bindStore != null) __obj.updateDynamic("bindStore")(bindStore)
-    if (bindStoreListeners != null) __obj.updateDynamic("bindStoreListeners")(bindStoreListeners)
-    if (center != null) __obj.updateDynamic("center")(center)
-    if (doConstrain != null) __obj.updateDynamic("doConstrain")(doConstrain)
-    if (getStore != null) __obj.updateDynamic("getStore")(getStore)
-    if (getStoreListeners != null) __obj.updateDynamic("getStoreListeners")(getStoreListeners)
-    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (bindStore != null) __obj.updateDynamic("bindStore")(js.Any.fromFunction1(bindStore))
+    if (bindStoreListeners != null) __obj.updateDynamic("bindStoreListeners")(js.Any.fromFunction1(bindStoreListeners))
+    if (center != null) __obj.updateDynamic("center")(js.Any.fromFunction0(center))
+    if (doConstrain != null) __obj.updateDynamic("doConstrain")(js.Any.fromFunction1(doConstrain))
+    if (getStore != null) __obj.updateDynamic("getStore")(js.Any.fromFunction0(getStore))
+    if (getStoreListeners != null) __obj.updateDynamic("getStoreListeners")(js.Any.fromFunction1(getStoreListeners))
+    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction0(hide))
     if (maskCls != null) __obj.updateDynamic("maskCls")(maskCls)
     if (msg != null) __obj.updateDynamic("msg")(msg)
     if (msgCls != null) __obj.updateDynamic("msgCls")(msgCls)
-    if (onBindStore != null) __obj.updateDynamic("onBindStore")(onBindStore)
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(onDestroy)
-    if (onDisable != null) __obj.updateDynamic("onDisable")(onDisable)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
-    if (onUnbindStore != null) __obj.updateDynamic("onUnbindStore")(onUnbindStore)
+    if (onBindStore != null) __obj.updateDynamic("onBindStore")(js.Any.fromFunction2(onBindStore))
+    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
+    if (onDisable != null) __obj.updateDynamic("onDisable")(js.Any.fromFunction0(onDisable))
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
+    if (onUnbindStore != null) __obj.updateDynamic("onUnbindStore")(js.Any.fromFunction2(onUnbindStore))
     if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
-    if (setActive != null) __obj.updateDynamic("setActive")(setActive)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (setActive != null) __obj.updateDynamic("setActive")(js.Any.fromFunction2(setActive))
+    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction0(show))
     if (store != null) __obj.updateDynamic("store")(store)
     if (target != null) __obj.updateDynamic("target")(target)
-    if (toBack != null) __obj.updateDynamic("toBack")(toBack)
-    if (toFront != null) __obj.updateDynamic("toFront")(toFront)
-    if (unbindStoreListeners != null) __obj.updateDynamic("unbindStoreListeners")(unbindStoreListeners)
+    if (toBack != null) __obj.updateDynamic("toBack")(js.Any.fromFunction0(toBack))
+    if (toFront != null) __obj.updateDynamic("toFront")(js.Any.fromFunction1(toFront))
+    if (unbindStoreListeners != null) __obj.updateDynamic("unbindStoreListeners")(js.Any.fromFunction1(unbindStoreListeners))
     if (!js.isUndefined(useMsg)) __obj.updateDynamic("useMsg")(useMsg)
     if (!js.isUndefined(useTargetEl)) __obj.updateDynamic("useTargetEl")(useTargetEl)
     __obj.asInstanceOf[ILoadMask]

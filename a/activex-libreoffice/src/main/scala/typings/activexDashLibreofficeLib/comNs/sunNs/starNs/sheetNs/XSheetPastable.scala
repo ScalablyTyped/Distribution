@@ -37,27 +37,14 @@ trait XSheetPastable
 object XSheetPastable {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    paste: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Unit],
-    pasteCellRange: js.Function7[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, 
-      PasteOperation, 
-      scala.Double, 
-      scala.Boolean, 
-      scala.Boolean, 
-      scala.Boolean, 
-      CellInsertMode, 
-      scala.Unit
-    ],
-    pasteFormat: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
-      java.lang.String, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    paste: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress => scala.Unit,
+    pasteCellRange: (activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, PasteOperation, scala.Double, scala.Boolean, scala.Boolean, scala.Boolean, CellInsertMode) => scala.Unit,
+    pasteFormat: (activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, java.lang.String) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSheetPastable = {
-    val __obj = js.Dynamic.literal(acquire = acquire, paste = paste, pasteCellRange = pasteCellRange, pasteFormat = pasteFormat, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), paste = js.Any.fromFunction1(paste), pasteCellRange = js.Any.fromFunction7(pasteCellRange), pasteFormat = js.Any.fromFunction2(pasteFormat), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSheetPastable]
   }

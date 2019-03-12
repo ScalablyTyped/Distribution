@@ -68,9 +68,9 @@ object ^ extends js.Object {
   def resolve(paths: js.Array[java.lang.String]): java.lang.String = js.native
   def root(path: java.lang.String): java.lang.String = js.native
   def split(path: java.lang.String): js.Array[java.lang.String] = js.native
-  def stat(path: java.lang.String): qLib.qMod.QNs.Promise[qDashIoLib.QioFSNs.Stats] = js.native
-  def statFd(fd: scala.Double): qLib.qMod.QNs.Promise[qDashIoLib.QioFSNs.Stats] = js.native
-  def statLink(path: java.lang.String): qLib.qMod.QNs.Promise[qDashIoLib.QioFSNs.Stats] = js.native
+  def stat(path: java.lang.String): qLib.qMod.QNs.Promise[Stats] = js.native
+  def statFd(fd: scala.Double): qLib.qMod.QNs.Promise[Stats] = js.native
+  def statLink(path: java.lang.String): qLib.qMod.QNs.Promise[Stats] = js.native
   def symbolicCopy(source: java.lang.String, target: java.lang.String, `type`: java.lang.String): qLib.qMod.QNs.Promise[scala.Unit] = js.native
   def symbolicLink(target: java.lang.String, link: java.lang.String, `type`: java.lang.String): qLib.qMod.QNs.Promise[scala.Unit] = js.native
   def toObject(path: java.lang.String): org.scalablytyped.runtime.StringDictionary[nodeLib.Buffer] = js.native

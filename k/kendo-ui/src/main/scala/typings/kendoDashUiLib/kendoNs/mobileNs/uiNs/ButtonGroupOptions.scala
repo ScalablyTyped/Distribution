@@ -19,14 +19,14 @@ object ButtonGroupOptions {
     enable: js.UndefOr[scala.Boolean] = js.undefined,
     index: scala.Int | scala.Double = null,
     name: java.lang.String = null,
-    select: js.Function1[/* e */ ButtonGroupSelectEvent, scala.Unit] = null,
+    select: /* e */ ButtonGroupSelectEvent => scala.Unit = null,
     selectOn: java.lang.String = null
   ): ButtonGroupOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (selectOn != null) __obj.updateDynamic("selectOn")(selectOn)
     __obj.asInstanceOf[ButtonGroupOptions]
   }

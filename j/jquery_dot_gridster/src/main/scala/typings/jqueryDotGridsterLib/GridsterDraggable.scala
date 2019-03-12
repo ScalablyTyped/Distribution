@@ -20,23 +20,23 @@ object GridsterDraggable {
   @scala.inline
   def apply(
     distance: scala.Int | scala.Double = null,
-    drag: js.Function2[/* event */ stdLib.Event, /* ui */ GridsterUi, scala.Unit] = null,
+    drag: (/* event */ stdLib.Event, /* ui */ GridsterUi) => scala.Unit = null,
     handle: java.lang.String = null,
     items: js.Any = null,
     limit: js.UndefOr[scala.Boolean] = js.undefined,
     offset_left: scala.Int | scala.Double = null,
-    start: js.Function2[/* event */ stdLib.Event, /* ui */ Anon_Helper, scala.Unit] = null,
-    stop: js.Function2[/* event */ stdLib.Event, /* ui */ Anon_Helper, scala.Unit] = null
+    start: (/* event */ stdLib.Event, /* ui */ Anon_Helper) => scala.Unit = null,
+    stop: (/* event */ stdLib.Event, /* ui */ Anon_Helper) => scala.Unit = null
   ): GridsterDraggable = {
     val __obj = js.Dynamic.literal()
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (drag != null) __obj.updateDynamic("drag")(drag)
+    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction2(drag))
     if (handle != null) __obj.updateDynamic("handle")(handle)
     if (items != null) __obj.updateDynamic("items")(items)
     if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
     if (offset_left != null) __obj.updateDynamic("offset_left")(offset_left.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
     __obj.asInstanceOf[GridsterDraggable]
   }
 }

@@ -16,13 +16,13 @@ trait IFolderDefs extends js.Object {
 object IFolderDefs {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IFolderDef, scala.Unit],
-    Clone: js.Function0[IFolderDefs],
+    Add: (scala.Double, IFolderDef) => scala.Unit,
+    Clone: () => IFolderDefs,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IFolderDef],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => IFolderDef,
+    Remove: scala.Double => scala.Unit
   ): IFolderDefs = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IFolderDefs]
   }

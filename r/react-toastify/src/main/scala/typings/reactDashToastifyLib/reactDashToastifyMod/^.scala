@@ -11,9 +11,9 @@ object ^ extends js.Object {
   val Bounce: reactDashTransitionDashGroupLib.reactDashTransitionDashGroupMod.Transition = js.native
   val Flip: reactDashTransitionDashGroupLib.reactDashTransitionDashGroupMod.Transition = js.native
   val Slide: reactDashTransitionDashGroupLib.reactDashTransitionDashGroupMod.Transition = js.native
-  val ToastContainer: reactLib.reactMod.ReactNs.StatelessComponent[reactDashToastifyLib.reactDashToastifyMod.ToastContainerProps] = js.native
+  val ToastContainer: reactLib.reactMod.ReactNs.StatelessComponent[ToastContainerProps] = js.native
   val Zoom: reactDashTransitionDashGroupLib.reactDashTransitionDashGroupMod.Transition = js.native
-  val toast: reactDashToastifyLib.reactDashToastifyMod.Toast = js.native
-  def cssTransition(options: reactDashToastifyLib.reactDashToastifyMod.CssTransitionOptions): reactDashTransitionDashGroupLib.reactDashTransitionDashGroupMod.Transition = js.native
+  val toast: Toast = js.native
+  def cssTransition(options: CssTransitionOptions): reactDashTransitionDashGroupLib.reactDashTransitionDashGroupMod.Transition = js.native
 }
 

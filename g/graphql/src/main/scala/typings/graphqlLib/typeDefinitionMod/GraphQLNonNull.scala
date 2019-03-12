@@ -34,12 +34,12 @@ trait GraphQLNonNull[T /* <: GraphQLNullableType */] extends js.Object {
 object GraphQLNonNull {
   @scala.inline
   def apply[T /* <: GraphQLNullableType */](
-    inspect: js.Function0[java.lang.String],
+    inspect: () => java.lang.String,
     ofType: T,
-    toJSON: js.Function0[java.lang.String],
-    toString: js.Function0[java.lang.String]
+    toJSON: () => java.lang.String,
+    toString: () => java.lang.String
   ): GraphQLNonNull[T] = {
-    val __obj = js.Dynamic.literal(inspect = inspect, ofType = ofType.asInstanceOf[js.Any], toJSON = toJSON, toString = toString)
+    val __obj = js.Dynamic.literal(inspect = js.Any.fromFunction0(inspect), ofType = ofType.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[GraphQLNonNull[T]]
   }

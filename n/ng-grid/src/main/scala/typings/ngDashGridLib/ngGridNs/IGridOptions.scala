@@ -32,7 +32,7 @@ trait IGridOptions extends js.Object {
     */
   var data: js.UndefOr[js.Any] = js.undefined
   /** Data updated callback, fires every time the data is modified from outside the grid. */
-  var dataUpdated: js.UndefOr[angularLib.angularMod.Global.Function] = js.undefined
+  var dataUpdated: js.UndefOr[js.Function] = js.undefined
   /** Enables cell editing. */
   var enableCellEdit: js.UndefOr[scala.Boolean] = js.undefined
   /** Enables cell selection. */
@@ -128,14 +128,14 @@ trait IGridOptions extends js.Object {
 object IGridOptions {
   @scala.inline
   def apply(
-    afterSelectionChange: js.Function2[/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[js.Any], scala.Unit] = null,
+    afterSelectionChange: (/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[js.Any]) => scala.Unit = null,
     aggregateTemplate: java.lang.String = null,
-    beforeSelectionChange: js.Function2[/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[js.Any], scala.Boolean] = null,
+    beforeSelectionChange: (/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[js.Any]) => scala.Boolean = null,
     checkboxCellTemplate: java.lang.String = null,
     checkboxHeaderTemplate: java.lang.String = null,
     columnDefs: js.Array[IColumnDef] = null,
     data: js.Any = null,
-    dataUpdated: angularLib.angularMod.Global.Function = null,
+    dataUpdated: js.Function = null,
     enableCellEdit: js.UndefOr[scala.Boolean] = js.undefined,
     enableCellSelection: js.UndefOr[scala.Boolean] = js.undefined,
     enableColumnHeavyVirt: js.UndefOr[scala.Boolean] = js.undefined,
@@ -164,7 +164,7 @@ object IGridOptions {
     plugins: js.Array[_] = null,
     rowHeight: scala.Int | scala.Double = null,
     rowTemplate: java.lang.String = null,
-    selectItem: js.Function2[/* idx */ scala.Double, /* state */ scala.Boolean, _] = null,
+    selectItem: (/* idx */ scala.Double, /* state */ scala.Boolean) => _ = null,
     selectWithCheckboxOnly: js.UndefOr[scala.Boolean] = js.undefined,
     selectedItems: js.Array[_] = null,
     showColumnMenu: js.UndefOr[scala.Boolean] = js.undefined,
@@ -178,9 +178,9 @@ object IGridOptions {
     virtualizationThreshold: scala.Int | scala.Double = null
   ): IGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterSelectionChange != null) __obj.updateDynamic("afterSelectionChange")(afterSelectionChange)
+    if (afterSelectionChange != null) __obj.updateDynamic("afterSelectionChange")(js.Any.fromFunction2(afterSelectionChange))
     if (aggregateTemplate != null) __obj.updateDynamic("aggregateTemplate")(aggregateTemplate)
-    if (beforeSelectionChange != null) __obj.updateDynamic("beforeSelectionChange")(beforeSelectionChange)
+    if (beforeSelectionChange != null) __obj.updateDynamic("beforeSelectionChange")(js.Any.fromFunction2(beforeSelectionChange))
     if (checkboxCellTemplate != null) __obj.updateDynamic("checkboxCellTemplate")(checkboxCellTemplate)
     if (checkboxHeaderTemplate != null) __obj.updateDynamic("checkboxHeaderTemplate")(checkboxHeaderTemplate)
     if (columnDefs != null) __obj.updateDynamic("columnDefs")(columnDefs)
@@ -214,7 +214,7 @@ object IGridOptions {
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
     if (rowTemplate != null) __obj.updateDynamic("rowTemplate")(rowTemplate)
-    if (selectItem != null) __obj.updateDynamic("selectItem")(selectItem)
+    if (selectItem != null) __obj.updateDynamic("selectItem")(js.Any.fromFunction2(selectItem))
     if (!js.isUndefined(selectWithCheckboxOnly)) __obj.updateDynamic("selectWithCheckboxOnly")(selectWithCheckboxOnly)
     if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems)
     if (!js.isUndefined(showColumnMenu)) __obj.updateDynamic("showColumnMenu")(showColumnMenu)

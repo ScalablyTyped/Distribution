@@ -26,7 +26,7 @@ object TextAreaProps {
     focusIndicator: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
     name: java.lang.String = null,
-    onChange: js.Function1[/* repeated */ js.Any, _] = null,
+    onChange: /* repeated */ js.Any => _ = null,
     placeholder: java.lang.String = null,
     plain: js.UndefOr[scala.Boolean] = js.undefined,
     resize: grommetLib.grommetLibStrings.vertical | grommetLib.grommetLibStrings.horizontal | scala.Boolean = null,
@@ -37,7 +37,7 @@ object TextAreaProps {
     if (!js.isUndefined(focusIndicator)) __obj.updateDynamic("focusIndicator")(focusIndicator)
     if (id != null) __obj.updateDynamic("id")(id)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
     if (resize != null) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])

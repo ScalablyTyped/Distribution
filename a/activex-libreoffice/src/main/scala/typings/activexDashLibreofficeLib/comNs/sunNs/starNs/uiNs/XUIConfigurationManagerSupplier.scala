@@ -27,12 +27,12 @@ object XUIConfigurationManagerSupplier {
   @scala.inline
   def apply(
     UIConfigurationManager: XUIConfigurationManager,
-    acquire: js.Function0[scala.Unit],
-    getUIConfigurationManager: js.Function0[XUIConfigurationManager],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getUIConfigurationManager: () => XUIConfigurationManager,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XUIConfigurationManagerSupplier = {
-    val __obj = js.Dynamic.literal(UIConfigurationManager = UIConfigurationManager, acquire = acquire, getUIConfigurationManager = getUIConfigurationManager, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(UIConfigurationManager = UIConfigurationManager, acquire = js.Any.fromFunction0(acquire), getUIConfigurationManager = js.Any.fromFunction0(getUIConfigurationManager), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XUIConfigurationManagerSupplier]
   }

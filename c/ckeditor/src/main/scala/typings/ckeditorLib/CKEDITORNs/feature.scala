@@ -22,7 +22,7 @@ object feature {
     contentTransformations: js.Any = null,
     name: java.lang.String = null,
     requiredContent: java.lang.String | style = null,
-    toFeature: js.Function0[feature] = null
+    toFeature: () => feature = null
   ): feature = {
     val __obj = js.Dynamic.literal()
     if (allowedContent != null) __obj.updateDynamic("allowedContent")(allowedContent.asInstanceOf[js.Any])
@@ -30,7 +30,7 @@ object feature {
     if (contentTransformations != null) __obj.updateDynamic("contentTransformations")(contentTransformations)
     if (name != null) __obj.updateDynamic("name")(name)
     if (requiredContent != null) __obj.updateDynamic("requiredContent")(requiredContent.asInstanceOf[js.Any])
-    if (toFeature != null) __obj.updateDynamic("toFeature")(toFeature)
+    if (toFeature != null) __obj.updateDynamic("toFeature")(js.Any.fromFunction0(toFeature))
     __obj.asInstanceOf[feature]
   }
 }

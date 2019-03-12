@@ -20,11 +20,11 @@ trait ASPxClientHintWindow extends js.Object {
 object ASPxClientHintWindow {
   @scala.inline
   def apply(
-    SetContent: js.Function2[js.Object, ASPxClientHintOptions, scala.Unit],
-    SetContentLoading: js.Function0[scala.Unit],
-    UpdatePosition: js.Function0[scala.Unit]
+    SetContent: (js.Object, ASPxClientHintOptions) => scala.Unit,
+    SetContentLoading: () => scala.Unit,
+    UpdatePosition: () => scala.Unit
   ): ASPxClientHintWindow = {
-    val __obj = js.Dynamic.literal(SetContent = SetContent, SetContentLoading = SetContentLoading, UpdatePosition = UpdatePosition)
+    val __obj = js.Dynamic.literal(SetContent = js.Any.fromFunction2(SetContent), SetContentLoading = js.Any.fromFunction0(SetContentLoading), UpdatePosition = js.Any.fromFunction0(UpdatePosition))
   
     __obj.asInstanceOf[ASPxClientHintWindow]
   }

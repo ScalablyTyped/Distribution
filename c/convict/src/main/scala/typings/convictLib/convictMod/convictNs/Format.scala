@@ -14,14 +14,14 @@ trait Format extends js.Object {
 object Format {
   @scala.inline
   def apply(
-    coerce: js.Function1[/* val */ js.Any, _] = null,
+    coerce: /* val */ js.Any => _ = null,
     name: java.lang.String = null,
-    validate: js.Function1[/* val */ js.Any, scala.Unit] = null
+    validate: /* val */ js.Any => scala.Unit = null
   ): Format = {
     val __obj = js.Dynamic.literal()
-    if (coerce != null) __obj.updateDynamic("coerce")(coerce)
+    if (coerce != null) __obj.updateDynamic("coerce")(js.Any.fromFunction1(coerce))
     if (name != null) __obj.updateDynamic("name")(name)
-    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction1(validate))
     __obj.asInstanceOf[Format]
   }
 }

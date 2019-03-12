@@ -337,7 +337,17 @@ object DOMAttributes {
     onTouchEnd: TouchEventHandler[T] = null,
     onTouchEndCapture: TouchEventHandler[T] = null,
     onTouchMove: TouchEventHandler[T] = null,
-    onTouchMoveCapture: TouchEventHandler[T] = null
+    onTouchMoveCapture: TouchEventHandler[T] = null,
+    onTouchStart: TouchEventHandler[T] = null,
+    onTouchStartCapture: TouchEventHandler[T] = null,
+    onTransitionEnd: TransitionEventHandler[T] = null,
+    onTransitionEndCapture: TransitionEventHandler[T] = null,
+    onVolumeChange: ReactEventHandler[T] = null,
+    onVolumeChangeCapture: ReactEventHandler[T] = null,
+    onWaiting: ReactEventHandler[T] = null,
+    onWaitingCapture: ReactEventHandler[T] = null,
+    onWheel: WheelEventHandler[T] = null,
+    onWheelCapture: WheelEventHandler[T] = null
   ): DOMAttributes[T] = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
@@ -490,6 +500,16 @@ object DOMAttributes {
     if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(onTouchEndCapture)
     if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
     if (onTouchMoveCapture != null) __obj.updateDynamic("onTouchMoveCapture")(onTouchMoveCapture)
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (onTouchStartCapture != null) __obj.updateDynamic("onTouchStartCapture")(onTouchStartCapture)
+    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(onTransitionEnd)
+    if (onTransitionEndCapture != null) __obj.updateDynamic("onTransitionEndCapture")(onTransitionEndCapture)
+    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(onVolumeChange)
+    if (onVolumeChangeCapture != null) __obj.updateDynamic("onVolumeChangeCapture")(onVolumeChangeCapture)
+    if (onWaiting != null) __obj.updateDynamic("onWaiting")(onWaiting)
+    if (onWaitingCapture != null) __obj.updateDynamic("onWaitingCapture")(onWaitingCapture)
+    if (onWheel != null) __obj.updateDynamic("onWheel")(onWheel)
+    if (onWheelCapture != null) __obj.updateDynamic("onWheelCapture")(onWheelCapture)
     __obj.asInstanceOf[DOMAttributes[T]]
   }
 }

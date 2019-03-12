@@ -48,8 +48,8 @@ object DecorateRequestOptions {
     interceptors_ : js.Array[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Interceptor] = null,
     jar: requestLib.requestMod.requestNs.CookieJar | scala.Boolean = null,
     json: js.Any = null,
-    jsonReplacer: js.Function2[/* key */ java.lang.String, /* value */ js.Any, _] = null,
-    jsonReviver: js.Function2[/* key */ java.lang.String, /* value */ js.Any, _] = null,
+    jsonReplacer: (/* key */ java.lang.String, /* value */ js.Any) => _ = null,
+    jsonReviver: (/* key */ java.lang.String, /* value */ js.Any) => _ = null,
     key: nodeLib.Buffer = null,
     localAddress: java.lang.String = null,
     maxRedirects: scala.Int | scala.Double = null,
@@ -106,8 +106,8 @@ object DecorateRequestOptions {
     if (interceptors_ != null) __obj.updateDynamic("interceptors_")(interceptors_)
     if (jar != null) __obj.updateDynamic("jar")(jar.asInstanceOf[js.Any])
     if (json != null) __obj.updateDynamic("json")(json)
-    if (jsonReplacer != null) __obj.updateDynamic("jsonReplacer")(jsonReplacer)
-    if (jsonReviver != null) __obj.updateDynamic("jsonReviver")(jsonReviver)
+    if (jsonReplacer != null) __obj.updateDynamic("jsonReplacer")(js.Any.fromFunction2(jsonReplacer))
+    if (jsonReviver != null) __obj.updateDynamic("jsonReviver")(js.Any.fromFunction2(jsonReviver))
     if (key != null) __obj.updateDynamic("key")(key)
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
     if (maxRedirects != null) __obj.updateDynamic("maxRedirects")(maxRedirects.asInstanceOf[js.Any])

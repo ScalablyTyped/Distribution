@@ -24,12 +24,8 @@ trait SinonMock extends js.Object {
 
 object SinonMock {
   @scala.inline
-  def apply(
-    expects: js.Function1[java.lang.String, SinonExpectation],
-    restore: js.Function0[scala.Unit],
-    verify: js.Function0[scala.Unit]
-  ): SinonMock = {
-    val __obj = js.Dynamic.literal(expects = expects, restore = restore, verify = verify)
+  def apply(expects: java.lang.String => SinonExpectation, restore: () => scala.Unit, verify: () => scala.Unit): SinonMock = {
+    val __obj = js.Dynamic.literal(expects = js.Any.fromFunction1(expects), restore = js.Any.fromFunction0(restore), verify = js.Any.fromFunction0(verify))
   
     __obj.asInstanceOf[SinonMock]
   }

@@ -15,12 +15,12 @@ trait FormatOptions extends js.Object {
 object FormatOptions {
   @scala.inline
   def apply(
-    atom: js.Function0[jodataLib.jo],
-    custom: js.Function1[java.lang.String, jodataLib.jo],
-    json: js.Function0[jodataLib.jo],
-    xml: js.Function0[jodataLib.jo]
+    atom: () => jodataLib.jo,
+    custom: java.lang.String => jodataLib.jo,
+    json: () => jodataLib.jo,
+    xml: () => jodataLib.jo
   ): FormatOptions = {
-    val __obj = js.Dynamic.literal(atom = atom, custom = custom, json = json, xml = xml)
+    val __obj = js.Dynamic.literal(atom = js.Any.fromFunction0(atom), custom = js.Any.fromFunction1(custom), json = js.Any.fromFunction0(json), xml = js.Any.fromFunction0(xml))
   
     __obj.asInstanceOf[FormatOptions]
   }

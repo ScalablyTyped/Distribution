@@ -142,7 +142,7 @@ trait NativeKeyboardShowOptions extends js.Object {
 object NativeKeyboardShowOptions {
   @scala.inline
   def apply(
-    onSubmit: js.Function1[java.lang.String, scala.Unit],
+    onSubmit: java.lang.String => scala.Unit,
     animated: js.UndefOr[scala.Boolean] = js.undefined,
     appearance: java.lang.String = null,
     autoscrollElement: js.Any = null,
@@ -151,11 +151,11 @@ object NativeKeyboardShowOptions {
     keepOpenAfterSubmit: js.UndefOr[scala.Boolean] = js.undefined,
     leftButton: LeftButtonOptions = null,
     maxChars: scala.Int | scala.Double = null,
-    onKeyboardDidHide: js.Function0[scala.Unit] = null,
-    onKeyboardDidShow: js.Function0[scala.Unit] = null,
-    onKeyboardWillHide: js.Function0[scala.Unit] = null,
-    onKeyboardWillShow: js.Function0[scala.Unit] = null,
-    onTextChanged: js.Function1[/* text */ java.lang.String, scala.Unit] = null,
+    onKeyboardDidHide: () => scala.Unit = null,
+    onKeyboardDidShow: () => scala.Unit = null,
+    onKeyboardWillHide: () => scala.Unit = null,
+    onKeyboardWillShow: () => scala.Unit = null,
+    onTextChanged: /* text */ java.lang.String => scala.Unit = null,
     placeholder: java.lang.String = null,
     placeholderColor: java.lang.String = null,
     rightButton: ButtonOptions = null,
@@ -168,7 +168,7 @@ object NativeKeyboardShowOptions {
     textViewBorderColor: java.lang.String = null,
     `type`: java.lang.String = null
   ): NativeKeyboardShowOptions = {
-    val __obj = js.Dynamic.literal(onSubmit = onSubmit)
+    val __obj = js.Dynamic.literal(onSubmit = js.Any.fromFunction1(onSubmit))
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
     if (appearance != null) __obj.updateDynamic("appearance")(appearance)
     if (autoscrollElement != null) __obj.updateDynamic("autoscrollElement")(autoscrollElement)
@@ -177,11 +177,11 @@ object NativeKeyboardShowOptions {
     if (!js.isUndefined(keepOpenAfterSubmit)) __obj.updateDynamic("keepOpenAfterSubmit")(keepOpenAfterSubmit)
     if (leftButton != null) __obj.updateDynamic("leftButton")(leftButton)
     if (maxChars != null) __obj.updateDynamic("maxChars")(maxChars.asInstanceOf[js.Any])
-    if (onKeyboardDidHide != null) __obj.updateDynamic("onKeyboardDidHide")(onKeyboardDidHide)
-    if (onKeyboardDidShow != null) __obj.updateDynamic("onKeyboardDidShow")(onKeyboardDidShow)
-    if (onKeyboardWillHide != null) __obj.updateDynamic("onKeyboardWillHide")(onKeyboardWillHide)
-    if (onKeyboardWillShow != null) __obj.updateDynamic("onKeyboardWillShow")(onKeyboardWillShow)
-    if (onTextChanged != null) __obj.updateDynamic("onTextChanged")(onTextChanged)
+    if (onKeyboardDidHide != null) __obj.updateDynamic("onKeyboardDidHide")(js.Any.fromFunction0(onKeyboardDidHide))
+    if (onKeyboardDidShow != null) __obj.updateDynamic("onKeyboardDidShow")(js.Any.fromFunction0(onKeyboardDidShow))
+    if (onKeyboardWillHide != null) __obj.updateDynamic("onKeyboardWillHide")(js.Any.fromFunction0(onKeyboardWillHide))
+    if (onKeyboardWillShow != null) __obj.updateDynamic("onKeyboardWillShow")(js.Any.fromFunction0(onKeyboardWillShow))
+    if (onTextChanged != null) __obj.updateDynamic("onTextChanged")(js.Any.fromFunction1(onTextChanged))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (placeholderColor != null) __obj.updateDynamic("placeholderColor")(placeholderColor)
     if (rightButton != null) __obj.updateDynamic("rightButton")(rightButton)

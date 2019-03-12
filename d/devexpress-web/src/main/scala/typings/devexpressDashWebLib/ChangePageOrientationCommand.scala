@@ -22,8 +22,8 @@ trait ChangePageOrientationCommand extends CommandBase {
 
 object ChangePageOrientationCommand {
   @scala.inline
-  def apply(execute: js.Function1[js.Any, scala.Boolean], getState: js.Function0[js.Any]): ChangePageOrientationCommand = {
-    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  def apply(execute: js.Any => scala.Boolean, getState: () => js.Any): ChangePageOrientationCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
   
     __obj.asInstanceOf[ChangePageOrientationCommand]
   }

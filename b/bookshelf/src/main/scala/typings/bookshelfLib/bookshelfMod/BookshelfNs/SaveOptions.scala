@@ -20,7 +20,8 @@ object SaveOptions {
     method: java.lang.String = null,
     patch: js.UndefOr[scala.Boolean] = js.undefined,
     require: js.UndefOr[scala.Boolean] = js.undefined,
-    transacting: knexLib.knexMod.KnexNs.Transaction = null
+    transacting: knexLib.knexMod.KnexNs.Transaction = null,
+    withSchema: java.lang.String = null
   ): SaveOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
@@ -29,6 +30,7 @@ object SaveOptions {
     if (!js.isUndefined(patch)) __obj.updateDynamic("patch")(patch)
     if (!js.isUndefined(require)) __obj.updateDynamic("require")(require)
     if (transacting != null) __obj.updateDynamic("transacting")(transacting)
+    if (withSchema != null) __obj.updateDynamic("withSchema")(withSchema)
     __obj.asInstanceOf[SaveOptions]
   }
 }

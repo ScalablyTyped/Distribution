@@ -25,7 +25,7 @@ object IRotationalSpringOptions {
     period: scala.Int | scala.Double = null,
     stiffness: scala.Int | scala.Double = null,
     targets: js.Array[_] = null,
-    `type`: js.Function2[/* dist */ js.Any, /* rMax */ js.Any, scala.Double] = null
+    `type`: (/* dist */ js.Any, /* rMax */ js.Any) => scala.Double = null
   ): IRotationalSpringOptions = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor)
@@ -35,7 +35,7 @@ object IRotationalSpringOptions {
     if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
     if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
     if (targets != null) __obj.updateDynamic("targets")(targets)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(js.Any.fromFunction2(`type`))
     __obj.asInstanceOf[IRotationalSpringOptions]
   }
 }

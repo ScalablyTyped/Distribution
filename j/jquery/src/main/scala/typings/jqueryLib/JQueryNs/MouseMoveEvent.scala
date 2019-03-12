@@ -39,20 +39,20 @@ object MouseMoveEvent {
     delegateTarget: TDelegateTarget,
     detail: scala.Double,
     eventPhase: scala.Double,
-    isDefaultPrevented: js.Function0[scala.Boolean],
-    isImmediatePropagationStopped: js.Function0[scala.Boolean],
-    isPropagationStopped: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
+    isImmediatePropagationStopped: () => scala.Boolean,
+    isPropagationStopped: () => scala.Boolean,
     metaKey: scala.Boolean,
     offsetX: scala.Double,
     offsetY: scala.Double,
     pageX: scala.Double,
     pageY: scala.Double,
-    preventDefault: js.Function0[scala.Unit],
+    preventDefault: () => scala.Unit,
     screenX: scala.Double,
     screenY: scala.Double,
     shiftKey: scala.Boolean,
-    stopImmediatePropagation: js.Function0[scala.Unit],
-    stopPropagation: js.Function0[scala.Unit],
+    stopImmediatePropagation: () => scala.Unit,
+    stopPropagation: () => scala.Unit,
     target: TTarget,
     timeStamp: scala.Double,
     toElement: stdLib.Element,
@@ -73,7 +73,7 @@ object MouseMoveEvent {
     targetTouches: js.UndefOr[scala.Nothing] = js.undefined,
     touches: js.UndefOr[scala.Nothing] = js.undefined
   ): MouseMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-    val __obj = js.Dynamic.literal(altKey = altKey, bubbles = bubbles, button = button, buttons = buttons, cancelable = cancelable, clientX = clientX, clientY = clientY, ctrlKey = ctrlKey, currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail, eventPhase = eventPhase, isDefaultPrevented = isDefaultPrevented, isImmediatePropagationStopped = isImmediatePropagationStopped, isPropagationStopped = isPropagationStopped, metaKey = metaKey, offsetX = offsetX, offsetY = offsetY, pageX = pageX, pageY = pageY, preventDefault = preventDefault, screenX = screenX, screenY = screenY, shiftKey = shiftKey, stopImmediatePropagation = stopImmediatePropagation, stopPropagation = stopPropagation, target = target.asInstanceOf[js.Any], timeStamp = timeStamp, toElement = toElement, view = view, which = which)
+    val __obj = js.Dynamic.literal(altKey = altKey, bubbles = bubbles, button = button, buttons = buttons, cancelable = cancelable, clientX = clientX, clientY = clientY, ctrlKey = ctrlKey, currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail, eventPhase = eventPhase, isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), metaKey = metaKey, offsetX = offsetX, offsetY = offsetY, pageX = pageX, pageY = pageY, preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX, screenY = screenY, shiftKey = shiftKey, stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp, toElement = toElement, view = view, which = which)
     __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(changedTouches)) __obj.updateDynamic("changedTouches")(changedTouches)
     if (!js.isUndefined(char)) __obj.updateDynamic("char")(char)

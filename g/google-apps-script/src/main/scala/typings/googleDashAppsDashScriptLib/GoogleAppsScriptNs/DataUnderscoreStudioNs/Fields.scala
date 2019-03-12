@@ -21,18 +21,18 @@ trait Fields extends js.Object {
 object Fields {
   @scala.inline
   def apply(
-    asArray: js.Function0[js.Array[Field]],
-    build: js.Function0[js.Array[js.Object]],
-    forIds: js.Function1[js.Array[java.lang.String], Fields],
-    getDefaultDimension: js.Function0[Field],
-    getDefaultMetric: js.Function0[Field],
-    getFieldById: js.Function1[java.lang.String, Field],
-    newDimension: js.Function0[Field],
-    newMetric: js.Function0[Field],
-    setDefaultDimension: js.Function1[java.lang.String, scala.Unit],
-    setDefaultMetric: js.Function1[java.lang.String, scala.Unit]
+    asArray: () => js.Array[Field],
+    build: () => js.Array[js.Object],
+    forIds: js.Array[java.lang.String] => Fields,
+    getDefaultDimension: () => Field,
+    getDefaultMetric: () => Field,
+    getFieldById: java.lang.String => Field,
+    newDimension: () => Field,
+    newMetric: () => Field,
+    setDefaultDimension: java.lang.String => scala.Unit,
+    setDefaultMetric: java.lang.String => scala.Unit
   ): Fields = {
-    val __obj = js.Dynamic.literal(asArray = asArray, build = build, forIds = forIds, getDefaultDimension = getDefaultDimension, getDefaultMetric = getDefaultMetric, getFieldById = getFieldById, newDimension = newDimension, newMetric = newMetric, setDefaultDimension = setDefaultDimension, setDefaultMetric = setDefaultMetric)
+    val __obj = js.Dynamic.literal(asArray = js.Any.fromFunction0(asArray), build = js.Any.fromFunction0(build), forIds = js.Any.fromFunction1(forIds), getDefaultDimension = js.Any.fromFunction0(getDefaultDimension), getDefaultMetric = js.Any.fromFunction0(getDefaultMetric), getFieldById = js.Any.fromFunction1(getFieldById), newDimension = js.Any.fromFunction0(newDimension), newMetric = js.Any.fromFunction0(newMetric), setDefaultDimension = js.Any.fromFunction1(setDefaultDimension), setDefaultMetric = js.Any.fromFunction1(setDefaultMetric))
   
     __obj.asInstanceOf[Fields]
   }

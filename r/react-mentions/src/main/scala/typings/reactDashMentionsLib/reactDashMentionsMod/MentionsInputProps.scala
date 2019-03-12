@@ -14,12 +14,12 @@ trait MentionsInputProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var displayTransform: js.UndefOr[DisplayTransformFunc] = js.undefined
   var inputRef: js.UndefOr[
-    reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLTextAreaElement] | reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLInputElement]
+    reactLib.reactMod.ReactNs.RefObject[stdLib.HTMLTextAreaElement] | reactLib.reactMod.ReactNs.RefObject[stdLib.HTMLInputElement]
   ] = js.undefined
   var markup: js.UndefOr[java.lang.String] = js.undefined
   var onBlur: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLInputElement] | reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLTextAreaElement], 
+      /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLInputElement] | reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLTextAreaElement], 
       /* clickedSuggestion */ scala.Boolean, 
       scala.Unit
     ]
@@ -27,7 +27,7 @@ trait MentionsInputProps extends js.Object {
   var onChange: js.UndefOr[OnChangeHandlerFunc] = js.undefined
   var onKeyDown: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLTextAreaElement] | reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLInputElement], 
+      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLTextAreaElement] | reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLInputElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -42,7 +42,7 @@ trait MentionsInputProps extends js.Object {
     */
   var singleLine: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[js.Any] = js.undefined
-  var suggestionsPortalHost: js.UndefOr[reactLib.Element] = js.undefined
+  var suggestionsPortalHost: js.UndefOr[stdLib.Element] = js.undefined
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -53,24 +53,17 @@ object MentionsInputProps {
     allowSpaceInQuery: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     displayTransform: DisplayTransformFunc = null,
-    inputRef: reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLTextAreaElement] | reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLInputElement] = null,
+    inputRef: reactLib.reactMod.ReactNs.RefObject[stdLib.HTMLTextAreaElement] | reactLib.reactMod.ReactNs.RefObject[stdLib.HTMLInputElement] = null,
     markup: java.lang.String = null,
-    onBlur: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLInputElement] | reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLTextAreaElement], 
-      /* clickedSuggestion */ scala.Boolean, 
-      scala.Unit
-    ] = null,
+    onBlur: (/* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLInputElement] | reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLTextAreaElement], /* clickedSuggestion */ scala.Boolean) => scala.Unit = null,
     onChange: OnChangeHandlerFunc = null,
-    onKeyDown: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLTextAreaElement] | reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLInputElement], 
-      scala.Unit
-    ] = null,
-    onSelect: js.Function1[/* event */ reactLib.reactMod.ReactNs.UIEvent[reactLib.Element], scala.Unit] = null,
+    onKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLTextAreaElement] | reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLInputElement] => scala.Unit = null,
+    onSelect: /* event */ reactLib.reactMod.ReactNs.UIEvent[reactLib.Element] => scala.Unit = null,
     placeholder: java.lang.String = null,
     regex: stdLib.RegExp = null,
     singleLine: js.UndefOr[scala.Boolean] = js.undefined,
     style: js.Any = null,
-    suggestionsPortalHost: reactLib.Element = null,
+    suggestionsPortalHost: stdLib.Element = null,
     value: java.lang.String = null
   ): MentionsInputProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
@@ -79,10 +72,10 @@ object MentionsInputProps {
     if (displayTransform != null) __obj.updateDynamic("displayTransform")(displayTransform)
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (markup != null) __obj.updateDynamic("markup")(markup)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (regex != null) __obj.updateDynamic("regex")(regex)
     if (!js.isUndefined(singleLine)) __obj.updateDynamic("singleLine")(singleLine)

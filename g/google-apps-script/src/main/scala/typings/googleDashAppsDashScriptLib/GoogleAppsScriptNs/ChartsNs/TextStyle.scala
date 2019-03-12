@@ -14,11 +14,11 @@ trait TextStyle extends js.Object {
 object TextStyle {
   @scala.inline
   def apply(
-    getColor: js.Function0[java.lang.String],
-    getFontName: js.Function0[java.lang.String],
-    getFontSize: js.Function0[stdLib.Number]
+    getColor: () => java.lang.String,
+    getFontName: () => java.lang.String,
+    getFontSize: () => stdLib.Number
   ): TextStyle = {
-    val __obj = js.Dynamic.literal(getColor = getColor, getFontName = getFontName, getFontSize = getFontSize)
+    val __obj = js.Dynamic.literal(getColor = js.Any.fromFunction0(getColor), getFontName = js.Any.fromFunction0(getFontName), getFontSize = js.Any.fromFunction0(getFontSize))
   
     __obj.asInstanceOf[TextStyle]
   }

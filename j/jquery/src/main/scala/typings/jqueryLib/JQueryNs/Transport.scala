@@ -13,10 +13,10 @@ trait Transport extends js.Object {
 object Transport {
   @scala.inline
   def apply(
-    abort: js.Function0[scala.Unit],
-    send: js.Function2[PlainObject[_], jqueryLib.JQueryNs.TransportNs.SuccessCallback, scala.Unit]
+    abort: () => scala.Unit,
+    send: (PlainObject[_], jqueryLib.JQueryNs.TransportNs.SuccessCallback) => scala.Unit
   ): Transport = {
-    val __obj = js.Dynamic.literal(abort = abort, send = send)
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), send = js.Any.fromFunction2(send))
   
     __obj.asInstanceOf[Transport]
   }

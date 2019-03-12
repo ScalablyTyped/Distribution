@@ -70,19 +70,19 @@ object XSimpleRegistry {
   def apply(
     RootKey: XRegistryKey,
     URL: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    close: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    getRootKey: js.Function0[XRegistryKey],
-    getURL: js.Function0[java.lang.String],
-    isReadOnly: js.Function0[scala.Boolean],
-    isValid: js.Function0[scala.Boolean],
-    mergeKey: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    open: js.Function3[java.lang.String, scala.Boolean, scala.Boolean, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    close: () => scala.Unit,
+    destroy: () => scala.Unit,
+    getRootKey: () => XRegistryKey,
+    getURL: () => java.lang.String,
+    isReadOnly: () => scala.Boolean,
+    isValid: () => scala.Boolean,
+    mergeKey: (java.lang.String, java.lang.String) => scala.Unit,
+    open: (java.lang.String, scala.Boolean, scala.Boolean) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSimpleRegistry = {
-    val __obj = js.Dynamic.literal(RootKey = RootKey, URL = URL, acquire = acquire, close = close, destroy = destroy, getRootKey = getRootKey, getURL = getURL, isReadOnly = isReadOnly, isValid = isValid, mergeKey = mergeKey, open = open, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(RootKey = RootKey, URL = URL, acquire = js.Any.fromFunction0(acquire), close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), getRootKey = js.Any.fromFunction0(getRootKey), getURL = js.Any.fromFunction0(getURL), isReadOnly = js.Any.fromFunction0(isReadOnly), isValid = js.Any.fromFunction0(isValid), mergeKey = js.Any.fromFunction2(mergeKey), open = js.Any.fromFunction3(open), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSimpleRegistry]
   }

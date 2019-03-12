@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class EffectParameters protected () extends js.Object {
   var Amount: scala.Double = js.native
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   val Color2: ColorFormat = js.native
   var Direction: MsoAnimDirection = js.native
   var FontName: java.lang.String = js.native

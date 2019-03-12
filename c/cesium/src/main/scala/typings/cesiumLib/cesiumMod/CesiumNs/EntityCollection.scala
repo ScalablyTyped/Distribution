@@ -26,23 +26,23 @@ trait EntityCollection extends js.Object {
 object EntityCollection {
   @scala.inline
   def apply(
-    add: js.Function1[Entity, Entity],
+    add: Entity => Entity,
     collectionChanged: Event,
-    computeAvailability: js.Function0[TimeInterval],
-    contains: js.Function1[Entity, scala.Boolean],
-    getById: js.Function1[java.lang.String, Entity],
-    getOrCreateEntity: js.Function1[java.lang.String, Entity],
+    computeAvailability: () => TimeInterval,
+    contains: Entity => scala.Boolean,
+    getById: java.lang.String => Entity,
+    getOrCreateEntity: java.lang.String => Entity,
     id: java.lang.String,
     owner: DataSource | CompositeEntityCollection,
-    remove: js.Function1[Entity, scala.Boolean],
-    removeAll: js.Function0[scala.Unit],
-    removeById: js.Function1[java.lang.String, scala.Boolean],
-    resumeEvents: js.Function0[scala.Unit],
+    remove: Entity => scala.Boolean,
+    removeAll: () => scala.Unit,
+    removeById: java.lang.String => scala.Boolean,
+    resumeEvents: () => scala.Unit,
     show: scala.Boolean,
-    suspendEvents: js.Function0[scala.Unit],
+    suspendEvents: () => scala.Unit,
     values: js.Array[Entity]
   ): EntityCollection = {
-    val __obj = js.Dynamic.literal(add = add, collectionChanged = collectionChanged, computeAvailability = computeAvailability, contains = contains, getById = getById, getOrCreateEntity = getOrCreateEntity, id = id, owner = owner.asInstanceOf[js.Any], remove = remove, removeAll = removeAll, removeById = removeById, resumeEvents = resumeEvents, show = show, suspendEvents = suspendEvents, values = values)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), collectionChanged = collectionChanged, computeAvailability = js.Any.fromFunction0(computeAvailability), contains = js.Any.fromFunction1(contains), getById = js.Any.fromFunction1(getById), getOrCreateEntity = js.Any.fromFunction1(getOrCreateEntity), id = id, owner = owner.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), removeAll = js.Any.fromFunction0(removeAll), removeById = js.Any.fromFunction1(removeById), resumeEvents = js.Any.fromFunction0(resumeEvents), show = show, suspendEvents = js.Any.fromFunction0(suspendEvents), values = values)
   
     __obj.asInstanceOf[EntityCollection]
   }

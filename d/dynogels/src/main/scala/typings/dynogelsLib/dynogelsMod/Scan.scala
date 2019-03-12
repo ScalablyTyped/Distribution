@@ -10,7 +10,7 @@ trait Scan extends js.Object {
   def addFilterCondition(condition: js.Any): Scan = js.native
   def attributes(attrs: js.Any): Scan = js.native
   def exec(): nodeLib.streamMod.Readable = js.native
-  def exec(callback: js.Function2[/* err */ nodeLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
+  def exec(callback: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
   def expressionAttributeNames(data: js.Any): Scan = js.native
   def expressionAttributeValues(data: js.Any): Scan = js.native
   def filterExpression(expression: js.Any): Scan = js.native

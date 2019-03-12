@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation._
 object glDashReactDashDomLibStrings {
   @js.native
   sealed trait `image/bmp`
-    extends glDashReactDashDomLib.glviewdomMod.SupportedImage
+    extends glDashReactDashDomLib.gLViewDOMMod.SupportedImage
   
   @js.native
   sealed trait `image/ico`
-    extends glDashReactDashDomLib.glviewdomMod.SupportedImage
+    extends glDashReactDashDomLib.gLViewDOMMod.SupportedImage
   
   @js.native
   sealed trait `image/jpeg`
-    extends glDashReactDashDomLib.glviewdomMod.SupportedImage
+    extends glDashReactDashDomLib.gLViewDOMMod.SupportedImage
   
   @js.native
   sealed trait `image/png`
-    extends glDashReactDashDomLib.glviewdomMod.SupportedImage
+    extends glDashReactDashDomLib.gLViewDOMMod.SupportedImage
   
   @js.native
   sealed trait `image/webp`
-    extends glDashReactDashDomLib.glviewdomMod.SupportedImage
+    extends glDashReactDashDomLib.gLViewDOMMod.SupportedImage
   
   @scala.inline
   def `image/bmp`: `image/bmp` = "image/bmp".asInstanceOf[`image/bmp`]

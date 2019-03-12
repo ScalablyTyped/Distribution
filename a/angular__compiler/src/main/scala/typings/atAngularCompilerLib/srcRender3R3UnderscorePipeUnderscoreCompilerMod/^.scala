@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/render3/r3_pipe_compiler", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def compilePipeFromMetadata(metadata: atAngularCompilerLib.srcRender3R3UnderscorePipeUnderscoreCompilerMod.R3PipeMetadata): atAngularCompilerLib.Anon_Expression = js.native
+  def compilePipeFromMetadata(metadata: R3PipeMetadata): atAngularCompilerLib.Anon_Expression = js.native
   def compilePipeFromRender2(
     outputCtx: atAngularCompilerLib.srcUtilMod.OutputContext,
     pipe: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompilePipeMetadata,

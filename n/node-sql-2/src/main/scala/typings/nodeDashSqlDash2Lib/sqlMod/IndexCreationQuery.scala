@@ -17,15 +17,15 @@ trait IndexCreationQuery extends Executable {
 object IndexCreationQuery {
   @scala.inline
   def apply(
-    fulltext: js.Function0[IndexCreationQuery],
-    on: js.Function1[/* repeated */ (Column[_, _]) | OrderByValueNode, IndexCreationQuery],
-    spatial: js.Function0[IndexCreationQuery],
-    toQuery: js.Function0[QueryLike],
-    unique: js.Function0[IndexCreationQuery],
-    using: js.Function1[java.lang.String, IndexCreationQuery],
-    withParser: js.Function1[java.lang.String, IndexCreationQuery]
+    fulltext: () => IndexCreationQuery,
+    on: /* repeated */ (Column[_, _]) | OrderByValueNode => IndexCreationQuery,
+    spatial: () => IndexCreationQuery,
+    toQuery: () => QueryLike,
+    unique: () => IndexCreationQuery,
+    using: java.lang.String => IndexCreationQuery,
+    withParser: java.lang.String => IndexCreationQuery
   ): IndexCreationQuery = {
-    val __obj = js.Dynamic.literal(fulltext = fulltext, on = on, spatial = spatial, toQuery = toQuery, unique = unique, using = using, withParser = withParser)
+    val __obj = js.Dynamic.literal(fulltext = js.Any.fromFunction0(fulltext), on = js.Any.fromFunction1(on), spatial = js.Any.fromFunction0(spatial), toQuery = js.Any.fromFunction0(toQuery), unique = js.Any.fromFunction0(unique), using = js.Any.fromFunction1(using), withParser = js.Any.fromFunction1(withParser))
   
     __obj.asInstanceOf[IndexCreationQuery]
   }

@@ -25,11 +25,11 @@ object Options {
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     key: java.lang.String | scala.Boolean = null,
     moreUsing: java.lang.String = null,
-    onDeselect: js.Function1[/* el */ stdLib.Element, scala.Unit] = null,
-    onSelect: js.Function1[/* el */ stdLib.Element, scala.Unit] = null,
+    onDeselect: /* el */ stdLib.Element => scala.Unit = null,
+    onSelect: /* el */ stdLib.Element => scala.Unit = null,
     selectedClass: java.lang.String = null,
-    start: js.Function1[/* e */ stdLib.Event, scala.Unit] = null,
-    stop: js.Function1[/* e */ stdLib.Event, scala.Unit] = null,
+    start: /* e */ stdLib.Event => scala.Unit = null,
+    stop: /* e */ stdLib.Event => scala.Unit = null,
     zone: java.lang.String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
@@ -37,11 +37,11 @@ object Options {
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (moreUsing != null) __obj.updateDynamic("moreUsing")(moreUsing)
-    if (onDeselect != null) __obj.updateDynamic("onDeselect")(onDeselect)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onDeselect != null) __obj.updateDynamic("onDeselect")(js.Any.fromFunction1(onDeselect))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (selectedClass != null) __obj.updateDynamic("selectedClass")(selectedClass)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
     if (zone != null) __obj.updateDynamic("zone")(zone)
     __obj.asInstanceOf[Options]
   }

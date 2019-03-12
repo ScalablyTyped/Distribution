@@ -33,22 +33,9 @@ trait Anon_Cb
 object Anon_Cb {
   @scala.inline
   def apply(
-    onConnect: js.Function2[
-      socketDotIoLib.socketDotIoMod.SocketIONs.Server, 
-      socketDotIoLib.socketDotIoMod.SocketIONs.Socket, 
-      scala.Unit
-    ],
-    onDisconnect: js.Function2[
-      socketDotIoLib.socketDotIoMod.SocketIONs.Server, 
-      socketDotIoLib.socketDotIoMod.SocketIONs.Socket, 
-      scala.Unit
-    ],
-    use: js.Function3[
-      socketDotIoLib.socketDotIoMod.SocketIONs.Server, 
-      socketDotIoLib.socketDotIoMod.SocketIONs.Socket, 
-      js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit], 
-      scala.Unit
-    ],
+    onConnect: (socketDotIoLib.socketDotIoMod.SocketIONs.Server, socketDotIoLib.socketDotIoMod.SocketIONs.Socket) => scala.Unit,
+    onDisconnect: (socketDotIoLib.socketDotIoMod.SocketIONs.Server, socketDotIoLib.socketDotIoMod.SocketIONs.Socket) => scala.Unit,
+    use: (socketDotIoLib.socketDotIoMod.SocketIONs.Server, socketDotIoLib.socketDotIoMod.SocketIONs.Socket, js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit]) => scala.Unit,
     StringDictionary: /* eventHandler */ org.scalablytyped.runtime.StringDictionary[
       js.Function4[
         /* io */ socketDotIoLib.socketDotIoMod.SocketIONs.Server, 
@@ -59,7 +46,7 @@ object Anon_Cb {
       ]
     ] = null
   ): Anon_Cb = {
-    val __obj = js.Dynamic.literal(onConnect = onConnect, onDisconnect = onDisconnect, use = use)
+    val __obj = js.Dynamic.literal(onConnect = js.Any.fromFunction2(onConnect), onDisconnect = js.Any.fromFunction2(onDisconnect), use = js.Any.fromFunction3(use))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Cb]
   }

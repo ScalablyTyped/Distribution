@@ -16,11 +16,11 @@ object ^ extends js.Object {
     * @template S The type of state to be held by the store.
     * @template DispatchExts The additional Dispatch signatures for the middlewares applied.
     */
-  def default[S, DispatchExts](): reduxDashMockDashStoreLib.reduxDashMockDashStoreMod.MockStoreCreator[S, DispatchExts] = js.native
+  def default[S, DispatchExts](): MockStoreCreator[S, DispatchExts] = js.native
   def default[S, DispatchExts](
     middlewares: js.Array[
       reduxLib.reduxMod.Middleware[js.Object, _, reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.AnyAction]]
     ]
-  ): reduxDashMockDashStoreLib.reduxDashMockDashStoreMod.MockStoreCreator[S, DispatchExts] = js.native
+  ): MockStoreCreator[S, DispatchExts] = js.native
 }
 

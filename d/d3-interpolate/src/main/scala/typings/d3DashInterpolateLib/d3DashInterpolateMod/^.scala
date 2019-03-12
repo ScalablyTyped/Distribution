@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("d3-interpolate", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val interpolateCubehelix: d3DashInterpolateLib.d3DashInterpolateMod.ColorGammaInterpolationFactory = js.native
-  val interpolateCubehelixLong: d3DashInterpolateLib.d3DashInterpolateMod.ColorGammaInterpolationFactory = js.native
-  val interpolateRgb: d3DashInterpolateLib.d3DashInterpolateMod.ColorGammaInterpolationFactory = js.native
+  val interpolateCubehelix: ColorGammaInterpolationFactory = js.native
+  val interpolateCubehelixLong: ColorGammaInterpolationFactory = js.native
+  val interpolateRgb: ColorGammaInterpolationFactory = js.native
   def interpolate(
     a: d3DashColorLib.d3DashColorMod.ColorCommonInstance,
     b: d3DashColorLib.d3DashColorMod.ColorCommonInstance
@@ -27,7 +27,7 @@ object ^ extends js.Object {
   def interpolate(a: stdLib.Date, b: stdLib.Date): js.Function1[/* t */ scala.Double, stdLib.Date] = js.native
   def interpolate[U /* <: js.Object */](a: js.Any, b: U): js.Function1[/* t */ scala.Double, U] = js.native
   def interpolate[U /* <: js.Array[_] */](a: js.Array[_], b: U): js.Function1[/* t */ scala.Double, U] = js.native
-  def interpolateArray[A /* <: js.Array[_] */](a: js.Array[_], b: A): d3DashInterpolateLib.d3DashInterpolateMod.ArrayInterpolator[A] = js.native
+  def interpolateArray[A /* <: js.Array[_] */](a: js.Array[_], b: A): ArrayInterpolator[A] = js.native
   def interpolateBasis(splineNodes: js.Array[scala.Double]): js.Function1[/* t */ scala.Double, scala.Double] = js.native
   def interpolateBasisClosed(splineNodes: js.Array[scala.Double]): js.Function1[/* t */ scala.Double, scala.Double] = js.native
   def interpolateDate(a: stdLib.Date, b: stdLib.Date): js.Function1[/* t */ scala.Double, stdLib.Date] = js.native
@@ -85,27 +85,16 @@ object ^ extends js.Object {
   def interpolateString(a: java.lang.String, b: java.lang.String): js.Function1[/* t */ scala.Double, java.lang.String] = js.native
   def interpolateTransformCss(a: java.lang.String, b: java.lang.String): js.Function1[/* t */ scala.Double, java.lang.String] = js.native
   def interpolateTransformSvg(a: java.lang.String, b: java.lang.String): js.Function1[/* t */ scala.Double, java.lang.String] = js.native
-  def interpolateZoom(
-    a: d3DashInterpolateLib.d3DashInterpolateMod.ZoomView,
-    b: d3DashInterpolateLib.d3DashInterpolateMod.ZoomView
-  ): d3DashInterpolateLib.d3DashInterpolateMod.ZoomInterpolator = js.native
+  def interpolateZoom(a: ZoomView, b: ZoomView): ZoomInterpolator = js.native
   def piecewise(
-    interpolate: js.Function2[
-      /* a */ d3DashInterpolateLib.d3DashInterpolateMod.ZoomView, 
-      /* b */ d3DashInterpolateLib.d3DashInterpolateMod.ZoomView, 
-      d3DashInterpolateLib.d3DashInterpolateMod.ZoomInterpolator
-    ],
-    values: js.Array[d3DashInterpolateLib.d3DashInterpolateMod.ZoomView]
-  ): d3DashInterpolateLib.d3DashInterpolateMod.ZoomInterpolator = js.native
+    interpolate: js.Function2[/* a */ ZoomView, /* b */ ZoomView, ZoomInterpolator],
+    values: js.Array[ZoomView]
+  ): ZoomInterpolator = js.native
   @JSName("piecewise")
   def piecewise_AArrayArrayInterpolator[A /* <: js.Array[_] */](
-    interpolate: js.Function2[
-      /* a */ js.Array[_], 
-      /* b */ A, 
-      d3DashInterpolateLib.d3DashInterpolateMod.ArrayInterpolator[A]
-    ],
+    interpolate: js.Function2[/* a */ js.Array[_], /* b */ A, ArrayInterpolator[A]],
     values: js.Array[A]
-  ): d3DashInterpolateLib.d3DashInterpolateMod.ArrayInterpolator[A] = js.native
+  ): ArrayInterpolator[A] = js.native
   @JSName("piecewise")
   def piecewise_TDataInterpolatorFunction1[TData, Interpolator](interpolate: js.Function2[/* a */ TData, /* b */ TData, Interpolator], values: js.Array[TData]): js.Function1[/* t */ scala.Double, _] = js.native
   def quantize[T](interpolator: js.Function1[/* t */ scala.Double, T], n: scala.Double): js.Array[T] = js.native

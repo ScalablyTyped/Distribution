@@ -11,7 +11,7 @@ trait Transaction
   def commit[QM](): js.Promise[QM] = js.native
   def commit[QM](value: js.Any): js.Promise[QM] = js.native
   def rollback[QM](): js.Promise[QM] = js.native
-  def rollback[QM](error: nodeLib.Error): js.Promise[QM] = js.native
+  def rollback[QM](error: stdLib.Error): js.Promise[QM] = js.native
   def savepoint(transactionScope: js.Function1[/* trx */ this.type, _]): js.Promise[_] = js.native
 }
 

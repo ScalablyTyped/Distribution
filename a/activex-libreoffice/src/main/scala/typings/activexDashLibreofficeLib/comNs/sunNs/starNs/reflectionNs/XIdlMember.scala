@@ -35,13 +35,13 @@ object XIdlMember {
   def apply(
     DeclaringClass: XIdlClass[_],
     Name: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getDeclaringClass: js.Function0[XIdlClass[_]],
-    getName: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDeclaringClass: () => XIdlClass[_],
+    getName: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XIdlMember = {
-    val __obj = js.Dynamic.literal(DeclaringClass = DeclaringClass, Name = Name, acquire = acquire, getDeclaringClass = getDeclaringClass, getName = getName, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(DeclaringClass = DeclaringClass, Name = Name, acquire = js.Any.fromFunction0(acquire), getDeclaringClass = js.Any.fromFunction0(getDeclaringClass), getName = js.Any.fromFunction0(getName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XIdlMember]
   }

@@ -37,20 +37,13 @@ trait XTransitionFactory
 object XTransitionFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createTransition: js.Function5[
-      scala.Double, 
-      scala.Double, 
-      XSlideShowView, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap, 
-      XTransition
-    ],
-    hasTransition: js.Function2[scala.Double, scala.Double, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createTransition: (scala.Double, scala.Double, XSlideShowView, activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap, activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap) => XTransition,
+    hasTransition: (scala.Double, scala.Double) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTransitionFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createTransition = createTransition, hasTransition = hasTransition, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createTransition = js.Any.fromFunction5(createTransition), hasTransition = js.Any.fromFunction2(hasTransition), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTransitionFactory]
   }

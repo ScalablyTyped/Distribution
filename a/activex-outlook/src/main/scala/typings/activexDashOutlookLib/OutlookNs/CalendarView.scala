@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.CalendarView")
 @js.native
 class CalendarView protected () extends js.Object {
-  val Application: Application = js.native
-  val AutoFormatRules: AutoFormatRules = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
+  val AutoFormatRules: activexDashOutlookLib.OutlookNs.AutoFormatRules = js.native
   var BoldDatesWithItems: scala.Boolean = js.native
   var BoldSubjects: scala.Boolean = js.native
   var CalendarViewMode: OlCalendarViewMode = js.native
@@ -29,8 +29,8 @@ class CalendarView protected () extends js.Object {
   var `Outlook.CalendarView_typekey`: CalendarView = js.native
   val Parent: js.Any = js.native
   val SaveOption: OlViewSaveOption = js.native
-  val SelectedEndTime: activexDashInteropLib.VarDate = js.native
-  val SelectedStartTime: activexDashInteropLib.VarDate = js.native
+  val SelectedEndTime: stdLib.VarDate = js.native
+  val SelectedStartTime: stdLib.VarDate = js.native
   val Session: NameSpace = js.native
   val Standard: scala.Boolean = js.native
   var StartField: java.lang.String = js.native
@@ -39,7 +39,7 @@ class CalendarView protected () extends js.Object {
   def Apply(): scala.Unit = js.native
   def Copy(Name: java.lang.String, SaveOption: OlViewSaveOption): View = js.native
   def Delete(): scala.Unit = js.native
-  def GoToDate(Date: activexDashInteropLib.VarDate): scala.Unit = js.native
+  def GoToDate(Date: stdLib.VarDate): scala.Unit = js.native
   def Reset(): scala.Unit = js.native
   def Save(): scala.Unit = js.native
 }

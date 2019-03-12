@@ -37,24 +37,12 @@ trait ServicesResource extends js.Object {
 object ServicesResource {
   @scala.inline
   def apply(
-    disable: js.Function1[
-      gapiDotClientDotServiceuserLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    enable: js.Function1[
-      gapiDotClientDotServiceuserLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotServiceuserLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListEnabledServicesResponse]
-    ],
-    search: js.Function1[
-      gapiDotClientDotServiceuserLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SearchServicesResponse]
-    ]
+    disable: gapiDotClientDotServiceuserLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    enable: gapiDotClientDotServiceuserLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotServiceuserLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[ListEnabledServicesResponse],
+    search: gapiDotClientDotServiceuserLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[SearchServicesResponse]
   ): ServicesResource = {
-    val __obj = js.Dynamic.literal(disable = disable, enable = enable, list = list, search = search)
+    val __obj = js.Dynamic.literal(disable = js.Any.fromFunction1(disable), enable = js.Any.fromFunction1(enable), list = js.Any.fromFunction1(list), search = js.Any.fromFunction1(search))
   
     __obj.asInstanceOf[ServicesResource]
   }

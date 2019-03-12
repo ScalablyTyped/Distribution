@@ -27,32 +27,26 @@ object XGroups {
     ElementType: activexDashLibreofficeLib.`type`,
     Parent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     ReportDefinition: XReportDefinition,
-    acquire: js.Function0[scala.Unit],
-    addContainerListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
-      scala.Unit
-    ],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    createGroup: js.Function0[XGroup],
-    dispose: js.Function0[scala.Unit],
-    getByIndex: js.Function1[scala.Double, js.Any],
-    getCount: js.Function0[scala.Double],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    getParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    hasElements: js.Function0[scala.Boolean],
-    insertByIndex: js.Function2[scala.Double, js.Any, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeByIndex: js.Function1[scala.Double, scala.Unit],
-    removeContainerListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
-      scala.Unit
-    ],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    replaceByIndex: js.Function2[scala.Double, js.Any, scala.Unit],
-    setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
+    acquire: () => scala.Unit,
+    addContainerListener: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    createGroup: () => XGroup,
+    dispose: () => scala.Unit,
+    getByIndex: scala.Double => js.Any,
+    getCount: () => scala.Double,
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    getParent: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    hasElements: () => scala.Boolean,
+    insertByIndex: (scala.Double, js.Any) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeByIndex: scala.Double => scala.Unit,
+    removeContainerListener: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    replaceByIndex: (scala.Double, js.Any) => scala.Unit,
+    setParent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => scala.Unit
   ): XGroups = {
-    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, Parent = Parent, ReportDefinition = ReportDefinition, acquire = acquire, addContainerListener = addContainerListener, addEventListener = addEventListener, createGroup = createGroup, dispose = dispose, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, getParent = getParent, hasElements = hasElements, insertByIndex = insertByIndex, queryInterface = queryInterface, release = release, removeByIndex = removeByIndex, removeContainerListener = removeContainerListener, removeEventListener = removeEventListener, replaceByIndex = replaceByIndex, setParent = setParent)
+    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, Parent = Parent, ReportDefinition = ReportDefinition, acquire = js.Any.fromFunction0(acquire), addContainerListener = js.Any.fromFunction1(addContainerListener), addEventListener = js.Any.fromFunction1(addEventListener), createGroup = js.Any.fromFunction0(createGroup), dispose = js.Any.fromFunction0(dispose), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), getParent = js.Any.fromFunction0(getParent), hasElements = js.Any.fromFunction0(hasElements), insertByIndex = js.Any.fromFunction2(insertByIndex), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByIndex = js.Any.fromFunction1(removeByIndex), removeContainerListener = js.Any.fromFunction1(removeContainerListener), removeEventListener = js.Any.fromFunction1(removeEventListener), replaceByIndex = js.Any.fromFunction2(replaceByIndex), setParent = js.Any.fromFunction1(setParent))
   
     __obj.asInstanceOf[XGroups]
   }

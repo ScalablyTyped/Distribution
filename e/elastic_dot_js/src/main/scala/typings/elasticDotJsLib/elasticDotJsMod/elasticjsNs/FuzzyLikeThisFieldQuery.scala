@@ -59,19 +59,19 @@ trait FuzzyLikeThisFieldQuery extends Query {
 object FuzzyLikeThisFieldQuery {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    analyzer: js.Function1[java.lang.String, FuzzyLikeThisFieldQuery],
-    boost: js.Function1[scala.Double, FuzzyLikeThisFieldQuery],
-    failOnUnsupportedField: js.Function1[scala.Boolean, FuzzyLikeThisFieldQuery],
-    field: js.Function1[java.lang.String, FuzzyLikeThisFieldQuery],
-    ignoreTf: js.Function1[scala.Boolean, FuzzyLikeThisFieldQuery],
-    likeText: js.Function1[java.lang.String, FuzzyLikeThisFieldQuery],
-    maxQueryTerms: js.Function1[scala.Double, FuzzyLikeThisFieldQuery],
-    minSimilarity: js.Function1[scala.Double, FuzzyLikeThisFieldQuery],
-    prefixLength: js.Function1[scala.Double, FuzzyLikeThisFieldQuery],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    analyzer: java.lang.String => FuzzyLikeThisFieldQuery,
+    boost: scala.Double => FuzzyLikeThisFieldQuery,
+    failOnUnsupportedField: scala.Boolean => FuzzyLikeThisFieldQuery,
+    field: java.lang.String => FuzzyLikeThisFieldQuery,
+    ignoreTf: scala.Boolean => FuzzyLikeThisFieldQuery,
+    likeText: java.lang.String => FuzzyLikeThisFieldQuery,
+    maxQueryTerms: scala.Double => FuzzyLikeThisFieldQuery,
+    minSimilarity: scala.Double => FuzzyLikeThisFieldQuery,
+    prefixLength: scala.Double => FuzzyLikeThisFieldQuery,
+    toJSON: () => js.Any
   ): FuzzyLikeThisFieldQuery = {
-    val __obj = js.Dynamic.literal(_type = _type, analyzer = analyzer, boost = boost, failOnUnsupportedField = failOnUnsupportedField, field = field, ignoreTf = ignoreTf, likeText = likeText, maxQueryTerms = maxQueryTerms, minSimilarity = minSimilarity, prefixLength = prefixLength, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), analyzer = js.Any.fromFunction1(analyzer), boost = js.Any.fromFunction1(boost), failOnUnsupportedField = js.Any.fromFunction1(failOnUnsupportedField), field = js.Any.fromFunction1(field), ignoreTf = js.Any.fromFunction1(ignoreTf), likeText = js.Any.fromFunction1(likeText), maxQueryTerms = js.Any.fromFunction1(maxQueryTerms), minSimilarity = js.Any.fromFunction1(minSimilarity), prefixLength = js.Any.fromFunction1(prefixLength), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[FuzzyLikeThisFieldQuery]
   }

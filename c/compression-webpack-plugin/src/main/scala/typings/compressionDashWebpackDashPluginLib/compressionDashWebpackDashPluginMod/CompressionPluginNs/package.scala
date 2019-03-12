@@ -12,6 +12,6 @@ package object CompressionPluginNs {
     /* callback */ AlgorithmCallback, 
     scala.Unit
   ]
-  type AlgorithmCallback = js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
+  type AlgorithmCallback = js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
   type Pattern = java.lang.String | stdLib.RegExp | js.Array[stdLib.RegExp] | js.Array[java.lang.String]
 }

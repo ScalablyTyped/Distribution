@@ -50,15 +50,15 @@ object QueryTaskAttachmentInfo {
   def apply(
     constructor: js.Function,
     contentType: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     id: scala.Double,
     name: java.lang.String,
     parentObjectId: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     size: scala.Double,
     url: java.lang.String
   ): QueryTaskAttachmentInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor, contentType = contentType, hasOwnProperty = hasOwnProperty, id = id, name = name, parentObjectId = parentObjectId, propertyIsEnumerable = propertyIsEnumerable, size = size, url = url)
+    val __obj = js.Dynamic.literal(constructor = constructor, contentType = contentType, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, name = name, parentObjectId = parentObjectId, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size, url = url)
   
     __obj.asInstanceOf[QueryTaskAttachmentInfo]
   }

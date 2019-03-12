@@ -132,7 +132,7 @@ object StarRatingProps {
     maxStars: scala.Int | scala.Double = null,
     rating: scala.Int | scala.Double = null,
     reversed: js.UndefOr[scala.Boolean] = js.undefined,
-    selectedStar: js.Function1[/* rating */ scala.Double, scala.Unit] = null,
+    selectedStar: /* rating */ scala.Double => scala.Unit = null,
     starSize: scala.Int | scala.Double = null,
     starStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
   ): StarRatingProps = {
@@ -151,7 +151,7 @@ object StarRatingProps {
     if (maxStars != null) __obj.updateDynamic("maxStars")(maxStars.asInstanceOf[js.Any])
     if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
     if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed)
-    if (selectedStar != null) __obj.updateDynamic("selectedStar")(selectedStar)
+    if (selectedStar != null) __obj.updateDynamic("selectedStar")(js.Any.fromFunction1(selectedStar))
     if (starSize != null) __obj.updateDynamic("starSize")(starSize.asInstanceOf[js.Any])
     if (starStyle != null) __obj.updateDynamic("starStyle")(starStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[StarRatingProps]

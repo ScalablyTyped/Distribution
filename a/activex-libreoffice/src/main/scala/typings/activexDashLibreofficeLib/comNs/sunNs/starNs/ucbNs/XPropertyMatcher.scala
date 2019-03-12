@@ -23,12 +23,12 @@ trait XPropertyMatcher
 object XPropertyMatcher {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    matches: js.Function2[XCommandProcessor, XCommandEnvironment, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    matches: (XCommandProcessor, XCommandEnvironment) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XPropertyMatcher = {
-    val __obj = js.Dynamic.literal(acquire = acquire, matches = matches, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), matches = js.Any.fromFunction2(matches), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XPropertyMatcher]
   }

@@ -36,39 +36,33 @@ trait RecurrenceRule extends js.Object {
 object RecurrenceRule {
   @scala.inline
   def apply(
-    addDailyExclusion: js.Function0[RecurrenceRule],
-    addDailyRule: js.Function0[RecurrenceRule],
-    addDate: js.Function1[stdLib.Date, EventRecurrence],
-    addDateExclusion: js.Function1[stdLib.Date, EventRecurrence],
-    addMonthlyExclusion: js.Function0[RecurrenceRule],
-    addMonthlyRule: js.Function0[RecurrenceRule],
-    addWeeklyExclusion: js.Function0[RecurrenceRule],
-    addWeeklyRule: js.Function0[RecurrenceRule],
-    addYearlyExclusion: js.Function0[RecurrenceRule],
-    addYearlyRule: js.Function0[RecurrenceRule],
-    interval: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, RecurrenceRule],
-    onlyInMonth: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Month, RecurrenceRule],
-    onlyInMonths: js.Function1[
-      js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Month], 
-      RecurrenceRule
-    ],
-    onlyOnMonthDay: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, RecurrenceRule],
-    onlyOnMonthDays: js.Function1[js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer], RecurrenceRule],
-    onlyOnWeek: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, RecurrenceRule],
-    onlyOnWeekday: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Weekday, RecurrenceRule],
-    onlyOnWeekdays: js.Function1[
-      js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Weekday], 
-      RecurrenceRule
-    ],
-    onlyOnWeeks: js.Function1[js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer], RecurrenceRule],
-    onlyOnYearDay: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, RecurrenceRule],
-    onlyOnYearDays: js.Function1[js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer], RecurrenceRule],
-    setTimeZone: js.Function1[java.lang.String, EventRecurrence],
-    times: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, RecurrenceRule],
-    until: js.Function1[stdLib.Date, RecurrenceRule],
-    weekStartsOn: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Weekday, RecurrenceRule]
+    addDailyExclusion: () => RecurrenceRule,
+    addDailyRule: () => RecurrenceRule,
+    addDate: stdLib.Date => EventRecurrence,
+    addDateExclusion: stdLib.Date => EventRecurrence,
+    addMonthlyExclusion: () => RecurrenceRule,
+    addMonthlyRule: () => RecurrenceRule,
+    addWeeklyExclusion: () => RecurrenceRule,
+    addWeeklyRule: () => RecurrenceRule,
+    addYearlyExclusion: () => RecurrenceRule,
+    addYearlyRule: () => RecurrenceRule,
+    interval: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => RecurrenceRule,
+    onlyInMonth: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Month => RecurrenceRule,
+    onlyInMonths: js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Month] => RecurrenceRule,
+    onlyOnMonthDay: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => RecurrenceRule,
+    onlyOnMonthDays: js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer] => RecurrenceRule,
+    onlyOnWeek: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => RecurrenceRule,
+    onlyOnWeekday: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Weekday => RecurrenceRule,
+    onlyOnWeekdays: js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Weekday] => RecurrenceRule,
+    onlyOnWeeks: js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer] => RecurrenceRule,
+    onlyOnYearDay: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => RecurrenceRule,
+    onlyOnYearDays: js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer] => RecurrenceRule,
+    setTimeZone: java.lang.String => EventRecurrence,
+    times: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => RecurrenceRule,
+    until: stdLib.Date => RecurrenceRule,
+    weekStartsOn: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Weekday => RecurrenceRule
   ): RecurrenceRule = {
-    val __obj = js.Dynamic.literal(addDailyExclusion = addDailyExclusion, addDailyRule = addDailyRule, addDate = addDate, addDateExclusion = addDateExclusion, addMonthlyExclusion = addMonthlyExclusion, addMonthlyRule = addMonthlyRule, addWeeklyExclusion = addWeeklyExclusion, addWeeklyRule = addWeeklyRule, addYearlyExclusion = addYearlyExclusion, addYearlyRule = addYearlyRule, interval = interval, onlyInMonth = onlyInMonth, onlyInMonths = onlyInMonths, onlyOnMonthDay = onlyOnMonthDay, onlyOnMonthDays = onlyOnMonthDays, onlyOnWeek = onlyOnWeek, onlyOnWeekday = onlyOnWeekday, onlyOnWeekdays = onlyOnWeekdays, onlyOnWeeks = onlyOnWeeks, onlyOnYearDay = onlyOnYearDay, onlyOnYearDays = onlyOnYearDays, setTimeZone = setTimeZone, times = times, until = until, weekStartsOn = weekStartsOn)
+    val __obj = js.Dynamic.literal(addDailyExclusion = js.Any.fromFunction0(addDailyExclusion), addDailyRule = js.Any.fromFunction0(addDailyRule), addDate = js.Any.fromFunction1(addDate), addDateExclusion = js.Any.fromFunction1(addDateExclusion), addMonthlyExclusion = js.Any.fromFunction0(addMonthlyExclusion), addMonthlyRule = js.Any.fromFunction0(addMonthlyRule), addWeeklyExclusion = js.Any.fromFunction0(addWeeklyExclusion), addWeeklyRule = js.Any.fromFunction0(addWeeklyRule), addYearlyExclusion = js.Any.fromFunction0(addYearlyExclusion), addYearlyRule = js.Any.fromFunction0(addYearlyRule), interval = js.Any.fromFunction1(interval), onlyInMonth = js.Any.fromFunction1(onlyInMonth), onlyInMonths = js.Any.fromFunction1(onlyInMonths), onlyOnMonthDay = js.Any.fromFunction1(onlyOnMonthDay), onlyOnMonthDays = js.Any.fromFunction1(onlyOnMonthDays), onlyOnWeek = js.Any.fromFunction1(onlyOnWeek), onlyOnWeekday = js.Any.fromFunction1(onlyOnWeekday), onlyOnWeekdays = js.Any.fromFunction1(onlyOnWeekdays), onlyOnWeeks = js.Any.fromFunction1(onlyOnWeeks), onlyOnYearDay = js.Any.fromFunction1(onlyOnYearDay), onlyOnYearDays = js.Any.fromFunction1(onlyOnYearDays), setTimeZone = js.Any.fromFunction1(setTimeZone), times = js.Any.fromFunction1(times), until = js.Any.fromFunction1(until), weekStartsOn = js.Any.fromFunction1(weekStartsOn))
   
     __obj.asInstanceOf[RecurrenceRule]
   }

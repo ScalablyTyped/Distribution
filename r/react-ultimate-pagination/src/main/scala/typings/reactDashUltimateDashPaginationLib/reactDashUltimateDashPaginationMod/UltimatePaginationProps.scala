@@ -54,7 +54,7 @@ object UltimatePaginationProps {
     hideEllipsis: js.UndefOr[scala.Boolean] = js.undefined,
     hideFirstAndLastPageLinks: js.UndefOr[scala.Boolean] = js.undefined,
     hidePreviousAndNextPageLinks: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function1[/* newPage */ scala.Double, scala.Unit] = null,
+    onChange: /* newPage */ scala.Double => scala.Unit = null,
     siblingPagesRange: scala.Int | scala.Double = null
   ): UltimatePaginationProps = {
     val __obj = js.Dynamic.literal(currentPage = currentPage, totalPages = totalPages)
@@ -63,7 +63,7 @@ object UltimatePaginationProps {
     if (!js.isUndefined(hideEllipsis)) __obj.updateDynamic("hideEllipsis")(hideEllipsis)
     if (!js.isUndefined(hideFirstAndLastPageLinks)) __obj.updateDynamic("hideFirstAndLastPageLinks")(hideFirstAndLastPageLinks)
     if (!js.isUndefined(hidePreviousAndNextPageLinks)) __obj.updateDynamic("hidePreviousAndNextPageLinks")(hidePreviousAndNextPageLinks)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (siblingPagesRange != null) __obj.updateDynamic("siblingPagesRange")(siblingPagesRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[UltimatePaginationProps]
   }

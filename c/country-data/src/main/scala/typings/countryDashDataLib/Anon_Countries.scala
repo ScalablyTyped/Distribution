@@ -14,11 +14,11 @@ trait Anon_Countries extends js.Object {
 object Anon_Countries {
   @scala.inline
   def apply(
-    countries: js.Function1[js.Any, js.Array[countryDashDataLib.countryDashDataMod.Country]],
-    currencies: js.Function1[js.Any, js.Array[countryDashDataLib.countryDashDataMod.Currency]],
-    languages: js.Function1[js.Any, js.Array[countryDashDataLib.countryDashDataMod.Language]]
+    countries: js.Any => js.Array[countryDashDataLib.countryDashDataMod.Country],
+    currencies: js.Any => js.Array[countryDashDataLib.countryDashDataMod.Currency],
+    languages: js.Any => js.Array[countryDashDataLib.countryDashDataMod.Language]
   ): Anon_Countries = {
-    val __obj = js.Dynamic.literal(countries = countries, currencies = currencies, languages = languages)
+    val __obj = js.Dynamic.literal(countries = js.Any.fromFunction1(countries), currencies = js.Any.fromFunction1(currencies), languages = js.Any.fromFunction1(languages))
   
     __obj.asInstanceOf[Anon_Countries]
   }

@@ -55,11 +55,7 @@ object GridColumn {
     columns: js.Any = null,
     command: java.lang.String | js.Array[java.lang.String] | GridColumnCommandItem | js.Array[GridColumnCommandItem] = null,
     editable: js.Function = null,
-    editor: js.Function2[
-      /* container */ kendoDashUiLib.JQuery, 
-      /* options */ GridColumnEditorOptions, 
-      scala.Unit
-    ] = null,
+    editor: (/* container */ kendoDashUiLib.JQuery, /* options */ GridColumnEditorOptions) => scala.Unit = null,
     encoded: js.UndefOr[scala.Boolean] = js.undefined,
     field: java.lang.String = null,
     filterable: scala.Boolean | GridColumnFilterable = null,
@@ -92,7 +88,7 @@ object GridColumn {
     if (columns != null) __obj.updateDynamic("columns")(columns)
     if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
     if (editable != null) __obj.updateDynamic("editable")(editable)
-    if (editor != null) __obj.updateDynamic("editor")(editor)
+    if (editor != null) __obj.updateDynamic("editor")(js.Any.fromFunction2(editor))
     if (!js.isUndefined(encoded)) __obj.updateDynamic("encoded")(encoded)
     if (field != null) __obj.updateDynamic("field")(field)
     if (filterable != null) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])

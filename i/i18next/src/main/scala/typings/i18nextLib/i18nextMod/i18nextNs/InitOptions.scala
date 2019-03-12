@@ -265,7 +265,7 @@ object InitOptions {
     lng: java.lang.String = null,
     load: i18nextLib.i18nextLibStrings.all | i18nextLib.i18nextLibStrings.currentOnly | i18nextLib.i18nextLibStrings.languageOnly = null,
     lowerCaseLng: js.UndefOr[scala.Boolean] = js.undefined,
-    missingInterpolationHandler: js.Function2[/* text */ java.lang.String, /* value */ js.Any, _] = null,
+    missingInterpolationHandler: (/* text */ java.lang.String, /* value */ js.Any) => _ = null,
     missingKeyHandler: i18nextLib.i18nextLibNumbers.`false` | (js.Function4[
       /* lngs */ js.Array[java.lang.String], 
       /* ns */ java.lang.String, 
@@ -276,8 +276,8 @@ object InitOptions {
     nonExplicitWhitelist: js.UndefOr[scala.Boolean] = js.undefined,
     ns: java.lang.String | js.Array[java.lang.String] = null,
     nsSeparator: i18nextLib.i18nextLibNumbers.`false` | java.lang.String = null,
-    overloadTranslationOptionHandler: js.Function1[/* args */ js.Array[java.lang.String], TranslationOptions[js.Object]] = null,
-    parseMissingKeyHandler: js.Function1[/* key */ java.lang.String, _] = null,
+    overloadTranslationOptionHandler: /* args */ js.Array[java.lang.String] => TranslationOptions[js.Object] = null,
+    parseMissingKeyHandler: /* key */ java.lang.String => _ = null,
     partialBundledLanguages: js.UndefOr[scala.Boolean] = js.undefined,
     pluralSeparator: java.lang.String = null,
     postProcess: i18nextLib.i18nextLibNumbers.`false` | java.lang.String | js.Array[java.lang.String] = null,
@@ -287,12 +287,7 @@ object InitOptions {
     returnEmptyString: js.UndefOr[scala.Boolean] = js.undefined,
     returnNull: js.UndefOr[scala.Boolean] = js.undefined,
     returnObjects: js.UndefOr[scala.Boolean] = js.undefined,
-    returnedObjectHandler: js.Function3[
-      /* key */ java.lang.String, 
-      /* value */ java.lang.String, 
-      /* options */ js.Any, 
-      scala.Unit
-    ] = null,
+    returnedObjectHandler: (/* key */ java.lang.String, /* value */ java.lang.String, /* options */ js.Any) => scala.Unit = null,
     saveMissing: js.UndefOr[scala.Boolean] = js.undefined,
     saveMissingTo: i18nextLib.i18nextLibStrings.current | i18nextLib.i18nextLibStrings.all | i18nextLib.i18nextLibStrings.fallback = null,
     simplifyPluralSuffix: js.UndefOr[scala.Boolean] = js.undefined,
@@ -319,13 +314,13 @@ object InitOptions {
     if (lng != null) __obj.updateDynamic("lng")(lng)
     if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
     if (!js.isUndefined(lowerCaseLng)) __obj.updateDynamic("lowerCaseLng")(lowerCaseLng)
-    if (missingInterpolationHandler != null) __obj.updateDynamic("missingInterpolationHandler")(missingInterpolationHandler)
+    if (missingInterpolationHandler != null) __obj.updateDynamic("missingInterpolationHandler")(js.Any.fromFunction2(missingInterpolationHandler))
     if (missingKeyHandler != null) __obj.updateDynamic("missingKeyHandler")(missingKeyHandler.asInstanceOf[js.Any])
     if (!js.isUndefined(nonExplicitWhitelist)) __obj.updateDynamic("nonExplicitWhitelist")(nonExplicitWhitelist)
     if (ns != null) __obj.updateDynamic("ns")(ns.asInstanceOf[js.Any])
     if (nsSeparator != null) __obj.updateDynamic("nsSeparator")(nsSeparator.asInstanceOf[js.Any])
-    if (overloadTranslationOptionHandler != null) __obj.updateDynamic("overloadTranslationOptionHandler")(overloadTranslationOptionHandler)
-    if (parseMissingKeyHandler != null) __obj.updateDynamic("parseMissingKeyHandler")(parseMissingKeyHandler)
+    if (overloadTranslationOptionHandler != null) __obj.updateDynamic("overloadTranslationOptionHandler")(js.Any.fromFunction1(overloadTranslationOptionHandler))
+    if (parseMissingKeyHandler != null) __obj.updateDynamic("parseMissingKeyHandler")(js.Any.fromFunction1(parseMissingKeyHandler))
     if (!js.isUndefined(partialBundledLanguages)) __obj.updateDynamic("partialBundledLanguages")(partialBundledLanguages)
     if (pluralSeparator != null) __obj.updateDynamic("pluralSeparator")(pluralSeparator)
     if (postProcess != null) __obj.updateDynamic("postProcess")(postProcess.asInstanceOf[js.Any])
@@ -335,7 +330,7 @@ object InitOptions {
     if (!js.isUndefined(returnEmptyString)) __obj.updateDynamic("returnEmptyString")(returnEmptyString)
     if (!js.isUndefined(returnNull)) __obj.updateDynamic("returnNull")(returnNull)
     if (!js.isUndefined(returnObjects)) __obj.updateDynamic("returnObjects")(returnObjects)
-    if (returnedObjectHandler != null) __obj.updateDynamic("returnedObjectHandler")(returnedObjectHandler)
+    if (returnedObjectHandler != null) __obj.updateDynamic("returnedObjectHandler")(js.Any.fromFunction3(returnedObjectHandler))
     if (!js.isUndefined(saveMissing)) __obj.updateDynamic("saveMissing")(saveMissing)
     if (saveMissingTo != null) __obj.updateDynamic("saveMissingTo")(saveMissingTo.asInstanceOf[js.Any])
     if (!js.isUndefined(simplifyPluralSuffix)) __obj.updateDynamic("simplifyPluralSuffix")(simplifyPluralSuffix)

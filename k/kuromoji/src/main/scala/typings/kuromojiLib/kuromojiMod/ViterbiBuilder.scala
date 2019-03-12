@@ -15,12 +15,12 @@ trait ViterbiBuilder extends js.Object {
 object ViterbiBuilder {
   @scala.inline
   def apply(
-    build: js.Function1[java.lang.String, ViterbiLattice],
+    build: java.lang.String => ViterbiLattice,
     token_info_dictionary: TokenInfoDictionary,
     trie: doublearrayLib.doublearrayNs.DoubleArray,
     unknown_dictionary: UnknownDictionary
   ): ViterbiBuilder = {
-    val __obj = js.Dynamic.literal(build = build, token_info_dictionary = token_info_dictionary, trie = trie, unknown_dictionary = unknown_dictionary)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction1(build), token_info_dictionary = token_info_dictionary, trie = trie, unknown_dictionary = unknown_dictionary)
   
     __obj.asInstanceOf[ViterbiBuilder]
   }

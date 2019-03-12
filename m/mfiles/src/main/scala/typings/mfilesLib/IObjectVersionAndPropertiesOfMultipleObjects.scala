@@ -16,13 +16,13 @@ trait IObjectVersionAndPropertiesOfMultipleObjects extends js.Object {
 object IObjectVersionAndPropertiesOfMultipleObjects {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IObjectVersionAndProperties, scala.Unit],
-    Clone: js.Function0[IObjectVersionAndPropertiesOfMultipleObjects],
+    Add: (scala.Double, IObjectVersionAndProperties) => scala.Unit,
+    Clone: () => IObjectVersionAndPropertiesOfMultipleObjects,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IObjectVersionAndProperties],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => IObjectVersionAndProperties,
+    Remove: scala.Double => scala.Unit
   ): IObjectVersionAndPropertiesOfMultipleObjects = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IObjectVersionAndPropertiesOfMultipleObjects]
   }

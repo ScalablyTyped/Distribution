@@ -22,10 +22,7 @@ object ^ extends js.Object {
     * @param callback Function called when the token deletion completes.
     *                 The token was revoked successfully if runtime.lastError is not set.
     */
-  def deleteToken(
-    deleteTokenParams: chromeDashAppsLib.chromeNs.instanceIDNs.DeleteTokenParams,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
+  def deleteToken(deleteTokenParams: DeleteTokenParams, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
     * Retrieves the time when the InstanceID has been generated.
     * The creation time will be returned by the callback.
@@ -50,9 +47,6 @@ object ^ extends js.Object {
     * @param getTokenParams Parameters for getToken.
     * @param callback Function called when the retrieval completes. It should check runtime.lastError for error when token is empty.
     */
-  def getToken(
-    getTokenParams: chromeDashAppsLib.chromeNs.instanceIDNs.TokenParams,
-    callback: js.Function1[/* token */ java.lang.String, scala.Unit]
-  ): scala.Unit = js.native
+  def getToken(getTokenParams: TokenParams, callback: js.Function1[/* token */ java.lang.String, scala.Unit]): scala.Unit = js.native
 }
 

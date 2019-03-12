@@ -45,7 +45,7 @@ object Options {
     objectMode: js.UndefOr[scala.Boolean] = js.undefined,
     offerConstraints: js.Object = null,
     reconnectTimer: scala.Boolean | scala.Double = null,
-    sdpTransform: js.Function1[/* sdp */ js.Any, _] = null,
+    sdpTransform: /* sdp */ js.Any => _ = null,
     stream: stdLib.MediaStream = null,
     trickle: js.UndefOr[scala.Boolean] = js.undefined,
     wrtc: js.Object = null
@@ -60,7 +60,7 @@ object Options {
     if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode)
     if (offerConstraints != null) __obj.updateDynamic("offerConstraints")(offerConstraints)
     if (reconnectTimer != null) __obj.updateDynamic("reconnectTimer")(reconnectTimer.asInstanceOf[js.Any])
-    if (sdpTransform != null) __obj.updateDynamic("sdpTransform")(sdpTransform)
+    if (sdpTransform != null) __obj.updateDynamic("sdpTransform")(js.Any.fromFunction1(sdpTransform))
     if (stream != null) __obj.updateDynamic("stream")(stream)
     if (!js.isUndefined(trickle)) __obj.updateDynamic("trickle")(trickle)
     if (wrtc != null) __obj.updateDynamic("wrtc")(wrtc)

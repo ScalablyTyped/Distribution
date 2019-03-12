@@ -231,19 +231,19 @@ object Model {
     allowMultiSelection: js.UndefOr[scala.Boolean] = js.undefined,
     autoCheck: js.UndefOr[scala.Boolean] = js.undefined,
     autoCheckParentNode: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeAdd: js.Function1[/* e */ BeforeAddEventArgs, scala.Unit] = null,
-    beforeCollapse: js.Function1[/* e */ BeforeCollapseEventArgs, scala.Unit] = null,
-    beforeCut: js.Function1[/* e */ BeforeCutEventArgs, scala.Unit] = null,
-    beforeDelete: js.Function1[/* e */ BeforeDeleteEventArgs, scala.Unit] = null,
-    beforeEdit: js.Function1[/* e */ BeforeEditEventArgs, scala.Unit] = null,
-    beforeExpand: js.Function1[/* e */ BeforeExpandEventArgs, scala.Unit] = null,
-    beforeLoad: js.Function1[/* e */ BeforeLoadEventArgs, scala.Unit] = null,
-    beforePaste: js.Function1[/* e */ BeforePasteEventArgs, scala.Unit] = null,
-    beforeSelect: js.Function1[/* e */ BeforeSelectEventArgs, scala.Unit] = null,
+    beforeAdd: /* e */ BeforeAddEventArgs => scala.Unit = null,
+    beforeCollapse: /* e */ BeforeCollapseEventArgs => scala.Unit = null,
+    beforeCut: /* e */ BeforeCutEventArgs => scala.Unit = null,
+    beforeDelete: /* e */ BeforeDeleteEventArgs => scala.Unit = null,
+    beforeEdit: /* e */ BeforeEditEventArgs => scala.Unit = null,
+    beforeExpand: /* e */ BeforeExpandEventArgs => scala.Unit = null,
+    beforeLoad: /* e */ BeforeLoadEventArgs => scala.Unit = null,
+    beforePaste: /* e */ BeforePasteEventArgs => scala.Unit = null,
+    beforeSelect: /* e */ BeforeSelectEventArgs => scala.Unit = null,
     checkedNodes: js.Array[_] = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
     enableMultipleExpand: js.UndefOr[scala.Boolean] = js.undefined,
     enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
@@ -255,28 +255,28 @@ object Model {
     fullRowSelect: js.UndefOr[scala.Boolean] = js.undefined,
     height: java.lang.String | scala.Double = null,
     htmlAttributes: js.Any = null,
-    inlineEditValidation: js.Function1[/* e */ InlineEditValidationEventArgs, scala.Unit] = null,
-    keyPress: js.Function1[/* e */ KeyPressEventArgs, scala.Unit] = null,
-    loadError: js.Function1[/* e */ LoadErrorEventArgs, scala.Unit] = null,
+    inlineEditValidation: /* e */ InlineEditValidationEventArgs => scala.Unit = null,
+    keyPress: /* e */ KeyPressEventArgs => scala.Unit = null,
+    loadError: /* e */ LoadErrorEventArgs => scala.Unit = null,
     loadOnDemand: js.UndefOr[scala.Boolean] = js.undefined,
-    loadSuccess: js.Function1[/* e */ LoadSuccessEventArgs, scala.Unit] = null,
-    nodeAdd: js.Function1[/* e */ NodeAddEventArgs, scala.Unit] = null,
-    nodeCheck: js.Function1[/* e */ NodeCheckEventArgs, scala.Unit] = null,
-    nodeClick: js.Function1[/* e */ NodeClickEventArgs, scala.Unit] = null,
-    nodeCollapse: js.Function1[/* e */ NodeCollapseEventArgs, scala.Unit] = null,
-    nodeCut: js.Function1[/* e */ NodeCutEventArgs, scala.Unit] = null,
-    nodeDelete: js.Function1[/* e */ NodeDeleteEventArgs, scala.Unit] = null,
-    nodeDrag: js.Function1[/* e */ NodeDragEventArgs, scala.Unit] = null,
-    nodeDragStart: js.Function1[/* e */ NodeDragStartEventArgs, scala.Unit] = null,
-    nodeDragStop: js.Function1[/* e */ NodeDragStopEventArgs, scala.Unit] = null,
-    nodeDropped: js.Function1[/* e */ NodeDroppedEventArgs, scala.Unit] = null,
-    nodeEdit: js.Function1[/* e */ NodeEditEventArgs, scala.Unit] = null,
-    nodeExpand: js.Function1[/* e */ NodeExpandEventArgs, scala.Unit] = null,
-    nodePaste: js.Function1[/* e */ NodePasteEventArgs, scala.Unit] = null,
-    nodeSelect: js.Function1[/* e */ NodeSelectEventArgs, scala.Unit] = null,
-    nodeUncheck: js.Function1[/* e */ NodeUncheckEventArgs, scala.Unit] = null,
-    nodeUnselect: js.Function1[/* e */ NodeUnselectEventArgs, scala.Unit] = null,
-    ready: js.Function1[/* e */ ReadyEventArgs, scala.Unit] = null,
+    loadSuccess: /* e */ LoadSuccessEventArgs => scala.Unit = null,
+    nodeAdd: /* e */ NodeAddEventArgs => scala.Unit = null,
+    nodeCheck: /* e */ NodeCheckEventArgs => scala.Unit = null,
+    nodeClick: /* e */ NodeClickEventArgs => scala.Unit = null,
+    nodeCollapse: /* e */ NodeCollapseEventArgs => scala.Unit = null,
+    nodeCut: /* e */ NodeCutEventArgs => scala.Unit = null,
+    nodeDelete: /* e */ NodeDeleteEventArgs => scala.Unit = null,
+    nodeDrag: /* e */ NodeDragEventArgs => scala.Unit = null,
+    nodeDragStart: /* e */ NodeDragStartEventArgs => scala.Unit = null,
+    nodeDragStop: /* e */ NodeDragStopEventArgs => scala.Unit = null,
+    nodeDropped: /* e */ NodeDroppedEventArgs => scala.Unit = null,
+    nodeEdit: /* e */ NodeEditEventArgs => scala.Unit = null,
+    nodeExpand: /* e */ NodeExpandEventArgs => scala.Unit = null,
+    nodePaste: /* e */ NodePasteEventArgs => scala.Unit = null,
+    nodeSelect: /* e */ NodeSelectEventArgs => scala.Unit = null,
+    nodeUncheck: /* e */ NodeUncheckEventArgs => scala.Unit = null,
+    nodeUnselect: /* e */ NodeUnselectEventArgs => scala.Unit = null,
+    ready: /* e */ ReadyEventArgs => scala.Unit = null,
     selectedNode: scala.Int | scala.Double = null,
     selectedNodes: js.Array[_] = null,
     showCheckbox: js.UndefOr[scala.Boolean] = js.undefined,
@@ -294,19 +294,19 @@ object Model {
     if (!js.isUndefined(allowMultiSelection)) __obj.updateDynamic("allowMultiSelection")(allowMultiSelection)
     if (!js.isUndefined(autoCheck)) __obj.updateDynamic("autoCheck")(autoCheck)
     if (!js.isUndefined(autoCheckParentNode)) __obj.updateDynamic("autoCheckParentNode")(autoCheckParentNode)
-    if (beforeAdd != null) __obj.updateDynamic("beforeAdd")(beforeAdd)
-    if (beforeCollapse != null) __obj.updateDynamic("beforeCollapse")(beforeCollapse)
-    if (beforeCut != null) __obj.updateDynamic("beforeCut")(beforeCut)
-    if (beforeDelete != null) __obj.updateDynamic("beforeDelete")(beforeDelete)
-    if (beforeEdit != null) __obj.updateDynamic("beforeEdit")(beforeEdit)
-    if (beforeExpand != null) __obj.updateDynamic("beforeExpand")(beforeExpand)
-    if (beforeLoad != null) __obj.updateDynamic("beforeLoad")(beforeLoad)
-    if (beforePaste != null) __obj.updateDynamic("beforePaste")(beforePaste)
-    if (beforeSelect != null) __obj.updateDynamic("beforeSelect")(beforeSelect)
+    if (beforeAdd != null) __obj.updateDynamic("beforeAdd")(js.Any.fromFunction1(beforeAdd))
+    if (beforeCollapse != null) __obj.updateDynamic("beforeCollapse")(js.Any.fromFunction1(beforeCollapse))
+    if (beforeCut != null) __obj.updateDynamic("beforeCut")(js.Any.fromFunction1(beforeCut))
+    if (beforeDelete != null) __obj.updateDynamic("beforeDelete")(js.Any.fromFunction1(beforeDelete))
+    if (beforeEdit != null) __obj.updateDynamic("beforeEdit")(js.Any.fromFunction1(beforeEdit))
+    if (beforeExpand != null) __obj.updateDynamic("beforeExpand")(js.Any.fromFunction1(beforeExpand))
+    if (beforeLoad != null) __obj.updateDynamic("beforeLoad")(js.Any.fromFunction1(beforeLoad))
+    if (beforePaste != null) __obj.updateDynamic("beforePaste")(js.Any.fromFunction1(beforePaste))
+    if (beforeSelect != null) __obj.updateDynamic("beforeSelect")(js.Any.fromFunction1(beforeSelect))
     if (checkedNodes != null) __obj.updateDynamic("checkedNodes")(checkedNodes)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
     if (!js.isUndefined(enableMultipleExpand)) __obj.updateDynamic("enableMultipleExpand")(enableMultipleExpand)
     if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
@@ -318,28 +318,28 @@ object Model {
     if (!js.isUndefined(fullRowSelect)) __obj.updateDynamic("fullRowSelect")(fullRowSelect)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
-    if (inlineEditValidation != null) __obj.updateDynamic("inlineEditValidation")(inlineEditValidation)
-    if (keyPress != null) __obj.updateDynamic("keyPress")(keyPress)
-    if (loadError != null) __obj.updateDynamic("loadError")(loadError)
+    if (inlineEditValidation != null) __obj.updateDynamic("inlineEditValidation")(js.Any.fromFunction1(inlineEditValidation))
+    if (keyPress != null) __obj.updateDynamic("keyPress")(js.Any.fromFunction1(keyPress))
+    if (loadError != null) __obj.updateDynamic("loadError")(js.Any.fromFunction1(loadError))
     if (!js.isUndefined(loadOnDemand)) __obj.updateDynamic("loadOnDemand")(loadOnDemand)
-    if (loadSuccess != null) __obj.updateDynamic("loadSuccess")(loadSuccess)
-    if (nodeAdd != null) __obj.updateDynamic("nodeAdd")(nodeAdd)
-    if (nodeCheck != null) __obj.updateDynamic("nodeCheck")(nodeCheck)
-    if (nodeClick != null) __obj.updateDynamic("nodeClick")(nodeClick)
-    if (nodeCollapse != null) __obj.updateDynamic("nodeCollapse")(nodeCollapse)
-    if (nodeCut != null) __obj.updateDynamic("nodeCut")(nodeCut)
-    if (nodeDelete != null) __obj.updateDynamic("nodeDelete")(nodeDelete)
-    if (nodeDrag != null) __obj.updateDynamic("nodeDrag")(nodeDrag)
-    if (nodeDragStart != null) __obj.updateDynamic("nodeDragStart")(nodeDragStart)
-    if (nodeDragStop != null) __obj.updateDynamic("nodeDragStop")(nodeDragStop)
-    if (nodeDropped != null) __obj.updateDynamic("nodeDropped")(nodeDropped)
-    if (nodeEdit != null) __obj.updateDynamic("nodeEdit")(nodeEdit)
-    if (nodeExpand != null) __obj.updateDynamic("nodeExpand")(nodeExpand)
-    if (nodePaste != null) __obj.updateDynamic("nodePaste")(nodePaste)
-    if (nodeSelect != null) __obj.updateDynamic("nodeSelect")(nodeSelect)
-    if (nodeUncheck != null) __obj.updateDynamic("nodeUncheck")(nodeUncheck)
-    if (nodeUnselect != null) __obj.updateDynamic("nodeUnselect")(nodeUnselect)
-    if (ready != null) __obj.updateDynamic("ready")(ready)
+    if (loadSuccess != null) __obj.updateDynamic("loadSuccess")(js.Any.fromFunction1(loadSuccess))
+    if (nodeAdd != null) __obj.updateDynamic("nodeAdd")(js.Any.fromFunction1(nodeAdd))
+    if (nodeCheck != null) __obj.updateDynamic("nodeCheck")(js.Any.fromFunction1(nodeCheck))
+    if (nodeClick != null) __obj.updateDynamic("nodeClick")(js.Any.fromFunction1(nodeClick))
+    if (nodeCollapse != null) __obj.updateDynamic("nodeCollapse")(js.Any.fromFunction1(nodeCollapse))
+    if (nodeCut != null) __obj.updateDynamic("nodeCut")(js.Any.fromFunction1(nodeCut))
+    if (nodeDelete != null) __obj.updateDynamic("nodeDelete")(js.Any.fromFunction1(nodeDelete))
+    if (nodeDrag != null) __obj.updateDynamic("nodeDrag")(js.Any.fromFunction1(nodeDrag))
+    if (nodeDragStart != null) __obj.updateDynamic("nodeDragStart")(js.Any.fromFunction1(nodeDragStart))
+    if (nodeDragStop != null) __obj.updateDynamic("nodeDragStop")(js.Any.fromFunction1(nodeDragStop))
+    if (nodeDropped != null) __obj.updateDynamic("nodeDropped")(js.Any.fromFunction1(nodeDropped))
+    if (nodeEdit != null) __obj.updateDynamic("nodeEdit")(js.Any.fromFunction1(nodeEdit))
+    if (nodeExpand != null) __obj.updateDynamic("nodeExpand")(js.Any.fromFunction1(nodeExpand))
+    if (nodePaste != null) __obj.updateDynamic("nodePaste")(js.Any.fromFunction1(nodePaste))
+    if (nodeSelect != null) __obj.updateDynamic("nodeSelect")(js.Any.fromFunction1(nodeSelect))
+    if (nodeUncheck != null) __obj.updateDynamic("nodeUncheck")(js.Any.fromFunction1(nodeUncheck))
+    if (nodeUnselect != null) __obj.updateDynamic("nodeUnselect")(js.Any.fromFunction1(nodeUnselect))
+    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
     if (selectedNode != null) __obj.updateDynamic("selectedNode")(selectedNode.asInstanceOf[js.Any])
     if (selectedNodes != null) __obj.updateDynamic("selectedNodes")(selectedNodes)
     if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox)

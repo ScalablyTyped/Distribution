@@ -24,14 +24,14 @@ trait NavigationItem
 object NavigationItem {
   @scala.inline
   def apply(
-    getId: js.Function0[java.lang.String],
-    getLabel: js.Function0[java.lang.String],
-    getVisible: js.Function0[scala.Boolean],
-    setFocus: js.Function0[scala.Unit],
-    setLabel: js.Function1[java.lang.String, scala.Unit],
-    setVisible: js.Function1[scala.Boolean, scala.Unit]
+    getId: () => java.lang.String,
+    getLabel: () => java.lang.String,
+    getVisible: () => scala.Boolean,
+    setFocus: () => scala.Unit,
+    setLabel: java.lang.String => scala.Unit,
+    setVisible: scala.Boolean => scala.Unit
   ): NavigationItem = {
-    val __obj = js.Dynamic.literal(getId = getId, getLabel = getLabel, getVisible = getVisible, setFocus = setFocus, setLabel = setLabel, setVisible = setVisible)
+    val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId), getLabel = js.Any.fromFunction0(getLabel), getVisible = js.Any.fromFunction0(getVisible), setFocus = js.Any.fromFunction0(setFocus), setLabel = js.Any.fromFunction1(setLabel), setVisible = js.Any.fromFunction1(setVisible))
   
     __obj.asInstanceOf[NavigationItem]
   }

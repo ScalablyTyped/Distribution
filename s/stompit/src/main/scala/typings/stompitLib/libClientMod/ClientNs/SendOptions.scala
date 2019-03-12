@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait SendOptions
   extends nodeLib.streamMod.internalNs.WritableOptions {
-  def onError(err: nodeLib.Error): scala.Unit
+  def onError(err: stdLib.Error): scala.Unit
   def onReceipt(): scala.Unit
 }
 
 object SendOptions {
   @scala.inline
   def apply(
-    onError: js.Function1[nodeLib.Error, scala.Unit],
-    onReceipt: js.Function0[scala.Unit],
+    onError: stdLib.Error => scala.Unit,
+    onReceipt: () => scala.Unit,
     decodeStrings: js.UndefOr[scala.Boolean] = js.undefined,
     destroy: js.ThisFunction2[
       /* this */ nodeLib.streamMod.internalNs.Writable, 
@@ -44,7 +44,7 @@ object SendOptions {
       scala.Unit
     ] = null
   ): SendOptions = {
-    val __obj = js.Dynamic.literal(onError = onError, onReceipt = onReceipt)
+    val __obj = js.Dynamic.literal(onError = js.Any.fromFunction1(onError), onReceipt = js.Any.fromFunction0(onReceipt))
     if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings)
     if (destroy != null) __obj.updateDynamic("destroy")(destroy)
     if (`final` != null) __obj.updateDynamic("final")(`final`)

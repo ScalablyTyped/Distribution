@@ -1265,7 +1265,7 @@ object wxNs extends js.Object {
     /** 启动小程序的query参数 */
     var query: js.Object
     /** 来源信息。从另一个小程序、公众号或App进入小程序时返回。范泽返回{} */
-    var referrerInfo: referrerInfo
+    var referrerInfo: weappDashApiLib.weappDashApiMod.wxNs.referrerInfo
     /** 启动小程序的场景值 */
     var scene: scala.Double
     var shareTicket: java.lang.String

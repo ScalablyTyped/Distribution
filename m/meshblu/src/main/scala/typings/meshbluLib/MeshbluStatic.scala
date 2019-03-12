@@ -16,10 +16,8 @@ trait MeshbluStatic extends js.Object {
 
 object MeshbluStatic {
   @scala.inline
-  def apply(
-    createConnection: js.Function1[meshbluLib.MeshbluNs.ConnectionOptions, meshbluLib.MeshbluNs.Connection]
-  ): MeshbluStatic = {
-    val __obj = js.Dynamic.literal(createConnection = createConnection)
+  def apply(createConnection: meshbluLib.MeshbluNs.ConnectionOptions => meshbluLib.MeshbluNs.Connection): MeshbluStatic = {
+    val __obj = js.Dynamic.literal(createConnection = js.Any.fromFunction1(createConnection))
   
     __obj.asInstanceOf[MeshbluStatic]
   }

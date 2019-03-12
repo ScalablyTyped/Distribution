@@ -12,12 +12,9 @@ trait GlobalInstance extends js.Object {
 object GlobalInstance {
   @scala.inline
   def apply(
-    addSidebarContentPanel: js.Function1[
-      inboxsdkLib.inboxsdkMod.InboxSDKNs.ConversationsNs.ContentPanelDescriptor, 
-      inboxsdkLib.inboxsdkMod.InboxSDKNs.ConversationsNs.ContentPanelView
-    ]
+    addSidebarContentPanel: inboxsdkLib.inboxsdkMod.InboxSDKNs.ConversationsNs.ContentPanelDescriptor => inboxsdkLib.inboxsdkMod.InboxSDKNs.ConversationsNs.ContentPanelView
   ): GlobalInstance = {
-    val __obj = js.Dynamic.literal(addSidebarContentPanel = addSidebarContentPanel)
+    val __obj = js.Dynamic.literal(addSidebarContentPanel = js.Any.fromFunction1(addSidebarContentPanel))
   
     __obj.asInstanceOf[GlobalInstance]
   }

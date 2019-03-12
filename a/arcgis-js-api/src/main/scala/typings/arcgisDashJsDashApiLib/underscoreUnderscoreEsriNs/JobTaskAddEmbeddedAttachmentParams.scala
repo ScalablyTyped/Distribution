@@ -32,12 +32,12 @@ object JobTaskAddEmbeddedAttachmentParams {
   def apply(
     constructor: js.Function,
     form: js.Any,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     jobId: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     user: java.lang.String
   ): JobTaskAddEmbeddedAttachmentParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, form = form, hasOwnProperty = hasOwnProperty, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, user = user)
+    val __obj = js.Dynamic.literal(constructor = constructor, form = form, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobId = jobId, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user)
   
     __obj.asInstanceOf[JobTaskAddEmbeddedAttachmentParams]
   }

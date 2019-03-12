@@ -12,8 +12,8 @@ trait Anon_CleanCache extends js.Object {
 
 object Anon_CleanCache {
   @scala.inline
-  def apply(cleanCache: js.Function0[scala.Unit]): Anon_CleanCache = {
-    val __obj = js.Dynamic.literal(cleanCache = cleanCache)
+  def apply(cleanCache: () => scala.Unit): Anon_CleanCache = {
+    val __obj = js.Dynamic.literal(cleanCache = js.Any.fromFunction0(cleanCache))
   
     __obj.asInstanceOf[Anon_CleanCache]
   }

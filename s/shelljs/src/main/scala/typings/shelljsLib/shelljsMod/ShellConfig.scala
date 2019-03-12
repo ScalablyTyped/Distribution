@@ -37,12 +37,12 @@ object ShellConfig {
   def apply(
     fatal: scala.Boolean,
     globOptions: globLib.globMod.GNs.IOptions,
-    reset: js.Function0[scala.Unit],
+    reset: () => scala.Unit,
     silent: scala.Boolean,
     verbose: scala.Boolean,
     execPath: java.lang.String = null
   ): ShellConfig = {
-    val __obj = js.Dynamic.literal(fatal = fatal, globOptions = globOptions, reset = reset, silent = silent, verbose = verbose)
+    val __obj = js.Dynamic.literal(fatal = fatal, globOptions = globOptions, reset = js.Any.fromFunction0(reset), silent = silent, verbose = verbose)
     if (execPath != null) __obj.updateDynamic("execPath")(execPath)
     __obj.asInstanceOf[ShellConfig]
   }

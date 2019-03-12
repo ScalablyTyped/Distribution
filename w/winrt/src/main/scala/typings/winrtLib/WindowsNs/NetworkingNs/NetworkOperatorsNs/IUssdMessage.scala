@@ -16,11 +16,11 @@ object IUssdMessage {
   @scala.inline
   def apply(
     dataCodingScheme: scala.Double,
-    getPayload: js.Function0[stdLib.Uint8Array],
+    getPayload: () => stdLib.Uint8Array,
     payloadAsText: java.lang.String,
-    setPayload: js.Function1[stdLib.Uint8Array, scala.Unit]
+    setPayload: stdLib.Uint8Array => scala.Unit
   ): IUssdMessage = {
-    val __obj = js.Dynamic.literal(dataCodingScheme = dataCodingScheme, getPayload = getPayload, payloadAsText = payloadAsText, setPayload = setPayload)
+    val __obj = js.Dynamic.literal(dataCodingScheme = dataCodingScheme, getPayload = js.Any.fromFunction0(getPayload), payloadAsText = payloadAsText, setPayload = js.Any.fromFunction1(setPayload))
   
     __obj.asInstanceOf[IUssdMessage]
   }

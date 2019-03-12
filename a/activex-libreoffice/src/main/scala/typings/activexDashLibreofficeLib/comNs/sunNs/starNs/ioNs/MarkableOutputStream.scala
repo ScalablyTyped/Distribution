@@ -23,25 +23,25 @@ object MarkableOutputStream {
     OutputStream: XOutputStream,
     Predecessor: XConnectable,
     Successor: XConnectable,
-    acquire: js.Function0[scala.Unit],
-    closeOutput: js.Function0[scala.Unit],
-    createMark: js.Function0[scala.Double],
-    deleteMark: js.Function1[scala.Double, scala.Unit],
-    flush: js.Function0[scala.Unit],
-    getOutputStream: js.Function0[XOutputStream],
-    getPredecessor: js.Function0[XConnectable],
-    getSuccessor: js.Function0[XConnectable],
-    jumpToFurthest: js.Function0[scala.Unit],
-    jumpToMark: js.Function1[scala.Double, scala.Unit],
-    offsetToMark: js.Function1[scala.Double, scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setOutputStream: js.Function1[XOutputStream, scala.Unit],
-    setPredecessor: js.Function1[XConnectable, scala.Unit],
-    setSuccessor: js.Function1[XConnectable, scala.Unit],
-    writeBytes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
+    acquire: () => scala.Unit,
+    closeOutput: () => scala.Unit,
+    createMark: () => scala.Double,
+    deleteMark: scala.Double => scala.Unit,
+    flush: () => scala.Unit,
+    getOutputStream: () => XOutputStream,
+    getPredecessor: () => XConnectable,
+    getSuccessor: () => XConnectable,
+    jumpToFurthest: () => scala.Unit,
+    jumpToMark: scala.Double => scala.Unit,
+    offsetToMark: scala.Double => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setOutputStream: XOutputStream => scala.Unit,
+    setPredecessor: XConnectable => scala.Unit,
+    setSuccessor: XConnectable => scala.Unit,
+    writeBytes: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => scala.Unit
   ): MarkableOutputStream = {
-    val __obj = js.Dynamic.literal(OutputStream = OutputStream, Predecessor = Predecessor, Successor = Successor, acquire = acquire, closeOutput = closeOutput, createMark = createMark, deleteMark = deleteMark, flush = flush, getOutputStream = getOutputStream, getPredecessor = getPredecessor, getSuccessor = getSuccessor, jumpToFurthest = jumpToFurthest, jumpToMark = jumpToMark, offsetToMark = offsetToMark, queryInterface = queryInterface, release = release, setOutputStream = setOutputStream, setPredecessor = setPredecessor, setSuccessor = setSuccessor, writeBytes = writeBytes)
+    val __obj = js.Dynamic.literal(OutputStream = OutputStream, Predecessor = Predecessor, Successor = Successor, acquire = js.Any.fromFunction0(acquire), closeOutput = js.Any.fromFunction0(closeOutput), createMark = js.Any.fromFunction0(createMark), deleteMark = js.Any.fromFunction1(deleteMark), flush = js.Any.fromFunction0(flush), getOutputStream = js.Any.fromFunction0(getOutputStream), getPredecessor = js.Any.fromFunction0(getPredecessor), getSuccessor = js.Any.fromFunction0(getSuccessor), jumpToFurthest = js.Any.fromFunction0(jumpToFurthest), jumpToMark = js.Any.fromFunction1(jumpToMark), offsetToMark = js.Any.fromFunction1(offsetToMark), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setOutputStream = js.Any.fromFunction1(setOutputStream), setPredecessor = js.Any.fromFunction1(setPredecessor), setSuccessor = js.Any.fromFunction1(setSuccessor), writeBytes = js.Any.fromFunction1(writeBytes))
   
     __obj.asInstanceOf[MarkableOutputStream]
   }

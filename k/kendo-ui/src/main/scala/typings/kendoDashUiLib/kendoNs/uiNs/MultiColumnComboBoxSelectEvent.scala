@@ -13,13 +13,13 @@ trait MultiColumnComboBoxSelectEvent extends MultiColumnComboBoxEvent {
 object MultiColumnComboBoxSelectEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: MultiColumnComboBox,
     dataItem: js.Any = null,
     item: kendoDashUiLib.JQuery = null
   ): MultiColumnComboBoxSelectEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (dataItem != null) __obj.updateDynamic("dataItem")(dataItem)
     if (item != null) __obj.updateDynamic("item")(item)
     __obj.asInstanceOf[MultiColumnComboBoxSelectEvent]

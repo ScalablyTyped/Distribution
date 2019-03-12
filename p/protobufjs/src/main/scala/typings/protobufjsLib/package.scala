@@ -31,7 +31,7 @@ package object protobufjsLib {
     * @param error Error, if any, otherwise `null`
     * @param [contents] File contents, if there hasn't been an error
     */
-  type FetchCallback = js.Function2[/* error */ nodeLib.Error, /* contents */ js.UndefOr[java.lang.String], scala.Unit]
+  type FetchCallback = js.Function2[/* error */ stdLib.Error, /* contents */ js.UndefOr[java.lang.String], scala.Unit]
   /**
     * Decorator function as returned by {@link Field.d} and {@link MapField.d} (TypeScript).
     * @param prototype Target prototype
@@ -44,7 +44,7 @@ package object protobufjsLib {
     * @param [root] Root, if there hasn't been an error
     */
   type LoadCallback = js.Function2[
-    /* error */ nodeLib.Error | scala.Null, 
+    /* error */ stdLib.Error | scala.Null, 
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Root */ /* root */ js.UndefOr[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Root */ js.Any
     ], 
@@ -106,7 +106,7 @@ package object protobufjsLib {
     * @param [response] Response data or `null` to signal end of stream, if there hasn't been an error
     */
   type RPCImplCallback = js.Function2[
-    /* error */ nodeLib.Error | scala.Null, 
+    /* error */ stdLib.Error | scala.Null, 
     /* response */ js.UndefOr[stdLib.Uint8Array | scala.Null], 
     scala.Unit
   ]
@@ -180,5 +180,5 @@ package object protobufjsLib {
     * @param error Error, if any
     * @param params Additional arguments
     */
-  type asPromiseCallback = js.Function2[/* error */ nodeLib.Error | scala.Null, /* repeated */ js.Any, scala.Unit]
+  type asPromiseCallback = js.Function2[/* error */ stdLib.Error | scala.Null, /* repeated */ js.Any, scala.Unit]
 }

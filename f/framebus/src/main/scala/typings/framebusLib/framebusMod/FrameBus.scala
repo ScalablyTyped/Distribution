@@ -21,18 +21,18 @@ trait FrameBus extends js.Object {
 object FrameBus {
   @scala.inline
   def apply(
-    emit: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Boolean],
-    off: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, _], scala.Boolean],
-    on: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, _], scala.Boolean],
-    pub: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Boolean],
-    publish: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Boolean],
-    sub: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, _], scala.Boolean],
-    subscribe: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, _], scala.Boolean],
-    trigger: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Boolean],
-    unsub: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, _], scala.Boolean],
-    unsubscribe: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, _], scala.Boolean]
+    emit: (java.lang.String, /* repeated */ js.Any) => scala.Boolean,
+    off: (java.lang.String, js.Function1[/* repeated */ js.Any, _]) => scala.Boolean,
+    on: (java.lang.String, js.Function1[/* repeated */ js.Any, _]) => scala.Boolean,
+    pub: (java.lang.String, /* repeated */ js.Any) => scala.Boolean,
+    publish: (java.lang.String, /* repeated */ js.Any) => scala.Boolean,
+    sub: (java.lang.String, js.Function1[/* repeated */ js.Any, _]) => scala.Boolean,
+    subscribe: (java.lang.String, js.Function1[/* repeated */ js.Any, _]) => scala.Boolean,
+    trigger: (java.lang.String, /* repeated */ js.Any) => scala.Boolean,
+    unsub: (java.lang.String, js.Function1[/* repeated */ js.Any, _]) => scala.Boolean,
+    unsubscribe: (java.lang.String, js.Function1[/* repeated */ js.Any, _]) => scala.Boolean
   ): FrameBus = {
-    val __obj = js.Dynamic.literal(emit = emit, off = off, on = on, pub = pub, publish = publish, sub = sub, subscribe = subscribe, trigger = trigger, unsub = unsub, unsubscribe = unsubscribe)
+    val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), pub = js.Any.fromFunction2(pub), publish = js.Any.fromFunction2(publish), sub = js.Any.fromFunction2(sub), subscribe = js.Any.fromFunction2(subscribe), trigger = js.Any.fromFunction2(trigger), unsub = js.Any.fromFunction2(unsub), unsubscribe = js.Any.fromFunction2(unsubscribe))
   
     __obj.asInstanceOf[FrameBus]
   }

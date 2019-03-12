@@ -22,6 +22,6 @@ trait RegistryServiceManager
     * @returns sequence of all names
     */
   /* InferMemberOverrides */
-  override def getAvailableServiceNames(): activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  override def getAvailableServiceNames(): stdLib.SafeArray[java.lang.String] = js.native
 }
 

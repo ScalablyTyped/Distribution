@@ -15,28 +15,15 @@ object Foldable2v {
   @scala.inline
   def apply[F](
     URI: F,
-    foldMap: js.Function1[
-      fpDashTsLib.libMonoidMod.Monoid[js.Any], 
-      js.Function2[
-        /* fa */ fpDashTsLib.libHKTMod.HKT[F, _], 
-        /* f */ js.Function1[/* a */ js.Any, js.Any], 
-        js.Any
-      ]
-    ],
-    foldr: js.Function3[
-      fpDashTsLib.libHKTMod.HKT[F, js.Any], 
-      js.Any, 
-      js.Function2[js.Any, js.Any, js.Any], 
+    foldMap: fpDashTsLib.libMonoidMod.Monoid[js.Any] => js.Function2[
+      /* fa */ fpDashTsLib.libHKTMod.HKT[F, _], 
+      /* f */ js.Function1[/* a */ js.Any, js.Any], 
       js.Any
     ],
-    reduce: js.Function3[
-      fpDashTsLib.libHKTMod.HKT[F, js.Any], 
-      js.Any, 
-      js.Function2[js.Any, js.Any, js.Any], 
-      js.Any
-    ]
+    foldr: (fpDashTsLib.libHKTMod.HKT[F, js.Any], js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any,
+    reduce: (fpDashTsLib.libHKTMod.HKT[F, js.Any], js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any
   ): Foldable2v[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], foldMap = foldMap, foldr = foldr, reduce = reduce)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], foldMap = js.Any.fromFunction1(foldMap), foldr = js.Any.fromFunction3(foldr), reduce = js.Any.fromFunction3(reduce))
   
     __obj.asInstanceOf[Foldable2v[F]]
   }

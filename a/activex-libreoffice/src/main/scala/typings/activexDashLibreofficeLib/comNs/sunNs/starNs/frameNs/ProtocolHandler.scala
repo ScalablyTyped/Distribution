@@ -20,22 +20,14 @@ trait ProtocolHandler
 object ProtocolHandler {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    queryDispatch: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
-      java.lang.String, 
-      scala.Double, 
-      XDispatch
-    ],
-    queryDispatches: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DispatchDescriptor], 
-      activexDashInteropLib.SafeArray[XDispatch]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    queryDispatch: (activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, java.lang.String, scala.Double) => XDispatch,
+    queryDispatches: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DispatchDescriptor] => stdLib.SafeArray[XDispatch],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): ProtocolHandler = {
-    val __obj = js.Dynamic.literal(acquire = acquire, initialize = initialize, queryDispatch = queryDispatch, queryDispatches = queryDispatches, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), initialize = js.Any.fromFunction1(initialize), queryDispatch = js.Any.fromFunction3(queryDispatch), queryDispatches = js.Any.fromFunction1(queryDispatches), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[ProtocolHandler]
   }

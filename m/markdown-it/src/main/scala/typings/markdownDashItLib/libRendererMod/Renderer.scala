@@ -16,18 +16,13 @@ trait Renderer extends js.Object {
 object Renderer {
   @scala.inline
   def apply(
-    render: js.Function3[js.Array[markdownDashItLib.libTokenMod.namespaced], js.Any, js.Any, java.lang.String],
-    renderAttrs: js.Function1[markdownDashItLib.libTokenMod.namespaced, java.lang.String],
-    renderInline: js.Function3[js.Array[markdownDashItLib.libTokenMod.namespaced], js.Any, js.Any, java.lang.String],
-    renderToken: js.Function3[
-      js.Array[markdownDashItLib.libTokenMod.namespaced], 
-      scala.Double, 
-      js.Any, 
-      java.lang.String
-    ],
+    render: (js.Array[markdownDashItLib.libTokenMod.namespaced], js.Any, js.Any) => java.lang.String,
+    renderAttrs: markdownDashItLib.libTokenMod.namespaced => java.lang.String,
+    renderInline: (js.Array[markdownDashItLib.libTokenMod.namespaced], js.Any, js.Any) => java.lang.String,
+    renderToken: (js.Array[markdownDashItLib.libTokenMod.namespaced], scala.Double, js.Any) => java.lang.String,
     rules: org.scalablytyped.runtime.StringDictionary[markdownDashItLib.libMod.MarkdownItNs.TokenRender]
   ): Renderer = {
-    val __obj = js.Dynamic.literal(render = render, renderAttrs = renderAttrs, renderInline = renderInline, renderToken = renderToken, rules = rules)
+    val __obj = js.Dynamic.literal(render = js.Any.fromFunction3(render), renderAttrs = js.Any.fromFunction1(renderAttrs), renderInline = js.Any.fromFunction3(renderInline), renderToken = js.Any.fromFunction3(renderToken), rules = rules)
   
     __obj.asInstanceOf[Renderer]
   }

@@ -35,18 +35,18 @@ object NotifyBLECharacteristicValueChangeOptions {
     characteristicId: java.lang.String,
     deviceId: java.lang.String,
     serviceId: java.lang.String,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    complete: /* res */ js.Any => scala.Unit = null,
     descriptorId: java.lang.String = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
+    fail: js.Any => scala.Unit = null,
     state: js.UndefOr[scala.Boolean] = js.undefined,
-    success: js.Function1[js.Any, scala.Unit] = null
+    success: js.Any => scala.Unit = null
   ): NotifyBLECharacteristicValueChangeOptions = {
     val __obj = js.Dynamic.literal(characteristicId = characteristicId, deviceId = deviceId, serviceId = serviceId)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (descriptorId != null) __obj.updateDynamic("descriptorId")(descriptorId)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (!js.isUndefined(state)) __obj.updateDynamic("state")(state)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[NotifyBLECharacteristicValueChangeOptions]
   }
 }

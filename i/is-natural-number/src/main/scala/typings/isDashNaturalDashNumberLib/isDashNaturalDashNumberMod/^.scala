@@ -13,9 +13,6 @@ object ^ extends js.Object {
     * If not, or the argument is not a number, it returns false.
     */
   def apply(number: scala.Double | java.lang.String): scala.Boolean = js.native
-  def apply(
-    number: scala.Double | java.lang.String,
-    option: isDashNaturalDashNumberLib.isDashNaturalDashNumberMod.Options
-  ): scala.Boolean = js.native
+  def apply(number: scala.Double | java.lang.String, option: Options): scala.Boolean = js.native
 }
 

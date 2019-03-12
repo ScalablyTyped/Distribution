@@ -14,14 +14,14 @@ trait IMatrixColumnOwner extends ILocalizableOwner {
 object IMatrixColumnOwner {
   @scala.inline
   def apply(
-    getCellType: js.Function0[java.lang.String],
-    getLocale: js.Function0[java.lang.String],
-    getMarkdownHtml: js.Function1[java.lang.String, java.lang.String],
-    getProcessedText: js.Function1[java.lang.String, java.lang.String],
-    getRequiredText: js.Function0[java.lang.String],
-    onColumnPropertiesChanged: js.Function1[MatrixDropdownColumn, scala.Unit]
+    getCellType: () => java.lang.String,
+    getLocale: () => java.lang.String,
+    getMarkdownHtml: java.lang.String => java.lang.String,
+    getProcessedText: java.lang.String => java.lang.String,
+    getRequiredText: () => java.lang.String,
+    onColumnPropertiesChanged: MatrixDropdownColumn => scala.Unit
   ): IMatrixColumnOwner = {
-    val __obj = js.Dynamic.literal(getCellType = getCellType, getLocale = getLocale, getMarkdownHtml = getMarkdownHtml, getProcessedText = getProcessedText, getRequiredText = getRequiredText, onColumnPropertiesChanged = onColumnPropertiesChanged)
+    val __obj = js.Dynamic.literal(getCellType = js.Any.fromFunction0(getCellType), getLocale = js.Any.fromFunction0(getLocale), getMarkdownHtml = js.Any.fromFunction1(getMarkdownHtml), getProcessedText = js.Any.fromFunction1(getProcessedText), getRequiredText = js.Any.fromFunction0(getRequiredText), onColumnPropertiesChanged = js.Any.fromFunction1(onColumnPropertiesChanged))
   
     __obj.asInstanceOf[IMatrixColumnOwner]
   }

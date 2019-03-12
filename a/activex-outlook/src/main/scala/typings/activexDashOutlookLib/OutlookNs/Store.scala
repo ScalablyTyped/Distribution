@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.Store")
 @js.native
 class Store protected () extends js.Object {
-  val Application: Application = js.native
-  val Categories: Categories = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
+  val Categories: activexDashOutlookLib.OutlookNs.Categories = js.native
   val Class: OlObjectClass = js.native
   val DisplayName: java.lang.String = js.native
   val ExchangeStoreType: OlExchangeStoreType = js.native
@@ -22,7 +22,7 @@ class Store protected () extends js.Object {
   val MAPIOBJECT: js.Any = js.native
   var `Outlook.Store_typekey`: Store = js.native
   val Parent: js.Any = js.native
-  val PropertyAccessor: PropertyAccessor = js.native
+  val PropertyAccessor: activexDashOutlookLib.OutlookNs.PropertyAccessor = js.native
   val Session: NameSpace = js.native
   val StoreID: java.lang.String = js.native
   def GetDefaultFolder(FolderType: OlDefaultFolders): Folder = js.native

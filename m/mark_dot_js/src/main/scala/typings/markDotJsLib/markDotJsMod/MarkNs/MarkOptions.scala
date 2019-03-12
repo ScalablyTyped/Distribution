@@ -47,23 +47,17 @@ object MarkOptions {
     className: java.lang.String = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     diacritics: js.UndefOr[scala.Boolean] = js.undefined,
-    done: js.Function1[/* marksTotal */ scala.Double, scala.Unit] = null,
-    each: js.Function1[/* element */ stdLib.Element, scala.Unit] = null,
+    done: /* marksTotal */ scala.Double => scala.Unit = null,
+    each: /* element */ stdLib.Element => scala.Unit = null,
     element: java.lang.String = null,
     exclude: js.Array[java.lang.String] = null,
-    filter: js.Function4[
-      /* textNode */ stdLib.Element, 
-      /* term */ java.lang.String, 
-      /* marksSoFar */ scala.Double, 
-      /* marksTotal */ scala.Double, 
-      scala.Boolean
-    ] = null,
+    filter: (/* textNode */ stdLib.Element, /* term */ java.lang.String, /* marksSoFar */ scala.Double, /* marksTotal */ scala.Double) => scala.Boolean = null,
     iframes: js.UndefOr[scala.Boolean] = js.undefined,
     iframesTimeout: scala.Int | scala.Double = null,
     ignoreJoiners: js.UndefOr[scala.Boolean] = js.undefined,
     ignorePunctuation: js.Array[java.lang.String] = null,
     log: js.Object = null,
-    noMatch: js.Function1[/* term */ java.lang.String, scala.Unit] = null,
+    noMatch: /* term */ java.lang.String => scala.Unit = null,
     separateWordSearch: js.UndefOr[scala.Boolean] = js.undefined,
     synonyms: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     wildcards: markDotJsLib.markDotJsLibStrings.disabled | markDotJsLib.markDotJsLibStrings.enabled | markDotJsLib.markDotJsLibStrings.withSpaces = null
@@ -75,17 +69,17 @@ object MarkOptions {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (!js.isUndefined(diacritics)) __obj.updateDynamic("diacritics")(diacritics)
-    if (done != null) __obj.updateDynamic("done")(done)
-    if (each != null) __obj.updateDynamic("each")(each)
+    if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction1(done))
+    if (each != null) __obj.updateDynamic("each")(js.Any.fromFunction1(each))
     if (element != null) __obj.updateDynamic("element")(element)
     if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction4(filter))
     if (!js.isUndefined(iframes)) __obj.updateDynamic("iframes")(iframes)
     if (iframesTimeout != null) __obj.updateDynamic("iframesTimeout")(iframesTimeout.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreJoiners)) __obj.updateDynamic("ignoreJoiners")(ignoreJoiners)
     if (ignorePunctuation != null) __obj.updateDynamic("ignorePunctuation")(ignorePunctuation)
     if (log != null) __obj.updateDynamic("log")(log)
-    if (noMatch != null) __obj.updateDynamic("noMatch")(noMatch)
+    if (noMatch != null) __obj.updateDynamic("noMatch")(js.Any.fromFunction1(noMatch))
     if (!js.isUndefined(separateWordSearch)) __obj.updateDynamic("separateWordSearch")(separateWordSearch)
     if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms)
     if (wildcards != null) __obj.updateDynamic("wildcards")(wildcards.asInstanceOf[js.Any])

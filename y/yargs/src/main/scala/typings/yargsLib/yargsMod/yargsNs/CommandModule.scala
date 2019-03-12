@@ -16,13 +16,13 @@ trait CommandModule[T, U] extends js.Object {
 object CommandModule {
   @scala.inline
   def apply[T, U](
-    handler: js.Function1[Arguments[U], scala.Unit],
+    handler: Arguments[U] => scala.Unit,
     aliases: js.Array[java.lang.String] | java.lang.String = null,
     builder: CommandBuilder[T, U] = null,
     command: js.Array[java.lang.String] | java.lang.String = null,
     describe: java.lang.String | yargsLib.yargsLibNumbers.`false` = null
   ): CommandModule[T, U] = {
-    val __obj = js.Dynamic.literal(handler = handler)
+    val __obj = js.Dynamic.literal(handler = js.Any.fromFunction1(handler))
     if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
     if (builder != null) __obj.updateDynamic("builder")(builder.asInstanceOf[js.Any])
     if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])

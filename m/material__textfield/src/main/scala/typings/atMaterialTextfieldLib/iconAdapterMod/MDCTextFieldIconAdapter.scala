@@ -35,14 +35,14 @@ trait MDCTextFieldIconAdapter extends js.Object {
 object MDCTextFieldIconAdapter {
   @scala.inline
   def apply(
-    deregisterInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    getAttr: js.Function1[java.lang.String, java.lang.String],
-    notifyIconAction: js.Function0[scala.Unit],
-    registerInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    removeAttr: js.Function1[java.lang.String, scala.Unit],
-    setAttr: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    deregisterInteractionHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    getAttr: java.lang.String => java.lang.String,
+    notifyIconAction: () => scala.Unit,
+    registerInteractionHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    removeAttr: java.lang.String => scala.Unit,
+    setAttr: (java.lang.String, java.lang.String) => scala.Unit
   ): MDCTextFieldIconAdapter = {
-    val __obj = js.Dynamic.literal(deregisterInteractionHandler = deregisterInteractionHandler, getAttr = getAttr, notifyIconAction = notifyIconAction, registerInteractionHandler = registerInteractionHandler, removeAttr = removeAttr, setAttr = setAttr)
+    val __obj = js.Dynamic.literal(deregisterInteractionHandler = js.Any.fromFunction2(deregisterInteractionHandler), getAttr = js.Any.fromFunction1(getAttr), notifyIconAction = js.Any.fromFunction0(notifyIconAction), registerInteractionHandler = js.Any.fromFunction2(registerInteractionHandler), removeAttr = js.Any.fromFunction1(removeAttr), setAttr = js.Any.fromFunction2(setAttr))
   
     __obj.asInstanceOf[MDCTextFieldIconAdapter]
   }

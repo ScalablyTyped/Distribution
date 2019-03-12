@@ -62,30 +62,30 @@ object IRoute {
     action: java.lang.String = null,
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     conditions: js.Any = null,
     config: js.Any = null,
     controller: java.lang.String = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     extend: java.lang.String = null,
-    getAction: js.Function0[java.lang.String] = null,
-    getConditions: js.Function0[_] = null,
-    getController: js.Function0[java.lang.String] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getUrl: js.Function0[java.lang.String] = null,
+    getAction: () => java.lang.String = null,
+    getConditions: () => _ = null,
+    getController: () => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getUrl: () => java.lang.String = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     paramsInMatchString: js.Any = null,
     platformConfig: js.Any = null,
-    recognize: js.Function1[/* url */ js.UndefOr[java.lang.String], _] = null,
+    recognize: /* url */ js.UndefOr[java.lang.String] => _ = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setAction: js.Function1[/* action */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setConditions: js.Function1[/* conditions */ js.UndefOr[js.Any], scala.Unit] = null,
-    setController: js.Function1[/* controller */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setUrl: js.Function1[/* url */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setAction: /* action */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setConditions: /* conditions */ js.UndefOr[js.Any] => scala.Unit = null,
+    setController: /* controller */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setUrl: /* url */ js.UndefOr[java.lang.String] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     url: java.lang.String = null,
@@ -95,30 +95,30 @@ object IRoute {
     if (action != null) __obj.updateDynamic("action")(action)
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (conditions != null) __obj.updateDynamic("conditions")(conditions)
     if (config != null) __obj.updateDynamic("config")(config)
     if (controller != null) __obj.updateDynamic("controller")(controller)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getAction != null) __obj.updateDynamic("getAction")(getAction)
-    if (getConditions != null) __obj.updateDynamic("getConditions")(getConditions)
-    if (getController != null) __obj.updateDynamic("getController")(getController)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getUrl != null) __obj.updateDynamic("getUrl")(getUrl)
+    if (getAction != null) __obj.updateDynamic("getAction")(js.Any.fromFunction0(getAction))
+    if (getConditions != null) __obj.updateDynamic("getConditions")(js.Any.fromFunction0(getConditions))
+    if (getController != null) __obj.updateDynamic("getController")(js.Any.fromFunction0(getController))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getUrl != null) __obj.updateDynamic("getUrl")(js.Any.fromFunction0(getUrl))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (paramsInMatchString != null) __obj.updateDynamic("paramsInMatchString")(paramsInMatchString)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
-    if (recognize != null) __obj.updateDynamic("recognize")(recognize)
+    if (recognize != null) __obj.updateDynamic("recognize")(js.Any.fromFunction1(recognize))
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setAction != null) __obj.updateDynamic("setAction")(setAction)
-    if (setConditions != null) __obj.updateDynamic("setConditions")(setConditions)
-    if (setController != null) __obj.updateDynamic("setController")(setController)
-    if (setUrl != null) __obj.updateDynamic("setUrl")(setUrl)
+    if (setAction != null) __obj.updateDynamic("setAction")(js.Any.fromFunction1(setAction))
+    if (setConditions != null) __obj.updateDynamic("setConditions")(js.Any.fromFunction1(setConditions))
+    if (setController != null) __obj.updateDynamic("setController")(js.Any.fromFunction1(setController))
+    if (setUrl != null) __obj.updateDynamic("setUrl")(js.Any.fromFunction1(setUrl))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (url != null) __obj.updateDynamic("url")(url)

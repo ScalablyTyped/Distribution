@@ -18,8 +18,8 @@ trait XLPrint extends js.Object {
 
 object XLPrint {
   @scala.inline
-  def apply(printSelection: js.Function0[scala.Unit], printSheet: js.Function0[scala.Unit]): XLPrint = {
-    val __obj = js.Dynamic.literal(printSelection = printSelection, printSheet = printSheet)
+  def apply(printSelection: () => scala.Unit, printSheet: () => scala.Unit): XLPrint = {
+    val __obj = js.Dynamic.literal(printSelection = js.Any.fromFunction0(printSelection), printSheet = js.Any.fromFunction0(printSheet))
   
     __obj.asInstanceOf[XLPrint]
   }

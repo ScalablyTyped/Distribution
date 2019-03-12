@@ -16,12 +16,12 @@ trait WebCLEvent extends js.Object {
 object WebCLEvent {
   @scala.inline
   def apply(
-    getInfo: js.Function1[EventInfo, js.Any],
-    getProfilingInfo: js.Function1[ProfilingInfo, scala.Double],
-    release: js.Function0[scala.Unit],
-    setCallback: js.Function2[CommandExecutionStatus, WebCLCallback, scala.Unit]
+    getInfo: EventInfo => js.Any,
+    getProfilingInfo: ProfilingInfo => scala.Double,
+    release: () => scala.Unit,
+    setCallback: (CommandExecutionStatus, WebCLCallback) => scala.Unit
   ): WebCLEvent = {
-    val __obj = js.Dynamic.literal(getInfo = getInfo, getProfilingInfo = getProfilingInfo, release = release, setCallback = setCallback)
+    val __obj = js.Dynamic.literal(getInfo = js.Any.fromFunction1(getInfo), getProfilingInfo = js.Any.fromFunction1(getProfilingInfo), release = js.Any.fromFunction0(release), setCallback = js.Any.fromFunction2(setCallback))
   
     __obj.asInstanceOf[WebCLEvent]
   }

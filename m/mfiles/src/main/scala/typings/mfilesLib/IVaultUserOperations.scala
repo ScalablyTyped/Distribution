@@ -21,18 +21,18 @@ trait IVaultUserOperations extends js.Object {
 object IVaultUserOperations {
   @scala.inline
   def apply(
-    AddOrUndeleteUserAccount: js.Function1[IUserAccount, IUserAccount],
-    AddUserAccount: js.Function1[IUserAccount, IUserAccount],
-    GetLoginAccountOfUser: js.Function1[scala.Double, ILoginAccount],
-    GetLoginAccounts: js.Function0[ILoginAccounts],
-    GetUserAccount: js.Function1[scala.Double, IUserAccount],
-    GetUserAccounts: js.Function0[IUserAccounts],
-    GetUserIDByGUID: js.Function1[java.lang.String, scala.Double],
-    GetUserList: js.Function0[IKeyNamePairs],
-    ModifyUserAccount: js.Function1[IUserAccount, scala.Unit],
-    RemoveUserAccount: js.Function1[scala.Double, scala.Unit]
+    AddOrUndeleteUserAccount: IUserAccount => IUserAccount,
+    AddUserAccount: IUserAccount => IUserAccount,
+    GetLoginAccountOfUser: scala.Double => ILoginAccount,
+    GetLoginAccounts: () => ILoginAccounts,
+    GetUserAccount: scala.Double => IUserAccount,
+    GetUserAccounts: () => IUserAccounts,
+    GetUserIDByGUID: java.lang.String => scala.Double,
+    GetUserList: () => IKeyNamePairs,
+    ModifyUserAccount: IUserAccount => scala.Unit,
+    RemoveUserAccount: scala.Double => scala.Unit
   ): IVaultUserOperations = {
-    val __obj = js.Dynamic.literal(AddOrUndeleteUserAccount = AddOrUndeleteUserAccount, AddUserAccount = AddUserAccount, GetLoginAccountOfUser = GetLoginAccountOfUser, GetLoginAccounts = GetLoginAccounts, GetUserAccount = GetUserAccount, GetUserAccounts = GetUserAccounts, GetUserIDByGUID = GetUserIDByGUID, GetUserList = GetUserList, ModifyUserAccount = ModifyUserAccount, RemoveUserAccount = RemoveUserAccount)
+    val __obj = js.Dynamic.literal(AddOrUndeleteUserAccount = js.Any.fromFunction1(AddOrUndeleteUserAccount), AddUserAccount = js.Any.fromFunction1(AddUserAccount), GetLoginAccountOfUser = js.Any.fromFunction1(GetLoginAccountOfUser), GetLoginAccounts = js.Any.fromFunction0(GetLoginAccounts), GetUserAccount = js.Any.fromFunction1(GetUserAccount), GetUserAccounts = js.Any.fromFunction0(GetUserAccounts), GetUserIDByGUID = js.Any.fromFunction1(GetUserIDByGUID), GetUserList = js.Any.fromFunction0(GetUserList), ModifyUserAccount = js.Any.fromFunction1(ModifyUserAccount), RemoveUserAccount = js.Any.fromFunction1(RemoveUserAccount))
   
     __obj.asInstanceOf[IVaultUserOperations]
   }

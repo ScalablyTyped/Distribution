@@ -64,24 +64,16 @@ trait XInputStream
 object XInputStream {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    available: js.Function0[scala.Double],
-    closeInput: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    readBytes: js.Function2[
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      scala.Double, 
-      scala.Double
-    ],
-    readSomeBytes: js.Function2[
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      scala.Double, 
-      scala.Double
-    ],
-    release: js.Function0[scala.Unit],
-    skipBytes: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    available: () => scala.Double,
+    closeInput: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    readBytes: (js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], scala.Double) => scala.Double,
+    readSomeBytes: (js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], scala.Double) => scala.Double,
+    release: () => scala.Unit,
+    skipBytes: scala.Double => scala.Unit
   ): XInputStream = {
-    val __obj = js.Dynamic.literal(acquire = acquire, available = available, closeInput = closeInput, queryInterface = queryInterface, readBytes = readBytes, readSomeBytes = readSomeBytes, release = release, skipBytes = skipBytes)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), available = js.Any.fromFunction0(available), closeInput = js.Any.fromFunction0(closeInput), queryInterface = js.Any.fromFunction1(queryInterface), readBytes = js.Any.fromFunction2(readBytes), readSomeBytes = js.Any.fromFunction2(readSomeBytes), release = js.Any.fromFunction0(release), skipBytes = js.Any.fromFunction1(skipBytes))
   
     __obj.asInstanceOf[XInputStream]
   }

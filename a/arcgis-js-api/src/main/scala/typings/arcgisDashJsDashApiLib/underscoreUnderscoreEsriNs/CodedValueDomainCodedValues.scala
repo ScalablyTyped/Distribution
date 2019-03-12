@@ -26,11 +26,11 @@ object CodedValueDomainCodedValues {
   def apply(
     code: java.lang.String | scala.Double,
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     name: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): CodedValueDomainCodedValues = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], constructor = constructor, hasOwnProperty = hasOwnProperty, name = name, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[CodedValueDomainCodedValues]
   }

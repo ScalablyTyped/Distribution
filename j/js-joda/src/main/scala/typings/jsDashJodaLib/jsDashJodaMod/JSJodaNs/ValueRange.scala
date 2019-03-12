@@ -22,21 +22,21 @@ trait ValueRange extends js.Object {
 object ValueRange {
   @scala.inline
   def apply(
-    checkValidIntValue: js.Function2[scala.Double, TemporalField, scala.Double],
-    checkValidValue: js.Function2[scala.Double, TemporalField, js.Any],
-    equals: js.Function1[js.Any, scala.Boolean],
-    hashCode: js.Function0[scala.Double],
-    isFixed: js.Function0[scala.Boolean],
-    isIntValue: js.Function0[scala.Boolean],
-    isValidIntValue: js.Function1[scala.Double, scala.Boolean],
-    isValidValue: js.Function1[js.Any, scala.Boolean],
-    largestMinimum: js.Function0[scala.Double],
-    maximum: js.Function0[scala.Double],
-    minimum: js.Function0[scala.Double],
-    smallestMaximum: js.Function0[scala.Double],
-    toString: js.Function0[java.lang.String]
+    checkValidIntValue: (scala.Double, TemporalField) => scala.Double,
+    checkValidValue: (scala.Double, TemporalField) => js.Any,
+    equals: js.Any => scala.Boolean,
+    hashCode: () => scala.Double,
+    isFixed: () => scala.Boolean,
+    isIntValue: () => scala.Boolean,
+    isValidIntValue: scala.Double => scala.Boolean,
+    isValidValue: js.Any => scala.Boolean,
+    largestMinimum: () => scala.Double,
+    maximum: () => scala.Double,
+    minimum: () => scala.Double,
+    smallestMaximum: () => scala.Double,
+    toString: () => java.lang.String
   ): ValueRange = {
-    val __obj = js.Dynamic.literal(checkValidIntValue = checkValidIntValue, checkValidValue = checkValidValue, equals = equals, hashCode = hashCode, isFixed = isFixed, isIntValue = isIntValue, isValidIntValue = isValidIntValue, isValidValue = isValidValue, largestMinimum = largestMinimum, maximum = maximum, minimum = minimum, smallestMaximum = smallestMaximum, toString = toString)
+    val __obj = js.Dynamic.literal(checkValidIntValue = js.Any.fromFunction2(checkValidIntValue), checkValidValue = js.Any.fromFunction2(checkValidValue), equals = js.Any.fromFunction1(equals), hashCode = js.Any.fromFunction0(hashCode), isFixed = js.Any.fromFunction0(isFixed), isIntValue = js.Any.fromFunction0(isIntValue), isValidIntValue = js.Any.fromFunction1(isValidIntValue), isValidValue = js.Any.fromFunction1(isValidValue), largestMinimum = js.Any.fromFunction0(largestMinimum), maximum = js.Any.fromFunction0(maximum), minimum = js.Any.fromFunction0(minimum), smallestMaximum = js.Any.fromFunction0(smallestMaximum), toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[ValueRange]
   }

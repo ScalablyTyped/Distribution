@@ -20,17 +20,17 @@ trait KeyAgreeRecipientInfo extends js.Object {
 object KeyAgreeRecipientInfo {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     keyEncryptionAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
     originator: pkijsLib.srcOriginatorIdentifierOrKeyMod.default,
     recipientCertificate: pkijsLib.srcCertificateMod.default,
     recipientEncryptedKeys: pkijsLib.srcRecipientEncryptedKeysMod.default,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     version: scala.Double,
     ukm: asn1jsLib.asn1jsMod.OctetString = null
   ): KeyAgreeRecipientInfo = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, keyEncryptionAlgorithm = keyEncryptionAlgorithm, originator = originator, recipientCertificate = recipientCertificate, recipientEncryptedKeys = recipientEncryptedKeys, toJSON = toJSON, toSchema = toSchema, version = version)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), keyEncryptionAlgorithm = keyEncryptionAlgorithm, originator = originator, recipientCertificate = recipientCertificate, recipientEncryptedKeys = recipientEncryptedKeys, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), version = version)
     if (ukm != null) __obj.updateDynamic("ukm")(ukm)
     __obj.asInstanceOf[KeyAgreeRecipientInfo]
   }

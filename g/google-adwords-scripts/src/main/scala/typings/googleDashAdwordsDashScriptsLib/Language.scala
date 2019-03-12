@@ -19,16 +19,16 @@ trait Language
 object Language {
   @scala.inline
   def apply(
-    getCampaign: js.Function0[Campaign],
-    getCampaignType: js.Function0[CampaignType],
-    getId: js.Function0[scala.Double],
-    getName: js.Function0[java.lang.String],
-    getVideoCampaign: js.Function0[Campaign],
-    remove: js.Function0[scala.Unit],
-    getEntityType: js.Function0[java.lang.String] = null
+    getCampaign: () => Campaign,
+    getCampaignType: () => CampaignType,
+    getId: () => scala.Double,
+    getName: () => java.lang.String,
+    getVideoCampaign: () => Campaign,
+    remove: () => scala.Unit,
+    getEntityType: () => java.lang.String = null
   ): Language = {
-    val __obj = js.Dynamic.literal(getCampaign = getCampaign, getCampaignType = getCampaignType, getId = getId, getName = getName, getVideoCampaign = getVideoCampaign, remove = remove)
-    if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
+    val __obj = js.Dynamic.literal(getCampaign = js.Any.fromFunction0(getCampaign), getCampaignType = js.Any.fromFunction0(getCampaignType), getId = js.Any.fromFunction0(getId), getName = js.Any.fromFunction0(getName), getVideoCampaign = js.Any.fromFunction0(getVideoCampaign), remove = js.Any.fromFunction0(remove))
+    if (getEntityType != null) __obj.updateDynamic("getEntityType")(js.Any.fromFunction0(getEntityType))
     __obj.asInstanceOf[Language]
   }
 }

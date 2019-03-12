@@ -9,27 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var METHODS: js.Array[java.lang.String] = js.native
-  var globalAgent: easyDashXDashHeadersLib.httpMod.Agent = js.native
+  var globalAgent: Agent = js.native
   def createClient(): js.Any = js.native
   def createClient(port: scala.Double): js.Any = js.native
   def createClient(port: scala.Double, host: java.lang.String): js.Any = js.native
-  def createServer(): easyDashXDashHeadersLib.httpMod.Server = js.native
+  def createServer(): Server = js.native
   def createServer(
-    requestListener: js.Function2[
-      /* request */ easyDashXDashHeadersLib.httpMod.IncomingMessage, 
-      /* response */ easyDashXDashHeadersLib.httpMod.ServerResponse, 
-      scala.Unit
-    ]
-  ): easyDashXDashHeadersLib.httpMod.Server = js.native
-  def get(options: js.Any): easyDashXDashHeadersLib.httpMod.ClientRequest = js.native
-  def get(
-    options: js.Any,
-    callback: js.Function1[/* res */ easyDashXDashHeadersLib.httpMod.IncomingMessage, scala.Unit]
-  ): easyDashXDashHeadersLib.httpMod.ClientRequest = js.native
-  def request(options: js.Any): easyDashXDashHeadersLib.httpMod.ClientRequest = js.native
-  def request(
-    options: js.Any,
-    callback: js.Function1[/* res */ easyDashXDashHeadersLib.httpMod.IncomingMessage, scala.Unit]
-  ): easyDashXDashHeadersLib.httpMod.ClientRequest = js.native
+    requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse, scala.Unit]
+  ): Server = js.native
+  def get(options: js.Any): ClientRequest = js.native
+  def get(options: js.Any, callback: js.Function1[/* res */ IncomingMessage, scala.Unit]): ClientRequest = js.native
+  def request(options: js.Any): ClientRequest = js.native
+  def request(options: js.Any, callback: js.Function1[/* res */ IncomingMessage, scala.Unit]): ClientRequest = js.native
 }
 

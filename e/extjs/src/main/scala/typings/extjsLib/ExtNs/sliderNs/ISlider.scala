@@ -24,17 +24,13 @@ object ISlider {
   @scala.inline
   def apply(
     IMulti: IMulti = null,
-    getValue: js.Function0[_] = null,
-    setValue: js.Function2[
-      /* value */ js.UndefOr[scala.Double], 
-      /* animate */ js.UndefOr[scala.Boolean], 
-      scala.Unit
-    ] = null
+    getValue: () => _ = null,
+    setValue: (/* value */ js.UndefOr[scala.Double], /* animate */ js.UndefOr[scala.Boolean]) => scala.Unit = null
   ): ISlider = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IMulti)
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
-    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
+    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction2(setValue))
     __obj.asInstanceOf[ISlider]
   }
 }

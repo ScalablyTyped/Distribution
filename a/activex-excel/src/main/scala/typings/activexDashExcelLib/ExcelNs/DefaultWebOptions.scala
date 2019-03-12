@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class DefaultWebOptions protected () extends js.Object {
   var AllowPNG: scala.Boolean = js.native
   var AlwaysSaveInDefaultEncoding: scala.Boolean = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var CheckIfOfficeIsHTMLEditor: scala.Boolean = js.native
   val Creator: XlCreator = js.native
   var DownloadComponents: scala.Boolean = js.native

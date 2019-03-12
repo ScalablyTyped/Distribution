@@ -8,16 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Microsoft.Maps.SpatialMath")
 @js.native
 object ^ extends js.Object {
-  def convertArea(
-    area: scala.Double,
-    fromUnits: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.AreaUnits,
-    toUnits: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.AreaUnits
-  ): scala.Double = js.native
-  def convertDistance(
-    distance: scala.Double,
-    fromUnits: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits,
-    toUnits: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits
-  ): scala.Double = js.native
+  def convertArea(area: scala.Double, fromUnits: AreaUnits, toUnits: AreaUnits): scala.Double = js.native
+  def convertDistance(distance: scala.Double, fromUnits: DistanceUnits, toUnits: DistanceUnits): scala.Double = js.native
   def getCardinalSpline(locations: js.Array[bingmapsLib.MicrosoftNs.MapsNs.Location]): js.Array[bingmapsLib.MicrosoftNs.MapsNs.Location] = js.native
   def getCardinalSpline(locations: js.Array[bingmapsLib.MicrosoftNs.MapsNs.Location], tension: scala.Double): js.Array[bingmapsLib.MicrosoftNs.MapsNs.Location] = js.native
   def getCardinalSpline(
@@ -36,7 +28,7 @@ object ^ extends js.Object {
     origin: bingmapsLib.MicrosoftNs.MapsNs.Location,
     bearing: scala.Double,
     distance: scala.Double,
-    units: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits
+    units: DistanceUnits
   ): bingmapsLib.MicrosoftNs.MapsNs.Location = js.native
   def getDistanceTo(
     origin: bingmapsLib.MicrosoftNs.MapsNs.Location,
@@ -45,16 +37,16 @@ object ^ extends js.Object {
   def getDistanceTo(
     origin: bingmapsLib.MicrosoftNs.MapsNs.Location,
     destination: bingmapsLib.MicrosoftNs.MapsNs.Location,
-    units: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits
+    units: DistanceUnits
   ): scala.Double = js.native
   def getDistanceTo(
     origin: bingmapsLib.MicrosoftNs.MapsNs.Location,
     destination: bingmapsLib.MicrosoftNs.MapsNs.Location,
-    units: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits,
+    units: DistanceUnits,
     highAccuracy: scala.Boolean
   ): scala.Double = js.native
   def getEarthRadius(): scala.Double = js.native
-  def getEarthRadius(units: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits): scala.Double = js.native
+  def getEarthRadius(units: DistanceUnits): scala.Double = js.native
   def getGeodesicPath(path: js.Array[bingmapsLib.MicrosoftNs.MapsNs.Location]): js.Array[bingmapsLib.MicrosoftNs.MapsNs.Location] = js.native
   def getGeodesicPath(path: js.Array[bingmapsLib.MicrosoftNs.MapsNs.Location], nodeSize: scala.Double): js.Array[bingmapsLib.MicrosoftNs.MapsNs.Location] = js.native
   def getHeading(
@@ -62,26 +54,19 @@ object ^ extends js.Object {
     destination: bingmapsLib.MicrosoftNs.MapsNs.Location
   ): scala.Double = js.native
   def getLengthOfPath(path: js.Array[bingmapsLib.MicrosoftNs.MapsNs.Location]): scala.Double = js.native
+  def getLengthOfPath(path: js.Array[bingmapsLib.MicrosoftNs.MapsNs.Location], units: DistanceUnits): scala.Double = js.native
   def getLengthOfPath(
     path: js.Array[bingmapsLib.MicrosoftNs.MapsNs.Location],
-    units: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits
-  ): scala.Double = js.native
-  def getLengthOfPath(
-    path: js.Array[bingmapsLib.MicrosoftNs.MapsNs.Location],
-    units: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits,
+    units: DistanceUnits,
     highAccuracy: scala.Boolean
   ): scala.Double = js.native
   def getLocationAlongPath(path: bingmapsLib.MicrosoftNs.MapsNs.Polyline, distance: scala.Double): bingmapsLib.MicrosoftNs.MapsNs.Location = js.native
-  def getLocationAlongPath(
-    path: bingmapsLib.MicrosoftNs.MapsNs.Polyline,
-    distance: scala.Double,
-    units: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits
-  ): bingmapsLib.MicrosoftNs.MapsNs.Location = js.native
+  def getLocationAlongPath(path: bingmapsLib.MicrosoftNs.MapsNs.Polyline, distance: scala.Double, units: DistanceUnits): bingmapsLib.MicrosoftNs.MapsNs.Location = js.native
   def getLocationAlongPath(path: js.Array[bingmapsLib.MicrosoftNs.MapsNs.Location], distance: scala.Double): bingmapsLib.MicrosoftNs.MapsNs.Location = js.native
   def getLocationAlongPath(
     path: js.Array[bingmapsLib.MicrosoftNs.MapsNs.Location],
     distance: scala.Double,
-    units: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits
+    units: DistanceUnits
   ): bingmapsLib.MicrosoftNs.MapsNs.Location = js.native
   def getRegularPolygon(
     origin: bingmapsLib.MicrosoftNs.MapsNs.Location,
@@ -92,13 +77,13 @@ object ^ extends js.Object {
     origin: bingmapsLib.MicrosoftNs.MapsNs.Location,
     radius: scala.Double,
     numberOfPoints: scala.Double,
-    units: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits
+    units: DistanceUnits
   ): js.Array[bingmapsLib.MicrosoftNs.MapsNs.Location] = js.native
   def getRegularPolygon(
     origin: bingmapsLib.MicrosoftNs.MapsNs.Location,
     radius: scala.Double,
     numberOfPoints: scala.Double,
-    units: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits,
+    units: DistanceUnits,
     offset: scala.Double
   ): js.Array[bingmapsLib.MicrosoftNs.MapsNs.Location] = js.native
   def interpolate(

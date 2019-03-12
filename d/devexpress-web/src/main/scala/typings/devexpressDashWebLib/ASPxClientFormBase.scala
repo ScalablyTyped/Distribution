@@ -28,11 +28,11 @@ trait ASPxClientFormBase extends js.Object {
 object ASPxClientFormBase {
   @scala.inline
   def apply(
-    Close: js.Function0[scala.Unit],
+    Close: () => scala.Unit,
     FormClosed: ASPxClientEvent[ASPxClientEventHandler[ASPxClientFormBase]],
-    SetVisibleCore: js.Function2[js.Object, scala.Boolean, scala.Unit]
+    SetVisibleCore: (js.Object, scala.Boolean) => scala.Unit
   ): ASPxClientFormBase = {
-    val __obj = js.Dynamic.literal(Close = Close, FormClosed = FormClosed, SetVisibleCore = SetVisibleCore)
+    val __obj = js.Dynamic.literal(Close = js.Any.fromFunction0(Close), FormClosed = FormClosed, SetVisibleCore = js.Any.fromFunction2(SetVisibleCore))
   
     __obj.asInstanceOf[ASPxClientFormBase]
   }

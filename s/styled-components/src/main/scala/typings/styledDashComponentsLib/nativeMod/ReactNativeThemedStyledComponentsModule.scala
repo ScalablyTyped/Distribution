@@ -13,7 +13,8 @@ trait ReactNativeThemedStyledComponentsModule[T /* <: js.Object */, U /* <: js.O
   var ThemeProvider: styledDashComponentsLib.styledDashComponentsMod.ThemeProviderComponent[T, U] = js.native
   @JSName("css")
   var css_Original: styledDashComponentsLib.styledDashComponentsMod.ThemedCssFunction[T] = js.native
-  var default: ReactNativeStyledInterface[T] = js.native
+  @JSName("default")
+  var default_Original: ReactNativeStyledInterface[T] = js.native
   // This could be made to assert `target is StyledComponent<any, T>` instead, but that feels not type safe
   @JSName("isStyledComponent")
   var isStyledComponent_Original: js.Function1[
@@ -91,6 +92,18 @@ trait ReactNativeThemedStyledComponentsModule[T /* <: js.Object */, U /* <: js.O
   ): styledDashComponentsLib.styledDashComponentsMod.FlattenInterpolation[
     styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[P, AnyIfEmpty[AnyIfEmpty[T]]]
   ] = js.native
+  def default[C /* <: styledDashComponentsLib.styledDashComponentsMod.AnyStyledComponent */](component: C): styledDashComponentsLib.styledDashComponentsMod.ThemedStyledFunction[
+    styledDashComponentsLib.styledDashComponentsMod.StyledComponentInnerComponent[C], 
+    AnyIfEmpty[AnyIfEmpty[T]], 
+    styledDashComponentsLib.styledDashComponentsMod.StyledComponentInnerOtherProps[C], 
+    styledDashComponentsLib.styledDashComponentsMod.StyledComponentInnerAttrs[C]
+  ] = js.native
+  @JSName("default")
+  def default_CComponentType[C /* <: reactLib.reactMod.ReactNs.ComponentType[_] */](
+    // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
+  // causes tests to fail in TS 3.1
+  component: C
+  ): styledDashComponentsLib.styledDashComponentsMod.ThemedStyledFunction[C, AnyIfEmpty[AnyIfEmpty[T]], js.Object, scala.Nothing] = js.native
   // This could be made to assert `target is StyledComponent<any, T>` instead, but that feels not type safe
   def isStyledComponent(target: js.Any): /* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ scala.Boolean = js.native
   def withTheme[C /* <: reactLib.reactMod.ReactNs.ComponentType[_] */](

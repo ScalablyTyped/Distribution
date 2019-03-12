@@ -64,69 +64,35 @@ object PropertyBrowserController {
     Model: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel,
     PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
     ViewData: js.Any,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    addPropertiesChangeListener: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
-      scala.Unit
-    ],
-    addPropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    addVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    attachFrame: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XFrame, scala.Unit],
-    attachModel: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel, scala.Boolean],
-    dispose: js.Function0[scala.Unit],
-    firePropertiesChangeEvent: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
-      scala.Unit
-    ],
-    getFastPropertyValue: js.Function1[scala.Double, js.Any],
-    getFrame: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XFrame],
-    getModel: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel],
-    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
-    getPropertyValue: js.Function1[java.lang.String, js.Any],
-    getPropertyValues: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashInteropLib.SafeArray[_]
-    ],
-    getViewData: js.Function0[js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    removePropertiesChangeListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
-      scala.Unit
-    ],
-    removePropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    removeVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    restoreViewData: js.Function1[js.Any, scala.Unit],
-    setFastPropertyValue: js.Function2[scala.Double, js.Any, scala.Unit],
-    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
-    setPropertyValues: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
-      scala.Unit
-    ],
-    suspend: js.Function1[scala.Boolean, scala.Boolean]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    addPropertiesChangeListener: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener) => scala.Unit,
+    addPropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    addVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    attachFrame: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XFrame => scala.Unit,
+    attachModel: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel => scala.Boolean,
+    dispose: () => scala.Unit,
+    firePropertiesChangeEvent: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener) => scala.Unit,
+    getFastPropertyValue: scala.Double => js.Any,
+    getFrame: () => activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XFrame,
+    getModel: () => activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel,
+    getPropertySetInfo: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    getPropertyValue: java.lang.String => js.Any,
+    getPropertyValues: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => stdLib.SafeArray[_],
+    getViewData: () => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    removePropertiesChangeListener: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener => scala.Unit,
+    removePropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    removeVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    restoreViewData: js.Any => scala.Unit,
+    setFastPropertyValue: (scala.Double, js.Any) => scala.Unit,
+    setPropertyValue: (java.lang.String, js.Any) => scala.Unit,
+    setPropertyValues: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]) => scala.Unit,
+    suspend: scala.Boolean => scala.Boolean
   ): PropertyBrowserController = {
-    val __obj = js.Dynamic.literal(CurrentPage = CurrentPage, Frame = Frame, IntrospectedObject = IntrospectedObject, Model = Model, PropertySetInfo = PropertySetInfo, ViewData = ViewData, acquire = acquire, addEventListener = addEventListener, addPropertiesChangeListener = addPropertiesChangeListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, attachFrame = attachFrame, attachModel = attachModel, dispose = dispose, firePropertiesChangeEvent = firePropertiesChangeEvent, getFastPropertyValue = getFastPropertyValue, getFrame = getFrame, getModel = getModel, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getPropertyValues = getPropertyValues, getViewData = getViewData, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removePropertiesChangeListener = removePropertiesChangeListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, restoreViewData = restoreViewData, setFastPropertyValue = setFastPropertyValue, setPropertyValue = setPropertyValue, setPropertyValues = setPropertyValues, suspend = suspend)
+    val __obj = js.Dynamic.literal(CurrentPage = CurrentPage, Frame = Frame, IntrospectedObject = IntrospectedObject, Model = Model, PropertySetInfo = PropertySetInfo, ViewData = ViewData, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), attachFrame = js.Any.fromFunction1(attachFrame), attachModel = js.Any.fromFunction1(attachModel), dispose = js.Any.fromFunction0(dispose), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getFastPropertyValue = js.Any.fromFunction1(getFastPropertyValue), getFrame = js.Any.fromFunction0(getFrame), getModel = js.Any.fromFunction0(getModel), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), getViewData = js.Any.fromFunction0(getViewData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), restoreViewData = js.Any.fromFunction1(restoreViewData), setFastPropertyValue = js.Any.fromFunction2(setFastPropertyValue), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues), suspend = js.Any.fromFunction1(suspend))
   
     __obj.asInstanceOf[PropertyBrowserController]
   }

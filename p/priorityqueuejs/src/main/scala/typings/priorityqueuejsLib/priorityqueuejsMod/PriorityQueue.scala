@@ -40,17 +40,14 @@ trait PriorityQueue[T] extends js.Object {
 object PriorityQueue {
   @scala.inline
   def apply[T](
-    deq: js.Function0[T],
-    enq: js.Function1[T, scala.Double],
-    forEach: js.Function1[
-      js.Function3[/* value */ T, /* index */ scala.Double, /* array */ js.Array[T], scala.Unit], 
-      scala.Unit
-    ],
-    isEmpty: js.Function0[scala.Boolean],
-    peek: js.Function0[T],
-    size: js.Function0[scala.Double]
+    deq: () => T,
+    enq: T => scala.Double,
+    forEach: js.Function3[/* value */ T, /* index */ scala.Double, /* array */ js.Array[T], scala.Unit] => scala.Unit,
+    isEmpty: () => scala.Boolean,
+    peek: () => T,
+    size: () => scala.Double
   ): PriorityQueue[T] = {
-    val __obj = js.Dynamic.literal(deq = deq, enq = enq, forEach = forEach, isEmpty = isEmpty, peek = peek, size = size)
+    val __obj = js.Dynamic.literal(deq = js.Any.fromFunction0(deq), enq = js.Any.fromFunction1(enq), forEach = js.Any.fromFunction1(forEach), isEmpty = js.Any.fromFunction0(isEmpty), peek = js.Any.fromFunction0(peek), size = js.Any.fromFunction0(size))
   
     __obj.asInstanceOf[PriorityQueue[T]]
   }

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.Column")
 @js.native
 class Column protected () extends js.Object {
-  val Application: Application = js.native
-  var Borders: Borders = js.native
-  val Cells: Cells = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
+  var Borders: activexDashWordLib.WordNs.Borders = js.native
+  val Cells: activexDashWordLib.WordNs.Cells = js.native
   val Creator: scala.Double = js.native
   val Index: scala.Double = js.native
   val IsFirst: scala.Boolean = js.native
@@ -21,7 +21,7 @@ class Column protected () extends js.Object {
   var PreferredWidth: scala.Double = js.native
   var PreferredWidthType: WdPreferredWidthType = js.native
   val Previous: Column = js.native
-  val Shading: Shading = js.native
+  val Shading: activexDashWordLib.WordNs.Shading = js.native
   var Width: scala.Double = js.native
   var `Word.Column_typekey`: Column = js.native
   def AutoFit(): scala.Unit = js.native

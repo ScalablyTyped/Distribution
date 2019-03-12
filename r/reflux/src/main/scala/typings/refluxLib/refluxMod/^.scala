@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val ActionMethods: js.Any = js.native
   def ListenerMixin(): js.Any = js.native
-  def connect(store: refluxLib.refluxMod.Store): scala.Unit = js.native
-  def connect(store: refluxLib.refluxMod.Store, key: java.lang.String): scala.Unit = js.native
+  def connect(store: Store): scala.Unit = js.native
+  def connect(store: Store, key: java.lang.String): scala.Unit = js.native
   def createAction(): js.Any = js.native
   def createAction(definition: java.lang.String): js.Any = js.native
   def createAction(definition: js.Object): js.Any = js.native
-  def createAction(definition: refluxLib.refluxMod.ActionDefinition): js.Any = js.native
-  def createActions(definitions: js.Array[refluxLib.refluxMod.ActionDefinition | java.lang.String]): js.Any = js.native
-  def createActions(definitions: refluxLib.refluxMod.ActionObjectDefinition): js.Any = js.native
-  def createStore(definition: refluxLib.refluxMod.StoreDefinition): refluxLib.refluxMod.Store = js.native
-  def initStore(typeOfStore: org.scalablytyped.runtime.Instantiable0[refluxLib.refluxMod.Store]): refluxLib.refluxMod.Store = js.native
-  def listenTo(store: refluxLib.refluxMod.Store, handler: java.lang.String): scala.Unit = js.native
+  def createAction(definition: ActionDefinition): js.Any = js.native
+  def createActions(definitions: js.Array[ActionDefinition | java.lang.String]): js.Any = js.native
+  def createActions(definitions: ActionObjectDefinition): js.Any = js.native
+  def createStore(definition: StoreDefinition): Store = js.native
+  def initStore(typeOfStore: org.scalablytyped.runtime.Instantiable0[Store]): Store = js.native
+  def listenTo(store: Store, handler: java.lang.String): scala.Unit = js.native
   def setState(state: js.Any): scala.Unit = js.native
 }
 

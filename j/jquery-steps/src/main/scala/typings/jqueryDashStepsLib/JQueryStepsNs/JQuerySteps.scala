@@ -55,19 +55,19 @@ trait JQuerySteps extends js.Object {
 object JQuerySteps {
   @scala.inline
   def apply(
-    add: js.Function1[Step, JQuerySteps],
-    destroy: js.Function0[scala.Unit],
-    finish: js.Function0[scala.Unit],
-    getCurrentIndex: js.Function0[scala.Double],
-    getCurrentStep: js.Function0[Step],
-    getStep: js.Function1[scala.Double, Step],
-    insert: js.Function2[scala.Double, Step, JQuerySteps],
-    next: js.Function0[scala.Boolean],
-    previous: js.Function0[scala.Boolean],
-    remove: js.Function1[scala.Double, scala.Boolean],
-    skip: js.Function1[scala.Double, scala.Boolean]
+    add: Step => JQuerySteps,
+    destroy: () => scala.Unit,
+    finish: () => scala.Unit,
+    getCurrentIndex: () => scala.Double,
+    getCurrentStep: () => Step,
+    getStep: scala.Double => Step,
+    insert: (scala.Double, Step) => JQuerySteps,
+    next: () => scala.Boolean,
+    previous: () => scala.Boolean,
+    remove: scala.Double => scala.Boolean,
+    skip: scala.Double => scala.Boolean
   ): JQuerySteps = {
-    val __obj = js.Dynamic.literal(add = add, destroy = destroy, finish = finish, getCurrentIndex = getCurrentIndex, getCurrentStep = getCurrentStep, getStep = getStep, insert = insert, next = next, previous = previous, remove = remove, skip = skip)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), destroy = js.Any.fromFunction0(destroy), finish = js.Any.fromFunction0(finish), getCurrentIndex = js.Any.fromFunction0(getCurrentIndex), getCurrentStep = js.Any.fromFunction0(getCurrentStep), getStep = js.Any.fromFunction1(getStep), insert = js.Any.fromFunction2(insert), next = js.Any.fromFunction0(next), previous = js.Any.fromFunction0(previous), remove = js.Any.fromFunction1(remove), skip = js.Any.fromFunction1(skip))
   
     __obj.asInstanceOf[JQuerySteps]
   }

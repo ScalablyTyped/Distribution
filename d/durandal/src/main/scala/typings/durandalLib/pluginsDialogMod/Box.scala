@@ -24,11 +24,8 @@ trait Box extends js.Object {
 
 object Box {
   @scala.inline
-  def apply(
-    getView: js.Function0[stdLib.HTMLElement],
-    selectOption: js.Function1[java.lang.String, scala.Unit]
-  ): Box = {
-    val __obj = js.Dynamic.literal(getView = getView, selectOption = selectOption)
+  def apply(getView: () => stdLib.HTMLElement, selectOption: java.lang.String => scala.Unit): Box = {
+    val __obj = js.Dynamic.literal(getView = js.Any.fromFunction0(getView), selectOption = js.Any.fromFunction1(selectOption))
   
     __obj.asInstanceOf[Box]
   }

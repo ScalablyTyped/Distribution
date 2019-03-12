@@ -27,21 +27,28 @@ trait CryptoJSStatic extends js.Object {
   var HmacSHA3_Original: cryptojsLib.CryptoJSNs.libNs.IHasherHmacHelper = js.native
   @JSName("HmacSHA512")
   var HmacSHA512_Original: cryptojsLib.CryptoJSNs.libNs.IHasherHmacHelper = js.native
-  var MD5: cryptojsLib.CryptoJSNs.libNs.HasherHelper = js.native
+  @JSName("MD5")
+  var MD5_Original: cryptojsLib.CryptoJSNs.libNs.HasherHelper = js.native
   @JSName("PBKDF2")
   var PBKDF2_Original: cryptojsLib.CryptoJSNs.algoNs.IEvpKDFHelper = js.native
   var RC4: cryptojsLib.CryptoJSNs.libNs.CipherHelper = js.native
   var RC4Drop: cryptojsLib.CryptoJSNs.libNs.ICipherHelper[js.Object] = js.native
-  var RIPEMD160: cryptojsLib.CryptoJSNs.libNs.HasherHelper = js.native
+  @JSName("RIPEMD160")
+  var RIPEMD160_Original: cryptojsLib.CryptoJSNs.libNs.HasherHelper = js.native
   var Rabbit: cryptojsLib.CryptoJSNs.libNs.CipherHelper = js.native
   var RabbitLegacy: cryptojsLib.CryptoJSNs.libNs.CipherHelper = js.native
-  var SHA1: cryptojsLib.CryptoJSNs.libNs.HasherHelper = js.native
-  var SHA224: cryptojsLib.CryptoJSNs.libNs.HasherHelper = js.native
-  var SHA256: cryptojsLib.CryptoJSNs.libNs.HasherHelper = js.native
-  var SHA384: cryptojsLib.CryptoJSNs.libNs.HasherHelper = js.native
+  @JSName("SHA1")
+  var SHA1_Original: cryptojsLib.CryptoJSNs.libNs.HasherHelper = js.native
+  @JSName("SHA224")
+  var SHA224_Original: cryptojsLib.CryptoJSNs.libNs.HasherHelper = js.native
+  @JSName("SHA256")
+  var SHA256_Original: cryptojsLib.CryptoJSNs.libNs.HasherHelper = js.native
+  @JSName("SHA384")
+  var SHA384_Original: cryptojsLib.CryptoJSNs.libNs.HasherHelper = js.native
   @JSName("SHA3")
   var SHA3_Original: cryptojsLib.CryptoJSNs.libNs.IHasherHelper[cryptojsLib.CryptoJSNs.algoNs.ISHA3Cfg] = js.native
-  var SHA512: cryptojsLib.CryptoJSNs.libNs.HasherHelper = js.native
+  @JSName("SHA512")
+  var SHA512_Original: cryptojsLib.CryptoJSNs.libNs.HasherHelper = js.native
   var TripleDES: cryptojsLib.CryptoJSNs.libNs.ICipherHelper[cryptojsLib.CryptoJSNs.libNs.IBlockCipherCfg] = js.native
   var algo: cryptojsLib.CryptoJSNs.algoNs.AlgoStatic = js.native
   var enc: cryptojsLib.CryptoJSNs.encNs.EncStatic = js.native
@@ -103,6 +110,10 @@ trait CryptoJSStatic extends js.Object {
   def HmacSHA512(message: cryptojsLib.CryptoJSNs.libNs.WordArray, key: java.lang.String): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
   def HmacSHA512(message: java.lang.String, key: cryptojsLib.CryptoJSNs.libNs.WordArray): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
   def HmacSHA512(message: java.lang.String, key: java.lang.String): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def MD5(message: cryptojsLib.CryptoJSNs.libNs.WordArray): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def MD5(message: cryptojsLib.CryptoJSNs.libNs.WordArray, cfg: js.Object): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def MD5(message: java.lang.String): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def MD5(message: java.lang.String, cfg: js.Object): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
   def PBKDF2(password: cryptojsLib.CryptoJSNs.libNs.WordArray, salt: cryptojsLib.CryptoJSNs.libNs.WordArray): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
   def PBKDF2(
     password: cryptojsLib.CryptoJSNs.libNs.WordArray,
@@ -123,9 +134,33 @@ trait CryptoJSStatic extends js.Object {
   ): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
   def PBKDF2(password: java.lang.String, salt: java.lang.String): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
   def PBKDF2(password: java.lang.String, salt: java.lang.String, cfg: cryptojsLib.CryptoJSNs.algoNs.IEvpKDFCfg): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def RIPEMD160(message: cryptojsLib.CryptoJSNs.libNs.WordArray): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def RIPEMD160(message: cryptojsLib.CryptoJSNs.libNs.WordArray, cfg: js.Object): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def RIPEMD160(message: java.lang.String): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def RIPEMD160(message: java.lang.String, cfg: js.Object): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA1(message: cryptojsLib.CryptoJSNs.libNs.WordArray): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA1(message: cryptojsLib.CryptoJSNs.libNs.WordArray, cfg: js.Object): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA1(message: java.lang.String): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA1(message: java.lang.String, cfg: js.Object): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA224(message: cryptojsLib.CryptoJSNs.libNs.WordArray): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA224(message: cryptojsLib.CryptoJSNs.libNs.WordArray, cfg: js.Object): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA224(message: java.lang.String): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA224(message: java.lang.String, cfg: js.Object): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA256(message: cryptojsLib.CryptoJSNs.libNs.WordArray): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA256(message: cryptojsLib.CryptoJSNs.libNs.WordArray, cfg: js.Object): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA256(message: java.lang.String): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA256(message: java.lang.String, cfg: js.Object): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
   def SHA3(message: cryptojsLib.CryptoJSNs.libNs.WordArray): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
   def SHA3(message: cryptojsLib.CryptoJSNs.libNs.WordArray, cfg: cryptojsLib.CryptoJSNs.algoNs.ISHA3Cfg): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
   def SHA3(message: java.lang.String): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
   def SHA3(message: java.lang.String, cfg: cryptojsLib.CryptoJSNs.algoNs.ISHA3Cfg): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA384(message: cryptojsLib.CryptoJSNs.libNs.WordArray): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA384(message: cryptojsLib.CryptoJSNs.libNs.WordArray, cfg: js.Object): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA384(message: java.lang.String): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA384(message: java.lang.String, cfg: js.Object): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA512(message: cryptojsLib.CryptoJSNs.libNs.WordArray): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA512(message: cryptojsLib.CryptoJSNs.libNs.WordArray, cfg: js.Object): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA512(message: java.lang.String): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
+  def SHA512(message: java.lang.String, cfg: js.Object): cryptojsLib.CryptoJSNs.libNs.WordArray = js.native
 }
 

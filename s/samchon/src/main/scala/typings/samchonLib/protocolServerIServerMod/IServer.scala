@@ -42,11 +42,11 @@ trait IServer extends js.Object {
 object IServer {
   @scala.inline
   def apply(
-    addClient: js.Function1[samchonLib.protocolCommunicatorIClientDriverMod.IClientDriver, scala.Unit],
-    close: js.Function0[scala.Unit],
-    open: js.Function1[scala.Double, scala.Unit]
+    addClient: samchonLib.protocolCommunicatorIClientDriverMod.IClientDriver => scala.Unit,
+    close: () => scala.Unit,
+    open: scala.Double => scala.Unit
   ): IServer = {
-    val __obj = js.Dynamic.literal(addClient = addClient, close = close, open = open)
+    val __obj = js.Dynamic.literal(addClient = js.Any.fromFunction1(addClient), close = js.Any.fromFunction0(close), open = js.Any.fromFunction1(open))
   
     __obj.asInstanceOf[IServer]
   }

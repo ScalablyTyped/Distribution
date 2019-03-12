@@ -26,24 +26,12 @@ trait NavigatorsConfig[TKeys, TState] extends js.Object {
 object NavigatorsConfig {
   @scala.inline
   def apply[TKeys, TState](
-    actionToNavigation: js.Function4[
-      Navigators[TState], 
-      js.Object, 
-      Nullable[NavigationAction], 
-      Nullable[Route[TKeys, TState]], 
-      js.Object
-    ],
-    navigationToAction: js.Function4[
-      Navigators[TState], 
-      reduxLib.reduxMod.Store[TState, reduxLib.reduxMod.AnyAction], 
-      RoutesMap[TKeys, TState], 
-      js.Object, 
-      reduxDashFirstDashRouterLib.Anon_Action
-    ],
+    actionToNavigation: (Navigators[TState], js.Object, Nullable[NavigationAction], Nullable[Route[TKeys, TState]]) => js.Object,
+    navigationToAction: (Navigators[TState], reduxLib.reduxMod.Store[TState, reduxLib.reduxMod.AnyAction], RoutesMap[TKeys, TState], js.Object) => reduxDashFirstDashRouterLib.Anon_Action,
     navigators: Navigators[TState],
-    patchNavigators: js.Function1[Navigators[TState], scala.Unit]
+    patchNavigators: Navigators[TState] => scala.Unit
   ): NavigatorsConfig[TKeys, TState] = {
-    val __obj = js.Dynamic.literal(actionToNavigation = actionToNavigation, navigationToAction = navigationToAction, navigators = navigators, patchNavigators = patchNavigators)
+    val __obj = js.Dynamic.literal(actionToNavigation = js.Any.fromFunction4(actionToNavigation), navigationToAction = js.Any.fromFunction4(navigationToAction), navigators = navigators, patchNavigators = js.Any.fromFunction1(patchNavigators))
   
     __obj.asInstanceOf[NavigatorsConfig[TKeys, TState]]
   }

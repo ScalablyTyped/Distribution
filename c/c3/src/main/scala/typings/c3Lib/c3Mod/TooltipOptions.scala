@@ -52,31 +52,19 @@ trait TooltipOptions extends js.Object {
 object TooltipOptions {
   @scala.inline
   def apply(
-    contents: js.Function4[
-      /* data */ js.Any, 
-      /* defaultTitleFormat */ java.lang.String, 
-      /* defaultValueFormat */ java.lang.String, 
-      /* color */ js.Any, 
-      java.lang.String
-    ] = null,
+    contents: (/* data */ js.Any, /* defaultTitleFormat */ java.lang.String, /* defaultValueFormat */ java.lang.String, /* color */ js.Any) => java.lang.String = null,
     format: c3Lib.Anon_IdIndex = null,
     grouped: js.UndefOr[scala.Boolean] = js.undefined,
     order: java.lang.String | js.Array[_] | (js.Function2[/* data1 */ js.Any, /* data2 */ js.Any, scala.Double]) = null,
-    position: js.Function4[
-      /* data */ js.Any, 
-      /* width */ scala.Double, 
-      /* height */ scala.Double, 
-      /* element */ js.Any, 
-      c3Lib.Anon_LeftTop
-    ] = null,
+    position: (/* data */ js.Any, /* width */ scala.Double, /* height */ scala.Double, /* element */ js.Any) => c3Lib.Anon_LeftTop = null,
     show: js.UndefOr[scala.Boolean] = js.undefined
   ): TooltipOptions = {
     val __obj = js.Dynamic.literal()
-    if (contents != null) __obj.updateDynamic("contents")(contents)
+    if (contents != null) __obj.updateDynamic("contents")(js.Any.fromFunction4(contents))
     if (format != null) __obj.updateDynamic("format")(format)
     if (!js.isUndefined(grouped)) __obj.updateDynamic("grouped")(grouped)
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(js.Any.fromFunction4(position))
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
     __obj.asInstanceOf[TooltipOptions]
   }

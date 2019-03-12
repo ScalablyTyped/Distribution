@@ -23,22 +23,22 @@ object ICursorTool {
   def apply(
     active: scala.Boolean,
     chart: IChart,
-    clicked: js.Function1[IPoint, scala.Boolean],
+    clicked: IPoint => scala.Boolean,
     direction: java.lang.String,
     dragging: scala.Double,
-    draw: js.Function0[scala.Unit],
+    draw: () => scala.Unit,
     followMouse: scala.Boolean,
     format: IFormat,
     horizAxis: IAxis,
-    mousedown: js.Function1[js.Any, scala.Boolean],
-    mousemove: js.Function1[js.Any, scala.Boolean],
-    over: js.Function1[IPoint, scala.Boolean],
+    mousedown: js.Any => scala.Boolean,
+    mousemove: js.Any => scala.Boolean,
+    over: IPoint => scala.Boolean,
     render: java.lang.String,
-    setRender: js.Function1[java.lang.String, scala.Unit],
+    setRender: java.lang.String => scala.Unit,
     size: IPoint,
     vertAxis: IAxis
   ): ICursorTool = {
-    val __obj = js.Dynamic.literal(active = active, chart = chart, clicked = clicked, direction = direction, dragging = dragging, draw = draw, followMouse = followMouse, format = format, horizAxis = horizAxis, mousedown = mousedown, mousemove = mousemove, over = over, render = render, setRender = setRender, size = size, vertAxis = vertAxis)
+    val __obj = js.Dynamic.literal(active = active, chart = chart, clicked = js.Any.fromFunction1(clicked), direction = direction, dragging = dragging, draw = js.Any.fromFunction0(draw), followMouse = followMouse, format = format, horizAxis = horizAxis, mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), over = js.Any.fromFunction1(over), render = render, setRender = js.Any.fromFunction1(setRender), size = size, vertAxis = vertAxis)
   
     __obj.asInstanceOf[ICursorTool]
   }

@@ -97,17 +97,17 @@ object UserDetails {
     firstName: java.lang.String,
     fullName: java.lang.String,
     groups: js.Array[GroupMembership],
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     lastName: java.lang.String,
     phoneNumber: java.lang.String,
     privileges: js.Array[Privilege],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     roomNumber: java.lang.String,
     userName: java.lang.String,
     userQueries: js.Array[JobQueryContainer],
     zipCode: java.lang.String
   ): UserDetails = {
-    val __obj = js.Dynamic.literal(address = address, constructor = constructor, email = email, faxNumber = faxNumber, firstName = firstName, fullName = fullName, groups = groups, hasOwnProperty = hasOwnProperty, lastName = lastName, phoneNumber = phoneNumber, privileges = privileges, propertyIsEnumerable = propertyIsEnumerable, roomNumber = roomNumber, userName = userName, userQueries = userQueries, zipCode = zipCode)
+    val __obj = js.Dynamic.literal(address = address, constructor = constructor, email = email, faxNumber = faxNumber, firstName = firstName, fullName = fullName, groups = groups, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), lastName = lastName, phoneNumber = phoneNumber, privileges = privileges, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), roomNumber = roomNumber, userName = userName, userQueries = userQueries, zipCode = zipCode)
   
     __obj.asInstanceOf[UserDetails]
   }

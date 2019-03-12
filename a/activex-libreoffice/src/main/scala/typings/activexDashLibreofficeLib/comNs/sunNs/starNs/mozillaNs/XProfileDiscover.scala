@@ -60,21 +60,17 @@ trait XProfileDiscover
 object XProfileDiscover {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getDefaultProfile: js.Function1[MozillaProductType, java.lang.String],
-    getProfileCount: js.Function1[MozillaProductType, scala.Double],
-    getProfileExists: js.Function2[MozillaProductType, java.lang.String, scala.Boolean],
-    getProfileList: js.Function2[
-      MozillaProductType, 
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]], 
-      scala.Double
-    ],
-    getProfilePath: js.Function2[MozillaProductType, java.lang.String, java.lang.String],
-    isProfileLocked: js.Function2[MozillaProductType, java.lang.String, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDefaultProfile: MozillaProductType => java.lang.String,
+    getProfileCount: MozillaProductType => scala.Double,
+    getProfileExists: (MozillaProductType, java.lang.String) => scala.Boolean,
+    getProfileList: (MozillaProductType, js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]]) => scala.Double,
+    getProfilePath: (MozillaProductType, java.lang.String) => java.lang.String,
+    isProfileLocked: (MozillaProductType, java.lang.String) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XProfileDiscover = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getDefaultProfile = getDefaultProfile, getProfileCount = getProfileCount, getProfileExists = getProfileExists, getProfileList = getProfileList, getProfilePath = getProfilePath, isProfileLocked = isProfileLocked, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDefaultProfile = js.Any.fromFunction1(getDefaultProfile), getProfileCount = js.Any.fromFunction1(getProfileCount), getProfileExists = js.Any.fromFunction2(getProfileExists), getProfileList = js.Any.fromFunction2(getProfileList), getProfilePath = js.Any.fromFunction2(getProfilePath), isProfileLocked = js.Any.fromFunction2(isProfileLocked), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XProfileDiscover]
   }

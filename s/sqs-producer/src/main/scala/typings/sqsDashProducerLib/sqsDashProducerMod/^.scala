@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("sqs-producer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def create(opts: sqsDashProducerLib.sqsDashProducerMod.Options): sqsDashProducerLib.sqsDashProducerMod.Producer = js.native
+  def create(opts: Options): Producer = js.native
 }
 

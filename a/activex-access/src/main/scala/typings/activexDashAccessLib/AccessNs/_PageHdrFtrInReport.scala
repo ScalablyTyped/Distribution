@@ -13,7 +13,7 @@ class _PageHdrFtrInReport protected () extends js.Object {
   var AlternateBackShade: scala.Double = js.native
   var AlternateBackThemeColorIndex: scala.Double = js.native
   var AlternateBackTint: scala.Double = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   var AutoHeight: scala.Boolean = js.native
   var BackColor: scala.Double = js.native
   var BackShade: scala.Double = js.native

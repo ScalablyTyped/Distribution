@@ -27,10 +27,7 @@ object ^ extends js.Object {
   def addLast[T](array: js.Array[T], `val`: T): js.Array[T] = js.native
   def addLast[T](array: js.Array[T], `val`: js.Array[T]): js.Array[T] = js.native
   def clone[T](obj: T): T = js.native
-  def getIn(
-    obj: timmLib.timmMod.ArrayOrObject | js.UndefOr[scala.Nothing],
-    path: js.Array[timmLib.timmMod.Key]
-  ): js.Any = js.native
+  def getIn(obj: ArrayOrObject | js.UndefOr[scala.Nothing], path: js.Array[Key]): js.Any = js.native
   def insert[T](array: js.Array[T], idx: scala.Double, `val`: T): js.Array[T] = js.native
   def insert[T](array: js.Array[T], idx: scala.Double, `val`: js.Array[T]): js.Array[T] = js.native
   def merge(a: js.Object): js.Object = js.native
@@ -61,14 +58,14 @@ object ^ extends js.Object {
     f: js.Object,
     rest: js.Object*
   ): js.Object = js.native
-  def mergeIn[T](a: T, path: js.Array[timmLib.timmMod.Key]): T = js.native
-  def mergeIn[T](a: T, path: js.Array[timmLib.timmMod.Key], b: js.Object): T = js.native
-  def mergeIn[T](a: T, path: js.Array[timmLib.timmMod.Key], b: js.Object, c: js.Object): T = js.native
-  def mergeIn[T](a: T, path: js.Array[timmLib.timmMod.Key], b: js.Object, c: js.Object, d: js.Object): T = js.native
-  def mergeIn[T](a: T, path: js.Array[timmLib.timmMod.Key], b: js.Object, c: js.Object, d: js.Object, e: js.Object): T = js.native
+  def mergeIn[T](a: T, path: js.Array[Key]): T = js.native
+  def mergeIn[T](a: T, path: js.Array[Key], b: js.Object): T = js.native
+  def mergeIn[T](a: T, path: js.Array[Key], b: js.Object, c: js.Object): T = js.native
+  def mergeIn[T](a: T, path: js.Array[Key], b: js.Object, c: js.Object, d: js.Object): T = js.native
+  def mergeIn[T](a: T, path: js.Array[Key], b: js.Object, c: js.Object, d: js.Object, e: js.Object): T = js.native
   def mergeIn[T](
     a: T,
-    path: js.Array[timmLib.timmMod.Key],
+    path: js.Array[Key],
     b: js.Object,
     c: js.Object,
     d: js.Object,
@@ -82,10 +79,10 @@ object ^ extends js.Object {
   def removeFirst[T](array: js.Array[T]): js.Array[T] = js.native
   def removeLast[T](array: js.Array[T]): js.Array[T] = js.native
   def replaceAt[T](array: js.Array[T], idx: scala.Double, newItem: T): js.Array[T] = js.native
-  def set[T](obj: T, key: timmLib.timmMod.Key, `val`: js.Any): T = js.native
-  def set[T](obj: js.UndefOr[scala.Nothing], key: timmLib.timmMod.Key, `val`: js.Any): T = js.native
-  def setIn[T](obj: T, path: js.Array[timmLib.timmMod.Key], `val`: js.Any): T = js.native
-  def update[T](obj: T, key: timmLib.timmMod.Key, fnUpdate: js.Function1[/* prevValue */ js.Any, _]): T = js.native
-  def updateIn[T](obj: T, path: js.Array[timmLib.timmMod.Key], fnUpdate: js.Function1[/* prevValue */ js.Any, _]): T = js.native
+  def set[T](obj: T, key: Key, `val`: js.Any): T = js.native
+  def set[T](obj: js.UndefOr[scala.Nothing], key: Key, `val`: js.Any): T = js.native
+  def setIn[T](obj: T, path: js.Array[Key], `val`: js.Any): T = js.native
+  def update[T](obj: T, key: Key, fnUpdate: js.Function1[/* prevValue */ js.Any, _]): T = js.native
+  def updateIn[T](obj: T, path: js.Array[Key], fnUpdate: js.Function1[/* prevValue */ js.Any, _]): T = js.native
 }
 

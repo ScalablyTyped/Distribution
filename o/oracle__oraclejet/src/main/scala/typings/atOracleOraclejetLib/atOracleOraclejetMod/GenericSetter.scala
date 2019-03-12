@@ -16,14 +16,10 @@ trait GenericSetter[SP] extends js.Object {
 object GenericSetter {
   @scala.inline
   def apply[SP](
-    set: js.Function2[
-      js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: SP[K] */ js.Any, 
-      scala.Unit
-    ],
-    unset: js.Function1[java.lang.String, scala.Unit]
+    set: (js.Any, /* import warning: ImportType.apply Failed type conversion: SP[K] */ js.Any) => scala.Unit,
+    unset: java.lang.String => scala.Unit
   ): GenericSetter[SP] = {
-    val __obj = js.Dynamic.literal(set = set, unset = unset)
+    val __obj = js.Dynamic.literal(set = js.Any.fromFunction2(set), unset = js.Any.fromFunction1(unset))
   
     __obj.asInstanceOf[GenericSetter[SP]]
   }

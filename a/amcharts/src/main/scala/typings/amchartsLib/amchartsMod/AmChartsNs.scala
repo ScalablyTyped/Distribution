@@ -10,82 +10,82 @@ import scala.scalajs.js.annotation._
 object AmChartsNs extends js.Object {
   @js.native
   class AmAngularGauge ()
-    extends amchartsLib.amangulargaugeMod.default
+    extends amchartsLib.amAngularGaugeMod.default
   
   @js.native
   class AmBalloon ()
-    extends amchartsLib.amballoonMod.default
+    extends amchartsLib.amBalloonMod.default
   
   @js.native
   class AmChart ()
-    extends amchartsLib.amchartMod.default
+    extends amchartsLib.amChartMod.default
   
   @js.native
   class AmCoordinateChart ()
-    extends amchartsLib.amcoordinatechartMod.default
+    extends amchartsLib.amCoordinateChartMod.default
   
   // class AmFunnelChart extends _AmFunnelChart { }
   // class AmGanttChart extends _AmGanttChart { }
   @js.native
   class AmGraph ()
-    extends amchartsLib.amgraphMod.default
+    extends amchartsLib.amGraphMod.default
   
   @js.native
   class AmLegend ()
-    extends amchartsLib.amlegendMod.default
+    extends amchartsLib.amLegendMod.default
   
   @js.native
   class AmPieChart ()
-    extends amchartsLib.ampiechartMod.default
+    extends amchartsLib.amPieChartMod.default
   
   @js.native
   class AmRadarChart ()
-    extends amchartsLib.amradarchartMod.default
+    extends amchartsLib.amRadarChartMod.default
   
   @js.native
   class AmRectangularChart ()
-    extends amchartsLib.amrectangularchartMod.default
+    extends amchartsLib.amRectangularChartMod.default
   
   @js.native
   class AmSerialChart ()
-    extends amchartsLib.amserialchartMod.default
+    extends amchartsLib.amSerialChartMod.default
   
   // class AmSlicedChart extends _AmSlicedChart { }
   @js.native
   class AmXYChart ()
-    extends amchartsLib.amxychartMod.default
+    extends amchartsLib.amXYChartMod.default
   
   @js.native
   class AxisBase ()
-    extends amchartsLib.axisbaseMod.default
+    extends amchartsLib.axisBaseMod.default
   
   @js.native
   class CategoryAxis ()
-    extends amchartsLib.categoryaxisMod.default
+    extends amchartsLib.categoryAxisMod.default
   
   @js.native
   class ChartCursor ()
-    extends amchartsLib.chartcursorMod.default
+    extends amchartsLib.chartCursorMod.default
   
   @js.native
   class ChartScrollbar ()
-    extends amchartsLib.chartscrollbarMod.default
+    extends amchartsLib.chartScrollbarMod.default
   
   @js.native
   class GaugeArrow ()
-    extends amchartsLib.gaugearrowMod.default
+    extends amchartsLib.gaugeArrowMod.default
   
   @js.native
   class GaugeAxis ()
-    extends amchartsLib.gaugeaxisMod.default
+    extends amchartsLib.gaugeAxisMod.default
   
   @js.native
   class GaugeBand ()
-    extends amchartsLib.gaugebandMod.default
+    extends amchartsLib.gaugeBandMod.default
   
   @js.native
   class GraphDataItem ()
-    extends amchartsLib.graphdataitemMod.default
+    extends amchartsLib.graphDataItemMod.default
   
   @js.native
   class Guide ()
@@ -98,7 +98,7 @@ object AmChartsNs extends js.Object {
   
   @js.native
   class SerialDataItem ()
-    extends amchartsLib.serialdataitemMod.default
+    extends amchartsLib.serialDataItemMod.default
   
   @js.native
   class Slice ()
@@ -110,11 +110,11 @@ object AmChartsNs extends js.Object {
   
   @js.native
   class TrendLine ()
-    extends amchartsLib.trendlineMod.default
+    extends amchartsLib.trendLineMod.default
   
   @js.native
   class ValueAxis ()
-    extends amchartsLib.valueaxisMod.default
+    extends amchartsLib.valueAxisMod.default
   
   /**
     * Set it to true if you have base href set for your page.

@@ -29,12 +29,12 @@ trait InfoBubble extends js.Object {
 object InfoBubble {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
-    getPosition: js.Function0[googlemapsLib.googleNs.mapsNs.LatLng],
-    isOpen: js.Function0[scala.Boolean],
-    open: js.Function2[googlemapsLib.googleNs.mapsNs.Map, googlemapsLib.googleNs.mapsNs.Marker, scala.Unit]
+    close: () => scala.Unit,
+    getPosition: () => googlemapsLib.googleNs.mapsNs.LatLng,
+    isOpen: () => scala.Boolean,
+    open: (googlemapsLib.googleNs.mapsNs.Map, googlemapsLib.googleNs.mapsNs.Marker) => scala.Unit
   ): InfoBubble = {
-    val __obj = js.Dynamic.literal(close = close, getPosition = getPosition, isOpen = isOpen, open = open)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getPosition = js.Any.fromFunction0(getPosition), isOpen = js.Any.fromFunction0(isOpen), open = js.Any.fromFunction2(open))
   
     __obj.asInstanceOf[InfoBubble]
   }

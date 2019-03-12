@@ -11,9 +11,9 @@ trait BreadcrumbsProviderProps extends js.Object {
 
 object BreadcrumbsProviderProps {
   @scala.inline
-  def apply(shouldBreadcrumbsUpdate: js.Function1[/* repeated */ js.Any, _] = null): BreadcrumbsProviderProps = {
+  def apply(shouldBreadcrumbsUpdate: /* repeated */ js.Any => _ = null): BreadcrumbsProviderProps = {
     val __obj = js.Dynamic.literal()
-    if (shouldBreadcrumbsUpdate != null) __obj.updateDynamic("shouldBreadcrumbsUpdate")(shouldBreadcrumbsUpdate)
+    if (shouldBreadcrumbsUpdate != null) __obj.updateDynamic("shouldBreadcrumbsUpdate")(js.Any.fromFunction1(shouldBreadcrumbsUpdate))
     __obj.asInstanceOf[BreadcrumbsProviderProps]
   }
 }

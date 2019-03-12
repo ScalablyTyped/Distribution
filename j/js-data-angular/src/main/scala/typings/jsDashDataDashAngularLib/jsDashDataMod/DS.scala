@@ -12,7 +12,7 @@ trait DS extends js.Object {
     params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSFilterParams */ js.Any,
     scope: angularLib.angularMod.angularNs.IScope,
     expr: java.lang.String
-  ): angularLib.angularMod.Global.Function = js.native
+  ): js.Function = js.native
   def bindAll[T](
     resourceName: java.lang.String,
     params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSFilterParams */ js.Any,
@@ -25,13 +25,13 @@ trait DS extends js.Object {
       ], 
       scala.Unit
     ]
-  ): angularLib.angularMod.Global.Function = js.native
+  ): js.Function = js.native
   def bindOne[T](
     resourceName: java.lang.String,
     id: java.lang.String,
     scope: angularLib.angularMod.angularNs.IScope,
     expr: java.lang.String
-  ): angularLib.angularMod.Global.Function = js.native
+  ): js.Function = js.native
   def bindOne[T](
     resourceName: java.lang.String,
     id: java.lang.String,
@@ -42,13 +42,13 @@ trait DS extends js.Object {
       /* item */ T with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
       scala.Unit
     ]
-  ): angularLib.angularMod.Global.Function = js.native
+  ): js.Function = js.native
   def bindOne[T](
     resourceName: java.lang.String,
     id: scala.Double,
     scope: angularLib.angularMod.angularNs.IScope,
     expr: java.lang.String
-  ): angularLib.angularMod.Global.Function = js.native
+  ): js.Function = js.native
   def bindOne[T](
     resourceName: java.lang.String,
     id: scala.Double,
@@ -59,6 +59,6 @@ trait DS extends js.Object {
       /* item */ T with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
       scala.Unit
     ]
-  ): angularLib.angularMod.Global.Function = js.native
+  ): js.Function = js.native
 }
 

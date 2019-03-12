@@ -126,13 +126,13 @@ object Model {
   def apply(
     buttonMode: ejDotWebDotAllLib.ejNs.ButtonMode | java.lang.String = null,
     buttonText: ButtonText = null,
-    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
-    close: js.Function1[/* e */ CloseEventArgs, scala.Unit] = null,
+    change: /* e */ ChangeEventArgs => scala.Unit = null,
+    close: /* e */ CloseEventArgs => scala.Unit = null,
     columns: scala.Double | java.lang.String = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
     custom: js.Array[_] = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     displayInline: js.UndefOr[scala.Boolean] = js.undefined,
     enableOpacity: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -140,10 +140,10 @@ object Model {
     locale: java.lang.String = null,
     modelType: ModelType | java.lang.String = null,
     opacityValue: scala.Double | java.lang.String = null,
-    open: js.Function1[/* e */ OpenEventArgs, scala.Unit] = null,
+    open: /* e */ OpenEventArgs => scala.Unit = null,
     palette: Palette | java.lang.String = null,
     presetType: Presets | java.lang.String = null,
-    select: js.Function1[/* e */ SelectEventArgs, scala.Unit] = null,
+    select: /* e */ SelectEventArgs => scala.Unit = null,
     showApplyCancel: js.UndefOr[scala.Boolean] = js.undefined,
     showClearButton: js.UndefOr[scala.Boolean] = js.undefined,
     showPreview: js.UndefOr[scala.Boolean] = js.undefined,
@@ -157,13 +157,13 @@ object Model {
     val __obj = js.Dynamic.literal()
     if (buttonMode != null) __obj.updateDynamic("buttonMode")(buttonMode.asInstanceOf[js.Any])
     if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (custom != null) __obj.updateDynamic("custom")(custom)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(displayInline)) __obj.updateDynamic("displayInline")(displayInline)
     if (!js.isUndefined(enableOpacity)) __obj.updateDynamic("enableOpacity")(enableOpacity)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
@@ -171,10 +171,10 @@ object Model {
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (modelType != null) __obj.updateDynamic("modelType")(modelType.asInstanceOf[js.Any])
     if (opacityValue != null) __obj.updateDynamic("opacityValue")(opacityValue.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
     if (presetType != null) __obj.updateDynamic("presetType")(presetType.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (!js.isUndefined(showApplyCancel)) __obj.updateDynamic("showApplyCancel")(showApplyCancel)
     if (!js.isUndefined(showClearButton)) __obj.updateDynamic("showClearButton")(showClearButton)
     if (!js.isUndefined(showPreview)) __obj.updateDynamic("showPreview")(showPreview)

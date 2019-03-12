@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "TaskQueue")
 @js.native
 class TaskQueue ()
-  extends fullcalendarLib.taskqueueMod.default
+  extends fullcalendarLib.taskQueueMod.default
 

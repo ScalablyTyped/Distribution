@@ -41,7 +41,7 @@ object DurandalHistoryOptions {
     hashChange: js.UndefOr[scala.Boolean] = js.undefined,
     pushState: js.UndefOr[scala.Boolean] = js.undefined,
     root: java.lang.String = null,
-    routeHandler: js.Function1[/* fragment */ java.lang.String, scala.Unit] = null,
+    routeHandler: /* fragment */ java.lang.String => scala.Unit = null,
     silent: js.UndefOr[scala.Boolean] = js.undefined,
     startRoute: java.lang.String = null
   ): DurandalHistoryOptions = {
@@ -49,7 +49,7 @@ object DurandalHistoryOptions {
     if (!js.isUndefined(hashChange)) __obj.updateDynamic("hashChange")(hashChange)
     if (!js.isUndefined(pushState)) __obj.updateDynamic("pushState")(pushState)
     if (root != null) __obj.updateDynamic("root")(root)
-    if (routeHandler != null) __obj.updateDynamic("routeHandler")(routeHandler)
+    if (routeHandler != null) __obj.updateDynamic("routeHandler")(js.Any.fromFunction1(routeHandler))
     if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
     if (startRoute != null) __obj.updateDynamic("startRoute")(startRoute)
     __obj.asInstanceOf[DurandalHistoryOptions]

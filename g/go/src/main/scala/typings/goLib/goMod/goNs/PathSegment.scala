@@ -62,11 +62,11 @@ object PathSegment {
   def apply(
     centerX: scala.Double,
     centerY: scala.Double,
-    close: js.Function0[PathSegment],
-    copy: js.Function0[PathSegment],
+    close: () => PathSegment,
+    copy: () => PathSegment,
     endX: scala.Double,
     endY: scala.Double,
-    equalsApprox: js.Function1[PathSegment, scala.Boolean],
+    equalsApprox: PathSegment => scala.Boolean,
     isClockwiseArc: scala.Boolean,
     isClosed: scala.Boolean,
     isLargeArc: scala.Boolean,
@@ -81,7 +81,7 @@ object PathSegment {
     `type`: EnumValue,
     xAxisRotation: scala.Double
   ): PathSegment = {
-    val __obj = js.Dynamic.literal(centerX = centerX, centerY = centerY, close = close, copy = copy, endX = endX, endY = endY, equalsApprox = equalsApprox, isClockwiseArc = isClockwiseArc, isClosed = isClosed, isLargeArc = isLargeArc, point1X = point1X, point1Y = point1Y, point2X = point2X, point2Y = point2Y, radiusX = radiusX, radiusY = radiusY, startAngle = startAngle, sweepAngle = sweepAngle, xAxisRotation = xAxisRotation)
+    val __obj = js.Dynamic.literal(centerX = centerX, centerY = centerY, close = js.Any.fromFunction0(close), copy = js.Any.fromFunction0(copy), endX = endX, endY = endY, equalsApprox = js.Any.fromFunction1(equalsApprox), isClockwiseArc = isClockwiseArc, isClosed = isClosed, isLargeArc = isLargeArc, point1X = point1X, point1Y = point1Y, point2X = point2X, point2Y = point2Y, radiusX = radiusX, radiusY = radiusY, startAngle = startAngle, sweepAngle = sweepAngle, xAxisRotation = xAxisRotation)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PathSegment]
   }

@@ -12,7 +12,7 @@ class namespaced protected () extends S3rver {
   /* CompleteClass */
   override def run(
     callback: js.Function4[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* hostname */ java.lang.String, 
       /* port */ scala.Double, 
       /* directory */ java.lang.String, 

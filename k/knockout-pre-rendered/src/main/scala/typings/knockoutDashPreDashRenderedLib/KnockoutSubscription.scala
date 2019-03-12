@@ -11,8 +11,8 @@ trait KnockoutSubscription extends js.Object {
 
 object KnockoutSubscription {
   @scala.inline
-  def apply(dispose: js.Function0[scala.Unit]): KnockoutSubscription = {
-    val __obj = js.Dynamic.literal(dispose = dispose)
+  def apply(dispose: () => scala.Unit): KnockoutSubscription = {
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
   
     __obj.asInstanceOf[KnockoutSubscription]
   }

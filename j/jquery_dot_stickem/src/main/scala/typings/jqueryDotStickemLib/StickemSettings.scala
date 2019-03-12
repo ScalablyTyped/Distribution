@@ -47,8 +47,8 @@ object StickemSettings {
     endStickClass: java.lang.String = null,
     item: java.lang.String = null,
     offset: scala.Double | java.lang.String = null,
-    onStick: js.Function0[scala.Unit] = null,
-    onUnstick: js.Function0[scala.Unit] = null,
+    onStick: () => scala.Unit = null,
+    onUnstick: () => scala.Unit = null,
     start: scala.Double | java.lang.String = null,
     stickClass: java.lang.String = null
   ): StickemSettings = {
@@ -57,8 +57,8 @@ object StickemSettings {
     if (endStickClass != null) __obj.updateDynamic("endStickClass")(endStickClass)
     if (item != null) __obj.updateDynamic("item")(item)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (onStick != null) __obj.updateDynamic("onStick")(onStick)
-    if (onUnstick != null) __obj.updateDynamic("onUnstick")(onUnstick)
+    if (onStick != null) __obj.updateDynamic("onStick")(js.Any.fromFunction0(onStick))
+    if (onUnstick != null) __obj.updateDynamic("onUnstick")(js.Any.fromFunction0(onUnstick))
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (stickClass != null) __obj.updateDynamic("stickClass")(stickClass)
     __obj.asInstanceOf[StickemSettings]

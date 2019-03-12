@@ -55,17 +55,17 @@ trait Records extends js.Object {
 object Records {
   @scala.inline
   def apply(
-    count: js.Function0[scala.Double],
-    getFromTable: js.Function0[js.Array[js.Object]],
-    init: js.Function0[scala.Unit],
-    initOnLoad: js.Function0[scala.Boolean],
-    pageBounds: js.Function0[js.Array[scala.Double]],
-    paginate: js.Function0[scala.Unit],
-    resetOriginal: js.Function0[scala.Unit],
-    sort: js.Function0[scala.Double],
-    updateFromJson: js.Function1[js.Any, scala.Unit]
+    count: () => scala.Double,
+    getFromTable: () => js.Array[js.Object],
+    init: () => scala.Unit,
+    initOnLoad: () => scala.Boolean,
+    pageBounds: () => js.Array[scala.Double],
+    paginate: () => scala.Unit,
+    resetOriginal: () => scala.Unit,
+    sort: () => scala.Double,
+    updateFromJson: js.Any => scala.Unit
   ): Records = {
-    val __obj = js.Dynamic.literal(count = count, getFromTable = getFromTable, init = init, initOnLoad = initOnLoad, pageBounds = pageBounds, paginate = paginate, resetOriginal = resetOriginal, sort = sort, updateFromJson = updateFromJson)
+    val __obj = js.Dynamic.literal(count = js.Any.fromFunction0(count), getFromTable = js.Any.fromFunction0(getFromTable), init = js.Any.fromFunction0(init), initOnLoad = js.Any.fromFunction0(initOnLoad), pageBounds = js.Any.fromFunction0(pageBounds), paginate = js.Any.fromFunction0(paginate), resetOriginal = js.Any.fromFunction0(resetOriginal), sort = js.Any.fromFunction0(sort), updateFromJson = js.Any.fromFunction1(updateFromJson))
   
     __obj.asInstanceOf[Records]
   }

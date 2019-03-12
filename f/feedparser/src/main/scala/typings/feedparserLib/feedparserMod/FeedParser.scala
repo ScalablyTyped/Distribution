@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait FeedParser
   extends nodeLib.streamMod.Duplex {
   var _emitted_meta: scala.Boolean = js.native
-  var errors: js.Array[nodeLib.Error] = js.native
+  var errors: js.Array[stdLib.Error] = js.native
   var in_xhtml: scala.Boolean = js.native
   var meta: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var options: feedparserLib.feedparserMod.FeedParserNs.Options = js.native
@@ -23,7 +23,7 @@ trait FeedParser
   def handleAttributes(attrs: feedparserLib.feedparserMod.FeedParserNs.Attrs, el: java.lang.String): js.Any = js.native
   def handleCloseTag(el: java.lang.String): scala.Unit = js.native
   def handleEnd(): js.Any = js.native
-  def handleError(e: nodeLib.Error): scala.Unit = js.native
+  def handleError(e: stdLib.Error): scala.Unit = js.native
   def handleItem(
     node: feedparserLib.feedparserMod.FeedParserNs.Node,
     `type`: feedparserLib.feedparserMod.FeedParserNs.Type,
@@ -36,7 +36,7 @@ trait FeedParser
   ): feedparserLib.feedparserMod.FeedParserNs.Meta = js.native
   def handleOpenTag(node: feedparserLib.feedparserMod.FeedParserNs.Node): scala.Unit = js.native
   def handleProcessingInstruction(node: feedparserLib.feedparserMod.FeedParserNs.Node): scala.Unit = js.native
-  def handleSaxError(e: nodeLib.Error): scala.Unit = js.native
+  def handleSaxError(e: stdLib.Error): scala.Unit = js.native
   def handleText(text: java.lang.String): scala.Unit = js.native
   def init(): scala.Unit = js.native
   def listenerCount(`type`: feedparserLib.feedparserMod.FeedParserNs.Type): js.Any = js.native

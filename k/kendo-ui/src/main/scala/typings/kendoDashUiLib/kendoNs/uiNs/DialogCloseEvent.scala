@@ -12,12 +12,12 @@ trait DialogCloseEvent extends DialogEvent {
 object DialogCloseEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Dialog,
     userTriggered: js.UndefOr[scala.Boolean] = js.undefined
   ): DialogCloseEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (!js.isUndefined(userTriggered)) __obj.updateDynamic("userTriggered")(userTriggered)
     __obj.asInstanceOf[DialogCloseEvent]
   }

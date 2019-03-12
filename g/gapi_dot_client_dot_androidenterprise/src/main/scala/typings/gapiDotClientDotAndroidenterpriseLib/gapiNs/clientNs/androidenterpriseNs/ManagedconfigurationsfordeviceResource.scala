@@ -21,28 +21,13 @@ trait ManagedconfigurationsfordeviceResource extends js.Object {
 object ManagedconfigurationsfordeviceResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceIdEnterpriseId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceIdEnterpriseId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfigurationsForDeviceListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceIdEnterpriseId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceIdEnterpriseId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration]
-    ]
+    delete: gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceIdEnterpriseId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceIdEnterpriseId => gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration],
+    list: gapiDotClientDotAndroidenterpriseLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfigurationsForDeviceListResponse],
+    patch: gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceIdEnterpriseId => gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration],
+    update: gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceIdEnterpriseId => gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration]
   ): ManagedconfigurationsfordeviceResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[ManagedconfigurationsfordeviceResource]
   }

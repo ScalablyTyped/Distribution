@@ -21,7 +21,7 @@ object UnmarkOptions {
   def apply(
     className: java.lang.String = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
-    done: js.Function1[/* marksTotal */ scala.Double, scala.Unit] = null,
+    done: /* marksTotal */ scala.Double => scala.Unit = null,
     element: java.lang.String = null,
     exclude: js.Array[java.lang.String] = null,
     iframes: js.UndefOr[scala.Boolean] = js.undefined,
@@ -31,7 +31,7 @@ object UnmarkOptions {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (done != null) __obj.updateDynamic("done")(done)
+    if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction1(done))
     if (element != null) __obj.updateDynamic("element")(element)
     if (exclude != null) __obj.updateDynamic("exclude")(exclude)
     if (!js.isUndefined(iframes)) __obj.updateDynamic("iframes")(iframes)

@@ -18,13 +18,13 @@ object Anon_Algo1Algo2Error {
   @scala.inline
   def apply(
     error: js.UndefOr[scala.Boolean] = js.undefined,
-    pickAlgorithm: js.Function2[/* algo1 */ java.lang.String, /* algo2 */ java.lang.String, java.lang.String] = null,
+    pickAlgorithm: (/* algo1 */ java.lang.String, /* algo2 */ java.lang.String) => java.lang.String = null,
     size: scala.Int | scala.Double = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Algo1Algo2Error = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
-    if (pickAlgorithm != null) __obj.updateDynamic("pickAlgorithm")(pickAlgorithm)
+    if (pickAlgorithm != null) __obj.updateDynamic("pickAlgorithm")(js.Any.fromFunction2(pickAlgorithm))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
     __obj.asInstanceOf[Anon_Algo1Algo2Error]

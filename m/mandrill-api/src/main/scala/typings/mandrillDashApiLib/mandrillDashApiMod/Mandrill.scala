@@ -32,6 +32,6 @@ class Mandrill protected () extends js.Object {
   def call(uri: java.lang.String, params: js.Any): scala.Unit = js.native
   def call(uri: java.lang.String, params: js.Any, onresult: ICallback): scala.Unit = js.native
   def call(uri: java.lang.String, params: js.Any, onresult: ICallback, onerror: ICallback): scala.Unit = js.native
-  def onerror(err: nodeLib.Error): scala.Unit = js.native
+  def onerror(err: stdLib.Error): scala.Unit = js.native
 }
 

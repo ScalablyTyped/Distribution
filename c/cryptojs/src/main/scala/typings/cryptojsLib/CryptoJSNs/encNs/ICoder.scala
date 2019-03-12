@@ -12,10 +12,10 @@ trait ICoder
 object ICoder {
   @scala.inline
   def apply(
-    parse: js.Function1[java.lang.String, cryptojsLib.CryptoJSNs.libNs.WordArray],
-    stringify: js.Function1[cryptojsLib.CryptoJSNs.libNs.WordArray, java.lang.String]
+    parse: java.lang.String => cryptojsLib.CryptoJSNs.libNs.WordArray,
+    stringify: cryptojsLib.CryptoJSNs.libNs.WordArray => java.lang.String
   ): ICoder = {
-    val __obj = js.Dynamic.literal(parse = parse, stringify = stringify)
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), stringify = js.Any.fromFunction1(stringify))
   
     __obj.asInstanceOf[ICoder]
   }

@@ -45,15 +45,15 @@ object SceneViewEnvironmentProperties {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     atmosphere: SceneViewEnvironmentAtmosphereProperties = null,
     atmosphereEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     background: BackgroundProperties = null,
     lighting: SceneViewEnvironmentLightingProperties = null,
     starsEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): SceneViewEnvironmentProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (atmosphere != null) __obj.updateDynamic("atmosphere")(atmosphere)
     if (!js.isUndefined(atmosphereEnabled)) __obj.updateDynamic("atmosphereEnabled")(atmosphereEnabled)
     if (background != null) __obj.updateDynamic("background")(background)

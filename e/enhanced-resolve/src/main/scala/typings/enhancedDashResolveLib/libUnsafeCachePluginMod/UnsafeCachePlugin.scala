@@ -17,13 +17,13 @@ trait UnsafeCachePlugin extends js.Object {
 object UnsafeCachePlugin {
   @scala.inline
   def apply(
-    apply: js.Function1[enhancedDashResolveLib.libResolverMod.namespaced, scala.Unit],
+    apply: enhancedDashResolveLib.libResolverMod.namespaced => scala.Unit,
     cache: enhancedDashResolveLib.libConcordMod.Dictionary[_],
-    filterPredicate: js.Function1[enhancedDashResolveLib.libCommonDashTypesMod.ResolverRequest, scala.Boolean],
+    filterPredicate: enhancedDashResolveLib.libCommonDashTypesMod.ResolverRequest => scala.Boolean,
     source: java.lang.String,
     target: java.lang.String
   ): UnsafeCachePlugin = {
-    val __obj = js.Dynamic.literal(apply = apply, cache = cache, filterPredicate = filterPredicate, source = source, target = target)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), cache = cache, filterPredicate = js.Any.fromFunction1(filterPredicate), source = source, target = target)
   
     __obj.asInstanceOf[UnsafeCachePlugin]
   }

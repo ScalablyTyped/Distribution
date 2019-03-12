@@ -28,34 +28,22 @@ object SingleBackend {
   def apply(
     AdminEntity: java.lang.String,
     OwnerEntity: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getAdminEntity: js.Function0[java.lang.String],
-    getComponentSchema: js.Function1[java.lang.String, XSchema],
-    getLayer: js.Function2[java.lang.String, java.lang.String, XLayer],
-    getLayers: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      java.lang.String, 
-      activexDashInteropLib.SafeArray[XLayer]
-    ],
-    getMultipleLayers: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashInteropLib.SafeArray[XLayer]
-    ],
-    getOwnerEntity: js.Function0[java.lang.String],
-    getUpdatableLayer: js.Function1[java.lang.String, XUpdatableLayer],
-    getUpdateLayerId: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    isEqualEntity: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    listLayerIds: js.Function2[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashInteropLib.SafeArray[java.lang.String]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    supportsEntity: js.Function1[java.lang.String, scala.Boolean]
+    acquire: () => scala.Unit,
+    getAdminEntity: () => java.lang.String,
+    getComponentSchema: java.lang.String => XSchema,
+    getLayer: (java.lang.String, java.lang.String) => XLayer,
+    getLayers: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], java.lang.String) => stdLib.SafeArray[XLayer],
+    getMultipleLayers: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]) => stdLib.SafeArray[XLayer],
+    getOwnerEntity: () => java.lang.String,
+    getUpdatableLayer: java.lang.String => XUpdatableLayer,
+    getUpdateLayerId: (java.lang.String, java.lang.String) => java.lang.String,
+    isEqualEntity: (java.lang.String, java.lang.String) => scala.Boolean,
+    listLayerIds: (java.lang.String, java.lang.String) => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    supportsEntity: java.lang.String => scala.Boolean
   ): SingleBackend = {
-    val __obj = js.Dynamic.literal(AdminEntity = AdminEntity, OwnerEntity = OwnerEntity, acquire = acquire, getAdminEntity = getAdminEntity, getComponentSchema = getComponentSchema, getLayer = getLayer, getLayers = getLayers, getMultipleLayers = getMultipleLayers, getOwnerEntity = getOwnerEntity, getUpdatableLayer = getUpdatableLayer, getUpdateLayerId = getUpdateLayerId, isEqualEntity = isEqualEntity, listLayerIds = listLayerIds, queryInterface = queryInterface, release = release, supportsEntity = supportsEntity)
+    val __obj = js.Dynamic.literal(AdminEntity = AdminEntity, OwnerEntity = OwnerEntity, acquire = js.Any.fromFunction0(acquire), getAdminEntity = js.Any.fromFunction0(getAdminEntity), getComponentSchema = js.Any.fromFunction1(getComponentSchema), getLayer = js.Any.fromFunction2(getLayer), getLayers = js.Any.fromFunction2(getLayers), getMultipleLayers = js.Any.fromFunction2(getMultipleLayers), getOwnerEntity = js.Any.fromFunction0(getOwnerEntity), getUpdatableLayer = js.Any.fromFunction1(getUpdatableLayer), getUpdateLayerId = js.Any.fromFunction2(getUpdateLayerId), isEqualEntity = js.Any.fromFunction2(isEqualEntity), listLayerIds = js.Any.fromFunction2(listLayerIds), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), supportsEntity = js.Any.fromFunction1(supportsEntity))
   
     __obj.asInstanceOf[SingleBackend]
   }

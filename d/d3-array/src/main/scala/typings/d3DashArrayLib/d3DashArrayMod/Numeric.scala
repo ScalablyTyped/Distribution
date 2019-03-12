@@ -9,8 +9,8 @@ trait Numeric extends js.Object
 
 object Numeric {
   @scala.inline
-  def apply(valueOf: js.Function0[scala.Double]): Numeric = {
-    val __obj = js.Dynamic.literal(valueOf = valueOf)
+  def apply(valueOf: () => scala.Double): Numeric = {
+    val __obj = js.Dynamic.literal(valueOf = js.Any.fromFunction0(valueOf))
   
     __obj.asInstanceOf[Numeric]
   }

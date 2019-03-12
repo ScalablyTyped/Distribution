@@ -57,8 +57,8 @@ object OptionsData {
   def apply(
     schema: graphqlLib.graphqlMod.GraphQLSchema,
     context: js.Any = null,
-    extensions: js.Function1[/* info */ RequestInfo, org.scalablytyped.runtime.StringDictionary[_]] = null,
-    formatError: js.Function1[/* error */ graphqlLib.graphqlMod.GraphQLError, _] = null,
+    extensions: /* info */ RequestInfo => org.scalablytyped.runtime.StringDictionary[_] = null,
+    formatError: /* error */ graphqlLib.graphqlMod.GraphQLError => _ = null,
     graphiql: js.UndefOr[scala.Boolean] = js.undefined,
     pretty: js.UndefOr[scala.Boolean] = js.undefined,
     rootValue: js.Any = null,
@@ -66,8 +66,8 @@ object OptionsData {
   ): OptionsData = {
     val __obj = js.Dynamic.literal(schema = schema)
     if (context != null) __obj.updateDynamic("context")(context)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (formatError != null) __obj.updateDynamic("formatError")(formatError)
+    if (extensions != null) __obj.updateDynamic("extensions")(js.Any.fromFunction1(extensions))
+    if (formatError != null) __obj.updateDynamic("formatError")(js.Any.fromFunction1(formatError))
     if (!js.isUndefined(graphiql)) __obj.updateDynamic("graphiql")(graphiql)
     if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
     if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue)

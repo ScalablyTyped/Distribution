@@ -12,11 +12,8 @@ trait Paragraph extends js.Object {
 
 object Paragraph {
   @scala.inline
-  def apply(
-    getIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getRange: js.Function0[TextRange]
-  ): Paragraph = {
-    val __obj = js.Dynamic.literal(getIndex = getIndex, getRange = getRange)
+  def apply(getIndex: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, getRange: () => TextRange): Paragraph = {
+    val __obj = js.Dynamic.literal(getIndex = js.Any.fromFunction0(getIndex), getRange = js.Any.fromFunction0(getRange))
   
     __obj.asInstanceOf[Paragraph]
   }

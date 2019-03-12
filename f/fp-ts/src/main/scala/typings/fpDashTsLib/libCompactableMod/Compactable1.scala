@@ -15,16 +15,10 @@ object Compactable1 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS */](
     URI: F,
-    compact: js.Function1[
-      fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libOptionMod.Option[js.Any]], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any]
-    ],
-    separate: js.Function1[
-      fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]], 
-      Separated[fpDashTsLib.libHKTMod.Type[F, js.Any], fpDashTsLib.libHKTMod.Type[F, js.Any]]
-    ]
+    compact: fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libOptionMod.Option[js.Any]] => fpDashTsLib.libHKTMod.Type[F, js.Any],
+    separate: fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]] => Separated[fpDashTsLib.libHKTMod.Type[F, js.Any], fpDashTsLib.libHKTMod.Type[F, js.Any]]
   ): Compactable1[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], compact = compact, separate = separate)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], compact = js.Any.fromFunction1(compact), separate = js.Any.fromFunction1(separate))
   
     __obj.asInstanceOf[Compactable1[F]]
   }

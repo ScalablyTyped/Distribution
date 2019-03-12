@@ -60,20 +60,20 @@ object XDeck {
     OrderIndex: scala.Double,
     Panels: XPanels,
     Title: java.lang.String,
-    activate: js.Function1[scala.Boolean, scala.Unit],
-    getId: js.Function0[java.lang.String],
-    getOrderIndex: js.Function0[scala.Double],
-    getPanels: js.Function0[XPanels],
-    getTitle: js.Function0[java.lang.String],
-    isActive: js.Function0[scala.Boolean],
-    moveDown: js.Function0[scala.Unit],
-    moveFirst: js.Function0[scala.Unit],
-    moveLast: js.Function0[scala.Unit],
-    moveUp: js.Function0[scala.Unit],
-    setOrderIndex: js.Function1[scala.Double, scala.Unit],
-    setTitle: js.Function1[java.lang.String, scala.Unit]
+    activate: scala.Boolean => scala.Unit,
+    getId: () => java.lang.String,
+    getOrderIndex: () => scala.Double,
+    getPanels: () => XPanels,
+    getTitle: () => java.lang.String,
+    isActive: () => scala.Boolean,
+    moveDown: () => scala.Unit,
+    moveFirst: () => scala.Unit,
+    moveLast: () => scala.Unit,
+    moveUp: () => scala.Unit,
+    setOrderIndex: scala.Double => scala.Unit,
+    setTitle: java.lang.String => scala.Unit
   ): XDeck = {
-    val __obj = js.Dynamic.literal(Id = Id, OrderIndex = OrderIndex, Panels = Panels, Title = Title, activate = activate, getId = getId, getOrderIndex = getOrderIndex, getPanels = getPanels, getTitle = getTitle, isActive = isActive, moveDown = moveDown, moveFirst = moveFirst, moveLast = moveLast, moveUp = moveUp, setOrderIndex = setOrderIndex, setTitle = setTitle)
+    val __obj = js.Dynamic.literal(Id = Id, OrderIndex = OrderIndex, Panels = Panels, Title = Title, activate = js.Any.fromFunction1(activate), getId = js.Any.fromFunction0(getId), getOrderIndex = js.Any.fromFunction0(getOrderIndex), getPanels = js.Any.fromFunction0(getPanels), getTitle = js.Any.fromFunction0(getTitle), isActive = js.Any.fromFunction0(isActive), moveDown = js.Any.fromFunction0(moveDown), moveFirst = js.Any.fromFunction0(moveFirst), moveLast = js.Any.fromFunction0(moveLast), moveUp = js.Any.fromFunction0(moveUp), setOrderIndex = js.Any.fromFunction1(setOrderIndex), setTitle = js.Any.fromFunction1(setTitle))
   
     __obj.asInstanceOf[XDeck]
   }

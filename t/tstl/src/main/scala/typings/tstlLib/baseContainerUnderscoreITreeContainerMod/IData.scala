@@ -14,8 +14,8 @@ trait IData[T, Iterator] extends js.Object {
 
 object IData {
   @scala.inline
-  def apply[T, Iterator](insert: js.Function2[Iterator, T, Iterator]): IData[T, Iterator] = {
-    val __obj = js.Dynamic.literal(insert = insert)
+  def apply[T, Iterator](insert: (Iterator, T) => Iterator): IData[T, Iterator] = {
+    val __obj = js.Dynamic.literal(insert = js.Any.fromFunction2(insert))
   
     __obj.asInstanceOf[IData[T, Iterator]]
   }

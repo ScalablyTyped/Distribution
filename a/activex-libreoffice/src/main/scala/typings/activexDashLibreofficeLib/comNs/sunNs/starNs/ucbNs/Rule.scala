@@ -25,16 +25,12 @@ trait Rule extends js.Object {
     */
   var Parameter: java.lang.String
   /** the rule terms describing the objects to which the rule should be applied. */
-  var Terms: activexDashInteropLib.SafeArray[RuleTerm]
+  var Terms: stdLib.SafeArray[RuleTerm]
 }
 
 object Rule {
   @scala.inline
-  def apply(
-    Action: scala.Double,
-    Parameter: java.lang.String,
-    Terms: activexDashInteropLib.SafeArray[RuleTerm]
-  ): Rule = {
+  def apply(Action: scala.Double, Parameter: java.lang.String, Terms: stdLib.SafeArray[RuleTerm]): Rule = {
     val __obj = js.Dynamic.literal(Action = Action, Parameter = Parameter, Terms = Terms)
   
     __obj.asInstanceOf[Rule]

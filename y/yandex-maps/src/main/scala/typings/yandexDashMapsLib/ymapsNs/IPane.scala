@@ -16,16 +16,14 @@ trait IPane extends IEventEmitter {
 object IPane {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     events: IEventManager,
-    getElement: js.Function0[stdLib.HTMLElement],
-    getMap: js.Function0[Map],
-    getOverflow: js.Function0[
-      yandexDashMapsLib.yandexDashMapsLibStrings.visible | yandexDashMapsLib.yandexDashMapsLibStrings.hidden
-    ],
-    getZIndex: js.Function0[scala.Double]
+    getElement: () => stdLib.HTMLElement,
+    getMap: () => Map,
+    getOverflow: () => yandexDashMapsLib.yandexDashMapsLibStrings.visible | yandexDashMapsLib.yandexDashMapsLibStrings.hidden,
+    getZIndex: () => scala.Double
   ): IPane = {
-    val __obj = js.Dynamic.literal(destroy = destroy, events = events, getElement = getElement, getMap = getMap, getOverflow = getOverflow, getZIndex = getZIndex)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), events = events, getElement = js.Any.fromFunction0(getElement), getMap = js.Any.fromFunction0(getMap), getOverflow = js.Any.fromFunction0(getOverflow), getZIndex = js.Any.fromFunction0(getZIndex))
   
     __obj.asInstanceOf[IPane]
   }

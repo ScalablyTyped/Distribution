@@ -16,13 +16,13 @@ trait Console extends js.Object {
 object Console {
   @scala.inline
   def apply(
-    debug: js.Function2[java.lang.String, java.lang.String, js.Promise[scala.Unit]],
-    error: js.Function2[java.lang.String, java.lang.String, js.Promise[scala.Unit]],
-    info: js.Function2[java.lang.String, java.lang.String, js.Promise[scala.Unit]],
-    log: js.Function2[java.lang.String, java.lang.String, js.Promise[scala.Unit]],
-    warn: js.Function2[java.lang.String, java.lang.String, js.Promise[scala.Unit]]
+    debug: (java.lang.String, java.lang.String) => js.Promise[scala.Unit],
+    error: (java.lang.String, java.lang.String) => js.Promise[scala.Unit],
+    info: (java.lang.String, java.lang.String) => js.Promise[scala.Unit],
+    log: (java.lang.String, java.lang.String) => js.Promise[scala.Unit],
+    warn: (java.lang.String, java.lang.String) => js.Promise[scala.Unit]
   ): Console = {
-    val __obj = js.Dynamic.literal(debug = debug, error = error, info = info, log = log, warn = warn)
+    val __obj = js.Dynamic.literal(debug = js.Any.fromFunction2(debug), error = js.Any.fromFunction2(error), info = js.Any.fromFunction2(info), log = js.Any.fromFunction2(log), warn = js.Any.fromFunction2(warn))
   
     __obj.asInstanceOf[Console]
   }

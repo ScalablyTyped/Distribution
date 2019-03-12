@@ -14,6 +14,6 @@ object ^ extends js.Object {
   def registerToComputeLayoutAndRender(component: plottableLib.buildSrcComponentsComponentMod.Component): scala.Unit = js.native
   def registerToRender(component: plottableLib.buildSrcComponentsComponentMod.Component): scala.Unit = js.native
   def renderPolicy(): plottableLib.buildSrcCoreRenderPolicyMod.IRenderPolicy = js.native
-  def renderPolicy(renderPolicy: plottableLib.buildSrcCoreRenderControllerMod.Policy): scala.Unit = js.native
+  def renderPolicy(renderPolicy: Policy): scala.Unit = js.native
 }
 

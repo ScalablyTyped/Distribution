@@ -49,11 +49,11 @@ object ConstructionSite {
     pos: RoomPosition,
     progress: scala.Double,
     progressTotal: scala.Double,
-    remove: js.Function0[scala.Double],
+    remove: () => scala.Double,
     structureType: T,
     room: Room = null
   ): ConstructionSite[T] = {
-    val __obj = js.Dynamic.literal(id = id, my = my, owner = owner, pos = pos, progress = progress, progressTotal = progressTotal, remove = remove, structureType = structureType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id, my = my, owner = owner, pos = pos, progress = progress, progressTotal = progressTotal, remove = js.Any.fromFunction0(remove), structureType = structureType.asInstanceOf[js.Any])
     if (room != null) __obj.updateDynamic("room")(room)
     __obj.asInstanceOf[ConstructionSite[T]]
   }

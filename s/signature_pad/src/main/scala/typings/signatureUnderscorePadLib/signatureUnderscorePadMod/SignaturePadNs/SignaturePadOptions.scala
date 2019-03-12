@@ -56,8 +56,8 @@ object SignaturePadOptions {
     maxWidth: scala.Int | scala.Double = null,
     minDistance: scala.Int | scala.Double = null,
     minWidth: scala.Int | scala.Double = null,
-    onBegin: js.Function1[/* event */ stdLib.MouseEvent, scala.Unit] = null,
-    onEnd: js.Function1[/* event */ stdLib.MouseEvent, scala.Unit] = null,
+    onBegin: /* event */ stdLib.MouseEvent => scala.Unit = null,
+    onEnd: /* event */ stdLib.MouseEvent => scala.Unit = null,
     penColor: java.lang.String = null,
     throttle: scala.Int | scala.Double = null,
     velocityFilterWeight: scala.Int | scala.Double = null
@@ -68,8 +68,8 @@ object SignaturePadOptions {
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (minDistance != null) __obj.updateDynamic("minDistance")(minDistance.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (onBegin != null) __obj.updateDynamic("onBegin")(onBegin)
-    if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd)
+    if (onBegin != null) __obj.updateDynamic("onBegin")(js.Any.fromFunction1(onBegin))
+    if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction1(onEnd))
     if (penColor != null) __obj.updateDynamic("penColor")(penColor)
     if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])
     if (velocityFilterWeight != null) __obj.updateDynamic("velocityFilterWeight")(velocityFilterWeight.asInstanceOf[js.Any])

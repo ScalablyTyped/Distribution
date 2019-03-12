@@ -13,10 +13,10 @@ trait IProvisionedProfile extends js.Object {
 object IProvisionedProfile {
   @scala.inline
   def apply(
-    updateCost: js.Function1[winrtLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkCostType, scala.Unit],
-    updateUsage: js.Function1[ProfileUsage, scala.Unit]
+    updateCost: winrtLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkCostType => scala.Unit,
+    updateUsage: ProfileUsage => scala.Unit
   ): IProvisionedProfile = {
-    val __obj = js.Dynamic.literal(updateCost = updateCost, updateUsage = updateUsage)
+    val __obj = js.Dynamic.literal(updateCost = js.Any.fromFunction1(updateCost), updateUsage = js.Any.fromFunction1(updateUsage))
   
     __obj.asInstanceOf[IProvisionedProfile]
   }

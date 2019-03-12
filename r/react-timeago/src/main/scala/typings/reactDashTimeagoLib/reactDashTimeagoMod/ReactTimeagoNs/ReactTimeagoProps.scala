@@ -25,7 +25,7 @@ object ReactTimeagoProps {
     live: js.UndefOr[scala.Boolean] = js.undefined,
     maxPeriod: scala.Int | scala.Double = null,
     minPeriod: scala.Int | scala.Double = null,
-    now: js.Function0[scala.Double] = null,
+    now: () => scala.Double = null,
     title: java.lang.String = null
   ): ReactTimeagoProps = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
@@ -34,7 +34,7 @@ object ReactTimeagoProps {
     if (!js.isUndefined(live)) __obj.updateDynamic("live")(live)
     if (maxPeriod != null) __obj.updateDynamic("maxPeriod")(maxPeriod.asInstanceOf[js.Any])
     if (minPeriod != null) __obj.updateDynamic("minPeriod")(minPeriod.asInstanceOf[js.Any])
-    if (now != null) __obj.updateDynamic("now")(now)
+    if (now != null) __obj.updateDynamic("now")(js.Any.fromFunction0(now))
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[ReactTimeagoProps]
   }

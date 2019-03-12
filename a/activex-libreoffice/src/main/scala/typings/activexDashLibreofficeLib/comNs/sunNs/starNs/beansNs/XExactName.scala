@@ -24,12 +24,12 @@ trait XExactName
 object XExactName {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getExactName: js.Function1[java.lang.String, java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getExactName: java.lang.String => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XExactName = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getExactName = getExactName, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getExactName = js.Any.fromFunction1(getExactName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XExactName]
   }

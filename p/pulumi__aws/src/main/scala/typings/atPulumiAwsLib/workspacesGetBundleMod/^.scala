@@ -8,10 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/workspaces/getBundle", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def getBundle(args: atPulumiAwsLib.workspacesGetBundleMod.GetBundleArgs): js.Promise[atPulumiAwsLib.workspacesGetBundleMod.GetBundleResult] = js.native
-  def getBundle(
-    args: atPulumiAwsLib.workspacesGetBundleMod.GetBundleArgs,
-    opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.workspacesGetBundleMod.GetBundleResult] = js.native
+  def getBundle(args: GetBundleArgs): js.Promise[GetBundleResult] = js.native
+  def getBundle(args: GetBundleArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[GetBundleResult] = js.native
 }
 

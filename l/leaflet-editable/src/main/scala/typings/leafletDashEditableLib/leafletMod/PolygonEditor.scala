@@ -19,12 +19,12 @@ trait PolygonEditor extends PathEditor {
 object PolygonEditor {
   @scala.inline
   def apply(
-    disable: js.Function0[MarkerEditor | PolylineEditor | PolygonEditor],
-    enable: js.Function0[MarkerEditor | PolylineEditor | PolygonEditor],
-    newHole: js.Function1[leafletLib.leafletMod.LatLng, scala.Unit],
-    reset: js.Function0[scala.Unit]
+    disable: () => MarkerEditor | PolylineEditor | PolygonEditor,
+    enable: () => MarkerEditor | PolylineEditor | PolygonEditor,
+    newHole: leafletLib.leafletMod.LatLng => scala.Unit,
+    reset: () => scala.Unit
   ): PolygonEditor = {
-    val __obj = js.Dynamic.literal(disable = disable, enable = enable, newHole = newHole, reset = reset)
+    val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), newHole = js.Any.fromFunction1(newHole), reset = js.Any.fromFunction0(reset))
   
     __obj.asInstanceOf[PolygonEditor]
   }

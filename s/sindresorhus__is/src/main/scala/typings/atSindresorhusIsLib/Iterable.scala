@@ -12,8 +12,8 @@ trait Iterable[T] extends js.Object {
 
 object Iterable {
   @scala.inline
-  def apply[T](iterator: js.Function0[Iterator[T]]): Iterable[T] = {
-    val __obj = js.Dynamic.literal(iterator = iterator)
+  def apply[T](iterator: () => Iterator[T]): Iterable[T] = {
+    val __obj = js.Dynamic.literal(iterator = js.Any.fromFunction0(iterator))
   
     __obj.asInstanceOf[Iterable[T]]
   }

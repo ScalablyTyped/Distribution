@@ -31,7 +31,7 @@ object ^ extends js.Object {
   var TOTAL_MEMORY: scala.Double = js.native
   var TOTAL_STACK: scala.Double = js.native
   var arguments: js.Array[java.lang.String] = js.native
-  var environment: emscriptenLib.ModuleNs.EnvironmentType = js.native
+  var environment: EnvironmentType = js.native
   var filePackagePrefixURL: java.lang.String = js.native
   var logReadFiles: scala.Boolean = js.native
   var noExitRuntime: scala.Boolean = js.native

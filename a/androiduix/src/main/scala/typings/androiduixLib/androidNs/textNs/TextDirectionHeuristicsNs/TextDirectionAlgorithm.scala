@@ -11,8 +11,8 @@ trait TextDirectionAlgorithm extends js.Object {
 
 object TextDirectionAlgorithm {
   @scala.inline
-  def apply(checkRtl: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Double]): TextDirectionAlgorithm = {
-    val __obj = js.Dynamic.literal(checkRtl = checkRtl)
+  def apply(checkRtl: (java.lang.String, scala.Double, scala.Double) => scala.Double): TextDirectionAlgorithm = {
+    val __obj = js.Dynamic.literal(checkRtl = js.Any.fromFunction3(checkRtl))
   
     __obj.asInstanceOf[TextDirectionAlgorithm]
   }

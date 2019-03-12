@@ -58,22 +58,22 @@ trait ASPxClientHtmlEditorLinkDialog extends ASPxClientHtmlEditorDialogBase {
 object ASPxClientHtmlEditorLinkDialog {
   @scala.inline
   def apply(
-    GetCancelButton: js.Function0[ASPxClientButton],
-    GetEmailTextBox: js.Function0[ASPxClientTextBox],
-    GetFileManager: js.Function0[ASPxClientFileManager],
-    GetFormLayout: js.Function0[ASPxClientFormLayout],
-    GetLinkTypeRadioButtonList: js.Function0[ASPxClientRadioButtonList],
-    GetOkButton: js.Function0[ASPxClientButton],
-    GetOpenInNewWindowCheckBox: js.Function0[ASPxClientCheckBox],
-    GetSelectDocumentPopupCancelButton: js.Function0[ASPxClientButton],
-    GetSelectDocumentPopupControl: js.Function0[ASPxClientPopupControl],
-    GetSelectDocumentPopupSelectButton: js.Function0[ASPxClientButton],
-    GetSubjectTextBox: js.Function0[ASPxClientTextBox],
-    GetTextTextBox: js.Function0[ASPxClientTextBox],
-    GetTooltipTextBox: js.Function0[ASPxClientTextBox],
-    GetUrlTextBox: js.Function0[ASPxClientTextBox]
+    GetCancelButton: () => ASPxClientButton,
+    GetEmailTextBox: () => ASPxClientTextBox,
+    GetFileManager: () => ASPxClientFileManager,
+    GetFormLayout: () => ASPxClientFormLayout,
+    GetLinkTypeRadioButtonList: () => ASPxClientRadioButtonList,
+    GetOkButton: () => ASPxClientButton,
+    GetOpenInNewWindowCheckBox: () => ASPxClientCheckBox,
+    GetSelectDocumentPopupCancelButton: () => ASPxClientButton,
+    GetSelectDocumentPopupControl: () => ASPxClientPopupControl,
+    GetSelectDocumentPopupSelectButton: () => ASPxClientButton,
+    GetSubjectTextBox: () => ASPxClientTextBox,
+    GetTextTextBox: () => ASPxClientTextBox,
+    GetTooltipTextBox: () => ASPxClientTextBox,
+    GetUrlTextBox: () => ASPxClientTextBox
   ): ASPxClientHtmlEditorLinkDialog = {
-    val __obj = js.Dynamic.literal(GetCancelButton = GetCancelButton, GetEmailTextBox = GetEmailTextBox, GetFileManager = GetFileManager, GetFormLayout = GetFormLayout, GetLinkTypeRadioButtonList = GetLinkTypeRadioButtonList, GetOkButton = GetOkButton, GetOpenInNewWindowCheckBox = GetOpenInNewWindowCheckBox, GetSelectDocumentPopupCancelButton = GetSelectDocumentPopupCancelButton, GetSelectDocumentPopupControl = GetSelectDocumentPopupControl, GetSelectDocumentPopupSelectButton = GetSelectDocumentPopupSelectButton, GetSubjectTextBox = GetSubjectTextBox, GetTextTextBox = GetTextTextBox, GetTooltipTextBox = GetTooltipTextBox, GetUrlTextBox = GetUrlTextBox)
+    val __obj = js.Dynamic.literal(GetCancelButton = js.Any.fromFunction0(GetCancelButton), GetEmailTextBox = js.Any.fromFunction0(GetEmailTextBox), GetFileManager = js.Any.fromFunction0(GetFileManager), GetFormLayout = js.Any.fromFunction0(GetFormLayout), GetLinkTypeRadioButtonList = js.Any.fromFunction0(GetLinkTypeRadioButtonList), GetOkButton = js.Any.fromFunction0(GetOkButton), GetOpenInNewWindowCheckBox = js.Any.fromFunction0(GetOpenInNewWindowCheckBox), GetSelectDocumentPopupCancelButton = js.Any.fromFunction0(GetSelectDocumentPopupCancelButton), GetSelectDocumentPopupControl = js.Any.fromFunction0(GetSelectDocumentPopupControl), GetSelectDocumentPopupSelectButton = js.Any.fromFunction0(GetSelectDocumentPopupSelectButton), GetSubjectTextBox = js.Any.fromFunction0(GetSubjectTextBox), GetTextTextBox = js.Any.fromFunction0(GetTextTextBox), GetTooltipTextBox = js.Any.fromFunction0(GetTooltipTextBox), GetUrlTextBox = js.Any.fromFunction0(GetUrlTextBox))
   
     __obj.asInstanceOf[ASPxClientHtmlEditorLinkDialog]
   }

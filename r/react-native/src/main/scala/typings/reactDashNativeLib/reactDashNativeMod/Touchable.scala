@@ -16,18 +16,18 @@ trait Touchable extends js.Object {
 object Touchable {
   @scala.inline
   def apply(
-    onTouchCancel: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onTouchEnd: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onTouchEndCapture: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onTouchMove: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onTouchStart: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null
+    onTouchCancel: /* event */ GestureResponderEvent => scala.Unit = null,
+    onTouchEnd: /* event */ GestureResponderEvent => scala.Unit = null,
+    onTouchEndCapture: /* event */ GestureResponderEvent => scala.Unit = null,
+    onTouchMove: /* event */ GestureResponderEvent => scala.Unit = null,
+    onTouchStart: /* event */ GestureResponderEvent => scala.Unit = null
   ): Touchable = {
     val __obj = js.Dynamic.literal()
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel)
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
-    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(onTouchEndCapture)
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
+    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(js.Any.fromFunction1(onTouchEndCapture))
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
     __obj.asInstanceOf[Touchable]
   }
 }

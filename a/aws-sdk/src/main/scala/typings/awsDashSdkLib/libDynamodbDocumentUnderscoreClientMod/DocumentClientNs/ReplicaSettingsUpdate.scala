@@ -9,7 +9,7 @@ trait ReplicaSettingsUpdate extends js.Object {
   /**
     * The region of the replica to be added.
     */
-  var RegionName: RegionName
+  var RegionName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.RegionName
   /**
     * Represents the settings of a global secondary index for a global table that will be modified.
     */

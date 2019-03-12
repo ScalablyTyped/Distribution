@@ -22,7 +22,7 @@ object IXHROptions {
   @scala.inline
   def apply(
     url: java.lang.String,
-    customRequestInitializer: js.Function1[/* request */ stdLib.XMLHttpRequest, scala.Unit] = null,
+    customRequestInitializer: /* request */ stdLib.XMLHttpRequest => scala.Unit = null,
     data: js.Any = null,
     headers: js.Any = null,
     password: java.lang.String = null,
@@ -31,7 +31,7 @@ object IXHROptions {
     user: java.lang.String = null
   ): IXHROptions = {
     val __obj = js.Dynamic.literal(url = url)
-    if (customRequestInitializer != null) __obj.updateDynamic("customRequestInitializer")(customRequestInitializer)
+    if (customRequestInitializer != null) __obj.updateDynamic("customRequestInitializer")(js.Any.fromFunction1(customRequestInitializer))
     if (data != null) __obj.updateDynamic("data")(data)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (password != null) __obj.updateDynamic("password")(password)

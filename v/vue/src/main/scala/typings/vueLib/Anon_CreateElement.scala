@@ -13,10 +13,10 @@ trait Anon_CreateElement extends js.Object {
 object Anon_CreateElement {
   @scala.inline
   def apply(
-    render: js.Function1[vueLib.typesVueMod.CreateElement, vueLib.typesVnodeMod.VNode],
+    render: vueLib.typesVueMod.CreateElement => vueLib.typesVnodeMod.VNode,
     staticRenderFns: js.Array[js.Function0[vueLib.typesVnodeMod.VNode]]
   ): Anon_CreateElement = {
-    val __obj = js.Dynamic.literal(render = render, staticRenderFns = staticRenderFns)
+    val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render), staticRenderFns = staticRenderFns)
   
     __obj.asInstanceOf[Anon_CreateElement]
   }

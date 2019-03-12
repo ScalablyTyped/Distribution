@@ -47,7 +47,7 @@ trait XLinguServiceManager
   def getAvailableServices(
     aServiceName: java.lang.String,
     aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale
-  ): activexDashInteropLib.SafeArray[java.lang.String]
+  ): stdLib.SafeArray[java.lang.String]
   /**
     * queries the list of service implementations to be used for a given service and language.
     * @param aServiceName the name of the service to get queried.
@@ -57,7 +57,7 @@ trait XLinguServiceManager
   def getConfiguredServices(
     aServiceName: java.lang.String,
     aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale
-  ): activexDashInteropLib.SafeArray[java.lang.String]
+  ): stdLib.SafeArray[java.lang.String]
   /** @returns the {@link com.sun.star.linguistic2.XHyphenator} interface to be used for hyphenation. */
   def getHyphenator(): XHyphenator
   /** @returns the {@link com.sun.star.linguistic2.XSpellChecker} interface to be used for spell checking. */
@@ -89,32 +89,19 @@ object XLinguServiceManager {
     Hyphenator: XHyphenator,
     SpellChecker: XSpellChecker,
     Thesaurus: XThesaurus,
-    acquire: js.Function0[scala.Unit],
-    addLinguServiceManagerListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Boolean],
-    getAvailableServices: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashInteropLib.SafeArray[java.lang.String]
-    ],
-    getConfiguredServices: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashInteropLib.SafeArray[java.lang.String]
-    ],
-    getHyphenator: js.Function0[XHyphenator],
-    getSpellChecker: js.Function0[XSpellChecker],
-    getThesaurus: js.Function0[XThesaurus],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeLinguServiceManagerListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Boolean],
-    setConfiguredServices: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    addLinguServiceManagerListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Boolean,
+    getAvailableServices: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => stdLib.SafeArray[java.lang.String],
+    getConfiguredServices: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => stdLib.SafeArray[java.lang.String],
+    getHyphenator: () => XHyphenator,
+    getSpellChecker: () => XSpellChecker,
+    getThesaurus: () => XThesaurus,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeLinguServiceManagerListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Boolean,
+    setConfiguredServices: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]) => scala.Unit
   ): XLinguServiceManager = {
-    val __obj = js.Dynamic.literal(Hyphenator = Hyphenator, SpellChecker = SpellChecker, Thesaurus = Thesaurus, acquire = acquire, addLinguServiceManagerListener = addLinguServiceManagerListener, getAvailableServices = getAvailableServices, getConfiguredServices = getConfiguredServices, getHyphenator = getHyphenator, getSpellChecker = getSpellChecker, getThesaurus = getThesaurus, queryInterface = queryInterface, release = release, removeLinguServiceManagerListener = removeLinguServiceManagerListener, setConfiguredServices = setConfiguredServices)
+    val __obj = js.Dynamic.literal(Hyphenator = Hyphenator, SpellChecker = SpellChecker, Thesaurus = Thesaurus, acquire = js.Any.fromFunction0(acquire), addLinguServiceManagerListener = js.Any.fromFunction1(addLinguServiceManagerListener), getAvailableServices = js.Any.fromFunction2(getAvailableServices), getConfiguredServices = js.Any.fromFunction2(getConfiguredServices), getHyphenator = js.Any.fromFunction0(getHyphenator), getSpellChecker = js.Any.fromFunction0(getSpellChecker), getThesaurus = js.Any.fromFunction0(getThesaurus), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeLinguServiceManagerListener = js.Any.fromFunction1(removeLinguServiceManagerListener), setConfiguredServices = js.Any.fromFunction3(setConfiguredServices))
   
     __obj.asInstanceOf[XLinguServiceManager]
   }

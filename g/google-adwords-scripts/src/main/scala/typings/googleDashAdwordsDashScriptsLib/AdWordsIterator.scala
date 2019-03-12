@@ -13,12 +13,8 @@ trait AdWordsIterator[E] extends js.Object {
 
 object AdWordsIterator {
   @scala.inline
-  def apply[E](
-    hasNext: js.Function0[scala.Boolean],
-    next: js.Function0[E],
-    totalNumEntities: js.Function0[scala.Double]
-  ): AdWordsIterator[E] = {
-    val __obj = js.Dynamic.literal(hasNext = hasNext, next = next, totalNumEntities = totalNumEntities)
+  def apply[E](hasNext: () => scala.Boolean, next: () => E, totalNumEntities: () => scala.Double): AdWordsIterator[E] = {
+    val __obj = js.Dynamic.literal(hasNext = js.Any.fromFunction0(hasNext), next = js.Any.fromFunction0(next), totalNumEntities = js.Any.fromFunction0(totalNumEntities))
   
     __obj.asInstanceOf[AdWordsIterator[E]]
   }

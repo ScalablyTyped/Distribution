@@ -36,13 +36,13 @@ object SearchPanelProps {
   @scala.inline
   def apply(
     clearBtn: reactLib.reactMod.ReactNs.ReactElement[_],
-    clearBtnClick: js.Function0[scala.Unit],
+    clearBtnClick: () => scala.Unit,
     defaultValue: java.lang.String,
     placeholder: java.lang.String,
-    search: js.Function1[java.lang.String, scala.Unit],
+    search: java.lang.String => scala.Unit,
     searchField: reactLib.reactMod.ReactNs.ReactElement[_]
   ): SearchPanelProps = {
-    val __obj = js.Dynamic.literal(clearBtn = clearBtn, clearBtnClick = clearBtnClick, defaultValue = defaultValue, placeholder = placeholder, search = search, searchField = searchField)
+    val __obj = js.Dynamic.literal(clearBtn = clearBtn, clearBtnClick = js.Any.fromFunction0(clearBtnClick), defaultValue = defaultValue, placeholder = placeholder, search = js.Any.fromFunction1(search), searchField = searchField)
   
     __obj.asInstanceOf[SearchPanelProps]
   }

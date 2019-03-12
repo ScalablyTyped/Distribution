@@ -28,8 +28,8 @@ trait ContentWindow extends js.Object {
 
 object ContentWindow {
   @scala.inline
-  def apply(postMessage: js.Function2[js.Any, java.lang.String, scala.Unit]): ContentWindow = {
-    val __obj = js.Dynamic.literal(postMessage = postMessage)
+  def apply(postMessage: (js.Any, java.lang.String) => scala.Unit): ContentWindow = {
+    val __obj = js.Dynamic.literal(postMessage = js.Any.fromFunction2(postMessage))
   
     __obj.asInstanceOf[ContentWindow]
   }

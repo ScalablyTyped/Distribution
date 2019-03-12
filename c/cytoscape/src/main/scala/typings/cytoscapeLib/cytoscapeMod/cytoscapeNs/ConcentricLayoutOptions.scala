@@ -38,10 +38,10 @@ import scala.scalajs.js.annotation._
 object ConcentricLayoutOptions {
   @scala.inline
   def apply(
-    concentric: js.Function1[cytoscapeLib.Anon_Degree, scala.Double],
+    concentric: cytoscapeLib.Anon_Degree => scala.Double,
     equidistant: cytoscapeLib.cytoscapeLibNumbers.`false`,
     fit: scala.Boolean,
-    levelWidth: js.Function1[cytoscapeLib.Anon_MaxDegree, scala.Double],
+    levelWidth: cytoscapeLib.Anon_MaxDegree => scala.Double,
     minNodeSpacing: cytoscapeLib.cytoscapeLibNumbers.`10`,
     name: cytoscapeLib.cytoscapeLibStrings.concentric,
     nodeDimensionsIncludeLabels: scala.Boolean,
@@ -61,7 +61,7 @@ object ConcentricLayoutOptions {
     sweep: scala.Int | scala.Double = null,
     width: js.UndefOr[scala.Nothing] = js.undefined
   ): ConcentricLayoutOptions = {
-    val __obj = js.Dynamic.literal(concentric = concentric, equidistant = equidistant, fit = fit, levelWidth = levelWidth, minNodeSpacing = minNodeSpacing, name = name, nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels, startAngle = startAngle)
+    val __obj = js.Dynamic.literal(concentric = js.Any.fromFunction1(concentric), equidistant = equidistant, fit = fit, levelWidth = js.Any.fromFunction1(levelWidth), minNodeSpacing = minNodeSpacing, name = name, nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels, startAngle = startAngle)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing)

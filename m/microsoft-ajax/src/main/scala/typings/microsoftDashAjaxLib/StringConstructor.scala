@@ -26,10 +26,10 @@ trait StringConstructor extends js.Object {
 object StringConstructor {
   @scala.inline
   def apply(
-    format: js.Function2[java.lang.String, /* repeated */ js.Any, java.lang.String],
-    localeFormat: js.Function2[java.lang.String, /* repeated */ js.Any, java.lang.String]
+    format: (java.lang.String, /* repeated */ js.Any) => java.lang.String,
+    localeFormat: (java.lang.String, /* repeated */ js.Any) => java.lang.String
   ): StringConstructor = {
-    val __obj = js.Dynamic.literal(format = format, localeFormat = localeFormat)
+    val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format), localeFormat = js.Any.fromFunction2(localeFormat))
   
     __obj.asInstanceOf[StringConstructor]
   }

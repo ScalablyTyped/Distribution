@@ -21,18 +21,18 @@ trait Client extends js.Object {
 object Client {
   @scala.inline
   def apply(
-    changeMessageVisibility: js.Function2[VisibilityOptions, CallbackT[scala.Double], scala.Unit],
-    createQueue: js.Function2[QueueOptions, CallbackT[scala.Double], scala.Unit],
-    deleteMessage: js.Function2[MessageIdentifier, CallbackT[scala.Double], scala.Unit],
-    deleteQueue: js.Function2[QueueIdentifier, CallbackT[scala.Double], scala.Unit],
-    getQueueAttributes: js.Function2[QueueIdentifier, CallbackT[QueueAttributes], scala.Unit],
-    listQueues: js.Function1[CallbackT[js.Array[java.lang.String]], scala.Unit],
-    quit: js.Function0[scala.Unit],
-    receiveMessage: js.Function2[ReceiveOptions, CallbackT[Message], scala.Unit],
-    sendMessage: js.Function2[NewMessage, CallbackT[java.lang.String], scala.Unit],
-    setQueueAttributes: js.Function2[QueueOptions, CallbackT[QueueAttributes], scala.Unit]
+    changeMessageVisibility: (VisibilityOptions, CallbackT[scala.Double]) => scala.Unit,
+    createQueue: (QueueOptions, CallbackT[scala.Double]) => scala.Unit,
+    deleteMessage: (MessageIdentifier, CallbackT[scala.Double]) => scala.Unit,
+    deleteQueue: (QueueIdentifier, CallbackT[scala.Double]) => scala.Unit,
+    getQueueAttributes: (QueueIdentifier, CallbackT[QueueAttributes]) => scala.Unit,
+    listQueues: CallbackT[js.Array[java.lang.String]] => scala.Unit,
+    quit: () => scala.Unit,
+    receiveMessage: (ReceiveOptions, CallbackT[Message]) => scala.Unit,
+    sendMessage: (NewMessage, CallbackT[java.lang.String]) => scala.Unit,
+    setQueueAttributes: (QueueOptions, CallbackT[QueueAttributes]) => scala.Unit
   ): Client = {
-    val __obj = js.Dynamic.literal(changeMessageVisibility = changeMessageVisibility, createQueue = createQueue, deleteMessage = deleteMessage, deleteQueue = deleteQueue, getQueueAttributes = getQueueAttributes, listQueues = listQueues, quit = quit, receiveMessage = receiveMessage, sendMessage = sendMessage, setQueueAttributes = setQueueAttributes)
+    val __obj = js.Dynamic.literal(changeMessageVisibility = js.Any.fromFunction2(changeMessageVisibility), createQueue = js.Any.fromFunction2(createQueue), deleteMessage = js.Any.fromFunction2(deleteMessage), deleteQueue = js.Any.fromFunction2(deleteQueue), getQueueAttributes = js.Any.fromFunction2(getQueueAttributes), listQueues = js.Any.fromFunction1(listQueues), quit = js.Any.fromFunction0(quit), receiveMessage = js.Any.fromFunction2(receiveMessage), sendMessage = js.Any.fromFunction2(sendMessage), setQueueAttributes = js.Any.fromFunction2(setQueueAttributes))
   
     __obj.asInstanceOf[Client]
   }

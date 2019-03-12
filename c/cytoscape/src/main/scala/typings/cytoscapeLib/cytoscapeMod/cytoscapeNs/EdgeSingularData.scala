@@ -23,8 +23,8 @@ trait EdgeSingularData extends js.Object {
 
 object EdgeSingularData {
   @scala.inline
-  def apply(isLoop: js.Function0[scala.Boolean], isSimple: js.Function0[scala.Boolean]): EdgeSingularData = {
-    val __obj = js.Dynamic.literal(isLoop = isLoop, isSimple = isSimple)
+  def apply(isLoop: () => scala.Boolean, isSimple: () => scala.Boolean): EdgeSingularData = {
+    val __obj = js.Dynamic.literal(isLoop = js.Any.fromFunction0(isLoop), isSimple = js.Any.fromFunction0(isSimple))
   
     __obj.asInstanceOf[EdgeSingularData]
   }

@@ -28,17 +28,17 @@ trait XMenuProxy
 object XMenuProxy {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    addMenuProxyListener: js.Function1[XMenuProxyListener, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    executeMenuItem: js.Function1[scala.Double, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    removeMenuProxyListener: js.Function1[XMenuProxyListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    addMenuProxyListener: XMenuProxyListener => scala.Unit,
+    dispose: () => scala.Unit,
+    executeMenuItem: scala.Double => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    removeMenuProxyListener: XMenuProxyListener => scala.Unit
   ): XMenuProxy = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addEventListener = addEventListener, addMenuProxyListener = addMenuProxyListener, dispose = dispose, executeMenuItem = executeMenuItem, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeMenuProxyListener = removeMenuProxyListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addMenuProxyListener = js.Any.fromFunction1(addMenuProxyListener), dispose = js.Any.fromFunction0(dispose), executeMenuItem = js.Any.fromFunction1(executeMenuItem), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removeMenuProxyListener = js.Any.fromFunction1(removeMenuProxyListener))
   
     __obj.asInstanceOf[XMenuProxy]
   }

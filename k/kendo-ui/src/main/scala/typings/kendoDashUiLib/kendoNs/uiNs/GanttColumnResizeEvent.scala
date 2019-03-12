@@ -14,14 +14,14 @@ trait GanttColumnResizeEvent extends GanttEvent {
 object GanttColumnResizeEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Gantt,
     column: js.Any = null,
     newWidth: scala.Int | scala.Double = null,
     oldWidth: scala.Int | scala.Double = null
   ): GanttColumnResizeEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (column != null) __obj.updateDynamic("column")(column)
     if (newWidth != null) __obj.updateDynamic("newWidth")(newWidth.asInstanceOf[js.Any])
     if (oldWidth != null) __obj.updateDynamic("oldWidth")(oldWidth.asInstanceOf[js.Any])

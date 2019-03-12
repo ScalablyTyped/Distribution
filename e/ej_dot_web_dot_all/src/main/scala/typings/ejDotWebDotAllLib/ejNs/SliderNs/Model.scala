@@ -136,10 +136,10 @@ object Model {
   def apply(
     allowMouseWheel: js.UndefOr[scala.Boolean] = js.undefined,
     animationSpeed: scala.Int | scala.Double = null,
-    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    change: /* e */ ChangeEventArgs => scala.Unit = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
     enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
@@ -152,18 +152,18 @@ object Model {
     minValue: scala.Int | scala.Double = null,
     orientation: ejDotWebDotAllLib.ejNs.Orientation | java.lang.String = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
-    renderingTicks: js.Function1[/* e */ RenderingTicksEventArgs, scala.Unit] = null,
+    renderingTicks: /* e */ RenderingTicksEventArgs => scala.Unit = null,
     showButtons: js.UndefOr[scala.Boolean] = js.undefined,
     showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
     showScale: js.UndefOr[scala.Boolean] = js.undefined,
     showSmallTicks: js.UndefOr[scala.Boolean] = js.undefined,
     showTooltip: js.UndefOr[scala.Boolean] = js.undefined,
-    slide: js.Function1[/* e */ SlideEventArgs, scala.Unit] = null,
+    slide: /* e */ SlideEventArgs => scala.Unit = null,
     sliderType: ejDotWebDotAllLib.ejNs.sliderNs.sliderType | java.lang.String = null,
     smallStep: scala.Int | scala.Double = null,
-    start: js.Function1[/* e */ StartEventArgs, scala.Unit] = null,
-    stop: js.Function1[/* e */ StopEventArgs, scala.Unit] = null,
-    tooltipChange: js.Function1[/* e */ TooltipChangeEventArgs, scala.Unit] = null,
+    start: /* e */ StartEventArgs => scala.Unit = null,
+    stop: /* e */ StopEventArgs => scala.Unit = null,
+    tooltipChange: /* e */ TooltipChangeEventArgs => scala.Unit = null,
     value: scala.Int | scala.Double = null,
     values: js.Array[_] = null,
     width: java.lang.String = null
@@ -171,10 +171,10 @@ object Model {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowMouseWheel)) __obj.updateDynamic("allowMouseWheel")(allowMouseWheel)
     if (animationSpeed != null) __obj.updateDynamic("animationSpeed")(animationSpeed.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
     if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
@@ -187,18 +187,18 @@ object Model {
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (renderingTicks != null) __obj.updateDynamic("renderingTicks")(renderingTicks)
+    if (renderingTicks != null) __obj.updateDynamic("renderingTicks")(js.Any.fromFunction1(renderingTicks))
     if (!js.isUndefined(showButtons)) __obj.updateDynamic("showButtons")(showButtons)
     if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
     if (!js.isUndefined(showScale)) __obj.updateDynamic("showScale")(showScale)
     if (!js.isUndefined(showSmallTicks)) __obj.updateDynamic("showSmallTicks")(showSmallTicks)
     if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip)
-    if (slide != null) __obj.updateDynamic("slide")(slide)
+    if (slide != null) __obj.updateDynamic("slide")(js.Any.fromFunction1(slide))
     if (sliderType != null) __obj.updateDynamic("sliderType")(sliderType.asInstanceOf[js.Any])
     if (smallStep != null) __obj.updateDynamic("smallStep")(smallStep.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (stop != null) __obj.updateDynamic("stop")(stop)
-    if (tooltipChange != null) __obj.updateDynamic("tooltipChange")(tooltipChange)
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
+    if (tooltipChange != null) __obj.updateDynamic("tooltipChange")(js.Any.fromFunction1(tooltipChange))
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values)
     if (width != null) __obj.updateDynamic("width")(width)

@@ -18,12 +18,9 @@ trait DetailsResource extends js.Object {
 object DetailsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackCreativeStatusId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListCreativeStatusBreakdownByDetailResponse]
-    ]
+    list: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackCreativeStatusId => gapiDotClientLib.gapiNs.clientNs.Request[ListCreativeStatusBreakdownByDetailResponse]
   ): DetailsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[DetailsResource]
   }

@@ -9,8 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def default(): atVueComponentDashCompilerDashUtilsLib.Anon_Node = js.native
-  def default(
-    userOptions: atVueComponentDashCompilerDashUtilsLib.distTemplateCompilerModulesAssetUrlMod.AssetURLOptions
-  ): atVueComponentDashCompilerDashUtilsLib.Anon_Node = js.native
+  def default(userOptions: AssetURLOptions): atVueComponentDashCompilerDashUtilsLib.Anon_Node = js.native
 }
 

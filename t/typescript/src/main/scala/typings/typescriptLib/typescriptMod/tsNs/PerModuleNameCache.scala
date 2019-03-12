@@ -13,10 +13,10 @@ trait PerModuleNameCache extends js.Object {
 object PerModuleNameCache {
   @scala.inline
   def apply(
-    get: js.Function1[java.lang.String, js.UndefOr[ResolvedModuleWithFailedLookupLocations]],
-    set: js.Function2[java.lang.String, ResolvedModuleWithFailedLookupLocations, scala.Unit]
+    get: java.lang.String => js.UndefOr[ResolvedModuleWithFailedLookupLocations],
+    set: (java.lang.String, ResolvedModuleWithFailedLookupLocations) => scala.Unit
   ): PerModuleNameCache = {
-    val __obj = js.Dynamic.literal(get = get, set = set)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
   
     __obj.asInstanceOf[PerModuleNameCache]
   }

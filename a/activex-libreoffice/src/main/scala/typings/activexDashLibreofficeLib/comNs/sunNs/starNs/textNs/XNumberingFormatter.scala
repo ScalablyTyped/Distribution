@@ -24,16 +24,12 @@ trait XNumberingFormatter
 object XNumberingFormatter {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    makeNumberingString: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    makeNumberingString: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XNumberingFormatter = {
-    val __obj = js.Dynamic.literal(acquire = acquire, makeNumberingString = makeNumberingString, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), makeNumberingString = js.Any.fromFunction2(makeNumberingString), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XNumberingFormatter]
   }

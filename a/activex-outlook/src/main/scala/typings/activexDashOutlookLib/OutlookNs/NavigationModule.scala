@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.NavigationModule")
 @js.native
 class NavigationModule protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   val Name: java.lang.String = js.native
   val NavigationModuleType: OlNavigationModuleType = js.native

@@ -35,11 +35,11 @@ trait UiKeyPressable extends js.Object {
 object UiKeyPressable {
   @scala.inline
   def apply(
-    addOnKeyPress: js.Function1[xrmLib.XrmNs.EventsNs.ContextSensitiveHandler, scala.Unit],
-    fireOnKeyPress: js.Function0[scala.Unit],
-    removeOnKeyPress: js.Function1[xrmLib.XrmNs.EventsNs.ContextSensitiveHandler, scala.Unit]
+    addOnKeyPress: xrmLib.XrmNs.EventsNs.ContextSensitiveHandler => scala.Unit,
+    fireOnKeyPress: () => scala.Unit,
+    removeOnKeyPress: xrmLib.XrmNs.EventsNs.ContextSensitiveHandler => scala.Unit
   ): UiKeyPressable = {
-    val __obj = js.Dynamic.literal(addOnKeyPress = addOnKeyPress, fireOnKeyPress = fireOnKeyPress, removeOnKeyPress = removeOnKeyPress)
+    val __obj = js.Dynamic.literal(addOnKeyPress = js.Any.fromFunction1(addOnKeyPress), fireOnKeyPress = js.Any.fromFunction0(fireOnKeyPress), removeOnKeyPress = js.Any.fromFunction1(removeOnKeyPress))
   
     __obj.asInstanceOf[UiKeyPressable]
   }

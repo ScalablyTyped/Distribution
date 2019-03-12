@@ -23,11 +23,11 @@ trait Loader extends js.Object {
 object Loader {
   @scala.inline
   def apply(
-    abort: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    load: js.Function3[LoaderContext, LoaderConfig, LoaderCallbacks, scala.Unit]
+    abort: () => scala.Unit,
+    destroy: () => scala.Unit,
+    load: (LoaderContext, LoaderConfig, LoaderCallbacks) => scala.Unit
   ): Loader = {
-    val __obj = js.Dynamic.literal(abort = abort, destroy = destroy, load = load)
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), destroy = js.Any.fromFunction0(destroy), load = js.Any.fromFunction3(load))
   
     __obj.asInstanceOf[Loader]
   }

@@ -18,15 +18,15 @@ trait PBKDF2Params extends js.Object {
 object PBKDF2Params {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     iterationCount: scala.Double,
     keyLength: scala.Double,
     prf: pkijsLib.srcAlgorithmIdentifierMod.default,
     salt: js.Any,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): PBKDF2Params = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, iterationCount = iterationCount, keyLength = keyLength, prf = prf, salt = salt, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), iterationCount = iterationCount, keyLength = keyLength, prf = prf, salt = salt, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[PBKDF2Params]
   }

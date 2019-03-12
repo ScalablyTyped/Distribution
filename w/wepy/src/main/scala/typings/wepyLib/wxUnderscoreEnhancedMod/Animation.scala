@@ -23,34 +23,34 @@ trait Animation
 object Animation {
   @scala.inline
   def apply(
-    backgroundColor: js.Function1[java.lang.String, Animation],
-    bottom: js.Function1[scala.Double, Animation],
-    height: js.Function1[scala.Double, Animation],
-    left: js.Function1[scala.Double, Animation],
-    opacity: js.Function1[scala.Double, Animation],
-    right: js.Function1[scala.Double, Animation],
-    rotate: js.Function1[scala.Double, Animation],
-    rotate3d: js.Function0[Animation],
-    rotateX: js.Function1[scala.Double, Animation],
-    rotateY: js.Function1[scala.Double, Animation],
-    rotateZ: js.Function1[scala.Double, Animation],
-    scale: js.Function1[scala.Double, Animation],
-    scale3d: js.Function0[Animation],
-    scaleX: js.Function1[scala.Double, Animation],
-    scaleY: js.Function1[scala.Double, Animation],
-    scaleZ: js.Function1[scala.Double, Animation],
-    skew: js.Function1[scala.Double, Animation],
-    skewX: js.Function1[scala.Double, Animation],
-    skewY: js.Function1[scala.Double, Animation],
-    top: js.Function1[scala.Double, Animation],
-    translate: js.Function1[scala.Double, Animation],
-    translate3d: js.Function0[Animation],
-    translateX: js.Function1[scala.Double, Animation],
-    translateY: js.Function1[scala.Double, Animation],
-    translateZ: js.Function1[scala.Double, Animation],
-    width: js.Function1[scala.Double, Animation]
+    backgroundColor: java.lang.String => Animation,
+    bottom: scala.Double => Animation,
+    height: scala.Double => Animation,
+    left: scala.Double => Animation,
+    opacity: scala.Double => Animation,
+    right: scala.Double => Animation,
+    rotate: scala.Double => Animation,
+    rotate3d: () => Animation,
+    rotateX: scala.Double => Animation,
+    rotateY: scala.Double => Animation,
+    rotateZ: scala.Double => Animation,
+    scale: scala.Double => Animation,
+    scale3d: () => Animation,
+    scaleX: scala.Double => Animation,
+    scaleY: scala.Double => Animation,
+    scaleZ: scala.Double => Animation,
+    skew: scala.Double => Animation,
+    skewX: scala.Double => Animation,
+    skewY: scala.Double => Animation,
+    top: scala.Double => Animation,
+    translate: scala.Double => Animation,
+    translate3d: () => Animation,
+    translateX: scala.Double => Animation,
+    translateY: scala.Double => Animation,
+    translateZ: scala.Double => Animation,
+    width: scala.Double => Animation
   ): Animation = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, bottom = bottom, height = height, left = left, opacity = opacity, right = right, rotate = rotate, rotate3d = rotate3d, rotateX = rotateX, rotateY = rotateY, rotateZ = rotateZ, scale = scale, scale3d = scale3d, scaleX = scaleX, scaleY = scaleY, scaleZ = scaleZ, skew = skew, skewX = skewX, skewY = skewY, top = top, translate = translate, translate3d = translate3d, translateX = translateX, translateY = translateY, translateZ = translateZ, width = width)
+    val __obj = js.Dynamic.literal(backgroundColor = js.Any.fromFunction1(backgroundColor), bottom = js.Any.fromFunction1(bottom), height = js.Any.fromFunction1(height), left = js.Any.fromFunction1(left), opacity = js.Any.fromFunction1(opacity), right = js.Any.fromFunction1(right), rotate = js.Any.fromFunction1(rotate), rotate3d = js.Any.fromFunction0(rotate3d), rotateX = js.Any.fromFunction1(rotateX), rotateY = js.Any.fromFunction1(rotateY), rotateZ = js.Any.fromFunction1(rotateZ), scale = js.Any.fromFunction1(scale), scale3d = js.Any.fromFunction0(scale3d), scaleX = js.Any.fromFunction1(scaleX), scaleY = js.Any.fromFunction1(scaleY), scaleZ = js.Any.fromFunction1(scaleZ), skew = js.Any.fromFunction1(skew), skewX = js.Any.fromFunction1(skewX), skewY = js.Any.fromFunction1(skewY), top = js.Any.fromFunction1(top), translate = js.Any.fromFunction1(translate), translate3d = js.Any.fromFunction0(translate3d), translateX = js.Any.fromFunction1(translateX), translateY = js.Any.fromFunction1(translateY), translateZ = js.Any.fromFunction1(translateZ), width = js.Any.fromFunction1(width))
   
     __obj.asInstanceOf[Animation]
   }

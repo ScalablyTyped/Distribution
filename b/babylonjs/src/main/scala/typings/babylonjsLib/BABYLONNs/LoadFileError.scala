@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("BABYLON.LoadFileError")
 @js.native
 class LoadFileError protected ()
-  extends nodeLib.Error {
+  extends stdLib.Error {
   /**
     * Creates a new LoadFileError
     * @param message defines the message of the error
@@ -21,6 +21,10 @@ class LoadFileError protected ()
   def this(message: java.lang.String) = this()
   def this(message: java.lang.String, /** defines the optional XHR request */
   request: stdLib.XMLHttpRequest) = this()
+  /* CompleteClass */
+  override var message: java.lang.String = js.native
+  /* CompleteClass */
+  override var name: java.lang.String = js.native
   /** defines the optional XHR request */
   var request: js.UndefOr[stdLib.XMLHttpRequest] = js.native
 }

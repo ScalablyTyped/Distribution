@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   /* webNavigation events */
   /** Fired when a navigation is about to occur. */
-  val onBeforeNavigate: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnBeforeNavigateEvent[
+  val onBeforeNavigate: _WebNavigationOnBeforeNavigateEvent[
     js.Function1[
       /* details */ firefoxDashWebextDashBrowserLib.Anon_FrameIdParentFrameId, 
       scala.Unit
@@ -21,22 +21,22 @@ object ^ extends js.Object {
     * subframes) might still be downloading, but at least part of the document has been received from the server and
     * the browser has decided to switch to the new document.
     */
-  val onCommitted: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnCommittedEvent[
+  val onCommitted: _WebNavigationOnCommittedEvent[
     js.Function1[/* details */ firefoxDashWebextDashBrowserLib.Anon_FrameIdProcessId, scala.Unit]
   ] = js.native
   /** Fired when a document, including the resources it refers to, is completely loaded and initialized. */
-  val onCompleted: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnCompletedEvent[
+  val onCompleted: _WebNavigationOnCompletedEvent[
     js.Function1[
       /* details */ firefoxDashWebextDashBrowserLib.Anon_FrameIdProcessIdTabId, 
       scala.Unit
     ]
   ] = js.native
   /** Fired when a new window, or a new tab in an existing window, is created to host a navigation. */
-  val onCreatedNavigationTarget: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnCreatedNavigationTargetEvent[
+  val onCreatedNavigationTarget: _WebNavigationOnCreatedNavigationTargetEvent[
     js.Function1[/* details */ firefoxDashWebextDashBrowserLib.Anon_SourceFrameId, scala.Unit]
   ] = js.native
   /** Fired when the page's DOM is fully constructed, but the referenced resources may not finish loading. */
-  val onDOMContentLoaded: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnDOMContentLoadedEvent[
+  val onDOMContentLoaded: _WebNavigationOnDOMContentLoadedEvent[
     js.Function1[
       /* details */ firefoxDashWebextDashBrowserLib.Anon_FrameIdProcessIdTabId, 
       scala.Unit
@@ -46,21 +46,21 @@ object ^ extends js.Object {
     * Fired when an error occurs and the navigation is aborted. This can happen if either a network error occurred, or
     * the user aborted the navigation.
     */
-  val onErrorOccurred: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnErrorOccurredEvent[
+  val onErrorOccurred: _WebNavigationOnErrorOccurredEvent[
     js.Function1[/* details */ firefoxDashWebextDashBrowserLib.Anon_Error, scala.Unit]
   ] = js.native
   /**
     * Fired when the frame's history was updated to a new URL. All future events for that frame will use the updated
     * URL.
     */
-  val onHistoryStateUpdated: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnHistoryStateUpdatedEvent[
+  val onHistoryStateUpdated: _WebNavigationOnHistoryStateUpdatedEvent[
     js.Function1[/* details */ firefoxDashWebextDashBrowserLib.Anon_FrameIdProcessId, scala.Unit]
   ] = js.native
   /**
     * Fired when the reference fragment of a frame was updated. All future events for that frame will use the updated
     * URL.
     */
-  val onReferenceFragmentUpdated: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnReferenceFragmentUpdatedEvent[
+  val onReferenceFragmentUpdated: _WebNavigationOnReferenceFragmentUpdatedEvent[
     js.Function1[/* details */ firefoxDashWebextDashBrowserLib.Anon_FrameIdProcessId, scala.Unit]
   ] = js.native
   /** Fired when the contents of the tab is replaced by a different (usually previously pre-rendered) tab. */

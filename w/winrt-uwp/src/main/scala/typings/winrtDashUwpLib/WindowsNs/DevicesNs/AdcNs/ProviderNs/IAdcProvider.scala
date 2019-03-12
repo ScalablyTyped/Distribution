@@ -17,11 +17,9 @@ trait IAdcProvider extends js.Object {
 object IAdcProvider {
   @scala.inline
   def apply(
-    getControllers: js.Function0[
-      winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[IAdcControllerProvider]
-    ]
+    getControllers: () => winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[IAdcControllerProvider]
   ): IAdcProvider = {
-    val __obj = js.Dynamic.literal(getControllers = getControllers)
+    val __obj = js.Dynamic.literal(getControllers = js.Any.fromFunction0(getControllers))
   
     __obj.asInstanceOf[IAdcProvider]
   }

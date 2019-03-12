@@ -15,7 +15,7 @@ trait IncomingFrame
   def readString(
     encoding: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* buffer */ js.UndefOr[java.lang.String], 
       scala.Unit
     ]

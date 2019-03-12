@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val default: (js.Function1[
     /* app */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[_], 
-    atFeathersjsExpressLib.atFeathersjsExpressMod.Application[_]
+    Application[_]
   ]) with atFeathersjsExpressLib.Anon_App = js.native
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with JSON payloads and is based on body-parser.

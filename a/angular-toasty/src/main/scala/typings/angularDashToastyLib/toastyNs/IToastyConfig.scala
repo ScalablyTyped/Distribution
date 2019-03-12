@@ -21,15 +21,15 @@ trait IToastyConfig extends js.Object {
   /**
     * Add event handler.
     */
-  var onAdd: js.UndefOr[angularLib.angularMod.Global.Function] = js.undefined
+  var onAdd: js.UndefOr[js.Function] = js.undefined
   /**
     * Click event handler.
     */
-  var onClick: js.UndefOr[angularLib.angularMod.Global.Function] = js.undefined
+  var onClick: js.UndefOr[js.Function] = js.undefined
   /**
     * Remove event handler.
     */
-  var onRemove: js.UndefOr[angularLib.angularMod.Global.Function] = js.undefined
+  var onRemove: js.UndefOr[js.Function] = js.undefined
   /**
     * Whether to shake the toasts.
     */
@@ -76,9 +76,9 @@ object IToastyConfig {
     clickToClose: js.UndefOr[scala.Boolean] = js.undefined,
     html: js.UndefOr[scala.Boolean] = js.undefined,
     msg: java.lang.String = null,
-    onAdd: angularLib.angularMod.Global.Function = null,
-    onClick: angularLib.angularMod.Global.Function = null,
-    onRemove: angularLib.angularMod.Global.Function = null,
+    onAdd: js.Function = null,
+    onClick: js.Function = null,
+    onRemove: js.Function = null,
     shake: js.UndefOr[scala.Boolean] = js.undefined,
     showClose: js.UndefOr[scala.Boolean] = js.undefined,
     sound: js.UndefOr[scala.Boolean] = js.undefined,

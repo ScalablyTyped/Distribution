@@ -19,11 +19,11 @@ object MeshCreateFromPolygonParams {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     material: MeshCreateFromPolygonParamsMaterial = null
   ): MeshCreateFromPolygonParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (material != null) __obj.updateDynamic("material")(material)
     __obj.asInstanceOf[MeshCreateFromPolygonParams]
   }

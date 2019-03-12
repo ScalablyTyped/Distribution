@@ -15,12 +15,12 @@ trait PluginCache extends js.Object {
 object PluginCache {
   @scala.inline
   def apply(
-    delete: js.Function1[java.lang.String, scala.Boolean],
-    get: js.Function1[java.lang.String, js.Any],
-    has: js.Function1[java.lang.String, scala.Boolean],
-    set: js.Function2[java.lang.String, js.Any, scala.Unit]
+    delete: java.lang.String => scala.Boolean,
+    get: java.lang.String => js.Any,
+    has: java.lang.String => scala.Boolean,
+    set: (java.lang.String, js.Any) => scala.Unit
   ): PluginCache = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, has = has, set = set)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), set = js.Any.fromFunction2(set))
   
     __obj.asInstanceOf[PluginCache]
   }

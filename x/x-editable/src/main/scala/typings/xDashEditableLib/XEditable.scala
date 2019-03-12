@@ -25,22 +25,22 @@ trait XEditable extends js.Object {
 object XEditable {
   @scala.inline
   def apply(
-    activate: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    disable: js.Function0[scala.Unit],
-    enable: js.Function0[scala.Unit],
-    getValue: js.Function1[scala.Boolean, js.Any],
-    hide: js.Function0[scala.Unit],
-    option: js.Function2[js.Any, js.Any, scala.Unit],
+    activate: () => scala.Unit,
+    destroy: () => scala.Unit,
+    disable: () => scala.Unit,
+    enable: () => scala.Unit,
+    getValue: scala.Boolean => js.Any,
+    hide: () => scala.Unit,
+    option: (js.Any, js.Any) => scala.Unit,
     options: XEditableOptions,
-    setValue: js.Function2[js.Any, scala.Boolean, scala.Unit],
-    show: js.Function1[scala.Boolean, scala.Unit],
-    submit: js.Function1[XEditableSubmitOptions, scala.Unit],
-    toggle: js.Function1[scala.Boolean, scala.Unit],
-    toggleDisabled: js.Function0[scala.Unit],
-    validate: js.Function0[scala.Unit]
+    setValue: (js.Any, scala.Boolean) => scala.Unit,
+    show: scala.Boolean => scala.Unit,
+    submit: XEditableSubmitOptions => scala.Unit,
+    toggle: scala.Boolean => scala.Unit,
+    toggleDisabled: () => scala.Unit,
+    validate: () => scala.Unit
   ): XEditable = {
-    val __obj = js.Dynamic.literal(activate = activate, destroy = destroy, disable = disable, enable = enable, getValue = getValue, hide = hide, option = option, options = options, setValue = setValue, show = show, submit = submit, toggle = toggle, toggleDisabled = toggleDisabled, validate = validate)
+    val __obj = js.Dynamic.literal(activate = js.Any.fromFunction0(activate), destroy = js.Any.fromFunction0(destroy), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), getValue = js.Any.fromFunction1(getValue), hide = js.Any.fromFunction0(hide), option = js.Any.fromFunction2(option), options = options, setValue = js.Any.fromFunction2(setValue), show = js.Any.fromFunction1(show), submit = js.Any.fromFunction1(submit), toggle = js.Any.fromFunction1(toggle), toggleDisabled = js.Any.fromFunction0(toggleDisabled), validate = js.Any.fromFunction0(validate))
   
     __obj.asInstanceOf[XEditable]
   }

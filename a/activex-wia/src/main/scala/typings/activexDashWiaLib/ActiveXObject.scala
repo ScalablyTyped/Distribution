@@ -32,31 +32,19 @@ trait ActiveXObject extends js.Object {
 object ActiveXObject {
   @scala.inline
   def apply(
-    on: js.Function4[
-      activexDashWiaLib.WIANs.DeviceManager, 
-      activexDashWiaLib.activexDashWiaLibStrings.OnEvent, 
-      js.Tuple3[
-        activexDashWiaLib.activexDashWiaLibStrings.EventID, 
-        activexDashWiaLib.activexDashWiaLibStrings.DeviceID, 
-        activexDashWiaLib.activexDashWiaLibStrings.ItemID
-      ], 
-      js.ThisFunction1[
-        /* this */ activexDashWiaLib.WIANs.DeviceManager, 
-        /* parameter */ Anon_DeviceID, 
-        scala.Unit
-      ], 
+    on: (activexDashWiaLib.WIANs.DeviceManager, activexDashWiaLib.activexDashWiaLibStrings.OnEvent, js.Tuple3[
+      activexDashWiaLib.activexDashWiaLibStrings.EventID, 
+      activexDashWiaLib.activexDashWiaLibStrings.DeviceID, 
+      activexDashWiaLib.activexDashWiaLibStrings.ItemID
+    ], js.ThisFunction1[
+      /* this */ activexDashWiaLib.WIANs.DeviceManager, 
+      /* parameter */ Anon_DeviceID, 
       scala.Unit
-    ],
-    set_Item: js.Function4[
-      activexDashWiaLib.WIANs.Vector[js.Any], 
-      activexDashWiaLib.activexDashWiaLibStrings.Item, 
-      js.Array[scala.Double], 
-      js.Any, 
-      scala.Unit
-    ]
+    ]) => scala.Unit,
+    set_Item: (activexDashWiaLib.WIANs.Vector[js.Any], activexDashWiaLib.activexDashWiaLibStrings.Item, js.Array[scala.Double], js.Any) => scala.Unit
   ): ActiveXObject = {
-    val __obj = js.Dynamic.literal(on = on)
-    __obj.updateDynamic("set")(set_Item)
+    val __obj = js.Dynamic.literal(on = js.Any.fromFunction4(on))
+    __obj.updateDynamic("set")(js.Any.fromFunction4(set_Item))
     __obj.asInstanceOf[ActiveXObject]
   }
 }

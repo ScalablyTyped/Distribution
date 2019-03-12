@@ -21,28 +21,13 @@ trait CustomMetricsResource extends js.Object {
 object CustomMetricsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomMetricId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CustomMetric]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CustomMetric]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresults, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CustomMetrics]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomMetricIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CustomMetric]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomMetricIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CustomMetric]
-    ]
+    get: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomMetricId => gapiDotClientLib.gapiNs.clientNs.Request[CustomMetric],
+    insert: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[CustomMetric],
+    list: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresults => gapiDotClientLib.gapiNs.clientNs.Request[CustomMetrics],
+    patch: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomMetricIdFields => gapiDotClientLib.gapiNs.clientNs.Request[CustomMetric],
+    update: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomMetricIdFields => gapiDotClientLib.gapiNs.clientNs.Request[CustomMetric]
   ): CustomMetricsResource = {
-    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[CustomMetricsResource]
   }

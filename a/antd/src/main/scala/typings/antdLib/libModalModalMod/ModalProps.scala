@@ -24,7 +24,7 @@ trait ModalProps extends js.Object {
   /** 强制渲染 Modal*/
   var forceRender: js.UndefOr[scala.Boolean] = js.undefined
   var getContainer: js.UndefOr[
-    js.Function1[/* instance */ reactLib.reactMod.ReactNs.ReactInstance, reactLib.HTMLElement]
+    js.Function1[/* instance */ reactLib.reactMod.ReactNs.ReactInstance, stdLib.HTMLElement]
   ] = js.undefined
   var keyboard: js.UndefOr[scala.Boolean] = js.undefined
   var mask: js.UndefOr[scala.Boolean] = js.undefined
@@ -68,7 +68,7 @@ trait ModalProps extends js.Object {
 object ModalProps {
   @scala.inline
   def apply(
-    afterClose: js.Function0[scala.Unit] = null,
+    afterClose: () => scala.Unit = null,
     bodyStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     cancelButtonProps: antdLib.libButtonButtonMod.NativeButtonProps = null,
     cancelText: reactLib.reactMod.ReactNs.ReactNode = null,
@@ -79,7 +79,7 @@ object ModalProps {
     destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined,
     footer: reactLib.reactMod.ReactNs.ReactNode = null,
     forceRender: js.UndefOr[scala.Boolean] = js.undefined,
-    getContainer: js.Function1[/* instance */ reactLib.reactMod.ReactNs.ReactInstance, reactLib.HTMLElement] = null,
+    getContainer: /* instance */ reactLib.reactMod.ReactNs.ReactInstance => stdLib.HTMLElement = null,
     keyboard: js.UndefOr[scala.Boolean] = js.undefined,
     mask: js.UndefOr[scala.Boolean] = js.undefined,
     maskClosable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -88,14 +88,8 @@ object ModalProps {
     okButtonProps: antdLib.libButtonButtonMod.NativeButtonProps = null,
     okText: reactLib.reactMod.ReactNs.ReactNode = null,
     okType: antdLib.libButtonButtonMod.ButtonType = null,
-    onCancel: js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
-    onOk: js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
+    onCancel: /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onOk: /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent] => scala.Unit = null,
     prefixCls: java.lang.String = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     title: reactLib.reactMod.ReactNs.ReactNode | java.lang.String = null,
@@ -107,7 +101,7 @@ object ModalProps {
     zIndex: scala.Int | scala.Double = null
   ): ModalProps = {
     val __obj = js.Dynamic.literal()
-    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose)
+    if (afterClose != null) __obj.updateDynamic("afterClose")(js.Any.fromFunction0(afterClose))
     if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle)
     if (cancelButtonProps != null) __obj.updateDynamic("cancelButtonProps")(cancelButtonProps)
     if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
@@ -118,7 +112,7 @@ object ModalProps {
     if (!js.isUndefined(destroyOnClose)) __obj.updateDynamic("destroyOnClose")(destroyOnClose)
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender)
-    if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer)
+    if (getContainer != null) __obj.updateDynamic("getContainer")(js.Any.fromFunction1(getContainer))
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
     if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
     if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable)
@@ -127,8 +121,8 @@ object ModalProps {
     if (okButtonProps != null) __obj.updateDynamic("okButtonProps")(okButtonProps)
     if (okText != null) __obj.updateDynamic("okText")(okText.asInstanceOf[js.Any])
     if (okType != null) __obj.updateDynamic("okType")(okType)
-    if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel)
-    if (onOk != null) __obj.updateDynamic("onOk")(onOk)
+    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction1(onCancel))
+    if (onOk != null) __obj.updateDynamic("onOk")(js.Any.fromFunction1(onOk))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (style != null) __obj.updateDynamic("style")(style)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

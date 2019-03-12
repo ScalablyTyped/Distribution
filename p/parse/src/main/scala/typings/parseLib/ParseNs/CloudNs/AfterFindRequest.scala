@@ -18,7 +18,7 @@ object AfterFindRequest {
     `object`: parseLib.ParseNs.Object,
     objects: js.Array[parseLib.ParseNs.Object],
     triggerName: java.lang.String,
-    installationId: nodeLib.String = null,
+    installationId: java.lang.String = null,
     master: js.UndefOr[scala.Boolean] = js.undefined,
     original: parseLib.ParseNs.Object = null,
     user: parseLib.ParseNs.User = null

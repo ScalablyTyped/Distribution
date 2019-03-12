@@ -12,7 +12,7 @@ trait Settings extends js.Object {
   var PDFAVersion: EnumDWT_OCRProPDFAVersion
   var PDFVersion: EnumDWT_OCRProPDFVersion
   var RecognitionModule: java.lang.String
-  var Redaction: Redaction
+  var Redaction: dwtLib.Redaction
 }
 
 object Settings {

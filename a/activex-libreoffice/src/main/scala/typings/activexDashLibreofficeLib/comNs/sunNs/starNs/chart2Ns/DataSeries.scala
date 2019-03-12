@@ -45,9 +45,9 @@ trait DataSeries
     *
     * This property is especially useful for large data series with only some formatted data points, because you do not have to iterate over all elements.
     */
-  var AttributedDataPoints: activexDashInteropLib.SafeArray[scala.Double] = js.native
+  var AttributedDataPoints: stdLib.SafeArray[scala.Double] = js.native
   /** indicates whether this series should be stacked with respect to the previous series. */
-  var StackingDirection: StackingDirection = js.native
+  var StackingDirection: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.StackingDirection = js.native
   /** If `TRUE` , the data points of this series get different colors by default, like in a pie chart. */
   var VaryColorsByPoint: scala.Boolean = js.native
   /**

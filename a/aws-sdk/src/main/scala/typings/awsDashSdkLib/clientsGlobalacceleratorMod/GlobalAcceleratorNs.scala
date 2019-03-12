@@ -73,7 +73,7 @@ object GlobalAcceleratorNs extends js.Object {
     /**
       * A unique, case-sensitive identifier that you provide to ensure the idempotency—that is, the uniqueness—of an accelerator.
       */
-    var IdempotencyToken: IdempotencyToken
+    var IdempotencyToken: awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs.IdempotencyToken
     /**
       * The value for the address type must be IPv4. 
       */
@@ -119,7 +119,7 @@ object GlobalAcceleratorNs extends js.Object {
     /**
       * A unique, case-sensitive identifier that you provide to ensure the idempotency—that is, the uniqueness—of the request.
       */
-    var IdempotencyToken: IdempotencyToken
+    var IdempotencyToken: awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs.IdempotencyToken
     /**
       * The Amazon Resource Name (ARN) of the listener.
       */
@@ -153,15 +153,15 @@ object GlobalAcceleratorNs extends js.Object {
     /**
       * A unique, case-sensitive identifier that you provide to ensure the idempotency—that is, the uniqueness—of the request.
       */
-    var IdempotencyToken: IdempotencyToken
+    var IdempotencyToken: awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs.IdempotencyToken
     /**
       * The list of port ranges to support for connections from clients to your accelerator.
       */
-    var PortRanges: PortRanges
+    var PortRanges: awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs.PortRanges
     /**
       * The protocol for connections from clients to your accelerator.
       */
-    var Protocol: Protocol
+    var Protocol: awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs.Protocol
   }
   
   trait CreateListenerResponse extends js.Object {

@@ -19,10 +19,10 @@ trait ViewportDecoratorOptions extends js.Object {
 object ViewportDecoratorOptions {
   @scala.inline
   def apply(
-    onViewportChange: js.Function1[atStorybookAddonDashViewportLib.Anon_Viewport, scala.Unit],
+    onViewportChange: atStorybookAddonDashViewportLib.Anon_Viewport => scala.Unit,
     name: ViewportName = null
   ): ViewportDecoratorOptions = {
-    val __obj = js.Dynamic.literal(onViewportChange = onViewportChange)
+    val __obj = js.Dynamic.literal(onViewportChange = js.Any.fromFunction1(onViewportChange))
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[ViewportDecoratorOptions]
   }

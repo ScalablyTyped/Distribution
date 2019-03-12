@@ -30,7 +30,7 @@ class namespaced protected () extends SendmailTransport {
   override def send(
     mail: nodemailerLib.libMailerMailDashMessageMod.namespaced,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* info */ nodemailerLib.nodemailerMod.SentMessageInfo, 
       scala.Unit
     ]

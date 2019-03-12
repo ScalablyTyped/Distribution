@@ -16,11 +16,11 @@ object ScrollFollowRenderProps {
   @scala.inline
   def apply(
     follow: scala.Boolean,
-    onScroll: js.Function1[reactDashLazylogLib.Anon_ClientHeight, scala.Unit],
-    startFollowing: js.Function0[scala.Unit],
-    stopFollowing: js.Function0[scala.Unit]
+    onScroll: reactDashLazylogLib.Anon_ClientHeight => scala.Unit,
+    startFollowing: () => scala.Unit,
+    stopFollowing: () => scala.Unit
   ): ScrollFollowRenderProps = {
-    val __obj = js.Dynamic.literal(follow = follow, onScroll = onScroll, startFollowing = startFollowing, stopFollowing = stopFollowing)
+    val __obj = js.Dynamic.literal(follow = follow, onScroll = js.Any.fromFunction1(onScroll), startFollowing = js.Any.fromFunction0(startFollowing), stopFollowing = js.Any.fromFunction0(stopFollowing))
   
     __obj.asInstanceOf[ScrollFollowRenderProps]
   }

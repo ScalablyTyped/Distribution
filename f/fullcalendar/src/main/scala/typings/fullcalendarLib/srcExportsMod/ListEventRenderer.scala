@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "ListEventRenderer")
 @js.native
 class ListEventRenderer ()
-  extends fullcalendarLib.listeventrendererMod.default
+  extends fullcalendarLib.listEventRendererMod.default
 

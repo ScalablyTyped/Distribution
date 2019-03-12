@@ -29,7 +29,7 @@ trait DvaInstance extends js.Object {
     */
   def start(): js.Any = js.native
   def start(selector: java.lang.String): js.Any = js.native
-  def start(selector: reactLib.HTMLElement): js.Any = js.native
+  def start(selector: stdLib.HTMLElement): js.Any = js.native
   /**
     * Unregister a model.
     *

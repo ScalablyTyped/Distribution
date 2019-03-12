@@ -37,14 +37,14 @@ object XFilterManager {
   @scala.inline
   def apply(
     CurrentFilter: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    appendFilter: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    getCurrentFilter: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setCurrentFilter: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    appendFilter: (java.lang.String, java.lang.String) => scala.Unit,
+    getCurrentFilter: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setCurrentFilter: java.lang.String => scala.Unit
   ): XFilterManager = {
-    val __obj = js.Dynamic.literal(CurrentFilter = CurrentFilter, acquire = acquire, appendFilter = appendFilter, getCurrentFilter = getCurrentFilter, queryInterface = queryInterface, release = release, setCurrentFilter = setCurrentFilter)
+    val __obj = js.Dynamic.literal(CurrentFilter = CurrentFilter, acquire = js.Any.fromFunction0(acquire), appendFilter = js.Any.fromFunction2(appendFilter), getCurrentFilter = js.Any.fromFunction0(getCurrentFilter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setCurrentFilter = js.Any.fromFunction1(setCurrentFilter))
   
     __obj.asInstanceOf[XFilterManager]
   }

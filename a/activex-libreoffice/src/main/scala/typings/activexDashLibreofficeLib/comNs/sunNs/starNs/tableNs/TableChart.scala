@@ -22,21 +22,21 @@ object TableChart {
     HasColumnHeaders: scala.Boolean,
     HasRowHeaders: scala.Boolean,
     Name: java.lang.String,
-    Ranges: activexDashInteropLib.SafeArray[CellRangeAddress],
-    acquire: js.Function0[scala.Unit],
-    getEmbeddedObject: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent],
-    getHasColumnHeaders: js.Function0[scala.Boolean],
-    getHasRowHeaders: js.Function0[scala.Boolean],
-    getName: js.Function0[java.lang.String],
-    getRanges: js.Function0[activexDashInteropLib.SafeArray[CellRangeAddress]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setHasColumnHeaders: js.Function1[scala.Boolean, scala.Unit],
-    setHasRowHeaders: js.Function1[scala.Boolean, scala.Unit],
-    setName: js.Function1[java.lang.String, scala.Unit],
-    setRanges: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[CellRangeAddress], scala.Unit]
+    Ranges: stdLib.SafeArray[CellRangeAddress],
+    acquire: () => scala.Unit,
+    getEmbeddedObject: () => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent,
+    getHasColumnHeaders: () => scala.Boolean,
+    getHasRowHeaders: () => scala.Boolean,
+    getName: () => java.lang.String,
+    getRanges: () => stdLib.SafeArray[CellRangeAddress],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setHasColumnHeaders: scala.Boolean => scala.Unit,
+    setHasRowHeaders: scala.Boolean => scala.Unit,
+    setName: java.lang.String => scala.Unit,
+    setRanges: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[CellRangeAddress] => scala.Unit
   ): TableChart = {
-    val __obj = js.Dynamic.literal(EmbeddedObject = EmbeddedObject, HasColumnHeaders = HasColumnHeaders, HasRowHeaders = HasRowHeaders, Name = Name, Ranges = Ranges, acquire = acquire, getEmbeddedObject = getEmbeddedObject, getHasColumnHeaders = getHasColumnHeaders, getHasRowHeaders = getHasRowHeaders, getName = getName, getRanges = getRanges, queryInterface = queryInterface, release = release, setHasColumnHeaders = setHasColumnHeaders, setHasRowHeaders = setHasRowHeaders, setName = setName, setRanges = setRanges)
+    val __obj = js.Dynamic.literal(EmbeddedObject = EmbeddedObject, HasColumnHeaders = HasColumnHeaders, HasRowHeaders = HasRowHeaders, Name = Name, Ranges = Ranges, acquire = js.Any.fromFunction0(acquire), getEmbeddedObject = js.Any.fromFunction0(getEmbeddedObject), getHasColumnHeaders = js.Any.fromFunction0(getHasColumnHeaders), getHasRowHeaders = js.Any.fromFunction0(getHasRowHeaders), getName = js.Any.fromFunction0(getName), getRanges = js.Any.fromFunction0(getRanges), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setHasColumnHeaders = js.Any.fromFunction1(setHasColumnHeaders), setHasRowHeaders = js.Any.fromFunction1(setHasRowHeaders), setName = js.Any.fromFunction1(setName), setRanges = js.Any.fromFunction1(setRanges))
   
     __obj.asInstanceOf[TableChart]
   }

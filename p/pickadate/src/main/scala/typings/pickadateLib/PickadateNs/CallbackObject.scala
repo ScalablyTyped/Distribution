@@ -17,20 +17,20 @@ trait CallbackObject extends js.Object {
 object CallbackObject {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit] = null,
-    open: js.Function0[scala.Unit] = null,
-    render: js.Function0[scala.Unit] = null,
-    set: js.Function1[/* thingSet */ js.Any, scala.Unit] = null,
-    start: js.Function0[scala.Unit] = null,
-    stop: js.Function0[scala.Unit] = null
+    close: () => scala.Unit = null,
+    open: () => scala.Unit = null,
+    render: () => scala.Unit = null,
+    set: /* thingSet */ js.Any => scala.Unit = null,
+    start: () => scala.Unit = null,
+    stop: () => scala.Unit = null
   ): CallbackObject = {
     val __obj = js.Dynamic.literal()
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (open != null) __obj.updateDynamic("open")(open)
-    if (render != null) __obj.updateDynamic("render")(render)
-    if (set != null) __obj.updateDynamic("set")(set)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction0(close))
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction0(open))
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction0(render))
+    if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction1(set))
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction0(start))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction0(stop))
     __obj.asInstanceOf[CallbackObject]
   }
 }

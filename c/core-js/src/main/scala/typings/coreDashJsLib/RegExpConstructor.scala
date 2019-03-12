@@ -11,8 +11,8 @@ trait RegExpConstructor extends js.Object {
 
 object RegExpConstructor {
   @scala.inline
-  def apply(escape: js.Function1[java.lang.String, java.lang.String]): RegExpConstructor = {
-    val __obj = js.Dynamic.literal(escape = escape)
+  def apply(escape: java.lang.String => java.lang.String): RegExpConstructor = {
+    val __obj = js.Dynamic.literal(escape = js.Any.fromFunction1(escape))
   
     __obj.asInstanceOf[RegExpConstructor]
   }

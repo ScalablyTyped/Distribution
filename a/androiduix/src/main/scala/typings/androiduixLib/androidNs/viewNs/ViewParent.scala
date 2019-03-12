@@ -30,28 +30,23 @@ trait ViewParent extends js.Object {
 object ViewParent {
   @scala.inline
   def apply(
-    bringChildToFront: js.Function1[View, js.Any],
-    childDrawableStateChanged: js.Function1[View, js.Any],
-    childHasTransientStateChanged: js.Function2[View, scala.Boolean, js.Any],
-    clearChildFocus: js.Function1[View, js.Any],
-    focusSearch: js.Function2[View, scala.Double, View],
-    focusableViewAvailable: js.Function1[View, js.Any],
-    getChildVisibleRect: js.Function3[
-      View, 
-      androiduixLib.androidNs.graphicsNs.Rect, 
-      androiduixLib.androidNs.graphicsNs.Point, 
-      scala.Boolean
-    ],
-    getParent: js.Function0[ViewParent],
-    invalidateChild: js.Function2[View, androiduixLib.androidNs.graphicsNs.Rect, js.Any],
-    invalidateChildInParent: js.Function2[js.Array[scala.Double], androiduixLib.androidNs.graphicsNs.Rect, ViewParent],
-    isLayoutRequested: js.Function0[scala.Boolean],
-    requestChildFocus: js.Function2[View, View, js.Any],
-    requestChildRectangleOnScreen: js.Function3[View, androiduixLib.androidNs.graphicsNs.Rect, scala.Boolean, scala.Boolean],
-    requestDisallowInterceptTouchEvent: js.Function1[scala.Boolean, js.Any],
-    requestLayout: js.Function0[js.Any]
+    bringChildToFront: View => js.Any,
+    childDrawableStateChanged: View => js.Any,
+    childHasTransientStateChanged: (View, scala.Boolean) => js.Any,
+    clearChildFocus: View => js.Any,
+    focusSearch: (View, scala.Double) => View,
+    focusableViewAvailable: View => js.Any,
+    getChildVisibleRect: (View, androiduixLib.androidNs.graphicsNs.Rect, androiduixLib.androidNs.graphicsNs.Point) => scala.Boolean,
+    getParent: () => ViewParent,
+    invalidateChild: (View, androiduixLib.androidNs.graphicsNs.Rect) => js.Any,
+    invalidateChildInParent: (js.Array[scala.Double], androiduixLib.androidNs.graphicsNs.Rect) => ViewParent,
+    isLayoutRequested: () => scala.Boolean,
+    requestChildFocus: (View, View) => js.Any,
+    requestChildRectangleOnScreen: (View, androiduixLib.androidNs.graphicsNs.Rect, scala.Boolean) => scala.Boolean,
+    requestDisallowInterceptTouchEvent: scala.Boolean => js.Any,
+    requestLayout: () => js.Any
   ): ViewParent = {
-    val __obj = js.Dynamic.literal(bringChildToFront = bringChildToFront, childDrawableStateChanged = childDrawableStateChanged, childHasTransientStateChanged = childHasTransientStateChanged, clearChildFocus = clearChildFocus, focusSearch = focusSearch, focusableViewAvailable = focusableViewAvailable, getChildVisibleRect = getChildVisibleRect, getParent = getParent, invalidateChild = invalidateChild, invalidateChildInParent = invalidateChildInParent, isLayoutRequested = isLayoutRequested, requestChildFocus = requestChildFocus, requestChildRectangleOnScreen = requestChildRectangleOnScreen, requestDisallowInterceptTouchEvent = requestDisallowInterceptTouchEvent, requestLayout = requestLayout)
+    val __obj = js.Dynamic.literal(bringChildToFront = js.Any.fromFunction1(bringChildToFront), childDrawableStateChanged = js.Any.fromFunction1(childDrawableStateChanged), childHasTransientStateChanged = js.Any.fromFunction2(childHasTransientStateChanged), clearChildFocus = js.Any.fromFunction1(clearChildFocus), focusSearch = js.Any.fromFunction2(focusSearch), focusableViewAvailable = js.Any.fromFunction1(focusableViewAvailable), getChildVisibleRect = js.Any.fromFunction3(getChildVisibleRect), getParent = js.Any.fromFunction0(getParent), invalidateChild = js.Any.fromFunction2(invalidateChild), invalidateChildInParent = js.Any.fromFunction2(invalidateChildInParent), isLayoutRequested = js.Any.fromFunction0(isLayoutRequested), requestChildFocus = js.Any.fromFunction2(requestChildFocus), requestChildRectangleOnScreen = js.Any.fromFunction3(requestChildRectangleOnScreen), requestDisallowInterceptTouchEvent = js.Any.fromFunction1(requestDisallowInterceptTouchEvent), requestLayout = js.Any.fromFunction0(requestLayout))
   
     __obj.asInstanceOf[ViewParent]
   }

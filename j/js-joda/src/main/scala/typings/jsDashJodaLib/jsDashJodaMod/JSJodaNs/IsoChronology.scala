@@ -13,11 +13,11 @@ trait IsoChronology extends js.Object {
 object IsoChronology {
   @scala.inline
   def apply(
-    equals: js.Function1[js.Any, scala.Boolean],
-    resolveDate: js.Function2[js.Any, js.Any, js.Any],
-    toString: js.Function0[java.lang.String]
+    equals: js.Any => scala.Boolean,
+    resolveDate: (js.Any, js.Any) => js.Any,
+    toString: () => java.lang.String
   ): IsoChronology = {
-    val __obj = js.Dynamic.literal(equals = equals, resolveDate = resolveDate, toString = toString)
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), resolveDate = js.Any.fromFunction2(resolveDate), toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[IsoChronology]
   }

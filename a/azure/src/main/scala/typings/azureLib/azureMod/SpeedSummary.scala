@@ -46,7 +46,7 @@ class SpeedSummary protected () extends js.Object {
   /**
     * Get auto increment function
     */
-  def getSpeed(size: scala.Double): js.Function2[/* error */ nodeLib.Error, /* value */ js.Any, scala.Unit] = js.native
+  def getSpeed(size: scala.Double): js.Function2[/* error */ stdLib.Error, /* value */ js.Any, scala.Unit] = js.native
   /**
     * Get total size
     */

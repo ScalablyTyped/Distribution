@@ -13,12 +13,8 @@ trait JSONEditorBuffer extends js.Object {
 
 object JSONEditorBuffer {
   @scala.inline
-  def apply(
-    flush: js.Function0[java.lang.String],
-    set: js.Function1[java.lang.String, scala.Unit],
-    text: java.lang.String
-  ): JSONEditorBuffer = {
-    val __obj = js.Dynamic.literal(flush = flush, set = set, text = text)
+  def apply(flush: () => java.lang.String, set: java.lang.String => scala.Unit, text: java.lang.String): JSONEditorBuffer = {
+    val __obj = js.Dynamic.literal(flush = js.Any.fromFunction0(flush), set = js.Any.fromFunction1(set), text = text)
   
     __obj.asInstanceOf[JSONEditorBuffer]
   }

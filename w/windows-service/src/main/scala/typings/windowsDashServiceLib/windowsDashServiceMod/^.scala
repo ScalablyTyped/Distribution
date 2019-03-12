@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def add(name: java.lang.String): scala.Unit = js.native
-  def add(name: java.lang.String, opts: windowsDashServiceLib.windowsDashServiceMod.AddOptions): scala.Unit = js.native
+  def add(name: java.lang.String, opts: AddOptions): scala.Unit = js.native
   def remove(name: java.lang.String): scala.Unit = js.native
   def run(stdoutLogStream: nodeLib.streamMod.Writable, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def run(

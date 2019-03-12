@@ -5,26 +5,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BaseContollerOptions extends js.Object {
-  var app: expressLib.expressMod.eNs.Express
-  var endpoint: java.lang.String
-  var include: js.Array[epilogueLib.Anon_Model | java.lang.String]
-  var model: js.Any
-  var resource: Resource
-}
-
-object BaseContollerOptions {
-  @scala.inline
-  def apply(
-    app: expressLib.expressMod.eNs.Express,
-    endpoint: java.lang.String,
-    include: js.Array[epilogueLib.Anon_Model | java.lang.String],
-    model: js.Any,
-    resource: Resource
-  ): BaseContollerOptions = {
-    val __obj = js.Dynamic.literal(app = app, endpoint = endpoint, include = include, model = model, resource = resource)
-  
-    __obj.asInstanceOf[BaseContollerOptions]
-  }
+  @JSName("app")
+  var app_Original: expressLib.expressMod.eNs.Express = js.native
+  var endpoint: java.lang.String = js.native
+  var include: js.Array[epilogueLib.Anon_Model | java.lang.String] = js.native
+  var model: js.Any = js.native
+  var resource: Resource = js.native
+  /**
+    * Express instance itself is a request handler, which could be invoked without
+    * third argument.
+    */
+  def app(
+    req: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request,
+    res: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response
+  ): js.Any = js.native
+  def app(
+    req: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request,
+    res: nodeLib.httpMod.ServerResponse
+  ): js.Any = js.native
+  def app(
+    req: nodeLib.httpMod.IncomingMessage,
+    res: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response
+  ): js.Any = js.native
+  def app(req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse): js.Any = js.native
 }
 

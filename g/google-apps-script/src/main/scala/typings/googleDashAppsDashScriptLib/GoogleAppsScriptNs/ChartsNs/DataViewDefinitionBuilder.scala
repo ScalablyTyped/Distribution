@@ -12,11 +12,8 @@ trait DataViewDefinitionBuilder extends js.Object {
 
 object DataViewDefinitionBuilder {
   @scala.inline
-  def apply(
-    build: js.Function0[DataViewDefinition],
-    setColumns: js.Function1[js.Array[js.Object], DataViewDefinitionBuilder]
-  ): DataViewDefinitionBuilder = {
-    val __obj = js.Dynamic.literal(build = build, setColumns = setColumns)
+  def apply(build: () => DataViewDefinition, setColumns: js.Array[js.Object] => DataViewDefinitionBuilder): DataViewDefinitionBuilder = {
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setColumns = js.Any.fromFunction1(setColumns))
   
     __obj.asInstanceOf[DataViewDefinitionBuilder]
   }

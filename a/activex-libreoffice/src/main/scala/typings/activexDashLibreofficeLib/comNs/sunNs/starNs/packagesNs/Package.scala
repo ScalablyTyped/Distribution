@@ -23,22 +23,19 @@ object Package {
   @scala.inline
   def apply(
     PendingChanges: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.ChangesSet,
-    acquire: js.Function0[scala.Unit],
-    commitChanges: js.Function0[scala.Unit],
-    createInstance: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    createInstanceWithArguments: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
-    ],
-    getByHierarchicalName: js.Function1[java.lang.String, js.Any],
-    getPendingChanges: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.ChangesSet],
-    hasByHierarchicalName: js.Function1[java.lang.String, scala.Boolean],
-    hasPendingChanges: js.Function0[scala.Boolean],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    commitChanges: () => scala.Unit,
+    createInstance: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    createInstanceWithArguments: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getByHierarchicalName: java.lang.String => js.Any,
+    getPendingChanges: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.ChangesSet,
+    hasByHierarchicalName: java.lang.String => scala.Boolean,
+    hasPendingChanges: () => scala.Boolean,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): Package = {
-    val __obj = js.Dynamic.literal(PendingChanges = PendingChanges.asInstanceOf[js.Any], acquire = acquire, commitChanges = commitChanges, createInstance = createInstance, createInstanceWithArguments = createInstanceWithArguments, getByHierarchicalName = getByHierarchicalName, getPendingChanges = getPendingChanges, hasByHierarchicalName = hasByHierarchicalName, hasPendingChanges = hasPendingChanges, initialize = initialize, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(PendingChanges = PendingChanges.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), commitChanges = js.Any.fromFunction0(commitChanges), createInstance = js.Any.fromFunction0(createInstance), createInstanceWithArguments = js.Any.fromFunction1(createInstanceWithArguments), getByHierarchicalName = js.Any.fromFunction1(getByHierarchicalName), getPendingChanges = js.Any.fromFunction0(getPendingChanges), hasByHierarchicalName = js.Any.fromFunction1(hasByHierarchicalName), hasPendingChanges = js.Any.fromFunction0(hasPendingChanges), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[Package]
   }

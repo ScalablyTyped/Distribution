@@ -39,27 +39,27 @@ class Server ()
   def listen(): this.type = js.native
   def listen(handle: js.Any): this.type = js.native
   def listen(handle: js.Any, backlog: scala.Double): this.type = js.native
-  def listen(handle: js.Any, backlog: scala.Double, listeningListener: js.Function): this.type = js.native
-  def listen(handle: js.Any, listeningListener: js.Function): this.type = js.native
+  def listen(handle: js.Any, backlog: scala.Double, listeningListener: js.Function0[scala.Unit]): this.type = js.native
+  def listen(handle: js.Any, listeningListener: js.Function0[scala.Unit]): this.type = js.native
   def listen(options: ListenOptions): this.type = js.native
-  def listen(options: ListenOptions, listeningListener: js.Function): this.type = js.native
+  def listen(options: ListenOptions, listeningListener: js.Function0[scala.Unit]): this.type = js.native
   def listen(path: java.lang.String): this.type = js.native
   def listen(path: java.lang.String, backlog: scala.Double): this.type = js.native
-  def listen(path: java.lang.String, backlog: scala.Double, listeningListener: js.Function): this.type = js.native
-  def listen(path: java.lang.String, listeningListener: js.Function): this.type = js.native
+  def listen(path: java.lang.String, backlog: scala.Double, listeningListener: js.Function0[scala.Unit]): this.type = js.native
+  def listen(path: java.lang.String, listeningListener: js.Function0[scala.Unit]): this.type = js.native
   def listen(port: scala.Double): this.type = js.native
   def listen(port: scala.Double, backlog: scala.Double): this.type = js.native
-  def listen(port: scala.Double, backlog: scala.Double, listeningListener: js.Function): this.type = js.native
+  def listen(port: scala.Double, backlog: scala.Double, listeningListener: js.Function0[scala.Unit]): this.type = js.native
   def listen(port: scala.Double, hostname: java.lang.String): this.type = js.native
   def listen(port: scala.Double, hostname: java.lang.String, backlog: scala.Double): this.type = js.native
   def listen(
     port: scala.Double,
     hostname: java.lang.String,
     backlog: scala.Double,
-    listeningListener: js.Function
+    listeningListener: js.Function0[scala.Unit]
   ): this.type = js.native
-  def listen(port: scala.Double, hostname: java.lang.String, listeningListener: js.Function): this.type = js.native
-  def listen(port: scala.Double, listeningListener: js.Function): this.type = js.native
+  def listen(port: scala.Double, hostname: java.lang.String, listeningListener: js.Function0[scala.Unit]): this.type = js.native
+  def listen(port: scala.Double, listeningListener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
   def on_close(event: nodeLib.nodeLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")

@@ -26,18 +26,13 @@ trait XTransition
 object XTransition {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    update: js.Function1[scala.Double, scala.Unit],
-    viewChanged: js.Function3[
-      XSlideShowView, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    update: scala.Double => scala.Unit,
+    viewChanged: (XSlideShowView, activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap, activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap) => scala.Unit
   ): XTransition = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, update = update, viewChanged = viewChanged)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), update = js.Any.fromFunction1(update), viewChanged = js.Any.fromFunction3(viewChanged))
   
     __obj.asInstanceOf[XTransition]
   }

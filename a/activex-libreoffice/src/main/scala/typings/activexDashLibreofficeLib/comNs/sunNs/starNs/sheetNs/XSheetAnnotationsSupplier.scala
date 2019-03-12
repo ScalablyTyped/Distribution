@@ -24,12 +24,12 @@ object XSheetAnnotationsSupplier {
   @scala.inline
   def apply(
     Annotations: XSheetAnnotations,
-    acquire: js.Function0[scala.Unit],
-    getAnnotations: js.Function0[XSheetAnnotations],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getAnnotations: () => XSheetAnnotations,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSheetAnnotationsSupplier = {
-    val __obj = js.Dynamic.literal(Annotations = Annotations, acquire = acquire, getAnnotations = getAnnotations, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Annotations = Annotations, acquire = js.Any.fromFunction0(acquire), getAnnotations = js.Any.fromFunction0(getAnnotations), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSheetAnnotationsSupplier]
   }

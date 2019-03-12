@@ -32,6 +32,6 @@ object ^ extends js.Object {
     * @param options The options that are applied to the XMLHttpRequest object, as follows: type, url, user, password, responseType, headers, data, customRequestInitializer.
     * @returns A promise that returns the XMLHttpRequest object when it completes.
     **/
-  def xhr(options: winjsLib.WinJSNs.IXHROptions): winjsLib.WinJSNs.Promise[stdLib.XMLHttpRequest] = js.native
+  def xhr(options: IXHROptions): Promise[stdLib.XMLHttpRequest] = js.native
 }
 

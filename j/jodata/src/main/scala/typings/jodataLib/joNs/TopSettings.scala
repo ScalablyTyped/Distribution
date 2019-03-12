@@ -15,11 +15,11 @@ object TopSettings {
   def apply(
     DefaultTop: scala.Double,
     Top: scala.Double,
-    isSet: js.Function0[scala.Boolean],
-    reset: js.Function0[scala.Unit],
-    toString: js.Function0[java.lang.String]
+    isSet: () => scala.Boolean,
+    reset: () => scala.Unit,
+    toString: () => java.lang.String
   ): TopSettings = {
-    val __obj = js.Dynamic.literal(DefaultTop = DefaultTop, Top = Top, isSet = isSet, reset = reset, toString = toString)
+    val __obj = js.Dynamic.literal(DefaultTop = DefaultTop, Top = Top, isSet = js.Any.fromFunction0(isSet), reset = js.Any.fromFunction0(reset), toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[TopSettings]
   }

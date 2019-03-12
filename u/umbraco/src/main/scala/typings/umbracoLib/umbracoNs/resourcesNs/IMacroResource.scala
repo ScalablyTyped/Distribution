@@ -43,10 +43,10 @@ trait IMacroResource extends js.Object {
 object IMacroResource {
   @scala.inline
   def apply(
-    getMacroParameters: js.Function1[scala.Double, js.Any],
-    getMacroResultAsHtmlForEditor: js.Function3[scala.Double, scala.Double, js.Array[_], js.Any]
+    getMacroParameters: scala.Double => js.Any,
+    getMacroResultAsHtmlForEditor: (scala.Double, scala.Double, js.Array[_]) => js.Any
   ): IMacroResource = {
-    val __obj = js.Dynamic.literal(getMacroParameters = getMacroParameters, getMacroResultAsHtmlForEditor = getMacroResultAsHtmlForEditor)
+    val __obj = js.Dynamic.literal(getMacroParameters = js.Any.fromFunction1(getMacroParameters), getMacroResultAsHtmlForEditor = js.Any.fromFunction3(getMacroResultAsHtmlForEditor))
   
     __obj.asInstanceOf[IMacroResource]
   }

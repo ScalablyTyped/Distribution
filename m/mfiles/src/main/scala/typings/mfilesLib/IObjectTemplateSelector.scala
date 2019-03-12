@@ -20,13 +20,13 @@ object IObjectTemplateSelector {
   def apply(
     ClassSelector: IMetadataCardControl,
     Events: IEvents,
-    GetObjectTypeIconURL: js.Function0[java.lang.String],
-    GetObjectTypeId: js.Function0[scala.Double],
-    GetObjectTypeName: js.Function0[java.lang.String],
-    GetTemplateItems: js.Function0[js.Any],
-    SelectItem: js.Function1[java.lang.String, scala.Unit]
+    GetObjectTypeIconURL: () => java.lang.String,
+    GetObjectTypeId: () => scala.Double,
+    GetObjectTypeName: () => java.lang.String,
+    GetTemplateItems: () => js.Any,
+    SelectItem: java.lang.String => scala.Unit
   ): IObjectTemplateSelector = {
-    val __obj = js.Dynamic.literal(ClassSelector = ClassSelector, Events = Events, GetObjectTypeIconURL = GetObjectTypeIconURL, GetObjectTypeId = GetObjectTypeId, GetObjectTypeName = GetObjectTypeName, GetTemplateItems = GetTemplateItems, SelectItem = SelectItem)
+    val __obj = js.Dynamic.literal(ClassSelector = ClassSelector, Events = Events, GetObjectTypeIconURL = js.Any.fromFunction0(GetObjectTypeIconURL), GetObjectTypeId = js.Any.fromFunction0(GetObjectTypeId), GetObjectTypeName = js.Any.fromFunction0(GetObjectTypeName), GetTemplateItems = js.Any.fromFunction0(GetTemplateItems), SelectItem = js.Any.fromFunction1(SelectItem))
   
     __obj.asInstanceOf[IObjectTemplateSelector]
   }

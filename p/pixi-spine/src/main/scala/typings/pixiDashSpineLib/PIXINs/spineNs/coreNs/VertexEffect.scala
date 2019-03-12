@@ -14,11 +14,11 @@ trait VertexEffect extends js.Object {
 object VertexEffect {
   @scala.inline
   def apply(
-    begin: js.Function1[Skeleton, scala.Unit],
-    end: js.Function0[scala.Unit],
-    transform: js.Function4[Vector2, Vector2, Color, Color, scala.Unit]
+    begin: Skeleton => scala.Unit,
+    end: () => scala.Unit,
+    transform: (Vector2, Vector2, Color, Color) => scala.Unit
   ): VertexEffect = {
-    val __obj = js.Dynamic.literal(begin = begin, end = end, transform = transform)
+    val __obj = js.Dynamic.literal(begin = js.Any.fromFunction1(begin), end = js.Any.fromFunction0(end), transform = js.Any.fromFunction4(transform))
   
     __obj.asInstanceOf[VertexEffect]
   }

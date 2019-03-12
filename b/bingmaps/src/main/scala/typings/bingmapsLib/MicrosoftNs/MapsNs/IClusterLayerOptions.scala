@@ -45,9 +45,9 @@ trait IClusterLayerOptions extends js.Object {
 object IClusterLayerOptions {
   @scala.inline
   def apply(
-    callback: js.Function0[scala.Unit] = null,
+    callback: () => scala.Unit = null,
     clusterPlacementType: ClusterPlacementType = null,
-    clusteredPinCallback: js.Function1[/* pin */ ClusterPushpin, scala.Unit] = null,
+    clusteredPinCallback: /* pin */ ClusterPushpin => scala.Unit = null,
     clusteringEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     gridSize: scala.Int | scala.Double = null,
     layerOffset: Point = null,
@@ -55,9 +55,9 @@ object IClusterLayerOptions {
     zIndex: scala.Int | scala.Double = null
   ): IClusterLayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (clusterPlacementType != null) __obj.updateDynamic("clusterPlacementType")(clusterPlacementType)
-    if (clusteredPinCallback != null) __obj.updateDynamic("clusteredPinCallback")(clusteredPinCallback)
+    if (clusteredPinCallback != null) __obj.updateDynamic("clusteredPinCallback")(js.Any.fromFunction1(clusteredPinCallback))
     if (!js.isUndefined(clusteringEnabled)) __obj.updateDynamic("clusteringEnabled")(clusteringEnabled)
     if (gridSize != null) __obj.updateDynamic("gridSize")(gridSize.asInstanceOf[js.Any])
     if (layerOffset != null) __obj.updateDynamic("layerOffset")(layerOffset)

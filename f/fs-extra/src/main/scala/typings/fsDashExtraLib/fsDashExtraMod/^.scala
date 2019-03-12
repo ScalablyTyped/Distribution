@@ -242,27 +242,27 @@ object ^ extends js.Object {
   def copy(
     src: java.lang.String,
     dest: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def copy(src: java.lang.String, dest: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.CopyOptions): js.Promise[scala.Unit] = js.native
+  def copy(src: java.lang.String, dest: java.lang.String, options: CopyOptions): js.Promise[scala.Unit] = js.native
   def copy(
     src: java.lang.String,
     dest: java.lang.String,
-    options: fsDashExtraLib.fsDashExtraMod.CopyOptions,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    options: CopyOptions,
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def copyFile(src: java.lang.String, dest: java.lang.String): js.Promise[scala.Unit] = js.native
   def copyFile(
     src: java.lang.String,
     dest: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def copyFile(src: java.lang.String, dest: java.lang.String, flags: scala.Double): js.Promise[scala.Unit] = js.native
   def copyFile(
     src: java.lang.String,
     dest: java.lang.String,
     flags: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Asynchronously copies src to dest. By default, dest is overwritten if it already exists.
@@ -307,13 +307,9 @@ object ^ extends js.Object {
   def copyFileSync(src: nodeLib.fsMod.PathLike, dest: nodeLib.fsMod.PathLike): scala.Unit = js.native
   def copyFileSync(src: nodeLib.fsMod.PathLike, dest: nodeLib.fsMod.PathLike, flags: scala.Double): scala.Unit = js.native
   def copySync(src: java.lang.String, dest: java.lang.String): scala.Unit = js.native
-  def copySync(
-    src: java.lang.String,
-    dest: java.lang.String,
-    options: fsDashExtraLib.fsDashExtraMod.CopyOptionsSync
-  ): scala.Unit = js.native
+  def copySync(src: java.lang.String, dest: java.lang.String, options: CopyOptionsSync): scala.Unit = js.native
   def createFile(file: java.lang.String): js.Promise[scala.Unit] = js.native
-  def createFile(file: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def createFile(file: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def createFileSync(file: java.lang.String): scala.Unit = js.native
   /**
     * Returns a new `ReadStream` object.
@@ -332,36 +328,36 @@ object ^ extends js.Object {
   def createWriteStream(path: nodeLib.fsMod.PathLike, options: java.lang.String): nodeLib.fsMod.WriteStream = js.native
   def createWriteStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_AutoCloseEncoding): nodeLib.fsMod.WriteStream = js.native
   def emptyDir(path: java.lang.String): js.Promise[scala.Unit] = js.native
-  def emptyDir(path: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def emptyDir(path: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def emptyDirSync(path: java.lang.String): scala.Unit = js.native
   def ensureDir(path: java.lang.String): js.Promise[scala.Unit] = js.native
-  def ensureDir(path: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def ensureDir(path: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def ensureDirSync(path: java.lang.String): scala.Unit = js.native
   def ensureFile(path: java.lang.String): js.Promise[scala.Unit] = js.native
-  def ensureFile(path: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def ensureFile(path: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def ensureFileSync(path: java.lang.String): scala.Unit = js.native
   def ensureLink(src: java.lang.String, dest: java.lang.String): js.Promise[scala.Unit] = js.native
   def ensureLink(
     src: java.lang.String,
     dest: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def ensureLinkSync(src: java.lang.String, dest: java.lang.String): scala.Unit = js.native
   def ensureSymlink(src: java.lang.String, dest: java.lang.String): js.Promise[scala.Unit] = js.native
   def ensureSymlink(
     src: java.lang.String,
     dest: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def ensureSymlink(src: java.lang.String, dest: java.lang.String, `type`: fsDashExtraLib.fsDashExtraMod.SymlinkType): js.Promise[scala.Unit] = js.native
+  def ensureSymlink(src: java.lang.String, dest: java.lang.String, `type`: SymlinkType): js.Promise[scala.Unit] = js.native
   def ensureSymlink(
     src: java.lang.String,
     dest: java.lang.String,
-    `type`: fsDashExtraLib.fsDashExtraMod.SymlinkType,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    `type`: SymlinkType,
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def ensureSymlinkSync(src: java.lang.String, dest: java.lang.String): scala.Unit = js.native
-  def ensureSymlinkSync(src: java.lang.String, dest: java.lang.String, `type`: fsDashExtraLib.fsDashExtraMod.SymlinkType): scala.Unit = js.native
+  def ensureSymlinkSync(src: java.lang.String, dest: java.lang.String, `type`: SymlinkType): scala.Unit = js.native
   /**
     * Asynchronously tests whether or not the given path exists by checking with the file system.
     * @deprecated
@@ -765,10 +761,10 @@ object ^ extends js.Object {
   def mkdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.fsMod.MakeDirectoryOptions): scala.Unit = js.native
   def mkdirSync(path: nodeLib.fsMod.PathLike, options: scala.Double): scala.Unit = js.native
   def mkdirp(dir: java.lang.String): js.Promise[scala.Unit] = js.native
-  def mkdirp(dir: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def mkdirp(dir: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def mkdirpSync(dir: java.lang.String): scala.Unit = js.native
   def mkdirs(dir: java.lang.String): js.Promise[scala.Unit] = js.native
-  def mkdirs(dir: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def mkdirs(dir: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def mkdirsSync(dir: java.lang.String): scala.Unit = js.native
   def mkdtemp(prefix: java.lang.String): js.Promise[java.lang.String] = js.native
   /**
@@ -880,17 +876,17 @@ object ^ extends js.Object {
   def move(
     src: java.lang.String,
     dest: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def move(src: java.lang.String, dest: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.MoveOptions): js.Promise[scala.Unit] = js.native
+  def move(src: java.lang.String, dest: java.lang.String, options: MoveOptions): js.Promise[scala.Unit] = js.native
   def move(
     src: java.lang.String,
     dest: java.lang.String,
-    options: fsDashExtraLib.fsDashExtraMod.MoveOptions,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    options: MoveOptions,
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def moveSync(src: java.lang.String, dest: java.lang.String): scala.Unit = js.native
-  def moveSync(src: java.lang.String, dest: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.MoveOptions): scala.Unit = js.native
+  def moveSync(src: java.lang.String, dest: java.lang.String, options: MoveOptions): scala.Unit = js.native
   def open(path: java.lang.String, flags: java.lang.String): js.Promise[scala.Double] = js.native
   def open(
     path: java.lang.String,
@@ -1022,60 +1018,60 @@ object ^ extends js.Object {
   def openSync(path: nodeLib.fsMod.PathLike, flags: scala.Double, mode: java.lang.String): scala.Double = js.native
   def openSync(path: nodeLib.fsMod.PathLike, flags: scala.Double, mode: scala.Double): scala.Double = js.native
   def outputFile(file: java.lang.String, data: js.Any): js.Promise[scala.Unit] = js.native
-  def outputFile(file: java.lang.String, data: js.Any, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
-  def outputFile(file: java.lang.String, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
+  def outputFile(file: java.lang.String, data: js.Any, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  def outputFile(file: java.lang.String, data: js.Any, options: WriteFileOptions): js.Promise[scala.Unit] = js.native
   def outputFile(
     file: java.lang.String,
     data: js.Any,
-    options: fsDashExtraLib.fsDashExtraMod.WriteFileOptions,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    options: WriteFileOptions,
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def outputFile(file: java.lang.String, data: js.Any, options: java.lang.String): js.Promise[scala.Unit] = js.native
   def outputFile(
     file: java.lang.String,
     data: js.Any,
     options: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def outputFileSync(file: java.lang.String, data: js.Any): scala.Unit = js.native
-  def outputFileSync(file: java.lang.String, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteFileOptions): scala.Unit = js.native
+  def outputFileSync(file: java.lang.String, data: js.Any, options: WriteFileOptions): scala.Unit = js.native
   def outputFileSync(file: java.lang.String, data: js.Any, options: java.lang.String): scala.Unit = js.native
   def outputJSON(file: java.lang.String, data: js.Any): js.Promise[scala.Unit] = js.native
-  def outputJSON(file: java.lang.String, data: js.Any, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
-  def outputJSON(file: java.lang.String, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): js.Promise[scala.Unit] = js.native
+  def outputJSON(file: java.lang.String, data: js.Any, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  def outputJSON(file: java.lang.String, data: js.Any, options: WriteOptions): js.Promise[scala.Unit] = js.native
   def outputJSON(
     file: java.lang.String,
     data: js.Any,
-    options: fsDashExtraLib.fsDashExtraMod.WriteOptions,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    options: WriteOptions,
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def outputJSONSync(file: java.lang.String, data: js.Any): scala.Unit = js.native
-  def outputJSONSync(file: java.lang.String, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): scala.Unit = js.native
+  def outputJSONSync(file: java.lang.String, data: js.Any, options: WriteOptions): scala.Unit = js.native
   def outputJson(file: java.lang.String, data: js.Any): js.Promise[scala.Unit] = js.native
-  def outputJson(file: java.lang.String, data: js.Any, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
-  def outputJson(file: java.lang.String, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): js.Promise[scala.Unit] = js.native
+  def outputJson(file: java.lang.String, data: js.Any, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  def outputJson(file: java.lang.String, data: js.Any, options: WriteOptions): js.Promise[scala.Unit] = js.native
   def outputJson(
     file: java.lang.String,
     data: js.Any,
-    options: fsDashExtraLib.fsDashExtraMod.WriteOptions,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    options: WriteOptions,
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def outputJsonSync(file: java.lang.String, data: js.Any): scala.Unit = js.native
-  def outputJsonSync(file: java.lang.String, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): scala.Unit = js.native
+  def outputJsonSync(file: java.lang.String, data: js.Any, options: WriteOptions): scala.Unit = js.native
   def pathExists(path: java.lang.String): js.Promise[scala.Boolean] = js.native
   def pathExists(
     path: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* exists */ scala.Boolean, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* exists */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   def pathExistsSync(path: java.lang.String): scala.Boolean = js.native
-  def read(fd: scala.Double, buffer: nodeLib.Buffer, offset: scala.Double, length: scala.Double): js.Promise[fsDashExtraLib.fsDashExtraMod.ReadResult] = js.native
+  def read(fd: scala.Double, buffer: nodeLib.Buffer, offset: scala.Double, length: scala.Double): js.Promise[ReadResult] = js.native
   def read(
     fd: scala.Double,
     buffer: nodeLib.Buffer,
     offset: scala.Double,
     length: scala.Double,
     position: scala.Double
-  ): js.Promise[fsDashExtraLib.fsDashExtraMod.ReadResult] = js.native
+  ): js.Promise[ReadResult] = js.native
   def read(
     fd: scala.Double,
     buffer: nodeLib.Buffer,
@@ -1368,29 +1364,29 @@ object ^ extends js.Object {
   def readJSON(file: java.lang.String): js.Promise[_] = js.native
   def readJSON(
     file: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* jsonObject */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* jsonObject */ js.Any, scala.Unit]
   ): scala.Unit = js.native
-  def readJSON(file: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.ReadOptions): js.Promise[_] = js.native
+  def readJSON(file: java.lang.String, options: ReadOptions): js.Promise[_] = js.native
   def readJSON(
     file: java.lang.String,
-    options: fsDashExtraLib.fsDashExtraMod.ReadOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* jsonObject */ js.Any, scala.Unit]
+    options: ReadOptions,
+    callback: js.Function2[/* err */ stdLib.Error, /* jsonObject */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def readJSONSync(file: java.lang.String): js.Any = js.native
-  def readJSONSync(file: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.ReadOptions): js.Any = js.native
+  def readJSONSync(file: java.lang.String, options: ReadOptions): js.Any = js.native
   def readJson(file: java.lang.String): js.Promise[_] = js.native
   def readJson(
     file: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* jsonObject */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* jsonObject */ js.Any, scala.Unit]
   ): scala.Unit = js.native
-  def readJson(file: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.ReadOptions): js.Promise[_] = js.native
+  def readJson(file: java.lang.String, options: ReadOptions): js.Promise[_] = js.native
   def readJson(
     file: java.lang.String,
-    options: fsDashExtraLib.fsDashExtraMod.ReadOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* jsonObject */ js.Any, scala.Unit]
+    options: ReadOptions,
+    callback: js.Function2[/* err */ stdLib.Error, /* jsonObject */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def readJsonSync(file: java.lang.String): js.Any = js.native
-  def readJsonSync(file: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.ReadOptions): js.Any = js.native
+  def readJsonSync(file: java.lang.String, options: ReadOptions): js.Any = js.native
   def readSync(fd: scala.Double, buffer: nodeLib.fsMod.BinaryData, offset: scala.Double, length: scala.Double): scala.Double = js.native
   /**
     * Synchronously reads data from the file referenced by the supplied file descriptor, returning the number of bytes read.
@@ -1853,7 +1849,7 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   def remove(dir: java.lang.String): js.Promise[scala.Unit] = js.native
-  def remove(dir: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def remove(dir: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def removeSync(dir: java.lang.String): scala.Unit = js.native
   def rename(oldPath: java.lang.String, newPath: java.lang.String): js.Promise[scala.Unit] = js.native
   def rename(
@@ -1937,15 +1933,11 @@ object ^ extends js.Object {
     dstpath: java.lang.String,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
+  def symlink(srcpath: java.lang.String, dstpath: java.lang.String, `type`: FsSymlinkType): js.Promise[scala.Unit] = js.native
   def symlink(
     srcpath: java.lang.String,
     dstpath: java.lang.String,
-    `type`: fsDashExtraLib.fsDashExtraMod.FsSymlinkType
-  ): js.Promise[scala.Unit] = js.native
-  def symlink(
-    srcpath: java.lang.String,
-    dstpath: java.lang.String,
-    `type`: fsDashExtraLib.fsDashExtraMod.FsSymlinkType,
+    `type`: FsSymlinkType,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def symlink(
@@ -1960,15 +1952,11 @@ object ^ extends js.Object {
     dstpath: nodeLib.Buffer,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
+  def symlink(srcpath: java.lang.String, dstpath: nodeLib.Buffer, `type`: FsSymlinkType): js.Promise[scala.Unit] = js.native
   def symlink(
     srcpath: java.lang.String,
     dstpath: nodeLib.Buffer,
-    `type`: fsDashExtraLib.fsDashExtraMod.FsSymlinkType
-  ): js.Promise[scala.Unit] = js.native
-  def symlink(
-    srcpath: java.lang.String,
-    dstpath: nodeLib.Buffer,
-    `type`: fsDashExtraLib.fsDashExtraMod.FsSymlinkType,
+    `type`: FsSymlinkType,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def symlink(
@@ -1983,15 +1971,11 @@ object ^ extends js.Object {
     dstpath: java.lang.String,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
+  def symlink(srcpath: nodeLib.Buffer, dstpath: java.lang.String, `type`: FsSymlinkType): js.Promise[scala.Unit] = js.native
   def symlink(
     srcpath: nodeLib.Buffer,
     dstpath: java.lang.String,
-    `type`: fsDashExtraLib.fsDashExtraMod.FsSymlinkType
-  ): js.Promise[scala.Unit] = js.native
-  def symlink(
-    srcpath: nodeLib.Buffer,
-    dstpath: java.lang.String,
-    `type`: fsDashExtraLib.fsDashExtraMod.FsSymlinkType,
+    `type`: FsSymlinkType,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def symlink(
@@ -2006,15 +1990,11 @@ object ^ extends js.Object {
     dstpath: nodeLib.Buffer,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
+  def symlink(srcpath: nodeLib.Buffer, dstpath: nodeLib.Buffer, `type`: FsSymlinkType): js.Promise[scala.Unit] = js.native
   def symlink(
     srcpath: nodeLib.Buffer,
     dstpath: nodeLib.Buffer,
-    `type`: fsDashExtraLib.fsDashExtraMod.FsSymlinkType
-  ): js.Promise[scala.Unit] = js.native
-  def symlink(
-    srcpath: nodeLib.Buffer,
-    dstpath: nodeLib.Buffer,
-    `type`: fsDashExtraLib.fsDashExtraMod.FsSymlinkType,
+    `type`: FsSymlinkType,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def symlink(
@@ -2375,7 +2355,7 @@ object ^ extends js.Object {
     options: fsDashExtraLib.fsDashExtraLibStrings.buffer,
     listener: js.Function2[/* event */ java.lang.String, /* filename */ nodeLib.Buffer, scala.Unit]
   ): nodeLib.fsMod.FSWatcher = js.native
-  def write(fd: scala.Double, buffer: nodeLib.Buffer, offset: scala.Double, length: scala.Double): js.Promise[fsDashExtraLib.fsDashExtraMod.WriteResult] = js.native
+  def write(fd: scala.Double, buffer: nodeLib.Buffer, offset: scala.Double, length: scala.Double): js.Promise[WriteResult] = js.native
   def write(
     fd: scala.Double,
     buffer: nodeLib.Buffer,
@@ -2394,7 +2374,7 @@ object ^ extends js.Object {
     offset: scala.Double,
     length: scala.Double,
     position: scala.Double
-  ): js.Promise[fsDashExtraLib.fsDashExtraMod.WriteResult] = js.native
+  ): js.Promise[WriteResult] = js.native
   def write(
     fd: scala.Double,
     buffer: nodeLib.Buffer,
@@ -2421,8 +2401,8 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def write(fd: scala.Double, data: js.Any, offset: scala.Double): js.Promise[fsDashExtraLib.fsDashExtraMod.WriteResult] = js.native
-  def write(fd: scala.Double, data: js.Any, offset: scala.Double, encoding: java.lang.String): js.Promise[fsDashExtraLib.fsDashExtraMod.WriteResult] = js.native
+  def write(fd: scala.Double, data: js.Any, offset: scala.Double): js.Promise[WriteResult] = js.native
+  def write(fd: scala.Double, data: js.Any, offset: scala.Double, encoding: java.lang.String): js.Promise[WriteResult] = js.native
   /**
     * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
     * @param fd A file descriptor.
@@ -2784,11 +2764,11 @@ object ^ extends js.Object {
     data: js.Any,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def writeFile(file: java.lang.String, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
+  def writeFile(file: java.lang.String, data: js.Any, options: WriteFileOptions): js.Promise[scala.Unit] = js.native
   def writeFile(
     file: java.lang.String,
     data: js.Any,
-    options: fsDashExtraLib.fsDashExtraMod.WriteFileOptions,
+    options: WriteFileOptions,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def writeFile(file: java.lang.String, data: js.Any, options: java.lang.String): js.Promise[scala.Unit] = js.native
@@ -2804,11 +2784,11 @@ object ^ extends js.Object {
     data: js.Any,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def writeFile(file: nodeLib.Buffer, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
+  def writeFile(file: nodeLib.Buffer, data: js.Any, options: WriteFileOptions): js.Promise[scala.Unit] = js.native
   def writeFile(
     file: nodeLib.Buffer,
     data: js.Any,
-    options: fsDashExtraLib.fsDashExtraMod.WriteFileOptions,
+    options: WriteFileOptions,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def writeFile(file: nodeLib.Buffer, data: js.Any, options: java.lang.String): js.Promise[scala.Unit] = js.native
@@ -2819,11 +2799,11 @@ object ^ extends js.Object {
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def writeFile(file: scala.Double, data: js.Any): js.Promise[scala.Unit] = js.native
-  def writeFile(file: scala.Double, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
+  def writeFile(file: scala.Double, data: js.Any, options: WriteFileOptions): js.Promise[scala.Unit] = js.native
   def writeFile(
     file: scala.Double,
     data: js.Any,
-    options: fsDashExtraLib.fsDashExtraMod.WriteFileOptions,
+    options: WriteFileOptions,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def writeFile(file: scala.Double, data: js.Any, options: java.lang.String): js.Promise[scala.Unit] = js.native
@@ -2894,32 +2874,32 @@ object ^ extends js.Object {
   def writeJSON(
     file: java.lang.String,
     `object`: js.Any,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def writeJSON(file: java.lang.String, `object`: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): js.Promise[scala.Unit] = js.native
+  def writeJSON(file: java.lang.String, `object`: js.Any, options: WriteOptions): js.Promise[scala.Unit] = js.native
   def writeJSON(
     file: java.lang.String,
     `object`: js.Any,
-    options: fsDashExtraLib.fsDashExtraMod.WriteOptions,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    options: WriteOptions,
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def writeJSONSync(file: java.lang.String, `object`: js.Any): scala.Unit = js.native
-  def writeJSONSync(file: java.lang.String, `object`: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): scala.Unit = js.native
+  def writeJSONSync(file: java.lang.String, `object`: js.Any, options: WriteOptions): scala.Unit = js.native
   def writeJson(file: java.lang.String, `object`: js.Any): js.Promise[scala.Unit] = js.native
   def writeJson(
     file: java.lang.String,
     `object`: js.Any,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def writeJson(file: java.lang.String, `object`: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): js.Promise[scala.Unit] = js.native
+  def writeJson(file: java.lang.String, `object`: js.Any, options: WriteOptions): js.Promise[scala.Unit] = js.native
   def writeJson(
     file: java.lang.String,
     `object`: js.Any,
-    options: fsDashExtraLib.fsDashExtraMod.WriteOptions,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    options: WriteOptions,
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def writeJsonSync(file: java.lang.String, `object`: js.Any): scala.Unit = js.native
-  def writeJsonSync(file: java.lang.String, `object`: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): scala.Unit = js.native
+  def writeJsonSync(file: java.lang.String, `object`: js.Any, options: WriteOptions): scala.Unit = js.native
   /**
     * Synchronously writes `buffer` to the file referenced by the supplied file descriptor, returning the number of bytes written.
     * @param fd A file descriptor.

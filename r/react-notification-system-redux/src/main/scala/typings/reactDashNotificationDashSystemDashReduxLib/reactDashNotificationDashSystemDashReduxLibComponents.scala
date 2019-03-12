@@ -1,0 +1,18 @@
+package typings
+package reactDashNotificationDashSystemDashReduxLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashNotificationDashSystemDashReduxLibComponents {
+  @scala.inline
+  def ReactDashNotificationDashSystemDashRedux: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashNotificationDashSystemDashReduxLib.reactDashNotificationDashSystemDashReduxMod.NotificationsNs.NotificationsProps
+  ] = js.constructorOf[reactDashNotificationDashSystemDashReduxLib.reactDashNotificationDashSystemDashReduxMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashNotificationDashSystemDashReduxLib.reactDashNotificationDashSystemDashReduxMod.NotificationsNs.NotificationsProps]]
+  @scala.inline
+  def NotificationsProps: reactDashNotificationDashSystemDashReduxLib.reactDashNotificationDashSystemDashReduxMod.NotificationsNs.NotificationsProps.type = reactDashNotificationDashSystemDashReduxLib.reactDashNotificationDashSystemDashReduxMod.NotificationsNs.NotificationsProps
+  type NotificationsProps = reactDashNotificationDashSystemDashReduxLib.reactDashNotificationDashSystemDashReduxMod.NotificationsNs.NotificationsProps
+}
+

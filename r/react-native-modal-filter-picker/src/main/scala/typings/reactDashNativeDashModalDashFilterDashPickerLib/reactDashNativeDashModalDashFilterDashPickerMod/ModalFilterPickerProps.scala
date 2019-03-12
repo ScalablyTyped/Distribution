@@ -66,8 +66,8 @@ trait ModalFilterPickerProps[T /* <: ModalFilterPickerOption */] extends js.Obje
 object ModalFilterPickerProps {
   @scala.inline
   def apply[T /* <: ModalFilterPickerOption */](
-    onCancel: js.Function0[scala.Unit],
-    onSelect: js.Function1[java.lang.String, scala.Unit],
+    onCancel: () => scala.Unit,
+    onSelect: java.lang.String => scala.Unit,
     options: js.Array[T],
     androidUnderlineColor: java.lang.String = null,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
@@ -86,20 +86,16 @@ object ModalFilterPickerProps {
     overlayStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.KeyboardAvoidingView] = null,
     placeholderText: java.lang.String = null,
     placeholderTextColor: java.lang.String = null,
-    renderCancelButton: js.Function0[reactLib.reactMod.Global.JSXNs.Element] = null,
-    renderList: js.Function0[reactLib.reactMod.Global.JSXNs.Element] = null,
-    renderOption: js.Function2[
-      /* option */ T, 
-      /* isSelected */ scala.Boolean, 
-      reactLib.reactMod.Global.JSXNs.Element
-    ] = null,
+    renderCancelButton: () => reactLib.reactMod.Global.JSXNs.Element = null,
+    renderList: () => reactLib.reactMod.Global.JSXNs.Element = null,
+    renderOption: (/* option */ T, /* isSelected */ scala.Boolean) => reactLib.reactMod.Global.JSXNs.Element = null,
     selectedOption: java.lang.String = null,
     showFilter: js.UndefOr[scala.Boolean] = js.undefined,
     title: java.lang.String = null,
     titleTextStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): ModalFilterPickerProps[T] = {
-    val __obj = js.Dynamic.literal(onCancel = onCancel, onSelect = onSelect, options = options)
+    val __obj = js.Dynamic.literal(onCancel = js.Any.fromFunction0(onCancel), onSelect = js.Any.fromFunction1(onSelect), options = options)
     if (androidUnderlineColor != null) __obj.updateDynamic("androidUnderlineColor")(androidUnderlineColor)
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (cancelButtonStyle != null) __obj.updateDynamic("cancelButtonStyle")(cancelButtonStyle.asInstanceOf[js.Any])
@@ -117,9 +113,9 @@ object ModalFilterPickerProps {
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
     if (placeholderText != null) __obj.updateDynamic("placeholderText")(placeholderText)
     if (placeholderTextColor != null) __obj.updateDynamic("placeholderTextColor")(placeholderTextColor)
-    if (renderCancelButton != null) __obj.updateDynamic("renderCancelButton")(renderCancelButton)
-    if (renderList != null) __obj.updateDynamic("renderList")(renderList)
-    if (renderOption != null) __obj.updateDynamic("renderOption")(renderOption)
+    if (renderCancelButton != null) __obj.updateDynamic("renderCancelButton")(js.Any.fromFunction0(renderCancelButton))
+    if (renderList != null) __obj.updateDynamic("renderList")(js.Any.fromFunction0(renderList))
+    if (renderOption != null) __obj.updateDynamic("renderOption")(js.Any.fromFunction2(renderOption))
     if (selectedOption != null) __obj.updateDynamic("selectedOption")(selectedOption)
     if (!js.isUndefined(showFilter)) __obj.updateDynamic("showFilter")(showFilter)
     if (title != null) __obj.updateDynamic("title")(title)

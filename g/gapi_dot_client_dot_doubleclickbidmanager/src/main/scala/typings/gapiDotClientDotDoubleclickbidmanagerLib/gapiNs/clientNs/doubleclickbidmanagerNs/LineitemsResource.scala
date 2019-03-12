@@ -15,16 +15,10 @@ trait LineitemsResource extends js.Object {
 object LineitemsResource {
   @scala.inline
   def apply(
-    downloadlineitems: js.Function1[
-      gapiDotClientDotDoubleclickbidmanagerLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DownloadLineItemsResponse]
-    ],
-    uploadlineitems: js.Function1[
-      gapiDotClientDotDoubleclickbidmanagerLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UploadLineItemsResponse]
-    ]
+    downloadlineitems: gapiDotClientDotDoubleclickbidmanagerLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[DownloadLineItemsResponse],
+    uploadlineitems: gapiDotClientDotDoubleclickbidmanagerLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[UploadLineItemsResponse]
   ): LineitemsResource = {
-    val __obj = js.Dynamic.literal(downloadlineitems = downloadlineitems, uploadlineitems = uploadlineitems)
+    val __obj = js.Dynamic.literal(downloadlineitems = js.Any.fromFunction1(downloadlineitems), uploadlineitems = js.Any.fromFunction1(uploadlineitems))
   
     __obj.asInstanceOf[LineitemsResource]
   }

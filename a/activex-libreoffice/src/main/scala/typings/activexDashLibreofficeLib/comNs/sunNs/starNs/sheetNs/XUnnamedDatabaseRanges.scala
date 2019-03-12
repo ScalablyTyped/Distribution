@@ -19,14 +19,14 @@ trait XUnnamedDatabaseRanges
 object XUnnamedDatabaseRanges {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getByTable: js.Function1[scala.Double, js.Any],
-    hasByTable: js.Function1[scala.Double, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setByTable: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit]
+    acquire: () => scala.Unit,
+    getByTable: scala.Double => js.Any,
+    hasByTable: scala.Double => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setByTable: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress => scala.Unit
   ): XUnnamedDatabaseRanges = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getByTable = getByTable, hasByTable = hasByTable, queryInterface = queryInterface, release = release, setByTable = setByTable)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getByTable = js.Any.fromFunction1(getByTable), hasByTable = js.Any.fromFunction1(hasByTable), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setByTable = js.Any.fromFunction1(setByTable))
   
     __obj.asInstanceOf[XUnnamedDatabaseRanges]
   }

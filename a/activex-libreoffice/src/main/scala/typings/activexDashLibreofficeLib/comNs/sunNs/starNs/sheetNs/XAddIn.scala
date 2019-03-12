@@ -100,20 +100,20 @@ object XAddIn {
   @scala.inline
   def apply(
     Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
-    acquire: js.Function0[scala.Unit],
-    getArgumentDescription: js.Function2[java.lang.String, scala.Double, java.lang.String],
-    getDisplayArgumentName: js.Function2[java.lang.String, scala.Double, java.lang.String],
-    getDisplayCategoryName: js.Function1[java.lang.String, java.lang.String],
-    getDisplayFunctionName: js.Function1[java.lang.String, java.lang.String],
-    getFunctionDescription: js.Function1[java.lang.String, java.lang.String],
-    getLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
-    getProgrammaticCategoryName: js.Function1[java.lang.String, java.lang.String],
-    getProgrammaticFuntionName: js.Function1[java.lang.String, java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit]
+    acquire: () => scala.Unit,
+    getArgumentDescription: (java.lang.String, scala.Double) => java.lang.String,
+    getDisplayArgumentName: (java.lang.String, scala.Double) => java.lang.String,
+    getDisplayCategoryName: java.lang.String => java.lang.String,
+    getDisplayFunctionName: java.lang.String => java.lang.String,
+    getFunctionDescription: java.lang.String => java.lang.String,
+    getLocale: () => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    getProgrammaticCategoryName: java.lang.String => java.lang.String,
+    getProgrammaticFuntionName: java.lang.String => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => scala.Unit
   ): XAddIn = {
-    val __obj = js.Dynamic.literal(Locale = Locale, acquire = acquire, getArgumentDescription = getArgumentDescription, getDisplayArgumentName = getDisplayArgumentName, getDisplayCategoryName = getDisplayCategoryName, getDisplayFunctionName = getDisplayFunctionName, getFunctionDescription = getFunctionDescription, getLocale = getLocale, getProgrammaticCategoryName = getProgrammaticCategoryName, getProgrammaticFuntionName = getProgrammaticFuntionName, queryInterface = queryInterface, release = release, setLocale = setLocale)
+    val __obj = js.Dynamic.literal(Locale = Locale, acquire = js.Any.fromFunction0(acquire), getArgumentDescription = js.Any.fromFunction2(getArgumentDescription), getDisplayArgumentName = js.Any.fromFunction2(getDisplayArgumentName), getDisplayCategoryName = js.Any.fromFunction1(getDisplayCategoryName), getDisplayFunctionName = js.Any.fromFunction1(getDisplayFunctionName), getFunctionDescription = js.Any.fromFunction1(getFunctionDescription), getLocale = js.Any.fromFunction0(getLocale), getProgrammaticCategoryName = js.Any.fromFunction1(getProgrammaticCategoryName), getProgrammaticFuntionName = js.Any.fromFunction1(getProgrammaticFuntionName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setLocale = js.Any.fromFunction1(setLocale))
   
     __obj.asInstanceOf[XAddIn]
   }

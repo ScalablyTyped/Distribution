@@ -39,9 +39,9 @@ class FaxIncomingJob protected () extends js.Object {
   /** Transmitting Station ID */
   val TSID: java.lang.String = js.native
   /** Transmission end time */
-  val TransmissionEnd: activexDashInteropLib.VarDate = js.native
+  val TransmissionEnd: stdLib.VarDate = js.native
   /** Transmission start time */
-  val TransmissionStart: activexDashInteropLib.VarDate = js.native
+  val TransmissionStart: stdLib.VarDate = js.native
   /** Cancel the incoming job */
   def Cancel(): scala.Unit = js.native
   /** Copy TIFF image to the local file */

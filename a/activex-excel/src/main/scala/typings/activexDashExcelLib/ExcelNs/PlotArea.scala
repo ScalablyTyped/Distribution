@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.PlotArea")
 @js.native
 class PlotArea protected () extends js.Object {
-  val Application: Application = js.native
-  val Border: Border = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
+  val Border: activexDashExcelLib.ExcelNs.Border = js.native
   val Creator: XlCreator = js.native
   var `Excel.PlotArea_typekey`: PlotArea = js.native
   val Fill: ChartFillFormat = js.native
@@ -19,7 +19,7 @@ class PlotArea protected () extends js.Object {
   var InsideLeft: scala.Double = js.native
   var InsideTop: scala.Double = js.native
   var InsideWidth: scala.Double = js.native
-  val Interior: Interior = js.native
+  val Interior: activexDashExcelLib.ExcelNs.Interior = js.native
   var Left: scala.Double = js.native
   val Name: java.lang.String = js.native
   val Parent: js.Any = js.native

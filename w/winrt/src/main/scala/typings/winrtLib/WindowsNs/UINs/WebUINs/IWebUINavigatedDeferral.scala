@@ -11,8 +11,8 @@ trait IWebUINavigatedDeferral extends js.Object {
 
 object IWebUINavigatedDeferral {
   @scala.inline
-  def apply(complete: js.Function0[scala.Unit]): IWebUINavigatedDeferral = {
-    val __obj = js.Dynamic.literal(complete = complete)
+  def apply(complete: () => scala.Unit): IWebUINavigatedDeferral = {
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
   
     __obj.asInstanceOf[IWebUINavigatedDeferral]
   }

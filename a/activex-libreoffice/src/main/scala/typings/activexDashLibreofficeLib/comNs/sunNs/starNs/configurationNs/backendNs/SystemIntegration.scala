@@ -13,16 +13,16 @@ trait SystemIntegration
 object SystemIntegration {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getOwnUpdateHandler: js.Function1[java.lang.String, XUpdateHandler],
-    getUpdateHandler: js.Function2[java.lang.String, java.lang.String, XUpdateHandler],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    listLayers: js.Function2[java.lang.String, java.lang.String, activexDashInteropLib.SafeArray[XLayer]],
-    listOwnLayers: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[XLayer]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getOwnUpdateHandler: java.lang.String => XUpdateHandler,
+    getUpdateHandler: (java.lang.String, java.lang.String) => XUpdateHandler,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    listLayers: (java.lang.String, java.lang.String) => stdLib.SafeArray[XLayer],
+    listOwnLayers: java.lang.String => stdLib.SafeArray[XLayer],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): SystemIntegration = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getOwnUpdateHandler = getOwnUpdateHandler, getUpdateHandler = getUpdateHandler, initialize = initialize, listLayers = listLayers, listOwnLayers = listOwnLayers, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getOwnUpdateHandler = js.Any.fromFunction1(getOwnUpdateHandler), getUpdateHandler = js.Any.fromFunction2(getUpdateHandler), initialize = js.Any.fromFunction1(initialize), listLayers = js.Any.fromFunction2(listLayers), listOwnLayers = js.Any.fromFunction1(listOwnLayers), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[SystemIntegration]
   }

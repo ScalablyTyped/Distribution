@@ -61,12 +61,7 @@ object AutoCompleteProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     errorStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     errorText: reactLib.reactMod.ReactNs.ReactNode = null,
-    filter: js.Function3[
-      /* searchText */ java.lang.String, 
-      /* key */ java.lang.String, 
-      /* item */ DataItem, 
-      scala.Boolean
-    ] = null,
+    filter: (/* searchText */ java.lang.String, /* key */ java.lang.String, /* item */ DataItem) => scala.Boolean = null,
     floatingLabelFixed: js.UndefOr[scala.Boolean] = js.undefined,
     floatingLabelFocusStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     floatingLabelShrinkStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -89,17 +84,13 @@ object AutoCompleteProps {
     multiLine: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
     onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onChange: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.FormEvent[js.Object], 
-      /* newValue */ java.lang.String, 
-      scala.Unit
-    ] = null,
+    onChange: (/* e */ reactLib.reactMod.ReactNs.FormEvent[js.Object], /* newValue */ java.lang.String) => scala.Unit = null,
     onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
     onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
     onKeyPress: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
     onKeyUp: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
-    onNewRequest: js.Function2[/* chosenRequest */ DataItem, /* index */ scala.Double, scala.Unit] = null,
-    onUpdateInput: js.Function2[/* searchText */ java.lang.String, /* dataSource */ js.Array[DataItem], scala.Unit] = null,
+    onNewRequest: (/* chosenRequest */ DataItem, /* index */ scala.Double) => scala.Unit = null,
+    onUpdateInput: (/* searchText */ java.lang.String, /* dataSource */ js.Array[DataItem]) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     openOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
     placeholder: java.lang.String = null,
@@ -134,7 +125,7 @@ object AutoCompleteProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (errorStyle != null) __obj.updateDynamic("errorStyle")(errorStyle)
     if (errorText != null) __obj.updateDynamic("errorText")(errorText.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction3(filter))
     if (!js.isUndefined(floatingLabelFixed)) __obj.updateDynamic("floatingLabelFixed")(floatingLabelFixed)
     if (floatingLabelFocusStyle != null) __obj.updateDynamic("floatingLabelFocusStyle")(floatingLabelFocusStyle)
     if (floatingLabelShrinkStyle != null) __obj.updateDynamic("floatingLabelShrinkStyle")(floatingLabelShrinkStyle)
@@ -157,13 +148,13 @@ object AutoCompleteProps {
     if (!js.isUndefined(multiLine)) __obj.updateDynamic("multiLine")(multiLine)
     if (name != null) __obj.updateDynamic("name")(name)
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
     if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
     if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
-    if (onNewRequest != null) __obj.updateDynamic("onNewRequest")(onNewRequest)
-    if (onUpdateInput != null) __obj.updateDynamic("onUpdateInput")(onUpdateInput)
+    if (onNewRequest != null) __obj.updateDynamic("onNewRequest")(js.Any.fromFunction2(onNewRequest))
+    if (onUpdateInput != null) __obj.updateDynamic("onUpdateInput")(js.Any.fromFunction2(onUpdateInput))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (!js.isUndefined(openOnFocus)) __obj.updateDynamic("openOnFocus")(openOnFocus)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)

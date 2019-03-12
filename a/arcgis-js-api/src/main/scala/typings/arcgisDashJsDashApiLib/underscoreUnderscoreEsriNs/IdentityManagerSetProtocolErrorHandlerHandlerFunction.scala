@@ -25,12 +25,12 @@ object IdentityManagerSetProtocolErrorHandlerHandlerFunction {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     resourceUrl: java.lang.String,
     serverInfo: ServerInfo
   ): IdentityManagerSetProtocolErrorHandlerHandlerFunction = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, resourceUrl = resourceUrl, serverInfo = serverInfo)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), resourceUrl = resourceUrl, serverInfo = serverInfo)
   
     __obj.asInstanceOf[IdentityManagerSetProtocolErrorHandlerHandlerFunction]
   }

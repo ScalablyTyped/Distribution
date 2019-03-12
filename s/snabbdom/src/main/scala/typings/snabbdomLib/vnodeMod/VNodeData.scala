@@ -31,7 +31,7 @@ object VNodeData {
     attrs: snabbdomLib.modulesAttributesMod.Attrs = null,
     `class`: snabbdomLib.modulesClassMod.Classes = null,
     dataset: snabbdomLib.modulesDatasetMod.Dataset = null,
-    fn: js.Function0[VNode] = null,
+    fn: () => VNode = null,
     hero: snabbdomLib.modulesHeroMod.Hero = null,
     hook: snabbdomLib.hooksMod.Hooks = null,
     key: Key = null,
@@ -47,7 +47,7 @@ object VNodeData {
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
     if (`class` != null) __obj.updateDynamic("class")(`class`)
     if (dataset != null) __obj.updateDynamic("dataset")(dataset)
-    if (fn != null) __obj.updateDynamic("fn")(fn)
+    if (fn != null) __obj.updateDynamic("fn")(js.Any.fromFunction0(fn))
     if (hero != null) __obj.updateDynamic("hero")(hero)
     if (hook != null) __obj.updateDynamic("hook")(hook)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

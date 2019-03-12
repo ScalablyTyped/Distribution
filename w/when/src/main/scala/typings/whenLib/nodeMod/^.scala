@@ -204,7 +204,7 @@ object ^ extends js.Object {
     arg4: A4 | whenLib.WhenNs.Promise[A4],
     arg5: A5 | whenLib.WhenNs.Promise[A5]
   ): whenLib.WhenNs.Promise[T] = js.native
-  def createCallback[TArg](resolver: whenLib.nodeMod.Resolver[TArg]): js.Function2[/* err */ js.Any, /* arg */ TArg, scala.Unit] = js.native
+  def createCallback[TArg](resolver: Resolver[TArg]): js.Function2[/* err */ js.Any, /* arg */ TArg, scala.Unit] = js.native
   def lift[T](fn: whenLib.WhenNs.underscoreNs.NodeFn0[T]): whenLib.WhenNs.underscoreNs.LiftedFn0[T] = js.native
   def lift[A1, T](fn: whenLib.WhenNs.underscoreNs.NodeFn1[A1, T]): whenLib.WhenNs.underscoreNs.LiftedFn1[A1, T] = js.native
   def lift[A1, A2, T](fn: whenLib.WhenNs.underscoreNs.NodeFn2[A1, A2, T]): whenLib.WhenNs.underscoreNs.LiftedFn2[A1, A2, T] = js.native

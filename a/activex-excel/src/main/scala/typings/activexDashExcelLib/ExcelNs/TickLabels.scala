@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class TickLabels protected () extends js.Object {
   var Alignment: scala.Double = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var AutoScaleFont: js.Any = js.native
   val Creator: XlCreator = js.native
   val Depth: scala.Double = js.native
   var `Excel.TickLabels_typekey`: TickLabels = js.native
-  val Font: Font = js.native
+  val Font: activexDashExcelLib.ExcelNs.Font = js.native
   val Format: ChartFormat = js.native
   var MultiLevel: scala.Boolean = js.native
   val Name: java.lang.String = js.native

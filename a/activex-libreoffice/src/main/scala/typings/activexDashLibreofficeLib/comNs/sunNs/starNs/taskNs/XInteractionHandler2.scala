@@ -24,13 +24,13 @@ trait XInteractionHandler2 extends XInteractionHandler {
 object XInteractionHandler2 {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    handle: js.Function1[XInteractionRequest, scala.Unit],
-    handleInteractionRequest: js.Function1[XInteractionRequest, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    handle: XInteractionRequest => scala.Unit,
+    handleInteractionRequest: XInteractionRequest => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XInteractionHandler2 = {
-    val __obj = js.Dynamic.literal(acquire = acquire, handle = handle, handleInteractionRequest = handleInteractionRequest, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), handle = js.Any.fromFunction1(handle), handleInteractionRequest = js.Any.fromFunction1(handleInteractionRequest), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XInteractionHandler2]
   }

@@ -73,8 +73,8 @@ trait XUIConfigurationManager
     * @returns returns all user interface elements within the user interface configuration manager that meet the given ElementType specification. The following
     * @see UIElementType
     */
-  def getUIElementsInfo(ElementType: scala.Double): activexDashInteropLib.SafeArray[
-    activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  def getUIElementsInfo(ElementType: scala.Double): stdLib.SafeArray[
+    stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   ]
   /**
     * determines if the settings of a user interface element is part the user interface configuration manager.
@@ -121,39 +121,24 @@ object XUIConfigurationManager {
     EventsManager: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     ImageManager: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     ShortCutManager: XAcceleratorConfiguration,
-    acquire: js.Function0[scala.Unit],
-    createSettings: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer],
-    getEventsManager: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    getImageManager: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    getSettings: js.Function2[
-      java.lang.String, 
-      scala.Boolean, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
+    acquire: () => scala.Unit,
+    createSettings: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer,
+    getEventsManager: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getImageManager: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getSettings: (java.lang.String, scala.Boolean) => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    getShortCutManager: () => XAcceleratorConfiguration,
+    getUIElementsInfo: scala.Double => stdLib.SafeArray[
+      stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
     ],
-    getShortCutManager: js.Function0[XAcceleratorConfiguration],
-    getUIElementsInfo: js.Function1[
-      scala.Double, 
-      activexDashInteropLib.SafeArray[
-        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-      ]
-    ],
-    hasSettings: js.Function1[java.lang.String, scala.Boolean],
-    insertSettings: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeSettings: js.Function1[java.lang.String, scala.Unit],
-    replaceSettings: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, 
-      scala.Unit
-    ],
-    reset: js.Function0[scala.Unit]
+    hasSettings: java.lang.String => scala.Boolean,
+    insertSettings: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeSettings: java.lang.String => scala.Unit,
+    replaceSettings: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess) => scala.Unit,
+    reset: () => scala.Unit
   ): XUIConfigurationManager = {
-    val __obj = js.Dynamic.literal(EventsManager = EventsManager, ImageManager = ImageManager, ShortCutManager = ShortCutManager, acquire = acquire, createSettings = createSettings, getEventsManager = getEventsManager, getImageManager = getImageManager, getSettings = getSettings, getShortCutManager = getShortCutManager, getUIElementsInfo = getUIElementsInfo, hasSettings = hasSettings, insertSettings = insertSettings, queryInterface = queryInterface, release = release, removeSettings = removeSettings, replaceSettings = replaceSettings, reset = reset)
+    val __obj = js.Dynamic.literal(EventsManager = EventsManager, ImageManager = ImageManager, ShortCutManager = ShortCutManager, acquire = js.Any.fromFunction0(acquire), createSettings = js.Any.fromFunction0(createSettings), getEventsManager = js.Any.fromFunction0(getEventsManager), getImageManager = js.Any.fromFunction0(getImageManager), getSettings = js.Any.fromFunction2(getSettings), getShortCutManager = js.Any.fromFunction0(getShortCutManager), getUIElementsInfo = js.Any.fromFunction1(getUIElementsInfo), hasSettings = js.Any.fromFunction1(hasSettings), insertSettings = js.Any.fromFunction2(insertSettings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeSettings = js.Any.fromFunction1(removeSettings), replaceSettings = js.Any.fromFunction2(replaceSettings), reset = js.Any.fromFunction0(reset))
   
     __obj.asInstanceOf[XUIConfigurationManager]
   }

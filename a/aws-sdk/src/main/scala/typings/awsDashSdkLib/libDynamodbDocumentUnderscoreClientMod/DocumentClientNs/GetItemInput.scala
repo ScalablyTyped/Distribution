@@ -21,7 +21,7 @@ trait GetItemInput extends js.Object {
   /**
     * A map of attribute names to AttributeValue objects, representing the primary key of the item to retrieve. For the primary key, you must provide all of the attributes. For example, with a simple primary key, you only need to provide a value for the partition key. For a composite primary key, you must provide values for both the partition key and the sort key.
     */
-  var Key: Key
+  var Key: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.Key
   /**
     * A string that identifies one or more attributes to retrieve from the table. These attributes can include scalars, sets, or elements of a JSON document. The attributes in the expression must be separated by commas. If no attribute names are specified, then all attributes will be returned. If any of the requested attributes are not found, they will not appear in the result. For more information, see Accessing Item Attributes in the Amazon DynamoDB Developer Guide.
     */
@@ -30,7 +30,7 @@ trait GetItemInput extends js.Object {
   /**
     * The name of the table containing the requested item.
     */
-  var TableName: TableName
+  var TableName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TableName
 }
 
 object GetItemInput {

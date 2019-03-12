@@ -24,12 +24,9 @@ object FutureBuilder5 {
     od: js.Any,
     oe: js.Any,
     of: js.Any,
-    run: js.Function1[
-      js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, js.Any], 
-      Future[js.Any]
-    ]
+    run: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, js.Any] => Future[js.Any]
   ): FutureBuilder5[A, B, C, D, E, F] = {
-    val __obj = js.Dynamic.literal(oa = oa, ob = ob, oc = oc, od = od, oe = oe, of = of, run = run)
+    val __obj = js.Dynamic.literal(oa = oa, ob = ob, oc = oc, od = od, oe = oe, of = of, run = js.Any.fromFunction1(run))
   
     __obj.asInstanceOf[FutureBuilder5[A, B, C, D, E, F]]
   }

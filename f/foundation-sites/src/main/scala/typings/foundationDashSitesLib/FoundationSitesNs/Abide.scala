@@ -25,21 +25,21 @@ trait Abide extends js.Object {
 object Abide {
   @scala.inline
   def apply(
-    addErrorClasses: js.Function1[foundationDashSitesLib.JQuery, scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    findFormError: js.Function1[foundationDashSitesLib.JQuery, foundationDashSitesLib.JQuery],
-    findLabel: js.Function1[foundationDashSitesLib.JQuery, scala.Boolean],
-    matchValidation: js.Function3[foundationDashSitesLib.JQuery, java.lang.String, scala.Boolean, scala.Boolean],
-    removeErrorClasses: js.Function1[foundationDashSitesLib.JQuery, scala.Unit],
-    removeRadioErrorClasses: js.Function1[java.lang.String, scala.Unit],
-    requiredChecked: js.Function1[foundationDashSitesLib.JQuery, scala.Boolean],
-    resetForm: js.Function0[scala.Unit],
-    validateForm: js.Function0[scala.Boolean],
-    validateInput: js.Function1[foundationDashSitesLib.JQuery, scala.Boolean],
-    validateRadio: js.Function1[java.lang.String, scala.Boolean],
-    validateText: js.Function2[foundationDashSitesLib.JQuery, java.lang.String, scala.Boolean]
+    addErrorClasses: foundationDashSitesLib.JQuery => scala.Unit,
+    destroy: () => scala.Unit,
+    findFormError: foundationDashSitesLib.JQuery => foundationDashSitesLib.JQuery,
+    findLabel: foundationDashSitesLib.JQuery => scala.Boolean,
+    matchValidation: (foundationDashSitesLib.JQuery, java.lang.String, scala.Boolean) => scala.Boolean,
+    removeErrorClasses: foundationDashSitesLib.JQuery => scala.Unit,
+    removeRadioErrorClasses: java.lang.String => scala.Unit,
+    requiredChecked: foundationDashSitesLib.JQuery => scala.Boolean,
+    resetForm: () => scala.Unit,
+    validateForm: () => scala.Boolean,
+    validateInput: foundationDashSitesLib.JQuery => scala.Boolean,
+    validateRadio: java.lang.String => scala.Boolean,
+    validateText: (foundationDashSitesLib.JQuery, java.lang.String) => scala.Boolean
   ): Abide = {
-    val __obj = js.Dynamic.literal(addErrorClasses = addErrorClasses, destroy = destroy, findFormError = findFormError, findLabel = findLabel, matchValidation = matchValidation, removeErrorClasses = removeErrorClasses, removeRadioErrorClasses = removeRadioErrorClasses, requiredChecked = requiredChecked, resetForm = resetForm, validateForm = validateForm, validateInput = validateInput, validateRadio = validateRadio, validateText = validateText)
+    val __obj = js.Dynamic.literal(addErrorClasses = js.Any.fromFunction1(addErrorClasses), destroy = js.Any.fromFunction0(destroy), findFormError = js.Any.fromFunction1(findFormError), findLabel = js.Any.fromFunction1(findLabel), matchValidation = js.Any.fromFunction3(matchValidation), removeErrorClasses = js.Any.fromFunction1(removeErrorClasses), removeRadioErrorClasses = js.Any.fromFunction1(removeRadioErrorClasses), requiredChecked = js.Any.fromFunction1(requiredChecked), resetForm = js.Any.fromFunction0(resetForm), validateForm = js.Any.fromFunction0(validateForm), validateInput = js.Any.fromFunction1(validateInput), validateRadio = js.Any.fromFunction1(validateRadio), validateText = js.Any.fromFunction2(validateText))
   
     __obj.asInstanceOf[Abide]
   }

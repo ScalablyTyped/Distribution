@@ -11,8 +11,8 @@ trait KnockoutComputedFunctions[T] extends js.Object {
 
 object KnockoutComputedFunctions {
   @scala.inline
-  def apply[T](toObservableWithReplyLatest: js.Function0[knockoutDotRxLib.RxNs.Observable[T]]): KnockoutComputedFunctions[T] = {
-    val __obj = js.Dynamic.literal(toObservableWithReplyLatest = toObservableWithReplyLatest)
+  def apply[T](toObservableWithReplyLatest: () => knockoutDotRxLib.RxNs.Observable[T]): KnockoutComputedFunctions[T] = {
+    val __obj = js.Dynamic.literal(toObservableWithReplyLatest = js.Any.fromFunction0(toObservableWithReplyLatest))
   
     __obj.asInstanceOf[KnockoutComputedFunctions[T]]
   }

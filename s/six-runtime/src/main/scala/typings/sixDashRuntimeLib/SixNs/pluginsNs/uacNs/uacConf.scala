@@ -21,12 +21,12 @@ object uacConf {
     client_id: java.lang.String,
     client_secret: java.lang.String,
     enableMock: scala.Boolean,
-    failHook: js.Function3[stdLib.Error, js.Object, sixDashRuntimeLib.SixNs.next, js.Any],
-    getPath: js.Function1[js.Object, java.lang.String],
+    failHook: (stdLib.Error, js.Object, sixDashRuntimeLib.SixNs.next) => js.Any,
+    getPath: js.Object => java.lang.String,
     skipOffline: scala.Boolean,
     whiteList: java.lang.String | stdLib.RegExp | js.Array[java.lang.String] | sixDashRuntimeLib.SixNs.pluginsNs.whiteList
   ): uacConf = {
-    val __obj = js.Dynamic.literal(client_id = client_id, client_secret = client_secret, enableMock = enableMock, failHook = failHook, getPath = getPath, skipOffline = skipOffline, whiteList = whiteList.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(client_id = client_id, client_secret = client_secret, enableMock = enableMock, failHook = js.Any.fromFunction3(failHook), getPath = js.Any.fromFunction1(getPath), skipOffline = skipOffline, whiteList = whiteList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[uacConf]
   }

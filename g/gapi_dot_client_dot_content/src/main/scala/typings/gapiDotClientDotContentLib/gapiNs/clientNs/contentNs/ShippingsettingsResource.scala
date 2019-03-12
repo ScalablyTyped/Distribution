@@ -33,32 +33,14 @@ trait ShippingsettingsResource extends js.Object {
 object ShippingsettingsResource {
   @scala.inline
   def apply(
-    custombatch: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltDryRun, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ShippingsettingsCustomBatchResponse]
-    ],
-    get: js.Function1[
-      gapiDotClientDotContentLib.Anon_AccountIdAltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ShippingSettings]
-    ],
-    getsupportedcarriers: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFieldsKeyMerchantId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ShippingsettingsGetSupportedCarriersResponse]
-    ],
-    list: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ShippingsettingsListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotContentLib.Anon_AccountIdAltDryRun, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ShippingSettings]
-    ],
-    update: js.Function1[
-      gapiDotClientDotContentLib.Anon_AccountIdAltDryRun, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ShippingSettings]
-    ]
+    custombatch: gapiDotClientDotContentLib.Anon_AltDryRun => gapiDotClientLib.gapiNs.clientNs.Request[ShippingsettingsCustomBatchResponse],
+    get: gapiDotClientDotContentLib.Anon_AccountIdAltFields => gapiDotClientLib.gapiNs.clientNs.Request[ShippingSettings],
+    getsupportedcarriers: gapiDotClientDotContentLib.Anon_AltFieldsKeyMerchantId => gapiDotClientLib.gapiNs.clientNs.Request[ShippingsettingsGetSupportedCarriersResponse],
+    list: gapiDotClientDotContentLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[ShippingsettingsListResponse],
+    patch: gapiDotClientDotContentLib.Anon_AccountIdAltDryRun => gapiDotClientLib.gapiNs.clientNs.Request[ShippingSettings],
+    update: gapiDotClientDotContentLib.Anon_AccountIdAltDryRun => gapiDotClientLib.gapiNs.clientNs.Request[ShippingSettings]
   ): ShippingsettingsResource = {
-    val __obj = js.Dynamic.literal(custombatch = custombatch, get = get, getsupportedcarriers = getsupportedcarriers, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(custombatch = js.Any.fromFunction1(custombatch), get = js.Any.fromFunction1(get), getsupportedcarriers = js.Any.fromFunction1(getsupportedcarriers), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[ShippingsettingsResource]
   }

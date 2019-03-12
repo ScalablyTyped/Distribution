@@ -11,7 +11,7 @@ trait IChain extends js.Object {
   def expect(expectation: stdLib.RegExp): IChain = js.native
   def run(
     callback: js.Function3[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* output */ js.Array[java.lang.String], 
       /* exit */ java.lang.String | scala.Double, 
       scala.Unit

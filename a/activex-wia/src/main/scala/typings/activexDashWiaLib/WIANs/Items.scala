@@ -16,7 +16,7 @@ trait Items extends js.Object {
   /** Adds a new Item with the specified Name and Flags. The Flags value is created by using the OR operation with members of the WiaItemFlags enumeration. */
   def Add(Name: java.lang.String, Flags: scala.Double): scala.Unit = js.native
   /** Returns the specified item in the collection by position */
-  def Item(Index: scala.Double): Item = js.native
+  def Item(Index: scala.Double): activexDashWiaLib.WIANs.Item = js.native
   /** Removes the designated Item */
   def Remove(Index: scala.Double): scala.Unit = js.native
 }

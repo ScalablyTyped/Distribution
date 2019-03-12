@@ -42,7 +42,7 @@ object LicenseManagerNs extends js.Object {
     /**
       * Dimension to use to track the license inventory.
       */
-    var LicenseCountingType: LicenseCountingType
+    var LicenseCountingType: awsDashSdkLib.clientsLicensemanagerMod.LicenseManagerNs.LicenseCountingType
     /**
       * Array of configured License Manager rules.
       */

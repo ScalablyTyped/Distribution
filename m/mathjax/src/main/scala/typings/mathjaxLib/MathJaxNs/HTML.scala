@@ -31,15 +31,15 @@ trait HTML extends js.Object {
 object HTML {
   @scala.inline
   def apply(
-    Element: js.Function3[java.lang.String, js.Any, js.Any, js.Any],
-    TextNode: js.Function1[java.lang.String, js.Any],
-    addElement: js.Function4[js.Any, java.lang.String, js.Any, js.Any, js.Any],
-    addText: js.Function2[js.Any, java.lang.String, js.Any],
-    getScript: js.Function1[java.lang.String, java.lang.String],
-    setScript: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    Element: (java.lang.String, js.Any, js.Any) => js.Any,
+    TextNode: java.lang.String => js.Any,
+    addElement: (js.Any, java.lang.String, js.Any, js.Any) => js.Any,
+    addText: (js.Any, java.lang.String) => js.Any,
+    getScript: java.lang.String => java.lang.String,
+    setScript: (java.lang.String, java.lang.String) => scala.Unit,
     Cookie: Cookie = null
   ): HTML = {
-    val __obj = js.Dynamic.literal(Element = Element, TextNode = TextNode, addElement = addElement, addText = addText, getScript = getScript, setScript = setScript)
+    val __obj = js.Dynamic.literal(Element = js.Any.fromFunction3(Element), TextNode = js.Any.fromFunction1(TextNode), addElement = js.Any.fromFunction4(addElement), addText = js.Any.fromFunction2(addText), getScript = js.Any.fromFunction1(getScript), setScript = js.Any.fromFunction2(setScript))
     if (Cookie != null) __obj.updateDynamic("Cookie")(Cookie)
     __obj.asInstanceOf[HTML]
   }

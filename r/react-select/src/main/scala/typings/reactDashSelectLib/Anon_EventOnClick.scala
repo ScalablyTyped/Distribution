@@ -13,12 +13,8 @@ trait Anon_EventOnClick extends js.Object {
 
 object Anon_EventOnClick {
   @scala.inline
-  def apply(
-    onClick: js.Function1[js.Any, scala.Unit],
-    onMouseDown: js.Function1[js.Any, scala.Unit],
-    onTouchEnd: js.Function1[js.Any, scala.Unit]
-  ): Anon_EventOnClick = {
-    val __obj = js.Dynamic.literal(onClick = onClick, onMouseDown = onMouseDown, onTouchEnd = onTouchEnd)
+  def apply(onClick: js.Any => scala.Unit, onMouseDown: js.Any => scala.Unit, onTouchEnd: js.Any => scala.Unit): Anon_EventOnClick = {
+    val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), onMouseDown = js.Any.fromFunction1(onMouseDown), onTouchEnd = js.Any.fromFunction1(onTouchEnd))
   
     __obj.asInstanceOf[Anon_EventOnClick]
   }

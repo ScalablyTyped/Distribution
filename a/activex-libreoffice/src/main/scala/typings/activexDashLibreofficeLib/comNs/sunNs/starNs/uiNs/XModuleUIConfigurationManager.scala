@@ -34,16 +34,13 @@ trait XModuleUIConfigurationManager
 object XModuleUIConfigurationManager {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getDefaultSettings: js.Function1[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
-    ],
-    isDefaultSettings: js.Function1[java.lang.String, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDefaultSettings: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    isDefaultSettings: java.lang.String => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XModuleUIConfigurationManager = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getDefaultSettings = getDefaultSettings, isDefaultSettings = isDefaultSettings, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDefaultSettings = js.Any.fromFunction1(getDefaultSettings), isDefaultSettings = js.Any.fromFunction1(isDefaultSettings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XModuleUIConfigurationManager]
   }

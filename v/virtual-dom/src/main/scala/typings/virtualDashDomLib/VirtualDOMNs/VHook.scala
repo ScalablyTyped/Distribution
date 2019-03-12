@@ -13,10 +13,10 @@ trait VHook extends js.Object {
 object VHook {
   @scala.inline
   def apply(
-    hook: js.Function2[stdLib.Element, java.lang.String, scala.Unit],
-    unhook: js.Function2[stdLib.Element, java.lang.String, scala.Unit]
+    hook: (stdLib.Element, java.lang.String) => scala.Unit,
+    unhook: (stdLib.Element, java.lang.String) => scala.Unit
   ): VHook = {
-    val __obj = js.Dynamic.literal(hook = hook, unhook = unhook)
+    val __obj = js.Dynamic.literal(hook = js.Any.fromFunction2(hook), unhook = js.Any.fromFunction2(unhook))
   
     __obj.asInstanceOf[VHook]
   }

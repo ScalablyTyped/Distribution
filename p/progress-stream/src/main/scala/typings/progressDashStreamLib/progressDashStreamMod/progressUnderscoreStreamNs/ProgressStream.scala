@@ -37,7 +37,7 @@ trait ProgressStream
   @JSName("on")
   def on_error(
     event: progressDashStreamLib.progressDashStreamLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /* tslint:disable-next-line unified-signatures */
   @JSName("on")
@@ -92,7 +92,7 @@ trait ProgressStream
   @JSName("once")
   def once_error(
     event: progressDashStreamLib.progressDashStreamLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /* tslint:disable-next-line unified-signatures */
   @JSName("once")

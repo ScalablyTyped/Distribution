@@ -19,10 +19,10 @@ trait KeycloakPromise[TSuccess, TError] extends js.Object {
 object KeycloakPromise {
   @scala.inline
   def apply[TSuccess, TError](
-    error: js.Function1[KeycloakPromiseCallback[TError], KeycloakPromise[TSuccess, TError]],
-    success: js.Function1[KeycloakPromiseCallback[TSuccess], KeycloakPromise[TSuccess, TError]]
+    error: KeycloakPromiseCallback[TError] => KeycloakPromise[TSuccess, TError],
+    success: KeycloakPromiseCallback[TSuccess] => KeycloakPromise[TSuccess, TError]
   ): KeycloakPromise[TSuccess, TError] = {
-    val __obj = js.Dynamic.literal(error = error, success = success)
+    val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), success = js.Any.fromFunction1(success))
   
     __obj.asInstanceOf[KeycloakPromise[TSuccess, TError]]
   }

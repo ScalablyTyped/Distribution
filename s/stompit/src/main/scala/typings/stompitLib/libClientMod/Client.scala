@@ -19,7 +19,7 @@ trait Client
     message: stompitLib.libClientMod.ClientNs.Message,
     headers: js.Any,
     sendOptions: stompitLib.libClientMod.ClientNs.SendOptions,
-    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native
   def begin(): stompitLib.libClientTransactionMod.namespaced = js.native
   def begin(headers: js.Any): stompitLib.libClientTransactionMod.namespaced = js.native
@@ -27,10 +27,10 @@ trait Client
   def connect(headers: js.Any): scala.Unit = js.native
   def connect(
     headers: js.Any,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* client */ this.type, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* client */ this.type, scala.Unit]
   ): scala.Unit = js.native
   def disconnect(): scala.Unit = js.native
-  def disconnect(callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* client */ this.type, scala.Unit]): scala.Unit = js.native
+  def disconnect(callback: js.Function2[/* error */ stdLib.Error | scala.Null, /* client */ this.type, scala.Unit]): scala.Unit = js.native
   def getOptions(): stompitLib.libSocketMod.SocketNs.SocketOptions = js.native
   def getSubscription(id: scala.Double): stompitLib.libClientSubscriptionMod.namespaced = js.native
   def nack(message: stompitLib.libClientMod.ClientNs.Message): scala.Unit = js.native
@@ -44,7 +44,7 @@ trait Client
     message: stompitLib.libClientMod.ClientNs.Message,
     headers: js.Any,
     sendOptions: stompitLib.libClientMod.ClientNs.SendOptions,
-    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native
   def readEmptyBody(frame: stompitLib.libIncomingFrameStreamMod.namespaced): scala.Unit = js.native
   def readEmptyBody(
@@ -63,7 +63,7 @@ trait Client
     headers: js.Any,
     body: js.Any,
     options: stompitLib.libClientMod.ClientNs.SendOptions,
-    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native
   def setImplicitSubscription(id: scala.Double): stompitLib.libClientSubscriptionMod.namespaced = js.native
   def setImplicitSubscription(id: scala.Double, ack: stompitLib.libClientMod.ClientNs.Ack): stompitLib.libClientSubscriptionMod.namespaced = js.native

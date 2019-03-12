@@ -15,24 +15,12 @@ trait StructuredSource extends js.Object {
 object StructuredSource {
   @scala.inline
   def apply(
-    indexToPosition: js.Function1[
-      scala.Double, 
-      structuredDashSourceLib.structuredDashSourceMod.StructuredSourceNs.SourcePosition
-    ],
-    locationToRange: js.Function1[
-      structuredDashSourceLib.structuredDashSourceMod.StructuredSourceNs.SourceLocation, 
-      js.Tuple2[scala.Double, scala.Double]
-    ],
-    positionToIndex: js.Function1[
-      structuredDashSourceLib.structuredDashSourceMod.StructuredSourceNs.SourcePosition, 
-      scala.Double
-    ],
-    rangeToLocation: js.Function1[
-      js.Tuple2[scala.Double, scala.Double], 
-      structuredDashSourceLib.structuredDashSourceMod.StructuredSourceNs.SourceLocation
-    ]
+    indexToPosition: scala.Double => structuredDashSourceLib.structuredDashSourceMod.StructuredSourceNs.SourcePosition,
+    locationToRange: structuredDashSourceLib.structuredDashSourceMod.StructuredSourceNs.SourceLocation => js.Tuple2[scala.Double, scala.Double],
+    positionToIndex: structuredDashSourceLib.structuredDashSourceMod.StructuredSourceNs.SourcePosition => scala.Double,
+    rangeToLocation: js.Tuple2[scala.Double, scala.Double] => structuredDashSourceLib.structuredDashSourceMod.StructuredSourceNs.SourceLocation
   ): StructuredSource = {
-    val __obj = js.Dynamic.literal(indexToPosition = indexToPosition, locationToRange = locationToRange, positionToIndex = positionToIndex, rangeToLocation = rangeToLocation)
+    val __obj = js.Dynamic.literal(indexToPosition = js.Any.fromFunction1(indexToPosition), locationToRange = js.Any.fromFunction1(locationToRange), positionToIndex = js.Any.fromFunction1(positionToIndex), rangeToLocation = js.Any.fromFunction1(rangeToLocation))
   
     __obj.asInstanceOf[StructuredSource]
   }

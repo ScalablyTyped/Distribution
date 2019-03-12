@@ -33,7 +33,7 @@ trait PriorityQueueOptions[T] extends js.Object {
 object PriorityQueueOptions {
   @scala.inline
   def apply[T](
-    comparator: js.Function2[/* a */ T, /* b */ T, scala.Double] = null,
+    comparator: (/* a */ T, /* b */ T) => scala.Double = null,
     initialValues: js.Array[T] = null,
     strategy: org.scalablytyped.runtime.Instantiable1[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias js-priority-queue.js-priority-queue.PriorityQueue.PriorityQueueOptions<any> */ /* options */ js.UndefOr[
@@ -43,7 +43,7 @@ object PriorityQueueOptions {
     ] = null
   ): PriorityQueueOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (comparator != null) __obj.updateDynamic("comparator")(comparator)
+    if (comparator != null) __obj.updateDynamic("comparator")(js.Any.fromFunction2(comparator))
     if (initialValues != null) __obj.updateDynamic("initialValues")(initialValues)
     if (strategy != null) __obj.updateDynamic("strategy")(strategy)
     __obj.asInstanceOf[PriorityQueueOptions[T]]

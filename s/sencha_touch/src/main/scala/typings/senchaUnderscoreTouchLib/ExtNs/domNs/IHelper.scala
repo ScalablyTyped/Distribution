@@ -126,62 +126,28 @@ trait IHelper extends js.Object {
 object IHelper {
   @scala.inline
   def apply(
-    append: js.Function3[
-      /* el */ js.UndefOr[js.Any], 
-      /* o */ js.UndefOr[js.Any], 
-      /* returnElement */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    applyStyles: js.Function2[/* el */ js.UndefOr[js.Any], /* styles */ js.UndefOr[js.Any], scala.Unit] = null,
-    createTemplate: js.Function1[/* o */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.ITemplate] = null,
-    generateStyles: js.Function2[
-      /* styles */ js.UndefOr[js.Any], 
-      /* buffer */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
-      _
-    ] = null,
-    insertAfter: js.Function3[
-      /* el */ js.UndefOr[js.Any], 
-      /* o */ js.UndefOr[js.Any], 
-      /* returnElement */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    insertBefore: js.Function3[
-      /* el */ js.UndefOr[js.Any], 
-      /* o */ js.UndefOr[js.Any], 
-      /* returnElement */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    insertFirst: js.Function3[
-      /* el */ js.UndefOr[js.Any], 
-      /* o */ js.UndefOr[js.Any], 
-      /* returnElement */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    insertHtml: js.Function3[
-      /* where */ js.UndefOr[java.lang.String], 
-      /* el */ js.UndefOr[js.Any], 
-      /* html */ js.UndefOr[java.lang.String], 
-      stdLib.HTMLElement
-    ] = null,
-    markup: js.Function1[/* spec */ js.UndefOr[js.Any], java.lang.String] = null,
-    overwrite: js.Function3[
-      /* el */ js.UndefOr[js.Any], 
-      /* o */ js.UndefOr[js.Any], 
-      /* returnElement */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null
+    append: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[scala.Boolean]) => _ = null,
+    applyStyles: (/* el */ js.UndefOr[js.Any], /* styles */ js.UndefOr[js.Any]) => scala.Unit = null,
+    createTemplate: /* o */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.ITemplate = null,
+    generateStyles: (/* styles */ js.UndefOr[js.Any], /* buffer */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array]) => _ = null,
+    insertAfter: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[scala.Boolean]) => _ = null,
+    insertBefore: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[scala.Boolean]) => _ = null,
+    insertFirst: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[scala.Boolean]) => _ = null,
+    insertHtml: (/* where */ js.UndefOr[java.lang.String], /* el */ js.UndefOr[js.Any], /* html */ js.UndefOr[java.lang.String]) => stdLib.HTMLElement = null,
+    markup: /* spec */ js.UndefOr[js.Any] => java.lang.String = null,
+    overwrite: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[scala.Boolean]) => _ = null
   ): IHelper = {
     val __obj = js.Dynamic.literal()
-    if (append != null) __obj.updateDynamic("append")(append)
-    if (applyStyles != null) __obj.updateDynamic("applyStyles")(applyStyles)
-    if (createTemplate != null) __obj.updateDynamic("createTemplate")(createTemplate)
-    if (generateStyles != null) __obj.updateDynamic("generateStyles")(generateStyles)
-    if (insertAfter != null) __obj.updateDynamic("insertAfter")(insertAfter)
-    if (insertBefore != null) __obj.updateDynamic("insertBefore")(insertBefore)
-    if (insertFirst != null) __obj.updateDynamic("insertFirst")(insertFirst)
-    if (insertHtml != null) __obj.updateDynamic("insertHtml")(insertHtml)
-    if (markup != null) __obj.updateDynamic("markup")(markup)
-    if (overwrite != null) __obj.updateDynamic("overwrite")(overwrite)
+    if (append != null) __obj.updateDynamic("append")(js.Any.fromFunction3(append))
+    if (applyStyles != null) __obj.updateDynamic("applyStyles")(js.Any.fromFunction2(applyStyles))
+    if (createTemplate != null) __obj.updateDynamic("createTemplate")(js.Any.fromFunction1(createTemplate))
+    if (generateStyles != null) __obj.updateDynamic("generateStyles")(js.Any.fromFunction2(generateStyles))
+    if (insertAfter != null) __obj.updateDynamic("insertAfter")(js.Any.fromFunction3(insertAfter))
+    if (insertBefore != null) __obj.updateDynamic("insertBefore")(js.Any.fromFunction3(insertBefore))
+    if (insertFirst != null) __obj.updateDynamic("insertFirst")(js.Any.fromFunction3(insertFirst))
+    if (insertHtml != null) __obj.updateDynamic("insertHtml")(js.Any.fromFunction3(insertHtml))
+    if (markup != null) __obj.updateDynamic("markup")(js.Any.fromFunction1(markup))
+    if (overwrite != null) __obj.updateDynamic("overwrite")(js.Any.fromFunction3(overwrite))
     __obj.asInstanceOf[IHelper]
   }
 }

@@ -13,12 +13,8 @@ trait ISurveyImpl extends js.Object {
 
 object ISurveyImpl {
   @scala.inline
-  def apply(
-    geSurveyData: js.Function0[ISurveyData],
-    getSurvey: js.Function0[ISurvey],
-    getTextProcessor: js.Function0[ITextProcessor]
-  ): ISurveyImpl = {
-    val __obj = js.Dynamic.literal(geSurveyData = geSurveyData, getSurvey = getSurvey, getTextProcessor = getTextProcessor)
+  def apply(geSurveyData: () => ISurveyData, getSurvey: () => ISurvey, getTextProcessor: () => ITextProcessor): ISurveyImpl = {
+    val __obj = js.Dynamic.literal(geSurveyData = js.Any.fromFunction0(geSurveyData), getSurvey = js.Any.fromFunction0(getSurvey), getTextProcessor = js.Any.fromFunction0(getTextProcessor))
   
     __obj.asInstanceOf[ISurveyImpl]
   }

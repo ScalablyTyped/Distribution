@@ -38,14 +38,14 @@ trait Message extends js.Object {
 object Message {
   @scala.inline
   def apply(
-    Clear: js.Function2[scala.Double, scala.Double, scala.Unit],
-    File: js.Function1[java.lang.String, scala.Double],
-    Log: js.Function0[java.lang.String],
-    Remove: js.Function0[scala.Unit],
-    Set: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Double],
-    filterText: js.Function2[java.lang.String, scala.Double, java.lang.String]
+    Clear: (scala.Double, scala.Double) => scala.Unit,
+    File: java.lang.String => scala.Double,
+    Log: () => java.lang.String,
+    Remove: () => scala.Unit,
+    Set: (java.lang.String, scala.Double, scala.Double) => scala.Double,
+    filterText: (java.lang.String, scala.Double) => java.lang.String
   ): Message = {
-    val __obj = js.Dynamic.literal(Clear = Clear, File = File, Log = Log, Remove = Remove, Set = Set, filterText = filterText)
+    val __obj = js.Dynamic.literal(Clear = js.Any.fromFunction2(Clear), File = js.Any.fromFunction1(File), Log = js.Any.fromFunction0(Log), Remove = js.Any.fromFunction0(Remove), Set = js.Any.fromFunction3(Set), filterText = js.Any.fromFunction2(filterText))
   
     __obj.asInstanceOf[Message]
   }

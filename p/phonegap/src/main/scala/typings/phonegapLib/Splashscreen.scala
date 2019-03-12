@@ -12,8 +12,8 @@ trait Splashscreen extends js.Object {
 
 object Splashscreen {
   @scala.inline
-  def apply(hide: js.Function0[scala.Unit], show: js.Function0[scala.Unit]): Splashscreen = {
-    val __obj = js.Dynamic.literal(hide = hide, show = show)
+  def apply(hide: () => scala.Unit, show: () => scala.Unit): Splashscreen = {
+    val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show))
   
     __obj.asInstanceOf[Splashscreen]
   }

@@ -78,7 +78,7 @@ object Http {
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     headers: js.Array[java.lang.String] = null,
     service: java.lang.String = null,
-    validateStatus: js.Function1[/* code */ scala.Double, scala.Boolean] = null,
+    validateStatus: /* code */ scala.Double => scala.Boolean = null,
     whitelist: java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean]) | (js.Array[
       java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean])
     ]) = null
@@ -89,7 +89,7 @@ object Http {
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (service != null) __obj.updateDynamic("service")(service)
-    if (validateStatus != null) __obj.updateDynamic("validateStatus")(validateStatus)
+    if (validateStatus != null) __obj.updateDynamic("validateStatus")(js.Any.fromFunction1(validateStatus))
     if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[Http]
   }
@@ -109,7 +109,7 @@ object http {
     server: HttpServer = null,
     service: java.lang.String = null,
     splitByDomain: js.UndefOr[scala.Boolean] = js.undefined,
-    validateStatus: js.Function1[/* code */ scala.Double, scala.Boolean] = null,
+    validateStatus: /* code */ scala.Double => scala.Boolean = null,
     whitelist: java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean]) | (js.Array[
       java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean])
     ]) = null
@@ -124,7 +124,7 @@ object http {
     if (server != null) __obj.updateDynamic("server")(server)
     if (service != null) __obj.updateDynamic("service")(service)
     if (!js.isUndefined(splitByDomain)) __obj.updateDynamic("splitByDomain")(splitByDomain)
-    if (validateStatus != null) __obj.updateDynamic("validateStatus")(validateStatus)
+    if (validateStatus != null) __obj.updateDynamic("validateStatus")(js.Any.fromFunction1(validateStatus))
     if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[http]
   }

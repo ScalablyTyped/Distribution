@@ -20,19 +20,10 @@ trait SelectionCalculations extends js.Object {
 object SelectionCalculations {
   @scala.inline
   def apply(
-    getUpdatedSelectionRange: js.Function2[
-      handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange, 
-      js.Object, 
-      handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange
-    ],
-    snapDelta: js.Function3[
-      js.Object, 
-      handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange, 
-      MergedCellCoords, 
-      scala.Unit
-    ]
+    getUpdatedSelectionRange: (handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange, js.Object) => handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange,
+    snapDelta: (js.Object, handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange, MergedCellCoords) => scala.Unit
   ): SelectionCalculations = {
-    val __obj = js.Dynamic.literal(getUpdatedSelectionRange = getUpdatedSelectionRange, snapDelta = snapDelta)
+    val __obj = js.Dynamic.literal(getUpdatedSelectionRange = js.Any.fromFunction2(getUpdatedSelectionRange), snapDelta = js.Any.fromFunction3(snapDelta))
   
     __obj.asInstanceOf[SelectionCalculations]
   }

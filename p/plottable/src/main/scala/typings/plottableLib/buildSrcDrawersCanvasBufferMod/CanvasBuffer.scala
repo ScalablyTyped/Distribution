@@ -11,26 +11,18 @@ class CanvasBuffer protected () extends js.Object {
   def this(screenWidth: scala.Double, screenHeight: scala.Double) = this()
   def this(screenWidth: scala.Double, screenHeight: scala.Double, devicePixelRatio: scala.Double) = this()
   var canvas: stdLib.HTMLCanvasElement = js.native
-  var ctx: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D = js.native
+  var ctx: stdLib.CanvasRenderingContext2D = js.native
   var devicePixelRatio: scala.Double = js.native
   var pixelHeight: scala.Double = js.native
   var pixelWidth: scala.Double = js.native
   var screenHeight: scala.Double = js.native
   var screenWidth: scala.Double = js.native
-  def blit(ctx: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D): scala.Unit = js.native
-  def blit(ctx: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D, x: scala.Double): scala.Unit = js.native
-  def blit(
-    ctx: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D,
-    x: scala.Double,
-    y: scala.Double
-  ): scala.Unit = js.native
-  def blitCenter(ctx: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D): scala.Unit = js.native
-  def blitCenter(ctx: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D, x: scala.Double): scala.Unit = js.native
-  def blitCenter(
-    ctx: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D,
-    x: scala.Double,
-    y: scala.Double
-  ): scala.Unit = js.native
+  def blit(ctx: stdLib.CanvasRenderingContext2D): scala.Unit = js.native
+  def blit(ctx: stdLib.CanvasRenderingContext2D, x: scala.Double): scala.Unit = js.native
+  def blit(ctx: stdLib.CanvasRenderingContext2D, x: scala.Double, y: scala.Double): scala.Unit = js.native
+  def blitCenter(ctx: stdLib.CanvasRenderingContext2D): scala.Unit = js.native
+  def blitCenter(ctx: stdLib.CanvasRenderingContext2D, x: scala.Double): scala.Unit = js.native
+  def blitCenter(ctx: stdLib.CanvasRenderingContext2D, x: scala.Double, y: scala.Double): scala.Unit = js.native
   /**
     * Temporarily resets the current context transformation and fills the
     * entire canvas with the provided color. If no color is provided, the
@@ -58,7 +50,7 @@ object CanvasBuffer extends js.Object {
     * Resizes the canvas' internal pixel buffer to match the devicePixelRatio
     */
   def sizePixels(
-    ctx: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D,
+    ctx: stdLib.CanvasRenderingContext2D,
     screenWidth: scala.Double,
     screenHeight: scala.Double,
     devicePixelRatio: scala.Double

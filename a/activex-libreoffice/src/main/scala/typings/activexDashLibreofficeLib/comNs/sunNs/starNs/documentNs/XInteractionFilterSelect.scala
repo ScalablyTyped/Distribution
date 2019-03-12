@@ -36,14 +36,14 @@ object XInteractionFilterSelect {
   @scala.inline
   def apply(
     Filter: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getFilter: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    select: js.Function0[scala.Unit],
-    setFilter: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getFilter: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    select: () => scala.Unit,
+    setFilter: java.lang.String => scala.Unit
   ): XInteractionFilterSelect = {
-    val __obj = js.Dynamic.literal(Filter = Filter, acquire = acquire, getFilter = getFilter, queryInterface = queryInterface, release = release, select = select, setFilter = setFilter)
+    val __obj = js.Dynamic.literal(Filter = Filter, acquire = js.Any.fromFunction0(acquire), getFilter = js.Any.fromFunction0(getFilter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), select = js.Any.fromFunction0(select), setFilter = js.Any.fromFunction1(setFilter))
   
     __obj.asInstanceOf[XInteractionFilterSelect]
   }

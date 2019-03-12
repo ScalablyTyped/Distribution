@@ -15,12 +15,12 @@ trait SketchDocument extends js.Object {
 object SketchDocument {
   @scala.inline
   def apply(
-    addBlankPage: js.Function0[SketchPage],
-    currentPage: js.Function0[SketchPage],
-    documentData: js.Function0[SketchDocumentData],
-    pages: js.Function0[js.Array[SketchPage]]
+    addBlankPage: () => SketchPage,
+    currentPage: () => SketchPage,
+    documentData: () => SketchDocumentData,
+    pages: () => js.Array[SketchPage]
   ): SketchDocument = {
-    val __obj = js.Dynamic.literal(addBlankPage = addBlankPage, currentPage = currentPage, documentData = documentData, pages = pages)
+    val __obj = js.Dynamic.literal(addBlankPage = js.Any.fromFunction0(addBlankPage), currentPage = js.Any.fromFunction0(currentPage), documentData = js.Any.fromFunction0(documentData), pages = js.Any.fromFunction0(pages))
   
     __obj.asInstanceOf[SketchDocument]
   }

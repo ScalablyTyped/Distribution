@@ -11,10 +11,8 @@ trait OnViewTapListener extends js.Object {
 
 object OnViewTapListener {
   @scala.inline
-  def apply(
-    onViewTap: js.Function3[androiduixLib.androidNs.viewNs.View, scala.Double, scala.Double, scala.Unit]
-  ): OnViewTapListener = {
-    val __obj = js.Dynamic.literal(onViewTap = onViewTap)
+  def apply(onViewTap: (androiduixLib.androidNs.viewNs.View, scala.Double, scala.Double) => scala.Unit): OnViewTapListener = {
+    val __obj = js.Dynamic.literal(onViewTap = js.Any.fromFunction3(onViewTap))
   
     __obj.asInstanceOf[OnViewTapListener]
   }

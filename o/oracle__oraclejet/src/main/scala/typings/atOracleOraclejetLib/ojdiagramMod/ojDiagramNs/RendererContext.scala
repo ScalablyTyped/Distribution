@@ -31,13 +31,13 @@ object RendererContext {
     itemData: D1,
     parentElement: stdLib.Element,
     previousState: atOracleOraclejetLib.Anon_Expanded,
-    renderDefaultFocus: js.Function0[scala.Unit],
-    renderDefaultHover: js.Function0[scala.Unit],
-    renderDefaultSelection: js.Function0[scala.Unit],
+    renderDefaultFocus: () => scala.Unit,
+    renderDefaultHover: () => scala.Unit,
+    renderDefaultSelection: () => scala.Unit,
     state: atOracleOraclejetLib.Anon_Expanded,
     `type`: java.lang.String
   ): RendererContext[K1, D1] = {
-    val __obj = js.Dynamic.literal(componentElement = componentElement, content = content, data = data, id = id.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any], parentElement = parentElement, previousState = previousState, renderDefaultFocus = renderDefaultFocus, renderDefaultHover = renderDefaultHover, renderDefaultSelection = renderDefaultSelection, state = state)
+    val __obj = js.Dynamic.literal(componentElement = componentElement, content = content, data = data, id = id.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any], parentElement = parentElement, previousState = previousState, renderDefaultFocus = js.Any.fromFunction0(renderDefaultFocus), renderDefaultHover = js.Any.fromFunction0(renderDefaultHover), renderDefaultSelection = js.Any.fromFunction0(renderDefaultSelection), state = state)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RendererContext[K1, D1]]
   }

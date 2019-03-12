@@ -53,7 +53,7 @@ trait XRegressionCurveCalculator
     xScalingX: XScaling,
     xScalingY: XScaling,
     bMaySkipPointsInCalculation: scala.Boolean
-  ): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D]
+  ): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D]
   /**
     * Returns a representation using the given number format for formatting all numbers contained in the formula. Wrap equation to fit in nFormulaLength
     * characters
@@ -104,36 +104,19 @@ object XRegressionCurveCalculator {
   def apply(
     CorrelationCoefficient: scala.Double,
     Representation: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getCorrelationCoefficient: js.Function0[scala.Double],
-    getCurveValue: js.Function1[scala.Double, scala.Double],
-    getCurveValues: js.Function6[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      XScaling, 
-      XScaling, 
-      scala.Boolean, 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D]
-    ],
-    getFormattedRepresentation: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XNumberFormatsSupplier, 
-      scala.Double, 
-      scala.Double, 
-      java.lang.String
-    ],
-    getRepresentation: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    recalculateRegression: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      scala.Unit
-    ],
-    release: js.Function0[scala.Unit],
-    setRegressionProperties: js.Function4[scala.Double, scala.Boolean, scala.Double, scala.Double, scala.Unit],
-    setXYNames: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getCorrelationCoefficient: () => scala.Double,
+    getCurveValue: scala.Double => scala.Double,
+    getCurveValues: (scala.Double, scala.Double, scala.Double, XScaling, XScaling, scala.Boolean) => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D],
+    getFormattedRepresentation: (activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XNumberFormatsSupplier, scala.Double, scala.Double) => java.lang.String,
+    getRepresentation: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    recalculateRegression: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]) => scala.Unit,
+    release: () => scala.Unit,
+    setRegressionProperties: (scala.Double, scala.Boolean, scala.Double, scala.Double) => scala.Unit,
+    setXYNames: (java.lang.String, java.lang.String) => scala.Unit
   ): XRegressionCurveCalculator = {
-    val __obj = js.Dynamic.literal(CorrelationCoefficient = CorrelationCoefficient, Representation = Representation, acquire = acquire, getCorrelationCoefficient = getCorrelationCoefficient, getCurveValue = getCurveValue, getCurveValues = getCurveValues, getFormattedRepresentation = getFormattedRepresentation, getRepresentation = getRepresentation, queryInterface = queryInterface, recalculateRegression = recalculateRegression, release = release, setRegressionProperties = setRegressionProperties, setXYNames = setXYNames)
+    val __obj = js.Dynamic.literal(CorrelationCoefficient = CorrelationCoefficient, Representation = Representation, acquire = js.Any.fromFunction0(acquire), getCorrelationCoefficient = js.Any.fromFunction0(getCorrelationCoefficient), getCurveValue = js.Any.fromFunction1(getCurveValue), getCurveValues = js.Any.fromFunction6(getCurveValues), getFormattedRepresentation = js.Any.fromFunction3(getFormattedRepresentation), getRepresentation = js.Any.fromFunction0(getRepresentation), queryInterface = js.Any.fromFunction1(queryInterface), recalculateRegression = js.Any.fromFunction2(recalculateRegression), release = js.Any.fromFunction0(release), setRegressionProperties = js.Any.fromFunction4(setRegressionProperties), setXYNames = js.Any.fromFunction2(setXYNames))
   
     __obj.asInstanceOf[XRegressionCurveCalculator]
   }

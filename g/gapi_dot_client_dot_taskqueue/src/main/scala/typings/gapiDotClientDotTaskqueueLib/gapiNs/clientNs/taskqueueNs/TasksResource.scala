@@ -25,36 +25,15 @@ trait TasksResource extends js.Object {
 object TasksResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotTaskqueueLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotTaskqueueLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Task]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotTaskqueueLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Task]
-    ],
-    lease: js.Function1[
-      gapiDotClientDotTaskqueueLib.Anon_AltFieldsGroupByTag, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Tasks]
-    ],
-    list: js.Function1[
-      gapiDotClientDotTaskqueueLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Tasks2]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotTaskqueueLib.Anon_AltFieldsKeyNewLeaseSeconds, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Task]
-    ],
-    update: js.Function1[
-      gapiDotClientDotTaskqueueLib.Anon_AltFieldsKeyNewLeaseSeconds, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Task]
-    ]
+    delete: gapiDotClientDotTaskqueueLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotTaskqueueLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Task],
+    insert: gapiDotClientDotTaskqueueLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Task],
+    lease: gapiDotClientDotTaskqueueLib.Anon_AltFieldsGroupByTag => gapiDotClientLib.gapiNs.clientNs.Request[Tasks],
+    list: gapiDotClientDotTaskqueueLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Tasks2],
+    patch: gapiDotClientDotTaskqueueLib.Anon_AltFieldsKeyNewLeaseSeconds => gapiDotClientLib.gapiNs.clientNs.Request[Task],
+    update: gapiDotClientDotTaskqueueLib.Anon_AltFieldsKeyNewLeaseSeconds => gapiDotClientLib.gapiNs.clientNs.Request[Task]
   ): TasksResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, lease = lease, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), lease = js.Any.fromFunction1(lease), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[TasksResource]
   }

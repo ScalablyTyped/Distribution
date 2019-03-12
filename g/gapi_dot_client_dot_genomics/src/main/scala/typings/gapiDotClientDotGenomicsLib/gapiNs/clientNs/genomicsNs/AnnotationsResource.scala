@@ -78,32 +78,14 @@ trait AnnotationsResource extends js.Object {
 object AnnotationsResource {
   @scala.inline
   def apply(
-    batchCreate: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BatchCreateAnnotationsResponse]
-    ],
-    create: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
-    ],
-    search: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SearchAnnotationsResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltAnnotationId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
-    ]
+    batchCreate: gapiDotClientDotGenomicsLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[BatchCreateAnnotationsResponse],
+    create: gapiDotClientDotGenomicsLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Annotation],
+    delete: gapiDotClientDotGenomicsLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotGenomicsLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[Annotation],
+    search: gapiDotClientDotGenomicsLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[SearchAnnotationsResponse],
+    update: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltAnnotationId => gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
   ): AnnotationsResource = {
-    val __obj = js.Dynamic.literal(batchCreate = batchCreate, create = create, delete = delete, get = get, search = search, update = update)
+    val __obj = js.Dynamic.literal(batchCreate = js.Any.fromFunction1(batchCreate), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), search = js.Any.fromFunction1(search), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[AnnotationsResource]
   }

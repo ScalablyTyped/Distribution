@@ -21,18 +21,18 @@ trait InjectedArrayProps extends js.Object {
 object InjectedArrayProps {
   @scala.inline
   def apply(
-    insert: js.Function3[java.lang.String, scala.Double, js.Any, scala.Unit],
-    move: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit],
-    pop: js.Function1[java.lang.String, scala.Unit],
-    push: js.Function2[java.lang.String, js.Any, scala.Unit],
-    remove: js.Function2[java.lang.String, scala.Double, scala.Unit],
-    removeAll: js.Function1[java.lang.String, scala.Unit],
-    shift: js.Function1[java.lang.String, scala.Unit],
-    splice: js.Function4[java.lang.String, scala.Double, scala.Double, js.Any, scala.Unit],
-    swap: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit],
-    unshift: js.Function2[java.lang.String, js.Any, scala.Unit]
+    insert: (java.lang.String, scala.Double, js.Any) => scala.Unit,
+    move: (java.lang.String, scala.Double, scala.Double) => scala.Unit,
+    pop: java.lang.String => scala.Unit,
+    push: (java.lang.String, js.Any) => scala.Unit,
+    remove: (java.lang.String, scala.Double) => scala.Unit,
+    removeAll: java.lang.String => scala.Unit,
+    shift: java.lang.String => scala.Unit,
+    splice: (java.lang.String, scala.Double, scala.Double, js.Any) => scala.Unit,
+    swap: (java.lang.String, scala.Double, scala.Double) => scala.Unit,
+    unshift: (java.lang.String, js.Any) => scala.Unit
   ): InjectedArrayProps = {
-    val __obj = js.Dynamic.literal(insert = insert, move = move, pop = pop, push = push, remove = remove, removeAll = removeAll, shift = shift, splice = splice, swap = swap, unshift = unshift)
+    val __obj = js.Dynamic.literal(insert = js.Any.fromFunction3(insert), move = js.Any.fromFunction3(move), pop = js.Any.fromFunction1(pop), push = js.Any.fromFunction2(push), remove = js.Any.fromFunction2(remove), removeAll = js.Any.fromFunction1(removeAll), shift = js.Any.fromFunction1(shift), splice = js.Any.fromFunction4(splice), swap = js.Any.fromFunction3(swap), unshift = js.Any.fromFunction2(unshift))
   
     __obj.asInstanceOf[InjectedArrayProps]
   }

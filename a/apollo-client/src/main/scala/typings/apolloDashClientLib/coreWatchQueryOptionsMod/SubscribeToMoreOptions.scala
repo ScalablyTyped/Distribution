@@ -16,12 +16,12 @@ object SubscribeToMoreOptions {
   @scala.inline
   def apply[TData, TVariables, TSubscriptionData](
     document: graphqlLib.languageAstMod.DocumentNode,
-    onError: js.Function1[/* error */ stdLib.Error, scala.Unit] = null,
+    onError: /* error */ stdLib.Error => scala.Unit = null,
     updateQuery: UpdateQueryFn[TData, TVariables, TSubscriptionData] = null,
     variables: TVariables = null
   ): SubscribeToMoreOptions[TData, TVariables, TSubscriptionData] = {
     val __obj = js.Dynamic.literal(document = document)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (updateQuery != null) __obj.updateDynamic("updateQuery")(updateQuery)
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeToMoreOptions[TData, TVariables, TSubscriptionData]]

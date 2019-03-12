@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.OMathAutoCorrect")
 @js.native
 class OMathAutoCorrect protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
   val Entries: OMathAutoCorrectEntries = js.native
   val Functions: OMathRecognizedFunctions = js.native

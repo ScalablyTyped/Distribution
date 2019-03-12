@@ -354,8 +354,8 @@ trait telebot extends js.Object {
     file: nodeLib.NodeJSNs.ReadableStream,
     opt: telebotLib.Anon_CaptionDurationFileNameNotification
   ): js.Any = js.native
-  def setGameScore(user_id: scala.Double, score: scala.Double): scala.Boolean | nodeLib.Error | js.Any = js.native
-  def setGameScore(user_id: scala.Double, score: scala.Double, opt: telebotLib.Anon_ChatId): scala.Boolean | nodeLib.Error | js.Any = js.native
+  def setGameScore(user_id: scala.Double, score: scala.Double): scala.Boolean | stdLib.Error | js.Any = js.native
+  def setGameScore(user_id: scala.Double, score: scala.Double, opt: telebotLib.Anon_ChatId): scala.Boolean | stdLib.Error | js.Any = js.native
   def setWebhook(url: java.lang.String): scala.Boolean = js.native
   def setWebhook(url: java.lang.String, certificate: js.Any): scala.Boolean = js.native
   def setWebhook(url: java.lang.String, certificate: js.Any, allowed_updates: js.Array[java.lang.String]): scala.Boolean = js.native

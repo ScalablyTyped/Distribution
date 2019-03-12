@@ -13,12 +13,9 @@ trait MetrosResource extends js.Object {
 object MetrosResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[MetrosListResponse]
-    ]
+    list: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[MetrosListResponse]
   ): MetrosResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[MetrosResource]
   }

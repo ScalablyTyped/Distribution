@@ -22,7 +22,7 @@ trait Scalar extends Node {
 object Scalar {
   @scala.inline
   def apply(
-    toJSON: js.Function0[js.Any],
+    toJSON: () => js.Any,
     comment: java.lang.String = null,
     commentBefore: java.lang.String = null,
     cstNode: yamlLib.yamlMod.cstNs.Node = null,
@@ -32,7 +32,7 @@ object Scalar {
     `type`: yamlLib.yamlLibStrings.BLOCK_FOLDED | yamlLib.yamlLibStrings.BLOCK_LITERAL | yamlLib.yamlLibStrings.PLAIN | yamlLib.yamlLibStrings.QUOTE_DOUBLE | yamlLib.yamlLibStrings.QUOTE_SINGLE = null,
     value: scala.Boolean | scala.Double | java.lang.String = null
   ): Scalar = {
-    val __obj = js.Dynamic.literal(toJSON = toJSON)
+    val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON))
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore)
     if (cstNode != null) __obj.updateDynamic("cstNode")(cstNode)

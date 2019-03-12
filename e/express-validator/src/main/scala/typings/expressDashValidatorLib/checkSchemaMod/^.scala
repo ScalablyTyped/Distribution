@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("express-validator/check/schema", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def checkSchema(schema: expressDashValidatorLib.checkSchemaMod.ValidationSchema): js.Array[expressDashValidatorLib.checkCheckMod.ValidationChain] = js.native
+  def checkSchema(schema: ValidationSchema): js.Array[expressDashValidatorLib.checkCheckMod.ValidationChain] = js.native
 }
 

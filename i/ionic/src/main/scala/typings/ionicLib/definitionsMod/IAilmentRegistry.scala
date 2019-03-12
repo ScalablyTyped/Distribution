@@ -15,10 +15,10 @@ object IAilmentRegistry {
   @scala.inline
   def apply(
     ailments: js.Array[IAilment],
-    get: js.Function1[java.lang.String, js.UndefOr[IAilment]],
-    register: js.Function1[IAilment, scala.Unit]
+    get: java.lang.String => js.UndefOr[IAilment],
+    register: IAilment => scala.Unit
   ): IAilmentRegistry = {
-    val __obj = js.Dynamic.literal(ailments = ailments, get = get, register = register)
+    val __obj = js.Dynamic.literal(ailments = ailments, get = js.Any.fromFunction1(get), register = js.Any.fromFunction1(register))
   
     __obj.asInstanceOf[IAilmentRegistry]
   }

@@ -29,12 +29,12 @@ trait XLDragFill extends js.Object {
 object XLDragFill {
   @scala.inline
   def apply(
-    autoFill: js.Function1[js.Any, scala.Unit],
-    hideAutoFillElement: js.Function0[scala.Unit],
-    hideAutoFillOptions: js.Function0[scala.Unit],
-    positionAutoFillElement: js.Function1[scala.Boolean, scala.Unit]
+    autoFill: js.Any => scala.Unit,
+    hideAutoFillElement: () => scala.Unit,
+    hideAutoFillOptions: () => scala.Unit,
+    positionAutoFillElement: scala.Boolean => scala.Unit
   ): XLDragFill = {
-    val __obj = js.Dynamic.literal(autoFill = autoFill, hideAutoFillElement = hideAutoFillElement, hideAutoFillOptions = hideAutoFillOptions, positionAutoFillElement = positionAutoFillElement)
+    val __obj = js.Dynamic.literal(autoFill = js.Any.fromFunction1(autoFill), hideAutoFillElement = js.Any.fromFunction0(hideAutoFillElement), hideAutoFillOptions = js.Any.fromFunction0(hideAutoFillOptions), positionAutoFillElement = js.Any.fromFunction1(positionAutoFillElement))
   
     __obj.asInstanceOf[XLDragFill]
   }

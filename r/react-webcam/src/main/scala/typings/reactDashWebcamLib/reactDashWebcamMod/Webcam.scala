@@ -12,7 +12,7 @@ trait Webcam
       reactDashWebcamLib.reactDashWebcamMod.WebcamNs.WebcamState, 
       js.Any
     ] {
-  def getCanvas(): reactLib.HTMLCanvasElement | scala.Null = js.native
+  def getCanvas(): stdLib.HTMLCanvasElement | scala.Null = js.native
   def getScreenshot(): java.lang.String | scala.Null = js.native
   def handleUserMedia(error: stdLib.Error, stream: stdLib.MediaStream): scala.Unit = js.native
   def requestUserMedia(): scala.Unit = js.native

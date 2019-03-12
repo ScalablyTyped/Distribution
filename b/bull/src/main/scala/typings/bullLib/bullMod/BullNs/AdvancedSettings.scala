@@ -11,7 +11,7 @@ trait AdvancedSettings extends js.Object {
     */
   var backoffStrategies: js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[
-      js.Function2[/* attemptsMade */ scala.Double, /* err */ nodeLib.Error, scala.Double]
+      js.Function2[/* attemptsMade */ scala.Double, /* err */ stdLib.Error, scala.Double]
     ]
   ] = js.undefined
   /**
@@ -49,7 +49,7 @@ object AdvancedSettings {
   @scala.inline
   def apply(
     backoffStrategies: org.scalablytyped.runtime.StringDictionary[
-      js.Function2[/* attemptsMade */ scala.Double, /* err */ nodeLib.Error, scala.Double]
+      js.Function2[/* attemptsMade */ scala.Double, /* err */ stdLib.Error, scala.Double]
     ] = null,
     drainDelay: scala.Int | scala.Double = null,
     guardInterval: scala.Int | scala.Double = null,

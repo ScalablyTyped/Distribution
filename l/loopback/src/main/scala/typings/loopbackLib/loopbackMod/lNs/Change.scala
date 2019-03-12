@@ -55,7 +55,7 @@ trait Change extends PersistedModel {
     * @param {Error} err
     * @param {string} rev The current revisio
     */
-  def currentRevision(callback: js.Function2[/* err */ nodeLib.Error, /* rev */ java.lang.String, scala.Unit]): scala.Unit = js.native
+  def currentRevision(callback: js.Function2[/* err */ stdLib.Error, /* rev */ java.lang.String, scala.Unit]): scala.Unit = js.native
   /**
     * Compare two changes.
     * @param  {Change} change
@@ -77,7 +77,7 @@ trait Change extends PersistedModel {
     * @param {Error} err
     * @param {Change} chang
     */
-  def rectify(callback: js.Function2[/* err */ nodeLib.Error, /* change */ this.type, scala.Unit]): scala.Unit = js.native
+  def rectify(callback: js.Function2[/* err */ stdLib.Error, /* change */ this.type, scala.Unit]): scala.Unit = js.native
   /**
     * Get a change's type. Returns one of
     * - `Change.UPDATE`

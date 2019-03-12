@@ -20,21 +20,17 @@ trait ParcelBundler extends js.Object {
 object ParcelBundler {
   @scala.inline
   def apply(
-    addAssetType: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    addPackager: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    bundle: js.Function0[
-      js.Promise[parcelDashBundlerLib.parcelDashBundlerMod.ParcelBundlerNs.ParcelBundle]
-    ],
-    middleware: js.Function0[
-      js.Function3[
-        /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request, 
-        /* res */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response, 
-        /* next */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.NextFunction, 
-        _
-      ]
+    addAssetType: (java.lang.String, java.lang.String) => scala.Unit,
+    addPackager: (java.lang.String, java.lang.String) => scala.Unit,
+    bundle: () => js.Promise[parcelDashBundlerLib.parcelDashBundlerMod.ParcelBundlerNs.ParcelBundle],
+    middleware: () => js.Function3[
+      /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request, 
+      /* res */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response, 
+      /* next */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.NextFunction, 
+      _
     ]
   ): ParcelBundler = {
-    val __obj = js.Dynamic.literal(addAssetType = addAssetType, addPackager = addPackager, bundle = bundle, middleware = middleware)
+    val __obj = js.Dynamic.literal(addAssetType = js.Any.fromFunction2(addAssetType), addPackager = js.Any.fromFunction2(addPackager), bundle = js.Any.fromFunction0(bundle), middleware = js.Any.fromFunction0(middleware))
   
     __obj.asInstanceOf[ParcelBundler]
   }

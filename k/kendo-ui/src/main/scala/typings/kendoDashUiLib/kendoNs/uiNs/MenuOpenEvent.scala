@@ -12,12 +12,12 @@ trait MenuOpenEvent extends MenuEvent {
 object MenuOpenEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Menu,
     item: kendoDashUiLib.HTMLElement = null
   ): MenuOpenEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (item != null) __obj.updateDynamic("item")(item)
     __obj.asInstanceOf[MenuOpenEvent]
   }

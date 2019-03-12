@@ -15,7 +15,7 @@ trait PaginationProps extends js.Object {
     js.Function3[
       /* page */ scala.Double, 
       /* type */ antdLib.antdLibStrings.page | antdLib.antdLibStrings.prev | antdLib.antdLibStrings.next | antdLib.antdLibStrings.`jump-prev` | antdLib.antdLibStrings.`jump-next`, 
-      /* originalElement */ reactLib.HTMLElement, 
+      /* originalElement */ stdLib.HTMLElement, 
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.undefined
@@ -52,15 +52,10 @@ object PaginationProps {
     defaultCurrent: scala.Int | scala.Double = null,
     defaultPageSize: scala.Int | scala.Double = null,
     hideOnSinglePage: js.UndefOr[scala.Boolean] = js.undefined,
-    itemRender: js.Function3[
-      /* page */ scala.Double, 
-      /* type */ antdLib.antdLibStrings.page | antdLib.antdLibStrings.prev | antdLib.antdLibStrings.next | antdLib.antdLibStrings.`jump-prev` | antdLib.antdLibStrings.`jump-next`, 
-      /* originalElement */ reactLib.HTMLElement, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    itemRender: (/* page */ scala.Double, /* type */ antdLib.antdLibStrings.page | antdLib.antdLibStrings.prev | antdLib.antdLibStrings.next | antdLib.antdLibStrings.`jump-prev` | antdLib.antdLibStrings.`jump-next`, /* originalElement */ stdLib.HTMLElement) => reactLib.reactMod.ReactNs.ReactNode = null,
     locale: js.Object = null,
-    onChange: js.Function2[/* page */ scala.Double, /* pageSize */ js.UndefOr[scala.Double], scala.Unit] = null,
-    onShowSizeChange: js.Function2[/* current */ scala.Double, /* size */ scala.Double, scala.Unit] = null,
+    onChange: (/* page */ scala.Double, /* pageSize */ js.UndefOr[scala.Double]) => scala.Unit = null,
+    onShowSizeChange: (/* current */ scala.Double, /* size */ scala.Double) => scala.Unit = null,
     pageSize: scala.Int | scala.Double = null,
     pageSizeOptions: js.Array[java.lang.String] = null,
     prefixCls: java.lang.String = null,
@@ -68,11 +63,7 @@ object PaginationProps {
     selectPrefixCls: java.lang.String = null,
     showQuickJumper: scala.Boolean | antdLib.Anon_GoButton = null,
     showSizeChanger: js.UndefOr[scala.Boolean] = js.undefined,
-    showTotal: js.Function2[
-      /* total */ scala.Double, 
-      /* range */ js.Tuple2[scala.Double, scala.Double], 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    showTotal: (/* total */ scala.Double, /* range */ js.Tuple2[scala.Double, scala.Double]) => reactLib.reactMod.ReactNs.ReactNode = null,
     simple: js.UndefOr[scala.Boolean] = js.undefined,
     size: java.lang.String = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -84,10 +75,10 @@ object PaginationProps {
     if (defaultCurrent != null) __obj.updateDynamic("defaultCurrent")(defaultCurrent.asInstanceOf[js.Any])
     if (defaultPageSize != null) __obj.updateDynamic("defaultPageSize")(defaultPageSize.asInstanceOf[js.Any])
     if (!js.isUndefined(hideOnSinglePage)) __obj.updateDynamic("hideOnSinglePage")(hideOnSinglePage)
-    if (itemRender != null) __obj.updateDynamic("itemRender")(itemRender)
+    if (itemRender != null) __obj.updateDynamic("itemRender")(js.Any.fromFunction3(itemRender))
     if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onShowSizeChange != null) __obj.updateDynamic("onShowSizeChange")(onShowSizeChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onShowSizeChange != null) __obj.updateDynamic("onShowSizeChange")(js.Any.fromFunction2(onShowSizeChange))
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     if (pageSizeOptions != null) __obj.updateDynamic("pageSizeOptions")(pageSizeOptions)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
@@ -95,7 +86,7 @@ object PaginationProps {
     if (selectPrefixCls != null) __obj.updateDynamic("selectPrefixCls")(selectPrefixCls)
     if (showQuickJumper != null) __obj.updateDynamic("showQuickJumper")(showQuickJumper.asInstanceOf[js.Any])
     if (!js.isUndefined(showSizeChanger)) __obj.updateDynamic("showSizeChanger")(showSizeChanger)
-    if (showTotal != null) __obj.updateDynamic("showTotal")(showTotal)
+    if (showTotal != null) __obj.updateDynamic("showTotal")(js.Any.fromFunction2(showTotal))
     if (!js.isUndefined(simple)) __obj.updateDynamic("simple")(simple)
     if (size != null) __obj.updateDynamic("size")(size)
     if (style != null) __obj.updateDynamic("style")(style)

@@ -16,18 +16,10 @@ trait FunctorWithIndexComposition12C[F /* <: fpDashTsLib.libHKTMod.URIS */, FI, 
 object FunctorWithIndexComposition12C {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS */, FI, G /* <: fpDashTsLib.libHKTMod.URIS2 */, GI, L](
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type2[G, L, js.Any]], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type2[G, L, js.Any]]
-    ],
-    mapWithIndex: js.Function2[
-      fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type2[G, L, js.Any]], 
-      js.Function2[/* i */ js.Tuple2[FI, GI], js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type2[G, L, js.Any]]
-    ]
+    map: (fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type2[G, L, js.Any]], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type2[G, L, js.Any]],
+    mapWithIndex: (fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type2[G, L, js.Any]], js.Function2[/* i */ js.Tuple2[FI, GI], js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type2[G, L, js.Any]]
   ): FunctorWithIndexComposition12C[F, FI, G, GI, L] = {
-    val __obj = js.Dynamic.literal(map = map, mapWithIndex = mapWithIndex)
+    val __obj = js.Dynamic.literal(map = js.Any.fromFunction2(map), mapWithIndex = js.Any.fromFunction2(mapWithIndex))
   
     __obj.asInstanceOf[FunctorWithIndexComposition12C[F, FI, G, GI, L]]
   }

@@ -39,14 +39,14 @@ trait Inspection[R] extends js.Object {
 object Inspection {
   @scala.inline
   def apply[R](
-    isCancelled: js.Function0[scala.Boolean],
-    isFulfilled: js.Function0[scala.Boolean],
-    isPending: js.Function0[scala.Boolean],
-    isRejected: js.Function0[scala.Boolean],
-    reason: js.Function0[js.Any],
-    value: js.Function0[R]
+    isCancelled: () => scala.Boolean,
+    isFulfilled: () => scala.Boolean,
+    isPending: () => scala.Boolean,
+    isRejected: () => scala.Boolean,
+    reason: () => js.Any,
+    value: () => R
   ): Inspection[R] = {
-    val __obj = js.Dynamic.literal(isCancelled = isCancelled, isFulfilled = isFulfilled, isPending = isPending, isRejected = isRejected, reason = reason, value = value)
+    val __obj = js.Dynamic.literal(isCancelled = js.Any.fromFunction0(isCancelled), isFulfilled = js.Any.fromFunction0(isFulfilled), isPending = js.Any.fromFunction0(isPending), isRejected = js.Any.fromFunction0(isRejected), reason = js.Any.fromFunction0(reason), value = js.Any.fromFunction0(value))
   
     __obj.asInstanceOf[Inspection[R]]
   }

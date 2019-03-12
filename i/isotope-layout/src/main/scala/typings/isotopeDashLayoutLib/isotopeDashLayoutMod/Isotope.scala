@@ -98,26 +98,26 @@ trait Isotope extends js.Object {
 object Isotope {
   @scala.inline
   def apply(
-    addItems: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit],
-    appended: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit],
-    arrange: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.IsotopeOptions, scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    getFilteredItemElements: js.Function0[js.Array[stdLib.Element]],
-    getItemElements: js.Function0[js.Array[stdLib.Element]],
-    hideItemElements: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit],
-    insert: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit],
-    layout: js.Function0[scala.Unit],
-    layoutItems: js.Function2[js.Array[stdLib.HTMLElement], scala.Boolean, scala.Unit],
-    prepended: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit],
-    reloadItems: js.Function0[scala.Unit],
-    remove: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit],
-    revealItemElements: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit],
-    shuffle: js.Function0[scala.Unit],
-    stamp: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit],
-    unstamp: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit],
-    updateSortData: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit]
+    addItems: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit,
+    appended: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit,
+    arrange: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.IsotopeOptions => scala.Unit,
+    destroy: () => scala.Unit,
+    getFilteredItemElements: () => js.Array[stdLib.Element],
+    getItemElements: () => js.Array[stdLib.Element],
+    hideItemElements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit,
+    insert: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit,
+    layout: () => scala.Unit,
+    layoutItems: (js.Array[stdLib.HTMLElement], scala.Boolean) => scala.Unit,
+    prepended: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit,
+    reloadItems: () => scala.Unit,
+    remove: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit,
+    revealItemElements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit,
+    shuffle: () => scala.Unit,
+    stamp: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit,
+    unstamp: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit,
+    updateSortData: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit
   ): Isotope = {
-    val __obj = js.Dynamic.literal(addItems = addItems, appended = appended, arrange = arrange, destroy = destroy, getFilteredItemElements = getFilteredItemElements, getItemElements = getItemElements, hideItemElements = hideItemElements, insert = insert, layout = layout, layoutItems = layoutItems, prepended = prepended, reloadItems = reloadItems, remove = remove, revealItemElements = revealItemElements, shuffle = shuffle, stamp = stamp, unstamp = unstamp, updateSortData = updateSortData)
+    val __obj = js.Dynamic.literal(addItems = js.Any.fromFunction1(addItems), appended = js.Any.fromFunction1(appended), arrange = js.Any.fromFunction1(arrange), destroy = js.Any.fromFunction0(destroy), getFilteredItemElements = js.Any.fromFunction0(getFilteredItemElements), getItemElements = js.Any.fromFunction0(getItemElements), hideItemElements = js.Any.fromFunction1(hideItemElements), insert = js.Any.fromFunction1(insert), layout = js.Any.fromFunction0(layout), layoutItems = js.Any.fromFunction2(layoutItems), prepended = js.Any.fromFunction1(prepended), reloadItems = js.Any.fromFunction0(reloadItems), remove = js.Any.fromFunction1(remove), revealItemElements = js.Any.fromFunction1(revealItemElements), shuffle = js.Any.fromFunction0(shuffle), stamp = js.Any.fromFunction1(stamp), unstamp = js.Any.fromFunction1(unstamp), updateSortData = js.Any.fromFunction1(updateSortData))
   
     __obj.asInstanceOf[Isotope]
   }

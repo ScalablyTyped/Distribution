@@ -96,8 +96,8 @@ object RatingProps {
     fractions: scala.Int | scala.Double = null,
     imageSize: scala.Int | scala.Double = null,
     minValue: scala.Int | scala.Double = null,
-    onFinishRating: js.Function1[/* rating */ scala.Double, scala.Unit] = null,
-    onStartRating: js.Function0[scala.Unit] = null,
+    onFinishRating: /* rating */ scala.Double => scala.Unit = null,
+    onStartRating: () => scala.Unit = null,
     ratingBackgroundColor: java.lang.String = null,
     ratingColor: java.lang.String = null,
     ratingCount: scala.Int | scala.Double = null,
@@ -113,8 +113,8 @@ object RatingProps {
     if (fractions != null) __obj.updateDynamic("fractions")(fractions.asInstanceOf[js.Any])
     if (imageSize != null) __obj.updateDynamic("imageSize")(imageSize.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (onFinishRating != null) __obj.updateDynamic("onFinishRating")(onFinishRating)
-    if (onStartRating != null) __obj.updateDynamic("onStartRating")(onStartRating)
+    if (onFinishRating != null) __obj.updateDynamic("onFinishRating")(js.Any.fromFunction1(onFinishRating))
+    if (onStartRating != null) __obj.updateDynamic("onStartRating")(js.Any.fromFunction0(onStartRating))
     if (ratingBackgroundColor != null) __obj.updateDynamic("ratingBackgroundColor")(ratingBackgroundColor)
     if (ratingColor != null) __obj.updateDynamic("ratingColor")(ratingColor)
     if (ratingCount != null) __obj.updateDynamic("ratingCount")(ratingCount.asInstanceOf[js.Any])

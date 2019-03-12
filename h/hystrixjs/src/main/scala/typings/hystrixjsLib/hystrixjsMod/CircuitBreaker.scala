@@ -15,12 +15,12 @@ trait CircuitBreaker extends js.Object {
 object CircuitBreaker {
   @scala.inline
   def apply(
-    allowRequest: js.Function0[scala.Boolean],
-    allowSingleTest: js.Function0[scala.Boolean],
-    isOpen: js.Function0[scala.Boolean],
-    markSuccess: js.Function0[scala.Unit]
+    allowRequest: () => scala.Boolean,
+    allowSingleTest: () => scala.Boolean,
+    isOpen: () => scala.Boolean,
+    markSuccess: () => scala.Unit
   ): CircuitBreaker = {
-    val __obj = js.Dynamic.literal(allowRequest = allowRequest, allowSingleTest = allowSingleTest, isOpen = isOpen, markSuccess = markSuccess)
+    val __obj = js.Dynamic.literal(allowRequest = js.Any.fromFunction0(allowRequest), allowSingleTest = js.Any.fromFunction0(allowSingleTest), isOpen = js.Any.fromFunction0(isOpen), markSuccess = js.Any.fromFunction0(markSuccess))
   
     __obj.asInstanceOf[CircuitBreaker]
   }

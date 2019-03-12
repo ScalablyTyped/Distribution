@@ -223,14 +223,14 @@ trait Core extends js.Object {
     * @return If the set is not allowed to be modified, 
     * the function returns an error.
     */
-  def addMember(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name, member: webgmeLib.CoreNs.Node): js.UndefOr[nodeLib.Error] = js.native
+  def addMember(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name, member: webgmeLib.CoreNs.Node): js.UndefOr[stdLib.Error] = js.native
   /**
     * Adds a mixin to the mixin set of the node.
     * @param node the node in question.
     * @param the path of the mixin node.
     * @return If the node is not allowed to be modified, the function returns an error.
     */
-  def addMixin(node: webgmeLib.CoreNs.Node, mixinPath: webgmeLib.GmeCommonNs.Path): js.UndefOr[nodeLib.Error] = js.native
+  def addMixin(node: webgmeLib.CoreNs.Node, mixinPath: webgmeLib.GmeCommonNs.Path): js.UndefOr[stdLib.Error] = js.native
   /**
     * When our attempt to merge two patches ended in some conflict, 
     * then we can modify that result highlighting that in case of every conflict, 
@@ -277,20 +277,20 @@ trait Core extends js.Object {
     * @param node the node in question.
     * @return If the node is not allowed to be modified, the function returns an error.
     */
-  def clearMetaRules(node: webgmeLib.CoreNs.Node): js.UndefOr[nodeLib.Error] = js.native
+  def clearMetaRules(node: webgmeLib.CoreNs.Node): js.UndefOr[stdLib.Error] = js.native
   /**
     * Removes all mixins for a given node.
     * @param node the node in question.
     * @return If the node is not allowed to be modified, the function returns an error.
     */
-  def clearMixins(node: webgmeLib.CoreNs.Node): js.UndefOr[nodeLib.Error] = js.native
+  def clearMixins(node: webgmeLib.CoreNs.Node): js.UndefOr[stdLib.Error] = js.native
   /**
     * Copies the given node into parent.
     * @param node the node to be copied.
     * @param parent the target parent where the copy will be placed.
     * @return The function returns the copied node or an error if the copy is not allowed.
     */
-  def copyNode(node: webgmeLib.CoreNs.Node, parent: webgmeLib.CoreNs.Node): webgmeLib.CoreNs.Node | nodeLib.Error = js.native
+  def copyNode(node: webgmeLib.CoreNs.Node, parent: webgmeLib.CoreNs.Node): webgmeLib.CoreNs.Node | stdLib.Error = js.native
   /**
     * Copies the given nodes into parent.
     * @param nodes the nodes to be copied.
@@ -298,28 +298,28 @@ trait Core extends js.Object {
     * @return The function returns an array of the copied nodes or an error 
     * if any of the nodes are not allowed to be copied to the given parent.
     */
-  def copyNodes(nodes: js.Array[webgmeLib.CoreNs.Node], parent: webgmeLib.CoreNs.Node): js.Array[webgmeLib.CoreNs.Node] | nodeLib.Error = js.native
+  def copyNodes(nodes: js.Array[webgmeLib.CoreNs.Node], parent: webgmeLib.CoreNs.Node): js.Array[webgmeLib.CoreNs.Node] | stdLib.Error = js.native
   /**
     * Creates a node according to the given parameters.
     * @param parameters the details of the creation.
     * @return The function returns the created node or null if no node was 
     * created or an error if the creation with the given parameters are not allowed.
     */
-  def createNode(parameters: NodeParameters): webgmeLib.CoreNs.Node | nodeLib.Error = js.native
+  def createNode(parameters: NodeParameters): webgmeLib.CoreNs.Node | stdLib.Error = js.native
   /**
     * Creates a set for the node.
     * @param node the node that will own the set.
     * @param name the name of the set.
     * @return If the node is not allowed to be modified, the function returns an error.
     */
-  def createSet(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[nodeLib.Error] = js.native
+  def createSet(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[stdLib.Error] = js.native
   /**
     * Removes the given aspect rule of the node.
     * @param node the node whose aspect rule will be deleted.
     * @param name the name of the aspect rule.
     * @return  If the node is not allowed to be modified, the function returns an error.
     */
-  def delAspectMeta(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[nodeLib.Error] = js.native
+  def delAspectMeta(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[stdLib.Error] = js.native
   /**
     * Removes a valid type from the given aspect of the node.
     * @param node the node in question.
@@ -331,35 +331,35 @@ trait Core extends js.Object {
     node: webgmeLib.CoreNs.Node,
     name: webgmeLib.GmeCommonNs.Name,
     targetPath: webgmeLib.GmeCommonNs.Path
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   /**
     * Removes the given attributes from the given node.
     * @param node the node in question.
     * @param name the name of the attribute.
     * @return If the node is not allowed to be modified, the function returns an error.
     */
-  def delAttribute(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[nodeLib.Error] = js.native
+  def delAttribute(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[stdLib.Error] = js.native
   /**
     * Removes an attribute definition from the META rules of the node.
     * @param name the node in question.
     * @param name the name of the attribute.
     * @return If the node is not allowed to be modified, the function returns an error.
     */
-  def delAttributeMeta(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[nodeLib.Error] = js.native
+  def delAttributeMeta(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[stdLib.Error] = js.native
   /**
     * Removes the given child rule from the node.
     * @param the node in question.
     * @param childPath the absolute path of the child which rule is to be removed from the node.
     * @return If the node is not allowed to be modified, the function returns an error.
     */
-  def delChildMeta(node: webgmeLib.CoreNs.Node, childPath: webgmeLib.GmeCommonNs.Path): js.UndefOr[nodeLib.Error] = js.native
+  def delChildMeta(node: webgmeLib.CoreNs.Node, childPath: webgmeLib.GmeCommonNs.Path): js.UndefOr[stdLib.Error] = js.native
   /**
     * Removes a constraint from the node.
     * @param node the node in question.
     * @param name the name of the constraint.
     * @return If the node is not allowed to be modified, the function returns an error.
     */
-  def delConstraint(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[nodeLib.Error] = js.native
+  def delConstraint(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[stdLib.Error] = js.native
   /**
     * Removes a member from the set. The functions doesn't remove the node itself.
     * @param node the node in question.
@@ -367,7 +367,7 @@ trait Core extends js.Object {
     * @param path the path to the member to be removed.
     * @return If the node is not allowed to be modified, the function returns an error.
     */
-  def delMember(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name, path: webgmeLib.GmeCommonNs.Path): js.UndefOr[nodeLib.Error] = js.native
+  def delMember(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name, path: webgmeLib.GmeCommonNs.Path): js.UndefOr[stdLib.Error] = js.native
   /**
     * Removes an attribute which represented a property of the given set membership.
     * @param node the node in question.
@@ -381,7 +381,7 @@ trait Core extends js.Object {
     setName: webgmeLib.GmeCommonNs.Name,
     memberPath: webgmeLib.GmeCommonNs.Path,
     attrName: webgmeLib.GmeCommonNs.Name
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   /**
     * Removes a registry entry which represented a property of the given set membership.
     * @param node the node in question.
@@ -395,21 +395,21 @@ trait Core extends js.Object {
     setName: webgmeLib.GmeCommonNs.Name,
     memberPath: webgmeLib.GmeCommonNs.Path,
     regName: webgmeLib.GmeCommonNs.Name
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   /**
     * Removes a mixin from the mixin set of the node.
     * @param node the node in question.
     * @param mixinPath the path of the mixin node.
     * @return If the node is not allowed to be modified, the function returns an error. 
     */
-  def delMixin(node: webgmeLib.CoreNs.Node, mixinPath: webgmeLib.GmeCommonNs.Path): js.UndefOr[nodeLib.Error] = js.native
+  def delMixin(node: webgmeLib.CoreNs.Node, mixinPath: webgmeLib.GmeCommonNs.Path): js.UndefOr[stdLib.Error] = js.native
   /**
     * Removes the complete META rule regarding the given pointer/set of the node.
     * @param node the node in question.
     * @param name the name of the pointer/set.
     * @return If the node is not allowed to be modified, the function returns an error. 
     */
-  def delPointerMeta(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[nodeLib.Error] = js.native
+  def delPointerMeta(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[stdLib.Error] = js.native
   /**
     * Removes a possible target type from the pointer/set of the node.
     * @param node the node in question.
@@ -417,14 +417,14 @@ trait Core extends js.Object {
     * @param targetPath the absolute path of the possible target type.
     * @return If the node is not allowed to be modified, the function returns an error. 
     */
-  def delPointerMetaTarget(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name, targetPath: java.lang.String): js.UndefOr[nodeLib.Error] = js.native
+  def delPointerMetaTarget(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name, targetPath: java.lang.String): js.UndefOr[stdLib.Error] = js.native
   /**
     * Removes the given registry entry from the given node.
     * @param node the node in question.
     * @param name the name of the registry entry.
     * @return If the node is not allowed to be modified, the function returns an error. 
     */
-  def delRegistry(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[nodeLib.Error] = js.native
+  def delRegistry(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[stdLib.Error] = js.native
   /**
     * Removes the attribute entry for the set at the node.
     * @param node the node in question.
@@ -436,7 +436,7 @@ trait Core extends js.Object {
     node: webgmeLib.CoreNs.Node,
     setName: webgmeLib.GmeCommonNs.Name,
     attrName: webgmeLib.GmeCommonNs.Name
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   /**
     * Removes the registry entry for the set at the node.
     * @param node the node in question.
@@ -448,28 +448,28 @@ trait Core extends js.Object {
     node: webgmeLib.CoreNs.Node,
     setName: webgmeLib.GmeCommonNs.Name,
     regName: webgmeLib.GmeCommonNs.Name
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   /**
     * Removes a node from the containment hierarchy.
     * It also removes all contained nodes.
     * @param node the node in question.
     * @return If the operation is not allowed it returns an error.
     */
-  def deleteNode(node: webgmeLib.CoreNs.Node): js.UndefOr[nodeLib.Error] = js.native
+  def deleteNode(node: webgmeLib.CoreNs.Node): js.UndefOr[stdLib.Error] = js.native
   /**
     * Removes the pointer from the node.
     * @param node the node in question.
     * @param name the name of the pointer.
     * @return If the node is not allowed to be modified, the function returns an error.
     */
-  def deletePointer(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[nodeLib.Error] = js.native
+  def deletePointer(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[stdLib.Error] = js.native
   /**
     * Removes a set from the node.
     * @param node the node in question.
     * @param name the name of the set.
     * @return If the node is not allowed to be modified, the function returns an error.
     */
-  def deleteSet(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[nodeLib.Error] = js.native
+  def deleteSet(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[stdLib.Error] = js.native
   /**
     * Generates a differential tree among the two states 
     * of the project that contains the necessary changes 
@@ -710,7 +710,7 @@ trait Core extends js.Object {
     * @return an object that represents all the META rules of the node.
     */
   def getJsonMeta(node: webgmeLib.CoreNs.Node): webgmeLib.GmeCommonNs.MetaRules = js.native
-  def getLibraryGuid(node: webgmeLib.CoreNs.Node): webgmeLib.CoreNs.GUID | nodeLib.Error = js.native
+  def getLibraryGuid(node: webgmeLib.CoreNs.Node): webgmeLib.CoreNs.GUID | stdLib.Error = js.native
   /**
     * Returns the origin GUID of any library node.
     * @param node the node in question.
@@ -719,7 +719,7 @@ trait Core extends js.Object {
     * direct library root of the node
     * @return the origin GUID of the node or error if the query cannot be fulfilled.
     */
-  def getLibraryGuid(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): webgmeLib.CoreNs.GUID | nodeLib.Error = js.native
+  def getLibraryGuid(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): webgmeLib.CoreNs.GUID | stdLib.Error = js.native
   /**
     * Returns the info associated with the library.
     * @param node the node in question.
@@ -1574,7 +1574,7 @@ trait Core extends js.Object {
     target: webgmeLib.CoreNs.Node,
     oldName: webgmeLib.GmeCommonNs.Name,
     newName: webgmeLib.GmeCommonNs.Name
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param {Core.Node} node
@@ -1588,13 +1588,13 @@ trait Core extends js.Object {
     memberPath: webgmeLib.GmeCommonNs.Path,
     oldSetName: webgmeLib.GmeCommonNs.Name,
     newSetName: webgmeLib.GmeCommonNs.Name
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param node the node in question.
     * @return 
     */
-  def moveNode(node: webgmeLib.CoreNs.Node, parent: webgmeLib.CoreNs.Node): webgmeLib.CoreNs.Node | nodeLib.Error = js.native
+  def moveNode(node: webgmeLib.CoreNs.Node, parent: webgmeLib.CoreNs.Node): webgmeLib.CoreNs.Node | stdLib.Error = js.native
   /**
     * TODO
     * @param {Core.Node} node
@@ -1608,7 +1608,7 @@ trait Core extends js.Object {
     target: webgmeLib.CoreNs.Node,
     oldName: webgmeLib.GmeCommonNs.Name,
     newName: webgmeLib.GmeCommonNs.Name
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param node the node in question.
@@ -1632,7 +1632,7 @@ trait Core extends js.Object {
     node: webgmeLib.CoreNs.Node,
     oldName: webgmeLib.GmeCommonNs.Name,
     newName: webgmeLib.GmeCommonNs.Name
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param {Core.Node} node
@@ -1644,7 +1644,7 @@ trait Core extends js.Object {
     node: webgmeLib.CoreNs.Node,
     oldName: webgmeLib.GmeCommonNs.Name,
     newName: webgmeLib.GmeCommonNs.Name
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param node the node in question.
@@ -1662,7 +1662,7 @@ trait Core extends js.Object {
     node: webgmeLib.CoreNs.Node,
     oldName: webgmeLib.GmeCommonNs.Name,
     newName: webgmeLib.GmeCommonNs.Name
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param {Core.Node} node
@@ -1674,7 +1674,7 @@ trait Core extends js.Object {
     node: webgmeLib.CoreNs.Node,
     oldName: webgmeLib.GmeCommonNs.Name,
     newName: webgmeLib.GmeCommonNs.Name
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param {Core.Node} node
@@ -1686,47 +1686,47 @@ trait Core extends js.Object {
     node: webgmeLib.CoreNs.Node,
     oldName: webgmeLib.GmeCommonNs.Name,
     newName: webgmeLib.GmeCommonNs.Name
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param node the node in question.
     * @return 
     */
-  def setAspectMetaTarget(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name, target: webgmeLib.CoreNs.Node): js.UndefOr[nodeLib.Error] = js.native
+  def setAspectMetaTarget(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name, target: webgmeLib.CoreNs.Node): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param node the node in question.
     * @return 
     */
-  def setAttribute(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name, value: webgmeLib.GmeCommonNs.InAttr): js.UndefOr[nodeLib.Error] = js.native
+  def setAttribute(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name, value: webgmeLib.GmeCommonNs.InAttr): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param node the node in question.
     * @return 
     */
-  def setAttributeMeta(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name, rule: MetaRule): js.UndefOr[nodeLib.Error] = js.native
+  def setAttributeMeta(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name, rule: MetaRule): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param node the node in question.
     * @return 
     */
-  def setBase(node: webgmeLib.CoreNs.Node, base: webgmeLib.CoreNs.Node): js.UndefOr[nodeLib.Error] = js.native
+  def setBase(node: webgmeLib.CoreNs.Node, base: webgmeLib.CoreNs.Node): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param node the node in question.
     * @return 
     */
-  def setChildMeta(node: webgmeLib.CoreNs.Node, child: webgmeLib.CoreNs.Node): js.UndefOr[nodeLib.Error] = js.native
-  def setChildMeta(node: webgmeLib.CoreNs.Node, child: webgmeLib.CoreNs.Node, min: scala.Double): js.UndefOr[nodeLib.Error] = js.native
-  def setChildMeta(node: webgmeLib.CoreNs.Node, child: webgmeLib.CoreNs.Node, min: scala.Double, max: scala.Double): js.UndefOr[nodeLib.Error] = js.native
+  def setChildMeta(node: webgmeLib.CoreNs.Node, child: webgmeLib.CoreNs.Node): js.UndefOr[stdLib.Error] = js.native
+  def setChildMeta(node: webgmeLib.CoreNs.Node, child: webgmeLib.CoreNs.Node, min: scala.Double): js.UndefOr[stdLib.Error] = js.native
+  def setChildMeta(node: webgmeLib.CoreNs.Node, child: webgmeLib.CoreNs.Node, min: scala.Double, max: scala.Double): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param node the node in question.
     * @return 
     */
-  def setChildrenMetaLimits(node: webgmeLib.CoreNs.Node): js.UndefOr[nodeLib.Error] = js.native
-  def setChildrenMetaLimits(node: webgmeLib.CoreNs.Node, min: scala.Double): js.UndefOr[nodeLib.Error] = js.native
-  def setChildrenMetaLimits(node: webgmeLib.CoreNs.Node, min: scala.Double, max: scala.Double): js.UndefOr[nodeLib.Error] = js.native
+  def setChildrenMetaLimits(node: webgmeLib.CoreNs.Node): js.UndefOr[stdLib.Error] = js.native
+  def setChildrenMetaLimits(node: webgmeLib.CoreNs.Node, min: scala.Double): js.UndefOr[stdLib.Error] = js.native
+  def setChildrenMetaLimits(node: webgmeLib.CoreNs.Node, min: scala.Double, max: scala.Double): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param node the node in question.
@@ -1736,7 +1736,7 @@ trait Core extends js.Object {
     node: webgmeLib.CoreNs.Node,
     name: webgmeLib.GmeCommonNs.Name,
     constraint: webgmeLib.CoreNs.Constraint
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param node the node in question.
@@ -1752,7 +1752,7 @@ trait Core extends js.Object {
     node: webgmeLib.CoreNs.Node,
     guid: webgmeLib.CoreNs.GUID,
     callback: webgmeLib.GmeCommonNs.ResultCallback[webgmeLib.CoreNs.DataObject]
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param node the node in question.
@@ -1763,14 +1763,14 @@ trait Core extends js.Object {
     setName: java.lang.String,
     memberPath: java.lang.String,
     SVGPathSegLinetoHorizontalAbsme: java.lang.String
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   def setMemberAttribute(
     node: webgmeLib.CoreNs.Node,
     setName: java.lang.String,
     memberPath: java.lang.String,
     SVGPathSegLinetoHorizontalAbsme: java.lang.String,
     value: webgmeLib.GmeCommonNs.InAttr
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param node the node in question.
@@ -1781,55 +1781,55 @@ trait Core extends js.Object {
     setName: java.lang.String,
     memberPath: java.lang.String,
     regName: java.lang.String
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   def setMemberRegistry(
     node: webgmeLib.CoreNs.Node,
     setName: java.lang.String,
     memberPath: java.lang.String,
     regName: java.lang.String,
     value: webgmeLib.GmeCommonNs.InAttr
-  ): js.UndefOr[nodeLib.Error] = js.native
-  def setPointer(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
+  def setPointer(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param node the node in question.
     * @return 
     */
-  def setPointer(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name, target: webgmeLib.CoreNs.Node): js.UndefOr[nodeLib.Error] = js.native
+  def setPointer(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name, target: webgmeLib.CoreNs.Node): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param node the node in question.
     * @return 
     */
-  def setPointerMetaLimits(node: webgmeLib.CoreNs.Node, memberPath: java.lang.String): js.UndefOr[nodeLib.Error] = js.native
-  def setPointerMetaLimits(node: webgmeLib.CoreNs.Node, memberPath: java.lang.String, min: scala.Double): js.UndefOr[nodeLib.Error] = js.native
-  def setPointerMetaLimits(node: webgmeLib.CoreNs.Node, memberPath: java.lang.String, min: scala.Double, max: scala.Double): js.UndefOr[nodeLib.Error] = js.native
+  def setPointerMetaLimits(node: webgmeLib.CoreNs.Node, memberPath: java.lang.String): js.UndefOr[stdLib.Error] = js.native
+  def setPointerMetaLimits(node: webgmeLib.CoreNs.Node, memberPath: java.lang.String, min: scala.Double): js.UndefOr[stdLib.Error] = js.native
+  def setPointerMetaLimits(node: webgmeLib.CoreNs.Node, memberPath: java.lang.String, min: scala.Double, max: scala.Double): js.UndefOr[stdLib.Error] = js.native
   /**
     * TODO
     * @param node the node in question.
     * @return 
     */
-  def setPointerMetaTarget(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name, target: webgmeLib.CoreNs.Node): js.UndefOr[nodeLib.Error] = js.native
+  def setPointerMetaTarget(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name, target: webgmeLib.CoreNs.Node): js.UndefOr[stdLib.Error] = js.native
   def setPointerMetaTarget(
     node: webgmeLib.CoreNs.Node,
     name: webgmeLib.GmeCommonNs.Name,
     target: webgmeLib.CoreNs.Node,
     min: scala.Double
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   def setPointerMetaTarget(
     node: webgmeLib.CoreNs.Node,
     name: webgmeLib.GmeCommonNs.Name,
     target: webgmeLib.CoreNs.Node,
     min: scala.Double,
     max: scala.Double
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
   /** 
     * TODO
     * Get the assigned registry 
     * @param node the node in question.
     * @return 
     */
-  def setRegistry(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name, value: webgmeLib.GmeCommonNs.InAttr): js.UndefOr[nodeLib.Error] = js.native
+  def setRegistry(node: webgmeLib.CoreNs.Node, name: webgmeLib.GmeCommonNs.Name, value: webgmeLib.GmeCommonNs.InAttr): js.UndefOr[stdLib.Error] = js.native
   // takes *no* callback & returns a promise
   /**
     * TODO

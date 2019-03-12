@@ -30,11 +30,11 @@ object Anon_Children {
     hasRemove: scala.Boolean,
     hasToolbar: scala.Boolean,
     index: scala.Double,
-    onDropIndexClick: js.Function1[scala.Double, js.Function1[/* event */ js.Any, scala.Unit]],
-    onReorderClick: js.Function2[scala.Double, scala.Double, js.Function1[/* event */ js.Any, scala.Unit]],
+    onDropIndexClick: scala.Double => js.Function1[/* event */ js.Any, scala.Unit],
+    onReorderClick: (scala.Double, scala.Double) => js.Function1[/* event */ js.Any, scala.Unit],
     readonly: scala.Boolean
   ): Anon_Children = {
-    val __obj = js.Dynamic.literal(children = children, className = className, disabled = disabled, hasMoveDown = hasMoveDown, hasMoveUp = hasMoveUp, hasRemove = hasRemove, hasToolbar = hasToolbar, index = index, onDropIndexClick = onDropIndexClick, onReorderClick = onReorderClick, readonly = readonly)
+    val __obj = js.Dynamic.literal(children = children, className = className, disabled = disabled, hasMoveDown = hasMoveDown, hasMoveUp = hasMoveUp, hasRemove = hasRemove, hasToolbar = hasToolbar, index = index, onDropIndexClick = js.Any.fromFunction1(onDropIndexClick), onReorderClick = js.Any.fromFunction2(onReorderClick), readonly = readonly)
   
     __obj.asInstanceOf[Anon_Children]
   }

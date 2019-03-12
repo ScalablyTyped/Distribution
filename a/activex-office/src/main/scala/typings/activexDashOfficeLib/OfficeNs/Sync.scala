@@ -11,7 +11,7 @@ class Sync protected () extends js.Object {
   val Application: js.Any = js.native
   val Creator: scala.Double = js.native
   val ErrorType: MsoSyncErrorType = js.native
-  val LastSyncTime: activexDashInteropLib.VarDate = js.native
+  val LastSyncTime: stdLib.VarDate = js.native
   var `Office.Sync_typekey`: Sync = js.native
   val Parent: js.Any = js.native
   val Status: MsoSyncStatusType = js.native

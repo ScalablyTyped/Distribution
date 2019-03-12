@@ -12,8 +12,8 @@ trait Plugin extends js.Object {
 
 object Plugin {
   @scala.inline
-  def apply(apply: js.Function1[/* repeated */ js.Any, scala.Unit]): Plugin = {
-    val __obj = js.Dynamic.literal(apply = apply)
+  def apply(apply: /* repeated */ js.Any => scala.Unit): Plugin = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
   
     __obj.asInstanceOf[Plugin]
   }

@@ -18,14 +18,11 @@ trait LocationHelperConfig[Props] extends js.Object {
 object LocationHelperConfig {
   @scala.inline
   def apply[Props](
-    locationSelector: js.Function1[
-      /* props */ Props, 
-      historyLib.historyMod.LocationDescriptorObject[historyLib.historyMod.LocationState]
-    ] = null,
+    locationSelector: /* props */ Props => historyLib.historyMod.LocationDescriptorObject[historyLib.historyMod.LocationState] = null,
     redirectQueryParamName: java.lang.String = null
   ): LocationHelperConfig[Props] = {
     val __obj = js.Dynamic.literal()
-    if (locationSelector != null) __obj.updateDynamic("locationSelector")(locationSelector)
+    if (locationSelector != null) __obj.updateDynamic("locationSelector")(js.Any.fromFunction1(locationSelector))
     if (redirectQueryParamName != null) __obj.updateDynamic("redirectQueryParamName")(redirectQueryParamName)
     __obj.asInstanceOf[LocationHelperConfig[Props]]
   }

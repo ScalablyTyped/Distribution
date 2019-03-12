@@ -15,14 +15,14 @@ trait Option extends js.Object {
 object Option {
   @scala.inline
   def apply(
-    load: js.Function1[/* element */ stdLib.Element, scala.Unit] = null,
-    loaded: js.Function1[/* element */ stdLib.Element, scala.Unit] = null,
+    load: /* element */ stdLib.Element => scala.Unit = null,
+    loaded: /* element */ stdLib.Element => scala.Unit = null,
     rootMargin: java.lang.String = null,
     threshold: scala.Int | scala.Double = null
   ): Option = {
     val __obj = js.Dynamic.literal()
-    if (load != null) __obj.updateDynamic("load")(load)
-    if (loaded != null) __obj.updateDynamic("loaded")(loaded)
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
+    if (loaded != null) __obj.updateDynamic("loaded")(js.Any.fromFunction1(loaded))
     if (rootMargin != null) __obj.updateDynamic("rootMargin")(rootMargin)
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[Option]

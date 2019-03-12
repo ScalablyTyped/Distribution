@@ -33,7 +33,7 @@ object Anon_Axes {
     classes: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     colors: org.scalablytyped.runtime.StringDictionary[java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor] = null,
     columns: js.Array[c3Lib.c3Mod.PrimitiveArray] = null,
-    done: js.Function0[_] = null,
+    done: () => _ = null,
     json: js.Object = null,
     keys: Anon_Value = null,
     names: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
@@ -50,7 +50,7 @@ object Anon_Axes {
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (done != null) __obj.updateDynamic("done")(done)
+    if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction0(done))
     if (json != null) __obj.updateDynamic("json")(json)
     if (keys != null) __obj.updateDynamic("keys")(keys)
     if (names != null) __obj.updateDynamic("names")(names)

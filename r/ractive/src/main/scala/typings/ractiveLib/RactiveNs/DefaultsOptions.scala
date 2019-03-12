@@ -19,7 +19,7 @@ object DefaultsOptions {
     adapt: js.Array[java.lang.String | AdaptorPlugin] = null,
     adaptors: AdaptorPlugins = null,
     append: scala.Boolean | js.Any = null,
-    beforeInit: js.Function1[/* options */ ExtendOptions, scala.Unit] = null,
+    beforeInit: /* options */ ExtendOptions => scala.Unit = null,
     complete: js.Function = null,
     components: ComponentPlugins = null,
     computed: js.Object = null,
@@ -31,7 +31,7 @@ object DefaultsOptions {
     easing: java.lang.String | js.Function = null,
     el: java.lang.String | stdLib.HTMLElement | js.Any = null,
     events: EventPlugins = null,
-    init: js.Function1[/* options */ ExtendOptions, scala.Unit] = null,
+    init: /* options */ ExtendOptions => scala.Unit = null,
     interpolators: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     isolated: js.UndefOr[scala.Boolean] = js.undefined,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
@@ -39,17 +39,17 @@ object DefaultsOptions {
     modifyArrays: js.UndefOr[scala.Boolean] = js.undefined,
     noCSSTransform: js.UndefOr[scala.Boolean] = js.undefined,
     noIntro: js.UndefOr[scala.Boolean] = js.undefined,
-    onchange: js.Function1[/* options */ NewOptions, scala.Unit] = null,
-    oncomplete: js.Function0[scala.Unit] = null,
-    onconfig: js.Function0[scala.Unit] = null,
-    onconstruct: js.Function1[/* options */ NewOptions, scala.Unit] = null,
-    ondetach: js.Function0[scala.Unit] = null,
-    oninit: js.Function0[scala.Unit] = null,
-    oninsert: js.Function0[scala.Unit] = null,
-    onrender: js.Function0[scala.Unit] = null,
-    onteardown: js.Function0[scala.Unit] = null,
-    onunrender: js.Function0[scala.Unit] = null,
-    onupdate: js.Function0[scala.Unit] = null,
+    onchange: /* options */ NewOptions => scala.Unit = null,
+    oncomplete: () => scala.Unit = null,
+    onconfig: () => scala.Unit = null,
+    onconstruct: /* options */ NewOptions => scala.Unit = null,
+    ondetach: () => scala.Unit = null,
+    oninit: () => scala.Unit = null,
+    oninsert: () => scala.Unit = null,
+    onrender: () => scala.Unit = null,
+    onteardown: () => scala.Unit = null,
+    onunrender: () => scala.Unit = null,
+    onupdate: () => scala.Unit = null,
     partials: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     preserveWhitespace: js.UndefOr[scala.Boolean] = js.undefined,
     sanitize: scala.Boolean | SanitizeOptions = null,
@@ -66,7 +66,7 @@ object DefaultsOptions {
     if (adapt != null) __obj.updateDynamic("adapt")(adapt)
     if (adaptors != null) __obj.updateDynamic("adaptors")(adaptors)
     if (append != null) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
-    if (beforeInit != null) __obj.updateDynamic("beforeInit")(beforeInit)
+    if (beforeInit != null) __obj.updateDynamic("beforeInit")(js.Any.fromFunction1(beforeInit))
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (components != null) __obj.updateDynamic("components")(components)
     if (computed != null) __obj.updateDynamic("computed")(computed)
@@ -78,7 +78,7 @@ object DefaultsOptions {
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events)
-    if (init != null) __obj.updateDynamic("init")(init)
+    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (interpolators != null) __obj.updateDynamic("interpolators")(interpolators)
     if (!js.isUndefined(isolated)) __obj.updateDynamic("isolated")(isolated)
     if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
@@ -86,17 +86,17 @@ object DefaultsOptions {
     if (!js.isUndefined(modifyArrays)) __obj.updateDynamic("modifyArrays")(modifyArrays)
     if (!js.isUndefined(noCSSTransform)) __obj.updateDynamic("noCSSTransform")(noCSSTransform)
     if (!js.isUndefined(noIntro)) __obj.updateDynamic("noIntro")(noIntro)
-    if (onchange != null) __obj.updateDynamic("onchange")(onchange)
-    if (oncomplete != null) __obj.updateDynamic("oncomplete")(oncomplete)
-    if (onconfig != null) __obj.updateDynamic("onconfig")(onconfig)
-    if (onconstruct != null) __obj.updateDynamic("onconstruct")(onconstruct)
-    if (ondetach != null) __obj.updateDynamic("ondetach")(ondetach)
-    if (oninit != null) __obj.updateDynamic("oninit")(oninit)
-    if (oninsert != null) __obj.updateDynamic("oninsert")(oninsert)
-    if (onrender != null) __obj.updateDynamic("onrender")(onrender)
-    if (onteardown != null) __obj.updateDynamic("onteardown")(onteardown)
-    if (onunrender != null) __obj.updateDynamic("onunrender")(onunrender)
-    if (onupdate != null) __obj.updateDynamic("onupdate")(onupdate)
+    if (onchange != null) __obj.updateDynamic("onchange")(js.Any.fromFunction1(onchange))
+    if (oncomplete != null) __obj.updateDynamic("oncomplete")(js.Any.fromFunction0(oncomplete))
+    if (onconfig != null) __obj.updateDynamic("onconfig")(js.Any.fromFunction0(onconfig))
+    if (onconstruct != null) __obj.updateDynamic("onconstruct")(js.Any.fromFunction1(onconstruct))
+    if (ondetach != null) __obj.updateDynamic("ondetach")(js.Any.fromFunction0(ondetach))
+    if (oninit != null) __obj.updateDynamic("oninit")(js.Any.fromFunction0(oninit))
+    if (oninsert != null) __obj.updateDynamic("oninsert")(js.Any.fromFunction0(oninsert))
+    if (onrender != null) __obj.updateDynamic("onrender")(js.Any.fromFunction0(onrender))
+    if (onteardown != null) __obj.updateDynamic("onteardown")(js.Any.fromFunction0(onteardown))
+    if (onunrender != null) __obj.updateDynamic("onunrender")(js.Any.fromFunction0(onunrender))
+    if (onupdate != null) __obj.updateDynamic("onupdate")(js.Any.fromFunction0(onupdate))
     if (partials != null) __obj.updateDynamic("partials")(partials)
     if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace)
     if (sanitize != null) __obj.updateDynamic("sanitize")(sanitize.asInstanceOf[js.Any])

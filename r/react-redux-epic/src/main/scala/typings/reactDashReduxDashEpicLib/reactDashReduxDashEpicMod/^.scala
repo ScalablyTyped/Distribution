@@ -12,6 +12,6 @@ object ^ extends js.Object {
     element: reactLib.reactMod.ReactNs.ReactElement[_],
     wrappedEpic: reduxDashObservableLib.reduxDashObservableMod.Epic[_, _, _, _]
   ): js.Any = js.native
-  def wrapRootEpic[T /* <: reactDashReduxDashEpicLib.reactDashReduxDashEpicMod.Action */, S, D, O /* <: T */](epic: reduxDashObservableLib.reduxDashObservableMod.Epic[T, S, D, O]): reduxDashObservableLib.reduxDashObservableMod.Epic[T, S, D, O] = js.native
+  def wrapRootEpic[T /* <: Action */, S, D, O /* <: T */](epic: reduxDashObservableLib.reduxDashObservableMod.Epic[T, S, D, O]): reduxDashObservableLib.reduxDashObservableMod.Epic[T, S, D, O] = js.native
 }
 

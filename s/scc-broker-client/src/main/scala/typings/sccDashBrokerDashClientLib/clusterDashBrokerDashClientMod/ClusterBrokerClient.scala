@@ -20,7 +20,7 @@ trait ClusterBrokerClient
   @JSName("on")
   def on_error(
     event: sccDashBrokerDashClientLib.sccDashBrokerDashClientLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_message(

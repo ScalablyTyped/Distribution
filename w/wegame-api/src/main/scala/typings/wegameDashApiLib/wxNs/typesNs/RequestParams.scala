@@ -40,22 +40,22 @@ object RequestParams {
   @scala.inline
   def apply(
     url: java.lang.String,
-    complete: js.Function0[scala.Unit] = null,
+    complete: () => scala.Unit = null,
     data: java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     dataType: wegameDashApiLib.wegameDashApiLibStrings.json | wegameDashApiLib.wegameDashApiLibStrings.arraybuffer = null,
-    fail: js.Function0[scala.Unit] = null,
+    fail: () => scala.Unit = null,
     header: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     method: RequestMethod = null,
-    success: js.Function1[/* res */ wegameDashApiLib.Anon_DataHeader, scala.Unit] = null
+    success: /* res */ wegameDashApiLib.Anon_DataHeader => scala.Unit = null
   ): RequestParams = {
     val __obj = js.Dynamic.literal(url = url)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (header != null) __obj.updateDynamic("header")(header)
     if (method != null) __obj.updateDynamic("method")(method)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[RequestParams]
   }
 }

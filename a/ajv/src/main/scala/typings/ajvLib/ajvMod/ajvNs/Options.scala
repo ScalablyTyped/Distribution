@@ -76,11 +76,7 @@ object Options {
     formats: js.Object = null,
     inlineRefs: scala.Boolean | scala.Double = null,
     jsonPointers: js.UndefOr[scala.Boolean] = js.undefined,
-    loadSchema: js.Function2[
-      /* uri */ java.lang.String, 
-      /* cb */ js.UndefOr[js.Function2[/* err */ stdLib.Error, /* schema */ js.Object, scala.Unit]], 
-      js.Thenable[js.Object | scala.Boolean]
-    ] = null,
+    loadSchema: (/* uri */ java.lang.String, /* cb */ js.UndefOr[js.Function2[/* err */ stdLib.Error, /* schema */ js.Object, scala.Unit]]) => js.Thenable[js.Object | scala.Boolean] = null,
     logger: CustomLogger | ajvLib.ajvLibNumbers.`false` = null,
     loopRequired: scala.Int | scala.Double = null,
     messages: js.UndefOr[scala.Boolean] = js.undefined,
@@ -90,7 +86,7 @@ object Options {
     nullable: js.UndefOr[scala.Boolean] = js.undefined,
     ownProperties: js.UndefOr[scala.Boolean] = js.undefined,
     passContext: js.UndefOr[scala.Boolean] = js.undefined,
-    processCode: js.Function1[/* code */ java.lang.String, java.lang.String] = null,
+    processCode: /* code */ java.lang.String => java.lang.String = null,
     removeAdditional: scala.Boolean | ajvLib.ajvLibStrings.all | ajvLib.ajvLibStrings.failing = null,
     schemaId: ajvLib.ajvLibStrings.DOLLARid | ajvLib.ajvLibStrings.id | ajvLib.ajvLibStrings.auto = null,
     schemas: js.Array[js.Object] | js.Object = null,
@@ -118,7 +114,7 @@ object Options {
     if (formats != null) __obj.updateDynamic("formats")(formats)
     if (inlineRefs != null) __obj.updateDynamic("inlineRefs")(inlineRefs.asInstanceOf[js.Any])
     if (!js.isUndefined(jsonPointers)) __obj.updateDynamic("jsonPointers")(jsonPointers)
-    if (loadSchema != null) __obj.updateDynamic("loadSchema")(loadSchema)
+    if (loadSchema != null) __obj.updateDynamic("loadSchema")(js.Any.fromFunction2(loadSchema))
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (loopRequired != null) __obj.updateDynamic("loopRequired")(loopRequired.asInstanceOf[js.Any])
     if (!js.isUndefined(messages)) __obj.updateDynamic("messages")(messages)
@@ -128,7 +124,7 @@ object Options {
     if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable)
     if (!js.isUndefined(ownProperties)) __obj.updateDynamic("ownProperties")(ownProperties)
     if (!js.isUndefined(passContext)) __obj.updateDynamic("passContext")(passContext)
-    if (processCode != null) __obj.updateDynamic("processCode")(processCode)
+    if (processCode != null) __obj.updateDynamic("processCode")(js.Any.fromFunction1(processCode))
     if (removeAdditional != null) __obj.updateDynamic("removeAdditional")(removeAdditional.asInstanceOf[js.Any])
     if (schemaId != null) __obj.updateDynamic("schemaId")(schemaId.asInstanceOf[js.Any])
     if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])

@@ -22,9 +22,9 @@ object IBackgroundTransferBase {
     method: java.lang.String,
     proxyCredential: winrtLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential,
     serverCredential: winrtLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential,
-    setRequestHeader: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    setRequestHeader: (java.lang.String, java.lang.String) => scala.Unit
   ): IBackgroundTransferBase = {
-    val __obj = js.Dynamic.literal(costPolicy = costPolicy, group = group, method = method, proxyCredential = proxyCredential, serverCredential = serverCredential, setRequestHeader = setRequestHeader)
+    val __obj = js.Dynamic.literal(costPolicy = costPolicy, group = group, method = method, proxyCredential = proxyCredential, serverCredential = serverCredential, setRequestHeader = js.Any.fromFunction2(setRequestHeader))
   
     __obj.asInstanceOf[IBackgroundTransferBase]
   }

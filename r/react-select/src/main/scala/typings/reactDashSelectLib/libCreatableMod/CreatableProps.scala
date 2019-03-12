@@ -49,27 +49,18 @@ object CreatableProps {
   def apply[OptionType](
     allowCreateWhileLoading: js.UndefOr[scala.Boolean] = js.undefined,
     createOptionPosition: reactDashSelectLib.reactDashSelectLibStrings.first | reactDashSelectLib.reactDashSelectLibStrings.last = null,
-    formatCreateLabel: js.Function1[/* inputValue */ java.lang.String, reactLib.reactMod.ReactNs.ReactNode] = null,
-    getNewOptionData: js.Function2[
-      /* inputValue */ java.lang.String, 
-      /* optionLabel */ reactLib.reactMod.ReactNs.ReactNode, 
-      OptionType
-    ] = null,
-    isValidNewOption: js.Function3[
-      /* inputValue */ java.lang.String, 
-      /* value */ reactDashSelectLib.libTypesMod.ValueType[OptionType], 
-      /* options */ reactDashSelectLib.libTypesMod.OptionsType[OptionType], 
-      scala.Boolean
-    ] = null,
-    onCreateOption: js.Function1[/* inputValue */ java.lang.String, scala.Unit] = null
+    formatCreateLabel: /* inputValue */ java.lang.String => reactLib.reactMod.ReactNs.ReactNode = null,
+    getNewOptionData: (/* inputValue */ java.lang.String, /* optionLabel */ reactLib.reactMod.ReactNs.ReactNode) => OptionType = null,
+    isValidNewOption: (/* inputValue */ java.lang.String, /* value */ reactDashSelectLib.libTypesMod.ValueType[OptionType], /* options */ reactDashSelectLib.libTypesMod.OptionsType[OptionType]) => scala.Boolean = null,
+    onCreateOption: /* inputValue */ java.lang.String => scala.Unit = null
   ): CreatableProps[OptionType] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowCreateWhileLoading)) __obj.updateDynamic("allowCreateWhileLoading")(allowCreateWhileLoading)
     if (createOptionPosition != null) __obj.updateDynamic("createOptionPosition")(createOptionPosition.asInstanceOf[js.Any])
-    if (formatCreateLabel != null) __obj.updateDynamic("formatCreateLabel")(formatCreateLabel)
-    if (getNewOptionData != null) __obj.updateDynamic("getNewOptionData")(getNewOptionData)
-    if (isValidNewOption != null) __obj.updateDynamic("isValidNewOption")(isValidNewOption)
-    if (onCreateOption != null) __obj.updateDynamic("onCreateOption")(onCreateOption)
+    if (formatCreateLabel != null) __obj.updateDynamic("formatCreateLabel")(js.Any.fromFunction1(formatCreateLabel))
+    if (getNewOptionData != null) __obj.updateDynamic("getNewOptionData")(js.Any.fromFunction2(getNewOptionData))
+    if (isValidNewOption != null) __obj.updateDynamic("isValidNewOption")(js.Any.fromFunction3(isValidNewOption))
+    if (onCreateOption != null) __obj.updateDynamic("onCreateOption")(js.Any.fromFunction1(onCreateOption))
     __obj.asInstanceOf[CreatableProps[OptionType]]
   }
 }

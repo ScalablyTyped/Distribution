@@ -22,20 +22,9 @@ trait OnLayoutChangeListener extends js.Object {
 object OnLayoutChangeListener {
   @scala.inline
   def apply(
-    onLayoutChange: js.Function9[
-      androiduixLib.androidNs.viewNs.View, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ]
+    onLayoutChange: (androiduixLib.androidNs.viewNs.View, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit
   ): OnLayoutChangeListener = {
-    val __obj = js.Dynamic.literal(onLayoutChange = onLayoutChange)
+    val __obj = js.Dynamic.literal(onLayoutChange = js.Any.fromFunction9(onLayoutChange))
   
     __obj.asInstanceOf[OnLayoutChangeListener]
   }

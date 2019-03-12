@@ -14,11 +14,11 @@ trait Store extends js.Object {
 object Store {
   @scala.inline
   def apply(
-    decrement: js.Function1[java.lang.String, scala.Unit],
-    incr: js.Function2[java.lang.String, StoreIncrementCallback, scala.Unit],
-    resetKey: js.Function1[java.lang.String, scala.Unit]
+    decrement: java.lang.String => scala.Unit,
+    incr: (java.lang.String, StoreIncrementCallback) => scala.Unit,
+    resetKey: java.lang.String => scala.Unit
   ): Store = {
-    val __obj = js.Dynamic.literal(decrement = decrement, incr = incr, resetKey = resetKey)
+    val __obj = js.Dynamic.literal(decrement = js.Any.fromFunction1(decrement), incr = js.Any.fromFunction2(incr), resetKey = js.Any.fromFunction1(resetKey))
   
     __obj.asInstanceOf[Store]
   }

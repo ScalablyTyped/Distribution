@@ -17,12 +17,12 @@ object Props {
   def apply(
     isOpen: scala.Boolean,
     className: java.lang.String = null,
-    onRest: js.Function0[scala.Unit] = null,
+    onRest: () => scala.Unit = null,
     transition: java.lang.String = null
   ): Props = {
     val __obj = js.Dynamic.literal(isOpen = isOpen)
     if (className != null) __obj.updateDynamic("className")(className)
-    if (onRest != null) __obj.updateDynamic("onRest")(onRest)
+    if (onRest != null) __obj.updateDynamic("onRest")(js.Any.fromFunction0(onRest))
     if (transition != null) __obj.updateDynamic("transition")(transition)
     __obj.asInstanceOf[Props]
   }

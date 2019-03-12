@@ -20,17 +20,17 @@ trait IAccessControlEntryKey extends js.Object {
 object IAccessControlEntryKey {
   @scala.inline
   def apply(
-    Clone: js.Function0[IAccessControlEntryKey],
-    GetResolvedPseudoUserOrGroupIDs: js.Function0[IUserOrUserGroupIDs],
+    Clone: () => IAccessControlEntryKey,
+    GetResolvedPseudoUserOrGroupIDs: () => IUserOrUserGroupIDs,
     HasConcreteUserOrGroupID: scala.Boolean,
     IsGroup: scala.Boolean,
     IsPseudoUser: scala.Boolean,
     PseudoUserID: IIndirectPropertyID,
-    ResetResolvedPseudoUserOrGroupIDs: js.Function0[scala.Unit],
-    SetUserOrGroupID: js.Function2[scala.Double, scala.Boolean, scala.Unit],
+    ResetResolvedPseudoUserOrGroupIDs: () => scala.Unit,
+    SetUserOrGroupID: (scala.Double, scala.Boolean) => scala.Unit,
     UserOrGroupID: scala.Double
   ): IAccessControlEntryKey = {
-    val __obj = js.Dynamic.literal(Clone = Clone, GetResolvedPseudoUserOrGroupIDs = GetResolvedPseudoUserOrGroupIDs, HasConcreteUserOrGroupID = HasConcreteUserOrGroupID, IsGroup = IsGroup, IsPseudoUser = IsPseudoUser, PseudoUserID = PseudoUserID, ResetResolvedPseudoUserOrGroupIDs = ResetResolvedPseudoUserOrGroupIDs, SetUserOrGroupID = SetUserOrGroupID, UserOrGroupID = UserOrGroupID)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), GetResolvedPseudoUserOrGroupIDs = js.Any.fromFunction0(GetResolvedPseudoUserOrGroupIDs), HasConcreteUserOrGroupID = HasConcreteUserOrGroupID, IsGroup = IsGroup, IsPseudoUser = IsPseudoUser, PseudoUserID = PseudoUserID, ResetResolvedPseudoUserOrGroupIDs = js.Any.fromFunction0(ResetResolvedPseudoUserOrGroupIDs), SetUserOrGroupID = js.Any.fromFunction2(SetUserOrGroupID), UserOrGroupID = UserOrGroupID)
   
     __obj.asInstanceOf[IAccessControlEntryKey]
   }

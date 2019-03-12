@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jasmine-expect/dist/toHaveHtmlString", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val toHaveHtmlString: jasmineDashExpectLib.distToHaveHtmlStringMod.ToHaveHtmlString = js.native
+  val toHaveHtmlString: ToHaveHtmlString = js.native
 }
 

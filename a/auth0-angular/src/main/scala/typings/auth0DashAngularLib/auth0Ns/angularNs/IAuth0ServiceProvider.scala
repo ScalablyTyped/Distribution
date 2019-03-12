@@ -21,10 +21,10 @@ trait IAuth0ServiceProvider extends js.Object {
 object IAuth0ServiceProvider {
   @scala.inline
   def apply(
-    init: js.Function1[IAuth0ClientOptions, scala.Unit],
-    on: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, _], scala.Unit]
+    init: IAuth0ClientOptions => scala.Unit,
+    on: (java.lang.String, js.Function1[/* repeated */ js.Any, _]) => scala.Unit
   ): IAuth0ServiceProvider = {
-    val __obj = js.Dynamic.literal(init = init, on = on)
+    val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init), on = js.Any.fromFunction2(on))
   
     __obj.asInstanceOf[IAuth0ServiceProvider]
   }

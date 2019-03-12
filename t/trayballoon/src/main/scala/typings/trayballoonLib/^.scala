@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  def trayballoonFn(opts: trayballoonLib.TrayballoonOptions, fn: js.Function): scala.Unit = js.native
+  def trayballoonFn(opts: TrayballoonOptions, fn: js.Function): scala.Unit = js.native
 }
 

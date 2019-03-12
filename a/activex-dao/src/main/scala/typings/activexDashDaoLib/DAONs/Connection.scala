@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Connection protected () extends js.Object {
   val Connect: java.lang.String = js.native
   var `DAO.Connection_typekey`: Connection = js.native
-  val Database: Database = js.native
+  val Database: activexDashDaoLib.DAONs.Database = js.native
   val Name: java.lang.String = js.native
   @JSName("QueryDefs")
   val QueryDefs_Original: QueryDefs = js.native

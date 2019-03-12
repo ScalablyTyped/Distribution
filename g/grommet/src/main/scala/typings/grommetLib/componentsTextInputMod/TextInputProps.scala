@@ -37,9 +37,9 @@ object TextInputProps {
     id: java.lang.String = null,
     messages: grommetLib.Anon_EnterSelect = null,
     name: java.lang.String = null,
-    onSelect: js.Function1[/* x */ grommetLib.Anon_Suggestion, scala.Unit] = null,
-    onSuggestionsClose: js.Function1[/* repeated */ js.Any, _] = null,
-    onSuggestionsOpen: js.Function1[/* repeated */ js.Any, _] = null,
+    onSelect: /* x */ grommetLib.Anon_Suggestion => scala.Unit = null,
+    onSuggestionsClose: /* repeated */ js.Any => _ = null,
+    onSuggestionsOpen: /* repeated */ js.Any => _ = null,
     placeholder: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
     plain: js.UndefOr[scala.Boolean] = js.undefined,
     size: grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String = null,
@@ -54,9 +54,9 @@ object TextInputProps {
     if (id != null) __obj.updateDynamic("id")(id)
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (onSuggestionsClose != null) __obj.updateDynamic("onSuggestionsClose")(onSuggestionsClose)
-    if (onSuggestionsOpen != null) __obj.updateDynamic("onSuggestionsOpen")(onSuggestionsOpen)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
+    if (onSuggestionsClose != null) __obj.updateDynamic("onSuggestionsClose")(js.Any.fromFunction1(onSuggestionsClose))
+    if (onSuggestionsOpen != null) __obj.updateDynamic("onSuggestionsOpen")(js.Any.fromFunction1(onSuggestionsOpen))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

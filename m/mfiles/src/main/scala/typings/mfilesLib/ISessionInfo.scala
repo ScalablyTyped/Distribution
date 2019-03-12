@@ -63,14 +63,14 @@ object ISessionInfo {
     CanMaterializeViews: scala.Boolean,
     CanSeeAllObjects: scala.Boolean,
     CanSeeDeletedObjects: scala.Boolean,
-    CheckObjectAccess: js.Function2[IAccessControlList, mfilesLib.MFilesNs.MFObjectAccess, scala.Boolean],
-    CheckObjectTypeAccess: js.Function2[IAccessControlList, mfilesLib.MFilesNs.MFObjectTypeAccess, scala.Boolean],
-    CheckPropertyDefAccess: js.Function2[IAccessControlList, mfilesLib.MFilesNs.MFPropertyDefAccess, scala.Boolean],
-    CheckVaultAccess: js.Function1[mfilesLib.MFilesNs.MFVaultAccess, scala.Boolean],
+    CheckObjectAccess: (IAccessControlList, mfilesLib.MFilesNs.MFObjectAccess) => scala.Boolean,
+    CheckObjectTypeAccess: (IAccessControlList, mfilesLib.MFilesNs.MFObjectTypeAccess) => scala.Boolean,
+    CheckPropertyDefAccess: (IAccessControlList, mfilesLib.MFilesNs.MFPropertyDefAccess) => scala.Boolean,
+    CheckVaultAccess: mfilesLib.MFilesNs.MFVaultAccess => scala.Boolean,
     ClientCulture: java.lang.String,
-    CloneFrom: js.Function1[ISessionInfo, scala.Unit],
+    CloneFrom: ISessionInfo => scala.Unit,
     InternalUser: scala.Boolean,
-    IsLoggedOnUserSubstituteOfUser: js.Function1[scala.Double, scala.Boolean],
+    IsLoggedOnUserSubstituteOfUser: scala.Double => scala.Boolean,
     IsSharingPublicLinksAllowed: scala.Boolean,
     IsSharingPublicLinksToLatestVersionAllowed: scala.Boolean,
     KeepAliveIntervalInSeconds: scala.Double,
@@ -85,7 +85,7 @@ object ISessionInfo {
     UserID: scala.Double,
     VaultGUID: java.lang.String
   ): ISessionInfo = {
-    val __obj = js.Dynamic.literal(ACLMode = ACLMode, AccountName = AccountName, AuthenticationType = AuthenticationType, CanCreateObjects = CanCreateObjects, CanForceUndoCheckout = CanForceUndoCheckout, CanManageCommonUISettings = CanManageCommonUISettings, CanManageCommonViews = CanManageCommonViews, CanManageTraditionalFolders = CanManageTraditionalFolders, CanMaterializeViews = CanMaterializeViews, CanSeeAllObjects = CanSeeAllObjects, CanSeeDeletedObjects = CanSeeDeletedObjects, CheckObjectAccess = CheckObjectAccess, CheckObjectTypeAccess = CheckObjectTypeAccess, CheckPropertyDefAccess = CheckPropertyDefAccess, CheckVaultAccess = CheckVaultAccess, ClientCulture = ClientCulture, CloneFrom = CloneFrom, InternalUser = InternalUser, IsLoggedOnUserSubstituteOfUser = IsLoggedOnUserSubstituteOfUser, IsSharingPublicLinksAllowed = IsSharingPublicLinksAllowed, IsSharingPublicLinksToLatestVersionAllowed = IsSharingPublicLinksToLatestVersionAllowed, KeepAliveIntervalInSeconds = KeepAliveIntervalInSeconds, Language = Language, LicenseAllowsModifications = LicenseAllowsModifications, LocalComputerName = LocalComputerName, ProductMode = ProductMode, ServerVersion = ServerVersion, TimeZoneInfo = TimeZoneInfo, UserAndGroupMemberships = UserAndGroupMemberships, UserAndSubstitutedByMe = UserAndSubstitutedByMe, UserID = UserID, VaultGUID = VaultGUID)
+    val __obj = js.Dynamic.literal(ACLMode = ACLMode, AccountName = AccountName, AuthenticationType = AuthenticationType, CanCreateObjects = CanCreateObjects, CanForceUndoCheckout = CanForceUndoCheckout, CanManageCommonUISettings = CanManageCommonUISettings, CanManageCommonViews = CanManageCommonViews, CanManageTraditionalFolders = CanManageTraditionalFolders, CanMaterializeViews = CanMaterializeViews, CanSeeAllObjects = CanSeeAllObjects, CanSeeDeletedObjects = CanSeeDeletedObjects, CheckObjectAccess = js.Any.fromFunction2(CheckObjectAccess), CheckObjectTypeAccess = js.Any.fromFunction2(CheckObjectTypeAccess), CheckPropertyDefAccess = js.Any.fromFunction2(CheckPropertyDefAccess), CheckVaultAccess = js.Any.fromFunction1(CheckVaultAccess), ClientCulture = ClientCulture, CloneFrom = js.Any.fromFunction1(CloneFrom), InternalUser = InternalUser, IsLoggedOnUserSubstituteOfUser = js.Any.fromFunction1(IsLoggedOnUserSubstituteOfUser), IsSharingPublicLinksAllowed = IsSharingPublicLinksAllowed, IsSharingPublicLinksToLatestVersionAllowed = IsSharingPublicLinksToLatestVersionAllowed, KeepAliveIntervalInSeconds = KeepAliveIntervalInSeconds, Language = Language, LicenseAllowsModifications = LicenseAllowsModifications, LocalComputerName = LocalComputerName, ProductMode = ProductMode, ServerVersion = ServerVersion, TimeZoneInfo = TimeZoneInfo, UserAndGroupMemberships = UserAndGroupMemberships, UserAndSubstitutedByMe = UserAndSubstitutedByMe, UserID = UserID, VaultGUID = VaultGUID)
   
     __obj.asInstanceOf[ISessionInfo]
   }

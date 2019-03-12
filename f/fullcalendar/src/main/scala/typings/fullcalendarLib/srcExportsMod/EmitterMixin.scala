@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "EmitterMixin")
 @js.native
 class EmitterMixin ()
-  extends fullcalendarLib.emittermixinMod.default
+  extends fullcalendarLib.emitterMixinMod.default
 

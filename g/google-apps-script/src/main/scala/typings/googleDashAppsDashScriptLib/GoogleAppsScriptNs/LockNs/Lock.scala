@@ -15,12 +15,12 @@ trait Lock extends js.Object {
 object Lock {
   @scala.inline
   def apply(
-    hasLock: js.Function0[scala.Boolean],
-    releaseLock: js.Function0[scala.Unit],
-    tryLock: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Boolean],
-    waitLock: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit]
+    hasLock: () => scala.Boolean,
+    releaseLock: () => scala.Unit,
+    tryLock: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => scala.Boolean,
+    waitLock: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => scala.Unit
   ): Lock = {
-    val __obj = js.Dynamic.literal(hasLock = hasLock, releaseLock = releaseLock, tryLock = tryLock, waitLock = waitLock)
+    val __obj = js.Dynamic.literal(hasLock = js.Any.fromFunction0(hasLock), releaseLock = js.Any.fromFunction0(releaseLock), tryLock = js.Any.fromFunction1(tryLock), waitLock = js.Any.fromFunction1(waitLock))
   
     __obj.asInstanceOf[Lock]
   }

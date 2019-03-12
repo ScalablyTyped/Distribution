@@ -15,12 +15,12 @@ trait Anon_ArrCallbackIteratorMemo extends js.Object {
     callback: i2cDashBusLib.asyncMod.AsyncResultCallback[R, E]
   ): scala.Unit = js.native
   def apply[T, R, E](
-    arr: nodeLib.IterableIterator[T],
+    arr: stdLib.IterableIterator[T],
     memo: R,
     iterator: i2cDashBusLib.asyncMod.AsyncMemoIterator[T, R, E]
   ): scala.Unit = js.native
   def apply[T, R, E](
-    arr: nodeLib.IterableIterator[T],
+    arr: stdLib.IterableIterator[T],
     memo: R,
     iterator: i2cDashBusLib.asyncMod.AsyncMemoIterator[T, R, E],
     callback: i2cDashBusLib.asyncMod.AsyncResultCallback[R, E]

@@ -47,17 +47,17 @@ trait CordovaPluginBackgroundMode extends js.Object {
 object CordovaPluginBackgroundMode {
   @scala.inline
   def apply(
-    configure: js.Function1[ICordovaPluginBackgroundModeNotificationItem, scala.Unit],
-    disable: js.Function0[scala.Unit],
-    enable: js.Function0[scala.Unit],
-    isActivated: js.Function0[scala.Boolean],
-    isEnabled: js.Function0[scala.Boolean],
-    onactivate: js.Function0[scala.Unit],
-    ondeactivate: js.Function0[scala.Unit],
-    onfailure: js.Function1[js.Function1[/* errorCode */ scala.Double, scala.Unit], scala.Unit],
-    setDefaults: js.Function1[ICordovaPluginBackgroundModeNotificationItem, scala.Unit]
+    configure: ICordovaPluginBackgroundModeNotificationItem => scala.Unit,
+    disable: () => scala.Unit,
+    enable: () => scala.Unit,
+    isActivated: () => scala.Boolean,
+    isEnabled: () => scala.Boolean,
+    onactivate: () => scala.Unit,
+    ondeactivate: () => scala.Unit,
+    onfailure: js.Function1[/* errorCode */ scala.Double, scala.Unit] => scala.Unit,
+    setDefaults: ICordovaPluginBackgroundModeNotificationItem => scala.Unit
   ): CordovaPluginBackgroundMode = {
-    val __obj = js.Dynamic.literal(configure = configure, disable = disable, enable = enable, isActivated = isActivated, isEnabled = isEnabled, onactivate = onactivate, ondeactivate = ondeactivate, onfailure = onfailure, setDefaults = setDefaults)
+    val __obj = js.Dynamic.literal(configure = js.Any.fromFunction1(configure), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), isActivated = js.Any.fromFunction0(isActivated), isEnabled = js.Any.fromFunction0(isEnabled), onactivate = js.Any.fromFunction0(onactivate), ondeactivate = js.Any.fromFunction0(ondeactivate), onfailure = js.Any.fromFunction1(onfailure), setDefaults = js.Any.fromFunction1(setDefaults))
   
     __obj.asInstanceOf[CordovaPluginBackgroundMode]
   }

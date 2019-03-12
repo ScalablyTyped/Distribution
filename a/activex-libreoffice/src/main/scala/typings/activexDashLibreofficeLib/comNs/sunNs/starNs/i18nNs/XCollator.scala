@@ -38,13 +38,13 @@ trait XCollator
     * @param aLocale The locale for which to list algorithms.
     * @returns A sequence of algorithm names.
     */
-  def listCollatorAlgorithms(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): activexDashInteropLib.SafeArray[java.lang.String]
+  def listCollatorAlgorithms(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): stdLib.SafeArray[java.lang.String]
   /**
     * List all end user collator options for a given algorithm.
     * @param aAlgorithmName The algorithm name for this collator.
     * @returns An array of end user options available for the algorithm.
     */
-  def listCollatorOptions(aAlgorithmName: java.lang.String): activexDashInteropLib.SafeArray[scala.Double]
+  def listCollatorOptions(aAlgorithmName: java.lang.String): stdLib.SafeArray[scala.Double]
   /**
     * Load a particular collator algorithm for the locale.
     * @param aAlgorithmName The algorithm to load.
@@ -83,43 +83,18 @@ trait XCollator
 object XCollator {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    compareString: js.Function2[java.lang.String, java.lang.String, scala.Double],
-    compareSubstring: js.Function6[
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double
-    ],
-    listCollatorAlgorithms: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashInteropLib.SafeArray[java.lang.String]
-    ],
-    listCollatorOptions: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[scala.Double]],
-    loadCollatorAlgorithm: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      scala.Double
-    ],
-    loadCollatorAlgorithmWithEndUserOption: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      scala.Unit
-    ],
-    loadDefaultCollator: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      scala.Double
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    compareString: (java.lang.String, java.lang.String) => scala.Double,
+    compareSubstring: (java.lang.String, scala.Double, scala.Double, java.lang.String, scala.Double, scala.Double) => scala.Double,
+    listCollatorAlgorithms: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => stdLib.SafeArray[java.lang.String],
+    listCollatorOptions: java.lang.String => stdLib.SafeArray[scala.Double],
+    loadCollatorAlgorithm: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double) => scala.Double,
+    loadCollatorAlgorithmWithEndUserOption: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]) => scala.Unit,
+    loadDefaultCollator: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double) => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCollator = {
-    val __obj = js.Dynamic.literal(acquire = acquire, compareString = compareString, compareSubstring = compareSubstring, listCollatorAlgorithms = listCollatorAlgorithms, listCollatorOptions = listCollatorOptions, loadCollatorAlgorithm = loadCollatorAlgorithm, loadCollatorAlgorithmWithEndUserOption = loadCollatorAlgorithmWithEndUserOption, loadDefaultCollator = loadDefaultCollator, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), compareString = js.Any.fromFunction2(compareString), compareSubstring = js.Any.fromFunction6(compareSubstring), listCollatorAlgorithms = js.Any.fromFunction1(listCollatorAlgorithms), listCollatorOptions = js.Any.fromFunction1(listCollatorOptions), loadCollatorAlgorithm = js.Any.fromFunction3(loadCollatorAlgorithm), loadCollatorAlgorithmWithEndUserOption = js.Any.fromFunction3(loadCollatorAlgorithmWithEndUserOption), loadDefaultCollator = js.Any.fromFunction2(loadDefaultCollator), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCollator]
   }

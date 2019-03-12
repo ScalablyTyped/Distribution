@@ -14,10 +14,10 @@ trait IEvents extends js.Object {
 object IEvents {
   @scala.inline
   def apply(
-    Register: js.Function2[mfilesLib.MFilesNs.Event, js.Function, scala.Double],
-    Unregister: js.Function1[scala.Double, scala.Unit]
+    Register: (mfilesLib.MFilesNs.Event, js.Function) => scala.Double,
+    Unregister: scala.Double => scala.Unit
   ): IEvents = {
-    val __obj = js.Dynamic.literal(Register = Register, Unregister = Unregister)
+    val __obj = js.Dynamic.literal(Register = js.Any.fromFunction2(Register), Unregister = js.Any.fromFunction1(Unregister))
   
     __obj.asInstanceOf[IEvents]
   }

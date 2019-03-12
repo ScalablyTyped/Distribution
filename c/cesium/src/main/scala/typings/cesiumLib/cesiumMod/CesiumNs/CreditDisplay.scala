@@ -20,17 +20,17 @@ trait CreditDisplay extends js.Object {
 object CreditDisplay {
   @scala.inline
   def apply(
-    addCredit: js.Function1[Credit, scala.Unit],
-    addDefaultCredit: js.Function1[Credit, scala.Unit],
-    beginFrame: js.Function1[Credit, scala.Unit],
+    addCredit: Credit => scala.Unit,
+    addDefaultCredit: Credit => scala.Unit,
+    beginFrame: Credit => scala.Unit,
     container: stdLib.HTMLElement,
-    destroy: js.Function0[scala.Unit],
-    endFrame: js.Function1[Credit, scala.Unit],
-    isDestroyed: js.Function0[scala.Boolean],
-    removeDefaultCredit: js.Function1[Credit, scala.Unit],
-    update: js.Function0[scala.Unit]
+    destroy: () => scala.Unit,
+    endFrame: Credit => scala.Unit,
+    isDestroyed: () => scala.Boolean,
+    removeDefaultCredit: Credit => scala.Unit,
+    update: () => scala.Unit
   ): CreditDisplay = {
-    val __obj = js.Dynamic.literal(addCredit = addCredit, addDefaultCredit = addDefaultCredit, beginFrame = beginFrame, container = container, destroy = destroy, endFrame = endFrame, isDestroyed = isDestroyed, removeDefaultCredit = removeDefaultCredit, update = update)
+    val __obj = js.Dynamic.literal(addCredit = js.Any.fromFunction1(addCredit), addDefaultCredit = js.Any.fromFunction1(addDefaultCredit), beginFrame = js.Any.fromFunction1(beginFrame), container = container, destroy = js.Any.fromFunction0(destroy), endFrame = js.Any.fromFunction1(endFrame), isDestroyed = js.Any.fromFunction0(isDestroyed), removeDefaultCredit = js.Any.fromFunction1(removeDefaultCredit), update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[CreditDisplay]
   }

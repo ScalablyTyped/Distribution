@@ -147,7 +147,7 @@ object ClndrOptions {
     constraints: Constraints = null,
     dateParameter: java.lang.String = null,
     daysOfTheWeek: js.Array[java.lang.String] = null,
-    doneRendering: js.Function0[scala.Unit] = null,
+    doneRendering: () => scala.Unit = null,
     events: js.Array[_] = null,
     extras: js.Any = null,
     forceSixRows: js.UndefOr[scala.Boolean] = js.undefined,
@@ -155,8 +155,8 @@ object ClndrOptions {
     lengthOfTime: LengthOfTime = null,
     moment: momentLib.momentMod.momentNs.Moment = null,
     multiDayEvents: MultiDayEvents = null,
-    ready: js.Function0[scala.Unit] = null,
-    render: js.Function1[/* data */ RenderData, scala.Unit] = null,
+    ready: () => scala.Unit = null,
+    render: /* data */ RenderData => scala.Unit = null,
     selectedDate: js.Any = null,
     showAdjacentMonths: js.UndefOr[scala.Boolean] = js.undefined,
     startWithMonth: java.lang.String | momentLib.momentMod.momentNs.Moment = null,
@@ -173,7 +173,7 @@ object ClndrOptions {
     if (constraints != null) __obj.updateDynamic("constraints")(constraints)
     if (dateParameter != null) __obj.updateDynamic("dateParameter")(dateParameter)
     if (daysOfTheWeek != null) __obj.updateDynamic("daysOfTheWeek")(daysOfTheWeek)
-    if (doneRendering != null) __obj.updateDynamic("doneRendering")(doneRendering)
+    if (doneRendering != null) __obj.updateDynamic("doneRendering")(js.Any.fromFunction0(doneRendering))
     if (events != null) __obj.updateDynamic("events")(events)
     if (extras != null) __obj.updateDynamic("extras")(extras)
     if (!js.isUndefined(forceSixRows)) __obj.updateDynamic("forceSixRows")(forceSixRows)
@@ -181,8 +181,8 @@ object ClndrOptions {
     if (lengthOfTime != null) __obj.updateDynamic("lengthOfTime")(lengthOfTime)
     if (moment != null) __obj.updateDynamic("moment")(moment)
     if (multiDayEvents != null) __obj.updateDynamic("multiDayEvents")(multiDayEvents)
-    if (ready != null) __obj.updateDynamic("ready")(ready)
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction0(ready))
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (selectedDate != null) __obj.updateDynamic("selectedDate")(selectedDate)
     if (!js.isUndefined(showAdjacentMonths)) __obj.updateDynamic("showAdjacentMonths")(showAdjacentMonths)
     if (startWithMonth != null) __obj.updateDynamic("startWithMonth")(startWithMonth.asInstanceOf[js.Any])

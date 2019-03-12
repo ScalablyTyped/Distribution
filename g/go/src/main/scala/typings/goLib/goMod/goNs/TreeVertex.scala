@@ -79,8 +79,8 @@ trait TreeVertex extends LayoutVertex {
 object TreeVertex {
   @scala.inline
   def apply(
-    addDestinationEdge: js.Function1[LayoutEdge, scala.Unit],
-    addSourceEdge: js.Function1[LayoutEdge, scala.Unit],
+    addDestinationEdge: LayoutEdge => scala.Unit,
+    addSourceEdge: LayoutEdge => scala.Unit,
     alignment: EnumValue,
     angle: scala.Double,
     bounds: Rect,
@@ -93,13 +93,13 @@ object TreeVertex {
     commentMargin: scala.Double,
     commentSpacing: scala.Double,
     comments: js.Array[Node],
-    commit: js.Function0[scala.Unit],
+    commit: () => scala.Unit,
     compaction: EnumValue,
-    comparer: js.Function2[TreeVertex, TreeVertex, scala.Double],
-    copyInheritedPropertiesFrom: js.Function1[TreeVertex, scala.Unit],
+    comparer: (TreeVertex, TreeVertex) => scala.Double,
+    copyInheritedPropertiesFrom: TreeVertex => scala.Unit,
     data: js.Any,
-    deleteDestinationEdge: js.Function1[LayoutEdge, scala.Unit],
-    deleteSourceEdge: js.Function1[LayoutEdge, scala.Unit],
+    deleteDestinationEdge: LayoutEdge => scala.Unit,
+    deleteSourceEdge: LayoutEdge => scala.Unit,
     descendantCount: scala.Double,
     destinationEdges: Iterator[LayoutEdge],
     destinationVertexes: Iterator[LayoutVertex],
@@ -137,7 +137,7 @@ object TreeVertex {
     x: scala.Double,
     y: scala.Double
   ): TreeVertex = {
-    val __obj = js.Dynamic.literal(addDestinationEdge = addDestinationEdge, addSourceEdge = addSourceEdge, alignment = alignment, angle = angle, bounds = bounds, breadthLimit = breadthLimit, centerX = centerX, centerY = centerY, childPortSpot = childPortSpot, children = children, childrenCount = childrenCount, commentMargin = commentMargin, commentSpacing = commentSpacing, comments = comments, commit = commit, compaction = compaction, comparer = comparer, copyInheritedPropertiesFrom = copyInheritedPropertiesFrom, data = data, deleteDestinationEdge = deleteDestinationEdge, deleteSourceEdge = deleteSourceEdge, descendantCount = descendantCount, destinationEdges = destinationEdges, destinationVertexes = destinationVertexes, edges = edges, edgesCount = edgesCount, focus = focus, focusX = focusX, focusY = focusY, height = height, initialized = initialized, layerSpacing = layerSpacing, layerSpacingParentOverlap = layerSpacingParentOverlap, level = level, maxChildrenCount = maxChildrenCount, maxGenerationCount = maxGenerationCount, network = network, node = node, nodeIndent = nodeIndent, nodeIndentPastParent = nodeIndentPastParent, nodeSpacing = nodeSpacing, parent = parent, portSpot = portSpot, relativePosition = relativePosition, rowIndent = rowIndent, rowSpacing = rowSpacing, setsChildPortSpot = setsChildPortSpot, setsPortSpot = setsPortSpot, sorting = sorting, sourceEdges = sourceEdges, sourceVertexes = sourceVertexes, subtreeOffset = subtreeOffset, subtreeSize = subtreeSize, vertexes = vertexes, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(addDestinationEdge = js.Any.fromFunction1(addDestinationEdge), addSourceEdge = js.Any.fromFunction1(addSourceEdge), alignment = alignment, angle = angle, bounds = bounds, breadthLimit = breadthLimit, centerX = centerX, centerY = centerY, childPortSpot = childPortSpot, children = children, childrenCount = childrenCount, commentMargin = commentMargin, commentSpacing = commentSpacing, comments = comments, commit = js.Any.fromFunction0(commit), compaction = compaction, comparer = js.Any.fromFunction2(comparer), copyInheritedPropertiesFrom = js.Any.fromFunction1(copyInheritedPropertiesFrom), data = data, deleteDestinationEdge = js.Any.fromFunction1(deleteDestinationEdge), deleteSourceEdge = js.Any.fromFunction1(deleteSourceEdge), descendantCount = descendantCount, destinationEdges = destinationEdges, destinationVertexes = destinationVertexes, edges = edges, edgesCount = edgesCount, focus = focus, focusX = focusX, focusY = focusY, height = height, initialized = initialized, layerSpacing = layerSpacing, layerSpacingParentOverlap = layerSpacingParentOverlap, level = level, maxChildrenCount = maxChildrenCount, maxGenerationCount = maxGenerationCount, network = network, node = node, nodeIndent = nodeIndent, nodeIndentPastParent = nodeIndentPastParent, nodeSpacing = nodeSpacing, parent = parent, portSpot = portSpot, relativePosition = relativePosition, rowIndent = rowIndent, rowSpacing = rowSpacing, setsChildPortSpot = setsChildPortSpot, setsPortSpot = setsPortSpot, sorting = sorting, sourceEdges = sourceEdges, sourceVertexes = sourceVertexes, subtreeOffset = subtreeOffset, subtreeSize = subtreeSize, vertexes = vertexes, width = width, x = x, y = y)
   
     __obj.asInstanceOf[TreeVertex]
   }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class URLSearchParams () extends js.Object {
   def this(rawParams: java.lang.String) = this()
   def this(rawParams: java.lang.String, queryEncoder: QueryEncoder) = this()
-  var paramsMap: nodeLib.Map[java.lang.String, js.Array[java.lang.String]] = js.native
+  var paramsMap: stdLib.Map[java.lang.String, js.Array[java.lang.String]] = js.native
   var queryEncoder: js.Any = js.native
   var rawParams: java.lang.String = js.native
   def append(param: java.lang.String, `val`: java.lang.String): scala.Unit = js.native

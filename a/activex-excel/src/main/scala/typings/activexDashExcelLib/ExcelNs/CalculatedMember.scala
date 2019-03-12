@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.CalculatedMember")
 @js.native
 class CalculatedMember protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Creator: XlCreator = js.native
   val DisplayFolder: java.lang.String = js.native
   val Dynamic: scala.Boolean = js.native

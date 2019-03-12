@@ -15,10 +15,7 @@ object ^ extends js.Object {
     */
   def resolve(
     hostname: java.lang.String,
-    callback: js.Function1[
-      /* resolveInfo */ chromeDashAppsLib.chromeNs.dnsNs.ResolveCallbackResolveInfo, 
-      scala.Unit
-    ]
+    callback: js.Function1[/* resolveInfo */ ResolveCallbackResolveInfo, scala.Unit]
   ): scala.Unit = js.native
 }
 

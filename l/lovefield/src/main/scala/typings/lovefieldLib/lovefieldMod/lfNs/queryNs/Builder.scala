@@ -15,12 +15,12 @@ trait Builder extends js.Object {
 object Builder {
   @scala.inline
   def apply(
-    bind: js.Function1[/* repeated */ js.Any, Builder],
-    exec: js.Function0[js.Promise[js.Array[js.Object]]],
-    explain: js.Function0[java.lang.String],
-    toSql: js.Function0[java.lang.String]
+    bind: /* repeated */ js.Any => Builder,
+    exec: () => js.Promise[js.Array[js.Object]],
+    explain: () => java.lang.String,
+    toSql: () => java.lang.String
   ): Builder = {
-    val __obj = js.Dynamic.literal(bind = bind, exec = exec, explain = explain, toSql = toSql)
+    val __obj = js.Dynamic.literal(bind = js.Any.fromFunction1(bind), exec = js.Any.fromFunction0(exec), explain = js.Any.fromFunction0(explain), toSql = js.Any.fromFunction0(toSql))
   
     __obj.asInstanceOf[Builder]
   }

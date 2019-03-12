@@ -89,78 +89,71 @@ trait IFilterable
 object IFilterable {
   @scala.inline
   def apply(
-    addFilter: js.Function1[/* filter */ js.UndefOr[js.Any], scala.Unit] = null,
-    addFilters: js.Function1[/* filters */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], _] = null,
+    addFilter: /* filter */ js.UndefOr[js.Any] => scala.Unit = null,
+    addFilters: /* filters */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => _ = null,
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     currentSortFn: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     dirtyFilterFn: js.UndefOr[scala.Boolean] = js.undefined,
     extend: java.lang.String = null,
-    filter: js.Function1[
-      /* data */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
-      senchaUnderscoreTouchLib.ExtNs.Array
-    ] = null,
+    filter: /* data */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => senchaUnderscoreTouchLib.ExtNs.Array = null,
     filterRoot: java.lang.String = null,
     filtered: js.UndefOr[scala.Boolean] = js.undefined,
     filters: senchaUnderscoreTouchLib.ExtNs.Array = null,
-    getFilterFn: js.Function0[_] = null,
-    getFilterRoot: js.Function0[java.lang.String] = null,
-    getFilters: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getFilterFn: () => _ = null,
+    getFilterRoot: () => java.lang.String = null,
+    getFilters: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
-    insertFilter: js.Function2[/* index */ js.UndefOr[scala.Double], /* filter */ js.UndefOr[js.Any], _] = null,
-    insertFilters: js.Function2[
-      /* index */ js.UndefOr[scala.Double], 
-      /* filters */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
-      senchaUnderscoreTouchLib.ExtNs.Array
-    ] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
+    insertFilter: (/* index */ js.UndefOr[scala.Double], /* filter */ js.UndefOr[js.Any]) => _ = null,
+    insertFilters: (/* index */ js.UndefOr[scala.Double], /* filters */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array]) => senchaUnderscoreTouchLib.ExtNs.Array = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
-    removeFilters: js.Function1[/* filters */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
+    removeFilters: /* filters */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setFilterRoot: js.Function1[/* filterRoot */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setFilters: js.Function1[/* filters */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
+    setFilterRoot: /* filterRoot */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setFilters: /* filters */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null
   ): IFilterable = {
     val __obj = js.Dynamic.literal()
-    if (addFilter != null) __obj.updateDynamic("addFilter")(addFilter)
-    if (addFilters != null) __obj.updateDynamic("addFilters")(addFilters)
+    if (addFilter != null) __obj.updateDynamic("addFilter")(js.Any.fromFunction1(addFilter))
+    if (addFilters != null) __obj.updateDynamic("addFilters")(js.Any.fromFunction1(addFilters))
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
     if (currentSortFn != null) __obj.updateDynamic("currentSortFn")(currentSortFn)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (!js.isUndefined(dirtyFilterFn)) __obj.updateDynamic("dirtyFilterFn")(dirtyFilterFn)
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (filterRoot != null) __obj.updateDynamic("filterRoot")(filterRoot)
     if (!js.isUndefined(filtered)) __obj.updateDynamic("filtered")(filtered)
     if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (getFilterFn != null) __obj.updateDynamic("getFilterFn")(getFilterFn)
-    if (getFilterRoot != null) __obj.updateDynamic("getFilterRoot")(getFilterRoot)
-    if (getFilters != null) __obj.updateDynamic("getFilters")(getFilters)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getFilterFn != null) __obj.updateDynamic("getFilterFn")(js.Any.fromFunction0(getFilterFn))
+    if (getFilterRoot != null) __obj.updateDynamic("getFilterRoot")(js.Any.fromFunction0(getFilterRoot))
+    if (getFilters != null) __obj.updateDynamic("getFilters")(js.Any.fromFunction0(getFilters))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
-    if (insertFilter != null) __obj.updateDynamic("insertFilter")(insertFilter)
-    if (insertFilters != null) __obj.updateDynamic("insertFilters")(insertFilters)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (insertFilter != null) __obj.updateDynamic("insertFilter")(js.Any.fromFunction2(insertFilter))
+    if (insertFilters != null) __obj.updateDynamic("insertFilters")(js.Any.fromFunction2(insertFilters))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
-    if (removeFilters != null) __obj.updateDynamic("removeFilters")(removeFilters)
+    if (removeFilters != null) __obj.updateDynamic("removeFilters")(js.Any.fromFunction1(removeFilters))
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setFilterRoot != null) __obj.updateDynamic("setFilterRoot")(setFilterRoot)
-    if (setFilters != null) __obj.updateDynamic("setFilters")(setFilters)
+    if (setFilterRoot != null) __obj.updateDynamic("setFilterRoot")(js.Any.fromFunction1(setFilterRoot))
+    if (setFilters != null) __obj.updateDynamic("setFilters")(js.Any.fromFunction1(setFilters))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (uses != null) __obj.updateDynamic("uses")(uses)

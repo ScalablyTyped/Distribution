@@ -19,11 +19,8 @@ trait ReplacementItem extends js.Object {
 
 object ReplacementItem {
   @scala.inline
-  def apply(
-    pattern: stdLib.RegExp,
-    replacement: js.Function2[java.lang.String, /* repeated */ js.Any, java.lang.String]
-  ): ReplacementItem = {
-    val __obj = js.Dynamic.literal(pattern = pattern, replacement = replacement)
+  def apply(pattern: stdLib.RegExp, replacement: (java.lang.String, /* repeated */ js.Any) => java.lang.String): ReplacementItem = {
+    val __obj = js.Dynamic.literal(pattern = pattern, replacement = js.Any.fromFunction2(replacement))
   
     __obj.asInstanceOf[ReplacementItem]
   }

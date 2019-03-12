@@ -23,14 +23,14 @@ trait IBooleanFieldExpression extends js.Object {
 object IBooleanFieldExpression {
   @scala.inline
   def apply(
-    EqualTo: js.Function1[scala.Boolean, IExpression],
-    IsFalse: js.Function0[IExpression],
-    IsNotNull: js.Function0[IExpression],
-    IsNull: js.Function0[IExpression],
-    IsTrue: js.Function0[IExpression],
-    NotEqualTo: js.Function1[scala.Boolean, IExpression]
+    EqualTo: scala.Boolean => IExpression,
+    IsFalse: () => IExpression,
+    IsNotNull: () => IExpression,
+    IsNull: () => IExpression,
+    IsTrue: () => IExpression,
+    NotEqualTo: scala.Boolean => IExpression
   ): IBooleanFieldExpression = {
-    val __obj = js.Dynamic.literal(EqualTo = EqualTo, IsFalse = IsFalse, IsNotNull = IsNotNull, IsNull = IsNull, IsTrue = IsTrue, NotEqualTo = NotEqualTo)
+    val __obj = js.Dynamic.literal(EqualTo = js.Any.fromFunction1(EqualTo), IsFalse = js.Any.fromFunction0(IsFalse), IsNotNull = js.Any.fromFunction0(IsNotNull), IsNull = js.Any.fromFunction0(IsNull), IsTrue = js.Any.fromFunction0(IsTrue), NotEqualTo = js.Any.fromFunction1(NotEqualTo))
   
     __obj.asInstanceOf[IBooleanFieldExpression]
   }

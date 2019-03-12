@@ -30,7 +30,7 @@ trait StrictSidebarProps extends js.Object {
     */
   var onHidden: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SidebarProps, 
       scala.Unit
     ]
@@ -43,7 +43,7 @@ trait StrictSidebarProps extends js.Object {
     */
   var onHide: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SidebarProps, 
       scala.Unit
     ]
@@ -56,7 +56,7 @@ trait StrictSidebarProps extends js.Object {
     */
   var onShow: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SidebarProps, 
       scala.Unit
     ]
@@ -69,7 +69,7 @@ trait StrictSidebarProps extends js.Object {
     */
   var onVisible: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SidebarProps, 
       scala.Unit
     ]
@@ -93,26 +93,10 @@ object StrictSidebarProps {
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     direction: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left = null,
-    onHidden: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ SidebarProps, 
-      scala.Unit
-    ] = null,
-    onHide: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ SidebarProps, 
-      scala.Unit
-    ] = null,
-    onShow: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ SidebarProps, 
-      scala.Unit
-    ] = null,
-    onVisible: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ SidebarProps, 
-      scala.Unit
-    ] = null,
+    onHidden: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SidebarProps) => scala.Unit = null,
+    onHide: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SidebarProps) => scala.Unit = null,
+    onShow: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SidebarProps) => scala.Unit = null,
+    onVisible: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SidebarProps) => scala.Unit = null,
     target: js.Object = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     width: (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`very thin`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.thin | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.wide | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`very wide`) = null
@@ -124,10 +108,10 @@ object StrictSidebarProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (onHidden != null) __obj.updateDynamic("onHidden")(onHidden)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
-    if (onVisible != null) __obj.updateDynamic("onVisible")(onVisible)
+    if (onHidden != null) __obj.updateDynamic("onHidden")(js.Any.fromFunction2(onHidden))
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction2(onHide))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction2(onShow))
+    if (onVisible != null) __obj.updateDynamic("onVisible")(js.Any.fromFunction2(onVisible))
     if (target != null) __obj.updateDynamic("target")(target)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

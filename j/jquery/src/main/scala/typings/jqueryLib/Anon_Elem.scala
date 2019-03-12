@@ -12,8 +12,8 @@ trait Anon_Elem[TElement]
 
 object Anon_Elem {
   @scala.inline
-  def apply[TElement](get: js.Function1[TElement, js.Any]): Anon_Elem[TElement] = {
-    val __obj = js.Dynamic.literal(get = get)
+  def apply[TElement](get: TElement => js.Any): Anon_Elem[TElement] = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[Anon_Elem[TElement]]
   }

@@ -11,8 +11,8 @@ trait Charsets extends js.Object {
 
 object Charsets {
   @scala.inline
-  def apply(lookup: js.Function1[java.lang.String, java.lang.String]): Charsets = {
-    val __obj = js.Dynamic.literal(lookup = lookup)
+  def apply(lookup: java.lang.String => java.lang.String): Charsets = {
+    val __obj = js.Dynamic.literal(lookup = js.Any.fromFunction1(lookup))
   
     __obj.asInstanceOf[Charsets]
   }

@@ -23,23 +23,13 @@ trait XConnectableShape
 object XConnectableShape {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    canConnect: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, 
-      scala.Boolean, 
-      scala.Double, 
-      scala.Boolean
-    ],
-    doConnect: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, 
-      scala.Boolean, 
-      scala.Double, 
-      scala.Boolean
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    canConnect: (activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Boolean, scala.Double) => scala.Boolean,
+    doConnect: (activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Boolean, scala.Double) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XConnectableShape = {
-    val __obj = js.Dynamic.literal(acquire = acquire, canConnect = canConnect, doConnect = doConnect, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), canConnect = js.Any.fromFunction3(canConnect), doConnect = js.Any.fromFunction3(doConnect), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XConnectableShape]
   }

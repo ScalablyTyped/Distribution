@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("smooth-scrollbar/scrollbar", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val scrollbarMap: nodeLib.Map[stdLib.HTMLElement, smoothDashScrollbarLib.scrollbarMod.Scrollbar] = js.native
+  val scrollbarMap: stdLib.Map[stdLib.HTMLElement, Scrollbar] = js.native
 }
 

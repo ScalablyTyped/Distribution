@@ -36,18 +36,18 @@ object ITool {
   @scala.inline
   def apply(
     IComponent: extjsLib.ExtNs.IComponent = null,
-    afterRender: js.Function0[scala.Unit] = null,
+    afterRender: () => scala.Unit = null,
     baseCls: java.lang.String = null,
     callback: js.Any = null,
     disabledCls: java.lang.String = null,
     handler: js.Any = null,
     height: scala.Int | scala.Double = null,
-    initComponent: js.Function0[scala.Unit] = null,
+    initComponent: () => scala.Unit = null,
     isTool: js.UndefOr[scala.Boolean] = js.undefined,
-    onDestroy: js.Function0[scala.Unit] = null,
+    onDestroy: () => scala.Unit = null,
     renderTpl: js.Any = null,
     scope: js.Any = null,
-    setType: js.Function1[/* type */ js.UndefOr[java.lang.String], ITool] = null,
+    setType: /* type */ js.UndefOr[java.lang.String] => ITool = null,
     stopEvent: js.UndefOr[scala.Boolean] = js.undefined,
     toolOwner: extjsLib.ExtNs.IComponent = null,
     tooltip: js.Any = null,
@@ -57,18 +57,18 @@ object ITool {
   ): ITool = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (afterRender != null) __obj.updateDynamic("afterRender")(afterRender)
+    if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction0(afterRender))
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
     if (callback != null) __obj.updateDynamic("callback")(callback)
     if (disabledCls != null) __obj.updateDynamic("disabledCls")(disabledCls)
     if (handler != null) __obj.updateDynamic("handler")(handler)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
+    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
     if (!js.isUndefined(isTool)) __obj.updateDynamic("isTool")(isTool)
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(onDestroy)
+    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
     if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
     if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (setType != null) __obj.updateDynamic("setType")(setType)
+    if (setType != null) __obj.updateDynamic("setType")(js.Any.fromFunction1(setType))
     if (!js.isUndefined(stopEvent)) __obj.updateDynamic("stopEvent")(stopEvent)
     if (toolOwner != null) __obj.updateDynamic("toolOwner")(toolOwner)
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)

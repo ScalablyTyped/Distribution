@@ -51,23 +51,16 @@ object ILob {
     pieceSize: scala.Double,
     `type`: java.lang.String,
     offset: scala.Int | scala.Double = null,
-    read: js.Function1[
-      /* callback */ js.Function2[/* err */ js.Any, /* chunk */ java.lang.String | nodeLib.Buffer, scala.Unit], 
-      scala.Unit
-    ] = null,
-    release: js.Function0[scala.Unit] = null,
-    write: js.Function2[
-      /* data */ nodeLib.Buffer, 
-      /* callback */ js.Function1[/* err */ js.Any, scala.Unit], 
-      scala.Unit
-    ] = null
+    read: /* callback */ js.Function2[/* err */ js.Any, /* chunk */ java.lang.String | nodeLib.Buffer, scala.Unit] => scala.Unit = null,
+    release: () => scala.Unit = null,
+    write: (/* data */ nodeLib.Buffer, /* callback */ js.Function1[/* err */ js.Any, scala.Unit]) => scala.Unit = null
   ): ILob = {
     val __obj = js.Dynamic.literal(chunkSize = chunkSize, length = length, pieceSize = pieceSize)
     __obj.updateDynamic("type")(`type`)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (read != null) __obj.updateDynamic("read")(read)
-    if (release != null) __obj.updateDynamic("release")(release)
-    if (write != null) __obj.updateDynamic("write")(write)
+    if (read != null) __obj.updateDynamic("read")(js.Any.fromFunction1(read))
+    if (release != null) __obj.updateDynamic("release")(js.Any.fromFunction0(release))
+    if (write != null) __obj.updateDynamic("write")(js.Any.fromFunction2(write))
     __obj.asInstanceOf[ILob]
   }
 }

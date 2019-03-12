@@ -21,11 +21,11 @@ trait HistoryManager extends js.Object {
 object HistoryManager {
   @scala.inline
   def apply(
-    clearProjects: js.Function0[scala.Unit],
-    getProjects: js.Function0[js.Array[ProjectHistory]],
-    onDidChangeProjects: js.Function1[js.Function1[/* args */ atomLib.Anon_Reloaded, scala.Unit], Disposable]
+    clearProjects: () => scala.Unit,
+    getProjects: () => js.Array[ProjectHistory],
+    onDidChangeProjects: js.Function1[/* args */ atomLib.Anon_Reloaded, scala.Unit] => Disposable
   ): HistoryManager = {
-    val __obj = js.Dynamic.literal(clearProjects = clearProjects, getProjects = getProjects, onDidChangeProjects = onDidChangeProjects)
+    val __obj = js.Dynamic.literal(clearProjects = js.Any.fromFunction0(clearProjects), getProjects = js.Any.fromFunction0(getProjects), onDidChangeProjects = js.Any.fromFunction1(onDidChangeProjects))
   
     __obj.asInstanceOf[HistoryManager]
   }

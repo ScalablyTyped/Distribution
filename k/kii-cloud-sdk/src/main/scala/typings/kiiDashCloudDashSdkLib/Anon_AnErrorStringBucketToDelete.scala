@@ -13,10 +13,10 @@ trait Anon_AnErrorStringBucketToDelete extends js.Object {
 object Anon_AnErrorStringBucketToDelete {
   @scala.inline
   def apply(
-    failure: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiBucket, java.lang.String, js.Any],
-    success: js.Function1[kiiDashCloudDashSdkLib.KiiCloudNs.KiiBucket, js.Any]
+    failure: (kiiDashCloudDashSdkLib.KiiCloudNs.KiiBucket, java.lang.String) => js.Any,
+    success: kiiDashCloudDashSdkLib.KiiCloudNs.KiiBucket => js.Any
   ): Anon_AnErrorStringBucketToDelete = {
-    val __obj = js.Dynamic.literal(failure = failure, success = success)
+    val __obj = js.Dynamic.literal(failure = js.Any.fromFunction2(failure), success = js.Any.fromFunction1(success))
   
     __obj.asInstanceOf[Anon_AnErrorStringBucketToDelete]
   }

@@ -13,12 +13,8 @@ trait PDFRenderTextLayer extends js.Object {
 
 object PDFRenderTextLayer {
   @scala.inline
-  def apply(
-    appendText: js.Function0[scala.Unit],
-    beginLayout: js.Function0[scala.Unit],
-    endLayout: js.Function0[scala.Unit]
-  ): PDFRenderTextLayer = {
-    val __obj = js.Dynamic.literal(appendText = appendText, beginLayout = beginLayout, endLayout = endLayout)
+  def apply(appendText: () => scala.Unit, beginLayout: () => scala.Unit, endLayout: () => scala.Unit): PDFRenderTextLayer = {
+    val __obj = js.Dynamic.literal(appendText = js.Any.fromFunction0(appendText), beginLayout = js.Any.fromFunction0(beginLayout), endLayout = js.Any.fromFunction0(endLayout))
   
     __obj.asInstanceOf[PDFRenderTextLayer]
   }

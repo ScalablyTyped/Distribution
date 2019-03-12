@@ -67,10 +67,10 @@ object XPropertyControl {
     ControlWindow: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
     Value: js.Any,
     ValueType: activexDashLibreofficeLib.`type`,
-    isModified: js.Function0[scala.Boolean],
-    notifyModifiedValue: js.Function0[scala.Unit]
+    isModified: () => scala.Boolean,
+    notifyModifiedValue: () => scala.Unit
   ): XPropertyControl = {
-    val __obj = js.Dynamic.literal(ControlContext = ControlContext, ControlType = ControlType, ControlWindow = ControlWindow, Value = Value, ValueType = ValueType, isModified = isModified, notifyModifiedValue = notifyModifiedValue)
+    val __obj = js.Dynamic.literal(ControlContext = ControlContext, ControlType = ControlType, ControlWindow = ControlWindow, Value = Value, ValueType = ValueType, isModified = js.Any.fromFunction0(isModified), notifyModifiedValue = js.Any.fromFunction0(notifyModifiedValue))
   
     __obj.asInstanceOf[XPropertyControl]
   }

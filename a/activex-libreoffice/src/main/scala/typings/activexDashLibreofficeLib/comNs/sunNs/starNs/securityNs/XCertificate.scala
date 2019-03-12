@@ -19,23 +19,23 @@ trait XCertificate
     */
   val CertificateUsage: scala.Double
   /** the DER encoded form of the certificate */
-  var Encoded: activexDashInteropLib.SafeArray[scala.Double]
+  var Encoded: stdLib.SafeArray[scala.Double]
   /** all extensions of a certificate. */
-  var Extensions: activexDashInteropLib.SafeArray[XCertificateExtension]
+  var Extensions: stdLib.SafeArray[XCertificateExtension]
   /** the issuer name attribute of the certificate. */
   var IssuerName: java.lang.String
   /** the issuer unique ID attribute of the certificate. */
-  var IssuerUniqueID: activexDashInteropLib.SafeArray[scala.Double]
+  var IssuerUniqueID: stdLib.SafeArray[scala.Double]
   /** the MD5 thumbprint */
-  var MD5Thumbprint: activexDashInteropLib.SafeArray[scala.Double]
+  var MD5Thumbprint: stdLib.SafeArray[scala.Double]
   /** the validity NotAfter date attribute of the certificate. */
   var NotValidAfter: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime
   /** the validity NotBefore date attribute of the certificate. */
   var NotValidBefore: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime
   /** the SHA-1 thumbprint */
-  var SHA1Thumbprint: activexDashInteropLib.SafeArray[scala.Double]
+  var SHA1Thumbprint: stdLib.SafeArray[scala.Double]
   /** the serial number attribute of the certificate. */
-  var SerialNumber: activexDashInteropLib.SafeArray[scala.Double]
+  var SerialNumber: stdLib.SafeArray[scala.Double]
   /** the signature algorithm */
   var SignatureAlgorithm: java.lang.String
   /** the subject name attribute of the certificate. */
@@ -43,9 +43,9 @@ trait XCertificate
   /** the algorithm of the subject public key */
   var SubjectPublicKeyAlgorithm: java.lang.String
   /** the value of the subject public key */
-  var SubjectPublicKeyValue: activexDashInteropLib.SafeArray[scala.Double]
+  var SubjectPublicKeyValue: stdLib.SafeArray[scala.Double]
   /** the subject unique ID attribute of the certificate. */
-  var SubjectUniqueID: activexDashInteropLib.SafeArray[scala.Double]
+  var SubjectUniqueID: stdLib.SafeArray[scala.Double]
   /** the version number attribute of the certificate. */
   var Version: scala.Double
   /** Find a extension with a object identifier. */
@@ -62,31 +62,28 @@ object XCertificate {
   @scala.inline
   def apply(
     CertificateUsage: scala.Double,
-    Encoded: activexDashInteropLib.SafeArray[scala.Double],
-    Extensions: activexDashInteropLib.SafeArray[XCertificateExtension],
+    Encoded: stdLib.SafeArray[scala.Double],
+    Extensions: stdLib.SafeArray[XCertificateExtension],
     IssuerName: java.lang.String,
-    IssuerUniqueID: activexDashInteropLib.SafeArray[scala.Double],
-    MD5Thumbprint: activexDashInteropLib.SafeArray[scala.Double],
+    IssuerUniqueID: stdLib.SafeArray[scala.Double],
+    MD5Thumbprint: stdLib.SafeArray[scala.Double],
     NotValidAfter: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime,
     NotValidBefore: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime,
-    SHA1Thumbprint: activexDashInteropLib.SafeArray[scala.Double],
-    SerialNumber: activexDashInteropLib.SafeArray[scala.Double],
+    SHA1Thumbprint: stdLib.SafeArray[scala.Double],
+    SerialNumber: stdLib.SafeArray[scala.Double],
     SignatureAlgorithm: java.lang.String,
     SubjectName: java.lang.String,
     SubjectPublicKeyAlgorithm: java.lang.String,
-    SubjectPublicKeyValue: activexDashInteropLib.SafeArray[scala.Double],
-    SubjectUniqueID: activexDashInteropLib.SafeArray[scala.Double],
+    SubjectPublicKeyValue: stdLib.SafeArray[scala.Double],
+    SubjectUniqueID: stdLib.SafeArray[scala.Double],
     Version: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    findCertificateExtension: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      XCertificateExtension
-    ],
-    getCertificateUsage: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    findCertificateExtension: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => XCertificateExtension,
+    getCertificateUsage: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCertificate = {
-    val __obj = js.Dynamic.literal(CertificateUsage = CertificateUsage, Encoded = Encoded, Extensions = Extensions, IssuerName = IssuerName, IssuerUniqueID = IssuerUniqueID, MD5Thumbprint = MD5Thumbprint, NotValidAfter = NotValidAfter, NotValidBefore = NotValidBefore, SHA1Thumbprint = SHA1Thumbprint, SerialNumber = SerialNumber, SignatureAlgorithm = SignatureAlgorithm, SubjectName = SubjectName, SubjectPublicKeyAlgorithm = SubjectPublicKeyAlgorithm, SubjectPublicKeyValue = SubjectPublicKeyValue, SubjectUniqueID = SubjectUniqueID, Version = Version, acquire = acquire, findCertificateExtension = findCertificateExtension, getCertificateUsage = getCertificateUsage, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(CertificateUsage = CertificateUsage, Encoded = Encoded, Extensions = Extensions, IssuerName = IssuerName, IssuerUniqueID = IssuerUniqueID, MD5Thumbprint = MD5Thumbprint, NotValidAfter = NotValidAfter, NotValidBefore = NotValidBefore, SHA1Thumbprint = SHA1Thumbprint, SerialNumber = SerialNumber, SignatureAlgorithm = SignatureAlgorithm, SubjectName = SubjectName, SubjectPublicKeyAlgorithm = SubjectPublicKeyAlgorithm, SubjectPublicKeyValue = SubjectPublicKeyValue, SubjectUniqueID = SubjectUniqueID, Version = Version, acquire = js.Any.fromFunction0(acquire), findCertificateExtension = js.Any.fromFunction1(findCertificateExtension), getCertificateUsage = js.Any.fromFunction0(getCertificateUsage), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCertificate]
   }

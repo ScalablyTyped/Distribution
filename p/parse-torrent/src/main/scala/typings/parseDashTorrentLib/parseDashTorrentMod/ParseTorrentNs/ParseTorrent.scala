@@ -25,32 +25,32 @@ trait ParseTorrent extends js.Object {
   def remote(torrent: java.lang.String): scala.Unit = js.native
   def remote(
     torrent: java.lang.String,
-    cb: js.Function2[/* err */ nodeLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
   ): scala.Unit = js.native
   def remote(torrent: magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance): scala.Unit = js.native
   def remote(
     torrent: magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance,
-    cb: js.Function2[/* err */ nodeLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
   ): scala.Unit = js.native
   def remote(torrent: nodeLib.Buffer): scala.Unit = js.native
   def remote(
     torrent: nodeLib.Buffer,
-    cb: js.Function2[/* err */ nodeLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
   ): scala.Unit = js.native
   def remote(torrent: parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance): scala.Unit = js.native
   def remote(
     torrent: parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance,
-    cb: js.Function2[/* err */ nodeLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
   ): scala.Unit = js.native
   def remote(torrent: Instance): scala.Unit = js.native
   def remote(
     torrent: Instance,
-    cb: js.Function2[/* err */ nodeLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
   ): scala.Unit = js.native
   def remote(torrent: stdLib.Blob): scala.Unit = js.native
   def remote(
     torrent: stdLib.Blob,
-    cb: js.Function2[/* err */ nodeLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
   ): scala.Unit = js.native
   def toMagnetURI(parsed: magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance): java.lang.String = js.native
   def toTorrentFile(parsed: parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance): nodeLib.Buffer = js.native

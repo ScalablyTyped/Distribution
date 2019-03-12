@@ -18,16 +18,12 @@ trait Generator extends js.Object {
 object Generator {
   @scala.inline
   def apply(
-    register: js.Function2[
-      java.lang.String, 
-      js.Function1[
-        /* locals */ hexoLib.hexoMod.Site, 
-        hexoLib.hexoMod.HexoNs.extendNs.GeneratorNs.Return | js.Array[hexoLib.hexoMod.HexoNs.extendNs.GeneratorNs.Return]
-      ], 
-      scala.Unit
-    ]
+    register: (java.lang.String, js.Function1[
+      /* locals */ hexoLib.hexoMod.Site, 
+      hexoLib.hexoMod.HexoNs.extendNs.GeneratorNs.Return | js.Array[hexoLib.hexoMod.HexoNs.extendNs.GeneratorNs.Return]
+    ]) => scala.Unit
   ): Generator = {
-    val __obj = js.Dynamic.literal(register = register)
+    val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
   
     __obj.asInstanceOf[Generator]
   }

@@ -31,14 +31,14 @@ object bindDocOptions {
   @scala.inline
   def apply(
     context: js.Object,
-    onFailure: js.Function0[scala.Unit] = null,
+    onFailure: () => scala.Unit = null,
     state: java.lang.String = null,
-    `then`: js.Function0[scala.Unit] = null
+    `then`: () => scala.Unit = null
   ): bindDocOptions = {
     val __obj = js.Dynamic.literal(context = context)
-    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
+    if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction0(onFailure))
     if (state != null) __obj.updateDynamic("state")(state)
-    if (`then` != null) __obj.updateDynamic("then")(`then`)
+    if (`then` != null) __obj.updateDynamic("then")(js.Any.fromFunction0(`then`))
     __obj.asInstanceOf[bindDocOptions]
   }
 }

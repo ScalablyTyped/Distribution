@@ -174,13 +174,7 @@ object PerAxisOptions {
   def apply(
     axisLabelColor: java.lang.String = null,
     axisLabelFontSize: scala.Int | scala.Double = null,
-    axisLabelFormatter: js.Function4[
-      /* v */ scala.Double | stdLib.Date, 
-      /* granularity */ scala.Double, 
-      /* opts */ js.Function1[/* name */ java.lang.String, _], 
-      /* dygraph */ dygraphsLib.Dygraph, 
-      _
-    ] = null,
+    axisLabelFormatter: (/* v */ scala.Double | stdLib.Date, /* granularity */ scala.Double, /* opts */ js.Function1[/* name */ java.lang.String, _], /* dygraph */ dygraphsLib.Dygraph) => _ = null,
     axisLabelWidth: scala.Int | scala.Double = null,
     axisLineColor: java.lang.String = null,
     axisLineWidth: scala.Int | scala.Double = null,
@@ -197,30 +191,14 @@ object PerAxisOptions {
     maxNumberWidth: scala.Int | scala.Double = null,
     pixelsPerLabel: scala.Int | scala.Double = null,
     sigFigs: scala.Int | scala.Double = null,
-    ticker: js.Function6[
-      /* min */ scala.Double, 
-      /* max */ scala.Double, 
-      /* pixels */ scala.Double, 
-      /* opts */ js.Function1[/* name */ java.lang.String, _], 
-      /* dygraph */ dygraphsLib.Dygraph, 
-      /* vals */ js.Array[scala.Double], 
-      js.Array[dygraphsLib.Anon_Label]
-    ] = null,
-    valueFormatter: js.Function6[
-      /* v */ scala.Double, 
-      /* opts */ js.Function1[/* name */ java.lang.String, _], 
-      /* seriesName */ java.lang.String, 
-      /* dygraph */ dygraphsLib.Dygraph, 
-      /* row */ scala.Double, 
-      /* col */ scala.Double, 
-      _
-    ] = null,
+    ticker: (/* min */ scala.Double, /* max */ scala.Double, /* pixels */ scala.Double, /* opts */ js.Function1[/* name */ java.lang.String, _], /* dygraph */ dygraphsLib.Dygraph, /* vals */ js.Array[scala.Double]) => js.Array[dygraphsLib.Anon_Label] = null,
+    valueFormatter: (/* v */ scala.Double, /* opts */ js.Function1[/* name */ java.lang.String, _], /* seriesName */ java.lang.String, /* dygraph */ dygraphsLib.Dygraph, /* row */ scala.Double, /* col */ scala.Double) => _ = null,
     valueRange: js.Array[scala.Double] = null
   ): PerAxisOptions = {
     val __obj = js.Dynamic.literal()
     if (axisLabelColor != null) __obj.updateDynamic("axisLabelColor")(axisLabelColor)
     if (axisLabelFontSize != null) __obj.updateDynamic("axisLabelFontSize")(axisLabelFontSize.asInstanceOf[js.Any])
-    if (axisLabelFormatter != null) __obj.updateDynamic("axisLabelFormatter")(axisLabelFormatter)
+    if (axisLabelFormatter != null) __obj.updateDynamic("axisLabelFormatter")(js.Any.fromFunction4(axisLabelFormatter))
     if (axisLabelWidth != null) __obj.updateDynamic("axisLabelWidth")(axisLabelWidth.asInstanceOf[js.Any])
     if (axisLineColor != null) __obj.updateDynamic("axisLineColor")(axisLineColor)
     if (axisLineWidth != null) __obj.updateDynamic("axisLineWidth")(axisLineWidth.asInstanceOf[js.Any])
@@ -237,8 +215,8 @@ object PerAxisOptions {
     if (maxNumberWidth != null) __obj.updateDynamic("maxNumberWidth")(maxNumberWidth.asInstanceOf[js.Any])
     if (pixelsPerLabel != null) __obj.updateDynamic("pixelsPerLabel")(pixelsPerLabel.asInstanceOf[js.Any])
     if (sigFigs != null) __obj.updateDynamic("sigFigs")(sigFigs.asInstanceOf[js.Any])
-    if (ticker != null) __obj.updateDynamic("ticker")(ticker)
-    if (valueFormatter != null) __obj.updateDynamic("valueFormatter")(valueFormatter)
+    if (ticker != null) __obj.updateDynamic("ticker")(js.Any.fromFunction6(ticker))
+    if (valueFormatter != null) __obj.updateDynamic("valueFormatter")(js.Any.fromFunction6(valueFormatter))
     if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange)
     __obj.asInstanceOf[PerAxisOptions]
   }

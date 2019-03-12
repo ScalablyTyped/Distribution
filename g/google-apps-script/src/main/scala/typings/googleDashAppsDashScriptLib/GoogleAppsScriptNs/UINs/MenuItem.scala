@@ -35,33 +35,29 @@ trait MenuItem extends js.Object {
 object MenuItem {
   @scala.inline
   def apply(
-    addStyleDependentName: js.Function1[java.lang.String, MenuItem],
-    addStyleName: js.Function1[java.lang.String, MenuItem],
-    getId: js.Function0[java.lang.String],
-    getTag: js.Function0[java.lang.String],
-    getType: js.Function0[java.lang.String],
-    setCommand: js.Function1[Handler, MenuItem],
-    setHTML: js.Function1[java.lang.String, MenuItem],
-    setHeight: js.Function1[java.lang.String, MenuItem],
-    setId: js.Function1[java.lang.String, MenuItem],
-    setPixelSize: js.Function2[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      MenuItem
-    ],
-    setSize: js.Function2[java.lang.String, java.lang.String, MenuItem],
-    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, MenuItem],
-    setStyleAttributes: js.Function1[js.Object, MenuItem],
-    setStyleName: js.Function1[java.lang.String, MenuItem],
-    setStylePrimaryName: js.Function1[java.lang.String, MenuItem],
-    setSubMenu: js.Function1[MenuBar, MenuItem],
-    setTag: js.Function1[java.lang.String, MenuItem],
-    setText: js.Function1[java.lang.String, MenuItem],
-    setTitle: js.Function1[java.lang.String, MenuItem],
-    setVisible: js.Function1[scala.Boolean, MenuItem],
-    setWidth: js.Function1[java.lang.String, MenuItem]
+    addStyleDependentName: java.lang.String => MenuItem,
+    addStyleName: java.lang.String => MenuItem,
+    getId: () => java.lang.String,
+    getTag: () => java.lang.String,
+    getType: () => java.lang.String,
+    setCommand: Handler => MenuItem,
+    setHTML: java.lang.String => MenuItem,
+    setHeight: java.lang.String => MenuItem,
+    setId: java.lang.String => MenuItem,
+    setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => MenuItem,
+    setSize: (java.lang.String, java.lang.String) => MenuItem,
+    setStyleAttribute: (java.lang.String, java.lang.String) => MenuItem,
+    setStyleAttributes: js.Object => MenuItem,
+    setStyleName: java.lang.String => MenuItem,
+    setStylePrimaryName: java.lang.String => MenuItem,
+    setSubMenu: MenuBar => MenuItem,
+    setTag: java.lang.String => MenuItem,
+    setText: java.lang.String => MenuItem,
+    setTitle: java.lang.String => MenuItem,
+    setVisible: scala.Boolean => MenuItem,
+    setWidth: java.lang.String => MenuItem
   ): MenuItem = {
-    val __obj = js.Dynamic.literal(addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, getId = getId, getTag = getTag, getType = getType, setCommand = setCommand, setHTML = setHTML, setHeight = setHeight, setId = setId, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setSubMenu = setSubMenu, setTag = setTag, setText = setText, setTitle = setTitle, setVisible = setVisible, setWidth = setWidth)
+    val __obj = js.Dynamic.literal(addStyleDependentName = js.Any.fromFunction1(addStyleDependentName), addStyleName = js.Any.fromFunction1(addStyleName), getId = js.Any.fromFunction0(getId), getTag = js.Any.fromFunction0(getTag), getType = js.Any.fromFunction0(getType), setCommand = js.Any.fromFunction1(setCommand), setHTML = js.Any.fromFunction1(setHTML), setHeight = js.Any.fromFunction1(setHeight), setId = js.Any.fromFunction1(setId), setPixelSize = js.Any.fromFunction2(setPixelSize), setSize = js.Any.fromFunction2(setSize), setStyleAttribute = js.Any.fromFunction2(setStyleAttribute), setStyleAttributes = js.Any.fromFunction1(setStyleAttributes), setStyleName = js.Any.fromFunction1(setStyleName), setStylePrimaryName = js.Any.fromFunction1(setStylePrimaryName), setSubMenu = js.Any.fromFunction1(setSubMenu), setTag = js.Any.fromFunction1(setTag), setText = js.Any.fromFunction1(setText), setTitle = js.Any.fromFunction1(setTitle), setVisible = js.Any.fromFunction1(setVisible), setWidth = js.Any.fromFunction1(setWidth))
   
     __obj.asInstanceOf[MenuItem]
   }

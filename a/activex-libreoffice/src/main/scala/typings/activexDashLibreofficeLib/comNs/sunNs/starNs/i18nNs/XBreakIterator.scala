@@ -264,125 +264,31 @@ trait XBreakIterator
 object XBreakIterator {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    beginOfCharBlock: js.Function4[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      scala.Double
-    ],
-    beginOfScript: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Double],
-    beginOfSentence: js.Function3[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double
-    ],
-    endOfCharBlock: js.Function4[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      scala.Double
-    ],
-    endOfScript: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Double],
-    endOfSentence: js.Function3[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double
-    ],
-    getLineBreak: js.Function6[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      LineBreakHyphenationOptions, 
-      LineBreakUserOptions, 
-      LineBreakResults
-    ],
-    getScriptType: js.Function2[java.lang.String, scala.Double, scala.Double],
-    getWordBoundary: js.Function5[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      scala.Boolean, 
-      Boundary
-    ],
-    getWordType: js.Function3[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double
-    ],
-    isBeginWord: js.Function4[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      scala.Boolean
-    ],
-    isEndWord: js.Function4[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      scala.Boolean
-    ],
-    nextCharBlock: js.Function4[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      scala.Double
-    ],
-    nextCharacters: js.Function6[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      scala.Double, 
-      js.Array[scala.Double], 
-      scala.Double
-    ],
-    nextScript: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Double],
-    nextWord: js.Function4[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      Boundary
-    ],
-    previousCharBlock: js.Function4[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      scala.Double
-    ],
-    previousCharacters: js.Function6[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      scala.Double, 
-      js.Array[scala.Double], 
-      scala.Double
-    ],
-    previousScript: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Double],
-    previousWord: js.Function4[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      Boundary
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    beginOfCharBlock: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double) => scala.Double,
+    beginOfScript: (java.lang.String, scala.Double, scala.Double) => scala.Double,
+    beginOfSentence: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => scala.Double,
+    endOfCharBlock: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double) => scala.Double,
+    endOfScript: (java.lang.String, scala.Double, scala.Double) => scala.Double,
+    endOfSentence: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => scala.Double,
+    getLineBreak: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double, LineBreakHyphenationOptions, LineBreakUserOptions) => LineBreakResults,
+    getScriptType: (java.lang.String, scala.Double) => scala.Double,
+    getWordBoundary: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double, scala.Boolean) => Boundary,
+    getWordType: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => scala.Double,
+    isBeginWord: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double) => scala.Boolean,
+    isEndWord: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double) => scala.Boolean,
+    nextCharBlock: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double) => scala.Double,
+    nextCharacters: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double, scala.Double, js.Array[scala.Double]) => scala.Double,
+    nextScript: (java.lang.String, scala.Double, scala.Double) => scala.Double,
+    nextWord: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double) => Boundary,
+    previousCharBlock: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double) => scala.Double,
+    previousCharacters: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double, scala.Double, js.Array[scala.Double]) => scala.Double,
+    previousScript: (java.lang.String, scala.Double, scala.Double) => scala.Double,
+    previousWord: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double) => Boundary,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XBreakIterator = {
-    val __obj = js.Dynamic.literal(acquire = acquire, beginOfCharBlock = beginOfCharBlock, beginOfScript = beginOfScript, beginOfSentence = beginOfSentence, endOfCharBlock = endOfCharBlock, endOfScript = endOfScript, endOfSentence = endOfSentence, getLineBreak = getLineBreak, getScriptType = getScriptType, getWordBoundary = getWordBoundary, getWordType = getWordType, isBeginWord = isBeginWord, isEndWord = isEndWord, nextCharBlock = nextCharBlock, nextCharacters = nextCharacters, nextScript = nextScript, nextWord = nextWord, previousCharBlock = previousCharBlock, previousCharacters = previousCharacters, previousScript = previousScript, previousWord = previousWord, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), beginOfCharBlock = js.Any.fromFunction4(beginOfCharBlock), beginOfScript = js.Any.fromFunction3(beginOfScript), beginOfSentence = js.Any.fromFunction3(beginOfSentence), endOfCharBlock = js.Any.fromFunction4(endOfCharBlock), endOfScript = js.Any.fromFunction3(endOfScript), endOfSentence = js.Any.fromFunction3(endOfSentence), getLineBreak = js.Any.fromFunction6(getLineBreak), getScriptType = js.Any.fromFunction2(getScriptType), getWordBoundary = js.Any.fromFunction5(getWordBoundary), getWordType = js.Any.fromFunction3(getWordType), isBeginWord = js.Any.fromFunction4(isBeginWord), isEndWord = js.Any.fromFunction4(isEndWord), nextCharBlock = js.Any.fromFunction4(nextCharBlock), nextCharacters = js.Any.fromFunction6(nextCharacters), nextScript = js.Any.fromFunction3(nextScript), nextWord = js.Any.fromFunction4(nextWord), previousCharBlock = js.Any.fromFunction4(previousCharBlock), previousCharacters = js.Any.fromFunction6(previousCharacters), previousScript = js.Any.fromFunction3(previousScript), previousWord = js.Any.fromFunction4(previousWord), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XBreakIterator]
   }

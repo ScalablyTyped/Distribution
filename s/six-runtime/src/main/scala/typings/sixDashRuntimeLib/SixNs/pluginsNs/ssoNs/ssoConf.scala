@@ -16,13 +16,13 @@ trait ssoConf extends js.Object {
 object ssoConf {
   @scala.inline
   def apply(
-    adapter: js.Function1[js.Object, js.Object],
+    adapter: js.Object => js.Object,
     enableCache: scala.Boolean,
     hasLoginCacheMaxAge: scala.Double,
     ssoConf: ssoClientConf,
     whiteList: java.lang.String | stdLib.RegExp | js.Array[java.lang.String] | sixDashRuntimeLib.SixNs.pluginsNs.whiteList
   ): ssoConf = {
-    val __obj = js.Dynamic.literal(adapter = adapter, enableCache = enableCache, hasLoginCacheMaxAge = hasLoginCacheMaxAge, ssoConf = ssoConf, whiteList = whiteList.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(adapter = js.Any.fromFunction1(adapter), enableCache = enableCache, hasLoginCacheMaxAge = hasLoginCacheMaxAge, ssoConf = ssoConf, whiteList = whiteList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ssoConf]
   }

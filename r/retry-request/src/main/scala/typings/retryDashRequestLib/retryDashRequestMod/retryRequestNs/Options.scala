@@ -34,7 +34,7 @@ object Options {
       requestLib.requestMod.requestNs.RequiredUriUrl
     ]) = null,
     retries: scala.Int | scala.Double = null,
-    shouldRetryFn: js.Function1[/* response */ requestLib.requestMod.requestNs.RequestResponse, scala.Boolean] = null
+    shouldRetryFn: /* response */ requestLib.requestMod.requestNs.RequestResponse => scala.Boolean = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (currentRetryAttempt != null) __obj.updateDynamic("currentRetryAttempt")(currentRetryAttempt.asInstanceOf[js.Any])
@@ -42,7 +42,7 @@ object Options {
     if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode)
     if (request != null) __obj.updateDynamic("request")(request)
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
-    if (shouldRetryFn != null) __obj.updateDynamic("shouldRetryFn")(shouldRetryFn)
+    if (shouldRetryFn != null) __obj.updateDynamic("shouldRetryFn")(js.Any.fromFunction1(shouldRetryFn))
     __obj.asInstanceOf[Options]
   }
 }

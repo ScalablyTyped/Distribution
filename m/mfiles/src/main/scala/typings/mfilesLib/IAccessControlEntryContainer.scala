@@ -20,17 +20,17 @@ trait IAccessControlEntryContainer extends js.Object {
 object IAccessControlEntryContainer {
   @scala.inline
   def apply(
-    Add: js.Function2[IAccessControlEntryKey, IAccessControlEntryData, scala.Unit],
-    At: js.Function1[IAccessControlEntryKey, IAccessControlEntryData],
-    Clear: js.Function0[scala.Unit],
-    Clone: js.Function0[IAccessControlEntryContainer],
-    GetKeys: js.Function0[IAccessControlEntryKeys],
-    GetKeysWithPseudoUserDefinitions: js.Function0[IAccessControlEntryKeys],
-    HasKey: js.Function1[IAccessControlEntryKey, scala.Boolean],
+    Add: (IAccessControlEntryKey, IAccessControlEntryData) => scala.Unit,
+    At: IAccessControlEntryKey => IAccessControlEntryData,
+    Clear: () => scala.Unit,
+    Clone: () => IAccessControlEntryContainer,
+    GetKeys: () => IAccessControlEntryKeys,
+    GetKeysWithPseudoUserDefinitions: () => IAccessControlEntryKeys,
+    HasKey: IAccessControlEntryKey => scala.Boolean,
     IsEmpty: scala.Boolean,
-    Remove: js.Function1[IAccessControlEntryKey, scala.Unit]
+    Remove: IAccessControlEntryKey => scala.Unit
   ): IAccessControlEntryContainer = {
-    val __obj = js.Dynamic.literal(Add = Add, At = At, Clear = Clear, Clone = Clone, GetKeys = GetKeys, GetKeysWithPseudoUserDefinitions = GetKeysWithPseudoUserDefinitions, HasKey = HasKey, IsEmpty = IsEmpty, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), At = js.Any.fromFunction1(At), Clear = js.Any.fromFunction0(Clear), Clone = js.Any.fromFunction0(Clone), GetKeys = js.Any.fromFunction0(GetKeys), GetKeysWithPseudoUserDefinitions = js.Any.fromFunction0(GetKeysWithPseudoUserDefinitions), HasKey = js.Any.fromFunction1(HasKey), IsEmpty = IsEmpty, Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IAccessControlEntryContainer]
   }

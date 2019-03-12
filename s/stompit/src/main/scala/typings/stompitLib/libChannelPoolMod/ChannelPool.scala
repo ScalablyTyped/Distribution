@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ChannelPool extends js.Object {
   def channel(
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* channel */ stompitLib.libChannelMod.namespaced, 
       scala.Unit
     ]
@@ -19,17 +19,14 @@ trait ChannelPool extends js.Object {
 object ChannelPool {
   @scala.inline
   def apply(
-    channel: js.Function1[
-      js.Function2[
-        /* err */ nodeLib.Error | scala.Null, 
-        /* channel */ stompitLib.libChannelMod.namespaced, 
-        scala.Unit
-      ], 
+    channel: js.Function2[
+      /* err */ stdLib.Error | scala.Null, 
+      /* channel */ stompitLib.libChannelMod.namespaced, 
       scala.Unit
-    ],
-    close: js.Function0[scala.Unit]
+    ] => scala.Unit,
+    close: () => scala.Unit
   ): ChannelPool = {
-    val __obj = js.Dynamic.literal(channel = channel, close = close)
+    val __obj = js.Dynamic.literal(channel = js.Any.fromFunction1(channel), close = js.Any.fromFunction0(close))
   
     __obj.asInstanceOf[ChannelPool]
   }

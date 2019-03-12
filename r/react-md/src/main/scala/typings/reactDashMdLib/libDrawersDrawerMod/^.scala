@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/Drawers/Drawer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactDashMdLib.libDrawersDrawerMod.DrawerComponent = js.native
+  val default: DrawerComponent = js.native
 }
 

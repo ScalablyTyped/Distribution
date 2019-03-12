@@ -19,12 +19,12 @@ object ISQLDatabase {
   def apply(
     AdminUser: IImpersonation,
     BasicUser: IImpersonation,
-    Clone: js.Function0[ISQLDatabase],
+    Clone: () => ISQLDatabase,
     Engine: mfilesLib.MFilesNs.MFDBEngine,
     Name: java.lang.String,
     Server: java.lang.String
   ): ISQLDatabase = {
-    val __obj = js.Dynamic.literal(AdminUser = AdminUser, BasicUser = BasicUser, Clone = Clone, Engine = Engine, Name = Name, Server = Server)
+    val __obj = js.Dynamic.literal(AdminUser = AdminUser, BasicUser = BasicUser, Clone = js.Any.fromFunction0(Clone), Engine = Engine, Name = Name, Server = Server)
   
     __obj.asInstanceOf[ISQLDatabase]
   }

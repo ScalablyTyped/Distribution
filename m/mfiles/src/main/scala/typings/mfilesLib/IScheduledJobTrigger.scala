@@ -25,7 +25,7 @@ object IScheduledJobTrigger {
     BeginDay: scala.Double,
     BeginMonth: scala.Double,
     BeginYear: scala.Double,
-    Clone: js.Function0[IScheduledJobTrigger],
+    Clone: () => IScheduledJobTrigger,
     EndDay: scala.Double,
     EndMonth: scala.Double,
     EndYear: scala.Double,
@@ -34,7 +34,7 @@ object IScheduledJobTrigger {
     Type: ITriggerType,
     ValidEndDate: scala.Boolean
   ): IScheduledJobTrigger = {
-    val __obj = js.Dynamic.literal(BeginDay = BeginDay, BeginMonth = BeginMonth, BeginYear = BeginYear, Clone = Clone, EndDay = EndDay, EndMonth = EndMonth, EndYear = EndYear, StartHour = StartHour, StartMinute = StartMinute, Type = Type, ValidEndDate = ValidEndDate)
+    val __obj = js.Dynamic.literal(BeginDay = BeginDay, BeginMonth = BeginMonth, BeginYear = BeginYear, Clone = js.Any.fromFunction0(Clone), EndDay = EndDay, EndMonth = EndMonth, EndYear = EndYear, StartHour = StartHour, StartMinute = StartMinute, Type = Type, ValidEndDate = ValidEndDate)
   
     __obj.asInstanceOf[IScheduledJobTrigger]
   }

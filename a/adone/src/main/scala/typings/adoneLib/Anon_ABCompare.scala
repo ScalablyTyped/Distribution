@@ -16,13 +16,13 @@ trait Anon_ABCompare extends js.Object {
 object Anon_ABCompare {
   @scala.inline
   def apply(
-    compare: js.Function2[nodeLib.Buffer, nodeLib.Buffer, scala.Boolean],
-    create: js.Function2[nodeLib.Buffer, nodeLib.Buffer, nodeLib.Buffer],
-    eq: js.Function2[nodeLib.Buffer, nodeLib.Buffer, scala.Boolean],
-    gt: js.Function2[nodeLib.Buffer, nodeLib.Buffer, scala.Boolean],
-    lt: js.Function2[nodeLib.Buffer, nodeLib.Buffer, scala.Boolean]
+    compare: (nodeLib.Buffer, nodeLib.Buffer) => scala.Boolean,
+    create: (nodeLib.Buffer, nodeLib.Buffer) => nodeLib.Buffer,
+    eq: (nodeLib.Buffer, nodeLib.Buffer) => scala.Boolean,
+    gt: (nodeLib.Buffer, nodeLib.Buffer) => scala.Boolean,
+    lt: (nodeLib.Buffer, nodeLib.Buffer) => scala.Boolean
   ): Anon_ABCompare = {
-    val __obj = js.Dynamic.literal(compare = compare, create = create, eq = eq, gt = gt, lt = lt)
+    val __obj = js.Dynamic.literal(compare = js.Any.fromFunction2(compare), create = js.Any.fromFunction2(create), eq = js.Any.fromFunction2(eq), gt = js.Any.fromFunction2(gt), lt = js.Any.fromFunction2(lt))
   
     __obj.asInstanceOf[Anon_ABCompare]
   }

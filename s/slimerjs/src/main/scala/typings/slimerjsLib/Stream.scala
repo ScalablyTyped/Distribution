@@ -19,16 +19,16 @@ trait Stream extends js.Object {
 object Stream {
   @scala.inline
   def apply(
-    atEnd: js.Function0[scala.Boolean],
-    close: js.Function0[scala.Unit],
-    flush: js.Function0[scala.Unit],
-    read: js.Function0[java.lang.String],
-    readLine: js.Function0[java.lang.String],
-    seek: js.Function1[scala.Double, scala.Unit],
-    write: js.Function1[java.lang.String, scala.Unit],
-    writeLine: js.Function1[java.lang.String, scala.Unit]
+    atEnd: () => scala.Boolean,
+    close: () => scala.Unit,
+    flush: () => scala.Unit,
+    read: () => java.lang.String,
+    readLine: () => java.lang.String,
+    seek: scala.Double => scala.Unit,
+    write: java.lang.String => scala.Unit,
+    writeLine: java.lang.String => scala.Unit
   ): Stream = {
-    val __obj = js.Dynamic.literal(atEnd = atEnd, close = close, flush = flush, read = read, readLine = readLine, seek = seek, write = write, writeLine = writeLine)
+    val __obj = js.Dynamic.literal(atEnd = js.Any.fromFunction0(atEnd), close = js.Any.fromFunction0(close), flush = js.Any.fromFunction0(flush), read = js.Any.fromFunction0(read), readLine = js.Any.fromFunction0(readLine), seek = js.Any.fromFunction1(seek), write = js.Any.fromFunction1(write), writeLine = js.Any.fromFunction1(writeLine))
   
     __obj.asInstanceOf[Stream]
   }

@@ -10,7 +10,7 @@ trait ExceptionTelemetry
   /**
     * Exception thrown
     */
-  var exception: nodeLib.Error
+  var exception: stdLib.Error
   /**
     * Metrics associated with this exception, displayed in Metrics Explorer on the portal. Defaults to empty
     */
@@ -20,7 +20,7 @@ trait ExceptionTelemetry
 object ExceptionTelemetry {
   @scala.inline
   def apply(
-    exception: nodeLib.Error,
+    exception: stdLib.Error,
     contextObjects: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     measurements: org.scalablytyped.runtime.StringDictionary[scala.Double] = null,
     properties: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,

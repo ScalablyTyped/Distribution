@@ -16,13 +16,13 @@ trait IScheduledJobTriggers extends js.Object {
 object IScheduledJobTriggers {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IScheduledJobTrigger, scala.Unit],
-    Clone: js.Function0[IScheduledJobTriggers],
+    Add: (scala.Double, IScheduledJobTrigger) => scala.Unit,
+    Clone: () => IScheduledJobTriggers,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IScheduledJobTrigger],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => IScheduledJobTrigger,
+    Remove: scala.Double => scala.Unit
   ): IScheduledJobTriggers = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IScheduledJobTriggers]
   }

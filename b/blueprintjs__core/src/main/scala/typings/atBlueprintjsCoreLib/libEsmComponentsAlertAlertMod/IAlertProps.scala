@@ -54,7 +54,7 @@ trait IAlertProps
     */
   var onCancel: js.UndefOr[
     js.Function1[
-      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
+      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -66,7 +66,7 @@ trait IAlertProps
   var onClose: js.UndefOr[
     js.Function2[
       /* confirmed */ scala.Boolean, 
-      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
+      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -77,7 +77,7 @@ trait IAlertProps
     */
   var onConfirm: js.UndefOr[
     js.Function1[
-      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
+      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -86,7 +86,7 @@ trait IAlertProps
     * This prop is ignored if `usePortal` is `false`.
     * @default document.body
     */
-  var portalContainer: js.UndefOr[reactLib.HTMLElement] = js.undefined
+  var portalContainer: js.UndefOr[stdLib.HTMLElement] = js.undefined
   /**
     * CSS styles to apply to the alert.
     */
@@ -112,24 +112,14 @@ object IAlertProps {
     confirmButtonText: java.lang.String = null,
     icon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
     intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
-    onCancel: js.Function1[
-      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
-      scala.Unit
-    ] = null,
-    onClose: js.Function2[
-      /* confirmed */ scala.Boolean, 
-      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
-      scala.Unit
-    ] = null,
-    onClosed: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
-    onClosing: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
-    onConfirm: js.Function1[
-      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
-      scala.Unit
-    ] = null,
-    onOpened: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
-    onOpening: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
-    portalContainer: reactLib.HTMLElement = null,
+    onCancel: /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]] => scala.Unit = null,
+    onClose: (/* confirmed */ scala.Boolean, /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]]) => scala.Unit = null,
+    onClosed: /* node */ stdLib.HTMLElement => scala.Unit = null,
+    onClosing: /* node */ stdLib.HTMLElement => scala.Unit = null,
+    onConfirm: /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]] => scala.Unit = null,
+    onOpened: /* node */ stdLib.HTMLElement => scala.Unit = null,
+    onOpening: /* node */ stdLib.HTMLElement => scala.Unit = null,
+    portalContainer: stdLib.HTMLElement = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     transitionDuration: scala.Int | scala.Double = null
   ): IAlertProps = {
@@ -141,13 +131,13 @@ object IAlertProps {
     if (confirmButtonText != null) __obj.updateDynamic("confirmButtonText")(confirmButtonText)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (intent != null) __obj.updateDynamic("intent")(intent)
-    if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onClosed != null) __obj.updateDynamic("onClosed")(onClosed)
-    if (onClosing != null) __obj.updateDynamic("onClosing")(onClosing)
-    if (onConfirm != null) __obj.updateDynamic("onConfirm")(onConfirm)
-    if (onOpened != null) __obj.updateDynamic("onOpened")(onOpened)
-    if (onOpening != null) __obj.updateDynamic("onOpening")(onOpening)
+    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction1(onCancel))
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2(onClose))
+    if (onClosed != null) __obj.updateDynamic("onClosed")(js.Any.fromFunction1(onClosed))
+    if (onClosing != null) __obj.updateDynamic("onClosing")(js.Any.fromFunction1(onClosing))
+    if (onConfirm != null) __obj.updateDynamic("onConfirm")(js.Any.fromFunction1(onConfirm))
+    if (onOpened != null) __obj.updateDynamic("onOpened")(js.Any.fromFunction1(onOpened))
+    if (onOpening != null) __obj.updateDynamic("onOpening")(js.Any.fromFunction1(onOpening))
     if (portalContainer != null) __obj.updateDynamic("portalContainer")(portalContainer)
     if (style != null) __obj.updateDynamic("style")(style)
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])

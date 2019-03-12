@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because var conflicts: className. Inlined  */ trait IControlProps
-  extends reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] {
+  extends reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement] {
   /**
     * Alignment of the indicator within container.
     * @default Alignment.LEFT
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   /** Whether the control should appear as an inline element. */
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
   /** Ref handler that receives HTML `<input>` element backing this component. */
-  var inputRef: js.UndefOr[js.Function1[/* ref */ reactLib.HTMLInputElement | scala.Null, _]] = js.undefined
+  var inputRef: js.UndefOr[js.Function1[/* ref */ stdLib.HTMLInputElement | scala.Null, _]] = js.undefined
   /**
     * Text label for the control.
     *
@@ -52,18 +52,18 @@ object IControlProps {
   @scala.inline
   def apply(
     IProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps = null,
-    InputHTMLAttributes: reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] = null,
+    InputHTMLAttributes: reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement] = null,
     alignIndicator: atBlueprintjsCoreLib.libEsmCommonAlignmentMod.Alignment = null,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     defaultChecked: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
-    inputRef: js.Function1[/* ref */ reactLib.HTMLInputElement | scala.Null, _] = null,
+    inputRef: /* ref */ stdLib.HTMLInputElement | scala.Null => _ = null,
     label: java.lang.String = null,
     labelElement: reactLib.reactMod.ReactNs.ReactNode = null,
     large: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: reactLib.reactMod.ReactNs.FormEventHandler[reactLib.HTMLInputElement] = null,
+    onChange: reactLib.reactMod.ReactNs.FormEventHandler[stdLib.HTMLInputElement] = null,
     tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null
   ): IControlProps = {
     val __obj = js.Dynamic.literal()
@@ -75,7 +75,7 @@ object IControlProps {
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
-    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef)
+    if (inputRef != null) __obj.updateDynamic("inputRef")(js.Any.fromFunction1(inputRef))
     if (label != null) __obj.updateDynamic("label")(label)
     if (labelElement != null) __obj.updateDynamic("labelElement")(labelElement.asInstanceOf[js.Any])
     if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)

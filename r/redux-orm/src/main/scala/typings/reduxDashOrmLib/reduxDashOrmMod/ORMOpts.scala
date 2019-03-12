@@ -11,8 +11,8 @@ trait ORMOpts extends js.Object {
 
 object ORMOpts {
   @scala.inline
-  def apply(createDatabase: js.Function1[SchemaSpec, js.Any]): ORMOpts = {
-    val __obj = js.Dynamic.literal(createDatabase = createDatabase)
+  def apply(createDatabase: SchemaSpec => js.Any): ORMOpts = {
+    val __obj = js.Dynamic.literal(createDatabase = js.Any.fromFunction1(createDatabase))
   
     __obj.asInstanceOf[ORMOpts]
   }

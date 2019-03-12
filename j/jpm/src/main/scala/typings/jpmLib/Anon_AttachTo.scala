@@ -35,8 +35,8 @@ object Anon_AttachTo {
     contentStyle: java.lang.String | js.Array[java.lang.String] = null,
     contentStyleFile: java.lang.String | js.Array[java.lang.String] = null,
     exclude: java.lang.String | js.Array[java.lang.String] = null,
-    onAttach: js.Function1[/* worker */ jpmLib.FFAddonSDKNs.ContentWorker, _] = null,
-    onError: js.Function1[/* error */ stdLib.Error, _] = null
+    onAttach: /* worker */ jpmLib.FFAddonSDKNs.ContentWorker => _ = null,
+    onError: /* error */ stdLib.Error => _ = null
   ): Anon_AttachTo = {
     val __obj = js.Dynamic.literal(include = include.asInstanceOf[js.Any])
     if (attachTo != null) __obj.updateDynamic("attachTo")(attachTo.asInstanceOf[js.Any])
@@ -47,8 +47,8 @@ object Anon_AttachTo {
     if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle.asInstanceOf[js.Any])
     if (contentStyleFile != null) __obj.updateDynamic("contentStyleFile")(contentStyleFile.asInstanceOf[js.Any])
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (onAttach != null) __obj.updateDynamic("onAttach")(onAttach)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onAttach != null) __obj.updateDynamic("onAttach")(js.Any.fromFunction1(onAttach))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     __obj.asInstanceOf[Anon_AttachTo]
   }
 }

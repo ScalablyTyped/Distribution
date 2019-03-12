@@ -154,18 +154,11 @@ object Options {
     allowDropdown: js.UndefOr[scala.Boolean] = js.undefined,
     autoHideDialCode: js.UndefOr[scala.Boolean] = js.undefined,
     autoPlaceholder: intlDashTelDashInputLib.intlDashTelDashInputLibStrings.off | intlDashTelDashInputLib.intlDashTelDashInputLibStrings.polite | intlDashTelDashInputLib.intlDashTelDashInputLibStrings.aggressive = null,
-    customPlaceholder: js.Function2[
-      /* selectedCountryPlaceholder */ java.lang.String, 
-      /* selectedCountryData */ intlDashTelDashInputLib.intlDashTelDashInputMod.intlTelInputUtilsNs.CountryData, 
-      java.lang.String
-    ] = null,
+    customPlaceholder: (/* selectedCountryPlaceholder */ java.lang.String, /* selectedCountryData */ intlDashTelDashInputLib.intlDashTelDashInputMod.intlTelInputUtilsNs.CountryData) => java.lang.String = null,
     dropdownContainer: stdLib.Node = null,
     excludeCountries: js.Array[java.lang.String] = null,
     formatOnDisplay: js.UndefOr[scala.Boolean] = js.undefined,
-    geoIpLookup: js.Function1[
-      /* callback */ js.Function1[/* countryCode */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ] = null,
+    geoIpLookup: /* callback */ js.Function1[/* countryCode */ java.lang.String, scala.Unit] => scala.Unit = null,
     hiddenInput: java.lang.String = null,
     initialCountry: java.lang.String = null,
     localizedCountries: js.Object = null,
@@ -180,11 +173,11 @@ object Options {
     if (!js.isUndefined(allowDropdown)) __obj.updateDynamic("allowDropdown")(allowDropdown)
     if (!js.isUndefined(autoHideDialCode)) __obj.updateDynamic("autoHideDialCode")(autoHideDialCode)
     if (autoPlaceholder != null) __obj.updateDynamic("autoPlaceholder")(autoPlaceholder.asInstanceOf[js.Any])
-    if (customPlaceholder != null) __obj.updateDynamic("customPlaceholder")(customPlaceholder)
+    if (customPlaceholder != null) __obj.updateDynamic("customPlaceholder")(js.Any.fromFunction2(customPlaceholder))
     if (dropdownContainer != null) __obj.updateDynamic("dropdownContainer")(dropdownContainer)
     if (excludeCountries != null) __obj.updateDynamic("excludeCountries")(excludeCountries)
     if (!js.isUndefined(formatOnDisplay)) __obj.updateDynamic("formatOnDisplay")(formatOnDisplay)
-    if (geoIpLookup != null) __obj.updateDynamic("geoIpLookup")(geoIpLookup)
+    if (geoIpLookup != null) __obj.updateDynamic("geoIpLookup")(js.Any.fromFunction1(geoIpLookup))
     if (hiddenInput != null) __obj.updateDynamic("hiddenInput")(hiddenInput)
     if (initialCountry != null) __obj.updateDynamic("initialCountry")(initialCountry)
     if (localizedCountries != null) __obj.updateDynamic("localizedCountries")(localizedCountries)

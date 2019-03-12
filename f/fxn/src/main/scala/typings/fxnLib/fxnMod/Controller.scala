@@ -35,9 +35,9 @@ abstract class Controller protected () extends js.Object {
   def post(): scala.Unit = js.native
   def put(): scala.Unit = js.native
   def redirect(location: java.lang.String): scala.Unit = js.native
+  def render(data: java.lang.String): scala.Unit = js.native
   def render(data: js.Object): scala.Unit = js.native
   def render(data: nodeLib.Buffer): scala.Unit = js.native
-  def render(data: nodeLib.String): scala.Unit = js.native
   def run(): scala.Unit = js.native
   def securityPolicy(directive: java.lang.String, src: java.lang.String): java.lang.String = js.native
   def setHeader(key: java.lang.String, value: java.lang.String): java.lang.String = js.native

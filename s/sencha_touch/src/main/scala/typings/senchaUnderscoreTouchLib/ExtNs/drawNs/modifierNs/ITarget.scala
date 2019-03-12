@@ -12,32 +12,29 @@ object ITarget {
   def apply(
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     extend: java.lang.String = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getNext: js.Function0[ITarget] = null,
-    getPrevious: js.Function0[ITarget] = null,
-    getSprite: js.Function0[senchaUnderscoreTouchLib.ExtNs.drawNs.spriteNs.ISprite] = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getNext: () => ITarget = null,
+    getPrevious: () => ITarget = null,
+    getSprite: () => senchaUnderscoreTouchLib.ExtNs.drawNs.spriteNs.ISprite = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     next: IModifier = null,
     platformConfig: js.Any = null,
-    popUp: js.Function2[/* attributes */ js.UndefOr[js.Any], /* changes */ js.UndefOr[js.Any], scala.Unit] = null,
-    prepareAttributes: js.Function1[/* attr */ js.UndefOr[js.Any], scala.Unit] = null,
+    popUp: (/* attributes */ js.UndefOr[js.Any], /* changes */ js.UndefOr[js.Any]) => scala.Unit = null,
+    prepareAttributes: /* attr */ js.UndefOr[js.Any] => scala.Unit = null,
     previous: IModifier = null,
-    pushDown: js.Function2[/* attr */ js.UndefOr[js.Any], /* changes */ js.UndefOr[js.Any], _] = null,
+    pushDown: (/* attr */ js.UndefOr[js.Any], /* changes */ js.UndefOr[js.Any]) => _ = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setNext: js.Function1[/* next */ js.UndefOr[ITarget], scala.Unit] = null,
-    setPrevious: js.Function1[/* previous */ js.UndefOr[ITarget], scala.Unit] = null,
-    setSprite: js.Function1[
-      /* sprite */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.drawNs.spriteNs.ISprite], 
-      scala.Unit
-    ] = null,
+    setNext: /* next */ js.UndefOr[ITarget] => scala.Unit = null,
+    setPrevious: /* previous */ js.UndefOr[ITarget] => scala.Unit = null,
+    setSprite: /* sprite */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.drawNs.spriteNs.ISprite] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     sprite: senchaUnderscoreTouchLib.ExtNs.drawNs.spriteNs.ISprite = null,
     statics: js.Any = null,
@@ -46,29 +43,29 @@ object ITarget {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getNext != null) __obj.updateDynamic("getNext")(getNext)
-    if (getPrevious != null) __obj.updateDynamic("getPrevious")(getPrevious)
-    if (getSprite != null) __obj.updateDynamic("getSprite")(getSprite)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getNext != null) __obj.updateDynamic("getNext")(js.Any.fromFunction0(getNext))
+    if (getPrevious != null) __obj.updateDynamic("getPrevious")(js.Any.fromFunction0(getPrevious))
+    if (getSprite != null) __obj.updateDynamic("getSprite")(js.Any.fromFunction0(getSprite))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (next != null) __obj.updateDynamic("next")(next)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
-    if (popUp != null) __obj.updateDynamic("popUp")(popUp)
-    if (prepareAttributes != null) __obj.updateDynamic("prepareAttributes")(prepareAttributes)
+    if (popUp != null) __obj.updateDynamic("popUp")(js.Any.fromFunction2(popUp))
+    if (prepareAttributes != null) __obj.updateDynamic("prepareAttributes")(js.Any.fromFunction1(prepareAttributes))
     if (previous != null) __obj.updateDynamic("previous")(previous)
-    if (pushDown != null) __obj.updateDynamic("pushDown")(pushDown)
+    if (pushDown != null) __obj.updateDynamic("pushDown")(js.Any.fromFunction2(pushDown))
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setNext != null) __obj.updateDynamic("setNext")(setNext)
-    if (setPrevious != null) __obj.updateDynamic("setPrevious")(setPrevious)
-    if (setSprite != null) __obj.updateDynamic("setSprite")(setSprite)
+    if (setNext != null) __obj.updateDynamic("setNext")(js.Any.fromFunction1(setNext))
+    if (setPrevious != null) __obj.updateDynamic("setPrevious")(js.Any.fromFunction1(setPrevious))
+    if (setSprite != null) __obj.updateDynamic("setSprite")(js.Any.fromFunction1(setSprite))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (sprite != null) __obj.updateDynamic("sprite")(sprite)
     if (statics != null) __obj.updateDynamic("statics")(statics)

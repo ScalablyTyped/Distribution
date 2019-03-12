@@ -34,12 +34,12 @@ trait ASPxClientEvent[T] extends js.Object {
 object ASPxClientEvent {
   @scala.inline
   def apply[T](
-    AddHandler: js.Function1[T, scala.Unit],
-    ClearHandlers: js.Function0[scala.Unit],
-    FireEvent: js.Function2[js.Object, ASPxClientEventArgs, scala.Unit],
-    RemoveHandler: js.Function1[T, scala.Unit]
+    AddHandler: T => scala.Unit,
+    ClearHandlers: () => scala.Unit,
+    FireEvent: (js.Object, ASPxClientEventArgs) => scala.Unit,
+    RemoveHandler: T => scala.Unit
   ): ASPxClientEvent[T] = {
-    val __obj = js.Dynamic.literal(AddHandler = AddHandler, ClearHandlers = ClearHandlers, FireEvent = FireEvent, RemoveHandler = RemoveHandler)
+    val __obj = js.Dynamic.literal(AddHandler = js.Any.fromFunction1(AddHandler), ClearHandlers = js.Any.fromFunction0(ClearHandlers), FireEvent = js.Any.fromFunction2(FireEvent), RemoveHandler = js.Any.fromFunction1(RemoveHandler))
   
     __obj.asInstanceOf[ASPxClientEvent[T]]
   }

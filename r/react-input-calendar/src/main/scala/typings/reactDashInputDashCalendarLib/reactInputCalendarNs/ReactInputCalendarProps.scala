@@ -103,16 +103,9 @@ object ReactInputCalendarProps {
     maxDate: java.lang.String | stdLib.Date = null,
     minDate: java.lang.String | stdLib.Date = null,
     minView: scala.Int | scala.Double = null,
-    onBlur: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[ReactInputCalendar, reactLib.Event], 
-      /* computableDate */ java.lang.String, 
-      scala.Unit
-    ] = null,
-    onChange: js.Function1[/* computableDate */ java.lang.String, scala.Unit] = null,
-    onFocus: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[ReactInputCalendar, reactLib.Event], 
-      scala.Unit
-    ] = null,
+    onBlur: (/* event */ reactLib.reactMod.ReactNs.SyntheticEvent[ReactInputCalendar, reactLib.Event], /* computableDate */ java.lang.String) => scala.Unit = null,
+    onChange: /* computableDate */ java.lang.String => scala.Unit = null,
+    onFocus: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[ReactInputCalendar, reactLib.Event] => scala.Unit = null,
     openOnInputFocus: js.UndefOr[scala.Boolean] = js.undefined,
     placeholder: java.lang.String = null
   ): ReactInputCalendarProps = {
@@ -127,9 +120,9 @@ object ReactInputCalendarProps {
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
     if (minView != null) __obj.updateDynamic("minView")(minView.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2(onBlur))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (!js.isUndefined(openOnInputFocus)) __obj.updateDynamic("openOnInputFocus")(openOnInputFocus)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     __obj.asInstanceOf[ReactInputCalendarProps]

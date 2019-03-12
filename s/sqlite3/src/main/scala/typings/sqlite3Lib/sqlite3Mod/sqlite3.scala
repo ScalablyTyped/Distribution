@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait sqlite3 extends js.Object {
   var Database: org.scalablytyped.runtime.Instantiable2[
     /* filename */ java.lang.String, 
-    /* callback */ js.UndefOr[/* callback */ js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]], 
+    /* callback */ js.UndefOr[/* callback */ js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]], 
     Database
   ]
   var OPEN_CREATE: scala.Double
@@ -17,7 +17,7 @@ trait sqlite3 extends js.Object {
   var OPEN_READWRITE: scala.Double
   var OPEN_SHAREDCACHE: scala.Double
   var OPEN_URI: scala.Double
-  var RunResult: RunResult
+  var RunResult: sqlite3Lib.sqlite3Mod.RunResult
   var Statement: org.scalablytyped.runtime.Instantiable0[Statement]
   var cached: sqlite3Lib.Anon_Callback
   def verbose(): this.type
@@ -28,7 +28,7 @@ object sqlite3 {
   def apply(
     Database: org.scalablytyped.runtime.Instantiable2[
       /* filename */ java.lang.String, 
-      /* callback */ js.UndefOr[/* callback */ js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]], 
+      /* callback */ js.UndefOr[/* callback */ js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]], 
       Database
     ],
     OPEN_CREATE: scala.Double,
@@ -40,9 +40,9 @@ object sqlite3 {
     RunResult: RunResult,
     Statement: org.scalablytyped.runtime.Instantiable0[Statement],
     cached: sqlite3Lib.Anon_Callback,
-    verbose: js.Function0[sqlite3]
+    verbose: () => sqlite3
   ): sqlite3 = {
-    val __obj = js.Dynamic.literal(Database = Database, OPEN_CREATE = OPEN_CREATE, OPEN_PRIVATECACHE = OPEN_PRIVATECACHE, OPEN_READONLY = OPEN_READONLY, OPEN_READWRITE = OPEN_READWRITE, OPEN_SHAREDCACHE = OPEN_SHAREDCACHE, OPEN_URI = OPEN_URI, RunResult = RunResult, Statement = Statement, cached = cached, verbose = verbose)
+    val __obj = js.Dynamic.literal(Database = Database, OPEN_CREATE = OPEN_CREATE, OPEN_PRIVATECACHE = OPEN_PRIVATECACHE, OPEN_READONLY = OPEN_READONLY, OPEN_READWRITE = OPEN_READWRITE, OPEN_SHAREDCACHE = OPEN_SHAREDCACHE, OPEN_URI = OPEN_URI, RunResult = RunResult, Statement = Statement, cached = cached, verbose = js.Any.fromFunction0(verbose))
   
     __obj.asInstanceOf[sqlite3]
   }

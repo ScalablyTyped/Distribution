@@ -19,7 +19,7 @@ object ^ extends js.Object {
   /**
     * Create a toast
     */
-  def toast(options: stdLib.Partial[materializeDashCssLib.MNs.ToastOptions]): materializeDashCssLib.MNs.Toast = js.native
+  def toast(options: stdLib.Partial[ToastOptions]): Toast = js.native
   def updateTextFields(): scala.Unit = js.native
 }
 

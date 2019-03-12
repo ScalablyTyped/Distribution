@@ -18,8 +18,8 @@ trait INotify extends js.Object {
 
 object INotify {
   @scala.inline
-  def apply(close: js.Function0[scala.Unit], message: java.lang.String): INotify = {
-    val __obj = js.Dynamic.literal(close = close, message = message)
+  def apply(close: () => scala.Unit, message: java.lang.String): INotify = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), message = message)
   
     __obj.asInstanceOf[INotify]
   }

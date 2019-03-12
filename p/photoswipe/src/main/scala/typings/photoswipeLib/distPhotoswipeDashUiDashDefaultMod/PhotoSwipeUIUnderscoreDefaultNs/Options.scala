@@ -224,12 +224,7 @@ trait Options
 object Options {
   @scala.inline
   def apply(
-    addCaptionHTMLFn: js.Function3[
-      /* item */ Item, 
-      /* captionEl */ stdLib.HTMLElement, 
-      /* isFake */ scala.Boolean, 
-      scala.Boolean
-    ] = null,
+    addCaptionHTMLFn: (/* item */ Item, /* captionEl */ stdLib.HTMLElement, /* isFake */ scala.Boolean) => scala.Boolean = null,
     allowNoPanText: js.UndefOr[scala.Boolean] = js.undefined,
     arrowEl: js.UndefOr[scala.Boolean] = js.undefined,
     arrowKeys: js.UndefOr[scala.Boolean] = js.undefined,
@@ -247,21 +242,17 @@ object Options {
     focus: js.UndefOr[scala.Boolean] = js.undefined,
     fullscreenEl: js.UndefOr[scala.Boolean] = js.undefined,
     galleryUID: scala.Int | scala.Double = null,
-    getDoubleTapZoom: js.Function2[
-      /* isMouseClick */ scala.Boolean, 
-      /* item */ photoswipeLib.photoswipeMod.PhotoSwipeNs.Item, 
-      scala.Double
-    ] = null,
-    getImageURLForShare: js.Function1[/* shareButtonData */ ShareButtonData, java.lang.String] = null,
-    getNumItemsFn: js.Function0[scala.Double] = null,
-    getPageURLForShare: js.Function1[/* shareButtonData */ ShareButtonData, java.lang.String] = null,
-    getTextForShare: js.Function1[/* shareButtonData */ ShareButtonData, java.lang.String] = null,
-    getThumbBoundsFn: js.Function1[/* index */ scala.Double, photoswipeLib.Anon_W] = null,
+    getDoubleTapZoom: (/* isMouseClick */ scala.Boolean, /* item */ photoswipeLib.photoswipeMod.PhotoSwipeNs.Item) => scala.Double = null,
+    getImageURLForShare: /* shareButtonData */ ShareButtonData => java.lang.String = null,
+    getNumItemsFn: () => scala.Double = null,
+    getPageURLForShare: /* shareButtonData */ ShareButtonData => java.lang.String = null,
+    getTextForShare: /* shareButtonData */ ShareButtonData => java.lang.String = null,
+    getThumbBoundsFn: /* index */ scala.Double => photoswipeLib.Anon_W = null,
     hideAnimationDuration: scala.Int | scala.Double = null,
     history: js.UndefOr[scala.Boolean] = js.undefined,
     index: scala.Int | scala.Double = null,
     indexIndicatorSep: java.lang.String = null,
-    isClickableElement: js.Function1[/* el */ stdLib.HTMLElement, scala.Boolean] = null,
+    isClickableElement: /* el */ stdLib.HTMLElement => scala.Boolean = null,
     loadingIndicatorDelay: scala.Int | scala.Double = null,
     loop: js.UndefOr[scala.Boolean] = js.undefined,
     mainClass: java.lang.String = null,
@@ -270,11 +261,7 @@ object Options {
     modal: js.UndefOr[scala.Boolean] = js.undefined,
     mouseUsed: js.UndefOr[scala.Boolean] = js.undefined,
     panEndFriction: scala.Int | scala.Double = null,
-    parseShareButtonOut: js.Function2[
-      /* shareButtonData */ ShareButtonData, 
-      /* shareButtonOut */ java.lang.String, 
-      java.lang.String
-    ] = null,
+    parseShareButtonOut: (/* shareButtonData */ ShareButtonData, /* shareButtonOut */ java.lang.String) => java.lang.String = null,
     pinchToClose: js.UndefOr[scala.Boolean] = js.undefined,
     preload: js.Array[scala.Double] = null,
     preloaderEl: js.UndefOr[scala.Boolean] = js.undefined,
@@ -290,7 +277,7 @@ object Options {
     zoomEl: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (addCaptionHTMLFn != null) __obj.updateDynamic("addCaptionHTMLFn")(addCaptionHTMLFn)
+    if (addCaptionHTMLFn != null) __obj.updateDynamic("addCaptionHTMLFn")(js.Any.fromFunction3(addCaptionHTMLFn))
     if (!js.isUndefined(allowNoPanText)) __obj.updateDynamic("allowNoPanText")(allowNoPanText)
     if (!js.isUndefined(arrowEl)) __obj.updateDynamic("arrowEl")(arrowEl)
     if (!js.isUndefined(arrowKeys)) __obj.updateDynamic("arrowKeys")(arrowKeys)
@@ -308,17 +295,17 @@ object Options {
     if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
     if (!js.isUndefined(fullscreenEl)) __obj.updateDynamic("fullscreenEl")(fullscreenEl)
     if (galleryUID != null) __obj.updateDynamic("galleryUID")(galleryUID.asInstanceOf[js.Any])
-    if (getDoubleTapZoom != null) __obj.updateDynamic("getDoubleTapZoom")(getDoubleTapZoom)
-    if (getImageURLForShare != null) __obj.updateDynamic("getImageURLForShare")(getImageURLForShare)
-    if (getNumItemsFn != null) __obj.updateDynamic("getNumItemsFn")(getNumItemsFn)
-    if (getPageURLForShare != null) __obj.updateDynamic("getPageURLForShare")(getPageURLForShare)
-    if (getTextForShare != null) __obj.updateDynamic("getTextForShare")(getTextForShare)
-    if (getThumbBoundsFn != null) __obj.updateDynamic("getThumbBoundsFn")(getThumbBoundsFn)
+    if (getDoubleTapZoom != null) __obj.updateDynamic("getDoubleTapZoom")(js.Any.fromFunction2(getDoubleTapZoom))
+    if (getImageURLForShare != null) __obj.updateDynamic("getImageURLForShare")(js.Any.fromFunction1(getImageURLForShare))
+    if (getNumItemsFn != null) __obj.updateDynamic("getNumItemsFn")(js.Any.fromFunction0(getNumItemsFn))
+    if (getPageURLForShare != null) __obj.updateDynamic("getPageURLForShare")(js.Any.fromFunction1(getPageURLForShare))
+    if (getTextForShare != null) __obj.updateDynamic("getTextForShare")(js.Any.fromFunction1(getTextForShare))
+    if (getThumbBoundsFn != null) __obj.updateDynamic("getThumbBoundsFn")(js.Any.fromFunction1(getThumbBoundsFn))
     if (hideAnimationDuration != null) __obj.updateDynamic("hideAnimationDuration")(hideAnimationDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(history)) __obj.updateDynamic("history")(history)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (indexIndicatorSep != null) __obj.updateDynamic("indexIndicatorSep")(indexIndicatorSep)
-    if (isClickableElement != null) __obj.updateDynamic("isClickableElement")(isClickableElement)
+    if (isClickableElement != null) __obj.updateDynamic("isClickableElement")(js.Any.fromFunction1(isClickableElement))
     if (loadingIndicatorDelay != null) __obj.updateDynamic("loadingIndicatorDelay")(loadingIndicatorDelay.asInstanceOf[js.Any])
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
     if (mainClass != null) __obj.updateDynamic("mainClass")(mainClass)
@@ -327,7 +314,7 @@ object Options {
     if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
     if (!js.isUndefined(mouseUsed)) __obj.updateDynamic("mouseUsed")(mouseUsed)
     if (panEndFriction != null) __obj.updateDynamic("panEndFriction")(panEndFriction.asInstanceOf[js.Any])
-    if (parseShareButtonOut != null) __obj.updateDynamic("parseShareButtonOut")(parseShareButtonOut)
+    if (parseShareButtonOut != null) __obj.updateDynamic("parseShareButtonOut")(js.Any.fromFunction2(parseShareButtonOut))
     if (!js.isUndefined(pinchToClose)) __obj.updateDynamic("pinchToClose")(pinchToClose)
     if (preload != null) __obj.updateDynamic("preload")(preload)
     if (!js.isUndefined(preloaderEl)) __obj.updateDynamic("preloaderEl")(preloaderEl)

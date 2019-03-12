@@ -39,7 +39,7 @@ trait XEventAttacherManager
     * @returns all events registered for the given object index.
     * @throws IllegalArgumentException if Index is not valid.
     */
-  def getScriptEvents(Index: scala.Double): activexDashInteropLib.SafeArray[ScriptEventDescriptor]
+  def getScriptEvents(Index: scala.Double): stdLib.SafeArray[ScriptEventDescriptor]
   /**
     * creates an empty entry at the given position.
     *
@@ -116,35 +116,22 @@ trait XEventAttacherManager
 object XEventAttacherManager {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addScriptListener: js.Function1[XScriptListener, scala.Unit],
-    attach: js.Function3[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      js.Any, 
-      scala.Unit
-    ],
-    detach: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      scala.Unit
-    ],
-    getScriptEvents: js.Function1[scala.Double, activexDashInteropLib.SafeArray[ScriptEventDescriptor]],
-    insertEntry: js.Function1[scala.Double, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerScriptEvent: js.Function2[scala.Double, ScriptEventDescriptor, scala.Unit],
-    registerScriptEvents: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ScriptEventDescriptor], 
-      scala.Unit
-    ],
-    release: js.Function0[scala.Unit],
-    removeEntry: js.Function1[scala.Double, scala.Unit],
-    removeScriptListener: js.Function1[XScriptListener, scala.Unit],
-    revokeScriptEvent: js.Function4[scala.Double, java.lang.String, java.lang.String, java.lang.String, scala.Unit],
-    revokeScriptEvents: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    addScriptListener: XScriptListener => scala.Unit,
+    attach: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, js.Any) => scala.Unit,
+    detach: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface) => scala.Unit,
+    getScriptEvents: scala.Double => stdLib.SafeArray[ScriptEventDescriptor],
+    insertEntry: scala.Double => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerScriptEvent: (scala.Double, ScriptEventDescriptor) => scala.Unit,
+    registerScriptEvents: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ScriptEventDescriptor]) => scala.Unit,
+    release: () => scala.Unit,
+    removeEntry: scala.Double => scala.Unit,
+    removeScriptListener: XScriptListener => scala.Unit,
+    revokeScriptEvent: (scala.Double, java.lang.String, java.lang.String, java.lang.String) => scala.Unit,
+    revokeScriptEvents: scala.Double => scala.Unit
   ): XEventAttacherManager = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addScriptListener = addScriptListener, attach = attach, detach = detach, getScriptEvents = getScriptEvents, insertEntry = insertEntry, queryInterface = queryInterface, registerScriptEvent = registerScriptEvent, registerScriptEvents = registerScriptEvents, release = release, removeEntry = removeEntry, removeScriptListener = removeScriptListener, revokeScriptEvent = revokeScriptEvent, revokeScriptEvents = revokeScriptEvents)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addScriptListener = js.Any.fromFunction1(addScriptListener), attach = js.Any.fromFunction3(attach), detach = js.Any.fromFunction2(detach), getScriptEvents = js.Any.fromFunction1(getScriptEvents), insertEntry = js.Any.fromFunction1(insertEntry), queryInterface = js.Any.fromFunction1(queryInterface), registerScriptEvent = js.Any.fromFunction2(registerScriptEvent), registerScriptEvents = js.Any.fromFunction2(registerScriptEvents), release = js.Any.fromFunction0(release), removeEntry = js.Any.fromFunction1(removeEntry), removeScriptListener = js.Any.fromFunction1(removeScriptListener), revokeScriptEvent = js.Any.fromFunction4(revokeScriptEvent), revokeScriptEvents = js.Any.fromFunction1(revokeScriptEvents))
   
     __obj.asInstanceOf[XEventAttacherManager]
   }

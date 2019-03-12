@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ChartEndValue extends js.Object {
-  var chart: amchartsLib.amchartMod.default
+  var chart: amchartsLib.amChartMod.default
   var endValue: js.UndefOr[stdLib.Date] = js.undefined
   var startValue: js.UndefOr[stdLib.Date] = js.undefined
   var `type`: java.lang.String
@@ -15,7 +15,7 @@ trait Anon_ChartEndValue extends js.Object {
 object Anon_ChartEndValue {
   @scala.inline
   def apply(
-    chart: amchartsLib.amchartMod.default,
+    chart: amchartsLib.amChartMod.default,
     `type`: java.lang.String,
     endValue: stdLib.Date = null,
     startValue: stdLib.Date = null

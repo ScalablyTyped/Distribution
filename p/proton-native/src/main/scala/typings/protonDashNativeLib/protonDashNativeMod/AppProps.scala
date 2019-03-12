@@ -14,9 +14,9 @@ trait AppProps extends js.Object {
 
 object AppProps {
   @scala.inline
-  def apply(onShouldQuit: js.Function0[scala.Unit] = null): AppProps = {
+  def apply(onShouldQuit: () => scala.Unit = null): AppProps = {
     val __obj = js.Dynamic.literal()
-    if (onShouldQuit != null) __obj.updateDynamic("onShouldQuit")(onShouldQuit)
+    if (onShouldQuit != null) __obj.updateDynamic("onShouldQuit")(js.Any.fromFunction0(onShouldQuit))
     __obj.asInstanceOf[AppProps]
   }
 }

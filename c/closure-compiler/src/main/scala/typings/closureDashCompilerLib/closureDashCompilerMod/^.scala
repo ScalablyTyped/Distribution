@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("closure-compiler", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def compile(src: java.lang.String, callback: closureDashCompilerLib.closureDashCompilerMod.Callback): scala.Unit = js.native
+  def compile(src: java.lang.String, callback: Callback): scala.Unit = js.native
   def compile(
     src: java.lang.String,
     options: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]],
-    callback: closureDashCompilerLib.closureDashCompilerMod.Callback
+    callback: Callback
   ): scala.Unit = js.native
 }
 

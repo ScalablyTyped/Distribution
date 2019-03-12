@@ -87,40 +87,40 @@ trait Attendee
 object Attendee {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     bubbleParent: scala.Boolean,
     email: java.lang.String,
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getApiName: js.Function0[java.lang.String],
-    getBubbleParent: js.Function0[scala.Boolean],
-    getEmail: js.Function0[java.lang.String],
-    getIsOrganizer: js.Function0[scala.Boolean],
-    getName: js.Function0[java.lang.String],
-    getRole: js.Function0[scala.Double],
-    getStatus: js.Function0[scala.Double],
-    getType: js.Function0[scala.Double],
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
+    getApiName: () => java.lang.String,
+    getBubbleParent: () => scala.Boolean,
+    getEmail: () => java.lang.String,
+    getIsOrganizer: () => scala.Boolean,
+    getName: () => java.lang.String,
+    getRole: () => scala.Double,
+    getStatus: () => scala.Double,
+    getType: () => scala.Double,
     isOrganizer: scala.Boolean,
     name: java.lang.String,
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
     role: scala.Double,
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
-    setEmail: js.Function1[java.lang.String, scala.Unit],
-    setIsOrganizer: js.Function1[scala.Boolean, scala.Unit],
-    setName: js.Function1[java.lang.String, scala.Unit],
-    setRole: js.Function1[scala.Double, scala.Unit],
-    setStatus: js.Function1[scala.Double, scala.Unit],
-    setType: js.Function1[scala.Double, scala.Unit],
+    setBubbleParent: scala.Boolean => scala.Unit,
+    setEmail: java.lang.String => scala.Unit,
+    setIsOrganizer: scala.Boolean => scala.Unit,
+    setName: java.lang.String => scala.Unit,
+    setRole: scala.Double => scala.Unit,
+    setStatus: scala.Double => scala.Unit,
+    setType: scala.Double => scala.Unit,
     status: scala.Double,
     `type`: scala.Double,
-    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    getLifecycleContainer: () => titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
   ): Attendee = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, email = email, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, getEmail = getEmail, getIsOrganizer = getIsOrganizer, getName = getName, getRole = getRole, getStatus = getStatus, getType = getType, isOrganizer = isOrganizer, name = name, removeEventListener = removeEventListener, role = role, setBubbleParent = setBubbleParent, setEmail = setEmail, setIsOrganizer = setIsOrganizer, setName = setName, setRole = setRole, setStatus = setStatus, setType = setType, status = status)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, email = email, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getEmail = js.Any.fromFunction0(getEmail), getIsOrganizer = js.Any.fromFunction0(getIsOrganizer), getName = js.Any.fromFunction0(getName), getRole = js.Any.fromFunction0(getRole), getStatus = js.Any.fromFunction0(getStatus), getType = js.Any.fromFunction0(getType), isOrganizer = isOrganizer, name = name, removeEventListener = js.Any.fromFunction2(removeEventListener), role = role, setBubbleParent = js.Any.fromFunction1(setBubbleParent), setEmail = js.Any.fromFunction1(setEmail), setIsOrganizer = js.Any.fromFunction1(setIsOrganizer), setName = js.Any.fromFunction1(setName), setRole = js.Any.fromFunction1(setRole), setStatus = js.Any.fromFunction1(setStatus), setType = js.Any.fromFunction1(setType), status = status)
     __obj.updateDynamic("type")(`type`)
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
     __obj.asInstanceOf[Attendee]

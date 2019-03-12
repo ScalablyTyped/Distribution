@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RawBodyError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   /**
     * The encoding.
     */
@@ -38,6 +38,8 @@ trait RawBodyError
 object RawBodyError {
   @scala.inline
   def apply(
+    message: java.lang.String,
+    name: java.lang.String,
     status: scala.Double,
     statusCode: scala.Double,
     `type`: java.lang.String,
@@ -48,7 +50,7 @@ object RawBodyError {
     received: scala.Int | scala.Double = null,
     stack: java.lang.String = null
   ): RawBodyError = {
-    val __obj = js.Dynamic.literal(status = status, statusCode = statusCode)
+    val __obj = js.Dynamic.literal(message = message, name = name, status = status, statusCode = statusCode)
     __obj.updateDynamic("type")(`type`)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (expected != null) __obj.updateDynamic("expected")(expected.asInstanceOf[js.Any])

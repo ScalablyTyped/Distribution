@@ -28,18 +28,15 @@ trait XEncryptionProtectedSource2 extends XEncryptionProtectedSource {
 object XEncryptionProtectedSource2 {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    hasEncryptionData: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEncryption: js.Function0[scala.Unit],
-    setEncryptionData: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
-      scala.Unit
-    ],
-    setEncryptionPassword: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    hasEncryptionData: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEncryption: () => scala.Unit,
+    setEncryptionData: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue] => scala.Unit,
+    setEncryptionPassword: java.lang.String => scala.Unit
   ): XEncryptionProtectedSource2 = {
-    val __obj = js.Dynamic.literal(acquire = acquire, hasEncryptionData = hasEncryptionData, queryInterface = queryInterface, release = release, removeEncryption = removeEncryption, setEncryptionData = setEncryptionData, setEncryptionPassword = setEncryptionPassword)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), hasEncryptionData = js.Any.fromFunction0(hasEncryptionData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEncryption = js.Any.fromFunction0(removeEncryption), setEncryptionData = js.Any.fromFunction1(setEncryptionData), setEncryptionPassword = js.Any.fromFunction1(setEncryptionPassword))
   
     __obj.asInstanceOf[XEncryptionProtectedSource2]
   }

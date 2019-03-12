@@ -20,7 +20,7 @@ trait ValueSetComposeIncludeConcept extends BackboneElement {
   /**
     * Code or expression from system
     */
-  var code: code
+  var code: fhirLib.fhirNs.code
   /**
     * Additional representations for this concept
     */

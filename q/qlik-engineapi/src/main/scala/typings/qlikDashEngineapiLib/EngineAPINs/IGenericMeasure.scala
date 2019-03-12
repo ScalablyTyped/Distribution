@@ -69,17 +69,17 @@ trait IGenericMeasure
 object IGenericMeasure {
   @scala.inline
   def apply(
-    applyPatches: js.Function1[js.Array[INxPatch], js.Promise[scala.Unit]],
-    getInfo: js.Function0[js.Promise[INxInfo]],
-    getLayout: js.Function0[js.Promise[IGenericMeasureLayout]],
-    getLinkedObjects: js.Function0[js.Promise[INxLinkedObjectInfo]],
-    getMeasure: js.Function0[js.Promise[IGenericMeasureProperties]],
-    getProperties: js.Function0[js.Promise[IGenericMeasureProperties]],
-    publish: js.Function0[js.Promise[scala.Unit]],
-    setProperties: js.Function1[IGenericMeasureProperties, js.Promise[scala.Unit]],
-    unPublish: js.Function0[js.Promise[scala.Unit]]
+    applyPatches: js.Array[INxPatch] => js.Promise[scala.Unit],
+    getInfo: () => js.Promise[INxInfo],
+    getLayout: () => js.Promise[IGenericMeasureLayout],
+    getLinkedObjects: () => js.Promise[INxLinkedObjectInfo],
+    getMeasure: () => js.Promise[IGenericMeasureProperties],
+    getProperties: () => js.Promise[IGenericMeasureProperties],
+    publish: () => js.Promise[scala.Unit],
+    setProperties: IGenericMeasureProperties => js.Promise[scala.Unit],
+    unPublish: () => js.Promise[scala.Unit]
   ): IGenericMeasure = {
-    val __obj = js.Dynamic.literal(applyPatches = applyPatches, getInfo = getInfo, getLayout = getLayout, getLinkedObjects = getLinkedObjects, getMeasure = getMeasure, getProperties = getProperties, publish = publish, setProperties = setProperties, unPublish = unPublish)
+    val __obj = js.Dynamic.literal(applyPatches = js.Any.fromFunction1(applyPatches), getInfo = js.Any.fromFunction0(getInfo), getLayout = js.Any.fromFunction0(getLayout), getLinkedObjects = js.Any.fromFunction0(getLinkedObjects), getMeasure = js.Any.fromFunction0(getMeasure), getProperties = js.Any.fromFunction0(getProperties), publish = js.Any.fromFunction0(publish), setProperties = js.Any.fromFunction1(setProperties), unPublish = js.Any.fromFunction0(unPublish))
   
     __obj.asInstanceOf[IGenericMeasure]
   }

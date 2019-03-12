@@ -37,7 +37,7 @@ object ModalDropdownProps {
   @scala.inline
   def apply(
     accessible: js.UndefOr[scala.Boolean] = js.undefined,
-    adjustFrame: js.Function1[/* positionStyle */ PositionStyle, scala.Unit] = null,
+    adjustFrame: /* positionStyle */ PositionStyle => scala.Unit = null,
     animated: js.UndefOr[scala.Boolean] = js.undefined,
     defaultIndex: scala.Int | scala.Double = null,
     defaultValue: java.lang.String = null,
@@ -46,13 +46,13 @@ object ModalDropdownProps {
     dropdownTextHighlightStyle: js.Any = null,
     dropdownTextStyle: js.Any = null,
     keyboardShouldPersistTaps: reactDashNativeDashModalDashDropdownLib.reactDashNativeDashModalDashDropdownLibStrings.always | reactDashNativeDashModalDashDropdownLib.reactDashNativeDashModalDashDropdownLibStrings.never | reactDashNativeDashModalDashDropdownLib.reactDashNativeDashModalDashDropdownLibStrings.handled = null,
-    onDropdownWillHide: js.Function0[scala.Boolean] = null,
-    onDropdownWillShow: js.Function0[scala.Boolean] = null,
-    onSelect: js.Function2[/* index */ scala.Double, /* option */ js.Any, scala.Unit] = null,
+    onDropdownWillHide: () => scala.Boolean = null,
+    onDropdownWillShow: () => scala.Boolean = null,
+    onSelect: (/* index */ scala.Double, /* option */ js.Any) => scala.Unit = null,
     options: js.Array[_] = null,
-    renderButtonText: js.Function1[/* text */ js.Any, _] = null,
-    renderRow: js.Function3[/* option */ js.Any, /* index */ scala.Double, /* isSelected */ scala.Boolean, _] = null,
-    renderSeparator: js.Function0[_] = null,
+    renderButtonText: /* text */ js.Any => _ = null,
+    renderRow: (/* option */ js.Any, /* index */ scala.Double, /* isSelected */ scala.Boolean) => _ = null,
+    renderSeparator: () => _ = null,
     scrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     showsVerticalScrollIndicator: js.UndefOr[scala.Boolean] = js.undefined,
     style: js.Any = null,
@@ -60,7 +60,7 @@ object ModalDropdownProps {
   ): ModalDropdownProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible)
-    if (adjustFrame != null) __obj.updateDynamic("adjustFrame")(adjustFrame)
+    if (adjustFrame != null) __obj.updateDynamic("adjustFrame")(js.Any.fromFunction1(adjustFrame))
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
     if (defaultIndex != null) __obj.updateDynamic("defaultIndex")(defaultIndex.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
@@ -69,13 +69,13 @@ object ModalDropdownProps {
     if (dropdownTextHighlightStyle != null) __obj.updateDynamic("dropdownTextHighlightStyle")(dropdownTextHighlightStyle)
     if (dropdownTextStyle != null) __obj.updateDynamic("dropdownTextStyle")(dropdownTextStyle)
     if (keyboardShouldPersistTaps != null) __obj.updateDynamic("keyboardShouldPersistTaps")(keyboardShouldPersistTaps.asInstanceOf[js.Any])
-    if (onDropdownWillHide != null) __obj.updateDynamic("onDropdownWillHide")(onDropdownWillHide)
-    if (onDropdownWillShow != null) __obj.updateDynamic("onDropdownWillShow")(onDropdownWillShow)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onDropdownWillHide != null) __obj.updateDynamic("onDropdownWillHide")(js.Any.fromFunction0(onDropdownWillHide))
+    if (onDropdownWillShow != null) __obj.updateDynamic("onDropdownWillShow")(js.Any.fromFunction0(onDropdownWillShow))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
     if (options != null) __obj.updateDynamic("options")(options)
-    if (renderButtonText != null) __obj.updateDynamic("renderButtonText")(renderButtonText)
-    if (renderRow != null) __obj.updateDynamic("renderRow")(renderRow)
-    if (renderSeparator != null) __obj.updateDynamic("renderSeparator")(renderSeparator)
+    if (renderButtonText != null) __obj.updateDynamic("renderButtonText")(js.Any.fromFunction1(renderButtonText))
+    if (renderRow != null) __obj.updateDynamic("renderRow")(js.Any.fromFunction3(renderRow))
+    if (renderSeparator != null) __obj.updateDynamic("renderSeparator")(js.Any.fromFunction0(renderSeparator))
     if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled)
     if (!js.isUndefined(showsVerticalScrollIndicator)) __obj.updateDynamic("showsVerticalScrollIndicator")(showsVerticalScrollIndicator)
     if (style != null) __obj.updateDynamic("style")(style)

@@ -21,18 +21,18 @@ trait Footnote extends js.Object {
 object Footnote {
   @scala.inline
   def apply(
-    copy: js.Function0[Footnote],
-    getAttributes: js.Function0[js.Object],
-    getFootnoteContents: js.Function0[FootnoteSection],
-    getNextSibling: js.Function0[Element],
-    getParent: js.Function0[ContainerElement],
-    getPreviousSibling: js.Function0[Element],
-    getType: js.Function0[ElementType],
-    isAtDocumentEnd: js.Function0[scala.Boolean],
-    removeFromParent: js.Function0[Footnote],
-    setAttributes: js.Function1[js.Object, Footnote]
+    copy: () => Footnote,
+    getAttributes: () => js.Object,
+    getFootnoteContents: () => FootnoteSection,
+    getNextSibling: () => Element,
+    getParent: () => ContainerElement,
+    getPreviousSibling: () => Element,
+    getType: () => ElementType,
+    isAtDocumentEnd: () => scala.Boolean,
+    removeFromParent: () => Footnote,
+    setAttributes: js.Object => Footnote
   ): Footnote = {
-    val __obj = js.Dynamic.literal(copy = copy, getAttributes = getAttributes, getFootnoteContents = getFootnoteContents, getNextSibling = getNextSibling, getParent = getParent, getPreviousSibling = getPreviousSibling, getType = getType, isAtDocumentEnd = isAtDocumentEnd, removeFromParent = removeFromParent, setAttributes = setAttributes)
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), getAttributes = js.Any.fromFunction0(getAttributes), getFootnoteContents = js.Any.fromFunction0(getFootnoteContents), getNextSibling = js.Any.fromFunction0(getNextSibling), getParent = js.Any.fromFunction0(getParent), getPreviousSibling = js.Any.fromFunction0(getPreviousSibling), getType = js.Any.fromFunction0(getType), isAtDocumentEnd = js.Any.fromFunction0(isAtDocumentEnd), removeFromParent = js.Any.fromFunction0(removeFromParent), setAttributes = js.Any.fromFunction1(setAttributes))
   
     __obj.asInstanceOf[Footnote]
   }

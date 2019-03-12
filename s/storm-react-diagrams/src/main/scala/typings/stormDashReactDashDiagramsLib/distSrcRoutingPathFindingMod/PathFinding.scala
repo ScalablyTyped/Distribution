@@ -35,28 +35,13 @@ trait PathFinding extends js.Object {
 object PathFinding {
   @scala.inline
   def apply(
-    calculateDirectPath: js.Function2[
-      stormDashReactDashDiagramsLib.Anon_X, 
-      stormDashReactDashDiagramsLib.Anon_X, 
-      js.Array[js.Array[scala.Double]]
-    ],
-    calculateDynamicPath: js.Function5[
-      js.Array[js.Array[scala.Double]], 
-      stormDashReactDashDiagramsLib.Anon_X, 
-      stormDashReactDashDiagramsLib.Anon_X, 
-      js.Array[js.Array[scala.Double]], 
-      js.Array[js.Array[scala.Double]], 
-      js.Any
-    ],
-    calculateLinkStartEndCoords: js.Function2[
-      js.Array[js.Array[scala.Double]], 
-      js.Array[js.Array[scala.Double]], 
-      stormDashReactDashDiagramsLib.Anon_End
-    ],
+    calculateDirectPath: (stormDashReactDashDiagramsLib.Anon_X, stormDashReactDashDiagramsLib.Anon_X) => js.Array[js.Array[scala.Double]],
+    calculateDynamicPath: (js.Array[js.Array[scala.Double]], stormDashReactDashDiagramsLib.Anon_X, stormDashReactDashDiagramsLib.Anon_X, js.Array[js.Array[scala.Double]], js.Array[js.Array[scala.Double]]) => js.Any,
+    calculateLinkStartEndCoords: (js.Array[js.Array[scala.Double]], js.Array[js.Array[scala.Double]]) => stormDashReactDashDiagramsLib.Anon_End,
     diagramEngine: stormDashReactDashDiagramsLib.distSrcMainMod.DiagramEngine,
     instance: js.Any
   ): PathFinding = {
-    val __obj = js.Dynamic.literal(calculateDirectPath = calculateDirectPath, calculateDynamicPath = calculateDynamicPath, calculateLinkStartEndCoords = calculateLinkStartEndCoords, diagramEngine = diagramEngine, instance = instance)
+    val __obj = js.Dynamic.literal(calculateDirectPath = js.Any.fromFunction2(calculateDirectPath), calculateDynamicPath = js.Any.fromFunction5(calculateDynamicPath), calculateLinkStartEndCoords = js.Any.fromFunction2(calculateLinkStartEndCoords), diagramEngine = diagramEngine, instance = instance)
   
     __obj.asInstanceOf[PathFinding]
   }

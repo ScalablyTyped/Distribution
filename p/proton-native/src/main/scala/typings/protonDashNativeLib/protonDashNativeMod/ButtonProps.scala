@@ -36,7 +36,7 @@ object ButtonProps {
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     expand: protonDashNativeLib.Anon_H = null,
     label: java.lang.String = null,
-    onClick: js.Function0[scala.Unit] = null,
+    onClick: () => scala.Unit = null,
     row: scala.Int | scala.Double = null,
     span: protonDashNativeLib.Anon_X = null,
     stretchy: js.UndefOr[scala.Boolean] = js.undefined,
@@ -49,7 +49,7 @@ object ButtonProps {
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (label != null) __obj.updateDynamic("label")(label)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
     if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     if (span != null) __obj.updateDynamic("span")(span)
     if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy)

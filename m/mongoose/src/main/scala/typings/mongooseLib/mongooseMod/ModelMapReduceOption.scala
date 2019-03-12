@@ -34,8 +34,8 @@ object ModelMapReduceOption {
   @scala.inline
   def apply[T, Key, Val](
     map: js.Function | java.lang.String,
-    reduce: js.Function2[Key, js.Array[T], Val],
-    finalize: js.Function2[/* key */ Key, /* val */ Val, Val] = null,
+    reduce: (Key, js.Array[T]) => Val,
+    finalize: (/* key */ Key, /* val */ Val) => Val = null,
     jsMode: js.UndefOr[scala.Boolean] = js.undefined,
     keeptemp: js.UndefOr[scala.Boolean] = js.undefined,
     limit: scala.Int | scala.Double = null,
@@ -46,8 +46,8 @@ object ModelMapReduceOption {
     sort: js.Any = null,
     verbose: js.UndefOr[scala.Boolean] = js.undefined
   ): ModelMapReduceOption[T, Key, Val] = {
-    val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], reduce = reduce)
-    if (finalize != null) __obj.updateDynamic("finalize")(finalize)
+    val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], reduce = js.Any.fromFunction2(reduce))
+    if (finalize != null) __obj.updateDynamic("finalize")(js.Any.fromFunction2(finalize))
     if (!js.isUndefined(jsMode)) __obj.updateDynamic("jsMode")(jsMode)
     if (!js.isUndefined(keeptemp)) __obj.updateDynamic("keeptemp")(keeptemp)
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])

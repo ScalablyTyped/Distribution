@@ -29,7 +29,7 @@ object TlsOptions {
   @scala.inline
   def apply(
     NPNProtocols: js.Any = null,
-    SNICallback: js.Function1[/* servername */ java.lang.String, _] = null,
+    SNICallback: /* servername */ java.lang.String => _ = null,
     ca: js.Any = null,
     cert: js.Any = null,
     ciphers: java.lang.String = null,
@@ -43,7 +43,7 @@ object TlsOptions {
   ): TlsOptions = {
     val __obj = js.Dynamic.literal()
     if (NPNProtocols != null) __obj.updateDynamic("NPNProtocols")(NPNProtocols)
-    if (SNICallback != null) __obj.updateDynamic("SNICallback")(SNICallback)
+    if (SNICallback != null) __obj.updateDynamic("SNICallback")(js.Any.fromFunction1(SNICallback))
     if (ca != null) __obj.updateDynamic("ca")(ca)
     if (cert != null) __obj.updateDynamic("cert")(cert)
     if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)

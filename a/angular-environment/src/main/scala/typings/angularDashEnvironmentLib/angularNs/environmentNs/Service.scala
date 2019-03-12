@@ -29,12 +29,12 @@ trait Service extends js.Object {
 object Service {
   @scala.inline
   def apply(
-    get: js.Function0[java.lang.String],
-    is: js.Function1[java.lang.String, scala.Boolean],
-    read: js.Function1[java.lang.String, js.Any],
-    set: js.Function1[java.lang.String, scala.Unit]
+    get: () => java.lang.String,
+    is: java.lang.String => scala.Boolean,
+    read: java.lang.String => js.Any,
+    set: java.lang.String => scala.Unit
   ): Service = {
-    val __obj = js.Dynamic.literal(get = get, is = is, read = read, set = set)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), is = js.Any.fromFunction1(is), read = js.Any.fromFunction1(read), set = js.Any.fromFunction1(set))
   
     __obj.asInstanceOf[Service]
   }

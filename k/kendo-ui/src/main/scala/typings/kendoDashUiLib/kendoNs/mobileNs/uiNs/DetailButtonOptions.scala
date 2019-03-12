@@ -12,12 +12,9 @@ trait DetailButtonOptions extends js.Object {
 
 object DetailButtonOptions {
   @scala.inline
-  def apply(
-    click: js.Function1[/* e */ DetailButtonClickEvent, scala.Unit] = null,
-    name: java.lang.String = null
-  ): DetailButtonOptions = {
+  def apply(click: /* e */ DetailButtonClickEvent => scala.Unit = null, name: java.lang.String = null): DetailButtonOptions = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[DetailButtonOptions]
   }

@@ -24,17 +24,14 @@ object Anon_Child {
   @scala.inline
   def apply(
     StringDictionary: /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    childFactory: js.Function1[
-      /* child */ reactLib.reactMod.ReactNs.ReactElement[_], 
-      reactLib.reactMod.ReactNs.ReactElement[_]
-    ] = null,
+    childFactory: /* child */ reactLib.reactMod.ReactNs.ReactElement[_] => reactLib.reactMod.ReactNs.ReactElement[_] = null,
     children: reactLib.reactMod.ReactNs.ReactElement[reactDashTransitionDashGroupLib.transitionMod.TransitionProps] | (js.Array[
       reactLib.reactMod.ReactNs.ReactElement[reactDashTransitionDashGroupLib.transitionMod.TransitionProps]
     ]) = null
   ): Anon_Child = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (childFactory != null) __obj.updateDynamic("childFactory")(childFactory)
+    if (childFactory != null) __obj.updateDynamic("childFactory")(js.Any.fromFunction1(childFactory))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Child]
   }

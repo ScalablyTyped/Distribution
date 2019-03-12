@@ -29,7 +29,7 @@ object Options {
     extraComponents: js.Array[fingerprintjs2Lib.Anon_Done] = null,
     fonts: fingerprintjs2Lib.Anon_ExtendedJsFonts = null,
     plugins: fingerprintjs2Lib.Anon_ExcludeIE = null,
-    preprocessor: js.Function2[/* key */ java.lang.String, /* value */ js.Any, _] = null,
+    preprocessor: (/* key */ java.lang.String, /* value */ js.Any) => _ = null,
     screen: fingerprintjs2Lib.Anon_DetectScreenOrientation = null
   ): Options = {
     val __obj = js.Dynamic.literal()
@@ -41,7 +41,7 @@ object Options {
     if (extraComponents != null) __obj.updateDynamic("extraComponents")(extraComponents)
     if (fonts != null) __obj.updateDynamic("fonts")(fonts)
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (preprocessor != null) __obj.updateDynamic("preprocessor")(preprocessor)
+    if (preprocessor != null) __obj.updateDynamic("preprocessor")(js.Any.fromFunction2(preprocessor))
     if (screen != null) __obj.updateDynamic("screen")(screen)
     __obj.asInstanceOf[Options]
   }

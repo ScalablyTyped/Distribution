@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DoNotUseMeFolder protected () extends js.Object {
   var AddressBookName: java.lang.String = js.native
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   val CurrentView: View = js.native
   var CustomViewsOnly: scala.Boolean = js.native
@@ -18,25 +18,25 @@ class DoNotUseMeFolder protected () extends js.Object {
   var Description: java.lang.String = js.native
   val EntryID: java.lang.String = js.native
   val FolderPath: java.lang.String = js.native
-  val Folders: Folders = js.native
+  val Folders: activexDashOutlookLib.OutlookNs.Folders = js.native
   val FullFolderPath: java.lang.String = js.native
   var InAppFolderSyncObject: scala.Boolean = js.native
   val IsSharePointFolder: scala.Boolean = js.native
-  val Items: Items = js.native
+  val Items: activexDashOutlookLib.OutlookNs.Items = js.native
   val MAPIOBJECT: js.Any = js.native
   var Name: java.lang.String = js.native
   var `Outlook.DoNotUseMeFolder_typekey`: DoNotUseMeFolder = js.native
   val Parent: js.Any = js.native
-  val PropertyAccessor: PropertyAccessor = js.native
+  val PropertyAccessor: activexDashOutlookLib.OutlookNs.PropertyAccessor = js.native
   val Session: NameSpace = js.native
   var ShowAsOutlookAB: scala.Boolean = js.native
   var ShowItemCount: OlShowItemCount = js.native
-  val Store: Store = js.native
+  val Store: activexDashOutlookLib.OutlookNs.Store = js.native
   val StoreID: java.lang.String = js.native
   val UnReadItemCount: scala.Double = js.native
-  val UserDefinedProperties: UserDefinedProperties = js.native
+  val UserDefinedProperties: activexDashOutlookLib.OutlookNs.UserDefinedProperties = js.native
   val UserPermissions: js.Any = js.native
-  val Views: Views = js.native
+  val Views: activexDashOutlookLib.OutlookNs.Views = js.native
   var WebViewAllowNavigation: scala.Boolean = js.native
   var WebViewOn: scala.Boolean = js.native
   var WebViewURL: java.lang.String = js.native

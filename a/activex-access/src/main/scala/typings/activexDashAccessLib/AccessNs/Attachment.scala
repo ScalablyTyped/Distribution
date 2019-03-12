@@ -12,7 +12,7 @@ class Attachment protected () extends js.Object {
   var AddColon: scala.Boolean = js.native
   var AfterUpdate: java.lang.String = js.native
   var AfterUpdateMacro: java.lang.String = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   val AttachmentCount: scala.Double = js.native
   var AutoLabel: scala.Boolean = js.native
   var BackColor: scala.Double = js.native
@@ -61,7 +61,7 @@ class Attachment protected () extends js.Object {
   var Height: scala.Double = js.native
   var HelpContextId: scala.Double = js.native
   var HorizontalAnchor: AcHorizontalAnchor = js.native
-  val Hyperlink: Hyperlink = js.native
+  val Hyperlink: activexDashAccessLib.AccessNs.Hyperlink = js.native
   var InSelection: scala.Boolean = js.native
   var IsVisible: scala.Boolean = js.native
   var LabelAlign: scala.Double = js.native

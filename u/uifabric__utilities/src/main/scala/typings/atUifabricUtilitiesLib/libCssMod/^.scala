@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/utilities/lib/css", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def css(args: atUifabricUtilitiesLib.libCssMod.ICssInput*): java.lang.String = js.native
+  def css(args: ICssInput*): java.lang.String = js.native
 }
 

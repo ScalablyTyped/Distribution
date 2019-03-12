@@ -51,41 +51,19 @@ object XIeeeDoubleBitmap {
   def apply(
     MemoryLayout: FloatingPointBitmapLayout,
     Size: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D,
-    acquire: js.Function0[scala.Unit],
-    getData: js.Function2[
-      js.Array[FloatingPointBitmapLayout], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerRectangle2D, 
-      activexDashInteropLib.SafeArray[scala.Double]
-    ],
-    getMemoryLayout: js.Function0[FloatingPointBitmapLayout],
-    getPixel: js.Function2[
-      js.Array[FloatingPointBitmapLayout], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerPoint2D, 
-      activexDashInteropLib.SafeArray[scala.Double]
-    ],
-    getScaledBitmap: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealSize2D, 
-      scala.Boolean, 
-      XBitmap
-    ],
-    getSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D],
-    hasAlpha: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setData: js.Function3[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      FloatingPointBitmapLayout, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerRectangle2D, 
-      scala.Unit
-    ],
-    setPixel: js.Function3[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      FloatingPointBitmapLayout, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerPoint2D, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    getData: (js.Array[FloatingPointBitmapLayout], activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerRectangle2D) => stdLib.SafeArray[scala.Double],
+    getMemoryLayout: () => FloatingPointBitmapLayout,
+    getPixel: (js.Array[FloatingPointBitmapLayout], activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerPoint2D) => stdLib.SafeArray[scala.Double],
+    getScaledBitmap: (activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealSize2D, scala.Boolean) => XBitmap,
+    getSize: () => activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D,
+    hasAlpha: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setData: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], FloatingPointBitmapLayout, activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerRectangle2D) => scala.Unit,
+    setPixel: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], FloatingPointBitmapLayout, activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerPoint2D) => scala.Unit
   ): XIeeeDoubleBitmap = {
-    val __obj = js.Dynamic.literal(MemoryLayout = MemoryLayout, Size = Size, acquire = acquire, getData = getData, getMemoryLayout = getMemoryLayout, getPixel = getPixel, getScaledBitmap = getScaledBitmap, getSize = getSize, hasAlpha = hasAlpha, queryInterface = queryInterface, release = release, setData = setData, setPixel = setPixel)
+    val __obj = js.Dynamic.literal(MemoryLayout = MemoryLayout, Size = Size, acquire = js.Any.fromFunction0(acquire), getData = js.Any.fromFunction2(getData), getMemoryLayout = js.Any.fromFunction0(getMemoryLayout), getPixel = js.Any.fromFunction2(getPixel), getScaledBitmap = js.Any.fromFunction2(getScaledBitmap), getSize = js.Any.fromFunction0(getSize), hasAlpha = js.Any.fromFunction0(hasAlpha), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setData = js.Any.fromFunction3(setData), setPixel = js.Any.fromFunction3(setPixel))
   
     __obj.asInstanceOf[XIeeeDoubleBitmap]
   }

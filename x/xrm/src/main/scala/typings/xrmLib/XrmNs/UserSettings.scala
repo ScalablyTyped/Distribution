@@ -62,9 +62,9 @@ trait UserSettings extends js.Object {
 object UserSettings {
   @scala.inline
   def apply(
-    dateFormattingInfo: js.Function0[DateFormattingInfo],
+    dateFormattingInfo: () => DateFormattingInfo,
     defaultDashboardId: java.lang.String,
-    getTimeZoneOffsetMinutes: js.Function0[scala.Double],
+    getTimeZoneOffsetMinutes: () => scala.Double,
     isGuidedHelpEnabled: scala.Boolean,
     isHighContrastEnabled: scala.Boolean,
     isRTL: scala.Boolean,
@@ -75,7 +75,7 @@ object UserSettings {
     userId: java.lang.String,
     userName: java.lang.String
   ): UserSettings = {
-    val __obj = js.Dynamic.literal(dateFormattingInfo = dateFormattingInfo, defaultDashboardId = defaultDashboardId, getTimeZoneOffsetMinutes = getTimeZoneOffsetMinutes, isGuidedHelpEnabled = isGuidedHelpEnabled, isHighContrastEnabled = isHighContrastEnabled, isRTL = isRTL, languageId = languageId, securityRolePrivileges = securityRolePrivileges, securityRoles = securityRoles, transactionCurrencyId = transactionCurrencyId, userId = userId, userName = userName)
+    val __obj = js.Dynamic.literal(dateFormattingInfo = js.Any.fromFunction0(dateFormattingInfo), defaultDashboardId = defaultDashboardId, getTimeZoneOffsetMinutes = js.Any.fromFunction0(getTimeZoneOffsetMinutes), isGuidedHelpEnabled = isGuidedHelpEnabled, isHighContrastEnabled = isHighContrastEnabled, isRTL = isRTL, languageId = languageId, securityRolePrivileges = securityRolePrivileges, securityRoles = securityRoles, transactionCurrencyId = transactionCurrencyId, userId = userId, userName = userName)
   
     __obj.asInstanceOf[UserSettings]
   }

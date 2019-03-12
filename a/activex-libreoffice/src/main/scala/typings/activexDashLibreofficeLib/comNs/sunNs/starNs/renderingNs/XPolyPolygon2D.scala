@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait XPolyPolygon2D
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** Query the rule used to determine inside and outside of the poly-polygon. */
-  var FillRule: FillRule
+  var FillRule: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.FillRule
   /** Query number of polygons inside this poly-polygon */
   val NumberOfPolygons: scala.Double
   /**
@@ -52,22 +52,18 @@ object XPolyPolygon2D {
   def apply(
     FillRule: FillRule,
     NumberOfPolygons: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addPolyPolygon: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
-      XPolyPolygon2D, 
-      scala.Unit
-    ],
-    getFillRule: js.Function0[FillRule],
-    getNumberOfPolygonPoints: js.Function1[scala.Double, scala.Double],
-    getNumberOfPolygons: js.Function0[scala.Double],
-    isClosed: js.Function1[scala.Double, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setClosed: js.Function2[scala.Double, scala.Boolean, scala.Unit],
-    setFillRule: js.Function1[FillRule, scala.Unit]
+    acquire: () => scala.Unit,
+    addPolyPolygon: (activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, XPolyPolygon2D) => scala.Unit,
+    getFillRule: () => FillRule,
+    getNumberOfPolygonPoints: scala.Double => scala.Double,
+    getNumberOfPolygons: () => scala.Double,
+    isClosed: scala.Double => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setClosed: (scala.Double, scala.Boolean) => scala.Unit,
+    setFillRule: FillRule => scala.Unit
   ): XPolyPolygon2D = {
-    val __obj = js.Dynamic.literal(FillRule = FillRule, NumberOfPolygons = NumberOfPolygons, acquire = acquire, addPolyPolygon = addPolyPolygon, getFillRule = getFillRule, getNumberOfPolygonPoints = getNumberOfPolygonPoints, getNumberOfPolygons = getNumberOfPolygons, isClosed = isClosed, queryInterface = queryInterface, release = release, setClosed = setClosed, setFillRule = setFillRule)
+    val __obj = js.Dynamic.literal(FillRule = FillRule, NumberOfPolygons = NumberOfPolygons, acquire = js.Any.fromFunction0(acquire), addPolyPolygon = js.Any.fromFunction2(addPolyPolygon), getFillRule = js.Any.fromFunction0(getFillRule), getNumberOfPolygonPoints = js.Any.fromFunction1(getNumberOfPolygonPoints), getNumberOfPolygons = js.Any.fromFunction0(getNumberOfPolygons), isClosed = js.Any.fromFunction1(isClosed), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setClosed = js.Any.fromFunction2(setClosed), setFillRule = js.Any.fromFunction1(setFillRule))
   
     __obj.asInstanceOf[XPolyPolygon2D]
   }

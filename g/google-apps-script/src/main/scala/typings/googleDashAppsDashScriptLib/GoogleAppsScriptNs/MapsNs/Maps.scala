@@ -22,15 +22,15 @@ object Maps {
   def apply(
     DirectionFinder: DirectionFinderEnums,
     StaticMap: StaticMapEnums,
-    decodePolyline: js.Function1[java.lang.String, js.Array[stdLib.Number]],
-    encodePolyline: js.Function1[js.Array[stdLib.Number], java.lang.String],
-    newDirectionFinder: js.Function0[DirectionFinder],
-    newElevationSampler: js.Function0[ElevationSampler],
-    newGeocoder: js.Function0[Geocoder],
-    newStaticMap: js.Function0[StaticMap],
-    setAuthentication: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    decodePolyline: java.lang.String => js.Array[stdLib.Number],
+    encodePolyline: js.Array[stdLib.Number] => java.lang.String,
+    newDirectionFinder: () => DirectionFinder,
+    newElevationSampler: () => ElevationSampler,
+    newGeocoder: () => Geocoder,
+    newStaticMap: () => StaticMap,
+    setAuthentication: (java.lang.String, java.lang.String) => scala.Unit
   ): Maps = {
-    val __obj = js.Dynamic.literal(DirectionFinder = DirectionFinder, StaticMap = StaticMap, decodePolyline = decodePolyline, encodePolyline = encodePolyline, newDirectionFinder = newDirectionFinder, newElevationSampler = newElevationSampler, newGeocoder = newGeocoder, newStaticMap = newStaticMap, setAuthentication = setAuthentication)
+    val __obj = js.Dynamic.literal(DirectionFinder = DirectionFinder, StaticMap = StaticMap, decodePolyline = js.Any.fromFunction1(decodePolyline), encodePolyline = js.Any.fromFunction1(encodePolyline), newDirectionFinder = js.Any.fromFunction0(newDirectionFinder), newElevationSampler = js.Any.fromFunction0(newElevationSampler), newGeocoder = js.Any.fromFunction0(newGeocoder), newStaticMap = js.Any.fromFunction0(newStaticMap), setAuthentication = js.Any.fromFunction2(setAuthentication))
   
     __obj.asInstanceOf[Maps]
   }

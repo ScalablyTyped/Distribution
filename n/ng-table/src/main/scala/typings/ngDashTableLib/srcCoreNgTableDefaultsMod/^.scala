@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("ng-table/src/core/ngTableDefaults", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var ngTableDefaults: ngDashTableLib.srcCoreNgTableDefaultsMod.IDefaults = js.native
+  var ngTableDefaults: IDefaults = js.native
 }
 

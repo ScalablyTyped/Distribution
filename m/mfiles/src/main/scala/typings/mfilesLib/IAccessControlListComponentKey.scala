@@ -14,11 +14,11 @@ trait IAccessControlListComponentKey extends js.Object {
 object IAccessControlListComponentKey {
   @scala.inline
   def apply(
-    Clone: js.Function0[IAccessControlListComponentKey],
+    Clone: () => IAccessControlListComponentKey,
     ItemID: scala.Double,
     PropertyDefID: mfilesLib.MFilesNs.MFBuiltInPropertyDef | scala.Double
   ): IAccessControlListComponentKey = {
-    val __obj = js.Dynamic.literal(Clone = Clone, ItemID = ItemID, PropertyDefID = PropertyDefID.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), ItemID = ItemID, PropertyDefID = PropertyDefID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IAccessControlListComponentKey]
   }

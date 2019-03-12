@@ -14,11 +14,11 @@ trait IObjectTypeTargetForBrowsing extends js.Object {
 object IObjectTypeTargetForBrowsing {
   @scala.inline
   def apply(
-    Clone: js.Function0[IObjectTypeTargetForBrowsing],
+    Clone: () => IObjectTypeTargetForBrowsing,
     TargetObjectType: scala.Double,
     ViewCollection: scala.Double
   ): IObjectTypeTargetForBrowsing = {
-    val __obj = js.Dynamic.literal(Clone = Clone, TargetObjectType = TargetObjectType, ViewCollection = ViewCollection)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), TargetObjectType = TargetObjectType, ViewCollection = ViewCollection)
   
     __obj.asInstanceOf[IObjectTypeTargetForBrowsing]
   }

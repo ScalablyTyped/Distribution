@@ -52,14 +52,14 @@ object ILocalStorageServiceProvider {
   @scala.inline
   def apply(
     $get: js.Any,
-    setDefaultToCookie: js.Function1[scala.Boolean, ILocalStorageServiceProvider],
-    setNotify: js.Function2[scala.Boolean, scala.Boolean, ILocalStorageServiceProvider],
-    setPrefix: js.Function1[java.lang.String, ILocalStorageServiceProvider],
-    setStorageCookie: js.Function3[scala.Double, java.lang.String, scala.Boolean, ILocalStorageServiceProvider],
-    setStorageCookieDomain: js.Function1[java.lang.String, ILocalStorageServiceProvider],
-    setStorageType: js.Function1[java.lang.String, ILocalStorageServiceProvider]
+    setDefaultToCookie: scala.Boolean => ILocalStorageServiceProvider,
+    setNotify: (scala.Boolean, scala.Boolean) => ILocalStorageServiceProvider,
+    setPrefix: java.lang.String => ILocalStorageServiceProvider,
+    setStorageCookie: (scala.Double, java.lang.String, scala.Boolean) => ILocalStorageServiceProvider,
+    setStorageCookieDomain: java.lang.String => ILocalStorageServiceProvider,
+    setStorageType: java.lang.String => ILocalStorageServiceProvider
   ): ILocalStorageServiceProvider = {
-    val __obj = js.Dynamic.literal($get = $get, setDefaultToCookie = setDefaultToCookie, setNotify = setNotify, setPrefix = setPrefix, setStorageCookie = setStorageCookie, setStorageCookieDomain = setStorageCookieDomain, setStorageType = setStorageType)
+    val __obj = js.Dynamic.literal($get = $get, setDefaultToCookie = js.Any.fromFunction1(setDefaultToCookie), setNotify = js.Any.fromFunction2(setNotify), setPrefix = js.Any.fromFunction1(setPrefix), setStorageCookie = js.Any.fromFunction3(setStorageCookie), setStorageCookieDomain = js.Any.fromFunction1(setStorageCookieDomain), setStorageType = js.Any.fromFunction1(setStorageType))
   
     __obj.asInstanceOf[ILocalStorageServiceProvider]
   }

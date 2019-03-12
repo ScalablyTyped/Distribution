@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val defaults: xml2jsLib.Anon_01 = js.native
   def parseString(
-    xml: xml2jsLib.xml2jsMod.convertableToString,
+    xml: convertableToString,
     callback: js.Function2[/* err */ js.Any, /* result */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def parseString(
-    xml: xml2jsLib.xml2jsMod.convertableToString,
-    options: xml2jsLib.xml2jsMod.OptionsV2,
+    xml: convertableToString,
+    options: OptionsV2,
     callback: js.Function2[/* err */ js.Any, /* result */ js.Any, scala.Unit]
   ): scala.Unit = js.native
 }

@@ -23,35 +23,27 @@ object MarkableInputStream {
     InputStream: XInputStream,
     Predecessor: XConnectable,
     Successor: XConnectable,
-    acquire: js.Function0[scala.Unit],
-    available: js.Function0[scala.Double],
-    closeInput: js.Function0[scala.Unit],
-    createMark: js.Function0[scala.Double],
-    deleteMark: js.Function1[scala.Double, scala.Unit],
-    getInputStream: js.Function0[XInputStream],
-    getPredecessor: js.Function0[XConnectable],
-    getSuccessor: js.Function0[XConnectable],
-    jumpToFurthest: js.Function0[scala.Unit],
-    jumpToMark: js.Function1[scala.Double, scala.Unit],
-    offsetToMark: js.Function1[scala.Double, scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    readBytes: js.Function2[
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      scala.Double, 
-      scala.Double
-    ],
-    readSomeBytes: js.Function2[
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      scala.Double, 
-      scala.Double
-    ],
-    release: js.Function0[scala.Unit],
-    setInputStream: js.Function1[XInputStream, scala.Unit],
-    setPredecessor: js.Function1[XConnectable, scala.Unit],
-    setSuccessor: js.Function1[XConnectable, scala.Unit],
-    skipBytes: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    available: () => scala.Double,
+    closeInput: () => scala.Unit,
+    createMark: () => scala.Double,
+    deleteMark: scala.Double => scala.Unit,
+    getInputStream: () => XInputStream,
+    getPredecessor: () => XConnectable,
+    getSuccessor: () => XConnectable,
+    jumpToFurthest: () => scala.Unit,
+    jumpToMark: scala.Double => scala.Unit,
+    offsetToMark: scala.Double => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    readBytes: (js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], scala.Double) => scala.Double,
+    readSomeBytes: (js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], scala.Double) => scala.Double,
+    release: () => scala.Unit,
+    setInputStream: XInputStream => scala.Unit,
+    setPredecessor: XConnectable => scala.Unit,
+    setSuccessor: XConnectable => scala.Unit,
+    skipBytes: scala.Double => scala.Unit
   ): MarkableInputStream = {
-    val __obj = js.Dynamic.literal(InputStream = InputStream, Predecessor = Predecessor, Successor = Successor, acquire = acquire, available = available, closeInput = closeInput, createMark = createMark, deleteMark = deleteMark, getInputStream = getInputStream, getPredecessor = getPredecessor, getSuccessor = getSuccessor, jumpToFurthest = jumpToFurthest, jumpToMark = jumpToMark, offsetToMark = offsetToMark, queryInterface = queryInterface, readBytes = readBytes, readSomeBytes = readSomeBytes, release = release, setInputStream = setInputStream, setPredecessor = setPredecessor, setSuccessor = setSuccessor, skipBytes = skipBytes)
+    val __obj = js.Dynamic.literal(InputStream = InputStream, Predecessor = Predecessor, Successor = Successor, acquire = js.Any.fromFunction0(acquire), available = js.Any.fromFunction0(available), closeInput = js.Any.fromFunction0(closeInput), createMark = js.Any.fromFunction0(createMark), deleteMark = js.Any.fromFunction1(deleteMark), getInputStream = js.Any.fromFunction0(getInputStream), getPredecessor = js.Any.fromFunction0(getPredecessor), getSuccessor = js.Any.fromFunction0(getSuccessor), jumpToFurthest = js.Any.fromFunction0(jumpToFurthest), jumpToMark = js.Any.fromFunction1(jumpToMark), offsetToMark = js.Any.fromFunction1(offsetToMark), queryInterface = js.Any.fromFunction1(queryInterface), readBytes = js.Any.fromFunction2(readBytes), readSomeBytes = js.Any.fromFunction2(readSomeBytes), release = js.Any.fromFunction0(release), setInputStream = js.Any.fromFunction1(setInputStream), setPredecessor = js.Any.fromFunction1(setPredecessor), setSuccessor = js.Any.fromFunction1(setSuccessor), skipBytes = js.Any.fromFunction1(skipBytes))
   
     __obj.asInstanceOf[MarkableInputStream]
   }

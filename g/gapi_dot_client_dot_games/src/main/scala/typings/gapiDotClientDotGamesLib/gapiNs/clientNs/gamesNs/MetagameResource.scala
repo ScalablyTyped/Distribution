@@ -15,16 +15,10 @@ trait MetagameResource extends js.Object {
 object MetagameResource {
   @scala.inline
   def apply(
-    getMetagameConfig: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[MetagameConfig]
-    ],
-    listCategoriesByPlayer: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltCollection, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CategoryListResponse]
-    ]
+    getMetagameConfig: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFields => gapiDotClientLib.gapiNs.clientNs.Request[MetagameConfig],
+    listCategoriesByPlayer: gapiDotClientDotGamesLib.Anon_AltCollection => gapiDotClientLib.gapiNs.clientNs.Request[CategoryListResponse]
   ): MetagameResource = {
-    val __obj = js.Dynamic.literal(getMetagameConfig = getMetagameConfig, listCategoriesByPlayer = listCategoriesByPlayer)
+    val __obj = js.Dynamic.literal(getMetagameConfig = js.Any.fromFunction1(getMetagameConfig), listCategoriesByPlayer = js.Any.fromFunction1(listCategoriesByPlayer))
   
     __obj.asInstanceOf[MetagameResource]
   }

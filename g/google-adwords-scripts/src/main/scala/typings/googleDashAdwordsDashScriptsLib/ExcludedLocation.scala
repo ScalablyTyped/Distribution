@@ -22,19 +22,19 @@ trait ExcludedLocation
 object ExcludedLocation {
   @scala.inline
   def apply(
-    getCampaign: js.Function0[Campaign],
-    getCampaignType: js.Function0[CampaignType],
-    getCountryCode: js.Function0[java.lang.String],
-    getId: js.Function0[scala.Double],
-    getName: js.Function0[java.lang.String],
-    getTargetType: js.Function0[TargetType],
-    getTargetingStatus: js.Function0[TargetingStatus],
-    getVideoCampaign: js.Function0[Campaign],
-    remove: js.Function0[scala.Unit],
-    getEntityType: js.Function0[java.lang.String] = null
+    getCampaign: () => Campaign,
+    getCampaignType: () => CampaignType,
+    getCountryCode: () => java.lang.String,
+    getId: () => scala.Double,
+    getName: () => java.lang.String,
+    getTargetType: () => TargetType,
+    getTargetingStatus: () => TargetingStatus,
+    getVideoCampaign: () => Campaign,
+    remove: () => scala.Unit,
+    getEntityType: () => java.lang.String = null
   ): ExcludedLocation = {
-    val __obj = js.Dynamic.literal(getCampaign = getCampaign, getCampaignType = getCampaignType, getCountryCode = getCountryCode, getId = getId, getName = getName, getTargetType = getTargetType, getTargetingStatus = getTargetingStatus, getVideoCampaign = getVideoCampaign, remove = remove)
-    if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
+    val __obj = js.Dynamic.literal(getCampaign = js.Any.fromFunction0(getCampaign), getCampaignType = js.Any.fromFunction0(getCampaignType), getCountryCode = js.Any.fromFunction0(getCountryCode), getId = js.Any.fromFunction0(getId), getName = js.Any.fromFunction0(getName), getTargetType = js.Any.fromFunction0(getTargetType), getTargetingStatus = js.Any.fromFunction0(getTargetingStatus), getVideoCampaign = js.Any.fromFunction0(getVideoCampaign), remove = js.Any.fromFunction0(remove))
+    if (getEntityType != null) __obj.updateDynamic("getEntityType")(js.Any.fromFunction0(getEntityType))
     __obj.asInstanceOf[ExcludedLocation]
   }
 }

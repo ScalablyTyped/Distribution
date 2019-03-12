@@ -23,18 +23,18 @@ object IUserAccount {
   @scala.inline
   def apply(
     AccessControlList: IAccessControlList,
-    AddVaultRoles: js.Function1[mfilesLib.MFilesNs.MFUserAccountVaultRole, scala.Unit],
-    Clone: js.Function0[IUserAccount],
-    CloneFrom: js.Function1[IUserAccount, scala.Unit],
+    AddVaultRoles: mfilesLib.MFilesNs.MFUserAccountVaultRole => scala.Unit,
+    Clone: () => IUserAccount,
+    CloneFrom: IUserAccount => scala.Unit,
     Enabled: scala.Boolean,
     ID: scala.Double,
     InternalUser: scala.Boolean,
     LoginName: java.lang.String,
-    RemoveVaultRoles: js.Function1[mfilesLib.MFilesNs.MFUserAccountVaultRole, scala.Unit],
+    RemoveVaultRoles: mfilesLib.MFilesNs.MFUserAccountVaultRole => scala.Unit,
     VaultLanguage: scala.Double,
     VaultRoles: mfilesLib.MFilesNs.MFUserAccountVaultRole
   ): IUserAccount = {
-    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, AddVaultRoles = AddVaultRoles, Clone = Clone, CloneFrom = CloneFrom, Enabled = Enabled, ID = ID, InternalUser = InternalUser, LoginName = LoginName, RemoveVaultRoles = RemoveVaultRoles, VaultLanguage = VaultLanguage, VaultRoles = VaultRoles)
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, AddVaultRoles = js.Any.fromFunction1(AddVaultRoles), Clone = js.Any.fromFunction0(Clone), CloneFrom = js.Any.fromFunction1(CloneFrom), Enabled = Enabled, ID = ID, InternalUser = InternalUser, LoginName = LoginName, RemoveVaultRoles = js.Any.fromFunction1(RemoveVaultRoles), VaultLanguage = VaultLanguage, VaultRoles = VaultRoles)
   
     __obj.asInstanceOf[IUserAccount]
   }

@@ -7,12 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IProvider extends js.Object {
-  def addElementTransformer(
-    route: java.lang.String,
-    isCollection: scala.Boolean,
-    transformer: angularLib.angularMod.Global.Function
-  ): IProvider = js.native
-  def addElementTransformer(route: java.lang.String, transformer: angularLib.angularMod.Global.Function): IProvider = js.native
+  def addElementTransformer(route: java.lang.String, isCollection: scala.Boolean, transformer: js.Function): IProvider = js.native
+  def addElementTransformer(route: java.lang.String, transformer: js.Function): IProvider = js.native
   def addFullRequestInterceptor(
     requestInterceptor: js.Function7[
       /* element */ js.Any, 

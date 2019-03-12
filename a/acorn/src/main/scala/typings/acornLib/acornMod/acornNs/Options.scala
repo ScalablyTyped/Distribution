@@ -68,17 +68,9 @@ object Options {
       /* endLoc */ js.UndefOr[estreeLib.estreeMod.Position], 
       scala.Unit
     ]) | js.Array[Comment] = null,
-    onInsertedSemicolon: js.Function2[
-      /* lastTokEnd */ scala.Double, 
-      /* lastTokEndLoc */ js.UndefOr[estreeLib.estreeMod.Position], 
-      scala.Unit
-    ] = null,
+    onInsertedSemicolon: (/* lastTokEnd */ scala.Double, /* lastTokEndLoc */ js.UndefOr[estreeLib.estreeMod.Position]) => scala.Unit = null,
     onToken: (js.Function1[/* token */ Token, _]) | js.Array[Token] = null,
-    onTrailingComma: js.Function2[
-      /* lastTokEnd */ scala.Double, 
-      /* lastTokEndLoc */ js.UndefOr[estreeLib.estreeMod.Position], 
-      scala.Unit
-    ] = null,
+    onTrailingComma: (/* lastTokEnd */ scala.Double, /* lastTokEndLoc */ js.UndefOr[estreeLib.estreeMod.Position]) => scala.Unit = null,
     plugins: PlainObject = null,
     preserveParens: js.UndefOr[scala.Boolean] = js.undefined,
     program: estreeLib.estreeMod.Program = null,
@@ -95,9 +87,9 @@ object Options {
     if (ecmaVersion != null) __obj.updateDynamic("ecmaVersion")(ecmaVersion.asInstanceOf[js.Any])
     if (!js.isUndefined(locations)) __obj.updateDynamic("locations")(locations)
     if (onComment != null) __obj.updateDynamic("onComment")(onComment.asInstanceOf[js.Any])
-    if (onInsertedSemicolon != null) __obj.updateDynamic("onInsertedSemicolon")(onInsertedSemicolon)
+    if (onInsertedSemicolon != null) __obj.updateDynamic("onInsertedSemicolon")(js.Any.fromFunction2(onInsertedSemicolon))
     if (onToken != null) __obj.updateDynamic("onToken")(onToken.asInstanceOf[js.Any])
-    if (onTrailingComma != null) __obj.updateDynamic("onTrailingComma")(onTrailingComma)
+    if (onTrailingComma != null) __obj.updateDynamic("onTrailingComma")(js.Any.fromFunction2(onTrailingComma))
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)
     if (!js.isUndefined(preserveParens)) __obj.updateDynamic("preserveParens")(preserveParens)
     if (program != null) __obj.updateDynamic("program")(program)

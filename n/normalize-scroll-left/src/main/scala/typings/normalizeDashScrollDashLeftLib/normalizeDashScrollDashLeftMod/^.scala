@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def _setScrollType(): scala.Unit = js.native
-  def _setScrollType(`type`: normalizeDashScrollDashLeftLib.normalizeDashScrollDashLeftMod.ScrollType): scala.Unit = js.native
-  def detectScrollType(): normalizeDashScrollDashLeftLib.normalizeDashScrollDashLeftMod.ScrollType = js.native
+  def _setScrollType(`type`: ScrollType): scala.Unit = js.native
+  def detectScrollType(): ScrollType = js.native
   @JSName("getNormalizedScrollLeft")
   def getNormalizedScrollLeft_ltr(
     element: stdLib.HTMLElement,

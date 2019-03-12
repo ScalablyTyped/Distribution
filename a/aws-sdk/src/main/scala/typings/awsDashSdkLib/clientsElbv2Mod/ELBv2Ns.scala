@@ -47,7 +47,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the listener.
       */
-    var ListenerArn: ListenerArn
+    var ListenerArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ListenerArn
   }
   
   trait AddListenerCertificatesOutput extends js.Object {
@@ -61,7 +61,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the resource.
       */
-    var ResourceArns: ResourceArns
+    var ResourceArns: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ResourceArns
     /**
       * The tags. Each resource can have a maximum of 10 tags.
       */
@@ -218,11 +218,11 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the load balancer.
       */
-    var LoadBalancerArn: LoadBalancerArn
+    var LoadBalancerArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.LoadBalancerArn
     /**
       * The port on which the load balancer is listening.
       */
-    var Port: Port
+    var Port: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.Port
     /**
       * The protocol for connections from clients to the load balancer. For Application Load Balancers, the supported protocols are HTTP and HTTPS. For Network Load Balancers, the supported protocols are TCP and TLS.
       */
@@ -286,7 +286,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The actions. Each rule must include exactly one of the following types of actions: forward, fixed-response, or redirect. If the action type is forward, you specify a target group. The protocol of the target group must be HTTP or HTTPS for an Application Load Balancer. The protocol of the target group must be TCP or TLS for a Network Load Balancer. [HTTPS listeners] If the action type is authenticate-oidc, you authenticate users through an identity provider that is OpenID Connect (OIDC) compliant. [HTTPS listeners] If the action type is authenticate-cognito, you authenticate users through the user pools supported by Amazon Cognito. [Application Load Balancer] If the action type is redirect, you redirect specified client requests from one URL to another. [Application Load Balancer] If the action type is fixed-response, you drop specified client requests and return a custom HTTP response.
       */
-    var Actions: Actions
+    var Actions: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.Actions
     /**
       * The conditions. Each condition specifies a field name and a single value. If the field name is host-header, you can specify a single host name (for example, my.example.com). A host name is case insensitive, can be up to 128 characters in length, and can contain any of the following characters. You can include up to three wildcard characters.   A-Z, a-z, 0-9   - .   * (matches 0 or more characters)   ? (matches exactly 1 character)   If the field name is path-pattern, you can specify a single path pattern. A path pattern is case-sensitive, can be up to 128 characters in length, and can contain any of the following characters. You can include up to three wildcard characters.   A-Z, a-z, 0-9   _ - . $ / ~ " ' @ : +   &amp; (using &amp;amp;)   * (matches 0 or more characters)   ? (matches exactly 1 character)  
       */
@@ -294,7 +294,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the listener.
       */
-    var ListenerArn: ListenerArn
+    var ListenerArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ListenerArn
     /**
       * The rule priority. A listener can't have multiple rules with the same priority.
       */
@@ -378,7 +378,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the listener.
       */
-    var ListenerArn: ListenerArn
+    var ListenerArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ListenerArn
   }
   
   trait DeleteListenerOutput extends js.Object
@@ -387,7 +387,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the load balancer.
       */
-    var LoadBalancerArn: LoadBalancerArn
+    var LoadBalancerArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.LoadBalancerArn
   }
   
   trait DeleteLoadBalancerOutput extends js.Object
@@ -396,7 +396,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the rule.
       */
-    var RuleArn: RuleArn
+    var RuleArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.RuleArn
   }
   
   trait DeleteRuleOutput extends js.Object
@@ -405,7 +405,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the target group.
       */
-    var TargetGroupArn: TargetGroupArn
+    var TargetGroupArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.TargetGroupArn
   }
   
   trait DeleteTargetGroupOutput extends js.Object
@@ -414,7 +414,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the target group.
       */
-    var TargetGroupArn: TargetGroupArn
+    var TargetGroupArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.TargetGroupArn
     /**
       * The targets. If you specified a port override when you registered a target, you must specify both the target ID and the port when you deregister it.
       */
@@ -449,7 +449,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Names (ARN) of the listener.
       */
-    var ListenerArn: ListenerArn
+    var ListenerArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ListenerArn
     /**
       * The marker for the next set of results. (You received this marker from a previous call.)
       */
@@ -505,7 +505,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the load balancer.
       */
-    var LoadBalancerArn: LoadBalancerArn
+    var LoadBalancerArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.LoadBalancerArn
   }
   
   trait DescribeLoadBalancerAttributesOutput extends js.Object {
@@ -605,7 +605,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Names (ARN) of the resources.
       */
-    var ResourceArns: ResourceArns
+    var ResourceArns: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ResourceArns
   }
   
   trait DescribeTagsOutput extends js.Object {
@@ -619,7 +619,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the target group.
       */
-    var TargetGroupArn: TargetGroupArn
+    var TargetGroupArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.TargetGroupArn
   }
   
   trait DescribeTargetGroupAttributesOutput extends js.Object {
@@ -667,7 +667,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the target group.
       */
-    var TargetGroupArn: TargetGroupArn
+    var TargetGroupArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.TargetGroupArn
     /**
       * The targets.
       */
@@ -826,7 +826,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The HTTP codes. For Application Load Balancers, you can specify values between 200 and 499, and the default value is 200. You can specify multiple values (for example, "200,202") or a range of values (for example, "200-299"). For Network Load Balancers, this is 200–399.
       */
-    var HttpCode: HttpCode
+    var HttpCode: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.HttpCode
   }
   
   trait ModifyListenerInput extends js.Object {
@@ -841,7 +841,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the listener.
       */
-    var ListenerArn: ListenerArn
+    var ListenerArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ListenerArn
     /**
       * The port for connections from clients to the load balancer.
       */
@@ -871,7 +871,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the load balancer.
       */
-    var LoadBalancerArn: LoadBalancerArn
+    var LoadBalancerArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.LoadBalancerArn
   }
   
   trait ModifyLoadBalancerAttributesOutput extends js.Object {
@@ -893,7 +893,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the rule.
       */
-    var RuleArn: RuleArn
+    var RuleArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.RuleArn
   }
   
   trait ModifyRuleOutput extends js.Object {
@@ -911,7 +911,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the target group.
       */
-    var TargetGroupArn: TargetGroupArn
+    var TargetGroupArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.TargetGroupArn
   }
   
   trait ModifyTargetGroupAttributesOutput extends js.Object {
@@ -957,7 +957,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the target group.
       */
-    var TargetGroupArn: TargetGroupArn
+    var TargetGroupArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.TargetGroupArn
     /**
       * The number of consecutive health check failures required before considering the target unhealthy. For Network Load Balancers, this value must be the same as the healthy threshold count.
       */
@@ -1002,7 +1002,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the target group.
       */
-    var TargetGroupArn: TargetGroupArn
+    var TargetGroupArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.TargetGroupArn
     /**
       * The targets. To register a target by instance ID, specify the instance ID. To register a target by IP address, specify the IP address. To register a Lambda function, specify the ARN of the Lambda function.
       */
@@ -1019,7 +1019,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the listener.
       */
-    var ListenerArn: ListenerArn
+    var ListenerArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ListenerArn
   }
   
   trait RemoveListenerCertificatesOutput extends js.Object
@@ -1028,11 +1028,11 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the resource.
       */
-    var ResourceArns: ResourceArns
+    var ResourceArns: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ResourceArns
     /**
       * The tag keys for the tags to remove.
       */
-    var TagKeys: TagKeys
+    var TagKeys: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.TagKeys
   }
   
   trait RemoveTagsOutput extends js.Object
@@ -1086,11 +1086,11 @@ object ELBv2Ns extends js.Object {
     /**
       * The IP address type. The possible values are ipv4 (for IPv4 addresses) and dualstack (for IPv4 and IPv6 addresses). Internal load balancers must use ipv4.
       */
-    var IpAddressType: IpAddressType
+    var IpAddressType: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.IpAddressType
     /**
       * The Amazon Resource Name (ARN) of the load balancer.
       */
-    var LoadBalancerArn: LoadBalancerArn
+    var LoadBalancerArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.LoadBalancerArn
   }
   
   trait SetIpAddressTypeOutput extends js.Object {
@@ -1118,11 +1118,11 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the load balancer.
       */
-    var LoadBalancerArn: LoadBalancerArn
+    var LoadBalancerArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.LoadBalancerArn
     /**
       * The IDs of the security groups.
       */
-    var SecurityGroups: SecurityGroups
+    var SecurityGroups: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.SecurityGroups
   }
   
   trait SetSecurityGroupsOutput extends js.Object {
@@ -1136,7 +1136,7 @@ object ELBv2Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the load balancer.
       */
-    var LoadBalancerArn: LoadBalancerArn
+    var LoadBalancerArn: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.LoadBalancerArn
     /**
       * The IDs of the public subnets. You must specify subnets from at least two Availability Zones. You can specify only one subnet per Availability Zone. You must specify either subnets or subnet mappings. You cannot specify Elastic IP addresses for your subnets.
       */

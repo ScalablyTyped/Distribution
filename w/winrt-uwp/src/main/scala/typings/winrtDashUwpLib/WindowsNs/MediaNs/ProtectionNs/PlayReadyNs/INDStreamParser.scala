@@ -28,16 +28,13 @@ trait INDStreamParser extends js.Object {
 object INDStreamParser {
   @scala.inline
   def apply(
-    beginOfStream: js.Function0[scala.Unit],
-    endOfStream: js.Function0[scala.Unit],
-    getStreamInformation: js.Function1[
-      winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.IMediaStreamDescriptor, 
-      winrtDashUwpLib.Anon_ReturnValueStreamType
-    ],
+    beginOfStream: () => scala.Unit,
+    endOfStream: () => scala.Unit,
+    getStreamInformation: winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.IMediaStreamDescriptor => winrtDashUwpLib.Anon_ReturnValueStreamType,
     notifier: NDStreamParserNotifier,
-    parseData: js.Function1[js.Array[scala.Double], scala.Unit]
+    parseData: js.Array[scala.Double] => scala.Unit
   ): INDStreamParser = {
-    val __obj = js.Dynamic.literal(beginOfStream = beginOfStream, endOfStream = endOfStream, getStreamInformation = getStreamInformation, notifier = notifier, parseData = parseData)
+    val __obj = js.Dynamic.literal(beginOfStream = js.Any.fromFunction0(beginOfStream), endOfStream = js.Any.fromFunction0(endOfStream), getStreamInformation = js.Any.fromFunction1(getStreamInformation), notifier = notifier, parseData = js.Any.fromFunction1(parseData))
   
     __obj.asInstanceOf[INDStreamParser]
   }

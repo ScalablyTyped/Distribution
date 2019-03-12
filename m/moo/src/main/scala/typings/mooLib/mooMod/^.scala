@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val error: mooLib.Anon_Error = js.native
   val fallback: mooLib.Anon_Fallback = js.native
-  def compile(rules: mooLib.mooMod.Rules): mooLib.mooMod.Lexer = js.native
-  def keywords(kws: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]): mooLib.mooMod.TypeMapper = js.native
-  def states(states: org.scalablytyped.runtime.StringDictionary[mooLib.mooMod.Rules]): mooLib.mooMod.Lexer = js.native
-  def states(states: org.scalablytyped.runtime.StringDictionary[mooLib.mooMod.Rules], start: java.lang.String): mooLib.mooMod.Lexer = js.native
+  def compile(rules: Rules): Lexer = js.native
+  def keywords(kws: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]): TypeMapper = js.native
+  def states(states: org.scalablytyped.runtime.StringDictionary[Rules]): Lexer = js.native
+  def states(states: org.scalablytyped.runtime.StringDictionary[Rules], start: java.lang.String): Lexer = js.native
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MissingEnvVarsError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   /**
     * Variables which existing in the sample file, but not in the loaded file.
     */
@@ -19,8 +19,14 @@ trait MissingEnvVarsError
 
 object MissingEnvVarsError {
   @scala.inline
-  def apply(missing: js.Array[java.lang.String], sample: java.lang.String, stack: java.lang.String = null): MissingEnvVarsError = {
-    val __obj = js.Dynamic.literal(missing = missing, sample = sample)
+  def apply(
+    message: java.lang.String,
+    missing: js.Array[java.lang.String],
+    name: java.lang.String,
+    sample: java.lang.String,
+    stack: java.lang.String = null
+  ): MissingEnvVarsError = {
+    val __obj = js.Dynamic.literal(message = message, missing = missing, name = name, sample = sample)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[MissingEnvVarsError]
   }

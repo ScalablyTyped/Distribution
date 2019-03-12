@@ -21,28 +21,13 @@ trait AnnotationsResource extends js.Object {
 object AnnotationsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltAnnotationIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltAnnotationIdCountry, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltContentVersionFieldsKeyLayerId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Annotations]
-    ],
-    summary: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltFieldsKeyLayerIds, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AnnotationsSummary]
-    ],
-    update: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltAnnotationIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
-    ]
+    delete: gapiDotClientDotBooksLib.Anon_AltAnnotationIdFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    insert: gapiDotClientDotBooksLib.Anon_AltAnnotationIdCountry => gapiDotClientLib.gapiNs.clientNs.Request[Annotation],
+    list: gapiDotClientDotBooksLib.Anon_AltContentVersionFieldsKeyLayerId => gapiDotClientLib.gapiNs.clientNs.Request[Annotations],
+    summary: gapiDotClientDotBooksLib.Anon_AltFieldsKeyLayerIds => gapiDotClientLib.gapiNs.clientNs.Request[AnnotationsSummary],
+    update: gapiDotClientDotBooksLib.Anon_AltAnnotationIdFields => gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
   ): AnnotationsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list, summary = summary, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), summary = js.Any.fromFunction1(summary), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[AnnotationsResource]
   }

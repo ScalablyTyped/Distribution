@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CarouselOptions extends js.Object {
-  var animation: js.UndefOr[nodeLib.String] = js.undefined
-  var animationOptions: js.UndefOr[coreDashJsLib.Object] = js.undefined
-  var callback: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var animation: js.UndefOr[java.lang.String] = js.undefined
+  var animationOptions: js.UndefOr[js.Object] = js.undefined
+  var callback: js.UndefOr[js.Function] = js.undefined
 }
 
 object CarouselOptions {
   @scala.inline
   def apply(
-    animation: nodeLib.String = null,
-    animationOptions: coreDashJsLib.Object = null,
-    callback: coreDashJsLib.Function = null
+    animation: java.lang.String = null,
+    animationOptions: js.Object = null,
+    callback: js.Function = null
   ): CarouselOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation)

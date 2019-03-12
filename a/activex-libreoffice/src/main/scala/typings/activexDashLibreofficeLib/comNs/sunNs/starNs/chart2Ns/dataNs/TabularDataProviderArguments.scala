@@ -62,7 +62,7 @@ trait TabularDataProviderArguments extends js.Object {
     * If the given SequenceMapping does not cover all existing labeled sequences just put the remaining sequences in old order behind the others. For
     * example you have 4 sequences and a SequenceMapping [3,1]. The result should be a as if [3,1,0,2] was given.
     */
-  var SequenceMapping: activexDashInteropLib.SafeArray[scala.Double]
+  var SequenceMapping: stdLib.SafeArray[scala.Double]
   /**
     * This property is for providing proprietary table indexes for each table appearing in a range given in CellRangeRepresentation.
     * @deprecated Deprecated  This argument is supported by Spreadsheets in order to be able to export a document into the StarOffice 5.0 binary format.  Example:
@@ -77,7 +77,7 @@ object TabularDataProviderArguments {
     DataRowSource: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartDataRowSource,
     FirstCellAsLabel: scala.Boolean,
     HasCategories: scala.Boolean,
-    SequenceMapping: activexDashInteropLib.SafeArray[scala.Double],
+    SequenceMapping: stdLib.SafeArray[scala.Double],
     TableNumberList: java.lang.String
   ): TabularDataProviderArguments = {
     val __obj = js.Dynamic.literal(CellRangeRepresentation = CellRangeRepresentation, DataRowSource = DataRowSource, FirstCellAsLabel = FirstCellAsLabel, HasCategories = HasCategories, SequenceMapping = SequenceMapping, TableNumberList = TableNumberList)

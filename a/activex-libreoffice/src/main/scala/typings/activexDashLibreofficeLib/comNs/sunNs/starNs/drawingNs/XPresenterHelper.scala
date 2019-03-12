@@ -86,43 +86,16 @@ trait XPresenterHelper extends js.Object {
 object XPresenterHelper {
   @scala.inline
   def apply(
-    captureMouse: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, scala.Unit],
-    createCanvas: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
-      scala.Double, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas
-    ],
-    createSharedCanvas: js.Function5[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XSpriteCanvas, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas
-    ],
-    createWindow: js.Function5[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
-      scala.Boolean, 
-      scala.Boolean, 
-      scala.Boolean, 
-      scala.Boolean, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow
-    ],
-    getWindowExtentsRelative: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle
-    ],
-    loadBitmap: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap
-    ],
-    releaseMouse: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, scala.Unit],
-    toTop: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, scala.Unit]
+    captureMouse: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow => scala.Unit,
+    createCanvas: (activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, scala.Double, java.lang.String) => activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas,
+    createSharedCanvas: (activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XSpriteCanvas, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow) => activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas,
+    createWindow: (activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, scala.Boolean, scala.Boolean, scala.Boolean, scala.Boolean) => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    getWindowExtentsRelative: (activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow) => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    loadBitmap: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas) => activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap,
+    releaseMouse: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow => scala.Unit,
+    toTop: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow => scala.Unit
   ): XPresenterHelper = {
-    val __obj = js.Dynamic.literal(captureMouse = captureMouse, createCanvas = createCanvas, createSharedCanvas = createSharedCanvas, createWindow = createWindow, getWindowExtentsRelative = getWindowExtentsRelative, loadBitmap = loadBitmap, releaseMouse = releaseMouse, toTop = toTop)
+    val __obj = js.Dynamic.literal(captureMouse = js.Any.fromFunction1(captureMouse), createCanvas = js.Any.fromFunction3(createCanvas), createSharedCanvas = js.Any.fromFunction5(createSharedCanvas), createWindow = js.Any.fromFunction5(createWindow), getWindowExtentsRelative = js.Any.fromFunction2(getWindowExtentsRelative), loadBitmap = js.Any.fromFunction2(loadBitmap), releaseMouse = js.Any.fromFunction1(releaseMouse), toTop = js.Any.fromFunction1(toTop))
   
     __obj.asInstanceOf[XPresenterHelper]
   }

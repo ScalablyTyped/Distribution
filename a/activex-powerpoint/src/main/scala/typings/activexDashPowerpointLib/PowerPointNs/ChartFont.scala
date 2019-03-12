@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.ChartFont")
 @js.native
 class ChartFont protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   var Background: js.Any = js.native
   var Bold: js.Any = js.native
   var Color: js.Any = js.native

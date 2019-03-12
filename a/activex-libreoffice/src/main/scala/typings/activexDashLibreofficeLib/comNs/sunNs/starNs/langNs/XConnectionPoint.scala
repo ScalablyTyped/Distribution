@@ -49,7 +49,7 @@ trait XConnectionPoint
     */
   val ConnectionType: activexDashLibreofficeLib.`type`
   /** @returns a sequence of all currently advised connections. */
-  val Connections: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface]
+  val Connections: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface]
   /**
     * creates a connection between a connection point and a client's sink, where the sink implements the outgoing interface supported by this connection
     * point.
@@ -74,7 +74,7 @@ trait XConnectionPoint
     */
   def getConnectionType(): activexDashLibreofficeLib.`type`
   /** @returns a sequence of all currently advised connections. */
-  def getConnections(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface]
+  def getConnections(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface]
   /**
     * terminates a notification previously set up with advise.
     *
@@ -92,19 +92,17 @@ object XConnectionPoint {
   def apply(
     ConnectionPointContainer: XConnectionPointContainer,
     ConnectionType: activexDashLibreofficeLib.`type`,
-    Connections: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    acquire: js.Function0[scala.Unit],
-    advise: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
-    getConnectionPointContainer: js.Function0[XConnectionPointContainer],
-    getConnectionType: js.Function0[activexDashLibreofficeLib.`type`],
-    getConnections: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    unadvise: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
+    Connections: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    acquire: () => scala.Unit,
+    advise: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => scala.Unit,
+    getConnectionPointContainer: () => XConnectionPointContainer,
+    getConnectionType: () => activexDashLibreofficeLib.`type`,
+    getConnections: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    unadvise: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => scala.Unit
   ): XConnectionPoint = {
-    val __obj = js.Dynamic.literal(ConnectionPointContainer = ConnectionPointContainer, ConnectionType = ConnectionType, Connections = Connections, acquire = acquire, advise = advise, getConnectionPointContainer = getConnectionPointContainer, getConnectionType = getConnectionType, getConnections = getConnections, queryInterface = queryInterface, release = release, unadvise = unadvise)
+    val __obj = js.Dynamic.literal(ConnectionPointContainer = ConnectionPointContainer, ConnectionType = ConnectionType, Connections = Connections, acquire = js.Any.fromFunction0(acquire), advise = js.Any.fromFunction1(advise), getConnectionPointContainer = js.Any.fromFunction0(getConnectionPointContainer), getConnectionType = js.Any.fromFunction0(getConnectionType), getConnections = js.Any.fromFunction0(getConnections), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), unadvise = js.Any.fromFunction1(unadvise))
   
     __obj.asInstanceOf[XConnectionPoint]
   }

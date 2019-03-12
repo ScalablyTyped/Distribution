@@ -40,17 +40,17 @@ trait IPrioritySignal
 object IPrioritySignal {
   @scala.inline
   def apply(
-    add: js.Function1[js.Function, signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot],
-    addOnce: js.Function1[js.Function, signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot],
-    addOnceWithPriority: js.Function2[js.Function, scala.Double, signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot],
-    addWithPriority: js.Function2[js.Function, scala.Double, signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot],
-    dispatch: js.Function1[/* repeated */ js.Any, scala.Unit],
+    add: js.Function => signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot,
+    addOnce: js.Function => signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot,
+    addOnceWithPriority: (js.Function, scala.Double) => signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot,
+    addWithPriority: (js.Function, scala.Double) => signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot,
+    dispatch: /* repeated */ js.Any => scala.Unit,
     numListeners: scala.Double,
-    remove: js.Function1[js.Function, signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot],
-    removeAll: js.Function0[scala.Unit],
+    remove: js.Function => signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot,
+    removeAll: () => scala.Unit,
     valueClasses: js.Array[_]
   ): IPrioritySignal = {
-    val __obj = js.Dynamic.literal(add = add, addOnce = addOnce, addOnceWithPriority = addOnceWithPriority, addWithPriority = addWithPriority, dispatch = dispatch, numListeners = numListeners, remove = remove, removeAll = removeAll, valueClasses = valueClasses)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), addOnce = js.Any.fromFunction1(addOnce), addOnceWithPriority = js.Any.fromFunction2(addOnceWithPriority), addWithPriority = js.Any.fromFunction2(addWithPriority), dispatch = js.Any.fromFunction1(dispatch), numListeners = numListeners, remove = js.Any.fromFunction1(remove), removeAll = js.Any.fromFunction0(removeAll), valueClasses = valueClasses)
   
     __obj.asInstanceOf[IPrioritySignal]
   }

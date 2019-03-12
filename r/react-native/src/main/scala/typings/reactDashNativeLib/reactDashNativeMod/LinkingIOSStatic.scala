@@ -43,25 +43,13 @@ trait LinkingIOSStatic extends js.Object {
 object LinkingIOSStatic {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[
-      java.lang.String, 
-      js.Function1[/* event */ reactDashNativeLib.Anon_Url, scala.Unit], 
-      scala.Unit
-    ],
-    canOpenURL: js.Function2[
-      java.lang.String, 
-      js.Function1[/* supported */ scala.Boolean, scala.Unit], 
-      scala.Unit
-    ],
-    openURL: js.Function1[java.lang.String, scala.Unit],
-    popInitialURL: js.Function0[java.lang.String],
-    removeEventListener: js.Function2[
-      java.lang.String, 
-      js.Function1[/* event */ reactDashNativeLib.Anon_Url, scala.Unit], 
-      scala.Unit
-    ]
+    addEventListener: (java.lang.String, js.Function1[/* event */ reactDashNativeLib.Anon_Url, scala.Unit]) => scala.Unit,
+    canOpenURL: (java.lang.String, js.Function1[/* supported */ scala.Boolean, scala.Unit]) => scala.Unit,
+    openURL: java.lang.String => scala.Unit,
+    popInitialURL: () => java.lang.String,
+    removeEventListener: (java.lang.String, js.Function1[/* event */ reactDashNativeLib.Anon_Url, scala.Unit]) => scala.Unit
   ): LinkingIOSStatic = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, canOpenURL = canOpenURL, openURL = openURL, popInitialURL = popInitialURL, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), canOpenURL = js.Any.fromFunction2(canOpenURL), openURL = js.Any.fromFunction1(openURL), popInitialURL = js.Any.fromFunction0(popInitialURL), removeEventListener = js.Any.fromFunction2(removeEventListener))
   
     __obj.asInstanceOf[LinkingIOSStatic]
   }

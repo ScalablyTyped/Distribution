@@ -19,11 +19,8 @@ trait InsertTableCommand extends CommandWithSimpleStateBase {
 
 object InsertTableCommand {
   @scala.inline
-  def apply(
-    execute: js.Function2[scala.Double, scala.Double, scala.Boolean],
-    getState: js.Function0[SimpleCommandState]
-  ): InsertTableCommand = {
-    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  def apply(execute: (scala.Double, scala.Double) => scala.Boolean, getState: () => SimpleCommandState): InsertTableCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction2(execute), getState = js.Any.fromFunction0(getState))
   
     __obj.asInstanceOf[InsertTableCommand]
   }

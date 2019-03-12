@@ -9,8 +9,8 @@ trait ConsoleRecorder extends Recorder
 
 object ConsoleRecorder {
   @scala.inline
-  def apply(record: js.Function1[Record, scala.Unit]): ConsoleRecorder = {
-    val __obj = js.Dynamic.literal(record = record)
+  def apply(record: Record => scala.Unit): ConsoleRecorder = {
+    val __obj = js.Dynamic.literal(record = js.Any.fromFunction1(record))
   
     __obj.asInstanceOf[ConsoleRecorder]
   }

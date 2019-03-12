@@ -17,14 +17,14 @@ trait IState extends js.Object {
 object IState {
   @scala.inline
   def apply(
-    GetAsLookup: js.Function0[ILookup],
-    GetAsTypedValue: js.Function0[ITypedValue],
+    GetAsLookup: () => ILookup,
+    GetAsTypedValue: () => ITypedValue,
     ID: scala.Double,
     Name: java.lang.String,
     Selectable: scala.Boolean,
     SelectableFlagAffectedByPseudoUsers: scala.Boolean
   ): IState = {
-    val __obj = js.Dynamic.literal(GetAsLookup = GetAsLookup, GetAsTypedValue = GetAsTypedValue, ID = ID, Name = Name, Selectable = Selectable, SelectableFlagAffectedByPseudoUsers = SelectableFlagAffectedByPseudoUsers)
+    val __obj = js.Dynamic.literal(GetAsLookup = js.Any.fromFunction0(GetAsLookup), GetAsTypedValue = js.Any.fromFunction0(GetAsTypedValue), ID = ID, Name = Name, Selectable = Selectable, SelectableFlagAffectedByPseudoUsers = SelectableFlagAffectedByPseudoUsers)
   
     __obj.asInstanceOf[IState]
   }

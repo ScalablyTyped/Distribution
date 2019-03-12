@@ -17,18 +17,18 @@ trait Decryptor
 object Decryptor {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addDecryptionResultListener: js.Function1[XDecryptionResultListener, scala.Unit],
-    endMission: js.Function0[scala.Boolean],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    referenceResolved: js.Function1[scala.Double, scala.Unit],
-    release: js.Function0[scala.Unit],
-    removeDecryptionResultListener: js.Function1[XDecryptionResultListener, scala.Unit],
-    setBlockerId: js.Function1[scala.Double, scala.Unit],
-    setKeyId: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    addDecryptionResultListener: XDecryptionResultListener => scala.Unit,
+    endMission: () => scala.Boolean,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    referenceResolved: scala.Double => scala.Unit,
+    release: () => scala.Unit,
+    removeDecryptionResultListener: XDecryptionResultListener => scala.Unit,
+    setBlockerId: scala.Double => scala.Unit,
+    setKeyId: scala.Double => scala.Unit
   ): Decryptor = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addDecryptionResultListener = addDecryptionResultListener, endMission = endMission, initialize = initialize, queryInterface = queryInterface, referenceResolved = referenceResolved, release = release, removeDecryptionResultListener = removeDecryptionResultListener, setBlockerId = setBlockerId, setKeyId = setKeyId)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addDecryptionResultListener = js.Any.fromFunction1(addDecryptionResultListener), endMission = js.Any.fromFunction0(endMission), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), referenceResolved = js.Any.fromFunction1(referenceResolved), release = js.Any.fromFunction0(release), removeDecryptionResultListener = js.Any.fromFunction1(removeDecryptionResultListener), setBlockerId = js.Any.fromFunction1(setBlockerId), setKeyId = js.Any.fromFunction1(setKeyId))
   
     __obj.asInstanceOf[Decryptor]
   }

@@ -36,7 +36,7 @@ object GroupShape {
     ElementType: activexDashLibreofficeLib.`type`,
     GluePoints: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer,
     Hyperlink: java.lang.String,
-    InteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    InteropGrabBag: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     LayerID: scala.Double,
     LayerName: java.lang.String,
     MoveProtect: scala.Boolean,
@@ -57,66 +57,40 @@ object GroupShape {
     Transformation: HomogenMatrix3,
     Visible: scala.Boolean,
     ZOrder: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    add: js.Function1[XShape, scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    addPropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
+    acquire: () => scala.Unit,
+    add: XShape => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    addPropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    addVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    dispose: () => scala.Unit,
+    enterGroup: () => scala.Unit,
+    getByIndex: scala.Double => js.Any,
+    getCount: () => scala.Double,
+    getDirectPropertyValuesTolerant: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => stdLib.SafeArray[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.GetDirectPropertyTolerantResult
     ],
-    addVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    dispose: js.Function0[scala.Unit],
-    enterGroup: js.Function0[scala.Unit],
-    getByIndex: js.Function1[scala.Double, js.Any],
-    getCount: js.Function0[scala.Double],
-    getDirectPropertyValuesTolerant: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashInteropLib.SafeArray[
-        activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.GetDirectPropertyTolerantResult
-      ]
-    ],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    getGluePoints: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer],
-    getPosition: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point],
-    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
-    getPropertyValue: js.Function1[java.lang.String, js.Any],
-    getPropertyValuesTolerant: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.GetPropertyTolerantResult]
-    ],
-    getShapeType: js.Function0[java.lang.String],
-    getSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
-    hasElements: js.Function0[scala.Boolean],
-    leaveGroup: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    remove: js.Function1[XShape, scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    removePropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    removeVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    setPosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Unit],
-    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
-    setPropertyValuesTolerant: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.SetPropertyTolerantFailed]
-    ],
-    setSize: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit]
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    getGluePoints: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer,
+    getPosition: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    getPropertySetInfo: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    getPropertyValue: java.lang.String => js.Any,
+    getPropertyValuesTolerant: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.GetPropertyTolerantResult],
+    getShapeType: () => java.lang.String,
+    getSize: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    hasElements: () => scala.Boolean,
+    leaveGroup: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    remove: XShape => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    removePropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    removeVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    setPosition: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point => scala.Unit,
+    setPropertyValue: (java.lang.String, js.Any) => scala.Unit,
+    setPropertyValuesTolerant: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]) => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.SetPropertyTolerantFailed],
+    setSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size => scala.Unit
   ): GroupShape = {
-    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, GluePoints = GluePoints, Hyperlink = Hyperlink, InteropGrabBag = InteropGrabBag, LayerID = LayerID, LayerName = LayerName, MoveProtect = MoveProtect, Name = Name, NavigationOrder = NavigationOrder, Position = Position, Printable = Printable, PropertySetInfo = PropertySetInfo, RelativeHeight = RelativeHeight, RelativeHeightRelation = RelativeHeightRelation, RelativeWidth = RelativeWidth, RelativeWidthRelation = RelativeWidthRelation, ShapeType = ShapeType, ShapeUserDefinedAttributes = ShapeUserDefinedAttributes, Size = Size, SizeProtect = SizeProtect, Style = Style, Transformation = Transformation, Visible = Visible, ZOrder = ZOrder, acquire = acquire, add = add, addEventListener = addEventListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, dispose = dispose, enterGroup = enterGroup, getByIndex = getByIndex, getCount = getCount, getDirectPropertyValuesTolerant = getDirectPropertyValuesTolerant, getElementType = getElementType, getGluePoints = getGluePoints, getPosition = getPosition, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getPropertyValuesTolerant = getPropertyValuesTolerant, getShapeType = getShapeType, getSize = getSize, hasElements = hasElements, leaveGroup = leaveGroup, queryInterface = queryInterface, release = release, remove = remove, removeEventListener = removeEventListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPosition = setPosition, setPropertyValue = setPropertyValue, setPropertyValuesTolerant = setPropertyValuesTolerant, setSize = setSize)
+    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, GluePoints = GluePoints, Hyperlink = Hyperlink, InteropGrabBag = InteropGrabBag, LayerID = LayerID, LayerName = LayerName, MoveProtect = MoveProtect, Name = Name, NavigationOrder = NavigationOrder, Position = Position, Printable = Printable, PropertySetInfo = PropertySetInfo, RelativeHeight = RelativeHeight, RelativeHeightRelation = RelativeHeightRelation, RelativeWidth = RelativeWidth, RelativeWidthRelation = RelativeWidthRelation, ShapeType = ShapeType, ShapeUserDefinedAttributes = ShapeUserDefinedAttributes, Size = Size, SizeProtect = SizeProtect, Style = Style, Transformation = Transformation, Visible = Visible, ZOrder = ZOrder, acquire = js.Any.fromFunction0(acquire), add = js.Any.fromFunction1(add), addEventListener = js.Any.fromFunction1(addEventListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), dispose = js.Any.fromFunction0(dispose), enterGroup = js.Any.fromFunction0(enterGroup), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getDirectPropertyValuesTolerant = js.Any.fromFunction1(getDirectPropertyValuesTolerant), getElementType = js.Any.fromFunction0(getElementType), getGluePoints = js.Any.fromFunction0(getGluePoints), getPosition = js.Any.fromFunction0(getPosition), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValuesTolerant = js.Any.fromFunction1(getPropertyValuesTolerant), getShapeType = js.Any.fromFunction0(getShapeType), getSize = js.Any.fromFunction0(getSize), hasElements = js.Any.fromFunction0(hasElements), leaveGroup = js.Any.fromFunction0(leaveGroup), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), remove = js.Any.fromFunction1(remove), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPosition = js.Any.fromFunction1(setPosition), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValuesTolerant = js.Any.fromFunction2(setPropertyValuesTolerant), setSize = js.Any.fromFunction1(setSize))
   
     __obj.asInstanceOf[GroupShape]
   }

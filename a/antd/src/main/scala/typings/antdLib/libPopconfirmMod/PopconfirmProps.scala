@@ -48,27 +48,17 @@ object PopconfirmProps {
     cancelText: reactLib.reactMod.ReactNs.ReactNode = null,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     defaultVisible: js.UndefOr[scala.Boolean] = js.undefined,
-    getPopupContainer: js.Function1[/* triggerNode */ js.UndefOr[reactLib.HTMLElement], reactLib.HTMLElement] = null,
-    getTooltipContainer: js.Function1[/* triggerNode */ reactLib.Element, reactLib.HTMLElement] = null,
+    getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.HTMLElement] => stdLib.HTMLElement = null,
+    getTooltipContainer: /* triggerNode */ stdLib.Element => stdLib.HTMLElement = null,
     icon: reactLib.reactMod.ReactNs.ReactNode = null,
     mouseEnterDelay: scala.Int | scala.Double = null,
     mouseLeaveDelay: scala.Int | scala.Double = null,
     okButtonProps: antdLib.libButtonButtonMod.NativeButtonProps = null,
     okText: reactLib.reactMod.ReactNs.ReactNode = null,
     okType: antdLib.libButtonButtonMod.ButtonType = null,
-    onCancel: js.Function1[
-      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]], 
-      scala.Unit
-    ] = null,
-    onConfirm: js.Function1[
-      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]], 
-      scala.Unit
-    ] = null,
-    onVisibleChange: js.Function2[
-      /* visible */ scala.Boolean, 
-      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]], 
-      scala.Unit
-    ] = null,
+    onCancel: /* e */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]] => scala.Unit = null,
+    onConfirm: /* e */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]] => scala.Unit = null,
+    onVisibleChange: (/* visible */ scala.Boolean, /* e */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]]) => scala.Unit = null,
     openClassName: java.lang.String = null,
     overlayClassName: java.lang.String = null,
     overlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -88,17 +78,17 @@ object PopconfirmProps {
     if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultVisible)) __obj.updateDynamic("defaultVisible")(defaultVisible)
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer)
-    if (getTooltipContainer != null) __obj.updateDynamic("getTooltipContainer")(getTooltipContainer)
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
+    if (getTooltipContainer != null) __obj.updateDynamic("getTooltipContainer")(js.Any.fromFunction1(getTooltipContainer))
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (mouseEnterDelay != null) __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay.asInstanceOf[js.Any])
     if (mouseLeaveDelay != null) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.asInstanceOf[js.Any])
     if (okButtonProps != null) __obj.updateDynamic("okButtonProps")(okButtonProps)
     if (okText != null) __obj.updateDynamic("okText")(okText.asInstanceOf[js.Any])
     if (okType != null) __obj.updateDynamic("okType")(okType)
-    if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel)
-    if (onConfirm != null) __obj.updateDynamic("onConfirm")(onConfirm)
-    if (onVisibleChange != null) __obj.updateDynamic("onVisibleChange")(onVisibleChange)
+    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction1(onCancel))
+    if (onConfirm != null) __obj.updateDynamic("onConfirm")(js.Any.fromFunction1(onConfirm))
+    if (onVisibleChange != null) __obj.updateDynamic("onVisibleChange")(js.Any.fromFunction2(onVisibleChange))
     if (openClassName != null) __obj.updateDynamic("openClassName")(openClassName)
     if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName)
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle)

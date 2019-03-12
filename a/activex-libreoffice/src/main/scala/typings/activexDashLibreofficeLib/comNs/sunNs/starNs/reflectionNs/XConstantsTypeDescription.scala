@@ -16,28 +16,28 @@ trait XConstantsTypeDescription extends XTypeDescription {
     * Returns the contstants defined for this constants group.
     * @returns a sequence containing constants descriptions.
     */
-  val Constants: activexDashInteropLib.SafeArray[XConstantTypeDescription]
+  val Constants: stdLib.SafeArray[XConstantTypeDescription]
   /**
     * Returns the contstants defined for this constants group.
     * @returns a sequence containing constants descriptions.
     */
-  def getConstants(): activexDashInteropLib.SafeArray[XConstantTypeDescription]
+  def getConstants(): stdLib.SafeArray[XConstantTypeDescription]
 }
 
 object XConstantsTypeDescription {
   @scala.inline
   def apply(
-    Constants: activexDashInteropLib.SafeArray[XConstantTypeDescription],
+    Constants: stdLib.SafeArray[XConstantTypeDescription],
     Name: java.lang.String,
     TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
-    acquire: js.Function0[scala.Unit],
-    getConstants: js.Function0[activexDashInteropLib.SafeArray[XConstantTypeDescription]],
-    getName: js.Function0[java.lang.String],
-    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getConstants: () => stdLib.SafeArray[XConstantTypeDescription],
+    getName: () => java.lang.String,
+    getTypeClass: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XConstantsTypeDescription = {
-    val __obj = js.Dynamic.literal(Constants = Constants, Name = Name, TypeClass = TypeClass, acquire = acquire, getConstants = getConstants, getName = getName, getTypeClass = getTypeClass, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Constants = Constants, Name = Name, TypeClass = TypeClass, acquire = js.Any.fromFunction0(acquire), getConstants = js.Any.fromFunction0(getConstants), getName = js.Any.fromFunction0(getName), getTypeClass = js.Any.fromFunction0(getTypeClass), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XConstantsTypeDescription]
   }

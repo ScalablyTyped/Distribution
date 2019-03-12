@@ -27,12 +27,12 @@ object XDataPilotTablesSupplier {
   @scala.inline
   def apply(
     DataPilotTables: XDataPilotTables,
-    acquire: js.Function0[scala.Unit],
-    getDataPilotTables: js.Function0[XDataPilotTables],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDataPilotTables: () => XDataPilotTables,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDataPilotTablesSupplier = {
-    val __obj = js.Dynamic.literal(DataPilotTables = DataPilotTables, acquire = acquire, getDataPilotTables = getDataPilotTables, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(DataPilotTables = DataPilotTables, acquire = js.Any.fromFunction0(acquire), getDataPilotTables = js.Any.fromFunction0(getDataPilotTables), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDataPilotTablesSupplier]
   }

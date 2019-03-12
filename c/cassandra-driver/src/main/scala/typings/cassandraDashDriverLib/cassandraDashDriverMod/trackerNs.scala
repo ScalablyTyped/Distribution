@@ -29,7 +29,7 @@ object trackerNs extends js.Object {
       parameters: js.Array[_],
       executionOptions: cassandraDashDriverLib.cassandraDashDriverMod.ExecutionOptions,
       requestLength: scala.Double,
-      err: nodeLib.Error,
+      err: stdLib.Error,
       latency: js.Array[scala.Double]
     ): scala.Unit = js.native
     def onError(
@@ -38,7 +38,7 @@ object trackerNs extends js.Object {
       parameters: org.scalablytyped.runtime.StringDictionary[js.Any],
       executionOptions: cassandraDashDriverLib.cassandraDashDriverMod.ExecutionOptions,
       requestLength: scala.Double,
-      err: nodeLib.Error,
+      err: stdLib.Error,
       latency: js.Array[scala.Double]
     ): scala.Unit = js.native
     def onError(
@@ -47,7 +47,7 @@ object trackerNs extends js.Object {
       parameters: scala.Null,
       executionOptions: cassandraDashDriverLib.cassandraDashDriverMod.ExecutionOptions,
       requestLength: scala.Double,
-      err: nodeLib.Error,
+      err: stdLib.Error,
       latency: js.Array[scala.Double]
     ): scala.Unit = js.native
     def onError(
@@ -56,7 +56,7 @@ object trackerNs extends js.Object {
       parameters: js.Array[_],
       executionOptions: cassandraDashDriverLib.cassandraDashDriverMod.ExecutionOptions,
       requestLength: scala.Double,
-      err: nodeLib.Error,
+      err: stdLib.Error,
       latency: js.Array[scala.Double]
     ): scala.Unit = js.native
     def onError(
@@ -65,7 +65,7 @@ object trackerNs extends js.Object {
       parameters: org.scalablytyped.runtime.StringDictionary[js.Any],
       executionOptions: cassandraDashDriverLib.cassandraDashDriverMod.ExecutionOptions,
       requestLength: scala.Double,
-      err: nodeLib.Error,
+      err: stdLib.Error,
       latency: js.Array[scala.Double]
     ): scala.Unit = js.native
     def onError(
@@ -74,7 +74,7 @@ object trackerNs extends js.Object {
       parameters: scala.Null,
       executionOptions: cassandraDashDriverLib.cassandraDashDriverMod.ExecutionOptions,
       requestLength: scala.Double,
-      err: nodeLib.Error,
+      err: stdLib.Error,
       latency: js.Array[scala.Double]
     ): scala.Unit = js.native
     def onSuccess(

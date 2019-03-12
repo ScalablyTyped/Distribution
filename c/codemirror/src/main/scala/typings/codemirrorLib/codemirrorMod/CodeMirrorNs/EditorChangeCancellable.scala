@@ -22,23 +22,18 @@ trait EditorChangeCancellable extends EditorChange {
 object EditorChangeCancellable {
   @scala.inline
   def apply(
-    cancel: js.Function0[scala.Unit],
+    cancel: () => scala.Unit,
     from: Position,
     text: js.Array[java.lang.String],
     to: Position,
     origin: java.lang.String = null,
     removed: js.Array[java.lang.String] = null,
-    update: js.Function3[
-      /* from */ js.UndefOr[Position], 
-      /* to */ js.UndefOr[Position], 
-      /* text */ js.UndefOr[js.Array[java.lang.String]], 
-      scala.Unit
-    ] = null
+    update: (/* from */ js.UndefOr[Position], /* to */ js.UndefOr[Position], /* text */ js.UndefOr[js.Array[java.lang.String]]) => scala.Unit = null
   ): EditorChangeCancellable = {
-    val __obj = js.Dynamic.literal(cancel = cancel, from = from, text = text, to = to)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), from = from, text = text, to = to)
     if (origin != null) __obj.updateDynamic("origin")(origin)
     if (removed != null) __obj.updateDynamic("removed")(removed)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction3(update))
     __obj.asInstanceOf[EditorChangeCancellable]
   }
 }

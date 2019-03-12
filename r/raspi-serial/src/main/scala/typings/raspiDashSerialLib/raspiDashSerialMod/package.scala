@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object raspiDashSerialMod {
   type Callback = js.Function0[scala.Unit]
-  type ErrorCallback = js.Function1[/* err */ nodeLib.Error | java.lang.String, scala.Unit]
+  type ErrorCallback = js.Function1[/* err */ stdLib.Error | java.lang.String, scala.Unit]
 }

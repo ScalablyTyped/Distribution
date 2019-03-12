@@ -18,7 +18,7 @@ class Visitor () extends js.Object {
   def onSurfaceDrawSkipped(surface: Surface[_]): scala.Unit = js.native
   def onSurfaceDrawStart(surface: Surface[_]): scala.Unit = js.native
   def onSurfaceGLContextChange(surface: Surface[_]): scala.Unit = js.native
-  def onSurfaceGLContextChange(surface: Surface[_], gl: reactLib.WebGLRenderingContext): scala.Unit = js.native
+  def onSurfaceGLContextChange(surface: Surface[_], gl: stdLib.WebGLRenderingContext): scala.Unit = js.native
   def onSurfaceMount(surface: Surface[_]): scala.Unit = js.native
   def onSurfaceUnmount(surface: Surface[_]): scala.Unit = js.native
 }

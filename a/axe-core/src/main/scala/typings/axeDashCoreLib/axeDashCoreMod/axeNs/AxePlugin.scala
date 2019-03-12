@@ -17,11 +17,11 @@ object AxePlugin {
   def apply(
     commands: js.Array[axeDashCoreLib.Anon_Args],
     id: java.lang.String,
-    run: js.Function1[/* repeated */ js.Any, js.Any],
-    cleanup: js.Function1[/* callback */ js.Function, scala.Unit] = null
+    run: /* repeated */ js.Any => js.Any,
+    cleanup: /* callback */ js.Function => scala.Unit = null
   ): AxePlugin = {
-    val __obj = js.Dynamic.literal(commands = commands, id = id, run = run)
-    if (cleanup != null) __obj.updateDynamic("cleanup")(cleanup)
+    val __obj = js.Dynamic.literal(commands = commands, id = id, run = js.Any.fromFunction1(run))
+    if (cleanup != null) __obj.updateDynamic("cleanup")(js.Any.fromFunction1(cleanup))
     __obj.asInstanceOf[AxePlugin]
   }
 }

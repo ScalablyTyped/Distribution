@@ -44,68 +44,23 @@ trait OrdersResource extends js.Object {
 object OrdersResource {
   @scala.inline
   def apply(
-    acknowledge: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrdersAcknowledgeResponse]
-    ],
-    advancetestorder: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrdersAdvanceTestOrderResponse]
-    ],
-    cancel: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrdersCancelResponse]
-    ],
-    cancellineitem: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrdersCancelLineItemResponse]
-    ],
-    createtestorder: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFieldsKeyMerchantId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrdersCreateTestOrderResponse]
-    ],
-    custombatch: js.Function1[
-      gapiDotClientDotContentLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrdersCustomBatchResponse]
-    ],
-    get: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Order]
-    ],
-    getbymerchantorderid: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFieldsKeyMerchantIdMerchantOrderId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrdersGetByMerchantOrderIdResponse]
-    ],
-    gettestordertemplate: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFieldsKeyMerchantIdOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrdersGetTestOrderTemplateResponse]
-    ],
-    list: js.Function1[
-      gapiDotClientDotContentLib.Anon_Acknowledged, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrdersListResponse]
-    ],
-    refund: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrdersRefundResponse]
-    ],
-    returnlineitem: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrdersReturnLineItemResponse]
-    ],
-    shiplineitems: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrdersShipLineItemsResponse]
-    ],
-    updatemerchantorderid: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrdersUpdateMerchantOrderIdResponse]
-    ],
-    updateshipment: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrdersUpdateShipmentResponse]
-    ]
+    acknowledge: gapiDotClientDotContentLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[OrdersAcknowledgeResponse],
+    advancetestorder: gapiDotClientDotContentLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[OrdersAdvanceTestOrderResponse],
+    cancel: gapiDotClientDotContentLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[OrdersCancelResponse],
+    cancellineitem: gapiDotClientDotContentLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[OrdersCancelLineItemResponse],
+    createtestorder: gapiDotClientDotContentLib.Anon_AltFieldsKeyMerchantId => gapiDotClientLib.gapiNs.clientNs.Request[OrdersCreateTestOrderResponse],
+    custombatch: gapiDotClientDotContentLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[OrdersCustomBatchResponse],
+    get: gapiDotClientDotContentLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Order],
+    getbymerchantorderid: gapiDotClientDotContentLib.Anon_AltFieldsKeyMerchantIdMerchantOrderId => gapiDotClientLib.gapiNs.clientNs.Request[OrdersGetByMerchantOrderIdResponse],
+    gettestordertemplate: gapiDotClientDotContentLib.Anon_AltFieldsKeyMerchantIdOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[OrdersGetTestOrderTemplateResponse],
+    list: gapiDotClientDotContentLib.Anon_Acknowledged => gapiDotClientLib.gapiNs.clientNs.Request[OrdersListResponse],
+    refund: gapiDotClientDotContentLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[OrdersRefundResponse],
+    returnlineitem: gapiDotClientDotContentLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[OrdersReturnLineItemResponse],
+    shiplineitems: gapiDotClientDotContentLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[OrdersShipLineItemsResponse],
+    updatemerchantorderid: gapiDotClientDotContentLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[OrdersUpdateMerchantOrderIdResponse],
+    updateshipment: gapiDotClientDotContentLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[OrdersUpdateShipmentResponse]
   ): OrdersResource = {
-    val __obj = js.Dynamic.literal(acknowledge = acknowledge, advancetestorder = advancetestorder, cancel = cancel, cancellineitem = cancellineitem, createtestorder = createtestorder, custombatch = custombatch, get = get, getbymerchantorderid = getbymerchantorderid, gettestordertemplate = gettestordertemplate, list = list, refund = refund, returnlineitem = returnlineitem, shiplineitems = shiplineitems, updatemerchantorderid = updatemerchantorderid, updateshipment = updateshipment)
+    val __obj = js.Dynamic.literal(acknowledge = js.Any.fromFunction1(acknowledge), advancetestorder = js.Any.fromFunction1(advancetestorder), cancel = js.Any.fromFunction1(cancel), cancellineitem = js.Any.fromFunction1(cancellineitem), createtestorder = js.Any.fromFunction1(createtestorder), custombatch = js.Any.fromFunction1(custombatch), get = js.Any.fromFunction1(get), getbymerchantorderid = js.Any.fromFunction1(getbymerchantorderid), gettestordertemplate = js.Any.fromFunction1(gettestordertemplate), list = js.Any.fromFunction1(list), refund = js.Any.fromFunction1(refund), returnlineitem = js.Any.fromFunction1(returnlineitem), shiplineitems = js.Any.fromFunction1(shiplineitems), updatemerchantorderid = js.Any.fromFunction1(updatemerchantorderid), updateshipment = js.Any.fromFunction1(updateshipment))
   
     __obj.asInstanceOf[OrdersResource]
   }

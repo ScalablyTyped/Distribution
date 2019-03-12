@@ -55,16 +55,16 @@ object JoinTableDataSource {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     joinType: java.lang.String,
     leftTableKey: java.lang.String,
     leftTableSource: DynamicMapLayer | DynamicDataLayer,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     rightTableKey: java.lang.String,
     rightTableSource: DynamicMapLayer | DynamicDataLayer,
     `type`: java.lang.String
   ): JoinTableDataSource = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, joinType = joinType, leftTableKey = leftTableKey, leftTableSource = leftTableSource.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable, rightTableKey = rightTableKey, rightTableSource = rightTableSource.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), joinType = joinType, leftTableKey = leftTableKey, leftTableSource = leftTableSource.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), rightTableKey = rightTableKey, rightTableSource = rightTableSource.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[JoinTableDataSource]
   }

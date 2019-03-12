@@ -13,12 +13,9 @@ trait ReportsResource extends js.Object {
 object ReportsResource {
   @scala.inline
   def apply(
-    batchGet: js.Function1[
-      gapiDotClientDotAnalyticsreportingLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GetReportsResponse]
-    ]
+    batchGet: gapiDotClientDotAnalyticsreportingLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[GetReportsResponse]
   ): ReportsResource = {
-    val __obj = js.Dynamic.literal(batchGet = batchGet)
+    val __obj = js.Dynamic.literal(batchGet = js.Any.fromFunction1(batchGet))
   
     __obj.asInstanceOf[ReportsResource]
   }

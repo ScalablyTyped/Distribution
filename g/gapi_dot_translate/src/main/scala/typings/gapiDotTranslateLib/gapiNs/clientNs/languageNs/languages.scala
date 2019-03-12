@@ -15,12 +15,9 @@ trait languages extends js.Object {
 object languages {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotTranslateLib.Anon_FieldsTarget, 
-      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotTranslateLib.GoogleApiTranslateLanguageListResponse]
-    ]
+    list: gapiDotTranslateLib.Anon_FieldsTarget => gapiLib.gapiNs.clientNs.HttpRequest[gapiDotTranslateLib.GoogleApiTranslateLanguageListResponse]
   ): languages = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[languages]
   }

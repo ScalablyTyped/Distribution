@@ -16,10 +16,10 @@ object Anon_Ad {
   @scala.inline
   def apply(
     adsManager: expoLib.expoMod.FacebookAdsNs.NativeAdsManager,
-    onAdLoaded: js.Function1[/* ad */ expoLib.expoMod.FacebookAdsNs.NativeAd, scala.Unit] = null
+    onAdLoaded: /* ad */ expoLib.expoMod.FacebookAdsNs.NativeAd => scala.Unit = null
   ): Anon_Ad = {
     val __obj = js.Dynamic.literal(adsManager = adsManager)
-    if (onAdLoaded != null) __obj.updateDynamic("onAdLoaded")(onAdLoaded)
+    if (onAdLoaded != null) __obj.updateDynamic("onAdLoaded")(js.Any.fromFunction1(onAdLoaded))
     __obj.asInstanceOf[Anon_Ad]
   }
 }

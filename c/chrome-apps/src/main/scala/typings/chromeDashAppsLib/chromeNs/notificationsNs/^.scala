@@ -68,13 +68,10 @@ object ^ extends js.Object {
     * @param options Contents of the notification.
     * @param [callback] Returns the notification id (either supplied or generated) that represents the created notification.
     */
+  def create(notificationId: java.lang.String, options: NotificationOptions): scala.Unit = js.native
   def create(
     notificationId: java.lang.String,
-    options: chromeDashAppsLib.chromeNs.notificationsNs.NotificationOptions
-  ): scala.Unit = js.native
-  def create(
-    notificationId: java.lang.String,
-    options: chromeDashAppsLib.chromeNs.notificationsNs.NotificationOptions,
+    options: NotificationOptions,
     callback: js.Function1[/* notificationId */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -83,9 +80,9 @@ object ^ extends js.Object {
     * @param options Contents of the notification.
     * @param [callback] Returns the notification id (either supplied or generated) that represents the created notification.
     */
-  def create(options: chromeDashAppsLib.chromeNs.notificationsNs.NotificationOptions): scala.Unit = js.native
+  def create(options: NotificationOptions): scala.Unit = js.native
   def create(
-    options: chromeDashAppsLib.chromeNs.notificationsNs.NotificationOptions,
+    options: NotificationOptions,
     callback: js.Function1[/* notificationId */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -129,13 +126,10 @@ object ^ extends js.Object {
     * @param options Contents of the notification to update to.
     * @param [callback] Called to indicate whether a matching notification existed.
     */
+  def update(notificationId: java.lang.String, options: stdLib.Partial[NotificationOptions]): scala.Unit = js.native
   def update(
     notificationId: java.lang.String,
-    options: stdLib.Partial[chromeDashAppsLib.chromeNs.notificationsNs.NotificationOptions]
-  ): scala.Unit = js.native
-  def update(
-    notificationId: java.lang.String,
-    options: stdLib.Partial[chromeDashAppsLib.chromeNs.notificationsNs.NotificationOptions],
+    options: stdLib.Partial[NotificationOptions],
     callback: js.Function1[/* wasUpdated */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
 }

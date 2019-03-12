@@ -1,0 +1,18 @@
+package typings
+package reactDashNativeDashLoadingDashSpinnerDashOverlayLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashNativeDashLoadingDashSpinnerDashOverlayLibComponents {
+  @scala.inline
+  def ReactDashNativeDashLoadingDashSpinnerDashOverlay: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashNativeDashLoadingDashSpinnerDashOverlayLib.reactDashNativeDashLoadingDashSpinnerDashOverlayMod.SpinnerProps
+  ] = js.constructorOf[reactDashNativeDashLoadingDashSpinnerDashOverlayLib.reactDashNativeDashLoadingDashSpinnerDashOverlayMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashNativeDashLoadingDashSpinnerDashOverlayLib.reactDashNativeDashLoadingDashSpinnerDashOverlayMod.SpinnerProps]]
+  @scala.inline
+  def SpinnerProps: reactDashNativeDashLoadingDashSpinnerDashOverlayLib.reactDashNativeDashLoadingDashSpinnerDashOverlayMod.SpinnerProps.type = reactDashNativeDashLoadingDashSpinnerDashOverlayLib.reactDashNativeDashLoadingDashSpinnerDashOverlayMod.SpinnerProps
+  type SpinnerProps = reactDashNativeDashLoadingDashSpinnerDashOverlayLib.reactDashNativeDashLoadingDashSpinnerDashOverlayMod.SpinnerProps
+}
+

@@ -52,23 +52,18 @@ trait ObjectInspectorModel extends XObjectInspectorModel {
 object ObjectInspectorModel {
   @scala.inline
   def apply(
-    HandlerFactories: activexDashInteropLib.SafeArray[_],
+    HandlerFactories: stdLib.SafeArray[_],
     HasHelpSection: scala.Boolean,
     IsReadOnly: scala.Boolean,
     MaxHelpTextLines: scala.Double,
     MinHelpTextLines: scala.Double,
-    createDefault: js.Function0[scala.Unit],
-    createWithHandlerFactories: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    createWithHandlerFactoriesAndHelpSection: js.Function3[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ],
-    describeCategories: js.Function0[activexDashInteropLib.SafeArray[PropertyCategoryDescriptor]],
-    getPropertyOrderIndex: js.Function1[java.lang.String, scala.Double]
+    createDefault: () => scala.Unit,
+    createWithHandlerFactories: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    createWithHandlerFactoriesAndHelpSection: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Double, scala.Double) => scala.Unit,
+    describeCategories: () => stdLib.SafeArray[PropertyCategoryDescriptor],
+    getPropertyOrderIndex: java.lang.String => scala.Double
   ): ObjectInspectorModel = {
-    val __obj = js.Dynamic.literal(HandlerFactories = HandlerFactories, HasHelpSection = HasHelpSection, IsReadOnly = IsReadOnly, MaxHelpTextLines = MaxHelpTextLines, MinHelpTextLines = MinHelpTextLines, createDefault = createDefault, createWithHandlerFactories = createWithHandlerFactories, createWithHandlerFactoriesAndHelpSection = createWithHandlerFactoriesAndHelpSection, describeCategories = describeCategories, getPropertyOrderIndex = getPropertyOrderIndex)
+    val __obj = js.Dynamic.literal(HandlerFactories = HandlerFactories, HasHelpSection = HasHelpSection, IsReadOnly = IsReadOnly, MaxHelpTextLines = MaxHelpTextLines, MinHelpTextLines = MinHelpTextLines, createDefault = js.Any.fromFunction0(createDefault), createWithHandlerFactories = js.Any.fromFunction1(createWithHandlerFactories), createWithHandlerFactoriesAndHelpSection = js.Any.fromFunction3(createWithHandlerFactoriesAndHelpSection), describeCategories = js.Any.fromFunction0(describeCategories), getPropertyOrderIndex = js.Any.fromFunction1(getPropertyOrderIndex))
   
     __obj.asInstanceOf[ObjectInspectorModel]
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Hyperlink protected () extends js.Object {
   var Address: java.lang.String = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Creator: XlCreator = js.native
   var EmailSubject: java.lang.String = js.native
   var `Excel.Hyperlink_typekey`: Hyperlink = js.native
@@ -18,7 +18,7 @@ class Hyperlink protected () extends js.Object {
   @JSName("Range")
   val Range_Original: Range = js.native
   var ScreenTip: java.lang.String = js.native
-  val Shape: Shape = js.native
+  val Shape: activexDashExcelLib.ExcelNs.Shape = js.native
   var SubAddress: java.lang.String = js.native
   var TextToDisplay: java.lang.String = js.native
   val Type: scala.Double = js.native
@@ -59,8 +59,8 @@ class Hyperlink protected () extends js.Object {
     Method: activexDashOfficeLib.OfficeNs.MsoExtraInfoMethod,
     HeaderInfo: java.lang.String
   ): scala.Unit = js.native
-  def Range(Address: java.lang.String): Range = js.native
-  def Range(RowIndex: scala.Double): Range = js.native
-  def Range(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native
+  def Range(Address: java.lang.String): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(RowIndex: scala.Double): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(RowIndex: scala.Double, ColumnIndex: scala.Double): activexDashExcelLib.ExcelNs.Range = js.native
 }
 

@@ -20,12 +20,12 @@ trait XAlterQuery
 object XAlterQuery {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    alterCommand: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    alterCommand: (java.lang.String, scala.Boolean) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAlterQuery = {
-    val __obj = js.Dynamic.literal(acquire = acquire, alterCommand = alterCommand, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), alterCommand = js.Any.fromFunction2(alterCommand), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAlterQuery]
   }

@@ -27,18 +27,18 @@ object TransitionConfig {
   @scala.inline
   def apply(
     containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
-    headerLeftInterpolator: js.Function1[/* props */ NavigationSceneRendererProps, _] = null,
-    headerRightInterpolator: js.Function1[/* props */ NavigationSceneRendererProps, _] = null,
-    headerTitleInterpolator: js.Function1[/* props */ NavigationSceneRendererProps, _] = null,
-    screenInterpolator: js.Function1[/* props */ NavigationSceneRendererProps, _] = null,
+    headerLeftInterpolator: /* props */ NavigationSceneRendererProps => _ = null,
+    headerRightInterpolator: /* props */ NavigationSceneRendererProps => _ = null,
+    headerTitleInterpolator: /* props */ NavigationSceneRendererProps => _ = null,
+    screenInterpolator: /* props */ NavigationSceneRendererProps => _ = null,
     transitionSpec: NavigationTransitionSpec = null
   ): TransitionConfig = {
     val __obj = js.Dynamic.literal()
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (headerLeftInterpolator != null) __obj.updateDynamic("headerLeftInterpolator")(headerLeftInterpolator)
-    if (headerRightInterpolator != null) __obj.updateDynamic("headerRightInterpolator")(headerRightInterpolator)
-    if (headerTitleInterpolator != null) __obj.updateDynamic("headerTitleInterpolator")(headerTitleInterpolator)
-    if (screenInterpolator != null) __obj.updateDynamic("screenInterpolator")(screenInterpolator)
+    if (headerLeftInterpolator != null) __obj.updateDynamic("headerLeftInterpolator")(js.Any.fromFunction1(headerLeftInterpolator))
+    if (headerRightInterpolator != null) __obj.updateDynamic("headerRightInterpolator")(js.Any.fromFunction1(headerRightInterpolator))
+    if (headerTitleInterpolator != null) __obj.updateDynamic("headerTitleInterpolator")(js.Any.fromFunction1(headerTitleInterpolator))
+    if (screenInterpolator != null) __obj.updateDynamic("screenInterpolator")(js.Any.fromFunction1(screenInterpolator))
     if (transitionSpec != null) __obj.updateDynamic("transitionSpec")(transitionSpec)
     __obj.asInstanceOf[TransitionConfig]
   }

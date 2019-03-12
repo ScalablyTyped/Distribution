@@ -13,28 +13,28 @@ trait ASPxClientFileManagerToolbarItem extends ASPxClientMenuItem
 object ASPxClientFileManagerToolbarItem {
   @scala.inline
   def apply(
-    GetChecked: js.Function0[scala.Boolean],
-    GetEnabled: js.Function0[scala.Boolean],
-    GetImageUrl: js.Function0[java.lang.String],
-    GetItem: js.Function1[scala.Double, ASPxClientMenuItem],
-    GetItemByName: js.Function1[java.lang.String, ASPxClientMenuItem],
-    GetItemCount: js.Function0[scala.Double],
-    GetNavigateUrl: js.Function0[java.lang.String],
-    GetText: js.Function0[java.lang.String],
-    GetVisible: js.Function0[scala.Boolean],
-    SetChecked: js.Function1[scala.Boolean, scala.Unit],
-    SetEnabled: js.Function1[scala.Boolean, scala.Unit],
-    SetImageUrl: js.Function1[java.lang.String, scala.Unit],
-    SetNavigateUrl: js.Function1[java.lang.String, scala.Unit],
-    SetText: js.Function1[java.lang.String, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    GetChecked: () => scala.Boolean,
+    GetEnabled: () => scala.Boolean,
+    GetImageUrl: () => java.lang.String,
+    GetItem: scala.Double => ASPxClientMenuItem,
+    GetItemByName: java.lang.String => ASPxClientMenuItem,
+    GetItemCount: () => scala.Double,
+    GetNavigateUrl: () => java.lang.String,
+    GetText: () => java.lang.String,
+    GetVisible: () => scala.Boolean,
+    SetChecked: scala.Boolean => scala.Unit,
+    SetEnabled: scala.Boolean => scala.Unit,
+    SetImageUrl: java.lang.String => scala.Unit,
+    SetNavigateUrl: java.lang.String => scala.Unit,
+    SetText: java.lang.String => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
     index: scala.Double,
     indexPath: java.lang.String,
     menu: ASPxClientMenuBase,
     name: java.lang.String,
     parent: ASPxClientMenuItem
   ): ASPxClientFileManagerToolbarItem = {
-    val __obj = js.Dynamic.literal(GetChecked = GetChecked, GetEnabled = GetEnabled, GetImageUrl = GetImageUrl, GetItem = GetItem, GetItemByName = GetItemByName, GetItemCount = GetItemCount, GetNavigateUrl = GetNavigateUrl, GetText = GetText, GetVisible = GetVisible, SetChecked = SetChecked, SetEnabled = SetEnabled, SetImageUrl = SetImageUrl, SetNavigateUrl = SetNavigateUrl, SetText = SetText, SetVisible = SetVisible, index = index, indexPath = indexPath, menu = menu, name = name, parent = parent)
+    val __obj = js.Dynamic.literal(GetChecked = js.Any.fromFunction0(GetChecked), GetEnabled = js.Any.fromFunction0(GetEnabled), GetImageUrl = js.Any.fromFunction0(GetImageUrl), GetItem = js.Any.fromFunction1(GetItem), GetItemByName = js.Any.fromFunction1(GetItemByName), GetItemCount = js.Any.fromFunction0(GetItemCount), GetNavigateUrl = js.Any.fromFunction0(GetNavigateUrl), GetText = js.Any.fromFunction0(GetText), GetVisible = js.Any.fromFunction0(GetVisible), SetChecked = js.Any.fromFunction1(SetChecked), SetEnabled = js.Any.fromFunction1(SetEnabled), SetImageUrl = js.Any.fromFunction1(SetImageUrl), SetNavigateUrl = js.Any.fromFunction1(SetNavigateUrl), SetText = js.Any.fromFunction1(SetText), SetVisible = js.Any.fromFunction1(SetVisible), index = index, indexPath = indexPath, menu = menu, name = name, parent = parent)
   
     __obj.asInstanceOf[ASPxClientFileManagerToolbarItem]
   }

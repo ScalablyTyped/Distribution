@@ -16,13 +16,13 @@ trait OriginatorIdentifierOrKey extends js.Object {
 object OriginatorIdentifierOrKey {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    fromSchema: js.Any => scala.Unit,
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     variant: scala.Double,
     value: js.Any = null
   ): OriginatorIdentifierOrKey = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema, variant = variant)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), variant = variant)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[OriginatorIdentifierOrKey]
   }

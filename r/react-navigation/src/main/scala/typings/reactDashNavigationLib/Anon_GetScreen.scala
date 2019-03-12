@@ -12,8 +12,8 @@ trait Anon_GetScreen
 
 object Anon_GetScreen {
   @scala.inline
-  def apply(getScreen: js.Function0[reactDashNavigationLib.reactDashNavigationMod.NavigationComponent]): Anon_GetScreen = {
-    val __obj = js.Dynamic.literal(getScreen = getScreen)
+  def apply(getScreen: () => reactDashNavigationLib.reactDashNavigationMod.NavigationComponent): Anon_GetScreen = {
+    val __obj = js.Dynamic.literal(getScreen = js.Any.fromFunction0(getScreen))
   
     __obj.asInstanceOf[Anon_GetScreen]
   }

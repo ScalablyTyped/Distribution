@@ -12,12 +12,9 @@ trait Anon_Ctor extends js.Object {
 object Anon_Ctor {
   @scala.inline
   def apply(
-    ctor: js.Function1[
-      pumpifyLib.pumpifyMod.PumpifyFactoryOptions, 
-      /* import warning: ImportType.apply Failed type conversion: typeof Pumpify */ js.Any
-    ]
+    ctor: pumpifyLib.pumpifyMod.PumpifyFactoryOptions => /* import warning: ImportType.apply Failed type conversion: typeof Pumpify */ js.Any
   ): Anon_Ctor = {
-    val __obj = js.Dynamic.literal(ctor = ctor)
+    val __obj = js.Dynamic.literal(ctor = js.Any.fromFunction1(ctor))
   
     __obj.asInstanceOf[Anon_Ctor]
   }

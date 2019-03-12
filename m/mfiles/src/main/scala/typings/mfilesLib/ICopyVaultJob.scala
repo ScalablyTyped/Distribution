@@ -33,7 +33,7 @@ trait ICopyVaultJob extends js.Object {
 object ICopyVaultJob {
   @scala.inline
   def apply(
-    Clone: js.Function0[ICopyVaultJob],
+    Clone: () => ICopyVaultJob,
     CopyflagAllData: scala.Boolean,
     CopyflagAllExceptData: scala.Boolean,
     CopyflagApplications: scala.Boolean,
@@ -56,7 +56,7 @@ object ICopyVaultJob {
     VaultGUID: java.lang.String,
     VaultProperties: IVaultProperties
   ): ICopyVaultJob = {
-    val __obj = js.Dynamic.literal(Clone = Clone, CopyflagAllData = CopyflagAllData, CopyflagAllExceptData = CopyflagAllExceptData, CopyflagApplications = CopyflagApplications, CopyflagDataSets = CopyflagDataSets, CopyflagDocumentProfiles = CopyflagDocumentProfiles, CopyflagDocuments = CopyflagDocuments, CopyflagEventLog = CopyflagEventLog, CopyflagExternalLocations = CopyflagExternalLocations, CopyflagFiles = CopyflagFiles, CopyflagInternalEventHandlers = CopyflagInternalEventHandlers, CopyflagLanguagesAndTranslations = CopyflagLanguagesAndTranslations, CopyflagPropertyDefinitions = CopyflagPropertyDefinitions, CopyflagScheduledExportAndImportJobs = CopyflagScheduledExportAndImportJobs, CopyflagUseTargetGUID = CopyflagUseTargetGUID, CopyflagUserAccounts = CopyflagUserAccounts, CopyflagValueListContent = CopyflagValueListContent, CopyflagValueLists = CopyflagValueLists, CopyflagViews = CopyflagViews, CopyflagWorkflows = CopyflagWorkflows, VaultGUID = VaultGUID, VaultProperties = VaultProperties)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), CopyflagAllData = CopyflagAllData, CopyflagAllExceptData = CopyflagAllExceptData, CopyflagApplications = CopyflagApplications, CopyflagDataSets = CopyflagDataSets, CopyflagDocumentProfiles = CopyflagDocumentProfiles, CopyflagDocuments = CopyflagDocuments, CopyflagEventLog = CopyflagEventLog, CopyflagExternalLocations = CopyflagExternalLocations, CopyflagFiles = CopyflagFiles, CopyflagInternalEventHandlers = CopyflagInternalEventHandlers, CopyflagLanguagesAndTranslations = CopyflagLanguagesAndTranslations, CopyflagPropertyDefinitions = CopyflagPropertyDefinitions, CopyflagScheduledExportAndImportJobs = CopyflagScheduledExportAndImportJobs, CopyflagUseTargetGUID = CopyflagUseTargetGUID, CopyflagUserAccounts = CopyflagUserAccounts, CopyflagValueListContent = CopyflagValueListContent, CopyflagValueLists = CopyflagValueLists, CopyflagViews = CopyflagViews, CopyflagWorkflows = CopyflagWorkflows, VaultGUID = VaultGUID, VaultProperties = VaultProperties)
   
     __obj.asInstanceOf[ICopyVaultJob]
   }

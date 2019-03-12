@@ -713,42 +713,27 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
 object Options {
   @scala.inline
   def apply[TRow /* <: js.Object */](
-    afterColumnFilter: js.Function2[/* filterConds */ js.Array[FilterData[_]], /* result */ js.Array[TRow], scala.Unit] = null,
-    afterDeleteRow: js.Function2[
-      /* rowKeys */ js.Array[scala.Double | java.lang.String], 
-      /* rows */ js.Array[TRow], 
-      scala.Unit
-    ] = null,
-    afterInsertRow: js.Function1[/* row */ TRow, scala.Unit] = null,
-    afterSearch: js.Function2[/* search */ java.lang.String, /* result */ js.Array[TRow], scala.Unit] = null,
-    afterTableComplete: js.Function0[scala.Unit] = null,
+    afterColumnFilter: (/* filterConds */ js.Array[FilterData[_]], /* result */ js.Array[TRow]) => scala.Unit = null,
+    afterDeleteRow: (/* rowKeys */ js.Array[scala.Double | java.lang.String], /* rows */ js.Array[TRow]) => scala.Unit = null,
+    afterInsertRow: /* row */ TRow => scala.Unit = null,
+    afterSearch: (/* search */ java.lang.String, /* result */ js.Array[TRow]) => scala.Unit = null,
+    afterTableComplete: () => scala.Unit = null,
     alwaysShowAllBtns: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeShowError: js.Function3[
-      /* type */ EditValidatorType, 
-      /* msg */ java.lang.String, 
-      /* title */ java.lang.String, 
-      scala.Boolean | scala.Unit
-    ] = null,
-    btnGroup: js.Function1[/* props */ ButtonGroupProps, reactLib.reactMod.ReactNs.ReactElement[_]] = null,
+    beforeShowError: (/* type */ EditValidatorType, /* msg */ java.lang.String, /* title */ java.lang.String) => scala.Boolean | scala.Unit = null,
+    btnGroup: /* props */ ButtonGroupProps => reactLib.reactMod.ReactNs.ReactElement[_] = null,
     clearSearch: js.UndefOr[scala.Boolean] = js.undefined,
-    clearSearchBtn: js.Function1[
-      /* onClick */ js.Function1[
-        /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-        scala.Unit
-      ], 
-      reactLib.reactMod.ReactNs.ReactElement[_]
-    ] = null,
+    clearSearchBtn: /* onClick */ js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] => reactLib.reactMod.ReactNs.ReactElement[_] = null,
     closeText: java.lang.String = null,
     defaultSearch: java.lang.String = null,
     defaultSortName: java.lang.String = null,
     defaultSortOrder: SortOrder = null,
-    deleteBtn: js.Function1[
-      /* onClick */ js.Function1[
-        /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-        scala.Unit
-      ], 
-      reactLib.reactMod.ReactNs.ReactElement[_]
-    ] = null,
+    deleteBtn: /* onClick */ js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] => reactLib.reactMod.ReactNs.ReactElement[_] = null,
     deleteText: java.lang.String = null,
     expandAll: js.UndefOr[scala.Boolean] = js.undefined,
     expandBodyClass: java.lang.String | (js.Function3[
@@ -761,59 +746,29 @@ object Options {
     expandParentClass: java.lang.String | (js.Function2[/* row */ TRow, /* rowIndex */ scala.Double, java.lang.String]) = null,
     expandRowBgColor: java.lang.String = null,
     expanding: js.Array[scala.Double | java.lang.String] = null,
-    exportCSVBtn: js.Function1[
-      /* onClick */ js.Function1[
-        /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-        scala.Unit
-      ], 
-      reactLib.reactMod.ReactNs.ReactElement[_]
-    ] = null,
+    exportCSVBtn: /* onClick */ js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] => reactLib.reactMod.ReactNs.ReactElement[_] = null,
     exportCSVSeparator: java.lang.String = null,
     exportCSVText: java.lang.String = null,
     firstPage: js.Any = null,
     firstPageTitle: java.lang.String = null,
-    handleConfirmDeleteRow: js.Function2[
-      /* next */ js.Function0[scala.Unit], 
-      /* rowKeys */ js.Array[scala.Double | java.lang.String], 
-      scala.Unit
-    ] = null,
+    handleConfirmDeleteRow: (/* next */ js.Function0[scala.Unit], /* rowKeys */ js.Array[scala.Double | java.lang.String]) => scala.Unit = null,
     hidePageListOnlyOnePage: js.UndefOr[scala.Boolean] = js.undefined,
     hideSizePerPage: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreEditable: js.UndefOr[scala.Boolean] = js.undefined,
-    insertBtn: js.Function1[
-      /* onClick */ js.Function1[
-        /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-        scala.Unit
-      ], 
-      reactLib.reactMod.ReactNs.ReactElement[_]
-    ] = null,
+    insertBtn: /* onClick */ js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] => reactLib.reactMod.ReactNs.ReactElement[_] = null,
     insertFailIndicator: java.lang.String = null,
-    insertModal: js.Function5[
-      /* onModalClose */ js.Function0[scala.Unit], 
-      /* onSave */ js.Function1[/* row */ TRow, scala.Unit], 
-      /* columns */ js.Array[InsertModalColumnDescription[TRow]], 
-      /* validateState */ org.scalablytyped.runtime.StringDictionary[java.lang.String], 
-      /* ignoreEditable */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
-    ] = null,
-    insertModalBody: js.Function3[
-      /* columns */ js.Array[InsertModalColumnDescription[TRow]], 
-      /* validateState */ org.scalablytyped.runtime.StringDictionary[java.lang.String], 
-      /* ignoreEditable */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactElement[(reactLib.reactMod.Component[_, js.Object, _]) with ModalBodyInterface[TRow]]
-    ] = null,
-    insertModalFooter: js.Function2[
-      /* closeModal */ js.Function0[scala.Unit], 
-      /* save */ js.Function0[scala.Unit], 
-      reactLib.reactMod.ReactNs.ReactElement[_]
-    ] = null,
-    insertModalHeader: js.Function2[
-      /* closeModal */ js.Function0[scala.Unit], 
-      /* save */ js.Function0[scala.Unit], 
-      reactLib.reactMod.ReactNs.ReactElement[_]
-    ] = null,
+    insertModal: (/* onModalClose */ js.Function0[scala.Unit], /* onSave */ js.Function1[/* row */ TRow, scala.Unit], /* columns */ js.Array[InsertModalColumnDescription[TRow]], /* validateState */ org.scalablytyped.runtime.StringDictionary[java.lang.String], /* ignoreEditable */ scala.Boolean) => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    insertModalBody: (/* columns */ js.Array[InsertModalColumnDescription[TRow]], /* validateState */ org.scalablytyped.runtime.StringDictionary[java.lang.String], /* ignoreEditable */ scala.Boolean) => reactLib.reactMod.ReactNs.ReactElement[(reactLib.reactMod.Component[_, js.Object, _]) with ModalBodyInterface[TRow]] = null,
+    insertModalFooter: (/* closeModal */ js.Function0[scala.Unit], /* save */ js.Function0[scala.Unit]) => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    insertModalHeader: (/* closeModal */ js.Function0[scala.Unit], /* save */ js.Function0[scala.Unit]) => reactLib.reactMod.ReactNs.ReactElement[_] = null,
     insertText: java.lang.String = null,
-    isValidKey: js.Function1[/* key */ scala.Double | java.lang.String, java.lang.String | scala.Unit] = null,
+    isValidKey: /* key */ scala.Double | java.lang.String => java.lang.String | scala.Unit = null,
     keepSizePerPageState: js.UndefOr[scala.Boolean] = js.undefined,
     lastPage: js.Any = null,
     lastPageTitle: java.lang.String = null,
@@ -821,63 +776,21 @@ object Options {
     nextPageTitle: java.lang.String = null,
     noAutoBOM: js.UndefOr[scala.Boolean] = js.undefined,
     noDataText: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    onAddRow: js.Function3[
-      /* row */ TRow, 
-      /* colInfo */ js.Array[ColumnDescription[TRow]], 
-      /* errorCallback */ js.Function1[/* message */ java.lang.String, scala.Unit], 
-      java.lang.String | scala.Boolean
-    ] = null,
-    onCellEdit: js.Function3[
-      /* row */ TRow, 
-      /* fieldName */ java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: TRow[string & keyof TRow] */ /* value */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: TRow[string & keyof TRow] */ js.Any
-    ] = null,
-    onDeleteRow: js.Function2[
-      /* rowKeys */ js.Array[scala.Double | java.lang.String], 
-      /* rows */ js.Array[TRow], 
-      scala.Unit
-    ] = null,
-    onExpand: js.Function3[
-      /* rowKey */ scala.Double | java.lang.String, 
-      /* isExpand */ scala.Boolean, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
-    onExportToCSV: js.Function0[js.Array[TRow]] = null,
-    onFilterChange: js.Function1[/* filterObject */ FilterData[_], scala.Unit] = null,
-    onMouseEnter: js.Function0[scala.Unit] = null,
-    onMouseLeave: js.Function0[scala.Unit] = null,
-    onPageChange: js.Function2[/* page */ scala.Double, /* sizePerPage */ scala.Double, scala.Unit] = null,
-    onRowClick: js.Function4[
-      /* row */ TRow, 
-      /* columnIndex */ scala.Double, 
-      /* rowIndex */ scala.Double, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
-    onRowDoubleClick: js.Function2[
-      /* row */ TRow, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
-    onRowMouseOut: js.Function2[
-      /* row */ TRow, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
-    onRowMouseOver: js.Function2[
-      /* row */ TRow, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
-    onSearchChange: js.Function3[
-      /* searchText */ java.lang.String, 
-      /* colInfos */ js.Array[ColumnDescription[TRow]], 
-      /* multiColumnSearch */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    onSizePerPageList: js.Function1[/* sizePerPage */ scala.Double, scala.Unit] = null,
+    onAddRow: (/* row */ TRow, /* colInfo */ js.Array[ColumnDescription[TRow]], /* errorCallback */ js.Function1[/* message */ java.lang.String, scala.Unit]) => java.lang.String | scala.Boolean = null,
+    onCellEdit: (/* row */ TRow, /* fieldName */ java.lang.String, /* import warning: ImportType.apply Failed type conversion: TRow[string & keyof TRow] */ /* value */ js.Any) => /* import warning: ImportType.apply Failed type conversion: TRow[string & keyof TRow] */ js.Any = null,
+    onDeleteRow: (/* rowKeys */ js.Array[scala.Double | java.lang.String], /* rows */ js.Array[TRow]) => scala.Unit = null,
+    onExpand: (/* rowKey */ scala.Double | java.lang.String, /* isExpand */ scala.Boolean, /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onExportToCSV: () => js.Array[TRow] = null,
+    onFilterChange: /* filterObject */ FilterData[_] => scala.Unit = null,
+    onMouseEnter: () => scala.Unit = null,
+    onMouseLeave: () => scala.Unit = null,
+    onPageChange: (/* page */ scala.Double, /* sizePerPage */ scala.Double) => scala.Unit = null,
+    onRowClick: (/* row */ TRow, /* columnIndex */ scala.Double, /* rowIndex */ scala.Double, /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onRowDoubleClick: (/* row */ TRow, /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onRowMouseOut: (/* row */ TRow, /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onRowMouseOver: (/* row */ TRow, /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onSearchChange: (/* searchText */ java.lang.String, /* colInfos */ js.Array[ColumnDescription[TRow]], /* multiColumnSearch */ scala.Boolean) => scala.Unit = null,
+    onSizePerPageList: /* sizePerPage */ scala.Double => scala.Unit = null,
     onSortChange: (js.Function2[/* sortName */ java.lang.String, /* sortOrder */ SortOrder, scala.Unit]) | (js.Function2[
       /* sortName */ js.Array[java.lang.String], 
       /* sortOrder */ js.Array[SortOrder], 
@@ -886,7 +799,7 @@ object Options {
     onlyOneExpanding: js.UndefOr[scala.Boolean] = js.undefined,
     page: scala.Int | scala.Double = null,
     pageStartIndex: scala.Int | scala.Double = null,
-    paginationPanel: js.Function1[/* props */ PaginationPanelProps, reactLib.reactMod.ReactNs.ReactElement[_]] = null,
+    paginationPanel: /* props */ PaginationPanelProps => reactLib.reactMod.ReactNs.ReactElement[_] = null,
     paginationPosition: PaginationPostion = null,
     paginationShowsTotal: scala.Boolean | (js.Function3[
       /* start */ scala.Double, 
@@ -900,45 +813,38 @@ object Options {
     printToolBar: js.UndefOr[scala.Boolean] = js.undefined,
     saveText: java.lang.String = null,
     searchDelayTime: scala.Int | scala.Double = null,
-    searchField: js.Function1[
-      /* props */ SearchFieldProps, 
-      reactLib.reactMod.ReactNs.ReactElement[(reactLib.reactMod.Component[_, js.Object, _]) with SearchFieldInterface]
-    ] = null,
-    searchPanel: js.Function1[/* props */ SearchPanelProps, reactLib.reactMod.ReactNs.ReactElement[_]] = null,
-    showSelectedOnlyBtn: js.Function2[
-      /* onClick */ js.Function1[
-        /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-        scala.Unit
-      ], 
-      /* showSelected */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
-    ] = null,
+    searchField: /* props */ SearchFieldProps => reactLib.reactMod.ReactNs.ReactElement[(reactLib.reactMod.Component[_, js.Object, _]) with SearchFieldInterface] = null,
+    searchPanel: /* props */ SearchPanelProps => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    showSelectedOnlyBtn: (/* onClick */ js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ], /* showSelected */ scala.Boolean) => reactLib.reactMod.ReactNs.ReactElement[_] = null,
     sizePerPage: scala.Int | scala.Double = null,
-    sizePerPageDropDown: js.Function1[/* props */ SizePerPageFunctionProps, reactLib.reactMod.ReactNs.ReactElement[_]] = null,
+    sizePerPageDropDown: /* props */ SizePerPageFunctionProps => reactLib.reactMod.ReactNs.ReactElement[_] = null,
     sizePerPageList: SizePerPageList = null,
     sortIndicator: js.UndefOr[scala.Boolean] = js.undefined,
     sortName: java.lang.String = null,
     sortOrder: SortOrder | js.Array[SortOrder] = null,
-    toolBar: js.Function1[/* props */ ToolBarProps, reactLib.reactMod.ReactNs.ReactElement[_]] = null,
+    toolBar: /* props */ ToolBarProps => reactLib.reactMod.ReactNs.ReactElement[_] = null,
     withFirstAndLast: js.UndefOr[scala.Boolean] = js.undefined,
     withoutNoDataText: js.UndefOr[scala.Boolean] = js.undefined
   ): Options[TRow] = {
     val __obj = js.Dynamic.literal()
-    if (afterColumnFilter != null) __obj.updateDynamic("afterColumnFilter")(afterColumnFilter)
-    if (afterDeleteRow != null) __obj.updateDynamic("afterDeleteRow")(afterDeleteRow)
-    if (afterInsertRow != null) __obj.updateDynamic("afterInsertRow")(afterInsertRow)
-    if (afterSearch != null) __obj.updateDynamic("afterSearch")(afterSearch)
-    if (afterTableComplete != null) __obj.updateDynamic("afterTableComplete")(afterTableComplete)
+    if (afterColumnFilter != null) __obj.updateDynamic("afterColumnFilter")(js.Any.fromFunction2(afterColumnFilter))
+    if (afterDeleteRow != null) __obj.updateDynamic("afterDeleteRow")(js.Any.fromFunction2(afterDeleteRow))
+    if (afterInsertRow != null) __obj.updateDynamic("afterInsertRow")(js.Any.fromFunction1(afterInsertRow))
+    if (afterSearch != null) __obj.updateDynamic("afterSearch")(js.Any.fromFunction2(afterSearch))
+    if (afterTableComplete != null) __obj.updateDynamic("afterTableComplete")(js.Any.fromFunction0(afterTableComplete))
     if (!js.isUndefined(alwaysShowAllBtns)) __obj.updateDynamic("alwaysShowAllBtns")(alwaysShowAllBtns)
-    if (beforeShowError != null) __obj.updateDynamic("beforeShowError")(beforeShowError)
-    if (btnGroup != null) __obj.updateDynamic("btnGroup")(btnGroup)
+    if (beforeShowError != null) __obj.updateDynamic("beforeShowError")(js.Any.fromFunction3(beforeShowError))
+    if (btnGroup != null) __obj.updateDynamic("btnGroup")(js.Any.fromFunction1(btnGroup))
     if (!js.isUndefined(clearSearch)) __obj.updateDynamic("clearSearch")(clearSearch)
-    if (clearSearchBtn != null) __obj.updateDynamic("clearSearchBtn")(clearSearchBtn)
+    if (clearSearchBtn != null) __obj.updateDynamic("clearSearchBtn")(js.Any.fromFunction1(clearSearchBtn))
     if (closeText != null) __obj.updateDynamic("closeText")(closeText)
     if (defaultSearch != null) __obj.updateDynamic("defaultSearch")(defaultSearch)
     if (defaultSortName != null) __obj.updateDynamic("defaultSortName")(defaultSortName)
     if (defaultSortOrder != null) __obj.updateDynamic("defaultSortOrder")(defaultSortOrder)
-    if (deleteBtn != null) __obj.updateDynamic("deleteBtn")(deleteBtn)
+    if (deleteBtn != null) __obj.updateDynamic("deleteBtn")(js.Any.fromFunction1(deleteBtn))
     if (deleteText != null) __obj.updateDynamic("deleteText")(deleteText)
     if (!js.isUndefined(expandAll)) __obj.updateDynamic("expandAll")(expandAll)
     if (expandBodyClass != null) __obj.updateDynamic("expandBodyClass")(expandBodyClass.asInstanceOf[js.Any])
@@ -946,23 +852,23 @@ object Options {
     if (expandParentClass != null) __obj.updateDynamic("expandParentClass")(expandParentClass.asInstanceOf[js.Any])
     if (expandRowBgColor != null) __obj.updateDynamic("expandRowBgColor")(expandRowBgColor)
     if (expanding != null) __obj.updateDynamic("expanding")(expanding)
-    if (exportCSVBtn != null) __obj.updateDynamic("exportCSVBtn")(exportCSVBtn)
+    if (exportCSVBtn != null) __obj.updateDynamic("exportCSVBtn")(js.Any.fromFunction1(exportCSVBtn))
     if (exportCSVSeparator != null) __obj.updateDynamic("exportCSVSeparator")(exportCSVSeparator)
     if (exportCSVText != null) __obj.updateDynamic("exportCSVText")(exportCSVText)
     if (firstPage != null) __obj.updateDynamic("firstPage")(firstPage)
     if (firstPageTitle != null) __obj.updateDynamic("firstPageTitle")(firstPageTitle)
-    if (handleConfirmDeleteRow != null) __obj.updateDynamic("handleConfirmDeleteRow")(handleConfirmDeleteRow)
+    if (handleConfirmDeleteRow != null) __obj.updateDynamic("handleConfirmDeleteRow")(js.Any.fromFunction2(handleConfirmDeleteRow))
     if (!js.isUndefined(hidePageListOnlyOnePage)) __obj.updateDynamic("hidePageListOnlyOnePage")(hidePageListOnlyOnePage)
     if (!js.isUndefined(hideSizePerPage)) __obj.updateDynamic("hideSizePerPage")(hideSizePerPage)
     if (!js.isUndefined(ignoreEditable)) __obj.updateDynamic("ignoreEditable")(ignoreEditable)
-    if (insertBtn != null) __obj.updateDynamic("insertBtn")(insertBtn)
+    if (insertBtn != null) __obj.updateDynamic("insertBtn")(js.Any.fromFunction1(insertBtn))
     if (insertFailIndicator != null) __obj.updateDynamic("insertFailIndicator")(insertFailIndicator)
-    if (insertModal != null) __obj.updateDynamic("insertModal")(insertModal)
-    if (insertModalBody != null) __obj.updateDynamic("insertModalBody")(insertModalBody)
-    if (insertModalFooter != null) __obj.updateDynamic("insertModalFooter")(insertModalFooter)
-    if (insertModalHeader != null) __obj.updateDynamic("insertModalHeader")(insertModalHeader)
+    if (insertModal != null) __obj.updateDynamic("insertModal")(js.Any.fromFunction5(insertModal))
+    if (insertModalBody != null) __obj.updateDynamic("insertModalBody")(js.Any.fromFunction3(insertModalBody))
+    if (insertModalFooter != null) __obj.updateDynamic("insertModalFooter")(js.Any.fromFunction2(insertModalFooter))
+    if (insertModalHeader != null) __obj.updateDynamic("insertModalHeader")(js.Any.fromFunction2(insertModalHeader))
     if (insertText != null) __obj.updateDynamic("insertText")(insertText)
-    if (isValidKey != null) __obj.updateDynamic("isValidKey")(isValidKey)
+    if (isValidKey != null) __obj.updateDynamic("isValidKey")(js.Any.fromFunction1(isValidKey))
     if (!js.isUndefined(keepSizePerPageState)) __obj.updateDynamic("keepSizePerPageState")(keepSizePerPageState)
     if (lastPage != null) __obj.updateDynamic("lastPage")(lastPage)
     if (lastPageTitle != null) __obj.updateDynamic("lastPageTitle")(lastPageTitle)
@@ -970,26 +876,26 @@ object Options {
     if (nextPageTitle != null) __obj.updateDynamic("nextPageTitle")(nextPageTitle)
     if (!js.isUndefined(noAutoBOM)) __obj.updateDynamic("noAutoBOM")(noAutoBOM)
     if (noDataText != null) __obj.updateDynamic("noDataText")(noDataText.asInstanceOf[js.Any])
-    if (onAddRow != null) __obj.updateDynamic("onAddRow")(onAddRow)
-    if (onCellEdit != null) __obj.updateDynamic("onCellEdit")(onCellEdit)
-    if (onDeleteRow != null) __obj.updateDynamic("onDeleteRow")(onDeleteRow)
-    if (onExpand != null) __obj.updateDynamic("onExpand")(onExpand)
-    if (onExportToCSV != null) __obj.updateDynamic("onExportToCSV")(onExportToCSV)
-    if (onFilterChange != null) __obj.updateDynamic("onFilterChange")(onFilterChange)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
-    if (onPageChange != null) __obj.updateDynamic("onPageChange")(onPageChange)
-    if (onRowClick != null) __obj.updateDynamic("onRowClick")(onRowClick)
-    if (onRowDoubleClick != null) __obj.updateDynamic("onRowDoubleClick")(onRowDoubleClick)
-    if (onRowMouseOut != null) __obj.updateDynamic("onRowMouseOut")(onRowMouseOut)
-    if (onRowMouseOver != null) __obj.updateDynamic("onRowMouseOver")(onRowMouseOver)
-    if (onSearchChange != null) __obj.updateDynamic("onSearchChange")(onSearchChange)
-    if (onSizePerPageList != null) __obj.updateDynamic("onSizePerPageList")(onSizePerPageList)
+    if (onAddRow != null) __obj.updateDynamic("onAddRow")(js.Any.fromFunction3(onAddRow))
+    if (onCellEdit != null) __obj.updateDynamic("onCellEdit")(js.Any.fromFunction3(onCellEdit))
+    if (onDeleteRow != null) __obj.updateDynamic("onDeleteRow")(js.Any.fromFunction2(onDeleteRow))
+    if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction3(onExpand))
+    if (onExportToCSV != null) __obj.updateDynamic("onExportToCSV")(js.Any.fromFunction0(onExportToCSV))
+    if (onFilterChange != null) __obj.updateDynamic("onFilterChange")(js.Any.fromFunction1(onFilterChange))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction0(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction0(onMouseLeave))
+    if (onPageChange != null) __obj.updateDynamic("onPageChange")(js.Any.fromFunction2(onPageChange))
+    if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction4(onRowClick))
+    if (onRowDoubleClick != null) __obj.updateDynamic("onRowDoubleClick")(js.Any.fromFunction2(onRowDoubleClick))
+    if (onRowMouseOut != null) __obj.updateDynamic("onRowMouseOut")(js.Any.fromFunction2(onRowMouseOut))
+    if (onRowMouseOver != null) __obj.updateDynamic("onRowMouseOver")(js.Any.fromFunction2(onRowMouseOver))
+    if (onSearchChange != null) __obj.updateDynamic("onSearchChange")(js.Any.fromFunction3(onSearchChange))
+    if (onSizePerPageList != null) __obj.updateDynamic("onSizePerPageList")(js.Any.fromFunction1(onSizePerPageList))
     if (onSortChange != null) __obj.updateDynamic("onSortChange")(onSortChange.asInstanceOf[js.Any])
     if (!js.isUndefined(onlyOneExpanding)) __obj.updateDynamic("onlyOneExpanding")(onlyOneExpanding)
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (pageStartIndex != null) __obj.updateDynamic("pageStartIndex")(pageStartIndex.asInstanceOf[js.Any])
-    if (paginationPanel != null) __obj.updateDynamic("paginationPanel")(paginationPanel)
+    if (paginationPanel != null) __obj.updateDynamic("paginationPanel")(js.Any.fromFunction1(paginationPanel))
     if (paginationPosition != null) __obj.updateDynamic("paginationPosition")(paginationPosition)
     if (paginationShowsTotal != null) __obj.updateDynamic("paginationShowsTotal")(paginationShowsTotal.asInstanceOf[js.Any])
     if (paginationSize != null) __obj.updateDynamic("paginationSize")(paginationSize.asInstanceOf[js.Any])
@@ -998,16 +904,16 @@ object Options {
     if (!js.isUndefined(printToolBar)) __obj.updateDynamic("printToolBar")(printToolBar)
     if (saveText != null) __obj.updateDynamic("saveText")(saveText)
     if (searchDelayTime != null) __obj.updateDynamic("searchDelayTime")(searchDelayTime.asInstanceOf[js.Any])
-    if (searchField != null) __obj.updateDynamic("searchField")(searchField)
-    if (searchPanel != null) __obj.updateDynamic("searchPanel")(searchPanel)
-    if (showSelectedOnlyBtn != null) __obj.updateDynamic("showSelectedOnlyBtn")(showSelectedOnlyBtn)
+    if (searchField != null) __obj.updateDynamic("searchField")(js.Any.fromFunction1(searchField))
+    if (searchPanel != null) __obj.updateDynamic("searchPanel")(js.Any.fromFunction1(searchPanel))
+    if (showSelectedOnlyBtn != null) __obj.updateDynamic("showSelectedOnlyBtn")(js.Any.fromFunction2(showSelectedOnlyBtn))
     if (sizePerPage != null) __obj.updateDynamic("sizePerPage")(sizePerPage.asInstanceOf[js.Any])
-    if (sizePerPageDropDown != null) __obj.updateDynamic("sizePerPageDropDown")(sizePerPageDropDown)
+    if (sizePerPageDropDown != null) __obj.updateDynamic("sizePerPageDropDown")(js.Any.fromFunction1(sizePerPageDropDown))
     if (sizePerPageList != null) __obj.updateDynamic("sizePerPageList")(sizePerPageList.asInstanceOf[js.Any])
     if (!js.isUndefined(sortIndicator)) __obj.updateDynamic("sortIndicator")(sortIndicator)
     if (sortName != null) __obj.updateDynamic("sortName")(sortName)
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
-    if (toolBar != null) __obj.updateDynamic("toolBar")(toolBar)
+    if (toolBar != null) __obj.updateDynamic("toolBar")(js.Any.fromFunction1(toolBar))
     if (!js.isUndefined(withFirstAndLast)) __obj.updateDynamic("withFirstAndLast")(withFirstAndLast)
     if (!js.isUndefined(withoutNoDataText)) __obj.updateDynamic("withoutNoDataText")(withoutNoDataText)
     __obj.asInstanceOf[Options[TRow]]

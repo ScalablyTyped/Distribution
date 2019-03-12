@@ -15,12 +15,12 @@ trait IAuthManagerServiceProvider extends js.Object {
 object IAuthManagerServiceProvider {
   @scala.inline
   def apply(
-    authenticate: js.Function0[scala.Unit],
-    checkAuthOnRefresh: js.Function0[scala.Unit],
-    redirectWhenUnauthenticated: js.Function0[scala.Unit],
-    unauthenticate: js.Function0[scala.Unit]
+    authenticate: () => scala.Unit,
+    checkAuthOnRefresh: () => scala.Unit,
+    redirectWhenUnauthenticated: () => scala.Unit,
+    unauthenticate: () => scala.Unit
   ): IAuthManagerServiceProvider = {
-    val __obj = js.Dynamic.literal(authenticate = authenticate, checkAuthOnRefresh = checkAuthOnRefresh, redirectWhenUnauthenticated = redirectWhenUnauthenticated, unauthenticate = unauthenticate)
+    val __obj = js.Dynamic.literal(authenticate = js.Any.fromFunction0(authenticate), checkAuthOnRefresh = js.Any.fromFunction0(checkAuthOnRefresh), redirectWhenUnauthenticated = js.Any.fromFunction0(redirectWhenUnauthenticated), unauthenticate = js.Any.fromFunction0(unauthenticate))
   
     __obj.asInstanceOf[IAuthManagerServiceProvider]
   }

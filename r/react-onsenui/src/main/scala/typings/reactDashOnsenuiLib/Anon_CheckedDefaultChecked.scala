@@ -12,7 +12,7 @@ trait Anon_CheckedDefaultChecked extends js.Object {
   var inputId: js.UndefOr[java.lang.String] = js.undefined
   var modifier: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ reactLib.Event, scala.Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ stdLib.Event, scala.Unit]] = js.undefined
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -25,7 +25,7 @@ object Anon_CheckedDefaultChecked {
     inputId: java.lang.String = null,
     modifier: java.lang.String = null,
     name: java.lang.String = null,
-    onChange: js.Function1[/* e */ reactLib.Event, scala.Unit] = null,
+    onChange: /* e */ stdLib.Event => scala.Unit = null,
     value: java.lang.String = null
   ): Anon_CheckedDefaultChecked = {
     val __obj = js.Dynamic.literal()
@@ -35,7 +35,7 @@ object Anon_CheckedDefaultChecked {
     if (inputId != null) __obj.updateDynamic("inputId")(inputId)
     if (modifier != null) __obj.updateDynamic("modifier")(modifier)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[Anon_CheckedDefaultChecked]
   }

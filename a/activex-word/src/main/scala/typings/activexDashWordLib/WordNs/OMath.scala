@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class OMath protected () extends js.Object {
   var AlignPoint: scala.Double = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val ArgIndex: scala.Double = js.native
   var ArgSize: scala.Double = js.native
   val Breaks: OMathBreaks = js.native
@@ -23,7 +23,7 @@ class OMath protected () extends js.Object {
   val ParentFunction: OMathFunction = js.native
   val ParentOMath: OMath = js.native
   val ParentRow: OMathMatRow = js.native
-  val Range: Range = js.native
+  val Range: activexDashWordLib.WordNs.Range = js.native
   var Type: WdOMathType = js.native
   var `Word.OMath_typekey`: OMath = js.native
   def BuildUp(): scala.Unit = js.native

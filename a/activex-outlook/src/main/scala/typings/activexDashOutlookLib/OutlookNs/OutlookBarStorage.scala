@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.OutlookBarStorage")
 @js.native
 class OutlookBarStorage protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   val Groups: OutlookBarGroups = js.native
   var `Outlook.OutlookBarStorage_typekey`: OutlookBarStorage = js.native

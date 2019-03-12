@@ -14,11 +14,11 @@ trait Hooks extends js.Object {
 object Hooks {
   @scala.inline
   def apply(
-    Add: js.Function2[js.Any, scala.Double, CallbackObject],
-    Execute: js.Function0[CallbackObject],
-    Remove: js.Function1[CallbackObject, scala.Unit]
+    Add: (js.Any, scala.Double) => CallbackObject,
+    Execute: () => CallbackObject,
+    Remove: CallbackObject => scala.Unit
   ): Hooks = {
-    val __obj = js.Dynamic.literal(Add = Add, Execute = Execute, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Execute = js.Any.fromFunction0(Execute), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[Hooks]
   }

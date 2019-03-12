@@ -32,13 +32,13 @@ object XRowSetSupplier {
   @scala.inline
   def apply(
     RowSet: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRowSet,
-    acquire: js.Function0[scala.Unit],
-    getRowSet: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRowSet],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setRowSet: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRowSet, scala.Unit]
+    acquire: () => scala.Unit,
+    getRowSet: () => activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRowSet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setRowSet: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRowSet => scala.Unit
   ): XRowSetSupplier = {
-    val __obj = js.Dynamic.literal(RowSet = RowSet, acquire = acquire, getRowSet = getRowSet, queryInterface = queryInterface, release = release, setRowSet = setRowSet)
+    val __obj = js.Dynamic.literal(RowSet = RowSet, acquire = js.Any.fromFunction0(acquire), getRowSet = js.Any.fromFunction0(getRowSet), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setRowSet = js.Any.fromFunction1(setRowSet))
   
     __obj.asInstanceOf[XRowSetSupplier]
   }

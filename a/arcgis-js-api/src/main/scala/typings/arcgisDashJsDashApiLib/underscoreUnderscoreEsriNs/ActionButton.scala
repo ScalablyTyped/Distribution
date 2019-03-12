@@ -19,7 +19,7 @@ object ActionButton {
   def apply(
     active: scala.Boolean,
     className: java.lang.String,
-    clone: js.Function0[ActionButton],
+    clone: () => ActionButton,
     disabled: scala.Boolean,
     id: java.lang.String,
     image: java.lang.String,
@@ -27,7 +27,7 @@ object ActionButton {
     `type`: java.lang.String,
     visible: scala.Boolean
   ): ActionButton = {
-    val __obj = js.Dynamic.literal(active = active, className = className, clone = clone, disabled = disabled, id = id, image = image, title = title, visible = visible)
+    val __obj = js.Dynamic.literal(active = active, className = className, clone = js.Any.fromFunction0(clone), disabled = disabled, id = id, image = image, title = title, visible = visible)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ActionButton]
   }

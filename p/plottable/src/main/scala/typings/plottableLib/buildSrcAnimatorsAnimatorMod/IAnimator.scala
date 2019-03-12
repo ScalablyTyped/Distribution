@@ -32,14 +32,10 @@ trait IAnimator extends js.Object {
 object IAnimator {
   @scala.inline
   def apply(
-    animate: js.Function2[
-      plottableLib.buildSrcCoreInterfacesMod.SimpleSelection[_], 
-      plottableLib.buildSrcCoreInterfacesMod.AttributeToAppliedProjector, 
-      plottableLib.buildSrcCoreInterfacesMod.SimpleSelection[_] | (d3DashTransitionLib.d3DashTransitionMod.Transition[_, _, _, _])
-    ],
-    totalTime: js.Function1[scala.Double, scala.Double]
+    animate: (plottableLib.buildSrcCoreInterfacesMod.SimpleSelection[_], plottableLib.buildSrcCoreInterfacesMod.AttributeToAppliedProjector) => plottableLib.buildSrcCoreInterfacesMod.SimpleSelection[_] | (d3DashTransitionLib.d3DashTransitionMod.Transition[_, _, _, _]),
+    totalTime: scala.Double => scala.Double
   ): IAnimator = {
-    val __obj = js.Dynamic.literal(animate = animate, totalTime = totalTime)
+    val __obj = js.Dynamic.literal(animate = js.Any.fromFunction2(animate), totalTime = js.Any.fromFunction1(totalTime))
   
     __obj.asInstanceOf[IAnimator]
   }

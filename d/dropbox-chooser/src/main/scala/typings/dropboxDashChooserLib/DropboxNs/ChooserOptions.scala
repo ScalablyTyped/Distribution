@@ -27,16 +27,16 @@ trait ChooserOptions extends js.Object {
 object ChooserOptions {
   @scala.inline
   def apply(
-    success: js.Function1[js.Array[ChooserFile], scala.Unit],
-    cancel: js.Function0[scala.Unit] = null,
+    success: js.Array[ChooserFile] => scala.Unit,
+    cancel: () => scala.Unit = null,
     extensions: js.Array[java.lang.String] = null,
     folderselect: js.UndefOr[scala.Boolean] = js.undefined,
     linkType: dropboxDashChooserLib.dropboxDashChooserLibStrings.preview | dropboxDashChooserLib.dropboxDashChooserLibStrings.direct = null,
     multiselect: js.UndefOr[scala.Boolean] = js.undefined,
     sizeLimit: scala.Int | scala.Double = null
   ): ChooserOptions = {
-    val __obj = js.Dynamic.literal(success = success)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
+    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (!js.isUndefined(folderselect)) __obj.updateDynamic("folderselect")(folderselect)
     if (linkType != null) __obj.updateDynamic("linkType")(linkType.asInstanceOf[js.Any])

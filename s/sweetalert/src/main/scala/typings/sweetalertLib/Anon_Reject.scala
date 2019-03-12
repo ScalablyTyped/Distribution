@@ -12,13 +12,10 @@ trait Anon_Reject extends js.Object {
 
 object Anon_Reject {
   @scala.inline
-  def apply(
-    reject: js.Function0[scala.Unit] = null,
-    resolve: js.Function1[/* value */ java.lang.String, scala.Unit] = null
-  ): Anon_Reject = {
+  def apply(reject: () => scala.Unit = null, resolve: /* value */ java.lang.String => scala.Unit = null): Anon_Reject = {
     val __obj = js.Dynamic.literal()
-    if (reject != null) __obj.updateDynamic("reject")(reject)
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
+    if (reject != null) __obj.updateDynamic("reject")(js.Any.fromFunction0(reject))
+    if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction1(resolve))
     __obj.asInstanceOf[Anon_Reject]
   }
 }

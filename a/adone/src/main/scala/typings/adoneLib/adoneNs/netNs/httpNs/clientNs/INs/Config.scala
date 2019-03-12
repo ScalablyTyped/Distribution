@@ -37,7 +37,7 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(
-    adapter: js.Function1[Config, js.Promise[Response[js.Any]]],
+    adapter: Config => js.Promise[Response[js.Any]],
     auth: adoneLib.Anon_Password,
     baseURL: java.lang.String,
     cancelToken: adoneLib.adoneNs.netNs.httpNs.clientNs.CancelToken,
@@ -49,9 +49,9 @@ object Config {
     maxContentLength: scala.Double,
     maxRedirects: scala.Double,
     method: adoneLib.adoneLibStrings.GET | adoneLib.adoneLibStrings.POST | adoneLib.adoneLibStrings.PUT | adoneLib.adoneLibStrings.PATCH | adoneLib.adoneLibStrings.DELETE | adoneLib.adoneLibStrings.OPTIONS,
-    onUploadProgress: js.Function1[UploadProgressEvent, scala.Unit],
+    onUploadProgress: UploadProgressEvent => scala.Unit,
     params: js.Object,
-    paramsSerializer: js.Function1[js.Object, java.lang.String],
+    paramsSerializer: js.Object => java.lang.String,
     proxy: java.lang.String | ProxyObject | adoneLib.adoneLibNumbers.`false`,
     rejectUnauthorized: scala.Boolean,
     responseEncoding: adoneLib.adoneNs.utilNs.iconvNs.INs.SupportedEncoding,
@@ -60,11 +60,11 @@ object Config {
     transformRequest: js.Array[Transformer],
     transformResponse: js.Array[Transformer],
     transport: js.Object,
-    validateStatus: js.Function1[scala.Double, scala.Boolean],
+    validateStatus: scala.Double => scala.Boolean,
     xsrfCookieName: java.lang.String,
     xsrfHeaderName: java.lang.String
   ): Config = {
-    val __obj = js.Dynamic.literal(adapter = adapter, auth = auth, baseURL = baseURL, cancelToken = cancelToken, data = data.asInstanceOf[js.Any], formData = formData, headers = headers, httpAgent = httpAgent, httpsAgent = httpsAgent, maxContentLength = maxContentLength, maxRedirects = maxRedirects, method = method.asInstanceOf[js.Any], onUploadProgress = onUploadProgress, params = params, paramsSerializer = paramsSerializer, proxy = proxy.asInstanceOf[js.Any], rejectUnauthorized = rejectUnauthorized, responseEncoding = responseEncoding, responseType = responseType.asInstanceOf[js.Any], timeout = timeout, transformRequest = transformRequest, transformResponse = transformResponse, transport = transport, validateStatus = validateStatus, xsrfCookieName = xsrfCookieName, xsrfHeaderName = xsrfHeaderName)
+    val __obj = js.Dynamic.literal(adapter = js.Any.fromFunction1(adapter), auth = auth, baseURL = baseURL, cancelToken = cancelToken, data = data.asInstanceOf[js.Any], formData = formData, headers = headers, httpAgent = httpAgent, httpsAgent = httpsAgent, maxContentLength = maxContentLength, maxRedirects = maxRedirects, method = method.asInstanceOf[js.Any], onUploadProgress = js.Any.fromFunction1(onUploadProgress), params = params, paramsSerializer = js.Any.fromFunction1(paramsSerializer), proxy = proxy.asInstanceOf[js.Any], rejectUnauthorized = rejectUnauthorized, responseEncoding = responseEncoding, responseType = responseType.asInstanceOf[js.Any], timeout = timeout, transformRequest = transformRequest, transformResponse = transformResponse, transport = transport, validateStatus = js.Any.fromFunction1(validateStatus), xsrfCookieName = xsrfCookieName, xsrfHeaderName = xsrfHeaderName)
   
     __obj.asInstanceOf[Config]
   }

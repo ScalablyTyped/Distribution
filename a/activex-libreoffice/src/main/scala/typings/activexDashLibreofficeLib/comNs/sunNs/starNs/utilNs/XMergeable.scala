@@ -20,13 +20,13 @@ object XMergeable {
   @scala.inline
   def apply(
     IsMerged: scala.Boolean,
-    acquire: js.Function0[scala.Unit],
-    getIsMerged: js.Function0[scala.Boolean],
-    merge: js.Function1[scala.Boolean, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getIsMerged: () => scala.Boolean,
+    merge: scala.Boolean => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XMergeable = {
-    val __obj = js.Dynamic.literal(IsMerged = IsMerged, acquire = acquire, getIsMerged = getIsMerged, merge = merge, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(IsMerged = IsMerged, acquire = js.Any.fromFunction0(acquire), getIsMerged = js.Any.fromFunction0(getIsMerged), merge = js.Any.fromFunction1(merge), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XMergeable]
   }

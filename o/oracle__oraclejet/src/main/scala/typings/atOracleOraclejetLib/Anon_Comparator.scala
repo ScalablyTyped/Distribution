@@ -38,24 +38,20 @@ object Anon_Comparator {
       scala.Double
     ]) = null,
     fetchSize: scala.Int | scala.Double = null,
-    initialize: js.Function2[
-      /* models */ js.Array[atOracleOraclejetLib.ojmodelMod.Model], 
-      /* options */ js.Object, 
-      scala.Unit
-    ] = null,
+    initialize: (/* models */ js.Array[atOracleOraclejetLib.ojmodelMod.Model], /* options */ js.Object) => scala.Unit = null,
     model: atOracleOraclejetLib.ojmodelMod.Model = null,
     modelLimit: scala.Int | scala.Double = null,
-    parse: js.Function1[/* data */ js.Any, _] = null,
+    parse: /* data */ js.Any => _ = null,
     url: java.lang.String = null
   ): Anon_Comparator = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (comparator != null) __obj.updateDynamic("comparator")(comparator.asInstanceOf[js.Any])
     if (fetchSize != null) __obj.updateDynamic("fetchSize")(fetchSize.asInstanceOf[js.Any])
-    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
+    if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction2(initialize))
     if (model != null) __obj.updateDynamic("model")(model)
     if (modelLimit != null) __obj.updateDynamic("modelLimit")(modelLimit.asInstanceOf[js.Any])
-    if (parse != null) __obj.updateDynamic("parse")(parse)
+    if (parse != null) __obj.updateDynamic("parse")(js.Any.fromFunction1(parse))
     if (url != null) __obj.updateDynamic("url")(url)
     __obj.asInstanceOf[Anon_Comparator]
   }

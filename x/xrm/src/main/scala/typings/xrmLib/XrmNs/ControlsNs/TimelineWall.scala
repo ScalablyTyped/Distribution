@@ -19,15 +19,15 @@ trait TimelineWall extends Control {
 object TimelineWall {
   @scala.inline
   def apply(
-    getControlType: js.Function0[ControlType | java.lang.String],
-    getLabel: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getParent: js.Function0[Section],
-    getVisible: js.Function0[scala.Boolean],
-    refresh: js.Function0[scala.Unit],
-    setLabel: js.Function1[java.lang.String, scala.Unit]
+    getControlType: () => ControlType | java.lang.String,
+    getLabel: () => java.lang.String,
+    getName: () => java.lang.String,
+    getParent: () => Section,
+    getVisible: () => scala.Boolean,
+    refresh: () => scala.Unit,
+    setLabel: java.lang.String => scala.Unit
   ): TimelineWall = {
-    val __obj = js.Dynamic.literal(getControlType = getControlType, getLabel = getLabel, getName = getName, getParent = getParent, getVisible = getVisible, refresh = refresh, setLabel = setLabel)
+    val __obj = js.Dynamic.literal(getControlType = js.Any.fromFunction0(getControlType), getLabel = js.Any.fromFunction0(getLabel), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getVisible = js.Any.fromFunction0(getVisible), refresh = js.Any.fromFunction0(refresh), setLabel = js.Any.fromFunction1(setLabel))
   
     __obj.asInstanceOf[TimelineWall]
   }

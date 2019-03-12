@@ -61,20 +61,20 @@ object ^ extends js.Object {
   def compare(tree1: js.Object, tree2: js.Object): js.Array[fastDashJsonDashPatchLib.libCoreMod.Operation] = js.native
   def deepClone(obj: js.Any): js.Any = js.native
   def escapePathComponent(path: java.lang.String): java.lang.String = js.native
-  def generate[T](observer: fastDashJsonDashPatchLib.fastDashJsonDashPatchMod.Observer[js.Object]): js.Array[fastDashJsonDashPatchLib.libCoreMod.Operation] = js.native
+  def generate[T](observer: Observer[js.Object]): js.Array[fastDashJsonDashPatchLib.libCoreMod.Operation] = js.native
   def getValueByPointer(document: js.Any, pointer: java.lang.String): js.Any = js.native
-  def observe[T](obj: js.Array[T]): fastDashJsonDashPatchLib.fastDashJsonDashPatchMod.Observer[T] = js.native
+  def observe[T](obj: js.Array[T]): Observer[T] = js.native
   def observe[T](
     obj: js.Array[T],
     callback: js.Function1[/* patches */ js.Array[fastDashJsonDashPatchLib.libCoreMod.Operation], scala.Unit]
-  ): fastDashJsonDashPatchLib.fastDashJsonDashPatchMod.Observer[T] = js.native
-  def observe[T](obj: js.Object): fastDashJsonDashPatchLib.fastDashJsonDashPatchMod.Observer[T] = js.native
+  ): Observer[T] = js.native
+  def observe[T](obj: js.Object): Observer[T] = js.native
   def observe[T](
     obj: js.Object,
     callback: js.Function1[/* patches */ js.Array[fastDashJsonDashPatchLib.libCoreMod.Operation], scala.Unit]
-  ): fastDashJsonDashPatchLib.fastDashJsonDashPatchMod.Observer[T] = js.native
+  ): Observer[T] = js.native
   def unescapePathComponent(path: java.lang.String): java.lang.String = js.native
-  def unobserve[T](root: T, observer: fastDashJsonDashPatchLib.fastDashJsonDashPatchMod.Observer[T]): scala.Unit = js.native
+  def unobserve[T](root: T, observer: Observer[T]): scala.Unit = js.native
   def validate[T](sequence: js.Array[fastDashJsonDashPatchLib.libCoreMod.Operation]): fastDashJsonDashPatchLib.libHelpersMod.PatchError = js.native
   def validate[T](sequence: js.Array[fastDashJsonDashPatchLib.libCoreMod.Operation], document: T): fastDashJsonDashPatchLib.libHelpersMod.PatchError = js.native
   def validate[T](

@@ -63,24 +63,15 @@ object ParallaxImageProps {
     itemHeight: scala.Int | scala.Double = null,
     itemWidth: scala.Int | scala.Double = null,
     loadingIndicatorSource: reactDashNativeLib.reactDashNativeMod.ImageURISource = null,
-    onAccessibilityTap: js.Function0[scala.Unit] = null,
-    onError: js.Function1[
-      /* error */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.ImageErrorEventData], 
-      scala.Unit
-    ] = null,
-    onLayout: js.Function1[/* event */ reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent, scala.Unit] = null,
-    onLoad: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.ImageLoadEventData], 
-      scala.Unit
-    ] = null,
-    onLoadEnd: js.Function0[scala.Unit] = null,
-    onLoadStart: js.Function0[scala.Unit] = null,
-    onMagicTap: js.Function0[scala.Unit] = null,
-    onPartialLoad: js.Function0[scala.Unit] = null,
-    onProgress: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.ImageProgressEventDataIOS], 
-      scala.Unit
-    ] = null,
+    onAccessibilityTap: () => scala.Unit = null,
+    onError: /* error */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.ImageErrorEventData] => scala.Unit = null,
+    onLayout: /* event */ reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent => scala.Unit = null,
+    onLoad: /* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.ImageLoadEventData] => scala.Unit = null,
+    onLoadEnd: () => scala.Unit = null,
+    onLoadStart: () => scala.Unit = null,
+    onMagicTap: () => scala.Unit = null,
+    onPartialLoad: () => scala.Unit = null,
+    onProgress: /* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.ImageProgressEventDataIOS] => scala.Unit = null,
     parallaxFactor: scala.Int | scala.Double = null,
     progressiveRenderingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     resizeMethod: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.resize | reactDashNativeLib.reactDashNativeLibStrings.scale = null,
@@ -123,15 +114,15 @@ object ParallaxImageProps {
     if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight.asInstanceOf[js.Any])
     if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
     if (loadingIndicatorSource != null) __obj.updateDynamic("loadingIndicatorSource")(loadingIndicatorSource)
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(onAccessibilityTap)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onLayout != null) __obj.updateDynamic("onLayout")(onLayout)
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
-    if (onLoadEnd != null) __obj.updateDynamic("onLoadEnd")(onLoadEnd)
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(onLoadStart)
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(onMagicTap)
-    if (onPartialLoad != null) __obj.updateDynamic("onPartialLoad")(onPartialLoad)
-    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress)
+    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
+    if (onLoadEnd != null) __obj.updateDynamic("onLoadEnd")(js.Any.fromFunction0(onLoadEnd))
+    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(js.Any.fromFunction0(onLoadStart))
+    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
+    if (onPartialLoad != null) __obj.updateDynamic("onPartialLoad")(js.Any.fromFunction0(onPartialLoad))
+    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
     if (parallaxFactor != null) __obj.updateDynamic("parallaxFactor")(parallaxFactor.asInstanceOf[js.Any])
     if (!js.isUndefined(progressiveRenderingEnabled)) __obj.updateDynamic("progressiveRenderingEnabled")(progressiveRenderingEnabled)
     if (resizeMethod != null) __obj.updateDynamic("resizeMethod")(resizeMethod.asInstanceOf[js.Any])

@@ -115,40 +115,70 @@ trait Anon_A extends js.Object {
   val symbolTriangle: d3DashShapeLib.d3DashShapeMod.SymbolType = js.native
   val symbolWye: d3DashShapeLib.d3DashShapeMod.SymbolType = js.native
   val symbols: js.Array[d3DashShapeLib.d3DashShapeMod.SymbolType] = js.native
-  val timeDay: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val timeFriday: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val timeHour: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val timeMillisecond: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val timeMinute: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val timeMonday: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val timeMonth: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val timeSaturday: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val timeSecond: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val timeSunday: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val timeThursday: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val timeTuesday: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val timeWednesday: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val timeWeek: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val timeYear: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("timeDay")
+  val timeDay_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("timeFriday")
+  val timeFriday_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("timeHour")
+  val timeHour_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("timeMillisecond")
+  val timeMillisecond_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("timeMinute")
+  val timeMinute_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("timeMonday")
+  val timeMonday_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("timeMonth")
+  val timeMonth_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("timeSaturday")
+  val timeSaturday_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("timeSecond")
+  val timeSecond_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("timeSunday")
+  val timeSunday_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("timeThursday")
+  val timeThursday_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("timeTuesday")
+  val timeTuesday_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("timeWednesday")
+  val timeWednesday_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("timeWeek")
+  val timeWeek_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("timeYear")
+  val timeYear_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
   @JSName("treemapResquarify")
   val treemapResquarify_Original: d3DashHierarchyLib.d3DashHierarchyMod.RatioSquarifyTilingFactory = js.native
   @JSName("treemapSquarify")
   val treemapSquarify_Original: d3DashHierarchyLib.d3DashHierarchyMod.RatioSquarifyTilingFactory = js.native
-  val utcDay: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val utcFriday: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val utcHour: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val utcMillisecond: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val utcMinute: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val utcMonday: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val utcMonth: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val utcSaturday: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val utcSecond: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val utcSunday: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val utcThursday: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val utcTuesday: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val utcWednesday: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val utcWeek: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
-  val utcYear: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("utcDay")
+  val utcDay_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("utcFriday")
+  val utcFriday_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("utcHour")
+  val utcHour_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("utcMillisecond")
+  val utcMillisecond_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("utcMinute")
+  val utcMinute_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("utcMonday")
+  val utcMonday_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("utcMonth")
+  val utcMonth_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("utcSaturday")
+  val utcSaturday_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("utcSecond")
+  val utcSecond_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("utcSunday")
+  val utcSunday_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("utcThursday")
+  val utcThursday_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("utcTuesday")
+  val utcTuesday_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("utcWednesday")
+  val utcWednesday_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("utcWeek")
+  val utcWeek_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  @JSName("utcYear")
+  val utcYear_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
   val version: java.lang.String = js.native
   val zoomIdentity: d3DashZoomLib.d3DashZoomMod.ZoomTransform = js.native
   def active[GElement /* <: d3DashSelectionLib.d3DashSelectionMod.BaseType */, Datum, PElement /* <: d3DashSelectionLib.d3DashSelectionMod.BaseType */, PDatum](node: GElement): (d3DashTransitionLib.d3DashTransitionMod.Transition[GElement, Datum, PElement, PDatum]) | scala.Null = js.native
@@ -3152,13 +3182,73 @@ trait Anon_A extends js.Object {
   def tickIncrement(start: scala.Double, stop: scala.Double, count: scala.Double): scala.Double = js.native
   def tickStep(start: scala.Double, stop: scala.Double, count: scala.Double): scala.Double = js.native
   def ticks(start: scala.Double, stop: scala.Double, count: scala.Double): js.Array[scala.Double] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def timeDay(date: stdLib.Date): stdLib.Date = js.native
   def timeDays(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def timeDays(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
   def timeFormat(specifier: java.lang.String): js.Function1[/* date */ stdLib.Date, java.lang.String] = js.native
   def timeFormatDefaultLocale(defaultTimeLocale: d3DashTimeDashFormatLib.d3DashTimeDashFormatMod.TimeLocaleDefinition): d3DashTimeDashFormatLib.d3DashTimeDashFormatMod.TimeLocaleObject = js.native
   def timeFormatLocale(timeLocale: d3DashTimeDashFormatLib.d3DashTimeDashFormatMod.TimeLocaleDefinition): d3DashTimeDashFormatLib.d3DashTimeDashFormatMod.TimeLocaleObject = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def timeFriday(date: stdLib.Date): stdLib.Date = js.native
   def timeFridays(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def timeFridays(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def timeHour(date: stdLib.Date): stdLib.Date = js.native
   def timeHours(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def timeHours(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
   def timeInterval(
@@ -3176,29 +3266,269 @@ trait Anon_A extends js.Object {
     count: js.Function2[/* start */ stdLib.Date, /* end */ stdLib.Date, scala.Double],
     field: js.Function1[/* date */ stdLib.Date, scala.Double]
   ): d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def timeMillisecond(date: stdLib.Date): stdLib.Date = js.native
   def timeMilliseconds(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def timeMilliseconds(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def timeMinute(date: stdLib.Date): stdLib.Date = js.native
   def timeMinutes(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def timeMinutes(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def timeMonday(date: stdLib.Date): stdLib.Date = js.native
   def timeMondays(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def timeMondays(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def timeMonth(date: stdLib.Date): stdLib.Date = js.native
   def timeMonths(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def timeMonths(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
   def timeParse(specifier: java.lang.String): js.Function1[/* dateString */ java.lang.String, stdLib.Date | scala.Null] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def timeSaturday(date: stdLib.Date): stdLib.Date = js.native
   def timeSaturdays(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def timeSaturdays(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def timeSecond(date: stdLib.Date): stdLib.Date = js.native
   def timeSeconds(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def timeSeconds(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def timeSunday(date: stdLib.Date): stdLib.Date = js.native
   def timeSundays(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def timeSundays(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def timeThursday(date: stdLib.Date): stdLib.Date = js.native
   def timeThursdays(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def timeThursdays(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def timeTuesday(date: stdLib.Date): stdLib.Date = js.native
   def timeTuesdays(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def timeTuesdays(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def timeWednesday(date: stdLib.Date): stdLib.Date = js.native
   def timeWednesdays(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def timeWednesdays(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def timeWeek(date: stdLib.Date): stdLib.Date = js.native
   def timeWeeks(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def timeWeeks(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def timeYear(date: stdLib.Date): stdLib.Date = js.native
   def timeYears(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def timeYears(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
   def timeout(callback: js.Function1[/* elapsed */ scala.Double, scala.Unit]): d3DashTimerLib.d3DashTimerMod.Timer = js.native
@@ -3322,36 +3652,336 @@ trait Anon_A extends js.Object {
       js.UndefOr[ParsedRow | scala.Null]
     ]
   ): js.Array[ParsedRow] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def utcDay(date: stdLib.Date): stdLib.Date = js.native
   def utcDays(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def utcDays(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
   def utcFormat(specifier: java.lang.String): js.Function1[/* date */ stdLib.Date, java.lang.String] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def utcFriday(date: stdLib.Date): stdLib.Date = js.native
   def utcFridays(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def utcFridays(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def utcHour(date: stdLib.Date): stdLib.Date = js.native
   def utcHours(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def utcHours(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def utcMillisecond(date: stdLib.Date): stdLib.Date = js.native
   def utcMilliseconds(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def utcMilliseconds(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def utcMinute(date: stdLib.Date): stdLib.Date = js.native
   def utcMinutes(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def utcMinutes(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def utcMonday(date: stdLib.Date): stdLib.Date = js.native
   def utcMondays(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def utcMondays(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def utcMonth(date: stdLib.Date): stdLib.Date = js.native
   def utcMonths(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def utcMonths(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
   def utcParse(specifier: java.lang.String): js.Function1[/* dateString */ java.lang.String, stdLib.Date | scala.Null] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def utcSaturday(date: stdLib.Date): stdLib.Date = js.native
   def utcSaturdays(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def utcSaturdays(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def utcSecond(date: stdLib.Date): stdLib.Date = js.native
   def utcSeconds(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def utcSeconds(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def utcSunday(date: stdLib.Date): stdLib.Date = js.native
   def utcSundays(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def utcSundays(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def utcThursday(date: stdLib.Date): stdLib.Date = js.native
   def utcThursdays(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def utcThursdays(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def utcTuesday(date: stdLib.Date): stdLib.Date = js.native
   def utcTuesdays(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def utcTuesdays(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def utcWednesday(date: stdLib.Date): stdLib.Date = js.native
   def utcWednesdays(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def utcWednesdays(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def utcWeek(date: stdLib.Date): stdLib.Date = js.native
   def utcWeeks(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def utcWeeks(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
+  /**
+    * Returns a new date representing the latest interval boundary date before or equal to date.
+    * This function is an alias for "TimeInterval.floor(date)". For example, timeYear(date) and timeYear.floor(date) are equivalent.
+    *
+    * For example, timeDay(date) typically returns 12:00 AM local time on the given date.
+    *
+    * This function is idempotent: if the specified date is already floored to the current interval,
+    * a new date with an identical time is returned.
+    * Furthermore, the returned date is the minimum expressible value of the associated interval,
+    * such that interval.floor(interval.floor(date) - 1) returns the preceding interval boundary date.
+    *
+    * Note that the == and === operators do not compare by value with Date objects,
+    * and thus you cannot use them to tell whether the specified date has already been floored.
+    * Instead, coerce to a number and then compare.
+    *
+    * This is more reliable than testing whether the time is 12:00 AM, as in some time zones midnight may not exist due to daylight saving.
+    *
+    * @param date A date object.
+    */
+  def utcYear(date: stdLib.Date): stdLib.Date = js.native
   def utcYears(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def utcYears(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
   def values(obj: js.Object): js.Array[_] = js.native

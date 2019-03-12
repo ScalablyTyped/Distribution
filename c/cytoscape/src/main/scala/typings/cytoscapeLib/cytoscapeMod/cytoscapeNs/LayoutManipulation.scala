@@ -27,12 +27,8 @@ trait LayoutManipulation extends js.Object {
 
 object LayoutManipulation {
   @scala.inline
-  def apply(
-    run: js.Function0[LayoutManipulation],
-    start: js.Function0[LayoutManipulation],
-    stop: js.Function0[LayoutManipulation]
-  ): LayoutManipulation = {
-    val __obj = js.Dynamic.literal(run = run, start = start, stop = stop)
+  def apply(run: () => LayoutManipulation, start: () => LayoutManipulation, stop: () => LayoutManipulation): LayoutManipulation = {
+    val __obj = js.Dynamic.literal(run = js.Any.fromFunction0(run), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[LayoutManipulation]
   }

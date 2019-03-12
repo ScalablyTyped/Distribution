@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.ThreeDFormat")
 @js.native
 class ThreeDFormat protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var BevelBottomDepth: scala.Double = js.native
   var BevelBottomInset: scala.Double = js.native
   var BevelBottomType: activexDashOfficeLib.OfficeNs.MsoBevelType = js.native

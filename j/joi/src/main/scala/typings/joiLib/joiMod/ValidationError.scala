@@ -17,14 +17,14 @@ object ValidationError {
   @scala.inline
   def apply(
     _object: js.Any,
-    annotate: js.Function0[java.lang.String],
+    annotate: () => java.lang.String,
     details: js.Array[ValidationErrorItem],
     isJoi: scala.Boolean,
     message: java.lang.String,
     name: java.lang.String,
     stack: java.lang.String = null
   ): ValidationError = {
-    val __obj = js.Dynamic.literal(_object = _object, annotate = annotate, details = details, isJoi = isJoi, message = message, name = name)
+    val __obj = js.Dynamic.literal(_object = _object, annotate = js.Any.fromFunction0(annotate), details = details, isJoi = isJoi, message = message, name = name)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[ValidationError]
   }

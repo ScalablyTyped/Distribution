@@ -9,15 +9,15 @@ trait CreateGlobalSecondaryIndexAction extends js.Object {
   /**
     * The name of the global secondary index to be created.
     */
-  var IndexName: IndexName
+  var IndexName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.IndexName
   /**
     * The key schema for the global secondary index.
     */
-  var KeySchema: KeySchema
+  var KeySchema: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.KeySchema
   /**
     * Represents attributes that are copied (projected) from the table into an index. These are in addition to the primary key attributes and index key attributes, which are automatically projected.
     */
-  var Projection: Projection
+  var Projection: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.Projection
   /**
     * Represents the provisioned throughput settings for the specified global secondary index. For current minimum and maximum provisioned throughput values, see Limits in the Amazon DynamoDB Developer Guide.
     */

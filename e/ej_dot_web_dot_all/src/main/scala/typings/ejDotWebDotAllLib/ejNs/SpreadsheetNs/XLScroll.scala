@@ -15,8 +15,8 @@ trait XLScroll extends js.Object {
 
 object XLScroll {
   @scala.inline
-  def apply(scrollToCell: js.Function1[java.lang.String, scala.Unit]): XLScroll = {
-    val __obj = js.Dynamic.literal(scrollToCell = scrollToCell)
+  def apply(scrollToCell: java.lang.String => scala.Unit): XLScroll = {
+    val __obj = js.Dynamic.literal(scrollToCell = js.Any.fromFunction1(scrollToCell))
   
     __obj.asInstanceOf[XLScroll]
   }

@@ -66,16 +66,16 @@ trait Anon_Action extends js.Object {
 object Anon_Action {
   @scala.inline
   def apply(
-    addProperty: js.Function2[java.lang.String, js.Any, scala.Unit],
-    bind: js.Function2[java.lang.String, js.Any, js.Function],
-    getProperty: js.Function1[java.lang.String, js.Any],
-    notify: js.Function3[java.lang.String, java.lang.String, java.lang.String, winjsLib.WinJSNs.Promise[_]],
-    removeProperty: js.Function1[java.lang.String, js.Any],
-    setProperty: js.Function2[java.lang.String, js.Any, js.Any],
-    unbind: js.Function2[java.lang.String, js.Function, js.Any],
-    updateProperty: js.Function2[java.lang.String, js.Any, winjsLib.WinJSNs.Promise[_]]
+    addProperty: (java.lang.String, js.Any) => scala.Unit,
+    bind: (java.lang.String, js.Any) => js.Function,
+    getProperty: java.lang.String => js.Any,
+    notify: (java.lang.String, java.lang.String, java.lang.String) => winjsLib.WinJSNs.Promise[_],
+    removeProperty: java.lang.String => js.Any,
+    setProperty: (java.lang.String, js.Any) => js.Any,
+    unbind: (java.lang.String, js.Function) => js.Any,
+    updateProperty: (java.lang.String, js.Any) => winjsLib.WinJSNs.Promise[_]
   ): Anon_Action = {
-    val __obj = js.Dynamic.literal(addProperty = addProperty, bind = bind, getProperty = getProperty, notify = notify, removeProperty = removeProperty, setProperty = setProperty, unbind = unbind, updateProperty = updateProperty)
+    val __obj = js.Dynamic.literal(addProperty = js.Any.fromFunction2(addProperty), bind = js.Any.fromFunction2(bind), getProperty = js.Any.fromFunction1(getProperty), notify = js.Any.fromFunction3(notify), removeProperty = js.Any.fromFunction1(removeProperty), setProperty = js.Any.fromFunction2(setProperty), unbind = js.Any.fromFunction2(unbind), updateProperty = js.Any.fromFunction2(updateProperty))
   
     __obj.asInstanceOf[Anon_Action]
   }

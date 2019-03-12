@@ -13,7 +13,7 @@ object ^ extends js.Object {
   def isEmpty(code: js.Any): scala.Boolean = js.native
   def isRedirect(code: js.Any): scala.Boolean = js.native
   def isRetry(code: js.Any): scala.Boolean = js.native
-  def status(codeOrLiteral: java.lang.String): blowDashHttpDashStatusesLib.blowDashHttpDashStatusesMod.IStatus = js.native
-  def status(codeOrLiteral: scala.Double): blowDashHttpDashStatusesLib.blowDashHttpDashStatusesMod.IStatus = js.native
+  def status(codeOrLiteral: java.lang.String): IStatus = js.native
+  def status(codeOrLiteral: scala.Double): IStatus = js.native
 }
 

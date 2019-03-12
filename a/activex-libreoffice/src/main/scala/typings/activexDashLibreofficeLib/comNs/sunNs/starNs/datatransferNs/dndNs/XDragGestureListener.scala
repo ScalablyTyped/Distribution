@@ -23,13 +23,13 @@ trait XDragGestureListener
 object XDragGestureListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    dragGestureRecognized: js.Function1[DragGestureEvent, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    dragGestureRecognized: DragGestureEvent => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDragGestureListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, dragGestureRecognized = dragGestureRecognized, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), dragGestureRecognized = js.Any.fromFunction1(dragGestureRecognized), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDragGestureListener]
   }

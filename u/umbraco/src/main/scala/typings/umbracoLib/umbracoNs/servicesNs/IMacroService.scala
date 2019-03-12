@@ -55,11 +55,11 @@ trait IMacroService extends js.Object {
 object IMacroService {
   @scala.inline
   def apply(
-    generateMacroSyntax: js.Function1[/* repeated */ js.Any, scala.Unit],
-    generateMvcSyntax: js.Function1[/* repeated */ js.Any, scala.Unit],
-    generateWebFormsSyntax: js.Function1[/* repeated */ js.Any, scala.Unit]
+    generateMacroSyntax: /* repeated */ js.Any => scala.Unit,
+    generateMvcSyntax: /* repeated */ js.Any => scala.Unit,
+    generateWebFormsSyntax: /* repeated */ js.Any => scala.Unit
   ): IMacroService = {
-    val __obj = js.Dynamic.literal(generateMacroSyntax = generateMacroSyntax, generateMvcSyntax = generateMvcSyntax, generateWebFormsSyntax = generateWebFormsSyntax)
+    val __obj = js.Dynamic.literal(generateMacroSyntax = js.Any.fromFunction1(generateMacroSyntax), generateMvcSyntax = js.Any.fromFunction1(generateMvcSyntax), generateWebFormsSyntax = js.Any.fromFunction1(generateWebFormsSyntax))
   
     __obj.asInstanceOf[IMacroService]
   }

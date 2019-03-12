@@ -18,40 +18,36 @@ object ^ extends js.Object {
     *
     * Returns Error object, populating it with the reason, host and cert on failure.  On success, returns undefined.
     */
-  def checkServerIdentity(host: java.lang.String, cert: nodeLib.tlsMod.PeerCertificate): js.UndefOr[nodeLib.Error] = js.native
-  def connect(options: nodeLib.tlsMod.ConnectionOptions): nodeLib.tlsMod.TLSSocket = js.native
-  def connect(options: nodeLib.tlsMod.ConnectionOptions, secureConnectListener: js.Function0[scala.Unit]): nodeLib.tlsMod.TLSSocket = js.native
-  def connect(port: scala.Double): nodeLib.tlsMod.TLSSocket = js.native
-  def connect(port: scala.Double, host: java.lang.String): nodeLib.tlsMod.TLSSocket = js.native
-  def connect(port: scala.Double, host: java.lang.String, options: nodeLib.tlsMod.ConnectionOptions): nodeLib.tlsMod.TLSSocket = js.native
+  def checkServerIdentity(host: java.lang.String, cert: PeerCertificate): js.UndefOr[nodeLib.Error] = js.native
+  def connect(options: ConnectionOptions): TLSSocket = js.native
+  def connect(options: ConnectionOptions, secureConnectListener: js.Function0[scala.Unit]): TLSSocket = js.native
+  def connect(port: scala.Double): TLSSocket = js.native
+  def connect(port: scala.Double, host: java.lang.String): TLSSocket = js.native
+  def connect(port: scala.Double, host: java.lang.String, options: ConnectionOptions): TLSSocket = js.native
   def connect(
     port: scala.Double,
     host: java.lang.String,
-    options: nodeLib.tlsMod.ConnectionOptions,
+    options: ConnectionOptions,
     secureConnectListener: js.Function0[scala.Unit]
-  ): nodeLib.tlsMod.TLSSocket = js.native
-  def connect(port: scala.Double, options: nodeLib.tlsMod.ConnectionOptions): nodeLib.tlsMod.TLSSocket = js.native
-  def connect(
-    port: scala.Double,
-    options: nodeLib.tlsMod.ConnectionOptions,
-    secureConnectListener: js.Function0[scala.Unit]
-  ): nodeLib.tlsMod.TLSSocket = js.native
-  def createSecureContext(details: nodeLib.tlsMod.SecureContextOptions): nodeLib.tlsMod.SecureContext = js.native
-  def createSecurePair(): nodeLib.tlsMod.SecurePair = js.native
-  def createSecurePair(credentials: nodeLib.tlsMod.SecureContext): nodeLib.tlsMod.SecurePair = js.native
-  def createSecurePair(credentials: nodeLib.tlsMod.SecureContext, isServer: scala.Boolean): nodeLib.tlsMod.SecurePair = js.native
-  def createSecurePair(credentials: nodeLib.tlsMod.SecureContext, isServer: scala.Boolean, requestCert: scala.Boolean): nodeLib.tlsMod.SecurePair = js.native
+  ): TLSSocket = js.native
+  def connect(port: scala.Double, options: ConnectionOptions): TLSSocket = js.native
+  def connect(port: scala.Double, options: ConnectionOptions, secureConnectListener: js.Function0[scala.Unit]): TLSSocket = js.native
+  def createSecureContext(details: SecureContextOptions): SecureContext = js.native
+  /**
+    * @deprecated
+    */
+  def createSecurePair(): SecurePair = js.native
+  def createSecurePair(credentials: SecureContext): SecurePair = js.native
+  def createSecurePair(credentials: SecureContext, isServer: scala.Boolean): SecurePair = js.native
+  def createSecurePair(credentials: SecureContext, isServer: scala.Boolean, requestCert: scala.Boolean): SecurePair = js.native
   def createSecurePair(
-    credentials: nodeLib.tlsMod.SecureContext,
+    credentials: SecureContext,
     isServer: scala.Boolean,
     requestCert: scala.Boolean,
     rejectUnauthorized: scala.Boolean
-  ): nodeLib.tlsMod.SecurePair = js.native
-  def createServer(options: nodeLib.tlsMod.TlsOptions): nodeLib.tlsMod.Server = js.native
-  def createServer(
-    options: nodeLib.tlsMod.TlsOptions,
-    secureConnectionListener: js.Function1[/* socket */ nodeLib.tlsMod.TLSSocket, scala.Unit]
-  ): nodeLib.tlsMod.Server = js.native
+  ): SecurePair = js.native
+  def createServer(options: TlsOptions): Server = js.native
+  def createServer(options: TlsOptions, secureConnectionListener: js.Function1[/* socket */ TLSSocket, scala.Unit]): Server = js.native
   def getCiphers(): js.Array[java.lang.String] = js.native
 }
 

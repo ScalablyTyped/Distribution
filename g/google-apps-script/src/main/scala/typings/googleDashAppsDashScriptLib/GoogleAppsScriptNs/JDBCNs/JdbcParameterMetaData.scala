@@ -20,32 +20,17 @@ trait JdbcParameterMetaData extends js.Object {
 object JdbcParameterMetaData {
   @scala.inline
   def apply(
-    getParameterClassName: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, java.lang.String],
-    getParameterCount: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getParameterMode: js.Function1[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
-    ],
-    getParameterType: js.Function1[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
-    ],
-    getParameterTypeName: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, java.lang.String],
-    getPrecision: js.Function1[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
-    ],
-    getScale: js.Function1[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
-    ],
-    isNullable: js.Function1[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
-    ],
-    isSigned: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Boolean]
+    getParameterClassName: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => java.lang.String,
+    getParameterCount: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getParameterMode: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getParameterType: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getParameterTypeName: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => java.lang.String,
+    getPrecision: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getScale: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    isNullable: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    isSigned: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => scala.Boolean
   ): JdbcParameterMetaData = {
-    val __obj = js.Dynamic.literal(getParameterClassName = getParameterClassName, getParameterCount = getParameterCount, getParameterMode = getParameterMode, getParameterType = getParameterType, getParameterTypeName = getParameterTypeName, getPrecision = getPrecision, getScale = getScale, isNullable = isNullable, isSigned = isSigned)
+    val __obj = js.Dynamic.literal(getParameterClassName = js.Any.fromFunction1(getParameterClassName), getParameterCount = js.Any.fromFunction0(getParameterCount), getParameterMode = js.Any.fromFunction1(getParameterMode), getParameterType = js.Any.fromFunction1(getParameterType), getParameterTypeName = js.Any.fromFunction1(getParameterTypeName), getPrecision = js.Any.fromFunction1(getPrecision), getScale = js.Any.fromFunction1(getScale), isNullable = js.Any.fromFunction1(isNullable), isSigned = js.Any.fromFunction1(isSigned))
   
     __obj.asInstanceOf[JdbcParameterMetaData]
   }

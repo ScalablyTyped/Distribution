@@ -43,9 +43,9 @@ trait BrowserInfo extends js.Object {
 object BrowserInfo {
   @scala.inline
   def apply(
-    Select: js.Function1[js.Any, scala.Unit],
+    Select: js.Any => scala.Unit,
     version: java.lang.String,
-    versionAtLeast: js.Function1[java.lang.String, scala.Unit],
+    versionAtLeast: java.lang.String => scala.Unit,
     isChrome: js.UndefOr[scala.Boolean] = js.undefined,
     isFirefox: js.UndefOr[scala.Boolean] = js.undefined,
     isKonqueror: js.UndefOr[scala.Boolean] = js.undefined,
@@ -56,7 +56,7 @@ object BrowserInfo {
     isPC: js.UndefOr[scala.Boolean] = js.undefined,
     isSafari: js.UndefOr[scala.Boolean] = js.undefined
   ): BrowserInfo = {
-    val __obj = js.Dynamic.literal(Select = Select, version = version, versionAtLeast = versionAtLeast)
+    val __obj = js.Dynamic.literal(Select = js.Any.fromFunction1(Select), version = version, versionAtLeast = js.Any.fromFunction1(versionAtLeast))
     if (!js.isUndefined(isChrome)) __obj.updateDynamic("isChrome")(isChrome)
     if (!js.isUndefined(isFirefox)) __obj.updateDynamic("isFirefox")(isFirefox)
     if (!js.isUndefined(isKonqueror)) __obj.updateDynamic("isKonqueror")(isKonqueror)

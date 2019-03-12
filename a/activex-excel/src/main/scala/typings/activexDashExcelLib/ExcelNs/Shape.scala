@@ -11,7 +11,7 @@ class Shape protected () extends js.Object {
   @JSName("Adjustments")
   val Adjustments_Original: Adjustments = js.native
   var AlternativeText: java.lang.String = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var AutoShapeType: activexDashOfficeLib.OfficeNs.MsoAutoShapeType = js.native
   var BackgroundStyle: activexDashOfficeLib.OfficeNs.MsoBackgroundStyleIndex = js.native
   var BlackWhiteMode: activexDashOfficeLib.OfficeNs.MsoBlackWhiteMode = js.native
@@ -20,15 +20,15 @@ class Shape protected () extends js.Object {
   val Callout: CalloutFormat = js.native
   @JSName("CanvasItems")
   val CanvasItems_Original: activexDashOfficeLib.OfficeNs.CanvasShapes = js.native
-  val Chart: Chart = js.native
+  val Chart: activexDashExcelLib.ExcelNs.Chart = js.native
   val Child: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   val ConnectionSiteCount: scala.Double = js.native
   val Connector: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
-  val ConnectorFormat: ConnectorFormat = js.native
-  val ControlFormat: ControlFormat = js.native
+  val ConnectorFormat: activexDashExcelLib.ExcelNs.ConnectorFormat = js.native
+  val ControlFormat: activexDashExcelLib.ExcelNs.ControlFormat = js.native
   val Creator: XlCreator = js.native
-  val Diagram: Diagram = js.native
-  val DiagramNode: DiagramNode = js.native
+  val Diagram: activexDashExcelLib.ExcelNs.Diagram = js.native
+  val DiagramNode: activexDashExcelLib.ExcelNs.DiagramNode = js.native
   val DrawingObject: js.Any = js.native
   var `Excel.Shape_typekey`: Shape = js.native
   val Fill: FillFormat = js.native
@@ -42,21 +42,21 @@ class Shape protected () extends js.Object {
   val HasSmartArt: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   var Height: scala.Double = js.native
   val HorizontalFlip: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
-  val Hyperlink: Hyperlink = js.native
+  val Hyperlink: activexDashExcelLib.ExcelNs.Hyperlink = js.native
   val ID: scala.Double = js.native
   var Left: scala.Double = js.native
   val Line: LineFormat = js.native
-  val LinkFormat: LinkFormat = js.native
+  val LinkFormat: activexDashExcelLib.ExcelNs.LinkFormat = js.native
   var LockAspectRatio: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   var Locked: scala.Boolean = js.native
   var Name: java.lang.String = js.native
   @JSName("Nodes")
   val Nodes_Original: ShapeNodes = js.native
-  val OLEFormat: OLEFormat = js.native
+  val OLEFormat: activexDashExcelLib.ExcelNs.OLEFormat = js.native
   var OnAction: java.lang.String = js.native
   val Parent: js.Any = js.native
   val ParentGroup: Shape = js.native
-  val PictureFormat: PictureFormat = js.native
+  val PictureFormat: activexDashExcelLib.ExcelNs.PictureFormat = js.native
   var Placement: XlPlacement = js.native
   val Reflection: activexDashOfficeLib.OfficeNs.ReflectionFormat = js.native
   var Rotation: scala.Double = js.native
@@ -66,8 +66,8 @@ class Shape protected () extends js.Object {
   val SmartArt: activexDashOfficeLib.OfficeNs.SmartArt = js.native
   val SoftEdge: activexDashOfficeLib.OfficeNs.SoftEdgeFormat = js.native
   val TextEffect: TextEffectFormat = js.native
-  val TextFrame: TextFrame = js.native
-  val TextFrame2: TextFrame2 = js.native
+  val TextFrame: activexDashExcelLib.ExcelNs.TextFrame = js.native
+  val TextFrame2: activexDashExcelLib.ExcelNs.TextFrame2 = js.native
   val ThreeD: ThreeDFormat = js.native
   var Title: java.lang.String = js.native
   var Top: scala.Double = js.native
@@ -75,7 +75,7 @@ class Shape protected () extends js.Object {
   val TopLeftCell_Original: Range = js.native
   val Type: activexDashOfficeLib.OfficeNs.MsoShapeType = js.native
   val VerticalFlip: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
-  val Vertices: activexDashInteropLib.SafeArray[scala.Double] = js.native
+  val Vertices: stdLib.SafeArray[scala.Double] = js.native
   var Visible: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   var Width: scala.Double = js.native
   val ZOrderPosition: scala.Double = js.native

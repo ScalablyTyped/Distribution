@@ -26,7 +26,7 @@ class XDocument protected () extends js.Object {
   var Role: java.lang.String = js.native
   val SignedDataBlocks: SignedDataBlocksCollection = js.native
   val Solution: SolutionObject = js.native
-  val UI: UI = js.native
+  val UI: activexDashInfopathLib.InfoPathNs.UI = js.native
   val URI: java.lang.String = js.native
   val Util: UtilObject = js.native
   val View: ViewObject = js.native

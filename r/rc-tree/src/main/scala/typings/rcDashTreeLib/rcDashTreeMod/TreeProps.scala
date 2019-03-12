@@ -170,22 +170,22 @@ object TreeProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
     expandedKeys: js.Array[java.lang.String] = null,
-    filterTreeNode: js.Function1[/* node */ InternalTreeNode, scala.Boolean] = null,
+    filterTreeNode: /* node */ InternalTreeNode => scala.Boolean = null,
     icon: reactLib.reactMod.Global.JSXNs.Element | (js.Function1[/* props */ InternalTreeNodeProps, reactLib.reactMod.Global.JSXNs.Element]) = null,
-    loadData: js.Function1[/* node */ InternalTreeNode, js.Promise[_]] = null,
+    loadData: /* node */ InternalTreeNode => js.Promise[_] = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
-    onCheck: js.Function2[/* checkedKeys */ js.Array[java.lang.String], /* e */ CheckData, scala.Unit] = null,
-    onDragEnd: js.Function1[/* props */ OnDragEndData, scala.Unit] = null,
-    onDragEnter: js.Function1[/* props */ OnDragEnterData, scala.Unit] = null,
-    onDragLeave: js.Function1[/* props */ OnDragLeaveData, scala.Unit] = null,
-    onDragOver: js.Function1[/* props */ OnDragOverData, scala.Unit] = null,
-    onDragStart: js.Function1[/* props */ OnDragStartData, scala.Unit] = null,
-    onDrop: js.Function1[/* props */ OnDropData, scala.Unit] = null,
-    onExpand: js.Function2[/* expandedKeys */ js.Array[java.lang.String], /* e */ ExpandData, scala.Unit] = null,
-    onMouseEnter: js.Function1[/* props */ OnMouseEnterData, scala.Unit] = null,
-    onMouseLeave: js.Function1[/* props */ OnMouseLeaveData, scala.Unit] = null,
-    onRightClick: js.Function1[/* props */ OnRightClickData, scala.Unit] = null,
-    onSelect: js.Function2[/* selectedKeys */ js.Array[java.lang.String], /* e */ SelectData, scala.Unit] = null,
+    onCheck: (/* checkedKeys */ js.Array[java.lang.String], /* e */ CheckData) => scala.Unit = null,
+    onDragEnd: /* props */ OnDragEndData => scala.Unit = null,
+    onDragEnter: /* props */ OnDragEnterData => scala.Unit = null,
+    onDragLeave: /* props */ OnDragLeaveData => scala.Unit = null,
+    onDragOver: /* props */ OnDragOverData => scala.Unit = null,
+    onDragStart: /* props */ OnDragStartData => scala.Unit = null,
+    onDrop: /* props */ OnDropData => scala.Unit = null,
+    onExpand: (/* expandedKeys */ js.Array[java.lang.String], /* e */ ExpandData) => scala.Unit = null,
+    onMouseEnter: /* props */ OnMouseEnterData => scala.Unit = null,
+    onMouseLeave: /* props */ OnMouseLeaveData => scala.Unit = null,
+    onRightClick: /* props */ OnRightClickData => scala.Unit = null,
+    onSelect: (/* selectedKeys */ js.Array[java.lang.String], /* e */ SelectData) => scala.Unit = null,
     prefixCls: java.lang.String = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
     selectedKeys: js.Array[java.lang.String] = null,
@@ -206,22 +206,22 @@ object TreeProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
     if (expandedKeys != null) __obj.updateDynamic("expandedKeys")(expandedKeys)
-    if (filterTreeNode != null) __obj.updateDynamic("filterTreeNode")(filterTreeNode)
+    if (filterTreeNode != null) __obj.updateDynamic("filterTreeNode")(js.Any.fromFunction1(filterTreeNode))
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (loadData != null) __obj.updateDynamic("loadData")(loadData)
+    if (loadData != null) __obj.updateDynamic("loadData")(js.Any.fromFunction1(loadData))
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (onCheck != null) __obj.updateDynamic("onCheck")(onCheck)
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd)
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(onDragEnter)
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(onDragLeave)
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(onDragOver)
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
-    if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop)
-    if (onExpand != null) __obj.updateDynamic("onExpand")(onExpand)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
-    if (onRightClick != null) __obj.updateDynamic("onRightClick")(onRightClick)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onCheck != null) __obj.updateDynamic("onCheck")(js.Any.fromFunction2(onCheck))
+    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
+    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction1(onDragEnter))
+    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction1(onDragLeave))
+    if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction1(onDragOver))
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
+    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1(onDrop))
+    if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction2(onExpand))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
+    if (onRightClick != null) __obj.updateDynamic("onRightClick")(js.Any.fromFunction1(onRightClick))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
     if (selectedKeys != null) __obj.updateDynamic("selectedKeys")(selectedKeys)

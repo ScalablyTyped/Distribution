@@ -19,24 +19,24 @@ trait RouterOptions extends js.Object {
 object RouterOptions {
   @scala.inline
   def apply(
-    change: js.Function1[/* e */ RouterChangeEvent, scala.Unit] = null,
+    change: /* e */ RouterChangeEvent => scala.Unit = null,
     hashBang: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreCase: js.UndefOr[scala.Boolean] = js.undefined,
-    init: js.Function1[/* e */ RouterEvent, scala.Unit] = null,
+    init: /* e */ RouterEvent => scala.Unit = null,
     pushState: js.UndefOr[scala.Boolean] = js.undefined,
     root: java.lang.String = null,
-    routeMissing: js.Function1[/* e */ RouterRouteMissingEvent, scala.Unit] = null,
-    same: js.Function1[/* e */ RouterEvent, scala.Unit] = null
+    routeMissing: /* e */ RouterRouteMissingEvent => scala.Unit = null,
+    same: /* e */ RouterEvent => scala.Unit = null
   ): RouterOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (!js.isUndefined(hashBang)) __obj.updateDynamic("hashBang")(hashBang)
     if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase)
-    if (init != null) __obj.updateDynamic("init")(init)
+    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (!js.isUndefined(pushState)) __obj.updateDynamic("pushState")(pushState)
     if (root != null) __obj.updateDynamic("root")(root)
-    if (routeMissing != null) __obj.updateDynamic("routeMissing")(routeMissing)
-    if (same != null) __obj.updateDynamic("same")(same)
+    if (routeMissing != null) __obj.updateDynamic("routeMissing")(js.Any.fromFunction1(routeMissing))
+    if (same != null) __obj.updateDynamic("same")(js.Any.fromFunction1(same))
     __obj.asInstanceOf[RouterOptions]
   }
 }

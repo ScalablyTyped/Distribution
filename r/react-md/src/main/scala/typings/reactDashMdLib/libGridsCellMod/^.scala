@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/Grids/Cell", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactDashMdLib.libGridsCellMod.CellComponent = js.native
+  val default: CellComponent = js.native
 }
 

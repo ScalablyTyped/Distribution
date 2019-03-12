@@ -11,8 +11,8 @@ trait IProgressCircularProvider extends js.Object {
 
 object IProgressCircularProvider {
   @scala.inline
-  def apply(configure: js.Function1[IProgressCircularConfig, scala.Unit]): IProgressCircularProvider = {
-    val __obj = js.Dynamic.literal(configure = configure)
+  def apply(configure: IProgressCircularConfig => scala.Unit): IProgressCircularProvider = {
+    val __obj = js.Dynamic.literal(configure = js.Any.fromFunction1(configure))
   
     __obj.asInstanceOf[IProgressCircularProvider]
   }

@@ -17,14 +17,14 @@ trait BufferedWriter extends js.Object {
 object BufferedWriter {
   @scala.inline
   def apply(
-    clear: js.Function0[scala.Unit],
-    end: js.Function0[scala.Unit],
-    flush: js.Function0[scala.Unit],
-    on: js.Function2[java.lang.String, js.Function, BufferedWriter],
-    once: js.Function2[java.lang.String, js.Function, BufferedWriter],
-    write: js.Function1[java.lang.String, BufferedWriter]
+    clear: () => scala.Unit,
+    end: () => scala.Unit,
+    flush: () => scala.Unit,
+    on: (java.lang.String, js.Function) => BufferedWriter,
+    once: (java.lang.String, js.Function) => BufferedWriter,
+    write: java.lang.String => BufferedWriter
   ): BufferedWriter = {
-    val __obj = js.Dynamic.literal(clear = clear, end = end, flush = flush, on = on, once = once, write = write)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), end = js.Any.fromFunction0(end), flush = js.Any.fromFunction0(flush), on = js.Any.fromFunction2(on), once = js.Any.fromFunction2(once), write = js.Any.fromFunction1(write))
   
     __obj.asInstanceOf[BufferedWriter]
   }

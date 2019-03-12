@@ -21,27 +21,25 @@ object XFormController {
   @scala.inline
   def apply(
     Container: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlContainer,
-    Controls: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl],
+    Controls: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl],
     CurrentControl: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl,
-    acquire: js.Function0[scala.Unit],
-    activateFirst: js.Function0[scala.Unit],
-    activateLast: js.Function0[scala.Unit],
-    activateTabOrder: js.Function0[scala.Unit],
-    addActivateListener: js.Function1[XFormControllerListener, scala.Unit],
-    autoTabOrder: js.Function0[scala.Unit],
-    getContainer: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlContainer],
-    getControls: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl]
-    ],
-    getCurrentControl: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl],
-    getModel: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XTabControllerModel],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeActivateListener: js.Function1[XFormControllerListener, scala.Unit],
-    setContainer: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlContainer, scala.Unit],
-    setModel: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XTabControllerModel, scala.Unit]
+    acquire: () => scala.Unit,
+    activateFirst: () => scala.Unit,
+    activateLast: () => scala.Unit,
+    activateTabOrder: () => scala.Unit,
+    addActivateListener: XFormControllerListener => scala.Unit,
+    autoTabOrder: () => scala.Unit,
+    getContainer: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlContainer,
+    getControls: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl],
+    getCurrentControl: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl,
+    getModel: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XTabControllerModel,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeActivateListener: XFormControllerListener => scala.Unit,
+    setContainer: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlContainer => scala.Unit,
+    setModel: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XTabControllerModel => scala.Unit
   ): XFormController = {
-    val __obj = js.Dynamic.literal(Container = Container, Controls = Controls, CurrentControl = CurrentControl, acquire = acquire, activateFirst = activateFirst, activateLast = activateLast, activateTabOrder = activateTabOrder, addActivateListener = addActivateListener, autoTabOrder = autoTabOrder, getContainer = getContainer, getControls = getControls, getCurrentControl = getCurrentControl, getModel = getModel, queryInterface = queryInterface, release = release, removeActivateListener = removeActivateListener, setContainer = setContainer, setModel = setModel)
+    val __obj = js.Dynamic.literal(Container = Container, Controls = Controls, CurrentControl = CurrentControl, acquire = js.Any.fromFunction0(acquire), activateFirst = js.Any.fromFunction0(activateFirst), activateLast = js.Any.fromFunction0(activateLast), activateTabOrder = js.Any.fromFunction0(activateTabOrder), addActivateListener = js.Any.fromFunction1(addActivateListener), autoTabOrder = js.Any.fromFunction0(autoTabOrder), getContainer = js.Any.fromFunction0(getContainer), getControls = js.Any.fromFunction0(getControls), getCurrentControl = js.Any.fromFunction0(getCurrentControl), getModel = js.Any.fromFunction0(getModel), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeActivateListener = js.Any.fromFunction1(removeActivateListener), setContainer = js.Any.fromFunction1(setContainer), setModel = js.Any.fromFunction1(setModel))
   
     __obj.asInstanceOf[XFormController]
   }

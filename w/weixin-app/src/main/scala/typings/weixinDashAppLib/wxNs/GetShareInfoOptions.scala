@@ -17,13 +17,13 @@ object GetShareInfoOptions {
   @scala.inline
   def apply(
     shareTicket: java.lang.String,
-    success: js.Function1[weixinDashAppLib.Anon_EncryptedData, scala.Unit],
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
-    fail: js.Function1[js.Any, scala.Unit] = null
+    success: weixinDashAppLib.Anon_EncryptedData => scala.Unit,
+    complete: /* res */ js.Any => scala.Unit = null,
+    fail: js.Any => scala.Unit = null
   ): GetShareInfoOptions = {
-    val __obj = js.Dynamic.literal(shareTicket = shareTicket, success = success)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    val __obj = js.Dynamic.literal(shareTicket = shareTicket, success = js.Any.fromFunction1(success))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[GetShareInfoOptions]
   }
 }

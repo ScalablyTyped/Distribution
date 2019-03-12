@@ -13,10 +13,10 @@ trait IStorageDeviceStatics extends js.Object {
 object IStorageDeviceStatics {
   @scala.inline
   def apply(
-    fromId: js.Function1[java.lang.String, winrtLib.WindowsNs.StorageNs.StorageFolder],
-    getDeviceSelector: js.Function0[java.lang.String]
+    fromId: java.lang.String => winrtLib.WindowsNs.StorageNs.StorageFolder,
+    getDeviceSelector: () => java.lang.String
   ): IStorageDeviceStatics = {
-    val __obj = js.Dynamic.literal(fromId = fromId, getDeviceSelector = getDeviceSelector)
+    val __obj = js.Dynamic.literal(fromId = js.Any.fromFunction1(fromId), getDeviceSelector = js.Any.fromFunction0(getDeviceSelector))
   
     __obj.asInstanceOf[IStorageDeviceStatics]
   }

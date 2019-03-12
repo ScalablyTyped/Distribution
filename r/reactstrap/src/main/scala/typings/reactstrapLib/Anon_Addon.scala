@@ -10,7 +10,7 @@ trait Anon_Addon extends js.Object {
   var bsSize: js.UndefOr[reactstrapLib.reactstrapLibStrings.lg | reactstrapLib.reactstrapLibStrings.sm] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
-  var innerRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[reactLib.HTMLInputElement]] = js.undefined
+  var innerRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[stdLib.HTMLInputElement]] = js.undefined
   var invalid: js.UndefOr[scala.Boolean] = js.undefined
   var plaintext: js.UndefOr[scala.Boolean] = js.undefined
   var state: js.UndefOr[java.lang.String] = js.undefined
@@ -26,7 +26,7 @@ object Anon_Addon {
     bsSize: reactstrapLib.reactstrapLibStrings.lg | reactstrapLib.reactstrapLibStrings.sm = null,
     className: java.lang.String = null,
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[reactLib.HTMLInputElement] = null,
+    innerRef: reactLib.reactMod.ReactNs.Ref[stdLib.HTMLInputElement] = null,
     invalid: js.UndefOr[scala.Boolean] = js.undefined,
     plaintext: js.UndefOr[scala.Boolean] = js.undefined,
     state: java.lang.String = null,

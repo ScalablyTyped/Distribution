@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait QualifyingProperties
   extends xmlDashCoreLib.xmlDashCoreMod.XmlObject {
   var Id: java.lang.String = js.native
-  var SignedProperties: SignedProperties = js.native
+  var SignedProperties: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.SignedProperties = js.native
   var Target: java.lang.String = js.native
-  var UnsignedProperties: UnsignedProperties = js.native
+  var UnsignedProperties: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.UnsignedProperties = js.native
 }
 

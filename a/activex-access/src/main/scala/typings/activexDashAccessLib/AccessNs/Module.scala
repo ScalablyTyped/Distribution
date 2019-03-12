@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Module protected () extends js.Object {
   var `Access.Module_typekey`: Module = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   val CountOfDeclarationLines: scala.Double = js.native
   val CountOfLines: scala.Double = js.native
   var Name: java.lang.String = js.native

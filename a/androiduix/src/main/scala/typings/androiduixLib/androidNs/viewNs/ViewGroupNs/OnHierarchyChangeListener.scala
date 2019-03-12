@@ -13,10 +13,10 @@ trait OnHierarchyChangeListener extends js.Object {
 object OnHierarchyChangeListener {
   @scala.inline
   def apply(
-    onChildViewAdded: js.Function2[androiduixLib.androidNs.viewNs.View, androiduixLib.androidNs.viewNs.View, js.Any],
-    onChildViewRemoved: js.Function2[androiduixLib.androidNs.viewNs.View, androiduixLib.androidNs.viewNs.View, js.Any]
+    onChildViewAdded: (androiduixLib.androidNs.viewNs.View, androiduixLib.androidNs.viewNs.View) => js.Any,
+    onChildViewRemoved: (androiduixLib.androidNs.viewNs.View, androiduixLib.androidNs.viewNs.View) => js.Any
   ): OnHierarchyChangeListener = {
-    val __obj = js.Dynamic.literal(onChildViewAdded = onChildViewAdded, onChildViewRemoved = onChildViewRemoved)
+    val __obj = js.Dynamic.literal(onChildViewAdded = js.Any.fromFunction2(onChildViewAdded), onChildViewRemoved = js.Any.fromFunction2(onChildViewRemoved))
   
     __obj.asInstanceOf[OnHierarchyChangeListener]
   }

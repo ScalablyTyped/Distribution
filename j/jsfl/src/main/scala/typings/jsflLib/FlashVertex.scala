@@ -15,12 +15,12 @@ trait FlashVertex extends js.Object {
 object FlashVertex {
   @scala.inline
   def apply(
-    getHalfEdge: js.Function0[FlashHalfEdge],
-    setLocation: js.Function2[scala.Double, scala.Double, js.Any],
+    getHalfEdge: () => FlashHalfEdge,
+    setLocation: (scala.Double, scala.Double) => js.Any,
     x: scala.Double,
     y: scala.Double
   ): FlashVertex = {
-    val __obj = js.Dynamic.literal(getHalfEdge = getHalfEdge, setLocation = setLocation, x = x, y = y)
+    val __obj = js.Dynamic.literal(getHalfEdge = js.Any.fromFunction0(getHalfEdge), setLocation = js.Any.fromFunction2(setLocation), x = x, y = y)
   
     __obj.asInstanceOf[FlashVertex]
   }

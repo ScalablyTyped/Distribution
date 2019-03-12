@@ -13,10 +13,10 @@ trait Limiter extends js.Object {
 object Limiter {
   @scala.inline
   def apply(
-    get: js.Function1[js.Function2[/* err */ js.Any, /* info */ LimiterInfo, scala.Unit], scala.Unit],
-    inspect: js.Function0[java.lang.String]
+    get: js.Function2[/* err */ js.Any, /* info */ LimiterInfo, scala.Unit] => scala.Unit,
+    inspect: () => java.lang.String
   ): Limiter = {
-    val __obj = js.Dynamic.literal(get = get, inspect = inspect)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), inspect = js.Any.fromFunction0(inspect))
   
     __obj.asInstanceOf[Limiter]
   }

@@ -9,7 +9,7 @@
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate/vue.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate, vue))) [id => vuelidate, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate/vuelidate.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate, vuelidate))) [id => vuelidate, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(vuelidate, vuelidate)) [id => vuelidate, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:200 Processing TsIdentLibrarySimple(vuelidate) [id => vuelidate, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:201 Processing TsIdentLibrarySimple(vuelidate) [id => vuelidate, phase => typescript] 
 [warn ] SimplifyRecursiveTypeAlias.scala:14 Simplified recursive type alias vuelidate.vue/types/vue.ValidationProperties<V[P]> [id => vuelidate, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(vue/types/vue) / TsDeclTypeAlias(ValidationProperties) / TsTypeObject() / TsMemberTypeMapped() / TsTypeIntersect() / TsTypeRef())] 
 [debug] PhaseRunner.scala:82 Success [id => vuelidate, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing vuelidate [id => vuelidate, phase => scala.js] 

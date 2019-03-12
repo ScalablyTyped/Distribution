@@ -61,31 +61,20 @@ trait ViewEngineHooks extends js.Object {
 object ViewEngineHooks {
   @scala.inline
   def apply(
-    afterCompile: js.Function1[/* viewFactory */ ViewFactory, scala.Unit] = null,
-    afterCreate: js.Function1[/* view */ View, scala.Unit] = null,
-    beforeBind: js.Function1[/* view */ View, scala.Unit] = null,
-    beforeCompile: js.Function3[
-      /* content */ stdLib.DocumentFragment, 
-      /* resources */ ViewResources, 
-      /* instruction */ ViewCompileInstruction, 
-      scala.Unit
-    ] = null,
-    beforeCreate: js.Function4[
-      /* viewFactory */ ViewFactory, 
-      /* container */ aureliaDashDependencyDashInjectionLib.aureliaDashDependencyDashInjectionMod.Container, 
-      /* content */ stdLib.DocumentFragment, 
-      /* instruction */ ViewCreateInstruction, 
-      scala.Unit
-    ] = null,
-    beforeUnbind: js.Function1[/* view */ View, scala.Unit] = null
+    afterCompile: /* viewFactory */ ViewFactory => scala.Unit = null,
+    afterCreate: /* view */ View => scala.Unit = null,
+    beforeBind: /* view */ View => scala.Unit = null,
+    beforeCompile: (/* content */ stdLib.DocumentFragment, /* resources */ ViewResources, /* instruction */ ViewCompileInstruction) => scala.Unit = null,
+    beforeCreate: (/* viewFactory */ ViewFactory, /* container */ aureliaDashDependencyDashInjectionLib.aureliaDashDependencyDashInjectionMod.Container, /* content */ stdLib.DocumentFragment, /* instruction */ ViewCreateInstruction) => scala.Unit = null,
+    beforeUnbind: /* view */ View => scala.Unit = null
   ): ViewEngineHooks = {
     val __obj = js.Dynamic.literal()
-    if (afterCompile != null) __obj.updateDynamic("afterCompile")(afterCompile)
-    if (afterCreate != null) __obj.updateDynamic("afterCreate")(afterCreate)
-    if (beforeBind != null) __obj.updateDynamic("beforeBind")(beforeBind)
-    if (beforeCompile != null) __obj.updateDynamic("beforeCompile")(beforeCompile)
-    if (beforeCreate != null) __obj.updateDynamic("beforeCreate")(beforeCreate)
-    if (beforeUnbind != null) __obj.updateDynamic("beforeUnbind")(beforeUnbind)
+    if (afterCompile != null) __obj.updateDynamic("afterCompile")(js.Any.fromFunction1(afterCompile))
+    if (afterCreate != null) __obj.updateDynamic("afterCreate")(js.Any.fromFunction1(afterCreate))
+    if (beforeBind != null) __obj.updateDynamic("beforeBind")(js.Any.fromFunction1(beforeBind))
+    if (beforeCompile != null) __obj.updateDynamic("beforeCompile")(js.Any.fromFunction3(beforeCompile))
+    if (beforeCreate != null) __obj.updateDynamic("beforeCreate")(js.Any.fromFunction4(beforeCreate))
+    if (beforeUnbind != null) __obj.updateDynamic("beforeUnbind")(js.Any.fromFunction1(beforeUnbind))
     __obj.asInstanceOf[ViewEngineHooks]
   }
 }

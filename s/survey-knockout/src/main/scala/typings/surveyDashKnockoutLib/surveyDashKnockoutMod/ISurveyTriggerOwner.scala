@@ -15,12 +15,12 @@ trait ISurveyTriggerOwner extends js.Object {
 object ISurveyTriggerOwner {
   @scala.inline
   def apply(
-    copyTriggerValue: js.Function2[java.lang.String, java.lang.String, js.Any],
-    getObjects: js.Function2[js.Array[java.lang.String], js.Array[java.lang.String], js.Array[_]],
-    setCompleted: js.Function0[js.Any],
-    setTriggerValue: js.Function3[java.lang.String, js.Any, scala.Boolean, js.Any]
+    copyTriggerValue: (java.lang.String, java.lang.String) => js.Any,
+    getObjects: (js.Array[java.lang.String], js.Array[java.lang.String]) => js.Array[_],
+    setCompleted: () => js.Any,
+    setTriggerValue: (java.lang.String, js.Any, scala.Boolean) => js.Any
   ): ISurveyTriggerOwner = {
-    val __obj = js.Dynamic.literal(copyTriggerValue = copyTriggerValue, getObjects = getObjects, setCompleted = setCompleted, setTriggerValue = setTriggerValue)
+    val __obj = js.Dynamic.literal(copyTriggerValue = js.Any.fromFunction2(copyTriggerValue), getObjects = js.Any.fromFunction2(getObjects), setCompleted = js.Any.fromFunction0(setCompleted), setTriggerValue = js.Any.fromFunction3(setTriggerValue))
   
     __obj.asInstanceOf[ISurveyTriggerOwner]
   }

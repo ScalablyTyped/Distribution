@@ -26,15 +26,15 @@ object NumberFormatsSupplier {
   def apply(
     NumberFormatSettings: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
     NumberFormats: XNumberFormats,
-    acquire: js.Function0[scala.Unit],
-    createWithDefaultLocale: js.Function0[scala.Unit],
-    createWithLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit],
-    getNumberFormatSettings: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    getNumberFormats: js.Function0[XNumberFormats],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createWithDefaultLocale: () => scala.Unit,
+    createWithLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => scala.Unit,
+    getNumberFormatSettings: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    getNumberFormats: () => XNumberFormats,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): NumberFormatsSupplier = {
-    val __obj = js.Dynamic.literal(NumberFormatSettings = NumberFormatSettings, NumberFormats = NumberFormats, acquire = acquire, createWithDefaultLocale = createWithDefaultLocale, createWithLocale = createWithLocale, getNumberFormatSettings = getNumberFormatSettings, getNumberFormats = getNumberFormats, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(NumberFormatSettings = NumberFormatSettings, NumberFormats = NumberFormats, acquire = js.Any.fromFunction0(acquire), createWithDefaultLocale = js.Any.fromFunction0(createWithDefaultLocale), createWithLocale = js.Any.fromFunction1(createWithLocale), getNumberFormatSettings = js.Any.fromFunction0(getNumberFormatSettings), getNumberFormats = js.Any.fromFunction0(getNumberFormats), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[NumberFormatsSupplier]
   }

@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait StructureSpawnConstructor extends _ConstructorById[StructureSpawn] {
-  var Spawning: SpawningConstructor = js.native
+  @JSName("Spawning")
+  var Spawning_Original: SpawningConstructor = js.native
+  def Spawning(id: java.lang.String): screepsLib.Spawning = js.native
 }
 

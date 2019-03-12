@@ -27,9 +27,9 @@ object Handler {
   @scala.inline
   def apply[T /* <: Request */](
     attributes: js.Any,
-    callback: js.Function1[js.Any, scala.Unit],
+    callback: js.Any => scala.Unit,
     context: js.Any,
-    emit: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Boolean],
+    emit: (java.lang.String, /* repeated */ js.Any) => scala.Boolean,
     emitWithState: js.Any,
     event: RequestBody[T],
     handler: js.Any,
@@ -40,9 +40,9 @@ object Handler {
     on: js.Any,
     response: ResponseBuilder,
     state: js.Any,
-    t: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Unit]
+    t: (java.lang.String, /* repeated */ js.Any) => scala.Unit
   ): Handler[T] = {
-    val __obj = js.Dynamic.literal(attributes = attributes, callback = callback, context = context, emit = emit, emitWithState = emitWithState, event = event, handler = handler, i18n = i18n, isOverriden = isOverriden, locale = locale, name = name, on = on, response = response, state = state, t = t)
+    val __obj = js.Dynamic.literal(attributes = attributes, callback = js.Any.fromFunction1(callback), context = context, emit = js.Any.fromFunction2(emit), emitWithState = emitWithState, event = event, handler = handler, i18n = i18n, isOverriden = isOverriden, locale = locale, name = name, on = on, response = response, state = state, t = js.Any.fromFunction2(t))
   
     __obj.asInstanceOf[Handler[T]]
   }

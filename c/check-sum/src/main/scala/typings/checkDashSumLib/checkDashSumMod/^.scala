@@ -12,7 +12,7 @@ object ^ extends js.Object {
     path: java.lang.String,
     hashes: checkDashSumLib.checkDashSumMod.checksumNs.Hashes,
     callback: js.Function1[
-      /* error */ js.UndefOr[checkDashSumLib.checkDashSumMod.checksumNs.ChecksumError | nodeLib.Error], 
+      /* error */ js.UndefOr[checkDashSumLib.checkDashSumMod.checksumNs.ChecksumError | stdLib.Error], 
       scala.Unit
     ]
   ): js.Function1[/* fn */ js.Function0[scala.Unit], scala.Unit] = js.native

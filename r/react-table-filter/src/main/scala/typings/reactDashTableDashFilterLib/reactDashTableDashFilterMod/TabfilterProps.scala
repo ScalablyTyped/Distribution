@@ -17,12 +17,12 @@ trait TabfilterProps extends js.Object {
 object TabfilterProps {
   @scala.inline
   def apply(
-    onFilterUpdate: js.Function2[js.Array[java.lang.String], js.Array[_], js.Array[_] | scala.Unit],
+    onFilterUpdate: (js.Array[java.lang.String], js.Array[_]) => js.Array[_] | scala.Unit,
     rows: java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[scala.Boolean],
     initialFilters: java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[scala.Boolean] = null,
     rowClass: java.lang.String = null
   ): TabfilterProps = {
-    val __obj = js.Dynamic.literal(onFilterUpdate = onFilterUpdate, rows = rows.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(onFilterUpdate = js.Any.fromFunction2(onFilterUpdate), rows = rows.asInstanceOf[js.Any])
     if (initialFilters != null) __obj.updateDynamic("initialFilters")(initialFilters.asInstanceOf[js.Any])
     if (rowClass != null) __obj.updateDynamic("rowClass")(rowClass)
     __obj.asInstanceOf[TabfilterProps]

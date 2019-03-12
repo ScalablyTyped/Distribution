@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   // Ambient declarations for typescript+requirejs
-  var kocommand: koliteLib.KnockoutCommandStatic = js.native
+  var kocommand: KnockoutCommandStatic = js.native
   // AMD
-  var kodirtyflag: koliteLib.KnockoutDirtyFlagStatic = js.native
+  var kodirtyflag: KnockoutDirtyFlagStatic = js.native
 }
 

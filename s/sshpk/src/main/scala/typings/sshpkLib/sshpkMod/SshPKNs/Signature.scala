@@ -12,11 +12,8 @@ trait Signature extends js.Object {
 
 object Signature {
   @scala.inline
-  def apply(
-    toBuffer: js.Function1[java.lang.String, nodeLib.Buffer],
-    toString: js.Function1[java.lang.String, java.lang.String]
-  ): Signature = {
-    val __obj = js.Dynamic.literal(toBuffer = toBuffer, toString = toString)
+  def apply(toBuffer: java.lang.String => nodeLib.Buffer, toString: java.lang.String => java.lang.String): Signature = {
+    val __obj = js.Dynamic.literal(toBuffer = js.Any.fromFunction1(toBuffer), toString = js.Any.fromFunction1(toString))
   
     __obj.asInstanceOf[Signature]
   }

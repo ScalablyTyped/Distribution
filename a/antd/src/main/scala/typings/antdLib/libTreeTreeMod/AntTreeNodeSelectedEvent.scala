@@ -15,7 +15,7 @@ object AntTreeNodeSelectedEvent {
   @scala.inline
   def apply(
     event: antdLib.antdLibStrings.select,
-    nativeEvent: reactLib.MouseEvent,
+    nativeEvent: stdLib.MouseEvent,
     node: AntTreeNode,
     selected: js.UndefOr[scala.Boolean] = js.undefined,
     selectedNodes: js.Array[AntTreeNode] = null

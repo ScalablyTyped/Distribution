@@ -69,7 +69,7 @@ trait Anon_AAVLTree extends js.Object {
       ]) | (org.scalablytyped.runtime.StringDictionary[/* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any])
     ], 
     /* iterable */ js.UndefOr[
-      /* iterable */ nodeLib.Iterable[
+      /* iterable */ stdLib.Iterable[
         js.Tuple2[
           /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
           /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any
@@ -205,7 +205,7 @@ object Anon_AAVLTree {
         ]) | (org.scalablytyped.runtime.StringDictionary[/* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any])
       ], 
       /* iterable */ js.UndefOr[
-        /* iterable */ nodeLib.Iterable[
+        /* iterable */ stdLib.Iterable[
           js.Tuple2[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any

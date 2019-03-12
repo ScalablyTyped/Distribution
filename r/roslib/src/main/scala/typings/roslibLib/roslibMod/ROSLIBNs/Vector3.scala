@@ -32,15 +32,15 @@ trait Vector3 extends js.Object {
 object Vector3 {
   @scala.inline
   def apply(
-    add: js.Function1[Vector3, scala.Unit],
-    clone: js.Function0[Vector3],
-    multiplyQuaternion: js.Function1[Quaternion, scala.Unit],
-    subtract: js.Function1[Vector3, scala.Unit],
+    add: Vector3 => scala.Unit,
+    clone: () => Vector3,
+    multiplyQuaternion: Quaternion => scala.Unit,
+    subtract: Vector3 => scala.Unit,
     x: scala.Double,
     y: scala.Double,
     z: scala.Double
   ): Vector3 = {
-    val __obj = js.Dynamic.literal(add = add, clone = clone, multiplyQuaternion = multiplyQuaternion, subtract = subtract, x = x, y = y, z = z)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), clone = js.Any.fromFunction0(clone), multiplyQuaternion = js.Any.fromFunction1(multiplyQuaternion), subtract = js.Any.fromFunction1(subtract), x = x, y = y, z = z)
   
     __obj.asInstanceOf[Vector3]
   }

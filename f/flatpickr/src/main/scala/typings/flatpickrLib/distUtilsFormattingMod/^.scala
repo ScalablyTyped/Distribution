@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("flatpickr/dist/utils/formatting", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val formats: flatpickrLib.distUtilsFormattingMod.Formats = js.native
-  val revFormat: flatpickrLib.distUtilsFormattingMod.RevFormat = js.native
-  val tokenRegex: flatpickrLib.distUtilsFormattingMod.TokenRegex = js.native
+  val formats: Formats = js.native
+  val revFormat: RevFormat = js.native
+  val tokenRegex: TokenRegex = js.native
   def monthToStr(
     monthNumber: scala.Double,
     shorthand: scala.Boolean,

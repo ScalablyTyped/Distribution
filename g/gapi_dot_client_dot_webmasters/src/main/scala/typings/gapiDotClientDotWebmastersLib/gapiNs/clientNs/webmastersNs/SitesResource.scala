@@ -19,24 +19,12 @@ trait SitesResource extends js.Object {
 object SitesResource {
   @scala.inline
   def apply(
-    add: js.Function1[
-      gapiDotClientDotWebmastersLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotWebmastersLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotWebmastersLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[WmxSite]
-    ],
-    list: js.Function1[
-      gapiDotClientDotWebmastersLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SitesListResponse]
-    ]
+    add: gapiDotClientDotWebmastersLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    delete: gapiDotClientDotWebmastersLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotWebmastersLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[WmxSite],
+    list: gapiDotClientDotWebmastersLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[SitesListResponse]
   ): SitesResource = {
-    val __obj = js.Dynamic.literal(add = add, delete = delete, get = get, list = list)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[SitesResource]
   }

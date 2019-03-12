@@ -12,8 +12,8 @@ trait detectPassiveEvents extends js.Object {
 
 object detectPassiveEvents {
   @scala.inline
-  def apply(hasSupport: scala.Boolean, update: js.Function0[scala.Unit]): detectPassiveEvents = {
-    val __obj = js.Dynamic.literal(hasSupport = hasSupport, update = update)
+  def apply(hasSupport: scala.Boolean, update: () => scala.Unit): detectPassiveEvents = {
+    val __obj = js.Dynamic.literal(hasSupport = hasSupport, update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[detectPassiveEvents]
   }

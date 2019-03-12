@@ -16,10 +16,8 @@ trait IEndpointPairFactory extends js.Object {
 
 object IEndpointPairFactory {
   @scala.inline
-  def apply(
-    createEndpointPair: js.Function4[HostName, java.lang.String, HostName, java.lang.String, EndpointPair]
-  ): IEndpointPairFactory = {
-    val __obj = js.Dynamic.literal(createEndpointPair = createEndpointPair)
+  def apply(createEndpointPair: (HostName, java.lang.String, HostName, java.lang.String) => EndpointPair): IEndpointPairFactory = {
+    val __obj = js.Dynamic.literal(createEndpointPair = js.Any.fromFunction4(createEndpointPair))
   
     __obj.asInstanceOf[IEndpointPairFactory]
   }

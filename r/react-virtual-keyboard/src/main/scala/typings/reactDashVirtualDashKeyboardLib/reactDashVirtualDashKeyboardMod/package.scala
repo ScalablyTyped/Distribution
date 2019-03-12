@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 package object reactDashVirtualDashKeyboardMod {
   type Keyboard = reactLib.reactMod.Component[KeyboardProps, KeyboardState, js.Any]
   type kbEvents = js.Function3[
-    /* event */ js.UndefOr[java.lang.String | reactLib.Event], 
-    /* keyboard */ js.UndefOr[reactLib.Element], 
-    /* el */ js.UndefOr[reactLib.Element], 
+    /* event */ js.UndefOr[java.lang.String | stdLib.Event], 
+    /* keyboard */ js.UndefOr[stdLib.Element], 
+    /* el */ js.UndefOr[stdLib.Element], 
     scala.Unit
   ]
 }

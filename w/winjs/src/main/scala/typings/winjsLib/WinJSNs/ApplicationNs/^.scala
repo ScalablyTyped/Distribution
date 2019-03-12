@@ -43,42 +43,42 @@ object ^ extends js.Object {
     * Occurs when WinRT activation has occurred. The name of this event is "activated" (and also "mainwindowactivated"). This event occurs after the loaded event and before the ready event.
     * @param eventInfo An object that contains information about the event. For more information about event arguments, see the WinRT event argument classes: WebUICachedFileUpdaterActivatedEventArgs, WebUICameraSettingsActivatedEventArgs, WebUIContactPickerActivatedEventArgs, WebUIDeviceActivatedEventArgs, WebUIFileActivatedEventArgs, WebUIFileOpenPickerActivatedEventArgs, WebUIFileSavePickerActivatedEventArgs, WebUILaunchActivatedEventArgs, WebUIPrintTaskSettingsActivatedEventArgs, WebUIProtocolActivatedEventArgs, WebUISearchActivatedEventArgs, WebUIShareTargetActivatedEventArgs.
     **/
-  def onactivated(eventInfo: winjsLib.WinJSNs.ApplicationNs.IPromiseEvent): scala.Unit = js.native
+  def onactivated(eventInfo: IPromiseEvent): scala.Unit = js.native
   /**
     * Occurs whenever a user clicks the hardware backbutton.
     * @param eventInfo An object that contains information about the event. The detail property of this object includes the following sub-properties: type
     **/
-  def onbackclick(eventInfo: winjsLib.WinJSNs.ApplicationNs.IPromiseEvent): scala.Unit = js.native
+  def onbackclick(eventInfo: IPromiseEvent): scala.Unit = js.native
   /**
     * Occurs when receiving PLM notification or when the checkpoint function is called.
     * @param eventInfo An object that contains information about the event. The detail property of this object includes the following subproperties: type, setPromise.
     **/
-  def oncheckpoint(eventInfo: winjsLib.WinJSNs.ApplicationNs.IPromiseEvent): scala.Unit = js.native
+  def oncheckpoint(eventInfo: IPromiseEvent): scala.Unit = js.native
   /**
     * Occurs when an unhandled error has been raised.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onerror(eventInfo: winjsLib.WinJSNs.ApplicationNs.IPromiseEvent): scala.Unit = js.native
+  def onerror(eventInfo: IPromiseEvent): scala.Unit = js.native
   /**
     * Occurs after the DOMContentLoaded event, which fires after the page has been parsed but before all the resources are loaded. This event occurs before the activated event and the ready event.
     * @param eventInfo An object that contains information about the event. The detail property of this object includes the following subproperties: type, setPromise.
     **/
-  def onloaded(eventInfo: winjsLib.WinJSNs.ApplicationNs.IPromiseEvent): scala.Unit = js.native
+  def onloaded(eventInfo: IPromiseEvent): scala.Unit = js.native
   /**
     * Occurs when the application is ready. This event occurs after the loaded event and the activated event.
     * @param eventInfo An object that contains information about the event. The detail property of this object includes the following sub-properties: type, setPromise.
     **/
-  def onready(eventInfo: winjsLib.WinJSNs.ApplicationNs.IPromiseEvent): scala.Unit = js.native
+  def onready(eventInfo: IPromiseEvent): scala.Unit = js.native
   /**
     * Occurs when the settings charm is invoked.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: type, applicationcommands.
     **/
-  def onsettings(eventInfo: winjsLib.WinJSNs.ApplicationNs.IPromiseEvent): scala.Unit = js.native
+  def onsettings(eventInfo: IPromiseEvent): scala.Unit = js.native
   /**
     * Occurs when the application is about to be unloaded.
     * @param eventInfo An object that contains information about the event. The detail property of this object includes the following sub-properties: type, setPromise.
     **/
-  def onunload(eventInfo: winjsLib.WinJSNs.ApplicationNs.IPromiseEvent): scala.Unit = js.native
+  def onunload(eventInfo: IPromiseEvent): scala.Unit = js.native
   /**
     * Queues an event to be processed by the WinJS.Application event queue.
     * @param eventRecord The event object is expected to have a type property that is used as the event name when dispatching on the WinJS.Application event queue. The entire object is provided to event listeners in the detail property of the event.

@@ -34,16 +34,16 @@ trait Anon_Close extends js.Object {
 object Anon_Close {
   @scala.inline
   def apply(
-    close: js.Function0[js.Promise[scala.Unit]],
-    getPanel: js.Function1[Anon_TabIdWindowId, js.Promise[java.lang.String]],
-    getTitle: js.Function1[Anon_TabIdWindowId, js.Promise[java.lang.String]],
-    isOpen: js.Function1[Anon_WindowId, js.Promise[scala.Boolean]],
-    open: js.Function0[js.Promise[scala.Unit]],
-    setIcon: js.Function1[Anon_ImageDataKeyPathTabId, js.Promise[scala.Unit]],
-    setPanel: js.Function1[Anon_Panel, js.Promise[scala.Unit]],
-    setTitle: js.Function1[Anon_TabIdTitle, js.Promise[scala.Unit]]
+    close: () => js.Promise[scala.Unit],
+    getPanel: Anon_TabIdWindowId => js.Promise[java.lang.String],
+    getTitle: Anon_TabIdWindowId => js.Promise[java.lang.String],
+    isOpen: Anon_WindowId => js.Promise[scala.Boolean],
+    open: () => js.Promise[scala.Unit],
+    setIcon: Anon_ImageDataKeyPathTabId => js.Promise[scala.Unit],
+    setPanel: Anon_Panel => js.Promise[scala.Unit],
+    setTitle: Anon_TabIdTitle => js.Promise[scala.Unit]
   ): Anon_Close = {
-    val __obj = js.Dynamic.literal(close = close, getPanel = getPanel, getTitle = getTitle, isOpen = isOpen, open = open, setIcon = setIcon, setPanel = setPanel, setTitle = setTitle)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getPanel = js.Any.fromFunction1(getPanel), getTitle = js.Any.fromFunction1(getTitle), isOpen = js.Any.fromFunction1(isOpen), open = js.Any.fromFunction0(open), setIcon = js.Any.fromFunction1(setIcon), setPanel = js.Any.fromFunction1(setPanel), setTitle = js.Any.fromFunction1(setTitle))
   
     __obj.asInstanceOf[Anon_Close]
   }

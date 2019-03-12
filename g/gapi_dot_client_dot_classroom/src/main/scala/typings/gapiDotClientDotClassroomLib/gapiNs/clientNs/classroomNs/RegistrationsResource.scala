@@ -50,16 +50,10 @@ trait RegistrationsResource extends js.Object {
 object RegistrationsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Registration]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ]
+    create: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[Registration],
+    delete: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   ): RegistrationsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete))
   
     __obj.asInstanceOf[RegistrationsResource]
   }

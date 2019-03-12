@@ -16,30 +16,30 @@ trait XSimpleMailMessage2 extends XSimpleMailMessage {
 object XSimpleMailMessage2 {
   @scala.inline
   def apply(
-    Attachement: activexDashInteropLib.SafeArray[java.lang.String],
-    BccRecipient: activexDashInteropLib.SafeArray[java.lang.String],
+    Attachement: stdLib.SafeArray[java.lang.String],
+    BccRecipient: stdLib.SafeArray[java.lang.String],
     Body: java.lang.String,
-    CcRecipient: activexDashInteropLib.SafeArray[java.lang.String],
+    CcRecipient: stdLib.SafeArray[java.lang.String],
     Originator: java.lang.String,
     Recipient: java.lang.String,
     Subject: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getAttachement: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getBccRecipient: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getCcRecipient: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getOriginator: js.Function0[java.lang.String],
-    getRecipient: js.Function0[java.lang.String],
-    getSubject: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setAttachement: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
-    setBccRecipient: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
-    setCcRecipient: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
-    setOriginator: js.Function1[java.lang.String, scala.Unit],
-    setRecipient: js.Function1[java.lang.String, scala.Unit],
-    setSubject: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getAttachement: () => stdLib.SafeArray[java.lang.String],
+    getBccRecipient: () => stdLib.SafeArray[java.lang.String],
+    getCcRecipient: () => stdLib.SafeArray[java.lang.String],
+    getOriginator: () => java.lang.String,
+    getRecipient: () => java.lang.String,
+    getSubject: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setAttachement: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => scala.Unit,
+    setBccRecipient: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => scala.Unit,
+    setCcRecipient: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => scala.Unit,
+    setOriginator: java.lang.String => scala.Unit,
+    setRecipient: java.lang.String => scala.Unit,
+    setSubject: java.lang.String => scala.Unit
   ): XSimpleMailMessage2 = {
-    val __obj = js.Dynamic.literal(Attachement = Attachement, BccRecipient = BccRecipient, Body = Body, CcRecipient = CcRecipient, Originator = Originator, Recipient = Recipient, Subject = Subject, acquire = acquire, getAttachement = getAttachement, getBccRecipient = getBccRecipient, getCcRecipient = getCcRecipient, getOriginator = getOriginator, getRecipient = getRecipient, getSubject = getSubject, queryInterface = queryInterface, release = release, setAttachement = setAttachement, setBccRecipient = setBccRecipient, setCcRecipient = setCcRecipient, setOriginator = setOriginator, setRecipient = setRecipient, setSubject = setSubject)
+    val __obj = js.Dynamic.literal(Attachement = Attachement, BccRecipient = BccRecipient, Body = Body, CcRecipient = CcRecipient, Originator = Originator, Recipient = Recipient, Subject = Subject, acquire = js.Any.fromFunction0(acquire), getAttachement = js.Any.fromFunction0(getAttachement), getBccRecipient = js.Any.fromFunction0(getBccRecipient), getCcRecipient = js.Any.fromFunction0(getCcRecipient), getOriginator = js.Any.fromFunction0(getOriginator), getRecipient = js.Any.fromFunction0(getRecipient), getSubject = js.Any.fromFunction0(getSubject), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setAttachement = js.Any.fromFunction1(setAttachement), setBccRecipient = js.Any.fromFunction1(setBccRecipient), setCcRecipient = js.Any.fromFunction1(setCcRecipient), setOriginator = js.Any.fromFunction1(setOriginator), setRecipient = js.Any.fromFunction1(setRecipient), setSubject = js.Any.fromFunction1(setSubject))
   
     __obj.asInstanceOf[XSimpleMailMessage2]
   }

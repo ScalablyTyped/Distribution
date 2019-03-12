@@ -26,8 +26,8 @@ object TimePickerOptions {
   @scala.inline
   def apply(
     animation: scala.Boolean | TimePickerAnimation = null,
-    change: js.Function1[/* e */ TimePickerChangeEvent, scala.Unit] = null,
-    close: js.Function1[/* e */ TimePickerCloseEvent, scala.Unit] = null,
+    change: /* e */ TimePickerChangeEvent => scala.Unit = null,
+    close: /* e */ TimePickerCloseEvent => scala.Unit = null,
     culture: java.lang.String = null,
     dateInput: js.UndefOr[scala.Boolean] = js.undefined,
     dates: js.Any = null,
@@ -36,14 +36,14 @@ object TimePickerOptions {
     max: stdLib.Date = null,
     min: stdLib.Date = null,
     name: java.lang.String = null,
-    open: js.Function1[/* e */ TimePickerOpenEvent, scala.Unit] = null,
+    open: /* e */ TimePickerOpenEvent => scala.Unit = null,
     parseFormats: js.Any = null,
     value: stdLib.Date = null
   ): TimePickerOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (culture != null) __obj.updateDynamic("culture")(culture)
     if (!js.isUndefined(dateInput)) __obj.updateDynamic("dateInput")(dateInput)
     if (dates != null) __obj.updateDynamic("dates")(dates)
@@ -52,7 +52,7 @@ object TimePickerOptions {
     if (max != null) __obj.updateDynamic("max")(max)
     if (min != null) __obj.updateDynamic("min")(min)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (parseFormats != null) __obj.updateDynamic("parseFormats")(parseFormats)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[TimePickerOptions]

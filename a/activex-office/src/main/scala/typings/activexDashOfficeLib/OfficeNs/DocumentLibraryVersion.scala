@@ -12,7 +12,7 @@ class DocumentLibraryVersion protected () extends js.Object {
   val Comments: java.lang.String = js.native
   val Creator: scala.Double = js.native
   val Index: scala.Double = js.native
-  val Modified: activexDashInteropLib.VarDate = js.native
+  val Modified: stdLib.VarDate = js.native
   val ModifiedBy: java.lang.String = js.native
   var `Office.DocumentLibraryVersion_typekey`: DocumentLibraryVersion = js.native
   val Parent: js.Any = js.native

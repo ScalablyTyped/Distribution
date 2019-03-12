@@ -11,8 +11,8 @@ trait Anon_PreventDefault extends js.Object {
 
 object Anon_PreventDefault {
   @scala.inline
-  def apply(preventDefault: js.Function0[scala.Unit]): Anon_PreventDefault = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault)
+  def apply(preventDefault: () => scala.Unit): Anon_PreventDefault = {
+    val __obj = js.Dynamic.literal(preventDefault = js.Any.fromFunction0(preventDefault))
   
     __obj.asInstanceOf[Anon_PreventDefault]
   }

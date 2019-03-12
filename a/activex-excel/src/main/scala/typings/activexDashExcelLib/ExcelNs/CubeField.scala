@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CubeField protected () extends js.Object {
   val AllItemsVisible: scala.Boolean = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var Caption: java.lang.String = js.native
   val Creator: XlCreator = js.native
   val CubeFieldSubType: XlCubeFieldSubType = js.native
@@ -33,10 +33,10 @@ class CubeField protected () extends js.Object {
   val Name: java.lang.String = js.native
   var Orientation: XlPivotFieldOrientation = js.native
   val Parent: js.Any = js.native
-  val PivotFields: PivotFields = js.native
+  val PivotFields: activexDashExcelLib.ExcelNs.PivotFields = js.native
   var Position: scala.Double = js.native
   var ShowInFieldList: scala.Boolean = js.native
-  val TreeviewControl: TreeviewControl = js.native
+  val TreeviewControl: activexDashExcelLib.ExcelNs.TreeviewControl = js.native
   val Value: java.lang.String = js.native
   val _Caption: java.lang.String = js.native
   def AddMemberPropertyField(Property: java.lang.String): scala.Unit = js.native

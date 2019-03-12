@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/Popover.PopoverProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, 'classes' | never> ]: @material-ui/core.@material-ui/core/Popover.PopoverProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>[P]}
 - Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/Popover.PopoverProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, @material-ui/core.@material-ui/core/Menu/Menu.MenuClassKey, never>) */ trait MenuProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[MenuClassKey] {
-  var MenuListProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.menulistMenuListMod.MenuListProps]] = js.undefined
+  var MenuListProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.menuListMenuListMod.MenuListProps]] = js.undefined
   var PaperProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps]] = js.undefined
   var PopoverClasses: js.UndefOr[
     stdLib.Partial[
@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
 object MenuProps {
   @scala.inline
   def apply(
-    MenuListProps: stdLib.Partial[atMaterialDashUiCoreLib.menulistMenuListMod.MenuListProps] = null,
+    MenuListProps: stdLib.Partial[atMaterialDashUiCoreLib.menuListMenuListMod.MenuListProps] = null,
     PaperProps: stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = null,
     PopoverClasses: stdLib.Partial[
       atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.popoverPopoverMod.PopoverClassKey]

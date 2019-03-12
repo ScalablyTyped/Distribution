@@ -17,14 +17,14 @@ trait Anon_Decode extends js.Object {
 object Anon_Decode {
   @scala.inline
   def apply(
-    decode: js.Function1[java.lang.String, java.lang.String],
-    encode: js.Function1[java.lang.String, java.lang.String],
-    toASCII: js.Function1[java.lang.String, java.lang.String],
-    toUnicode: js.Function1[java.lang.String, java.lang.String],
+    decode: java.lang.String => java.lang.String,
+    encode: java.lang.String => java.lang.String,
+    toASCII: java.lang.String => java.lang.String,
+    toUnicode: java.lang.String => java.lang.String,
     ucs2Ns: Anon_Array,
     version: java.lang.String
   ): Anon_Decode = {
-    val __obj = js.Dynamic.literal(decode = decode, encode = encode, toASCII = toASCII, toUnicode = toUnicode, ucs2Ns = ucs2Ns, version = version)
+    val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode), toASCII = js.Any.fromFunction1(toASCII), toUnicode = js.Any.fromFunction1(toUnicode), ucs2Ns = ucs2Ns, version = version)
   
     __obj.asInstanceOf[Anon_Decode]
   }

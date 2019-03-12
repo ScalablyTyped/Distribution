@@ -16,21 +16,21 @@ import scala.scalajs.js.annotation._
 trait XDataPilotMemberResults
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** returns the sequence of results for the regarding data pilot source level. */
-  val Results: activexDashInteropLib.SafeArray[MemberResult]
+  val Results: stdLib.SafeArray[MemberResult]
   /** returns the sequence of results for the regarding data pilot source level. */
-  def getResults(): activexDashInteropLib.SafeArray[MemberResult]
+  def getResults(): stdLib.SafeArray[MemberResult]
 }
 
 object XDataPilotMemberResults {
   @scala.inline
   def apply(
-    Results: activexDashInteropLib.SafeArray[MemberResult],
-    acquire: js.Function0[scala.Unit],
-    getResults: js.Function0[activexDashInteropLib.SafeArray[MemberResult]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    Results: stdLib.SafeArray[MemberResult],
+    acquire: () => scala.Unit,
+    getResults: () => stdLib.SafeArray[MemberResult],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDataPilotMemberResults = {
-    val __obj = js.Dynamic.literal(Results = Results, acquire = acquire, getResults = getResults, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Results = Results, acquire = js.Any.fromFunction0(acquire), getResults = js.Any.fromFunction0(getResults), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDataPilotMemberResults]
   }

@@ -67,19 +67,19 @@ object ScaleDependentIcons {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     maxDataValue: scala.Double,
     maxSize: ScaleDependentStops,
     minDataValue: scala.Double,
     minSize: ScaleDependentStops,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     `type`: java.lang.String,
     expression: java.lang.String = null,
     field: java.lang.String = null,
     normalizationField: java.lang.String = null,
     valueExpression: java.lang.String = null
   ): ScaleDependentIcons = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, maxDataValue = maxDataValue, maxSize = maxSize, minDataValue = minDataValue, minSize = minSize, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxDataValue = maxDataValue, maxSize = maxSize, minDataValue = minDataValue, minSize = minSize, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.updateDynamic("type")(`type`)
     if (expression != null) __obj.updateDynamic("expression")(expression)
     if (field != null) __obj.updateDynamic("field")(field)

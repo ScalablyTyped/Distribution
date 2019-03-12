@@ -13,10 +13,10 @@ trait Anon_ErrorFailureGroupSuccess[T /* <: kiiDashCloudDashSdkLib.KiiCloudNs.Ki
 object Anon_ErrorFailureGroupSuccess {
   @scala.inline
   def apply[T /* <: kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser | kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup */](
-    failure: js.Function1[stdLib.Error, js.Any],
-    success: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiThing, T, js.Any]
+    failure: stdLib.Error => js.Any,
+    success: (kiiDashCloudDashSdkLib.KiiCloudNs.KiiThing, T) => js.Any
   ): Anon_ErrorFailureGroupSuccess[T] = {
-    val __obj = js.Dynamic.literal(failure = failure, success = success)
+    val __obj = js.Dynamic.literal(failure = js.Any.fromFunction1(failure), success = js.Any.fromFunction2(success))
   
     __obj.asInstanceOf[Anon_ErrorFailureGroupSuccess[T]]
   }

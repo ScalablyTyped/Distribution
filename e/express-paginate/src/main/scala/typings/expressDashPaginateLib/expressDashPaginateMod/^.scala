@@ -12,7 +12,7 @@ object ^ extends js.Object {
     /* limit */ scala.Double, 
     /* pageCount */ scala.Double, 
     /* currentPage */ scala.Double, 
-    js.Array[expressDashPaginateLib.expressDashPaginateMod.PageElement]
+    js.Array[PageElement]
   ] = js.native
   def hasNextPages(req: expressLib.expressMod.eNs.Request): js.Function1[/* pageCount */ scala.Double, scala.Boolean] = js.native
   def href(req: expressLib.expressMod.eNs.Request): js.Function2[/* prev */ js.Object | scala.Boolean, /* params */ js.Object, java.lang.String] = js.native

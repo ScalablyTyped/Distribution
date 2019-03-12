@@ -16,13 +16,13 @@ trait PivotFilter extends js.Object {
 object PivotFilter {
   @scala.inline
   def apply(
-    getFilterCriteria: js.Function0[FilterCriteria],
-    getPivotTable: js.Function0[PivotTable],
-    getSourceDataColumn: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    remove: js.Function0[scala.Unit],
-    setFilterCriteria: js.Function1[FilterCriteria, PivotFilter]
+    getFilterCriteria: () => FilterCriteria,
+    getPivotTable: () => PivotTable,
+    getSourceDataColumn: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    remove: () => scala.Unit,
+    setFilterCriteria: FilterCriteria => PivotFilter
   ): PivotFilter = {
-    val __obj = js.Dynamic.literal(getFilterCriteria = getFilterCriteria, getPivotTable = getPivotTable, getSourceDataColumn = getSourceDataColumn, remove = remove, setFilterCriteria = setFilterCriteria)
+    val __obj = js.Dynamic.literal(getFilterCriteria = js.Any.fromFunction0(getFilterCriteria), getPivotTable = js.Any.fromFunction0(getPivotTable), getSourceDataColumn = js.Any.fromFunction0(getSourceDataColumn), remove = js.Any.fromFunction0(remove), setFilterCriteria = js.Any.fromFunction1(setFilterCriteria))
   
     __obj.asInstanceOf[PivotFilter]
   }

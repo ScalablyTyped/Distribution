@@ -15,12 +15,12 @@ trait Column extends js.Object {
 object Column {
   @scala.inline
   def apply(
-    deleteColumn: js.Function0[scala.Unit],
-    getName: js.Function0[java.lang.String],
-    getParent: js.Function0[Page],
-    setName: js.Function1[java.lang.String, Column]
+    deleteColumn: () => scala.Unit,
+    getName: () => java.lang.String,
+    getParent: () => Page,
+    setName: java.lang.String => Column
   ): Column = {
-    val __obj = js.Dynamic.literal(deleteColumn = deleteColumn, getName = getName, getParent = getParent, setName = setName)
+    val __obj = js.Dynamic.literal(deleteColumn = js.Any.fromFunction0(deleteColumn), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), setName = js.Any.fromFunction1(setName))
   
     __obj.asInstanceOf[Column]
   }

@@ -19,7 +19,7 @@ trait MockURL extends js.Object {
 object MockURL {
   @scala.inline
   def apply(
-    toString: js.Function0[java.lang.String],
+    toString: () => java.lang.String,
     hash: java.lang.String = null,
     host: java.lang.String = null,
     password: java.lang.String = null,
@@ -29,7 +29,7 @@ object MockURL {
     query: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     username: java.lang.String = null
   ): MockURL = {
-    val __obj = js.Dynamic.literal(toString = toString)
+    val __obj = js.Dynamic.literal(toString = js.Any.fromFunction0(toString))
     if (hash != null) __obj.updateDynamic("hash")(hash)
     if (host != null) __obj.updateDynamic("host")(host)
     if (password != null) __obj.updateDynamic("password")(password)

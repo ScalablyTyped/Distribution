@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("stream-csv-as-json/Stringer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def make(): streamDashCsvDashAsDashJsonLib.stringerMod.Stringer = js.native
-  def make(options: streamDashCsvDashAsDashJsonLib.stringerMod.StringerNs.StringerOptions): streamDashCsvDashAsDashJsonLib.stringerMod.Stringer = js.native
-  def stringer(): streamDashCsvDashAsDashJsonLib.stringerMod.Stringer = js.native
-  def stringer(options: streamDashCsvDashAsDashJsonLib.stringerMod.StringerNs.StringerOptions): streamDashCsvDashAsDashJsonLib.stringerMod.Stringer = js.native
+  def make(): Stringer = js.native
+  def make(options: streamDashCsvDashAsDashJsonLib.stringerMod.StringerNs.StringerOptions): Stringer = js.native
+  def stringer(): Stringer = js.native
+  def stringer(options: streamDashCsvDashAsDashJsonLib.stringerMod.StringerNs.StringerOptions): Stringer = js.native
 }
 

@@ -36,7 +36,7 @@ trait CodeSystemConceptProperty extends BackboneElement {
   /**
     * Reference to CodeSystem.property.code
     */
-  var code: code
+  var code: fhirLib.fhirNs.code
   /**
     * Value of the property for this concept
     */

@@ -25,32 +25,14 @@ object TimelineResource {
   @scala.inline
   def apply(
     attachments: AttachmentsResource,
-    delete: js.Function1[
-      gapiDotClientDotMirrorLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotMirrorLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TimelineItem]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotMirrorLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TimelineItem]
-    ],
-    list: js.Function1[
-      gapiDotClientDotMirrorLib.Anon_AltBundleId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TimelineListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotMirrorLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TimelineItem]
-    ],
-    update: js.Function1[
-      gapiDotClientDotMirrorLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TimelineItem]
-    ]
+    delete: gapiDotClientDotMirrorLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotMirrorLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[TimelineItem],
+    insert: gapiDotClientDotMirrorLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[TimelineItem],
+    list: gapiDotClientDotMirrorLib.Anon_AltBundleId => gapiDotClientLib.gapiNs.clientNs.Request[TimelineListResponse],
+    patch: gapiDotClientDotMirrorLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[TimelineItem],
+    update: gapiDotClientDotMirrorLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[TimelineItem]
   ): TimelineResource = {
-    val __obj = js.Dynamic.literal(attachments = attachments, delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(attachments = attachments, delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[TimelineResource]
   }

@@ -9,11 +9,11 @@ trait UpdateTimeToLiveInput extends js.Object {
   /**
     * The name of the table to be configured.
     */
-  var TableName: TableName
+  var TableName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TableName
   /**
     * Represents the settings used to enable or disable Time to Live for the specified table.
     */
-  var TimeToLiveSpecification: TimeToLiveSpecification
+  var TimeToLiveSpecification: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TimeToLiveSpecification
 }
 
 object UpdateTimeToLiveInput {

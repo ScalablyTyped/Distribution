@@ -12,11 +12,8 @@ trait TtlableQueryBuilder extends js.Object {
 
 object TtlableQueryBuilder {
   @scala.inline
-  def apply(
-    usingTTL: js.Function1[scala.Double, TtlableQueryBuilder],
-    usingTimestamp: js.Function1[scala.Double, TtlableQueryBuilder]
-  ): TtlableQueryBuilder = {
-    val __obj = js.Dynamic.literal(usingTTL = usingTTL, usingTimestamp = usingTimestamp)
+  def apply(usingTTL: scala.Double => TtlableQueryBuilder, usingTimestamp: scala.Double => TtlableQueryBuilder): TtlableQueryBuilder = {
+    val __obj = js.Dynamic.literal(usingTTL = js.Any.fromFunction1(usingTTL), usingTimestamp = js.Any.fromFunction1(usingTimestamp))
   
     __obj.asInstanceOf[TtlableQueryBuilder]
   }

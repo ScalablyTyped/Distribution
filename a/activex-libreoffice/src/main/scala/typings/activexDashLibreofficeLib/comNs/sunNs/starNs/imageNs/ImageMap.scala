@@ -16,20 +16,20 @@ object ImageMap {
     Count: scala.Double,
     ElementType: activexDashLibreofficeLib.`type`,
     Name: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getByIndex: js.Function1[scala.Double, js.Any],
-    getCount: js.Function0[scala.Double],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    getName: js.Function0[java.lang.String],
-    hasElements: js.Function0[scala.Boolean],
-    insertByIndex: js.Function2[scala.Double, js.Any, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeByIndex: js.Function1[scala.Double, scala.Unit],
-    replaceByIndex: js.Function2[scala.Double, js.Any, scala.Unit],
-    setName: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getByIndex: scala.Double => js.Any,
+    getCount: () => scala.Double,
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    getName: () => java.lang.String,
+    hasElements: () => scala.Boolean,
+    insertByIndex: (scala.Double, js.Any) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeByIndex: scala.Double => scala.Unit,
+    replaceByIndex: (scala.Double, js.Any) => scala.Unit,
+    setName: java.lang.String => scala.Unit
   ): ImageMap = {
-    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, Name = Name, acquire = acquire, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, getName = getName, hasElements = hasElements, insertByIndex = insertByIndex, queryInterface = queryInterface, release = release, removeByIndex = removeByIndex, replaceByIndex = replaceByIndex, setName = setName)
+    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, Name = Name, acquire = js.Any.fromFunction0(acquire), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), getName = js.Any.fromFunction0(getName), hasElements = js.Any.fromFunction0(hasElements), insertByIndex = js.Any.fromFunction2(insertByIndex), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByIndex = js.Any.fromFunction1(removeByIndex), replaceByIndex = js.Any.fromFunction2(replaceByIndex), setName = js.Any.fromFunction1(setName))
   
     __obj.asInstanceOf[ImageMap]
   }

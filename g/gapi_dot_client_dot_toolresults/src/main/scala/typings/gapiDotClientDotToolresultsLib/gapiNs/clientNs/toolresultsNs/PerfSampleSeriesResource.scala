@@ -34,21 +34,12 @@ trait PerfSampleSeriesResource extends js.Object {
 object PerfSampleSeriesResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PerfSampleSeries]
-    ],
-    get: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PerfSampleSeries]
-    ],
-    list: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListPerfSampleSeriesResponse]
-    ],
+    create: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields => gapiDotClientLib.gapiNs.clientNs.Request[PerfSampleSeries],
+    get: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryId => gapiDotClientLib.gapiNs.clientNs.Request[PerfSampleSeries],
+    list: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsFilter => gapiDotClientLib.gapiNs.clientNs.Request[ListPerfSampleSeriesResponse],
     samples: SamplesResource
   ): PerfSampleSeriesResource = {
-    val __obj = js.Dynamic.literal(create = create, get = get, list = list, samples = samples)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), samples = samples)
   
     __obj.asInstanceOf[PerfSampleSeriesResource]
   }

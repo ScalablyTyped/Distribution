@@ -11,8 +11,8 @@ trait TextDirectionHeuristic extends js.Object {
 
 object TextDirectionHeuristic {
   @scala.inline
-  def apply(isRtl: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Boolean]): TextDirectionHeuristic = {
-    val __obj = js.Dynamic.literal(isRtl = isRtl)
+  def apply(isRtl: (java.lang.String, scala.Double, scala.Double) => scala.Boolean): TextDirectionHeuristic = {
+    val __obj = js.Dynamic.literal(isRtl = js.Any.fromFunction3(isRtl))
   
     __obj.asInstanceOf[TextDirectionHeuristic]
   }

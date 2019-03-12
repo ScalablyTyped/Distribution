@@ -44,9 +44,9 @@ object ITextCharacterFormat {
     fontStretch: FontStretch,
     fontStyle: FontStyle,
     foregroundColor: winrtLib.WindowsNs.UINs.Color,
-    getClone: js.Function0[ITextCharacterFormat],
+    getClone: () => ITextCharacterFormat,
     hidden: FormatEffect,
-    isEqual: js.Function1[ITextCharacterFormat, scala.Boolean],
+    isEqual: ITextCharacterFormat => scala.Boolean,
     italic: FormatEffect,
     kerning: scala.Double,
     languageTag: java.lang.String,
@@ -55,7 +55,7 @@ object ITextCharacterFormat {
     outline: FormatEffect,
     position: scala.Double,
     protectedText: FormatEffect,
-    setClone: js.Function1[ITextCharacterFormat, scala.Unit],
+    setClone: ITextCharacterFormat => scala.Unit,
     size: scala.Double,
     smallCaps: FormatEffect,
     spacing: scala.Double,
@@ -66,7 +66,7 @@ object ITextCharacterFormat {
     underline: UnderlineType,
     weight: scala.Double
   ): ITextCharacterFormat = {
-    val __obj = js.Dynamic.literal(allCaps = allCaps, backgroundColor = backgroundColor, bold = bold, fontStretch = fontStretch, fontStyle = fontStyle, foregroundColor = foregroundColor, getClone = getClone, hidden = hidden, isEqual = isEqual, italic = italic, kerning = kerning, languageTag = languageTag, linkType = linkType, name = name, outline = outline, position = position, protectedText = protectedText, setClone = setClone, size = size, smallCaps = smallCaps, spacing = spacing, strikethrough = strikethrough, subscript = subscript, superscript = superscript, textScript = textScript, underline = underline, weight = weight)
+    val __obj = js.Dynamic.literal(allCaps = allCaps, backgroundColor = backgroundColor, bold = bold, fontStretch = fontStretch, fontStyle = fontStyle, foregroundColor = foregroundColor, getClone = js.Any.fromFunction0(getClone), hidden = hidden, isEqual = js.Any.fromFunction1(isEqual), italic = italic, kerning = kerning, languageTag = languageTag, linkType = linkType, name = name, outline = outline, position = position, protectedText = protectedText, setClone = js.Any.fromFunction1(setClone), size = size, smallCaps = smallCaps, spacing = spacing, strikethrough = strikethrough, subscript = subscript, superscript = superscript, textScript = textScript, underline = underline, weight = weight)
   
     __obj.asInstanceOf[ITextCharacterFormat]
   }

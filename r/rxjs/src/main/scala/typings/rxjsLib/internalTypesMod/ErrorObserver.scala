@@ -15,15 +15,15 @@ trait ErrorObserver[T] extends PartialObserver[T] {
 object ErrorObserver {
   @scala.inline
   def apply[T](
-    error: js.Function1[js.Any, scala.Unit],
+    error: js.Any => scala.Unit,
     closed: js.UndefOr[scala.Boolean] = js.undefined,
-    complete: js.Function0[scala.Unit] = null,
-    next: js.Function1[/* value */ T, scala.Unit] = null
+    complete: () => scala.Unit = null,
+    next: /* value */ T => scala.Unit = null
   ): ErrorObserver[T] = {
-    val __obj = js.Dynamic.literal(error = error)
+    val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error))
     if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (next != null) __obj.updateDynamic("next")(next)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (next != null) __obj.updateDynamic("next")(js.Any.fromFunction1(next))
     __obj.asInstanceOf[ErrorObserver[T]]
   }
 }

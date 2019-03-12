@@ -24,12 +24,12 @@ object XTextShapesSupplier {
   @scala.inline
   def apply(
     Shapes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
-    acquire: js.Function0[scala.Unit],
-    getShapes: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getShapes: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTextShapesSupplier = {
-    val __obj = js.Dynamic.literal(Shapes = Shapes, acquire = acquire, getShapes = getShapes, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Shapes = Shapes, acquire = js.Any.fromFunction0(acquire), getShapes = js.Any.fromFunction0(getShapes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTextShapesSupplier]
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MysqlError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   /**
     * Either a MySQL server error (e.g. 'ER_ACCESS_DENIED_ERROR'),
     * a node.js error (e.g. 'ECONNREFUSED') or an internal error
@@ -49,6 +49,8 @@ object MysqlError {
     code: java.lang.String,
     errno: scala.Double,
     fatal: scala.Boolean,
+    message: java.lang.String,
+    name: java.lang.String,
     fieldCount: scala.Int | scala.Double = null,
     sql: java.lang.String = null,
     sqlMessage: java.lang.String = null,
@@ -56,7 +58,7 @@ object MysqlError {
     sqlStateMarker: java.lang.String = null,
     stack: java.lang.String = null
   ): MysqlError = {
-    val __obj = js.Dynamic.literal(code = code, errno = errno, fatal = fatal)
+    val __obj = js.Dynamic.literal(code = code, errno = errno, fatal = fatal, message = message, name = name)
     if (fieldCount != null) __obj.updateDynamic("fieldCount")(fieldCount.asInstanceOf[js.Any])
     if (sql != null) __obj.updateDynamic("sql")(sql)
     if (sqlMessage != null) __obj.updateDynamic("sqlMessage")(sqlMessage)

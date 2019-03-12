@@ -15,7 +15,6 @@ package object libMainMod {
   type FoldingRangeKind = vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.FoldingRangeKind
   type IConnection = Connection[`_`, `_`, `_`, `_`, `_`, `_`]
   type RemoteWorkspace = _RemoteWorkspace with vscodeDashLanguageserverLib.libConfigurationMod.Configuration with vscodeDashLanguageserverLib.libWorkspaceFoldersMod.WorkspaceFolders
-  type SelectionRangeKind = vscodeDashLanguageserverDashProtocolLib.libProtocolDotSelectionRangeMod.SelectionRangeKind
   type TelemetryFeature[P] = Feature[Telemetry, P]
   type Trace = vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.Trace
   type TraceFormat = vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.TraceFormat

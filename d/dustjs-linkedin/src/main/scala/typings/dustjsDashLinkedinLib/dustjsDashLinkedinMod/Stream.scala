@@ -19,12 +19,12 @@ trait Stream extends js.Object {
 object Stream {
   @scala.inline
   def apply(
-    emit: js.Function2[java.lang.String, js.Any, scala.Unit],
-    flush: js.Function0[scala.Unit],
-    on: js.Function2[java.lang.String, js.Function1[/* data */ js.UndefOr[js.Any], _], Stream],
-    pipe: js.Function1[Stream, Stream]
+    emit: (java.lang.String, js.Any) => scala.Unit,
+    flush: () => scala.Unit,
+    on: (java.lang.String, js.Function1[/* data */ js.UndefOr[js.Any], _]) => Stream,
+    pipe: Stream => Stream
   ): Stream = {
-    val __obj = js.Dynamic.literal(emit = emit, flush = flush, on = on, pipe = pipe)
+    val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit), flush = js.Any.fromFunction0(flush), on = js.Any.fromFunction2(on), pipe = js.Any.fromFunction1(pipe))
   
     __obj.asInstanceOf[Stream]
   }

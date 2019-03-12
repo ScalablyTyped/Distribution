@@ -13,10 +13,10 @@ trait IPrintManagerStatic extends js.Object {
 object IPrintManagerStatic {
   @scala.inline
   def apply(
-    getForCurrentView: js.Function0[PrintManager],
-    showPrintUIAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[scala.Boolean]]
+    getForCurrentView: () => PrintManager,
+    showPrintUIAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[scala.Boolean]
   ): IPrintManagerStatic = {
-    val __obj = js.Dynamic.literal(getForCurrentView = getForCurrentView, showPrintUIAsync = showPrintUIAsync)
+    val __obj = js.Dynamic.literal(getForCurrentView = js.Any.fromFunction0(getForCurrentView), showPrintUIAsync = js.Any.fromFunction0(showPrintUIAsync))
   
     __obj.asInstanceOf[IPrintManagerStatic]
   }

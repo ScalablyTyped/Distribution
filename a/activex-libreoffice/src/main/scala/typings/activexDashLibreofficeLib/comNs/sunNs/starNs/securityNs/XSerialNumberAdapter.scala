@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait XSerialNumberAdapter
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** Convert the SerialNumber to a sequence */
-  def toSequence(SerialNumber: java.lang.String): activexDashInteropLib.SafeArray[scala.Double]
+  def toSequence(SerialNumber: java.lang.String): stdLib.SafeArray[scala.Double]
   /** Convert the SerialNumber to a string */
   def toString(SerialNumber: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]): java.lang.String
 }
@@ -21,13 +21,13 @@ trait XSerialNumberAdapter
 object XSerialNumberAdapter {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    toSequence: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[scala.Double]],
-    toString: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], java.lang.String]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    toSequence: java.lang.String => stdLib.SafeArray[scala.Double],
+    toString: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => java.lang.String
   ): XSerialNumberAdapter = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, toSequence = toSequence, toString = toString)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), toSequence = js.Any.fromFunction1(toSequence), toString = js.Any.fromFunction1(toString))
   
     __obj.asInstanceOf[XSerialNumberAdapter]
   }

@@ -17,12 +17,12 @@ object ^ extends js.Object {
     callback: js.Function0[_],
     url: java.lang.String
   ): scala.Unit = js.native
-  def request(args: gapiLib.gapiNs.clientNs.RequestOptions): gapiLib.gapiNs.clientNs.HttpRequest[_] = js.native
-  def rpcRequest(method: java.lang.String): gapiLib.gapiNs.clientNs.RpcRequest = js.native
-  def rpcRequest(method: java.lang.String, version: java.lang.String): gapiLib.gapiNs.clientNs.RpcRequest = js.native
-  def rpcRequest(method: java.lang.String, version: java.lang.String, rpcParams: js.Any): gapiLib.gapiNs.clientNs.RpcRequest = js.native
+  def request(args: RequestOptions): HttpRequest[_] = js.native
+  def rpcRequest(method: java.lang.String): RpcRequest = js.native
+  def rpcRequest(method: java.lang.String, version: java.lang.String): RpcRequest = js.native
+  def rpcRequest(method: java.lang.String, version: java.lang.String, rpcParams: js.Any): RpcRequest = js.native
   def setApiKey(apiKey: java.lang.String): scala.Unit = js.native
   def setToken(): scala.Unit = js.native
-  def setToken(token: gapiLib.gapiNs.clientNs.TokenObject): scala.Unit = js.native
+  def setToken(token: TokenObject): scala.Unit = js.native
 }
 

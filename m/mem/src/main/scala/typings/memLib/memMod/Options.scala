@@ -15,12 +15,12 @@ object Options {
   @scala.inline
   def apply(
     cache: js.Any = null,
-    cacheKey: js.Function1[/* repeated */ js.Any, java.lang.String] = null,
+    cacheKey: /* repeated */ js.Any => java.lang.String = null,
     maxAge: scala.Int | scala.Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (cache != null) __obj.updateDynamic("cache")(cache)
-    if (cacheKey != null) __obj.updateDynamic("cacheKey")(cacheKey)
+    if (cacheKey != null) __obj.updateDynamic("cacheKey")(js.Any.fromFunction1(cacheKey))
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

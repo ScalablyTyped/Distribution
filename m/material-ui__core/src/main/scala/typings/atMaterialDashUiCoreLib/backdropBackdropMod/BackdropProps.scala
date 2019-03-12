@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<react.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/Fade.FadeProps>, 'classes' | never> ]: react.react.HTMLAttributes<react.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/Fade.FadeProps>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/Fade.FadeProps>, @material-ui/core.@material-ui/core/Backdrop/Backdrop.BackdropClassKey, never>) */ trait BackdropProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/Fade.FadeProps>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/Fade.FadeProps>[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/Fade.FadeProps>, @material-ui/core.@material-ui/core/Backdrop/Backdrop.BackdropClassKey, never>) */ trait BackdropProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[BackdropClassKey] {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var invisible: js.UndefOr[scala.Boolean] = js.undefined

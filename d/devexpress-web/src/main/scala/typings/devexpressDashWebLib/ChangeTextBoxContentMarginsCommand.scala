@@ -22,8 +22,8 @@ trait ChangeTextBoxContentMarginsCommand extends CommandBase {
 
 object ChangeTextBoxContentMarginsCommand {
   @scala.inline
-  def apply(execute: js.Function1[Margins, scala.Boolean], getState: js.Function0[js.Any]): ChangeTextBoxContentMarginsCommand = {
-    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  def apply(execute: Margins => scala.Boolean, getState: () => js.Any): ChangeTextBoxContentMarginsCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
   
     __obj.asInstanceOf[ChangeTextBoxContentMarginsCommand]
   }

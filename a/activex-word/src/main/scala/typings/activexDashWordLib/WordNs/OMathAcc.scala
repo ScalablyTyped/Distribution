@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.OMathAcc")
 @js.native
 class OMathAcc protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var Char: scala.Double = js.native
   val Creator: scala.Double = js.native
   val E: OMath = js.native

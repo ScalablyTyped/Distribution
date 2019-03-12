@@ -31,10 +31,10 @@ trait XFeatureInvalidation extends js.Object {
 object XFeatureInvalidation {
   @scala.inline
   def apply(
-    invalidateAllFeatures: js.Function0[scala.Unit],
-    invalidateFeatures: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
+    invalidateAllFeatures: () => scala.Unit,
+    invalidateFeatures: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => scala.Unit
   ): XFeatureInvalidation = {
-    val __obj = js.Dynamic.literal(invalidateAllFeatures = invalidateAllFeatures, invalidateFeatures = invalidateFeatures)
+    val __obj = js.Dynamic.literal(invalidateAllFeatures = js.Any.fromFunction0(invalidateAllFeatures), invalidateFeatures = js.Any.fromFunction1(invalidateFeatures))
   
     __obj.asInstanceOf[XFeatureInvalidation]
   }

@@ -73,14 +73,14 @@ object SlidesApp {
     TextDirection: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection */ js.Any,
     ThemeColorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ThemeColorType */ js.Any,
     VideoSourceType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VideoSourceType */ js.Any,
-    create: js.Function1[java.lang.String, Presentation],
-    getActivePresentation: js.Function0[Presentation],
-    getUi: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Ui],
-    newAffineTransformBuilder: js.Function0[AffineTransformBuilder],
-    openById: js.Function1[java.lang.String, Presentation],
-    openByUrl: js.Function1[java.lang.String, Presentation]
+    create: java.lang.String => Presentation,
+    getActivePresentation: () => Presentation,
+    getUi: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Ui,
+    newAffineTransformBuilder: () => AffineTransformBuilder,
+    openById: java.lang.String => Presentation,
+    openByUrl: java.lang.String => Presentation
   ): SlidesApp = {
-    val __obj = js.Dynamic.literal(AlignmentPosition = AlignmentPosition, ArrowStyle = ArrowStyle, AutoTextType = AutoTextType, CellMergeState = CellMergeState, ColorType = ColorType, ContentAlignment = ContentAlignment, DashStyle = DashStyle, FillType = FillType, LineCategory = LineCategory, LineFillType = LineFillType, LineType = LineType, LinkType = LinkType, ListPreset = ListPreset, PageBackgroundType = PageBackgroundType, PageElementType = PageElementType, PageType = PageType, ParagraphAlignment = ParagraphAlignment, PlaceholderType = PlaceholderType, PredefinedLayout = PredefinedLayout, SelectionType = SelectionType, ShapeType = ShapeType, SheetsChartEmbedType = SheetsChartEmbedType, SlidePosition = SlidePosition, SpacingMode = SpacingMode, TextBaselineOffset = TextBaselineOffset, TextDirection = TextDirection, ThemeColorType = ThemeColorType, VideoSourceType = VideoSourceType, create = create, getActivePresentation = getActivePresentation, getUi = getUi, newAffineTransformBuilder = newAffineTransformBuilder, openById = openById, openByUrl = openByUrl)
+    val __obj = js.Dynamic.literal(AlignmentPosition = AlignmentPosition, ArrowStyle = ArrowStyle, AutoTextType = AutoTextType, CellMergeState = CellMergeState, ColorType = ColorType, ContentAlignment = ContentAlignment, DashStyle = DashStyle, FillType = FillType, LineCategory = LineCategory, LineFillType = LineFillType, LineType = LineType, LinkType = LinkType, ListPreset = ListPreset, PageBackgroundType = PageBackgroundType, PageElementType = PageElementType, PageType = PageType, ParagraphAlignment = ParagraphAlignment, PlaceholderType = PlaceholderType, PredefinedLayout = PredefinedLayout, SelectionType = SelectionType, ShapeType = ShapeType, SheetsChartEmbedType = SheetsChartEmbedType, SlidePosition = SlidePosition, SpacingMode = SpacingMode, TextBaselineOffset = TextBaselineOffset, TextDirection = TextDirection, ThemeColorType = ThemeColorType, VideoSourceType = VideoSourceType, create = js.Any.fromFunction1(create), getActivePresentation = js.Any.fromFunction0(getActivePresentation), getUi = js.Any.fromFunction0(getUi), newAffineTransformBuilder = js.Any.fromFunction0(newAffineTransformBuilder), openById = js.Any.fromFunction1(openById), openByUrl = js.Any.fromFunction1(openByUrl))
   
     __obj.asInstanceOf[SlidesApp]
   }

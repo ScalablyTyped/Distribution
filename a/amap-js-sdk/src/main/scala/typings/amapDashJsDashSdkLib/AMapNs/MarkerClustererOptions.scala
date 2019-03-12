@@ -22,7 +22,7 @@ object MarkerClustererOptions {
     gridSize: scala.Int | scala.Double = null,
     maxZoom: scala.Int | scala.Double = null,
     minClusterSize: scala.Int | scala.Double = null,
-    renderCluserMarker: js.Function1[/* obj */ js.Any, scala.Unit] = null,
+    renderCluserMarker: /* obj */ js.Any => scala.Unit = null,
     styles: js.Array[_] = null,
     zoomOnClick: js.UndefOr[scala.Boolean] = js.undefined
   ): MarkerClustererOptions = {
@@ -31,7 +31,7 @@ object MarkerClustererOptions {
     if (gridSize != null) __obj.updateDynamic("gridSize")(gridSize.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minClusterSize != null) __obj.updateDynamic("minClusterSize")(minClusterSize.asInstanceOf[js.Any])
-    if (renderCluserMarker != null) __obj.updateDynamic("renderCluserMarker")(renderCluserMarker)
+    if (renderCluserMarker != null) __obj.updateDynamic("renderCluserMarker")(js.Any.fromFunction1(renderCluserMarker))
     if (styles != null) __obj.updateDynamic("styles")(styles)
     if (!js.isUndefined(zoomOnClick)) __obj.updateDynamic("zoomOnClick")(zoomOnClick)
     __obj.asInstanceOf[MarkerClustererOptions]

@@ -108,79 +108,73 @@ trait IRegion
 object IRegion {
   @scala.inline
   def apply(
-    adjust: js.Function4[
-      /* top */ js.UndefOr[scala.Double], 
-      /* right */ js.UndefOr[scala.Double], 
-      /* bottom */ js.UndefOr[scala.Double], 
-      /* left */ js.UndefOr[scala.Double], 
-      IRegion
-    ] = null,
+    adjust: (/* top */ js.UndefOr[scala.Double], /* right */ js.UndefOr[scala.Double], /* bottom */ js.UndefOr[scala.Double], /* left */ js.UndefOr[scala.Double]) => IRegion = null,
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    constrainTo: js.Function1[/* targetRegion */ js.UndefOr[IRegion], IRegion] = null,
-    contains: js.Function1[/* region */ js.UndefOr[IRegion], scala.Boolean] = null,
-    copy: js.Function0[IRegion] = null,
-    destroy: js.Function0[scala.Unit] = null,
-    equals: js.Function1[/* region */ js.UndefOr[IRegion], scala.Boolean] = null,
+    constrainTo: /* targetRegion */ js.UndefOr[IRegion] => IRegion = null,
+    contains: /* region */ js.UndefOr[IRegion] => scala.Boolean = null,
+    copy: () => IRegion = null,
+    destroy: () => scala.Unit = null,
+    equals: /* region */ js.UndefOr[IRegion] => scala.Boolean = null,
     extend: java.lang.String = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getOutOfBoundOffset: js.Function2[/* axis */ js.UndefOr[js.Any], /* p */ js.UndefOr[IPoint], IRegion] = null,
-    getOutOfBoundOffsetX: js.Function1[/* p */ js.UndefOr[scala.Double], scala.Double] = null,
-    getOutOfBoundOffsetY: js.Function1[/* p */ js.UndefOr[scala.Double], scala.Double] = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getOutOfBoundOffset: (/* axis */ js.UndefOr[js.Any], /* p */ js.UndefOr[IPoint]) => IRegion = null,
+    getOutOfBoundOffsetX: /* p */ js.UndefOr[scala.Double] => scala.Double = null,
+    getOutOfBoundOffsetY: /* p */ js.UndefOr[scala.Double] => scala.Double = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
-    intersect: js.Function1[/* region */ js.UndefOr[IRegion], _] = null,
-    isOutOfBound: js.Function2[/* axis */ js.UndefOr[java.lang.String], /* p */ js.UndefOr[js.Any], scala.Boolean] = null,
-    isOutOfBoundX: js.Function1[/* p */ js.UndefOr[scala.Double], scala.Boolean] = null,
-    isOutOfBoundY: js.Function1[/* p */ js.UndefOr[scala.Double], scala.Boolean] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
+    intersect: /* region */ js.UndefOr[IRegion] => _ = null,
+    isOutOfBound: (/* axis */ js.UndefOr[java.lang.String], /* p */ js.UndefOr[js.Any]) => scala.Boolean = null,
+    isOutOfBoundX: /* p */ js.UndefOr[scala.Double] => scala.Boolean = null,
+    isOutOfBoundY: /* p */ js.UndefOr[scala.Double] => scala.Boolean = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
-    round: js.Function0[IRegion] = null,
+    round: () => IRegion = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
-    toString: js.Function0[java.lang.String] = null,
-    translateBy: js.Function1[/* offset */ js.UndefOr[js.Any], IRegion] = null,
-    union: js.Function1[/* region */ js.UndefOr[IRegion], IRegion] = null,
+    toString: () => java.lang.String = null,
+    translateBy: /* offset */ js.UndefOr[js.Any] => IRegion = null,
+    union: /* region */ js.UndefOr[IRegion] => IRegion = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null
   ): IRegion = {
     val __obj = js.Dynamic.literal()
-    if (adjust != null) __obj.updateDynamic("adjust")(adjust)
+    if (adjust != null) __obj.updateDynamic("adjust")(js.Any.fromFunction4(adjust))
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (constrainTo != null) __obj.updateDynamic("constrainTo")(constrainTo)
-    if (contains != null) __obj.updateDynamic("contains")(contains)
-    if (copy != null) __obj.updateDynamic("copy")(copy)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (equals != null) __obj.updateDynamic("equals")(equals)
+    if (constrainTo != null) __obj.updateDynamic("constrainTo")(js.Any.fromFunction1(constrainTo))
+    if (contains != null) __obj.updateDynamic("contains")(js.Any.fromFunction1(contains))
+    if (copy != null) __obj.updateDynamic("copy")(js.Any.fromFunction0(copy))
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
+    if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction1(equals))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getOutOfBoundOffset != null) __obj.updateDynamic("getOutOfBoundOffset")(getOutOfBoundOffset)
-    if (getOutOfBoundOffsetX != null) __obj.updateDynamic("getOutOfBoundOffsetX")(getOutOfBoundOffsetX)
-    if (getOutOfBoundOffsetY != null) __obj.updateDynamic("getOutOfBoundOffsetY")(getOutOfBoundOffsetY)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getOutOfBoundOffset != null) __obj.updateDynamic("getOutOfBoundOffset")(js.Any.fromFunction2(getOutOfBoundOffset))
+    if (getOutOfBoundOffsetX != null) __obj.updateDynamic("getOutOfBoundOffsetX")(js.Any.fromFunction1(getOutOfBoundOffsetX))
+    if (getOutOfBoundOffsetY != null) __obj.updateDynamic("getOutOfBoundOffsetY")(js.Any.fromFunction1(getOutOfBoundOffsetY))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
-    if (intersect != null) __obj.updateDynamic("intersect")(intersect)
-    if (isOutOfBound != null) __obj.updateDynamic("isOutOfBound")(isOutOfBound)
-    if (isOutOfBoundX != null) __obj.updateDynamic("isOutOfBoundX")(isOutOfBoundX)
-    if (isOutOfBoundY != null) __obj.updateDynamic("isOutOfBoundY")(isOutOfBoundY)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (intersect != null) __obj.updateDynamic("intersect")(js.Any.fromFunction1(intersect))
+    if (isOutOfBound != null) __obj.updateDynamic("isOutOfBound")(js.Any.fromFunction2(isOutOfBound))
+    if (isOutOfBoundX != null) __obj.updateDynamic("isOutOfBoundX")(js.Any.fromFunction1(isOutOfBoundX))
+    if (isOutOfBoundY != null) __obj.updateDynamic("isOutOfBoundY")(js.Any.fromFunction1(isOutOfBoundY))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
-    if (round != null) __obj.updateDynamic("round")(round)
+    if (round != null) __obj.updateDynamic("round")(js.Any.fromFunction0(round))
     if (self != null) __obj.updateDynamic("self")(self)
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
-    if (toString != null) __obj.updateDynamic("toString")(toString)
-    if (translateBy != null) __obj.updateDynamic("translateBy")(translateBy)
-    if (union != null) __obj.updateDynamic("union")(union)
+    if (toString != null) __obj.updateDynamic("toString")(js.Any.fromFunction0(toString))
+    if (translateBy != null) __obj.updateDynamic("translateBy")(js.Any.fromFunction1(translateBy))
+    if (union != null) __obj.updateDynamic("union")(js.Any.fromFunction1(union))
     if (uses != null) __obj.updateDynamic("uses")(uses)
     __obj.asInstanceOf[IRegion]
   }

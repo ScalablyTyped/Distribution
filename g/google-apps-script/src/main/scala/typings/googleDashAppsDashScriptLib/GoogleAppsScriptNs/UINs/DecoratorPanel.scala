@@ -35,33 +35,29 @@ trait DecoratorPanel extends js.Object {
 object DecoratorPanel {
   @scala.inline
   def apply(
-    add: js.Function1[Widget, DecoratorPanel],
-    addStyleDependentName: js.Function1[java.lang.String, DecoratorPanel],
-    addStyleName: js.Function1[java.lang.String, DecoratorPanel],
-    clear: js.Function0[DecoratorPanel],
-    getId: js.Function0[java.lang.String],
-    getTag: js.Function0[java.lang.String],
-    getType: js.Function0[java.lang.String],
-    setHeight: js.Function1[java.lang.String, DecoratorPanel],
-    setId: js.Function1[java.lang.String, DecoratorPanel],
-    setLayoutData: js.Function1[js.Object, DecoratorPanel],
-    setPixelSize: js.Function2[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      DecoratorPanel
-    ],
-    setSize: js.Function2[java.lang.String, java.lang.String, DecoratorPanel],
-    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, DecoratorPanel],
-    setStyleAttributes: js.Function1[js.Object, DecoratorPanel],
-    setStyleName: js.Function1[java.lang.String, DecoratorPanel],
-    setStylePrimaryName: js.Function1[java.lang.String, DecoratorPanel],
-    setTag: js.Function1[java.lang.String, DecoratorPanel],
-    setTitle: js.Function1[java.lang.String, DecoratorPanel],
-    setVisible: js.Function1[scala.Boolean, DecoratorPanel],
-    setWidget: js.Function1[Widget, DecoratorPanel],
-    setWidth: js.Function1[java.lang.String, DecoratorPanel]
+    add: Widget => DecoratorPanel,
+    addStyleDependentName: java.lang.String => DecoratorPanel,
+    addStyleName: java.lang.String => DecoratorPanel,
+    clear: () => DecoratorPanel,
+    getId: () => java.lang.String,
+    getTag: () => java.lang.String,
+    getType: () => java.lang.String,
+    setHeight: java.lang.String => DecoratorPanel,
+    setId: java.lang.String => DecoratorPanel,
+    setLayoutData: js.Object => DecoratorPanel,
+    setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => DecoratorPanel,
+    setSize: (java.lang.String, java.lang.String) => DecoratorPanel,
+    setStyleAttribute: (java.lang.String, java.lang.String) => DecoratorPanel,
+    setStyleAttributes: js.Object => DecoratorPanel,
+    setStyleName: java.lang.String => DecoratorPanel,
+    setStylePrimaryName: java.lang.String => DecoratorPanel,
+    setTag: java.lang.String => DecoratorPanel,
+    setTitle: java.lang.String => DecoratorPanel,
+    setVisible: scala.Boolean => DecoratorPanel,
+    setWidget: Widget => DecoratorPanel,
+    setWidth: java.lang.String => DecoratorPanel
   ): DecoratorPanel = {
-    val __obj = js.Dynamic.literal(add = add, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, clear = clear, getId = getId, getTag = getTag, getType = getType, setHeight = setHeight, setId = setId, setLayoutData = setLayoutData, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setTitle = setTitle, setVisible = setVisible, setWidget = setWidget, setWidth = setWidth)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), addStyleDependentName = js.Any.fromFunction1(addStyleDependentName), addStyleName = js.Any.fromFunction1(addStyleName), clear = js.Any.fromFunction0(clear), getId = js.Any.fromFunction0(getId), getTag = js.Any.fromFunction0(getTag), getType = js.Any.fromFunction0(getType), setHeight = js.Any.fromFunction1(setHeight), setId = js.Any.fromFunction1(setId), setLayoutData = js.Any.fromFunction1(setLayoutData), setPixelSize = js.Any.fromFunction2(setPixelSize), setSize = js.Any.fromFunction2(setSize), setStyleAttribute = js.Any.fromFunction2(setStyleAttribute), setStyleAttributes = js.Any.fromFunction1(setStyleAttributes), setStyleName = js.Any.fromFunction1(setStyleName), setStylePrimaryName = js.Any.fromFunction1(setStylePrimaryName), setTag = js.Any.fromFunction1(setTag), setTitle = js.Any.fromFunction1(setTitle), setVisible = js.Any.fromFunction1(setVisible), setWidget = js.Any.fromFunction1(setWidget), setWidth = js.Any.fromFunction1(setWidth))
   
     __obj.asInstanceOf[DecoratorPanel]
   }

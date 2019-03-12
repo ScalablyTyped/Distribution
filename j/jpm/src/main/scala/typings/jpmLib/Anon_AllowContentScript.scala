@@ -41,10 +41,10 @@ object Anon_AllowContentScript {
     contextMenu: js.UndefOr[scala.Boolean] = js.undefined,
     focus: js.UndefOr[scala.Boolean] = js.undefined,
     height: scala.Int | scala.Double = null,
-    onError: js.Function1[/* error */ stdLib.Error, _] = null,
-    onHide: js.Function0[_] = null,
-    onMessage: js.Function1[/* message */ java.lang.String, _] = null,
-    onShow: js.Function0[_] = null,
+    onError: /* error */ stdLib.Error => _ = null,
+    onHide: () => _ = null,
+    onMessage: /* message */ java.lang.String => _ = null,
+    onShow: () => _ = null,
     position: jpmLib.sdkPanelMod.PanelPosition = null,
     width: scala.Int | scala.Double = null
   ): Anon_AllowContentScript = {
@@ -60,10 +60,10 @@ object Anon_AllowContentScript {
     if (!js.isUndefined(contextMenu)) __obj.updateDynamic("contextMenu")(contextMenu)
     if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onMessage != null) __obj.updateDynamic("onMessage")(onMessage)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))
+    if (onMessage != null) __obj.updateDynamic("onMessage")(js.Any.fromFunction1(onMessage))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     if (position != null) __obj.updateDynamic("position")(position)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowContentScript]

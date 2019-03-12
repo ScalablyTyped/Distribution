@@ -20,7 +20,7 @@ object CheckBoxProps {
   @scala.inline
   def apply(
     label: java.lang.String,
-    onCheck: js.Function1[scala.Boolean, scala.Unit],
+    onCheck: scala.Boolean => scala.Unit,
     value: java.lang.String | scala.Double,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     checkedIcon: java.lang.String = null,
@@ -28,7 +28,7 @@ object CheckBoxProps {
     style: reactDashNativeDashMaterialDashUiLib.Anon_ContainerIcon = null,
     uncheckedIcon: java.lang.String = null
   ): CheckBoxProps = {
-    val __obj = js.Dynamic.literal(label = label, onCheck = onCheck, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(label = label, onCheck = js.Any.fromFunction1(onCheck), value = value.asInstanceOf[js.Any])
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (checkedIcon != null) __obj.updateDynamic("checkedIcon")(checkedIcon)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

@@ -36,12 +36,8 @@ trait TimeRange extends js.Object {
 
 object TimeRange {
   @scala.inline
-  def apply(
-    end: js.Function1[scala.Double, scala.Double],
-    length: scala.Double,
-    start: js.Function1[scala.Double, scala.Double]
-  ): TimeRange = {
-    val __obj = js.Dynamic.literal(end = end, length = length, start = start)
+  def apply(end: scala.Double => scala.Double, length: scala.Double, start: scala.Double => scala.Double): TimeRange = {
+    val __obj = js.Dynamic.literal(end = js.Any.fromFunction1(end), length = length, start = js.Any.fromFunction1(start))
   
     __obj.asInstanceOf[TimeRange]
   }

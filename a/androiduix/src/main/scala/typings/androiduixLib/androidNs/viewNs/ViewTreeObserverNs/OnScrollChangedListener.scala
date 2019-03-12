@@ -11,8 +11,8 @@ trait OnScrollChangedListener extends js.Object {
 
 object OnScrollChangedListener {
   @scala.inline
-  def apply(onScrollChanged: js.Function0[js.Any]): OnScrollChangedListener = {
-    val __obj = js.Dynamic.literal(onScrollChanged = onScrollChanged)
+  def apply(onScrollChanged: () => js.Any): OnScrollChangedListener = {
+    val __obj = js.Dynamic.literal(onScrollChanged = js.Any.fromFunction0(onScrollChanged))
   
     __obj.asInstanceOf[OnScrollChangedListener]
   }

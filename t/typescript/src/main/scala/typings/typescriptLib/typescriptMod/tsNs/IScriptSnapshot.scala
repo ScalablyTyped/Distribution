@@ -30,13 +30,13 @@ trait IScriptSnapshot extends js.Object {
 object IScriptSnapshot {
   @scala.inline
   def apply(
-    getChangeRange: js.Function1[IScriptSnapshot, js.UndefOr[TextChangeRange]],
-    getLength: js.Function0[scala.Double],
-    getText: js.Function2[scala.Double, scala.Double, java.lang.String],
-    dispose: js.Function0[scala.Unit] = null
+    getChangeRange: IScriptSnapshot => js.UndefOr[TextChangeRange],
+    getLength: () => scala.Double,
+    getText: (scala.Double, scala.Double) => java.lang.String,
+    dispose: () => scala.Unit = null
   ): IScriptSnapshot = {
-    val __obj = js.Dynamic.literal(getChangeRange = getChangeRange, getLength = getLength, getText = getText)
-    if (dispose != null) __obj.updateDynamic("dispose")(dispose)
+    val __obj = js.Dynamic.literal(getChangeRange = js.Any.fromFunction1(getChangeRange), getLength = js.Any.fromFunction0(getLength), getText = js.Any.fromFunction2(getText))
+    if (dispose != null) __obj.updateDynamic("dispose")(js.Any.fromFunction0(dispose))
     __obj.asInstanceOf[IScriptSnapshot]
   }
 }

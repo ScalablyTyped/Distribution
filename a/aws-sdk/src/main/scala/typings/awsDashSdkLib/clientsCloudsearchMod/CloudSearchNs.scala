@@ -38,7 +38,7 @@ object CloudSearchNs extends js.Object {
   
   trait AnalysisScheme extends js.Object {
     var AnalysisOptions: js.UndefOr[AnalysisOptions] = js.undefined
-    var AnalysisSchemeLanguage: AnalysisSchemeLanguage
+    var AnalysisSchemeLanguage: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.AnalysisSchemeLanguage
     var AnalysisSchemeName: StandardName
   }
   
@@ -56,7 +56,7 @@ object CloudSearchNs extends js.Object {
   }
   
   trait BuildSuggestersRequest extends js.Object {
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
   }
   
   trait BuildSuggestersResponse extends js.Object {
@@ -74,7 +74,7 @@ object CloudSearchNs extends js.Object {
     /**
       * A name for the domain you are creating. Allowed characters are a-z (lower-case letters), 0-9, and hyphen (-). Domain names must start with a letter or number and be at least 3 and no more than 28 characters long.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
   }
   
   trait CreateDomainResponse extends js.Object {
@@ -129,8 +129,8 @@ object CloudSearchNs extends js.Object {
   }
   
   trait DefineAnalysisSchemeRequest extends js.Object {
-    var AnalysisScheme: AnalysisScheme
-    var DomainName: DomainName
+    var AnalysisScheme: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.AnalysisScheme
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
   }
   
   trait DefineAnalysisSchemeResponse extends js.Object {
@@ -138,8 +138,8 @@ object CloudSearchNs extends js.Object {
   }
   
   trait DefineExpressionRequest extends js.Object {
-    var DomainName: DomainName
-    var Expression: Expression
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
+    var Expression: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.Expression
   }
   
   trait DefineExpressionResponse extends js.Object {
@@ -147,11 +147,11 @@ object CloudSearchNs extends js.Object {
   }
   
   trait DefineIndexFieldRequest extends js.Object {
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
     /**
       * The index field and field options you want to configure. 
       */
-    var IndexField: IndexField
+    var IndexField: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.IndexField
   }
   
   trait DefineIndexFieldResponse extends js.Object {
@@ -159,8 +159,8 @@ object CloudSearchNs extends js.Object {
   }
   
   trait DefineSuggesterRequest extends js.Object {
-    var DomainName: DomainName
-    var Suggester: Suggester
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
+    var Suggester: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.Suggester
   }
   
   trait DefineSuggesterResponse extends js.Object {
@@ -172,7 +172,7 @@ object CloudSearchNs extends js.Object {
       * The name of the analysis scheme you want to delete.
       */
     var AnalysisSchemeName: StandardName
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
   }
   
   trait DeleteAnalysisSchemeResponse extends js.Object {
@@ -186,7 +186,7 @@ object CloudSearchNs extends js.Object {
     /**
       * The name of the domain you want to permanently delete.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
   }
   
   trait DeleteDomainResponse extends js.Object {
@@ -194,7 +194,7 @@ object CloudSearchNs extends js.Object {
   }
   
   trait DeleteExpressionRequest extends js.Object {
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
     /**
       * The name of the Expression to delete.
       */
@@ -209,7 +209,7 @@ object CloudSearchNs extends js.Object {
   }
   
   trait DeleteIndexFieldRequest extends js.Object {
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
     /**
       * The name of the index field your want to remove from the domain's indexing options.
       */
@@ -224,7 +224,7 @@ object CloudSearchNs extends js.Object {
   }
   
   trait DeleteSuggesterRequest extends js.Object {
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
     /**
       * Specifies the name of the suggester you want to delete.
       */
@@ -250,7 +250,7 @@ object CloudSearchNs extends js.Object {
     /**
       * The name of the domain you want to describe.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
   }
   
   trait DescribeAnalysisSchemesResponse extends js.Object {
@@ -268,7 +268,7 @@ object CloudSearchNs extends js.Object {
     /**
       * The name of the domain you want to describe.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
   }
   
   trait DescribeAvailabilityOptionsResponse extends js.Object {
@@ -286,7 +286,7 @@ object CloudSearchNs extends js.Object {
   }
   
   trait DescribeDomainsResponse extends js.Object {
-    var DomainStatusList: DomainStatusList
+    var DomainStatusList: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainStatusList
   }
   
   trait DescribeExpressionsRequest extends js.Object {
@@ -297,7 +297,7 @@ object CloudSearchNs extends js.Object {
     /**
       * The name of the domain you want to describe.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
     /**
       * Limits the DescribeExpressions response to the specified expressions. If not specified, all expressions are shown.
       */
@@ -319,7 +319,7 @@ object CloudSearchNs extends js.Object {
     /**
       * The name of the domain you want to describe.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
     /**
       * A list of the index fields you want to describe. If not specified, information is returned for all configured index fields.
       */
@@ -334,7 +334,7 @@ object CloudSearchNs extends js.Object {
   }
   
   trait DescribeScalingParametersRequest extends js.Object {
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
   }
   
   trait DescribeScalingParametersResponse extends js.Object {
@@ -349,7 +349,7 @@ object CloudSearchNs extends js.Object {
     /**
       * The name of the domain you want to describe.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
   }
   
   trait DescribeServiceAccessPoliciesResponse extends js.Object {
@@ -367,7 +367,7 @@ object CloudSearchNs extends js.Object {
     /**
       * The name of the domain you want to describe.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
     /**
       * The suggesters you want to describe.
       */
@@ -413,8 +413,8 @@ object CloudSearchNs extends js.Object {
       * The service endpoint for updating documents in a search domain.
       */
     var DocService: js.UndefOr[ServiceEndpoint] = js.undefined
-    var DomainId: DomainId
-    var DomainName: DomainName
+    var DomainId: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainId
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
     var Limits: js.UndefOr[Limits] = js.undefined
     /**
       * True if processing is being done to activate the current domain configuration.
@@ -494,7 +494,7 @@ object CloudSearchNs extends js.Object {
   
   trait Expression extends js.Object {
     var ExpressionName: StandardName
-    var ExpressionValue: ExpressionValue
+    var ExpressionValue: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.ExpressionValue
   }
   
   trait ExpressionStatus extends js.Object {
@@ -506,7 +506,7 @@ object CloudSearchNs extends js.Object {
   }
   
   trait IndexDocumentsRequest extends js.Object {
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
   }
   
   trait IndexDocumentsResponse extends js.Object {
@@ -525,7 +525,7 @@ object CloudSearchNs extends js.Object {
       * A string that represents the name of an index field. CloudSearch supports regular index fields as well as dynamic fields. A dynamic field's name defines a pattern that begins or ends with a wildcard. Any document fields that don't map to a regular index field but do match a dynamic field's pattern are configured with the dynamic field's indexing options.  Regular field names begin with a letter and can contain the following characters: a-z (lowercase), 0-9, and _ (underscore). Dynamic field names must begin or end with a wildcard (*). The wildcard can also be the only character in a dynamic field name. Multiple wildcards, and wildcards embedded within a string are not supported.  The name score is reserved and cannot be used as a field name. To reference a document's ID, you can use the name _id. 
       */
     var IndexFieldName: DynamicFieldName
-    var IndexFieldType: IndexFieldType
+    var IndexFieldType: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.IndexFieldType
     var IntArrayOptions: js.UndefOr[IntArrayOptions] = js.undefined
     var IntOptions: js.UndefOr[IntOptions] = js.undefined
     var LatLonOptions: js.UndefOr[LatLonOptions] = js.undefined
@@ -615,8 +615,8 @@ object CloudSearchNs extends js.Object {
   }
   
   trait Limits extends js.Object {
-    var MaximumPartitionCount: MaximumPartitionCount
-    var MaximumReplicationCount: MaximumReplicationCount
+    var MaximumPartitionCount: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.MaximumPartitionCount
+    var MaximumReplicationCount: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.MaximumReplicationCount
   }
   
   trait ListDomainNamesResponse extends js.Object {
@@ -721,7 +721,7 @@ object CloudSearchNs extends js.Object {
   }
   
   trait Suggester extends js.Object {
-    var DocumentSuggesterOptions: DocumentSuggesterOptions
+    var DocumentSuggesterOptions: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DocumentSuggesterOptions
     var SuggesterName: StandardName
   }
   
@@ -1325,7 +1325,7 @@ object CloudSearchNs extends js.Object {
   }
   
   trait UpdateAvailabilityOptionsRequest extends js.Object {
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
     /**
       * You expand an existing search domain to a second Availability Zone by setting the Multi-AZ option to true. Similarly, you can turn off the Multi-AZ option to downgrade the domain to a single Availability Zone by setting the Multi-AZ option to false. 
       */
@@ -1340,8 +1340,8 @@ object CloudSearchNs extends js.Object {
   }
   
   trait UpdateScalingParametersRequest extends js.Object {
-    var DomainName: DomainName
-    var ScalingParameters: ScalingParameters
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
+    var ScalingParameters: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.ScalingParameters
   }
   
   trait UpdateScalingParametersResponse extends js.Object {
@@ -1353,7 +1353,7 @@ object CloudSearchNs extends js.Object {
       * The access rules you want to configure. These rules replace any existing rules. 
       */
     var AccessPolicies: PolicyDocument
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.DomainName
   }
   
   trait UpdateServiceAccessPoliciesResponse extends js.Object {

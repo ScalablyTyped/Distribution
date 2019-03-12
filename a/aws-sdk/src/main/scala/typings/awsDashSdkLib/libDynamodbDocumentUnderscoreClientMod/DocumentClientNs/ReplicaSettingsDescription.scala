@@ -9,7 +9,7 @@ trait ReplicaSettingsDescription extends js.Object {
   /**
     * The region name of the replica.
     */
-  var RegionName: RegionName
+  var RegionName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.RegionName
   /**
     * The read/write capacity mode of the replica.
     */

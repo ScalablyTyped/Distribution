@@ -11,8 +11,8 @@ trait NameExpression extends js.Object {
 
 object NameExpression {
   @scala.inline
-  def apply(createBinding: js.Function1[js.Any, Binding]): NameExpression = {
-    val __obj = js.Dynamic.literal(createBinding = createBinding)
+  def apply(createBinding: js.Any => Binding): NameExpression = {
+    val __obj = js.Dynamic.literal(createBinding = js.Any.fromFunction1(createBinding))
   
     __obj.asInstanceOf[NameExpression]
   }

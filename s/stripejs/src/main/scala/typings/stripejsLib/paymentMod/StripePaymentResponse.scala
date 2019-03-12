@@ -50,7 +50,7 @@ trait StripePaymentResponse extends js.Object {
 object StripePaymentResponse {
   @scala.inline
   def apply(
-    complete: js.Function1[completeStatus, scala.Unit],
+    complete: completeStatus => scala.Unit,
     methodName: java.lang.String,
     shippingAddress: stripejsLib.shippingMod.ShippingAddress,
     shippingOption: stripejsLib.shippingMod.ShippingOption,
@@ -60,7 +60,7 @@ object StripePaymentResponse {
     source: js.Any = null,
     token: js.Any = null
   ): StripePaymentResponse = {
-    val __obj = js.Dynamic.literal(complete = complete, methodName = methodName, shippingAddress = shippingAddress, shippingOption = shippingOption)
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete), methodName = methodName, shippingAddress = shippingAddress, shippingOption = shippingOption)
     if (payerEmail != null) __obj.updateDynamic("payerEmail")(payerEmail)
     if (payerName != null) __obj.updateDynamic("payerName")(payerName)
     if (payerPhone != null) __obj.updateDynamic("payerPhone")(payerPhone)

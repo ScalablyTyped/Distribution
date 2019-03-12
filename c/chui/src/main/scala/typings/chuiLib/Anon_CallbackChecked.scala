@@ -18,7 +18,7 @@ trait Anon_CallbackChecked extends js.Object {
 object Anon_CallbackChecked {
   @scala.inline
   def apply(
-    callback: js.Function0[_] = null,
+    callback: () => _ = null,
     checked: java.lang.String = null,
     id: java.lang.String = null,
     name: java.lang.String = null,
@@ -27,7 +27,7 @@ object Anon_CallbackChecked {
     value: java.lang.String | scala.Double = null
   ): Anon_CallbackChecked = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (checked != null) __obj.updateDynamic("checked")(checked)
     if (id != null) __obj.updateDynamic("id")(id)
     if (name != null) __obj.updateDynamic("name")(name)

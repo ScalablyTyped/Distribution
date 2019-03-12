@@ -120,12 +120,7 @@ object PaginationProps {
     inactiveDotOpacity: scala.Int | scala.Double = null,
     inactiveDotScale: scala.Int | scala.Double = null,
     inactiveDotStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
-    renderDots: js.Function3[
-      /* activeIndex */ scala.Double, 
-      /* total */ scala.Double, 
-      /* context */ js.Any, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    renderDots: (/* activeIndex */ scala.Double, /* total */ scala.Double, /* context */ js.Any) => reactLib.reactMod.ReactNs.ReactNode = null,
     tappableDots: js.UndefOr[scala.Boolean] = js.undefined,
     vertical: js.UndefOr[scala.Boolean] = js.undefined
   ): PaginationProps = {
@@ -142,7 +137,7 @@ object PaginationProps {
     if (inactiveDotOpacity != null) __obj.updateDynamic("inactiveDotOpacity")(inactiveDotOpacity.asInstanceOf[js.Any])
     if (inactiveDotScale != null) __obj.updateDynamic("inactiveDotScale")(inactiveDotScale.asInstanceOf[js.Any])
     if (inactiveDotStyle != null) __obj.updateDynamic("inactiveDotStyle")(inactiveDotStyle.asInstanceOf[js.Any])
-    if (renderDots != null) __obj.updateDynamic("renderDots")(renderDots)
+    if (renderDots != null) __obj.updateDynamic("renderDots")(js.Any.fromFunction3(renderDots))
     if (!js.isUndefined(tappableDots)) __obj.updateDynamic("tappableDots")(tappableDots)
     if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
     __obj.asInstanceOf[PaginationProps]

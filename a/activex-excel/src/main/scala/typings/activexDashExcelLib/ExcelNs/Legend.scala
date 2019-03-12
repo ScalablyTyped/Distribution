@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.Legend")
 @js.native
 class Legend protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var AutoScaleFont: js.Any = js.native
-  val Border: Border = js.native
+  val Border: activexDashExcelLib.ExcelNs.Border = js.native
   val Creator: XlCreator = js.native
   var `Excel.Legend_typekey`: Legend = js.native
   val Fill: ChartFillFormat = js.native
-  val Font: Font = js.native
+  val Font: activexDashExcelLib.ExcelNs.Font = js.native
   val Format: ChartFormat = js.native
   var Height: scala.Double = js.native
   var IncludeInLayout: scala.Boolean = js.native
-  val Interior: Interior = js.native
+  val Interior: activexDashExcelLib.ExcelNs.Interior = js.native
   var Left: scala.Double = js.native
   @JSName("LegendEntries")
   var LegendEntries_Original: LegendEntries with (js.Function1[/* Index */ scala.Double, LegendEntry]) = js.native

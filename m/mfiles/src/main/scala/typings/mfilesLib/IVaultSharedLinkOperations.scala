@@ -16,13 +16,13 @@ trait IVaultSharedLinkOperations extends js.Object {
 object IVaultSharedLinkOperations {
   @scala.inline
   def apply(
-    CreateSharedLink: js.Function1[ISharedLinkInfo, ISharedLinkInfo],
-    DeleteSharedLink: js.Function1[java.lang.String, scala.Unit],
-    GetSharedLink: js.Function1[java.lang.String, ISharedLinkInfo],
-    GetSharedLinks: js.Function1[scala.Double, ISharedLinkInfos],
-    GetSharedLinksByObject: js.Function1[IObjID, ISharedLinkInfos]
+    CreateSharedLink: ISharedLinkInfo => ISharedLinkInfo,
+    DeleteSharedLink: java.lang.String => scala.Unit,
+    GetSharedLink: java.lang.String => ISharedLinkInfo,
+    GetSharedLinks: scala.Double => ISharedLinkInfos,
+    GetSharedLinksByObject: IObjID => ISharedLinkInfos
   ): IVaultSharedLinkOperations = {
-    val __obj = js.Dynamic.literal(CreateSharedLink = CreateSharedLink, DeleteSharedLink = DeleteSharedLink, GetSharedLink = GetSharedLink, GetSharedLinks = GetSharedLinks, GetSharedLinksByObject = GetSharedLinksByObject)
+    val __obj = js.Dynamic.literal(CreateSharedLink = js.Any.fromFunction1(CreateSharedLink), DeleteSharedLink = js.Any.fromFunction1(DeleteSharedLink), GetSharedLink = js.Any.fromFunction1(GetSharedLink), GetSharedLinks = js.Any.fromFunction1(GetSharedLinks), GetSharedLinksByObject = js.Any.fromFunction1(GetSharedLinksByObject))
   
     __obj.asInstanceOf[IVaultSharedLinkOperations]
   }

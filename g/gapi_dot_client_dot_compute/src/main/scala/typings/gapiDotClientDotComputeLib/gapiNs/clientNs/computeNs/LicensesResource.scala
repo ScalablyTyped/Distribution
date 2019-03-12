@@ -13,12 +13,9 @@ trait LicensesResource extends js.Object {
 object LicensesResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyLicense, 
-      gapiDotClientLib.gapiNs.clientNs.Request[License]
-    ]
+    get: gapiDotClientDotComputeLib.Anon_AltFieldsKeyLicense => gapiDotClientLib.gapiNs.clientNs.Request[License]
   ): LicensesResource = {
-    val __obj = js.Dynamic.literal(get = get)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[LicensesResource]
   }

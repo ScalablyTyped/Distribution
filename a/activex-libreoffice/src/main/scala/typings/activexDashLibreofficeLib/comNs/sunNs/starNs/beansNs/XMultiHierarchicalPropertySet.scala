@@ -32,7 +32,7 @@ trait XMultiHierarchicalPropertySet
     * @throws com::sun::star::lang::IllegalArgumentException if one of the names is not a well-formed nested name for this hierarchy. An implementation is not
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
-  def getHierarchicalPropertyValues(aPropertyNames: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): activexDashInteropLib.SafeArray[_]
+  def getHierarchicalPropertyValues(aPropertyNames: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): stdLib.SafeArray[_]
   /**
     * sets the values of the properties with the specified nested names.
     *
@@ -58,21 +58,14 @@ object XMultiHierarchicalPropertySet {
   @scala.inline
   def apply(
     HierarchicalPropertySetInfo: XHierarchicalPropertySetInfo,
-    acquire: js.Function0[scala.Unit],
-    getHierarchicalPropertySetInfo: js.Function0[XHierarchicalPropertySetInfo],
-    getHierarchicalPropertyValues: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashInteropLib.SafeArray[_]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setHierarchicalPropertyValues: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    getHierarchicalPropertySetInfo: () => XHierarchicalPropertySetInfo,
+    getHierarchicalPropertyValues: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => stdLib.SafeArray[_],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setHierarchicalPropertyValues: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]) => scala.Unit
   ): XMultiHierarchicalPropertySet = {
-    val __obj = js.Dynamic.literal(HierarchicalPropertySetInfo = HierarchicalPropertySetInfo, acquire = acquire, getHierarchicalPropertySetInfo = getHierarchicalPropertySetInfo, getHierarchicalPropertyValues = getHierarchicalPropertyValues, queryInterface = queryInterface, release = release, setHierarchicalPropertyValues = setHierarchicalPropertyValues)
+    val __obj = js.Dynamic.literal(HierarchicalPropertySetInfo = HierarchicalPropertySetInfo, acquire = js.Any.fromFunction0(acquire), getHierarchicalPropertySetInfo = js.Any.fromFunction0(getHierarchicalPropertySetInfo), getHierarchicalPropertyValues = js.Any.fromFunction1(getHierarchicalPropertyValues), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setHierarchicalPropertyValues = js.Any.fromFunction2(setHierarchicalPropertyValues))
   
     __obj.asInstanceOf[XMultiHierarchicalPropertySet]
   }

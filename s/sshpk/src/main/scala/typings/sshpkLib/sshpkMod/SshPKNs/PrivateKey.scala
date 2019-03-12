@@ -17,14 +17,14 @@ trait PrivateKey extends js.Object {
 object PrivateKey {
   @scala.inline
   def apply(
-    createSign: js.Function1[java.lang.String, Signer],
-    createVerify: js.Function1[java.lang.String, Key],
-    derive: js.Function2[java.lang.String, scala.Double, PrivateKey],
-    hash: js.Function1[java.lang.String, nodeLib.Buffer],
-    toBuffer: js.Function2[java.lang.String, js.Any, nodeLib.Buffer],
-    toPublic: js.Function0[Key]
+    createSign: java.lang.String => Signer,
+    createVerify: java.lang.String => Key,
+    derive: (java.lang.String, scala.Double) => PrivateKey,
+    hash: java.lang.String => nodeLib.Buffer,
+    toBuffer: (java.lang.String, js.Any) => nodeLib.Buffer,
+    toPublic: () => Key
   ): PrivateKey = {
-    val __obj = js.Dynamic.literal(createSign = createSign, createVerify = createVerify, derive = derive, hash = hash, toBuffer = toBuffer, toPublic = toPublic)
+    val __obj = js.Dynamic.literal(createSign = js.Any.fromFunction1(createSign), createVerify = js.Any.fromFunction1(createVerify), derive = js.Any.fromFunction2(derive), hash = js.Any.fromFunction1(hash), toBuffer = js.Any.fromFunction2(toBuffer), toPublic = js.Any.fromFunction0(toPublic))
   
     __obj.asInstanceOf[PrivateKey]
   }

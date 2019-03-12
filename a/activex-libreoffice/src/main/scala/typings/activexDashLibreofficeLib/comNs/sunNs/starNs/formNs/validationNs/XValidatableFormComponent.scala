@@ -71,17 +71,17 @@ object XValidatableFormComponent {
   def apply(
     CurrentValue: js.Any,
     Validator: XValidator,
-    acquire: js.Function0[scala.Unit],
-    addFormComponentValidityListener: js.Function1[XFormComponentValidityListener, scala.Unit],
-    getCurrentValue: js.Function0[js.Any],
-    getValidator: js.Function0[XValidator],
-    isValid: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeFormComponentValidityListener: js.Function1[XFormComponentValidityListener, scala.Unit],
-    setValidator: js.Function1[XValidator, scala.Unit]
+    acquire: () => scala.Unit,
+    addFormComponentValidityListener: XFormComponentValidityListener => scala.Unit,
+    getCurrentValue: () => js.Any,
+    getValidator: () => XValidator,
+    isValid: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeFormComponentValidityListener: XFormComponentValidityListener => scala.Unit,
+    setValidator: XValidator => scala.Unit
   ): XValidatableFormComponent = {
-    val __obj = js.Dynamic.literal(CurrentValue = CurrentValue, Validator = Validator, acquire = acquire, addFormComponentValidityListener = addFormComponentValidityListener, getCurrentValue = getCurrentValue, getValidator = getValidator, isValid = isValid, queryInterface = queryInterface, release = release, removeFormComponentValidityListener = removeFormComponentValidityListener, setValidator = setValidator)
+    val __obj = js.Dynamic.literal(CurrentValue = CurrentValue, Validator = Validator, acquire = js.Any.fromFunction0(acquire), addFormComponentValidityListener = js.Any.fromFunction1(addFormComponentValidityListener), getCurrentValue = js.Any.fromFunction0(getCurrentValue), getValidator = js.Any.fromFunction0(getValidator), isValid = js.Any.fromFunction0(isValid), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeFormComponentValidityListener = js.Any.fromFunction1(removeFormComponentValidityListener), setValidator = js.Any.fromFunction1(setValidator))
   
     __obj.asInstanceOf[XValidatableFormComponent]
   }

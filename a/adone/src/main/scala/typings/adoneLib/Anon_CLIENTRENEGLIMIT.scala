@@ -38,6 +38,9 @@ trait Anon_CLIENTRENEGLIMIT extends js.Object {
     secureConnectListener: js.Function0[scala.Unit]
   ): nodeLib.tlsMod.TLSSocket = js.native
   def createSecureContext(details: nodeLib.tlsMod.SecureContextOptions): nodeLib.tlsMod.SecureContext = js.native
+  /**
+    * @deprecated
+    */
   def createSecurePair(): nodeLib.tlsMod.SecurePair = js.native
   def createSecurePair(credentials: nodeLib.tlsMod.SecureContext): nodeLib.tlsMod.SecurePair = js.native
   def createSecurePair(credentials: nodeLib.tlsMod.SecureContext, isServer: scala.Boolean): nodeLib.tlsMod.SecurePair = js.native

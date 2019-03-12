@@ -29,14 +29,14 @@ object IPerceptionFrameProvider {
   @scala.inline
   def apply(
     available: scala.Boolean,
-    close: js.Function0[scala.Unit],
+    close: () => scala.Unit,
     frameProviderInfo: PerceptionFrameProviderInfo,
     properties: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet,
-    setProperty: js.Function1[PerceptionPropertyChangeRequest, scala.Unit],
-    start: js.Function0[scala.Unit],
-    stop: js.Function0[scala.Unit]
+    setProperty: PerceptionPropertyChangeRequest => scala.Unit,
+    start: () => scala.Unit,
+    stop: () => scala.Unit
   ): IPerceptionFrameProvider = {
-    val __obj = js.Dynamic.literal(available = available, close = close, frameProviderInfo = frameProviderInfo, properties = properties, setProperty = setProperty, start = start, stop = stop)
+    val __obj = js.Dynamic.literal(available = available, close = js.Any.fromFunction0(close), frameProviderInfo = frameProviderInfo, properties = properties, setProperty = js.Any.fromFunction1(setProperty), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[IPerceptionFrameProvider]
   }

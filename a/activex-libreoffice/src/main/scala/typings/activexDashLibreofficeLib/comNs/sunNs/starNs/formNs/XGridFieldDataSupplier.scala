@@ -25,7 +25,7 @@ trait XGridFieldDataSupplier
     * If a column does not support the requested type, `NULL` is returned at the respective position.
     * @see XGridFieldDataSupplier.queryFieldDataType
     */
-  def queryFieldData(nRow: scala.Double, xType: activexDashLibreofficeLib.`type`): activexDashInteropLib.SafeArray[_]
+  def queryFieldData(nRow: scala.Double, xType: activexDashLibreofficeLib.`type`): stdLib.SafeArray[_]
   /**
     * checks whether or not the content of the grid's columns can be retrieved in the requested format.
     *
@@ -36,19 +36,19 @@ trait XGridFieldDataSupplier
     * @see DataAwareControlModel
     * @see XGridFieldDataSupplier.queryFieldData
     */
-  def queryFieldDataType(xType: activexDashLibreofficeLib.`type`): activexDashInteropLib.SafeArray[scala.Boolean]
+  def queryFieldDataType(xType: activexDashLibreofficeLib.`type`): stdLib.SafeArray[scala.Boolean]
 }
 
 object XGridFieldDataSupplier {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryFieldData: js.Function2[scala.Double, activexDashLibreofficeLib.`type`, activexDashInteropLib.SafeArray[_]],
-    queryFieldDataType: js.Function1[activexDashLibreofficeLib.`type`, activexDashInteropLib.SafeArray[scala.Boolean]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    queryFieldData: (scala.Double, activexDashLibreofficeLib.`type`) => stdLib.SafeArray[_],
+    queryFieldDataType: activexDashLibreofficeLib.`type` => stdLib.SafeArray[scala.Boolean],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XGridFieldDataSupplier = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryFieldData = queryFieldData, queryFieldDataType = queryFieldDataType, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryFieldData = js.Any.fromFunction2(queryFieldData), queryFieldDataType = js.Any.fromFunction1(queryFieldDataType), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XGridFieldDataSupplier]
   }

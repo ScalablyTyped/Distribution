@@ -15,12 +15,12 @@ trait Anon_XY extends js.Object {
 object Anon_XY {
   @scala.inline
   def apply(
-    X: js.Function0[seenLib.seenMod.Point],
-    Y: js.Function0[seenLib.seenMod.Point],
-    Z: js.Function0[seenLib.seenMod.Point],
-    ZERO: js.Function0[seenLib.seenMod.Point]
+    X: () => seenLib.seenMod.Point,
+    Y: () => seenLib.seenMod.Point,
+    Z: () => seenLib.seenMod.Point,
+    ZERO: () => seenLib.seenMod.Point
   ): Anon_XY = {
-    val __obj = js.Dynamic.literal(X = X, Y = Y, Z = Z, ZERO = ZERO)
+    val __obj = js.Dynamic.literal(X = js.Any.fromFunction0(X), Y = js.Any.fromFunction0(Y), Z = js.Any.fromFunction0(Z), ZERO = js.Any.fromFunction0(ZERO))
   
     __obj.asInstanceOf[Anon_XY]
   }

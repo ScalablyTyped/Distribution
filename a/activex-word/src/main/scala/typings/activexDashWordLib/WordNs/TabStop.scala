@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TabStop protected () extends js.Object {
   var Alignment: WdTabAlignment = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
   val CustomTab: scala.Boolean = js.native
   var Leader: WdTabLeader = js.native

@@ -30,16 +30,13 @@ object XGridPeer {
   @scala.inline
   def apply(
     Columns: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer,
-    acquire: js.Function0[scala.Unit],
-    getColumns: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setColumns: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    getColumns: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setColumns: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer => scala.Unit
   ): XGridPeer = {
-    val __obj = js.Dynamic.literal(Columns = Columns, acquire = acquire, getColumns = getColumns, queryInterface = queryInterface, release = release, setColumns = setColumns)
+    val __obj = js.Dynamic.literal(Columns = Columns, acquire = js.Any.fromFunction0(acquire), getColumns = js.Any.fromFunction0(getColumns), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setColumns = js.Any.fromFunction1(setColumns))
   
     __obj.asInstanceOf[XGridPeer]
   }

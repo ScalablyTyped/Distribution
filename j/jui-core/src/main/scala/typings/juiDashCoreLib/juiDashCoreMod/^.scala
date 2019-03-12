@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jui-core", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val jui: juiDashCoreLib.juiDashCoreMod.JuiStatic = js.native
+  val jui: JuiStatic = js.native
 }
 

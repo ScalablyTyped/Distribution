@@ -19,11 +19,11 @@ trait Anon_Dispose[K, V] extends js.Object {
 object Anon_Dispose {
   @scala.inline
   def apply[K, V](
-    dispose: js.Function2[/* key */ K, /* value */ V, scala.Unit] = null,
+    dispose: (/* key */ K, /* value */ V) => scala.Unit = null,
     maxSize: scala.Int | scala.Double = null
   ): Anon_Dispose[K, V] = {
     val __obj = js.Dynamic.literal()
-    if (dispose != null) __obj.updateDynamic("dispose")(dispose)
+    if (dispose != null) __obj.updateDynamic("dispose")(js.Any.fromFunction2(dispose))
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Dispose[K, V]]
   }

@@ -19,19 +19,13 @@ object Compactable3C {
     URI: F,
     _L: L,
     _U: U,
-    compact: js.Function1[
-      fpDashTsLib.libHKTMod.Type3[F, U, L, fpDashTsLib.libOptionMod.Option[js.Any]], 
+    compact: fpDashTsLib.libHKTMod.Type3[F, U, L, fpDashTsLib.libOptionMod.Option[js.Any]] => fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any],
+    separate: fpDashTsLib.libHKTMod.Type3[F, U, L, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]] => Separated[
+      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
       fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
-    ],
-    separate: js.Function1[
-      fpDashTsLib.libHKTMod.Type3[F, U, L, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]], 
-      Separated[
-        fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
-        fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
-      ]
     ]
   ): Compactable3C[F, U, L] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], compact = compact, separate = separate)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], compact = js.Any.fromFunction1(compact), separate = js.Any.fromFunction1(separate))
   
     __obj.asInstanceOf[Compactable3C[F, U, L]]
   }

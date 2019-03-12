@@ -30,20 +30,11 @@ trait DataSourcesResource extends js.Object {
 object DataSourcesResource {
   @scala.inline
   def apply(
-    checkValidCreds: js.Function1[
-      gapiDotClientDotBigquerydatatransferLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CheckValidCredsResponse]
-    ],
-    get: js.Function1[
-      gapiDotClientDotBigquerydatatransferLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DataSource]
-    ],
-    list: js.Function1[
-      gapiDotClientDotBigquerydatatransferLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListDataSourcesResponse]
-    ]
+    checkValidCreds: gapiDotClientDotBigquerydatatransferLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[CheckValidCredsResponse],
+    get: gapiDotClientDotBigquerydatatransferLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[DataSource],
+    list: gapiDotClientDotBigquerydatatransferLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[ListDataSourcesResponse]
   ): DataSourcesResource = {
-    val __obj = js.Dynamic.literal(checkValidCreds = checkValidCreds, get = get, list = list)
+    val __obj = js.Dynamic.literal(checkValidCreds = js.Any.fromFunction1(checkValidCreds), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[DataSourcesResource]
   }

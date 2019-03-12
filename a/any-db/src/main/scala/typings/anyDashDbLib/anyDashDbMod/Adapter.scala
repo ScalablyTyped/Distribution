@@ -15,7 +15,7 @@ trait Adapter extends js.Object {
   def createConnection(opts: ConnectOpts): Connection = js.native
   def createConnection(
     opts: ConnectOpts,
-    callback: js.Function2[/* error */ nodeLib.Error, /* result */ Connection, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* result */ Connection, scala.Unit]
   ): Connection = js.native
   def createQuery(query: Query): Query = js.native
   /**
@@ -28,7 +28,7 @@ trait Adapter extends js.Object {
   def createQuery(
     text: java.lang.String,
     params: js.Array[_],
-    callback: js.Function2[/* error */ nodeLib.Error, /* result */ ResultSet, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* result */ ResultSet, scala.Unit]
   ): Query = js.native
 }
 

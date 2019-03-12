@@ -15,12 +15,12 @@ trait GetAuthTypeResponse extends js.Object {
 object GetAuthTypeResponse {
   @scala.inline
   def apply(
-    build: js.Function0[js.Object],
-    printJson: js.Function0[java.lang.String],
-    setAuthType: js.Function1[AuthType, GetAuthTypeResponse],
-    setHelpUrl: js.Function1[java.lang.String, GetAuthTypeResponse]
+    build: () => js.Object,
+    printJson: () => java.lang.String,
+    setAuthType: AuthType => GetAuthTypeResponse,
+    setHelpUrl: java.lang.String => GetAuthTypeResponse
   ): GetAuthTypeResponse = {
-    val __obj = js.Dynamic.literal(build = build, printJson = printJson, setAuthType = setAuthType, setHelpUrl = setHelpUrl)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), printJson = js.Any.fromFunction0(printJson), setAuthType = js.Any.fromFunction1(setAuthType), setHelpUrl = js.Any.fromFunction1(setHelpUrl))
   
     __obj.asInstanceOf[GetAuthTypeResponse]
   }

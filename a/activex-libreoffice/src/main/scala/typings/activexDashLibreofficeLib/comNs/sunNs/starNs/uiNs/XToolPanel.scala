@@ -25,12 +25,9 @@ object XToolPanel {
   @scala.inline
   def apply(
     Window: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
-    createAccessible: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible
-    ]
+    createAccessible: activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible => activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible
   ): XToolPanel = {
-    val __obj = js.Dynamic.literal(Window = Window, createAccessible = createAccessible)
+    val __obj = js.Dynamic.literal(Window = Window, createAccessible = js.Any.fromFunction1(createAccessible))
   
     __obj.asInstanceOf[XToolPanel]
   }

@@ -10,10 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val mobxDidRunLazyInitializersSymbol: js.Symbol = js.native
   val mobxPendingDecorators: js.Symbol = js.native
-  def createPropDecorator(
-    propertyInitiallyEnumerable: scala.Boolean,
-    propertyCreator: mobxLib.libUtilsDecoratorsMod.PropertyCreator
-  ): js.Function = js.native
+  def createPropDecorator(propertyInitiallyEnumerable: scala.Boolean, propertyCreator: PropertyCreator): js.Function = js.native
   def initializeInstance(target: js.Any): js.Any = js.native
   def quacksLikeADecorator(args: stdLib.IArguments): scala.Boolean = js.native
 }

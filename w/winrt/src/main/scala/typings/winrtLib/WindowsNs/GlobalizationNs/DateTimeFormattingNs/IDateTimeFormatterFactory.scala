@@ -53,49 +53,15 @@ trait IDateTimeFormatterFactory extends js.Object {
 object IDateTimeFormatterFactory {
   @scala.inline
   def apply(
-    createDateTimeFormatter: js.Function1[java.lang.String, DateTimeFormatter],
-    createDateTimeFormatterContext: js.Function5[
-      java.lang.String, 
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      DateTimeFormatter
-    ],
-    createDateTimeFormatterDate: js.Function4[YearFormat, MonthFormat, DayFormat, DayOfWeekFormat, DateTimeFormatter],
-    createDateTimeFormatterDateTimeContext: js.Function11[
-      YearFormat, 
-      MonthFormat, 
-      DayFormat, 
-      DayOfWeekFormat, 
-      HourFormat, 
-      MinuteFormat, 
-      SecondFormat, 
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      DateTimeFormatter
-    ],
-    createDateTimeFormatterDateTimeLanguages: js.Function8[
-      YearFormat, 
-      MonthFormat, 
-      DayFormat, 
-      DayOfWeekFormat, 
-      HourFormat, 
-      MinuteFormat, 
-      SecondFormat, 
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], 
-      DateTimeFormatter
-    ],
-    createDateTimeFormatterLanguages: js.Function2[
-      java.lang.String, 
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], 
-      DateTimeFormatter
-    ],
-    createDateTimeFormatterTime: js.Function3[HourFormat, MinuteFormat, SecondFormat, DateTimeFormatter]
+    createDateTimeFormatter: java.lang.String => DateTimeFormatter,
+    createDateTimeFormatterContext: (java.lang.String, winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], java.lang.String, java.lang.String, java.lang.String) => DateTimeFormatter,
+    createDateTimeFormatterDate: (YearFormat, MonthFormat, DayFormat, DayOfWeekFormat) => DateTimeFormatter,
+    createDateTimeFormatterDateTimeContext: (YearFormat, MonthFormat, DayFormat, DayOfWeekFormat, HourFormat, MinuteFormat, SecondFormat, winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], java.lang.String, java.lang.String, java.lang.String) => DateTimeFormatter,
+    createDateTimeFormatterDateTimeLanguages: (YearFormat, MonthFormat, DayFormat, DayOfWeekFormat, HourFormat, MinuteFormat, SecondFormat, winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String]) => DateTimeFormatter,
+    createDateTimeFormatterLanguages: (java.lang.String, winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String]) => DateTimeFormatter,
+    createDateTimeFormatterTime: (HourFormat, MinuteFormat, SecondFormat) => DateTimeFormatter
   ): IDateTimeFormatterFactory = {
-    val __obj = js.Dynamic.literal(createDateTimeFormatter = createDateTimeFormatter, createDateTimeFormatterContext = createDateTimeFormatterContext, createDateTimeFormatterDate = createDateTimeFormatterDate, createDateTimeFormatterDateTimeContext = createDateTimeFormatterDateTimeContext, createDateTimeFormatterDateTimeLanguages = createDateTimeFormatterDateTimeLanguages, createDateTimeFormatterLanguages = createDateTimeFormatterLanguages, createDateTimeFormatterTime = createDateTimeFormatterTime)
+    val __obj = js.Dynamic.literal(createDateTimeFormatter = js.Any.fromFunction1(createDateTimeFormatter), createDateTimeFormatterContext = js.Any.fromFunction5(createDateTimeFormatterContext), createDateTimeFormatterDate = js.Any.fromFunction4(createDateTimeFormatterDate), createDateTimeFormatterDateTimeContext = js.Any.fromFunction11(createDateTimeFormatterDateTimeContext), createDateTimeFormatterDateTimeLanguages = js.Any.fromFunction8(createDateTimeFormatterDateTimeLanguages), createDateTimeFormatterLanguages = js.Any.fromFunction2(createDateTimeFormatterLanguages), createDateTimeFormatterTime = js.Any.fromFunction3(createDateTimeFormatterTime))
   
     __obj.asInstanceOf[IDateTimeFormatterFactory]
   }

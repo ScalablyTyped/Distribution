@@ -16,12 +16,9 @@ trait AnalyticsResource extends js.Object {
 object AnalyticsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotPartnersLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListAnalyticsResponse]
-    ]
+    list: gapiDotClientDotPartnersLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[ListAnalyticsResponse]
   ): AnalyticsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[AnalyticsResource]
   }

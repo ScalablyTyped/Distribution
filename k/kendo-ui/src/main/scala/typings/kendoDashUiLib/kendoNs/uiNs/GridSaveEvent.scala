@@ -14,14 +14,14 @@ trait GridSaveEvent extends GridEvent {
 object GridSaveEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Grid,
     container: kendoDashUiLib.JQuery = null,
     model: kendoDashUiLib.kendoNs.dataNs.Model = null,
     values: js.Any = null
   ): GridSaveEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (container != null) __obj.updateDynamic("container")(container)
     if (model != null) __obj.updateDynamic("model")(model)
     if (values != null) __obj.updateDynamic("values")(values)

@@ -18,11 +18,11 @@ object OverlapKeeperRecord {
   def apply(
     bodyA: Body,
     bodyB: Body,
-    set: js.Function4[Body, Shape, Body, Shape, scala.Unit],
+    set: (Body, Shape, Body, Shape) => scala.Unit,
     shapeA: Shape,
     shapeB: Shape
   ): OverlapKeeperRecord = {
-    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, set = set, shapeA = shapeA, shapeB = shapeB)
+    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, set = js.Any.fromFunction4(set), shapeA = shapeA, shapeB = shapeB)
   
     __obj.asInstanceOf[OverlapKeeperRecord]
   }

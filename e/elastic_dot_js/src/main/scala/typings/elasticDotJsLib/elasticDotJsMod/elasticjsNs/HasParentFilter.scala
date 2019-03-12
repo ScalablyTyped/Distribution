@@ -48,17 +48,17 @@ trait HasParentFilter extends Filter {
 object HasParentFilter {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cache: js.Function1[scala.Boolean, HasParentFilter],
-    cacheKey: js.Function1[java.lang.String, HasParentFilter],
-    filter: js.Function1[js.Object, HasParentFilter],
-    name: js.Function1[java.lang.String, HasParentFilter],
-    parentType: js.Function1[java.lang.String, HasParentFilter],
-    query: js.Function1[js.Object, HasParentFilter],
-    scope: js.Function1[java.lang.String, HasParentFilter],
-    toJSON: js.Function0[HasParentFilter]
+    _type: () => java.lang.String,
+    cache: scala.Boolean => HasParentFilter,
+    cacheKey: java.lang.String => HasParentFilter,
+    filter: js.Object => HasParentFilter,
+    name: java.lang.String => HasParentFilter,
+    parentType: java.lang.String => HasParentFilter,
+    query: js.Object => HasParentFilter,
+    scope: java.lang.String => HasParentFilter,
+    toJSON: () => HasParentFilter
   ): HasParentFilter = {
-    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, filter = filter, name = name, parentType = parentType, query = query, scope = scope, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), filter = js.Any.fromFunction1(filter), name = js.Any.fromFunction1(name), parentType = js.Any.fromFunction1(parentType), query = js.Any.fromFunction1(query), scope = js.Any.fromFunction1(scope), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[HasParentFilter]
   }

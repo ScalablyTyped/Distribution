@@ -32,12 +32,12 @@ trait UserChoice extends js.Object {
 object UserChoice {
   @scala.inline
   def apply(
-    clear: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    exists: js.Function1[js.Function1[/* exists */ scala.Boolean, scala.Unit], scala.Unit],
-    get: js.Function1[js.Function1[/* app */ java.lang.String, scala.Unit], scala.Unit],
-    set: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit]
+    clear: js.Function0[scala.Unit] => scala.Unit,
+    exists: js.Function1[/* exists */ scala.Boolean, scala.Unit] => scala.Unit,
+    get: js.Function1[/* app */ java.lang.String, scala.Unit] => scala.Unit,
+    set: (java.lang.String, js.Function0[scala.Unit]) => scala.Unit
   ): UserChoice = {
-    val __obj = js.Dynamic.literal(clear = clear, exists = exists, get = get, set = set)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear), exists = js.Any.fromFunction1(exists), get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
   
     __obj.asInstanceOf[UserChoice]
   }

@@ -12,12 +12,9 @@ trait KoLiteCommandOptions extends js.Object {
 
 object KoLiteCommandOptions {
   @scala.inline
-  def apply(
-    execute: js.Function1[/* repeated */ js.Any, js.Any],
-    canExecute: js.Function1[/* isExecuting */ scala.Boolean, _] = null
-  ): KoLiteCommandOptions = {
-    val __obj = js.Dynamic.literal(execute = execute)
-    if (canExecute != null) __obj.updateDynamic("canExecute")(canExecute)
+  def apply(execute: /* repeated */ js.Any => js.Any, canExecute: /* isExecuting */ scala.Boolean => _ = null): KoLiteCommandOptions = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute))
+    if (canExecute != null) __obj.updateDynamic("canExecute")(js.Any.fromFunction1(canExecute))
     __obj.asInstanceOf[KoLiteCommandOptions]
   }
 }

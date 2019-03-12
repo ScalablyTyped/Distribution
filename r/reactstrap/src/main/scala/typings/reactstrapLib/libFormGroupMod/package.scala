@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object libFormGroupMod {
   type FormGroup[T] = reactLib.reactMod.Component[FormGroupProps[T], js.Object, js.Any]
-  type FormGroupProps[T] = reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement] with reactstrapLib.Anon_Check with T
+  type FormGroupProps[T] = reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement] with reactstrapLib.Anon_Check with T
 }

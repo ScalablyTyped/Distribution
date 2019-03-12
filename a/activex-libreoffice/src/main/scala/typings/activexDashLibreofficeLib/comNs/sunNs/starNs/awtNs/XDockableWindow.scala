@@ -57,21 +57,21 @@ trait XDockableWindow
 object XDockableWindow {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addDockableWindowListener: js.Function1[XDockableWindowListener, scala.Unit],
-    enableDocking: js.Function1[scala.Boolean, scala.Unit],
-    isFloating: js.Function0[scala.Boolean],
-    isInPopupMode: js.Function0[scala.Boolean],
-    isLocked: js.Function0[scala.Boolean],
-    lock: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeDockableWindowListener: js.Function1[XDockableWindowListener, scala.Unit],
-    setFloatingMode: js.Function1[scala.Boolean, scala.Unit],
-    startPopupMode: js.Function1[Rectangle, scala.Unit],
-    unlock: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addDockableWindowListener: XDockableWindowListener => scala.Unit,
+    enableDocking: scala.Boolean => scala.Unit,
+    isFloating: () => scala.Boolean,
+    isInPopupMode: () => scala.Boolean,
+    isLocked: () => scala.Boolean,
+    lock: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeDockableWindowListener: XDockableWindowListener => scala.Unit,
+    setFloatingMode: scala.Boolean => scala.Unit,
+    startPopupMode: Rectangle => scala.Unit,
+    unlock: () => scala.Unit
   ): XDockableWindow = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addDockableWindowListener = addDockableWindowListener, enableDocking = enableDocking, isFloating = isFloating, isInPopupMode = isInPopupMode, isLocked = isLocked, lock = lock, queryInterface = queryInterface, release = release, removeDockableWindowListener = removeDockableWindowListener, setFloatingMode = setFloatingMode, startPopupMode = startPopupMode, unlock = unlock)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addDockableWindowListener = js.Any.fromFunction1(addDockableWindowListener), enableDocking = js.Any.fromFunction1(enableDocking), isFloating = js.Any.fromFunction0(isFloating), isInPopupMode = js.Any.fromFunction0(isInPopupMode), isLocked = js.Any.fromFunction0(isLocked), lock = js.Any.fromFunction0(lock), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeDockableWindowListener = js.Any.fromFunction1(removeDockableWindowListener), setFloatingMode = js.Any.fromFunction1(setFloatingMode), startPopupMode = js.Any.fromFunction1(startPopupMode), unlock = js.Any.fromFunction0(unlock))
   
     __obj.asInstanceOf[XDockableWindow]
   }

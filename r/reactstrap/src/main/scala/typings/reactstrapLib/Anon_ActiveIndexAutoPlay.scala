@@ -36,11 +36,11 @@ object Anon_ActiveIndexAutoPlay {
     indicators: js.UndefOr[scala.Boolean] = js.undefined,
     interval: scala.Double | java.lang.String | scala.Boolean = null,
     keyboard: js.UndefOr[scala.Boolean] = js.undefined,
-    mouseEnter: js.Function0[scala.Unit] = null,
-    mouseExit: js.Function0[scala.Unit] = null,
-    next: js.Function0[scala.Unit] = null,
+    mouseEnter: () => scala.Unit = null,
+    mouseExit: () => scala.Unit = null,
+    next: () => scala.Unit = null,
     pause: reactstrapLib.reactstrapLibStrings.hover | reactstrapLib.reactstrapLibNumbers.`false` = null,
-    previous: js.Function0[scala.Unit] = null,
+    previous: () => scala.Unit = null,
     ride: reactstrapLib.reactstrapLibStrings.carousel = null,
     slide: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ActiveIndexAutoPlay = {
@@ -52,11 +52,11 @@ object Anon_ActiveIndexAutoPlay {
     if (!js.isUndefined(indicators)) __obj.updateDynamic("indicators")(indicators)
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
-    if (mouseEnter != null) __obj.updateDynamic("mouseEnter")(mouseEnter)
-    if (mouseExit != null) __obj.updateDynamic("mouseExit")(mouseExit)
-    if (next != null) __obj.updateDynamic("next")(next)
+    if (mouseEnter != null) __obj.updateDynamic("mouseEnter")(js.Any.fromFunction0(mouseEnter))
+    if (mouseExit != null) __obj.updateDynamic("mouseExit")(js.Any.fromFunction0(mouseExit))
+    if (next != null) __obj.updateDynamic("next")(js.Any.fromFunction0(next))
     if (pause != null) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
-    if (previous != null) __obj.updateDynamic("previous")(previous)
+    if (previous != null) __obj.updateDynamic("previous")(js.Any.fromFunction0(previous))
     if (ride != null) __obj.updateDynamic("ride")(ride)
     if (!js.isUndefined(slide)) __obj.updateDynamic("slide")(slide)
     __obj.asInstanceOf[Anon_ActiveIndexAutoPlay]

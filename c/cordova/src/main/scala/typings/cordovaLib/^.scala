@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /** Apache Cordova instance */
-  var cordova: cordovaLib.Cordova = js.native
+  var cordova: Cordova = js.native
 }
 

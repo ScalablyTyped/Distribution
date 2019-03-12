@@ -8,11 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-dnd/lib/cjs/DragDropContext", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  /* import warning: parser.TsParser#tsDeclVar $anonfun Dropped List(Provider) */ val Consumer: reactLib.reactMod.ReactNs.ExoticComponent[
-    reactLib.reactMod.ReactNs.ConsumerProps[reactDashDndLib.libCjsDragDropContextMod.DragDropContext[js.Any]]
-  ] = js.native
-  val DragDropContextProvider: reactLib.reactMod.ReactNs.FC[reactDashDndLib.libCjsDragDropContextMod.DragDropContextProviderProps[js.Any]] = js.native
-  val context: reactLib.reactMod.ReactNs.Context[reactDashDndLib.libCjsDragDropContextMod.DragDropContext[js.Any]] = js.native
+  /* import warning: parser.TsParser#tsDeclVar $anonfun Dropped List(Provider) */ val Consumer: reactLib.reactMod.ReactNs.ExoticComponent[reactLib.reactMod.ReactNs.ConsumerProps[DragDropContext[js.Any]]] = js.native
+  val DragDropContextProvider: reactLib.reactMod.ReactNs.FC[DragDropContextProviderProps[js.Any]] = js.native
+  val context: reactLib.reactMod.ReactNs.Context[DragDropContext[js.Any]] = js.native
   def DragDropContext(backendFactory: dndDashCoreLib.libCjsInterfacesMod.BackendFactory): js.Function1[
     /* DecoratedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
     reactLib.reactMod.ReactNs.ComponentType[_] with reactDashDndLib.libCjsInterfacesClassApiMod.ContextComponent[_]

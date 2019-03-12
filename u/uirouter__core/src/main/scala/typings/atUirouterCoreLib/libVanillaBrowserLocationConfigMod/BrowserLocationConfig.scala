@@ -15,19 +15,6 @@ class BrowserLocationConfig ()
   var _hashPrefix: js.Any = js.native
   var _isHtml5: js.Any = js.native
   var getBaseHref: js.Any = js.native
-  @JSName("baseHref")
-  def baseHref_MBrowserLocationConfig(): java.lang.String = js.native
-  @JSName("baseHref")
-  def baseHref_MBrowserLocationConfig(href: java.lang.String): java.lang.String = js.native
-  @JSName("hashPrefix")
-  def hashPrefix_MBrowserLocationConfig(): java.lang.String = js.native
-  @JSName("host")
-  def host_MBrowserLocationConfig(): java.lang.String = js.native
-  @JSName("html5Mode")
-  def html5Mode_MBrowserLocationConfig(): scala.Boolean = js.native
-  @JSName("port")
-  def port_MBrowserLocationConfig(): scala.Double = js.native
-  @JSName("protocol")
-  def protocol_MBrowserLocationConfig(): java.lang.String = js.native
+  def baseHref(href: java.lang.String): java.lang.String = js.native
 }
 

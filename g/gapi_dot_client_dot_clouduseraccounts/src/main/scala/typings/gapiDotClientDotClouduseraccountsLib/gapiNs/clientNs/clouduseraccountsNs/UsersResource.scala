@@ -29,44 +29,17 @@ trait UsersResource extends js.Object {
 object UsersResource {
   @scala.inline
   def apply(
-    addPublicKey: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[User]
-    ],
-    getIamPolicy: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UserList]
-    ],
-    removePublicKey: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsFingerprint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    setIamPolicy: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    testIamPermissions: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TestPermissionsResponse]
-    ]
+    addPublicKey: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    delete: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[User],
+    getIamPolicy: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    insert: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotClouduseraccountsLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[UserList],
+    removePublicKey: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsFingerprint => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    setIamPolicy: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    testIamPermissions: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[TestPermissionsResponse]
   ): UsersResource = {
-    val __obj = js.Dynamic.literal(addPublicKey = addPublicKey, delete = delete, get = get, getIamPolicy = getIamPolicy, insert = insert, list = list, removePublicKey = removePublicKey, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions)
+    val __obj = js.Dynamic.literal(addPublicKey = js.Any.fromFunction1(addPublicKey), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), removePublicKey = js.Any.fromFunction1(removePublicKey), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions))
   
     __obj.asInstanceOf[UsersResource]
   }

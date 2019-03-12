@@ -17,13 +17,13 @@ trait ASPxClientFABActionItem extends ASPxClientFABActionItemBase {
 object ASPxClientFABActionItem {
   @scala.inline
   def apply(
-    GetActionName: js.Function0[java.lang.String],
-    GetText: js.Function0[java.lang.String],
-    GetVisible: js.Function0[scala.Boolean],
-    SetText: js.Function1[java.lang.String, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit]
+    GetActionName: () => java.lang.String,
+    GetText: () => java.lang.String,
+    GetVisible: () => scala.Boolean,
+    SetText: java.lang.String => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit
   ): ASPxClientFABActionItem = {
-    val __obj = js.Dynamic.literal(GetActionName = GetActionName, GetText = GetText, GetVisible = GetVisible, SetText = SetText, SetVisible = SetVisible)
+    val __obj = js.Dynamic.literal(GetActionName = js.Any.fromFunction0(GetActionName), GetText = js.Any.fromFunction0(GetText), GetVisible = js.Any.fromFunction0(GetVisible), SetText = js.Any.fromFunction1(SetText), SetVisible = js.Any.fromFunction1(SetVisible))
   
     __obj.asInstanceOf[ASPxClientFABActionItem]
   }

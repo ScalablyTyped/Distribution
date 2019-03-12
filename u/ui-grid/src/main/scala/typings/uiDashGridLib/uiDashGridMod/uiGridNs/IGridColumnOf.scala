@@ -109,20 +109,20 @@ trait IGridColumnOf[TEntity] extends js.Object {
 object IGridColumnOf {
   @scala.inline
   def apply[TEntity](
-    GridColumn: js.Function3[IColumnDefOf[TEntity], scala.Double, IGridInstanceOf[TEntity], scala.Unit],
+    GridColumn: (IColumnDefOf[TEntity], scala.Double, IGridInstanceOf[TEntity]) => scala.Unit,
     colDef: IColumnDefOf[TEntity],
-    getAggregationText: js.Function1[java.lang.String, scala.Unit],
-    getAggregationValue: js.Function0[java.lang.String],
-    getColClass: js.Function1[scala.Boolean, java.lang.String],
-    getColClassDefinition: js.Function0[java.lang.String],
-    getRenderContainer: js.Function0[js.Any],
+    getAggregationText: java.lang.String => scala.Unit,
+    getAggregationValue: () => java.lang.String,
+    getColClass: scala.Boolean => java.lang.String,
+    getColClassDefinition: () => java.lang.String,
+    getRenderContainer: () => js.Any,
     grid: IGridInstanceOf[TEntity],
-    hideColumn: js.Function0[scala.Unit],
-    isPinnedLeft: js.Function0[scala.Boolean],
-    isPinnedRight: js.Function0[scala.Boolean],
-    setPropertyOrDefault: js.Function3[IColumnDefOf[TEntity], java.lang.String, js.Any, scala.Unit],
-    showColumn: js.Function0[scala.Unit],
-    updateColumnDef: js.Function2[IColumnDefOf[TEntity], scala.Boolean, scala.Unit],
+    hideColumn: () => scala.Unit,
+    isPinnedLeft: () => scala.Boolean,
+    isPinnedRight: () => scala.Boolean,
+    setPropertyOrDefault: (IColumnDefOf[TEntity], java.lang.String, js.Any) => scala.Unit,
+    showColumn: () => scala.Unit,
+    updateColumnDef: (IColumnDefOf[TEntity], scala.Boolean) => scala.Unit,
     width: scala.Double,
     defaultSort: ISortInfo = null,
     displayName: java.lang.String = null,
@@ -131,16 +131,9 @@ object IGridColumnOf {
     filters: js.Array[IFilterOptions] = null,
     name: java.lang.String = null,
     sort: ISortInfo = null,
-    sortingAlgorithm: js.Function5[
-      /* a */ js.Any, 
-      /* b */ js.Any, 
-      /* rowA */ IGridRowOf[TEntity], 
-      /* rowB */ IGridRowOf[TEntity], 
-      /* direction */ java.lang.String, 
-      scala.Double
-    ] = null
+    sortingAlgorithm: (/* a */ js.Any, /* b */ js.Any, /* rowA */ IGridRowOf[TEntity], /* rowB */ IGridRowOf[TEntity], /* direction */ java.lang.String) => scala.Double = null
   ): IGridColumnOf[TEntity] = {
-    val __obj = js.Dynamic.literal(GridColumn = GridColumn, colDef = colDef, getAggregationText = getAggregationText, getAggregationValue = getAggregationValue, getColClass = getColClass, getColClassDefinition = getColClassDefinition, getRenderContainer = getRenderContainer, grid = grid, hideColumn = hideColumn, isPinnedLeft = isPinnedLeft, isPinnedRight = isPinnedRight, setPropertyOrDefault = setPropertyOrDefault, showColumn = showColumn, updateColumnDef = updateColumnDef, width = width)
+    val __obj = js.Dynamic.literal(GridColumn = js.Any.fromFunction3(GridColumn), colDef = colDef, getAggregationText = js.Any.fromFunction1(getAggregationText), getAggregationValue = js.Any.fromFunction0(getAggregationValue), getColClass = js.Any.fromFunction1(getColClass), getColClassDefinition = js.Any.fromFunction0(getColClassDefinition), getRenderContainer = js.Any.fromFunction0(getRenderContainer), grid = grid, hideColumn = js.Any.fromFunction0(hideColumn), isPinnedLeft = js.Any.fromFunction0(isPinnedLeft), isPinnedRight = js.Any.fromFunction0(isPinnedRight), setPropertyOrDefault = js.Any.fromFunction3(setPropertyOrDefault), showColumn = js.Any.fromFunction0(showColumn), updateColumnDef = js.Any.fromFunction2(updateColumnDef), width = width)
     if (defaultSort != null) __obj.updateDynamic("defaultSort")(defaultSort)
     if (displayName != null) __obj.updateDynamic("displayName")(displayName)
     if (field != null) __obj.updateDynamic("field")(field)
@@ -148,7 +141,7 @@ object IGridColumnOf {
     if (filters != null) __obj.updateDynamic("filters")(filters)
     if (name != null) __obj.updateDynamic("name")(name)
     if (sort != null) __obj.updateDynamic("sort")(sort)
-    if (sortingAlgorithm != null) __obj.updateDynamic("sortingAlgorithm")(sortingAlgorithm)
+    if (sortingAlgorithm != null) __obj.updateDynamic("sortingAlgorithm")(js.Any.fromFunction5(sortingAlgorithm))
     __obj.asInstanceOf[IGridColumnOf[TEntity]]
   }
 }

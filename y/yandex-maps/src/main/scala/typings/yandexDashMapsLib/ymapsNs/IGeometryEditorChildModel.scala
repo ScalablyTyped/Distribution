@@ -15,15 +15,15 @@ trait IGeometryEditorChildModel extends IGeometryEditorModel {
 object IGeometryEditorChildModel {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     editor: IGeometryEditor,
     events: IEventManager,
     geometry: IBaseGeometry,
-    getParent: js.Function0[IGeometryEditorModel],
-    getPixels: js.Function0[js.Array[scala.Double]],
-    setPixels: js.Function1[js.Array[scala.Double], scala.Unit]
+    getParent: () => IGeometryEditorModel,
+    getPixels: () => js.Array[scala.Double],
+    setPixels: js.Array[scala.Double] => scala.Unit
   ): IGeometryEditorChildModel = {
-    val __obj = js.Dynamic.literal(destroy = destroy, editor = editor, events = events, geometry = geometry, getParent = getParent, getPixels = getPixels, setPixels = setPixels)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), editor = editor, events = events, geometry = geometry, getParent = js.Any.fromFunction0(getParent), getPixels = js.Any.fromFunction0(getPixels), setPixels = js.Any.fromFunction1(setPixels))
   
     __obj.asInstanceOf[IGeometryEditorChildModel]
   }

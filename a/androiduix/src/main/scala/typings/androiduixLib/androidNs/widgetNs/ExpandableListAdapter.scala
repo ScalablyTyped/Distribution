@@ -40,39 +40,26 @@ trait ExpandableListAdapter extends js.Object {
 object ExpandableListAdapter {
   @scala.inline
   def apply(
-    areAllItemsEnabled: js.Function0[scala.Boolean],
-    getChild: js.Function2[scala.Double, scala.Double, js.Any],
-    getChildId: js.Function2[scala.Double, scala.Double, scala.Double],
-    getChildView: js.Function5[
-      scala.Double, 
-      scala.Double, 
-      scala.Boolean, 
-      androiduixLib.androidNs.viewNs.View, 
-      androiduixLib.androidNs.viewNs.ViewGroup, 
-      androiduixLib.androidNs.viewNs.View
-    ],
-    getChildrenCount: js.Function1[scala.Double, scala.Double],
-    getCombinedChildId: js.Function2[scala.Double, scala.Double, scala.Double],
-    getCombinedGroupId: js.Function1[scala.Double, scala.Double],
-    getGroup: js.Function1[scala.Double, js.Any],
-    getGroupCount: js.Function0[scala.Double],
-    getGroupId: js.Function1[scala.Double, scala.Double],
-    getGroupView: js.Function4[
-      scala.Double, 
-      scala.Boolean, 
-      androiduixLib.androidNs.viewNs.View, 
-      androiduixLib.androidNs.viewNs.ViewGroup, 
-      androiduixLib.androidNs.viewNs.View
-    ],
-    hasStableIds: js.Function0[scala.Boolean],
-    isChildSelectable: js.Function2[scala.Double, scala.Double, scala.Boolean],
-    isEmpty: js.Function0[scala.Boolean],
-    onGroupCollapsed: js.Function1[scala.Double, scala.Unit],
-    onGroupExpanded: js.Function1[scala.Double, scala.Unit],
-    registerDataSetObserver: js.Function1[androiduixLib.androidNs.databaseNs.DataSetObserver, scala.Unit],
-    unregisterDataSetObserver: js.Function1[androiduixLib.androidNs.databaseNs.DataSetObserver, scala.Unit]
+    areAllItemsEnabled: () => scala.Boolean,
+    getChild: (scala.Double, scala.Double) => js.Any,
+    getChildId: (scala.Double, scala.Double) => scala.Double,
+    getChildView: (scala.Double, scala.Double, scala.Boolean, androiduixLib.androidNs.viewNs.View, androiduixLib.androidNs.viewNs.ViewGroup) => androiduixLib.androidNs.viewNs.View,
+    getChildrenCount: scala.Double => scala.Double,
+    getCombinedChildId: (scala.Double, scala.Double) => scala.Double,
+    getCombinedGroupId: scala.Double => scala.Double,
+    getGroup: scala.Double => js.Any,
+    getGroupCount: () => scala.Double,
+    getGroupId: scala.Double => scala.Double,
+    getGroupView: (scala.Double, scala.Boolean, androiduixLib.androidNs.viewNs.View, androiduixLib.androidNs.viewNs.ViewGroup) => androiduixLib.androidNs.viewNs.View,
+    hasStableIds: () => scala.Boolean,
+    isChildSelectable: (scala.Double, scala.Double) => scala.Boolean,
+    isEmpty: () => scala.Boolean,
+    onGroupCollapsed: scala.Double => scala.Unit,
+    onGroupExpanded: scala.Double => scala.Unit,
+    registerDataSetObserver: androiduixLib.androidNs.databaseNs.DataSetObserver => scala.Unit,
+    unregisterDataSetObserver: androiduixLib.androidNs.databaseNs.DataSetObserver => scala.Unit
   ): ExpandableListAdapter = {
-    val __obj = js.Dynamic.literal(areAllItemsEnabled = areAllItemsEnabled, getChild = getChild, getChildId = getChildId, getChildView = getChildView, getChildrenCount = getChildrenCount, getCombinedChildId = getCombinedChildId, getCombinedGroupId = getCombinedGroupId, getGroup = getGroup, getGroupCount = getGroupCount, getGroupId = getGroupId, getGroupView = getGroupView, hasStableIds = hasStableIds, isChildSelectable = isChildSelectable, isEmpty = isEmpty, onGroupCollapsed = onGroupCollapsed, onGroupExpanded = onGroupExpanded, registerDataSetObserver = registerDataSetObserver, unregisterDataSetObserver = unregisterDataSetObserver)
+    val __obj = js.Dynamic.literal(areAllItemsEnabled = js.Any.fromFunction0(areAllItemsEnabled), getChild = js.Any.fromFunction2(getChild), getChildId = js.Any.fromFunction2(getChildId), getChildView = js.Any.fromFunction5(getChildView), getChildrenCount = js.Any.fromFunction1(getChildrenCount), getCombinedChildId = js.Any.fromFunction2(getCombinedChildId), getCombinedGroupId = js.Any.fromFunction1(getCombinedGroupId), getGroup = js.Any.fromFunction1(getGroup), getGroupCount = js.Any.fromFunction0(getGroupCount), getGroupId = js.Any.fromFunction1(getGroupId), getGroupView = js.Any.fromFunction4(getGroupView), hasStableIds = js.Any.fromFunction0(hasStableIds), isChildSelectable = js.Any.fromFunction2(isChildSelectable), isEmpty = js.Any.fromFunction0(isEmpty), onGroupCollapsed = js.Any.fromFunction1(onGroupCollapsed), onGroupExpanded = js.Any.fromFunction1(onGroupExpanded), registerDataSetObserver = js.Any.fromFunction1(registerDataSetObserver), unregisterDataSetObserver = js.Any.fromFunction1(unregisterDataSetObserver))
   
     __obj.asInstanceOf[ExpandableListAdapter]
   }

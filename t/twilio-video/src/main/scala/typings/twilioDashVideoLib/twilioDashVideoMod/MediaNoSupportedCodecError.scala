@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MediaNoSupportedCodecError () extends TwilioError {
   @JSName("code")
   var code_MediaNoSupportedCodecError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53404` = js.native
-  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`No supported codec` = js.native
+  @JSName("message")
+  var message_MediaNoSupportedCodecError: twilioDashVideoLib.twilioDashVideoLibStrings.`No supported codec` = js.native
 }
 

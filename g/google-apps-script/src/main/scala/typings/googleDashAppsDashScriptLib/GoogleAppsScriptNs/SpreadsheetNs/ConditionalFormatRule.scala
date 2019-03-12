@@ -15,12 +15,12 @@ trait ConditionalFormatRule extends js.Object {
 object ConditionalFormatRule {
   @scala.inline
   def apply(
-    copy: js.Function0[ConditionalFormatRuleBuilder],
-    getBooleanCondition: js.Function0[BooleanCondition],
-    getGradientCondition: js.Function0[GradientCondition],
-    getRanges: js.Function0[js.Array[Range]]
+    copy: () => ConditionalFormatRuleBuilder,
+    getBooleanCondition: () => BooleanCondition,
+    getGradientCondition: () => GradientCondition,
+    getRanges: () => js.Array[Range]
   ): ConditionalFormatRule = {
-    val __obj = js.Dynamic.literal(copy = copy, getBooleanCondition = getBooleanCondition, getGradientCondition = getGradientCondition, getRanges = getRanges)
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), getBooleanCondition = js.Any.fromFunction0(getBooleanCondition), getGradientCondition = js.Any.fromFunction0(getGradientCondition), getRanges = js.Any.fromFunction0(getRanges))
   
     __obj.asInstanceOf[ConditionalFormatRule]
   }

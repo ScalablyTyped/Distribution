@@ -97,8 +97,8 @@ object PlusSpeechSpeechRecognizeOptions {
     engine: java.lang.String = null,
     lang: java.lang.String = null,
     nbest: scala.Int | scala.Double = null,
-    onend: js.Function1[/* result */ js.Any, scala.Unit] = null,
-    onstart: js.Function1[/* result */ js.Any, scala.Unit] = null,
+    onend: /* result */ js.Any => scala.Unit = null,
+    onstart: /* result */ js.Any => scala.Unit = null,
     punctuation: js.UndefOr[scala.Boolean] = js.undefined,
     timeout: scala.Int | scala.Double = null,
     userInterface: js.UndefOr[scala.Boolean] = js.undefined
@@ -108,8 +108,8 @@ object PlusSpeechSpeechRecognizeOptions {
     if (engine != null) __obj.updateDynamic("engine")(engine)
     if (lang != null) __obj.updateDynamic("lang")(lang)
     if (nbest != null) __obj.updateDynamic("nbest")(nbest.asInstanceOf[js.Any])
-    if (onend != null) __obj.updateDynamic("onend")(onend)
-    if (onstart != null) __obj.updateDynamic("onstart")(onstart)
+    if (onend != null) __obj.updateDynamic("onend")(js.Any.fromFunction1(onend))
+    if (onstart != null) __obj.updateDynamic("onstart")(js.Any.fromFunction1(onstart))
     if (!js.isUndefined(punctuation)) __obj.updateDynamic("punctuation")(punctuation)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (!js.isUndefined(userInterface)) __obj.updateDynamic("userInterface")(userInterface)

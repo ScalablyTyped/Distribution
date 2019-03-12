@@ -26,10 +26,10 @@ object Platform {
     os: java.lang.String,
     prerelease: java.lang.String,
     product: java.lang.String,
-    toString: js.Function0[java.lang.String],
+    toString: () => java.lang.String,
     version: java.lang.String
   ): Platform = {
-    val __obj = js.Dynamic.literal(description = description, layout = layout, manufacturer = manufacturer, name = name, os = os, prerelease = prerelease, product = product, toString = toString, version = version)
+    val __obj = js.Dynamic.literal(description = description, layout = layout, manufacturer = manufacturer, name = name, os = os, prerelease = prerelease, product = product, toString = js.Any.fromFunction0(toString), version = version)
   
     __obj.asInstanceOf[Platform]
   }

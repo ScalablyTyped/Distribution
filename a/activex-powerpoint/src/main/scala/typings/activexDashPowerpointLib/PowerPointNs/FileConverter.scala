@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.FileConverter")
 @js.native
 class FileConverter protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   val CanOpen: scala.Boolean = js.native
   val CanSave: scala.Boolean = js.native
   val ClassName: java.lang.String = js.native

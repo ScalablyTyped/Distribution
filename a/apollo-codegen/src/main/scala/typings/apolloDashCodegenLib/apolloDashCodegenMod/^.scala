@@ -20,7 +20,7 @@ object ^ extends js.Object {
     schemaPath: java.lang.String,
     outputPath: java.lang.String,
     only: java.lang.String,
-    target: apolloDashCodegenLib.apolloDashCodegenMod.TargetType,
+    target: TargetType,
     tagName: java.lang.String,
     projectName: java.lang.String,
     options: apolloDashCodegenLib.Anon_AddTypename

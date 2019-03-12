@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("pg-ears", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(opts: pgLib.pgMod.ClientConfig with pgDashEarsLib.Anon_CheckInterval): pgDashEarsLib.pgDashEarsMod.PgEars = js.native
+  def apply(opts: pgLib.pgMod.ClientConfig with pgDashEarsLib.Anon_CheckInterval): PgEars = js.native
 }
 

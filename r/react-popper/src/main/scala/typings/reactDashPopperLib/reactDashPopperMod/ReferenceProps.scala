@@ -13,10 +13,10 @@ trait ReferenceProps extends js.Object {
 object ReferenceProps {
   @scala.inline
   def apply(
-    children: js.Function1[ReferenceChildrenProps, reactLib.reactMod.ReactNs.ReactNode],
+    children: ReferenceChildrenProps => reactLib.reactMod.ReactNs.ReactNode,
     innerRef: reactDashPopperLib.RefHandler = null
   ): ReferenceProps = {
-    val __obj = js.Dynamic.literal(children = children)
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef)
     __obj.asInstanceOf[ReferenceProps]
   }

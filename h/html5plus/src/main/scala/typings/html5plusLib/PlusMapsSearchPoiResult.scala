@@ -58,14 +58,14 @@ trait PlusMapsSearchPoiResult extends js.Object {
 object PlusMapsSearchPoiResult {
   @scala.inline
   def apply(
-    getPosition: js.Function0[PlusMapsPosition],
+    getPosition: () => PlusMapsPosition,
     currentNumber: scala.Int | scala.Double = null,
     pageIndex: scala.Int | scala.Double = null,
     pageNumber: scala.Int | scala.Double = null,
     poiList: js.Array[_] = null,
     totalNumber: scala.Int | scala.Double = null
   ): PlusMapsSearchPoiResult = {
-    val __obj = js.Dynamic.literal(getPosition = getPosition)
+    val __obj = js.Dynamic.literal(getPosition = js.Any.fromFunction0(getPosition))
     if (currentNumber != null) __obj.updateDynamic("currentNumber")(currentNumber.asInstanceOf[js.Any])
     if (pageIndex != null) __obj.updateDynamic("pageIndex")(pageIndex.asInstanceOf[js.Any])
     if (pageNumber != null) __obj.updateDynamic("pageNumber")(pageNumber.asInstanceOf[js.Any])

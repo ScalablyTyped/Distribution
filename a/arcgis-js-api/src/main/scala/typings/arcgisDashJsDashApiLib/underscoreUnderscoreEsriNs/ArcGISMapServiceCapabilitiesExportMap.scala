@@ -37,14 +37,14 @@ object ArcGISMapServiceCapabilitiesExportMap {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     supportsDynamicLayers: scala.Boolean,
     supportsSublayerDefinitionExpression: scala.Boolean,
     supportsSublayerVisibility: scala.Boolean,
     supportsSublayersChanges: scala.Boolean
   ): ArcGISMapServiceCapabilitiesExportMap = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, supportsDynamicLayers = supportsDynamicLayers, supportsSublayerDefinitionExpression = supportsSublayerDefinitionExpression, supportsSublayerVisibility = supportsSublayerVisibility, supportsSublayersChanges = supportsSublayersChanges)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsDynamicLayers = supportsDynamicLayers, supportsSublayerDefinitionExpression = supportsSublayerDefinitionExpression, supportsSublayerVisibility = supportsSublayerVisibility, supportsSublayersChanges = supportsSublayersChanges)
   
     __obj.asInstanceOf[ArcGISMapServiceCapabilitiesExportMap]
   }

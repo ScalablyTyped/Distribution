@@ -19,7 +19,7 @@ object default extends js.Object {
   var Item: antdLib.Anon_ContextTypesIsMenuItem = js.native
   var ItemGroup: js.Any = js.native
   var SubMenu: antdLib.Anon_ContextTypesIsSubMenu = js.native
-  var childContextTypes: antdLib.Anon_AntdMenuThemeInlineCollapsed = js.native
+  var childContextTypes: antdLib.Anon_AntdMenuThemeComponentName = js.native
   var contextTypes: antdLib.Anon_CollapsedWidth = js.native
   var defaultProps: stdLib.Partial[antdLib.libMenuMod.MenuProps] = js.native
   def getDerivedStateFromProps(nextProps: antdLib.libMenuMod.MenuProps): antdLib.Anon_OpenKeys | scala.Null = js.native

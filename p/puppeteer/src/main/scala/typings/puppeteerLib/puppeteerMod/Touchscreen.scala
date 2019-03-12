@@ -16,8 +16,8 @@ trait Touchscreen extends js.Object {
 
 object Touchscreen {
   @scala.inline
-  def apply(tap: js.Function2[scala.Double, scala.Double, js.Promise[scala.Unit]]): Touchscreen = {
-    val __obj = js.Dynamic.literal(tap = tap)
+  def apply(tap: (scala.Double, scala.Double) => js.Promise[scala.Unit]): Touchscreen = {
+    val __obj = js.Dynamic.literal(tap = js.Any.fromFunction2(tap))
   
     __obj.asInstanceOf[Touchscreen]
   }

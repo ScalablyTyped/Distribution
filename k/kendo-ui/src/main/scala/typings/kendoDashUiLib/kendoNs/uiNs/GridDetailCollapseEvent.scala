@@ -13,13 +13,13 @@ trait GridDetailCollapseEvent extends GridEvent {
 object GridDetailCollapseEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Grid,
     detailRow: kendoDashUiLib.JQuery = null,
     masterRow: kendoDashUiLib.JQuery = null
   ): GridDetailCollapseEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (detailRow != null) __obj.updateDynamic("detailRow")(detailRow)
     if (masterRow != null) __obj.updateDynamic("masterRow")(masterRow)
     __obj.asInstanceOf[GridDetailCollapseEvent]

@@ -13,8 +13,8 @@ trait XAbortChannel extends js.Object {
 
 object XAbortChannel {
   @scala.inline
-  def apply(sendAbort: js.Function0[scala.Unit]): XAbortChannel = {
-    val __obj = js.Dynamic.literal(sendAbort = sendAbort)
+  def apply(sendAbort: () => scala.Unit): XAbortChannel = {
+    val __obj = js.Dynamic.literal(sendAbort = js.Any.fromFunction0(sendAbort))
   
     __obj.asInstanceOf[XAbortChannel]
   }

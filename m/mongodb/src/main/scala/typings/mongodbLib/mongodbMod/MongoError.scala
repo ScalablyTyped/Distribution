@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("mongodb", "MongoError")
 @js.native
 class MongoError protected ()
-  extends nodeLib.Error {
+  extends stdLib.Error {
   def this(message: java.lang.String) = this()
   var code: js.UndefOr[scala.Double] = js.native
   /**
@@ -29,6 +29,10 @@ class MongoError protected ()
     * https://github.com/mongodb/node-mongodb-native/blob/a12aa15ac3eaae3ad5c4166ea1423aec4560f155/test/functional/find_tests.js#L1111
     */
   var errmsg: js.UndefOr[java.lang.String] = js.native
+  /* CompleteClass */
+  override var message: java.lang.String = js.native
+  /* CompleteClass */
+  override var name: java.lang.String = js.native
 }
 
 /* static members */

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Recipient protected () extends js.Object {
   val Address: java.lang.String = js.native
-  var AddressEntry: AddressEntry = js.native
-  val Application: Application = js.native
+  var AddressEntry: activexDashOutlookLib.OutlookNs.AddressEntry = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   var AutoResponse: java.lang.String = js.native
   val Class: OlObjectClass = js.native
   val DisplayType: OlDisplayType = js.native
@@ -20,16 +20,16 @@ class Recipient protected () extends js.Object {
   val Name: java.lang.String = js.native
   var `Outlook.Recipient_typekey`: Recipient = js.native
   val Parent: js.Any = js.native
-  val PropertyAccessor: PropertyAccessor = js.native
+  val PropertyAccessor: activexDashOutlookLib.OutlookNs.PropertyAccessor = js.native
   val Resolved: scala.Boolean = js.native
   var Sendable: scala.Boolean = js.native
   val Session: NameSpace = js.native
   var TrackingStatus: OlTrackingStatus = js.native
-  var TrackingStatusTime: activexDashInteropLib.VarDate = js.native
+  var TrackingStatusTime: stdLib.VarDate = js.native
   var Type: scala.Double = js.native
   def Delete(): scala.Unit = js.native
-  def FreeBusy(Start: activexDashInteropLib.VarDate, MinPerChar: scala.Double): java.lang.String = js.native
-  def FreeBusy(Start: activexDashInteropLib.VarDate, MinPerChar: scala.Double, CompleteFormat: js.Any): java.lang.String = js.native
+  def FreeBusy(Start: stdLib.VarDate, MinPerChar: scala.Double): java.lang.String = js.native
+  def FreeBusy(Start: stdLib.VarDate, MinPerChar: scala.Double, CompleteFormat: js.Any): java.lang.String = js.native
   def Resolve(): scala.Boolean = js.native
 }
 

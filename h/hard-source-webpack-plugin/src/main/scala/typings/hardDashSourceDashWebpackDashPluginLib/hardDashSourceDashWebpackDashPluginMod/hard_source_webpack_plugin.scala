@@ -12,8 +12,8 @@ trait hard_source_webpack_plugin extends js.Object {
 
 object hard_source_webpack_plugin {
   @scala.inline
-  def apply(apply: js.Function1[/* repeated */ js.Any, scala.Unit]): hard_source_webpack_plugin = {
-    val __obj = js.Dynamic.literal(apply = apply)
+  def apply(apply: /* repeated */ js.Any => scala.Unit): hard_source_webpack_plugin = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
   
     __obj.asInstanceOf[hard_source_webpack_plugin]
   }

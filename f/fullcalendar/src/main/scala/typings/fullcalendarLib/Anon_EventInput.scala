@@ -11,8 +11,8 @@ trait Anon_EventInput extends js.Object {
 
 object Anon_EventInput {
   @scala.inline
-  def apply(parse: js.Function2[js.Any, js.Any, js.Any]): Anon_EventInput = {
-    val __obj = js.Dynamic.literal(parse = parse)
+  def apply(parse: (js.Any, js.Any) => js.Any): Anon_EventInput = {
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction2(parse))
   
     __obj.asInstanceOf[Anon_EventInput]
   }

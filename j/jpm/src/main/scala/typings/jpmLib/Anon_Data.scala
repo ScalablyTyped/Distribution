@@ -18,14 +18,14 @@ object Anon_Data {
   def apply(
     data: java.lang.String = null,
     iconURL: java.lang.String = null,
-    onClick: js.Function1[/* data */ java.lang.String, _] = null,
+    onClick: /* data */ java.lang.String => _ = null,
     text: java.lang.String = null,
     title: java.lang.String = null
   ): Anon_Data = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data)
     if (iconURL != null) __obj.updateDynamic("iconURL")(iconURL)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (text != null) __obj.updateDynamic("text")(text)
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[Anon_Data]

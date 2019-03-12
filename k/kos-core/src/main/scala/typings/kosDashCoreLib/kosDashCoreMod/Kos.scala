@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Kos extends js.Object {
-  var Util: Util = js.native
+  var Util: kosDashCoreLib.kosDashCoreMod.Util = js.native
   def Wrapper(config: WrapperConfig): js.Function1[/* component */ kosDashCoreLib.ReactComponent[js.Any with KosProps[_], _], _] = js.native
   def getModel(namespace: java.lang.String): KosModel[_] = js.native
   def registeModel(model: js.Any): scala.Unit = js.native

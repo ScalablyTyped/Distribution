@@ -26,11 +26,7 @@ object StepProps {
     href: java.lang.String = null,
     icon: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconProps] = null,
     link: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
-      /* data */ StepProps, 
-      scala.Unit
-    ] = null,
+    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ StepProps) => scala.Unit = null,
     ordered: js.UndefOr[scala.Boolean] = js.undefined,
     title: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsStepStepTitleMod.StepTitleProps] = null
   ): StepProps = {
@@ -47,7 +43,7 @@ object StepProps {
     if (href != null) __obj.updateDynamic("href")(href)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (!js.isUndefined(link)) __obj.updateDynamic("link")(link)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepProps]

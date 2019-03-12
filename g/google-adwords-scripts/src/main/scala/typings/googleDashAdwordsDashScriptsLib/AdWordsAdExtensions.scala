@@ -18,22 +18,22 @@ trait AdWordsAdExtensions extends AdGroupExtensions {
 object AdWordsAdExtensions {
   @scala.inline
   def apply(
-    callouts: js.Function0[AdWordsSelector[Callout]],
-    message: js.Function0[AdWordsSelector[Message]],
-    mobileApps: js.Function0[AdWordsSelector[MobileApp]],
-    newCalloutBuilder: js.Function0[CalloutBuilder[Callout]],
-    newMessageBuilder: js.Function0[MessageBuilder[Message]],
-    newMobileAppBuilder: js.Function0[MobileAppBuilder[MobileApp]],
-    newPhoneNumberBuilder: js.Function0[PhoneNumberBuilder[PhoneNumber]],
-    newReviewBuilder: js.Function0[ReviewBuilder[Review]],
-    newSitelinkBuilder: js.Function0[SitelinkBuilder[Sitelink]],
-    newSnippetBuilder: js.Function0[SnippetBuilder[Snippet]],
-    phoneNumbers: js.Function0[AdWordsSelector[PhoneNumber]],
-    reviews: js.Function0[AdWordsSelector[Review]],
-    sitelinks: js.Function0[AdWordsSelector[Sitelink]],
-    snippets: js.Function0[AdWordsSelector[Snippet]]
+    callouts: () => AdWordsSelector[Callout],
+    message: () => AdWordsSelector[Message],
+    mobileApps: () => AdWordsSelector[MobileApp],
+    newCalloutBuilder: () => CalloutBuilder[Callout],
+    newMessageBuilder: () => MessageBuilder[Message],
+    newMobileAppBuilder: () => MobileAppBuilder[MobileApp],
+    newPhoneNumberBuilder: () => PhoneNumberBuilder[PhoneNumber],
+    newReviewBuilder: () => ReviewBuilder[Review],
+    newSitelinkBuilder: () => SitelinkBuilder[Sitelink],
+    newSnippetBuilder: () => SnippetBuilder[Snippet],
+    phoneNumbers: () => AdWordsSelector[PhoneNumber],
+    reviews: () => AdWordsSelector[Review],
+    sitelinks: () => AdWordsSelector[Sitelink],
+    snippets: () => AdWordsSelector[Snippet]
   ): AdWordsAdExtensions = {
-    val __obj = js.Dynamic.literal(callouts = callouts, message = message, mobileApps = mobileApps, newCalloutBuilder = newCalloutBuilder, newMessageBuilder = newMessageBuilder, newMobileAppBuilder = newMobileAppBuilder, newPhoneNumberBuilder = newPhoneNumberBuilder, newReviewBuilder = newReviewBuilder, newSitelinkBuilder = newSitelinkBuilder, newSnippetBuilder = newSnippetBuilder, phoneNumbers = phoneNumbers, reviews = reviews, sitelinks = sitelinks, snippets = snippets)
+    val __obj = js.Dynamic.literal(callouts = js.Any.fromFunction0(callouts), message = js.Any.fromFunction0(message), mobileApps = js.Any.fromFunction0(mobileApps), newCalloutBuilder = js.Any.fromFunction0(newCalloutBuilder), newMessageBuilder = js.Any.fromFunction0(newMessageBuilder), newMobileAppBuilder = js.Any.fromFunction0(newMobileAppBuilder), newPhoneNumberBuilder = js.Any.fromFunction0(newPhoneNumberBuilder), newReviewBuilder = js.Any.fromFunction0(newReviewBuilder), newSitelinkBuilder = js.Any.fromFunction0(newSitelinkBuilder), newSnippetBuilder = js.Any.fromFunction0(newSnippetBuilder), phoneNumbers = js.Any.fromFunction0(phoneNumbers), reviews = js.Any.fromFunction0(reviews), sitelinks = js.Any.fromFunction0(sitelinks), snippets = js.Any.fromFunction0(snippets))
   
     __obj.asInstanceOf[AdWordsAdExtensions]
   }

@@ -19,17 +19,17 @@ trait ExcludedPlacementList extends AdWordsEntity {
 object ExcludedPlacementList {
   @scala.inline
   def apply(
-    addExcludedPlacement: js.Function1[java.lang.String, scala.Unit],
-    addExcludedPlacements: js.Function1[js.Array[java.lang.String], scala.Unit],
-    campaigns: js.Function0[AdWordsSelector[Campaign]],
-    excludedPlacements: js.Function0[AdWordsSelector[SharedExcludedPlacement]],
-    getId: js.Function0[scala.Double],
-    getName: js.Function0[java.lang.String],
-    setName: js.Function1[java.lang.String, scala.Unit],
-    getEntityType: js.Function0[java.lang.String] = null
+    addExcludedPlacement: java.lang.String => scala.Unit,
+    addExcludedPlacements: js.Array[java.lang.String] => scala.Unit,
+    campaigns: () => AdWordsSelector[Campaign],
+    excludedPlacements: () => AdWordsSelector[SharedExcludedPlacement],
+    getId: () => scala.Double,
+    getName: () => java.lang.String,
+    setName: java.lang.String => scala.Unit,
+    getEntityType: () => java.lang.String = null
   ): ExcludedPlacementList = {
-    val __obj = js.Dynamic.literal(addExcludedPlacement = addExcludedPlacement, addExcludedPlacements = addExcludedPlacements, campaigns = campaigns, excludedPlacements = excludedPlacements, getId = getId, getName = getName, setName = setName)
-    if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
+    val __obj = js.Dynamic.literal(addExcludedPlacement = js.Any.fromFunction1(addExcludedPlacement), addExcludedPlacements = js.Any.fromFunction1(addExcludedPlacements), campaigns = js.Any.fromFunction0(campaigns), excludedPlacements = js.Any.fromFunction0(excludedPlacements), getId = js.Any.fromFunction0(getId), getName = js.Any.fromFunction0(getName), setName = js.Any.fromFunction1(setName))
+    if (getEntityType != null) __obj.updateDynamic("getEntityType")(js.Any.fromFunction0(getEntityType))
     __obj.asInstanceOf[ExcludedPlacementList]
   }
 }

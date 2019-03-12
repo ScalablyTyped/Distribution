@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HTMLWindow2 extends js.Object {
-  val applicationCache: applicationCache = js.native
+  val applicationCache: activexDashMshtmlLib.MSHTMLNs.applicationCache = js.native
   val clientInformation: IOmNavigator = js.native
   val clipboardData: IHTMLDataTransfer = js.native
   val closed: scala.Boolean = js.native

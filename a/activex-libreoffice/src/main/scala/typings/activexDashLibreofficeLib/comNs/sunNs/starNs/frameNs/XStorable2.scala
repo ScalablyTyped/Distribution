@@ -27,29 +27,18 @@ object XStorable2 {
   @scala.inline
   def apply(
     Location: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getLocation: js.Function0[java.lang.String],
-    hasLocation: js.Function0[scala.Boolean],
-    isReadonly: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    store: js.Function0[scala.Unit],
-    storeAsURL: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    storeSelf: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    storeToURL: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    getLocation: () => java.lang.String,
+    hasLocation: () => scala.Boolean,
+    isReadonly: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    store: () => scala.Unit,
+    storeAsURL: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    storeSelf: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] => scala.Unit,
+    storeToURL: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit
   ): XStorable2 = {
-    val __obj = js.Dynamic.literal(Location = Location, acquire = acquire, getLocation = getLocation, hasLocation = hasLocation, isReadonly = isReadonly, queryInterface = queryInterface, release = release, store = store, storeAsURL = storeAsURL, storeSelf = storeSelf, storeToURL = storeToURL)
+    val __obj = js.Dynamic.literal(Location = Location, acquire = js.Any.fromFunction0(acquire), getLocation = js.Any.fromFunction0(getLocation), hasLocation = js.Any.fromFunction0(hasLocation), isReadonly = js.Any.fromFunction0(isReadonly), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), store = js.Any.fromFunction0(store), storeAsURL = js.Any.fromFunction2(storeAsURL), storeSelf = js.Any.fromFunction1(storeSelf), storeToURL = js.Any.fromFunction2(storeToURL))
   
     __obj.asInstanceOf[XStorable2]
   }

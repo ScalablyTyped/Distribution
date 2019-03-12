@@ -15,10 +15,10 @@ class Client ()
   def this(dsn: java.lang.String, options: ConstructorOptions) = this()
   def this(dsn: ravenLib.ravenLibNumbers.`false`, options: ConstructorOptions) = this()
   def captureBreadcrumb(breadcrumb: js.Any): scala.Unit = js.native
-  def captureException(error: nodeLib.Error): java.lang.String = js.native
-  def captureException(error: nodeLib.Error, cb: CaptureCallback): java.lang.String = js.native
-  def captureException(error: nodeLib.Error, options: CaptureOptions): java.lang.String = js.native
-  def captureException(error: nodeLib.Error, options: CaptureOptions, cb: CaptureCallback): java.lang.String = js.native
+  def captureException(error: stdLib.Error): java.lang.String = js.native
+  def captureException(error: stdLib.Error, cb: CaptureCallback): java.lang.String = js.native
+  def captureException(error: stdLib.Error, options: CaptureOptions): java.lang.String = js.native
+  def captureException(error: stdLib.Error, options: CaptureOptions, cb: CaptureCallback): java.lang.String = js.native
   def captureMessage(message: java.lang.String): java.lang.String = js.native
   def captureMessage(message: java.lang.String, cb: CaptureCallback): java.lang.String = js.native
   def captureMessage(message: java.lang.String, options: CaptureOptions): java.lang.String = js.native
@@ -32,7 +32,7 @@ class Client ()
   def context[T](ctx: js.Any, func: js.Function0[T]): T = js.native
   def context[T](func: js.Function0[T]): T = js.native
   def errorHandler(): js.Function4[
-    /* e */ nodeLib.Error, 
+    /* e */ stdLib.Error, 
     /* req */ nodeLib.httpMod.IncomingMessage, 
     /* res */ nodeLib.httpMod.ServerResponse, 
     /* next */ js.Function0[scala.Unit], 

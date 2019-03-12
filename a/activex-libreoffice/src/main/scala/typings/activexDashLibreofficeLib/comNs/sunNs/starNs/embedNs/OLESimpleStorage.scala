@@ -27,41 +27,33 @@ trait OLESimpleStorage extends XOLESimpleStorage {
 object OLESimpleStorage {
   @scala.inline
   def apply(
-    ClassID: activexDashInteropLib.SafeArray[scala.Double],
+    ClassID: stdLib.SafeArray[scala.Double],
     ClassName: java.lang.String,
-    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementNames: stdLib.SafeArray[java.lang.String],
     ElementType: activexDashLibreofficeLib.`type`,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    commit: js.Function0[scala.Unit],
-    createFromInputStream: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      scala.Boolean, 
-      scala.Unit
-    ],
-    createFromStream: js.Function2[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream, scala.Boolean, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    getByName: js.Function1[java.lang.String, js.Any],
-    getClassID: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    getClassName: js.Function0[java.lang.String],
-    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    hasByName: js.Function1[java.lang.String, scala.Boolean],
-    hasElements: js.Function0[scala.Boolean],
-    insertByName: js.Function2[java.lang.String, js.Any, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeByName: js.Function1[java.lang.String, scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    replaceByName: js.Function2[java.lang.String, js.Any, scala.Unit],
-    revert: js.Function0[scala.Unit],
-    setClassInfo: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      java.lang.String, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    commit: () => scala.Unit,
+    createFromInputStream: (activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Boolean) => scala.Unit,
+    createFromStream: (activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream, scala.Boolean) => scala.Unit,
+    dispose: () => scala.Unit,
+    getByName: java.lang.String => js.Any,
+    getClassID: () => stdLib.SafeArray[scala.Double],
+    getClassName: () => java.lang.String,
+    getElementNames: () => stdLib.SafeArray[java.lang.String],
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    hasByName: java.lang.String => scala.Boolean,
+    hasElements: () => scala.Boolean,
+    insertByName: (java.lang.String, js.Any) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeByName: java.lang.String => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    replaceByName: (java.lang.String, js.Any) => scala.Unit,
+    revert: () => scala.Unit,
+    setClassInfo: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], java.lang.String) => scala.Unit
   ): OLESimpleStorage = {
-    val __obj = js.Dynamic.literal(ClassID = ClassID, ClassName = ClassName, ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, addEventListener = addEventListener, commit = commit, createFromInputStream = createFromInputStream, createFromStream = createFromStream, dispose = dispose, getByName = getByName, getClassID = getClassID, getClassName = getClassName, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, insertByName = insertByName, queryInterface = queryInterface, release = release, removeByName = removeByName, removeEventListener = removeEventListener, replaceByName = replaceByName, revert = revert, setClassInfo = setClassInfo)
+    val __obj = js.Dynamic.literal(ClassID = ClassID, ClassName = ClassName, ElementNames = ElementNames, ElementType = ElementType, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), commit = js.Any.fromFunction0(commit), createFromInputStream = js.Any.fromFunction2(createFromInputStream), createFromStream = js.Any.fromFunction2(createFromStream), dispose = js.Any.fromFunction0(dispose), getByName = js.Any.fromFunction1(getByName), getClassID = js.Any.fromFunction0(getClassID), getClassName = js.Any.fromFunction0(getClassName), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), insertByName = js.Any.fromFunction2(insertByName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByName = js.Any.fromFunction1(removeByName), removeEventListener = js.Any.fromFunction1(removeEventListener), replaceByName = js.Any.fromFunction2(replaceByName), revert = js.Any.fromFunction0(revert), setClassInfo = js.Any.fromFunction2(setClassInfo))
   
     __obj.asInstanceOf[OLESimpleStorage]
   }

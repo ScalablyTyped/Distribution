@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SearchResult extends js.Object {
-  var endOffset: activexDashInteropLib.SafeArray[scala.Double]
-  var startOffset: activexDashInteropLib.SafeArray[scala.Double]
+  var endOffset: stdLib.SafeArray[scala.Double]
+  var startOffset: stdLib.SafeArray[scala.Double]
   /**
     * Number of subexpressions.
     *
@@ -34,8 +34,8 @@ trait SearchResult extends js.Object {
 object SearchResult {
   @scala.inline
   def apply(
-    endOffset: activexDashInteropLib.SafeArray[scala.Double],
-    startOffset: activexDashInteropLib.SafeArray[scala.Double],
+    endOffset: stdLib.SafeArray[scala.Double],
+    startOffset: stdLib.SafeArray[scala.Double],
     subRegExpressions: scala.Double
   ): SearchResult = {
     val __obj = js.Dynamic.literal(endOffset = endOffset, startOffset = startOffset, subRegExpressions = subRegExpressions)

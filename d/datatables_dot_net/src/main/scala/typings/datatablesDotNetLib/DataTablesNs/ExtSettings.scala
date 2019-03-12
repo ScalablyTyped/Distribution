@@ -49,7 +49,7 @@ object ExtSettings {
     classes: ExtClassesSettings,
     errMode: java.lang.String,
     feature: js.Array[_],
-    fnVersionCheck: js.Function1[java.lang.String, java.lang.String],
+    fnVersionCheck: java.lang.String => java.lang.String,
     iApiIndex: scala.Double,
     internal: js.Object,
     legacy: js.Object,
@@ -67,7 +67,7 @@ object ExtSettings {
     selector: js.Object,
     `type`: ExtTypeSettings
   ): ExtSettings = {
-    val __obj = js.Dynamic.literal(aTypes = aTypes, afnFiltering = afnFiltering, afnSortData = afnSortData, aoFeatures = aoFeatures, builder = builder, classes = classes, errMode = errMode, feature = feature, fnVersionCheck = fnVersionCheck, iApiIndex = iApiIndex, internal = internal, legacy = legacy, oApi = oApi, oJUIClasses = oJUIClasses, oPagination = oPagination, oSort = oSort, oStdClasses = oStdClasses, ofnSearch = ofnSearch, order = order, pager = pager, renderer = renderer, sVersion = sVersion, search = search, selector = selector)
+    val __obj = js.Dynamic.literal(aTypes = aTypes, afnFiltering = afnFiltering, afnSortData = afnSortData, aoFeatures = aoFeatures, builder = builder, classes = classes, errMode = errMode, feature = feature, fnVersionCheck = js.Any.fromFunction1(fnVersionCheck), iApiIndex = iApiIndex, internal = internal, legacy = legacy, oApi = oApi, oJUIClasses = oJUIClasses, oPagination = oPagination, oSort = oSort, oStdClasses = oStdClasses, ofnSearch = ofnSearch, order = order, pager = pager, renderer = renderer, sVersion = sVersion, search = search, selector = selector)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ExtSettings]
   }

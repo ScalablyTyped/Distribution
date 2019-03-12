@@ -13,12 +13,9 @@ trait VideoCategoriesResource extends js.Object {
 object VideoCategoriesResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFieldsHlId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[VideoCategoryListResponse]
-    ]
+    list: gapiDotClientDotYoutubeLib.Anon_AltFieldsHlId => gapiDotClientLib.gapiNs.clientNs.Request[VideoCategoryListResponse]
   ): VideoCategoriesResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[VideoCategoriesResource]
   }

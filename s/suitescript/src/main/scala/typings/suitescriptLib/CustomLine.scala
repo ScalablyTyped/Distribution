@@ -20,17 +20,17 @@ trait CustomLine extends js.Object {
 object CustomLine {
   @scala.inline
   def apply(
-    isBookSpecific: js.Function0[scala.Boolean],
-    setAccountId: js.Function1[scala.Double, scala.Unit],
-    setBookSpecific: js.Function1[scala.Boolean, scala.Unit],
-    setClassId: js.Function1[scala.Double, scala.Unit],
-    setCreditAmount: js.Function1[java.lang.String, scala.Unit],
-    setDebitAmount: js.Function1[java.lang.String, scala.Unit],
-    setDepartmentId: js.Function1[scala.Double, scala.Unit],
-    setLocationId: js.Function1[scala.Double, scala.Unit],
-    setMemo: js.Function1[java.lang.String, scala.Unit]
+    isBookSpecific: () => scala.Boolean,
+    setAccountId: scala.Double => scala.Unit,
+    setBookSpecific: scala.Boolean => scala.Unit,
+    setClassId: scala.Double => scala.Unit,
+    setCreditAmount: java.lang.String => scala.Unit,
+    setDebitAmount: java.lang.String => scala.Unit,
+    setDepartmentId: scala.Double => scala.Unit,
+    setLocationId: scala.Double => scala.Unit,
+    setMemo: java.lang.String => scala.Unit
   ): CustomLine = {
-    val __obj = js.Dynamic.literal(isBookSpecific = isBookSpecific, setAccountId = setAccountId, setBookSpecific = setBookSpecific, setClassId = setClassId, setCreditAmount = setCreditAmount, setDebitAmount = setDebitAmount, setDepartmentId = setDepartmentId, setLocationId = setLocationId, setMemo = setMemo)
+    val __obj = js.Dynamic.literal(isBookSpecific = js.Any.fromFunction0(isBookSpecific), setAccountId = js.Any.fromFunction1(setAccountId), setBookSpecific = js.Any.fromFunction1(setBookSpecific), setClassId = js.Any.fromFunction1(setClassId), setCreditAmount = js.Any.fromFunction1(setCreditAmount), setDebitAmount = js.Any.fromFunction1(setDebitAmount), setDepartmentId = js.Any.fromFunction1(setDepartmentId), setLocationId = js.Any.fromFunction1(setLocationId), setMemo = js.Any.fromFunction1(setMemo))
   
     __obj.asInstanceOf[CustomLine]
   }

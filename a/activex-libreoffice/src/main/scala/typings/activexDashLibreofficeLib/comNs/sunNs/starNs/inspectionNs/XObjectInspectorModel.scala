@@ -26,7 +26,7 @@ trait XObjectInspectorModel extends js.Object {
     * @see XPropertyHandler.getSupportedProperties
     * @see XPropertyHandler.getSupersededProperties
     */
-  var HandlerFactories: activexDashInteropLib.SafeArray[_]
+  var HandlerFactories: stdLib.SafeArray[_]
   /**
     * indicates that the object inspector should have a help section.
     *
@@ -76,7 +76,7 @@ trait XObjectInspectorModel extends js.Object {
     * @see PropertyCategoryDescriptor
     * @see LineDescriptor.Category
     */
-  def describeCategories(): activexDashInteropLib.SafeArray[PropertyCategoryDescriptor]
+  def describeCategories(): stdLib.SafeArray[PropertyCategoryDescriptor]
   /**
     * retrieves an index in a global property ordering, for a given property name
     *
@@ -99,15 +99,15 @@ trait XObjectInspectorModel extends js.Object {
 object XObjectInspectorModel {
   @scala.inline
   def apply(
-    HandlerFactories: activexDashInteropLib.SafeArray[_],
+    HandlerFactories: stdLib.SafeArray[_],
     HasHelpSection: scala.Boolean,
     IsReadOnly: scala.Boolean,
     MaxHelpTextLines: scala.Double,
     MinHelpTextLines: scala.Double,
-    describeCategories: js.Function0[activexDashInteropLib.SafeArray[PropertyCategoryDescriptor]],
-    getPropertyOrderIndex: js.Function1[java.lang.String, scala.Double]
+    describeCategories: () => stdLib.SafeArray[PropertyCategoryDescriptor],
+    getPropertyOrderIndex: java.lang.String => scala.Double
   ): XObjectInspectorModel = {
-    val __obj = js.Dynamic.literal(HandlerFactories = HandlerFactories, HasHelpSection = HasHelpSection, IsReadOnly = IsReadOnly, MaxHelpTextLines = MaxHelpTextLines, MinHelpTextLines = MinHelpTextLines, describeCategories = describeCategories, getPropertyOrderIndex = getPropertyOrderIndex)
+    val __obj = js.Dynamic.literal(HandlerFactories = HandlerFactories, HasHelpSection = HasHelpSection, IsReadOnly = IsReadOnly, MaxHelpTextLines = MaxHelpTextLines, MinHelpTextLines = MinHelpTextLines, describeCategories = js.Any.fromFunction0(describeCategories), getPropertyOrderIndex = js.Any.fromFunction1(getPropertyOrderIndex))
   
     __obj.asInstanceOf[XObjectInspectorModel]
   }

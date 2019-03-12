@@ -32,37 +32,22 @@ trait ICollection[I] extends js.Object {
 object ICollection {
   @scala.inline
   def apply[I](
-    Add: js.Function1[I, scala.Unit],
-    Clear: js.Function0[scala.Unit],
+    Add: I => scala.Unit,
+    Clear: () => scala.Unit,
     Count: scala.Double,
-    Every: js.Function1[
-      js.Function3[/* value */ I, /* index */ scala.Double, /* array */ js.Array[I], scala.Boolean], 
-      scala.Boolean
-    ],
-    Filter: js.Function1[
-      js.Function3[/* item */ I, /* index */ scala.Double, /* array */ js.Array[I], scala.Boolean], 
-      ICollection[I]
-    ],
-    ForEach: js.Function1[
-      js.Function3[/* item */ I, /* index */ scala.Double, /* array */ js.Array[I], scala.Unit], 
-      scala.Unit
-    ],
-    GetIterator: js.Function0[js.Array[I]],
-    IsEmpty: js.Function0[scala.Boolean],
-    Item: js.Function1[scala.Double, I | scala.Null],
-    Map: js.Function1[
-      js.Function3[/* item */ I, /* index */ scala.Double, /* array */ js.Array[I], js.Any], 
-      ICollection[js.Any]
-    ],
-    Pop: js.Function0[js.UndefOr[I]],
-    RemoveAt: js.Function1[scala.Double, scala.Unit],
-    Some: js.Function1[
-      js.Function3[/* value */ I, /* index */ scala.Double, /* array */ js.Array[I], scala.Boolean], 
-      scala.Boolean
-    ],
-    Sort: js.Function1[js.Function2[/* a */ I, /* b */ I, scala.Double], ICollection[I]]
+    Every: js.Function3[/* value */ I, /* index */ scala.Double, /* array */ js.Array[I], scala.Boolean] => scala.Boolean,
+    Filter: js.Function3[/* item */ I, /* index */ scala.Double, /* array */ js.Array[I], scala.Boolean] => ICollection[I],
+    ForEach: js.Function3[/* item */ I, /* index */ scala.Double, /* array */ js.Array[I], scala.Unit] => scala.Unit,
+    GetIterator: () => js.Array[I],
+    IsEmpty: () => scala.Boolean,
+    Item: scala.Double => I | scala.Null,
+    Map: js.Function3[/* item */ I, /* index */ scala.Double, /* array */ js.Array[I], js.Any] => ICollection[js.Any],
+    Pop: () => js.UndefOr[I],
+    RemoveAt: scala.Double => scala.Unit,
+    Some: js.Function3[/* value */ I, /* index */ scala.Double, /* array */ js.Array[I], scala.Boolean] => scala.Boolean,
+    Sort: js.Function2[/* a */ I, /* b */ I, scala.Double] => ICollection[I]
   ): ICollection[I] = {
-    val __obj = js.Dynamic.literal(Add = Add, Clear = Clear, Count = Count, Every = Every, Filter = Filter, ForEach = ForEach, GetIterator = GetIterator, IsEmpty = IsEmpty, Item = Item, Map = Map, Pop = Pop, RemoveAt = RemoveAt, Some = Some, Sort = Sort)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction1(Add), Clear = js.Any.fromFunction0(Clear), Count = Count, Every = js.Any.fromFunction1(Every), Filter = js.Any.fromFunction1(Filter), ForEach = js.Any.fromFunction1(ForEach), GetIterator = js.Any.fromFunction0(GetIterator), IsEmpty = js.Any.fromFunction0(IsEmpty), Item = js.Any.fromFunction1(Item), Map = js.Any.fromFunction1(Map), Pop = js.Any.fromFunction0(Pop), RemoveAt = js.Any.fromFunction1(RemoveAt), Some = js.Any.fromFunction1(Some), Sort = js.Any.fromFunction1(Sort))
   
     __obj.asInstanceOf[ICollection[I]]
   }

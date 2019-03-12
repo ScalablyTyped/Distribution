@@ -18,15 +18,15 @@ trait IObjVers extends js.Object {
 object IObjVers {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IObjVer, scala.Unit],
-    Clone: js.Function0[IObjVers],
+    Add: (scala.Double, IObjVer) => scala.Unit,
+    Clone: () => IObjVers,
     Count: scala.Double,
-    GetAllDistinctObjIDs: js.Function0[IObjIDs],
-    Item: js.Function1[scala.Double, IObjVer],
-    Remove: js.Function1[scala.Double, scala.Unit],
-    ToJSON: js.Function0[java.lang.String]
+    GetAllDistinctObjIDs: () => IObjIDs,
+    Item: scala.Double => IObjVer,
+    Remove: scala.Double => scala.Unit,
+    ToJSON: () => java.lang.String
   ): IObjVers = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, GetAllDistinctObjIDs = GetAllDistinctObjIDs, Item = Item, Remove = Remove, ToJSON = ToJSON)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count, GetAllDistinctObjIDs = js.Any.fromFunction0(GetAllDistinctObjIDs), Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove), ToJSON = js.Any.fromFunction0(ToJSON))
   
     __obj.asInstanceOf[IObjVers]
   }

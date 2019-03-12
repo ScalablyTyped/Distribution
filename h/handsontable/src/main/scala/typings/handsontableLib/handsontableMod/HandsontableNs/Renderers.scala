@@ -7,18 +7,46 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Renderers extends js.Object {
-  var AutocompleteRenderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Autocomplete = js.native
+  @JSName("AutocompleteRenderer")
+  var AutocompleteRenderer_Original: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Autocomplete = js.native
   @JSName("BaseRenderer")
   var BaseRenderer_Original: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Base = js.native
-  var CheckboxRenderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Checkbox = js.native
-  var DateRenderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Autocomplete = js.native
-  var DropdownRenderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Autocomplete = js.native
-  var HandsontableRenderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Autocomplete = js.native
-  var HtmlRenderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Html = js.native
-  var NumericRenderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Numeric = js.native
-  var PasswordRenderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Password = js.native
-  var TextRenderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Text = js.native
-  var TimeRenderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Text = js.native
+  @JSName("CheckboxRenderer")
+  var CheckboxRenderer_Original: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Checkbox = js.native
+  @JSName("DateRenderer")
+  var DateRenderer_Original: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Autocomplete = js.native
+  @JSName("DropdownRenderer")
+  var DropdownRenderer_Original: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Autocomplete = js.native
+  @JSName("HandsontableRenderer")
+  var HandsontableRenderer_Original: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Autocomplete = js.native
+  @JSName("HtmlRenderer")
+  var HtmlRenderer_Original: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Html = js.native
+  @JSName("NumericRenderer")
+  var NumericRenderer_Original: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Numeric = js.native
+  @JSName("PasswordRenderer")
+  var PasswordRenderer_Original: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Password = js.native
+  @JSName("TextRenderer")
+  var TextRenderer_Original: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Text = js.native
+  @JSName("TimeRenderer")
+  var TimeRenderer_Original: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Text = js.native
+  def AutocompleteRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: java.lang.String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def AutocompleteRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: scala.Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
   def BaseRenderer(
     instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
     TD: stdLib.HTMLTableCellElement,
@@ -29,6 +57,168 @@ trait Renderers extends js.Object {
     cellProperties: CellProperties
   ): stdLib.HTMLTableCellElement | scala.Unit = js.native
   def BaseRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: scala.Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def CheckboxRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: java.lang.String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def CheckboxRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: scala.Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def DateRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: java.lang.String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def DateRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: scala.Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def DropdownRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: java.lang.String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def DropdownRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: scala.Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def HandsontableRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: java.lang.String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def HandsontableRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: scala.Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def HtmlRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: java.lang.String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def HtmlRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: scala.Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def NumericRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: java.lang.String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def NumericRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: scala.Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def PasswordRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: java.lang.String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def PasswordRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: scala.Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def TextRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: java.lang.String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def TextRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: scala.Double,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def TimeRenderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: java.lang.String,
+    value: CellValue,
+    cellProperties: CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def TimeRenderer(
     instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
     TD: stdLib.HTMLTableCellElement,
     row: scala.Double,

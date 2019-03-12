@@ -15,8 +15,8 @@ trait ISCEProvider extends IServiceProvider {
 
 object ISCEProvider {
   @scala.inline
-  def apply($get: js.Any, enabled: js.Function1[scala.Boolean, scala.Unit]): ISCEProvider = {
-    val __obj = js.Dynamic.literal($get = $get, enabled = enabled)
+  def apply($get: js.Any, enabled: scala.Boolean => scala.Unit): ISCEProvider = {
+    val __obj = js.Dynamic.literal($get = $get, enabled = js.Any.fromFunction1(enabled))
   
     __obj.asInstanceOf[ISCEProvider]
   }

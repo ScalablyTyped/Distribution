@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object libCustomInputMod {
   type CustomInput[T] = reactLib.reactMod.Component[CustomInputProps[T], js.Object, js.Any]
-  type CustomInputProps[T] = reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] with reactstrapLib.Anon_BsSize with T
+  type CustomInputProps[T] = reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement] with reactstrapLib.Anon_BsSize with T
 }

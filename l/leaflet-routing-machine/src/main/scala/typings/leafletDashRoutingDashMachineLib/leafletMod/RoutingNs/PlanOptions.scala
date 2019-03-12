@@ -50,48 +50,34 @@ object PlanOptions {
   def apply(
     addButtonClassName: java.lang.String = null,
     addWaypoints: js.UndefOr[scala.Boolean] = js.undefined,
-    createGeocoder: js.Function3[
-      /* waypointIndex */ scala.Double, 
-      /* numberWaypoints */ scala.Double, 
-      /* plan */ Plan, 
-      js.Object
-    ] = null,
-    createMarker: js.Function3[
-      /* waypointIndex */ scala.Double, 
-      /* waypoint */ Waypoint, 
-      /* numberWaypoints */ scala.Double, 
-      leafletLib.leafletMod.Marker[_]
-    ] = null,
+    createGeocoder: (/* waypointIndex */ scala.Double, /* numberWaypoints */ scala.Double, /* plan */ Plan) => js.Object = null,
+    createMarker: (/* waypointIndex */ scala.Double, /* waypoint */ Waypoint, /* numberWaypoints */ scala.Double) => leafletLib.leafletMod.Marker[_] = null,
     dragStyles: js.Array[leafletLib.leafletMod.PathOptions] = null,
     draggableWaypoints: js.UndefOr[scala.Boolean] = js.undefined,
     geocoder: js.Any = null,
-    geocoderClass: js.Function2[/* waypointIndex */ scala.Double, /* numberWaypoints */ scala.Double, scala.Unit] = null,
-    geocoderPlaceholder: js.Function2[
-      /* waypointIndex */ scala.Double, 
-      /* numberWaypoints */ scala.Double, 
-      java.lang.String
-    ] = null,
+    geocoderClass: (/* waypointIndex */ scala.Double, /* numberWaypoints */ scala.Double) => scala.Unit = null,
+    geocoderPlaceholder: (/* waypointIndex */ scala.Double, /* numberWaypoints */ scala.Double) => java.lang.String = null,
     geocodersClassName: java.lang.String = null,
     maxGeocoderTolerance: scala.Int | scala.Double = null,
     reverseWaypoints: js.UndefOr[scala.Boolean] = js.undefined,
     routeWhileDragging: js.UndefOr[scala.Boolean] = js.undefined,
-    waypointNameFallback: js.Function1[/* latLng */ leafletLib.leafletMod.LatLng, java.lang.String] = null
+    waypointNameFallback: /* latLng */ leafletLib.leafletMod.LatLng => java.lang.String = null
   ): PlanOptions = {
     val __obj = js.Dynamic.literal()
     if (addButtonClassName != null) __obj.updateDynamic("addButtonClassName")(addButtonClassName)
     if (!js.isUndefined(addWaypoints)) __obj.updateDynamic("addWaypoints")(addWaypoints)
-    if (createGeocoder != null) __obj.updateDynamic("createGeocoder")(createGeocoder)
-    if (createMarker != null) __obj.updateDynamic("createMarker")(createMarker)
+    if (createGeocoder != null) __obj.updateDynamic("createGeocoder")(js.Any.fromFunction3(createGeocoder))
+    if (createMarker != null) __obj.updateDynamic("createMarker")(js.Any.fromFunction3(createMarker))
     if (dragStyles != null) __obj.updateDynamic("dragStyles")(dragStyles)
     if (!js.isUndefined(draggableWaypoints)) __obj.updateDynamic("draggableWaypoints")(draggableWaypoints)
     if (geocoder != null) __obj.updateDynamic("geocoder")(geocoder)
-    if (geocoderClass != null) __obj.updateDynamic("geocoderClass")(geocoderClass)
-    if (geocoderPlaceholder != null) __obj.updateDynamic("geocoderPlaceholder")(geocoderPlaceholder)
+    if (geocoderClass != null) __obj.updateDynamic("geocoderClass")(js.Any.fromFunction2(geocoderClass))
+    if (geocoderPlaceholder != null) __obj.updateDynamic("geocoderPlaceholder")(js.Any.fromFunction2(geocoderPlaceholder))
     if (geocodersClassName != null) __obj.updateDynamic("geocodersClassName")(geocodersClassName)
     if (maxGeocoderTolerance != null) __obj.updateDynamic("maxGeocoderTolerance")(maxGeocoderTolerance.asInstanceOf[js.Any])
     if (!js.isUndefined(reverseWaypoints)) __obj.updateDynamic("reverseWaypoints")(reverseWaypoints)
     if (!js.isUndefined(routeWhileDragging)) __obj.updateDynamic("routeWhileDragging")(routeWhileDragging)
-    if (waypointNameFallback != null) __obj.updateDynamic("waypointNameFallback")(waypointNameFallback)
+    if (waypointNameFallback != null) __obj.updateDynamic("waypointNameFallback")(js.Any.fromFunction1(waypointNameFallback))
     __obj.asInstanceOf[PlanOptions]
   }
 }

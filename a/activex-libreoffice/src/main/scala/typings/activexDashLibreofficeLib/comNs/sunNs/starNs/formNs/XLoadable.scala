@@ -45,17 +45,17 @@ trait XLoadable
 object XLoadable {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addLoadListener: js.Function1[XLoadListener, scala.Unit],
-    isLoaded: js.Function0[scala.Boolean],
-    load: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    reload: js.Function0[scala.Unit],
-    removeLoadListener: js.Function1[XLoadListener, scala.Unit],
-    unload: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addLoadListener: XLoadListener => scala.Unit,
+    isLoaded: () => scala.Boolean,
+    load: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    reload: () => scala.Unit,
+    removeLoadListener: XLoadListener => scala.Unit,
+    unload: () => scala.Unit
   ): XLoadable = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addLoadListener = addLoadListener, isLoaded = isLoaded, load = load, queryInterface = queryInterface, release = release, reload = reload, removeLoadListener = removeLoadListener, unload = unload)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addLoadListener = js.Any.fromFunction1(addLoadListener), isLoaded = js.Any.fromFunction0(isLoaded), load = js.Any.fromFunction0(load), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), reload = js.Any.fromFunction0(reload), removeLoadListener = js.Any.fromFunction1(removeLoadListener), unload = js.Any.fromFunction0(unload))
   
     __obj.asInstanceOf[XLoadable]
   }

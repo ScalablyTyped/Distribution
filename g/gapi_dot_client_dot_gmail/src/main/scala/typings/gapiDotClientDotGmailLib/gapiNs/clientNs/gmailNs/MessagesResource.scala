@@ -38,53 +38,20 @@ object MessagesResource {
   @scala.inline
   def apply(
     attachments: AttachmentsResource,
-    batchDelete: js.Function1[
-      gapiDotClientDotGmailLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    batchModify: js.Function1[
-      gapiDotClientDotGmailLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFieldsFormatId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Message]
-    ],
-    `import`: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltDeleted, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Message]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltDeletedFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Message]
-    ],
-    list: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFieldsIncludeSpamTrashKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListMessagesResponse]
-    ],
-    modify: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Message]
-    ],
-    send: js.Function1[
-      gapiDotClientDotGmailLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Message]
-    ],
-    trash: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Message]
-    ],
-    untrash: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Message]
-    ]
+    batchDelete: gapiDotClientDotGmailLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    batchModify: gapiDotClientDotGmailLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    delete: gapiDotClientDotGmailLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotGmailLib.Anon_AltFieldsFormatId => gapiDotClientLib.gapiNs.clientNs.Request[Message],
+    `import`: gapiDotClientDotGmailLib.Anon_AltDeleted => gapiDotClientLib.gapiNs.clientNs.Request[Message],
+    insert: gapiDotClientDotGmailLib.Anon_AltDeletedFields => gapiDotClientLib.gapiNs.clientNs.Request[Message],
+    list: gapiDotClientDotGmailLib.Anon_AltFieldsIncludeSpamTrashKey => gapiDotClientLib.gapiNs.clientNs.Request[ListMessagesResponse],
+    modify: gapiDotClientDotGmailLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Message],
+    send: gapiDotClientDotGmailLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Message],
+    trash: gapiDotClientDotGmailLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Message],
+    untrash: gapiDotClientDotGmailLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Message]
   ): MessagesResource = {
-    val __obj = js.Dynamic.literal(attachments = attachments, batchDelete = batchDelete, batchModify = batchModify, delete = delete, get = get, insert = insert, list = list, modify = modify, send = send, trash = trash, untrash = untrash)
-    __obj.updateDynamic("import")(`import`)
+    val __obj = js.Dynamic.literal(attachments = attachments, batchDelete = js.Any.fromFunction1(batchDelete), batchModify = js.Any.fromFunction1(batchModify), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), modify = js.Any.fromFunction1(modify), send = js.Any.fromFunction1(send), trash = js.Any.fromFunction1(trash), untrash = js.Any.fromFunction1(untrash))
+    __obj.updateDynamic("import")(js.Any.fromFunction1(`import`))
     __obj.asInstanceOf[MessagesResource]
   }
 }

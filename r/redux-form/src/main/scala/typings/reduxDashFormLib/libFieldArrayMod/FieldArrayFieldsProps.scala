@@ -26,23 +26,23 @@ trait FieldArrayFieldsProps[FieldValue] extends js.Object {
 object FieldArrayFieldsProps {
   @scala.inline
   def apply[FieldValue](
-    forEach: js.Function1[FieldIterate[FieldValue, scala.Unit], scala.Unit],
-    get: js.Function1[scala.Double, FieldValue],
-    getAll: js.Function0[js.Array[FieldValue]],
-    insert: js.Function2[scala.Double, FieldValue, scala.Unit],
+    forEach: FieldIterate[FieldValue, scala.Unit] => scala.Unit,
+    get: scala.Double => FieldValue,
+    getAll: () => js.Array[FieldValue],
+    insert: (scala.Double, FieldValue) => scala.Unit,
     length: scala.Double,
-    map: js.Function1[FieldIterate[FieldValue, js.Any], js.Array[js.Any]],
-    move: js.Function2[scala.Double, scala.Double, scala.Unit],
+    map: FieldIterate[FieldValue, js.Any] => js.Array[js.Any],
+    move: (scala.Double, scala.Double) => scala.Unit,
     name: java.lang.String,
-    pop: js.Function0[FieldValue],
-    push: js.Function1[FieldValue, scala.Unit],
-    remove: js.Function1[scala.Double, scala.Unit],
-    removeAll: js.Function0[scala.Unit],
-    shift: js.Function0[FieldValue],
-    swap: js.Function2[scala.Double, scala.Double, scala.Unit],
-    unshift: js.Function1[FieldValue, scala.Unit]
+    pop: () => FieldValue,
+    push: FieldValue => scala.Unit,
+    remove: scala.Double => scala.Unit,
+    removeAll: () => scala.Unit,
+    shift: () => FieldValue,
+    swap: (scala.Double, scala.Double) => scala.Unit,
+    unshift: FieldValue => scala.Unit
   ): FieldArrayFieldsProps[FieldValue] = {
-    val __obj = js.Dynamic.literal(forEach = forEach, get = get, getAll = getAll, insert = insert, length = length, map = map, move = move, name = name, pop = pop, push = push, remove = remove, removeAll = removeAll, shift = shift, swap = swap, unshift = unshift)
+    val __obj = js.Dynamic.literal(forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), getAll = js.Any.fromFunction0(getAll), insert = js.Any.fromFunction2(insert), length = length, map = js.Any.fromFunction1(map), move = js.Any.fromFunction2(move), name = name, pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), remove = js.Any.fromFunction1(remove), removeAll = js.Any.fromFunction0(removeAll), shift = js.Any.fromFunction0(shift), swap = js.Any.fromFunction2(swap), unshift = js.Any.fromFunction1(unshift))
   
     __obj.asInstanceOf[FieldArrayFieldsProps[FieldValue]]
   }

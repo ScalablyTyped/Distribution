@@ -30,27 +30,27 @@ trait SSHBuffer extends js.Object {
 object SSHBuffer {
   @scala.inline
   def apply(
-    atEnd: js.Function0[scala.Boolean],
-    expand: js.Function0[scala.Unit],
-    readBuffer: js.Function0[nodeLib.Buffer],
-    readChar: js.Function0[java.lang.String],
-    readInt: js.Function0[scala.Double],
-    readInt64: js.Function0[nodeLib.Buffer],
-    readPart: js.Function0[SSHPart],
-    readString: js.Function0[java.lang.String],
-    remainder: js.Function0[nodeLib.Buffer],
-    skip: js.Function1[scala.Double, scala.Unit],
-    toBuffer: js.Function0[nodeLib.Buffer],
-    write: js.Function1[nodeLib.Buffer, scala.Unit],
-    writeBuffer: js.Function1[nodeLib.Buffer, scala.Unit],
-    writeCString: js.Function1[java.lang.String, scala.Unit],
-    writeChar: js.Function1[java.lang.String, scala.Unit],
-    writeInt: js.Function1[scala.Double, scala.Unit],
-    writeInt64: js.Function1[nodeLib.Buffer, scala.Unit],
-    writePart: js.Function1[SSHPart, scala.Unit],
-    writeString: js.Function1[java.lang.String, scala.Unit]
+    atEnd: () => scala.Boolean,
+    expand: () => scala.Unit,
+    readBuffer: () => nodeLib.Buffer,
+    readChar: () => java.lang.String,
+    readInt: () => scala.Double,
+    readInt64: () => nodeLib.Buffer,
+    readPart: () => SSHPart,
+    readString: () => java.lang.String,
+    remainder: () => nodeLib.Buffer,
+    skip: scala.Double => scala.Unit,
+    toBuffer: () => nodeLib.Buffer,
+    write: nodeLib.Buffer => scala.Unit,
+    writeBuffer: nodeLib.Buffer => scala.Unit,
+    writeCString: java.lang.String => scala.Unit,
+    writeChar: java.lang.String => scala.Unit,
+    writeInt: scala.Double => scala.Unit,
+    writeInt64: nodeLib.Buffer => scala.Unit,
+    writePart: SSHPart => scala.Unit,
+    writeString: java.lang.String => scala.Unit
   ): SSHBuffer = {
-    val __obj = js.Dynamic.literal(atEnd = atEnd, expand = expand, readBuffer = readBuffer, readChar = readChar, readInt = readInt, readInt64 = readInt64, readPart = readPart, readString = readString, remainder = remainder, skip = skip, toBuffer = toBuffer, write = write, writeBuffer = writeBuffer, writeCString = writeCString, writeChar = writeChar, writeInt = writeInt, writeInt64 = writeInt64, writePart = writePart, writeString = writeString)
+    val __obj = js.Dynamic.literal(atEnd = js.Any.fromFunction0(atEnd), expand = js.Any.fromFunction0(expand), readBuffer = js.Any.fromFunction0(readBuffer), readChar = js.Any.fromFunction0(readChar), readInt = js.Any.fromFunction0(readInt), readInt64 = js.Any.fromFunction0(readInt64), readPart = js.Any.fromFunction0(readPart), readString = js.Any.fromFunction0(readString), remainder = js.Any.fromFunction0(remainder), skip = js.Any.fromFunction1(skip), toBuffer = js.Any.fromFunction0(toBuffer), write = js.Any.fromFunction1(write), writeBuffer = js.Any.fromFunction1(writeBuffer), writeCString = js.Any.fromFunction1(writeCString), writeChar = js.Any.fromFunction1(writeChar), writeInt = js.Any.fromFunction1(writeInt), writeInt64 = js.Any.fromFunction1(writeInt64), writePart = js.Any.fromFunction1(writePart), writeString = js.Any.fromFunction1(writeString))
   
     __obj.asInstanceOf[SSHBuffer]
   }

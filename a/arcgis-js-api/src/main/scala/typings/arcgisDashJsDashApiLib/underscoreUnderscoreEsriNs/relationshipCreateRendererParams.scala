@@ -135,9 +135,9 @@ object relationshipCreateRendererParams {
     constructor: js.Function,
     field1: relationshipCreateRendererParamsField1,
     field2: relationshipCreateRendererParamsField2,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     layer: FeatureLayer | SceneLayer | CSVLayer,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     view: View,
     basemap: java.lang.String | Basemap = null,
     classificationMethod: java.lang.String = null,
@@ -149,7 +149,7 @@ object relationshipCreateRendererParams {
     relationshipScheme: RelationshipScheme = null,
     symbolType: java.lang.String = null
   ): relationshipCreateRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, field1 = field1, field2 = field2, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable, view = view)
+    val __obj = js.Dynamic.literal(constructor = constructor, field1 = field1, field2 = field2, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view)
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (classificationMethod != null) __obj.updateDynamic("classificationMethod")(classificationMethod)
     if (colorMixMode != null) __obj.updateDynamic("colorMixMode")(colorMixMode)

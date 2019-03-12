@@ -26,7 +26,7 @@ object ConfigurationOptions {
     help: js.UndefOr[scala.Boolean] = js.undefined,
     minimist: MinimistOptions = null,
     name: java.lang.String = null,
-    usageFilter: js.Function1[/* output */ js.Any, _] = null,
+    usageFilter: /* output */ js.Any => _ = null,
     value: java.lang.String = null,
     version: js.UndefOr[scala.Boolean] = js.undefined
   ): ConfigurationOptions = {
@@ -34,7 +34,7 @@ object ConfigurationOptions {
     if (!js.isUndefined(help)) __obj.updateDynamic("help")(help)
     if (minimist != null) __obj.updateDynamic("minimist")(minimist)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (usageFilter != null) __obj.updateDynamic("usageFilter")(usageFilter)
+    if (usageFilter != null) __obj.updateDynamic("usageFilter")(js.Any.fromFunction1(usageFilter))
     if (value != null) __obj.updateDynamic("value")(value)
     if (!js.isUndefined(version)) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[ConfigurationOptions]

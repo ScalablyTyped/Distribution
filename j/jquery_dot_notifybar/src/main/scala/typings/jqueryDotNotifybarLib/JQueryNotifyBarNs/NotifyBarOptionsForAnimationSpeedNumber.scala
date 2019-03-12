@@ -25,10 +25,10 @@ object NotifyBarOptionsForAnimationSpeedNumber {
     delay: scala.Int | scala.Double = null,
     html: java.lang.String = null,
     jqObject: jqueryLib.JQuery[stdLib.HTMLElement] = null,
-    onBeforeHide: js.Function0[_] = null,
-    onBeforeShow: js.Function0[_] = null,
-    onHide: js.Function0[_] = null,
-    onShow: js.Function0[_] = null,
+    onBeforeHide: () => _ = null,
+    onBeforeShow: () => _ = null,
+    onHide: () => _ = null,
+    onShow: () => _ = null,
     position: java.lang.String = null
   ): NotifyBarOptionsForAnimationSpeedNumber = {
     val __obj = js.Dynamic.literal()
@@ -41,10 +41,10 @@ object NotifyBarOptionsForAnimationSpeedNumber {
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (html != null) __obj.updateDynamic("html")(html)
     if (jqObject != null) __obj.updateDynamic("jqObject")(jqObject)
-    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(onBeforeHide)
-    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(onBeforeShow)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(js.Any.fromFunction0(onBeforeHide))
+    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(js.Any.fromFunction0(onBeforeShow))
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     if (position != null) __obj.updateDynamic("position")(position)
     __obj.asInstanceOf[NotifyBarOptionsForAnimationSpeedNumber]
   }

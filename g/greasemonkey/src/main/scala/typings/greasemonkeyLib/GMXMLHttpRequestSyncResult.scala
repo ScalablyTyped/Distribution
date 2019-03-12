@@ -21,7 +21,7 @@ trait GMXMLHttpRequestSyncResult extends js.Object {
 object GMXMLHttpRequestSyncResult {
   @scala.inline
   def apply(
-    abort: js.Function0[scala.Unit],
+    abort: () => scala.Unit,
     finalUrl: java.lang.String,
     readyState: scala.Double,
     responseHeaders: java.lang.String,
@@ -29,7 +29,7 @@ object GMXMLHttpRequestSyncResult {
     status: scala.Double,
     statusText: java.lang.String
   ): GMXMLHttpRequestSyncResult = {
-    val __obj = js.Dynamic.literal(abort = abort, finalUrl = finalUrl, readyState = readyState, responseHeaders = responseHeaders, responseText = responseText, status = status, statusText = statusText)
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), finalUrl = finalUrl, readyState = readyState, responseHeaders = responseHeaders, responseText = responseText, status = status, statusText = statusText)
   
     __obj.asInstanceOf[GMXMLHttpRequestSyncResult]
   }

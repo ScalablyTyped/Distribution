@@ -29,13 +29,13 @@ trait XMapping2D
 object XMapping2D {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    map: js.Function1[RealPoint2D, RealPoint2D],
-    mapInverse: js.Function1[RealPoint2D, RealPoint2D],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    map: RealPoint2D => RealPoint2D,
+    mapInverse: RealPoint2D => RealPoint2D,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XMapping2D = {
-    val __obj = js.Dynamic.literal(acquire = acquire, map = map, mapInverse = mapInverse, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), map = js.Any.fromFunction1(map), mapInverse = js.Any.fromFunction1(mapInverse), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XMapping2D]
   }

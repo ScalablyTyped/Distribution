@@ -26,19 +26,14 @@ trait XVclContainerPeer
 object XVclContainerPeer {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    enableDialogControl: js.Function1[scala.Boolean, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setGroup: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XWindow], scala.Unit],
-    setTabOrder: js.Function3[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XWindow], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
-      scala.Boolean, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    enableDialogControl: scala.Boolean => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setGroup: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XWindow] => scala.Unit,
+    setTabOrder: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XWindow], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Boolean) => scala.Unit
   ): XVclContainerPeer = {
-    val __obj = js.Dynamic.literal(acquire = acquire, enableDialogControl = enableDialogControl, queryInterface = queryInterface, release = release, setGroup = setGroup, setTabOrder = setTabOrder)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), enableDialogControl = js.Any.fromFunction1(enableDialogControl), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setGroup = js.Any.fromFunction1(setGroup), setTabOrder = js.Any.fromFunction3(setTabOrder))
   
     __obj.asInstanceOf[XVclContainerPeer]
   }

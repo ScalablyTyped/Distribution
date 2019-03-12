@@ -11,8 +11,8 @@ trait MultikeyForeignConstraintBuilder extends js.Object {
 
 object MultikeyForeignConstraintBuilder {
   @scala.inline
-  def apply(references: js.Function1[js.Array[java.lang.String], ReferencingColumnBuilder]): MultikeyForeignConstraintBuilder = {
-    val __obj = js.Dynamic.literal(references = references)
+  def apply(references: js.Array[java.lang.String] => ReferencingColumnBuilder): MultikeyForeignConstraintBuilder = {
+    val __obj = js.Dynamic.literal(references = js.Any.fromFunction1(references))
   
     __obj.asInstanceOf[MultikeyForeignConstraintBuilder]
   }

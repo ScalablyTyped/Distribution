@@ -14,13 +14,8 @@ trait ResponseToolkit extends js.Object {
 
 object ResponseToolkit {
   @scala.inline
-  def apply(
-    proxy: js.Function1[
-      h2o2Lib.h2o2Mod.h2o2Ns.ProxyHandlerOptions, 
-      js.Promise[hapiLib.hapiMod.ResponseObject]
-    ]
-  ): ResponseToolkit = {
-    val __obj = js.Dynamic.literal(proxy = proxy)
+  def apply(proxy: h2o2Lib.h2o2Mod.h2o2Ns.ProxyHandlerOptions => js.Promise[hapiLib.hapiMod.ResponseObject]): ResponseToolkit = {
+    val __obj = js.Dynamic.literal(proxy = js.Any.fromFunction1(proxy))
   
     __obj.asInstanceOf[ResponseToolkit]
   }

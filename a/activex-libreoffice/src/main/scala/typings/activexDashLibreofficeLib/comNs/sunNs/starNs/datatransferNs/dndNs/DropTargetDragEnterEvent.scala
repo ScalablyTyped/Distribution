@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   */
 trait DropTargetDragEnterEvent extends DropTargetDragEvent {
   /** A sequence of supported {@link com.sun.star.datatransfer.DataFlavor} types. */
-  var SupportedDataFlavors: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.DataFlavor]
+  var SupportedDataFlavors: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.DataFlavor]
 }
 
 object DropTargetDragEnterEvent {
@@ -27,7 +27,7 @@ object DropTargetDragEnterEvent {
     LocationY: scala.Double,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     SourceActions: scala.Double,
-    SupportedDataFlavors: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.DataFlavor]
+    SupportedDataFlavors: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.DataFlavor]
   ): DropTargetDragEnterEvent = {
     val __obj = js.Dynamic.literal(Context = Context, DropAction = DropAction, Dummy = Dummy, LocationX = LocationX, LocationY = LocationY, Source = Source, SourceActions = SourceActions, SupportedDataFlavors = SupportedDataFlavors)
   

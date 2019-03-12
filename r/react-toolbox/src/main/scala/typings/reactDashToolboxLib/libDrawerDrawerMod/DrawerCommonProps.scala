@@ -23,7 +23,7 @@ trait DrawerCommonProps extends js.Object {
   /**
     * Callback function to be invoked when the overlay is clicked.
     */
-  var onOverlayClick: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onOverlayClick: js.UndefOr[js.Function] = js.undefined
   /**
     * Type of drawer. It can be left or right to display the drawer on the left or right side of the screen.
     * @default left
@@ -44,7 +44,7 @@ object DrawerCommonProps {
     active: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     insideTree: js.UndefOr[scala.Boolean] = js.undefined,
-    onOverlayClick: coreDashJsLib.Function = null,
+    onOverlayClick: js.Function = null,
     `type`: reactDashToolboxLib.reactDashToolboxLibStrings.left | reactDashToolboxLib.reactDashToolboxLibStrings.right = null,
     withOverlay: js.UndefOr[scala.Boolean] = js.undefined
   ): DrawerCommonProps = {

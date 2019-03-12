@@ -11,7 +11,7 @@ class Overlay ()
   extends reactLib.reactMod.PureComponent[IOverlayProps, IOverlayState, js.Any] {
   def this(props: IOverlayProps) = this()
   def this(props: IOverlayProps, context: js.Any) = this()
-  var containerElement: reactLib.HTMLElement = js.native
+  var containerElement: stdLib.HTMLElement = js.native
   var handleBackdropMouseDown: js.Any = js.native
   var handleDocumentClick: js.Any = js.native
   var handleDocumentFocus: js.Any = js.native

@@ -12,14 +12,14 @@ import scala.scalajs.js.annotation._
   * XAnimationNode} tree as a target object.
   */
 trait TargetProperties extends js.Object {
-  var Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
+  var Properties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
   var Target: js.Any
 }
 
 object TargetProperties {
   @scala.inline
   def apply(
-    Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    Properties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
     Target: js.Any
   ): TargetProperties = {
     val __obj = js.Dynamic.literal(Properties = Properties, Target = Target)

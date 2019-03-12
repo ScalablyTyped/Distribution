@@ -22,19 +22,19 @@ trait Deque[T] extends js.Object {
 object Deque {
   @scala.inline
   def apply[T](
-    clear: js.Function0[scala.Unit],
-    get: js.Function1[scala.Double, js.UndefOr[T]],
-    isEmpty: js.Function0[scala.Boolean],
+    clear: () => scala.Unit,
+    get: scala.Double => js.UndefOr[T],
+    isEmpty: () => scala.Boolean,
     length: scala.Double,
-    peekBack: js.Function0[js.UndefOr[T]],
-    peekFront: js.Function0[js.UndefOr[T]],
-    pop: js.Function0[js.UndefOr[T]],
-    push: js.Function1[/* repeated */ T, scala.Double],
-    shift: js.Function0[js.UndefOr[T]],
-    toArray: js.Function0[js.Array[T]],
-    unshift: js.Function1[/* repeated */ T, scala.Double]
+    peekBack: () => js.UndefOr[T],
+    peekFront: () => js.UndefOr[T],
+    pop: () => js.UndefOr[T],
+    push: /* repeated */ T => scala.Double,
+    shift: () => js.UndefOr[T],
+    toArray: () => js.Array[T],
+    unshift: /* repeated */ T => scala.Double
   ): Deque[T] = {
-    val __obj = js.Dynamic.literal(clear = clear, get = get, isEmpty = isEmpty, length = length, peekBack = peekBack, peekFront = peekFront, pop = pop, push = push, shift = shift, toArray = toArray, unshift = unshift)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), get = js.Any.fromFunction1(get), isEmpty = js.Any.fromFunction0(isEmpty), length = length, peekBack = js.Any.fromFunction0(peekBack), peekFront = js.Any.fromFunction0(peekFront), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), shift = js.Any.fromFunction0(shift), toArray = js.Any.fromFunction0(toArray), unshift = js.Any.fromFunction1(unshift))
   
     __obj.asInstanceOf[Deque[T]]
   }

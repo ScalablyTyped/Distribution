@@ -16,7 +16,7 @@ class TerminalNode protected () extends ParseTree {
   def getChildCount(): scala.Double = js.native
   def getParent(): js.Any = js.native
   def getPayload(): antlr4Lib.tokenMod.Token = js.native
-  def getSourceInterval(): antlr4Lib.intervalsetMod.Interval = js.native
+  def getSourceInterval(): antlr4Lib.intervalSetMod.Interval = js.native
   def getSymbol(): antlr4Lib.tokenMod.Token = js.native
   def getText(): java.lang.String = js.native
 }

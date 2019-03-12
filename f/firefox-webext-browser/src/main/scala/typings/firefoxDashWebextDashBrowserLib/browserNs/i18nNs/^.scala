@@ -18,7 +18,7 @@ object ^ extends js.Object {
     * Gets the accept-languages of the browser. This is different from the locale used by the browser; to get the
     * locale, use `i18n.getUILanguage`.
     */
-  def getAcceptLanguages(): js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.i18nNs.LanguageCode]] = js.native
+  def getAcceptLanguages(): js.Promise[js.Array[LanguageCode]] = js.native
   /**
     * Gets the localized string for the specified message. If the message is missing, this method returns an empty
     * string (''). If the format of the `getMessage()` call is wrong — for example, _messageName_ is not a string or

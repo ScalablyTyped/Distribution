@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.TextRetrievalMode")
 @js.native
 class TextRetrievalMode protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
   val Duplicate: TextRetrievalMode = js.native
   var IncludeFieldCodes: scala.Boolean = js.native

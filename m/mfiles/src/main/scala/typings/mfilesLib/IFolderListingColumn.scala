@@ -18,7 +18,7 @@ trait IFolderListingColumn extends js.Object {
 object IFolderListingColumn {
   @scala.inline
   def apply(
-    Clone: js.Function0[IFolderListingColumn],
+    Clone: () => IFolderListingColumn,
     Flags: mfilesLib.MFilesNs.MFFolderListingColumnFlags,
     ID: scala.Double,
     Name: java.lang.String,
@@ -26,7 +26,7 @@ object IFolderListingColumn {
     Visible: scala.Boolean,
     Width: scala.Double
   ): IFolderListingColumn = {
-    val __obj = js.Dynamic.literal(Clone = Clone, Flags = Flags, ID = ID, Name = Name, Position = Position, Visible = Visible, Width = Width)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Flags = Flags, ID = ID, Name = Name, Position = Position, Visible = Visible, Width = Width)
   
     __obj.asInstanceOf[IFolderListingColumn]
   }

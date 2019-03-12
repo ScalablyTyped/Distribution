@@ -16,13 +16,13 @@ trait PolicyMapping extends js.Object {
 object PolicyMapping {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     issuerDomainPolicy: java.lang.String,
     subjectDomainPolicy: java.lang.String,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): PolicyMapping = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, issuerDomainPolicy = issuerDomainPolicy, subjectDomainPolicy = subjectDomainPolicy, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), issuerDomainPolicy = issuerDomainPolicy, subjectDomainPolicy = subjectDomainPolicy, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[PolicyMapping]
   }

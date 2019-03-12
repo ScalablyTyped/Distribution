@@ -67,15 +67,15 @@ trait StructureController
 object StructureController {
   @scala.inline
   def apply(
-    activateSafeMode: js.Function0[ScreepsReturnCode],
-    destroy: js.Function0[ScreepsReturnCode],
+    activateSafeMode: () => ScreepsReturnCode,
+    destroy: () => ScreepsReturnCode,
     hits: scala.Double,
     hitsMax: scala.Double,
     id: java.lang.String,
-    isActive: js.Function0[scala.Boolean],
+    isActive: () => scala.Boolean,
     level: scala.Double,
     my: scala.Boolean,
-    notifyWhenAttacked: js.Function1[scala.Boolean, ScreepsReturnCode],
+    notifyWhenAttacked: scala.Boolean => ScreepsReturnCode,
     owner: Owner,
     pos: RoomPosition,
     progress: scala.Double,
@@ -84,14 +84,14 @@ object StructureController {
     safeModeAvailable: scala.Double,
     structureType: STRUCTURE_CONTROLLER,
     ticksToDowngrade: scala.Double,
-    unclaim: js.Function0[ScreepsReturnCode],
+    unclaim: () => ScreepsReturnCode,
     upgradeBlocked: scala.Double,
     reservation: ReservationDefinition = null,
     safeMode: scala.Int | scala.Double = null,
     safeModeCooldown: scala.Int | scala.Double = null,
     sign: SignDefinition = null
   ): StructureController = {
-    val __obj = js.Dynamic.literal(activateSafeMode = activateSafeMode, destroy = destroy, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, level = level, my = my, notifyWhenAttacked = notifyWhenAttacked, owner = owner, pos = pos, progress = progress, progressTotal = progressTotal, room = room, safeModeAvailable = safeModeAvailable, structureType = structureType, ticksToDowngrade = ticksToDowngrade, unclaim = unclaim, upgradeBlocked = upgradeBlocked)
+    val __obj = js.Dynamic.literal(activateSafeMode = js.Any.fromFunction0(activateSafeMode), destroy = js.Any.fromFunction0(destroy), hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), level = level, my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, progress = progress, progressTotal = progressTotal, room = room, safeModeAvailable = safeModeAvailable, structureType = structureType, ticksToDowngrade = ticksToDowngrade, unclaim = js.Any.fromFunction0(unclaim), upgradeBlocked = upgradeBlocked)
     if (reservation != null) __obj.updateDynamic("reservation")(reservation)
     if (safeMode != null) __obj.updateDynamic("safeMode")(safeMode.asInstanceOf[js.Any])
     if (safeModeCooldown != null) __obj.updateDynamic("safeModeCooldown")(safeModeCooldown.asInstanceOf[js.Any])

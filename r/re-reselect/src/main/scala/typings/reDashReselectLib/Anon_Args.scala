@@ -16,15 +16,11 @@ object Anon_Args {
   @scala.inline
   def apply[S, R, C, D](
     cache: reDashReselectLib.reDashReselectMod.ICacheObject,
-    clearCache: js.Function0[scala.Unit],
-    getMatchingSelector: js.Function2[
-      S, 
-      /* repeated */ js.Any, 
-      reDashReselectLib.reDashReselectMod.OutputSelector[S, R, C, D]
-    ],
-    removeMatchingSelector: js.Function2[S, /* repeated */ js.Any, scala.Unit]
+    clearCache: () => scala.Unit,
+    getMatchingSelector: (S, /* repeated */ js.Any) => reDashReselectLib.reDashReselectMod.OutputSelector[S, R, C, D],
+    removeMatchingSelector: (S, /* repeated */ js.Any) => scala.Unit
   ): Anon_Args[S, R, C, D] = {
-    val __obj = js.Dynamic.literal(cache = cache, clearCache = clearCache, getMatchingSelector = getMatchingSelector, removeMatchingSelector = removeMatchingSelector)
+    val __obj = js.Dynamic.literal(cache = cache, clearCache = js.Any.fromFunction0(clearCache), getMatchingSelector = js.Any.fromFunction2(getMatchingSelector), removeMatchingSelector = js.Any.fromFunction2(removeMatchingSelector))
   
     __obj.asInstanceOf[Anon_Args[S, R, C, D]]
   }

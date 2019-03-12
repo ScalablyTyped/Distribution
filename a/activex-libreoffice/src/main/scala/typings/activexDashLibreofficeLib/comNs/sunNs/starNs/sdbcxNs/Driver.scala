@@ -24,39 +24,20 @@ object Driver {
   def apply(
     MajorVersion: scala.Double,
     MinorVersion: scala.Double,
-    acceptsURL: js.Function1[java.lang.String, scala.Boolean],
-    acquire: js.Function0[scala.Unit],
-    connect: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection
-    ],
-    createCatalog: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    dropCatalog: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    getDataDefinitionByConnection: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection, XTablesSupplier],
-    getDataDefinitionByURL: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      XTablesSupplier
-    ],
-    getMajorVersion: js.Function0[scala.Double],
-    getMinorVersion: js.Function0[scala.Double],
-    getPropertyInfo: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.DriverPropertyInfo]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acceptsURL: java.lang.String => scala.Boolean,
+    acquire: () => scala.Unit,
+    connect: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
+    createCatalog: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] => scala.Unit,
+    dropCatalog: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    getDataDefinitionByConnection: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection => XTablesSupplier,
+    getDataDefinitionByURL: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => XTablesSupplier,
+    getMajorVersion: () => scala.Double,
+    getMinorVersion: () => scala.Double,
+    getPropertyInfo: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.DriverPropertyInfo],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): Driver = {
-    val __obj = js.Dynamic.literal(MajorVersion = MajorVersion, MinorVersion = MinorVersion, acceptsURL = acceptsURL, acquire = acquire, connect = connect, createCatalog = createCatalog, dropCatalog = dropCatalog, getDataDefinitionByConnection = getDataDefinitionByConnection, getDataDefinitionByURL = getDataDefinitionByURL, getMajorVersion = getMajorVersion, getMinorVersion = getMinorVersion, getPropertyInfo = getPropertyInfo, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(MajorVersion = MajorVersion, MinorVersion = MinorVersion, acceptsURL = js.Any.fromFunction1(acceptsURL), acquire = js.Any.fromFunction0(acquire), connect = js.Any.fromFunction2(connect), createCatalog = js.Any.fromFunction1(createCatalog), dropCatalog = js.Any.fromFunction2(dropCatalog), getDataDefinitionByConnection = js.Any.fromFunction1(getDataDefinitionByConnection), getDataDefinitionByURL = js.Any.fromFunction2(getDataDefinitionByURL), getMajorVersion = js.Any.fromFunction0(getMajorVersion), getMinorVersion = js.Any.fromFunction0(getMinorVersion), getPropertyInfo = js.Any.fromFunction2(getPropertyInfo), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[Driver]
   }

@@ -16,7 +16,7 @@ class Server ()
     listener: js.Function3[
       /* certificate */ nodeLib.Buffer, 
       /* issuer */ nodeLib.Buffer, 
-      /* callback */ js.Function, 
+      /* callback */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* resp */ nodeLib.Buffer, scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -24,8 +24,8 @@ class Server ()
   def addListener_newSession(
     event: nodeLib.nodeLibStrings.newSession,
     listener: js.Function3[
-      /* sessionId */ js.Any, 
-      /* sessionData */ js.Any, 
+      /* sessionId */ nodeLib.Buffer, 
+      /* sessionData */ nodeLib.Buffer, 
       /* callback */ js.Function2[/* err */ nodeLib.Error, /* resp */ nodeLib.Buffer, scala.Unit], 
       scala.Unit
     ]
@@ -34,8 +34,8 @@ class Server ()
   def addListener_resumeSession(
     event: nodeLib.nodeLibStrings.resumeSession,
     listener: js.Function2[
-      /* sessionId */ js.Any, 
-      /* callback */ js.Function2[/* err */ nodeLib.Error, /* sessionData */ js.Any, scala.Unit], 
+      /* sessionId */ nodeLib.Buffer, 
+      /* callback */ js.Function2[/* err */ nodeLib.Error, /* sessionData */ nodeLib.Buffer, scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -54,20 +54,20 @@ class Server ()
     event: nodeLib.nodeLibStrings.OCSPRequest,
     certificate: nodeLib.Buffer,
     issuer: nodeLib.Buffer,
-    callback: js.Function
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* resp */ nodeLib.Buffer, scala.Unit]
   ): scala.Boolean = js.native
   @JSName("emit")
   def emit_newSession(
     event: nodeLib.nodeLibStrings.newSession,
-    sessionId: js.Any,
-    sessionData: js.Any,
+    sessionId: nodeLib.Buffer,
+    sessionData: nodeLib.Buffer,
     callback: js.Function2[/* err */ nodeLib.Error, /* resp */ nodeLib.Buffer, scala.Unit]
   ): scala.Boolean = js.native
   @JSName("emit")
   def emit_resumeSession(
     event: nodeLib.nodeLibStrings.resumeSession,
-    sessionId: js.Any,
-    callback: js.Function2[/* err */ nodeLib.Error, /* sessionData */ js.Any, scala.Unit]
+    sessionId: nodeLib.Buffer,
+    callback: js.Function2[/* err */ nodeLib.Error, /* sessionData */ nodeLib.Buffer, scala.Unit]
   ): scala.Boolean = js.native
   @JSName("emit")
   def emit_secureConnection(event: nodeLib.nodeLibStrings.secureConnection, tlsSocket: TLSSocket): scala.Boolean = js.native
@@ -79,7 +79,7 @@ class Server ()
     listener: js.Function3[
       /* certificate */ nodeLib.Buffer, 
       /* issuer */ nodeLib.Buffer, 
-      /* callback */ js.Function, 
+      /* callback */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* resp */ nodeLib.Buffer, scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -87,8 +87,8 @@ class Server ()
   def on_newSession(
     event: nodeLib.nodeLibStrings.newSession,
     listener: js.Function3[
-      /* sessionId */ js.Any, 
-      /* sessionData */ js.Any, 
+      /* sessionId */ nodeLib.Buffer, 
+      /* sessionData */ nodeLib.Buffer, 
       /* callback */ js.Function2[/* err */ nodeLib.Error, /* resp */ nodeLib.Buffer, scala.Unit], 
       scala.Unit
     ]
@@ -97,8 +97,8 @@ class Server ()
   def on_resumeSession(
     event: nodeLib.nodeLibStrings.resumeSession,
     listener: js.Function2[
-      /* sessionId */ js.Any, 
-      /* callback */ js.Function2[/* err */ nodeLib.Error, /* sessionData */ js.Any, scala.Unit], 
+      /* sessionId */ nodeLib.Buffer, 
+      /* callback */ js.Function2[/* err */ nodeLib.Error, /* sessionData */ nodeLib.Buffer, scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -118,7 +118,7 @@ class Server ()
     listener: js.Function3[
       /* certificate */ nodeLib.Buffer, 
       /* issuer */ nodeLib.Buffer, 
-      /* callback */ js.Function, 
+      /* callback */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* resp */ nodeLib.Buffer, scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -126,8 +126,8 @@ class Server ()
   def once_newSession(
     event: nodeLib.nodeLibStrings.newSession,
     listener: js.Function3[
-      /* sessionId */ js.Any, 
-      /* sessionData */ js.Any, 
+      /* sessionId */ nodeLib.Buffer, 
+      /* sessionData */ nodeLib.Buffer, 
       /* callback */ js.Function2[/* err */ nodeLib.Error, /* resp */ nodeLib.Buffer, scala.Unit], 
       scala.Unit
     ]
@@ -136,8 +136,8 @@ class Server ()
   def once_resumeSession(
     event: nodeLib.nodeLibStrings.resumeSession,
     listener: js.Function2[
-      /* sessionId */ js.Any, 
-      /* callback */ js.Function2[/* err */ nodeLib.Error, /* sessionData */ js.Any, scala.Unit], 
+      /* sessionId */ nodeLib.Buffer, 
+      /* callback */ js.Function2[/* err */ nodeLib.Error, /* sessionData */ nodeLib.Buffer, scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -157,7 +157,7 @@ class Server ()
     listener: js.Function3[
       /* certificate */ nodeLib.Buffer, 
       /* issuer */ nodeLib.Buffer, 
-      /* callback */ js.Function, 
+      /* callback */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* resp */ nodeLib.Buffer, scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -165,8 +165,8 @@ class Server ()
   def prependListener_newSession(
     event: nodeLib.nodeLibStrings.newSession,
     listener: js.Function3[
-      /* sessionId */ js.Any, 
-      /* sessionData */ js.Any, 
+      /* sessionId */ nodeLib.Buffer, 
+      /* sessionData */ nodeLib.Buffer, 
       /* callback */ js.Function2[/* err */ nodeLib.Error, /* resp */ nodeLib.Buffer, scala.Unit], 
       scala.Unit
     ]
@@ -175,8 +175,8 @@ class Server ()
   def prependListener_resumeSession(
     event: nodeLib.nodeLibStrings.resumeSession,
     listener: js.Function2[
-      /* sessionId */ js.Any, 
-      /* callback */ js.Function2[/* err */ nodeLib.Error, /* sessionData */ js.Any, scala.Unit], 
+      /* sessionId */ nodeLib.Buffer, 
+      /* callback */ js.Function2[/* err */ nodeLib.Error, /* sessionData */ nodeLib.Buffer, scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -196,7 +196,7 @@ class Server ()
     listener: js.Function3[
       /* certificate */ nodeLib.Buffer, 
       /* issuer */ nodeLib.Buffer, 
-      /* callback */ js.Function, 
+      /* callback */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* resp */ nodeLib.Buffer, scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -204,8 +204,8 @@ class Server ()
   def prependOnceListener_newSession(
     event: nodeLib.nodeLibStrings.newSession,
     listener: js.Function3[
-      /* sessionId */ js.Any, 
-      /* sessionData */ js.Any, 
+      /* sessionId */ nodeLib.Buffer, 
+      /* sessionData */ nodeLib.Buffer, 
       /* callback */ js.Function2[/* err */ nodeLib.Error, /* resp */ nodeLib.Buffer, scala.Unit], 
       scala.Unit
     ]
@@ -214,8 +214,8 @@ class Server ()
   def prependOnceListener_resumeSession(
     event: nodeLib.nodeLibStrings.resumeSession,
     listener: js.Function2[
-      /* sessionId */ js.Any, 
-      /* callback */ js.Function2[/* err */ nodeLib.Error, /* sessionData */ js.Any, scala.Unit], 
+      /* sessionId */ nodeLib.Buffer, 
+      /* callback */ js.Function2[/* err */ nodeLib.Error, /* sessionData */ nodeLib.Buffer, scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native

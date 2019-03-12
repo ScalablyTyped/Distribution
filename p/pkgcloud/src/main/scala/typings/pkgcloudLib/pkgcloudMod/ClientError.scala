@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ClientError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   var failCode: js.UndefOr[java.lang.String] = js.undefined
   var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var href: js.UndefOr[java.lang.String] = js.undefined
@@ -19,6 +19,8 @@ trait ClientError
 object ClientError {
   @scala.inline
   def apply(
+    message: java.lang.String,
+    name: java.lang.String,
     failCode: java.lang.String = null,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     href: java.lang.String = null,
@@ -28,7 +30,7 @@ object ClientError {
     stack: java.lang.String = null,
     statusCode: scala.Int | scala.Double = null
   ): ClientError = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(message = message, name = name)
     if (failCode != null) __obj.updateDynamic("failCode")(failCode)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (href != null) __obj.updateDynamic("href")(href)

@@ -17,19 +17,19 @@ trait XNameReplace extends XNameAccess {
 object XNameReplace {
   @scala.inline
   def apply(
-    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementNames: stdLib.SafeArray[java.lang.String],
     ElementType: activexDashLibreofficeLib.`type`,
-    acquire: js.Function0[scala.Unit],
-    getByName: js.Function1[java.lang.String, js.Any],
-    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    hasByName: js.Function1[java.lang.String, scala.Boolean],
-    hasElements: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    replaceByName: js.Function2[java.lang.String, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    getByName: java.lang.String => js.Any,
+    getElementNames: () => stdLib.SafeArray[java.lang.String],
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    hasByName: java.lang.String => scala.Boolean,
+    hasElements: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    replaceByName: (java.lang.String, js.Any) => scala.Unit
   ): XNameReplace = {
-    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, queryInterface = queryInterface, release = release, replaceByName = replaceByName)
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = js.Any.fromFunction0(acquire), getByName = js.Any.fromFunction1(getByName), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), replaceByName = js.Any.fromFunction2(replaceByName))
   
     __obj.asInstanceOf[XNameReplace]
   }

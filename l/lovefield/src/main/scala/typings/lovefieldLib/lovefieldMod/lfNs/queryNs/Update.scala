@@ -13,14 +13,14 @@ trait Update extends Builder {
 object Update {
   @scala.inline
   def apply(
-    bind: js.Function1[/* repeated */ js.Any, Builder],
-    exec: js.Function0[js.Promise[js.Array[js.Object]]],
-    explain: js.Function0[java.lang.String],
-    set: js.Function2[lovefieldLib.lovefieldMod.lfNs.schemaNs.Column, js.Any, Update],
-    toSql: js.Function0[java.lang.String],
-    where: js.Function1[lovefieldLib.lovefieldMod.lfNs.Predicate, Update]
+    bind: /* repeated */ js.Any => Builder,
+    exec: () => js.Promise[js.Array[js.Object]],
+    explain: () => java.lang.String,
+    set: (lovefieldLib.lovefieldMod.lfNs.schemaNs.Column, js.Any) => Update,
+    toSql: () => java.lang.String,
+    where: lovefieldLib.lovefieldMod.lfNs.Predicate => Update
   ): Update = {
-    val __obj = js.Dynamic.literal(bind = bind, exec = exec, explain = explain, set = set, toSql = toSql, where = where)
+    val __obj = js.Dynamic.literal(bind = js.Any.fromFunction1(bind), exec = js.Any.fromFunction0(exec), explain = js.Any.fromFunction0(explain), set = js.Any.fromFunction2(set), toSql = js.Any.fromFunction0(toSql), where = js.Any.fromFunction1(where))
   
     __obj.asInstanceOf[Update]
   }

@@ -11,8 +11,8 @@ trait Repl extends js.Object {
 
 object Repl {
   @scala.inline
-  def apply(inject: js.Function1[js.Any, scala.Unit]): Repl = {
-    val __obj = js.Dynamic.literal(inject = inject)
+  def apply(inject: js.Any => scala.Unit): Repl = {
+    val __obj = js.Dynamic.literal(inject = js.Any.fromFunction1(inject))
   
     __obj.asInstanceOf[Repl]
   }

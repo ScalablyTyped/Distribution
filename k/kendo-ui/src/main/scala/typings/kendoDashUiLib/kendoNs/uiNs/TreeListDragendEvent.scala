@@ -13,13 +13,13 @@ trait TreeListDragendEvent extends TreeListEvent {
 object TreeListDragendEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: TreeList,
     destination: kendoDashUiLib.kendoNs.dataNs.TreeListModel = null,
     source: kendoDashUiLib.kendoNs.dataNs.TreeListModel = null
   ): TreeListDragendEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (destination != null) __obj.updateDynamic("destination")(destination)
     if (source != null) __obj.updateDynamic("source")(source)
     __obj.asInstanceOf[TreeListDragendEvent]

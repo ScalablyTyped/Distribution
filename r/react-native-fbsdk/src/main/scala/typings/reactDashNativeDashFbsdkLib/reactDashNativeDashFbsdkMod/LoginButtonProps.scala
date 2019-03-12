@@ -55,8 +55,8 @@ object LoginButtonProps {
     defaultAudience: DefaultAudience = null,
     loginBehaviorAndroid: LoginBehaviorAndroid = null,
     loginBehaviorIOS: LoginBehaviorIOS = null,
-    onLoginFinished: js.Function2[/* error */ js.Object, /* result */ LoginResult, scala.Unit] = null,
-    onLogoutFinished: js.Function0[scala.Unit] = null,
+    onLoginFinished: (/* error */ js.Object, /* result */ LoginResult) => scala.Unit = null,
+    onLogoutFinished: () => scala.Unit = null,
     publishPermissions: js.Array[Permissions] = null,
     readPermissions: js.Array[Permissions] = null,
     style: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
@@ -66,8 +66,8 @@ object LoginButtonProps {
     if (defaultAudience != null) __obj.updateDynamic("defaultAudience")(defaultAudience)
     if (loginBehaviorAndroid != null) __obj.updateDynamic("loginBehaviorAndroid")(loginBehaviorAndroid)
     if (loginBehaviorIOS != null) __obj.updateDynamic("loginBehaviorIOS")(loginBehaviorIOS)
-    if (onLoginFinished != null) __obj.updateDynamic("onLoginFinished")(onLoginFinished)
-    if (onLogoutFinished != null) __obj.updateDynamic("onLogoutFinished")(onLogoutFinished)
+    if (onLoginFinished != null) __obj.updateDynamic("onLoginFinished")(js.Any.fromFunction2(onLoginFinished))
+    if (onLogoutFinished != null) __obj.updateDynamic("onLogoutFinished")(js.Any.fromFunction0(onLogoutFinished))
     if (publishPermissions != null) __obj.updateDynamic("publishPermissions")(publishPermissions)
     if (readPermissions != null) __obj.updateDynamic("readPermissions")(readPermissions)
     if (style != null) __obj.updateDynamic("style")(style)

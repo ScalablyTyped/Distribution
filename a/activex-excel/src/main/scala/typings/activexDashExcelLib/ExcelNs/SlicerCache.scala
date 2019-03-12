@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.SlicerCache")
 @js.native
 class SlicerCache protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Creator: XlCreator = js.native
   var CrossFilterType: XlSlicerCrossFilterType = js.native
   var `Excel.SlicerCache_typekey`: SlicerCache = js.native
@@ -32,7 +32,7 @@ class SlicerCache protected () extends js.Object {
   var VisibleSlicerItemsList: js.Any = js.native
   @JSName("VisibleSlicerItems")
   val VisibleSlicerItems_Original: SlicerItems = js.native
-  val WorkbookConnection: WorkbookConnection = js.native
+  val WorkbookConnection: activexDashExcelLib.ExcelNs.WorkbookConnection = js.native
   def ClearManualFilter(): scala.Unit = js.native
   def Delete(): scala.Unit = js.native
   def PivotTables(Index: java.lang.String): PivotTable = js.native

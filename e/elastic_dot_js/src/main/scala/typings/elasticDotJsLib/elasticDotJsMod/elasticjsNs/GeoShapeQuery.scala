@@ -56,16 +56,16 @@ trait GeoShapeQuery extends Query {
 object GeoShapeQuery {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    boost: js.Function1[stdLib.Number, GeoShapeQuery],
-    field: js.Function1[java.lang.String, GeoShapeQuery],
-    indexedShape: js.Function1[java.lang.String, GeoShapeQuery],
-    relation: js.Function1[java.lang.String, GeoShapeQuery],
-    shape: js.Function1[java.lang.String, GeoShapeQuery],
-    strategy: js.Function1[java.lang.String, GeoShapeQuery],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    boost: stdLib.Number => GeoShapeQuery,
+    field: java.lang.String => GeoShapeQuery,
+    indexedShape: java.lang.String => GeoShapeQuery,
+    relation: java.lang.String => GeoShapeQuery,
+    shape: java.lang.String => GeoShapeQuery,
+    strategy: java.lang.String => GeoShapeQuery,
+    toJSON: () => js.Any
   ): GeoShapeQuery = {
-    val __obj = js.Dynamic.literal(_type = _type, boost = boost, field = field, indexedShape = indexedShape, relation = relation, shape = shape, strategy = strategy, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), boost = js.Any.fromFunction1(boost), field = js.Any.fromFunction1(field), indexedShape = js.Any.fromFunction1(indexedShape), relation = js.Any.fromFunction1(relation), shape = js.Any.fromFunction1(shape), strategy = js.Any.fromFunction1(strategy), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[GeoShapeQuery]
   }

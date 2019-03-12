@@ -12,8 +12,8 @@ trait BaseMapController extends js.Object {
 
 object BaseMapController {
   @scala.inline
-  def apply(events: js.Array[java.lang.String], handleEvent: js.Function1[MapControlEvent, scala.Unit]): BaseMapController = {
-    val __obj = js.Dynamic.literal(events = events, handleEvent = handleEvent)
+  def apply(events: js.Array[java.lang.String], handleEvent: MapControlEvent => scala.Unit): BaseMapController = {
+    val __obj = js.Dynamic.literal(events = events, handleEvent = js.Any.fromFunction1(handleEvent))
   
     __obj.asInstanceOf[BaseMapController]
   }

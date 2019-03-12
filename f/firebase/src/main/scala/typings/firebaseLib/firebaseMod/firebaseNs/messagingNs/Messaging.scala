@@ -55,21 +55,21 @@ trait Messaging extends js.Object {
   def onMessage(nextOrObserver: firebaseLib.firebaseMod.firebaseNs.NextFn[_]): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
   def onMessage(
     nextOrObserver: firebaseLib.firebaseMod.firebaseNs.NextFn[_],
-    error: firebaseLib.firebaseMod.firebaseNs.ErrorFn[nodeLib.Error]
+    error: firebaseLib.firebaseMod.firebaseNs.ErrorFn[stdLib.Error]
   ): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
   def onMessage(
     nextOrObserver: firebaseLib.firebaseMod.firebaseNs.NextFn[_],
-    error: firebaseLib.firebaseMod.firebaseNs.ErrorFn[nodeLib.Error],
+    error: firebaseLib.firebaseMod.firebaseNs.ErrorFn[stdLib.Error],
     completed: firebaseLib.firebaseMod.firebaseNs.CompleteFn
   ): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
-  def onMessage(nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error]): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
+  def onMessage(nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error]): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
   def onMessage(
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error],
-    error: firebaseLib.firebaseMod.firebaseNs.ErrorFn[nodeLib.Error]
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error],
+    error: firebaseLib.firebaseMod.firebaseNs.ErrorFn[stdLib.Error]
   ): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
   def onMessage(
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error],
-    error: firebaseLib.firebaseMod.firebaseNs.ErrorFn[nodeLib.Error],
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error],
+    error: firebaseLib.firebaseMod.firebaseNs.ErrorFn[stdLib.Error],
     completed: firebaseLib.firebaseMod.firebaseNs.CompleteFn
   ): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
   /**
@@ -86,21 +86,21 @@ trait Messaging extends js.Object {
   def onTokenRefresh(nextOrObserver: firebaseLib.firebaseMod.firebaseNs.NextFn[_]): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
   def onTokenRefresh(
     nextOrObserver: firebaseLib.firebaseMod.firebaseNs.NextFn[_],
-    error: firebaseLib.firebaseMod.firebaseNs.ErrorFn[nodeLib.Error]
+    error: firebaseLib.firebaseMod.firebaseNs.ErrorFn[stdLib.Error]
   ): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
   def onTokenRefresh(
     nextOrObserver: firebaseLib.firebaseMod.firebaseNs.NextFn[_],
-    error: firebaseLib.firebaseMod.firebaseNs.ErrorFn[nodeLib.Error],
+    error: firebaseLib.firebaseMod.firebaseNs.ErrorFn[stdLib.Error],
     completed: firebaseLib.firebaseMod.firebaseNs.CompleteFn
   ): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
-  def onTokenRefresh(nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error]): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
+  def onTokenRefresh(nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error]): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
   def onTokenRefresh(
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error],
-    error: firebaseLib.firebaseMod.firebaseNs.ErrorFn[nodeLib.Error]
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error],
+    error: firebaseLib.firebaseMod.firebaseNs.ErrorFn[stdLib.Error]
   ): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
   def onTokenRefresh(
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error],
-    error: firebaseLib.firebaseMod.firebaseNs.ErrorFn[nodeLib.Error],
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error],
+    error: firebaseLib.firebaseMod.firebaseNs.ErrorFn[stdLib.Error],
     completed: firebaseLib.firebaseMod.firebaseNs.CompleteFn
   ): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
   /**

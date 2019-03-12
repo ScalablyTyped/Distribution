@@ -39,7 +39,7 @@ trait XGridDataModel
     * @param RowIndex the index of the row whose data should is to be retrieved.
     * @throws com::sun::star::lang::IndexOutOfBoundsException of the given row index does not denote a valid row.
     */
-  def getRowData(RowIndex: scala.Double): activexDashInteropLib.SafeArray[_]
+  def getRowData(RowIndex: scala.Double): stdLib.SafeArray[_]
   /**
     * retrieves the heading of a given row
     *
@@ -56,19 +56,19 @@ object XGridDataModel {
   def apply(
     ColumnCount: scala.Double,
     RowCount: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
-    dispose: js.Function0[scala.Unit],
-    getCellData: js.Function2[scala.Double, scala.Double, js.Any],
-    getCellToolTip: js.Function2[scala.Double, scala.Double, js.Any],
-    getRowData: js.Function1[scala.Double, activexDashInteropLib.SafeArray[_]],
-    getRowHeading: js.Function1[scala.Double, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    createClone: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable,
+    dispose: () => scala.Unit,
+    getCellData: (scala.Double, scala.Double) => js.Any,
+    getCellToolTip: (scala.Double, scala.Double) => js.Any,
+    getRowData: scala.Double => stdLib.SafeArray[_],
+    getRowHeading: scala.Double => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit
   ): XGridDataModel = {
-    val __obj = js.Dynamic.literal(ColumnCount = ColumnCount, RowCount = RowCount, acquire = acquire, addEventListener = addEventListener, createClone = createClone, dispose = dispose, getCellData = getCellData, getCellToolTip = getCellToolTip, getRowData = getRowData, getRowHeading = getRowHeading, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(ColumnCount = ColumnCount, RowCount = RowCount, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), createClone = js.Any.fromFunction0(createClone), dispose = js.Any.fromFunction0(dispose), getCellData = js.Any.fromFunction2(getCellData), getCellToolTip = js.Any.fromFunction2(getCellToolTip), getRowData = js.Any.fromFunction1(getRowData), getRowHeading = js.Any.fromFunction1(getRowHeading), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener))
   
     __obj.asInstanceOf[XGridDataModel]
   }

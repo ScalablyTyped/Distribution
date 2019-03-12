@@ -43,11 +43,7 @@ object DownloadOptions {
     ciphers: java.lang.String = null,
     clientCertEngine: java.lang.String = null,
     cookieJar: toughDashCookieLib.toughDashCookieMod.CookieJar = null,
-    createConnection: js.Function2[
-      /* options */ nodeLib.httpMod.ClientRequestArgs, 
-      /* oncreate */ js.Function2[/* err */ nodeLib.Error, /* socket */ nodeLib.netMod.Socket, scala.Unit], 
-      nodeLib.netMod.Socket
-    ] = null,
+    createConnection: (/* options */ nodeLib.httpMod.ClientRequestArgs, /* oncreate */ js.Function2[/* err */ nodeLib.Error, /* socket */ nodeLib.netMod.Socket, scala.Unit]) => nodeLib.netMod.Socket = null,
     crl: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
     decompress: js.UndefOr[scala.Boolean] = js.undefined,
     defaultPort: scala.Double | java.lang.String = null,
@@ -57,7 +53,7 @@ object DownloadOptions {
     extract: js.UndefOr[scala.Boolean] = js.undefined,
     family: scala.Int | scala.Double = null,
     filename: java.lang.String = null,
-    filter: js.Function1[/* file */ decompressLib.decompressMod.decompressNs.File, scala.Boolean] = null,
+    filter: /* file */ decompressLib.decompressMod.decompressNs.File => scala.Boolean = null,
     followRedirect: js.UndefOr[scala.Boolean] = js.undefined,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     honorCipherOrder: js.UndefOr[scala.Boolean] = js.undefined,
@@ -69,10 +65,7 @@ object DownloadOptions {
     hostname: java.lang.String = null,
     key: java.lang.String | nodeLib.Buffer | (js.Array[nodeLib.Buffer | js.Object]) = null,
     localAddress: java.lang.String = null,
-    map: js.Function1[
-      /* file */ decompressLib.decompressMod.decompressNs.File, 
-      decompressLib.decompressMod.decompressNs.File
-    ] = null,
+    map: /* file */ decompressLib.decompressMod.decompressNs.File => decompressLib.decompressMod.decompressNs.File = null,
     maxVersion: nodeLib.tlsMod.SecureVersion = null,
     method: java.lang.String = null,
     minVersion: nodeLib.tlsMod.SecureVersion = null,
@@ -113,7 +106,7 @@ object DownloadOptions {
     if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)
     if (clientCertEngine != null) __obj.updateDynamic("clientCertEngine")(clientCertEngine)
     if (cookieJar != null) __obj.updateDynamic("cookieJar")(cookieJar)
-    if (createConnection != null) __obj.updateDynamic("createConnection")(createConnection)
+    if (createConnection != null) __obj.updateDynamic("createConnection")(js.Any.fromFunction2(createConnection))
     if (crl != null) __obj.updateDynamic("crl")(crl.asInstanceOf[js.Any])
     if (!js.isUndefined(decompress)) __obj.updateDynamic("decompress")(decompress)
     if (defaultPort != null) __obj.updateDynamic("defaultPort")(defaultPort.asInstanceOf[js.Any])
@@ -123,7 +116,7 @@ object DownloadOptions {
     if (!js.isUndefined(extract)) __obj.updateDynamic("extract")(extract)
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (!js.isUndefined(followRedirect)) __obj.updateDynamic("followRedirect")(followRedirect)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder)
@@ -132,7 +125,7 @@ object DownloadOptions {
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
-    if (map != null) __obj.updateDynamic("map")(map)
+    if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
     if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion)
     if (method != null) __obj.updateDynamic("method")(method)
     if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion)

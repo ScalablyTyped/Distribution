@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.Name")
 @js.native
 class Name protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var Category: java.lang.String = js.native
   var CategoryLocal: java.lang.String = js.native
   var Comment: java.lang.String = js.native

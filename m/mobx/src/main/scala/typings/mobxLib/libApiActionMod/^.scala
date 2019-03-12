@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("mobx/lib/api/action", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var action: mobxLib.libApiActionMod.IActionFactory = js.native
+  var action: IActionFactory = js.native
   def defineBoundAction(target: js.Any, propertyName: java.lang.String, fn: js.Function): scala.Unit = js.native
   def isAction(thing: js.Any): scala.Boolean = js.native
   def runInAction[T](block: js.Function0[T]): T = js.native

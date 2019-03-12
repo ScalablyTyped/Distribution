@@ -11,8 +11,8 @@ trait IHashAlgorithmProviderStatics extends js.Object {
 
 object IHashAlgorithmProviderStatics {
   @scala.inline
-  def apply(openAlgorithm: js.Function1[java.lang.String, HashAlgorithmProvider]): IHashAlgorithmProviderStatics = {
-    val __obj = js.Dynamic.literal(openAlgorithm = openAlgorithm)
+  def apply(openAlgorithm: java.lang.String => HashAlgorithmProvider): IHashAlgorithmProviderStatics = {
+    val __obj = js.Dynamic.literal(openAlgorithm = js.Any.fromFunction1(openAlgorithm))
   
     __obj.asInstanceOf[IHashAlgorithmProviderStatics]
   }

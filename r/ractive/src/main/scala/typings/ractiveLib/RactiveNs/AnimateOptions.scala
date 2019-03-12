@@ -18,16 +18,16 @@ trait AnimateOptions extends js.Object {
 object AnimateOptions {
   @scala.inline
   def apply(
-    complate: js.Function2[/* t */ scala.Double, /* value */ scala.Double, scala.Unit] = null,
+    complate: (/* t */ scala.Double, /* value */ scala.Double) => scala.Unit = null,
     duration: scala.Int | scala.Double = null,
     easing: java.lang.String | js.Function = null,
-    step: js.Function2[/* t */ scala.Double, /* value */ scala.Double, scala.Unit] = null
+    step: (/* t */ scala.Double, /* value */ scala.Double) => scala.Unit = null
   ): AnimateOptions = {
     val __obj = js.Dynamic.literal()
-    if (complate != null) __obj.updateDynamic("complate")(complate)
+    if (complate != null) __obj.updateDynamic("complate")(js.Any.fromFunction2(complate))
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step)
+    if (step != null) __obj.updateDynamic("step")(js.Any.fromFunction2(step))
     __obj.asInstanceOf[AnimateOptions]
   }
 }

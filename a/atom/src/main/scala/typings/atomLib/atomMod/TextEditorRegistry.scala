@@ -41,17 +41,17 @@ trait TextEditorRegistry extends js.Object {
 object TextEditorRegistry {
   @scala.inline
   def apply(
-    add: js.Function1[TextEditor, Disposable],
-    clear: js.Function0[scala.Unit],
-    clearGrammarOverride: js.Function1[TextEditor, scala.Unit],
-    getGrammarOverride: js.Function1[TextEditor, java.lang.String | scala.Null],
-    maintainConfig: js.Function1[TextEditor, Disposable],
-    maintainGrammar: js.Function1[TextEditor, Disposable],
-    observe: js.Function1[js.Function1[/* editor */ TextEditor, scala.Unit], Disposable],
-    remove: js.Function1[TextEditor, scala.Boolean],
-    setGrammarOverride: js.Function2[TextEditor, java.lang.String, scala.Unit]
+    add: TextEditor => Disposable,
+    clear: () => scala.Unit,
+    clearGrammarOverride: TextEditor => scala.Unit,
+    getGrammarOverride: TextEditor => java.lang.String | scala.Null,
+    maintainConfig: TextEditor => Disposable,
+    maintainGrammar: TextEditor => Disposable,
+    observe: js.Function1[/* editor */ TextEditor, scala.Unit] => Disposable,
+    remove: TextEditor => scala.Boolean,
+    setGrammarOverride: (TextEditor, java.lang.String) => scala.Unit
   ): TextEditorRegistry = {
-    val __obj = js.Dynamic.literal(add = add, clear = clear, clearGrammarOverride = clearGrammarOverride, getGrammarOverride = getGrammarOverride, maintainConfig = maintainConfig, maintainGrammar = maintainGrammar, observe = observe, remove = remove, setGrammarOverride = setGrammarOverride)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), clear = js.Any.fromFunction0(clear), clearGrammarOverride = js.Any.fromFunction1(clearGrammarOverride), getGrammarOverride = js.Any.fromFunction1(getGrammarOverride), maintainConfig = js.Any.fromFunction1(maintainConfig), maintainGrammar = js.Any.fromFunction1(maintainGrammar), observe = js.Any.fromFunction1(observe), remove = js.Any.fromFunction1(remove), setGrammarOverride = js.Any.fromFunction2(setGrammarOverride))
   
     __obj.asInstanceOf[TextEditorRegistry]
   }

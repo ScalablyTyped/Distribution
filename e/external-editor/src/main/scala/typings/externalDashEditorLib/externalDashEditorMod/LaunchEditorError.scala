@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class LaunchEditorError protected ()
   extends externalDashEditorLib.mainErrorsLaunchEditorErrorMod.LaunchEditorError {
-  def this(originalError: nodeLib.Error) = this()
+  def this(originalError: stdLib.Error) = this()
 }
 

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait XDictionary1
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNamed {
   val Count: scala.Double
-  val DictionaryType: DictionaryType
-  val Entries: activexDashInteropLib.SafeArray[XDictionaryEntry]
+  val DictionaryType: activexDashLibreofficeLib.comNs.sunNs.starNs.linguistic2Ns.DictionaryType
+  val Entries: stdLib.SafeArray[XDictionaryEntry]
   var Language: scala.Double
   def add(aWord: java.lang.String, bIsNegative: scala.Boolean, aRplcText: java.lang.String): scala.Boolean
   def addDictionaryEventListener(xListener: XDictionaryEventListener): scala.Boolean
@@ -18,7 +18,7 @@ trait XDictionary1
   def clear(): scala.Unit
   def getCount(): scala.Double
   def getDictionaryType(): DictionaryType
-  def getEntries(): activexDashInteropLib.SafeArray[XDictionaryEntry]
+  def getEntries(): stdLib.SafeArray[XDictionaryEntry]
   def getEntry(aWord: java.lang.String): XDictionaryEntry
   def getLanguage(): scala.Double
   def isActive(): scala.Boolean
@@ -34,31 +34,31 @@ object XDictionary1 {
   def apply(
     Count: scala.Double,
     DictionaryType: DictionaryType,
-    Entries: activexDashInteropLib.SafeArray[XDictionaryEntry],
+    Entries: stdLib.SafeArray[XDictionaryEntry],
     Language: scala.Double,
     Name: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    add: js.Function3[java.lang.String, scala.Boolean, java.lang.String, scala.Boolean],
-    addDictionaryEventListener: js.Function1[XDictionaryEventListener, scala.Boolean],
-    addEntry: js.Function1[XDictionaryEntry, scala.Boolean],
-    clear: js.Function0[scala.Unit],
-    getCount: js.Function0[scala.Double],
-    getDictionaryType: js.Function0[DictionaryType],
-    getEntries: js.Function0[activexDashInteropLib.SafeArray[XDictionaryEntry]],
-    getEntry: js.Function1[java.lang.String, XDictionaryEntry],
-    getLanguage: js.Function0[scala.Double],
-    getName: js.Function0[java.lang.String],
-    isActive: js.Function0[scala.Boolean],
-    isFull: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    remove: js.Function1[java.lang.String, scala.Boolean],
-    removeDictionaryEventListener: js.Function1[XDictionaryEventListener, scala.Boolean],
-    setActive: js.Function1[scala.Boolean, scala.Unit],
-    setLanguage: js.Function1[scala.Double, scala.Unit],
-    setName: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    add: (java.lang.String, scala.Boolean, java.lang.String) => scala.Boolean,
+    addDictionaryEventListener: XDictionaryEventListener => scala.Boolean,
+    addEntry: XDictionaryEntry => scala.Boolean,
+    clear: () => scala.Unit,
+    getCount: () => scala.Double,
+    getDictionaryType: () => DictionaryType,
+    getEntries: () => stdLib.SafeArray[XDictionaryEntry],
+    getEntry: java.lang.String => XDictionaryEntry,
+    getLanguage: () => scala.Double,
+    getName: () => java.lang.String,
+    isActive: () => scala.Boolean,
+    isFull: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    remove: java.lang.String => scala.Boolean,
+    removeDictionaryEventListener: XDictionaryEventListener => scala.Boolean,
+    setActive: scala.Boolean => scala.Unit,
+    setLanguage: scala.Double => scala.Unit,
+    setName: java.lang.String => scala.Unit
   ): XDictionary1 = {
-    val __obj = js.Dynamic.literal(Count = Count, DictionaryType = DictionaryType, Entries = Entries, Language = Language, Name = Name, acquire = acquire, add = add, addDictionaryEventListener = addDictionaryEventListener, addEntry = addEntry, clear = clear, getCount = getCount, getDictionaryType = getDictionaryType, getEntries = getEntries, getEntry = getEntry, getLanguage = getLanguage, getName = getName, isActive = isActive, isFull = isFull, queryInterface = queryInterface, release = release, remove = remove, removeDictionaryEventListener = removeDictionaryEventListener, setActive = setActive, setLanguage = setLanguage, setName = setName)
+    val __obj = js.Dynamic.literal(Count = Count, DictionaryType = DictionaryType, Entries = Entries, Language = Language, Name = Name, acquire = js.Any.fromFunction0(acquire), add = js.Any.fromFunction3(add), addDictionaryEventListener = js.Any.fromFunction1(addDictionaryEventListener), addEntry = js.Any.fromFunction1(addEntry), clear = js.Any.fromFunction0(clear), getCount = js.Any.fromFunction0(getCount), getDictionaryType = js.Any.fromFunction0(getDictionaryType), getEntries = js.Any.fromFunction0(getEntries), getEntry = js.Any.fromFunction1(getEntry), getLanguage = js.Any.fromFunction0(getLanguage), getName = js.Any.fromFunction0(getName), isActive = js.Any.fromFunction0(isActive), isFull = js.Any.fromFunction0(isFull), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), remove = js.Any.fromFunction1(remove), removeDictionaryEventListener = js.Any.fromFunction1(removeDictionaryEventListener), setActive = js.Any.fromFunction1(setActive), setLanguage = js.Any.fromFunction1(setLanguage), setName = js.Any.fromFunction1(setName))
   
     __obj.asInstanceOf[XDictionary1]
   }

@@ -8,12 +8,7 @@ import scala.scalajs.js.annotation._
 package object ioDashTsMod {
   type Any = Type[js.Any, js.Any, js.Any]
   type AnyC = AnyType
-  type ArrayC[C /* <: Mixed */] = ArrayType[
-    C, 
-    fpDashTsLib.libArrayMod.Global.Array[TypeOf[C]], 
-    fpDashTsLib.libArrayMod.Global.Array[OutputOf[C]], 
-    js.Any
-  ]
+  type ArrayC[C /* <: Mixed */] = ArrayType[C, js.Array[TypeOf[C]], js.Array[OutputOf[C]], js.Any]
   type BooleanC = BooleanType
   type BrandC[C /* <: Any */, B] = RefinementType[C, Branded[TypeOf[C], B], OutputOf[C], InputOf[C]]
   type Branded[A, B] = A with Brand[B]
@@ -23,12 +18,12 @@ package object ioDashTsMod {
   type Context = js.Array[ContextEntry]
   type Decode[I, A] = js.Function1[/* i */ I, Validation[A]]
   type Encode[A, O] = js.Function1[/* a */ A, O]
-  type Errors = fpDashTsLib.libArrayMod.Global.Array[ValidationError]
+  type Errors = js.Array[ValidationError]
   type Exact[T, X /* <: T */] = T with ioDashTsLib.ioDashTsLibStrings.Exact with js.Any
   type ExactC[C /* <: HasProps */] = ExactType[C, TypeOf[C], OutputOf[C], InputOf[C]]
   type FunctionC = FunctionType
   type HasProps = _HasProps | (InterfaceType[js.Any, js.Any, js.Any, js.Any]) | (StrictType[js.Any, js.Any, js.Any, js.Any]) | (PartialType[js.Any, js.Any, js.Any, js.Any])
-  type Index = fpDashTsLib.libArrayMod.Global.Array[ioDashTsLib.IndexItem]
+  type Index = js.Array[ioDashTsLib.IndexItem]
   type IndexRecord = stdLib.Record[java.lang.String, Index]
   type InputOf[C /* <: Any */] = /* import warning: ImportType.apply Failed type conversion: C['_I'] */ js.Any
   type Int = Branded[scala.Double, IntBrand]

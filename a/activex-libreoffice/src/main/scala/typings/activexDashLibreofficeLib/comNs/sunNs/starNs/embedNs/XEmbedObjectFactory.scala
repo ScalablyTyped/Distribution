@@ -44,21 +44,12 @@ trait XEmbedObjectFactory
 object XEmbedObjectFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createInstanceUserInit: js.Function7[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      java.lang.String, 
-      XStorage, 
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createInstanceUserInit: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], java.lang.String, XStorage, java.lang.String, scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XEmbedObjectFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createInstanceUserInit = createInstanceUserInit, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createInstanceUserInit = js.Any.fromFunction7(createInstanceUserInit), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XEmbedObjectFactory]
   }

@@ -19,11 +19,8 @@ trait NewWindow extends js.Object {
 
 object NewWindow {
   @scala.inline
-  def apply(
-    attach: js.Function1[chromeDashAppsLib.HTMLWebViewElement, scala.Unit],
-    discard: js.Function0[scala.Unit]
-  ): NewWindow = {
-    val __obj = js.Dynamic.literal(attach = attach, discard = discard)
+  def apply(attach: chromeDashAppsLib.HTMLWebViewElement => scala.Unit, discard: () => scala.Unit): NewWindow = {
+    val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach), discard = js.Any.fromFunction0(discard))
   
     __obj.asInstanceOf[NewWindow]
   }

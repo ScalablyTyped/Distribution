@@ -38,23 +38,11 @@ trait Anon_AfterCellEdit[TEntity] extends js.Object {
 object Anon_AfterCellEdit {
   @scala.inline
   def apply[TEntity](
-    afterCellEdit: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      uiDashGridLib.uiDashGridMod.uiGridNs.editNs.afterCellEditHandler[TEntity], 
-      scala.Unit
-    ],
-    beginCellEdit: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      uiDashGridLib.uiDashGridMod.uiGridNs.editNs.beginCellEditHandler[TEntity], 
-      scala.Unit
-    ],
-    cancelCellEdit: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      uiDashGridLib.uiDashGridMod.uiGridNs.editNs.cancelCellEditHandler[TEntity], 
-      scala.Unit
-    ]
+    afterCellEdit: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.editNs.afterCellEditHandler[TEntity]) => scala.Unit,
+    beginCellEdit: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.editNs.beginCellEditHandler[TEntity]) => scala.Unit,
+    cancelCellEdit: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.editNs.cancelCellEditHandler[TEntity]) => scala.Unit
   ): Anon_AfterCellEdit[TEntity] = {
-    val __obj = js.Dynamic.literal(afterCellEdit = afterCellEdit, beginCellEdit = beginCellEdit, cancelCellEdit = cancelCellEdit)
+    val __obj = js.Dynamic.literal(afterCellEdit = js.Any.fromFunction2(afterCellEdit), beginCellEdit = js.Any.fromFunction2(beginCellEdit), cancelCellEdit = js.Any.fromFunction2(cancelCellEdit))
   
     __obj.asInstanceOf[Anon_AfterCellEdit[TEntity]]
   }

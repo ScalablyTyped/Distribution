@@ -12,8 +12,8 @@ trait PullRequestRef extends js.Object {
 
 object PullRequestRef {
   @scala.inline
-  def apply(loadAsync: js.Function0[js.Promise[PullRequest | scala.Null]], number: scala.Double): PullRequestRef = {
-    val __obj = js.Dynamic.literal(loadAsync = loadAsync, number = number)
+  def apply(loadAsync: () => js.Promise[PullRequest | scala.Null], number: scala.Double): PullRequestRef = {
+    val __obj = js.Dynamic.literal(loadAsync = js.Any.fromFunction0(loadAsync), number = number)
   
     __obj.asInstanceOf[PullRequestRef]
   }

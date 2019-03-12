@@ -15,12 +15,12 @@ object CopyDirOptions {
   @scala.inline
   def apply(
     filter: Filter = null,
-    isUseHardLink: js.Function1[/* file */ java.lang.String, scala.Boolean] = null,
+    isUseHardLink: /* file */ java.lang.String => scala.Boolean = null,
     transformer: FileTransformer = null
   ): CopyDirOptions = {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (isUseHardLink != null) __obj.updateDynamic("isUseHardLink")(isUseHardLink)
+    if (isUseHardLink != null) __obj.updateDynamic("isUseHardLink")(js.Any.fromFunction1(isUseHardLink))
     if (transformer != null) __obj.updateDynamic("transformer")(transformer)
     __obj.asInstanceOf[CopyDirOptions]
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.BusinessCardView")
 @js.native
 class BusinessCardView protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   var CardSize: scala.Double = js.native
   val Class: OlObjectClass = js.native
   var Filter: java.lang.String = js.native
@@ -27,7 +27,7 @@ class BusinessCardView protected () extends js.Object {
   def Apply(): scala.Unit = js.native
   def Copy(Name: java.lang.String, SaveOption: OlViewSaveOption): View = js.native
   def Delete(): scala.Unit = js.native
-  def GoToDate(Date: activexDashInteropLib.VarDate): scala.Unit = js.native
+  def GoToDate(Date: stdLib.VarDate): scala.Unit = js.native
   def Reset(): scala.Unit = js.native
   def Save(): scala.Unit = js.native
 }

@@ -28,7 +28,7 @@ object AttachmentStream {
     contentDisposition: java.lang.String,
     contentType: java.lang.String,
     headers: Headers,
-    release: js.Function0[scala.Unit],
+    release: () => scala.Unit,
     size: scala.Double,
     `type`: mailparserLib.mailparserLibStrings.attachment,
     cid: java.lang.String = null,
@@ -36,7 +36,7 @@ object AttachmentStream {
     filename: java.lang.String = null,
     related: js.UndefOr[scala.Boolean] = js.undefined
   ): AttachmentStream = {
-    val __obj = js.Dynamic.literal(checksum = checksum, content = content, contentDisposition = contentDisposition, contentType = contentType, headers = headers, release = release, size = size)
+    val __obj = js.Dynamic.literal(checksum = checksum, content = content, contentDisposition = contentDisposition, contentType = contentType, headers = headers, release = js.Any.fromFunction0(release), size = size)
     __obj.updateDynamic("type")(`type`)
     if (cid != null) __obj.updateDynamic("cid")(cid)
     if (contentId != null) __obj.updateDynamic("contentId")(contentId)

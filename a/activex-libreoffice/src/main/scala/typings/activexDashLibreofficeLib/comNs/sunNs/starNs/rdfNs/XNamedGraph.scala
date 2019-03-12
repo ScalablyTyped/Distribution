@@ -89,18 +89,13 @@ object XNamedGraph {
     Name: XURI,
     Namespace: java.lang.String,
     StringValue: java.lang.String,
-    addStatement: js.Function3[XResource, XURI, XNode, scala.Unit],
-    clear: js.Function0[scala.Unit],
-    getName: js.Function0[XURI],
-    getStatements: js.Function3[
-      XResource, 
-      XURI, 
-      XNode, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration
-    ],
-    removeStatements: js.Function3[XResource, XURI, XNode, scala.Unit]
+    addStatement: (XResource, XURI, XNode) => scala.Unit,
+    clear: () => scala.Unit,
+    getName: () => XURI,
+    getStatements: (XResource, XURI, XNode) => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration,
+    removeStatements: (XResource, XURI, XNode) => scala.Unit
   ): XNamedGraph = {
-    val __obj = js.Dynamic.literal(LocalName = LocalName, Name = Name, Namespace = Namespace, StringValue = StringValue, addStatement = addStatement, clear = clear, getName = getName, getStatements = getStatements, removeStatements = removeStatements)
+    val __obj = js.Dynamic.literal(LocalName = LocalName, Name = Name, Namespace = Namespace, StringValue = StringValue, addStatement = js.Any.fromFunction3(addStatement), clear = js.Any.fromFunction0(clear), getName = js.Any.fromFunction0(getName), getStatements = js.Any.fromFunction3(getStatements), removeStatements = js.Any.fromFunction3(removeStatements))
   
     __obj.asInstanceOf[XNamedGraph]
   }

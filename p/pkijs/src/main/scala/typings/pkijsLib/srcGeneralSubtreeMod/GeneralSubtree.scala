@@ -18,13 +18,13 @@ object GeneralSubtree {
   @scala.inline
   def apply(
     base: pkijsLib.srcGeneralNameMod.default,
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     minimum: scala.Double | asn1jsLib.asn1jsMod.Integer,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     maximum: scala.Double | asn1jsLib.asn1jsMod.Integer = null
   ): GeneralSubtree = {
-    val __obj = js.Dynamic.literal(base = base, fromSchema = fromSchema, minimum = minimum.asInstanceOf[js.Any], toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(base = base, fromSchema = js.Any.fromFunction1(fromSchema), minimum = minimum.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
     if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneralSubtree]
   }

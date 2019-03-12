@@ -22,13 +22,13 @@ object CommunityConnector {
     AggregationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AggregationType */ js.Any,
     AuthType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AuthType */ js.Any,
     FieldType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FieldType */ js.Any,
-    getConfig: js.Function0[Config],
-    getFields: js.Function0[Fields],
-    newAuthTypeResponse: js.Function0[GetAuthTypeResponse],
-    newDebugError: js.Function0[DebugError],
-    newUserError: js.Function0[UserError]
+    getConfig: () => Config,
+    getFields: () => Fields,
+    newAuthTypeResponse: () => GetAuthTypeResponse,
+    newDebugError: () => DebugError,
+    newUserError: () => UserError
   ): CommunityConnector = {
-    val __obj = js.Dynamic.literal(AggregationType = AggregationType, AuthType = AuthType, FieldType = FieldType, getConfig = getConfig, getFields = getFields, newAuthTypeResponse = newAuthTypeResponse, newDebugError = newDebugError, newUserError = newUserError)
+    val __obj = js.Dynamic.literal(AggregationType = AggregationType, AuthType = AuthType, FieldType = FieldType, getConfig = js.Any.fromFunction0(getConfig), getFields = js.Any.fromFunction0(getFields), newAuthTypeResponse = js.Any.fromFunction0(newAuthTypeResponse), newDebugError = js.Any.fromFunction0(newDebugError), newUserError = js.Any.fromFunction0(newUserError))
   
     __obj.asInstanceOf[CommunityConnector]
   }

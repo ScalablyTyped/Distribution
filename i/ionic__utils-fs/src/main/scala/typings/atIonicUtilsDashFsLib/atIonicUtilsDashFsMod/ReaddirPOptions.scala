@@ -17,20 +17,20 @@ trait ReaddirPOptions extends js.Object {
     *
     * If excluded, the function will throw an error when first encountered.
     */
-  val onError: js.UndefOr[js.Function1[/* err */ nodeLib.Error, scala.Unit]] = js.undefined
+  val onError: js.UndefOr[js.Function1[/* err */ stdLib.Error, scala.Unit]] = js.undefined
   val walkerOptions: js.UndefOr[WalkerOptions] = js.undefined
 }
 
 object ReaddirPOptions {
   @scala.inline
   def apply(
-    filter: js.Function1[/* item */ WalkerItem, scala.Boolean] = null,
-    onError: js.Function1[/* err */ nodeLib.Error, scala.Unit] = null,
+    filter: /* item */ WalkerItem => scala.Boolean = null,
+    onError: /* err */ stdLib.Error => scala.Unit = null,
     walkerOptions: WalkerOptions = null
   ): ReaddirPOptions = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (walkerOptions != null) __obj.updateDynamic("walkerOptions")(walkerOptions)
     __obj.asInstanceOf[ReaddirPOptions]
   }

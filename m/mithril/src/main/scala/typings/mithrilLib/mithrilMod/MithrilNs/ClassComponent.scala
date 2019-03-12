@@ -42,25 +42,21 @@ trait ClassComponent[A] extends Lifecycle[A, ClassComponent[A]] {
 object ClassComponent {
   @scala.inline
   def apply[A](
-    view: js.Function1[Vnode[A, ClassComponent[A]], Children | scala.Null | scala.Unit],
-    onbeforeremove: js.Function1[/* vnode */ VnodeDOM[A, ClassComponent[A]], js.Promise[_] | scala.Unit] = null,
-    onbeforeupdate: js.Function2[
-      /* vnode */ Vnode[A, ClassComponent[A]], 
-      /* old */ VnodeDOM[A, ClassComponent[A]], 
-      scala.Boolean | scala.Unit
-    ] = null,
-    oncreate: js.Function1[/* vnode */ VnodeDOM[A, ClassComponent[A]], _] = null,
-    oninit: js.Function1[/* vnode */ Vnode[A, ClassComponent[A]], _] = null,
-    onremove: js.Function1[/* vnode */ VnodeDOM[A, ClassComponent[A]], _] = null,
-    onupdate: js.Function1[/* vnode */ VnodeDOM[A, ClassComponent[A]], _] = null
+    view: Vnode[A, ClassComponent[A]] => Children | scala.Null | scala.Unit,
+    onbeforeremove: /* vnode */ VnodeDOM[A, ClassComponent[A]] => js.Promise[_] | scala.Unit = null,
+    onbeforeupdate: (/* vnode */ Vnode[A, ClassComponent[A]], /* old */ VnodeDOM[A, ClassComponent[A]]) => scala.Boolean | scala.Unit = null,
+    oncreate: /* vnode */ VnodeDOM[A, ClassComponent[A]] => _ = null,
+    oninit: /* vnode */ Vnode[A, ClassComponent[A]] => _ = null,
+    onremove: /* vnode */ VnodeDOM[A, ClassComponent[A]] => _ = null,
+    onupdate: /* vnode */ VnodeDOM[A, ClassComponent[A]] => _ = null
   ): ClassComponent[A] = {
-    val __obj = js.Dynamic.literal(view = view)
-    if (onbeforeremove != null) __obj.updateDynamic("onbeforeremove")(onbeforeremove)
-    if (onbeforeupdate != null) __obj.updateDynamic("onbeforeupdate")(onbeforeupdate)
-    if (oncreate != null) __obj.updateDynamic("oncreate")(oncreate)
-    if (oninit != null) __obj.updateDynamic("oninit")(oninit)
-    if (onremove != null) __obj.updateDynamic("onremove")(onremove)
-    if (onupdate != null) __obj.updateDynamic("onupdate")(onupdate)
+    val __obj = js.Dynamic.literal(view = js.Any.fromFunction1(view))
+    if (onbeforeremove != null) __obj.updateDynamic("onbeforeremove")(js.Any.fromFunction1(onbeforeremove))
+    if (onbeforeupdate != null) __obj.updateDynamic("onbeforeupdate")(js.Any.fromFunction2(onbeforeupdate))
+    if (oncreate != null) __obj.updateDynamic("oncreate")(js.Any.fromFunction1(oncreate))
+    if (oninit != null) __obj.updateDynamic("oninit")(js.Any.fromFunction1(oninit))
+    if (onremove != null) __obj.updateDynamic("onremove")(js.Any.fromFunction1(onremove))
+    if (onupdate != null) __obj.updateDynamic("onupdate")(js.Any.fromFunction1(onupdate))
     __obj.asInstanceOf[ClassComponent[A]]
   }
 }

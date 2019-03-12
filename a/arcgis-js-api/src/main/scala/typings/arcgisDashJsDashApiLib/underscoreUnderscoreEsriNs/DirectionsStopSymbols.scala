@@ -43,15 +43,15 @@ object DirectionsStopSymbols {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     first: Symbol = null,
     last: Symbol = null,
     middle: Symbol = null,
     unlocated: Symbol = null,
     waypoint: Symbol = null
   ): DirectionsStopSymbols = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (first != null) __obj.updateDynamic("first")(first)
     if (last != null) __obj.updateDynamic("last")(last)
     if (middle != null) __obj.updateDynamic("middle")(middle)

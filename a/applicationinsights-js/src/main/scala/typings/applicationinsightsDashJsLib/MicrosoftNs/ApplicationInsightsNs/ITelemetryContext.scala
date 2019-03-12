@@ -52,7 +52,7 @@ trait ITelemetryContext extends js.Object {
 object ITelemetryContext {
   @scala.inline
   def apply(
-    addTelemetryInitializer: js.Function1[js.Function1[/* envelope */ IEnvelope, scala.Boolean | scala.Unit], js.Any],
+    addTelemetryInitializer: js.Function1[/* envelope */ IEnvelope, scala.Boolean | scala.Unit] => js.Any,
     application: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.ContextNs.IApplication,
     device: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.ContextNs.IDevice,
     internal: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.ContextNs.IInternal,
@@ -60,10 +60,10 @@ object ITelemetryContext {
     operation: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.ContextNs.IOperation,
     sample: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.ContextNs.ISample,
     session: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.ContextNs.ISession,
-    track: js.Function1[IEnvelope, js.Any],
+    track: IEnvelope => js.Any,
     user: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.ContextNs.IUser
   ): ITelemetryContext = {
-    val __obj = js.Dynamic.literal(addTelemetryInitializer = addTelemetryInitializer, application = application, device = device, internal = internal, location = location, operation = operation, sample = sample, session = session, track = track, user = user)
+    val __obj = js.Dynamic.literal(addTelemetryInitializer = js.Any.fromFunction1(addTelemetryInitializer), application = application, device = device, internal = internal, location = location, operation = operation, sample = sample, session = session, track = js.Any.fromFunction1(track), user = user)
   
     __obj.asInstanceOf[ITelemetryContext]
   }

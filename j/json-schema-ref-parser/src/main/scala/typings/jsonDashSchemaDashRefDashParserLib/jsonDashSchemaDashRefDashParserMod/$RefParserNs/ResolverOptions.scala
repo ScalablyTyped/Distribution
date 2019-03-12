@@ -25,7 +25,7 @@ trait ResolverOptions extends js.Object {
   def read(file: FileInfo): java.lang.String | nodeLib.Buffer | (js.Promise[java.lang.String | nodeLib.Buffer]) = js.native
   def read(
     file: FileInfo,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* data */ java.lang.String | scala.Null, _]
+    callback: js.Function2[/* error */ stdLib.Error | scala.Null, /* data */ java.lang.String | scala.Null, _]
   ): java.lang.String | nodeLib.Buffer | (js.Promise[java.lang.String | nodeLib.Buffer]) = js.native
 }
 

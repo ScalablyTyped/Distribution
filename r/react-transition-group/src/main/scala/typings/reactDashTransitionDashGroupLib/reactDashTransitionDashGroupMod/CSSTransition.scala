@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-transition-group", "CSSTransition")
 @js.native
 class CSSTransition ()
-  extends reactDashTransitionDashGroupLib.csstransitionMod.namespaced
+  extends reactDashTransitionDashGroupLib.cSSTransitionMod.namespaced
 

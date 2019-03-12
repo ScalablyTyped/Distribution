@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PolymerStatic extends js.Object {
-  var ArraySplice: ArraySplice = js.native
-  var Base: Base = js.native
+  var ArraySplice: polymerLib.polymerMod.Global.polymerNs.ArraySplice = js.native
+  var Base: polymerLib.polymerMod.Global.polymerNs.Base = js.native
   /** @deprecated */
-  var ImportStatus: ImportStatus = js.native
-  var RenderStatus: RenderStatus = js.native
-  var Settings: Settings = js.native
-  var Templatizer: Templatizer = js.native
+  var ImportStatus: polymerLib.polymerMod.Global.polymerNs.ImportStatus = js.native
+  var RenderStatus: polymerLib.polymerMod.Global.polymerNs.RenderStatus = js.native
+  var Settings: polymerLib.polymerMod.Global.polymerNs.Settings = js.native
+  var Templatizer: polymerLib.polymerMod.Global.polymerNs.Templatizer = js.native
   @JSName("dom")
   var dom_Original: DomApiStatic = js.native
   def apply(prototype: polymerLib.Anon_Base): js.Any = js.native

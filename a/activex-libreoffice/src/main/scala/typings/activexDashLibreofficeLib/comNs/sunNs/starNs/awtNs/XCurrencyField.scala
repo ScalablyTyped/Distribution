@@ -66,27 +66,27 @@ object XCurrencyField {
     Min: scala.Double,
     SpinSize: scala.Double,
     Value: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getDecimalDigits: js.Function0[scala.Double],
-    getFirst: js.Function0[scala.Double],
-    getLast: js.Function0[scala.Double],
-    getMax: js.Function0[scala.Double],
-    getMin: js.Function0[scala.Double],
-    getSpinSize: js.Function0[scala.Double],
-    getValue: js.Function0[scala.Double],
-    isStrictFormat: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setDecimalDigits: js.Function1[scala.Double, scala.Unit],
-    setFirst: js.Function1[scala.Double, scala.Unit],
-    setLast: js.Function1[scala.Double, scala.Unit],
-    setMax: js.Function1[scala.Double, scala.Unit],
-    setMin: js.Function1[scala.Double, scala.Unit],
-    setSpinSize: js.Function1[scala.Double, scala.Unit],
-    setStrictFormat: js.Function1[scala.Boolean, scala.Unit],
-    setValue: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    getDecimalDigits: () => scala.Double,
+    getFirst: () => scala.Double,
+    getLast: () => scala.Double,
+    getMax: () => scala.Double,
+    getMin: () => scala.Double,
+    getSpinSize: () => scala.Double,
+    getValue: () => scala.Double,
+    isStrictFormat: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setDecimalDigits: scala.Double => scala.Unit,
+    setFirst: scala.Double => scala.Unit,
+    setLast: scala.Double => scala.Unit,
+    setMax: scala.Double => scala.Unit,
+    setMin: scala.Double => scala.Unit,
+    setSpinSize: scala.Double => scala.Unit,
+    setStrictFormat: scala.Boolean => scala.Unit,
+    setValue: scala.Double => scala.Unit
   ): XCurrencyField = {
-    val __obj = js.Dynamic.literal(DecimalDigits = DecimalDigits, First = First, Last = Last, Max = Max, Min = Min, SpinSize = SpinSize, Value = Value, acquire = acquire, getDecimalDigits = getDecimalDigits, getFirst = getFirst, getLast = getLast, getMax = getMax, getMin = getMin, getSpinSize = getSpinSize, getValue = getValue, isStrictFormat = isStrictFormat, queryInterface = queryInterface, release = release, setDecimalDigits = setDecimalDigits, setFirst = setFirst, setLast = setLast, setMax = setMax, setMin = setMin, setSpinSize = setSpinSize, setStrictFormat = setStrictFormat, setValue = setValue)
+    val __obj = js.Dynamic.literal(DecimalDigits = DecimalDigits, First = First, Last = Last, Max = Max, Min = Min, SpinSize = SpinSize, Value = Value, acquire = js.Any.fromFunction0(acquire), getDecimalDigits = js.Any.fromFunction0(getDecimalDigits), getFirst = js.Any.fromFunction0(getFirst), getLast = js.Any.fromFunction0(getLast), getMax = js.Any.fromFunction0(getMax), getMin = js.Any.fromFunction0(getMin), getSpinSize = js.Any.fromFunction0(getSpinSize), getValue = js.Any.fromFunction0(getValue), isStrictFormat = js.Any.fromFunction0(isStrictFormat), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDecimalDigits = js.Any.fromFunction1(setDecimalDigits), setFirst = js.Any.fromFunction1(setFirst), setLast = js.Any.fromFunction1(setLast), setMax = js.Any.fromFunction1(setMax), setMin = js.Any.fromFunction1(setMin), setSpinSize = js.Any.fromFunction1(setSpinSize), setStrictFormat = js.Any.fromFunction1(setStrictFormat), setValue = js.Any.fromFunction1(setValue))
   
     __obj.asInstanceOf[XCurrencyField]
   }

@@ -38,7 +38,7 @@ trait XBlob
     * @returns a byte array containing up to `length` consecutive bytes from the ** BLOB ** value designated by this `Blob` object, starting with the byte at po
     * @throws SQLException if there is an error accessing the **BLOB** .
     */
-  def getBytes(pos: scala.Double, length: scala.Double): activexDashInteropLib.SafeArray[scala.Double]
+  def getBytes(pos: scala.Double, length: scala.Double): stdLib.SafeArray[scala.Double]
   /**
     * returns the number of bytes in the ** BLOB ** value designated by this `Blob` object.
     * @returns the length
@@ -69,20 +69,16 @@ object XBlob {
   @scala.inline
   def apply(
     BinaryStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
-    acquire: js.Function0[scala.Unit],
-    getBinaryStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
-    getBytes: js.Function2[scala.Double, scala.Double, activexDashInteropLib.SafeArray[scala.Double]],
-    length: js.Function0[scala.Double],
-    position: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      scala.Double, 
-      scala.Double
-    ],
-    positionOfBlob: js.Function2[XBlob, scala.Double, scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getBinaryStream: () => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    getBytes: (scala.Double, scala.Double) => stdLib.SafeArray[scala.Double],
+    length: () => scala.Double,
+    position: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Double) => scala.Double,
+    positionOfBlob: (XBlob, scala.Double) => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XBlob = {
-    val __obj = js.Dynamic.literal(BinaryStream = BinaryStream, acquire = acquire, getBinaryStream = getBinaryStream, getBytes = getBytes, length = length, position = position, positionOfBlob = positionOfBlob, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(BinaryStream = BinaryStream, acquire = js.Any.fromFunction0(acquire), getBinaryStream = js.Any.fromFunction0(getBinaryStream), getBytes = js.Any.fromFunction2(getBytes), length = js.Any.fromFunction0(length), position = js.Any.fromFunction2(position), positionOfBlob = js.Any.fromFunction2(positionOfBlob), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XBlob]
   }

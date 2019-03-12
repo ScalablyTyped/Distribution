@@ -13,10 +13,10 @@ trait Command extends js.Object {
 object Command {
   @scala.inline
   def apply(
-    setArgumentTransformer: js.Function2[java.lang.String, js.Function1[/* args */ js.Array[_], js.Array[_]], scala.Unit],
-    setReplyTransformer: js.Function2[java.lang.String, js.Function1[/* result */ js.Any, _], scala.Unit]
+    setArgumentTransformer: (java.lang.String, js.Function1[/* args */ js.Array[_], js.Array[_]]) => scala.Unit,
+    setReplyTransformer: (java.lang.String, js.Function1[/* result */ js.Any, _]) => scala.Unit
   ): Command = {
-    val __obj = js.Dynamic.literal(setArgumentTransformer = setArgumentTransformer, setReplyTransformer = setReplyTransformer)
+    val __obj = js.Dynamic.literal(setArgumentTransformer = js.Any.fromFunction2(setArgumentTransformer), setReplyTransformer = js.Any.fromFunction2(setReplyTransformer))
   
     __obj.asInstanceOf[Command]
   }

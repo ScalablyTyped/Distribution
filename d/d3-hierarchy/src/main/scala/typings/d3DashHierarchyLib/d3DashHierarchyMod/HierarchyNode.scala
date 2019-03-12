@@ -112,30 +112,27 @@ trait HierarchyNode[Datum] extends js.Object {
 object HierarchyNode {
   @scala.inline
   def apply[Datum](
-    ancestors: js.Function0[js.Array[HierarchyNode[Datum]]],
-    copy: js.Function0[HierarchyNode[Datum]],
-    count: js.Function0[HierarchyNode[Datum]],
+    ancestors: () => js.Array[HierarchyNode[Datum]],
+    copy: () => HierarchyNode[Datum],
+    count: () => HierarchyNode[Datum],
     data: Datum,
     depth: scala.Double,
-    descendants: js.Function0[js.Array[HierarchyNode[Datum]]],
-    each: js.Function1[js.Function1[HierarchyNode[Datum], scala.Unit], HierarchyNode[Datum]],
-    eachAfter: js.Function1[js.Function1[HierarchyNode[Datum], scala.Unit], HierarchyNode[Datum]],
-    eachBefore: js.Function1[js.Function1[HierarchyNode[Datum], scala.Unit], HierarchyNode[Datum]],
+    descendants: () => js.Array[HierarchyNode[Datum]],
+    each: js.Function1[HierarchyNode[Datum], scala.Unit] => HierarchyNode[Datum],
+    eachAfter: js.Function1[HierarchyNode[Datum], scala.Unit] => HierarchyNode[Datum],
+    eachBefore: js.Function1[HierarchyNode[Datum], scala.Unit] => HierarchyNode[Datum],
     height: scala.Double,
-    leaves: js.Function0[js.Array[HierarchyNode[Datum]]],
-    links: js.Function0[js.Array[HierarchyLink[Datum]]],
-    path: js.Function1[HierarchyNode[Datum], js.Array[HierarchyNode[Datum]]],
-    sort: js.Function1[
-      js.Function2[HierarchyNode[Datum], HierarchyNode[Datum], scala.Double], 
-      HierarchyNode[Datum]
-    ],
-    sum: js.Function1[js.Function1[/* d */ Datum, scala.Double], HierarchyNode[Datum]],
+    leaves: () => js.Array[HierarchyNode[Datum]],
+    links: () => js.Array[HierarchyLink[Datum]],
+    path: HierarchyNode[Datum] => js.Array[HierarchyNode[Datum]],
+    sort: js.Function2[HierarchyNode[Datum], HierarchyNode[Datum], scala.Double] => HierarchyNode[Datum],
+    sum: js.Function1[/* d */ Datum, scala.Double] => HierarchyNode[Datum],
     children: js.Array[HierarchyNode[Datum]] = null,
     id: java.lang.String = null,
     parent: HierarchyNode[Datum] = null,
     value: scala.Int | scala.Double = null
   ): HierarchyNode[Datum] = {
-    val __obj = js.Dynamic.literal(ancestors = ancestors, copy = copy, count = count, data = data.asInstanceOf[js.Any], depth = depth, descendants = descendants, each = each, eachAfter = eachAfter, eachBefore = eachBefore, height = height, leaves = leaves, links = links, path = path, sort = sort, sum = sum)
+    val __obj = js.Dynamic.literal(ancestors = js.Any.fromFunction0(ancestors), copy = js.Any.fromFunction0(copy), count = js.Any.fromFunction0(count), data = data.asInstanceOf[js.Any], depth = depth, descendants = js.Any.fromFunction0(descendants), each = js.Any.fromFunction1(each), eachAfter = js.Any.fromFunction1(eachAfter), eachBefore = js.Any.fromFunction1(eachBefore), height = height, leaves = js.Any.fromFunction0(leaves), links = js.Any.fromFunction0(links), path = js.Any.fromFunction1(path), sort = js.Any.fromFunction1(sort), sum = js.Any.fromFunction1(sum))
     if (children != null) __obj.updateDynamic("children")(children)
     if (id != null) __obj.updateDynamic("id")(id)
     if (parent != null) __obj.updateDynamic("parent")(parent)

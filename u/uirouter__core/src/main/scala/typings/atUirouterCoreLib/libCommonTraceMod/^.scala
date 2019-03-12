@@ -17,6 +17,6 @@ object ^ extends js.Object {
     * trace.enable(1, 5);
     * ```
     */
-  val trace: atUirouterCoreLib.libCommonTraceMod.Trace = js.native
+  val trace: Trace = js.native
 }
 

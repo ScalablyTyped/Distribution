@@ -13,12 +13,8 @@ trait FolderIterator extends js.Object {
 
 object FolderIterator {
   @scala.inline
-  def apply(
-    getContinuationToken: js.Function0[java.lang.String],
-    hasNext: js.Function0[scala.Boolean],
-    next: js.Function0[Folder]
-  ): FolderIterator = {
-    val __obj = js.Dynamic.literal(getContinuationToken = getContinuationToken, hasNext = hasNext, next = next)
+  def apply(getContinuationToken: () => java.lang.String, hasNext: () => scala.Boolean, next: () => Folder): FolderIterator = {
+    val __obj = js.Dynamic.literal(getContinuationToken = js.Any.fromFunction0(getContinuationToken), hasNext = js.Any.fromFunction0(hasNext), next = js.Any.fromFunction0(next))
   
     __obj.asInstanceOf[FolderIterator]
   }

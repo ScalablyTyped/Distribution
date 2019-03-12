@@ -28,13 +28,13 @@ object XModule {
   @scala.inline
   def apply(
     Identifier: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getIdentifier: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setIdentifier: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getIdentifier: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setIdentifier: java.lang.String => scala.Unit
   ): XModule = {
-    val __obj = js.Dynamic.literal(Identifier = Identifier, acquire = acquire, getIdentifier = getIdentifier, queryInterface = queryInterface, release = release, setIdentifier = setIdentifier)
+    val __obj = js.Dynamic.literal(Identifier = Identifier, acquire = js.Any.fromFunction0(acquire), getIdentifier = js.Any.fromFunction0(getIdentifier), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setIdentifier = js.Any.fromFunction1(setIdentifier))
   
     __obj.asInstanceOf[XModule]
   }

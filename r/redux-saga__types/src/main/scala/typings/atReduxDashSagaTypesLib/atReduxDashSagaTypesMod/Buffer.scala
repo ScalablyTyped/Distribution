@@ -28,12 +28,12 @@ trait Buffer[T] extends js.Object {
 object Buffer {
   @scala.inline
   def apply[T](
-    flush: js.Function0[js.Array[T]],
-    isEmpty: js.Function0[scala.Boolean],
-    put: js.Function1[T, scala.Unit],
-    take: js.Function0[js.UndefOr[T]]
+    flush: () => js.Array[T],
+    isEmpty: () => scala.Boolean,
+    put: T => scala.Unit,
+    take: () => js.UndefOr[T]
   ): Buffer[T] = {
-    val __obj = js.Dynamic.literal(flush = flush, isEmpty = isEmpty, put = put, take = take)
+    val __obj = js.Dynamic.literal(flush = js.Any.fromFunction0(flush), isEmpty = js.Any.fromFunction0(isEmpty), put = js.Any.fromFunction1(put), take = js.Any.fromFunction0(take))
   
     __obj.asInstanceOf[Buffer[T]]
   }

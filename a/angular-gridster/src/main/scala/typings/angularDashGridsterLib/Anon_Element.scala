@@ -45,31 +45,16 @@ object Anon_Element {
   def apply(
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     handles: js.Array[java.lang.String] = null,
-    resize: js.Function3[
-      /* event */ angularLib.angularMod.angularNs.IAngularEvent, 
-      /* $element */ angularLib.angularMod.angularNs.IAugmentedJQuery, 
-      /* options */ js.Any, 
-      scala.Unit
-    ] = null,
-    start: js.Function3[
-      /* event */ angularLib.angularMod.angularNs.IAngularEvent, 
-      /* $element */ angularLib.angularMod.angularNs.IAugmentedJQuery, 
-      /* options */ js.Any, 
-      scala.Unit
-    ] = null,
-    stop: js.Function3[
-      /* event */ angularLib.angularMod.angularNs.IAngularEvent, 
-      /* $element */ angularLib.angularMod.angularNs.IAugmentedJQuery, 
-      /* options */ js.Any, 
-      scala.Unit
-    ] = null
+    resize: (/* event */ angularLib.angularMod.angularNs.IAngularEvent, /* $element */ angularLib.angularMod.angularNs.IAugmentedJQuery, /* options */ js.Any) => scala.Unit = null,
+    start: (/* event */ angularLib.angularMod.angularNs.IAngularEvent, /* $element */ angularLib.angularMod.angularNs.IAugmentedJQuery, /* options */ js.Any) => scala.Unit = null,
+    stop: (/* event */ angularLib.angularMod.angularNs.IAngularEvent, /* $element */ angularLib.angularMod.angularNs.IAugmentedJQuery, /* options */ js.Any) => scala.Unit = null
   ): Anon_Element = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (handles != null) __obj.updateDynamic("handles")(handles)
-    if (resize != null) __obj.updateDynamic("resize")(resize)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction3(resize))
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction3(start))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction3(stop))
     __obj.asInstanceOf[Anon_Element]
   }
 }

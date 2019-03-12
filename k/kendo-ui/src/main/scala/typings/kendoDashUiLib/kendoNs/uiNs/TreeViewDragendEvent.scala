@@ -14,14 +14,14 @@ trait TreeViewDragendEvent extends TreeViewEvent {
 object TreeViewDragendEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: TreeView,
     destinationNode: stdLib.Element = null,
     dropPosition: java.lang.String = null,
     sourceNode: stdLib.Element = null
   ): TreeViewDragendEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (destinationNode != null) __obj.updateDynamic("destinationNode")(destinationNode)
     if (dropPosition != null) __obj.updateDynamic("dropPosition")(dropPosition)
     if (sourceNode != null) __obj.updateDynamic("sourceNode")(sourceNode)

@@ -16,13 +16,13 @@ trait IActionConvertToPDF extends js.Object {
 object IActionConvertToPDF {
   @scala.inline
   def apply(
-    Clone: js.Function0[IActionConvertToPDF],
+    Clone: () => IActionConvertToPDF,
     FailOnUnsupportedSourceFiles: scala.Boolean,
     OverwriteExistingFile: scala.Boolean,
     PDFA1b: scala.Boolean,
     StoreAsSeparateFile: scala.Boolean
   ): IActionConvertToPDF = {
-    val __obj = js.Dynamic.literal(Clone = Clone, FailOnUnsupportedSourceFiles = FailOnUnsupportedSourceFiles, OverwriteExistingFile = OverwriteExistingFile, PDFA1b = PDFA1b, StoreAsSeparateFile = StoreAsSeparateFile)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), FailOnUnsupportedSourceFiles = FailOnUnsupportedSourceFiles, OverwriteExistingFile = OverwriteExistingFile, PDFA1b = PDFA1b, StoreAsSeparateFile = StoreAsSeparateFile)
   
     __obj.asInstanceOf[IActionConvertToPDF]
   }

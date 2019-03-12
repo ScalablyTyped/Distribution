@@ -16,13 +16,13 @@ trait Anon_BinarySet extends js.Object {
 object Anon_BinarySet {
   @scala.inline
   def apply(
-    binarySet: js.Function0[joiLib.joiMod.AnySchema],
-    numberSet: js.Function0[joiLib.joiMod.AnySchema],
-    stringSet: js.Function0[joiLib.joiMod.AnySchema],
-    timeUUID: js.Function0[joiLib.joiMod.AnySchema],
-    uuid: js.Function0[joiLib.joiMod.AnySchema]
+    binarySet: () => joiLib.joiMod.AnySchema,
+    numberSet: () => joiLib.joiMod.AnySchema,
+    stringSet: () => joiLib.joiMod.AnySchema,
+    timeUUID: () => joiLib.joiMod.AnySchema,
+    uuid: () => joiLib.joiMod.AnySchema
   ): Anon_BinarySet = {
-    val __obj = js.Dynamic.literal(binarySet = binarySet, numberSet = numberSet, stringSet = stringSet, timeUUID = timeUUID, uuid = uuid)
+    val __obj = js.Dynamic.literal(binarySet = js.Any.fromFunction0(binarySet), numberSet = js.Any.fromFunction0(numberSet), stringSet = js.Any.fromFunction0(stringSet), timeUUID = js.Any.fromFunction0(timeUUID), uuid = js.Any.fromFunction0(uuid))
   
     __obj.asInstanceOf[Anon_BinarySet]
   }

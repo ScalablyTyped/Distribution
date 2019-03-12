@@ -20,14 +20,9 @@ object Bifunctor3C {
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS3 */, U](
     URI: F,
     _U: U,
-    bimap: js.Function3[
-      fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any]
-    ]
+    bimap: (fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any]
   ): Bifunctor3C[F, U] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], bimap = bimap)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], bimap = js.Any.fromFunction3(bimap))
   
     __obj.asInstanceOf[Bifunctor3C[F, U]]
   }

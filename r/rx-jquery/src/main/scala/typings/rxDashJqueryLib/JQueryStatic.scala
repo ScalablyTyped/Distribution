@@ -16,34 +16,13 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(
-    ajaxAsObservable: js.Function1[
-      jqueryLib.JQueryAjaxSettings, 
-      rxDashLiteDashAggregatesLib.RxNs.Observable[RxJQueryAjaxResult[js.Any]]
-    ],
-    getAsObservable: js.Function3[
-      java.lang.String, 
-      js.Any, 
-      java.lang.String, 
-      rxDashLiteDashAggregatesLib.RxNs.Observable[RxJQueryAjaxResult[js.Any]]
-    ],
-    getJSONAsObservable: js.Function2[
-      java.lang.String, 
-      js.Any, 
-      rxDashLiteDashAggregatesLib.RxNs.Observable[RxJQueryAjaxResult[js.Any]]
-    ],
-    getScriptAsObservable: js.Function2[
-      java.lang.String, 
-      js.Any, 
-      rxDashLiteDashAggregatesLib.RxNs.Observable[RxJQueryAjaxResult[js.Any]]
-    ],
-    postAsObservable: js.Function3[
-      java.lang.String, 
-      js.Any, 
-      java.lang.String, 
-      rxDashLiteDashAggregatesLib.RxNs.Observable[RxJQueryAjaxResult[js.Any]]
-    ]
+    ajaxAsObservable: jqueryLib.JQueryAjaxSettings => rxDashLiteDashAggregatesLib.RxNs.Observable[RxJQueryAjaxResult[js.Any]],
+    getAsObservable: (java.lang.String, js.Any, java.lang.String) => rxDashLiteDashAggregatesLib.RxNs.Observable[RxJQueryAjaxResult[js.Any]],
+    getJSONAsObservable: (java.lang.String, js.Any) => rxDashLiteDashAggregatesLib.RxNs.Observable[RxJQueryAjaxResult[js.Any]],
+    getScriptAsObservable: (java.lang.String, js.Any) => rxDashLiteDashAggregatesLib.RxNs.Observable[RxJQueryAjaxResult[js.Any]],
+    postAsObservable: (java.lang.String, js.Any, java.lang.String) => rxDashLiteDashAggregatesLib.RxNs.Observable[RxJQueryAjaxResult[js.Any]]
   ): JQueryStatic = {
-    val __obj = js.Dynamic.literal(ajaxAsObservable = ajaxAsObservable, getAsObservable = getAsObservable, getJSONAsObservable = getJSONAsObservable, getScriptAsObservable = getScriptAsObservable, postAsObservable = postAsObservable)
+    val __obj = js.Dynamic.literal(ajaxAsObservable = js.Any.fromFunction1(ajaxAsObservable), getAsObservable = js.Any.fromFunction3(getAsObservable), getJSONAsObservable = js.Any.fromFunction2(getJSONAsObservable), getScriptAsObservable = js.Any.fromFunction2(getScriptAsObservable), postAsObservable = js.Any.fromFunction3(postAsObservable))
   
     __obj.asInstanceOf[JQueryStatic]
   }

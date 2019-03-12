@@ -18,13 +18,13 @@ object TslintFile {
   @scala.inline
   def apply(
     contents: nodeLib.Buffer | js.Any,
-    isNull: js.Function0[scala.Boolean],
-    isStream: js.Function0[scala.Boolean],
+    isNull: () => scala.Boolean,
+    isStream: () => scala.Boolean,
     path: java.lang.String,
     relative: java.lang.String,
     tslint: js.Any
   ): TslintFile = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], isNull = isNull, isStream = isStream, path = path, relative = relative, tslint = tslint)
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], isNull = js.Any.fromFunction0(isNull), isStream = js.Any.fromFunction0(isStream), path = path, relative = relative, tslint = tslint)
   
     __obj.asInstanceOf[TslintFile]
   }

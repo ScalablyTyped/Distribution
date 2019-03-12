@@ -66,7 +66,7 @@ trait StrictSearchProps extends js.Object {
     */
   var onBlur: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SearchProps, 
       scala.Unit
     ]
@@ -79,7 +79,7 @@ trait StrictSearchProps extends js.Object {
     */
   var onFocus: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SearchProps, 
       scala.Unit
     ]
@@ -92,7 +92,7 @@ trait StrictSearchProps extends js.Object {
     */
   var onMouseDown: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SearchProps, 
       scala.Unit
     ]
@@ -105,7 +105,7 @@ trait StrictSearchProps extends js.Object {
     */
   var onResultSelect: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       /* data */ SearchResultData, 
       scala.Unit
     ]
@@ -118,7 +118,7 @@ trait StrictSearchProps extends js.Object {
     */
   var onSearchChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SearchProps, 
       scala.Unit
     ]
@@ -131,7 +131,7 @@ trait StrictSearchProps extends js.Object {
     */
   var onSelectionChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SearchResultData, 
       scala.Unit
     ]
@@ -174,10 +174,7 @@ object StrictSearchProps {
     aligned: java.lang.String = null,
     as: js.Any = null,
     category: js.UndefOr[scala.Boolean] = js.undefined,
-    categoryRenderer: js.Function1[
-      /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchCategoryMod.SearchCategoryProps, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
-    ] = null,
+    categoryRenderer: /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchCategoryMod.SearchCategoryProps => reactLib.reactMod.ReactNs.ReactElement[_] = null,
     className: java.lang.String = null,
     defaultOpen: js.UndefOr[scala.Boolean] = js.undefined,
     defaultValue: java.lang.String = null,
@@ -188,41 +185,14 @@ object StrictSearchProps {
     minCharacters: scala.Int | scala.Double = null,
     noResultsDescription: reactLib.reactMod.ReactNs.ReactNode = null,
     noResultsMessage: reactLib.reactMod.ReactNs.ReactNode = null,
-    onBlur: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ SearchProps, 
-      scala.Unit
-    ] = null,
-    onFocus: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ SearchProps, 
-      scala.Unit
-    ] = null,
-    onMouseDown: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ SearchProps, 
-      scala.Unit
-    ] = null,
-    onResultSelect: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
-      /* data */ SearchResultData, 
-      scala.Unit
-    ] = null,
-    onSearchChange: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ SearchProps, 
-      scala.Unit
-    ] = null,
-    onSelectionChange: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ SearchResultData, 
-      scala.Unit
-    ] = null,
+    onBlur: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SearchProps) => scala.Unit = null,
+    onFocus: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SearchProps) => scala.Unit = null,
+    onMouseDown: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SearchProps) => scala.Unit = null,
+    onResultSelect: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ SearchResultData) => scala.Unit = null,
+    onSearchChange: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SearchProps) => scala.Unit = null,
+    onSelectionChange: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SearchResultData) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
-    resultRenderer: js.Function1[
-      /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.SearchResultProps, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
-    ] = null,
+    resultRenderer: /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.SearchResultProps => reactLib.reactMod.ReactNs.ReactElement[_] = null,
     results: js.Array[_] | js.Object = null,
     selectFirstResult: js.UndefOr[scala.Boolean] = js.undefined,
     showNoResults: js.UndefOr[scala.Boolean] = js.undefined,
@@ -233,7 +203,7 @@ object StrictSearchProps {
     if (aligned != null) __obj.updateDynamic("aligned")(aligned)
     if (as != null) __obj.updateDynamic("as")(as)
     if (!js.isUndefined(category)) __obj.updateDynamic("category")(category)
-    if (categoryRenderer != null) __obj.updateDynamic("categoryRenderer")(categoryRenderer)
+    if (categoryRenderer != null) __obj.updateDynamic("categoryRenderer")(js.Any.fromFunction1(categoryRenderer))
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
@@ -244,14 +214,14 @@ object StrictSearchProps {
     if (minCharacters != null) __obj.updateDynamic("minCharacters")(minCharacters.asInstanceOf[js.Any])
     if (noResultsDescription != null) __obj.updateDynamic("noResultsDescription")(noResultsDescription.asInstanceOf[js.Any])
     if (noResultsMessage != null) __obj.updateDynamic("noResultsMessage")(noResultsMessage.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
-    if (onResultSelect != null) __obj.updateDynamic("onResultSelect")(onResultSelect)
-    if (onSearchChange != null) __obj.updateDynamic("onSearchChange")(onSearchChange)
-    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(onSelectionChange)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2(onBlur))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction2(onFocus))
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction2(onMouseDown))
+    if (onResultSelect != null) __obj.updateDynamic("onResultSelect")(js.Any.fromFunction2(onResultSelect))
+    if (onSearchChange != null) __obj.updateDynamic("onSearchChange")(js.Any.fromFunction2(onSearchChange))
+    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(js.Any.fromFunction2(onSelectionChange))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
-    if (resultRenderer != null) __obj.updateDynamic("resultRenderer")(resultRenderer)
+    if (resultRenderer != null) __obj.updateDynamic("resultRenderer")(js.Any.fromFunction1(resultRenderer))
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (!js.isUndefined(selectFirstResult)) __obj.updateDynamic("selectFirstResult")(selectFirstResult)
     if (!js.isUndefined(showNoResults)) __obj.updateDynamic("showNoResults")(showNoResults)

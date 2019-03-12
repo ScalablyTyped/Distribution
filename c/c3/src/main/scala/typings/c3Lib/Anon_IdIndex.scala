@@ -42,26 +42,14 @@ trait Anon_IdIndex extends js.Object {
 object Anon_IdIndex {
   @scala.inline
   def apply(
-    name: js.Function4[
-      /* name */ java.lang.String, 
-      /* ratio */ scala.Double, 
-      /* id */ java.lang.String, 
-      /* index */ scala.Double, 
-      java.lang.String
-    ] = null,
-    title: js.Function1[/* x */ js.Any, java.lang.String] = null,
-    value: js.Function4[
-      /* value */ js.Any, 
-      /* ratio */ scala.Double, 
-      /* id */ java.lang.String, 
-      /* index */ scala.Double, 
-      java.lang.String
-    ] = null
+    name: (/* name */ java.lang.String, /* ratio */ scala.Double, /* id */ java.lang.String, /* index */ scala.Double) => java.lang.String = null,
+    title: /* x */ js.Any => java.lang.String = null,
+    value: (/* value */ js.Any, /* ratio */ scala.Double, /* id */ java.lang.String, /* index */ scala.Double) => java.lang.String = null
   ): Anon_IdIndex = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (name != null) __obj.updateDynamic("name")(js.Any.fromFunction4(name))
+    if (title != null) __obj.updateDynamic("title")(js.Any.fromFunction1(title))
+    if (value != null) __obj.updateDynamic("value")(js.Any.fromFunction4(value))
     __obj.asInstanceOf[Anon_IdIndex]
   }
 }

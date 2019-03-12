@@ -36,7 +36,7 @@ class Directory protected () extends js.Object {
   /** Reads file entries in this directory from disk asynchronously. */
   def getEntries(
     callback: js.Function2[
-      /* error */ nodeLib.Error | scala.Null, 
+      /* error */ stdLib.Error | scala.Null, 
       /* entries */ js.Array[File | this.type], 
       scala.Unit
     ]

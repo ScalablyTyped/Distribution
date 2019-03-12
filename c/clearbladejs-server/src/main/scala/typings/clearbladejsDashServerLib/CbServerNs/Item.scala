@@ -14,13 +14,8 @@ trait Item extends js.Object {
 
 object Item {
   @scala.inline
-  def apply(
-    data: js.Object,
-    destroy: js.Function0[scala.Unit],
-    refresh: js.Function0[scala.Unit],
-    save: js.Function0[scala.Unit]
-  ): Item = {
-    val __obj = js.Dynamic.literal(data = data, destroy = destroy, refresh = refresh, save = save)
+  def apply(data: js.Object, destroy: () => scala.Unit, refresh: () => scala.Unit, save: () => scala.Unit): Item = {
+    val __obj = js.Dynamic.literal(data = data, destroy = js.Any.fromFunction0(destroy), refresh = js.Any.fromFunction0(refresh), save = js.Any.fromFunction0(save))
   
     __obj.asInstanceOf[Item]
   }

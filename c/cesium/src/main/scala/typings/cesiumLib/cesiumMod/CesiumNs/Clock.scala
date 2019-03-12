@@ -30,9 +30,9 @@ object Clock {
     shouldAnimate: scala.Boolean,
     startTime: JulianDate,
     stopTime: JulianDate,
-    tick: js.Function0[JulianDate]
+    tick: () => JulianDate
   ): Clock = {
-    val __obj = js.Dynamic.literal(canAnimate = canAnimate, clockRange = clockRange, clockStep = clockStep, currentTime = currentTime, multiplier = multiplier, onTick = onTick, shouldAnimate = shouldAnimate, startTime = startTime, stopTime = stopTime, tick = tick)
+    val __obj = js.Dynamic.literal(canAnimate = canAnimate, clockRange = clockRange, clockStep = clockStep, currentTime = currentTime, multiplier = multiplier, onTick = onTick, shouldAnimate = shouldAnimate, startTime = startTime, stopTime = stopTime, tick = js.Any.fromFunction0(tick))
   
     __obj.asInstanceOf[Clock]
   }

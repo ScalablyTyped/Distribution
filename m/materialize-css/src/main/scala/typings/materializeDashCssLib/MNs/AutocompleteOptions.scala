@@ -36,10 +36,10 @@ object AutocompleteOptions {
     data: AutocompleteData,
     limit: scala.Double,
     minLength: scala.Double,
-    onAutocomplete: js.Function2[Autocomplete, java.lang.String, scala.Unit],
-    sortFunction: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Double]
+    onAutocomplete: (Autocomplete, java.lang.String) => scala.Unit,
+    sortFunction: (java.lang.String, java.lang.String, java.lang.String) => scala.Double
   ): AutocompleteOptions = {
-    val __obj = js.Dynamic.literal(data = data, limit = limit, minLength = minLength, onAutocomplete = onAutocomplete, sortFunction = sortFunction)
+    val __obj = js.Dynamic.literal(data = data, limit = limit, minLength = minLength, onAutocomplete = js.Any.fromFunction2(onAutocomplete), sortFunction = js.Any.fromFunction3(sortFunction))
   
     __obj.asInstanceOf[AutocompleteOptions]
   }

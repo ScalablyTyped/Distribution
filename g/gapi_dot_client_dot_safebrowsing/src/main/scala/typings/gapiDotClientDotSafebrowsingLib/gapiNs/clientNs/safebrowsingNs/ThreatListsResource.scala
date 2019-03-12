@@ -13,12 +13,9 @@ trait ThreatListsResource extends js.Object {
 object ThreatListsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotSafebrowsingLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListThreatListsResponse]
-    ]
+    list: gapiDotClientDotSafebrowsingLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[ListThreatListsResponse]
   ): ThreatListsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ThreatListsResource]
   }

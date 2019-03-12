@@ -31,23 +31,10 @@ object StackNavigatorConfig {
     initialRouteParams: NavigationParams = null,
     mode: reactDashNavigationLib.reactDashNavigationLibStrings.card | reactDashNavigationLib.reactDashNavigationLibStrings.modal = null,
     navigationOptions: NavigationScreenConfig[NavigationScreenOptions] = null,
-    onTransitionEnd: js.Function2[
-      /* transitionProps */ NavigationTransitionProps, 
-      /* prevTransitionProps */ js.UndefOr[NavigationTransitionProps], 
-      scala.Unit
-    ] = null,
-    onTransitionStart: js.Function2[
-      /* transitionProps */ NavigationTransitionProps, 
-      /* prevTransitionProps */ js.UndefOr[NavigationTransitionProps], 
-      js.Promise[scala.Unit] | scala.Unit
-    ] = null,
+    onTransitionEnd: (/* transitionProps */ NavigationTransitionProps, /* prevTransitionProps */ js.UndefOr[NavigationTransitionProps]) => scala.Unit = null,
+    onTransitionStart: (/* transitionProps */ NavigationTransitionProps, /* prevTransitionProps */ js.UndefOr[NavigationTransitionProps]) => js.Promise[scala.Unit] | scala.Unit = null,
     paths: NavigationPathsConfig = null,
-    transitionConfig: js.Function3[
-      /* transitionProps */ NavigationTransitionProps, 
-      /* prevTransitionProps */ NavigationTransitionProps, 
-      /* isModal */ scala.Boolean, 
-      TransitionConfig
-    ] = null,
+    transitionConfig: (/* transitionProps */ NavigationTransitionProps, /* prevTransitionProps */ NavigationTransitionProps, /* isModal */ scala.Boolean) => TransitionConfig = null,
     transparentCard: js.UndefOr[scala.Boolean] = js.undefined
   ): StackNavigatorConfig = {
     val __obj = js.Dynamic.literal()
@@ -63,10 +50,10 @@ object StackNavigatorConfig {
     if (initialRouteParams != null) __obj.updateDynamic("initialRouteParams")(initialRouteParams)
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (navigationOptions != null) __obj.updateDynamic("navigationOptions")(navigationOptions.asInstanceOf[js.Any])
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(onTransitionEnd)
-    if (onTransitionStart != null) __obj.updateDynamic("onTransitionStart")(onTransitionStart)
+    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction2(onTransitionEnd))
+    if (onTransitionStart != null) __obj.updateDynamic("onTransitionStart")(js.Any.fromFunction2(onTransitionStart))
     if (paths != null) __obj.updateDynamic("paths")(paths)
-    if (transitionConfig != null) __obj.updateDynamic("transitionConfig")(transitionConfig)
+    if (transitionConfig != null) __obj.updateDynamic("transitionConfig")(js.Any.fromFunction3(transitionConfig))
     if (!js.isUndefined(transparentCard)) __obj.updateDynamic("transparentCard")(transparentCard)
     __obj.asInstanceOf[StackNavigatorConfig]
   }

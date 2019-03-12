@@ -13,7 +13,7 @@ trait SendStream
     * @private
     */
   def error(status: scala.Double): scala.Unit = js.native
-  def error(status: scala.Double, error: nodeLib.Error): scala.Unit = js.native
+  def error(status: scala.Double, error: stdLib.Error): scala.Unit = js.native
   /**
     * @deprecated pass etag as option
     * Enable or disable etag generation.
@@ -80,7 +80,7 @@ trait SendStream
     * Handle stat() error.
     * @private
     */
-  def onStatError(error: nodeLib.Error): scala.Unit = js.native
+  def onStatError(error: stdLib.Error): scala.Unit = js.native
   /**
     * Redirect to path.
     * @private

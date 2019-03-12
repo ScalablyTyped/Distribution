@@ -26,11 +26,11 @@ object MapTouchEvent {
     originalEvent: stdLib.TouchEvent,
     point: Point,
     points: js.Array[Point],
-    preventDefault: js.Function0[scala.Unit],
+    preventDefault: () => scala.Unit,
     target: Map,
     `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchstart | mapboxDashGlLib.mapboxDashGlLibStrings.touchend | mapboxDashGlLib.mapboxDashGlLibStrings.touchcancel
   ): MapTouchEvent = {
-    val __obj = js.Dynamic.literal(defaultPrevented = defaultPrevented, lngLat = lngLat, lngLats = lngLats, originalEvent = originalEvent, point = point, points = points, preventDefault = preventDefault, target = target)
+    val __obj = js.Dynamic.literal(defaultPrevented = defaultPrevented, lngLat = lngLat, lngLats = lngLats, originalEvent = originalEvent, point = point, points = points, preventDefault = js.Any.fromFunction0(preventDefault), target = target)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapTouchEvent]
   }

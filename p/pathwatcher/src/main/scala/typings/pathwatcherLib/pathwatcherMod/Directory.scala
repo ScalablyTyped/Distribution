@@ -39,7 +39,7 @@ class Directory protected () extends js.Object {
   def getBaseName(): java.lang.String = js.native
   /** Reads file entries in this directory from disk asynchronously. */
   def getEntries(
-    callback: js.Function2[/* error */ nodeLib.Error, /* entries */ js.Array[File | this.type], scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* entries */ js.Array[File | this.type], scala.Unit]
   ): scala.Unit = js.native
   /** Reads file entries in this directory from disk synchronously. */
   def getEntriesSync(): js.Array[File | Directory] = js.native

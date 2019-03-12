@@ -15,10 +15,10 @@ object IPrintTaskSourceRequestedArgs {
   @scala.inline
   def apply(
     deadline: stdLib.Date,
-    getDeferral: js.Function0[PrintTaskSourceRequestedDeferral],
-    setSource: js.Function1[IPrintDocumentSource, scala.Unit]
+    getDeferral: () => PrintTaskSourceRequestedDeferral,
+    setSource: IPrintDocumentSource => scala.Unit
   ): IPrintTaskSourceRequestedArgs = {
-    val __obj = js.Dynamic.literal(deadline = deadline, getDeferral = getDeferral, setSource = setSource)
+    val __obj = js.Dynamic.literal(deadline = deadline, getDeferral = js.Any.fromFunction0(getDeferral), setSource = js.Any.fromFunction1(setSource))
   
     __obj.asInstanceOf[IPrintTaskSourceRequestedArgs]
   }

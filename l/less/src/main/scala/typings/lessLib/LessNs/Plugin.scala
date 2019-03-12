@@ -11,8 +11,8 @@ trait Plugin extends js.Object {
 
 object Plugin {
   @scala.inline
-  def apply(install: js.Function2[lessLib.LessStatic, PluginManager, scala.Unit]): Plugin = {
-    val __obj = js.Dynamic.literal(install = install)
+  def apply(install: (lessLib.LessStatic, PluginManager) => scala.Unit): Plugin = {
+    val __obj = js.Dynamic.literal(install = js.Any.fromFunction2(install))
   
     __obj.asInstanceOf[Plugin]
   }

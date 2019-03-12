@@ -30,14 +30,14 @@ trait XJavaThreadRegister_11
 object XJavaThreadRegister_11 {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    isThreadAttached: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerThread: js.Function0[scala.Unit],
-    release: js.Function0[scala.Unit],
-    revokeThread: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    isThreadAttached: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerThread: () => scala.Unit,
+    release: () => scala.Unit,
+    revokeThread: () => scala.Unit
   ): XJavaThreadRegister_11 = {
-    val __obj = js.Dynamic.literal(acquire = acquire, isThreadAttached = isThreadAttached, queryInterface = queryInterface, registerThread = registerThread, release = release, revokeThread = revokeThread)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), isThreadAttached = js.Any.fromFunction0(isThreadAttached), queryInterface = js.Any.fromFunction1(queryInterface), registerThread = js.Any.fromFunction0(registerThread), release = js.Any.fromFunction0(release), revokeThread = js.Any.fromFunction0(revokeThread))
   
     __obj.asInstanceOf[XJavaThreadRegister_11]
   }

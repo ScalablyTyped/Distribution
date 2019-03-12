@@ -17,18 +17,15 @@ trait Job
 object Job {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addCloseListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseListener, scala.Unit],
-    close: js.Function1[scala.Boolean, scala.Unit],
-    execute: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
-      js.Any
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeCloseListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addCloseListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseListener => scala.Unit,
+    close: scala.Boolean => scala.Unit,
+    execute: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue] => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeCloseListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseListener => scala.Unit
   ): Job = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addCloseListener = addCloseListener, close = close, execute = execute, queryInterface = queryInterface, release = release, removeCloseListener = removeCloseListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addCloseListener = js.Any.fromFunction1(addCloseListener), close = js.Any.fromFunction1(close), execute = js.Any.fromFunction1(execute), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeCloseListener = js.Any.fromFunction1(removeCloseListener))
   
     __obj.asInstanceOf[Job]
   }

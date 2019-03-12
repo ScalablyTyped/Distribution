@@ -50,16 +50,11 @@ trait XDocumentEventBroadcaster extends js.Object {
 object XDocumentEventBroadcaster {
   @scala.inline
   def apply(
-    addDocumentEventListener: js.Function1[XDocumentEventListener, scala.Unit],
-    notifyDocumentEvent: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController2, 
-      js.Any, 
-      scala.Unit
-    ],
-    removeDocumentEventListener: js.Function1[XDocumentEventListener, scala.Unit]
+    addDocumentEventListener: XDocumentEventListener => scala.Unit,
+    notifyDocumentEvent: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController2, js.Any) => scala.Unit,
+    removeDocumentEventListener: XDocumentEventListener => scala.Unit
   ): XDocumentEventBroadcaster = {
-    val __obj = js.Dynamic.literal(addDocumentEventListener = addDocumentEventListener, notifyDocumentEvent = notifyDocumentEvent, removeDocumentEventListener = removeDocumentEventListener)
+    val __obj = js.Dynamic.literal(addDocumentEventListener = js.Any.fromFunction1(addDocumentEventListener), notifyDocumentEvent = js.Any.fromFunction3(notifyDocumentEvent), removeDocumentEventListener = js.Any.fromFunction1(removeDocumentEventListener))
   
     __obj.asInstanceOf[XDocumentEventBroadcaster]
   }

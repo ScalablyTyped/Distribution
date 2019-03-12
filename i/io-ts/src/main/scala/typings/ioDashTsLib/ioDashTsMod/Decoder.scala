@@ -13,12 +13,8 @@ trait Decoder[I, A] extends js.Object {
 
 object Decoder {
   @scala.inline
-  def apply[I, A](
-    decode: js.Function1[I, Validation[A]],
-    name: java.lang.String,
-    validate: js.Function2[I, Context, Validation[A]]
-  ): Decoder[I, A] = {
-    val __obj = js.Dynamic.literal(decode = decode, name = name, validate = validate)
+  def apply[I, A](decode: I => Validation[A], name: java.lang.String, validate: (I, Context) => Validation[A]): Decoder[I, A] = {
+    val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), name = name, validate = js.Any.fromFunction2(validate))
   
     __obj.asInstanceOf[Decoder[I, A]]
   }

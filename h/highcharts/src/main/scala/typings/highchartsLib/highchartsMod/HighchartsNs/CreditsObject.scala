@@ -12,14 +12,14 @@ trait CreditsObject extends CreditsOptions {
 object CreditsObject {
   @scala.inline
   def apply(
-    update: js.Function1[CreditsOptions, scala.Unit],
+    update: CreditsOptions => scala.Unit,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     href: java.lang.String = null,
     position: Position = null,
     style: js.Object = null,
     text: java.lang.String = null
   ): CreditsObject = {
-    val __obj = js.Dynamic.literal(update = update)
+    val __obj = js.Dynamic.literal(update = js.Any.fromFunction1(update))
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (href != null) __obj.updateDynamic("href")(href)
     if (position != null) __obj.updateDynamic("position")(position)

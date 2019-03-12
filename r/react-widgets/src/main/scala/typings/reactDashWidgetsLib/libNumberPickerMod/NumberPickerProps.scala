@@ -53,11 +53,11 @@ trait NumberPickerProps
   /**
     * The native onKeyDown event, called preventDefault will prevent any custom behavior, included keyboard shortcuts.
     */
-  var onKeyDown: js.UndefOr[js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit]] = js.undefined
+  var onKeyDown: js.UndefOr[js.Function1[/* event */ stdLib.KeyboardEvent, scala.Unit]] = js.undefined
   /**
     * The native onKeyPress event, called preventDefault will stop any custom behavior.
     */
-  var onKeyPress: js.UndefOr[js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit]] = js.undefined
+  var onKeyPress: js.UndefOr[js.Function1[/* event */ stdLib.KeyboardEvent, scala.Unit]] = js.undefined
   /**
     * Controls the visibility of the NumberPicker popup. Use defaultOpen to set an initial value for uncontrolled widgets.
     * @default false
@@ -107,9 +107,9 @@ object NumberPickerProps {
     messages: NumberPickerMessages = null,
     min: scala.Int | scala.Double = null,
     name: java.lang.String = null,
-    onChange: js.Function1[/* value */ js.UndefOr[scala.Double], scala.Unit] = null,
-    onKeyDown: js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit] = null,
-    onKeyPress: js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit] = null,
+    onChange: /* value */ js.UndefOr[scala.Double] => scala.Unit = null,
+    onKeyDown: /* event */ stdLib.KeyboardEvent => scala.Unit = null,
+    onKeyPress: /* event */ stdLib.KeyboardEvent => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     parse: js.Array[java.lang.String] | (js.Function2[/* str */ java.lang.String, /* culture */ java.lang.String, scala.Double]) = null,
     placeholder: java.lang.String = null,
@@ -134,9 +134,9 @@ object NumberPickerProps {
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)

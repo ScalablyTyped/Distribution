@@ -16,11 +16,11 @@ object Principal {
   @scala.inline
   def apply(
     details: js.Any,
-    isAuthenticated: js.Function0[js.Promise[scala.Boolean]],
-    isInRole: js.Function1[java.lang.String, js.Promise[scala.Boolean]],
-    isResourceOwner: js.Function1[js.Any, js.Promise[scala.Boolean]]
+    isAuthenticated: () => js.Promise[scala.Boolean],
+    isInRole: java.lang.String => js.Promise[scala.Boolean],
+    isResourceOwner: js.Any => js.Promise[scala.Boolean]
   ): Principal = {
-    val __obj = js.Dynamic.literal(details = details, isAuthenticated = isAuthenticated, isInRole = isInRole, isResourceOwner = isResourceOwner)
+    val __obj = js.Dynamic.literal(details = details, isAuthenticated = js.Any.fromFunction0(isAuthenticated), isInRole = js.Any.fromFunction1(isInRole), isResourceOwner = js.Any.fromFunction1(isResourceOwner))
   
     __obj.asInstanceOf[Principal]
   }

@@ -23,29 +23,14 @@ trait LabelsResource extends js.Object {
 object LabelsResource {
   @scala.inline
   def apply(
-    create: js.Function1[gapiDotClientDotGmailLib.Anon_Alt, gapiDotClientLib.gapiNs.clientNs.Request[Label]],
-    delete: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Label]
-    ],
-    list: js.Function1[
-      gapiDotClientDotGmailLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListLabelsResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Label]
-    ],
-    update: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Label]
-    ]
+    create: gapiDotClientDotGmailLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Label],
+    delete: gapiDotClientDotGmailLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotGmailLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Label],
+    list: gapiDotClientDotGmailLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ListLabelsResponse],
+    patch: gapiDotClientDotGmailLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Label],
+    update: gapiDotClientDotGmailLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Label]
   ): LabelsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[LabelsResource]
   }

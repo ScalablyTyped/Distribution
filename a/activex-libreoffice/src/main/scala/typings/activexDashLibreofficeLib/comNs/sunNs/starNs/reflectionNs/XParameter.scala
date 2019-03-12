@@ -29,17 +29,17 @@ object XParameter {
     Name: java.lang.String,
     Position: scala.Double,
     Type: XTypeDescription,
-    acquire: js.Function0[scala.Unit],
-    getName: js.Function0[java.lang.String],
-    getPosition: js.Function0[scala.Double],
-    getType: js.Function0[XTypeDescription],
-    isIn: js.Function0[scala.Boolean],
-    isOut: js.Function0[scala.Boolean],
-    isRestParameter: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getName: () => java.lang.String,
+    getPosition: () => scala.Double,
+    getType: () => XTypeDescription,
+    isIn: () => scala.Boolean,
+    isOut: () => scala.Boolean,
+    isRestParameter: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XParameter = {
-    val __obj = js.Dynamic.literal(Name = Name, Position = Position, Type = Type, acquire = acquire, getName = getName, getPosition = getPosition, getType = getType, isIn = isIn, isOut = isOut, isRestParameter = isRestParameter, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Name = Name, Position = Position, Type = Type, acquire = js.Any.fromFunction0(acquire), getName = js.Any.fromFunction0(getName), getPosition = js.Any.fromFunction0(getPosition), getType = js.Any.fromFunction0(getType), isIn = js.Any.fromFunction0(isIn), isOut = js.Any.fromFunction0(isOut), isRestParameter = js.Any.fromFunction0(isRestParameter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XParameter]
   }

@@ -42,7 +42,7 @@ object ^ extends js.Object {
   def isPropertyConfigurable(`object`: js.Any, prop: stdLib.PropertyKey): scala.Boolean = js.native
   def makeNonEnumerable(`object`: js.Any, propNames: js.Array[stdLib.PropertyKey]): scala.Unit = js.native
   def noop(): scala.Unit = js.native
-  def once(func: mobxLib.libUtilsUtilsMod.Lambda): mobxLib.libUtilsUtilsMod.Lambda = js.native
+  def once(func: Lambda): Lambda = js.native
   def toPrimitive(value: js.Any): js.Any = js.native
   def unique[T](list: js.Array[T]): js.Array[T] = js.native
 }

@@ -119,7 +119,7 @@ object _Impl {
     key: js.Any,
     name: java.lang.String,
     namespace: java.lang.String,
-    onHide: js.Function1[semanticDashUiDashNagLib.JQuery, scala.Unit],
+    onHide: semanticDashUiDashNagLib.JQuery => scala.Unit,
     path: java.lang.String,
     performance: scala.Boolean,
     persist: scala.Boolean,
@@ -130,7 +130,7 @@ object _Impl {
     value: js.Any,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug, detachable = detachable, displayTime = displayTime, domain = domain.asInstanceOf[js.Any], easing = easing, error = error.asInstanceOf[js.Any], expires = expires, key = key, name = name, namespace = namespace, onHide = onHide, path = path, performance = performance, persist = persist, selector = selector, silent = silent, speed = speed, storageMethod = storageMethod.asInstanceOf[js.Any], value = value, verbose = verbose)
+    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug, detachable = detachable, displayTime = displayTime, domain = domain.asInstanceOf[js.Any], easing = easing, error = error.asInstanceOf[js.Any], expires = expires, key = key, name = name, namespace = namespace, onHide = js.Any.fromFunction1(onHide), path = path, performance = performance, persist = persist, selector = selector, silent = silent, speed = speed, storageMethod = storageMethod.asInstanceOf[js.Any], value = value, verbose = verbose)
   
     __obj.asInstanceOf[_Impl]
   }

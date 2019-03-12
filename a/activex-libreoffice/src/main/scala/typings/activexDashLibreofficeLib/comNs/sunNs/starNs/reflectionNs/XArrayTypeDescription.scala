@@ -14,7 +14,7 @@ trait XArrayTypeDescription extends XTypeDescription {
     * Returns dimensions of array (same length as {@link getNumberOfDimensions()} ).
     * @returns dimensions of array
     */
-  val Dimensions: activexDashInteropLib.SafeArray[scala.Double]
+  val Dimensions: stdLib.SafeArray[scala.Double]
   /**
     * Returns the number of dimensions of the array.
     * @returns dimension of the array
@@ -29,7 +29,7 @@ trait XArrayTypeDescription extends XTypeDescription {
     * Returns dimensions of array (same length as {@link getNumberOfDimensions()} ).
     * @returns dimensions of array
     */
-  def getDimensions(): activexDashInteropLib.SafeArray[scala.Double]
+  def getDimensions(): stdLib.SafeArray[scala.Double]
   /**
     * Returns the number of dimensions of the array.
     * @returns dimension of the array
@@ -45,21 +45,21 @@ trait XArrayTypeDescription extends XTypeDescription {
 object XArrayTypeDescription {
   @scala.inline
   def apply(
-    Dimensions: activexDashInteropLib.SafeArray[scala.Double],
+    Dimensions: stdLib.SafeArray[scala.Double],
     Name: java.lang.String,
     NumberOfDimensions: scala.Double,
     Type: XTypeDescription,
     TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
-    acquire: js.Function0[scala.Unit],
-    getDimensions: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    getName: js.Function0[java.lang.String],
-    getNumberOfDimensions: js.Function0[scala.Double],
-    getType: js.Function0[XTypeDescription],
-    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDimensions: () => stdLib.SafeArray[scala.Double],
+    getName: () => java.lang.String,
+    getNumberOfDimensions: () => scala.Double,
+    getType: () => XTypeDescription,
+    getTypeClass: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XArrayTypeDescription = {
-    val __obj = js.Dynamic.literal(Dimensions = Dimensions, Name = Name, NumberOfDimensions = NumberOfDimensions, Type = Type, TypeClass = TypeClass, acquire = acquire, getDimensions = getDimensions, getName = getName, getNumberOfDimensions = getNumberOfDimensions, getType = getType, getTypeClass = getTypeClass, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Dimensions = Dimensions, Name = Name, NumberOfDimensions = NumberOfDimensions, Type = Type, TypeClass = TypeClass, acquire = js.Any.fromFunction0(acquire), getDimensions = js.Any.fromFunction0(getDimensions), getName = js.Any.fromFunction0(getName), getNumberOfDimensions = js.Any.fromFunction0(getNumberOfDimensions), getType = js.Any.fromFunction0(getType), getTypeClass = js.Any.fromFunction0(getTypeClass), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XArrayTypeDescription]
   }

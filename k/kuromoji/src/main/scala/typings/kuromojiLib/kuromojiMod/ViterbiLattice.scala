@@ -12,8 +12,8 @@ trait ViterbiLattice extends js.Object {
 
 object ViterbiLattice {
   @scala.inline
-  def apply(append: js.Function1[ViterbiNode, scala.Unit], appendEos: js.Function0[scala.Unit]): ViterbiLattice = {
-    val __obj = js.Dynamic.literal(append = append, appendEos = appendEos)
+  def apply(append: ViterbiNode => scala.Unit, appendEos: () => scala.Unit): ViterbiLattice = {
+    val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), appendEos = js.Any.fromFunction0(appendEos))
   
     __obj.asInstanceOf[ViterbiLattice]
   }

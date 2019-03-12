@@ -24,15 +24,15 @@ trait XButton
 object XButton {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addActionListener: js.Function1[XActionListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeActionListener: js.Function1[XActionListener, scala.Unit],
-    setActionCommand: js.Function1[java.lang.String, scala.Unit],
-    setLabel: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    addActionListener: XActionListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeActionListener: XActionListener => scala.Unit,
+    setActionCommand: java.lang.String => scala.Unit,
+    setLabel: java.lang.String => scala.Unit
   ): XButton = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addActionListener = addActionListener, queryInterface = queryInterface, release = release, removeActionListener = removeActionListener, setActionCommand = setActionCommand, setLabel = setLabel)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addActionListener = js.Any.fromFunction1(addActionListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeActionListener = js.Any.fromFunction1(removeActionListener), setActionCommand = js.Any.fromFunction1(setActionCommand), setLabel = js.Any.fromFunction1(setLabel))
   
     __obj.asInstanceOf[XButton]
   }

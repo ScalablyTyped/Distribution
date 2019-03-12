@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Errors extends js.Object {
-  var BadGateway: BadGateway
-  var BadRequest: BadRequest
-  var Conflict: Conflict
-  var FeathersError: FeathersError
-  var Forbidden: Forbidden
-  var GeneralError: GeneralError
-  var LengthRequired: LengthRequired
-  var MethodNotAllowed: MethodNotAllowed
-  var NotAcceptable: NotAcceptable
-  var NotAuthenticated: NotAuthenticated
-  var NotFound: NotFound
-  var NotImplemented: NotImplemented
-  var PaymentError: PaymentError
-  var Timeout: Timeout
-  var TooManyRequests: TooManyRequests
-  var Unavailable: Unavailable
-  var Unprocessable: Unprocessable
+  var BadGateway: atFeathersjsErrorsLib.atFeathersjsErrorsMod.BadGateway
+  var BadRequest: atFeathersjsErrorsLib.atFeathersjsErrorsMod.BadRequest
+  var Conflict: atFeathersjsErrorsLib.atFeathersjsErrorsMod.Conflict
+  var FeathersError: atFeathersjsErrorsLib.atFeathersjsErrorsMod.FeathersError
+  var Forbidden: atFeathersjsErrorsLib.atFeathersjsErrorsMod.Forbidden
+  var GeneralError: atFeathersjsErrorsLib.atFeathersjsErrorsMod.GeneralError
+  var LengthRequired: atFeathersjsErrorsLib.atFeathersjsErrorsMod.LengthRequired
+  var MethodNotAllowed: atFeathersjsErrorsLib.atFeathersjsErrorsMod.MethodNotAllowed
+  var NotAcceptable: atFeathersjsErrorsLib.atFeathersjsErrorsMod.NotAcceptable
+  var NotAuthenticated: atFeathersjsErrorsLib.atFeathersjsErrorsMod.NotAuthenticated
+  var NotFound: atFeathersjsErrorsLib.atFeathersjsErrorsMod.NotFound
+  var NotImplemented: atFeathersjsErrorsLib.atFeathersjsErrorsMod.NotImplemented
+  var PaymentError: atFeathersjsErrorsLib.atFeathersjsErrorsMod.PaymentError
+  var Timeout: atFeathersjsErrorsLib.atFeathersjsErrorsMod.Timeout
+  var TooManyRequests: atFeathersjsErrorsLib.atFeathersjsErrorsMod.TooManyRequests
+  var Unavailable: atFeathersjsErrorsLib.atFeathersjsErrorsMod.Unavailable
+  var Unprocessable: atFeathersjsErrorsLib.atFeathersjsErrorsMod.Unprocessable
 }
 
 object Errors {

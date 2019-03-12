@@ -36,10 +36,10 @@ object GetFieldDecoratorOptions {
   @scala.inline
   def apply(
     exclusive: js.UndefOr[scala.Boolean] = js.undefined,
-    getValueFromEvent: js.Function1[/* repeated */ js.Any, _] = null,
-    getValueProps: js.Function1[/* value */ js.Any, _] = null,
+    getValueFromEvent: /* repeated */ js.Any => _ = null,
+    getValueProps: /* value */ js.Any => _ = null,
     initialValue: js.Any = null,
-    normalize: js.Function3[/* value */ js.Any, /* prevValue */ js.Any, /* allValues */ js.Any, _] = null,
+    normalize: (/* value */ js.Any, /* prevValue */ js.Any, /* allValues */ js.Any) => _ = null,
     preserve: js.UndefOr[scala.Boolean] = js.undefined,
     rules: js.Array[ValidationRule] = null,
     trigger: java.lang.String = null,
@@ -49,10 +49,10 @@ object GetFieldDecoratorOptions {
   ): GetFieldDecoratorOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
-    if (getValueFromEvent != null) __obj.updateDynamic("getValueFromEvent")(getValueFromEvent)
-    if (getValueProps != null) __obj.updateDynamic("getValueProps")(getValueProps)
+    if (getValueFromEvent != null) __obj.updateDynamic("getValueFromEvent")(js.Any.fromFunction1(getValueFromEvent))
+    if (getValueProps != null) __obj.updateDynamic("getValueProps")(js.Any.fromFunction1(getValueProps))
     if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue)
-    if (normalize != null) __obj.updateDynamic("normalize")(normalize)
+    if (normalize != null) __obj.updateDynamic("normalize")(js.Any.fromFunction3(normalize))
     if (!js.isUndefined(preserve)) __obj.updateDynamic("preserve")(preserve)
     if (rules != null) __obj.updateDynamic("rules")(rules)
     if (trigger != null) __obj.updateDynamic("trigger")(trigger)

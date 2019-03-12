@@ -105,7 +105,7 @@ trait CalendarProps
   /**
     * The native onKeyDown event, called preventDefault will prevent any custom behavior, included keyboard shortcuts.
     */
-  var onKeyDown: js.UndefOr[js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit]] = js.undefined
+  var onKeyDown: js.UndefOr[js.Function1[/* event */ stdLib.KeyboardEvent, scala.Unit]] = js.undefined
   /**
     * Callback fired when the Calendar navigates between views, or forward and backwards in
     * time.
@@ -167,16 +167,11 @@ object CalendarProps {
     messages: CalendarMessages = null,
     min: stdLib.Date = null,
     monthFormat: java.lang.String | (js.Function1[/* day */ stdLib.Date, java.lang.String]) = null,
-    onChange: js.Function1[/* date */ js.UndefOr[stdLib.Date], scala.Unit] = null,
-    onCurrentDateChange: js.Function1[/* date */ js.UndefOr[stdLib.Date], scala.Unit] = null,
-    onKeyDown: js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit] = null,
-    onNavigate: js.Function3[
-      /* date */ stdLib.Date, 
-      /* direction */ java.lang.String, 
-      /* view */ java.lang.String, 
-      scala.Unit
-    ] = null,
-    onViewChange: js.Function0[scala.Unit] = null,
+    onChange: /* date */ js.UndefOr[stdLib.Date] => scala.Unit = null,
+    onCurrentDateChange: /* date */ js.UndefOr[stdLib.Date] => scala.Unit = null,
+    onKeyDown: /* event */ stdLib.KeyboardEvent => scala.Unit = null,
+    onNavigate: (/* date */ stdLib.Date, /* direction */ java.lang.String, /* view */ java.lang.String) => scala.Unit = null,
+    onViewChange: () => scala.Unit = null,
     readOnly: scala.Boolean | js.Array[_] = null,
     ref: reactLib.reactMod.ReactNs.LegacyRef[CalendarClass] = null,
     value: stdLib.Date = null,
@@ -209,11 +204,11 @@ object CalendarProps {
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (min != null) __obj.updateDynamic("min")(min)
     if (monthFormat != null) __obj.updateDynamic("monthFormat")(monthFormat.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onCurrentDateChange != null) __obj.updateDynamic("onCurrentDateChange")(onCurrentDateChange)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onNavigate != null) __obj.updateDynamic("onNavigate")(onNavigate)
-    if (onViewChange != null) __obj.updateDynamic("onViewChange")(onViewChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onCurrentDateChange != null) __obj.updateDynamic("onCurrentDateChange")(js.Any.fromFunction1(onCurrentDateChange))
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
+    if (onNavigate != null) __obj.updateDynamic("onNavigate")(js.Any.fromFunction3(onNavigate))
+    if (onViewChange != null) __obj.updateDynamic("onViewChange")(js.Any.fromFunction0(onViewChange))
     if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value)

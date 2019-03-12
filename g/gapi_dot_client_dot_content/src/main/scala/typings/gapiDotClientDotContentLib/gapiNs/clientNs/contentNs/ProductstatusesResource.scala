@@ -17,20 +17,11 @@ trait ProductstatusesResource extends js.Object {
 object ProductstatusesResource {
   @scala.inline
   def apply(
-    custombatch: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFieldsIncludeAttributes, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ProductstatusesCustomBatchResponse]
-    ],
-    get: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFieldsIncludeAttributesKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ProductStatus]
-    ],
-    list: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFieldsIncludeAttributesIncludeInvalidInsertedItems, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ProductstatusesListResponse]
-    ]
+    custombatch: gapiDotClientDotContentLib.Anon_AltFieldsIncludeAttributes => gapiDotClientLib.gapiNs.clientNs.Request[ProductstatusesCustomBatchResponse],
+    get: gapiDotClientDotContentLib.Anon_AltFieldsIncludeAttributesKey => gapiDotClientLib.gapiNs.clientNs.Request[ProductStatus],
+    list: gapiDotClientDotContentLib.Anon_AltFieldsIncludeAttributesIncludeInvalidInsertedItems => gapiDotClientLib.gapiNs.clientNs.Request[ProductstatusesListResponse]
   ): ProductstatusesResource = {
-    val __obj = js.Dynamic.literal(custombatch = custombatch, get = get, list = list)
+    val __obj = js.Dynamic.literal(custombatch = js.Any.fromFunction1(custombatch), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ProductstatusesResource]
   }

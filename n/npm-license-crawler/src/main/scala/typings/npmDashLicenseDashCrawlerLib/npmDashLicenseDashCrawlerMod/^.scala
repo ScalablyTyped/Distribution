@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("npm-license-crawler", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def dumpLicenses(
-    args: npmDashLicenseDashCrawlerLib.npmDashLicenseDashCrawlerMod.CrawlerOptions,
-    callback: npmDashLicenseDashCrawlerLib.npmDashLicenseDashCrawlerMod.Callback
-  ): scala.Unit = js.native
+  def dumpLicenses(args: CrawlerOptions, callback: Callback): scala.Unit = js.native
 }
 

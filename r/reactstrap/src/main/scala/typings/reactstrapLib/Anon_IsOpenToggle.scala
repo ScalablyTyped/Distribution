@@ -12,10 +12,10 @@ trait Anon_IsOpenToggle extends js.Object {
 
 object Anon_IsOpenToggle {
   @scala.inline
-  def apply(isOpen: js.UndefOr[scala.Boolean] = js.undefined, toggle: js.Function0[scala.Unit] = null): Anon_IsOpenToggle = {
+  def apply(isOpen: js.UndefOr[scala.Boolean] = js.undefined, toggle: () => scala.Unit = null): Anon_IsOpenToggle = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
-    if (toggle != null) __obj.updateDynamic("toggle")(toggle)
+    if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction0(toggle))
     __obj.asInstanceOf[Anon_IsOpenToggle]
   }
 }

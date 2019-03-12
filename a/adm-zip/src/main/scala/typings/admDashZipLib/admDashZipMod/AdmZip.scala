@@ -87,7 +87,7 @@ trait AdmZip extends js.Object {
   def extractAllToAsync(
     targetPath: java.lang.String,
     overwrite: scala.Boolean,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def extractEntryTo(entryPath: admDashZipLib.admDashZipMod.AdmZipNs.IZipEntry, targetPath: java.lang.String): scala.Boolean = js.native
   def extractEntryTo(
@@ -215,7 +215,7 @@ trait AdmZip extends js.Object {
   def writeZip(targetFileName: java.lang.String): scala.Unit = js.native
   def writeZip(
     targetFileName: java.lang.String,
-    callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]
+    callback: js.Function1[/* error */ stdLib.Error | scala.Null, scala.Unit]
   ): scala.Unit = js.native
 }
 

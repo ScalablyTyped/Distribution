@@ -24,7 +24,7 @@ trait ScriptEvent extends AllEventObject {
 object ScriptEvent {
   @scala.inline
   def apply(
-    Arguments: activexDashInteropLib.SafeArray[_],
+    Arguments: stdLib.SafeArray[_],
     Helper: js.Any,
     ListenerType: activexDashLibreofficeLib.`type`,
     MethodName: java.lang.String,

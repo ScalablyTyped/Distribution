@@ -30,12 +30,12 @@ object RequireShim {
   def apply(
     deps: js.Array[java.lang.String] = null,
     exports: java.lang.String = null,
-    init: js.Function1[/* repeated */ js.Any, _] = null
+    init: /* repeated */ js.Any => _ = null
   ): RequireShim = {
     val __obj = js.Dynamic.literal()
     if (deps != null) __obj.updateDynamic("deps")(deps)
     if (exports != null) __obj.updateDynamic("exports")(exports)
-    if (init != null) __obj.updateDynamic("init")(init)
+    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     __obj.asInstanceOf[RequireShim]
   }
 }

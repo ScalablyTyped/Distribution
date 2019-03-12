@@ -13,13 +13,13 @@ trait Observer[T] extends IObserver[T] {
 object Observer {
   @scala.inline
   def apply[T](
-    asObserver: js.Function0[Observer[T]],
-    onCompleted: js.Function0[scala.Unit],
-    onError: js.Function1[js.Any, scala.Unit],
-    onNext: js.Function1[T, scala.Unit],
-    toNotifier: js.Function0[js.Function1[/* notification */ Notification[T], scala.Unit]]
+    asObserver: () => Observer[T],
+    onCompleted: () => scala.Unit,
+    onError: js.Any => scala.Unit,
+    onNext: T => scala.Unit,
+    toNotifier: () => js.Function1[/* notification */ Notification[T], scala.Unit]
   ): Observer[T] = {
-    val __obj = js.Dynamic.literal(asObserver = asObserver, onCompleted = onCompleted, onError = onError, onNext = onNext, toNotifier = toNotifier)
+    val __obj = js.Dynamic.literal(asObserver = js.Any.fromFunction0(asObserver), onCompleted = js.Any.fromFunction0(onCompleted), onError = js.Any.fromFunction1(onError), onNext = js.Any.fromFunction1(onNext), toNotifier = js.Any.fromFunction0(toNotifier))
   
     __obj.asInstanceOf[Observer[T]]
   }

@@ -95,11 +95,7 @@ object ServerOptions {
   @scala.inline
   def apply(
     adapter: Adapter = null,
-    allowRequest: js.Function2[
-      /* request */ js.Any, 
-      /* callback */ js.Function2[/* err */ scala.Double, /* success */ scala.Boolean, scala.Unit], 
-      scala.Unit
-    ] = null,
+    allowRequest: (/* request */ js.Any, /* callback */ js.Function2[/* err */ scala.Double, /* success */ scala.Boolean, scala.Unit]) => scala.Unit = null,
     allowUpgrades: js.UndefOr[scala.Boolean] = js.undefined,
     cookie: java.lang.String | scala.Boolean = null,
     httpCompression: js.Object | scala.Boolean = null,
@@ -114,7 +110,7 @@ object ServerOptions {
   ): ServerOptions = {
     val __obj = js.Dynamic.literal()
     if (adapter != null) __obj.updateDynamic("adapter")(adapter)
-    if (allowRequest != null) __obj.updateDynamic("allowRequest")(allowRequest)
+    if (allowRequest != null) __obj.updateDynamic("allowRequest")(js.Any.fromFunction2(allowRequest))
     if (!js.isUndefined(allowUpgrades)) __obj.updateDynamic("allowUpgrades")(allowUpgrades)
     if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
     if (httpCompression != null) __obj.updateDynamic("httpCompression")(httpCompression.asInstanceOf[js.Any])

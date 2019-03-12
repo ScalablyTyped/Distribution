@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def clear(): scala.Unit = js.native
-  def getEnv(): js.Promise[googleDashAuthDashLibraryLib.buildSrcAuthEnvDetectMod.GCPEnv] = js.native
+  def getEnv(): js.Promise[GCPEnv] = js.native
 }
 

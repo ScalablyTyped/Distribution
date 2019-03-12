@@ -37,15 +37,15 @@ object Proxy {
   @scala.inline
   def apply(
     connection: Connection,
-    hasSubscriptions: js.Function0[scala.Boolean],
+    hasSubscriptions: () => scala.Boolean,
     hubName: java.lang.String,
-    init: js.Function2[Connection, java.lang.String, scala.Unit],
-    invoke: js.Function2[java.lang.String, /* repeated */ js.Any, jqueryLib.JQueryPromise[_]],
-    off: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit], Proxy],
-    on: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit], Proxy],
+    init: (Connection, java.lang.String) => scala.Unit,
+    invoke: (java.lang.String, /* repeated */ js.Any) => jqueryLib.JQueryPromise[_],
+    off: (java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit]) => Proxy,
+    on: (java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit]) => Proxy,
     state: js.Any
   ): Proxy = {
-    val __obj = js.Dynamic.literal(connection = connection, hasSubscriptions = hasSubscriptions, hubName = hubName, init = init, invoke = invoke, off = off, on = on, state = state)
+    val __obj = js.Dynamic.literal(connection = connection, hasSubscriptions = js.Any.fromFunction0(hasSubscriptions), hubName = hubName, init = js.Any.fromFunction2(init), invoke = js.Any.fromFunction2(invoke), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), state = state)
   
     __obj.asInstanceOf[Proxy]
   }

@@ -12,7 +12,7 @@ object ^ extends js.Object {
   var emptyFn: js.Any = js.native
   var enableGarbageCollector: scala.Boolean = js.native
   var enableListenerCollection: scala.Boolean = js.native
-  var enumerables: senchaUnderscoreTouchLib.ExtNs.Array = js.native
+  var enumerables: Array = js.native
   var frameStartTime: js.Any = js.native
   var isSecure: scala.Boolean = js.native
   var version: java.lang.String = js.native
@@ -32,15 +32,15 @@ object ^ extends js.Object {
   def bind(): js.Any = js.native
   def bind(fn: js.Any): js.Any = js.native
   def bind(fn: js.Any, scope: js.Any): js.Any = js.native
-  def bind(fn: js.Any, scope: js.Any, args: senchaUnderscoreTouchLib.ExtNs.Array): js.Any = js.native
-  def bind(fn: js.Any, scope: js.Any, args: senchaUnderscoreTouchLib.ExtNs.Array, appendArgs: js.Any): js.Any = js.native
+  def bind(fn: js.Any, scope: js.Any, args: Array): js.Any = js.native
+  def bind(fn: js.Any, scope: js.Any, args: Array, appendArgs: js.Any): js.Any = js.native
   def callback(): scala.Unit = js.native
   def callback(callback: js.Any): scala.Unit = js.native
   def callback(callback: js.Any, scope: js.Any): scala.Unit = js.native
-  def callback(callback: js.Any, scope: js.Any, args: senchaUnderscoreTouchLib.ExtNs.Array): scala.Unit = js.native
-  def callback(callback: js.Any, scope: js.Any, args: senchaUnderscoreTouchLib.ExtNs.Array, delay: scala.Double): scala.Unit = js.native
-  def clean(): senchaUnderscoreTouchLib.ExtNs.Array = js.native
-  def clean(array: senchaUnderscoreTouchLib.ExtNs.Array): senchaUnderscoreTouchLib.ExtNs.Array = js.native
+  def callback(callback: js.Any, scope: js.Any, args: Array): scala.Unit = js.native
+  def callback(callback: js.Any, scope: js.Any, args: Array, delay: scala.Double): scala.Unit = js.native
+  def clean(): Array = js.native
+  def clean(array: Array): Array = js.native
   def clone(item: js.Any): js.Any = js.native
   def copyTo(): js.Any = js.native
   def copyTo(dest: js.Any): js.Any = js.native
@@ -64,18 +64,12 @@ object ^ extends js.Object {
   def defer(fn: js.Any): scala.Double = js.native
   def defer(fn: js.Any, millis: scala.Double): scala.Double = js.native
   def defer(fn: js.Any, millis: scala.Double, scope: js.Any): scala.Double = js.native
-  def defer(fn: js.Any, millis: scala.Double, scope: js.Any, args: senchaUnderscoreTouchLib.ExtNs.Array): scala.Double = js.native
-  def defer(
-    fn: js.Any,
-    millis: scala.Double,
-    scope: js.Any,
-    args: senchaUnderscoreTouchLib.ExtNs.Array,
-    appendArgs: js.Any
-  ): scala.Double = js.native
-  def define(): senchaUnderscoreTouchLib.ExtNs.IBase = js.native
-  def define(className: java.lang.String): senchaUnderscoreTouchLib.ExtNs.IBase = js.native
-  def define(className: java.lang.String, data: js.Any): senchaUnderscoreTouchLib.ExtNs.IBase = js.native
-  def define(className: java.lang.String, data: js.Any, createdFn: js.Any): senchaUnderscoreTouchLib.ExtNs.IBase = js.native
+  def defer(fn: js.Any, millis: scala.Double, scope: js.Any, args: Array): scala.Double = js.native
+  def defer(fn: js.Any, millis: scala.Double, scope: js.Any, args: Array, appendArgs: js.Any): scala.Double = js.native
+  def define(): IBase = js.native
+  def define(className: java.lang.String): IBase = js.native
+  def define(className: java.lang.String, data: js.Any): IBase = js.native
+  def define(className: java.lang.String, data: js.Any, createdFn: js.Any): IBase = js.native
   def destroy(args: js.Any*): scala.Unit = js.native
   def dispatch(): scala.Unit = js.native
   def each(): scala.Boolean = js.native
@@ -86,7 +80,7 @@ object ^ extends js.Object {
   def encode(): java.lang.String = js.native
   def encode(o: js.Any): java.lang.String = js.native
   def exclude(): js.Any = js.native
-  def exclude(excludes: senchaUnderscoreTouchLib.ExtNs.Array): js.Any = js.native
+  def exclude(excludes: Array): js.Any = js.native
   def extend(): js.Any = js.native
   def extend(superclass: js.Any): js.Any = js.native
   def extend(superclass: js.Any, overrides: js.Any): js.Any = js.native
@@ -100,24 +94,24 @@ object ^ extends js.Object {
     instance: js.Any,
     aliasNamespace: java.lang.String
   ): scala.Unit = js.native
-  def flatten(): senchaUnderscoreTouchLib.ExtNs.Array = js.native
-  def flatten(array: senchaUnderscoreTouchLib.ExtNs.Array): senchaUnderscoreTouchLib.ExtNs.Array = js.native
+  def flatten(): Array = js.native
+  def flatten(array: Array): Array = js.native
   def fly(): senchaUnderscoreTouchLib.ExtNs.domNs.IElement = js.native
   def fly(element: js.Any): senchaUnderscoreTouchLib.ExtNs.domNs.IElement = js.native
   def fly(element: js.Any, named: java.lang.String): senchaUnderscoreTouchLib.ExtNs.domNs.IElement = js.native
   def get(): senchaUnderscoreTouchLib.ExtNs.domNs.IElement = js.native
   def get(element: js.Any): senchaUnderscoreTouchLib.ExtNs.domNs.IElement = js.native
-  def getBody(): senchaUnderscoreTouchLib.ExtNs.IElement = js.native
+  def getBody(): IElement = js.native
   def getClassName(): java.lang.String = js.native
   def getClassName(`object`: js.Any): java.lang.String = js.native
-  def getCmp(): senchaUnderscoreTouchLib.ExtNs.IComponent = js.native
-  def getCmp(id: java.lang.String): senchaUnderscoreTouchLib.ExtNs.IComponent = js.native
+  def getCmp(): IComponent = js.native
+  def getCmp(id: java.lang.String): IComponent = js.native
   def getDisplayName(): java.lang.String = js.native
   def getDisplayName(`object`: js.Any): java.lang.String = js.native
-  def getDoc(): senchaUnderscoreTouchLib.ExtNs.IElement = js.native
+  def getDoc(): IElement = js.native
   def getDom(): stdLib.HTMLElement = js.native
   def getDom(el: js.Any): stdLib.HTMLElement = js.native
-  def getHead(): senchaUnderscoreTouchLib.ExtNs.IElement = js.native
+  def getHead(): IElement = js.native
   def getOrientation(): scala.Unit = js.native
   def getStore(): senchaUnderscoreTouchLib.ExtNs.dataNs.IStore = js.native
   def getStore(store: js.Any): senchaUnderscoreTouchLib.ExtNs.dataNs.IStore = js.native
@@ -167,7 +161,7 @@ object ^ extends js.Object {
   def max(array: js.Any): js.Any = js.native
   def max(array: js.Any, comparisonFn: js.Any): js.Any = js.native
   def mean(): scala.Double = js.native
-  def mean(array: senchaUnderscoreTouchLib.ExtNs.Array): scala.Double = js.native
+  def mean(array: Array): scala.Double = js.native
   def merge(): scala.Unit = js.native
   def min(): js.Any = js.native
   def min(array: js.Any): js.Any = js.native
@@ -187,15 +181,15 @@ object ^ extends js.Object {
   def `override`(cls: js.Any, overrides: js.Any): scala.Unit = js.native
   def pass(): js.Any = js.native
   def pass(fn: js.Any): js.Any = js.native
-  def pass(fn: js.Any, args: senchaUnderscoreTouchLib.ExtNs.Array): js.Any = js.native
-  def pass(fn: js.Any, args: senchaUnderscoreTouchLib.ExtNs.Array, scope: js.Any): js.Any = js.native
-  def pluck(): senchaUnderscoreTouchLib.ExtNs.Array = js.native
-  def pluck(array: js.Any): senchaUnderscoreTouchLib.ExtNs.Array = js.native
-  def pluck(array: js.Any, propertyName: java.lang.String): senchaUnderscoreTouchLib.ExtNs.Array = js.native
+  def pass(fn: js.Any, args: Array): js.Any = js.native
+  def pass(fn: js.Any, args: Array, scope: js.Any): js.Any = js.native
+  def pluck(): Array = js.native
+  def pluck(array: js.Any): Array = js.native
+  def pluck(array: js.Any, propertyName: java.lang.String): Array = js.native
   def preg(): scala.Unit = js.native
-  def query(): senchaUnderscoreTouchLib.ExtNs.Array = js.native
-  def query(selector: java.lang.String): senchaUnderscoreTouchLib.ExtNs.Array = js.native
-  def query(selector: java.lang.String, root: js.Any): senchaUnderscoreTouchLib.ExtNs.Array = js.native
+  def query(): Array = js.native
+  def query(selector: java.lang.String): Array = js.native
+  def query(selector: java.lang.String, root: js.Any): Array = js.native
   def redirect(): scala.Unit = js.native
   def reg(): scala.Unit = js.native
   def regApplication(): scala.Unit = js.native
@@ -221,22 +215,22 @@ object ^ extends js.Object {
   def setup(): scala.Unit = js.native
   def setup(config: js.Any): scala.Unit = js.native
   def sum(): scala.Double = js.native
-  def sum(array: senchaUnderscoreTouchLib.ExtNs.Array): scala.Double = js.native
+  def sum(array: Array): scala.Double = js.native
   def syncRequire(): scala.Unit = js.native
   def syncRequire(expressions: js.Any): scala.Unit = js.native
   def syncRequire(expressions: js.Any, fn: js.Any): scala.Unit = js.native
   def syncRequire(expressions: js.Any, fn: js.Any, scope: js.Any): scala.Unit = js.native
   def syncRequire(expressions: js.Any, fn: js.Any, scope: js.Any, excludes: js.Any): scala.Unit = js.native
-  def toArray(): senchaUnderscoreTouchLib.ExtNs.Array = js.native
-  def toArray(iterable: js.Any): senchaUnderscoreTouchLib.ExtNs.Array = js.native
-  def toArray(iterable: js.Any, start: scala.Double): senchaUnderscoreTouchLib.ExtNs.Array = js.native
-  def toArray(iterable: js.Any, start: scala.Double, end: scala.Double): senchaUnderscoreTouchLib.ExtNs.Array = js.native
+  def toArray(): Array = js.native
+  def toArray(iterable: js.Any): Array = js.native
+  def toArray(iterable: js.Any, start: scala.Double): Array = js.native
+  def toArray(iterable: js.Any, start: scala.Double, end: scala.Double): Array = js.native
   def `type`(): java.lang.String = js.native
   def `type`(value: js.Any): java.lang.String = js.native
   def typeOf(): java.lang.String = js.native
   def typeOf(value: js.Any): java.lang.String = js.native
-  def unique(): senchaUnderscoreTouchLib.ExtNs.Array = js.native
-  def unique(array: senchaUnderscoreTouchLib.ExtNs.Array): senchaUnderscoreTouchLib.ExtNs.Array = js.native
+  def unique(): Array = js.native
+  def unique(array: Array): Array = js.native
   def urlAppend(): java.lang.String = js.native
   def urlAppend(url: java.lang.String): java.lang.String = js.native
   def urlAppend(url: java.lang.String, string: java.lang.String): java.lang.String = js.native

@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class TableView protected () extends js.Object {
   var AllowInCellEditing: scala.Boolean = js.native
   var AlwaysExpandConversation: scala.Boolean = js.native
-  val Application: Application = js.native
-  val AutoFormatRules: AutoFormatRules = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
+  val AutoFormatRules: activexDashOutlookLib.OutlookNs.AutoFormatRules = js.native
   var AutoPreview: OlAutoPreview = js.native
   val AutoPreviewFont: ViewFont = js.native
   var AutomaticColumnSizing: scala.Boolean = js.native
@@ -43,14 +43,14 @@ class TableView protected () extends js.Object {
   var ShowUnreadAndFlaggedMessages: scala.Boolean = js.native
   val SortFields: OrderFields = js.native
   val Standard: scala.Boolean = js.native
-  val ViewFields: ViewFields = js.native
+  val ViewFields: activexDashOutlookLib.OutlookNs.ViewFields = js.native
   val ViewType: OlViewType = js.native
   var XML: java.lang.String = js.native
   def Apply(): scala.Unit = js.native
   def Copy(Name: java.lang.String, SaveOption: OlViewSaveOption): View = js.native
   def Delete(): scala.Unit = js.native
   def GetTable(): Table = js.native
-  def GoToDate(Date: activexDashInteropLib.VarDate): scala.Unit = js.native
+  def GoToDate(Date: stdLib.VarDate): scala.Unit = js.native
   def Reset(): scala.Unit = js.native
   def Save(): scala.Unit = js.native
 }

@@ -83,30 +83,16 @@ object MergeViewEditorConfiguration {
     indentUnit: scala.Int | scala.Double = null,
     indentWithTabs: js.UndefOr[scala.Boolean] = js.undefined,
     keyMap: java.lang.String = null,
-    lineNumberFormatter: js.Function1[/* line */ scala.Double, java.lang.String] = null,
+    lineNumberFormatter: /* line */ scala.Double => java.lang.String = null,
     lineNumbers: js.UndefOr[scala.Boolean] = js.undefined,
     lineWrapping: js.UndefOr[scala.Boolean] = js.undefined,
     lint: scala.Boolean | codemirrorLib.codemirrorMod.CodeMirrorNs.LintOptions = null,
     matchBrackets: js.UndefOr[scala.Boolean] = js.undefined,
     maxHighlightLength: scala.Int | scala.Double = null,
     mode: js.Any = null,
-    onCollapse: js.Function4[
-      /* mergeView */ MergeViewEditor, 
-      /* line */ scala.Double, 
-      /* size */ scala.Double, 
-      /* mark */ codemirrorLib.codemirrorMod.CodeMirrorNs.TextMarker, 
-      scala.Unit
-    ] = null,
-    onDragEvent: js.Function2[
-      /* instance */ codemirrorLib.codemirrorMod.CodeMirrorNs.Editor, 
-      /* event */ stdLib.Event, 
-      scala.Boolean
-    ] = null,
-    onKeyEvent: js.Function2[
-      /* instance */ codemirrorLib.codemirrorMod.CodeMirrorNs.Editor, 
-      /* event */ stdLib.Event, 
-      scala.Boolean
-    ] = null,
+    onCollapse: (/* mergeView */ MergeViewEditor, /* line */ scala.Double, /* size */ scala.Double, /* mark */ codemirrorLib.codemirrorMod.CodeMirrorNs.TextMarker) => scala.Unit = null,
+    onDragEvent: (/* instance */ codemirrorLib.codemirrorMod.CodeMirrorNs.Editor, /* event */ stdLib.Event) => scala.Boolean = null,
+    onKeyEvent: (/* instance */ codemirrorLib.codemirrorMod.CodeMirrorNs.Editor, /* event */ stdLib.Event) => scala.Boolean = null,
     origLeft: js.Any = null,
     origRight: js.Any = null,
     placeholder: java.lang.String = null,
@@ -148,16 +134,16 @@ object MergeViewEditorConfiguration {
     if (indentUnit != null) __obj.updateDynamic("indentUnit")(indentUnit.asInstanceOf[js.Any])
     if (!js.isUndefined(indentWithTabs)) __obj.updateDynamic("indentWithTabs")(indentWithTabs)
     if (keyMap != null) __obj.updateDynamic("keyMap")(keyMap)
-    if (lineNumberFormatter != null) __obj.updateDynamic("lineNumberFormatter")(lineNumberFormatter)
+    if (lineNumberFormatter != null) __obj.updateDynamic("lineNumberFormatter")(js.Any.fromFunction1(lineNumberFormatter))
     if (!js.isUndefined(lineNumbers)) __obj.updateDynamic("lineNumbers")(lineNumbers)
     if (!js.isUndefined(lineWrapping)) __obj.updateDynamic("lineWrapping")(lineWrapping)
     if (lint != null) __obj.updateDynamic("lint")(lint.asInstanceOf[js.Any])
     if (!js.isUndefined(matchBrackets)) __obj.updateDynamic("matchBrackets")(matchBrackets)
     if (maxHighlightLength != null) __obj.updateDynamic("maxHighlightLength")(maxHighlightLength.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (onCollapse != null) __obj.updateDynamic("onCollapse")(onCollapse)
-    if (onDragEvent != null) __obj.updateDynamic("onDragEvent")(onDragEvent)
-    if (onKeyEvent != null) __obj.updateDynamic("onKeyEvent")(onKeyEvent)
+    if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction4(onCollapse))
+    if (onDragEvent != null) __obj.updateDynamic("onDragEvent")(js.Any.fromFunction2(onDragEvent))
+    if (onKeyEvent != null) __obj.updateDynamic("onKeyEvent")(js.Any.fromFunction2(onKeyEvent))
     if (origLeft != null) __obj.updateDynamic("origLeft")(origLeft)
     if (origRight != null) __obj.updateDynamic("origRight")(origRight)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)

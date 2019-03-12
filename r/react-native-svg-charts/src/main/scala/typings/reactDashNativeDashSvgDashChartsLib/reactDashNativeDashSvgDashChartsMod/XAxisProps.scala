@@ -15,7 +15,7 @@ object XAxisProps {
   def apply[T](
     data: js.Array[T],
     contentInset: reactDashNativeDashSvgDashChartsLib.Anon_Left = null,
-    formatLabel: js.Function2[/* value */ js.Any, /* index */ scala.Double, scala.Double | java.lang.String] = null,
+    formatLabel: (/* value */ js.Any, /* index */ scala.Double) => scala.Double | java.lang.String = null,
     numberOfTicks: scala.Int | scala.Double = null,
     scale: ScaleFunction = null,
     spacingInner: scala.Int | scala.Double = null,
@@ -26,7 +26,7 @@ object XAxisProps {
   ): XAxisProps[T] = {
     val __obj = js.Dynamic.literal(data = data)
     if (contentInset != null) __obj.updateDynamic("contentInset")(contentInset)
-    if (formatLabel != null) __obj.updateDynamic("formatLabel")(formatLabel)
+    if (formatLabel != null) __obj.updateDynamic("formatLabel")(js.Any.fromFunction2(formatLabel))
     if (numberOfTicks != null) __obj.updateDynamic("numberOfTicks")(numberOfTicks.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale)
     if (spacingInner != null) __obj.updateDynamic("spacingInner")(spacingInner.asInstanceOf[js.Any])

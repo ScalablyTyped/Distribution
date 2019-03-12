@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/SelectionControls/Switch", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentClass[
-    reactDashMdLib.libSelectionControlsSwitchMod.SwitchProps, 
-    reactLib.reactMod.ReactNs.ComponentState
-  ] = js.native
+  val default: reactLib.reactMod.ReactNs.ComponentClass[SwitchProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
 }
 

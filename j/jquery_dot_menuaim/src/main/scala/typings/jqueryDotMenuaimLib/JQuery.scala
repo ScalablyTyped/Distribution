@@ -15,8 +15,8 @@ trait JQuery extends js.Object {
 
 object JQuery {
   @scala.inline
-  def apply(menuAim: js.Function1[JQueryMenuAimOptions, JQuery]): JQuery = {
-    val __obj = js.Dynamic.literal(menuAim = menuAim)
+  def apply(menuAim: JQueryMenuAimOptions => JQuery): JQuery = {
+    val __obj = js.Dynamic.literal(menuAim = js.Any.fromFunction1(menuAim))
   
     __obj.asInstanceOf[JQuery]
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Element extends js.Object {
-  var element: reactLib.Element
+  var element: stdLib.Element
   var model: stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModel[
     stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEntity[stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseListener[_]], 
     stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModelListener
@@ -16,7 +16,7 @@ trait Anon_Element extends js.Object {
 object Anon_Element {
   @scala.inline
   def apply(
-    element: reactLib.Element,
+    element: stdLib.Element,
     model: stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModel[
       stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEntity[stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseListener[_]], 
       stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModelListener

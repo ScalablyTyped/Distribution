@@ -26,13 +26,13 @@ trait Props extends js.Object {
     */
   var disabled: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Props to apply to the container. */
-  var innerProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement]] = js.undefined
+  var innerProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement]] = js.undefined
   /** The number of the month (from 1 to 12) which the calendar should be on. */
   var month: js.UndefOr[scala.Double] = js.undefined
   /** Function which is called when the calendar is no longer focused. */
   var onBlur: js.UndefOr[
     js.Function1[
-      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement]], 
+      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLDivElement]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -44,7 +44,7 @@ trait Props extends js.Object {
   /** Called when the calendar receives focus. This could be from a mouse event on the container by tabbing into it. */
   var onFocus: js.UndefOr[
     js.Function1[
-      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement]], 
+      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLDivElement]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -82,18 +82,12 @@ object Props {
     defaultSelected: js.Array[java.lang.String] = null,
     defaultYear: scala.Int | scala.Double = null,
     disabled: js.Array[java.lang.String] = null,
-    innerProps: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    innerProps: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
     month: scala.Int | scala.Double = null,
-    onBlur: js.Function1[
-      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement]], 
-      scala.Unit
-    ] = null,
-    onChange: js.Function1[/* e */ ChangeEvent, scala.Unit] = null,
-    onFocus: js.Function1[
-      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement]], 
-      scala.Unit
-    ] = null,
-    onSelect: js.Function1[/* e */ SelectEvent, scala.Unit] = null,
+    onBlur: /* e */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLDivElement]] => scala.Unit = null,
+    onChange: /* e */ ChangeEvent => scala.Unit = null,
+    onFocus: /* e */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLDivElement]] => scala.Unit = null,
+    onSelect: /* e */ SelectEvent => scala.Unit = null,
     previouslySelected: js.Array[java.lang.String] = null,
     selected: js.Array[java.lang.String] = null,
     today: java.lang.String = null,
@@ -110,10 +104,10 @@ object Props {
     if (disabled != null) __obj.updateDynamic("disabled")(disabled)
     if (innerProps != null) __obj.updateDynamic("innerProps")(innerProps)
     if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (previouslySelected != null) __obj.updateDynamic("previouslySelected")(previouslySelected)
     if (selected != null) __obj.updateDynamic("selected")(selected)
     if (today != null) __obj.updateDynamic("today")(today)

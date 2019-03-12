@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ExceptionResult protected ()
   extends inversifyDashExpressDashUtilsLib.dtsResultsExceptionResultMod.default {
-  def this(error: nodeLib.Error, apiController: inversifyDashExpressDashUtilsLib.dtsBaseUnderscoreHttpUnderscoreControllerMod.BaseHttpController) = this()
+  def this(error: stdLib.Error, apiController: inversifyDashExpressDashUtilsLib.dtsBaseUnderscoreHttpUnderscoreControllerMod.BaseHttpController) = this()
 }
 

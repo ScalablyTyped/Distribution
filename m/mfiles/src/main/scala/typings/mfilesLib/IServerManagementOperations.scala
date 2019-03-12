@@ -24,16 +24,16 @@ trait IServerManagementOperations extends js.Object {
 object IServerManagementOperations {
   @scala.inline
   def apply(
-    BackupMasterDB: js.Function4[java.lang.String, scala.Boolean, scala.Double, IImpersonation, scala.Unit],
-    ConfigureWebAccessToDefaultWebSite: js.Function0[scala.Unit],
-    ConfigureWebAccessToExistingWebSite: js.Function1[java.lang.String, scala.Unit],
-    ConfigureWebAccessToNewVirtualDirectory: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    ConfigureWebAccessToNewWebSite: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    GetEventHandlers: js.Function0[IEventHandlers],
-    RestoreMasterDB: js.Function2[java.lang.String, IImpersonation, scala.Unit],
-    SetEventHandlers: js.Function1[IEventHandlers, scala.Unit]
+    BackupMasterDB: (java.lang.String, scala.Boolean, scala.Double, IImpersonation) => scala.Unit,
+    ConfigureWebAccessToDefaultWebSite: () => scala.Unit,
+    ConfigureWebAccessToExistingWebSite: java.lang.String => scala.Unit,
+    ConfigureWebAccessToNewVirtualDirectory: (java.lang.String, java.lang.String) => scala.Unit,
+    ConfigureWebAccessToNewWebSite: (java.lang.String, java.lang.String) => scala.Unit,
+    GetEventHandlers: () => IEventHandlers,
+    RestoreMasterDB: (java.lang.String, IImpersonation) => scala.Unit,
+    SetEventHandlers: IEventHandlers => scala.Unit
   ): IServerManagementOperations = {
-    val __obj = js.Dynamic.literal(BackupMasterDB = BackupMasterDB, ConfigureWebAccessToDefaultWebSite = ConfigureWebAccessToDefaultWebSite, ConfigureWebAccessToExistingWebSite = ConfigureWebAccessToExistingWebSite, ConfigureWebAccessToNewVirtualDirectory = ConfigureWebAccessToNewVirtualDirectory, ConfigureWebAccessToNewWebSite = ConfigureWebAccessToNewWebSite, GetEventHandlers = GetEventHandlers, RestoreMasterDB = RestoreMasterDB, SetEventHandlers = SetEventHandlers)
+    val __obj = js.Dynamic.literal(BackupMasterDB = js.Any.fromFunction4(BackupMasterDB), ConfigureWebAccessToDefaultWebSite = js.Any.fromFunction0(ConfigureWebAccessToDefaultWebSite), ConfigureWebAccessToExistingWebSite = js.Any.fromFunction1(ConfigureWebAccessToExistingWebSite), ConfigureWebAccessToNewVirtualDirectory = js.Any.fromFunction2(ConfigureWebAccessToNewVirtualDirectory), ConfigureWebAccessToNewWebSite = js.Any.fromFunction2(ConfigureWebAccessToNewWebSite), GetEventHandlers = js.Any.fromFunction0(GetEventHandlers), RestoreMasterDB = js.Any.fromFunction2(RestoreMasterDB), SetEventHandlers = js.Any.fromFunction1(SetEventHandlers))
   
     __obj.asInstanceOf[IServerManagementOperations]
   }

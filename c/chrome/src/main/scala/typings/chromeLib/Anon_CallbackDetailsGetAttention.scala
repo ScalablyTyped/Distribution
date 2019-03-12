@@ -15,12 +15,12 @@ trait Anon_CallbackDetailsGetAttention extends js.Object {
 object Anon_CallbackDetailsGetAttention {
   @scala.inline
   def apply(
-    getAttention: js.Function1[chromeLib.chromeNs.scriptBadgeNs.AttentionDetails, scala.Unit],
-    getPopup: js.Function2[chromeLib.chromeNs.scriptBadgeNs.GetPopupDetails, js.Function, scala.Unit],
+    getAttention: chromeLib.chromeNs.scriptBadgeNs.AttentionDetails => scala.Unit,
+    getPopup: (chromeLib.chromeNs.scriptBadgeNs.GetPopupDetails, js.Function) => scala.Unit,
     onClicked: chromeLib.chromeNs.scriptBadgeNs.ScriptBadgeClickedEvent,
-    setPopup: js.Function1[chromeLib.chromeNs.scriptBadgeNs.SetPopupDetails, scala.Unit]
+    setPopup: chromeLib.chromeNs.scriptBadgeNs.SetPopupDetails => scala.Unit
   ): Anon_CallbackDetailsGetAttention = {
-    val __obj = js.Dynamic.literal(getAttention = getAttention, getPopup = getPopup, onClicked = onClicked, setPopup = setPopup)
+    val __obj = js.Dynamic.literal(getAttention = js.Any.fromFunction1(getAttention), getPopup = js.Any.fromFunction2(getPopup), onClicked = onClicked, setPopup = js.Any.fromFunction1(setPopup))
   
     __obj.asInstanceOf[Anon_CallbackDetailsGetAttention]
   }

@@ -14,11 +14,11 @@ trait ISearchPaneSuggestionsRequest extends js.Object {
 object ISearchPaneSuggestionsRequest {
   @scala.inline
   def apply(
-    getDeferral: js.Function0[SearchPaneSuggestionsRequestDeferral],
+    getDeferral: () => SearchPaneSuggestionsRequestDeferral,
     isCanceled: scala.Boolean,
     searchSuggestionCollection: SearchSuggestionCollection
   ): ISearchPaneSuggestionsRequest = {
-    val __obj = js.Dynamic.literal(getDeferral = getDeferral, isCanceled = isCanceled, searchSuggestionCollection = searchSuggestionCollection)
+    val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral), isCanceled = isCanceled, searchSuggestionCollection = searchSuggestionCollection)
   
     __obj.asInstanceOf[ISearchPaneSuggestionsRequest]
   }

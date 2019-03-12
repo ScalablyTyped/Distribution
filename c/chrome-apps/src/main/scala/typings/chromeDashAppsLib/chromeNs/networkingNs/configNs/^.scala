@@ -29,12 +29,7 @@ object ^ extends js.Object {
     * received with this event and the appropriate authentication result.
     * @param networkInfo Information about the network on which a captive portal was detected.
     */
-  val onCaptivePortalDetected: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[
-      /* networkInfo */ chromeDashAppsLib.chromeNs.networkingNs.configNs.NetworkInfo, 
-      scala.Unit
-    ]
-  ] = js.native
+  val onCaptivePortalDetected: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* networkInfo */ NetworkInfo, scala.Unit]] = js.native
   /**
     * Called by the app to notify the network config API that it finished
     * a captive portal authentication attempt and hand over the result of the attempt.
@@ -74,9 +69,7 @@ object ^ extends js.Object {
     * @param callback Called back when this operation is finished.
     */
   def setNetworkFilter(
-    networks: js.Array[
-      chromeDashAppsLib.chromeNs.networkingNs.configNs.NetworkInfoFilterHexSSID | chromeDashAppsLib.chromeNs.networkingNs.configNs.NetworkInfoFilterSSID
-    ],
+    networks: js.Array[NetworkInfoFilterHexSSID | NetworkInfoFilterSSID],
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
 }

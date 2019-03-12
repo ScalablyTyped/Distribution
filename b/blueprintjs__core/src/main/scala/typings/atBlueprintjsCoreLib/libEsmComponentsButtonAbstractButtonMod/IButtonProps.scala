@@ -22,7 +22,7 @@ trait IButtonProps
     */
   var alignText: js.UndefOr[atBlueprintjsCoreLib.libEsmCommonAlignmentMod.Alignment] = js.undefined
   /** A ref handler that receives the native HTML element backing this component. */
-  var elementRef: js.UndefOr[js.Function1[/* ref */ reactLib.HTMLElement | scala.Null, _]] = js.undefined
+  var elementRef: js.UndefOr[js.Function1[/* ref */ stdLib.HTMLElement | scala.Null, _]] = js.undefined
   /** Whether this button should expand to fill its container. */
   var fill: js.UndefOr[scala.Boolean] = js.undefined
   /** Whether this button should use large styles. */
@@ -56,17 +56,14 @@ object IButtonProps {
     alignText: atBlueprintjsCoreLib.libEsmCommonAlignmentMod.Alignment = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    elementRef: js.Function1[/* ref */ reactLib.HTMLElement | scala.Null, _] = null,
+    elementRef: /* ref */ stdLib.HTMLElement | scala.Null => _ = null,
     fill: js.UndefOr[scala.Boolean] = js.undefined,
     icon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
     intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
     large: js.UndefOr[scala.Boolean] = js.undefined,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     minimal: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
+    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
     rightIcon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
     small: js.UndefOr[scala.Boolean] = js.undefined,
     text: reactLib.reactMod.ReactNs.ReactNode = null,
@@ -77,14 +74,14 @@ object IButtonProps {
     if (alignText != null) __obj.updateDynamic("alignText")(alignText)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (elementRef != null) __obj.updateDynamic("elementRef")(elementRef)
+    if (elementRef != null) __obj.updateDynamic("elementRef")(js.Any.fromFunction1(elementRef))
     if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (intent != null) __obj.updateDynamic("intent")(intent)
     if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
     if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (rightIcon != null) __obj.updateDynamic("rightIcon")(rightIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(small)) __obj.updateDynamic("small")(small)
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])

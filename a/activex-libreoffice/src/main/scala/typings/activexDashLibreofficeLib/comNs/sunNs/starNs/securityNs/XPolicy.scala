@@ -16,18 +16,18 @@ trait XPolicy
     * Gets the default permissions granted to all users.
     * @returns default permissions
     */
-  val DefaultPermissions: activexDashInteropLib.SafeArray[_]
+  val DefaultPermissions: stdLib.SafeArray[_]
   /**
     * Gets the default permissions granted to all users.
     * @returns default permissions
     */
-  def getDefaultPermissions(): activexDashInteropLib.SafeArray[_]
+  def getDefaultPermissions(): stdLib.SafeArray[_]
   /**
     * Gets the permissions of the specified user excluding the default permissions granted to all users.
     * @param userId user id
     * @returns permissions of the specified user
     */
-  def getPermissions(userId: java.lang.String): activexDashInteropLib.SafeArray[_]
+  def getPermissions(userId: java.lang.String): stdLib.SafeArray[_]
   /** Refreshes the policy configuration. */
   def refresh(): scala.Unit
 }
@@ -35,15 +35,15 @@ trait XPolicy
 object XPolicy {
   @scala.inline
   def apply(
-    DefaultPermissions: activexDashInteropLib.SafeArray[_],
-    acquire: js.Function0[scala.Unit],
-    getDefaultPermissions: js.Function0[activexDashInteropLib.SafeArray[_]],
-    getPermissions: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[_]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    refresh: js.Function0[scala.Unit],
-    release: js.Function0[scala.Unit]
+    DefaultPermissions: stdLib.SafeArray[_],
+    acquire: () => scala.Unit,
+    getDefaultPermissions: () => stdLib.SafeArray[_],
+    getPermissions: java.lang.String => stdLib.SafeArray[_],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    refresh: () => scala.Unit,
+    release: () => scala.Unit
   ): XPolicy = {
-    val __obj = js.Dynamic.literal(DefaultPermissions = DefaultPermissions, acquire = acquire, getDefaultPermissions = getDefaultPermissions, getPermissions = getPermissions, queryInterface = queryInterface, refresh = refresh, release = release)
+    val __obj = js.Dynamic.literal(DefaultPermissions = DefaultPermissions, acquire = js.Any.fromFunction0(acquire), getDefaultPermissions = js.Any.fromFunction0(getDefaultPermissions), getPermissions = js.Any.fromFunction1(getPermissions), queryInterface = js.Any.fromFunction1(queryInterface), refresh = js.Any.fromFunction0(refresh), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XPolicy]
   }

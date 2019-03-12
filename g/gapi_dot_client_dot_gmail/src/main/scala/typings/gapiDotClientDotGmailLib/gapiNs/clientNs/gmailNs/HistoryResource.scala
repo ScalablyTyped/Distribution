@@ -13,12 +13,9 @@ trait HistoryResource extends js.Object {
 object HistoryResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFieldsHistoryTypes, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListHistoryResponse]
-    ]
+    list: gapiDotClientDotGmailLib.Anon_AltFieldsHistoryTypes => gapiDotClientLib.gapiNs.clientNs.Request[ListHistoryResponse]
   ): HistoryResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[HistoryResource]
   }

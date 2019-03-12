@@ -24,11 +24,11 @@ object plupload_queue_progress {
     loaded: scala.Double,
     percent: scala.Double,
     queued: scala.Double,
-    reset: js.Function0[scala.Unit],
+    reset: () => scala.Unit,
     size: scala.Double,
     uploaded: scala.Double
   ): plupload_queue_progress = {
-    val __obj = js.Dynamic.literal(bytesPerSec = bytesPerSec, failed = failed, loaded = loaded, percent = percent, queued = queued, reset = reset, size = size, uploaded = uploaded)
+    val __obj = js.Dynamic.literal(bytesPerSec = bytesPerSec, failed = failed, loaded = loaded, percent = percent, queued = queued, reset = js.Any.fromFunction0(reset), size = size, uploaded = uploaded)
   
     __obj.asInstanceOf[plupload_queue_progress]
   }

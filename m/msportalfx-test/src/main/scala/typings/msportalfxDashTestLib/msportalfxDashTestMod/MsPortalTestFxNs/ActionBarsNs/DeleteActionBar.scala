@@ -16,22 +16,19 @@ object DeleteActionBar {
   def apply(
     baseLocator: msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator,
     cancelButton: ActionBarButton,
-    click: js.Function0[qLib.qMod.QNs.Promise[scala.Unit]],
+    click: () => qLib.qMod.QNs.Promise[scala.Unit],
     deleteButton: ActionBarButton,
-    getAttribute: js.Function1[java.lang.String, qLib.qMod.QNs.Promise[java.lang.String]],
-    getLocator: js.Function0[msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator],
-    getText: js.Function0[qLib.qMod.QNs.Promise[java.lang.String]],
-    isDisplayed: js.Function0[qLib.qMod.QNs.Promise[scala.Boolean]],
-    isElementPresent: js.Function1[
-      msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator, 
-      qLib.qMod.QNs.Promise[scala.Boolean]
-    ],
-    isPresent: js.Function0[qLib.qMod.QNs.Promise[scala.Boolean]],
+    getAttribute: java.lang.String => qLib.qMod.QNs.Promise[java.lang.String],
+    getLocator: () => msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator,
+    getText: () => qLib.qMod.QNs.Promise[java.lang.String],
+    isDisplayed: () => qLib.qMod.QNs.Promise[scala.Boolean],
+    isElementPresent: msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator => qLib.qMod.QNs.Promise[scala.Boolean],
+    isPresent: () => qLib.qMod.QNs.Promise[scala.Boolean],
     parentLocator: msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator,
-    rightClick: js.Function0[qLib.qMod.QNs.Promise[scala.Unit]],
-    sendKeys: js.Function1[/* repeated */ java.lang.String, qLib.qMod.QNs.Promise[scala.Unit]]
+    rightClick: () => qLib.qMod.QNs.Promise[scala.Unit],
+    sendKeys: /* repeated */ java.lang.String => qLib.qMod.QNs.Promise[scala.Unit]
   ): DeleteActionBar = {
-    val __obj = js.Dynamic.literal(baseLocator = baseLocator, cancelButton = cancelButton, click = click, deleteButton = deleteButton, getAttribute = getAttribute, getLocator = getLocator, getText = getText, isDisplayed = isDisplayed, isElementPresent = isElementPresent, isPresent = isPresent, parentLocator = parentLocator, rightClick = rightClick, sendKeys = sendKeys)
+    val __obj = js.Dynamic.literal(baseLocator = baseLocator, cancelButton = cancelButton, click = js.Any.fromFunction0(click), deleteButton = deleteButton, getAttribute = js.Any.fromFunction1(getAttribute), getLocator = js.Any.fromFunction0(getLocator), getText = js.Any.fromFunction0(getText), isDisplayed = js.Any.fromFunction0(isDisplayed), isElementPresent = js.Any.fromFunction1(isElementPresent), isPresent = js.Any.fromFunction0(isPresent), parentLocator = parentLocator, rightClick = js.Any.fromFunction0(rightClick), sendKeys = js.Any.fromFunction1(sendKeys))
   
     __obj.asInstanceOf[DeleteActionBar]
   }

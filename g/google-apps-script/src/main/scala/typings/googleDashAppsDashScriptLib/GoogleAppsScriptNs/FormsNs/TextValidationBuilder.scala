@@ -29,26 +29,26 @@ trait TextValidationBuilder extends js.Object {
 object TextValidationBuilder {
   @scala.inline
   def apply(
-    requireNumber: js.Function0[TextValidationBuilder],
-    requireNumberBetween: js.Function2[stdLib.Number, stdLib.Number, TextValidationBuilder],
-    requireNumberEqualTo: js.Function1[stdLib.Number, TextValidationBuilder],
-    requireNumberGreaterThan: js.Function1[stdLib.Number, TextValidationBuilder],
-    requireNumberGreaterThanOrEqualTo: js.Function1[stdLib.Number, TextValidationBuilder],
-    requireNumberLessThan: js.Function1[stdLib.Number, TextValidationBuilder],
-    requireNumberLessThanOrEqualTo: js.Function1[stdLib.Number, TextValidationBuilder],
-    requireNumberNotBetween: js.Function2[stdLib.Number, stdLib.Number, TextValidationBuilder],
-    requireNumberNotEqualTo: js.Function1[stdLib.Number, TextValidationBuilder],
-    requireTextContainsPattern: js.Function1[java.lang.String, TextValidationBuilder],
-    requireTextDoesNotContainPattern: js.Function1[java.lang.String, TextValidationBuilder],
-    requireTextDoesNotMatchPattern: js.Function1[java.lang.String, TextValidationBuilder],
-    requireTextIsEmail: js.Function0[TextValidationBuilder],
-    requireTextIsUrl: js.Function0[TextValidationBuilder],
-    requireTextLengthGreaterThanOrEqualTo: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, TextValidationBuilder],
-    requireTextLengthLessThanOrEqualTo: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, TextValidationBuilder],
-    requireTextMatchesPattern: js.Function1[java.lang.String, TextValidationBuilder],
-    requireWholeNumber: js.Function0[TextValidationBuilder]
+    requireNumber: () => TextValidationBuilder,
+    requireNumberBetween: (stdLib.Number, stdLib.Number) => TextValidationBuilder,
+    requireNumberEqualTo: stdLib.Number => TextValidationBuilder,
+    requireNumberGreaterThan: stdLib.Number => TextValidationBuilder,
+    requireNumberGreaterThanOrEqualTo: stdLib.Number => TextValidationBuilder,
+    requireNumberLessThan: stdLib.Number => TextValidationBuilder,
+    requireNumberLessThanOrEqualTo: stdLib.Number => TextValidationBuilder,
+    requireNumberNotBetween: (stdLib.Number, stdLib.Number) => TextValidationBuilder,
+    requireNumberNotEqualTo: stdLib.Number => TextValidationBuilder,
+    requireTextContainsPattern: java.lang.String => TextValidationBuilder,
+    requireTextDoesNotContainPattern: java.lang.String => TextValidationBuilder,
+    requireTextDoesNotMatchPattern: java.lang.String => TextValidationBuilder,
+    requireTextIsEmail: () => TextValidationBuilder,
+    requireTextIsUrl: () => TextValidationBuilder,
+    requireTextLengthGreaterThanOrEqualTo: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => TextValidationBuilder,
+    requireTextLengthLessThanOrEqualTo: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => TextValidationBuilder,
+    requireTextMatchesPattern: java.lang.String => TextValidationBuilder,
+    requireWholeNumber: () => TextValidationBuilder
   ): TextValidationBuilder = {
-    val __obj = js.Dynamic.literal(requireNumber = requireNumber, requireNumberBetween = requireNumberBetween, requireNumberEqualTo = requireNumberEqualTo, requireNumberGreaterThan = requireNumberGreaterThan, requireNumberGreaterThanOrEqualTo = requireNumberGreaterThanOrEqualTo, requireNumberLessThan = requireNumberLessThan, requireNumberLessThanOrEqualTo = requireNumberLessThanOrEqualTo, requireNumberNotBetween = requireNumberNotBetween, requireNumberNotEqualTo = requireNumberNotEqualTo, requireTextContainsPattern = requireTextContainsPattern, requireTextDoesNotContainPattern = requireTextDoesNotContainPattern, requireTextDoesNotMatchPattern = requireTextDoesNotMatchPattern, requireTextIsEmail = requireTextIsEmail, requireTextIsUrl = requireTextIsUrl, requireTextLengthGreaterThanOrEqualTo = requireTextLengthGreaterThanOrEqualTo, requireTextLengthLessThanOrEqualTo = requireTextLengthLessThanOrEqualTo, requireTextMatchesPattern = requireTextMatchesPattern, requireWholeNumber = requireWholeNumber)
+    val __obj = js.Dynamic.literal(requireNumber = js.Any.fromFunction0(requireNumber), requireNumberBetween = js.Any.fromFunction2(requireNumberBetween), requireNumberEqualTo = js.Any.fromFunction1(requireNumberEqualTo), requireNumberGreaterThan = js.Any.fromFunction1(requireNumberGreaterThan), requireNumberGreaterThanOrEqualTo = js.Any.fromFunction1(requireNumberGreaterThanOrEqualTo), requireNumberLessThan = js.Any.fromFunction1(requireNumberLessThan), requireNumberLessThanOrEqualTo = js.Any.fromFunction1(requireNumberLessThanOrEqualTo), requireNumberNotBetween = js.Any.fromFunction2(requireNumberNotBetween), requireNumberNotEqualTo = js.Any.fromFunction1(requireNumberNotEqualTo), requireTextContainsPattern = js.Any.fromFunction1(requireTextContainsPattern), requireTextDoesNotContainPattern = js.Any.fromFunction1(requireTextDoesNotContainPattern), requireTextDoesNotMatchPattern = js.Any.fromFunction1(requireTextDoesNotMatchPattern), requireTextIsEmail = js.Any.fromFunction0(requireTextIsEmail), requireTextIsUrl = js.Any.fromFunction0(requireTextIsUrl), requireTextLengthGreaterThanOrEqualTo = js.Any.fromFunction1(requireTextLengthGreaterThanOrEqualTo), requireTextLengthLessThanOrEqualTo = js.Any.fromFunction1(requireTextLengthLessThanOrEqualTo), requireTextMatchesPattern = js.Any.fromFunction1(requireTextMatchesPattern), requireWholeNumber = js.Any.fromFunction0(requireWholeNumber))
   
     __obj.asInstanceOf[TextValidationBuilder]
   }

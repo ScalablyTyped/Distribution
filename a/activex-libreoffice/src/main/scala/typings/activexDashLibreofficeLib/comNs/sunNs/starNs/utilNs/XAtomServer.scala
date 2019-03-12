@@ -31,19 +31,19 @@ trait XAtomServer
     * @param atoms describes which strings to return
     * @returns the strings for the requested atoms
     */
-  def getAtomDescriptions(atoms: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[AtomClassRequest]): activexDashInteropLib.SafeArray[java.lang.String]
+  def getAtomDescriptions(atoms: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[AtomClassRequest]): stdLib.SafeArray[java.lang.String]
   /**
     * returns a whole atom class
     * @param atomClass which class to return
     * @returns the descriptions for all atoms of class `atomClass`
     */
-  def getClass(atomClass: scala.Double): activexDashInteropLib.SafeArray[AtomDescription]
+  def getClass(atomClass: scala.Double): stdLib.SafeArray[AtomDescription]
   /**
     * returns multiple atom classes
     * @param atomClasses which classes to return
     * @returns the descriptions for all atoms of the requested classes
     */
-  def getClasses(atomClasses: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]): activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[AtomDescription]]
+  def getClasses(atomClasses: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]): stdLib.SafeArray[stdLib.SafeArray[AtomDescription]]
   /**
     * returns the atoms that have been registered to a class after an already known atom
     *
@@ -52,28 +52,22 @@ trait XAtomServer
     * @param atom the last known atom
     * @returns all atom description that have been added to class `atomClass` after `atom`
     */
-  def getRecentAtoms(atomClass: scala.Double, atom: scala.Double): activexDashInteropLib.SafeArray[AtomDescription]
+  def getRecentAtoms(atomClass: scala.Double, atom: scala.Double): stdLib.SafeArray[AtomDescription]
 }
 
 object XAtomServer {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getAtom: js.Function3[scala.Double, java.lang.String, scala.Boolean, scala.Double],
-    getAtomDescriptions: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[AtomClassRequest], 
-      activexDashInteropLib.SafeArray[java.lang.String]
-    ],
-    getClass: js.Function1[scala.Double, activexDashInteropLib.SafeArray[AtomDescription]],
-    getClasses: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[AtomDescription]]
-    ],
-    getRecentAtoms: js.Function2[scala.Double, scala.Double, activexDashInteropLib.SafeArray[AtomDescription]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getAtom: (scala.Double, java.lang.String, scala.Boolean) => scala.Double,
+    getAtomDescriptions: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[AtomClassRequest] => stdLib.SafeArray[java.lang.String],
+    getClass: scala.Double => stdLib.SafeArray[AtomDescription],
+    getClasses: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => stdLib.SafeArray[stdLib.SafeArray[AtomDescription]],
+    getRecentAtoms: (scala.Double, scala.Double) => stdLib.SafeArray[AtomDescription],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAtomServer = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getAtom = getAtom, getAtomDescriptions = getAtomDescriptions, getClass = getClass, getClasses = getClasses, getRecentAtoms = getRecentAtoms, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getAtom = js.Any.fromFunction3(getAtom), getAtomDescriptions = js.Any.fromFunction1(getAtomDescriptions), getClass = js.Any.fromFunction1(getClass), getClasses = js.Any.fromFunction1(getClasses), getRecentAtoms = js.Any.fromFunction2(getRecentAtoms), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAtomServer]
   }

@@ -16,12 +16,9 @@ trait SearchResource extends js.Object {
 object SearchResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltChannelIdChannelType, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SearchListResponse]
-    ]
+    list: gapiDotClientDotYoutubeLib.Anon_AltChannelIdChannelType => gapiDotClientLib.gapiNs.clientNs.Request[SearchListResponse]
   ): SearchResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[SearchResource]
   }

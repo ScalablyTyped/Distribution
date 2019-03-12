@@ -12,12 +12,12 @@ trait TreeListColumnShowEvent extends TreeListEvent {
 object TreeListColumnShowEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: TreeList,
     column: js.Any = null
   ): TreeListColumnShowEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (column != null) __obj.updateDynamic("column")(column)
     __obj.asInstanceOf[TreeListColumnShowEvent]
   }

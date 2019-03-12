@@ -15,12 +15,12 @@ trait PivotTransportWithFunctionOperations extends PivotTransport {
 object PivotTransportWithFunctionOperations {
   @scala.inline
   def apply(
-    discover: js.Function1[/* options */ DataSourceTransportOptions, scala.Unit] = null,
-    read: js.Function1[/* options */ DataSourceTransportOptions, scala.Unit] = null
+    discover: /* options */ DataSourceTransportOptions => scala.Unit = null,
+    read: /* options */ DataSourceTransportOptions => scala.Unit = null
   ): PivotTransportWithFunctionOperations = {
     val __obj = js.Dynamic.literal()
-    if (discover != null) __obj.updateDynamic("discover")(discover)
-    if (read != null) __obj.updateDynamic("read")(read)
+    if (discover != null) __obj.updateDynamic("discover")(js.Any.fromFunction1(discover))
+    if (read != null) __obj.updateDynamic("read")(js.Any.fromFunction1(read))
     __obj.asInstanceOf[PivotTransportWithFunctionOperations]
   }
 }

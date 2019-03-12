@@ -14,11 +14,11 @@ trait Utils extends js.Object {
 object Utils {
   @scala.inline
   def apply(
-    toArray_hex: js.Function2[js.Any, hashDotJsLib.hashDotJsLibStrings.hex, js.Array[scala.Double]],
-    toHex: js.Function1[js.Any, java.lang.String]
+    toArray_hex: (js.Any, hashDotJsLib.hashDotJsLibStrings.hex) => js.Array[scala.Double],
+    toHex: js.Any => java.lang.String
   ): Utils = {
-    val __obj = js.Dynamic.literal(toHex = toHex)
-    __obj.updateDynamic("toArray")(toArray_hex)
+    val __obj = js.Dynamic.literal(toHex = js.Any.fromFunction1(toHex))
+    __obj.updateDynamic("toArray")(js.Any.fromFunction2(toArray_hex))
     __obj.asInstanceOf[Utils]
   }
 }

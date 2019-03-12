@@ -19,10 +19,10 @@ object IslandNode {
     body: Body,
     equations: js.Array[Equation],
     neighbors: js.Array[IslandNode],
-    reset: js.Function0[scala.Unit],
+    reset: () => scala.Unit,
     visited: scala.Boolean
   ): IslandNode = {
-    val __obj = js.Dynamic.literal(body = body, equations = equations, neighbors = neighbors, reset = reset, visited = visited)
+    val __obj = js.Dynamic.literal(body = body, equations = equations, neighbors = neighbors, reset = js.Any.fromFunction0(reset), visited = visited)
   
     __obj.asInstanceOf[IslandNode]
   }

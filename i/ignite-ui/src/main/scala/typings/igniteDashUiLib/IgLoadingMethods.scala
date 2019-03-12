@@ -17,14 +17,14 @@ trait IgLoadingMethods extends js.Object {
 object IgLoadingMethods {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
-    hide: js.Function0[scala.Unit],
-    indicator: js.Function0[scala.Unit],
-    indicatorElement: js.Function0[scala.Unit],
-    refreshPos: js.Function0[scala.Unit],
-    show: js.Function1[js.Object, scala.Unit]
+    destroy: () => scala.Unit,
+    hide: () => scala.Unit,
+    indicator: () => scala.Unit,
+    indicatorElement: () => scala.Unit,
+    refreshPos: () => scala.Unit,
+    show: js.Object => scala.Unit
   ): IgLoadingMethods = {
-    val __obj = js.Dynamic.literal(destroy = destroy, hide = hide, indicator = indicator, indicatorElement = indicatorElement, refreshPos = refreshPos, show = show)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), hide = js.Any.fromFunction0(hide), indicator = js.Any.fromFunction0(indicator), indicatorElement = js.Any.fromFunction0(indicatorElement), refreshPos = js.Any.fromFunction0(refreshPos), show = js.Any.fromFunction1(show))
   
     __obj.asInstanceOf[IgLoadingMethods]
   }

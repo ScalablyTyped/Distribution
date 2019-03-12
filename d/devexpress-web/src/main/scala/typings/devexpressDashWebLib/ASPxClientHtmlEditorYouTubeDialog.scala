@@ -34,24 +34,24 @@ trait ASPxClientHtmlEditorYouTubeDialog extends ASPxClientHtmlEditorEditElementD
 object ASPxClientHtmlEditorYouTubeDialog {
   @scala.inline
   def apply(
-    GetAllowFullscreenCheckBox: js.Function0[ASPxClientCheckBox],
-    GetBorderColorColorEdit: js.Function0[ASPxClientColorEdit],
-    GetBorderStyleComboBox: js.Function0[ASPxClientComboBox],
-    GetBorderWidthSpinEdit: js.Function0[ASPxClientSpinEdit],
-    GetBottomMarginTextBox: js.Function0[ASPxClientTextBox],
-    GetCancelButton: js.Function0[ASPxClientButton],
-    GetConfidentModeCheckBox: js.Function0[ASPxClientCheckBox],
-    GetCssClassNameComboBox: js.Function0[ASPxClientComboBox],
-    GetFormLayout: js.Function0[ASPxClientFormLayout],
-    GetLeftMarginTextBox: js.Function0[ASPxClientTextBox],
-    GetOkButton: js.Function0[ASPxClientButton],
-    GetRightMarginTextBox: js.Function0[ASPxClientTextBox],
-    GetShowPlayerControlsCheckBox: js.Function0[ASPxClientCheckBox],
-    GetShowSameVideosCheckBox: js.Function0[ASPxClientCheckBox],
-    GetShowVideoNameCheckBox: js.Function0[ASPxClientCheckBox],
-    GetTopMarginTextBox: js.Function0[ASPxClientTextBox]
+    GetAllowFullscreenCheckBox: () => ASPxClientCheckBox,
+    GetBorderColorColorEdit: () => ASPxClientColorEdit,
+    GetBorderStyleComboBox: () => ASPxClientComboBox,
+    GetBorderWidthSpinEdit: () => ASPxClientSpinEdit,
+    GetBottomMarginTextBox: () => ASPxClientTextBox,
+    GetCancelButton: () => ASPxClientButton,
+    GetConfidentModeCheckBox: () => ASPxClientCheckBox,
+    GetCssClassNameComboBox: () => ASPxClientComboBox,
+    GetFormLayout: () => ASPxClientFormLayout,
+    GetLeftMarginTextBox: () => ASPxClientTextBox,
+    GetOkButton: () => ASPxClientButton,
+    GetRightMarginTextBox: () => ASPxClientTextBox,
+    GetShowPlayerControlsCheckBox: () => ASPxClientCheckBox,
+    GetShowSameVideosCheckBox: () => ASPxClientCheckBox,
+    GetShowVideoNameCheckBox: () => ASPxClientCheckBox,
+    GetTopMarginTextBox: () => ASPxClientTextBox
   ): ASPxClientHtmlEditorYouTubeDialog = {
-    val __obj = js.Dynamic.literal(GetAllowFullscreenCheckBox = GetAllowFullscreenCheckBox, GetBorderColorColorEdit = GetBorderColorColorEdit, GetBorderStyleComboBox = GetBorderStyleComboBox, GetBorderWidthSpinEdit = GetBorderWidthSpinEdit, GetBottomMarginTextBox = GetBottomMarginTextBox, GetCancelButton = GetCancelButton, GetConfidentModeCheckBox = GetConfidentModeCheckBox, GetCssClassNameComboBox = GetCssClassNameComboBox, GetFormLayout = GetFormLayout, GetLeftMarginTextBox = GetLeftMarginTextBox, GetOkButton = GetOkButton, GetRightMarginTextBox = GetRightMarginTextBox, GetShowPlayerControlsCheckBox = GetShowPlayerControlsCheckBox, GetShowSameVideosCheckBox = GetShowSameVideosCheckBox, GetShowVideoNameCheckBox = GetShowVideoNameCheckBox, GetTopMarginTextBox = GetTopMarginTextBox)
+    val __obj = js.Dynamic.literal(GetAllowFullscreenCheckBox = js.Any.fromFunction0(GetAllowFullscreenCheckBox), GetBorderColorColorEdit = js.Any.fromFunction0(GetBorderColorColorEdit), GetBorderStyleComboBox = js.Any.fromFunction0(GetBorderStyleComboBox), GetBorderWidthSpinEdit = js.Any.fromFunction0(GetBorderWidthSpinEdit), GetBottomMarginTextBox = js.Any.fromFunction0(GetBottomMarginTextBox), GetCancelButton = js.Any.fromFunction0(GetCancelButton), GetConfidentModeCheckBox = js.Any.fromFunction0(GetConfidentModeCheckBox), GetCssClassNameComboBox = js.Any.fromFunction0(GetCssClassNameComboBox), GetFormLayout = js.Any.fromFunction0(GetFormLayout), GetLeftMarginTextBox = js.Any.fromFunction0(GetLeftMarginTextBox), GetOkButton = js.Any.fromFunction0(GetOkButton), GetRightMarginTextBox = js.Any.fromFunction0(GetRightMarginTextBox), GetShowPlayerControlsCheckBox = js.Any.fromFunction0(GetShowPlayerControlsCheckBox), GetShowSameVideosCheckBox = js.Any.fromFunction0(GetShowSameVideosCheckBox), GetShowVideoNameCheckBox = js.Any.fromFunction0(GetShowVideoNameCheckBox), GetTopMarginTextBox = js.Any.fromFunction0(GetTopMarginTextBox))
   
     __obj.asInstanceOf[ASPxClientHtmlEditorYouTubeDialog]
   }

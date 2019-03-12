@@ -21,25 +21,13 @@ trait ParserInline extends js.Object {
 object ParserInline {
   @scala.inline
   def apply(
-    parse: js.Function4[
-      java.lang.String, 
-      markdownDashItLib.libMod.MarkdownIt, 
-      js.Any, 
-      js.Array[markdownDashItLib.libTokenMod.namespaced], 
-      scala.Unit
-    ],
+    parse: (java.lang.String, markdownDashItLib.libMod.MarkdownIt, js.Any, js.Array[markdownDashItLib.libTokenMod.namespaced]) => scala.Unit,
     ruler: markdownDashItLib.libMod.MarkdownItNs.RulerInline,
     ruler2: markdownDashItLib.libMod.MarkdownItNs.RulerInline,
-    skipToken: js.Function1[
-      markdownDashItLib.libRulesUnderscoreCoreStateUnderscoreCoreMod.namespaced, 
-      scala.Unit
-    ],
-    tokenize: js.Function1[
-      markdownDashItLib.libRulesUnderscoreCoreStateUnderscoreCoreMod.namespaced, 
-      scala.Unit
-    ]
+    skipToken: markdownDashItLib.libRulesUnderscoreCoreStateUnderscoreCoreMod.namespaced => scala.Unit,
+    tokenize: markdownDashItLib.libRulesUnderscoreCoreStateUnderscoreCoreMod.namespaced => scala.Unit
   ): ParserInline = {
-    val __obj = js.Dynamic.literal(parse = parse, ruler = ruler, ruler2 = ruler2, skipToken = skipToken, tokenize = tokenize)
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction4(parse), ruler = ruler, ruler2 = ruler2, skipToken = js.Any.fromFunction1(skipToken), tokenize = js.Any.fromFunction1(tokenize))
   
     __obj.asInstanceOf[ParserInline]
   }

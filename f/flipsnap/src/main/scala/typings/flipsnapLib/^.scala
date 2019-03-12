@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var Flipsnap: flipsnapLib.FlipsnapStatic = js.native
+  var Flipsnap: FlipsnapStatic = js.native
 }
 

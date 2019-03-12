@@ -31,14 +31,14 @@ trait Callback extends js.Object {
     * handled first). This is meant to replace MathJax.Callback.ExecuteHooks() and is used internally for signal
     * callbacks, pre- and post-filters, and other lists of callbacks.
     */
-  def Hooks(reset: scala.Boolean): Hooks = js.native
+  def Hooks(reset: scala.Boolean): mathjaxLib.MathJaxNs.Hooks = js.native
   /*Creates a MathJax.CallBack.Queue object and pushes the given callbacks into the queue. See Using Queues for
     * more details about MathJax queues.
     */
-  def Queue(args: js.Any*): Queue = js.native
+  def Queue(args: js.Any*): mathjaxLib.MathJaxNs.Queue = js.native
   /*Looks for a named signal, creates it if it doesn’t already exist, and returns the signal object. See Using
     * Signals for more details.
     */
-  def Signal(name: java.lang.String): Signal = js.native
+  def Signal(name: java.lang.String): mathjaxLib.MathJaxNs.Signal = js.native
 }
 

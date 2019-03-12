@@ -23,12 +23,12 @@ trait XRecycler
 object XRecycler {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    trashContent: js.Function2[XCommandProcessor, XContentIdentifier, scala.Unit]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    trashContent: (XCommandProcessor, XContentIdentifier) => scala.Unit
   ): XRecycler = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, trashContent = trashContent)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), trashContent = js.Any.fromFunction2(trashContent))
   
     __obj.asInstanceOf[XRecycler]
   }

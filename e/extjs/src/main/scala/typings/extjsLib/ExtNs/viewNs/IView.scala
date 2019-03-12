@@ -24,21 +24,21 @@ object IView {
   @scala.inline
   def apply(
     IAbstractView: IAbstractView = null,
-    clearHighlight: js.Function0[scala.Unit] = null,
-    focusNode: js.Function1[/* rec */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel], scala.Unit] = null,
-    highlightItem: js.Function1[/* item */ js.UndefOr[stdLib.HTMLElement], scala.Unit] = null,
-    initComponent: js.Function0[scala.Unit] = null,
+    clearHighlight: () => scala.Unit = null,
+    focusNode: /* rec */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel] => scala.Unit = null,
+    highlightItem: /* item */ js.UndefOr[stdLib.HTMLElement] => scala.Unit = null,
+    initComponent: () => scala.Unit = null,
     mouseOverOutBuffer: scala.Int | scala.Double = null,
-    refresh: js.Function0[scala.Unit] = null
+    refresh: () => scala.Unit = null
   ): IView = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IAbstractView)
-    if (clearHighlight != null) __obj.updateDynamic("clearHighlight")(clearHighlight)
-    if (focusNode != null) __obj.updateDynamic("focusNode")(focusNode)
-    if (highlightItem != null) __obj.updateDynamic("highlightItem")(highlightItem)
-    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
+    if (clearHighlight != null) __obj.updateDynamic("clearHighlight")(js.Any.fromFunction0(clearHighlight))
+    if (focusNode != null) __obj.updateDynamic("focusNode")(js.Any.fromFunction1(focusNode))
+    if (highlightItem != null) __obj.updateDynamic("highlightItem")(js.Any.fromFunction1(highlightItem))
+    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
     if (mouseOverOutBuffer != null) __obj.updateDynamic("mouseOverOutBuffer")(mouseOverOutBuffer.asInstanceOf[js.Any])
-    if (refresh != null) __obj.updateDynamic("refresh")(refresh)
+    if (refresh != null) __obj.updateDynamic("refresh")(js.Any.fromFunction0(refresh))
     __obj.asInstanceOf[IView]
   }
 }

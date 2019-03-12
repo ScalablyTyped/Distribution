@@ -14,11 +14,11 @@ trait RollupPlugin extends js.Object {
 object RollupPlugin {
   @scala.inline
   def apply(
-    load: js.Function1[java.lang.String, java.lang.String],
-    resolveId: js.Function2[java.lang.String, java.lang.String, js.Any],
-    transform: js.Function2[java.lang.String, java.lang.String, rollupDashTypescriptLib.Anon_Code]
+    load: java.lang.String => java.lang.String,
+    resolveId: (java.lang.String, java.lang.String) => js.Any,
+    transform: (java.lang.String, java.lang.String) => rollupDashTypescriptLib.Anon_Code
   ): RollupPlugin = {
-    val __obj = js.Dynamic.literal(load = load, resolveId = resolveId, transform = transform)
+    val __obj = js.Dynamic.literal(load = js.Any.fromFunction1(load), resolveId = js.Any.fromFunction2(resolveId), transform = js.Any.fromFunction2(transform))
   
     __obj.asInstanceOf[RollupPlugin]
   }

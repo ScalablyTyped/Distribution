@@ -95,24 +95,24 @@ object Options {
     configName: java.lang.String = null,
     cwd: java.lang.String = null,
     defaults: org.scalablytyped.runtime.StringDictionary[T] = null,
-    deserialize: js.Function1[/* text */ java.lang.String, org.scalablytyped.runtime.StringDictionary[T]] = null,
+    deserialize: /* text */ java.lang.String => org.scalablytyped.runtime.StringDictionary[T] = null,
     encryptionKey: java.lang.String | nodeLib.Buffer | nodeLib.NodeJSNs.TypedArray | stdLib.DataView = null,
     fileExtension: java.lang.String = null,
     projectName: java.lang.String = null,
     projectSuffix: java.lang.String = null,
-    serialize: js.Function1[/* value */ org.scalablytyped.runtime.StringDictionary[T], java.lang.String] = null
+    serialize: /* value */ org.scalablytyped.runtime.StringDictionary[T] => java.lang.String = null
   ): Options[T] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(clearInvalidConfig)) __obj.updateDynamic("clearInvalidConfig")(clearInvalidConfig)
     if (configName != null) __obj.updateDynamic("configName")(configName)
     if (cwd != null) __obj.updateDynamic("cwd")(cwd)
     if (defaults != null) __obj.updateDynamic("defaults")(defaults)
-    if (deserialize != null) __obj.updateDynamic("deserialize")(deserialize)
+    if (deserialize != null) __obj.updateDynamic("deserialize")(js.Any.fromFunction1(deserialize))
     if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
     if (fileExtension != null) __obj.updateDynamic("fileExtension")(fileExtension)
     if (projectName != null) __obj.updateDynamic("projectName")(projectName)
     if (projectSuffix != null) __obj.updateDynamic("projectSuffix")(projectSuffix)
-    if (serialize != null) __obj.updateDynamic("serialize")(serialize)
+    if (serialize != null) __obj.updateDynamic("serialize")(js.Any.fromFunction1(serialize))
     __obj.asInstanceOf[Options[T]]
   }
 }

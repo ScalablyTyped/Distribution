@@ -13,10 +13,10 @@ trait ucs2 extends js.Object {
 object ucs2 {
   @scala.inline
   def apply(
-    decode: js.Function1[java.lang.String, js.Array[scala.Double]],
-    encode: js.Function1[js.Array[scala.Double], java.lang.String]
+    decode: java.lang.String => js.Array[scala.Double],
+    encode: js.Array[scala.Double] => java.lang.String
   ): ucs2 = {
-    val __obj = js.Dynamic.literal(decode = decode, encode = encode)
+    val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
   
     __obj.asInstanceOf[ucs2]
   }

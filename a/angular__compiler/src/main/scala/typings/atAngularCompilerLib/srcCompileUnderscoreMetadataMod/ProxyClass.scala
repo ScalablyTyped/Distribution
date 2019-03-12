@@ -11,8 +11,8 @@ trait ProxyClass extends js.Object {
 
 object ProxyClass {
   @scala.inline
-  def apply(setDelegate: js.Function1[js.Any, scala.Unit]): ProxyClass = {
-    val __obj = js.Dynamic.literal(setDelegate = setDelegate)
+  def apply(setDelegate: js.Any => scala.Unit): ProxyClass = {
+    val __obj = js.Dynamic.literal(setDelegate = js.Any.fromFunction1(setDelegate))
   
     __obj.asInstanceOf[ProxyClass]
   }

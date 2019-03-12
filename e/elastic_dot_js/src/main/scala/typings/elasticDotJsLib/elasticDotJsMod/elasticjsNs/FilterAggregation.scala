@@ -37,13 +37,13 @@ trait FilterAggregation extends Aggregation {
 object FilterAggregation {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    agg: js.Function1[Aggregation, FilterAggregation],
-    aggregation: js.Function1[Aggregation, FilterAggregation],
-    filter: js.Function1[Filter, FilterAggregation],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    agg: Aggregation => FilterAggregation,
+    aggregation: Aggregation => FilterAggregation,
+    filter: Filter => FilterAggregation,
+    toJSON: () => js.Any
   ): FilterAggregation = {
-    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, filter = filter, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), agg = js.Any.fromFunction1(agg), aggregation = js.Any.fromFunction1(aggregation), filter = js.Any.fromFunction1(filter), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[FilterAggregation]
   }

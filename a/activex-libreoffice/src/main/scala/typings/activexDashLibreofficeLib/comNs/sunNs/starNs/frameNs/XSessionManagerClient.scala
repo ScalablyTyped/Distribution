@@ -50,17 +50,17 @@ trait XSessionManagerClient
 object XSessionManagerClient {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addSessionManagerListener: js.Function1[XSessionManagerListener, scala.Unit],
-    cancelShutdown: js.Function0[scala.Boolean],
-    interactionDone: js.Function1[XSessionManagerListener, scala.Unit],
-    queryInteraction: js.Function1[XSessionManagerListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeSessionManagerListener: js.Function1[XSessionManagerListener, scala.Unit],
-    saveDone: js.Function1[XSessionManagerListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addSessionManagerListener: XSessionManagerListener => scala.Unit,
+    cancelShutdown: () => scala.Boolean,
+    interactionDone: XSessionManagerListener => scala.Unit,
+    queryInteraction: XSessionManagerListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeSessionManagerListener: XSessionManagerListener => scala.Unit,
+    saveDone: XSessionManagerListener => scala.Unit
   ): XSessionManagerClient = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addSessionManagerListener = addSessionManagerListener, cancelShutdown = cancelShutdown, interactionDone = interactionDone, queryInteraction = queryInteraction, queryInterface = queryInterface, release = release, removeSessionManagerListener = removeSessionManagerListener, saveDone = saveDone)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addSessionManagerListener = js.Any.fromFunction1(addSessionManagerListener), cancelShutdown = js.Any.fromFunction0(cancelShutdown), interactionDone = js.Any.fromFunction1(interactionDone), queryInteraction = js.Any.fromFunction1(queryInteraction), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeSessionManagerListener = js.Any.fromFunction1(removeSessionManagerListener), saveDone = js.Any.fromFunction1(saveDone))
   
     __obj.asInstanceOf[XSessionManagerClient]
   }

@@ -18,18 +18,18 @@ object TableRows {
   def apply(
     Count: scala.Double,
     ElementType: activexDashLibreofficeLib.`type`,
-    acquire: js.Function0[scala.Unit],
-    createEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
-    getByIndex: js.Function1[scala.Double, js.Any],
-    getCount: js.Function0[scala.Double],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    hasElements: js.Function0[scala.Boolean],
-    insertByIndex: js.Function2[scala.Double, scala.Double, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeByIndex: js.Function2[scala.Double, scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    createEnumeration: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration,
+    getByIndex: scala.Double => js.Any,
+    getCount: () => scala.Double,
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    hasElements: () => scala.Boolean,
+    insertByIndex: (scala.Double, scala.Double) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeByIndex: (scala.Double, scala.Double) => scala.Unit
   ): TableRows = {
-    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, acquire = acquire, createEnumeration = createEnumeration, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, hasElements = hasElements, insertByIndex = insertByIndex, queryInterface = queryInterface, release = release, removeByIndex = removeByIndex)
+    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, acquire = js.Any.fromFunction0(acquire), createEnumeration = js.Any.fromFunction0(createEnumeration), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), insertByIndex = js.Any.fromFunction2(insertByIndex), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByIndex = js.Any.fromFunction2(removeByIndex))
   
     __obj.asInstanceOf[TableRows]
   }

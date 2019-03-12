@@ -61,29 +61,24 @@ object EnumerableMap {
     ElementType: activexDashLibreofficeLib.`type`,
     KeyType: activexDashLibreofficeLib.`type`,
     ValueType: activexDashLibreofficeLib.`type`,
-    acquire: js.Function0[scala.Unit],
-    clear: js.Function0[scala.Unit],
-    containsKey: js.Function1[js.Any, scala.Boolean],
-    containsValue: js.Function1[js.Any, scala.Boolean],
-    create: js.Function2[activexDashLibreofficeLib.`type`, activexDashLibreofficeLib.`type`, scala.Unit],
-    createElementEnumeration: js.Function1[scala.Boolean, XEnumeration],
-    createImmutable: js.Function3[
-      activexDashLibreofficeLib.`type`, 
-      activexDashLibreofficeLib.`type`, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[_, _]], 
-      scala.Unit
-    ],
-    createKeyEnumeration: js.Function1[scala.Boolean, XEnumeration],
-    createValueEnumeration: js.Function1[scala.Boolean, XEnumeration],
-    get: js.Function1[js.Any, js.Any],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    hasElements: js.Function0[scala.Boolean],
-    put: js.Function2[js.Any, js.Any, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    remove: js.Function1[js.Any, js.Any]
+    acquire: () => scala.Unit,
+    clear: () => scala.Unit,
+    containsKey: js.Any => scala.Boolean,
+    containsValue: js.Any => scala.Boolean,
+    create: (activexDashLibreofficeLib.`type`, activexDashLibreofficeLib.`type`) => scala.Unit,
+    createElementEnumeration: scala.Boolean => XEnumeration,
+    createImmutable: (activexDashLibreofficeLib.`type`, activexDashLibreofficeLib.`type`, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[_, _]]) => scala.Unit,
+    createKeyEnumeration: scala.Boolean => XEnumeration,
+    createValueEnumeration: scala.Boolean => XEnumeration,
+    get: js.Any => js.Any,
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    hasElements: () => scala.Boolean,
+    put: (js.Any, js.Any) => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    remove: js.Any => js.Any
   ): EnumerableMap = {
-    val __obj = js.Dynamic.literal(ElementType = ElementType, KeyType = KeyType, ValueType = ValueType, acquire = acquire, clear = clear, containsKey = containsKey, containsValue = containsValue, create = create, createElementEnumeration = createElementEnumeration, createImmutable = createImmutable, createKeyEnumeration = createKeyEnumeration, createValueEnumeration = createValueEnumeration, get = get, getElementType = getElementType, hasElements = hasElements, put = put, queryInterface = queryInterface, release = release, remove = remove)
+    val __obj = js.Dynamic.literal(ElementType = ElementType, KeyType = KeyType, ValueType = ValueType, acquire = js.Any.fromFunction0(acquire), clear = js.Any.fromFunction0(clear), containsKey = js.Any.fromFunction1(containsKey), containsValue = js.Any.fromFunction1(containsValue), create = js.Any.fromFunction2(create), createElementEnumeration = js.Any.fromFunction1(createElementEnumeration), createImmutable = js.Any.fromFunction3(createImmutable), createKeyEnumeration = js.Any.fromFunction1(createKeyEnumeration), createValueEnumeration = js.Any.fromFunction1(createValueEnumeration), get = js.Any.fromFunction1(get), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), put = js.Any.fromFunction2(put), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), remove = js.Any.fromFunction1(remove))
   
     __obj.asInstanceOf[EnumerableMap]
   }

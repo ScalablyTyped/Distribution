@@ -34,12 +34,12 @@ trait ValdrMessageProvider extends js.Object {
 object ValdrMessageProvider {
   @scala.inline
   def apply(
-    addMessages: js.Function1[org.scalablytyped.runtime.StringDictionary[java.lang.String], scala.Unit],
-    getMessage: js.Function3[java.lang.String, java.lang.String, java.lang.String, java.lang.String],
-    setTemplate: js.Function1[java.lang.String, scala.Unit],
-    setTemplateUrl: js.Function1[java.lang.String, scala.Unit]
+    addMessages: org.scalablytyped.runtime.StringDictionary[java.lang.String] => scala.Unit,
+    getMessage: (java.lang.String, java.lang.String, java.lang.String) => java.lang.String,
+    setTemplate: java.lang.String => scala.Unit,
+    setTemplateUrl: java.lang.String => scala.Unit
   ): ValdrMessageProvider = {
-    val __obj = js.Dynamic.literal(addMessages = addMessages, getMessage = getMessage, setTemplate = setTemplate, setTemplateUrl = setTemplateUrl)
+    val __obj = js.Dynamic.literal(addMessages = js.Any.fromFunction1(addMessages), getMessage = js.Any.fromFunction3(getMessage), setTemplate = js.Any.fromFunction1(setTemplate), setTemplateUrl = js.Any.fromFunction1(setTemplateUrl))
   
     __obj.asInstanceOf[ValdrMessageProvider]
   }

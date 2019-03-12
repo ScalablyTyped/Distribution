@@ -41,18 +41,18 @@ object ZoomOptions {
   def apply(
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     extent: js.Tuple2[scala.Double, scala.Double] = null,
-    onzoom: js.Function1[/* domain */ js.Any, scala.Unit] = null,
-    onzoomend: js.Function1[/* domain */ js.Any, scala.Unit] = null,
-    onzoomstart: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
+    onzoom: /* domain */ js.Any => scala.Unit = null,
+    onzoomend: /* domain */ js.Any => scala.Unit = null,
+    onzoomstart: /* event */ stdLib.Event => scala.Unit = null,
     rescale: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: c3Lib.c3LibStrings.scroll | c3Lib.c3LibStrings.drag = null
   ): ZoomOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (extent != null) __obj.updateDynamic("extent")(extent)
-    if (onzoom != null) __obj.updateDynamic("onzoom")(onzoom)
-    if (onzoomend != null) __obj.updateDynamic("onzoomend")(onzoomend)
-    if (onzoomstart != null) __obj.updateDynamic("onzoomstart")(onzoomstart)
+    if (onzoom != null) __obj.updateDynamic("onzoom")(js.Any.fromFunction1(onzoom))
+    if (onzoomend != null) __obj.updateDynamic("onzoomend")(js.Any.fromFunction1(onzoomend))
+    if (onzoomstart != null) __obj.updateDynamic("onzoomstart")(js.Any.fromFunction1(onzoomstart))
     if (!js.isUndefined(rescale)) __obj.updateDynamic("rescale")(rescale)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomOptions]

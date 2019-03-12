@@ -28,25 +28,25 @@ trait Anon_AcoshAsinh extends js.Object {
 object Anon_AcoshAsinh {
   @scala.inline
   def apply(
-    acosh: js.Function1[scala.Double, scala.Double],
-    asinh: js.Function1[scala.Double, scala.Double],
-    atanh: js.Function1[scala.Double, scala.Double],
-    cbrt: js.Function1[scala.Double, scala.Double],
-    clz32: js.Function1[scala.Double, scala.Double],
-    cosh: js.Function1[scala.Double, scala.Double],
-    expm1: js.Function1[scala.Double, scala.Double],
-    fround: js.Function1[scala.Double, scala.Double],
-    hypot: js.Function1[/* repeated */ scala.Double, scala.Double],
-    imul: js.Function2[scala.Double, scala.Double, scala.Double],
-    log10: js.Function1[scala.Double, scala.Double],
-    log1p: js.Function1[scala.Double, scala.Double],
-    log2: js.Function1[scala.Double, scala.Double],
-    sign: js.Function1[scala.Double, scala.Double],
-    sinh: js.Function1[scala.Double, scala.Double],
-    tanh: js.Function1[scala.Double, scala.Double],
-    trunc: js.Function1[scala.Double, scala.Double]
+    acosh: scala.Double => scala.Double,
+    asinh: scala.Double => scala.Double,
+    atanh: scala.Double => scala.Double,
+    cbrt: scala.Double => scala.Double,
+    clz32: scala.Double => scala.Double,
+    cosh: scala.Double => scala.Double,
+    expm1: scala.Double => scala.Double,
+    fround: scala.Double => scala.Double,
+    hypot: /* repeated */ scala.Double => scala.Double,
+    imul: (scala.Double, scala.Double) => scala.Double,
+    log10: scala.Double => scala.Double,
+    log1p: scala.Double => scala.Double,
+    log2: scala.Double => scala.Double,
+    sign: scala.Double => scala.Double,
+    sinh: scala.Double => scala.Double,
+    tanh: scala.Double => scala.Double,
+    trunc: scala.Double => scala.Double
   ): Anon_AcoshAsinh = {
-    val __obj = js.Dynamic.literal(acosh = acosh, asinh = asinh, atanh = atanh, cbrt = cbrt, clz32 = clz32, cosh = cosh, expm1 = expm1, fround = fround, hypot = hypot, imul = imul, log10 = log10, log1p = log1p, log2 = log2, sign = sign, sinh = sinh, tanh = tanh, trunc = trunc)
+    val __obj = js.Dynamic.literal(acosh = js.Any.fromFunction1(acosh), asinh = js.Any.fromFunction1(asinh), atanh = js.Any.fromFunction1(atanh), cbrt = js.Any.fromFunction1(cbrt), clz32 = js.Any.fromFunction1(clz32), cosh = js.Any.fromFunction1(cosh), expm1 = js.Any.fromFunction1(expm1), fround = js.Any.fromFunction1(fround), hypot = js.Any.fromFunction1(hypot), imul = js.Any.fromFunction2(imul), log10 = js.Any.fromFunction1(log10), log1p = js.Any.fromFunction1(log1p), log2 = js.Any.fromFunction1(log2), sign = js.Any.fromFunction1(sign), sinh = js.Any.fromFunction1(sinh), tanh = js.Any.fromFunction1(tanh), trunc = js.Any.fromFunction1(trunc))
   
     __obj.asInstanceOf[Anon_AcoshAsinh]
   }

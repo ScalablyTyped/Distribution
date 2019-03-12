@@ -25,12 +25,12 @@ object Unsplash {
     collections: unsplashDashJsLib.unsplashDashJsMod.UnsplashApiNs.Collections,
     currentUser: unsplashDashJsLib.unsplashDashJsMod.UnsplashApiNs.CurrentUser,
     photos: unsplashDashJsLib.unsplashDashJsMod.UnsplashApiNs.Photo,
-    request: js.Function1[unsplashDashJsLib.Anon_Body, js.Promise[stdLib.Response]],
+    request: unsplashDashJsLib.Anon_Body => js.Promise[stdLib.Response],
     search: unsplashDashJsLib.unsplashDashJsMod.UnsplashApiNs.Search,
     stats: unsplashDashJsLib.unsplashDashJsMod.UnsplashApiNs.Stats,
     users: unsplashDashJsLib.unsplashDashJsMod.UnsplashApiNs.Users
   ): Unsplash = {
-    val __obj = js.Dynamic.literal(auth = auth, categories = categories, collections = collections, currentUser = currentUser, photos = photos, request = request, search = search, stats = stats, users = users)
+    val __obj = js.Dynamic.literal(auth = auth, categories = categories, collections = collections, currentUser = currentUser, photos = photos, request = js.Any.fromFunction1(request), search = search, stats = stats, users = users)
   
     __obj.asInstanceOf[Unsplash]
   }

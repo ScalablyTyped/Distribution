@@ -17,7 +17,7 @@ trait UpdateArraySpec extends UpdateSpecCommand {
 object UpdateArraySpec {
   @scala.inline
   def apply(
-    $apply: js.Function1[/* value */ js.Any, _] = null,
+    $apply: /* value */ js.Any => _ = null,
     $merge: js.Object = null,
     $push: js.Array[_] = null,
     $set: js.Any = null,
@@ -25,7 +25,7 @@ object UpdateArraySpec {
     $unshift: js.Array[_] = null
   ): UpdateArraySpec = {
     val __obj = js.Dynamic.literal()
-    if ($apply != null) __obj.updateDynamic("$apply")($apply)
+    if ($apply != null) __obj.updateDynamic("$apply")(js.Any.fromFunction1($apply))
     if ($merge != null) __obj.updateDynamic("$merge")($merge)
     if ($push != null) __obj.updateDynamic("$push")($push)
     if ($set != null) __obj.updateDynamic("$set")($set)

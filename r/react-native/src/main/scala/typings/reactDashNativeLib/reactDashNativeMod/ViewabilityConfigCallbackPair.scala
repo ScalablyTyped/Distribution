@@ -14,10 +14,10 @@ object ViewabilityConfigCallbackPair {
   @scala.inline
   def apply(
     viewabilityConfig: ViewabilityConfig,
-    onViewableItemsChanged: js.Function1[/* info */ reactDashNativeLib.Anon_Changed, scala.Unit] = null
+    onViewableItemsChanged: /* info */ reactDashNativeLib.Anon_Changed => scala.Unit = null
   ): ViewabilityConfigCallbackPair = {
     val __obj = js.Dynamic.literal(viewabilityConfig = viewabilityConfig)
-    if (onViewableItemsChanged != null) __obj.updateDynamic("onViewableItemsChanged")(onViewableItemsChanged)
+    if (onViewableItemsChanged != null) __obj.updateDynamic("onViewableItemsChanged")(js.Any.fromFunction1(onViewableItemsChanged))
     __obj.asInstanceOf[ViewabilityConfigCallbackPair]
   }
 }

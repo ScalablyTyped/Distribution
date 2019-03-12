@@ -15,16 +15,10 @@ trait LeaderboardsResource extends js.Object {
 object LeaderboardsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguage, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Leaderboard]
-    ],
-    list: js.Function1[
-      gapiDotClientDotGamesLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LeaderboardListResponse]
-    ]
+    get: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguage => gapiDotClientLib.gapiNs.clientNs.Request[Leaderboard],
+    list: gapiDotClientDotGamesLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[LeaderboardListResponse]
   ): LeaderboardsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[LeaderboardsResource]
   }

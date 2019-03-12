@@ -12,11 +12,8 @@ trait _CSSHook[TElement] extends js.Object {
 
 object _CSSHook {
   @scala.inline
-  def apply[TElement](
-    get: js.Function3[TElement, js.Any, js.Any, js.Any],
-    set: js.Function2[TElement, js.Any, scala.Unit]
-  ): _CSSHook[TElement] = {
-    val __obj = js.Dynamic.literal(get = get, set = set)
+  def apply[TElement](get: (TElement, js.Any, js.Any) => js.Any, set: (TElement, js.Any) => scala.Unit): _CSSHook[TElement] = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction3(get), set = js.Any.fromFunction2(set))
   
     __obj.asInstanceOf[_CSSHook[TElement]]
   }

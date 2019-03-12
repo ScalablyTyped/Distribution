@@ -82,7 +82,7 @@ trait _Impl extends js.Object {
 object _Impl {
   @scala.inline
   def apply(
-    beforeChange: js.Function1[semanticDashUiDashShapeLib.JQuery, scala.Unit],
+    beforeChange: semanticDashUiDashShapeLib.JQuery => scala.Unit,
     className: semanticDashUiDashShapeLib.SemanticUINs.ShapeNs.ClassNameSettings,
     debug: scala.Boolean,
     duration: scala.Double,
@@ -90,14 +90,14 @@ object _Impl {
     height: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.next | semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.initial | scala.Double,
     name: java.lang.String,
     namespace: java.lang.String,
-    onChange: js.Function1[semanticDashUiDashShapeLib.JQuery, scala.Unit],
+    onChange: semanticDashUiDashShapeLib.JQuery => scala.Unit,
     performance: scala.Boolean,
     selector: semanticDashUiDashShapeLib.SemanticUINs.ShapeNs.SelectorSettings,
     silent: scala.Boolean,
     verbose: scala.Boolean,
     width: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.next | semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.initial | scala.Double
   ): _Impl = {
-    val __obj = js.Dynamic.literal(beforeChange = beforeChange, className = className.asInstanceOf[js.Any], debug = debug, duration = duration, error = error.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], name = name, namespace = namespace, onChange = onChange, performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, verbose = verbose, width = width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(beforeChange = js.Any.fromFunction1(beforeChange), className = className.asInstanceOf[js.Any], debug = debug, duration = duration, error = error.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], name = name, namespace = namespace, onChange = js.Any.fromFunction1(onChange), performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, verbose = verbose, width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

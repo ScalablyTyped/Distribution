@@ -20,17 +20,17 @@ object ChartAnimationObject {
     currentStep: scala.Int | scala.Double = null,
     easing: java.lang.String = null,
     numSteps: scala.Int | scala.Double = null,
-    onAnimationComplete: js.Function1[/* arg */ js.Any, scala.Unit] = null,
-    onAnimationProgress: js.Function1[/* arg */ js.Any, scala.Unit] = null,
-    render: js.Function1[/* arg */ js.Any, scala.Unit] = null
+    onAnimationComplete: /* arg */ js.Any => scala.Unit = null,
+    onAnimationProgress: /* arg */ js.Any => scala.Unit = null,
+    render: /* arg */ js.Any => scala.Unit = null
   ): ChartAnimationObject = {
     val __obj = js.Dynamic.literal()
     if (currentStep != null) __obj.updateDynamic("currentStep")(currentStep.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing)
     if (numSteps != null) __obj.updateDynamic("numSteps")(numSteps.asInstanceOf[js.Any])
-    if (onAnimationComplete != null) __obj.updateDynamic("onAnimationComplete")(onAnimationComplete)
-    if (onAnimationProgress != null) __obj.updateDynamic("onAnimationProgress")(onAnimationProgress)
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (onAnimationComplete != null) __obj.updateDynamic("onAnimationComplete")(js.Any.fromFunction1(onAnimationComplete))
+    if (onAnimationProgress != null) __obj.updateDynamic("onAnimationProgress")(js.Any.fromFunction1(onAnimationProgress))
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     __obj.asInstanceOf[ChartAnimationObject]
   }
 }

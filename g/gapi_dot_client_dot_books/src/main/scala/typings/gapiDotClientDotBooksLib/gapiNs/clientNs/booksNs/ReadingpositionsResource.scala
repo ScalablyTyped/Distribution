@@ -15,16 +15,10 @@ trait ReadingpositionsResource extends js.Object {
 object ReadingpositionsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltContentVersionFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ReadingPosition]
-    ],
-    setPosition: js.Function1[
-      gapiDotClientDotBooksLib.Anon_Action, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ]
+    get: gapiDotClientDotBooksLib.Anon_AltContentVersionFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[ReadingPosition],
+    setPosition: gapiDotClientDotBooksLib.Anon_Action => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   ): ReadingpositionsResource = {
-    val __obj = js.Dynamic.literal(get = get, setPosition = setPosition)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), setPosition = js.Any.fromFunction1(setPosition))
   
     __obj.asInstanceOf[ReadingpositionsResource]
   }

@@ -27,14 +27,14 @@ trait XErrorHandler
 object XErrorHandler {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    error: js.Function1[js.Any, scala.Unit],
-    fatalError: js.Function1[js.Any, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    warning: js.Function1[js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    error: js.Any => scala.Unit,
+    fatalError: js.Any => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    warning: js.Any => scala.Unit
   ): XErrorHandler = {
-    val __obj = js.Dynamic.literal(acquire = acquire, error = error, fatalError = fatalError, queryInterface = queryInterface, release = release, warning = warning)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), error = js.Any.fromFunction1(error), fatalError = js.Any.fromFunction1(fatalError), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), warning = js.Any.fromFunction1(warning))
   
     __obj.asInstanceOf[XErrorHandler]
   }

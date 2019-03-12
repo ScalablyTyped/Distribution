@@ -15,13 +15,13 @@ trait VideoSource
 object VideoSource {
   @scala.inline
   def apply(
-    getVideo: js.Function0[stdLib.HTMLVideoElement],
-    setCoordinates: js.Function1[js.Array[js.Array[scala.Double]], VideoSource],
+    getVideo: () => stdLib.HTMLVideoElement,
+    setCoordinates: js.Array[js.Array[scala.Double]] => VideoSource,
     `type`: mapboxDashGlLib.mapboxDashGlLibStrings.video,
     coordinates: js.Array[js.Array[scala.Double]] = null,
     urls: js.Array[java.lang.String] = null
   ): VideoSource = {
-    val __obj = js.Dynamic.literal(getVideo = getVideo, setCoordinates = setCoordinates)
+    val __obj = js.Dynamic.literal(getVideo = js.Any.fromFunction0(getVideo), setCoordinates = js.Any.fromFunction1(setCoordinates))
     __obj.updateDynamic("type")(`type`)
     if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
     if (urls != null) __obj.updateDynamic("urls")(urls)

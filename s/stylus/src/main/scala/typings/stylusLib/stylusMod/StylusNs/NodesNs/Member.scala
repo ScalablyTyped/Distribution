@@ -13,24 +13,24 @@ trait Member extends Node {
 object Member {
   @scala.inline
   def apply(
-    clone: js.Function0[Node],
-    coerce: js.Function1[Node, Node],
+    clone: () => Node,
+    coerce: Node => Node,
     column: scala.Double,
-    eval: js.Function0[Node],
+    eval: () => Node,
     filename: java.lang.String,
     first: Node,
     hash: java.lang.String,
     left: Node,
     lineno: scala.Double,
     nodeName: java.lang.String,
-    operate: js.Function2[java.lang.String, Node, Node],
+    operate: (java.lang.String, Node) => Node,
     right: Node,
-    shouldCoerce: js.Function1[java.lang.String, scala.Boolean],
-    toBoolean: js.Function0[Boolean],
-    toExpression: js.Function0[Expression],
-    toJSON: js.Function0[stylusLib.Anon_ColumnFilenameLeftLineno]
+    shouldCoerce: java.lang.String => scala.Boolean,
+    toBoolean: () => Boolean,
+    toExpression: () => Expression,
+    toJSON: () => stylusLib.Anon_ColumnFilenameLeftLineno
   ): Member = {
-    val __obj = js.Dynamic.literal(clone = clone, coerce = coerce, column = column, eval = eval, filename = filename, first = first, hash = hash, left = left, lineno = lineno, nodeName = nodeName, operate = operate, right = right, shouldCoerce = shouldCoerce, toBoolean = toBoolean, toExpression = toExpression, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), coerce = js.Any.fromFunction1(coerce), column = column, eval = js.Any.fromFunction0(eval), filename = filename, first = first, hash = hash, left = left, lineno = lineno, nodeName = nodeName, operate = js.Any.fromFunction2(operate), right = right, shouldCoerce = js.Any.fromFunction1(shouldCoerce), toBoolean = js.Any.fromFunction0(toBoolean), toExpression = js.Any.fromFunction0(toExpression), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[Member]
   }

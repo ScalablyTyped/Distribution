@@ -50,7 +50,7 @@ object Opts {
     default: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     stopEarly: js.UndefOr[scala.Boolean] = js.undefined,
     string: java.lang.String | js.Array[java.lang.String] = null,
-    unknown: js.Function1[/* arg */ java.lang.String, scala.Boolean] = null
+    unknown: /* arg */ java.lang.String => scala.Boolean = null
   ): Opts = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(`--`)) __obj.updateDynamic("--")(`--`)
@@ -59,7 +59,7 @@ object Opts {
     if (default != null) __obj.updateDynamic("default")(default)
     if (!js.isUndefined(stopEarly)) __obj.updateDynamic("stopEarly")(stopEarly)
     if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
-    if (unknown != null) __obj.updateDynamic("unknown")(unknown)
+    if (unknown != null) __obj.updateDynamic("unknown")(js.Any.fromFunction1(unknown))
     __obj.asInstanceOf[Opts]
   }
 }

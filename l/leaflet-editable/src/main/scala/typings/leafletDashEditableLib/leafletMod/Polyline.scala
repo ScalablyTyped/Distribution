@@ -13,17 +13,17 @@ trait Polyline
 object Polyline {
   @scala.inline
   def apply(
-    continueBackward: js.Function0[scala.Unit],
-    continueForward: js.Function0[scala.Unit],
-    disable: js.Function0[MarkerEditor | PolylineEditor | PolygonEditor],
-    disableEdit: js.Function0[scala.Unit],
-    editEnabled: js.Function0[scala.Boolean],
-    enable: js.Function0[MarkerEditor | PolylineEditor | PolygonEditor],
-    enableEdit: js.Function0[js.Any],
-    reset: js.Function0[scala.Unit],
-    toggleEdit: js.Function0[scala.Unit]
+    continueBackward: () => scala.Unit,
+    continueForward: () => scala.Unit,
+    disable: () => MarkerEditor | PolylineEditor | PolygonEditor,
+    disableEdit: () => scala.Unit,
+    editEnabled: () => scala.Boolean,
+    enable: () => MarkerEditor | PolylineEditor | PolygonEditor,
+    enableEdit: () => js.Any,
+    reset: () => scala.Unit,
+    toggleEdit: () => scala.Unit
   ): Polyline = {
-    val __obj = js.Dynamic.literal(continueBackward = continueBackward, continueForward = continueForward, disable = disable, disableEdit = disableEdit, editEnabled = editEnabled, enable = enable, enableEdit = enableEdit, reset = reset, toggleEdit = toggleEdit)
+    val __obj = js.Dynamic.literal(continueBackward = js.Any.fromFunction0(continueBackward), continueForward = js.Any.fromFunction0(continueForward), disable = js.Any.fromFunction0(disable), disableEdit = js.Any.fromFunction0(disableEdit), editEnabled = js.Any.fromFunction0(editEnabled), enable = js.Any.fromFunction0(enable), enableEdit = js.Any.fromFunction0(enableEdit), reset = js.Any.fromFunction0(reset), toggleEdit = js.Any.fromFunction0(toggleEdit))
   
     __obj.asInstanceOf[Polyline]
   }

@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 trait XSecurityEnvironment
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** Get personal certificate from the environment */
-  val PersonalCertificates: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate]
+  val PersonalCertificates: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate]
   /** Get the Environment detail infos */
   val SecurityEnvironmentInformation: java.lang.String
   /** build certificate path from a certain certificate */
-  def buildCertificatePath(beginCert: activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate]
+  def buildCertificatePath(beginCert: activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate]
   /** Create certificate interface from a Base64 encoded certificate. */
   def createCertificateFromAscii(asciiCertificate: java.lang.String): activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate
   /** Create certificate interface from raw DER encoded certificate */
@@ -33,7 +33,7 @@ trait XSecurityEnvironment
     */
   def getCertificateCharacters(xCertificate: activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate): scala.Double
   /** Get personal certificate from the environment */
-  def getPersonalCertificates(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate]
+  def getPersonalCertificates(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate]
   /** Get the Environment detail infos */
   def getSecurityEnvironmentInformation(): java.lang.String
   /**
@@ -53,40 +53,21 @@ trait XSecurityEnvironment
 object XSecurityEnvironment {
   @scala.inline
   def apply(
-    PersonalCertificates: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate],
+    PersonalCertificates: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate],
     SecurityEnvironmentInformation: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    buildCertificatePath: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate, 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate]
-    ],
-    createCertificateFromAscii: js.Function1[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate
-    ],
-    createCertificateFromRaw: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate
-    ],
-    getCertificate: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate
-    ],
-    getCertificateCharacters: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate, scala.Double],
-    getPersonalCertificates: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate]
-    ],
-    getSecurityEnvironmentInformation: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    verifyCertificate: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate], 
-      scala.Double
-    ]
+    acquire: () => scala.Unit,
+    buildCertificatePath: activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate],
+    createCertificateFromAscii: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate,
+    createCertificateFromRaw: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate,
+    getCertificate: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]) => activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate,
+    getCertificateCharacters: activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate => scala.Double,
+    getPersonalCertificates: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate],
+    getSecurityEnvironmentInformation: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    verifyCertificate: (activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate]) => scala.Double
   ): XSecurityEnvironment = {
-    val __obj = js.Dynamic.literal(PersonalCertificates = PersonalCertificates, SecurityEnvironmentInformation = SecurityEnvironmentInformation, acquire = acquire, buildCertificatePath = buildCertificatePath, createCertificateFromAscii = createCertificateFromAscii, createCertificateFromRaw = createCertificateFromRaw, getCertificate = getCertificate, getCertificateCharacters = getCertificateCharacters, getPersonalCertificates = getPersonalCertificates, getSecurityEnvironmentInformation = getSecurityEnvironmentInformation, queryInterface = queryInterface, release = release, verifyCertificate = verifyCertificate)
+    val __obj = js.Dynamic.literal(PersonalCertificates = PersonalCertificates, SecurityEnvironmentInformation = SecurityEnvironmentInformation, acquire = js.Any.fromFunction0(acquire), buildCertificatePath = js.Any.fromFunction1(buildCertificatePath), createCertificateFromAscii = js.Any.fromFunction1(createCertificateFromAscii), createCertificateFromRaw = js.Any.fromFunction1(createCertificateFromRaw), getCertificate = js.Any.fromFunction2(getCertificate), getCertificateCharacters = js.Any.fromFunction1(getCertificateCharacters), getPersonalCertificates = js.Any.fromFunction0(getPersonalCertificates), getSecurityEnvironmentInformation = js.Any.fromFunction0(getSecurityEnvironmentInformation), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), verifyCertificate = js.Any.fromFunction2(verifyCertificate))
   
     __obj.asInstanceOf[XSecurityEnvironment]
   }

@@ -18,21 +18,21 @@ trait BusLineSearchOptions extends js.Object {
 object BusLineSearchOptions {
   @scala.inline
   def apply(
-    onBusLineHtmlSet: js.Function1[/* container */ stdLib.HTMLElement, scala.Unit] = null,
-    onBusListHtmlSet: js.Function1[/* container */ stdLib.HTMLElement, scala.Unit] = null,
-    onGetBusLineComplete: js.Function1[/* rs */ BusLine, scala.Unit] = null,
-    onGetBusListComplete: js.Function1[/* rs */ BusListResult, scala.Unit] = null,
-    onMarkersSet: js.Function1[/* sts */ js.Array[Marker], scala.Unit] = null,
-    onPolylinesSet: js.Function1[/* ply */ Polyline, scala.Unit] = null,
+    onBusLineHtmlSet: /* container */ stdLib.HTMLElement => scala.Unit = null,
+    onBusListHtmlSet: /* container */ stdLib.HTMLElement => scala.Unit = null,
+    onGetBusLineComplete: /* rs */ BusLine => scala.Unit = null,
+    onGetBusListComplete: /* rs */ BusListResult => scala.Unit = null,
+    onMarkersSet: /* sts */ js.Array[Marker] => scala.Unit = null,
+    onPolylinesSet: /* ply */ Polyline => scala.Unit = null,
     renderOptions: RenderOptions = null
   ): BusLineSearchOptions = {
     val __obj = js.Dynamic.literal()
-    if (onBusLineHtmlSet != null) __obj.updateDynamic("onBusLineHtmlSet")(onBusLineHtmlSet)
-    if (onBusListHtmlSet != null) __obj.updateDynamic("onBusListHtmlSet")(onBusListHtmlSet)
-    if (onGetBusLineComplete != null) __obj.updateDynamic("onGetBusLineComplete")(onGetBusLineComplete)
-    if (onGetBusListComplete != null) __obj.updateDynamic("onGetBusListComplete")(onGetBusListComplete)
-    if (onMarkersSet != null) __obj.updateDynamic("onMarkersSet")(onMarkersSet)
-    if (onPolylinesSet != null) __obj.updateDynamic("onPolylinesSet")(onPolylinesSet)
+    if (onBusLineHtmlSet != null) __obj.updateDynamic("onBusLineHtmlSet")(js.Any.fromFunction1(onBusLineHtmlSet))
+    if (onBusListHtmlSet != null) __obj.updateDynamic("onBusListHtmlSet")(js.Any.fromFunction1(onBusListHtmlSet))
+    if (onGetBusLineComplete != null) __obj.updateDynamic("onGetBusLineComplete")(js.Any.fromFunction1(onGetBusLineComplete))
+    if (onGetBusListComplete != null) __obj.updateDynamic("onGetBusListComplete")(js.Any.fromFunction1(onGetBusListComplete))
+    if (onMarkersSet != null) __obj.updateDynamic("onMarkersSet")(js.Any.fromFunction1(onMarkersSet))
+    if (onPolylinesSet != null) __obj.updateDynamic("onPolylinesSet")(js.Any.fromFunction1(onPolylinesSet))
     if (renderOptions != null) __obj.updateDynamic("renderOptions")(renderOptions)
     __obj.asInstanceOf[BusLineSearchOptions]
   }

@@ -28,14 +28,10 @@ trait Settings extends js.Object {
 object Settings {
   @scala.inline
   def apply(
-    compareFunctionFactory: js.Function2[
-      /* sortOrder */ handsontableLib.handsontableMod.HandsontableNs.columnSortingNs.SortOrderType, 
-      /* columnMeta */ handsontableLib.handsontableMod.HandsontableNs.GridSettings, 
-      js.Function2[
-        /* value */ _, 
-        /* nextValue */ _, 
-        handsontableLib.handsontableLibNumbers.`-1` | handsontableLib.handsontableLibNumbers.`0` | handsontableLib.handsontableLibNumbers.`1`
-      ]
+    compareFunctionFactory: (/* sortOrder */ handsontableLib.handsontableMod.HandsontableNs.columnSortingNs.SortOrderType, /* columnMeta */ handsontableLib.handsontableMod.HandsontableNs.GridSettings) => js.Function2[
+      /* value */ _, 
+      /* nextValue */ _, 
+      handsontableLib.handsontableLibNumbers.`-1` | handsontableLib.handsontableLibNumbers.`0` | handsontableLib.handsontableLibNumbers.`1`
     ] = null,
     headerAction: js.UndefOr[scala.Boolean] = js.undefined,
     indicator: js.UndefOr[scala.Boolean] = js.undefined,
@@ -43,7 +39,7 @@ object Settings {
     sortEmptyCells: js.UndefOr[scala.Boolean] = js.undefined
   ): Settings = {
     val __obj = js.Dynamic.literal()
-    if (compareFunctionFactory != null) __obj.updateDynamic("compareFunctionFactory")(compareFunctionFactory)
+    if (compareFunctionFactory != null) __obj.updateDynamic("compareFunctionFactory")(js.Any.fromFunction2(compareFunctionFactory))
     if (!js.isUndefined(headerAction)) __obj.updateDynamic("headerAction")(headerAction)
     if (!js.isUndefined(indicator)) __obj.updateDynamic("indicator")(indicator)
     if (initialConfig != null) __obj.updateDynamic("initialConfig")(initialConfig.asInstanceOf[js.Any])

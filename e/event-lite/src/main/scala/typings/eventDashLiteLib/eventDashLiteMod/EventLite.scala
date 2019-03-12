@@ -15,12 +15,12 @@ trait EventLite extends js.Object {
 object EventLite {
   @scala.inline
   def apply(
-    emit: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Boolean],
-    off: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit], EventLite],
-    on: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit], EventLite],
-    once: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit], EventLite]
+    emit: (java.lang.String, /* repeated */ js.Any) => scala.Boolean,
+    off: (java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit]) => EventLite,
+    on: (java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit]) => EventLite,
+    once: (java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit]) => EventLite
   ): EventLite = {
-    val __obj = js.Dynamic.literal(emit = emit, off = off, on = on, once = once)
+    val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), once = js.Any.fromFunction2(once))
   
     __obj.asInstanceOf[EventLite]
   }

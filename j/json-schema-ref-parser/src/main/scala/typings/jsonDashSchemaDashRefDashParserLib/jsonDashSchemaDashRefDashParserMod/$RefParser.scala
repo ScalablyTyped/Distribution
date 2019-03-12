@@ -47,7 +47,7 @@ trait $RefParser extends js.Object {
     schema: java.lang.String,
     options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* schema */ jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4 | scala.Null, 
       _
     ]
@@ -61,7 +61,7 @@ trait $RefParser extends js.Object {
     schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4,
     options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* schema */ jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4 | scala.Null, 
       _
     ]
@@ -75,7 +75,7 @@ trait $RefParser extends js.Object {
     path: java.lang.String,
     options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* schema */ jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4 | scala.Null, 
       _
     ]
@@ -102,7 +102,7 @@ trait $RefParser extends js.Object {
     schema: java.lang.String,
     options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* schema */ jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4 | scala.Null, 
       _
     ]
@@ -118,7 +118,7 @@ trait $RefParser extends js.Object {
     schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4,
     options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* schema */ jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4 | scala.Null, 
       _
     ]
@@ -132,7 +132,7 @@ trait $RefParser extends js.Object {
     schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4,
     options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* schema */ jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4 | scala.Null, 
       _
     ]
@@ -157,7 +157,7 @@ trait $RefParser extends js.Object {
     schema: java.lang.String,
     options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* schema */ jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4 | scala.Null, 
       _
     ]
@@ -171,7 +171,7 @@ trait $RefParser extends js.Object {
     schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4,
     options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* schema */ jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4 | scala.Null, 
       _
     ]
@@ -200,7 +200,7 @@ trait $RefParser extends js.Object {
     schema: java.lang.String,
     options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* $refs */ jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.$Refs | scala.Null, 
       _
     ]
@@ -220,7 +220,7 @@ trait $RefParser extends js.Object {
     schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4,
     options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* $refs */ jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.$Refs | scala.Null, 
       _
     ]

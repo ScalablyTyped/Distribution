@@ -13,12 +13,9 @@ trait ProductsResource extends js.Object {
 object ProductsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ProductPurchase]
-    ]
+    get: gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[ProductPurchase]
   ): ProductsResource = {
-    val __obj = js.Dynamic.literal(get = get)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[ProductsResource]
   }

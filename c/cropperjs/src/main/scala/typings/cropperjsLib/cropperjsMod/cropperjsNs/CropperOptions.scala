@@ -219,17 +219,17 @@ object CropperOptions {
     autoCrop: js.UndefOr[scala.Boolean] = js.undefined,
     autoCropArea: scala.Int | scala.Double = null,
     background: js.UndefOr[scala.Boolean] = js.undefined,
-    build: js.Function0[scala.Boolean] = null,
-    built: js.Function0[scala.Unit] = null,
+    build: () => scala.Boolean = null,
+    built: () => scala.Unit = null,
     center: js.UndefOr[scala.Boolean] = js.undefined,
     checkCrossOrigin: js.UndefOr[scala.Boolean] = js.undefined,
     checkOrientation: js.UndefOr[scala.Boolean] = js.undefined,
-    crop: js.Function1[/* event */ CropperCropEvent, scala.Unit] = null,
+    crop: /* event */ CropperCropEvent => scala.Unit = null,
     cropBoxMovable: js.UndefOr[scala.Boolean] = js.undefined,
     cropBoxResizable: js.UndefOr[scala.Boolean] = js.undefined,
-    cropend: js.Function1[/* event */ CropperCropStepEvent, scala.Unit] = null,
-    cropmove: js.Function1[/* event */ CropperCropStepEvent, scala.Unit] = null,
-    cropstart: js.Function1[/* event */ CropperCropStepEvent, scala.Unit] = null,
+    cropend: /* event */ CropperCropStepEvent => scala.Unit = null,
+    cropmove: /* event */ CropperCropStepEvent => scala.Unit = null,
+    cropstart: /* event */ CropperCropStepEvent => scala.Unit = null,
     data: js.Object = null,
     dragMode: java.lang.String = null,
     guides: js.UndefOr[scala.Boolean] = js.undefined,
@@ -243,7 +243,7 @@ object CropperOptions {
     modal: js.UndefOr[scala.Boolean] = js.undefined,
     movable: js.UndefOr[scala.Boolean] = js.undefined,
     preview: java.lang.String = null,
-    ready: js.Function1[/* event */ CropperReadyEvent, scala.Unit] = null,
+    ready: /* event */ CropperReadyEvent => scala.Unit = null,
     responsive: js.UndefOr[scala.Boolean] = js.undefined,
     restore: js.UndefOr[scala.Boolean] = js.undefined,
     rotatable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -251,7 +251,7 @@ object CropperOptions {
     toggleDragModeOnDblclick: js.UndefOr[scala.Boolean] = js.undefined,
     viewMode: CropperViewMods = null,
     wheelZoomRatio: scala.Int | scala.Double = null,
-    zoom: js.Function1[/* event */ CropperZoomEvent, scala.Unit] = null,
+    zoom: /* event */ CropperZoomEvent => scala.Unit = null,
     zoomOnTouch: js.UndefOr[scala.Boolean] = js.undefined,
     zoomOnWheel: js.UndefOr[scala.Boolean] = js.undefined,
     zoomable: js.UndefOr[scala.Boolean] = js.undefined
@@ -261,17 +261,17 @@ object CropperOptions {
     if (!js.isUndefined(autoCrop)) __obj.updateDynamic("autoCrop")(autoCrop)
     if (autoCropArea != null) __obj.updateDynamic("autoCropArea")(autoCropArea.asInstanceOf[js.Any])
     if (!js.isUndefined(background)) __obj.updateDynamic("background")(background)
-    if (build != null) __obj.updateDynamic("build")(build)
-    if (built != null) __obj.updateDynamic("built")(built)
+    if (build != null) __obj.updateDynamic("build")(js.Any.fromFunction0(build))
+    if (built != null) __obj.updateDynamic("built")(js.Any.fromFunction0(built))
     if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
     if (!js.isUndefined(checkCrossOrigin)) __obj.updateDynamic("checkCrossOrigin")(checkCrossOrigin)
     if (!js.isUndefined(checkOrientation)) __obj.updateDynamic("checkOrientation")(checkOrientation)
-    if (crop != null) __obj.updateDynamic("crop")(crop)
+    if (crop != null) __obj.updateDynamic("crop")(js.Any.fromFunction1(crop))
     if (!js.isUndefined(cropBoxMovable)) __obj.updateDynamic("cropBoxMovable")(cropBoxMovable)
     if (!js.isUndefined(cropBoxResizable)) __obj.updateDynamic("cropBoxResizable")(cropBoxResizable)
-    if (cropend != null) __obj.updateDynamic("cropend")(cropend)
-    if (cropmove != null) __obj.updateDynamic("cropmove")(cropmove)
-    if (cropstart != null) __obj.updateDynamic("cropstart")(cropstart)
+    if (cropend != null) __obj.updateDynamic("cropend")(js.Any.fromFunction1(cropend))
+    if (cropmove != null) __obj.updateDynamic("cropmove")(js.Any.fromFunction1(cropmove))
+    if (cropstart != null) __obj.updateDynamic("cropstart")(js.Any.fromFunction1(cropstart))
     if (data != null) __obj.updateDynamic("data")(data)
     if (dragMode != null) __obj.updateDynamic("dragMode")(dragMode)
     if (!js.isUndefined(guides)) __obj.updateDynamic("guides")(guides)
@@ -285,7 +285,7 @@ object CropperOptions {
     if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
     if (!js.isUndefined(movable)) __obj.updateDynamic("movable")(movable)
     if (preview != null) __obj.updateDynamic("preview")(preview)
-    if (ready != null) __obj.updateDynamic("ready")(ready)
+    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
     if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
     if (!js.isUndefined(restore)) __obj.updateDynamic("restore")(restore)
     if (!js.isUndefined(rotatable)) __obj.updateDynamic("rotatable")(rotatable)
@@ -293,7 +293,7 @@ object CropperOptions {
     if (!js.isUndefined(toggleDragModeOnDblclick)) __obj.updateDynamic("toggleDragModeOnDblclick")(toggleDragModeOnDblclick)
     if (viewMode != null) __obj.updateDynamic("viewMode")(viewMode)
     if (wheelZoomRatio != null) __obj.updateDynamic("wheelZoomRatio")(wheelZoomRatio.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom)
+    if (zoom != null) __obj.updateDynamic("zoom")(js.Any.fromFunction1(zoom))
     if (!js.isUndefined(zoomOnTouch)) __obj.updateDynamic("zoomOnTouch")(zoomOnTouch)
     if (!js.isUndefined(zoomOnWheel)) __obj.updateDynamic("zoomOnWheel")(zoomOnWheel)
     if (!js.isUndefined(zoomable)) __obj.updateDynamic("zoomable")(zoomable)

@@ -44,15 +44,15 @@ object SequelizeStorageOptions {
   def apply(
     columnName: java.lang.String,
     columnType: sequelizeLib.sequelizeMod.sequelizeNs.DataTypeAbstract,
-    executed: js.Function0[js.Promise[js.Array[nodeLib.String]]],
-    logMigration: js.Function1[java.lang.String, js.Promise[scala.Unit]],
-    unlogMigration: js.Function1[java.lang.String, js.Promise[scala.Unit]],
+    executed: () => js.Promise[js.Array[java.lang.String]],
+    logMigration: java.lang.String => js.Promise[scala.Unit],
+    unlogMigration: java.lang.String => js.Promise[scala.Unit],
     model: sequelizeLib.sequelizeMod.sequelizeNs.Model[_, _] = null,
     modelName: java.lang.String = null,
     sequelize: sequelizeLib.sequelizeMod.sequelizeNs.Sequelize = null,
     tableName: java.lang.String = null
   ): SequelizeStorageOptions = {
-    val __obj = js.Dynamic.literal(columnName = columnName, columnType = columnType, executed = executed, logMigration = logMigration, unlogMigration = unlogMigration)
+    val __obj = js.Dynamic.literal(columnName = columnName, columnType = columnType, executed = js.Any.fromFunction0(executed), logMigration = js.Any.fromFunction1(logMigration), unlogMigration = js.Any.fromFunction1(unlogMigration))
     if (model != null) __obj.updateDynamic("model")(model)
     if (modelName != null) __obj.updateDynamic("modelName")(modelName)
     if (sequelize != null) __obj.updateDynamic("sequelize")(sequelize)

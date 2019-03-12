@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 /** indicates which rows have changed and the type of change action on the row set. */
 trait RowsChangeEvent extends RowChangeEvent {
-  var Bookmarks: activexDashInteropLib.SafeArray[_]
+  var Bookmarks: stdLib.SafeArray[_]
 }
 
 object RowsChangeEvent {
   @scala.inline
   def apply(
     Action: scala.Double,
-    Bookmarks: activexDashInteropLib.SafeArray[_],
+    Bookmarks: stdLib.SafeArray[_],
     Rows: scala.Double,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): RowsChangeEvent = {

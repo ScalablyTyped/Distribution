@@ -34,7 +34,7 @@ object legendOptions {
     backgroundOpacity: scala.Int | scala.Double = null,
     container: jqueryLib.JQuery[stdLib.HTMLElement] = null,
     labelBoxBorderColor: js.Any = null,
-    labelFormatter: js.Function2[/* label */ java.lang.String, /* series */ js.Any, java.lang.String] = null,
+    labelFormatter: (/* label */ java.lang.String, /* series */ js.Any) => java.lang.String = null,
     margin: js.Any = null,
     noColumns: scala.Int | scala.Double = null,
     position: java.lang.String = null,
@@ -46,7 +46,7 @@ object legendOptions {
     if (backgroundOpacity != null) __obj.updateDynamic("backgroundOpacity")(backgroundOpacity.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container)
     if (labelBoxBorderColor != null) __obj.updateDynamic("labelBoxBorderColor")(labelBoxBorderColor)
-    if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(labelFormatter)
+    if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(js.Any.fromFunction2(labelFormatter))
     if (margin != null) __obj.updateDynamic("margin")(margin)
     if (noColumns != null) __obj.updateDynamic("noColumns")(noColumns.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position)

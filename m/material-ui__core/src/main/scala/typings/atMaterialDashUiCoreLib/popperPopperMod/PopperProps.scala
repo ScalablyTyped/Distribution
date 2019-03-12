@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PopperProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] {
   var anchorEl: js.UndefOr[
-    scala.Null | reactLib.HTMLElement | popperDotJsLib.popperDotJsMod.ReferenceObject | (js.Function1[/* element */ reactLib.HTMLElement, reactLib.HTMLElement])
+    scala.Null | stdLib.HTMLElement | popperDotJsLib.popperDotJsMod.ReferenceObject | (js.Function1[/* element */ stdLib.HTMLElement, stdLib.HTMLElement])
   ] = js.undefined
   @JSName("children")
   var children_PopperProps: reactLib.reactMod.ReactNs.ReactNode | (js.Function1[
@@ -35,8 +35,8 @@ object PopperProps {
       reactLib.reactMod.ReactNs.ReactNode
     ]),
     open: scala.Boolean,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
-    anchorEl: reactLib.HTMLElement | popperDotJsLib.popperDotJsMod.ReferenceObject | (js.Function1[/* element */ reactLib.HTMLElement, reactLib.HTMLElement]) = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
+    anchorEl: stdLib.HTMLElement | popperDotJsLib.popperDotJsMod.ReferenceObject | (js.Function1[/* element */ stdLib.HTMLElement, stdLib.HTMLElement]) = null,
     container: reactLib.reactMod.ReactNs.ReactInstance | js.Function0[reactLib.reactMod.ReactNs.ReactInstance] = null,
     disablePortal: js.UndefOr[scala.Boolean] = js.undefined,
     keepMounted: js.UndefOr[scala.Boolean] = js.undefined,

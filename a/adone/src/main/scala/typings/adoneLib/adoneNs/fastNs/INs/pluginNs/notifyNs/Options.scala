@@ -64,7 +64,7 @@ object Options {
     console: js.UndefOr[scala.Boolean] = js.undefined,
     debounce: (scala.Double | adoneLib.adoneNs.utilNs.INs.DebounceOptions) with adoneLib.Anon_Timeout = null,
     emitError: js.UndefOr[scala.Boolean] = js.undefined,
-    filter: js.Function1[/* file */ T, scala.Boolean] = null,
+    filter: /* file */ T => scala.Boolean = null,
     gui: js.UndefOr[scala.Boolean] = js.undefined,
     host: java.lang.String = null,
     message: java.lang.String | (js.Function1[/* file */ T, java.lang.String]) = null,
@@ -81,7 +81,7 @@ object Options {
     if (!js.isUndefined(console)) __obj.updateDynamic("console")(console)
     if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
     if (!js.isUndefined(emitError)) __obj.updateDynamic("emitError")(emitError)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (!js.isUndefined(gui)) __obj.updateDynamic("gui")(gui)
     if (host != null) __obj.updateDynamic("host")(host)
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])

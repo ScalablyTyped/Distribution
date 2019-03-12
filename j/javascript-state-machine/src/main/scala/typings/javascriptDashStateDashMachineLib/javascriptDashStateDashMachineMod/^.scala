@@ -13,10 +13,7 @@ object ^ extends js.Object {
   val Result: javascriptDashStateDashMachineLib.Anon_CANCELLED = js.native
   val VERSION: java.lang.String = js.native
   val WILDCARD: java.lang.String = js.native
-  def create(config: javascriptDashStateDashMachineLib.javascriptDashStateDashMachineMod.StateMachineConfig): javascriptDashStateDashMachineLib.javascriptDashStateDashMachineMod.StateMachine = js.native
-  def create(
-    config: javascriptDashStateDashMachineLib.javascriptDashStateDashMachineMod.StateMachineConfig,
-    target: javascriptDashStateDashMachineLib.javascriptDashStateDashMachineMod.StateMachine
-  ): javascriptDashStateDashMachineLib.javascriptDashStateDashMachineMod.StateMachine = js.native
+  def create(config: StateMachineConfig): StateMachine = js.native
+  def create(config: StateMachineConfig, target: StateMachine): StateMachine = js.native
 }
 

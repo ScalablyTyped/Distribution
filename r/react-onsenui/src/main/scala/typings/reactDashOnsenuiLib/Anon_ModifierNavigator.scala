@@ -16,11 +16,11 @@ object Anon_ModifierNavigator {
   @scala.inline
   def apply(
     modifier: java.lang.String = null,
-    onClick: js.Function1[/* navigator */ reactDashOnsenuiLib.reactDashOnsenuiMod.Navigator, scala.Unit] = null
+    onClick: /* navigator */ reactDashOnsenuiLib.reactDashOnsenuiMod.Navigator => scala.Unit = null
   ): Anon_ModifierNavigator = {
     val __obj = js.Dynamic.literal()
     if (modifier != null) __obj.updateDynamic("modifier")(modifier)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     __obj.asInstanceOf[Anon_ModifierNavigator]
   }
 }

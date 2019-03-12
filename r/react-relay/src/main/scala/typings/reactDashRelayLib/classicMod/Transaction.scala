@@ -12,8 +12,8 @@ trait Transaction extends js.Object {
 
 object Transaction {
   @scala.inline
-  def apply(Status: js.Function0[scala.Double], getError: js.Function0[stdLib.Error]): Transaction = {
-    val __obj = js.Dynamic.literal(Status = Status, getError = getError)
+  def apply(Status: () => scala.Double, getError: () => stdLib.Error): Transaction = {
+    val __obj = js.Dynamic.literal(Status = js.Any.fromFunction0(Status), getError = js.Any.fromFunction0(getError))
   
     __obj.asInstanceOf[Transaction]
   }

@@ -13,24 +13,12 @@ object Monad3 {
   @scala.inline
   def apply[M /* <: fpDashTsLib.libHKTMod.URIS3 */](
     URI: M,
-    ap: js.Function2[
-      fpDashTsLib.libHKTMod.Type3[M, js.Any, js.Any, js.Function1[js.Any, js.Any]], 
-      fpDashTsLib.libHKTMod.Type3[M, js.Any, js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[M, js.Any, js.Any, js.Any]
-    ],
-    chain: js.Function2[
-      fpDashTsLib.libHKTMod.Type3[M, js.Any, js.Any, js.Any], 
-      js.Function1[js.Any, fpDashTsLib.libHKTMod.Type3[M, js.Any, js.Any, js.Any]], 
-      fpDashTsLib.libHKTMod.Type3[M, js.Any, js.Any, js.Any]
-    ],
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.Type3[M, js.Any, js.Any, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[M, js.Any, js.Any, js.Any]
-    ],
-    of: js.Function1[js.Any, fpDashTsLib.libHKTMod.Type3[M, js.Any, js.Any, js.Any]]
+    ap: (fpDashTsLib.libHKTMod.Type3[M, js.Any, js.Any, js.Function1[js.Any, js.Any]], fpDashTsLib.libHKTMod.Type3[M, js.Any, js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type3[M, js.Any, js.Any, js.Any],
+    chain: (fpDashTsLib.libHKTMod.Type3[M, js.Any, js.Any, js.Any], js.Function1[js.Any, fpDashTsLib.libHKTMod.Type3[M, js.Any, js.Any, js.Any]]) => fpDashTsLib.libHKTMod.Type3[M, js.Any, js.Any, js.Any],
+    map: (fpDashTsLib.libHKTMod.Type3[M, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type3[M, js.Any, js.Any, js.Any],
+    of: js.Any => fpDashTsLib.libHKTMod.Type3[M, js.Any, js.Any, js.Any]
   ): Monad3[M] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ap = ap, chain = chain, map = map, of = of)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ap = js.Any.fromFunction2(ap), chain = js.Any.fromFunction2(chain), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of))
   
     __obj.asInstanceOf[Monad3[M]]
   }

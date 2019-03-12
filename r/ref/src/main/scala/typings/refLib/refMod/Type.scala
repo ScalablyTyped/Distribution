@@ -23,14 +23,14 @@ trait Type extends js.Object {
 object Type {
   @scala.inline
   def apply(
-    get: js.Function2[nodeLib.Buffer, scala.Double, js.Any],
+    get: (nodeLib.Buffer, scala.Double) => js.Any,
     indirection: scala.Double,
-    set: js.Function3[nodeLib.Buffer, scala.Double, js.Any, scala.Unit],
+    set: (nodeLib.Buffer, scala.Double, js.Any) => scala.Unit,
     size: scala.Double,
     alignment: scala.Int | scala.Double = null,
     name: java.lang.String = null
   ): Type = {
-    val __obj = js.Dynamic.literal(get = get, indirection = indirection, set = set, size = size)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), indirection = indirection, set = js.Any.fromFunction3(set), size = size)
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[Type]

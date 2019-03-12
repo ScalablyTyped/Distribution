@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.Filter")
 @js.native
 class Filter protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Count: scala.Double = js.native
   val Creator: XlCreator = js.native
   val Criteria1: js.Any = js.native

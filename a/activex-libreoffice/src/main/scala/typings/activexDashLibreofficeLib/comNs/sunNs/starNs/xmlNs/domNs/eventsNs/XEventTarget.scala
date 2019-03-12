@@ -15,14 +15,14 @@ trait XEventTarget
 object XEventTarget {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function3[java.lang.String, XEventListener, scala.Boolean, scala.Unit],
-    dispatchEvent: js.Function1[XEvent, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function3[java.lang.String, XEventListener, scala.Boolean, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: (java.lang.String, XEventListener, scala.Boolean) => scala.Unit,
+    dispatchEvent: XEvent => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: (java.lang.String, XEventListener, scala.Boolean) => scala.Unit
   ): XEventTarget = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addEventListener = addEventListener, dispatchEvent = dispatchEvent, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction3(addEventListener), dispatchEvent = js.Any.fromFunction1(dispatchEvent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction3(removeEventListener))
   
     __obj.asInstanceOf[XEventTarget]
   }

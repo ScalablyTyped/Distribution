@@ -18,11 +18,11 @@ object ICriteriaParts {
   def apply(
     noDatabaseProperties: js.Array[java.lang.String],
     rawCriteriaObject: js.Any,
-    selectFromClause: js.Function1[Table[js.Any], java.lang.String],
+    selectFromClause: Table[js.Any] => java.lang.String,
     tables: js.Array[nodeDashMysqlDashWrapperLib.TableToSearchPart],
     whereClause: java.lang.String
   ): ICriteriaParts = {
-    val __obj = js.Dynamic.literal(noDatabaseProperties = noDatabaseProperties, rawCriteriaObject = rawCriteriaObject, selectFromClause = selectFromClause, tables = tables, whereClause = whereClause)
+    val __obj = js.Dynamic.literal(noDatabaseProperties = noDatabaseProperties, rawCriteriaObject = rawCriteriaObject, selectFromClause = js.Any.fromFunction1(selectFromClause), tables = tables, whereClause = whereClause)
   
     __obj.asInstanceOf[ICriteriaParts]
   }

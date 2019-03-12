@@ -16,7 +16,7 @@ object scryptDashJsMod extends js.Object {
     p: scala.Double,
     dklen: scala.Double,
     callback: js.Function3[
-      /* error */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* error */ js.UndefOr[stdLib.Error | scala.Null], 
       /* progress */ scala.Double, 
       /* key */ js.UndefOr[js.Array[scala.Double]], 
       scala.Unit

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class namespaced[T] protected () extends Promise[T] {
   def this(callback: js.Function2[
       /* resolve */ js.Function1[/* value */ js.UndefOr[T], scala.Unit], 
-      /* reject */ js.UndefOr[js.Function1[/* error */ nodeLib.Error, scala.Unit]], 
+      /* reject */ js.UndefOr[js.Function1[/* error */ stdLib.Error, scala.Unit]], 
       scala.Unit
     ]) = this()
 }
@@ -25,8 +25,8 @@ object namespaced extends js.Object {
   def async[T1, T2, TR](callback: js.Function2[/* p1 */ T1, /* p2 */ T2, TR]): js.Function2[/* p1 */ T1, /* p2 */ T2, tspromiseLib.Thenable[TR]] = js.native
   def async[T1, T2, T3, TR](callback: js.Function3[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, TR]): js.Function3[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, tspromiseLib.Thenable[TR]] = js.native
   def async[T1, T2, T3, T4, TR](callback: js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, TR]): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, tspromiseLib.Thenable[TR]] = js.native
-  def nfcall[T](obj: js.Any, methodName: nodeLib.String, args: js.Any*): tspromiseLib.Thenable[T] = js.native
-  def reject[T](error: nodeLib.Error): tspromiseLib.Thenable[T] = js.native
+  def nfcall[T](obj: js.Any, methodName: java.lang.String, args: js.Any*): tspromiseLib.Thenable[T] = js.native
+  def reject[T](error: stdLib.Error): tspromiseLib.Thenable[T] = js.native
   def resolve[T](): tspromiseLib.Thenable[T] = js.native
   def resolve[T](promise: tspromiseLib.Thenable[T]): tspromiseLib.Thenable[T] = js.native
   def resolve[T](value: T): tspromiseLib.Thenable[T] = js.native

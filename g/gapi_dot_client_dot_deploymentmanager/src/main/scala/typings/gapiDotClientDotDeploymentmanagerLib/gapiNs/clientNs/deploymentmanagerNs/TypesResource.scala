@@ -13,12 +13,9 @@ trait TypesResource extends js.Object {
 object TypesResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotDeploymentmanagerLib.Anon_AltFieldsFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TypesListResponse]
-    ]
+    list: gapiDotClientDotDeploymentmanagerLib.Anon_AltFieldsFilter => gapiDotClientLib.gapiNs.clientNs.Request[TypesListResponse]
   ): TypesResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[TypesResource]
   }

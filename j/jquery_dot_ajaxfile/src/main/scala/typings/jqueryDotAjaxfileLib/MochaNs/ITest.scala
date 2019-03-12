@@ -17,14 +17,14 @@ object ITest {
   def apply(
     async: scala.Boolean,
     fn: js.Function,
-    fullTitle: js.Function0[java.lang.String],
+    fullTitle: () => java.lang.String,
     parent: ISuite,
     pending: scala.Boolean,
     sync: scala.Boolean,
     timedOut: scala.Boolean,
     title: java.lang.String
   ): ITest = {
-    val __obj = js.Dynamic.literal(async = async, fn = fn, fullTitle = fullTitle, parent = parent, pending = pending, sync = sync, timedOut = timedOut, title = title)
+    val __obj = js.Dynamic.literal(async = async, fn = fn, fullTitle = js.Any.fromFunction0(fullTitle), parent = parent, pending = pending, sync = sync, timedOut = timedOut, title = title)
   
     __obj.asInstanceOf[ITest]
   }

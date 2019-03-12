@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.XPath")
 @js.native
 class XPath protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Creator: XlCreator = js.native
   var `Excel.XPath_typekey`: XPath = js.native
   val Map: XmlMap = js.native

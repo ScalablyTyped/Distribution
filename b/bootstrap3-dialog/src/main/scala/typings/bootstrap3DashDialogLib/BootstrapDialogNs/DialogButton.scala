@@ -29,7 +29,7 @@ trait DialogButton extends js.Object {
 object DialogButton {
   @scala.inline
   def apply(
-    action: js.Function1[/* dialog */ DialogContext, scala.Unit] = null,
+    action: /* dialog */ DialogContext => scala.Unit = null,
     autospin: js.UndefOr[scala.Boolean] = js.undefined,
     cssClass: java.lang.String = null,
     data: js.Any = null,
@@ -39,7 +39,7 @@ object DialogButton {
     label: java.lang.String = null
   ): DialogButton = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
+    if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
     if (!js.isUndefined(autospin)) __obj.updateDynamic("autospin")(autospin)
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (data != null) __obj.updateDynamic("data")(data)

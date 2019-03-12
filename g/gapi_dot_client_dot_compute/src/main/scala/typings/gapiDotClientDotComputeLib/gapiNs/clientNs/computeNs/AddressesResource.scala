@@ -21,28 +21,13 @@ trait AddressesResource extends js.Object {
 object AddressesResource {
   @scala.inline
   def apply(
-    aggregatedList: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AddressAggregatedList]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Address, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AddressAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Address]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AddressList]
-    ]
+    aggregatedList: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[AddressAggregatedList],
+    delete: gapiDotClientDotComputeLib.Anon_Address => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotComputeLib.Anon_AddressAlt => gapiDotClientLib.gapiNs.clientNs.Request[Address],
+    insert: gapiDotClientDotComputeLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotComputeLib.Anon_AltFieldsFilter => gapiDotClientLib.gapiNs.clientNs.Request[AddressList]
   ): AddressesResource = {
-    val __obj = js.Dynamic.literal(aggregatedList = aggregatedList, delete = delete, get = get, insert = insert, list = list)
+    val __obj = js.Dynamic.literal(aggregatedList = js.Any.fromFunction1(aggregatedList), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[AddressesResource]
   }

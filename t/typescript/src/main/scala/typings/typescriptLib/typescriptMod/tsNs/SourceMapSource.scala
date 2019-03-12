@@ -16,12 +16,12 @@ object SourceMapSource {
   @scala.inline
   def apply(
     fileName: java.lang.String,
-    getLineAndCharacterOfPosition: js.Function1[scala.Double, LineAndCharacter],
+    getLineAndCharacterOfPosition: scala.Double => LineAndCharacter,
     text: java.lang.String,
-    skipTrivia: js.Function1[/* pos */ scala.Double, scala.Double] = null
+    skipTrivia: /* pos */ scala.Double => scala.Double = null
   ): SourceMapSource = {
-    val __obj = js.Dynamic.literal(fileName = fileName, getLineAndCharacterOfPosition = getLineAndCharacterOfPosition, text = text)
-    if (skipTrivia != null) __obj.updateDynamic("skipTrivia")(skipTrivia)
+    val __obj = js.Dynamic.literal(fileName = fileName, getLineAndCharacterOfPosition = js.Any.fromFunction1(getLineAndCharacterOfPosition), text = text)
+    if (skipTrivia != null) __obj.updateDynamic("skipTrivia")(js.Any.fromFunction1(skipTrivia))
     __obj.asInstanceOf[SourceMapSource]
   }
 }

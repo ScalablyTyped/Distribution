@@ -24,9 +24,9 @@ class FaxConfiguration protected () extends js.Object {
   /** Does the server generate a brand */
   var Branding: scala.Boolean = js.native
   /** End of the discount rate period */
-  var DiscountRateEnd: activexDashInteropLib.VarDate = js.native
+  var DiscountRateEnd: stdLib.VarDate = js.native
   /** Start of the discount rate period */
-  var DiscountRateStart: activexDashInteropLib.VarDate = js.native
+  var DiscountRateStart: stdLib.VarDate = js.native
   var `FAXCOMEXLib.FaxConfiguration_typekey`: FaxConfiguration = js.native
   /** High quota water mark */
   var HighQuotaWaterMark: scala.Double = js.native

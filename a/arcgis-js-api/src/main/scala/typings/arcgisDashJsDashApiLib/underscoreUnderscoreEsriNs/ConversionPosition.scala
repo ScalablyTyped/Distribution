@@ -26,11 +26,11 @@ object ConversionPosition {
   def apply(
     constructor: js.Function,
     coordinate: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     location: Point,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): ConversionPosition = {
-    val __obj = js.Dynamic.literal(constructor = constructor, coordinate = coordinate, hasOwnProperty = hasOwnProperty, location = location, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, coordinate = coordinate, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), location = location, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[ConversionPosition]
   }

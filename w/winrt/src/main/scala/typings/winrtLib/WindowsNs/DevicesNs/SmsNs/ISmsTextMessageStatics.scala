@@ -13,10 +13,10 @@ trait ISmsTextMessageStatics extends js.Object {
 object ISmsTextMessageStatics {
   @scala.inline
   def apply(
-    fromBinaryData: js.Function2[SmsDataFormat, stdLib.Uint8Array, SmsTextMessage],
-    fromBinaryMessage: js.Function1[SmsBinaryMessage, SmsTextMessage]
+    fromBinaryData: (SmsDataFormat, stdLib.Uint8Array) => SmsTextMessage,
+    fromBinaryMessage: SmsBinaryMessage => SmsTextMessage
   ): ISmsTextMessageStatics = {
-    val __obj = js.Dynamic.literal(fromBinaryData = fromBinaryData, fromBinaryMessage = fromBinaryMessage)
+    val __obj = js.Dynamic.literal(fromBinaryData = js.Any.fromFunction2(fromBinaryData), fromBinaryMessage = js.Any.fromFunction1(fromBinaryMessage))
   
     __obj.asInstanceOf[ISmsTextMessageStatics]
   }

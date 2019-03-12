@@ -17,11 +17,11 @@ object RadioProps {
   def apply(
     name: java.lang.String,
     `type`: reactDashBootstrapLib.reactDashBootstrapLibStrings.radio,
-    onChange: js.Function1[/* value */ js.Any, scala.Unit] = null
+    onChange: /* value */ js.Any => scala.Unit = null
   ): RadioProps = {
     val __obj = js.Dynamic.literal(name = name)
     __obj.updateDynamic("type")(`type`)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[RadioProps]
   }
 }

@@ -74,10 +74,10 @@ trait SliderProps extends js.Object {
 object SliderProps {
   @scala.inline
   def apply(
-    afterSlide: js.Function1[/* currentIndex */ scala.Double, scala.Unit] = null,
+    afterSlide: /* currentIndex */ scala.Double => scala.Unit = null,
     align: reactDashMotionDashSliderLib.reactDashMotionDashSliderLibStrings.left | reactDashMotionDashSliderLib.reactDashMotionDashSliderLibStrings.center | reactDashMotionDashSliderLib.reactDashMotionDashSliderLibStrings.right = null,
     autoHeight: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeSlide: js.Function2[/* currentIndex */ scala.Double, /* nextIndex */ scala.Double, scala.Unit] = null,
+    beforeSlide: (/* currentIndex */ scala.Double, /* nextIndex */ scala.Double) => scala.Unit = null,
     currentIndex: scala.Int | scala.Double = null,
     currentKey: java.lang.String | scala.Double = null,
     flickTimeout: scala.Int | scala.Double = null,
@@ -88,10 +88,10 @@ object SliderProps {
     swipeThreshold: scala.Int | scala.Double = null
   ): SliderProps = {
     val __obj = js.Dynamic.literal()
-    if (afterSlide != null) __obj.updateDynamic("afterSlide")(afterSlide)
+    if (afterSlide != null) __obj.updateDynamic("afterSlide")(js.Any.fromFunction1(afterSlide))
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
-    if (beforeSlide != null) __obj.updateDynamic("beforeSlide")(beforeSlide)
+    if (beforeSlide != null) __obj.updateDynamic("beforeSlide")(js.Any.fromFunction2(beforeSlide))
     if (currentIndex != null) __obj.updateDynamic("currentIndex")(currentIndex.asInstanceOf[js.Any])
     if (currentKey != null) __obj.updateDynamic("currentKey")(currentKey.asInstanceOf[js.Any])
     if (flickTimeout != null) __obj.updateDynamic("flickTimeout")(flickTimeout.asInstanceOf[js.Any])

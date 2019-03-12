@@ -50,57 +50,37 @@ object SortableGridDataModel {
     ColumnCount: scala.Double,
     CurrentSortOrder: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[scala.Double, scala.Boolean],
     RowCount: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    addGridDataListener: js.Function1[XGridDataListener, scala.Unit],
-    addRow: js.Function2[js.Any, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    addRows: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]], 
-      scala.Unit
-    ],
-    create: js.Function1[XMutableGridDataModel, scala.Unit],
-    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
-    createWithCollator: js.Function2[
-      XMutableGridDataModel, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.XCollator, 
-      scala.Unit
-    ],
-    dispose: js.Function0[scala.Unit],
-    getCellData: js.Function2[scala.Double, scala.Double, js.Any],
-    getCellToolTip: js.Function2[scala.Double, scala.Double, js.Any],
-    getCurrentSortOrder: js.Function0[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[scala.Double, scala.Boolean]
-    ],
-    getRowData: js.Function1[scala.Double, activexDashInteropLib.SafeArray[_]],
-    getRowHeading: js.Function1[scala.Double, js.Any],
-    insertRow: js.Function3[scala.Double, js.Any, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    insertRows: js.Function3[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]], 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeAllRows: js.Function0[scala.Unit],
-    removeColumnSort: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    removeGridDataListener: js.Function1[XGridDataListener, scala.Unit],
-    removeRow: js.Function1[scala.Double, scala.Unit],
-    sortByColumn: js.Function2[scala.Double, scala.Boolean, scala.Unit],
-    updateCellData: js.Function3[scala.Double, scala.Double, js.Any, scala.Unit],
-    updateCellToolTip: js.Function3[scala.Double, scala.Double, js.Any, scala.Unit],
-    updateRowData: js.Function3[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
-      scala.Unit
-    ],
-    updateRowHeading: js.Function2[scala.Double, js.Any, scala.Unit],
-    updateRowToolTip: js.Function2[scala.Double, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    addGridDataListener: XGridDataListener => scala.Unit,
+    addRow: (js.Any, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]) => scala.Unit,
+    addRows: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]]) => scala.Unit,
+    create: XMutableGridDataModel => scala.Unit,
+    createClone: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable,
+    createWithCollator: (XMutableGridDataModel, activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.XCollator) => scala.Unit,
+    dispose: () => scala.Unit,
+    getCellData: (scala.Double, scala.Double) => js.Any,
+    getCellToolTip: (scala.Double, scala.Double) => js.Any,
+    getCurrentSortOrder: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[scala.Double, scala.Boolean],
+    getRowData: scala.Double => stdLib.SafeArray[_],
+    getRowHeading: scala.Double => js.Any,
+    insertRow: (scala.Double, js.Any, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]) => scala.Unit,
+    insertRows: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]]) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeAllRows: () => scala.Unit,
+    removeColumnSort: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    removeGridDataListener: XGridDataListener => scala.Unit,
+    removeRow: scala.Double => scala.Unit,
+    sortByColumn: (scala.Double, scala.Boolean) => scala.Unit,
+    updateCellData: (scala.Double, scala.Double, js.Any) => scala.Unit,
+    updateCellToolTip: (scala.Double, scala.Double, js.Any) => scala.Unit,
+    updateRowData: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]) => scala.Unit,
+    updateRowHeading: (scala.Double, js.Any) => scala.Unit,
+    updateRowToolTip: (scala.Double, js.Any) => scala.Unit
   ): SortableGridDataModel = {
-    val __obj = js.Dynamic.literal(ColumnCount = ColumnCount, CurrentSortOrder = CurrentSortOrder, RowCount = RowCount, acquire = acquire, addEventListener = addEventListener, addGridDataListener = addGridDataListener, addRow = addRow, addRows = addRows, create = create, createClone = createClone, createWithCollator = createWithCollator, dispose = dispose, getCellData = getCellData, getCellToolTip = getCellToolTip, getCurrentSortOrder = getCurrentSortOrder, getRowData = getRowData, getRowHeading = getRowHeading, insertRow = insertRow, insertRows = insertRows, queryInterface = queryInterface, release = release, removeAllRows = removeAllRows, removeColumnSort = removeColumnSort, removeEventListener = removeEventListener, removeGridDataListener = removeGridDataListener, removeRow = removeRow, sortByColumn = sortByColumn, updateCellData = updateCellData, updateCellToolTip = updateCellToolTip, updateRowData = updateRowData, updateRowHeading = updateRowHeading, updateRowToolTip = updateRowToolTip)
+    val __obj = js.Dynamic.literal(ColumnCount = ColumnCount, CurrentSortOrder = CurrentSortOrder, RowCount = RowCount, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addGridDataListener = js.Any.fromFunction1(addGridDataListener), addRow = js.Any.fromFunction2(addRow), addRows = js.Any.fromFunction2(addRows), create = js.Any.fromFunction1(create), createClone = js.Any.fromFunction0(createClone), createWithCollator = js.Any.fromFunction2(createWithCollator), dispose = js.Any.fromFunction0(dispose), getCellData = js.Any.fromFunction2(getCellData), getCellToolTip = js.Any.fromFunction2(getCellToolTip), getCurrentSortOrder = js.Any.fromFunction0(getCurrentSortOrder), getRowData = js.Any.fromFunction1(getRowData), getRowHeading = js.Any.fromFunction1(getRowHeading), insertRow = js.Any.fromFunction3(insertRow), insertRows = js.Any.fromFunction3(insertRows), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeAllRows = js.Any.fromFunction0(removeAllRows), removeColumnSort = js.Any.fromFunction0(removeColumnSort), removeEventListener = js.Any.fromFunction1(removeEventListener), removeGridDataListener = js.Any.fromFunction1(removeGridDataListener), removeRow = js.Any.fromFunction1(removeRow), sortByColumn = js.Any.fromFunction2(sortByColumn), updateCellData = js.Any.fromFunction3(updateCellData), updateCellToolTip = js.Any.fromFunction3(updateCellToolTip), updateRowData = js.Any.fromFunction3(updateRowData), updateRowHeading = js.Any.fromFunction2(updateRowHeading), updateRowToolTip = js.Any.fromFunction2(updateRowToolTip))
   
     __obj.asInstanceOf[SortableGridDataModel]
   }

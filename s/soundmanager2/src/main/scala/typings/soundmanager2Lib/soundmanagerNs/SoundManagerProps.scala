@@ -69,8 +69,8 @@ object SoundManagerProps {
     ignoreMobileRestrications: js.UndefOr[scala.Boolean] = js.undefined,
     movieStarOptions: MovieStarOptions = null,
     noSWFCache: js.UndefOr[scala.Boolean] = js.undefined,
-    onready: js.Function0[scala.Unit] = null,
-    ontimeout: js.Function0[scala.Unit] = null,
+    onready: () => scala.Unit = null,
+    ontimeout: () => scala.Unit = null,
     preferFlash: js.UndefOr[scala.Boolean] = js.undefined,
     url: java.lang.String = null,
     useAltURL: js.UndefOr[scala.Boolean] = js.undefined,
@@ -99,8 +99,8 @@ object SoundManagerProps {
     if (!js.isUndefined(ignoreMobileRestrications)) __obj.updateDynamic("ignoreMobileRestrications")(ignoreMobileRestrications)
     if (movieStarOptions != null) __obj.updateDynamic("movieStarOptions")(movieStarOptions)
     if (!js.isUndefined(noSWFCache)) __obj.updateDynamic("noSWFCache")(noSWFCache)
-    if (onready != null) __obj.updateDynamic("onready")(onready)
-    if (ontimeout != null) __obj.updateDynamic("ontimeout")(ontimeout)
+    if (onready != null) __obj.updateDynamic("onready")(js.Any.fromFunction0(onready))
+    if (ontimeout != null) __obj.updateDynamic("ontimeout")(js.Any.fromFunction0(ontimeout))
     if (!js.isUndefined(preferFlash)) __obj.updateDynamic("preferFlash")(preferFlash)
     if (url != null) __obj.updateDynamic("url")(url)
     if (!js.isUndefined(useAltURL)) __obj.updateDynamic("useAltURL")(useAltURL)

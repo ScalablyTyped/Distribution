@@ -13,10 +13,10 @@ trait Anon_Add extends js.Object {
 object Anon_Add {
   @scala.inline
   def apply(
-    add: js.Function2[java.lang.String, js.Function, scala.Unit],
-    run: js.Function2[java.lang.String, js.Object, scala.Unit]
+    add: (java.lang.String, js.Function) => scala.Unit,
+    run: (java.lang.String, js.Object) => scala.Unit
   ): Anon_Add = {
-    val __obj = js.Dynamic.literal(add = add, run = run)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), run = js.Any.fromFunction2(run))
   
     __obj.asInstanceOf[Anon_Add]
   }

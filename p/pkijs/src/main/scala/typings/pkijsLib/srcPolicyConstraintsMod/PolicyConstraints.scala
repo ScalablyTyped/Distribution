@@ -16,13 +16,13 @@ trait PolicyConstraints extends js.Object {
 object PolicyConstraints {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    fromSchema: js.Any => scala.Unit,
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     inhibitPolicyMapping: scala.Int | scala.Double = null,
     requireExplicitPolicy: scala.Int | scala.Double = null
   ): PolicyConstraints = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
     if (inhibitPolicyMapping != null) __obj.updateDynamic("inhibitPolicyMapping")(inhibitPolicyMapping.asInstanceOf[js.Any])
     if (requireExplicitPolicy != null) __obj.updateDynamic("requireExplicitPolicy")(requireExplicitPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyConstraints]

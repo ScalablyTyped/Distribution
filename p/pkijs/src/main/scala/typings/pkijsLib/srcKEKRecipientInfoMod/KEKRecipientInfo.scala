@@ -20,15 +20,15 @@ object KEKRecipientInfo {
   @scala.inline
   def apply(
     encryptedKey: asn1jsLib.asn1jsMod.OctetString,
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     kekid: pkijsLib.srcKEKIdentifierMod.default,
     keyEncryptionAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
     preDefinedKEK: stdLib.ArrayBuffer,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     version: scala.Double
   ): KEKRecipientInfo = {
-    val __obj = js.Dynamic.literal(encryptedKey = encryptedKey, fromSchema = fromSchema, kekid = kekid, keyEncryptionAlgorithm = keyEncryptionAlgorithm, preDefinedKEK = preDefinedKEK, toJSON = toJSON, toSchema = toSchema, version = version)
+    val __obj = js.Dynamic.literal(encryptedKey = encryptedKey, fromSchema = js.Any.fromFunction1(fromSchema), kekid = kekid, keyEncryptionAlgorithm = keyEncryptionAlgorithm, preDefinedKEK = preDefinedKEK, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), version = version)
   
     __obj.asInstanceOf[KEKRecipientInfo]
   }

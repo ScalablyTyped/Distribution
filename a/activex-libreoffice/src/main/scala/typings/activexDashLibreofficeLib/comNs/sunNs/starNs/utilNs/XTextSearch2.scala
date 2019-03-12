@@ -14,15 +14,15 @@ trait XTextSearch2 extends XTextSearch {
 object XTextSearch2 {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    searchBackward: js.Function3[java.lang.String, scala.Double, scala.Double, SearchResult],
-    searchForward: js.Function3[java.lang.String, scala.Double, scala.Double, SearchResult],
-    setOptions: js.Function1[SearchOptions, scala.Unit],
-    setOptions2: js.Function1[SearchOptions2, scala.Unit]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    searchBackward: (java.lang.String, scala.Double, scala.Double) => SearchResult,
+    searchForward: (java.lang.String, scala.Double, scala.Double) => SearchResult,
+    setOptions: SearchOptions => scala.Unit,
+    setOptions2: SearchOptions2 => scala.Unit
   ): XTextSearch2 = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, searchBackward = searchBackward, searchForward = searchForward, setOptions = setOptions, setOptions2 = setOptions2)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), searchBackward = js.Any.fromFunction3(searchBackward), searchForward = js.Any.fromFunction3(searchForward), setOptions = js.Any.fromFunction1(setOptions), setOptions2 = js.Any.fromFunction1(setOptions2))
   
     __obj.asInstanceOf[XTextSearch2]
   }

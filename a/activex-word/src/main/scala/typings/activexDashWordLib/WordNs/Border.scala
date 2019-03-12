@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.Border")
 @js.native
 class Border protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var ArtStyle: WdPageBorderArt = js.native
   var ArtWidth: scala.Double = js.native
   var Color: WdColor = js.native

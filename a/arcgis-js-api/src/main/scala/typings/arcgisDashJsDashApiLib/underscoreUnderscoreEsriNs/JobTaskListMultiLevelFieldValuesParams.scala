@@ -32,12 +32,12 @@ object JobTaskListMultiLevelFieldValuesParams {
   def apply(
     constructor: js.Function,
     field: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     previousSelectedValues: js.Array[java.lang.String],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     user: java.lang.String
   ): JobTaskListMultiLevelFieldValuesParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = hasOwnProperty, previousSelectedValues = previousSelectedValues, propertyIsEnumerable = propertyIsEnumerable, user = user)
+    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), previousSelectedValues = previousSelectedValues, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user)
   
     __obj.asInstanceOf[JobTaskListMultiLevelFieldValuesParams]
   }

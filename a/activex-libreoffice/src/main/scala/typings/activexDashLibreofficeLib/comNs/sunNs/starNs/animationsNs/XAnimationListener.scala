@@ -46,15 +46,15 @@ trait XAnimationListener
 object XAnimationListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    beginEvent: js.Function1[XAnimationNode, scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    endEvent: js.Function1[XAnimationNode, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    repeat: js.Function2[XAnimationNode, scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    beginEvent: XAnimationNode => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    endEvent: XAnimationNode => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    repeat: (XAnimationNode, scala.Double) => scala.Unit
   ): XAnimationListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, beginEvent = beginEvent, disposing = disposing, endEvent = endEvent, queryInterface = queryInterface, release = release, repeat = repeat)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), beginEvent = js.Any.fromFunction1(beginEvent), disposing = js.Any.fromFunction1(disposing), endEvent = js.Any.fromFunction1(endEvent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), repeat = js.Any.fromFunction2(repeat))
   
     __obj.asInstanceOf[XAnimationListener]
   }

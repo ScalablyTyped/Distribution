@@ -31,12 +31,12 @@ object XResultSetMetaDataSupplier {
   @scala.inline
   def apply(
     MetaData: XResultSetMetaData,
-    acquire: js.Function0[scala.Unit],
-    getMetaData: js.Function0[XResultSetMetaData],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getMetaData: () => XResultSetMetaData,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XResultSetMetaDataSupplier = {
-    val __obj = js.Dynamic.literal(MetaData = MetaData, acquire = acquire, getMetaData = getMetaData, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(MetaData = MetaData, acquire = js.Any.fromFunction0(acquire), getMetaData = js.Any.fromFunction0(getMetaData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XResultSetMetaDataSupplier]
   }

@@ -23,7 +23,7 @@ object ^ extends js.Object {
       /* token */ prexLib.prexMod.CancellationToken, 
       js.Thenable[java.lang.String]
     ],
-    opts: ecmarkupLib.libEcmarkupMod.Options
+    opts: Options
   ): js.Promise[ecmarkupLib.libSpecMod.Spec] = js.native
   def build(
     path: java.lang.String,
@@ -32,7 +32,7 @@ object ^ extends js.Object {
       /* token */ prexLib.prexMod.CancellationToken, 
       js.Thenable[java.lang.String]
     ],
-    opts: ecmarkupLib.libEcmarkupMod.Options,
+    opts: Options,
     token: prexLib.prexMod.CancellationToken
   ): js.Promise[ecmarkupLib.libSpecMod.Spec] = js.native
 }

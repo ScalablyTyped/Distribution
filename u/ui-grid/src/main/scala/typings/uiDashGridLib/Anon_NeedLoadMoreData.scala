@@ -9,19 +9,16 @@ trait Anon_NeedLoadMoreData extends js.Object {
   /**
     * This event fires when scroll reaches bottom percentage of grid and needs to load data
     */
-  var needLoadMoreData: angularLib.angularMod.Global.Function
+  var needLoadMoreData: js.Function
   /**
     * This event fires when scroll reaches top percentage of grid and needs to load data
     */
-  var needLoadMoreDataTop: angularLib.angularMod.Global.Function
+  var needLoadMoreDataTop: js.Function
 }
 
 object Anon_NeedLoadMoreData {
   @scala.inline
-  def apply(
-    needLoadMoreData: angularLib.angularMod.Global.Function,
-    needLoadMoreDataTop: angularLib.angularMod.Global.Function
-  ): Anon_NeedLoadMoreData = {
+  def apply(needLoadMoreData: js.Function, needLoadMoreDataTop: js.Function): Anon_NeedLoadMoreData = {
     val __obj = js.Dynamic.literal(needLoadMoreData = needLoadMoreData, needLoadMoreDataTop = needLoadMoreDataTop)
   
     __obj.asInstanceOf[Anon_NeedLoadMoreData]

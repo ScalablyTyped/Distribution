@@ -67,13 +67,13 @@ object Model {
   def apply(
     backgroundColor: java.lang.String = null,
     backgroundImage: java.lang.String = null,
-    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    change: /* e */ ChangeEventArgs => scala.Unit = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     height: java.lang.String = null,
     isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
-    mouseDown: js.Function1[/* e */ MouseDownEventArgs, scala.Unit] = null,
-    mouseMove: js.Function1[/* e */ MouseMoveEventArgs, scala.Unit] = null,
-    mouseUp: js.Function1[/* e */ MouseUpEventArgs, scala.Unit] = null,
+    mouseDown: /* e */ MouseDownEventArgs => scala.Unit = null,
+    mouseMove: /* e */ MouseMoveEventArgs => scala.Unit = null,
+    mouseUp: /* e */ MouseUpEventArgs => scala.Unit = null,
     saveImageFormat: SaveImageFormat | java.lang.String = null,
     saveWithBackground: js.UndefOr[scala.Boolean] = js.undefined,
     showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
@@ -84,13 +84,13 @@ object Model {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage)
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (height != null) __obj.updateDynamic("height")(height)
     if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
-    if (mouseDown != null) __obj.updateDynamic("mouseDown")(mouseDown)
-    if (mouseMove != null) __obj.updateDynamic("mouseMove")(mouseMove)
-    if (mouseUp != null) __obj.updateDynamic("mouseUp")(mouseUp)
+    if (mouseDown != null) __obj.updateDynamic("mouseDown")(js.Any.fromFunction1(mouseDown))
+    if (mouseMove != null) __obj.updateDynamic("mouseMove")(js.Any.fromFunction1(mouseMove))
+    if (mouseUp != null) __obj.updateDynamic("mouseUp")(js.Any.fromFunction1(mouseUp))
     if (saveImageFormat != null) __obj.updateDynamic("saveImageFormat")(saveImageFormat.asInstanceOf[js.Any])
     if (!js.isUndefined(saveWithBackground)) __obj.updateDynamic("saveWithBackground")(saveWithBackground)
     if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)

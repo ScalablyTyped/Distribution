@@ -20,7 +20,7 @@ class CodeProject protected () extends js.Object {
   val AllModules_Original: AccessObjects = js.native
   @JSName("AllReports")
   val AllReports_Original: AccessObjects = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   val BaseConnectionString: java.lang.String = js.native
   val Connection: activexDashAdodbLib.ADODBNs.Connection = js.native
   val FileFormat: AcFileFormat = js.native

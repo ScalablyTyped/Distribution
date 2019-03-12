@@ -15,10 +15,10 @@ object Permission {
   @scala.inline
   def apply(
     permissionName: java.lang.String,
-    validatePermission: js.Function0[angularLib.angularMod.angularNs.IPromise[_]],
+    validatePermission: () => angularLib.angularMod.angularNs.IPromise[_],
     validationFunction: PermissionValidationFunction = null
   ): Permission = {
-    val __obj = js.Dynamic.literal(permissionName = permissionName, validatePermission = validatePermission)
+    val __obj = js.Dynamic.literal(permissionName = permissionName, validatePermission = js.Any.fromFunction0(validatePermission))
     if (validationFunction != null) __obj.updateDynamic("validationFunction")(validationFunction)
     __obj.asInstanceOf[Permission]
   }

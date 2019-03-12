@@ -8,12 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("react-mosaic-component/lib/contextTypes", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val ModernMosaicContext: reactLib.reactMod.ReactNs.Context[
-    reactDashMosaicDashComponentLib.libContextTypesMod.MosaicContext[java.lang.String | scala.Double]
-  ] = js.native
+  val ModernMosaicContext: reactLib.reactMod.ReactNs.Context[MosaicContext[java.lang.String | scala.Double]] = js.native
   val ModernMosaicWindowContext: reactLib.reactMod.ReactNs.Context[
     stdLib.Pick[
-      reactDashMosaicDashComponentLib.libContextTypesMod.MosaicWindowContext[java.lang.String | scala.Double], 
+      MosaicWindowContext[java.lang.String | scala.Double], 
       reactDashMosaicDashComponentLib.reactDashMosaicDashComponentLibStrings.mosaicWindowActions
     ]
   ] = js.native

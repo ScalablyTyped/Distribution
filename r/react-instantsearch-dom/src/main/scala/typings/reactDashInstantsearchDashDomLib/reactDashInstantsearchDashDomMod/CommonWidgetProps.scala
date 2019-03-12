@@ -18,3 +18,14 @@ trait CommonWidgetProps extends js.Object {
   ] = js.undefined
 }
 
+object CommonWidgetProps {
+  @scala.inline
+  def apply(
+    translations: org.scalablytyped.runtime.StringDictionary[java.lang.String | (js.Function1[/* repeated */ js.Any, _])] = null
+  ): CommonWidgetProps = {
+    val __obj = js.Dynamic.literal()
+    if (translations != null) __obj.updateDynamic("translations")(translations)
+    __obj.asInstanceOf[CommonWidgetProps]
+  }
+}
+

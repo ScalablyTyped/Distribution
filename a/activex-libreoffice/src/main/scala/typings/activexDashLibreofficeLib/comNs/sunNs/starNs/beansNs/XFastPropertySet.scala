@@ -35,13 +35,13 @@ trait XFastPropertySet
 object XFastPropertySet {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getFastPropertyValue: js.Function1[scala.Double, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setFastPropertyValue: js.Function2[scala.Double, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    getFastPropertyValue: scala.Double => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setFastPropertyValue: (scala.Double, js.Any) => scala.Unit
   ): XFastPropertySet = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getFastPropertyValue = getFastPropertyValue, queryInterface = queryInterface, release = release, setFastPropertyValue = setFastPropertyValue)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getFastPropertyValue = js.Any.fromFunction1(getFastPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setFastPropertyValue = js.Any.fromFunction2(setFastPropertyValue))
   
     __obj.asInstanceOf[XFastPropertySet]
   }

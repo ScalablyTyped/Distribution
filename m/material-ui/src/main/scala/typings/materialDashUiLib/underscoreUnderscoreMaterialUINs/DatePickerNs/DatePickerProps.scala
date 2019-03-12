@@ -80,7 +80,7 @@ object DatePickerProps {
     firstDayOfWeek: scala.Int | scala.Double = null,
     floatingLabelStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     floatingLabelText: reactLib.reactMod.ReactNs.ReactNode = null,
-    formatDate: js.Function1[/* date */ stdLib.Date, java.lang.String] = null,
+    formatDate: /* date */ stdLib.Date => java.lang.String = null,
     fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
     hideCalendarDate: js.UndefOr[scala.Boolean] = js.undefined,
     hintStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -94,15 +94,15 @@ object DatePickerProps {
     name: java.lang.String = null,
     okLabel: reactLib.reactMod.ReactNs.ReactNode = null,
     onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onChange: js.Function2[/* e */ js.Any, /* date */ stdLib.Date, scala.Unit] = null,
+    onChange: (/* e */ js.Any, /* date */ stdLib.Date) => scala.Unit = null,
     onClick: reactLib.reactMod.ReactNs.TouchEventHandler[js.Object] = null,
-    onDismiss: js.Function0[scala.Unit] = null,
+    onDismiss: () => scala.Unit = null,
     onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
     onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
-    onShow: js.Function0[scala.Unit] = null,
+    onShow: () => scala.Unit = null,
     rows: scala.Int | scala.Double = null,
     rowsMax: scala.Int | scala.Double = null,
-    shouldDisableDate: js.Function1[/* day */ stdLib.Date, scala.Boolean] = null,
+    shouldDisableDate: /* day */ stdLib.Date => scala.Boolean = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     textFieldStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     `type`: java.lang.String = null,
@@ -129,7 +129,7 @@ object DatePickerProps {
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
     if (floatingLabelStyle != null) __obj.updateDynamic("floatingLabelStyle")(floatingLabelStyle)
     if (floatingLabelText != null) __obj.updateDynamic("floatingLabelText")(floatingLabelText.asInstanceOf[js.Any])
-    if (formatDate != null) __obj.updateDynamic("formatDate")(formatDate)
+    if (formatDate != null) __obj.updateDynamic("formatDate")(js.Any.fromFunction1(formatDate))
     if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth)
     if (!js.isUndefined(hideCalendarDate)) __obj.updateDynamic("hideCalendarDate")(hideCalendarDate)
     if (hintStyle != null) __obj.updateDynamic("hintStyle")(hintStyle)
@@ -143,15 +143,15 @@ object DatePickerProps {
     if (name != null) __obj.updateDynamic("name")(name)
     if (okLabel != null) __obj.updateDynamic("okLabel")(okLabel.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss)
+    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (rowsMax != null) __obj.updateDynamic("rowsMax")(rowsMax.asInstanceOf[js.Any])
-    if (shouldDisableDate != null) __obj.updateDynamic("shouldDisableDate")(shouldDisableDate)
+    if (shouldDisableDate != null) __obj.updateDynamic("shouldDisableDate")(js.Any.fromFunction1(shouldDisableDate))
     if (style != null) __obj.updateDynamic("style")(style)
     if (textFieldStyle != null) __obj.updateDynamic("textFieldStyle")(textFieldStyle)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

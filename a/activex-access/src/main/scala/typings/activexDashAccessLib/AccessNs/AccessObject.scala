@@ -11,8 +11,8 @@ class AccessObject protected () extends js.Object {
   var `Access.AccessObject_typekey`: AccessObject = js.native
   val Attributes: scala.Double = js.native
   val CurrentView: AcCurrentView = js.native
-  val DateCreated: activexDashInteropLib.VarDate = js.native
-  val DateModified: activexDashInteropLib.VarDate = js.native
+  val DateCreated: stdLib.VarDate = js.native
+  val DateModified: stdLib.VarDate = js.native
   var FullName: java.lang.String = js.native
   val IsLoaded: scala.Boolean = js.native
   val IsWeb: scala.Boolean = js.native

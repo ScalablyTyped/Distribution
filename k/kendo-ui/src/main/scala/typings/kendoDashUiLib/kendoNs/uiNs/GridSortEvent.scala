@@ -12,12 +12,12 @@ trait GridSortEvent extends GridEvent {
 object GridSortEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Grid,
     sort: js.Any = null
   ): GridSortEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (sort != null) __obj.updateDynamic("sort")(sort)
     __obj.asInstanceOf[GridSortEvent]
   }

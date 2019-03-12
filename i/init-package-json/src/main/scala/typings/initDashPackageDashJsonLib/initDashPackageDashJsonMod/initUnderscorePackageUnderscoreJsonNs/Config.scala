@@ -13,10 +13,10 @@ trait Config
 object Config {
   @scala.inline
   def apply(
-    get: js.Function1[java.lang.String, js.Any],
+    get: java.lang.String => js.Any,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Config = {
-    val __obj = js.Dynamic.literal(get = get)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Config]
   }

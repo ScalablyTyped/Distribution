@@ -8,31 +8,20 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql-relay", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val backwardConnectionArgs: graphqlLib.typeDefinitionMod.GraphQLFieldConfigArgumentMap with graphqlDashRelayLib.graphqlDashRelayMod.BackwardConnectionArgs = js.native
-  val connectionArgs: graphqlLib.typeDefinitionMod.GraphQLFieldConfigArgumentMap with graphqlDashRelayLib.graphqlDashRelayMod.ForwardConnectionArgs with graphqlDashRelayLib.graphqlDashRelayMod.BackwardConnectionArgs = js.native
-  val forwardConnectionArgs: graphqlLib.typeDefinitionMod.GraphQLFieldConfigArgumentMap with graphqlDashRelayLib.graphqlDashRelayMod.ForwardConnectionArgs = js.native
-  def connectionDefinitions(config: graphqlDashRelayLib.graphqlDashRelayMod.ConnectionConfig): graphqlDashRelayLib.graphqlDashRelayMod.GraphQLConnectionDefinitions = js.native
-  def connectionFromArray[T](data: js.Array[T], args: graphqlDashRelayLib.graphqlDashRelayMod.ConnectionArguments): graphqlDashRelayLib.graphqlDashRelayMod.Connection[T] = js.native
-  def connectionFromArraySlice[T](
-    arraySlice: js.Array[T],
-    args: graphqlDashRelayLib.graphqlDashRelayMod.ConnectionArguments,
-    meta: graphqlDashRelayLib.graphqlDashRelayMod.ArraySliceMetaInfo
-  ): graphqlDashRelayLib.graphqlDashRelayMod.Connection[T] = js.native
-  def connectionFromPromisedArray[T](
-    dataPromise: js.Promise[js.Array[T]],
-    args: graphqlDashRelayLib.graphqlDashRelayMod.ConnectionArguments
-  ): js.Promise[graphqlDashRelayLib.graphqlDashRelayMod.Connection[T]] = js.native
-  def connectionFromPromisedArraySlice[T](
-    dataPromise: js.Promise[js.Array[T]],
-    args: graphqlDashRelayLib.graphqlDashRelayMod.ConnectionArguments,
-    arrayInfo: graphqlDashRelayLib.graphqlDashRelayMod.ArraySliceMetaInfo
-  ): js.Promise[graphqlDashRelayLib.graphqlDashRelayMod.Connection[T]] = js.native
-  def cursorForObjectInConnection[T](data: js.Array[T], `object`: T): graphqlDashRelayLib.graphqlDashRelayMod.ConnectionCursor = js.native
-  def cursorToOffset(cursor: graphqlDashRelayLib.graphqlDashRelayMod.ConnectionCursor): scala.Double = js.native
-  def fromGlobalId(globalId: java.lang.String): graphqlDashRelayLib.graphqlDashRelayMod.ResolvedGlobalId = js.native
+  val backwardConnectionArgs: graphqlLib.typeDefinitionMod.GraphQLFieldConfigArgumentMap with BackwardConnectionArgs = js.native
+  val connectionArgs: graphqlLib.typeDefinitionMod.GraphQLFieldConfigArgumentMap with ForwardConnectionArgs with BackwardConnectionArgs = js.native
+  val forwardConnectionArgs: graphqlLib.typeDefinitionMod.GraphQLFieldConfigArgumentMap with ForwardConnectionArgs = js.native
+  def connectionDefinitions(config: ConnectionConfig): GraphQLConnectionDefinitions = js.native
+  def connectionFromArray[T](data: js.Array[T], args: ConnectionArguments): Connection[T] = js.native
+  def connectionFromArraySlice[T](arraySlice: js.Array[T], args: ConnectionArguments, meta: ArraySliceMetaInfo): Connection[T] = js.native
+  def connectionFromPromisedArray[T](dataPromise: js.Promise[js.Array[T]], args: ConnectionArguments): js.Promise[Connection[T]] = js.native
+  def connectionFromPromisedArraySlice[T](dataPromise: js.Promise[js.Array[T]], args: ConnectionArguments, arrayInfo: ArraySliceMetaInfo): js.Promise[Connection[T]] = js.native
+  def cursorForObjectInConnection[T](data: js.Array[T], `object`: T): ConnectionCursor = js.native
+  def cursorToOffset(cursor: ConnectionCursor): scala.Double = js.native
+  def fromGlobalId(globalId: java.lang.String): ResolvedGlobalId = js.native
   def getOffsetWithDefault(): scala.Double = js.native
-  def getOffsetWithDefault(cursor: graphqlDashRelayLib.graphqlDashRelayMod.ConnectionCursor): scala.Double = js.native
-  def getOffsetWithDefault(cursor: graphqlDashRelayLib.graphqlDashRelayMod.ConnectionCursor, defaultOffset: scala.Double): scala.Double = js.native
+  def getOffsetWithDefault(cursor: ConnectionCursor): scala.Double = js.native
+  def getOffsetWithDefault(cursor: ConnectionCursor, defaultOffset: scala.Double): scala.Double = js.native
   def getOffsetWithDefault(cursor: scala.Null, defaultOffset: scala.Double): scala.Double = js.native
   def globalIdField(): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def globalIdField(typeName: java.lang.String): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
@@ -45,7 +34,7 @@ object ^ extends js.Object {
       java.lang.String
     ]
   ): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
-  def mutationWithClientMutationId(config: graphqlDashRelayLib.graphqlDashRelayMod.MutationConfig): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def mutationWithClientMutationId(config: MutationConfig): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def nodeDefinitions[TContext](
     idFetcher: js.Function3[
       /* id */ java.lang.String, 
@@ -53,7 +42,7 @@ object ^ extends js.Object {
       /* info */ graphqlLib.typeDefinitionMod.GraphQLResolveInfo, 
       _
     ]
-  ): graphqlDashRelayLib.graphqlDashRelayMod.GraphQLNodeDefinitions = js.native
+  ): GraphQLNodeDefinitions = js.native
   def nodeDefinitions[TContext](
     idFetcher: js.Function3[
       /* id */ java.lang.String, 
@@ -62,9 +51,9 @@ object ^ extends js.Object {
       _
     ],
     typeResolver: graphqlLib.typeDefinitionMod.GraphQLTypeResolver[_, TContext, org.scalablytyped.runtime.StringDictionary[_]]
-  ): graphqlDashRelayLib.graphqlDashRelayMod.GraphQLNodeDefinitions = js.native
-  def offsetToCursor(offset: scala.Double): graphqlDashRelayLib.graphqlDashRelayMod.ConnectionCursor = js.native
-  def pluralIdentifyingRootField(config: graphqlDashRelayLib.graphqlDashRelayMod.PluralIdentifyingRootFieldConfig): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  ): GraphQLNodeDefinitions = js.native
+  def offsetToCursor(offset: scala.Double): ConnectionCursor = js.native
+  def pluralIdentifyingRootField(config: PluralIdentifyingRootFieldConfig): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def toGlobalId(`type`: java.lang.String, id: java.lang.String): java.lang.String = js.native
 }
 

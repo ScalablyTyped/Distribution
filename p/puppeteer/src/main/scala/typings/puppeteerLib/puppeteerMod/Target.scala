@@ -25,16 +25,16 @@ trait Target extends js.Object {
 object Target {
   @scala.inline
   def apply(
-    browser: js.Function0[Browser],
-    browserContext: js.Function0[BrowserContext],
-    createCDPSession: js.Function0[js.Promise[CDPSession]],
-    opener: js.Function0[Target | scala.Null],
-    page: js.Function0[js.Promise[Page]],
-    `type`: js.Function0[TargetType],
-    url: js.Function0[java.lang.String]
+    browser: () => Browser,
+    browserContext: () => BrowserContext,
+    createCDPSession: () => js.Promise[CDPSession],
+    opener: () => Target | scala.Null,
+    page: () => js.Promise[Page],
+    `type`: () => TargetType,
+    url: () => java.lang.String
   ): Target = {
-    val __obj = js.Dynamic.literal(browser = browser, browserContext = browserContext, createCDPSession = createCDPSession, opener = opener, page = page, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(browser = js.Any.fromFunction0(browser), browserContext = js.Any.fromFunction0(browserContext), createCDPSession = js.Any.fromFunction0(createCDPSession), opener = js.Any.fromFunction0(opener), page = js.Any.fromFunction0(page), url = js.Any.fromFunction0(url))
+    __obj.updateDynamic("type")(js.Any.fromFunction0(`type`))
     __obj.asInstanceOf[Target]
   }
 }

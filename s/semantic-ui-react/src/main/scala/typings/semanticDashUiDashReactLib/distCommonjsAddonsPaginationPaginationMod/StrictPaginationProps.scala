@@ -48,7 +48,7 @@ trait StrictPaginationProps extends js.Object {
     */
   var onPageChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
       /* data */ PaginationProps, 
       scala.Unit
     ]
@@ -92,11 +92,7 @@ object StrictPaginationProps {
     nextItem: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[
       semanticDashUiDashReactLib.distCommonjsAddonsPaginationPaginationItemMod.PaginationItemProps
     ] = null,
-    onPageChange: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
-      /* data */ PaginationProps, 
-      scala.Unit
-    ] = null,
+    onPageChange: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ PaginationProps) => scala.Unit = null,
     pageItem: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[
       semanticDashUiDashReactLib.distCommonjsAddonsPaginationPaginationItemMod.PaginationItemProps
     ] = null,
@@ -115,7 +111,7 @@ object StrictPaginationProps {
     if (firstItem != null) __obj.updateDynamic("firstItem")(firstItem.asInstanceOf[js.Any])
     if (lastItem != null) __obj.updateDynamic("lastItem")(lastItem.asInstanceOf[js.Any])
     if (nextItem != null) __obj.updateDynamic("nextItem")(nextItem.asInstanceOf[js.Any])
-    if (onPageChange != null) __obj.updateDynamic("onPageChange")(onPageChange)
+    if (onPageChange != null) __obj.updateDynamic("onPageChange")(js.Any.fromFunction2(onPageChange))
     if (pageItem != null) __obj.updateDynamic("pageItem")(pageItem.asInstanceOf[js.Any])
     if (prevItem != null) __obj.updateDynamic("prevItem")(prevItem.asInstanceOf[js.Any])
     if (siblingRange != null) __obj.updateDynamic("siblingRange")(siblingRange.asInstanceOf[js.Any])

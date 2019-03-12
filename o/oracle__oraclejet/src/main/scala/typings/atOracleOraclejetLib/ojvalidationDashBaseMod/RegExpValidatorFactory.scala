@@ -12,12 +12,9 @@ trait RegExpValidatorFactory extends js.Object {
 object RegExpValidatorFactory {
   @scala.inline
   def apply(
-    createValidator: js.Function1[
-      atOracleOraclejetLib.ojvalidationDashBaseMod.RegExpValidatorNs.ValidatorOptions, 
-      RegExpValidator
-    ]
+    createValidator: atOracleOraclejetLib.ojvalidationDashBaseMod.RegExpValidatorNs.ValidatorOptions => RegExpValidator
   ): RegExpValidatorFactory = {
-    val __obj = js.Dynamic.literal(createValidator = createValidator)
+    val __obj = js.Dynamic.literal(createValidator = js.Any.fromFunction1(createValidator))
   
     __obj.asInstanceOf[RegExpValidatorFactory]
   }

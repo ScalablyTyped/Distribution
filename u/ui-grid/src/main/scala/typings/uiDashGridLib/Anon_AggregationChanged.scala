@@ -29,18 +29,10 @@ trait Anon_AggregationChanged[TEntity] extends js.Object {
 object Anon_AggregationChanged {
   @scala.inline
   def apply[TEntity](
-    aggregationChanged: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      uiDashGridLib.uiDashGridMod.uiGridNs.groupingNs.aggregationChangedHandler[TEntity], 
-      scala.Unit
-    ],
-    groupingChanged: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      uiDashGridLib.uiDashGridMod.uiGridNs.groupingNs.groupingChangedHandler[TEntity], 
-      scala.Unit
-    ]
+    aggregationChanged: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.groupingNs.aggregationChangedHandler[TEntity]) => scala.Unit,
+    groupingChanged: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.groupingNs.groupingChangedHandler[TEntity]) => scala.Unit
   ): Anon_AggregationChanged[TEntity] = {
-    val __obj = js.Dynamic.literal(aggregationChanged = aggregationChanged, groupingChanged = groupingChanged)
+    val __obj = js.Dynamic.literal(aggregationChanged = js.Any.fromFunction2(aggregationChanged), groupingChanged = js.Any.fromFunction2(groupingChanged))
   
     __obj.asInstanceOf[Anon_AggregationChanged[TEntity]]
   }

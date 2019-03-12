@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libLassoMod {
-  type Callback = js.Function2[/* err */ nodeLib.Error | scala.Null, /* result */ js.UndefOr[js.Any], js.Any]
+  type Callback = js.Function2[/* err */ stdLib.Error | scala.Null, /* result */ js.UndefOr[js.Any], js.Any]
   type LassoPage = js.Function2[
     /* options */ PageConfig, 
     /* callback */ js.UndefOr[
       js.Function2[
-        /* err */ nodeLib.Error | scala.Null, 
+        /* err */ stdLib.Error | scala.Null, 
         /* result */ lassoLib.libLassoPageResultMod.LassoPageResult, 
         scala.Unit
       ]

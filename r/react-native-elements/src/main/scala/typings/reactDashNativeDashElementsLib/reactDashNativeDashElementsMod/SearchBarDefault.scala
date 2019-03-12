@@ -30,10 +30,10 @@ object SearchBarDefault {
     leftIconContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     lightTheme: js.UndefOr[scala.Boolean] = js.undefined,
     loadingProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActivityIndicatorProperties */ js.Any = null,
-    onBlur: js.Function0[scala.Unit] = null,
-    onChangeText: js.Function1[/* text */ java.lang.String, scala.Unit] = null,
-    onClear: js.Function0[scala.Unit] = null,
-    onFocus: js.Function0[scala.Unit] = null,
+    onBlur: () => scala.Unit = null,
+    onChangeText: /* text */ java.lang.String => scala.Unit = null,
+    onClear: () => scala.Unit = null,
+    onFocus: () => scala.Unit = null,
     rightIconContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     round: js.UndefOr[scala.Boolean] = js.undefined,
     searchIcon: IconNode = null,
@@ -47,10 +47,10 @@ object SearchBarDefault {
     if (leftIconContainerStyle != null) __obj.updateDynamic("leftIconContainerStyle")(leftIconContainerStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(lightTheme)) __obj.updateDynamic("lightTheme")(lightTheme)
     if (loadingProps != null) __obj.updateDynamic("loadingProps")(loadingProps)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChangeText != null) __obj.updateDynamic("onChangeText")(onChangeText)
-    if (onClear != null) __obj.updateDynamic("onClear")(onClear)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
+    if (onChangeText != null) __obj.updateDynamic("onChangeText")(js.Any.fromFunction1(onChangeText))
+    if (onClear != null) __obj.updateDynamic("onClear")(js.Any.fromFunction0(onClear))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction0(onFocus))
     if (rightIconContainerStyle != null) __obj.updateDynamic("rightIconContainerStyle")(rightIconContainerStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(round)) __obj.updateDynamic("round")(round)
     if (searchIcon != null) __obj.updateDynamic("searchIcon")(searchIcon.asInstanceOf[js.Any])

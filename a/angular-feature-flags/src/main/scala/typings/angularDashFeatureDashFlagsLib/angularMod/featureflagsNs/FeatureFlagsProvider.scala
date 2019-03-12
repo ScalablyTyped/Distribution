@@ -11,8 +11,8 @@ trait FeatureFlagsProvider extends js.Object {
 
 object FeatureFlagsProvider {
   @scala.inline
-  def apply(setInitialFlags: js.Function1[js.Array[FlagData], scala.Unit]): FeatureFlagsProvider = {
-    val __obj = js.Dynamic.literal(setInitialFlags = setInitialFlags)
+  def apply(setInitialFlags: js.Array[FlagData] => scala.Unit): FeatureFlagsProvider = {
+    val __obj = js.Dynamic.literal(setInitialFlags = js.Any.fromFunction1(setInitialFlags))
   
     __obj.asInstanceOf[FeatureFlagsProvider]
   }

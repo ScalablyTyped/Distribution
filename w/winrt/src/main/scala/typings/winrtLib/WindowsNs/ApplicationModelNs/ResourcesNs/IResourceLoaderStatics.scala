@@ -11,8 +11,8 @@ trait IResourceLoaderStatics extends js.Object {
 
 object IResourceLoaderStatics {
   @scala.inline
-  def apply(getStringForReference: js.Function1[winrtLib.WindowsNs.FoundationNs.Uri, java.lang.String]): IResourceLoaderStatics = {
-    val __obj = js.Dynamic.literal(getStringForReference = getStringForReference)
+  def apply(getStringForReference: winrtLib.WindowsNs.FoundationNs.Uri => java.lang.String): IResourceLoaderStatics = {
+    val __obj = js.Dynamic.literal(getStringForReference = js.Any.fromFunction1(getStringForReference))
   
     __obj.asInstanceOf[IResourceLoaderStatics]
   }

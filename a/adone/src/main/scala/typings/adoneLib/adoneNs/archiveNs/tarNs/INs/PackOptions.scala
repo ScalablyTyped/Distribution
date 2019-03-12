@@ -45,13 +45,9 @@ object PackOptions {
     dmode: scala.Int | scala.Double = null,
     entries: js.Array[java.lang.String] = null,
     fmode: scala.Int | scala.Double = null,
-    ignore: js.Function1[/* name */ java.lang.String, scala.Boolean] = null,
-    map: js.Function1[/* header */ Header, js.UndefOr[Header]] = null,
-    mapStream: js.Function2[
-      /* stream */ adoneLib.adoneNs.fsNs.INs.ReadStream, 
-      /* header */ Header, 
-      nodeLib.streamMod.Readable
-    ] = null,
+    ignore: /* name */ java.lang.String => scala.Boolean = null,
+    map: /* header */ Header => js.UndefOr[Header] = null,
+    mapStream: (/* stream */ adoneLib.adoneNs.fsNs.INs.ReadStream, /* header */ Header) => nodeLib.streamMod.Readable = null,
     pack: adoneLib.adoneNs.archiveNs.tarNs.RawPackStream = null,
     readable: js.UndefOr[scala.Boolean] = js.undefined,
     sort: js.UndefOr[scala.Boolean] = js.undefined,
@@ -65,9 +61,9 @@ object PackOptions {
     if (dmode != null) __obj.updateDynamic("dmode")(dmode.asInstanceOf[js.Any])
     if (entries != null) __obj.updateDynamic("entries")(entries)
     if (fmode != null) __obj.updateDynamic("fmode")(fmode.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (mapStream != null) __obj.updateDynamic("mapStream")(mapStream)
+    if (ignore != null) __obj.updateDynamic("ignore")(js.Any.fromFunction1(ignore))
+    if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
+    if (mapStream != null) __obj.updateDynamic("mapStream")(js.Any.fromFunction2(mapStream))
     if (pack != null) __obj.updateDynamic("pack")(pack)
     if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable)
     if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort)

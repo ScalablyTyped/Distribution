@@ -20,15 +20,15 @@ object IWindowsPhone {
   @scala.inline
   def apply(
     IDefault: IDefault = null,
-    getTranslatable: js.Function0[_] = null,
-    initialize: js.Function0[scala.Unit] = null,
-    setTranslatable: js.Function1[/* translatable */ js.UndefOr[js.Any], scala.Unit] = null
+    getTranslatable: () => _ = null,
+    initialize: () => scala.Unit = null,
+    setTranslatable: /* translatable */ js.UndefOr[js.Any] => scala.Unit = null
   ): IWindowsPhone = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IDefault)
-    if (getTranslatable != null) __obj.updateDynamic("getTranslatable")(getTranslatable)
-    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
-    if (setTranslatable != null) __obj.updateDynamic("setTranslatable")(setTranslatable)
+    if (getTranslatable != null) __obj.updateDynamic("getTranslatable")(js.Any.fromFunction0(getTranslatable))
+    if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction0(initialize))
+    if (setTranslatable != null) __obj.updateDynamic("setTranslatable")(js.Any.fromFunction1(setTranslatable))
     __obj.asInstanceOf[IWindowsPhone]
   }
 }

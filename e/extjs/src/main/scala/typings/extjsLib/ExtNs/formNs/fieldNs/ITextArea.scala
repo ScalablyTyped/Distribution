@@ -20,41 +20,41 @@ object ITextArea {
   @scala.inline
   def apply(
     IText: IText = null,
-    afterRender: js.Function0[scala.Unit] = null,
-    autoSize: js.Function0[scala.Unit] = null,
-    beforeDestroy: js.Function0[scala.Unit] = null,
+    afterRender: () => scala.Unit = null,
+    autoSize: () => scala.Unit = null,
+    beforeDestroy: () => scala.Unit = null,
     cols: scala.Int | scala.Double = null,
     componentLayout: js.Any = null,
     enterIsSpecial: js.UndefOr[scala.Boolean] = js.undefined,
-    getSubTplData: js.Function0[_] = null,
-    getValue: js.Function0[_] = null,
+    getSubTplData: () => _ = null,
+    getValue: () => _ = null,
     growAppend: java.lang.String = null,
     growMax: scala.Int | scala.Double = null,
     growMin: scala.Int | scala.Double = null,
     preventScrollbars: js.UndefOr[scala.Boolean] = js.undefined,
     rows: scala.Int | scala.Double = null,
-    transformOriginalValue: js.Function1[/* value */ js.UndefOr[js.Any], _] = null,
-    transformRawValue: js.Function1[/* value */ js.UndefOr[js.Any], _] = null,
-    valueToRaw: js.Function1[/* value */ js.UndefOr[js.Any], _] = null
+    transformOriginalValue: /* value */ js.UndefOr[js.Any] => _ = null,
+    transformRawValue: /* value */ js.UndefOr[js.Any] => _ = null,
+    valueToRaw: /* value */ js.UndefOr[js.Any] => _ = null
   ): ITextArea = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IText)
-    if (afterRender != null) __obj.updateDynamic("afterRender")(afterRender)
-    if (autoSize != null) __obj.updateDynamic("autoSize")(autoSize)
-    if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(beforeDestroy)
+    if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction0(afterRender))
+    if (autoSize != null) __obj.updateDynamic("autoSize")(js.Any.fromFunction0(autoSize))
+    if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(js.Any.fromFunction0(beforeDestroy))
     if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
     if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
     if (!js.isUndefined(enterIsSpecial)) __obj.updateDynamic("enterIsSpecial")(enterIsSpecial)
-    if (getSubTplData != null) __obj.updateDynamic("getSubTplData")(getSubTplData)
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
+    if (getSubTplData != null) __obj.updateDynamic("getSubTplData")(js.Any.fromFunction0(getSubTplData))
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
     if (growAppend != null) __obj.updateDynamic("growAppend")(growAppend)
     if (growMax != null) __obj.updateDynamic("growMax")(growMax.asInstanceOf[js.Any])
     if (growMin != null) __obj.updateDynamic("growMin")(growMin.asInstanceOf[js.Any])
     if (!js.isUndefined(preventScrollbars)) __obj.updateDynamic("preventScrollbars")(preventScrollbars)
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (transformOriginalValue != null) __obj.updateDynamic("transformOriginalValue")(transformOriginalValue)
-    if (transformRawValue != null) __obj.updateDynamic("transformRawValue")(transformRawValue)
-    if (valueToRaw != null) __obj.updateDynamic("valueToRaw")(valueToRaw)
+    if (transformOriginalValue != null) __obj.updateDynamic("transformOriginalValue")(js.Any.fromFunction1(transformOriginalValue))
+    if (transformRawValue != null) __obj.updateDynamic("transformRawValue")(js.Any.fromFunction1(transformRawValue))
+    if (valueToRaw != null) __obj.updateDynamic("valueToRaw")(js.Any.fromFunction1(valueToRaw))
     __obj.asInstanceOf[ITextArea]
   }
 }

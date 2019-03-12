@@ -154,8 +154,8 @@ object Options {
     cancelButtonClasses: java.lang.String = null,
     drops: daterangepickerLib.daterangepickerLibStrings.down | daterangepickerLib.daterangepickerLibStrings.up = null,
     endDate: DateOrString = null,
-    isCustomDate: js.Function1[/* date */ DateOrString, js.UndefOr[java.lang.String | js.Array[java.lang.String]]] = null,
-    isInvalidDate: js.Function2[/* startDate */ DateOrString, /* endDate */ js.UndefOr[DateOrString], scala.Boolean] = null,
+    isCustomDate: /* date */ DateOrString => js.UndefOr[java.lang.String | js.Array[java.lang.String]] = null,
+    isInvalidDate: (/* startDate */ DateOrString, /* endDate */ js.UndefOr[DateOrString]) => scala.Boolean = null,
     linkedCalendars: js.UndefOr[scala.Boolean] = js.undefined,
     locale: Locale = null,
     maxDate: DateOrString = null,
@@ -186,8 +186,8 @@ object Options {
     if (cancelButtonClasses != null) __obj.updateDynamic("cancelButtonClasses")(cancelButtonClasses)
     if (drops != null) __obj.updateDynamic("drops")(drops.asInstanceOf[js.Any])
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (isCustomDate != null) __obj.updateDynamic("isCustomDate")(isCustomDate)
-    if (isInvalidDate != null) __obj.updateDynamic("isInvalidDate")(isInvalidDate)
+    if (isCustomDate != null) __obj.updateDynamic("isCustomDate")(js.Any.fromFunction1(isCustomDate))
+    if (isInvalidDate != null) __obj.updateDynamic("isInvalidDate")(js.Any.fromFunction2(isInvalidDate))
     if (!js.isUndefined(linkedCalendars)) __obj.updateDynamic("linkedCalendars")(linkedCalendars)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])

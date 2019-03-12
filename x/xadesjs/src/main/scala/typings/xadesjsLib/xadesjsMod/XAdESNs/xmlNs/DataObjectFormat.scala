@@ -11,7 +11,7 @@ trait DataObjectFormat
   var Description: java.lang.String = js.native
   var Encoding: java.lang.String = js.native
   var MimeType: java.lang.String = js.native
-  var ObjectIdentifier: ObjectIdentifier = js.native
+  var ObjectIdentifier: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.ObjectIdentifier = js.native
   var ObjectReference: java.lang.String = js.native
 }
 

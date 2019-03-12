@@ -25,36 +25,15 @@ trait EnvironmentsResource extends js.Object {
 object EnvironmentsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Environment]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Environment]
-    ],
-    list: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListEnvironmentsResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Environment]
-    ],
-    reauthorize: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Environment]
-    ],
-    update: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Environment]
-    ]
+    create: gapiDotClientDotTagmanagerLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Environment],
+    delete: gapiDotClientDotTagmanagerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotTagmanagerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Environment],
+    list: gapiDotClientDotTagmanagerLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[ListEnvironmentsResponse],
+    patch: gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint => gapiDotClientLib.gapiNs.clientNs.Request[Environment],
+    reauthorize: gapiDotClientDotTagmanagerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Environment],
+    update: gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint => gapiDotClientLib.gapiNs.clientNs.Request[Environment]
   ): EnvironmentsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, patch = patch, reauthorize = reauthorize, update = update)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), reauthorize = js.Any.fromFunction1(reauthorize), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[EnvironmentsResource]
   }

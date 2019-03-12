@@ -20,15 +20,15 @@ object Anon_All {
   @scala.inline
   def apply(
     all: js.Array[_],
-    cancelTopModal: js.Function0[scala.Unit],
-    closeTopModal: js.Function0[scala.Unit],
+    cancelTopModal: () => scala.Unit,
+    closeTopModal: () => scala.Unit,
     depth: scala.Double,
-    getLatestModal: js.Function0[scala.Null | java.lang.String],
-    getTopModalOrBody: js.Function0[java.lang.String],
+    getLatestModal: () => scala.Null | java.lang.String,
+    getTopModalOrBody: () => java.lang.String,
     initialized: scala.Boolean,
     stack: js.Array[_]
   ): Anon_All = {
-    val __obj = js.Dynamic.literal(all = all, cancelTopModal = cancelTopModal, closeTopModal = closeTopModal, depth = depth, getLatestModal = getLatestModal, getTopModalOrBody = getTopModalOrBody, initialized = initialized, stack = stack)
+    val __obj = js.Dynamic.literal(all = all, cancelTopModal = js.Any.fromFunction0(cancelTopModal), closeTopModal = js.Any.fromFunction0(closeTopModal), depth = depth, getLatestModal = js.Any.fromFunction0(getLatestModal), getTopModalOrBody = js.Any.fromFunction0(getTopModalOrBody), initialized = initialized, stack = stack)
   
     __obj.asInstanceOf[Anon_All]
   }

@@ -31,13 +31,13 @@ trait IMapView[K, V]
 object IMapView {
   @scala.inline
   def apply[K, V](
-    first: js.Function0[IIterator[IKeyValuePair[js.Any, js.Any]]],
-    hasKey: js.Function1[K, scala.Boolean],
-    lookup: js.Function1[K, V],
+    first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
+    hasKey: K => scala.Boolean,
+    lookup: K => V,
     size: scala.Double,
-    split: js.Function0[winrtDashUwpLib.Anon_First[K, V]]
+    split: () => winrtDashUwpLib.Anon_First[K, V]
   ): IMapView[K, V] = {
-    val __obj = js.Dynamic.literal(first = first, hasKey = hasKey, lookup = lookup, size = size, split = split)
+    val __obj = js.Dynamic.literal(first = js.Any.fromFunction0(first), hasKey = js.Any.fromFunction1(hasKey), lookup = js.Any.fromFunction1(lookup), size = size, split = js.Any.fromFunction0(split))
   
     __obj.asInstanceOf[IMapView[K, V]]
   }

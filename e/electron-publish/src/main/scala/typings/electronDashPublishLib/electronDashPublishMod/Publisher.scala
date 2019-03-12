@@ -16,13 +16,13 @@ abstract class Publisher protected () extends js.Object {
     file: java.lang.String,
     fileStat: fsDashExtraDashPLib.fsDashExtraDashPMod.Stats,
     progressBar: electronDashPublishLib.outProgressMod.ProgressBar,
-    reject: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    reject: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): nodeLib.NodeJSNs.ReadableStream = js.native
   /* protected */ def createReadStreamAndProgressBar(
     file: java.lang.String,
     fileStat: fsDashExtraDashPLib.fsDashExtraDashPMod.Stats,
     progressBar: scala.Null,
-    reject: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    reject: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): nodeLib.NodeJSNs.ReadableStream = js.native
   def upload(task: UploadTask): js.Promise[_] = js.native
 }

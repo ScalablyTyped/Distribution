@@ -80,16 +80,16 @@ object BootstrapTreeViewOptions {
     levels: scala.Int | scala.Double = null,
     multiSelect: js.UndefOr[scala.Boolean] = js.undefined,
     nodeIcon: java.lang.String = null,
-    onNodeChecked: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
-    onNodeCollapsed: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
-    onNodeDisabled: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
-    onNodeEnabled: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
-    onNodeExpanded: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
-    onNodeSelected: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
-    onNodeUnchecked: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
-    onNodeUnselected: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
-    onSearchCleared: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
-    onSearchComplete: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
+    onNodeChecked: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => scala.Unit = null,
+    onNodeCollapsed: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => scala.Unit = null,
+    onNodeDisabled: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => scala.Unit = null,
+    onNodeEnabled: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => scala.Unit = null,
+    onNodeExpanded: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => scala.Unit = null,
+    onNodeSelected: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => scala.Unit = null,
+    onNodeUnchecked: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => scala.Unit = null,
+    onNodeUnselected: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => scala.Unit = null,
+    onSearchCleared: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => scala.Unit = null,
+    onSearchComplete: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => scala.Unit = null,
     onhoverColor: java.lang.String = null,
     searchResultBackColor: java.lang.String = null,
     searchResultColor: java.lang.String = null,
@@ -117,16 +117,16 @@ object BootstrapTreeViewOptions {
     if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
     if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect)
     if (nodeIcon != null) __obj.updateDynamic("nodeIcon")(nodeIcon)
-    if (onNodeChecked != null) __obj.updateDynamic("onNodeChecked")(onNodeChecked)
-    if (onNodeCollapsed != null) __obj.updateDynamic("onNodeCollapsed")(onNodeCollapsed)
-    if (onNodeDisabled != null) __obj.updateDynamic("onNodeDisabled")(onNodeDisabled)
-    if (onNodeEnabled != null) __obj.updateDynamic("onNodeEnabled")(onNodeEnabled)
-    if (onNodeExpanded != null) __obj.updateDynamic("onNodeExpanded")(onNodeExpanded)
-    if (onNodeSelected != null) __obj.updateDynamic("onNodeSelected")(onNodeSelected)
-    if (onNodeUnchecked != null) __obj.updateDynamic("onNodeUnchecked")(onNodeUnchecked)
-    if (onNodeUnselected != null) __obj.updateDynamic("onNodeUnselected")(onNodeUnselected)
-    if (onSearchCleared != null) __obj.updateDynamic("onSearchCleared")(onSearchCleared)
-    if (onSearchComplete != null) __obj.updateDynamic("onSearchComplete")(onSearchComplete)
+    if (onNodeChecked != null) __obj.updateDynamic("onNodeChecked")(js.Any.fromFunction2(onNodeChecked))
+    if (onNodeCollapsed != null) __obj.updateDynamic("onNodeCollapsed")(js.Any.fromFunction2(onNodeCollapsed))
+    if (onNodeDisabled != null) __obj.updateDynamic("onNodeDisabled")(js.Any.fromFunction2(onNodeDisabled))
+    if (onNodeEnabled != null) __obj.updateDynamic("onNodeEnabled")(js.Any.fromFunction2(onNodeEnabled))
+    if (onNodeExpanded != null) __obj.updateDynamic("onNodeExpanded")(js.Any.fromFunction2(onNodeExpanded))
+    if (onNodeSelected != null) __obj.updateDynamic("onNodeSelected")(js.Any.fromFunction2(onNodeSelected))
+    if (onNodeUnchecked != null) __obj.updateDynamic("onNodeUnchecked")(js.Any.fromFunction2(onNodeUnchecked))
+    if (onNodeUnselected != null) __obj.updateDynamic("onNodeUnselected")(js.Any.fromFunction2(onNodeUnselected))
+    if (onSearchCleared != null) __obj.updateDynamic("onSearchCleared")(js.Any.fromFunction2(onSearchCleared))
+    if (onSearchComplete != null) __obj.updateDynamic("onSearchComplete")(js.Any.fromFunction2(onSearchComplete))
     if (onhoverColor != null) __obj.updateDynamic("onhoverColor")(onhoverColor)
     if (searchResultBackColor != null) __obj.updateDynamic("searchResultBackColor")(searchResultBackColor)
     if (searchResultColor != null) __obj.updateDynamic("searchResultColor")(searchResultColor)

@@ -16,12 +16,9 @@ trait MediaResource extends js.Object {
 object MediaResource {
   @scala.inline
   def apply(
-    insert: js.Function1[
-      gapiDotClientDotPlusdomainsLib.Anon_AltCollectionFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Media]
-    ]
+    insert: gapiDotClientDotPlusdomainsLib.Anon_AltCollectionFields => gapiDotClientLib.gapiNs.clientNs.Request[Media]
   ): MediaResource = {
-    val __obj = js.Dynamic.literal(insert = insert)
+    val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert))
   
     __obj.asInstanceOf[MediaResource]
   }

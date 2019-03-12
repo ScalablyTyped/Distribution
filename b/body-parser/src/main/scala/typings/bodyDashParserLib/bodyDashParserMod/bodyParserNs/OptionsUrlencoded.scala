@@ -18,13 +18,7 @@ object OptionsUrlencoded {
     limit: scala.Double | java.lang.String = null,
     parameterLimit: scala.Int | scala.Double = null,
     `type`: java.lang.String | js.Array[java.lang.String] | (js.Function1[/* req */ nodeLib.httpMod.IncomingMessage, _]) = null,
-    verify: js.Function4[
-      /* req */ nodeLib.httpMod.IncomingMessage, 
-      /* res */ nodeLib.httpMod.ServerResponse, 
-      /* buf */ nodeLib.Buffer, 
-      /* encoding */ java.lang.String, 
-      scala.Unit
-    ] = null
+    verify: (/* req */ nodeLib.httpMod.IncomingMessage, /* res */ nodeLib.httpMod.ServerResponse, /* buf */ nodeLib.Buffer, /* encoding */ java.lang.String) => scala.Unit = null
   ): OptionsUrlencoded = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(extended)) __obj.updateDynamic("extended")(extended)
@@ -32,7 +26,7 @@ object OptionsUrlencoded {
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (parameterLimit != null) __obj.updateDynamic("parameterLimit")(parameterLimit.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (verify != null) __obj.updateDynamic("verify")(verify)
+    if (verify != null) __obj.updateDynamic("verify")(js.Any.fromFunction4(verify))
     __obj.asInstanceOf[OptionsUrlencoded]
   }
 }

@@ -13,12 +13,8 @@ trait ISettingsPaneStatics extends js.Object {
 
 object ISettingsPaneStatics {
   @scala.inline
-  def apply(
-    edge: SettingsEdgeLocation,
-    getForCurrentView: js.Function0[SettingsPane],
-    show: js.Function0[scala.Unit]
-  ): ISettingsPaneStatics = {
-    val __obj = js.Dynamic.literal(edge = edge, getForCurrentView = getForCurrentView, show = show)
+  def apply(edge: SettingsEdgeLocation, getForCurrentView: () => SettingsPane, show: () => scala.Unit): ISettingsPaneStatics = {
+    val __obj = js.Dynamic.literal(edge = edge, getForCurrentView = js.Any.fromFunction0(getForCurrentView), show = js.Any.fromFunction0(show))
   
     __obj.asInstanceOf[ISettingsPaneStatics]
   }

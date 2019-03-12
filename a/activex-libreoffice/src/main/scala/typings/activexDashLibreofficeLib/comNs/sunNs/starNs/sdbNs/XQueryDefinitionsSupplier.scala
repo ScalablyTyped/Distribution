@@ -24,12 +24,12 @@ object XQueryDefinitionsSupplier {
   @scala.inline
   def apply(
     QueryDefinitions: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
-    acquire: js.Function0[scala.Unit],
-    getQueryDefinitions: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getQueryDefinitions: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XQueryDefinitionsSupplier = {
-    val __obj = js.Dynamic.literal(QueryDefinitions = QueryDefinitions, acquire = acquire, getQueryDefinitions = getQueryDefinitions, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(QueryDefinitions = QueryDefinitions, acquire = js.Any.fromFunction0(acquire), getQueryDefinitions = js.Any.fromFunction0(getQueryDefinitions), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XQueryDefinitionsSupplier]
   }

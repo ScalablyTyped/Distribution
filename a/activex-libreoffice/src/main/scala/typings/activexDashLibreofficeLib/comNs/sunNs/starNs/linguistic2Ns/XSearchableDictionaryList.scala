@@ -33,36 +33,24 @@ object XSearchableDictionaryList {
   @scala.inline
   def apply(
     Count: scala.Double,
-    Dictionaries: activexDashInteropLib.SafeArray[XDictionary],
-    acquire: js.Function0[scala.Unit],
-    addDictionary: js.Function1[XDictionary, scala.Boolean],
-    addDictionaryListEventListener: js.Function2[XDictionaryListEventListener, scala.Boolean, scala.Boolean],
-    beginCollectEvents: js.Function0[scala.Double],
-    createDictionary: js.Function4[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      DictionaryType, 
-      java.lang.String, 
-      XDictionary
-    ],
-    endCollectEvents: js.Function0[scala.Double],
-    flushEvents: js.Function0[scala.Double],
-    getCount: js.Function0[scala.Double],
-    getDictionaries: js.Function0[activexDashInteropLib.SafeArray[XDictionary]],
-    getDictionaryByName: js.Function1[java.lang.String, XDictionary],
-    queryDictionaryEntry: js.Function4[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Boolean, 
-      scala.Boolean, 
-      XDictionaryEntry
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeDictionary: js.Function1[XDictionary, scala.Boolean],
-    removeDictionaryListEventListener: js.Function1[XDictionaryListEventListener, scala.Boolean]
+    Dictionaries: stdLib.SafeArray[XDictionary],
+    acquire: () => scala.Unit,
+    addDictionary: XDictionary => scala.Boolean,
+    addDictionaryListEventListener: (XDictionaryListEventListener, scala.Boolean) => scala.Boolean,
+    beginCollectEvents: () => scala.Double,
+    createDictionary: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, DictionaryType, java.lang.String) => XDictionary,
+    endCollectEvents: () => scala.Double,
+    flushEvents: () => scala.Double,
+    getCount: () => scala.Double,
+    getDictionaries: () => stdLib.SafeArray[XDictionary],
+    getDictionaryByName: java.lang.String => XDictionary,
+    queryDictionaryEntry: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Boolean, scala.Boolean) => XDictionaryEntry,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeDictionary: XDictionary => scala.Boolean,
+    removeDictionaryListEventListener: XDictionaryListEventListener => scala.Boolean
   ): XSearchableDictionaryList = {
-    val __obj = js.Dynamic.literal(Count = Count, Dictionaries = Dictionaries, acquire = acquire, addDictionary = addDictionary, addDictionaryListEventListener = addDictionaryListEventListener, beginCollectEvents = beginCollectEvents, createDictionary = createDictionary, endCollectEvents = endCollectEvents, flushEvents = flushEvents, getCount = getCount, getDictionaries = getDictionaries, getDictionaryByName = getDictionaryByName, queryDictionaryEntry = queryDictionaryEntry, queryInterface = queryInterface, release = release, removeDictionary = removeDictionary, removeDictionaryListEventListener = removeDictionaryListEventListener)
+    val __obj = js.Dynamic.literal(Count = Count, Dictionaries = Dictionaries, acquire = js.Any.fromFunction0(acquire), addDictionary = js.Any.fromFunction1(addDictionary), addDictionaryListEventListener = js.Any.fromFunction2(addDictionaryListEventListener), beginCollectEvents = js.Any.fromFunction0(beginCollectEvents), createDictionary = js.Any.fromFunction4(createDictionary), endCollectEvents = js.Any.fromFunction0(endCollectEvents), flushEvents = js.Any.fromFunction0(flushEvents), getCount = js.Any.fromFunction0(getCount), getDictionaries = js.Any.fromFunction0(getDictionaries), getDictionaryByName = js.Any.fromFunction1(getDictionaryByName), queryDictionaryEntry = js.Any.fromFunction4(queryDictionaryEntry), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeDictionary = js.Any.fromFunction1(removeDictionary), removeDictionaryListEventListener = js.Any.fromFunction1(removeDictionaryListEventListener))
   
     __obj.asInstanceOf[XSearchableDictionaryList]
   }

@@ -23,20 +23,20 @@ trait MDCSelectAdapter extends js.Object {
 object MDCSelectAdapter {
   @scala.inline
   def apply(
-    activateBottomLine: js.Function0[scala.Unit],
-    addClass: js.Function1[java.lang.String, scala.Unit],
-    deactivateBottomLine: js.Function0[scala.Unit],
-    deregisterInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    floatLabel: js.Function1[scala.Boolean, scala.Unit],
-    getSelectedIndex: js.Function0[scala.Double],
-    getValue: js.Function0[java.lang.String],
-    registerInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    removeClass: js.Function1[java.lang.String, scala.Unit],
-    setDisabled: js.Function1[scala.Boolean, scala.Unit],
-    setSelectedIndex: js.Function1[scala.Double, scala.Unit],
-    setValue: js.Function1[java.lang.String, scala.Unit]
+    activateBottomLine: () => scala.Unit,
+    addClass: java.lang.String => scala.Unit,
+    deactivateBottomLine: () => scala.Unit,
+    deregisterInteractionHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    floatLabel: scala.Boolean => scala.Unit,
+    getSelectedIndex: () => scala.Double,
+    getValue: () => java.lang.String,
+    registerInteractionHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    removeClass: java.lang.String => scala.Unit,
+    setDisabled: scala.Boolean => scala.Unit,
+    setSelectedIndex: scala.Double => scala.Unit,
+    setValue: java.lang.String => scala.Unit
   ): MDCSelectAdapter = {
-    val __obj = js.Dynamic.literal(activateBottomLine = activateBottomLine, addClass = addClass, deactivateBottomLine = deactivateBottomLine, deregisterInteractionHandler = deregisterInteractionHandler, floatLabel = floatLabel, getSelectedIndex = getSelectedIndex, getValue = getValue, registerInteractionHandler = registerInteractionHandler, removeClass = removeClass, setDisabled = setDisabled, setSelectedIndex = setSelectedIndex, setValue = setValue)
+    val __obj = js.Dynamic.literal(activateBottomLine = js.Any.fromFunction0(activateBottomLine), addClass = js.Any.fromFunction1(addClass), deactivateBottomLine = js.Any.fromFunction0(deactivateBottomLine), deregisterInteractionHandler = js.Any.fromFunction2(deregisterInteractionHandler), floatLabel = js.Any.fromFunction1(floatLabel), getSelectedIndex = js.Any.fromFunction0(getSelectedIndex), getValue = js.Any.fromFunction0(getValue), registerInteractionHandler = js.Any.fromFunction2(registerInteractionHandler), removeClass = js.Any.fromFunction1(removeClass), setDisabled = js.Any.fromFunction1(setDisabled), setSelectedIndex = js.Any.fromFunction1(setSelectedIndex), setValue = js.Any.fromFunction1(setValue))
   
     __obj.asInstanceOf[MDCSelectAdapter]
   }

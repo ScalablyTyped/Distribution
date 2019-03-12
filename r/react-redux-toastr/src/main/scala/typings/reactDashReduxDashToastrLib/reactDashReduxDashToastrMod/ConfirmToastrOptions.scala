@@ -15,13 +15,13 @@ object ConfirmToastrOptions {
   @scala.inline
   def apply(
     disableCancel: js.UndefOr[scala.Boolean] = js.undefined,
-    onCancel: js.Function0[scala.Unit] = null,
-    onOk: js.Function0[scala.Unit] = null
+    onCancel: () => scala.Unit = null,
+    onOk: () => scala.Unit = null
   ): ConfirmToastrOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(disableCancel)) __obj.updateDynamic("disableCancel")(disableCancel)
-    if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel)
-    if (onOk != null) __obj.updateDynamic("onOk")(onOk)
+    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction0(onCancel))
+    if (onOk != null) __obj.updateDynamic("onOk")(js.Any.fromFunction0(onOk))
     __obj.asInstanceOf[ConfirmToastrOptions]
   }
 }

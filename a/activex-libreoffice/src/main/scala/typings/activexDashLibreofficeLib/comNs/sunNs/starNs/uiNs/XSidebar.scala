@@ -16,8 +16,8 @@ trait XSidebar extends js.Object {
 
 object XSidebar {
   @scala.inline
-  def apply(requestLayout: js.Function0[scala.Unit]): XSidebar = {
-    val __obj = js.Dynamic.literal(requestLayout = requestLayout)
+  def apply(requestLayout: () => scala.Unit): XSidebar = {
+    val __obj = js.Dynamic.literal(requestLayout = js.Any.fromFunction0(requestLayout))
   
     __obj.asInstanceOf[XSidebar]
   }

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Line ()
   extends reactLib.reactMod.Component[LineProps, js.Object, js.Any] {
-  var path: js.UndefOr[reactLib.SVGPathElement] = js.native
+  var path: js.UndefOr[stdLib.SVGPathElement] = js.native
 }
 

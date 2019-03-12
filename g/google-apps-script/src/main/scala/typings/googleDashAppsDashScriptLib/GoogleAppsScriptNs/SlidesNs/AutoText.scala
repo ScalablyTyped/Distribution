@@ -14,11 +14,11 @@ trait AutoText extends js.Object {
 object AutoText {
   @scala.inline
   def apply(
-    getAutoTextType: js.Function0[AutoTextType],
-    getIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getRange: js.Function0[TextRange]
+    getAutoTextType: () => AutoTextType,
+    getIndex: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getRange: () => TextRange
   ): AutoText = {
-    val __obj = js.Dynamic.literal(getAutoTextType = getAutoTextType, getIndex = getIndex, getRange = getRange)
+    val __obj = js.Dynamic.literal(getAutoTextType = js.Any.fromFunction0(getAutoTextType), getIndex = js.Any.fromFunction0(getIndex), getRange = js.Any.fromFunction0(getRange))
   
     __obj.asInstanceOf[AutoText]
   }

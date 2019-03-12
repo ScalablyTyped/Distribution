@@ -18,13 +18,13 @@ trait IReversableIterator[T, IteratorT /* <: IReversableIterator[T, IteratorT, R
 object IReversableIterator {
   @scala.inline
   def apply[T, IteratorT /* <: IReversableIterator[T, IteratorT, ReverseT] */, ReverseT /* <: IReverseIterator[T, IteratorT, ReverseT] */](
-    equals: js.Function1[IteratorT, scala.Boolean],
-    next: js.Function0[IteratorT],
-    prev: js.Function0[IteratorT],
-    reverse: js.Function0[ReverseT],
+    equals: IteratorT => scala.Boolean,
+    next: () => IteratorT,
+    prev: () => IteratorT,
+    reverse: () => ReverseT,
     value: T
   ): IReversableIterator[T, IteratorT, ReverseT] = {
-    val __obj = js.Dynamic.literal(equals = equals, next = next, prev = prev, reverse = reverse, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), next = js.Any.fromFunction0(next), prev = js.Any.fromFunction0(prev), reverse = js.Any.fromFunction0(reverse), value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IReversableIterator[T, IteratorT, ReverseT]]
   }

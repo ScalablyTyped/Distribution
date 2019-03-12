@@ -47,14 +47,14 @@ trait GeoPoint extends Geo {
 object GeoPoint {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    array: js.Function1[js.Array[_], GeoPoint],
-    geohash: js.Function2[java.lang.String, scala.Double, GeoPoint],
-    properties: js.Function1[js.Object, GeoPoint],
-    string: js.Function1[java.lang.String, GeoPoint],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    array: js.Array[_] => GeoPoint,
+    geohash: (java.lang.String, scala.Double) => GeoPoint,
+    properties: js.Object => GeoPoint,
+    string: java.lang.String => GeoPoint,
+    toJSON: () => js.Any
   ): GeoPoint = {
-    val __obj = js.Dynamic.literal(_type = _type, array = array, geohash = geohash, properties = properties, string = string, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), array = js.Any.fromFunction1(array), geohash = js.Any.fromFunction2(geohash), properties = js.Any.fromFunction1(properties), string = js.Any.fromFunction1(string), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[GeoPoint]
   }

@@ -22,28 +22,15 @@ trait Foldable2vComposition2C1[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: f
 object Foldable2vComposition2C1 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS */, LF](
-    foldMap: js.Function1[
-      fpDashTsLib.libMonoidMod.Monoid[js.Any], 
-      js.Function2[
-        /* fa */ fpDashTsLib.libHKTMod.Type2[F, LF, fpDashTsLib.libHKTMod.Type[G, _]], 
-        /* f */ js.Function1[/* a */ js.Any, js.Any], 
-        js.Any
-      ]
-    ],
-    foldr: js.Function3[
-      fpDashTsLib.libHKTMod.Type2[F, LF, fpDashTsLib.libHKTMod.Type[G, js.Any]], 
-      js.Any, 
-      js.Function2[js.Any, js.Any, js.Any], 
+    foldMap: fpDashTsLib.libMonoidMod.Monoid[js.Any] => js.Function2[
+      /* fa */ fpDashTsLib.libHKTMod.Type2[F, LF, fpDashTsLib.libHKTMod.Type[G, _]], 
+      /* f */ js.Function1[/* a */ js.Any, js.Any], 
       js.Any
     ],
-    reduce: js.Function3[
-      fpDashTsLib.libHKTMod.Type2[F, LF, fpDashTsLib.libHKTMod.Type[G, js.Any]], 
-      js.Any, 
-      js.Function2[js.Any, js.Any, js.Any], 
-      js.Any
-    ]
+    foldr: (fpDashTsLib.libHKTMod.Type2[F, LF, fpDashTsLib.libHKTMod.Type[G, js.Any]], js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any,
+    reduce: (fpDashTsLib.libHKTMod.Type2[F, LF, fpDashTsLib.libHKTMod.Type[G, js.Any]], js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any
   ): Foldable2vComposition2C1[F, G, LF] = {
-    val __obj = js.Dynamic.literal(foldMap = foldMap, foldr = foldr, reduce = reduce)
+    val __obj = js.Dynamic.literal(foldMap = js.Any.fromFunction1(foldMap), foldr = js.Any.fromFunction3(foldr), reduce = js.Any.fromFunction3(reduce))
   
     __obj.asInstanceOf[Foldable2vComposition2C1[F, G, LF]]
   }

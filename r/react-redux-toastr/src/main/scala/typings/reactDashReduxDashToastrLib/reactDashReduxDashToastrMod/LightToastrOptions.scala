@@ -29,9 +29,9 @@ object LightToastrOptions {
     className: java.lang.String = null,
     component: reactLib.reactMod.Global.JSXNs.Element = null,
     icon: iconType | reactLib.reactMod.Global.JSXNs.Element = null,
-    onCloseButtonClick: js.Function0[scala.Unit] = null,
-    onHideComplete: js.Function0[scala.Unit] = null,
-    onShowComplete: js.Function0[scala.Unit] = null,
+    onCloseButtonClick: () => scala.Unit = null,
+    onHideComplete: () => scala.Unit = null,
+    onShowComplete: () => scala.Unit = null,
     progressBar: js.UndefOr[scala.Boolean] = js.undefined,
     removeOnHover: js.UndefOr[scala.Boolean] = js.undefined,
     showCloseButton: js.UndefOr[scala.Boolean] = js.undefined,
@@ -45,9 +45,9 @@ object LightToastrOptions {
     if (className != null) __obj.updateDynamic("className")(className)
     if (component != null) __obj.updateDynamic("component")(component)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (onCloseButtonClick != null) __obj.updateDynamic("onCloseButtonClick")(onCloseButtonClick)
-    if (onHideComplete != null) __obj.updateDynamic("onHideComplete")(onHideComplete)
-    if (onShowComplete != null) __obj.updateDynamic("onShowComplete")(onShowComplete)
+    if (onCloseButtonClick != null) __obj.updateDynamic("onCloseButtonClick")(js.Any.fromFunction0(onCloseButtonClick))
+    if (onHideComplete != null) __obj.updateDynamic("onHideComplete")(js.Any.fromFunction0(onHideComplete))
+    if (onShowComplete != null) __obj.updateDynamic("onShowComplete")(js.Any.fromFunction0(onShowComplete))
     if (!js.isUndefined(progressBar)) __obj.updateDynamic("progressBar")(progressBar)
     if (!js.isUndefined(removeOnHover)) __obj.updateDynamic("removeOnHover")(removeOnHover)
     if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton)

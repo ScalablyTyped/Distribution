@@ -88,12 +88,7 @@ object ServeStaticOptions {
     lastModified: js.UndefOr[scala.Boolean] = js.undefined,
     maxAge: scala.Double | java.lang.String = null,
     redirect: js.UndefOr[scala.Boolean] = js.undefined,
-    setHeaders: js.Function3[
-      /* res */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response, 
-      /* path */ java.lang.String, 
-      /* stat */ js.Any, 
-      _
-    ] = null
+    setHeaders: (/* res */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response, /* path */ java.lang.String, /* stat */ js.Any) => _ = null
   ): ServeStaticOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(cacheControl)) __obj.updateDynamic("cacheControl")(cacheControl)
@@ -106,7 +101,7 @@ object ServeStaticOptions {
     if (!js.isUndefined(lastModified)) __obj.updateDynamic("lastModified")(lastModified)
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (!js.isUndefined(redirect)) __obj.updateDynamic("redirect")(redirect)
-    if (setHeaders != null) __obj.updateDynamic("setHeaders")(setHeaders)
+    if (setHeaders != null) __obj.updateDynamic("setHeaders")(js.Any.fromFunction3(setHeaders))
     __obj.asInstanceOf[ServeStaticOptions]
   }
 }

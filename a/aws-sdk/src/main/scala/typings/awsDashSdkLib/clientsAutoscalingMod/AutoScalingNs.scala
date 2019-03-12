@@ -12,7 +12,7 @@ object AutoScalingNs extends js.Object {
     /**
       * The scaling activities. Activities are sorted by start time. Activities still in progress are described first.
       */
-    var Activities: Activities
+    var Activities: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.Activities
     /**
       * A string that indicates that the response contains more items than can be returned in a single response. To receive additional items, specify this string for the NextToken value when requesting the next set of items. This value is null when there are no more items to return.
       */
@@ -108,7 +108,7 @@ object AutoScalingNs extends js.Object {
     /**
       * The Amazon Resource Names (ARN) of the target groups. You can specify up to 10 target groups.
       */
-    var TargetGroupARNs: TargetGroupARNs
+    var TargetGroupARNs: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.TargetGroupARNs
   }
   
   trait AttachLoadBalancersResultType extends js.Object
@@ -121,7 +121,7 @@ object AutoScalingNs extends js.Object {
     /**
       * The names of the load balancers. You can specify up to 10 load balancers.
       */
-    var LoadBalancerNames: LoadBalancerNames
+    var LoadBalancerNames: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.LoadBalancerNames
   }
   
   trait AutoScalingGroup extends js.Object {
@@ -136,7 +136,7 @@ object AutoScalingNs extends js.Object {
     /**
       * One or more Availability Zones for the group.
       */
-    var AvailabilityZones: AvailabilityZones
+    var AvailabilityZones: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.AvailabilityZones
     /**
       * The date and time the group was created.
       */
@@ -246,7 +246,7 @@ object AutoScalingNs extends js.Object {
     /**
       * The groups.
       */
-    var AutoScalingGroups: AutoScalingGroups
+    var AutoScalingGroups: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.AutoScalingGroups
     /**
       * A string that indicates that the response contains more items than can be returned in a single response. To receive additional items, specify this string for the NextToken value when requesting the next set of items. This value is null when there are no more items to return.
       */
@@ -314,7 +314,7 @@ object AutoScalingNs extends js.Object {
     /**
       * The names of the scheduled actions to delete. The maximum number allowed is 50. 
       */
-    var ScheduledActionNames: ScheduledActionNames
+    var ScheduledActionNames: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.ScheduledActionNames
   }
   
   trait BatchPutScheduledUpdateGroupActionAnswer extends js.Object {
@@ -375,7 +375,7 @@ object AutoScalingNs extends js.Object {
     /**
       * The action for the group to take. This parameter can be either CONTINUE or ABANDON.
       */
-    var LifecycleActionResult: LifecycleActionResult
+    var LifecycleActionResult: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.LifecycleActionResult
     /**
       * A universally unique identifier (UUID) that identifies a specific lifecycle action associated with an instance. Amazon EC2 Auto Scaling sends this token to the notification target you specified when you created the lifecycle hook.
       */
@@ -552,7 +552,7 @@ object AutoScalingNs extends js.Object {
     /**
       * One or more tags.
       */
-    var Tags: Tags
+    var Tags: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.Tags
   }
   
   trait CustomizedMetricSpecification extends js.Object {
@@ -563,7 +563,7 @@ object AutoScalingNs extends js.Object {
     /**
       * The name of the metric.
       */
-    var MetricName: MetricName
+    var MetricName: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.MetricName
     /**
       * The namespace of the metric.
       */
@@ -639,7 +639,7 @@ object AutoScalingNs extends js.Object {
     /**
       * One or more tags.
       */
-    var Tags: Tags
+    var Tags: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.Tags
   }
   
   trait DescribeAccountLimitsAnswer extends js.Object {
@@ -786,7 +786,7 @@ object AutoScalingNs extends js.Object {
     /**
       * The notification configurations.
       */
-    var NotificationConfigurations: NotificationConfigurations
+    var NotificationConfigurations: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.NotificationConfigurations
   }
   
   trait DescribeNotificationConfigurationsType extends js.Object {
@@ -914,7 +914,7 @@ object AutoScalingNs extends js.Object {
     /**
       * Indicates whether the Auto Scaling group decrements the desired capacity value by the number of instances detached.
       */
-    var ShouldDecrementDesiredCapacity: ShouldDecrementDesiredCapacity
+    var ShouldDecrementDesiredCapacity: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.ShouldDecrementDesiredCapacity
   }
   
   trait DetachLoadBalancerTargetGroupsResultType extends js.Object
@@ -927,7 +927,7 @@ object AutoScalingNs extends js.Object {
     /**
       * The Amazon Resource Names (ARN) of the target groups. You can specify up to 10 target groups.
       */
-    var TargetGroupARNs: TargetGroupARNs
+    var TargetGroupARNs: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.TargetGroupARNs
   }
   
   trait DetachLoadBalancersResultType extends js.Object
@@ -940,7 +940,7 @@ object AutoScalingNs extends js.Object {
     /**
       * The names of the load balancers. You can specify up to 10 load balancers.
       */
-    var LoadBalancerNames: LoadBalancerNames
+    var LoadBalancerNames: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.LoadBalancerNames
   }
   
   trait DisableMetricsCollectionQuery extends js.Object {
@@ -1026,7 +1026,7 @@ object AutoScalingNs extends js.Object {
     /**
       * Indicates whether to decrement the desired capacity of the Auto Scaling group by the number of instances moved to Standby mode.
       */
-    var ShouldDecrementDesiredCapacity: ShouldDecrementDesiredCapacity
+    var ShouldDecrementDesiredCapacity: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.ShouldDecrementDesiredCapacity
   }
   
   trait ExecutePolicyType extends js.Object {
@@ -1120,7 +1120,7 @@ object AutoScalingNs extends js.Object {
     /**
       * A description of the current lifecycle state. The Quarantined state is not used.
       */
-    var LifecycleState: LifecycleState
+    var LifecycleState: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.LifecycleState
     /**
       * Indicates whether the instance is protected from termination by Amazon EC2 Auto Scaling when scaling in.
       */
@@ -1266,7 +1266,7 @@ object AutoScalingNs extends js.Object {
     /**
       * The launch configurations.
       */
-    var LaunchConfigurations: LaunchConfigurations
+    var LaunchConfigurations: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.LaunchConfigurations
     /**
       * A string that indicates that the response contains more items than can be returned in a single response. To receive additional items, specify this string for the NextToken value when requesting the next set of items. This value is null when there are no more items to return.
       */
@@ -1361,7 +1361,7 @@ object AutoScalingNs extends js.Object {
     /**
       * The state of the EC2 instance to which you want to attach the lifecycle hook. The valid values are:   autoscaling:EC2_INSTANCE_LAUNCHING   autoscaling:EC2_INSTANCE_TERMINATING  
       */
-    var LifecycleTransition: LifecycleTransition
+    var LifecycleTransition: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.LifecycleTransition
     /**
       * Additional information that you want to include any time Amazon EC2 Auto Scaling sends a message to the notification target.
       */
@@ -1854,11 +1854,11 @@ object AutoScalingNs extends js.Object {
     /**
       * One or more instance IDs.
       */
-    var InstanceIds: InstanceIds
+    var InstanceIds: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.InstanceIds
     /**
       * Indicates whether the instance is protected from termination by Amazon EC2 Auto Scaling when scaling in.
       */
-    var ProtectedFromScaleIn: ProtectedFromScaleIn
+    var ProtectedFromScaleIn: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.ProtectedFromScaleIn
   }
   
   trait StepAdjustment extends js.Object {
@@ -1971,7 +1971,7 @@ object AutoScalingNs extends js.Object {
     /**
       * Indicates whether terminating the instance also decrements the size of the Auto Scaling group.
       */
-    var ShouldDecrementDesiredCapacity: ShouldDecrementDesiredCapacity
+    var ShouldDecrementDesiredCapacity: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.ShouldDecrementDesiredCapacity
   }
   
   @js.native

@@ -40,7 +40,7 @@ object ^ extends js.Object {
     older: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeItem,
     younger: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeItem
   ): scala.Boolean = js.native
-  def map(data: reactDashSortableDashTreeLib.utilsTreeDashDataDashUtilsMod.WalkAndMapFunctionParameters): js.Array[reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeItem] = js.native
+  def map(data: WalkAndMapFunctionParameters): js.Array[reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeItem] = js.native
   def removeNode(
     data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreePath with reactDashSortableDashTreeLib.Anon_DataGetNodeKeyIgnoreCollapsed
   ): (reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeNode with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeIndex) | scala.Null = js.native
@@ -50,6 +50,6 @@ object ^ extends js.Object {
   def toggleExpandedForAll(
     data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.Anon_Expanded
   ): js.Array[reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeItem] = js.native
-  def walk(data: reactDashSortableDashTreeLib.utilsTreeDashDataDashUtilsMod.WalkAndMapFunctionParameters): scala.Unit = js.native
+  def walk(data: WalkAndMapFunctionParameters): scala.Unit = js.native
 }
 

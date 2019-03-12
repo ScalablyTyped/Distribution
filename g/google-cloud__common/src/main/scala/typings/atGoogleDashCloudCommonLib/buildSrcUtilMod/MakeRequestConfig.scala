@@ -42,7 +42,7 @@ object MakeRequestConfig {
       requestLib.requestMod.requestNs.RequiredUriUrl
     ]) = null,
     retries: scala.Int | scala.Double = null,
-    shouldRetryFn: js.Function1[/* response */ js.UndefOr[requestLib.requestMod.requestNs.Response], scala.Boolean] = null,
+    shouldRetryFn: /* response */ js.UndefOr[requestLib.requestMod.requestNs.Response] => scala.Boolean = null,
     stream: duplexifyLib.duplexifyMod.duplexifyNs.Duplexify = null
   ): MakeRequestConfig = {
     val __obj = js.Dynamic.literal()
@@ -50,7 +50,7 @@ object MakeRequestConfig {
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
     if (request != null) __obj.updateDynamic("request")(request)
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
-    if (shouldRetryFn != null) __obj.updateDynamic("shouldRetryFn")(shouldRetryFn)
+    if (shouldRetryFn != null) __obj.updateDynamic("shouldRetryFn")(js.Any.fromFunction1(shouldRetryFn))
     if (stream != null) __obj.updateDynamic("stream")(stream)
     __obj.asInstanceOf[MakeRequestConfig]
   }

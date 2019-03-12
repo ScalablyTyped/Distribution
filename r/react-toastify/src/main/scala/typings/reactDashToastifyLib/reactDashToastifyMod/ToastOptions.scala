@@ -42,8 +42,8 @@ object ToastOptions {
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
     draggablePercent: scala.Int | scala.Double = null,
     hideProgressBar: js.UndefOr[scala.Boolean] = js.undefined,
-    onClose: js.Function1[/* childrenProps */ reactLib.reactMod.ReactNs.Props[_], scala.Unit] = null,
-    onOpen: js.Function1[/* childrenProps */ reactLib.reactMod.ReactNs.Props[_], scala.Unit] = null,
+    onClose: /* childrenProps */ reactLib.reactMod.ReactNs.Props[_] => scala.Unit = null,
+    onOpen: /* childrenProps */ reactLib.reactMod.ReactNs.Props[_] => scala.Unit = null,
     pauseOnHover: js.UndefOr[scala.Boolean] = js.undefined,
     position: reactDashToastifyLib.reactDashToastifyLibStrings.`top-right` | reactDashToastifyLib.reactDashToastifyLibStrings.`top-center` | reactDashToastifyLib.reactDashToastifyLibStrings.`top-left` | reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-right` | reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-center` | reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-left` = null,
     progressClassName: java.lang.String = null,
@@ -60,8 +60,8 @@ object ToastOptions {
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
     if (draggablePercent != null) __obj.updateDynamic("draggablePercent")(draggablePercent.asInstanceOf[js.Any])
     if (!js.isUndefined(hideProgressBar)) __obj.updateDynamic("hideProgressBar")(hideProgressBar)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
     if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover)
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (progressClassName != null) __obj.updateDynamic("progressClassName")(progressClassName)

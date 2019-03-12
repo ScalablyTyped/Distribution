@@ -10,15 +10,15 @@ trait Anon_AllowHalfOpen extends js.Object {
   var destroy: js.UndefOr[
     js.ThisFunction2[
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
-      /* error */ nodeLib.Error | scala.Null, 
-      /* callback */ js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit], 
+      /* error */ stdLib.Error | scala.Null, 
+      /* callback */ js.Function1[/* error */ stdLib.Error | scala.Null, scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
   var `final`: js.UndefOr[
     js.ThisFunction1[
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -36,7 +36,7 @@ trait Anon_AllowHalfOpen extends js.Object {
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
       /* chunk */ js.Any, 
       /* encoding */ java.lang.String, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -44,7 +44,7 @@ trait Anon_AllowHalfOpen extends js.Object {
     js.ThisFunction2[
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
       /* chunks */ js.Array[Anon_Chunk], 
-      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -56,13 +56,13 @@ object Anon_AllowHalfOpen {
     allowHalfOpen: js.UndefOr[scala.Boolean] = js.undefined,
     destroy: js.ThisFunction2[
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
-      /* error */ nodeLib.Error | scala.Null, 
-      /* callback */ js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit], 
+      /* error */ stdLib.Error | scala.Null, 
+      /* callback */ js.Function1[/* error */ stdLib.Error | scala.Null, scala.Unit], 
       scala.Unit
     ] = null,
     `final`: js.ThisFunction1[
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ] = null,
     read: js.ThisFunction1[
@@ -76,13 +76,13 @@ object Anon_AllowHalfOpen {
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
       /* chunk */ js.Any, 
       /* encoding */ java.lang.String, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ] = null,
     writev: js.ThisFunction2[
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
       /* chunks */ js.Array[Anon_Chunk], 
-      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ] = null
   ): Anon_AllowHalfOpen = {

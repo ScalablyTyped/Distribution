@@ -23,14 +23,14 @@ trait IClientDriver
 object IClientDriver {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
-    isConnected: js.Function0[scala.Boolean],
-    listen: js.Function1[samchonLib.protocolInvokeIProtocolMod.IProtocol, scala.Unit],
+    close: () => scala.Unit,
+    isConnected: () => scala.Boolean,
+    listen: samchonLib.protocolInvokeIProtocolMod.IProtocol => scala.Unit,
     onClose: js.Function,
-    replyData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit],
-    sendData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit]
+    replyData: samchonLib.protocolInvokeInvokeMod.Invoke => scala.Unit,
+    sendData: samchonLib.protocolInvokeInvokeMod.Invoke => scala.Unit
   ): IClientDriver = {
-    val __obj = js.Dynamic.literal(close = close, isConnected = isConnected, listen = listen, onClose = onClose, replyData = replyData, sendData = sendData)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), isConnected = js.Any.fromFunction0(isConnected), listen = js.Any.fromFunction1(listen), onClose = onClose, replyData = js.Any.fromFunction1(replyData), sendData = js.Any.fromFunction1(sendData))
   
     __obj.asInstanceOf[IClientDriver]
   }

@@ -13,7 +13,7 @@ object ^ extends js.Object {
     * @param options the callbacks to register
     * @return an AsyncHooks instance used for disabling and enabling hooks
     */
-  def createHook(options: nodeLib.asyncUnderscoreHooksMod.HookCallbacks): nodeLib.asyncUnderscoreHooksMod.AsyncHook = js.native
+  def createHook(options: HookCallbacks): AsyncHook = js.native
   /**
     * Returns the asyncId of the current execution context.
     */

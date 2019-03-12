@@ -73,29 +73,29 @@ object PageOptions {
   @scala.inline
   def apply(
     data: js.Any = null,
-    onHide: js.Function0[scala.Unit] = null,
-    onLoad: js.Function1[/* options */ js.Object, scala.Unit] = null,
-    onPageScroll: js.Function1[/* option */ baiduDashAppLib.Anon_ScrollTop, scala.Unit] = null,
-    onPullDownRefresh: js.Function0[scala.Unit] = null,
-    onReachBottom: js.Function0[scala.Unit] = null,
-    onReady: js.Function0[scala.Unit] = null,
-    onShareAppMessage: js.Function1[/* options */ js.UndefOr[PageShareAppMessageOptions], ShareAppMessage] = null,
-    onShow: js.Function0[scala.Unit] = null,
-    onTabItemTap: js.Function1[/* item */ js.Any, scala.Unit] = null,
-    onUnload: js.Function0[scala.Unit] = null
+    onHide: () => scala.Unit = null,
+    onLoad: /* options */ js.Object => scala.Unit = null,
+    onPageScroll: /* option */ baiduDashAppLib.Anon_ScrollTop => scala.Unit = null,
+    onPullDownRefresh: () => scala.Unit = null,
+    onReachBottom: () => scala.Unit = null,
+    onReady: () => scala.Unit = null,
+    onShareAppMessage: /* options */ js.UndefOr[PageShareAppMessageOptions] => ShareAppMessage = null,
+    onShow: () => scala.Unit = null,
+    onTabItemTap: /* item */ js.Any => scala.Unit = null,
+    onUnload: () => scala.Unit = null
   ): PageOptions = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
-    if (onPageScroll != null) __obj.updateDynamic("onPageScroll")(onPageScroll)
-    if (onPullDownRefresh != null) __obj.updateDynamic("onPullDownRefresh")(onPullDownRefresh)
-    if (onReachBottom != null) __obj.updateDynamic("onReachBottom")(onReachBottom)
-    if (onReady != null) __obj.updateDynamic("onReady")(onReady)
-    if (onShareAppMessage != null) __obj.updateDynamic("onShareAppMessage")(onShareAppMessage)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
-    if (onTabItemTap != null) __obj.updateDynamic("onTabItemTap")(onTabItemTap)
-    if (onUnload != null) __obj.updateDynamic("onUnload")(onUnload)
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
+    if (onPageScroll != null) __obj.updateDynamic("onPageScroll")(js.Any.fromFunction1(onPageScroll))
+    if (onPullDownRefresh != null) __obj.updateDynamic("onPullDownRefresh")(js.Any.fromFunction0(onPullDownRefresh))
+    if (onReachBottom != null) __obj.updateDynamic("onReachBottom")(js.Any.fromFunction0(onReachBottom))
+    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction0(onReady))
+    if (onShareAppMessage != null) __obj.updateDynamic("onShareAppMessage")(js.Any.fromFunction1(onShareAppMessage))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
+    if (onTabItemTap != null) __obj.updateDynamic("onTabItemTap")(js.Any.fromFunction1(onTabItemTap))
+    if (onUnload != null) __obj.updateDynamic("onUnload")(js.Any.fromFunction0(onUnload))
     __obj.asInstanceOf[PageOptions]
   }
 }

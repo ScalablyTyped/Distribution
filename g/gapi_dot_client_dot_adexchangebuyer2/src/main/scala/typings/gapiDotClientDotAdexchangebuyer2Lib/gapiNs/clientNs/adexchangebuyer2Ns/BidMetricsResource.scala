@@ -15,12 +15,9 @@ trait BidMetricsResource extends js.Object {
 object BidMetricsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListBidMetricsResponse]
-    ]
+    list: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetId => gapiDotClientLib.gapiNs.clientNs.Request[ListBidMetricsResponse]
   ): BidMetricsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[BidMetricsResource]
   }

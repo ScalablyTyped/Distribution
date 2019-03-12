@@ -48,18 +48,18 @@ object CronJobParameters {
   @scala.inline
   def apply(
     cronTime: java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment,
-    onTick: js.Function0[scala.Unit],
+    onTick: () => scala.Unit,
     context: js.Any = null,
-    onComplete: js.Function0[scala.Unit] = null,
+    onComplete: () => scala.Unit = null,
     runOnInit: js.UndefOr[scala.Boolean] = js.undefined,
     start: js.UndefOr[scala.Boolean] = js.undefined,
     timeZone: java.lang.String = null,
     unrefTimeout: js.UndefOr[scala.Boolean] = js.undefined,
     utcOffset: java.lang.String | scala.Double = null
   ): CronJobParameters = {
-    val __obj = js.Dynamic.literal(cronTime = cronTime.asInstanceOf[js.Any], onTick = onTick)
+    val __obj = js.Dynamic.literal(cronTime = cronTime.asInstanceOf[js.Any], onTick = js.Any.fromFunction0(onTick))
     if (context != null) __obj.updateDynamic("context")(context)
-    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction0(onComplete))
     if (!js.isUndefined(runOnInit)) __obj.updateDynamic("runOnInit")(runOnInit)
     if (!js.isUndefined(start)) __obj.updateDynamic("start")(start)
     if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)

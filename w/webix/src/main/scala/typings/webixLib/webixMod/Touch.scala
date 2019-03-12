@@ -17,12 +17,12 @@ object Touch {
   @scala.inline
   def apply(
     config: js.Any,
-    disable: js.Function0[scala.Unit],
-    enable: js.Function0[scala.Unit],
-    limit: js.Function1[scala.Boolean, scala.Unit],
-    scrollTo: js.Function4[stdLib.HTMLElement, scala.Double, scala.Double, java.lang.String, scala.Unit]
+    disable: () => scala.Unit,
+    enable: () => scala.Unit,
+    limit: scala.Boolean => scala.Unit,
+    scrollTo: (stdLib.HTMLElement, scala.Double, scala.Double, java.lang.String) => scala.Unit
   ): Touch = {
-    val __obj = js.Dynamic.literal(config = config, disable = disable, enable = enable, limit = limit, scrollTo = scrollTo)
+    val __obj = js.Dynamic.literal(config = config, disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), limit = js.Any.fromFunction1(limit), scrollTo = js.Any.fromFunction4(scrollTo))
   
     __obj.asInstanceOf[Touch]
   }

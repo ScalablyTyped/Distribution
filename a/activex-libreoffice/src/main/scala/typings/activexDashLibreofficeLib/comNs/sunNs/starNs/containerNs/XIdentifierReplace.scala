@@ -22,17 +22,17 @@ object XIdentifierReplace {
   @scala.inline
   def apply(
     ElementType: activexDashLibreofficeLib.`type`,
-    Identifiers: activexDashInteropLib.SafeArray[scala.Double],
-    acquire: js.Function0[scala.Unit],
-    getByIdentifier: js.Function1[scala.Double, js.Any],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    getIdentifiers: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    hasElements: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    replaceByIdentifer: js.Function2[scala.Double, js.Any, scala.Unit]
+    Identifiers: stdLib.SafeArray[scala.Double],
+    acquire: () => scala.Unit,
+    getByIdentifier: scala.Double => js.Any,
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    getIdentifiers: () => stdLib.SafeArray[scala.Double],
+    hasElements: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    replaceByIdentifer: (scala.Double, js.Any) => scala.Unit
   ): XIdentifierReplace = {
-    val __obj = js.Dynamic.literal(ElementType = ElementType, Identifiers = Identifiers, acquire = acquire, getByIdentifier = getByIdentifier, getElementType = getElementType, getIdentifiers = getIdentifiers, hasElements = hasElements, queryInterface = queryInterface, release = release, replaceByIdentifer = replaceByIdentifer)
+    val __obj = js.Dynamic.literal(ElementType = ElementType, Identifiers = Identifiers, acquire = js.Any.fromFunction0(acquire), getByIdentifier = js.Any.fromFunction1(getByIdentifier), getElementType = js.Any.fromFunction0(getElementType), getIdentifiers = js.Any.fromFunction0(getIdentifiers), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), replaceByIdentifer = js.Any.fromFunction2(replaceByIdentifer))
   
     __obj.asInstanceOf[XIdentifierReplace]
   }

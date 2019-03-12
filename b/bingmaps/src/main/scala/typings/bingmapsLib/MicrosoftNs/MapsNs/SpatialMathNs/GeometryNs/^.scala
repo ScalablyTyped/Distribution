@@ -35,13 +35,13 @@ object ^ extends js.Object {
     shape: bingmapsLib.MicrosoftNs.MapsNs.IPrimitive,
     distance: scala.Double,
     units: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits,
-    endCapType: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.GeometryNs.BufferEndCap
+    endCapType: BufferEndCap
   ): bingmapsLib.MicrosoftNs.MapsNs.IPrimitive | js.Array[bingmapsLib.MicrosoftNs.MapsNs.IPrimitive] = js.native
   def buffer(
     shape: bingmapsLib.MicrosoftNs.MapsNs.IPrimitive,
     distance: scala.Double,
     units: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits,
-    endCapType: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.GeometryNs.BufferEndCap,
+    endCapType: BufferEndCap,
     options: bingmapsLib.MicrosoftNs.MapsNs.IPolygonOptions
   ): bingmapsLib.MicrosoftNs.MapsNs.IPrimitive | js.Array[bingmapsLib.MicrosoftNs.MapsNs.IPrimitive] = js.native
   def buffer(shape: bingmapsLib.MicrosoftNs.MapsNs.Location, distance: scala.Double): bingmapsLib.MicrosoftNs.MapsNs.IPrimitive | js.Array[bingmapsLib.MicrosoftNs.MapsNs.IPrimitive] = js.native
@@ -54,13 +54,13 @@ object ^ extends js.Object {
     shape: bingmapsLib.MicrosoftNs.MapsNs.Location,
     distance: scala.Double,
     units: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits,
-    endCapType: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.GeometryNs.BufferEndCap
+    endCapType: BufferEndCap
   ): bingmapsLib.MicrosoftNs.MapsNs.IPrimitive | js.Array[bingmapsLib.MicrosoftNs.MapsNs.IPrimitive] = js.native
   def buffer(
     shape: bingmapsLib.MicrosoftNs.MapsNs.Location,
     distance: scala.Double,
     units: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits,
-    endCapType: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.GeometryNs.BufferEndCap,
+    endCapType: BufferEndCap,
     options: bingmapsLib.MicrosoftNs.MapsNs.IPolygonOptions
   ): bingmapsLib.MicrosoftNs.MapsNs.IPrimitive | js.Array[bingmapsLib.MicrosoftNs.MapsNs.IPrimitive] = js.native
   def buffer(
@@ -82,7 +82,7 @@ object ^ extends js.Object {
     ],
     distance: scala.Double,
     units: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits,
-    endCapType: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.GeometryNs.BufferEndCap
+    endCapType: BufferEndCap
   ): bingmapsLib.MicrosoftNs.MapsNs.IPrimitive | js.Array[bingmapsLib.MicrosoftNs.MapsNs.IPrimitive] = js.native
   def buffer(
     shape: js.Array[
@@ -90,7 +90,7 @@ object ^ extends js.Object {
     ],
     distance: scala.Double,
     units: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits,
-    endCapType: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.GeometryNs.BufferEndCap,
+    endCapType: BufferEndCap,
     options: bingmapsLib.MicrosoftNs.MapsNs.IPolygonOptions
   ): bingmapsLib.MicrosoftNs.MapsNs.IPrimitive | js.Array[bingmapsLib.MicrosoftNs.MapsNs.IPrimitive] = js.native
   def calculateLength(shape: bingmapsLib.MicrosoftNs.MapsNs.IPrimitive): scala.Double = js.native

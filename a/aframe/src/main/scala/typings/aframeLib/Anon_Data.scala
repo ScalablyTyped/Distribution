@@ -12,11 +12,8 @@ trait Anon_Data extends js.Object {
 
 object Anon_Data {
   @scala.inline
-  def apply(
-    parse: js.Function1[java.lang.String, js.Object],
-    stringify: js.Function1[js.Object, java.lang.String]
-  ): Anon_Data = {
-    val __obj = js.Dynamic.literal(parse = parse, stringify = stringify)
+  def apply(parse: java.lang.String => js.Object, stringify: js.Object => java.lang.String): Anon_Data = {
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), stringify = js.Any.fromFunction1(stringify))
   
     __obj.asInstanceOf[Anon_Data]
   }

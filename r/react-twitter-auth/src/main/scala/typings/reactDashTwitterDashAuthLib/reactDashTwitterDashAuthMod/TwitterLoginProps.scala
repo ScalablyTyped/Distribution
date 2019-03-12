@@ -29,8 +29,8 @@ object TwitterLoginProps {
   @scala.inline
   def apply(
     loginUrl: java.lang.String,
-    onFailure: js.Function1[java.lang.String, scala.Unit],
-    onSuccess: js.Function1[java.lang.String, scala.Unit],
+    onFailure: java.lang.String => scala.Unit,
+    onSuccess: java.lang.String => scala.Unit,
     requestTokenUrl: java.lang.String,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     credentials: reactDashTwitterDashAuthLib.reactDashTwitterDashAuthLibStrings.omit | reactDashTwitterDashAuthLib.reactDashTwitterDashAuthLibStrings.`same-origin` | reactDashTwitterDashAuthLib.reactDashTwitterDashAuthLibStrings.include = null,
@@ -44,7 +44,7 @@ object TwitterLoginProps {
     tag: reactLib.reactMod.ReactNs.ReactType[_] = null,
     text: java.lang.String = null
   ): TwitterLoginProps = {
-    val __obj = js.Dynamic.literal(loginUrl = loginUrl, onFailure = onFailure, onSuccess = onSuccess, requestTokenUrl = requestTokenUrl)
+    val __obj = js.Dynamic.literal(loginUrl = loginUrl, onFailure = js.Any.fromFunction1(onFailure), onSuccess = js.Any.fromFunction1(onSuccess), requestTokenUrl = requestTokenUrl)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
     if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])

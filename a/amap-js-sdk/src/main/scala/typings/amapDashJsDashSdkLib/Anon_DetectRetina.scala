@@ -25,7 +25,7 @@ object Anon_DetectRetina {
     map: amapDashJsDashSdkLib.AMapNs.Map,
     detectRetina: js.UndefOr[scala.Boolean] = js.undefined,
     errorUrl: java.lang.String = null,
-    getTileUrl: js.Function3[/* x */ scala.Double, /* y */ scala.Double, /* z */ scala.Double, java.lang.String] = null,
+    getTileUrl: (/* x */ scala.Double, /* y */ scala.Double, /* z */ scala.Double) => java.lang.String = null,
     opacity: scala.Int | scala.Double = null,
     tileSize: scala.Int | scala.Double = null,
     tileUrl: java.lang.String = null,
@@ -35,7 +35,7 @@ object Anon_DetectRetina {
     val __obj = js.Dynamic.literal(map = map)
     if (!js.isUndefined(detectRetina)) __obj.updateDynamic("detectRetina")(detectRetina)
     if (errorUrl != null) __obj.updateDynamic("errorUrl")(errorUrl)
-    if (getTileUrl != null) __obj.updateDynamic("getTileUrl")(getTileUrl)
+    if (getTileUrl != null) __obj.updateDynamic("getTileUrl")(js.Any.fromFunction3(getTileUrl))
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
     if (tileUrl != null) __obj.updateDynamic("tileUrl")(tileUrl)

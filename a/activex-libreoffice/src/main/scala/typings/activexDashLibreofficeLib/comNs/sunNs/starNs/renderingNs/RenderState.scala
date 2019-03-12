@@ -45,7 +45,7 @@ trait RenderState extends js.Object {
     * @see XGraphicDevice
     * @see XColorSpace
     */
-  var DeviceColor: activexDashInteropLib.SafeArray[ColorComponent]
+  var DeviceColor: stdLib.SafeArray[ColorComponent]
 }
 
 object RenderState {
@@ -54,7 +54,7 @@ object RenderState {
     AffineTransform: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix2D,
     Clip: XPolyPolygon2D,
     CompositeOperation: scala.Double,
-    DeviceColor: activexDashInteropLib.SafeArray[ColorComponent]
+    DeviceColor: stdLib.SafeArray[ColorComponent]
   ): RenderState = {
     val __obj = js.Dynamic.literal(AffineTransform = AffineTransform, Clip = Clip, CompositeOperation = CompositeOperation, DeviceColor = DeviceColor)
   

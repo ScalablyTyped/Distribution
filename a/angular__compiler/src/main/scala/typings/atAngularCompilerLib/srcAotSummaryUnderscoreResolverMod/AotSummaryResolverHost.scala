@@ -33,12 +33,12 @@ trait AotSummaryResolverHost extends js.Object {
 object AotSummaryResolverHost {
   @scala.inline
   def apply(
-    fromSummaryFileName: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    isSourceFile: js.Function1[java.lang.String, scala.Boolean],
-    loadSummary: js.Function1[java.lang.String, java.lang.String | scala.Null],
-    toSummaryFileName: js.Function2[java.lang.String, java.lang.String, java.lang.String]
+    fromSummaryFileName: (java.lang.String, java.lang.String) => java.lang.String,
+    isSourceFile: java.lang.String => scala.Boolean,
+    loadSummary: java.lang.String => java.lang.String | scala.Null,
+    toSummaryFileName: (java.lang.String, java.lang.String) => java.lang.String
   ): AotSummaryResolverHost = {
-    val __obj = js.Dynamic.literal(fromSummaryFileName = fromSummaryFileName, isSourceFile = isSourceFile, loadSummary = loadSummary, toSummaryFileName = toSummaryFileName)
+    val __obj = js.Dynamic.literal(fromSummaryFileName = js.Any.fromFunction2(fromSummaryFileName), isSourceFile = js.Any.fromFunction1(isSourceFile), loadSummary = js.Any.fromFunction1(loadSummary), toSummaryFileName = js.Any.fromFunction2(toSummaryFileName))
   
     __obj.asInstanceOf[AotSummaryResolverHost]
   }

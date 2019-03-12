@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AuthStatus extends js.Object {
-  var authError: nodeLib.Error
+  var authError: stdLib.Error
   var isAuthenticated: AuthStates
 }
 
 object AuthStatus {
   @scala.inline
-  def apply(authError: nodeLib.Error, isAuthenticated: AuthStates): AuthStatus = {
+  def apply(authError: stdLib.Error, isAuthenticated: AuthStates): AuthStatus = {
     val __obj = js.Dynamic.literal(authError = authError, isAuthenticated = isAuthenticated)
   
     __obj.asInstanceOf[AuthStatus]

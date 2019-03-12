@@ -12,9 +12,9 @@ trait ListsInstance extends js.Object {
 object ListsInstance {
   @scala.inline
   def apply(
-    registerThreadRowViewHandler: js.Function1[js.Function1[/* threadRowView */ ThreadRowView, _], js.Function0[scala.Unit]]
+    registerThreadRowViewHandler: js.Function1[/* threadRowView */ ThreadRowView, _] => js.Function0[scala.Unit]
   ): ListsInstance = {
-    val __obj = js.Dynamic.literal(registerThreadRowViewHandler = registerThreadRowViewHandler)
+    val __obj = js.Dynamic.literal(registerThreadRowViewHandler = js.Any.fromFunction1(registerThreadRowViewHandler))
   
     __obj.asInstanceOf[ListsInstance]
   }

@@ -44,11 +44,11 @@ object Token {
     lineBreaks: scala.Double,
     offset: scala.Double,
     text: java.lang.String,
-    toString: js.Function0[java.lang.String],
+    toString: () => java.lang.String,
     value: java.lang.String,
     `type`: java.lang.String = null
   ): Token = {
-    val __obj = js.Dynamic.literal(col = col, line = line, lineBreaks = lineBreaks, offset = offset, text = text, toString = toString, value = value)
+    val __obj = js.Dynamic.literal(col = col, line = line, lineBreaks = lineBreaks, offset = offset, text = text, toString = js.Any.fromFunction0(toString), value = value)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Token]
   }

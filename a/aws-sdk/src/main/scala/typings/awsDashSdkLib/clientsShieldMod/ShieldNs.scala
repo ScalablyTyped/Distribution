@@ -12,7 +12,7 @@ object ShieldNs extends js.Object {
     /**
       * The Amazon S3 bucket that contains your flow logs.
       */
-    var LogBucket: LogBucket
+    var LogBucket: awsDashSdkLib.clientsShieldMod.ShieldNs.LogBucket
   }
   
   trait AssociateDRTLogBucketResponse extends js.Object
@@ -21,7 +21,7 @@ object ShieldNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the role the DRT will use to access your AWS account. Prior to making the AssociateDRTRole request, you must attach the AWSShieldDRTAccessPolicy managed policy to this role. For more information see Attaching and Detaching IAM Policies.
       */
-    var RoleArn: RoleArn
+    var RoleArn: awsDashSdkLib.clientsShieldMod.ShieldNs.RoleArn
   }
   
   trait AssociateDRTRoleResponse extends js.Object
@@ -140,7 +140,7 @@ object ShieldNs extends js.Object {
     /**
       * The ARN (Amazon Resource Name) of the resource to be protected. The ARN should be in one of the following formats:   For an Application Load Balancer: arn:aws:elasticloadbalancing:region:account-id:loadbalancer/app/load-balancer-name/load-balancer-id     For an Elastic Load Balancer (Classic Load Balancer): arn:aws:elasticloadbalancing:region:account-id:loadbalancer/load-balancer-name     For an AWS CloudFront distribution: arn:aws:cloudfront::account-id:distribution/distribution-id     For an AWS Global Accelerator accelerator: arn:aws:globalaccelerator::account-id:accelerator/accelerator-id     For Amazon Route 53: arn:aws:route53:::hostedzone/hosted-zone-id     For an Elastic IP address: arn:aws:ec2:region:account-id:eip-allocation/allocation-id    
       */
-    var ResourceArn: ResourceArn
+    var ResourceArn: awsDashSdkLib.clientsShieldMod.ShieldNs.ResourceArn
   }
   
   trait CreateProtectionResponse extends js.Object {
@@ -158,7 +158,7 @@ object ShieldNs extends js.Object {
     /**
       * The unique identifier (ID) for the Protection object to be deleted.
       */
-    var ProtectionId: ProtectionId
+    var ProtectionId: awsDashSdkLib.clientsShieldMod.ShieldNs.ProtectionId
   }
   
   trait DeleteProtectionResponse extends js.Object
@@ -171,7 +171,7 @@ object ShieldNs extends js.Object {
     /**
       * The unique identifier (ID) for the attack that to be described.
       */
-    var AttackId: AttackId
+    var AttackId: awsDashSdkLib.clientsShieldMod.ShieldNs.AttackId
   }
   
   trait DescribeAttackResponse extends js.Object {
@@ -234,7 +234,7 @@ object ShieldNs extends js.Object {
     /**
       * The Amazon S3 bucket that contains your flow logs.
       */
-    var LogBucket: LogBucket
+    var LogBucket: awsDashSdkLib.clientsShieldMod.ShieldNs.LogBucket
   }
   
   trait DisassociateDRTLogBucketResponse extends js.Object
@@ -247,7 +247,7 @@ object ShieldNs extends js.Object {
     /**
       * An email address that the DRT can use to contact you during a suspected attack.
       */
-    var EmailAddress: EmailAddress
+    var EmailAddress: awsDashSdkLib.clientsShieldMod.ShieldNs.EmailAddress
   }
   
   trait GetSubscriptionStateRequest extends js.Object
@@ -256,7 +256,7 @@ object ShieldNs extends js.Object {
     /**
       * The status of the subscription.
       */
-    var SubscriptionState: SubscriptionState
+    var SubscriptionState: awsDashSdkLib.clientsShieldMod.ShieldNs.SubscriptionState
   }
   
   trait Limit extends js.Object {

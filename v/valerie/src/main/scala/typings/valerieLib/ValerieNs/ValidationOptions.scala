@@ -30,26 +30,26 @@ trait ValidationOptions extends js.Object {
 object ValidationOptions {
   @scala.inline
   def apply(
-    applicable: js.Function0[_] = null,
+    applicable: () => _ = null,
     converter: IConverter = null,
     entryFormat: java.lang.String = null,
     excludeFromSummary: js.UndefOr[scala.Boolean] = js.undefined,
     invalidFailureMessage: java.lang.String = null,
     missingFailureMessage: java.lang.String = null,
-    name: js.Function0[_] = null,
-    required: js.Function0[_] = null,
+    name: () => _ = null,
+    required: () => _ = null,
     rules: js.Any = null,
     valueFormat: java.lang.String = null
   ): ValidationOptions = {
     val __obj = js.Dynamic.literal()
-    if (applicable != null) __obj.updateDynamic("applicable")(applicable)
+    if (applicable != null) __obj.updateDynamic("applicable")(js.Any.fromFunction0(applicable))
     if (converter != null) __obj.updateDynamic("converter")(converter)
     if (entryFormat != null) __obj.updateDynamic("entryFormat")(entryFormat)
     if (!js.isUndefined(excludeFromSummary)) __obj.updateDynamic("excludeFromSummary")(excludeFromSummary)
     if (invalidFailureMessage != null) __obj.updateDynamic("invalidFailureMessage")(invalidFailureMessage)
     if (missingFailureMessage != null) __obj.updateDynamic("missingFailureMessage")(missingFailureMessage)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (required != null) __obj.updateDynamic("required")(required)
+    if (name != null) __obj.updateDynamic("name")(js.Any.fromFunction0(name))
+    if (required != null) __obj.updateDynamic("required")(js.Any.fromFunction0(required))
     if (rules != null) __obj.updateDynamic("rules")(rules)
     if (valueFormat != null) __obj.updateDynamic("valueFormat")(valueFormat)
     __obj.asInstanceOf[ValidationOptions]

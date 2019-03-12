@@ -22,9 +22,9 @@ class Migration protected () extends js.Object {
   def dropForeignKey(table: java.lang.String, referenceTable: java.lang.String): js.Any = js.native
   def dropIndex(table: java.lang.String, column: java.lang.String): js.Any = js.native
   def dropTable(table: java.lang.String): js.Any = js.native
-  def executeDown(callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
-  def executeDown(callback: js.Function1[/* err */ nodeLib.Error, scala.Unit], prevId: java.lang.String): scala.Unit = js.native
-  def executeUp(callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def executeDown(callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  def executeDown(callback: js.Function1[/* err */ stdLib.Error, scala.Unit], prevId: java.lang.String): scala.Unit = js.native
+  def executeUp(callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def renameColumn(table: java.lang.String, column: java.lang.String, newColumn: java.lang.String): js.Any = js.native
   def renameTable(
     table: java.lang.String,

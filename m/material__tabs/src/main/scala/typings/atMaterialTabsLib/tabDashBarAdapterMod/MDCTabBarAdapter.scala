@@ -29,26 +29,26 @@ trait MDCTabBarAdapter extends js.Object {
 object MDCTabBarAdapter {
   @scala.inline
   def apply(
-    addClass: js.Function1[java.lang.String, scala.Unit],
-    bindOnMDCTabSelectedEvent: js.Function0[scala.Unit],
-    deregisterResizeHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    getComputedLeftForTabAtIndex: js.Function1[scala.Double, scala.Double],
-    getComputedWidthForTabAtIndex: js.Function1[scala.Double, scala.Double],
-    getNumberOfTabs: js.Function0[scala.Double],
-    getOffsetWidth: js.Function0[scala.Double],
-    getOffsetWidthForIndicator: js.Function0[scala.Double],
-    isDefaultPreventedOnClickForTabAtIndex: js.Function1[scala.Double, scala.Boolean],
-    isTabActiveAtIndex: js.Function1[scala.Double, scala.Boolean],
-    measureTabAtIndex: js.Function1[scala.Double, scala.Unit],
-    notifyChange: js.Function1[atMaterialTabsLib.Anon_ActiveTabIndex, scala.Unit],
-    registerResizeHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    removeClass: js.Function1[java.lang.String, scala.Unit],
-    setPreventDefaultOnClickForTabAtIndex: js.Function2[scala.Double, scala.Boolean, scala.Unit],
-    setStyleForIndicator: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    setTabActiveAtIndex: js.Function2[scala.Double, atMaterialTabsLib.atMaterialTabsLibNumbers.`true`, scala.Unit],
-    unbindOnMDCTabSelectedEvent: js.Function0[scala.Unit]
+    addClass: java.lang.String => scala.Unit,
+    bindOnMDCTabSelectedEvent: () => scala.Unit,
+    deregisterResizeHandler: stdLib.EventListener => scala.Unit,
+    getComputedLeftForTabAtIndex: scala.Double => scala.Double,
+    getComputedWidthForTabAtIndex: scala.Double => scala.Double,
+    getNumberOfTabs: () => scala.Double,
+    getOffsetWidth: () => scala.Double,
+    getOffsetWidthForIndicator: () => scala.Double,
+    isDefaultPreventedOnClickForTabAtIndex: scala.Double => scala.Boolean,
+    isTabActiveAtIndex: scala.Double => scala.Boolean,
+    measureTabAtIndex: scala.Double => scala.Unit,
+    notifyChange: atMaterialTabsLib.Anon_ActiveTabIndex => scala.Unit,
+    registerResizeHandler: stdLib.EventListener => scala.Unit,
+    removeClass: java.lang.String => scala.Unit,
+    setPreventDefaultOnClickForTabAtIndex: (scala.Double, scala.Boolean) => scala.Unit,
+    setStyleForIndicator: (java.lang.String, java.lang.String) => scala.Unit,
+    setTabActiveAtIndex: (scala.Double, atMaterialTabsLib.atMaterialTabsLibNumbers.`true`) => scala.Unit,
+    unbindOnMDCTabSelectedEvent: () => scala.Unit
   ): MDCTabBarAdapter = {
-    val __obj = js.Dynamic.literal(addClass = addClass, bindOnMDCTabSelectedEvent = bindOnMDCTabSelectedEvent, deregisterResizeHandler = deregisterResizeHandler, getComputedLeftForTabAtIndex = getComputedLeftForTabAtIndex, getComputedWidthForTabAtIndex = getComputedWidthForTabAtIndex, getNumberOfTabs = getNumberOfTabs, getOffsetWidth = getOffsetWidth, getOffsetWidthForIndicator = getOffsetWidthForIndicator, isDefaultPreventedOnClickForTabAtIndex = isDefaultPreventedOnClickForTabAtIndex, isTabActiveAtIndex = isTabActiveAtIndex, measureTabAtIndex = measureTabAtIndex, notifyChange = notifyChange, registerResizeHandler = registerResizeHandler, removeClass = removeClass, setPreventDefaultOnClickForTabAtIndex = setPreventDefaultOnClickForTabAtIndex, setStyleForIndicator = setStyleForIndicator, setTabActiveAtIndex = setTabActiveAtIndex, unbindOnMDCTabSelectedEvent = unbindOnMDCTabSelectedEvent)
+    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), bindOnMDCTabSelectedEvent = js.Any.fromFunction0(bindOnMDCTabSelectedEvent), deregisterResizeHandler = js.Any.fromFunction1(deregisterResizeHandler), getComputedLeftForTabAtIndex = js.Any.fromFunction1(getComputedLeftForTabAtIndex), getComputedWidthForTabAtIndex = js.Any.fromFunction1(getComputedWidthForTabAtIndex), getNumberOfTabs = js.Any.fromFunction0(getNumberOfTabs), getOffsetWidth = js.Any.fromFunction0(getOffsetWidth), getOffsetWidthForIndicator = js.Any.fromFunction0(getOffsetWidthForIndicator), isDefaultPreventedOnClickForTabAtIndex = js.Any.fromFunction1(isDefaultPreventedOnClickForTabAtIndex), isTabActiveAtIndex = js.Any.fromFunction1(isTabActiveAtIndex), measureTabAtIndex = js.Any.fromFunction1(measureTabAtIndex), notifyChange = js.Any.fromFunction1(notifyChange), registerResizeHandler = js.Any.fromFunction1(registerResizeHandler), removeClass = js.Any.fromFunction1(removeClass), setPreventDefaultOnClickForTabAtIndex = js.Any.fromFunction2(setPreventDefaultOnClickForTabAtIndex), setStyleForIndicator = js.Any.fromFunction2(setStyleForIndicator), setTabActiveAtIndex = js.Any.fromFunction2(setTabActiveAtIndex), unbindOnMDCTabSelectedEvent = js.Any.fromFunction0(unbindOnMDCTabSelectedEvent))
   
     __obj.asInstanceOf[MDCTabBarAdapter]
   }

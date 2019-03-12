@@ -33,7 +33,7 @@ object UrlAjaxSettings {
     converters: PlainObject[(js.Function1[/* value */ _, _]) | jqueryLib.jqueryLibNumbers.`true`] = null,
     crossDomain: js.UndefOr[scala.Boolean] = js.undefined,
     data: PlainObject[_] | java.lang.String = null,
-    dataFilter: js.Function2[/* data */ java.lang.String, /* type */ java.lang.String, _] = null,
+    dataFilter: (/* data */ java.lang.String, /* type */ java.lang.String) => _ = null,
     dataType: jqueryLib.jqueryLibStrings.xml | jqueryLib.jqueryLibStrings.html | jqueryLib.jqueryLibStrings.script | jqueryLib.jqueryLibStrings.json | jqueryLib.jqueryLibStrings.jsonp | jqueryLib.jqueryLibStrings.text | java.lang.String = null,
     error: TypeOrArray[jqueryLib.JQueryNs.AjaxNs.ErrorCallback[TContext]] = null,
     global: js.UndefOr[scala.Boolean] = js.undefined,
@@ -53,7 +53,7 @@ object UrlAjaxSettings {
     traditional: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: java.lang.String = null,
     username: java.lang.String = null,
-    xhr: js.Function0[stdLib.XMLHttpRequest] = null,
+    xhr: () => stdLib.XMLHttpRequest = null,
     xhrFields: jqueryLib.JQueryNs.AjaxNs.XHRFields = null
   ): UrlAjaxSettings[TContext] = {
     val __obj = js.Dynamic.literal(url = url)
@@ -68,7 +68,7 @@ object UrlAjaxSettings {
     if (converters != null) __obj.updateDynamic("converters")(converters)
     if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataFilter != null) __obj.updateDynamic("dataFilter")(dataFilter)
+    if (dataFilter != null) __obj.updateDynamic("dataFilter")(js.Any.fromFunction2(dataFilter))
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
@@ -88,7 +88,7 @@ object UrlAjaxSettings {
     if (!js.isUndefined(traditional)) __obj.updateDynamic("traditional")(traditional)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (username != null) __obj.updateDynamic("username")(username)
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    if (xhr != null) __obj.updateDynamic("xhr")(js.Any.fromFunction0(xhr))
     if (xhrFields != null) __obj.updateDynamic("xhrFields")(xhrFields)
     __obj.asInstanceOf[UrlAjaxSettings[TContext]]
   }

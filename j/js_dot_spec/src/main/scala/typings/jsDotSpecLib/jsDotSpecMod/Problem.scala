@@ -28,11 +28,11 @@ object Problem {
   @scala.inline
   def apply(
     path: js.Array[java.lang.String],
-    predicate: js.Function1[js.Any, scala.Boolean],
+    predicate: js.Any => scala.Boolean,
     value: js.Any,
     via: js.Array[java.lang.String]
   ): Problem = {
-    val __obj = js.Dynamic.literal(path = path, predicate = predicate, value = value, via = via)
+    val __obj = js.Dynamic.literal(path = path, predicate = js.Any.fromFunction1(predicate), value = value, via = via)
   
     __obj.asInstanceOf[Problem]
   }

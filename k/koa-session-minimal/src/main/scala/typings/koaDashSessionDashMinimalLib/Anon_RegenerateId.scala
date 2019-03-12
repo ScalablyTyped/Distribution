@@ -11,8 +11,8 @@ trait Anon_RegenerateId extends js.Object {
 
 object Anon_RegenerateId {
   @scala.inline
-  def apply(regenerateId: js.Function0[scala.Unit]): Anon_RegenerateId = {
-    val __obj = js.Dynamic.literal(regenerateId = regenerateId)
+  def apply(regenerateId: () => scala.Unit): Anon_RegenerateId = {
+    val __obj = js.Dynamic.literal(regenerateId = js.Any.fromFunction0(regenerateId))
   
     __obj.asInstanceOf[Anon_RegenerateId]
   }

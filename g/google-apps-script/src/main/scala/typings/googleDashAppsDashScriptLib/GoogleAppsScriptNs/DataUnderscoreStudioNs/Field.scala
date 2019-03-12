@@ -32,29 +32,29 @@ trait Field extends js.Object {
 object Field {
   @scala.inline
   def apply(
-    getAggregation: js.Function0[AggregationType],
-    getDescription: js.Function0[java.lang.String],
-    getFormula: js.Function0[java.lang.String],
-    getGroup: js.Function0[java.lang.String],
-    getId: js.Function0[java.lang.String],
-    getIsReaggregatable: js.Function0[scala.Boolean],
-    getName: js.Function0[java.lang.String],
-    getType: js.Function0[FieldType],
-    isDefault: js.Function0[scala.Boolean],
-    isDimension: js.Function0[scala.Boolean],
-    isHidden: js.Function0[scala.Boolean],
-    isMetric: js.Function0[scala.Boolean],
-    setAggregation: js.Function1[AggregationType, Field],
-    setDescription: js.Function1[java.lang.String, Field],
-    setFormula: js.Function1[java.lang.String, Field],
-    setGroup: js.Function1[java.lang.String, Field],
-    setId: js.Function1[java.lang.String, Field],
-    setIsHidden: js.Function1[scala.Boolean, Field],
-    setIsReaggregatable: js.Function1[scala.Boolean, Field],
-    setName: js.Function1[java.lang.String, Field],
-    setType: js.Function1[FieldType, Field]
+    getAggregation: () => AggregationType,
+    getDescription: () => java.lang.String,
+    getFormula: () => java.lang.String,
+    getGroup: () => java.lang.String,
+    getId: () => java.lang.String,
+    getIsReaggregatable: () => scala.Boolean,
+    getName: () => java.lang.String,
+    getType: () => FieldType,
+    isDefault: () => scala.Boolean,
+    isDimension: () => scala.Boolean,
+    isHidden: () => scala.Boolean,
+    isMetric: () => scala.Boolean,
+    setAggregation: AggregationType => Field,
+    setDescription: java.lang.String => Field,
+    setFormula: java.lang.String => Field,
+    setGroup: java.lang.String => Field,
+    setId: java.lang.String => Field,
+    setIsHidden: scala.Boolean => Field,
+    setIsReaggregatable: scala.Boolean => Field,
+    setName: java.lang.String => Field,
+    setType: FieldType => Field
   ): Field = {
-    val __obj = js.Dynamic.literal(getAggregation = getAggregation, getDescription = getDescription, getFormula = getFormula, getGroup = getGroup, getId = getId, getIsReaggregatable = getIsReaggregatable, getName = getName, getType = getType, isDefault = isDefault, isDimension = isDimension, isHidden = isHidden, isMetric = isMetric, setAggregation = setAggregation, setDescription = setDescription, setFormula = setFormula, setGroup = setGroup, setId = setId, setIsHidden = setIsHidden, setIsReaggregatable = setIsReaggregatable, setName = setName, setType = setType)
+    val __obj = js.Dynamic.literal(getAggregation = js.Any.fromFunction0(getAggregation), getDescription = js.Any.fromFunction0(getDescription), getFormula = js.Any.fromFunction0(getFormula), getGroup = js.Any.fromFunction0(getGroup), getId = js.Any.fromFunction0(getId), getIsReaggregatable = js.Any.fromFunction0(getIsReaggregatable), getName = js.Any.fromFunction0(getName), getType = js.Any.fromFunction0(getType), isDefault = js.Any.fromFunction0(isDefault), isDimension = js.Any.fromFunction0(isDimension), isHidden = js.Any.fromFunction0(isHidden), isMetric = js.Any.fromFunction0(isMetric), setAggregation = js.Any.fromFunction1(setAggregation), setDescription = js.Any.fromFunction1(setDescription), setFormula = js.Any.fromFunction1(setFormula), setGroup = js.Any.fromFunction1(setGroup), setId = js.Any.fromFunction1(setId), setIsHidden = js.Any.fromFunction1(setIsHidden), setIsReaggregatable = js.Any.fromFunction1(setIsReaggregatable), setName = js.Any.fromFunction1(setName), setType = js.Any.fromFunction1(setType))
   
     __obj.asInstanceOf[Field]
   }

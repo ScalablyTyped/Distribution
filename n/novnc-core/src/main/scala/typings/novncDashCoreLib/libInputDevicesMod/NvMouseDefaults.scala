@@ -25,21 +25,15 @@ object NvMouseDefaults {
   @scala.inline
   def apply(
     focused: js.UndefOr[scala.Boolean] = js.undefined,
-    onMouseButton: js.Function4[
-      /* x */ scala.Double, 
-      /* y */ scala.Double, 
-      /* down */ scala.Boolean, 
-      /* bmask */ scala.Double, 
-      scala.Unit
-    ] = null,
-    onMouseMove: js.Function2[/* x */ scala.Double, /* y */ scala.Double, scala.Unit] = null,
+    onMouseButton: (/* x */ scala.Double, /* y */ scala.Double, /* down */ scala.Boolean, /* bmask */ scala.Double) => scala.Unit = null,
+    onMouseMove: (/* x */ scala.Double, /* y */ scala.Double) => scala.Unit = null,
     target: stdLib.Element = null,
     touchButton: scala.Int | scala.Double = null
   ): NvMouseDefaults = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused)
-    if (onMouseButton != null) __obj.updateDynamic("onMouseButton")(onMouseButton)
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
+    if (onMouseButton != null) __obj.updateDynamic("onMouseButton")(js.Any.fromFunction4(onMouseButton))
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction2(onMouseMove))
     if (target != null) __obj.updateDynamic("target")(target)
     if (touchButton != null) __obj.updateDynamic("touchButton")(touchButton.asInstanceOf[js.Any])
     __obj.asInstanceOf[NvMouseDefaults]

@@ -38,7 +38,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The name or the unique stack ID that is associated with the stack.
       */
-    var StackName: StackName
+    var StackName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackName
   }
   
   trait Change extends js.Object {
@@ -127,7 +127,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The name of the change set. The name must be unique among all change sets that are associated with the specified stack. A change set name can contain only alphanumeric, case sensitive characters and hyphens. It must start with an alphabetic character and cannot exceed 128 characters.
       */
-    var ChangeSetName: ChangeSetName
+    var ChangeSetName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.ChangeSetName
     /**
       * The type of change set operation. To create a change set for a new stack, specify CREATE. To create a change set for an existing stack, specify UPDATE. If you create a change set for a new stack, AWS Cloudformation creates a stack with a unique stack ID, but no template or resources. The stack will be in the  REVIEW_IN_PROGRESS  state until you execute the change set. By default, AWS CloudFormation specifies UPDATE. You can't use the UPDATE type to create a change set for a new stack or the CREATE type to create a change set for an existing stack.
       */
@@ -237,7 +237,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The name that is associated with the stack. The name must be unique in the region in which you are creating the stack.  A stack name can contain only alphanumeric characters (case sensitive) and hyphens. It must start with an alphabetic character and cannot be longer than 128 characters. 
       */
-    var StackName: StackName
+    var StackName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackName
     /**
       * Structure containing the stack policy body. For more information, go to  Prevent Updates to Stack Resources in the AWS CloudFormation User Guide. You can specify either the StackPolicyBody or the StackPolicyURL parameter, but not both.
       */
@@ -288,7 +288,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The name or unique ID of the stack set that you want to create stack instances from.
       */
-    var StackSetName: StackSetName
+    var StackSetName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackSetName
   }
   
   trait CreateStackInstancesOutput extends js.Object {
@@ -333,7 +333,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The name to associate with the stack set. The name must be unique in the region where you create your stack set.  A stack name can contain only alphanumeric characters (case-sensitive) and hyphens. It must start with an alphabetic character and can't be longer than 128 characters. 
       */
-    var StackSetName: StackSetName
+    var StackSetName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackSetName
     /**
       * The key-value pairs to associate with this stack set and the stacks created from it. AWS CloudFormation also propagates these tags to supported resources that are created in the stacks. A maximum number of 50 tags can be specified. If you specify tags as part of a CreateStackSet action, AWS CloudFormation checks to see if you have the required IAM permission to tag resources. If you don't, the entire CreateStackSet action fails with an access denied error, and the stack set is not created.
       */
@@ -384,7 +384,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The name or the unique stack ID that is associated with the stack.
       */
-    var StackName: StackName
+    var StackName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackName
   }
   
   trait DeleteStackInstancesInput extends js.Object {
@@ -407,11 +407,11 @@ object CloudFormationNs extends js.Object {
     /**
       * Removes the stack instances from the specified stack set, but doesn't delete the stacks. You can't reassociate a retained stack or add an existing, saved stack to a new stack set. For more information, see Stack set operation options.
       */
-    var RetainStacks: RetainStacks
+    var RetainStacks: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.RetainStacks
     /**
       * The name or unique ID of the stack set that you want to delete stack instances for.
       */
-    var StackSetName: StackSetName
+    var StackSetName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackSetName
   }
   
   trait DeleteStackInstancesOutput extends js.Object {
@@ -425,7 +425,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The name or unique ID of the stack set that you're deleting. You can obtain this value by running ListStackSets.
       */
-    var StackSetName: StackSetName
+    var StackSetName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackSetName
   }
   
   trait DeleteStackSetOutput extends js.Object
@@ -534,7 +534,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The ID of the drift detection results of this operation.  AWS CloudFormation generates new results, with a new drift detection ID, each time this operation is run. However, the number of drift results AWS CloudFormation retains for any given stack, and for how long, may vary. 
       */
-    var StackDriftDetectionId: StackDriftDetectionId
+    var StackDriftDetectionId: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackDriftDetectionId
   }
   
   trait DescribeStackDriftDetectionStatusOutput extends js.Object {
@@ -553,7 +553,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The ID of the drift detection results of this operation.  AWS CloudFormation generates new results, with a new drift detection ID, each time this operation is run. However, the number of reports AWS CloudFormation retains for any given stack, and for how long, may vary.
       */
-    var StackDriftDetectionId: StackDriftDetectionId
+    var StackDriftDetectionId: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackDriftDetectionId
     /**
       * Status of the stack's actual configuration compared to its expected configuration.     DRIFTED: The stack differs from its expected template configuration. A stack is considered to have drifted if one or more of its resources have drifted.    NOT_CHECKED: AWS CloudFormation has not checked if the stack differs from its expected template configuration.    IN_SYNC: The stack's actual configuration matches its expected template configuration.    UNKNOWN: This value is reserved for future use.  
       */
@@ -561,11 +561,11 @@ object CloudFormationNs extends js.Object {
     /**
       * The ID of the stack.
       */
-    var StackId: StackId
+    var StackId: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackId
     /**
       * Time at which the stack drift detection operation was initiated.
       */
-    var Timestamp: Timestamp
+    var Timestamp: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.Timestamp
   }
   
   trait DescribeStackEventsInput extends js.Object {
@@ -602,7 +602,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The name or the unique stack ID of the stack set that you want to get stack instance information for.
       */
-    var StackSetName: StackSetName
+    var StackSetName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackSetName
   }
   
   trait DescribeStackInstanceOutput extends js.Object {
@@ -639,18 +639,18 @@ object CloudFormationNs extends js.Object {
     /**
       * Drift information for the resources that have been checked for drift in the specified stack. This includes actual and expected configuration values for resources where AWS CloudFormation detects drift. For a given stack, there will be one StackResourceDrift for each stack resource that has been checked for drift. Resources that have not yet been checked for drift are not included. Resources that do not currently support drift detection are not checked, and so not included. For a list of resources that support drift detection, see Resources that Support Drift Detection.
       */
-    var StackResourceDrifts: StackResourceDrifts
+    var StackResourceDrifts: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackResourceDrifts
   }
   
   trait DescribeStackResourceInput extends js.Object {
     /**
       * The logical name of the resource as specified in the template. Default: There is no default value.
       */
-    var LogicalResourceId: LogicalResourceId
+    var LogicalResourceId: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.LogicalResourceId
     /**
       * The name or the unique stack ID that is associated with the stack, which are not always interchangeable:   Running stacks: You can specify either the stack's name or its unique stack ID.   Deleted stacks: You must specify the unique stack ID.   Default: There is no default value.
       */
-    var StackName: StackName
+    var StackName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackName
   }
   
   trait DescribeStackResourceOutput extends js.Object {
@@ -686,7 +686,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The name or unique ID of the stack set whose description you want.
       */
-    var StackSetName: StackSetName
+    var StackSetName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackSetName
   }
   
   trait DescribeStackSetOperationInput extends js.Object {
@@ -697,7 +697,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The name or the unique stack ID of the stack set for the stack operation.
       */
-    var StackSetName: StackSetName
+    var StackSetName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackSetName
   }
   
   trait DescribeStackSetOperationOutput extends js.Object {
@@ -751,14 +751,14 @@ object CloudFormationNs extends js.Object {
     /**
       * The ID of the drift detection results of this operation.  AWS CloudFormation generates new results, with a new drift detection ID, each time this operation is run. However, the number of drift results AWS CloudFormation retains for any given stack, and for how long, may vary. 
       */
-    var StackDriftDetectionId: StackDriftDetectionId
+    var StackDriftDetectionId: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackDriftDetectionId
   }
   
   trait DetectStackResourceDriftInput extends js.Object {
     /**
       * The logical name of the resource for which to return drift information.
       */
-    var LogicalResourceId: LogicalResourceId
+    var LogicalResourceId: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.LogicalResourceId
     /**
       * The name of the stack to which the resource belongs.
       */
@@ -769,7 +769,7 @@ object CloudFormationNs extends js.Object {
     /**
       * Information about whether the resource's actual configuration has drifted from its expected template configuration, including actual and expected property values and any differences detected.
       */
-    var StackResourceDrift: StackResourceDrift
+    var StackResourceDrift: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackResourceDrift
   }
   
   trait EstimateTemplateCostInput extends js.Object {
@@ -830,7 +830,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The name or unique stack ID that is associated with the stack whose policy you want to get.
       */
-    var StackName: StackName
+    var StackName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackName
   }
   
   trait GetStackPolicyOutput extends js.Object {
@@ -964,7 +964,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The name of the exported output value. AWS CloudFormation returns the stack names that are importing this value. 
       */
-    var ExportName: ExportName
+    var ExportName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.ExportName
     /**
       * A string (provided by the ListImports response output) that identifies the next page of stacks that are importing the specified exported output value. 
       */
@@ -1002,7 +1002,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The name or unique ID of the stack set that you want to list stack instances for.
       */
-    var StackSetName: StackSetName
+    var StackSetName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackSetName
   }
   
   trait ListStackInstancesOutput extends js.Object {
@@ -1024,7 +1024,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The name or the unique stack ID that is associated with the stack, which are not always interchangeable:   Running stacks: You can specify either the stack's name or its unique stack ID.   Deleted stacks: You must specify the unique stack ID.   Default: There is no default value.
       */
-    var StackName: StackName
+    var StackName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackName
   }
   
   trait ListStackResourcesOutput extends js.Object {
@@ -1054,7 +1054,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The name or unique ID of the stack set that you want to get operation results for.
       */
-    var StackSetName: StackSetName
+    var StackSetName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackSetName
   }
   
   trait ListStackSetOperationResultsOutput extends js.Object {
@@ -1080,7 +1080,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The name or unique ID of the stack set that you want to get operation summaries for.
       */
-    var StackSetName: StackSetName
+    var StackSetName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackSetName
   }
   
   trait ListStackSetOperationsOutput extends js.Object {
@@ -1218,11 +1218,11 @@ object CloudFormationNs extends js.Object {
     /**
       * The resource context key.
       */
-    var Key: Key
+    var Key: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.Key
     /**
       * The resource context value.
       */
-    var Value: Value
+    var Value: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.Value
   }
   
   trait PropertyDifference extends js.Object {
@@ -1233,7 +1233,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The type of property difference.    ADD: A value has been added to a resource property that is an array or list data type.    REMOVE: The property has been removed from the current resource configuration.    NOT_EQUAL: The current property value differs from its expected value (as defined in the stack template and any values specified as template parameters).  
       */
-    var DifferenceType: DifferenceType
+    var DifferenceType: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DifferenceType
     /**
       * The expected property value of the resource property, as defined in the stack template and any values specified as template parameters.
       */
@@ -1241,7 +1241,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The fully-qualified path to the resource property.
       */
-    var PropertyPath: PropertyPath
+    var PropertyPath: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.PropertyPath
   }
   
   trait ResourceChange extends js.Object {
@@ -1324,18 +1324,18 @@ object CloudFormationNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the rollback trigger. If a specified trigger is missing, the entire stack operation fails and is rolled back. 
       */
-    var Arn: Arn
+    var Arn: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.Arn
     /**
       * The resource type of the rollback trigger. Currently, AWS::CloudWatch::Alarm is the only supported resource type.
       */
-    var Type: Type
+    var Type: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.Type
   }
   
   trait SetStackPolicyInput extends js.Object {
     /**
       * The name or unique stack ID that you want to associate a policy with.
       */
-    var StackName: StackName
+    var StackName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackName
     /**
       * Structure containing the stack policy body. For more information, go to  Prevent Updates to Stack Resources in the AWS CloudFormation User Guide. You can specify either the StackPolicyBody or the StackPolicyURL parameter, but not both.
       */
@@ -1350,7 +1350,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The logical ID of the resource that you want to signal. The logical ID is the name of the resource that given in the template.
       */
-    var LogicalResourceId: LogicalResourceId
+    var LogicalResourceId: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.LogicalResourceId
     /**
       * The stack name or unique stack ID that includes the resource that you want to signal.
       */
@@ -1377,7 +1377,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The time at which the stack was created.
       */
-    var CreationTime: CreationTime
+    var CreationTime: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.CreationTime
     /**
       * The time the stack was deleted.
       */
@@ -1437,11 +1437,11 @@ object CloudFormationNs extends js.Object {
     /**
       * The name associated with the stack.
       */
-    var StackName: StackName
+    var StackName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackName
     /**
       * Current status of the stack.
       */
-    var StackStatus: StackStatus
+    var StackStatus: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackStatus
     /**
       * Success/failure message associated with the stack status.
       */
@@ -1464,7 +1464,7 @@ object CloudFormationNs extends js.Object {
     /**
       * Status of the stack's actual configuration compared to its expected template configuration.     DRIFTED: The stack differs from its expected template configuration. A stack is considered to have drifted if one or more of its resources have drifted.    NOT_CHECKED: AWS CloudFormation has not checked if the stack differs from its expected template configuration.    IN_SYNC: The stack's actual configuration matches its expected template configuration.    UNKNOWN: This value is reserved for future use.  
       */
-    var StackDriftStatus: StackDriftStatus
+    var StackDriftStatus: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackDriftStatus
   }
   
   trait StackDriftInformationSummary extends js.Object {
@@ -1475,7 +1475,7 @@ object CloudFormationNs extends js.Object {
     /**
       * Status of the stack's actual configuration compared to its expected template configuration.     DRIFTED: The stack differs from its expected template configuration. A stack is considered to have drifted if one or more of its resources have drifted.    NOT_CHECKED: AWS CloudFormation has not checked if the stack differs from its expected template configuration.    IN_SYNC: The stack's actual configuration matches its expected template configuration.    UNKNOWN: This value is reserved for future use.  
       */
-    var StackDriftStatus: StackDriftStatus
+    var StackDriftStatus: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackDriftStatus
   }
   
   trait StackEvent extends js.Object {
@@ -1486,7 +1486,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The unique ID of this event.
       */
-    var EventId: EventId
+    var EventId: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.EventId
     /**
       * The logical name of the resource specified in the template.
       */
@@ -1514,15 +1514,15 @@ object CloudFormationNs extends js.Object {
     /**
       * The unique ID name of the instance of the stack.
       */
-    var StackId: StackId
+    var StackId: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackId
     /**
       * The name associated with a stack.
       */
-    var StackName: StackName
+    var StackName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackName
     /**
       * Time the status was updated.
       */
-    var Timestamp: Timestamp
+    var Timestamp: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.Timestamp
   }
   
   trait StackInstance extends js.Object {
@@ -1595,7 +1595,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The logical name of the resource specified in the template.
       */
-    var LogicalResourceId: LogicalResourceId
+    var LogicalResourceId: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.LogicalResourceId
     /**
       * The name or unique identifier that corresponds to a physical instance ID of a resource supported by AWS CloudFormation.
       */
@@ -1603,7 +1603,7 @@ object CloudFormationNs extends js.Object {
     /**
       * Current status of the resource.
       */
-    var ResourceStatus: ResourceStatus
+    var ResourceStatus: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.ResourceStatus
     /**
       * Success/failure message associated with the resource.
       */
@@ -1611,7 +1611,7 @@ object CloudFormationNs extends js.Object {
     /**
       * Type of resource. (For more information, go to  AWS Resource Types Reference in the AWS CloudFormation User Guide.)
       */
-    var ResourceType: ResourceType
+    var ResourceType: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.ResourceType
     /**
       * Unique identifier of the stack.
       */
@@ -1623,7 +1623,7 @@ object CloudFormationNs extends js.Object {
     /**
       * Time the status was updated.
       */
-    var Timestamp: Timestamp
+    var Timestamp: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.Timestamp
   }
   
   trait StackResourceDetail extends js.Object {
@@ -1642,7 +1642,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The logical name of the resource specified in the template.
       */
-    var LogicalResourceId: LogicalResourceId
+    var LogicalResourceId: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.LogicalResourceId
     /**
       * The content of the Metadata attribute declared for the resource. For more information, see Metadata Attribute in the AWS CloudFormation User Guide.
       */
@@ -1654,7 +1654,7 @@ object CloudFormationNs extends js.Object {
     /**
       * Current status of the resource.
       */
-    var ResourceStatus: ResourceStatus
+    var ResourceStatus: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.ResourceStatus
     /**
       * Success/failure message associated with the resource.
       */
@@ -1662,7 +1662,7 @@ object CloudFormationNs extends js.Object {
     /**
       * Type of resource. ((For more information, go to  AWS Resource Types Reference in the AWS CloudFormation User Guide.)
       */
-    var ResourceType: ResourceType
+    var ResourceType: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.ResourceType
     /**
       * Unique identifier of the stack.
       */
@@ -1685,7 +1685,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The logical name of the resource specified in the template.
       */
-    var LogicalResourceId: LogicalResourceId
+    var LogicalResourceId: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.LogicalResourceId
     /**
       * The name or unique identifier that corresponds to a physical instance ID of a resource supported by AWS CloudFormation. 
       */
@@ -1701,19 +1701,19 @@ object CloudFormationNs extends js.Object {
     /**
       * The type of the resource.
       */
-    var ResourceType: ResourceType
+    var ResourceType: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.ResourceType
     /**
       * The ID of the stack.
       */
-    var StackId: StackId
+    var StackId: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackId
     /**
       * Status of the resource's actual configuration compared to its expected configuration    DELETED: The resource differs from its expected template configuration because the resource has been deleted.    MODIFIED: One or more resource properties differ from their expected values (as defined in the stack template and any values specified as template parameters).    IN_SYNC: The resources's actual configuration matches its expected template configuration.    NOT_CHECKED: AWS CloudFormation does not currently return this value.  
       */
-    var StackResourceDriftStatus: StackResourceDriftStatus
+    var StackResourceDriftStatus: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackResourceDriftStatus
     /**
       * Time at which AWS CloudFormation performed drift detection on the stack resource.
       */
-    var Timestamp: Timestamp
+    var Timestamp: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.Timestamp
   }
   
   trait StackResourceDriftInformation extends js.Object {
@@ -1724,7 +1724,7 @@ object CloudFormationNs extends js.Object {
     /**
       * Status of the resource's actual configuration compared to its expected configuration    DELETED: The resource differs from its expected configuration in that it has been deleted.    MODIFIED: The resource differs from its expected configuration.    NOT_CHECKED: AWS CloudFormation has not checked if the resource differs from its expected configuration. Any resources that do not currently support drift detection have a status of NOT_CHECKED. For more information, see Resources that Support Drift Detection.     IN_SYNC: The resources's actual configuration matches its expected configuration.  
       */
-    var StackResourceDriftStatus: StackResourceDriftStatus
+    var StackResourceDriftStatus: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackResourceDriftStatus
   }
   
   trait StackResourceDriftInformationSummary extends js.Object {
@@ -1735,7 +1735,7 @@ object CloudFormationNs extends js.Object {
     /**
       * Status of the resource's actual configuration compared to its expected configuration    DELETED: The resource differs from its expected configuration in that it has been deleted.    MODIFIED: The resource differs from its expected configuration.    NOT_CHECKED: AWS CloudFormation has not checked if the resource differs from its expected configuration. Any resources that do not currently support drift detection have a status of NOT_CHECKED. For more information, see Resources that Support Drift Detection. If you performed an ContinueUpdateRollback operation on a stack, any resources included in ResourcesToSkip will also have a status of NOT_CHECKED. For more information on skipping resources during rollback operations, see Continue Rolling Back an Update in the AWS CloudFormation User Guide.    IN_SYNC: The resources's actual configuration matches its expected configuration.  
       */
-    var StackResourceDriftStatus: StackResourceDriftStatus
+    var StackResourceDriftStatus: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackResourceDriftStatus
   }
   
   trait StackResourceSummary extends js.Object {
@@ -1750,7 +1750,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The logical name of the resource specified in the template.
       */
-    var LogicalResourceId: LogicalResourceId
+    var LogicalResourceId: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.LogicalResourceId
     /**
       * The name or unique identifier that corresponds to a physical instance ID of the resource.
       */
@@ -1758,7 +1758,7 @@ object CloudFormationNs extends js.Object {
     /**
       * Current status of the resource.
       */
-    var ResourceStatus: ResourceStatus
+    var ResourceStatus: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.ResourceStatus
     /**
       * Success/failure message associated with the resource.
       */
@@ -1766,7 +1766,7 @@ object CloudFormationNs extends js.Object {
     /**
       * Type of resource. (For more information, go to  AWS Resource Types Reference in the AWS CloudFormation User Guide.)
       */
-    var ResourceType: ResourceType
+    var ResourceType: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.ResourceType
   }
   
   trait StackSet extends js.Object {
@@ -1951,7 +1951,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The time the stack was created.
       */
-    var CreationTime: CreationTime
+    var CreationTime: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.CreationTime
     /**
       * The time the stack was deleted.
       */
@@ -1979,11 +1979,11 @@ object CloudFormationNs extends js.Object {
     /**
       * The name associated with the stack.
       */
-    var StackName: StackName
+    var StackName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackName
     /**
       * The current status of the stack.
       */
-    var StackStatus: StackStatus
+    var StackStatus: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackStatus
     /**
       * Success/Failure message associated with the stack status.
       */
@@ -2002,7 +2002,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The name or unique ID of the stack set that you want to stop the operation for.
       */
-    var StackSetName: StackSetName
+    var StackSetName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackSetName
   }
   
   trait StopStackSetOperationOutput extends js.Object
@@ -3239,7 +3239,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The name or unique stack ID of the stack to update.
       */
-    var StackName: StackName
+    var StackName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackName
     /**
       * Structure containing a new stack policy body. You can specify either the StackPolicyBody or the StackPolicyURL parameter, but not both. You might update the stack policy, for example, in order to protect a new resource that you created during a stack update. If you do not specify a stack policy, the current policy that is associated with the stack is unchanged.
       */
@@ -3355,7 +3355,7 @@ object CloudFormationNs extends js.Object {
     /**
       * The name or unique ID of the stack set that you want to update.
       */
-    var StackSetName: StackSetName
+    var StackSetName: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.StackSetName
     /**
       * The key-value pairs to associate with this stack set and the stacks created from it. AWS CloudFormation also propagates these tags to supported resources that are created in the stacks. You can specify a maximum number of 50 tags. If you specify tags for this parameter, those tags replace any list of tags that are currently associated with this stack set. This means:   If you don't specify this parameter, AWS CloudFormation doesn't modify the stack's tags.    If you specify any tags using this parameter, you must specify all the tags that you want associated with this stack set, even tags you've specifed before (for example, when creating the stack set or during a previous update of the stack set.). Any tags that you don't include in the updated list of tags are removed from the stack set, and therefore from the stacks and resources as well.    If you specify an empty value, AWS CloudFormation removes all currently associated tags.   If you specify new tags as part of an UpdateStackSet action, AWS CloudFormation checks to see if you have the required IAM permission to tag resources. If you omit tags that are currently associated with the stack set from the list of tags you specify, AWS CloudFormation assumes that you want to remove those tags from the stack set, and checks to see if you have permission to untag resources. If you don't have the necessary permission(s), the entire UpdateStackSet action fails with an access denied error, and the stack set is not updated.
       */
@@ -3385,7 +3385,7 @@ object CloudFormationNs extends js.Object {
     /**
       * Whether to enable termination protection on the specified stack.
       */
-    var EnableTerminationProtection: EnableTerminationProtection
+    var EnableTerminationProtection: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.EnableTerminationProtection
     /**
       * The name or unique ID of the stack for which you want to set termination protection.
       */

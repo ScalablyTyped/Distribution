@@ -65,11 +65,11 @@ object PhotoGalleryOptionsType {
     animated: js.UndefOr[scala.Boolean] = js.undefined,
     arrowDirection: scala.Int | scala.Double = null,
     autohide: js.UndefOr[scala.Boolean] = js.undefined,
-    cancel: js.Function1[/* param0 */ FailureResponse, _] = null,
-    error: js.Function1[/* param0 */ FailureResponse, _] = null,
+    cancel: /* param0 */ FailureResponse => _ = null,
+    error: /* param0 */ FailureResponse => _ = null,
     mediaTypes: js.Array[java.lang.String] = null,
     popoverView: titaniumLib.TitaniumNs.UINs.View = null,
-    success: js.Function1[/* param0 */ CameraMediaItemType, _] = null
+    success: /* param0 */ CameraMediaItemType => _ = null
   ): PhotoGalleryOptionsType = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing)
@@ -77,11 +77,11 @@ object PhotoGalleryOptionsType {
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
     if (arrowDirection != null) __obj.updateDynamic("arrowDirection")(arrowDirection.asInstanceOf[js.Any])
     if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (mediaTypes != null) __obj.updateDynamic("mediaTypes")(mediaTypes)
     if (popoverView != null) __obj.updateDynamic("popoverView")(popoverView)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[PhotoGalleryOptionsType]
   }
 }

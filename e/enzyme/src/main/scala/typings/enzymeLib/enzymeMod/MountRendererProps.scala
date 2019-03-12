@@ -9,7 +9,7 @@ trait MountRendererProps extends js.Object {
   /**
     * DOM Element to attach the component to
     */
-  var attachTo: js.UndefOr[reactLib.HTMLElement | scala.Null] = js.undefined
+  var attachTo: js.UndefOr[stdLib.HTMLElement | scala.Null] = js.undefined
   /**
     * Merged contextTypes for all children of the wrapper
     */
@@ -23,7 +23,7 @@ trait MountRendererProps extends js.Object {
 object MountRendererProps {
   @scala.inline
   def apply(
-    attachTo: reactLib.HTMLElement = null,
+    attachTo: stdLib.HTMLElement = null,
     childContextTypes: js.Object = null,
     context: js.Object = null
   ): MountRendererProps = {

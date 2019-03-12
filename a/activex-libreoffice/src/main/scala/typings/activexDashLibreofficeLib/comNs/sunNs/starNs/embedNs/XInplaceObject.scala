@@ -47,21 +47,14 @@ trait XInplaceObject
 object XInplaceObject {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    enableModeless: js.Function1[scala.Boolean, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setObjectRectangles: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, 
-      scala.Unit
-    ],
-    translateAccelerators: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent], 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    enableModeless: scala.Boolean => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setObjectRectangles: (activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle) => scala.Unit,
+    translateAccelerators: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent] => scala.Unit
   ): XInplaceObject = {
-    val __obj = js.Dynamic.literal(acquire = acquire, enableModeless = enableModeless, queryInterface = queryInterface, release = release, setObjectRectangles = setObjectRectangles, translateAccelerators = translateAccelerators)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), enableModeless = js.Any.fromFunction1(enableModeless), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setObjectRectangles = js.Any.fromFunction2(setObjectRectangles), translateAccelerators = js.Any.fromFunction1(translateAccelerators))
   
     __obj.asInstanceOf[XInplaceObject]
   }

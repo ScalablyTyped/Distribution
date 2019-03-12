@@ -24,18 +24,18 @@ trait XCompatibilityNames
     * which contains first the entry representing the current locale. `TRUE`
     * @param aProgrammaticName is the exact name of a method within its interface.
     */
-  def getCompatibilityNames(aProgrammaticName: java.lang.String): activexDashInteropLib.SafeArray[LocalizedName]
+  def getCompatibilityNames(aProgrammaticName: java.lang.String): stdLib.SafeArray[LocalizedName]
 }
 
 object XCompatibilityNames {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getCompatibilityNames: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[LocalizedName]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getCompatibilityNames: java.lang.String => stdLib.SafeArray[LocalizedName],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCompatibilityNames = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getCompatibilityNames = getCompatibilityNames, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getCompatibilityNames = js.Any.fromFunction1(getCompatibilityNames), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCompatibilityNames]
   }

@@ -102,86 +102,34 @@ trait PanResponderCallbacks extends js.Object {
 object PanResponderCallbacks {
   @scala.inline
   def apply(
-    onMoveShouldSetPanResponder: js.Function2[
-      /* e */ GestureResponderEvent, 
-      /* gestureState */ PanResponderGestureState, 
-      scala.Boolean
-    ] = null,
-    onMoveShouldSetPanResponderCapture: js.Function2[
-      /* e */ GestureResponderEvent, 
-      /* gestureState */ PanResponderGestureState, 
-      scala.Boolean
-    ] = null,
-    onPanResponderEnd: js.Function2[
-      /* e */ GestureResponderEvent, 
-      /* gestureState */ PanResponderGestureState, 
-      scala.Unit
-    ] = null,
-    onPanResponderGrant: js.Function2[
-      /* e */ GestureResponderEvent, 
-      /* gestureState */ PanResponderGestureState, 
-      scala.Unit
-    ] = null,
-    onPanResponderMove: js.Function2[
-      /* e */ GestureResponderEvent, 
-      /* gestureState */ PanResponderGestureState, 
-      scala.Unit
-    ] = null,
-    onPanResponderReject: js.Function2[
-      /* e */ GestureResponderEvent, 
-      /* gestureState */ PanResponderGestureState, 
-      scala.Unit
-    ] = null,
-    onPanResponderRelease: js.Function2[
-      /* e */ GestureResponderEvent, 
-      /* gestureState */ PanResponderGestureState, 
-      scala.Unit
-    ] = null,
-    onPanResponderStart: js.Function2[
-      /* e */ GestureResponderEvent, 
-      /* gestureState */ PanResponderGestureState, 
-      scala.Unit
-    ] = null,
-    onPanResponderTerminate: js.Function2[
-      /* e */ GestureResponderEvent, 
-      /* gestureState */ PanResponderGestureState, 
-      scala.Unit
-    ] = null,
-    onPanResponderTerminationRequest: js.Function2[
-      /* e */ GestureResponderEvent, 
-      /* gestureState */ PanResponderGestureState, 
-      scala.Boolean
-    ] = null,
-    onShouldBlockNativeResponder: js.Function2[
-      /* e */ GestureResponderEvent, 
-      /* gestureState */ PanResponderGestureState, 
-      scala.Boolean
-    ] = null,
-    onStartShouldSetPanResponder: js.Function2[
-      /* e */ GestureResponderEvent, 
-      /* gestureState */ PanResponderGestureState, 
-      scala.Boolean
-    ] = null,
-    onStartShouldSetPanResponderCapture: js.Function2[
-      /* e */ GestureResponderEvent, 
-      /* gestureState */ PanResponderGestureState, 
-      scala.Boolean
-    ] = null
+    onMoveShouldSetPanResponder: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => scala.Boolean = null,
+    onMoveShouldSetPanResponderCapture: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => scala.Boolean = null,
+    onPanResponderEnd: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => scala.Unit = null,
+    onPanResponderGrant: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => scala.Unit = null,
+    onPanResponderMove: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => scala.Unit = null,
+    onPanResponderReject: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => scala.Unit = null,
+    onPanResponderRelease: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => scala.Unit = null,
+    onPanResponderStart: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => scala.Unit = null,
+    onPanResponderTerminate: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => scala.Unit = null,
+    onPanResponderTerminationRequest: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => scala.Boolean = null,
+    onShouldBlockNativeResponder: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => scala.Boolean = null,
+    onStartShouldSetPanResponder: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => scala.Boolean = null,
+    onStartShouldSetPanResponderCapture: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => scala.Boolean = null
   ): PanResponderCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (onMoveShouldSetPanResponder != null) __obj.updateDynamic("onMoveShouldSetPanResponder")(onMoveShouldSetPanResponder)
-    if (onMoveShouldSetPanResponderCapture != null) __obj.updateDynamic("onMoveShouldSetPanResponderCapture")(onMoveShouldSetPanResponderCapture)
-    if (onPanResponderEnd != null) __obj.updateDynamic("onPanResponderEnd")(onPanResponderEnd)
-    if (onPanResponderGrant != null) __obj.updateDynamic("onPanResponderGrant")(onPanResponderGrant)
-    if (onPanResponderMove != null) __obj.updateDynamic("onPanResponderMove")(onPanResponderMove)
-    if (onPanResponderReject != null) __obj.updateDynamic("onPanResponderReject")(onPanResponderReject)
-    if (onPanResponderRelease != null) __obj.updateDynamic("onPanResponderRelease")(onPanResponderRelease)
-    if (onPanResponderStart != null) __obj.updateDynamic("onPanResponderStart")(onPanResponderStart)
-    if (onPanResponderTerminate != null) __obj.updateDynamic("onPanResponderTerminate")(onPanResponderTerminate)
-    if (onPanResponderTerminationRequest != null) __obj.updateDynamic("onPanResponderTerminationRequest")(onPanResponderTerminationRequest)
-    if (onShouldBlockNativeResponder != null) __obj.updateDynamic("onShouldBlockNativeResponder")(onShouldBlockNativeResponder)
-    if (onStartShouldSetPanResponder != null) __obj.updateDynamic("onStartShouldSetPanResponder")(onStartShouldSetPanResponder)
-    if (onStartShouldSetPanResponderCapture != null) __obj.updateDynamic("onStartShouldSetPanResponderCapture")(onStartShouldSetPanResponderCapture)
+    if (onMoveShouldSetPanResponder != null) __obj.updateDynamic("onMoveShouldSetPanResponder")(js.Any.fromFunction2(onMoveShouldSetPanResponder))
+    if (onMoveShouldSetPanResponderCapture != null) __obj.updateDynamic("onMoveShouldSetPanResponderCapture")(js.Any.fromFunction2(onMoveShouldSetPanResponderCapture))
+    if (onPanResponderEnd != null) __obj.updateDynamic("onPanResponderEnd")(js.Any.fromFunction2(onPanResponderEnd))
+    if (onPanResponderGrant != null) __obj.updateDynamic("onPanResponderGrant")(js.Any.fromFunction2(onPanResponderGrant))
+    if (onPanResponderMove != null) __obj.updateDynamic("onPanResponderMove")(js.Any.fromFunction2(onPanResponderMove))
+    if (onPanResponderReject != null) __obj.updateDynamic("onPanResponderReject")(js.Any.fromFunction2(onPanResponderReject))
+    if (onPanResponderRelease != null) __obj.updateDynamic("onPanResponderRelease")(js.Any.fromFunction2(onPanResponderRelease))
+    if (onPanResponderStart != null) __obj.updateDynamic("onPanResponderStart")(js.Any.fromFunction2(onPanResponderStart))
+    if (onPanResponderTerminate != null) __obj.updateDynamic("onPanResponderTerminate")(js.Any.fromFunction2(onPanResponderTerminate))
+    if (onPanResponderTerminationRequest != null) __obj.updateDynamic("onPanResponderTerminationRequest")(js.Any.fromFunction2(onPanResponderTerminationRequest))
+    if (onShouldBlockNativeResponder != null) __obj.updateDynamic("onShouldBlockNativeResponder")(js.Any.fromFunction2(onShouldBlockNativeResponder))
+    if (onStartShouldSetPanResponder != null) __obj.updateDynamic("onStartShouldSetPanResponder")(js.Any.fromFunction2(onStartShouldSetPanResponder))
+    if (onStartShouldSetPanResponderCapture != null) __obj.updateDynamic("onStartShouldSetPanResponderCapture")(js.Any.fromFunction2(onStartShouldSetPanResponderCapture))
     __obj.asInstanceOf[PanResponderCallbacks]
   }
 }

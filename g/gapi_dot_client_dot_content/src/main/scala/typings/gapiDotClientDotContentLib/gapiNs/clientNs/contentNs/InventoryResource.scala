@@ -21,16 +21,10 @@ trait InventoryResource extends js.Object {
 object InventoryResource {
   @scala.inline
   def apply(
-    custombatch: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltDryRun, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InventoryCustomBatchResponse]
-    ],
-    set: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltDryRunFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InventorySetResponse]
-    ]
+    custombatch: gapiDotClientDotContentLib.Anon_AltDryRun => gapiDotClientLib.gapiNs.clientNs.Request[InventoryCustomBatchResponse],
+    set: gapiDotClientDotContentLib.Anon_AltDryRunFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[InventorySetResponse]
   ): InventoryResource = {
-    val __obj = js.Dynamic.literal(custombatch = custombatch, set = set)
+    val __obj = js.Dynamic.literal(custombatch = js.Any.fromFunction1(custombatch), set = js.Any.fromFunction1(set))
   
     __obj.asInstanceOf[InventoryResource]
   }

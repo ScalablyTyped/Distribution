@@ -12,8 +12,8 @@ trait Path extends js.Object {
 
 object Path {
   @scala.inline
-  def apply(d: java.lang.String, getBoundingBox: js.Function0[BoundingBoxView]): Path = {
-    val __obj = js.Dynamic.literal(d = d, getBoundingBox = getBoundingBox)
+  def apply(d: java.lang.String, getBoundingBox: () => BoundingBoxView): Path = {
+    val __obj = js.Dynamic.literal(d = d, getBoundingBox = js.Any.fromFunction0(getBoundingBox))
   
     __obj.asInstanceOf[Path]
   }

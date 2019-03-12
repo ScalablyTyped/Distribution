@@ -57,15 +57,15 @@ object predominanceRendererResult {
     basemapId: java.lang.String,
     constructor: js.Function,
     excludedCategoryInfos: js.Array[_],
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     predominanceScheme: PredominanceScheme,
     predominantCategoryInfos: js.Array[UniqueValueInfo],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     renderer: UniqueValueRenderer,
     opacity: opacityVisualVariableResult = null,
     size: sizeVisualVariableResult = null
   ): predominanceRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, excludedCategoryInfos = excludedCategoryInfos, hasOwnProperty = hasOwnProperty, predominanceScheme = predominanceScheme, predominantCategoryInfos = predominantCategoryInfos, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, excludedCategoryInfos = excludedCategoryInfos, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), predominanceScheme = predominanceScheme, predominantCategoryInfos = predominantCategoryInfos, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity)
     if (size != null) __obj.updateDynamic("size")(size)
     __obj.asInstanceOf[predominanceRendererResult]

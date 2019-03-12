@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait MaskGenerationFunction
   extends xmlDashCoreLib.xmlDashCoreMod.XmlObject {
   var Algorithm: java.lang.String = js.native
-  var DigestMethod: DigestMethod = js.native
+  var DigestMethod: xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.DigestMethod = js.native
 }
 

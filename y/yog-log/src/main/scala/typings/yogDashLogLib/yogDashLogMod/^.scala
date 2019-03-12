@@ -14,13 +14,13 @@ object ^ extends js.Object {
     /* next */ expressLib.expressMod.eNs.NextFunction, 
     _
   ] = js.native
-  def apply(config: yogDashLogLib.yogDashLogMod.LogConfig): js.Function3[
+  def apply(config: LogConfig): js.Function3[
     /* req */ expressLib.expressMod.eNs.Request, 
     /* resp */ expressLib.expressMod.eNs.Response, 
     /* next */ expressLib.expressMod.eNs.NextFunction, 
     _
   ] = js.native
   def getLogger(): yogDashLogLib.yogDashLogMod.yogUnderscoreLogNs.Logger = js.native
-  def getLogger(config: yogDashLogLib.yogDashLogMod.LogConfig): yogDashLogLib.yogDashLogMod.yogUnderscoreLogNs.Logger = js.native
+  def getLogger(config: LogConfig): yogDashLogLib.yogDashLogMod.yogUnderscoreLogNs.Logger = js.native
 }
 

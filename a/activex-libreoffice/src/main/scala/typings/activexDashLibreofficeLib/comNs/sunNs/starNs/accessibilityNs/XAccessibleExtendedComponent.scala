@@ -67,23 +67,23 @@ object XAccessibleExtendedComponent {
     Size: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
     TitledBorderText: java.lang.String,
     ToolTipText: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    containsPoint: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Boolean],
-    getAccessibleAtPoint: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, XAccessible],
-    getBackground: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color],
-    getBounds: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
-    getFont: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XFont],
-    getForeground: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color],
-    getLocation: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point],
-    getLocationOnScreen: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point],
-    getSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
-    getTitledBorderText: js.Function0[java.lang.String],
-    getToolTipText: js.Function0[java.lang.String],
-    grabFocus: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    containsPoint: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point => scala.Boolean,
+    getAccessibleAtPoint: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point => XAccessible,
+    getBackground: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    getBounds: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    getFont: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XFont,
+    getForeground: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    getLocation: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    getLocationOnScreen: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    getSize: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    getTitledBorderText: () => java.lang.String,
+    getToolTipText: () => java.lang.String,
+    grabFocus: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAccessibleExtendedComponent = {
-    val __obj = js.Dynamic.literal(Background = Background, Bounds = Bounds, Font = Font, Foreground = Foreground, Location = Location, LocationOnScreen = LocationOnScreen, Size = Size, TitledBorderText = TitledBorderText, ToolTipText = ToolTipText, acquire = acquire, containsPoint = containsPoint, getAccessibleAtPoint = getAccessibleAtPoint, getBackground = getBackground, getBounds = getBounds, getFont = getFont, getForeground = getForeground, getLocation = getLocation, getLocationOnScreen = getLocationOnScreen, getSize = getSize, getTitledBorderText = getTitledBorderText, getToolTipText = getToolTipText, grabFocus = grabFocus, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Background = Background, Bounds = Bounds, Font = Font, Foreground = Foreground, Location = Location, LocationOnScreen = LocationOnScreen, Size = Size, TitledBorderText = TitledBorderText, ToolTipText = ToolTipText, acquire = js.Any.fromFunction0(acquire), containsPoint = js.Any.fromFunction1(containsPoint), getAccessibleAtPoint = js.Any.fromFunction1(getAccessibleAtPoint), getBackground = js.Any.fromFunction0(getBackground), getBounds = js.Any.fromFunction0(getBounds), getFont = js.Any.fromFunction0(getFont), getForeground = js.Any.fromFunction0(getForeground), getLocation = js.Any.fromFunction0(getLocation), getLocationOnScreen = js.Any.fromFunction0(getLocationOnScreen), getSize = js.Any.fromFunction0(getSize), getTitledBorderText = js.Any.fromFunction0(getTitledBorderText), getToolTipText = js.Any.fromFunction0(getToolTipText), grabFocus = js.Any.fromFunction0(grabFocus), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAccessibleExtendedComponent]
   }

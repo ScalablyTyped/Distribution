@@ -11,7 +11,7 @@ object ^ extends js.Object {
   /**
     * BSON serializator instance
     */
-  val serializer: adoneLib.adoneNs.dataNs.bsonNs.BSON = js.native
+  val serializer: BSON = js.native
   /**
     * Decodes the given buffer with enabled buffers and values promoting
     */

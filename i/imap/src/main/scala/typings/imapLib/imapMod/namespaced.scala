@@ -12,23 +12,23 @@ class namespaced protected () extends Connection {
   def this(config: imapLib.imapMod.ConnectionNs.Config) = this()
   /** Adds flag(s) to message(s). */
   /* CompleteClass */
-  override def addFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  override def addFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /** Adds keyword(s) to message(s). keywords is either a single keyword or an array of keywords. */
   /* CompleteClass */
-  override def addKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  override def addKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /** Copies message(s) in the currently open mailbox to another mailbox. */
   /* CompleteClass */
   override def copy(
     source: js.Any,
     mailboxName: java.lang.String,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   /** Removes flag(s) from message(s). */
   /* CompleteClass */
-  override def delFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  override def delFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /** Removes keyword(s) from message(s). keywords is either a single keyword or an array of keywords. */
   /* CompleteClass */
-  override def delKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  override def delKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /** Fetches message(s) in the currently open mailbox; source can be a single message identifier, a message identifier range (e.g. '2504:2507' or '*' or '2504:*'), an array of message identifiers, or an array of message identifier ranges. */
   /* CompleteClass */
   override def fetch(source: js.Any, options: imapLib.imapMod.ConnectionNs.FetchOptions): imapLib.imapMod.ConnectionNs.ImapFetch = js.native
@@ -37,7 +37,7 @@ class namespaced protected () extends Connection {
   override def move(
     source: js.Any,
     mailboxName: java.lang.String,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   /** Searches the currently open mailbox for messages using given criteria. criteria is a list describing what you want to find. For criteria types that require arguments, use an array instead of just the string criteria type name (e.g. ['FROM', 'foo@bar.com']). Prefix criteria types with an "!" to negate.
     The following message flags are valid types that do not have arguments:
@@ -81,17 +81,17 @@ class namespaced protected () extends Connection {
   /* CompleteClass */
   override def search(
     criteria: js.Array[_],
-    callback: js.Function2[/* error */ nodeLib.Error, /* uids */ js.Array[scala.Double], scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* uids */ js.Array[scala.Double], scala.Unit]
   ): scala.Unit = js.native
   /** Checks if the server supports the specified capability. */
   /* CompleteClass */
   override def serverSupports(capability: java.lang.String): scala.Boolean = js.native
   /** Sets the flag(s) for message(s). */
   /* CompleteClass */
-  override def setFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  override def setFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /** Sets keyword(s) for message(s). keywords is either a single keyword or an array of keywords. */
   /* CompleteClass */
-  override def setKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  override def setKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
 }
 
 /* static members */

@@ -14,11 +14,11 @@ trait GridsterCollision extends js.Object {
 object GridsterCollision {
   @scala.inline
   def apply(
-    on_overlap: js.Function1[GridsterCollisionData, scala.Unit],
-    on_overlap_start: js.Function1[GridsterCollisionData, scala.Unit],
-    on_overlap_stop: js.Function1[GridsterCollisionData, scala.Unit]
+    on_overlap: GridsterCollisionData => scala.Unit,
+    on_overlap_start: GridsterCollisionData => scala.Unit,
+    on_overlap_stop: GridsterCollisionData => scala.Unit
   ): GridsterCollision = {
-    val __obj = js.Dynamic.literal(on_overlap = on_overlap, on_overlap_start = on_overlap_start, on_overlap_stop = on_overlap_stop)
+    val __obj = js.Dynamic.literal(on_overlap = js.Any.fromFunction1(on_overlap), on_overlap_start = js.Any.fromFunction1(on_overlap_start), on_overlap_stop = js.Any.fromFunction1(on_overlap_stop))
   
     __obj.asInstanceOf[GridsterCollision]
   }

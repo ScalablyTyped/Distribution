@@ -34,31 +34,31 @@ trait Tickable extends js.Object {
 object Tickable {
   @scala.inline
   def apply(
-    addModifier: js.Function1[Modifier, Tickable],
-    addToModifierContext: js.Function1[ModifierContext, scala.Unit],
-    applyTickMultiplier: js.Function2[scala.Double, scala.Double, scala.Unit],
-    getBoundingBox: js.Function0[BoundingBox],
-    getCenterXShift: js.Function0[scala.Double],
-    getIntrinsicTicks: js.Function0[Fraction],
-    getTickMultiplier: js.Function0[Fraction],
-    getTicks: js.Function0[Fraction],
-    getTuplet: js.Function0[Tuplet],
-    getVoice: js.Function0[Voice],
-    getWidth: js.Function0[scala.Double],
-    isCenterAligned: js.Function0[scala.Boolean],
-    postFormat: js.Function0[Tickable],
-    preFormat: js.Function0[scala.Unit],
-    setCenterAlignment: js.Function1[scala.Boolean, Tickable],
-    setContext: js.Function1[vexflowLib.VexNs.IRenderContext, scala.Unit],
-    setDuration: js.Function1[Fraction, scala.Unit],
-    setIntrinsicTicks: js.Function1[Fraction, scala.Unit],
-    setTickContext: js.Function1[TickContext, scala.Unit],
-    setTuplet: js.Function1[Tuplet, Tickable],
-    setVoice: js.Function1[Voice, scala.Unit],
-    setXShift: js.Function1[scala.Double, Tickable],
-    shouldIgnoreTicks: js.Function0[scala.Boolean]
+    addModifier: Modifier => Tickable,
+    addToModifierContext: ModifierContext => scala.Unit,
+    applyTickMultiplier: (scala.Double, scala.Double) => scala.Unit,
+    getBoundingBox: () => BoundingBox,
+    getCenterXShift: () => scala.Double,
+    getIntrinsicTicks: () => Fraction,
+    getTickMultiplier: () => Fraction,
+    getTicks: () => Fraction,
+    getTuplet: () => Tuplet,
+    getVoice: () => Voice,
+    getWidth: () => scala.Double,
+    isCenterAligned: () => scala.Boolean,
+    postFormat: () => Tickable,
+    preFormat: () => scala.Unit,
+    setCenterAlignment: scala.Boolean => Tickable,
+    setContext: vexflowLib.VexNs.IRenderContext => scala.Unit,
+    setDuration: Fraction => scala.Unit,
+    setIntrinsicTicks: Fraction => scala.Unit,
+    setTickContext: TickContext => scala.Unit,
+    setTuplet: Tuplet => Tickable,
+    setVoice: Voice => scala.Unit,
+    setXShift: scala.Double => Tickable,
+    shouldIgnoreTicks: () => scala.Boolean
   ): Tickable = {
-    val __obj = js.Dynamic.literal(addModifier = addModifier, addToModifierContext = addToModifierContext, applyTickMultiplier = applyTickMultiplier, getBoundingBox = getBoundingBox, getCenterXShift = getCenterXShift, getIntrinsicTicks = getIntrinsicTicks, getTickMultiplier = getTickMultiplier, getTicks = getTicks, getTuplet = getTuplet, getVoice = getVoice, getWidth = getWidth, isCenterAligned = isCenterAligned, postFormat = postFormat, preFormat = preFormat, setCenterAlignment = setCenterAlignment, setContext = setContext, setDuration = setDuration, setIntrinsicTicks = setIntrinsicTicks, setTickContext = setTickContext, setTuplet = setTuplet, setVoice = setVoice, setXShift = setXShift, shouldIgnoreTicks = shouldIgnoreTicks)
+    val __obj = js.Dynamic.literal(addModifier = js.Any.fromFunction1(addModifier), addToModifierContext = js.Any.fromFunction1(addToModifierContext), applyTickMultiplier = js.Any.fromFunction2(applyTickMultiplier), getBoundingBox = js.Any.fromFunction0(getBoundingBox), getCenterXShift = js.Any.fromFunction0(getCenterXShift), getIntrinsicTicks = js.Any.fromFunction0(getIntrinsicTicks), getTickMultiplier = js.Any.fromFunction0(getTickMultiplier), getTicks = js.Any.fromFunction0(getTicks), getTuplet = js.Any.fromFunction0(getTuplet), getVoice = js.Any.fromFunction0(getVoice), getWidth = js.Any.fromFunction0(getWidth), isCenterAligned = js.Any.fromFunction0(isCenterAligned), postFormat = js.Any.fromFunction0(postFormat), preFormat = js.Any.fromFunction0(preFormat), setCenterAlignment = js.Any.fromFunction1(setCenterAlignment), setContext = js.Any.fromFunction1(setContext), setDuration = js.Any.fromFunction1(setDuration), setIntrinsicTicks = js.Any.fromFunction1(setIntrinsicTicks), setTickContext = js.Any.fromFunction1(setTickContext), setTuplet = js.Any.fromFunction1(setTuplet), setVoice = js.Any.fromFunction1(setVoice), setXShift = js.Any.fromFunction1(setXShift), shouldIgnoreTicks = js.Any.fromFunction0(shouldIgnoreTicks))
   
     __obj.asInstanceOf[Tickable]
   }

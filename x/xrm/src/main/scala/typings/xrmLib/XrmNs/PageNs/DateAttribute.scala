@@ -16,24 +16,24 @@ trait DateAttribute
 object DateAttribute {
   @scala.inline
   def apply(
-    addOnChange: js.Function1[xrmLib.XrmNs.EventsNs.ContextSensitiveHandler, scala.Unit],
+    addOnChange: xrmLib.XrmNs.EventsNs.ContextSensitiveHandler => scala.Unit,
     controls: xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.DateControl],
-    fireOnChange: js.Function0[scala.Unit],
-    getAttributeType: js.Function0[xrmLib.XrmNs.AttributesNs.AttributeType],
-    getFormat: js.Function0[xrmLib.XrmNs.AttributesNs.DateAttributeFormat],
-    getIsDirty: js.Function0[scala.Boolean],
-    getName: js.Function0[java.lang.String],
-    getParent: js.Function0[xrmLib.XrmNs.Entity],
-    getRequiredLevel: js.Function0[xrmLib.XrmNs.AttributesNs.RequirementLevel],
-    getSubmitMode: js.Function0[xrmLib.XrmNs.SubmitMode],
-    getUserPrivilege: js.Function0[xrmLib.XrmNs.Privilege],
-    getValue: js.Function0[stdLib.Date],
-    removeOnChange: js.Function1[xrmLib.XrmNs.EventsNs.ContextSensitiveHandler, scala.Unit],
-    setRequiredLevel: js.Function1[xrmLib.XrmNs.AttributesNs.RequirementLevel, scala.Unit],
-    setSubmitMode: js.Function1[xrmLib.XrmNs.SubmitMode, scala.Unit],
-    setValue: js.Function1[stdLib.Date, scala.Unit]
+    fireOnChange: () => scala.Unit,
+    getAttributeType: () => xrmLib.XrmNs.AttributesNs.AttributeType,
+    getFormat: () => xrmLib.XrmNs.AttributesNs.DateAttributeFormat,
+    getIsDirty: () => scala.Boolean,
+    getName: () => java.lang.String,
+    getParent: () => xrmLib.XrmNs.Entity,
+    getRequiredLevel: () => xrmLib.XrmNs.AttributesNs.RequirementLevel,
+    getSubmitMode: () => xrmLib.XrmNs.SubmitMode,
+    getUserPrivilege: () => xrmLib.XrmNs.Privilege,
+    getValue: () => stdLib.Date,
+    removeOnChange: xrmLib.XrmNs.EventsNs.ContextSensitiveHandler => scala.Unit,
+    setRequiredLevel: xrmLib.XrmNs.AttributesNs.RequirementLevel => scala.Unit,
+    setSubmitMode: xrmLib.XrmNs.SubmitMode => scala.Unit,
+    setValue: stdLib.Date => scala.Unit
   ): DateAttribute = {
-    val __obj = js.Dynamic.literal(addOnChange = addOnChange, controls = controls, fireOnChange = fireOnChange, getAttributeType = getAttributeType, getFormat = getFormat, getIsDirty = getIsDirty, getName = getName, getParent = getParent, getRequiredLevel = getRequiredLevel, getSubmitMode = getSubmitMode, getUserPrivilege = getUserPrivilege, getValue = getValue, removeOnChange = removeOnChange, setRequiredLevel = setRequiredLevel, setSubmitMode = setSubmitMode, setValue = setValue)
+    val __obj = js.Dynamic.literal(addOnChange = js.Any.fromFunction1(addOnChange), controls = controls, fireOnChange = js.Any.fromFunction0(fireOnChange), getAttributeType = js.Any.fromFunction0(getAttributeType), getFormat = js.Any.fromFunction0(getFormat), getIsDirty = js.Any.fromFunction0(getIsDirty), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getRequiredLevel = js.Any.fromFunction0(getRequiredLevel), getSubmitMode = js.Any.fromFunction0(getSubmitMode), getUserPrivilege = js.Any.fromFunction0(getUserPrivilege), getValue = js.Any.fromFunction0(getValue), removeOnChange = js.Any.fromFunction1(removeOnChange), setRequiredLevel = js.Any.fromFunction1(setRequiredLevel), setSubmitMode = js.Any.fromFunction1(setSubmitMode), setValue = js.Any.fromFunction1(setValue))
   
     __obj.asInstanceOf[DateAttribute]
   }

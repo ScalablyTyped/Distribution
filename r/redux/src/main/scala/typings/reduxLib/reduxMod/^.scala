@@ -8,42 +8,39 @@ import scala.scalajs.js.annotation._
 @JSImport("redux", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val createStore: reduxLib.reduxMod.StoreCreator = js.native
-  def applyMiddleware(): reduxLib.reduxMod.StoreEnhancer[js.Object, js.Object] = js.native
-  def applyMiddleware[Ext1, S](middleware1: reduxLib.reduxMod.Middleware[Ext1, S, _]): reduxLib.reduxMod.StoreEnhancer[reduxLib.Anon_Dispatch[Ext1], js.Object] = js.native
-  def applyMiddleware[Ext, S](middlewares: (reduxLib.reduxMod.Middleware[_, S, _])*): reduxLib.reduxMod.StoreEnhancer[reduxLib.Anon_DispatchExt[Ext], js.Object] = js.native
-  def applyMiddleware[Ext1, Ext2, S](
-    middleware1: reduxLib.reduxMod.Middleware[Ext1, S, _],
-    middleware2: reduxLib.reduxMod.Middleware[Ext2, S, _]
-  ): reduxLib.reduxMod.StoreEnhancer[reduxLib.Anon_DispatchExt1[Ext1, Ext2], js.Object] = js.native
+  val createStore: StoreCreator = js.native
+  def applyMiddleware(): StoreEnhancer[js.Object, js.Object] = js.native
+  def applyMiddleware[Ext1, S](middleware1: Middleware[Ext1, S, _]): StoreEnhancer[reduxLib.Anon_Dispatch[Ext1], js.Object] = js.native
+  def applyMiddleware[Ext, S](middlewares: (Middleware[_, S, _])*): StoreEnhancer[reduxLib.Anon_DispatchExt[Ext], js.Object] = js.native
+  def applyMiddleware[Ext1, Ext2, S](middleware1: Middleware[Ext1, S, _], middleware2: Middleware[Ext2, S, _]): StoreEnhancer[reduxLib.Anon_DispatchExt1[Ext1, Ext2], js.Object] = js.native
   def applyMiddleware[Ext1, Ext2, Ext3, S](
-    middleware1: reduxLib.reduxMod.Middleware[Ext1, S, _],
-    middleware2: reduxLib.reduxMod.Middleware[Ext2, S, _],
-    middleware3: reduxLib.reduxMod.Middleware[Ext3, S, _]
-  ): reduxLib.reduxMod.StoreEnhancer[reduxLib.Anon_DispatchExt1Ext2[Ext1, Ext2, Ext3], js.Object] = js.native
+    middleware1: Middleware[Ext1, S, _],
+    middleware2: Middleware[Ext2, S, _],
+    middleware3: Middleware[Ext3, S, _]
+  ): StoreEnhancer[reduxLib.Anon_DispatchExt1Ext2[Ext1, Ext2, Ext3], js.Object] = js.native
   def applyMiddleware[Ext1, Ext2, Ext3, Ext4, S](
-    middleware1: reduxLib.reduxMod.Middleware[Ext1, S, _],
-    middleware2: reduxLib.reduxMod.Middleware[Ext2, S, _],
-    middleware3: reduxLib.reduxMod.Middleware[Ext3, S, _],
-    middleware4: reduxLib.reduxMod.Middleware[Ext4, S, _]
-  ): reduxLib.reduxMod.StoreEnhancer[reduxLib.Anon_DispatchExt1Ext2Ext3[Ext1, Ext2, Ext3, Ext4], js.Object] = js.native
+    middleware1: Middleware[Ext1, S, _],
+    middleware2: Middleware[Ext2, S, _],
+    middleware3: Middleware[Ext3, S, _],
+    middleware4: Middleware[Ext4, S, _]
+  ): StoreEnhancer[reduxLib.Anon_DispatchExt1Ext2Ext3[Ext1, Ext2, Ext3, Ext4], js.Object] = js.native
   def applyMiddleware[Ext1, Ext2, Ext3, Ext4, Ext5, S](
-    middleware1: reduxLib.reduxMod.Middleware[Ext1, S, _],
-    middleware2: reduxLib.reduxMod.Middleware[Ext2, S, _],
-    middleware3: reduxLib.reduxMod.Middleware[Ext3, S, _],
-    middleware4: reduxLib.reduxMod.Middleware[Ext4, S, _],
-    middleware5: reduxLib.reduxMod.Middleware[Ext5, S, _]
-  ): reduxLib.reduxMod.StoreEnhancer[reduxLib.Anon_DispatchExt1Ext2Ext3Ext4[Ext4, Ext3, Ext5, Ext1, Ext2], js.Object] = js.native
-  def bindActionCreators[M /* <: reduxLib.reduxMod.ActionCreatorsMapObject[_] */, N /* <: reduxLib.reduxMod.ActionCreatorsMapObject[_] */](actionCreators: M, dispatch: reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.AnyAction]): N = js.native
+    middleware1: Middleware[Ext1, S, _],
+    middleware2: Middleware[Ext2, S, _],
+    middleware3: Middleware[Ext3, S, _],
+    middleware4: Middleware[Ext4, S, _],
+    middleware5: Middleware[Ext5, S, _]
+  ): StoreEnhancer[reduxLib.Anon_DispatchExt1Ext2Ext3Ext4[Ext4, Ext3, Ext5, Ext1, Ext2], js.Object] = js.native
+  def bindActionCreators[M /* <: ActionCreatorsMapObject[_] */, N /* <: ActionCreatorsMapObject[_] */](actionCreators: M, dispatch: Dispatch[AnyAction]): N = js.native
   @JSName("bindActionCreators")
-  def bindActionCreators_AActionCreatorBActionCreatorB[A /* <: reduxLib.reduxMod.ActionCreator[_] */, B /* <: reduxLib.reduxMod.ActionCreator[_] */](actionCreator: A, dispatch: reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.AnyAction]): B = js.native
+  def bindActionCreators_AActionCreatorBActionCreatorB[A /* <: ActionCreator[_] */, B /* <: ActionCreator[_] */](actionCreator: A, dispatch: Dispatch[AnyAction]): B = js.native
   @JSName("bindActionCreators")
-  def bindActionCreators_ACActionCreatorC[A, C /* <: reduxLib.reduxMod.ActionCreator[A] */](actionCreator: C, dispatch: reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.AnyAction]): C = js.native
+  def bindActionCreators_ACActionCreatorC[A, C /* <: ActionCreator[A] */](actionCreator: C, dispatch: Dispatch[AnyAction]): C = js.native
   @JSName("bindActionCreators")
-  def bindActionCreators_AMActionCreatorsMapObjectM[A, M /* <: reduxLib.reduxMod.ActionCreatorsMapObject[A] */](actionCreators: M, dispatch: reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.AnyAction]): M = js.native
-  def combineReducers[S](reducers: reduxLib.reduxMod.ReducersMapObject[S, _]): reduxLib.reduxMod.Reducer[S, reduxLib.reduxMod.AnyAction] = js.native
+  def bindActionCreators_AMActionCreatorsMapObjectM[A, M /* <: ActionCreatorsMapObject[A] */](actionCreators: M, dispatch: Dispatch[AnyAction]): M = js.native
+  def combineReducers[S](reducers: ReducersMapObject[S, _]): Reducer[S, AnyAction] = js.native
   @JSName("combineReducers")
-  def combineReducers_SAAction[S, A /* <: reduxLib.reduxMod.Action[_] */](reducers: reduxLib.reduxMod.ReducersMapObject[S, A]): reduxLib.reduxMod.Reducer[S, A] = js.native
+  def combineReducers_SAAction[S, A /* <: Action[_] */](reducers: ReducersMapObject[S, A]): Reducer[S, A] = js.native
   def compose(): js.Function1[/* a */ js.Any, _] = js.native
   def compose[R](f1: js.Function1[/* b */ js.Any, R], funcs: js.Function*): js.Function1[/* repeated */ js.Any, R] = js.native
   def compose[F /* <: js.Function */](f: F): F = js.native

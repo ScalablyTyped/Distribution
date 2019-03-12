@@ -22,8 +22,8 @@ trait ChangeTableCellFormattingCommand extends CommandBase {
 
 object ChangeTableCellFormattingCommand {
   @scala.inline
-  def apply(execute: js.Function1[TableCellFormattingSettings, scala.Boolean], getState: js.Function0[js.Any]): ChangeTableCellFormattingCommand = {
-    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  def apply(execute: TableCellFormattingSettings => scala.Boolean, getState: () => js.Any): ChangeTableCellFormattingCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
   
     __obj.asInstanceOf[ChangeTableCellFormattingCommand]
   }

@@ -27,24 +27,15 @@ trait XNotifyingDispatch extends XDispatch {
 object XNotifyingDispatch {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addStatusListener: js.Function2[XStatusListener, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, scala.Unit],
-    dispatch: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    dispatchWithNotification: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      XDispatchResultListener, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeStatusListener: js.Function2[XStatusListener, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, scala.Unit]
+    acquire: () => scala.Unit,
+    addStatusListener: (XStatusListener, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL) => scala.Unit,
+    dispatch: (activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    dispatchWithNotification: (activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], XDispatchResultListener) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeStatusListener: (XStatusListener, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL) => scala.Unit
   ): XNotifyingDispatch = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addStatusListener = addStatusListener, dispatch = dispatch, dispatchWithNotification = dispatchWithNotification, queryInterface = queryInterface, release = release, removeStatusListener = removeStatusListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addStatusListener = js.Any.fromFunction2(addStatusListener), dispatch = js.Any.fromFunction2(dispatch), dispatchWithNotification = js.Any.fromFunction3(dispatchWithNotification), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeStatusListener = js.Any.fromFunction2(removeStatusListener))
   
     __obj.asInstanceOf[XNotifyingDispatch]
   }

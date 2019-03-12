@@ -9,63 +9,63 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def convertActionBinding(
-    localResolver: atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.LocalResolver,
+    localResolver: LocalResolver,
     implicitReceiver: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
     action: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST,
     bindingId: java.lang.String
-  ): atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.ConvertActionBindingResult = js.native
+  ): ConvertActionBindingResult = js.native
   def convertActionBinding(
-    localResolver: atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.LocalResolver,
+    localResolver: LocalResolver,
     implicitReceiver: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
     action: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST,
     bindingId: java.lang.String,
-    interpolationFunction: atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.InterpolationFunction
-  ): atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.ConvertActionBindingResult = js.native
+    interpolationFunction: InterpolationFunction
+  ): ConvertActionBindingResult = js.native
   def convertActionBinding(
     localResolver: scala.Null,
     implicitReceiver: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
     action: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST,
     bindingId: java.lang.String
-  ): atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.ConvertActionBindingResult = js.native
+  ): ConvertActionBindingResult = js.native
   def convertActionBinding(
     localResolver: scala.Null,
     implicitReceiver: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
     action: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST,
     bindingId: java.lang.String,
-    interpolationFunction: atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.InterpolationFunction
-  ): atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.ConvertActionBindingResult = js.native
+    interpolationFunction: InterpolationFunction
+  ): ConvertActionBindingResult = js.native
   def convertPropertyBinding(
-    localResolver: atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.LocalResolver,
+    localResolver: LocalResolver,
     implicitReceiver: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
     expressionWithoutBuiltins: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST,
     bindingId: java.lang.String,
-    form: atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.BindingForm
-  ): atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.ConvertPropertyBindingResult = js.native
+    form: BindingForm
+  ): ConvertPropertyBindingResult = js.native
   def convertPropertyBinding(
-    localResolver: atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.LocalResolver,
+    localResolver: LocalResolver,
     implicitReceiver: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
     expressionWithoutBuiltins: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST,
     bindingId: java.lang.String,
-    form: atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.BindingForm,
-    interpolationFunction: atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.InterpolationFunction
-  ): atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.ConvertPropertyBindingResult = js.native
-  def convertPropertyBinding(
-    localResolver: scala.Null,
-    implicitReceiver: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
-    expressionWithoutBuiltins: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST,
-    bindingId: java.lang.String,
-    form: atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.BindingForm
-  ): atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.ConvertPropertyBindingResult = js.native
+    form: BindingForm,
+    interpolationFunction: InterpolationFunction
+  ): ConvertPropertyBindingResult = js.native
   def convertPropertyBinding(
     localResolver: scala.Null,
     implicitReceiver: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
     expressionWithoutBuiltins: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST,
     bindingId: java.lang.String,
-    form: atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.BindingForm,
-    interpolationFunction: atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.InterpolationFunction
-  ): atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.ConvertPropertyBindingResult = js.native
+    form: BindingForm
+  ): ConvertPropertyBindingResult = js.native
+  def convertPropertyBinding(
+    localResolver: scala.Null,
+    implicitReceiver: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    expressionWithoutBuiltins: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST,
+    bindingId: java.lang.String,
+    form: BindingForm,
+    interpolationFunction: InterpolationFunction
+  ): ConvertPropertyBindingResult = js.native
   def convertPropertyBindingBuiltins(
-    converterFactory: atAngularCompilerLib.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.BuiltinConverterFactory,
+    converterFactory: BuiltinConverterFactory,
     ast: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST
   ): atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST = js.native
   def temporaryDeclaration(bindingId: java.lang.String, temporaryNumber: scala.Double): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement = js.native

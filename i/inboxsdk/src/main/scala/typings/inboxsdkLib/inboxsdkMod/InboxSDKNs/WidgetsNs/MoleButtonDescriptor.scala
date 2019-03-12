@@ -16,11 +16,11 @@ object MoleButtonDescriptor {
   @scala.inline
   def apply(
     iconUrl: java.lang.String,
-    onClick: js.Function0[scala.Unit],
+    onClick: () => scala.Unit,
     title: java.lang.String,
     iconClass: java.lang.String = null
   ): MoleButtonDescriptor = {
-    val __obj = js.Dynamic.literal(iconUrl = iconUrl, onClick = onClick, title = title)
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl, onClick = js.Any.fromFunction0(onClick), title = title)
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     __obj.asInstanceOf[MoleButtonDescriptor]
   }

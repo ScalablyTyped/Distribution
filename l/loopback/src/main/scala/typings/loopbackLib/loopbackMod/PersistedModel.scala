@@ -517,7 +517,7 @@ object PersistedModel extends js.Object {
     * change error handling
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object)
     */
-  def handleChangeError(err: nodeLib.Error): scala.Unit = js.native
+  def handleChangeError(err: stdLib.Error): scala.Unit = js.native
   /**
     * Specify that a change to the model with the given ID has occurred
     * @param {*} id The ID of the model that has changed.
@@ -634,7 +634,7 @@ object PersistedModel extends js.Object {
     options: js.Any,
     optionsFilter: js.Any,
     callback: js.Function3[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* conflicts */ js.Array[loopbackLib.loopbackMod.lNs.Conflict], 
       /* param */ js.Any, 
       scala.Unit

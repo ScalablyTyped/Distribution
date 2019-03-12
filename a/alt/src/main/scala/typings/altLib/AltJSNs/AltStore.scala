@@ -15,12 +15,12 @@ trait AltStore[S] extends js.Object {
 object AltStore {
   @scala.inline
   def apply[S](
-    emitChange: js.Function0[scala.Unit],
-    getState: js.Function0[S],
-    listen: js.Function1[js.Function1[/* state */ S, _], js.Function0[scala.Unit]],
-    unlisten: js.Function1[js.Function1[/* state */ S, _], scala.Unit]
+    emitChange: () => scala.Unit,
+    getState: () => S,
+    listen: js.Function1[/* state */ S, _] => js.Function0[scala.Unit],
+    unlisten: js.Function1[/* state */ S, _] => scala.Unit
   ): AltStore[S] = {
-    val __obj = js.Dynamic.literal(emitChange = emitChange, getState = getState, listen = listen, unlisten = unlisten)
+    val __obj = js.Dynamic.literal(emitChange = js.Any.fromFunction0(emitChange), getState = js.Any.fromFunction0(getState), listen = js.Any.fromFunction1(listen), unlisten = js.Any.fromFunction1(unlisten))
   
     __obj.asInstanceOf[AltStore[S]]
   }

@@ -32,16 +32,10 @@ trait LanguageMapProtocol extends js.Object {
 object LanguageMapProtocol {
   @scala.inline
   def apply(
-    extend: js.Function2[java.lang.String, LanguageDefinition, LanguageDefinition],
-    insertBefore: js.Function4[
-      java.lang.String, 
-      java.lang.String, 
-      LanguageDefinition, 
-      LanguageDefinition, 
-      LanguageDefinition
-    ]
+    extend: (java.lang.String, LanguageDefinition) => LanguageDefinition,
+    insertBefore: (java.lang.String, java.lang.String, LanguageDefinition, LanguageDefinition) => LanguageDefinition
   ): LanguageMapProtocol = {
-    val __obj = js.Dynamic.literal(extend = extend, insertBefore = insertBefore)
+    val __obj = js.Dynamic.literal(extend = js.Any.fromFunction2(extend), insertBefore = js.Any.fromFunction4(insertBefore))
   
     __obj.asInstanceOf[LanguageMapProtocol]
   }

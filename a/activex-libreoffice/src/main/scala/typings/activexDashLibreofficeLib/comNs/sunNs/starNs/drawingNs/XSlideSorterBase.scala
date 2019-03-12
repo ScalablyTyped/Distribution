@@ -88,15 +88,15 @@ object XSlideSorterBase {
     ResourceId: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.frameworkNs.XResourceId,
     SelectionColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
     TextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
-    acquire: js.Function0[scala.Unit],
-    getCurrentPage: js.Function0[XDrawPage],
-    getResourceId: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.frameworkNs.XResourceId],
-    isAnchorOnly: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setCurrentPage: js.Function1[XDrawPage, scala.Unit]
+    acquire: () => scala.Unit,
+    getCurrentPage: () => XDrawPage,
+    getResourceId: () => activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.frameworkNs.XResourceId,
+    isAnchorOnly: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setCurrentPage: XDrawPage => scala.Unit
   ): XSlideSorterBase = {
-    val __obj = js.Dynamic.literal(BackgroundColor = BackgroundColor, CurrentPage = CurrentPage, DocumentSlides = DocumentSlides, HighlightColor = HighlightColor, IsCenterSelection = IsCenterSelection, IsHighlightCurrentSlide = IsHighlightCurrentSlide, IsOrientationVertical = IsOrientationVertical, IsShowFocus = IsShowFocus, IsShowSelection = IsShowSelection, IsSmoothScrolling = IsSmoothScrolling, IsSuspendPreviewUpdatesDuringFullScreenPresentation = IsSuspendPreviewUpdatesDuringFullScreenPresentation, IsUIReadOnly = IsUIReadOnly, ResourceId = ResourceId, SelectionColor = SelectionColor, TextColor = TextColor, acquire = acquire, getCurrentPage = getCurrentPage, getResourceId = getResourceId, isAnchorOnly = isAnchorOnly, queryInterface = queryInterface, release = release, setCurrentPage = setCurrentPage)
+    val __obj = js.Dynamic.literal(BackgroundColor = BackgroundColor, CurrentPage = CurrentPage, DocumentSlides = DocumentSlides, HighlightColor = HighlightColor, IsCenterSelection = IsCenterSelection, IsHighlightCurrentSlide = IsHighlightCurrentSlide, IsOrientationVertical = IsOrientationVertical, IsShowFocus = IsShowFocus, IsShowSelection = IsShowSelection, IsSmoothScrolling = IsSmoothScrolling, IsSuspendPreviewUpdatesDuringFullScreenPresentation = IsSuspendPreviewUpdatesDuringFullScreenPresentation, IsUIReadOnly = IsUIReadOnly, ResourceId = ResourceId, SelectionColor = SelectionColor, TextColor = TextColor, acquire = js.Any.fromFunction0(acquire), getCurrentPage = js.Any.fromFunction0(getCurrentPage), getResourceId = js.Any.fromFunction0(getResourceId), isAnchorOnly = js.Any.fromFunction0(isAnchorOnly), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setCurrentPage = js.Any.fromFunction1(setCurrentPage))
   
     __obj.asInstanceOf[XSlideSorterBase]
   }

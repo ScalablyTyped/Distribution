@@ -31,27 +31,27 @@ trait ASPxClientPivotCustomization extends ASPxClientControl {
 object ASPxClientPivotCustomization {
   @scala.inline
   def apply(
-    AdjustControl: js.Function0[scala.Unit],
-    GetClientVisible: js.Function0[scala.Boolean],
-    GetHeight: js.Function0[scala.Double],
-    GetMainContainer: js.Function0[js.Object],
-    GetMainElement: js.Function0[js.Object],
-    GetParentControl: js.Function0[js.Object],
-    GetPivotGrid: js.Function0[ASPxClientPivotGrid],
-    GetVisible: js.Function0[scala.Boolean],
-    GetWidth: js.Function0[scala.Double],
-    InCallback: js.Function0[scala.Boolean],
+    AdjustControl: () => scala.Unit,
+    GetClientVisible: () => scala.Boolean,
+    GetHeight: () => scala.Double,
+    GetMainContainer: () => js.Object,
+    GetMainElement: () => js.Object,
+    GetParentControl: () => js.Object,
+    GetPivotGrid: () => ASPxClientPivotGrid,
+    GetVisible: () => scala.Boolean,
+    GetWidth: () => scala.Double,
+    InCallback: () => scala.Boolean,
     Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
-    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
-    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetHeight: js.Function1[scala.Double, scala.Unit],
-    SetLayout: js.Function1[java.lang.String, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetWidth: js.Function1[scala.Double, scala.Unit],
-    UpdateHeight: js.Function0[scala.Unit],
+    SendMessageToAssistiveTechnology: java.lang.String => scala.Unit,
+    SetClientVisible: scala.Boolean => scala.Unit,
+    SetHeight: scala.Double => scala.Unit,
+    SetLayout: java.lang.String => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
+    SetWidth: scala.Double => scala.Unit,
+    UpdateHeight: () => scala.Unit,
     name: java.lang.String
   ): ASPxClientPivotCustomization = {
-    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, GetClientVisible = GetClientVisible, GetHeight = GetHeight, GetMainContainer = GetMainContainer, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetPivotGrid = GetPivotGrid, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetLayout = SetLayout, SetVisible = SetVisible, SetWidth = SetWidth, UpdateHeight = UpdateHeight, name = name)
+    val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetHeight = js.Any.fromFunction0(GetHeight), GetMainContainer = js.Any.fromFunction0(GetMainContainer), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetPivotGrid = js.Any.fromFunction0(GetPivotGrid), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), InCallback = js.Any.fromFunction0(InCallback), Init = Init, SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetHeight = js.Any.fromFunction1(SetHeight), SetLayout = js.Any.fromFunction1(SetLayout), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), UpdateHeight = js.Any.fromFunction0(UpdateHeight), name = name)
   
     __obj.asInstanceOf[ASPxClientPivotCustomization]
   }

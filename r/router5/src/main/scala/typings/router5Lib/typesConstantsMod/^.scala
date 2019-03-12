@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("router5/types/constants", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val constants: router5Lib.typesConstantsMod.Constants = js.native
-  val errorCodes: router5Lib.typesConstantsMod.ErrorCodes = js.native
+  val constants: Constants = js.native
+  val errorCodes: ErrorCodes = js.native
 }
 

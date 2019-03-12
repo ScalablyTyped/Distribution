@@ -26,11 +26,11 @@ object ColorAndIntensity {
   def apply(
     color: stdLib.ArrayLike[scala.Double],
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     intensity: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): ColorAndIntensity = {
-    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, intensity = intensity, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), intensity = intensity, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[ColorAndIntensity]
   }

@@ -18,17 +18,8 @@ object ^ extends js.Object {
     * @param options An object that can contain properties that specify additional options: groupCountEstimate, batchSize.
     * @returns An IListGroupDataSource that contains the items in the original data source and provides additional group information in the form of a "groups" property. The "groups" property returns another IListDataSource that enumerates the different groups in the list.
     **/
-  def computeDataSourceGroups[T](
-    listDataSource: winjsLib.WinJSNs.UINs.IListDataSource[T],
-    groupKey: js.Function,
-    groupData: js.Function
-  ): winjsLib.WinJSNs.UINs.IListGroupDataSource[T] = js.native
-  def computeDataSourceGroups[T](
-    listDataSource: winjsLib.WinJSNs.UINs.IListDataSource[T],
-    groupKey: js.Function,
-    groupData: js.Function,
-    options: js.Any
-  ): winjsLib.WinJSNs.UINs.IListGroupDataSource[T] = js.native
+  def computeDataSourceGroups[T](listDataSource: IListDataSource[T], groupKey: js.Function, groupData: js.Function): IListGroupDataSource[T] = js.native
+  def computeDataSourceGroups[T](listDataSource: IListDataSource[T], groupKey: js.Function, groupData: js.Function, options: js.Any): IListGroupDataSource[T] = js.native
   /**
     * Used to disables all Animations Library and ListView animations. Calling this function does not guarantee that the animations will be disabled, as the determination is made based on several factors.
     **/
@@ -63,10 +54,7 @@ object ^ extends js.Object {
     * @param ranges An array of ISelectionRange objects that have firstIndex and lastIndex values.
     * @returns A Promise that contains an array of the requested IItem objects.
     **/
-  def getItemsFromRanges[U](
-    dataSource: winjsLib.WinJSNs.UINs.IListDataSource[U],
-    ranges: js.Array[winjsLib.WinJSNs.UINs.ISelectionRange]
-  ): winjsLib.WinJSNs.Promise[winjsLib.WinJSNs.UINs.IItem[U]] = js.native
+  def getItemsFromRanges[U](dataSource: IListDataSource[U], ranges: js.Array[ISelectionRange]): winjsLib.WinJSNs.Promise[IItem[U]] = js.native
   /**
     * Determines whether the Animations Library and ListView animations will be performed if called.
     * @returns Returns true if animations will be performed; otherwise false.

@@ -16,18 +16,10 @@ trait FunctorWithIndexComposition[F, FI, G, GI]
 object FunctorWithIndexComposition {
   @scala.inline
   def apply[F, FI, G, GI](
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]]
-    ],
-    mapWithIndex: js.Function2[
-      fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]], 
-      js.Function2[/* i */ js.Tuple2[FI, GI], js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]]
-    ]
+    map: (fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]],
+    mapWithIndex: (fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]], js.Function2[/* i */ js.Tuple2[FI, GI], js.Any, js.Any]) => fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]]
   ): FunctorWithIndexComposition[F, FI, G, GI] = {
-    val __obj = js.Dynamic.literal(map = map, mapWithIndex = mapWithIndex)
+    val __obj = js.Dynamic.literal(map = js.Any.fromFunction2(map), mapWithIndex = js.Any.fromFunction2(mapWithIndex))
   
     __obj.asInstanceOf[FunctorWithIndexComposition[F, FI, G, GI]]
   }

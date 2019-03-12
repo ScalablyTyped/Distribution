@@ -14,18 +14,10 @@ object Alt1 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS */](
     URI: F,
-    alt: js.Function2[
-      fpDashTsLib.libHKTMod.Type[F, js.Any], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any]
-    ],
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.Type[F, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any]
-    ]
+    alt: (fpDashTsLib.libHKTMod.Type[F, js.Any], fpDashTsLib.libHKTMod.Type[F, js.Any]) => fpDashTsLib.libHKTMod.Type[F, js.Any],
+    map: (fpDashTsLib.libHKTMod.Type[F, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type[F, js.Any]
   ): Alt1[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], alt = alt, map = map)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], alt = js.Any.fromFunction2(alt), map = js.Any.fromFunction2(map))
   
     __obj.asInstanceOf[Alt1[F]]
   }

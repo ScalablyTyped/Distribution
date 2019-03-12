@@ -30,7 +30,7 @@ trait XAcceleratorConfiguration
     * @returns A list of key events.
     * @see getCommandForKeyEvent().
     */
-  val AllKeyEvents: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent]
+  val AllKeyEvents: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent]
   /**
     * return the list of all key events, which are available at this configuration set.
     *
@@ -40,7 +40,7 @@ trait XAcceleratorConfiguration
     * @returns A list of key events.
     * @see getCommandForKeyEvent().
     */
-  def getAllKeyEvents(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent]
+  def getAllKeyEvents(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent]
   /**
     * return the registered command for the specified key event.
     *
@@ -61,7 +61,7 @@ trait XAcceleratorConfiguration
     * @throws com::sun::star::lang::IllegalArgumentException if the specified command is empty. It can't be checked, if a command is valid - because every URL
     * @throws com::sun::star::container::NoSuchElementException if the specified command isn't empty but does not occur inside this configuration set.
     */
-  def getKeyEventsByCommand(sCommand: java.lang.String): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent]
+  def getKeyEventsByCommand(sCommand: java.lang.String): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent]
   /**
     * optimized function to map a list of commands to a corresponding list of key events.
     *
@@ -74,7 +74,7 @@ trait XAcceleratorConfiguration
     * @returns A (non packed!) list of key events, where every item match by index directly to a command of the specified **CommandList** . If a command does no
     * @throws com::sun::star::lang::IllegalArgumentException if at least one of the specified commands is empty. It can't be checked, if a command is valid - b
     */
-  def getPreferredKeyEventsForCommandList(lCommandList: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): activexDashInteropLib.SafeArray[_]
+  def getPreferredKeyEventsForCommandList(lCommandList: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): stdLib.SafeArray[_]
   /**
     * search for an key-command-binding inside this configuration set, where the specified command is used.
     *
@@ -114,40 +114,28 @@ trait XAcceleratorConfiguration
 object XAcceleratorConfiguration {
   @scala.inline
   def apply(
-    AllKeyEvents: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent],
-    acquire: js.Function0[scala.Unit],
-    addConfigurationListener: js.Function1[XUIConfigurationListener, scala.Unit],
-    getAllKeyEvents: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent]
-    ],
-    getCommandByKeyEvent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent, java.lang.String],
-    getKeyEventsByCommand: js.Function1[
-      java.lang.String, 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent]
-    ],
-    getPreferredKeyEventsForCommandList: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashInteropLib.SafeArray[_]
-    ],
-    hasStorage: js.Function0[scala.Boolean],
-    isModified: js.Function0[scala.Boolean],
-    isReadOnly: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    reload: js.Function0[scala.Unit],
-    removeCommandFromAllKeyEvents: js.Function1[java.lang.String, scala.Unit],
-    removeConfigurationListener: js.Function1[XUIConfigurationListener, scala.Unit],
-    removeKeyEvent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent, scala.Unit],
-    setKeyEvent: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent, 
-      java.lang.String, 
-      scala.Unit
-    ],
-    setStorage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, scala.Unit],
-    store: js.Function0[scala.Unit],
-    storeToStorage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, scala.Unit]
+    AllKeyEvents: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent],
+    acquire: () => scala.Unit,
+    addConfigurationListener: XUIConfigurationListener => scala.Unit,
+    getAllKeyEvents: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent],
+    getCommandByKeyEvent: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent => java.lang.String,
+    getKeyEventsByCommand: java.lang.String => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent],
+    getPreferredKeyEventsForCommandList: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => stdLib.SafeArray[_],
+    hasStorage: () => scala.Boolean,
+    isModified: () => scala.Boolean,
+    isReadOnly: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    reload: () => scala.Unit,
+    removeCommandFromAllKeyEvents: java.lang.String => scala.Unit,
+    removeConfigurationListener: XUIConfigurationListener => scala.Unit,
+    removeKeyEvent: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent => scala.Unit,
+    setKeyEvent: (activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent, java.lang.String) => scala.Unit,
+    setStorage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage => scala.Unit,
+    store: () => scala.Unit,
+    storeToStorage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage => scala.Unit
   ): XAcceleratorConfiguration = {
-    val __obj = js.Dynamic.literal(AllKeyEvents = AllKeyEvents, acquire = acquire, addConfigurationListener = addConfigurationListener, getAllKeyEvents = getAllKeyEvents, getCommandByKeyEvent = getCommandByKeyEvent, getKeyEventsByCommand = getKeyEventsByCommand, getPreferredKeyEventsForCommandList = getPreferredKeyEventsForCommandList, hasStorage = hasStorage, isModified = isModified, isReadOnly = isReadOnly, queryInterface = queryInterface, release = release, reload = reload, removeCommandFromAllKeyEvents = removeCommandFromAllKeyEvents, removeConfigurationListener = removeConfigurationListener, removeKeyEvent = removeKeyEvent, setKeyEvent = setKeyEvent, setStorage = setStorage, store = store, storeToStorage = storeToStorage)
+    val __obj = js.Dynamic.literal(AllKeyEvents = AllKeyEvents, acquire = js.Any.fromFunction0(acquire), addConfigurationListener = js.Any.fromFunction1(addConfigurationListener), getAllKeyEvents = js.Any.fromFunction0(getAllKeyEvents), getCommandByKeyEvent = js.Any.fromFunction1(getCommandByKeyEvent), getKeyEventsByCommand = js.Any.fromFunction1(getKeyEventsByCommand), getPreferredKeyEventsForCommandList = js.Any.fromFunction1(getPreferredKeyEventsForCommandList), hasStorage = js.Any.fromFunction0(hasStorage), isModified = js.Any.fromFunction0(isModified), isReadOnly = js.Any.fromFunction0(isReadOnly), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), reload = js.Any.fromFunction0(reload), removeCommandFromAllKeyEvents = js.Any.fromFunction1(removeCommandFromAllKeyEvents), removeConfigurationListener = js.Any.fromFunction1(removeConfigurationListener), removeKeyEvent = js.Any.fromFunction1(removeKeyEvent), setKeyEvent = js.Any.fromFunction2(setKeyEvent), setStorage = js.Any.fromFunction1(setStorage), store = js.Any.fromFunction0(store), storeToStorage = js.Any.fromFunction1(storeToStorage))
   
     __obj.asInstanceOf[XAcceleratorConfiguration]
   }

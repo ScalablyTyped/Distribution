@@ -13,7 +13,7 @@ trait Options extends js.Object {
     js.Function3[
       /* req */ nodeLib.httpMod.IncomingMessage, 
       /* file */ File, 
-      /* callback */ js.Function2[/* error */ nodeLib.Error | scala.Null, /* acceptFile */ scala.Boolean, scala.Unit], 
+      /* callback */ js.Function2[/* error */ stdLib.Error | scala.Null, /* acceptFile */ scala.Boolean, scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -30,18 +30,13 @@ object Options {
   @scala.inline
   def apply(
     dest: java.lang.String = null,
-    fileFilter: js.Function3[
-      /* req */ nodeLib.httpMod.IncomingMessage, 
-      /* file */ File, 
-      /* callback */ js.Function2[/* error */ nodeLib.Error | scala.Null, /* acceptFile */ scala.Boolean, scala.Unit], 
-      scala.Unit
-    ] = null,
+    fileFilter: (/* req */ nodeLib.httpMod.IncomingMessage, /* file */ File, /* callback */ js.Function2[/* error */ stdLib.Error | scala.Null, /* acceptFile */ scala.Boolean, scala.Unit]) => scala.Unit = null,
     limits: koaDashMulterLib.Anon_FieldNameSize = null,
     storage: StorageEngine = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (dest != null) __obj.updateDynamic("dest")(dest)
-    if (fileFilter != null) __obj.updateDynamic("fileFilter")(fileFilter)
+    if (fileFilter != null) __obj.updateDynamic("fileFilter")(js.Any.fromFunction3(fileFilter))
     if (limits != null) __obj.updateDynamic("limits")(limits)
     if (storage != null) __obj.updateDynamic("storage")(storage)
     __obj.asInstanceOf[Options]

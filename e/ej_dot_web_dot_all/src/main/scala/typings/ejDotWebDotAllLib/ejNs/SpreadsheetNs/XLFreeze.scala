@@ -39,14 +39,14 @@ trait XLFreeze extends js.Object {
 object XLFreeze {
   @scala.inline
   def apply(
-    freezeColumns: js.Function1[scala.Double, scala.Unit],
-    freezeLeftColumn: js.Function0[scala.Unit],
-    freezePanes: js.Function2[scala.Double, scala.Double, scala.Unit],
-    freezeRows: js.Function1[scala.Double, scala.Unit],
-    freezeTopRow: js.Function0[scala.Unit],
-    unfreezePanes: js.Function0[scala.Unit]
+    freezeColumns: scala.Double => scala.Unit,
+    freezeLeftColumn: () => scala.Unit,
+    freezePanes: (scala.Double, scala.Double) => scala.Unit,
+    freezeRows: scala.Double => scala.Unit,
+    freezeTopRow: () => scala.Unit,
+    unfreezePanes: () => scala.Unit
   ): XLFreeze = {
-    val __obj = js.Dynamic.literal(freezeColumns = freezeColumns, freezeLeftColumn = freezeLeftColumn, freezePanes = freezePanes, freezeRows = freezeRows, freezeTopRow = freezeTopRow, unfreezePanes = unfreezePanes)
+    val __obj = js.Dynamic.literal(freezeColumns = js.Any.fromFunction1(freezeColumns), freezeLeftColumn = js.Any.fromFunction0(freezeLeftColumn), freezePanes = js.Any.fromFunction2(freezePanes), freezeRows = js.Any.fromFunction1(freezeRows), freezeTopRow = js.Any.fromFunction0(freezeTopRow), unfreezePanes = js.Any.fromFunction0(unfreezePanes))
   
     __obj.asInstanceOf[XLFreeze]
   }

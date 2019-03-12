@@ -34,7 +34,7 @@ object ButtonProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
-    onClick: js.Function1[/* args */ gestaltLib.Anon_Event, scala.Unit] = null,
+    onClick: /* args */ gestaltLib.Anon_Event => scala.Unit = null,
     size: gestaltLib.gestaltLibStrings.sm | gestaltLib.gestaltLibStrings.md | gestaltLib.gestaltLibStrings.lg = null,
     `type`: gestaltLib.gestaltLibStrings.submit | gestaltLib.gestaltLibStrings.button = null
   ): ButtonProps = {
@@ -46,7 +46,7 @@ object ButtonProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps]

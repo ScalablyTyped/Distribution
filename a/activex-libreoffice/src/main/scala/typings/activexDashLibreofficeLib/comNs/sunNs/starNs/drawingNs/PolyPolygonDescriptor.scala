@@ -16,7 +16,7 @@ trait PolyPolygonDescriptor extends js.Object {
   /** These are the reference points for this polygon. */
   var PolyPolygon: PointSequenceSequence
   /** This is the type of polygon. */
-  var PolygonKind: PolygonKind
+  var PolygonKind: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.PolygonKind
 }
 
 object PolyPolygonDescriptor {

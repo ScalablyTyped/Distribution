@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CompleteRevocationRefs
   extends xmlDashCoreLib.xmlDashCoreMod.XmlObject {
-  var CRLRefs: CRLRefs = js.native
+  var CRLRefs: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.CRLRefs = js.native
   var Id: java.lang.String = js.native
-  var OCSPRefs: OCSPRefs = js.native
-  var OtherRefs: OtherRefs = js.native
+  var OCSPRefs: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.OCSPRefs = js.native
+  var OtherRefs: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.OtherRefs = js.native
 }
 

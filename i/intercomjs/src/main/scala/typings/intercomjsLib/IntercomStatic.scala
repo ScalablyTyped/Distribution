@@ -19,8 +19,8 @@ trait IntercomStatic extends js.Object {
 
 object IntercomStatic {
   @scala.inline
-  def apply(destroy: js.Function0[scala.Unit], getInstance: js.Function0[intercomjsLib.intercomNs.Intercom]): IntercomStatic = {
-    val __obj = js.Dynamic.literal(destroy = destroy, getInstance = getInstance)
+  def apply(destroy: () => scala.Unit, getInstance: () => intercomjsLib.intercomNs.Intercom): IntercomStatic = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getInstance = js.Any.fromFunction0(getInstance))
   
     __obj.asInstanceOf[IntercomStatic]
   }

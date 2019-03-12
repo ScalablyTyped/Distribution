@@ -68,7 +68,7 @@ trait FastifyReply[HttpResponse] extends js.Object {
 object FastifyReply {
   @scala.inline
   def apply[HttpResponse](
-    requestAccepts: js.Function0[acceptsLib.acceptsMod.acceptsNs.Accepts],
+    requestAccepts: () => acceptsLib.acceptsMod.acceptsNs.Accepts,
     requestCharset: js.Function0[js.Array[java.lang.String]] | (js.Function1[
       /* charsets */ js.Array[java.lang.String], 
       java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
@@ -126,7 +126,7 @@ object FastifyReply {
       js.Array[java.lang.String] | java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
     ])
   ): FastifyReply[HttpResponse] = {
-    val __obj = js.Dynamic.literal(requestAccepts = requestAccepts, requestCharset = requestCharset.asInstanceOf[js.Any], requestCharsets = requestCharsets.asInstanceOf[js.Any], requestEncoding = requestEncoding.asInstanceOf[js.Any], requestEncodings = requestEncodings.asInstanceOf[js.Any], requestLanguage = requestLanguage.asInstanceOf[js.Any], requestLanguages = requestLanguages.asInstanceOf[js.Any], requestType = requestType.asInstanceOf[js.Any], requestTypes = requestTypes.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(requestAccepts = js.Any.fromFunction0(requestAccepts), requestCharset = requestCharset.asInstanceOf[js.Any], requestCharsets = requestCharsets.asInstanceOf[js.Any], requestEncoding = requestEncoding.asInstanceOf[js.Any], requestEncodings = requestEncodings.asInstanceOf[js.Any], requestLanguage = requestLanguage.asInstanceOf[js.Any], requestLanguages = requestLanguages.asInstanceOf[js.Any], requestType = requestType.asInstanceOf[js.Any], requestTypes = requestTypes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FastifyReply[HttpResponse]]
   }

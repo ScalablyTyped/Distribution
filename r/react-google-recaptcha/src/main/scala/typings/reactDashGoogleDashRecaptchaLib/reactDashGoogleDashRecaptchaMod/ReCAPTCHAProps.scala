@@ -57,8 +57,8 @@ object ReCAPTCHAProps {
   def apply(
     sitekey: java.lang.String,
     badge: reactDashGoogleDashRecaptchaLib.Badge = null,
-    onChange: js.Function1[/* token */ java.lang.String | scala.Null, scala.Unit] = null,
-    onExpired: js.Function0[scala.Unit] = null,
+    onChange: /* token */ java.lang.String | scala.Null => scala.Unit = null,
+    onExpired: () => scala.Unit = null,
     size: reactDashGoogleDashRecaptchaLib.Size = null,
     stoken: java.lang.String = null,
     tabindex: scala.Int | scala.Double = null,
@@ -67,8 +67,8 @@ object ReCAPTCHAProps {
   ): ReCAPTCHAProps = {
     val __obj = js.Dynamic.literal(sitekey = sitekey)
     if (badge != null) __obj.updateDynamic("badge")(badge)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onExpired != null) __obj.updateDynamic("onExpired")(onExpired)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onExpired != null) __obj.updateDynamic("onExpired")(js.Any.fromFunction0(onExpired))
     if (size != null) __obj.updateDynamic("size")(size)
     if (stoken != null) __obj.updateDynamic("stoken")(stoken)
     if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])

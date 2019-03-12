@@ -26,8 +26,8 @@ object ^ extends js.Object {
     * Returns a stream.PassThrough. The stream emits a gzip-size event and has a gzipSize property.
     * @param options Any zlib option
     */
-  def stream(): gzipDashSizeLib.gzipDashSizeMod.GzipSizeStream = js.native
-  def stream(options: nodeLib.zlibMod.ZlibOptions): gzipDashSizeLib.gzipDashSizeMod.GzipSizeStream = js.native
+  def stream(): GzipSizeStream = js.native
+  def stream(options: nodeLib.zlibMod.ZlibOptions): GzipSizeStream = js.native
   /**
     * Returns the size synchronously
     * @param input A string or Buffer to determine the gzip size of

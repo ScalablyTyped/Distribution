@@ -143,40 +143,23 @@ object DropDownProps {
     itemPadding: scala.Int | scala.Double = null,
     itemTextStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     label: java.lang.String = null,
-    labelExtractor: js.Function2[/* item */ DropDownData, /* index */ scala.Double, java.lang.String] = null,
-    onAccessibilityTap: js.Function0[scala.Unit] = null,
-    onBlur: js.Function0[scala.Unit] = null,
-    onChangeText: js.Function3[
-      /* value */ java.lang.String, 
-      /* index */ scala.Double, 
-      /* data */ DropDownData, 
-      scala.Unit
-    ] = null,
-    onFocus: js.Function0[scala.Unit] = null,
-    onLayout: js.Function1[/* event */ reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent, scala.Unit] = null,
-    onLongPress: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onMagicTap: js.Function0[scala.Unit] = null,
-    onPress: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onPressIn: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onPressOut: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
+    labelExtractor: (/* item */ DropDownData, /* index */ scala.Double) => java.lang.String = null,
+    onAccessibilityTap: () => scala.Unit = null,
+    onBlur: () => scala.Unit = null,
+    onChangeText: (/* value */ java.lang.String, /* index */ scala.Double, /* data */ DropDownData) => scala.Unit = null,
+    onFocus: () => scala.Unit = null,
+    onLayout: /* event */ reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent => scala.Unit = null,
+    onLongPress: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onMagicTap: () => scala.Unit = null,
+    onPress: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onPressIn: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onPressOut: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
     overlayStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     pickerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     pressRetentionOffset: reactDashNativeLib.reactDashNativeMod.Insets = null,
-    propsExtractor: js.Function2[/* item */ DropDownData, /* index */ scala.Double, stdLib.Partial[DropDownProps]] = null,
-    renderAccessory: js.Function0[reactLib.reactMod.Global.JSXNs.Element] = null,
-    renderBase: js.Function1[/* props */ RenderBaseProps, reactLib.reactMod.Global.JSXNs.Element] = null,
+    propsExtractor: (/* item */ DropDownData, /* index */ scala.Double) => stdLib.Partial[DropDownProps] = null,
+    renderAccessory: () => reactLib.reactMod.Global.JSXNs.Element = null,
+    renderBase: /* props */ RenderBaseProps => reactLib.reactMod.Global.JSXNs.Element = null,
     rippleCentered: js.UndefOr[scala.Boolean] = js.undefined,
     rippleColor: java.lang.String = null,
     rippleDuration: scala.Int | scala.Double = null,
@@ -191,7 +174,7 @@ object DropDownProps {
     textColor: java.lang.String = null,
     useNativeDriver: js.UndefOr[scala.Boolean] = js.undefined,
     value: java.lang.String | scala.Double = null,
-    valueExtractor: js.Function2[/* item */ DropDownData, /* index */ scala.Double, java.lang.String] = null
+    valueExtractor: (/* item */ DropDownData, /* index */ scala.Double) => java.lang.String = null
   ): DropDownProps = {
     val __obj = js.Dynamic.literal(data = data)
     if (!js.isUndefined(absoluteRTLLayout)) __obj.updateDynamic("absoluteRTLLayout")(absoluteRTLLayout)
@@ -224,23 +207,23 @@ object DropDownProps {
     if (itemPadding != null) __obj.updateDynamic("itemPadding")(itemPadding.asInstanceOf[js.Any])
     if (itemTextStyle != null) __obj.updateDynamic("itemTextStyle")(itemTextStyle.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label)
-    if (labelExtractor != null) __obj.updateDynamic("labelExtractor")(labelExtractor)
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(onAccessibilityTap)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChangeText != null) __obj.updateDynamic("onChangeText")(onChangeText)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onLayout != null) __obj.updateDynamic("onLayout")(onLayout)
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(onMagicTap)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
-    if (onPressIn != null) __obj.updateDynamic("onPressIn")(onPressIn)
-    if (onPressOut != null) __obj.updateDynamic("onPressOut")(onPressOut)
+    if (labelExtractor != null) __obj.updateDynamic("labelExtractor")(js.Any.fromFunction2(labelExtractor))
+    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
+    if (onChangeText != null) __obj.updateDynamic("onChangeText")(js.Any.fromFunction3(onChangeText))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction0(onFocus))
+    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
+    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
+    if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction1(onPressIn))
+    if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction1(onPressOut))
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
     if (pickerStyle != null) __obj.updateDynamic("pickerStyle")(pickerStyle.asInstanceOf[js.Any])
     if (pressRetentionOffset != null) __obj.updateDynamic("pressRetentionOffset")(pressRetentionOffset)
-    if (propsExtractor != null) __obj.updateDynamic("propsExtractor")(propsExtractor)
-    if (renderAccessory != null) __obj.updateDynamic("renderAccessory")(renderAccessory)
-    if (renderBase != null) __obj.updateDynamic("renderBase")(renderBase)
+    if (propsExtractor != null) __obj.updateDynamic("propsExtractor")(js.Any.fromFunction2(propsExtractor))
+    if (renderAccessory != null) __obj.updateDynamic("renderAccessory")(js.Any.fromFunction0(renderAccessory))
+    if (renderBase != null) __obj.updateDynamic("renderBase")(js.Any.fromFunction1(renderBase))
     if (!js.isUndefined(rippleCentered)) __obj.updateDynamic("rippleCentered")(rippleCentered)
     if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor)
     if (rippleDuration != null) __obj.updateDynamic("rippleDuration")(rippleDuration.asInstanceOf[js.Any])
@@ -255,7 +238,7 @@ object DropDownProps {
     if (textColor != null) __obj.updateDynamic("textColor")(textColor)
     if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (valueExtractor != null) __obj.updateDynamic("valueExtractor")(valueExtractor)
+    if (valueExtractor != null) __obj.updateDynamic("valueExtractor")(js.Any.fromFunction2(valueExtractor))
     __obj.asInstanceOf[DropDownProps]
   }
 }

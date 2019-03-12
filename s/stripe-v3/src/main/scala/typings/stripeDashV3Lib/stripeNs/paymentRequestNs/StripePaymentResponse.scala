@@ -18,7 +18,7 @@ trait StripePaymentResponse extends js.Object {
 object StripePaymentResponse {
   @scala.inline
   def apply(
-    complete: js.Function1[java.lang.String, scala.Unit],
+    complete: java.lang.String => scala.Unit,
     methodName: java.lang.String,
     payerEmail: java.lang.String = null,
     payerName: java.lang.String = null,
@@ -26,7 +26,7 @@ object StripePaymentResponse {
     shippingAddress: ShippingAddress = null,
     shippingOption: ShippingOption = null
   ): StripePaymentResponse = {
-    val __obj = js.Dynamic.literal(complete = complete, methodName = methodName)
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete), methodName = methodName)
     if (payerEmail != null) __obj.updateDynamic("payerEmail")(payerEmail)
     if (payerName != null) __obj.updateDynamic("payerName")(payerName)
     if (payerPhone != null) __obj.updateDynamic("payerPhone")(payerPhone)

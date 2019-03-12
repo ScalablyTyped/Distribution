@@ -27,7 +27,7 @@ trait Logger extends js.Object {
   // 解析日志配置，生成相应的模板函数的字符串内容
   def parseFormat(format: java.lang.String): java.lang.String = js.native
   def parseReqParams(req: expressLib.expressMod.eNs.Request, res: expressLib.expressMod.eNs.Response): scala.Unit | yogDashLogLib.yogDashLogLibNumbers.`false` = js.native
-  def parseStackInfo(info: nodeLib.Error): scala.Unit = js.native
+  def parseStackInfo(info: stdLib.Error): scala.Unit = js.native
   def parseStackInfo(info: yogDashLogLib.yogDashLogMod.LogInfo): scala.Unit = js.native
   def setParams(name: java.lang.String, value: js.Any): scala.Unit = js.native
   def trace(info: yogDashLogLib.LogInput): scala.Unit | yogDashLogLib.yogDashLogLibNumbers.`false` = js.native

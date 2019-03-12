@@ -12,8 +12,8 @@ trait Nest extends js.Object {
 
 object Nest {
   @scala.inline
-  def apply(Burn: js.Function2[js.Any, js.Any, scala.Unit], Feather: js.Function2[js.Any, js.Any, scala.Unit]): Nest = {
-    val __obj = js.Dynamic.literal(Burn = Burn, Feather = Feather)
+  def apply(Burn: (js.Any, js.Any) => scala.Unit, Feather: (js.Any, js.Any) => scala.Unit): Nest = {
+    val __obj = js.Dynamic.literal(Burn = js.Any.fromFunction2(Burn), Feather = js.Any.fromFunction2(Feather))
   
     __obj.asInstanceOf[Nest]
   }

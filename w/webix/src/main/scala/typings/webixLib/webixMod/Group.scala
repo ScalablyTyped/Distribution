@@ -12,11 +12,8 @@ trait Group extends js.Object {
 
 object Group {
   @scala.inline
-  def apply(
-    group: js.Function2[js.Any, scala.Boolean, scala.Unit],
-    ungroup: js.Function1[scala.Boolean, scala.Unit]
-  ): Group = {
-    val __obj = js.Dynamic.literal(group = group, ungroup = ungroup)
+  def apply(group: (js.Any, scala.Boolean) => scala.Unit, ungroup: scala.Boolean => scala.Unit): Group = {
+    val __obj = js.Dynamic.literal(group = js.Any.fromFunction2(group), ungroup = js.Any.fromFunction1(ungroup))
   
     __obj.asInstanceOf[Group]
   }

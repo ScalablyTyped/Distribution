@@ -24,11 +24,6 @@ trait API extends js.Object {
   def jscodeshift(source: ASTNode): jscodeshiftLib.srcCollectionMod.Collection[_] = js.native
   def jscodeshift(source: ASTPath[ASTNode]): jscodeshiftLib.srcCollectionMod.Collection[_] = js.native
   def report(msg: java.lang.String): scala.Unit = js.native
-  /**
-    * Helper function to collect data during --dry runs.
-    * This function keeps a counter for how often it was called with a specific argument.
-    * The result is shown in the console. Useful for finding out how many files match a criterion.
-    */
   def stats(name: java.lang.String): scala.Unit = js.native
   def stats(name: java.lang.String, quantity: scala.Double): scala.Unit = js.native
 }

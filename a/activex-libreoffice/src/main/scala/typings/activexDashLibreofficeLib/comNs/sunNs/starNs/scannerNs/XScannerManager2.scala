@@ -23,26 +23,18 @@ trait XScannerManager2 extends XScannerManager {
 object XScannerManager2 {
   @scala.inline
   def apply(
-    AvailableScanners: activexDashInteropLib.SafeArray[ScannerContext],
-    acquire: js.Function0[scala.Unit],
-    configureScanner: js.Function1[js.Array[ScannerContext], scala.Boolean],
-    configureScannerAndScan: js.Function2[
-      js.Array[ScannerContext], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, 
-      scala.Boolean
-    ],
-    getAvailableScanners: js.Function0[activexDashInteropLib.SafeArray[ScannerContext]],
-    getBitmap: js.Function1[ScannerContext, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XBitmap],
-    getError: js.Function1[ScannerContext, ScanError],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    startScan: js.Function2[
-      ScannerContext, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, 
-      scala.Unit
-    ]
+    AvailableScanners: stdLib.SafeArray[ScannerContext],
+    acquire: () => scala.Unit,
+    configureScanner: js.Array[ScannerContext] => scala.Boolean,
+    configureScannerAndScan: (js.Array[ScannerContext], activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener) => scala.Boolean,
+    getAvailableScanners: () => stdLib.SafeArray[ScannerContext],
+    getBitmap: ScannerContext => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XBitmap,
+    getError: ScannerContext => ScanError,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    startScan: (ScannerContext, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener) => scala.Unit
   ): XScannerManager2 = {
-    val __obj = js.Dynamic.literal(AvailableScanners = AvailableScanners, acquire = acquire, configureScanner = configureScanner, configureScannerAndScan = configureScannerAndScan, getAvailableScanners = getAvailableScanners, getBitmap = getBitmap, getError = getError, queryInterface = queryInterface, release = release, startScan = startScan)
+    val __obj = js.Dynamic.literal(AvailableScanners = AvailableScanners, acquire = js.Any.fromFunction0(acquire), configureScanner = js.Any.fromFunction1(configureScanner), configureScannerAndScan = js.Any.fromFunction2(configureScannerAndScan), getAvailableScanners = js.Any.fromFunction0(getAvailableScanners), getBitmap = js.Any.fromFunction1(getBitmap), getError = js.Any.fromFunction1(getError), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), startScan = js.Any.fromFunction2(startScan))
   
     __obj.asInstanceOf[XScannerManager2]
   }

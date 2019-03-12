@@ -37,28 +37,28 @@ object ITime {
   def apply(
     IBoundList: extjsLib.ExtNs.viewNs.IBoundList = null,
     componentCls: java.lang.String = null,
-    focusNode: js.Function1[/* rec */ js.UndefOr[js.Any], scala.Unit] = null,
+    focusNode: /* rec */ js.UndefOr[js.Any] => scala.Unit = null,
     format: java.lang.String = null,
     increment: scala.Int | scala.Double = null,
-    initComponent: js.Function0[scala.Unit] = null,
+    initComponent: () => scala.Unit = null,
     maxValue: js.Any = null,
     minValue: js.Any = null,
-    setMaxValue: js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit] = null,
-    setMinValue: js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit] = null,
-    updateList: js.Function0[scala.Unit] = null
+    setMaxValue: /* value */ js.UndefOr[js.Any] => scala.Unit = null,
+    setMinValue: /* value */ js.UndefOr[js.Any] => scala.Unit = null,
+    updateList: () => scala.Unit = null
   ): ITime = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IBoundList)
     if (componentCls != null) __obj.updateDynamic("componentCls")(componentCls)
-    if (focusNode != null) __obj.updateDynamic("focusNode")(focusNode)
+    if (focusNode != null) __obj.updateDynamic("focusNode")(js.Any.fromFunction1(focusNode))
     if (format != null) __obj.updateDynamic("format")(format)
     if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
-    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
+    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue)
     if (minValue != null) __obj.updateDynamic("minValue")(minValue)
-    if (setMaxValue != null) __obj.updateDynamic("setMaxValue")(setMaxValue)
-    if (setMinValue != null) __obj.updateDynamic("setMinValue")(setMinValue)
-    if (updateList != null) __obj.updateDynamic("updateList")(updateList)
+    if (setMaxValue != null) __obj.updateDynamic("setMaxValue")(js.Any.fromFunction1(setMaxValue))
+    if (setMinValue != null) __obj.updateDynamic("setMinValue")(js.Any.fromFunction1(setMinValue))
+    if (updateList != null) __obj.updateDynamic("updateList")(js.Any.fromFunction0(updateList))
     __obj.asInstanceOf[ITime]
   }
 }

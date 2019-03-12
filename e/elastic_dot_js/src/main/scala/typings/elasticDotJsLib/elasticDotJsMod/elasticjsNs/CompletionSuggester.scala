@@ -74,21 +74,21 @@ trait CompletionSuggester extends Suggest {
 object CompletionSuggester {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    analyzer: js.Function1[java.lang.String, CompletionSuggester],
-    editDistance: js.Function1[scala.Double, CompletionSuggester],
-    field: js.Function1[java.lang.String, CompletionSuggester],
-    fuzzy: js.Function1[scala.Boolean, CompletionSuggester],
-    minLength: js.Function1[scala.Double, CompletionSuggester],
-    prefixLength: js.Function1[scala.Double, CompletionSuggester],
-    shardSize: js.Function1[scala.Double, CompletionSuggester],
-    size: js.Function1[scala.Double, CompletionSuggester],
-    text: js.Function1[java.lang.String, CompletionSuggester],
-    toJSON: js.Function0[js.Any],
-    transpositions: js.Function1[scala.Boolean, CompletionSuggester],
-    unicodeAware: js.Function1[scala.Boolean, CompletionSuggester]
+    _type: () => java.lang.String,
+    analyzer: java.lang.String => CompletionSuggester,
+    editDistance: scala.Double => CompletionSuggester,
+    field: java.lang.String => CompletionSuggester,
+    fuzzy: scala.Boolean => CompletionSuggester,
+    minLength: scala.Double => CompletionSuggester,
+    prefixLength: scala.Double => CompletionSuggester,
+    shardSize: scala.Double => CompletionSuggester,
+    size: scala.Double => CompletionSuggester,
+    text: java.lang.String => CompletionSuggester,
+    toJSON: () => js.Any,
+    transpositions: scala.Boolean => CompletionSuggester,
+    unicodeAware: scala.Boolean => CompletionSuggester
   ): CompletionSuggester = {
-    val __obj = js.Dynamic.literal(_type = _type, analyzer = analyzer, editDistance = editDistance, field = field, fuzzy = fuzzy, minLength = minLength, prefixLength = prefixLength, shardSize = shardSize, size = size, text = text, toJSON = toJSON, transpositions = transpositions, unicodeAware = unicodeAware)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), analyzer = js.Any.fromFunction1(analyzer), editDistance = js.Any.fromFunction1(editDistance), field = js.Any.fromFunction1(field), fuzzy = js.Any.fromFunction1(fuzzy), minLength = js.Any.fromFunction1(minLength), prefixLength = js.Any.fromFunction1(prefixLength), shardSize = js.Any.fromFunction1(shardSize), size = js.Any.fromFunction1(size), text = js.Any.fromFunction1(text), toJSON = js.Any.fromFunction0(toJSON), transpositions = js.Any.fromFunction1(transpositions), unicodeAware = js.Any.fromFunction1(unicodeAware))
   
     __obj.asInstanceOf[CompletionSuggester]
   }

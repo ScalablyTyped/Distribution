@@ -28,23 +28,20 @@ object IOverlayProps {
     isOpen: scala.Boolean,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     backdropClassName: java.lang.String = null,
-    backdropProps: reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement] = null,
+    backdropProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement] = null,
     canEscapeKeyClose: js.UndefOr[scala.Boolean] = js.undefined,
     canOutsideClickClose: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     enforceFocus: js.UndefOr[scala.Boolean] = js.undefined,
     hasBackdrop: js.UndefOr[scala.Boolean] = js.undefined,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
-    onClose: js.Function1[
-      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
-      scala.Unit
-    ] = null,
-    onClosed: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
-    onClosing: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
-    onOpened: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
-    onOpening: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
+    onClose: /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]] => scala.Unit = null,
+    onClosed: /* node */ stdLib.HTMLElement => scala.Unit = null,
+    onClosing: /* node */ stdLib.HTMLElement => scala.Unit = null,
+    onOpened: /* node */ stdLib.HTMLElement => scala.Unit = null,
+    onOpening: /* node */ stdLib.HTMLElement => scala.Unit = null,
     portalClassName: java.lang.String = null,
-    portalContainer: reactLib.HTMLElement = null,
+    portalContainer: stdLib.HTMLElement = null,
     transitionDuration: scala.Int | scala.Double = null,
     transitionName: java.lang.String = null,
     usePortal: js.UndefOr[scala.Boolean] = js.undefined
@@ -59,11 +56,11 @@ object IOverlayProps {
     if (!js.isUndefined(enforceFocus)) __obj.updateDynamic("enforceFocus")(enforceFocus)
     if (!js.isUndefined(hasBackdrop)) __obj.updateDynamic("hasBackdrop")(hasBackdrop)
     if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onClosed != null) __obj.updateDynamic("onClosed")(onClosed)
-    if (onClosing != null) __obj.updateDynamic("onClosing")(onClosing)
-    if (onOpened != null) __obj.updateDynamic("onOpened")(onOpened)
-    if (onOpening != null) __obj.updateDynamic("onOpening")(onOpening)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
+    if (onClosed != null) __obj.updateDynamic("onClosed")(js.Any.fromFunction1(onClosed))
+    if (onClosing != null) __obj.updateDynamic("onClosing")(js.Any.fromFunction1(onClosing))
+    if (onOpened != null) __obj.updateDynamic("onOpened")(js.Any.fromFunction1(onOpened))
+    if (onOpening != null) __obj.updateDynamic("onOpening")(js.Any.fromFunction1(onOpening))
     if (portalClassName != null) __obj.updateDynamic("portalClassName")(portalClassName)
     if (portalContainer != null) __obj.updateDynamic("portalContainer")(portalContainer)
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])

@@ -43,10 +43,7 @@ object ShowSelectedButtonProps {
     btnContextual: java.lang.String = null,
     btnGlyphicon: java.lang.String = null,
     className: java.lang.String = null,
-    onClick: js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
+    onClick: /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent] => scala.Unit = null,
     showAllText: java.lang.String = null,
     showOnlySelectText: java.lang.String = null
   ): ShowSelectedButtonProps = {
@@ -54,7 +51,7 @@ object ShowSelectedButtonProps {
     if (btnContextual != null) __obj.updateDynamic("btnContextual")(btnContextual)
     if (btnGlyphicon != null) __obj.updateDynamic("btnGlyphicon")(btnGlyphicon)
     if (className != null) __obj.updateDynamic("className")(className)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (showAllText != null) __obj.updateDynamic("showAllText")(showAllText)
     if (showOnlySelectText != null) __obj.updateDynamic("showOnlySelectText")(showOnlySelectText)
     __obj.asInstanceOf[ShowSelectedButtonProps]

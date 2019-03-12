@@ -213,36 +213,11 @@ object JoyrideOptions {
     nextButton: js.UndefOr[scala.Boolean] = js.undefined,
     nubPosition: js.Any = null,
     pauseAfter: js.Array[_] = null,
-    postExposeCallback: js.Function3[
-      /* index */ scala.Double, 
-      /* nextTip */ JQuery, 
-      /* el */ js.UndefOr[JQuery], 
-      scala.Unit
-    ] = null,
-    postRideCallback: js.Function3[
-      /* index */ scala.Double, 
-      /* currentTip */ JQuery, 
-      /* isAborted */ js.UndefOr[scala.Boolean], 
-      scala.Unit
-    ] = null,
-    postStepCallback: js.Function3[
-      /* index */ scala.Double, 
-      /* currentTip */ JQuery, 
-      /* isAborted */ js.UndefOr[scala.Boolean], 
-      scala.Unit
-    ] = null,
-    preRideCallback: js.Function3[
-      /* index */ scala.Double, 
-      /* currentTip */ JQuery, 
-      /* el */ js.UndefOr[JQuery], 
-      scala.Unit
-    ] = null,
-    preStepCallback: js.Function3[
-      /* index */ scala.Double, 
-      /* nextTip */ JQuery, 
-      /* el */ js.UndefOr[JQuery], 
-      scala.Unit
-    ] = null,
+    postExposeCallback: (/* index */ scala.Double, /* nextTip */ JQuery, /* el */ js.UndefOr[JQuery]) => scala.Unit = null,
+    postRideCallback: (/* index */ scala.Double, /* currentTip */ JQuery, /* isAborted */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
+    postStepCallback: (/* index */ scala.Double, /* currentTip */ JQuery, /* isAborted */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
+    preRideCallback: (/* index */ scala.Double, /* currentTip */ JQuery, /* el */ js.UndefOr[JQuery]) => scala.Unit = null,
+    preStepCallback: (/* index */ scala.Double, /* nextTip */ JQuery, /* el */ js.UndefOr[JQuery]) => scala.Unit = null,
     scroll: js.UndefOr[scala.Boolean] = js.undefined,
     scrollSpeed: scala.Int | scala.Double = null,
     startOffset: scala.Int | scala.Double = null,
@@ -268,11 +243,11 @@ object JoyrideOptions {
     if (!js.isUndefined(nextButton)) __obj.updateDynamic("nextButton")(nextButton)
     if (nubPosition != null) __obj.updateDynamic("nubPosition")(nubPosition)
     if (pauseAfter != null) __obj.updateDynamic("pauseAfter")(pauseAfter)
-    if (postExposeCallback != null) __obj.updateDynamic("postExposeCallback")(postExposeCallback)
-    if (postRideCallback != null) __obj.updateDynamic("postRideCallback")(postRideCallback)
-    if (postStepCallback != null) __obj.updateDynamic("postStepCallback")(postStepCallback)
-    if (preRideCallback != null) __obj.updateDynamic("preRideCallback")(preRideCallback)
-    if (preStepCallback != null) __obj.updateDynamic("preStepCallback")(preStepCallback)
+    if (postExposeCallback != null) __obj.updateDynamic("postExposeCallback")(js.Any.fromFunction3(postExposeCallback))
+    if (postRideCallback != null) __obj.updateDynamic("postRideCallback")(js.Any.fromFunction3(postRideCallback))
+    if (postStepCallback != null) __obj.updateDynamic("postStepCallback")(js.Any.fromFunction3(postStepCallback))
+    if (preRideCallback != null) __obj.updateDynamic("preRideCallback")(js.Any.fromFunction3(preRideCallback))
+    if (preStepCallback != null) __obj.updateDynamic("preStepCallback")(js.Any.fromFunction3(preStepCallback))
     if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
     if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
     if (startOffset != null) __obj.updateDynamic("startOffset")(startOffset.asInstanceOf[js.Any])

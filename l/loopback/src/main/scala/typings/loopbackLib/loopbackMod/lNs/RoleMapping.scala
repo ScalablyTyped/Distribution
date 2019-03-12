@@ -27,20 +27,20 @@ trait RoleMapping extends PersistedModel {
     * @param {Error} err
     * @param {Application} application
     */
-  def application(callback: js.Function2[/* err */ nodeLib.Error, /* application */ Application, scala.Unit]): scala.Unit = js.native
+  def application(callback: js.Function2[/* err */ stdLib.Error, /* application */ Application, scala.Unit]): scala.Unit = js.native
   /**
     * Get the child role principal
     * @callback {() => void} callback
     * @param {Error} err
     * @param {User} childUser
     */
-  def childRole(callback: js.Function2[/* err */ nodeLib.Error, /* childUser */ User, scala.Unit]): scala.Unit = js.native
+  def childRole(callback: js.Function2[/* err */ stdLib.Error, /* childUser */ User, scala.Unit]): scala.Unit = js.native
   /**
     * Get the user principal
     * @callback {() => void} callback
     * @param {Error} err
     * @param {User} user
     */
-  def user(callback: js.Function2[/* err */ nodeLib.Error, /* user */ User, scala.Unit]): scala.Unit = js.native
+  def user(callback: js.Function2[/* err */ stdLib.Error, /* user */ User, scala.Unit]): scala.Unit = js.native
 }
 

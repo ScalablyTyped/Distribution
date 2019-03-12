@@ -19,10 +19,10 @@ object RESTAPIRequestBody {
     data: T,
     dataStream: js.Object,
     dataString: java.lang.String,
-    hasNext: js.Function0[scala.Boolean],
-    nextEntry: js.Function0[js.Any]
+    hasNext: () => scala.Boolean,
+    nextEntry: () => js.Any
   ): RESTAPIRequestBody[T] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataStream = dataStream, dataString = dataString, hasNext = hasNext, nextEntry = nextEntry)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataStream = dataStream, dataString = dataString, hasNext = js.Any.fromFunction0(hasNext), nextEntry = js.Any.fromFunction0(nextEntry))
   
     __obj.asInstanceOf[RESTAPIRequestBody[T]]
   }

@@ -38,10 +38,10 @@ object RootContext {
     clean: js.Promise[scala.Null],
     components: js.Array[js.Object],
     flags: RootContextFlags,
-    scheduler: js.Function1[js.Function0[scala.Unit], scala.Unit],
+    scheduler: js.Function0[scala.Unit] => scala.Unit,
     playerHandler: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerHandler = null
   ): RootContext = {
-    val __obj = js.Dynamic.literal(clean = clean, components = components, flags = flags, scheduler = scheduler)
+    val __obj = js.Dynamic.literal(clean = clean, components = components, flags = flags, scheduler = js.Any.fromFunction1(scheduler))
     if (playerHandler != null) __obj.updateDynamic("playerHandler")(playerHandler)
     __obj.asInstanceOf[RootContext]
   }

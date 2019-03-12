@@ -56,15 +56,15 @@ object XAccessibleAction {
   @scala.inline
   def apply(
     AccessibleActionCount: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    doAccessibleAction: js.Function1[scala.Double, scala.Boolean],
-    getAccessibleActionCount: js.Function0[scala.Double],
-    getAccessibleActionDescription: js.Function1[scala.Double, java.lang.String],
-    getAccessibleActionKeyBinding: js.Function1[scala.Double, XAccessibleKeyBinding],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    doAccessibleAction: scala.Double => scala.Boolean,
+    getAccessibleActionCount: () => scala.Double,
+    getAccessibleActionDescription: scala.Double => java.lang.String,
+    getAccessibleActionKeyBinding: scala.Double => XAccessibleKeyBinding,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAccessibleAction = {
-    val __obj = js.Dynamic.literal(AccessibleActionCount = AccessibleActionCount, acquire = acquire, doAccessibleAction = doAccessibleAction, getAccessibleActionCount = getAccessibleActionCount, getAccessibleActionDescription = getAccessibleActionDescription, getAccessibleActionKeyBinding = getAccessibleActionKeyBinding, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(AccessibleActionCount = AccessibleActionCount, acquire = js.Any.fromFunction0(acquire), doAccessibleAction = js.Any.fromFunction1(doAccessibleAction), getAccessibleActionCount = js.Any.fromFunction0(getAccessibleActionCount), getAccessibleActionDescription = js.Any.fromFunction1(getAccessibleActionDescription), getAccessibleActionKeyBinding = js.Any.fromFunction1(getAccessibleActionKeyBinding), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAccessibleAction]
   }

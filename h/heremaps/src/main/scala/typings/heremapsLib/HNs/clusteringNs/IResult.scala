@@ -34,12 +34,12 @@ trait IResult extends js.Object {
 object IResult {
   @scala.inline
   def apply(
-    getMinZoom: js.Function0[scala.Double],
-    getPosition: js.Function0[heremapsLib.HNs.geoNs.Point],
-    getWeight: js.Function0[scala.Double],
-    isCluster: js.Function0[scala.Boolean]
+    getMinZoom: () => scala.Double,
+    getPosition: () => heremapsLib.HNs.geoNs.Point,
+    getWeight: () => scala.Double,
+    isCluster: () => scala.Boolean
   ): IResult = {
-    val __obj = js.Dynamic.literal(getMinZoom = getMinZoom, getPosition = getPosition, getWeight = getWeight, isCluster = isCluster)
+    val __obj = js.Dynamic.literal(getMinZoom = js.Any.fromFunction0(getMinZoom), getPosition = js.Any.fromFunction0(getPosition), getWeight = js.Any.fromFunction0(getWeight), isCluster = js.Any.fromFunction0(isCluster))
   
     __obj.asInstanceOf[IResult]
   }

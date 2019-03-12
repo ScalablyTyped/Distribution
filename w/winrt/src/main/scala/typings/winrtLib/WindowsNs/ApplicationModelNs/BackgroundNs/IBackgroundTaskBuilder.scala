@@ -16,13 +16,13 @@ trait IBackgroundTaskBuilder extends js.Object {
 object IBackgroundTaskBuilder {
   @scala.inline
   def apply(
-    addCondition: js.Function1[IBackgroundCondition, scala.Unit],
+    addCondition: IBackgroundCondition => scala.Unit,
     name: java.lang.String,
-    register: js.Function0[BackgroundTaskRegistration],
-    setTrigger: js.Function1[IBackgroundTrigger, scala.Unit],
+    register: () => BackgroundTaskRegistration,
+    setTrigger: IBackgroundTrigger => scala.Unit,
     taskEntryPoint: java.lang.String
   ): IBackgroundTaskBuilder = {
-    val __obj = js.Dynamic.literal(addCondition = addCondition, name = name, register = register, setTrigger = setTrigger, taskEntryPoint = taskEntryPoint)
+    val __obj = js.Dynamic.literal(addCondition = js.Any.fromFunction1(addCondition), name = name, register = js.Any.fromFunction0(register), setTrigger = js.Any.fromFunction1(setTrigger), taskEntryPoint = taskEntryPoint)
   
     __obj.asInstanceOf[IBackgroundTaskBuilder]
   }

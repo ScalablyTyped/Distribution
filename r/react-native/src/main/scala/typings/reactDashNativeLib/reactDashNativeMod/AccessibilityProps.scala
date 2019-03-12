@@ -46,8 +46,8 @@ object AccessibilityProps {
     accessibilityTraits: reactDashNativeLib.AccessibilityTrait | js.Array[reactDashNativeLib.AccessibilityTrait] = null,
     accessible: js.UndefOr[scala.Boolean] = js.undefined,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
-    onAccessibilityTap: js.Function0[scala.Unit] = null,
-    onMagicTap: js.Function0[scala.Unit] = null
+    onAccessibilityTap: () => scala.Unit = null,
+    onMagicTap: () => scala.Unit = null
   ): AccessibilityProps = {
     val __obj = js.Dynamic.literal()
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
@@ -61,8 +61,8 @@ object AccessibilityProps {
     if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible)
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(onAccessibilityTap)
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(onMagicTap)
+    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
+    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
     __obj.asInstanceOf[AccessibilityProps]
   }
 }

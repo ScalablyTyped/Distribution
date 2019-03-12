@@ -16,13 +16,13 @@ trait Transaction extends js.Object {
 object Transaction {
   @scala.inline
   def apply(
-    abort: js.Function0[js.Promise[scala.Unit]],
-    commit: js.Function0[js.Promise[scala.Unit]],
-    send: js.Function1[MessagePayload, js.Promise[scala.Unit]],
-    sendBatch: js.Function1[MessageBatchPayload, js.Promise[scala.Unit]],
-    sendOffsets: js.Function1[TransactionSendOffsets, js.Promise[scala.Unit]]
+    abort: () => js.Promise[scala.Unit],
+    commit: () => js.Promise[scala.Unit],
+    send: MessagePayload => js.Promise[scala.Unit],
+    sendBatch: MessageBatchPayload => js.Promise[scala.Unit],
+    sendOffsets: TransactionSendOffsets => js.Promise[scala.Unit]
   ): Transaction = {
-    val __obj = js.Dynamic.literal(abort = abort, commit = commit, send = send, sendBatch = sendBatch, sendOffsets = sendOffsets)
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), commit = js.Any.fromFunction0(commit), send = js.Any.fromFunction1(send), sendBatch = js.Any.fromFunction1(sendBatch), sendOffsets = js.Any.fromFunction1(sendOffsets))
   
     __obj.asInstanceOf[Transaction]
   }

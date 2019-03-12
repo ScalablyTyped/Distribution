@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SelectNamesDialog protected () extends js.Object {
   var AllowMultipleSelection: scala.Boolean = js.native
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   var BccLabel: java.lang.String = js.native
   var Caption: java.lang.String = js.native
   var CcLabel: java.lang.String = js.native
@@ -19,7 +19,7 @@ class SelectNamesDialog protected () extends js.Object {
   var NumberOfRecipientSelectors: OlRecipientSelectors = js.native
   var `Outlook.SelectNamesDialog_typekey`: SelectNamesDialog = js.native
   val Parent: js.Any = js.native
-  var Recipients: Recipients = js.native
+  var Recipients: activexDashOutlookLib.OutlookNs.Recipients = js.native
   val Session: NameSpace = js.native
   var ShowOnlyInitialAddressList: scala.Boolean = js.native
   var ToLabel: java.lang.String = js.native

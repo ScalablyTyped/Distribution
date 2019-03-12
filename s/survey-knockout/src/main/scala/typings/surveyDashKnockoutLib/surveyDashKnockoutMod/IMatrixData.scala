@@ -11,8 +11,8 @@ trait IMatrixData extends js.Object {
 
 object IMatrixData {
   @scala.inline
-  def apply(onMatrixRowChanged: js.Function1[MatrixRowModel, scala.Unit]): IMatrixData = {
-    val __obj = js.Dynamic.literal(onMatrixRowChanged = onMatrixRowChanged)
+  def apply(onMatrixRowChanged: MatrixRowModel => scala.Unit): IMatrixData = {
+    val __obj = js.Dynamic.literal(onMatrixRowChanged = js.Any.fromFunction1(onMatrixRowChanged))
   
     __obj.asInstanceOf[IMatrixData]
   }

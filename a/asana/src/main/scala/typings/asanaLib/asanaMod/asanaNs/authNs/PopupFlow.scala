@@ -17,17 +17,17 @@ trait PopupFlow extends BaseBrowserFlow {
 object PopupFlow {
   @scala.inline
   def apply(
-    _popupParams: js.Function2[scala.Double, scala.Double, scala.Unit],
-    asanaBaseUrl: js.Function0[java.lang.String],
-    authorizeUrl: js.Function0[java.lang.String],
-    finishAuthorization: js.Function1[java.lang.String, scala.Unit],
-    getStateParam: js.Function0[java.lang.String],
-    receiverUrl: js.Function0[java.lang.String],
-    run: js.Function0[scala.Unit],
-    runReceiver: js.Function0[scala.Unit],
-    startAuthorization: js.Function2[java.lang.String, java.lang.String, js.Any]
+    _popupParams: (scala.Double, scala.Double) => scala.Unit,
+    asanaBaseUrl: () => java.lang.String,
+    authorizeUrl: () => java.lang.String,
+    finishAuthorization: java.lang.String => scala.Unit,
+    getStateParam: () => java.lang.String,
+    receiverUrl: () => java.lang.String,
+    run: () => scala.Unit,
+    runReceiver: () => scala.Unit,
+    startAuthorization: (java.lang.String, java.lang.String) => js.Any
   ): PopupFlow = {
-    val __obj = js.Dynamic.literal(_popupParams = _popupParams, asanaBaseUrl = asanaBaseUrl, authorizeUrl = authorizeUrl, finishAuthorization = finishAuthorization, getStateParam = getStateParam, receiverUrl = receiverUrl, run = run, runReceiver = runReceiver, startAuthorization = startAuthorization)
+    val __obj = js.Dynamic.literal(_popupParams = js.Any.fromFunction2(_popupParams), asanaBaseUrl = js.Any.fromFunction0(asanaBaseUrl), authorizeUrl = js.Any.fromFunction0(authorizeUrl), finishAuthorization = js.Any.fromFunction1(finishAuthorization), getStateParam = js.Any.fromFunction0(getStateParam), receiverUrl = js.Any.fromFunction0(receiverUrl), run = js.Any.fromFunction0(run), runReceiver = js.Any.fromFunction0(runReceiver), startAuthorization = js.Any.fromFunction2(startAuthorization))
   
     __obj.asInstanceOf[PopupFlow]
   }

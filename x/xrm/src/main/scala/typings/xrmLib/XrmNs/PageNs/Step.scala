@@ -15,11 +15,11 @@ trait Step
 object Step {
   @scala.inline
   def apply(
-    getAttribute: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    isRequired: js.Function0[scala.Boolean]
+    getAttribute: () => java.lang.String,
+    getName: () => java.lang.String,
+    isRequired: () => scala.Boolean
   ): Step = {
-    val __obj = js.Dynamic.literal(getAttribute = getAttribute, getName = getName, isRequired = isRequired)
+    val __obj = js.Dynamic.literal(getAttribute = js.Any.fromFunction0(getAttribute), getName = js.Any.fromFunction0(getName), isRequired = js.Any.fromFunction0(isRequired))
   
     __obj.asInstanceOf[Step]
   }

@@ -12,8 +12,8 @@ trait BaseError extends js.Object {
 
 object BaseError {
   @scala.inline
-  def apply(init: js.Function1[java.lang.String, scala.Unit], name: java.lang.String): BaseError = {
-    val __obj = js.Dynamic.literal(init = init, name = name)
+  def apply(init: java.lang.String => scala.Unit, name: java.lang.String): BaseError = {
+    val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init), name = name)
   
     __obj.asInstanceOf[BaseError]
   }

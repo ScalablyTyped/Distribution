@@ -22,19 +22,19 @@ trait BigQueryDataSourceSpecBuilder extends js.Object {
 object BigQueryDataSourceSpecBuilder {
   @scala.inline
   def apply(
-    build: js.Function0[DataSourceSpec],
-    copy: js.Function0[DataSourceSpecBuilder],
-    getParameters: js.Function0[js.Array[DataSourceParameter]],
-    getProjectId: js.Function0[java.lang.String],
-    getRawQuery: js.Function0[java.lang.String],
-    getType: js.Function0[DataSourceType],
-    removeAllParameters: js.Function0[BigQueryDataSourceSpecBuilder],
-    removeParameter: js.Function1[java.lang.String, BigQueryDataSourceSpecBuilder],
-    setParameterFromCell: js.Function2[java.lang.String, java.lang.String, BigQueryDataSourceSpecBuilder],
-    setProjectId: js.Function1[java.lang.String, BigQueryDataSourceSpecBuilder],
-    setRawQuery: js.Function1[java.lang.String, BigQueryDataSourceSpecBuilder]
+    build: () => DataSourceSpec,
+    copy: () => DataSourceSpecBuilder,
+    getParameters: () => js.Array[DataSourceParameter],
+    getProjectId: () => java.lang.String,
+    getRawQuery: () => java.lang.String,
+    getType: () => DataSourceType,
+    removeAllParameters: () => BigQueryDataSourceSpecBuilder,
+    removeParameter: java.lang.String => BigQueryDataSourceSpecBuilder,
+    setParameterFromCell: (java.lang.String, java.lang.String) => BigQueryDataSourceSpecBuilder,
+    setProjectId: java.lang.String => BigQueryDataSourceSpecBuilder,
+    setRawQuery: java.lang.String => BigQueryDataSourceSpecBuilder
   ): BigQueryDataSourceSpecBuilder = {
-    val __obj = js.Dynamic.literal(build = build, copy = copy, getParameters = getParameters, getProjectId = getProjectId, getRawQuery = getRawQuery, getType = getType, removeAllParameters = removeAllParameters, removeParameter = removeParameter, setParameterFromCell = setParameterFromCell, setProjectId = setProjectId, setRawQuery = setRawQuery)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), copy = js.Any.fromFunction0(copy), getParameters = js.Any.fromFunction0(getParameters), getProjectId = js.Any.fromFunction0(getProjectId), getRawQuery = js.Any.fromFunction0(getRawQuery), getType = js.Any.fromFunction0(getType), removeAllParameters = js.Any.fromFunction0(removeAllParameters), removeParameter = js.Any.fromFunction1(removeParameter), setParameterFromCell = js.Any.fromFunction2(setParameterFromCell), setProjectId = js.Any.fromFunction1(setProjectId), setRawQuery = js.Any.fromFunction1(setRawQuery))
   
     __obj.asInstanceOf[BigQueryDataSourceSpecBuilder]
   }

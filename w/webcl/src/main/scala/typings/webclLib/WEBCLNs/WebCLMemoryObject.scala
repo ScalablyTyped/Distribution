@@ -13,8 +13,8 @@ trait WebCLMemoryObject extends js.Object {
 
 object WebCLMemoryObject {
   @scala.inline
-  def apply(getInfo: js.Function1[MemInfo, js.Any], release: js.Function0[scala.Unit]): WebCLMemoryObject = {
-    val __obj = js.Dynamic.literal(getInfo = getInfo, release = release)
+  def apply(getInfo: MemInfo => js.Any, release: () => scala.Unit): WebCLMemoryObject = {
+    val __obj = js.Dynamic.literal(getInfo = js.Any.fromFunction1(getInfo), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[WebCLMemoryObject]
   }

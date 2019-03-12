@@ -11,8 +11,8 @@ trait NextPageComponentMethods extends js.Object {
 
 object NextPageComponentMethods {
   @scala.inline
-  def apply(getInitialProps: js.Function1[js.Any, js.Promise[_]]): NextPageComponentMethods = {
-    val __obj = js.Dynamic.literal(getInitialProps = getInitialProps)
+  def apply(getInitialProps: js.Any => js.Promise[_]): NextPageComponentMethods = {
+    val __obj = js.Dynamic.literal(getInitialProps = js.Any.fromFunction1(getInitialProps))
   
     __obj.asInstanceOf[NextPageComponentMethods]
   }

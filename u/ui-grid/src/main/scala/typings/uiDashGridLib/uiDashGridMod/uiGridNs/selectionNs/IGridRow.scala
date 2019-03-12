@@ -35,11 +35,11 @@ trait IGridRow extends js.Object {
 object IGridRow {
   @scala.inline
   def apply(
-    setSelected: js.Function1[scala.Boolean, scala.Unit],
+    setSelected: scala.Boolean => scala.Unit,
     enableSelection: js.UndefOr[scala.Boolean] = js.undefined,
     isSelected: js.UndefOr[scala.Boolean] = js.undefined
   ): IGridRow = {
-    val __obj = js.Dynamic.literal(setSelected = setSelected)
+    val __obj = js.Dynamic.literal(setSelected = js.Any.fromFunction1(setSelected))
     if (!js.isUndefined(enableSelection)) __obj.updateDynamic("enableSelection")(enableSelection)
     if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected)
     __obj.asInstanceOf[IGridRow]

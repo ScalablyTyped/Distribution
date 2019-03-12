@@ -22,19 +22,19 @@ trait IEvent extends js.Object {
 object IEvent {
   @scala.inline
   def apply(
-    allowMapEvent: js.Function0[scala.Unit],
-    callMethod: js.Function1[java.lang.String, scala.Unit],
-    get: js.Function1[java.lang.String, js.Object],
-    getSourceEvent: js.Function0[IEvent | scala.Null],
-    isDefaultPrevented: js.Function0[scala.Boolean],
-    isImmediatePropagationStopped: js.Function0[scala.Boolean],
-    isMapEventAllowed: js.Function0[scala.Boolean],
-    isPropagationStopped: js.Function0[scala.Boolean],
-    preventDefault: js.Function0[scala.Boolean],
-    stopImmediatePropagation: js.Function0[scala.Boolean],
-    stopPropagation: js.Function0[scala.Boolean]
+    allowMapEvent: () => scala.Unit,
+    callMethod: java.lang.String => scala.Unit,
+    get: java.lang.String => js.Object,
+    getSourceEvent: () => IEvent | scala.Null,
+    isDefaultPrevented: () => scala.Boolean,
+    isImmediatePropagationStopped: () => scala.Boolean,
+    isMapEventAllowed: () => scala.Boolean,
+    isPropagationStopped: () => scala.Boolean,
+    preventDefault: () => scala.Boolean,
+    stopImmediatePropagation: () => scala.Boolean,
+    stopPropagation: () => scala.Boolean
   ): IEvent = {
-    val __obj = js.Dynamic.literal(allowMapEvent = allowMapEvent, callMethod = callMethod, get = get, getSourceEvent = getSourceEvent, isDefaultPrevented = isDefaultPrevented, isImmediatePropagationStopped = isImmediatePropagationStopped, isMapEventAllowed = isMapEventAllowed, isPropagationStopped = isPropagationStopped, preventDefault = preventDefault, stopImmediatePropagation = stopImmediatePropagation, stopPropagation = stopPropagation)
+    val __obj = js.Dynamic.literal(allowMapEvent = js.Any.fromFunction0(allowMapEvent), callMethod = js.Any.fromFunction1(callMethod), get = js.Any.fromFunction1(get), getSourceEvent = js.Any.fromFunction0(getSourceEvent), isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isMapEventAllowed = js.Any.fromFunction0(isMapEventAllowed), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation))
   
     __obj.asInstanceOf[IEvent]
   }

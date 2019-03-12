@@ -28,7 +28,7 @@ trait CanvasShapes extends js.Object {
     EndX: scala.Double,
     EndY: scala.Double
   ): Shape = js.native
-  def AddCurve(SafeArrayOfPoints: activexDashInteropLib.SafeArray[scala.Double]): Shape = js.native
+  def AddCurve(SafeArrayOfPoints: stdLib.SafeArray[scala.Double]): Shape = js.native
   def AddLabel(
     Orientation: MsoTextOrientation,
     Left: scala.Double,
@@ -65,7 +65,7 @@ trait CanvasShapes extends js.Object {
     Width: scala.Double,
     Height: scala.Double
   ): Shape = js.native
-  def AddPolyline(SafeArrayOfPoints: activexDashInteropLib.SafeArray[scala.Double]): Shape = js.native
+  def AddPolyline(SafeArrayOfPoints: stdLib.SafeArray[scala.Double]): Shape = js.native
   def AddShape(
     Type: MsoAutoShapeType,
     Left: scala.Double,

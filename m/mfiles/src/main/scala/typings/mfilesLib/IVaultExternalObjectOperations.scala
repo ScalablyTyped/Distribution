@@ -17,15 +17,9 @@ trait IVaultExternalObjectOperations extends js.Object {
 object IVaultExternalObjectOperations {
   @scala.inline
   def apply(
-    PromoteObject: js.Function4[
-      IObjVer, 
-      IPropertyValues, 
-      mfilesLib.MFilesNs.MFACLEnforcingMode, 
-      IAccessControlList, 
-      IObjectVersionAndProperties
-    ]
+    PromoteObject: (IObjVer, IPropertyValues, mfilesLib.MFilesNs.MFACLEnforcingMode, IAccessControlList) => IObjectVersionAndProperties
   ): IVaultExternalObjectOperations = {
-    val __obj = js.Dynamic.literal(PromoteObject = PromoteObject)
+    val __obj = js.Dynamic.literal(PromoteObject = js.Any.fromFunction4(PromoteObject))
   
     __obj.asInstanceOf[IVaultExternalObjectOperations]
   }

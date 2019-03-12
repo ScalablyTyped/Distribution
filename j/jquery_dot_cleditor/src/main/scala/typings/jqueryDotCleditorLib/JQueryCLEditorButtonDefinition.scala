@@ -37,33 +37,25 @@ object JQueryCLEditorButtonDefinition {
   def apply(
     name: java.lang.String,
     title: java.lang.String,
-    buttonClick: js.Function2[
-      /* event */ stdLib.Event, 
-      /* data */ JQueryCLEditorButtonDefinitionEventData, 
-      scala.Boolean
-    ] = null,
+    buttonClick: (/* event */ stdLib.Event, /* data */ JQueryCLEditorButtonDefinitionEventData) => scala.Boolean = null,
     command: java.lang.String = null,
     css: js.Any = null,
-    getEnabled: js.Function1[/* data */ JQueryCLEditorButtonDefinitionEventData, scala.Boolean] = null,
-    getPressed: js.Function1[/* data */ JQueryCLEditorButtonDefinitionEventData, scala.Boolean] = null,
+    getEnabled: /* data */ JQueryCLEditorButtonDefinitionEventData => scala.Boolean = null,
+    getPressed: /* data */ JQueryCLEditorButtonDefinitionEventData => scala.Boolean = null,
     image: java.lang.String = null,
-    popupClick: js.Function2[
-      /* event */ stdLib.Event, 
-      /* data */ JQueryCLEditorButtonDefinitionEventData, 
-      scala.Boolean
-    ] = null,
+    popupClick: (/* event */ stdLib.Event, /* data */ JQueryCLEditorButtonDefinitionEventData) => scala.Boolean = null,
     popupContent: java.lang.String = null,
     popupName: java.lang.String = null,
     stripIndex: scala.Int | scala.Double = null
   ): JQueryCLEditorButtonDefinition = {
     val __obj = js.Dynamic.literal(name = name, title = title)
-    if (buttonClick != null) __obj.updateDynamic("buttonClick")(buttonClick)
+    if (buttonClick != null) __obj.updateDynamic("buttonClick")(js.Any.fromFunction2(buttonClick))
     if (command != null) __obj.updateDynamic("command")(command)
     if (css != null) __obj.updateDynamic("css")(css)
-    if (getEnabled != null) __obj.updateDynamic("getEnabled")(getEnabled)
-    if (getPressed != null) __obj.updateDynamic("getPressed")(getPressed)
+    if (getEnabled != null) __obj.updateDynamic("getEnabled")(js.Any.fromFunction1(getEnabled))
+    if (getPressed != null) __obj.updateDynamic("getPressed")(js.Any.fromFunction1(getPressed))
     if (image != null) __obj.updateDynamic("image")(image)
-    if (popupClick != null) __obj.updateDynamic("popupClick")(popupClick)
+    if (popupClick != null) __obj.updateDynamic("popupClick")(js.Any.fromFunction2(popupClick))
     if (popupContent != null) __obj.updateDynamic("popupContent")(popupContent)
     if (popupName != null) __obj.updateDynamic("popupName")(popupName)
     if (stripIndex != null) __obj.updateDynamic("stripIndex")(stripIndex.asInstanceOf[js.Any])

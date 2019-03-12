@@ -17,9 +17,7 @@ object ^ extends js.Object {
     * @since Chrome 41.
     * @see[permissions.request]{@link https://developer.chrome.com/apps/permissions#method-request}
     */
-  val onDeviceAdded: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[/* device */ chromeDashAppsLib.chromeNs.hidNs.HidDeviceInfo, scala.Unit]
-  ] = js.native
+  val onDeviceAdded: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* device */ HidDeviceInfo, scala.Unit]] = js.native
   /**
     * Event generated when a device is removed from the system.
     * The callback will contain the deviceId property of the device passed to onDeviceAdded.
@@ -50,10 +48,7 @@ object ^ extends js.Object {
     * @param options The properties to search for on target devices.
     * @param callback
     */
-  def getDevices(
-    options: chromeDashAppsLib.chromeNs.hidNs.DeviceOptions,
-    callback: js.Function1[/* devices */ js.Array[chromeDashAppsLib.chromeNs.hidNs.HidDeviceInfo], scala.Unit]
-  ): scala.Unit = js.native
+  def getDevices(options: DeviceOptions, callback: js.Function1[/* devices */ js.Array[HidDeviceInfo], scala.Unit]): scala.Unit = js.native
   /**
     * @requires(dev) **Dev channel only!**
     * @see[Learn more]{@link https://developer.chrome.com/apps/api_index#dev_apis}
@@ -66,7 +61,7 @@ object ^ extends js.Object {
     * filters are provided devices matching any filter will be displayed.
     * @param callback Invoked with a list of chosen Devices.
     */
-  def getUserSelectedDevices(callback: js.Function1[/* devices */ chromeDashAppsLib.chromeNs.hidNs.HidDeviceInfo, scala.Unit]): scala.Unit = js.native
+  def getUserSelectedDevices(callback: js.Function1[/* devices */ HidDeviceInfo, scala.Unit]): scala.Unit = js.native
   /**
     * @since Chrome 45.
     * @requires(dev) **Dev channel only!**
@@ -81,8 +76,8 @@ object ^ extends js.Object {
     * @param callback Invoked with a list of chosen Devices.
     */
   def getUserSelectedDevices(
-    options: chromeDashAppsLib.chromeNs.hidNs.UserSelectedDevicePickerOptions,
-    callback: js.Function1[/* devices */ chromeDashAppsLib.chromeNs.hidNs.HidDeviceInfo, scala.Unit]
+    options: UserSelectedDevicePickerOptions,
+    callback: js.Function1[/* devices */ HidDeviceInfo, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Receive the next input report from the device.

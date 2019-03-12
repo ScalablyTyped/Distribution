@@ -16,22 +16,22 @@ object StartModule {
     Frame: XFrame,
     Model: XModel,
     ViewData: js.Any,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    attachFrame: js.Function1[XFrame, scala.Unit],
-    attachModel: js.Function1[XModel, scala.Boolean],
-    createWithParentWindow: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    getFrame: js.Function0[XFrame],
-    getModel: js.Function0[XModel],
-    getViewData: js.Function0[js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    restoreViewData: js.Function1[js.Any, scala.Unit],
-    suspend: js.Function1[scala.Boolean, scala.Boolean]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    attachFrame: XFrame => scala.Unit,
+    attachModel: XModel => scala.Boolean,
+    createWithParentWindow: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow => scala.Unit,
+    dispose: () => scala.Unit,
+    getFrame: () => XFrame,
+    getModel: () => XModel,
+    getViewData: () => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    restoreViewData: js.Any => scala.Unit,
+    suspend: scala.Boolean => scala.Boolean
   ): StartModule = {
-    val __obj = js.Dynamic.literal(Frame = Frame, Model = Model, ViewData = ViewData, acquire = acquire, addEventListener = addEventListener, attachFrame = attachFrame, attachModel = attachModel, createWithParentWindow = createWithParentWindow, dispose = dispose, getFrame = getFrame, getModel = getModel, getViewData = getViewData, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, restoreViewData = restoreViewData, suspend = suspend)
+    val __obj = js.Dynamic.literal(Frame = Frame, Model = Model, ViewData = ViewData, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), attachFrame = js.Any.fromFunction1(attachFrame), attachModel = js.Any.fromFunction1(attachModel), createWithParentWindow = js.Any.fromFunction1(createWithParentWindow), dispose = js.Any.fromFunction0(dispose), getFrame = js.Any.fromFunction0(getFrame), getModel = js.Any.fromFunction0(getModel), getViewData = js.Any.fromFunction0(getViewData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), restoreViewData = js.Any.fromFunction1(restoreViewData), suspend = js.Any.fromFunction1(suspend))
   
     __obj.asInstanceOf[StartModule]
   }

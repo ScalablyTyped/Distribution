@@ -18,9 +18,9 @@ object GetFileMatchersOptions {
     customBuildOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlatformSpecificBuildOptions */ js.Any,
     defaultSrc: java.lang.String,
     globalOutDir: java.lang.String,
-    macroExpander: js.Function1[java.lang.String, java.lang.String]
+    macroExpander: java.lang.String => java.lang.String
   ): GetFileMatchersOptions = {
-    val __obj = js.Dynamic.literal(customBuildOptions = customBuildOptions, defaultSrc = defaultSrc, globalOutDir = globalOutDir, macroExpander = macroExpander)
+    val __obj = js.Dynamic.literal(customBuildOptions = customBuildOptions, defaultSrc = defaultSrc, globalOutDir = globalOutDir, macroExpander = js.Any.fromFunction1(macroExpander))
   
     __obj.asInstanceOf[GetFileMatchersOptions]
   }

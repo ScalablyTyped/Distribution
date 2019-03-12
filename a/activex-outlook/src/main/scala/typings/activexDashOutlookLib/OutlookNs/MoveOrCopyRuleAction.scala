@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class MoveOrCopyRuleAction protected () extends js.Object {
   val ActionType: OlRuleActionType = js.native
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   var Enabled: scala.Boolean = js.native
-  var Folder: Folder = js.native
+  var Folder: activexDashOutlookLib.OutlookNs.Folder = js.native
   var `Outlook.MoveOrCopyRuleAction_typekey`: MoveOrCopyRuleAction = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native

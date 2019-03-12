@@ -88,7 +88,7 @@ object ConfigServiceNs extends js.Object {
     /**
       * The ID of the AWS resource.
       */
-    var ResourceId: ResourceId
+    var ResourceId: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ResourceId
     /**
       * The name of the AWS resource.
       */
@@ -96,7 +96,7 @@ object ConfigServiceNs extends js.Object {
     /**
       * The type of the AWS resource.
       */
-    var ResourceType: ResourceType
+    var ResourceType: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ResourceType
     /**
       * The 12-digit account ID of the source account.
       */
@@ -220,7 +220,7 @@ object ConfigServiceNs extends js.Object {
     /**
       * The name of the configuration aggregator.
       */
-    var ConfigurationAggregatorName: ConfigurationAggregatorName
+    var ConfigurationAggregatorName: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ConfigurationAggregatorName
     /**
       * A list of aggregate ResourceIdentifiers objects. 
       */
@@ -404,7 +404,7 @@ object ConfigServiceNs extends js.Object {
     /**
       * Provides the rule owner (AWS or customer), the rule identifier, and the notifications that cause the function to evaluate your AWS resources.
       */
-    var Source: Source
+    var Source: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.Source
   }
   
   trait ConfigRuleComplianceFilters extends js.Object {
@@ -684,7 +684,7 @@ object ConfigServiceNs extends js.Object {
     /**
       * The name of the configuration aggregator.
       */
-    var ConfigurationAggregatorName: ConfigurationAggregatorName
+    var ConfigurationAggregatorName: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ConfigurationAggregatorName
   }
   
   trait DeleteConfigurationRecorderRequest extends js.Object {
@@ -725,7 +725,7 @@ object ConfigServiceNs extends js.Object {
     /**
       * The name of the retention configuration to delete.
       */
-    var RetentionConfigurationName: RetentionConfigurationName
+    var RetentionConfigurationName: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.RetentionConfigurationName
   }
   
   trait DeliverConfigSnapshotRequest extends js.Object {
@@ -788,7 +788,7 @@ object ConfigServiceNs extends js.Object {
     /**
       * The name of the configuration aggregator.
       */
-    var ConfigurationAggregatorName: ConfigurationAggregatorName
+    var ConfigurationAggregatorName: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ConfigurationAggregatorName
     /**
       * Filters the results by ConfigRuleComplianceFilters object. 
       */
@@ -948,7 +948,7 @@ object ConfigServiceNs extends js.Object {
     /**
       * The name of the configuration aggregator.
       */
-    var ConfigurationAggregatorName: ConfigurationAggregatorName
+    var ConfigurationAggregatorName: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ConfigurationAggregatorName
     /**
       * The maximum number of AggregatorSourceStatus returned on each page. The default is maximum. If you specify 0, AWS Config uses the default.
       */
@@ -1116,11 +1116,11 @@ object ConfigServiceNs extends js.Object {
     /**
       * Indicates whether the AWS resource complies with the AWS Config rule that it was evaluated against. For the Evaluation data type, AWS Config supports only the COMPLIANT, NON_COMPLIANT, and NOT_APPLICABLE values. AWS Config does not support the INSUFFICIENT_DATA value for this data type. Similarly, AWS Config does not accept INSUFFICIENT_DATA as the value for ComplianceType from a PutEvaluations request. For example, an AWS Lambda function for a custom AWS Config rule cannot pass an INSUFFICIENT_DATA value to AWS Config.
       */
-    var ComplianceType: ComplianceType
+    var ComplianceType: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ComplianceType
     /**
       * The time of the event in AWS Config that triggered the evaluation. For event-based evaluations, the time indicates when AWS Config created the configuration item that triggered the evaluation. For periodic evaluations, the time indicates when AWS Config triggered the evaluation at the frequency that you specified (for example, every 24 hours).
       */
-    var OrderingTimestamp: OrderingTimestamp
+    var OrderingTimestamp: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.OrderingTimestamp
   }
   
   trait EvaluationResult extends js.Object {
@@ -1180,11 +1180,11 @@ object ConfigServiceNs extends js.Object {
     /**
       * The 12-digit account ID of the source account.
       */
-    var AccountId: AccountId
+    var AccountId: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.AccountId
     /**
       * The source region from where the data is aggregated.
       */
-    var AwsRegion: AwsRegion
+    var AwsRegion: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.AwsRegion
     /**
       * The resource compliance status.  For the GetAggregateComplianceDetailsByConfigRuleRequest data type, AWS Config supports only the COMPLIANT and NON_COMPLIANT. AWS Config does not support the NOT_APPLICABLE and INSUFFICIENT_DATA values. 
       */
@@ -1192,11 +1192,11 @@ object ConfigServiceNs extends js.Object {
     /**
       * The name of the AWS Config rule for which you want compliance information.
       */
-    var ConfigRuleName: ConfigRuleName
+    var ConfigRuleName: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ConfigRuleName
     /**
       * The name of the configuration aggregator.
       */
-    var ConfigurationAggregatorName: ConfigurationAggregatorName
+    var ConfigurationAggregatorName: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ConfigurationAggregatorName
     /**
       * The maximum number of evaluation results returned on each page. The default is 50. You cannot specify a number greater than 100. If you specify 0, AWS Config uses the default.
       */
@@ -1222,7 +1222,7 @@ object ConfigServiceNs extends js.Object {
     /**
       * The name of the configuration aggregator.
       */
-    var ConfigurationAggregatorName: ConfigurationAggregatorName
+    var ConfigurationAggregatorName: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ConfigurationAggregatorName
     /**
       * Filters the results based on the ConfigRuleComplianceSummaryFilters object.
       */
@@ -1260,7 +1260,7 @@ object ConfigServiceNs extends js.Object {
     /**
       * The name of the configuration aggregator.
       */
-    var ConfigurationAggregatorName: ConfigurationAggregatorName
+    var ConfigurationAggregatorName: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ConfigurationAggregatorName
     /**
       * Filters the results based on the ResourceCountFilters object.
       */
@@ -1302,7 +1302,7 @@ object ConfigServiceNs extends js.Object {
     /**
       * The name of the configuration aggregator.
       */
-    var ConfigurationAggregatorName: ConfigurationAggregatorName
+    var ConfigurationAggregatorName: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ConfigurationAggregatorName
     /**
       * An object that identifies aggregate resource.
       */
@@ -1484,7 +1484,7 @@ object ConfigServiceNs extends js.Object {
     /**
       * The name of the configuration aggregator. 
       */
-    var ConfigurationAggregatorName: ConfigurationAggregatorName
+    var ConfigurationAggregatorName: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ConfigurationAggregatorName
     /**
       * Filters the results based on the ResourceFilters object.
       */
@@ -1500,7 +1500,7 @@ object ConfigServiceNs extends js.Object {
     /**
       * The type of resources that you want AWS Config to list in the response.
       */
-    var ResourceType: ResourceType
+    var ResourceType: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ResourceType
   }
   
   trait ListAggregateDiscoveredResourcesResponse extends js.Object {
@@ -1600,7 +1600,7 @@ object ConfigServiceNs extends js.Object {
     /**
       * The rule that you want to add to your account.
       */
-    var ConfigRule: ConfigRule
+    var ConfigRule: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ConfigRule
   }
   
   trait PutConfigurationAggregatorRequest extends js.Object {
@@ -1611,7 +1611,7 @@ object ConfigServiceNs extends js.Object {
     /**
       * The name of the configuration aggregator.
       */
-    var ConfigurationAggregatorName: ConfigurationAggregatorName
+    var ConfigurationAggregatorName: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ConfigurationAggregatorName
     /**
       * An OrganizationAggregationSource object.
       */
@@ -1629,14 +1629,14 @@ object ConfigServiceNs extends js.Object {
     /**
       * The configuration recorder object that records each configuration change made to the resources.
       */
-    var ConfigurationRecorder: ConfigurationRecorder
+    var ConfigurationRecorder: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ConfigurationRecorder
   }
   
   trait PutDeliveryChannelRequest extends js.Object {
     /**
       * The configuration delivery channel object that delivers the configuration information to an Amazon S3 bucket and to an Amazon SNS topic.
       */
-    var DeliveryChannel: DeliveryChannel
+    var DeliveryChannel: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.DeliveryChannel
   }
   
   trait PutEvaluationsRequest extends js.Object {
@@ -1665,7 +1665,7 @@ object ConfigServiceNs extends js.Object {
     /**
       * Number of days AWS Config stores your historical information.  Currently, only applicable to the configuration item history. 
       */
-    var RetentionPeriodInDays: RetentionPeriodInDays
+    var RetentionPeriodInDays: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.RetentionPeriodInDays
   }
   
   trait PutRetentionConfigurationResponse extends js.Object {
@@ -1792,7 +1792,7 @@ object ConfigServiceNs extends js.Object {
     /**
       * Number of days AWS Config stores your historical information.  Currently, only applicable to the configuration item history. 
       */
-    var RetentionPeriodInDays: RetentionPeriodInDays
+    var RetentionPeriodInDays: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.RetentionPeriodInDays
   }
   
   trait Scope extends js.Object {
@@ -1818,7 +1818,7 @@ object ConfigServiceNs extends js.Object {
     /**
       * Indicates whether AWS or the customer owns and manages the AWS Config rule.
       */
-    var Owner: Owner
+    var Owner: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.Owner
     /**
       * Provides the source and type of the event that causes AWS Config to evaluate your AWS resources.
       */

@@ -49,16 +49,16 @@ trait HasParentQuery extends Query {
 object HasParentQuery {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    boost: js.Function1[scala.Double, HasParentQuery],
-    parentType: js.Function1[java.lang.String, HasParentQuery],
-    query: js.Function1[js.Object, HasParentQuery],
-    scope: js.Function1[java.lang.String, HasParentQuery],
-    scoreMode: js.Function1[java.lang.String, HasParentQuery],
-    scoreType: js.Function1[java.lang.String, HasParentQuery],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    boost: scala.Double => HasParentQuery,
+    parentType: java.lang.String => HasParentQuery,
+    query: js.Object => HasParentQuery,
+    scope: java.lang.String => HasParentQuery,
+    scoreMode: java.lang.String => HasParentQuery,
+    scoreType: java.lang.String => HasParentQuery,
+    toJSON: () => js.Any
   ): HasParentQuery = {
-    val __obj = js.Dynamic.literal(_type = _type, boost = boost, parentType = parentType, query = query, scope = scope, scoreMode = scoreMode, scoreType = scoreType, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), boost = js.Any.fromFunction1(boost), parentType = js.Any.fromFunction1(parentType), query = js.Any.fromFunction1(query), scope = js.Any.fromFunction1(scope), scoreMode = js.Any.fromFunction1(scoreMode), scoreType = js.Any.fromFunction1(scoreType), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[HasParentQuery]
   }

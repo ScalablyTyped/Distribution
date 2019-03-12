@@ -345,7 +345,7 @@ object Options {
     reloadOnRestart: js.UndefOr[scala.Boolean] = js.undefined,
     reloadThrottle: scala.Int | scala.Double = null,
     rewriteRules: scala.Boolean | js.Array[RewriteRules] = null,
-    scriptPath: js.Function1[/* path */ java.lang.String, java.lang.String] = null,
+    scriptPath: /* path */ java.lang.String => java.lang.String = null,
     scrollElementMapping: js.Array[java.lang.String] = null,
     scrollElements: js.Array[java.lang.String] = null,
     scrollProportionally: js.UndefOr[scala.Boolean] = js.undefined,
@@ -400,7 +400,7 @@ object Options {
     if (!js.isUndefined(reloadOnRestart)) __obj.updateDynamic("reloadOnRestart")(reloadOnRestart)
     if (reloadThrottle != null) __obj.updateDynamic("reloadThrottle")(reloadThrottle.asInstanceOf[js.Any])
     if (rewriteRules != null) __obj.updateDynamic("rewriteRules")(rewriteRules.asInstanceOf[js.Any])
-    if (scriptPath != null) __obj.updateDynamic("scriptPath")(scriptPath)
+    if (scriptPath != null) __obj.updateDynamic("scriptPath")(js.Any.fromFunction1(scriptPath))
     if (scrollElementMapping != null) __obj.updateDynamic("scrollElementMapping")(scrollElementMapping)
     if (scrollElements != null) __obj.updateDynamic("scrollElements")(scrollElements)
     if (!js.isUndefined(scrollProportionally)) __obj.updateDynamic("scrollProportionally")(scrollProportionally)

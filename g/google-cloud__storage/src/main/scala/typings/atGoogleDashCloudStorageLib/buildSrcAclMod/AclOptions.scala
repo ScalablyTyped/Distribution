@@ -17,13 +17,9 @@ object AclOptions {
   @scala.inline
   def apply(
     pathPrefix: java.lang.String,
-    request: js.Function2[
-      atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions, 
-      atGoogleDashCloudCommonLib.buildSrcUtilMod.BodyResponseCallback, 
-      scala.Unit
-    ]
+    request: (atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions, atGoogleDashCloudCommonLib.buildSrcUtilMod.BodyResponseCallback) => scala.Unit
   ): AclOptions = {
-    val __obj = js.Dynamic.literal(pathPrefix = pathPrefix, request = request)
+    val __obj = js.Dynamic.literal(pathPrefix = pathPrefix, request = js.Any.fromFunction2(request))
   
     __obj.asInstanceOf[AclOptions]
   }

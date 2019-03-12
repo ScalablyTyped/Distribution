@@ -38,16 +38,16 @@ trait XMarkableStream
 object XMarkableStream {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createMark: js.Function0[scala.Double],
-    deleteMark: js.Function1[scala.Double, scala.Unit],
-    jumpToFurthest: js.Function0[scala.Unit],
-    jumpToMark: js.Function1[scala.Double, scala.Unit],
-    offsetToMark: js.Function1[scala.Double, scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createMark: () => scala.Double,
+    deleteMark: scala.Double => scala.Unit,
+    jumpToFurthest: () => scala.Unit,
+    jumpToMark: scala.Double => scala.Unit,
+    offsetToMark: scala.Double => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XMarkableStream = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createMark = createMark, deleteMark = deleteMark, jumpToFurthest = jumpToFurthest, jumpToMark = jumpToMark, offsetToMark = offsetToMark, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createMark = js.Any.fromFunction0(createMark), deleteMark = js.Any.fromFunction1(deleteMark), jumpToFurthest = js.Any.fromFunction0(jumpToFurthest), jumpToMark = js.Any.fromFunction1(jumpToMark), offsetToMark = js.Any.fromFunction1(offsetToMark), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XMarkableStream]
   }

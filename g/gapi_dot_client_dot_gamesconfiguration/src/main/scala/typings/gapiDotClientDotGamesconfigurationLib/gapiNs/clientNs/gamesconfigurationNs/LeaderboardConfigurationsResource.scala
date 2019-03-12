@@ -23,32 +23,14 @@ trait LeaderboardConfigurationsResource extends js.Object {
 object LeaderboardConfigurationsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotGamesconfigurationLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotGamesconfigurationLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LeaderboardConfiguration]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotGamesconfigurationLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LeaderboardConfiguration]
-    ],
-    list: js.Function1[
-      gapiDotClientDotGamesconfigurationLib.Anon_AltApplicationId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LeaderboardConfigurationListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotGamesconfigurationLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LeaderboardConfiguration]
-    ],
-    update: js.Function1[
-      gapiDotClientDotGamesconfigurationLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LeaderboardConfiguration]
-    ]
+    delete: gapiDotClientDotGamesconfigurationLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotGamesconfigurationLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[LeaderboardConfiguration],
+    insert: gapiDotClientDotGamesconfigurationLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[LeaderboardConfiguration],
+    list: gapiDotClientDotGamesconfigurationLib.Anon_AltApplicationId => gapiDotClientLib.gapiNs.clientNs.Request[LeaderboardConfigurationListResponse],
+    patch: gapiDotClientDotGamesconfigurationLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[LeaderboardConfiguration],
+    update: gapiDotClientDotGamesconfigurationLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[LeaderboardConfiguration]
   ): LeaderboardConfigurationsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[LeaderboardConfigurationsResource]
   }

@@ -13,10 +13,10 @@ trait Anon_ArgArray extends js.Object {
 object Anon_ArgArray {
   @scala.inline
   def apply(
-    bind: js.Function3[Function, js.Any, /* repeated */ js.Any, js.Any],
-    part: js.Function2[Function, /* repeated */ js.Any, js.Any]
+    bind: (Function, js.Any, /* repeated */ js.Any) => js.Any,
+    part: (Function, /* repeated */ js.Any) => js.Any
   ): Anon_ArgArray = {
-    val __obj = js.Dynamic.literal(bind = bind, part = part)
+    val __obj = js.Dynamic.literal(bind = js.Any.fromFunction3(bind), part = js.Any.fromFunction2(part))
   
     __obj.asInstanceOf[Anon_ArgArray]
   }

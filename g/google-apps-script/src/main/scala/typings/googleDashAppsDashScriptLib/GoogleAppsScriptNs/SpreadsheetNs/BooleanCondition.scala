@@ -19,16 +19,16 @@ trait BooleanCondition extends js.Object {
 object BooleanCondition {
   @scala.inline
   def apply(
-    getBackground: js.Function0[java.lang.String],
-    getBold: js.Function0[scala.Boolean],
-    getCriteriaType: js.Function0[BooleanCriteria],
-    getCriteriaValues: js.Function0[js.Array[js.Object]],
-    getFontColor: js.Function0[java.lang.String],
-    getItalic: js.Function0[scala.Boolean],
-    getStrikethrough: js.Function0[scala.Boolean],
-    getUnderline: js.Function0[scala.Boolean]
+    getBackground: () => java.lang.String,
+    getBold: () => scala.Boolean,
+    getCriteriaType: () => BooleanCriteria,
+    getCriteriaValues: () => js.Array[js.Object],
+    getFontColor: () => java.lang.String,
+    getItalic: () => scala.Boolean,
+    getStrikethrough: () => scala.Boolean,
+    getUnderline: () => scala.Boolean
   ): BooleanCondition = {
-    val __obj = js.Dynamic.literal(getBackground = getBackground, getBold = getBold, getCriteriaType = getCriteriaType, getCriteriaValues = getCriteriaValues, getFontColor = getFontColor, getItalic = getItalic, getStrikethrough = getStrikethrough, getUnderline = getUnderline)
+    val __obj = js.Dynamic.literal(getBackground = js.Any.fromFunction0(getBackground), getBold = js.Any.fromFunction0(getBold), getCriteriaType = js.Any.fromFunction0(getCriteriaType), getCriteriaValues = js.Any.fromFunction0(getCriteriaValues), getFontColor = js.Any.fromFunction0(getFontColor), getItalic = js.Any.fromFunction0(getItalic), getStrikethrough = js.Any.fromFunction0(getStrikethrough), getUnderline = js.Any.fromFunction0(getUnderline))
   
     __obj.asInstanceOf[BooleanCondition]
   }

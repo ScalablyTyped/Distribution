@@ -19,10 +19,10 @@ object Anon_Driver {
     Driver: Anon_CreateSessionOptconfig,
     Options: Anon_Capabilities,
     ServiceBuilder: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.chromeMod.ServiceBuilder],
-    getDefaultService: js.Function0[seleniumDashWebdriverLib.remoteMod.DriverService],
-    setDefaultService: js.Function1[seleniumDashWebdriverLib.remoteMod.DriverService, scala.Unit]
+    getDefaultService: () => seleniumDashWebdriverLib.remoteMod.DriverService,
+    setDefaultService: seleniumDashWebdriverLib.remoteMod.DriverService => scala.Unit
   ): Anon_Driver = {
-    val __obj = js.Dynamic.literal(Driver = Driver, Options = Options, ServiceBuilder = ServiceBuilder, getDefaultService = getDefaultService, setDefaultService = setDefaultService)
+    val __obj = js.Dynamic.literal(Driver = Driver, Options = Options, ServiceBuilder = ServiceBuilder, getDefaultService = js.Any.fromFunction0(getDefaultService), setDefaultService = js.Any.fromFunction1(setDefaultService))
   
     __obj.asInstanceOf[Anon_Driver]
   }

@@ -15,12 +15,12 @@ trait Interpolation extends js.Object {
 object Interpolation {
   @scala.inline
   def apply(
-    Bezier: js.Function2[js.Array[scala.Double], scala.Double, scala.Double],
-    CatmullRom: js.Function2[js.Array[scala.Double], scala.Double, scala.Double],
-    Linear: js.Function2[js.Array[scala.Double], scala.Double, scala.Double],
+    Bezier: (js.Array[scala.Double], scala.Double) => scala.Double,
+    CatmullRom: (js.Array[scala.Double], scala.Double) => scala.Double,
+    Linear: (js.Array[scala.Double], scala.Double) => scala.Double,
     Utils: Anon_Bernstein
   ): Interpolation = {
-    val __obj = js.Dynamic.literal(Bezier = Bezier, CatmullRom = CatmullRom, Linear = Linear, Utils = Utils)
+    val __obj = js.Dynamic.literal(Bezier = js.Any.fromFunction2(Bezier), CatmullRom = js.Any.fromFunction2(CatmullRom), Linear = js.Any.fromFunction2(Linear), Utils = Utils)
   
     __obj.asInstanceOf[Interpolation]
   }

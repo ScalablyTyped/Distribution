@@ -27,7 +27,7 @@ class Strategy ()
     * @param {Error} err
     * @api public
     */
-  def error(err: nodeLib.Error): scala.Unit = js.native
+  def error(err: stdLib.Error): scala.Unit = js.native
   /**
     * Fail authentication, with optional `challenge` and `status`, defaulting
     * to 401.

@@ -27,16 +27,16 @@ trait Calls extends js.Object {
 object Calls {
   @scala.inline
   def apply(
-    all: js.Function0[js.Array[CallInfo]],
-    allArgs: js.Function0[js.Array[_]],
-    any: js.Function0[scala.Boolean],
-    argsFor: js.Function1[scala.Double, js.Array[_]],
-    count: js.Function0[scala.Double],
-    first: js.Function0[CallInfo],
-    mostRecent: js.Function0[CallInfo],
-    reset: js.Function0[scala.Unit]
+    all: () => js.Array[CallInfo],
+    allArgs: () => js.Array[_],
+    any: () => scala.Boolean,
+    argsFor: scala.Double => js.Array[_],
+    count: () => scala.Double,
+    first: () => CallInfo,
+    mostRecent: () => CallInfo,
+    reset: () => scala.Unit
   ): Calls = {
-    val __obj = js.Dynamic.literal(all = all, allArgs = allArgs, any = any, argsFor = argsFor, count = count, first = first, mostRecent = mostRecent, reset = reset)
+    val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all), allArgs = js.Any.fromFunction0(allArgs), any = js.Any.fromFunction0(any), argsFor = js.Any.fromFunction1(argsFor), count = js.Any.fromFunction0(count), first = js.Any.fromFunction0(first), mostRecent = js.Any.fromFunction0(mostRecent), reset = js.Any.fromFunction0(reset))
   
     __obj.asInstanceOf[Calls]
   }

@@ -26,10 +26,10 @@ object Twitter {
   @scala.inline
   def apply(
     events: TwitterEvents,
-    ready: js.Function1[js.Function1[Twitter, scala.Unit], scala.Unit],
+    ready: js.Function1[Twitter, scala.Unit] => scala.Unit,
     widgets: TwitterWidgets
   ): Twitter = {
-    val __obj = js.Dynamic.literal(events = events, ready = ready, widgets = widgets)
+    val __obj = js.Dynamic.literal(events = events, ready = js.Any.fromFunction1(ready), widgets = widgets)
   
     __obj.asInstanceOf[Twitter]
   }

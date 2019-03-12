@@ -12,12 +12,12 @@ object ^ extends js.Object {
     paths: (leafletLib.leafletMod.Polyline[geojsonLib.geojsonMod.LineString | geojsonLib.geojsonMod.MultiLineString, _]) | (js.Array[
       leafletLib.leafletMod.Polyline[geojsonLib.geojsonMod.LineString | geojsonLib.geojsonMod.MultiLineString, _]
     ])
-  ): leafletDashPolylinedecoratorLib.leafletMod.PolylineDecorator = js.native
+  ): PolylineDecorator = js.native
   def polylineDecorator(
     paths: (leafletLib.leafletMod.Polyline[geojsonLib.geojsonMod.LineString | geojsonLib.geojsonMod.MultiLineString, _]) | (js.Array[
       leafletLib.leafletMod.Polyline[geojsonLib.geojsonMod.LineString | geojsonLib.geojsonMod.MultiLineString, _]
     ]),
-    options: leafletDashPolylinedecoratorLib.leafletMod.PolylineDecoratorOptions
-  ): leafletDashPolylinedecoratorLib.leafletMod.PolylineDecorator = js.native
+    options: PolylineDecoratorOptions
+  ): PolylineDecorator = js.native
 }
 

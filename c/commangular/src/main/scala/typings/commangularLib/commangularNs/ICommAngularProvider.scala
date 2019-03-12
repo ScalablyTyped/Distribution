@@ -41,13 +41,13 @@ trait ICommAngularProvider extends js.Object {
 object ICommAngularProvider {
   @scala.inline
   def apply(
-    asFlow: js.Function0[ICommAngularDescriptor],
-    asParallel: js.Function0[ICommAngularDescriptor],
-    asSequence: js.Function0[ICommAngularDescriptor],
-    findCommand: js.Function1[java.lang.String, ICommAngularDescriptor],
-    mapTo: js.Function1[java.lang.String, ICommAngularDescriptor]
+    asFlow: () => ICommAngularDescriptor,
+    asParallel: () => ICommAngularDescriptor,
+    asSequence: () => ICommAngularDescriptor,
+    findCommand: java.lang.String => ICommAngularDescriptor,
+    mapTo: java.lang.String => ICommAngularDescriptor
   ): ICommAngularProvider = {
-    val __obj = js.Dynamic.literal(asFlow = asFlow, asParallel = asParallel, asSequence = asSequence, findCommand = findCommand, mapTo = mapTo)
+    val __obj = js.Dynamic.literal(asFlow = js.Any.fromFunction0(asFlow), asParallel = js.Any.fromFunction0(asParallel), asSequence = js.Any.fromFunction0(asSequence), findCommand = js.Any.fromFunction1(findCommand), mapTo = js.Any.fromFunction1(mapTo))
   
     __obj.asInstanceOf[ICommAngularProvider]
   }

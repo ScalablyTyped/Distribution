@@ -18,12 +18,12 @@ object XEmbeddedObjectSupplier {
   @scala.inline
   def apply(
     EmbeddedObject: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent,
-    acquire: js.Function0[scala.Unit],
-    getEmbeddedObject: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getEmbeddedObject: () => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XEmbeddedObjectSupplier = {
-    val __obj = js.Dynamic.literal(EmbeddedObject = EmbeddedObject, acquire = acquire, getEmbeddedObject = getEmbeddedObject, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(EmbeddedObject = EmbeddedObject, acquire = js.Any.fromFunction0(acquire), getEmbeddedObject = js.Any.fromFunction0(getEmbeddedObject), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XEmbeddedObjectSupplier]
   }

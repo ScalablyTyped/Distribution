@@ -16,12 +16,12 @@ object WatchOptions {
   @scala.inline
   def apply(
     loggedInUser: java.lang.String,
-    onlogin: js.Function1[java.lang.String, scala.Unit],
-    onlogout: js.Function0[scala.Unit],
-    onready: js.Function0[scala.Unit] = null
+    onlogin: java.lang.String => scala.Unit,
+    onlogout: () => scala.Unit,
+    onready: () => scala.Unit = null
   ): WatchOptions = {
-    val __obj = js.Dynamic.literal(loggedInUser = loggedInUser, onlogin = onlogin, onlogout = onlogout)
-    if (onready != null) __obj.updateDynamic("onready")(onready)
+    val __obj = js.Dynamic.literal(loggedInUser = loggedInUser, onlogin = js.Any.fromFunction1(onlogin), onlogout = js.Any.fromFunction0(onlogout))
+    if (onready != null) __obj.updateDynamic("onready")(js.Any.fromFunction0(onready))
     __obj.asInstanceOf[WatchOptions]
   }
 }

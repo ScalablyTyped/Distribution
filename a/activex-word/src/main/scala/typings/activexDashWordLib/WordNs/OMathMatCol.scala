@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class OMathMatCol protected () extends js.Object {
   var Align: WdOMathHorizAlignType = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Args: OMathArgs = js.native
   val ColIndex: scala.Double = js.native
   val Creator: scala.Double = js.native

@@ -23,21 +23,11 @@ trait IPreviewerActiveXCtrl extends js.Object {
 object IPreviewerActiveXCtrl {
   @scala.inline
   def apply(
-    ClearPreview: js.Function0[scala.Double],
-    ShowFilePreview: js.Function1[java.lang.String, scala.Double],
-    ShowHitHighlightedFilePreview: js.Function8[
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      js.Any, 
-      java.lang.String, 
-      scala.Double
-    ]
+    ClearPreview: () => scala.Double,
+    ShowFilePreview: java.lang.String => scala.Double,
+    ShowHitHighlightedFilePreview: (java.lang.String, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, js.Any, java.lang.String) => scala.Double
   ): IPreviewerActiveXCtrl = {
-    val __obj = js.Dynamic.literal(ClearPreview = ClearPreview, ShowFilePreview = ShowFilePreview, ShowHitHighlightedFilePreview = ShowHitHighlightedFilePreview)
+    val __obj = js.Dynamic.literal(ClearPreview = js.Any.fromFunction0(ClearPreview), ShowFilePreview = js.Any.fromFunction1(ShowFilePreview), ShowHitHighlightedFilePreview = js.Any.fromFunction8(ShowHitHighlightedFilePreview))
   
     __obj.asInstanceOf[IPreviewerActiveXCtrl]
   }

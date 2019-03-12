@@ -24,15 +24,15 @@ object IPanelService {
     absPosition: angularDashMaterialLib.Anon_BOTTOM,
     animation: angularDashMaterialLib.Anon_FADE,
     closeReasons: angularDashMaterialLib.Anon_CLICKOUTSIDE,
-    create: js.Function1[IPanelConfig, IPanelRef],
+    create: IPanelConfig => IPanelRef,
     interceptorTypes: angularDashMaterialLib.Anon_CLOSE,
-    newPanelAnimation: js.Function0[IPanelAnimation],
-    newPanelPosition: js.Function0[IPanelPosition],
-    open: js.Function1[IPanelConfig, angularLib.angularMod.angularNs.IPromise[IPanelRef]],
+    newPanelAnimation: () => IPanelAnimation,
+    newPanelPosition: () => IPanelPosition,
+    open: IPanelConfig => angularLib.angularMod.angularNs.IPromise[IPanelRef],
     xPosition: angularDashMaterialLib.Anon_ALIGNEND,
     yPosition: angularDashMaterialLib.Anon_ABOVE
   ): IPanelService = {
-    val __obj = js.Dynamic.literal(absPosition = absPosition, animation = animation, closeReasons = closeReasons, create = create, interceptorTypes = interceptorTypes, newPanelAnimation = newPanelAnimation, newPanelPosition = newPanelPosition, open = open, xPosition = xPosition, yPosition = yPosition)
+    val __obj = js.Dynamic.literal(absPosition = absPosition, animation = animation, closeReasons = closeReasons, create = js.Any.fromFunction1(create), interceptorTypes = interceptorTypes, newPanelAnimation = js.Any.fromFunction0(newPanelAnimation), newPanelPosition = js.Any.fromFunction0(newPanelPosition), open = js.Any.fromFunction1(open), xPosition = xPosition, yPosition = yPosition)
   
     __obj.asInstanceOf[IPanelService]
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object requestretryNs {
   type RetryStrategy = js.Function3[
-    /* err */ nodeLib.Error, 
+    /* err */ stdLib.Error, 
     /* response */ nodeLib.httpMod.IncomingMessage, 
     /* body */ js.Any, 
     scala.Boolean

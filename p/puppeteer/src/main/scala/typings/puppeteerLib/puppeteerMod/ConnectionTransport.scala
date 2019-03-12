@@ -15,14 +15,14 @@ trait ConnectionTransport extends js.Object {
 object ConnectionTransport {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
-    send: js.Function1[java.lang.String, scala.Unit],
-    onclose: js.Function0[scala.Unit] = null,
-    onmessage: js.Function1[/* message */ java.lang.String, scala.Unit] = null
+    close: () => scala.Unit,
+    send: java.lang.String => scala.Unit,
+    onclose: () => scala.Unit = null,
+    onmessage: /* message */ java.lang.String => scala.Unit = null
   ): ConnectionTransport = {
-    val __obj = js.Dynamic.literal(close = close, send = send)
-    if (onclose != null) __obj.updateDynamic("onclose")(onclose)
-    if (onmessage != null) __obj.updateDynamic("onmessage")(onmessage)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), send = js.Any.fromFunction1(send))
+    if (onclose != null) __obj.updateDynamic("onclose")(js.Any.fromFunction0(onclose))
+    if (onmessage != null) __obj.updateDynamic("onmessage")(js.Any.fromFunction1(onmessage))
     __obj.asInstanceOf[ConnectionTransport]
   }
 }

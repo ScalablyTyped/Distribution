@@ -25,22 +25,22 @@ trait hasExtensions extends js.Object {
 object hasExtensions {
   @scala.inline
   def apply(
-    addCallout: js.Function1[Callout, AdWordsOperation[Callout]],
-    addMessage: js.Function1[Message, AdWordsOperation[Message]],
-    addMobileApp: js.Function1[MobileApp, AdWordsOperation[MobileApp]],
-    addPhoneNumber: js.Function1[PhoneNumber, AdWordsOperation[PhoneNumber]],
-    addReview: js.Function1[Review, AdWordsOperation[Review]],
-    addSitelink: js.Function1[Sitelink, AdWordsOperation[Sitelink]],
-    addSnippet: js.Function1[Snippet, AdWordsOperation[Snippet]],
-    removeCallout: js.Function1[Callout, scala.Unit],
-    removeMessage: js.Function1[Message, scala.Unit],
-    removeMobileApp: js.Function1[MobileApp, scala.Unit],
-    removePhoneNumber: js.Function1[PhoneNumber, scala.Unit],
-    removeReview: js.Function1[Review, scala.Unit],
-    removeSitelink: js.Function1[Sitelink, scala.Unit],
-    removeSnippet: js.Function1[Snippet, scala.Unit]
+    addCallout: Callout => AdWordsOperation[Callout],
+    addMessage: Message => AdWordsOperation[Message],
+    addMobileApp: MobileApp => AdWordsOperation[MobileApp],
+    addPhoneNumber: PhoneNumber => AdWordsOperation[PhoneNumber],
+    addReview: Review => AdWordsOperation[Review],
+    addSitelink: Sitelink => AdWordsOperation[Sitelink],
+    addSnippet: Snippet => AdWordsOperation[Snippet],
+    removeCallout: Callout => scala.Unit,
+    removeMessage: Message => scala.Unit,
+    removeMobileApp: MobileApp => scala.Unit,
+    removePhoneNumber: PhoneNumber => scala.Unit,
+    removeReview: Review => scala.Unit,
+    removeSitelink: Sitelink => scala.Unit,
+    removeSnippet: Snippet => scala.Unit
   ): hasExtensions = {
-    val __obj = js.Dynamic.literal(addCallout = addCallout, addMessage = addMessage, addMobileApp = addMobileApp, addPhoneNumber = addPhoneNumber, addReview = addReview, addSitelink = addSitelink, addSnippet = addSnippet, removeCallout = removeCallout, removeMessage = removeMessage, removeMobileApp = removeMobileApp, removePhoneNumber = removePhoneNumber, removeReview = removeReview, removeSitelink = removeSitelink, removeSnippet = removeSnippet)
+    val __obj = js.Dynamic.literal(addCallout = js.Any.fromFunction1(addCallout), addMessage = js.Any.fromFunction1(addMessage), addMobileApp = js.Any.fromFunction1(addMobileApp), addPhoneNumber = js.Any.fromFunction1(addPhoneNumber), addReview = js.Any.fromFunction1(addReview), addSitelink = js.Any.fromFunction1(addSitelink), addSnippet = js.Any.fromFunction1(addSnippet), removeCallout = js.Any.fromFunction1(removeCallout), removeMessage = js.Any.fromFunction1(removeMessage), removeMobileApp = js.Any.fromFunction1(removeMobileApp), removePhoneNumber = js.Any.fromFunction1(removePhoneNumber), removeReview = js.Any.fromFunction1(removeReview), removeSitelink = js.Any.fromFunction1(removeSitelink), removeSnippet = js.Any.fromFunction1(removeSnippet))
   
     __obj.asInstanceOf[hasExtensions]
   }

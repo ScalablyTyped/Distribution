@@ -12,11 +12,11 @@ object TextractNs extends js.Object {
     /**
       * The input document as base64-encoded bytes or an Amazon S3 object. If you use the AWS CLI to call Amazon Textract operations, you can't pass image bytes. The document must be an image in JPG or PNG format.
       */
-    var Document: Document
+    var Document: awsDashSdkLib.clientsTextractMod.TextractNs.Document
     /**
       * A list of the types of analysis to perform. Add TABLES to the list to return information about the tables detected in the input document. Add FORMS to return detected fields and the associated text. To perform both types of analysis, add TABLES and FORMS to FeatureTypes.
       */
-    var FeatureTypes: FeatureTypes
+    var FeatureTypes: awsDashSdkLib.clientsTextractMod.TextractNs.FeatureTypes
   }
   
   trait AnalyzeDocumentResponse extends js.Object {
@@ -111,7 +111,7 @@ object TextractNs extends js.Object {
     /**
       * The input document as base64-encoded bytes or an Amazon S3 object. If you use the AWS CLI to call Amazon Textract operations, you can't pass image bytes. The document must be an image in JPG or PNG format.
       */
-    var Document: Document
+    var Document: awsDashSdkLib.clientsTextractMod.TextractNs.Document
   }
   
   trait DetectDocumentTextResponse extends js.Object {
@@ -165,7 +165,7 @@ object TextractNs extends js.Object {
     /**
       * A unique identifier for the text-detection job. The JobId is returned from StartDocumentAnalysis.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsTextractMod.TextractNs.JobId
     /**
       * The maximum number of results to return per paginated call. The largest value that you can specify is 1,000. If you specify a value greater than 1,000, a maximum of 1,000 results is returned. The default value is 1,000.
       */
@@ -207,7 +207,7 @@ object TextractNs extends js.Object {
     /**
       * A unique identifier for the text detection job. The JobId is returned from StartDocumentTextDetection.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsTextractMod.TextractNs.JobId
     /**
       * The maximum number of results to return per paginated call. The largest value you can specify is 1,000. If you specify a value greater than 1,000, a maximum of 1,000 results is returned. The default value is 1,000.
       */
@@ -249,11 +249,11 @@ object TextractNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of an IAM role that gives Amazon Textract publishing permissions to the Amazon SNS topic. 
       */
-    var RoleArn: RoleArn
+    var RoleArn: awsDashSdkLib.clientsTextractMod.TextractNs.RoleArn
     /**
       * The Amazon SNS topic that Amazon Textract posts the completion status to.
       */
-    var SNSTopicArn: SNSTopicArn
+    var SNSTopicArn: awsDashSdkLib.clientsTextractMod.TextractNs.SNSTopicArn
   }
   
   trait Point extends js.Object {
@@ -301,11 +301,11 @@ object TextractNs extends js.Object {
     /**
       * The location of the document to be processed.
       */
-    var DocumentLocation: DocumentLocation
+    var DocumentLocation: awsDashSdkLib.clientsTextractMod.TextractNs.DocumentLocation
     /**
       * A list of the types of analysis to perform. Add TABLES to the list to return information about the tables that are detected in the input document. Add FORMS to return detected fields and the associated text. To perform both types of analysis, add TABLES and FORMS to FeatureTypes.
       */
-    var FeatureTypes: FeatureTypes
+    var FeatureTypes: awsDashSdkLib.clientsTextractMod.TextractNs.FeatureTypes
     /**
       * The unique identifier you specify to identify the job in the completion status that's published to the Amazon SNS topic.
       */
@@ -331,7 +331,7 @@ object TextractNs extends js.Object {
     /**
       * The location of the document to be processed.
       */
-    var DocumentLocation: DocumentLocation
+    var DocumentLocation: awsDashSdkLib.clientsTextractMod.TextractNs.DocumentLocation
     /**
       * A unique identifier you specify to identify the job in the completion status that's published to the Amazon Simple Notification Service (Amazon SNS) topic.
       */

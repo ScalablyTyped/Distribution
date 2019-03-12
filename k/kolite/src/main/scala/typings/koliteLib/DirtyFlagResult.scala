@@ -5,22 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DirtyFlagResult extends js.Object {
-  var isDirty: knockoutLib.KnockoutComputed[scala.Boolean]
-  def forceDirty(): scala.Unit
-  def reset(): scala.Unit
-}
-
-object DirtyFlagResult {
-  @scala.inline
-  def apply(
-    forceDirty: js.Function0[scala.Unit],
-    isDirty: knockoutLib.KnockoutComputed[scala.Boolean],
-    reset: js.Function0[scala.Unit]
-  ): DirtyFlagResult = {
-    val __obj = js.Dynamic.literal(forceDirty = forceDirty, isDirty = isDirty, reset = reset)
-  
-    __obj.asInstanceOf[DirtyFlagResult]
-  }
+  @JSName("isDirty")
+  var isDirty_Original: knockoutLib.KnockoutComputed[scala.Boolean] = js.native
+  def forceDirty(): scala.Unit = js.native
+  def isDirty(): scala.Boolean = js.native
+  def isDirty(value: scala.Boolean): scala.Unit = js.native
+  def reset(): scala.Unit = js.native
 }
 

@@ -11,8 +11,8 @@ trait IWebSocketErrorStatics extends js.Object {
 
 object IWebSocketErrorStatics {
   @scala.inline
-  def apply(getStatus: js.Function1[scala.Double, winrtLib.WindowsNs.WebNs.WebErrorStatus]): IWebSocketErrorStatics = {
-    val __obj = js.Dynamic.literal(getStatus = getStatus)
+  def apply(getStatus: scala.Double => winrtLib.WindowsNs.WebNs.WebErrorStatus): IWebSocketErrorStatics = {
+    val __obj = js.Dynamic.literal(getStatus = js.Any.fromFunction1(getStatus))
   
     __obj.asInstanceOf[IWebSocketErrorStatics]
   }

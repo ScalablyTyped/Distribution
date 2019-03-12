@@ -25,11 +25,11 @@ trait MultiSortReturn extends js.Object {
 object MultiSortReturn {
   @scala.inline
   def apply(
-    sort: js.Function1[SortParams, scala.Unit],
+    sort: SortParams => scala.Unit,
     sortBy: js.Array[java.lang.String],
     sortDirection: SortDirectionMap
   ): MultiSortReturn = {
-    val __obj = js.Dynamic.literal(sort = sort, sortBy = sortBy, sortDirection = sortDirection)
+    val __obj = js.Dynamic.literal(sort = js.Any.fromFunction1(sort), sortBy = sortBy, sortDirection = sortDirection)
   
     __obj.asInstanceOf[MultiSortReturn]
   }

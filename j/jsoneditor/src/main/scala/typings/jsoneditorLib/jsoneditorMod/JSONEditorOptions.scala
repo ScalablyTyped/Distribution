@@ -137,31 +137,18 @@ object JSONEditorOptions {
     modes: js.Array[JSONEditorMode] = null,
     name: java.lang.String = null,
     navigationBar: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function0[scala.Unit] = null,
-    onChangeJSON: js.Function1[/* json */ js.Any, scala.Unit] = null,
-    onChangeText: js.Function1[/* jsonString */ java.lang.String, scala.Unit] = null,
-    onColorPicker: js.Function3[
-      /* parent */ stdLib.HTMLElement, 
-      /* color */ java.lang.String, 
-      /* onChange */ js.Function1[/* color */ Color, scala.Unit], 
-      scala.Unit
-    ] = null,
-    onEditable: js.Function1[/* node */ Node, scala.Boolean | jsoneditorLib.Anon_Field] = null,
-    onError: js.Function1[/* error */ stdLib.Error, scala.Unit] = null,
-    onEvent: js.Function2[/* node */ Node, /* event */ java.lang.String, scala.Unit] = null,
-    onModeChange: js.Function2[/* newMode */ JSONEditorMode, /* oldMode */ JSONEditorMode, scala.Unit] = null,
-    onNodeName: js.Function1[/* nodeName */ NodeName, js.UndefOr[java.lang.String]] = null,
-    onSelectionChange: js.Function2[/* start */ SerializableNode, /* end */ SerializableNode, scala.Unit] = null,
-    onTextSelectionChange: js.Function3[
-      /* start */ SelectionPosition, 
-      /* end */ SelectionPosition, 
-      /* text */ java.lang.String, 
-      scala.Unit
-    ] = null,
-    onValidate: js.Function1[
-      /* json */ js.Any, 
-      js.Array[ValidationError] | js.Promise[js.Array[ValidationError]]
-    ] = null,
+    onChange: () => scala.Unit = null,
+    onChangeJSON: /* json */ js.Any => scala.Unit = null,
+    onChangeText: /* jsonString */ java.lang.String => scala.Unit = null,
+    onColorPicker: (/* parent */ stdLib.HTMLElement, /* color */ java.lang.String, /* onChange */ js.Function1[/* color */ Color, scala.Unit]) => scala.Unit = null,
+    onEditable: /* node */ Node => scala.Boolean | jsoneditorLib.Anon_Field = null,
+    onError: /* error */ stdLib.Error => scala.Unit = null,
+    onEvent: (/* node */ Node, /* event */ java.lang.String) => scala.Unit = null,
+    onModeChange: (/* newMode */ JSONEditorMode, /* oldMode */ JSONEditorMode) => scala.Unit = null,
+    onNodeName: /* nodeName */ NodeName => js.UndefOr[java.lang.String] = null,
+    onSelectionChange: (/* start */ SerializableNode, /* end */ SerializableNode) => scala.Unit = null,
+    onTextSelectionChange: (/* start */ SelectionPosition, /* end */ SelectionPosition, /* text */ java.lang.String) => scala.Unit = null,
+    onValidate: /* json */ js.Any => js.Array[ValidationError] | js.Promise[js.Array[ValidationError]] = null,
     schema: js.Object = null,
     schemaRefs: js.Object = null,
     search: js.UndefOr[scala.Boolean] = js.undefined,
@@ -190,18 +177,18 @@ object JSONEditorOptions {
     if (modes != null) __obj.updateDynamic("modes")(modes)
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(navigationBar)) __obj.updateDynamic("navigationBar")(navigationBar)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onChangeJSON != null) __obj.updateDynamic("onChangeJSON")(onChangeJSON)
-    if (onChangeText != null) __obj.updateDynamic("onChangeText")(onChangeText)
-    if (onColorPicker != null) __obj.updateDynamic("onColorPicker")(onColorPicker)
-    if (onEditable != null) __obj.updateDynamic("onEditable")(onEditable)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onEvent != null) __obj.updateDynamic("onEvent")(onEvent)
-    if (onModeChange != null) __obj.updateDynamic("onModeChange")(onModeChange)
-    if (onNodeName != null) __obj.updateDynamic("onNodeName")(onNodeName)
-    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(onSelectionChange)
-    if (onTextSelectionChange != null) __obj.updateDynamic("onTextSelectionChange")(onTextSelectionChange)
-    if (onValidate != null) __obj.updateDynamic("onValidate")(onValidate)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction0(onChange))
+    if (onChangeJSON != null) __obj.updateDynamic("onChangeJSON")(js.Any.fromFunction1(onChangeJSON))
+    if (onChangeText != null) __obj.updateDynamic("onChangeText")(js.Any.fromFunction1(onChangeText))
+    if (onColorPicker != null) __obj.updateDynamic("onColorPicker")(js.Any.fromFunction3(onColorPicker))
+    if (onEditable != null) __obj.updateDynamic("onEditable")(js.Any.fromFunction1(onEditable))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onEvent != null) __obj.updateDynamic("onEvent")(js.Any.fromFunction2(onEvent))
+    if (onModeChange != null) __obj.updateDynamic("onModeChange")(js.Any.fromFunction2(onModeChange))
+    if (onNodeName != null) __obj.updateDynamic("onNodeName")(js.Any.fromFunction1(onNodeName))
+    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(js.Any.fromFunction2(onSelectionChange))
+    if (onTextSelectionChange != null) __obj.updateDynamic("onTextSelectionChange")(js.Any.fromFunction3(onTextSelectionChange))
+    if (onValidate != null) __obj.updateDynamic("onValidate")(js.Any.fromFunction1(onValidate))
     if (schema != null) __obj.updateDynamic("schema")(schema)
     if (schemaRefs != null) __obj.updateDynamic("schemaRefs")(schemaRefs)
     if (!js.isUndefined(search)) __obj.updateDynamic("search")(search)

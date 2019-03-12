@@ -19,24 +19,12 @@ trait WebpropertyUserLinksResource extends js.Object {
 object WebpropertyUserLinksResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyLinkIdOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[EntityUserLink]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresults, 
-      gapiDotClientLib.gapiNs.clientNs.Request[EntityUserLinks]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyLinkIdOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[EntityUserLink]
-    ]
+    delete: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyLinkIdOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    insert: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[EntityUserLink],
+    list: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresults => gapiDotClientLib.gapiNs.clientNs.Request[EntityUserLinks],
+    update: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyLinkIdOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[EntityUserLink]
   ): WebpropertyUserLinksResource = {
-    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[WebpropertyUserLinksResource]
   }

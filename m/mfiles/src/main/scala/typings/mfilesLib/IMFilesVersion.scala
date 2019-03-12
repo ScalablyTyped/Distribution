@@ -20,15 +20,15 @@ object IMFilesVersion {
   @scala.inline
   def apply(
     Build: scala.Double,
-    Clone: js.Function0[IMFilesVersion],
-    CompareTo: js.Function1[IMFilesVersion, scala.Double],
+    Clone: () => IMFilesVersion,
+    CompareTo: IMFilesVersion => scala.Double,
     Display: java.lang.String,
     Major: scala.Double,
     Minor: scala.Double,
     Patch: scala.Double,
     SoftwarePlatform: mfilesLib.MFilesNs.MFSoftwarePlatformType
   ): IMFilesVersion = {
-    val __obj = js.Dynamic.literal(Build = Build, Clone = Clone, CompareTo = CompareTo, Display = Display, Major = Major, Minor = Minor, Patch = Patch, SoftwarePlatform = SoftwarePlatform)
+    val __obj = js.Dynamic.literal(Build = Build, Clone = js.Any.fromFunction0(Clone), CompareTo = js.Any.fromFunction1(CompareTo), Display = Display, Major = Major, Minor = Minor, Patch = Patch, SoftwarePlatform = SoftwarePlatform)
   
     __obj.asInstanceOf[IMFilesVersion]
   }

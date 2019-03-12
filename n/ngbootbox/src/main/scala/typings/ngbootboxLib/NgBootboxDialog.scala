@@ -27,12 +27,12 @@ object NgBootboxDialog {
     animate: js.UndefOr[scala.Boolean] = js.undefined,
     backdrop: js.UndefOr[scala.Boolean] = js.undefined,
     buttons: bootboxLib.BootboxButtonMap = null,
-    callback: js.Function0[_] = null,
+    callback: () => _ = null,
     className: java.lang.String = null,
     closeButton: js.UndefOr[scala.Boolean] = js.undefined,
     locale: java.lang.String = null,
     message: java.lang.String = null,
-    onEscape: js.Function0[_ | scala.Boolean] = null,
+    onEscape: () => _ | scala.Boolean = null,
     show: js.UndefOr[scala.Boolean] = js.undefined,
     size: java.lang.String = null,
     templateUrl: java.lang.String = null,
@@ -42,12 +42,12 @@ object NgBootboxDialog {
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop)
     if (buttons != null) __obj.updateDynamic("buttons")(buttons)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (message != null) __obj.updateDynamic("message")(message)
-    if (onEscape != null) __obj.updateDynamic("onEscape")(onEscape)
+    if (onEscape != null) __obj.updateDynamic("onEscape")(js.Any.fromFunction0(onEscape))
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
     if (size != null) __obj.updateDynamic("size")(size)
     if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)

@@ -17,12 +17,8 @@ object ^ extends js.Object {
     * Otherwise, compile returns the AST synchronously
     *
     */
-  def default(input: java.lang.String): js.Promise[idyllDashCompilerLib.idyllDashCompilerMod.AST] | idyllDashCompilerLib.idyllDashCompilerMod.AST = js.native
-  def default(input: java.lang.String, options: idyllDashCompilerLib.idyllDashCompilerMod.Options): js.Promise[idyllDashCompilerLib.idyllDashCompilerMod.AST] | idyllDashCompilerLib.idyllDashCompilerMod.AST = js.native
-  def default(
-    input: java.lang.String,
-    options: idyllDashCompilerLib.idyllDashCompilerMod.Options,
-    callback: js.Function0[scala.Unit]
-  ): js.Promise[idyllDashCompilerLib.idyllDashCompilerMod.AST] | idyllDashCompilerLib.idyllDashCompilerMod.AST = js.native
+  def default(input: java.lang.String): js.Promise[AST] | AST = js.native
+  def default(input: java.lang.String, options: Options): js.Promise[AST] | AST = js.native
+  def default(input: java.lang.String, options: Options, callback: js.Function0[scala.Unit]): js.Promise[AST] | AST = js.native
 }
 

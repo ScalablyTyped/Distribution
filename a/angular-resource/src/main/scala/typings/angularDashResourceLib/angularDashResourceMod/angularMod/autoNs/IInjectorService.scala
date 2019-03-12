@@ -13,13 +13,10 @@ trait IInjectorService extends js.Object {
 object IInjectorService {
   @scala.inline
   def apply(
-    get_$resource: js.Function1[
-      angularDashResourceLib.angularDashResourceLibStrings.DOLLARresource, 
-      angularDashResourceLib.angularDashResourceMod.angularMod.resourceNs.IResourceService
-    ]
+    get_$resource: angularDashResourceLib.angularDashResourceLibStrings.DOLLARresource => angularDashResourceLib.angularDashResourceMod.angularMod.resourceNs.IResourceService
   ): IInjectorService = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get_$resource)
+    __obj.updateDynamic("get")(js.Any.fromFunction1(get_$resource))
     __obj.asInstanceOf[IInjectorService]
   }
 }

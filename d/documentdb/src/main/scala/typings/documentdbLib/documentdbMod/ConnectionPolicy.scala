@@ -17,7 +17,7 @@ trait ConnectionPolicy extends js.Object {
   /** Flag to enable/disable automatic redirecting of requests based on read/write operations. */
   var EnableEndpointDiscovery: scala.Boolean
   /** Attachment content (aka media) download mode.  */
-  var MediaReadMode: MediaReadMode
+  var MediaReadMode: documentdbLib.documentdbMod.MediaReadMode
   /** Time to wait for response from network peer for attachment content (aka media) operations. Represented in milliseconds. */
   var MediaRequestTimeout: scala.Double
   /** List of azure regions to be used as preferred locations for read requests. */
@@ -25,7 +25,7 @@ trait ConnectionPolicy extends js.Object {
   /** Request timeout (time to wait for response from network peer). Represented in milliseconds. */
   var RequestTimeout: scala.Double
   /** RetryOptions instance which defines several configurable properties used during retry. */
-  var RetryOptions: RetryOptions
+  var RetryOptions: documentdbLib.documentdbMod.RetryOptions
 }
 
 object ConnectionPolicy {

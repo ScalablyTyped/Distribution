@@ -157,15 +157,15 @@ object Model {
     allowDragAndDrop: js.UndefOr[scala.Boolean] = js.undefined,
     asyncUpload: js.UndefOr[scala.Boolean] = js.undefined,
     autoUpload: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeSend: js.Function1[/* e */ BeforeSendEventArgs, scala.Unit] = null,
-    begin: js.Function1[/* e */ BeginEventArgs, scala.Unit] = null,
+    beforeSend: /* e */ BeforeSendEventArgs => scala.Unit = null,
+    begin: /* e */ BeginEventArgs => scala.Unit = null,
     buttonText: ButtonText = null,
-    cancel: js.Function1[/* e */ CancelEventArgs, scala.Unit] = null,
-    complete: js.Function1[/* e */ CompleteEventArgs, scala.Unit] = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cancel: /* e */ CancelEventArgs => scala.Unit = null,
+    complete: /* e */ CompleteEventArgs => scala.Unit = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
     customFileDetails: CustomFileDetails = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     dialogAction: DialogAction = null,
     dialogPosition: js.Any = null,
     dialogText: DialogText = null,
@@ -174,24 +174,24 @@ object Model {
     dropAreaWidth: scala.Double | java.lang.String = null,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
-    error: js.Function1[/* e */ ErrorEventArgs, scala.Unit] = null,
+    error: /* e */ ErrorEventArgs => scala.Unit = null,
     extensionsAllow: java.lang.String = null,
     extensionsDeny: java.lang.String = null,
-    fileSelect: js.Function1[/* e */ FileSelectEventArgs, scala.Unit] = null,
+    fileSelect: /* e */ FileSelectEventArgs => scala.Unit = null,
     fileSize: scala.Int | scala.Double = null,
     height: java.lang.String = null,
     htmlAttributes: js.Any = null,
-    inProgress: js.Function1[/* e */ InProgressEventArgs, scala.Unit] = null,
+    inProgress: /* e */ InProgressEventArgs => scala.Unit = null,
     locale: java.lang.String = null,
     multipleFilesSelection: js.UndefOr[scala.Boolean] = js.undefined,
     pushFile: js.Any = null,
-    remove: js.Function1[/* e */ RemoveEventArgs, scala.Unit] = null,
+    remove: /* e */ RemoveEventArgs => scala.Unit = null,
     removeUrl: java.lang.String = null,
     saveUrl: java.lang.String = null,
     showBrowseButton: js.UndefOr[scala.Boolean] = js.undefined,
     showFileDetails: js.UndefOr[scala.Boolean] = js.undefined,
     showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
-    success: js.Function1[/* e */ SuccessEventArgs, scala.Unit] = null,
+    success: /* e */ SuccessEventArgs => scala.Unit = null,
     uploadName: java.lang.String = null,
     width: java.lang.String = null
   ): Model = {
@@ -199,15 +199,15 @@ object Model {
     if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop)
     if (!js.isUndefined(asyncUpload)) __obj.updateDynamic("asyncUpload")(asyncUpload)
     if (!js.isUndefined(autoUpload)) __obj.updateDynamic("autoUpload")(autoUpload)
-    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)
-    if (begin != null) __obj.updateDynamic("begin")(begin)
+    if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction1(beforeSend))
+    if (begin != null) __obj.updateDynamic("begin")(js.Any.fromFunction1(begin))
     if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (customFileDetails != null) __obj.updateDynamic("customFileDetails")(customFileDetails)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (dialogAction != null) __obj.updateDynamic("dialogAction")(dialogAction)
     if (dialogPosition != null) __obj.updateDynamic("dialogPosition")(dialogPosition)
     if (dialogText != null) __obj.updateDynamic("dialogText")(dialogText)
@@ -216,24 +216,24 @@ object Model {
     if (dropAreaWidth != null) __obj.updateDynamic("dropAreaWidth")(dropAreaWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (extensionsAllow != null) __obj.updateDynamic("extensionsAllow")(extensionsAllow)
     if (extensionsDeny != null) __obj.updateDynamic("extensionsDeny")(extensionsDeny)
-    if (fileSelect != null) __obj.updateDynamic("fileSelect")(fileSelect)
+    if (fileSelect != null) __obj.updateDynamic("fileSelect")(js.Any.fromFunction1(fileSelect))
     if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height)
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
-    if (inProgress != null) __obj.updateDynamic("inProgress")(inProgress)
+    if (inProgress != null) __obj.updateDynamic("inProgress")(js.Any.fromFunction1(inProgress))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (!js.isUndefined(multipleFilesSelection)) __obj.updateDynamic("multipleFilesSelection")(multipleFilesSelection)
     if (pushFile != null) __obj.updateDynamic("pushFile")(pushFile)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
     if (removeUrl != null) __obj.updateDynamic("removeUrl")(removeUrl)
     if (saveUrl != null) __obj.updateDynamic("saveUrl")(saveUrl)
     if (!js.isUndefined(showBrowseButton)) __obj.updateDynamic("showBrowseButton")(showBrowseButton)
     if (!js.isUndefined(showFileDetails)) __obj.updateDynamic("showFileDetails")(showFileDetails)
     if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     if (uploadName != null) __obj.updateDynamic("uploadName")(uploadName)
     if (width != null) __obj.updateDynamic("width")(width)
     __obj.asInstanceOf[Model]

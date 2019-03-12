@@ -21,18 +21,18 @@ trait BindingToSyntax[T] extends js.Object {
 object BindingToSyntax {
   @scala.inline
   def apply[T](
-    to: js.Function1[inversifyLib.Anon_Args[T], BindingInWhenOnSyntax[T]],
-    toAutoFactory: js.Function1[ServiceIdentifier[js.Any], BindingWhenOnSyntax[T]],
-    toConstantValue: js.Function1[T, BindingWhenOnSyntax[T]],
-    toConstructor: js.Function1[Newable[js.Any], BindingWhenOnSyntax[T]],
-    toDynamicValue: js.Function1[js.Function1[/* context */ Context, T], BindingInWhenOnSyntax[T]],
-    toFactory: js.Function1[FactoryCreator[js.Any], BindingWhenOnSyntax[T]],
-    toFunction: js.Function1[T, BindingWhenOnSyntax[T]],
-    toProvider: js.Function1[ProviderCreator[js.Any], BindingWhenOnSyntax[T]],
-    toSelf: js.Function0[BindingInWhenOnSyntax[T]],
-    toService: js.Function1[ServiceIdentifier[T], scala.Unit]
+    to: inversifyLib.Anon_Args[T] => BindingInWhenOnSyntax[T],
+    toAutoFactory: ServiceIdentifier[js.Any] => BindingWhenOnSyntax[T],
+    toConstantValue: T => BindingWhenOnSyntax[T],
+    toConstructor: Newable[js.Any] => BindingWhenOnSyntax[T],
+    toDynamicValue: js.Function1[/* context */ Context, T] => BindingInWhenOnSyntax[T],
+    toFactory: FactoryCreator[js.Any] => BindingWhenOnSyntax[T],
+    toFunction: T => BindingWhenOnSyntax[T],
+    toProvider: ProviderCreator[js.Any] => BindingWhenOnSyntax[T],
+    toSelf: () => BindingInWhenOnSyntax[T],
+    toService: ServiceIdentifier[T] => scala.Unit
   ): BindingToSyntax[T] = {
-    val __obj = js.Dynamic.literal(to = to, toAutoFactory = toAutoFactory, toConstantValue = toConstantValue, toConstructor = toConstructor, toDynamicValue = toDynamicValue, toFactory = toFactory, toFunction = toFunction, toProvider = toProvider, toSelf = toSelf, toService = toService)
+    val __obj = js.Dynamic.literal(to = js.Any.fromFunction1(to), toAutoFactory = js.Any.fromFunction1(toAutoFactory), toConstantValue = js.Any.fromFunction1(toConstantValue), toConstructor = js.Any.fromFunction1(toConstructor), toDynamicValue = js.Any.fromFunction1(toDynamicValue), toFactory = js.Any.fromFunction1(toFactory), toFunction = js.Any.fromFunction1(toFunction), toProvider = js.Any.fromFunction1(toProvider), toSelf = js.Any.fromFunction0(toSelf), toService = js.Any.fromFunction1(toService))
   
     __obj.asInstanceOf[BindingToSyntax[T]]
   }

@@ -190,12 +190,7 @@ object ExtraOptions {
     enableTracing: js.UndefOr[scala.Boolean] = js.undefined,
     errorHandler: atAngularRouterLib.srcRouterMod.ErrorHandler = null,
     initialNavigation: InitialNavigation = null,
-    malformedUriErrorHandler: js.Function3[
-      /* error */ stdLib.URIError, 
-      /* urlSerializer */ atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlSerializer, 
-      /* url */ java.lang.String, 
-      atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree
-    ] = null,
+    malformedUriErrorHandler: (/* error */ stdLib.URIError, /* urlSerializer */ atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlSerializer, /* url */ java.lang.String) => atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree = null,
     onSameUrlNavigation: atAngularRouterLib.atAngularRouterLibStrings.reload | atAngularRouterLib.atAngularRouterLibStrings.ignore = null,
     paramsInheritanceStrategy: atAngularRouterLib.atAngularRouterLibStrings.emptyOnly | atAngularRouterLib.atAngularRouterLibStrings.always = null,
     preloadingStrategy: js.Any = null,
@@ -210,7 +205,7 @@ object ExtraOptions {
     if (!js.isUndefined(enableTracing)) __obj.updateDynamic("enableTracing")(enableTracing)
     if (errorHandler != null) __obj.updateDynamic("errorHandler")(errorHandler)
     if (initialNavigation != null) __obj.updateDynamic("initialNavigation")(initialNavigation)
-    if (malformedUriErrorHandler != null) __obj.updateDynamic("malformedUriErrorHandler")(malformedUriErrorHandler)
+    if (malformedUriErrorHandler != null) __obj.updateDynamic("malformedUriErrorHandler")(js.Any.fromFunction3(malformedUriErrorHandler))
     if (onSameUrlNavigation != null) __obj.updateDynamic("onSameUrlNavigation")(onSameUrlNavigation.asInstanceOf[js.Any])
     if (paramsInheritanceStrategy != null) __obj.updateDynamic("paramsInheritanceStrategy")(paramsInheritanceStrategy.asInstanceOf[js.Any])
     if (preloadingStrategy != null) __obj.updateDynamic("preloadingStrategy")(preloadingStrategy)

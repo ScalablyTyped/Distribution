@@ -320,10 +320,10 @@ object ContactsNs extends js.Object {
   @JSName("CalendarFormats")
   @js.native
   object CalendarFormatsNs extends js.Object {
-    val Chinese: Chinese = js.native
-    val Gregorian: Gregorian = js.native
-    val Hebrew: Hebrew = js.native
-    val Islamic: Islamic = js.native
+    val Chinese: expoLib.expoMod.ContactsNs.CalendarFormatsNs.Chinese = js.native
+    val Gregorian: expoLib.expoMod.ContactsNs.CalendarFormatsNs.Gregorian = js.native
+    val Hebrew: expoLib.expoMod.ContactsNs.CalendarFormatsNs.Hebrew = js.native
+    val Islamic: expoLib.expoMod.ContactsNs.CalendarFormatsNs.Islamic = js.native
     type Chinese = expoLib.expoLibStrings.chinese
     type Gregorian = expoLib.expoLibStrings.gregorian
     type Hebrew = expoLib.expoLibStrings.hebrew
@@ -336,8 +336,8 @@ object ContactsNs extends js.Object {
   @JSName("ContactTypes")
   @js.native
   object ContactTypesNs extends js.Object {
-    val Company: Company = js.native
-    val Person: Person = js.native
+    val Company: expoLib.expoMod.ContactsNs.ContactTypesNs.Company = js.native
+    val Person: expoLib.expoMod.ContactsNs.ContactTypesNs.Person = js.native
     type Company = expoLib.expoLibStrings.company
     type Person = expoLib.expoLibStrings.person
   }
@@ -348,10 +348,10 @@ object ContactsNs extends js.Object {
   @JSName("ContainerTypes")
   @js.native
   object ContainerTypesNs extends js.Object {
-    val CardDAV: CardDAV = js.native
-    val Exchange: Exchange = js.native
-    val Local: Local = js.native
-    val Unassigned: Unassigned = js.native
+    val CardDAV: expoLib.expoMod.ContactsNs.ContainerTypesNs.CardDAV = js.native
+    val Exchange: expoLib.expoMod.ContactsNs.ContainerTypesNs.Exchange = js.native
+    val Local: expoLib.expoMod.ContactsNs.ContainerTypesNs.Local = js.native
+    val Unassigned: expoLib.expoMod.ContactsNs.ContainerTypesNs.Unassigned = js.native
     type CardDAV = expoLib.expoLibStrings.cardDAV
     type Exchange = expoLib.expoLibStrings.exchange
     type Local = expoLib.expoLibStrings.local
@@ -362,36 +362,36 @@ object ContactsNs extends js.Object {
   @JSName("Fields")
   @js.native
   object FieldsNs extends js.Object {
-    val Addresses: Addresses = js.native
-    val Birthday: Birthday = js.native
-    val Company: Company = js.native
-    val ContactType: ContactType = js.native
-    val Dates: Dates = js.native
-    val Department: Department = js.native
-    val Emails: Emails = js.native
-    val FirstName: FirstName = js.native
-    val ID: ID = js.native
-    val Image: Image = js.native
-    val ImageAvailable: ImageAvailable = js.native
-    val InstantMessageAddresses: InstantMessageAddresses = js.native
-    val JobTitle: JobTitle = js.native
-    val LastName: LastName = js.native
-    val MaidenName: MaidenName = js.native
-    val MiddleName: MiddleName = js.native
-    val Name: Name = js.native
-    val NamePrefix: NamePrefix = js.native
-    val NameSuffix: NameSuffix = js.native
-    val Nickname: Nickname = js.native
-    val NonGregorianBirthday: NonGregorianBirthday = js.native
-    val Note: Note = js.native
-    val PhoneNumbers: PhoneNumbers = js.native
-    val PhoneticFirstName: PhoneticFirstName = js.native
-    val PhoneticLastName: PhoneticLastName = js.native
-    val PhoneticMiddleName: PhoneticMiddleName = js.native
-    val RawImage: RawImage = js.native
-    val Relationships: Relationships = js.native
-    val SocialProfiles: SocialProfiles = js.native
-    val UrlAddresses: UrlAddresses = js.native
+    val Addresses: expoLib.expoMod.ContactsNs.FieldsNs.Addresses = js.native
+    val Birthday: expoLib.expoMod.ContactsNs.FieldsNs.Birthday = js.native
+    val Company: expoLib.expoMod.ContactsNs.FieldsNs.Company = js.native
+    val ContactType: expoLib.expoMod.ContactsNs.FieldsNs.ContactType = js.native
+    val Dates: expoLib.expoMod.ContactsNs.FieldsNs.Dates = js.native
+    val Department: expoLib.expoMod.ContactsNs.FieldsNs.Department = js.native
+    val Emails: expoLib.expoMod.ContactsNs.FieldsNs.Emails = js.native
+    val FirstName: expoLib.expoMod.ContactsNs.FieldsNs.FirstName = js.native
+    val ID: expoLib.expoMod.ContactsNs.FieldsNs.ID = js.native
+    val Image: expoLib.expoMod.ContactsNs.FieldsNs.Image = js.native
+    val ImageAvailable: expoLib.expoMod.ContactsNs.FieldsNs.ImageAvailable = js.native
+    val InstantMessageAddresses: expoLib.expoMod.ContactsNs.FieldsNs.InstantMessageAddresses = js.native
+    val JobTitle: expoLib.expoMod.ContactsNs.FieldsNs.JobTitle = js.native
+    val LastName: expoLib.expoMod.ContactsNs.FieldsNs.LastName = js.native
+    val MaidenName: expoLib.expoMod.ContactsNs.FieldsNs.MaidenName = js.native
+    val MiddleName: expoLib.expoMod.ContactsNs.FieldsNs.MiddleName = js.native
+    val Name: expoLib.expoMod.ContactsNs.FieldsNs.Name = js.native
+    val NamePrefix: expoLib.expoMod.ContactsNs.FieldsNs.NamePrefix = js.native
+    val NameSuffix: expoLib.expoMod.ContactsNs.FieldsNs.NameSuffix = js.native
+    val Nickname: expoLib.expoMod.ContactsNs.FieldsNs.Nickname = js.native
+    val NonGregorianBirthday: expoLib.expoMod.ContactsNs.FieldsNs.NonGregorianBirthday = js.native
+    val Note: expoLib.expoMod.ContactsNs.FieldsNs.Note = js.native
+    val PhoneNumbers: expoLib.expoMod.ContactsNs.FieldsNs.PhoneNumbers = js.native
+    val PhoneticFirstName: expoLib.expoMod.ContactsNs.FieldsNs.PhoneticFirstName = js.native
+    val PhoneticLastName: expoLib.expoMod.ContactsNs.FieldsNs.PhoneticLastName = js.native
+    val PhoneticMiddleName: expoLib.expoMod.ContactsNs.FieldsNs.PhoneticMiddleName = js.native
+    val RawImage: expoLib.expoMod.ContactsNs.FieldsNs.RawImage = js.native
+    val Relationships: expoLib.expoMod.ContactsNs.FieldsNs.Relationships = js.native
+    val SocialProfiles: expoLib.expoMod.ContactsNs.FieldsNs.SocialProfiles = js.native
+    val UrlAddresses: expoLib.expoMod.ContactsNs.FieldsNs.UrlAddresses = js.native
     type Addresses = expoLib.expoLibStrings.addresses
     type Birthday = expoLib.expoLibStrings.birthday
     type Company = expoLib.expoLibStrings.company
@@ -427,9 +427,9 @@ object ContactsNs extends js.Object {
   @JSName("FormTypes")
   @js.native
   object FormTypesNs extends js.Object {
-    val Default: Default = js.native
-    val New: New = js.native
-    val Unknown: Unknown = js.native
+    val Default: expoLib.expoMod.ContactsNs.FormTypesNs.Default = js.native
+    val New: expoLib.expoMod.ContactsNs.FormTypesNs.New = js.native
+    val Unknown: expoLib.expoMod.ContactsNs.FormTypesNs.Unknown = js.native
     type Default = expoLib.expoLibStrings.default
     type New = expoLib.expoLibStrings.`new`
     type Unknown = expoLib.expoLibStrings.unknown
@@ -438,9 +438,9 @@ object ContactsNs extends js.Object {
   @JSName("SortTypes")
   @js.native
   object SortTypesNs extends js.Object {
-    val FirstName: FirstName = js.native
-    val LastName: LastName = js.native
-    val UserDefault: UserDefault = js.native
+    val FirstName: expoLib.expoMod.ContactsNs.SortTypesNs.FirstName = js.native
+    val LastName: expoLib.expoMod.ContactsNs.SortTypesNs.LastName = js.native
+    val UserDefault: expoLib.expoMod.ContactsNs.SortTypesNs.UserDefault = js.native
     type FirstName = expoLib.expoLibStrings.firstName
     type LastName = expoLib.expoLibStrings.lastName
     type UserDefault = expoLib.expoLibStrings.userDefault

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.ConnectorFormat")
 @js.native
 class ConnectorFormat protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val BeginConnected: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   val BeginConnectedShape: Shape = js.native
   val BeginConnectionSite: scala.Double = js.native

@@ -55,15 +55,15 @@ object XUntitledNumbers {
   @scala.inline
   def apply(
     UntitledPrefix: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getUntitledPrefix: js.Function0[java.lang.String],
-    leaseNumber: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    releaseNumber: js.Function1[scala.Double, scala.Unit],
-    releaseNumberForComponent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
+    acquire: () => scala.Unit,
+    getUntitledPrefix: () => java.lang.String,
+    leaseNumber: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    releaseNumber: scala.Double => scala.Unit,
+    releaseNumberForComponent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => scala.Unit
   ): XUntitledNumbers = {
-    val __obj = js.Dynamic.literal(UntitledPrefix = UntitledPrefix, acquire = acquire, getUntitledPrefix = getUntitledPrefix, leaseNumber = leaseNumber, queryInterface = queryInterface, release = release, releaseNumber = releaseNumber, releaseNumberForComponent = releaseNumberForComponent)
+    val __obj = js.Dynamic.literal(UntitledPrefix = UntitledPrefix, acquire = js.Any.fromFunction0(acquire), getUntitledPrefix = js.Any.fromFunction0(getUntitledPrefix), leaseNumber = js.Any.fromFunction1(leaseNumber), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), releaseNumber = js.Any.fromFunction1(releaseNumber), releaseNumberForComponent = js.Any.fromFunction1(releaseNumberForComponent))
   
     __obj.asInstanceOf[XUntitledNumbers]
   }

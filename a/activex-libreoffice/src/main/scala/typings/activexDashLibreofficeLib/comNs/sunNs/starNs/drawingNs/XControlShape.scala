@@ -35,18 +35,18 @@ object XControlShape {
     Position: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
     ShapeType: java.lang.String,
     Size: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
-    acquire: js.Function0[scala.Unit],
-    getControl: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlModel],
-    getPosition: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point],
-    getShapeType: js.Function0[java.lang.String],
-    getSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setControl: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlModel, scala.Unit],
-    setPosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Unit],
-    setSize: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit]
+    acquire: () => scala.Unit,
+    getControl: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlModel,
+    getPosition: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    getShapeType: () => java.lang.String,
+    getSize: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setControl: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlModel => scala.Unit,
+    setPosition: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point => scala.Unit,
+    setSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size => scala.Unit
   ): XControlShape = {
-    val __obj = js.Dynamic.literal(Control = Control, Position = Position, ShapeType = ShapeType, Size = Size, acquire = acquire, getControl = getControl, getPosition = getPosition, getShapeType = getShapeType, getSize = getSize, queryInterface = queryInterface, release = release, setControl = setControl, setPosition = setPosition, setSize = setSize)
+    val __obj = js.Dynamic.literal(Control = Control, Position = Position, ShapeType = ShapeType, Size = Size, acquire = js.Any.fromFunction0(acquire), getControl = js.Any.fromFunction0(getControl), getPosition = js.Any.fromFunction0(getPosition), getShapeType = js.Any.fromFunction0(getShapeType), getSize = js.Any.fromFunction0(getSize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setControl = js.Any.fromFunction1(setControl), setPosition = js.Any.fromFunction1(setPosition), setSize = js.Any.fromFunction1(setSize))
   
     __obj.asInstanceOf[XControlShape]
   }

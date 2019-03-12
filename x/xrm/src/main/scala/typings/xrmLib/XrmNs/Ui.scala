@@ -97,21 +97,21 @@ trait Ui extends js.Object {
 object Ui {
   @scala.inline
   def apply(
-    clearFormNotification: js.Function1[java.lang.String, scala.Boolean],
-    close: js.Function0[scala.Unit],
+    clearFormNotification: java.lang.String => scala.Boolean,
+    close: () => scala.Unit,
     controls: xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.Control],
     formSelector: xrmLib.XrmNs.ControlsNs.FormSelector,
-    getFormType: js.Function0[xrmLib.XrmEnumNs.FormType],
-    getViewPortHeight: js.Function0[scala.Double],
-    getViewPortWidth: js.Function0[scala.Double],
+    getFormType: () => xrmLib.XrmEnumNs.FormType,
+    getViewPortHeight: () => scala.Double,
+    getViewPortWidth: () => scala.Double,
     navigation: xrmLib.XrmNs.ControlsNs.Navigation,
     process: xrmLib.XrmNs.ControlsNs.ProcessControl,
     quickForms: xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.QuickFormControl],
-    refreshRibbon: js.Function0[scala.Unit],
-    setFormNotification: js.Function3[java.lang.String, FormNotificationLevel, java.lang.String, scala.Boolean],
+    refreshRibbon: () => scala.Unit,
+    setFormNotification: (java.lang.String, FormNotificationLevel, java.lang.String) => scala.Boolean,
     tabs: xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.Tab]
   ): Ui = {
-    val __obj = js.Dynamic.literal(clearFormNotification = clearFormNotification, close = close, controls = controls, formSelector = formSelector, getFormType = getFormType, getViewPortHeight = getViewPortHeight, getViewPortWidth = getViewPortWidth, navigation = navigation, process = process, quickForms = quickForms, refreshRibbon = refreshRibbon, setFormNotification = setFormNotification, tabs = tabs)
+    val __obj = js.Dynamic.literal(clearFormNotification = js.Any.fromFunction1(clearFormNotification), close = js.Any.fromFunction0(close), controls = controls, formSelector = formSelector, getFormType = js.Any.fromFunction0(getFormType), getViewPortHeight = js.Any.fromFunction0(getViewPortHeight), getViewPortWidth = js.Any.fromFunction0(getViewPortWidth), navigation = navigation, process = process, quickForms = quickForms, refreshRibbon = js.Any.fromFunction0(refreshRibbon), setFormNotification = js.Any.fromFunction3(setFormNotification), tabs = tabs)
   
     __obj.asInstanceOf[Ui]
   }

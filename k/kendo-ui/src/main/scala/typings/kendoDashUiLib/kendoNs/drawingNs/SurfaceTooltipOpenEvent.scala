@@ -13,13 +13,13 @@ trait SurfaceTooltipOpenEvent extends SurfaceEvent {
 object SurfaceTooltipOpenEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Surface,
     element: Element = null,
     target: Element = null
   ): SurfaceTooltipOpenEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (element != null) __obj.updateDynamic("element")(element)
     if (target != null) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[SurfaceTooltipOpenEvent]

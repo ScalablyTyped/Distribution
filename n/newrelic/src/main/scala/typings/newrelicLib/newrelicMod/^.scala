@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("newrelic", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val instrument: newrelicLib.newrelicMod.Instrument = js.native
-  val instrumentDatastore: newrelicLib.newrelicMod.Instrument = js.native
-  val instrumentMessages: newrelicLib.newrelicMod.Instrument = js.native
-  val instrumentWebframework: newrelicLib.newrelicMod.Instrument = js.native
+  val instrument: Instrument = js.native
+  val instrumentDatastore: Instrument = js.native
+  val instrumentMessages: Instrument = js.native
+  val instrumentWebframework: Instrument = js.native
   def addCustomAttribute(key: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def addCustomAttribute(key: java.lang.String, value: scala.Double): scala.Unit = js.native
   def addCustomAttributes(atts: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]): scala.Unit = js.native
@@ -22,7 +22,7 @@ object ^ extends js.Object {
   def createTracer[T /* <: js.Function1[/* repeated */ js.Any, _] */](name: java.lang.String, handle: T): T = js.native
   def endTransaction(): scala.Unit = js.native
   def getBrowserTimingHeader(): java.lang.String = js.native
-  def getTransaction(): newrelicLib.newrelicMod.TransactionHandle = js.native
+  def getTransaction(): TransactionHandle = js.native
   def incrementMetric(name: java.lang.String): scala.Unit = js.native
   def incrementMetric(name: java.lang.String, value: scala.Double): scala.Unit = js.native
   def noticeError(error: stdLib.Error): scala.Unit = js.native
@@ -34,7 +34,7 @@ object ^ extends js.Object {
     eventType: java.lang.String,
     attributes: org.scalablytyped.runtime.StringDictionary[scala.Boolean | scala.Double | java.lang.String]
   ): scala.Unit = js.native
-  def recordMetric(name: java.lang.String, value: newrelicLib.newrelicMod.Metric): scala.Unit = js.native
+  def recordMetric(name: java.lang.String, value: Metric): scala.Unit = js.native
   def recordMetric(name: java.lang.String, value: scala.Double): scala.Unit = js.native
   def setControllerName(name: java.lang.String, action: java.lang.String): scala.Unit = js.native
   def setDispatcher(name: java.lang.String): scala.Unit = js.native

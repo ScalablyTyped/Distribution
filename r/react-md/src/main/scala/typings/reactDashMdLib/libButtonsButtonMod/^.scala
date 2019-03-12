@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/Buttons/Button", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactDashMdLib.libButtonsButtonMod.ButtonComponent = js.native
+  val default: ButtonComponent = js.native
 }
 

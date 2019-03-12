@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.LinkFormat")
 @js.native
 class LinkFormat protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var AutoUpdate: scala.Boolean = js.native
   val Creator: scala.Double = js.native
   var Locked: scala.Boolean = js.native

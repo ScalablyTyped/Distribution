@@ -19,7 +19,7 @@ trait TreeDataModelEvent
     *
     * All nodes must have {@link ParentNode} as parent.
     */
-  var Nodes: activexDashInteropLib.SafeArray[XTreeNode]
+  var Nodes: stdLib.SafeArray[XTreeNode]
   /**
     * holds the parent node for changed, added or removed nodes.
     *
@@ -31,7 +31,7 @@ trait TreeDataModelEvent
 object TreeDataModelEvent {
   @scala.inline
   def apply(
-    Nodes: activexDashInteropLib.SafeArray[XTreeNode],
+    Nodes: stdLib.SafeArray[XTreeNode],
     ParentNode: XTreeNode,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): TreeDataModelEvent = {

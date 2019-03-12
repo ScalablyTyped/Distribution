@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   */
 trait XDatabaseRegistrations extends js.Object {
   /** returns the names of all registered databases */
-  val RegistrationNames: activexDashInteropLib.SafeArray[java.lang.String]
+  val RegistrationNames: stdLib.SafeArray[java.lang.String]
   /** registers a listener which is notified of changes in the registered databases */
   def addDatabaseRegistrationsListener(Listener: XDatabaseRegistrationsListener): scala.Unit
   /**
@@ -31,7 +31,7 @@ trait XDatabaseRegistrations extends js.Object {
     */
   def getDatabaseLocation(Name: java.lang.String): java.lang.String
   /** returns the names of all registered databases */
-  def getRegistrationNames(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getRegistrationNames(): stdLib.SafeArray[java.lang.String]
   /**
     * determines whether a database is registered under the given name.
     * @throws com::sun::star::lang::IllegalArgumentException if the given name is empty
@@ -65,18 +65,18 @@ trait XDatabaseRegistrations extends js.Object {
 object XDatabaseRegistrations {
   @scala.inline
   def apply(
-    RegistrationNames: activexDashInteropLib.SafeArray[java.lang.String],
-    addDatabaseRegistrationsListener: js.Function1[XDatabaseRegistrationsListener, scala.Unit],
-    changeDatabaseLocation: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    getDatabaseLocation: js.Function1[java.lang.String, java.lang.String],
-    getRegistrationNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    hasRegisteredDatabase: js.Function1[java.lang.String, scala.Boolean],
-    isDatabaseRegistrationReadOnly: js.Function1[java.lang.String, scala.Boolean],
-    registerDatabaseLocation: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    removeDatabaseRegistrationsListener: js.Function1[XDatabaseRegistrationsListener, scala.Unit],
-    revokeDatabaseLocation: js.Function1[java.lang.String, scala.Unit]
+    RegistrationNames: stdLib.SafeArray[java.lang.String],
+    addDatabaseRegistrationsListener: XDatabaseRegistrationsListener => scala.Unit,
+    changeDatabaseLocation: (java.lang.String, java.lang.String) => scala.Unit,
+    getDatabaseLocation: java.lang.String => java.lang.String,
+    getRegistrationNames: () => stdLib.SafeArray[java.lang.String],
+    hasRegisteredDatabase: java.lang.String => scala.Boolean,
+    isDatabaseRegistrationReadOnly: java.lang.String => scala.Boolean,
+    registerDatabaseLocation: (java.lang.String, java.lang.String) => scala.Unit,
+    removeDatabaseRegistrationsListener: XDatabaseRegistrationsListener => scala.Unit,
+    revokeDatabaseLocation: java.lang.String => scala.Unit
   ): XDatabaseRegistrations = {
-    val __obj = js.Dynamic.literal(RegistrationNames = RegistrationNames, addDatabaseRegistrationsListener = addDatabaseRegistrationsListener, changeDatabaseLocation = changeDatabaseLocation, getDatabaseLocation = getDatabaseLocation, getRegistrationNames = getRegistrationNames, hasRegisteredDatabase = hasRegisteredDatabase, isDatabaseRegistrationReadOnly = isDatabaseRegistrationReadOnly, registerDatabaseLocation = registerDatabaseLocation, removeDatabaseRegistrationsListener = removeDatabaseRegistrationsListener, revokeDatabaseLocation = revokeDatabaseLocation)
+    val __obj = js.Dynamic.literal(RegistrationNames = RegistrationNames, addDatabaseRegistrationsListener = js.Any.fromFunction1(addDatabaseRegistrationsListener), changeDatabaseLocation = js.Any.fromFunction2(changeDatabaseLocation), getDatabaseLocation = js.Any.fromFunction1(getDatabaseLocation), getRegistrationNames = js.Any.fromFunction0(getRegistrationNames), hasRegisteredDatabase = js.Any.fromFunction1(hasRegisteredDatabase), isDatabaseRegistrationReadOnly = js.Any.fromFunction1(isDatabaseRegistrationReadOnly), registerDatabaseLocation = js.Any.fromFunction2(registerDatabaseLocation), removeDatabaseRegistrationsListener = js.Any.fromFunction1(removeDatabaseRegistrationsListener), revokeDatabaseLocation = js.Any.fromFunction1(revokeDatabaseLocation))
   
     __obj.asInstanceOf[XDatabaseRegistrations]
   }

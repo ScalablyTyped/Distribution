@@ -16,7 +16,7 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
   var defaultDate: js.UndefOr[stdLib.Date] = js.undefined
   var defaultView: js.UndefOr[View] = js.undefined
   var drilldownView: js.UndefOr[View | scala.Null] = js.undefined
-  var elementProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement]] = js.undefined
+  var elementProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement]] = js.undefined
   var endAccessor: js.UndefOr[java.lang.String] = js.undefined
   var eventPropGetter: js.UndefOr[EventPropGetter[TEvent]] = js.undefined
   var events: js.UndefOr[js.Array[TEvent]] = js.undefined
@@ -39,7 +39,7 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
   var onDoubleClickEvent: js.UndefOr[
     js.Function2[
       /* event */ TEvent, 
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
@@ -51,7 +51,7 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
   var onSelectEvent: js.UndefOr[
     js.Function2[
       /* event */ TEvent, 
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
@@ -100,43 +100,27 @@ object BigCalendarProps {
     defaultDate: stdLib.Date = null,
     defaultView: View = null,
     drilldownView: View = null,
-    elementProps: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] = null,
+    elementProps: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] = null,
     endAccessor: java.lang.String = null,
     eventPropGetter: EventPropGetter[TEvent] = null,
     events: js.Array[TEvent] = null,
     formats: Formats = null,
-    getDrilldownView: js.Function3[
-      /* targetDate */ stdLib.Date, 
-      /* currentViewName */ View, 
-      /* configuredViewNames */ js.Array[View], 
-      scala.Unit
-    ] = null,
-    getNow: js.Function0[stdLib.Date] = null,
+    getDrilldownView: (/* targetDate */ stdLib.Date, /* currentViewName */ View, /* configuredViewNames */ js.Array[View]) => scala.Unit = null,
+    getNow: () => stdLib.Date = null,
     key: reactLib.reactMod.ReactNs.Key = null,
     length: scala.Int | scala.Double = null,
     longPressThreshold: scala.Int | scala.Double = null,
     max: stringOrDate = null,
     messages: Messages = null,
     min: stringOrDate = null,
-    onDoubleClickEvent: js.Function2[
-      /* event */ TEvent, 
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
-      scala.Unit
-    ] = null,
-    onDrillDown: js.Function2[/* date */ stdLib.Date, /* view */ View, scala.Unit] = null,
-    onNavigate: js.Function3[/* newDate */ stdLib.Date, /* view */ View, /* action */ Navigate, scala.Unit] = null,
-    onRangeChange: js.Function1[/* range */ reactDashBigDashCalendarLib.Anon_EndStart, scala.Unit] = null,
-    onSelectEvent: js.Function2[
-      /* event */ TEvent, 
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
-      scala.Unit
-    ] = null,
-    onSelectSlot: js.Function1[/* slotInfo */ reactDashBigDashCalendarLib.Anon_Action, scala.Unit] = null,
-    onSelecting: js.Function1[
-      /* range */ reactDashBigDashCalendarLib.Anon_EndStart, 
-      js.UndefOr[scala.Boolean | scala.Null]
-    ] = null,
-    onView: js.Function1[/* view */ View, scala.Unit] = null,
+    onDoubleClickEvent: (/* event */ TEvent, /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]) => scala.Unit = null,
+    onDrillDown: (/* date */ stdLib.Date, /* view */ View) => scala.Unit = null,
+    onNavigate: (/* newDate */ stdLib.Date, /* view */ View, /* action */ Navigate) => scala.Unit = null,
+    onRangeChange: /* range */ reactDashBigDashCalendarLib.Anon_EndStart => scala.Unit = null,
+    onSelectEvent: (/* event */ TEvent, /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]) => scala.Unit = null,
+    onSelectSlot: /* slotInfo */ reactDashBigDashCalendarLib.Anon_Action => scala.Unit = null,
+    onSelecting: /* range */ reactDashBigDashCalendarLib.Anon_EndStart => js.UndefOr[scala.Boolean | scala.Null] = null,
+    onView: /* view */ View => scala.Unit = null,
     popup: js.UndefOr[scala.Boolean] = js.undefined,
     popupOffset: scala.Double | reactDashBigDashCalendarLib.Anon_X = null,
     ref: reactLib.reactMod.ReactNs.LegacyRef[BigCalendar[TEvent, TResource]] = null,
@@ -174,22 +158,22 @@ object BigCalendarProps {
     if (eventPropGetter != null) __obj.updateDynamic("eventPropGetter")(eventPropGetter)
     if (events != null) __obj.updateDynamic("events")(events)
     if (formats != null) __obj.updateDynamic("formats")(formats)
-    if (getDrilldownView != null) __obj.updateDynamic("getDrilldownView")(getDrilldownView)
-    if (getNow != null) __obj.updateDynamic("getNow")(getNow)
+    if (getDrilldownView != null) __obj.updateDynamic("getDrilldownView")(js.Any.fromFunction3(getDrilldownView))
+    if (getNow != null) __obj.updateDynamic("getNow")(js.Any.fromFunction0(getNow))
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (longPressThreshold != null) __obj.updateDynamic("longPressThreshold")(longPressThreshold.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (onDoubleClickEvent != null) __obj.updateDynamic("onDoubleClickEvent")(onDoubleClickEvent)
-    if (onDrillDown != null) __obj.updateDynamic("onDrillDown")(onDrillDown)
-    if (onNavigate != null) __obj.updateDynamic("onNavigate")(onNavigate)
-    if (onRangeChange != null) __obj.updateDynamic("onRangeChange")(onRangeChange)
-    if (onSelectEvent != null) __obj.updateDynamic("onSelectEvent")(onSelectEvent)
-    if (onSelectSlot != null) __obj.updateDynamic("onSelectSlot")(onSelectSlot)
-    if (onSelecting != null) __obj.updateDynamic("onSelecting")(onSelecting)
-    if (onView != null) __obj.updateDynamic("onView")(onView)
+    if (onDoubleClickEvent != null) __obj.updateDynamic("onDoubleClickEvent")(js.Any.fromFunction2(onDoubleClickEvent))
+    if (onDrillDown != null) __obj.updateDynamic("onDrillDown")(js.Any.fromFunction2(onDrillDown))
+    if (onNavigate != null) __obj.updateDynamic("onNavigate")(js.Any.fromFunction3(onNavigate))
+    if (onRangeChange != null) __obj.updateDynamic("onRangeChange")(js.Any.fromFunction1(onRangeChange))
+    if (onSelectEvent != null) __obj.updateDynamic("onSelectEvent")(js.Any.fromFunction2(onSelectEvent))
+    if (onSelectSlot != null) __obj.updateDynamic("onSelectSlot")(js.Any.fromFunction1(onSelectSlot))
+    if (onSelecting != null) __obj.updateDynamic("onSelecting")(js.Any.fromFunction1(onSelecting))
+    if (onView != null) __obj.updateDynamic("onView")(js.Any.fromFunction1(onView))
     if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup)
     if (popupOffset != null) __obj.updateDynamic("popupOffset")(popupOffset.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])

@@ -51,7 +51,7 @@ trait XSimpleCanvas
     * Request the font metrics of the current font.
     * @returns the font metrics of the currently selected font.
     */
-  val FontMetrics: FontMetrics
+  val FontMetrics: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.FontMetrics
   /**
     * Draws the bitmap on the canvas.
     * @param xBitmap Bitmap to render
@@ -164,51 +164,32 @@ object XSimpleCanvas {
     CurrentViewState: ViewState,
     Device: XGraphicDevice,
     FontMetrics: FontMetrics,
-    acquire: js.Function0[scala.Unit],
-    drawBitmap: js.Function2[
-      XBitmap, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
-      scala.Unit
-    ],
-    drawLine: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
-      scala.Unit
-    ],
-    drawPixel: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, scala.Unit],
-    drawPolyPolygon: js.Function1[XPolyPolygon2D, scala.Unit],
-    drawRect: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D, 
-      scala.Unit
-    ],
-    drawText: js.Function3[
-      StringContext, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
-      scala.Double, 
-      scala.Unit
-    ],
-    getCanvas: js.Function0[XCanvas],
-    getCurrentClipRect: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D],
-    getCurrentFillColor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color],
-    getCurrentFont: js.Function0[XCanvasFont],
-    getCurrentPenColor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color],
-    getCurrentRenderState: js.Function1[scala.Boolean, RenderState],
-    getCurrentTransformation: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix2D],
-    getCurrentViewState: js.Function0[ViewState],
-    getDevice: js.Function0[XGraphicDevice],
-    getFontMetrics: js.Function0[FontMetrics],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    selectFont: js.Function4[java.lang.String, scala.Double, scala.Boolean, scala.Boolean, scala.Unit],
-    setFillColor: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color, scala.Unit],
-    setPenColor: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color, scala.Unit],
-    setRectClip: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D, 
-      scala.Unit
-    ],
-    setTransformation: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix2D, scala.Unit]
+    acquire: () => scala.Unit,
+    drawBitmap: (XBitmap, activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D) => scala.Unit,
+    drawLine: (activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D) => scala.Unit,
+    drawPixel: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D => scala.Unit,
+    drawPolyPolygon: XPolyPolygon2D => scala.Unit,
+    drawRect: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D => scala.Unit,
+    drawText: (StringContext, activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, scala.Double) => scala.Unit,
+    getCanvas: () => XCanvas,
+    getCurrentClipRect: () => activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D,
+    getCurrentFillColor: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    getCurrentFont: () => XCanvasFont,
+    getCurrentPenColor: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    getCurrentRenderState: scala.Boolean => RenderState,
+    getCurrentTransformation: () => activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix2D,
+    getCurrentViewState: () => ViewState,
+    getDevice: () => XGraphicDevice,
+    getFontMetrics: () => FontMetrics,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    selectFont: (java.lang.String, scala.Double, scala.Boolean, scala.Boolean) => scala.Unit,
+    setFillColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color => scala.Unit,
+    setPenColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color => scala.Unit,
+    setRectClip: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D => scala.Unit,
+    setTransformation: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix2D => scala.Unit
   ): XSimpleCanvas = {
-    val __obj = js.Dynamic.literal(Canvas = Canvas, CurrentClipRect = CurrentClipRect, CurrentFillColor = CurrentFillColor, CurrentFont = CurrentFont, CurrentPenColor = CurrentPenColor, CurrentTransformation = CurrentTransformation, CurrentViewState = CurrentViewState, Device = Device, FontMetrics = FontMetrics, acquire = acquire, drawBitmap = drawBitmap, drawLine = drawLine, drawPixel = drawPixel, drawPolyPolygon = drawPolyPolygon, drawRect = drawRect, drawText = drawText, getCanvas = getCanvas, getCurrentClipRect = getCurrentClipRect, getCurrentFillColor = getCurrentFillColor, getCurrentFont = getCurrentFont, getCurrentPenColor = getCurrentPenColor, getCurrentRenderState = getCurrentRenderState, getCurrentTransformation = getCurrentTransformation, getCurrentViewState = getCurrentViewState, getDevice = getDevice, getFontMetrics = getFontMetrics, queryInterface = queryInterface, release = release, selectFont = selectFont, setFillColor = setFillColor, setPenColor = setPenColor, setRectClip = setRectClip, setTransformation = setTransformation)
+    val __obj = js.Dynamic.literal(Canvas = Canvas, CurrentClipRect = CurrentClipRect, CurrentFillColor = CurrentFillColor, CurrentFont = CurrentFont, CurrentPenColor = CurrentPenColor, CurrentTransformation = CurrentTransformation, CurrentViewState = CurrentViewState, Device = Device, FontMetrics = FontMetrics, acquire = js.Any.fromFunction0(acquire), drawBitmap = js.Any.fromFunction2(drawBitmap), drawLine = js.Any.fromFunction2(drawLine), drawPixel = js.Any.fromFunction1(drawPixel), drawPolyPolygon = js.Any.fromFunction1(drawPolyPolygon), drawRect = js.Any.fromFunction1(drawRect), drawText = js.Any.fromFunction3(drawText), getCanvas = js.Any.fromFunction0(getCanvas), getCurrentClipRect = js.Any.fromFunction0(getCurrentClipRect), getCurrentFillColor = js.Any.fromFunction0(getCurrentFillColor), getCurrentFont = js.Any.fromFunction0(getCurrentFont), getCurrentPenColor = js.Any.fromFunction0(getCurrentPenColor), getCurrentRenderState = js.Any.fromFunction1(getCurrentRenderState), getCurrentTransformation = js.Any.fromFunction0(getCurrentTransformation), getCurrentViewState = js.Any.fromFunction0(getCurrentViewState), getDevice = js.Any.fromFunction0(getDevice), getFontMetrics = js.Any.fromFunction0(getFontMetrics), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), selectFont = js.Any.fromFunction4(selectFont), setFillColor = js.Any.fromFunction1(setFillColor), setPenColor = js.Any.fromFunction1(setPenColor), setRectClip = js.Any.fromFunction1(setRectClip), setTransformation = js.Any.fromFunction1(setTransformation))
   
     __obj.asInstanceOf[XSimpleCanvas]
   }

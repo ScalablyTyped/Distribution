@@ -13,12 +13,9 @@ trait I18nLanguagesResource extends js.Object {
 object I18nLanguagesResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFieldsHlKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[I18nLanguageListResponse]
-    ]
+    list: gapiDotClientDotYoutubeLib.Anon_AltFieldsHlKey => gapiDotClientLib.gapiNs.clientNs.Request[I18nLanguageListResponse]
   ): I18nLanguagesResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[I18nLanguagesResource]
   }

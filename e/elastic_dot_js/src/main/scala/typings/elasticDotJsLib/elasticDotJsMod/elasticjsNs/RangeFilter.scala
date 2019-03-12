@@ -72,22 +72,22 @@ trait RangeFilter extends Filter {
 object RangeFilter {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cache: js.Function1[scala.Boolean, RangeFilter],
-    cacheKey: js.Function1[java.lang.String, RangeFilter],
-    field: js.Function1[java.lang.String, RangeFilter],
-    from: js.Function1[js.Any, RangeFilter],
-    gt: js.Function1[js.Any, RangeFilter],
-    gte: js.Function1[js.Any, RangeFilter],
-    includeLower: js.Function1[scala.Boolean, RangeFilter],
-    includeUpper: js.Function1[scala.Boolean, RangeFilter],
-    lt: js.Function1[js.Any, RangeFilter],
-    lte: js.Function1[js.Any, RangeFilter],
-    name: js.Function1[java.lang.String, RangeFilter],
-    to: js.Function1[js.Any, RangeFilter],
-    toJSON: js.Function0[RangeFilter]
+    _type: () => java.lang.String,
+    cache: scala.Boolean => RangeFilter,
+    cacheKey: java.lang.String => RangeFilter,
+    field: java.lang.String => RangeFilter,
+    from: js.Any => RangeFilter,
+    gt: js.Any => RangeFilter,
+    gte: js.Any => RangeFilter,
+    includeLower: scala.Boolean => RangeFilter,
+    includeUpper: scala.Boolean => RangeFilter,
+    lt: js.Any => RangeFilter,
+    lte: js.Any => RangeFilter,
+    name: java.lang.String => RangeFilter,
+    to: js.Any => RangeFilter,
+    toJSON: () => RangeFilter
   ): RangeFilter = {
-    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, field = field, from = from, gt = gt, gte = gte, includeLower = includeLower, includeUpper = includeUpper, lt = lt, lte = lte, name = name, to = to, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), field = js.Any.fromFunction1(field), from = js.Any.fromFunction1(from), gt = js.Any.fromFunction1(gt), gte = js.Any.fromFunction1(gte), includeLower = js.Any.fromFunction1(includeLower), includeUpper = js.Any.fromFunction1(includeUpper), lt = js.Any.fromFunction1(lt), lte = js.Any.fromFunction1(lte), name = js.Any.fromFunction1(name), to = js.Any.fromFunction1(to), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[RangeFilter]
   }

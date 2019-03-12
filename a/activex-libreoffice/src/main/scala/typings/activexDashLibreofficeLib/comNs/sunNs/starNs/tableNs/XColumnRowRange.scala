@@ -38,13 +38,13 @@ object XColumnRowRange {
   def apply(
     Columns: XTableColumns,
     Rows: XTableRows,
-    acquire: js.Function0[scala.Unit],
-    getColumns: js.Function0[XTableColumns],
-    getRows: js.Function0[XTableRows],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getColumns: () => XTableColumns,
+    getRows: () => XTableRows,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XColumnRowRange = {
-    val __obj = js.Dynamic.literal(Columns = Columns, Rows = Rows, acquire = acquire, getColumns = getColumns, getRows = getRows, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Columns = Columns, Rows = Rows, acquire = js.Any.fromFunction0(acquire), getColumns = js.Any.fromFunction0(getColumns), getRows = js.Any.fromFunction0(getRows), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XColumnRowRange]
   }

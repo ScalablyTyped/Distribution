@@ -18,17 +18,17 @@ object HoldableProps {
   @scala.inline
   def apply(
     config: HoldableConfig = null,
-    onHoldComplete: js.Function0[scala.Unit] = null,
-    onHoldProgress: js.Function0[scala.Unit] = null,
-    onMouseDown: js.Function0[scala.Unit] = null,
-    onTouchStart: js.Function0[scala.Unit] = null
+    onHoldComplete: () => scala.Unit = null,
+    onHoldProgress: () => scala.Unit = null,
+    onMouseDown: () => scala.Unit = null,
+    onTouchStart: () => scala.Unit = null
   ): HoldableProps = {
     val __obj = js.Dynamic.literal()
     if (config != null) __obj.updateDynamic("config")(config)
-    if (onHoldComplete != null) __obj.updateDynamic("onHoldComplete")(onHoldComplete)
-    if (onHoldProgress != null) __obj.updateDynamic("onHoldProgress")(onHoldProgress)
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (onHoldComplete != null) __obj.updateDynamic("onHoldComplete")(js.Any.fromFunction0(onHoldComplete))
+    if (onHoldProgress != null) __obj.updateDynamic("onHoldProgress")(js.Any.fromFunction0(onHoldProgress))
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction0(onMouseDown))
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction0(onTouchStart))
     __obj.asInstanceOf[HoldableProps]
   }
 }

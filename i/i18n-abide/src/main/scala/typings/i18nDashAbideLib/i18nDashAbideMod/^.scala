@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def abide(): expressLib.expressMod.eNs.RequestHandler = js.native
-  def abide(options: i18nDashAbideLib.i18nDashAbideMod.AbideOptions): expressLib.expressMod.eNs.RequestHandler = js.native
+  def abide(options: AbideOptions): expressLib.expressMod.eNs.RequestHandler = js.native
   def bestLanguage(
     languages: js.Array[i18nDashAbideLib.Anon_Lang],
     supported_languages: js.Array[java.lang.String],

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class CanvasPlate () extends AbstractPlate {
   def this(options: ChartOptions) = this()
   def clear(): this.type = js.native
-  def getContext2d(): d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D = js.native
+  def getContext2d(): stdLib.CanvasRenderingContext2D = js.native
 }
 
 /* static members */

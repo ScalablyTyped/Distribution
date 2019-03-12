@@ -101,107 +101,56 @@ object VideoProperties {
     muted: js.UndefOr[scala.Boolean] = js.undefined,
     nativeID: java.lang.String = null,
     needsOffscreenAlphaCompositing: js.UndefOr[scala.Boolean] = js.undefined,
-    onAccessibilityAction: js.Function0[scala.Unit] = null,
-    onAccessibilityTap: js.Function0[scala.Unit] = null,
-    onAudioBecomingNoisy: js.Function0[scala.Unit] = null,
-    onAudioFocusChanged: js.Function0[scala.Unit] = null,
-    onBuffer: js.Function0[scala.Unit] = null,
-    onEnd: js.Function0[scala.Unit] = null,
-    onError: js.Function1[/* error */ LoadError, scala.Unit] = null,
-    onFullscreenPlayerDidDismiss: js.Function0[scala.Unit] = null,
-    onFullscreenPlayerDidPresent: js.Function0[scala.Unit] = null,
-    onFullscreenPlayerWillDismiss: js.Function0[scala.Unit] = null,
-    onFullscreenPlayerWillPresent: js.Function0[scala.Unit] = null,
-    onLayout: js.Function1[/* event */ reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent, scala.Unit] = null,
-    onLoad: js.Function1[/* data */ OnLoadData, scala.Unit] = null,
-    onLoadStart: js.Function0[scala.Unit] = null,
-    onMagicTap: js.Function0[scala.Unit] = null,
-    onMoveShouldSetResponder: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
-    onMoveShouldSetResponderCapture: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
-    onPlaybackRateChange: js.Function0[scala.Unit] = null,
-    onPlaybackResume: js.Function0[scala.Unit] = null,
-    onPlaybackStalled: js.Function0[scala.Unit] = null,
-    onProgress: js.Function1[/* data */ reactDashNativeDashVideoLib.Anon_CurrentTime, scala.Unit] = null,
-    onReadyForDisplay: js.Function0[scala.Unit] = null,
-    onResponderEnd: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderGrant: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderMove: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderReject: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderRelease: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderStart: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderTerminate: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderTerminationRequest: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
-    onSeek: js.Function0[scala.Unit] = null,
-    onStartShouldSetResponder: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
-    onStartShouldSetResponderCapture: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
-    onTimedMetadata: js.Function0[scala.Unit] = null,
-    onTouchCancel: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onTouchEnd: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onTouchEndCapture: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onTouchMove: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onTouchStart: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onVideoBuffer: js.Function0[scala.Unit] = null,
-    onVideoEnd: js.Function0[scala.Unit] = null,
-    onVideoError: js.Function0[scala.Unit] = null,
-    onVideoFullscreenPlayerDidDismiss: js.Function0[scala.Unit] = null,
-    onVideoFullscreenPlayerDidPresent: js.Function0[scala.Unit] = null,
-    onVideoFullscreenPlayerWillDismiss: js.Function0[scala.Unit] = null,
-    onVideoFullscreenPlayerWillPresent: js.Function0[scala.Unit] = null,
-    onVideoLoad: js.Function0[scala.Unit] = null,
-    onVideoLoadStart: js.Function0[scala.Unit] = null,
-    onVideoProgress: js.Function0[scala.Unit] = null,
-    onVideoSeek: js.Function0[scala.Unit] = null,
+    onAccessibilityAction: () => scala.Unit = null,
+    onAccessibilityTap: () => scala.Unit = null,
+    onAudioBecomingNoisy: () => scala.Unit = null,
+    onAudioFocusChanged: () => scala.Unit = null,
+    onBuffer: () => scala.Unit = null,
+    onEnd: () => scala.Unit = null,
+    onError: /* error */ LoadError => scala.Unit = null,
+    onFullscreenPlayerDidDismiss: () => scala.Unit = null,
+    onFullscreenPlayerDidPresent: () => scala.Unit = null,
+    onFullscreenPlayerWillDismiss: () => scala.Unit = null,
+    onFullscreenPlayerWillPresent: () => scala.Unit = null,
+    onLayout: /* event */ reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent => scala.Unit = null,
+    onLoad: /* data */ OnLoadData => scala.Unit = null,
+    onLoadStart: () => scala.Unit = null,
+    onMagicTap: () => scala.Unit = null,
+    onMoveShouldSetResponder: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onMoveShouldSetResponderCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onPlaybackRateChange: () => scala.Unit = null,
+    onPlaybackResume: () => scala.Unit = null,
+    onPlaybackStalled: () => scala.Unit = null,
+    onProgress: /* data */ reactDashNativeDashVideoLib.Anon_CurrentTime => scala.Unit = null,
+    onReadyForDisplay: () => scala.Unit = null,
+    onResponderEnd: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderGrant: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderMove: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderReject: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderRelease: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderStart: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderTerminate: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderTerminationRequest: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onSeek: () => scala.Unit = null,
+    onStartShouldSetResponder: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onStartShouldSetResponderCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onTimedMetadata: () => scala.Unit = null,
+    onTouchCancel: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onTouchEnd: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onTouchEndCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onTouchMove: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onTouchStart: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onVideoBuffer: () => scala.Unit = null,
+    onVideoEnd: () => scala.Unit = null,
+    onVideoError: () => scala.Unit = null,
+    onVideoFullscreenPlayerDidDismiss: () => scala.Unit = null,
+    onVideoFullscreenPlayerDidPresent: () => scala.Unit = null,
+    onVideoFullscreenPlayerWillDismiss: () => scala.Unit = null,
+    onVideoFullscreenPlayerWillPresent: () => scala.Unit = null,
+    onVideoLoad: () => scala.Unit = null,
+    onVideoLoadStart: () => scala.Unit = null,
+    onVideoProgress: () => scala.Unit = null,
+    onVideoSeek: () => scala.Unit = null,
     paused: js.UndefOr[scala.Boolean] = js.undefined,
     playInBackground: js.UndefOr[scala.Boolean] = js.undefined,
     playWhenInactive: js.UndefOr[scala.Boolean] = js.undefined,
@@ -253,56 +202,56 @@ object VideoProperties {
     if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(onAccessibilityAction)
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(onAccessibilityTap)
-    if (onAudioBecomingNoisy != null) __obj.updateDynamic("onAudioBecomingNoisy")(onAudioBecomingNoisy)
-    if (onAudioFocusChanged != null) __obj.updateDynamic("onAudioFocusChanged")(onAudioFocusChanged)
-    if (onBuffer != null) __obj.updateDynamic("onBuffer")(onBuffer)
-    if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onFullscreenPlayerDidDismiss != null) __obj.updateDynamic("onFullscreenPlayerDidDismiss")(onFullscreenPlayerDidDismiss)
-    if (onFullscreenPlayerDidPresent != null) __obj.updateDynamic("onFullscreenPlayerDidPresent")(onFullscreenPlayerDidPresent)
-    if (onFullscreenPlayerWillDismiss != null) __obj.updateDynamic("onFullscreenPlayerWillDismiss")(onFullscreenPlayerWillDismiss)
-    if (onFullscreenPlayerWillPresent != null) __obj.updateDynamic("onFullscreenPlayerWillPresent")(onFullscreenPlayerWillPresent)
-    if (onLayout != null) __obj.updateDynamic("onLayout")(onLayout)
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(onLoadStart)
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(onMagicTap)
-    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(onMoveShouldSetResponder)
-    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(onMoveShouldSetResponderCapture)
-    if (onPlaybackRateChange != null) __obj.updateDynamic("onPlaybackRateChange")(onPlaybackRateChange)
-    if (onPlaybackResume != null) __obj.updateDynamic("onPlaybackResume")(onPlaybackResume)
-    if (onPlaybackStalled != null) __obj.updateDynamic("onPlaybackStalled")(onPlaybackStalled)
-    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress)
-    if (onReadyForDisplay != null) __obj.updateDynamic("onReadyForDisplay")(onReadyForDisplay)
-    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(onResponderEnd)
-    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(onResponderGrant)
-    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(onResponderMove)
-    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(onResponderReject)
-    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(onResponderRelease)
-    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(onResponderStart)
-    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(onResponderTerminate)
-    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(onResponderTerminationRequest)
-    if (onSeek != null) __obj.updateDynamic("onSeek")(onSeek)
-    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(onStartShouldSetResponder)
-    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(onStartShouldSetResponderCapture)
-    if (onTimedMetadata != null) __obj.updateDynamic("onTimedMetadata")(onTimedMetadata)
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel)
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
-    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(onTouchEndCapture)
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
-    if (onVideoBuffer != null) __obj.updateDynamic("onVideoBuffer")(onVideoBuffer)
-    if (onVideoEnd != null) __obj.updateDynamic("onVideoEnd")(onVideoEnd)
-    if (onVideoError != null) __obj.updateDynamic("onVideoError")(onVideoError)
-    if (onVideoFullscreenPlayerDidDismiss != null) __obj.updateDynamic("onVideoFullscreenPlayerDidDismiss")(onVideoFullscreenPlayerDidDismiss)
-    if (onVideoFullscreenPlayerDidPresent != null) __obj.updateDynamic("onVideoFullscreenPlayerDidPresent")(onVideoFullscreenPlayerDidPresent)
-    if (onVideoFullscreenPlayerWillDismiss != null) __obj.updateDynamic("onVideoFullscreenPlayerWillDismiss")(onVideoFullscreenPlayerWillDismiss)
-    if (onVideoFullscreenPlayerWillPresent != null) __obj.updateDynamic("onVideoFullscreenPlayerWillPresent")(onVideoFullscreenPlayerWillPresent)
-    if (onVideoLoad != null) __obj.updateDynamic("onVideoLoad")(onVideoLoad)
-    if (onVideoLoadStart != null) __obj.updateDynamic("onVideoLoadStart")(onVideoLoadStart)
-    if (onVideoProgress != null) __obj.updateDynamic("onVideoProgress")(onVideoProgress)
-    if (onVideoSeek != null) __obj.updateDynamic("onVideoSeek")(onVideoSeek)
+    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction0(onAccessibilityAction))
+    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
+    if (onAudioBecomingNoisy != null) __obj.updateDynamic("onAudioBecomingNoisy")(js.Any.fromFunction0(onAudioBecomingNoisy))
+    if (onAudioFocusChanged != null) __obj.updateDynamic("onAudioFocusChanged")(js.Any.fromFunction0(onAudioFocusChanged))
+    if (onBuffer != null) __obj.updateDynamic("onBuffer")(js.Any.fromFunction0(onBuffer))
+    if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction0(onEnd))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onFullscreenPlayerDidDismiss != null) __obj.updateDynamic("onFullscreenPlayerDidDismiss")(js.Any.fromFunction0(onFullscreenPlayerDidDismiss))
+    if (onFullscreenPlayerDidPresent != null) __obj.updateDynamic("onFullscreenPlayerDidPresent")(js.Any.fromFunction0(onFullscreenPlayerDidPresent))
+    if (onFullscreenPlayerWillDismiss != null) __obj.updateDynamic("onFullscreenPlayerWillDismiss")(js.Any.fromFunction0(onFullscreenPlayerWillDismiss))
+    if (onFullscreenPlayerWillPresent != null) __obj.updateDynamic("onFullscreenPlayerWillPresent")(js.Any.fromFunction0(onFullscreenPlayerWillPresent))
+    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
+    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(js.Any.fromFunction0(onLoadStart))
+    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
+    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))
+    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(js.Any.fromFunction1(onMoveShouldSetResponderCapture))
+    if (onPlaybackRateChange != null) __obj.updateDynamic("onPlaybackRateChange")(js.Any.fromFunction0(onPlaybackRateChange))
+    if (onPlaybackResume != null) __obj.updateDynamic("onPlaybackResume")(js.Any.fromFunction0(onPlaybackResume))
+    if (onPlaybackStalled != null) __obj.updateDynamic("onPlaybackStalled")(js.Any.fromFunction0(onPlaybackStalled))
+    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
+    if (onReadyForDisplay != null) __obj.updateDynamic("onReadyForDisplay")(js.Any.fromFunction0(onReadyForDisplay))
+    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(js.Any.fromFunction1(onResponderEnd))
+    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(js.Any.fromFunction1(onResponderGrant))
+    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(js.Any.fromFunction1(onResponderMove))
+    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(js.Any.fromFunction1(onResponderReject))
+    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(js.Any.fromFunction1(onResponderRelease))
+    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(js.Any.fromFunction1(onResponderStart))
+    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(js.Any.fromFunction1(onResponderTerminate))
+    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(js.Any.fromFunction1(onResponderTerminationRequest))
+    if (onSeek != null) __obj.updateDynamic("onSeek")(js.Any.fromFunction0(onSeek))
+    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1(onStartShouldSetResponder))
+    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1(onStartShouldSetResponderCapture))
+    if (onTimedMetadata != null) __obj.updateDynamic("onTimedMetadata")(js.Any.fromFunction0(onTimedMetadata))
+    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
+    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(js.Any.fromFunction1(onTouchEndCapture))
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
+    if (onVideoBuffer != null) __obj.updateDynamic("onVideoBuffer")(js.Any.fromFunction0(onVideoBuffer))
+    if (onVideoEnd != null) __obj.updateDynamic("onVideoEnd")(js.Any.fromFunction0(onVideoEnd))
+    if (onVideoError != null) __obj.updateDynamic("onVideoError")(js.Any.fromFunction0(onVideoError))
+    if (onVideoFullscreenPlayerDidDismiss != null) __obj.updateDynamic("onVideoFullscreenPlayerDidDismiss")(js.Any.fromFunction0(onVideoFullscreenPlayerDidDismiss))
+    if (onVideoFullscreenPlayerDidPresent != null) __obj.updateDynamic("onVideoFullscreenPlayerDidPresent")(js.Any.fromFunction0(onVideoFullscreenPlayerDidPresent))
+    if (onVideoFullscreenPlayerWillDismiss != null) __obj.updateDynamic("onVideoFullscreenPlayerWillDismiss")(js.Any.fromFunction0(onVideoFullscreenPlayerWillDismiss))
+    if (onVideoFullscreenPlayerWillPresent != null) __obj.updateDynamic("onVideoFullscreenPlayerWillPresent")(js.Any.fromFunction0(onVideoFullscreenPlayerWillPresent))
+    if (onVideoLoad != null) __obj.updateDynamic("onVideoLoad")(js.Any.fromFunction0(onVideoLoad))
+    if (onVideoLoadStart != null) __obj.updateDynamic("onVideoLoadStart")(js.Any.fromFunction0(onVideoLoadStart))
+    if (onVideoProgress != null) __obj.updateDynamic("onVideoProgress")(js.Any.fromFunction0(onVideoProgress))
+    if (onVideoSeek != null) __obj.updateDynamic("onVideoSeek")(js.Any.fromFunction0(onVideoSeek))
     if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused)
     if (!js.isUndefined(playInBackground)) __obj.updateDynamic("playInBackground")(playInBackground)
     if (!js.isUndefined(playWhenInactive)) __obj.updateDynamic("playWhenInactive")(playWhenInactive)

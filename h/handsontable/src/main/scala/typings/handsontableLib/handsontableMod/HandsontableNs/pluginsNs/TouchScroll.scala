@@ -14,24 +14,24 @@ trait TouchScroll extends Base {
 object TouchScroll {
   @scala.inline
   def apply(
-    addHook: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit],
-    callOnPluginsReady: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    clearHooks: js.Function0[scala.Unit],
+    addHook: (java.lang.String, js.Function0[scala.Unit]) => scala.Unit,
+    callOnPluginsReady: js.Function0[scala.Unit] => scala.Unit,
+    clearHooks: () => scala.Unit,
     clones: js.Array[_],
-    destroy: js.Function0[scala.Unit],
-    disablePlugin: js.Function0[scala.Unit],
-    enablePlugin: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
+    disablePlugin: () => scala.Unit,
+    enablePlugin: () => scala.Unit,
     enabled: scala.Boolean,
-    init: js.Function0[scala.Unit],
+    init: () => scala.Unit,
     initialized: scala.Boolean,
     isPluginsReady: scala.Boolean,
     lockedCollection: scala.Boolean,
     pluginName: java.lang.String,
     pluginsInitializedCallback: js.Array[_],
-    removeHook: js.Function1[java.lang.String, scala.Unit],
+    removeHook: java.lang.String => scala.Unit,
     scrollbars: js.Array[_]
   ): TouchScroll = {
-    val __obj = js.Dynamic.literal(addHook = addHook, callOnPluginsReady = callOnPluginsReady, clearHooks = clearHooks, clones = clones, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, init = init, initialized = initialized, isPluginsReady = isPluginsReady, lockedCollection = lockedCollection, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook, scrollbars = scrollbars)
+    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), clones = clones, destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, lockedCollection = lockedCollection, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = js.Any.fromFunction1(removeHook), scrollbars = scrollbars)
   
     __obj.asInstanceOf[TouchScroll]
   }

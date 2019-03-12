@@ -12,21 +12,21 @@ import scala.scalajs.js.annotation._
   */
 trait XSanExtension extends XCertificateExtension {
   /** Contains the alternative names of a certificate */
-  var AlternativeNames: activexDashInteropLib.SafeArray[CertAltNameEntry]
+  var AlternativeNames: stdLib.SafeArray[CertAltNameEntry]
 }
 
 object XSanExtension {
   @scala.inline
   def apply(
-    AlternativeNames: activexDashInteropLib.SafeArray[CertAltNameEntry],
-    ExtensionId: activexDashInteropLib.SafeArray[scala.Double],
-    ExtensionValue: activexDashInteropLib.SafeArray[scala.Double],
-    acquire: js.Function0[scala.Unit],
-    isCritical: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    AlternativeNames: stdLib.SafeArray[CertAltNameEntry],
+    ExtensionId: stdLib.SafeArray[scala.Double],
+    ExtensionValue: stdLib.SafeArray[scala.Double],
+    acquire: () => scala.Unit,
+    isCritical: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSanExtension = {
-    val __obj = js.Dynamic.literal(AlternativeNames = AlternativeNames, ExtensionId = ExtensionId, ExtensionValue = ExtensionValue, acquire = acquire, isCritical = isCritical, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(AlternativeNames = AlternativeNames, ExtensionId = ExtensionId, ExtensionValue = ExtensionValue, acquire = js.Any.fromFunction0(acquire), isCritical = js.Any.fromFunction0(isCritical), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSanExtension]
   }

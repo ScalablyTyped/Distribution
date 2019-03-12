@@ -48,13 +48,13 @@ object XContentIdentifier {
   def apply(
     ContentIdentifier: java.lang.String,
     ContentProviderScheme: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getContentIdentifier: js.Function0[java.lang.String],
-    getContentProviderScheme: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getContentIdentifier: () => java.lang.String,
+    getContentProviderScheme: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XContentIdentifier = {
-    val __obj = js.Dynamic.literal(ContentIdentifier = ContentIdentifier, ContentProviderScheme = ContentProviderScheme, acquire = acquire, getContentIdentifier = getContentIdentifier, getContentProviderScheme = getContentProviderScheme, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ContentIdentifier = ContentIdentifier, ContentProviderScheme = ContentProviderScheme, acquire = js.Any.fromFunction0(acquire), getContentIdentifier = js.Any.fromFunction0(getContentIdentifier), getContentProviderScheme = js.Any.fromFunction0(getContentProviderScheme), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XContentIdentifier]
   }

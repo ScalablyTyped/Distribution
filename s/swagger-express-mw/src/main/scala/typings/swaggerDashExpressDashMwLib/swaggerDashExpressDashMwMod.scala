@@ -11,7 +11,7 @@ object swaggerDashExpressDashMwMod extends js.Object {
   def create(
     config: swaggerDashNodeDashRunnerLib.swaggerDashNodeDashRunnerMod.Config,
     cb: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       /* runner */ swaggerDashNodeDashRunnerLib.swaggerDashNodeDashRunnerMod.ConnectMiddleware, 
       scala.Unit
     ]

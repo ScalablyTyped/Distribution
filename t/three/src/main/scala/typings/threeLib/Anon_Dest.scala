@@ -14,11 +14,11 @@ trait Anon_Dest extends js.Object {
 object Anon_Dest {
   @scala.inline
   def apply(
-    func: js.Function3[scala.Double, scala.Double, threeLib.threeDashCoreMod.Vector3, scala.Unit],
+    func: (scala.Double, scala.Double, threeLib.threeDashCoreMod.Vector3) => scala.Unit,
     slices: scala.Double,
     stacks: scala.Double
   ): Anon_Dest = {
-    val __obj = js.Dynamic.literal(func = func, slices = slices, stacks = stacks)
+    val __obj = js.Dynamic.literal(func = js.Any.fromFunction3(func), slices = slices, stacks = stacks)
   
     __obj.asInstanceOf[Anon_Dest]
   }

@@ -14,13 +14,9 @@ object Semigroupoid2 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */](
     URI: F,
-    compose: js.Function2[
-      fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Any]
-    ]
+    compose: (fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Any], fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Any]
   ): Semigroupoid2[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], compose = compose)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], compose = js.Any.fromFunction2(compose))
   
     __obj.asInstanceOf[Semigroupoid2[F]]
   }

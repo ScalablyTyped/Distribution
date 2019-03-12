@@ -25,12 +25,12 @@ trait XStringWidth
 object XStringWidth {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    queryStringWidth: js.Function1[java.lang.String, scala.Double],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    queryStringWidth: java.lang.String => scala.Double,
+    release: () => scala.Unit
   ): XStringWidth = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, queryStringWidth = queryStringWidth, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), queryStringWidth = js.Any.fromFunction1(queryStringWidth), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XStringWidth]
   }

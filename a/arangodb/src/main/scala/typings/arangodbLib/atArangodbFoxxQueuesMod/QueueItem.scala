@@ -21,13 +21,13 @@ object QueueItem {
     name: java.lang.String,
     backOff: (js.Function1[/* failureCount */ scala.Double, scala.Double]) | scala.Double = null,
     maxFailures: scala.Int | scala.Double = null,
-    preprocess: js.Function1[/* data */ js.Any, _] = null,
+    preprocess: /* data */ js.Any => _ = null,
     schema: arangodbLib.FoxxNs.Schema = null
   ): QueueItem = {
     val __obj = js.Dynamic.literal(mount = mount, name = name)
     if (backOff != null) __obj.updateDynamic("backOff")(backOff.asInstanceOf[js.Any])
     if (maxFailures != null) __obj.updateDynamic("maxFailures")(maxFailures.asInstanceOf[js.Any])
-    if (preprocess != null) __obj.updateDynamic("preprocess")(preprocess)
+    if (preprocess != null) __obj.updateDynamic("preprocess")(js.Any.fromFunction1(preprocess))
     if (schema != null) __obj.updateDynamic("schema")(schema)
     __obj.asInstanceOf[QueueItem]
   }

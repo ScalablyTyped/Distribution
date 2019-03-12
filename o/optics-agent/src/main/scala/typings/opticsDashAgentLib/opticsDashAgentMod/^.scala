@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val default: opticsDashAgentLib.Anon_Agent = js.native
-  def configureAgent(options: opticsDashAgentLib.opticsDashAgentMod.Options): opticsDashAgentLib.opticsDashAgentMod.Agent = js.native
+  def configureAgent(options: Options): Agent = js.native
   def context(req: expressLib.expressMod.eNs.Request): js.Any = js.native
   def instrumentHapiServer(server: hapiLib.hapiMod.Server): scala.Unit = js.native
   def instrumentSchema(schema: graphqlLib.graphqlMod.GraphQLSchema): scala.Unit = js.native

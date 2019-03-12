@@ -73,7 +73,7 @@ object Options {
       ], 
       scala.Unit
     ]) with rimrafLib.Anon_PathPromisify = null,
-    lstatSync: js.Function1[/* path */ nodeLib.fsMod.PathLike, nodeLib.fsMod.Stats] = null,
+    lstatSync: /* path */ nodeLib.fsMod.PathLike => nodeLib.fsMod.Stats = null,
     maxBusyTries: scala.Int | scala.Double = null,
     readdir: rimrafLib.Anon_Buffer = null,
     readdirSync: rimrafLib.Anon_BufferOptions = null,
@@ -82,7 +82,7 @@ object Options {
       /* callback */ js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit], 
       scala.Unit
     ]) with rimrafLib.Anon_Path = null,
-    rmdirSync: js.Function1[/* path */ nodeLib.fsMod.PathLike, scala.Unit] = null,
+    rmdirSync: /* path */ nodeLib.fsMod.PathLike => scala.Unit = null,
     stat: (js.Function2[
       /* path */ nodeLib.fsMod.PathLike, 
       /* callback */ js.Function2[
@@ -92,13 +92,13 @@ object Options {
       ], 
       scala.Unit
     ]) with rimrafLib.Anon_PathPromisify = null,
-    statSync: js.Function1[/* path */ nodeLib.fsMod.PathLike, nodeLib.fsMod.Stats] = null,
+    statSync: /* path */ nodeLib.fsMod.PathLike => nodeLib.fsMod.Stats = null,
     unlink: (js.Function2[
       /* path */ nodeLib.fsMod.PathLike, 
       /* callback */ js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit], 
       scala.Unit
     ]) with rimrafLib.Anon_Path = null,
-    unlinkSync: js.Function1[/* path */ nodeLib.fsMod.PathLike, scala.Unit] = null
+    unlinkSync: /* path */ nodeLib.fsMod.PathLike => scala.Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (chmod != null) __obj.updateDynamic("chmod")(chmod)
@@ -107,16 +107,16 @@ object Options {
     if (!js.isUndefined(emfileWait)) __obj.updateDynamic("emfileWait")(emfileWait)
     if (glob != null) __obj.updateDynamic("glob")(glob.asInstanceOf[js.Any])
     if (lstat != null) __obj.updateDynamic("lstat")(lstat)
-    if (lstatSync != null) __obj.updateDynamic("lstatSync")(lstatSync)
+    if (lstatSync != null) __obj.updateDynamic("lstatSync")(js.Any.fromFunction1(lstatSync))
     if (maxBusyTries != null) __obj.updateDynamic("maxBusyTries")(maxBusyTries.asInstanceOf[js.Any])
     if (readdir != null) __obj.updateDynamic("readdir")(readdir)
     if (readdirSync != null) __obj.updateDynamic("readdirSync")(readdirSync)
     if (rmdir != null) __obj.updateDynamic("rmdir")(rmdir)
-    if (rmdirSync != null) __obj.updateDynamic("rmdirSync")(rmdirSync)
+    if (rmdirSync != null) __obj.updateDynamic("rmdirSync")(js.Any.fromFunction1(rmdirSync))
     if (stat != null) __obj.updateDynamic("stat")(stat)
-    if (statSync != null) __obj.updateDynamic("statSync")(statSync)
+    if (statSync != null) __obj.updateDynamic("statSync")(js.Any.fromFunction1(statSync))
     if (unlink != null) __obj.updateDynamic("unlink")(unlink)
-    if (unlinkSync != null) __obj.updateDynamic("unlinkSync")(unlinkSync)
+    if (unlinkSync != null) __obj.updateDynamic("unlinkSync")(js.Any.fromFunction1(unlinkSync))
     __obj.asInstanceOf[Options]
   }
 }

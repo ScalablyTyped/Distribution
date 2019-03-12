@@ -28,16 +28,16 @@ trait dateArithmeticStatic extends js.Object {
 object dateArithmeticStatic {
   @scala.inline
   def apply(
-    add: js.Function3[stdLib.Date, scala.Double, Unit, stdLib.Date],
-    eq: js.Function2[stdLib.Date, stdLib.Date, scala.Boolean],
-    gt: js.Function2[stdLib.Date, stdLib.Date, scala.Boolean],
-    gte: js.Function2[stdLib.Date, stdLib.Date, scala.Boolean],
-    lt: js.Function2[stdLib.Date, stdLib.Date, scala.Boolean],
-    lte: js.Function2[stdLib.Date, stdLib.Date, scala.Boolean],
-    neq: js.Function2[stdLib.Date, stdLib.Date, scala.Boolean],
-    subtract: js.Function3[stdLib.Date, scala.Double, Unit, stdLib.Date]
+    add: (stdLib.Date, scala.Double, Unit) => stdLib.Date,
+    eq: (stdLib.Date, stdLib.Date) => scala.Boolean,
+    gt: (stdLib.Date, stdLib.Date) => scala.Boolean,
+    gte: (stdLib.Date, stdLib.Date) => scala.Boolean,
+    lt: (stdLib.Date, stdLib.Date) => scala.Boolean,
+    lte: (stdLib.Date, stdLib.Date) => scala.Boolean,
+    neq: (stdLib.Date, stdLib.Date) => scala.Boolean,
+    subtract: (stdLib.Date, scala.Double, Unit) => stdLib.Date
   ): dateArithmeticStatic = {
-    val __obj = js.Dynamic.literal(add = add, eq = eq, gt = gt, gte = gte, lt = lt, lte = lte, neq = neq, subtract = subtract)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction3(add), eq = js.Any.fromFunction2(eq), gt = js.Any.fromFunction2(gt), gte = js.Any.fromFunction2(gte), lt = js.Any.fromFunction2(lt), lte = js.Any.fromFunction2(lte), neq = js.Any.fromFunction2(neq), subtract = js.Any.fromFunction3(subtract))
   
     __obj.asInstanceOf[dateArithmeticStatic]
   }

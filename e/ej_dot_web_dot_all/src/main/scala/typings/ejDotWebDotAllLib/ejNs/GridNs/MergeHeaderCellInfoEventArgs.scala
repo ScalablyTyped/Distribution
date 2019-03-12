@@ -23,12 +23,12 @@ object MergeHeaderCellInfoEventArgs {
   @scala.inline
   def apply(
     columnHeaders: js.Any = null,
-    headerCellMerge: js.Function2[/* startIndex */ scala.Double, /* count */ scala.Double, scala.Unit] = null,
+    headerCellMerge: (/* startIndex */ scala.Double, /* count */ scala.Double) => scala.Unit = null,
     model: js.Any = null
   ): MergeHeaderCellInfoEventArgs = {
     val __obj = js.Dynamic.literal()
     if (columnHeaders != null) __obj.updateDynamic("columnHeaders")(columnHeaders)
-    if (headerCellMerge != null) __obj.updateDynamic("headerCellMerge")(headerCellMerge)
+    if (headerCellMerge != null) __obj.updateDynamic("headerCellMerge")(js.Any.fromFunction2(headerCellMerge))
     if (model != null) __obj.updateDynamic("model")(model)
     __obj.asInstanceOf[MergeHeaderCellInfoEventArgs]
   }

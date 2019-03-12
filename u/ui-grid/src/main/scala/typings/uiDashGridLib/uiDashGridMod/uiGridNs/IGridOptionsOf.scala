@@ -399,18 +399,12 @@ object IGridOptionsOf {
     expandableRowHeight: scala.Int | scala.Double = null,
     expandableRowScope: angularLib.angularMod.angularNs.IScope | js.Object = null,
     expandableRowTemplate: java.lang.String = null,
-    exporterAllDataFn: js.Function0[angularLib.angularMod.angularNs.IPromise[js.Array[TEntity]]] = null,
-    exporterAllDataPromise: js.Function0[angularLib.angularMod.angularNs.IPromise[js.Array[TEntity]]] = null,
+    exporterAllDataFn: () => angularLib.angularMod.angularNs.IPromise[js.Array[TEntity]] = null,
+    exporterAllDataPromise: () => angularLib.angularMod.angularNs.IPromise[js.Array[TEntity]] = null,
     exporterCsvColumnSeparator: java.lang.String = null,
     exporterCsvFilename: java.lang.String = null,
-    exporterFieldCallback: js.Function4[
-      /* grid */ IGridInstanceOf[TEntity], 
-      /* row */ IGridRowOf[TEntity], 
-      /* col */ IGridColumnOf[TEntity], 
-      /* value */ js.Any, 
-      _
-    ] = null,
-    exporterHeaderFilter: js.Function1[/* displayName */ java.lang.String, java.lang.String] = null,
+    exporterFieldCallback: (/* grid */ IGridInstanceOf[TEntity], /* row */ IGridRowOf[TEntity], /* col */ IGridColumnOf[TEntity], /* value */ js.Any) => _ = null,
+    exporterHeaderFilter: /* displayName */ java.lang.String => java.lang.String = null,
     exporterHeaderFilterUseName: js.UndefOr[scala.Boolean] = js.undefined,
     exporterMenuCsv: js.UndefOr[scala.Boolean] = js.undefined,
     exporterMenuExcel: js.UndefOr[scala.Boolean] = js.undefined,
@@ -418,7 +412,7 @@ object IGridOptionsOf {
     exporterMenuLabel: java.lang.String = null,
     exporterMenuPdf: js.UndefOr[scala.Boolean] = js.undefined,
     exporterOlderExcelCompatibility: js.UndefOr[scala.Boolean] = js.undefined,
-    exporterPdfCustomFormatter: js.Function1[/* docDefinition */ js.Any, _] = null,
+    exporterPdfCustomFormatter: /* docDefinition */ js.Any => _ = null,
     exporterPdfDefaultStyle: js.Any = null,
     exporterPdfFilename: java.lang.String = null,
     exporterPdfFooter: java.lang.String | js.Any | uiDashGridLib.Anon_CurrentPage = null,
@@ -434,33 +428,23 @@ object IGridOptionsOf {
     fastWatch: js.UndefOr[scala.Boolean] = js.undefined,
     flatEntityAccess: js.UndefOr[scala.Boolean] = js.undefined,
     footerTemplate: java.lang.String = null,
-    getRowIdentity: js.Function1[/* row */ IGridRowOf[TEntity], _] = null,
+    getRowIdentity: /* row */ IGridRowOf[TEntity] => _ = null,
     gridFooterTemplate: java.lang.String = null,
     groupingNullLabel: java.lang.String = null,
     groupingShowCounts: js.UndefOr[scala.Boolean] = js.undefined,
     headerTemplate: java.lang.String = null,
     horizontalScrollThreshold: scala.Int | scala.Double = null,
-    importerDataAddCallback: js.Function2[/* grid */ IGridInstanceOf[TEntity], /* newObjects */ js.Array[TEntity], scala.Unit] = null,
-    importerErrorCallback: js.Function4[
-      /* grid */ IGridInstanceOf[TEntity], 
-      /* errorKey */ java.lang.String, 
-      /* consoleMessage */ java.lang.String, 
-      /* context */ js.Any, 
-      scala.Unit
-    ] = null,
-    importerHeaderFilter: js.Function1[/* displayName */ java.lang.String, java.lang.String] = null,
-    importerNewObject: angularLib.angularMod.Global.Function = null,
-    importerObjectCallback: js.Function2[/* grid */ IGridInstanceOf[TEntity], TEntity, TEntity] = null,
-    importerProcessHeaders: js.Function2[
-      /* grid */ IGridInstanceOf[TEntity], 
-      /* headerArray */ js.Array[java.lang.String], 
-      js.Array[java.lang.String]
-    ] = null,
+    importerDataAddCallback: (/* grid */ IGridInstanceOf[TEntity], /* newObjects */ js.Array[TEntity]) => scala.Unit = null,
+    importerErrorCallback: (/* grid */ IGridInstanceOf[TEntity], /* errorKey */ java.lang.String, /* consoleMessage */ java.lang.String, /* context */ js.Any) => scala.Unit = null,
+    importerHeaderFilter: /* displayName */ java.lang.String => java.lang.String = null,
+    importerNewObject: js.Function = null,
+    importerObjectCallback: (/* grid */ IGridInstanceOf[TEntity], TEntity) => TEntity = null,
+    importerProcessHeaders: (/* grid */ IGridInstanceOf[TEntity], /* headerArray */ js.Array[java.lang.String]) => js.Array[java.lang.String] = null,
     importerShowMenu: js.UndefOr[scala.Boolean] = js.undefined,
     infiniteScrollDown: js.UndefOr[scala.Boolean] = js.undefined,
     infiniteScrollRowsFromEnd: scala.Int | scala.Double = null,
     infiniteScrollUp: js.UndefOr[scala.Boolean] = js.undefined,
-    isRowSelectable: js.Function1[/* row */ uiDashGridLib.uiDashGridMod.uiGridNs.selectionNs.IGridRow, scala.Boolean] = null,
+    isRowSelectable: /* row */ uiDashGridLib.uiDashGridMod.uiGridNs.selectionNs.IGridRow => scala.Boolean = null,
     maxVisibleColumnCount: scala.Int | scala.Double = null,
     minRowsToShow: scala.Int | scala.Double = null,
     minimumColumnSize: scala.Int | scala.Double = null,
@@ -468,15 +452,15 @@ object IGridOptionsOf {
     modifierKeysToMultiSelectCells: js.UndefOr[scala.Boolean] = js.undefined,
     multiSelect: js.UndefOr[scala.Boolean] = js.undefined,
     noUnselect: js.UndefOr[scala.Boolean] = js.undefined,
-    onRegisterApi: js.Function1[/* gridApi */ IGridApiOf[TEntity], scala.Unit] = null,
+    onRegisterApi: /* gridApi */ IGridApiOf[TEntity] => scala.Unit = null,
     paginationCurrentPage: scala.Int | scala.Double = null,
     paginationPageSize: scala.Int | scala.Double = null,
     paginationPageSizes: js.Array[scala.Double] = null,
     paginationTemplate: java.lang.String = null,
     rowEditWaitInterval: scala.Int | scala.Double = null,
-    rowEquality: js.Function2[/* entityA */ TEntity, /* entityB */ TEntity, scala.Boolean] = null,
+    rowEquality: (/* entityA */ TEntity, /* entityB */ TEntity) => scala.Boolean = null,
     rowHeight: scala.Int | scala.Double = null,
-    rowIdentity: js.Function1[/* row */ IGridRowOf[TEntity], _] = null,
+    rowIdentity: /* row */ IGridRowOf[TEntity] => _ = null,
     rowTemplate: java.lang.String = null,
     saveFilter: js.UndefOr[scala.Boolean] = js.undefined,
     saveFocus: js.UndefOr[scala.Boolean] = js.undefined,
@@ -556,12 +540,12 @@ object IGridOptionsOf {
     if (expandableRowHeight != null) __obj.updateDynamic("expandableRowHeight")(expandableRowHeight.asInstanceOf[js.Any])
     if (expandableRowScope != null) __obj.updateDynamic("expandableRowScope")(expandableRowScope.asInstanceOf[js.Any])
     if (expandableRowTemplate != null) __obj.updateDynamic("expandableRowTemplate")(expandableRowTemplate)
-    if (exporterAllDataFn != null) __obj.updateDynamic("exporterAllDataFn")(exporterAllDataFn)
-    if (exporterAllDataPromise != null) __obj.updateDynamic("exporterAllDataPromise")(exporterAllDataPromise)
+    if (exporterAllDataFn != null) __obj.updateDynamic("exporterAllDataFn")(js.Any.fromFunction0(exporterAllDataFn))
+    if (exporterAllDataPromise != null) __obj.updateDynamic("exporterAllDataPromise")(js.Any.fromFunction0(exporterAllDataPromise))
     if (exporterCsvColumnSeparator != null) __obj.updateDynamic("exporterCsvColumnSeparator")(exporterCsvColumnSeparator)
     if (exporterCsvFilename != null) __obj.updateDynamic("exporterCsvFilename")(exporterCsvFilename)
-    if (exporterFieldCallback != null) __obj.updateDynamic("exporterFieldCallback")(exporterFieldCallback)
-    if (exporterHeaderFilter != null) __obj.updateDynamic("exporterHeaderFilter")(exporterHeaderFilter)
+    if (exporterFieldCallback != null) __obj.updateDynamic("exporterFieldCallback")(js.Any.fromFunction4(exporterFieldCallback))
+    if (exporterHeaderFilter != null) __obj.updateDynamic("exporterHeaderFilter")(js.Any.fromFunction1(exporterHeaderFilter))
     if (!js.isUndefined(exporterHeaderFilterUseName)) __obj.updateDynamic("exporterHeaderFilterUseName")(exporterHeaderFilterUseName)
     if (!js.isUndefined(exporterMenuCsv)) __obj.updateDynamic("exporterMenuCsv")(exporterMenuCsv)
     if (!js.isUndefined(exporterMenuExcel)) __obj.updateDynamic("exporterMenuExcel")(exporterMenuExcel)
@@ -569,7 +553,7 @@ object IGridOptionsOf {
     if (exporterMenuLabel != null) __obj.updateDynamic("exporterMenuLabel")(exporterMenuLabel)
     if (!js.isUndefined(exporterMenuPdf)) __obj.updateDynamic("exporterMenuPdf")(exporterMenuPdf)
     if (!js.isUndefined(exporterOlderExcelCompatibility)) __obj.updateDynamic("exporterOlderExcelCompatibility")(exporterOlderExcelCompatibility)
-    if (exporterPdfCustomFormatter != null) __obj.updateDynamic("exporterPdfCustomFormatter")(exporterPdfCustomFormatter)
+    if (exporterPdfCustomFormatter != null) __obj.updateDynamic("exporterPdfCustomFormatter")(js.Any.fromFunction1(exporterPdfCustomFormatter))
     if (exporterPdfDefaultStyle != null) __obj.updateDynamic("exporterPdfDefaultStyle")(exporterPdfDefaultStyle)
     if (exporterPdfFilename != null) __obj.updateDynamic("exporterPdfFilename")(exporterPdfFilename)
     if (exporterPdfFooter != null) __obj.updateDynamic("exporterPdfFooter")(exporterPdfFooter.asInstanceOf[js.Any])
@@ -585,23 +569,23 @@ object IGridOptionsOf {
     if (!js.isUndefined(fastWatch)) __obj.updateDynamic("fastWatch")(fastWatch)
     if (!js.isUndefined(flatEntityAccess)) __obj.updateDynamic("flatEntityAccess")(flatEntityAccess)
     if (footerTemplate != null) __obj.updateDynamic("footerTemplate")(footerTemplate)
-    if (getRowIdentity != null) __obj.updateDynamic("getRowIdentity")(getRowIdentity)
+    if (getRowIdentity != null) __obj.updateDynamic("getRowIdentity")(js.Any.fromFunction1(getRowIdentity))
     if (gridFooterTemplate != null) __obj.updateDynamic("gridFooterTemplate")(gridFooterTemplate)
     if (groupingNullLabel != null) __obj.updateDynamic("groupingNullLabel")(groupingNullLabel)
     if (!js.isUndefined(groupingShowCounts)) __obj.updateDynamic("groupingShowCounts")(groupingShowCounts)
     if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate)
     if (horizontalScrollThreshold != null) __obj.updateDynamic("horizontalScrollThreshold")(horizontalScrollThreshold.asInstanceOf[js.Any])
-    if (importerDataAddCallback != null) __obj.updateDynamic("importerDataAddCallback")(importerDataAddCallback)
-    if (importerErrorCallback != null) __obj.updateDynamic("importerErrorCallback")(importerErrorCallback)
-    if (importerHeaderFilter != null) __obj.updateDynamic("importerHeaderFilter")(importerHeaderFilter)
+    if (importerDataAddCallback != null) __obj.updateDynamic("importerDataAddCallback")(js.Any.fromFunction2(importerDataAddCallback))
+    if (importerErrorCallback != null) __obj.updateDynamic("importerErrorCallback")(js.Any.fromFunction4(importerErrorCallback))
+    if (importerHeaderFilter != null) __obj.updateDynamic("importerHeaderFilter")(js.Any.fromFunction1(importerHeaderFilter))
     if (importerNewObject != null) __obj.updateDynamic("importerNewObject")(importerNewObject)
-    if (importerObjectCallback != null) __obj.updateDynamic("importerObjectCallback")(importerObjectCallback)
-    if (importerProcessHeaders != null) __obj.updateDynamic("importerProcessHeaders")(importerProcessHeaders)
+    if (importerObjectCallback != null) __obj.updateDynamic("importerObjectCallback")(js.Any.fromFunction2(importerObjectCallback))
+    if (importerProcessHeaders != null) __obj.updateDynamic("importerProcessHeaders")(js.Any.fromFunction2(importerProcessHeaders))
     if (!js.isUndefined(importerShowMenu)) __obj.updateDynamic("importerShowMenu")(importerShowMenu)
     if (!js.isUndefined(infiniteScrollDown)) __obj.updateDynamic("infiniteScrollDown")(infiniteScrollDown)
     if (infiniteScrollRowsFromEnd != null) __obj.updateDynamic("infiniteScrollRowsFromEnd")(infiniteScrollRowsFromEnd.asInstanceOf[js.Any])
     if (!js.isUndefined(infiniteScrollUp)) __obj.updateDynamic("infiniteScrollUp")(infiniteScrollUp)
-    if (isRowSelectable != null) __obj.updateDynamic("isRowSelectable")(isRowSelectable)
+    if (isRowSelectable != null) __obj.updateDynamic("isRowSelectable")(js.Any.fromFunction1(isRowSelectable))
     if (maxVisibleColumnCount != null) __obj.updateDynamic("maxVisibleColumnCount")(maxVisibleColumnCount.asInstanceOf[js.Any])
     if (minRowsToShow != null) __obj.updateDynamic("minRowsToShow")(minRowsToShow.asInstanceOf[js.Any])
     if (minimumColumnSize != null) __obj.updateDynamic("minimumColumnSize")(minimumColumnSize.asInstanceOf[js.Any])
@@ -609,15 +593,15 @@ object IGridOptionsOf {
     if (!js.isUndefined(modifierKeysToMultiSelectCells)) __obj.updateDynamic("modifierKeysToMultiSelectCells")(modifierKeysToMultiSelectCells)
     if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect)
     if (!js.isUndefined(noUnselect)) __obj.updateDynamic("noUnselect")(noUnselect)
-    if (onRegisterApi != null) __obj.updateDynamic("onRegisterApi")(onRegisterApi)
+    if (onRegisterApi != null) __obj.updateDynamic("onRegisterApi")(js.Any.fromFunction1(onRegisterApi))
     if (paginationCurrentPage != null) __obj.updateDynamic("paginationCurrentPage")(paginationCurrentPage.asInstanceOf[js.Any])
     if (paginationPageSize != null) __obj.updateDynamic("paginationPageSize")(paginationPageSize.asInstanceOf[js.Any])
     if (paginationPageSizes != null) __obj.updateDynamic("paginationPageSizes")(paginationPageSizes)
     if (paginationTemplate != null) __obj.updateDynamic("paginationTemplate")(paginationTemplate)
     if (rowEditWaitInterval != null) __obj.updateDynamic("rowEditWaitInterval")(rowEditWaitInterval.asInstanceOf[js.Any])
-    if (rowEquality != null) __obj.updateDynamic("rowEquality")(rowEquality)
+    if (rowEquality != null) __obj.updateDynamic("rowEquality")(js.Any.fromFunction2(rowEquality))
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (rowIdentity != null) __obj.updateDynamic("rowIdentity")(rowIdentity)
+    if (rowIdentity != null) __obj.updateDynamic("rowIdentity")(js.Any.fromFunction1(rowIdentity))
     if (rowTemplate != null) __obj.updateDynamic("rowTemplate")(rowTemplate)
     if (!js.isUndefined(saveFilter)) __obj.updateDynamic("saveFilter")(saveFilter)
     if (!js.isUndefined(saveFocus)) __obj.updateDynamic("saveFocus")(saveFocus)

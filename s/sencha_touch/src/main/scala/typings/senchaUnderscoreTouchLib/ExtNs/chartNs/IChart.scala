@@ -35,24 +35,24 @@ object IChart {
   def apply(
     IAbstractChart: IAbstractChart = null,
     flipXY: js.UndefOr[scala.Boolean] = js.undefined,
-    getFlipXY: js.Function0[scala.Boolean] = null,
-    getInnerRegion: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    onPlaceWatermark: js.Function0[scala.Unit] = null,
-    performLayout: js.Function0[scala.Unit] = null,
-    redraw: js.Function0[scala.Unit] = null,
-    setFlipXY: js.Function1[/* flipXY */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setInnerRegion: js.Function1[/* innerRegion */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null
+    getFlipXY: () => scala.Boolean = null,
+    getInnerRegion: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    onPlaceWatermark: () => scala.Unit = null,
+    performLayout: () => scala.Unit = null,
+    redraw: () => scala.Unit = null,
+    setFlipXY: /* flipXY */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setInnerRegion: /* innerRegion */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null
   ): IChart = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IAbstractChart)
     if (!js.isUndefined(flipXY)) __obj.updateDynamic("flipXY")(flipXY)
-    if (getFlipXY != null) __obj.updateDynamic("getFlipXY")(getFlipXY)
-    if (getInnerRegion != null) __obj.updateDynamic("getInnerRegion")(getInnerRegion)
-    if (onPlaceWatermark != null) __obj.updateDynamic("onPlaceWatermark")(onPlaceWatermark)
-    if (performLayout != null) __obj.updateDynamic("performLayout")(performLayout)
-    if (redraw != null) __obj.updateDynamic("redraw")(redraw)
-    if (setFlipXY != null) __obj.updateDynamic("setFlipXY")(setFlipXY)
-    if (setInnerRegion != null) __obj.updateDynamic("setInnerRegion")(setInnerRegion)
+    if (getFlipXY != null) __obj.updateDynamic("getFlipXY")(js.Any.fromFunction0(getFlipXY))
+    if (getInnerRegion != null) __obj.updateDynamic("getInnerRegion")(js.Any.fromFunction0(getInnerRegion))
+    if (onPlaceWatermark != null) __obj.updateDynamic("onPlaceWatermark")(js.Any.fromFunction0(onPlaceWatermark))
+    if (performLayout != null) __obj.updateDynamic("performLayout")(js.Any.fromFunction0(performLayout))
+    if (redraw != null) __obj.updateDynamic("redraw")(js.Any.fromFunction0(redraw))
+    if (setFlipXY != null) __obj.updateDynamic("setFlipXY")(js.Any.fromFunction1(setFlipXY))
+    if (setInnerRegion != null) __obj.updateDynamic("setInnerRegion")(js.Any.fromFunction1(setInnerRegion))
     __obj.asInstanceOf[IChart]
   }
 }

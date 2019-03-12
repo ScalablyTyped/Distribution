@@ -31,14 +31,14 @@ object DraggableOptions {
     container: kendoDashUiLib.JQuery = null,
     cursorOffset: js.Any = null,
     distance: scala.Int | scala.Double = null,
-    drag: js.Function1[/* e */ DraggableEvent, scala.Unit] = null,
-    dragcancel: js.Function1[/* e */ DraggableEvent, scala.Unit] = null,
-    dragend: js.Function1[/* e */ DraggableEvent, scala.Unit] = null,
-    dragstart: js.Function1[/* e */ DraggableEvent, scala.Unit] = null,
+    drag: /* e */ DraggableEvent => scala.Unit = null,
+    dragcancel: /* e */ DraggableEvent => scala.Unit = null,
+    dragend: /* e */ DraggableEvent => scala.Unit = null,
+    dragstart: /* e */ DraggableEvent => scala.Unit = null,
     filter: java.lang.String = null,
     group: java.lang.String = null,
     hint: js.Function | kendoDashUiLib.JQuery = null,
-    hold: js.Function1[/* e */ DraggableEvent, scala.Unit] = null,
+    hold: /* e */ DraggableEvent => scala.Unit = null,
     holdToDrag: js.UndefOr[scala.Boolean] = js.undefined,
     ignore: java.lang.String = null
   ): DraggableOptions = {
@@ -48,14 +48,14 @@ object DraggableOptions {
     if (container != null) __obj.updateDynamic("container")(container)
     if (cursorOffset != null) __obj.updateDynamic("cursorOffset")(cursorOffset)
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (drag != null) __obj.updateDynamic("drag")(drag)
-    if (dragcancel != null) __obj.updateDynamic("dragcancel")(dragcancel)
-    if (dragend != null) __obj.updateDynamic("dragend")(dragend)
-    if (dragstart != null) __obj.updateDynamic("dragstart")(dragstart)
+    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1(drag))
+    if (dragcancel != null) __obj.updateDynamic("dragcancel")(js.Any.fromFunction1(dragcancel))
+    if (dragend != null) __obj.updateDynamic("dragend")(js.Any.fromFunction1(dragend))
+    if (dragstart != null) __obj.updateDynamic("dragstart")(js.Any.fromFunction1(dragstart))
     if (filter != null) __obj.updateDynamic("filter")(filter)
     if (group != null) __obj.updateDynamic("group")(group)
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (hold != null) __obj.updateDynamic("hold")(hold)
+    if (hold != null) __obj.updateDynamic("hold")(js.Any.fromFunction1(hold))
     if (!js.isUndefined(holdToDrag)) __obj.updateDynamic("holdToDrag")(holdToDrag)
     if (ignore != null) __obj.updateDynamic("ignore")(ignore)
     __obj.asInstanceOf[DraggableOptions]

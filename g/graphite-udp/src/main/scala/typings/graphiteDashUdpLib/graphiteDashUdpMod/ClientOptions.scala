@@ -58,7 +58,7 @@ trait ClientOptions extends js.Object {
 object ClientOptions {
   @scala.inline
   def apply(
-    callback: js.Function2[/* error */ stdLib.Error, /* metrics */ js.Any, scala.Unit] = null,
+    callback: (/* error */ stdLib.Error, /* metrics */ js.Any) => scala.Unit = null,
     host: java.lang.String = null,
     interval: scala.Int | scala.Double = null,
     maxPacketSize: scala.Int | scala.Double = null,
@@ -69,7 +69,7 @@ object ClientOptions {
     verbose: js.UndefOr[scala.Boolean] = js.undefined
   ): ClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
     if (host != null) __obj.updateDynamic("host")(host)
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (maxPacketSize != null) __obj.updateDynamic("maxPacketSize")(maxPacketSize.asInstanceOf[js.Any])

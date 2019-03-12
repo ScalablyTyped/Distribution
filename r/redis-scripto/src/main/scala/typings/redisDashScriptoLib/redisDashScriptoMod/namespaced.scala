@@ -14,14 +14,14 @@ class namespaced protected () extends Scripto {
     scriptName: java.lang.String,
     keys: js.Array[java.lang.String],
     args: js.Array[_],
-    callback: js.Function2[/* err */ nodeLib.Error, /* result */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* result */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   /* CompleteClass */
   override def evalSha(
     scriptName: java.lang.String,
     keys: js.Array[java.lang.String],
     args: js.Array[_],
-    callback: js.Function2[/* err */ nodeLib.Error, /* result */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* result */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   /* CompleteClass */
   override def load(scripts: redisDashScriptoLib.redisDashScriptoMod.ScriptoNs.Scripts): scala.Unit = js.native
@@ -34,7 +34,7 @@ class namespaced protected () extends Scripto {
     scriptName: java.lang.String,
     keys: js.Array[java.lang.String],
     args: js.Array[_],
-    callback: js.Function2[/* err */ nodeLib.Error, /* result */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* result */ js.Any, scala.Unit]
   ): scala.Unit = js.native
 }
 

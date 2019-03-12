@@ -8,22 +8,22 @@ import scala.scalajs.js.annotation._
 /** @deprecated Deprecated */
 trait XSupportedLanguages
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
-  val Languages: activexDashInteropLib.SafeArray[scala.Double]
-  def getLanguages(): activexDashInteropLib.SafeArray[scala.Double]
+  val Languages: stdLib.SafeArray[scala.Double]
+  def getLanguages(): stdLib.SafeArray[scala.Double]
   def hasLanguage(nLanguage: scala.Double): scala.Boolean
 }
 
 object XSupportedLanguages {
   @scala.inline
   def apply(
-    Languages: activexDashInteropLib.SafeArray[scala.Double],
-    acquire: js.Function0[scala.Unit],
-    getLanguages: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    hasLanguage: js.Function1[scala.Double, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    Languages: stdLib.SafeArray[scala.Double],
+    acquire: () => scala.Unit,
+    getLanguages: () => stdLib.SafeArray[scala.Double],
+    hasLanguage: scala.Double => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSupportedLanguages = {
-    val __obj = js.Dynamic.literal(Languages = Languages, acquire = acquire, getLanguages = getLanguages, hasLanguage = hasLanguage, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Languages = Languages, acquire = js.Any.fromFunction0(acquire), getLanguages = js.Any.fromFunction0(getLanguages), hasLanguage = js.Any.fromFunction1(hasLanguage), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSupportedLanguages]
   }

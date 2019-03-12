@@ -19,8 +19,8 @@ trait lang extends js.Object {
 
 object lang {
   @scala.inline
-  def apply(clone: js.Function1[js.Any, js.Any]): lang = {
-    val __obj = js.Dynamic.literal(clone = clone)
+  def apply(clone: js.Any => js.Any): lang = {
+    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction1(clone))
   
     __obj.asInstanceOf[lang]
   }

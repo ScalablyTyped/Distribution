@@ -48,7 +48,7 @@ object Anon_AlphabetBase32 {
     base58: adoneLib.adoneNs.dataNs.INs.BaseX,
     base64Ns: Anon_C,
     base64urlNs: Anon_DecodeEncode,
-    basex: js.Function1[java.lang.String, adoneLib.adoneNs.dataNs.INs.BaseX],
+    basex: java.lang.String => adoneLib.adoneNs.dataNs.INs.BaseX,
     bsonNs: Anon_ArgsBSON,
     json5Ns: Anon_BufDecodeEncode,
     jsonNs: Anon_BufDecode,
@@ -58,7 +58,7 @@ object Anon_AlphabetBase32 {
     varintSignedNs: Anon_BufDecodeEncodeEncodingLength,
     yamlNs: Anon_BufBuffer
   ): Anon_AlphabetBase32 = {
-    val __obj = js.Dynamic.literal(INs = INs, base32Ns = base32Ns, base58 = base58, base64Ns = base64Ns, base64urlNs = base64urlNs, basex = basex, bsonNs = bsonNs, json5Ns = json5Ns, jsonNs = jsonNs, mpakNs = mpakNs, protobufNs = protobufNs, varintNs = varintNs, varintSignedNs = varintSignedNs, yamlNs = yamlNs)
+    val __obj = js.Dynamic.literal(INs = INs, base32Ns = base32Ns, base58 = base58, base64Ns = base64Ns, base64urlNs = base64urlNs, basex = js.Any.fromFunction1(basex), bsonNs = bsonNs, json5Ns = json5Ns, jsonNs = jsonNs, mpakNs = mpakNs, protobufNs = protobufNs, varintNs = varintNs, varintSignedNs = varintSignedNs, yamlNs = yamlNs)
   
     __obj.asInstanceOf[Anon_AlphabetBase32]
   }

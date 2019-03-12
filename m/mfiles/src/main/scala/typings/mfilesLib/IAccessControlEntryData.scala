@@ -20,13 +20,13 @@ object IAccessControlEntryData {
   def apply(
     AttachObjectsPermission: mfilesLib.MFilesNs.MFPermission,
     ChangePermissionsPermission: mfilesLib.MFilesNs.MFPermission,
-    Clone: js.Function0[IAccessControlEntryData],
+    Clone: () => IAccessControlEntryData,
     DeletePermission: mfilesLib.MFilesNs.MFPermission,
     EditPermission: mfilesLib.MFilesNs.MFPermission,
     ReadPermission: mfilesLib.MFilesNs.MFPermission,
-    SetAllPermissions: js.Function1[mfilesLib.MFilesNs.MFPermission, scala.Unit]
+    SetAllPermissions: mfilesLib.MFilesNs.MFPermission => scala.Unit
   ): IAccessControlEntryData = {
-    val __obj = js.Dynamic.literal(AttachObjectsPermission = AttachObjectsPermission, ChangePermissionsPermission = ChangePermissionsPermission, Clone = Clone, DeletePermission = DeletePermission, EditPermission = EditPermission, ReadPermission = ReadPermission, SetAllPermissions = SetAllPermissions)
+    val __obj = js.Dynamic.literal(AttachObjectsPermission = AttachObjectsPermission, ChangePermissionsPermission = ChangePermissionsPermission, Clone = js.Any.fromFunction0(Clone), DeletePermission = DeletePermission, EditPermission = EditPermission, ReadPermission = ReadPermission, SetAllPermissions = js.Any.fromFunction1(SetAllPermissions))
   
     __obj.asInstanceOf[IAccessControlEntryData]
   }

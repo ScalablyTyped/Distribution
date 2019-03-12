@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class ListObject protected () extends js.Object {
   val Active: scala.Boolean = js.native
   var AlternativeText: java.lang.String = js.native
-  val Application: Application = js.native
-  val AutoFilter: AutoFilter = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
+  val AutoFilter: activexDashExcelLib.ExcelNs.AutoFilter = js.native
   var Comment: java.lang.String = js.native
   val Creator: XlCreator = js.native
   @JSName("DataBodyRange")
@@ -29,7 +29,7 @@ class ListObject protected () extends js.Object {
   val ListRows_Original: ListRows = js.native
   var Name: java.lang.String = js.native
   val Parent: js.Any = js.native
-  val QueryTable: QueryTable = js.native
+  val QueryTable: activexDashExcelLib.ExcelNs.QueryTable = js.native
   @JSName("Range")
   val Range_Original: Range = js.native
   val SharePointURL: java.lang.String = js.native
@@ -40,13 +40,13 @@ class ListObject protected () extends js.Object {
   var ShowTableStyleLastColumn: scala.Boolean = js.native
   var ShowTableStyleRowStripes: scala.Boolean = js.native
   var ShowTotals: scala.Boolean = js.native
-  val Sort: Sort = js.native
+  val Sort: activexDashExcelLib.ExcelNs.Sort = js.native
   val SourceType: XlListObjectSourceType = js.native
   var Summary: java.lang.String = js.native
   var TableStyle: js.Any = js.native
   @JSName("TotalsRowRange")
   val TotalsRowRange_Original: Range = js.native
-  val XmlMap: XmlMap = js.native
+  val XmlMap: activexDashExcelLib.ExcelNs.XmlMap = js.native
   val _Default: java.lang.String = js.native
   def DataBodyRange(Address: java.lang.String): Range = js.native
   def DataBodyRange(RowIndex: scala.Double): Range = js.native
@@ -63,10 +63,10 @@ class ListObject protected () extends js.Object {
   def ListColumns(Index: scala.Double): ListColumn = js.native
   def ListRows(Index: java.lang.String): ListRow = js.native
   def ListRows(Index: scala.Double): ListRow = js.native
-  def Publish(Target: activexDashInteropLib.SafeArray[java.lang.String], LinkSource: scala.Boolean): java.lang.String = js.native
-  def Range(Address: java.lang.String): Range = js.native
-  def Range(RowIndex: scala.Double): Range = js.native
-  def Range(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native
+  def Publish(Target: stdLib.SafeArray[java.lang.String], LinkSource: scala.Boolean): java.lang.String = js.native
+  def Range(Address: java.lang.String): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(RowIndex: scala.Double): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(RowIndex: scala.Double, ColumnIndex: scala.Double): activexDashExcelLib.ExcelNs.Range = js.native
   def Refresh(): scala.Unit = js.native
   def Resize(Range: Range): scala.Unit = js.native
   def TotalsRowRange(Address: java.lang.String): Range = js.native

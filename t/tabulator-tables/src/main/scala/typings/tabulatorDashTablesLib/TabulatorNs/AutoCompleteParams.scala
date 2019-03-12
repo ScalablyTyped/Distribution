@@ -19,17 +19,17 @@ trait AutoCompleteParams extends _EditorParams {
 object AutoCompleteParams {
   @scala.inline
   def apply(
-    searchFunc: js.Function2[java.lang.String, js.Array[java.lang.String], js.Array[java.lang.String]],
+    searchFunc: (java.lang.String, js.Array[java.lang.String]) => js.Array[java.lang.String],
     values: tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`true` | js.Array[java.lang.String] | JSONRecord,
     allowEmpty: js.UndefOr[scala.Boolean] = js.undefined,
     freetext: js.UndefOr[scala.Boolean] = js.undefined,
-    listItemFormatter: js.Function2[/* value */ java.lang.String, /* text */ java.lang.String, java.lang.String] = null,
+    listItemFormatter: (/* value */ java.lang.String, /* text */ java.lang.String) => java.lang.String = null,
     showListOnEmpty: js.UndefOr[scala.Boolean] = js.undefined
   ): AutoCompleteParams = {
-    val __obj = js.Dynamic.literal(searchFunc = searchFunc, values = values.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(searchFunc = js.Any.fromFunction2(searchFunc), values = values.asInstanceOf[js.Any])
     if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty)
     if (!js.isUndefined(freetext)) __obj.updateDynamic("freetext")(freetext)
-    if (listItemFormatter != null) __obj.updateDynamic("listItemFormatter")(listItemFormatter)
+    if (listItemFormatter != null) __obj.updateDynamic("listItemFormatter")(js.Any.fromFunction2(listItemFormatter))
     if (!js.isUndefined(showListOnEmpty)) __obj.updateDynamic("showListOnEmpty")(showListOnEmpty)
     __obj.asInstanceOf[AutoCompleteParams]
   }

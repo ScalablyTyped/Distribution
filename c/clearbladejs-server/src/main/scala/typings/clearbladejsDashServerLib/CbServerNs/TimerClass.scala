@@ -13,10 +13,10 @@ trait TimerClass extends js.Object {
 object TimerClass {
   @scala.inline
   def apply(
-    Create: js.Function3[java.lang.String, TimerCreateOptions, CbCallback, scala.Unit],
-    Fetch: js.Function2[java.lang.String, CbCallback, scala.Unit]
+    Create: (java.lang.String, TimerCreateOptions, CbCallback) => scala.Unit,
+    Fetch: (java.lang.String, CbCallback) => scala.Unit
   ): TimerClass = {
-    val __obj = js.Dynamic.literal(Create = Create, Fetch = Fetch)
+    val __obj = js.Dynamic.literal(Create = js.Any.fromFunction3(Create), Fetch = js.Any.fromFunction2(Fetch))
   
     __obj.asInstanceOf[TimerClass]
   }

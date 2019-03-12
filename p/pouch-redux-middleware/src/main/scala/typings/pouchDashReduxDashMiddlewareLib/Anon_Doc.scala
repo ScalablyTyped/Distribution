@@ -14,20 +14,11 @@ trait Anon_Doc extends js.Object {
 object Anon_Doc {
   @scala.inline
   def apply(
-    insert: js.Function1[
-      pouchDashReduxDashMiddlewareLib.pouchDashReduxDashMiddlewareMod.Document, 
-      reduxLib.reduxMod.Action[_]
-    ],
-    remove: js.Function1[
-      pouchDashReduxDashMiddlewareLib.pouchDashReduxDashMiddlewareMod.Document, 
-      reduxLib.reduxMod.Action[_]
-    ],
-    update: js.Function1[
-      pouchDashReduxDashMiddlewareLib.pouchDashReduxDashMiddlewareMod.Document, 
-      reduxLib.reduxMod.Action[_]
-    ]
+    insert: pouchDashReduxDashMiddlewareLib.pouchDashReduxDashMiddlewareMod.Document => reduxLib.reduxMod.Action[_],
+    remove: pouchDashReduxDashMiddlewareLib.pouchDashReduxDashMiddlewareMod.Document => reduxLib.reduxMod.Action[_],
+    update: pouchDashReduxDashMiddlewareLib.pouchDashReduxDashMiddlewareMod.Document => reduxLib.reduxMod.Action[_]
   ): Anon_Doc = {
-    val __obj = js.Dynamic.literal(insert = insert, remove = remove, update = update)
+    val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert), remove = js.Any.fromFunction1(remove), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[Anon_Doc]
   }

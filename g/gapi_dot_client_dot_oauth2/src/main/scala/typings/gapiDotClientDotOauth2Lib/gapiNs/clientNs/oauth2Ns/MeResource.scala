@@ -11,13 +11,8 @@ trait MeResource extends js.Object {
 
 object MeResource {
   @scala.inline
-  def apply(
-    get: js.Function1[
-      gapiDotClientDotOauth2Lib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Userinfoplus]
-    ]
-  ): MeResource = {
-    val __obj = js.Dynamic.literal(get = get)
+  def apply(get: gapiDotClientDotOauth2Lib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Userinfoplus]): MeResource = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[MeResource]
   }

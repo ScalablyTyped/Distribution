@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   var onPause: chromeLib.chromeNs.eventsNs.Event[js.Function0[scala.Unit]] = js.native
   var onResume: chromeLib.chromeNs.eventsNs.Event[js.Function0[scala.Unit]] = js.native
-  var onSpeak: chromeLib.chromeNs.ttsEngineNs.TtsEngineSpeakEvent = js.native
+  var onSpeak: TtsEngineSpeakEvent = js.native
   var onStop: chromeLib.chromeNs.eventsNs.Event[js.Function0[scala.Unit]] = js.native
 }
 

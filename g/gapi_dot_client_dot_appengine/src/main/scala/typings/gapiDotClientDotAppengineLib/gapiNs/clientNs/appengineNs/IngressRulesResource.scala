@@ -28,32 +28,14 @@ trait IngressRulesResource extends js.Object {
 object IngressRulesResource {
   @scala.inline
   def apply(
-    batchUpdate: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdateIngressRulesResponse]
-    ],
-    create: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FirewallRule]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FirewallRule]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListIngressRulesResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsIngressRulesId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FirewallRule]
-    ]
+    batchUpdate: gapiDotClientDotAppengineLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdateIngressRulesResponse],
+    create: gapiDotClientDotAppengineLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[FirewallRule],
+    delete: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[FirewallRule],
+    list: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[ListIngressRulesResponse],
+    patch: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsIngressRulesId => gapiDotClientLib.gapiNs.clientNs.Request[FirewallRule]
   ): IngressRulesResource = {
-    val __obj = js.Dynamic.literal(batchUpdate = batchUpdate, create = create, delete = delete, get = get, list = list, patch = patch)
+    val __obj = js.Dynamic.literal(batchUpdate = js.Any.fromFunction1(batchUpdate), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch))
   
     __obj.asInstanceOf[IngressRulesResource]
   }

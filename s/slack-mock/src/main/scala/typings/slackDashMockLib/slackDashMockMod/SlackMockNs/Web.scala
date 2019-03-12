@@ -13,12 +13,8 @@ trait Web[T] extends js.Object {
 
 object Web {
   @scala.inline
-  def apply[T](
-    addResponse: js.Function1[WebOptions[T], scala.Unit],
-    calls: js.Array[WebCall[T]],
-    reset: js.Function0[scala.Unit]
-  ): Web[T] = {
-    val __obj = js.Dynamic.literal(addResponse = addResponse, calls = calls, reset = reset)
+  def apply[T](addResponse: WebOptions[T] => scala.Unit, calls: js.Array[WebCall[T]], reset: () => scala.Unit): Web[T] = {
+    val __obj = js.Dynamic.literal(addResponse = js.Any.fromFunction1(addResponse), calls = calls, reset = js.Any.fromFunction0(reset))
   
     __obj.asInstanceOf[Web[T]]
   }

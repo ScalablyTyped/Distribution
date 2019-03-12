@@ -22,12 +22,12 @@ object XLinkTargetSupplier {
   @scala.inline
   def apply(
     Links: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
-    acquire: js.Function0[scala.Unit],
-    getLinks: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getLinks: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XLinkTargetSupplier = {
-    val __obj = js.Dynamic.literal(Links = Links, acquire = acquire, getLinks = getLinks, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Links = Links, acquire = js.Any.fromFunction0(acquire), getLinks = js.Any.fromFunction0(getLinks), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XLinkTargetSupplier]
   }

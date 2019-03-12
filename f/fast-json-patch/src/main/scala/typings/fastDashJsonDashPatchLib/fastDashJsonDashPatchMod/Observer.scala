@@ -15,12 +15,12 @@ trait Observer[T] extends js.Object {
 object Observer {
   @scala.inline
   def apply[T](
-    callback: js.Function1[js.Array[fastDashJsonDashPatchLib.libCoreMod.Operation], scala.Unit],
+    callback: js.Array[fastDashJsonDashPatchLib.libCoreMod.Operation] => scala.Unit,
     `object`: T,
     patches: js.Array[fastDashJsonDashPatchLib.libCoreMod.Operation],
-    unobserve: js.Function0[scala.Unit]
+    unobserve: () => scala.Unit
   ): Observer[T] = {
-    val __obj = js.Dynamic.literal(callback = callback, patches = patches, unobserve = unobserve)
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), patches = patches, unobserve = js.Any.fromFunction0(unobserve))
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Observer[T]]
   }

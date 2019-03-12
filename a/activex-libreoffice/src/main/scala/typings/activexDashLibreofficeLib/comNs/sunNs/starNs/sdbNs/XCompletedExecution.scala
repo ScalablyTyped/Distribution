@@ -19,15 +19,12 @@ trait XCompletedExecution
 object XCompletedExecution {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    executeWithCompletion: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    executeWithCompletion: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCompletedExecution = {
-    val __obj = js.Dynamic.literal(acquire = acquire, executeWithCompletion = executeWithCompletion, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), executeWithCompletion = js.Any.fromFunction1(executeWithCompletion), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCompletedExecution]
   }

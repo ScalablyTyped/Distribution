@@ -84,17 +84,17 @@ object XStarBasicLibraryInfo {
     ModuleContainer: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
     Name: java.lang.String,
     Password: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getDialogContainer: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer],
-    getExternalSourceURL: js.Function0[java.lang.String],
-    getLinkTargetURL: js.Function0[java.lang.String],
-    getModuleContainer: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer],
-    getName: js.Function0[java.lang.String],
-    getPassword: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDialogContainer: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    getExternalSourceURL: () => java.lang.String,
+    getLinkTargetURL: () => java.lang.String,
+    getModuleContainer: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    getName: () => java.lang.String,
+    getPassword: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XStarBasicLibraryInfo = {
-    val __obj = js.Dynamic.literal(DialogContainer = DialogContainer, ExternalSourceURL = ExternalSourceURL, LinkTargetURL = LinkTargetURL, ModuleContainer = ModuleContainer, Name = Name, Password = Password, acquire = acquire, getDialogContainer = getDialogContainer, getExternalSourceURL = getExternalSourceURL, getLinkTargetURL = getLinkTargetURL, getModuleContainer = getModuleContainer, getName = getName, getPassword = getPassword, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(DialogContainer = DialogContainer, ExternalSourceURL = ExternalSourceURL, LinkTargetURL = LinkTargetURL, ModuleContainer = ModuleContainer, Name = Name, Password = Password, acquire = js.Any.fromFunction0(acquire), getDialogContainer = js.Any.fromFunction0(getDialogContainer), getExternalSourceURL = js.Any.fromFunction0(getExternalSourceURL), getLinkTargetURL = js.Any.fromFunction0(getLinkTargetURL), getModuleContainer = js.Any.fromFunction0(getModuleContainer), getName = js.Any.fromFunction0(getName), getPassword = js.Any.fromFunction0(getPassword), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XStarBasicLibraryInfo]
   }

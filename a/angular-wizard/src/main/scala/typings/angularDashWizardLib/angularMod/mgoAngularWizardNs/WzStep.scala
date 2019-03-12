@@ -18,15 +18,15 @@ trait WzStep extends js.Object {
 object WzStep {
   @scala.inline
   def apply(
-    canenter: js.Function1[/* repeated */ js.Any, scala.Boolean],
-    canexit: js.Function1[/* repeated */ js.Any, scala.Boolean],
+    canenter: /* repeated */ js.Any => scala.Boolean,
+    canexit: /* repeated */ js.Any => scala.Boolean,
     description: java.lang.String,
     selected: scala.Boolean,
     title: java.lang.String,
     wzData: js.Any,
     wzTitle: java.lang.String
   ): WzStep = {
-    val __obj = js.Dynamic.literal(canenter = canenter, canexit = canexit, description = description, selected = selected, title = title, wzData = wzData, wzTitle = wzTitle)
+    val __obj = js.Dynamic.literal(canenter = js.Any.fromFunction1(canenter), canexit = js.Any.fromFunction1(canexit), description = description, selected = selected, title = title, wzData = wzData, wzTitle = wzTitle)
   
     __obj.asInstanceOf[WzStep]
   }

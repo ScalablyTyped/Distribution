@@ -12,8 +12,8 @@ trait Anon_Get extends js.Object {
 
 object Anon_Get {
   @scala.inline
-  def apply(get: js.Function1[scala.Double, java.lang.String], size: js.Function0[scala.Double]): Anon_Get = {
-    val __obj = js.Dynamic.literal(get = get, size = size)
+  def apply(get: scala.Double => java.lang.String, size: () => scala.Double): Anon_Get = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), size = js.Any.fromFunction0(size))
   
     __obj.asInstanceOf[Anon_Get]
   }

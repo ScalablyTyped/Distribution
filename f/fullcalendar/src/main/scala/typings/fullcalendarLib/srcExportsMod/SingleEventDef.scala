@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "SingleEventDef")
 @js.native
 class SingleEventDef ()
-  extends fullcalendarLib.singleeventdefMod.default
+  extends fullcalendarLib.singleEventDefMod.default
 

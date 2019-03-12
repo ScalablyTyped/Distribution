@@ -22,8 +22,8 @@ trait ChangeSectionEqualColumnCountCommand extends CommandBase {
 
 object ChangeSectionEqualColumnCountCommand {
   @scala.inline
-  def apply(execute: js.Function1[scala.Double, scala.Boolean], getState: js.Function0[js.Any]): ChangeSectionEqualColumnCountCommand = {
-    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  def apply(execute: scala.Double => scala.Boolean, getState: () => js.Any): ChangeSectionEqualColumnCountCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
   
     __obj.asInstanceOf[ChangeSectionEqualColumnCountCommand]
   }

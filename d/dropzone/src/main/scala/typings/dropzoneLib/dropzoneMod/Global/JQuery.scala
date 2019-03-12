@@ -11,13 +11,8 @@ trait JQuery extends js.Object {
 
 object JQuery {
   @scala.inline
-  def apply(
-    dropzone: js.Function1[
-      dropzoneLib.dropzoneMod.DropzoneNs.DropzoneOptions, 
-      dropzoneLib.dropzoneMod.Dropzone
-    ]
-  ): JQuery = {
-    val __obj = js.Dynamic.literal(dropzone = dropzone)
+  def apply(dropzone: dropzoneLib.dropzoneMod.DropzoneNs.DropzoneOptions => dropzoneLib.dropzoneMod.Dropzone): JQuery = {
+    val __obj = js.Dynamic.literal(dropzone = js.Any.fromFunction1(dropzone))
   
     __obj.asInstanceOf[JQuery]
   }

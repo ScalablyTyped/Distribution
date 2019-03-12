@@ -41,21 +41,17 @@ object IGulpCacheOptions {
   @scala.inline
   def apply(
     fileCache: IGulpCache = null,
-    key: js.Function2[
-      /* file */ vinylLib.vinylMod.File, 
-      /* callback */ js.UndefOr[js.Function2[/* err */ js.Any, /* result */ java.lang.String, scala.Unit]], 
-      java.lang.String | js.Promise[java.lang.String]
-    ] = null,
+    key: (/* file */ vinylLib.vinylMod.File, /* callback */ js.UndefOr[js.Function2[/* err */ js.Any, /* result */ java.lang.String, scala.Unit]]) => java.lang.String | js.Promise[java.lang.String] = null,
     name: java.lang.String = null,
     success: scala.Boolean | Predicate[_] = null,
-    value: js.Function1[/* result */ js.Any, js.Object | js.Promise[js.Object] | java.lang.String] = null
+    value: /* result */ js.Any => js.Object | js.Promise[js.Object] | java.lang.String = null
   ): IGulpCacheOptions = {
     val __obj = js.Dynamic.literal()
     if (fileCache != null) __obj.updateDynamic("fileCache")(fileCache)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (key != null) __obj.updateDynamic("key")(js.Any.fromFunction2(key))
     if (name != null) __obj.updateDynamic("name")(name)
     if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(js.Any.fromFunction1(value))
     __obj.asInstanceOf[IGulpCacheOptions]
   }
 }

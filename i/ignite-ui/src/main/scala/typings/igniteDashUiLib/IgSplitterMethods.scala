@@ -70,20 +70,20 @@ trait IgSplitterMethods extends js.Object {
 object IgSplitterMethods {
   @scala.inline
   def apply(
-    changeGlobalLanguage: js.Function0[scala.Unit],
-    changeGlobalRegional: js.Function0[scala.Unit],
-    changeLocale: js.Function1[js.Object, scala.Unit],
-    collapseAt: js.Function1[js.Object, scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    expandAt: js.Function1[js.Object, scala.Unit],
-    firstPanel: js.Function0[js.Object],
-    refreshLayout: js.Function0[scala.Unit],
-    secondPanel: js.Function0[js.Object],
-    setFirstPanelSize: js.Function1[js.Object, scala.Unit],
-    setSecondPanelSize: js.Function1[js.Object, scala.Unit],
-    widget: js.Function0[js.Object]
+    changeGlobalLanguage: () => scala.Unit,
+    changeGlobalRegional: () => scala.Unit,
+    changeLocale: js.Object => scala.Unit,
+    collapseAt: js.Object => scala.Unit,
+    destroy: () => scala.Unit,
+    expandAt: js.Object => scala.Unit,
+    firstPanel: () => js.Object,
+    refreshLayout: () => scala.Unit,
+    secondPanel: () => js.Object,
+    setFirstPanelSize: js.Object => scala.Unit,
+    setSecondPanelSize: js.Object => scala.Unit,
+    widget: () => js.Object
   ): IgSplitterMethods = {
-    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, collapseAt = collapseAt, destroy = destroy, expandAt = expandAt, firstPanel = firstPanel, refreshLayout = refreshLayout, secondPanel = secondPanel, setFirstPanelSize = setFirstPanelSize, setSecondPanelSize = setSecondPanelSize, widget = widget)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = js.Any.fromFunction0(changeGlobalLanguage), changeGlobalRegional = js.Any.fromFunction0(changeGlobalRegional), changeLocale = js.Any.fromFunction1(changeLocale), collapseAt = js.Any.fromFunction1(collapseAt), destroy = js.Any.fromFunction0(destroy), expandAt = js.Any.fromFunction1(expandAt), firstPanel = js.Any.fromFunction0(firstPanel), refreshLayout = js.Any.fromFunction0(refreshLayout), secondPanel = js.Any.fromFunction0(secondPanel), setFirstPanelSize = js.Any.fromFunction1(setFirstPanelSize), setSecondPanelSize = js.Any.fromFunction1(setSecondPanelSize), widget = js.Any.fromFunction0(widget))
   
     __obj.asInstanceOf[IgSplitterMethods]
   }

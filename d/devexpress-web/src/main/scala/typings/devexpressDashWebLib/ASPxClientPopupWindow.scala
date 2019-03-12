@@ -83,23 +83,23 @@ trait ASPxClientPopupWindow extends js.Object {
 object ASPxClientPopupWindow {
   @scala.inline
   def apply(
-    GetFooterImageUrl: js.Function0[java.lang.String],
-    GetFooterNavigateUrl: js.Function0[java.lang.String],
-    GetFooterText: js.Function0[java.lang.String],
-    GetHeaderImageUrl: js.Function0[java.lang.String],
-    GetHeaderNavigateUrl: js.Function0[java.lang.String],
-    GetHeaderText: js.Function0[java.lang.String],
-    SetFooterImageUrl: js.Function1[java.lang.String, scala.Unit],
-    SetFooterNavigateUrl: js.Function1[java.lang.String, scala.Unit],
-    SetFooterText: js.Function1[java.lang.String, scala.Unit],
-    SetHeaderImageUrl: js.Function1[java.lang.String, scala.Unit],
-    SetHeaderNavigateUrl: js.Function1[java.lang.String, scala.Unit],
-    SetHeaderText: js.Function1[java.lang.String, scala.Unit],
+    GetFooterImageUrl: () => java.lang.String,
+    GetFooterNavigateUrl: () => java.lang.String,
+    GetFooterText: () => java.lang.String,
+    GetHeaderImageUrl: () => java.lang.String,
+    GetHeaderNavigateUrl: () => java.lang.String,
+    GetHeaderText: () => java.lang.String,
+    SetFooterImageUrl: java.lang.String => scala.Unit,
+    SetFooterNavigateUrl: java.lang.String => scala.Unit,
+    SetFooterText: java.lang.String => scala.Unit,
+    SetHeaderImageUrl: java.lang.String => scala.Unit,
+    SetHeaderNavigateUrl: java.lang.String => scala.Unit,
+    SetHeaderText: java.lang.String => scala.Unit,
     index: scala.Double,
     name: java.lang.String,
     popupControl: ASPxClientPopupControl
   ): ASPxClientPopupWindow = {
-    val __obj = js.Dynamic.literal(GetFooterImageUrl = GetFooterImageUrl, GetFooterNavigateUrl = GetFooterNavigateUrl, GetFooterText = GetFooterText, GetHeaderImageUrl = GetHeaderImageUrl, GetHeaderNavigateUrl = GetHeaderNavigateUrl, GetHeaderText = GetHeaderText, SetFooterImageUrl = SetFooterImageUrl, SetFooterNavigateUrl = SetFooterNavigateUrl, SetFooterText = SetFooterText, SetHeaderImageUrl = SetHeaderImageUrl, SetHeaderNavigateUrl = SetHeaderNavigateUrl, SetHeaderText = SetHeaderText, index = index, name = name, popupControl = popupControl)
+    val __obj = js.Dynamic.literal(GetFooterImageUrl = js.Any.fromFunction0(GetFooterImageUrl), GetFooterNavigateUrl = js.Any.fromFunction0(GetFooterNavigateUrl), GetFooterText = js.Any.fromFunction0(GetFooterText), GetHeaderImageUrl = js.Any.fromFunction0(GetHeaderImageUrl), GetHeaderNavigateUrl = js.Any.fromFunction0(GetHeaderNavigateUrl), GetHeaderText = js.Any.fromFunction0(GetHeaderText), SetFooterImageUrl = js.Any.fromFunction1(SetFooterImageUrl), SetFooterNavigateUrl = js.Any.fromFunction1(SetFooterNavigateUrl), SetFooterText = js.Any.fromFunction1(SetFooterText), SetHeaderImageUrl = js.Any.fromFunction1(SetHeaderImageUrl), SetHeaderNavigateUrl = js.Any.fromFunction1(SetHeaderNavigateUrl), SetHeaderText = js.Any.fromFunction1(SetHeaderText), index = index, name = name, popupControl = popupControl)
   
     __obj.asInstanceOf[ASPxClientPopupWindow]
   }

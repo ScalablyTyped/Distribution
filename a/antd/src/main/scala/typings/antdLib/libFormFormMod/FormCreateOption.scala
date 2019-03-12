@@ -27,24 +27,18 @@ trait FormCreateOption[T] extends js.Object {
 object FormCreateOption {
   @scala.inline
   def apply[T](
-    mapPropsToFields: js.Function1[/* props */ T, scala.Unit] = null,
+    mapPropsToFields: /* props */ T => scala.Unit = null,
     name: java.lang.String = null,
-    onFieldsChange: js.Function4[
-      /* props */ T, 
-      /* fields */ js.Object, 
-      /* allFields */ js.Any, 
-      /* add */ java.lang.String, 
-      scala.Unit
-    ] = null,
-    onValuesChange: js.Function3[/* props */ T, /* changedValues */ js.Any, /* allValues */ js.Any, scala.Unit] = null,
+    onFieldsChange: (/* props */ T, /* fields */ js.Object, /* allFields */ js.Any, /* add */ java.lang.String) => scala.Unit = null,
+    onValuesChange: (/* props */ T, /* changedValues */ js.Any, /* allValues */ js.Any) => scala.Unit = null,
     validateMessages: FormCreateOptionMessages = null,
     withRef: js.UndefOr[scala.Boolean] = js.undefined
   ): FormCreateOption[T] = {
     val __obj = js.Dynamic.literal()
-    if (mapPropsToFields != null) __obj.updateDynamic("mapPropsToFields")(mapPropsToFields)
+    if (mapPropsToFields != null) __obj.updateDynamic("mapPropsToFields")(js.Any.fromFunction1(mapPropsToFields))
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onFieldsChange != null) __obj.updateDynamic("onFieldsChange")(onFieldsChange)
-    if (onValuesChange != null) __obj.updateDynamic("onValuesChange")(onValuesChange)
+    if (onFieldsChange != null) __obj.updateDynamic("onFieldsChange")(js.Any.fromFunction4(onFieldsChange))
+    if (onValuesChange != null) __obj.updateDynamic("onValuesChange")(js.Any.fromFunction3(onValuesChange))
     if (validateMessages != null) __obj.updateDynamic("validateMessages")(validateMessages)
     if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef)
     __obj.asInstanceOf[FormCreateOption[T]]

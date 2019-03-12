@@ -81,14 +81,7 @@ trait InsertModalColumnDescription[TRow /* <: js.Object */] extends js.Object {
 object InsertModalColumnDescription {
   @scala.inline
   def apply[TRow /* <: js.Object */](
-    customInsertEditor: js.Function5[
-      InsertModalColumnDescription[TRow], 
-      EditableAttrs, 
-      java.lang.String, 
-      scala.Boolean, 
-      /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ js.Any, 
-      reactLib.reactMod.ReactNs.ReactElement[_] | scala.Boolean
-    ],
+    customInsertEditor: (InsertModalColumnDescription[TRow], EditableAttrs, java.lang.String, scala.Boolean, /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ js.Any) => reactLib.reactMod.ReactNs.ReactElement[_] | scala.Boolean,
     editable: scala.Boolean | (Editable[TRow, java.lang.String]) | (js.Function4[
       /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any, 
       /* row */ TRow, 
@@ -107,7 +100,7 @@ object InsertModalColumnDescription {
     ]) = null,
     isKey: js.UndefOr[scala.Boolean] = js.undefined
   ): InsertModalColumnDescription[TRow] = {
-    val __obj = js.Dynamic.literal(customInsertEditor = customInsertEditor, editable = editable.asInstanceOf[js.Any], field = field, hiddenOnInsert = hiddenOnInsert, keyValidator = keyValidator, name = name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(customInsertEditor = js.Any.fromFunction5(customInsertEditor), editable = editable.asInstanceOf[js.Any], field = field, hiddenOnInsert = hiddenOnInsert, keyValidator = keyValidator, name = name.asInstanceOf[js.Any])
     if (!js.isUndefined(autoValue)) __obj.updateDynamic("autoValue")(autoValue)
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (!js.isUndefined(isKey)) __obj.updateDynamic("isKey")(isKey)

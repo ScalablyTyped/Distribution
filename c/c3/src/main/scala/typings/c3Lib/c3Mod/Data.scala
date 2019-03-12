@@ -159,11 +159,7 @@ object Data {
   def apply(
     axes: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     classes: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    color: js.Function2[
-      /* color */ java.lang.String, 
-      /* d */ js.Any, 
-      java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor
-    ] = null,
+    color: (/* color */ java.lang.String, /* d */ js.Any) => java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor = null,
     colors: org.scalablytyped.runtime.StringDictionary[
       java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor | (js.Function1[/* d */ js.Any, java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor])
     ] = null,
@@ -176,11 +172,11 @@ object Data {
     labels: scala.Boolean | c3Lib.Anon_FormatI | c3Lib.Anon_FormatKey = null,
     mimeType: java.lang.String = null,
     names: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    onclick: js.Function2[/* d */ js.Any, /* element */ js.Any, scala.Unit] = null,
-    onmouseout: js.Function2[/* d */ js.Any, /* element */ js.UndefOr[js.Any], scala.Unit] = null,
-    onmouseover: js.Function2[/* d */ js.Any, /* element */ js.UndefOr[js.Any], scala.Unit] = null,
-    onselected: js.Function2[/* d */ js.Any, /* element */ js.UndefOr[js.Any], scala.Unit] = null,
-    onunselected: js.Function2[/* d */ js.Any, /* element */ js.UndefOr[js.Any], scala.Unit] = null,
+    onclick: (/* d */ js.Any, /* element */ js.Any) => scala.Unit = null,
+    onmouseout: (/* d */ js.Any, /* element */ js.UndefOr[js.Any]) => scala.Unit = null,
+    onmouseover: (/* d */ js.Any, /* element */ js.UndefOr[js.Any]) => scala.Unit = null,
+    onselected: (/* d */ js.Any, /* element */ js.UndefOr[js.Any]) => scala.Unit = null,
+    onunselected: (/* d */ js.Any, /* element */ js.UndefOr[js.Any]) => scala.Unit = null,
     order: java.lang.String | (js.Function1[/* repeated */ java.lang.String, scala.Unit]) = null,
     regions: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     rows: js.Array[PrimitiveArray] = null,
@@ -195,7 +191,7 @@ object Data {
     val __obj = js.Dynamic.literal()
     if (axes != null) __obj.updateDynamic("axes")(axes)
     if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(js.Any.fromFunction2(color))
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (columns != null) __obj.updateDynamic("columns")(columns)
     if (empty != null) __obj.updateDynamic("empty")(empty)
@@ -206,11 +202,11 @@ object Data {
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
     if (names != null) __obj.updateDynamic("names")(names)
-    if (onclick != null) __obj.updateDynamic("onclick")(onclick)
-    if (onmouseout != null) __obj.updateDynamic("onmouseout")(onmouseout)
-    if (onmouseover != null) __obj.updateDynamic("onmouseover")(onmouseover)
-    if (onselected != null) __obj.updateDynamic("onselected")(onselected)
-    if (onunselected != null) __obj.updateDynamic("onunselected")(onunselected)
+    if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction2(onclick))
+    if (onmouseout != null) __obj.updateDynamic("onmouseout")(js.Any.fromFunction2(onmouseout))
+    if (onmouseover != null) __obj.updateDynamic("onmouseover")(js.Any.fromFunction2(onmouseover))
+    if (onselected != null) __obj.updateDynamic("onselected")(js.Any.fromFunction2(onselected))
+    if (onunselected != null) __obj.updateDynamic("onunselected")(js.Any.fromFunction2(onunselected))
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (regions != null) __obj.updateDynamic("regions")(regions)
     if (rows != null) __obj.updateDynamic("rows")(rows)

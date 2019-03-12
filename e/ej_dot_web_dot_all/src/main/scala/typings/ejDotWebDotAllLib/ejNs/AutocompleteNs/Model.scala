@@ -221,24 +221,24 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    actionBegin: js.Function1[/* e */ ActionBeginEventArgs, scala.Unit] = null,
-    actionComplete: js.Function1[/* e */ ActionCompleteEventArgs, scala.Unit] = null,
-    actionFailure: js.Function1[/* e */ ActionFailureEventArgs, scala.Unit] = null,
-    actionSuccess: js.Function1[/* e */ ActionSuccessEventArgs, scala.Unit] = null,
+    actionBegin: /* e */ ActionBeginEventArgs => scala.Unit = null,
+    actionComplete: /* e */ ActionCompleteEventArgs => scala.Unit = null,
+    actionFailure: /* e */ ActionFailureEventArgs => scala.Unit = null,
+    actionSuccess: /* e */ ActionSuccessEventArgs => scala.Unit = null,
     addNewText: java.lang.String = null,
     allowAddNew: js.UndefOr[scala.Boolean] = js.undefined,
     allowSorting: js.UndefOr[scala.Boolean] = js.undefined,
     animateType: Animation | java.lang.String = null,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     caseSensitiveSearch: js.UndefOr[scala.Boolean] = js.undefined,
-    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
-    close: js.Function1[/* e */ CloseEventArgs, scala.Unit] = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    change: /* e */ ChangeEventArgs => scala.Unit = null,
+    close: /* e */ CloseEventArgs => scala.Unit = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
     dataSource: js.Any | js.Array[_] = null,
     delaySuggestionTimeout: scala.Int | scala.Double = null,
     delimiterChar: java.lang.String = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     emptyResultText: java.lang.String = null,
     enableAutoFill: js.UndefOr[scala.Boolean] = js.undefined,
     enableDistinct: js.UndefOr[scala.Boolean] = js.undefined,
@@ -247,8 +247,8 @@ object Model {
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     fields: Fields = null,
     filterType: java.lang.String = null,
-    focusIn: js.Function1[/* e */ FocusInEventArgs, scala.Unit] = null,
-    focusOut: js.Function1[/* e */ FocusOutEventArgs, scala.Unit] = null,
+    focusIn: /* e */ FocusInEventArgs => scala.Unit = null,
+    focusOut: /* e */ FocusOutEventArgs => scala.Unit = null,
     height: java.lang.String | scala.Double = null,
     highlightSearch: js.UndefOr[scala.Boolean] = js.undefined,
     itemsCount: scala.Int | scala.Double = null,
@@ -256,12 +256,12 @@ object Model {
     minCharacter: scala.Int | scala.Double = null,
     multiColumnSettings: MultiColumnSettings = null,
     multiSelectMode: MultiSelectMode | java.lang.String = null,
-    open: js.Function1[/* e */ OpenEventArgs, scala.Unit] = null,
+    open: /* e */ OpenEventArgs => scala.Unit = null,
     popupHeight: java.lang.String = null,
     popupWidth: java.lang.String = null,
     query: ejDotWebDotAllLib.ejNs.Query = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
-    select: js.Function1[/* e */ SelectEventArgs, scala.Unit] = null,
+    select: /* e */ SelectEventArgs => scala.Unit = null,
     selectValueByKey: scala.Int | scala.Double = null,
     showEmptyResultText: js.UndefOr[scala.Boolean] = js.undefined,
     showLoadingIcon: js.UndefOr[scala.Boolean] = js.undefined,
@@ -278,24 +278,24 @@ object Model {
     width: java.lang.String | scala.Double = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (actionBegin != null) __obj.updateDynamic("actionBegin")(actionBegin)
-    if (actionComplete != null) __obj.updateDynamic("actionComplete")(actionComplete)
-    if (actionFailure != null) __obj.updateDynamic("actionFailure")(actionFailure)
-    if (actionSuccess != null) __obj.updateDynamic("actionSuccess")(actionSuccess)
+    if (actionBegin != null) __obj.updateDynamic("actionBegin")(js.Any.fromFunction1(actionBegin))
+    if (actionComplete != null) __obj.updateDynamic("actionComplete")(js.Any.fromFunction1(actionComplete))
+    if (actionFailure != null) __obj.updateDynamic("actionFailure")(js.Any.fromFunction1(actionFailure))
+    if (actionSuccess != null) __obj.updateDynamic("actionSuccess")(js.Any.fromFunction1(actionSuccess))
     if (addNewText != null) __obj.updateDynamic("addNewText")(addNewText)
     if (!js.isUndefined(allowAddNew)) __obj.updateDynamic("allowAddNew")(allowAddNew)
     if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting)
     if (animateType != null) __obj.updateDynamic("animateType")(animateType.asInstanceOf[js.Any])
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (!js.isUndefined(caseSensitiveSearch)) __obj.updateDynamic("caseSensitiveSearch")(caseSensitiveSearch)
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (delaySuggestionTimeout != null) __obj.updateDynamic("delaySuggestionTimeout")(delaySuggestionTimeout.asInstanceOf[js.Any])
     if (delimiterChar != null) __obj.updateDynamic("delimiterChar")(delimiterChar)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (emptyResultText != null) __obj.updateDynamic("emptyResultText")(emptyResultText)
     if (!js.isUndefined(enableAutoFill)) __obj.updateDynamic("enableAutoFill")(enableAutoFill)
     if (!js.isUndefined(enableDistinct)) __obj.updateDynamic("enableDistinct")(enableDistinct)
@@ -304,8 +304,8 @@ object Model {
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (filterType != null) __obj.updateDynamic("filterType")(filterType)
-    if (focusIn != null) __obj.updateDynamic("focusIn")(focusIn)
-    if (focusOut != null) __obj.updateDynamic("focusOut")(focusOut)
+    if (focusIn != null) __obj.updateDynamic("focusIn")(js.Any.fromFunction1(focusIn))
+    if (focusOut != null) __obj.updateDynamic("focusOut")(js.Any.fromFunction1(focusOut))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(highlightSearch)) __obj.updateDynamic("highlightSearch")(highlightSearch)
     if (itemsCount != null) __obj.updateDynamic("itemsCount")(itemsCount.asInstanceOf[js.Any])
@@ -313,12 +313,12 @@ object Model {
     if (minCharacter != null) __obj.updateDynamic("minCharacter")(minCharacter.asInstanceOf[js.Any])
     if (multiColumnSettings != null) __obj.updateDynamic("multiColumnSettings")(multiColumnSettings)
     if (multiSelectMode != null) __obj.updateDynamic("multiSelectMode")(multiSelectMode.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (popupHeight != null) __obj.updateDynamic("popupHeight")(popupHeight)
     if (popupWidth != null) __obj.updateDynamic("popupWidth")(popupWidth)
     if (query != null) __obj.updateDynamic("query")(query)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (selectValueByKey != null) __obj.updateDynamic("selectValueByKey")(selectValueByKey.asInstanceOf[js.Any])
     if (!js.isUndefined(showEmptyResultText)) __obj.updateDynamic("showEmptyResultText")(showEmptyResultText)
     if (!js.isUndefined(showLoadingIcon)) __obj.updateDynamic("showLoadingIcon")(showLoadingIcon)

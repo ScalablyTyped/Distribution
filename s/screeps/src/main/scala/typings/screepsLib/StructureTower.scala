@@ -41,24 +41,24 @@ trait StructureTower
 object StructureTower {
   @scala.inline
   def apply(
-    attack: js.Function1[Creep, ScreepsReturnCode],
-    destroy: js.Function0[ScreepsReturnCode],
+    attack: Creep => ScreepsReturnCode,
+    destroy: () => ScreepsReturnCode,
     energy: scala.Double,
     energyCapacity: scala.Double,
-    heal: js.Function1[Creep, ScreepsReturnCode],
+    heal: Creep => ScreepsReturnCode,
     hits: scala.Double,
     hitsMax: scala.Double,
     id: java.lang.String,
-    isActive: js.Function0[scala.Boolean],
+    isActive: () => scala.Boolean,
     my: scala.Boolean,
-    notifyWhenAttacked: js.Function1[scala.Boolean, ScreepsReturnCode],
+    notifyWhenAttacked: scala.Boolean => ScreepsReturnCode,
     owner: Owner,
     pos: RoomPosition,
-    repair: js.Function1[Structure[StructureConstant], ScreepsReturnCode],
+    repair: Structure[StructureConstant] => ScreepsReturnCode,
     room: Room,
     structureType: STRUCTURE_TOWER
   ): StructureTower = {
-    val __obj = js.Dynamic.literal(attack = attack, destroy = destroy, energy = energy, energyCapacity = energyCapacity, heal = heal, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, my = my, notifyWhenAttacked = notifyWhenAttacked, owner = owner, pos = pos, repair = repair, room = room, structureType = structureType)
+    val __obj = js.Dynamic.literal(attack = js.Any.fromFunction1(attack), destroy = js.Any.fromFunction0(destroy), energy = energy, energyCapacity = energyCapacity, heal = js.Any.fromFunction1(heal), hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, repair = js.Any.fromFunction1(repair), room = room, structureType = structureType)
   
     __obj.asInstanceOf[StructureTower]
   }

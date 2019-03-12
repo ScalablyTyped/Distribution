@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "StandardInteractionsMixin")
 @js.native
 class StandardInteractionsMixin ()
-  extends fullcalendarLib.standardinteractionsmixinMod.default
+  extends fullcalendarLib.standardInteractionsMixinMod.default
 

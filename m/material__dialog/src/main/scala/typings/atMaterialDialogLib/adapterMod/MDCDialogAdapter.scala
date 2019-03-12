@@ -29,26 +29,26 @@ trait MDCDialogAdapter extends js.Object {
 object MDCDialogAdapter {
   @scala.inline
   def apply(
-    addBodyClass: js.Function1[java.lang.String, scala.Unit],
-    addClass: js.Function1[java.lang.String, scala.Unit],
-    deregisterDocumentKeydownHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    deregisterInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    deregisterSurfaceInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    deregisterTransitionEndHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    eventTargetHasClass: js.Function2[stdLib.EventTarget, java.lang.String, scala.Boolean],
-    isDialog: js.Function1[stdLib.Element, scala.Boolean],
-    notifyAccept: js.Function0[scala.Unit],
-    notifyCancel: js.Function0[scala.Unit],
-    registerDocumentKeydownHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    registerInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    registerSurfaceInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    registerTransitionEndHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    removeBodyClass: js.Function1[java.lang.String, scala.Unit],
-    removeClass: js.Function1[java.lang.String, scala.Unit],
-    trapFocusOnSurface: js.Function0[scala.Unit],
-    untrapFocusOnSurface: js.Function0[scala.Unit]
+    addBodyClass: java.lang.String => scala.Unit,
+    addClass: java.lang.String => scala.Unit,
+    deregisterDocumentKeydownHandler: stdLib.EventListener => scala.Unit,
+    deregisterInteractionHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    deregisterSurfaceInteractionHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    deregisterTransitionEndHandler: stdLib.EventListener => scala.Unit,
+    eventTargetHasClass: (stdLib.EventTarget, java.lang.String) => scala.Boolean,
+    isDialog: stdLib.Element => scala.Boolean,
+    notifyAccept: () => scala.Unit,
+    notifyCancel: () => scala.Unit,
+    registerDocumentKeydownHandler: stdLib.EventListener => scala.Unit,
+    registerInteractionHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    registerSurfaceInteractionHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    registerTransitionEndHandler: stdLib.EventListener => scala.Unit,
+    removeBodyClass: java.lang.String => scala.Unit,
+    removeClass: java.lang.String => scala.Unit,
+    trapFocusOnSurface: () => scala.Unit,
+    untrapFocusOnSurface: () => scala.Unit
   ): MDCDialogAdapter = {
-    val __obj = js.Dynamic.literal(addBodyClass = addBodyClass, addClass = addClass, deregisterDocumentKeydownHandler = deregisterDocumentKeydownHandler, deregisterInteractionHandler = deregisterInteractionHandler, deregisterSurfaceInteractionHandler = deregisterSurfaceInteractionHandler, deregisterTransitionEndHandler = deregisterTransitionEndHandler, eventTargetHasClass = eventTargetHasClass, isDialog = isDialog, notifyAccept = notifyAccept, notifyCancel = notifyCancel, registerDocumentKeydownHandler = registerDocumentKeydownHandler, registerInteractionHandler = registerInteractionHandler, registerSurfaceInteractionHandler = registerSurfaceInteractionHandler, registerTransitionEndHandler = registerTransitionEndHandler, removeBodyClass = removeBodyClass, removeClass = removeClass, trapFocusOnSurface = trapFocusOnSurface, untrapFocusOnSurface = untrapFocusOnSurface)
+    val __obj = js.Dynamic.literal(addBodyClass = js.Any.fromFunction1(addBodyClass), addClass = js.Any.fromFunction1(addClass), deregisterDocumentKeydownHandler = js.Any.fromFunction1(deregisterDocumentKeydownHandler), deregisterInteractionHandler = js.Any.fromFunction2(deregisterInteractionHandler), deregisterSurfaceInteractionHandler = js.Any.fromFunction2(deregisterSurfaceInteractionHandler), deregisterTransitionEndHandler = js.Any.fromFunction1(deregisterTransitionEndHandler), eventTargetHasClass = js.Any.fromFunction2(eventTargetHasClass), isDialog = js.Any.fromFunction1(isDialog), notifyAccept = js.Any.fromFunction0(notifyAccept), notifyCancel = js.Any.fromFunction0(notifyCancel), registerDocumentKeydownHandler = js.Any.fromFunction1(registerDocumentKeydownHandler), registerInteractionHandler = js.Any.fromFunction2(registerInteractionHandler), registerSurfaceInteractionHandler = js.Any.fromFunction2(registerSurfaceInteractionHandler), registerTransitionEndHandler = js.Any.fromFunction1(registerTransitionEndHandler), removeBodyClass = js.Any.fromFunction1(removeBodyClass), removeClass = js.Any.fromFunction1(removeClass), trapFocusOnSurface = js.Any.fromFunction0(trapFocusOnSurface), untrapFocusOnSurface = js.Any.fromFunction0(untrapFocusOnSurface))
   
     __obj.asInstanceOf[MDCDialogAdapter]
   }

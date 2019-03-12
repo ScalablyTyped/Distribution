@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
   */
 trait DDELinkInfo extends js.Object {
   /** A list of DDE items. Each item may contain its results from the last update. */
-  var Items: activexDashInteropLib.SafeArray[DDEItemInfo]
+  var Items: stdLib.SafeArray[DDEItemInfo]
   /** The DDE service name. */
   var Service: java.lang.String
   /** The DDE topic. */
@@ -27,11 +27,7 @@ trait DDELinkInfo extends js.Object {
 
 object DDELinkInfo {
   @scala.inline
-  def apply(
-    Items: activexDashInteropLib.SafeArray[DDEItemInfo],
-    Service: java.lang.String,
-    Topic: java.lang.String
-  ): DDELinkInfo = {
+  def apply(Items: stdLib.SafeArray[DDEItemInfo], Service: java.lang.String, Topic: java.lang.String): DDELinkInfo = {
     val __obj = js.Dynamic.literal(Items = Items, Service = Service, Topic = Topic)
   
     __obj.asInstanceOf[DDELinkInfo]

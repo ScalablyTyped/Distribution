@@ -13,12 +13,9 @@ trait UserEventsResource extends js.Object {
 object UserEventsResource {
   @scala.inline
   def apply(
-    log: js.Function1[
-      gapiDotClientDotPartnersLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LogUserEventResponse]
-    ]
+    log: gapiDotClientDotPartnersLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[LogUserEventResponse]
   ): UserEventsResource = {
-    val __obj = js.Dynamic.literal(log = log)
+    val __obj = js.Dynamic.literal(log = js.Any.fromFunction1(log))
   
     __obj.asInstanceOf[UserEventsResource]
   }

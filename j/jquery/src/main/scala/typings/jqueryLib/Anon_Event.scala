@@ -13,9 +13,9 @@ trait Anon_Event[TTarget]
 object Anon_Event {
   @scala.inline
   def apply[TTarget](
-    preDispatch: js.Function2[TTarget, jqueryLib.JQueryNs.Event, jqueryLib.jqueryLibNumbers.`false` | scala.Unit]
+    preDispatch: (TTarget, jqueryLib.JQueryNs.Event) => jqueryLib.jqueryLibNumbers.`false` | scala.Unit
   ): Anon_Event[TTarget] = {
-    val __obj = js.Dynamic.literal(preDispatch = preDispatch)
+    val __obj = js.Dynamic.literal(preDispatch = js.Any.fromFunction2(preDispatch))
   
     __obj.asInstanceOf[Anon_Event[TTarget]]
   }

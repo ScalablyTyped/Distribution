@@ -20,13 +20,13 @@ object IuploadImage {
   def apply(
     isShowProgressTips: scala.Double,
     localId: java.lang.String,
-    success: js.Function1[jweixinLib.Anon_ServerId, scala.Unit],
-    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+    success: jweixinLib.Anon_ServerId => scala.Unit,
+    complete: /* repeated */ js.Any => scala.Unit = null,
+    fail: /* repeated */ js.Any => scala.Unit = null
   ): IuploadImage = {
-    val __obj = js.Dynamic.literal(isShowProgressTips = isShowProgressTips, localId = localId, success = success)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    val __obj = js.Dynamic.literal(isShowProgressTips = isShowProgressTips, localId = localId, success = js.Any.fromFunction1(success))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[IuploadImage]
   }
 }

@@ -12,11 +12,8 @@ trait SchemaUtils extends js.Object {
 
 object SchemaUtils {
   @scala.inline
-  def apply(
-    isSingleProperty: js.Function1[Schema[js.Object], scala.Boolean],
-    process: js.Function1[Schema[js.Object], scala.Boolean]
-  ): SchemaUtils = {
-    val __obj = js.Dynamic.literal(isSingleProperty = isSingleProperty, process = process)
+  def apply(isSingleProperty: Schema[js.Object] => scala.Boolean, process: Schema[js.Object] => scala.Boolean): SchemaUtils = {
+    val __obj = js.Dynamic.literal(isSingleProperty = js.Any.fromFunction1(isSingleProperty), process = js.Any.fromFunction1(process))
   
     __obj.asInstanceOf[SchemaUtils]
   }

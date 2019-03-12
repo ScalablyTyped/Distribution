@@ -15,13 +15,13 @@ trait PageableInitialOptions extends js.Object {
 object PageableInitialOptions {
   @scala.inline
   def apply(
-    comparator: js.Function1[/* repeated */ js.Any, scala.Double] = null,
+    comparator: /* repeated */ js.Any => scala.Double = null,
     full: js.UndefOr[scala.Boolean] = js.undefined,
     queryParam: PageableQueryParams = null,
     state: PageableState = null
   ): PageableInitialOptions = {
     val __obj = js.Dynamic.literal()
-    if (comparator != null) __obj.updateDynamic("comparator")(comparator)
+    if (comparator != null) __obj.updateDynamic("comparator")(js.Any.fromFunction1(comparator))
     if (!js.isUndefined(full)) __obj.updateDynamic("full")(full)
     if (queryParam != null) __obj.updateDynamic("queryParam")(queryParam)
     if (state != null) __obj.updateDynamic("state")(state)

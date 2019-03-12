@@ -17,13 +17,13 @@ trait Dropdown extends js.Object {
 object Dropdown {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    getPositionClass: js.Function0[java.lang.String],
-    open: js.Function0[scala.Unit],
-    toggle: js.Function0[scala.Unit]
+    close: () => scala.Unit,
+    destroy: () => scala.Unit,
+    getPositionClass: () => java.lang.String,
+    open: () => scala.Unit,
+    toggle: () => scala.Unit
   ): Dropdown = {
-    val __obj = js.Dynamic.literal(close = close, destroy = destroy, getPositionClass = getPositionClass, open = open, toggle = toggle)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), getPositionClass = js.Any.fromFunction0(getPositionClass), open = js.Any.fromFunction0(open), toggle = js.Any.fromFunction0(toggle))
   
     __obj.asInstanceOf[Dropdown]
   }

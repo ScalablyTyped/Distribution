@@ -155,11 +155,11 @@ object DrawerProperties {
     elevation: scala.Int | scala.Double = null,
     initializeOpen: scala.Int | scala.Double = null,
     negotiatePan: js.UndefOr[scala.Boolean] = js.undefined,
-    onClose: js.Function0[scala.Unit] = null,
-    onCloseStart: js.Function0[scala.Unit] = null,
-    onDragStart: js.Function0[scala.Unit] = null,
-    onOpen: js.Function0[scala.Unit] = null,
-    onOpenStart: js.Function0[scala.Unit] = null,
+    onClose: () => scala.Unit = null,
+    onCloseStart: () => scala.Unit = null,
+    onDragStart: () => scala.Unit = null,
+    onOpen: () => scala.Unit = null,
+    onOpenStart: () => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     openDrawerOffset: (js.Function1[/* viewport */ reactDashNativeLib.reactDashNativeMod.ScaledSize, scala.Double]) | scala.Double = null,
     panCloseMask: scala.Int | scala.Double = null,
@@ -170,7 +170,7 @@ object DrawerProperties {
     tapToClose: js.UndefOr[scala.Boolean] = js.undefined,
     tweenDuration: scala.Int | scala.Double = null,
     tweenEasing: TweenFunctions = null,
-    tweenHandler: js.Function1[/* ratio */ scala.Double, NestedViewStyles] = null,
+    tweenHandler: /* ratio */ scala.Double => NestedViewStyles = null,
     `type`: reactDashNativeDashDrawerLib.reactDashNativeDashDrawerLibStrings.displace | reactDashNativeDashDrawerLib.reactDashNativeDashDrawerLibStrings.overlay | reactDashNativeDashDrawerLib.reactDashNativeDashDrawerLibStrings.static = null,
     useInteractionManager: js.UndefOr[scala.Boolean] = js.undefined
   ): DrawerProperties = {
@@ -186,11 +186,11 @@ object DrawerProperties {
     if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
     if (initializeOpen != null) __obj.updateDynamic("initializeOpen")(initializeOpen.asInstanceOf[js.Any])
     if (!js.isUndefined(negotiatePan)) __obj.updateDynamic("negotiatePan")(negotiatePan)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onCloseStart != null) __obj.updateDynamic("onCloseStart")(onCloseStart)
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
-    if (onOpenStart != null) __obj.updateDynamic("onOpenStart")(onOpenStart)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
+    if (onCloseStart != null) __obj.updateDynamic("onCloseStart")(js.Any.fromFunction0(onCloseStart))
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction0(onDragStart))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
+    if (onOpenStart != null) __obj.updateDynamic("onOpenStart")(js.Any.fromFunction0(onOpenStart))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (openDrawerOffset != null) __obj.updateDynamic("openDrawerOffset")(openDrawerOffset.asInstanceOf[js.Any])
     if (panCloseMask != null) __obj.updateDynamic("panCloseMask")(panCloseMask.asInstanceOf[js.Any])
@@ -201,7 +201,7 @@ object DrawerProperties {
     if (!js.isUndefined(tapToClose)) __obj.updateDynamic("tapToClose")(tapToClose)
     if (tweenDuration != null) __obj.updateDynamic("tweenDuration")(tweenDuration.asInstanceOf[js.Any])
     if (tweenEasing != null) __obj.updateDynamic("tweenEasing")(tweenEasing)
-    if (tweenHandler != null) __obj.updateDynamic("tweenHandler")(tweenHandler)
+    if (tweenHandler != null) __obj.updateDynamic("tweenHandler")(js.Any.fromFunction1(tweenHandler))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(useInteractionManager)) __obj.updateDynamic("useInteractionManager")(useInteractionManager)
     __obj.asInstanceOf[DrawerProperties]

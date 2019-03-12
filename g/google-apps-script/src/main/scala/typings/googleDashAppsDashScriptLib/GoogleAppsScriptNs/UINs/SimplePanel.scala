@@ -35,33 +35,29 @@ trait SimplePanel extends js.Object {
 object SimplePanel {
   @scala.inline
   def apply(
-    add: js.Function1[Widget, SimplePanel],
-    addStyleDependentName: js.Function1[java.lang.String, SimplePanel],
-    addStyleName: js.Function1[java.lang.String, SimplePanel],
-    clear: js.Function0[SimplePanel],
-    getId: js.Function0[java.lang.String],
-    getTag: js.Function0[java.lang.String],
-    getType: js.Function0[java.lang.String],
-    setHeight: js.Function1[java.lang.String, SimplePanel],
-    setId: js.Function1[java.lang.String, SimplePanel],
-    setLayoutData: js.Function1[js.Object, SimplePanel],
-    setPixelSize: js.Function2[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      SimplePanel
-    ],
-    setSize: js.Function2[java.lang.String, java.lang.String, SimplePanel],
-    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, SimplePanel],
-    setStyleAttributes: js.Function1[js.Object, SimplePanel],
-    setStyleName: js.Function1[java.lang.String, SimplePanel],
-    setStylePrimaryName: js.Function1[java.lang.String, SimplePanel],
-    setTag: js.Function1[java.lang.String, SimplePanel],
-    setTitle: js.Function1[java.lang.String, SimplePanel],
-    setVisible: js.Function1[scala.Boolean, SimplePanel],
-    setWidget: js.Function1[Widget, SimplePanel],
-    setWidth: js.Function1[java.lang.String, SimplePanel]
+    add: Widget => SimplePanel,
+    addStyleDependentName: java.lang.String => SimplePanel,
+    addStyleName: java.lang.String => SimplePanel,
+    clear: () => SimplePanel,
+    getId: () => java.lang.String,
+    getTag: () => java.lang.String,
+    getType: () => java.lang.String,
+    setHeight: java.lang.String => SimplePanel,
+    setId: java.lang.String => SimplePanel,
+    setLayoutData: js.Object => SimplePanel,
+    setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => SimplePanel,
+    setSize: (java.lang.String, java.lang.String) => SimplePanel,
+    setStyleAttribute: (java.lang.String, java.lang.String) => SimplePanel,
+    setStyleAttributes: js.Object => SimplePanel,
+    setStyleName: java.lang.String => SimplePanel,
+    setStylePrimaryName: java.lang.String => SimplePanel,
+    setTag: java.lang.String => SimplePanel,
+    setTitle: java.lang.String => SimplePanel,
+    setVisible: scala.Boolean => SimplePanel,
+    setWidget: Widget => SimplePanel,
+    setWidth: java.lang.String => SimplePanel
   ): SimplePanel = {
-    val __obj = js.Dynamic.literal(add = add, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, clear = clear, getId = getId, getTag = getTag, getType = getType, setHeight = setHeight, setId = setId, setLayoutData = setLayoutData, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setTitle = setTitle, setVisible = setVisible, setWidget = setWidget, setWidth = setWidth)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), addStyleDependentName = js.Any.fromFunction1(addStyleDependentName), addStyleName = js.Any.fromFunction1(addStyleName), clear = js.Any.fromFunction0(clear), getId = js.Any.fromFunction0(getId), getTag = js.Any.fromFunction0(getTag), getType = js.Any.fromFunction0(getType), setHeight = js.Any.fromFunction1(setHeight), setId = js.Any.fromFunction1(setId), setLayoutData = js.Any.fromFunction1(setLayoutData), setPixelSize = js.Any.fromFunction2(setPixelSize), setSize = js.Any.fromFunction2(setSize), setStyleAttribute = js.Any.fromFunction2(setStyleAttribute), setStyleAttributes = js.Any.fromFunction1(setStyleAttributes), setStyleName = js.Any.fromFunction1(setStyleName), setStylePrimaryName = js.Any.fromFunction1(setStylePrimaryName), setTag = js.Any.fromFunction1(setTag), setTitle = js.Any.fromFunction1(setTitle), setVisible = js.Any.fromFunction1(setVisible), setWidget = js.Any.fromFunction1(setWidget), setWidth = js.Any.fromFunction1(setWidth))
   
     __obj.asInstanceOf[SimplePanel]
   }

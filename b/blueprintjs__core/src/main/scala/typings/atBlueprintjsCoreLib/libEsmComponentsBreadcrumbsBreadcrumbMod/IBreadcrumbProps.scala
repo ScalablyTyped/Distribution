@@ -21,10 +21,7 @@ object IBreadcrumbProps {
     href: java.lang.String = null,
     icon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
     intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
-    onClick: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
+    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
     target: java.lang.String = null,
     text: reactLib.reactMod.ReactNs.ReactNode = null
   ): IBreadcrumbProps = {
@@ -35,7 +32,7 @@ object IBreadcrumbProps {
     if (href != null) __obj.updateDynamic("href")(href)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (intent != null) __obj.updateDynamic("intent")(intent)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (target != null) __obj.updateDynamic("target")(target)
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBreadcrumbProps]

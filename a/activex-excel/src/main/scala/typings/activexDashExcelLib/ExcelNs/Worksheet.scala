@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 - activexDashExcelLib.ExcelNs.AddSheetResult because Already inherited */ @JSGlobal("Excel.Worksheet")
 @js.native
 class Worksheet protected () extends Sheet {
-  val Application: Application = js.native
-  val AutoFilter: AutoFilter = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
+  val AutoFilter: activexDashExcelLib.ExcelNs.AutoFilter = js.native
   var AutoFilterMode: scala.Boolean = js.native
   @JSName("Cells")
   val Cells_Original: Range = js.native
@@ -22,8 +22,8 @@ class Worksheet protected () extends Sheet {
   @JSName("Comments")
   val Comments_Original: Comments = js.native
   val ConsolidationFunction: XlConsolidationFunction = js.native
-  val ConsolidationOptions: activexDashInteropLib.SafeArray[scala.Boolean] = js.native
-  val ConsolidationSources: js.UndefOr[activexDashInteropLib.SafeArray[java.lang.String]] = js.native
+  val ConsolidationOptions: stdLib.SafeArray[scala.Boolean] = js.native
+  val ConsolidationSources: js.UndefOr[stdLib.SafeArray[java.lang.String]] = js.native
   val Creator: XlCreator = js.native
   @JSName("CustomProperties")
   val CustomProperties_Original: CustomProperties = js.native
@@ -56,15 +56,15 @@ class Worksheet protected () extends Sheet {
   var OnEntry: java.lang.String = js.native
   var OnSheetActivate: java.lang.String = js.native
   var OnSheetDeactivate: java.lang.String = js.native
-  val Outline: Outline = js.native
-  val PageSetup: PageSetup = js.native
+  val Outline: activexDashExcelLib.ExcelNs.Outline = js.native
+  val PageSetup: activexDashExcelLib.ExcelNs.PageSetup = js.native
   val Parent: js.Any = js.native
   val Previous: Worksheet = js.native
   val PrintedCommentPages: scala.Double = js.native
   val ProtectContents: scala.Boolean = js.native
   val ProtectDrawingObjects: scala.Boolean = js.native
   val ProtectScenarios: scala.Boolean = js.native
-  val Protection: Protection = js.native
+  val Protection: activexDashExcelLib.ExcelNs.Protection = js.native
   val ProtectionMode: scala.Boolean = js.native
   @JSName("QueryTables")
   val QueryTables_Original: QueryTables = js.native
@@ -77,10 +77,10 @@ class Worksheet protected () extends Sheet {
   val Shapes_Original: Shapes = js.native
   @JSName("SmartTags")
   val SmartTags_Original: SmartTags = js.native
-  val Sort: Sort = js.native
+  val Sort: activexDashExcelLib.ExcelNs.Sort = js.native
   val StandardHeight: scala.Double = js.native
   var StandardWidth: scala.Double = js.native
-  val Tab: Tab = js.native
+  val Tab: activexDashExcelLib.ExcelNs.Tab = js.native
   var TransitionExpEval: scala.Boolean = js.native
   var TransitionFormEntry: scala.Boolean = js.native
   val Type: XlSheetType = js.native
@@ -100,10 +100,10 @@ class Worksheet protected () extends Sheet {
   def Cells(Address: java.lang.String): Range = js.native
   def Cells(RowIndex: scala.Double): Range = js.native
   def Cells(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native
-  def ChartObjects(): ChartObjects = js.native
-  def ChartObjects(Index: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): ChartObjects = js.native
+  def ChartObjects(): activexDashExcelLib.ExcelNs.ChartObjects = js.native
   def ChartObjects(Index: java.lang.String): ChartObject = js.native
   def ChartObjects(Index: scala.Double): ChartObject = js.native
+  def ChartObjects(Index: stdLib.SafeArray[java.lang.String | scala.Double]): activexDashExcelLib.ExcelNs.ChartObjects = js.native
   def CheckBoxes(): js.Any = js.native
   def CheckBoxes(Index: js.Any): js.Any = js.native
   def CheckSpelling(): scala.Unit = js.native
@@ -176,7 +176,7 @@ class Worksheet protected () extends Sheet {
     RefersTo: java.lang.String
   ): Name = js.native
   def Names(Index: scala.Double): Name = js.native
-  def OLEObjects(): OLEObjects = js.native
+  def OLEObjects(): activexDashExcelLib.ExcelNs.OLEObjects = js.native
   def OLEObjects(Index: java.lang.String): OLEObject = js.native
   def OLEObjects(Index: scala.Double): OLEObject = js.native
   def OptionButtons(): js.Any = js.native
@@ -391,12 +391,12 @@ class Worksheet protected () extends Sheet {
   ): scala.Unit = js.native
   def QueryTables(Index: java.lang.String): QueryTable = js.native
   def QueryTables(Index: scala.Double): QueryTable = js.native
-  def Range(Cell1: Range): Range = js.native
-  def Range(Cell1: Range, Cell2: Range): Range = js.native
-  def Range(Cell1: Range, Cell2: java.lang.String): Range = js.native
-  def Range(Cell1: java.lang.String): Range = js.native
-  def Range(Cell1: java.lang.String, Cell2: Range): Range = js.native
-  def Range(Cell1: java.lang.String, Cell2: java.lang.String): Range = js.native
+  def Range(Cell1: Range): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(Cell1: Range, Cell2: Range): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(Cell1: Range, Cell2: java.lang.String): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(Cell1: java.lang.String): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(Cell1: java.lang.String, Cell2: Range): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(Cell1: java.lang.String, Cell2: java.lang.String): activexDashExcelLib.ExcelNs.Range = js.native
   def Rectangles(): js.Any = js.native
   def Rectangles(Index: js.Any): js.Any = js.native
   def ResetAllPageBreaks(): scala.Unit = js.native
@@ -415,10 +415,10 @@ class Worksheet protected () extends Sheet {
     TextVisualLayout: js.UndefOr[js.Any],
     Local: js.UndefOr[scala.Boolean]
   ): scala.Unit = js.native
-  def Scenarios(): Scenarios = js.native
-  def Scenarios(Index: activexDashInteropLib.SafeArray[scala.Double | java.lang.String]): Scenarios = js.native
+  def Scenarios(): activexDashExcelLib.ExcelNs.Scenarios = js.native
   def Scenarios(Index: java.lang.String): Scenario = js.native
   def Scenarios(Index: scala.Double): Scenario = js.native
+  def Scenarios(Index: stdLib.SafeArray[scala.Double | java.lang.String]): activexDashExcelLib.ExcelNs.Scenarios = js.native
   def Scripts(Index: js.Any): activexDashOfficeLib.OfficeNs.Script = js.native
   def ScrollBars(): js.Any = js.native
   def ScrollBars(Index: js.Any): js.Any = js.native

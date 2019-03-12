@@ -21,28 +21,20 @@ trait ExportFilter
 object ExportFilter {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    characters: js.Function1[java.lang.String, scala.Unit],
-    endDocument: js.Function0[scala.Unit],
-    endElement: js.Function1[java.lang.String, scala.Unit],
-    exporter: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      scala.Boolean
-    ],
-    ignorableWhitespace: js.Function1[java.lang.String, scala.Unit],
-    processingInstruction: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setDocumentLocator: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XLocator, scala.Unit],
-    startDocument: js.Function0[scala.Unit],
-    startElement: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XAttributeList, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    characters: java.lang.String => scala.Unit,
+    endDocument: () => scala.Unit,
+    endElement: java.lang.String => scala.Unit,
+    exporter: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]) => scala.Boolean,
+    ignorableWhitespace: java.lang.String => scala.Unit,
+    processingInstruction: (java.lang.String, java.lang.String) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setDocumentLocator: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XLocator => scala.Unit,
+    startDocument: () => scala.Unit,
+    startElement: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XAttributeList) => scala.Unit
   ): ExportFilter = {
-    val __obj = js.Dynamic.literal(acquire = acquire, characters = characters, endDocument = endDocument, endElement = endElement, exporter = exporter, ignorableWhitespace = ignorableWhitespace, processingInstruction = processingInstruction, queryInterface = queryInterface, release = release, setDocumentLocator = setDocumentLocator, startDocument = startDocument, startElement = startElement)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), characters = js.Any.fromFunction1(characters), endDocument = js.Any.fromFunction0(endDocument), endElement = js.Any.fromFunction1(endElement), exporter = js.Any.fromFunction2(exporter), ignorableWhitespace = js.Any.fromFunction1(ignorableWhitespace), processingInstruction = js.Any.fromFunction2(processingInstruction), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDocumentLocator = js.Any.fromFunction1(setDocumentLocator), startDocument = js.Any.fromFunction0(startDocument), startElement = js.Any.fromFunction2(startElement))
   
     __obj.asInstanceOf[ExportFilter]
   }

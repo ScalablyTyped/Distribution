@@ -9,7 +9,7 @@ package object NodeSpriteGeneratorNs {
   type LayoutFunc = js.Function3[
     /* images */ js.Array[Image], 
     /* options */ LayoutOption, 
-    /* callback */ js.Function2[/* error */ nodeLib.Error, /* layout */ Layout, scala.Unit], 
+    /* callback */ js.Function2[/* error */ stdLib.Error, /* layout */ Layout, scala.Unit], 
     scala.Unit
   ]
   type StylesheetFunc = js.Function5[
@@ -17,7 +17,7 @@ package object NodeSpriteGeneratorNs {
     /* stylesheetPath */ java.lang.String, 
     /* spritePath */ java.lang.String, 
     /* options */ StylesheetOption, 
-    /* callback */ js.Function1[/* error */ nodeLib.Error, scala.Unit], 
+    /* callback */ js.Function1[/* error */ stdLib.Error, scala.Unit], 
     scala.Unit
   ]
 }

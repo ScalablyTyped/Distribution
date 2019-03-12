@@ -15,16 +15,10 @@ trait Version_headersResource extends js.Object {
 object Version_headersResource {
   @scala.inline
   def apply(
-    latest: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ContainerVersionHeader]
-    ],
-    list: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFieldsIncludeDeleted, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListContainerVersionsResponse]
-    ]
+    latest: gapiDotClientDotTagmanagerLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ContainerVersionHeader],
+    list: gapiDotClientDotTagmanagerLib.Anon_AltFieldsIncludeDeleted => gapiDotClientLib.gapiNs.clientNs.Request[ListContainerVersionsResponse]
   ): Version_headersResource = {
-    val __obj = js.Dynamic.literal(latest = latest, list = list)
+    val __obj = js.Dynamic.literal(latest = js.Any.fromFunction1(latest), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[Version_headersResource]
   }

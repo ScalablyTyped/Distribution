@@ -11,12 +11,7 @@ object ^ extends js.Object {
   val EjectDeviceResultCode: chromeDashAppsLib.Anon_FAILURE = js.native
   val StorageUnitType: chromeDashAppsLib.Anon_FIXED = js.native
   /** Fired when a new removable storage is attached to the system. */
-  val onAttached: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[
-      /* info */ chromeDashAppsLib.chromeNs.systemNs.storageNs.StorageUnitInfo, 
-      scala.Unit
-    ]
-  ] = js.native
+  val onAttached: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* info */ StorageUnitInfo, scala.Unit]] = js.native
   /** Fired when a removable storage is detached from the system. */
   val onDetached: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* id */ java.lang.String, scala.Unit]] = js.native
   /**
@@ -51,19 +46,8 @@ object ^ extends js.Object {
     * Get the available capacity of a specified |id| storage device. The |id| is the transient device ID from StorageUnitInfo.
     * @since Dev channel only.
     */
-  def getAvailableCapacity(
-    id: java.lang.String,
-    callback: js.Function1[
-      /* info */ chromeDashAppsLib.chromeNs.systemNs.storageNs.StorageCapacityInfo, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def getAvailableCapacity(id: java.lang.String, callback: js.Function1[/* info */ StorageCapacityInfo, scala.Unit]): scala.Unit = js.native
   /** Get the storage information from the system. The argument passed to the callback is an array of StorageUnitInfo objects. */
-  def getInfo(
-    callback: js.Function1[
-      /* info */ js.Array[chromeDashAppsLib.chromeNs.systemNs.storageNs.StorageUnitInfo], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def getInfo(callback: js.Function1[/* info */ js.Array[StorageUnitInfo], scala.Unit]): scala.Unit = js.native
 }
 

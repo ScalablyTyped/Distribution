@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - reactDashFoundationLib.componentsSliderMod.SliderCommonProps because var conflicts: className. Inlined isVertical, isDisabled */ trait SliderProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] {
   var fill: js.UndefOr[SliderFillProps] = js.undefined
   var handle: js.UndefOr[SliderHandleProps] = js.undefined
   var initialStart: js.UndefOr[scala.Double] = js.undefined
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 object SliderProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
     SliderCommonProps: SliderCommonProps = null,
     fill: SliderFillProps = null,
     handle: SliderHandleProps = null,

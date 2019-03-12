@@ -35,17 +35,17 @@ trait SilverlightControl extends Control {
 object SilverlightControl {
   @scala.inline
   def apply(
-    getControlType: js.Function0[ControlType | java.lang.String],
-    getData: js.Function0[java.lang.String],
-    getLabel: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getObject: js.Function0[stdLib.HTMLObjectElement],
-    getParent: js.Function0[Section],
-    getVisible: js.Function0[scala.Boolean],
-    setData: js.Function1[java.lang.String, scala.Unit],
-    setLabel: js.Function1[java.lang.String, scala.Unit]
+    getControlType: () => ControlType | java.lang.String,
+    getData: () => java.lang.String,
+    getLabel: () => java.lang.String,
+    getName: () => java.lang.String,
+    getObject: () => stdLib.HTMLObjectElement,
+    getParent: () => Section,
+    getVisible: () => scala.Boolean,
+    setData: java.lang.String => scala.Unit,
+    setLabel: java.lang.String => scala.Unit
   ): SilverlightControl = {
-    val __obj = js.Dynamic.literal(getControlType = getControlType, getData = getData, getLabel = getLabel, getName = getName, getObject = getObject, getParent = getParent, getVisible = getVisible, setData = setData, setLabel = setLabel)
+    val __obj = js.Dynamic.literal(getControlType = js.Any.fromFunction0(getControlType), getData = js.Any.fromFunction0(getData), getLabel = js.Any.fromFunction0(getLabel), getName = js.Any.fromFunction0(getName), getObject = js.Any.fromFunction0(getObject), getParent = js.Any.fromFunction0(getParent), getVisible = js.Any.fromFunction0(getVisible), setData = js.Any.fromFunction1(setData), setLabel = js.Any.fromFunction1(setLabel))
   
     __obj.asInstanceOf[SilverlightControl]
   }

@@ -17,10 +17,10 @@ object IKookiesProvider {
   def apply(
     config: Config,
     defaults: Options,
-    setConfig: js.Function1[Config, scala.Unit],
-    setDefaults: js.Function1[Options, scala.Unit]
+    setConfig: Config => scala.Unit,
+    setDefaults: Options => scala.Unit
   ): IKookiesProvider = {
-    val __obj = js.Dynamic.literal(config = config, defaults = defaults, setConfig = setConfig, setDefaults = setDefaults)
+    val __obj = js.Dynamic.literal(config = config, defaults = defaults, setConfig = js.Any.fromFunction1(setConfig), setDefaults = js.Any.fromFunction1(setDefaults))
   
     __obj.asInstanceOf[IKookiesProvider]
   }

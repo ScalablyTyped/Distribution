@@ -16,16 +16,16 @@ object UploadVoiceConfig {
   @scala.inline
   def apply(
     localId: java.lang.String,
-    success: js.Function1[js.Any, scala.Unit],
-    cancel: js.Function0[scala.Unit] = null,
-    complete: js.Function1[/* res */ js.UndefOr[js.Any], scala.Unit] = null,
-    fail: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit] = null,
+    success: js.Any => scala.Unit,
+    cancel: () => scala.Unit = null,
+    complete: /* res */ js.UndefOr[js.Any] => scala.Unit = null,
+    fail: /* error */ js.UndefOr[js.Any] => scala.Unit = null,
     isShowProgressTips: scala.Int | scala.Double = null
   ): UploadVoiceConfig = {
-    val __obj = js.Dynamic.literal(localId = localId, success = success)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    val __obj = js.Dynamic.literal(localId = localId, success = js.Any.fromFunction1(success))
+    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (isShowProgressTips != null) __obj.updateDynamic("isShowProgressTips")(isShowProgressTips.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadVoiceConfig]
   }

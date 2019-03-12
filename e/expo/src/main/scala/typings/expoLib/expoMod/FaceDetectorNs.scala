@@ -25,9 +25,9 @@ object FaceDetectorNs extends js.Object {
   }
   
   trait _Constants extends js.Object {
-    var Classifications: Classifications
-    var Landmarks: Landmarks
-    var Mode: Mode
+    var Classifications: expoLib.expoMod.FaceDetectorNs.Classifications
+    var Landmarks: expoLib.expoMod.FaceDetectorNs.Landmarks
+    var Mode: expoLib.expoMod.FaceDetectorNs.Mode
   }
   
   trait _Shared extends js.Object {

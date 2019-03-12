@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
     *
     * Each entry specifies properties that state the row/column to be sorted and how that should be done.
     */
-  var SortFields: activexDashInteropLib.SafeArray[TableSortField]
+  var SortFields: stdLib.SafeArray[TableSortField]
 }
 
 object TableSortDescriptor2 {
@@ -34,7 +34,7 @@ object TableSortDescriptor2 {
   def apply(
     IsSortColumns: scala.Boolean,
     MaxSortFieldsCount: scala.Double,
-    SortFields: activexDashInteropLib.SafeArray[TableSortField]
+    SortFields: stdLib.SafeArray[TableSortField]
   ): TableSortDescriptor2 = {
     val __obj = js.Dynamic.literal(IsSortColumns = IsSortColumns, MaxSortFieldsCount = MaxSortFieldsCount, SortFields = SortFields)
   

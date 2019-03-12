@@ -13,8 +13,8 @@ trait NoScroll extends js.Object {
 
 object NoScroll {
   @scala.inline
-  def apply(off: js.Function0[scala.Unit], on: js.Function0[scala.Unit], toggle: js.Function0[scala.Unit]): NoScroll = {
-    val __obj = js.Dynamic.literal(off = off, on = on, toggle = toggle)
+  def apply(off: () => scala.Unit, on: () => scala.Unit, toggle: () => scala.Unit): NoScroll = {
+    val __obj = js.Dynamic.literal(off = js.Any.fromFunction0(off), on = js.Any.fromFunction0(on), toggle = js.Any.fromFunction0(toggle))
   
     __obj.asInstanceOf[NoScroll]
   }

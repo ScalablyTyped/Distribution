@@ -24,12 +24,12 @@ trait RecaptchaVerifier_Instance extends ApplicationVerifier {
 object RecaptchaVerifier_Instance {
   @scala.inline
   def apply(
-    clear: js.Function0[scala.Unit],
-    render: js.Function0[js.Promise[scala.Double]],
+    clear: () => scala.Unit,
+    render: () => js.Promise[scala.Double],
     `type`: java.lang.String,
-    verify: js.Function0[js.Promise[java.lang.String]]
+    verify: () => js.Promise[java.lang.String]
   ): RecaptchaVerifier_Instance = {
-    val __obj = js.Dynamic.literal(clear = clear, render = render, verify = verify)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), render = js.Any.fromFunction0(render), verify = js.Any.fromFunction0(verify))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RecaptchaVerifier_Instance]
   }

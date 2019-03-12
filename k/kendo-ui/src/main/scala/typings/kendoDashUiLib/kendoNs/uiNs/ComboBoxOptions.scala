@@ -54,13 +54,13 @@ object ComboBoxOptions {
     animation: ComboBoxAnimation = null,
     autoBind: js.UndefOr[scala.Boolean] = js.undefined,
     autoWidth: js.UndefOr[scala.Boolean] = js.undefined,
-    cascade: js.Function1[/* e */ ComboBoxCascadeEvent, scala.Unit] = null,
+    cascade: /* e */ ComboBoxCascadeEvent => scala.Unit = null,
     cascadeFrom: java.lang.String = null,
     cascadeFromField: java.lang.String = null,
-    change: js.Function1[/* e */ ComboBoxChangeEvent, scala.Unit] = null,
+    change: /* e */ ComboBoxChangeEvent => scala.Unit = null,
     clearButton: js.UndefOr[scala.Boolean] = js.undefined,
-    close: js.Function1[/* e */ ComboBoxCloseEvent, scala.Unit] = null,
-    dataBound: js.Function1[/* e */ ComboBoxDataBoundEvent, scala.Unit] = null,
+    close: /* e */ ComboBoxCloseEvent => scala.Unit = null,
+    dataBound: /* e */ ComboBoxDataBoundEvent => scala.Unit = null,
     dataSource: js.Any | kendoDashUiLib.kendoNs.dataNs.DataSource = null,
     dataTextField: java.lang.String = null,
     dataValueField: java.lang.String = null,
@@ -68,7 +68,7 @@ object ComboBoxOptions {
     enable: js.UndefOr[scala.Boolean] = js.undefined,
     enforceMinLength: js.UndefOr[scala.Boolean] = js.undefined,
     filter: java.lang.String = null,
-    filtering: js.Function1[/* e */ ComboBoxFilteringEvent, scala.Unit] = null,
+    filtering: /* e */ ComboBoxFilteringEvent => scala.Unit = null,
     fixedGroupTemplate: java.lang.String | js.Function = null,
     footerTemplate: java.lang.String | js.Function = null,
     groupTemplate: java.lang.String | js.Function = null,
@@ -80,10 +80,10 @@ object ComboBoxOptions {
     minLength: scala.Int | scala.Double = null,
     name: java.lang.String = null,
     noDataTemplate: java.lang.String | js.Function = null,
-    open: js.Function1[/* e */ ComboBoxOpenEvent, scala.Unit] = null,
+    open: /* e */ ComboBoxOpenEvent => scala.Unit = null,
     placeholder: java.lang.String = null,
     popup: ComboBoxPopup = null,
-    select: js.Function1[/* e */ ComboBoxSelectEvent, scala.Unit] = null,
+    select: /* e */ ComboBoxSelectEvent => scala.Unit = null,
     suggest: js.UndefOr[scala.Boolean] = js.undefined,
     syncValueAndText: js.UndefOr[scala.Boolean] = js.undefined,
     template: java.lang.String | js.Function = null,
@@ -96,13 +96,13 @@ object ComboBoxOptions {
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind)
     if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth)
-    if (cascade != null) __obj.updateDynamic("cascade")(cascade)
+    if (cascade != null) __obj.updateDynamic("cascade")(js.Any.fromFunction1(cascade))
     if (cascadeFrom != null) __obj.updateDynamic("cascadeFrom")(cascadeFrom)
     if (cascadeFromField != null) __obj.updateDynamic("cascadeFromField")(cascadeFromField)
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (!js.isUndefined(clearButton)) __obj.updateDynamic("clearButton")(clearButton)
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (dataTextField != null) __obj.updateDynamic("dataTextField")(dataTextField)
     if (dataValueField != null) __obj.updateDynamic("dataValueField")(dataValueField)
@@ -110,7 +110,7 @@ object ComboBoxOptions {
     if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
     if (!js.isUndefined(enforceMinLength)) __obj.updateDynamic("enforceMinLength")(enforceMinLength)
     if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (filtering != null) __obj.updateDynamic("filtering")(filtering)
+    if (filtering != null) __obj.updateDynamic("filtering")(js.Any.fromFunction1(filtering))
     if (fixedGroupTemplate != null) __obj.updateDynamic("fixedGroupTemplate")(fixedGroupTemplate.asInstanceOf[js.Any])
     if (footerTemplate != null) __obj.updateDynamic("footerTemplate")(footerTemplate.asInstanceOf[js.Any])
     if (groupTemplate != null) __obj.updateDynamic("groupTemplate")(groupTemplate.asInstanceOf[js.Any])
@@ -122,10 +122,10 @@ object ComboBoxOptions {
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (noDataTemplate != null) __obj.updateDynamic("noDataTemplate")(noDataTemplate.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (popup != null) __obj.updateDynamic("popup")(popup)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (!js.isUndefined(suggest)) __obj.updateDynamic("suggest")(suggest)
     if (!js.isUndefined(syncValueAndText)) __obj.updateDynamic("syncValueAndText")(syncValueAndText)
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])

@@ -16,14 +16,10 @@ trait IQueryOptionsFactory extends js.Object {
 object IQueryOptionsFactory {
   @scala.inline
   def apply(
-    createCommonFileQuery: js.Function2[
-      CommonFileQuery, 
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], 
-      QueryOptions
-    ],
-    createCommonFolderQuery: js.Function1[CommonFolderQuery, QueryOptions]
+    createCommonFileQuery: (CommonFileQuery, winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String]) => QueryOptions,
+    createCommonFolderQuery: CommonFolderQuery => QueryOptions
   ): IQueryOptionsFactory = {
-    val __obj = js.Dynamic.literal(createCommonFileQuery = createCommonFileQuery, createCommonFolderQuery = createCommonFolderQuery)
+    val __obj = js.Dynamic.literal(createCommonFileQuery = js.Any.fromFunction2(createCommonFileQuery), createCommonFolderQuery = js.Any.fromFunction1(createCommonFolderQuery))
   
     __obj.asInstanceOf[IQueryOptionsFactory]
   }

@@ -19,12 +19,12 @@ trait XUnoUrlResolver
 object XUnoUrlResolver {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    resolve: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    resolve: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): XUnoUrlResolver = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, resolve = resolve)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), resolve = js.Any.fromFunction1(resolve))
   
     __obj.asInstanceOf[XUnoUrlResolver]
   }

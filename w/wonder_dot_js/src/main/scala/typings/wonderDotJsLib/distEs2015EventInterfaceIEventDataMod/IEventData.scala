@@ -12,8 +12,8 @@ trait IEventData extends js.Object {
 
 object IEventData {
   @scala.inline
-  def apply(preventDefault: js.Function0[scala.Unit], returnValue: scala.Boolean): IEventData = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault, returnValue = returnValue)
+  def apply(preventDefault: () => scala.Unit, returnValue: scala.Boolean): IEventData = {
+    val __obj = js.Dynamic.literal(preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue)
   
     __obj.asInstanceOf[IEventData]
   }

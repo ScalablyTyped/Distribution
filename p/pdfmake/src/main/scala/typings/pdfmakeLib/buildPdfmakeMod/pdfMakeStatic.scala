@@ -14,11 +14,11 @@ trait pdfMakeStatic extends js.Object {
 object pdfMakeStatic {
   @scala.inline
   def apply(
-    createPdf: js.Function1[TDocumentDefinitions, TCreatedPdf],
+    createPdf: TDocumentDefinitions => TCreatedPdf,
     fonts: org.scalablytyped.runtime.StringDictionary[TFontFamilyTypes],
     vfs: TFontFamily
   ): pdfMakeStatic = {
-    val __obj = js.Dynamic.literal(createPdf = createPdf, fonts = fonts, vfs = vfs)
+    val __obj = js.Dynamic.literal(createPdf = js.Any.fromFunction1(createPdf), fonts = fonts, vfs = vfs)
   
     __obj.asInstanceOf[pdfMakeStatic]
   }

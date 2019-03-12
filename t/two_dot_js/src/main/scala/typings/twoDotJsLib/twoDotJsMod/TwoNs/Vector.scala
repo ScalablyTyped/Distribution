@@ -34,32 +34,32 @@ trait Vector extends js.Object {
 object Vector {
   @scala.inline
   def apply(
-    add: js.Function2[Vector, Vector, Vector],
-    addSelf: js.Function1[Vector, Vector],
-    clear: js.Function0[Vector],
-    clone: js.Function0[Vector],
-    copy: js.Function1[Vector, Vector],
-    distanceSquared: js.Function1[Vector, scala.Double],
-    distanceTo: js.Function1[Vector, scala.Double],
-    divideScalar: js.Function1[scala.Double, Vector],
-    dot: js.Function1[Vector, scala.Double],
-    equals: js.Function1[Vector, scala.Boolean],
-    isZero: js.Function0[scala.Boolean],
-    length: js.Function0[scala.Double],
-    lengthSquared: js.Function0[scala.Double],
-    lerp: js.Function2[Vector, scala.Double, Vector],
-    multiplyScalar: js.Function1[scala.Double, Vector],
-    multiplySelf: js.Function1[Vector, Vector],
-    negate: js.Function0[Vector],
-    normalize: js.Function0[Vector],
-    set: js.Function2[scala.Double, scala.Double, Vector],
-    setLength: js.Function1[scala.Double, Vector],
-    sub: js.Function2[Vector, Vector, Vector],
-    subSelf: js.Function1[Vector, Vector],
+    add: (Vector, Vector) => Vector,
+    addSelf: Vector => Vector,
+    clear: () => Vector,
+    clone: () => Vector,
+    copy: Vector => Vector,
+    distanceSquared: Vector => scala.Double,
+    distanceTo: Vector => scala.Double,
+    divideScalar: scala.Double => Vector,
+    dot: Vector => scala.Double,
+    equals: Vector => scala.Boolean,
+    isZero: () => scala.Boolean,
+    length: () => scala.Double,
+    lengthSquared: () => scala.Double,
+    lerp: (Vector, scala.Double) => Vector,
+    multiplyScalar: scala.Double => Vector,
+    multiplySelf: Vector => Vector,
+    negate: () => Vector,
+    normalize: () => Vector,
+    set: (scala.Double, scala.Double) => Vector,
+    setLength: scala.Double => Vector,
+    sub: (Vector, Vector) => Vector,
+    subSelf: Vector => Vector,
     x: scala.Double,
     y: scala.Double
   ): Vector = {
-    val __obj = js.Dynamic.literal(add = add, addSelf = addSelf, clear = clear, clone = clone, copy = copy, distanceSquared = distanceSquared, distanceTo = distanceTo, divideScalar = divideScalar, dot = dot, equals = equals, isZero = isZero, length = length, lengthSquared = lengthSquared, lerp = lerp, multiplyScalar = multiplyScalar, multiplySelf = multiplySelf, negate = negate, normalize = normalize, set = set, setLength = setLength, sub = sub, subSelf = subSelf, x = x, y = y)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), addSelf = js.Any.fromFunction1(addSelf), clear = js.Any.fromFunction0(clear), clone = js.Any.fromFunction0(clone), copy = js.Any.fromFunction1(copy), distanceSquared = js.Any.fromFunction1(distanceSquared), distanceTo = js.Any.fromFunction1(distanceTo), divideScalar = js.Any.fromFunction1(divideScalar), dot = js.Any.fromFunction1(dot), equals = js.Any.fromFunction1(equals), isZero = js.Any.fromFunction0(isZero), length = js.Any.fromFunction0(length), lengthSquared = js.Any.fromFunction0(lengthSquared), lerp = js.Any.fromFunction2(lerp), multiplyScalar = js.Any.fromFunction1(multiplyScalar), multiplySelf = js.Any.fromFunction1(multiplySelf), negate = js.Any.fromFunction0(negate), normalize = js.Any.fromFunction0(normalize), set = js.Any.fromFunction2(set), setLength = js.Any.fromFunction1(setLength), sub = js.Any.fromFunction2(sub), subSelf = js.Any.fromFunction1(subSelf), x = x, y = y)
   
     __obj.asInstanceOf[Vector]
   }

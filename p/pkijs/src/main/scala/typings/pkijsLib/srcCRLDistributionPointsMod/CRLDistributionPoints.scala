@@ -16,11 +16,11 @@ object CRLDistributionPoints {
   @scala.inline
   def apply(
     distributionPoints: js.Array[pkijsLib.srcDistributionPointMod.default],
-    fromSchema: js.Function1[js.Any, scala.Unit],
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    fromSchema: js.Any => scala.Unit,
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): CRLDistributionPoints = {
-    val __obj = js.Dynamic.literal(distributionPoints = distributionPoints, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(distributionPoints = distributionPoints, fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[CRLDistributionPoints]
   }

@@ -15,12 +15,12 @@ trait ILookup[TKey, TElement] extends js.Object {
 object ILookup {
   @scala.inline
   def apply[TKey, TElement](
-    contains: js.Function1[TKey, scala.Boolean],
-    count: js.Function0[scala.Double],
-    get: js.Function1[TKey, IEnumerable[TElement]],
-    toEnumerable: js.Function0[IEnumerable[IGrouping[TKey, TElement]]]
+    contains: TKey => scala.Boolean,
+    count: () => scala.Double,
+    get: TKey => IEnumerable[TElement],
+    toEnumerable: () => IEnumerable[IGrouping[TKey, TElement]]
   ): ILookup[TKey, TElement] = {
-    val __obj = js.Dynamic.literal(contains = contains, count = count, get = get, toEnumerable = toEnumerable)
+    val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), count = js.Any.fromFunction0(count), get = js.Any.fromFunction1(get), toEnumerable = js.Any.fromFunction0(toEnumerable))
   
     __obj.asInstanceOf[ILookup[TKey, TElement]]
   }

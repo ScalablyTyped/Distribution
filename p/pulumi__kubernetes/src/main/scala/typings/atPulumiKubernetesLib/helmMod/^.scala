@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def fetch(chart: java.lang.String): scala.Unit = js.native
-  def fetch(chart: java.lang.String, opts: atPulumiKubernetesLib.helmMod.ResolvedFetchOpts): scala.Unit = js.native
+  def fetch(chart: java.lang.String, opts: ResolvedFetchOpts): scala.Unit = js.native
 }
 

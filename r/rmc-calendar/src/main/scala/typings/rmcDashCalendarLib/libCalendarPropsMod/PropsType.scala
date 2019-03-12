@@ -100,39 +100,25 @@ object PropsType {
     defaultTimeValue: stdLib.Date = null,
     defaultValue: SelectDateType = null,
     enterDirection: rmcDashCalendarLib.rmcDashCalendarLibStrings.horizontal | rmcDashCalendarLib.rmcDashCalendarLibStrings.vertical = null,
-    getDateExtra: js.Function1[/* date */ stdLib.Date, rmcDashCalendarLib.libDateDataTypesMod.ModelsNs.ExtraData] = null,
+    getDateExtra: /* date */ stdLib.Date => rmcDashCalendarLib.libDateDataTypesMod.ModelsNs.ExtraData = null,
     infiniteOpt: js.UndefOr[scala.Boolean] = js.undefined,
     initalMonths: scala.Int | scala.Double = null,
     locale: rmcDashCalendarLib.libDateDataTypesMod.ModelsNs.Locale = null,
     maxDate: stdLib.Date = null,
     minDate: stdLib.Date = null,
-    onCancel: js.Function0[scala.Unit] = null,
-    onClear: js.Function0[scala.Unit] = null,
-    onConfirm: js.Function2[
-      /* startDateTime */ js.UndefOr[stdLib.Date], 
-      /* endDateTime */ js.UndefOr[stdLib.Date], 
-      scala.Unit
-    ] = null,
-    onSelect: js.Function2[
-      /* date */ stdLib.Date, 
-      /* state */ js.UndefOr[js.Tuple2[js.UndefOr[stdLib.Date], js.UndefOr[stdLib.Date]]], 
-      SelectDateType | scala.Unit
-    ] = null,
-    onSelectHasDisableDate: js.Function1[/* date */ js.Array[stdLib.Date], scala.Unit] = null,
+    onCancel: () => scala.Unit = null,
+    onClear: () => scala.Unit = null,
+    onConfirm: (/* startDateTime */ js.UndefOr[stdLib.Date], /* endDateTime */ js.UndefOr[stdLib.Date]) => scala.Unit = null,
+    onSelect: (/* date */ stdLib.Date, /* state */ js.UndefOr[js.Tuple2[js.UndefOr[stdLib.Date], js.UndefOr[stdLib.Date]]]) => SelectDateType | scala.Unit = null,
+    onSelectHasDisableDate: /* date */ js.Array[stdLib.Date] => scala.Unit = null,
     pickTime: js.UndefOr[scala.Boolean] = js.undefined,
     prefixCls: java.lang.String = null,
-    renderHeader: js.Function1[
-      /* prop */ rmcDashCalendarLib.libCalendarHeaderMod.PropsType, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
-    renderShortcut: js.Function1[
-      /* select */ js.Function2[
-        /* startDate */ js.UndefOr[stdLib.Date], 
-        /* endDate */ js.UndefOr[stdLib.Date], 
-        scala.Unit
-      ], 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    renderHeader: /* prop */ rmcDashCalendarLib.libCalendarHeaderMod.PropsType => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderShortcut: /* select */ js.Function2[
+      /* startDate */ js.UndefOr[stdLib.Date], 
+      /* endDate */ js.UndefOr[stdLib.Date], 
+      scala.Unit
+    ] => reactLib.reactMod.ReactNs.ReactNode = null,
     rowSize: rmcDashCalendarLib.rmcDashCalendarLibStrings.normal | rmcDashCalendarLib.rmcDashCalendarLibStrings.xl = null,
     showShortcut: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -147,21 +133,21 @@ object PropsType {
     if (defaultTimeValue != null) __obj.updateDynamic("defaultTimeValue")(defaultTimeValue)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (enterDirection != null) __obj.updateDynamic("enterDirection")(enterDirection.asInstanceOf[js.Any])
-    if (getDateExtra != null) __obj.updateDynamic("getDateExtra")(getDateExtra)
+    if (getDateExtra != null) __obj.updateDynamic("getDateExtra")(js.Any.fromFunction1(getDateExtra))
     if (!js.isUndefined(infiniteOpt)) __obj.updateDynamic("infiniteOpt")(infiniteOpt)
     if (initalMonths != null) __obj.updateDynamic("initalMonths")(initalMonths.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
     if (minDate != null) __obj.updateDynamic("minDate")(minDate)
-    if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel)
-    if (onClear != null) __obj.updateDynamic("onClear")(onClear)
-    if (onConfirm != null) __obj.updateDynamic("onConfirm")(onConfirm)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (onSelectHasDisableDate != null) __obj.updateDynamic("onSelectHasDisableDate")(onSelectHasDisableDate)
+    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction0(onCancel))
+    if (onClear != null) __obj.updateDynamic("onClear")(js.Any.fromFunction0(onClear))
+    if (onConfirm != null) __obj.updateDynamic("onConfirm")(js.Any.fromFunction2(onConfirm))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
+    if (onSelectHasDisableDate != null) __obj.updateDynamic("onSelectHasDisableDate")(js.Any.fromFunction1(onSelectHasDisableDate))
     if (!js.isUndefined(pickTime)) __obj.updateDynamic("pickTime")(pickTime)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (renderHeader != null) __obj.updateDynamic("renderHeader")(renderHeader)
-    if (renderShortcut != null) __obj.updateDynamic("renderShortcut")(renderShortcut)
+    if (renderHeader != null) __obj.updateDynamic("renderHeader")(js.Any.fromFunction1(renderHeader))
+    if (renderShortcut != null) __obj.updateDynamic("renderShortcut")(js.Any.fromFunction1(renderShortcut))
     if (rowSize != null) __obj.updateDynamic("rowSize")(rowSize.asInstanceOf[js.Any])
     if (!js.isUndefined(showShortcut)) __obj.updateDynamic("showShortcut")(showShortcut)
     if (style != null) __obj.updateDynamic("style")(style)

@@ -1,0 +1,21 @@
+package typings
+package formikLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object distTypesMod {
+  type FormikContext[Values] = FormikProps[Values] with (stdLib.Pick[
+    FormikConfig[Values], 
+    formikLib.formikLibStrings.validate | formikLib.formikLibStrings.validationSchema
+  ])
+  type FormikErrors[Values] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof Values ]:? string}
+    */ formikLib.formikLibStrings.FormikErrors with js.Any
+  type FormikProps[Values] = FormikSharedConfig with FormikState[Values] with FormikActions[Values] with FormikHandlers with FormikComputedProps[Values] with FormikRegistration
+  type FormikTouched[Values] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof Values ]:? boolean}
+    */ formikLib.formikLibStrings.FormikTouched with js.Any
+  type GenericFieldHTMLAttributes = reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement] | reactLib.reactMod.ReactNs.SelectHTMLAttributes[stdLib.HTMLSelectElement] | reactLib.reactMod.ReactNs.TextareaHTMLAttributes[stdLib.HTMLTextAreaElement]
+}

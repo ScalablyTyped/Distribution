@@ -15,7 +15,7 @@ trait XExternalSheetCache extends js.Object {
     * It returns a list of all row numbers where a cached cell or cells exist. The row numbers are sorted in ascending order.
     * @returns sequence<long> list of all row numbers with cached cell(s)
     */
-  val AllRows: activexDashInteropLib.SafeArray[scala.Double]
+  val AllRows: stdLib.SafeArray[scala.Double]
   /**
     * Index corresponding to this instance of an external sheet cache for usage in formula tokens.
     *
@@ -31,12 +31,12 @@ trait XExternalSheetCache extends js.Object {
     * ascending order.
     * @returns sequence<long> list of all columns numbers with cached cell values
     */
-  def getAllColumns(nRow: scala.Double): activexDashInteropLib.SafeArray[scala.Double]
+  def getAllColumns(nRow: scala.Double): stdLib.SafeArray[scala.Double]
   /**
     * It returns a list of all row numbers where a cached cell or cells exist. The row numbers are sorted in ascending order.
     * @returns sequence<long> list of all row numbers with cached cell(s)
     */
-  def getAllRows(): activexDashInteropLib.SafeArray[scala.Double]
+  def getAllRows(): stdLib.SafeArray[scala.Double]
   /**
     * It retrieves a cached value from a specified cell position. The cached value can be either string or double.
     * @returns any cached cell value
@@ -55,14 +55,14 @@ trait XExternalSheetCache extends js.Object {
 object XExternalSheetCache {
   @scala.inline
   def apply(
-    AllRows: activexDashInteropLib.SafeArray[scala.Double],
+    AllRows: stdLib.SafeArray[scala.Double],
     TokenIndex: scala.Double,
-    getAllColumns: js.Function1[scala.Double, activexDashInteropLib.SafeArray[scala.Double]],
-    getAllRows: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    getCellValue: js.Function2[scala.Double, scala.Double, js.Any],
-    setCellValue: js.Function3[scala.Double, scala.Double, js.Any, scala.Unit]
+    getAllColumns: scala.Double => stdLib.SafeArray[scala.Double],
+    getAllRows: () => stdLib.SafeArray[scala.Double],
+    getCellValue: (scala.Double, scala.Double) => js.Any,
+    setCellValue: (scala.Double, scala.Double, js.Any) => scala.Unit
   ): XExternalSheetCache = {
-    val __obj = js.Dynamic.literal(AllRows = AllRows, TokenIndex = TokenIndex, getAllColumns = getAllColumns, getAllRows = getAllRows, getCellValue = getCellValue, setCellValue = setCellValue)
+    val __obj = js.Dynamic.literal(AllRows = AllRows, TokenIndex = TokenIndex, getAllColumns = js.Any.fromFunction1(getAllColumns), getAllRows = js.Any.fromFunction0(getAllRows), getCellValue = js.Any.fromFunction2(getCellValue), setCellValue = js.Any.fromFunction3(setCellValue))
   
     __obj.asInstanceOf[XExternalSheetCache]
   }

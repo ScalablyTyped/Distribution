@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Server
   extends nodeLib.eventsMod.EventEmitter {
-  var clients: nodeLib.Set[wsLib.wsMod.WebSocket] = js.native
+  var clients: stdLib.Set[wsLib.wsMod.WebSocket] = js.native
   var options: ServerOptions = js.native
   var path: java.lang.String = js.native
   @JSName("addListener")
@@ -18,7 +18,7 @@ trait Server
     cb: js.Function1[/* client */ wsLib.wsMod.WebSocket, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_error(event: wsLib.wsLibStrings.error, cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def addListener_error(event: wsLib.wsLibStrings.error, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_headers(
     event: wsLib.wsLibStrings.headers,
@@ -32,7 +32,7 @@ trait Server
   def addListener_listening(event: wsLib.wsLibStrings.listening, cb: js.Function0[scala.Unit]): this.type = js.native
   def address(): AddressInfo | java.lang.String = js.native
   def close(): scala.Unit = js.native
-  def close(cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]): scala.Unit = js.native
+  def close(cb: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]): scala.Unit = js.native
   def handleUpgrade(
     request: nodeLib.httpMod.IncomingMessage,
     socket: nodeLib.netMod.Socket,
@@ -61,7 +61,7 @@ trait Server
   @JSName("on")
   def on_error(
     event: wsLib.wsLibStrings.error,
-    cb: js.ThisFunction1[/* this */ wsLib.wsMod.WebSocket, /* error */ nodeLib.Error, scala.Unit]
+    cb: js.ThisFunction1[/* this */ wsLib.wsMod.WebSocket, /* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_headers(

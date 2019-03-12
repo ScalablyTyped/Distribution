@@ -12,14 +12,14 @@ trait Flip extends Effect {
 object Flip {
   @scala.inline
   def apply(
-    add: js.Function1[Effect, Flip],
-    direction: js.Function1[java.lang.String, Flip],
-    duration: js.Function1[scala.Double, Flip],
-    play: js.Function0[kendoDashUiLib.JQueryPromise[_]],
-    reverse: js.Function0[kendoDashUiLib.JQueryPromise[_]],
-    stop: js.Function0[Flip]
+    add: Effect => Flip,
+    direction: java.lang.String => Flip,
+    duration: scala.Double => Flip,
+    play: () => kendoDashUiLib.JQueryPromise[_],
+    reverse: () => kendoDashUiLib.JQueryPromise[_],
+    stop: () => Flip
   ): Flip = {
-    val __obj = js.Dynamic.literal(add = add, direction = direction, duration = duration, play = play, reverse = reverse, stop = stop)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), direction = js.Any.fromFunction1(direction), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[Flip]
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var browser: webdriverioLib.BrowserObject = js.native
+  var browser: BrowserObject = js.native
   @JSName("$")
   def $(selector: java.lang.String): js.Promise[webdriverioLib.WebdriverIOAsyncNs.Element] = js.native
   @JSName("$")

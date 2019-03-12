@@ -45,13 +45,13 @@ object FeatureLayerCapabilities {
     constructor: js.Function,
     data: FeatureLayerCapabilitiesData,
     editing: FeatureLayerCapabilitiesEditing,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     operations: FeatureLayerCapabilitiesOperations,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     query: FeatureLayerCapabilitiesQuery,
     queryRelated: FeatureLayerCapabilitiesQueryRelated
   ): FeatureLayerCapabilities = {
-    val __obj = js.Dynamic.literal(constructor = constructor, data = data, editing = editing, hasOwnProperty = hasOwnProperty, operations = operations, propertyIsEnumerable = propertyIsEnumerable, query = query, queryRelated = queryRelated)
+    val __obj = js.Dynamic.literal(constructor = constructor, data = data, editing = editing, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operations = operations, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), query = query, queryRelated = queryRelated)
   
     __obj.asInstanceOf[FeatureLayerCapabilities]
   }

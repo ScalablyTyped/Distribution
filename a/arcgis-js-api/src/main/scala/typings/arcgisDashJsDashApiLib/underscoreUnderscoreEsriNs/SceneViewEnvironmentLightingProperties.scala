@@ -45,14 +45,14 @@ object SceneViewEnvironmentLightingProperties {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     ambientOcclusionEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     cameraTrackingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     date: DateProperties = null,
     directShadowsEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): SceneViewEnvironmentLightingProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (!js.isUndefined(ambientOcclusionEnabled)) __obj.updateDynamic("ambientOcclusionEnabled")(ambientOcclusionEnabled)
     if (!js.isUndefined(cameraTrackingEnabled)) __obj.updateDynamic("cameraTrackingEnabled")(cameraTrackingEnabled)
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])

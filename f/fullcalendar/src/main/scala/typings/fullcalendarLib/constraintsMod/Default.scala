@@ -15,7 +15,7 @@ class Default protected () extends js.Object {
   def collectOverlapEventFootprints(peerEventFootprints: js.Any, targetFootprint: js.Any): js.Array[_] = js.native
   def constraintValToFootprints(constraintVal: js.Any, isAllDay: js.Any): js.Array[_] = js.native
   def eventInstancesToFootprints(eventInstances: js.Any): js.Array[_] = js.native
-  def eventRangeToEventFootprints(eventRange: js.Any): js.Array[fullcalendarLib.eventfootprintMod.default] = js.native
+  def eventRangeToEventFootprints(eventRange: js.Any): js.Array[fullcalendarLib.eventFootprintMod.default] = js.native
   def eventRangesToEventFootprints(eventRanges: js.Any): js.Array[_] = js.native
   def footprintContainsFootprint(outerFootprint: js.Any, innerFootprint: js.Any): js.Any = js.native
   def footprintsIntersect(footprint0: js.Any, footprint1: js.Any): js.Any = js.native
@@ -33,7 +33,7 @@ class Default protected () extends js.Object {
   def isSelectionFootprintAllowed(componentFootprint: js.Any): scala.Boolean = js.native
   def opt(name: js.Any): js.Any = js.native
   def parseEventDefToInstances(eventInput: js.Any): js.Any = js.native
-  def parseFootprints(rawInput: js.Any): js.Array[fullcalendarLib.componentfootprintMod.default] = js.native
+  def parseFootprints(rawInput: js.Any): js.Array[fullcalendarLib.componentFootprintMod.default] = js.native
 }
 
 @JSImport("fullcalendar/Constraints", JSImport.Default)

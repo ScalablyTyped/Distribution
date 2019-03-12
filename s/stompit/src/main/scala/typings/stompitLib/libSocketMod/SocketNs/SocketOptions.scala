@@ -24,7 +24,7 @@ object SocketOptions {
     heartbeatOutputMargin: scala.Int | scala.Double = null,
     outgoingFrameStream: stompitLib.libOutgoingFrameStreamMod.namespaced = null,
     resetDisconnect: js.UndefOr[scala.Boolean] = js.undefined,
-    unknownCommand: js.Function0[scala.Unit] = null
+    unknownCommand: () => scala.Unit = null
   ): SocketOptions = {
     val __obj = js.Dynamic.literal()
     if (commandHandlers != null) __obj.updateDynamic("commandHandlers")(commandHandlers)
@@ -33,7 +33,7 @@ object SocketOptions {
     if (heartbeatOutputMargin != null) __obj.updateDynamic("heartbeatOutputMargin")(heartbeatOutputMargin.asInstanceOf[js.Any])
     if (outgoingFrameStream != null) __obj.updateDynamic("outgoingFrameStream")(outgoingFrameStream)
     if (!js.isUndefined(resetDisconnect)) __obj.updateDynamic("resetDisconnect")(resetDisconnect)
-    if (unknownCommand != null) __obj.updateDynamic("unknownCommand")(unknownCommand)
+    if (unknownCommand != null) __obj.updateDynamic("unknownCommand")(js.Any.fromFunction0(unknownCommand))
     __obj.asInstanceOf[SocketOptions]
   }
 }

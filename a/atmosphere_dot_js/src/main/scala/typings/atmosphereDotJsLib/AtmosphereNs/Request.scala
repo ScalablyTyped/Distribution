@@ -92,21 +92,21 @@ object Request {
     async: js.UndefOr[scala.Boolean] = js.undefined,
     attachHeadersAsQueryString: js.UndefOr[scala.Boolean] = js.undefined,
     callback: js.Function = null,
-    close: js.Function0[scala.Unit] = null,
+    close: () => scala.Unit = null,
     connectTimeout: scala.Int | scala.Double = null,
     contentType: java.lang.String = null,
     data: java.lang.String = null,
-    disconnect: js.Function0[scala.Unit] = null,
+    disconnect: () => scala.Unit = null,
     dispatchUrl: java.lang.String = null,
     dropHeaders: js.UndefOr[scala.Boolean] = js.undefined,
     enableProtocol: js.UndefOr[scala.Boolean] = js.undefined,
     enableXDR: js.UndefOr[scala.Boolean] = js.undefined,
-    execute: js.Function0[scala.Unit] = null,
+    execute: () => scala.Unit = null,
     executeCallbackBeforeReconnect: js.UndefOr[scala.Boolean] = js.undefined,
     fallbackMethod: java.lang.String = null,
     fallbackTransport: java.lang.String = null,
-    getUUID: js.Function0[scala.Unit] = null,
-    getUrl: js.Function0[java.lang.String] = null,
+    getUUID: () => scala.Unit = null,
+    getUrl: () => java.lang.String = null,
     headers: js.Any = null,
     lastIndex: scala.Int | scala.Double = null,
     lastTimestamp: scala.Int | scala.Double = null,
@@ -116,28 +116,20 @@ object Request {
     maxStreamingLength: scala.Int | scala.Double = null,
     messageDelimiter: java.lang.String = null,
     method: java.lang.String = null,
-    onClientTimeout: js.Function1[/* request */ js.UndefOr[Request], scala.Unit] = null,
-    onClose: js.Function1[/* response */ js.UndefOr[Response], scala.Unit] = null,
-    onError: js.Function1[/* response */ js.UndefOr[Response], scala.Unit] = null,
-    onFailureToReconnect: js.Function2[/* request */ js.UndefOr[Request], /* response */ js.UndefOr[Response], scala.Unit] = null,
-    onLocalMessage: js.Function1[/* request */ js.UndefOr[Request], scala.Unit] = null,
-    onMessage: js.Function1[/* response */ Response, scala.Unit] = null,
-    onMessagePublished: js.Function1[/* response */ js.UndefOr[Response], scala.Unit] = null,
-    onOpen: js.Function1[/* response */ js.UndefOr[Response], scala.Unit] = null,
-    onReconnect: js.Function2[/* request */ js.UndefOr[Request], /* response */ js.UndefOr[Response], scala.Unit] = null,
-    onReopen: js.Function2[/* request */ js.UndefOr[Request], /* response */ js.UndefOr[Response], scala.Unit] = null,
-    onTransportFailure: js.Function2[
-      /* reason */ js.UndefOr[java.lang.String], 
-      /* response */ js.UndefOr[Response], 
-      scala.Unit
-    ] = null,
+    onClientTimeout: /* request */ js.UndefOr[Request] => scala.Unit = null,
+    onClose: /* response */ js.UndefOr[Response] => scala.Unit = null,
+    onError: /* response */ js.UndefOr[Response] => scala.Unit = null,
+    onFailureToReconnect: (/* request */ js.UndefOr[Request], /* response */ js.UndefOr[Response]) => scala.Unit = null,
+    onLocalMessage: /* request */ js.UndefOr[Request] => scala.Unit = null,
+    onMessage: /* response */ Response => scala.Unit = null,
+    onMessagePublished: /* response */ js.UndefOr[Response] => scala.Unit = null,
+    onOpen: /* response */ js.UndefOr[Response] => scala.Unit = null,
+    onReconnect: (/* request */ js.UndefOr[Request], /* response */ js.UndefOr[Response]) => scala.Unit = null,
+    onReopen: (/* request */ js.UndefOr[Request], /* response */ js.UndefOr[Response]) => scala.Unit = null,
+    onTransportFailure: (/* reason */ js.UndefOr[java.lang.String], /* response */ js.UndefOr[Response]) => scala.Unit = null,
     pollingInterval: scala.Int | scala.Double = null,
-    push: js.Function2[
-      /* message */ java.lang.String, 
-      /* dispatchUrl */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    pushLocal: js.Function1[/* message */ java.lang.String, scala.Unit] = null,
+    push: (/* message */ java.lang.String, /* dispatchUrl */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    pushLocal: /* message */ java.lang.String => scala.Unit = null,
     readResponsesHeaders: js.UndefOr[scala.Boolean] = js.undefined,
     readyState: scala.Int | scala.Double = null,
     reconnect: js.UndefOr[scala.Boolean] = js.undefined,
@@ -145,7 +137,7 @@ object Request {
     requestCount: scala.Int | scala.Double = null,
     rewriteURL: js.UndefOr[scala.Boolean] = js.undefined,
     shared: js.UndefOr[scala.Boolean] = js.undefined,
-    subscribe: js.Function1[/* options */ Request, scala.Unit] = null,
+    subscribe: /* options */ Request => scala.Unit = null,
     suspend: js.UndefOr[scala.Boolean] = js.undefined,
     timeout: scala.Int | scala.Double = null,
     trackMessageLength: js.UndefOr[scala.Boolean] = js.undefined,
@@ -162,21 +154,21 @@ object Request {
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
     if (!js.isUndefined(attachHeadersAsQueryString)) __obj.updateDynamic("attachHeadersAsQueryString")(attachHeadersAsQueryString)
     if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction0(close))
     if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
     if (data != null) __obj.updateDynamic("data")(data)
-    if (disconnect != null) __obj.updateDynamic("disconnect")(disconnect)
+    if (disconnect != null) __obj.updateDynamic("disconnect")(js.Any.fromFunction0(disconnect))
     if (dispatchUrl != null) __obj.updateDynamic("dispatchUrl")(dispatchUrl)
     if (!js.isUndefined(dropHeaders)) __obj.updateDynamic("dropHeaders")(dropHeaders)
     if (!js.isUndefined(enableProtocol)) __obj.updateDynamic("enableProtocol")(enableProtocol)
     if (!js.isUndefined(enableXDR)) __obj.updateDynamic("enableXDR")(enableXDR)
-    if (execute != null) __obj.updateDynamic("execute")(execute)
+    if (execute != null) __obj.updateDynamic("execute")(js.Any.fromFunction0(execute))
     if (!js.isUndefined(executeCallbackBeforeReconnect)) __obj.updateDynamic("executeCallbackBeforeReconnect")(executeCallbackBeforeReconnect)
     if (fallbackMethod != null) __obj.updateDynamic("fallbackMethod")(fallbackMethod)
     if (fallbackTransport != null) __obj.updateDynamic("fallbackTransport")(fallbackTransport)
-    if (getUUID != null) __obj.updateDynamic("getUUID")(getUUID)
-    if (getUrl != null) __obj.updateDynamic("getUrl")(getUrl)
+    if (getUUID != null) __obj.updateDynamic("getUUID")(js.Any.fromFunction0(getUUID))
+    if (getUrl != null) __obj.updateDynamic("getUrl")(js.Any.fromFunction0(getUrl))
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (lastIndex != null) __obj.updateDynamic("lastIndex")(lastIndex.asInstanceOf[js.Any])
     if (lastTimestamp != null) __obj.updateDynamic("lastTimestamp")(lastTimestamp.asInstanceOf[js.Any])
@@ -186,20 +178,20 @@ object Request {
     if (maxStreamingLength != null) __obj.updateDynamic("maxStreamingLength")(maxStreamingLength.asInstanceOf[js.Any])
     if (messageDelimiter != null) __obj.updateDynamic("messageDelimiter")(messageDelimiter)
     if (method != null) __obj.updateDynamic("method")(method)
-    if (onClientTimeout != null) __obj.updateDynamic("onClientTimeout")(onClientTimeout)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onFailureToReconnect != null) __obj.updateDynamic("onFailureToReconnect")(onFailureToReconnect)
-    if (onLocalMessage != null) __obj.updateDynamic("onLocalMessage")(onLocalMessage)
-    if (onMessage != null) __obj.updateDynamic("onMessage")(onMessage)
-    if (onMessagePublished != null) __obj.updateDynamic("onMessagePublished")(onMessagePublished)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
-    if (onReconnect != null) __obj.updateDynamic("onReconnect")(onReconnect)
-    if (onReopen != null) __obj.updateDynamic("onReopen")(onReopen)
-    if (onTransportFailure != null) __obj.updateDynamic("onTransportFailure")(onTransportFailure)
+    if (onClientTimeout != null) __obj.updateDynamic("onClientTimeout")(js.Any.fromFunction1(onClientTimeout))
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onFailureToReconnect != null) __obj.updateDynamic("onFailureToReconnect")(js.Any.fromFunction2(onFailureToReconnect))
+    if (onLocalMessage != null) __obj.updateDynamic("onLocalMessage")(js.Any.fromFunction1(onLocalMessage))
+    if (onMessage != null) __obj.updateDynamic("onMessage")(js.Any.fromFunction1(onMessage))
+    if (onMessagePublished != null) __obj.updateDynamic("onMessagePublished")(js.Any.fromFunction1(onMessagePublished))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
+    if (onReconnect != null) __obj.updateDynamic("onReconnect")(js.Any.fromFunction2(onReconnect))
+    if (onReopen != null) __obj.updateDynamic("onReopen")(js.Any.fromFunction2(onReopen))
+    if (onTransportFailure != null) __obj.updateDynamic("onTransportFailure")(js.Any.fromFunction2(onTransportFailure))
     if (pollingInterval != null) __obj.updateDynamic("pollingInterval")(pollingInterval.asInstanceOf[js.Any])
-    if (push != null) __obj.updateDynamic("push")(push)
-    if (pushLocal != null) __obj.updateDynamic("pushLocal")(pushLocal)
+    if (push != null) __obj.updateDynamic("push")(js.Any.fromFunction2(push))
+    if (pushLocal != null) __obj.updateDynamic("pushLocal")(js.Any.fromFunction1(pushLocal))
     if (!js.isUndefined(readResponsesHeaders)) __obj.updateDynamic("readResponsesHeaders")(readResponsesHeaders)
     if (readyState != null) __obj.updateDynamic("readyState")(readyState.asInstanceOf[js.Any])
     if (!js.isUndefined(reconnect)) __obj.updateDynamic("reconnect")(reconnect)
@@ -207,7 +199,7 @@ object Request {
     if (requestCount != null) __obj.updateDynamic("requestCount")(requestCount.asInstanceOf[js.Any])
     if (!js.isUndefined(rewriteURL)) __obj.updateDynamic("rewriteURL")(rewriteURL)
     if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared)
-    if (subscribe != null) __obj.updateDynamic("subscribe")(subscribe)
+    if (subscribe != null) __obj.updateDynamic("subscribe")(js.Any.fromFunction1(subscribe))
     if (!js.isUndefined(suspend)) __obj.updateDynamic("suspend")(suspend)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (!js.isUndefined(trackMessageLength)) __obj.updateDynamic("trackMessageLength")(trackMessageLength)

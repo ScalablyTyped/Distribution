@@ -24,7 +24,7 @@ object ^ extends js.Object {
   def shortScale(precision: scala.Double): js.Function1[/* num */ scala.Double, java.lang.String] = js.native
   def siSuffix(): js.Function1[/* d */ js.Any, java.lang.String] = js.native
   def siSuffix(numberOfSignificantFigures: scala.Double): js.Function1[/* d */ js.Any, java.lang.String] = js.native
-  def time(specifier: java.lang.String): plottableLib.buildSrcCoreFormattersMod.Formatter = js.native
-  def time(specifier: java.lang.String, useUTC: scala.Boolean): plottableLib.buildSrcCoreFormattersMod.Formatter = js.native
+  def time(specifier: java.lang.String): Formatter = js.native
+  def time(specifier: java.lang.String, useUTC: scala.Boolean): Formatter = js.native
 }
 

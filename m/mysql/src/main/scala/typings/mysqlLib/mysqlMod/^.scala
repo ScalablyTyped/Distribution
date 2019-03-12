@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("mysql", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def createConnection(connectionUri: java.lang.String): mysqlLib.mysqlMod.Connection = js.native
-  def createConnection(connectionUri: mysqlLib.mysqlMod.ConnectionConfig): mysqlLib.mysqlMod.Connection = js.native
-  def createPool(config: java.lang.String): mysqlLib.mysqlMod.Pool = js.native
-  def createPool(config: mysqlLib.mysqlMod.PoolConfig): mysqlLib.mysqlMod.Pool = js.native
-  def createPoolCluster(): mysqlLib.mysqlMod.PoolCluster = js.native
-  def createPoolCluster(config: mysqlLib.mysqlMod.PoolClusterConfig): mysqlLib.mysqlMod.PoolCluster = js.native
+  def createConnection(connectionUri: java.lang.String): Connection = js.native
+  def createConnection(connectionUri: ConnectionConfig): Connection = js.native
+  def createPool(config: java.lang.String): Pool = js.native
+  def createPool(config: PoolConfig): Pool = js.native
+  def createPoolCluster(): PoolCluster = js.native
+  def createPoolCluster(config: PoolClusterConfig): PoolCluster = js.native
   def escape(value: js.Any): java.lang.String = js.native
   def escape(value: js.Any, stringifyObjects: scala.Boolean): java.lang.String = js.native
   def escape(value: js.Any, stringifyObjects: scala.Boolean, timeZone: java.lang.String): java.lang.String = js.native

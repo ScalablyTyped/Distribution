@@ -48,18 +48,14 @@ object XClipboard {
   def apply(
     Contents: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable,
     Name: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getContents: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable],
-    getName: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setContents: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable, 
-      XClipboardOwner, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    getContents: () => activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable,
+    getName: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setContents: (activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable, XClipboardOwner) => scala.Unit
   ): XClipboard = {
-    val __obj = js.Dynamic.literal(Contents = Contents, Name = Name, acquire = acquire, getContents = getContents, getName = getName, queryInterface = queryInterface, release = release, setContents = setContents)
+    val __obj = js.Dynamic.literal(Contents = Contents, Name = Name, acquire = js.Any.fromFunction0(acquire), getContents = js.Any.fromFunction0(getContents), getName = js.Any.fromFunction0(getName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setContents = js.Any.fromFunction2(setContents))
   
     __obj.asInstanceOf[XClipboard]
   }

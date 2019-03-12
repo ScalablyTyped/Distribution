@@ -48,7 +48,7 @@ object Options {
     data: java.lang.String = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     dest: java.lang.String = null,
-    error: js.Function0[scala.Unit] = null,
+    error: () => scala.Unit = null,
     file: java.lang.String = null,
     force: js.UndefOr[scala.Boolean] = js.undefined,
     functions: nodeDashSassLib.nodeDashSassMod.FunctionDeclarations[nodeDashSassLib.nodeDashSassMod.SassFunction] = null,
@@ -75,7 +75,7 @@ object Options {
     if (data != null) __obj.updateDynamic("data")(data)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (dest != null) __obj.updateDynamic("dest")(dest)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction0(error))
     if (file != null) __obj.updateDynamic("file")(file)
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
     if (functions != null) __obj.updateDynamic("functions")(functions)

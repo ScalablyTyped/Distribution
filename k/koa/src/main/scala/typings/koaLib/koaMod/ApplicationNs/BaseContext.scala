@@ -70,7 +70,7 @@ trait BaseContext
   /**
     * Default error handling.
     */
-  def onerror(err: nodeLib.Error): scala.Unit = js.native
+  def onerror(err: stdLib.Error): scala.Unit = js.native
   /**
     * Throw an error with `msg` and optional `status`
     * defaulting to 500. Note that these are user-level

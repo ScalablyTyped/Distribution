@@ -13,12 +13,12 @@ trait VisitNodeObject[T] extends js.Object {
 object VisitNodeObject {
   @scala.inline
   def apply[T](
-    enter: js.Function2[/* path */ NodePath[T], /* state */ js.Any, scala.Unit] = null,
-    exit: js.Function2[/* path */ NodePath[T], /* state */ js.Any, scala.Unit] = null
+    enter: (/* path */ NodePath[T], /* state */ js.Any) => scala.Unit = null,
+    exit: (/* path */ NodePath[T], /* state */ js.Any) => scala.Unit = null
   ): VisitNodeObject[T] = {
     val __obj = js.Dynamic.literal()
-    if (enter != null) __obj.updateDynamic("enter")(enter)
-    if (exit != null) __obj.updateDynamic("exit")(exit)
+    if (enter != null) __obj.updateDynamic("enter")(js.Any.fromFunction2(enter))
+    if (exit != null) __obj.updateDynamic("exit")(js.Any.fromFunction2(exit))
     __obj.asInstanceOf[VisitNodeObject[T]]
   }
 }

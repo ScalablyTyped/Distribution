@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.TaskPane")
 @js.native
 class TaskPane protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
   val Parent: js.Any = js.native
   var Visible: scala.Boolean = js.native

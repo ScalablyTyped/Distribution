@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def generate(): java.lang.String = js.native
   def generate(count: rwordLib.rwordLibNumbers.`1`): java.lang.String = js.native
-  def generate(count: rwordLib.rwordLibNumbers.`1`, options: rwordLib.rwordMod.GenerateOptions): java.lang.String = js.native
+  def generate(count: rwordLib.rwordLibNumbers.`1`, options: GenerateOptions): java.lang.String = js.native
   def generate(count: scala.Double): js.Array[java.lang.String] = js.native
-  def generate(count: scala.Double, options: rwordLib.rwordMod.GenerateOptions): js.Array[java.lang.String] = js.native
+  def generate(count: scala.Double, options: GenerateOptions): js.Array[java.lang.String] = js.native
   def generateFromPool(): java.lang.String = js.native
   def generateFromPool(count: rwordLib.rwordLibNumbers.`10`): js.Array[java.lang.String] = js.native
   def generateFromPool(count: rwordLib.rwordLibNumbers.`1`): java.lang.String = js.native

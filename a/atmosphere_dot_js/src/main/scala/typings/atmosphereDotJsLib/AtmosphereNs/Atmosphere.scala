@@ -26,18 +26,13 @@ object Atmosphere {
   @scala.inline
   def apply(
     AtmosphereRequest: AtmosphereRequest = null,
-    subscribe: js.Function3[
-      /* requestOrUrl */ js.Any, 
-      /* callback */ js.UndefOr[js.Function], 
-      /* request */ js.UndefOr[Request], 
-      Request
-    ] = null,
-    unsubscribe: js.Function0[scala.Unit] = null
+    subscribe: (/* requestOrUrl */ js.Any, /* callback */ js.UndefOr[js.Function], /* request */ js.UndefOr[Request]) => Request = null,
+    unsubscribe: () => scala.Unit = null
   ): Atmosphere = {
     val __obj = js.Dynamic.literal()
     if (AtmosphereRequest != null) __obj.updateDynamic("AtmosphereRequest")(AtmosphereRequest)
-    if (subscribe != null) __obj.updateDynamic("subscribe")(subscribe)
-    if (unsubscribe != null) __obj.updateDynamic("unsubscribe")(unsubscribe)
+    if (subscribe != null) __obj.updateDynamic("subscribe")(js.Any.fromFunction3(subscribe))
+    if (unsubscribe != null) __obj.updateDynamic("unsubscribe")(js.Any.fromFunction0(unsubscribe))
     __obj.asInstanceOf[Atmosphere]
   }
 }

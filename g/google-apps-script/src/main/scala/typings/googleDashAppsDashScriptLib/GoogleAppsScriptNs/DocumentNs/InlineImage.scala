@@ -33,30 +33,30 @@ trait InlineImage extends js.Object {
 object InlineImage {
   @scala.inline
   def apply(
-    copy: js.Function0[InlineImage],
-    getAltDescription: js.Function0[java.lang.String],
-    getAltTitle: js.Function0[java.lang.String],
-    getAs: js.Function1[java.lang.String, googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob],
-    getAttributes: js.Function0[js.Object],
-    getBlob: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob],
-    getHeight: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getLinkUrl: js.Function0[java.lang.String],
-    getNextSibling: js.Function0[Element],
-    getParent: js.Function0[ContainerElement],
-    getPreviousSibling: js.Function0[Element],
-    getType: js.Function0[ElementType],
-    getWidth: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    isAtDocumentEnd: js.Function0[scala.Boolean],
-    merge: js.Function0[InlineImage],
-    removeFromParent: js.Function0[InlineImage],
-    setAltDescription: js.Function1[java.lang.String, InlineImage],
-    setAltTitle: js.Function1[java.lang.String, InlineImage],
-    setAttributes: js.Function1[js.Object, InlineImage],
-    setHeight: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, InlineImage],
-    setLinkUrl: js.Function1[java.lang.String, InlineImage],
-    setWidth: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, InlineImage]
+    copy: () => InlineImage,
+    getAltDescription: () => java.lang.String,
+    getAltTitle: () => java.lang.String,
+    getAs: java.lang.String => googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob,
+    getAttributes: () => js.Object,
+    getBlob: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob,
+    getHeight: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getLinkUrl: () => java.lang.String,
+    getNextSibling: () => Element,
+    getParent: () => ContainerElement,
+    getPreviousSibling: () => Element,
+    getType: () => ElementType,
+    getWidth: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    isAtDocumentEnd: () => scala.Boolean,
+    merge: () => InlineImage,
+    removeFromParent: () => InlineImage,
+    setAltDescription: java.lang.String => InlineImage,
+    setAltTitle: java.lang.String => InlineImage,
+    setAttributes: js.Object => InlineImage,
+    setHeight: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => InlineImage,
+    setLinkUrl: java.lang.String => InlineImage,
+    setWidth: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => InlineImage
   ): InlineImage = {
-    val __obj = js.Dynamic.literal(copy = copy, getAltDescription = getAltDescription, getAltTitle = getAltTitle, getAs = getAs, getAttributes = getAttributes, getBlob = getBlob, getHeight = getHeight, getLinkUrl = getLinkUrl, getNextSibling = getNextSibling, getParent = getParent, getPreviousSibling = getPreviousSibling, getType = getType, getWidth = getWidth, isAtDocumentEnd = isAtDocumentEnd, merge = merge, removeFromParent = removeFromParent, setAltDescription = setAltDescription, setAltTitle = setAltTitle, setAttributes = setAttributes, setHeight = setHeight, setLinkUrl = setLinkUrl, setWidth = setWidth)
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), getAltDescription = js.Any.fromFunction0(getAltDescription), getAltTitle = js.Any.fromFunction0(getAltTitle), getAs = js.Any.fromFunction1(getAs), getAttributes = js.Any.fromFunction0(getAttributes), getBlob = js.Any.fromFunction0(getBlob), getHeight = js.Any.fromFunction0(getHeight), getLinkUrl = js.Any.fromFunction0(getLinkUrl), getNextSibling = js.Any.fromFunction0(getNextSibling), getParent = js.Any.fromFunction0(getParent), getPreviousSibling = js.Any.fromFunction0(getPreviousSibling), getType = js.Any.fromFunction0(getType), getWidth = js.Any.fromFunction0(getWidth), isAtDocumentEnd = js.Any.fromFunction0(isAtDocumentEnd), merge = js.Any.fromFunction0(merge), removeFromParent = js.Any.fromFunction0(removeFromParent), setAltDescription = js.Any.fromFunction1(setAltDescription), setAltTitle = js.Any.fromFunction1(setAltTitle), setAttributes = js.Any.fromFunction1(setAttributes), setHeight = js.Any.fromFunction1(setHeight), setLinkUrl = js.Any.fromFunction1(setLinkUrl), setWidth = js.Any.fromFunction1(setWidth))
   
     __obj.asInstanceOf[InlineImage]
   }

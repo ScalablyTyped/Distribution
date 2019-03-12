@@ -25,14 +25,14 @@ object XLayoutConstrains {
   def apply(
     MinimumSize: Size,
     PreferredSize: Size,
-    acquire: js.Function0[scala.Unit],
-    calcAdjustedSize: js.Function1[Size, Size],
-    getMinimumSize: js.Function0[Size],
-    getPreferredSize: js.Function0[Size],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    calcAdjustedSize: Size => Size,
+    getMinimumSize: () => Size,
+    getPreferredSize: () => Size,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XLayoutConstrains = {
-    val __obj = js.Dynamic.literal(MinimumSize = MinimumSize, PreferredSize = PreferredSize, acquire = acquire, calcAdjustedSize = calcAdjustedSize, getMinimumSize = getMinimumSize, getPreferredSize = getPreferredSize, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(MinimumSize = MinimumSize, PreferredSize = PreferredSize, acquire = js.Any.fromFunction0(acquire), calcAdjustedSize = js.Any.fromFunction1(calcAdjustedSize), getMinimumSize = js.Any.fromFunction0(getMinimumSize), getPreferredSize = js.Any.fromFunction0(getPreferredSize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XLayoutConstrains]
   }

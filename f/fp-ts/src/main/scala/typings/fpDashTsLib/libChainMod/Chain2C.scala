@@ -18,23 +18,11 @@ object Chain2C {
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */, L](
     URI: F,
     _L: L,
-    ap: js.Function2[
-      fpDashTsLib.libHKTMod.Type2[F, L, js.Function1[js.Any, js.Any]], 
-      fpDashTsLib.libHKTMod.Type2[F, L, js.Any], 
-      fpDashTsLib.libHKTMod.Type2[F, L, js.Any]
-    ],
-    chain: js.Function2[
-      fpDashTsLib.libHKTMod.Type2[F, L, js.Any], 
-      js.Function1[js.Any, fpDashTsLib.libHKTMod.Type2[F, L, js.Any]], 
-      fpDashTsLib.libHKTMod.Type2[F, L, js.Any]
-    ],
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.Type2[F, L, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type2[F, L, js.Any]
-    ]
+    ap: (fpDashTsLib.libHKTMod.Type2[F, L, js.Function1[js.Any, js.Any]], fpDashTsLib.libHKTMod.Type2[F, L, js.Any]) => fpDashTsLib.libHKTMod.Type2[F, L, js.Any],
+    chain: (fpDashTsLib.libHKTMod.Type2[F, L, js.Any], js.Function1[js.Any, fpDashTsLib.libHKTMod.Type2[F, L, js.Any]]) => fpDashTsLib.libHKTMod.Type2[F, L, js.Any],
+    map: (fpDashTsLib.libHKTMod.Type2[F, L, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type2[F, L, js.Any]
   ): Chain2C[F, L] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], ap = ap, chain = chain, map = map)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], ap = js.Any.fromFunction2(ap), chain = js.Any.fromFunction2(chain), map = js.Any.fromFunction2(map))
   
     __obj.asInstanceOf[Chain2C[F, L]]
   }

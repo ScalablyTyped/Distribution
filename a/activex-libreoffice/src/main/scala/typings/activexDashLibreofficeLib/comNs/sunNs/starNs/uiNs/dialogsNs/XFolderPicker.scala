@@ -48,17 +48,17 @@ object XFolderPicker {
   def apply(
     Directory: java.lang.String,
     DisplayDirectory: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    execute: js.Function0[scala.Double],
-    getDirectory: js.Function0[java.lang.String],
-    getDisplayDirectory: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setDescription: js.Function1[java.lang.String, scala.Unit],
-    setDisplayDirectory: js.Function1[java.lang.String, scala.Unit],
-    setTitle: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    execute: () => scala.Double,
+    getDirectory: () => java.lang.String,
+    getDisplayDirectory: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setDescription: java.lang.String => scala.Unit,
+    setDisplayDirectory: java.lang.String => scala.Unit,
+    setTitle: java.lang.String => scala.Unit
   ): XFolderPicker = {
-    val __obj = js.Dynamic.literal(Directory = Directory, DisplayDirectory = DisplayDirectory, acquire = acquire, execute = execute, getDirectory = getDirectory, getDisplayDirectory = getDisplayDirectory, queryInterface = queryInterface, release = release, setDescription = setDescription, setDisplayDirectory = setDisplayDirectory, setTitle = setTitle)
+    val __obj = js.Dynamic.literal(Directory = Directory, DisplayDirectory = DisplayDirectory, acquire = js.Any.fromFunction0(acquire), execute = js.Any.fromFunction0(execute), getDirectory = js.Any.fromFunction0(getDirectory), getDisplayDirectory = js.Any.fromFunction0(getDisplayDirectory), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDescription = js.Any.fromFunction1(setDescription), setDisplayDirectory = js.Any.fromFunction1(setDisplayDirectory), setTitle = js.Any.fromFunction1(setTitle))
   
     __obj.asInstanceOf[XFolderPicker]
   }

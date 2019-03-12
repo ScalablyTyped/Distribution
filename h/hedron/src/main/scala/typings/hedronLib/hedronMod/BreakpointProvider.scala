@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BreakpointProvider ()
   extends reactLib.reactMod.Component[
-      BreakpointsProps with reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLElement], 
+      BreakpointsProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement], 
       js.Object, 
       js.Any
     ]

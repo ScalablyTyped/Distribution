@@ -39,15 +39,15 @@ object ITab {
     closable: js.UndefOr[scala.Boolean] = js.undefined,
     closableCls: java.lang.String = null,
     closeText: java.lang.String = null,
-    disable: js.Function1[/* silent */ js.UndefOr[js.Any], scala.Unit] = null,
+    disable: /* silent */ js.UndefOr[js.Any] => scala.Unit = null,
     disabledCls: java.lang.String = null,
-    enable: js.Function1[/* silent */ js.UndefOr[js.Any], scala.Unit] = null,
-    getTemplateArgs: js.Function0[_] = null,
-    initComponent: js.Function0[scala.Unit] = null,
+    enable: /* silent */ js.UndefOr[js.Any] => scala.Unit = null,
+    getTemplateArgs: () => _ = null,
+    initComponent: () => scala.Unit = null,
     isTab: js.UndefOr[scala.Boolean] = js.undefined,
     scale: js.Any = null,
-    setCard: js.Function1[/* card */ js.UndefOr[extjsLib.ExtNs.IComponent], scala.Unit] = null,
-    setClosable: js.Function1[/* closable */ js.UndefOr[scala.Boolean], scala.Unit] = null
+    setCard: /* card */ js.UndefOr[extjsLib.ExtNs.IComponent] => scala.Unit = null,
+    setClosable: /* closable */ js.UndefOr[scala.Boolean] => scala.Unit = null
   ): ITab = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IButton)
@@ -57,15 +57,15 @@ object ITab {
     if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)
     if (closableCls != null) __obj.updateDynamic("closableCls")(closableCls)
     if (closeText != null) __obj.updateDynamic("closeText")(closeText)
-    if (disable != null) __obj.updateDynamic("disable")(disable)
+    if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction1(disable))
     if (disabledCls != null) __obj.updateDynamic("disabledCls")(disabledCls)
-    if (enable != null) __obj.updateDynamic("enable")(enable)
-    if (getTemplateArgs != null) __obj.updateDynamic("getTemplateArgs")(getTemplateArgs)
-    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
+    if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction1(enable))
+    if (getTemplateArgs != null) __obj.updateDynamic("getTemplateArgs")(js.Any.fromFunction0(getTemplateArgs))
+    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
     if (!js.isUndefined(isTab)) __obj.updateDynamic("isTab")(isTab)
     if (scale != null) __obj.updateDynamic("scale")(scale)
-    if (setCard != null) __obj.updateDynamic("setCard")(setCard)
-    if (setClosable != null) __obj.updateDynamic("setClosable")(setClosable)
+    if (setCard != null) __obj.updateDynamic("setCard")(js.Any.fromFunction1(setCard))
+    if (setClosable != null) __obj.updateDynamic("setClosable")(js.Any.fromFunction1(setClosable))
     __obj.asInstanceOf[ITab]
   }
 }

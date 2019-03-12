@@ -16,13 +16,13 @@ trait ProcessingInstruction extends js.Object {
 object ProcessingInstruction {
   @scala.inline
   def apply(
-    detach: js.Function0[Content],
-    getData: js.Function0[java.lang.String],
-    getParentElement: js.Function0[Element],
-    getTarget: js.Function0[java.lang.String],
-    getValue: js.Function0[java.lang.String]
+    detach: () => Content,
+    getData: () => java.lang.String,
+    getParentElement: () => Element,
+    getTarget: () => java.lang.String,
+    getValue: () => java.lang.String
   ): ProcessingInstruction = {
-    val __obj = js.Dynamic.literal(detach = detach, getData = getData, getParentElement = getParentElement, getTarget = getTarget, getValue = getValue)
+    val __obj = js.Dynamic.literal(detach = js.Any.fromFunction0(detach), getData = js.Any.fromFunction0(getData), getParentElement = js.Any.fromFunction0(getParentElement), getTarget = js.Any.fromFunction0(getTarget), getValue = js.Any.fromFunction0(getValue))
   
     __obj.asInstanceOf[ProcessingInstruction]
   }

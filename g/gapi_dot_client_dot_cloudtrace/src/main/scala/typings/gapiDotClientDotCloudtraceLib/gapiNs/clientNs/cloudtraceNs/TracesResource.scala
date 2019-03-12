@@ -20,13 +20,10 @@ trait TracesResource extends js.Object {
 object TracesResource {
   @scala.inline
   def apply(
-    batchWrite: js.Function1[
-      gapiDotClientDotCloudtraceLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
+    batchWrite: gapiDotClientDotCloudtraceLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
     spans: SpansResource
   ): TracesResource = {
-    val __obj = js.Dynamic.literal(batchWrite = batchWrite, spans = spans)
+    val __obj = js.Dynamic.literal(batchWrite = js.Any.fromFunction1(batchWrite), spans = spans)
   
     __obj.asInstanceOf[TracesResource]
   }

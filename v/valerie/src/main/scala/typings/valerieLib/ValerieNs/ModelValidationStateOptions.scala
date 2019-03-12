@@ -17,13 +17,13 @@ trait ModelValidationStateOptions extends js.Object {
 object ModelValidationStateOptions {
   @scala.inline
   def apply(
-    applicable: js.Function0[scala.Boolean],
+    applicable: () => scala.Boolean,
     excludeFromSummary: scala.Boolean,
     failureMessage: java.lang.String,
-    name: js.Function0[java.lang.String],
-    paused: js.Function0[scala.Boolean]
+    name: () => java.lang.String,
+    paused: () => scala.Boolean
   ): ModelValidationStateOptions = {
-    val __obj = js.Dynamic.literal(applicable = applicable, excludeFromSummary = excludeFromSummary, failureMessage = failureMessage, name = name, paused = paused)
+    val __obj = js.Dynamic.literal(applicable = js.Any.fromFunction0(applicable), excludeFromSummary = excludeFromSummary, failureMessage = failureMessage, name = js.Any.fromFunction0(name), paused = js.Any.fromFunction0(paused))
   
     __obj.asInstanceOf[ModelValidationStateOptions]
   }

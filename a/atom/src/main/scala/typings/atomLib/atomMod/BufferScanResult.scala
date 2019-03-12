@@ -24,11 +24,11 @@ object BufferScanResult {
     `match`: stdLib.RegExpExecArray,
     matchText: java.lang.String,
     range: Range,
-    replace: js.Function1[java.lang.String, scala.Unit],
-    stop: js.Function0[scala.Unit],
+    replace: java.lang.String => scala.Unit,
+    stop: () => scala.Unit,
     stopped: scala.Boolean
   ): BufferScanResult = {
-    val __obj = js.Dynamic.literal(buffer = buffer, lineText = lineText, matchText = matchText, range = range, replace = replace, stop = stop, stopped = stopped)
+    val __obj = js.Dynamic.literal(buffer = buffer, lineText = lineText, matchText = matchText, range = range, replace = js.Any.fromFunction1(replace), stop = js.Any.fromFunction0(stop), stopped = stopped)
     __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[BufferScanResult]
   }

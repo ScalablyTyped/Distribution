@@ -78,15 +78,15 @@ object RenderCamera {
     far: scala.Double,
     fovX: scala.Double,
     fovY: scala.Double,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     near: scala.Double,
     projectionMatrix: stdLib.ArrayLike[scala.Double],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     up: stdLib.ArrayLike[scala.Double],
     viewInverseTransposeMatrix: stdLib.ArrayLike[scala.Double],
     viewMatrix: stdLib.ArrayLike[scala.Double]
   ): RenderCamera = {
-    val __obj = js.Dynamic.literal(center = center, constructor = constructor, eye = eye, far = far, fovX = fovX, fovY = fovY, hasOwnProperty = hasOwnProperty, near = near, projectionMatrix = projectionMatrix, propertyIsEnumerable = propertyIsEnumerable, up = up, viewInverseTransposeMatrix = viewInverseTransposeMatrix, viewMatrix = viewMatrix)
+    val __obj = js.Dynamic.literal(center = center, constructor = constructor, eye = eye, far = far, fovX = fovX, fovY = fovY, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), near = near, projectionMatrix = projectionMatrix, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), up = up, viewInverseTransposeMatrix = viewInverseTransposeMatrix, viewMatrix = viewMatrix)
   
     __obj.asInstanceOf[RenderCamera]
   }

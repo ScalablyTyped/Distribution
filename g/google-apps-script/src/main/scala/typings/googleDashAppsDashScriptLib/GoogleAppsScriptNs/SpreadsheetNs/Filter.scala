@@ -20,14 +20,14 @@ trait Filter extends js.Object {
 object Filter {
   @scala.inline
   def apply(
-    getColumnFilterCriteria: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, FilterCriteria],
-    getRange: js.Function0[Range],
-    remove: js.Function0[scala.Unit],
-    removeColumnFilterCriteria: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, Filter],
-    setColumnFilterCriteria: js.Function2[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, FilterCriteria, Filter],
-    sort: js.Function2[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Boolean, Filter]
+    getColumnFilterCriteria: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => FilterCriteria,
+    getRange: () => Range,
+    remove: () => scala.Unit,
+    removeColumnFilterCriteria: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => Filter,
+    setColumnFilterCriteria: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, FilterCriteria) => Filter,
+    sort: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Boolean) => Filter
   ): Filter = {
-    val __obj = js.Dynamic.literal(getColumnFilterCriteria = getColumnFilterCriteria, getRange = getRange, remove = remove, removeColumnFilterCriteria = removeColumnFilterCriteria, setColumnFilterCriteria = setColumnFilterCriteria, sort = sort)
+    val __obj = js.Dynamic.literal(getColumnFilterCriteria = js.Any.fromFunction1(getColumnFilterCriteria), getRange = js.Any.fromFunction0(getRange), remove = js.Any.fromFunction0(remove), removeColumnFilterCriteria = js.Any.fromFunction1(removeColumnFilterCriteria), setColumnFilterCriteria = js.Any.fromFunction2(setColumnFilterCriteria), sort = js.Any.fromFunction2(sort))
   
     __obj.asInstanceOf[Filter]
   }

@@ -16,11 +16,11 @@ object IApprovalAssignmentClassInfo {
   @scala.inline
   def apply(
     AnyAssigneeApproves: scala.Boolean,
-    Clone: js.Function0[IApprovalAssignmentClassInfo],
+    Clone: () => IApprovalAssignmentClassInfo,
     SignatureForApproval: ISignatureSettings,
     SignatureForRejection: ISignatureSettings
   ): IApprovalAssignmentClassInfo = {
-    val __obj = js.Dynamic.literal(AnyAssigneeApproves = AnyAssigneeApproves, Clone = Clone, SignatureForApproval = SignatureForApproval, SignatureForRejection = SignatureForRejection)
+    val __obj = js.Dynamic.literal(AnyAssigneeApproves = AnyAssigneeApproves, Clone = js.Any.fromFunction0(Clone), SignatureForApproval = SignatureForApproval, SignatureForRejection = SignatureForRejection)
   
     __obj.asInstanceOf[IApprovalAssignmentClassInfo]
   }

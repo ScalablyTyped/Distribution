@@ -5,22 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InsertRet extends js.Object {
-  var in: js.Function1[/* collection */ js.Any, InsertExpression]
-  var in_ : js.Function1[/* collection */ js.Any, InsertExpression]
-  def into(collection: js.Any): InsertExpression
-}
-
-object InsertRet {
-  @scala.inline
-  def apply(
-    in: js.Function1[/* collection */ js.Any, InsertExpression],
-    in_ : js.Function1[/* collection */ js.Any, InsertExpression],
-    into: js.Function1[js.Any, InsertExpression]
-  ): InsertRet = {
-    val __obj = js.Dynamic.literal(in = in, in_ = in_, into = into)
-  
-    __obj.asInstanceOf[InsertRet]
-  }
+  @JSName("in")
+  var in_Original: js.Function1[/* collection */ js.Any, InsertExpression] = js.native
+  @JSName("in_")
+  var in__Original: js.Function1[/* collection */ js.Any, InsertExpression] = js.native
+  def in(collection: js.Any): InsertExpression = js.native
+  def in_(collection: js.Any): InsertExpression = js.native
+  def into(collection: js.Any): InsertExpression = js.native
 }
 

@@ -31,13 +31,13 @@ trait XConfirmDeleteBroadcaster
 object XConfirmDeleteBroadcaster {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addConfirmDeleteListener: js.Function1[XConfirmDeleteListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeConfirmDeleteListener: js.Function1[XConfirmDeleteListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addConfirmDeleteListener: XConfirmDeleteListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeConfirmDeleteListener: XConfirmDeleteListener => scala.Unit
   ): XConfirmDeleteBroadcaster = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addConfirmDeleteListener = addConfirmDeleteListener, queryInterface = queryInterface, release = release, removeConfirmDeleteListener = removeConfirmDeleteListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addConfirmDeleteListener = js.Any.fromFunction1(addConfirmDeleteListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeConfirmDeleteListener = js.Any.fromFunction1(removeConfirmDeleteListener))
   
     __obj.asInstanceOf[XConfirmDeleteBroadcaster]
   }

@@ -22,11 +22,11 @@ object XServiceDocumenter {
   def apply(
     CoreBaseUrl: java.lang.String,
     ServiceBaseUrl: java.lang.String,
-    showCoreDocs: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XServiceInfo, scala.Unit],
-    showInterfaceDocs: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XTypeProvider, scala.Unit],
-    showServiceDocs: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XServiceInfo, scala.Unit]
+    showCoreDocs: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XServiceInfo => scala.Unit,
+    showInterfaceDocs: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XTypeProvider => scala.Unit,
+    showServiceDocs: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XServiceInfo => scala.Unit
   ): XServiceDocumenter = {
-    val __obj = js.Dynamic.literal(CoreBaseUrl = CoreBaseUrl, ServiceBaseUrl = ServiceBaseUrl, showCoreDocs = showCoreDocs, showInterfaceDocs = showInterfaceDocs, showServiceDocs = showServiceDocs)
+    val __obj = js.Dynamic.literal(CoreBaseUrl = CoreBaseUrl, ServiceBaseUrl = ServiceBaseUrl, showCoreDocs = js.Any.fromFunction1(showCoreDocs), showInterfaceDocs = js.Any.fromFunction1(showInterfaceDocs), showServiceDocs = js.Any.fromFunction1(showServiceDocs))
   
     __obj.asInstanceOf[XServiceDocumenter]
   }

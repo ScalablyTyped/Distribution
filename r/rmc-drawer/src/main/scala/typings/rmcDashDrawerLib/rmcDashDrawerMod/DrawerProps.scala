@@ -45,11 +45,7 @@ object DrawerProps {
     dragHandleStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     dragToggleDistance: scala.Int | scala.Double = null,
     enableDragHandle: js.UndefOr[scala.Boolean] = js.undefined,
-    onOpenChange: js.Function2[
-      /* open */ scala.Boolean, 
-      /* overlay */ js.UndefOr[rmcDashDrawerLib.Anon_OverlayClicked], 
-      scala.Unit
-    ] = null,
+    onOpenChange: (/* open */ scala.Boolean, /* overlay */ js.UndefOr[rmcDashDrawerLib.Anon_OverlayClicked]) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     overlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     position: rmcDashDrawerLib.rmcDashDrawerLibStrings.left | rmcDashDrawerLib.rmcDashDrawerLibStrings.right | rmcDashDrawerLib.rmcDashDrawerLibStrings.top | rmcDashDrawerLib.rmcDashDrawerLibStrings.bottom = null,
@@ -68,7 +64,7 @@ object DrawerProps {
     if (dragHandleStyle != null) __obj.updateDynamic("dragHandleStyle")(dragHandleStyle)
     if (dragToggleDistance != null) __obj.updateDynamic("dragToggleDistance")(dragToggleDistance.asInstanceOf[js.Any])
     if (!js.isUndefined(enableDragHandle)) __obj.updateDynamic("enableDragHandle")(enableDragHandle)
-    if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(onOpenChange)
+    if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction2(onOpenChange))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle)
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])

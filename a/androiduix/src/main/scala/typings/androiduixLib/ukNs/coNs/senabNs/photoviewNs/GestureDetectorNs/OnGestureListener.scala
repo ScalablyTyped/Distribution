@@ -14,11 +14,11 @@ trait OnGestureListener extends js.Object {
 object OnGestureListener {
   @scala.inline
   def apply(
-    onDrag: js.Function2[scala.Double, scala.Double, scala.Unit],
-    onFling: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
-    onScale: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit]
+    onDrag: (scala.Double, scala.Double) => scala.Unit,
+    onFling: (scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    onScale: (scala.Double, scala.Double, scala.Double) => scala.Unit
   ): OnGestureListener = {
-    val __obj = js.Dynamic.literal(onDrag = onDrag, onFling = onFling, onScale = onScale)
+    val __obj = js.Dynamic.literal(onDrag = js.Any.fromFunction2(onDrag), onFling = js.Any.fromFunction4(onFling), onScale = js.Any.fromFunction3(onScale))
   
     __obj.asInstanceOf[OnGestureListener]
   }

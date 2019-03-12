@@ -37,13 +37,13 @@ trait XCellSeries
 object XCellSeries {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    fillAuto: js.Function2[FillDirection, scala.Double, scala.Unit],
-    fillSeries: js.Function5[FillDirection, FillMode, FillDateMode, scala.Double, scala.Double, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    fillAuto: (FillDirection, scala.Double) => scala.Unit,
+    fillSeries: (FillDirection, FillMode, FillDateMode, scala.Double, scala.Double) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCellSeries = {
-    val __obj = js.Dynamic.literal(acquire = acquire, fillAuto = fillAuto, fillSeries = fillSeries, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), fillAuto = js.Any.fromFunction2(fillAuto), fillSeries = js.Any.fromFunction5(fillSeries), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCellSeries]
   }

@@ -19,13 +19,13 @@ trait SinonMapMatcher extends SinonMatcher {
 object SinonMapMatcher {
   @scala.inline
   def apply(
-    and: js.Function1[SinonMatcher, SinonMatcher],
-    contains: js.Function1[SimplifiedMap, SinonMatcher],
-    deepEquals: js.Function1[SimplifiedMap, SinonMatcher],
-    or: js.Function1[SinonMatcher, SinonMatcher],
-    test: js.Function1[js.Any, scala.Boolean]
+    and: SinonMatcher => SinonMatcher,
+    contains: SimplifiedMap => SinonMatcher,
+    deepEquals: SimplifiedMap => SinonMatcher,
+    or: SinonMatcher => SinonMatcher,
+    test: js.Any => scala.Boolean
   ): SinonMapMatcher = {
-    val __obj = js.Dynamic.literal(and = and, contains = contains, deepEquals = deepEquals, or = or, test = test)
+    val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), contains = js.Any.fromFunction1(contains), deepEquals = js.Any.fromFunction1(deepEquals), or = js.Any.fromFunction1(or), test = js.Any.fromFunction1(test))
   
     __obj.asInstanceOf[SinonMapMatcher]
   }

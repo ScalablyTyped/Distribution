@@ -11,8 +11,8 @@ trait Stemmer extends js.Object {
 
 object Stemmer {
   @scala.inline
-  def apply(stem: js.Function1[java.lang.String, java.lang.String]): Stemmer = {
-    val __obj = js.Dynamic.literal(stem = stem)
+  def apply(stem: java.lang.String => java.lang.String): Stemmer = {
+    val __obj = js.Dynamic.literal(stem = js.Any.fromFunction1(stem))
   
     __obj.asInstanceOf[Stemmer]
   }

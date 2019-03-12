@@ -43,16 +43,16 @@ object Anon_CanonicalUris {
   def apply(
     canonicalUris: js.UndefOr[scala.Boolean] = js.undefined,
     manifest: js.Array[adoneLib.adoneNs.fastNs.INs.File] | (adoneLib.adoneNs.streamNs.coreNs.Stream[_, adoneLib.adoneNs.fastNs.INs.File]) = null,
-    modifyReved: js.Function1[/* path */ java.lang.String, java.lang.String] = null,
-    modifyUnreved: js.Function1[/* path */ java.lang.String, java.lang.String] = null,
+    modifyReved: /* path */ java.lang.String => java.lang.String = null,
+    modifyUnreved: /* path */ java.lang.String => java.lang.String = null,
     prefix: java.lang.String = null,
     replaceExtensions: js.Array[java.lang.String] = null
   ): Anon_CanonicalUris = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(canonicalUris)) __obj.updateDynamic("canonicalUris")(canonicalUris)
     if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
-    if (modifyReved != null) __obj.updateDynamic("modifyReved")(modifyReved)
-    if (modifyUnreved != null) __obj.updateDynamic("modifyUnreved")(modifyUnreved)
+    if (modifyReved != null) __obj.updateDynamic("modifyReved")(js.Any.fromFunction1(modifyReved))
+    if (modifyUnreved != null) __obj.updateDynamic("modifyUnreved")(js.Any.fromFunction1(modifyUnreved))
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (replaceExtensions != null) __obj.updateDynamic("replaceExtensions")(replaceExtensions)
     __obj.asInstanceOf[Anon_CanonicalUris]

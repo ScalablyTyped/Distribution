@@ -31,9 +31,9 @@ object CallbackObject {
     data: js.Array[_],
     hook: scala.Double,
     `object`: js.Any,
-    reset: js.Function0[scala.Unit]
+    reset: () => scala.Unit
   ): CallbackObject = {
-    val __obj = js.Dynamic.literal(autoReset = autoReset, called = called, data = data, hook = hook, reset = reset)
+    val __obj = js.Dynamic.literal(autoReset = autoReset, called = called, data = data, hook = hook, reset = js.Any.fromFunction0(reset))
     __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[CallbackObject]
   }

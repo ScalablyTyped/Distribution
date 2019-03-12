@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.Module")
 @js.native
 class Module protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val CodeName: java.lang.String = js.native
   val Creator: XlCreator = js.native
   var `Excel.Module_typekey`: Module = js.native
@@ -18,7 +18,7 @@ class Module protected () extends js.Object {
   var OnDoubleClick: java.lang.String = js.native
   var OnSheetActivate: java.lang.String = js.native
   var OnSheetDeactivate: java.lang.String = js.native
-  val PageSetup: PageSetup = js.native
+  val PageSetup: activexDashExcelLib.ExcelNs.PageSetup = js.native
   val Parent: js.Any = js.native
   val Previous: js.Any = js.native
   val ProtectContents: scala.Boolean = js.native

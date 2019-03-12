@@ -24,7 +24,7 @@ trait CustomShape
     * If the {@link CustomShapeEngine} property is "com.sun.star.drawing.EnhancedCustomShapeEngine", then this property is containing properties as they are
     * specified in the service {@link com.sun.star.drawing.EnhancedCustomShapeGeometry}
     */
-  var CustomShapeGeometry: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  var CustomShapeGeometry: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /** This property describes the URL to a replacement graphic that could be displayed if the {@link CustomShape} engine is not available. */
   var CustomShapeReplacementURL: java.lang.String
 }
@@ -34,7 +34,7 @@ object CustomShape {
   def apply(
     CustomShapeData: java.lang.String,
     CustomShapeEngine: java.lang.String,
-    CustomShapeGeometry: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    CustomShapeGeometry: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     CustomShapeReplacementURL: java.lang.String,
     FillProperties: FillProperties = null,
     LineProperties: LineProperties = null,

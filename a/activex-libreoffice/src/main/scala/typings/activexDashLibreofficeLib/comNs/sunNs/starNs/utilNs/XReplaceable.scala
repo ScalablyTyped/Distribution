@@ -28,24 +28,17 @@ trait XReplaceable extends XSearchable {
 object XReplaceable {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createReplaceDescriptor: js.Function0[XReplaceDescriptor],
-    createSearchDescriptor: js.Function0[XSearchDescriptor],
-    findAll: js.Function1[
-      XSearchDescriptor, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
-    ],
-    findFirst: js.Function1[XSearchDescriptor, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    findNext: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      XSearchDescriptor, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    replaceAll: js.Function1[XSearchDescriptor, scala.Double]
+    acquire: () => scala.Unit,
+    createReplaceDescriptor: () => XReplaceDescriptor,
+    createSearchDescriptor: () => XSearchDescriptor,
+    findAll: XSearchDescriptor => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    findFirst: XSearchDescriptor => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    findNext: (activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, XSearchDescriptor) => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    replaceAll: XSearchDescriptor => scala.Double
   ): XReplaceable = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createReplaceDescriptor = createReplaceDescriptor, createSearchDescriptor = createSearchDescriptor, findAll = findAll, findFirst = findFirst, findNext = findNext, queryInterface = queryInterface, release = release, replaceAll = replaceAll)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createReplaceDescriptor = js.Any.fromFunction0(createReplaceDescriptor), createSearchDescriptor = js.Any.fromFunction0(createSearchDescriptor), findAll = js.Any.fromFunction1(findAll), findFirst = js.Any.fromFunction1(findFirst), findNext = js.Any.fromFunction2(findNext), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), replaceAll = js.Any.fromFunction1(replaceAll))
   
     __obj.asInstanceOf[XReplaceable]
   }

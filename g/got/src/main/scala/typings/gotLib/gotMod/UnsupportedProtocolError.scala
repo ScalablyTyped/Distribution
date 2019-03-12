@@ -8,12 +8,14 @@ import scala.scalajs.js.annotation._
 trait UnsupportedProtocolError
   extends StdError
      with gotLib.gotMod.gotNs.GotError {
-  var name: gotLib.gotLibStrings.UnsupportedProtocolError
+  @JSName("name")
+  var name_UnsupportedProtocolError: gotLib.gotLibStrings.UnsupportedProtocolError
 }
 
 object UnsupportedProtocolError {
   @scala.inline
   def apply(
+    message: java.lang.String,
     name: gotLib.gotLibStrings.UnsupportedProtocolError,
     code: java.lang.String = null,
     host: java.lang.String = null,
@@ -25,7 +27,7 @@ object UnsupportedProtocolError {
     stack: java.lang.String = null,
     url: java.lang.String = null
   ): UnsupportedProtocolError = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(message = message, name = name)
     if (code != null) __obj.updateDynamic("code")(code)
     if (host != null) __obj.updateDynamic("host")(host)
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)

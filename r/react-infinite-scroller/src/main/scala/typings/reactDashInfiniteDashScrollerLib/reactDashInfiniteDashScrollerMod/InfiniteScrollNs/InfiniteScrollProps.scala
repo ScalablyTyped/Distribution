@@ -18,7 +18,7 @@ trait InfiniteScrollProps
   /**
     * Override method to return a different scroll listener if it's not the immediate parent of InfiniteScroll.
     */
-  var getScrollParent: js.UndefOr[js.Function0[reactLib.HTMLElement | scala.Null]] = js.undefined
+  var getScrollParent: js.UndefOr[js.Function0[stdLib.HTMLElement | scala.Null]] = js.undefined
   /**
     * Whether there are more items to be loaded. Event listeners are removed if false.
     * Defaults to false.
@@ -68,10 +68,10 @@ trait InfiniteScrollProps
 object InfiniteScrollProps {
   @scala.inline
   def apply(
-    loadMore: js.Function1[scala.Double, scala.Unit],
+    loadMore: scala.Double => scala.Unit,
     HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[InfiniteScroll] = null,
     element: java.lang.String = null,
-    getScrollParent: js.Function0[reactLib.HTMLElement | scala.Null] = null,
+    getScrollParent: () => stdLib.HTMLElement | scala.Null = null,
     hasMore: js.UndefOr[scala.Boolean] = js.undefined,
     initialLoad: js.UndefOr[scala.Boolean] = js.undefined,
     isReverse: js.UndefOr[scala.Boolean] = js.undefined,
@@ -81,10 +81,10 @@ object InfiniteScrollProps {
     useCapture: js.UndefOr[scala.Boolean] = js.undefined,
     useWindow: js.UndefOr[scala.Boolean] = js.undefined
   ): InfiniteScrollProps = {
-    val __obj = js.Dynamic.literal(loadMore = loadMore)
+    val __obj = js.Dynamic.literal(loadMore = js.Any.fromFunction1(loadMore))
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
     if (element != null) __obj.updateDynamic("element")(element)
-    if (getScrollParent != null) __obj.updateDynamic("getScrollParent")(getScrollParent)
+    if (getScrollParent != null) __obj.updateDynamic("getScrollParent")(js.Any.fromFunction0(getScrollParent))
     if (!js.isUndefined(hasMore)) __obj.updateDynamic("hasMore")(hasMore)
     if (!js.isUndefined(initialLoad)) __obj.updateDynamic("initialLoad")(initialLoad)
     if (!js.isUndefined(isReverse)) __obj.updateDynamic("isReverse")(isReverse)

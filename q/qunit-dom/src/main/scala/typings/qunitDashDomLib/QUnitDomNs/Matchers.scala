@@ -7,28 +7,42 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Matchers extends js.Object {
-  var containsText: js.Function2[/* text */ java.lang.String, /* message */ js.UndefOr[java.lang.String], scala.Unit] = js.native
-  var doesNotContainText: js.Function2[/* text */ java.lang.String, /* message */ js.UndefOr[java.lang.String], scala.Unit] = js.native
-  var doesNotHaveTextContaining: js.Function2[/* text */ java.lang.String, /* message */ js.UndefOr[java.lang.String], scala.Unit] = js.native
-  var hasNoAttribute: js.Function2[/* name */ java.lang.String, /* message */ js.UndefOr[java.lang.String], scala.Unit] = js.native
-  var hasNoClass: js.Function2[
+  @JSName("containsText")
+  var containsText_Original: js.Function2[/* text */ java.lang.String, /* message */ js.UndefOr[java.lang.String], scala.Unit] = js.native
+  @JSName("doesNotContainText")
+  var doesNotContainText_Original: js.Function2[/* text */ java.lang.String, /* message */ js.UndefOr[java.lang.String], scala.Unit] = js.native
+  @JSName("doesNotHaveTextContaining")
+  var doesNotHaveTextContaining_Original: js.Function2[/* text */ java.lang.String, /* message */ js.UndefOr[java.lang.String], scala.Unit] = js.native
+  @JSName("hasNoAttribute")
+  var hasNoAttribute_Original: js.Function2[/* name */ java.lang.String, /* message */ js.UndefOr[java.lang.String], scala.Unit] = js.native
+  @JSName("hasNoClass")
+  var hasNoClass_Original: js.Function2[
     /* expected */ java.lang.String, 
     /* message */ js.UndefOr[java.lang.String], 
     scala.Unit
   ] = js.native
-  var hasTextContaining: js.Function2[/* text */ java.lang.String, /* message */ js.UndefOr[java.lang.String], scala.Unit] = js.native
-  var lacksAttribute: js.Function2[/* name */ java.lang.String, /* message */ js.UndefOr[java.lang.String], scala.Unit] = js.native
-  var lacksClass: js.Function2[
+  @JSName("hasTextContaining")
+  var hasTextContaining_Original: js.Function2[/* text */ java.lang.String, /* message */ js.UndefOr[java.lang.String], scala.Unit] = js.native
+  @JSName("lacksAttribute")
+  var lacksAttribute_Original: js.Function2[/* name */ java.lang.String, /* message */ js.UndefOr[java.lang.String], scala.Unit] = js.native
+  @JSName("lacksClass")
+  var lacksClass_Original: js.Function2[
     /* expected */ java.lang.String, 
     /* message */ js.UndefOr[java.lang.String], 
     scala.Unit
   ] = js.native
-  var lacksValue: js.Function1[/* message */ js.UndefOr[java.lang.String], scala.Unit] = js.native
-  var matchesText: js.Function2[
+  @JSName("lacksValue")
+  var lacksValue_Original: js.Function1[/* message */ js.UndefOr[java.lang.String], scala.Unit] = js.native
+  @JSName("matchesText")
+  var matchesText_Original: js.Function2[
     /* expected */ java.lang.String | stdLib.RegExp, 
     /* message */ js.UndefOr[java.lang.String], 
     scala.Unit
   ] = js.native
+  def containsText(text: java.lang.String): scala.Unit = js.native
+  def containsText(text: java.lang.String, message: java.lang.String): scala.Unit = js.native
+  def doesNotContainText(text: java.lang.String): scala.Unit = js.native
+  def doesNotContainText(text: java.lang.String, message: java.lang.String): scala.Unit = js.native
   /**
     * Assert an `HTMLElement` matching the `selector` does not exists.
     *
@@ -60,6 +74,8 @@ trait Matchers extends js.Object {
     */
   def doesNotHaveClass(expected: java.lang.String): scala.Unit = js.native
   def doesNotHaveClass(expected: java.lang.String, message: java.lang.String): scala.Unit = js.native
+  def doesNotHaveTextContaining(text: java.lang.String): scala.Unit = js.native
+  def doesNotHaveTextContaining(text: java.lang.String, message: java.lang.String): scala.Unit = js.native
   /**
     * Assert that the text of the `HTMLElement` or an `HTMLElement`
     * matching the `selector` does not include the given `text`, using the
@@ -126,6 +142,10 @@ trait Matchers extends js.Object {
     */
   def hasClass(expected: java.lang.String): scala.Unit = js.native
   def hasClass(expected: java.lang.String, message: java.lang.String): scala.Unit = js.native
+  def hasNoAttribute(name: java.lang.String): scala.Unit = js.native
+  def hasNoAttribute(name: java.lang.String, message: java.lang.String): scala.Unit = js.native
+  def hasNoClass(expected: java.lang.String): scala.Unit = js.native
+  def hasNoClass(expected: java.lang.String, message: java.lang.String): scala.Unit = js.native
   /**
     * Assert that the `value` property of an `HTMLInputElement` is empty.
     *
@@ -152,6 +172,8 @@ trait Matchers extends js.Object {
   def hasText(expected: java.lang.String, message: java.lang.String): scala.Unit = js.native
   def hasText(expected: stdLib.RegExp): scala.Unit = js.native
   def hasText(expected: stdLib.RegExp, message: java.lang.String): scala.Unit = js.native
+  def hasTextContaining(text: java.lang.String): scala.Unit = js.native
+  def hasTextContaining(text: java.lang.String, message: java.lang.String): scala.Unit = js.native
   /**
     * Assert that the `value` property of an `HTMLInputElement` matches
     * the `expected` text or regular expression.
@@ -291,5 +313,15 @@ trait Matchers extends js.Object {
     */
   def isVisible(): scala.Unit = js.native
   def isVisible(message: java.lang.String): scala.Unit = js.native
+  def lacksAttribute(name: java.lang.String): scala.Unit = js.native
+  def lacksAttribute(name: java.lang.String, message: java.lang.String): scala.Unit = js.native
+  def lacksClass(expected: java.lang.String): scala.Unit = js.native
+  def lacksClass(expected: java.lang.String, message: java.lang.String): scala.Unit = js.native
+  def lacksValue(): scala.Unit = js.native
+  def lacksValue(message: java.lang.String): scala.Unit = js.native
+  def matchesText(expected: java.lang.String): scala.Unit = js.native
+  def matchesText(expected: java.lang.String, message: java.lang.String): scala.Unit = js.native
+  def matchesText(expected: stdLib.RegExp): scala.Unit = js.native
+  def matchesText(expected: stdLib.RegExp, message: java.lang.String): scala.Unit = js.native
 }
 

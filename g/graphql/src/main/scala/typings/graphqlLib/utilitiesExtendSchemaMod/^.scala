@@ -15,7 +15,7 @@ object ^ extends js.Object {
   def extendSchema(
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     documentAST: graphqlLib.languageAstMod.DocumentNode,
-    options: graphqlLib.utilitiesExtendSchemaMod.Options
+    options: Options
   ): graphqlLib.typeSchemaMod.GraphQLSchema = js.native
 }
 

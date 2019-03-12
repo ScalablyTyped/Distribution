@@ -30,16 +30,12 @@ object AutoCompleteEditorProps {
   @scala.inline
   def apply(
     column: reactDashDataDashGridLib.AdazzleReactDataGridNs.ExcelColumn = null,
-    editorDisplayValue: js.Function2[
-      /* column */ reactDashDataDashGridLib.AdazzleReactDataGridNs.ExcelColumn, 
-      /* value */ js.Any, 
-      java.lang.String
-    ] = null,
+    editorDisplayValue: (/* column */ reactDashDataDashGridLib.AdazzleReactDataGridNs.ExcelColumn, /* value */ js.Any) => java.lang.String = null,
     height: scala.Int | scala.Double = null,
     label: js.Any = null,
-    onCommit: js.Function0[scala.Unit] = null,
-    onFocus: js.Function0[scala.Unit] = null,
-    onKeyDown: js.Function0[scala.Unit] = null,
+    onCommit: () => scala.Unit = null,
+    onFocus: () => scala.Unit = null,
+    onKeyDown: () => scala.Unit = null,
     options: js.Array[reactDashDataDashGridLib.Anon_Id] = null,
     resultIdentifier: java.lang.String = null,
     search: java.lang.String = null,
@@ -48,12 +44,12 @@ object AutoCompleteEditorProps {
   ): AutoCompleteEditorProps = {
     val __obj = js.Dynamic.literal()
     if (column != null) __obj.updateDynamic("column")(column)
-    if (editorDisplayValue != null) __obj.updateDynamic("editorDisplayValue")(editorDisplayValue)
+    if (editorDisplayValue != null) __obj.updateDynamic("editorDisplayValue")(js.Any.fromFunction2(editorDisplayValue))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label)
-    if (onCommit != null) __obj.updateDynamic("onCommit")(onCommit)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onCommit != null) __obj.updateDynamic("onCommit")(js.Any.fromFunction0(onCommit))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction0(onFocus))
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction0(onKeyDown))
     if (options != null) __obj.updateDynamic("options")(options)
     if (resultIdentifier != null) __obj.updateDynamic("resultIdentifier")(resultIdentifier)
     if (search != null) __obj.updateDynamic("search")(search)

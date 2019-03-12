@@ -38,13 +38,13 @@ object X3DDisplay {
   def apply(
     Floor: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
     Wall: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
-    acquire: js.Function0[scala.Unit],
-    getFloor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    getWall: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getFloor: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    getWall: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): X3DDisplay = {
-    val __obj = js.Dynamic.literal(Floor = Floor, Wall = Wall, acquire = acquire, getFloor = getFloor, getWall = getWall, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Floor = Floor, Wall = Wall, acquire = js.Any.fromFunction0(acquire), getFloor = js.Any.fromFunction0(getFloor), getWall = js.Any.fromFunction0(getWall), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[X3DDisplay]
   }

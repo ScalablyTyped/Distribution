@@ -26,11 +26,11 @@ object ConfigurationTaskGetDataWorkspaceDetailsParams {
   def apply(
     constructor: js.Function,
     dataWorkspaceId: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     user: java.lang.String
   ): ConfigurationTaskGetDataWorkspaceDetailsParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, dataWorkspaceId = dataWorkspaceId, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, user = user)
+    val __obj = js.Dynamic.literal(constructor = constructor, dataWorkspaceId = dataWorkspaceId, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user)
   
     __obj.asInstanceOf[ConfigurationTaskGetDataWorkspaceDetailsParams]
   }

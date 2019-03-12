@@ -13,8 +13,8 @@ trait ITools extends js.Object {
 
 object ITools {
   @scala.inline
-  def apply(add: js.Function1[ITool, ITool], chart: IChart, items: js.Array[ITool]): ITools = {
-    val __obj = js.Dynamic.literal(add = add, chart = chart, items = items)
+  def apply(add: ITool => ITool, chart: IChart, items: js.Array[ITool]): ITools = {
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), chart = chart, items = items)
   
     __obj.asInstanceOf[ITools]
   }

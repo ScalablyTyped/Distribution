@@ -18,18 +18,15 @@ trait EmotionTheming[Theme] extends js.Object {
 object EmotionTheming {
   @scala.inline
   def apply[Theme](
-    ThemeProvider: js.Function1[ThemeProviderProps[Theme], reactLib.reactMod.ReactNs.ReactElement[_]],
-    withTheme: js.Function1[
-      js.Any, 
-      reactLib.reactMod.ReactNs.SFC[
-        emotionDashThemingLib.typesHelperMod.AddOptionalTo[
-          emotionDashThemingLib.typesHelperMod.PropsOf[js.Any], 
-          emotionDashThemingLib.emotionDashThemingLibStrings.theme
-        ]
+    ThemeProvider: ThemeProviderProps[Theme] => reactLib.reactMod.ReactNs.ReactElement[_],
+    withTheme: js.Any => reactLib.reactMod.ReactNs.SFC[
+      emotionDashThemingLib.typesHelperMod.AddOptionalTo[
+        emotionDashThemingLib.typesHelperMod.PropsOf[js.Any], 
+        emotionDashThemingLib.emotionDashThemingLibStrings.theme
       ]
     ]
   ): EmotionTheming[Theme] = {
-    val __obj = js.Dynamic.literal(ThemeProvider = ThemeProvider, withTheme = withTheme)
+    val __obj = js.Dynamic.literal(ThemeProvider = js.Any.fromFunction1(ThemeProvider), withTheme = js.Any.fromFunction1(withTheme))
   
     __obj.asInstanceOf[EmotionTheming[Theme]]
   }

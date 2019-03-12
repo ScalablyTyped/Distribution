@@ -16,14 +16,14 @@ trait ICacheObject extends js.Object {
 object ICacheObject {
   @scala.inline
   def apply(
-    clear: js.Function0[scala.Unit],
-    get: js.Function1[js.Any, js.Any],
-    remove: js.Function1[js.Any, scala.Unit],
-    set: js.Function2[js.Any, js.Any, scala.Unit],
-    isValidCacheKey: js.Function1[/* key */ js.Any, scala.Boolean] = null
+    clear: () => scala.Unit,
+    get: js.Any => js.Any,
+    remove: js.Any => scala.Unit,
+    set: (js.Any, js.Any) => scala.Unit,
+    isValidCacheKey: /* key */ js.Any => scala.Boolean = null
   ): ICacheObject = {
-    val __obj = js.Dynamic.literal(clear = clear, get = get, remove = remove, set = set)
-    if (isValidCacheKey != null) __obj.updateDynamic("isValidCacheKey")(isValidCacheKey)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set))
+    if (isValidCacheKey != null) __obj.updateDynamic("isValidCacheKey")(js.Any.fromFunction1(isValidCacheKey))
     __obj.asInstanceOf[ICacheObject]
   }
 }

@@ -21,13 +21,13 @@ object IHeaderContainer {
   @scala.inline
   def apply(
     IContainer: extjsLib.ExtNs.gridNs.headerNs.IContainer = null,
-    getGridColumns: js.Function0[extjsLib.ExtNs.Array] = null,
-    getRefItems: js.Function0[scala.Unit] = null
+    getGridColumns: () => extjsLib.ExtNs.Array = null,
+    getRefItems: () => scala.Unit = null
   ): IHeaderContainer = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (getGridColumns != null) __obj.updateDynamic("getGridColumns")(getGridColumns)
-    if (getRefItems != null) __obj.updateDynamic("getRefItems")(getRefItems)
+    if (getGridColumns != null) __obj.updateDynamic("getGridColumns")(js.Any.fromFunction0(getGridColumns))
+    if (getRefItems != null) __obj.updateDynamic("getRefItems")(js.Any.fromFunction0(getRefItems))
     __obj.asInstanceOf[IHeaderContainer]
   }
 }

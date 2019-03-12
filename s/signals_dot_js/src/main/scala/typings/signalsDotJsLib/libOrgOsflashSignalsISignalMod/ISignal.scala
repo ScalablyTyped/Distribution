@@ -20,15 +20,15 @@ trait ISignal
 object ISignal {
   @scala.inline
   def apply(
-    add: js.Function1[js.Function, signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot],
-    addOnce: js.Function1[js.Function, signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot],
-    dispatch: js.Function1[/* repeated */ js.Any, scala.Unit],
+    add: js.Function => signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot,
+    addOnce: js.Function => signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot,
+    dispatch: /* repeated */ js.Any => scala.Unit,
     numListeners: scala.Double,
-    remove: js.Function1[js.Function, signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot],
-    removeAll: js.Function0[scala.Unit],
+    remove: js.Function => signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot,
+    removeAll: () => scala.Unit,
     valueClasses: js.Array[_]
   ): ISignal = {
-    val __obj = js.Dynamic.literal(add = add, addOnce = addOnce, dispatch = dispatch, numListeners = numListeners, remove = remove, removeAll = removeAll, valueClasses = valueClasses)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), addOnce = js.Any.fromFunction1(addOnce), dispatch = js.Any.fromFunction1(dispatch), numListeners = numListeners, remove = js.Any.fromFunction1(remove), removeAll = js.Any.fromFunction0(removeAll), valueClasses = valueClasses)
   
     __obj.asInstanceOf[ISignal]
   }

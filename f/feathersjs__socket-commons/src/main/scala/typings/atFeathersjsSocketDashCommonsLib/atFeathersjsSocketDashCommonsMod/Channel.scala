@@ -15,12 +15,12 @@ trait Channel extends js.Object {
 object Channel {
   @scala.inline
   def apply(
-    filter: js.Function1[js.Function1[/* connection */ Connection, scala.Boolean], Channel],
-    join: js.Function1[/* repeated */ Connection, Channel],
-    leave: js.Function1[/* repeated */ Connection, Channel],
-    send: js.Function1[js.Any, Channel]
+    filter: js.Function1[/* connection */ Connection, scala.Boolean] => Channel,
+    join: /* repeated */ Connection => Channel,
+    leave: /* repeated */ Connection => Channel,
+    send: js.Any => Channel
   ): Channel = {
-    val __obj = js.Dynamic.literal(filter = filter, join = join, leave = leave, send = send)
+    val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), join = js.Any.fromFunction1(join), leave = js.Any.fromFunction1(leave), send = js.Any.fromFunction1(send))
   
     __obj.asInstanceOf[Channel]
   }

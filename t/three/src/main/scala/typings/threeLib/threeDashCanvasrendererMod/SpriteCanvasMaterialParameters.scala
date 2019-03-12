@@ -48,11 +48,7 @@ object SpriteCanvasMaterialParameters {
     polygonOffsetUnits: scala.Int | scala.Double = null,
     precision: threeLib.threeLibStrings.highp | threeLib.threeLibStrings.mediump | threeLib.threeLibStrings.lowp = null,
     premultipliedAlpha: js.UndefOr[scala.Boolean] = js.undefined,
-    program: js.Function2[
-      /* context */ stdLib.CanvasRenderingContext2D, 
-      /* color */ threeLib.threeDashCoreMod.Color, 
-      scala.Unit
-    ] = null,
+    program: (/* context */ stdLib.CanvasRenderingContext2D, /* color */ threeLib.threeDashCoreMod.Color) => scala.Unit = null,
     side: threeLib.threeDashCoreMod.Side = null,
     transparent: js.UndefOr[scala.Boolean] = js.undefined,
     vertexColors: threeLib.threeDashCoreMod.Colors = null,
@@ -87,7 +83,7 @@ object SpriteCanvasMaterialParameters {
     if (polygonOffsetUnits != null) __obj.updateDynamic("polygonOffsetUnits")(polygonOffsetUnits.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (!js.isUndefined(premultipliedAlpha)) __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha)
-    if (program != null) __obj.updateDynamic("program")(program)
+    if (program != null) __obj.updateDynamic("program")(js.Any.fromFunction2(program))
     if (side != null) __obj.updateDynamic("side")(side)
     if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
     if (vertexColors != null) __obj.updateDynamic("vertexColors")(vertexColors)

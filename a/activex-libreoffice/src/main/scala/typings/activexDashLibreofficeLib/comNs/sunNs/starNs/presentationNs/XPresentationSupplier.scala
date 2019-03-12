@@ -18,12 +18,12 @@ object XPresentationSupplier {
   @scala.inline
   def apply(
     Presentation: XPresentation,
-    acquire: js.Function0[scala.Unit],
-    getPresentation: js.Function0[XPresentation],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getPresentation: () => XPresentation,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XPresentationSupplier = {
-    val __obj = js.Dynamic.literal(Presentation = Presentation, acquire = acquire, getPresentation = getPresentation, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Presentation = Presentation, acquire = js.Any.fromFunction0(acquire), getPresentation = js.Any.fromFunction0(getPresentation), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XPresentationSupplier]
   }

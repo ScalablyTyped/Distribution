@@ -56,25 +56,25 @@ object XTimeField {
     Max: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
     Min: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
     Time: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
-    acquire: js.Function0[scala.Unit],
-    getFirst: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time],
-    getLast: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time],
-    getMax: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time],
-    getMin: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time],
-    getTime: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time],
-    isEmpty: js.Function0[scala.Boolean],
-    isStrictFormat: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setEmpty: js.Function0[scala.Unit],
-    setFirst: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit],
-    setLast: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit],
-    setMax: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit],
-    setMin: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit],
-    setStrictFormat: js.Function1[scala.Boolean, scala.Unit],
-    setTime: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit]
+    acquire: () => scala.Unit,
+    getFirst: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
+    getLast: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
+    getMax: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
+    getMin: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
+    getTime: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
+    isEmpty: () => scala.Boolean,
+    isStrictFormat: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setEmpty: () => scala.Unit,
+    setFirst: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time => scala.Unit,
+    setLast: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time => scala.Unit,
+    setMax: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time => scala.Unit,
+    setMin: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time => scala.Unit,
+    setStrictFormat: scala.Boolean => scala.Unit,
+    setTime: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time => scala.Unit
   ): XTimeField = {
-    val __obj = js.Dynamic.literal(First = First, Last = Last, Max = Max, Min = Min, Time = Time, acquire = acquire, getFirst = getFirst, getLast = getLast, getMax = getMax, getMin = getMin, getTime = getTime, isEmpty = isEmpty, isStrictFormat = isStrictFormat, queryInterface = queryInterface, release = release, setEmpty = setEmpty, setFirst = setFirst, setLast = setLast, setMax = setMax, setMin = setMin, setStrictFormat = setStrictFormat, setTime = setTime)
+    val __obj = js.Dynamic.literal(First = First, Last = Last, Max = Max, Min = Min, Time = Time, acquire = js.Any.fromFunction0(acquire), getFirst = js.Any.fromFunction0(getFirst), getLast = js.Any.fromFunction0(getLast), getMax = js.Any.fromFunction0(getMax), getMin = js.Any.fromFunction0(getMin), getTime = js.Any.fromFunction0(getTime), isEmpty = js.Any.fromFunction0(isEmpty), isStrictFormat = js.Any.fromFunction0(isStrictFormat), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setEmpty = js.Any.fromFunction0(setEmpty), setFirst = js.Any.fromFunction1(setFirst), setLast = js.Any.fromFunction1(setLast), setMax = js.Any.fromFunction1(setMax), setMin = js.Any.fromFunction1(setMin), setStrictFormat = js.Any.fromFunction1(setStrictFormat), setTime = js.Any.fromFunction1(setTime))
   
     __obj.asInstanceOf[XTimeField]
   }

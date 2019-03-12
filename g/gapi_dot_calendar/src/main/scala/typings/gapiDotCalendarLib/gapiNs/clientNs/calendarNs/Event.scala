@@ -24,7 +24,7 @@ class Event () extends js.Object {
   // 	Whether the end time is actually unspecified. An end time is still provided for compatibility reasons, even if this attribute is set to True.
   // The default is False.
   var endTimeUnspecified: js.UndefOr[scala.Boolean] = js.native
-  var etag: etag = js.native
+  var etag: gapiDotCalendarLib.gapiNs.clientNs.calendarNs.etag = js.native
   // Extended properties of the event.
   var extendedProperties: js.UndefOr[gapiDotCalendarLib.Anon_KeyPrivate] = js.native
   // A gadget that extends this event.

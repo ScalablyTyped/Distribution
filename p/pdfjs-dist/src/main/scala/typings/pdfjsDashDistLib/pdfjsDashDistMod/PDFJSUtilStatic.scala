@@ -19,8 +19,8 @@ trait PDFJSUtilStatic extends js.Object {
 
 object PDFJSUtilStatic {
   @scala.inline
-  def apply(normalizeRect: js.Function1[js.Array[scala.Double], js.Array[scala.Double]]): PDFJSUtilStatic = {
-    val __obj = js.Dynamic.literal(normalizeRect = normalizeRect)
+  def apply(normalizeRect: js.Array[scala.Double] => js.Array[scala.Double]): PDFJSUtilStatic = {
+    val __obj = js.Dynamic.literal(normalizeRect = js.Any.fromFunction1(normalizeRect))
   
     __obj.asInstanceOf[PDFJSUtilStatic]
   }

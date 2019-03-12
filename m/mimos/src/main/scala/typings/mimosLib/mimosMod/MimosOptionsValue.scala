@@ -19,7 +19,7 @@ object MimosOptionsValue {
     charset: java.lang.String = null,
     compressible: js.UndefOr[scala.Boolean] = js.undefined,
     extensions: js.Array[java.lang.String] = null,
-    predicate: js.Function1[/* mime */ MimosOptionsValue, MimosOptionsValue] = null,
+    predicate: /* mime */ MimosOptionsValue => MimosOptionsValue = null,
     source: java.lang.String = null,
     `type`: java.lang.String = null
   ): MimosOptionsValue = {
@@ -27,7 +27,7 @@ object MimosOptionsValue {
     if (charset != null) __obj.updateDynamic("charset")(charset)
     if (!js.isUndefined(compressible)) __obj.updateDynamic("compressible")(compressible)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (predicate != null) __obj.updateDynamic("predicate")(predicate)
+    if (predicate != null) __obj.updateDynamic("predicate")(js.Any.fromFunction1(predicate))
     if (source != null) __obj.updateDynamic("source")(source)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MimosOptionsValue]

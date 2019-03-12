@@ -30,9 +30,9 @@ object TokenType {
     postfix: scala.Boolean,
     prefix: scala.Boolean,
     startsExpr: scala.Boolean,
-    updateContext: js.Function1[TokenType, scala.Unit]
+    updateContext: TokenType => scala.Unit
   ): TokenType = {
-    val __obj = js.Dynamic.literal(beforeExpr = beforeExpr, binop = binop, isAssign = isAssign, isLoop = isLoop, keyword = keyword, label = label, postfix = postfix, prefix = prefix, startsExpr = startsExpr, updateContext = updateContext)
+    val __obj = js.Dynamic.literal(beforeExpr = beforeExpr, binop = binop, isAssign = isAssign, isLoop = isLoop, keyword = keyword, label = label, postfix = postfix, prefix = prefix, startsExpr = startsExpr, updateContext = js.Any.fromFunction1(updateContext))
   
     __obj.asInstanceOf[TokenType]
   }

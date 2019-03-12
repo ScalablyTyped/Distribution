@@ -32,12 +32,12 @@ trait String extends js.Object {
 object String {
   @scala.inline
   def apply(
-    endsWith: js.Function1[java.lang.String, scala.Boolean],
-    trim: js.Function0[java.lang.String],
-    trimEnd: js.Function0[java.lang.String],
-    trimStart: js.Function0[java.lang.String]
+    endsWith: java.lang.String => scala.Boolean,
+    trim: () => java.lang.String,
+    trimEnd: () => java.lang.String,
+    trimStart: () => java.lang.String
   ): String = {
-    val __obj = js.Dynamic.literal(endsWith = endsWith, trim = trim, trimEnd = trimEnd, trimStart = trimStart)
+    val __obj = js.Dynamic.literal(endsWith = js.Any.fromFunction1(endsWith), trim = js.Any.fromFunction0(trim), trimEnd = js.Any.fromFunction0(trimEnd), trimStart = js.Any.fromFunction0(trimStart))
   
     __obj.asInstanceOf[String]
   }

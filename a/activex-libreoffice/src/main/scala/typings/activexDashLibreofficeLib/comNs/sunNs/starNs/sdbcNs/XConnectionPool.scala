@@ -13,20 +13,16 @@ object XConnectionPool {
   @scala.inline
   def apply(
     LoginTimeout: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getConnection: js.Function1[java.lang.String, XConnection],
-    getConnectionWithInfo: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      XConnection
-    ],
-    getDriverByURL: js.Function1[java.lang.String, XDriver],
-    getLoginTimeout: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setLoginTimeout: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    getConnection: java.lang.String => XConnection,
+    getConnectionWithInfo: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => XConnection,
+    getDriverByURL: java.lang.String => XDriver,
+    getLoginTimeout: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setLoginTimeout: scala.Double => scala.Unit
   ): XConnectionPool = {
-    val __obj = js.Dynamic.literal(LoginTimeout = LoginTimeout, acquire = acquire, getConnection = getConnection, getConnectionWithInfo = getConnectionWithInfo, getDriverByURL = getDriverByURL, getLoginTimeout = getLoginTimeout, queryInterface = queryInterface, release = release, setLoginTimeout = setLoginTimeout)
+    val __obj = js.Dynamic.literal(LoginTimeout = LoginTimeout, acquire = js.Any.fromFunction0(acquire), getConnection = js.Any.fromFunction1(getConnection), getConnectionWithInfo = js.Any.fromFunction2(getConnectionWithInfo), getDriverByURL = js.Any.fromFunction1(getDriverByURL), getLoginTimeout = js.Any.fromFunction0(getLoginTimeout), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setLoginTimeout = js.Any.fromFunction1(setLoginTimeout))
   
     __obj.asInstanceOf[XConnectionPool]
   }

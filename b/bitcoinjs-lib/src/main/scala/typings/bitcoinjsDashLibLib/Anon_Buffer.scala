@@ -14,11 +14,11 @@ trait Anon_Buffer extends js.Object {
 object Anon_Buffer {
   @scala.inline
   def apply(
-    check: js.Function1[nodeLib.Buffer, scala.Boolean],
-    decode: js.Function1[nodeLib.Buffer, js.Array[nodeLib.Buffer]],
-    encode: js.Function1[nodeLib.Buffer, nodeLib.Buffer]
+    check: nodeLib.Buffer => scala.Boolean,
+    decode: nodeLib.Buffer => js.Array[nodeLib.Buffer],
+    encode: nodeLib.Buffer => nodeLib.Buffer
   ): Anon_Buffer = {
-    val __obj = js.Dynamic.literal(check = check, decode = decode, encode = encode)
+    val __obj = js.Dynamic.literal(check = js.Any.fromFunction1(check), decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
   
     __obj.asInstanceOf[Anon_Buffer]
   }

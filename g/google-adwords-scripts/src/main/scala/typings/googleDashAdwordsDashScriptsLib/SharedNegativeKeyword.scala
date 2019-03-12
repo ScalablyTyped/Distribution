@@ -15,14 +15,14 @@ trait SharedNegativeKeyword extends AdWordsEntity {
 object SharedNegativeKeyword {
   @scala.inline
   def apply(
-    getMatchType: js.Function0[MatchType],
-    getNegativeKeywordList: js.Function0[NegativeKeywordList],
-    getText: js.Function0[java.lang.String],
-    remove: js.Function0[scala.Unit],
-    getEntityType: js.Function0[java.lang.String] = null
+    getMatchType: () => MatchType,
+    getNegativeKeywordList: () => NegativeKeywordList,
+    getText: () => java.lang.String,
+    remove: () => scala.Unit,
+    getEntityType: () => java.lang.String = null
   ): SharedNegativeKeyword = {
-    val __obj = js.Dynamic.literal(getMatchType = getMatchType, getNegativeKeywordList = getNegativeKeywordList, getText = getText, remove = remove)
-    if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
+    val __obj = js.Dynamic.literal(getMatchType = js.Any.fromFunction0(getMatchType), getNegativeKeywordList = js.Any.fromFunction0(getNegativeKeywordList), getText = js.Any.fromFunction0(getText), remove = js.Any.fromFunction0(remove))
+    if (getEntityType != null) __obj.updateDynamic("getEntityType")(js.Any.fromFunction0(getEntityType))
     __obj.asInstanceOf[SharedNegativeKeyword]
   }
 }

@@ -15,12 +15,12 @@ trait IScrollspy extends js.Object {
 object IScrollspy {
   @scala.inline
   def apply(
-    activate: js.Function1[scala.Double, scala.Unit],
-    checkOffsets: js.Function0[scala.Unit],
-    trackElement: js.Function2[js.Any, js.Any, scala.Unit],
-    untrackElement: js.Function2[js.Any, js.Any, scala.Unit]
+    activate: scala.Double => scala.Unit,
+    checkOffsets: () => scala.Unit,
+    trackElement: (js.Any, js.Any) => scala.Unit,
+    untrackElement: (js.Any, js.Any) => scala.Unit
   ): IScrollspy = {
-    val __obj = js.Dynamic.literal(activate = activate, checkOffsets = checkOffsets, trackElement = trackElement, untrackElement = untrackElement)
+    val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate), checkOffsets = js.Any.fromFunction0(checkOffsets), trackElement = js.Any.fromFunction2(trackElement), untrackElement = js.Any.fromFunction2(untrackElement))
   
     __obj.asInstanceOf[IScrollspy]
   }

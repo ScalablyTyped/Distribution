@@ -10,7 +10,7 @@ trait DialogProps
   /**
     * A array of objects representing the buttons for the dialog navigation area. The properties will be transferred to the buttons.
     */
-  var actions: js.UndefOr[coreDashJsLib.Array[DialogActionProps]] = js.undefined
+  var actions: js.UndefOr[js.Array[DialogActionProps]] = js.undefined
   /**
     * If true, the dialog will be active.
     * @default false
@@ -23,23 +23,23 @@ trait DialogProps
   /**
     * Callback called when the ESC key is pressed with the overlay active.
     */
-  var onEscKeyDown: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onEscKeyDown: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback to be invoked when the dialog overlay is clicked.
     */
-  var onOverlayClick: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onOverlayClick: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback called when the mouse button is pressed on the overlay.
     */
-  var onOverlayMouseDown: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onOverlayMouseDown: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback called when the mouse is moving over the overlay.
     */
-  var onOverlayMouseMove: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onOverlayMouseMove: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback called when the mouse button is released over the overlay.
     */
-  var onOverlayMouseUp: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onOverlayMouseUp: js.UndefOr[js.Function] = js.undefined
   /**
     * Classnames object defining the component style.
     */
@@ -60,38 +60,38 @@ trait DialogProps
 object DialogProps {
   @scala.inline
   def apply(
-    actions: coreDashJsLib.Array[DialogActionProps] = null,
+    actions: js.Array[DialogActionProps] = null,
     active: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     className: java.lang.String = null,
     key: reactLib.reactMod.ReactNs.Key = null,
-    onClick: coreDashJsLib.Function = null,
-    onContextMenu: coreDashJsLib.Function = null,
-    onDoubleClick: coreDashJsLib.Function = null,
-    onDrag: coreDashJsLib.Function = null,
-    onDragEnd: coreDashJsLib.Function = null,
-    onDragEnter: coreDashJsLib.Function = null,
-    onDragExit: coreDashJsLib.Function = null,
-    onDragLeave: coreDashJsLib.Function = null,
-    onDragOver: coreDashJsLib.Function = null,
-    onDragStart: coreDashJsLib.Function = null,
-    onDrop: coreDashJsLib.Function = null,
-    onEscKeyDown: coreDashJsLib.Function = null,
-    onMouseDown: coreDashJsLib.Function = null,
-    onMouseEnter: coreDashJsLib.Function = null,
-    onMouseLeave: coreDashJsLib.Function = null,
-    onMouseMove: coreDashJsLib.Function = null,
-    onMouseOut: coreDashJsLib.Function = null,
-    onMouseOver: coreDashJsLib.Function = null,
-    onMouseUp: coreDashJsLib.Function = null,
-    onOverlayClick: coreDashJsLib.Function = null,
-    onOverlayMouseDown: coreDashJsLib.Function = null,
-    onOverlayMouseMove: coreDashJsLib.Function = null,
-    onOverlayMouseUp: coreDashJsLib.Function = null,
-    onTouchCancel: coreDashJsLib.Function = null,
-    onTouchEnd: coreDashJsLib.Function = null,
-    onTouchMove: coreDashJsLib.Function = null,
-    onTouchStart: coreDashJsLib.Function = null,
+    onClick: js.Function = null,
+    onContextMenu: js.Function = null,
+    onDoubleClick: js.Function = null,
+    onDrag: js.Function = null,
+    onDragEnd: js.Function = null,
+    onDragEnter: js.Function = null,
+    onDragExit: js.Function = null,
+    onDragLeave: js.Function = null,
+    onDragOver: js.Function = null,
+    onDragStart: js.Function = null,
+    onDrop: js.Function = null,
+    onEscKeyDown: js.Function = null,
+    onMouseDown: js.Function = null,
+    onMouseEnter: js.Function = null,
+    onMouseLeave: js.Function = null,
+    onMouseMove: js.Function = null,
+    onMouseOut: js.Function = null,
+    onMouseOver: js.Function = null,
+    onMouseUp: js.Function = null,
+    onOverlayClick: js.Function = null,
+    onOverlayMouseDown: js.Function = null,
+    onOverlayMouseMove: js.Function = null,
+    onOverlayMouseUp: js.Function = null,
+    onTouchCancel: js.Function = null,
+    onTouchEnd: js.Function = null,
+    onTouchMove: js.Function = null,
+    onTouchStart: js.Function = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     theme: DialogTheme = null,
     title: java.lang.String = null,

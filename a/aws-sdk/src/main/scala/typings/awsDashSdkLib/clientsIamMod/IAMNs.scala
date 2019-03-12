@@ -194,7 +194,7 @@ object IAMNs extends js.Object {
     /**
       * A structure with details about the access key.
       */
-    var AccessKey: AccessKey
+    var AccessKey: awsDashSdkLib.clientsIamMod.IAMNs.AccessKey
   }
   
   trait CreateAccountAliasRequest extends js.Object {
@@ -219,7 +219,7 @@ object IAMNs extends js.Object {
     /**
       * A structure containing details about the new group.
       */
-    var Group: Group
+    var Group: awsDashSdkLib.clientsIamMod.IAMNs.Group
   }
   
   trait CreateInstanceProfileRequest extends js.Object {
@@ -237,7 +237,7 @@ object IAMNs extends js.Object {
     /**
       * A structure containing details about the new instance profile.
       */
-    var InstanceProfile: InstanceProfile
+    var InstanceProfile: awsDashSdkLib.clientsIamMod.IAMNs.InstanceProfile
   }
   
   trait CreateLoginProfileRequest extends js.Object {
@@ -259,7 +259,7 @@ object IAMNs extends js.Object {
     /**
       * A structure containing the user name and password create date.
       */
-    var LoginProfile: LoginProfile
+    var LoginProfile: awsDashSdkLib.clientsIamMod.IAMNs.LoginProfile
   }
   
   trait CreateOpenIDConnectProviderRequest extends js.Object {
@@ -367,7 +367,7 @@ object IAMNs extends js.Object {
     /**
       * A structure containing details about the new role.
       */
-    var Role: Role
+    var Role: awsDashSdkLib.clientsIamMod.IAMNs.Role
   }
   
   trait CreateSAMLProviderRequest extends js.Object {
@@ -469,7 +469,7 @@ object IAMNs extends js.Object {
     /**
       * A structure containing details about the new virtual MFA device.
       */
-    var VirtualMFADevice: VirtualMFADevice
+    var VirtualMFADevice: awsDashSdkLib.clientsIamMod.IAMNs.VirtualMFADevice
   }
   
   trait DeactivateMFADeviceRequest extends js.Object {
@@ -743,7 +743,7 @@ object IAMNs extends js.Object {
     /**
       * The EntityInfo object that contains details about the entity (user or role).
       */
-    var EntityInfo: EntityInfo
+    var EntityInfo: awsDashSdkLib.clientsIamMod.IAMNs.EntityInfo
     /**
       * The date and time, in ISO 8601 date-time format, when the authenticated entity last attempted to access AWS. AWS does not report unauthenticated requests. This field is null if no IAM entities attempted to access the service within the reporting period.
       */
@@ -908,7 +908,7 @@ object IAMNs extends js.Object {
     /**
       * A structure that contains details about the account's password policy.
       */
-    var PasswordPolicy: PasswordPolicy
+    var PasswordPolicy: awsDashSdkLib.clientsIamMod.IAMNs.PasswordPolicy
   }
   
   trait GetAccountSummaryResponse extends js.Object {
@@ -1003,7 +1003,7 @@ object IAMNs extends js.Object {
     /**
       * A structure that contains details about the group.
       */
-    var Group: Group
+    var Group: awsDashSdkLib.clientsIamMod.IAMNs.Group
     /**
       * A flag that indicates whether there are more items to return. If your results were truncated, you can make a subsequent pagination request using the Marker request parameter to retrieve more items. Note that IAM might return fewer than the MaxItems number of results even when there are more results available. We recommend that you check IsTruncated after every call to ensure that you receive all your results.
       */
@@ -1029,7 +1029,7 @@ object IAMNs extends js.Object {
     /**
       * A structure containing details about the instance profile.
       */
-    var InstanceProfile: InstanceProfile
+    var InstanceProfile: awsDashSdkLib.clientsIamMod.IAMNs.InstanceProfile
   }
   
   trait GetLoginProfileRequest extends js.Object {
@@ -1043,7 +1043,7 @@ object IAMNs extends js.Object {
     /**
       * A structure containing the user name and password create date for the user.
       */
-    var LoginProfile: LoginProfile
+    var LoginProfile: awsDashSdkLib.clientsIamMod.IAMNs.LoginProfile
   }
   
   trait GetOpenIDConnectProviderRequest extends js.Object {
@@ -1141,7 +1141,7 @@ object IAMNs extends js.Object {
     /**
       * A structure containing details about the IAM role.
       */
-    var Role: Role
+    var Role: awsDashSdkLib.clientsIamMod.IAMNs.Role
   }
   
   trait GetSAMLProviderRequest extends js.Object {
@@ -1199,7 +1199,7 @@ object IAMNs extends js.Object {
     /**
       * A structure containing details about the server certificate.
       */
-    var ServerCertificate: ServerCertificate
+    var ServerCertificate: awsDashSdkLib.clientsIamMod.IAMNs.ServerCertificate
   }
   
   trait GetServiceLastAccessedDetailsRequest extends js.Object {
@@ -1245,7 +1245,7 @@ object IAMNs extends js.Object {
     /**
       *  A ServiceLastAccessed object that contains details about the most recent attempt to access the service.
       */
-    var ServicesLastAccessed: ServicesLastAccessed
+    var ServicesLastAccessed: awsDashSdkLib.clientsIamMod.IAMNs.ServicesLastAccessed
   }
   
   trait GetServiceLastAccessedDetailsWithEntitiesRequest extends js.Object {
@@ -1353,7 +1353,7 @@ object IAMNs extends js.Object {
     /**
       * A structure containing details about the IAM user.  Due to a service issue, password last used data does not include password use from May 3, 2018 22:50 PDT to May 23, 2018 14:08 PDT. This affects last sign-in dates shown in the IAM console and password last used dates in the IAM credential report, and returned by this GetUser API. If users signed in during the affected time, the password last used date that is returned is the date the user last signed in before May 3, 2018. For users that signed in after May 23, 2018 14:08 PDT, the returned password last used date is accurate. You can use password last used information to identify unused credentials for deletion. For example, you might delete users who did not sign in to AWS in the last 90 days. In cases like this, we recommend that you adjust your evaluation window to include dates after May 23, 2018. Alternatively, if your users use access keys to access AWS programmatically you can refer to access key last used information because it is accurate for all dates.  
       */
-    var User: User
+    var User: awsDashSdkLib.clientsIamMod.IAMNs.User
   }
   
   trait Group extends js.Object {
@@ -2872,7 +2872,7 @@ object IAMNs extends js.Object {
     /**
       * The meta information of the server certificate, such as its name, path, ID, and ARN.
       */
-    var ServerCertificateMetadata: ServerCertificateMetadata
+    var ServerCertificateMetadata: awsDashSdkLib.clientsIamMod.IAMNs.ServerCertificateMetadata
   }
   
   trait ServerCertificateMetadata extends js.Object {

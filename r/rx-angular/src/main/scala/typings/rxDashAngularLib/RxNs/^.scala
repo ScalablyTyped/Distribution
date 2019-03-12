@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Rx")
 @js.native
 object ^ extends js.Object {
-  var ScopeScheduler: rxDashAngularLib.RxNs.ScopeSchedulerStatic = js.native
+  var ScopeScheduler: ScopeSchedulerStatic = js.native
 }
 

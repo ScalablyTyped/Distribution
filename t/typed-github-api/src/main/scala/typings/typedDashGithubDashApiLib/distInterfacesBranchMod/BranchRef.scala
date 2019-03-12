@@ -14,11 +14,11 @@ trait BranchRef extends js.Object {
 object BranchRef {
   @scala.inline
   def apply(
-    loadAsync: js.Function0[js.Promise[Branch | scala.Null]],
+    loadAsync: () => js.Promise[Branch | scala.Null],
     name: java.lang.String,
     repository: typedDashGithubDashApiLib.distInterfacesRepositoryMod.RepositoryRef
   ): BranchRef = {
-    val __obj = js.Dynamic.literal(loadAsync = loadAsync, name = name, repository = repository)
+    val __obj = js.Dynamic.literal(loadAsync = js.Any.fromFunction0(loadAsync), name = name, repository = repository)
   
     __obj.asInstanceOf[BranchRef]
   }

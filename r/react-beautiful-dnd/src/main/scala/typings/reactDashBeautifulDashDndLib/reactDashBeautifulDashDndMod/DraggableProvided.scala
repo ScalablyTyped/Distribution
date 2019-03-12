@@ -12,7 +12,6 @@ trait DraggableProvided extends js.Object {
   var placeholder: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null] = js.native
   // will be removed after move to react 16
   def innerRef(): js.Any = js.native
-  // will be removed after move to react 16
-  def innerRef(element: reactLib.HTMLElement): js.Any = js.native
+  def innerRef(element: stdLib.HTMLElement): js.Any = js.native
 }
 

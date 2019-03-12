@@ -70,8 +70,8 @@ object SumoLoggerOptions {
   @scala.inline
   def apply(
     endpoint: java.lang.String,
-    onError: js.Function0[scala.Unit],
-    onSuccess: js.Function0[scala.Unit],
+    onError: () => scala.Unit,
+    onSuccess: () => scala.Unit,
     clientUrl: java.lang.String = null,
     graphite: js.UndefOr[scala.Boolean] = js.undefined,
     hostName: java.lang.String = null,
@@ -82,7 +82,7 @@ object SumoLoggerOptions {
     sourceCategory: java.lang.String = null,
     sourceName: java.lang.String = null
   ): SumoLoggerOptions = {
-    val __obj = js.Dynamic.literal(endpoint = endpoint, onError = onError, onSuccess = onSuccess)
+    val __obj = js.Dynamic.literal(endpoint = endpoint, onError = js.Any.fromFunction0(onError), onSuccess = js.Any.fromFunction0(onSuccess))
     if (clientUrl != null) __obj.updateDynamic("clientUrl")(clientUrl)
     if (!js.isUndefined(graphite)) __obj.updateDynamic("graphite")(graphite)
     if (hostName != null) __obj.updateDynamic("hostName")(hostName)

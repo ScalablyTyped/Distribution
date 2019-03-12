@@ -10,7 +10,8 @@ trait Anon_Application extends js.Object {
   /**
     * These are the exposed prototypes.
     */
-  var application: expressLib.expressMod.eNs.Application = js.native
+  @JSName("application")
+  var application_Original: expressLib.expressMod.eNs.Application = js.native
   val eNs: js.Any = js.native
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with JSON payloads and is based on body-parser.
@@ -33,6 +34,35 @@ trait Anon_Application extends js.Object {
   var urlencoded_Original: expressLib.Anon_OptionsNextHandleFunction = js.native
   def Router(): expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Router = js.native
   def Router(options: expressLib.expressMod.eNs.RouterOptions): expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Router = js.native
+  /**
+    * Express instance itself is a request handler, which could be invoked without
+    * third argument.
+    */
+  /**
+    * These are the exposed prototypes.
+    */
+  def application(
+    req: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request,
+    res: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response
+  ): js.Any = js.native
+  /**
+    * These are the exposed prototypes.
+    */
+  def application(
+    req: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request,
+    res: nodeLib.httpMod.ServerResponse
+  ): js.Any = js.native
+  /**
+    * These are the exposed prototypes.
+    */
+  def application(
+    req: nodeLib.httpMod.IncomingMessage,
+    res: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response
+  ): js.Any = js.native
+  /**
+    * These are the exposed prototypes.
+    */
+  def application(req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse): js.Any = js.native
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with JSON payloads and is based on body-parser.
     * @since 4.16.0

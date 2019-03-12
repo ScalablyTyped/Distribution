@@ -16,15 +16,12 @@ object IClient {
   @scala.inline
   def apply(
     config: IConfig,
-    `do`: js.Function1[
-      superagentLib.superagentMod.requestNs.SuperAgentRequest, 
-      js.Promise[APIResponseSuccess]
-    ],
-    make: js.Function2[HttpMethod, java.lang.String, js.Promise[ionicLib.Anon_Req]],
-    paginate: js.Function1[PaginateArgs[js.Any], IPaginator[js.Any, PaginatorState]]
+    `do`: superagentLib.superagentMod.requestNs.SuperAgentRequest => js.Promise[APIResponseSuccess],
+    make: (HttpMethod, java.lang.String) => js.Promise[ionicLib.Anon_Req],
+    paginate: PaginateArgs[js.Any] => IPaginator[js.Any, PaginatorState]
   ): IClient = {
-    val __obj = js.Dynamic.literal(config = config, make = make, paginate = paginate)
-    __obj.updateDynamic("do")(`do`)
+    val __obj = js.Dynamic.literal(config = config, make = js.Any.fromFunction2(make), paginate = js.Any.fromFunction1(paginate))
+    __obj.updateDynamic("do")(js.Any.fromFunction1(`do`))
     __obj.asInstanceOf[IClient]
   }
 }

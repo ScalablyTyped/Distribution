@@ -48,7 +48,7 @@ object IToolTip {
     dismissDelay: scala.Int | scala.Double = null,
     hideDelay: scala.Int | scala.Double = null,
     mouseOffset: extjsLib.ExtNs.Array = null,
-    setTarget: js.Function1[/* t */ js.UndefOr[js.Any], scala.Unit] = null,
+    setTarget: /* t */ js.UndefOr[js.Any] => scala.Unit = null,
     showDelay: scala.Int | scala.Double = null,
     target: js.Any = null,
     trackMouse: js.UndefOr[scala.Boolean] = js.undefined,
@@ -64,7 +64,7 @@ object IToolTip {
     if (dismissDelay != null) __obj.updateDynamic("dismissDelay")(dismissDelay.asInstanceOf[js.Any])
     if (hideDelay != null) __obj.updateDynamic("hideDelay")(hideDelay.asInstanceOf[js.Any])
     if (mouseOffset != null) __obj.updateDynamic("mouseOffset")(mouseOffset)
-    if (setTarget != null) __obj.updateDynamic("setTarget")(setTarget)
+    if (setTarget != null) __obj.updateDynamic("setTarget")(js.Any.fromFunction1(setTarget))
     if (showDelay != null) __obj.updateDynamic("showDelay")(showDelay.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target)
     if (!js.isUndefined(trackMouse)) __obj.updateDynamic("trackMouse")(trackMouse)

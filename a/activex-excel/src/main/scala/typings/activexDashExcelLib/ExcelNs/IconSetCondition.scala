@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.IconSetCondition")
 @js.native
 class IconSetCondition protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   @JSName("AppliesTo")
   val AppliesTo_Original: Range = js.native
   val Creator: XlCreator = js.native
@@ -32,7 +32,7 @@ class IconSetCondition protected () extends js.Object {
   def AppliesTo(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native
   def Delete(): scala.Unit = js.native
   def IconCriteria(Index: scala.Double): IconCriterion = js.native
-  def IconSet(Index: scala.Double): IconSet = js.native
+  def IconSet(Index: scala.Double): activexDashExcelLib.ExcelNs.IconSet = js.native
   def ModifyAppliesToRange(Range: Range): scala.Unit = js.native
   def SetFirstPriority(): scala.Unit = js.native
   def SetLastPriority(): scala.Unit = js.native

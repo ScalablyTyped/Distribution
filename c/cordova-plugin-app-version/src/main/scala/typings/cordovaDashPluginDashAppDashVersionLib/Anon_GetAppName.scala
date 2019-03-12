@@ -15,12 +15,12 @@ trait Anon_GetAppName extends js.Object {
 object Anon_GetAppName {
   @scala.inline
   def apply(
-    getAppName: js.Function0[js.Promise[java.lang.String]],
-    getPackageName: js.Function0[js.Promise[java.lang.String]],
-    getVersionCode: js.Function0[js.Promise[java.lang.String]],
-    getVersionNumber: js.Function0[js.Promise[java.lang.String]]
+    getAppName: () => js.Promise[java.lang.String],
+    getPackageName: () => js.Promise[java.lang.String],
+    getVersionCode: () => js.Promise[java.lang.String],
+    getVersionNumber: () => js.Promise[java.lang.String]
   ): Anon_GetAppName = {
-    val __obj = js.Dynamic.literal(getAppName = getAppName, getPackageName = getPackageName, getVersionCode = getVersionCode, getVersionNumber = getVersionNumber)
+    val __obj = js.Dynamic.literal(getAppName = js.Any.fromFunction0(getAppName), getPackageName = js.Any.fromFunction0(getPackageName), getVersionCode = js.Any.fromFunction0(getVersionCode), getVersionNumber = js.Any.fromFunction0(getVersionNumber))
   
     __obj.asInstanceOf[Anon_GetAppName]
   }

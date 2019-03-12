@@ -19,16 +19,16 @@ trait Anon_BlockParams extends js.Object {
 object Anon_BlockParams {
   @scala.inline
   def apply(
-    blockParams: js.Function2[js.Array[_], js.Array[_], js.Array[_]],
-    createFrame: js.Function1[js.Any, js.Any],
-    escapeExpression: js.Function1[java.lang.String, java.lang.String],
-    extend: js.Function2[js.Any, /* repeated */ js.Any, js.Any],
-    isArray: js.Function1[js.Any, scala.Boolean],
-    isEmpty: js.Function1[js.Any, scala.Boolean],
-    isFunction: js.Function1[js.Any, scala.Boolean],
-    toString: js.Function1[js.Any, java.lang.String]
+    blockParams: (js.Array[_], js.Array[_]) => js.Array[_],
+    createFrame: js.Any => js.Any,
+    escapeExpression: java.lang.String => java.lang.String,
+    extend: (js.Any, /* repeated */ js.Any) => js.Any,
+    isArray: js.Any => scala.Boolean,
+    isEmpty: js.Any => scala.Boolean,
+    isFunction: js.Any => scala.Boolean,
+    toString: js.Any => java.lang.String
   ): Anon_BlockParams = {
-    val __obj = js.Dynamic.literal(blockParams = blockParams, createFrame = createFrame, escapeExpression = escapeExpression, extend = extend, isArray = isArray, isEmpty = isEmpty, isFunction = isFunction, toString = toString)
+    val __obj = js.Dynamic.literal(blockParams = js.Any.fromFunction2(blockParams), createFrame = js.Any.fromFunction1(createFrame), escapeExpression = js.Any.fromFunction1(escapeExpression), extend = js.Any.fromFunction2(extend), isArray = js.Any.fromFunction1(isArray), isEmpty = js.Any.fromFunction1(isEmpty), isFunction = js.Any.fromFunction1(isFunction), toString = js.Any.fromFunction1(toString))
   
     __obj.asInstanceOf[Anon_BlockParams]
   }

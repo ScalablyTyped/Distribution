@@ -20,13 +20,13 @@ object SharedRenderProps {
     children: (js.Function1[/* props */ P, reactLib.reactMod.ReactNs.ReactNode]) | reactLib.reactMod.ReactNs.ReactNode = null,
     component: reactLib.reactMod.ReactNs.ComponentType[P | scala.Unit] = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
-    render: js.Function1[/* props */ P, reactLib.reactMod.ReactNs.ReactNode] = null
+    render: /* props */ P => reactLib.reactMod.ReactNs.ReactNode = null
   ): SharedRenderProps[P] = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     __obj.asInstanceOf[SharedRenderProps[P]]
   }
 }

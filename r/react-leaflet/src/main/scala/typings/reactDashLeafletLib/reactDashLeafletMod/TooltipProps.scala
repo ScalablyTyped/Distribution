@@ -23,8 +23,8 @@ object TooltipProps {
     interactive: js.UndefOr[scala.Boolean] = js.undefined,
     leaflet: LeafletContext = null,
     offset: leafletLib.leafletMod.PointExpression = null,
-    onClose: js.Function0[scala.Unit] = null,
-    onOpen: js.Function0[scala.Unit] = null,
+    onClose: () => scala.Unit = null,
+    onOpen: () => scala.Unit = null,
     opacity: scala.Int | scala.Double = null,
     pane: java.lang.String = null,
     permanent: js.UndefOr[scala.Boolean] = js.undefined,
@@ -37,8 +37,8 @@ object TooltipProps {
     if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
     if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (pane != null) __obj.updateDynamic("pane")(pane)
     if (!js.isUndefined(permanent)) __obj.updateDynamic("permanent")(permanent)

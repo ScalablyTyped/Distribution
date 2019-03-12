@@ -15,11 +15,11 @@ trait ArrayOptions[TLeft, TRight] extends BaseOptions {
 object ArrayOptions {
   @scala.inline
   def apply[TLeft, TRight](
-    comparator: js.Function2[/* left */ TLeft, /* right */ TRight, scala.Boolean] = null,
+    comparator: (/* left */ TLeft, /* right */ TRight) => scala.Boolean = null,
     ignoreCase: js.UndefOr[scala.Boolean] = js.undefined
   ): ArrayOptions[TLeft, TRight] = {
     val __obj = js.Dynamic.literal()
-    if (comparator != null) __obj.updateDynamic("comparator")(comparator)
+    if (comparator != null) __obj.updateDynamic("comparator")(js.Any.fromFunction2(comparator))
     if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase)
     __obj.asInstanceOf[ArrayOptions[TLeft, TRight]]
   }

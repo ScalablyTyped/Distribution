@@ -22,21 +22,21 @@ object TypeOptions {
   @scala.inline
   def apply[T](
     kind: Kind,
-    construct: js.Function1[/* data */ java.lang.String, T] = null,
+    construct: /* data */ java.lang.String => T = null,
     defaultStyle: java.lang.String = null,
     instanceOf: js.Object = null,
-    predicate: js.Function1[/* obj */ js.Any, scala.Boolean] = null,
+    predicate: /* obj */ js.Any => scala.Boolean = null,
     represent: (js.Function2[/* obj */ js.Any, /* style */ java.lang.String, java.lang.String]) | (org.scalablytyped.runtime.StringDictionary[js.Function2[/* obj */ js.Any, /* style */ java.lang.String, java.lang.String]]) = null,
-    resolve: js.Function1[/* data */ java.lang.String, scala.Boolean] = null,
+    resolve: /* data */ java.lang.String => scala.Boolean = null,
     styleAliases: js.Object = null
   ): TypeOptions[T] = {
     val __obj = js.Dynamic.literal(kind = kind)
-    if (construct != null) __obj.updateDynamic("construct")(construct)
+    if (construct != null) __obj.updateDynamic("construct")(js.Any.fromFunction1(construct))
     if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle)
     if (instanceOf != null) __obj.updateDynamic("instanceOf")(instanceOf)
-    if (predicate != null) __obj.updateDynamic("predicate")(predicate)
+    if (predicate != null) __obj.updateDynamic("predicate")(js.Any.fromFunction1(predicate))
     if (represent != null) __obj.updateDynamic("represent")(represent.asInstanceOf[js.Any])
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
+    if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction1(resolve))
     if (styleAliases != null) __obj.updateDynamic("styleAliases")(styleAliases)
     __obj.asInstanceOf[TypeOptions[T]]
   }

@@ -39,15 +39,15 @@ trait PrefixFilter extends Filter {
 object PrefixFilter {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cache: js.Function1[scala.Boolean, PrefixFilter],
-    cacheKey: js.Function1[java.lang.String, PrefixFilter],
-    field: js.Function1[java.lang.String, PrefixFilter],
-    name: js.Function1[java.lang.String, PrefixFilter],
-    prefix: js.Function1[java.lang.String, PrefixFilter],
-    toJSON: js.Function0[PrefixFilter]
+    _type: () => java.lang.String,
+    cache: scala.Boolean => PrefixFilter,
+    cacheKey: java.lang.String => PrefixFilter,
+    field: java.lang.String => PrefixFilter,
+    name: java.lang.String => PrefixFilter,
+    prefix: java.lang.String => PrefixFilter,
+    toJSON: () => PrefixFilter
   ): PrefixFilter = {
-    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, field = field, name = name, prefix = prefix, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), field = js.Any.fromFunction1(field), name = js.Any.fromFunction1(name), prefix = js.Any.fromFunction1(prefix), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[PrefixFilter]
   }

@@ -31,16 +31,16 @@ trait ISceneSerializableComponent extends ISceneComponent {
 object ISceneSerializableComponent {
   @scala.inline
   def apply(
-    addFromContainer: js.Function1[AbstractScene, scala.Unit],
-    dispose: js.Function0[scala.Unit],
+    addFromContainer: AbstractScene => scala.Unit,
+    dispose: () => scala.Unit,
     name: java.lang.String,
-    rebuild: js.Function0[scala.Unit],
-    register: js.Function0[scala.Unit],
-    removeFromContainer: js.Function1[AbstractScene, scala.Unit],
+    rebuild: () => scala.Unit,
+    register: () => scala.Unit,
+    removeFromContainer: AbstractScene => scala.Unit,
     scene: Scene,
-    serialize: js.Function1[js.Any, scala.Unit]
+    serialize: js.Any => scala.Unit
   ): ISceneSerializableComponent = {
-    val __obj = js.Dynamic.literal(addFromContainer = addFromContainer, dispose = dispose, name = name, rebuild = rebuild, register = register, removeFromContainer = removeFromContainer, scene = scene, serialize = serialize)
+    val __obj = js.Dynamic.literal(addFromContainer = js.Any.fromFunction1(addFromContainer), dispose = js.Any.fromFunction0(dispose), name = name, rebuild = js.Any.fromFunction0(rebuild), register = js.Any.fromFunction0(register), removeFromContainer = js.Any.fromFunction1(removeFromContainer), scene = scene, serialize = js.Any.fromFunction1(serialize))
   
     __obj.asInstanceOf[ISceneSerializableComponent]
   }

@@ -138,9 +138,9 @@ object AvatarProps {
     imageProps: stdLib.Partial[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImageProperties */ _
     ] = null,
-    onEditPress: js.Function0[scala.Unit] = null,
-    onLongPress: js.Function0[scala.Unit] = null,
-    onPress: js.Function0[scala.Unit] = null,
+    onEditPress: () => scala.Unit = null,
+    onLongPress: () => scala.Unit = null,
+    onPress: () => scala.Unit = null,
     overlayContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     placeholderStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     renderPlaceholderContent: reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
@@ -161,9 +161,9 @@ object AvatarProps {
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
     if (imageProps != null) __obj.updateDynamic("imageProps")(imageProps)
-    if (onEditPress != null) __obj.updateDynamic("onEditPress")(onEditPress)
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (onEditPress != null) __obj.updateDynamic("onEditPress")(js.Any.fromFunction0(onEditPress))
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction0(onLongPress))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (overlayContainerStyle != null) __obj.updateDynamic("overlayContainerStyle")(overlayContainerStyle.asInstanceOf[js.Any])
     if (placeholderStyle != null) __obj.updateDynamic("placeholderStyle")(placeholderStyle.asInstanceOf[js.Any])
     if (renderPlaceholderContent != null) __obj.updateDynamic("renderPlaceholderContent")(renderPlaceholderContent)

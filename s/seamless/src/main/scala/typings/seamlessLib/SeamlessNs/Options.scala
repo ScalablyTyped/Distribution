@@ -97,7 +97,7 @@ object Options {
     fallbackWindowHeight: scala.Int | scala.Double = null,
     fallbackWindowWidth: scala.Int | scala.Double = null,
     loading: java.lang.String = null,
-    onConnect: js.Function1[/* data */ js.Any, scala.Unit] = null,
+    onConnect: /* data */ js.Any => scala.Unit = null,
     showLoadingIndicator: js.UndefOr[scala.Boolean] = js.undefined,
     spinner: java.lang.String = null,
     styles: js.Array[java.lang.String] = null
@@ -114,7 +114,7 @@ object Options {
     if (fallbackWindowHeight != null) __obj.updateDynamic("fallbackWindowHeight")(fallbackWindowHeight.asInstanceOf[js.Any])
     if (fallbackWindowWidth != null) __obj.updateDynamic("fallbackWindowWidth")(fallbackWindowWidth.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading)
-    if (onConnect != null) __obj.updateDynamic("onConnect")(onConnect)
+    if (onConnect != null) __obj.updateDynamic("onConnect")(js.Any.fromFunction1(onConnect))
     if (!js.isUndefined(showLoadingIndicator)) __obj.updateDynamic("showLoadingIndicator")(showLoadingIndicator)
     if (spinner != null) __obj.updateDynamic("spinner")(spinner)
     if (styles != null) __obj.updateDynamic("styles")(styles)

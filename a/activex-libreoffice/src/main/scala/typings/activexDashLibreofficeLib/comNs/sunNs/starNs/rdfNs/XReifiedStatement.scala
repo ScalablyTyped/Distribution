@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * @since OOo 3.0
   */
 trait XReifiedStatement extends XNode {
-  var Statement: Statement
+  var Statement: activexDashLibreofficeLib.comNs.sunNs.starNs.rdfNs.Statement
 }
 
 object XReifiedStatement {

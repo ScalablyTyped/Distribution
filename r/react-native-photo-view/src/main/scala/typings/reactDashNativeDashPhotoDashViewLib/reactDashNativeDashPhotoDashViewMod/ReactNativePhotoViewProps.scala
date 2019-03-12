@@ -54,25 +54,13 @@ object ReactNativePhotoViewProps {
     loadingIndicatorSource: reactDashNativeLib.reactDashNativeMod.ImageSourcePropType = null,
     maximumZoomScale: scala.Int | scala.Double = null,
     minimumZoomScale: scala.Int | scala.Double = null,
-    onLoad: js.Function0[scala.Unit] = null,
-    onLoadEnd: js.Function0[scala.Unit] = null,
-    onLoadStart: js.Function0[scala.Unit] = null,
-    onProgress: js.Function2[/* loaded */ scala.Double, /* total */ scala.Double, scala.Unit] = null,
-    onScale: js.Function2[
-      /* scale */ scala.Double, 
-      /* target */ js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]], 
-      scala.Unit
-    ] = null,
-    onTap: js.Function2[
-      /* point */ reactDashNativeDashPhotoDashViewLib.Anon_X, 
-      /* target */ js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]], 
-      scala.Unit
-    ] = null,
-    onViewTap: js.Function2[
-      /* point */ reactDashNativeDashPhotoDashViewLib.Anon_X, 
-      /* target */ js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]], 
-      scala.Unit
-    ] = null,
+    onLoad: () => scala.Unit = null,
+    onLoadEnd: () => scala.Unit = null,
+    onLoadStart: () => scala.Unit = null,
+    onProgress: (/* loaded */ scala.Double, /* total */ scala.Double) => scala.Unit = null,
+    onScale: (/* scale */ scala.Double, /* target */ js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]]) => scala.Unit = null,
+    onTap: (/* point */ reactDashNativeDashPhotoDashViewLib.Anon_X, /* target */ js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]]) => scala.Unit = null,
+    onViewTap: (/* point */ reactDashNativeDashPhotoDashViewLib.Anon_X, /* target */ js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]]) => scala.Unit = null,
     scale: scala.Int | scala.Double = null,
     showsHorizontalScrollIndicator: js.UndefOr[scala.Boolean] = js.undefined,
     showsVerticalScrollIndicator: js.UndefOr[scala.Boolean] = js.undefined,
@@ -85,13 +73,13 @@ object ReactNativePhotoViewProps {
     if (loadingIndicatorSource != null) __obj.updateDynamic("loadingIndicatorSource")(loadingIndicatorSource.asInstanceOf[js.Any])
     if (maximumZoomScale != null) __obj.updateDynamic("maximumZoomScale")(maximumZoomScale.asInstanceOf[js.Any])
     if (minimumZoomScale != null) __obj.updateDynamic("minimumZoomScale")(minimumZoomScale.asInstanceOf[js.Any])
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
-    if (onLoadEnd != null) __obj.updateDynamic("onLoadEnd")(onLoadEnd)
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(onLoadStart)
-    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress)
-    if (onScale != null) __obj.updateDynamic("onScale")(onScale)
-    if (onTap != null) __obj.updateDynamic("onTap")(onTap)
-    if (onViewTap != null) __obj.updateDynamic("onViewTap")(onViewTap)
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
+    if (onLoadEnd != null) __obj.updateDynamic("onLoadEnd")(js.Any.fromFunction0(onLoadEnd))
+    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(js.Any.fromFunction0(onLoadStart))
+    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction2(onProgress))
+    if (onScale != null) __obj.updateDynamic("onScale")(js.Any.fromFunction2(onScale))
+    if (onTap != null) __obj.updateDynamic("onTap")(js.Any.fromFunction2(onTap))
+    if (onViewTap != null) __obj.updateDynamic("onViewTap")(js.Any.fromFunction2(onViewTap))
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (!js.isUndefined(showsHorizontalScrollIndicator)) __obj.updateDynamic("showsHorizontalScrollIndicator")(showsHorizontalScrollIndicator)
     if (!js.isUndefined(showsVerticalScrollIndicator)) __obj.updateDynamic("showsVerticalScrollIndicator")(showsVerticalScrollIndicator)

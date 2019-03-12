@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def clearLine(stream: nodeLib.NodeJSNs.WritableStream, dir: scala.Double): scala.Unit = js.native
   def clearScreenDown(stream: nodeLib.NodeJSNs.WritableStream): scala.Unit = js.native
-  def createInterface(input: nodeLib.NodeJSNs.ReadableStream): mzLib.readlineMod.ReadLine = js.native
-  def createInterface(input: nodeLib.NodeJSNs.ReadableStream, output: nodeLib.NodeJSNs.WritableStream): mzLib.readlineMod.ReadLine = js.native
+  def createInterface(input: nodeLib.NodeJSNs.ReadableStream): ReadLine = js.native
+  def createInterface(input: nodeLib.NodeJSNs.ReadableStream, output: nodeLib.NodeJSNs.WritableStream): ReadLine = js.native
   def createInterface(
     input: nodeLib.NodeJSNs.ReadableStream,
     output: nodeLib.NodeJSNs.WritableStream,
-    completer: mzLib.readlineMod.Completer
-  ): mzLib.readlineMod.ReadLine = js.native
+    completer: Completer
+  ): ReadLine = js.native
   def createInterface(
     input: nodeLib.NodeJSNs.ReadableStream,
     output: nodeLib.NodeJSNs.WritableStream,
-    completer: mzLib.readlineMod.Completer,
+    completer: Completer,
     terminal: scala.Boolean
-  ): mzLib.readlineMod.ReadLine = js.native
+  ): ReadLine = js.native
   def createInterface(
     input: nodeLib.NodeJSNs.ReadableStream,
     output: nodeLib.NodeJSNs.WritableStream,
@@ -45,7 +45,7 @@ object ^ extends js.Object {
     completer: nodeLib.readlineMod.Completer,
     terminal: scala.Boolean
   ): nodeLib.readlineMod.Interface = js.native
-  def createInterface(options: mzLib.readlineMod.ReadLineOptions): mzLib.readlineMod.ReadLine = js.native
+  def createInterface(options: ReadLineOptions): ReadLine = js.native
   def createInterface(options: nodeLib.readlineMod.ReadLineOptions): nodeLib.readlineMod.Interface = js.native
   @JSName("createInterface")
   def createInterface_Interface(input: nodeLib.NodeJSNs.ReadableStream): nodeLib.readlineMod.Interface = js.native

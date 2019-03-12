@@ -18,12 +18,12 @@ trait Mailgen extends js.Object {
 object Mailgen {
   @scala.inline
   def apply(
-    cacheThemes: js.Function0[scala.Unit],
-    generate: js.Function1[mailgenLib.mailgenMod.MailgenNs.Content, js.Any],
-    generatePlaintext: js.Function1[mailgenLib.mailgenMod.MailgenNs.Content, js.Any],
-    parseParams: js.Function1[js.Any, js.Any]
+    cacheThemes: () => scala.Unit,
+    generate: mailgenLib.mailgenMod.MailgenNs.Content => js.Any,
+    generatePlaintext: mailgenLib.mailgenMod.MailgenNs.Content => js.Any,
+    parseParams: js.Any => js.Any
   ): Mailgen = {
-    val __obj = js.Dynamic.literal(cacheThemes = cacheThemes, generate = generate, generatePlaintext = generatePlaintext, parseParams = parseParams)
+    val __obj = js.Dynamic.literal(cacheThemes = js.Any.fromFunction0(cacheThemes), generate = js.Any.fromFunction1(generate), generatePlaintext = js.Any.fromFunction1(generatePlaintext), parseParams = js.Any.fromFunction1(parseParams))
   
     __obj.asInstanceOf[Mailgen]
   }

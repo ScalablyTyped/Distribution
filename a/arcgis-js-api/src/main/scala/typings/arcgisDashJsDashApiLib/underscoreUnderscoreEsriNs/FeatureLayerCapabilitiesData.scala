@@ -31,13 +31,13 @@ object FeatureLayerCapabilitiesData {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     supportsAttachment: scala.Boolean,
     supportsM: scala.Boolean,
     supportsZ: scala.Boolean
   ): FeatureLayerCapabilitiesData = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, supportsAttachment = supportsAttachment, supportsM = supportsM, supportsZ = supportsZ)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsAttachment = supportsAttachment, supportsM = supportsM, supportsZ = supportsZ)
   
     __obj.asInstanceOf[FeatureLayerCapabilitiesData]
   }

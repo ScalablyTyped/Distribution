@@ -14,11 +14,11 @@ trait ServerConfiguration extends js.Object {
 object ServerConfiguration {
   @scala.inline
   def apply(
-    get: js.Function1[java.lang.String, java.lang.String],
-    list: js.Function0[js.Any],
-    set: js.Function2[java.lang.String, java.lang.String, java.lang.String]
+    get: java.lang.String => java.lang.String,
+    list: () => js.Any,
+    set: (java.lang.String, java.lang.String) => java.lang.String
   ): ServerConfiguration = {
-    val __obj = js.Dynamic.literal(get = get, list = list, set = set)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction0(list), set = js.Any.fromFunction2(set))
   
     __obj.asInstanceOf[ServerConfiguration]
   }

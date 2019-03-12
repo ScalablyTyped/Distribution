@@ -13,8 +13,8 @@ trait ISearchProvider extends js.Object {
 
 object ISearchProvider {
   @scala.inline
-  def apply(evalFilter: js.Function0[scala.Unit], extFilter: scala.Boolean, fieldMap: js.Any): ISearchProvider = {
-    val __obj = js.Dynamic.literal(evalFilter = evalFilter, extFilter = extFilter, fieldMap = fieldMap)
+  def apply(evalFilter: () => scala.Unit, extFilter: scala.Boolean, fieldMap: js.Any): ISearchProvider = {
+    val __obj = js.Dynamic.literal(evalFilter = js.Any.fromFunction0(evalFilter), extFilter = extFilter, fieldMap = fieldMap)
   
     __obj.asInstanceOf[ISearchProvider]
   }

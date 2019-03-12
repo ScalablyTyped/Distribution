@@ -61,19 +61,11 @@ object Anon_CallbackError {
     ],
     onMessagesDeleted: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function0[scala.Unit]],
     onSendError: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* error */ chromeDashAppsLib.chromeNs.gcmNs.GcmError, scala.Unit]],
-    register: js.Function2[
-      js.Array[java.lang.String], 
-      js.Function1[/* registrationId */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ],
-    send: js.Function2[
-      chromeDashAppsLib.chromeNs.gcmNs.OutgoingMessage, 
-      js.Function1[/* messageId */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ],
-    unregister: js.Function1[js.Function0[scala.Unit], scala.Unit]
+    register: (js.Array[java.lang.String], js.Function1[/* registrationId */ java.lang.String, scala.Unit]) => scala.Unit,
+    send: (chromeDashAppsLib.chromeNs.gcmNs.OutgoingMessage, js.Function1[/* messageId */ java.lang.String, scala.Unit]) => scala.Unit,
+    unregister: js.Function0[scala.Unit] => scala.Unit
   ): Anon_CallbackError = {
-    val __obj = js.Dynamic.literal(MAX_MESSAGE_SIZE = MAX_MESSAGE_SIZE, onMessage = onMessage, onMessagesDeleted = onMessagesDeleted, onSendError = onSendError, register = register, send = send, unregister = unregister)
+    val __obj = js.Dynamic.literal(MAX_MESSAGE_SIZE = MAX_MESSAGE_SIZE, onMessage = onMessage, onMessagesDeleted = onMessagesDeleted, onSendError = onSendError, register = js.Any.fromFunction2(register), send = js.Any.fromFunction2(send), unregister = js.Any.fromFunction1(unregister))
   
     __obj.asInstanceOf[Anon_CallbackError]
   }

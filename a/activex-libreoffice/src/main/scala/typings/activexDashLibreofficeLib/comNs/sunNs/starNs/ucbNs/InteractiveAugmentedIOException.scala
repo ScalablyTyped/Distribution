@@ -12,13 +12,13 @@ trait InteractiveAugmentedIOException extends InteractiveIOException {
     *
     * See {@link com.sun.star.task.InteractionHandler} for a description of well-known arguments.
     */
-  var Arguments: activexDashInteropLib.SafeArray[_]
+  var Arguments: stdLib.SafeArray[_]
 }
 
 object InteractiveAugmentedIOException {
   @scala.inline
   def apply(
-    Arguments: activexDashInteropLib.SafeArray[_],
+    Arguments: stdLib.SafeArray[_],
     Classification: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.InteractionClassification,
     Code: IOErrorCode,
     Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,

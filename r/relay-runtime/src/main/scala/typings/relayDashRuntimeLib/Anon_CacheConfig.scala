@@ -18,15 +18,15 @@ object Anon_CacheConfig {
   def apply[TPayload, TNode, TOperation](
     operation: relayDashRuntimeLib.relayDashRuntimeMod.COperationSelector[TNode, TOperation],
     cacheConfig: relayDashRuntimeLib.relayDashRuntimeMod.CacheConfig = null,
-    onCompleted: js.Function0[scala.Unit] = null,
-    onError: js.Function1[/* error */ stdLib.Error, scala.Unit] = null,
-    onNext: js.Function1[/* payload */ TPayload, scala.Unit] = null
+    onCompleted: () => scala.Unit = null,
+    onError: /* error */ stdLib.Error => scala.Unit = null,
+    onNext: /* payload */ TPayload => scala.Unit = null
   ): Anon_CacheConfig[TPayload, TNode, TOperation] = {
     val __obj = js.Dynamic.literal(operation = operation)
     if (cacheConfig != null) __obj.updateDynamic("cacheConfig")(cacheConfig)
-    if (onCompleted != null) __obj.updateDynamic("onCompleted")(onCompleted)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onNext != null) __obj.updateDynamic("onNext")(onNext)
+    if (onCompleted != null) __obj.updateDynamic("onCompleted")(js.Any.fromFunction0(onCompleted))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onNext != null) __obj.updateDynamic("onNext")(js.Any.fromFunction1(onNext))
     __obj.asInstanceOf[Anon_CacheConfig[TPayload, TNode, TOperation]]
   }
 }

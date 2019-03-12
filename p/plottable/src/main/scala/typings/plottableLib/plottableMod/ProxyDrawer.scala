@@ -17,7 +17,7 @@ class ProxyDrawer protected ()
     * @param _canvasDrawStep The DrawStep to be fed into a new CanvasDrawer whenever useCanvas is called
     */
   def this(_svgDrawerFactory: js.Function0[plottableLib.buildSrcDrawersSvgDrawerMod.SVGDrawer], _canvasDrawerFactory: js.Function1[
-      /* ctx */ d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D, 
+      /* ctx */ stdLib.CanvasRenderingContext2D, 
       plottableLib.buildSrcDrawersCanvasDrawerMod.CanvasDrawer
     ]) = this()
 }

@@ -11,8 +11,8 @@ trait ComposeStatic extends js.Object {
 
 object ComposeStatic {
   @scala.inline
-  def apply(mixin: js.Function2[js.Object, js.Array[js.Function], scala.Unit]): ComposeStatic = {
-    val __obj = js.Dynamic.literal(mixin = mixin)
+  def apply(mixin: (js.Object, js.Array[js.Function]) => scala.Unit): ComposeStatic = {
+    val __obj = js.Dynamic.literal(mixin = js.Any.fromFunction2(mixin))
   
     __obj.asInstanceOf[ComposeStatic]
   }

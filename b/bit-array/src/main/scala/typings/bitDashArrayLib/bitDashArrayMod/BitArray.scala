@@ -78,25 +78,25 @@ trait BitArray extends js.Object {
 object BitArray {
   @scala.inline
   def apply(
-    and: js.Function1[BitArray, BitArray],
-    copy: js.Function0[BitArray],
-    count: js.Function0[scala.Double],
-    equals: js.Function1[BitArray, scala.Boolean],
-    get: js.Function1[scala.Double, scala.Boolean],
-    not: js.Function0[BitArray],
-    or: js.Function1[BitArray, BitArray],
-    reset: js.Function0[BitArray],
-    set: js.Function2[scala.Double, scala.Boolean, BitArray],
-    size: js.Function0[scala.Double],
-    toArray: js.Function0[js.Array[scala.Boolean]],
-    toBinaryString: js.Function0[java.lang.String],
-    toHexString: js.Function0[java.lang.String],
-    toJSON: js.Function0[java.lang.String],
-    toString: js.Function0[java.lang.String],
-    toggle: js.Function1[scala.Double, BitArray],
-    xor: js.Function1[BitArray, BitArray]
+    and: BitArray => BitArray,
+    copy: () => BitArray,
+    count: () => scala.Double,
+    equals: BitArray => scala.Boolean,
+    get: scala.Double => scala.Boolean,
+    not: () => BitArray,
+    or: BitArray => BitArray,
+    reset: () => BitArray,
+    set: (scala.Double, scala.Boolean) => BitArray,
+    size: () => scala.Double,
+    toArray: () => js.Array[scala.Boolean],
+    toBinaryString: () => java.lang.String,
+    toHexString: () => java.lang.String,
+    toJSON: () => java.lang.String,
+    toString: () => java.lang.String,
+    toggle: scala.Double => BitArray,
+    xor: BitArray => BitArray
   ): BitArray = {
-    val __obj = js.Dynamic.literal(and = and, copy = copy, count = count, equals = equals, get = get, not = not, or = or, reset = reset, set = set, size = size, toArray = toArray, toBinaryString = toBinaryString, toHexString = toHexString, toJSON = toJSON, toString = toString, toggle = toggle, xor = xor)
+    val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), copy = js.Any.fromFunction0(copy), count = js.Any.fromFunction0(count), equals = js.Any.fromFunction1(equals), get = js.Any.fromFunction1(get), not = js.Any.fromFunction0(not), or = js.Any.fromFunction1(or), reset = js.Any.fromFunction0(reset), set = js.Any.fromFunction2(set), size = js.Any.fromFunction0(size), toArray = js.Any.fromFunction0(toArray), toBinaryString = js.Any.fromFunction0(toBinaryString), toHexString = js.Any.fromFunction0(toHexString), toJSON = js.Any.fromFunction0(toJSON), toString = js.Any.fromFunction0(toString), toggle = js.Any.fromFunction1(toggle), xor = js.Any.fromFunction1(xor))
   
     __obj.asInstanceOf[BitArray]
   }

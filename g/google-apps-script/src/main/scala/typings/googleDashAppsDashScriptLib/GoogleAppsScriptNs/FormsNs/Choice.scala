@@ -15,12 +15,12 @@ trait Choice extends js.Object {
 object Choice {
   @scala.inline
   def apply(
-    getGotoPage: js.Function0[PageBreakItem],
-    getPageNavigationType: js.Function0[PageNavigationType],
-    getValue: js.Function0[java.lang.String],
-    isCorrectAnswer: js.Function0[scala.Boolean]
+    getGotoPage: () => PageBreakItem,
+    getPageNavigationType: () => PageNavigationType,
+    getValue: () => java.lang.String,
+    isCorrectAnswer: () => scala.Boolean
   ): Choice = {
-    val __obj = js.Dynamic.literal(getGotoPage = getGotoPage, getPageNavigationType = getPageNavigationType, getValue = getValue, isCorrectAnswer = isCorrectAnswer)
+    val __obj = js.Dynamic.literal(getGotoPage = js.Any.fromFunction0(getGotoPage), getPageNavigationType = js.Any.fromFunction0(getPageNavigationType), getValue = js.Any.fromFunction0(getValue), isCorrectAnswer = js.Any.fromFunction0(isCorrectAnswer))
   
     __obj.asInstanceOf[Choice]
   }

@@ -14,14 +14,11 @@ trait ICameraCaptureUI extends js.Object {
 object ICameraCaptureUI {
   @scala.inline
   def apply(
-    captureFileAsync: js.Function1[
-      CameraCaptureUIMode, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StorageFile]
-    ],
+    captureFileAsync: CameraCaptureUIMode => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StorageFile],
     photoSettings: CameraCaptureUIPhotoCaptureSettings,
     videoSettings: CameraCaptureUIVideoCaptureSettings
   ): ICameraCaptureUI = {
-    val __obj = js.Dynamic.literal(captureFileAsync = captureFileAsync, photoSettings = photoSettings, videoSettings = videoSettings)
+    val __obj = js.Dynamic.literal(captureFileAsync = js.Any.fromFunction1(captureFileAsync), photoSettings = photoSettings, videoSettings = videoSettings)
   
     __obj.asInstanceOf[ICameraCaptureUI]
   }

@@ -42,12 +42,12 @@ object VideoProps {
   def apply(
     isLooping: js.UndefOr[scala.Boolean] = js.undefined,
     isMuted: js.UndefOr[scala.Boolean] = js.undefined,
-    onError: js.Function1[/* error */ java.lang.String, scala.Unit] = null,
-    onIOSFullscreenUpdate: js.Function1[/* event */ FullscreenUpdateEvent, scala.Unit] = null,
-    onLoad: js.Function1[/* status */ PlaybackStatus, scala.Unit] = null,
-    onLoadStart: js.Function0[scala.Unit] = null,
-    onPlaybackStatusUpdate: js.Function1[/* status */ PlaybackStatus, scala.Unit] = null,
-    onReadyForDisplay: js.Function1[/* event */ ReadyForDisplayEvent, scala.Unit] = null,
+    onError: /* error */ java.lang.String => scala.Unit = null,
+    onIOSFullscreenUpdate: /* event */ FullscreenUpdateEvent => scala.Unit = null,
+    onLoad: /* status */ PlaybackStatus => scala.Unit = null,
+    onLoadStart: () => scala.Unit = null,
+    onPlaybackStatusUpdate: /* status */ PlaybackStatus => scala.Unit = null,
+    onReadyForDisplay: /* event */ ReadyForDisplayEvent => scala.Unit = null,
     positionMillis: scala.Int | scala.Double = null,
     posterSource: URISource | RequireSource = null,
     progressUpdateIntervalMillis: scala.Int | scala.Double = null,
@@ -71,12 +71,12 @@ object VideoProps {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(isLooping)) __obj.updateDynamic("isLooping")(isLooping)
     if (!js.isUndefined(isMuted)) __obj.updateDynamic("isMuted")(isMuted)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onIOSFullscreenUpdate != null) __obj.updateDynamic("onIOSFullscreenUpdate")(onIOSFullscreenUpdate)
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(onLoadStart)
-    if (onPlaybackStatusUpdate != null) __obj.updateDynamic("onPlaybackStatusUpdate")(onPlaybackStatusUpdate)
-    if (onReadyForDisplay != null) __obj.updateDynamic("onReadyForDisplay")(onReadyForDisplay)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onIOSFullscreenUpdate != null) __obj.updateDynamic("onIOSFullscreenUpdate")(js.Any.fromFunction1(onIOSFullscreenUpdate))
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
+    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(js.Any.fromFunction0(onLoadStart))
+    if (onPlaybackStatusUpdate != null) __obj.updateDynamic("onPlaybackStatusUpdate")(js.Any.fromFunction1(onPlaybackStatusUpdate))
+    if (onReadyForDisplay != null) __obj.updateDynamic("onReadyForDisplay")(js.Any.fromFunction1(onReadyForDisplay))
     if (positionMillis != null) __obj.updateDynamic("positionMillis")(positionMillis.asInstanceOf[js.Any])
     if (posterSource != null) __obj.updateDynamic("posterSource")(posterSource.asInstanceOf[js.Any])
     if (progressUpdateIntervalMillis != null) __obj.updateDynamic("progressUpdateIntervalMillis")(progressUpdateIntervalMillis.asInstanceOf[js.Any])

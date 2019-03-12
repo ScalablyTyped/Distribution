@@ -59,21 +59,21 @@ trait Iterator[K, V] extends js.Object {
 object Iterator {
   @scala.inline
   def apply[K, V](
-    clone: js.Function0[Iterator[K, V]],
+    clone: () => Iterator[K, V],
     hasNext: scala.Boolean,
     hasPrev: scala.Boolean,
     index: scala.Double,
-    next: js.Function0[scala.Unit],
-    prev: js.Function0[scala.Unit],
-    remove: js.Function0[adoneLib.adoneNs.collectionNs.RedBlackTree[K, V]],
+    next: () => scala.Unit,
+    prev: () => scala.Unit,
+    remove: () => adoneLib.adoneNs.collectionNs.RedBlackTree[K, V],
     tree: adoneLib.adoneNs.collectionNs.RedBlackTree[K, V],
-    update: js.Function1[V, adoneLib.adoneNs.collectionNs.RedBlackTree[K, V]],
+    update: V => adoneLib.adoneNs.collectionNs.RedBlackTree[K, V],
     valid: scala.Boolean,
     key: K = null,
     node: Node[K, V] = null,
     value: V = null
   ): Iterator[K, V] = {
-    val __obj = js.Dynamic.literal(clone = clone, hasNext = hasNext, hasPrev = hasPrev, index = index, next = next, prev = prev, remove = remove, tree = tree, update = update, valid = valid)
+    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), hasNext = hasNext, hasPrev = hasPrev, index = index, next = js.Any.fromFunction0(next), prev = js.Any.fromFunction0(prev), remove = js.Any.fromFunction0(remove), tree = tree, update = js.Any.fromFunction1(update), valid = valid)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (node != null) __obj.updateDynamic("node")(node)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

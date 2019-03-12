@@ -24,6 +24,6 @@ trait RouteOptionsPreObject extends js.Object {
     * a lifecycle method.
     */
   def method(request: Request, h: ResponseToolkit): hapiLib.hapiMod.LifecycleNs.ReturnValue = js.native
-  def method(request: Request, h: ResponseToolkit, err: nodeLib.Error): hapiLib.hapiMod.LifecycleNs.ReturnValue = js.native
+  def method(request: Request, h: ResponseToolkit, err: stdLib.Error): hapiLib.hapiMod.LifecycleNs.ReturnValue = js.native
 }
 

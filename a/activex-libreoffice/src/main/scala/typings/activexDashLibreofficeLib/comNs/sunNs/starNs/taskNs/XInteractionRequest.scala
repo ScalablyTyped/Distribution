@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 trait XInteractionRequest
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** Get the set of com::sun::star::task::XInteractionContinuations the client supports for this request. */
-  val Continuations: activexDashInteropLib.SafeArray[XInteractionContinuation]
+  val Continuations: stdLib.SafeArray[XInteractionContinuation]
   /**
     * Get information about the request itself.
     * @returns an {@link com.sun.star.uno.Exception} , wrapped as an `any` .
     */
   val Request: js.Any
   /** Get the set of com::sun::star::task::XInteractionContinuations the client supports for this request. */
-  def getContinuations(): activexDashInteropLib.SafeArray[XInteractionContinuation]
+  def getContinuations(): stdLib.SafeArray[XInteractionContinuation]
   /**
     * Get information about the request itself.
     * @returns an {@link com.sun.star.uno.Exception} , wrapped as an `any` .
@@ -27,15 +27,15 @@ trait XInteractionRequest
 object XInteractionRequest {
   @scala.inline
   def apply(
-    Continuations: activexDashInteropLib.SafeArray[XInteractionContinuation],
+    Continuations: stdLib.SafeArray[XInteractionContinuation],
     Request: js.Any,
-    acquire: js.Function0[scala.Unit],
-    getContinuations: js.Function0[activexDashInteropLib.SafeArray[XInteractionContinuation]],
-    getRequest: js.Function0[js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getContinuations: () => stdLib.SafeArray[XInteractionContinuation],
+    getRequest: () => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XInteractionRequest = {
-    val __obj = js.Dynamic.literal(Continuations = Continuations, Request = Request, acquire = acquire, getContinuations = getContinuations, getRequest = getRequest, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Continuations = Continuations, Request = Request, acquire = js.Any.fromFunction0(acquire), getContinuations = js.Any.fromFunction0(getContinuations), getRequest = js.Any.fromFunction0(getRequest), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XInteractionRequest]
   }

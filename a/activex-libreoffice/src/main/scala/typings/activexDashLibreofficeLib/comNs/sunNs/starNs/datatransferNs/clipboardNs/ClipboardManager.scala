@@ -16,18 +16,18 @@ trait ClipboardManager
 object ClipboardManager {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addClipboard: js.Function1[XClipboard, scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    getClipboard: js.Function1[java.lang.String, XClipboard],
-    listClipboardNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeClipboard: js.Function1[java.lang.String, scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addClipboard: XClipboard => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    dispose: () => scala.Unit,
+    getClipboard: java.lang.String => XClipboard,
+    listClipboardNames: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeClipboard: java.lang.String => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit
   ): ClipboardManager = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addClipboard = addClipboard, addEventListener = addEventListener, dispose = dispose, getClipboard = getClipboard, listClipboardNames = listClipboardNames, queryInterface = queryInterface, release = release, removeClipboard = removeClipboard, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addClipboard = js.Any.fromFunction1(addClipboard), addEventListener = js.Any.fromFunction1(addEventListener), dispose = js.Any.fromFunction0(dispose), getClipboard = js.Any.fromFunction1(getClipboard), listClipboardNames = js.Any.fromFunction0(listClipboardNames), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeClipboard = js.Any.fromFunction1(removeClipboard), removeEventListener = js.Any.fromFunction1(removeEventListener))
   
     __obj.asInstanceOf[ClipboardManager]
   }

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var Winreg: winregLib.WinregStatic = js.native
+  var Winreg: WinregStatic = js.native
 }
 

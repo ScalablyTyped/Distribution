@@ -35,32 +35,32 @@ trait Item extends js.Object {
 object Item {
   @scala.inline
   def apply(
-    asCheckboxGridItem: js.Function0[CheckboxGridItem],
-    asCheckboxItem: js.Function0[CheckboxItem],
-    asDateItem: js.Function0[DateItem],
-    asDateTimeItem: js.Function0[DateTimeItem],
-    asDurationItem: js.Function0[DurationItem],
-    asGridItem: js.Function0[GridItem],
-    asImageItem: js.Function0[ImageItem],
-    asListItem: js.Function0[ListItem],
-    asMultipleChoiceItem: js.Function0[MultipleChoiceItem],
-    asPageBreakItem: js.Function0[PageBreakItem],
-    asParagraphTextItem: js.Function0[ParagraphTextItem],
-    asScaleItem: js.Function0[ScaleItem],
-    asSectionHeaderItem: js.Function0[SectionHeaderItem],
-    asTextItem: js.Function0[TextItem],
-    asTimeItem: js.Function0[TimeItem],
-    asVideoItem: js.Function0[VideoItem],
-    duplicate: js.Function0[Item],
-    getHelpText: js.Function0[java.lang.String],
-    getId: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getTitle: js.Function0[java.lang.String],
-    getType: js.Function0[ItemType],
-    setHelpText: js.Function1[java.lang.String, Item],
-    setTitle: js.Function1[java.lang.String, Item]
+    asCheckboxGridItem: () => CheckboxGridItem,
+    asCheckboxItem: () => CheckboxItem,
+    asDateItem: () => DateItem,
+    asDateTimeItem: () => DateTimeItem,
+    asDurationItem: () => DurationItem,
+    asGridItem: () => GridItem,
+    asImageItem: () => ImageItem,
+    asListItem: () => ListItem,
+    asMultipleChoiceItem: () => MultipleChoiceItem,
+    asPageBreakItem: () => PageBreakItem,
+    asParagraphTextItem: () => ParagraphTextItem,
+    asScaleItem: () => ScaleItem,
+    asSectionHeaderItem: () => SectionHeaderItem,
+    asTextItem: () => TextItem,
+    asTimeItem: () => TimeItem,
+    asVideoItem: () => VideoItem,
+    duplicate: () => Item,
+    getHelpText: () => java.lang.String,
+    getId: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getIndex: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getTitle: () => java.lang.String,
+    getType: () => ItemType,
+    setHelpText: java.lang.String => Item,
+    setTitle: java.lang.String => Item
   ): Item = {
-    val __obj = js.Dynamic.literal(asCheckboxGridItem = asCheckboxGridItem, asCheckboxItem = asCheckboxItem, asDateItem = asDateItem, asDateTimeItem = asDateTimeItem, asDurationItem = asDurationItem, asGridItem = asGridItem, asImageItem = asImageItem, asListItem = asListItem, asMultipleChoiceItem = asMultipleChoiceItem, asPageBreakItem = asPageBreakItem, asParagraphTextItem = asParagraphTextItem, asScaleItem = asScaleItem, asSectionHeaderItem = asSectionHeaderItem, asTextItem = asTextItem, asTimeItem = asTimeItem, asVideoItem = asVideoItem, duplicate = duplicate, getHelpText = getHelpText, getId = getId, getIndex = getIndex, getTitle = getTitle, getType = getType, setHelpText = setHelpText, setTitle = setTitle)
+    val __obj = js.Dynamic.literal(asCheckboxGridItem = js.Any.fromFunction0(asCheckboxGridItem), asCheckboxItem = js.Any.fromFunction0(asCheckboxItem), asDateItem = js.Any.fromFunction0(asDateItem), asDateTimeItem = js.Any.fromFunction0(asDateTimeItem), asDurationItem = js.Any.fromFunction0(asDurationItem), asGridItem = js.Any.fromFunction0(asGridItem), asImageItem = js.Any.fromFunction0(asImageItem), asListItem = js.Any.fromFunction0(asListItem), asMultipleChoiceItem = js.Any.fromFunction0(asMultipleChoiceItem), asPageBreakItem = js.Any.fromFunction0(asPageBreakItem), asParagraphTextItem = js.Any.fromFunction0(asParagraphTextItem), asScaleItem = js.Any.fromFunction0(asScaleItem), asSectionHeaderItem = js.Any.fromFunction0(asSectionHeaderItem), asTextItem = js.Any.fromFunction0(asTextItem), asTimeItem = js.Any.fromFunction0(asTimeItem), asVideoItem = js.Any.fromFunction0(asVideoItem), duplicate = js.Any.fromFunction0(duplicate), getHelpText = js.Any.fromFunction0(getHelpText), getId = js.Any.fromFunction0(getId), getIndex = js.Any.fromFunction0(getIndex), getTitle = js.Any.fromFunction0(getTitle), getType = js.Any.fromFunction0(getType), setHelpText = js.Any.fromFunction1(setHelpText), setTitle = js.Any.fromFunction1(setTitle))
   
     __obj.asInstanceOf[Item]
   }

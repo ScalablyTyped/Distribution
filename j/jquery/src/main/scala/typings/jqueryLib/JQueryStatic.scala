@@ -194,13 +194,6 @@ trait JQueryStatic extends js.Object {
     props: jqueryLib.JQueryNs.PlainObject[_],
     opts: jqueryLib.JQueryNs.EffectsOptions[TElement]
   ): jqueryLib.JQueryNs.Animation[TElement] = js.native
-  /**
-    * A multi-purpose callbacks list object that provides a powerful way to manage callback lists.
-    * @param flags An optional list of space-separated flags that change how the callback list behaves.
-    * @see \`{@link https://api.jquery.com/jQuery.Callbacks/ }\`
-    * @since 1.7
-    */
-  // tslint:disable-next-line:ban-types callable-types no-unnecessary-generics
   def Callbacks[T /* <: js.Function */](): jqueryLib.JQueryNs.Callbacks[T] = js.native
   def Callbacks[T /* <: js.Function */](flags: java.lang.String): jqueryLib.JQueryNs.Callbacks[T] = js.native
   /**

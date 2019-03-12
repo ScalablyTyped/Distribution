@@ -93,21 +93,13 @@ object Anon_CallbackCertificates {
         _
       ]
     ],
-    requestPin: js.Function2[
-      chromeDashAppsLib.chromeNs.certificateProviderNs.RequestPinDetails, 
-      js.Function1[
-        /* details */ js.UndefOr[chromeDashAppsLib.chromeNs.certificateProviderNs.PinResponseDetails], 
-        scala.Unit
-      ], 
+    requestPin: (chromeDashAppsLib.chromeNs.certificateProviderNs.RequestPinDetails, js.Function1[
+      /* details */ js.UndefOr[chromeDashAppsLib.chromeNs.certificateProviderNs.PinResponseDetails], 
       scala.Unit
-    ],
-    stopPinRequest: js.Function2[
-      chromeDashAppsLib.chromeNs.certificateProviderNs.StopRequestPinDetails, 
-      js.Function0[scala.Unit], 
-      scala.Unit
-    ]
+    ]) => scala.Unit,
+    stopPinRequest: (chromeDashAppsLib.chromeNs.certificateProviderNs.StopRequestPinDetails, js.Function0[scala.Unit]) => scala.Unit
   ): Anon_CallbackCertificates = {
-    val __obj = js.Dynamic.literal(PinRequestErrorType = PinRequestErrorType, PinRequestType = PinRequestType, onCertificatesRequested = onCertificatesRequested, onSignDigestRequested = onSignDigestRequested, requestPin = requestPin, stopPinRequest = stopPinRequest)
+    val __obj = js.Dynamic.literal(PinRequestErrorType = PinRequestErrorType, PinRequestType = PinRequestType, onCertificatesRequested = onCertificatesRequested, onSignDigestRequested = onSignDigestRequested, requestPin = js.Any.fromFunction2(requestPin), stopPinRequest = js.Any.fromFunction2(stopPinRequest))
   
     __obj.asInstanceOf[Anon_CallbackCertificates]
   }

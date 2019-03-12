@@ -22,13 +22,13 @@ trait IAsyncInfo extends js.Object {
 object IAsyncInfo {
   @scala.inline
   def apply(
-    cancel: js.Function0[scala.Unit],
-    close: js.Function0[scala.Unit],
+    cancel: () => scala.Unit,
+    close: () => scala.Unit,
     errorCode: winrtDashUwpLib.WindowsNs.WinRTError,
     id: scala.Double,
     status: AsyncStatus
   ): IAsyncInfo = {
-    val __obj = js.Dynamic.literal(cancel = cancel, close = close, errorCode = errorCode, id = id, status = status)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), close = js.Any.fromFunction0(close), errorCode = errorCode, id = id, status = status)
   
     __obj.asInstanceOf[IAsyncInfo]
   }

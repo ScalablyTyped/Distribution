@@ -14,7 +14,7 @@ package object FactoryNs {
   ]
   type LevelFunction = js.Function3[
     /* status */ scala.Double, 
-    /* err */ nodeLib.Error | scala.Null, 
+    /* err */ stdLib.Error | scala.Null, 
     /* meta */ js.Any, 
     java.lang.String
   ]

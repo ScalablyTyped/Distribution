@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.LinkFormat")
 @js.native
 class LinkFormat protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   var AutoUpdate: PpUpdateOption = js.native
   val Parent: js.Any = js.native
   var `PowerPoint.LinkFormat_typekey`: LinkFormat = js.native

@@ -32,11 +32,11 @@ trait Blob extends js.Object {
 object Blob {
   @scala.inline
   def apply(
-    isEqual: js.Function1[Blob, scala.Boolean],
-    toBase64: js.Function0[java.lang.String],
-    toUint8Array: js.Function0[stdLib.Uint8Array]
+    isEqual: Blob => scala.Boolean,
+    toBase64: () => java.lang.String,
+    toUint8Array: () => stdLib.Uint8Array
   ): Blob = {
-    val __obj = js.Dynamic.literal(isEqual = isEqual, toBase64 = toBase64, toUint8Array = toUint8Array)
+    val __obj = js.Dynamic.literal(isEqual = js.Any.fromFunction1(isEqual), toBase64 = js.Any.fromFunction0(toBase64), toUint8Array = js.Any.fromFunction0(toUint8Array))
   
     __obj.asInstanceOf[Blob]
   }

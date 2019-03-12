@@ -12,11 +12,11 @@ trait IStringValidator extends IPropertyValidator {
 object IStringValidator {
   @scala.inline
   def apply(
-    isAcceptable: js.Function1[java.lang.String, scala.Boolean],
+    isAcceptable: java.lang.String => scala.Boolean,
     customMessage: IErrorCustomMessage = null,
     tagName: java.lang.String = null
   ): IStringValidator = {
-    val __obj = js.Dynamic.literal(isAcceptable = isAcceptable)
+    val __obj = js.Dynamic.literal(isAcceptable = js.Any.fromFunction1(isAcceptable))
     if (customMessage != null) __obj.updateDynamic("customMessage")(customMessage)
     if (tagName != null) __obj.updateDynamic("tagName")(tagName)
     __obj.asInstanceOf[IStringValidator]

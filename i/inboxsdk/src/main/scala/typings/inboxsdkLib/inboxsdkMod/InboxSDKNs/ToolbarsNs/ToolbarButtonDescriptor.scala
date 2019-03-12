@@ -24,10 +24,10 @@ trait ToolbarButtonDescriptor extends js.Object {
 object ToolbarButtonDescriptor {
   @scala.inline
   def apply(
-    onClick: js.Function1[ToolbarButtonEvent, scala.Unit],
+    onClick: ToolbarButtonEvent => scala.Unit,
     title: java.lang.String,
     hasDropdown: js.UndefOr[scala.Boolean] = js.undefined,
-    hideFor: js.Function1[/* routeView */ inboxsdkLib.inboxsdkMod.InboxSDKNs.RouterNs.RouteView, scala.Unit] = null,
+    hideFor: /* routeView */ inboxsdkLib.inboxsdkMod.InboxSDKNs.RouterNs.RouteView => scala.Unit = null,
     iconClass: java.lang.String = null,
     iconUrl: java.lang.String = null,
     keyboardShortcutHandle: inboxsdkLib.inboxsdkMod.InboxSDKNs.KeyboardNs.KeyboardShortcutHandle = null,
@@ -36,9 +36,9 @@ object ToolbarButtonDescriptor {
     positions: js.Array[ToolbarButtonPosition] = null,
     threadSection: SectionNames = null
   ): ToolbarButtonDescriptor = {
-    val __obj = js.Dynamic.literal(onClick = onClick, title = title)
+    val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), title = title)
     if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown)
-    if (hideFor != null) __obj.updateDynamic("hideFor")(hideFor)
+    if (hideFor != null) __obj.updateDynamic("hideFor")(js.Any.fromFunction1(hideFor))
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
     if (keyboardShortcutHandle != null) __obj.updateDynamic("keyboardShortcutHandle")(keyboardShortcutHandle)

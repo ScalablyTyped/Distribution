@@ -17,16 +17,13 @@ object ^ extends js.Object {
     */
   def authorize(
     params: gapiDotClientLib.Anon_Clientid,
-    callback: js.Function1[
-      /* authResult */ gapiDotClientLib.gapiNs.authNs.GoogleApiOAuth2TokenObject, 
-      scala.Unit
-    ]
+    callback: js.Function1[/* authResult */ GoogleApiOAuth2TokenObject, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Retrieves the OAuth 2.0 token for the application.
     * @return The OAuth 2.0 token.
     */
-  def getToken(): gapiDotClientLib.gapiNs.authNs.GoogleApiOAuth2TokenObject = js.native
+  def getToken(): GoogleApiOAuth2TokenObject = js.native
   /**
     * Initializes the authorization feature. Call this when the client loads to prevent popup blockers from blocking the auth window on gapi.auth.authorize calls.
     * @param callback A callback to execute when the auth feature is ready to make authorization calls.
@@ -36,6 +33,6 @@ object ^ extends js.Object {
     * Sets the OAuth 2.0 token for the application.
     * @param token The token to set.
     */
-  def setToken(token: gapiDotClientLib.gapiNs.authNs.GoogleApiOAuth2TokenObject): scala.Unit = js.native
+  def setToken(token: GoogleApiOAuth2TokenObject): scala.Unit = js.native
 }
 

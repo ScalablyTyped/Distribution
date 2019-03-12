@@ -22,15 +22,11 @@ trait JQuery extends js.Object {
 object JQuery {
   @scala.inline
   def apply(
-    bootpag: js.Function1[bootpagLib.JqueryBootpagNs.Options, JQuery],
-    on_page: js.Function2[
-      bootpagLib.bootpagLibStrings.page, 
-      bootpagLib.JqueryBootpagNs.PageEventHandler, 
-      JQuery
-    ]
+    bootpag: bootpagLib.JqueryBootpagNs.Options => JQuery,
+    on_page: (bootpagLib.bootpagLibStrings.page, bootpagLib.JqueryBootpagNs.PageEventHandler) => JQuery
   ): JQuery = {
-    val __obj = js.Dynamic.literal(bootpag = bootpag)
-    __obj.updateDynamic("on")(on_page)
+    val __obj = js.Dynamic.literal(bootpag = js.Any.fromFunction1(bootpag))
+    __obj.updateDynamic("on")(js.Any.fromFunction2(on_page))
     __obj.asInstanceOf[JQuery]
   }
 }

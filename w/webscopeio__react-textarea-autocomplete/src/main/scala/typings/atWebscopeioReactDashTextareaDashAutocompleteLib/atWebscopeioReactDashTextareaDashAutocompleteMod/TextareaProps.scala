@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in @webscopeio/react-textarea-autocomplete.PickedAttributes ]: react.react.InputHTMLAttributes<react.HTMLTextAreaElement>[P]} */ trait TextareaProps[TItem] extends js.Object {
+- Dropped {[ P in @webscopeio/react-textarea-autocomplete.PickedAttributes ]: react.react.InputHTMLAttributes<std.HTMLTextAreaElement>[P]} */ trait TextareaProps[TItem] extends js.Object {
   /**
     * ClassNames of the textarea.
     */
@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation._
   /**
     * Allows you to get React ref of the underlying textarea.
     */
-  var innerRef: js.UndefOr[js.Function1[/* ref */ reactLib.HTMLTextAreaElement, scala.Unit]] = js.undefined
+  var innerRef: js.UndefOr[js.Function1[/* ref */ stdLib.HTMLTextAreaElement, scala.Unit]] = js.undefined
   /**
     * ClassNames of item's wrapper.
     */
@@ -83,11 +83,7 @@ import scala.scalajs.js.annotation._
     * @default true
     */
   var scrollToItem: js.UndefOr[
-    scala.Boolean | (js.Function2[
-      /* container */ reactLib.HTMLDivElement, 
-      /* item */ reactLib.HTMLDivElement, 
-      scala.Unit
-    ])
+    scala.Boolean | (js.Function2[/* container */ stdLib.HTMLDivElement, /* item */ stdLib.HTMLDivElement, scala.Unit])
   ] = js.undefined
   /**
     * Styles of textarea
@@ -110,7 +106,7 @@ object TextareaProps {
     containerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     dropdownClassName: java.lang.String = null,
     dropdownStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    innerRef: js.Function1[/* ref */ reactLib.HTMLTextAreaElement, scala.Unit] = null,
+    innerRef: /* ref */ stdLib.HTMLTextAreaElement => scala.Unit = null,
     itemClassName: java.lang.String = null,
     itemStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     listClassName: java.lang.String = null,
@@ -119,12 +115,8 @@ object TextareaProps {
     loaderStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     minChar: scala.Int | scala.Double = null,
     movePopupAsYouType: js.UndefOr[scala.Boolean] = js.undefined,
-    onCaretPositionChange: js.Function1[/* pos */ scala.Double, scala.Unit] = null,
-    scrollToItem: scala.Boolean | (js.Function2[
-      /* container */ reactLib.HTMLDivElement, 
-      /* item */ reactLib.HTMLDivElement, 
-      scala.Unit
-    ]) = null,
+    onCaretPositionChange: /* pos */ scala.Double => scala.Unit = null,
+    scrollToItem: scala.Boolean | (js.Function2[/* container */ stdLib.HTMLDivElement, /* item */ stdLib.HTMLDivElement, scala.Unit]) = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): TextareaProps[TItem] = {
     val __obj = js.Dynamic.literal(loadingComponent = loadingComponent, trigger = trigger)
@@ -134,7 +126,7 @@ object TextareaProps {
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle)
     if (dropdownClassName != null) __obj.updateDynamic("dropdownClassName")(dropdownClassName)
     if (dropdownStyle != null) __obj.updateDynamic("dropdownStyle")(dropdownStyle)
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(js.Any.fromFunction1(innerRef))
     if (itemClassName != null) __obj.updateDynamic("itemClassName")(itemClassName)
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
     if (listClassName != null) __obj.updateDynamic("listClassName")(listClassName)
@@ -143,7 +135,7 @@ object TextareaProps {
     if (loaderStyle != null) __obj.updateDynamic("loaderStyle")(loaderStyle)
     if (minChar != null) __obj.updateDynamic("minChar")(minChar.asInstanceOf[js.Any])
     if (!js.isUndefined(movePopupAsYouType)) __obj.updateDynamic("movePopupAsYouType")(movePopupAsYouType)
-    if (onCaretPositionChange != null) __obj.updateDynamic("onCaretPositionChange")(onCaretPositionChange)
+    if (onCaretPositionChange != null) __obj.updateDynamic("onCaretPositionChange")(js.Any.fromFunction1(onCaretPositionChange))
     if (scrollToItem != null) __obj.updateDynamic("scrollToItem")(scrollToItem.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[TextareaProps[TItem]]

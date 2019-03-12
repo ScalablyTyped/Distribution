@@ -15,12 +15,12 @@ trait XInteractionFilterOptions
     * Get results from the continuation.
     * @returns the stored list of properties containing filter options.
     */
-  var FilterOptions: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  var FilterOptions: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * Get results from the continuation.
     * @returns the stored list of properties containing filter options.
     */
-  def getFilterOptions(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  def getFilterOptions(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * Store results to the continuation.
     * @param rProperties the list of properties containing filter options.
@@ -33,20 +33,15 @@ trait XInteractionFilterOptions
 object XInteractionFilterOptions {
   @scala.inline
   def apply(
-    FilterOptions: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
-    acquire: js.Function0[scala.Unit],
-    getFilterOptions: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    select: js.Function0[scala.Unit],
-    setFilterOptions: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ]
+    FilterOptions: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    acquire: () => scala.Unit,
+    getFilterOptions: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    select: () => scala.Unit,
+    setFilterOptions: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] => scala.Unit
   ): XInteractionFilterOptions = {
-    val __obj = js.Dynamic.literal(FilterOptions = FilterOptions, acquire = acquire, getFilterOptions = getFilterOptions, queryInterface = queryInterface, release = release, select = select, setFilterOptions = setFilterOptions)
+    val __obj = js.Dynamic.literal(FilterOptions = FilterOptions, acquire = js.Any.fromFunction0(acquire), getFilterOptions = js.Any.fromFunction0(getFilterOptions), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), select = js.Any.fromFunction0(select), setFilterOptions = js.Any.fromFunction1(setFilterOptions))
   
     __obj.asInstanceOf[XInteractionFilterOptions]
   }

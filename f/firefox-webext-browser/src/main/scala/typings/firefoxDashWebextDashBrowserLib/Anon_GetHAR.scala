@@ -30,7 +30,7 @@ trait Anon_GetHAR extends js.Object {
 object Anon_GetHAR {
   @scala.inline
   def apply(
-    getHAR: js.Function0[js.Promise[_]],
+    getHAR: () => js.Promise[_],
     onNavigated: WebExtEvent[js.Function1[/* url */ java.lang.String, scala.Unit]],
     onRequestFinished: WebExtEvent[
       js.Function1[
@@ -39,7 +39,7 @@ object Anon_GetHAR {
       ]
     ]
   ): Anon_GetHAR = {
-    val __obj = js.Dynamic.literal(getHAR = getHAR, onNavigated = onNavigated, onRequestFinished = onRequestFinished)
+    val __obj = js.Dynamic.literal(getHAR = js.Any.fromFunction0(getHAR), onNavigated = onNavigated, onRequestFinished = onRequestFinished)
   
     __obj.asInstanceOf[Anon_GetHAR]
   }

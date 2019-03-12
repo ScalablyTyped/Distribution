@@ -49,7 +49,6 @@ trait MiniPass
   def emit_readable(event: minipassLib.minipassLibStrings.readable): scala.Boolean = js.native
   @JSName("emit")
   def emit_resume(event: minipassLib.minipassLibStrings.resume): scala.Boolean = js.native
-  def end(cb: js.Function0[scala.Unit]): scala.Unit = js.native
   def end(chunk: js.Any): scala.Unit = js.native
   def end(chunk: js.Any, cb: js.Function0[scala.Unit]): scala.Unit = js.native
   def end(chunk: js.Any, encoding: java.lang.String): scala.Unit = js.native

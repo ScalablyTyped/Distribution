@@ -13,25 +13,11 @@ trait LeadingMarginSpan2
 object LeadingMarginSpan2 {
   @scala.inline
   def apply(
-    drawLeadingMargin: js.Function12[
-      androiduixLib.androidNs.graphicsNs.Canvas, 
-      androiduixLib.androidNs.graphicsNs.Paint, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      scala.Boolean, 
-      androiduixLib.androidNs.textNs.Layout, 
-      scala.Unit
-    ],
-    getLeadingMargin: js.Function1[scala.Boolean, scala.Double],
-    getLeadingMarginLineCount: js.Function0[scala.Double]
+    drawLeadingMargin: (androiduixLib.androidNs.graphicsNs.Canvas, androiduixLib.androidNs.graphicsNs.Paint, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, java.lang.String, scala.Double, scala.Double, scala.Boolean, androiduixLib.androidNs.textNs.Layout) => scala.Unit,
+    getLeadingMargin: scala.Boolean => scala.Double,
+    getLeadingMarginLineCount: () => scala.Double
   ): LeadingMarginSpan2 = {
-    val __obj = js.Dynamic.literal(drawLeadingMargin = drawLeadingMargin, getLeadingMargin = getLeadingMargin, getLeadingMarginLineCount = getLeadingMarginLineCount)
+    val __obj = js.Dynamic.literal(drawLeadingMargin = js.Any.fromFunction12(drawLeadingMargin), getLeadingMargin = js.Any.fromFunction1(getLeadingMargin), getLeadingMarginLineCount = js.Any.fromFunction0(getLeadingMarginLineCount))
   
     __obj.asInstanceOf[LeadingMarginSpan2]
   }

@@ -12,13 +12,10 @@ trait Anon_Error extends js.Object {
 
 object Anon_Error {
   @scala.inline
-  def apply(
-    onComplete: js.Function0[_] = null,
-    onError: js.Function1[/* error */ jpmLib.FFAddonSDKNs.NSIException, _] = null
-  ): Anon_Error = {
+  def apply(onComplete: () => _ = null, onError: /* error */ jpmLib.FFAddonSDKNs.NSIException => _ = null): Anon_Error = {
     val __obj = js.Dynamic.literal()
-    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction0(onComplete))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     __obj.asInstanceOf[Anon_Error]
   }
 }

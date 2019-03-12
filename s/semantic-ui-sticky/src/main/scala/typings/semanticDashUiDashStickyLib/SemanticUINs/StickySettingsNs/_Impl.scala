@@ -136,12 +136,12 @@ object _Impl {
     namespace: java.lang.String,
     observeChanges: scala.Boolean,
     offset: scala.Double,
-    onBottom: js.Function1[semanticDashUiDashStickyLib.JQuery, scala.Unit],
-    onReposition: js.Function1[semanticDashUiDashStickyLib.JQuery, scala.Unit],
-    onScroll: js.Function1[semanticDashUiDashStickyLib.JQuery, scala.Unit],
-    onStick: js.Function1[semanticDashUiDashStickyLib.JQuery, scala.Unit],
-    onTop: js.Function1[semanticDashUiDashStickyLib.JQuery, scala.Unit],
-    onUnstick: js.Function1[semanticDashUiDashStickyLib.JQuery, scala.Unit],
+    onBottom: semanticDashUiDashStickyLib.JQuery => scala.Unit,
+    onReposition: semanticDashUiDashStickyLib.JQuery => scala.Unit,
+    onScroll: semanticDashUiDashStickyLib.JQuery => scala.Unit,
+    onStick: semanticDashUiDashStickyLib.JQuery => scala.Unit,
+    onTop: semanticDashUiDashStickyLib.JQuery => scala.Unit,
+    onUnstick: semanticDashUiDashStickyLib.JQuery => scala.Unit,
     performance: scala.Boolean,
     pushing: scala.Boolean,
     scrollContext: java.lang.String | semanticDashUiDashStickyLib.JQuery,
@@ -149,7 +149,7 @@ object _Impl {
     silent: scala.Boolean,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(bottomOffset = bottomOffset, className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug, error = error.asInstanceOf[js.Any], jitter = jitter, name = name, namespace = namespace, observeChanges = observeChanges, offset = offset, onBottom = onBottom, onReposition = onReposition, onScroll = onScroll, onStick = onStick, onTop = onTop, onUnstick = onUnstick, performance = performance, pushing = pushing, scrollContext = scrollContext.asInstanceOf[js.Any], setSize = setSize, silent = silent, verbose = verbose)
+    val __obj = js.Dynamic.literal(bottomOffset = bottomOffset, className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug, error = error.asInstanceOf[js.Any], jitter = jitter, name = name, namespace = namespace, observeChanges = observeChanges, offset = offset, onBottom = js.Any.fromFunction1(onBottom), onReposition = js.Any.fromFunction1(onReposition), onScroll = js.Any.fromFunction1(onScroll), onStick = js.Any.fromFunction1(onStick), onTop = js.Any.fromFunction1(onTop), onUnstick = js.Any.fromFunction1(onUnstick), performance = performance, pushing = pushing, scrollContext = scrollContext.asInstanceOf[js.Any], setSize = setSize, silent = silent, verbose = verbose)
   
     __obj.asInstanceOf[_Impl]
   }

@@ -68,35 +68,30 @@ trait JQueryAnimationOptions extends js.Object {
 object JQueryAnimationOptions {
   @scala.inline
   def apply(
-    always: js.Function2[/* animation */ JQueryPromise[_], /* jumpedToEnd */ scala.Boolean, _] = null,
+    always: (/* animation */ JQueryPromise[_], /* jumpedToEnd */ scala.Boolean) => _ = null,
     complete: js.Function = null,
-    done: js.Function2[/* animation */ JQueryPromise[_], /* jumpedToEnd */ scala.Boolean, _] = null,
+    done: (/* animation */ JQueryPromise[_], /* jumpedToEnd */ scala.Boolean) => _ = null,
     duration: js.Any = null,
     easing: java.lang.String = null,
-    fail: js.Function2[/* animation */ JQueryPromise[_], /* jumpedToEnd */ scala.Boolean, _] = null,
-    progress: js.Function3[
-      /* animation */ JQueryPromise[_], 
-      /* progress */ scala.Double, 
-      /* remainingMs */ scala.Double, 
-      _
-    ] = null,
+    fail: (/* animation */ JQueryPromise[_], /* jumpedToEnd */ scala.Boolean) => _ = null,
+    progress: (/* animation */ JQueryPromise[_], /* progress */ scala.Double, /* remainingMs */ scala.Double) => _ = null,
     queue: js.Any = null,
     specialEasing: Object = null,
-    start: js.Function1[/* animation */ JQueryPromise[_], _] = null,
-    step: js.Function2[/* now */ scala.Double, /* tween */ js.Any, _] = null
+    start: /* animation */ JQueryPromise[_] => _ = null,
+    step: (/* now */ scala.Double, /* tween */ js.Any) => _ = null
   ): JQueryAnimationOptions = {
     val __obj = js.Dynamic.literal()
-    if (always != null) __obj.updateDynamic("always")(always)
+    if (always != null) __obj.updateDynamic("always")(js.Any.fromFunction2(always))
     if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (done != null) __obj.updateDynamic("done")(done)
+    if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction2(done))
     if (duration != null) __obj.updateDynamic("duration")(duration)
     if (easing != null) __obj.updateDynamic("easing")(easing)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (progress != null) __obj.updateDynamic("progress")(progress)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction2(fail))
+    if (progress != null) __obj.updateDynamic("progress")(js.Any.fromFunction3(progress))
     if (queue != null) __obj.updateDynamic("queue")(queue)
     if (specialEasing != null) __obj.updateDynamic("specialEasing")(specialEasing)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (step != null) __obj.updateDynamic("step")(step)
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
+    if (step != null) __obj.updateDynamic("step")(js.Any.fromFunction2(step))
     __obj.asInstanceOf[JQueryAnimationOptions]
   }
 }

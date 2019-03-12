@@ -12,7 +12,7 @@ trait IDialogRenderingOptions extends js.Object {
   /*animation css class, by default set to "fade"*/
   var animation: js.UndefOr[java.lang.String] = js.undefined
   /*function called when the modal is submitted*/
-  var callback: angularLib.angularMod.Global.Function
+  var callback: js.Function
   /*the DOM element to inject the modal into, by default set to body*/
   var container: js.UndefOr[stdLib.HTMLElement] = js.undefined
   /** 
@@ -36,7 +36,7 @@ trait IDialogRenderingOptions extends js.Object {
 object IDialogRenderingOptions {
   @scala.inline
   def apply(
-    callback: angularLib.angularMod.Global.Function,
+    callback: js.Function,
     iframe: scala.Boolean,
     template: java.lang.String,
     animation: java.lang.String = null,

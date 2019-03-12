@@ -11,9 +11,9 @@ trait AsssertOptions extends js.Object {
 
 object AsssertOptions {
   @scala.inline
-  def apply(sanitize: js.Function1[/* str */ java.lang.String, java.lang.String] = null): AsssertOptions = {
+  def apply(sanitize: /* str */ java.lang.String => java.lang.String = null): AsssertOptions = {
     val __obj = js.Dynamic.literal()
-    if (sanitize != null) __obj.updateDynamic("sanitize")(sanitize)
+    if (sanitize != null) __obj.updateDynamic("sanitize")(js.Any.fromFunction1(sanitize))
     __obj.asInstanceOf[AsssertOptions]
   }
 }

@@ -15,16 +15,10 @@ trait UserProfilesResource extends js.Object {
 object UserProfilesResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UserProfile]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUser, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UserProfileList]
-    ]
+    get: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[UserProfile],
+    list: gapiDotClientDotDfareportingLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUser => gapiDotClientLib.gapiNs.clientNs.Request[UserProfileList]
   ): UserProfilesResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[UserProfilesResource]
   }

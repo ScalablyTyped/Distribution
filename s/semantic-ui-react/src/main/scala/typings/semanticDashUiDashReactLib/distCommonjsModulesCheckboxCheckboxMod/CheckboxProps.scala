@@ -24,26 +24,10 @@ object CheckboxProps {
     indeterminate: js.UndefOr[scala.Boolean] = js.undefined,
     label: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsGenericMod.HtmlLabelProps] = null,
     name: java.lang.String = null,
-    onChange: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLInputElement], 
-      /* data */ CheckboxProps, 
-      scala.Unit
-    ] = null,
-    onClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement, reactLib.NativeMouseEvent], 
-      /* data */ CheckboxProps, 
-      scala.Unit
-    ] = null,
-    onMouseDown: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement, reactLib.NativeMouseEvent], 
-      /* data */ CheckboxProps, 
-      scala.Unit
-    ] = null,
-    onMouseUp: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement, reactLib.NativeMouseEvent], 
-      /* data */ CheckboxProps, 
-      scala.Unit
-    ] = null,
+    onChange: (/* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLInputElement], /* data */ CheckboxProps) => scala.Unit = null,
+    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], /* data */ CheckboxProps) => scala.Unit = null,
+    onMouseDown: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], /* data */ CheckboxProps) => scala.Unit = null,
+    onMouseUp: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], /* data */ CheckboxProps) => scala.Unit = null,
     radio: js.UndefOr[scala.Boolean] = js.undefined,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     slider: js.UndefOr[scala.Boolean] = js.undefined,
@@ -65,10 +49,10 @@ object CheckboxProps {
     if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction2(onMouseDown))
+    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction2(onMouseUp))
     if (!js.isUndefined(radio)) __obj.updateDynamic("radio")(radio)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (!js.isUndefined(slider)) __obj.updateDynamic("slider")(slider)

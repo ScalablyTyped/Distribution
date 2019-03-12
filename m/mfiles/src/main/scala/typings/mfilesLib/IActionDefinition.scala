@@ -17,10 +17,10 @@ object IActionDefinition {
   def apply(
     ActionCreateSeparateAssignment: IActionCreateAssignment,
     ActionType: mfilesLib.MFilesNs.MFActionType,
-    Clear: js.Function0[scala.Unit],
-    Clone: js.Function0[IActionDefinition]
+    Clear: () => scala.Unit,
+    Clone: () => IActionDefinition
   ): IActionDefinition = {
-    val __obj = js.Dynamic.literal(ActionCreateSeparateAssignment = ActionCreateSeparateAssignment, ActionType = ActionType, Clear = Clear, Clone = Clone)
+    val __obj = js.Dynamic.literal(ActionCreateSeparateAssignment = ActionCreateSeparateAssignment, ActionType = ActionType, Clear = js.Any.fromFunction0(Clear), Clone = js.Any.fromFunction0(Clone))
   
     __obj.asInstanceOf[IActionDefinition]
   }

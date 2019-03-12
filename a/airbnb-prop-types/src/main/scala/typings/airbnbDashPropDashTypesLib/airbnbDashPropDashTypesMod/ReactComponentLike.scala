@@ -19,14 +19,14 @@ object ReactComponentLike {
   @scala.inline
   def apply(
     context: js.Any,
-    forceUpdate: js.Function1[/* repeated */ js.Any, js.Any],
+    forceUpdate: /* repeated */ js.Any => js.Any,
     props: js.Any,
     refs: js.Any,
-    render: js.Function0[propDashTypesLib.propDashTypesMod.ReactNodeLike],
-    setState: js.Function1[/* repeated */ js.Any, js.Any],
+    render: () => propDashTypesLib.propDashTypesMod.ReactNodeLike,
+    setState: /* repeated */ js.Any => js.Any,
     state: js.Any
   ): ReactComponentLike = {
-    val __obj = js.Dynamic.literal(context = context, forceUpdate = forceUpdate, props = props, refs = refs, render = render, setState = setState, state = state)
+    val __obj = js.Dynamic.literal(context = context, forceUpdate = js.Any.fromFunction1(forceUpdate), props = props, refs = refs, render = js.Any.fromFunction0(render), setState = js.Any.fromFunction1(setState), state = state)
   
     __obj.asInstanceOf[ReactComponentLike]
   }

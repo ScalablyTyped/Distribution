@@ -59,11 +59,11 @@ object Result {
   def apply(
     equation: js.Array[scala.Double],
     points: js.Array[DataPoint],
-    predict: js.Function1[scala.Double, DataPoint],
+    predict: scala.Double => DataPoint,
     r2: scala.Double,
     string: java.lang.String
   ): Result = {
-    val __obj = js.Dynamic.literal(equation = equation, points = points, predict = predict, r2 = r2, string = string)
+    val __obj = js.Dynamic.literal(equation = equation, points = points, predict = js.Any.fromFunction1(predict), r2 = r2, string = string)
   
     __obj.asInstanceOf[Result]
   }

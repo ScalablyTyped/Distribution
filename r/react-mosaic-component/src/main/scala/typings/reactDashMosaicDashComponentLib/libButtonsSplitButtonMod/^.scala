@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val SplitButtonFactory: reactLib.reactMod.ReactNs.ComponentFactory[
     reactDashMosaicDashComponentLib.libButtonsMosaicButtonMod.MosaicButtonProps, 
-    reactDashMosaicDashComponentLib.libButtonsSplitButtonMod.SplitButton[java.lang.String | scala.Double]
+    SplitButton[java.lang.String | scala.Double]
   ] = js.native
 }
 

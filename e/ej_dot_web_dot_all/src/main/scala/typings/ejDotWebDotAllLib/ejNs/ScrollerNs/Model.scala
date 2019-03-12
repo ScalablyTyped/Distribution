@@ -94,8 +94,8 @@ object Model {
     animationSpeed: scala.Int | scala.Double = null,
     autoHide: js.UndefOr[scala.Boolean] = js.undefined,
     buttonSize: scala.Int | scala.Double = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
     enableTouchScroll: js.UndefOr[scala.Boolean] = js.undefined,
@@ -106,20 +106,20 @@ object Model {
     scrollTop: scala.Int | scala.Double = null,
     scrollerSize: scala.Int | scala.Double = null,
     targetPane: java.lang.String = null,
-    thumbEnd: js.Function1[/* e */ ThumbEndEventArgs, scala.Unit] = null,
-    thumbMove: js.Function1[/* e */ ThumbMoveEventArgs, scala.Unit] = null,
-    thumbStart: js.Function1[/* e */ ThumbStartEventArgs, scala.Unit] = null,
-    wheelMove: js.Function1[/* e */ WheelMoveEventArgs, scala.Unit] = null,
-    wheelStart: js.Function1[/* e */ WheelStartEventArgs, scala.Unit] = null,
-    wheelStop: js.Function1[/* e */ WheelStopEventArgs, scala.Unit] = null,
+    thumbEnd: /* e */ ThumbEndEventArgs => scala.Unit = null,
+    thumbMove: /* e */ ThumbMoveEventArgs => scala.Unit = null,
+    thumbStart: /* e */ ThumbStartEventArgs => scala.Unit = null,
+    wheelMove: /* e */ WheelMoveEventArgs => scala.Unit = null,
+    wheelStart: /* e */ WheelStartEventArgs => scala.Unit = null,
+    wheelStop: /* e */ WheelStopEventArgs => scala.Unit = null,
     width: scala.Double | java.lang.String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (animationSpeed != null) __obj.updateDynamic("animationSpeed")(animationSpeed.asInstanceOf[js.Any])
     if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide)
     if (buttonSize != null) __obj.updateDynamic("buttonSize")(buttonSize.asInstanceOf[js.Any])
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
     if (!js.isUndefined(enableTouchScroll)) __obj.updateDynamic("enableTouchScroll")(enableTouchScroll)
@@ -130,12 +130,12 @@ object Model {
     if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
     if (scrollerSize != null) __obj.updateDynamic("scrollerSize")(scrollerSize.asInstanceOf[js.Any])
     if (targetPane != null) __obj.updateDynamic("targetPane")(targetPane)
-    if (thumbEnd != null) __obj.updateDynamic("thumbEnd")(thumbEnd)
-    if (thumbMove != null) __obj.updateDynamic("thumbMove")(thumbMove)
-    if (thumbStart != null) __obj.updateDynamic("thumbStart")(thumbStart)
-    if (wheelMove != null) __obj.updateDynamic("wheelMove")(wheelMove)
-    if (wheelStart != null) __obj.updateDynamic("wheelStart")(wheelStart)
-    if (wheelStop != null) __obj.updateDynamic("wheelStop")(wheelStop)
+    if (thumbEnd != null) __obj.updateDynamic("thumbEnd")(js.Any.fromFunction1(thumbEnd))
+    if (thumbMove != null) __obj.updateDynamic("thumbMove")(js.Any.fromFunction1(thumbMove))
+    if (thumbStart != null) __obj.updateDynamic("thumbStart")(js.Any.fromFunction1(thumbStart))
+    if (wheelMove != null) __obj.updateDynamic("wheelMove")(js.Any.fromFunction1(wheelMove))
+    if (wheelStart != null) __obj.updateDynamic("wheelStart")(js.Any.fromFunction1(wheelStart))
+    if (wheelStop != null) __obj.updateDynamic("wheelStop")(js.Any.fromFunction1(wheelStop))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }

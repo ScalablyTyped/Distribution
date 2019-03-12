@@ -50,7 +50,7 @@ object ReactGridLayoutProps {
     onDrag: ItemCallback = null,
     onDragStart: ItemCallback = null,
     onDragStop: ItemCallback = null,
-    onLayoutChange: js.Function1[/* layout */ js.Array[Layout], scala.Unit] = null,
+    onLayoutChange: /* layout */ js.Array[Layout] => scala.Unit = null,
     onResize: ItemCallback = null,
     onResizeStart: ItemCallback = null,
     onResizeStop: ItemCallback = null,
@@ -78,7 +78,7 @@ object ReactGridLayoutProps {
     if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag)
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
     if (onDragStop != null) __obj.updateDynamic("onDragStop")(onDragStop)
-    if (onLayoutChange != null) __obj.updateDynamic("onLayoutChange")(onLayoutChange)
+    if (onLayoutChange != null) __obj.updateDynamic("onLayoutChange")(js.Any.fromFunction1(onLayoutChange))
     if (onResize != null) __obj.updateDynamic("onResize")(onResize)
     if (onResizeStart != null) __obj.updateDynamic("onResizeStart")(onResizeStart)
     if (onResizeStop != null) __obj.updateDynamic("onResizeStop")(onResizeStop)

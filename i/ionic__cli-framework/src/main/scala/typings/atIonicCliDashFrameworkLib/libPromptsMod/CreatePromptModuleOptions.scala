@@ -14,11 +14,11 @@ object CreatePromptModuleOptions {
   @scala.inline
   def apply(
     interactive: js.UndefOr[scala.Boolean] = js.undefined,
-    onFallback: js.Function1[/* question */ PromptQuestion, PromptValue | scala.Unit] = null
+    onFallback: /* question */ PromptQuestion => PromptValue | scala.Unit = null
   ): CreatePromptModuleOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
-    if (onFallback != null) __obj.updateDynamic("onFallback")(onFallback)
+    if (onFallback != null) __obj.updateDynamic("onFallback")(js.Any.fromFunction1(onFallback))
     __obj.asInstanceOf[CreatePromptModuleOptions]
   }
 }

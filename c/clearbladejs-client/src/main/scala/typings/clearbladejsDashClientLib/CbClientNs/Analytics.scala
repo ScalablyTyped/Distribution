@@ -21,16 +21,16 @@ object Analytics {
   @scala.inline
   def apply(
     URI: java.lang.String,
-    getCount: js.Function2[QueryFilter, CbCallback, scala.Unit],
-    getEventList: js.Function2[QueryFilter, CbCallback, scala.Unit],
-    getEventTotals: js.Function2[QueryFilter, CbCallback, scala.Unit],
-    getStorage: js.Function2[QueryFilter, CbCallback, scala.Unit],
-    getUserEvents: js.Function2[QueryFilter, CbCallback, scala.Unit],
+    getCount: (QueryFilter, CbCallback) => scala.Unit,
+    getEventList: (QueryFilter, CbCallback) => scala.Unit,
+    getEventTotals: (QueryFilter, CbCallback) => scala.Unit,
+    getStorage: (QueryFilter, CbCallback) => scala.Unit,
+    getUserEvents: (QueryFilter, CbCallback) => scala.Unit,
     systemKey: java.lang.String,
     systemSecret: java.lang.String,
     user: APIUser
   ): Analytics = {
-    val __obj = js.Dynamic.literal(URI = URI, getCount = getCount, getEventList = getEventList, getEventTotals = getEventTotals, getStorage = getStorage, getUserEvents = getUserEvents, systemKey = systemKey, systemSecret = systemSecret, user = user)
+    val __obj = js.Dynamic.literal(URI = URI, getCount = js.Any.fromFunction2(getCount), getEventList = js.Any.fromFunction2(getEventList), getEventTotals = js.Any.fromFunction2(getEventTotals), getStorage = js.Any.fromFunction2(getStorage), getUserEvents = js.Any.fromFunction2(getUserEvents), systemKey = systemKey, systemSecret = systemSecret, user = user)
   
     __obj.asInstanceOf[Analytics]
   }

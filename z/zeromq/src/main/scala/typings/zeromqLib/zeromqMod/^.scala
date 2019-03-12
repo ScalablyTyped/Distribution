@@ -62,21 +62,17 @@ object ^ extends js.Object {
   val ZMQ_UNSUBSCRIBE: scala.Double = js.native
   val ZMQ_XPUB_VERBOSE: scala.Double = js.native
   val ZMQ_ZAP_DOMAIN: scala.Double = js.native
-  var options: zeromqLib.zeromqMod.SocketOptions = js.native
-  var types: zeromqLib.zeromqMod.SocketTypes = js.native
+  var options: SocketOptions = js.native
+  var types: SocketTypes = js.native
   var version: java.lang.String = js.native
-  def createSocket(`type`: java.lang.String): zeromqLib.zeromqMod.Socket = js.native
-  def createSocket(`type`: java.lang.String, options: js.Any): zeromqLib.zeromqMod.Socket = js.native
-  def curveKeypair(): zeromqLib.zeromqMod.CurveKeyPair = js.native
-  def proxy(frontend: zeromqLib.zeromqMod.Socket, backend: zeromqLib.zeromqMod.Socket): scala.Unit = js.native
-  def proxy(
-    frontend: zeromqLib.zeromqMod.Socket,
-    backend: zeromqLib.zeromqMod.Socket,
-    capture: zeromqLib.zeromqMod.Socket
-  ): scala.Unit = js.native
-  def socket(`type`: java.lang.String): zeromqLib.zeromqMod.Socket = js.native
-  def socket(`type`: java.lang.String, options: js.Any): zeromqLib.zeromqMod.Socket = js.native
-  def socket(`type`: scala.Double): zeromqLib.zeromqMod.Socket = js.native
-  def socket(`type`: scala.Double, options: js.Any): zeromqLib.zeromqMod.Socket = js.native
+  def createSocket(`type`: java.lang.String): Socket = js.native
+  def createSocket(`type`: java.lang.String, options: js.Any): Socket = js.native
+  def curveKeypair(): CurveKeyPair = js.native
+  def proxy(frontend: Socket, backend: Socket): scala.Unit = js.native
+  def proxy(frontend: Socket, backend: Socket, capture: Socket): scala.Unit = js.native
+  def socket(`type`: java.lang.String): Socket = js.native
+  def socket(`type`: java.lang.String, options: js.Any): Socket = js.native
+  def socket(`type`: scala.Double): Socket = js.native
+  def socket(`type`: scala.Double, options: js.Any): Socket = js.native
 }
 

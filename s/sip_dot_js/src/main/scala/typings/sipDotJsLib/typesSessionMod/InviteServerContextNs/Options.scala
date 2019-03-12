@@ -31,7 +31,7 @@ object Options {
     body: js.Any = null,
     extraHeaders: js.Array[java.lang.String] = null,
     modifiers: sipDotJsLib.typesSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerModifiers = null,
-    onInfo: js.Function1[/* request */ sipDotJsLib.typesSipDashMessageMod.IncomingRequest, scala.Unit] = null,
+    onInfo: /* request */ sipDotJsLib.typesSipDashMessageMod.IncomingRequest => scala.Unit = null,
     reasonPhrase: java.lang.String = null,
     rel100: js.UndefOr[scala.Boolean] = js.undefined,
     sessionDescriptionHandlerOptions: sipDotJsLib.typesSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerOptions = null,
@@ -41,7 +41,7 @@ object Options {
     if (body != null) __obj.updateDynamic("body")(body)
     if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
-    if (onInfo != null) __obj.updateDynamic("onInfo")(onInfo)
+    if (onInfo != null) __obj.updateDynamic("onInfo")(js.Any.fromFunction1(onInfo))
     if (reasonPhrase != null) __obj.updateDynamic("reasonPhrase")(reasonPhrase)
     if (!js.isUndefined(rel100)) __obj.updateDynamic("rel100")(rel100)
     if (sessionDescriptionHandlerOptions != null) __obj.updateDynamic("sessionDescriptionHandlerOptions")(sessionDescriptionHandlerOptions)

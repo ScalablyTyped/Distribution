@@ -32,11 +32,11 @@ trait IBehaviorAware[T] extends js.Object {
 object IBehaviorAware {
   @scala.inline
   def apply[T](
-    addBehavior: js.Function1[Behavior[T], T],
-    getBehaviorByName: js.Function1[java.lang.String, Nullable[Behavior[T]]],
-    removeBehavior: js.Function1[Behavior[T], T]
+    addBehavior: Behavior[T] => T,
+    getBehaviorByName: java.lang.String => Nullable[Behavior[T]],
+    removeBehavior: Behavior[T] => T
   ): IBehaviorAware[T] = {
-    val __obj = js.Dynamic.literal(addBehavior = addBehavior, getBehaviorByName = getBehaviorByName, removeBehavior = removeBehavior)
+    val __obj = js.Dynamic.literal(addBehavior = js.Any.fromFunction1(addBehavior), getBehaviorByName = js.Any.fromFunction1(getBehaviorByName), removeBehavior = js.Any.fromFunction1(removeBehavior))
   
     __obj.asInstanceOf[IBehaviorAware[T]]
   }

@@ -34,22 +34,16 @@ object XXMLSecurityTemplate {
   def apply(
     Status: SecurityOperationStatus,
     Template: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper,
-    acquire: js.Function0[scala.Unit],
-    getStatus: js.Function0[SecurityOperationStatus],
-    getTemplate: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setStatus: js.Function1[SecurityOperationStatus, scala.Unit],
-    setTarget: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper, 
-      scala.Unit
-    ],
-    setTemplate: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    getStatus: () => SecurityOperationStatus,
+    getTemplate: () => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setStatus: SecurityOperationStatus => scala.Unit,
+    setTarget: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper => scala.Unit,
+    setTemplate: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper => scala.Unit
   ): XXMLSecurityTemplate = {
-    val __obj = js.Dynamic.literal(Status = Status, Template = Template, acquire = acquire, getStatus = getStatus, getTemplate = getTemplate, queryInterface = queryInterface, release = release, setStatus = setStatus, setTarget = setTarget, setTemplate = setTemplate)
+    val __obj = js.Dynamic.literal(Status = Status, Template = Template, acquire = js.Any.fromFunction0(acquire), getStatus = js.Any.fromFunction0(getStatus), getTemplate = js.Any.fromFunction0(getTemplate), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setStatus = js.Any.fromFunction1(setStatus), setTarget = js.Any.fromFunction1(setTarget), setTemplate = js.Any.fromFunction1(setTemplate))
   
     __obj.asInstanceOf[XXMLSecurityTemplate]
   }

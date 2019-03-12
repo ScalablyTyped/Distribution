@@ -11,26 +11,18 @@ object ^ extends js.Object {
   val version: java.lang.String = js.native
   def template(code: java.lang.String): babelDashTemplateLib.UseTemplate = js.native
   def template(code: java.lang.String, opts: babylonLib.babylonMod.BabylonOptions): babelDashTemplateLib.UseTemplate = js.native
-  def transform(code: java.lang.String): babelDashCoreLib.babelDashCoreMod.BabelFileResult = js.native
-  def transform(code: java.lang.String, opts: babelDashCoreLib.babelDashCoreMod.TransformOptions): babelDashCoreLib.babelDashCoreMod.BabelFileResult = js.native
+  def transform(code: java.lang.String): BabelFileResult = js.native
+  def transform(code: java.lang.String, opts: TransformOptions): BabelFileResult = js.native
   def transformFile(
     filename: java.lang.String,
-    opts: babelDashCoreLib.babelDashCoreMod.TransformOptions,
-    callback: js.Function2[
-      /* err */ js.Any, 
-      /* result */ babelDashCoreLib.babelDashCoreMod.BabelFileResult, 
-      scala.Unit
-    ]
+    opts: TransformOptions,
+    callback: js.Function2[/* err */ js.Any, /* result */ BabelFileResult, scala.Unit]
   ): scala.Unit = js.native
-  def transformFileSync(filename: java.lang.String): babelDashCoreLib.babelDashCoreMod.BabelFileResult = js.native
-  def transformFileSync(filename: java.lang.String, opts: babelDashCoreLib.babelDashCoreMod.TransformOptions): babelDashCoreLib.babelDashCoreMod.BabelFileResult = js.native
-  def transformFromAst(ast: babelDashCoreLib.babelDashCoreMod.Node): babelDashCoreLib.babelDashCoreMod.BabelFileResult = js.native
-  def transformFromAst(ast: babelDashCoreLib.babelDashCoreMod.Node, code: java.lang.String): babelDashCoreLib.babelDashCoreMod.BabelFileResult = js.native
-  def transformFromAst(
-    ast: babelDashCoreLib.babelDashCoreMod.Node,
-    code: java.lang.String,
-    opts: babelDashCoreLib.babelDashCoreMod.TransformOptions
-  ): babelDashCoreLib.babelDashCoreMod.BabelFileResult = js.native
+  def transformFileSync(filename: java.lang.String): BabelFileResult = js.native
+  def transformFileSync(filename: java.lang.String, opts: TransformOptions): BabelFileResult = js.native
+  def transformFromAst(ast: Node): BabelFileResult = js.native
+  def transformFromAst(ast: Node, code: java.lang.String): BabelFileResult = js.native
+  def transformFromAst(ast: Node, code: java.lang.String, opts: TransformOptions): BabelFileResult = js.native
   def traverse(
     parent: babelDashTraverseLib.babelDashTraverseMod.Node,
     opts: babelDashTraverseLib.babelDashTraverseMod.TraverseOptions[babelDashTraverseLib.babelDashTraverseMod.Node]

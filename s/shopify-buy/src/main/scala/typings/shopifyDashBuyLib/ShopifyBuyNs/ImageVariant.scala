@@ -22,7 +22,7 @@ object ImageVariant {
     created_at: java.lang.String,
     dimensions: java.lang.String,
     id: java.lang.String | scala.Double,
-    imageForSize: js.Function2[Image, ImageOptions, java.lang.String],
+    imageForSize: (Image, ImageOptions) => java.lang.String,
     name: java.lang.String,
     position: scala.Double,
     product_id: java.lang.String,
@@ -32,7 +32,7 @@ object ImageVariant {
     attrs: js.Any = null,
     onlineStoreUrl: java.lang.String = null
   ): ImageVariant = {
-    val __obj = js.Dynamic.literal(created_at = created_at, dimensions = dimensions, id = id.asInstanceOf[js.Any], imageForSize = imageForSize, name = name, position = position, product_id = product_id, src = src, updated_at = updated_at, variant_ids = variant_ids)
+    val __obj = js.Dynamic.literal(created_at = created_at, dimensions = dimensions, id = id.asInstanceOf[js.Any], imageForSize = js.Any.fromFunction2(imageForSize), name = name, position = position, product_id = product_id, src = src, updated_at = updated_at, variant_ids = variant_ids)
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
     if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl)
     __obj.asInstanceOf[ImageVariant]

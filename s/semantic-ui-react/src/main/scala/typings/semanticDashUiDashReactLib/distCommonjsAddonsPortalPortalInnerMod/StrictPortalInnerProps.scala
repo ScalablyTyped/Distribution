@@ -31,13 +31,13 @@ object StrictPortalInnerProps {
   def apply(
     children: reactLib.reactMod.ReactNs.ReactNode,
     mountNode: js.Any = null,
-    onMount: js.Function2[/* nothing */ scala.Null, /* data */ PortalInnerProps, scala.Unit] = null,
-    onUnmount: js.Function2[/* nothing */ scala.Null, /* data */ PortalInnerProps, scala.Unit] = null
+    onMount: (/* nothing */ scala.Null, /* data */ PortalInnerProps) => scala.Unit = null,
+    onUnmount: (/* nothing */ scala.Null, /* data */ PortalInnerProps) => scala.Unit = null
   ): StrictPortalInnerProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode)
-    if (onMount != null) __obj.updateDynamic("onMount")(onMount)
-    if (onUnmount != null) __obj.updateDynamic("onUnmount")(onUnmount)
+    if (onMount != null) __obj.updateDynamic("onMount")(js.Any.fromFunction2(onMount))
+    if (onUnmount != null) __obj.updateDynamic("onUnmount")(js.Any.fromFunction2(onUnmount))
     __obj.asInstanceOf[StrictPortalInnerProps]
   }
 }

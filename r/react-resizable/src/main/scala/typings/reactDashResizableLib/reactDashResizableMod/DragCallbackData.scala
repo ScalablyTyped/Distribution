@@ -10,7 +10,7 @@ trait DragCallbackData extends js.Object {
   var deltaY: scala.Double
   var lastX: scala.Double
   var lastY: scala.Double
-  var node: reactLib.HTMLElement
+  var node: stdLib.HTMLElement
   var x: scala.Double
   var y: scala.Double
 }
@@ -22,7 +22,7 @@ object DragCallbackData {
     deltaY: scala.Double,
     lastX: scala.Double,
     lastY: scala.Double,
-    node: reactLib.HTMLElement,
+    node: stdLib.HTMLElement,
     x: scala.Double,
     y: scala.Double
   ): DragCallbackData = {

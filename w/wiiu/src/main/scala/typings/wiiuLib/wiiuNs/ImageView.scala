@@ -13,8 +13,8 @@ trait ImageView extends js.Object {
 
 object ImageView {
   @scala.inline
-  def apply(end: js.Function0[scala.Boolean], getErrorCode: js.Function0[scala.Double], viewMode: scala.Double): ImageView = {
-    val __obj = js.Dynamic.literal(end = end, getErrorCode = getErrorCode, viewMode = viewMode)
+  def apply(end: () => scala.Boolean, getErrorCode: () => scala.Double, viewMode: scala.Double): ImageView = {
+    val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), getErrorCode = js.Any.fromFunction0(getErrorCode), viewMode = viewMode)
   
     __obj.asInstanceOf[ImageView]
   }

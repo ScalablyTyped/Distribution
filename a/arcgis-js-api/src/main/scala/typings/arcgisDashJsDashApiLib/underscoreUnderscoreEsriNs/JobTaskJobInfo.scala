@@ -172,7 +172,7 @@ object JobTaskJobInfo {
     description: java.lang.String,
     dueDate: stdLib.Date,
     endDate: stdLib.Date,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     id: scala.Double,
     jobTypeId: scala.Double,
     loi: Geometry,
@@ -183,7 +183,7 @@ object JobTaskJobInfo {
     pendingDays: scala.Double,
     percentageComplete: scala.Double,
     priority: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     stage: java.lang.String,
     startDate: stdLib.Date,
     status: scala.Double,
@@ -191,7 +191,7 @@ object JobTaskJobInfo {
     versionInfo: JobVersionInfo,
     versionName: java.lang.String
   ): JobTaskJobInfo = {
-    val __obj = js.Dynamic.literal(assignedTo = assignedTo, assignedType = assignedType, childJobIds = childJobIds, constructor = constructor, createdBy = createdBy, createdDate = createdDate, dataWorkspaceId = dataWorkspaceId, description = description, dueDate = dueDate, endDate = endDate, hasOwnProperty = hasOwnProperty, id = id, jobTypeId = jobTypeId, loi = loi, name = name, ownedBy = ownedBy, parentJobId = parentJobId, parentVersion = parentVersion, pendingDays = pendingDays, percentageComplete = percentageComplete, priority = priority, propertyIsEnumerable = propertyIsEnumerable, stage = stage, startDate = startDate, status = status, versionExists = versionExists, versionInfo = versionInfo, versionName = versionName)
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo, assignedType = assignedType, childJobIds = childJobIds, constructor = constructor, createdBy = createdBy, createdDate = createdDate, dataWorkspaceId = dataWorkspaceId, description = description, dueDate = dueDate, endDate = endDate, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, jobTypeId = jobTypeId, loi = loi, name = name, ownedBy = ownedBy, parentJobId = parentJobId, parentVersion = parentVersion, pendingDays = pendingDays, percentageComplete = percentageComplete, priority = priority, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stage = stage, startDate = startDate, status = status, versionExists = versionExists, versionInfo = versionInfo, versionName = versionName)
   
     __obj.asInstanceOf[JobTaskJobInfo]
   }

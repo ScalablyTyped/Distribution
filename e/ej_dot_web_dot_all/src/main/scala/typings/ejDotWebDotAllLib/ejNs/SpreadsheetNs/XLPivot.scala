@@ -42,12 +42,12 @@ trait XLPivot extends js.Object {
 object XLPivot {
   @scala.inline
   def apply(
-    clearPivotFieldList: js.Function1[java.lang.String, scala.Unit],
-    createPivotTable: js.Function5[java.lang.String, java.lang.String, java.lang.String, js.Any, js.Any, java.lang.String],
-    deletePivotTable: js.Function1[java.lang.String, scala.Unit],
-    refreshDataSource: js.Function2[java.lang.String, scala.Double, scala.Unit]
+    clearPivotFieldList: java.lang.String => scala.Unit,
+    createPivotTable: (java.lang.String, java.lang.String, java.lang.String, js.Any, js.Any) => java.lang.String,
+    deletePivotTable: java.lang.String => scala.Unit,
+    refreshDataSource: (java.lang.String, scala.Double) => scala.Unit
   ): XLPivot = {
-    val __obj = js.Dynamic.literal(clearPivotFieldList = clearPivotFieldList, createPivotTable = createPivotTable, deletePivotTable = deletePivotTable, refreshDataSource = refreshDataSource)
+    val __obj = js.Dynamic.literal(clearPivotFieldList = js.Any.fromFunction1(clearPivotFieldList), createPivotTable = js.Any.fromFunction5(createPivotTable), deletePivotTable = js.Any.fromFunction1(deletePivotTable), refreshDataSource = js.Any.fromFunction2(refreshDataSource))
   
     __obj.asInstanceOf[XLPivot]
   }

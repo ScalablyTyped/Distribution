@@ -16,18 +16,18 @@ trait SessionListener extends XSessionManagerListener2 {
 object SessionListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    approveInteraction: js.Function1[scala.Boolean, scala.Unit],
-    createWithOnQuitFlag: js.Function1[scala.Boolean, scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    doQuit: js.Function0[scala.Unit],
-    doRestore: js.Function0[scala.Boolean],
-    doSave: js.Function2[scala.Boolean, scala.Boolean, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    shutdownCanceled: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    approveInteraction: scala.Boolean => scala.Unit,
+    createWithOnQuitFlag: scala.Boolean => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    doQuit: () => scala.Unit,
+    doRestore: () => scala.Boolean,
+    doSave: (scala.Boolean, scala.Boolean) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    shutdownCanceled: () => scala.Unit
   ): SessionListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, approveInteraction = approveInteraction, createWithOnQuitFlag = createWithOnQuitFlag, disposing = disposing, doQuit = doQuit, doRestore = doRestore, doSave = doSave, queryInterface = queryInterface, release = release, shutdownCanceled = shutdownCanceled)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), approveInteraction = js.Any.fromFunction1(approveInteraction), createWithOnQuitFlag = js.Any.fromFunction1(createWithOnQuitFlag), disposing = js.Any.fromFunction1(disposing), doQuit = js.Any.fromFunction0(doQuit), doRestore = js.Any.fromFunction0(doRestore), doSave = js.Any.fromFunction2(doSave), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), shutdownCanceled = js.Any.fromFunction0(shutdownCanceled))
   
     __obj.asInstanceOf[SessionListener]
   }

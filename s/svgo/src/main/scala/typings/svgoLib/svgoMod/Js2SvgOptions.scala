@@ -67,7 +67,7 @@ object Js2SvgOptions {
     commentStart: java.lang.String = null,
     doctypeEnd: java.lang.String = null,
     doctypeStart: java.lang.String = null,
-    encodeEntity: js.Function1[/* char */ js.UndefOr[java.lang.String], java.lang.String] = null,
+    encodeEntity: /* char */ js.UndefOr[java.lang.String] => java.lang.String = null,
     indent: scala.Int | scala.Double = null,
     pretty: js.UndefOr[scala.Boolean] = js.undefined,
     procInstEnd: java.lang.String = null,
@@ -93,7 +93,7 @@ object Js2SvgOptions {
     if (commentStart != null) __obj.updateDynamic("commentStart")(commentStart)
     if (doctypeEnd != null) __obj.updateDynamic("doctypeEnd")(doctypeEnd)
     if (doctypeStart != null) __obj.updateDynamic("doctypeStart")(doctypeStart)
-    if (encodeEntity != null) __obj.updateDynamic("encodeEntity")(encodeEntity)
+    if (encodeEntity != null) __obj.updateDynamic("encodeEntity")(js.Any.fromFunction1(encodeEntity))
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
     if (procInstEnd != null) __obj.updateDynamic("procInstEnd")(procInstEnd)

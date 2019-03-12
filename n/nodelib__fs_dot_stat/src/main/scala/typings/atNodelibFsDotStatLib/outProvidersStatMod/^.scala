@@ -11,7 +11,7 @@ object ^ extends js.Object {
   def async(
     path: nodeLib.fsMod.PathLike,
     options: atNodelibFsDotStatLib.outManagersOptionsMod.StrictOptions,
-    callback: atNodelibFsDotStatLib.outProvidersStatMod.AsyncCallback
+    callback: AsyncCallback
   ): scala.Unit = js.native
   def isFollowedSymlink(stat: nodeLib.fsMod.Stats, options: atNodelibFsDotStatLib.outManagersOptionsMod.StrictOptions): scala.Boolean = js.native
   def sync(path: nodeLib.fsMod.PathLike, options: atNodelibFsDotStatLib.outManagersOptionsMod.StrictOptions): nodeLib.fsMod.Stats = js.native

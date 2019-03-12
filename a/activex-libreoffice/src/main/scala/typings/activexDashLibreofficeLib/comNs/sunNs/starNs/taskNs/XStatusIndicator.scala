@@ -55,16 +55,16 @@ trait XStatusIndicator
 object XStatusIndicator {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    end: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    reset: js.Function0[scala.Unit],
-    setText: js.Function1[java.lang.String, scala.Unit],
-    setValue: js.Function1[scala.Double, scala.Unit],
-    start: js.Function2[java.lang.String, scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    end: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    reset: () => scala.Unit,
+    setText: java.lang.String => scala.Unit,
+    setValue: scala.Double => scala.Unit,
+    start: (java.lang.String, scala.Double) => scala.Unit
   ): XStatusIndicator = {
-    val __obj = js.Dynamic.literal(acquire = acquire, end = end, queryInterface = queryInterface, release = release, reset = reset, setText = setText, setValue = setValue, start = start)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), end = js.Any.fromFunction0(end), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), reset = js.Any.fromFunction0(reset), setText = js.Any.fromFunction1(setText), setValue = js.Any.fromFunction1(setValue), start = js.Any.fromFunction2(start))
   
     __obj.asInstanceOf[XStatusIndicator]
   }

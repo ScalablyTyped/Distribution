@@ -52,32 +52,22 @@ trait XNamedRanges
 object XNamedRanges {
   @scala.inline
   def apply(
-    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementNames: stdLib.SafeArray[java.lang.String],
     ElementType: activexDashLibreofficeLib.`type`,
-    acquire: js.Function0[scala.Unit],
-    addNewByName: js.Function4[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
-      scala.Double, 
-      scala.Unit
-    ],
-    addNewFromTitles: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, 
-      Border, 
-      scala.Unit
-    ],
-    getByName: js.Function1[java.lang.String, js.Any],
-    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    hasByName: js.Function1[java.lang.String, scala.Boolean],
-    hasElements: js.Function0[scala.Boolean],
-    outputList: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeByName: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    addNewByName: (java.lang.String, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Double) => scala.Unit,
+    addNewFromTitles: (activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, Border) => scala.Unit,
+    getByName: java.lang.String => js.Any,
+    getElementNames: () => stdLib.SafeArray[java.lang.String],
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    hasByName: java.lang.String => scala.Boolean,
+    hasElements: () => scala.Boolean,
+    outputList: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeByName: java.lang.String => scala.Unit
   ): XNamedRanges = {
-    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, addNewByName = addNewByName, addNewFromTitles = addNewFromTitles, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, outputList = outputList, queryInterface = queryInterface, release = release, removeByName = removeByName)
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = js.Any.fromFunction0(acquire), addNewByName = js.Any.fromFunction4(addNewByName), addNewFromTitles = js.Any.fromFunction2(addNewFromTitles), getByName = js.Any.fromFunction1(getByName), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), outputList = js.Any.fromFunction1(outputList), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByName = js.Any.fromFunction1(removeByName))
   
     __obj.asInstanceOf[XNamedRanges]
   }

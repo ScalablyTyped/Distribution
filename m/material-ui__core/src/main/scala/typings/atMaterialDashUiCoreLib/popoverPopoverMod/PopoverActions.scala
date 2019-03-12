@@ -11,8 +11,8 @@ trait PopoverActions extends js.Object {
 
 object PopoverActions {
   @scala.inline
-  def apply(updatePosition: js.Function0[scala.Unit]): PopoverActions = {
-    val __obj = js.Dynamic.literal(updatePosition = updatePosition)
+  def apply(updatePosition: () => scala.Unit): PopoverActions = {
+    val __obj = js.Dynamic.literal(updatePosition = js.Any.fromFunction0(updatePosition))
   
     __obj.asInstanceOf[PopoverActions]
   }

@@ -71,16 +71,16 @@ trait Camera extends js.Object {
 object Camera {
   @scala.inline
   def apply(
-    camera: js.Function0[scala.Unit],
-    lookAt: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
-    move: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
-    ortho: js.Function0[scala.Unit],
-    pan: js.Function1[scala.Double, scala.Unit],
-    perspective: js.Function0[scala.Unit],
-    setPosition: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
-    tilt: js.Function1[scala.Double, scala.Unit]
+    camera: () => scala.Unit,
+    lookAt: (scala.Double, scala.Double, scala.Double) => scala.Unit,
+    move: (scala.Double, scala.Double, scala.Double) => scala.Unit,
+    ortho: () => scala.Unit,
+    pan: scala.Double => scala.Unit,
+    perspective: () => scala.Unit,
+    setPosition: (scala.Double, scala.Double, scala.Double) => scala.Unit,
+    tilt: scala.Double => scala.Unit
   ): Camera = {
-    val __obj = js.Dynamic.literal(camera = camera, lookAt = lookAt, move = move, ortho = ortho, pan = pan, perspective = perspective, setPosition = setPosition, tilt = tilt)
+    val __obj = js.Dynamic.literal(camera = js.Any.fromFunction0(camera), lookAt = js.Any.fromFunction3(lookAt), move = js.Any.fromFunction3(move), ortho = js.Any.fromFunction0(ortho), pan = js.Any.fromFunction1(pan), perspective = js.Any.fromFunction0(perspective), setPosition = js.Any.fromFunction3(setPosition), tilt = js.Any.fromFunction1(tilt))
   
     __obj.asInstanceOf[Camera]
   }

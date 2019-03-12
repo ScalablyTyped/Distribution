@@ -19,12 +19,12 @@ trait XDrawPageDuplicator
 object XDrawPageDuplicator {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    duplicate: js.Function1[XDrawPage, XDrawPage],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    duplicate: XDrawPage => XDrawPage,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDrawPageDuplicator = {
-    val __obj = js.Dynamic.literal(acquire = acquire, duplicate = duplicate, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), duplicate = js.Any.fromFunction1(duplicate), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDrawPageDuplicator]
   }

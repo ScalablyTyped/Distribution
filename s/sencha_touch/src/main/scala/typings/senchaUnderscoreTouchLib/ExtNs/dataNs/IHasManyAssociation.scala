@@ -83,32 +83,32 @@ object IHasManyAssociation {
     associationKey: java.lang.String = null,
     autoLoad: js.UndefOr[scala.Boolean] = js.undefined,
     autoSync: js.UndefOr[scala.Boolean] = js.undefined,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     extend: java.lang.String = null,
     filterProperty: java.lang.String = null,
     foreignKey: java.lang.String = null,
-    getAssociatedModel: js.Function0[java.lang.String] = null,
-    getAssociatedName: js.Function0[java.lang.String] = null,
-    getAssociationKey: js.Function0[java.lang.String] = null,
-    getAutoLoad: js.Function0[scala.Boolean] = null,
-    getAutoSync: js.Function0[scala.Boolean] = null,
-    getFilterProperty: js.Function0[java.lang.String] = null,
-    getForeignKey: js.Function0[java.lang.String] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getName: js.Function0[_] = null,
-    getOwnerModel: js.Function0[_] = null,
-    getOwnerName: js.Function0[java.lang.String] = null,
-    getPrimaryKey: js.Function0[java.lang.String] = null,
-    getReader: js.Function0[senchaUnderscoreTouchLib.ExtNs.dataNs.readerNs.IReader] = null,
-    getStore: js.Function0[_] = null,
-    getStoreName: js.Function0[java.lang.String] = null,
-    getType: js.Function0[java.lang.String] = null,
+    getAssociatedModel: () => java.lang.String = null,
+    getAssociatedName: () => java.lang.String = null,
+    getAssociationKey: () => java.lang.String = null,
+    getAutoLoad: () => scala.Boolean = null,
+    getAutoSync: () => scala.Boolean = null,
+    getFilterProperty: () => java.lang.String = null,
+    getForeignKey: () => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getName: () => _ = null,
+    getOwnerModel: () => _ = null,
+    getOwnerName: () => java.lang.String = null,
+    getPrimaryKey: () => java.lang.String = null,
+    getReader: () => senchaUnderscoreTouchLib.ExtNs.dataNs.readerNs.IReader = null,
+    getStore: () => _ = null,
+    getStoreName: () => java.lang.String = null,
+    getType: () => java.lang.String = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     name: java.lang.String = null,
     ownerModel: js.Any = null,
@@ -116,24 +116,21 @@ object IHasManyAssociation {
     primaryKey: java.lang.String = null,
     reader: senchaUnderscoreTouchLib.ExtNs.dataNs.readerNs.IReader = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setAssociatedModel: js.Function1[/* associatedModel */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setAssociatedName: js.Function1[/* associatedName */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setAssociationKey: js.Function1[/* associationKey */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setAutoLoad: js.Function1[/* autoLoad */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setAutoSync: js.Function1[/* autoSync */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setFilterProperty: js.Function1[/* filterProperty */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setForeignKey: js.Function1[/* foreignKey */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setName: js.Function1[/* name */ js.UndefOr[js.Any], scala.Unit] = null,
-    setOwnerModel: js.Function1[/* ownerModel */ js.UndefOr[js.Any], scala.Unit] = null,
-    setOwnerName: js.Function1[/* ownerName */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setPrimaryKey: js.Function1[/* primaryKey */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setReader: js.Function1[
-      /* reader */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.readerNs.IReader], 
-      scala.Unit
-    ] = null,
-    setStore: js.Function1[/* store */ js.UndefOr[js.Any], scala.Unit] = null,
-    setStoreName: js.Function1[/* storeName */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setType: js.Function1[/* type */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setAssociatedModel: /* associatedModel */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setAssociatedName: /* associatedName */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setAssociationKey: /* associationKey */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setAutoLoad: /* autoLoad */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setAutoSync: /* autoSync */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setFilterProperty: /* filterProperty */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setForeignKey: /* foreignKey */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setName: /* name */ js.UndefOr[js.Any] => scala.Unit = null,
+    setOwnerModel: /* ownerModel */ js.UndefOr[js.Any] => scala.Unit = null,
+    setOwnerName: /* ownerName */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setPrimaryKey: /* primaryKey */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setReader: /* reader */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.readerNs.IReader] => scala.Unit = null,
+    setStore: /* store */ js.UndefOr[js.Any] => scala.Unit = null,
+    setStoreName: /* storeName */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setType: /* type */ js.UndefOr[java.lang.String] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     store: js.Any = null,
@@ -150,32 +147,32 @@ object IHasManyAssociation {
     if (associationKey != null) __obj.updateDynamic("associationKey")(associationKey)
     if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad)
     if (!js.isUndefined(autoSync)) __obj.updateDynamic("autoSync")(autoSync)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (extend != null) __obj.updateDynamic("extend")(extend)
     if (filterProperty != null) __obj.updateDynamic("filterProperty")(filterProperty)
     if (foreignKey != null) __obj.updateDynamic("foreignKey")(foreignKey)
-    if (getAssociatedModel != null) __obj.updateDynamic("getAssociatedModel")(getAssociatedModel)
-    if (getAssociatedName != null) __obj.updateDynamic("getAssociatedName")(getAssociatedName)
-    if (getAssociationKey != null) __obj.updateDynamic("getAssociationKey")(getAssociationKey)
-    if (getAutoLoad != null) __obj.updateDynamic("getAutoLoad")(getAutoLoad)
-    if (getAutoSync != null) __obj.updateDynamic("getAutoSync")(getAutoSync)
-    if (getFilterProperty != null) __obj.updateDynamic("getFilterProperty")(getFilterProperty)
-    if (getForeignKey != null) __obj.updateDynamic("getForeignKey")(getForeignKey)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getName != null) __obj.updateDynamic("getName")(getName)
-    if (getOwnerModel != null) __obj.updateDynamic("getOwnerModel")(getOwnerModel)
-    if (getOwnerName != null) __obj.updateDynamic("getOwnerName")(getOwnerName)
-    if (getPrimaryKey != null) __obj.updateDynamic("getPrimaryKey")(getPrimaryKey)
-    if (getReader != null) __obj.updateDynamic("getReader")(getReader)
-    if (getStore != null) __obj.updateDynamic("getStore")(getStore)
-    if (getStoreName != null) __obj.updateDynamic("getStoreName")(getStoreName)
-    if (getType != null) __obj.updateDynamic("getType")(getType)
+    if (getAssociatedModel != null) __obj.updateDynamic("getAssociatedModel")(js.Any.fromFunction0(getAssociatedModel))
+    if (getAssociatedName != null) __obj.updateDynamic("getAssociatedName")(js.Any.fromFunction0(getAssociatedName))
+    if (getAssociationKey != null) __obj.updateDynamic("getAssociationKey")(js.Any.fromFunction0(getAssociationKey))
+    if (getAutoLoad != null) __obj.updateDynamic("getAutoLoad")(js.Any.fromFunction0(getAutoLoad))
+    if (getAutoSync != null) __obj.updateDynamic("getAutoSync")(js.Any.fromFunction0(getAutoSync))
+    if (getFilterProperty != null) __obj.updateDynamic("getFilterProperty")(js.Any.fromFunction0(getFilterProperty))
+    if (getForeignKey != null) __obj.updateDynamic("getForeignKey")(js.Any.fromFunction0(getForeignKey))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getName != null) __obj.updateDynamic("getName")(js.Any.fromFunction0(getName))
+    if (getOwnerModel != null) __obj.updateDynamic("getOwnerModel")(js.Any.fromFunction0(getOwnerModel))
+    if (getOwnerName != null) __obj.updateDynamic("getOwnerName")(js.Any.fromFunction0(getOwnerName))
+    if (getPrimaryKey != null) __obj.updateDynamic("getPrimaryKey")(js.Any.fromFunction0(getPrimaryKey))
+    if (getReader != null) __obj.updateDynamic("getReader")(js.Any.fromFunction0(getReader))
+    if (getStore != null) __obj.updateDynamic("getStore")(js.Any.fromFunction0(getStore))
+    if (getStoreName != null) __obj.updateDynamic("getStoreName")(js.Any.fromFunction0(getStoreName))
+    if (getType != null) __obj.updateDynamic("getType")(js.Any.fromFunction0(getType))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (name != null) __obj.updateDynamic("name")(name)
     if (ownerModel != null) __obj.updateDynamic("ownerModel")(ownerModel)
@@ -183,21 +180,21 @@ object IHasManyAssociation {
     if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
     if (reader != null) __obj.updateDynamic("reader")(reader)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setAssociatedModel != null) __obj.updateDynamic("setAssociatedModel")(setAssociatedModel)
-    if (setAssociatedName != null) __obj.updateDynamic("setAssociatedName")(setAssociatedName)
-    if (setAssociationKey != null) __obj.updateDynamic("setAssociationKey")(setAssociationKey)
-    if (setAutoLoad != null) __obj.updateDynamic("setAutoLoad")(setAutoLoad)
-    if (setAutoSync != null) __obj.updateDynamic("setAutoSync")(setAutoSync)
-    if (setFilterProperty != null) __obj.updateDynamic("setFilterProperty")(setFilterProperty)
-    if (setForeignKey != null) __obj.updateDynamic("setForeignKey")(setForeignKey)
-    if (setName != null) __obj.updateDynamic("setName")(setName)
-    if (setOwnerModel != null) __obj.updateDynamic("setOwnerModel")(setOwnerModel)
-    if (setOwnerName != null) __obj.updateDynamic("setOwnerName")(setOwnerName)
-    if (setPrimaryKey != null) __obj.updateDynamic("setPrimaryKey")(setPrimaryKey)
-    if (setReader != null) __obj.updateDynamic("setReader")(setReader)
-    if (setStore != null) __obj.updateDynamic("setStore")(setStore)
-    if (setStoreName != null) __obj.updateDynamic("setStoreName")(setStoreName)
-    if (setType != null) __obj.updateDynamic("setType")(setType)
+    if (setAssociatedModel != null) __obj.updateDynamic("setAssociatedModel")(js.Any.fromFunction1(setAssociatedModel))
+    if (setAssociatedName != null) __obj.updateDynamic("setAssociatedName")(js.Any.fromFunction1(setAssociatedName))
+    if (setAssociationKey != null) __obj.updateDynamic("setAssociationKey")(js.Any.fromFunction1(setAssociationKey))
+    if (setAutoLoad != null) __obj.updateDynamic("setAutoLoad")(js.Any.fromFunction1(setAutoLoad))
+    if (setAutoSync != null) __obj.updateDynamic("setAutoSync")(js.Any.fromFunction1(setAutoSync))
+    if (setFilterProperty != null) __obj.updateDynamic("setFilterProperty")(js.Any.fromFunction1(setFilterProperty))
+    if (setForeignKey != null) __obj.updateDynamic("setForeignKey")(js.Any.fromFunction1(setForeignKey))
+    if (setName != null) __obj.updateDynamic("setName")(js.Any.fromFunction1(setName))
+    if (setOwnerModel != null) __obj.updateDynamic("setOwnerModel")(js.Any.fromFunction1(setOwnerModel))
+    if (setOwnerName != null) __obj.updateDynamic("setOwnerName")(js.Any.fromFunction1(setOwnerName))
+    if (setPrimaryKey != null) __obj.updateDynamic("setPrimaryKey")(js.Any.fromFunction1(setPrimaryKey))
+    if (setReader != null) __obj.updateDynamic("setReader")(js.Any.fromFunction1(setReader))
+    if (setStore != null) __obj.updateDynamic("setStore")(js.Any.fromFunction1(setStore))
+    if (setStoreName != null) __obj.updateDynamic("setStoreName")(js.Any.fromFunction1(setStoreName))
+    if (setType != null) __obj.updateDynamic("setType")(js.Any.fromFunction1(setType))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (store != null) __obj.updateDynamic("store")(store)

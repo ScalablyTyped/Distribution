@@ -36,44 +36,17 @@ trait BucketsResource extends js.Object {
 object BucketsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketFieldsIfMetagenerationMatch, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Bucket]
-    ],
-    getIamPolicy: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucket, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Bucket]
-    ],
-    list: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Buckets]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketFieldsIfMetagenerationMatchIfMetagenerationNotMatch, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Bucket]
-    ],
-    setIamPolicy: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucket, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    testIamPermissions: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketFieldsIfMetagenerationMatchIfMetagenerationNotMatch, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Bucket]
-    ]
+    delete: gapiDotClientDotStorageLib.Anon_AltBucketFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotStorageLib.Anon_AltBucketFieldsIfMetagenerationMatch => gapiDotClientLib.gapiNs.clientNs.Request[Bucket],
+    getIamPolicy: gapiDotClientDotStorageLib.Anon_AltBucket => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    insert: gapiDotClientDotStorageLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Bucket],
+    list: gapiDotClientDotStorageLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Buckets],
+    patch: gapiDotClientDotStorageLib.Anon_AltBucketFieldsIfMetagenerationMatchIfMetagenerationNotMatch => gapiDotClientLib.gapiNs.clientNs.Request[Bucket],
+    setIamPolicy: gapiDotClientDotStorageLib.Anon_AltBucket => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    testIamPermissions: gapiDotClientDotStorageLib.Anon_AltBucketFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse],
+    update: gapiDotClientDotStorageLib.Anon_AltBucketFieldsIfMetagenerationMatchIfMetagenerationNotMatch => gapiDotClientLib.gapiNs.clientNs.Request[Bucket]
   ): BucketsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, getIamPolicy = getIamPolicy, insert = insert, list = list, patch = patch, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[BucketsResource]
   }

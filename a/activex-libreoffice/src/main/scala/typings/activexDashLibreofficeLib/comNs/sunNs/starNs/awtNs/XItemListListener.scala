@@ -31,17 +31,17 @@ trait XItemListListener
 object XItemListListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    allItemsRemoved: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    itemListChanged: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    listItemInserted: js.Function1[ItemListEvent, scala.Unit],
-    listItemModified: js.Function1[ItemListEvent, scala.Unit],
-    listItemRemoved: js.Function1[ItemListEvent, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    allItemsRemoved: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    itemListChanged: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    listItemInserted: ItemListEvent => scala.Unit,
+    listItemModified: ItemListEvent => scala.Unit,
+    listItemRemoved: ItemListEvent => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XItemListListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, allItemsRemoved = allItemsRemoved, disposing = disposing, itemListChanged = itemListChanged, listItemInserted = listItemInserted, listItemModified = listItemModified, listItemRemoved = listItemRemoved, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), allItemsRemoved = js.Any.fromFunction1(allItemsRemoved), disposing = js.Any.fromFunction1(disposing), itemListChanged = js.Any.fromFunction1(itemListChanged), listItemInserted = js.Any.fromFunction1(listItemInserted), listItemModified = js.Any.fromFunction1(listItemModified), listItemRemoved = js.Any.fromFunction1(listItemRemoved), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XItemListListener]
   }

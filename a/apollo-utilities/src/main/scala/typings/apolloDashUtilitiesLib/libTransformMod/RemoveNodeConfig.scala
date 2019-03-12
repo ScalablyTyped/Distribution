@@ -16,12 +16,12 @@ object RemoveNodeConfig {
   def apply[N](
     name: java.lang.String = null,
     remove: js.UndefOr[scala.Boolean] = js.undefined,
-    test: js.Function1[/* node */ N, scala.Boolean] = null
+    test: /* node */ N => scala.Boolean = null
   ): RemoveNodeConfig[N] = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove)
-    if (test != null) __obj.updateDynamic("test")(test)
+    if (test != null) __obj.updateDynamic("test")(js.Any.fromFunction1(test))
     __obj.asInstanceOf[RemoveNodeConfig[N]]
   }
 }

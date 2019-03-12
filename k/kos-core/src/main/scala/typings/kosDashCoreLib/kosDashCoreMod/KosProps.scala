@@ -14,14 +14,14 @@ trait KosProps[T] extends js.Object {
 object KosProps {
   @scala.inline
   def apply[T](
-    dispatch: js.Function1[/* action */ Action[T], scala.Unit] = null,
-    getNamespace: js.Function0[java.lang.String] = null,
-    getParam: js.Function0[java.lang.String] = null
+    dispatch: /* action */ Action[T] => scala.Unit = null,
+    getNamespace: () => java.lang.String = null,
+    getParam: () => java.lang.String = null
   ): KosProps[T] = {
     val __obj = js.Dynamic.literal()
-    if (dispatch != null) __obj.updateDynamic("dispatch")(dispatch)
-    if (getNamespace != null) __obj.updateDynamic("getNamespace")(getNamespace)
-    if (getParam != null) __obj.updateDynamic("getParam")(getParam)
+    if (dispatch != null) __obj.updateDynamic("dispatch")(js.Any.fromFunction1(dispatch))
+    if (getNamespace != null) __obj.updateDynamic("getNamespace")(js.Any.fromFunction0(getNamespace))
+    if (getParam != null) __obj.updateDynamic("getParam")(js.Any.fromFunction0(getParam))
     __obj.asInstanceOf[KosProps[T]]
   }
 }

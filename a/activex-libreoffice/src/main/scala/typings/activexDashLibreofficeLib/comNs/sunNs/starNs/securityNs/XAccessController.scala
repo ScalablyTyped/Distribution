@@ -71,15 +71,15 @@ object XAccessController {
   @scala.inline
   def apply(
     Context: XAccessControlContext,
-    acquire: js.Function0[scala.Unit],
-    checkPermission: js.Function1[js.Any, scala.Unit],
-    doPrivileged: js.Function2[XAction, XAccessControlContext, js.Any],
-    doRestricted: js.Function2[XAction, XAccessControlContext, js.Any],
-    getContext: js.Function0[XAccessControlContext],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    checkPermission: js.Any => scala.Unit,
+    doPrivileged: (XAction, XAccessControlContext) => js.Any,
+    doRestricted: (XAction, XAccessControlContext) => js.Any,
+    getContext: () => XAccessControlContext,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAccessController = {
-    val __obj = js.Dynamic.literal(Context = Context, acquire = acquire, checkPermission = checkPermission, doPrivileged = doPrivileged, doRestricted = doRestricted, getContext = getContext, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Context = Context, acquire = js.Any.fromFunction0(acquire), checkPermission = js.Any.fromFunction1(checkPermission), doPrivileged = js.Any.fromFunction2(doPrivileged), doRestricted = js.Any.fromFunction2(doRestricted), getContext = js.Any.fromFunction0(getContext), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAccessController]
   }

@@ -64,33 +64,33 @@ trait Group
 object Group {
   @scala.inline
   def apply(
-    add: js.Function1[Person, scala.Unit],
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    add: Person => scala.Unit,
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     bubbleParent: scala.Boolean,
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getApiName: js.Function0[java.lang.String],
-    getBubbleParent: js.Function0[scala.Boolean],
-    getIdentifier: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getRecordId: js.Function0[scala.Double],
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
+    getApiName: () => java.lang.String,
+    getBubbleParent: () => scala.Boolean,
+    getIdentifier: () => java.lang.String,
+    getName: () => java.lang.String,
+    getRecordId: () => scala.Double,
     identifier: java.lang.String,
-    members: js.Function0[js.Array[Person]],
+    members: () => js.Array[Person],
     name: java.lang.String,
     recordId: scala.Double,
-    remove: js.Function1[Person, scala.Unit],
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
-    setName: js.Function1[java.lang.String, scala.Unit],
-    setRecordId: js.Function1[scala.Double, scala.Unit],
-    sortedMembers: js.Function1[scala.Double, js.Array[Person]],
-    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    remove: Person => scala.Unit,
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    setBubbleParent: scala.Boolean => scala.Unit,
+    setName: java.lang.String => scala.Unit,
+    setRecordId: scala.Double => scala.Unit,
+    sortedMembers: scala.Double => js.Array[Person],
+    getLifecycleContainer: () => titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
   ): Group = {
-    val __obj = js.Dynamic.literal(add = add, addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, getIdentifier = getIdentifier, getName = getName, getRecordId = getRecordId, identifier = identifier, members = members, name = name, recordId = recordId, remove = remove, removeEventListener = removeEventListener, setBubbleParent = setBubbleParent, setName = setName, setRecordId = setRecordId, sortedMembers = sortedMembers)
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getIdentifier = js.Any.fromFunction0(getIdentifier), getName = js.Any.fromFunction0(getName), getRecordId = js.Any.fromFunction0(getRecordId), identifier = identifier, members = js.Any.fromFunction0(members), name = name, recordId = recordId, remove = js.Any.fromFunction1(remove), removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setName = js.Any.fromFunction1(setName), setRecordId = js.Any.fromFunction1(setRecordId), sortedMembers = js.Any.fromFunction1(sortedMembers))
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
     __obj.asInstanceOf[Group]

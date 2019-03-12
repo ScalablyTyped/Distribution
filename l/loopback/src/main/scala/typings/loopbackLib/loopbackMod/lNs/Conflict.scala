@@ -28,7 +28,7 @@ trait Conflict extends js.Object {
     */
   def changes(
     callback: js.Function3[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* sourceChange */ Change, 
       /* targetChange */ Change, 
       scala.Unit
@@ -43,7 +43,7 @@ trait Conflict extends js.Object {
     */
   def models(
     callback: js.Function3[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* source */ PersistedModel, 
       /* target */ PersistedModel, 
       scala.Unit
@@ -59,7 +59,7 @@ trait Conflict extends js.Object {
     * @callback {() => void} callback
     * @param {Error} err
     */
-  def resolve(callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit
+  def resolve(callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit
   /**
     * Resolve the conflict using the supplied instance data
     * @param {any} data The set of changes to apply on the model
@@ -67,19 +67,19 @@ trait Conflict extends js.Object {
     * @callback {() => void} callback
     * @param {Error} err
     */
-  def resolveManually(data: js.Any, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit
+  def resolveManually(data: js.Any, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit
   /**
     * Resolve the conflict using the instance data in the source model
     * @callback {() => void} callback
     * @param {Error} err
     */
-  def resolveUsingSource(callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit
+  def resolveUsingSource(callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit
   /**
     * Resolve the conflict using the instance data in the target model
     * @callback {() => void} callback
     * @param {Error} err
     */
-  def resolveUsingTarget(callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit
+  def resolveUsingTarget(callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit
   /**
     * Return a new Conflict instance with swapped Source and Target models
     * This is useful when resolving a conflict in one-way
@@ -103,44 +103,35 @@ trait Conflict extends js.Object {
     * @param {Error} err
     * @param {string} type The conflict type
     */
-  def `type`(callback: js.Function2[/* err */ nodeLib.Error, /* type */ java.lang.String, scala.Unit]): scala.Unit
+  def `type`(callback: js.Function2[/* err */ stdLib.Error, /* type */ java.lang.String, scala.Unit]): scala.Unit
 }
 
 object Conflict {
   @scala.inline
   def apply(
-    changes: js.Function1[
-      js.Function3[
-        /* err */ nodeLib.Error, 
-        /* sourceChange */ Change, 
-        /* targetChange */ Change, 
-        scala.Unit
-      ], 
+    changes: js.Function3[
+      /* err */ stdLib.Error, 
+      /* sourceChange */ Change, 
+      /* targetChange */ Change, 
       scala.Unit
-    ],
-    models: js.Function1[
-      js.Function3[
-        /* err */ nodeLib.Error, 
-        /* source */ PersistedModel, 
-        /* target */ PersistedModel, 
-        scala.Unit
-      ], 
+    ] => scala.Unit,
+    models: js.Function3[
+      /* err */ stdLib.Error, 
+      /* source */ PersistedModel, 
+      /* target */ PersistedModel, 
       scala.Unit
-    ],
-    resolve: js.Function1[js.Function1[/* err */ nodeLib.Error, scala.Unit], scala.Unit],
-    resolveManually: js.Function2[js.Any, js.Function1[/* err */ nodeLib.Error, scala.Unit], scala.Unit],
-    resolveUsingSource: js.Function1[js.Function1[/* err */ nodeLib.Error, scala.Unit], scala.Unit],
-    resolveUsingTarget: js.Function1[js.Function1[/* err */ nodeLib.Error, scala.Unit], scala.Unit],
+    ] => scala.Unit,
+    resolve: js.Function1[/* err */ stdLib.Error, scala.Unit] => scala.Unit,
+    resolveManually: (js.Any, js.Function1[/* err */ stdLib.Error, scala.Unit]) => scala.Unit,
+    resolveUsingSource: js.Function1[/* err */ stdLib.Error, scala.Unit] => scala.Unit,
+    resolveUsingTarget: js.Function1[/* err */ stdLib.Error, scala.Unit] => scala.Unit,
     source: js.Any,
-    swapParties: js.Function0[Conflict],
+    swapParties: () => Conflict,
     target: js.Any,
-    `type`: js.Function1[
-      js.Function2[/* err */ nodeLib.Error, /* type */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ]
+    `type`: js.Function2[/* err */ stdLib.Error, /* type */ java.lang.String, scala.Unit] => scala.Unit
   ): Conflict = {
-    val __obj = js.Dynamic.literal(changes = changes, models = models, resolve = resolve, resolveManually = resolveManually, resolveUsingSource = resolveUsingSource, resolveUsingTarget = resolveUsingTarget, source = source, swapParties = swapParties, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(changes = js.Any.fromFunction1(changes), models = js.Any.fromFunction1(models), resolve = js.Any.fromFunction1(resolve), resolveManually = js.Any.fromFunction2(resolveManually), resolveUsingSource = js.Any.fromFunction1(resolveUsingSource), resolveUsingTarget = js.Any.fromFunction1(resolveUsingTarget), source = source, swapParties = js.Any.fromFunction0(swapParties), target = target)
+    __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
     __obj.asInstanceOf[Conflict]
   }
 }

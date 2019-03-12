@@ -21,32 +21,26 @@ trait XDefaultNumberingProvider
     * @see com.sun.star.text.NumberingLevel
     * @see com.sun.star.lang.Locale
     */
-  def getDefaultContinuousNumberingLevels(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues]
+  def getDefaultContinuousNumberingLevels(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues]
   /**
     * provides access to outline numberings according to a given {@link com.sun.star.lang.Locale} .
     *
     * Outline numberings usually consist of levels with different settings.
     * @see com.sun.star.text.NumberingLevel
     */
-  def getDefaultOutlineNumberings(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess]
+  def getDefaultOutlineNumberings(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess]
 }
 
 object XDefaultNumberingProvider {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getDefaultContinuousNumberingLevels: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues]
-    ],
-    getDefaultOutlineNumberings: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDefaultContinuousNumberingLevels: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues],
+    getDefaultOutlineNumberings: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDefaultNumberingProvider = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getDefaultContinuousNumberingLevels = getDefaultContinuousNumberingLevels, getDefaultOutlineNumberings = getDefaultOutlineNumberings, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDefaultContinuousNumberingLevels = js.Any.fromFunction1(getDefaultContinuousNumberingLevels), getDefaultOutlineNumberings = js.Any.fromFunction1(getDefaultOutlineNumberings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDefaultNumberingProvider]
   }

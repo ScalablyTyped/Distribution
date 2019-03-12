@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object libDomSetPortalAttributeMod extends js.Object {
   val DATA_PORTAL_ATTRIBUTE: /* data-portal-element */ java.lang.String = js.native
-  def setPortalAttribute(element: reactLib.HTMLElement): scala.Unit = js.native
+  def setPortalAttribute(element: stdLib.HTMLElement): scala.Unit = js.native
 }
 

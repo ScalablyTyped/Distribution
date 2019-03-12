@@ -17,12 +17,12 @@ object InfoBox {
   @scala.inline
   def apply(
     container: stdLib.Element,
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     frame: stdLib.HTMLIFrameElement,
-    isDestroyed: js.Function0[scala.Boolean],
+    isDestroyed: () => scala.Boolean,
     viewModel: InfoBoxViewModel
   ): InfoBox = {
-    val __obj = js.Dynamic.literal(container = container, destroy = destroy, frame = frame, isDestroyed = isDestroyed, viewModel = viewModel)
+    val __obj = js.Dynamic.literal(container = container, destroy = js.Any.fromFunction0(destroy), frame = frame, isDestroyed = js.Any.fromFunction0(isDestroyed), viewModel = viewModel)
   
     __obj.asInstanceOf[InfoBox]
   }

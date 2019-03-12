@@ -15,12 +15,12 @@ trait DateLocalizerSpec extends js.Object {
 object DateLocalizerSpec {
   @scala.inline
   def apply(
-    firstOfWeek: js.Function1[Culture, scala.Double],
-    format: js.Function3[FormatInput, java.lang.String, Culture, java.lang.String],
+    firstOfWeek: Culture => scala.Double,
+    format: (FormatInput, java.lang.String, Culture) => java.lang.String,
     formats: Formats,
     propType: propDashTypesLib.propDashTypesMod.Validator[_] = null
   ): DateLocalizerSpec = {
-    val __obj = js.Dynamic.literal(firstOfWeek = firstOfWeek, format = format, formats = formats)
+    val __obj = js.Dynamic.literal(firstOfWeek = js.Any.fromFunction1(firstOfWeek), format = js.Any.fromFunction3(format), formats = formats)
     if (propType != null) __obj.updateDynamic("propType")(propType)
     __obj.asInstanceOf[DateLocalizerSpec]
   }

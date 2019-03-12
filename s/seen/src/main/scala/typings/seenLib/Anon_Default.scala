@@ -11,8 +11,8 @@ trait Anon_Default extends js.Object {
 
 object Anon_Default {
   @scala.inline
-  def apply(default: js.Function0[seenLib.seenMod.Model]): Anon_Default = {
-    val __obj = js.Dynamic.literal(default = default)
+  def apply(default: () => seenLib.seenMod.Model): Anon_Default = {
+    val __obj = js.Dynamic.literal(default = js.Any.fromFunction0(default))
   
     __obj.asInstanceOf[Anon_Default]
   }

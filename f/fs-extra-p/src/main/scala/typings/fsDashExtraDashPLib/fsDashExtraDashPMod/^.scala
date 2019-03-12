@@ -14,18 +14,10 @@ object ^ extends js.Object {
   def access(path: nodeLib.Buffer, mode: scala.Double): js.Promise[scala.Unit] = js.native
   def appendFile(filename: java.lang.String, data: js.Any): js.Promise[scala.Unit] = js.native
   def appendFile(filename: java.lang.String, data: js.Any, encoding: java.lang.String): js.Promise[scala.Unit] = js.native
-  def appendFile(
-    filename: java.lang.String,
-    data: js.Any,
-    option: fsDashExtraDashPLib.fsDashExtraDashPMod.OpenOptions
-  ): js.Promise[scala.Unit] = js.native
+  def appendFile(filename: java.lang.String, data: js.Any, option: OpenOptions): js.Promise[scala.Unit] = js.native
   def appendFileSync(filename: java.lang.String, data: js.Any): scala.Unit = js.native
   def appendFileSync(filename: java.lang.String, data: js.Any, encoding: java.lang.String): scala.Unit = js.native
-  def appendFileSync(
-    filename: java.lang.String,
-    data: js.Any,
-    option: fsDashExtraDashPLib.fsDashExtraDashPMod.OpenOptions
-  ): scala.Unit = js.native
+  def appendFileSync(filename: java.lang.String, data: js.Any, option: OpenOptions): scala.Unit = js.native
   def chmod(path: java.lang.String, mode: java.lang.String): js.Promise[scala.Unit] = js.native
   def chmod(path: java.lang.String, mode: scala.Double): js.Promise[scala.Unit] = js.native
   def chmodSync(path: java.lang.String, mode: java.lang.String): scala.Unit = js.native
@@ -35,11 +27,7 @@ object ^ extends js.Object {
   def close(fd: scala.Double): js.Promise[scala.Unit] = js.native
   def closeSync(fd: scala.Double): scala.Unit = js.native
   def copy(src: java.lang.String, dest: java.lang.String): js.Promise[scala.Unit] = js.native
-  def copy(
-    src: java.lang.String,
-    dest: java.lang.String,
-    options: fsDashExtraDashPLib.fsDashExtraDashPMod.CopyOptions
-  ): js.Promise[scala.Unit] = js.native
+  def copy(src: java.lang.String, dest: java.lang.String, options: CopyOptions): js.Promise[scala.Unit] = js.native
   def copyFile(src: java.lang.String, dest: java.lang.String): js.Promise[scala.Unit] = js.native
   def createFile(file: java.lang.String): js.Promise[scala.Unit] = js.native
   def createFileSync(file: java.lang.String): scala.Unit = js.native
@@ -54,7 +42,7 @@ object ^ extends js.Object {
   def emptyDir(path: java.lang.String): js.Promise[scala.Unit] = js.native
   def emptyDirSync(path: java.lang.String): scala.Boolean = js.native
   def ensureDir(path: java.lang.String): js.Promise[scala.Unit] = js.native
-  def ensureDir(path: java.lang.String, options: fsDashExtraDashPLib.fsDashExtraDashPMod.CreateDirOptions): js.Promise[scala.Unit] = js.native
+  def ensureDir(path: java.lang.String, options: CreateDirOptions): js.Promise[scala.Unit] = js.native
   def ensureDirSync(path: java.lang.String): scala.Unit = js.native
   def ensureFile(path: java.lang.String): js.Promise[scala.Unit] = js.native
   def ensureFileSync(path: java.lang.String): scala.Unit = js.native
@@ -91,35 +79,27 @@ object ^ extends js.Object {
   def mkdirSync(path: java.lang.String, mode: java.lang.String): scala.Unit = js.native
   def mkdirSync(path: java.lang.String, mode: scala.Double): scala.Unit = js.native
   def mkdirp(dir: java.lang.String): js.Promise[scala.Unit] = js.native
-  def mkdirp(dir: java.lang.String, options: fsDashExtraDashPLib.fsDashExtraDashPMod.CreateDirOptions): js.Promise[scala.Unit] = js.native
+  def mkdirp(dir: java.lang.String, options: CreateDirOptions): js.Promise[scala.Unit] = js.native
   def mkdirpSync(dir: java.lang.String): scala.Unit = js.native
-  def mkdirpSync(dir: java.lang.String, options: fsDashExtraDashPLib.fsDashExtraDashPMod.CreateDirOptions): scala.Unit = js.native
+  def mkdirpSync(dir: java.lang.String, options: CreateDirOptions): scala.Unit = js.native
   def mkdirs(dir: java.lang.String): js.Promise[scala.Unit] = js.native
-  def mkdirs(dir: java.lang.String, options: fsDashExtraDashPLib.fsDashExtraDashPMod.CreateDirOptions): js.Promise[scala.Unit] = js.native
+  def mkdirs(dir: java.lang.String, options: CreateDirOptions): js.Promise[scala.Unit] = js.native
   def mkdirsSync(dir: java.lang.String): scala.Unit = js.native
-  def mkdirsSync(dir: java.lang.String, options: fsDashExtraDashPLib.fsDashExtraDashPMod.CreateDirOptions): scala.Unit = js.native
+  def mkdirsSync(dir: java.lang.String, options: CreateDirOptions): scala.Unit = js.native
   def mkdtemp(prefix: java.lang.String): js.Promise[java.lang.String] = js.native
   def move(src: java.lang.String, dest: java.lang.String): js.Promise[scala.Unit] = js.native
-  def move(
-    src: java.lang.String,
-    dest: java.lang.String,
-    options: fsDashExtraDashPLib.fsDashExtraDashPMod.MoveOptions
-  ): js.Promise[scala.Unit] = js.native
+  def move(src: java.lang.String, dest: java.lang.String, options: MoveOptions): js.Promise[scala.Unit] = js.native
   def moveSync(src: java.lang.String, dest: java.lang.String): scala.Unit = js.native
-  def moveSync(
-    src: java.lang.String,
-    dest: java.lang.String,
-    options: fsDashExtraDashPLib.fsDashExtraDashPMod.MoveOptions
-  ): scala.Unit = js.native
+  def moveSync(src: java.lang.String, dest: java.lang.String, options: MoveOptions): scala.Unit = js.native
   def open(path: java.lang.String, flags: java.lang.String): js.Promise[scala.Double] = js.native
   def open(path: java.lang.String, flags: java.lang.String, mode: java.lang.String): js.Promise[scala.Double] = js.native
   def openSync(path: java.lang.String, flags: java.lang.String): scala.Double = js.native
   def openSync(path: java.lang.String, flags: java.lang.String, mode: java.lang.String): scala.Double = js.native
   def outputFile(file: java.lang.String, data: js.Any): js.Promise[scala.Unit] = js.native
-  def outputFile(file: java.lang.String, data: js.Any, options: fsDashExtraDashPLib.fsDashExtraDashPMod.OpenOptions): js.Promise[scala.Unit] = js.native
+  def outputFile(file: java.lang.String, data: js.Any, options: OpenOptions): js.Promise[scala.Unit] = js.native
   def outputFileSync(file: java.lang.String, data: js.Any): scala.Unit = js.native
   def outputJson(file: java.lang.String, data: js.Any): js.Promise[scala.Unit] = js.native
-  def outputJson(file: java.lang.String, data: js.Any, options: fsDashExtraDashPLib.fsDashExtraDashPMod.JsonOptions): js.Promise[scala.Unit] = js.native
+  def outputJson(file: java.lang.String, data: js.Any, options: JsonOptions): js.Promise[scala.Unit] = js.native
   def outputJsonSync(file: java.lang.String, data: js.Any): scala.Unit = js.native
   def pathExists(path: java.lang.String): js.Promise[scala.Boolean] = js.native
   def read(
@@ -136,7 +116,7 @@ object ^ extends js.Object {
     length: scala.Double,
     position: scala.Double,
     callback: js.Function3[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* bytesRead */ scala.Double, 
       /* buffer */ nodeLib.Buffer, 
       scala.Unit
@@ -144,14 +124,14 @@ object ^ extends js.Object {
   ): js.Promise[scala.Double] = js.native
   def readFile(filename: java.lang.String): js.Promise[nodeLib.Buffer] = js.native
   def readFile(filename: java.lang.String, encoding: java.lang.String): js.Promise[java.lang.String] = js.native
-  def readFile(filename: java.lang.String, options: fsDashExtraDashPLib.fsDashExtraDashPMod.OpenOptions): js.Promise[java.lang.String] = js.native
+  def readFile(filename: java.lang.String, options: OpenOptions): js.Promise[java.lang.String] = js.native
   def readFileSync(filename: java.lang.String): nodeLib.Buffer = js.native
   def readFileSync(filename: java.lang.String, encoding: java.lang.String): java.lang.String = js.native
-  def readFileSync(filename: java.lang.String, options: fsDashExtraDashPLib.fsDashExtraDashPMod.OpenOptions): java.lang.String = js.native
+  def readFileSync(filename: java.lang.String, options: OpenOptions): java.lang.String = js.native
   def readJson(file: java.lang.String): js.Promise[_] = js.native
-  def readJson(file: java.lang.String, options: fsDashExtraDashPLib.fsDashExtraDashPMod.OpenOptions): js.Promise[_] = js.native
+  def readJson(file: java.lang.String, options: OpenOptions): js.Promise[_] = js.native
   def readJsonSync(file: java.lang.String): js.Any = js.native
-  def readJsonSync(file: java.lang.String, options: fsDashExtraDashPLib.fsDashExtraDashPMod.OpenOptions): js.Any = js.native
+  def readJsonSync(file: java.lang.String, options: OpenOptions): js.Any = js.native
   def readSync(
     fd: scala.Double,
     buffer: nodeLib.Buffer,
@@ -199,7 +179,7 @@ object ^ extends js.Object {
     length: scala.Double,
     position: scala.Double,
     callback: js.Function3[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* written */ scala.Double, 
       /* buffer */ nodeLib.Buffer, 
       scala.Unit
@@ -207,24 +187,12 @@ object ^ extends js.Object {
   ): js.Promise[scala.Double] = js.native
   def writeFile(filename: java.lang.String, data: js.Any): js.Promise[scala.Unit] = js.native
   def writeFile(filename: java.lang.String, data: js.Any, encoding: java.lang.String): js.Promise[scala.Unit] = js.native
-  def writeFile(
-    filename: java.lang.String,
-    data: js.Any,
-    options: fsDashExtraDashPLib.fsDashExtraDashPMod.OpenOptions
-  ): js.Promise[scala.Unit] = js.native
+  def writeFile(filename: java.lang.String, data: js.Any, options: OpenOptions): js.Promise[scala.Unit] = js.native
   def writeFileSync(filename: java.lang.String, data: js.Any): scala.Unit = js.native
   def writeFileSync(filename: java.lang.String, data: js.Any, encoding: java.lang.String): scala.Unit = js.native
-  def writeFileSync(
-    filename: java.lang.String,
-    data: js.Any,
-    option: fsDashExtraDashPLib.fsDashExtraDashPMod.OpenOptions
-  ): scala.Unit = js.native
+  def writeFileSync(filename: java.lang.String, data: js.Any, option: OpenOptions): scala.Unit = js.native
   def writeJson(file: java.lang.String, `object`: js.Any): js.Promise[scala.Unit] = js.native
-  def writeJson(
-    file: java.lang.String,
-    `object`: js.Any,
-    options: fsDashExtraDashPLib.fsDashExtraDashPMod.JsonOptions
-  ): js.Promise[scala.Unit] = js.native
+  def writeJson(file: java.lang.String, `object`: js.Any, options: JsonOptions): js.Promise[scala.Unit] = js.native
   def writeSync(
     fd: scala.Double,
     buffer: nodeLib.Buffer,

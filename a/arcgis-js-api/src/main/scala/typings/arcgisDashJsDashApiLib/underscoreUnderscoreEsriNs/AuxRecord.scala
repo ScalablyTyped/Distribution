@@ -32,12 +32,12 @@ object AuxRecord {
   def apply(
     constructor: js.Function,
     displayProperty: js.Any,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     id: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     recordvalues: AuxRecordValue
   ): AuxRecord = {
-    val __obj = js.Dynamic.literal(constructor = constructor, displayProperty = displayProperty, hasOwnProperty = hasOwnProperty, id = id, propertyIsEnumerable = propertyIsEnumerable, recordvalues = recordvalues)
+    val __obj = js.Dynamic.literal(constructor = constructor, displayProperty = displayProperty, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), recordvalues = recordvalues)
   
     __obj.asInstanceOf[AuxRecord]
   }

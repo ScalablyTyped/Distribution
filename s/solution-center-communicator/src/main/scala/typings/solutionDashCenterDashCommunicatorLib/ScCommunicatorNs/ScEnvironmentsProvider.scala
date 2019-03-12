@@ -40,12 +40,12 @@ trait ScEnvironmentsProvider extends js.Object {
 object ScEnvironmentsProvider {
   @scala.inline
   def apply(
-    $get: js.Function0[js.Any],
-    getCurrentEnvironment: js.Function0[Environment],
-    getSpecificEnvironment: js.Function1[java.lang.String, Environment],
-    setCurrentEnvironment: js.Function1[js.Any, Environment]
+    $get: () => js.Any,
+    getCurrentEnvironment: () => Environment,
+    getSpecificEnvironment: java.lang.String => Environment,
+    setCurrentEnvironment: js.Any => Environment
   ): ScEnvironmentsProvider = {
-    val __obj = js.Dynamic.literal($get = $get, getCurrentEnvironment = getCurrentEnvironment, getSpecificEnvironment = getSpecificEnvironment, setCurrentEnvironment = setCurrentEnvironment)
+    val __obj = js.Dynamic.literal($get = js.Any.fromFunction0($get), getCurrentEnvironment = js.Any.fromFunction0(getCurrentEnvironment), getSpecificEnvironment = js.Any.fromFunction1(getSpecificEnvironment), setCurrentEnvironment = js.Any.fromFunction1(setCurrentEnvironment))
   
     __obj.asInstanceOf[ScEnvironmentsProvider]
   }

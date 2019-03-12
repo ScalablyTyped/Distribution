@@ -11,8 +11,8 @@ trait DescableQuery[T] extends js.Object {
 
 object DescableQuery {
   @scala.inline
-  def apply[T](desc: js.Function0[DescQuery[T]]): DescableQuery[T] = {
-    val __obj = js.Dynamic.literal(desc = desc)
+  def apply[T](desc: () => DescQuery[T]): DescableQuery[T] = {
+    val __obj = js.Dynamic.literal(desc = js.Any.fromFunction0(desc))
   
     __obj.asInstanceOf[DescableQuery[T]]
   }

@@ -19,12 +19,12 @@ object Island {
   def apply(
     bodies: js.Array[Body],
     equations: js.Array[Equation],
-    getBodies: js.Function1[js.Array[_], js.Array[Body]],
-    reset: js.Function0[scala.Unit],
-    sleep: js.Function0[scala.Boolean],
-    wantsToSleep: js.Function0[scala.Boolean]
+    getBodies: js.Array[_] => js.Array[Body],
+    reset: () => scala.Unit,
+    sleep: () => scala.Boolean,
+    wantsToSleep: () => scala.Boolean
   ): Island = {
-    val __obj = js.Dynamic.literal(bodies = bodies, equations = equations, getBodies = getBodies, reset = reset, sleep = sleep, wantsToSleep = wantsToSleep)
+    val __obj = js.Dynamic.literal(bodies = bodies, equations = equations, getBodies = js.Any.fromFunction1(getBodies), reset = js.Any.fromFunction0(reset), sleep = js.Any.fromFunction0(sleep), wantsToSleep = js.Any.fromFunction0(wantsToSleep))
   
     __obj.asInstanceOf[Island]
   }

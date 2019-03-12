@@ -30,11 +30,11 @@ trait XContainerApproveListener extends js.Object {
 object XContainerApproveListener {
   @scala.inline
   def apply(
-    approveInsertElement: js.Function1[ContainerEvent, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XVeto],
-    approveRemoveElement: js.Function1[ContainerEvent, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XVeto],
-    approveReplaceElement: js.Function1[ContainerEvent, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XVeto]
+    approveInsertElement: ContainerEvent => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XVeto,
+    approveRemoveElement: ContainerEvent => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XVeto,
+    approveReplaceElement: ContainerEvent => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XVeto
   ): XContainerApproveListener = {
-    val __obj = js.Dynamic.literal(approveInsertElement = approveInsertElement, approveRemoveElement = approveRemoveElement, approveReplaceElement = approveReplaceElement)
+    val __obj = js.Dynamic.literal(approveInsertElement = js.Any.fromFunction1(approveInsertElement), approveRemoveElement = js.Any.fromFunction1(approveRemoveElement), approveReplaceElement = js.Any.fromFunction1(approveReplaceElement))
   
     __obj.asInstanceOf[XContainerApproveListener]
   }

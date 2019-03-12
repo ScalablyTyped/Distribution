@@ -32,7 +32,7 @@ object ^ extends js.Object {
     /** Height of the images. Note that all three images need to have the same dimensions. */
   height: scala.Double,
     /** Options. */
-  options: pixelmatchLib.pixelmatchMod.Options
+  options: Options
   ): scala.Double = js.native
 }
 

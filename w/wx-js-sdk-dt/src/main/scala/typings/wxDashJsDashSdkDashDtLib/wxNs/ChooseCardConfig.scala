@@ -48,22 +48,22 @@ object ChooseCardConfig {
     nonceStr: java.lang.String,
     signType: java.lang.String,
     timestamp: scala.Double,
-    cancel: js.Function0[scala.Unit] = null,
+    cancel: () => scala.Unit = null,
     cardId: java.lang.String = null,
     cardType: java.lang.String = null,
-    complete: js.Function1[/* res */ js.UndefOr[js.Any], scala.Unit] = null,
-    fail: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit] = null,
+    complete: /* res */ js.UndefOr[js.Any] => scala.Unit = null,
+    fail: /* error */ js.UndefOr[js.Any] => scala.Unit = null,
     shopId: java.lang.String = null,
-    success: js.Function1[/* res */ wxDashJsDashSdkDashDtLib.Anon_CardList, scala.Unit] = null
+    success: /* res */ wxDashJsDashSdkDashDtLib.Anon_CardList => scala.Unit = null
   ): ChooseCardConfig = {
     val __obj = js.Dynamic.literal(cardSign = cardSign, nonceStr = nonceStr, signType = signType, timestamp = timestamp)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
     if (cardId != null) __obj.updateDynamic("cardId")(cardId)
     if (cardType != null) __obj.updateDynamic("cardType")(cardType)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (shopId != null) __obj.updateDynamic("shopId")(shopId)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ChooseCardConfig]
   }
 }

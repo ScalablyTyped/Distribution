@@ -57,20 +57,9 @@ object InputFieldOptions {
     maxLength: scala.Int | scala.Double = null,
     minLength: scala.Int | scala.Double = null,
     style: CTerminal = null,
-    tokenHook: js.Function5[
-      /* token */ java.lang.String, 
-      /* isEndOfInput */ scala.Boolean, 
-      /* previousTokens */ js.Array[java.lang.String], 
-      /* term */ terminalDashKitLib.terminalMod.Terminal, 
-      /* config */ HookConfig, 
-      java.lang.String | CTerminal | scala.Null | scala.Unit
-    ] = null,
+    tokenHook: (/* token */ java.lang.String, /* isEndOfInput */ scala.Boolean, /* previousTokens */ js.Array[java.lang.String], /* term */ terminalDashKitLib.terminalMod.Terminal, /* config */ HookConfig) => java.lang.String | CTerminal | scala.Null | scala.Unit = null,
     tokenRegExp: stdLib.RegExp = null,
-    tokenResetHook: js.Function2[
-      /* term */ terminalDashKitLib.terminalMod.Terminal, 
-      /* config */ js.UndefOr[HookConfig], 
-      java.lang.String | CTerminal
-    ] = null
+    tokenResetHook: (/* term */ terminalDashKitLib.terminalMod.Terminal, /* config */ js.UndefOr[HookConfig]) => java.lang.String | CTerminal = null
   ): InputFieldOptions = {
     val __obj = js.Dynamic.literal()
     if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
@@ -87,9 +76,9 @@ object InputFieldOptions {
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
-    if (tokenHook != null) __obj.updateDynamic("tokenHook")(tokenHook)
+    if (tokenHook != null) __obj.updateDynamic("tokenHook")(js.Any.fromFunction5(tokenHook))
     if (tokenRegExp != null) __obj.updateDynamic("tokenRegExp")(tokenRegExp)
-    if (tokenResetHook != null) __obj.updateDynamic("tokenResetHook")(tokenResetHook)
+    if (tokenResetHook != null) __obj.updateDynamic("tokenResetHook")(js.Any.fromFunction2(tokenResetHook))
     __obj.asInstanceOf[InputFieldOptions]
   }
 }

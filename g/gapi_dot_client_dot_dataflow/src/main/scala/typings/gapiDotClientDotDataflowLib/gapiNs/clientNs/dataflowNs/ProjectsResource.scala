@@ -19,12 +19,9 @@ object ProjectsResource {
     jobs: JobsResource,
     locations: LocationsResource,
     templates: TemplatesResource,
-    workerMessages: js.Function1[
-      gapiDotClientDotDataflowLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SendWorkerMessagesResponse]
-    ]
+    workerMessages: gapiDotClientDotDataflowLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[SendWorkerMessagesResponse]
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal(jobs = jobs, locations = locations, templates = templates, workerMessages = workerMessages)
+    val __obj = js.Dynamic.literal(jobs = jobs, locations = locations, templates = templates, workerMessages = js.Any.fromFunction1(workerMessages))
   
     __obj.asInstanceOf[ProjectsResource]
   }

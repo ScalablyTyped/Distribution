@@ -69,17 +69,17 @@ object WorkflowPathDisplayDetails {
   def apply(
     constructor: js.Function,
     destStepId: scala.Double,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     label: java.lang.String,
     labelColor: Color,
     labelX: scala.Double,
     labelY: scala.Double,
     lineColor: Color,
     pathObject: js.Any,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     sourceStepID: scala.Double
   ): WorkflowPathDisplayDetails = {
-    val __obj = js.Dynamic.literal(constructor = constructor, destStepId = destStepId, hasOwnProperty = hasOwnProperty, label = label, labelColor = labelColor, labelX = labelX, labelY = labelY, lineColor = lineColor, pathObject = pathObject, propertyIsEnumerable = propertyIsEnumerable, sourceStepID = sourceStepID)
+    val __obj = js.Dynamic.literal(constructor = constructor, destStepId = destStepId, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), label = label, labelColor = labelColor, labelX = labelX, labelY = labelY, lineColor = lineColor, pathObject = pathObject, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sourceStepID = sourceStepID)
   
     __obj.asInstanceOf[WorkflowPathDisplayDetails]
   }

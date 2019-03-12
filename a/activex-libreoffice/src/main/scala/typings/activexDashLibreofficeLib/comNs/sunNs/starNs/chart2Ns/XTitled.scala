@@ -20,13 +20,13 @@ object XTitled {
   @scala.inline
   def apply(
     TitleObject: XTitle,
-    acquire: js.Function0[scala.Unit],
-    getTitleObject: js.Function0[XTitle],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setTitleObject: js.Function1[XTitle, scala.Unit]
+    acquire: () => scala.Unit,
+    getTitleObject: () => XTitle,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setTitleObject: XTitle => scala.Unit
   ): XTitled = {
-    val __obj = js.Dynamic.literal(TitleObject = TitleObject, acquire = acquire, getTitleObject = getTitleObject, queryInterface = queryInterface, release = release, setTitleObject = setTitleObject)
+    val __obj = js.Dynamic.literal(TitleObject = TitleObject, acquire = js.Any.fromFunction0(acquire), getTitleObject = js.Any.fromFunction0(getTitleObject), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setTitleObject = js.Any.fromFunction1(setTitleObject))
   
     __obj.asInstanceOf[XTitled]
   }

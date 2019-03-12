@@ -13,12 +13,8 @@ trait ITransportStateListener extends js.Object {
 
 object ITransportStateListener {
   @scala.inline
-  def apply(
-    onClose: js.Function0[scala.Unit],
-    onError: js.Function1[java.lang.String, scala.Unit],
-    onOpen: js.Function0[scala.Unit]
-  ): ITransportStateListener = {
-    val __obj = js.Dynamic.literal(onClose = onClose, onError = onError, onOpen = onOpen)
+  def apply(onClose: () => scala.Unit, onError: java.lang.String => scala.Unit, onOpen: () => scala.Unit): ITransportStateListener = {
+    val __obj = js.Dynamic.literal(onClose = js.Any.fromFunction0(onClose), onError = js.Any.fromFunction1(onError), onOpen = js.Any.fromFunction0(onOpen))
   
     __obj.asInstanceOf[ITransportStateListener]
   }

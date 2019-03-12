@@ -102,15 +102,15 @@ object Model {
     activePrefixIcon: java.lang.String = null,
     activeSuffixIcon: java.lang.String = null,
     activeText: java.lang.String = null,
-    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
-    click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
+    change: /* e */ ChangeEventArgs => scala.Unit = null,
+    click: /* e */ ClickEventArgs => scala.Unit = null,
     contentType: ejDotWebDotAllLib.ejNs.ContentType | java.lang.String = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
     defaultPrefixIcon: java.lang.String = null,
     defaultSuffixIcon: java.lang.String = null,
     defaultText: java.lang.String = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -128,15 +128,15 @@ object Model {
     if (activePrefixIcon != null) __obj.updateDynamic("activePrefixIcon")(activePrefixIcon)
     if (activeSuffixIcon != null) __obj.updateDynamic("activeSuffixIcon")(activeSuffixIcon)
     if (activeText != null) __obj.updateDynamic("activeText")(activeText)
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (click != null) __obj.updateDynamic("click")(click)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (defaultPrefixIcon != null) __obj.updateDynamic("defaultPrefixIcon")(defaultPrefixIcon)
     if (defaultSuffixIcon != null) __obj.updateDynamic("defaultSuffixIcon")(defaultSuffixIcon)
     if (defaultText != null) __obj.updateDynamic("defaultText")(defaultText)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)

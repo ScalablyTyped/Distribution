@@ -12,24 +12,26 @@ object ErrorsNs extends js.Object {
   class BadRequestError () extends EpilogueError {
     def this(message: java.lang.String) = this()
     def this(message: java.lang.String, errors: js.Array[java.lang.String]) = this()
-    def this(message: java.lang.String, errors: js.Array[java.lang.String], cause: nodeLib.Error) = this()
+    def this(message: java.lang.String, errors: js.Array[java.lang.String], cause: stdLib.Error) = this()
   }
   
   @js.native
   class EpilogueError protected ()
-    extends nodeLib.Error {
+    extends stdLib.Error {
     def this(status: EpilogueError) = this()
     def this(status: scala.Double) = this()
     def this(status: EpilogueError, message: java.lang.String) = this()
     def this(status: scala.Double, message: java.lang.String) = this()
     def this(status: EpilogueError, message: java.lang.String, errors: js.Array[java.lang.String]) = this()
     def this(status: scala.Double, message: java.lang.String, errors: js.Array[java.lang.String]) = this()
-    def this(status: EpilogueError, message: java.lang.String, errors: js.Array[java.lang.String], cause: nodeLib.Error) = this()
-    def this(status: scala.Double, message: java.lang.String, errors: js.Array[java.lang.String], cause: nodeLib.Error) = this()
-    var cause: nodeLib.Error = js.native
+    def this(status: EpilogueError, message: java.lang.String, errors: js.Array[java.lang.String], cause: stdLib.Error) = this()
+    def this(status: scala.Double, message: java.lang.String, errors: js.Array[java.lang.String], cause: stdLib.Error) = this()
+    var cause: stdLib.Error = js.native
     var errors: js.Array[java.lang.String] = js.native
-    var message: java.lang.String = js.native
-    var name: java.lang.String = js.native
+    /* CompleteClass */
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
     var status: scala.Double | EpilogueError = js.native
   }
   
@@ -37,19 +39,24 @@ object ErrorsNs extends js.Object {
   class ForbiddenError () extends EpilogueError {
     def this(message: java.lang.String) = this()
     def this(message: java.lang.String, errors: js.Array[java.lang.String]) = this()
-    def this(message: java.lang.String, errors: js.Array[java.lang.String], cause: nodeLib.Error) = this()
+    def this(message: java.lang.String, errors: js.Array[java.lang.String], cause: stdLib.Error) = this()
   }
   
   @js.native
   class NotFoundError () extends EpilogueError {
     def this(message: java.lang.String) = this()
     def this(message: java.lang.String, errors: js.Array[java.lang.String]) = this()
-    def this(message: java.lang.String, errors: js.Array[java.lang.String], cause: nodeLib.Error) = this()
+    def this(message: java.lang.String, errors: js.Array[java.lang.String], cause: stdLib.Error) = this()
   }
   
   @js.native
   class RequestCompleted ()
-    extends nodeLib.Error
+    extends stdLib.Error {
+    /* CompleteClass */
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
+  }
   
 }
 

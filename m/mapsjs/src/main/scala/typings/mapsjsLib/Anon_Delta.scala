@@ -19,16 +19,16 @@ object Anon_Delta {
   def apply(
     dragEnabled: scala.Boolean,
     useElementInsteadOfNewGestureOverlay: scala.Boolean,
-    downAction: js.Function1[/* downPoint */ mapsjsLib.mapsjsMod.point, _] = null,
-    moveAction: js.Function1[/* movePoint */ mapsjsLib.mapsjsMod.point, scala.Unit] = null,
-    upAction: js.Function1[/* upPoint */ mapsjsLib.mapsjsMod.point, scala.Unit] = null,
-    wheelAction: js.Function1[/* delta */ scala.Double, scala.Unit] = null
+    downAction: /* downPoint */ mapsjsLib.mapsjsMod.point => _ = null,
+    moveAction: /* movePoint */ mapsjsLib.mapsjsMod.point => scala.Unit = null,
+    upAction: /* upPoint */ mapsjsLib.mapsjsMod.point => scala.Unit = null,
+    wheelAction: /* delta */ scala.Double => scala.Unit = null
   ): Anon_Delta = {
     val __obj = js.Dynamic.literal(dragEnabled = dragEnabled, useElementInsteadOfNewGestureOverlay = useElementInsteadOfNewGestureOverlay)
-    if (downAction != null) __obj.updateDynamic("downAction")(downAction)
-    if (moveAction != null) __obj.updateDynamic("moveAction")(moveAction)
-    if (upAction != null) __obj.updateDynamic("upAction")(upAction)
-    if (wheelAction != null) __obj.updateDynamic("wheelAction")(wheelAction)
+    if (downAction != null) __obj.updateDynamic("downAction")(js.Any.fromFunction1(downAction))
+    if (moveAction != null) __obj.updateDynamic("moveAction")(js.Any.fromFunction1(moveAction))
+    if (upAction != null) __obj.updateDynamic("upAction")(js.Any.fromFunction1(upAction))
+    if (wheelAction != null) __obj.updateDynamic("wheelAction")(js.Any.fromFunction1(wheelAction))
     __obj.asInstanceOf[Anon_Delta]
   }
 }

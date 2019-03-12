@@ -5,24 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StubbedContentSetting extends js.Object {
-  var clear: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub
-  var get: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub
-  var getResourceIdentifiers: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub
-  var set: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub
-}
-
-object StubbedContentSetting {
-  @scala.inline
-  def apply(
-    clear: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub,
-    get: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub,
-    getResourceIdentifiers: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub,
-    set: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub
-  ): StubbedContentSetting = {
-    val __obj = js.Dynamic.literal(clear = clear, get = get, getResourceIdentifiers = getResourceIdentifiers, set = set)
-  
-    __obj.asInstanceOf[StubbedContentSetting]
-  }
+  @JSName("clear")
+  var clear_Original: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
+  @JSName("getResourceIdentifiers")
+  var getResourceIdentifiers_Original: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
+  @JSName("get")
+  var get_Original: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
+  @JSName("set")
+  var set_Original: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
+  // Methods
+  def clear(args: js.Any*): js.Any = js.native
+  // Methods
+  def get(args: js.Any*): js.Any = js.native
+  // Methods
+  def getResourceIdentifiers(args: js.Any*): js.Any = js.native
+  // Methods
+  def set(args: js.Any*): js.Any = js.native
 }
 

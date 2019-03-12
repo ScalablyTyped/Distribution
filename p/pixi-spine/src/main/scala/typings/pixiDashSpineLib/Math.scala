@@ -11,8 +11,8 @@ trait Math extends js.Object {
 
 object Math {
   @scala.inline
-  def apply(fround: js.Function1[scala.Double, scala.Double]): Math = {
-    val __obj = js.Dynamic.literal(fround = fround)
+  def apply(fround: scala.Double => scala.Double): Math = {
+    val __obj = js.Dynamic.literal(fround = js.Any.fromFunction1(fround))
   
     __obj.asInstanceOf[Math]
   }

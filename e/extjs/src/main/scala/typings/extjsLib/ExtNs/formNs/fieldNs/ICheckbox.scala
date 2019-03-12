@@ -82,7 +82,7 @@ object ICheckbox {
     afterBoxLabelTpl: js.Any = null,
     beforeBoxLabelTextTpl: js.Any = null,
     beforeBoxLabelTpl: js.Any = null,
-    beforeDestroy: js.Function0[scala.Unit] = null,
+    beforeDestroy: () => scala.Unit = null,
     boxLabel: java.lang.String = null,
     boxLabelAlign: java.lang.String = null,
     boxLabelAttrTpl: js.Any = null,
@@ -94,26 +94,26 @@ object ICheckbox {
     componentLayout: js.Any = null,
     fieldCls: java.lang.String = null,
     focusCls: java.lang.String = null,
-    getRawValue: js.Function0[scala.Boolean] = null,
-    getSubTplData: js.Function0[_] = null,
-    getSubmitValue: js.Function0[_] = null,
-    getValue: js.Function0[scala.Boolean] = null,
+    getRawValue: () => scala.Boolean = null,
+    getSubTplData: () => _ = null,
+    getSubmitValue: () => _ = null,
+    getValue: () => scala.Boolean = null,
     handler: js.Any = null,
-    initComponent: js.Function0[scala.Unit] = null,
-    initEvents: js.Function0[scala.Unit] = null,
-    initValue: js.Function0[scala.Unit] = null,
+    initComponent: () => scala.Unit = null,
+    initEvents: () => scala.Unit = null,
+    initValue: () => scala.Unit = null,
     inputType: java.lang.String = null,
     inputValue: java.lang.String = null,
-    onEnable: js.Function0[scala.Unit] = null,
+    onEnable: () => scala.Unit = null,
     originalValue: js.Any = null,
-    resetOriginalValue: js.Function1[/* fromBoxInGroup */ js.UndefOr[js.Any], scala.Unit] = null,
+    resetOriginalValue: /* fromBoxInGroup */ js.UndefOr[js.Any] => scala.Unit = null,
     scope: js.Any = null,
-    setBoxLabel: js.Function1[/* boxLabel */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setRawValue: js.Function1[/* value */ js.UndefOr[js.Any], scala.Boolean] = null,
-    setReadOnly: js.Function1[/* readOnly */ js.UndefOr[js.Any], scala.Unit] = null,
-    setValue: js.Function1[/* checked */ js.UndefOr[js.Any], ICheckbox] = null,
+    setBoxLabel: /* boxLabel */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setRawValue: /* value */ js.UndefOr[js.Any] => scala.Boolean = null,
+    setReadOnly: /* readOnly */ js.UndefOr[js.Any] => scala.Unit = null,
+    setValue: /* checked */ js.UndefOr[js.Any] => ICheckbox = null,
     uncheckedValue: java.lang.String = null,
-    valueToRaw: js.Function1[/* value */ js.UndefOr[js.Any], _] = null
+    valueToRaw: /* value */ js.UndefOr[js.Any] => _ = null
   ): ICheckbox = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IBase)
@@ -121,7 +121,7 @@ object ICheckbox {
     if (afterBoxLabelTpl != null) __obj.updateDynamic("afterBoxLabelTpl")(afterBoxLabelTpl)
     if (beforeBoxLabelTextTpl != null) __obj.updateDynamic("beforeBoxLabelTextTpl")(beforeBoxLabelTextTpl)
     if (beforeBoxLabelTpl != null) __obj.updateDynamic("beforeBoxLabelTpl")(beforeBoxLabelTpl)
-    if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(beforeDestroy)
+    if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(js.Any.fromFunction0(beforeDestroy))
     if (boxLabel != null) __obj.updateDynamic("boxLabel")(boxLabel)
     if (boxLabelAlign != null) __obj.updateDynamic("boxLabelAlign")(boxLabelAlign)
     if (boxLabelAttrTpl != null) __obj.updateDynamic("boxLabelAttrTpl")(boxLabelAttrTpl)
@@ -133,26 +133,26 @@ object ICheckbox {
     if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
     if (fieldCls != null) __obj.updateDynamic("fieldCls")(fieldCls)
     if (focusCls != null) __obj.updateDynamic("focusCls")(focusCls)
-    if (getRawValue != null) __obj.updateDynamic("getRawValue")(getRawValue)
-    if (getSubTplData != null) __obj.updateDynamic("getSubTplData")(getSubTplData)
-    if (getSubmitValue != null) __obj.updateDynamic("getSubmitValue")(getSubmitValue)
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
+    if (getRawValue != null) __obj.updateDynamic("getRawValue")(js.Any.fromFunction0(getRawValue))
+    if (getSubTplData != null) __obj.updateDynamic("getSubTplData")(js.Any.fromFunction0(getSubTplData))
+    if (getSubmitValue != null) __obj.updateDynamic("getSubmitValue")(js.Any.fromFunction0(getSubmitValue))
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
     if (handler != null) __obj.updateDynamic("handler")(handler)
-    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
-    if (initEvents != null) __obj.updateDynamic("initEvents")(initEvents)
-    if (initValue != null) __obj.updateDynamic("initValue")(initValue)
+    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
+    if (initEvents != null) __obj.updateDynamic("initEvents")(js.Any.fromFunction0(initEvents))
+    if (initValue != null) __obj.updateDynamic("initValue")(js.Any.fromFunction0(initValue))
     if (inputType != null) __obj.updateDynamic("inputType")(inputType)
     if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue)
-    if (onEnable != null) __obj.updateDynamic("onEnable")(onEnable)
+    if (onEnable != null) __obj.updateDynamic("onEnable")(js.Any.fromFunction0(onEnable))
     if (originalValue != null) __obj.updateDynamic("originalValue")(originalValue)
-    if (resetOriginalValue != null) __obj.updateDynamic("resetOriginalValue")(resetOriginalValue)
+    if (resetOriginalValue != null) __obj.updateDynamic("resetOriginalValue")(js.Any.fromFunction1(resetOriginalValue))
     if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (setBoxLabel != null) __obj.updateDynamic("setBoxLabel")(setBoxLabel)
-    if (setRawValue != null) __obj.updateDynamic("setRawValue")(setRawValue)
-    if (setReadOnly != null) __obj.updateDynamic("setReadOnly")(setReadOnly)
-    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
+    if (setBoxLabel != null) __obj.updateDynamic("setBoxLabel")(js.Any.fromFunction1(setBoxLabel))
+    if (setRawValue != null) __obj.updateDynamic("setRawValue")(js.Any.fromFunction1(setRawValue))
+    if (setReadOnly != null) __obj.updateDynamic("setReadOnly")(js.Any.fromFunction1(setReadOnly))
+    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
     if (uncheckedValue != null) __obj.updateDynamic("uncheckedValue")(uncheckedValue)
-    if (valueToRaw != null) __obj.updateDynamic("valueToRaw")(valueToRaw)
+    if (valueToRaw != null) __obj.updateDynamic("valueToRaw")(js.Any.fromFunction1(valueToRaw))
     __obj.asInstanceOf[ICheckbox]
   }
 }

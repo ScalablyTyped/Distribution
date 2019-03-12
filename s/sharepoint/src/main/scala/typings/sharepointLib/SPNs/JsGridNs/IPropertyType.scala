@@ -21,18 +21,10 @@ trait IPropertyType extends js.Object {
 object IPropertyType {
   @scala.inline
   def apply(
-    BeginValidateNormalizeConvert: js.Function6[
-      scala.Double, 
-      java.lang.String, 
-      js.Any, 
-      scala.Boolean, 
-      js.Function1[/* args */ sharepointLib.Anon_DataValue, scala.Unit], 
-      js.Any, 
-      scala.Unit
-    ],
+    BeginValidateNormalizeConvert: (scala.Double, java.lang.String, js.Any, scala.Boolean, js.Function1[/* args */ sharepointLib.Anon_DataValue, scala.Unit], js.Any) => scala.Unit,
     ID: java.lang.String
   ): IPropertyType = {
-    val __obj = js.Dynamic.literal(BeginValidateNormalizeConvert = BeginValidateNormalizeConvert, ID = ID)
+    val __obj = js.Dynamic.literal(BeginValidateNormalizeConvert = js.Any.fromFunction6(BeginValidateNormalizeConvert), ID = ID)
   
     __obj.asInstanceOf[IPropertyType]
   }

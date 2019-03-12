@@ -12,7 +12,7 @@ object KinesisNs extends js.Object {
     /**
       * The name of the stream.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
     /**
       * A set of up to 10 key-value pairs to use to create the tags.
       */
@@ -30,7 +30,7 @@ object KinesisNs extends js.Object {
     /**
       * When you register a consumer, Kinesis Data Streams generates an ARN for it. You need this ARN to be able to call SubscribeToShard. If you delete a consumer and then create a new one with the same name, it won't have the same ARN. That's because consumer ARNs contain the creation timestamp. This is important to keep in mind if you have IAM policies that reference consumer ARNs.
       */
-    var ConsumerARN: ConsumerARN
+    var ConsumerARN: awsDashSdkLib.clientsKinesisMod.KinesisNs.ConsumerARN
     /**
       * 
       */
@@ -38,18 +38,18 @@ object KinesisNs extends js.Object {
     /**
       * The name of the consumer is something you choose when you register the consumer.
       */
-    var ConsumerName: ConsumerName
+    var ConsumerName: awsDashSdkLib.clientsKinesisMod.KinesisNs.ConsumerName
     /**
       * A consumer can't read data while in the CREATING or DELETING states.
       */
-    var ConsumerStatus: ConsumerStatus
+    var ConsumerStatus: awsDashSdkLib.clientsKinesisMod.KinesisNs.ConsumerStatus
   }
   
   trait ConsumerDescription extends js.Object {
     /**
       * When you register a consumer, Kinesis Data Streams generates an ARN for it. You need this ARN to be able to call SubscribeToShard. If you delete a consumer and then create a new one with the same name, it won't have the same ARN. That's because consumer ARNs contain the creation timestamp. This is important to keep in mind if you have IAM policies that reference consumer ARNs.
       */
-    var ConsumerARN: ConsumerARN
+    var ConsumerARN: awsDashSdkLib.clientsKinesisMod.KinesisNs.ConsumerARN
     /**
       * 
       */
@@ -57,15 +57,15 @@ object KinesisNs extends js.Object {
     /**
       * The name of the consumer is something you choose when you register the consumer.
       */
-    var ConsumerName: ConsumerName
+    var ConsumerName: awsDashSdkLib.clientsKinesisMod.KinesisNs.ConsumerName
     /**
       * A consumer can't read data while in the CREATING or DELETING states.
       */
-    var ConsumerStatus: ConsumerStatus
+    var ConsumerStatus: awsDashSdkLib.clientsKinesisMod.KinesisNs.ConsumerStatus
     /**
       * The ARN of the stream with which you registered the consumer.
       */
-    var StreamARN: StreamARN
+    var StreamARN: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamARN
   }
   
   trait CreateStreamInput extends js.Object {
@@ -76,18 +76,18 @@ object KinesisNs extends js.Object {
     /**
       * A name to identify the stream. The stream name is scoped to the AWS account used by the application that creates the stream. It is also scoped by AWS Region. That is, two streams in two different AWS accounts can have the same name. Two streams in the same AWS account but in two different Regions can also have the same name.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
   }
   
   trait DecreaseStreamRetentionPeriodInput extends js.Object {
     /**
       * The new retention period of the stream, in hours. Must be less than the current retention period.
       */
-    var RetentionPeriodHours: RetentionPeriodHours
+    var RetentionPeriodHours: awsDashSdkLib.clientsKinesisMod.KinesisNs.RetentionPeriodHours
     /**
       * The name of the stream to modify.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
   }
   
   trait DeleteStreamInput extends js.Object {
@@ -98,7 +98,7 @@ object KinesisNs extends js.Object {
     /**
       * The name of the stream to delete.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
   }
   
   trait DeregisterStreamConsumerInput extends js.Object {
@@ -148,7 +148,7 @@ object KinesisNs extends js.Object {
     /**
       * An object that represents the details of the consumer.
       */
-    var ConsumerDescription: ConsumerDescription
+    var ConsumerDescription: awsDashSdkLib.clientsKinesisMod.KinesisNs.ConsumerDescription
   }
   
   trait DescribeStreamInput extends js.Object {
@@ -163,28 +163,28 @@ object KinesisNs extends js.Object {
     /**
       * The name of the stream to describe.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
   }
   
   trait DescribeStreamOutput extends js.Object {
     /**
       * The current status of the stream, the stream Amazon Resource Name (ARN), an array of shard objects that comprise the stream, and whether there are more shards available.
       */
-    var StreamDescription: StreamDescription
+    var StreamDescription: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamDescription
   }
   
   trait DescribeStreamSummaryInput extends js.Object {
     /**
       * The name of the stream to describe.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
   }
   
   trait DescribeStreamSummaryOutput extends js.Object {
     /**
       * A StreamDescriptionSummary containing information about the stream.
       */
-    var StreamDescriptionSummary: StreamDescriptionSummary
+    var StreamDescriptionSummary: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamDescriptionSummary
   }
   
   trait DisableEnhancedMonitoringInput extends js.Object {
@@ -195,7 +195,7 @@ object KinesisNs extends js.Object {
     /**
       * The name of the Kinesis data stream for which to disable enhanced monitoring.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
   }
   
   trait EnableEnhancedMonitoringInput extends js.Object {
@@ -206,7 +206,7 @@ object KinesisNs extends js.Object {
     /**
       * The name of the stream for which to enable enhanced monitoring.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
   }
   
   trait EnhancedMetrics extends js.Object {
@@ -239,7 +239,7 @@ object KinesisNs extends js.Object {
     /**
       * The position in the shard from which you want to start sequentially reading data records. A shard iterator specifies this position using the sequence number of a data record in the shard.
       */
-    var ShardIterator: ShardIterator
+    var ShardIterator: awsDashSdkLib.clientsKinesisMod.KinesisNs.ShardIterator
   }
   
   trait GetRecordsOutput extends js.Object {
@@ -261,11 +261,11 @@ object KinesisNs extends js.Object {
     /**
       * The shard ID of the Kinesis Data Streams shard to get the iterator for.
       */
-    var ShardId: ShardId
+    var ShardId: awsDashSdkLib.clientsKinesisMod.KinesisNs.ShardId
     /**
       * Determines how the shard iterator is used to start reading data records from the shard. The following are the valid Amazon Kinesis shard iterator types:   AT_SEQUENCE_NUMBER - Start reading from the position denoted by a specific sequence number, provided in the value StartingSequenceNumber.   AFTER_SEQUENCE_NUMBER - Start reading right after the position denoted by a specific sequence number, provided in the value StartingSequenceNumber.   AT_TIMESTAMP - Start reading from the position denoted by a specific time stamp, provided in the value Timestamp.   TRIM_HORIZON - Start reading at the last untrimmed record in the shard in the system, which is the oldest data record in the shard.   LATEST - Start reading just after the most recent record in the shard, so that you always read the most recent data in the shard.  
       */
-    var ShardIteratorType: ShardIteratorType
+    var ShardIteratorType: awsDashSdkLib.clientsKinesisMod.KinesisNs.ShardIteratorType
     /**
       * The sequence number of the data record in the shard from which to start reading. Used with shard iterator type AT_SEQUENCE_NUMBER and AFTER_SEQUENCE_NUMBER.
       */
@@ -273,7 +273,7 @@ object KinesisNs extends js.Object {
     /**
       * The name of the Amazon Kinesis data stream.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
     /**
       * The time stamp of the data record from which to start reading. Used with shard iterator type AT_TIMESTAMP. A time stamp is the Unix epoch date with precision in milliseconds. For example, 2016-04-04T19:58:46.480-00:00 or 1459799926.480. If a record with this exact time stamp does not exist, the iterator returned is for the next (later) record. If the time stamp is older than the current trim horizon, the iterator returned is for the oldest untrimmed data record (TRIM_HORIZON).
       */
@@ -302,11 +302,11 @@ object KinesisNs extends js.Object {
     /**
       * The new retention period of the stream, in hours. Must be more than the current retention period.
       */
-    var RetentionPeriodHours: RetentionPeriodHours
+    var RetentionPeriodHours: awsDashSdkLib.clientsKinesisMod.KinesisNs.RetentionPeriodHours
     /**
       * The name of the stream to modify.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
   }
   
   trait ListShardsInput extends js.Object {
@@ -355,7 +355,7 @@ object KinesisNs extends js.Object {
     /**
       * The ARN of the Kinesis data stream for which you want to list the registered consumers. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
       */
-    var StreamARN: StreamARN
+    var StreamARN: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamARN
     /**
       * Specify this input parameter to distinguish data streams that have the same name. For example, if you create a data stream and then delete it, and you later create another data stream with the same name, you can use this input parameter to specify which of the two streams you want to list the consumers for.  You can't specify this parameter if you specify the NextToken parameter. 
       */
@@ -407,7 +407,7 @@ object KinesisNs extends js.Object {
     /**
       * The name of the stream.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
   }
   
   trait ListTagsForStreamOutput extends js.Object {
@@ -433,14 +433,14 @@ object KinesisNs extends js.Object {
     /**
       * The name of the stream for the merge.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
   }
   
   trait PutRecordInput extends js.Object {
     /**
       * The data blob to put into the record, which is base64-encoded when the blob is serialized. When the data blob (the payload before base64-encoding) is added to the partition key size, the total size must not exceed the maximum record size (1 MB).
       */
-    var Data: Data
+    var Data: awsDashSdkLib.clientsKinesisMod.KinesisNs.Data
     /**
       * The hash value used to explicitly determine the shard the data record is assigned to by overriding the partition key hash.
       */
@@ -448,7 +448,7 @@ object KinesisNs extends js.Object {
     /**
       * Determines which shard in the stream the data record is assigned to. Partition keys are Unicode strings with a maximum length limit of 256 characters for each key. Amazon Kinesis Data Streams uses the partition key as input to a hash function that maps the partition key and associated data to a specific shard. Specifically, an MD5 hash function is used to map partition keys to 128-bit integer values and to map associated data records to shards. As a result of this hashing mechanism, all data records with the same partition key map to the same shard within the stream.
       */
-    var PartitionKey: PartitionKey
+    var PartitionKey: awsDashSdkLib.clientsKinesisMod.KinesisNs.PartitionKey
     /**
       * Guarantees strictly increasing sequence numbers, for puts from the same client and to the same partition key. Usage: set the SequenceNumberForOrdering of record n to the sequence number of record n-1 (as returned in the result when putting record n-1). If this parameter is not set, records are coarsely ordered based on arrival time.
       */
@@ -456,7 +456,7 @@ object KinesisNs extends js.Object {
     /**
       * The name of the stream to put the data record into.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
   }
   
   trait PutRecordOutput extends js.Object {
@@ -467,11 +467,11 @@ object KinesisNs extends js.Object {
     /**
       * The sequence number identifier that was assigned to the put data record. The sequence number for the record is unique across all records in the stream. A sequence number is the identifier associated with every record put into the stream.
       */
-    var SequenceNumber: SequenceNumber
+    var SequenceNumber: awsDashSdkLib.clientsKinesisMod.KinesisNs.SequenceNumber
     /**
       * The shard ID of the shard where the data record was placed.
       */
-    var ShardId: ShardId
+    var ShardId: awsDashSdkLib.clientsKinesisMod.KinesisNs.ShardId
   }
   
   trait PutRecordsInput extends js.Object {
@@ -482,7 +482,7 @@ object KinesisNs extends js.Object {
     /**
       * The stream name associated with the request.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
   }
   
   trait PutRecordsOutput extends js.Object {
@@ -504,7 +504,7 @@ object KinesisNs extends js.Object {
     /**
       * The data blob to put into the record, which is base64-encoded when the blob is serialized. When the data blob (the payload before base64-encoding) is added to the partition key size, the total size must not exceed the maximum record size (1 MB).
       */
-    var Data: Data
+    var Data: awsDashSdkLib.clientsKinesisMod.KinesisNs.Data
     /**
       * The hash value used to determine explicitly the shard that the data record is assigned to by overriding the partition key hash.
       */
@@ -512,7 +512,7 @@ object KinesisNs extends js.Object {
     /**
       * Determines which shard in the stream the data record is assigned to. Partition keys are Unicode strings with a maximum length limit of 256 characters for each key. Amazon Kinesis Data Streams uses the partition key as input to a hash function that maps the partition key and associated data to a specific shard. Specifically, an MD5 hash function is used to map partition keys to 128-bit integer values and to map associated data records to shards. As a result of this hashing mechanism, all data records with the same partition key map to the same shard within the stream.
       */
-    var PartitionKey: PartitionKey
+    var PartitionKey: awsDashSdkLib.clientsKinesisMod.KinesisNs.PartitionKey
   }
   
   trait PutRecordsResultEntry extends js.Object {
@@ -542,7 +542,7 @@ object KinesisNs extends js.Object {
     /**
       * The data blob. The data in the blob is both opaque and immutable to Kinesis Data Streams, which does not inspect, interpret, or change the data in the blob in any way. When the data blob (the payload before base64-encoding) is added to the partition key size, the total size must not exceed the maximum record size (1 MB).
       */
-    var Data: Data
+    var Data: awsDashSdkLib.clientsKinesisMod.KinesisNs.Data
     /**
       * The encryption type used on the record. This parameter can be one of the following values:    NONE: Do not encrypt the records in the stream.    KMS: Use server-side encryption on the records in the stream using a customer-managed AWS KMS key.  
       */
@@ -550,36 +550,36 @@ object KinesisNs extends js.Object {
     /**
       * Identifies which shard in the stream the data record is assigned to.
       */
-    var PartitionKey: PartitionKey
+    var PartitionKey: awsDashSdkLib.clientsKinesisMod.KinesisNs.PartitionKey
     /**
       * The unique identifier of the record within its shard.
       */
-    var SequenceNumber: SequenceNumber
+    var SequenceNumber: awsDashSdkLib.clientsKinesisMod.KinesisNs.SequenceNumber
   }
   
   trait RegisterStreamConsumerInput extends js.Object {
     /**
       * For a given Kinesis data stream, each consumer must have a unique name. However, consumer names don't have to be unique across data streams.
       */
-    var ConsumerName: ConsumerName
+    var ConsumerName: awsDashSdkLib.clientsKinesisMod.KinesisNs.ConsumerName
     /**
       * The ARN of the Kinesis data stream that you want to register the consumer with. For more info, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
       */
-    var StreamARN: StreamARN
+    var StreamARN: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamARN
   }
   
   trait RegisterStreamConsumerOutput extends js.Object {
     /**
       * An object that represents the details of the consumer you registered. When you register a consumer, it gets an ARN that is generated by Kinesis Data Streams.
       */
-    var Consumer: Consumer
+    var Consumer: awsDashSdkLib.clientsKinesisMod.KinesisNs.Consumer
   }
   
   trait RemoveTagsFromStreamInput extends js.Object {
     /**
       * The name of the stream.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
     /**
       * A list of tag keys. Each corresponding tag is removed from the stream.
       */
@@ -605,7 +605,7 @@ object KinesisNs extends js.Object {
     /**
       * The range of possible hash key values for the shard, which is a set of ordered contiguous positive integers.
       */
-    var HashKeyRange: HashKeyRange
+    var HashKeyRange: awsDashSdkLib.clientsKinesisMod.KinesisNs.HashKeyRange
     /**
       * The shard ID of the shard's parent.
       */
@@ -613,11 +613,11 @@ object KinesisNs extends js.Object {
     /**
       * The range of possible sequence numbers for the shard.
       */
-    var SequenceNumberRange: SequenceNumberRange
+    var SequenceNumberRange: awsDashSdkLib.clientsKinesisMod.KinesisNs.SequenceNumberRange
     /**
       * The unique identifier of the shard within the stream.
       */
-    var ShardId: ShardId
+    var ShardId: awsDashSdkLib.clientsKinesisMod.KinesisNs.ShardId
   }
   
   trait SplitShardInput extends js.Object {
@@ -632,37 +632,37 @@ object KinesisNs extends js.Object {
     /**
       * The name of the stream for the shard split.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
   }
   
   trait StartStreamEncryptionInput extends js.Object {
     /**
       * The encryption type to use. The only valid value is KMS.
       */
-    var EncryptionType: EncryptionType
+    var EncryptionType: awsDashSdkLib.clientsKinesisMod.KinesisNs.EncryptionType
     /**
       * The GUID for the customer-managed AWS KMS key to use for encryption. This value can be a globally unique identifier, a fully specified Amazon Resource Name (ARN) to either an alias or a key, or an alias name prefixed by "alias/".You can also use a master key owned by Kinesis Data Streams by specifying the alias aws/kinesis.   Key ARN example: arn:aws:kms:us-east-1:123456789012:key/12345678-1234-1234-1234-123456789012    Alias ARN example: arn:aws:kms:us-east-1:123456789012:alias/MyAliasName    Globally unique key ID example: 12345678-1234-1234-1234-123456789012    Alias name example: alias/MyAliasName    Master key owned by Kinesis Data Streams: alias/aws/kinesis   
       */
-    var KeyId: KeyId
+    var KeyId: awsDashSdkLib.clientsKinesisMod.KinesisNs.KeyId
     /**
       * The name of the stream for which to start encrypting records.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
   }
   
   trait StopStreamEncryptionInput extends js.Object {
     /**
       * The encryption type. The only valid value is KMS.
       */
-    var EncryptionType: EncryptionType
+    var EncryptionType: awsDashSdkLib.clientsKinesisMod.KinesisNs.EncryptionType
     /**
       * The GUID for the customer-managed AWS KMS key to use for encryption. This value can be a globally unique identifier, a fully specified Amazon Resource Name (ARN) to either an alias or a key, or an alias name prefixed by "alias/".You can also use a master key owned by Kinesis Data Streams by specifying the alias aws/kinesis.   Key ARN example: arn:aws:kms:us-east-1:123456789012:key/12345678-1234-1234-1234-123456789012    Alias ARN example: arn:aws:kms:us-east-1:123456789012:alias/MyAliasName    Globally unique key ID example: 12345678-1234-1234-1234-123456789012    Alias name example: alias/MyAliasName    Master key owned by Kinesis Data Streams: alias/aws/kinesis   
       */
-    var KeyId: KeyId
+    var KeyId: awsDashSdkLib.clientsKinesisMod.KinesisNs.KeyId
     /**
       * The name of the stream on which to stop encrypting records.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
   }
   
   trait StreamDescription extends js.Object {
@@ -685,7 +685,7 @@ object KinesisNs extends js.Object {
     /**
       * The current retention period, in hours.
       */
-    var RetentionPeriodHours: RetentionPeriodHours
+    var RetentionPeriodHours: awsDashSdkLib.clientsKinesisMod.KinesisNs.RetentionPeriodHours
     /**
       * The shards that comprise the stream.
       */
@@ -693,7 +693,7 @@ object KinesisNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) for the stream being described.
       */
-    var StreamARN: StreamARN
+    var StreamARN: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamARN
     /**
       * The approximate time that the stream was created.
       */
@@ -701,11 +701,11 @@ object KinesisNs extends js.Object {
     /**
       * The name of the stream being described.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
     /**
       * The current status of the stream being described. The stream status is one of the following states:    CREATING - The stream is being created. Kinesis Data Streams immediately returns and sets StreamStatus to CREATING.    DELETING - The stream is being deleted. The specified stream is in the DELETING state until Kinesis Data Streams completes the deletion.    ACTIVE - The stream exists and is ready for read and write operations or deletion. You should perform read and write operations only on an ACTIVE stream.    UPDATING - Shards in the stream are being merged or split. Read and write operations continue to work while the stream is in the UPDATING state.  
       */
-    var StreamStatus: StreamStatus
+    var StreamStatus: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamStatus
   }
   
   trait StreamDescriptionSummary extends js.Object {
@@ -736,7 +736,7 @@ object KinesisNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) for the stream being described.
       */
-    var StreamARN: StreamARN
+    var StreamARN: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamARN
     /**
       * The approximate time that the stream was created.
       */
@@ -744,11 +744,11 @@ object KinesisNs extends js.Object {
     /**
       * The name of the stream being described.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
     /**
       * The current status of the stream being described. The stream status is one of the following states:    CREATING - The stream is being created. Kinesis Data Streams immediately returns and sets StreamStatus to CREATING.    DELETING - The stream is being deleted. The specified stream is in the DELETING state until Kinesis Data Streams completes the deletion.    ACTIVE - The stream exists and is ready for read and write operations or deletion. You should perform read and write operations only on an ACTIVE stream.    UPDATING - Shards in the stream are being merged or split. Read and write operations continue to work while the stream is in the UPDATING state.  
       */
-    var StreamStatus: StreamStatus
+    var StreamStatus: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamStatus
   }
   
   trait Tag extends js.Object {
@@ -1365,11 +1365,11 @@ object KinesisNs extends js.Object {
     /**
       * The scaling type. Uniform scaling creates shards of equal size.
       */
-    var ScalingType: ScalingType
+    var ScalingType: awsDashSdkLib.clientsKinesisMod.KinesisNs.ScalingType
     /**
       * The name of the stream.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisMod.KinesisNs.StreamName
     /**
       * The new number of shards.
       */

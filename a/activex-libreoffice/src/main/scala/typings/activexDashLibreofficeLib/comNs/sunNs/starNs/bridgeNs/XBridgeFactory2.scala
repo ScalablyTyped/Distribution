@@ -16,24 +16,18 @@ trait XBridgeFactory2
 object XBridgeFactory2 {
   @scala.inline
   def apply(
-    ExistingBridges: activexDashInteropLib.SafeArray[XBridge],
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    createBridge: js.Function4[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.connectionNs.XConnection, 
-      XInstanceProvider, 
-      XBridge
-    ],
-    dispose: js.Function0[scala.Unit],
-    getBridge: js.Function1[java.lang.String, XBridge],
-    getExistingBridges: js.Function0[activexDashInteropLib.SafeArray[XBridge]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+    ExistingBridges: stdLib.SafeArray[XBridge],
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    createBridge: (java.lang.String, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.connectionNs.XConnection, XInstanceProvider) => XBridge,
+    dispose: () => scala.Unit,
+    getBridge: java.lang.String => XBridge,
+    getExistingBridges: () => stdLib.SafeArray[XBridge],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit
   ): XBridgeFactory2 = {
-    val __obj = js.Dynamic.literal(ExistingBridges = ExistingBridges, acquire = acquire, addEventListener = addEventListener, createBridge = createBridge, dispose = dispose, getBridge = getBridge, getExistingBridges = getExistingBridges, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(ExistingBridges = ExistingBridges, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), createBridge = js.Any.fromFunction4(createBridge), dispose = js.Any.fromFunction0(dispose), getBridge = js.Any.fromFunction1(getBridge), getExistingBridges = js.Any.fromFunction0(getExistingBridges), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener))
   
     __obj.asInstanceOf[XBridgeFactory2]
   }

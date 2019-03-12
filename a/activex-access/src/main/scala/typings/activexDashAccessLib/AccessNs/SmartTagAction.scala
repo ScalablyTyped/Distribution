@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SmartTagAction protected () extends js.Object {
   var `Access.SmartTagAction_typekey`: SmartTagAction = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   val Name: java.lang.String = js.native
   val Parent: js.Any = js.native
   def Execute(): scala.Unit = js.native

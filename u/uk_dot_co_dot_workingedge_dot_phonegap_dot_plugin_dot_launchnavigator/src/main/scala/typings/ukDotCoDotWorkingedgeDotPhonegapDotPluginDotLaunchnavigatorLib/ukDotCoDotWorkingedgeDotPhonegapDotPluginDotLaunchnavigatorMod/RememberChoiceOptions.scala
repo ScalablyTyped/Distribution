@@ -39,15 +39,12 @@ object RememberChoiceOptions {
   def apply(
     enabled: scala.Boolean | java.lang.String = null,
     prompt: PromptsOptions = null,
-    promptFn: js.Function1[
-      /* callback */ js.Function1[/* rememberChoice */ scala.Boolean, scala.Unit], 
-      scala.Unit
-    ] = null
+    promptFn: /* callback */ js.Function1[/* rememberChoice */ scala.Boolean, scala.Unit] => scala.Unit = null
   ): RememberChoiceOptions = {
     val __obj = js.Dynamic.literal()
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (prompt != null) __obj.updateDynamic("prompt")(prompt)
-    if (promptFn != null) __obj.updateDynamic("promptFn")(promptFn)
+    if (promptFn != null) __obj.updateDynamic("promptFn")(js.Any.fromFunction1(promptFn))
     __obj.asInstanceOf[RememberChoiceOptions]
   }
 }

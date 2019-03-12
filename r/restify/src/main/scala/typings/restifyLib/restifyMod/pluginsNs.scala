@@ -454,7 +454,7 @@ object pluginsNs extends js.Object {
     js.Any
   ]
   type MetricsCallback = js.Function5[
-    /* err */ nodeLib.Error, 
+    /* err */ stdLib.Error, 
     /* metrics */ MetricsCallbackOptions, 
     /* req */ restifyLib.restifyMod.Request, 
     /* res */ restifyLib.restifyMod.Response, 

@@ -17,13 +17,13 @@ object PDFRenderParams {
   @scala.inline
   def apply(
     canvasContext: pdfjsDashDistLib.CanvasRenderingContext2D,
-    continueCallback: js.Function1[/* _continue */ js.Function0[scala.Unit], scala.Unit] = null,
+    continueCallback: /* _continue */ js.Function0[scala.Unit] => scala.Unit = null,
     imageLayer: PDFRenderImageLayer = null,
     textLayer: PDFRenderTextLayer = null,
     viewport: PDFPageViewport = null
   ): PDFRenderParams = {
     val __obj = js.Dynamic.literal(canvasContext = canvasContext)
-    if (continueCallback != null) __obj.updateDynamic("continueCallback")(continueCallback)
+    if (continueCallback != null) __obj.updateDynamic("continueCallback")(js.Any.fromFunction1(continueCallback))
     if (imageLayer != null) __obj.updateDynamic("imageLayer")(imageLayer)
     if (textLayer != null) __obj.updateDynamic("textLayer")(textLayer)
     if (viewport != null) __obj.updateDynamic("viewport")(viewport)

@@ -13,12 +13,9 @@ trait UserStatesResource extends js.Object {
 object UserStatesResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListUserStatesResponse]
-    ]
+    list: gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[ListUserStatesResponse]
   ): UserStatesResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[UserStatesResource]
   }

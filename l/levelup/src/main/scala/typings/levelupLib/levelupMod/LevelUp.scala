@@ -8,9 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LevelUp[DB]
   extends nodeLib.eventsMod.EventEmitter {
-  var del: levelupLib.InferDBDel[DB] = js.native
-  var get: levelupLib.InferDBGet[DB] = js.native
-  var put: levelupLib.InferDBPut[DB] = js.native
+  @JSName("del")
+  var del_Original: levelupLib.InferDBDel[DB] = js.native
+  @JSName("get")
+  var get_Original: levelupLib.InferDBGet[DB] = js.native
+  @JSName("put")
+  var put_Original: levelupLib.InferDBPut[DB] = js.native
   def batch(): LevelUpChain[_, _] = js.native
   def batch(array: js.Array[abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractBatch[_, _]]): js.Promise[scala.Unit] = js.native
   def batch(
@@ -36,6 +39,36 @@ trait LevelUp[DB]
   def createReadStream(options: abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractIteratorOptions[_]): nodeLib.NodeJSNs.ReadableStream = js.native
   def createValueStream(): nodeLib.NodeJSNs.ReadableStream = js.native
   def createValueStream(options: abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractIteratorOptions[_]): nodeLib.NodeJSNs.ReadableStream = js.native
+  def del(key: js.Any): js.Promise[scala.Unit] = js.native
+  def del(
+    key: js.Any,
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AbstractOptions */ js.Any
+  ): js.Promise[scala.Unit] = js.native
+  def del(
+    key: js.Any,
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AbstractOptions */ js.Any,
+    callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorCallback */ js.Any
+  ): scala.Unit = js.native
+  @JSName("del")
+  def del_Unit(
+    key: js.Any,
+    callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorCallback */ js.Any
+  ): scala.Unit = js.native
+  def get(key: js.Any): js.Promise[_] = js.native
+  def get(
+    key: js.Any,
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AbstractGetOptions */ js.Any
+  ): js.Promise[_] = js.native
+  def get(
+    key: js.Any,
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AbstractGetOptions */ js.Any,
+    callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorValueCallback<V> */ js.Any
+  ): scala.Unit = js.native
+  @JSName("get")
+  def get_Unit(
+    key: js.Any,
+    callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorValueCallback<V> */ js.Any
+  ): scala.Unit = js.native
   def isClosed(): scala.Boolean = js.native
   def isOpen(): scala.Boolean = js.native
   /*
@@ -73,5 +106,23 @@ trait LevelUp[DB]
   def open(callback: abstractDashLeveldownLib.abstractDashLeveldownMod.ErrorCallback): scala.Unit = js.native
   @JSName("open")
   def open_Unit(): scala.Unit = js.native
+  def put(key: js.Any, value: js.Any): js.Promise[scala.Unit] = js.native
+  def put(
+    key: js.Any,
+    value: js.Any,
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AbstractOptions */ js.Any
+  ): js.Promise[scala.Unit] = js.native
+  def put(
+    key: js.Any,
+    value: js.Any,
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AbstractOptions */ js.Any,
+    callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorCallback */ js.Any
+  ): scala.Unit = js.native
+  @JSName("put")
+  def put_Unit(
+    key: js.Any,
+    value: js.Any,
+    callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorCallback */ js.Any
+  ): scala.Unit = js.native
 }
 

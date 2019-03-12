@@ -29,38 +29,22 @@ trait IInkStrokeContainer extends js.Object {
 object IInkStrokeContainer {
   @scala.inline
   def apply(
-    addStroke: js.Function1[InkStroke, scala.Unit],
+    addStroke: InkStroke => scala.Unit,
     boundingRect: winrtLib.WindowsNs.FoundationNs.Rect,
-    canPasteFromClipboard: js.Function0[scala.Boolean],
-    copySelectedToClipboard: js.Function0[scala.Unit],
-    deleteSelected: js.Function0[winrtLib.WindowsNs.FoundationNs.Rect],
-    getRecognitionResults: js.Function0[winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[InkRecognitionResult]],
-    getStrokes: js.Function0[winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[InkStroke]],
-    loadAsync: js.Function1[
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncActionWithProgress[scala.Double]
-    ],
-    moveSelected: js.Function1[winrtLib.WindowsNs.FoundationNs.Point, winrtLib.WindowsNs.FoundationNs.Rect],
-    pasteFromClipboard: js.Function1[winrtLib.WindowsNs.FoundationNs.Point, winrtLib.WindowsNs.FoundationNs.Rect],
-    saveAsync: js.Function1[
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IOutputStream, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[scala.Double, scala.Double]
-    ],
-    selectWithLine: js.Function2[
-      winrtLib.WindowsNs.FoundationNs.Point, 
-      winrtLib.WindowsNs.FoundationNs.Point, 
-      winrtLib.WindowsNs.FoundationNs.Rect
-    ],
-    selectWithPolyLine: js.Function1[
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[winrtLib.WindowsNs.FoundationNs.Point], 
-      winrtLib.WindowsNs.FoundationNs.Rect
-    ],
-    updateRecognitionResults: js.Function1[
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[InkRecognitionResult], 
-      scala.Unit
-    ]
+    canPasteFromClipboard: () => scala.Boolean,
+    copySelectedToClipboard: () => scala.Unit,
+    deleteSelected: () => winrtLib.WindowsNs.FoundationNs.Rect,
+    getRecognitionResults: () => winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[InkRecognitionResult],
+    getStrokes: () => winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[InkStroke],
+    loadAsync: winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream => winrtLib.WindowsNs.FoundationNs.IAsyncActionWithProgress[scala.Double],
+    moveSelected: winrtLib.WindowsNs.FoundationNs.Point => winrtLib.WindowsNs.FoundationNs.Rect,
+    pasteFromClipboard: winrtLib.WindowsNs.FoundationNs.Point => winrtLib.WindowsNs.FoundationNs.Rect,
+    saveAsync: winrtLib.WindowsNs.StorageNs.StreamsNs.IOutputStream => winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[scala.Double, scala.Double],
+    selectWithLine: (winrtLib.WindowsNs.FoundationNs.Point, winrtLib.WindowsNs.FoundationNs.Point) => winrtLib.WindowsNs.FoundationNs.Rect,
+    selectWithPolyLine: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[winrtLib.WindowsNs.FoundationNs.Point] => winrtLib.WindowsNs.FoundationNs.Rect,
+    updateRecognitionResults: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[InkRecognitionResult] => scala.Unit
   ): IInkStrokeContainer = {
-    val __obj = js.Dynamic.literal(addStroke = addStroke, boundingRect = boundingRect, canPasteFromClipboard = canPasteFromClipboard, copySelectedToClipboard = copySelectedToClipboard, deleteSelected = deleteSelected, getRecognitionResults = getRecognitionResults, getStrokes = getStrokes, loadAsync = loadAsync, moveSelected = moveSelected, pasteFromClipboard = pasteFromClipboard, saveAsync = saveAsync, selectWithLine = selectWithLine, selectWithPolyLine = selectWithPolyLine, updateRecognitionResults = updateRecognitionResults)
+    val __obj = js.Dynamic.literal(addStroke = js.Any.fromFunction1(addStroke), boundingRect = boundingRect, canPasteFromClipboard = js.Any.fromFunction0(canPasteFromClipboard), copySelectedToClipboard = js.Any.fromFunction0(copySelectedToClipboard), deleteSelected = js.Any.fromFunction0(deleteSelected), getRecognitionResults = js.Any.fromFunction0(getRecognitionResults), getStrokes = js.Any.fromFunction0(getStrokes), loadAsync = js.Any.fromFunction1(loadAsync), moveSelected = js.Any.fromFunction1(moveSelected), pasteFromClipboard = js.Any.fromFunction1(pasteFromClipboard), saveAsync = js.Any.fromFunction1(saveAsync), selectWithLine = js.Any.fromFunction2(selectWithLine), selectWithPolyLine = js.Any.fromFunction1(selectWithPolyLine), updateRecognitionResults = js.Any.fromFunction1(updateRecognitionResults))
   
     __obj.asInstanceOf[IInkStrokeContainer]
   }

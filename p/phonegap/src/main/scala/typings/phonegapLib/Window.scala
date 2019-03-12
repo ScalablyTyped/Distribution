@@ -18,10 +18,10 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(
-    openDatabase: js.Function4[java.lang.String, java.lang.String, java.lang.String, scala.Double, Database],
+    openDatabase: (java.lang.String, java.lang.String, java.lang.String, scala.Double) => Database,
     requestFileSystem: js.Any
   ): Window = {
-    val __obj = js.Dynamic.literal(openDatabase = openDatabase, requestFileSystem = requestFileSystem)
+    val __obj = js.Dynamic.literal(openDatabase = js.Any.fromFunction4(openDatabase), requestFileSystem = requestFileSystem)
   
     __obj.asInstanceOf[Window]
   }

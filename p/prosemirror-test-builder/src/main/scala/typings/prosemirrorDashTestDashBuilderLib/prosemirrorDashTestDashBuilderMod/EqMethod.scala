@@ -11,8 +11,8 @@ trait EqMethod extends js.Object {
 
 object EqMethod {
   @scala.inline
-  def apply(eq: js.Function1[EqMethod, scala.Boolean]): EqMethod = {
-    val __obj = js.Dynamic.literal(eq = eq)
+  def apply(eq: EqMethod => scala.Boolean): EqMethod = {
+    val __obj = js.Dynamic.literal(eq = js.Any.fromFunction1(eq))
   
     __obj.asInstanceOf[EqMethod]
   }

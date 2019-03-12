@@ -11,9 +11,9 @@ trait CookieParseOptions extends js.Object {
 
 object CookieParseOptions {
   @scala.inline
-  def apply(decode: js.Function1[/* val */ java.lang.String, java.lang.String] = null): CookieParseOptions = {
+  def apply(decode: /* val */ java.lang.String => java.lang.String = null): CookieParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (decode != null) __obj.updateDynamic("decode")(decode)
+    if (decode != null) __obj.updateDynamic("decode")(js.Any.fromFunction1(decode))
     __obj.asInstanceOf[CookieParseOptions]
   }
 }

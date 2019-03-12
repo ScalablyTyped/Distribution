@@ -13,6 +13,6 @@ object ^ extends js.Object {
   def unzip(data: nodeLib.Buffer): js.Array[scala.Double] = js.native
   def unzip(data: stdLib.Uint8Array): js.Array[scala.Double] = js.native
   def zip(data: java.lang.String): js.Array[scala.Double] = js.native
-  def zip(data: java.lang.String, opts: gzipDashJsLib.gzipDashJsMod.ZipOptions): js.Array[scala.Double] = js.native
+  def zip(data: java.lang.String, opts: ZipOptions): js.Array[scala.Double] = js.native
 }
 

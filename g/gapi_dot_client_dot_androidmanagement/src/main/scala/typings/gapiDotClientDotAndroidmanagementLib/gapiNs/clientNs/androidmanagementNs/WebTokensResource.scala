@@ -13,12 +13,9 @@ trait WebTokensResource extends js.Object {
 object WebTokensResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotAndroidmanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[WebToken]
-    ]
+    create: gapiDotClientDotAndroidmanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[WebToken]
   ): WebTokensResource = {
-    val __obj = js.Dynamic.literal(create = create)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
   
     __obj.asInstanceOf[WebTokensResource]
   }

@@ -28,9 +28,9 @@ class IFaxIncomingMessage () extends js.Object {
   /** Transmitting Station ID */
   val TSID: java.lang.String = js.native
   /** Transmission end time */
-  val TransmissionEnd: activexDashInteropLib.VarDate = js.native
+  val TransmissionEnd: stdLib.VarDate = js.native
   /** Transmission start time */
-  val TransmissionStart: activexDashInteropLib.VarDate = js.native
+  val TransmissionStart: stdLib.VarDate = js.native
   /** Copy Tiff image to the local file */
   def CopyTiff(bstrTiffPath: java.lang.String): scala.Unit = js.native
   /** Delete the message from the archive */

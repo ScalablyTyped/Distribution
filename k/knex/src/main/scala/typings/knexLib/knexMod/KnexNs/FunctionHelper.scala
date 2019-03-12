@@ -11,8 +11,8 @@ trait FunctionHelper extends js.Object {
 
 object FunctionHelper {
   @scala.inline
-  def apply(now: js.Function0[Raw]): FunctionHelper = {
-    val __obj = js.Dynamic.literal(now = now)
+  def apply(now: () => Raw): FunctionHelper = {
+    val __obj = js.Dynamic.literal(now = js.Any.fromFunction0(now))
   
     __obj.asInstanceOf[FunctionHelper]
   }

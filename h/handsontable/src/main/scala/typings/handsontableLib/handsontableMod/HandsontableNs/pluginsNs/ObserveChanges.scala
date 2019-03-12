@@ -12,22 +12,22 @@ trait ObserveChanges extends Base {
 object ObserveChanges {
   @scala.inline
   def apply(
-    addHook: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit],
-    callOnPluginsReady: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    clearHooks: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    disablePlugin: js.Function0[scala.Unit],
-    enablePlugin: js.Function0[scala.Unit],
+    addHook: (java.lang.String, js.Function0[scala.Unit]) => scala.Unit,
+    callOnPluginsReady: js.Function0[scala.Unit] => scala.Unit,
+    clearHooks: () => scala.Unit,
+    destroy: () => scala.Unit,
+    disablePlugin: () => scala.Unit,
+    enablePlugin: () => scala.Unit,
     enabled: scala.Boolean,
-    init: js.Function0[scala.Unit],
+    init: () => scala.Unit,
     initialized: scala.Boolean,
     isPluginsReady: scala.Boolean,
     observer: DataObserver | scala.Unit,
     pluginName: java.lang.String,
     pluginsInitializedCallback: js.Array[_],
-    removeHook: js.Function1[java.lang.String, scala.Unit]
+    removeHook: java.lang.String => scala.Unit
   ): ObserveChanges = {
-    val __obj = js.Dynamic.literal(addHook = addHook, callOnPluginsReady = callOnPluginsReady, clearHooks = clearHooks, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, init = init, initialized = initialized, isPluginsReady = isPluginsReady, observer = observer.asInstanceOf[js.Any], pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook)
+    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, observer = observer.asInstanceOf[js.Any], pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = js.Any.fromFunction1(removeHook))
   
     __obj.asInstanceOf[ObserveChanges]
   }

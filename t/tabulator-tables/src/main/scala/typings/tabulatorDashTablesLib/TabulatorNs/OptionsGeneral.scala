@@ -71,23 +71,23 @@ object OptionsGeneral {
   @scala.inline
   def apply(
     autoResize: js.UndefOr[scala.Boolean] = js.undefined,
-    dataEdited: js.Function1[/* data */ js.Any, scala.Unit] = null,
-    dataLoaded: js.Function1[/* data */ js.Any, scala.Unit] = null,
-    dataLoading: js.Function1[/* data */ js.Any, scala.Unit] = null,
-    dataSorted: js.Function2[/* sorters */ js.Array[Sorter], /* rows */ js.Array[RowComponent], scala.Unit] = null,
-    dataSorting: js.Function1[/* sorters */ js.Array[Sorter], scala.Unit] = null,
+    dataEdited: /* data */ js.Any => scala.Unit = null,
+    dataLoaded: /* data */ js.Any => scala.Unit = null,
+    dataLoading: /* data */ js.Any => scala.Unit = null,
+    dataSorted: (/* sorters */ js.Array[Sorter], /* rows */ js.Array[RowComponent]) => scala.Unit = null,
+    dataSorting: /* sorters */ js.Array[Sorter] => scala.Unit = null,
     footerElement: java.lang.String | stdLib.HTMLElement = null,
     height: java.lang.String | scala.Double | tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`false` = null,
     htmlImported: EmptyCallback = null,
     htmlImporting: EmptyCallback = null,
     keybindings: tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`false` | KeyBinding = null,
-    pageLoaded: js.Function1[/* pageno */ scala.Double, scala.Unit] = null,
+    pageLoaded: /* pageno */ scala.Double => scala.Unit = null,
     placeholder: java.lang.String | stdLib.HTMLElement = null,
     reactiveData: js.UndefOr[scala.Boolean] = js.undefined,
-    renderComplete: js.Function0[scala.Unit] = null,
-    renderStarted: js.Function0[scala.Unit] = null,
-    tableBuilding: js.Function0[scala.Unit] = null,
-    tableBuilt: js.Function0[scala.Unit] = null,
+    renderComplete: () => scala.Unit = null,
+    renderStarted: () => scala.Unit = null,
+    tableBuilding: () => scala.Unit = null,
+    tableBuilt: () => scala.Unit = null,
     tooltipGenerationMode: tabulatorDashTablesLib.tabulatorDashTablesLibStrings.load = null,
     tooltips: GlobalTooltipOption = null,
     virtualDom: js.UndefOr[scala.Boolean] = js.undefined,
@@ -95,23 +95,23 @@ object OptionsGeneral {
   ): OptionsGeneral = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize)
-    if (dataEdited != null) __obj.updateDynamic("dataEdited")(dataEdited)
-    if (dataLoaded != null) __obj.updateDynamic("dataLoaded")(dataLoaded)
-    if (dataLoading != null) __obj.updateDynamic("dataLoading")(dataLoading)
-    if (dataSorted != null) __obj.updateDynamic("dataSorted")(dataSorted)
-    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting)
+    if (dataEdited != null) __obj.updateDynamic("dataEdited")(js.Any.fromFunction1(dataEdited))
+    if (dataLoaded != null) __obj.updateDynamic("dataLoaded")(js.Any.fromFunction1(dataLoaded))
+    if (dataLoading != null) __obj.updateDynamic("dataLoading")(js.Any.fromFunction1(dataLoading))
+    if (dataSorted != null) __obj.updateDynamic("dataSorted")(js.Any.fromFunction2(dataSorted))
+    if (dataSorting != null) __obj.updateDynamic("dataSorting")(js.Any.fromFunction1(dataSorting))
     if (footerElement != null) __obj.updateDynamic("footerElement")(footerElement.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (htmlImported != null) __obj.updateDynamic("htmlImported")(htmlImported)
     if (htmlImporting != null) __obj.updateDynamic("htmlImporting")(htmlImporting)
     if (keybindings != null) __obj.updateDynamic("keybindings")(keybindings.asInstanceOf[js.Any])
-    if (pageLoaded != null) __obj.updateDynamic("pageLoaded")(pageLoaded)
+    if (pageLoaded != null) __obj.updateDynamic("pageLoaded")(js.Any.fromFunction1(pageLoaded))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (!js.isUndefined(reactiveData)) __obj.updateDynamic("reactiveData")(reactiveData)
-    if (renderComplete != null) __obj.updateDynamic("renderComplete")(renderComplete)
-    if (renderStarted != null) __obj.updateDynamic("renderStarted")(renderStarted)
-    if (tableBuilding != null) __obj.updateDynamic("tableBuilding")(tableBuilding)
-    if (tableBuilt != null) __obj.updateDynamic("tableBuilt")(tableBuilt)
+    if (renderComplete != null) __obj.updateDynamic("renderComplete")(js.Any.fromFunction0(renderComplete))
+    if (renderStarted != null) __obj.updateDynamic("renderStarted")(js.Any.fromFunction0(renderStarted))
+    if (tableBuilding != null) __obj.updateDynamic("tableBuilding")(js.Any.fromFunction0(tableBuilding))
+    if (tableBuilt != null) __obj.updateDynamic("tableBuilt")(js.Any.fromFunction0(tableBuilt))
     if (tooltipGenerationMode != null) __obj.updateDynamic("tooltipGenerationMode")(tooltipGenerationMode)
     if (tooltips != null) __obj.updateDynamic("tooltips")(tooltips.asInstanceOf[js.Any])
     if (!js.isUndefined(virtualDom)) __obj.updateDynamic("virtualDom")(virtualDom)

@@ -14,9 +14,7 @@ object ^ extends js.Object {
     * 'idle' if the system is unlocked and the user has not generated any input for a
     * specified number of seconds, and 'active' when the user generates input on an idle system.
     */
-  val onStateChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[/* newState */ chromeDashAppsLib.chromeNs.idleNs.IdleState, scala.Unit]
-  ] = js.native
+  val onStateChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* newState */ IdleState, scala.Unit]] = js.native
   /**
     * Returns 'locked' if the system is locked, 'idle' if the user has not generated any input for a specified number of seconds, or 'active' otherwise.
     * @param detectionIntervalInSeconds The system is considered idle if detectionIntervalInSeconds seconds have elapsed since the last user input detected.
@@ -26,7 +24,7 @@ object ^ extends js.Object {
     */
   def queryState(
     detectionIntervalInSeconds: chromeDashAppsLib.chromeNs.integer,
-    callback: js.Function1[/* newState */ chromeDashAppsLib.chromeNs.idleNs.IdleState, scala.Unit]
+    callback: js.Function1[/* newState */ IdleState, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Sets the interval, in seconds, used to determine when the system is in an idle state for

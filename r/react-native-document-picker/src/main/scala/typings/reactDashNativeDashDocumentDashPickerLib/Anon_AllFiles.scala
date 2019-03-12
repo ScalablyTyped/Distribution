@@ -17,14 +17,14 @@ trait Anon_AllFiles extends js.Object {
 object Anon_AllFiles {
   @scala.inline
   def apply(
-    allFiles: js.Function0[java.lang.String],
-    audio: js.Function0[java.lang.String],
-    images: js.Function0[java.lang.String],
-    pdf: js.Function0[java.lang.String],
-    plainText: js.Function0[java.lang.String],
-    video: js.Function0[java.lang.String]
+    allFiles: () => java.lang.String,
+    audio: () => java.lang.String,
+    images: () => java.lang.String,
+    pdf: () => java.lang.String,
+    plainText: () => java.lang.String,
+    video: () => java.lang.String
   ): Anon_AllFiles = {
-    val __obj = js.Dynamic.literal(allFiles = allFiles, audio = audio, images = images, pdf = pdf, plainText = plainText, video = video)
+    val __obj = js.Dynamic.literal(allFiles = js.Any.fromFunction0(allFiles), audio = js.Any.fromFunction0(audio), images = js.Any.fromFunction0(images), pdf = js.Any.fromFunction0(pdf), plainText = js.Any.fromFunction0(plainText), video = js.Any.fromFunction0(video))
   
     __obj.asInstanceOf[Anon_AllFiles]
   }

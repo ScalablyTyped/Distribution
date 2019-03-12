@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
-  def apply(opts: koaDashLoggerLib.Transporter | koaDashLoggerLib.koaDashLoggerMod.TransporterOpts): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
+  def apply(opts: koaDashLoggerLib.Transporter | TransporterOpts): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
 }
 

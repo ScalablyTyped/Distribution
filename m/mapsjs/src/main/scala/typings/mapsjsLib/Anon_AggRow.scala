@@ -23,15 +23,15 @@ object Anon_AggRow {
     data: js.Array[js.Object],
     mapUnitsPerPixel: scala.Double,
     pointKey: java.lang.String,
-    radiusFunction: js.Function1[js.Any, scala.Double],
-    aggregateFunction: js.Function3[/* srcRow */ js.Any, /* cmpRow */ js.Any, /* aggRow */ js.Any, scala.Unit] = null,
+    radiusFunction: js.Any => scala.Double,
+    aggregateFunction: (/* srcRow */ js.Any, /* cmpRow */ js.Any, /* aggRow */ js.Any) => scala.Unit = null,
     marginPixels: scala.Int | scala.Double = null,
-    valueFunction: js.Function1[/* row */ js.Any, scala.Double] = null
+    valueFunction: /* row */ js.Any => scala.Double = null
   ): Anon_AggRow = {
-    val __obj = js.Dynamic.literal(data = data, mapUnitsPerPixel = mapUnitsPerPixel, pointKey = pointKey, radiusFunction = radiusFunction)
-    if (aggregateFunction != null) __obj.updateDynamic("aggregateFunction")(aggregateFunction)
+    val __obj = js.Dynamic.literal(data = data, mapUnitsPerPixel = mapUnitsPerPixel, pointKey = pointKey, radiusFunction = js.Any.fromFunction1(radiusFunction))
+    if (aggregateFunction != null) __obj.updateDynamic("aggregateFunction")(js.Any.fromFunction3(aggregateFunction))
     if (marginPixels != null) __obj.updateDynamic("marginPixels")(marginPixels.asInstanceOf[js.Any])
-    if (valueFunction != null) __obj.updateDynamic("valueFunction")(valueFunction)
+    if (valueFunction != null) __obj.updateDynamic("valueFunction")(js.Any.fromFunction1(valueFunction))
     __obj.asInstanceOf[Anon_AggRow]
   }
 }

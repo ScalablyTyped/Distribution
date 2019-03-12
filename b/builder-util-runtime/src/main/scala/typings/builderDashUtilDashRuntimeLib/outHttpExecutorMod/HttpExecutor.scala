@@ -11,22 +11,22 @@ abstract class HttpExecutor[REQUEST] () extends js.Object {
   var addTimeOutHandler: js.Any = js.native
   var handleResponse: js.Any = js.native
   val maxRedirects: /* 10 */ scala.Double = js.native
-  def addErrorAndTimeoutHandlers(request: js.Any, reject: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def addErrorAndTimeoutHandlers(request: js.Any, reject: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /* protected */ def addRedirectHandlers(
     request: js.Any,
     options: nodeLib.httpMod.RequestOptions,
-    reject: js.Function1[/* error */ nodeLib.Error, scala.Unit],
+    reject: js.Function1[/* error */ stdLib.Error, scala.Unit],
     redirectCount: scala.Double,
     handler: js.Function1[/* options */ nodeLib.httpMod.RequestOptions, scala.Unit]
   ): scala.Unit = js.native
-  /* protected */ def createMaxRedirectError(): nodeLib.Error = js.native
+  /* protected */ def createMaxRedirectError(): stdLib.Error = js.native
   def createRequest(options: js.Any, callback: js.Function1[/* response */ js.Any, scala.Unit]): js.Any = js.native
   def doApiRequest(
     options: nodeLib.httpMod.RequestOptions,
     cancellationToken: builderDashUtilDashRuntimeLib.outCancellationTokenMod.CancellationToken,
     requestProcessor: js.Function2[
       /* request */ REQUEST, 
-      /* reject */ js.Function1[/* error */ nodeLib.Error, scala.Unit], 
+      /* reject */ js.Function1[/* error */ stdLib.Error, scala.Unit], 
       scala.Unit
     ]
   ): js.Promise[java.lang.String] = js.native
@@ -35,7 +35,7 @@ abstract class HttpExecutor[REQUEST] () extends js.Object {
     cancellationToken: builderDashUtilDashRuntimeLib.outCancellationTokenMod.CancellationToken,
     requestProcessor: js.Function2[
       /* request */ REQUEST, 
-      /* reject */ js.Function1[/* error */ nodeLib.Error, scala.Unit], 
+      /* reject */ js.Function1[/* error */ stdLib.Error, scala.Unit], 
       scala.Unit
     ],
     redirectCount: scala.Double

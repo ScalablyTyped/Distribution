@@ -12,12 +12,12 @@ trait RangeSliderSlideEvent extends RangeSliderEvent {
 object RangeSliderSlideEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: RangeSlider,
     value: js.Any = null
   ): RangeSliderSlideEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[RangeSliderSlideEvent]
   }

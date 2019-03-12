@@ -88,17 +88,11 @@ object OptionsBase {
   @scala.inline
   def apply(
     compatibility: cleanDashCssLib.cleanDashCssLibStrings.`*` | cleanDashCssLib.cleanDashCssLibStrings.ie9 | cleanDashCssLib.cleanDashCssLibStrings.ie8 | cleanDashCssLib.cleanDashCssLibStrings.ie7 | cleanDashCssLib.cleanDashCssMod.CleanCSSNs.CompatibilityOptions = null,
-    fetch: js.Function4[
-      /* uri */ java.lang.String, 
-      /* inlineRequest */ nodeLib.httpMod.RequestOptions | nodeLib.httpsMod.RequestOptions, 
-      /* inlineTimeout */ scala.Double, 
-      /* done */ js.Function2[
-        /* message */ java.lang.String | scala.Double, 
-        /* body */ java.lang.String, 
-        scala.Unit
-      ], 
+    fetch: (/* uri */ java.lang.String, /* inlineRequest */ nodeLib.httpMod.RequestOptions | nodeLib.httpsMod.RequestOptions, /* inlineTimeout */ scala.Double, /* done */ js.Function2[
+      /* message */ java.lang.String | scala.Double, 
+      /* body */ java.lang.String, 
       scala.Unit
-    ] = null,
+    ]) => scala.Unit = null,
     format: cleanDashCssLib.cleanDashCssLibStrings.beautify | cleanDashCssLib.cleanDashCssLibStrings.`keep-breaks` | cleanDashCssLib.cleanDashCssMod.CleanCSSNs.FormatOptions | cleanDashCssLib.cleanDashCssLibNumbers.`false` = null,
     `inline`: js.Array[java.lang.String] | cleanDashCssLib.cleanDashCssLibNumbers.`false` = null,
     inlineRequest: nodeLib.httpMod.RequestOptions | nodeLib.httpsMod.RequestOptions = null,
@@ -111,7 +105,7 @@ object OptionsBase {
   ): OptionsBase = {
     val __obj = js.Dynamic.literal()
     if (compatibility != null) __obj.updateDynamic("compatibility")(compatibility.asInstanceOf[js.Any])
-    if (fetch != null) __obj.updateDynamic("fetch")(fetch)
+    if (fetch != null) __obj.updateDynamic("fetch")(js.Any.fromFunction4(fetch))
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     if (inlineRequest != null) __obj.updateDynamic("inlineRequest")(inlineRequest.asInstanceOf[js.Any])

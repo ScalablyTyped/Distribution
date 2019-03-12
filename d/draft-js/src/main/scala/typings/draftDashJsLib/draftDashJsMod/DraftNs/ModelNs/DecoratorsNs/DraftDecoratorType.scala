@@ -34,15 +34,11 @@ trait DraftDecoratorType extends js.Object {
 object DraftDecoratorType {
   @scala.inline
   def apply(
-    getComponentForKey: js.Function1[java.lang.String, js.Function],
-    getDecorations: js.Function2[
-      draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentBlock, 
-      draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentState, 
-      immutableLib.immutableMod.List[java.lang.String]
-    ],
-    getPropsForKey: js.Function1[java.lang.String, js.Any]
+    getComponentForKey: java.lang.String => js.Function,
+    getDecorations: (draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentBlock, draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentState) => immutableLib.immutableMod.List[java.lang.String],
+    getPropsForKey: java.lang.String => js.Any
   ): DraftDecoratorType = {
-    val __obj = js.Dynamic.literal(getComponentForKey = getComponentForKey, getDecorations = getDecorations, getPropsForKey = getPropsForKey)
+    val __obj = js.Dynamic.literal(getComponentForKey = js.Any.fromFunction1(getComponentForKey), getDecorations = js.Any.fromFunction2(getDecorations), getPropsForKey = js.Any.fromFunction1(getPropsForKey))
   
     __obj.asInstanceOf[DraftDecoratorType]
   }

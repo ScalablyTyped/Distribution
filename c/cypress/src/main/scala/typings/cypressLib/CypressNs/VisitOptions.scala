@@ -38,13 +38,13 @@ trait VisitOptions
     *
     * @param {Window} contentWindow the remote page's window object
     */
-  def onBeforeLoad(win: mochaLib.Window): scala.Unit
+  def onBeforeLoad(win: stdLib.Window): scala.Unit
   /**
     * Called once your page has fired its load event.
     *
     * @param {Window} contentWindow the remote page's window object
     */
-  def onLoad(win: mochaLib.Window): scala.Unit
+  def onLoad(win: stdLib.Window): scala.Unit
 }
 
 object VisitOptions {
@@ -53,11 +53,11 @@ object VisitOptions {
     auth: Auth,
     failOnStatusCode: scala.Boolean,
     log: scala.Boolean,
-    onBeforeLoad: js.Function1[mochaLib.Window, scala.Unit],
-    onLoad: js.Function1[mochaLib.Window, scala.Unit],
+    onBeforeLoad: stdLib.Window => scala.Unit,
+    onLoad: stdLib.Window => scala.Unit,
     timeout: scala.Double
   ): VisitOptions = {
-    val __obj = js.Dynamic.literal(auth = auth, failOnStatusCode = failOnStatusCode, log = log, onBeforeLoad = onBeforeLoad, onLoad = onLoad, timeout = timeout)
+    val __obj = js.Dynamic.literal(auth = auth, failOnStatusCode = failOnStatusCode, log = log, onBeforeLoad = js.Any.fromFunction1(onBeforeLoad), onLoad = js.Any.fromFunction1(onLoad), timeout = timeout)
   
     __obj.asInstanceOf[VisitOptions]
   }

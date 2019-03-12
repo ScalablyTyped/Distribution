@@ -26,11 +26,11 @@ object User {
     email: java.lang.String,
     firstname: java.lang.String,
     lastname: java.lang.String,
-    toCrowd: js.Function0[UserObj],
+    toCrowd: () => UserObj,
     username: java.lang.String,
     password: java.lang.String = null
   ): User = {
-    val __obj = js.Dynamic.literal(active = active, attributes = attributes, displayname = displayname, email = email, firstname = firstname, lastname = lastname, toCrowd = toCrowd, username = username)
+    val __obj = js.Dynamic.literal(active = active, attributes = attributes, displayname = displayname, email = email, firstname = firstname, lastname = lastname, toCrowd = js.Any.fromFunction0(toCrowd), username = username)
     if (password != null) __obj.updateDynamic("password")(password)
     __obj.asInstanceOf[User]
   }

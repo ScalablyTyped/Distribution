@@ -18,15 +18,15 @@ trait ISearchDef extends js.Object {
 object ISearchDef {
   @scala.inline
   def apply(
-    Clone: js.Function0[ISearchDef],
+    Clone: () => ISearchDef,
     Conditions: ISearchConditions,
-    IsIndirectionUsed: js.Function0[scala.Boolean],
+    IsIndirectionUsed: () => scala.Boolean,
     Levels: IExpressionExs,
     LookInAllVersions: scala.Boolean,
     ReturnLatestVisibleVersion: scala.Boolean,
     SearchFlags: mfilesLib.MFilesNs.MFSearchFlags
   ): ISearchDef = {
-    val __obj = js.Dynamic.literal(Clone = Clone, Conditions = Conditions, IsIndirectionUsed = IsIndirectionUsed, Levels = Levels, LookInAllVersions = LookInAllVersions, ReturnLatestVisibleVersion = ReturnLatestVisibleVersion, SearchFlags = SearchFlags)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Conditions = Conditions, IsIndirectionUsed = js.Any.fromFunction0(IsIndirectionUsed), Levels = Levels, LookInAllVersions = LookInAllVersions, ReturnLatestVisibleVersion = ReturnLatestVisibleVersion, SearchFlags = SearchFlags)
   
     __obj.asInstanceOf[ISearchDef]
   }

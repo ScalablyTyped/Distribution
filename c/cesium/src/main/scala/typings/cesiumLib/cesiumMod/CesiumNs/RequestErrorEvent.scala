@@ -17,9 +17,9 @@ object RequestErrorEvent {
     response: js.Any,
     responseHeaders: js.Any,
     statusCode: scala.Double,
-    toString: js.Function0[java.lang.String]
+    toString: () => java.lang.String
   ): RequestErrorEvent = {
-    val __obj = js.Dynamic.literal(response = response, responseHeaders = responseHeaders, statusCode = statusCode, toString = toString)
+    val __obj = js.Dynamic.literal(response = response, responseHeaders = responseHeaders, statusCode = statusCode, toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[RequestErrorEvent]
   }

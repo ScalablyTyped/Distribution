@@ -21,12 +21,12 @@ object Anon_EvalScripts {
     evalScripts: java.lang.String,
     fallback: scala.Null,
     loading: scala.Null,
-    onInjected: js.Function0[js.UndefOr[scala.Nothing]],
+    onInjected: () => js.UndefOr[scala.Nothing],
     renumerateIRIElements: scala.Boolean,
     svgClassName: scala.Null,
     wrapper: java.lang.String
   ): Anon_EvalScripts = {
-    val __obj = js.Dynamic.literal(evalScripts = evalScripts, fallback = fallback, loading = loading, onInjected = onInjected, renumerateIRIElements = renumerateIRIElements, svgClassName = svgClassName, wrapper = wrapper)
+    val __obj = js.Dynamic.literal(evalScripts = evalScripts, fallback = fallback, loading = loading, onInjected = js.Any.fromFunction0(onInjected), renumerateIRIElements = renumerateIRIElements, svgClassName = svgClassName, wrapper = wrapper)
   
     __obj.asInstanceOf[Anon_EvalScripts]
   }

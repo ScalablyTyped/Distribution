@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-doghouse", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def bindActionCreatorsDeep[M /* <: reduxDashDoghouseLib.reduxDashDoghouseMod.ActionFactoriesMap */, S](actionFactories: M, dispatch: reduxLib.reduxMod.Dispatch[S]): M = js.native
+  def bindActionCreatorsDeep[M /* <: ActionFactoriesMap */, S](actionFactories: M, dispatch: reduxLib.reduxMod.Dispatch[S]): M = js.native
   @JSName("bindActionCreatorsDeep")
-  def `bindActionCreatorsDeep_A<union>FScopedActionFactorySF`[A /* <: reduxLib.reduxMod.ActionCreator[_] | reduxLib.reduxMod.ActionCreatorsMapObject[_] */, F /* <: reduxDashDoghouseLib.reduxDashDoghouseMod.ScopedActionFactory[A] */, S](actionFactories: F, dispatch: reduxLib.reduxMod.Dispatch[S]): F = js.native
+  def `bindActionCreatorsDeep_A<union>FScopedActionFactorySF`[A /* <: reduxLib.reduxMod.ActionCreator[_] | reduxLib.reduxMod.ActionCreatorsMapObject[_] */, F /* <: ScopedActionFactory[A] */, S](actionFactories: F, dispatch: reduxLib.reduxMod.Dispatch[S]): F = js.native
   @JSName("bindActionCreatorsDeep")
   def bindActionCreatorsDeep_AActionCreatorSA[A /* <: reduxLib.reduxMod.ActionCreator[_] */, S](actionFactories: A, dispatch: reduxLib.reduxMod.Dispatch[S]): A = js.native
-  def bindScopedActionFactories[M /* <: reduxDashDoghouseLib.reduxDashDoghouseMod.ActionFactoriesMap */, S](actionFactories: M, dispatch: reduxLib.reduxMod.Dispatch[S]): M = js.native
-  def bindScopedActionFactories[M /* <: reduxDashDoghouseLib.reduxDashDoghouseMod.ActionFactoriesMap */, S](
+  def bindScopedActionFactories[M /* <: ActionFactoriesMap */, S](actionFactories: M, dispatch: reduxLib.reduxMod.Dispatch[S]): M = js.native
+  def bindScopedActionFactories[M /* <: ActionFactoriesMap */, S](
     actionFactories: M,
     dispatch: reduxLib.reduxMod.Dispatch[S],
     bindFn: reduxDashDoghouseLib.Anon_ActionCreator
   ): M = js.native
   @JSName("bindScopedActionFactories")
-  def `bindScopedActionFactories_A<union>FScopedActionFactorySF`[A /* <: reduxLib.reduxMod.ActionCreator[_] | reduxLib.reduxMod.ActionCreatorsMapObject[_] */, F /* <: reduxDashDoghouseLib.reduxDashDoghouseMod.ScopedActionFactory[A] */, S](actionFactories: F, dispatch: reduxLib.reduxMod.Dispatch[S]): F = js.native
+  def `bindScopedActionFactories_A<union>FScopedActionFactorySF`[A /* <: reduxLib.reduxMod.ActionCreator[_] | reduxLib.reduxMod.ActionCreatorsMapObject[_] */, F /* <: ScopedActionFactory[A] */, S](actionFactories: F, dispatch: reduxLib.reduxMod.Dispatch[S]): F = js.native
   @JSName("bindScopedActionFactories")
-  def `bindScopedActionFactories_A<union>FScopedActionFactorySF`[A /* <: reduxLib.reduxMod.ActionCreator[_] | reduxLib.reduxMod.ActionCreatorsMapObject[_] */, F /* <: reduxDashDoghouseLib.reduxDashDoghouseMod.ScopedActionFactory[A] */, S](
+  def `bindScopedActionFactories_A<union>FScopedActionFactorySF`[A /* <: reduxLib.reduxMod.ActionCreator[_] | reduxLib.reduxMod.ActionCreatorsMapObject[_] */, F /* <: ScopedActionFactory[A] */, S](
     actionFactories: F,
     dispatch: reduxLib.reduxMod.Dispatch[S],
     bindFn: reduxDashDoghouseLib.Anon_ActionCreator

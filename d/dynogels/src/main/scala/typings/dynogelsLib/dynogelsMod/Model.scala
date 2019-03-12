@@ -11,18 +11,18 @@ trait Model
   def after(action: LifeCycleAction, listner: js.Function1[/* item */ Item, scala.Unit]): scala.Unit = js.native
   def batchGetItems(
     items: js.Array[java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String]],
-    callback: js.Function2[/* err */ nodeLib.Error, /* items */ js.Array[_], scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* items */ js.Array[_], scala.Unit]
   ): scala.Unit = js.native
   def batchGetItems(
     items: js.Array[java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String]],
     options: GetItemOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* items */ js.Array[_], scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* items */ js.Array[_], scala.Unit]
   ): scala.Unit = js.native
   def before(
     action: LifeCycleAction,
     listner: js.Function2[
       /* data */ js.Any, 
-      /* next */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* data */ js.Any, scala.Unit], 
+      /* next */ js.Function2[/* err */ stdLib.Error | scala.Null, /* data */ js.Any, scala.Unit], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -31,7 +31,7 @@ trait Model
   def create(item: js.Any, options: CreateItemOptions, callback: DynogelsItemCallback): scala.Unit = js.native
   def createTable(
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* data */ awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.CreateTableOutput, 
       scala.Unit
     ]
@@ -39,15 +39,15 @@ trait Model
   def createTable(
     options: CreateTablesOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* data */ awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.CreateTableOutput, 
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def deleteTable(callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def deleteTable(callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def describeTable(
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* data */ awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DescribeTableOutput, 
       scala.Unit
     ]
@@ -62,12 +62,12 @@ trait Model
   def get(haskKey: js.Any, options: GetItemOptions, callback: DynogelsItemCallback): scala.Unit = js.native
   def getItems(
     items: js.Array[java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String]],
-    callback: js.Function2[/* err */ nodeLib.Error, /* items */ js.Array[_], scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* items */ js.Array[_], scala.Unit]
   ): scala.Unit = js.native
   def getItems(
     items: js.Array[java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String]],
     options: GetItemOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* items */ js.Array[_], scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* items */ js.Array[_], scala.Unit]
   ): scala.Unit = js.native
   def parallelScan(totalSegments: scala.Double): Scan = js.native
   def query(hashKey: js.Any): Query = js.native
@@ -77,7 +77,7 @@ trait Model
   def update(item: js.Any, options: UpdateItemOptions, callback: DynogelsItemCallback): scala.Unit = js.native
   def updateTable(
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* data */ awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.UpdateTableOutput, 
       scala.Unit
     ]
@@ -85,7 +85,7 @@ trait Model
   def updateTable(
     throughput: Throughput,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* data */ awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.UpdateTableOutput, 
       scala.Unit
     ]

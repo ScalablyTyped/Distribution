@@ -26,11 +26,11 @@ object SearchBetweennessOptions {
   @scala.inline
   def apply(
     directed: js.UndefOr[scala.Boolean] = js.undefined,
-    weight: js.Function1[/* edge */ EdgeSingular, scala.Double] = null
+    weight: /* edge */ EdgeSingular => scala.Double = null
   ): SearchBetweennessOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed)
-    if (weight != null) __obj.updateDynamic("weight")(weight)
+    if (weight != null) __obj.updateDynamic("weight")(js.Any.fromFunction1(weight))
     __obj.asInstanceOf[SearchBetweennessOptions]
   }
 }

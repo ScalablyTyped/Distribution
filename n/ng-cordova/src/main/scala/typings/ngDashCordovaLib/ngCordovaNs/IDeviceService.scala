@@ -57,16 +57,16 @@ trait IDeviceService extends js.Object {
 object IDeviceService {
   @scala.inline
   def apply(
-    getCordova: js.Function0[java.lang.String],
-    getDevice: js.Function0[IDeviceInfo],
-    getManufacturer: js.Function0[java.lang.String],
-    getModel: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getPlatform: js.Function0[java.lang.String],
-    getUUID: js.Function0[java.lang.String],
-    getVersion: js.Function0[java.lang.String]
+    getCordova: () => java.lang.String,
+    getDevice: () => IDeviceInfo,
+    getManufacturer: () => java.lang.String,
+    getModel: () => java.lang.String,
+    getName: () => java.lang.String,
+    getPlatform: () => java.lang.String,
+    getUUID: () => java.lang.String,
+    getVersion: () => java.lang.String
   ): IDeviceService = {
-    val __obj = js.Dynamic.literal(getCordova = getCordova, getDevice = getDevice, getManufacturer = getManufacturer, getModel = getModel, getName = getName, getPlatform = getPlatform, getUUID = getUUID, getVersion = getVersion)
+    val __obj = js.Dynamic.literal(getCordova = js.Any.fromFunction0(getCordova), getDevice = js.Any.fromFunction0(getDevice), getManufacturer = js.Any.fromFunction0(getManufacturer), getModel = js.Any.fromFunction0(getModel), getName = js.Any.fromFunction0(getName), getPlatform = js.Any.fromFunction0(getPlatform), getUUID = js.Any.fromFunction0(getUUID), getVersion = js.Any.fromFunction0(getVersion))
   
     __obj.asInstanceOf[IDeviceService]
   }

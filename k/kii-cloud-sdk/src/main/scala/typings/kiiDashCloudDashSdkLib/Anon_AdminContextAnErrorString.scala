@@ -19,14 +19,10 @@ trait Anon_AdminContextAnErrorString extends js.Object {
 object Anon_AdminContextAnErrorString {
   @scala.inline
   def apply(
-    failure: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiAppAdminContext, java.lang.String, js.Any],
-    success: js.Function2[
-      kiiDashCloudDashSdkLib.KiiCloudNs.KiiAppAdminContext, 
-      kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser, 
-      js.Any
-    ]
+    failure: (kiiDashCloudDashSdkLib.KiiCloudNs.KiiAppAdminContext, java.lang.String) => js.Any,
+    success: (kiiDashCloudDashSdkLib.KiiCloudNs.KiiAppAdminContext, kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser) => js.Any
   ): Anon_AdminContextAnErrorString = {
-    val __obj = js.Dynamic.literal(failure = failure, success = success)
+    val __obj = js.Dynamic.literal(failure = js.Any.fromFunction2(failure), success = js.Any.fromFunction2(success))
   
     __obj.asInstanceOf[Anon_AdminContextAnErrorString]
   }

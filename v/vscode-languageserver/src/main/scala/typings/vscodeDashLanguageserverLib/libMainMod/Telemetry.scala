@@ -17,19 +17,13 @@ trait Telemetry extends Remote {
 object Telemetry {
   @scala.inline
   def apply(
-    attach: js.Function1[IConnection, scala.Unit],
+    attach: IConnection => scala.Unit,
     connection: IConnection,
-    fillServerCapabilities: js.Function1[
-      vscodeDashLanguageserverDashProtocolLib.libProtocolMod.ServerCapabilities, 
-      scala.Unit
-    ],
-    initialize: js.Function1[
-      vscodeDashLanguageserverDashProtocolLib.libProtocolMod.ClientCapabilities, 
-      scala.Unit
-    ],
-    logEvent: js.Function1[js.Any, scala.Unit]
+    fillServerCapabilities: vscodeDashLanguageserverDashProtocolLib.libProtocolMod.ServerCapabilities => scala.Unit,
+    initialize: vscodeDashLanguageserverDashProtocolLib.libProtocolMod.ClientCapabilities => scala.Unit,
+    logEvent: js.Any => scala.Unit
   ): Telemetry = {
-    val __obj = js.Dynamic.literal(attach = attach, connection = connection, fillServerCapabilities = fillServerCapabilities, initialize = initialize, logEvent = logEvent)
+    val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach), connection = connection, fillServerCapabilities = js.Any.fromFunction1(fillServerCapabilities), initialize = js.Any.fromFunction1(initialize), logEvent = js.Any.fromFunction1(logEvent))
   
     __obj.asInstanceOf[Telemetry]
   }

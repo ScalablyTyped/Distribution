@@ -21,18 +21,18 @@ trait ContactGroup extends js.Object {
 object ContactGroup {
   @scala.inline
   def apply(
-    addContact: js.Function1[Contact, ContactGroup],
-    deleteGroup: js.Function0[scala.Unit],
-    getContacts: js.Function0[js.Array[Contact]],
-    getGroupName: js.Function0[java.lang.String],
-    getId: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    isSystemGroup: js.Function0[scala.Boolean],
-    removeContact: js.Function1[Contact, ContactGroup],
-    setGroupName: js.Function1[java.lang.String, scala.Unit],
-    setName: js.Function1[java.lang.String, ContactGroup]
+    addContact: Contact => ContactGroup,
+    deleteGroup: () => scala.Unit,
+    getContacts: () => js.Array[Contact],
+    getGroupName: () => java.lang.String,
+    getId: () => java.lang.String,
+    getName: () => java.lang.String,
+    isSystemGroup: () => scala.Boolean,
+    removeContact: Contact => ContactGroup,
+    setGroupName: java.lang.String => scala.Unit,
+    setName: java.lang.String => ContactGroup
   ): ContactGroup = {
-    val __obj = js.Dynamic.literal(addContact = addContact, deleteGroup = deleteGroup, getContacts = getContacts, getGroupName = getGroupName, getId = getId, getName = getName, isSystemGroup = isSystemGroup, removeContact = removeContact, setGroupName = setGroupName, setName = setName)
+    val __obj = js.Dynamic.literal(addContact = js.Any.fromFunction1(addContact), deleteGroup = js.Any.fromFunction0(deleteGroup), getContacts = js.Any.fromFunction0(getContacts), getGroupName = js.Any.fromFunction0(getGroupName), getId = js.Any.fromFunction0(getId), getName = js.Any.fromFunction0(getName), isSystemGroup = js.Any.fromFunction0(isSystemGroup), removeContact = js.Any.fromFunction1(removeContact), setGroupName = js.Any.fromFunction1(setGroupName), setName = js.Any.fromFunction1(setName))
   
     __obj.asInstanceOf[ContactGroup]
   }

@@ -53,28 +53,28 @@ trait BootstrapClientAccordionItem extends ASPxClientNavBarItem {
 object BootstrapClientAccordionItem {
   @scala.inline
   def apply(
-    GetBadgeIconCssClass: js.Function0[java.lang.String],
-    GetBadgeText: js.Function0[java.lang.String],
-    GetEnabled: js.Function0[scala.Boolean],
-    GetIconCssClass: js.Function0[java.lang.String],
-    GetImageUrl: js.Function0[java.lang.String],
-    GetNavigateUrl: js.Function0[java.lang.String],
-    GetText: js.Function0[java.lang.String],
-    GetVisible: js.Function0[scala.Boolean],
-    SetBadgeIconCssClass: js.Function1[java.lang.String, scala.Unit],
-    SetBadgeText: js.Function1[java.lang.String, scala.Unit],
-    SetEnabled: js.Function1[scala.Boolean, scala.Unit],
-    SetIconCssClass: js.Function1[java.lang.String, scala.Unit],
-    SetImageUrl: js.Function1[java.lang.String, scala.Unit],
-    SetNavigateUrl: js.Function1[java.lang.String, scala.Unit],
-    SetText: js.Function1[java.lang.String, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    GetBadgeIconCssClass: () => java.lang.String,
+    GetBadgeText: () => java.lang.String,
+    GetEnabled: () => scala.Boolean,
+    GetIconCssClass: () => java.lang.String,
+    GetImageUrl: () => java.lang.String,
+    GetNavigateUrl: () => java.lang.String,
+    GetText: () => java.lang.String,
+    GetVisible: () => scala.Boolean,
+    SetBadgeIconCssClass: java.lang.String => scala.Unit,
+    SetBadgeText: java.lang.String => scala.Unit,
+    SetEnabled: scala.Boolean => scala.Unit,
+    SetIconCssClass: java.lang.String => scala.Unit,
+    SetImageUrl: java.lang.String => scala.Unit,
+    SetNavigateUrl: java.lang.String => scala.Unit,
+    SetText: java.lang.String => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
     group: BootstrapClientAccordionGroup,
     index: scala.Double,
     name: java.lang.String,
     navBar: BootstrapClientAccordion
   ): BootstrapClientAccordionItem = {
-    val __obj = js.Dynamic.literal(GetBadgeIconCssClass = GetBadgeIconCssClass, GetBadgeText = GetBadgeText, GetEnabled = GetEnabled, GetIconCssClass = GetIconCssClass, GetImageUrl = GetImageUrl, GetNavigateUrl = GetNavigateUrl, GetText = GetText, GetVisible = GetVisible, SetBadgeIconCssClass = SetBadgeIconCssClass, SetBadgeText = SetBadgeText, SetEnabled = SetEnabled, SetIconCssClass = SetIconCssClass, SetImageUrl = SetImageUrl, SetNavigateUrl = SetNavigateUrl, SetText = SetText, SetVisible = SetVisible, group = group, index = index, name = name, navBar = navBar)
+    val __obj = js.Dynamic.literal(GetBadgeIconCssClass = js.Any.fromFunction0(GetBadgeIconCssClass), GetBadgeText = js.Any.fromFunction0(GetBadgeText), GetEnabled = js.Any.fromFunction0(GetEnabled), GetIconCssClass = js.Any.fromFunction0(GetIconCssClass), GetImageUrl = js.Any.fromFunction0(GetImageUrl), GetNavigateUrl = js.Any.fromFunction0(GetNavigateUrl), GetText = js.Any.fromFunction0(GetText), GetVisible = js.Any.fromFunction0(GetVisible), SetBadgeIconCssClass = js.Any.fromFunction1(SetBadgeIconCssClass), SetBadgeText = js.Any.fromFunction1(SetBadgeText), SetEnabled = js.Any.fromFunction1(SetEnabled), SetIconCssClass = js.Any.fromFunction1(SetIconCssClass), SetImageUrl = js.Any.fromFunction1(SetImageUrl), SetNavigateUrl = js.Any.fromFunction1(SetNavigateUrl), SetText = js.Any.fromFunction1(SetText), SetVisible = js.Any.fromFunction1(SetVisible), group = group, index = index, name = name, navBar = navBar)
   
     __obj.asInstanceOf[BootstrapClientAccordionItem]
   }

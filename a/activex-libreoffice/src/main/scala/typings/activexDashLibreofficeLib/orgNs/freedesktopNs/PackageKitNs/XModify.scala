@@ -107,72 +107,21 @@ trait XModify
 object XModify {
   @scala.inline
   def apply(
-    InstallCatalogs: js.Function3[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      java.lang.String, 
-      scala.Unit
-    ],
-    InstallFontconfigResources: js.Function3[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      java.lang.String, 
-      scala.Unit
-    ],
-    InstallGStreamerResources: js.Function3[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      java.lang.String, 
-      scala.Unit
-    ],
-    InstallMimeTypes: js.Function3[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      java.lang.String, 
-      scala.Unit
-    ],
-    InstallPackageFiles: js.Function3[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      java.lang.String, 
-      scala.Unit
-    ],
-    InstallPackageNames: js.Function3[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      java.lang.String, 
-      scala.Unit
-    ],
-    InstallPrinterDrivers: js.Function3[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      java.lang.String, 
-      scala.Unit
-    ],
-    InstallProvideFiles: js.Function3[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      java.lang.String, 
-      scala.Unit
-    ],
-    InstallResources: js.Function4[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      java.lang.String, 
-      scala.Unit
-    ],
-    RemovePackageByFiles: js.Function3[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      java.lang.String, 
-      scala.Unit
-    ],
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    InstallCatalogs: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], java.lang.String) => scala.Unit,
+    InstallFontconfigResources: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], java.lang.String) => scala.Unit,
+    InstallGStreamerResources: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], java.lang.String) => scala.Unit,
+    InstallMimeTypes: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], java.lang.String) => scala.Unit,
+    InstallPackageFiles: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], java.lang.String) => scala.Unit,
+    InstallPackageNames: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], java.lang.String) => scala.Unit,
+    InstallPrinterDrivers: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], java.lang.String) => scala.Unit,
+    InstallProvideFiles: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], java.lang.String) => scala.Unit,
+    InstallResources: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], java.lang.String) => scala.Unit,
+    RemovePackageByFiles: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], java.lang.String) => scala.Unit,
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XModify = {
-    val __obj = js.Dynamic.literal(InstallCatalogs = InstallCatalogs, InstallFontconfigResources = InstallFontconfigResources, InstallGStreamerResources = InstallGStreamerResources, InstallMimeTypes = InstallMimeTypes, InstallPackageFiles = InstallPackageFiles, InstallPackageNames = InstallPackageNames, InstallPrinterDrivers = InstallPrinterDrivers, InstallProvideFiles = InstallProvideFiles, InstallResources = InstallResources, RemovePackageByFiles = RemovePackageByFiles, acquire = acquire, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(InstallCatalogs = js.Any.fromFunction3(InstallCatalogs), InstallFontconfigResources = js.Any.fromFunction3(InstallFontconfigResources), InstallGStreamerResources = js.Any.fromFunction3(InstallGStreamerResources), InstallMimeTypes = js.Any.fromFunction3(InstallMimeTypes), InstallPackageFiles = js.Any.fromFunction3(InstallPackageFiles), InstallPackageNames = js.Any.fromFunction3(InstallPackageNames), InstallPrinterDrivers = js.Any.fromFunction3(InstallPrinterDrivers), InstallProvideFiles = js.Any.fromFunction3(InstallProvideFiles), InstallResources = js.Any.fromFunction4(InstallResources), RemovePackageByFiles = js.Any.fromFunction3(RemovePackageByFiles), acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XModify]
   }

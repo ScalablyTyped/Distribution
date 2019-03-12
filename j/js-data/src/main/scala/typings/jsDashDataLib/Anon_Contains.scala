@@ -25,30 +25,30 @@ trait Anon_Contains extends js.Object {
 object Anon_Contains {
   @scala.inline
   def apply(
-    `!=`: js.Function2[js.Any, js.Any, scala.Boolean],
-    `!==`: js.Function2[js.Any, js.Any, scala.Boolean],
-    `<`: js.Function2[js.Any, js.Any, scala.Boolean],
-    `<=`: js.Function2[js.Any, js.Any, scala.Boolean],
-    `==`: js.Function2[js.Any, js.Any, scala.Boolean],
-    `===`: js.Function2[js.Any, js.Any, scala.Boolean],
-    `>`: js.Function2[js.Any, js.Any, scala.Boolean],
-    `>=`: js.Function2[js.Any, js.Any, scala.Boolean],
-    contains: js.Function2[js.Any, js.Any, scala.Boolean],
-    in: js.Function2[js.Any, js.Any, scala.Boolean],
-    isectEmpty: js.Function2[js.Any, js.Any, scala.Boolean],
-    isectNotEmpty: js.Function2[js.Any, js.Any, scala.Double],
-    notContains: js.Function2[js.Any, js.Any, scala.Boolean],
-    notIn: js.Function2[js.Any, js.Any, scala.Boolean]
+    `!=`: (js.Any, js.Any) => scala.Boolean,
+    `!==`: (js.Any, js.Any) => scala.Boolean,
+    `<`: (js.Any, js.Any) => scala.Boolean,
+    `<=`: (js.Any, js.Any) => scala.Boolean,
+    `==`: (js.Any, js.Any) => scala.Boolean,
+    `===`: (js.Any, js.Any) => scala.Boolean,
+    `>`: (js.Any, js.Any) => scala.Boolean,
+    `>=`: (js.Any, js.Any) => scala.Boolean,
+    contains: (js.Any, js.Any) => scala.Boolean,
+    in: (js.Any, js.Any) => scala.Boolean,
+    isectEmpty: (js.Any, js.Any) => scala.Boolean,
+    isectNotEmpty: (js.Any, js.Any) => scala.Double,
+    notContains: (js.Any, js.Any) => scala.Boolean,
+    notIn: (js.Any, js.Any) => scala.Boolean
   ): Anon_Contains = {
-    val __obj = js.Dynamic.literal(contains = contains, in = in, isectEmpty = isectEmpty, isectNotEmpty = isectNotEmpty, notContains = notContains, notIn = notIn)
-    __obj.updateDynamic("!=")(`!=`)
-    __obj.updateDynamic("!==")(`!==`)
-    __obj.updateDynamic("<")(`<`)
-    __obj.updateDynamic("<=")(`<=`)
-    __obj.updateDynamic("==")(`==`)
-    __obj.updateDynamic("===")(`===`)
-    __obj.updateDynamic(">")(`>`)
-    __obj.updateDynamic(">=")(`>=`)
+    val __obj = js.Dynamic.literal(contains = js.Any.fromFunction2(contains), in = js.Any.fromFunction2(in), isectEmpty = js.Any.fromFunction2(isectEmpty), isectNotEmpty = js.Any.fromFunction2(isectNotEmpty), notContains = js.Any.fromFunction2(notContains), notIn = js.Any.fromFunction2(notIn))
+    __obj.updateDynamic("!=")(js.Any.fromFunction2(`!=`))
+    __obj.updateDynamic("!==")(js.Any.fromFunction2(`!==`))
+    __obj.updateDynamic("<")(js.Any.fromFunction2(`<`))
+    __obj.updateDynamic("<=")(js.Any.fromFunction2(`<=`))
+    __obj.updateDynamic("==")(js.Any.fromFunction2(`==`))
+    __obj.updateDynamic("===")(js.Any.fromFunction2(`===`))
+    __obj.updateDynamic(">")(js.Any.fromFunction2(`>`))
+    __obj.updateDynamic(">=")(js.Any.fromFunction2(`>=`))
     __obj.asInstanceOf[Anon_Contains]
   }
 }

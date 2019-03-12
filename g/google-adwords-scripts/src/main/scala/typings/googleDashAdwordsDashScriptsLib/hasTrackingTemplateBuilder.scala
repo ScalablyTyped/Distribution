@@ -12,11 +12,8 @@ trait hasTrackingTemplateBuilder[B] extends js.Object {
 
 object hasTrackingTemplateBuilder {
   @scala.inline
-  def apply[B](
-    withCustomParameters: js.Function1[js.Object, B],
-    withTrackingTemplate: js.Function1[java.lang.String, B]
-  ): hasTrackingTemplateBuilder[B] = {
-    val __obj = js.Dynamic.literal(withCustomParameters = withCustomParameters, withTrackingTemplate = withTrackingTemplate)
+  def apply[B](withCustomParameters: js.Object => B, withTrackingTemplate: java.lang.String => B): hasTrackingTemplateBuilder[B] = {
+    val __obj = js.Dynamic.literal(withCustomParameters = js.Any.fromFunction1(withCustomParameters), withTrackingTemplate = js.Any.fromFunction1(withTrackingTemplate))
   
     __obj.asInstanceOf[hasTrackingTemplateBuilder[B]]
   }

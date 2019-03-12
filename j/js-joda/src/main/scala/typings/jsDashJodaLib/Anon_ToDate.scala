@@ -12,8 +12,8 @@ trait Anon_ToDate extends js.Object {
 
 object Anon_ToDate {
   @scala.inline
-  def apply(toDate: js.Function0[stdLib.Date], toEpochMilli: js.Function0[scala.Double]): Anon_ToDate = {
-    val __obj = js.Dynamic.literal(toDate = toDate, toEpochMilli = toEpochMilli)
+  def apply(toDate: () => stdLib.Date, toEpochMilli: () => scala.Double): Anon_ToDate = {
+    val __obj = js.Dynamic.literal(toDate = js.Any.fromFunction0(toDate), toEpochMilli = js.Any.fromFunction0(toEpochMilli))
   
     __obj.asInstanceOf[Anon_ToDate]
   }

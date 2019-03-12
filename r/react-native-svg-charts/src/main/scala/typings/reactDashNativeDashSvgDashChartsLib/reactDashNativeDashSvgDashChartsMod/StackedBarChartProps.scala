@@ -39,7 +39,7 @@ object StackedBarChartProps {
     animationDuration: scala.Int | scala.Double = null,
     contentInset: reactDashNativeDashSvgDashChartsLib.Anon_Bottom = null,
     curve: d3DashShapeLib.d3DashShapeMod.CurveFactory = null,
-    extra: js.Function0[js.Object] = null,
+    extra: () => js.Object = null,
     extras: js.Array[_] = null,
     gridMax: scala.Int | scala.Double = null,
     gridMin: scala.Int | scala.Double = null,
@@ -49,13 +49,10 @@ object StackedBarChartProps {
     numberOfTicks: scala.Int | scala.Double = null,
     offset: OffsetFunction = null,
     order: OrderFunction = null,
-    renderGradient: js.Function1[
-      /* props */ reactDashNativeDashSvgDashChartsLib.Anon_Id, 
-      reactLib.reactMod.Component[
-        reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.LinearGradientProps | reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.RadialGradientProps, 
-        js.Object, 
-        _
-      ]
+    renderGradient: /* props */ reactDashNativeDashSvgDashChartsLib.Anon_Id => reactLib.reactMod.Component[
+      reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.LinearGradientProps | reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.RadialGradientProps, 
+      js.Object, 
+      _
     ] = null,
     showGrid: js.UndefOr[scala.Boolean] = js.undefined,
     spacingInner: scala.Int | scala.Double = null,
@@ -74,7 +71,7 @@ object StackedBarChartProps {
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (contentInset != null) __obj.updateDynamic("contentInset")(contentInset)
     if (curve != null) __obj.updateDynamic("curve")(curve)
-    if (extra != null) __obj.updateDynamic("extra")(extra)
+    if (extra != null) __obj.updateDynamic("extra")(js.Any.fromFunction0(extra))
     if (extras != null) __obj.updateDynamic("extras")(extras)
     if (gridMax != null) __obj.updateDynamic("gridMax")(gridMax.asInstanceOf[js.Any])
     if (gridMin != null) __obj.updateDynamic("gridMin")(gridMin.asInstanceOf[js.Any])
@@ -84,7 +81,7 @@ object StackedBarChartProps {
     if (numberOfTicks != null) __obj.updateDynamic("numberOfTicks")(numberOfTicks.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset)
     if (order != null) __obj.updateDynamic("order")(order)
-    if (renderGradient != null) __obj.updateDynamic("renderGradient")(renderGradient)
+    if (renderGradient != null) __obj.updateDynamic("renderGradient")(js.Any.fromFunction1(renderGradient))
     if (!js.isUndefined(showGrid)) __obj.updateDynamic("showGrid")(showGrid)
     if (spacingInner != null) __obj.updateDynamic("spacingInner")(spacingInner.asInstanceOf[js.Any])
     if (spacingOuter != null) __obj.updateDynamic("spacingOuter")(spacingOuter.asInstanceOf[js.Any])

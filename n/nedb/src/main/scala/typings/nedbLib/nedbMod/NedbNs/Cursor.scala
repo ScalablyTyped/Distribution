@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Cursor[T] extends js.Object {
-  def exec(callback: js.Function2[/* err */ nodeLib.Error, /* documents */ js.Array[T], scala.Unit]): scala.Unit
+  def exec(callback: js.Function2[/* err */ stdLib.Error, /* documents */ js.Array[T], scala.Unit]): scala.Unit
   def limit(n: scala.Double): Cursor[T]
   def projection(query: js.Any): Cursor[T]
   def skip(n: scala.Double): Cursor[T]
@@ -16,16 +16,13 @@ trait Cursor[T] extends js.Object {
 object Cursor {
   @scala.inline
   def apply[T](
-    exec: js.Function1[
-      js.Function2[/* err */ nodeLib.Error, /* documents */ js.Array[T], scala.Unit], 
-      scala.Unit
-    ],
-    limit: js.Function1[scala.Double, Cursor[T]],
-    projection: js.Function1[js.Any, Cursor[T]],
-    skip: js.Function1[scala.Double, Cursor[T]],
-    sort: js.Function1[js.Any, Cursor[T]]
+    exec: js.Function2[/* err */ stdLib.Error, /* documents */ js.Array[T], scala.Unit] => scala.Unit,
+    limit: scala.Double => Cursor[T],
+    projection: js.Any => Cursor[T],
+    skip: scala.Double => Cursor[T],
+    sort: js.Any => Cursor[T]
   ): Cursor[T] = {
-    val __obj = js.Dynamic.literal(exec = exec, limit = limit, projection = projection, skip = skip, sort = sort)
+    val __obj = js.Dynamic.literal(exec = js.Any.fromFunction1(exec), limit = js.Any.fromFunction1(limit), projection = js.Any.fromFunction1(projection), skip = js.Any.fromFunction1(skip), sort = js.Any.fromFunction1(sort))
   
     __obj.asInstanceOf[Cursor[T]]
   }

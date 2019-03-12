@@ -30,13 +30,13 @@ object XScaling {
   @scala.inline
   def apply(
     InverseScaling: XScaling,
-    acquire: js.Function0[scala.Unit],
-    doScaling: js.Function1[scala.Double, scala.Double],
-    getInverseScaling: js.Function0[XScaling],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    doScaling: scala.Double => scala.Double,
+    getInverseScaling: () => XScaling,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XScaling = {
-    val __obj = js.Dynamic.literal(InverseScaling = InverseScaling, acquire = acquire, doScaling = doScaling, getInverseScaling = getInverseScaling, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(InverseScaling = InverseScaling, acquire = js.Any.fromFunction0(acquire), doScaling = js.Any.fromFunction1(doScaling), getInverseScaling = js.Any.fromFunction0(getInverseScaling), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XScaling]
   }

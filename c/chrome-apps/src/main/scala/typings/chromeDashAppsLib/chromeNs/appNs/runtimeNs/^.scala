@@ -23,9 +23,7 @@ object ^ extends js.Object {
   /**
     * Fired when an app is launched from the launcher.
     */
-  val onLaunched: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[/* launchData */ chromeDashAppsLib.chromeNs.appNs.runtimeNs.LaunchData, scala.Unit]
-  ] = js.native
+  val onLaunched: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* launchData */ LaunchData, scala.Unit]] = js.native
   /**
     * Fired at Chrome startup to apps that were running when Chrome last shut down,
     * or when apps have been requested to restart from their previous state for other reasons

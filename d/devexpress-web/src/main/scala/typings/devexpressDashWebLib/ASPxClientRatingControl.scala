@@ -49,31 +49,31 @@ trait ASPxClientRatingControl extends ASPxClientControl {
 object ASPxClientRatingControl {
   @scala.inline
   def apply(
-    AdjustControl: js.Function0[scala.Unit],
-    GetClientVisible: js.Function0[scala.Boolean],
-    GetHeight: js.Function0[scala.Double],
-    GetMainElement: js.Function0[js.Object],
-    GetParentControl: js.Function0[js.Object],
-    GetReadOnly: js.Function0[scala.Boolean],
-    GetTitle: js.Function1[scala.Double, java.lang.String],
-    GetValue: js.Function0[scala.Double],
-    GetVisible: js.Function0[scala.Boolean],
-    GetWidth: js.Function0[scala.Double],
-    InCallback: js.Function0[scala.Boolean],
+    AdjustControl: () => scala.Unit,
+    GetClientVisible: () => scala.Boolean,
+    GetHeight: () => scala.Double,
+    GetMainElement: () => js.Object,
+    GetParentControl: () => js.Object,
+    GetReadOnly: () => scala.Boolean,
+    GetTitle: scala.Double => java.lang.String,
+    GetValue: () => scala.Double,
+    GetVisible: () => scala.Boolean,
+    GetWidth: () => scala.Double,
+    InCallback: () => scala.Boolean,
     Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
     ItemClick: ASPxClientEvent[ASPxClientRatingControlItemClickEventHandler[ASPxClientRatingControl]],
     ItemMouseOut: ASPxClientEvent[ASPxClientRatingControlItemMouseEventHandler[ASPxClientRatingControl]],
     ItemMouseOver: ASPxClientEvent[ASPxClientRatingControlItemMouseEventHandler[ASPxClientRatingControl]],
-    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
-    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetHeight: js.Function1[scala.Double, scala.Unit],
-    SetReadOnly: js.Function1[scala.Boolean, scala.Unit],
-    SetValue: js.Function1[scala.Double, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetWidth: js.Function1[scala.Double, scala.Unit],
+    SendMessageToAssistiveTechnology: java.lang.String => scala.Unit,
+    SetClientVisible: scala.Boolean => scala.Unit,
+    SetHeight: scala.Double => scala.Unit,
+    SetReadOnly: scala.Boolean => scala.Unit,
+    SetValue: scala.Double => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
+    SetWidth: scala.Double => scala.Unit,
     name: java.lang.String
   ): ASPxClientRatingControl = {
-    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, GetClientVisible = GetClientVisible, GetHeight = GetHeight, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetReadOnly = GetReadOnly, GetTitle = GetTitle, GetValue = GetValue, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, ItemClick = ItemClick, ItemMouseOut = ItemMouseOut, ItemMouseOver = ItemMouseOver, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetReadOnly = SetReadOnly, SetValue = SetValue, SetVisible = SetVisible, SetWidth = SetWidth, name = name)
+    val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetHeight = js.Any.fromFunction0(GetHeight), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetReadOnly = js.Any.fromFunction0(GetReadOnly), GetTitle = js.Any.fromFunction1(GetTitle), GetValue = js.Any.fromFunction0(GetValue), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), InCallback = js.Any.fromFunction0(InCallback), Init = Init, ItemClick = ItemClick, ItemMouseOut = ItemMouseOut, ItemMouseOver = ItemMouseOver, SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetHeight = js.Any.fromFunction1(SetHeight), SetReadOnly = js.Any.fromFunction1(SetReadOnly), SetValue = js.Any.fromFunction1(SetValue), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), name = name)
   
     __obj.asInstanceOf[ASPxClientRatingControl]
   }

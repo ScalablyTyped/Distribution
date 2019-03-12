@@ -13,7 +13,7 @@ trait IGlobStatic
       /* pattern */ java.lang.String, 
       /* options */ IOptions, 
       /* cb */ js.Function2[
-        /* err */ nodeLib.Error | scala.Null, 
+        /* err */ stdLib.Error | scala.Null, 
         /* matches */ js.Array[java.lang.String], 
         scala.Unit
       ], 
@@ -22,7 +22,7 @@ trait IGlobStatic
      with org.scalablytyped.runtime.Instantiable2[
       /* pattern */ java.lang.String, 
       (/* cb */ js.Function2[
-        /* err */ nodeLib.Error | scala.Null, 
+        /* err */ stdLib.Error | scala.Null, 
         /* matches */ js.Array[java.lang.String], 
         scala.Unit
       ]) | (/* options */ IOptions), 

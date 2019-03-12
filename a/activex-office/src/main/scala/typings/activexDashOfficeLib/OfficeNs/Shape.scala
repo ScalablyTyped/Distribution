@@ -22,10 +22,10 @@ class Shape protected () extends js.Object {
   val Child: MsoTriState = js.native
   val ConnectionSiteCount: scala.Double = js.native
   val Connector: MsoTriState = js.native
-  val ConnectorFormat: ConnectorFormat = js.native
+  val ConnectorFormat: activexDashOfficeLib.OfficeNs.ConnectorFormat = js.native
   val Creator: scala.Double = js.native
   val Diagram: IMsoDiagram = js.native
-  val DiagramNode: DiagramNode = js.native
+  val DiagramNode: activexDashOfficeLib.OfficeNs.DiagramNode = js.native
   val Fill: FillFormat = js.native
   val Glow: GlowFormat = js.native
   @JSName("GroupItems")
@@ -46,18 +46,18 @@ class Shape protected () extends js.Object {
   var `Office.Shape_typekey`: Shape = js.native
   val Parent: js.Any = js.native
   val ParentGroup: Shape = js.native
-  val PictureFormat: PictureFormat = js.native
+  val PictureFormat: activexDashOfficeLib.OfficeNs.PictureFormat = js.native
   val RTF: java.lang.String = js.native
   val Reflection: ReflectionFormat = js.native
   var Rotation: scala.Double = js.native
-  val Script: Script = js.native
+  val Script: activexDashOfficeLib.OfficeNs.Script = js.native
   val Shadow: ShadowFormat = js.native
   var ShapeStyle: MsoShapeStyleIndex = js.native
-  val SmartArt: SmartArt = js.native
+  val SmartArt: activexDashOfficeLib.OfficeNs.SmartArt = js.native
   val SoftEdge: SoftEdgeFormat = js.native
   val TextEffect: TextEffectFormat = js.native
-  val TextFrame: TextFrame = js.native
-  val TextFrame2: TextFrame2 = js.native
+  val TextFrame: activexDashOfficeLib.OfficeNs.TextFrame = js.native
+  val TextFrame2: activexDashOfficeLib.OfficeNs.TextFrame2 = js.native
   val ThreeD: ThreeDFormat = js.native
   var Title: java.lang.String = js.native
   var Top: scala.Double = js.native

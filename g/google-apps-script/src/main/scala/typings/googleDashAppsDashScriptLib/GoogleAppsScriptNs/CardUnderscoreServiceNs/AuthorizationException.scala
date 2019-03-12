@@ -16,13 +16,13 @@ trait AuthorizationException extends js.Object {
 object AuthorizationException {
   @scala.inline
   def apply(
-    printJson: js.Function0[java.lang.String],
-    setAuthorizationUrl: js.Function1[java.lang.String, AuthorizationException],
-    setCustomUiCallback: js.Function1[java.lang.String, AuthorizationException],
-    setResourceDisplayName: js.Function1[java.lang.String, AuthorizationException],
-    throwException: js.Function0[scala.Unit]
+    printJson: () => java.lang.String,
+    setAuthorizationUrl: java.lang.String => AuthorizationException,
+    setCustomUiCallback: java.lang.String => AuthorizationException,
+    setResourceDisplayName: java.lang.String => AuthorizationException,
+    throwException: () => scala.Unit
   ): AuthorizationException = {
-    val __obj = js.Dynamic.literal(printJson = printJson, setAuthorizationUrl = setAuthorizationUrl, setCustomUiCallback = setCustomUiCallback, setResourceDisplayName = setResourceDisplayName, throwException = throwException)
+    val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson), setAuthorizationUrl = js.Any.fromFunction1(setAuthorizationUrl), setCustomUiCallback = js.Any.fromFunction1(setCustomUiCallback), setResourceDisplayName = js.Any.fromFunction1(setResourceDisplayName), throwException = js.Any.fromFunction0(throwException))
   
     __obj.asInstanceOf[AuthorizationException]
   }

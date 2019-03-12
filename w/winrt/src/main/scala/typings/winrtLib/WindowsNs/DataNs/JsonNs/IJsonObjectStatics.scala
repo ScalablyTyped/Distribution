@@ -12,11 +12,8 @@ trait IJsonObjectStatics extends js.Object {
 
 object IJsonObjectStatics {
   @scala.inline
-  def apply(
-    parse: js.Function1[java.lang.String, JsonObject],
-    tryParse: js.Function1[java.lang.String, winrtLib.Anon_ResultSucceeded]
-  ): IJsonObjectStatics = {
-    val __obj = js.Dynamic.literal(parse = parse, tryParse = tryParse)
+  def apply(parse: java.lang.String => JsonObject, tryParse: java.lang.String => winrtLib.Anon_ResultSucceeded): IJsonObjectStatics = {
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), tryParse = js.Any.fromFunction1(tryParse))
   
     __obj.asInstanceOf[IJsonObjectStatics]
   }

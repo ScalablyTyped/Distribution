@@ -20,9 +20,9 @@ object JQueryCLEditorStatic {
   def apply(
     buttons: js.Array[JQueryCLEditorButtonDefinition],
     defaultOptions: JQueryCLEditorOptions,
-    imagesPath: js.Function0[java.lang.String]
+    imagesPath: () => java.lang.String
   ): JQueryCLEditorStatic = {
-    val __obj = js.Dynamic.literal(buttons = buttons, defaultOptions = defaultOptions, imagesPath = imagesPath)
+    val __obj = js.Dynamic.literal(buttons = buttons, defaultOptions = defaultOptions, imagesPath = js.Any.fromFunction0(imagesPath))
   
     __obj.asInstanceOf[JQueryCLEditorStatic]
   }

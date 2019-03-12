@@ -40,13 +40,13 @@ object ViewPropsIOS {
   def apply(
     accessibilityActions: js.Array[java.lang.String] = null,
     accessibilityViewIsModal: js.UndefOr[scala.Boolean] = js.undefined,
-    onAccessibilityAction: js.Function0[scala.Unit] = null,
+    onAccessibilityAction: () => scala.Unit = null,
     shouldRasterizeIOS: js.UndefOr[scala.Boolean] = js.undefined
   ): ViewPropsIOS = {
     val __obj = js.Dynamic.literal()
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
     if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal)
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(onAccessibilityAction)
+    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction0(onAccessibilityAction))
     if (!js.isUndefined(shouldRasterizeIOS)) __obj.updateDynamic("shouldRasterizeIOS")(shouldRasterizeIOS)
     __obj.asInstanceOf[ViewPropsIOS]
   }

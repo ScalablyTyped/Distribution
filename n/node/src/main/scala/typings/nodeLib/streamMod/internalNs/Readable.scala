@@ -13,8 +13,14 @@ trait Readable
   var asyncIterator_Readable: js.Function0[nodeLib.AsyncIterableIterator[_]] = js.native
   val readableHighWaterMark: scala.Double = js.native
   val readableLength: scala.Double = js.native
-  def _destroy(error: nodeLib.Error, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
-  def _destroy(error: scala.Null, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
+  def _destroy(
+    error: nodeLib.Error,
+    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+  ): scala.Unit = js.native
+  def _destroy(
+    error: scala.Null,
+    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+  ): scala.Unit = js.native
   def _read(size: scala.Double): scala.Unit = js.native
   /**
     * Event emitter

@@ -155,37 +155,16 @@ trait StudentSubmissionsResource extends js.Object {
 object StudentSubmissionsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StudentSubmission]
-    ],
-    list: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdCourseWorkId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListStudentSubmissionsResponse]
-    ],
-    modifyAttachments: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StudentSubmission]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdCourseWorkIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StudentSubmission]
-    ],
-    reclaim: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    `return`: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    turnIn: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ]
+    get: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId => gapiDotClientLib.gapiNs.clientNs.Request[StudentSubmission],
+    list: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdCourseWorkId => gapiDotClientLib.gapiNs.clientNs.Request[ListStudentSubmissionsResponse],
+    modifyAttachments: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId => gapiDotClientLib.gapiNs.clientNs.Request[StudentSubmission],
+    patch: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdCourseWorkIdFields => gapiDotClientLib.gapiNs.clientNs.Request[StudentSubmission],
+    reclaim: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    `return`: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    turnIn: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId => gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   ): StudentSubmissionsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list, modifyAttachments = modifyAttachments, patch = patch, reclaim = reclaim, turnIn = turnIn)
-    __obj.updateDynamic("return")(`return`)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), modifyAttachments = js.Any.fromFunction1(modifyAttachments), patch = js.Any.fromFunction1(patch), reclaim = js.Any.fromFunction1(reclaim), turnIn = js.Any.fromFunction1(turnIn))
+    __obj.updateDynamic("return")(js.Any.fromFunction1(`return`))
     __obj.asInstanceOf[StudentSubmissionsResource]
   }
 }

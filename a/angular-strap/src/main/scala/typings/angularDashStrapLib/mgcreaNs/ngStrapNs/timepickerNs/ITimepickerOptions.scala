@@ -53,10 +53,10 @@ object ITimepickerOptions {
     minTime: stdLib.Date = null,
     minuteStep: scala.Int | scala.Double = null,
     modelTimeFormat: java.lang.String = null,
-    onBeforeHide: js.Function1[/* timepicker */ ITimepicker, scala.Unit] = null,
-    onBeforeShow: js.Function1[/* timepicker */ ITimepicker, scala.Unit] = null,
-    onHide: js.Function1[/* timepicker */ ITimepicker, scala.Unit] = null,
-    onShow: js.Function1[/* timepicker */ ITimepicker, scala.Unit] = null,
+    onBeforeHide: /* timepicker */ ITimepicker => scala.Unit = null,
+    onBeforeShow: /* timepicker */ ITimepicker => scala.Unit = null,
+    onHide: /* timepicker */ ITimepicker => scala.Unit = null,
+    onShow: /* timepicker */ ITimepicker => scala.Unit = null,
     placement: java.lang.String = null,
     roundDisplay: js.UndefOr[scala.Boolean] = js.undefined,
     secondStep: scala.Int | scala.Double = null,
@@ -81,10 +81,10 @@ object ITimepickerOptions {
     if (minTime != null) __obj.updateDynamic("minTime")(minTime)
     if (minuteStep != null) __obj.updateDynamic("minuteStep")(minuteStep.asInstanceOf[js.Any])
     if (modelTimeFormat != null) __obj.updateDynamic("modelTimeFormat")(modelTimeFormat)
-    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(onBeforeHide)
-    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(onBeforeShow)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(js.Any.fromFunction1(onBeforeHide))
+    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(js.Any.fromFunction1(onBeforeShow))
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction1(onHide))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (placement != null) __obj.updateDynamic("placement")(placement)
     if (!js.isUndefined(roundDisplay)) __obj.updateDynamic("roundDisplay")(roundDisplay)
     if (secondStep != null) __obj.updateDynamic("secondStep")(secondStep.asInstanceOf[js.Any])

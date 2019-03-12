@@ -39,12 +39,12 @@ object Anon_Elem {
   @scala.inline
   def apply(
     fns: paymentLib.paymentMod.Fns,
-    formatCardCVC: js.Function1[stdLib.HTMLInputElement, stdLib.HTMLInputElement],
-    formatCardExpiry: js.Function1[stdLib.HTMLInputElement, stdLib.HTMLInputElement],
-    formatCardNumber: js.Function1[stdLib.HTMLInputElement, stdLib.HTMLInputElement],
-    restrictNumeric: js.Function1[stdLib.HTMLInputElement, stdLib.HTMLInputElement]
+    formatCardCVC: stdLib.HTMLInputElement => stdLib.HTMLInputElement,
+    formatCardExpiry: stdLib.HTMLInputElement => stdLib.HTMLInputElement,
+    formatCardNumber: stdLib.HTMLInputElement => stdLib.HTMLInputElement,
+    restrictNumeric: stdLib.HTMLInputElement => stdLib.HTMLInputElement
   ): Anon_Elem = {
-    val __obj = js.Dynamic.literal(fns = fns, formatCardCVC = formatCardCVC, formatCardExpiry = formatCardExpiry, formatCardNumber = formatCardNumber, restrictNumeric = restrictNumeric)
+    val __obj = js.Dynamic.literal(fns = fns, formatCardCVC = js.Any.fromFunction1(formatCardCVC), formatCardExpiry = js.Any.fromFunction1(formatCardExpiry), formatCardNumber = js.Any.fromFunction1(formatCardNumber), restrictNumeric = js.Any.fromFunction1(restrictNumeric))
   
     __obj.asInstanceOf[Anon_Elem]
   }

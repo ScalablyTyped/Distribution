@@ -14,11 +14,11 @@ trait PropertiesService extends js.Object {
 object PropertiesService {
   @scala.inline
   def apply(
-    getDocumentProperties: js.Function0[Properties],
-    getScriptProperties: js.Function0[Properties],
-    getUserProperties: js.Function0[Properties]
+    getDocumentProperties: () => Properties,
+    getScriptProperties: () => Properties,
+    getUserProperties: () => Properties
   ): PropertiesService = {
-    val __obj = js.Dynamic.literal(getDocumentProperties = getDocumentProperties, getScriptProperties = getScriptProperties, getUserProperties = getUserProperties)
+    val __obj = js.Dynamic.literal(getDocumentProperties = js.Any.fromFunction0(getDocumentProperties), getScriptProperties = js.Any.fromFunction0(getScriptProperties), getUserProperties = js.Any.fromFunction0(getUserProperties))
   
     __obj.asInstanceOf[PropertiesService]
   }

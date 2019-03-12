@@ -14,15 +14,15 @@ object CustomRouteView {
   @scala.inline
   def apply(
     destroyed: scala.Boolean,
-    getElement: js.Function0[stdLib.HTMLElement],
-    getParams: js.Function0[RouteParams],
-    getRouteID: js.Function0[java.lang.String],
-    getRouteType: js.Function0[RouteTypes],
-    on_destroy: js.Function2[inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit], scala.Unit],
-    setFullWidth: js.Function1[scala.Boolean, scala.Unit]
+    getElement: () => stdLib.HTMLElement,
+    getParams: () => RouteParams,
+    getRouteID: () => java.lang.String,
+    getRouteType: () => RouteTypes,
+    on_destroy: (inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit]) => scala.Unit,
+    setFullWidth: scala.Boolean => scala.Unit
   ): CustomRouteView = {
-    val __obj = js.Dynamic.literal(destroyed = destroyed, getElement = getElement, getParams = getParams, getRouteID = getRouteID, getRouteType = getRouteType, setFullWidth = setFullWidth)
-    __obj.updateDynamic("on")(on_destroy)
+    val __obj = js.Dynamic.literal(destroyed = destroyed, getElement = js.Any.fromFunction0(getElement), getParams = js.Any.fromFunction0(getParams), getRouteID = js.Any.fromFunction0(getRouteID), getRouteType = js.Any.fromFunction0(getRouteType), setFullWidth = js.Any.fromFunction1(setFullWidth))
+    __obj.updateDynamic("on")(js.Any.fromFunction2(on_destroy))
     __obj.asInstanceOf[CustomRouteView]
   }
 }

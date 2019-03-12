@@ -65,14 +65,14 @@ object WorkflowAnnotationDisplayDetails {
     centerY: scala.Double,
     constructor: js.Function,
     fillColor: Color,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     height: scala.Double,
     label: java.lang.String,
     labelColor: Color,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     width: scala.Double
   ): WorkflowAnnotationDisplayDetails = {
-    val __obj = js.Dynamic.literal(OutlineColor = OutlineColor, centerX = centerX, centerY = centerY, constructor = constructor, fillColor = fillColor, hasOwnProperty = hasOwnProperty, height = height, label = label, labelColor = labelColor, propertyIsEnumerable = propertyIsEnumerable, width = width)
+    val __obj = js.Dynamic.literal(OutlineColor = OutlineColor, centerX = centerX, centerY = centerY, constructor = constructor, fillColor = fillColor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), height = height, label = label, labelColor = labelColor, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), width = width)
   
     __obj.asInstanceOf[WorkflowAnnotationDisplayDetails]
   }

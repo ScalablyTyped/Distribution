@@ -13,8 +13,8 @@ trait RealtimeBase extends RestBase {
 
 object RealtimeBase {
   @scala.inline
-  def apply(clientId: java.lang.String, close: js.Function0[scala.Unit], connect: js.Function0[scala.Unit]): RealtimeBase = {
-    val __obj = js.Dynamic.literal(clientId = clientId, close = close, connect = connect)
+  def apply(clientId: java.lang.String, close: () => scala.Unit, connect: () => scala.Unit): RealtimeBase = {
+    val __obj = js.Dynamic.literal(clientId = clientId, close = js.Any.fromFunction0(close), connect = js.Any.fromFunction0(connect))
   
     __obj.asInstanceOf[RealtimeBase]
   }

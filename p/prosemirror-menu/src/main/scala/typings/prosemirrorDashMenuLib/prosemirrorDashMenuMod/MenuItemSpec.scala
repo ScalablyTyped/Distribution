@@ -103,41 +103,26 @@ object MenuItemSpec {
     `class`: java.lang.String,
     css: java.lang.String,
     execEvent: java.lang.String,
-    run: js.Function4[
-      prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
-      js.Function1[/* p */ prosemirrorDashStateLib.prosemirrorDashStateMod.Transaction[S], scala.Unit], 
-      prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S], 
-      stdLib.Event, 
-      scala.Unit
-    ],
-    active: js.Function1[
-      /* p */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
-      scala.Boolean
-    ] = null,
-    enable: js.Function1[
-      /* p */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
-      scala.Boolean
-    ] = null,
+    run: (prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], js.Function1[/* p */ prosemirrorDashStateLib.prosemirrorDashStateMod.Transaction[S], scala.Unit], prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S], stdLib.Event) => scala.Unit,
+    active: /* p */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S] => scala.Boolean = null,
+    enable: /* p */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S] => scala.Boolean = null,
     icon: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     label: java.lang.String = null,
-    render: js.Function1[/* p */ prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S], stdLib.Node] = null,
-    select: js.Function1[
-      /* p */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
-      scala.Boolean
-    ] = null,
+    render: /* p */ prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S] => stdLib.Node = null,
+    select: /* p */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S] => scala.Boolean = null,
     title: java.lang.String | (js.Function1[
       /* p */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
       java.lang.String
     ]) = null
   ): MenuItemSpec[S] = {
-    val __obj = js.Dynamic.literal(css = css, execEvent = execEvent, run = run)
+    val __obj = js.Dynamic.literal(css = css, execEvent = execEvent, run = js.Any.fromFunction4(run))
     __obj.updateDynamic("class")(`class`)
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (enable != null) __obj.updateDynamic("enable")(enable)
+    if (active != null) __obj.updateDynamic("active")(js.Any.fromFunction1(active))
+    if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction1(enable))
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (label != null) __obj.updateDynamic("label")(label)
-    if (render != null) __obj.updateDynamic("render")(render)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItemSpec[S]]
   }

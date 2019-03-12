@@ -37,16 +37,10 @@ object ReferencesResource {
   @scala.inline
   def apply(
     bases: BasesResource,
-    get: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Reference]
-    ],
-    search: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SearchReferencesResponse]
-    ]
+    get: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Reference],
+    search: gapiDotClientDotGenomicsLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[SearchReferencesResponse]
   ): ReferencesResource = {
-    val __obj = js.Dynamic.literal(bases = bases, get = get, search = search)
+    val __obj = js.Dynamic.literal(bases = bases, get = js.Any.fromFunction1(get), search = js.Any.fromFunction1(search))
   
     __obj.asInstanceOf[ReferencesResource]
   }

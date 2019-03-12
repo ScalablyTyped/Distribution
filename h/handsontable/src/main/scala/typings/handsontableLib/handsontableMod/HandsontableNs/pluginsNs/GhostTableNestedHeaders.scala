@@ -14,13 +14,8 @@ trait GhostTableNestedHeaders extends js.Object {
 
 object GhostTableNestedHeaders {
   @scala.inline
-  def apply(
-    clear: js.Function0[scala.Unit],
-    container: js.Any,
-    nestedHeaders: NestedHeaders,
-    widthsCache: js.Array[_]
-  ): GhostTableNestedHeaders = {
-    val __obj = js.Dynamic.literal(clear = clear, container = container, nestedHeaders = nestedHeaders, widthsCache = widthsCache)
+  def apply(clear: () => scala.Unit, container: js.Any, nestedHeaders: NestedHeaders, widthsCache: js.Array[_]): GhostTableNestedHeaders = {
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), container = container, nestedHeaders = nestedHeaders, widthsCache = widthsCache)
   
     __obj.asInstanceOf[GhostTableNestedHeaders]
   }

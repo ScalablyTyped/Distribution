@@ -15,12 +15,12 @@ object XDocumentView {
   @scala.inline
   def apply(
     DefaultView: XAbstractView,
-    acquire: js.Function0[scala.Unit],
-    getDefaultView: js.Function0[XAbstractView],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDefaultView: () => XAbstractView,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDocumentView = {
-    val __obj = js.Dynamic.literal(DefaultView = DefaultView, acquire = acquire, getDefaultView = getDefaultView, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(DefaultView = DefaultView, acquire = js.Any.fromFunction0(acquire), getDefaultView = js.Any.fromFunction0(getDefaultView), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDocumentView]
   }

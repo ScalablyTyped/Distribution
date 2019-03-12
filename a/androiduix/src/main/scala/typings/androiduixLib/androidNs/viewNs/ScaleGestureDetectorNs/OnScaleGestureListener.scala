@@ -14,11 +14,11 @@ trait OnScaleGestureListener extends js.Object {
 object OnScaleGestureListener {
   @scala.inline
   def apply(
-    onScale: js.Function1[androiduixLib.androidNs.viewNs.ScaleGestureDetector, scala.Boolean],
-    onScaleBegin: js.Function1[androiduixLib.androidNs.viewNs.ScaleGestureDetector, scala.Boolean],
-    onScaleEnd: js.Function1[androiduixLib.androidNs.viewNs.ScaleGestureDetector, scala.Unit]
+    onScale: androiduixLib.androidNs.viewNs.ScaleGestureDetector => scala.Boolean,
+    onScaleBegin: androiduixLib.androidNs.viewNs.ScaleGestureDetector => scala.Boolean,
+    onScaleEnd: androiduixLib.androidNs.viewNs.ScaleGestureDetector => scala.Unit
   ): OnScaleGestureListener = {
-    val __obj = js.Dynamic.literal(onScale = onScale, onScaleBegin = onScaleBegin, onScaleEnd = onScaleEnd)
+    val __obj = js.Dynamic.literal(onScale = js.Any.fromFunction1(onScale), onScaleBegin = js.Any.fromFunction1(onScaleBegin), onScaleEnd = js.Any.fromFunction1(onScaleEnd))
   
     __obj.asInstanceOf[OnScaleGestureListener]
   }

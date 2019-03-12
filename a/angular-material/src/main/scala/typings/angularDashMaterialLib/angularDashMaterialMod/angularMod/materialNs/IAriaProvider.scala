@@ -11,8 +11,8 @@ trait IAriaProvider extends js.Object {
 
 object IAriaProvider {
   @scala.inline
-  def apply(disableWarnings: js.Function0[scala.Unit]): IAriaProvider = {
-    val __obj = js.Dynamic.literal(disableWarnings = disableWarnings)
+  def apply(disableWarnings: () => scala.Unit): IAriaProvider = {
+    val __obj = js.Dynamic.literal(disableWarnings = js.Any.fromFunction0(disableWarnings))
   
     __obj.asInstanceOf[IAriaProvider]
   }

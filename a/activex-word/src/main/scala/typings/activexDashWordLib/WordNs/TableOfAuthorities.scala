@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.TableOfAuthorities")
 @js.native
 class TableOfAuthorities protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var Bookmark: java.lang.String = js.native
   var Category: scala.Double = js.native
   val Creator: scala.Double = js.native
@@ -20,7 +20,7 @@ class TableOfAuthorities protected () extends js.Object {
   var PageRangeSeparator: java.lang.String = js.native
   val Parent: js.Any = js.native
   var Passim: scala.Boolean = js.native
-  val Range: Range = js.native
+  val Range: activexDashWordLib.WordNs.Range = js.native
   var Separator: java.lang.String = js.native
   var TabLeader: WdTabLeader = js.native
   var `Word.TableOfAuthorities_typekey`: TableOfAuthorities = js.native

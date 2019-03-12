@@ -49,15 +49,15 @@ trait XAuthorizable
 object XAuthorizable {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getGrantablePrivileges: js.Function2[java.lang.String, scala.Double, scala.Double],
-    getPrivileges: js.Function2[java.lang.String, scala.Double, scala.Double],
-    grantPrivileges: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    revokePrivileges: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    getGrantablePrivileges: (java.lang.String, scala.Double) => scala.Double,
+    getPrivileges: (java.lang.String, scala.Double) => scala.Double,
+    grantPrivileges: (java.lang.String, scala.Double, scala.Double) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    revokePrivileges: (java.lang.String, scala.Double, scala.Double) => scala.Unit
   ): XAuthorizable = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getGrantablePrivileges = getGrantablePrivileges, getPrivileges = getPrivileges, grantPrivileges = grantPrivileges, queryInterface = queryInterface, release = release, revokePrivileges = revokePrivileges)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getGrantablePrivileges = js.Any.fromFunction2(getGrantablePrivileges), getPrivileges = js.Any.fromFunction2(getPrivileges), grantPrivileges = js.Any.fromFunction3(grantPrivileges), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), revokePrivileges = js.Any.fromFunction3(revokePrivileges))
   
     __obj.asInstanceOf[XAuthorizable]
   }

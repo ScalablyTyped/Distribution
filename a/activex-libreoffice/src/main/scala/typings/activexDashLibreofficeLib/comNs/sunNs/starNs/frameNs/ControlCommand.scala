@@ -14,7 +14,7 @@ trait ControlCommand extends js.Object {
     * specifies a sequence of named values which are used as argument for the command. The number and type of arguments depend on the the command and
     * control.
     */
-  var Arguments: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
+  var Arguments: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
   /** specifies the command which should be processed by the toolbar control. */
   var Command: java.lang.String
 }
@@ -22,7 +22,7 @@ trait ControlCommand extends js.Object {
 object ControlCommand {
   @scala.inline
   def apply(
-    Arguments: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    Arguments: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
     Command: java.lang.String
   ): ControlCommand = {
     val __obj = js.Dynamic.literal(Arguments = Arguments, Command = Command)

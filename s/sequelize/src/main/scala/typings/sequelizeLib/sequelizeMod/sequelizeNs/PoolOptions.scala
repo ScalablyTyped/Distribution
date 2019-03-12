@@ -46,7 +46,7 @@ object PoolOptions {
     idle: scala.Int | scala.Double = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
-    validate: js.Function1[/* client */ js.UndefOr[js.Any], scala.Boolean] = null
+    validate: /* client */ js.UndefOr[js.Any] => scala.Boolean = null
   ): PoolOptions = {
     val __obj = js.Dynamic.literal()
     if (acquire != null) __obj.updateDynamic("acquire")(acquire.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object PoolOptions {
     if (idle != null) __obj.updateDynamic("idle")(idle.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction1(validate))
     __obj.asInstanceOf[PoolOptions]
   }
 }

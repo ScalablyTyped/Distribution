@@ -17,7 +17,7 @@ object NativeProgressProps {
   @scala.inline
   def apply(
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    ProgressHTMLAttributes: reactLib.reactMod.ReactNs.ProgressHTMLAttributes[reactLib.HTMLProgressElement] = null,
+    ProgressHTMLAttributes: reactLib.reactMod.ReactNs.ProgressHTMLAttributes[stdLib.HTMLProgressElement] = null,
     color: reactDashFoundationLib.enumsMod.ProgressColors = null,
     max: scala.Int | scala.Double = null,
     value: scala.Int | scala.Double = null

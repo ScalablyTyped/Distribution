@@ -24,7 +24,7 @@ object FlyToOptions {
     center: LngLatLike = null,
     curve: scala.Int | scala.Double = null,
     duration: scala.Int | scala.Double = null,
-    easing: js.Function1[/* time */ scala.Double, scala.Double] = null,
+    easing: /* time */ scala.Double => scala.Double = null,
     maxDuration: scala.Int | scala.Double = null,
     minZoom: scala.Int | scala.Double = null,
     offset: PointLike = null,
@@ -40,7 +40,7 @@ object FlyToOptions {
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (curve != null) __obj.updateDynamic("curve")(curve.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
     if (maxDuration != null) __obj.updateDynamic("maxDuration")(maxDuration.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])

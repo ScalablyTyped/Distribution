@@ -28,13 +28,13 @@ object FingerprintOption {
   @scala.inline
   def apply(
     canvas: js.UndefOr[scala.Boolean] = js.undefined,
-    hasher: js.Function2[/* key */ java.lang.String, /* seed */ scala.Double, scala.Double] = null,
+    hasher: (/* key */ java.lang.String, /* seed */ scala.Double) => scala.Double = null,
     ie_activex: js.UndefOr[scala.Boolean] = js.undefined,
     screen_resolution: js.UndefOr[scala.Boolean] = js.undefined
   ): FingerprintOption = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(canvas)) __obj.updateDynamic("canvas")(canvas)
-    if (hasher != null) __obj.updateDynamic("hasher")(hasher)
+    if (hasher != null) __obj.updateDynamic("hasher")(js.Any.fromFunction2(hasher))
     if (!js.isUndefined(ie_activex)) __obj.updateDynamic("ie_activex")(ie_activex)
     if (!js.isUndefined(screen_resolution)) __obj.updateDynamic("screen_resolution")(screen_resolution)
     __obj.asInstanceOf[FingerprintOption]

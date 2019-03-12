@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val reducer: reduxLib.reduxMod.Reducer[js.Any, reduxLib.reduxMod.AnyAction] = js.native
   def default[UIStateShape](): js.Function1[/* component */ js.Any, _] = js.native
-  def default[UIStateShape](params: reduxDashUiLib.reduxDashUiMod.uiParams[UIStateShape]): js.Function1[/* component */ js.Any, _] = js.native
+  def default[UIStateShape](params: uiParams[UIStateShape]): js.Function1[/* component */ js.Any, _] = js.native
 }
 

@@ -1,0 +1,18 @@
+package typings
+package reactDashNativeDashReadDashMoreDashTextLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashNativeDashReadDashMoreDashTextLibComponents {
+  @scala.inline
+  def ReactDashNativeDashReadDashMoreDashText: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashNativeDashReadDashMoreDashTextLib.reactDashNativeDashReadDashMoreDashTextMod.ReadMoreProps
+  ] = js.constructorOf[reactDashNativeDashReadDashMoreDashTextLib.reactDashNativeDashReadDashMoreDashTextMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashNativeDashReadDashMoreDashTextLib.reactDashNativeDashReadDashMoreDashTextMod.ReadMoreProps]]
+  @scala.inline
+  def ReadMoreProps: reactDashNativeDashReadDashMoreDashTextLib.reactDashNativeDashReadDashMoreDashTextMod.ReadMoreProps.type = reactDashNativeDashReadDashMoreDashTextLib.reactDashNativeDashReadDashMoreDashTextMod.ReadMoreProps
+  type ReadMoreProps = reactDashNativeDashReadDashMoreDashTextLib.reactDashNativeDashReadDashMoreDashTextMod.ReadMoreProps
+}
+

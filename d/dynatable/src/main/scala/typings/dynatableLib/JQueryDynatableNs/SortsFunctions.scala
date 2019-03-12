@@ -39,11 +39,11 @@ trait SortsFunctions extends js.Object {
 object SortsFunctions {
   @scala.inline
   def apply(
-    number: js.Function4[js.Any, js.Any, java.lang.String, scala.Double, scala.Double],
-    originalPlacement: js.Function2[js.Any, js.Any, scala.Double],
-    string: js.Function4[js.Any, js.Any, java.lang.String, scala.Double, scala.Double]
+    number: (js.Any, js.Any, java.lang.String, scala.Double) => scala.Double,
+    originalPlacement: (js.Any, js.Any) => scala.Double,
+    string: (js.Any, js.Any, java.lang.String, scala.Double) => scala.Double
   ): SortsFunctions = {
-    val __obj = js.Dynamic.literal(number = number, originalPlacement = originalPlacement, string = string)
+    val __obj = js.Dynamic.literal(number = js.Any.fromFunction4(number), originalPlacement = js.Any.fromFunction2(originalPlacement), string = js.Any.fromFunction4(string))
   
     __obj.asInstanceOf[SortsFunctions]
   }

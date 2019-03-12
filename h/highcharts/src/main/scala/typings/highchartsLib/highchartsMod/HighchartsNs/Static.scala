@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Static extends js.Object {
-  var Chart: Chart = js.native
-  var Renderer: Renderer = js.native
+  var Chart: highchartsLib.highchartsMod.HighchartsNs.Chart = js.native
+  var Renderer: highchartsLib.highchartsMod.HighchartsNs.Renderer = js.native
   /**
     * Prototype used to extend tooltip behavior in a chart.
     *

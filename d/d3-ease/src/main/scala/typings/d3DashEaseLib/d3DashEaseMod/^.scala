@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation._
 @JSImport("d3-ease", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val easeBack: d3DashEaseLib.d3DashEaseMod.BackEasingFactory = js.native
-  val easeBackIn: d3DashEaseLib.d3DashEaseMod.BackEasingFactory = js.native
-  val easeBackInOut: d3DashEaseLib.d3DashEaseMod.BackEasingFactory = js.native
-  val easeBackOut: d3DashEaseLib.d3DashEaseMod.BackEasingFactory = js.native
-  val easeElastic: d3DashEaseLib.d3DashEaseMod.ElasticEasingFactory = js.native
-  val easeElasticIn: d3DashEaseLib.d3DashEaseMod.ElasticEasingFactory = js.native
-  val easeElasticInOut: d3DashEaseLib.d3DashEaseMod.ElasticEasingFactory = js.native
-  val easeElasticOut: d3DashEaseLib.d3DashEaseMod.ElasticEasingFactory = js.native
-  val easePoly: d3DashEaseLib.d3DashEaseMod.PolynomialEasingFactory = js.native
-  val easePolyIn: d3DashEaseLib.d3DashEaseMod.PolynomialEasingFactory = js.native
-  val easePolyInOut: d3DashEaseLib.d3DashEaseMod.PolynomialEasingFactory = js.native
-  val easePolyOut: d3DashEaseLib.d3DashEaseMod.PolynomialEasingFactory = js.native
+  val easeBack: BackEasingFactory = js.native
+  val easeBackIn: BackEasingFactory = js.native
+  val easeBackInOut: BackEasingFactory = js.native
+  val easeBackOut: BackEasingFactory = js.native
+  val easeElastic: ElasticEasingFactory = js.native
+  val easeElasticIn: ElasticEasingFactory = js.native
+  val easeElasticInOut: ElasticEasingFactory = js.native
+  val easeElasticOut: ElasticEasingFactory = js.native
+  val easePoly: PolynomialEasingFactory = js.native
+  val easePolyIn: PolynomialEasingFactory = js.native
+  val easePolyInOut: PolynomialEasingFactory = js.native
+  val easePolyOut: PolynomialEasingFactory = js.native
   def easeBounce(normalizedTime: scala.Double): scala.Double = js.native
   def easeBounceIn(normalizedTime: scala.Double): scala.Double = js.native
   def easeBounceInOut(normalizedTime: scala.Double): scala.Double = js.native

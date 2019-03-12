@@ -12,8 +12,8 @@ trait Anon_Flush extends js.Object {
 
 object Anon_Flush {
   @scala.inline
-  def apply(flush: js.Function0[scala.Unit], reset: js.Function0[scala.Unit]): Anon_Flush = {
-    val __obj = js.Dynamic.literal(flush = flush, reset = reset)
+  def apply(flush: () => scala.Unit, reset: () => scala.Unit): Anon_Flush = {
+    val __obj = js.Dynamic.literal(flush = js.Any.fromFunction0(flush), reset = js.Any.fromFunction0(reset))
   
     __obj.asInstanceOf[Anon_Flush]
   }

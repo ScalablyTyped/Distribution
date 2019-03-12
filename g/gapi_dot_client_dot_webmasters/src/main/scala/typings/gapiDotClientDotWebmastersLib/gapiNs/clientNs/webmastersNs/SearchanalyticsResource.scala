@@ -19,12 +19,9 @@ trait SearchanalyticsResource extends js.Object {
 object SearchanalyticsResource {
   @scala.inline
   def apply(
-    query: js.Function1[
-      gapiDotClientDotWebmastersLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SearchAnalyticsQueryResponse]
-    ]
+    query: gapiDotClientDotWebmastersLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[SearchAnalyticsQueryResponse]
   ): SearchanalyticsResource = {
-    val __obj = js.Dynamic.literal(query = query)
+    val __obj = js.Dynamic.literal(query = js.Any.fromFunction1(query))
   
     __obj.asInstanceOf[SearchanalyticsResource]
   }

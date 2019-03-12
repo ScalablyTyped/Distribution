@@ -12,8 +12,8 @@ trait SelectEffectDescriptor extends js.Object {
 
 object SelectEffectDescriptor {
   @scala.inline
-  def apply(args: js.Array[_], selector: js.Function2[js.Any, /* repeated */ js.Any, js.Any]): SelectEffectDescriptor = {
-    val __obj = js.Dynamic.literal(args = args, selector = selector)
+  def apply(args: js.Array[_], selector: (js.Any, /* repeated */ js.Any) => js.Any): SelectEffectDescriptor = {
+    val __obj = js.Dynamic.literal(args = args, selector = js.Any.fromFunction2(selector))
   
     __obj.asInstanceOf[SelectEffectDescriptor]
   }

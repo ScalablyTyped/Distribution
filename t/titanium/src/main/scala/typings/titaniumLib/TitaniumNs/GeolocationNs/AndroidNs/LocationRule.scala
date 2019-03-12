@@ -66,32 +66,32 @@ object LocationRule {
   @scala.inline
   def apply(
     accuracy: scala.Double,
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     bubbleParent: scala.Boolean,
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getAccuracy: js.Function0[scala.Double],
-    getApiName: js.Function0[java.lang.String],
-    getBubbleParent: js.Function0[scala.Boolean],
-    getMaxAge: js.Function0[scala.Double],
-    getMinAge: js.Function0[scala.Double],
-    getName: js.Function0[java.lang.String],
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
+    getAccuracy: () => scala.Double,
+    getApiName: () => java.lang.String,
+    getBubbleParent: () => scala.Boolean,
+    getMaxAge: () => scala.Double,
+    getMinAge: () => scala.Double,
+    getName: () => java.lang.String,
     maxAge: scala.Double,
     minAge: scala.Double,
     name: java.lang.String,
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    setAccuracy: js.Function1[scala.Double, scala.Unit],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
-    setMaxAge: js.Function1[scala.Double, scala.Unit],
-    setMinAge: js.Function1[scala.Double, scala.Unit],
-    setName: js.Function1[java.lang.String, scala.Unit],
-    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    setAccuracy: scala.Double => scala.Unit,
+    setBubbleParent: scala.Boolean => scala.Unit,
+    setMaxAge: scala.Double => scala.Unit,
+    setMinAge: scala.Double => scala.Unit,
+    setName: java.lang.String => scala.Unit,
+    getLifecycleContainer: () => titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
   ): LocationRule = {
-    val __obj = js.Dynamic.literal(accuracy = accuracy, addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, getAccuracy = getAccuracy, getApiName = getApiName, getBubbleParent = getBubbleParent, getMaxAge = getMaxAge, getMinAge = getMinAge, getName = getName, maxAge = maxAge, minAge = minAge, name = name, removeEventListener = removeEventListener, setAccuracy = setAccuracy, setBubbleParent = setBubbleParent, setMaxAge = setMaxAge, setMinAge = setMinAge, setName = setName)
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    val __obj = js.Dynamic.literal(accuracy = accuracy, addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, fireEvent = js.Any.fromFunction2(fireEvent), getAccuracy = js.Any.fromFunction0(getAccuracy), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getMaxAge = js.Any.fromFunction0(getMaxAge), getMinAge = js.Any.fromFunction0(getMinAge), getName = js.Any.fromFunction0(getName), maxAge = maxAge, minAge = minAge, name = name, removeEventListener = js.Any.fromFunction2(removeEventListener), setAccuracy = js.Any.fromFunction1(setAccuracy), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setMaxAge = js.Any.fromFunction1(setMaxAge), setMinAge = js.Any.fromFunction1(setMinAge), setName = js.Any.fromFunction1(setName))
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
     __obj.asInstanceOf[LocationRule]

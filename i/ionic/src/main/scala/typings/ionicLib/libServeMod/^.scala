@@ -19,7 +19,7 @@ object ^ extends js.Object {
   val LOCAL_ADDRESSES: js.Array[java.lang.String] = js.native
   val SERVE_SCRIPT: /* ionic:serve */ java.lang.String = js.native
   def serve(
-    deps: ionicLib.libServeMod.ServeRunnerDeps,
+    deps: ServeRunnerDeps,
     inputs: atIonicCliDashFrameworkLib.definitionsMod.CommandLineInputs,
     options: atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions
   ): js.Promise[ionicLib.definitionsMod.ServeDetails] = js.native

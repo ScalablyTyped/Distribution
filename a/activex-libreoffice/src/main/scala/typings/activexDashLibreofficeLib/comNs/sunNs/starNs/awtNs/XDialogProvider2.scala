@@ -33,22 +33,14 @@ trait XDialogProvider2 extends XDialogProvider {
 object XDialogProvider2 {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createDialog: js.Function1[java.lang.String, XDialog],
-    createDialogWithArguments: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
-      XDialog
-    ],
-    createDialogWithHandler: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      XDialog
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createDialog: java.lang.String => XDialog,
+    createDialogWithArguments: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]) => XDialog,
+    createDialogWithHandler: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface) => XDialog,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDialogProvider2 = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createDialog = createDialog, createDialogWithArguments = createDialogWithArguments, createDialogWithHandler = createDialogWithHandler, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createDialog = js.Any.fromFunction1(createDialog), createDialogWithArguments = js.Any.fromFunction2(createDialogWithArguments), createDialogWithHandler = js.Any.fromFunction2(createDialogWithHandler), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDialogProvider2]
   }

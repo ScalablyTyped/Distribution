@@ -12,12 +12,12 @@ class Map protected () extends js.Object {
   def load(xml: java.lang.String): scala.Unit = js.native
   def load(
     xml: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* map */ this.type, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* map */ this.type, scala.Unit]
   ): scala.Unit = js.native
   def render(images: Image): scala.Unit = js.native
-  def render(images: Image, callback: js.Function2[/* err */ nodeLib.Error, /* map */ Image, scala.Unit]): scala.Unit = js.native
+  def render(images: Image, callback: js.Function2[/* err */ stdLib.Error, /* map */ Image, scala.Unit]): scala.Unit = js.native
   def render(images: VectorTile): scala.Unit = js.native
-  def render(images: VectorTile, callback: js.Function2[/* err */ nodeLib.Error, /* map */ Image, scala.Unit]): scala.Unit = js.native
+  def render(images: VectorTile, callback: js.Function2[/* err */ stdLib.Error, /* map */ Image, scala.Unit]): scala.Unit = js.native
   def zoomAll(): scala.Unit = js.native
 }
 

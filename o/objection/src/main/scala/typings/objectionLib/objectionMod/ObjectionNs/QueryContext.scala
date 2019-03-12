@@ -5,20 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait QueryContext
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var transaction: Transaction
-}
-
-object QueryContext {
-  @scala.inline
-  def apply(
-    transaction: Transaction,
-    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
-  ): QueryContext = {
-    val __obj = js.Dynamic.literal(transaction = transaction)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    __obj.asInstanceOf[QueryContext]
-  }
+  @JSName("transaction")
+  var transaction_Original: Transaction = js.native
+  def transaction(): knexLib.knexMod.KnexNs.QueryBuilder = js.native
+  def transaction(tableName: knexLib.TableName): knexLib.knexMod.KnexNs.QueryBuilder = js.native
+  def transaction(tableName: knexLib.knexMod.Identifier): knexLib.knexMod.KnexNs.QueryBuilder = js.native
 }
 

@@ -18,11 +18,8 @@ trait Instance extends js.Object {
 
 object Instance {
   @scala.inline
-  def apply(
-    from: js.Function1[java.lang.String, scala.Double],
-    to: js.Function1[scala.Double, java.lang.String]
-  ): Instance = {
-    val __obj = js.Dynamic.literal(from = from, to = to)
+  def apply(from: java.lang.String => scala.Double, to: scala.Double => java.lang.String): Instance = {
+    val __obj = js.Dynamic.literal(from = js.Any.fromFunction1(from), to = js.Any.fromFunction1(to))
   
     __obj.asInstanceOf[Instance]
   }

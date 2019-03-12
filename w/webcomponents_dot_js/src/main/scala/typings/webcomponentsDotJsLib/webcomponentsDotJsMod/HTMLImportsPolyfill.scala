@@ -24,9 +24,9 @@ object HTMLImportsPolyfill {
     ready: scala.Boolean,
     rootDocument: webcomponentsDotJsLib.webcomponentsDotJsMod.Global.Document,
     useNative: scala.Boolean,
-    whenReady: js.Function1[js.Function0[scala.Unit], scala.Unit]
+    whenReady: js.Function0[scala.Unit] => scala.Unit
   ): HTMLImportsPolyfill = {
-    val __obj = js.Dynamic.literal(IMPORT_LINK_TYPE = IMPORT_LINK_TYPE, flags = flags, isIE = isIE, ready = ready, rootDocument = rootDocument, useNative = useNative, whenReady = whenReady)
+    val __obj = js.Dynamic.literal(IMPORT_LINK_TYPE = IMPORT_LINK_TYPE, flags = flags, isIE = isIE, ready = ready, rootDocument = rootDocument, useNative = useNative, whenReady = js.Any.fromFunction1(whenReady))
   
     __obj.asInstanceOf[HTMLImportsPolyfill]
   }

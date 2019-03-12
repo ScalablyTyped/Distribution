@@ -41,14 +41,14 @@ object XSSOManager {
   @scala.inline
   def apply(
     Mechanism: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    createAcceptorContext: js.Function1[java.lang.String, XSSOAcceptorContext],
-    createInitiatorContext: js.Function3[java.lang.String, java.lang.String, java.lang.String, XSSOInitiatorContext],
-    getMechanism: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createAcceptorContext: java.lang.String => XSSOAcceptorContext,
+    createInitiatorContext: (java.lang.String, java.lang.String, java.lang.String) => XSSOInitiatorContext,
+    getMechanism: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSSOManager = {
-    val __obj = js.Dynamic.literal(Mechanism = Mechanism, acquire = acquire, createAcceptorContext = createAcceptorContext, createInitiatorContext = createInitiatorContext, getMechanism = getMechanism, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Mechanism = Mechanism, acquire = js.Any.fromFunction0(acquire), createAcceptorContext = js.Any.fromFunction1(createAcceptorContext), createInitiatorContext = js.Any.fromFunction3(createInitiatorContext), getMechanism = js.Any.fromFunction0(getMechanism), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSSOManager]
   }

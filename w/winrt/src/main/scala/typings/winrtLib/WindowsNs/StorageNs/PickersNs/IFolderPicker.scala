@@ -22,15 +22,13 @@ object IFolderPicker {
     commitButtonText: java.lang.String,
     continuationData: winrtLib.WindowsNs.FoundationNs.CollectionsNs.ValueSet,
     fileTypeFilter: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[java.lang.String],
-    pickFolderAndContinue: js.Function0[scala.Unit],
-    pickSingleFolderAsync: js.Function0[
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StorageFolder]
-    ],
+    pickFolderAndContinue: () => scala.Unit,
+    pickSingleFolderAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StorageFolder],
     settingsIdentifier: java.lang.String,
     suggestedStartLocation: PickerLocationId,
     viewMode: PickerViewMode
   ): IFolderPicker = {
-    val __obj = js.Dynamic.literal(commitButtonText = commitButtonText, continuationData = continuationData, fileTypeFilter = fileTypeFilter, pickFolderAndContinue = pickFolderAndContinue, pickSingleFolderAsync = pickSingleFolderAsync, settingsIdentifier = settingsIdentifier, suggestedStartLocation = suggestedStartLocation, viewMode = viewMode)
+    val __obj = js.Dynamic.literal(commitButtonText = commitButtonText, continuationData = continuationData, fileTypeFilter = fileTypeFilter, pickFolderAndContinue = js.Any.fromFunction0(pickFolderAndContinue), pickSingleFolderAsync = js.Any.fromFunction0(pickSingleFolderAsync), settingsIdentifier = settingsIdentifier, suggestedStartLocation = suggestedStartLocation, viewMode = viewMode)
   
     __obj.asInstanceOf[IFolderPicker]
   }

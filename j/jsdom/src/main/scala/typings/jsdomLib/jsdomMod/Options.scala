@@ -33,7 +33,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    beforeParse: js.Function1[/* window */ DOMWindow, scala.Unit] = null,
+    beforeParse: /* window */ DOMWindow => scala.Unit = null,
     cookieJar: CookieJar = null,
     includeNodeLocations: js.UndefOr[scala.Boolean] = js.undefined,
     referrer: java.lang.String = null,
@@ -43,7 +43,7 @@ object Options {
     virtualConsole: VirtualConsole = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (beforeParse != null) __obj.updateDynamic("beforeParse")(beforeParse)
+    if (beforeParse != null) __obj.updateDynamic("beforeParse")(js.Any.fromFunction1(beforeParse))
     if (cookieJar != null) __obj.updateDynamic("cookieJar")(cookieJar)
     if (!js.isUndefined(includeNodeLocations)) __obj.updateDynamic("includeNodeLocations")(includeNodeLocations)
     if (referrer != null) __obj.updateDynamic("referrer")(referrer)

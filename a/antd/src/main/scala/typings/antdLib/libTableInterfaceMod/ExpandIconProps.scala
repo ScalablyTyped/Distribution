@@ -11,7 +11,7 @@ trait ExpandIconProps[T] extends js.Object {
   var needIndentSpaced: scala.Boolean
   var prefixCls: java.lang.String
   var record: T
-  def onExpand(record: T, event: reactLib.MouseEvent): scala.Unit
+  def onExpand(record: T, event: stdLib.MouseEvent): scala.Unit
 }
 
 object ExpandIconProps {
@@ -20,11 +20,11 @@ object ExpandIconProps {
     expandable: scala.Boolean,
     expanded: scala.Boolean,
     needIndentSpaced: scala.Boolean,
-    onExpand: js.Function2[T, reactLib.MouseEvent, scala.Unit],
+    onExpand: (T, stdLib.MouseEvent) => scala.Unit,
     prefixCls: java.lang.String,
     record: T
   ): ExpandIconProps[T] = {
-    val __obj = js.Dynamic.literal(expandable = expandable, expanded = expanded, needIndentSpaced = needIndentSpaced, onExpand = onExpand, prefixCls = prefixCls, record = record.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(expandable = expandable, expanded = expanded, needIndentSpaced = needIndentSpaced, onExpand = js.Any.fromFunction2(onExpand), prefixCls = prefixCls, record = record.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExpandIconProps[T]]
   }

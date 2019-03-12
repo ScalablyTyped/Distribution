@@ -15,12 +15,12 @@ trait ILightSensor extends js.Object {
 object ILightSensor {
   @scala.inline
   def apply(
-    getCurrentReading: js.Function0[LightSensorReading],
+    getCurrentReading: () => LightSensorReading,
     minimumReportInterval: scala.Double,
     onreadingchanged: js.Any,
     reportInterval: scala.Double
   ): ILightSensor = {
-    val __obj = js.Dynamic.literal(getCurrentReading = getCurrentReading, minimumReportInterval = minimumReportInterval, onreadingchanged = onreadingchanged, reportInterval = reportInterval)
+    val __obj = js.Dynamic.literal(getCurrentReading = js.Any.fromFunction0(getCurrentReading), minimumReportInterval = minimumReportInterval, onreadingchanged = onreadingchanged, reportInterval = reportInterval)
   
     __obj.asInstanceOf[ILightSensor]
   }

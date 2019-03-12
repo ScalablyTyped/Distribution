@@ -13,12 +13,9 @@ trait FlagsResource extends js.Object {
 object FlagsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltDatabaseVersion, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FlagsListResponse]
-    ]
+    list: gapiDotClientDotSqladminLib.Anon_AltDatabaseVersion => gapiDotClientLib.gapiNs.clientNs.Request[FlagsListResponse]
   ): FlagsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[FlagsResource]
   }

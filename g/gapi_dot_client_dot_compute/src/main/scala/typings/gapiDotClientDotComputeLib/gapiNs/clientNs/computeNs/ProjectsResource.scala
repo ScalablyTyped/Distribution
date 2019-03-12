@@ -41,56 +41,20 @@ trait ProjectsResource extends js.Object {
 object ProjectsResource {
   @scala.inline
   def apply(
-    disableXpnHost: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    disableXpnResource: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    enableXpnHost: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    enableXpnResource: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserUserIp, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Project]
-    ],
-    getXpnHost: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserUserIp, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Project]
-    ],
-    getXpnResources: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsFilterKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ProjectsGetXpnResources]
-    ],
-    listXpnHosts: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsFilterKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[XpnHostList]
-    ],
-    moveDisk: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    moveInstance: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    setCommonInstanceMetadata: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    setUsageExportBucket: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    disableXpnHost: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    disableXpnResource: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    enableXpnHost: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    enableXpnResource: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserUserIp => gapiDotClientLib.gapiNs.clientNs.Request[Project],
+    getXpnHost: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserUserIp => gapiDotClientLib.gapiNs.clientNs.Request[Project],
+    getXpnResources: gapiDotClientDotComputeLib.Anon_AltFieldsFilterKey => gapiDotClientLib.gapiNs.clientNs.Request[ProjectsGetXpnResources],
+    listXpnHosts: gapiDotClientDotComputeLib.Anon_AltFieldsFilterKey => gapiDotClientLib.gapiNs.clientNs.Request[XpnHostList],
+    moveDisk: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    moveInstance: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    setCommonInstanceMetadata: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    setUsageExportBucket: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal(disableXpnHost = disableXpnHost, disableXpnResource = disableXpnResource, enableXpnHost = enableXpnHost, enableXpnResource = enableXpnResource, get = get, getXpnHost = getXpnHost, getXpnResources = getXpnResources, listXpnHosts = listXpnHosts, moveDisk = moveDisk, moveInstance = moveInstance, setCommonInstanceMetadata = setCommonInstanceMetadata, setUsageExportBucket = setUsageExportBucket)
+    val __obj = js.Dynamic.literal(disableXpnHost = js.Any.fromFunction1(disableXpnHost), disableXpnResource = js.Any.fromFunction1(disableXpnResource), enableXpnHost = js.Any.fromFunction1(enableXpnHost), enableXpnResource = js.Any.fromFunction1(enableXpnResource), get = js.Any.fromFunction1(get), getXpnHost = js.Any.fromFunction1(getXpnHost), getXpnResources = js.Any.fromFunction1(getXpnResources), listXpnHosts = js.Any.fromFunction1(listXpnHosts), moveDisk = js.Any.fromFunction1(moveDisk), moveInstance = js.Any.fromFunction1(moveInstance), setCommonInstanceMetadata = js.Any.fromFunction1(setCommonInstanceMetadata), setUsageExportBucket = js.Any.fromFunction1(setUsageExportBucket))
   
     __obj.asInstanceOf[ProjectsResource]
   }

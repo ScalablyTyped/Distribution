@@ -13,7 +13,7 @@ trait ControlEvent extends js.Object {
   /** specifies the event which has occurred. */
   var Event: java.lang.String
   /** specifies a sequence of named values which are used as additional values for the event. The number and types of named values depend on the event. */
-  var aInformation: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
+  var aInformation: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
   /** fully parsed URL describing the control that sends this notification. */
   var aURL: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL
 }
@@ -22,7 +22,7 @@ object ControlEvent {
   @scala.inline
   def apply(
     Event: java.lang.String,
-    aInformation: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    aInformation: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
     aURL: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL
   ): ControlEvent = {
     val __obj = js.Dynamic.literal(Event = Event, aInformation = aInformation, aURL = aURL)

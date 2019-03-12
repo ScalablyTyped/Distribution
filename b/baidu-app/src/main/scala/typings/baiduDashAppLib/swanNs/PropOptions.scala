@@ -19,12 +19,12 @@ trait PropOptions[T] extends js.Object {
 object PropOptions {
   @scala.inline
   def apply[T](
-    observer: js.Function3[/* value */ T, /* old */ T, /* changedPath */ java.lang.String, scala.Unit] = null,
+    observer: (/* value */ T, /* old */ T, /* changedPath */ java.lang.String) => scala.Unit = null,
     `type`: Prop[T] | js.Array[Prop[T]] = null,
     value: T | js.Function0[js.Object] = null
   ): PropOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (observer != null) __obj.updateDynamic("observer")(observer)
+    if (observer != null) __obj.updateDynamic("observer")(js.Any.fromFunction3(observer))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropOptions[T]]

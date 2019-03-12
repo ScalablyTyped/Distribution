@@ -29,11 +29,11 @@ object IDialogDefinition {
     height: scala.Int | scala.Double = null,
     minHeight: scala.Int | scala.Double = null,
     minWidth: scala.Int | scala.Double = null,
-    onCancel: js.Function0[scala.Unit] = null,
-    onHide: js.Function0[scala.Unit] = null,
-    onLoad: js.Function0[scala.Unit] = null,
-    onOk: js.Function0[scala.Unit] = null,
-    onShow: js.Function0[scala.Unit] = null,
+    onCancel: () => scala.Unit = null,
+    onHide: () => scala.Unit = null,
+    onLoad: () => scala.Unit = null,
+    onOk: () => scala.Unit = null,
+    onShow: () => scala.Unit = null,
     resizable: scala.Int | scala.Double = null,
     title: java.lang.String = null,
     width: scala.Int | scala.Double = null
@@ -44,11 +44,11 @@ object IDialogDefinition {
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
-    if (onOk != null) __obj.updateDynamic("onOk")(onOk)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction0(onCancel))
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
+    if (onOk != null) __obj.updateDynamic("onOk")(js.Any.fromFunction0(onOk))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     if (resizable != null) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

@@ -16,17 +16,17 @@ trait ValidatorFormProps extends js.Object {
 object ValidatorFormProps {
   @scala.inline
   def apply(
-    onSubmit: js.Function1[reactLib.reactMod.ReactNs.FormEventHandler[reactLib.Element], scala.Unit],
+    onSubmit: reactLib.reactMod.ReactNs.FormEventHandler[reactLib.Element] => scala.Unit,
     className: java.lang.String = null,
     debounceTime: scala.Int | scala.Double = null,
     instantValidate: js.UndefOr[scala.Boolean] = js.undefined,
-    onError: js.Function1[/* errors */ js.Array[_], scala.Unit] = null
+    onError: /* errors */ js.Array[_] => scala.Unit = null
   ): ValidatorFormProps = {
-    val __obj = js.Dynamic.literal(onSubmit = onSubmit)
+    val __obj = js.Dynamic.literal(onSubmit = js.Any.fromFunction1(onSubmit))
     if (className != null) __obj.updateDynamic("className")(className)
     if (debounceTime != null) __obj.updateDynamic("debounceTime")(debounceTime.asInstanceOf[js.Any])
     if (!js.isUndefined(instantValidate)) __obj.updateDynamic("instantValidate")(instantValidate)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     __obj.asInstanceOf[ValidatorFormProps]
   }
 }

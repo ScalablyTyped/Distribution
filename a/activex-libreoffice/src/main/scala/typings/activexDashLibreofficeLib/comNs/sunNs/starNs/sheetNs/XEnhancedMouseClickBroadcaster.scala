@@ -31,19 +31,13 @@ trait XEnhancedMouseClickBroadcaster
 object XEnhancedMouseClickBroadcaster {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addEnhancedMouseClickHandler: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XEnhancedMouseClickHandler, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEnhancedMouseClickHandler: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XEnhancedMouseClickHandler, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    addEnhancedMouseClickHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XEnhancedMouseClickHandler => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEnhancedMouseClickHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XEnhancedMouseClickHandler => scala.Unit
   ): XEnhancedMouseClickBroadcaster = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addEnhancedMouseClickHandler = addEnhancedMouseClickHandler, queryInterface = queryInterface, release = release, removeEnhancedMouseClickHandler = removeEnhancedMouseClickHandler)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addEnhancedMouseClickHandler = js.Any.fromFunction1(addEnhancedMouseClickHandler), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEnhancedMouseClickHandler = js.Any.fromFunction1(removeEnhancedMouseClickHandler))
   
     __obj.asInstanceOf[XEnhancedMouseClickBroadcaster]
   }

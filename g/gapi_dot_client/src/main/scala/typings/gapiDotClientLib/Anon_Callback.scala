@@ -25,10 +25,10 @@ trait Anon_Callback[T] extends js.Object {
 object Anon_Callback {
   @scala.inline
   def apply[T](
-    callback: js.Function2[gapiDotClientLib.gapiNs.clientNs.Response[T], java.lang.String, js.Any],
+    callback: (gapiDotClientLib.gapiNs.clientNs.Response[T], java.lang.String) => js.Any,
     id: java.lang.String
   ): Anon_Callback[T] = {
-    val __obj = js.Dynamic.literal(callback = callback, id = id)
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), id = id)
   
     __obj.asInstanceOf[Anon_Callback[T]]
   }

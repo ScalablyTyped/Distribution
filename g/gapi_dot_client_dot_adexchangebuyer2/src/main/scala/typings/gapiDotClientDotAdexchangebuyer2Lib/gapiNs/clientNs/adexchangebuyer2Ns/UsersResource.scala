@@ -23,20 +23,11 @@ trait UsersResource extends js.Object {
 object UsersResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ClientUser]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListClientUsersResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ClientUser]
-    ]
+    get: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ClientUser],
+    list: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAlt => gapiDotClientLib.gapiNs.clientNs.Request[ListClientUsersResponse],
+    update: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ClientUser]
   ): UsersResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list, update = update)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[UsersResource]
   }

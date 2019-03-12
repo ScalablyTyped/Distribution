@@ -12,8 +12,8 @@ trait VideoPlayer extends js.Object {
 
 object VideoPlayer {
   @scala.inline
-  def apply(end: js.Function0[scala.Boolean], viewMode: scala.Double): VideoPlayer = {
-    val __obj = js.Dynamic.literal(end = end, viewMode = viewMode)
+  def apply(end: () => scala.Boolean, viewMode: scala.Double): VideoPlayer = {
+    val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), viewMode = viewMode)
   
     __obj.asInstanceOf[VideoPlayer]
   }

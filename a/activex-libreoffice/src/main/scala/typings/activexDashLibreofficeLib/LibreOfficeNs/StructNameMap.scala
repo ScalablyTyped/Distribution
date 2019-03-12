@@ -548,7 +548,111 @@ object StructNameMap {
     `com.sun.star.frame.status.LeftRightMargin`: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.statusNs.LeftRightMargin,
     `com.sun.star.frame.status.LeftRightMarginScale`: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.statusNs.LeftRightMarginScale,
     `com.sun.star.frame.status.Template`: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.statusNs.Template,
-    `com.sun.star.frame.status.UpperLowerMargin`: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.statusNs.UpperLowerMargin
+    `com.sun.star.frame.status.UpperLowerMargin`: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.statusNs.UpperLowerMargin,
+    `com.sun.star.frame.status.UpperLowerMarginScale`: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.statusNs.UpperLowerMarginScale,
+    `com.sun.star.frame.status.Verb`: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.statusNs.Verb,
+    `com.sun.star.frame.status.Visibility`: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.statusNs.Visibility,
+    `com.sun.star.geometry.AffineMatrix2D`: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix2D,
+    `com.sun.star.geometry.AffineMatrix3D`: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix3D,
+    `com.sun.star.geometry.EllipticalArc`: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.EllipticalArc,
+    `com.sun.star.geometry.IntegerBezierSegment2D`: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerBezierSegment2D,
+    `com.sun.star.geometry.IntegerPoint2D`: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerPoint2D,
+    `com.sun.star.geometry.IntegerRectangle2D`: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerRectangle2D,
+    `com.sun.star.geometry.IntegerSize2D`: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D,
+    `com.sun.star.geometry.Matrix2D`: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.Matrix2D,
+    `com.sun.star.geometry.RealBezierSegment2D`: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealBezierSegment2D,
+    `com.sun.star.geometry.RealPoint2D`: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D,
+    `com.sun.star.geometry.RealRectangle2D`: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D,
+    `com.sun.star.geometry.RealRectangle3D`: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle3D,
+    `com.sun.star.geometry.RealSize2D`: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealSize2D,
+    `com.sun.star.i18n.Boundary`: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.Boundary,
+    `com.sun.star.i18n.Calendar`: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.Calendar,
+    `com.sun.star.i18n.Calendar2`: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.Calendar2,
+    `com.sun.star.i18n.CalendarItem`: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.CalendarItem,
+    `com.sun.star.i18n.CalendarItem2`: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.CalendarItem2,
+    `com.sun.star.i18n.Currency`: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.Currency,
+    `com.sun.star.i18n.Currency2`: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.Currency2,
+    `com.sun.star.i18n.ForbiddenCharacters`: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.ForbiddenCharacters,
+    `com.sun.star.i18n.FormatElement`: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.FormatElement,
+    `com.sun.star.i18n.Implementation`: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.Implementation,
+    `com.sun.star.i18n.LanguageCountryInfo`: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.LanguageCountryInfo,
+    `com.sun.star.i18n.LineBreakHyphenationOptions`: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.LineBreakHyphenationOptions,
+    `com.sun.star.i18n.LineBreakResults`: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.LineBreakResults,
+    `com.sun.star.i18n.LineBreakUserOptions`: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.LineBreakUserOptions,
+    `com.sun.star.i18n.LocaleDataItem`: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.LocaleDataItem,
+    `com.sun.star.i18n.NativeNumberXmlAttributes`: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.NativeNumberXmlAttributes,
+    `com.sun.star.i18n.NumberFormatCode`: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.NumberFormatCode,
+    `com.sun.star.i18n.ParseResult`: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.ParseResult,
+    `com.sun.star.i18n.TextConversionResult`: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.TextConversionResult,
+    `com.sun.star.inspection.LineDescriptor`: activexDashLibreofficeLib.comNs.sunNs.starNs.inspectionNs.LineDescriptor,
+    `com.sun.star.inspection.PropertyCategoryDescriptor`: activexDashLibreofficeLib.comNs.sunNs.starNs.inspectionNs.PropertyCategoryDescriptor,
+    `com.sun.star.io.DataTransferEvent`: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.DataTransferEvent,
+    `com.sun.star.io.FilePermission`: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.FilePermission,
+    `com.sun.star.lang.EventObject`: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject,
+    `com.sun.star.lang.Locale`: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    `com.sun.star.linguistic2.DictionaryEvent`: activexDashLibreofficeLib.comNs.sunNs.starNs.linguistic2Ns.DictionaryEvent,
+    `com.sun.star.linguistic2.DictionaryListEvent`: activexDashLibreofficeLib.comNs.sunNs.starNs.linguistic2Ns.DictionaryListEvent,
+    `com.sun.star.linguistic2.LinguServiceEvent`: activexDashLibreofficeLib.comNs.sunNs.starNs.linguistic2Ns.LinguServiceEvent,
+    `com.sun.star.linguistic2.ProofreadingResult`: activexDashLibreofficeLib.comNs.sunNs.starNs.linguistic2Ns.ProofreadingResult,
+    `com.sun.star.linguistic2.SingleProofreadingError`: activexDashLibreofficeLib.comNs.sunNs.starNs.linguistic2Ns.SingleProofreadingError,
+    `com.sun.star.logging.LogRecord`: activexDashLibreofficeLib.comNs.sunNs.starNs.loggingNs.LogRecord,
+    `com.sun.star.mail.MailAttachment`: activexDashLibreofficeLib.comNs.sunNs.starNs.mailNs.MailAttachment,
+    `com.sun.star.mozilla.MenuMultipleChange`: activexDashLibreofficeLib.comNs.sunNs.starNs.mozillaNs.MenuMultipleChange,
+    `com.sun.star.mozilla.MenuSingleChange`: activexDashLibreofficeLib.comNs.sunNs.starNs.mozillaNs.MenuSingleChange,
+    `com.sun.star.packages.zip.ZipEntry`: activexDashLibreofficeLib.comNs.sunNs.starNs.packagesNs.zipNs.ZipEntry,
+    `com.sun.star.presentation.ParagraphTarget`: activexDashLibreofficeLib.comNs.sunNs.starNs.presentationNs.ParagraphTarget,
+    `com.sun.star.rdf.Statement`: activexDashLibreofficeLib.comNs.sunNs.starNs.rdfNs.Statement,
+    `com.sun.star.reflection.ParamInfo`: activexDashLibreofficeLib.comNs.sunNs.starNs.reflectionNs.ParamInfo,
+    `com.sun.star.rendering.ARGBColor`: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.ARGBColor,
+    `com.sun.star.rendering.AnimationAttributes`: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.AnimationAttributes,
+    `com.sun.star.rendering.Caret`: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.Caret,
+    `com.sun.star.rendering.ColorProfile`: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.ColorProfile,
+    `com.sun.star.rendering.FloatingPointBitmapLayout`: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.FloatingPointBitmapLayout,
+    `com.sun.star.rendering.FontInfo`: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.FontInfo,
+    `com.sun.star.rendering.FontMetrics`: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.FontMetrics,
+    `com.sun.star.rendering.FontRequest`: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.FontRequest,
+    `com.sun.star.rendering.IntegerBitmapLayout`: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.IntegerBitmapLayout,
+    `com.sun.star.rendering.Panose`: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.Panose,
+    `com.sun.star.rendering.RGBColor`: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.RGBColor,
+    `com.sun.star.rendering.RenderState`: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.RenderState,
+    `com.sun.star.rendering.StringContext`: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.StringContext,
+    `com.sun.star.rendering.StrokeAttributes`: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.StrokeAttributes,
+    `com.sun.star.rendering.TextHit`: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.TextHit,
+    `com.sun.star.rendering.Texture`: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.Texture,
+    `com.sun.star.rendering.ViewState`: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.ViewState,
+    `com.sun.star.scanner.ScannerContext`: activexDashLibreofficeLib.comNs.sunNs.starNs.scannerNs.ScannerContext,
+    `com.sun.star.script.AllEventObject`: activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.AllEventObject,
+    `com.sun.star.script.ArrayWrapper`: activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.ArrayWrapper,
+    `com.sun.star.script.ContextInformation`: activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.ContextInformation,
+    `com.sun.star.script.EventListener`: activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.EventListener,
+    `com.sun.star.script.FinishEngineEvent`: activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.FinishEngineEvent,
+    `com.sun.star.script.InterruptEngineEvent`: activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.InterruptEngineEvent,
+    `com.sun.star.script.InvocationInfo`: activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.InvocationInfo,
+    `com.sun.star.script.ModuleInfo`: activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.ModuleInfo,
+    `com.sun.star.script.NativeObjectWrapper`: activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.NativeObjectWrapper,
+    `com.sun.star.script.ScriptEvent`: activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.ScriptEvent,
+    `com.sun.star.script.ScriptEventDescriptor`: activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.ScriptEventDescriptor,
+    `com.sun.star.script.vba.VBAScriptEvent`: activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.vbaNs.VBAScriptEvent,
+    `com.sun.star.sdb.DatabaseRegistrationEvent`: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbNs.DatabaseRegistrationEvent,
+    `com.sun.star.sdb.RowChangeEvent`: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbNs.RowChangeEvent,
+    `com.sun.star.sdb.RowsChangeEvent`: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbNs.RowsChangeEvent,
+    `com.sun.star.sdb.SQLErrorEvent`: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbNs.SQLErrorEvent,
+    `com.sun.star.sdb.application.CopyTableRowEvent`: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbNs.applicationNs.CopyTableRowEvent,
+    `com.sun.star.sdb.application.NamedDatabaseObject`: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbNs.applicationNs.NamedDatabaseObject,
+    `com.sun.star.sdbc.ChangeEvent`: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.ChangeEvent,
+    `com.sun.star.sdbc.DriverPropertyInfo`: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.DriverPropertyInfo,
+    `com.sun.star.security.AllPermission`: activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.AllPermission,
+    `com.sun.star.security.CertAltNameEntry`: activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.CertAltNameEntry,
+    `com.sun.star.security.DocumentSignatureInformation`: activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.DocumentSignatureInformation,
+    `com.sun.star.security.RuntimePermission`: activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.RuntimePermission,
+    `com.sun.star.sheet.ActivationEvent`: activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.ActivationEvent,
+    `com.sun.star.sheet.ComplexReference`: activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.ComplexReference,
+    `com.sun.star.sheet.DDEItemInfo`: activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.DDEItemInfo,
+    `com.sun.star.sheet.DDELinkInfo`: activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.DDELinkInfo,
+    `com.sun.star.sheet.DataPilotFieldAutoShowInfo`: activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.DataPilotFieldAutoShowInfo,
+    `com.sun.star.sheet.DataPilotFieldFilter`: activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.DataPilotFieldFilter,
+    `com.sun.star.sheet.DataPilotFieldGroupInfo`: activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.DataPilotFieldGroupInfo,
+    `com.sun.star.sheet.DataPilotFieldLayoutInfo`: activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.DataPilotFieldLayoutInfo
   ): StructNameMap = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("com.sun.star.accessibility.AccessibleEventObject")(`com.sun.star.accessibility.AccessibleEventObject`)
@@ -701,6 +805,110 @@ object StructNameMap {
     __obj.updateDynamic("com.sun.star.frame.status.LeftRightMarginScale")(`com.sun.star.frame.status.LeftRightMarginScale`)
     __obj.updateDynamic("com.sun.star.frame.status.Template")(`com.sun.star.frame.status.Template`)
     __obj.updateDynamic("com.sun.star.frame.status.UpperLowerMargin")(`com.sun.star.frame.status.UpperLowerMargin`)
+    __obj.updateDynamic("com.sun.star.frame.status.UpperLowerMarginScale")(`com.sun.star.frame.status.UpperLowerMarginScale`)
+    __obj.updateDynamic("com.sun.star.frame.status.Verb")(`com.sun.star.frame.status.Verb`)
+    __obj.updateDynamic("com.sun.star.frame.status.Visibility")(`com.sun.star.frame.status.Visibility`)
+    __obj.updateDynamic("com.sun.star.geometry.AffineMatrix2D")(`com.sun.star.geometry.AffineMatrix2D`)
+    __obj.updateDynamic("com.sun.star.geometry.AffineMatrix3D")(`com.sun.star.geometry.AffineMatrix3D`)
+    __obj.updateDynamic("com.sun.star.geometry.EllipticalArc")(`com.sun.star.geometry.EllipticalArc`)
+    __obj.updateDynamic("com.sun.star.geometry.IntegerBezierSegment2D")(`com.sun.star.geometry.IntegerBezierSegment2D`)
+    __obj.updateDynamic("com.sun.star.geometry.IntegerPoint2D")(`com.sun.star.geometry.IntegerPoint2D`)
+    __obj.updateDynamic("com.sun.star.geometry.IntegerRectangle2D")(`com.sun.star.geometry.IntegerRectangle2D`)
+    __obj.updateDynamic("com.sun.star.geometry.IntegerSize2D")(`com.sun.star.geometry.IntegerSize2D`)
+    __obj.updateDynamic("com.sun.star.geometry.Matrix2D")(`com.sun.star.geometry.Matrix2D`)
+    __obj.updateDynamic("com.sun.star.geometry.RealBezierSegment2D")(`com.sun.star.geometry.RealBezierSegment2D`)
+    __obj.updateDynamic("com.sun.star.geometry.RealPoint2D")(`com.sun.star.geometry.RealPoint2D`)
+    __obj.updateDynamic("com.sun.star.geometry.RealRectangle2D")(`com.sun.star.geometry.RealRectangle2D`)
+    __obj.updateDynamic("com.sun.star.geometry.RealRectangle3D")(`com.sun.star.geometry.RealRectangle3D`)
+    __obj.updateDynamic("com.sun.star.geometry.RealSize2D")(`com.sun.star.geometry.RealSize2D`)
+    __obj.updateDynamic("com.sun.star.i18n.Boundary")(`com.sun.star.i18n.Boundary`)
+    __obj.updateDynamic("com.sun.star.i18n.Calendar")(`com.sun.star.i18n.Calendar`)
+    __obj.updateDynamic("com.sun.star.i18n.Calendar2")(`com.sun.star.i18n.Calendar2`)
+    __obj.updateDynamic("com.sun.star.i18n.CalendarItem")(`com.sun.star.i18n.CalendarItem`)
+    __obj.updateDynamic("com.sun.star.i18n.CalendarItem2")(`com.sun.star.i18n.CalendarItem2`)
+    __obj.updateDynamic("com.sun.star.i18n.Currency")(`com.sun.star.i18n.Currency`)
+    __obj.updateDynamic("com.sun.star.i18n.Currency2")(`com.sun.star.i18n.Currency2`)
+    __obj.updateDynamic("com.sun.star.i18n.ForbiddenCharacters")(`com.sun.star.i18n.ForbiddenCharacters`)
+    __obj.updateDynamic("com.sun.star.i18n.FormatElement")(`com.sun.star.i18n.FormatElement`)
+    __obj.updateDynamic("com.sun.star.i18n.Implementation")(`com.sun.star.i18n.Implementation`)
+    __obj.updateDynamic("com.sun.star.i18n.LanguageCountryInfo")(`com.sun.star.i18n.LanguageCountryInfo`)
+    __obj.updateDynamic("com.sun.star.i18n.LineBreakHyphenationOptions")(`com.sun.star.i18n.LineBreakHyphenationOptions`)
+    __obj.updateDynamic("com.sun.star.i18n.LineBreakResults")(`com.sun.star.i18n.LineBreakResults`)
+    __obj.updateDynamic("com.sun.star.i18n.LineBreakUserOptions")(`com.sun.star.i18n.LineBreakUserOptions`)
+    __obj.updateDynamic("com.sun.star.i18n.LocaleDataItem")(`com.sun.star.i18n.LocaleDataItem`)
+    __obj.updateDynamic("com.sun.star.i18n.NativeNumberXmlAttributes")(`com.sun.star.i18n.NativeNumberXmlAttributes`)
+    __obj.updateDynamic("com.sun.star.i18n.NumberFormatCode")(`com.sun.star.i18n.NumberFormatCode`)
+    __obj.updateDynamic("com.sun.star.i18n.ParseResult")(`com.sun.star.i18n.ParseResult`)
+    __obj.updateDynamic("com.sun.star.i18n.TextConversionResult")(`com.sun.star.i18n.TextConversionResult`)
+    __obj.updateDynamic("com.sun.star.inspection.LineDescriptor")(`com.sun.star.inspection.LineDescriptor`)
+    __obj.updateDynamic("com.sun.star.inspection.PropertyCategoryDescriptor")(`com.sun.star.inspection.PropertyCategoryDescriptor`)
+    __obj.updateDynamic("com.sun.star.io.DataTransferEvent")(`com.sun.star.io.DataTransferEvent`)
+    __obj.updateDynamic("com.sun.star.io.FilePermission")(`com.sun.star.io.FilePermission`)
+    __obj.updateDynamic("com.sun.star.lang.EventObject")(`com.sun.star.lang.EventObject`)
+    __obj.updateDynamic("com.sun.star.lang.Locale")(`com.sun.star.lang.Locale`)
+    __obj.updateDynamic("com.sun.star.linguistic2.DictionaryEvent")(`com.sun.star.linguistic2.DictionaryEvent`)
+    __obj.updateDynamic("com.sun.star.linguistic2.DictionaryListEvent")(`com.sun.star.linguistic2.DictionaryListEvent`)
+    __obj.updateDynamic("com.sun.star.linguistic2.LinguServiceEvent")(`com.sun.star.linguistic2.LinguServiceEvent`)
+    __obj.updateDynamic("com.sun.star.linguistic2.ProofreadingResult")(`com.sun.star.linguistic2.ProofreadingResult`)
+    __obj.updateDynamic("com.sun.star.linguistic2.SingleProofreadingError")(`com.sun.star.linguistic2.SingleProofreadingError`)
+    __obj.updateDynamic("com.sun.star.logging.LogRecord")(`com.sun.star.logging.LogRecord`)
+    __obj.updateDynamic("com.sun.star.mail.MailAttachment")(`com.sun.star.mail.MailAttachment`)
+    __obj.updateDynamic("com.sun.star.mozilla.MenuMultipleChange")(`com.sun.star.mozilla.MenuMultipleChange`)
+    __obj.updateDynamic("com.sun.star.mozilla.MenuSingleChange")(`com.sun.star.mozilla.MenuSingleChange`)
+    __obj.updateDynamic("com.sun.star.packages.zip.ZipEntry")(`com.sun.star.packages.zip.ZipEntry`)
+    __obj.updateDynamic("com.sun.star.presentation.ParagraphTarget")(`com.sun.star.presentation.ParagraphTarget`)
+    __obj.updateDynamic("com.sun.star.rdf.Statement")(`com.sun.star.rdf.Statement`)
+    __obj.updateDynamic("com.sun.star.reflection.ParamInfo")(`com.sun.star.reflection.ParamInfo`)
+    __obj.updateDynamic("com.sun.star.rendering.ARGBColor")(`com.sun.star.rendering.ARGBColor`)
+    __obj.updateDynamic("com.sun.star.rendering.AnimationAttributes")(`com.sun.star.rendering.AnimationAttributes`)
+    __obj.updateDynamic("com.sun.star.rendering.Caret")(`com.sun.star.rendering.Caret`)
+    __obj.updateDynamic("com.sun.star.rendering.ColorProfile")(`com.sun.star.rendering.ColorProfile`)
+    __obj.updateDynamic("com.sun.star.rendering.FloatingPointBitmapLayout")(`com.sun.star.rendering.FloatingPointBitmapLayout`)
+    __obj.updateDynamic("com.sun.star.rendering.FontInfo")(`com.sun.star.rendering.FontInfo`)
+    __obj.updateDynamic("com.sun.star.rendering.FontMetrics")(`com.sun.star.rendering.FontMetrics`)
+    __obj.updateDynamic("com.sun.star.rendering.FontRequest")(`com.sun.star.rendering.FontRequest`)
+    __obj.updateDynamic("com.sun.star.rendering.IntegerBitmapLayout")(`com.sun.star.rendering.IntegerBitmapLayout`)
+    __obj.updateDynamic("com.sun.star.rendering.Panose")(`com.sun.star.rendering.Panose`)
+    __obj.updateDynamic("com.sun.star.rendering.RGBColor")(`com.sun.star.rendering.RGBColor`)
+    __obj.updateDynamic("com.sun.star.rendering.RenderState")(`com.sun.star.rendering.RenderState`)
+    __obj.updateDynamic("com.sun.star.rendering.StringContext")(`com.sun.star.rendering.StringContext`)
+    __obj.updateDynamic("com.sun.star.rendering.StrokeAttributes")(`com.sun.star.rendering.StrokeAttributes`)
+    __obj.updateDynamic("com.sun.star.rendering.TextHit")(`com.sun.star.rendering.TextHit`)
+    __obj.updateDynamic("com.sun.star.rendering.Texture")(`com.sun.star.rendering.Texture`)
+    __obj.updateDynamic("com.sun.star.rendering.ViewState")(`com.sun.star.rendering.ViewState`)
+    __obj.updateDynamic("com.sun.star.scanner.ScannerContext")(`com.sun.star.scanner.ScannerContext`)
+    __obj.updateDynamic("com.sun.star.script.AllEventObject")(`com.sun.star.script.AllEventObject`)
+    __obj.updateDynamic("com.sun.star.script.ArrayWrapper")(`com.sun.star.script.ArrayWrapper`)
+    __obj.updateDynamic("com.sun.star.script.ContextInformation")(`com.sun.star.script.ContextInformation`)
+    __obj.updateDynamic("com.sun.star.script.EventListener")(`com.sun.star.script.EventListener`)
+    __obj.updateDynamic("com.sun.star.script.FinishEngineEvent")(`com.sun.star.script.FinishEngineEvent`)
+    __obj.updateDynamic("com.sun.star.script.InterruptEngineEvent")(`com.sun.star.script.InterruptEngineEvent`)
+    __obj.updateDynamic("com.sun.star.script.InvocationInfo")(`com.sun.star.script.InvocationInfo`)
+    __obj.updateDynamic("com.sun.star.script.ModuleInfo")(`com.sun.star.script.ModuleInfo`)
+    __obj.updateDynamic("com.sun.star.script.NativeObjectWrapper")(`com.sun.star.script.NativeObjectWrapper`)
+    __obj.updateDynamic("com.sun.star.script.ScriptEvent")(`com.sun.star.script.ScriptEvent`)
+    __obj.updateDynamic("com.sun.star.script.ScriptEventDescriptor")(`com.sun.star.script.ScriptEventDescriptor`)
+    __obj.updateDynamic("com.sun.star.script.vba.VBAScriptEvent")(`com.sun.star.script.vba.VBAScriptEvent`)
+    __obj.updateDynamic("com.sun.star.sdb.DatabaseRegistrationEvent")(`com.sun.star.sdb.DatabaseRegistrationEvent`)
+    __obj.updateDynamic("com.sun.star.sdb.RowChangeEvent")(`com.sun.star.sdb.RowChangeEvent`)
+    __obj.updateDynamic("com.sun.star.sdb.RowsChangeEvent")(`com.sun.star.sdb.RowsChangeEvent`)
+    __obj.updateDynamic("com.sun.star.sdb.SQLErrorEvent")(`com.sun.star.sdb.SQLErrorEvent`)
+    __obj.updateDynamic("com.sun.star.sdb.application.CopyTableRowEvent")(`com.sun.star.sdb.application.CopyTableRowEvent`)
+    __obj.updateDynamic("com.sun.star.sdb.application.NamedDatabaseObject")(`com.sun.star.sdb.application.NamedDatabaseObject`)
+    __obj.updateDynamic("com.sun.star.sdbc.ChangeEvent")(`com.sun.star.sdbc.ChangeEvent`)
+    __obj.updateDynamic("com.sun.star.sdbc.DriverPropertyInfo")(`com.sun.star.sdbc.DriverPropertyInfo`)
+    __obj.updateDynamic("com.sun.star.security.AllPermission")(`com.sun.star.security.AllPermission`)
+    __obj.updateDynamic("com.sun.star.security.CertAltNameEntry")(`com.sun.star.security.CertAltNameEntry`)
+    __obj.updateDynamic("com.sun.star.security.DocumentSignatureInformation")(`com.sun.star.security.DocumentSignatureInformation`)
+    __obj.updateDynamic("com.sun.star.security.RuntimePermission")(`com.sun.star.security.RuntimePermission`)
+    __obj.updateDynamic("com.sun.star.sheet.ActivationEvent")(`com.sun.star.sheet.ActivationEvent`)
+    __obj.updateDynamic("com.sun.star.sheet.ComplexReference")(`com.sun.star.sheet.ComplexReference`)
+    __obj.updateDynamic("com.sun.star.sheet.DDEItemInfo")(`com.sun.star.sheet.DDEItemInfo`)
+    __obj.updateDynamic("com.sun.star.sheet.DDELinkInfo")(`com.sun.star.sheet.DDELinkInfo`)
+    __obj.updateDynamic("com.sun.star.sheet.DataPilotFieldAutoShowInfo")(`com.sun.star.sheet.DataPilotFieldAutoShowInfo`)
+    __obj.updateDynamic("com.sun.star.sheet.DataPilotFieldFilter")(`com.sun.star.sheet.DataPilotFieldFilter`)
+    __obj.updateDynamic("com.sun.star.sheet.DataPilotFieldGroupInfo")(`com.sun.star.sheet.DataPilotFieldGroupInfo`)
+    __obj.updateDynamic("com.sun.star.sheet.DataPilotFieldLayoutInfo")(`com.sun.star.sheet.DataPilotFieldLayoutInfo`)
     __obj.asInstanceOf[StructNameMap]
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.UndoRecord")
 @js.native
 class UndoRecord protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
   val CustomRecordLevel: scala.Double = js.native
   val CustomRecordName: java.lang.String = js.native

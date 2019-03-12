@@ -23,29 +23,14 @@ trait DraftsResource extends js.Object {
 object DraftsResource {
   @scala.inline
   def apply(
-    create: js.Function1[gapiDotClientDotGmailLib.Anon_Alt, gapiDotClientLib.gapiNs.clientNs.Request[Draft]],
-    delete: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFieldsFormat, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Draft]
-    ],
-    list: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFieldsIncludeSpamTrash, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListDraftsResponse]
-    ],
-    send: js.Function1[
-      gapiDotClientDotGmailLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Message]
-    ],
-    update: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Draft]
-    ]
+    create: gapiDotClientDotGmailLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Draft],
+    delete: gapiDotClientDotGmailLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotGmailLib.Anon_AltFieldsFormat => gapiDotClientLib.gapiNs.clientNs.Request[Draft],
+    list: gapiDotClientDotGmailLib.Anon_AltFieldsIncludeSpamTrash => gapiDotClientLib.gapiNs.clientNs.Request[ListDraftsResponse],
+    send: gapiDotClientDotGmailLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Message],
+    update: gapiDotClientDotGmailLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Draft]
   ): DraftsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, send = send, update = update)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), send = js.Any.fromFunction1(send), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[DraftsResource]
   }

@@ -13,9 +13,7 @@ object ^ extends js.Object {
     * Fired when an alarm has expired. Useful for transient background pages.
     * @param name The alarm that has expired.
     */
-  val onAlarm: firefoxDashWebextDashBrowserLib.WebExtEvent[
-    js.Function1[/* name */ firefoxDashWebextDashBrowserLib.browserNs.alarmsNs.Alarm, scala.Unit]
-  ] = js.native
+  val onAlarm: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* name */ Alarm, scala.Unit]] = js.native
   /**
     * Clears the alarm with the given name.
     * @param [name] The name of the alarm to clear. Defaults to the empty string.
@@ -50,9 +48,9 @@ object ^ extends js.Object {
     * Retrieves details about the specified alarm.
     * @param [name] The name of the alarm to get. Defaults to the empty string.
     */
-  def get(): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.alarmsNs.Alarm] = js.native
-  def get(name: java.lang.String): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.alarmsNs.Alarm] = js.native
+  def get(): js.Promise[Alarm] = js.native
+  def get(name: java.lang.String): js.Promise[Alarm] = js.native
   /** Gets an array of all the alarms. */
-  def getAll(): js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.alarmsNs.Alarm]] = js.native
+  def getAll(): js.Promise[js.Array[Alarm]] = js.native
 }
 

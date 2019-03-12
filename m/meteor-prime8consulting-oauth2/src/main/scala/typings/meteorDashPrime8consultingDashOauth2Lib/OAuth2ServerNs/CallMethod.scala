@@ -26,21 +26,13 @@ trait CallMethod extends js.Object {
 object CallMethod {
   @scala.inline
   def apply(
-    authCodeGrant: js.Function6[
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      js.Array[java.lang.String], 
-      java.lang.String, 
-      js.Function2[
-        /* err */ meteorLib.MeteorNs.Error, 
-        /* authCodeGrantResult */ AuthCodeGrantResult, 
-        scala.Unit
-      ], 
+    authCodeGrant: (java.lang.String, java.lang.String, java.lang.String, js.Array[java.lang.String], java.lang.String, js.Function2[
+      /* err */ meteorLib.MeteorNs.Error, 
+      /* authCodeGrantResult */ AuthCodeGrantResult, 
       scala.Unit
-    ]
+    ]) => scala.Unit
   ): CallMethod = {
-    val __obj = js.Dynamic.literal(authCodeGrant = authCodeGrant)
+    val __obj = js.Dynamic.literal(authCodeGrant = js.Any.fromFunction6(authCodeGrant))
   
     __obj.asInstanceOf[CallMethod]
   }

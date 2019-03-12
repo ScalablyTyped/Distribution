@@ -33,13 +33,13 @@ object univariateColorSizeCreateVisualVariablesParamsSizeOptions {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     axis: js.UndefOr[scala.Boolean] = js.undefined,
     legendOptions: univariateColorSizeCreateVisualVariablesParamsSizeOptionsLegendOptions = null,
     sizeScheme: SizeScheme = null
   ): univariateColorSizeCreateVisualVariablesParamsSizeOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (!js.isUndefined(axis)) __obj.updateDynamic("axis")(axis)
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
     if (sizeScheme != null) __obj.updateDynamic("sizeScheme")(sizeScheme)

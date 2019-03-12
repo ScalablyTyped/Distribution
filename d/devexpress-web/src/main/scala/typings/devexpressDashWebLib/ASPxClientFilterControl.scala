@@ -55,33 +55,33 @@ trait ASPxClientFilterControl extends ASPxClientControl {
 object ASPxClientFilterControl {
   @scala.inline
   def apply(
-    AdjustControl: js.Function0[scala.Unit],
+    AdjustControl: () => scala.Unit,
     Applied: ASPxClientEvent[ASPxClientFilterAppliedEventHandler[ASPxClientFilterControl]],
-    Apply: js.Function0[scala.Unit],
+    Apply: () => scala.Unit,
     BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientFilterControl]],
     CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientFilterControl]],
     EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientFilterControl]],
-    GetAppliedFilterExpression: js.Function0[java.lang.String],
-    GetClientVisible: js.Function0[scala.Boolean],
-    GetEditor: js.Function1[scala.Double, ASPxClientEditBase],
-    GetFilterExpression: js.Function0[java.lang.String],
-    GetHeight: js.Function0[scala.Double],
-    GetMainElement: js.Function0[js.Object],
-    GetParentControl: js.Function0[js.Object],
-    GetVisible: js.Function0[scala.Boolean],
-    GetWidth: js.Function0[scala.Double],
-    InCallback: js.Function0[scala.Boolean],
+    GetAppliedFilterExpression: () => java.lang.String,
+    GetClientVisible: () => scala.Boolean,
+    GetEditor: scala.Double => ASPxClientEditBase,
+    GetFilterExpression: () => java.lang.String,
+    GetHeight: () => scala.Double,
+    GetMainElement: () => js.Object,
+    GetParentControl: () => js.Object,
+    GetVisible: () => scala.Boolean,
+    GetWidth: () => scala.Double,
+    InCallback: () => scala.Boolean,
     Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
-    IsFilterExpressionValid: js.Function0[scala.Boolean],
-    Reset: js.Function0[scala.Unit],
-    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
-    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetHeight: js.Function1[scala.Double, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetWidth: js.Function1[scala.Double, scala.Unit],
+    IsFilterExpressionValid: () => scala.Boolean,
+    Reset: () => scala.Unit,
+    SendMessageToAssistiveTechnology: java.lang.String => scala.Unit,
+    SetClientVisible: scala.Boolean => scala.Unit,
+    SetHeight: scala.Double => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
+    SetWidth: scala.Double => scala.Unit,
     name: java.lang.String
   ): ASPxClientFilterControl = {
-    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, Applied = Applied, Apply = Apply, BeginCallback = BeginCallback, CallbackError = CallbackError, EndCallback = EndCallback, GetAppliedFilterExpression = GetAppliedFilterExpression, GetClientVisible = GetClientVisible, GetEditor = GetEditor, GetFilterExpression = GetFilterExpression, GetHeight = GetHeight, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, IsFilterExpressionValid = IsFilterExpressionValid, Reset = Reset, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetVisible = SetVisible, SetWidth = SetWidth, name = name)
+    val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), Applied = Applied, Apply = js.Any.fromFunction0(Apply), BeginCallback = BeginCallback, CallbackError = CallbackError, EndCallback = EndCallback, GetAppliedFilterExpression = js.Any.fromFunction0(GetAppliedFilterExpression), GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetEditor = js.Any.fromFunction1(GetEditor), GetFilterExpression = js.Any.fromFunction0(GetFilterExpression), GetHeight = js.Any.fromFunction0(GetHeight), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), InCallback = js.Any.fromFunction0(InCallback), Init = Init, IsFilterExpressionValid = js.Any.fromFunction0(IsFilterExpressionValid), Reset = js.Any.fromFunction0(Reset), SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetHeight = js.Any.fromFunction1(SetHeight), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), name = name)
   
     __obj.asInstanceOf[ASPxClientFilterControl]
   }

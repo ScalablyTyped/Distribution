@@ -31,17 +31,17 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    afterChange: js.Function0[scala.Unit] = null,
-    afterLoad: js.Function0[scala.Unit] = null,
+    afterChange: () => scala.Unit = null,
+    afterLoad: () => scala.Unit = null,
     animSpeed: scala.Int | scala.Double = null,
-    beforeChange: js.Function0[scala.Unit] = null,
+    beforeChange: () => scala.Unit = null,
     boxCols: scala.Int | scala.Double = null,
     boxRows: scala.Int | scala.Double = null,
     controlNav: js.UndefOr[scala.Boolean] = js.undefined,
     controlNavThumbs: js.UndefOr[scala.Boolean] = js.undefined,
     directionNav: js.UndefOr[scala.Boolean] = js.undefined,
     effect: EffectType = null,
-    lastSlide: js.Function0[scala.Unit] = null,
+    lastSlide: () => scala.Unit = null,
     manualAdvance: js.UndefOr[scala.Boolean] = js.undefined,
     nextText: java.lang.String = null,
     pauseOnHover: js.UndefOr[scala.Boolean] = js.undefined,
@@ -49,21 +49,21 @@ object Options {
     prevText: java.lang.String = null,
     randomStart: js.UndefOr[scala.Boolean] = js.undefined,
     slices: scala.Int | scala.Double = null,
-    slideshowEnd: js.Function0[scala.Unit] = null,
+    slideshowEnd: () => scala.Unit = null,
     startSlide: scala.Int | scala.Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (afterChange != null) __obj.updateDynamic("afterChange")(afterChange)
-    if (afterLoad != null) __obj.updateDynamic("afterLoad")(afterLoad)
+    if (afterChange != null) __obj.updateDynamic("afterChange")(js.Any.fromFunction0(afterChange))
+    if (afterLoad != null) __obj.updateDynamic("afterLoad")(js.Any.fromFunction0(afterLoad))
     if (animSpeed != null) __obj.updateDynamic("animSpeed")(animSpeed.asInstanceOf[js.Any])
-    if (beforeChange != null) __obj.updateDynamic("beforeChange")(beforeChange)
+    if (beforeChange != null) __obj.updateDynamic("beforeChange")(js.Any.fromFunction0(beforeChange))
     if (boxCols != null) __obj.updateDynamic("boxCols")(boxCols.asInstanceOf[js.Any])
     if (boxRows != null) __obj.updateDynamic("boxRows")(boxRows.asInstanceOf[js.Any])
     if (!js.isUndefined(controlNav)) __obj.updateDynamic("controlNav")(controlNav)
     if (!js.isUndefined(controlNavThumbs)) __obj.updateDynamic("controlNavThumbs")(controlNavThumbs)
     if (!js.isUndefined(directionNav)) __obj.updateDynamic("directionNav")(directionNav)
     if (effect != null) __obj.updateDynamic("effect")(effect)
-    if (lastSlide != null) __obj.updateDynamic("lastSlide")(lastSlide)
+    if (lastSlide != null) __obj.updateDynamic("lastSlide")(js.Any.fromFunction0(lastSlide))
     if (!js.isUndefined(manualAdvance)) __obj.updateDynamic("manualAdvance")(manualAdvance)
     if (nextText != null) __obj.updateDynamic("nextText")(nextText)
     if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover)
@@ -71,7 +71,7 @@ object Options {
     if (prevText != null) __obj.updateDynamic("prevText")(prevText)
     if (!js.isUndefined(randomStart)) __obj.updateDynamic("randomStart")(randomStart)
     if (slices != null) __obj.updateDynamic("slices")(slices.asInstanceOf[js.Any])
-    if (slideshowEnd != null) __obj.updateDynamic("slideshowEnd")(slideshowEnd)
+    if (slideshowEnd != null) __obj.updateDynamic("slideshowEnd")(js.Any.fromFunction0(slideshowEnd))
     if (startSlide != null) __obj.updateDynamic("startSlide")(startSlide.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

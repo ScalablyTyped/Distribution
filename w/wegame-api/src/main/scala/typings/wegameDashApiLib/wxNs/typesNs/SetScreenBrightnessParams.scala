@@ -19,14 +19,14 @@ object SetScreenBrightnessParams {
   @scala.inline
   def apply(
     value: scala.Double,
-    complete: js.Function0[scala.Unit] = null,
-    fail: js.Function0[scala.Unit] = null,
-    success: js.Function0[scala.Unit] = null
+    complete: () => scala.Unit = null,
+    fail: () => scala.Unit = null,
+    success: () => scala.Unit = null
   ): SetScreenBrightnessParams = {
     val __obj = js.Dynamic.literal(value = value)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[SetScreenBrightnessParams]
   }
 }

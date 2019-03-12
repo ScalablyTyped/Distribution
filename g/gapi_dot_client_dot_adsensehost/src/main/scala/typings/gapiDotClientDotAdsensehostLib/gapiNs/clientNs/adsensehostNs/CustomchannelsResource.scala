@@ -23,32 +23,14 @@ trait CustomchannelsResource extends js.Object {
 object CustomchannelsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AdClientIdAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AdClientIdAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AdClientId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AdClientIdAltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CustomChannels]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AdClientIdAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AdClientId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel]
-    ]
+    delete: gapiDotClientDotAdsensehostLib.Anon_AdClientIdAlt => gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel],
+    get: gapiDotClientDotAdsensehostLib.Anon_AdClientIdAlt => gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel],
+    insert: gapiDotClientDotAdsensehostLib.Anon_AdClientId => gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel],
+    list: gapiDotClientDotAdsensehostLib.Anon_AdClientIdAltFields => gapiDotClientLib.gapiNs.clientNs.Request[CustomChannels],
+    patch: gapiDotClientDotAdsensehostLib.Anon_AdClientIdAlt => gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel],
+    update: gapiDotClientDotAdsensehostLib.Anon_AdClientId => gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel]
   ): CustomchannelsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[CustomchannelsResource]
   }

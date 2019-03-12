@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.Field")
 @js.native
 class Field protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var Code: Range = js.native
   val Creator: scala.Double = js.native
   var Data: java.lang.String = js.native
   val Index: scala.Double = js.native
-  val InlineShape: InlineShape = js.native
+  val InlineShape: activexDashWordLib.WordNs.InlineShape = js.native
   val Kind: WdFieldKind = js.native
-  val LinkFormat: LinkFormat = js.native
+  val LinkFormat: activexDashWordLib.WordNs.LinkFormat = js.native
   var Locked: scala.Boolean = js.native
   val Next: Field = js.native
-  val OLEFormat: OLEFormat = js.native
+  val OLEFormat: activexDashWordLib.WordNs.OLEFormat = js.native
   val Parent: js.Any = js.native
   val Previous: Field = js.native
   var Result: Range = js.native

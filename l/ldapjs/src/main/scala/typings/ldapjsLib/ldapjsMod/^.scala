@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var Change: ldapjsLib.Anon_Change = js.native
-  def createClient(): ldapjsLib.ldapjsMod.Client = js.native
-  def createClient(options: ldapjsLib.ldapjsMod.ClientOptions): ldapjsLib.ldapjsMod.Client = js.native
-  def parseFilter(filterString: java.lang.String): ldapjsLib.ldapjsMod.Filter = js.native
+  def createClient(): Client = js.native
+  def createClient(options: ClientOptions): Client = js.native
+  def parseFilter(filterString: java.lang.String): Filter = js.native
 }
 

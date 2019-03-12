@@ -13,6 +13,8 @@ class ValidationError protected ()
   /* CompleteClass */
   override var message: java.lang.String = js.native
   /* CompleteClass */
+  override var name: java.lang.String = js.native
+  /* CompleteClass */
   override var statusCode: scala.Double = js.native
   /* CompleteClass */
   override var `type`: objectionLib.objectionMod.ObjectionNs.ValidationErrorType = js.native

@@ -16,11 +16,11 @@ object ConnectionCosts {
   @scala.inline
   def apply(
     buffer: stdLib.Int16Array,
-    get: js.Function2[scala.Double, scala.Double, scala.Double],
-    loadConnectionCosts: js.Function1[stdLib.Int16Array, scala.Unit],
-    put: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit]
+    get: (scala.Double, scala.Double) => scala.Double,
+    loadConnectionCosts: stdLib.Int16Array => scala.Unit,
+    put: (scala.Double, scala.Double, scala.Double) => scala.Unit
   ): ConnectionCosts = {
-    val __obj = js.Dynamic.literal(buffer = buffer, get = get, loadConnectionCosts = loadConnectionCosts, put = put)
+    val __obj = js.Dynamic.literal(buffer = buffer, get = js.Any.fromFunction2(get), loadConnectionCosts = js.Any.fromFunction1(loadConnectionCosts), put = js.Any.fromFunction3(put))
   
     __obj.asInstanceOf[ConnectionCosts]
   }

@@ -64,15 +64,15 @@ object XSSOContext {
     Mutual: scala.Boolean,
     Source: java.lang.String,
     Target: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getMechanism: js.Function0[java.lang.String],
-    getMutual: js.Function0[scala.Boolean],
-    getSource: js.Function0[java.lang.String],
-    getTarget: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getMechanism: () => java.lang.String,
+    getMutual: () => scala.Boolean,
+    getSource: () => java.lang.String,
+    getTarget: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSSOContext = {
-    val __obj = js.Dynamic.literal(Mechanism = Mechanism, Mutual = Mutual, Source = Source, Target = Target, acquire = acquire, getMechanism = getMechanism, getMutual = getMutual, getSource = getSource, getTarget = getTarget, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Mechanism = Mechanism, Mutual = Mutual, Source = Source, Target = Target, acquire = js.Any.fromFunction0(acquire), getMechanism = js.Any.fromFunction0(getMechanism), getMutual = js.Any.fromFunction0(getMutual), getSource = js.Any.fromFunction0(getSource), getTarget = js.Any.fromFunction0(getTarget), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSSOContext]
   }

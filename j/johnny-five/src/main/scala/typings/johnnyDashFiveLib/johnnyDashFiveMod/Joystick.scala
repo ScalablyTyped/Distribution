@@ -18,7 +18,7 @@ class Joystick protected () extends js.Object {
   @JSName("on")
   def on_axismove(
     event: johnnyDashFiveLib.johnnyDashFiveLibStrings.axismove,
-    cb: js.Function2[/* error */ nodeLib.Error, /* date */ stdLib.Date, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error, /* date */ stdLib.Date, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_change(event: johnnyDashFiveLib.johnnyDashFiveLibStrings.change, cb: js.Function0[scala.Unit]): this.type = js.native

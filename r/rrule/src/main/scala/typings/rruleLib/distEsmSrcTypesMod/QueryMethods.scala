@@ -15,12 +15,12 @@ trait QueryMethods extends js.Object {
 object QueryMethods {
   @scala.inline
   def apply(
-    after: js.Function2[stdLib.Date, scala.Boolean, stdLib.Date],
-    all: js.Function0[js.Array[stdLib.Date]],
-    before: js.Function2[stdLib.Date, scala.Boolean, stdLib.Date],
-    between: js.Function3[stdLib.Date, stdLib.Date, scala.Boolean, js.Array[stdLib.Date]]
+    after: (stdLib.Date, scala.Boolean) => stdLib.Date,
+    all: () => js.Array[stdLib.Date],
+    before: (stdLib.Date, scala.Boolean) => stdLib.Date,
+    between: (stdLib.Date, stdLib.Date, scala.Boolean) => js.Array[stdLib.Date]
   ): QueryMethods = {
-    val __obj = js.Dynamic.literal(after = after, all = all, before = before, between = between)
+    val __obj = js.Dynamic.literal(after = js.Any.fromFunction2(after), all = js.Any.fromFunction0(all), before = js.Any.fromFunction2(before), between = js.Any.fromFunction3(between))
   
     __obj.asInstanceOf[QueryMethods]
   }

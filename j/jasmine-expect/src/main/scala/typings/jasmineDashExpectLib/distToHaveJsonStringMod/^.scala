@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jasmine-expect/dist/toHaveJsonString", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val toHaveJsonString: jasmineDashExpectLib.distToHaveJsonStringMod.ToHaveJsonString = js.native
+  val toHaveJsonString: ToHaveJsonString = js.native
 }
 

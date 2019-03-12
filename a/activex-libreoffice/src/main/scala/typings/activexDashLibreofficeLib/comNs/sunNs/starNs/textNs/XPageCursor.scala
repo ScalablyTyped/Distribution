@@ -41,19 +41,19 @@ object XPageCursor {
   @scala.inline
   def apply(
     Page: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getPage: js.Function0[scala.Double],
-    jumpToEndOfPage: js.Function0[scala.Boolean],
-    jumpToFirstPage: js.Function0[scala.Boolean],
-    jumpToLastPage: js.Function0[scala.Boolean],
-    jumpToNextPage: js.Function0[scala.Boolean],
-    jumpToPage: js.Function1[scala.Double, scala.Boolean],
-    jumpToPreviousPage: js.Function0[scala.Boolean],
-    jumpToStartOfPage: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getPage: () => scala.Double,
+    jumpToEndOfPage: () => scala.Boolean,
+    jumpToFirstPage: () => scala.Boolean,
+    jumpToLastPage: () => scala.Boolean,
+    jumpToNextPage: () => scala.Boolean,
+    jumpToPage: scala.Double => scala.Boolean,
+    jumpToPreviousPage: () => scala.Boolean,
+    jumpToStartOfPage: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XPageCursor = {
-    val __obj = js.Dynamic.literal(Page = Page, acquire = acquire, getPage = getPage, jumpToEndOfPage = jumpToEndOfPage, jumpToFirstPage = jumpToFirstPage, jumpToLastPage = jumpToLastPage, jumpToNextPage = jumpToNextPage, jumpToPage = jumpToPage, jumpToPreviousPage = jumpToPreviousPage, jumpToStartOfPage = jumpToStartOfPage, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Page = Page, acquire = js.Any.fromFunction0(acquire), getPage = js.Any.fromFunction0(getPage), jumpToEndOfPage = js.Any.fromFunction0(jumpToEndOfPage), jumpToFirstPage = js.Any.fromFunction0(jumpToFirstPage), jumpToLastPage = js.Any.fromFunction0(jumpToLastPage), jumpToNextPage = js.Any.fromFunction0(jumpToNextPage), jumpToPage = js.Any.fromFunction1(jumpToPage), jumpToPreviousPage = js.Any.fromFunction0(jumpToPreviousPage), jumpToStartOfPage = js.Any.fromFunction0(jumpToStartOfPage), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XPageCursor]
   }

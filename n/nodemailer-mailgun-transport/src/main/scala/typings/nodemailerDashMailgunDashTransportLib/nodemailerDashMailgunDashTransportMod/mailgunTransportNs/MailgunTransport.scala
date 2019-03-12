@@ -12,25 +12,21 @@ object MailgunTransport {
   @scala.inline
   def apply(
     name: java.lang.String,
-    send: js.Function2[
-      nodemailerLib.libMailerMailDashMessageMod.namespaced, 
-      js.Function2[/* err */ nodeLib.Error | scala.Null, /* info */ js.UndefOr[Information], scala.Unit], 
-      scala.Unit
-    ],
+    send: (nodemailerLib.libMailerMailDashMessageMod.namespaced, js.Function2[/* err */ stdLib.Error | scala.Null, /* info */ js.UndefOr[Information], scala.Unit]) => scala.Unit,
     version: java.lang.String,
-    close: js.Function0[scala.Unit] = null,
+    close: () => scala.Unit = null,
     mailer: nodemailerLib.libMailerMod.namespaced = null,
     verify: (js.Function1[
       /* callback */ js.Function2[
-        /* err */ nodeLib.Error | scala.Null, 
+        /* err */ stdLib.Error | scala.Null, 
         nodemailerLib.nodemailerLibNumbers.`true`, 
         scala.Unit
       ], 
       scala.Unit
     ]) with js.Function0[js.Promise[nodemailerLib.nodemailerLibNumbers.`true`]] = null
   ): MailgunTransport = {
-    val __obj = js.Dynamic.literal(name = name, send = send, version = version)
-    if (close != null) __obj.updateDynamic("close")(close)
+    val __obj = js.Dynamic.literal(name = name, send = js.Any.fromFunction2(send), version = version)
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction0(close))
     if (mailer != null) __obj.updateDynamic("mailer")(mailer)
     if (verify != null) __obj.updateDynamic("verify")(verify)
     __obj.asInstanceOf[MailgunTransport]

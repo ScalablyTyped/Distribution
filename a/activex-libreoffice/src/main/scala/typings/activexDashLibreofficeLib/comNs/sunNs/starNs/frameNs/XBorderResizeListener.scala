@@ -19,17 +19,13 @@ trait XBorderResizeListener
 object XBorderResizeListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    borderWidthsChanged: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      BorderWidths, 
-      scala.Unit
-    ],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    borderWidthsChanged: (activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, BorderWidths) => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XBorderResizeListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, borderWidthsChanged = borderWidthsChanged, disposing = disposing, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), borderWidthsChanged = js.Any.fromFunction2(borderWidthsChanged), disposing = js.Any.fromFunction1(disposing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XBorderResizeListener]
   }

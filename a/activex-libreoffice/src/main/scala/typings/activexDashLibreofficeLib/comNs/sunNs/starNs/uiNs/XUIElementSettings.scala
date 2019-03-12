@@ -36,17 +36,14 @@ trait XUIElementSettings
 object XUIElementSettings {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getSettings: js.Function1[
-      scala.Boolean, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setSettings: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, scala.Unit],
-    updateSettings: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getSettings: scala.Boolean => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setSettings: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess => scala.Unit,
+    updateSettings: () => scala.Unit
   ): XUIElementSettings = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getSettings = getSettings, queryInterface = queryInterface, release = release, setSettings = setSettings, updateSettings = updateSettings)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getSettings = js.Any.fromFunction1(getSettings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setSettings = js.Any.fromFunction1(setSettings), updateSettings = js.Any.fromFunction0(updateSettings))
   
     __obj.asInstanceOf[XUIElementSettings]
   }

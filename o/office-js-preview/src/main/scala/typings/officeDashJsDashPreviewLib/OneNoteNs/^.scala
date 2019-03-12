@@ -12,9 +12,7 @@ object ^ extends js.Object {
     * Executes a batch script that performs actions on the OneNote object model, using a new request context. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the OneNote application. Since the Office add-in and the OneNote application run in two different processes, the request context is required to get access to the OneNote object model from the add-in.
     */
-  def run[T](
-    batch: js.Function1[/* context */ officeDashJsDashPreviewLib.OneNoteNs.RequestContext, js.Promise[T]]
-  ): js.Promise[T] = js.native
+  def run[T](batch: js.Function1[/* context */ RequestContext, js.Promise[T]]): js.Promise[T] = js.native
   /**
     * Executes a batch script that performs actions on the OneNote object model, using the request context of a previously-created API object.
     * @param object - A previously-created API object. The batch will use the same request context as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
@@ -22,7 +20,7 @@ object ^ extends js.Object {
     */
   def run[T](
     `object`: officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject,
-    batch: js.Function1[/* context */ officeDashJsDashPreviewLib.OneNoteNs.RequestContext, js.Promise[T]]
+    batch: js.Function1[/* context */ RequestContext, js.Promise[T]]
   ): js.Promise[T] = js.native
   /**
     * Executes a batch script that performs actions on the OneNote object model, using the request context of previously-created API objects.
@@ -31,7 +29,7 @@ object ^ extends js.Object {
     */
   def run[T](
     objects: js.Array[officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject],
-    batch: js.Function1[/* context */ officeDashJsDashPreviewLib.OneNoteNs.RequestContext, js.Promise[T]]
+    batch: js.Function1[/* context */ RequestContext, js.Promise[T]]
   ): js.Promise[T] = js.native
 }
 

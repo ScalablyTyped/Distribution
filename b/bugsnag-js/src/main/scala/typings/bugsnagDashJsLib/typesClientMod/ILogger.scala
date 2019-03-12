@@ -15,12 +15,12 @@ trait ILogger extends js.Object {
 object ILogger {
   @scala.inline
   def apply(
-    debug: js.Function1[/* repeated */ js.Any, scala.Unit],
-    error: js.Function1[/* repeated */ js.Any, scala.Unit],
-    info: js.Function1[/* repeated */ js.Any, scala.Unit],
-    warn: js.Function1[/* repeated */ js.Any, scala.Unit]
+    debug: /* repeated */ js.Any => scala.Unit,
+    error: /* repeated */ js.Any => scala.Unit,
+    info: /* repeated */ js.Any => scala.Unit,
+    warn: /* repeated */ js.Any => scala.Unit
   ): ILogger = {
-    val __obj = js.Dynamic.literal(debug = debug, error = error, info = info, warn = warn)
+    val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), warn = js.Any.fromFunction1(warn))
   
     __obj.asInstanceOf[ILogger]
   }

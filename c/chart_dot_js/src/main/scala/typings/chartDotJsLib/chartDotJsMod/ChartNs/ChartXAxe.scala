@@ -16,22 +16,22 @@ trait ChartXAxe extends CommonAxe {
 object ChartXAxe {
   @scala.inline
   def apply(
-    afterBuildTicks: js.Function1[/* scale */ js.UndefOr[js.Any], scala.Unit] = null,
-    afterCalculateTickRotation: js.Function1[/* scale */ js.UndefOr[js.Any], scala.Unit] = null,
-    afterDataLimits: js.Function1[/* scale */ js.UndefOr[js.Any], scala.Unit] = null,
-    afterFit: js.Function1[/* scale */ js.UndefOr[js.Any], scala.Unit] = null,
-    afterSetDimension: js.Function1[/* scale */ js.UndefOr[js.Any], scala.Unit] = null,
-    afterTickToLabelConversion: js.Function1[/* scale */ js.UndefOr[js.Any], scala.Unit] = null,
-    afterUpdate: js.Function1[/* scale */ js.UndefOr[js.Any], scala.Unit] = null,
+    afterBuildTicks: /* scale */ js.UndefOr[js.Any] => scala.Unit = null,
+    afterCalculateTickRotation: /* scale */ js.UndefOr[js.Any] => scala.Unit = null,
+    afterDataLimits: /* scale */ js.UndefOr[js.Any] => scala.Unit = null,
+    afterFit: /* scale */ js.UndefOr[js.Any] => scala.Unit = null,
+    afterSetDimension: /* scale */ js.UndefOr[js.Any] => scala.Unit = null,
+    afterTickToLabelConversion: /* scale */ js.UndefOr[js.Any] => scala.Unit = null,
+    afterUpdate: /* scale */ js.UndefOr[js.Any] => scala.Unit = null,
     barPercentage: scala.Int | scala.Double = null,
     barThickness: scala.Double | chartDotJsLib.chartDotJsLibStrings.flex = null,
-    beforeBuildTicks: js.Function1[/* scale */ js.UndefOr[js.Any], scala.Unit] = null,
-    beforeCalculateTickRotation: js.Function1[/* scale */ js.UndefOr[js.Any], scala.Unit] = null,
-    beforeDataLimits: js.Function1[/* scale */ js.UndefOr[js.Any], scala.Unit] = null,
-    beforeFit: js.Function1[/* scale */ js.UndefOr[js.Any], scala.Unit] = null,
-    beforeSetDimension: js.Function1[/* scale */ js.UndefOr[js.Any], scala.Unit] = null,
-    beforeTickToLabelConversion: js.Function1[/* scale */ js.UndefOr[js.Any], scala.Unit] = null,
-    beforeUpdate: js.Function1[/* scale */ js.UndefOr[js.Any], scala.Unit] = null,
+    beforeBuildTicks: /* scale */ js.UndefOr[js.Any] => scala.Unit = null,
+    beforeCalculateTickRotation: /* scale */ js.UndefOr[js.Any] => scala.Unit = null,
+    beforeDataLimits: /* scale */ js.UndefOr[js.Any] => scala.Unit = null,
+    beforeFit: /* scale */ js.UndefOr[js.Any] => scala.Unit = null,
+    beforeSetDimension: /* scale */ js.UndefOr[js.Any] => scala.Unit = null,
+    beforeTickToLabelConversion: /* scale */ js.UndefOr[js.Any] => scala.Unit = null,
+    beforeUpdate: /* scale */ js.UndefOr[js.Any] => scala.Unit = null,
     bounds: java.lang.String = null,
     categoryPercentage: scala.Int | scala.Double = null,
     display: js.UndefOr[scala.Boolean] = js.undefined,
@@ -48,22 +48,22 @@ object ChartXAxe {
     `type`: ScaleType | java.lang.String = null
   ): ChartXAxe = {
     val __obj = js.Dynamic.literal()
-    if (afterBuildTicks != null) __obj.updateDynamic("afterBuildTicks")(afterBuildTicks)
-    if (afterCalculateTickRotation != null) __obj.updateDynamic("afterCalculateTickRotation")(afterCalculateTickRotation)
-    if (afterDataLimits != null) __obj.updateDynamic("afterDataLimits")(afterDataLimits)
-    if (afterFit != null) __obj.updateDynamic("afterFit")(afterFit)
-    if (afterSetDimension != null) __obj.updateDynamic("afterSetDimension")(afterSetDimension)
-    if (afterTickToLabelConversion != null) __obj.updateDynamic("afterTickToLabelConversion")(afterTickToLabelConversion)
-    if (afterUpdate != null) __obj.updateDynamic("afterUpdate")(afterUpdate)
+    if (afterBuildTicks != null) __obj.updateDynamic("afterBuildTicks")(js.Any.fromFunction1(afterBuildTicks))
+    if (afterCalculateTickRotation != null) __obj.updateDynamic("afterCalculateTickRotation")(js.Any.fromFunction1(afterCalculateTickRotation))
+    if (afterDataLimits != null) __obj.updateDynamic("afterDataLimits")(js.Any.fromFunction1(afterDataLimits))
+    if (afterFit != null) __obj.updateDynamic("afterFit")(js.Any.fromFunction1(afterFit))
+    if (afterSetDimension != null) __obj.updateDynamic("afterSetDimension")(js.Any.fromFunction1(afterSetDimension))
+    if (afterTickToLabelConversion != null) __obj.updateDynamic("afterTickToLabelConversion")(js.Any.fromFunction1(afterTickToLabelConversion))
+    if (afterUpdate != null) __obj.updateDynamic("afterUpdate")(js.Any.fromFunction1(afterUpdate))
     if (barPercentage != null) __obj.updateDynamic("barPercentage")(barPercentage.asInstanceOf[js.Any])
     if (barThickness != null) __obj.updateDynamic("barThickness")(barThickness.asInstanceOf[js.Any])
-    if (beforeBuildTicks != null) __obj.updateDynamic("beforeBuildTicks")(beforeBuildTicks)
-    if (beforeCalculateTickRotation != null) __obj.updateDynamic("beforeCalculateTickRotation")(beforeCalculateTickRotation)
-    if (beforeDataLimits != null) __obj.updateDynamic("beforeDataLimits")(beforeDataLimits)
-    if (beforeFit != null) __obj.updateDynamic("beforeFit")(beforeFit)
-    if (beforeSetDimension != null) __obj.updateDynamic("beforeSetDimension")(beforeSetDimension)
-    if (beforeTickToLabelConversion != null) __obj.updateDynamic("beforeTickToLabelConversion")(beforeTickToLabelConversion)
-    if (beforeUpdate != null) __obj.updateDynamic("beforeUpdate")(beforeUpdate)
+    if (beforeBuildTicks != null) __obj.updateDynamic("beforeBuildTicks")(js.Any.fromFunction1(beforeBuildTicks))
+    if (beforeCalculateTickRotation != null) __obj.updateDynamic("beforeCalculateTickRotation")(js.Any.fromFunction1(beforeCalculateTickRotation))
+    if (beforeDataLimits != null) __obj.updateDynamic("beforeDataLimits")(js.Any.fromFunction1(beforeDataLimits))
+    if (beforeFit != null) __obj.updateDynamic("beforeFit")(js.Any.fromFunction1(beforeFit))
+    if (beforeSetDimension != null) __obj.updateDynamic("beforeSetDimension")(js.Any.fromFunction1(beforeSetDimension))
+    if (beforeTickToLabelConversion != null) __obj.updateDynamic("beforeTickToLabelConversion")(js.Any.fromFunction1(beforeTickToLabelConversion))
+    if (beforeUpdate != null) __obj.updateDynamic("beforeUpdate")(js.Any.fromFunction1(beforeUpdate))
     if (bounds != null) __obj.updateDynamic("bounds")(bounds)
     if (categoryPercentage != null) __obj.updateDynamic("categoryPercentage")(categoryPercentage.asInstanceOf[js.Any])
     if (!js.isUndefined(display)) __obj.updateDynamic("display")(display)

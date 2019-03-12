@@ -39,7 +39,7 @@ trait ServiceManager
      with activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet {
   /** @returns all names of services of which instances exist in this object.  {@link XContentEnumerationAccess.createContentEnumeration()} creates an enumerati */
   /* InferMemberOverrides */
-  override val AvailableServiceNames: activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  override val AvailableServiceNames: stdLib.SafeArray[java.lang.String] = js.native
   /** specifies the default component context to be used, if instanciating services via {@link XMultiServiceFactory} */
   var DefaultContext: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XComponentContext = js.native
   /**
@@ -47,6 +47,6 @@ trait ServiceManager
     * @returns sequence of all names
     */
   /* InferMemberOverrides */
-  override def getAvailableServiceNames(): activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  override def getAvailableServiceNames(): stdLib.SafeArray[java.lang.String] = js.native
 }
 

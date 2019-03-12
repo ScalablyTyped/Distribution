@@ -14,14 +14,14 @@ trait StockChartPaneRenderEvent extends StockChartEvent {
 object StockChartPaneRenderEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: StockChart,
     index: scala.Int | scala.Double = null,
     name: java.lang.String = null,
     pane: StockChart = null
   ): StockChartPaneRenderEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (pane != null) __obj.updateDynamic("pane")(pane)

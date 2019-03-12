@@ -35,40 +35,32 @@ trait ITextDocument extends js.Object {
 object ITextDocument {
   @scala.inline
   def apply(
-    applyDisplayUpdates: js.Function0[scala.Double],
-    batchDisplayUpdates: js.Function0[scala.Double],
-    beginUndoGroup: js.Function0[scala.Unit],
-    canCopy: js.Function0[scala.Boolean],
-    canPaste: js.Function0[scala.Boolean],
-    canRedo: js.Function0[scala.Boolean],
-    canUndo: js.Function0[scala.Boolean],
+    applyDisplayUpdates: () => scala.Double,
+    batchDisplayUpdates: () => scala.Double,
+    beginUndoGroup: () => scala.Unit,
+    canCopy: () => scala.Boolean,
+    canPaste: () => scala.Boolean,
+    canRedo: () => scala.Boolean,
+    canUndo: () => scala.Boolean,
     caretType: CaretType,
     defaultTabStop: scala.Double,
-    endUndoGroup: js.Function0[scala.Unit],
-    getDefaultCharacterFormat: js.Function0[ITextCharacterFormat],
-    getDefaultParagraphFormat: js.Function0[ITextParagraphFormat],
-    getRange: js.Function2[scala.Double, scala.Double, ITextRange],
-    getRangeFromPoint: js.Function2[winrtLib.WindowsNs.FoundationNs.Point, PointOptions, ITextRange],
-    getText: js.Function1[TextGetOptions, java.lang.String],
-    loadFromStream: js.Function2[
-      TextSetOptions, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream, 
-      scala.Unit
-    ],
-    redo: js.Function0[scala.Unit],
-    saveToStream: js.Function2[
-      TextGetOptions, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream, 
-      scala.Unit
-    ],
+    endUndoGroup: () => scala.Unit,
+    getDefaultCharacterFormat: () => ITextCharacterFormat,
+    getDefaultParagraphFormat: () => ITextParagraphFormat,
+    getRange: (scala.Double, scala.Double) => ITextRange,
+    getRangeFromPoint: (winrtLib.WindowsNs.FoundationNs.Point, PointOptions) => ITextRange,
+    getText: TextGetOptions => java.lang.String,
+    loadFromStream: (TextSetOptions, winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream) => scala.Unit,
+    redo: () => scala.Unit,
+    saveToStream: (TextGetOptions, winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream) => scala.Unit,
     selection: ITextSelection,
-    setDefaultCharacterFormat: js.Function1[ITextCharacterFormat, scala.Unit],
-    setDefaultParagraphFormat: js.Function1[ITextParagraphFormat, scala.Unit],
-    setText: js.Function2[TextSetOptions, java.lang.String, scala.Unit],
-    undo: js.Function0[scala.Unit],
+    setDefaultCharacterFormat: ITextCharacterFormat => scala.Unit,
+    setDefaultParagraphFormat: ITextParagraphFormat => scala.Unit,
+    setText: (TextSetOptions, java.lang.String) => scala.Unit,
+    undo: () => scala.Unit,
     undoLimit: scala.Double
   ): ITextDocument = {
-    val __obj = js.Dynamic.literal(applyDisplayUpdates = applyDisplayUpdates, batchDisplayUpdates = batchDisplayUpdates, beginUndoGroup = beginUndoGroup, canCopy = canCopy, canPaste = canPaste, canRedo = canRedo, canUndo = canUndo, caretType = caretType, defaultTabStop = defaultTabStop, endUndoGroup = endUndoGroup, getDefaultCharacterFormat = getDefaultCharacterFormat, getDefaultParagraphFormat = getDefaultParagraphFormat, getRange = getRange, getRangeFromPoint = getRangeFromPoint, getText = getText, loadFromStream = loadFromStream, redo = redo, saveToStream = saveToStream, selection = selection, setDefaultCharacterFormat = setDefaultCharacterFormat, setDefaultParagraphFormat = setDefaultParagraphFormat, setText = setText, undo = undo, undoLimit = undoLimit)
+    val __obj = js.Dynamic.literal(applyDisplayUpdates = js.Any.fromFunction0(applyDisplayUpdates), batchDisplayUpdates = js.Any.fromFunction0(batchDisplayUpdates), beginUndoGroup = js.Any.fromFunction0(beginUndoGroup), canCopy = js.Any.fromFunction0(canCopy), canPaste = js.Any.fromFunction0(canPaste), canRedo = js.Any.fromFunction0(canRedo), canUndo = js.Any.fromFunction0(canUndo), caretType = caretType, defaultTabStop = defaultTabStop, endUndoGroup = js.Any.fromFunction0(endUndoGroup), getDefaultCharacterFormat = js.Any.fromFunction0(getDefaultCharacterFormat), getDefaultParagraphFormat = js.Any.fromFunction0(getDefaultParagraphFormat), getRange = js.Any.fromFunction2(getRange), getRangeFromPoint = js.Any.fromFunction2(getRangeFromPoint), getText = js.Any.fromFunction1(getText), loadFromStream = js.Any.fromFunction2(loadFromStream), redo = js.Any.fromFunction0(redo), saveToStream = js.Any.fromFunction2(saveToStream), selection = selection, setDefaultCharacterFormat = js.Any.fromFunction1(setDefaultCharacterFormat), setDefaultParagraphFormat = js.Any.fromFunction1(setDefaultParagraphFormat), setText = js.Any.fromFunction2(setText), undo = js.Any.fromFunction0(undo), undoLimit = undoLimit)
   
     __obj.asInstanceOf[ITextDocument]
   }

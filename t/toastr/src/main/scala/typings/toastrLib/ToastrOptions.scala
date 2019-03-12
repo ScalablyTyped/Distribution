@@ -218,10 +218,10 @@ object ToastrOptions {
     iconClasses: Anon_Error = null,
     messageClass: java.lang.String = null,
     newestOnTop: js.UndefOr[scala.Boolean] = js.undefined,
-    onCloseClick: js.Function1[/* ev */ jqueryLib.JQueryMouseEventObject, scala.Unit] = null,
-    onHidden: js.Function0[scala.Unit] = null,
-    onShown: js.Function0[scala.Unit] = null,
-    onclick: js.Function1[/* ev */ jqueryLib.JQueryMouseEventObject, scala.Unit] = null,
+    onCloseClick: /* ev */ jqueryLib.JQueryMouseEventObject => scala.Unit = null,
+    onHidden: () => scala.Unit = null,
+    onShown: () => scala.Unit = null,
+    onclick: /* ev */ jqueryLib.JQueryMouseEventObject => scala.Unit = null,
     positionClass: java.lang.String = null,
     preventDuplicates: js.UndefOr[scala.Boolean] = js.undefined,
     progressBar: js.UndefOr[scala.Boolean] = js.undefined,
@@ -255,10 +255,10 @@ object ToastrOptions {
     if (iconClasses != null) __obj.updateDynamic("iconClasses")(iconClasses)
     if (messageClass != null) __obj.updateDynamic("messageClass")(messageClass)
     if (!js.isUndefined(newestOnTop)) __obj.updateDynamic("newestOnTop")(newestOnTop)
-    if (onCloseClick != null) __obj.updateDynamic("onCloseClick")(onCloseClick)
-    if (onHidden != null) __obj.updateDynamic("onHidden")(onHidden)
-    if (onShown != null) __obj.updateDynamic("onShown")(onShown)
-    if (onclick != null) __obj.updateDynamic("onclick")(onclick)
+    if (onCloseClick != null) __obj.updateDynamic("onCloseClick")(js.Any.fromFunction1(onCloseClick))
+    if (onHidden != null) __obj.updateDynamic("onHidden")(js.Any.fromFunction0(onHidden))
+    if (onShown != null) __obj.updateDynamic("onShown")(js.Any.fromFunction0(onShown))
+    if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction1(onclick))
     if (positionClass != null) __obj.updateDynamic("positionClass")(positionClass)
     if (!js.isUndefined(preventDuplicates)) __obj.updateDynamic("preventDuplicates")(preventDuplicates)
     if (!js.isUndefined(progressBar)) __obj.updateDynamic("progressBar")(progressBar)

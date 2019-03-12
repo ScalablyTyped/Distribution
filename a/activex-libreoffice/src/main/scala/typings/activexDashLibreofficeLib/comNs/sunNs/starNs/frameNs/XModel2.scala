@@ -26,7 +26,7 @@ trait XModel2 extends XModel {
     * @returns a sequence of names of all supported views for this document.
     * @see createView
     */
-  val AvailableViewControllerNames: activexDashInteropLib.SafeArray[java.lang.String]
+  val AvailableViewControllerNames: stdLib.SafeArray[java.lang.String]
   /**
     * provides list of all currently connected controller objects.
     *
@@ -75,7 +75,7 @@ trait XModel2 extends XModel {
     * @returns a sequence of names of all supported views for this document.
     * @see createView
     */
-  def getAvailableViewControllerNames(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getAvailableViewControllerNames(): stdLib.SafeArray[java.lang.String]
   /**
     * provides list of all currently connected controller objects.
     *
@@ -89,46 +89,35 @@ trait XModel2 extends XModel {
 object XModel2 {
   @scala.inline
   def apply(
-    Args: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
-    AvailableViewControllerNames: activexDashInteropLib.SafeArray[java.lang.String],
+    Args: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    AvailableViewControllerNames: stdLib.SafeArray[java.lang.String],
     Controllers: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration,
     CurrentController: XController,
     CurrentSelection: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     URL: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    attachResource: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Boolean
-    ],
-    connectController: js.Function1[XController, scala.Unit],
-    createDefaultViewController: js.Function1[XFrame, XController2],
-    createViewController: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      XFrame, 
-      XController2
-    ],
-    disconnectController: js.Function1[XController, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    getArgs: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    getAvailableViewControllerNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getControllers: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
-    getCurrentController: js.Function0[XController],
-    getCurrentSelection: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    getURL: js.Function0[java.lang.String],
-    hasControllersLocked: js.Function0[scala.Boolean],
-    lockControllers: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    setCurrentController: js.Function1[XController, scala.Unit],
-    unlockControllers: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    attachResource: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Boolean,
+    connectController: XController => scala.Unit,
+    createDefaultViewController: XFrame => XController2,
+    createViewController: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], XFrame) => XController2,
+    disconnectController: XController => scala.Unit,
+    dispose: () => scala.Unit,
+    getArgs: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    getAvailableViewControllerNames: () => stdLib.SafeArray[java.lang.String],
+    getControllers: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration,
+    getCurrentController: () => XController,
+    getCurrentSelection: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getURL: () => java.lang.String,
+    hasControllersLocked: () => scala.Boolean,
+    lockControllers: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    setCurrentController: XController => scala.Unit,
+    unlockControllers: () => scala.Unit
   ): XModel2 = {
-    val __obj = js.Dynamic.literal(Args = Args, AvailableViewControllerNames = AvailableViewControllerNames, Controllers = Controllers, CurrentController = CurrentController, CurrentSelection = CurrentSelection, URL = URL, acquire = acquire, addEventListener = addEventListener, attachResource = attachResource, connectController = connectController, createDefaultViewController = createDefaultViewController, createViewController = createViewController, disconnectController = disconnectController, dispose = dispose, getArgs = getArgs, getAvailableViewControllerNames = getAvailableViewControllerNames, getControllers = getControllers, getCurrentController = getCurrentController, getCurrentSelection = getCurrentSelection, getURL = getURL, hasControllersLocked = hasControllersLocked, lockControllers = lockControllers, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setCurrentController = setCurrentController, unlockControllers = unlockControllers)
+    val __obj = js.Dynamic.literal(Args = Args, AvailableViewControllerNames = AvailableViewControllerNames, Controllers = Controllers, CurrentController = CurrentController, CurrentSelection = CurrentSelection, URL = URL, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), attachResource = js.Any.fromFunction2(attachResource), connectController = js.Any.fromFunction1(connectController), createDefaultViewController = js.Any.fromFunction1(createDefaultViewController), createViewController = js.Any.fromFunction3(createViewController), disconnectController = js.Any.fromFunction1(disconnectController), dispose = js.Any.fromFunction0(dispose), getArgs = js.Any.fromFunction0(getArgs), getAvailableViewControllerNames = js.Any.fromFunction0(getAvailableViewControllerNames), getControllers = js.Any.fromFunction0(getControllers), getCurrentController = js.Any.fromFunction0(getCurrentController), getCurrentSelection = js.Any.fromFunction0(getCurrentSelection), getURL = js.Any.fromFunction0(getURL), hasControllersLocked = js.Any.fromFunction0(hasControllersLocked), lockControllers = js.Any.fromFunction0(lockControllers), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), setCurrentController = js.Any.fromFunction1(setCurrentController), unlockControllers = js.Any.fromFunction0(unlockControllers))
   
     __obj.asInstanceOf[XModel2]
   }

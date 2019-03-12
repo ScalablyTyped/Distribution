@@ -107,7 +107,7 @@ trait Actions extends js.Object {
   def apply(
     action: cypressLib.cypressLibStrings.`uncaught:exception`,
     fn: js.Function2[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* runnable */ mochaLib.MochaNs.IRunnable, 
       cypressLib.cypressLibNumbers.`false` | scala.Unit
     ]
@@ -155,7 +155,7 @@ trait Actions extends js.Object {
     */
   def apply(
     action: cypressLib.cypressLibStrings.`window:before:load`,
-    fn: js.Function1[/* win */ mochaLib.Window, scala.Unit]
+    fn: js.Function1[/* win */ stdLib.Window, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires when your application is about to navigate away. The real event object is provided to you. Your app may have set a `returnValue` on the event, which is useful to assert on.
@@ -191,7 +191,7 @@ trait Actions extends js.Object {
     */
   def apply(
     action: cypressLib.cypressLibStrings.`window:load`,
-    fn: js.Function1[/* win */ mochaLib.Window, scala.Unit]
+    fn: js.Function1[/* win */ stdLib.Window, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires when your application is has unloaded and is navigating away. The real event object is provided to you. This event is not cancelable.
@@ -207,7 +207,7 @@ trait Actions extends js.Object {
     */
   def apply(
     action: cypressLib.cypressLibStrings.fail,
-    fn: js.Function2[/* error */ nodeLib.Error, /* mocha */ mochaLib.MochaNs.IRunnable, scala.Unit]
+    fn: js.Function2[/* error */ stdLib.Error, /* mocha */ mochaLib.MochaNs.IRunnable, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires whenever **Cypress** is scrolling your application. This event is fired when Cypress is {% url 'waiting for and calculating actionability' interacting-with-elements %}. It will scroll to 'uncover' elements currently being covered. This event is extremely useful to debug why Cypress may think an element is not interactive.

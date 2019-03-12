@@ -28,8 +28,8 @@ object IMultiSliderProps {
     labelStepSize: scala.Int | scala.Double = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
-    onChange: js.Function1[/* values */ js.Array[scala.Double], scala.Unit] = null,
-    onRelease: js.Function1[/* values */ js.Array[scala.Double], scala.Unit] = null,
+    onChange: /* values */ js.Array[scala.Double] => scala.Unit = null,
+    onRelease: /* values */ js.Array[scala.Double] => scala.Unit = null,
     showTrackFill: js.UndefOr[scala.Boolean] = js.undefined,
     stepSize: scala.Int | scala.Double = null,
     vertical: js.UndefOr[scala.Boolean] = js.undefined
@@ -43,8 +43,8 @@ object IMultiSliderProps {
     if (labelStepSize != null) __obj.updateDynamic("labelStepSize")(labelStepSize.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onRelease != null) __obj.updateDynamic("onRelease")(onRelease)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onRelease != null) __obj.updateDynamic("onRelease")(js.Any.fromFunction1(onRelease))
     if (!js.isUndefined(showTrackFill)) __obj.updateDynamic("showTrackFill")(showTrackFill)
     if (stepSize != null) __obj.updateDynamic("stepSize")(stepSize.asInstanceOf[js.Any])
     if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)

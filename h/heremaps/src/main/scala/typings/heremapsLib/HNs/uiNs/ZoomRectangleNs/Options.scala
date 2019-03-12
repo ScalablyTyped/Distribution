@@ -18,11 +18,11 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    adjustZoom: js.Function2[/* n */ scala.Double, /* m */ heremapsLib.HNs.Map, scala.Double] = null,
+    adjustZoom: (/* n */ scala.Double, /* m */ heremapsLib.HNs.Map) => scala.Double = null,
     alignment: heremapsLib.HNs.uiNs.LayoutAlignment = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (adjustZoom != null) __obj.updateDynamic("adjustZoom")(adjustZoom)
+    if (adjustZoom != null) __obj.updateDynamic("adjustZoom")(js.Any.fromFunction2(adjustZoom))
     if (alignment != null) __obj.updateDynamic("alignment")(alignment)
     __obj.asInstanceOf[Options]
   }

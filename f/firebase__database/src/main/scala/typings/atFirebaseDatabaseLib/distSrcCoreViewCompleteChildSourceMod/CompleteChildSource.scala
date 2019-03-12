@@ -27,15 +27,10 @@ trait CompleteChildSource extends js.Object {
 object CompleteChildSource {
   @scala.inline
   def apply(
-    getChildAfterChild: js.Function3[
-      atFirebaseDatabaseLib.distSrcCoreSnapIndexesIndexMod.Index, 
-      atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.NamedNode, 
-      scala.Boolean, 
-      atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.NamedNode | scala.Null
-    ],
-    getCompleteChild: js.Function1[java.lang.String, atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node | scala.Null]
+    getChildAfterChild: (atFirebaseDatabaseLib.distSrcCoreSnapIndexesIndexMod.Index, atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.NamedNode, scala.Boolean) => atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.NamedNode | scala.Null,
+    getCompleteChild: java.lang.String => atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node | scala.Null
   ): CompleteChildSource = {
-    val __obj = js.Dynamic.literal(getChildAfterChild = getChildAfterChild, getCompleteChild = getCompleteChild)
+    val __obj = js.Dynamic.literal(getChildAfterChild = js.Any.fromFunction3(getChildAfterChild), getCompleteChild = js.Any.fromFunction1(getCompleteChild))
   
     __obj.asInstanceOf[CompleteChildSource]
   }

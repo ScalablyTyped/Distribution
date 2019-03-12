@@ -14,11 +14,11 @@ trait ICoreImmersiveApplication extends js.Object {
 object ICoreImmersiveApplication {
   @scala.inline
   def apply(
-    createNewView: js.Function2[java.lang.String, java.lang.String, CoreApplicationView],
+    createNewView: (java.lang.String, java.lang.String) => CoreApplicationView,
     mainView: CoreApplicationView,
     views: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[CoreApplicationView]
   ): ICoreImmersiveApplication = {
-    val __obj = js.Dynamic.literal(createNewView = createNewView, mainView = mainView, views = views)
+    val __obj = js.Dynamic.literal(createNewView = js.Any.fromFunction2(createNewView), mainView = mainView, views = views)
   
     __obj.asInstanceOf[ICoreImmersiveApplication]
   }

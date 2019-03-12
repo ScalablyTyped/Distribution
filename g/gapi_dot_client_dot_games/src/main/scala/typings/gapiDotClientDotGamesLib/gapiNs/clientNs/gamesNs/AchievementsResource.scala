@@ -26,32 +26,14 @@ trait AchievementsResource extends js.Object {
 object AchievementsResource {
   @scala.inline
   def apply(
-    increment: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AchievementId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AchievementIncrementResponse]
-    ],
-    list: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltConsistencyToken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PlayerAchievementListResponse]
-    ],
-    reveal: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AchievementIdAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AchievementRevealResponse]
-    ],
-    setStepsAtLeast: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AchievementIdAltConsistencyToken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AchievementSetStepsAtLeastResponse]
-    ],
-    unlock: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AchievementIdAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AchievementUnlockResponse]
-    ],
-    updateMultiple: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AchievementUpdateMultipleResponse]
-    ]
+    increment: gapiDotClientDotGamesLib.Anon_AchievementId => gapiDotClientLib.gapiNs.clientNs.Request[AchievementIncrementResponse],
+    list: gapiDotClientDotGamesLib.Anon_AltConsistencyToken => gapiDotClientLib.gapiNs.clientNs.Request[PlayerAchievementListResponse],
+    reveal: gapiDotClientDotGamesLib.Anon_AchievementIdAlt => gapiDotClientLib.gapiNs.clientNs.Request[AchievementRevealResponse],
+    setStepsAtLeast: gapiDotClientDotGamesLib.Anon_AchievementIdAltConsistencyToken => gapiDotClientLib.gapiNs.clientNs.Request[AchievementSetStepsAtLeastResponse],
+    unlock: gapiDotClientDotGamesLib.Anon_AchievementIdAlt => gapiDotClientLib.gapiNs.clientNs.Request[AchievementUnlockResponse],
+    updateMultiple: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFields => gapiDotClientLib.gapiNs.clientNs.Request[AchievementUpdateMultipleResponse]
   ): AchievementsResource = {
-    val __obj = js.Dynamic.literal(increment = increment, list = list, reveal = reveal, setStepsAtLeast = setStepsAtLeast, unlock = unlock, updateMultiple = updateMultiple)
+    val __obj = js.Dynamic.literal(increment = js.Any.fromFunction1(increment), list = js.Any.fromFunction1(list), reveal = js.Any.fromFunction1(reveal), setStepsAtLeast = js.Any.fromFunction1(setStepsAtLeast), unlock = js.Any.fromFunction1(unlock), updateMultiple = js.Any.fromFunction1(updateMultiple))
   
     __obj.asInstanceOf[AchievementsResource]
   }

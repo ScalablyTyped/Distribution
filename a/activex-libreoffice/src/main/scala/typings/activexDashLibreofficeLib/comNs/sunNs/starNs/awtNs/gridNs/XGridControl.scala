@@ -68,13 +68,13 @@ object XGridControl {
   def apply(
     CurrentColumn: scala.Double,
     CurrentRow: scala.Double,
-    getColumnAtPoint: js.Function2[scala.Double, scala.Double, scala.Double],
-    getCurrentColumn: js.Function0[scala.Double],
-    getCurrentRow: js.Function0[scala.Double],
-    getRowAtPoint: js.Function2[scala.Double, scala.Double, scala.Double],
-    goToCell: js.Function2[scala.Double, scala.Double, scala.Unit]
+    getColumnAtPoint: (scala.Double, scala.Double) => scala.Double,
+    getCurrentColumn: () => scala.Double,
+    getCurrentRow: () => scala.Double,
+    getRowAtPoint: (scala.Double, scala.Double) => scala.Double,
+    goToCell: (scala.Double, scala.Double) => scala.Unit
   ): XGridControl = {
-    val __obj = js.Dynamic.literal(CurrentColumn = CurrentColumn, CurrentRow = CurrentRow, getColumnAtPoint = getColumnAtPoint, getCurrentColumn = getCurrentColumn, getCurrentRow = getCurrentRow, getRowAtPoint = getRowAtPoint, goToCell = goToCell)
+    val __obj = js.Dynamic.literal(CurrentColumn = CurrentColumn, CurrentRow = CurrentRow, getColumnAtPoint = js.Any.fromFunction2(getColumnAtPoint), getCurrentColumn = js.Any.fromFunction0(getCurrentColumn), getCurrentRow = js.Any.fromFunction0(getCurrentRow), getRowAtPoint = js.Any.fromFunction2(getRowAtPoint), goToCell = js.Any.fromFunction2(goToCell))
   
     __obj.asInstanceOf[XGridControl]
   }

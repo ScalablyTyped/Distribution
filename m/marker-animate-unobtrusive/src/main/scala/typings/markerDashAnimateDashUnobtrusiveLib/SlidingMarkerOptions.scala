@@ -25,13 +25,7 @@ object SlidingMarkerOptions {
   def apply(
     position: googlemapsLib.googleNs.mapsNs.LatLng | googlemapsLib.googleNs.mapsNs.LatLngLiteral,
     anchorPoint: googlemapsLib.googleNs.mapsNs.Point = null,
-    animateFunctionAdapter: js.Function4[
-      /* marker */ googlemapsLib.googleNs.mapsNs.Marker, 
-      /* destPoint */ googlemapsLib.googleNs.mapsNs.LatLng, 
-      /* easing */ markerDashAnimateDashUnobtrusiveLib.markerDashAnimateDashUnobtrusiveLibStrings.linear | markerDashAnimateDashUnobtrusiveLib.jQueryNs.easingNs.IEasingType, 
-      /* duration */ scala.Double, 
-      scala.Unit
-    ] = null,
+    animateFunctionAdapter: (/* marker */ googlemapsLib.googleNs.mapsNs.Marker, /* destPoint */ googlemapsLib.googleNs.mapsNs.LatLng, /* easing */ markerDashAnimateDashUnobtrusiveLib.markerDashAnimateDashUnobtrusiveLibStrings.linear | markerDashAnimateDashUnobtrusiveLib.jQueryNs.easingNs.IEasingType, /* duration */ scala.Double) => scala.Unit = null,
     animation: googlemapsLib.googleNs.mapsNs.Animation = null,
     clickable: js.UndefOr[scala.Boolean] = js.undefined,
     cursor: java.lang.String = null,
@@ -51,7 +45,7 @@ object SlidingMarkerOptions {
   ): SlidingMarkerOptions = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     if (anchorPoint != null) __obj.updateDynamic("anchorPoint")(anchorPoint)
-    if (animateFunctionAdapter != null) __obj.updateDynamic("animateFunctionAdapter")(animateFunctionAdapter)
+    if (animateFunctionAdapter != null) __obj.updateDynamic("animateFunctionAdapter")(js.Any.fromFunction4(animateFunctionAdapter))
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)

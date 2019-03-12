@@ -49,14 +49,14 @@ object TimeOptions {
   @scala.inline
   def apply(
     Date: stdLib.Date = null,
-    getTimezoneOffset: js.Function1[/* timestamp */ stdLib.Date, scala.Double] = null,
+    getTimezoneOffset: /* timestamp */ stdLib.Date => scala.Double = null,
     timezone: java.lang.String = null,
     timezoneOffset: scala.Int | scala.Double = null,
     useUTC: js.UndefOr[scala.Boolean] = js.undefined
   ): TimeOptions = {
     val __obj = js.Dynamic.literal()
     if (Date != null) __obj.updateDynamic("Date")(Date)
-    if (getTimezoneOffset != null) __obj.updateDynamic("getTimezoneOffset")(getTimezoneOffset)
+    if (getTimezoneOffset != null) __obj.updateDynamic("getTimezoneOffset")(js.Any.fromFunction1(getTimezoneOffset))
     if (timezone != null) __obj.updateDynamic("timezone")(timezone)
     if (timezoneOffset != null) __obj.updateDynamic("timezoneOffset")(timezoneOffset.asInstanceOf[js.Any])
     if (!js.isUndefined(useUTC)) __obj.updateDynamic("useUTC")(useUTC)

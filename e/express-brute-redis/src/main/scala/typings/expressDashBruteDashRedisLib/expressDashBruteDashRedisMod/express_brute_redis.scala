@@ -16,7 +16,7 @@ trait express_brute_redis extends js.Object {
   def get(key: java.lang.String): scala.Unit = js.native
   def get(
     key: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* data */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   /**
     * @summary Resets a key in Redis storage.
@@ -24,7 +24,7 @@ trait express_brute_redis extends js.Object {
   def reset(key: java.lang.String): scala.Unit = js.native
   def reset(
     key: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* data */ js.Any, scala.Unit],
+    callback: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit],
     args: js.Any*
   ): scala.Unit = js.native
   /**

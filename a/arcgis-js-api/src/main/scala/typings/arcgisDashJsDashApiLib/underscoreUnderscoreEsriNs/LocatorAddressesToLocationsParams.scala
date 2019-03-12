@@ -40,10 +40,10 @@ object LocatorAddressesToLocationsParams {
     categories: js.Array[java.lang.String],
     constructor: js.Function,
     countryCode: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): LocatorAddressesToLocationsParams = {
-    val __obj = js.Dynamic.literal(addresses = addresses, categories = categories, constructor = constructor, countryCode = countryCode, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(addresses = addresses, categories = categories, constructor = constructor, countryCode = countryCode, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[LocatorAddressesToLocationsParams]
   }

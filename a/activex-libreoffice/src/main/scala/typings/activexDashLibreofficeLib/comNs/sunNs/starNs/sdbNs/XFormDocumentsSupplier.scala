@@ -29,12 +29,12 @@ object XFormDocumentsSupplier {
   @scala.inline
   def apply(
     FormDocuments: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
-    acquire: js.Function0[scala.Unit],
-    getFormDocuments: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getFormDocuments: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XFormDocumentsSupplier = {
-    val __obj = js.Dynamic.literal(FormDocuments = FormDocuments, acquire = acquire, getFormDocuments = getFormDocuments, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(FormDocuments = FormDocuments, acquire = js.Any.fromFunction0(acquire), getFormDocuments = js.Any.fromFunction0(getFormDocuments), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XFormDocumentsSupplier]
   }

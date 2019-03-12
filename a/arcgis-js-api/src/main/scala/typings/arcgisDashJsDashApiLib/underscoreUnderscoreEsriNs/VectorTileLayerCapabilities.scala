@@ -28,11 +28,11 @@ object VectorTileLayerCapabilities {
     constructor: js.Function,
     exportMap: VectorTileLayerCapabilitiesExportMap,
     exportTiles: js.Any,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     operations: VectorTileLayerCapabilitiesOperations,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): VectorTileLayerCapabilities = {
-    val __obj = js.Dynamic.literal(constructor = constructor, exportMap = exportMap, exportTiles = exportTiles, hasOwnProperty = hasOwnProperty, operations = operations, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, exportMap = exportMap, exportTiles = exportTiles, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operations = operations, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[VectorTileLayerCapabilities]
   }

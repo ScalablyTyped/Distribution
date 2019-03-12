@@ -16,12 +16,12 @@ trait PlainMechanism
 object PlainMechanism {
   @scala.inline
   def apply(
-    challenge: js.Function1[java.lang.String, PlainMechanism],
+    challenge: java.lang.String => PlainMechanism,
     clientFirst: saslDashPlainLib.saslDashPlainLibNumbers.`true`,
     name: saslDashPlainLib.saslDashPlainLibStrings.PLAIN,
-    response: js.Function1[saslDashPlainLib.saslDashPlainMod.PlainMechanismNs.Credentials, java.lang.String]
+    response: saslDashPlainLib.saslDashPlainMod.PlainMechanismNs.Credentials => java.lang.String
   ): PlainMechanism = {
-    val __obj = js.Dynamic.literal(challenge = challenge, clientFirst = clientFirst, name = name, response = response)
+    val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = clientFirst, name = name, response = js.Any.fromFunction1(response))
   
     __obj.asInstanceOf[PlainMechanism]
   }

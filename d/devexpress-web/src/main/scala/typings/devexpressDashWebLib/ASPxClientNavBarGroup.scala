@@ -74,21 +74,21 @@ trait ASPxClientNavBarGroup extends js.Object {
 object ASPxClientNavBarGroup {
   @scala.inline
   def apply(
-    GetEnabled: js.Function0[scala.Boolean],
-    GetExpanded: js.Function0[scala.Boolean],
-    GetItem: js.Function1[scala.Double, ASPxClientNavBarItem],
-    GetItemByName: js.Function1[java.lang.String, ASPxClientNavBarItem],
-    GetItemCount: js.Function0[scala.Double],
-    GetText: js.Function0[java.lang.String],
-    GetVisible: js.Function0[scala.Boolean],
-    SetExpanded: js.Function1[scala.Boolean, scala.Unit],
-    SetText: js.Function1[java.lang.String, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    GetEnabled: () => scala.Boolean,
+    GetExpanded: () => scala.Boolean,
+    GetItem: scala.Double => ASPxClientNavBarItem,
+    GetItemByName: java.lang.String => ASPxClientNavBarItem,
+    GetItemCount: () => scala.Double,
+    GetText: () => java.lang.String,
+    GetVisible: () => scala.Boolean,
+    SetExpanded: scala.Boolean => scala.Unit,
+    SetText: java.lang.String => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
     index: scala.Double,
     name: java.lang.String,
     navBar: ASPxClientNavBar
   ): ASPxClientNavBarGroup = {
-    val __obj = js.Dynamic.literal(GetEnabled = GetEnabled, GetExpanded = GetExpanded, GetItem = GetItem, GetItemByName = GetItemByName, GetItemCount = GetItemCount, GetText = GetText, GetVisible = GetVisible, SetExpanded = SetExpanded, SetText = SetText, SetVisible = SetVisible, index = index, name = name, navBar = navBar)
+    val __obj = js.Dynamic.literal(GetEnabled = js.Any.fromFunction0(GetEnabled), GetExpanded = js.Any.fromFunction0(GetExpanded), GetItem = js.Any.fromFunction1(GetItem), GetItemByName = js.Any.fromFunction1(GetItemByName), GetItemCount = js.Any.fromFunction0(GetItemCount), GetText = js.Any.fromFunction0(GetText), GetVisible = js.Any.fromFunction0(GetVisible), SetExpanded = js.Any.fromFunction1(SetExpanded), SetText = js.Any.fromFunction1(SetText), SetVisible = js.Any.fromFunction1(SetVisible), index = index, name = name, navBar = navBar)
   
     __obj.asInstanceOf[ASPxClientNavBarGroup]
   }

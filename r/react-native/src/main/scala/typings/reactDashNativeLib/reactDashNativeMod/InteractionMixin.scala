@@ -18,11 +18,11 @@ trait InteractionMixin extends js.Object {
 object InteractionMixin {
   @scala.inline
   def apply(
-    clearInteractionHandle: js.Function1[scala.Double, scala.Unit],
-    createInteractionHandle: js.Function0[scala.Double],
-    runAfterInteractions: js.Function1[js.Function0[_], scala.Unit]
+    clearInteractionHandle: scala.Double => scala.Unit,
+    createInteractionHandle: () => scala.Double,
+    runAfterInteractions: js.Function0[_] => scala.Unit
   ): InteractionMixin = {
-    val __obj = js.Dynamic.literal(clearInteractionHandle = clearInteractionHandle, createInteractionHandle = createInteractionHandle, runAfterInteractions = runAfterInteractions)
+    val __obj = js.Dynamic.literal(clearInteractionHandle = js.Any.fromFunction1(clearInteractionHandle), createInteractionHandle = js.Any.fromFunction0(createInteractionHandle), runAfterInteractions = js.Any.fromFunction1(runAfterInteractions))
   
     __obj.asInstanceOf[InteractionMixin]
   }

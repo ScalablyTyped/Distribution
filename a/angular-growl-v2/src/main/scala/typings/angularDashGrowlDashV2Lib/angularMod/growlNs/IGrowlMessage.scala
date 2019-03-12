@@ -24,8 +24,8 @@ trait IGrowlMessage extends IGrowlMessageConfig {
 object IGrowlMessage {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
-    setText: js.Function1[java.lang.String, scala.Unit],
+    destroy: () => scala.Unit,
+    setText: java.lang.String => scala.Unit,
     text: java.lang.String,
     disableCloseButton: js.UndefOr[scala.Boolean] = js.undefined,
     disableCountDown: js.UndefOr[scala.Boolean] = js.undefined,
@@ -39,7 +39,7 @@ object IGrowlMessage {
     ttl: scala.Int | scala.Double = null,
     variables: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): IGrowlMessage = {
-    val __obj = js.Dynamic.literal(destroy = destroy, setText = setText, text = text)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), setText = js.Any.fromFunction1(setText), text = text)
     if (!js.isUndefined(disableCloseButton)) __obj.updateDynamic("disableCloseButton")(disableCloseButton)
     if (!js.isUndefined(disableCountDown)) __obj.updateDynamic("disableCountDown")(disableCountDown)
     if (!js.isUndefined(disableIcons)) __obj.updateDynamic("disableIcons")(disableIcons)

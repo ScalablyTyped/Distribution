@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.OLEDBError")
 @js.native
 class OLEDBError protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Creator: XlCreator = js.native
   val ErrorString: java.lang.String = js.native
   var `Excel.OLEDBError_typekey`: OLEDBError = js.native

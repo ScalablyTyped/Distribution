@@ -15,16 +15,16 @@ object CopyImporter {
   @scala.inline
   def apply(
     TargetBackend: XBackend,
-    acquire: js.Function0[scala.Unit],
-    getTargetBackend: js.Function0[XBackend],
-    importLayer: js.Function1[XLayer, scala.Unit],
-    importLayerForEntity: js.Function2[XLayer, java.lang.String, scala.Unit],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setTargetBackend: js.Function1[XBackend, scala.Unit]
+    acquire: () => scala.Unit,
+    getTargetBackend: () => XBackend,
+    importLayer: XLayer => scala.Unit,
+    importLayerForEntity: (XLayer, java.lang.String) => scala.Unit,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setTargetBackend: XBackend => scala.Unit
   ): CopyImporter = {
-    val __obj = js.Dynamic.literal(TargetBackend = TargetBackend, acquire = acquire, getTargetBackend = getTargetBackend, importLayer = importLayer, importLayerForEntity = importLayerForEntity, initialize = initialize, queryInterface = queryInterface, release = release, setTargetBackend = setTargetBackend)
+    val __obj = js.Dynamic.literal(TargetBackend = TargetBackend, acquire = js.Any.fromFunction0(acquire), getTargetBackend = js.Any.fromFunction0(getTargetBackend), importLayer = js.Any.fromFunction1(importLayer), importLayerForEntity = js.Any.fromFunction2(importLayerForEntity), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setTargetBackend = js.Any.fromFunction1(setTargetBackend))
   
     __obj.asInstanceOf[CopyImporter]
   }

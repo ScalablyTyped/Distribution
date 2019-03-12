@@ -27,21 +27,15 @@ object Anon_EnableShiftSelect {
   @scala.inline
   def apply[T](
     enableShiftSelect: js.UndefOr[scala.Boolean] = js.undefined,
-    onRowsDeselected: js.Function1[
-      /* rows */ js.Array[reactDashDataDashGridLib.AdazzleReactDataGridNs.SelectionParams[T]], 
-      scala.Unit
-    ] = null,
-    onRowsSelected: js.Function1[
-      /* rows */ js.Array[reactDashDataDashGridLib.AdazzleReactDataGridNs.SelectionParams[T]], 
-      scala.Unit
-    ] = null,
+    onRowsDeselected: /* rows */ js.Array[reactDashDataDashGridLib.AdazzleReactDataGridNs.SelectionParams[T]] => scala.Unit = null,
+    onRowsSelected: /* rows */ js.Array[reactDashDataDashGridLib.AdazzleReactDataGridNs.SelectionParams[T]] => scala.Unit = null,
     selectBy: Anon_Indexes = null,
     showCheckbox: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_EnableShiftSelect[T] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(enableShiftSelect)) __obj.updateDynamic("enableShiftSelect")(enableShiftSelect)
-    if (onRowsDeselected != null) __obj.updateDynamic("onRowsDeselected")(onRowsDeselected)
-    if (onRowsSelected != null) __obj.updateDynamic("onRowsSelected")(onRowsSelected)
+    if (onRowsDeselected != null) __obj.updateDynamic("onRowsDeselected")(js.Any.fromFunction1(onRowsDeselected))
+    if (onRowsSelected != null) __obj.updateDynamic("onRowsSelected")(js.Any.fromFunction1(onRowsSelected))
     if (selectBy != null) __obj.updateDynamic("selectBy")(selectBy)
     if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox)
     __obj.asInstanceOf[Anon_EnableShiftSelect[T]]

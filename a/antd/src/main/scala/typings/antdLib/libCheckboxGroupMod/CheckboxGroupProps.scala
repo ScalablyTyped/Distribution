@@ -17,7 +17,7 @@ object CheckboxGroupProps {
     className: java.lang.String = null,
     defaultValue: js.Array[CheckboxValueType] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function1[/* checkedValue */ js.Array[CheckboxValueType], scala.Unit] = null,
+    onChange: /* checkedValue */ js.Array[CheckboxValueType] => scala.Unit = null,
     options: js.Array[CheckboxOptionType | java.lang.String] = null,
     prefixCls: java.lang.String = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -27,7 +27,7 @@ object CheckboxGroupProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (options != null) __obj.updateDynamic("options")(options)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (style != null) __obj.updateDynamic("style")(style)

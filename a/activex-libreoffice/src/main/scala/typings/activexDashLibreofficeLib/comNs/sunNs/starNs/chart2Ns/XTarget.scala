@@ -13,12 +13,12 @@ trait XTarget
 object XTarget {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addDrawElement: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addDrawElement: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTarget = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addDrawElement = addDrawElement, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addDrawElement = js.Any.fromFunction0(addDrawElement), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTarget]
   }

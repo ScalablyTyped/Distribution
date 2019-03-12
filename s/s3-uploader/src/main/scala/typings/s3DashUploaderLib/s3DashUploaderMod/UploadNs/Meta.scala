@@ -10,7 +10,7 @@ trait Meta extends js.Object {
   var compression: java.lang.String
   var fileSize: java.lang.String
   var format: java.lang.String
-  var imageSize: imageSize
+  var imageSize: s3DashUploaderLib.s3DashUploaderMod.UploadNs.imageSize
   var orientation: java.lang.String
   var quallity: java.lang.String
 }

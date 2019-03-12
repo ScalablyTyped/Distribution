@@ -32,14 +32,14 @@ trait PopupOptions extends js.Object {
 object PopupOptions {
   @scala.inline
   def apply(
-    callback: js.Function0[scala.Unit] = null,
+    callback: () => scala.Unit = null,
     positioningItem: scala.Int | scala.Double = null,
     window: BrowserWindow = null,
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): PopupOptions = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (positioningItem != null) __obj.updateDynamic("positioningItem")(positioningItem.asInstanceOf[js.Any])
     if (window != null) __obj.updateDynamic("window")(window)
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])

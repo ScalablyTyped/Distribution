@@ -21,12 +21,9 @@ trait V1beta1Resource extends js.Object {
 object V1beta1Resource {
   @scala.inline
   def apply(
-    getEidparams: js.Function1[
-      gapiDotClientDotProximitybeaconLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[EphemeralIdRegistrationParams]
-    ]
+    getEidparams: gapiDotClientDotProximitybeaconLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[EphemeralIdRegistrationParams]
   ): V1beta1Resource = {
-    val __obj = js.Dynamic.literal(getEidparams = getEidparams)
+    val __obj = js.Dynamic.literal(getEidparams = js.Any.fromFunction1(getEidparams))
   
     __obj.asInstanceOf[V1beta1Resource]
   }

@@ -25,28 +25,13 @@ trait TargetVpnGatewaysResource extends js.Object {
 object TargetVpnGatewaysResource {
   @scala.inline
   def apply(
-    aggregatedList: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TargetVpnGatewayAggregatedList]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestIdTargetVpnGateway, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionTargetVpnGateway, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TargetVpnGateway]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TargetVpnGatewayList]
-    ]
+    aggregatedList: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[TargetVpnGatewayAggregatedList],
+    delete: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestIdTargetVpnGateway => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionTargetVpnGateway => gapiDotClientLib.gapiNs.clientNs.Request[TargetVpnGateway],
+    insert: gapiDotClientDotComputeLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotComputeLib.Anon_AltFieldsFilter => gapiDotClientLib.gapiNs.clientNs.Request[TargetVpnGatewayList]
   ): TargetVpnGatewaysResource = {
-    val __obj = js.Dynamic.literal(aggregatedList = aggregatedList, delete = delete, get = get, insert = insert, list = list)
+    val __obj = js.Dynamic.literal(aggregatedList = js.Any.fromFunction1(aggregatedList), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[TargetVpnGatewaysResource]
   }

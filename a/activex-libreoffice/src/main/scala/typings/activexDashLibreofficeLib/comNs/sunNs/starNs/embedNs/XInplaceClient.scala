@@ -125,26 +125,23 @@ object XInplaceClient {
     InplaceDispatchProvider: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XDispatchProvider,
     LayoutManager: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XLayoutManager,
     Placement: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
-    acquire: js.Function0[scala.Unit],
-    activatingInplace: js.Function0[scala.Unit],
-    activatingUI: js.Function0[scala.Unit],
-    canInplaceActivate: js.Function0[scala.Boolean],
-    changedPlacement: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, scala.Unit],
-    deactivatedInplace: js.Function0[scala.Unit],
-    deactivatedUI: js.Function0[scala.Unit],
-    getClipRectangle: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
-    getInplaceDispatchProvider: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XDispatchProvider],
-    getLayoutManager: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XLayoutManager],
-    getPlacement: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    scrollObject: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit],
-    translateAccelerators: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent], 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    activatingInplace: () => scala.Unit,
+    activatingUI: () => scala.Unit,
+    canInplaceActivate: () => scala.Boolean,
+    changedPlacement: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle => scala.Unit,
+    deactivatedInplace: () => scala.Unit,
+    deactivatedUI: () => scala.Unit,
+    getClipRectangle: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    getInplaceDispatchProvider: () => activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XDispatchProvider,
+    getLayoutManager: () => activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XLayoutManager,
+    getPlacement: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    scrollObject: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size => scala.Unit,
+    translateAccelerators: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent] => scala.Unit
   ): XInplaceClient = {
-    val __obj = js.Dynamic.literal(ClipRectangle = ClipRectangle, InplaceDispatchProvider = InplaceDispatchProvider, LayoutManager = LayoutManager, Placement = Placement, acquire = acquire, activatingInplace = activatingInplace, activatingUI = activatingUI, canInplaceActivate = canInplaceActivate, changedPlacement = changedPlacement, deactivatedInplace = deactivatedInplace, deactivatedUI = deactivatedUI, getClipRectangle = getClipRectangle, getInplaceDispatchProvider = getInplaceDispatchProvider, getLayoutManager = getLayoutManager, getPlacement = getPlacement, queryInterface = queryInterface, release = release, scrollObject = scrollObject, translateAccelerators = translateAccelerators)
+    val __obj = js.Dynamic.literal(ClipRectangle = ClipRectangle, InplaceDispatchProvider = InplaceDispatchProvider, LayoutManager = LayoutManager, Placement = Placement, acquire = js.Any.fromFunction0(acquire), activatingInplace = js.Any.fromFunction0(activatingInplace), activatingUI = js.Any.fromFunction0(activatingUI), canInplaceActivate = js.Any.fromFunction0(canInplaceActivate), changedPlacement = js.Any.fromFunction1(changedPlacement), deactivatedInplace = js.Any.fromFunction0(deactivatedInplace), deactivatedUI = js.Any.fromFunction0(deactivatedUI), getClipRectangle = js.Any.fromFunction0(getClipRectangle), getInplaceDispatchProvider = js.Any.fromFunction0(getInplaceDispatchProvider), getLayoutManager = js.Any.fromFunction0(getLayoutManager), getPlacement = js.Any.fromFunction0(getPlacement), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), scrollObject = js.Any.fromFunction1(scrollObject), translateAccelerators = js.Any.fromFunction1(translateAccelerators))
   
     __obj.asInstanceOf[XInplaceClient]
   }

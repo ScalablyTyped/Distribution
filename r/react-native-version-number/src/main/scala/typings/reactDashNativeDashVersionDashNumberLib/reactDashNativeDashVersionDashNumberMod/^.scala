@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-version-number", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactDashNativeDashVersionDashNumberLib.reactDashNativeDashVersionDashNumberMod.VersionNumber = js.native
+  val default: VersionNumber = js.native
 }
 

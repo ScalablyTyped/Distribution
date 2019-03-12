@@ -12,8 +12,8 @@ trait SketchAssetCollection extends js.Object {
 
 object SketchAssetCollection {
   @scala.inline
-  def apply(colors: js.Function0[js.Array[_]], gradients: js.Function0[js.Array[_]]): SketchAssetCollection = {
-    val __obj = js.Dynamic.literal(colors = colors, gradients = gradients)
+  def apply(colors: () => js.Array[_], gradients: () => js.Array[_]): SketchAssetCollection = {
+    val __obj = js.Dynamic.literal(colors = js.Any.fromFunction0(colors), gradients = js.Any.fromFunction0(gradients))
   
     __obj.asInstanceOf[SketchAssetCollection]
   }

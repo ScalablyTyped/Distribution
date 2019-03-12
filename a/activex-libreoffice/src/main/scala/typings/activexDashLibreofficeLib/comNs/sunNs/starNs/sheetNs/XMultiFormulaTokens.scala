@@ -27,7 +27,7 @@ trait XMultiFormulaTokens extends js.Object {
     * returns the formula at specified index as sequence of tokens.
     * @throws IndexOutOfBoundsException If the given index lies not in the valid range then an {@link com.sun.star.lang.IndexOutOfBoundsException} exception is
     */
-  def getTokens(nIndex: scala.Double): activexDashInteropLib.SafeArray[FormulaToken]
+  def getTokens(nIndex: scala.Double): stdLib.SafeArray[FormulaToken]
   /**
     * sets the formula at specified index as sequence of tokens.
     * @throws IndexOutOfBoundsException If the given index lies not in the valid range then an {@link com.sun.star.lang.IndexOutOfBoundsException} exception is
@@ -39,15 +39,11 @@ object XMultiFormulaTokens {
   @scala.inline
   def apply(
     Count: scala.Double,
-    getCount: js.Function0[scala.Double],
-    getTokens: js.Function1[scala.Double, activexDashInteropLib.SafeArray[FormulaToken]],
-    setTokens: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[FormulaToken], 
-      scala.Unit
-    ]
+    getCount: () => scala.Double,
+    getTokens: scala.Double => stdLib.SafeArray[FormulaToken],
+    setTokens: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[FormulaToken]) => scala.Unit
   ): XMultiFormulaTokens = {
-    val __obj = js.Dynamic.literal(Count = Count, getCount = getCount, getTokens = getTokens, setTokens = setTokens)
+    val __obj = js.Dynamic.literal(Count = Count, getCount = js.Any.fromFunction0(getCount), getTokens = js.Any.fromFunction1(getTokens), setTokens = js.Any.fromFunction2(setTokens))
   
     __obj.asInstanceOf[XMultiFormulaTokens]
   }

@@ -18,20 +18,17 @@ trait ChainableBase[RawValue] extends js.Object {
 object ChainableBase {
   @scala.inline
   def apply[RawValue](
-    addFlags: js.Function1[java.lang.String, sugarLib.sugarjsNs.SugarDefaultChainable[stdLib.RegExp]],
-    exec: js.Function1[
-      java.lang.String, 
-      sugarLib.sugarjsNs.SugarDefaultChainable[stdLib.RegExpExecArray | scala.Null]
-    ],
-    getFlags: js.Function0[sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String]],
+    addFlags: java.lang.String => sugarLib.sugarjsNs.SugarDefaultChainable[stdLib.RegExp],
+    exec: java.lang.String => sugarLib.sugarjsNs.SugarDefaultChainable[stdLib.RegExpExecArray | scala.Null],
+    getFlags: () => sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String],
     raw: RawValue,
-    removeFlags: js.Function1[java.lang.String, sugarLib.sugarjsNs.SugarDefaultChainable[stdLib.RegExp]],
-    setFlags: js.Function1[java.lang.String, sugarLib.sugarjsNs.SugarDefaultChainable[stdLib.RegExp]],
-    test: js.Function1[java.lang.String, sugarLib.sugarjsNs.SugarDefaultChainable[scala.Boolean]],
-    toString: js.Function0[java.lang.String],
-    valueOf: js.Function0[RawValue]
+    removeFlags: java.lang.String => sugarLib.sugarjsNs.SugarDefaultChainable[stdLib.RegExp],
+    setFlags: java.lang.String => sugarLib.sugarjsNs.SugarDefaultChainable[stdLib.RegExp],
+    test: java.lang.String => sugarLib.sugarjsNs.SugarDefaultChainable[scala.Boolean],
+    toString: () => java.lang.String,
+    valueOf: () => RawValue
   ): ChainableBase[RawValue] = {
-    val __obj = js.Dynamic.literal(addFlags = addFlags, exec = exec, getFlags = getFlags, raw = raw.asInstanceOf[js.Any], removeFlags = removeFlags, setFlags = setFlags, test = test, toString = toString, valueOf = valueOf)
+    val __obj = js.Dynamic.literal(addFlags = js.Any.fromFunction1(addFlags), exec = js.Any.fromFunction1(exec), getFlags = js.Any.fromFunction0(getFlags), raw = raw.asInstanceOf[js.Any], removeFlags = js.Any.fromFunction1(removeFlags), setFlags = js.Any.fromFunction1(setFlags), test = js.Any.fromFunction1(test), toString = js.Any.fromFunction0(toString), valueOf = js.Any.fromFunction0(valueOf))
   
     __obj.asInstanceOf[ChainableBase[RawValue]]
   }

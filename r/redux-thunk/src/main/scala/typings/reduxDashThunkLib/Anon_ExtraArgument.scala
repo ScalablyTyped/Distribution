@@ -12,12 +12,9 @@ trait Anon_ExtraArgument extends js.Object {
 object Anon_ExtraArgument {
   @scala.inline
   def apply(
-    withExtraArgument: js.Function1[
-      js.Any, 
-      reduxDashThunkLib.reduxDashThunkMod.ThunkMiddleware[js.Object, reduxLib.reduxMod.AnyAction, js.Any]
-    ]
+    withExtraArgument: js.Any => reduxDashThunkLib.reduxDashThunkMod.ThunkMiddleware[js.Object, reduxLib.reduxMod.AnyAction, js.Any]
   ): Anon_ExtraArgument = {
-    val __obj = js.Dynamic.literal(withExtraArgument = withExtraArgument)
+    val __obj = js.Dynamic.literal(withExtraArgument = js.Any.fromFunction1(withExtraArgument))
   
     __obj.asInstanceOf[Anon_ExtraArgument]
   }

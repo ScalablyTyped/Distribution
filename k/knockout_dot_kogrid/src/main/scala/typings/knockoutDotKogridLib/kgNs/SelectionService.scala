@@ -16,9 +16,9 @@ object SelectionService {
   def apply[EntityType](
     lastClickedRow: Row[EntityType],
     multi: scala.Boolean,
-    setSelection: js.Function2[Row[EntityType], scala.Boolean, scala.Unit]
+    setSelection: (Row[EntityType], scala.Boolean) => scala.Unit
   ): SelectionService[EntityType] = {
-    val __obj = js.Dynamic.literal(lastClickedRow = lastClickedRow, multi = multi, setSelection = setSelection)
+    val __obj = js.Dynamic.literal(lastClickedRow = lastClickedRow, multi = multi, setSelection = js.Any.fromFunction2(setSelection))
   
     __obj.asInstanceOf[SelectionService[EntityType]]
   }

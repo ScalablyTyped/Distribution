@@ -20,7 +20,7 @@ object FlowSeq {
   @scala.inline
   def apply(
     items: js.Array[AstNode | Pair],
-    toJSON: js.Function0[js.Any],
+    toJSON: () => js.Any,
     `type`: yamlLib.yamlLibStrings.FLOW_SEQ,
     comment: java.lang.String = null,
     commentBefore: java.lang.String = null,
@@ -28,7 +28,7 @@ object FlowSeq {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     tag: java.lang.String = null
   ): FlowSeq = {
-    val __obj = js.Dynamic.literal(items = items, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(items = items, toJSON = js.Any.fromFunction0(toJSON))
     __obj.updateDynamic("type")(`type`)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore)

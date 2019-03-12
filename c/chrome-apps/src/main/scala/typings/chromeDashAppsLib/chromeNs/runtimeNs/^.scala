@@ -17,36 +17,34 @@ object ^ extends js.Object {
   /** The ID of the app. */
   val id: java.lang.String = js.native
   /** This will be defined during an API method callback if there was an error */
-  val lastError: js.UndefOr[chromeDashAppsLib.chromeNs.runtimeNs.LastError] = js.native
+  val lastError: js.UndefOr[LastError] = js.native
   /**
     * @deprecated since Chrome 33. Please use **chrome.runtime.onRestartRequired**.
     * Fired when a Chrome update is available, but isn't installed immediately because a browser restart is required.
     */
-  val onBrowserUpdateAvailable: chromeDashAppsLib.chromeNs.runtimeNs.RuntimeEvent = js.native
+  val onBrowserUpdateAvailable: RuntimeEvent = js.native
   /**
     * Fired when a connection is made from either an extension process or a content script.
     * @since Chrome 26.
     */
-  val onConnect: chromeDashAppsLib.chromeNs.runtimeNs.ExtensionConnectEvent = js.native
+  val onConnect: ExtensionConnectEvent = js.native
   /**
     * Fired when a connection is made from another extension.
     * @since Chrome 26.
     */
-  val onConnectExternal: chromeDashAppsLib.chromeNs.runtimeNs.ExtensionConnectEvent = js.native
+  val onConnectExternal: ExtensionConnectEvent = js.native
   /** Fired when the extension is first installed, when the extension is updated to a new version, and when Chrome is updated to a new version. */
-  val onInstalled: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[/* details */ chromeDashAppsLib.chromeNs.runtimeNs.InstalledDetails, scala.Unit]
-  ] = js.native
+  val onInstalled: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* details */ InstalledDetails, scala.Unit]] = js.native
   /**
     * Fired when a message is sent from either an extension process or a content script.
     * @since Chrome 26.
     */
-  val onMessage: chromeDashAppsLib.chromeNs.runtimeNs.ExtensionMessageEvent = js.native
+  val onMessage: ExtensionMessageEvent = js.native
   /**
     * Fired when a message is sent from another app. Cannot be used in a content script.
     * @since Chrome 26.
     */
-  val onMessageExternal: chromeDashAppsLib.chromeNs.runtimeNs.ExtensionMessageEvent = js.native
+  val onMessageExternal: ExtensionMessageEvent = js.native
   /**
     * @required(Chrome OS Kiosk app) Currently, this event is only fired for Chrome OS kiosk apps.
     * Fired when an app or the device that it runs on needs to be restarted.
@@ -71,11 +69,11 @@ object ^ extends js.Object {
     * Fired when a profile that has this app installed first starts up. This event is not fired when an incognito profile is started, even if this app is operating in 'split' incognito mode.
     * @since Chrome 23.
     */
-  val onStartup: chromeDashAppsLib.chromeNs.runtimeNs.RuntimeEvent = js.native
+  val onStartup: RuntimeEvent = js.native
   /** Sent to the event page just before it is unloaded. This gives the extension opportunity to do some clean up. Note that since the page is unloading, any asynchronous operations started while handling this event are not guaranteed to complete. If more activity for the event page occurs before it gets unloaded the onSuspendCanceled event will be sent and the page won't be unloaded. */
-  val onSuspend: chromeDashAppsLib.chromeNs.runtimeNs.RuntimeEvent = js.native
+  val onSuspend: RuntimeEvent = js.native
   /** Sent after onSuspend to indicate that the app won't be unloaded after all. */
-  val onSuspendCanceled: chromeDashAppsLib.chromeNs.runtimeNs.RuntimeEvent = js.native
+  val onSuspendCanceled: RuntimeEvent = js.native
   /**
     * Fired when an update is available, but isn't installed immediately because the app is currently running.
     * If you do nothing, the update will be installed the next time the background page gets unloaded,
@@ -87,20 +85,15 @@ object ^ extends js.Object {
     * is called in response to this event.
     * @since Chrome 25.
     */
-  val onUpdateAvailable: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[
-      /* details */ chromeDashAppsLib.chromeNs.runtimeNs.UpdateAvailableDetails, 
-      scala.Unit
-    ]
-  ] = js.native
+  val onUpdateAvailable: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* details */ UpdateAvailableDetails, scala.Unit]] = js.native
   /**
     * Attempts to connect to connect listeners within an app (such as the background page), or other apps.
     * This is useful for content scripts connecting to their extension processes, inter-app communication, and web messaging.
     * Note that this does not connect to any listeners in a content script.
     * @since Chrome 26.
     */
-  def connect(): chromeDashAppsLib.chromeNs.runtimeNs.Port = js.native
-  def connect(connectInfo: chromeDashAppsLib.chromeNs.runtimeNs.ConnectInfo): chromeDashAppsLib.chromeNs.runtimeNs.Port = js.native
+  def connect(): Port = js.native
+  def connect(connectInfo: ConnectInfo): Port = js.native
   /**
     * Attempts to connect to connect listeners within an app (such as the background page), or other apps.
     * This is useful for content scripts connecting to their extension processes, inter-app communication, and web messaging.
@@ -111,14 +104,14 @@ object ^ extends js.Object {
     * If omitted, a connection will be attempted with your own app.
     * Required if sending messages from a web page for web messaging.
     */
-  def connect(extensionId: java.lang.String): chromeDashAppsLib.chromeNs.runtimeNs.Port = js.native
-  def connect(extensionId: java.lang.String, connectInfo: chromeDashAppsLib.chromeNs.runtimeNs.ConnectInfo): chromeDashAppsLib.chromeNs.runtimeNs.Port = js.native
+  def connect(extensionId: java.lang.String): Port = js.native
+  def connect(extensionId: java.lang.String, connectInfo: ConnectInfo): Port = js.native
   /**
     * Connects to a native application in the host machine.
     * @since Chrome 28.
     * @param application The name of the registered application to connect to.
     */
-  def connectNative(application: java.lang.String): chromeDashAppsLib.chromeNs.runtimeNs.Port = js.native
+  def connectNative(application: java.lang.String): Port = js.native
   /**
     * Retrieves the JavaScript 'window' object for the background page running inside the current app.
     * If the background page is an event page, the system will ensure it is loaded before calling the callback.
@@ -130,7 +123,7 @@ object ^ extends js.Object {
     * The object returned is a serialization of the full manifest file.
     * @returns The manifest details.
     */
-  def getManifest(): chromeDashAppsLib.chromeNs.runtimeNs.Manifest = js.native
+  def getManifest(): Manifest = js.native
   /**
     * Returns a DirectoryEntry for the package directory.
     * @since Chrome 29.
@@ -141,9 +134,7 @@ object ^ extends js.Object {
     * @since Chrome 29.
     * @param callback Called with results
     */
-  def getPlatformInfo(
-    callback: js.Function1[/* platformInfo */ chromeDashAppsLib.chromeNs.runtimeNs.PlatformInfo, scala.Unit]
-  ): scala.Unit = js.native
+  def getPlatformInfo(callback: js.Function1[/* platformInfo */ PlatformInfo, scala.Unit]): scala.Unit = js.native
   /**
     * Converts a relative path within an app install directory to a fully-qualified URL.
     * @param path A path to a resource within an app expressed relative to its install directory.
@@ -171,7 +162,7 @@ object ^ extends js.Object {
           /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_NOUPDATE[keyof chrome-apps.Anon_NOUPDATE] */ js.Any
         ]
       ], 
-      /* details */ js.UndefOr[chromeDashAppsLib.chromeNs.runtimeNs.UpdateCheckDetails], 
+      /* details */ js.UndefOr[UpdateCheckDetails], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -188,15 +179,11 @@ object ^ extends js.Object {
     * Parameter response: The JSON response object sent by the handler of the message. If an error occurs while connecting to the extension, the callback will be called with no arguments and runtime.lastError will be set to the error message.
     */
   def sendMessage(extensionId: java.lang.String, message: js.Any): scala.Unit = js.native
+  def sendMessage(extensionId: java.lang.String, message: js.Any, options: MessageOptions): scala.Unit = js.native
   def sendMessage(
     extensionId: java.lang.String,
     message: js.Any,
-    options: chromeDashAppsLib.chromeNs.runtimeNs.MessageOptions
-  ): scala.Unit = js.native
-  def sendMessage(
-    extensionId: java.lang.String,
-    message: js.Any,
-    options: chromeDashAppsLib.chromeNs.runtimeNs.MessageOptions,
+    options: MessageOptions,
     responseCallback: js.Function1[/* response */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def sendMessage(
@@ -220,10 +207,10 @@ object ^ extends js.Object {
     * Parameter response: The JSON response object sent by the handler of the message. If an error occurs while connecting to the extension, the callback will be called with no arguments and runtime.lastError will be set to the error message.
     */
   def sendMessage(message: js.Any): scala.Unit = js.native
-  def sendMessage(message: js.Any, options: chromeDashAppsLib.chromeNs.runtimeNs.MessageOptions): scala.Unit = js.native
+  def sendMessage(message: js.Any, options: MessageOptions): scala.Unit = js.native
   def sendMessage(
     message: js.Any,
-    options: chromeDashAppsLib.chromeNs.runtimeNs.MessageOptions,
+    options: MessageOptions,
     responseCallback: js.Function1[/* response */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def sendMessage(

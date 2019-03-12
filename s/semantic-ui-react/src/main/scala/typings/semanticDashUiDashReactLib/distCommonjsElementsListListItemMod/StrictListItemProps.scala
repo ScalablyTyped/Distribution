@@ -48,7 +48,7 @@ trait StrictListItemProps extends js.Object {
     */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
       /* data */ ListItemProps, 
       scala.Unit
     ]
@@ -74,11 +74,7 @@ object StrictListItemProps {
     header: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsListListHeaderMod.ListHeaderProps] = null,
     icon: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsListListIconMod.ListIconProps] = null,
     image: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsImageImageMod.ImageProps] = null,
-    onClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
-      /* data */ ListItemProps, 
-      scala.Unit
-    ] = null,
+    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ ListItemProps) => scala.Unit = null,
     value: java.lang.String = null
   ): StrictListItemProps = {
     val __obj = js.Dynamic.literal()
@@ -92,7 +88,7 @@ object StrictListItemProps {
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[StrictListItemProps]
   }

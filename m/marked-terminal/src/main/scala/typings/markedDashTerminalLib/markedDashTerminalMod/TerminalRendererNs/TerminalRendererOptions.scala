@@ -91,11 +91,7 @@ object TerminalRendererOptions {
     href: chalkLib.chalkMod.Chalk | (js.Function1[/* s */ java.lang.String, java.lang.String]) = null,
     html: chalkLib.chalkMod.Chalk | (js.Function1[/* s */ java.lang.String, java.lang.String]) = null,
     link: chalkLib.chalkMod.Chalk | (js.Function1[/* s */ java.lang.String, java.lang.String]) = null,
-    list: js.Function2[
-      /* body */ java.lang.String, 
-      /* ordered */ js.UndefOr[scala.Boolean], 
-      java.lang.String
-    ] = null,
+    list: (/* body */ java.lang.String, /* ordered */ js.UndefOr[scala.Boolean]) => java.lang.String = null,
     listitem: chalkLib.chalkMod.Chalk | (js.Function1[/* s */ java.lang.String, java.lang.String]) = null,
     paragraph: chalkLib.chalkMod.Chalk | (js.Function1[/* s */ java.lang.String, java.lang.String]) = null,
     reflowText: js.UndefOr[scala.Boolean] = js.undefined,
@@ -120,7 +116,7 @@ object TerminalRendererOptions {
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (list != null) __obj.updateDynamic("list")(list)
+    if (list != null) __obj.updateDynamic("list")(js.Any.fromFunction2(list))
     if (listitem != null) __obj.updateDynamic("listitem")(listitem.asInstanceOf[js.Any])
     if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph.asInstanceOf[js.Any])
     if (!js.isUndefined(reflowText)) __obj.updateDynamic("reflowText")(reflowText)

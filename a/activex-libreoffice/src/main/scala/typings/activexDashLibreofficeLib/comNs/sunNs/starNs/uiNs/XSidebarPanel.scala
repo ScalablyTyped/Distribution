@@ -25,10 +25,10 @@ object XSidebarPanel {
   @scala.inline
   def apply(
     MinimalWidth: scala.Double,
-    getHeightForWidth: js.Function1[scala.Double, LayoutSize],
-    getMinimalWidth: js.Function0[scala.Double]
+    getHeightForWidth: scala.Double => LayoutSize,
+    getMinimalWidth: () => scala.Double
   ): XSidebarPanel = {
-    val __obj = js.Dynamic.literal(MinimalWidth = MinimalWidth, getHeightForWidth = getHeightForWidth, getMinimalWidth = getMinimalWidth)
+    val __obj = js.Dynamic.literal(MinimalWidth = MinimalWidth, getHeightForWidth = js.Any.fromFunction1(getHeightForWidth), getMinimalWidth = js.Any.fromFunction0(getMinimalWidth))
   
     __obj.asInstanceOf[XSidebarPanel]
   }

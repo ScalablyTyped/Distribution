@@ -15,12 +15,12 @@ object XAccessibleExtendedAttributes {
   @scala.inline
   def apply(
     ExtendedAttributes: js.Any,
-    acquire: js.Function0[scala.Unit],
-    getExtendedAttributes: js.Function0[js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getExtendedAttributes: () => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAccessibleExtendedAttributes = {
-    val __obj = js.Dynamic.literal(ExtendedAttributes = ExtendedAttributes, acquire = acquire, getExtendedAttributes = getExtendedAttributes, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ExtendedAttributes = ExtendedAttributes, acquire = js.Any.fromFunction0(acquire), getExtendedAttributes = js.Any.fromFunction0(getExtendedAttributes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAccessibleExtendedAttributes]
   }

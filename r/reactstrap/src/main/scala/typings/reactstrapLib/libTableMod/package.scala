@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object libTableMod {
   type Table[T] = reactLib.reactMod.Component[TableProps[T], js.Object, js.Any]
-  type TableProps[T] = reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] with reactstrapLib.Anon_Bordered with T
+  type TableProps[T] = reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] with reactstrapLib.Anon_Bordered with T
 }

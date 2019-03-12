@@ -12,12 +12,12 @@ trait TreeListExpandEvent extends TreeListEvent {
 object TreeListExpandEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: TreeList,
     model: kendoDashUiLib.kendoNs.dataNs.TreeListModel = null
   ): TreeListExpandEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (model != null) __obj.updateDynamic("model")(model)
     __obj.asInstanceOf[TreeListExpandEvent]
   }

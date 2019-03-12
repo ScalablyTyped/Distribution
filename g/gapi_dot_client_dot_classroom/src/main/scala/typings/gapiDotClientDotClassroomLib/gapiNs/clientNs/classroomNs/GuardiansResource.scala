@@ -75,20 +75,11 @@ trait GuardiansResource extends js.Object {
 object GuardiansResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsGuardianId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsGuardianId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Guardian]
-    ],
-    list: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsInvitedEmailAddressKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListGuardiansResponse]
-    ]
+    delete: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsGuardianId => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsGuardianId => gapiDotClientLib.gapiNs.clientNs.Request[Guardian],
+    list: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsInvitedEmailAddressKey => gapiDotClientLib.gapiNs.clientNs.Request[ListGuardiansResponse]
   ): GuardiansResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[GuardiansResource]
   }

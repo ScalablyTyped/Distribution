@@ -29,13 +29,13 @@ trait ProcessControl
 object ProcessControl {
   @scala.inline
   def apply(
-    getDisplayState: js.Function0[xrmLib.XrmNs.DisplayState],
-    getVisible: js.Function0[scala.Boolean],
-    reflow: js.Function3[scala.Boolean, java.lang.String, java.lang.String, scala.Unit],
-    setDisplayState: js.Function1[xrmLib.XrmNs.DisplayState, scala.Unit],
-    setVisible: js.Function1[scala.Boolean, scala.Unit]
+    getDisplayState: () => xrmLib.XrmNs.DisplayState,
+    getVisible: () => scala.Boolean,
+    reflow: (scala.Boolean, java.lang.String, java.lang.String) => scala.Unit,
+    setDisplayState: xrmLib.XrmNs.DisplayState => scala.Unit,
+    setVisible: scala.Boolean => scala.Unit
   ): ProcessControl = {
-    val __obj = js.Dynamic.literal(getDisplayState = getDisplayState, getVisible = getVisible, reflow = reflow, setDisplayState = setDisplayState, setVisible = setVisible)
+    val __obj = js.Dynamic.literal(getDisplayState = js.Any.fromFunction0(getDisplayState), getVisible = js.Any.fromFunction0(getVisible), reflow = js.Any.fromFunction3(reflow), setDisplayState = js.Any.fromFunction1(setDisplayState), setVisible = js.Any.fromFunction1(setVisible))
   
     __obj.asInstanceOf[ProcessControl]
   }

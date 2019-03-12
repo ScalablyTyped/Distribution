@@ -38,7 +38,7 @@ class Connection () extends js.Object {
     *
     * @param callback function(err), where err is error object in case of error.
     */
-  def commit(callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
+  def commit(callback: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
   /**
     * @summary
     * Synchronously commits current transaction.
@@ -62,7 +62,7 @@ class Connection () extends js.Object {
     user: java.lang.String,
     pass: java.lang.String,
     role: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Connects you to database,
@@ -97,7 +97,7 @@ class Connection () extends js.Object {
     */
   def query(
     sql: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* res */ FBResult, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* res */ FBResult, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Executes SQL query.
@@ -114,7 +114,7 @@ class Connection () extends js.Object {
     *
     * @param callback function(err), where err is error object in case of error.
     */
-  def rollback(callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
+  def rollback(callback: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
   /**
     * Synchronously rollbacks current transaction.
     *
@@ -130,14 +130,14 @@ class Connection () extends js.Object {
     *
     * @param callback function(err), where err is error object in case of error.
     */
-  def start(callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
+  def start(callback: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
   /**
     * Creates new Transaction object and starts new transaction.
     *
     * @param callback function(err, transaction), where err is error object in case of error, transaction - newly created transaction.
     */
   def startNewTransaction(
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* transaction */ Transaction, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* transaction */ Transaction, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Creates new Transaction object and starts new transaction.

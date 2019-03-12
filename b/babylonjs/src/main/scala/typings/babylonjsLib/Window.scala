@@ -12,11 +12,11 @@ trait Window extends js.Object {
   var DracoDecoderModule: js.Any = js.native
   var Float32Array: stdLib.Float32ArrayConstructor = js.native
   var MSGesture: stdLib.MSGesture = js.native
-  var Math: Math = js.native
+  var Math: babylonjsLib.Math = js.native
   var PointerEvent: js.Any = js.native
   var Uint8Array: stdLib.Uint8ArrayConstructor = js.native
   var VRFrameData: js.Any = js.native
-  var WebGLRenderingContext: WebGLRenderingContext = js.native
+  var WebGLRenderingContext: babylonjsLib.WebGLRenderingContext = js.native
   var mozIndexedDB: stdLib.IDBFactory = js.native
   var mozURL: Anon_Base = js.native
   var msIndexedDB: stdLib.IDBFactory = js.native

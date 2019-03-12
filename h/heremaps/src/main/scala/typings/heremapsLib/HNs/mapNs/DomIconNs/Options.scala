@@ -34,22 +34,12 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    onAttach: js.Function3[
-      /* el */ stdLib.Element, 
-      /* icon */ heremapsLib.HNs.mapNs.DomIcon, 
-      /* marker */ heremapsLib.HNs.mapNs.DomMarker, 
-      scala.Unit
-    ] = null,
-    onDetach: js.Function3[
-      /* el */ stdLib.Element, 
-      /* icon */ heremapsLib.HNs.mapNs.DomIcon, 
-      /* marker */ heremapsLib.HNs.mapNs.DomMarker, 
-      scala.Unit
-    ] = null
+    onAttach: (/* el */ stdLib.Element, /* icon */ heremapsLib.HNs.mapNs.DomIcon, /* marker */ heremapsLib.HNs.mapNs.DomMarker) => scala.Unit = null,
+    onDetach: (/* el */ stdLib.Element, /* icon */ heremapsLib.HNs.mapNs.DomIcon, /* marker */ heremapsLib.HNs.mapNs.DomMarker) => scala.Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (onAttach != null) __obj.updateDynamic("onAttach")(onAttach)
-    if (onDetach != null) __obj.updateDynamic("onDetach")(onDetach)
+    if (onAttach != null) __obj.updateDynamic("onAttach")(js.Any.fromFunction3(onAttach))
+    if (onDetach != null) __obj.updateDynamic("onDetach")(js.Any.fromFunction3(onDetach))
     __obj.asInstanceOf[Options]
   }
 }

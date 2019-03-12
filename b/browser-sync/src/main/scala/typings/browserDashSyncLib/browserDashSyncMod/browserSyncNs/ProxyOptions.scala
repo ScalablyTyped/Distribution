@@ -27,25 +27,20 @@ trait ProxyOptions extends js.Object {
 object ProxyOptions {
   @scala.inline
   def apply(
-    error: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* req */ nodeLib.httpMod.IncomingMessage, 
-      /* res */ nodeLib.httpMod.ServerResponse, 
-      scala.Unit
-    ] = null,
+    error: (/* err */ nodeLib.NodeJSNs.ErrnoException, /* req */ nodeLib.httpMod.IncomingMessage, /* res */ nodeLib.httpMod.ServerResponse) => scala.Unit = null,
     middleware: MiddlewareHandler = null,
     proxyReq: (js.Array[js.Function1[/* res */ nodeLib.httpMod.IncomingMessage, scala.Unit]]) | (js.Function1[/* res */ nodeLib.httpMod.IncomingMessage, scala.Unit]) = null,
     proxyRes: ProxyResponseMiddleware | js.Array[ProxyResponseMiddleware] = null,
-    reqHeaders: js.Function1[/* config */ js.Object, Hash[js.Object]] = null,
+    reqHeaders: /* config */ js.Object => Hash[js.Object] = null,
     target: java.lang.String = null,
     ws: js.UndefOr[scala.Boolean] = js.undefined
   ): ProxyOptions = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction3(error))
     if (middleware != null) __obj.updateDynamic("middleware")(middleware)
     if (proxyReq != null) __obj.updateDynamic("proxyReq")(proxyReq.asInstanceOf[js.Any])
     if (proxyRes != null) __obj.updateDynamic("proxyRes")(proxyRes.asInstanceOf[js.Any])
-    if (reqHeaders != null) __obj.updateDynamic("reqHeaders")(reqHeaders)
+    if (reqHeaders != null) __obj.updateDynamic("reqHeaders")(js.Any.fromFunction1(reqHeaders))
     if (target != null) __obj.updateDynamic("target")(target)
     if (!js.isUndefined(ws)) __obj.updateDynamic("ws")(ws)
     __obj.asInstanceOf[ProxyOptions]

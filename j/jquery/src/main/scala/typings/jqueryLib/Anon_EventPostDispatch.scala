@@ -12,8 +12,8 @@ trait Anon_EventPostDispatch[TTarget]
 
 object Anon_EventPostDispatch {
   @scala.inline
-  def apply[TTarget](postDispatch: js.Function2[TTarget, jqueryLib.JQueryNs.Event, scala.Unit]): Anon_EventPostDispatch[TTarget] = {
-    val __obj = js.Dynamic.literal(postDispatch = postDispatch)
+  def apply[TTarget](postDispatch: (TTarget, jqueryLib.JQueryNs.Event) => scala.Unit): Anon_EventPostDispatch[TTarget] = {
+    val __obj = js.Dynamic.literal(postDispatch = js.Any.fromFunction2(postDispatch))
   
     __obj.asInstanceOf[Anon_EventPostDispatch[TTarget]]
   }

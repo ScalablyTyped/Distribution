@@ -24,9 +24,9 @@ object detectPointer {
     coarse: scala.Boolean,
     fine: scala.Boolean,
     none: scala.Boolean,
-    update: js.Function0[scala.Unit]
+    update: () => scala.Unit
   ): detectPointer = {
-    val __obj = js.Dynamic.literal(anyCoarse = anyCoarse, anyFine = anyFine, anyNone = anyNone, coarse = coarse, fine = fine, none = none, update = update)
+    val __obj = js.Dynamic.literal(anyCoarse = anyCoarse, anyFine = anyFine, anyNone = anyNone, coarse = coarse, fine = fine, none = none, update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[detectPointer]
   }

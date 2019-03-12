@@ -9,7 +9,7 @@ package object libEsmComponentsTreeTreeMod {
   type TreeEventHandler[T] = js.Function3[
     /* node */ atBlueprintjsCoreLib.libEsmComponentsTreeTreeNodeMod.ITreeNode[T], 
     /* nodePath */ js.Array[scala.Double], 
-    /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+    /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
     scala.Unit
   ]
 }

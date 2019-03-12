@@ -25,13 +25,9 @@ trait XSAXSerializable extends js.Object {
 object XSAXSerializable {
   @scala.inline
   def apply(
-    serialize: js.Function2[
-      XDocumentHandler, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair], 
-      scala.Unit
-    ]
+    serialize: (XDocumentHandler, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]) => scala.Unit
   ): XSAXSerializable = {
-    val __obj = js.Dynamic.literal(serialize = serialize)
+    val __obj = js.Dynamic.literal(serialize = js.Any.fromFunction2(serialize))
   
     __obj.asInstanceOf[XSAXSerializable]
   }

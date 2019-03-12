@@ -45,43 +45,30 @@ trait MailMessage extends XMailMessage {
 object MailMessage {
   @scala.inline
   def apply(
-    Attachments: activexDashInteropLib.SafeArray[MailAttachment],
-    BccRecipients: activexDashInteropLib.SafeArray[java.lang.String],
+    Attachments: stdLib.SafeArray[MailAttachment],
+    BccRecipients: stdLib.SafeArray[java.lang.String],
     Body: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable,
-    CcRecipients: activexDashInteropLib.SafeArray[java.lang.String],
-    Recipients: activexDashInteropLib.SafeArray[java.lang.String],
+    CcRecipients: stdLib.SafeArray[java.lang.String],
+    Recipients: stdLib.SafeArray[java.lang.String],
     ReplyToAddress: java.lang.String,
     SenderAddress: java.lang.String,
     SenderName: java.lang.String,
     Subject: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    addAttachment: js.Function1[MailAttachment, scala.Unit],
-    addBccRecipient: js.Function1[java.lang.String, scala.Unit],
-    addCcRecipient: js.Function1[java.lang.String, scala.Unit],
-    addRecipient: js.Function1[java.lang.String, scala.Unit],
-    create: js.Function4[
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable, 
-      scala.Unit
-    ],
-    createWithAttachment: js.Function5[
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable, 
-      MailAttachment, 
-      scala.Unit
-    ],
-    getAttachments: js.Function0[activexDashInteropLib.SafeArray[MailAttachment]],
-    getBccRecipients: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getCcRecipients: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getRecipients: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addAttachment: MailAttachment => scala.Unit,
+    addBccRecipient: java.lang.String => scala.Unit,
+    addCcRecipient: java.lang.String => scala.Unit,
+    addRecipient: java.lang.String => scala.Unit,
+    create: (java.lang.String, java.lang.String, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable) => scala.Unit,
+    createWithAttachment: (java.lang.String, java.lang.String, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable, MailAttachment) => scala.Unit,
+    getAttachments: () => stdLib.SafeArray[MailAttachment],
+    getBccRecipients: () => stdLib.SafeArray[java.lang.String],
+    getCcRecipients: () => stdLib.SafeArray[java.lang.String],
+    getRecipients: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): MailMessage = {
-    val __obj = js.Dynamic.literal(Attachments = Attachments, BccRecipients = BccRecipients, Body = Body, CcRecipients = CcRecipients, Recipients = Recipients, ReplyToAddress = ReplyToAddress, SenderAddress = SenderAddress, SenderName = SenderName, Subject = Subject, acquire = acquire, addAttachment = addAttachment, addBccRecipient = addBccRecipient, addCcRecipient = addCcRecipient, addRecipient = addRecipient, create = create, createWithAttachment = createWithAttachment, getAttachments = getAttachments, getBccRecipients = getBccRecipients, getCcRecipients = getCcRecipients, getRecipients = getRecipients, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Attachments = Attachments, BccRecipients = BccRecipients, Body = Body, CcRecipients = CcRecipients, Recipients = Recipients, ReplyToAddress = ReplyToAddress, SenderAddress = SenderAddress, SenderName = SenderName, Subject = Subject, acquire = js.Any.fromFunction0(acquire), addAttachment = js.Any.fromFunction1(addAttachment), addBccRecipient = js.Any.fromFunction1(addBccRecipient), addCcRecipient = js.Any.fromFunction1(addCcRecipient), addRecipient = js.Any.fromFunction1(addRecipient), create = js.Any.fromFunction4(create), createWithAttachment = js.Any.fromFunction5(createWithAttachment), getAttachments = js.Any.fromFunction0(getAttachments), getBccRecipients = js.Any.fromFunction0(getBccRecipients), getCcRecipients = js.Any.fromFunction0(getCcRecipients), getRecipients = js.Any.fromFunction0(getRecipients), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[MailMessage]
   }

@@ -99,7 +99,7 @@ object ACL extends js.Object {
     model: java.lang.String,
     modelId: js.Any,
     method: java.lang.String,
-    callback: js.Function2[/* err */ java.lang.String | nodeLib.Error, /* allowed */ scala.Boolean, scala.Unit]
+    callback: js.Function2[/* err */ java.lang.String | stdLib.Error, /* allowed */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Check if the given principal is allowed to access the model/property
@@ -119,7 +119,7 @@ object ACL extends js.Object {
     property: java.lang.String,
     accessType: java.lang.String,
     callback: js.Function2[
-      /* err */ java.lang.String | nodeLib.Error, 
+      /* err */ java.lang.String | stdLib.Error, 
       /* result */ loopbackLib.loopbackMod.lNs.AccessRequest, 
       scala.Unit
     ]

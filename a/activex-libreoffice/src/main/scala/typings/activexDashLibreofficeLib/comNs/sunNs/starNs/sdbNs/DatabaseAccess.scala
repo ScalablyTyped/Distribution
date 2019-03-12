@@ -14,7 +14,7 @@ trait DatabaseAccess
      with activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
      with XCompletedConnection {
   /** is a list of arbitrary string tag/value pairs as connection arguments; normally at least a "user" and "password" property should be included. */
-  var ConnectInfo: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  var ConnectInfo: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /** indicates a database url of the form ; ` jdbc:subprotocol:subname` or ` sdbc:subprotocol:subname` */
   var ConnectURL: java.lang.String
   /** indicates that a password is always necessary. */
@@ -24,9 +24,9 @@ trait DatabaseAccess
   /** provides an object for formatting numbers. */
   var NumberFormatsSupplier: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XNumberFormatsSupplier
   /** defines a list of tables, on which the bean should have it's focus. If empty, all tables are rejected. */
-  var TableFilter: activexDashInteropLib.SafeArray[java.lang.String]
+  var TableFilter: stdLib.SafeArray[java.lang.String]
   /** defines a list of table types, on which the bean should have it's focus. If empty, all tables types are rejected. */
-  var TableTypeFilter: activexDashInteropLib.SafeArray[java.lang.String]
+  var TableTypeFilter: stdLib.SafeArray[java.lang.String]
   /** is the title of the bean. */
   var Title: java.lang.String
   /** is the URL of the bean. */
@@ -36,65 +36,38 @@ trait DatabaseAccess
 object DatabaseAccess {
   @scala.inline
   def apply(
-    ConnectInfo: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    ConnectInfo: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     ConnectURL: java.lang.String,
     IsPasswordRequired: scala.Boolean,
     IsReadOnly: scala.Boolean,
     LoginTimeout: scala.Double,
     NumberFormatsSupplier: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XNumberFormatsSupplier,
     PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
-    TableFilter: activexDashInteropLib.SafeArray[java.lang.String],
-    TableTypeFilter: activexDashInteropLib.SafeArray[java.lang.String],
+    TableFilter: stdLib.SafeArray[java.lang.String],
+    TableTypeFilter: stdLib.SafeArray[java.lang.String],
     Title: java.lang.String,
     URL: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    addDatabaseAccessListener: js.Function1[XDatabaseAccessListener, scala.Unit],
-    addPropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    addVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    connectWithCompletion: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection
-    ],
-    getConnection: js.Function2[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection
-    ],
-    getIsolatedConnection: js.Function2[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection
-    ],
-    getLoginTimeout: js.Function0[scala.Double],
-    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
-    getPropertyValue: js.Function1[java.lang.String, js.Any],
-    hasConnections: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeDatabaseAccessListener: js.Function1[XDatabaseAccessListener, scala.Unit],
-    removePropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    removeVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    setLoginTimeout: js.Function1[scala.Double, scala.Unit],
-    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
-    suspendConnections: js.Function0[scala.Boolean]
+    acquire: () => scala.Unit,
+    addDatabaseAccessListener: XDatabaseAccessListener => scala.Unit,
+    addPropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    addVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    connectWithCompletion: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler => activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
+    getConnection: (java.lang.String, java.lang.String) => activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
+    getIsolatedConnection: (java.lang.String, java.lang.String) => activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
+    getLoginTimeout: () => scala.Double,
+    getPropertySetInfo: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    getPropertyValue: java.lang.String => js.Any,
+    hasConnections: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeDatabaseAccessListener: XDatabaseAccessListener => scala.Unit,
+    removePropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    removeVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    setLoginTimeout: scala.Double => scala.Unit,
+    setPropertyValue: (java.lang.String, js.Any) => scala.Unit,
+    suspendConnections: () => scala.Boolean
   ): DatabaseAccess = {
-    val __obj = js.Dynamic.literal(ConnectInfo = ConnectInfo, ConnectURL = ConnectURL, IsPasswordRequired = IsPasswordRequired, IsReadOnly = IsReadOnly, LoginTimeout = LoginTimeout, NumberFormatsSupplier = NumberFormatsSupplier, PropertySetInfo = PropertySetInfo, TableFilter = TableFilter, TableTypeFilter = TableTypeFilter, Title = Title, URL = URL, acquire = acquire, addDatabaseAccessListener = addDatabaseAccessListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, connectWithCompletion = connectWithCompletion, getConnection = getConnection, getIsolatedConnection = getIsolatedConnection, getLoginTimeout = getLoginTimeout, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, hasConnections = hasConnections, queryInterface = queryInterface, release = release, removeDatabaseAccessListener = removeDatabaseAccessListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setLoginTimeout = setLoginTimeout, setPropertyValue = setPropertyValue, suspendConnections = suspendConnections)
+    val __obj = js.Dynamic.literal(ConnectInfo = ConnectInfo, ConnectURL = ConnectURL, IsPasswordRequired = IsPasswordRequired, IsReadOnly = IsReadOnly, LoginTimeout = LoginTimeout, NumberFormatsSupplier = NumberFormatsSupplier, PropertySetInfo = PropertySetInfo, TableFilter = TableFilter, TableTypeFilter = TableTypeFilter, Title = Title, URL = URL, acquire = js.Any.fromFunction0(acquire), addDatabaseAccessListener = js.Any.fromFunction1(addDatabaseAccessListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), connectWithCompletion = js.Any.fromFunction1(connectWithCompletion), getConnection = js.Any.fromFunction2(getConnection), getIsolatedConnection = js.Any.fromFunction2(getIsolatedConnection), getLoginTimeout = js.Any.fromFunction0(getLoginTimeout), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), hasConnections = js.Any.fromFunction0(hasConnections), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeDatabaseAccessListener = js.Any.fromFunction1(removeDatabaseAccessListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setLoginTimeout = js.Any.fromFunction1(setLoginTimeout), setPropertyValue = js.Any.fromFunction2(setPropertyValue), suspendConnections = js.Any.fromFunction0(suspendConnections))
   
     __obj.asInstanceOf[DatabaseAccess]
   }

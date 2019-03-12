@@ -37,11 +37,7 @@ object StepButtonProps {
     onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
     onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
     onKeyUp: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
-    onKeyboardFocus: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], 
-      /* isKeyboardFocused */ scala.Boolean, 
-      scala.Unit
-    ] = null,
+    onKeyboardFocus: (/* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], /* isKeyboardFocused */ scala.Boolean) => scala.Unit = null,
     onMouseEnter: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
     onMouseLeave: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
     onTouchStart: reactLib.reactMod.ReactNs.TouchEventHandler[js.Object] = null,
@@ -71,7 +67,7 @@ object StepButtonProps {
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
     if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
-    if (onKeyboardFocus != null) __obj.updateDynamic("onKeyboardFocus")(onKeyboardFocus)
+    if (onKeyboardFocus != null) __obj.updateDynamic("onKeyboardFocus")(js.Any.fromFunction2(onKeyboardFocus))
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
     if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)

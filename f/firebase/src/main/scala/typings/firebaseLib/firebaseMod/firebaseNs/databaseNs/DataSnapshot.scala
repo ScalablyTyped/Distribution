@@ -297,7 +297,7 @@ trait DataSnapshot extends js.Object {
   /**
     * Returns a JSON-serializable representation of this object.
     */
-  def toJSON(): coreDashJsLib.Object | scala.Null
+  def toJSON(): js.Object | scala.Null
   /**
     * Extracts a JavaScript value from a `DataSnapshot`.
     *
@@ -341,21 +341,21 @@ trait DataSnapshot extends js.Object {
 object DataSnapshot {
   @scala.inline
   def apply(
-    child: js.Function1[java.lang.String, DataSnapshot],
-    exists: js.Function0[scala.Boolean],
-    exportVal: js.Function0[js.Any],
-    forEach: js.Function1[js.Function1[DataSnapshot, scala.Boolean | scala.Unit], scala.Boolean],
-    getPriority: js.Function0[java.lang.String | scala.Double | scala.Null],
-    hasChild: js.Function1[java.lang.String, scala.Boolean],
-    hasChildren: js.Function0[scala.Boolean],
-    numChildren: js.Function0[scala.Double],
+    child: java.lang.String => DataSnapshot,
+    exists: () => scala.Boolean,
+    exportVal: () => js.Any,
+    forEach: js.Function1[DataSnapshot, scala.Boolean | scala.Unit] => scala.Boolean,
+    getPriority: () => java.lang.String | scala.Double | scala.Null,
+    hasChild: java.lang.String => scala.Boolean,
+    hasChildren: () => scala.Boolean,
+    numChildren: () => scala.Double,
     ref: Reference,
-    toJSON: js.Function0[coreDashJsLib.Object | scala.Null],
-    `val`: js.Function0[js.Any],
+    toJSON: () => js.Object | scala.Null,
+    `val`: () => js.Any,
     key: java.lang.String = null
   ): DataSnapshot = {
-    val __obj = js.Dynamic.literal(child = child, exists = exists, exportVal = exportVal, forEach = forEach, getPriority = getPriority, hasChild = hasChild, hasChildren = hasChildren, numChildren = numChildren, ref = ref, toJSON = toJSON)
-    __obj.updateDynamic("val")(`val`)
+    val __obj = js.Dynamic.literal(child = js.Any.fromFunction1(child), exists = js.Any.fromFunction0(exists), exportVal = js.Any.fromFunction0(exportVal), forEach = js.Any.fromFunction1(forEach), getPriority = js.Any.fromFunction0(getPriority), hasChild = js.Any.fromFunction1(hasChild), hasChildren = js.Any.fromFunction0(hasChildren), numChildren = js.Any.fromFunction0(numChildren), ref = ref, toJSON = js.Any.fromFunction0(toJSON))
+    __obj.updateDynamic("val")(js.Any.fromFunction0(`val`))
     if (key != null) __obj.updateDynamic("key")(key)
     __obj.asInstanceOf[DataSnapshot]
   }

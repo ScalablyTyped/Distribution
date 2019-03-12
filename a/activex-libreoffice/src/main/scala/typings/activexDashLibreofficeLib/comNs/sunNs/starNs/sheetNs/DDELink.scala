@@ -22,26 +22,23 @@ object DDELink {
     Application: java.lang.String,
     Item: java.lang.String,
     Name: java.lang.String,
-    Results: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]],
+    Results: stdLib.SafeArray[stdLib.SafeArray[_]],
     Topic: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    addRefreshListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XRefreshListener, scala.Unit],
-    getApplication: js.Function0[java.lang.String],
-    getItem: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getResults: js.Function0[activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]],
-    getTopic: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    refresh: js.Function0[scala.Unit],
-    release: js.Function0[scala.Unit],
-    removeRefreshListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XRefreshListener, scala.Unit],
-    setName: js.Function1[java.lang.String, scala.Unit],
-    setResults: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]], 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    addRefreshListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XRefreshListener => scala.Unit,
+    getApplication: () => java.lang.String,
+    getItem: () => java.lang.String,
+    getName: () => java.lang.String,
+    getResults: () => stdLib.SafeArray[stdLib.SafeArray[_]],
+    getTopic: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    refresh: () => scala.Unit,
+    release: () => scala.Unit,
+    removeRefreshListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XRefreshListener => scala.Unit,
+    setName: java.lang.String => scala.Unit,
+    setResults: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]] => scala.Unit
   ): DDELink = {
-    val __obj = js.Dynamic.literal(Application = Application, Item = Item, Name = Name, Results = Results, Topic = Topic, acquire = acquire, addRefreshListener = addRefreshListener, getApplication = getApplication, getItem = getItem, getName = getName, getResults = getResults, getTopic = getTopic, queryInterface = queryInterface, refresh = refresh, release = release, removeRefreshListener = removeRefreshListener, setName = setName, setResults = setResults)
+    val __obj = js.Dynamic.literal(Application = Application, Item = Item, Name = Name, Results = Results, Topic = Topic, acquire = js.Any.fromFunction0(acquire), addRefreshListener = js.Any.fromFunction1(addRefreshListener), getApplication = js.Any.fromFunction0(getApplication), getItem = js.Any.fromFunction0(getItem), getName = js.Any.fromFunction0(getName), getResults = js.Any.fromFunction0(getResults), getTopic = js.Any.fromFunction0(getTopic), queryInterface = js.Any.fromFunction1(queryInterface), refresh = js.Any.fromFunction0(refresh), release = js.Any.fromFunction0(release), removeRefreshListener = js.Any.fromFunction1(removeRefreshListener), setName = js.Any.fromFunction1(setName), setResults = js.Any.fromFunction1(setResults))
   
     __obj.asInstanceOf[DDELink]
   }

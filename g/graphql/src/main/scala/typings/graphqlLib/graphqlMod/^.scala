@@ -235,7 +235,7 @@ object ^ extends js.Object {
     kind: java.lang.String,
     isLeaving: scala.Boolean
   ): graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageVisitorMod.VisitFn[_, _]] = js.native
-  def graphql[TData](args: graphqlLib.graphqlMod.GraphQLArgs): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  def graphql[TData](args: GraphQLArgs): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def graphql[TData](schema: graphqlLib.typeSchemaMod.GraphQLSchema, source: graphqlLib.languageSourceMod.Source): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def graphql[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
@@ -308,7 +308,7 @@ object ^ extends js.Object {
       graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]
     ]
   ): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
-  def graphqlSync[TData](args: graphqlLib.graphqlMod.GraphQLArgs): graphqlLib.executionExecuteMod.ExecutionResult[TData] = js.native
+  def graphqlSync[TData](args: GraphQLArgs): graphqlLib.executionExecuteMod.ExecutionResult[TData] = js.native
   def graphqlSync[TData](schema: graphqlLib.typeSchemaMod.GraphQLSchema, source: graphqlLib.languageSourceMod.Source): graphqlLib.executionExecuteMod.ExecutionResult[TData] = js.native
   def graphqlSync[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,

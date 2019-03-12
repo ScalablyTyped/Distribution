@@ -49,12 +49,12 @@ trait XIntrospection
 object XIntrospection {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    inspect: js.Function1[js.Any, XIntrospectionAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    inspect: js.Any => XIntrospectionAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XIntrospection = {
-    val __obj = js.Dynamic.literal(acquire = acquire, inspect = inspect, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), inspect = js.Any.fromFunction1(inspect), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XIntrospection]
   }

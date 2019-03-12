@@ -13,10 +13,10 @@ trait history extends js.Object {
 object history {
   @scala.inline
   def apply(
-    push: js.Function3[java.lang.String, java.lang.String, js.Any, scala.Unit],
-    track: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    push: (java.lang.String, java.lang.String, js.Any) => scala.Unit,
+    track: (java.lang.String, java.lang.String) => scala.Unit
   ): history = {
-    val __obj = js.Dynamic.literal(push = push, track = track)
+    val __obj = js.Dynamic.literal(push = js.Any.fromFunction3(push), track = js.Any.fromFunction2(track))
   
     __obj.asInstanceOf[history]
   }

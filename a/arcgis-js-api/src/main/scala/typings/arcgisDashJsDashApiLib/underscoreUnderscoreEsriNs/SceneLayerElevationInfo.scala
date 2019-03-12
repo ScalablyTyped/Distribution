@@ -43,13 +43,13 @@ object SceneLayerElevationInfo {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     mode: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     offset: scala.Int | scala.Double = null,
     unit: java.lang.String = null
   ): SceneLayerElevationInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, mode = mode, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mode = mode, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit)
     __obj.asInstanceOf[SceneLayerElevationInfo]

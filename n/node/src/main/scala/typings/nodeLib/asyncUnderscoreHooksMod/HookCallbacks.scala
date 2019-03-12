@@ -49,24 +49,18 @@ trait HookCallbacks extends js.Object {
 object HookCallbacks {
   @scala.inline
   def apply(
-    after: js.Function1[/* asyncId */ scala.Double, scala.Unit] = null,
-    before: js.Function1[/* asyncId */ scala.Double, scala.Unit] = null,
-    destroy: js.Function1[/* asyncId */ scala.Double, scala.Unit] = null,
-    init: js.Function4[
-      /* asyncId */ scala.Double, 
-      /* type */ java.lang.String, 
-      /* triggerAsyncId */ scala.Double, 
-      /* resource */ js.Object, 
-      scala.Unit
-    ] = null,
-    promiseResolve: js.Function1[/* asyncId */ scala.Double, scala.Unit] = null
+    after: /* asyncId */ scala.Double => scala.Unit = null,
+    before: /* asyncId */ scala.Double => scala.Unit = null,
+    destroy: /* asyncId */ scala.Double => scala.Unit = null,
+    init: (/* asyncId */ scala.Double, /* type */ java.lang.String, /* triggerAsyncId */ scala.Double, /* resource */ js.Object) => scala.Unit = null,
+    promiseResolve: /* asyncId */ scala.Double => scala.Unit = null
   ): HookCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after)
-    if (before != null) __obj.updateDynamic("before")(before)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (init != null) __obj.updateDynamic("init")(init)
-    if (promiseResolve != null) __obj.updateDynamic("promiseResolve")(promiseResolve)
+    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction1(after))
+    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction1(before))
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
+    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction4(init))
+    if (promiseResolve != null) __obj.updateDynamic("promiseResolve")(js.Any.fromFunction1(promiseResolve))
     __obj.asInstanceOf[HookCallbacks]
   }
 }

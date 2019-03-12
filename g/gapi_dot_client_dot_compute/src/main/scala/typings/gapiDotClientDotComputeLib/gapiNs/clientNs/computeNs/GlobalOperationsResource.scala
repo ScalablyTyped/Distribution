@@ -19,24 +19,12 @@ trait GlobalOperationsResource extends js.Object {
 object GlobalOperationsResource {
   @scala.inline
   def apply(
-    aggregatedList: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OperationAggregatedList]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenOperation, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenOperation, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OperationList]
-    ]
+    aggregatedList: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[OperationAggregatedList],
+    delete: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenOperation => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenOperation => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[OperationList]
   ): GlobalOperationsResource = {
-    val __obj = js.Dynamic.literal(aggregatedList = aggregatedList, delete = delete, get = get, list = list)
+    val __obj = js.Dynamic.literal(aggregatedList = js.Any.fromFunction1(aggregatedList), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[GlobalOperationsResource]
   }

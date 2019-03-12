@@ -12,12 +12,9 @@ trait Anon_Field extends js.Object {
 
 object Anon_Field {
   @scala.inline
-  def apply(
-    format: java.lang.String,
-    test: js.Function1[/* field */ slonikLib.slonikMod.FieldType, scala.Boolean] = null
-  ): Anon_Field = {
+  def apply(format: java.lang.String, test: /* field */ slonikLib.slonikMod.FieldType => scala.Boolean = null): Anon_Field = {
     val __obj = js.Dynamic.literal(format = format)
-    if (test != null) __obj.updateDynamic("test")(test)
+    if (test != null) __obj.updateDynamic("test")(js.Any.fromFunction1(test))
     __obj.asInstanceOf[Anon_Field]
   }
 }

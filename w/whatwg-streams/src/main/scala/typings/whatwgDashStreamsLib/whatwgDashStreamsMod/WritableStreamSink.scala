@@ -25,20 +25,16 @@ trait WritableStreamSink[W] extends js.Object {
 object WritableStreamSink {
   @scala.inline
   def apply[W](
-    abort: js.Function1[/* reason */ js.Any, scala.Unit | js.Promise[_]] = null,
-    close: js.Function1[/* controller */ WritableStreamDefaultController[W], scala.Unit | js.Promise[_]] = null,
-    start: js.Function1[/* controller */ WritableStreamDefaultController[W], scala.Unit | js.Promise[_]] = null,
-    write: js.Function2[
-      /* chunk */ W, 
-      /* controller */ js.UndefOr[WritableStreamDefaultController[W]], 
-      scala.Unit | js.Promise[_]
-    ] = null
+    abort: /* reason */ js.Any => scala.Unit | js.Promise[_] = null,
+    close: /* controller */ WritableStreamDefaultController[W] => scala.Unit | js.Promise[_] = null,
+    start: /* controller */ WritableStreamDefaultController[W] => scala.Unit | js.Promise[_] = null,
+    write: (/* chunk */ W, /* controller */ js.UndefOr[WritableStreamDefaultController[W]]) => scala.Unit | js.Promise[_] = null
   ): WritableStreamSink[W] = {
     val __obj = js.Dynamic.literal()
-    if (abort != null) __obj.updateDynamic("abort")(abort)
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (write != null) __obj.updateDynamic("write")(write)
+    if (abort != null) __obj.updateDynamic("abort")(js.Any.fromFunction1(abort))
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
+    if (write != null) __obj.updateDynamic("write")(js.Any.fromFunction2(write))
     __obj.asInstanceOf[WritableStreamSink[W]]
   }
 }

@@ -26,7 +26,7 @@ object PrecompileOptions {
     force: js.UndefOr[scala.Boolean] = js.undefined,
     include: js.Array[java.lang.String] = null,
     name: java.lang.String = null,
-    wrapper: js.Function2[/* templates */ adoneLib.Anon_NameTemplate, PrecompileOptions, java.lang.String] = null
+    wrapper: (/* templates */ adoneLib.Anon_NameTemplate, PrecompileOptions) => java.lang.String = null
   ): PrecompileOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(asFunction)) __obj.updateDynamic("asFunction")(asFunction)
@@ -35,7 +35,7 @@ object PrecompileOptions {
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
     if (include != null) __obj.updateDynamic("include")(include)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
+    if (wrapper != null) __obj.updateDynamic("wrapper")(js.Any.fromFunction2(wrapper))
     __obj.asInstanceOf[PrecompileOptions]
   }
 }

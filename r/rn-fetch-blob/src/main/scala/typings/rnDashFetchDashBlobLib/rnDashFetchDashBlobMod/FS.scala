@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FS extends js.Object {
-  var RNFetchBlobSession: RNFetchBlobSession = js.native
+  var RNFetchBlobSession: rnDashFetchDashBlobLib.rnDashFetchDashBlobMod.RNFetchBlobSession = js.native
   var dirs: Dirs = js.native
   def appendFile(path: java.lang.String, data: java.lang.String): js.Promise[scala.Unit] = js.native
   def appendFile(path: java.lang.String, data: java.lang.String, encoding: rnDashFetchDashBlobLib.Encoding): js.Promise[scala.Unit] = js.native

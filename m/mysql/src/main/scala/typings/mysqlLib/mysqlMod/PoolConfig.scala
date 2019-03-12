@@ -48,7 +48,7 @@ object PoolConfig {
     multipleStatements: js.UndefOr[scala.Boolean] = js.undefined,
     password: java.lang.String = null,
     port: scala.Int | scala.Double = null,
-    queryFormat: js.Function2[/* query */ java.lang.String, /* values */ js.Any, scala.Unit] = null,
+    queryFormat: (/* query */ java.lang.String, /* values */ js.Any) => scala.Unit = null,
     queueLimit: scala.Int | scala.Double = null,
     socketPath: java.lang.String = null,
     ssl: java.lang.String | (nodeLib.tlsMod.SecureContextOptions with mysqlLib.Anon_RejectUnauthorized) = null,
@@ -77,7 +77,7 @@ object PoolConfig {
     if (!js.isUndefined(multipleStatements)) __obj.updateDynamic("multipleStatements")(multipleStatements)
     if (password != null) __obj.updateDynamic("password")(password)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (queryFormat != null) __obj.updateDynamic("queryFormat")(queryFormat)
+    if (queryFormat != null) __obj.updateDynamic("queryFormat")(js.Any.fromFunction2(queryFormat))
     if (queueLimit != null) __obj.updateDynamic("queueLimit")(queueLimit.asInstanceOf[js.Any])
     if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath)
     if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])

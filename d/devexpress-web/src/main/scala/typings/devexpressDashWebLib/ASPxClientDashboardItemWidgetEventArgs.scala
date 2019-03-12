@@ -22,8 +22,8 @@ trait ASPxClientDashboardItemWidgetEventArgs extends ASPxClientEventArgs {
 
 object ASPxClientDashboardItemWidgetEventArgs {
   @scala.inline
-  def apply(GetWidget: js.Function0[js.Object], ItemName: java.lang.String): ASPxClientDashboardItemWidgetEventArgs = {
-    val __obj = js.Dynamic.literal(GetWidget = GetWidget, ItemName = ItemName)
+  def apply(GetWidget: () => js.Object, ItemName: java.lang.String): ASPxClientDashboardItemWidgetEventArgs = {
+    val __obj = js.Dynamic.literal(GetWidget = js.Any.fromFunction0(GetWidget), ItemName = ItemName)
   
     __obj.asInstanceOf[ASPxClientDashboardItemWidgetEventArgs]
   }

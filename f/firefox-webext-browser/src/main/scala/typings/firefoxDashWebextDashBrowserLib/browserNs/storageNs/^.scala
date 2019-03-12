@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /** Items in the `local` storage area are local to each machine. */
-  val local: firefoxDashWebextDashBrowserLib.browserNs.storageNs.StorageArea = js.native
+  val local: StorageArea = js.native
   /**
     * Items in the `managed` storage area are set by administrators or native applications, and are read-only for the
     * extension; trying to modify this namespace results in an error.
     */
-  val managed: firefoxDashWebextDashBrowserLib.browserNs.storageNs.StorageArea = js.native
+  val managed: StorageArea = js.native
   /* storage events */
   /**
     * Fired when one or more items change.
@@ -23,13 +23,13 @@ object ^ extends js.Object {
     */
   val onChanged: firefoxDashWebextDashBrowserLib.WebExtEvent[
     js.Function2[
-      /* changes */ org.scalablytyped.runtime.StringDictionary[firefoxDashWebextDashBrowserLib.browserNs.storageNs.StorageChange], 
+      /* changes */ org.scalablytyped.runtime.StringDictionary[StorageChange], 
       /* areaName */ java.lang.String, 
       scala.Unit
     ]
   ] = js.native
   /* storage properties */
   /** Items in the `sync` storage area are synced by the browser. */
-  val sync: firefoxDashWebextDashBrowserLib.browserNs.storageNs.StorageArea = js.native
+  val sync: StorageArea = js.native
 }
 

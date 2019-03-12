@@ -16,13 +16,13 @@ trait Framebuffer extends js.Object {
 object Framebuffer {
   @scala.inline
   def apply(
-    bind: js.Function0[scala.Unit],
+    bind: () => scala.Unit,
     color: stdLib.WebGLTexture,
-    dispose: js.Function0[scala.Unit],
+    dispose: () => scala.Unit,
     handle: stdLib.WebGLFramebuffer,
-    syncSize: js.Function2[scala.Double, scala.Double, scala.Unit]
+    syncSize: (scala.Double, scala.Double) => scala.Unit
   ): Framebuffer = {
-    val __obj = js.Dynamic.literal(bind = bind, color = color, dispose = dispose, handle = handle, syncSize = syncSize)
+    val __obj = js.Dynamic.literal(bind = js.Any.fromFunction0(bind), color = color, dispose = js.Any.fromFunction0(dispose), handle = handle, syncSize = js.Any.fromFunction2(syncSize))
   
     __obj.asInstanceOf[Framebuffer]
   }

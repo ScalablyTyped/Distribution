@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Mongo")
 @js.native
 object ^ extends js.Object {
-  var Collection: meteorDashTypingsLib.MongoNs.CollectionStatic = js.native
-  var Cursor: meteorDashTypingsLib.MongoNs.CursorStatic = js.native
-  var ObjectID: meteorDashTypingsLib.MongoNs.ObjectIDStatic = js.native
+  var Collection: CollectionStatic = js.native
+  var Cursor: CursorStatic = js.native
+  var ObjectID: ObjectIDStatic = js.native
 }
 

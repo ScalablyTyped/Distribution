@@ -11,11 +11,11 @@ trait TextEncodingStatic extends js.Object {
   var TextDecoder_Original: TextDecoderStatic = js.native
   @JSName("TextEncoder")
   var TextEncoder_Original: TextEncoderStatic = js.native
-  def TextDecoder(): TextDecoder = js.native
-  def TextDecoder(label: java.lang.String): TextDecoder = js.native
-  def TextDecoder(label: java.lang.String, options: TextDecoderOptions): TextDecoder = js.native
-  def TextEncoder(): TextEncoder = js.native
-  def TextEncoder(utfLabel: java.lang.String): TextEncoder = js.native
-  def TextEncoder(utfLabel: java.lang.String, options: TextEncoderOptions): TextEncoder = js.native
+  def TextDecoder(): textDashEncodingDashUtfDash8Lib.textDashEncodingDashUtfDash8Mod.TextEncodingNs.TextDecoder = js.native
+  def TextDecoder(label: java.lang.String): textDashEncodingDashUtfDash8Lib.textDashEncodingDashUtfDash8Mod.TextEncodingNs.TextDecoder = js.native
+  def TextDecoder(label: java.lang.String, options: TextDecoderOptions): textDashEncodingDashUtfDash8Lib.textDashEncodingDashUtfDash8Mod.TextEncodingNs.TextDecoder = js.native
+  def TextEncoder(): textDashEncodingDashUtfDash8Lib.textDashEncodingDashUtfDash8Mod.TextEncodingNs.TextEncoder = js.native
+  def TextEncoder(utfLabel: java.lang.String): textDashEncodingDashUtfDash8Lib.textDashEncodingDashUtfDash8Mod.TextEncodingNs.TextEncoder = js.native
+  def TextEncoder(utfLabel: java.lang.String, options: TextEncoderOptions): textDashEncodingDashUtfDash8Lib.textDashEncodingDashUtfDash8Mod.TextEncodingNs.TextEncoder = js.native
 }
 

@@ -19,8 +19,8 @@ trait EventWrapperProps[T /* <: Event */] extends js.Object {
   var style: js.UndefOr[
     reactLib.reactMod.ReactNs.CSSProperties with reactDashBigDashCalendarLib.Anon_XOffset
   ] = js.undefined
-  def onClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit
-  def onDoubleClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit
+  def onClick(e: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit
+  def onDoubleClick(e: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit
 }
 
 object EventWrapperProps {
@@ -34,18 +34,12 @@ object EventWrapperProps {
     getters: reactDashBigDashCalendarLib.Anon_DayProp[T],
     isRtl: scala.Boolean,
     label: java.lang.String,
-    onClick: js.Function1[
-      reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ],
-    onDoubleClick: js.Function1[
-      reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ],
+    onClick: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit,
+    onDoubleClick: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit,
     selected: scala.Boolean,
     style: reactLib.reactMod.ReactNs.CSSProperties with reactDashBigDashCalendarLib.Anon_XOffset = null
   ): EventWrapperProps[T] = {
-    val __obj = js.Dynamic.literal(accessors = accessors, className = className, continuesEarlier = continuesEarlier, continuesLater = continuesLater, event = event.asInstanceOf[js.Any], getters = getters, isRtl = isRtl, label = label, onClick = onClick, onDoubleClick = onDoubleClick, selected = selected)
+    val __obj = js.Dynamic.literal(accessors = accessors, className = className, continuesEarlier = continuesEarlier, continuesLater = continuesLater, event = event.asInstanceOf[js.Any], getters = getters, isRtl = isRtl, label = label, onClick = js.Any.fromFunction1(onClick), onDoubleClick = js.Any.fromFunction1(onDoubleClick), selected = selected)
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[EventWrapperProps[T]]
   }

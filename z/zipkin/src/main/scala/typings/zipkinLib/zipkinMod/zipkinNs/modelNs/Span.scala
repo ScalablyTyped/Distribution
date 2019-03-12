@@ -34,19 +34,19 @@ trait Span extends js.Object {
 object Span {
   @scala.inline
   def apply(
-    addAnnotation: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    addAnnotation: (scala.Double, java.lang.String) => scala.Unit,
     annotations: js.Array[Annotation],
     debug: scala.Boolean,
     id: java.lang.String,
-    putTag: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    setDebug: js.Function1[scala.Boolean, scala.Unit],
-    setDuration: js.Function1[scala.Double, scala.Unit],
-    setKind: js.Function1[java.lang.String, scala.Unit],
-    setLocalEndpoint: js.Function1[Endpoint, scala.Unit],
-    setName: js.Function1[java.lang.String, scala.Unit],
-    setRemoteEndpoint: js.Function1[Endpoint, scala.Unit],
-    setShared: js.Function1[scala.Boolean, scala.Unit],
-    setTimestamp: js.Function1[scala.Double, scala.Unit],
+    putTag: (java.lang.String, java.lang.String) => scala.Unit,
+    setDebug: scala.Boolean => scala.Unit,
+    setDuration: scala.Double => scala.Unit,
+    setKind: java.lang.String => scala.Unit,
+    setLocalEndpoint: Endpoint => scala.Unit,
+    setName: java.lang.String => scala.Unit,
+    setRemoteEndpoint: Endpoint => scala.Unit,
+    setShared: scala.Boolean => scala.Unit,
+    setTimestamp: scala.Double => scala.Unit,
     shared: scala.Boolean,
     tags: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     traceId: java.lang.String,
@@ -58,7 +58,7 @@ object Span {
     remoteEndpoint: Endpoint = null,
     timestamp: scala.Int | scala.Double = null
   ): Span = {
-    val __obj = js.Dynamic.literal(addAnnotation = addAnnotation, annotations = annotations, debug = debug, id = id, putTag = putTag, setDebug = setDebug, setDuration = setDuration, setKind = setKind, setLocalEndpoint = setLocalEndpoint, setName = setName, setRemoteEndpoint = setRemoteEndpoint, setShared = setShared, setTimestamp = setTimestamp, shared = shared, tags = tags, traceId = traceId)
+    val __obj = js.Dynamic.literal(addAnnotation = js.Any.fromFunction2(addAnnotation), annotations = annotations, debug = debug, id = id, putTag = js.Any.fromFunction2(putTag), setDebug = js.Any.fromFunction1(setDebug), setDuration = js.Any.fromFunction1(setDuration), setKind = js.Any.fromFunction1(setKind), setLocalEndpoint = js.Any.fromFunction1(setLocalEndpoint), setName = js.Any.fromFunction1(setName), setRemoteEndpoint = js.Any.fromFunction1(setRemoteEndpoint), setShared = js.Any.fromFunction1(setShared), setTimestamp = js.Any.fromFunction1(setTimestamp), shared = shared, tags = tags, traceId = traceId)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind)
     if (localEndpoint != null) __obj.updateDynamic("localEndpoint")(localEndpoint)

@@ -11,8 +11,8 @@ trait CommandA5[R, T, U, V, W, X] extends js.Object {
 
 object CommandA5 {
   @scala.inline
-  def apply[R, T, U, V, W, X](execute: js.Function5[T, U, V, W, X, js.Thenable[R]]): CommandA5[R, T, U, V, W, X] = {
-    val __obj = js.Dynamic.literal(execute = execute)
+  def apply[R, T, U, V, W, X](execute: (T, U, V, W, X) => js.Thenable[R]): CommandA5[R, T, U, V, W, X] = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction5(execute))
   
     __obj.asInstanceOf[CommandA5[R, T, U, V, W, X]]
   }

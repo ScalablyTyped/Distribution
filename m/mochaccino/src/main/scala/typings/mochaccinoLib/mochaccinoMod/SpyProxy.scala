@@ -18,13 +18,13 @@ object SpyProxy {
   @scala.inline
   def apply(
     and: SpyProxy,
-    callFake: js.Function1[js.Function1[/* repeated */ js.Any, _], scala.Unit],
-    callThrough: js.Function0[scala.Unit],
-    getSubject: js.Function0[sinonLib.sinonMod.SinonNs.SinonStub],
-    returnValue: js.Function1[js.Any, scala.Unit],
+    callFake: js.Function1[/* repeated */ js.Any, _] => scala.Unit,
+    callThrough: () => scala.Unit,
+    getSubject: () => sinonLib.sinonMod.SinonNs.SinonStub,
+    returnValue: js.Any => scala.Unit,
     spyProxy: mochaccinoLib.mochaccinoLibNumbers.`true`
   ): SpyProxy = {
-    val __obj = js.Dynamic.literal(and = and, callFake = callFake, callThrough = callThrough, getSubject = getSubject, returnValue = returnValue, spyProxy = spyProxy)
+    val __obj = js.Dynamic.literal(and = and, callFake = js.Any.fromFunction1(callFake), callThrough = js.Any.fromFunction0(callThrough), getSubject = js.Any.fromFunction0(getSubject), returnValue = js.Any.fromFunction1(returnValue), spyProxy = spyProxy)
   
     __obj.asInstanceOf[SpyProxy]
   }

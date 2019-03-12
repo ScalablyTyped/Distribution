@@ -12,6 +12,6 @@ object ^ extends js.Object {
   def format(value: js.Any): java.lang.String = js.native
   def logValidationWarning(name: java.lang.String, message: java.lang.String): scala.Unit = js.native
   def logValidationWarning(name: java.lang.String, message: java.lang.String, commant: java.lang.String): scala.Unit = js.native
-  def validate(config: js.Object, options: jestDashValidateLib.jestDashValidateMod.ValidationOptions): jestDashValidateLib.Anon_HasDeprecationWarnings = js.native
+  def validate(config: js.Object, options: ValidationOptions): jestDashValidateLib.Anon_HasDeprecationWarnings = js.native
 }
 

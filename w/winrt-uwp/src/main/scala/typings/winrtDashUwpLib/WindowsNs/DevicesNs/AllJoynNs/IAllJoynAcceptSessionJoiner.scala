@@ -13,8 +13,8 @@ trait IAllJoynAcceptSessionJoiner extends js.Object {
 
 object IAllJoynAcceptSessionJoiner {
   @scala.inline
-  def apply(accept: js.Function0[scala.Unit]): IAllJoynAcceptSessionJoiner = {
-    val __obj = js.Dynamic.literal(accept = accept)
+  def apply(accept: () => scala.Unit): IAllJoynAcceptSessionJoiner = {
+    val __obj = js.Dynamic.literal(accept = js.Any.fromFunction0(accept))
   
     __obj.asInstanceOf[IAllJoynAcceptSessionJoiner]
   }

@@ -23,12 +23,12 @@ object XTextViewCursorSupplier {
   @scala.inline
   def apply(
     ViewCursor: XTextViewCursor,
-    acquire: js.Function0[scala.Unit],
-    getViewCursor: js.Function0[XTextViewCursor],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getViewCursor: () => XTextViewCursor,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTextViewCursorSupplier = {
-    val __obj = js.Dynamic.literal(ViewCursor = ViewCursor, acquire = acquire, getViewCursor = getViewCursor, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ViewCursor = ViewCursor, acquire = js.Any.fromFunction0(acquire), getViewCursor = js.Any.fromFunction0(getViewCursor), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTextViewCursorSupplier]
   }

@@ -13,13 +13,13 @@ trait FileUpload extends BulkUpload[FileUpload] {
 object FileUpload {
   @scala.inline
   def apply(
-    apply: js.Function0[scala.Unit],
-    forCampaignManagement: js.Function0[FileUpload],
-    forOfflineConversions: js.Function0[FileUpload],
-    preview: js.Function0[scala.Unit],
-    setFileName: js.Function1[java.lang.String, FileUpload]
+    apply: () => scala.Unit,
+    forCampaignManagement: () => FileUpload,
+    forOfflineConversions: () => FileUpload,
+    preview: () => scala.Unit,
+    setFileName: java.lang.String => FileUpload
   ): FileUpload = {
-    val __obj = js.Dynamic.literal(apply = apply, forCampaignManagement = forCampaignManagement, forOfflineConversions = forOfflineConversions, preview = preview, setFileName = setFileName)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction0(apply), forCampaignManagement = js.Any.fromFunction0(forCampaignManagement), forOfflineConversions = js.Any.fromFunction0(forOfflineConversions), preview = js.Any.fromFunction0(preview), setFileName = js.Any.fromFunction1(setFileName))
   
     __obj.asInstanceOf[FileUpload]
   }

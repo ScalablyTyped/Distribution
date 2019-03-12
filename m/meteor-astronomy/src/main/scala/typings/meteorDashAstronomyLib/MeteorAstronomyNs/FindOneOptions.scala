@@ -26,7 +26,7 @@ object FindOneOptions {
     reactive: js.UndefOr[scala.Boolean] = js.undefined,
     skip: scala.Int | scala.Double = null,
     sort: meteorLib.MongoNs.SortSpecifier = null,
-    transform: js.Function1[/* repeated */ js.Any, _] = null
+    transform: /* repeated */ js.Any => _ = null
   ): FindOneOptions = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
@@ -36,7 +36,7 @@ object FindOneOptions {
     if (!js.isUndefined(reactive)) __obj.updateDynamic("reactive")(reactive)
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     __obj.asInstanceOf[FindOneOptions]
   }
 }

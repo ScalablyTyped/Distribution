@@ -17,14 +17,14 @@ trait i18nSettings extends js.Object {
 object i18nSettings {
   @scala.inline
   def apply(
-    DoFn: js.Function1[scala.Double, java.lang.String],
+    DoFn: scala.Double => java.lang.String,
     amPm: js.Tuple2[java.lang.String, java.lang.String],
     dayNames: Days,
     dayNamesShort: Days,
     monthNames: Months,
     monthNamesShort: Months
   ): i18nSettings = {
-    val __obj = js.Dynamic.literal(DoFn = DoFn, amPm = amPm, dayNames = dayNames, dayNamesShort = dayNamesShort, monthNames = monthNames, monthNamesShort = monthNamesShort)
+    val __obj = js.Dynamic.literal(DoFn = js.Any.fromFunction1(DoFn), amPm = amPm, dayNames = dayNames, dayNamesShort = dayNamesShort, monthNames = monthNames, monthNamesShort = monthNamesShort)
   
     __obj.asInstanceOf[i18nSettings]
   }

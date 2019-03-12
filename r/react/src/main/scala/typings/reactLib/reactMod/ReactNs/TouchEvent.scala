@@ -31,23 +31,23 @@ object TouchEvent {
     currentTarget: reactLib.EventTarget with T,
     defaultPrevented: scala.Boolean,
     eventPhase: scala.Double,
-    getModifierState: js.Function1[java.lang.String, scala.Boolean],
-    isDefaultPrevented: js.Function0[scala.Boolean],
-    isPropagationStopped: js.Function0[scala.Boolean],
+    getModifierState: java.lang.String => scala.Boolean,
+    isDefaultPrevented: () => scala.Boolean,
+    isPropagationStopped: () => scala.Boolean,
     isTrusted: scala.Boolean,
     metaKey: scala.Boolean,
     nativeEvent: reactLib.NativeTouchEvent,
-    persist: js.Function0[scala.Unit],
-    preventDefault: js.Function0[scala.Unit],
+    persist: () => scala.Unit,
+    preventDefault: () => scala.Unit,
     shiftKey: scala.Boolean,
-    stopPropagation: js.Function0[scala.Unit],
+    stopPropagation: () => scala.Unit,
     target: reactLib.EventTarget,
     targetTouches: TouchList,
     timeStamp: scala.Double,
     touches: TouchList,
     `type`: java.lang.String
   ): TouchEvent[T] = {
-    val __obj = js.Dynamic.literal(altKey = altKey, bubbles = bubbles, cancelable = cancelable, changedTouches = changedTouches, ctrlKey = ctrlKey, currentTarget = currentTarget, defaultPrevented = defaultPrevented, eventPhase = eventPhase, getModifierState = getModifierState, isDefaultPrevented = isDefaultPrevented, isPropagationStopped = isPropagationStopped, isTrusted = isTrusted, metaKey = metaKey, nativeEvent = nativeEvent, persist = persist, preventDefault = preventDefault, shiftKey = shiftKey, stopPropagation = stopPropagation, target = target, targetTouches = targetTouches, timeStamp = timeStamp, touches = touches)
+    val __obj = js.Dynamic.literal(altKey = altKey, bubbles = bubbles, cancelable = cancelable, changedTouches = changedTouches, ctrlKey = ctrlKey, currentTarget = currentTarget, defaultPrevented = defaultPrevented, eventPhase = eventPhase, getModifierState = js.Any.fromFunction1(getModifierState), isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted, metaKey = metaKey, nativeEvent = nativeEvent, persist = js.Any.fromFunction0(persist), preventDefault = js.Any.fromFunction0(preventDefault), shiftKey = shiftKey, stopPropagation = js.Any.fromFunction0(stopPropagation), target = target, targetTouches = targetTouches, timeStamp = timeStamp, touches = touches)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TouchEvent[T]]
   }

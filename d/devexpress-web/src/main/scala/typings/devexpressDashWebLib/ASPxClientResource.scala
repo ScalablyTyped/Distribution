@@ -41,14 +41,14 @@ trait ASPxClientResource extends js.Object {
 object ASPxClientResource {
   @scala.inline
   def apply(
-    GetCaption: js.Function0[java.lang.String],
-    GetColor: js.Function0[java.lang.String],
-    GetId: js.Function0[java.lang.String],
+    GetCaption: () => java.lang.String,
+    GetColor: () => java.lang.String,
+    GetId: () => java.lang.String,
     caption: java.lang.String,
     color: java.lang.String,
     resourceId: java.lang.String
   ): ASPxClientResource = {
-    val __obj = js.Dynamic.literal(GetCaption = GetCaption, GetColor = GetColor, GetId = GetId, caption = caption, color = color, resourceId = resourceId)
+    val __obj = js.Dynamic.literal(GetCaption = js.Any.fromFunction0(GetCaption), GetColor = js.Any.fromFunction0(GetColor), GetId = js.Any.fromFunction0(GetId), caption = caption, color = color, resourceId = resourceId)
   
     __obj.asInstanceOf[ASPxClientResource]
   }

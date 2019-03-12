@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Request
   extends nodeLib.streamMod.Stream
-     with caselessLib.caselessMod.Httpified {
+     with caselessLib.caselessMod.caselessNs.Httpified {
   var agent: requestLib.requestLibNumbers.`false` | nodeLib.httpMod.Agent | nodeLib.httpsMod.Agent = js.native
   var body: nodeLib.Buffer | js.Array[nodeLib.Buffer] | java.lang.String | js.Array[java.lang.String] | nodeLib.streamMod.Readable = js.native
   var ca: js.UndefOr[
@@ -105,7 +105,7 @@ trait Request
   @JSName("on")
   def on_error(
     event: requestLib.requestLibStrings.error,
-    listener: js.Function1[/* e */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* e */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_pipe(
@@ -138,14 +138,14 @@ trait Request
   def resume(): scala.Unit = js.native
   def toJSON(): RequestAsJSON = js.native
   def write(buffer: java.lang.String): scala.Boolean = js.native
-  def write(buffer: java.lang.String, cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]): scala.Boolean = js.native
+  def write(buffer: java.lang.String, cb: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]): scala.Boolean = js.native
   def write(buffer: nodeLib.Buffer): scala.Boolean = js.native
-  def write(buffer: nodeLib.Buffer, cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]): scala.Boolean = js.native
+  def write(buffer: nodeLib.Buffer, cb: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]): scala.Boolean = js.native
   def write(str: java.lang.String, encoding: java.lang.String): scala.Boolean = js.native
   def write(
     str: java.lang.String,
     encoding: java.lang.String,
-    cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    cb: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): scala.Boolean = js.native
 }
 

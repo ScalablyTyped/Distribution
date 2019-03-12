@@ -14,11 +14,11 @@ trait EventChannel[T] extends js.Object {
 object EventChannel {
   @scala.inline
   def apply[T](
-    close: js.Function0[scala.Unit],
-    flush: js.Function1[js.Function1[/* items */ js.Array[T] | END, scala.Unit], scala.Unit],
-    take: js.Function1[js.Function1[/* message */ T | END, scala.Unit], scala.Unit]
+    close: () => scala.Unit,
+    flush: js.Function1[/* items */ js.Array[T] | END, scala.Unit] => scala.Unit,
+    take: js.Function1[/* message */ T | END, scala.Unit] => scala.Unit
   ): EventChannel[T] = {
-    val __obj = js.Dynamic.literal(close = close, flush = flush, take = take)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), flush = js.Any.fromFunction1(flush), take = js.Any.fromFunction1(take))
   
     __obj.asInstanceOf[EventChannel[T]]
   }

@@ -48,10 +48,7 @@ object ojSelectOneSettableProperties {
     value: js.Any,
     valueOption: atOracleOraclejetLib.Anon_LabelValue,
     describedBy: java.lang.String = null,
-    optionRenderer: js.Function1[
-      /* param0 */ atOracleOraclejetLib.ojselectcomboboxMod.ojSelectNs.OptionContext, 
-      stdLib.Element
-    ] = null,
+    optionRenderer: /* param0 */ atOracleOraclejetLib.ojselectcomboboxMod.ojSelectNs.OptionContext => stdLib.Element = null,
     options: (js.Array[
       atOracleOraclejetLib.ojselectcomboboxMod.ojSelectNs.Option | atOracleOraclejetLib.ojselectcomboboxMod.ojSelectNs.Optgroup
     ]) | (atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D]) = null,
@@ -59,7 +56,7 @@ object ojSelectOneSettableProperties {
   ): ojSelectOneSettableProperties[K, D] = {
     val __obj = js.Dynamic.literal(disabled = disabled, displayOptions = displayOptions, help = help, helpHints = helpHints, labelHint = labelHint, messagesCustom = messagesCustom, minimumResultsForSearch = minimumResultsForSearch, optionsKeys = optionsKeys, pickerAttributes = pickerAttributes, readOnly = readOnly, renderMode = renderMode.asInstanceOf[js.Any], required = required, translations = translations, valid = valid.asInstanceOf[js.Any], value = value, valueOption = valueOption)
     if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
-    if (optionRenderer != null) __obj.updateDynamic("optionRenderer")(optionRenderer)
+    if (optionRenderer != null) __obj.updateDynamic("optionRenderer")(js.Any.fromFunction1(optionRenderer))
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     __obj.asInstanceOf[ojSelectOneSettableProperties[K, D]]

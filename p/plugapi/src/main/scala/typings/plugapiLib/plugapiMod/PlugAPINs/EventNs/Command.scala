@@ -20,18 +20,18 @@ object Command {
     args: js.Array[java.lang.String],
     command: java.lang.String,
     from: plugapiLib.plugapiMod.PlugAPINs.UserNs.User,
-    havePermission: js.Function1[/* repeated */ js.Any, scala.Boolean],
+    havePermission: /* repeated */ js.Any => scala.Boolean,
     id: java.lang.String,
-    isFrom: js.Function1[/* repeated */ js.Any, scala.Boolean],
+    isFrom: /* repeated */ js.Any => scala.Boolean,
     mentions: js.Array[_],
     message: java.lang.String,
     muted: scala.Boolean,
     raw: plugapiLib.plugapiMod.PlugAPINs.RawChatMessage,
-    respond: js.Function1[/* repeated */ js.Any, js.Any],
-    respondTimeout: js.Function1[/* repeated */ js.Any, js.Any],
+    respond: /* repeated */ js.Any => js.Any,
+    respondTimeout: /* repeated */ js.Any => js.Any,
     `type`: java.lang.String
   ): Command = {
-    val __obj = js.Dynamic.literal(args = args, command = command, from = from, havePermission = havePermission, id = id, isFrom = isFrom, mentions = mentions, message = message, muted = muted, raw = raw, respond = respond, respondTimeout = respondTimeout)
+    val __obj = js.Dynamic.literal(args = args, command = command, from = from, havePermission = js.Any.fromFunction1(havePermission), id = id, isFrom = js.Any.fromFunction1(isFrom), mentions = mentions, message = message, muted = muted, raw = raw, respond = js.Any.fromFunction1(respond), respondTimeout = js.Any.fromFunction1(respondTimeout))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Command]
   }

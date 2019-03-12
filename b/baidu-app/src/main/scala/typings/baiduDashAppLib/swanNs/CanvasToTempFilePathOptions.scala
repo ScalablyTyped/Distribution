@@ -30,25 +30,25 @@ object CanvasToTempFilePathOptions {
   @scala.inline
   def apply(
     canvasId: java.lang.String,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    complete: /* res */ js.Any => scala.Unit = null,
     destHeight: scala.Int | scala.Double = null,
     destWidth: scala.Int | scala.Double = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
+    fail: js.Any => scala.Unit = null,
     fileType: java.lang.String = null,
     height: scala.Int | scala.Double = null,
-    success: js.Function1[js.Any, scala.Unit] = null,
+    success: js.Any => scala.Unit = null,
     width: scala.Int | scala.Double = null,
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): CanvasToTempFilePathOptions = {
     val __obj = js.Dynamic.literal(canvasId = canvasId)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (destHeight != null) __obj.updateDynamic("destHeight")(destHeight.asInstanceOf[js.Any])
     if (destWidth != null) __obj.updateDynamic("destWidth")(destWidth.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (fileType != null) __obj.updateDynamic("fileType")(fileType)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

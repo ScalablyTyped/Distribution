@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.TextFrame")
 @js.native
 class TextFrame protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var AutoMargins: scala.Boolean = js.native
   var AutoSize: scala.Boolean = js.native
   val Creator: XlCreator = js.native
@@ -24,8 +24,8 @@ class TextFrame protected () extends js.Object {
   var ReadingOrder: scala.Double = js.native
   var VerticalAlignment: XlVAlign = js.native
   var VerticalOverflow: XlOartVerticalOverflow = js.native
-  def Characters(): Characters = js.native
-  def Characters(Start: scala.Double): Characters = js.native
-  def Characters(Start: scala.Double, Length: scala.Double): Characters = js.native
+  def Characters(): activexDashExcelLib.ExcelNs.Characters = js.native
+  def Characters(Start: scala.Double): activexDashExcelLib.ExcelNs.Characters = js.native
+  def Characters(Start: scala.Double, Length: scala.Double): activexDashExcelLib.ExcelNs.Characters = js.native
 }
 

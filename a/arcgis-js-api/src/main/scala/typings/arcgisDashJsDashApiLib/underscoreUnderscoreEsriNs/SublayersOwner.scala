@@ -27,11 +27,8 @@ trait SublayersOwner extends js.Object {
 
 object SublayersOwner {
   @scala.inline
-  def apply(
-    createServiceSublayers: js.Function0[Collection[Sublayer]],
-    findSublayerById: js.Function1[scala.Double, Sublayer]
-  ): SublayersOwner = {
-    val __obj = js.Dynamic.literal(createServiceSublayers = createServiceSublayers, findSublayerById = findSublayerById)
+  def apply(createServiceSublayers: () => Collection[Sublayer], findSublayerById: scala.Double => Sublayer): SublayersOwner = {
+    val __obj = js.Dynamic.literal(createServiceSublayers = js.Any.fromFunction0(createServiceSublayers), findSublayerById = js.Any.fromFunction1(findSublayerById))
   
     __obj.asInstanceOf[SublayersOwner]
   }

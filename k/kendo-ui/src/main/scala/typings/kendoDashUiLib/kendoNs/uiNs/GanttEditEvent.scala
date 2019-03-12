@@ -13,13 +13,13 @@ trait GanttEditEvent extends GanttEvent {
 object GanttEditEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Gantt,
     container: kendoDashUiLib.JQuery = null,
     task: kendoDashUiLib.kendoNs.dataNs.GanttTask = null
   ): GanttEditEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (container != null) __obj.updateDynamic("container")(container)
     if (task != null) __obj.updateDynamic("task")(task)
     __obj.asInstanceOf[GanttEditEvent]

@@ -20,12 +20,12 @@ trait XDialogProvider
 object XDialogProvider {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createDialog: js.Function1[java.lang.String, XDialog],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createDialog: java.lang.String => XDialog,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDialogProvider = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createDialog = createDialog, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createDialog = js.Any.fromFunction1(createDialog), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDialogProvider]
   }

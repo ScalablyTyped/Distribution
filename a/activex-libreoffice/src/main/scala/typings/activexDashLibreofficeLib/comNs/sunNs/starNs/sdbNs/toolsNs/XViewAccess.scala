@@ -31,21 +31,14 @@ object XViewAccess {
   @scala.inline
   def apply(
     ActiveConnection: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
-    acquire: js.Function0[scala.Unit],
-    alterCommand: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
-      java.lang.String, 
-      scala.Unit
-    ],
-    getCommand: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
-      java.lang.String
-    ],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    alterCommand: (activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, java.lang.String) => scala.Unit,
+    getCommand: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet => java.lang.String,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XViewAccess = {
-    val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection, acquire = acquire, alterCommand = alterCommand, getCommand = getCommand, initialize = initialize, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection, acquire = js.Any.fromFunction0(acquire), alterCommand = js.Any.fromFunction2(alterCommand), getCommand = js.Any.fromFunction1(getCommand), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XViewAccess]
   }

@@ -18,13 +18,13 @@ object INamedACL {
   @scala.inline
   def apply(
     AccessControlList: IAccessControlList,
-    Clone: js.Function0[INamedACL],
+    Clone: () => INamedACL,
     GUID: java.lang.String,
     ID: scala.Double,
     Name: java.lang.String,
     NamedACLType: mfilesLib.MFilesNs.MFNamedACLType
   ): INamedACL = {
-    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, Clone = Clone, GUID = GUID, ID = ID, Name = Name, NamedACLType = NamedACLType)
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, Clone = js.Any.fromFunction0(Clone), GUID = GUID, ID = ID, Name = Name, NamedACLType = NamedACLType)
   
     __obj.asInstanceOf[INamedACL]
   }

@@ -29,7 +29,7 @@ trait XContentProviderManager
     * returns a list of information on all registered content providers.
     * @returns a list information on content providers.
     */
-  def queryContentProviders(): activexDashInteropLib.SafeArray[ContentProviderInfo]
+  def queryContentProviders(): stdLib.SafeArray[ContentProviderInfo]
   /**
     * registers a content provider for a specific URL template.
     * @param Provider the content provider to register.  This may be `NULL` , in which case a later {@link XContentProvider.queryContent()} with an {@link XCo
@@ -44,15 +44,15 @@ trait XContentProviderManager
 object XContentProviderManager {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    deregisterContentProvider: js.Function2[XContentProvider, java.lang.String, scala.Unit],
-    queryContentProvider: js.Function1[java.lang.String, XContentProvider],
-    queryContentProviders: js.Function0[activexDashInteropLib.SafeArray[ContentProviderInfo]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerContentProvider: js.Function3[XContentProvider, java.lang.String, scala.Boolean, XContentProvider],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    deregisterContentProvider: (XContentProvider, java.lang.String) => scala.Unit,
+    queryContentProvider: java.lang.String => XContentProvider,
+    queryContentProviders: () => stdLib.SafeArray[ContentProviderInfo],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerContentProvider: (XContentProvider, java.lang.String, scala.Boolean) => XContentProvider,
+    release: () => scala.Unit
   ): XContentProviderManager = {
-    val __obj = js.Dynamic.literal(acquire = acquire, deregisterContentProvider = deregisterContentProvider, queryContentProvider = queryContentProvider, queryContentProviders = queryContentProviders, queryInterface = queryInterface, registerContentProvider = registerContentProvider, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), deregisterContentProvider = js.Any.fromFunction2(deregisterContentProvider), queryContentProvider = js.Any.fromFunction1(queryContentProvider), queryContentProviders = js.Any.fromFunction0(queryContentProviders), queryInterface = js.Any.fromFunction1(queryInterface), registerContentProvider = js.Any.fromFunction3(registerContentProvider), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XContentProviderManager]
   }

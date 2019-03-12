@@ -38,18 +38,15 @@ trait XSubmission
 object XSubmission {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addSubmissionVetoListener: js.Function1[XSubmissionVetoListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeSubmissionVetoListener: js.Function1[XSubmissionVetoListener, scala.Unit],
-    submit: js.Function0[scala.Unit],
-    submitWithInteraction: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    addSubmissionVetoListener: XSubmissionVetoListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeSubmissionVetoListener: XSubmissionVetoListener => scala.Unit,
+    submit: () => scala.Unit,
+    submitWithInteraction: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler => scala.Unit
   ): XSubmission = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addSubmissionVetoListener = addSubmissionVetoListener, queryInterface = queryInterface, release = release, removeSubmissionVetoListener = removeSubmissionVetoListener, submit = submit, submitWithInteraction = submitWithInteraction)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addSubmissionVetoListener = js.Any.fromFunction1(addSubmissionVetoListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeSubmissionVetoListener = js.Any.fromFunction1(removeSubmissionVetoListener), submit = js.Any.fromFunction0(submit), submitWithInteraction = js.Any.fromFunction1(submitWithInteraction))
   
     __obj.asInstanceOf[XSubmission]
   }

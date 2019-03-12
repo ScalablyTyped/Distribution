@@ -32,12 +32,12 @@ object RasterDataSource {
   def apply(
     constructor: js.Function,
     dataSourceName: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     `type`: java.lang.String,
     workspaceId: java.lang.String
   ): RasterDataSource = {
-    val __obj = js.Dynamic.literal(constructor = constructor, dataSourceName = dataSourceName, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, workspaceId = workspaceId)
+    val __obj = js.Dynamic.literal(constructor = constructor, dataSourceName = dataSourceName, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), workspaceId = workspaceId)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RasterDataSource]
   }

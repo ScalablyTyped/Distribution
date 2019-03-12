@@ -14,16 +14,13 @@ trait ChainableBase[RawValue] extends js.Object {
 object ChainableBase {
   @scala.inline
   def apply[RawValue](
-    exec: js.Function1[
-      java.lang.String, 
-      sugarDashCoreLib.sugarjsNs.SugarDefaultChainable[stdLib.RegExpExecArray | scala.Null]
-    ],
+    exec: java.lang.String => sugarDashCoreLib.sugarjsNs.SugarDefaultChainable[stdLib.RegExpExecArray | scala.Null],
     raw: RawValue,
-    test: js.Function1[java.lang.String, sugarDashCoreLib.sugarjsNs.SugarDefaultChainable[scala.Boolean]],
-    toString: js.Function0[java.lang.String],
-    valueOf: js.Function0[RawValue]
+    test: java.lang.String => sugarDashCoreLib.sugarjsNs.SugarDefaultChainable[scala.Boolean],
+    toString: () => java.lang.String,
+    valueOf: () => RawValue
   ): ChainableBase[RawValue] = {
-    val __obj = js.Dynamic.literal(exec = exec, raw = raw.asInstanceOf[js.Any], test = test, toString = toString, valueOf = valueOf)
+    val __obj = js.Dynamic.literal(exec = js.Any.fromFunction1(exec), raw = raw.asInstanceOf[js.Any], test = js.Any.fromFunction1(test), toString = js.Any.fromFunction0(toString), valueOf = js.Any.fromFunction0(valueOf))
   
     __obj.asInstanceOf[ChainableBase[RawValue]]
   }

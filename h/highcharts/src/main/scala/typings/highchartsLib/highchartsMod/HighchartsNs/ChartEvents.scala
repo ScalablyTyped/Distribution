@@ -112,30 +112,30 @@ trait ChartEvents extends js.Object {
 object ChartEvents {
   @scala.inline
   def apply(
-    addSeries: js.Function1[/* event */ AddSeriesEvent, scala.Boolean | scala.Unit] = null,
-    afterPrint: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
-    beforePrint: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
-    click: js.Function1[/* event */ ChartClickEvent, scala.Unit] = null,
-    drilldown: js.Function1[/* event */ ChartDrilldownEvent, scala.Unit] = null,
-    drillup: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
-    drillupall: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
-    load: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
-    redraw: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
-    render: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
-    selection: js.Function1[/* event */ ChartSelectionEvent, scala.Unit] = null
+    addSeries: /* event */ AddSeriesEvent => scala.Boolean | scala.Unit = null,
+    afterPrint: /* event */ stdLib.Event => scala.Unit = null,
+    beforePrint: /* event */ stdLib.Event => scala.Unit = null,
+    click: /* event */ ChartClickEvent => scala.Unit = null,
+    drilldown: /* event */ ChartDrilldownEvent => scala.Unit = null,
+    drillup: /* event */ stdLib.Event => scala.Unit = null,
+    drillupall: /* event */ stdLib.Event => scala.Unit = null,
+    load: /* event */ stdLib.Event => scala.Unit = null,
+    redraw: /* event */ stdLib.Event => scala.Unit = null,
+    render: /* event */ stdLib.Event => scala.Unit = null,
+    selection: /* event */ ChartSelectionEvent => scala.Unit = null
   ): ChartEvents = {
     val __obj = js.Dynamic.literal()
-    if (addSeries != null) __obj.updateDynamic("addSeries")(addSeries)
-    if (afterPrint != null) __obj.updateDynamic("afterPrint")(afterPrint)
-    if (beforePrint != null) __obj.updateDynamic("beforePrint")(beforePrint)
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown)
-    if (drillup != null) __obj.updateDynamic("drillup")(drillup)
-    if (drillupall != null) __obj.updateDynamic("drillupall")(drillupall)
-    if (load != null) __obj.updateDynamic("load")(load)
-    if (redraw != null) __obj.updateDynamic("redraw")(redraw)
-    if (render != null) __obj.updateDynamic("render")(render)
-    if (selection != null) __obj.updateDynamic("selection")(selection)
+    if (addSeries != null) __obj.updateDynamic("addSeries")(js.Any.fromFunction1(addSeries))
+    if (afterPrint != null) __obj.updateDynamic("afterPrint")(js.Any.fromFunction1(afterPrint))
+    if (beforePrint != null) __obj.updateDynamic("beforePrint")(js.Any.fromFunction1(beforePrint))
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
+    if (drilldown != null) __obj.updateDynamic("drilldown")(js.Any.fromFunction1(drilldown))
+    if (drillup != null) __obj.updateDynamic("drillup")(js.Any.fromFunction1(drillup))
+    if (drillupall != null) __obj.updateDynamic("drillupall")(js.Any.fromFunction1(drillupall))
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
+    if (redraw != null) __obj.updateDynamic("redraw")(js.Any.fromFunction1(redraw))
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
+    if (selection != null) __obj.updateDynamic("selection")(js.Any.fromFunction1(selection))
     __obj.asInstanceOf[ChartEvents]
   }
 }

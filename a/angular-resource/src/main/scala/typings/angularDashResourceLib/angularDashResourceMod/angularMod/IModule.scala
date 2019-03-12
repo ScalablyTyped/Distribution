@@ -17,13 +17,9 @@ trait IModule extends js.Object {
 object IModule {
   @scala.inline
   def apply(
-    factory: js.Function2[
-      java.lang.String, 
-      angularDashResourceLib.angularDashResourceMod.angularMod.resourceNs.IResourceServiceFactoryFunction[_], 
-      IModule
-    ]
+    factory: (java.lang.String, angularDashResourceLib.angularDashResourceMod.angularMod.resourceNs.IResourceServiceFactoryFunction[_]) => IModule
   ): IModule = {
-    val __obj = js.Dynamic.literal(factory = factory)
+    val __obj = js.Dynamic.literal(factory = js.Any.fromFunction2(factory))
   
     __obj.asInstanceOf[IModule]
   }

@@ -37,9 +37,9 @@ object SnapshotMetadata {
   def apply(
     fromCache: scala.Boolean,
     hasPendingWrites: scala.Boolean,
-    isEqual: js.Function1[SnapshotMetadata, scala.Boolean]
+    isEqual: SnapshotMetadata => scala.Boolean
   ): SnapshotMetadata = {
-    val __obj = js.Dynamic.literal(fromCache = fromCache, hasPendingWrites = hasPendingWrites, isEqual = isEqual)
+    val __obj = js.Dynamic.literal(fromCache = fromCache, hasPendingWrites = hasPendingWrites, isEqual = js.Any.fromFunction1(isEqual))
   
     __obj.asInstanceOf[SnapshotMetadata]
   }

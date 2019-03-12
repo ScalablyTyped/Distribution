@@ -146,55 +146,29 @@ object ScriptType {
   @scala.inline
   def apply(
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    fire: js.Function9[
-      /* name */ java.lang.String, 
-      /* arg1 */ js.UndefOr[js.Any], 
-      /* arg2 */ js.UndefOr[js.Any], 
-      /* arg3 */ js.UndefOr[js.Any], 
-      /* arg4 */ js.UndefOr[js.Any], 
-      /* arg5 */ js.UndefOr[js.Any], 
-      /* arg6 */ js.UndefOr[js.Any], 
-      /* arg7 */ js.UndefOr[js.Any], 
-      /* arg8 */ js.UndefOr[js.Any], 
-      _
-    ] = null,
-    hasEvent: js.Function1[/* name */ java.lang.String, scala.Boolean] = null,
-    initialize: js.Function0[scala.Unit] = null,
-    off: js.Function3[
-      /* name */ java.lang.String, 
-      /* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], 
-      /* scope */ js.Any, 
-      _
-    ] = null,
-    on: js.Function3[
-      /* name */ java.lang.String, 
-      /* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], 
-      /* scope */ js.Any, 
-      _
-    ] = null,
-    once: js.Function3[
-      /* name */ java.lang.String, 
-      /* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], 
-      /* scope */ js.Any, 
-      _
-    ] = null,
-    postInitialize: js.Function0[scala.Unit] = null,
-    postUpdate: js.Function0[scala.Unit] = null,
-    swap: js.Function0[scala.Unit] = null,
-    update: js.Function1[/* dt */ scala.Double, scala.Unit] = null
+    fire: (/* name */ java.lang.String, /* arg1 */ js.UndefOr[js.Any], /* arg2 */ js.UndefOr[js.Any], /* arg3 */ js.UndefOr[js.Any], /* arg4 */ js.UndefOr[js.Any], /* arg5 */ js.UndefOr[js.Any], /* arg6 */ js.UndefOr[js.Any], /* arg7 */ js.UndefOr[js.Any], /* arg8 */ js.UndefOr[js.Any]) => _ = null,
+    hasEvent: /* name */ java.lang.String => scala.Boolean = null,
+    initialize: () => scala.Unit = null,
+    off: (/* name */ java.lang.String, /* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], /* scope */ js.Any) => _ = null,
+    on: (/* name */ java.lang.String, /* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], /* scope */ js.Any) => _ = null,
+    once: (/* name */ java.lang.String, /* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], /* scope */ js.Any) => _ = null,
+    postInitialize: () => scala.Unit = null,
+    postUpdate: () => scala.Unit = null,
+    swap: () => scala.Unit = null,
+    update: /* dt */ scala.Double => scala.Unit = null
   ): ScriptType = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (fire != null) __obj.updateDynamic("fire")(fire)
-    if (hasEvent != null) __obj.updateDynamic("hasEvent")(hasEvent)
-    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
-    if (off != null) __obj.updateDynamic("off")(off)
-    if (on != null) __obj.updateDynamic("on")(on)
-    if (once != null) __obj.updateDynamic("once")(once)
-    if (postInitialize != null) __obj.updateDynamic("postInitialize")(postInitialize)
-    if (postUpdate != null) __obj.updateDynamic("postUpdate")(postUpdate)
-    if (swap != null) __obj.updateDynamic("swap")(swap)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (fire != null) __obj.updateDynamic("fire")(js.Any.fromFunction9(fire))
+    if (hasEvent != null) __obj.updateDynamic("hasEvent")(js.Any.fromFunction1(hasEvent))
+    if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction0(initialize))
+    if (off != null) __obj.updateDynamic("off")(js.Any.fromFunction3(off))
+    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction3(on))
+    if (once != null) __obj.updateDynamic("once")(js.Any.fromFunction3(once))
+    if (postInitialize != null) __obj.updateDynamic("postInitialize")(js.Any.fromFunction0(postInitialize))
+    if (postUpdate != null) __obj.updateDynamic("postUpdate")(js.Any.fromFunction0(postUpdate))
+    if (swap != null) __obj.updateDynamic("swap")(js.Any.fromFunction0(swap))
+    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction1(update))
     __obj.asInstanceOf[ScriptType]
   }
 }

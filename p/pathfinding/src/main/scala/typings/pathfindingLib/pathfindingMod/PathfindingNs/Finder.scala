@@ -12,16 +12,9 @@ trait Finder extends js.Object {
 object Finder {
   @scala.inline
   def apply(
-    findPath: js.Function5[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      Grid, 
-      js.Array[js.Array[scala.Double]]
-    ]
+    findPath: (scala.Double, scala.Double, scala.Double, scala.Double, Grid) => js.Array[js.Array[scala.Double]]
   ): Finder = {
-    val __obj = js.Dynamic.literal(findPath = findPath)
+    val __obj = js.Dynamic.literal(findPath = js.Any.fromFunction5(findPath))
   
     __obj.asInstanceOf[Finder]
   }

@@ -13,13 +13,13 @@ trait GridFilterEvent extends GridEvent {
 object GridFilterEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Grid,
     field: java.lang.String = null,
     filter: js.Any = null
   ): GridFilterEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (field != null) __obj.updateDynamic("field")(field)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     __obj.asInstanceOf[GridFilterEvent]

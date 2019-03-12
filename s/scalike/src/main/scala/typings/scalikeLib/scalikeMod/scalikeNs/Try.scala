@@ -29,30 +29,26 @@ trait Try[A] extends js.Object {
 object Try {
   @scala.inline
   def apply[A](
-    apply1: js.Function2[Try[js.Any], js.Function2[/* a */ A, js.Any, js.Any], Try[js.Any]],
-    apply2: js.Function3[Try[js.Any], Try[js.Any], js.Function3[/* a */ A, js.Any, js.Any, js.Any], Try[js.Any]],
-    chain: js.Function1[Try[js.Any], TryBuilder1[A, js.Any]],
-    failed: js.Function0[Try[A]],
-    filter: js.Function1[js.Function1[/* a */ A, scala.Boolean], Try[A]],
-    flatMap: js.Function1[js.Function1[/* a */ A, Try[js.Any]], Try[js.Any]],
-    fold: js.Function2[js.Function1[/* e */ stdLib.Error, js.Any], js.Function1[/* a */ A, js.Any], js.Any],
-    foreach: js.Function1[js.Function1[/* a */ A, scala.Unit], scala.Unit],
-    get: js.Function0[A],
-    getError: js.Function0[stdLib.Error],
-    getOrElse: js.Function1[js.Any, A],
+    apply1: (Try[js.Any], js.Function2[/* a */ A, js.Any, js.Any]) => Try[js.Any],
+    apply2: (Try[js.Any], Try[js.Any], js.Function3[/* a */ A, js.Any, js.Any, js.Any]) => Try[js.Any],
+    chain: Try[js.Any] => TryBuilder1[A, js.Any],
+    failed: () => Try[A],
+    filter: js.Function1[/* a */ A, scala.Boolean] => Try[A],
+    flatMap: js.Function1[/* a */ A, Try[js.Any]] => Try[js.Any],
+    fold: (js.Function1[/* e */ stdLib.Error, js.Any], js.Function1[/* a */ A, js.Any]) => js.Any,
+    foreach: js.Function1[/* a */ A, scala.Unit] => scala.Unit,
+    get: () => A,
+    getError: () => stdLib.Error,
+    getOrElse: js.Any => A,
     isFailure: scala.Boolean,
     isSuccess: scala.Boolean,
-    map: js.Function1[js.Function1[/* a */ A, js.Any], Try[js.Any]],
-    orElse: js.Function1[Try[js.Any], Try[A]],
-    recover: js.Function1[js.Function1[/* e */ stdLib.Error, Optional[Try[js.Any]]], Try[A]],
-    toOptional: js.Function0[Optional[A]],
-    transform: js.Function2[
-      js.Function1[/* a */ A, Try[js.Any]], 
-      js.Function1[/* e */ stdLib.Error, Try[js.Any]], 
-      Try[js.Any]
-    ]
+    map: js.Function1[/* a */ A, js.Any] => Try[js.Any],
+    orElse: Try[js.Any] => Try[A],
+    recover: js.Function1[/* e */ stdLib.Error, Optional[Try[js.Any]]] => Try[A],
+    toOptional: () => Optional[A],
+    transform: (js.Function1[/* a */ A, Try[js.Any]], js.Function1[/* e */ stdLib.Error, Try[js.Any]]) => Try[js.Any]
   ): Try[A] = {
-    val __obj = js.Dynamic.literal(apply1 = apply1, apply2 = apply2, chain = chain, failed = failed, filter = filter, flatMap = flatMap, fold = fold, foreach = foreach, get = get, getError = getError, getOrElse = getOrElse, isFailure = isFailure, isSuccess = isSuccess, map = map, orElse = orElse, recover = recover, toOptional = toOptional, transform = transform)
+    val __obj = js.Dynamic.literal(apply1 = js.Any.fromFunction2(apply1), apply2 = js.Any.fromFunction3(apply2), chain = js.Any.fromFunction1(chain), failed = js.Any.fromFunction0(failed), filter = js.Any.fromFunction1(filter), flatMap = js.Any.fromFunction1(flatMap), fold = js.Any.fromFunction2(fold), foreach = js.Any.fromFunction1(foreach), get = js.Any.fromFunction0(get), getError = js.Any.fromFunction0(getError), getOrElse = js.Any.fromFunction1(getOrElse), isFailure = isFailure, isSuccess = isSuccess, map = js.Any.fromFunction1(map), orElse = js.Any.fromFunction1(orElse), recover = js.Any.fromFunction1(recover), toOptional = js.Any.fromFunction0(toOptional), transform = js.Any.fromFunction2(transform))
   
     __obj.asInstanceOf[Try[A]]
   }

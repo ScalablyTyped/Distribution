@@ -20,7 +20,7 @@ class Editor protected ()
   var formatter: Formatter = js.native
   var id: java.lang.String = js.native
   var initialized: scala.Boolean = js.native
-  var notificationManager: notificationManager = js.native
+  var notificationManager: tinymceLib.tinymceMod.notificationManager = js.native
   var parser: tinymceLib.tinymceMod.htmlNs.DomParser = js.native
   var schema: tinymceLib.tinymceMod.htmlNs.Schema = js.native
   var selection: tinymceLib.tinymceMod.domNs.Selection = js.native
@@ -39,7 +39,8 @@ class Editor protected ()
     callback: js.Function2[/* ui */ scala.Boolean, /* value */ js.Object, scala.Boolean],
     scope: js.Object
   ): scala.Unit = js.native
-  def addContextToolbar(predicate: js.Function0[scala.Boolean], items: java.lang.String): scala.Unit = js.native
+  def addContextToolbar(predicate: java.lang.String, items: java.lang.String): scala.Unit = js.native
+  def addContextToolbar(predicate: js.Function1[/* el */ stdLib.Node, scala.Boolean], items: java.lang.String): scala.Unit = js.native
   def addMenuItem(name: java.lang.String, settings: js.Object): scala.Unit = js.native
   def addQueryStateHandler(name: java.lang.String, callback: js.Function0[scala.Boolean]): scala.Unit = js.native
   def addQueryStateHandler(name: java.lang.String, callback: js.Function0[scala.Boolean], scope: js.Object): scala.Unit = js.native

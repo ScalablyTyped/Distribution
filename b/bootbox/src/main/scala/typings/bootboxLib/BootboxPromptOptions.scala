@@ -24,7 +24,7 @@ trait BootboxPromptOptions
 object BootboxPromptOptions {
   @scala.inline
   def apply(
-    callback: js.Function1[java.lang.String, js.Any],
+    callback: java.lang.String => js.Any,
     title: java.lang.String,
     animate: js.UndefOr[scala.Boolean] = js.undefined,
     backdrop: js.UndefOr[scala.Boolean] = js.undefined,
@@ -38,7 +38,7 @@ object BootboxPromptOptions {
     size: bootboxLib.bootboxLibStrings.small | bootboxLib.bootboxLibStrings.large = null,
     value: java.lang.String = null
   ): BootboxPromptOptions = {
-    val __obj = js.Dynamic.literal(callback = callback, title = title)
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), title = title)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop)
     if (buttons != null) __obj.updateDynamic("buttons")(buttons)

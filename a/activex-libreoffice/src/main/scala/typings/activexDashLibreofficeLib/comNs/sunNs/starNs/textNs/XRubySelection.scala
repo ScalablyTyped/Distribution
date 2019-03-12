@@ -16,7 +16,7 @@ trait XRubySelection
     * @param Automatic if Automatic is set the selection is parsed for words and applied ruby attributes
     * @returns a sequence of ruby properties
     */
-  def getRubyList(Automatic: scala.Boolean): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues]
+  def getRubyList(Automatic: scala.Boolean): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues]
   /**
     * applies the RubyList to the current selection. The number of elements must be equal to the number of elements that are returned by getRubyList.
     * Automatic must be set equally, too.
@@ -30,20 +30,13 @@ trait XRubySelection
 object XRubySelection {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getRubyList: js.Function1[
-      scala.Boolean, 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setRubyList: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues], 
-      scala.Boolean, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    getRubyList: scala.Boolean => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setRubyList: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues], scala.Boolean) => scala.Unit
   ): XRubySelection = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getRubyList = getRubyList, queryInterface = queryInterface, release = release, setRubyList = setRubyList)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getRubyList = js.Any.fromFunction1(getRubyList), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setRubyList = js.Any.fromFunction2(setRubyList))
   
     __obj.asInstanceOf[XRubySelection]
   }

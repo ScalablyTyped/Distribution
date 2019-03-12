@@ -32,12 +32,12 @@ object NotificationTaskNotifySessionParams {
   def apply(
     constructor: js.Function,
     deleteAfter: scala.Boolean,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     sessionid: java.lang.String,
     user: java.lang.String
   ): NotificationTaskNotifySessionParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, deleteAfter = deleteAfter, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, sessionid = sessionid, user = user)
+    val __obj = js.Dynamic.literal(constructor = constructor, deleteAfter = deleteAfter, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sessionid = sessionid, user = user)
   
     __obj.asInstanceOf[NotificationTaskNotifySessionParams]
   }

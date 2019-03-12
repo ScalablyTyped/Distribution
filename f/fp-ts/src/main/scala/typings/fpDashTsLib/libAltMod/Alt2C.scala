@@ -15,18 +15,10 @@ object Alt2C {
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */, L](
     URI: F,
     _L: L,
-    alt: js.Function2[
-      fpDashTsLib.libHKTMod.Type2[F, L, js.Any], 
-      fpDashTsLib.libHKTMod.Type2[F, L, js.Any], 
-      fpDashTsLib.libHKTMod.Type2[F, L, js.Any]
-    ],
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.Type2[F, L, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type2[F, L, js.Any]
-    ]
+    alt: (fpDashTsLib.libHKTMod.Type2[F, L, js.Any], fpDashTsLib.libHKTMod.Type2[F, L, js.Any]) => fpDashTsLib.libHKTMod.Type2[F, L, js.Any],
+    map: (fpDashTsLib.libHKTMod.Type2[F, L, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type2[F, L, js.Any]
   ): Alt2C[F, L] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], alt = alt, map = map)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], alt = js.Any.fromFunction2(alt), map = js.Any.fromFunction2(map))
   
     __obj.asInstanceOf[Alt2C[F, L]]
   }

@@ -19,12 +19,12 @@ object WindowScrollerChildProps {
   def apply(
     height: scala.Double,
     isScrolling: scala.Boolean,
-    onChildScroll: js.Function1[reactDashVirtualizedLib.Anon_ScrollTop, scala.Unit],
+    onChildScroll: reactDashVirtualizedLib.Anon_ScrollTop => scala.Unit,
     scrollLeft: scala.Double,
     scrollTop: scala.Double,
     width: scala.Double
   ): WindowScrollerChildProps = {
-    val __obj = js.Dynamic.literal(height = height, isScrolling = isScrolling, onChildScroll = onChildScroll, scrollLeft = scrollLeft, scrollTop = scrollTop, width = width)
+    val __obj = js.Dynamic.literal(height = height, isScrolling = isScrolling, onChildScroll = js.Any.fromFunction1(onChildScroll), scrollLeft = scrollLeft, scrollTop = scrollTop, width = width)
   
     __obj.asInstanceOf[WindowScrollerChildProps]
   }

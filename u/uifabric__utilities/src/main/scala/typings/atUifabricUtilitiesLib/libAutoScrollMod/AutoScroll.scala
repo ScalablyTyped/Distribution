@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/utilities/lib/AutoScroll", "AutoScroll")
 @js.native
 class AutoScroll protected () extends js.Object {
-  def this(element: reactLib.HTMLElement) = this()
+  def this(element: stdLib.HTMLElement) = this()
   var _events: js.Any = js.native
   var _scrollRect: js.Any = js.native
   var _scrollVelocity: js.Any = js.native

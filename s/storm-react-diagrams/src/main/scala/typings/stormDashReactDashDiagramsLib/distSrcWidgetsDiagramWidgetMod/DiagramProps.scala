@@ -39,18 +39,9 @@ object DiagramProps {
   @scala.inline
   def apply(
     diagramEngine: stormDashReactDashDiagramsLib.distSrcDiagramEngineMod.DiagramEngine,
-    actionStartedFiring: js.Function1[
-      /* action */ stormDashReactDashDiagramsLib.distSrcActionsBaseActionMod.BaseAction, 
-      scala.Boolean
-    ] = null,
-    actionStillFiring: js.Function1[
-      /* action */ stormDashReactDashDiagramsLib.distSrcActionsBaseActionMod.BaseAction, 
-      scala.Unit
-    ] = null,
-    actionStoppedFiring: js.Function1[
-      /* action */ stormDashReactDashDiagramsLib.distSrcActionsBaseActionMod.BaseAction, 
-      scala.Unit
-    ] = null,
+    actionStartedFiring: /* action */ stormDashReactDashDiagramsLib.distSrcActionsBaseActionMod.BaseAction => scala.Boolean = null,
+    actionStillFiring: /* action */ stormDashReactDashDiagramsLib.distSrcActionsBaseActionMod.BaseAction => scala.Unit = null,
+    actionStoppedFiring: /* action */ stormDashReactDashDiagramsLib.distSrcActionsBaseActionMod.BaseAction => scala.Unit = null,
     allowCanvasTranslation: js.UndefOr[scala.Boolean] = js.undefined,
     allowCanvasZoom: js.UndefOr[scala.Boolean] = js.undefined,
     allowLooseLinks: js.UndefOr[scala.Boolean] = js.undefined,
@@ -63,9 +54,9 @@ object DiagramProps {
     smartRouting: js.UndefOr[scala.Boolean] = js.undefined
   ): DiagramProps = {
     val __obj = js.Dynamic.literal(diagramEngine = diagramEngine)
-    if (actionStartedFiring != null) __obj.updateDynamic("actionStartedFiring")(actionStartedFiring)
-    if (actionStillFiring != null) __obj.updateDynamic("actionStillFiring")(actionStillFiring)
-    if (actionStoppedFiring != null) __obj.updateDynamic("actionStoppedFiring")(actionStoppedFiring)
+    if (actionStartedFiring != null) __obj.updateDynamic("actionStartedFiring")(js.Any.fromFunction1(actionStartedFiring))
+    if (actionStillFiring != null) __obj.updateDynamic("actionStillFiring")(js.Any.fromFunction1(actionStillFiring))
+    if (actionStoppedFiring != null) __obj.updateDynamic("actionStoppedFiring")(js.Any.fromFunction1(actionStoppedFiring))
     if (!js.isUndefined(allowCanvasTranslation)) __obj.updateDynamic("allowCanvasTranslation")(allowCanvasTranslation)
     if (!js.isUndefined(allowCanvasZoom)) __obj.updateDynamic("allowCanvasZoom")(allowCanvasZoom)
     if (!js.isUndefined(allowLooseLinks)) __obj.updateDynamic("allowLooseLinks")(allowLooseLinks)

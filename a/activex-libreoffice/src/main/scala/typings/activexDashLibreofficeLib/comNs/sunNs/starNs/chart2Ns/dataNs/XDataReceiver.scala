@@ -24,7 +24,7 @@ trait XDataReceiver
     * This list may be used by the data provider to swap charts out of memory, but still get informed by changes of ranges while the chart is not loaded.
     * @returns a list of used range strings.
     */
-  val UsedRangeRepresentations: activexDashInteropLib.SafeArray[java.lang.String]
+  val UsedRangeRepresentations: stdLib.SafeArray[java.lang.String]
   /**
     * attaches a component that provides data for the document.
     *
@@ -55,7 +55,7 @@ trait XDataReceiver
     * This list may be used by the data provider to swap charts out of memory, but still get informed by changes of ranges while the chart is not loaded.
     * @returns a list of used range strings.
     */
-  def getUsedRangeRepresentations(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getUsedRangeRepresentations(): stdLib.SafeArray[java.lang.String]
   def setArguments(
     aArguments: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   ): scala.Unit
@@ -66,24 +66,18 @@ object XDataReceiver {
   def apply(
     RangeHighlighter: XRangeHighlighter,
     UsedData: XDataSource,
-    UsedRangeRepresentations: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    attachDataProvider: js.Function1[XDataProvider, scala.Unit],
-    attachNumberFormatsSupplier: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XNumberFormatsSupplier, 
-      scala.Unit
-    ],
-    getRangeHighlighter: js.Function0[XRangeHighlighter],
-    getUsedData: js.Function0[XDataSource],
-    getUsedRangeRepresentations: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setArguments: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ]
+    UsedRangeRepresentations: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    attachDataProvider: XDataProvider => scala.Unit,
+    attachNumberFormatsSupplier: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XNumberFormatsSupplier => scala.Unit,
+    getRangeHighlighter: () => XRangeHighlighter,
+    getUsedData: () => XDataSource,
+    getUsedRangeRepresentations: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setArguments: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] => scala.Unit
   ): XDataReceiver = {
-    val __obj = js.Dynamic.literal(RangeHighlighter = RangeHighlighter, UsedData = UsedData, UsedRangeRepresentations = UsedRangeRepresentations, acquire = acquire, attachDataProvider = attachDataProvider, attachNumberFormatsSupplier = attachNumberFormatsSupplier, getRangeHighlighter = getRangeHighlighter, getUsedData = getUsedData, getUsedRangeRepresentations = getUsedRangeRepresentations, queryInterface = queryInterface, release = release, setArguments = setArguments)
+    val __obj = js.Dynamic.literal(RangeHighlighter = RangeHighlighter, UsedData = UsedData, UsedRangeRepresentations = UsedRangeRepresentations, acquire = js.Any.fromFunction0(acquire), attachDataProvider = js.Any.fromFunction1(attachDataProvider), attachNumberFormatsSupplier = js.Any.fromFunction1(attachNumberFormatsSupplier), getRangeHighlighter = js.Any.fromFunction0(getRangeHighlighter), getUsedData = js.Any.fromFunction0(getUsedData), getUsedRangeRepresentations = js.Any.fromFunction0(getUsedRangeRepresentations), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setArguments = js.Any.fromFunction1(setArguments))
   
     __obj.asInstanceOf[XDataReceiver]
   }

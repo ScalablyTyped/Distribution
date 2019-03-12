@@ -17,13 +17,13 @@ object RollupBuild {
   @scala.inline
   def apply(
     cache: RollupCache,
-    generate: js.Function1[OutputOptions, js.Promise[RollupOutput]],
+    generate: OutputOptions => js.Promise[RollupOutput],
     watchFiles: js.Array[java.lang.String],
-    write: js.Function1[OutputOptions, js.Promise[RollupOutput]],
-    getTimings: js.Function0[SerializedTimings] = null
+    write: OutputOptions => js.Promise[RollupOutput],
+    getTimings: () => SerializedTimings = null
   ): RollupBuild = {
-    val __obj = js.Dynamic.literal(cache = cache, generate = generate, watchFiles = watchFiles, write = write)
-    if (getTimings != null) __obj.updateDynamic("getTimings")(getTimings)
+    val __obj = js.Dynamic.literal(cache = cache, generate = js.Any.fromFunction1(generate), watchFiles = watchFiles, write = js.Any.fromFunction1(write))
+    if (getTimings != null) __obj.updateDynamic("getTimings")(js.Any.fromFunction0(getTimings))
     __obj.asInstanceOf[RollupBuild]
   }
 }

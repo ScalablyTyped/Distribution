@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class OLEDBConnection protected () extends js.Object {
   val ADOConnection: activexDashAdodbLib.ADODBNs.Connection = js.native
   var AlwaysUseConnectionFile: scala.Boolean = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var BackgroundQuery: scala.Boolean = js.native
   @JSName("CalculatedMembers")
   val CalculatedMembers_Original: CalculatedMembers = js.native
@@ -27,7 +27,7 @@ class OLEDBConnection protected () extends js.Object {
   var MaxDrillthroughRecords: scala.Double = js.native
   val OLAP: scala.Boolean = js.native
   val Parent: js.Any = js.native
-  val RefreshDate: activexDashInteropLib.VarDate = js.native
+  val RefreshDate: stdLib.VarDate = js.native
   var RefreshOnFileOpen: scala.Boolean = js.native
   var RefreshPeriod: scala.Double = js.native
   val Refreshing: scala.Boolean = js.native

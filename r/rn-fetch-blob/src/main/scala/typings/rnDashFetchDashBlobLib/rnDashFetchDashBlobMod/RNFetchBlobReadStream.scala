@@ -22,18 +22,15 @@ object RNFetchBlobReadStream {
   def apply(
     closed: scala.Boolean,
     encoding: rnDashFetchDashBlobLib.Encoding,
-    onData: js.Function1[
-      js.Function1[/* chunk */ java.lang.String | js.Array[scala.Double], scala.Unit], 
-      scala.Unit
-    ],
-    onEnd: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    onError: js.Function1[js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
-    open: js.Function0[scala.Unit],
+    onData: js.Function1[/* chunk */ java.lang.String | js.Array[scala.Double], scala.Unit] => scala.Unit,
+    onEnd: js.Function0[scala.Unit] => scala.Unit,
+    onError: js.Function1[/* err */ js.Any, scala.Unit] => scala.Unit,
+    open: () => scala.Unit,
     path: java.lang.String,
     tick: scala.Double,
     bufferSize: scala.Int | scala.Double = null
   ): RNFetchBlobReadStream = {
-    val __obj = js.Dynamic.literal(closed = closed, encoding = encoding, onData = onData, onEnd = onEnd, onError = onError, open = open, path = path, tick = tick)
+    val __obj = js.Dynamic.literal(closed = closed, encoding = encoding, onData = js.Any.fromFunction1(onData), onEnd = js.Any.fromFunction1(onEnd), onError = js.Any.fromFunction1(onError), open = js.Any.fromFunction0(open), path = path, tick = tick)
     if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[RNFetchBlobReadStream]
   }

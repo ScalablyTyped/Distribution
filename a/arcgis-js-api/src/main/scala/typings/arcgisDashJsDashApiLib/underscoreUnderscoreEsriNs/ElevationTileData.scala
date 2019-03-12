@@ -43,15 +43,15 @@ object ElevationTileData {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     height: scala.Double,
     maxZError: scala.Double,
     noDataValue: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     values: js.Array[scala.Double],
     width: scala.Double
   ): ElevationTileData = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, height = height, maxZError = maxZError, noDataValue = noDataValue, propertyIsEnumerable = propertyIsEnumerable, values = values, width = width)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), height = height, maxZError = maxZError, noDataValue = noDataValue, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), values = values, width = width)
   
     __obj.asInstanceOf[ElevationTileData]
   }

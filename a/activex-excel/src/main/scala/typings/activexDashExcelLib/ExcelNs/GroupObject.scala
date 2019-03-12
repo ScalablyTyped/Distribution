@@ -9,22 +9,22 @@ import scala.scalajs.js.annotation._
 @js.native
 class GroupObject protected () extends js.Object {
   var AddIndent: scala.Boolean = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var ArrowHeadLength: js.Any = js.native
   var ArrowHeadStyle: js.Any = js.native
   var ArrowHeadWidth: js.Any = js.native
   var AutoSize: scala.Boolean = js.native
-  val Border: Border = js.native
+  val Border: activexDashExcelLib.ExcelNs.Border = js.native
   @JSName("BottomRightCell")
   val BottomRightCell_Original: Range = js.native
   val Creator: XlCreator = js.native
   var Enabled: scala.Boolean = js.native
   var `Excel.GroupObject_typekey`: GroupObject = js.native
-  val Font: Font = js.native
+  val Font: activexDashExcelLib.ExcelNs.Font = js.native
   var Height: scala.Double = js.native
   var HorizontalAlignment: js.Any = js.native
   val Index: scala.Double = js.native
-  val Interior: Interior = js.native
+  val Interior: activexDashExcelLib.ExcelNs.Interior = js.native
   var Left: scala.Double = js.native
   var Locked: scala.Boolean = js.native
   var Name: java.lang.String = js.native

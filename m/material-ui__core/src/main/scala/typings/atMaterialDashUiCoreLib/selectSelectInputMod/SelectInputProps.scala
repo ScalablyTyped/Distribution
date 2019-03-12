@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 trait SelectInputProps extends js.Object {
   var IconComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var MenuProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.menuMenuMod.MenuProps]] = js.undefined
-  var SelectDisplayProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement]] = js.undefined
+  var SelectDisplayProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement]] = js.undefined
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var autoWidth: scala.Boolean
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var inputRef: js.UndefOr[
     js.Function1[
-      /* ref */ reactLib.HTMLSelectElement | atMaterialDashUiCoreLib.Anon_NodeValue, 
+      /* ref */ stdLib.HTMLSelectElement | atMaterialDashUiCoreLib.Anon_NodeValue, 
       scala.Unit
     ]
   ] = js.undefined
@@ -24,7 +24,7 @@ trait SelectInputProps extends js.Object {
   var onBlur: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[_]] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLSelectElement], 
+      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLSelectElement], 
       /* child */ reactLib.reactMod.ReactNs.ReactNode, 
       scala.Unit
     ]
@@ -60,29 +60,19 @@ object SelectInputProps {
     value: java.lang.String | scala.Double | scala.Boolean | (js.Array[java.lang.String | scala.Double | scala.Boolean]),
     IconComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
     MenuProps: stdLib.Partial[atMaterialDashUiCoreLib.menuMenuMod.MenuProps] = null,
-    SelectDisplayProps: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    SelectDisplayProps: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    inputRef: js.Function1[
-      /* ref */ reactLib.HTMLSelectElement | atMaterialDashUiCoreLib.Anon_NodeValue, 
-      scala.Unit
-    ] = null,
+    inputRef: /* ref */ stdLib.HTMLSelectElement | atMaterialDashUiCoreLib.Anon_NodeValue => scala.Unit = null,
     name: java.lang.String = null,
     onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[_] = null,
-    onChange: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLSelectElement], 
-      /* child */ reactLib.reactMod.ReactNs.ReactNode, 
-      scala.Unit
-    ] = null,
-    onClose: js.Function1[/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], scala.Unit] = null,
+    onChange: (/* event */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLSelectElement], /* child */ reactLib.reactMod.ReactNs.ReactNode) => scala.Unit = null,
+    onClose: /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object] => scala.Unit = null,
     onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[_] = null,
-    onOpen: js.Function1[/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], scala.Unit] = null,
+    onOpen: /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object] => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
-    renderValue: js.Function1[
-      /* value */ java.lang.String | scala.Double | scala.Boolean | (js.Array[java.lang.String | scala.Double | scala.Boolean]), 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    renderValue: /* value */ java.lang.String | scala.Double | scala.Boolean | (js.Array[java.lang.String | scala.Double | scala.Boolean]) => reactLib.reactMod.ReactNs.ReactNode = null,
     tabIndex: scala.Int | scala.Double = null,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.outlined | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.filled = null
   ): SelectInputProps = {
@@ -92,16 +82,16 @@ object SelectInputProps {
     if (SelectDisplayProps != null) __obj.updateDynamic("SelectDisplayProps")(SelectDisplayProps)
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef)
+    if (inputRef != null) __obj.updateDynamic("inputRef")(js.Any.fromFunction1(inputRef))
     if (name != null) __obj.updateDynamic("name")(name)
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (renderValue != null) __obj.updateDynamic("renderValue")(renderValue)
+    if (renderValue != null) __obj.updateDynamic("renderValue")(js.Any.fromFunction1(renderValue))
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectInputProps]

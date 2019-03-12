@@ -18,22 +18,18 @@ object XOfficeDatabaseDocument {
   @scala.inline
   def apply(
     DataSource: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XDataSource,
-    DocumentSubStoragesNames: activexDashInteropLib.SafeArray[java.lang.String],
+    DocumentSubStoragesNames: stdLib.SafeArray[java.lang.String],
     FormDocuments: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
     ReportDocuments: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
-    acquire: js.Function0[scala.Unit],
-    getDocumentSubStorage: js.Function2[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage
-    ],
-    getDocumentSubStoragesNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getFormDocuments: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    getReportDocuments: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDocumentSubStorage: (java.lang.String, scala.Double) => activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage,
+    getDocumentSubStoragesNames: () => stdLib.SafeArray[java.lang.String],
+    getFormDocuments: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    getReportDocuments: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XOfficeDatabaseDocument = {
-    val __obj = js.Dynamic.literal(DataSource = DataSource, DocumentSubStoragesNames = DocumentSubStoragesNames, FormDocuments = FormDocuments, ReportDocuments = ReportDocuments, acquire = acquire, getDocumentSubStorage = getDocumentSubStorage, getDocumentSubStoragesNames = getDocumentSubStoragesNames, getFormDocuments = getFormDocuments, getReportDocuments = getReportDocuments, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(DataSource = DataSource, DocumentSubStoragesNames = DocumentSubStoragesNames, FormDocuments = FormDocuments, ReportDocuments = ReportDocuments, acquire = js.Any.fromFunction0(acquire), getDocumentSubStorage = js.Any.fromFunction2(getDocumentSubStorage), getDocumentSubStoragesNames = js.Any.fromFunction0(getDocumentSubStoragesNames), getFormDocuments = js.Any.fromFunction0(getFormDocuments), getReportDocuments = js.Any.fromFunction0(getReportDocuments), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XOfficeDatabaseDocument]
   }

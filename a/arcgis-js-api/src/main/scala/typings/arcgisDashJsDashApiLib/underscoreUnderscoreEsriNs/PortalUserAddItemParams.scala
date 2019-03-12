@@ -31,13 +31,13 @@ object PortalUserAddItemParams {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     item: PortalItem,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     data: java.lang.String | js.Any = null,
     folder: PortalFolder = null
   ): PortalUserAddItemParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, item = item, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), item = item, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (folder != null) __obj.updateDynamic("folder")(folder)
     __obj.asInstanceOf[PortalUserAddItemParams]

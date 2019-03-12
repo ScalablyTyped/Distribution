@@ -8,20 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("storybook-readme", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def doc(readme: java.lang.String): storybookDashReadmeLib.storybookDashReadmeMod.RenderFunction = js.native
-  def withDocs(custom: storybookDashReadmeLib.storybookDashReadmeMod.CustomComponents): js.Function1[
-    /* readme */ storybookDashReadmeLib.storybookDashReadmeMod.Readme, 
-    storybookDashReadmeLib.storybookDashReadmeMod.HOCPattern
-  ] = js.native
-  def withDocs(readme: storybookDashReadmeLib.storybookDashReadmeMod.Readme): storybookDashReadmeLib.storybookDashReadmeMod.DecoratorPattern = js.native
-  def withDocs(
-    readme: storybookDashReadmeLib.storybookDashReadmeMod.Readme,
-    story: storybookDashReadmeLib.storybookDashReadmeMod.RenderFunction
-  ): storybookDashReadmeLib.storybookDashReadmeMod.RenderFunction = js.native
-  def withReadme(readme: storybookDashReadmeLib.storybookDashReadmeMod.Readme): storybookDashReadmeLib.storybookDashReadmeMod.DecoratorPattern = js.native
-  def withReadme(
-    readme: storybookDashReadmeLib.storybookDashReadmeMod.Readme,
-    story: storybookDashReadmeLib.storybookDashReadmeMod.RenderFunction
-  ): storybookDashReadmeLib.storybookDashReadmeMod.RenderFunction = js.native
+  def doc(readme: java.lang.String): RenderFunction = js.native
+  def withDocs(custom: CustomComponents): js.Function1[/* readme */ Readme, HOCPattern] = js.native
+  def withDocs(readme: Readme): DecoratorPattern = js.native
+  def withDocs(readme: Readme, story: RenderFunction): RenderFunction = js.native
+  def withReadme(readme: Readme): DecoratorPattern = js.native
+  def withReadme(readme: Readme, story: RenderFunction): RenderFunction = js.native
 }
 

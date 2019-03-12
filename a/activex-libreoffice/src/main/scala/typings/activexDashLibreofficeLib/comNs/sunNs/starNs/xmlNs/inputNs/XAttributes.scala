@@ -74,20 +74,20 @@ object XAttributes {
   @scala.inline
   def apply(
     Length: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getIndexByQName: js.Function1[java.lang.String, scala.Double],
-    getIndexByUidName: js.Function2[scala.Double, java.lang.String, scala.Double],
-    getLength: js.Function0[scala.Double],
-    getLocalNameByIndex: js.Function1[scala.Double, java.lang.String],
-    getQNameByIndex: js.Function1[scala.Double, java.lang.String],
-    getTypeByIndex: js.Function1[scala.Double, java.lang.String],
-    getUidByIndex: js.Function1[scala.Double, scala.Double],
-    getValueByIndex: js.Function1[scala.Double, java.lang.String],
-    getValueByUidName: js.Function2[scala.Double, java.lang.String, java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getIndexByQName: java.lang.String => scala.Double,
+    getIndexByUidName: (scala.Double, java.lang.String) => scala.Double,
+    getLength: () => scala.Double,
+    getLocalNameByIndex: scala.Double => java.lang.String,
+    getQNameByIndex: scala.Double => java.lang.String,
+    getTypeByIndex: scala.Double => java.lang.String,
+    getUidByIndex: scala.Double => scala.Double,
+    getValueByIndex: scala.Double => java.lang.String,
+    getValueByUidName: (scala.Double, java.lang.String) => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAttributes = {
-    val __obj = js.Dynamic.literal(Length = Length, acquire = acquire, getIndexByQName = getIndexByQName, getIndexByUidName = getIndexByUidName, getLength = getLength, getLocalNameByIndex = getLocalNameByIndex, getQNameByIndex = getQNameByIndex, getTypeByIndex = getTypeByIndex, getUidByIndex = getUidByIndex, getValueByIndex = getValueByIndex, getValueByUidName = getValueByUidName, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Length = Length, acquire = js.Any.fromFunction0(acquire), getIndexByQName = js.Any.fromFunction1(getIndexByQName), getIndexByUidName = js.Any.fromFunction2(getIndexByUidName), getLength = js.Any.fromFunction0(getLength), getLocalNameByIndex = js.Any.fromFunction1(getLocalNameByIndex), getQNameByIndex = js.Any.fromFunction1(getQNameByIndex), getTypeByIndex = js.Any.fromFunction1(getTypeByIndex), getUidByIndex = js.Any.fromFunction1(getUidByIndex), getValueByIndex = js.Any.fromFunction1(getValueByIndex), getValueByUidName = js.Any.fromFunction2(getValueByUidName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAttributes]
   }

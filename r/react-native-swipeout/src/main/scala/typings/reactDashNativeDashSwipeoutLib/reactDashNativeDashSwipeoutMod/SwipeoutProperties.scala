@@ -47,23 +47,13 @@ object SwipeoutProperties {
     close: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     left: js.Array[SwipeoutButtonProperties] = null,
-    onClose: js.Function3[
-      /* sectionId */ scala.Double, 
-      /* rowId */ scala.Double, 
-      /* direction */ java.lang.String, 
-      scala.Unit
-    ] = null,
-    onOpen: js.Function3[
-      /* sectionId */ scala.Double, 
-      /* rowId */ scala.Double, 
-      /* direction */ java.lang.String, 
-      scala.Unit
-    ] = null,
+    onClose: (/* sectionId */ scala.Double, /* rowId */ scala.Double, /* direction */ java.lang.String) => scala.Unit = null,
+    onOpen: (/* sectionId */ scala.Double, /* rowId */ scala.Double, /* direction */ java.lang.String) => scala.Unit = null,
     openLeft: js.UndefOr[scala.Boolean] = js.undefined,
     openRight: js.UndefOr[scala.Boolean] = js.undefined,
     right: js.Array[SwipeoutButtonProperties] = null,
     rowId: scala.Int | scala.Double = null,
-    scroll: js.Function1[/* scrollEnabled */ scala.Boolean, scala.Unit] = null,
+    scroll: /* scrollEnabled */ scala.Boolean => scala.Unit = null,
     sectionId: scala.Int | scala.Double = null,
     sensitivity: scala.Int | scala.Double = null,
     style: js.Object = null
@@ -75,13 +65,13 @@ object SwipeoutProperties {
     if (!js.isUndefined(close)) __obj.updateDynamic("close")(close)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (left != null) __obj.updateDynamic("left")(left)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction3(onClose))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction3(onOpen))
     if (!js.isUndefined(openLeft)) __obj.updateDynamic("openLeft")(openLeft)
     if (!js.isUndefined(openRight)) __obj.updateDynamic("openRight")(openRight)
     if (right != null) __obj.updateDynamic("right")(right)
     if (rowId != null) __obj.updateDynamic("rowId")(rowId.asInstanceOf[js.Any])
-    if (scroll != null) __obj.updateDynamic("scroll")(scroll)
+    if (scroll != null) __obj.updateDynamic("scroll")(js.Any.fromFunction1(scroll))
     if (sectionId != null) __obj.updateDynamic("sectionId")(sectionId.asInstanceOf[js.Any])
     if (sensitivity != null) __obj.updateDynamic("sensitivity")(sensitivity.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)

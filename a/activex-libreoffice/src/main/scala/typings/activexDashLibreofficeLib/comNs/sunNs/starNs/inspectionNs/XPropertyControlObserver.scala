@@ -25,11 +25,8 @@ trait XPropertyControlObserver extends js.Object {
 
 object XPropertyControlObserver {
   @scala.inline
-  def apply(
-    focusGained: js.Function1[XPropertyControl, scala.Unit],
-    valueChanged: js.Function1[XPropertyControl, scala.Unit]
-  ): XPropertyControlObserver = {
-    val __obj = js.Dynamic.literal(focusGained = focusGained, valueChanged = valueChanged)
+  def apply(focusGained: XPropertyControl => scala.Unit, valueChanged: XPropertyControl => scala.Unit): XPropertyControlObserver = {
+    val __obj = js.Dynamic.literal(focusGained = js.Any.fromFunction1(focusGained), valueChanged = js.Any.fromFunction1(valueChanged))
   
     __obj.asInstanceOf[XPropertyControlObserver]
   }

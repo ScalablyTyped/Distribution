@@ -22,24 +22,12 @@ trait RegionInstanceGroupsResource extends js.Object {
 object RegionInstanceGroupsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroup]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RegionInstanceGroupList]
-    ],
-    listInstances: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsFilterInstanceGroupKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RegionInstanceGroupsListInstances]
-    ],
-    setNamedPorts: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    get: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroup],
+    list: gapiDotClientDotComputeLib.Anon_AltFieldsFilter => gapiDotClientLib.gapiNs.clientNs.Request[RegionInstanceGroupList],
+    listInstances: gapiDotClientDotComputeLib.Anon_AltFieldsFilterInstanceGroupKey => gapiDotClientLib.gapiNs.clientNs.Request[RegionInstanceGroupsListInstances],
+    setNamedPorts: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): RegionInstanceGroupsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list, listInstances = listInstances, setNamedPorts = setNamedPorts)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), listInstances = js.Any.fromFunction1(listInstances), setNamedPorts = js.Any.fromFunction1(setNamedPorts))
   
     __obj.asInstanceOf[RegionInstanceGroupsResource]
   }

@@ -59,30 +59,18 @@ trait XSheetOutline
 object XSheetOutline {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    autoOutline: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit],
-    clearOutline: js.Function0[scala.Unit],
-    group: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableOrientation, 
-      scala.Unit
-    ],
-    hideDetail: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    showDetail: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit],
-    showLevel: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableOrientation, 
-      scala.Unit
-    ],
-    ungroup: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableOrientation, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    autoOutline: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress => scala.Unit,
+    clearOutline: () => scala.Unit,
+    group: (activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableOrientation) => scala.Unit,
+    hideDetail: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    showDetail: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress => scala.Unit,
+    showLevel: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableOrientation) => scala.Unit,
+    ungroup: (activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableOrientation) => scala.Unit
   ): XSheetOutline = {
-    val __obj = js.Dynamic.literal(acquire = acquire, autoOutline = autoOutline, clearOutline = clearOutline, group = group, hideDetail = hideDetail, queryInterface = queryInterface, release = release, showDetail = showDetail, showLevel = showLevel, ungroup = ungroup)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), autoOutline = js.Any.fromFunction1(autoOutline), clearOutline = js.Any.fromFunction0(clearOutline), group = js.Any.fromFunction2(group), hideDetail = js.Any.fromFunction1(hideDetail), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), showDetail = js.Any.fromFunction1(showDetail), showLevel = js.Any.fromFunction2(showLevel), ungroup = js.Any.fromFunction2(ungroup))
   
     __obj.asInstanceOf[XSheetOutline]
   }

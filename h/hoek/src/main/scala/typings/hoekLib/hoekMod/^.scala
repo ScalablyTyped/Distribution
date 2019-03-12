@@ -23,7 +23,7 @@ object ^ extends js.Object {
   def clone[T](obj: T): T = js.native
   def cloneWithShallow(obj: js.Any, keys: js.Array[java.lang.String]): js.Any = js.native
   def contain(ref: js.Any, values: js.Any): scala.Boolean = js.native
-  def contain(ref: js.Any, values: js.Any, options: hoekLib.hoekMod.ContainOptions): scala.Boolean = js.native
+  def contain(ref: js.Any, values: js.Any, options: ContainOptions): scala.Boolean = js.native
   def deepEqual[T](b: T, a: T): T = js.native
   def deepEqual[T](b: T, a: T, options: js.Any): T = js.native
   def displayStack(): js.Array[java.lang.String] = js.native
@@ -44,13 +44,13 @@ object ^ extends js.Object {
   def nextTick(fn: js.Function0[scala.Unit]): js.Function0[scala.Unit] = js.native
   def once(fn: js.Function0[scala.Unit]): js.Function0[scala.Unit] = js.native
   def reach(obj: js.Any, chain: js.Any): js.Any = js.native
-  def reach(obj: js.Any, chain: js.Any, options: hoekLib.hoekMod.ReachOptions): js.Any = js.native
+  def reach(obj: js.Any, chain: js.Any, options: ReachOptions): js.Any = js.native
   def reachTemplate(obj: js.Any, template: java.lang.String): js.Any = js.native
-  def reachTemplate(obj: js.Any, template: java.lang.String, options: hoekLib.hoekMod.ReachOptions): js.Any = js.native
+  def reachTemplate(obj: js.Any, template: java.lang.String, options: ReachOptions): js.Any = js.native
   def shallow(obj: js.Any): js.Any = js.native
   def stringify(obj: js.Any): java.lang.String = js.native
   def transform(obj: js.Any, transform: js.Any): js.Any = js.native
-  def transform(obj: js.Any, transform: js.Any, options: hoekLib.hoekMod.ReachOptions): js.Any = js.native
+  def transform(obj: js.Any, transform: js.Any, options: ReachOptions): js.Any = js.native
   def unique[T](array: js.Array[T]): js.Array[T] = js.native
   def unique[T](array: js.Array[T], key: java.lang.String): js.Array[T] = js.native
   def uniqueFilename(path: java.lang.String): java.lang.String = js.native

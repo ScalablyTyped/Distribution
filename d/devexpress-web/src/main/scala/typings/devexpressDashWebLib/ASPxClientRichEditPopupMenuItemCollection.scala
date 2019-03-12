@@ -53,16 +53,16 @@ trait ASPxClientRichEditPopupMenuItemCollection extends js.Object {
 object ASPxClientRichEditPopupMenuItemCollection {
   @scala.inline
   def apply(
-    Add: js.Function1[ASPxClientRichEditPopupMenuItem, scala.Unit],
-    Clear: js.Function0[scala.Unit],
-    Get: js.Function1[scala.Double, ASPxClientRichEditPopupMenuItem],
-    GetByName: js.Function1[java.lang.String, ASPxClientRichEditPopupMenuItem],
-    GetCount: js.Function0[scala.Double],
-    Insert: js.Function2[scala.Double, ASPxClientRichEditPopupMenuItem, scala.Unit],
-    Remove: js.Function1[scala.Double, scala.Unit],
-    RemoveByName: js.Function1[java.lang.String, scala.Unit]
+    Add: ASPxClientRichEditPopupMenuItem => scala.Unit,
+    Clear: () => scala.Unit,
+    Get: scala.Double => ASPxClientRichEditPopupMenuItem,
+    GetByName: java.lang.String => ASPxClientRichEditPopupMenuItem,
+    GetCount: () => scala.Double,
+    Insert: (scala.Double, ASPxClientRichEditPopupMenuItem) => scala.Unit,
+    Remove: scala.Double => scala.Unit,
+    RemoveByName: java.lang.String => scala.Unit
   ): ASPxClientRichEditPopupMenuItemCollection = {
-    val __obj = js.Dynamic.literal(Add = Add, Clear = Clear, Get = Get, GetByName = GetByName, GetCount = GetCount, Insert = Insert, Remove = Remove, RemoveByName = RemoveByName)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction1(Add), Clear = js.Any.fromFunction0(Clear), Get = js.Any.fromFunction1(Get), GetByName = js.Any.fromFunction1(GetByName), GetCount = js.Any.fromFunction0(GetCount), Insert = js.Any.fromFunction2(Insert), Remove = js.Any.fromFunction1(Remove), RemoveByName = js.Any.fromFunction1(RemoveByName))
   
     __obj.asInstanceOf[ASPxClientRichEditPopupMenuItemCollection]
   }

@@ -67,20 +67,20 @@ trait DateRangeAggregation extends Aggregation {
 object DateRangeAggregation {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    agg: js.Function1[Aggregation, DateRangeAggregation],
-    aggregation: js.Function1[Aggregation, DateRangeAggregation],
-    field: js.Function1[java.lang.String, DateRangeAggregation],
-    format: js.Function1[java.lang.String, DateRangeAggregation],
-    keyed: js.Function1[scala.Boolean, DateRangeAggregation],
-    lang: js.Function1[java.lang.String, DateRangeAggregation],
-    params: js.Function1[js.Object, DateRangeAggregation],
-    range: js.Function3[java.lang.String, java.lang.String, java.lang.String, DateRangeAggregation],
-    script: js.Function1[java.lang.String, DateRangeAggregation],
-    scriptValuesSorted: js.Function1[scala.Boolean, DateRangeAggregation],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    agg: Aggregation => DateRangeAggregation,
+    aggregation: Aggregation => DateRangeAggregation,
+    field: java.lang.String => DateRangeAggregation,
+    format: java.lang.String => DateRangeAggregation,
+    keyed: scala.Boolean => DateRangeAggregation,
+    lang: java.lang.String => DateRangeAggregation,
+    params: js.Object => DateRangeAggregation,
+    range: (java.lang.String, java.lang.String, java.lang.String) => DateRangeAggregation,
+    script: java.lang.String => DateRangeAggregation,
+    scriptValuesSorted: scala.Boolean => DateRangeAggregation,
+    toJSON: () => js.Any
   ): DateRangeAggregation = {
-    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, field = field, format = format, keyed = keyed, lang = lang, params = params, range = range, script = script, scriptValuesSorted = scriptValuesSorted, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), agg = js.Any.fromFunction1(agg), aggregation = js.Any.fromFunction1(aggregation), field = js.Any.fromFunction1(field), format = js.Any.fromFunction1(format), keyed = js.Any.fromFunction1(keyed), lang = js.Any.fromFunction1(lang), params = js.Any.fromFunction1(params), range = js.Any.fromFunction3(range), script = js.Any.fromFunction1(script), scriptValuesSorted = js.Any.fromFunction1(scriptValuesSorted), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[DateRangeAggregation]
   }

@@ -12,11 +12,8 @@ trait Ord[A]
 
 object Ord {
   @scala.inline
-  def apply[A](
-    compare: js.Function2[A, A, fpDashTsLib.libOrderingMod.Ordering],
-    equals: js.Function2[A, A, scala.Boolean]
-  ): Ord[A] = {
-    val __obj = js.Dynamic.literal(compare = compare, equals = equals)
+  def apply[A](compare: (A, A) => fpDashTsLib.libOrderingMod.Ordering, equals: (A, A) => scala.Boolean): Ord[A] = {
+    val __obj = js.Dynamic.literal(compare = js.Any.fromFunction2(compare), equals = js.Any.fromFunction2(equals))
   
     __obj.asInstanceOf[Ord[A]]
   }

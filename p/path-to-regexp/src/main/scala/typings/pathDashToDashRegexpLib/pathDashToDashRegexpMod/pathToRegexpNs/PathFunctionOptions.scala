@@ -14,9 +14,9 @@ trait PathFunctionOptions extends js.Object {
 
 object PathFunctionOptions {
   @scala.inline
-  def apply(encode: js.Function2[/* value */ java.lang.String, /* token */ Key, java.lang.String] = null): PathFunctionOptions = {
+  def apply(encode: (/* value */ java.lang.String, /* token */ Key) => java.lang.String = null): PathFunctionOptions = {
     val __obj = js.Dynamic.literal()
-    if (encode != null) __obj.updateDynamic("encode")(encode)
+    if (encode != null) __obj.updateDynamic("encode")(js.Any.fromFunction2(encode))
     __obj.asInstanceOf[PathFunctionOptions]
   }
 }

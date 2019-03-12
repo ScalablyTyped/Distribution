@@ -18,7 +18,7 @@ object WatchOptions {
     includeEmptyDirs: js.UndefOr[scala.Boolean] = js.undefined,
     initialCopy: js.UndefOr[scala.Boolean] = js.undefined,
     preserve: js.UndefOr[scala.Boolean] = js.undefined,
-    transform: js.Function1[/* filepath */ java.lang.String, js.Array[nodeLib.streamMod.Transform]] = null,
+    transform: /* filepath */ java.lang.String => js.Array[nodeLib.streamMod.Transform] = null,
     update: js.UndefOr[scala.Boolean] = js.undefined
   ): WatchOptions = {
     val __obj = js.Dynamic.literal()
@@ -27,7 +27,7 @@ object WatchOptions {
     if (!js.isUndefined(includeEmptyDirs)) __obj.updateDynamic("includeEmptyDirs")(includeEmptyDirs)
     if (!js.isUndefined(initialCopy)) __obj.updateDynamic("initialCopy")(initialCopy)
     if (!js.isUndefined(preserve)) __obj.updateDynamic("preserve")(preserve)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     if (!js.isUndefined(update)) __obj.updateDynamic("update")(update)
     __obj.asInstanceOf[WatchOptions]
   }

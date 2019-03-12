@@ -54,23 +54,20 @@ trait IterableChanges[V] extends js.Object {
 object IterableChanges {
   @scala.inline
   def apply[V](
-    forEachAddedItem: js.Function1[js.Function1[/* record */ IterableChangeRecord[V], scala.Unit], scala.Unit],
-    forEachIdentityChange: js.Function1[js.Function1[/* record */ IterableChangeRecord[V], scala.Unit], scala.Unit],
-    forEachItem: js.Function1[js.Function1[/* record */ IterableChangeRecord[V], scala.Unit], scala.Unit],
-    forEachMovedItem: js.Function1[js.Function1[/* record */ IterableChangeRecord[V], scala.Unit], scala.Unit],
-    forEachOperation: js.Function1[
-      js.Function3[
-        /* record */ IterableChangeRecord[V], 
-        /* previousIndex */ scala.Double | scala.Null, 
-        /* currentIndex */ scala.Double | scala.Null, 
-        scala.Unit
-      ], 
+    forEachAddedItem: js.Function1[/* record */ IterableChangeRecord[V], scala.Unit] => scala.Unit,
+    forEachIdentityChange: js.Function1[/* record */ IterableChangeRecord[V], scala.Unit] => scala.Unit,
+    forEachItem: js.Function1[/* record */ IterableChangeRecord[V], scala.Unit] => scala.Unit,
+    forEachMovedItem: js.Function1[/* record */ IterableChangeRecord[V], scala.Unit] => scala.Unit,
+    forEachOperation: js.Function3[
+      /* record */ IterableChangeRecord[V], 
+      /* previousIndex */ scala.Double | scala.Null, 
+      /* currentIndex */ scala.Double | scala.Null, 
       scala.Unit
-    ],
-    forEachPreviousItem: js.Function1[js.Function1[/* record */ IterableChangeRecord[V], scala.Unit], scala.Unit],
-    forEachRemovedItem: js.Function1[js.Function1[/* record */ IterableChangeRecord[V], scala.Unit], scala.Unit]
+    ] => scala.Unit,
+    forEachPreviousItem: js.Function1[/* record */ IterableChangeRecord[V], scala.Unit] => scala.Unit,
+    forEachRemovedItem: js.Function1[/* record */ IterableChangeRecord[V], scala.Unit] => scala.Unit
   ): IterableChanges[V] = {
-    val __obj = js.Dynamic.literal(forEachAddedItem = forEachAddedItem, forEachIdentityChange = forEachIdentityChange, forEachItem = forEachItem, forEachMovedItem = forEachMovedItem, forEachOperation = forEachOperation, forEachPreviousItem = forEachPreviousItem, forEachRemovedItem = forEachRemovedItem)
+    val __obj = js.Dynamic.literal(forEachAddedItem = js.Any.fromFunction1(forEachAddedItem), forEachIdentityChange = js.Any.fromFunction1(forEachIdentityChange), forEachItem = js.Any.fromFunction1(forEachItem), forEachMovedItem = js.Any.fromFunction1(forEachMovedItem), forEachOperation = js.Any.fromFunction1(forEachOperation), forEachPreviousItem = js.Any.fromFunction1(forEachPreviousItem), forEachRemovedItem = js.Any.fromFunction1(forEachRemovedItem))
   
     __obj.asInstanceOf[IterableChanges[V]]
   }

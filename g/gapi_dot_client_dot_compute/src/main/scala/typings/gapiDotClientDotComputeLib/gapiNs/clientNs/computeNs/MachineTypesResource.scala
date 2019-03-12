@@ -17,20 +17,11 @@ trait MachineTypesResource extends js.Object {
 object MachineTypesResource {
   @scala.inline
   def apply(
-    aggregatedList: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[MachineTypeAggregatedList]
-    ],
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyMachineType, 
-      gapiDotClientLib.gapiNs.clientNs.Request[MachineType]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[MachineTypeList]
-    ]
+    aggregatedList: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[MachineTypeAggregatedList],
+    get: gapiDotClientDotComputeLib.Anon_AltFieldsKeyMachineType => gapiDotClientLib.gapiNs.clientNs.Request[MachineType],
+    list: gapiDotClientDotComputeLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[MachineTypeList]
   ): MachineTypesResource = {
-    val __obj = js.Dynamic.literal(aggregatedList = aggregatedList, get = get, list = list)
+    val __obj = js.Dynamic.literal(aggregatedList = js.Any.fromFunction1(aggregatedList), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[MachineTypesResource]
   }

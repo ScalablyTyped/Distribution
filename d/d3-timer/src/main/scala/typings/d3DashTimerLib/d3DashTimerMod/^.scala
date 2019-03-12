@@ -8,28 +8,28 @@ import scala.scalajs.js.annotation._
 @JSImport("d3-timer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def interval(callback: js.Function1[/* elapsed */ scala.Double, scala.Unit]): d3DashTimerLib.d3DashTimerMod.Timer = js.native
-  def interval(callback: js.Function1[/* elapsed */ scala.Double, scala.Unit], delay: scala.Double): d3DashTimerLib.d3DashTimerMod.Timer = js.native
+  def interval(callback: js.Function1[/* elapsed */ scala.Double, scala.Unit]): Timer = js.native
+  def interval(callback: js.Function1[/* elapsed */ scala.Double, scala.Unit], delay: scala.Double): Timer = js.native
   def interval(
     callback: js.Function1[/* elapsed */ scala.Double, scala.Unit],
     delay: scala.Double,
     time: scala.Double
-  ): d3DashTimerLib.d3DashTimerMod.Timer = js.native
+  ): Timer = js.native
   def now(): scala.Double = js.native
-  def timeout(callback: js.Function1[/* elapsed */ scala.Double, scala.Unit]): d3DashTimerLib.d3DashTimerMod.Timer = js.native
-  def timeout(callback: js.Function1[/* elapsed */ scala.Double, scala.Unit], delay: scala.Double): d3DashTimerLib.d3DashTimerMod.Timer = js.native
+  def timeout(callback: js.Function1[/* elapsed */ scala.Double, scala.Unit]): Timer = js.native
+  def timeout(callback: js.Function1[/* elapsed */ scala.Double, scala.Unit], delay: scala.Double): Timer = js.native
   def timeout(
     callback: js.Function1[/* elapsed */ scala.Double, scala.Unit],
     delay: scala.Double,
     time: scala.Double
-  ): d3DashTimerLib.d3DashTimerMod.Timer = js.native
-  def timer(callback: js.Function1[/* elapsed */ scala.Double, scala.Unit]): d3DashTimerLib.d3DashTimerMod.Timer = js.native
-  def timer(callback: js.Function1[/* elapsed */ scala.Double, scala.Unit], delay: scala.Double): d3DashTimerLib.d3DashTimerMod.Timer = js.native
+  ): Timer = js.native
+  def timer(callback: js.Function1[/* elapsed */ scala.Double, scala.Unit]): Timer = js.native
+  def timer(callback: js.Function1[/* elapsed */ scala.Double, scala.Unit], delay: scala.Double): Timer = js.native
   def timer(
     callback: js.Function1[/* elapsed */ scala.Double, scala.Unit],
     delay: scala.Double,
     time: scala.Double
-  ): d3DashTimerLib.d3DashTimerMod.Timer = js.native
+  ): Timer = js.native
   def timerFlush(): scala.Unit = js.native
 }
 

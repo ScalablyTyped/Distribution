@@ -31,13 +31,13 @@ object EachAlwaysResult {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     promise: arcgisDashJsDashApiLib.IPromise[_],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     error: js.Any = null,
     value: js.Any = null
   ): EachAlwaysResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, promise = promise, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), promise = promise, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (error != null) __obj.updateDynamic("error")(error)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[EachAlwaysResult]

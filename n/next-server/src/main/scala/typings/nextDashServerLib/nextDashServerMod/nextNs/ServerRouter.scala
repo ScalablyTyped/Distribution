@@ -18,17 +18,12 @@ trait ServerRouter extends js.Object {
 object ServerRouter {
   @scala.inline
   def apply(
-    add: js.Function1[ServerRoute[nextDashServerLib.routerMod.DefaultQuery], scala.Unit],
-    `match`: js.Function3[
-      nodeLib.httpMod.IncomingMessage, 
-      nodeLib.httpMod.ServerResponse, 
-      nextDashServerLib.routerMod.UrlLike, 
-      js.UndefOr[js.Function0[js.Promise[scala.Unit]]]
-    ],
+    add: ServerRoute[nextDashServerLib.routerMod.DefaultQuery] => scala.Unit,
+    `match`: (nodeLib.httpMod.IncomingMessage, nodeLib.httpMod.ServerResponse, nextDashServerLib.routerMod.UrlLike) => js.UndefOr[js.Function0[js.Promise[scala.Unit]]],
     routes: js.Array[ServerRoute[nextDashServerLib.routerMod.DefaultQuery]]
   ): ServerRouter = {
-    val __obj = js.Dynamic.literal(add = add, routes = routes)
-    __obj.updateDynamic("match")(`match`)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), routes = routes)
+    __obj.updateDynamic("match")(js.Any.fromFunction3(`match`))
     __obj.asInstanceOf[ServerRouter]
   }
 }

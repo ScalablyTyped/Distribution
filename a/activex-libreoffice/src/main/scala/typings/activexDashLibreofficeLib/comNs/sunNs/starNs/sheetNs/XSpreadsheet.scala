@@ -24,27 +24,17 @@ object XSpreadsheet {
   @scala.inline
   def apply(
     Spreadsheet: XSpreadsheet,
-    acquire: js.Function0[scala.Unit],
-    createCursor: js.Function0[XSheetCellCursor],
-    createCursorByRange: js.Function1[XSheetCellRange, XSheetCellCursor],
-    getCellByPosition: js.Function2[
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCell
-    ],
-    getCellRangeByName: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange],
-    getCellRangeByPosition: js.Function4[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange
-    ],
-    getSpreadsheet: js.Function0[XSpreadsheet],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createCursor: () => XSheetCellCursor,
+    createCursorByRange: XSheetCellRange => XSheetCellCursor,
+    getCellByPosition: (scala.Double, scala.Double) => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCell,
+    getCellRangeByName: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange,
+    getCellRangeByPosition: (scala.Double, scala.Double, scala.Double, scala.Double) => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange,
+    getSpreadsheet: () => XSpreadsheet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSpreadsheet = {
-    val __obj = js.Dynamic.literal(Spreadsheet = Spreadsheet, acquire = acquire, createCursor = createCursor, createCursorByRange = createCursorByRange, getCellByPosition = getCellByPosition, getCellRangeByName = getCellRangeByName, getCellRangeByPosition = getCellRangeByPosition, getSpreadsheet = getSpreadsheet, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Spreadsheet = Spreadsheet, acquire = js.Any.fromFunction0(acquire), createCursor = js.Any.fromFunction0(createCursor), createCursorByRange = js.Any.fromFunction1(createCursorByRange), getCellByPosition = js.Any.fromFunction2(getCellByPosition), getCellRangeByName = js.Any.fromFunction1(getCellRangeByName), getCellRangeByPosition = js.Any.fromFunction4(getCellRangeByPosition), getSpreadsheet = js.Any.fromFunction0(getSpreadsheet), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSpreadsheet]
   }

@@ -24,7 +24,7 @@ class namespaced protected () extends MulterGridfsStorage {
   override def _removeFile(
     req: expressLib.expressMod.eNs.Request,
     file: multerLib.multerMod.Global.ExpressNs.MulterNs.File,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
 }
 

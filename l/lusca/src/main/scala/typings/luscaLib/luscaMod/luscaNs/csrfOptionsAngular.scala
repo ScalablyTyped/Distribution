@@ -18,13 +18,13 @@ object csrfOptionsAngular {
   def apply(
     angular: luscaLib.luscaLibNumbers.`true`,
     cookie: java.lang.String | luscaLib.Anon_Options = null,
-    impl: js.Function0[_] = null,
+    impl: () => _ = null,
     key: java.lang.String = null,
     secret: java.lang.String = null
   ): csrfOptionsAngular = {
     val __obj = js.Dynamic.literal(angular = angular)
     if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
-    if (impl != null) __obj.updateDynamic("impl")(impl)
+    if (impl != null) __obj.updateDynamic("impl")(js.Any.fromFunction0(impl))
     if (key != null) __obj.updateDynamic("key")(key)
     if (secret != null) __obj.updateDynamic("secret")(secret)
     __obj.asInstanceOf[csrfOptionsAngular]

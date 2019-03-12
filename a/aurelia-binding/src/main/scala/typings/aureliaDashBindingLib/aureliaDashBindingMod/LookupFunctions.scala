@@ -12,11 +12,8 @@ trait LookupFunctions extends js.Object {
 
 object LookupFunctions {
   @scala.inline
-  def apply(
-    bindingBehaviors: js.Function1[java.lang.String, js.Any],
-    valueConverters: js.Function1[java.lang.String, js.Any]
-  ): LookupFunctions = {
-    val __obj = js.Dynamic.literal(bindingBehaviors = bindingBehaviors, valueConverters = valueConverters)
+  def apply(bindingBehaviors: java.lang.String => js.Any, valueConverters: java.lang.String => js.Any): LookupFunctions = {
+    val __obj = js.Dynamic.literal(bindingBehaviors = js.Any.fromFunction1(bindingBehaviors), valueConverters = js.Any.fromFunction1(valueConverters))
   
     __obj.asInstanceOf[LookupFunctions]
   }

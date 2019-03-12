@@ -11,7 +11,8 @@ trait AccountInstance extends PostableResource {
   var applications: ApplicationResource = js.native
   var authorizedConnectApps: AuthorizedConnectAppResource = js.native
   // Mixed-in resources
-  var availablePhoneNumbers: AvailablePhoneNumberResource = js.native
+  @JSName("availablePhoneNumbers")
+  var availablePhoneNumbers_Original: AvailablePhoneNumberResource = js.native
   var calls: CallResource = js.native
   var conferences: ConferenceResource = js.native
   var connectApps: ConnectAppResource = js.native
@@ -31,6 +32,8 @@ trait AccountInstance extends PostableResource {
   @JSName("update")
   var update_Original: RestMethod = js.native
   var usage: UsageIntermediary = js.native
+  // Mixed-in resources
+  def availablePhoneNumbers(resourceSid: java.lang.String): AvailablePhoneNumberInstance = js.native
   def put(args: js.Any): qLib.qMod.QNs.Promise[_] = js.native
   def put(args: js.Any, callback: RequestCallback): qLib.qMod.QNs.Promise[_] = js.native
   def put(callback: RequestCallback): qLib.qMod.QNs.Promise[_] = js.native

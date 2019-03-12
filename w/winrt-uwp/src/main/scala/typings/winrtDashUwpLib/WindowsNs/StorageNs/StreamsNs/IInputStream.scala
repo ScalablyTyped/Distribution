@@ -21,15 +21,10 @@ trait IInputStream
 object IInputStream {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
-    readAsync: js.Function3[
-      IBuffer, 
-      scala.Double, 
-      InputStreamOptions, 
-      winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[IBuffer, scala.Double]
-    ]
+    close: () => scala.Unit,
+    readAsync: (IBuffer, scala.Double, InputStreamOptions) => winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[IBuffer, scala.Double]
   ): IInputStream = {
-    val __obj = js.Dynamic.literal(close = close, readAsync = readAsync)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), readAsync = js.Any.fromFunction3(readAsync))
   
     __obj.asInstanceOf[IInputStream]
   }

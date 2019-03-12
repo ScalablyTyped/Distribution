@@ -58,32 +58,14 @@ trait CryptoKeyVersionsResource extends js.Object {
 object CryptoKeyVersionsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion]
-    ],
-    destroy: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion]
-    ],
-    get: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion]
-    ],
-    list: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListCryptoKeyVersionsResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion]
-    ],
-    restore: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion]
-    ]
+    create: gapiDotClientDotCloudkmsLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion],
+    destroy: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion],
+    get: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion],
+    list: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ListCryptoKeyVersionsResponse],
+    patch: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion],
+    restore: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion]
   ): CryptoKeyVersionsResource = {
-    val __obj = js.Dynamic.literal(create = create, destroy = destroy, get = get, list = list, patch = patch, restore = restore)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), destroy = js.Any.fromFunction1(destroy), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), restore = js.Any.fromFunction1(restore))
   
     __obj.asInstanceOf[CryptoKeyVersionsResource]
   }

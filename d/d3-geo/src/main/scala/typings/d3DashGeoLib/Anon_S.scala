@@ -11,10 +11,8 @@ trait Anon_S[T /* <: d3DashGeoLib.d3DashGeoMod.GeoTransformPrototype */] extends
 
 object Anon_S {
   @scala.inline
-  def apply[T /* <: d3DashGeoLib.d3DashGeoMod.GeoTransformPrototype */](
-    stream: js.Function1[d3DashGeoLib.d3DashGeoMod.GeoStream, T with d3DashGeoLib.d3DashGeoMod.GeoStream]
-  ): Anon_S[T] = {
-    val __obj = js.Dynamic.literal(stream = stream)
+  def apply[T /* <: d3DashGeoLib.d3DashGeoMod.GeoTransformPrototype */](stream: d3DashGeoLib.d3DashGeoMod.GeoStream => T with d3DashGeoLib.d3DashGeoMod.GeoStream): Anon_S[T] = {
+    val __obj = js.Dynamic.literal(stream = js.Any.fromFunction1(stream))
   
     __obj.asInstanceOf[Anon_S[T]]
   }

@@ -21,18 +21,18 @@ trait StatementVisitor extends js.Object {
 object StatementVisitor {
   @scala.inline
   def apply(
-    visitCommentStmt: js.Function2[CommentStmt, js.Any, js.Any],
-    visitDeclareClassStmt: js.Function2[ClassStmt, js.Any, js.Any],
-    visitDeclareFunctionStmt: js.Function2[DeclareFunctionStmt, js.Any, js.Any],
-    visitDeclareVarStmt: js.Function2[DeclareVarStmt, js.Any, js.Any],
-    visitExpressionStmt: js.Function2[ExpressionStatement, js.Any, js.Any],
-    visitIfStmt: js.Function2[IfStmt, js.Any, js.Any],
-    visitJSDocCommentStmt: js.Function2[JSDocCommentStmt, js.Any, js.Any],
-    visitReturnStmt: js.Function2[ReturnStatement, js.Any, js.Any],
-    visitThrowStmt: js.Function2[ThrowStmt, js.Any, js.Any],
-    visitTryCatchStmt: js.Function2[TryCatchStmt, js.Any, js.Any]
+    visitCommentStmt: (CommentStmt, js.Any) => js.Any,
+    visitDeclareClassStmt: (ClassStmt, js.Any) => js.Any,
+    visitDeclareFunctionStmt: (DeclareFunctionStmt, js.Any) => js.Any,
+    visitDeclareVarStmt: (DeclareVarStmt, js.Any) => js.Any,
+    visitExpressionStmt: (ExpressionStatement, js.Any) => js.Any,
+    visitIfStmt: (IfStmt, js.Any) => js.Any,
+    visitJSDocCommentStmt: (JSDocCommentStmt, js.Any) => js.Any,
+    visitReturnStmt: (ReturnStatement, js.Any) => js.Any,
+    visitThrowStmt: (ThrowStmt, js.Any) => js.Any,
+    visitTryCatchStmt: (TryCatchStmt, js.Any) => js.Any
   ): StatementVisitor = {
-    val __obj = js.Dynamic.literal(visitCommentStmt = visitCommentStmt, visitDeclareClassStmt = visitDeclareClassStmt, visitDeclareFunctionStmt = visitDeclareFunctionStmt, visitDeclareVarStmt = visitDeclareVarStmt, visitExpressionStmt = visitExpressionStmt, visitIfStmt = visitIfStmt, visitJSDocCommentStmt = visitJSDocCommentStmt, visitReturnStmt = visitReturnStmt, visitThrowStmt = visitThrowStmt, visitTryCatchStmt = visitTryCatchStmt)
+    val __obj = js.Dynamic.literal(visitCommentStmt = js.Any.fromFunction2(visitCommentStmt), visitDeclareClassStmt = js.Any.fromFunction2(visitDeclareClassStmt), visitDeclareFunctionStmt = js.Any.fromFunction2(visitDeclareFunctionStmt), visitDeclareVarStmt = js.Any.fromFunction2(visitDeclareVarStmt), visitExpressionStmt = js.Any.fromFunction2(visitExpressionStmt), visitIfStmt = js.Any.fromFunction2(visitIfStmt), visitJSDocCommentStmt = js.Any.fromFunction2(visitJSDocCommentStmt), visitReturnStmt = js.Any.fromFunction2(visitReturnStmt), visitThrowStmt = js.Any.fromFunction2(visitThrowStmt), visitTryCatchStmt = js.Any.fromFunction2(visitTryCatchStmt))
   
     __obj.asInstanceOf[StatementVisitor]
   }

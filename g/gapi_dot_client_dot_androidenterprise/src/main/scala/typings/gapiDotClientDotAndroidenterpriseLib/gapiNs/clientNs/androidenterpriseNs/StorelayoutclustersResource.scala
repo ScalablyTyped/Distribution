@@ -23,32 +23,14 @@ trait StorelayoutclustersResource extends js.Object {
 object StorelayoutclustersResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltClusterId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltClusterId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StoreCluster]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtokenPageId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StoreCluster]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtokenPageId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StoreLayoutClustersListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltClusterId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StoreCluster]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltClusterId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StoreCluster]
-    ]
+    delete: gapiDotClientDotAndroidenterpriseLib.Anon_AltClusterId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotAndroidenterpriseLib.Anon_AltClusterId => gapiDotClientLib.gapiNs.clientNs.Request[StoreCluster],
+    insert: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtokenPageId => gapiDotClientLib.gapiNs.clientNs.Request[StoreCluster],
+    list: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtokenPageId => gapiDotClientLib.gapiNs.clientNs.Request[StoreLayoutClustersListResponse],
+    patch: gapiDotClientDotAndroidenterpriseLib.Anon_AltClusterId => gapiDotClientLib.gapiNs.clientNs.Request[StoreCluster],
+    update: gapiDotClientDotAndroidenterpriseLib.Anon_AltClusterId => gapiDotClientLib.gapiNs.clientNs.Request[StoreCluster]
   ): StorelayoutclustersResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[StorelayoutclustersResource]
   }

@@ -19,11 +19,11 @@ object MochaPhantomJsWindowOptions {
     ended: scala.Boolean,
     env: js.Any,
     failures: scala.Double,
-    mochaPhantomJS: js.Function0[MochaPhantomJsWindowOptions],
-    run: js.Function0[scala.Unit],
+    mochaPhantomJS: () => MochaPhantomJsWindowOptions,
+    run: () => scala.Unit,
     started: scala.Boolean
   ): MochaPhantomJsWindowOptions = {
-    val __obj = js.Dynamic.literal(ended = ended, env = env, failures = failures, mochaPhantomJS = mochaPhantomJS, run = run, started = started)
+    val __obj = js.Dynamic.literal(ended = ended, env = env, failures = failures, mochaPhantomJS = js.Any.fromFunction0(mochaPhantomJS), run = js.Any.fromFunction0(run), started = started)
   
     __obj.asInstanceOf[MochaPhantomJsWindowOptions]
   }

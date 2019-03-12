@@ -54,25 +54,13 @@ object ExecutionsResource {
   @scala.inline
   def apply(
     clusters: ClustersResource,
-    create: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Execution]
-    ],
-    get: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_AltExecutionId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Execution]
-    ],
-    list: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_AltFieldsHistoryId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListExecutionsResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Execution]
-    ],
+    create: gapiDotClientDotToolresultsLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Execution],
+    get: gapiDotClientDotToolresultsLib.Anon_AltExecutionId => gapiDotClientLib.gapiNs.clientNs.Request[Execution],
+    list: gapiDotClientDotToolresultsLib.Anon_AltFieldsHistoryId => gapiDotClientLib.gapiNs.clientNs.Request[ListExecutionsResponse],
+    patch: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Execution],
     steps: StepsResource
   ): ExecutionsResource = {
-    val __obj = js.Dynamic.literal(clusters = clusters, create = create, get = get, list = list, patch = patch, steps = steps)
+    val __obj = js.Dynamic.literal(clusters = clusters, create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), steps = steps)
   
     __obj.asInstanceOf[ExecutionsResource]
   }

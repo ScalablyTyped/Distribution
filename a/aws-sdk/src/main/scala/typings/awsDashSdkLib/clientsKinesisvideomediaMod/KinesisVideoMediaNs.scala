@@ -19,7 +19,7 @@ object KinesisVideoMediaNs extends js.Object {
     /**
       * Identifies the starting chunk to get from the specified stream. 
       */
-    var StartSelector: StartSelector
+    var StartSelector: awsDashSdkLib.clientsKinesisvideomediaMod.KinesisVideoMediaNs.StartSelector
     /**
       * The ARN of the stream from where you want to get the media content. If you don't specify the streamARN, you must specify the streamName.
       */
@@ -53,7 +53,7 @@ object KinesisVideoMediaNs extends js.Object {
     /**
       * Identifies the fragment on the Kinesis video stream where you want to start getting the data from.   NOW - Start with the latest chunk on the stream.   EARLIEST - Start with earliest available chunk on the stream.   FRAGMENT_NUMBER - Start with the chunk containing the specific fragment. You must also specify the StartFragmentNumber.   PRODUCER_TIMESTAMP or SERVER_TIMESTAMP - Start with the chunk containing a fragment with the specified producer or server timestamp. You specify the timestamp by adding StartTimestamp.    CONTINUATION_TOKEN - Read using the specified continuation token.     If you choose the NOW, EARLIEST, or CONTINUATION_TOKEN as the startSelectorType, you don't provide any additional information in the startSelector. 
       */
-    var StartSelectorType: StartSelectorType
+    var StartSelectorType: awsDashSdkLib.clientsKinesisvideomediaMod.KinesisVideoMediaNs.StartSelectorType
     /**
       * A timestamp value. This value is required if you choose the PRODUCER_TIMESTAMP or the SERVER_TIMESTAMP as the startSelectorType. The GetMedia API then starts with the chunk containing the fragment that has the specified timestamp.
       */

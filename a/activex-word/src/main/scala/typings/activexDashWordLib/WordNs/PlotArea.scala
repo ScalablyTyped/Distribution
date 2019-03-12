@@ -18,7 +18,7 @@ class PlotArea protected () extends js.Object {
   var InsideLeft: scala.Double = js.native
   var InsideTop: scala.Double = js.native
   var InsideWidth: scala.Double = js.native
-  val Interior: Interior = js.native
+  val Interior: activexDashWordLib.WordNs.Interior = js.native
   var Left: scala.Double = js.native
   val Name: java.lang.String = js.native
   val Parent: js.Any = js.native

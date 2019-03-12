@@ -29,63 +29,27 @@ object EllipseProps {
     fillRule: FillRule = null,
     id: java.lang.String = null,
     mask: java.lang.String = null,
-    onLongPress: js.Function1[/* event */ js.Any, _] = null,
-    onMoveShouldSetResponder: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
-    onMoveShouldSetResponderCapture: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
-    onPress: js.Function1[/* event */ js.Any, _] = null,
-    onPressIn: js.Function1[/* event */ js.Any, _] = null,
-    onPressOut: js.Function1[/* event */ js.Any, _] = null,
-    onResponderEnd: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderGrant: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderMove: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderReject: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderRelease: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderStart: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderTerminate: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderTerminationRequest: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
-    onStartShouldSetResponder: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
-    onStartShouldSetResponderCapture: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
+    onLongPress: /* event */ js.Any => _ = null,
+    onMoveShouldSetResponder: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onMoveShouldSetResponderCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onPress: /* event */ js.Any => _ = null,
+    onPressIn: /* event */ js.Any => _ = null,
+    onPressOut: /* event */ js.Any => _ = null,
+    onResponderEnd: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderGrant: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderMove: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderReject: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderRelease: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderStart: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderTerminate: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderTerminationRequest: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onStartShouldSetResponder: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onStartShouldSetResponderCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
     opacity: reactDashNativeDashSvgLib.NumberProp = null,
     origin: reactDashNativeDashSvgLib.NumberProp = null,
     originX: reactDashNativeDashSvgLib.NumberProp = null,
     originY: reactDashNativeDashSvgLib.NumberProp = null,
-    pointerEvents: js.Function1[/* event */ js.Any, _] = null,
+    pointerEvents: reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.`box-none` | reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.none | reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.`box-only` | reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.auto = null,
     rotate: reactDashNativeDashSvgLib.NumberProp = null,
     rotation: reactDashNativeDashSvgLib.NumberProp = null,
     rx: reactDashNativeDashSvgLib.NumberProp = null,
@@ -108,6 +72,7 @@ object EllipseProps {
     translate: reactDashNativeDashSvgLib.NumberProp = null,
     translateX: reactDashNativeDashSvgLib.NumberProp = null,
     translateY: reactDashNativeDashSvgLib.NumberProp = null,
+    vectorEffect: reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.none | reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.`non-scaling-stroke` | reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.nonScalingStroke | reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.default | reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.inherit | reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.uri = null,
     x: reactDashNativeDashSvgLib.NumberProp = null,
     y: reactDashNativeDashSvgLib.NumberProp = null
   ): EllipseProps = {
@@ -125,27 +90,27 @@ object EllipseProps {
     if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule)
     if (id != null) __obj.updateDynamic("id")(id)
     if (mask != null) __obj.updateDynamic("mask")(mask)
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
-    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(onMoveShouldSetResponder)
-    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(onMoveShouldSetResponderCapture)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
-    if (onPressIn != null) __obj.updateDynamic("onPressIn")(onPressIn)
-    if (onPressOut != null) __obj.updateDynamic("onPressOut")(onPressOut)
-    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(onResponderEnd)
-    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(onResponderGrant)
-    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(onResponderMove)
-    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(onResponderReject)
-    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(onResponderRelease)
-    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(onResponderStart)
-    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(onResponderTerminate)
-    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(onResponderTerminationRequest)
-    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(onStartShouldSetResponder)
-    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(onStartShouldSetResponderCapture)
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
+    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))
+    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(js.Any.fromFunction1(onMoveShouldSetResponderCapture))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
+    if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction1(onPressIn))
+    if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction1(onPressOut))
+    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(js.Any.fromFunction1(onResponderEnd))
+    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(js.Any.fromFunction1(onResponderGrant))
+    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(js.Any.fromFunction1(onResponderMove))
+    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(js.Any.fromFunction1(onResponderReject))
+    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(js.Any.fromFunction1(onResponderRelease))
+    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(js.Any.fromFunction1(onResponderStart))
+    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(js.Any.fromFunction1(onResponderTerminate))
+    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(js.Any.fromFunction1(onResponderTerminationRequest))
+    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1(onStartShouldSetResponder))
+    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1(onStartShouldSetResponderCapture))
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (originX != null) __obj.updateDynamic("originX")(originX.asInstanceOf[js.Any])
     if (originY != null) __obj.updateDynamic("originY")(originY.asInstanceOf[js.Any])
-    if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents)
+    if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (rx != null) __obj.updateDynamic("rx")(rx.asInstanceOf[js.Any])
@@ -168,6 +133,7 @@ object EllipseProps {
     if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (translateX != null) __obj.updateDynamic("translateX")(translateX.asInstanceOf[js.Any])
     if (translateY != null) __obj.updateDynamic("translateY")(translateY.asInstanceOf[js.Any])
+    if (vectorEffect != null) __obj.updateDynamic("vectorEffect")(vectorEffect.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[EllipseProps]

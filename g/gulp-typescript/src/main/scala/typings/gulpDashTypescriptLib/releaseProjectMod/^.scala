@@ -17,6 +17,6 @@ object ^ extends js.Object {
     projectReferences: js.Array[typescriptLib.typescriptMod.tsNs.ProjectReference],
     typescript: gulpDashTypescriptLib.Anon_08,
     finalTransformers: gulpDashTypescriptLib.releaseTypesMod.FinalTransformers
-  ): gulpDashTypescriptLib.releaseProjectMod.Project = js.native
+  ): Project = js.native
 }
 

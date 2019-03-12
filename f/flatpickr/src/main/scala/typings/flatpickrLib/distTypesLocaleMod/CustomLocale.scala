@@ -55,7 +55,7 @@ object CustomLocale {
       scala.Double
     ] = null,
     firstDayOfWeek: scala.Int | scala.Double = null,
-    ordinal: js.Function1[/* nth */ scala.Double, java.lang.String] = null,
+    ordinal: /* nth */ scala.Double => java.lang.String = null,
     rangeSeparator: java.lang.String = null,
     scrollTitle: java.lang.String = null,
     toggleTitle: java.lang.String = null,
@@ -66,7 +66,7 @@ object CustomLocale {
     if (amPM != null) __obj.updateDynamic("amPM")(amPM)
     if (daysInMonth != null) __obj.updateDynamic("daysInMonth")(daysInMonth)
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
-    if (ordinal != null) __obj.updateDynamic("ordinal")(ordinal)
+    if (ordinal != null) __obj.updateDynamic("ordinal")(js.Any.fromFunction1(ordinal))
     if (rangeSeparator != null) __obj.updateDynamic("rangeSeparator")(rangeSeparator)
     if (scrollTitle != null) __obj.updateDynamic("scrollTitle")(scrollTitle)
     if (toggleTitle != null) __obj.updateDynamic("toggleTitle")(toggleTitle)

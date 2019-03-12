@@ -12,8 +12,8 @@ trait Anon_Dispose[TResult] extends js.Object {
 
 object Anon_Dispose {
   @scala.inline
-  def apply[TResult](dispose: js.Function0[scala.Unit], mappedValue: TResult): Anon_Dispose[TResult] = {
-    val __obj = js.Dynamic.literal(dispose = dispose, mappedValue = mappedValue.asInstanceOf[js.Any])
+  def apply[TResult](dispose: () => scala.Unit, mappedValue: TResult): Anon_Dispose[TResult] = {
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), mappedValue = mappedValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Dispose[TResult]]
   }

@@ -13,12 +13,9 @@ object ^ extends js.Object {
     * @param path A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
     * URL support is _experimental_.
     */
+  def access(path: PathLike, callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]): scala.Unit = js.native
   def access(
-    path: nodeLib.fsMod.PathLike,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
-  ): scala.Unit = js.native
-  def access(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     mode: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
@@ -28,7 +25,7 @@ object ^ extends js.Object {
     * URL support is _experimental_.
     */
   def access(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     mode: scala.Double,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
@@ -37,8 +34,8 @@ object ^ extends js.Object {
     * @param path A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
     * URL support is _experimental_.
     */
-  def accessSync(path: nodeLib.fsMod.PathLike): scala.Unit = js.native
-  def accessSync(path: nodeLib.fsMod.PathLike, mode: scala.Double): scala.Unit = js.native
+  def accessSync(path: PathLike): scala.Unit = js.native
+  def accessSync(path: PathLike, mode: scala.Double): scala.Unit = js.native
   /**
     * Asynchronously append data to a file, creating the file if it does not exist.
     * @param file A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -47,7 +44,7 @@ object ^ extends js.Object {
     * @param data The data to write. If something other than a Buffer or Uint8Array is provided, the value is coerced to a string.
     */
   def appendFile(
-    file: nodeLib.fsMod.PathLike,
+    file: PathLike,
     data: js.Any,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
@@ -64,9 +61,9 @@ object ^ extends js.Object {
     * If `flag` is not supplied, the default of `'a'` is used.
     */
   def appendFile(
-    file: nodeLib.fsMod.PathLike,
+    file: PathLike,
     data: js.Any,
-    options: nodeLib.fsMod.WriteFileOptions,
+    options: WriteFileOptions,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def appendFile(
@@ -77,7 +74,7 @@ object ^ extends js.Object {
   def appendFile(
     file: scala.Double,
     data: js.Any,
-    options: nodeLib.fsMod.WriteFileOptions,
+    options: WriteFileOptions,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -92,22 +89,22 @@ object ^ extends js.Object {
     * If `mode` is a string, it is parsed as an octal integer.
     * If `flag` is not supplied, the default of `'a'` is used.
     */
-  def appendFileSync(file: nodeLib.fsMod.PathLike, data: js.Any): scala.Unit = js.native
-  def appendFileSync(file: nodeLib.fsMod.PathLike, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): scala.Unit = js.native
+  def appendFileSync(file: PathLike, data: js.Any): scala.Unit = js.native
+  def appendFileSync(file: PathLike, data: js.Any, options: WriteFileOptions): scala.Unit = js.native
   def appendFileSync(file: scala.Double, data: js.Any): scala.Unit = js.native
-  def appendFileSync(file: scala.Double, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): scala.Unit = js.native
+  def appendFileSync(file: scala.Double, data: js.Any, options: WriteFileOptions): scala.Unit = js.native
   /**
     * Asynchronous chmod(2) - Change permissions of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
     */
   def chmod(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     mode: java.lang.String,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def chmod(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     mode: scala.Double,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
@@ -116,14 +113,14 @@ object ^ extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
     */
-  def chmodSync(path: nodeLib.fsMod.PathLike, mode: java.lang.String): scala.Unit = js.native
-  def chmodSync(path: nodeLib.fsMod.PathLike, mode: scala.Double): scala.Unit = js.native
+  def chmodSync(path: PathLike, mode: java.lang.String): scala.Unit = js.native
+  def chmodSync(path: PathLike, mode: scala.Double): scala.Unit = js.native
   /**
     * Asynchronous chown(2) - Change ownership of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
   def chown(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     uid: scala.Double,
     gid: scala.Double,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
@@ -132,7 +129,7 @@ object ^ extends js.Object {
     * Synchronous chown(2) - Change ownership of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
-  def chownSync(path: nodeLib.fsMod.PathLike, uid: scala.Double, gid: scala.Double): scala.Unit = js.native
+  def chownSync(path: PathLike, uid: scala.Double, gid: scala.Double): scala.Unit = js.native
   /**
     * Asynchronous close(2) - close a file descriptor.
     * @param fd A file descriptor.
@@ -153,8 +150,8 @@ object ^ extends js.Object {
     * @param dest A path to the destination file.
     */
   def copyFile(
-    src: nodeLib.fsMod.PathLike,
-    dest: nodeLib.fsMod.PathLike,
+    src: PathLike,
+    dest: PathLike,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -168,8 +165,8 @@ object ^ extends js.Object {
     * @param flags An integer that specifies the behavior of the copy operation. The only supported flag is fs.constants.COPYFILE_EXCL, which causes the copy operation to fail if dest already exists.
     */
   def copyFile(
-    src: nodeLib.fsMod.PathLike,
-    dest: nodeLib.fsMod.PathLike,
+    src: PathLike,
+    dest: PathLike,
     flags: scala.Double,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
@@ -183,37 +180,37 @@ object ^ extends js.Object {
     * @param flags An optional integer that specifies the behavior of the copy operation.
     * The only supported flag is fs.constants.COPYFILE_EXCL, which causes the copy operation to fail if dest already exists.
     */
-  def copyFileSync(src: nodeLib.fsMod.PathLike, dest: nodeLib.fsMod.PathLike): scala.Unit = js.native
-  def copyFileSync(src: nodeLib.fsMod.PathLike, dest: nodeLib.fsMod.PathLike, flags: scala.Double): scala.Unit = js.native
+  def copyFileSync(src: PathLike, dest: PathLike): scala.Unit = js.native
+  def copyFileSync(src: PathLike, dest: PathLike, flags: scala.Double): scala.Unit = js.native
   /**
     * Returns a new `ReadStream` object.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * URL support is _experimental_.
     */
-  def createReadStream(path: nodeLib.fsMod.PathLike): nodeLib.fsMod.ReadStream = js.native
-  def createReadStream(path: nodeLib.fsMod.PathLike, options: java.lang.String): nodeLib.fsMod.ReadStream = js.native
-  def createReadStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_AutoClose): nodeLib.fsMod.ReadStream = js.native
+  def createReadStream(path: PathLike): ReadStream = js.native
+  def createReadStream(path: PathLike, options: java.lang.String): ReadStream = js.native
+  def createReadStream(path: PathLike, options: nodeLib.Anon_AutoClose): ReadStream = js.native
   /**
     * Returns a new `WriteStream` object.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * URL support is _experimental_.
     */
-  def createWriteStream(path: nodeLib.fsMod.PathLike): nodeLib.fsMod.WriteStream = js.native
-  def createWriteStream(path: nodeLib.fsMod.PathLike, options: java.lang.String): nodeLib.fsMod.WriteStream = js.native
-  def createWriteStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_AutoCloseEncoding): nodeLib.fsMod.WriteStream = js.native
+  def createWriteStream(path: PathLike): WriteStream = js.native
+  def createWriteStream(path: PathLike, options: java.lang.String): WriteStream = js.native
+  def createWriteStream(path: PathLike, options: nodeLib.Anon_AutoCloseEncoding): WriteStream = js.native
   /**
     * Asynchronously tests whether or not the given path exists by checking with the file system.
     * @deprecated
     * @param path A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
     * URL support is _experimental_.
     */
-  def exists(path: nodeLib.fsMod.PathLike, callback: js.Function1[/* exists */ scala.Boolean, scala.Unit]): scala.Unit = js.native
+  def exists(path: PathLike, callback: js.Function1[/* exists */ scala.Boolean, scala.Unit]): scala.Unit = js.native
   /**
     * Synchronously tests whether or not the given path exists by checking with the file system.
     * @param path A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
     * URL support is _experimental_.
     */
-  def existsSync(path: nodeLib.fsMod.PathLike): scala.Boolean = js.native
+  def existsSync(path: PathLike): scala.Boolean = js.native
   /**
     * Asynchronous fchmod(2) - Change permissions of a file.
     * @param fd A file descriptor.
@@ -267,17 +264,13 @@ object ^ extends js.Object {
     */
   def fstat(
     fd: scala.Double,
-    callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* stats */ nodeLib.fsMod.Stats, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* stats */ Stats, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Synchronous fstat(2) - Get file status.
     * @param fd A file descriptor.
     */
-  def fstatSync(fd: scala.Double): nodeLib.fsMod.Stats = js.native
+  def fstatSync(fd: scala.Double): Stats = js.native
   /**
     * Asynchronous fsync(2) - synchronize a file's in-core state with the underlying storage device.
     * @param fd A file descriptor.
@@ -401,12 +394,12 @@ object ^ extends js.Object {
     * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
     */
   def lchmod(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     mode: java.lang.String,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def lchmod(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     mode: scala.Double,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
@@ -415,14 +408,14 @@ object ^ extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
     */
-  def lchmodSync(path: nodeLib.fsMod.PathLike, mode: java.lang.String): scala.Unit = js.native
-  def lchmodSync(path: nodeLib.fsMod.PathLike, mode: scala.Double): scala.Unit = js.native
+  def lchmodSync(path: PathLike, mode: java.lang.String): scala.Unit = js.native
+  def lchmodSync(path: PathLike, mode: scala.Double): scala.Unit = js.native
   /**
     * Asynchronous lchown(2) - Change ownership of a file. Does not dereference symbolic links.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
   def lchown(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     uid: scala.Double,
     gid: scala.Double,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
@@ -431,15 +424,15 @@ object ^ extends js.Object {
     * Synchronous lchown(2) - Change ownership of a file. Does not dereference symbolic links.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
-  def lchownSync(path: nodeLib.fsMod.PathLike, uid: scala.Double, gid: scala.Double): scala.Unit = js.native
+  def lchownSync(path: PathLike, uid: scala.Double, gid: scala.Double): scala.Unit = js.native
   /**
     * Asynchronous link(2) - Create a new link (also known as a hard link) to an existing file.
     * @param existingPath A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param newPath A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
   def link(
-    existingPath: nodeLib.fsMod.PathLike,
-    newPath: nodeLib.fsMod.PathLike,
+    existingPath: PathLike,
+    newPath: PathLike,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -447,45 +440,38 @@ object ^ extends js.Object {
     * @param existingPath A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param newPath A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
-  def linkSync(existingPath: nodeLib.fsMod.PathLike, newPath: nodeLib.fsMod.PathLike): scala.Unit = js.native
+  def linkSync(existingPath: PathLike, newPath: PathLike): scala.Unit = js.native
   /**
     * Asynchronous lstat(2) - Get file status. Does not dereference symbolic links.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
   def lstat(
-    path: nodeLib.fsMod.PathLike,
-    callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* stats */ nodeLib.fsMod.Stats, 
-      scala.Unit
-    ]
+    path: PathLike,
+    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* stats */ Stats, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Synchronous lstat(2) - Get file status. Does not dereference symbolic links.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
-  def lstatSync(path: nodeLib.fsMod.PathLike): nodeLib.fsMod.Stats = js.native
+  def lstatSync(path: PathLike): Stats = js.native
   /**
     * Asynchronous mkdir(2) - create a directory with a mode of `0o777`.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
+  def mkdir(path: PathLike, callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]): scala.Unit = js.native
   def mkdir(
-    path: nodeLib.fsMod.PathLike,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
-  ): scala.Unit = js.native
-  def mkdir(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: java.lang.String,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def mkdir(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def mkdir(
-    path: nodeLib.fsMod.PathLike,
-    options: nodeLib.fsMod.MakeDirectoryOptions,
+    path: PathLike,
+    options: MakeDirectoryOptions,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -495,12 +481,12 @@ object ^ extends js.Object {
     * should be created. If a string is passed, it is parsed as an octal integer. If not specified, defaults to `0o777`.
     */
   def mkdir(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: scala.Double,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def mkdir(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: scala.Null,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
@@ -510,10 +496,10 @@ object ^ extends js.Object {
     * @param options Either the file mode, or an object optionally specifying the file mode and whether parent folders
     * should be created. If a string is passed, it is parsed as an octal integer. If not specified, defaults to `0o777`.
     */
-  def mkdirSync(path: nodeLib.fsMod.PathLike): scala.Unit = js.native
-  def mkdirSync(path: nodeLib.fsMod.PathLike, options: java.lang.String): scala.Unit = js.native
-  def mkdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.fsMod.MakeDirectoryOptions): scala.Unit = js.native
-  def mkdirSync(path: nodeLib.fsMod.PathLike, options: scala.Double): scala.Unit = js.native
+  def mkdirSync(path: PathLike): scala.Unit = js.native
+  def mkdirSync(path: PathLike, options: java.lang.String): scala.Unit = js.native
+  def mkdirSync(path: PathLike, options: MakeDirectoryOptions): scala.Unit = js.native
+  def mkdirSync(path: PathLike, options: scala.Double): scala.Unit = js.native
   /**
     * Asynchronously creates a unique temporary directory.
     * Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
@@ -624,7 +610,7 @@ object ^ extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
   def open(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     flags: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
@@ -634,54 +620,54 @@ object ^ extends js.Object {
     * @param mode A file mode. If a string is passed, it is parsed as an octal integer. If not supplied, defaults to `0o666`.
     */
   def open(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     flags: java.lang.String,
     mode: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
   def open(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     flags: java.lang.String,
     mode: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
   def open(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     flags: java.lang.String,
     mode: scala.Double,
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
   def open(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     flags: java.lang.String,
     mode: scala.Null,
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
   def open(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     flags: scala.Double,
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
   def open(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     flags: scala.Double,
     mode: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
   def open(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     flags: scala.Double,
     mode: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
   def open(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     flags: scala.Double,
     mode: scala.Double,
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
   def open(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     flags: scala.Double,
     mode: scala.Null,
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
@@ -691,12 +677,12 @@ object ^ extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param mode A file mode. If a string is passed, it is parsed as an octal integer. If not supplied, defaults to `0o666`.
     */
-  def openSync(path: nodeLib.fsMod.PathLike, flags: java.lang.String): scala.Double = js.native
-  def openSync(path: nodeLib.fsMod.PathLike, flags: java.lang.String, mode: java.lang.String): scala.Double = js.native
-  def openSync(path: nodeLib.fsMod.PathLike, flags: java.lang.String, mode: scala.Double): scala.Double = js.native
-  def openSync(path: nodeLib.fsMod.PathLike, flags: scala.Double): scala.Double = js.native
-  def openSync(path: nodeLib.fsMod.PathLike, flags: scala.Double, mode: java.lang.String): scala.Double = js.native
-  def openSync(path: nodeLib.fsMod.PathLike, flags: scala.Double, mode: scala.Double): scala.Double = js.native
+  def openSync(path: PathLike, flags: java.lang.String): scala.Double = js.native
+  def openSync(path: PathLike, flags: java.lang.String, mode: java.lang.String): scala.Double = js.native
+  def openSync(path: PathLike, flags: java.lang.String, mode: scala.Double): scala.Double = js.native
+  def openSync(path: PathLike, flags: scala.Double): scala.Double = js.native
+  def openSync(path: PathLike, flags: scala.Double, mode: java.lang.String): scala.Double = js.native
+  def openSync(path: PathLike, flags: scala.Double, mode: scala.Double): scala.Double = js.native
   /**
     * Asynchronously reads data from the file referenced by the supplied file descriptor.
     * @param fd A file descriptor.
@@ -705,7 +691,7 @@ object ^ extends js.Object {
     * @param length The number of bytes to read.
     * @param position The offset from the beginning of the file from which data should be read. If `null`, data will be read from the current position.
     */
-  def read[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+  def read[TBuffer /* <: BinaryData */](
     fd: scala.Double,
     buffer: TBuffer,
     offset: scala.Double,
@@ -718,7 +704,7 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def read[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+  def read[TBuffer /* <: BinaryData */](
     fd: scala.Double,
     buffer: TBuffer,
     offset: scala.Double,
@@ -737,11 +723,11 @@ object ^ extends js.Object {
     * If a file descriptor is provided, the underlying file will _not_ be closed automatically.
     */
   def readFile(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def readFile(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -750,7 +736,7 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   def readFile(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -767,7 +753,7 @@ object ^ extends js.Object {
     * If a flag is not provided, it defaults to `'r'`.
     */
   def readFile(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: nodeLib.Anon_EncodingFlagNull,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -784,7 +770,7 @@ object ^ extends js.Object {
     * If a flag is not provided, it defaults to `'r'`.
     */
   def readFile(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: nodeLib.Anon_EncodingFlagString,
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
@@ -796,12 +782,12 @@ object ^ extends js.Object {
     * If a flag is not provided, it defaults to `'r'`.
     */
   def readFile(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: nodeLib.Anon_EncodingFlag,
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def readFile(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: scala.Null,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -867,10 +853,10 @@ object ^ extends js.Object {
     * @param options Either the encoding for the result, or an object that contains the encoding and an optional flag.
     * If a flag is not provided, it defaults to `'r'`.
     */
-  def readFileSync(path: nodeLib.fsMod.PathLike): java.lang.String | nodeLib.Buffer = js.native
-  def readFileSync(path: nodeLib.fsMod.PathLike, options: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
-  def readFileSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlag): nodeLib.Buffer = js.native
-  def readFileSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagNull): java.lang.String | nodeLib.Buffer = js.native
+  def readFileSync(path: PathLike): java.lang.String | nodeLib.Buffer = js.native
+  def readFileSync(path: PathLike, options: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
+  def readFileSync(path: PathLike, options: nodeLib.Anon_EncodingFlag): nodeLib.Buffer = js.native
+  def readFileSync(path: PathLike, options: nodeLib.Anon_EncodingFlagNull): java.lang.String | nodeLib.Buffer = js.native
   /**
     * Synchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -879,7 +865,7 @@ object ^ extends js.Object {
     * @param options Either the encoding for the result, or an object that contains the encoding and an optional flag.
     * If a flag is not provided, it defaults to `'r'`.
     */
-  def readFileSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagString): java.lang.String = js.native
+  def readFileSync(path: PathLike, options: nodeLib.Anon_EncodingFlagString): java.lang.String = js.native
   def readFileSync(path: scala.Double): java.lang.String | nodeLib.Buffer = js.native
   def readFileSync(path: scala.Double, options: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
   def readFileSync(path: scala.Double, options: nodeLib.Anon_EncodingFlag): nodeLib.Buffer = js.native
@@ -893,14 +879,14 @@ object ^ extends js.Object {
     * @param options An object that may contain an optional flag. If a flag is not provided, it defaults to `'r'`.
     */
   @JSName("readFileSync")
-  def readFileSync_Buffer(path: nodeLib.fsMod.PathLike): nodeLib.Buffer = js.native
+  def readFileSync_Buffer(path: PathLike): nodeLib.Buffer = js.native
   @JSName("readFileSync")
   def readFileSync_Buffer(path: scala.Double): nodeLib.Buffer = js.native
   @JSName("readFileSync")
-  def readFileSync_String(path: nodeLib.fsMod.PathLike, options: java.lang.String): java.lang.String = js.native
+  def readFileSync_String(path: PathLike, options: java.lang.String): java.lang.String = js.native
   @JSName("readFileSync")
   def readFileSync_String(path: scala.Double, options: java.lang.String): java.lang.String = js.native
-  def readSync(fd: scala.Double, buffer: nodeLib.fsMod.BinaryData, offset: scala.Double, length: scala.Double): scala.Double = js.native
+  def readSync(fd: scala.Double, buffer: BinaryData, offset: scala.Double, length: scala.Double): scala.Double = js.native
   /**
     * Synchronously reads data from the file referenced by the supplied file descriptor, returning the number of bytes read.
     * @param fd A file descriptor.
@@ -911,7 +897,7 @@ object ^ extends js.Object {
     */
   def readSync(
     fd: scala.Double,
-    buffer: nodeLib.fsMod.BinaryData,
+    buffer: BinaryData,
     offset: scala.Double,
     length: scala.Double,
     position: scala.Double
@@ -921,7 +907,7 @@ object ^ extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
   def readdir(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* files */ js.Array[java.lang.String], 
@@ -929,7 +915,7 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   def readdir(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -938,7 +924,7 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   def readdir(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -952,7 +938,7 @@ object ^ extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def readdir(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: nodeLib.Anon_BufferEncodingFalse,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -966,7 +952,7 @@ object ^ extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def readdir(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: nodeLib.Anon_EncodingFalseWithFileTypes,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -980,7 +966,7 @@ object ^ extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def readdir(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: nodeLib.Anon_EncodingFalse,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -994,16 +980,12 @@ object ^ extends js.Object {
     * @param options If called with `withFileTypes: true` the result data will be an array of Dirent.
     */
   def readdir(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: nodeLib.Anon_True,
-    callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* files */ js.Array[nodeLib.fsMod.Dirent], 
-      scala.Unit
-    ]
+    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* files */ js.Array[Dirent], scala.Unit]
   ): scala.Unit = js.native
   def readdir(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: nodeLib.BufferEncoding,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1012,7 +994,7 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   def readdir(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: scala.Null,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1025,35 +1007,35 @@ object ^ extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def readdirSync(path: nodeLib.fsMod.PathLike): js.Array[java.lang.String] = js.native
-  def readdirSync(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = js.native
+  def readdirSync(path: PathLike): js.Array[java.lang.String] = js.native
+  def readdirSync(path: PathLike, options: java.lang.String): js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = js.native
   /**
     * Synchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncodingFalse): js.Array[nodeLib.Buffer] = js.native
-  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFalse): js.Array[java.lang.String] = js.native
-  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFalseWithFileTypes): js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = js.native
+  def readdirSync(path: PathLike, options: nodeLib.Anon_BufferEncodingFalse): js.Array[nodeLib.Buffer] = js.native
+  def readdirSync(path: PathLike, options: nodeLib.Anon_EncodingFalse): js.Array[java.lang.String] = js.native
+  def readdirSync(path: PathLike, options: nodeLib.Anon_EncodingFalseWithFileTypes): js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = js.native
   /**
     * Asynchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options If called with `withFileTypes: true` the result data will be an array of Dirent.
     */
-  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_True): js.Array[nodeLib.fsMod.Dirent] = js.native
-  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Array[java.lang.String] = js.native
+  def readdirSync(path: PathLike, options: nodeLib.Anon_True): js.Array[Dirent] = js.native
+  def readdirSync(path: PathLike, options: nodeLib.BufferEncoding): js.Array[java.lang.String] = js.native
   /**
     * Synchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   @JSName("readdirSync")
-  def `readdirSync_<union>`(path: nodeLib.fsMod.PathLike): js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = js.native
+  def `readdirSync_<union>`(path: PathLike): js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = js.native
   @JSName("readdirSync")
-  def readdirSync_buffer(path: nodeLib.fsMod.PathLike, options: nodeLib.nodeLibStrings.buffer): js.Array[nodeLib.Buffer] = js.native
+  def readdirSync_buffer(path: PathLike, options: nodeLib.nodeLibStrings.buffer): js.Array[nodeLib.Buffer] = js.native
   @JSName("readdir")
   def readdir_buffer(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: nodeLib.nodeLibStrings.buffer,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1066,7 +1048,7 @@ object ^ extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
   def readlink(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* linkString */ java.lang.String, 
@@ -1074,7 +1056,7 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   def readlink(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1083,7 +1065,7 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   def readlink(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1097,7 +1079,7 @@ object ^ extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def readlink(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: nodeLib.Anon_BufferEncoding,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1111,7 +1093,7 @@ object ^ extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def readlink(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: nodeLib.Anon_EncodingBufferEncoding,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1125,7 +1107,7 @@ object ^ extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def readlink(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: nodeLib.Anon_EncodingNull,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1134,7 +1116,7 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   def readlink(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: nodeLib.BufferEncoding,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1143,7 +1125,7 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   def readlink(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: scala.Null,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1156,29 +1138,29 @@ object ^ extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def readlinkSync(path: nodeLib.fsMod.PathLike): java.lang.String | nodeLib.Buffer = js.native
-  def readlinkSync(path: nodeLib.fsMod.PathLike, options: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
+  def readlinkSync(path: PathLike): java.lang.String | nodeLib.Buffer = js.native
+  def readlinkSync(path: PathLike, options: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
   /**
     * Synchronous readlink(2) - read value of a symbolic link.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): nodeLib.Buffer = js.native
-  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): java.lang.String = js.native
-  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): java.lang.String | nodeLib.Buffer = js.native
-  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): java.lang.String = js.native
+  def readlinkSync(path: PathLike, options: nodeLib.Anon_BufferEncoding): nodeLib.Buffer = js.native
+  def readlinkSync(path: PathLike, options: nodeLib.Anon_EncodingBufferEncoding): java.lang.String = js.native
+  def readlinkSync(path: PathLike, options: nodeLib.Anon_EncodingNull): java.lang.String | nodeLib.Buffer = js.native
+  def readlinkSync(path: PathLike, options: nodeLib.BufferEncoding): java.lang.String = js.native
   /**
     * Synchronous readlink(2) - read value of a symbolic link.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   @JSName("readlinkSync")
-  def readlinkSync_String(path: nodeLib.fsMod.PathLike): java.lang.String = js.native
+  def readlinkSync_String(path: PathLike): java.lang.String = js.native
   @JSName("readlinkSync")
-  def readlinkSync_buffer(path: nodeLib.fsMod.PathLike, options: nodeLib.nodeLibStrings.buffer): nodeLib.Buffer = js.native
+  def readlinkSync_buffer(path: PathLike, options: nodeLib.nodeLibStrings.buffer): nodeLib.Buffer = js.native
   @JSName("readlink")
   def readlink_buffer(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: nodeLib.nodeLibStrings.buffer,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1191,7 +1173,7 @@ object ^ extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
   def realpath(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* resolvedPath */ java.lang.String, 
@@ -1199,7 +1181,7 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   def realpath(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1208,7 +1190,7 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   def realpath(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1222,7 +1204,7 @@ object ^ extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def realpath(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: nodeLib.Anon_BufferEncoding,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1236,7 +1218,7 @@ object ^ extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def realpath(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: nodeLib.Anon_EncodingBufferEncoding,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1250,7 +1232,7 @@ object ^ extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def realpath(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: nodeLib.Anon_EncodingNull,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1259,7 +1241,7 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   def realpath(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: nodeLib.BufferEncoding,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1268,7 +1250,7 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   def realpath(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: scala.Null,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1281,29 +1263,29 @@ object ^ extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def realpathSync(path: nodeLib.fsMod.PathLike): java.lang.String | nodeLib.Buffer = js.native
-  def realpathSync(path: nodeLib.fsMod.PathLike, options: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
+  def realpathSync(path: PathLike): java.lang.String | nodeLib.Buffer = js.native
+  def realpathSync(path: PathLike, options: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
   /**
     * Synchronous realpath(3) - return the canonicalized absolute pathname.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): nodeLib.Buffer = js.native
-  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): java.lang.String = js.native
-  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): java.lang.String | nodeLib.Buffer = js.native
-  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): java.lang.String = js.native
+  def realpathSync(path: PathLike, options: nodeLib.Anon_BufferEncoding): nodeLib.Buffer = js.native
+  def realpathSync(path: PathLike, options: nodeLib.Anon_EncodingBufferEncoding): java.lang.String = js.native
+  def realpathSync(path: PathLike, options: nodeLib.Anon_EncodingNull): java.lang.String | nodeLib.Buffer = js.native
+  def realpathSync(path: PathLike, options: nodeLib.BufferEncoding): java.lang.String = js.native
   /**
     * Synchronous realpath(3) - return the canonicalized absolute pathname.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   @JSName("realpathSync")
-  def realpathSync_String(path: nodeLib.fsMod.PathLike): java.lang.String = js.native
+  def realpathSync_String(path: PathLike): java.lang.String = js.native
   @JSName("realpathSync")
-  def realpathSync_buffer(path: nodeLib.fsMod.PathLike, options: nodeLib.nodeLibStrings.buffer): nodeLib.Buffer = js.native
+  def realpathSync_buffer(path: PathLike, options: nodeLib.nodeLibStrings.buffer): nodeLib.Buffer = js.native
   @JSName("realpath")
   def realpath_buffer(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     options: nodeLib.nodeLibStrings.buffer,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1319,8 +1301,8 @@ object ^ extends js.Object {
     * URL support is _experimental_.
     */
   def rename(
-    oldPath: nodeLib.fsMod.PathLike,
-    newPath: nodeLib.fsMod.PathLike,
+    oldPath: PathLike,
+    newPath: PathLike,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -1330,50 +1312,43 @@ object ^ extends js.Object {
     * @param newPath A path to a file. If a URL is provided, it must use the `file:` protocol.
     * URL support is _experimental_.
     */
-  def renameSync(oldPath: nodeLib.fsMod.PathLike, newPath: nodeLib.fsMod.PathLike): scala.Unit = js.native
+  def renameSync(oldPath: PathLike, newPath: PathLike): scala.Unit = js.native
   /**
     * Asynchronous rmdir(2) - delete a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
-  def rmdir(
-    path: nodeLib.fsMod.PathLike,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
-  ): scala.Unit = js.native
+  def rmdir(path: PathLike, callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]): scala.Unit = js.native
   /**
     * Synchronous rmdir(2) - delete a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
-  def rmdirSync(path: nodeLib.fsMod.PathLike): scala.Unit = js.native
+  def rmdirSync(path: PathLike): scala.Unit = js.native
   /**
     * Asynchronous stat(2) - Get file status.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
   def stat(
-    path: nodeLib.fsMod.PathLike,
-    callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* stats */ nodeLib.fsMod.Stats, 
-      scala.Unit
-    ]
+    path: PathLike,
+    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* stats */ Stats, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Synchronous stat(2) - Get file status.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
-  def statSync(path: nodeLib.fsMod.PathLike): nodeLib.fsMod.Stats = js.native
+  def statSync(path: PathLike): Stats = js.native
   /**
     * Asynchronous symlink(2) - Create a new symbolic link to an existing file.
     * @param target A path to an existing file. If a URL is provided, it must use the `file:` protocol.
     * @param path A path to the new symlink. If a URL is provided, it must use the `file:` protocol.
     */
   def symlink(
-    target: nodeLib.fsMod.PathLike,
-    path: nodeLib.fsMod.PathLike,
+    target: PathLike,
+    path: PathLike,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def symlink(
-    target: nodeLib.fsMod.PathLike,
-    path: nodeLib.fsMod.PathLike,
+    target: PathLike,
+    path: PathLike,
     `type`: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
@@ -1385,14 +1360,14 @@ object ^ extends js.Object {
     * When using `'junction'`, the `target` argument will automatically be normalized to an absolute path.
     */
   def symlink(
-    target: nodeLib.fsMod.PathLike,
-    path: nodeLib.fsMod.PathLike,
+    target: PathLike,
+    path: PathLike,
     `type`: nodeLib.fsMod.symlinkNs.Type,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def symlink(
-    target: nodeLib.fsMod.PathLike,
-    path: nodeLib.fsMod.PathLike,
+    target: PathLike,
+    path: PathLike,
     `type`: scala.Null,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
@@ -1403,19 +1378,16 @@ object ^ extends js.Object {
     * @param type May be set to `'dir'`, `'file'`, or `'junction'` (default is `'file'`) and is only available on Windows (ignored on other platforms).
     * When using `'junction'`, the `target` argument will automatically be normalized to an absolute path.
     */
-  def symlinkSync(target: nodeLib.fsMod.PathLike, path: nodeLib.fsMod.PathLike): scala.Unit = js.native
-  def symlinkSync(target: nodeLib.fsMod.PathLike, path: nodeLib.fsMod.PathLike, `type`: nodeLib.fsMod.symlinkNs.Type): scala.Unit = js.native
+  def symlinkSync(target: PathLike, path: PathLike): scala.Unit = js.native
+  def symlinkSync(target: PathLike, path: PathLike, `type`: nodeLib.fsMod.symlinkNs.Type): scala.Unit = js.native
   /**
     * Asynchronous truncate(2) - Truncate a file to a specified length.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * URL support is _experimental_.
     */
+  def truncate(path: PathLike, callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]): scala.Unit = js.native
   def truncate(
-    path: nodeLib.fsMod.PathLike,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
-  ): scala.Unit = js.native
-  def truncate(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     len: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
@@ -1425,12 +1397,12 @@ object ^ extends js.Object {
     * @param len If not specified, defaults to `0`.
     */
   def truncate(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     len: scala.Double,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def truncate(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     len: scala.Null,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
@@ -1439,31 +1411,25 @@ object ^ extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param len If not specified, defaults to `0`.
     */
-  def truncateSync(path: nodeLib.fsMod.PathLike): scala.Unit = js.native
-  def truncateSync(path: nodeLib.fsMod.PathLike, len: scala.Double): scala.Unit = js.native
+  def truncateSync(path: PathLike): scala.Unit = js.native
+  def truncateSync(path: PathLike, len: scala.Double): scala.Unit = js.native
   /**
     * Asynchronous unlink(2) - delete a name and possibly the file it refers to.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
-  def unlink(
-    path: nodeLib.fsMod.PathLike,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
-  ): scala.Unit = js.native
+  def unlink(path: PathLike, callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]): scala.Unit = js.native
   /**
     * Synchronous unlink(2) - delete a name and possibly the file it refers to.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
-  def unlinkSync(path: nodeLib.fsMod.PathLike): scala.Unit = js.native
+  def unlinkSync(path: PathLike): scala.Unit = js.native
   /**
     * Stop watching for changes on `filename`.
     * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
     * URL support is _experimental_.
     */
-  def unwatchFile(filename: nodeLib.fsMod.PathLike): scala.Unit = js.native
-  def unwatchFile(
-    filename: nodeLib.fsMod.PathLike,
-    listener: js.Function2[/* curr */ nodeLib.fsMod.Stats, /* prev */ nodeLib.fsMod.Stats, scala.Unit]
-  ): scala.Unit = js.native
+  def unwatchFile(filename: PathLike): scala.Unit = js.native
+  def unwatchFile(filename: PathLike, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, scala.Unit]): scala.Unit = js.native
   /**
     * Asynchronously change file timestamps of the file referenced by the supplied path.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -1471,55 +1437,55 @@ object ^ extends js.Object {
     * @param mtime The last modified time. If a string is provided, it will be coerced to number.
     */
   def utimes(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     atime: java.lang.String,
     mtime: java.lang.String,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def utimes(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     atime: java.lang.String,
     mtime: scala.Double,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def utimes(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     atime: java.lang.String,
     mtime: stdLib.Date,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def utimes(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     atime: scala.Double,
     mtime: java.lang.String,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def utimes(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     atime: scala.Double,
     mtime: scala.Double,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def utimes(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     atime: scala.Double,
     mtime: stdLib.Date,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def utimes(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     atime: stdLib.Date,
     mtime: java.lang.String,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def utimes(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     atime: stdLib.Date,
     mtime: scala.Double,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def utimes(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     atime: stdLib.Date,
     mtime: stdLib.Date,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
@@ -1530,40 +1496,40 @@ object ^ extends js.Object {
     * @param atime The last access time. If a string is provided, it will be coerced to number.
     * @param mtime The last modified time. If a string is provided, it will be coerced to number.
     */
-  def utimesSync(path: nodeLib.fsMod.PathLike, atime: java.lang.String, mtime: java.lang.String): scala.Unit = js.native
-  def utimesSync(path: nodeLib.fsMod.PathLike, atime: java.lang.String, mtime: scala.Double): scala.Unit = js.native
-  def utimesSync(path: nodeLib.fsMod.PathLike, atime: java.lang.String, mtime: stdLib.Date): scala.Unit = js.native
-  def utimesSync(path: nodeLib.fsMod.PathLike, atime: scala.Double, mtime: java.lang.String): scala.Unit = js.native
-  def utimesSync(path: nodeLib.fsMod.PathLike, atime: scala.Double, mtime: scala.Double): scala.Unit = js.native
-  def utimesSync(path: nodeLib.fsMod.PathLike, atime: scala.Double, mtime: stdLib.Date): scala.Unit = js.native
-  def utimesSync(path: nodeLib.fsMod.PathLike, atime: stdLib.Date, mtime: java.lang.String): scala.Unit = js.native
-  def utimesSync(path: nodeLib.fsMod.PathLike, atime: stdLib.Date, mtime: scala.Double): scala.Unit = js.native
-  def utimesSync(path: nodeLib.fsMod.PathLike, atime: stdLib.Date, mtime: stdLib.Date): scala.Unit = js.native
+  def utimesSync(path: PathLike, atime: java.lang.String, mtime: java.lang.String): scala.Unit = js.native
+  def utimesSync(path: PathLike, atime: java.lang.String, mtime: scala.Double): scala.Unit = js.native
+  def utimesSync(path: PathLike, atime: java.lang.String, mtime: stdLib.Date): scala.Unit = js.native
+  def utimesSync(path: PathLike, atime: scala.Double, mtime: java.lang.String): scala.Unit = js.native
+  def utimesSync(path: PathLike, atime: scala.Double, mtime: scala.Double): scala.Unit = js.native
+  def utimesSync(path: PathLike, atime: scala.Double, mtime: stdLib.Date): scala.Unit = js.native
+  def utimesSync(path: PathLike, atime: stdLib.Date, mtime: java.lang.String): scala.Unit = js.native
+  def utimesSync(path: PathLike, atime: stdLib.Date, mtime: scala.Double): scala.Unit = js.native
+  def utimesSync(path: PathLike, atime: stdLib.Date, mtime: stdLib.Date): scala.Unit = js.native
   /**
     * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
     * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
     * URL support is _experimental_.
     */
-  def watch(filename: nodeLib.fsMod.PathLike): nodeLib.fsMod.FSWatcher = js.native
+  def watch(filename: PathLike): FSWatcher = js.native
   def watch(
-    filename: nodeLib.fsMod.PathLike,
+    filename: PathLike,
     listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, _]
-  ): nodeLib.fsMod.FSWatcher = js.native
-  def watch(filename: nodeLib.fsMod.PathLike, options: java.lang.String): nodeLib.fsMod.FSWatcher = js.native
+  ): FSWatcher = js.native
+  def watch(filename: PathLike, options: java.lang.String): FSWatcher = js.native
   def watch(
-    filename: nodeLib.fsMod.PathLike,
+    filename: PathLike,
     options: java.lang.String,
     listener: js.Function2[
       /* event */ java.lang.String, 
       /* filename */ java.lang.String | nodeLib.Buffer, 
       scala.Unit
     ]
-  ): nodeLib.fsMod.FSWatcher = js.native
+  ): FSWatcher = js.native
   def watch(
-    filename: nodeLib.fsMod.PathLike,
+    filename: PathLike,
     options: js.UndefOr[scala.Nothing],
     listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, scala.Unit]
-  ): nodeLib.fsMod.FSWatcher = js.native
+  ): FSWatcher = js.native
   /**
     * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
     * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
@@ -1573,12 +1539,12 @@ object ^ extends js.Object {
     * If `persistent` is not supplied, the default of `true` is used.
     * If `recursive` is not supplied, the default of `false` is used.
     */
-  def watch(filename: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncodingPersistent): nodeLib.fsMod.FSWatcher = js.native
+  def watch(filename: PathLike, options: nodeLib.Anon_BufferEncodingPersistent): FSWatcher = js.native
   def watch(
-    filename: nodeLib.fsMod.PathLike,
+    filename: PathLike,
     options: nodeLib.Anon_BufferEncodingPersistent,
     listener: js.Function2[/* event */ java.lang.String, /* filename */ nodeLib.Buffer, scala.Unit]
-  ): nodeLib.fsMod.FSWatcher = js.native
+  ): FSWatcher = js.native
   /**
     * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
     * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
@@ -1588,7 +1554,7 @@ object ^ extends js.Object {
     * If `persistent` is not supplied, the default of `true` is used.
     * If `recursive` is not supplied, the default of `false` is used.
     */
-  def watch(filename: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingPersistent): nodeLib.fsMod.FSWatcher = js.native
+  def watch(filename: PathLike, options: nodeLib.Anon_EncodingPersistent): FSWatcher = js.native
   /**
     * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
     * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
@@ -1598,66 +1564,63 @@ object ^ extends js.Object {
     * If `persistent` is not supplied, the default of `true` is used.
     * If `recursive` is not supplied, the default of `false` is used.
     */
-  def watch(filename: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingPersistentRecursive): nodeLib.fsMod.FSWatcher = js.native
+  def watch(filename: PathLike, options: nodeLib.Anon_EncodingPersistentRecursive): FSWatcher = js.native
   def watch(
-    filename: nodeLib.fsMod.PathLike,
+    filename: PathLike,
     options: nodeLib.Anon_EncodingPersistentRecursive,
     listener: js.Function2[
       /* event */ java.lang.String, 
       /* filename */ java.lang.String | nodeLib.Buffer, 
       scala.Unit
     ]
-  ): nodeLib.fsMod.FSWatcher = js.native
+  ): FSWatcher = js.native
   def watch(
-    filename: nodeLib.fsMod.PathLike,
+    filename: PathLike,
     options: nodeLib.Anon_EncodingPersistent,
     listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, scala.Unit]
-  ): nodeLib.fsMod.FSWatcher = js.native
-  def watch(filename: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): nodeLib.fsMod.FSWatcher = js.native
+  ): FSWatcher = js.native
+  def watch(filename: PathLike, options: nodeLib.BufferEncoding): FSWatcher = js.native
   def watch(
-    filename: nodeLib.fsMod.PathLike,
+    filename: PathLike,
     options: nodeLib.BufferEncoding,
     listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, scala.Unit]
-  ): nodeLib.fsMod.FSWatcher = js.native
+  ): FSWatcher = js.native
   def watch(
-    filename: nodeLib.fsMod.PathLike,
+    filename: PathLike,
     options: scala.Null,
     listener: js.Function2[
       /* event */ java.lang.String, 
       nodeLib.Buffer | (/* filename */ java.lang.String), 
       scala.Unit
     ]
-  ): nodeLib.fsMod.FSWatcher = js.native
+  ): FSWatcher = js.native
   /**
     * Watch for changes on `filename`. The callback `listener` will be called each time the file is accessed.
     * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
     * URL support is _experimental_.
     */
+  def watchFile(filename: PathLike, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, scala.Unit]): scala.Unit = js.native
   def watchFile(
-    filename: nodeLib.fsMod.PathLike,
-    listener: js.Function2[/* curr */ nodeLib.fsMod.Stats, /* prev */ nodeLib.fsMod.Stats, scala.Unit]
-  ): scala.Unit = js.native
-  def watchFile(
-    filename: nodeLib.fsMod.PathLike,
+    filename: PathLike,
     options: js.UndefOr[scala.Nothing],
-    listener: js.Function2[/* curr */ nodeLib.fsMod.Stats, /* prev */ nodeLib.fsMod.Stats, scala.Unit]
+    listener: js.Function2[/* curr */ Stats, /* prev */ Stats, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Watch for changes on `filename`. The callback `listener` will be called each time the file is accessed.
     */
   def watchFile(
-    filename: nodeLib.fsMod.PathLike,
+    filename: PathLike,
     options: nodeLib.Anon_Interval,
-    listener: js.Function2[/* curr */ nodeLib.fsMod.Stats, /* prev */ nodeLib.fsMod.Stats, scala.Unit]
+    listener: js.Function2[/* curr */ Stats, /* prev */ Stats, scala.Unit]
   ): scala.Unit = js.native
   @JSName("watch")
-  def watch_buffer(filename: nodeLib.fsMod.PathLike, options: nodeLib.nodeLibStrings.buffer): nodeLib.fsMod.FSWatcher = js.native
+  def watch_buffer(filename: PathLike, options: nodeLib.nodeLibStrings.buffer): FSWatcher = js.native
   @JSName("watch")
   def watch_buffer(
-    filename: nodeLib.fsMod.PathLike,
+    filename: PathLike,
     options: nodeLib.nodeLibStrings.buffer,
     listener: js.Function2[/* event */ java.lang.String, /* filename */ nodeLib.Buffer, scala.Unit]
-  ): nodeLib.fsMod.FSWatcher = js.native
+  ): FSWatcher = js.native
   /**
     * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
     * @param fd A file descriptor.
@@ -1831,7 +1794,7 @@ object ^ extends js.Object {
     * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
     * @param fd A file descriptor.
     */
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+  def write[TBuffer /* <: BinaryData */](
     fd: scala.Double,
     buffer: TBuffer,
     callback: js.Function3[
@@ -1841,7 +1804,7 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+  def write[TBuffer /* <: BinaryData */](
     fd: scala.Double,
     buffer: TBuffer,
     offset: js.UndefOr[scala.Nothing],
@@ -1852,7 +1815,7 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+  def write[TBuffer /* <: BinaryData */](
     fd: scala.Double,
     buffer: TBuffer,
     offset: js.UndefOr[scala.Nothing],
@@ -1871,7 +1834,7 @@ object ^ extends js.Object {
     * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
     * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
     */
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+  def write[TBuffer /* <: BinaryData */](
     fd: scala.Double,
     buffer: TBuffer,
     offset: js.UndefOr[scala.Double | scala.Null],
@@ -1884,7 +1847,7 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+  def write[TBuffer /* <: BinaryData */](
     fd: scala.Double,
     buffer: TBuffer,
     offset: js.UndefOr[scala.Nothing],
@@ -1896,7 +1859,7 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+  def write[TBuffer /* <: BinaryData */](
     fd: scala.Double,
     buffer: TBuffer,
     offset: js.UndefOr[scala.Nothing],
@@ -1913,7 +1876,7 @@ object ^ extends js.Object {
     * @param fd A file descriptor.
     * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
     */
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+  def write[TBuffer /* <: BinaryData */](
     fd: scala.Double,
     buffer: TBuffer,
     offset: scala.Double,
@@ -1924,7 +1887,7 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+  def write[TBuffer /* <: BinaryData */](
     fd: scala.Double,
     buffer: TBuffer,
     offset: scala.Double,
@@ -1942,7 +1905,7 @@ object ^ extends js.Object {
     * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
     * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
     */
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+  def write[TBuffer /* <: BinaryData */](
     fd: scala.Double,
     buffer: TBuffer,
     offset: scala.Double,
@@ -1954,7 +1917,7 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+  def write[TBuffer /* <: BinaryData */](
     fd: scala.Double,
     buffer: TBuffer,
     offset: scala.Double,
@@ -1966,7 +1929,7 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+  def write[TBuffer /* <: BinaryData */](
     fd: scala.Double,
     buffer: TBuffer,
     offset: scala.Null,
@@ -1977,7 +1940,7 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+  def write[TBuffer /* <: BinaryData */](
     fd: scala.Double,
     buffer: TBuffer,
     offset: scala.Null,
@@ -1989,7 +1952,7 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+  def write[TBuffer /* <: BinaryData */](
     fd: scala.Double,
     buffer: TBuffer,
     offset: scala.Null,
@@ -2001,7 +1964,7 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+  def write[TBuffer /* <: BinaryData */](
     fd: scala.Double,
     buffer: TBuffer,
     offset: scala.Null,
@@ -2021,7 +1984,7 @@ object ^ extends js.Object {
     * @param data The data to write. If something other than a Buffer or Uint8Array is provided, the value is coerced to a string.
     */
   def writeFile(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     data: js.Any,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
@@ -2038,9 +2001,9 @@ object ^ extends js.Object {
     * If `flag` is not supplied, the default of `'w'` is used.
     */
   def writeFile(
-    path: nodeLib.fsMod.PathLike,
+    path: PathLike,
     data: js.Any,
-    options: nodeLib.fsMod.WriteFileOptions,
+    options: WriteFileOptions,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def writeFile(
@@ -2051,7 +2014,7 @@ object ^ extends js.Object {
   def writeFile(
     path: scala.Double,
     data: js.Any,
-    options: nodeLib.fsMod.WriteFileOptions,
+    options: WriteFileOptions,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -2066,10 +2029,10 @@ object ^ extends js.Object {
     * If `mode` is a string, it is parsed as an octal integer.
     * If `flag` is not supplied, the default of `'w'` is used.
     */
-  def writeFileSync(path: nodeLib.fsMod.PathLike, data: js.Any): scala.Unit = js.native
-  def writeFileSync(path: nodeLib.fsMod.PathLike, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): scala.Unit = js.native
+  def writeFileSync(path: PathLike, data: js.Any): scala.Unit = js.native
+  def writeFileSync(path: PathLike, data: js.Any, options: WriteFileOptions): scala.Unit = js.native
   def writeFileSync(path: scala.Double, data: js.Any): scala.Unit = js.native
-  def writeFileSync(path: scala.Double, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): scala.Unit = js.native
+  def writeFileSync(path: scala.Double, data: js.Any, options: WriteFileOptions): scala.Unit = js.native
   /**
     * Synchronously writes `buffer` to the file referenced by the supplied file descriptor, returning the number of bytes written.
     * @param fd A file descriptor.
@@ -2077,34 +2040,34 @@ object ^ extends js.Object {
     * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
     * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
     */
-  def writeSync(fd: scala.Double, buffer: nodeLib.fsMod.BinaryData): scala.Double = js.native
-  def writeSync(fd: scala.Double, buffer: nodeLib.fsMod.BinaryData, offset: scala.Double): scala.Double = js.native
-  def writeSync(fd: scala.Double, buffer: nodeLib.fsMod.BinaryData, offset: scala.Double, length: scala.Double): scala.Double = js.native
+  def writeSync(fd: scala.Double, buffer: BinaryData): scala.Double = js.native
+  def writeSync(fd: scala.Double, buffer: BinaryData, offset: scala.Double): scala.Double = js.native
+  def writeSync(fd: scala.Double, buffer: BinaryData, offset: scala.Double, length: scala.Double): scala.Double = js.native
   def writeSync(
     fd: scala.Double,
-    buffer: nodeLib.fsMod.BinaryData,
+    buffer: BinaryData,
     offset: scala.Double,
     length: scala.Double,
     position: scala.Double
   ): scala.Double = js.native
   def writeSync(
     fd: scala.Double,
-    buffer: nodeLib.fsMod.BinaryData,
+    buffer: BinaryData,
     offset: scala.Double,
     length: scala.Null,
     position: scala.Double
   ): scala.Double = js.native
-  def writeSync(fd: scala.Double, buffer: nodeLib.fsMod.BinaryData, offset: scala.Null, length: scala.Double): scala.Double = js.native
+  def writeSync(fd: scala.Double, buffer: BinaryData, offset: scala.Null, length: scala.Double): scala.Double = js.native
   def writeSync(
     fd: scala.Double,
-    buffer: nodeLib.fsMod.BinaryData,
+    buffer: BinaryData,
     offset: scala.Null,
     length: scala.Double,
     position: scala.Double
   ): scala.Double = js.native
   def writeSync(
     fd: scala.Double,
-    buffer: nodeLib.fsMod.BinaryData,
+    buffer: BinaryData,
     offset: scala.Null,
     length: scala.Null,
     position: scala.Double

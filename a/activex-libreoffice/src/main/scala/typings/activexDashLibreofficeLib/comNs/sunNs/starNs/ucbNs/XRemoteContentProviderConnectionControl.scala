@@ -31,16 +31,12 @@ trait XRemoteContentProviderConnectionControl
 object XRemoteContentProviderConnectionControl {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    enableConnectionControl: js.Function2[
-      XRemoteContentProviderAcceptor, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    enableConnectionControl: (XRemoteContentProviderAcceptor, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XRemoteContentProviderConnectionControl = {
-    val __obj = js.Dynamic.literal(acquire = acquire, enableConnectionControl = enableConnectionControl, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), enableConnectionControl = js.Any.fromFunction2(enableConnectionControl), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XRemoteContentProviderConnectionControl]
   }

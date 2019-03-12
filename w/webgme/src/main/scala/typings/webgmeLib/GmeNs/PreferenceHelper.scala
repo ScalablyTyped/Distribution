@@ -11,8 +11,8 @@ trait PreferenceHelper extends js.Object {
 
 object PreferenceHelper {
   @scala.inline
-  def apply(getPreferences: js.Function0[PreferenceHelper]): PreferenceHelper = {
-    val __obj = js.Dynamic.literal(getPreferences = getPreferences)
+  def apply(getPreferences: () => PreferenceHelper): PreferenceHelper = {
+    val __obj = js.Dynamic.literal(getPreferences = js.Any.fromFunction0(getPreferences))
   
     __obj.asInstanceOf[PreferenceHelper]
   }

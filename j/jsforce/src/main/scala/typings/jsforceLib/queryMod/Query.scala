@@ -15,7 +15,7 @@ class Query[T] ()
   def del(): js.Any = js.native
   def del(
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* ret */ jsforceLib.recordDashResultMod.RecordResult, 
       scala.Unit
     ]
@@ -24,7 +24,7 @@ class Query[T] ()
   def del(
     `type`: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* ret */ jsforceLib.recordDashResultMod.RecordResult, 
       scala.Unit
     ]
@@ -32,7 +32,7 @@ class Query[T] ()
   def delete(): js.Any = js.native
   def delete(
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* ret */ jsforceLib.recordDashResultMod.RecordResult, 
       scala.Unit
     ]
@@ -41,23 +41,24 @@ class Query[T] ()
   def delete(
     `type`: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* ret */ jsforceLib.recordDashResultMod.RecordResult, 
       scala.Unit
     ]
   ): js.Any = js.native
   def destroy(
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* ret */ jsforceLib.recordDashResultMod.RecordResult, 
       scala.Unit
     ]
   ): js.Promise[js.Array[jsforceLib.recordDashResultMod.RecordResult]] = js.native
+  def destroy(error: stdLib.Error): scala.Unit = js.native
   def destroy(`type`: java.lang.String): js.Promise[js.Array[jsforceLib.recordDashResultMod.RecordResult]] = js.native
   def destroy(
     `type`: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* ret */ jsforceLib.recordDashResultMod.RecordResult, 
       scala.Unit
     ]
@@ -69,16 +70,16 @@ class Query[T] ()
   def exec(options: ExecuteOptions): Query[T] = js.native
   def exec(
     options: ExecuteOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* records */ js.Array[T], scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* records */ js.Array[T], scala.Unit]
   ): Query[T] = js.native
   def execute(): Query[T] = js.native
   def execute(options: ExecuteOptions): Query[T] = js.native
   def execute(
     options: ExecuteOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* records */ js.Array[T], scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* records */ js.Array[T], scala.Unit]
   ): Query[T] = js.native
   def explain(): js.Promise[ExplainInfo] = js.native
-  def explain(callback: js.Function2[/* err */ nodeLib.Error, /* info */ ExplainInfo, scala.Unit]): js.Promise[ExplainInfo] = js.native
+  def explain(callback: js.Function2[/* err */ stdLib.Error, /* info */ ExplainInfo, scala.Unit]): js.Promise[ExplainInfo] = js.native
   def filter(filter: js.Object): Query[T] = js.native
   def hint(hint: js.Object): Query[T] = js.native
   def include(include: java.lang.String): Query[T] = js.native
@@ -94,7 +95,7 @@ class Query[T] ()
   def run(options: ExecuteOptions): Query[T] = js.native
   def run(
     options: ExecuteOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* records */ js.Array[T], scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* records */ js.Array[T], scala.Unit]
   ): Query[T] = js.native
   def scanAll(value: scala.Boolean): Query[T] = js.native
   def select(fields: java.lang.String): Query[T] = js.native
@@ -120,13 +121,13 @@ class Query[T] ()
   @JSName("sort")
   def sort_DESC(keyOrList: js.Object, direction: jsforceLib.jsforceLibStrings.DESC): Query[T] = js.native
   def thenCall(): Query[T] = js.native
-  def thenCall(callback: js.Function2[/* err */ nodeLib.Error, /* records */ T, scala.Unit]): Query[T] = js.native
-  def toSOQL(callback: js.Function2[/* err */ nodeLib.Error, /* soql */ java.lang.String, scala.Unit]): js.Promise[java.lang.String] = js.native
+  def thenCall(callback: js.Function2[/* err */ stdLib.Error, /* records */ T, scala.Unit]): Query[T] = js.native
+  def toSOQL(callback: js.Function2[/* err */ stdLib.Error, /* soql */ java.lang.String, scala.Unit]): js.Promise[java.lang.String] = js.native
   def update(
     mapping: js.Any,
     `type`: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* records */ js.Array[jsforceLib.recordDashResultMod.RecordResult], 
       scala.Unit
     ]

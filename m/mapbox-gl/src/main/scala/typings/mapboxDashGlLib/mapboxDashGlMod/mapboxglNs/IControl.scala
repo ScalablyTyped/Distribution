@@ -14,12 +14,12 @@ trait IControl extends js.Object {
 object IControl {
   @scala.inline
   def apply(
-    onAdd: js.Function1[Map, stdLib.HTMLElement],
-    onRemove: js.Function1[Map, js.Any],
-    getDefaultPosition: js.Function0[java.lang.String] = null
+    onAdd: Map => stdLib.HTMLElement,
+    onRemove: Map => js.Any,
+    getDefaultPosition: () => java.lang.String = null
   ): IControl = {
-    val __obj = js.Dynamic.literal(onAdd = onAdd, onRemove = onRemove)
-    if (getDefaultPosition != null) __obj.updateDynamic("getDefaultPosition")(getDefaultPosition)
+    val __obj = js.Dynamic.literal(onAdd = js.Any.fromFunction1(onAdd), onRemove = js.Any.fromFunction1(onRemove))
+    if (getDefaultPosition != null) __obj.updateDynamic("getDefaultPosition")(js.Any.fromFunction0(getDefaultPosition))
     __obj.asInstanceOf[IControl]
   }
 }

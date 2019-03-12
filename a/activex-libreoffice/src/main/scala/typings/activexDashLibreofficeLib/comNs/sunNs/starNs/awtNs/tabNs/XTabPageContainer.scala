@@ -58,14 +58,14 @@ object XTabPageContainer {
   def apply(
     ActiveTabPageID: scala.Double,
     TabPageCount: scala.Double,
-    addTabPageContainerListener: js.Function1[XTabPageContainerListener, scala.Unit],
-    getTabPage: js.Function1[scala.Double, XTabPage],
-    getTabPageByID: js.Function1[scala.Double, XTabPage],
-    getTabPageCount: js.Function0[scala.Double],
-    isTabPageActive: js.Function1[scala.Double, scala.Boolean],
-    removeTabPageContainerListener: js.Function1[XTabPageContainerListener, scala.Unit]
+    addTabPageContainerListener: XTabPageContainerListener => scala.Unit,
+    getTabPage: scala.Double => XTabPage,
+    getTabPageByID: scala.Double => XTabPage,
+    getTabPageCount: () => scala.Double,
+    isTabPageActive: scala.Double => scala.Boolean,
+    removeTabPageContainerListener: XTabPageContainerListener => scala.Unit
   ): XTabPageContainer = {
-    val __obj = js.Dynamic.literal(ActiveTabPageID = ActiveTabPageID, TabPageCount = TabPageCount, addTabPageContainerListener = addTabPageContainerListener, getTabPage = getTabPage, getTabPageByID = getTabPageByID, getTabPageCount = getTabPageCount, isTabPageActive = isTabPageActive, removeTabPageContainerListener = removeTabPageContainerListener)
+    val __obj = js.Dynamic.literal(ActiveTabPageID = ActiveTabPageID, TabPageCount = TabPageCount, addTabPageContainerListener = js.Any.fromFunction1(addTabPageContainerListener), getTabPage = js.Any.fromFunction1(getTabPage), getTabPageByID = js.Any.fromFunction1(getTabPageByID), getTabPageCount = js.Any.fromFunction0(getTabPageCount), isTabPageActive = js.Any.fromFunction1(isTabPageActive), removeTabPageContainerListener = js.Any.fromFunction1(removeTabPageContainerListener))
   
     __obj.asInstanceOf[XTabPageContainer]
   }

@@ -15,12 +15,12 @@ trait JasmineJQuery extends js.Object {
 object JasmineJQuery {
   @scala.inline
   def apply(
-    browserTagCaseIndependentHtml: js.Function1[java.lang.String, java.lang.String],
-    elementToString: js.Function1[jqueryLib.JQuery[stdLib.HTMLElement], java.lang.String],
+    browserTagCaseIndependentHtml: java.lang.String => java.lang.String,
+    elementToString: jqueryLib.JQuery[stdLib.HTMLElement] => java.lang.String,
     events: JasmineJQueryEvents,
     matchersClass: js.Any
   ): JasmineJQuery = {
-    val __obj = js.Dynamic.literal(browserTagCaseIndependentHtml = browserTagCaseIndependentHtml, elementToString = elementToString, events = events, matchersClass = matchersClass)
+    val __obj = js.Dynamic.literal(browserTagCaseIndependentHtml = js.Any.fromFunction1(browserTagCaseIndependentHtml), elementToString = js.Any.fromFunction1(elementToString), events = events, matchersClass = matchersClass)
   
     __obj.asInstanceOf[JasmineJQuery]
   }

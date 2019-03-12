@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("d3")
 @js.native
 object ^ extends js.Object {
-  def slider(): d3DotSliderLib.d3Mod.Slider = js.native
+  def slider(): Slider = js.native
 }
 

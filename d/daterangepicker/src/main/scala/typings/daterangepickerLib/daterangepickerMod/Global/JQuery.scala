@@ -15,11 +15,11 @@ trait JQuery extends js.Object {
   ]) with daterangepickerLib.Anon_DefaultOptions = js.native
   @JSName("data")
   def data_daterangepicker(key: daterangepickerLib.daterangepickerLibStrings.daterangepicker): js.UndefOr[daterangepickerLib.daterangepickerMod.daterangepicker] = js.native
-  def daterangepicker(): JQuery = js.native
-  def daterangepicker(options: daterangepickerLib.daterangepickerMod.daterangepickerNs.Options): JQuery = js.native
+  def daterangepicker(): this.type = js.native
+  def daterangepicker(options: daterangepickerLib.daterangepickerMod.daterangepickerNs.Options): this.type = js.native
   def daterangepicker(
     options: daterangepickerLib.daterangepickerMod.daterangepickerNs.Options,
     callback: daterangepickerLib.daterangepickerMod.daterangepickerNs.DataRangePickerCallback
-  ): JQuery = js.native
+  ): this.type = js.native
 }
 

@@ -11,8 +11,8 @@ trait Anon_Build extends js.Object {
 
 object Anon_Build {
   @scala.inline
-  def apply(build: js.Function0[scala.Unit | js.Promise[_]]): Anon_Build = {
-    val __obj = js.Dynamic.literal(build = build)
+  def apply(build: () => scala.Unit | js.Promise[_]): Anon_Build = {
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build))
   
     __obj.asInstanceOf[Anon_Build]
   }

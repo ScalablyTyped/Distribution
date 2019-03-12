@@ -13,9 +13,9 @@ trait IFnNewInstance extends js.Object {
 object IFnNewInstance {
   @scala.inline
   def apply(
-    createInstance: js.Function3[stdLib.HTMLElement, js.Any, java.lang.String, jqueryLib.JQuery[stdLib.HTMLElement]]
+    createInstance: (stdLib.HTMLElement, js.Any, java.lang.String) => jqueryLib.JQuery[stdLib.HTMLElement]
   ): IFnNewInstance = {
-    val __obj = js.Dynamic.literal(createInstance = createInstance)
+    val __obj = js.Dynamic.literal(createInstance = js.Any.fromFunction3(createInstance))
   
     __obj.asInstanceOf[IFnNewInstance]
   }

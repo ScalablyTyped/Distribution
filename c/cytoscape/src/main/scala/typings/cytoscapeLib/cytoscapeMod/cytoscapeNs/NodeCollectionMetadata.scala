@@ -49,15 +49,15 @@ trait NodeCollectionMetadata extends js.Object {
 object NodeCollectionMetadata {
   @scala.inline
   def apply(
-    maxDegree: js.Function1[scala.Boolean, scala.Double],
-    maxIndegree: js.Function1[scala.Boolean, scala.Double],
-    maxOutdegree: js.Function1[scala.Boolean, scala.Double],
-    minDegree: js.Function1[scala.Boolean, scala.Double],
-    minIndegree: js.Function1[scala.Boolean, scala.Double],
-    minOutdegree: js.Function1[scala.Boolean, scala.Double],
-    totalDegree: js.Function1[scala.Boolean, scala.Double]
+    maxDegree: scala.Boolean => scala.Double,
+    maxIndegree: scala.Boolean => scala.Double,
+    maxOutdegree: scala.Boolean => scala.Double,
+    minDegree: scala.Boolean => scala.Double,
+    minIndegree: scala.Boolean => scala.Double,
+    minOutdegree: scala.Boolean => scala.Double,
+    totalDegree: scala.Boolean => scala.Double
   ): NodeCollectionMetadata = {
-    val __obj = js.Dynamic.literal(maxDegree = maxDegree, maxIndegree = maxIndegree, maxOutdegree = maxOutdegree, minDegree = minDegree, minIndegree = minIndegree, minOutdegree = minOutdegree, totalDegree = totalDegree)
+    val __obj = js.Dynamic.literal(maxDegree = js.Any.fromFunction1(maxDegree), maxIndegree = js.Any.fromFunction1(maxIndegree), maxOutdegree = js.Any.fromFunction1(maxOutdegree), minDegree = js.Any.fromFunction1(minDegree), minIndegree = js.Any.fromFunction1(minIndegree), minOutdegree = js.Any.fromFunction1(minOutdegree), totalDegree = js.Any.fromFunction1(totalDegree))
   
     __obj.asInstanceOf[NodeCollectionMetadata]
   }

@@ -16,12 +16,12 @@ trait CustomDetector extends js.Object {
 object CustomDetector {
   @scala.inline
   def apply(
-    lookup: js.Function1[DetectorOptions, js.UndefOr[java.lang.String]],
+    lookup: DetectorOptions => js.UndefOr[java.lang.String],
     name: java.lang.String,
-    cacheUserLanguage: js.Function2[/* lng */ java.lang.String, /* options */ DetectorOptions, scala.Unit] = null
+    cacheUserLanguage: (/* lng */ java.lang.String, /* options */ DetectorOptions) => scala.Unit = null
   ): CustomDetector = {
-    val __obj = js.Dynamic.literal(lookup = lookup, name = name)
-    if (cacheUserLanguage != null) __obj.updateDynamic("cacheUserLanguage")(cacheUserLanguage)
+    val __obj = js.Dynamic.literal(lookup = js.Any.fromFunction1(lookup), name = name)
+    if (cacheUserLanguage != null) __obj.updateDynamic("cacheUserLanguage")(js.Any.fromFunction2(cacheUserLanguage))
     __obj.asInstanceOf[CustomDetector]
   }
 }

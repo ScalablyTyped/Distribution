@@ -33,12 +33,12 @@ object SizeSchemeForPolygon {
   def apply(
     background: SizeSchemeForPolygonBackground,
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     marker: SizeSchemeForPoint,
     opacity: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): SizeSchemeForPolygon = {
-    val __obj = js.Dynamic.literal(background = background, constructor = constructor, hasOwnProperty = hasOwnProperty, marker = marker, opacity = opacity, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(background = background, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), marker = marker, opacity = opacity, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[SizeSchemeForPolygon]
   }

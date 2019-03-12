@@ -160,19 +160,13 @@ object RequireConfig {
   def apply(
     baseUrl: java.lang.String = null,
     bundles: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = null,
-    callback: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    callback: /* repeated */ js.Any => scala.Unit = null,
     config: org.scalablytyped.runtime.StringDictionary[js.Object] = null,
     context: java.lang.String = null,
     deps: js.Array[java.lang.String] = null,
     enforceDefine: js.UndefOr[scala.Boolean] = js.undefined,
     map: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = null,
-    onNodeCreated: js.Function4[
-      /* node */ stdLib.HTMLScriptElement, 
-      /* config */ RequireConfig, 
-      /* moduleName */ java.lang.String, 
-      /* url */ java.lang.String, 
-      scala.Unit
-    ] = null,
+    onNodeCreated: (/* node */ stdLib.HTMLScriptElement, /* config */ RequireConfig, /* moduleName */ java.lang.String, /* url */ java.lang.String) => scala.Unit = null,
     packages: js.Object = null,
     paths: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     scriptType: java.lang.String = null,
@@ -185,13 +179,13 @@ object RequireConfig {
     val __obj = js.Dynamic.literal()
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
     if (bundles != null) __obj.updateDynamic("bundles")(bundles)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (config != null) __obj.updateDynamic("config")(config)
     if (context != null) __obj.updateDynamic("context")(context)
     if (deps != null) __obj.updateDynamic("deps")(deps)
     if (!js.isUndefined(enforceDefine)) __obj.updateDynamic("enforceDefine")(enforceDefine)
     if (map != null) __obj.updateDynamic("map")(map)
-    if (onNodeCreated != null) __obj.updateDynamic("onNodeCreated")(onNodeCreated)
+    if (onNodeCreated != null) __obj.updateDynamic("onNodeCreated")(js.Any.fromFunction4(onNodeCreated))
     if (packages != null) __obj.updateDynamic("packages")(packages)
     if (paths != null) __obj.updateDynamic("paths")(paths)
     if (scriptType != null) __obj.updateDynamic("scriptType")(scriptType)

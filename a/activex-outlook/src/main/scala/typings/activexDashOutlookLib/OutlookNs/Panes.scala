@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.Panes")
 @js.native
 class Panes protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: scala.Double = js.native
   var `Outlook.Panes_typekey`: Panes = js.native

@@ -87,34 +87,25 @@ object NodeView {
   @scala.inline
   def apply[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     contentDOM: stdLib.Node = null,
-    deselectNode: js.Function0[scala.Unit] = null,
-    destroy: js.Function0[scala.Unit] = null,
+    deselectNode: () => scala.Unit = null,
+    destroy: () => scala.Unit = null,
     dom: stdLib.Node = null,
-    ignoreMutation: js.Function1[/* p */ stdLib.MutationRecord, scala.Boolean] = null,
-    selectNode: js.Function0[scala.Unit] = null,
-    setSelection: js.Function3[
-      /* anchor */ scala.Double, 
-      /* head */ scala.Double, 
-      /* root */ stdLib.Document, 
-      scala.Unit
-    ] = null,
-    stopEvent: js.Function1[/* event */ stdLib.Event, scala.Boolean] = null,
-    update: js.Function2[
-      /* node */ prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S], 
-      /* decorations */ js.Array[Decoration], 
-      scala.Boolean
-    ] = null
+    ignoreMutation: /* p */ stdLib.MutationRecord => scala.Boolean = null,
+    selectNode: () => scala.Unit = null,
+    setSelection: (/* anchor */ scala.Double, /* head */ scala.Double, /* root */ stdLib.Document) => scala.Unit = null,
+    stopEvent: /* event */ stdLib.Event => scala.Boolean = null,
+    update: (/* node */ prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S], /* decorations */ js.Array[Decoration]) => scala.Boolean = null
   ): NodeView[S] = {
     val __obj = js.Dynamic.literal()
     if (contentDOM != null) __obj.updateDynamic("contentDOM")(contentDOM)
-    if (deselectNode != null) __obj.updateDynamic("deselectNode")(deselectNode)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (deselectNode != null) __obj.updateDynamic("deselectNode")(js.Any.fromFunction0(deselectNode))
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (dom != null) __obj.updateDynamic("dom")(dom)
-    if (ignoreMutation != null) __obj.updateDynamic("ignoreMutation")(ignoreMutation)
-    if (selectNode != null) __obj.updateDynamic("selectNode")(selectNode)
-    if (setSelection != null) __obj.updateDynamic("setSelection")(setSelection)
-    if (stopEvent != null) __obj.updateDynamic("stopEvent")(stopEvent)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (ignoreMutation != null) __obj.updateDynamic("ignoreMutation")(js.Any.fromFunction1(ignoreMutation))
+    if (selectNode != null) __obj.updateDynamic("selectNode")(js.Any.fromFunction0(selectNode))
+    if (setSelection != null) __obj.updateDynamic("setSelection")(js.Any.fromFunction3(setSelection))
+    if (stopEvent != null) __obj.updateDynamic("stopEvent")(js.Any.fromFunction1(stopEvent))
+    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction2(update))
     __obj.asInstanceOf[NodeView[S]]
   }
 }

@@ -15,16 +15,16 @@ trait Field[A]
 object Field {
   @scala.inline
   def apply[A](
-    add: js.Function2[A, A, A],
-    degree: js.Function1[A, scala.Double],
-    div: js.Function2[A, A, A],
-    mod: js.Function2[A, A, A],
-    mul: js.Function2[A, A, A],
+    add: (A, A) => A,
+    degree: A => scala.Double,
+    div: (A, A) => A,
+    mod: (A, A) => A,
+    mul: (A, A) => A,
     one: A,
-    sub: js.Function2[A, A, A],
+    sub: (A, A) => A,
     zero: A
   ): Field[A] = {
-    val __obj = js.Dynamic.literal(add = add, degree = degree, div = div, mod = mod, mul = mul, one = one.asInstanceOf[js.Any], sub = sub, zero = zero.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), degree = js.Any.fromFunction1(degree), div = js.Any.fromFunction2(div), mod = js.Any.fromFunction2(mod), mul = js.Any.fromFunction2(mul), one = one.asInstanceOf[js.Any], sub = js.Any.fromFunction2(sub), zero = zero.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Field[A]]
   }

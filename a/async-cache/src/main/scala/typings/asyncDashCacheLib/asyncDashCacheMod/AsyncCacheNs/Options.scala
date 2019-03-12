@@ -21,27 +21,23 @@ trait Options[T]
 object Options {
   @scala.inline
   def apply[T](
-    load: js.Function2[
-      java.lang.String, 
-      js.Function3[
-        /* error */ js.Any, 
-        /* asyncValue */ T, 
-        /* maxAge */ js.UndefOr[scala.Double], 
-        scala.Unit
-      ], 
+    load: (java.lang.String, js.Function3[
+      /* error */ js.Any, 
+      /* asyncValue */ T, 
+      /* maxAge */ js.UndefOr[scala.Double], 
       scala.Unit
-    ],
-    dispose: js.Function2[java.lang.String, T, scala.Unit] = null,
-    length: js.Function2[T, /* key */ js.UndefOr[java.lang.String], scala.Double] = null,
+    ]) => scala.Unit,
+    dispose: (java.lang.String, T) => scala.Unit = null,
+    length: (T, /* key */ js.UndefOr[java.lang.String]) => scala.Double = null,
     max: scala.Int | scala.Double = null,
     maxAge: scala.Int | scala.Double = null,
     noDisposeOnSet: js.UndefOr[scala.Boolean] = js.undefined,
     stale: js.UndefOr[scala.Boolean] = js.undefined,
     updateAgeOnGet: js.UndefOr[scala.Boolean] = js.undefined
   ): Options[T] = {
-    val __obj = js.Dynamic.literal(load = load)
-    if (dispose != null) __obj.updateDynamic("dispose")(dispose)
-    if (length != null) __obj.updateDynamic("length")(length)
+    val __obj = js.Dynamic.literal(load = js.Any.fromFunction2(load))
+    if (dispose != null) __obj.updateDynamic("dispose")(js.Any.fromFunction2(dispose))
+    if (length != null) __obj.updateDynamic("length")(js.Any.fromFunction2(length))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (!js.isUndefined(noDisposeOnSet)) __obj.updateDynamic("noDisposeOnSet")(noDisposeOnSet)

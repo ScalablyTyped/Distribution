@@ -48,10 +48,10 @@ trait IContentTypeResource extends js.Object {
 object IContentTypeResource {
   @scala.inline
   def apply(
-    getAllPropertyTypeAliases: js.Function0[angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
-    getAllowedTypes: js.Function1[scala.Double, angularLib.angularMod.angularNs.IPromise[IResourcePromise]]
+    getAllPropertyTypeAliases: () => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
+    getAllowedTypes: scala.Double => angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   ): IContentTypeResource = {
-    val __obj = js.Dynamic.literal(getAllPropertyTypeAliases = getAllPropertyTypeAliases, getAllowedTypes = getAllowedTypes)
+    val __obj = js.Dynamic.literal(getAllPropertyTypeAliases = js.Any.fromFunction0(getAllPropertyTypeAliases), getAllowedTypes = js.Any.fromFunction1(getAllowedTypes))
   
     __obj.asInstanceOf[IContentTypeResource]
   }

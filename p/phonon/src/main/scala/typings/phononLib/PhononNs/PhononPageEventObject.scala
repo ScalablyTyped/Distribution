@@ -12,13 +12,9 @@ trait PhononPageEventObject extends js.Object {
 object PhononPageEventObject {
   @scala.inline
   def apply(
-    addEvent: js.Function2[
-      java.lang.String, 
-      js.Function1[/* parameter */ js.UndefOr[js.Any], scala.Unit], 
-      scala.Unit
-    ]
+    addEvent: (java.lang.String, js.Function1[/* parameter */ js.UndefOr[js.Any], scala.Unit]) => scala.Unit
   ): PhononPageEventObject = {
-    val __obj = js.Dynamic.literal(addEvent = addEvent)
+    val __obj = js.Dynamic.literal(addEvent = js.Any.fromFunction2(addEvent))
   
     __obj.asInstanceOf[PhononPageEventObject]
   }

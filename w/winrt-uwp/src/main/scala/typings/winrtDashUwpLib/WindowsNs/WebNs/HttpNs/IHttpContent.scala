@@ -46,28 +46,17 @@ trait IHttpContent
 object IHttpContent {
   @scala.inline
   def apply(
-    bufferAllAsync: js.Function0[
-      winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[scala.Double, scala.Double]
-    ],
-    close: js.Function0[scala.Unit],
+    bufferAllAsync: () => winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[scala.Double, scala.Double],
+    close: () => scala.Unit,
     headers: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpContentHeaderCollection,
-    readAsBufferAsync: js.Function0[
-      winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer, scala.Double]
-    ],
-    readAsInputStreamAsync: js.Function0[
-      winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IInputStream, scala.Double]
-    ],
-    readAsStringAsync: js.Function0[
-      winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[java.lang.String, scala.Double]
-    ],
-    toString: js.Function0[java.lang.String],
-    tryComputeLength: js.Function0[winrtDashUwpLib.Anon_Length],
-    writeToStreamAsync: js.Function1[
-      winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IOutputStream, 
-      winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[scala.Double, scala.Double]
-    ]
+    readAsBufferAsync: () => winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer, scala.Double],
+    readAsInputStreamAsync: () => winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IInputStream, scala.Double],
+    readAsStringAsync: () => winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[java.lang.String, scala.Double],
+    toString: () => java.lang.String,
+    tryComputeLength: () => winrtDashUwpLib.Anon_Length,
+    writeToStreamAsync: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IOutputStream => winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[scala.Double, scala.Double]
   ): IHttpContent = {
-    val __obj = js.Dynamic.literal(bufferAllAsync = bufferAllAsync, close = close, headers = headers, readAsBufferAsync = readAsBufferAsync, readAsInputStreamAsync = readAsInputStreamAsync, readAsStringAsync = readAsStringAsync, toString = toString, tryComputeLength = tryComputeLength, writeToStreamAsync = writeToStreamAsync)
+    val __obj = js.Dynamic.literal(bufferAllAsync = js.Any.fromFunction0(bufferAllAsync), close = js.Any.fromFunction0(close), headers = headers, readAsBufferAsync = js.Any.fromFunction0(readAsBufferAsync), readAsInputStreamAsync = js.Any.fromFunction0(readAsInputStreamAsync), readAsStringAsync = js.Any.fromFunction0(readAsStringAsync), toString = js.Any.fromFunction0(toString), tryComputeLength = js.Any.fromFunction0(tryComputeLength), writeToStreamAsync = js.Any.fromFunction1(writeToStreamAsync))
   
     __obj.asInstanceOf[IHttpContent]
   }

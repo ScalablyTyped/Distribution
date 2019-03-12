@@ -17,14 +17,14 @@ trait CommandManager extends js.Object {
 object CommandManager {
   @scala.inline
   def apply(
-    addCommand: js.Function1[EditorCommand, scala.Unit],
-    addCommands: js.Function1[js.Array[EditorCommand], scala.Unit],
+    addCommand: EditorCommand => scala.Unit,
+    addCommands: js.Array[EditorCommand] => scala.Unit,
     byName: js.Any,
     commands: js.Any,
-    exec: js.Function3[java.lang.String, Editor, js.Any, scala.Unit],
+    exec: (java.lang.String, Editor, js.Any) => scala.Unit,
     platform: java.lang.String
   ): CommandManager = {
-    val __obj = js.Dynamic.literal(addCommand = addCommand, addCommands = addCommands, byName = byName, commands = commands, exec = exec, platform = platform)
+    val __obj = js.Dynamic.literal(addCommand = js.Any.fromFunction1(addCommand), addCommands = js.Any.fromFunction1(addCommands), byName = byName, commands = commands, exec = js.Any.fromFunction3(exec), platform = platform)
   
     __obj.asInstanceOf[CommandManager]
   }

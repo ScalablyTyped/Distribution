@@ -33,12 +33,12 @@ object SMTPServerAuthentication {
   @scala.inline
   def apply(
     method: smtpDashServerLib.smtpDashServerLibStrings.PLAIN | smtpDashServerLib.smtpDashServerLibStrings.LOGIN | smtpDashServerLib.smtpDashServerLibStrings.XOAUTH2,
-    validatePassword: js.Function1[java.lang.String, scala.Boolean],
+    validatePassword: java.lang.String => scala.Boolean,
     accessToken: java.lang.String = null,
     password: java.lang.String = null,
     username: java.lang.String = null
   ): SMTPServerAuthentication = {
-    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], validatePassword = validatePassword)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], validatePassword = js.Any.fromFunction1(validatePassword))
     if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
     if (password != null) __obj.updateDynamic("password")(password)
     if (username != null) __obj.updateDynamic("username")(username)

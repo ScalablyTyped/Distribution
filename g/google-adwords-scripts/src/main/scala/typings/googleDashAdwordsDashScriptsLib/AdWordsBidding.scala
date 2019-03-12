@@ -14,11 +14,11 @@ trait AdWordsBidding extends js.Object {
 object AdWordsBidding {
   @scala.inline
   def apply(
-    getStrategy: js.Function0[BiddingStrategy],
-    getStrategySource: js.Function0[BiddingStrategySource],
-    getStrategyType: js.Function0[java.lang.String]
+    getStrategy: () => BiddingStrategy,
+    getStrategySource: () => BiddingStrategySource,
+    getStrategyType: () => java.lang.String
   ): AdWordsBidding = {
-    val __obj = js.Dynamic.literal(getStrategy = getStrategy, getStrategySource = getStrategySource, getStrategyType = getStrategyType)
+    val __obj = js.Dynamic.literal(getStrategy = js.Any.fromFunction0(getStrategy), getStrategySource = js.Any.fromFunction0(getStrategySource), getStrategyType = js.Any.fromFunction0(getStrategyType))
   
     __obj.asInstanceOf[AdWordsBidding]
   }

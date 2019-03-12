@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-persist-transform-encrypt/async", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def default[State, Raw](config: reduxDashPersistDashTransformDashEncryptLib.asyncMod.AsyncEncryptorConfig): reduxDashPersistLib.esCreateTransformMod.Transform[State, Raw] = js.native
+  def default[State, Raw](config: AsyncEncryptorConfig): reduxDashPersistLib.esCreateTransformMod.Transform[State, Raw] = js.native
 }
 

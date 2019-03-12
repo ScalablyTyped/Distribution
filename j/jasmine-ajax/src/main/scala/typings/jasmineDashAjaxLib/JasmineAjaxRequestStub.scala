@@ -15,12 +15,12 @@ trait JasmineAjaxRequestStub extends js.Object {
 object JasmineAjaxRequestStub {
   @scala.inline
   def apply(
-    andReturn: js.Function1[JasmineAjaxRequestStubReturnOptions, scala.Unit],
-    matches: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Boolean],
+    andReturn: JasmineAjaxRequestStubReturnOptions => scala.Unit,
+    matches: (java.lang.String, java.lang.String, java.lang.String) => scala.Boolean,
     data: java.lang.String = null,
     method: java.lang.String = null
   ): JasmineAjaxRequestStub = {
-    val __obj = js.Dynamic.literal(andReturn = andReturn, matches = matches)
+    val __obj = js.Dynamic.literal(andReturn = js.Any.fromFunction1(andReturn), matches = js.Any.fromFunction3(matches))
     if (data != null) __obj.updateDynamic("data")(data)
     if (method != null) __obj.updateDynamic("method")(method)
     __obj.asInstanceOf[JasmineAjaxRequestStub]

@@ -26,14 +26,14 @@ trait XProtectable
 object XProtectable {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    isProtected: js.Function0[scala.Boolean],
-    protect: js.Function1[java.lang.String, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    unprotect: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    isProtected: () => scala.Boolean,
+    protect: java.lang.String => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    unprotect: java.lang.String => scala.Unit
   ): XProtectable = {
-    val __obj = js.Dynamic.literal(acquire = acquire, isProtected = isProtected, protect = protect, queryInterface = queryInterface, release = release, unprotect = unprotect)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), isProtected = js.Any.fromFunction0(isProtected), protect = js.Any.fromFunction1(protect), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), unprotect = js.Any.fromFunction1(unprotect))
   
     __obj.asInstanceOf[XProtectable]
   }

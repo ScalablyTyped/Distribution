@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val version: java.lang.String = js.native
-  def addExpectHandler(expectName: java.lang.String, expectFn: js.Function1[/* repeated */ js.Any, _]): frisbyLib.frisbyMod.FrisbySpec = js.native
+  def addExpectHandler(expectName: java.lang.String, expectFn: js.Function1[/* repeated */ js.Any, _]): FrisbySpec = js.native
   def baseUrl(url: java.lang.String): scala.Unit = js.native
   def create(name: java.lang.String): scala.Unit = js.native
-  def del(args: js.Any*): frisbyLib.frisbyMod.FrisbySpec = js.native
-  def fetch(args: js.Any*): frisbyLib.frisbyMod.FrisbySpec = js.native
+  def del(args: js.Any*): FrisbySpec = js.native
+  def fetch(args: js.Any*): FrisbySpec = js.native
   def formData(): stdLib.FormData = js.native
-  def fromJSON(args: js.Any*): frisbyLib.frisbyMod.FrisbySpec = js.native
-  def get(args: js.Any*): frisbyLib.frisbyMod.FrisbySpec = js.native
+  def fromJSON(args: js.Any*): FrisbySpec = js.native
+  def get(args: js.Any*): FrisbySpec = js.native
   def globalSetup(opts: js.Object): scala.Unit = js.native
-  def patch(args: js.Any*): frisbyLib.frisbyMod.FrisbySpec = js.native
-  def post(args: js.Any*): frisbyLib.frisbyMod.FrisbySpec = js.native
-  def put(args: js.Any*): frisbyLib.frisbyMod.FrisbySpec = js.native
-  def removeExpectHandler(expectName: java.lang.String, expectFn: js.Function1[/* repeated */ js.Any, _]): frisbyLib.frisbyMod.FrisbySpec = js.native
-  def setup(args: js.Any*): frisbyLib.frisbyMod.FrisbySpec = js.native
-  def timeout(args: js.Any*): frisbyLib.frisbyMod.FrisbySpec = js.native
-  def use(args: js.Any*): frisbyLib.frisbyMod.FrisbySpec = js.native
+  def patch(args: js.Any*): FrisbySpec = js.native
+  def post(args: js.Any*): FrisbySpec = js.native
+  def put(args: js.Any*): FrisbySpec = js.native
+  def removeExpectHandler(expectName: java.lang.String, expectFn: js.Function1[/* repeated */ js.Any, _]): FrisbySpec = js.native
+  def setup(args: js.Any*): FrisbySpec = js.native
+  def timeout(args: js.Any*): FrisbySpec = js.native
+  def use(args: js.Any*): FrisbySpec = js.native
 }
 

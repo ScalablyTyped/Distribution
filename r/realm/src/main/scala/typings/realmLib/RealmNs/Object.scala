@@ -31,12 +31,12 @@ trait Object extends js.Object {
 object Object {
   @scala.inline
   def apply(
-    isValid: js.Function0[scala.Boolean],
-    linkingObjects: js.Function2[java.lang.String, java.lang.String, Results[js.Any with Object]],
-    linkingObjectsCount: js.Function0[scala.Double],
-    objectSchema: js.Function0[ObjectSchema]
+    isValid: () => scala.Boolean,
+    linkingObjects: (java.lang.String, java.lang.String) => Results[js.Any with Object],
+    linkingObjectsCount: () => scala.Double,
+    objectSchema: () => ObjectSchema
   ): Object = {
-    val __obj = js.Dynamic.literal(isValid = isValid, linkingObjects = linkingObjects, linkingObjectsCount = linkingObjectsCount, objectSchema = objectSchema)
+    val __obj = js.Dynamic.literal(isValid = js.Any.fromFunction0(isValid), linkingObjects = js.Any.fromFunction2(linkingObjects), linkingObjectsCount = js.Any.fromFunction0(linkingObjectsCount), objectSchema = js.Any.fromFunction0(objectSchema))
   
     __obj.asInstanceOf[Object]
   }

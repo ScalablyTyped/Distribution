@@ -13,13 +13,13 @@ trait SurfaceClickEvent extends SurfaceEvent {
 object SurfaceClickEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Surface,
     element: Element = null,
     originalEvent: js.Any = null
   ): SurfaceClickEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (element != null) __obj.updateDynamic("element")(element)
     if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
     __obj.asInstanceOf[SurfaceClickEvent]

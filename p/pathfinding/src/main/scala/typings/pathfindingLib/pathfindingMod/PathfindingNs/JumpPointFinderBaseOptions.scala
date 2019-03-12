@@ -12,11 +12,11 @@ trait JumpPointFinderBaseOptions extends Heuristic {
 object JumpPointFinderBaseOptions {
   @scala.inline
   def apply(
-    heuristic: js.Function2[/* dx */ scala.Double, /* dy */ scala.Double, scala.Double] = null,
+    heuristic: (/* dx */ scala.Double, /* dy */ scala.Double) => scala.Double = null,
     trackJumpRecursion: js.UndefOr[scala.Boolean] = js.undefined
   ): JumpPointFinderBaseOptions = {
     val __obj = js.Dynamic.literal()
-    if (heuristic != null) __obj.updateDynamic("heuristic")(heuristic)
+    if (heuristic != null) __obj.updateDynamic("heuristic")(js.Any.fromFunction2(heuristic))
     if (!js.isUndefined(trackJumpRecursion)) __obj.updateDynamic("trackJumpRecursion")(trackJumpRecursion)
     __obj.asInstanceOf[JumpPointFinderBaseOptions]
   }

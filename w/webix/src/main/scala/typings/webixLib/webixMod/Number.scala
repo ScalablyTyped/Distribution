@@ -15,12 +15,12 @@ trait Number extends js.Object {
 object Number {
   @scala.inline
   def apply(
-    format: js.Function2[scala.Double, js.Any, java.lang.String],
-    getConfig: js.Function1[java.lang.String, js.Any],
-    numToStr: js.Function1[js.Any, webixLib.WebixCallback],
-    parse: js.Function2[java.lang.String, js.Any, scala.Double]
+    format: (scala.Double, js.Any) => java.lang.String,
+    getConfig: java.lang.String => js.Any,
+    numToStr: js.Any => webixLib.WebixCallback,
+    parse: (java.lang.String, js.Any) => scala.Double
   ): Number = {
-    val __obj = js.Dynamic.literal(format = format, getConfig = getConfig, numToStr = numToStr, parse = parse)
+    val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format), getConfig = js.Any.fromFunction1(getConfig), numToStr = js.Any.fromFunction1(numToStr), parse = js.Any.fromFunction2(parse))
   
     __obj.asInstanceOf[Number]
   }

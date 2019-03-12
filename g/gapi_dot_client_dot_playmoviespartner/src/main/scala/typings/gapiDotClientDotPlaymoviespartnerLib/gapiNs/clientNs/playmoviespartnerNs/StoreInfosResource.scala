@@ -22,12 +22,9 @@ object StoreInfosResource {
   @scala.inline
   def apply(
     country: CountryResource,
-    list: js.Function1[
-      gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountIdAltBearertokenCallbackCountries, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListStoreInfosResponse]
-    ]
+    list: gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountIdAltBearertokenCallbackCountries => gapiDotClientLib.gapiNs.clientNs.Request[ListStoreInfosResponse]
   ): StoreInfosResource = {
-    val __obj = js.Dynamic.literal(country = country, list = list)
+    val __obj = js.Dynamic.literal(country = country, list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[StoreInfosResource]
   }

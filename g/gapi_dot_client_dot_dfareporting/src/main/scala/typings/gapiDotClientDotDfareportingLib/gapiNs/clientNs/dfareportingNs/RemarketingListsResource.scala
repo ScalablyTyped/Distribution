@@ -21,28 +21,13 @@ trait RemarketingListsResource extends js.Object {
 object RemarketingListsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RemarketingList]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RemarketingList]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_ActiveAdvertiserIdAltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RemarketingListsListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RemarketingList]
-    ],
-    update: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RemarketingList]
-    ]
+    get: gapiDotClientDotDfareportingLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[RemarketingList],
+    insert: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[RemarketingList],
+    list: gapiDotClientDotDfareportingLib.Anon_ActiveAdvertiserIdAltFields => gapiDotClientLib.gapiNs.clientNs.Request[RemarketingListsListResponse],
+    patch: gapiDotClientDotDfareportingLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[RemarketingList],
+    update: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[RemarketingList]
   ): RemarketingListsResource = {
-    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[RemarketingListsResource]
   }

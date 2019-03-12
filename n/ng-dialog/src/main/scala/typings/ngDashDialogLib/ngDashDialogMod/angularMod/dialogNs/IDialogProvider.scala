@@ -32,11 +32,11 @@ object IDialogProvider {
   @scala.inline
   def apply(
     $get: js.Any,
-    setDefaults: js.Function1[IDialogOptions, scala.Unit],
-    setForceBodyReload: js.Function1[scala.Boolean, scala.Unit],
-    setForceHtmlReload: js.Function1[scala.Boolean, scala.Unit]
+    setDefaults: IDialogOptions => scala.Unit,
+    setForceBodyReload: scala.Boolean => scala.Unit,
+    setForceHtmlReload: scala.Boolean => scala.Unit
   ): IDialogProvider = {
-    val __obj = js.Dynamic.literal($get = $get, setDefaults = setDefaults, setForceBodyReload = setForceBodyReload, setForceHtmlReload = setForceHtmlReload)
+    val __obj = js.Dynamic.literal($get = $get, setDefaults = js.Any.fromFunction1(setDefaults), setForceBodyReload = js.Any.fromFunction1(setForceBodyReload), setForceHtmlReload = js.Any.fromFunction1(setForceHtmlReload))
   
     __obj.asInstanceOf[IDialogProvider]
   }

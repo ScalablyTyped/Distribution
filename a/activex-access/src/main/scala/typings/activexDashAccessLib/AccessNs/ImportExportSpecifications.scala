@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line:interface-name
 @js.native
 trait ImportExportSpecifications extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   val Count: scala.Double = js.native
   val Parent: js.Any = js.native
   def apply(Index: java.lang.String): ImportExportSpecification = js.native

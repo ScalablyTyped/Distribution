@@ -13,12 +13,12 @@ trait ProgressMethods extends js.Object {
 object ProgressMethods {
   @scala.inline
   def apply(
-    getProgress: js.Function0[scala.Double] = null,
-    setProgress: js.Function1[/* progress */ scala.Double, ProgressMethods] = null
+    getProgress: () => scala.Double = null,
+    setProgress: /* progress */ scala.Double => ProgressMethods = null
   ): ProgressMethods = {
     val __obj = js.Dynamic.literal()
-    if (getProgress != null) __obj.updateDynamic("getProgress")(getProgress)
-    if (setProgress != null) __obj.updateDynamic("setProgress")(setProgress)
+    if (getProgress != null) __obj.updateDynamic("getProgress")(js.Any.fromFunction0(getProgress))
+    if (setProgress != null) __obj.updateDynamic("setProgress")(js.Any.fromFunction1(setProgress))
     __obj.asInstanceOf[ProgressMethods]
   }
 }

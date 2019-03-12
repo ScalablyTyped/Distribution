@@ -30,11 +30,11 @@ trait Dialog extends js.Object {
 object Dialog {
   @scala.inline
   def apply(
-    addEventHandler: js.Function2[EventType, js.Function, scala.Unit],
-    close: js.Function0[scala.Unit],
-    sendMessage: js.Function1[java.lang.String, scala.Unit]
+    addEventHandler: (EventType, js.Function) => scala.Unit,
+    close: () => scala.Unit,
+    sendMessage: java.lang.String => scala.Unit
   ): Dialog = {
-    val __obj = js.Dynamic.literal(addEventHandler = addEventHandler, close = close, sendMessage = sendMessage)
+    val __obj = js.Dynamic.literal(addEventHandler = js.Any.fromFunction2(addEventHandler), close = js.Any.fromFunction0(close), sendMessage = js.Any.fromFunction1(sendMessage))
   
     __obj.asInstanceOf[Dialog]
   }

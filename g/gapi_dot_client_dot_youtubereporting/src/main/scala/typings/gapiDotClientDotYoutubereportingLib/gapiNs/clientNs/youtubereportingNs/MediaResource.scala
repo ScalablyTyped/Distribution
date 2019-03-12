@@ -16,12 +16,9 @@ trait MediaResource extends js.Object {
 object MediaResource {
   @scala.inline
   def apply(
-    download: js.Function1[
-      gapiDotClientDotYoutubereportingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Media]
-    ]
+    download: gapiDotClientDotYoutubereportingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Media]
   ): MediaResource = {
-    val __obj = js.Dynamic.literal(download = download)
+    val __obj = js.Dynamic.literal(download = js.Any.fromFunction1(download))
   
     __obj.asInstanceOf[MediaResource]
   }

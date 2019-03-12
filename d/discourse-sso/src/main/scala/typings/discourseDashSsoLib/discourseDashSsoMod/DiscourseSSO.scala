@@ -14,14 +14,11 @@ trait DiscourseSSO extends js.Object {
 object DiscourseSSO {
   @scala.inline
   def apply(
-    buildLoginString: js.Function1[
-      discourseDashSsoLib.discourseDashSsoMod.DiscourseSSONs.UserParams, 
-      java.lang.String
-    ],
-    getNonce: js.Function1[java.lang.String, java.lang.String],
-    validate: js.Function2[java.lang.String, java.lang.String, scala.Boolean]
+    buildLoginString: discourseDashSsoLib.discourseDashSsoMod.DiscourseSSONs.UserParams => java.lang.String,
+    getNonce: java.lang.String => java.lang.String,
+    validate: (java.lang.String, java.lang.String) => scala.Boolean
   ): DiscourseSSO = {
-    val __obj = js.Dynamic.literal(buildLoginString = buildLoginString, getNonce = getNonce, validate = validate)
+    val __obj = js.Dynamic.literal(buildLoginString = js.Any.fromFunction1(buildLoginString), getNonce = js.Any.fromFunction1(getNonce), validate = js.Any.fromFunction2(validate))
   
     __obj.asInstanceOf[DiscourseSSO]
   }

@@ -18,51 +18,23 @@ object JQueryFileUploadDone {
     result: js.Any,
     textStatus: java.lang.String,
     active: js.Function = null,
-    add: js.Function2[
-      /* e */ jqueryLib.JQueryEventObject, 
-      /* data */ JqueryFileUploadAddObject, 
-      scala.Unit
-    ] = null,
-    always: js.Function2[/* e */ jqueryLib.JQueryEventObject, /* data */ JQueryFileInputOptions, scala.Unit] = null,
+    add: (/* e */ jqueryLib.JQueryEventObject, /* data */ JqueryFileUploadAddObject) => scala.Unit = null,
+    always: (/* e */ jqueryLib.JQueryEventObject, /* data */ JQueryFileInputOptions) => scala.Unit = null,
     autoUpload: js.UndefOr[scala.Boolean] = js.undefined,
     bitrateInterval: scala.Int | scala.Double = null,
     cache: js.UndefOr[scala.Boolean] = js.undefined,
-    change: js.Function2[
-      /* e */ jqueryLib.JQueryEventObject, 
-      /* data */ JQueryFileUploadChangeObject, 
-      scala.Unit
-    ] = null,
-    chunkalways: js.Function2[
-      /* e */ jqueryLib.JQueryEventObject, 
-      /* data */ JQueryFileUploadChunkObject, 
-      scala.Unit
-    ] = null,
-    chunkdone: js.Function2[
-      /* e */ jqueryLib.JQueryEventObject, 
-      /* data */ JQueryFileUploadChunkObject, 
-      scala.Unit
-    ] = null,
-    chunkfail: js.Function2[
-      /* e */ jqueryLib.JQueryEventObject, 
-      /* data */ JQueryFileUploadChunkObject, 
-      scala.Unit
-    ] = null,
-    chunksend: js.Function2[
-      /* e */ jqueryLib.JQueryEventObject, 
-      /* data */ JQueryFileUploadChunkObject, 
-      scala.Unit
-    ] = null,
+    change: (/* e */ jqueryLib.JQueryEventObject, /* data */ JQueryFileUploadChangeObject) => scala.Unit = null,
+    chunkalways: (/* e */ jqueryLib.JQueryEventObject, /* data */ JQueryFileUploadChunkObject) => scala.Unit = null,
+    chunkdone: (/* e */ jqueryLib.JQueryEventObject, /* data */ JQueryFileUploadChunkObject) => scala.Unit = null,
+    chunkfail: (/* e */ jqueryLib.JQueryEventObject, /* data */ JQueryFileUploadChunkObject) => scala.Unit = null,
+    chunksend: (/* e */ jqueryLib.JQueryEventObject, /* data */ JQueryFileUploadChunkObject) => scala.Unit = null,
     contentType: java.lang.String = null,
     dataType: java.lang.String = null,
-    done: js.Function2[/* e */ jqueryLib.JQueryEventObject, /* data */ JQueryFileUploadDone, scala.Unit] = null,
-    dragover: js.Function1[/* e */ jqueryLib.JQueryEventObject, scala.Unit] = null,
-    drop: js.Function2[
-      /* e */ jqueryLib.JQueryEventObject, 
-      /* data */ JQueryFileUploadFilesObject, 
-      scala.Unit
-    ] = null,
+    done: (/* e */ jqueryLib.JQueryEventObject, /* data */ JQueryFileUploadDone) => scala.Unit = null,
+    dragover: /* e */ jqueryLib.JQueryEventObject => scala.Unit = null,
+    drop: (/* e */ jqueryLib.JQueryEventObject, /* data */ JQueryFileUploadFilesObject) => scala.Unit = null,
     dropZone: stdLib.Element | js.Array[stdLib.Element] | JQuery | java.lang.String = null,
-    fail: js.Function2[/* e */ jqueryLib.JQueryEventObject, /* data */ JQueryFileUploadDone, scala.Unit] = null,
+    fail: (/* e */ jqueryLib.JQueryEventObject, /* data */ JQueryFileUploadDone) => scala.Unit = null,
     fileInput: stdLib.Element | js.Array[stdLib.Element] | JQuery | java.lang.String = null,
     files: js.Any = null,
     forceIframeTransport: js.UndefOr[scala.Boolean] = js.undefined,
@@ -77,38 +49,22 @@ object JQueryFileUploadDone {
     messages: js.Any = null,
     multipart: js.UndefOr[scala.Boolean] = js.undefined,
     paramName: js.Any = null,
-    paste: js.Function2[
-      /* e */ jqueryLib.JQueryEventObject, 
-      /* data */ JQueryFileUploadFilesObject, 
-      scala.Unit
-    ] = null,
+    paste: (/* e */ jqueryLib.JQueryEventObject, /* data */ JQueryFileUploadFilesObject) => scala.Unit = null,
     pasteZone: stdLib.Element | js.Array[stdLib.Element] | JQuery | java.lang.String = null,
     postMessage: java.lang.String = null,
     processData: js.UndefOr[scala.Boolean] = js.undefined,
-    progress: js.Function2[
-      /* e */ jqueryLib.JQueryEventObject, 
-      /* data */ JQueryFileUploadProgressObject, 
-      scala.Unit
-    ] = null,
+    progress: (/* e */ jqueryLib.JQueryEventObject, /* data */ JQueryFileUploadProgressObject) => scala.Unit = null,
     progressInterval: scala.Int | scala.Double = null,
-    progressall: js.Function2[
-      /* e */ jqueryLib.JQueryEventObject, 
-      /* data */ JQueryFileUploadProgressAllObject, 
-      scala.Unit
-    ] = null,
+    progressall: (/* e */ jqueryLib.JQueryEventObject, /* data */ JQueryFileUploadProgressAllObject) => scala.Unit = null,
     recalculateProgress: js.UndefOr[scala.Boolean] = js.undefined,
     redirect: java.lang.String = null,
     redirectParamName: java.lang.String = null,
     replaceFileInput: js.UndefOr[scala.Boolean] = js.undefined,
-    send: js.Function2[
-      /* e */ jqueryLib.JQueryEventObject, 
-      /* data */ JQueryFileUploadProgressObject, 
-      scala.Unit
-    ] = null,
+    send: (/* e */ jqueryLib.JQueryEventObject, /* data */ JQueryFileUploadProgressObject) => scala.Unit = null,
     sequentialUploads: js.UndefOr[scala.Boolean] = js.undefined,
     singleFileUploads: js.UndefOr[scala.Boolean] = js.undefined,
-    start: js.Function1[/* e */ jqueryLib.JQueryEventObject, scala.Unit] = null,
-    stop: js.Function1[/* e */ jqueryLib.JQueryEventObject, scala.Unit] = null,
+    start: /* e */ jqueryLib.JQueryEventObject => scala.Unit = null,
+    stop: /* e */ jqueryLib.JQueryEventObject => scala.Unit = null,
     submit: js.Function = null,
     timeout: scala.Int | scala.Double = null,
     `type`: java.lang.String = null,
@@ -118,23 +74,23 @@ object JQueryFileUploadDone {
   ): JQueryFileUploadDone = {
     val __obj = js.Dynamic.literal(errorThrown = errorThrown, headers = headers, jqXHR = jqXHR, result = result, textStatus = textStatus)
     if (active != null) __obj.updateDynamic("active")(active)
-    if (add != null) __obj.updateDynamic("add")(add)
-    if (always != null) __obj.updateDynamic("always")(always)
+    if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction2(add))
+    if (always != null) __obj.updateDynamic("always")(js.Any.fromFunction2(always))
     if (!js.isUndefined(autoUpload)) __obj.updateDynamic("autoUpload")(autoUpload)
     if (bitrateInterval != null) __obj.updateDynamic("bitrateInterval")(bitrateInterval.asInstanceOf[js.Any])
     if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (chunkalways != null) __obj.updateDynamic("chunkalways")(chunkalways)
-    if (chunkdone != null) __obj.updateDynamic("chunkdone")(chunkdone)
-    if (chunkfail != null) __obj.updateDynamic("chunkfail")(chunkfail)
-    if (chunksend != null) __obj.updateDynamic("chunksend")(chunksend)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
+    if (chunkalways != null) __obj.updateDynamic("chunkalways")(js.Any.fromFunction2(chunkalways))
+    if (chunkdone != null) __obj.updateDynamic("chunkdone")(js.Any.fromFunction2(chunkdone))
+    if (chunkfail != null) __obj.updateDynamic("chunkfail")(js.Any.fromFunction2(chunkfail))
+    if (chunksend != null) __obj.updateDynamic("chunksend")(js.Any.fromFunction2(chunksend))
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
     if (dataType != null) __obj.updateDynamic("dataType")(dataType)
-    if (done != null) __obj.updateDynamic("done")(done)
-    if (dragover != null) __obj.updateDynamic("dragover")(dragover)
-    if (drop != null) __obj.updateDynamic("drop")(drop)
+    if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction2(done))
+    if (dragover != null) __obj.updateDynamic("dragover")(js.Any.fromFunction1(dragover))
+    if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction2(drop))
     if (dropZone != null) __obj.updateDynamic("dropZone")(dropZone.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction2(fail))
     if (fileInput != null) __obj.updateDynamic("fileInput")(fileInput.asInstanceOf[js.Any])
     if (files != null) __obj.updateDynamic("files")(files)
     if (!js.isUndefined(forceIframeTransport)) __obj.updateDynamic("forceIframeTransport")(forceIframeTransport)
@@ -149,22 +105,22 @@ object JQueryFileUploadDone {
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (!js.isUndefined(multipart)) __obj.updateDynamic("multipart")(multipart)
     if (paramName != null) __obj.updateDynamic("paramName")(paramName)
-    if (paste != null) __obj.updateDynamic("paste")(paste)
+    if (paste != null) __obj.updateDynamic("paste")(js.Any.fromFunction2(paste))
     if (pasteZone != null) __obj.updateDynamic("pasteZone")(pasteZone.asInstanceOf[js.Any])
     if (postMessage != null) __obj.updateDynamic("postMessage")(postMessage)
     if (!js.isUndefined(processData)) __obj.updateDynamic("processData")(processData)
-    if (progress != null) __obj.updateDynamic("progress")(progress)
+    if (progress != null) __obj.updateDynamic("progress")(js.Any.fromFunction2(progress))
     if (progressInterval != null) __obj.updateDynamic("progressInterval")(progressInterval.asInstanceOf[js.Any])
-    if (progressall != null) __obj.updateDynamic("progressall")(progressall)
+    if (progressall != null) __obj.updateDynamic("progressall")(js.Any.fromFunction2(progressall))
     if (!js.isUndefined(recalculateProgress)) __obj.updateDynamic("recalculateProgress")(recalculateProgress)
     if (redirect != null) __obj.updateDynamic("redirect")(redirect)
     if (redirectParamName != null) __obj.updateDynamic("redirectParamName")(redirectParamName)
     if (!js.isUndefined(replaceFileInput)) __obj.updateDynamic("replaceFileInput")(replaceFileInput)
-    if (send != null) __obj.updateDynamic("send")(send)
+    if (send != null) __obj.updateDynamic("send")(js.Any.fromFunction2(send))
     if (!js.isUndefined(sequentialUploads)) __obj.updateDynamic("sequentialUploads")(sequentialUploads)
     if (!js.isUndefined(singleFileUploads)) __obj.updateDynamic("singleFileUploads")(singleFileUploads)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
     if (submit != null) __obj.updateDynamic("submit")(submit)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`)

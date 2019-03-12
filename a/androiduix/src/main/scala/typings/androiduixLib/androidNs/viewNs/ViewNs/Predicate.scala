@@ -12,8 +12,8 @@ trait Predicate[T] extends js.Object {
 
 object Predicate {
   @scala.inline
-  def apply[T](apply: js.Function1[T, scala.Boolean]): Predicate[T] = {
-    val __obj = js.Dynamic.literal(apply = apply)
+  def apply[T](apply: T => scala.Boolean): Predicate[T] = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
   
     __obj.asInstanceOf[Predicate[T]]
   }

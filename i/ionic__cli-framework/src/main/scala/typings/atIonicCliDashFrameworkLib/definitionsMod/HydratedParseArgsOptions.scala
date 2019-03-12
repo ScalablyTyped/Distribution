@@ -26,12 +26,12 @@ object HydratedParseArgsOptions {
     string: js.Array[java.lang.String],
     `--`: js.UndefOr[scala.Boolean] = js.undefined,
     stopEarly: js.UndefOr[scala.Boolean] = js.undefined,
-    unknown: js.Function1[/* arg */ java.lang.String, scala.Boolean] = null
+    unknown: /* arg */ java.lang.String => scala.Boolean = null
   ): HydratedParseArgsOptions = {
     val __obj = js.Dynamic.literal(alias = alias, boolean = boolean, default = default, string = string)
     if (!js.isUndefined(`--`)) __obj.updateDynamic("--")(`--`)
     if (!js.isUndefined(stopEarly)) __obj.updateDynamic("stopEarly")(stopEarly)
-    if (unknown != null) __obj.updateDynamic("unknown")(unknown)
+    if (unknown != null) __obj.updateDynamic("unknown")(js.Any.fromFunction1(unknown))
     __obj.asInstanceOf[HydratedParseArgsOptions]
   }
 }

@@ -19,14 +19,14 @@ object DataPilotSourceHierarchy {
   def apply(
     Levels: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
     Name: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getLevels: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    getName: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setName: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getLevels: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    getName: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setName: java.lang.String => scala.Unit
   ): DataPilotSourceHierarchy = {
-    val __obj = js.Dynamic.literal(Levels = Levels, Name = Name, acquire = acquire, getLevels = getLevels, getName = getName, queryInterface = queryInterface, release = release, setName = setName)
+    val __obj = js.Dynamic.literal(Levels = Levels, Name = Name, acquire = js.Any.fromFunction0(acquire), getLevels = js.Any.fromFunction0(getLevels), getName = js.Any.fromFunction0(getName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setName = js.Any.fromFunction1(setName))
   
     __obj.asInstanceOf[DataPilotSourceHierarchy]
   }

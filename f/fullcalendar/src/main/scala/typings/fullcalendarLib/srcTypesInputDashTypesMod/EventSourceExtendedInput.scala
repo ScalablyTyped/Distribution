@@ -40,13 +40,13 @@ object EventSourceExtendedInput {
     converters: jqueryLib.JQueryNs.PlainObject[(js.Function1[/* value */ _, _]) | jqueryLib.jqueryLibNumbers.`true`] = null,
     crossDomain: js.UndefOr[scala.Boolean] = js.undefined,
     data: jqueryLib.JQueryNs.PlainObject[_] | java.lang.String = null,
-    dataFilter: js.Function2[/* data */ java.lang.String, /* type */ java.lang.String, _] = null,
+    dataFilter: (/* data */ java.lang.String, /* type */ java.lang.String) => _ = null,
     dataType: jqueryLib.jqueryLibStrings.xml | jqueryLib.jqueryLibStrings.html | jqueryLib.jqueryLibStrings.script | jqueryLib.jqueryLibStrings.json | jqueryLib.jqueryLibStrings.jsonp | jqueryLib.jqueryLibStrings.text | java.lang.String = null,
     durationEditable: js.UndefOr[scala.Boolean] = js.undefined,
     editable: js.UndefOr[scala.Boolean] = js.undefined,
     endParam: java.lang.String = null,
     error: jqueryLib.JQueryNs.TypeOrArray[jqueryLib.JQueryNs.AjaxNs.ErrorCallback[js.Any]] = null,
-    eventDataTransform: js.Function1[/* eventData */ js.Any, EventObjectInput] = null,
+    eventDataTransform: /* eventData */ js.Any => EventObjectInput = null,
     events: EventSourceSimpleInput = null,
     global: js.UndefOr[scala.Boolean] = js.undefined,
     headers: jqueryLib.JQueryNs.PlainObject[js.UndefOr[java.lang.String | scala.Null]] = null,
@@ -71,7 +71,7 @@ object EventSourceExtendedInput {
     `type`: java.lang.String = null,
     url: java.lang.String = null,
     username: java.lang.String = null,
-    xhr: js.Function0[stdLib.XMLHttpRequest] = null,
+    xhr: () => stdLib.XMLHttpRequest = null,
     xhrFields: jqueryLib.JQueryNs.AjaxNs.XHRFields = null
   ): EventSourceExtendedInput = {
     val __obj = js.Dynamic.literal()
@@ -92,13 +92,13 @@ object EventSourceExtendedInput {
     if (converters != null) __obj.updateDynamic("converters")(converters)
     if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataFilter != null) __obj.updateDynamic("dataFilter")(dataFilter)
+    if (dataFilter != null) __obj.updateDynamic("dataFilter")(js.Any.fromFunction2(dataFilter))
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (!js.isUndefined(durationEditable)) __obj.updateDynamic("durationEditable")(durationEditable)
     if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
     if (endParam != null) __obj.updateDynamic("endParam")(endParam)
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (eventDataTransform != null) __obj.updateDynamic("eventDataTransform")(eventDataTransform)
+    if (eventDataTransform != null) __obj.updateDynamic("eventDataTransform")(js.Any.fromFunction1(eventDataTransform))
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
     if (headers != null) __obj.updateDynamic("headers")(headers)
@@ -123,7 +123,7 @@ object EventSourceExtendedInput {
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (url != null) __obj.updateDynamic("url")(url)
     if (username != null) __obj.updateDynamic("username")(username)
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    if (xhr != null) __obj.updateDynamic("xhr")(js.Any.fromFunction0(xhr))
     if (xhrFields != null) __obj.updateDynamic("xhrFields")(xhrFields)
     __obj.asInstanceOf[EventSourceExtendedInput]
   }

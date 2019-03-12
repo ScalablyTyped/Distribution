@@ -77,81 +77,57 @@ trait Builder extends js.Object {
 object Builder {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      js.Function3[
-        /* err */ js.Any, 
-        /* document */ js.Any, 
-        /* traversal */ js.UndefOr[Traversal], 
-        scala.Unit
-      ], 
-      InAction
-    ],
-    follow: js.Function2[java.lang.String, /* repeated */ java.lang.String, Builder],
-    get: js.Function1[
-      js.Function3[
-        /* err */ js.Any, 
-        /* document */ js.Any, 
-        /* traversal */ js.UndefOr[Traversal], 
-        scala.Unit
-      ], 
-      InAction
-    ],
-    getResource: js.Function1[
-      js.Function3[
-        /* err */ js.Any, 
-        /* document */ js.Any, 
-        /* traversal */ js.UndefOr[Traversal], 
-        scala.Unit
-      ], 
-      InAction
-    ],
-    getUrl: js.Function1[
-      js.Function3[
-        /* err */ js.Any, 
-        /* document */ js.Any, 
-        /* traversal */ js.UndefOr[Traversal], 
-        scala.Unit
-      ], 
-      InAction
-    ],
-    json: js.Function0[Builder],
-    jsonHal: js.Function0[Builder],
-    newRequest: js.Function0[Builder],
-    patch: js.Function2[
-      js.Any, 
-      js.Function3[
-        /* err */ js.Any, 
-        /* document */ js.Any, 
-        /* traversal */ js.UndefOr[Traversal], 
-        scala.Unit
-      ], 
-      InAction
-    ],
-    post: js.Function2[
-      js.Any, 
-      js.Function3[
-        /* err */ js.Any, 
-        /* document */ js.Any, 
-        /* traversal */ js.UndefOr[Traversal], 
-        scala.Unit
-      ], 
-      InAction
-    ],
-    put: js.Function2[
-      js.Any, 
-      js.Function3[
-        /* err */ js.Any, 
-        /* document */ js.Any, 
-        /* traversal */ js.UndefOr[Traversal], 
-        scala.Unit
-      ], 
-      InAction
-    ],
-    setMediaType: js.Function1[java.lang.String, Builder],
-    withRequestOptions: js.Function1[js.Any, Builder],
-    withTemplateParameters: js.Function1[js.Any, Builder]
+    delete: js.Function3[
+      /* err */ js.Any, 
+      /* document */ js.Any, 
+      /* traversal */ js.UndefOr[Traversal], 
+      scala.Unit
+    ] => InAction,
+    follow: (java.lang.String, /* repeated */ java.lang.String) => Builder,
+    get: js.Function3[
+      /* err */ js.Any, 
+      /* document */ js.Any, 
+      /* traversal */ js.UndefOr[Traversal], 
+      scala.Unit
+    ] => InAction,
+    getResource: js.Function3[
+      /* err */ js.Any, 
+      /* document */ js.Any, 
+      /* traversal */ js.UndefOr[Traversal], 
+      scala.Unit
+    ] => InAction,
+    getUrl: js.Function3[
+      /* err */ js.Any, 
+      /* document */ js.Any, 
+      /* traversal */ js.UndefOr[Traversal], 
+      scala.Unit
+    ] => InAction,
+    json: () => Builder,
+    jsonHal: () => Builder,
+    newRequest: () => Builder,
+    patch: (js.Any, js.Function3[
+      /* err */ js.Any, 
+      /* document */ js.Any, 
+      /* traversal */ js.UndefOr[Traversal], 
+      scala.Unit
+    ]) => InAction,
+    post: (js.Any, js.Function3[
+      /* err */ js.Any, 
+      /* document */ js.Any, 
+      /* traversal */ js.UndefOr[Traversal], 
+      scala.Unit
+    ]) => InAction,
+    put: (js.Any, js.Function3[
+      /* err */ js.Any, 
+      /* document */ js.Any, 
+      /* traversal */ js.UndefOr[Traversal], 
+      scala.Unit
+    ]) => InAction,
+    setMediaType: java.lang.String => Builder,
+    withRequestOptions: js.Any => Builder,
+    withTemplateParameters: js.Any => Builder
   ): Builder = {
-    val __obj = js.Dynamic.literal(delete = delete, follow = follow, get = get, getResource = getResource, getUrl = getUrl, json = json, jsonHal = jsonHal, newRequest = newRequest, patch = patch, post = post, put = put, setMediaType = setMediaType, withRequestOptions = withRequestOptions, withTemplateParameters = withTemplateParameters)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), follow = js.Any.fromFunction2(follow), get = js.Any.fromFunction1(get), getResource = js.Any.fromFunction1(getResource), getUrl = js.Any.fromFunction1(getUrl), json = js.Any.fromFunction0(json), jsonHal = js.Any.fromFunction0(jsonHal), newRequest = js.Any.fromFunction0(newRequest), patch = js.Any.fromFunction2(patch), post = js.Any.fromFunction2(post), put = js.Any.fromFunction2(put), setMediaType = js.Any.fromFunction1(setMediaType), withRequestOptions = js.Any.fromFunction1(withRequestOptions), withTemplateParameters = js.Any.fromFunction1(withTemplateParameters))
   
     __obj.asInstanceOf[Builder]
   }

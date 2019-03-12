@@ -43,42 +43,42 @@ object ^ extends js.Object {
     * @param affected Element or elements affected by the added items. Typically, this is all other items displayed in the list.
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
-  def createAddToListAnimation(added: js.Any, affected: js.Any): winjsLib.WinJSNs.UINs.AnimationNs.IAnimationMethodResponse = js.native
+  def createAddToListAnimation(added: js.Any, affected: js.Any): IAnimationMethodResponse = js.native
   /**
     * Creates an object that performs an animation that adds an item or items to a list of search results.
     * @param added Element or elements to add to the list.
     * @param affected Element or elements affected by the added items. Typically, this is all other items displayed in the list.
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
-  def createAddToSearchListAnimation(added: js.Any, affected: js.Any): winjsLib.WinJSNs.UINs.AnimationNs.IAnimationMethodResponse = js.native
+  def createAddToSearchListAnimation(added: js.Any, affected: js.Any): IAnimationMethodResponse = js.native
   /**
     * Creates an object that performs an animation that collapses a list.
     * @param hidden Element or elements hidden as a result of the collapse.
     * @param affected Element or elements affected by the hidden items. Typically, this is all other items displayed in the list.
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
-  def createCollapseAnimation(hidden: js.Any, affected: js.Any): winjsLib.WinJSNs.UINs.AnimationNs.IAnimationMethodResponse = js.native
+  def createCollapseAnimation(hidden: js.Any, affected: js.Any): IAnimationMethodResponse = js.native
   /**
     * Creates an object that performs an animation that removes an item or items from a list.
     * @param deleted Element or elements to delete from the list.
     * @param remaining Element or elements affected by the removal of the deleted items. Typically, this is all other items displayed in the list.
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
-  def createDeleteFromListAnimation(deleted: js.Any, remaining: js.Any): winjsLib.WinJSNs.UINs.AnimationNs.IAnimationMethodResponse = js.native
+  def createDeleteFromListAnimation(deleted: js.Any, remaining: js.Any): IAnimationMethodResponse = js.native
   /**
     * Creates an object that performs an animation that removes an item or items from a list of search results.
     * @param deleted Element or elements to delete from the list.
     * @param remaining Element or elements affected by the removal of the deleted items. Typically, this is all other items displayed in the list.
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
-  def createDeleteFromSearchListAnimation(deleted: js.Any, remaining: js.Any): winjsLib.WinJSNs.UINs.AnimationNs.IAnimationMethodResponse = js.native
+  def createDeleteFromSearchListAnimation(deleted: js.Any, remaining: js.Any): IAnimationMethodResponse = js.native
   /**
     * Creates an object that performs an animation that expands a list.
     * @param revealed Element or elements revealed by the expansion.
     * @param affected Element or elements affected by the newly revealed items. Typically, this is all other items displayed in the list.
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
-  def createExpandAnimation(revealed: js.Any, affected: js.Any): winjsLib.WinJSNs.UINs.AnimationNs.IAnimationMethodResponse = js.native
+  def createExpandAnimation(revealed: js.Any, affected: js.Any): IAnimationMethodResponse = js.native
   /**
     * Creates an exit and entrance animation to play for a page navigation given the current and incoming pages'
     * animation preferences and whether the pages are navigating forwards or backwards.
@@ -97,13 +97,13 @@ object ^ extends js.Object {
     * @param element Element or elements involved in the peek.
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
-  def createPeekAnimation(element: js.Any): winjsLib.WinJSNs.UINs.AnimationNs.IAnimationMethodResponse = js.native
+  def createPeekAnimation(element: js.Any): IAnimationMethodResponse = js.native
   /**
     * Creates an object that performs an animation that moves an item or items.
     * @param element Element or elements involved in the reposition.
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise object that completes when the animation is finished.
     **/
-  def createRepositionAnimation(element: js.Any): winjsLib.WinJSNs.UINs.AnimationNs.IAnimationMethodResponse = js.native
+  def createRepositionAnimation(element: js.Any): IAnimationMethodResponse = js.native
   /**
     * Performs an animation that fades an item or items in, fading out existing items that occupy the same space.
     * @param incoming Element or elements being faded in.

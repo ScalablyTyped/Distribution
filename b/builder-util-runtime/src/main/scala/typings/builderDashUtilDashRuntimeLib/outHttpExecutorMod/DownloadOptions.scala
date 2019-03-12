@@ -23,16 +23,13 @@ object DownloadOptions {
   def apply(
     cancellationToken: builderDashUtilDashRuntimeLib.outCancellationTokenMod.CancellationToken,
     headers: nodeLib.httpMod.OutgoingHttpHeaders = null,
-    onProgress: js.Function1[
-      /* progress */ builderDashUtilDashRuntimeLib.outProgressCallbackTransformMod.ProgressInfo, 
-      scala.Unit
-    ] = null,
+    onProgress: /* progress */ builderDashUtilDashRuntimeLib.outProgressCallbackTransformMod.ProgressInfo => scala.Unit = null,
     sha2: java.lang.String = null,
     sha512: java.lang.String = null
   ): DownloadOptions = {
     val __obj = js.Dynamic.literal(cancellationToken = cancellationToken)
     if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress)
+    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
     if (sha2 != null) __obj.updateDynamic("sha2")(sha2)
     if (sha512 != null) __obj.updateDynamic("sha512")(sha512)
     __obj.asInstanceOf[DownloadOptions]

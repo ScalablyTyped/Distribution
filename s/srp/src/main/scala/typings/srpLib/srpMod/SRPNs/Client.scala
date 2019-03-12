@@ -16,13 +16,13 @@ trait Client extends js.Object {
 object Client {
   @scala.inline
   def apply(
-    checkM2: js.Function1[nodeLib.Buffer, scala.Unit],
-    computeA: js.Function0[nodeLib.Buffer],
-    computeK: js.Function0[nodeLib.Buffer],
-    computeM1: js.Function0[nodeLib.Buffer],
-    setB: js.Function1[nodeLib.Buffer, scala.Unit]
+    checkM2: nodeLib.Buffer => scala.Unit,
+    computeA: () => nodeLib.Buffer,
+    computeK: () => nodeLib.Buffer,
+    computeM1: () => nodeLib.Buffer,
+    setB: nodeLib.Buffer => scala.Unit
   ): Client = {
-    val __obj = js.Dynamic.literal(checkM2 = checkM2, computeA = computeA, computeK = computeK, computeM1 = computeM1, setB = setB)
+    val __obj = js.Dynamic.literal(checkM2 = js.Any.fromFunction1(checkM2), computeA = js.Any.fromFunction0(computeA), computeK = js.Any.fromFunction0(computeK), computeM1 = js.Any.fromFunction0(computeM1), setB = js.Any.fromFunction1(setB))
   
     __obj.asInstanceOf[Client]
   }

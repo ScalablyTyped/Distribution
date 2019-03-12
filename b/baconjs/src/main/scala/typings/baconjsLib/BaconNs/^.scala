@@ -15,27 +15,27 @@ object ^ extends js.Object {
     * @constant
     * @description The opaque value `sink` function may return. See [Bacon.fromBinder]{@link Bacon.fromBinder}.
     */
-  var more: baconjsLib.BaconNs.More = js.native
+  var more: More = js.native
   /**
     * @property noMore
     * @constant
     * @description The opaque value `sink` function may return. See [Bacon.fromBinder]{@link Bacon.fromBinder}.
     */
-  var noMore: baconjsLib.BaconNs.NoMore = js.native
+  var noMore: NoMore = js.native
   /**
     * @function
     * @description Combines [Property]{@link Bacon.Property}s, [EventStream]{@link Bacon.EventStream}s and constant values so that the result Property will have an array of all property values as its value. Like [Bacon.combineAsArray]{@link Bacon.combineAsArray}, but `streams` are provided as a list of arguments as opposed to a single array.
     * @param {...(A|Observable<E, A>)} streams
     * @returns {Property<E, A[]>}
     */
-  def combineAsArray[E, A](streams: (A | (baconjsLib.BaconNs.Observable[E, A]))*): baconjsLib.BaconNs.Property[E, js.Array[A]] = js.native
+  def combineAsArray[E, A](streams: (A | (Observable[E, A]))*): Property[E, js.Array[A]] = js.native
   /**
     * @function Bacon.combineAsArray
     * @description Combines [Property]{@link Bacon.Property}s, [EventStream]{@link Bacon.EventStream}s and constant values so that the result Property will have an array of all property values as its value. The input array may contain both Properties and EventStreams. In the latter case, the stream is first converted into a Property and then combined with the other Property's.
     * @param {(A|Observable<E, A>)[]} streams
     * @returns {Property<E, A[]>}
     */
-  def combineAsArray[E, A](streams: js.Array[A | (baconjsLib.BaconNs.Observable[E, A])]): baconjsLib.BaconNs.Property[E, js.Array[A]] = js.native
+  def combineAsArray[E, A](streams: js.Array[A | (Observable[E, A])]): Property[E, js.Array[A]] = js.native
   /**
     * @function
     * @description Combines [Property]{@link Bacon.Property}s, [EventStream]{@link Bacon.EventStream}s and constant values using a `template` object.
@@ -43,10 +43,8 @@ object ^ extends js.Object {
     * @returns {Property<E, A>}
     */
   def combineTemplate[E, A](
-    template: org.scalablytyped.runtime.StringDictionary[
-      scala.Double | scala.Boolean | java.lang.String | js.Object | (baconjsLib.BaconNs.Observable[E, _])
-    ]
-  ): baconjsLib.BaconNs.Property[E, A] = js.native
+    template: org.scalablytyped.runtime.StringDictionary[scala.Double | scala.Boolean | java.lang.String | js.Object | (Observable[E, _])]
+  ): Property[E, A] = js.native
   /**
     * @callback Property#combineWith~f
     * @param {...A} args
@@ -59,17 +57,14 @@ object ^ extends js.Object {
     * @param {...(A|Observable<E, A>)} streams
     * @returns {Property<E, B>}
     */
-  def combineWith[A, B](
-    f: js.Function1[/* repeated */ A, B],
-    streams: (A | (baconjsLib.BaconNs.Observable[stdLib.ErrorEvent, A]))*
-  ): baconjsLib.BaconNs.Property[stdLib.ErrorEvent, B] = js.native
+  def combineWith[A, B](f: js.Function1[/* repeated */ A, B], streams: (A | (Observable[stdLib.ErrorEvent, A]))*): Property[stdLib.ErrorEvent, B] = js.native
   /**
     * @function
     * @description Creates a constant [Property]{@link Bacon.Property} with value `x`.
     * @param {A} x
     * @returns {Property<E, A>}
     */
-  def constant[E, A](x: A): baconjsLib.BaconNs.Property[E, A] = js.native
+  def constant[E, A](x: A): Property[E, A] = js.native
   /**
     * @function
     * @description Creates an [EventStream]{@link Bacon.EventStream} that delivers the given series of `values` (given as array) to the first subscriber. The stream ends after these values have been delivered. You can also send [Error]{@link Bacon.Error} events, or any combination of pure values and error events.
@@ -78,7 +73,7 @@ object ^ extends js.Object {
     * @example
     * Bacon.fromArray([1, new Bacon.Error("")]);
     */
-  def fromArray[E, A](values: js.Array[A | baconjsLib.BaconNs.Error[E]]): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def fromArray[E, A](values: js.Array[A | Error[E]]): EventStream[E, A] = js.native
   /**
     * @callback Bacon.fromBinder~subscribe
     * @param {Bacon.fromBinder~sink} sink
@@ -116,14 +111,12 @@ object ^ extends js.Object {
   def fromBinder[E, A](
     subscribe: js.Function1[
       /* sink */ js.Function1[
-        /* value */ baconjsLib.BaconNs.More | baconjsLib.BaconNs.NoMore | A | baconjsLib.BaconNs.Initial[A] | baconjsLib.BaconNs.Next[A] | baconjsLib.BaconNs.End[A] | baconjsLib.BaconNs.Error[E] | (js.Array[
-          A | baconjsLib.BaconNs.Initial[A] | baconjsLib.BaconNs.Next[A] | baconjsLib.BaconNs.End[A] | baconjsLib.BaconNs.Error[E]
-        ]), 
+        /* value */ More | NoMore | A | Initial[A] | Next[A] | End[A] | Error[E] | (js.Array[A | Initial[A] | Next[A] | End[A] | Error[E]]), 
         scala.Unit
       ], 
       js.Function0[scala.Unit]
     ]
-  ): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  ): EventStream[E, A] = js.native
   /**
     * @callback Bacon.fromCallback1~f
     * @param {Bacon.fromCallback1~callback} callback
@@ -147,7 +140,7 @@ object ^ extends js.Object {
     *     }, 1000);
     * });
     */
-  def fromCallback[E, A](f: js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], scala.Unit]): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def fromCallback[E, A](f: js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], scala.Unit]): EventStream[E, A] = js.native
   /**
     * @callback Bacon.fromCallback2~f
     * @param {...*} args
@@ -165,7 +158,7 @@ object ^ extends js.Object {
     *     callback(a + " " + b);
     * }, Bacon.constant("bacon"), "rules").log();
     */
-  def fromCallback[E, A](f: js.Function1[/* repeated */ js.Any, scala.Unit], args: js.Any*): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def fromCallback[E, A](f: js.Function1[/* repeated */ js.Any, scala.Unit], args: js.Any*): EventStream[E, A] = js.native
   /**
     * @function
     * @description Creates an [EventStream]{@link Bacon.EventStream} from a `methodName` method of a given `object`. The function is supposed to call its callback just once.
@@ -174,9 +167,9 @@ object ^ extends js.Object {
     * @param {...*} args
     * @returns {EventStream<E, A>}
     */
-  def fromCallback[E, A](`object`: js.Object, methodName: java.lang.String, args: js.Any*): baconjsLib.BaconNs.EventStream[E, A] = js.native
-  def fromEvent[E, A](target: baconjsLib.JQuery, eventName: java.lang.String): baconjsLib.BaconNs.EventStream[E, A] = js.native
-  def fromEvent[E, A](target: nodeLib.NodeJSNs.EventEmitter, eventName: java.lang.String): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def fromCallback[E, A](`object`: js.Object, methodName: java.lang.String, args: js.Any*): EventStream[E, A] = js.native
+  def fromEvent[E, A](target: baconjsLib.JQuery, eventName: java.lang.String): EventStream[E, A] = js.native
+  def fromEvent[E, A](target: nodeLib.NodeJSNs.EventEmitter, eventName: java.lang.String): EventStream[E, A] = js.native
   /**
     * @function
     * @description Creates an [EventStream]{@link Bacon.EventStream} from events on a DOM EventTarget or Node.JS EventEmitter object, or an object that supports event listeners using `on`/`off` methods.
@@ -194,17 +187,17 @@ object ^ extends js.Object {
     *     alert("Bacon!");
     * });
     */
-  def fromEvent[E, A](target: stdLib.EventTarget, eventName: java.lang.String): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def fromEvent[E, A](target: stdLib.EventTarget, eventName: java.lang.String): EventStream[E, A] = js.native
   def fromEvent[E, A, B](
     target: baconjsLib.JQuery,
     eventName: java.lang.String,
     eventTransformer: js.Function1[/* event */ A, B]
-  ): baconjsLib.BaconNs.EventStream[E, B] = js.native
+  ): EventStream[E, B] = js.native
   def fromEvent[E, A, B](
     target: nodeLib.NodeJSNs.EventEmitter,
     eventName: java.lang.String,
     eventTransformer: js.Function1[/* event */ A, B]
-  ): baconjsLib.BaconNs.EventStream[E, B] = js.native
+  ): EventStream[E, B] = js.native
   /**
     * @callback Bacon.fromEvent~eventTransformer
     * @param {A} event
@@ -226,7 +219,7 @@ object ^ extends js.Object {
     target: stdLib.EventTarget,
     eventName: java.lang.String,
     eventTransformer: js.Function1[/* event */ A, B]
-  ): baconjsLib.BaconNs.EventStream[E, B] = js.native
+  ): EventStream[E, B] = js.native
   /**
     * @callback Bacon.fromNodeCallback~f
     * @param {Bacon.fromNodeCallback~callback} callback
@@ -259,7 +252,7 @@ object ^ extends js.Object {
   def fromNodeCallback[E, A](
     f: js.Function1[/* callback */ js.Function2[/* error */ E, /* data */ A, scala.Unit], scala.Unit],
     args: js.Any*
-  ): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  ): EventStream[E, A] = js.native
   /**
     * @function
     * @description Creates an [EventStream]{@link Bacon.EventStream} from a `methodName` method of a given `object`.
@@ -268,7 +261,7 @@ object ^ extends js.Object {
     * @param {...*} args
     * @returns {EventStream<E, A>}
     */
-  def fromNodeCallback[E, A](`object`: js.Object, methodName: java.lang.String, args: js.Any*): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def fromNodeCallback[E, A](`object`: js.Object, methodName: java.lang.String, args: js.Any*): EventStream[E, A] = js.native
   /**
     * @callback Bacon.fromPoll~f
     * @returns {Next<A>|End<A>}
@@ -280,9 +273,9 @@ object ^ extends js.Object {
     * @param {Bacon.fromPoll~f} f
     * @returns {EventStream<E, A>}
     */
-  def fromPoll[E, A](interval: scala.Double, f: js.Function0[baconjsLib.BaconNs.Next[A] | baconjsLib.BaconNs.End[A]]): baconjsLib.BaconNs.EventStream[E, A] = js.native
-  def fromPromise[E, A](promise: jqueryLib.JQueryXHR): baconjsLib.BaconNs.EventStream[E, A] = js.native
-  def fromPromise[E, A](promise: jqueryLib.JQueryXHR, abort: scala.Boolean): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def fromPoll[E, A](interval: scala.Double, f: js.Function0[Next[A] | End[A]]): EventStream[E, A] = js.native
+  def fromPromise[E, A](promise: jqueryLib.JQueryXHR): EventStream[E, A] = js.native
+  def fromPromise[E, A](promise: jqueryLib.JQueryXHR, abort: scala.Boolean): EventStream[E, A] = js.native
   /**
     * @function
     * @description Creates an [EventStream]{@link Bacon.EventStream} from a `promise` Promise object such as JQuery Ajax. This stream will contain a single value or an error, followed immediately by stream end. You can use the optional `abort` flag (i.e. ´Bacon.fromPromise(p, true)´ to have the `abort` method of the given promise be called when all subscribers have been removed from the created stream.
@@ -295,18 +288,13 @@ object ^ extends js.Object {
     * Bacon.fromPromise($.ajax("https://baconjs.github.io/"), true);
     * Bacon.fromPromise(Promise.resolve(1), false);
     */
-  def fromPromise[E, A](promise: js.Thenable[A]): baconjsLib.BaconNs.EventStream[E, A] = js.native
-  def fromPromise[E, A](promise: js.Thenable[A], abort: scala.Boolean): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def fromPromise[E, A](promise: js.Thenable[A]): EventStream[E, A] = js.native
+  def fromPromise[E, A](promise: js.Thenable[A], abort: scala.Boolean): EventStream[E, A] = js.native
   def fromPromise[E, A, B](
     promise: jqueryLib.JQueryXHR,
     abort: scala.Boolean,
-    eventTransformer: js.Function1[
-      /* value */ A, 
-      js.Array[
-        baconjsLib.BaconNs.Initial[B] | baconjsLib.BaconNs.Next[B] | baconjsLib.BaconNs.End[B] | baconjsLib.BaconNs.Error[E]
-      ]
-    ]
-  ): baconjsLib.BaconNs.EventStream[E, B] = js.native
+    eventTransformer: js.Function1[/* value */ A, js.Array[Initial[B] | Next[B] | End[B] | Error[E]]]
+  ): EventStream[E, B] = js.native
   /**
     * @callback Bacon.fromPromise~eventTransformer
     * @param {A} value
@@ -330,13 +318,8 @@ object ^ extends js.Object {
   def fromPromise[E, A, B](
     promise: js.Thenable[A],
     abort: scala.Boolean,
-    eventTransformer: js.Function1[
-      /* value */ A, 
-      js.Array[
-        baconjsLib.BaconNs.Initial[B] | baconjsLib.BaconNs.Next[B] | baconjsLib.BaconNs.End[B] | baconjsLib.BaconNs.Error[E]
-      ]
-    ]
-  ): baconjsLib.BaconNs.EventStream[E, B] = js.native
+    eventTransformer: js.Function1[/* value */ A, js.Array[Initial[B] | Next[B] | End[B] | Error[E]]]
+  ): EventStream[E, B] = js.native
   /**
     * @function
     * @description Repeats the single `value` indefinitely with the given `interval` (in milliseconds).
@@ -344,7 +327,7 @@ object ^ extends js.Object {
     * @param {A} value
     * @returns {EventStream<E, A>}
     */
-  def interval[E, A](interval: scala.Double, value: A): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def interval[E, A](interval: scala.Double, value: A): EventStream[E, A] = js.native
   /**
     * @function
     * @description Creates a single-element [EventStream]{@link Bacon.EventStream} that produces given `value` after a given `delay` (in milliseconds).
@@ -352,27 +335,27 @@ object ^ extends js.Object {
     * @param {A} value
     * @returns {EventStream<E, A>}
     */
-  def later[E, A](delay: scala.Double, value: A): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def later[E, A](delay: scala.Double, value: A): EventStream[E, A] = js.native
   /**
     * @function
     * @description Merges given array of [EventStream]{@link Bacon.EventStream}s.
     * @param {...EventStream<E, A>} streams
     * @returns {EventStream<E, A>}
     */
-  def mergeAll[E, A](streams: (baconjsLib.BaconNs.EventStream[E, A])*): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def mergeAll[E, A](streams: (EventStream[E, A])*): EventStream[E, A] = js.native
   /**
     * @function
     * @description Merges given array of [EventStream]{@link Bacon.EventStream}s.
     * @param {EventStream<E, A>[]} streams
     * @returns {EventStream<E, A>}
     */
-  def mergeAll[E, A](streams: js.Array[baconjsLib.BaconNs.EventStream[E, A]]): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def mergeAll[E, A](streams: js.Array[EventStream[E, A]]): EventStream[E, A] = js.native
   /**
     * @function Bacon.never
     * @description Creates an [EventStream]{@link Bacon.EventStream} that immediately ends.
     * @returns {EventStream<E, A>}
     */
-  def never[E, A](): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def never[E, A](): EventStream[E, A] = js.native
   /**
     * @function
     * @description Is a shorthand for combining multiple sources ([EventStream]{@link Bacon.EventStream}s, [Property]{@link Bacon.Property}s, constants) as array and assigning the side-effect function `f` for the values.
@@ -388,8 +371,8 @@ object ^ extends js.Object {
     * @example
     * Bacon.once(new Bacon.Error("fail"));
     */
-  def once[E, A](value: A): baconjsLib.BaconNs.EventStream[E, A] = js.native
-  def once[E, A](value: baconjsLib.BaconNs.Error[E]): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def once[E, A](value: A): EventStream[E, A] = js.native
+  def once[E, A](value: Error[E]): EventStream[E, A] = js.native
   /**
     * @callback Bacon.repeat~f
     * @param {number} iteration
@@ -410,12 +393,7 @@ object ^ extends js.Object {
     *     }
     * }).log();
     */
-  def repeat[E, A](
-    f: js.Function1[
-      /* iteration */ scala.Double, 
-      scala.Boolean | (baconjsLib.BaconNs.Observable[E, A])
-    ]
-  ): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def repeat[E, A](f: js.Function1[/* iteration */ scala.Double, scala.Boolean | (Observable[E, A])]): EventStream[E, A] = js.native
   /**
     * @function
     * @description Repeats given `values` indefinitely with then given `interval` (in milliseconds).
@@ -426,7 +404,7 @@ object ^ extends js.Object {
     * // The following would lead to `1,2,3,1,2,3...` to be repeated indefinitely:
     * Bacon.fromArray([1, new Bacon.Error("")]);
     */
-  def repeatedly[E, A](interval: scala.Double, values: js.Array[A]): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def repeatedly[E, A](interval: scala.Double, values: js.Array[A]): EventStream[E, A] = js.native
   /**
     * @callback Bacon.retry1~source
     * @description Function that produces an [EventStream]{@link Bacon.EventStream}.
@@ -456,7 +434,7 @@ object ^ extends js.Object {
     * @param {Bacon.retry1~delay} [options.delay] - function that returns the time in milliseconds to wait before retrying. Defaults to `0`.
     * @returns {EventStream<E, A>}
     */
-  def retry[E, A](options: baconjsLib.Anon_Context[E, A]): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def retry[E, A](options: baconjsLib.Anon_Context[E, A]): EventStream[E, A] = js.native
   /**
     * @callback Bacon.retry1~source
     * @description Function that produces an [Property]{@link Bacon.Property}.
@@ -486,7 +464,7 @@ object ^ extends js.Object {
     * @param {Bacon.retry1~delay} [options.delay] - function that returns the time in milliseconds to wait before retrying. Defaults to `0`.
     * @returns {Property<E, A>}
     */
-  def retry[E, A](options: baconjsLib.Anon_ContextDelay[E, A]): baconjsLib.BaconNs.Property[E, A] = js.native
+  def retry[E, A](options: baconjsLib.Anon_ContextDelay[E, A]): Property[E, A] = js.native
   /**
     * @function
     * @description Creates a [EventStream]{@link Bacon.EventStream} containing given `values` (given as array) with the given `interval` (in milliseconds).
@@ -494,7 +472,7 @@ object ^ extends js.Object {
     * @param {A[]} values
     * @returns {EventStream<E, A>}
     */
-  def sequentially[E, A](interval: scala.Double, values: js.Array[A]): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def sequentially[E, A](interval: scala.Double, values: js.Array[A]): EventStream[E, A] = js.native
   /**
     * @callback Bacon.update1~f1
     * @param {B} initial
@@ -537,9 +515,9 @@ object ^ extends js.Object {
     */
   def update[E, A1, B](
     initial: B,
-    pattern1: js.Array[baconjsLib.BaconNs.Observable[E, A1]],
+    pattern1: js.Array[Observable[E, A1]],
     f1: js.Function2[/* initial */ B, /* repeated */ A1, B]
-  ): baconjsLib.BaconNs.Property[E, B] = js.native
+  ): Property[E, B] = js.native
   /**
     * @callback Bacon.update2~f1
     * @param {B} initial
@@ -590,11 +568,11 @@ object ^ extends js.Object {
     */
   def update[E, A1, A2, B](
     initial: B,
-    pattern1: js.Array[baconjsLib.BaconNs.Observable[E, A1]],
+    pattern1: js.Array[Observable[E, A1]],
     f1: js.Function2[/* initial */ B, /* repeated */ A1, B],
-    pattern2: js.Array[baconjsLib.BaconNs.Observable[E, A2]],
+    pattern2: js.Array[Observable[E, A2]],
     f2: js.Function2[/* initial */ B, /* repeated */ A2, B]
-  ): baconjsLib.BaconNs.Property[E, B] = js.native
+  ): Property[E, B] = js.native
   /**
     * @callback Bacon.update3~f1
     * @param {B} initial
@@ -653,13 +631,13 @@ object ^ extends js.Object {
     */
   def update[E, A1, A2, A3, B](
     initial: B,
-    pattern1: js.Array[baconjsLib.BaconNs.Observable[E, A1]],
+    pattern1: js.Array[Observable[E, A1]],
     f1: js.Function2[/* initial */ B, /* repeated */ A1, B],
-    pattern2: js.Array[baconjsLib.BaconNs.Observable[E, A2]],
+    pattern2: js.Array[Observable[E, A2]],
     f2: js.Function2[/* initial */ B, /* repeated */ A2, B],
-    pattern3: js.Array[baconjsLib.BaconNs.Observable[E, A3]],
+    pattern3: js.Array[Observable[E, A3]],
     f3: js.Function2[/* initial */ B, /* repeated */ A3, B]
-  ): baconjsLib.BaconNs.Property[E, B] = js.native
+  ): Property[E, B] = js.native
   /**
     * @callback Bacon.update4~f1
     * @param {B} initial
@@ -726,15 +704,15 @@ object ^ extends js.Object {
     */
   def update[E, A1, A2, A3, A4, B](
     initial: B,
-    pattern1: js.Array[baconjsLib.BaconNs.Observable[E, A1]],
+    pattern1: js.Array[Observable[E, A1]],
     f1: js.Function2[/* initial */ B, /* repeated */ A1, B],
-    pattern2: js.Array[baconjsLib.BaconNs.Observable[E, A2]],
+    pattern2: js.Array[Observable[E, A2]],
     f2: js.Function2[/* initial */ B, /* repeated */ A2, B],
-    pattern3: js.Array[baconjsLib.BaconNs.Observable[E, A3]],
+    pattern3: js.Array[Observable[E, A3]],
     f3: js.Function2[/* initial */ B, /* repeated */ A3, B],
-    pattern4: js.Array[baconjsLib.BaconNs.Observable[E, A4]],
+    pattern4: js.Array[Observable[E, A4]],
     f4: js.Function2[/* initial */ B, /* repeated */ A4, B]
-  ): baconjsLib.BaconNs.Property[E, B] = js.native
+  ): Property[E, B] = js.native
   /**
     * @callback Bacon.update5~f1
     * @param {B} initial
@@ -809,17 +787,17 @@ object ^ extends js.Object {
     */
   def update[E, A1, A2, A3, A4, A5, B](
     initial: B,
-    pattern1: js.Array[baconjsLib.BaconNs.Observable[E, A1]],
+    pattern1: js.Array[Observable[E, A1]],
     f1: js.Function2[/* initial */ B, /* repeated */ A1, B],
-    pattern2: js.Array[baconjsLib.BaconNs.Observable[E, A2]],
+    pattern2: js.Array[Observable[E, A2]],
     f2: js.Function2[/* initial */ B, /* repeated */ A2, B],
-    pattern3: js.Array[baconjsLib.BaconNs.Observable[E, A3]],
+    pattern3: js.Array[Observable[E, A3]],
     f3: js.Function2[/* initial */ B, /* repeated */ A3, B],
-    pattern4: js.Array[baconjsLib.BaconNs.Observable[E, A4]],
+    pattern4: js.Array[Observable[E, A4]],
     f4: js.Function2[/* initial */ B, /* repeated */ A4, B],
-    pattern5: js.Array[baconjsLib.BaconNs.Observable[E, A5]],
+    pattern5: js.Array[Observable[E, A5]],
     f5: js.Function2[/* initial */ B, /* repeated */ A5, B]
-  ): baconjsLib.BaconNs.Property[E, B] = js.native
+  ): Property[E, B] = js.native
   /**
     * @callback Bacon.when1~f1
     * @param {...A1} args
@@ -926,7 +904,7 @@ object ^ extends js.Object {
     *     }
     * }
     */
-  def when[E, A1, B](pattern1: js.Array[baconjsLib.BaconNs.Observable[E, A1]], f1: js.Function1[/* repeated */ A1, B]): baconjsLib.BaconNs.EventStream[E, B] = js.native
+  def when[E, A1, B](pattern1: js.Array[Observable[E, A1]], f1: js.Function1[/* repeated */ A1, B]): EventStream[E, B] = js.native
   /**
     * @callback Bacon.when2~f1
     * @param {...A1} args
@@ -1041,11 +1019,11 @@ object ^ extends js.Object {
     * }
     */
   def when[E, A1, A2, B](
-    pattern1: js.Array[baconjsLib.BaconNs.Observable[E, A1]],
+    pattern1: js.Array[Observable[E, A1]],
     f1: js.Function1[/* repeated */ A1, B],
-    pattern2: js.Array[baconjsLib.BaconNs.Observable[E, A2]],
+    pattern2: js.Array[Observable[E, A2]],
     f2: js.Function1[/* repeated */ A2, B]
-  ): baconjsLib.BaconNs.EventStream[E, B] = js.native
+  ): EventStream[E, B] = js.native
   /**
     * @callback Bacon.when3~f1
     * @param {...A1} args
@@ -1167,13 +1145,13 @@ object ^ extends js.Object {
     * }
     */
   def when[E, A1, A2, A3, B](
-    pattern1: js.Array[baconjsLib.BaconNs.Observable[E, A1]],
+    pattern1: js.Array[Observable[E, A1]],
     f1: js.Function1[/* repeated */ A1, B],
-    pattern2: js.Array[baconjsLib.BaconNs.Observable[E, A2]],
+    pattern2: js.Array[Observable[E, A2]],
     f2: js.Function1[/* repeated */ A2, B],
-    pattern3: js.Array[baconjsLib.BaconNs.Observable[E, A3]],
+    pattern3: js.Array[Observable[E, A3]],
     f3: js.Function1[/* repeated */ A3, B]
-  ): baconjsLib.BaconNs.EventStream[E, B] = js.native
+  ): EventStream[E, B] = js.native
   /**
     * @callback Bacon.when4~f1
     * @param {...A1} args
@@ -1302,15 +1280,15 @@ object ^ extends js.Object {
     * }
     */
   def when[E, A1, A2, A3, A4, B](
-    pattern1: js.Array[baconjsLib.BaconNs.Observable[E, A1]],
+    pattern1: js.Array[Observable[E, A1]],
     f1: js.Function1[/* repeated */ A1, B],
-    pattern2: js.Array[baconjsLib.BaconNs.Observable[E, A2]],
+    pattern2: js.Array[Observable[E, A2]],
     f2: js.Function1[/* repeated */ A2, B],
-    pattern3: js.Array[baconjsLib.BaconNs.Observable[E, A3]],
+    pattern3: js.Array[Observable[E, A3]],
     f3: js.Function1[/* repeated */ A3, B],
-    pattern4: js.Array[baconjsLib.BaconNs.Observable[E, A4]],
+    pattern4: js.Array[Observable[E, A4]],
     f4: js.Function1[/* repeated */ A4, B]
-  ): baconjsLib.BaconNs.EventStream[E, B] = js.native
+  ): EventStream[E, B] = js.native
   /**
     * @callback Bacon.when5~f1
     * @param {...A1} args
@@ -1446,31 +1424,31 @@ object ^ extends js.Object {
     * }
     */
   def when[E, A1, A2, A3, A4, A5, B](
-    pattern1: js.Array[baconjsLib.BaconNs.Observable[E, A1]],
+    pattern1: js.Array[Observable[E, A1]],
     f1: js.Function1[/* repeated */ A1, B],
-    pattern2: js.Array[baconjsLib.BaconNs.Observable[E, A2]],
+    pattern2: js.Array[Observable[E, A2]],
     f2: js.Function1[/* repeated */ A2, B],
-    pattern3: js.Array[baconjsLib.BaconNs.Observable[E, A3]],
+    pattern3: js.Array[Observable[E, A3]],
     f3: js.Function1[/* repeated */ A3, B],
-    pattern4: js.Array[baconjsLib.BaconNs.Observable[E, A4]],
+    pattern4: js.Array[Observable[E, A4]],
     f4: js.Function1[/* repeated */ A4, B],
-    pattern5: js.Array[baconjsLib.BaconNs.Observable[E, A5]],
+    pattern5: js.Array[Observable[E, A5]],
     f5: js.Function1[/* repeated */ A5, B]
-  ): baconjsLib.BaconNs.EventStream[E, B] = js.native
+  ): EventStream[E, B] = js.native
   /**
     * @function
     * @description Zips the `streams` in to a new [EventStream]{@link Bacon.EventStream} that will have an array of values from each source EventStream as its value. Zipping means that events from each EventStream are combine pairwise so that the 1st event from each EventStream is published first, then the 2nd event from each. The results will be published as soon as there is a value from each source EventStream. EventStream's are provided as a list of arguments as opposed to a single array. Be careful not to have too much "drift" between EventStream's. If one EventStream produces many more values than some other excessive buffering will occur inside the zipped [Observable]{@link Bacon.Observable}.
     * @param {...EventStream<E, A>} streams
     * @returns {EventStream<E, A[]>}
     */
-  def zipAsArray[E, A](streams: (baconjsLib.BaconNs.EventStream[E, A])*): baconjsLib.BaconNs.EventStream[E, js.Array[A]] = js.native
+  def zipAsArray[E, A](streams: (EventStream[E, A])*): EventStream[E, js.Array[A]] = js.native
   /**
     * @function
     * @description Zips the array of `streams` in to a new [EventStream]{@link Bacon.EventStream} that will have an array of values from each source EventStream as its value. Zipping means that events from each EventStream are combine pairwise so that the 1st event from each EventStream is published first, then the 2nd event from each. The results will be published as soon as there is a value from each source EventStream. Be careful not to have too much "drift" between EventStream's. If one EventStream produces many more values than some other excessive buffering will occur inside the zipped [Observable]{@link Bacon.Observable}.
     * @param {EventStream<E, A>[]} streams
     * @returns {EventStream<E, A[]>}
     */
-  def zipAsArray[E, A](streams: js.Array[baconjsLib.BaconNs.EventStream[E, A]]): baconjsLib.BaconNs.EventStream[E, js.Array[A]] = js.native
+  def zipAsArray[E, A](streams: js.Array[EventStream[E, A]]): EventStream[E, js.Array[A]] = js.native
   /**
     * @callback Bacon.zipWith2~f
     * @param {...A} args
@@ -1483,7 +1461,7 @@ object ^ extends js.Object {
     * @param {...EventStream<E, A>} streams
     * @returns {EventStream<E, B>}
     */
-  def zipWith[E, A, B](f: js.Function1[/* repeated */ A, B], streams: (baconjsLib.BaconNs.EventStream[E, A])*): baconjsLib.BaconNs.EventStream[E, B] = js.native
+  def zipWith[E, A, B](f: js.Function1[/* repeated */ A, B], streams: (EventStream[E, A])*): EventStream[E, B] = js.native
   /**
     * @callback Bacon.zipWith1~f
     * @param {...A} args
@@ -1496,6 +1474,6 @@ object ^ extends js.Object {
     * @param {Bacon.zipWith1~f} f
     * @returns {EventStream<E, B>}
     */
-  def zipWith[E, A, B](streams: js.Array[baconjsLib.BaconNs.EventStream[E, A]], f: js.Function1[/* repeated */ A, B]): baconjsLib.BaconNs.EventStream[E, B] = js.native
+  def zipWith[E, A, B](streams: js.Array[EventStream[E, A]], f: js.Function1[/* repeated */ A, B]): EventStream[E, B] = js.native
 }
 

@@ -48,21 +48,14 @@ trait XGraphicProvider
 object XGraphicProvider {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryGraphic: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, XGraphic],
-    queryGraphicDescriptor: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    storeGraphic: js.Function2[
-      XGraphic, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    queryGraphic: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues => XGraphic,
+    queryGraphicDescriptor: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    storeGraphic: (XGraphic, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues) => scala.Unit
   ): XGraphicProvider = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryGraphic = queryGraphic, queryGraphicDescriptor = queryGraphicDescriptor, queryInterface = queryInterface, release = release, storeGraphic = storeGraphic)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryGraphic = js.Any.fromFunction1(queryGraphic), queryGraphicDescriptor = js.Any.fromFunction1(queryGraphicDescriptor), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), storeGraphic = js.Any.fromFunction2(storeGraphic))
   
     __obj.asInstanceOf[XGraphicProvider]
   }

@@ -41,15 +41,15 @@ trait ValueCountAggregation extends Aggregation {
 object ValueCountAggregation {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    field: js.Function1[java.lang.String, ValueCountAggregation],
-    lang: js.Function1[java.lang.String, ValueCountAggregation],
-    params: js.Function1[js.Object, ValueCountAggregation],
-    script: js.Function1[java.lang.String, ValueCountAggregation],
-    scriptValuesUnique: js.Function1[scala.Boolean, ValueCountAggregation],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    field: java.lang.String => ValueCountAggregation,
+    lang: java.lang.String => ValueCountAggregation,
+    params: js.Object => ValueCountAggregation,
+    script: java.lang.String => ValueCountAggregation,
+    scriptValuesUnique: scala.Boolean => ValueCountAggregation,
+    toJSON: () => js.Any
   ): ValueCountAggregation = {
-    val __obj = js.Dynamic.literal(_type = _type, field = field, lang = lang, params = params, script = script, scriptValuesUnique = scriptValuesUnique, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), field = js.Any.fromFunction1(field), lang = js.Any.fromFunction1(lang), params = js.Any.fromFunction1(params), script = js.Any.fromFunction1(script), scriptValuesUnique = js.Any.fromFunction1(scriptValuesUnique), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[ValueCountAggregation]
   }

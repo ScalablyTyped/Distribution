@@ -13,10 +13,10 @@ trait ComposeInstance extends js.Object {
 object ComposeInstance {
   @scala.inline
   def apply(
-    openNewComposeView: js.Function0[js.Promise[ComposeView]],
-    registerComposeViewHandler: js.Function1[js.Function1[/* composeView */ ComposeView, scala.Unit], js.Function0[scala.Unit]]
+    openNewComposeView: () => js.Promise[ComposeView],
+    registerComposeViewHandler: js.Function1[/* composeView */ ComposeView, scala.Unit] => js.Function0[scala.Unit]
   ): ComposeInstance = {
-    val __obj = js.Dynamic.literal(openNewComposeView = openNewComposeView, registerComposeViewHandler = registerComposeViewHandler)
+    val __obj = js.Dynamic.literal(openNewComposeView = js.Any.fromFunction0(openNewComposeView), registerComposeViewHandler = js.Any.fromFunction1(registerComposeViewHandler))
   
     __obj.asInstanceOf[ComposeInstance]
   }

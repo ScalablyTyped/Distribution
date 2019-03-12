@@ -22,7 +22,7 @@ object PasswordProps {
   def apply(
     className: java.lang.String = null,
     mask: reactDashBetterDashPasswordLib.reactDashBetterDashPasswordLibStrings.BACKSLASHu2022 | java.lang.String = null,
-    onChange: js.Function1[/* value */ java.lang.String, scala.Unit] = null,
+    onChange: /* value */ java.lang.String => scala.Unit = null,
     placeholder: java.lang.String = null,
     show: js.UndefOr[scala.Boolean] = js.undefined,
     timeout: scala.Int | scala.Double = null,
@@ -31,7 +31,7 @@ object PasswordProps {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

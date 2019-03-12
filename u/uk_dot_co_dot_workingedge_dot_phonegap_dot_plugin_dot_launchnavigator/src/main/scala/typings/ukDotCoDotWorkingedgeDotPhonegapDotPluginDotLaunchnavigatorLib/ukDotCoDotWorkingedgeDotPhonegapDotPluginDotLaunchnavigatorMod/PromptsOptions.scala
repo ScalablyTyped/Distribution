@@ -38,14 +38,14 @@ object PromptsOptions {
   @scala.inline
   def apply(
     bodyText: java.lang.String = null,
-    callback: js.Function1[/* rememberChoice */ scala.Boolean, scala.Unit] = null,
+    callback: /* rememberChoice */ scala.Boolean => scala.Unit = null,
     headerText: java.lang.String = null,
     noButtonText: java.lang.String = null,
     yesButtonText: java.lang.String = null
   ): PromptsOptions = {
     val __obj = js.Dynamic.literal()
     if (bodyText != null) __obj.updateDynamic("bodyText")(bodyText)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (headerText != null) __obj.updateDynamic("headerText")(headerText)
     if (noButtonText != null) __obj.updateDynamic("noButtonText")(noButtonText)
     if (yesButtonText != null) __obj.updateDynamic("yesButtonText")(yesButtonText)

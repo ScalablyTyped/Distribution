@@ -1,0 +1,25 @@
+package typings
+package reactDashContentDashLoaderLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashContentDashLoaderLibComponents {
+  @scala.inline
+  def BulletList: reactLib.reactMod.ReactNs.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps] = js.constructorOf[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.BulletList].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps]]
+  @scala.inline
+  def Code: reactLib.reactMod.ReactNs.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps] = js.constructorOf[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.Code].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps]]
+  @scala.inline
+  def Facebook: reactLib.reactMod.ReactNs.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps] = js.constructorOf[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.Facebook].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps]]
+  @scala.inline
+  def Instagram: reactLib.reactMod.ReactNs.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps] = js.constructorOf[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.Instagram].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps]]
+  @scala.inline
+  def List: reactLib.reactMod.ReactNs.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps] = js.constructorOf[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.List].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps]]
+  @scala.inline
+  def ReactDashContentDashLoader: reactLib.reactMod.ReactNs.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps] = js.constructorOf[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps]]
+  @scala.inline
+  def ContentLoaderProps: reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps.type = reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps
+  type ContentLoaderProps = reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps
+}
+

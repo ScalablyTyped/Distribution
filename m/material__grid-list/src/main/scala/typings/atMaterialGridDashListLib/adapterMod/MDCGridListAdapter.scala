@@ -17,14 +17,14 @@ trait MDCGridListAdapter extends js.Object {
 object MDCGridListAdapter {
   @scala.inline
   def apply(
-    deregisterResizeHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    getNumberOfTiles: js.Function0[scala.Double],
-    getOffsetWidth: js.Function0[scala.Double],
-    getOffsetWidthForTileAtIndex: js.Function1[scala.Double, scala.Double],
-    registerResizeHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    setStyleForTilesElement: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    deregisterResizeHandler: stdLib.EventListener => scala.Unit,
+    getNumberOfTiles: () => scala.Double,
+    getOffsetWidth: () => scala.Double,
+    getOffsetWidthForTileAtIndex: scala.Double => scala.Double,
+    registerResizeHandler: stdLib.EventListener => scala.Unit,
+    setStyleForTilesElement: (java.lang.String, java.lang.String) => scala.Unit
   ): MDCGridListAdapter = {
-    val __obj = js.Dynamic.literal(deregisterResizeHandler = deregisterResizeHandler, getNumberOfTiles = getNumberOfTiles, getOffsetWidth = getOffsetWidth, getOffsetWidthForTileAtIndex = getOffsetWidthForTileAtIndex, registerResizeHandler = registerResizeHandler, setStyleForTilesElement = setStyleForTilesElement)
+    val __obj = js.Dynamic.literal(deregisterResizeHandler = js.Any.fromFunction1(deregisterResizeHandler), getNumberOfTiles = js.Any.fromFunction0(getNumberOfTiles), getOffsetWidth = js.Any.fromFunction0(getOffsetWidth), getOffsetWidthForTileAtIndex = js.Any.fromFunction1(getOffsetWidthForTileAtIndex), registerResizeHandler = js.Any.fromFunction1(registerResizeHandler), setStyleForTilesElement = js.Any.fromFunction2(setStyleForTilesElement))
   
     __obj.asInstanceOf[MDCGridListAdapter]
   }

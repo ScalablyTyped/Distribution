@@ -33,20 +33,11 @@ trait RolloutsResource extends js.Object {
 object RolloutsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Rollout]
-    ],
-    list: js.Function1[
-      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListServiceRolloutsResponse]
-    ]
+    create: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Rollout],
+    list: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter => gapiDotClientLib.gapiNs.clientNs.Request[ListServiceRolloutsResponse]
   ): RolloutsResource = {
-    val __obj = js.Dynamic.literal(create = create, get = get, list = list)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[RolloutsResource]
   }

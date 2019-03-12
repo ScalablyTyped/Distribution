@@ -12,7 +12,7 @@ trait Anon_Callback extends js.Object {
     filename: java.lang.String,
     callback: js.ThisFunction1[
       /* this */ sqlite3Lib.sqlite3Mod.Database, 
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       scala.Unit
     ]
   ): sqlite3Lib.sqlite3Mod.Database = js.native
@@ -22,7 +22,7 @@ trait Anon_Callback extends js.Object {
     mode: scala.Double,
     callback: js.ThisFunction1[
       /* this */ sqlite3Lib.sqlite3Mod.Database, 
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       scala.Unit
     ]
   ): sqlite3Lib.sqlite3Mod.Database = js.native

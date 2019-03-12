@@ -25,36 +25,15 @@ trait FloodlightActivitiesResource extends js.Object {
 object FloodlightActivitiesResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    generatetag: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsFloodlightActivityId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivitiesGenerateTagResponse]
-    ],
-    get: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AdvertiserIdAltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivitiesListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity]
-    ],
-    update: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity]
-    ]
+    delete: gapiDotClientDotDfareportingLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    generatetag: gapiDotClientDotDfareportingLib.Anon_AltFieldsFloodlightActivityId => gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivitiesGenerateTagResponse],
+    get: gapiDotClientDotDfareportingLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity],
+    insert: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity],
+    list: gapiDotClientDotDfareportingLib.Anon_AdvertiserIdAltFields => gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivitiesListResponse],
+    patch: gapiDotClientDotDfareportingLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity],
+    update: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity]
   ): FloodlightActivitiesResource = {
-    val __obj = js.Dynamic.literal(delete = delete, generatetag = generatetag, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), generatetag = js.Any.fromFunction1(generatetag), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[FloodlightActivitiesResource]
   }

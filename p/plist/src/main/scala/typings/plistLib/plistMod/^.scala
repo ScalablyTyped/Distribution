@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("plist", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def build(obj: plistLib.plistMod.PlistValue): java.lang.String = js.native
-  def build(obj: plistLib.plistMod.PlistValue, opts: plistLib.plistMod.PlistBuildOptions): java.lang.String = js.native
-  def parse(xml: java.lang.String): plistLib.plistMod.PlistValue = js.native
+  def build(obj: PlistValue): java.lang.String = js.native
+  def build(obj: PlistValue, opts: PlistBuildOptions): java.lang.String = js.native
+  def parse(xml: java.lang.String): PlistValue = js.native
 }
 

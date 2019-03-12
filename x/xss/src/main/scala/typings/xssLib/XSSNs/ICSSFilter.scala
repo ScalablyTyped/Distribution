@@ -11,8 +11,8 @@ trait ICSSFilter extends js.Object {
 
 object ICSSFilter {
   @scala.inline
-  def apply(process: js.Function1[java.lang.String, java.lang.String]): ICSSFilter = {
-    val __obj = js.Dynamic.literal(process = process)
+  def apply(process: java.lang.String => java.lang.String): ICSSFilter = {
+    val __obj = js.Dynamic.literal(process = js.Any.fromFunction1(process))
   
     __obj.asInstanceOf[ICSSFilter]
   }

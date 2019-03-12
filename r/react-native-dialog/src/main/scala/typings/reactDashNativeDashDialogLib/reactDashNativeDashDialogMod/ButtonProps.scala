@@ -25,12 +25,12 @@ object ButtonProps {
   @scala.inline
   def apply(
     label: java.lang.String,
-    onPress: js.Function0[scala.Unit],
+    onPress: () => scala.Unit,
     bold: js.UndefOr[scala.Boolean] = js.undefined,
     color: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined
   ): ButtonProps = {
-    val __obj = js.Dynamic.literal(label = label, onPress = onPress)
+    val __obj = js.Dynamic.literal(label = label, onPress = js.Any.fromFunction0(onPress))
     if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
     if (color != null) __obj.updateDynamic("color")(color)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

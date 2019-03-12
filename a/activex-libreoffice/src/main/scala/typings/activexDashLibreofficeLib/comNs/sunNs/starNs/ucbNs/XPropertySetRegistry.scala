@@ -30,13 +30,13 @@ trait XPropertySetRegistry
 object XPropertySetRegistry {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    openPropertySet: js.Function2[java.lang.String, scala.Boolean, XPersistentPropertySet],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removePropertySet: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    openPropertySet: (java.lang.String, scala.Boolean) => XPersistentPropertySet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removePropertySet: java.lang.String => scala.Unit
   ): XPropertySetRegistry = {
-    val __obj = js.Dynamic.literal(acquire = acquire, openPropertySet = openPropertySet, queryInterface = queryInterface, release = release, removePropertySet = removePropertySet)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), openPropertySet = js.Any.fromFunction2(openPropertySet), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertySet = js.Any.fromFunction1(removePropertySet))
   
     __obj.asInstanceOf[XPropertySetRegistry]
   }

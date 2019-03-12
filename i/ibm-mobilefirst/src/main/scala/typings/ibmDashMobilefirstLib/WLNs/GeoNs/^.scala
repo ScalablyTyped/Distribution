@@ -8,39 +8,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WL.Geo")
 @js.native
 object ^ extends js.Object {
-  def getDistanceBetweenCoordinates(
-    coordinate1: ibmDashMobilefirstLib.WLNs.GeoNs.Coordinate,
-    coordinate2: ibmDashMobilefirstLib.WLNs.GeoNs.Coordinate
-  ): scala.Double = js.native
-  def getDistanceToCircle(
-    coordinate: ibmDashMobilefirstLib.WLNs.GeoNs.Coordinate,
-    circle: ibmDashMobilefirstLib.WLNs.GeoNs.Circle,
-    options: ibmDashMobilefirstLib.WLNs.GeoNs.DistanceOptions
-  ): scala.Double = js.native
-  def getDistanceToPolygon(
-    coordinate: ibmDashMobilefirstLib.WLNs.GeoNs.Coordinate,
-    polygon: js.Array[ibmDashMobilefirstLib.WLNs.GeoNs.Coordinate],
-    options: ibmDashMobilefirstLib.WLNs.GeoNs.DistanceOptions
-  ): scala.Double = js.native
-  def isInsideCircle(
-    coordinate: ibmDashMobilefirstLib.WLNs.GeoNs.Coordinate,
-    circle: ibmDashMobilefirstLib.WLNs.GeoNs.Circle,
-    options: ibmDashMobilefirstLib.WLNs.GeoNs.InsideOutsideOptions
-  ): scala.Boolean = js.native
-  def isInsidePolygon(
-    coordinate: ibmDashMobilefirstLib.WLNs.GeoNs.Coordinate,
-    polygon: js.Array[ibmDashMobilefirstLib.WLNs.GeoNs.Coordinate],
-    options: ibmDashMobilefirstLib.WLNs.GeoNs.InsideOutsideOptions
-  ): scala.Boolean = js.native
-  def isOutsideCircle(
-    coordinate: ibmDashMobilefirstLib.WLNs.GeoNs.Coordinate,
-    circle: ibmDashMobilefirstLib.WLNs.GeoNs.Circle,
-    options: ibmDashMobilefirstLib.WLNs.GeoNs.InsideOutsideOptions
-  ): scala.Boolean = js.native
-  def isOutsidePolygon(
-    coordinate: ibmDashMobilefirstLib.WLNs.GeoNs.Coordinate,
-    polygon: js.Array[ibmDashMobilefirstLib.WLNs.GeoNs.Coordinate],
-    options: ibmDashMobilefirstLib.WLNs.GeoNs.InsideOutsideOptions
-  ): scala.Boolean = js.native
+  def getDistanceBetweenCoordinates(coordinate1: Coordinate, coordinate2: Coordinate): scala.Double = js.native
+  def getDistanceToCircle(coordinate: Coordinate, circle: Circle, options: DistanceOptions): scala.Double = js.native
+  def getDistanceToPolygon(coordinate: Coordinate, polygon: js.Array[Coordinate], options: DistanceOptions): scala.Double = js.native
+  def isInsideCircle(coordinate: Coordinate, circle: Circle, options: InsideOutsideOptions): scala.Boolean = js.native
+  def isInsidePolygon(coordinate: Coordinate, polygon: js.Array[Coordinate], options: InsideOutsideOptions): scala.Boolean = js.native
+  def isOutsideCircle(coordinate: Coordinate, circle: Circle, options: InsideOutsideOptions): scala.Boolean = js.native
+  def isOutsidePolygon(coordinate: Coordinate, polygon: js.Array[Coordinate], options: InsideOutsideOptions): scala.Boolean = js.native
 }
 

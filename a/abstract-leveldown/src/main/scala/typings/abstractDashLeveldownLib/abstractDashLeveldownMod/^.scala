@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("abstract-leveldown", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val AbstractChainedBatch: abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractChainedBatchConstructor = js.native
-  val AbstractIterator: abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractIteratorConstructor = js.native
-  val AbstractLevelDOWN: abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractLevelDOWNConstructor = js.native
+  val AbstractChainedBatch: AbstractChainedBatchConstructor = js.native
+  val AbstractIterator: AbstractIteratorConstructor = js.native
+  val AbstractLevelDOWN: AbstractLevelDOWNConstructor = js.native
 }
 

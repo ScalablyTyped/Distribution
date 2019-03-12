@@ -32,8 +32,8 @@ trait JestPuppeteer extends js.Object {
 
 object JestPuppeteer {
   @scala.inline
-  def apply(debug: js.Function0[js.Promise[scala.Unit]], resetPage: js.Function0[js.Promise[scala.Unit]]): JestPuppeteer = {
-    val __obj = js.Dynamic.literal(debug = debug, resetPage = resetPage)
+  def apply(debug: () => js.Promise[scala.Unit], resetPage: () => js.Promise[scala.Unit]): JestPuppeteer = {
+    val __obj = js.Dynamic.literal(debug = js.Any.fromFunction0(debug), resetPage = js.Any.fromFunction0(resetPage))
   
     __obj.asInstanceOf[JestPuppeteer]
   }

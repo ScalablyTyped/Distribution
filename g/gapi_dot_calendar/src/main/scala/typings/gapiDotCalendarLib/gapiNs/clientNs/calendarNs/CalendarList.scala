@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CalendarList extends js.Object {
-  var etag: etag
+  var etag: gapiDotCalendarLib.gapiNs.clientNs.calendarNs.etag
   var items: js.Array[CalendarListEntry]
   var kind: gapiDotCalendarLib.gapiDotCalendarLibStrings.`calendar#calendarList`
   /**

@@ -11,8 +11,8 @@ trait WEBGL_debug_shaders extends js.Object {
 
 object WEBGL_debug_shaders {
   @scala.inline
-  def apply(getTranslatedShaderSource: js.Function1[WebGLShader, java.lang.String]): WEBGL_debug_shaders = {
-    val __obj = js.Dynamic.literal(getTranslatedShaderSource = getTranslatedShaderSource)
+  def apply(getTranslatedShaderSource: WebGLShader => java.lang.String): WEBGL_debug_shaders = {
+    val __obj = js.Dynamic.literal(getTranslatedShaderSource = js.Any.fromFunction1(getTranslatedShaderSource))
   
     __obj.asInstanceOf[WEBGL_debug_shaders]
   }

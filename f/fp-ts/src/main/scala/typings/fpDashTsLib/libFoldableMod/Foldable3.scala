@@ -14,14 +14,9 @@ object Foldable3 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS3 */](
     URI: F,
-    reduce: js.Function3[
-      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
-      js.Any, 
-      js.Function2[js.Any, js.Any, js.Any], 
-      js.Any
-    ]
+    reduce: (fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any
   ): Foldable3[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], reduce = reduce)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], reduce = js.Any.fromFunction3(reduce))
   
     __obj.asInstanceOf[Foldable3[F]]
   }

@@ -28,18 +28,18 @@ object TableRowProps {
     isScrolling: scala.Boolean,
     rowData: js.Any,
     style: js.Any,
-    onRowClick: js.Function1[/* params */ RowMouseEventHandlerParams, scala.Unit] = null,
-    onRowDoubleClick: js.Function1[/* params */ RowMouseEventHandlerParams, scala.Unit] = null,
-    onRowMouseOut: js.Function1[/* params */ RowMouseEventHandlerParams, scala.Unit] = null,
-    onRowMouseOver: js.Function1[/* params */ RowMouseEventHandlerParams, scala.Unit] = null,
-    onRowRightClick: js.Function1[/* params */ RowMouseEventHandlerParams, scala.Unit] = null
+    onRowClick: /* params */ RowMouseEventHandlerParams => scala.Unit = null,
+    onRowDoubleClick: /* params */ RowMouseEventHandlerParams => scala.Unit = null,
+    onRowMouseOut: /* params */ RowMouseEventHandlerParams => scala.Unit = null,
+    onRowMouseOver: /* params */ RowMouseEventHandlerParams => scala.Unit = null,
+    onRowRightClick: /* params */ RowMouseEventHandlerParams => scala.Unit = null
   ): TableRowProps = {
     val __obj = js.Dynamic.literal(className = className, columns = columns, index = index, isScrolling = isScrolling, rowData = rowData, style = style)
-    if (onRowClick != null) __obj.updateDynamic("onRowClick")(onRowClick)
-    if (onRowDoubleClick != null) __obj.updateDynamic("onRowDoubleClick")(onRowDoubleClick)
-    if (onRowMouseOut != null) __obj.updateDynamic("onRowMouseOut")(onRowMouseOut)
-    if (onRowMouseOver != null) __obj.updateDynamic("onRowMouseOver")(onRowMouseOver)
-    if (onRowRightClick != null) __obj.updateDynamic("onRowRightClick")(onRowRightClick)
+    if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction1(onRowClick))
+    if (onRowDoubleClick != null) __obj.updateDynamic("onRowDoubleClick")(js.Any.fromFunction1(onRowDoubleClick))
+    if (onRowMouseOut != null) __obj.updateDynamic("onRowMouseOut")(js.Any.fromFunction1(onRowMouseOut))
+    if (onRowMouseOver != null) __obj.updateDynamic("onRowMouseOver")(js.Any.fromFunction1(onRowMouseOver))
+    if (onRowRightClick != null) __obj.updateDynamic("onRowRightClick")(js.Any.fromFunction1(onRowRightClick))
     __obj.asInstanceOf[TableRowProps]
   }
 }

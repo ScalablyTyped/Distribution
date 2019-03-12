@@ -135,53 +135,20 @@ trait QueuesResource extends js.Object {
 object QueuesResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotCloudtasksLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Queue]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Queue]
-    ],
-    getIamPolicy: js.Function1[
-      gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    list: js.Function1[
-      gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListQueuesResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Queue]
-    ],
-    pause: js.Function1[
-      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Queue]
-    ],
-    purge: js.Function1[
-      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Queue]
-    ],
-    resume: js.Function1[
-      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Queue]
-    ],
-    setIamPolicy: js.Function1[
-      gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
+    create: gapiDotClientDotCloudtasksLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[Queue],
+    delete: gapiDotClientDotCloudtasksLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotCloudtasksLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Queue],
+    getIamPolicy: gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    list: gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter => gapiDotClientLib.gapiNs.clientNs.Request[ListQueuesResponse],
+    patch: gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Queue],
+    pause: gapiDotClientDotCloudtasksLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Queue],
+    purge: gapiDotClientDotCloudtasksLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Queue],
+    resume: gapiDotClientDotCloudtasksLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Queue],
+    setIamPolicy: gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
     tasks: TasksResource,
-    testIamPermissions: js.Function1[
-      gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
-    ]
+    testIamPermissions: gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
   ): QueuesResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, getIamPolicy = getIamPolicy, list = list, patch = patch, pause = pause, purge = purge, resume = resume, setIamPolicy = setIamPolicy, tasks = tasks, testIamPermissions = testIamPermissions)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), pause = js.Any.fromFunction1(pause), purge = js.Any.fromFunction1(purge), resume = js.Any.fromFunction1(resume), setIamPolicy = js.Any.fromFunction1(setIamPolicy), tasks = tasks, testIamPermissions = js.Any.fromFunction1(testIamPermissions))
   
     __obj.asInstanceOf[QueuesResource]
   }

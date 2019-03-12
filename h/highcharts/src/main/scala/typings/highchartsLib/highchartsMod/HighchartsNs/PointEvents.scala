@@ -76,24 +76,24 @@ trait PointEvents extends js.Object {
 object PointEvents {
   @scala.inline
   def apply(
-    click: js.Function1[/* event */ stdLib.Event, scala.Boolean] = null,
-    legendItemClick: js.Function1[/* event */ stdLib.Event, scala.Boolean | scala.Unit] = null,
-    mouseOut: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
-    mouseOver: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
-    remove: js.Function1[/* event */ stdLib.Event, scala.Boolean | scala.Unit] = null,
-    select: js.Function1[/* event */ stdLib.Event, scala.Boolean | scala.Unit] = null,
-    unselect: js.Function1[/* event */ stdLib.Event, scala.Boolean | scala.Unit] = null,
-    update: js.Function1[/* event */ stdLib.Event, scala.Boolean | scala.Unit] = null
+    click: /* event */ stdLib.Event => scala.Boolean = null,
+    legendItemClick: /* event */ stdLib.Event => scala.Boolean | scala.Unit = null,
+    mouseOut: /* event */ stdLib.Event => scala.Unit = null,
+    mouseOver: /* event */ stdLib.Event => scala.Unit = null,
+    remove: /* event */ stdLib.Event => scala.Boolean | scala.Unit = null,
+    select: /* event */ stdLib.Event => scala.Boolean | scala.Unit = null,
+    unselect: /* event */ stdLib.Event => scala.Boolean | scala.Unit = null,
+    update: /* event */ stdLib.Event => scala.Boolean | scala.Unit = null
   ): PointEvents = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (legendItemClick != null) __obj.updateDynamic("legendItemClick")(legendItemClick)
-    if (mouseOut != null) __obj.updateDynamic("mouseOut")(mouseOut)
-    if (mouseOver != null) __obj.updateDynamic("mouseOver")(mouseOver)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (select != null) __obj.updateDynamic("select")(select)
-    if (unselect != null) __obj.updateDynamic("unselect")(unselect)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
+    if (legendItemClick != null) __obj.updateDynamic("legendItemClick")(js.Any.fromFunction1(legendItemClick))
+    if (mouseOut != null) __obj.updateDynamic("mouseOut")(js.Any.fromFunction1(mouseOut))
+    if (mouseOver != null) __obj.updateDynamic("mouseOver")(js.Any.fromFunction1(mouseOver))
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
+    if (unselect != null) __obj.updateDynamic("unselect")(js.Any.fromFunction1(unselect))
+    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction1(update))
     __obj.asInstanceOf[PointEvents]
   }
 }

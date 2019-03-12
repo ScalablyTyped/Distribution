@@ -21,20 +21,11 @@ trait ReviewsResource extends js.Object {
 object ReviewsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUserReviewId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Review]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyMaxResultsOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ReviewsListResponse]
-    ],
-    reply: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUserReviewIdUserIp, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ReviewsReplyResponse]
-    ]
+    get: gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUserReviewId => gapiDotClientLib.gapiNs.clientNs.Request[Review],
+    list: gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyMaxResultsOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[ReviewsListResponse],
+    reply: gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUserReviewIdUserIp => gapiDotClientLib.gapiNs.clientNs.Request[ReviewsReplyResponse]
   ): ReviewsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list, reply = reply)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), reply = js.Any.fromFunction1(reply))
   
     __obj.asInstanceOf[ReviewsResource]
   }

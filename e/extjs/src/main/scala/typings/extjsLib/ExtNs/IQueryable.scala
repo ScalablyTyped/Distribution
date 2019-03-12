@@ -39,20 +39,20 @@ object IQueryable {
   def apply(
     alias: Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    child: js.Function1[/* selector */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
+    child: /* selector */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    down: js.Function1[/* selector */ js.UndefOr[js.Any], _] = null,
+    down: /* selector */ js.UndefOr[js.Any] => _ = null,
     extend: java.lang.String = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IQueryable] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IQueryable = null,
     mixins: js.Any = null,
-    query: js.Function1[/* selector */ js.UndefOr[java.lang.String], Array] = null,
-    queryBy: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Array] = null,
-    queryById: js.Function1[/* id */ js.UndefOr[java.lang.String], IComponent] = null,
+    query: /* selector */ js.UndefOr[java.lang.String] => Array = null,
+    queryBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Array = null,
+    queryById: /* id */ js.UndefOr[java.lang.String] => IComponent = null,
     requires: Array = null,
     self: IClass = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
@@ -62,20 +62,20 @@ object IQueryable {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
-    if (child != null) __obj.updateDynamic("child")(child)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
+    if (child != null) __obj.updateDynamic("child")(js.Any.fromFunction1(child))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (down != null) __obj.updateDynamic("down")(down)
+    if (down != null) __obj.updateDynamic("down")(js.Any.fromFunction1(down))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (queryBy != null) __obj.updateDynamic("queryBy")(queryBy)
-    if (queryById != null) __obj.updateDynamic("queryById")(queryById)
+    if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction1(query))
+    if (queryBy != null) __obj.updateDynamic("queryBy")(js.Any.fromFunction2(queryBy))
+    if (queryById != null) __obj.updateDynamic("queryById")(js.Any.fromFunction1(queryById))
     if (requires != null) __obj.updateDynamic("requires")(requires)
     if (self != null) __obj.updateDynamic("self")(self)
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)

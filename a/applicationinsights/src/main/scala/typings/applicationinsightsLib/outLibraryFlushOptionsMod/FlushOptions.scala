@@ -21,11 +21,11 @@ trait FlushOptions extends js.Object {
 object FlushOptions {
   @scala.inline
   def apply(
-    callback: js.Function1[/* v */ java.lang.String, scala.Unit] = null,
+    callback: /* v */ java.lang.String => scala.Unit = null,
     isAppCrashing: js.UndefOr[scala.Boolean] = js.undefined
   ): FlushOptions = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (!js.isUndefined(isAppCrashing)) __obj.updateDynamic("isAppCrashing")(isAppCrashing)
     __obj.asInstanceOf[FlushOptions]
   }

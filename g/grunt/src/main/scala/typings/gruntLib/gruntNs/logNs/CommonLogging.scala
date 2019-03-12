@@ -53,17 +53,17 @@ trait CommonLogging[T] extends js.Object {
 object CommonLogging {
   @scala.inline
   def apply[T](
-    error: js.Function1[java.lang.String, T],
-    errorlns: js.Function1[java.lang.String, T],
-    ok: js.Function1[java.lang.String, T],
-    oklns: js.Function1[java.lang.String, T],
-    subhead: js.Function1[java.lang.String, T],
-    warn: js.Function1[java.lang.String, T],
-    write: js.Function1[java.lang.String, T],
-    writeflags: js.Function1[js.Any, T],
-    writeln: js.Function1[java.lang.String, T]
+    error: java.lang.String => T,
+    errorlns: java.lang.String => T,
+    ok: java.lang.String => T,
+    oklns: java.lang.String => T,
+    subhead: java.lang.String => T,
+    warn: java.lang.String => T,
+    write: java.lang.String => T,
+    writeflags: js.Any => T,
+    writeln: java.lang.String => T
   ): CommonLogging[T] = {
-    val __obj = js.Dynamic.literal(error = error, errorlns = errorlns, ok = ok, oklns = oklns, subhead = subhead, warn = warn, write = write, writeflags = writeflags, writeln = writeln)
+    val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), errorlns = js.Any.fromFunction1(errorlns), ok = js.Any.fromFunction1(ok), oklns = js.Any.fromFunction1(oklns), subhead = js.Any.fromFunction1(subhead), warn = js.Any.fromFunction1(warn), write = js.Any.fromFunction1(write), writeflags = js.Any.fromFunction1(writeflags), writeln = js.Any.fromFunction1(writeln))
   
     __obj.asInstanceOf[CommonLogging[T]]
   }

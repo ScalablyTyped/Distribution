@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def default(input: java.lang.String): java.lang.String = js.native
-  def default(input: java.lang.String, options: camelcaseLib.camelcaseMod.Options): java.lang.String = js.native
+  def default(input: java.lang.String, options: Options): java.lang.String = js.native
   def default(input: js.Array[java.lang.String]): java.lang.String = js.native
-  def default(input: js.Array[java.lang.String], options: camelcaseLib.camelcaseMod.Options): java.lang.String = js.native
+  def default(input: js.Array[java.lang.String], options: Options): java.lang.String = js.native
 }
 

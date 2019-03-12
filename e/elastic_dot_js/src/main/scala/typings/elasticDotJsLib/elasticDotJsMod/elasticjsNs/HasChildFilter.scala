@@ -52,19 +52,19 @@ trait HasChildFilter extends Filter {
 object HasChildFilter {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cache: js.Function1[scala.Boolean, HasChildFilter],
-    cacheKey: js.Function1[java.lang.String, HasChildFilter],
-    filter: js.Function1[Query, HasChildFilter],
-    name: js.Function1[java.lang.String, HasChildFilter],
-    query: js.Function1[Query, HasChildFilter],
-    scope: js.Function1[java.lang.String, HasChildFilter],
-    shortCircuitCutoff: js.Function1[scala.Double, HasChildFilter],
-    toJSON: js.Function0[HasChildFilter],
-    `type`: js.Function1[java.lang.String, HasChildFilter]
+    _type: () => java.lang.String,
+    cache: scala.Boolean => HasChildFilter,
+    cacheKey: java.lang.String => HasChildFilter,
+    filter: Query => HasChildFilter,
+    name: java.lang.String => HasChildFilter,
+    query: Query => HasChildFilter,
+    scope: java.lang.String => HasChildFilter,
+    shortCircuitCutoff: scala.Double => HasChildFilter,
+    toJSON: () => HasChildFilter,
+    `type`: java.lang.String => HasChildFilter
   ): HasChildFilter = {
-    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, filter = filter, name = name, query = query, scope = scope, shortCircuitCutoff = shortCircuitCutoff, toJSON = toJSON)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), filter = js.Any.fromFunction1(filter), name = js.Any.fromFunction1(name), query = js.Any.fromFunction1(query), scope = js.Any.fromFunction1(scope), shortCircuitCutoff = js.Any.fromFunction1(shortCircuitCutoff), toJSON = js.Any.fromFunction0(toJSON))
+    __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
     __obj.asInstanceOf[HasChildFilter]
   }
 }

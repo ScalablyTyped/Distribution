@@ -17,13 +17,13 @@ trait CachedStorage extends js.Object {
 object CachedStorage {
   @scala.inline
   def apply(
-    clead: js.Function0[scala.Unit],
-    getItem: js.Function1[java.lang.String, java.lang.String],
+    clead: () => scala.Unit,
+    getItem: java.lang.String => java.lang.String,
     length: scala.Double,
-    removeItem: js.Function1[java.lang.String, scala.Unit],
-    setItem: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    removeItem: java.lang.String => scala.Unit,
+    setItem: (java.lang.String, java.lang.String) => scala.Unit
   ): CachedStorage = {
-    val __obj = js.Dynamic.literal(clead = clead, getItem = getItem, length = length, removeItem = removeItem, setItem = setItem)
+    val __obj = js.Dynamic.literal(clead = js.Any.fromFunction0(clead), getItem = js.Any.fromFunction1(getItem), length = length, removeItem = js.Any.fromFunction1(removeItem), setItem = js.Any.fromFunction2(setItem))
   
     __obj.asInstanceOf[CachedStorage]
   }

@@ -11,8 +11,8 @@ trait MeetSemilattice[A] extends js.Object {
 
 object MeetSemilattice {
   @scala.inline
-  def apply[A](meet: js.Function2[A, A, A]): MeetSemilattice[A] = {
-    val __obj = js.Dynamic.literal(meet = meet)
+  def apply[A](meet: (A, A) => A): MeetSemilattice[A] = {
+    val __obj = js.Dynamic.literal(meet = js.Any.fromFunction2(meet))
   
     __obj.asInstanceOf[MeetSemilattice[A]]
   }

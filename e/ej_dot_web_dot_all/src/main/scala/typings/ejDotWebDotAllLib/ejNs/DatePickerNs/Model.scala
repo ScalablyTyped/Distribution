@@ -213,19 +213,19 @@ object Model {
   def apply(
     allowDrillDown: js.UndefOr[scala.Boolean] = js.undefined,
     allowEdit: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeClose: js.Function1[/* e */ BeforeCloseEventArgs, scala.Unit] = null,
-    beforeDateCreate: js.Function1[/* e */ BeforeDateCreateEventArgs, scala.Unit] = null,
-    beforeOpen: js.Function1[/* e */ BeforeOpenEventArgs, scala.Unit] = null,
+    beforeClose: /* e */ BeforeCloseEventArgs => scala.Unit = null,
+    beforeDateCreate: /* e */ BeforeDateCreateEventArgs => scala.Unit = null,
+    beforeOpen: /* e */ BeforeOpenEventArgs => scala.Unit = null,
     blackoutDates: js.Any = null,
     buttonText: java.lang.String = null,
-    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
-    close: js.Function1[/* e */ CloseEventArgs, scala.Unit] = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    change: /* e */ ChangeEventArgs => scala.Unit = null,
+    close: /* e */ CloseEventArgs => scala.Unit = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
     dateFormat: java.lang.String = null,
     dayHeaderFormat: java.lang.String | Header = null,
     depthLevel: java.lang.String | Level = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     displayInline: js.UndefOr[scala.Boolean] = js.undefined,
     enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
     enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
@@ -233,8 +233,8 @@ object Model {
     enableStrictMode: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     fields: Fields = null,
-    focusIn: js.Function1[/* e */ FocusInEventArgs, scala.Unit] = null,
-    focusOut: js.Function1[/* e */ FocusOutEventArgs, scala.Unit] = null,
+    focusIn: /* e */ FocusInEventArgs => scala.Unit = null,
+    focusOut: /* e */ FocusOutEventArgs => scala.Unit = null,
     headerFormat: java.lang.String = null,
     height: java.lang.String = null,
     highlightSection: java.lang.String | HighlightSection = null,
@@ -243,10 +243,10 @@ object Model {
     locale: java.lang.String = null,
     maxDate: java.lang.String | stdLib.Date = null,
     minDate: java.lang.String | stdLib.Date = null,
-    navigate: js.Function1[/* e */ NavigateEventArgs, scala.Unit] = null,
-    open: js.Function1[/* e */ OpenEventArgs, scala.Unit] = null,
+    navigate: /* e */ NavigateEventArgs => scala.Unit = null,
+    open: /* e */ OpenEventArgs => scala.Unit = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
-    select: js.Function1[/* e */ SelectEventArgs, scala.Unit] = null,
+    select: /* e */ SelectEventArgs => scala.Unit = null,
     showDisabledRange: js.UndefOr[scala.Boolean] = js.undefined,
     showFooter: js.UndefOr[scala.Boolean] = js.undefined,
     showOtherMonths: js.UndefOr[scala.Boolean] = js.undefined,
@@ -268,19 +268,19 @@ object Model {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowDrillDown)) __obj.updateDynamic("allowDrillDown")(allowDrillDown)
     if (!js.isUndefined(allowEdit)) __obj.updateDynamic("allowEdit")(allowEdit)
-    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
-    if (beforeDateCreate != null) __obj.updateDynamic("beforeDateCreate")(beforeDateCreate)
-    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen)
+    if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction1(beforeClose))
+    if (beforeDateCreate != null) __obj.updateDynamic("beforeDateCreate")(js.Any.fromFunction1(beforeDateCreate))
+    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(js.Any.fromFunction1(beforeOpen))
     if (blackoutDates != null) __obj.updateDynamic("blackoutDates")(blackoutDates)
     if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
     if (dayHeaderFormat != null) __obj.updateDynamic("dayHeaderFormat")(dayHeaderFormat.asInstanceOf[js.Any])
     if (depthLevel != null) __obj.updateDynamic("depthLevel")(depthLevel.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(displayInline)) __obj.updateDynamic("displayInline")(displayInline)
     if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
     if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
@@ -288,8 +288,8 @@ object Model {
     if (!js.isUndefined(enableStrictMode)) __obj.updateDynamic("enableStrictMode")(enableStrictMode)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (focusIn != null) __obj.updateDynamic("focusIn")(focusIn)
-    if (focusOut != null) __obj.updateDynamic("focusOut")(focusOut)
+    if (focusIn != null) __obj.updateDynamic("focusIn")(js.Any.fromFunction1(focusIn))
+    if (focusOut != null) __obj.updateDynamic("focusOut")(js.Any.fromFunction1(focusOut))
     if (headerFormat != null) __obj.updateDynamic("headerFormat")(headerFormat)
     if (height != null) __obj.updateDynamic("height")(height)
     if (highlightSection != null) __obj.updateDynamic("highlightSection")(highlightSection.asInstanceOf[js.Any])
@@ -298,10 +298,10 @@ object Model {
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (navigate != null) __obj.updateDynamic("navigate")(navigate)
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (navigate != null) __obj.updateDynamic("navigate")(js.Any.fromFunction1(navigate))
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (!js.isUndefined(showDisabledRange)) __obj.updateDynamic("showDisabledRange")(showDisabledRange)
     if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter)
     if (!js.isUndefined(showOtherMonths)) __obj.updateDynamic("showOtherMonths")(showOtherMonths)

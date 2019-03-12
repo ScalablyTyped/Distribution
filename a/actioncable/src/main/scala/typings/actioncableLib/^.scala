@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var App: actioncableLib.AppInterface = js.native
+  var App: AppInterface = js.native
 }
 

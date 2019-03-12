@@ -11,8 +11,8 @@ trait IPlayToSourceDeferral extends js.Object {
 
 object IPlayToSourceDeferral {
   @scala.inline
-  def apply(complete: js.Function0[scala.Unit]): IPlayToSourceDeferral = {
-    val __obj = js.Dynamic.literal(complete = complete)
+  def apply(complete: () => scala.Unit): IPlayToSourceDeferral = {
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
   
     __obj.asInstanceOf[IPlayToSourceDeferral]
   }

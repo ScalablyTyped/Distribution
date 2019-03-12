@@ -15,7 +15,8 @@ trait Lasso
   var lassoPage_Original: LassoPage = js.native
   @JSName("lassoResource")
   var lassoResource_Original: LassoResource = js.native
-  var writer: lassoLib.libWritersMod.Writer = js.native
+  @JSName("writer")
+  var writer_Original: lassoLib.libWritersMod.Writer = js.native
   def addTransform(transform: js.Any): scala.Unit = js.native
   def buildLassoCacheKey(lassoContext: lassoLib.libLassoContextMod.default): lassoLib.Anon_Parts = js.native
   def buildPageBundles(options: js.Any, lassoContext: lassoLib.libLassoContextMod.default, callback: Callback): scala.Unit = js.native
@@ -35,7 +36,7 @@ trait Lasso
   def lassoPage(
     options: PageConfig,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* result */ lassoLib.libLassoPageResultMod.LassoPageResult, 
       scala.Unit
     ]
@@ -44,5 +45,6 @@ trait Lasso
   def lassoResource(path: java.lang.String, options: js.Any): scala.Unit = js.native
   def lassoResource(path: java.lang.String, options: js.Any, callback: Callback): scala.Unit = js.native
   def setCSPNonceProvider(func: js.Any): js.Any = js.native
+  def writer(impl: js.Any): lassoLib.libWritersWriterMod.Writer = js.native
 }
 

@@ -29,24 +29,16 @@ trait efnOptions extends js.Object {
 object efnOptions {
   @scala.inline
   def apply(
-    afterAllRender: js.Function2[
-      /* htmlFragments */ js.Array[java.lang.String], 
-      /* callback */ js.Function2[/* err */ js.Any, /* html */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ] = null,
-    beforeSingleRender: js.Function2[
-      /* item */ js.Any, 
-      /* callback */ js.Function2[/* err */ js.Any, /* item */ js.Any, scala.Unit], 
-      scala.Unit
-    ] = null,
+    afterAllRender: (/* htmlFragments */ js.Array[java.lang.String], /* callback */ js.Function2[/* err */ js.Any, /* html */ java.lang.String, scala.Unit]) => scala.Unit = null,
+    beforeSingleRender: (/* item */ js.Any, /* callback */ js.Function2[/* err */ js.Any, /* item */ js.Any, scala.Unit]) => scala.Unit = null,
     localsName: java.lang.String = null,
     sessionName: java.lang.String = null,
     utilityName: java.lang.String = null,
     viewName: java.lang.String = null
   ): efnOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterAllRender != null) __obj.updateDynamic("afterAllRender")(afterAllRender)
-    if (beforeSingleRender != null) __obj.updateDynamic("beforeSingleRender")(beforeSingleRender)
+    if (afterAllRender != null) __obj.updateDynamic("afterAllRender")(js.Any.fromFunction2(afterAllRender))
+    if (beforeSingleRender != null) __obj.updateDynamic("beforeSingleRender")(js.Any.fromFunction2(beforeSingleRender))
     if (localsName != null) __obj.updateDynamic("localsName")(localsName)
     if (sessionName != null) __obj.updateDynamic("sessionName")(sessionName)
     if (utilityName != null) __obj.updateDynamic("utilityName")(utilityName)

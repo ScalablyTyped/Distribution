@@ -12,11 +12,8 @@ trait HeadersProcessor extends js.Object {
 
 object HeadersProcessor {
   @scala.inline
-  def apply(
-    composeRequest: js.Function1[Headers, scala.Unit],
-    parseResponse: js.Function1[Headers, scala.Unit]
-  ): HeadersProcessor = {
-    val __obj = js.Dynamic.literal(composeRequest = composeRequest, parseResponse = parseResponse)
+  def apply(composeRequest: Headers => scala.Unit, parseResponse: Headers => scala.Unit): HeadersProcessor = {
+    val __obj = js.Dynamic.literal(composeRequest = js.Any.fromFunction1(composeRequest), parseResponse = js.Any.fromFunction1(parseResponse))
   
     __obj.asInstanceOf[HeadersProcessor]
   }

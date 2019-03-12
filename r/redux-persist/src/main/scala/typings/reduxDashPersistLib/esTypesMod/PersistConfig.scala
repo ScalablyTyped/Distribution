@@ -41,13 +41,9 @@ object PersistConfig {
     storage: WebStorage | AsyncStorage | LocalForageStorage | Storage,
     blacklist: js.Array[java.lang.String] = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
-    getStoredState: js.Function1[/* config */ PersistConfig, js.Promise[PersistedState]] = null,
+    getStoredState: /* config */ PersistConfig => js.Promise[PersistedState] = null,
     keyPrefix: java.lang.String = null,
-    migrate: js.Function2[
-      /* state */ PersistedState, 
-      /* versionKey */ scala.Double, 
-      js.Promise[PersistedState]
-    ] = null,
+    migrate: (/* state */ PersistedState, /* versionKey */ scala.Double) => js.Promise[PersistedState] = null,
     serialize: js.UndefOr[scala.Boolean] = js.undefined,
     stateReconciler: reduxDashPersistLib.reduxDashPersistLibNumbers.`false` | js.Function = null,
     throttle: scala.Int | scala.Double = null,
@@ -59,9 +55,9 @@ object PersistConfig {
     val __obj = js.Dynamic.literal(key = key, storage = storage.asInstanceOf[js.Any])
     if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (getStoredState != null) __obj.updateDynamic("getStoredState")(getStoredState)
+    if (getStoredState != null) __obj.updateDynamic("getStoredState")(js.Any.fromFunction1(getStoredState))
     if (keyPrefix != null) __obj.updateDynamic("keyPrefix")(keyPrefix)
-    if (migrate != null) __obj.updateDynamic("migrate")(migrate)
+    if (migrate != null) __obj.updateDynamic("migrate")(js.Any.fromFunction2(migrate))
     if (!js.isUndefined(serialize)) __obj.updateDynamic("serialize")(serialize)
     if (stateReconciler != null) __obj.updateDynamic("stateReconciler")(stateReconciler.asInstanceOf[js.Any])
     if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])

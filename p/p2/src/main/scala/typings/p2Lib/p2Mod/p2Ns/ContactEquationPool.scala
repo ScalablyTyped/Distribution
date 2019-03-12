@@ -13,14 +13,14 @@ trait ContactEquationPool extends Pool {
 object ContactEquationPool {
   @scala.inline
   def apply(
-    create: js.Function0[ContactEquation],
-    destroy: js.Function1[ContactEquation, ContactEquationPool],
-    get: js.Function0[js.Any],
+    create: () => ContactEquation,
+    destroy: ContactEquation => ContactEquationPool,
+    get: () => js.Any,
     objects: js.Array[_],
-    release: js.Function1[js.Any, Pool],
-    resize: js.Function1[scala.Double, Pool]
+    release: js.Any => Pool,
+    resize: scala.Double => Pool
   ): ContactEquationPool = {
-    val __obj = js.Dynamic.literal(create = create, destroy = destroy, get = get, objects = objects, release = release, resize = resize)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), destroy = js.Any.fromFunction1(destroy), get = js.Any.fromFunction0(get), objects = objects, release = js.Any.fromFunction1(release), resize = js.Any.fromFunction1(resize))
   
     __obj.asInstanceOf[ContactEquationPool]
   }

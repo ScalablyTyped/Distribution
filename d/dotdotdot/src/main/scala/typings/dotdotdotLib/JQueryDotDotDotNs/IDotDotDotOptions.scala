@@ -54,7 +54,7 @@ object IDotDotDotOptions {
   @scala.inline
   def apply(
     after: java.lang.String | dotdotdotLib.JQuery = null,
-    callback: js.Function2[/* isTruncated */ scala.Boolean, /* orgContent */ js.Any, scala.Unit] = null,
+    callback: (/* isTruncated */ scala.Boolean, /* orgContent */ js.Any) => scala.Unit = null,
     ellipsis: java.lang.String = null,
     fallbackToLetter: js.UndefOr[scala.Boolean] = js.undefined,
     height: scala.Int | scala.Double = null,
@@ -65,7 +65,7 @@ object IDotDotDotOptions {
   ): IDotDotDotOptions = {
     val __obj = js.Dynamic.literal()
     if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
     if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis)
     if (!js.isUndefined(fallbackToLetter)) __obj.updateDynamic("fallbackToLetter")(fallbackToLetter)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

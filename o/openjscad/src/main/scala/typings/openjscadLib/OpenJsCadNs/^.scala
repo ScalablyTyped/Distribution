@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("OpenJsCad")
 @js.native
 object ^ extends js.Object {
-  var log: openjscadLib.OpenJsCadNs.ILog = js.native
+  var log: ILog = js.native
   def AlertUserOfUncaughtExceptions(): scala.Unit = js.native
   def FileSystemApiErrorHandler(fileError: js.Any, operation: js.Any): scala.Unit = js.native
   def checkResult(result: js.Any): scala.Unit = js.native

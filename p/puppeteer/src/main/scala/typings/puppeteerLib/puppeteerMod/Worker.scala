@@ -29,20 +29,12 @@ trait Worker extends js.Object {
 object Worker {
   @scala.inline
   def apply(
-    evaluate: js.Function2[
-      js.Any, 
-      /* repeated */ SerializableOrJSHandle, 
-      js.Promise[EvaluateFnReturnType[js.Any]]
-    ],
-    evaluateHandle: js.Function2[
-      js.Function1[/* repeated */ js.Any, js.Any | js.Promise[js.Any]], 
-      /* repeated */ SerializableOrJSHandle, 
-      js.Promise[js.Any]
-    ],
-    executionContext: js.Function0[js.Promise[ExecutionContext]],
-    url: js.Function0[java.lang.String]
+    evaluate: (js.Any, /* repeated */ SerializableOrJSHandle) => js.Promise[EvaluateFnReturnType[js.Any]],
+    evaluateHandle: (js.Function1[/* repeated */ js.Any, js.Any | js.Promise[js.Any]], /* repeated */ SerializableOrJSHandle) => js.Promise[js.Any],
+    executionContext: () => js.Promise[ExecutionContext],
+    url: () => java.lang.String
   ): Worker = {
-    val __obj = js.Dynamic.literal(evaluate = evaluate, evaluateHandle = evaluateHandle, executionContext = executionContext, url = url)
+    val __obj = js.Dynamic.literal(evaluate = js.Any.fromFunction2(evaluate), evaluateHandle = js.Any.fromFunction2(evaluateHandle), executionContext = js.Any.fromFunction0(executionContext), url = js.Any.fromFunction0(url))
   
     __obj.asInstanceOf[Worker]
   }

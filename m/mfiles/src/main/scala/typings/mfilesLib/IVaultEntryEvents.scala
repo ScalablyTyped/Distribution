@@ -245,242 +245,150 @@ trait IVaultEntryEvents extends IEvents {
 object IVaultEntryEvents {
   @scala.inline
   def apply(
-    Register: js.Function2[mfilesLib.MFilesNs.Event, js.Function, scala.Double],
-    Unregister: js.Function1[scala.Double, scala.Unit],
-    OnAddObjectFile: js.Function2[
-      /* objVer */ IObjVer, 
-      /* sourceObjectFile */ ISourceObjectFile, 
-      scala.Null | scala.Boolean | Anon_ErrorCode
-    ] = null,
-    OnAddObjectToFavorites: js.Function1[/* objID */ IObjID, scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage] = null,
-    OnAddObjectsToFavorites: js.Function1[/* objIDs */ IObjIDs, scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage] = null,
-    OnChangeVaultLanguage: js.Function1[
-      /* languageID */ scala.Double, 
-      scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage
-    ] = null,
-    OnCheckInObject: js.Function2[
-      /* objVer */ IObjVer, 
-      /* propertyValues */ IPropertyValues, 
-      scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack
-    ] = null,
-    OnCheckInObjects: js.Function2[
-      /* objVers */ IObjVers, 
-      /* propertyValues */ IPropertyValues, 
-      scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStackFinally
-    ] = null,
-    OnCheckOutObject: js.Function1[
-      /* objID */ IObjID, 
-      scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack
-    ] = null,
-    OnCheckOutObjects: js.Function1[
-      /* objIDs */ IObjIDs, 
-      scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStackFinally
-    ] = null,
-    OnCreateObject: js.Function6[
-      /* objectType */ scala.Double, 
-      /* propertyValues */ IPropertyValues, 
-      /* sourceObjectFiles */ ISourceObjectFiles, 
-      /* accessControlList */ IAccessControlList, 
-      /* checkInRequested */ scala.Boolean, 
-      /* singleFileRequested */ scala.Boolean, 
-      scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack
-    ] = null,
-    OnDestroyObject: js.Function1[/* objID */ IObjID, scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage] = null,
-    OnDestroyObjectVersion: js.Function1[/* objVer */ IObjVer, scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage] = null,
-    OnDestroyObjectVersions: js.Function1[/* objVers */ IObjVers, scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage] = null,
-    OnDestroyObjects: js.Function1[/* objIDs */ IObjIDs, scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage] = null,
-    OnLogOut: js.Function0[scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage] = null,
-    OnLoggedIn: js.Function0[scala.Unit] = null,
-    OnModifyObjectVersionLabels: js.Function5[
-      /* objVer */ IObjVer, 
-      /* clearFromOtherVersions */ scala.Boolean, 
-      /* append */ scala.Boolean, 
-      /* labelIDs */ IIDs, 
-      /* singleLabelRequired */ scala.Boolean, 
-      scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage
-    ] = null,
-    OnNotification: js.Function3[/* id */ java.lang.String, /* data1 */ js.Any, /* data2 */ js.Any, _] = null,
-    OnObjectAddedToFavorites: js.Function1[/* objID */ IObjID, scala.Unit] = null,
-    OnObjectCheckedIn: js.Function1[/* objectVersion */ IObjectVersion, scala.Unit] = null,
-    OnObjectCheckedOut: js.Function1[/* objectVersion */ IObjectVersion, scala.Unit] = null,
-    OnObjectCheckoutUndone: js.Function1[/* objectVersion */ IObjectVersion, scala.Unit] = null,
-    OnObjectCheckoutsUndone: js.Function1[/* objectVersions */ IObjectVersions, scala.Unit] = null,
-    OnObjectCreated: js.Function1[/* objectVersion */ IObjectVersion, scala.Unit] = null,
-    OnObjectDestroyed: js.Function1[/* objID */ IObjID, scala.Unit] = null,
-    OnObjectFileAdded: js.Function2[/* objectVersion */ IObjectVersion, /* objectFile */ IObjectFile, scala.Unit] = null,
-    OnObjectFileRemoved: js.Function2[/* objectVersion */ IObjectVersion, /* fileVer */ IFileVer, scala.Unit] = null,
-    OnObjectFileRenamed: js.Function2[/* objectVersion */ IObjectVersion, /* objectFile */ IObjectFile, scala.Unit] = null,
-    OnObjectLevelPropertySet: js.Function2[/* objID */ IObjID, /* propertyValue */ IPropertyValue, scala.Unit] = null,
-    OnObjectOfflineAvailabilityRemoved: js.Function1[/* objID */ IObjID, scala.Unit] = null,
-    OnObjectOfflineAvailabilitySet: js.Function1[/* objID */ IObjID, scala.Unit] = null,
-    OnObjectRemoved: js.Function1[/* objectVersion */ IObjectVersion, scala.Unit] = null,
-    OnObjectRemovedFromFavorites: js.Function1[/* objID */ IObjID, scala.Unit] = null,
-    OnObjectUndeleted: js.Function1[/* objectVersion */ IObjectVersion, scala.Unit] = null,
-    OnObjectVersionDestroyed: js.Function1[/* objVer */ IObjVer, scala.Unit] = null,
-    OnObjectVersionLabelsModified: js.Function4[
-      /* objVer */ IObjVer, 
-      /* clearFromOtherVersions */ scala.Boolean, 
-      /* append */ scala.Boolean, 
-      /* labelIDs */ IIDs, 
-      scala.Unit
-    ] = null,
-    OnObjectVersionPermissionsSet: js.Function1[/* objectVersion */ IObjectVersion, scala.Unit] = null,
-    OnObjectVersionRolledBack: js.Function1[/* objectVersion */ IObjectVersion, scala.Unit] = null,
-    OnObjectVersionsDestroyed: js.Function1[/* objVers */ IObjVers, scala.Unit] = null,
-    OnObjectsAddedToFavorites: js.Function1[/* objIDs */ IObjIDs, scala.Unit] = null,
-    OnObjectsCheckedIn: js.Function1[/* objectVersions */ IObjectVersions, scala.Unit] = null,
-    OnObjectsCheckedOut: js.Function1[/* objectVersions */ IObjectVersions, scala.Unit] = null,
-    OnObjectsDestroyed: js.Function1[/* objIDs */ IObjIDs, scala.Unit] = null,
-    OnObjectsRemoved: js.Function1[/* objectVersions */ IObjectVersions, scala.Unit] = null,
-    OnObjectsRemovedFromFavorites: js.Function1[/* objIDs */ IObjIDs, scala.Unit] = null,
-    OnPropertiesOfObjectVersionSet: js.Function1[/* objectVersion */ IObjectVersion, scala.Unit] = null,
-    OnPropertiesOfObjectVersionsSet: js.Function1[/* objectVersions */ IObjectVersions, scala.Unit] = null,
-    OnRemoveObject: js.Function1[
-      /* objID */ IObjID, 
-      scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack
-    ] = null,
-    OnRemoveObjectFile: js.Function2[
-      /* objVer */ IObjVer, 
-      /* fileVer */ IFileVer, 
-      scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack
-    ] = null,
-    OnRemoveObjectFromFavorites: js.Function1[/* objID */ IObjID, scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage] = null,
-    OnRemoveObjectOfflineAvailability: js.Function1[/* objID */ IObjID, scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage] = null,
-    OnRemoveObjects: js.Function1[
-      /* objIDs */ IObjIDs, 
-      scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStackFinally
-    ] = null,
-    OnRemoveObjectsFromFavorites: js.Function1[/* objIDs */ IObjIDs, scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage] = null,
-    OnRenameObjectFile: js.Function4[
-      /* objVer */ IObjVer, 
-      /* fileVer */ IFileVer, 
-      /* newName */ scala.Null | ITypedValue, 
-      /* newExtension */ scala.Null | ITypedValue, 
-      scala.Null | scala.Boolean | Anon_ErrorCode
-    ] = null,
-    OnRollBackObjectVersion: js.Function1[
-      /* objVer */ IObjVer, 
-      scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack
-    ] = null,
-    OnSetObjectLevelProperty: js.Function2[
-      /* objID */ IObjID, 
-      /* propertyValue */ IPropertyValue, 
-      scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage
-    ] = null,
-    OnSetObjectOfflineAvailability: js.Function1[/* objID */ IObjID, scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage] = null,
-    OnSetObjectVersionPermissions: js.Function3[
-      /* objVer */ IObjVer, 
-      /* changeAllVersions */ scala.Boolean, 
-      /* accessControlList */ IAccessControlList, 
-      scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack
-    ] = null,
-    OnSetPropertiesOfObjectVersion: js.Function3[
-      /* setPropertiesParams */ ISetPropertiesParams, 
-      /* singlePropertyUpdate */ scala.Boolean, 
-      /* singlePropertyRemove */ scala.Boolean, 
-      scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack
-    ] = null,
-    OnSetPropertiesOfObjectVersions: js.Function3[
-      /* setPropertiesParamsOfMultipleObjects */ ISetPropertiesParamsOfMultipleObjects, 
-      /* singlePropertyUpdate */ scala.Boolean, 
-      /* singlePropertyRemove */ scala.Boolean, 
-      scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStackFinally
-    ] = null,
-    OnStarted: js.Function0[scala.Unit] = null,
-    OnStop: js.Function0[scala.Unit] = null,
-    OnSwitchToOfflineMode: js.Function0[scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage] = null,
-    OnSwitchToOnlineMode: js.Function0[scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage] = null,
-    OnSwitchedToOfflineMode: js.Function0[scala.Unit] = null,
-    OnSwitchedToOnlineMode: js.Function0[scala.Unit] = null,
-    OnUndeleteObject: js.Function1[
-      /* objID */ IObjID, 
-      scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack
-    ] = null,
-    OnUndeleteObjects: js.Function1[
-      /* objIDs */ IObjIDs, 
-      scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStackFinally
-    ] = null,
-    OnUndoObjectCheckout: js.Function1[
-      /* objVer */ IObjVer, 
-      scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack
-    ] = null,
-    OnUndoObjectCheckouts: js.Function1[
-      /* objVers */ IObjVers, 
-      scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStackFinally
-    ] = null,
-    OnVaultLanguageChanged: js.Function1[/* languageID */ scala.Double, scala.Unit] = null
+    Register: (mfilesLib.MFilesNs.Event, js.Function) => scala.Double,
+    Unregister: scala.Double => scala.Unit,
+    OnAddObjectFile: (/* objVer */ IObjVer, /* sourceObjectFile */ ISourceObjectFile) => scala.Null | scala.Boolean | Anon_ErrorCode = null,
+    OnAddObjectToFavorites: /* objID */ IObjID => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage = null,
+    OnAddObjectsToFavorites: /* objIDs */ IObjIDs => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage = null,
+    OnChangeVaultLanguage: /* languageID */ scala.Double => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage = null,
+    OnCheckInObject: (/* objVer */ IObjVer, /* propertyValues */ IPropertyValues) => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack = null,
+    OnCheckInObjects: (/* objVers */ IObjVers, /* propertyValues */ IPropertyValues) => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStackFinally = null,
+    OnCheckOutObject: /* objID */ IObjID => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack = null,
+    OnCheckOutObjects: /* objIDs */ IObjIDs => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStackFinally = null,
+    OnCreateObject: (/* objectType */ scala.Double, /* propertyValues */ IPropertyValues, /* sourceObjectFiles */ ISourceObjectFiles, /* accessControlList */ IAccessControlList, /* checkInRequested */ scala.Boolean, /* singleFileRequested */ scala.Boolean) => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack = null,
+    OnDestroyObject: /* objID */ IObjID => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage = null,
+    OnDestroyObjectVersion: /* objVer */ IObjVer => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage = null,
+    OnDestroyObjectVersions: /* objVers */ IObjVers => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage = null,
+    OnDestroyObjects: /* objIDs */ IObjIDs => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage = null,
+    OnLogOut: () => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage = null,
+    OnLoggedIn: () => scala.Unit = null,
+    OnModifyObjectVersionLabels: (/* objVer */ IObjVer, /* clearFromOtherVersions */ scala.Boolean, /* append */ scala.Boolean, /* labelIDs */ IIDs, /* singleLabelRequired */ scala.Boolean) => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage = null,
+    OnNotification: (/* id */ java.lang.String, /* data1 */ js.Any, /* data2 */ js.Any) => _ = null,
+    OnObjectAddedToFavorites: /* objID */ IObjID => scala.Unit = null,
+    OnObjectCheckedIn: /* objectVersion */ IObjectVersion => scala.Unit = null,
+    OnObjectCheckedOut: /* objectVersion */ IObjectVersion => scala.Unit = null,
+    OnObjectCheckoutUndone: /* objectVersion */ IObjectVersion => scala.Unit = null,
+    OnObjectCheckoutsUndone: /* objectVersions */ IObjectVersions => scala.Unit = null,
+    OnObjectCreated: /* objectVersion */ IObjectVersion => scala.Unit = null,
+    OnObjectDestroyed: /* objID */ IObjID => scala.Unit = null,
+    OnObjectFileAdded: (/* objectVersion */ IObjectVersion, /* objectFile */ IObjectFile) => scala.Unit = null,
+    OnObjectFileRemoved: (/* objectVersion */ IObjectVersion, /* fileVer */ IFileVer) => scala.Unit = null,
+    OnObjectFileRenamed: (/* objectVersion */ IObjectVersion, /* objectFile */ IObjectFile) => scala.Unit = null,
+    OnObjectLevelPropertySet: (/* objID */ IObjID, /* propertyValue */ IPropertyValue) => scala.Unit = null,
+    OnObjectOfflineAvailabilityRemoved: /* objID */ IObjID => scala.Unit = null,
+    OnObjectOfflineAvailabilitySet: /* objID */ IObjID => scala.Unit = null,
+    OnObjectRemoved: /* objectVersion */ IObjectVersion => scala.Unit = null,
+    OnObjectRemovedFromFavorites: /* objID */ IObjID => scala.Unit = null,
+    OnObjectUndeleted: /* objectVersion */ IObjectVersion => scala.Unit = null,
+    OnObjectVersionDestroyed: /* objVer */ IObjVer => scala.Unit = null,
+    OnObjectVersionLabelsModified: (/* objVer */ IObjVer, /* clearFromOtherVersions */ scala.Boolean, /* append */ scala.Boolean, /* labelIDs */ IIDs) => scala.Unit = null,
+    OnObjectVersionPermissionsSet: /* objectVersion */ IObjectVersion => scala.Unit = null,
+    OnObjectVersionRolledBack: /* objectVersion */ IObjectVersion => scala.Unit = null,
+    OnObjectVersionsDestroyed: /* objVers */ IObjVers => scala.Unit = null,
+    OnObjectsAddedToFavorites: /* objIDs */ IObjIDs => scala.Unit = null,
+    OnObjectsCheckedIn: /* objectVersions */ IObjectVersions => scala.Unit = null,
+    OnObjectsCheckedOut: /* objectVersions */ IObjectVersions => scala.Unit = null,
+    OnObjectsDestroyed: /* objIDs */ IObjIDs => scala.Unit = null,
+    OnObjectsRemoved: /* objectVersions */ IObjectVersions => scala.Unit = null,
+    OnObjectsRemovedFromFavorites: /* objIDs */ IObjIDs => scala.Unit = null,
+    OnPropertiesOfObjectVersionSet: /* objectVersion */ IObjectVersion => scala.Unit = null,
+    OnPropertiesOfObjectVersionsSet: /* objectVersions */ IObjectVersions => scala.Unit = null,
+    OnRemoveObject: /* objID */ IObjID => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack = null,
+    OnRemoveObjectFile: (/* objVer */ IObjVer, /* fileVer */ IFileVer) => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack = null,
+    OnRemoveObjectFromFavorites: /* objID */ IObjID => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage = null,
+    OnRemoveObjectOfflineAvailability: /* objID */ IObjID => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage = null,
+    OnRemoveObjects: /* objIDs */ IObjIDs => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStackFinally = null,
+    OnRemoveObjectsFromFavorites: /* objIDs */ IObjIDs => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage = null,
+    OnRenameObjectFile: (/* objVer */ IObjVer, /* fileVer */ IFileVer, /* newName */ scala.Null | ITypedValue, /* newExtension */ scala.Null | ITypedValue) => scala.Null | scala.Boolean | Anon_ErrorCode = null,
+    OnRollBackObjectVersion: /* objVer */ IObjVer => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack = null,
+    OnSetObjectLevelProperty: (/* objID */ IObjID, /* propertyValue */ IPropertyValue) => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage = null,
+    OnSetObjectOfflineAvailability: /* objID */ IObjID => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage = null,
+    OnSetObjectVersionPermissions: (/* objVer */ IObjVer, /* changeAllVersions */ scala.Boolean, /* accessControlList */ IAccessControlList) => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack = null,
+    OnSetPropertiesOfObjectVersion: (/* setPropertiesParams */ ISetPropertiesParams, /* singlePropertyUpdate */ scala.Boolean, /* singlePropertyRemove */ scala.Boolean) => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack = null,
+    OnSetPropertiesOfObjectVersions: (/* setPropertiesParamsOfMultipleObjects */ ISetPropertiesParamsOfMultipleObjects, /* singlePropertyUpdate */ scala.Boolean, /* singlePropertyRemove */ scala.Boolean) => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStackFinally = null,
+    OnStarted: () => scala.Unit = null,
+    OnStop: () => scala.Unit = null,
+    OnSwitchToOfflineMode: () => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage = null,
+    OnSwitchToOnlineMode: () => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessage = null,
+    OnSwitchedToOfflineMode: () => scala.Unit = null,
+    OnSwitchedToOnlineMode: () => scala.Unit = null,
+    OnUndeleteObject: /* objID */ IObjID => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack = null,
+    OnUndeleteObjects: /* objIDs */ IObjIDs => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStackFinally = null,
+    OnUndoObjectCheckout: /* objVer */ IObjVer => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStack = null,
+    OnUndoObjectCheckouts: /* objVers */ IObjVers => scala.Null | scala.Boolean | Anon_ErrorCodeErrorMessageErrorStackFinally = null,
+    OnVaultLanguageChanged: /* languageID */ scala.Double => scala.Unit = null
   ): IVaultEntryEvents = {
-    val __obj = js.Dynamic.literal(Register = Register, Unregister = Unregister)
-    if (OnAddObjectFile != null) __obj.updateDynamic("OnAddObjectFile")(OnAddObjectFile)
-    if (OnAddObjectToFavorites != null) __obj.updateDynamic("OnAddObjectToFavorites")(OnAddObjectToFavorites)
-    if (OnAddObjectsToFavorites != null) __obj.updateDynamic("OnAddObjectsToFavorites")(OnAddObjectsToFavorites)
-    if (OnChangeVaultLanguage != null) __obj.updateDynamic("OnChangeVaultLanguage")(OnChangeVaultLanguage)
-    if (OnCheckInObject != null) __obj.updateDynamic("OnCheckInObject")(OnCheckInObject)
-    if (OnCheckInObjects != null) __obj.updateDynamic("OnCheckInObjects")(OnCheckInObjects)
-    if (OnCheckOutObject != null) __obj.updateDynamic("OnCheckOutObject")(OnCheckOutObject)
-    if (OnCheckOutObjects != null) __obj.updateDynamic("OnCheckOutObjects")(OnCheckOutObjects)
-    if (OnCreateObject != null) __obj.updateDynamic("OnCreateObject")(OnCreateObject)
-    if (OnDestroyObject != null) __obj.updateDynamic("OnDestroyObject")(OnDestroyObject)
-    if (OnDestroyObjectVersion != null) __obj.updateDynamic("OnDestroyObjectVersion")(OnDestroyObjectVersion)
-    if (OnDestroyObjectVersions != null) __obj.updateDynamic("OnDestroyObjectVersions")(OnDestroyObjectVersions)
-    if (OnDestroyObjects != null) __obj.updateDynamic("OnDestroyObjects")(OnDestroyObjects)
-    if (OnLogOut != null) __obj.updateDynamic("OnLogOut")(OnLogOut)
-    if (OnLoggedIn != null) __obj.updateDynamic("OnLoggedIn")(OnLoggedIn)
-    if (OnModifyObjectVersionLabels != null) __obj.updateDynamic("OnModifyObjectVersionLabels")(OnModifyObjectVersionLabels)
-    if (OnNotification != null) __obj.updateDynamic("OnNotification")(OnNotification)
-    if (OnObjectAddedToFavorites != null) __obj.updateDynamic("OnObjectAddedToFavorites")(OnObjectAddedToFavorites)
-    if (OnObjectCheckedIn != null) __obj.updateDynamic("OnObjectCheckedIn")(OnObjectCheckedIn)
-    if (OnObjectCheckedOut != null) __obj.updateDynamic("OnObjectCheckedOut")(OnObjectCheckedOut)
-    if (OnObjectCheckoutUndone != null) __obj.updateDynamic("OnObjectCheckoutUndone")(OnObjectCheckoutUndone)
-    if (OnObjectCheckoutsUndone != null) __obj.updateDynamic("OnObjectCheckoutsUndone")(OnObjectCheckoutsUndone)
-    if (OnObjectCreated != null) __obj.updateDynamic("OnObjectCreated")(OnObjectCreated)
-    if (OnObjectDestroyed != null) __obj.updateDynamic("OnObjectDestroyed")(OnObjectDestroyed)
-    if (OnObjectFileAdded != null) __obj.updateDynamic("OnObjectFileAdded")(OnObjectFileAdded)
-    if (OnObjectFileRemoved != null) __obj.updateDynamic("OnObjectFileRemoved")(OnObjectFileRemoved)
-    if (OnObjectFileRenamed != null) __obj.updateDynamic("OnObjectFileRenamed")(OnObjectFileRenamed)
-    if (OnObjectLevelPropertySet != null) __obj.updateDynamic("OnObjectLevelPropertySet")(OnObjectLevelPropertySet)
-    if (OnObjectOfflineAvailabilityRemoved != null) __obj.updateDynamic("OnObjectOfflineAvailabilityRemoved")(OnObjectOfflineAvailabilityRemoved)
-    if (OnObjectOfflineAvailabilitySet != null) __obj.updateDynamic("OnObjectOfflineAvailabilitySet")(OnObjectOfflineAvailabilitySet)
-    if (OnObjectRemoved != null) __obj.updateDynamic("OnObjectRemoved")(OnObjectRemoved)
-    if (OnObjectRemovedFromFavorites != null) __obj.updateDynamic("OnObjectRemovedFromFavorites")(OnObjectRemovedFromFavorites)
-    if (OnObjectUndeleted != null) __obj.updateDynamic("OnObjectUndeleted")(OnObjectUndeleted)
-    if (OnObjectVersionDestroyed != null) __obj.updateDynamic("OnObjectVersionDestroyed")(OnObjectVersionDestroyed)
-    if (OnObjectVersionLabelsModified != null) __obj.updateDynamic("OnObjectVersionLabelsModified")(OnObjectVersionLabelsModified)
-    if (OnObjectVersionPermissionsSet != null) __obj.updateDynamic("OnObjectVersionPermissionsSet")(OnObjectVersionPermissionsSet)
-    if (OnObjectVersionRolledBack != null) __obj.updateDynamic("OnObjectVersionRolledBack")(OnObjectVersionRolledBack)
-    if (OnObjectVersionsDestroyed != null) __obj.updateDynamic("OnObjectVersionsDestroyed")(OnObjectVersionsDestroyed)
-    if (OnObjectsAddedToFavorites != null) __obj.updateDynamic("OnObjectsAddedToFavorites")(OnObjectsAddedToFavorites)
-    if (OnObjectsCheckedIn != null) __obj.updateDynamic("OnObjectsCheckedIn")(OnObjectsCheckedIn)
-    if (OnObjectsCheckedOut != null) __obj.updateDynamic("OnObjectsCheckedOut")(OnObjectsCheckedOut)
-    if (OnObjectsDestroyed != null) __obj.updateDynamic("OnObjectsDestroyed")(OnObjectsDestroyed)
-    if (OnObjectsRemoved != null) __obj.updateDynamic("OnObjectsRemoved")(OnObjectsRemoved)
-    if (OnObjectsRemovedFromFavorites != null) __obj.updateDynamic("OnObjectsRemovedFromFavorites")(OnObjectsRemovedFromFavorites)
-    if (OnPropertiesOfObjectVersionSet != null) __obj.updateDynamic("OnPropertiesOfObjectVersionSet")(OnPropertiesOfObjectVersionSet)
-    if (OnPropertiesOfObjectVersionsSet != null) __obj.updateDynamic("OnPropertiesOfObjectVersionsSet")(OnPropertiesOfObjectVersionsSet)
-    if (OnRemoveObject != null) __obj.updateDynamic("OnRemoveObject")(OnRemoveObject)
-    if (OnRemoveObjectFile != null) __obj.updateDynamic("OnRemoveObjectFile")(OnRemoveObjectFile)
-    if (OnRemoveObjectFromFavorites != null) __obj.updateDynamic("OnRemoveObjectFromFavorites")(OnRemoveObjectFromFavorites)
-    if (OnRemoveObjectOfflineAvailability != null) __obj.updateDynamic("OnRemoveObjectOfflineAvailability")(OnRemoveObjectOfflineAvailability)
-    if (OnRemoveObjects != null) __obj.updateDynamic("OnRemoveObjects")(OnRemoveObjects)
-    if (OnRemoveObjectsFromFavorites != null) __obj.updateDynamic("OnRemoveObjectsFromFavorites")(OnRemoveObjectsFromFavorites)
-    if (OnRenameObjectFile != null) __obj.updateDynamic("OnRenameObjectFile")(OnRenameObjectFile)
-    if (OnRollBackObjectVersion != null) __obj.updateDynamic("OnRollBackObjectVersion")(OnRollBackObjectVersion)
-    if (OnSetObjectLevelProperty != null) __obj.updateDynamic("OnSetObjectLevelProperty")(OnSetObjectLevelProperty)
-    if (OnSetObjectOfflineAvailability != null) __obj.updateDynamic("OnSetObjectOfflineAvailability")(OnSetObjectOfflineAvailability)
-    if (OnSetObjectVersionPermissions != null) __obj.updateDynamic("OnSetObjectVersionPermissions")(OnSetObjectVersionPermissions)
-    if (OnSetPropertiesOfObjectVersion != null) __obj.updateDynamic("OnSetPropertiesOfObjectVersion")(OnSetPropertiesOfObjectVersion)
-    if (OnSetPropertiesOfObjectVersions != null) __obj.updateDynamic("OnSetPropertiesOfObjectVersions")(OnSetPropertiesOfObjectVersions)
-    if (OnStarted != null) __obj.updateDynamic("OnStarted")(OnStarted)
-    if (OnStop != null) __obj.updateDynamic("OnStop")(OnStop)
-    if (OnSwitchToOfflineMode != null) __obj.updateDynamic("OnSwitchToOfflineMode")(OnSwitchToOfflineMode)
-    if (OnSwitchToOnlineMode != null) __obj.updateDynamic("OnSwitchToOnlineMode")(OnSwitchToOnlineMode)
-    if (OnSwitchedToOfflineMode != null) __obj.updateDynamic("OnSwitchedToOfflineMode")(OnSwitchedToOfflineMode)
-    if (OnSwitchedToOnlineMode != null) __obj.updateDynamic("OnSwitchedToOnlineMode")(OnSwitchedToOnlineMode)
-    if (OnUndeleteObject != null) __obj.updateDynamic("OnUndeleteObject")(OnUndeleteObject)
-    if (OnUndeleteObjects != null) __obj.updateDynamic("OnUndeleteObjects")(OnUndeleteObjects)
-    if (OnUndoObjectCheckout != null) __obj.updateDynamic("OnUndoObjectCheckout")(OnUndoObjectCheckout)
-    if (OnUndoObjectCheckouts != null) __obj.updateDynamic("OnUndoObjectCheckouts")(OnUndoObjectCheckouts)
-    if (OnVaultLanguageChanged != null) __obj.updateDynamic("OnVaultLanguageChanged")(OnVaultLanguageChanged)
+    val __obj = js.Dynamic.literal(Register = js.Any.fromFunction2(Register), Unregister = js.Any.fromFunction1(Unregister))
+    if (OnAddObjectFile != null) __obj.updateDynamic("OnAddObjectFile")(js.Any.fromFunction2(OnAddObjectFile))
+    if (OnAddObjectToFavorites != null) __obj.updateDynamic("OnAddObjectToFavorites")(js.Any.fromFunction1(OnAddObjectToFavorites))
+    if (OnAddObjectsToFavorites != null) __obj.updateDynamic("OnAddObjectsToFavorites")(js.Any.fromFunction1(OnAddObjectsToFavorites))
+    if (OnChangeVaultLanguage != null) __obj.updateDynamic("OnChangeVaultLanguage")(js.Any.fromFunction1(OnChangeVaultLanguage))
+    if (OnCheckInObject != null) __obj.updateDynamic("OnCheckInObject")(js.Any.fromFunction2(OnCheckInObject))
+    if (OnCheckInObjects != null) __obj.updateDynamic("OnCheckInObjects")(js.Any.fromFunction2(OnCheckInObjects))
+    if (OnCheckOutObject != null) __obj.updateDynamic("OnCheckOutObject")(js.Any.fromFunction1(OnCheckOutObject))
+    if (OnCheckOutObjects != null) __obj.updateDynamic("OnCheckOutObjects")(js.Any.fromFunction1(OnCheckOutObjects))
+    if (OnCreateObject != null) __obj.updateDynamic("OnCreateObject")(js.Any.fromFunction6(OnCreateObject))
+    if (OnDestroyObject != null) __obj.updateDynamic("OnDestroyObject")(js.Any.fromFunction1(OnDestroyObject))
+    if (OnDestroyObjectVersion != null) __obj.updateDynamic("OnDestroyObjectVersion")(js.Any.fromFunction1(OnDestroyObjectVersion))
+    if (OnDestroyObjectVersions != null) __obj.updateDynamic("OnDestroyObjectVersions")(js.Any.fromFunction1(OnDestroyObjectVersions))
+    if (OnDestroyObjects != null) __obj.updateDynamic("OnDestroyObjects")(js.Any.fromFunction1(OnDestroyObjects))
+    if (OnLogOut != null) __obj.updateDynamic("OnLogOut")(js.Any.fromFunction0(OnLogOut))
+    if (OnLoggedIn != null) __obj.updateDynamic("OnLoggedIn")(js.Any.fromFunction0(OnLoggedIn))
+    if (OnModifyObjectVersionLabels != null) __obj.updateDynamic("OnModifyObjectVersionLabels")(js.Any.fromFunction5(OnModifyObjectVersionLabels))
+    if (OnNotification != null) __obj.updateDynamic("OnNotification")(js.Any.fromFunction3(OnNotification))
+    if (OnObjectAddedToFavorites != null) __obj.updateDynamic("OnObjectAddedToFavorites")(js.Any.fromFunction1(OnObjectAddedToFavorites))
+    if (OnObjectCheckedIn != null) __obj.updateDynamic("OnObjectCheckedIn")(js.Any.fromFunction1(OnObjectCheckedIn))
+    if (OnObjectCheckedOut != null) __obj.updateDynamic("OnObjectCheckedOut")(js.Any.fromFunction1(OnObjectCheckedOut))
+    if (OnObjectCheckoutUndone != null) __obj.updateDynamic("OnObjectCheckoutUndone")(js.Any.fromFunction1(OnObjectCheckoutUndone))
+    if (OnObjectCheckoutsUndone != null) __obj.updateDynamic("OnObjectCheckoutsUndone")(js.Any.fromFunction1(OnObjectCheckoutsUndone))
+    if (OnObjectCreated != null) __obj.updateDynamic("OnObjectCreated")(js.Any.fromFunction1(OnObjectCreated))
+    if (OnObjectDestroyed != null) __obj.updateDynamic("OnObjectDestroyed")(js.Any.fromFunction1(OnObjectDestroyed))
+    if (OnObjectFileAdded != null) __obj.updateDynamic("OnObjectFileAdded")(js.Any.fromFunction2(OnObjectFileAdded))
+    if (OnObjectFileRemoved != null) __obj.updateDynamic("OnObjectFileRemoved")(js.Any.fromFunction2(OnObjectFileRemoved))
+    if (OnObjectFileRenamed != null) __obj.updateDynamic("OnObjectFileRenamed")(js.Any.fromFunction2(OnObjectFileRenamed))
+    if (OnObjectLevelPropertySet != null) __obj.updateDynamic("OnObjectLevelPropertySet")(js.Any.fromFunction2(OnObjectLevelPropertySet))
+    if (OnObjectOfflineAvailabilityRemoved != null) __obj.updateDynamic("OnObjectOfflineAvailabilityRemoved")(js.Any.fromFunction1(OnObjectOfflineAvailabilityRemoved))
+    if (OnObjectOfflineAvailabilitySet != null) __obj.updateDynamic("OnObjectOfflineAvailabilitySet")(js.Any.fromFunction1(OnObjectOfflineAvailabilitySet))
+    if (OnObjectRemoved != null) __obj.updateDynamic("OnObjectRemoved")(js.Any.fromFunction1(OnObjectRemoved))
+    if (OnObjectRemovedFromFavorites != null) __obj.updateDynamic("OnObjectRemovedFromFavorites")(js.Any.fromFunction1(OnObjectRemovedFromFavorites))
+    if (OnObjectUndeleted != null) __obj.updateDynamic("OnObjectUndeleted")(js.Any.fromFunction1(OnObjectUndeleted))
+    if (OnObjectVersionDestroyed != null) __obj.updateDynamic("OnObjectVersionDestroyed")(js.Any.fromFunction1(OnObjectVersionDestroyed))
+    if (OnObjectVersionLabelsModified != null) __obj.updateDynamic("OnObjectVersionLabelsModified")(js.Any.fromFunction4(OnObjectVersionLabelsModified))
+    if (OnObjectVersionPermissionsSet != null) __obj.updateDynamic("OnObjectVersionPermissionsSet")(js.Any.fromFunction1(OnObjectVersionPermissionsSet))
+    if (OnObjectVersionRolledBack != null) __obj.updateDynamic("OnObjectVersionRolledBack")(js.Any.fromFunction1(OnObjectVersionRolledBack))
+    if (OnObjectVersionsDestroyed != null) __obj.updateDynamic("OnObjectVersionsDestroyed")(js.Any.fromFunction1(OnObjectVersionsDestroyed))
+    if (OnObjectsAddedToFavorites != null) __obj.updateDynamic("OnObjectsAddedToFavorites")(js.Any.fromFunction1(OnObjectsAddedToFavorites))
+    if (OnObjectsCheckedIn != null) __obj.updateDynamic("OnObjectsCheckedIn")(js.Any.fromFunction1(OnObjectsCheckedIn))
+    if (OnObjectsCheckedOut != null) __obj.updateDynamic("OnObjectsCheckedOut")(js.Any.fromFunction1(OnObjectsCheckedOut))
+    if (OnObjectsDestroyed != null) __obj.updateDynamic("OnObjectsDestroyed")(js.Any.fromFunction1(OnObjectsDestroyed))
+    if (OnObjectsRemoved != null) __obj.updateDynamic("OnObjectsRemoved")(js.Any.fromFunction1(OnObjectsRemoved))
+    if (OnObjectsRemovedFromFavorites != null) __obj.updateDynamic("OnObjectsRemovedFromFavorites")(js.Any.fromFunction1(OnObjectsRemovedFromFavorites))
+    if (OnPropertiesOfObjectVersionSet != null) __obj.updateDynamic("OnPropertiesOfObjectVersionSet")(js.Any.fromFunction1(OnPropertiesOfObjectVersionSet))
+    if (OnPropertiesOfObjectVersionsSet != null) __obj.updateDynamic("OnPropertiesOfObjectVersionsSet")(js.Any.fromFunction1(OnPropertiesOfObjectVersionsSet))
+    if (OnRemoveObject != null) __obj.updateDynamic("OnRemoveObject")(js.Any.fromFunction1(OnRemoveObject))
+    if (OnRemoveObjectFile != null) __obj.updateDynamic("OnRemoveObjectFile")(js.Any.fromFunction2(OnRemoveObjectFile))
+    if (OnRemoveObjectFromFavorites != null) __obj.updateDynamic("OnRemoveObjectFromFavorites")(js.Any.fromFunction1(OnRemoveObjectFromFavorites))
+    if (OnRemoveObjectOfflineAvailability != null) __obj.updateDynamic("OnRemoveObjectOfflineAvailability")(js.Any.fromFunction1(OnRemoveObjectOfflineAvailability))
+    if (OnRemoveObjects != null) __obj.updateDynamic("OnRemoveObjects")(js.Any.fromFunction1(OnRemoveObjects))
+    if (OnRemoveObjectsFromFavorites != null) __obj.updateDynamic("OnRemoveObjectsFromFavorites")(js.Any.fromFunction1(OnRemoveObjectsFromFavorites))
+    if (OnRenameObjectFile != null) __obj.updateDynamic("OnRenameObjectFile")(js.Any.fromFunction4(OnRenameObjectFile))
+    if (OnRollBackObjectVersion != null) __obj.updateDynamic("OnRollBackObjectVersion")(js.Any.fromFunction1(OnRollBackObjectVersion))
+    if (OnSetObjectLevelProperty != null) __obj.updateDynamic("OnSetObjectLevelProperty")(js.Any.fromFunction2(OnSetObjectLevelProperty))
+    if (OnSetObjectOfflineAvailability != null) __obj.updateDynamic("OnSetObjectOfflineAvailability")(js.Any.fromFunction1(OnSetObjectOfflineAvailability))
+    if (OnSetObjectVersionPermissions != null) __obj.updateDynamic("OnSetObjectVersionPermissions")(js.Any.fromFunction3(OnSetObjectVersionPermissions))
+    if (OnSetPropertiesOfObjectVersion != null) __obj.updateDynamic("OnSetPropertiesOfObjectVersion")(js.Any.fromFunction3(OnSetPropertiesOfObjectVersion))
+    if (OnSetPropertiesOfObjectVersions != null) __obj.updateDynamic("OnSetPropertiesOfObjectVersions")(js.Any.fromFunction3(OnSetPropertiesOfObjectVersions))
+    if (OnStarted != null) __obj.updateDynamic("OnStarted")(js.Any.fromFunction0(OnStarted))
+    if (OnStop != null) __obj.updateDynamic("OnStop")(js.Any.fromFunction0(OnStop))
+    if (OnSwitchToOfflineMode != null) __obj.updateDynamic("OnSwitchToOfflineMode")(js.Any.fromFunction0(OnSwitchToOfflineMode))
+    if (OnSwitchToOnlineMode != null) __obj.updateDynamic("OnSwitchToOnlineMode")(js.Any.fromFunction0(OnSwitchToOnlineMode))
+    if (OnSwitchedToOfflineMode != null) __obj.updateDynamic("OnSwitchedToOfflineMode")(js.Any.fromFunction0(OnSwitchedToOfflineMode))
+    if (OnSwitchedToOnlineMode != null) __obj.updateDynamic("OnSwitchedToOnlineMode")(js.Any.fromFunction0(OnSwitchedToOnlineMode))
+    if (OnUndeleteObject != null) __obj.updateDynamic("OnUndeleteObject")(js.Any.fromFunction1(OnUndeleteObject))
+    if (OnUndeleteObjects != null) __obj.updateDynamic("OnUndeleteObjects")(js.Any.fromFunction1(OnUndeleteObjects))
+    if (OnUndoObjectCheckout != null) __obj.updateDynamic("OnUndoObjectCheckout")(js.Any.fromFunction1(OnUndoObjectCheckout))
+    if (OnUndoObjectCheckouts != null) __obj.updateDynamic("OnUndoObjectCheckouts")(js.Any.fromFunction1(OnUndoObjectCheckouts))
+    if (OnVaultLanguageChanged != null) __obj.updateDynamic("OnVaultLanguageChanged")(js.Any.fromFunction1(OnVaultLanguageChanged))
     __obj.asInstanceOf[IVaultEntryEvents]
   }
 }

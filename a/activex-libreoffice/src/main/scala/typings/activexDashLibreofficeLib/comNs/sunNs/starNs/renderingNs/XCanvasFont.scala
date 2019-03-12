@@ -19,18 +19,18 @@ trait XCanvasFont
     * overall transformation that scales the {@link FontRequest.CellSize} to something not contained in the list returned by this method can lead to visible
     * disturbances.
     */
-  val AvailableSizes: activexDashInteropLib.SafeArray[scala.Double]
+  val AvailableSizes: stdLib.SafeArray[scala.Double]
   /** Query the list of additional font properties. */
-  val ExtraFontProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  val ExtraFontProperties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * Query metric information about the font, that is generic to all its glyphs.
     *
     * Note that the metric values in the returned result are in the font coordinate system, i.e. relative to the corresponding size of this font. That is,
     * when this font was created with a cell size of 20 units, the metrics returned are calculated relative to this size.
     */
-  val FontMetrics: FontMetrics
+  val FontMetrics: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.FontMetrics
   /** Query the {@link FontRequest} that was used to generate this object. */
-  val FontRequest: FontRequest
+  val FontRequest: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.FontRequest
   /**
     * Create a text layout interface.
     *
@@ -48,9 +48,9 @@ trait XCanvasFont
     * overall transformation that scales the {@link FontRequest.CellSize} to something not contained in the list returned by this method can lead to visible
     * disturbances.
     */
-  def getAvailableSizes(): activexDashInteropLib.SafeArray[scala.Double]
+  def getAvailableSizes(): stdLib.SafeArray[scala.Double]
   /** Query the list of additional font properties. */
-  def getExtraFontProperties(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  def getExtraFontProperties(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * Query metric information about the font, that is generic to all its glyphs.
     *
@@ -65,22 +65,20 @@ trait XCanvasFont
 object XCanvasFont {
   @scala.inline
   def apply(
-    AvailableSizes: activexDashInteropLib.SafeArray[scala.Double],
-    ExtraFontProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    AvailableSizes: stdLib.SafeArray[scala.Double],
+    ExtraFontProperties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     FontMetrics: FontMetrics,
     FontRequest: FontRequest,
-    acquire: js.Function0[scala.Unit],
-    createTextLayout: js.Function3[StringContext, scala.Double, scala.Double, XTextLayout],
-    getAvailableSizes: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    getExtraFontProperties: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    getFontMetrics: js.Function0[FontMetrics],
-    getFontRequest: js.Function0[FontRequest],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createTextLayout: (StringContext, scala.Double, scala.Double) => XTextLayout,
+    getAvailableSizes: () => stdLib.SafeArray[scala.Double],
+    getExtraFontProperties: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    getFontMetrics: () => FontMetrics,
+    getFontRequest: () => FontRequest,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCanvasFont = {
-    val __obj = js.Dynamic.literal(AvailableSizes = AvailableSizes, ExtraFontProperties = ExtraFontProperties, FontMetrics = FontMetrics, FontRequest = FontRequest, acquire = acquire, createTextLayout = createTextLayout, getAvailableSizes = getAvailableSizes, getExtraFontProperties = getExtraFontProperties, getFontMetrics = getFontMetrics, getFontRequest = getFontRequest, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(AvailableSizes = AvailableSizes, ExtraFontProperties = ExtraFontProperties, FontMetrics = FontMetrics, FontRequest = FontRequest, acquire = js.Any.fromFunction0(acquire), createTextLayout = js.Any.fromFunction3(createTextLayout), getAvailableSizes = js.Any.fromFunction0(getAvailableSizes), getExtraFontProperties = js.Any.fromFunction0(getExtraFontProperties), getFontMetrics = js.Any.fromFunction0(getFontMetrics), getFontRequest = js.Any.fromFunction0(getFontRequest), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCanvasFont]
   }

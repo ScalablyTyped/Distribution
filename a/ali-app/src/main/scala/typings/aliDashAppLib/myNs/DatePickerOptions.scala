@@ -36,14 +36,14 @@ object DatePickerOptions {
   def apply(
     currentDate: java.lang.String,
     endDate: java.lang.String,
-    fail: js.Function1[aliDashAppLib.aliDashAppLibNumbers.`11`, scala.Unit],
+    fail: aliDashAppLib.aliDashAppLibNumbers.`11` => scala.Unit,
     format: aliDashAppLib.aliDashAppLibStrings.`yyyy-MM-dd` | aliDashAppLib.aliDashAppLibStrings.`HH:mm` | (aliDashAppLib.aliDashAppLibStrings.`yyyy-MM-dd HH:mm`) | aliDashAppLib.aliDashAppLibStrings.`yyyy-MM` | aliDashAppLib.aliDashAppLibStrings.yyyy,
     startDate: java.lang.String,
-    success: js.Function1[aliDashAppLib.Anon_Date, scala.Unit],
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null
+    success: aliDashAppLib.Anon_Date => scala.Unit,
+    complete: /* res */ js.Any => scala.Unit = null
   ): DatePickerOptions = {
-    val __obj = js.Dynamic.literal(currentDate = currentDate, endDate = endDate, fail = fail, format = format.asInstanceOf[js.Any], startDate = startDate, success = success)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    val __obj = js.Dynamic.literal(currentDate = currentDate, endDate = endDate, fail = js.Any.fromFunction1(fail), format = format.asInstanceOf[js.Any], startDate = startDate, success = js.Any.fromFunction1(success))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     __obj.asInstanceOf[DatePickerOptions]
   }
 }

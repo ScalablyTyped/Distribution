@@ -14,11 +14,11 @@ trait IPositioningContext extends js.Object {
 object IPositioningContext {
   @scala.inline
   def apply(
-    fromClientPixels: js.Function1[js.Array[scala.Double], js.Array[scala.Double]],
-    getZoom: js.Function0[scala.Double],
-    toClientPixels: js.Function1[js.Array[scala.Double], js.Array[scala.Double]]
+    fromClientPixels: js.Array[scala.Double] => js.Array[scala.Double],
+    getZoom: () => scala.Double,
+    toClientPixels: js.Array[scala.Double] => js.Array[scala.Double]
   ): IPositioningContext = {
-    val __obj = js.Dynamic.literal(fromClientPixels = fromClientPixels, getZoom = getZoom, toClientPixels = toClientPixels)
+    val __obj = js.Dynamic.literal(fromClientPixels = js.Any.fromFunction1(fromClientPixels), getZoom = js.Any.fromFunction0(getZoom), toClientPixels = js.Any.fromFunction1(toClientPixels))
   
     __obj.asInstanceOf[IPositioningContext]
   }

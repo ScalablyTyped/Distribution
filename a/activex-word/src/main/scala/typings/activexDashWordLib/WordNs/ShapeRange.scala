@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.ShapeRange")
 @js.native
 class ShapeRange protected () extends js.Object {
-  val Adjustments: Adjustments = js.native
+  val Adjustments: activexDashWordLib.WordNs.Adjustments = js.native
   var AlternativeText: java.lang.String = js.native
   val Anchor: Range = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var AutoShapeType: activexDashOfficeLib.OfficeNs.MsoAutoShapeType = js.native
   var BackgroundStyle: activexDashOfficeLib.OfficeNs.MsoBackgroundStyleIndex = js.native
   val Callout: CalloutFormat = js.native
@@ -19,11 +19,11 @@ class ShapeRange protected () extends js.Object {
   val Child: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   val ConnectionSiteCount: scala.Double = js.native
   val Connector: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
-  val ConnectorFormat: ConnectorFormat = js.native
+  val ConnectorFormat: activexDashWordLib.WordNs.ConnectorFormat = js.native
   val Count: scala.Double = js.native
   val Creator: scala.Double = js.native
   val Diagram: activexDashOfficeLib.OfficeNs.IMsoDiagram = js.native
-  val DiagramNode: DiagramNode = js.native
+  val DiagramNode: activexDashWordLib.WordNs.DiagramNode = js.native
   val Fill: FillFormat = js.native
   val Glow: GlowFormat = js.native
   val GroupItems: GroupShapes = js.native
@@ -32,7 +32,7 @@ class ShapeRange protected () extends js.Object {
   var Height: scala.Double = js.native
   var HeightRelative: scala.Double = js.native
   val HorizontalFlip: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
-  val Hyperlink: Hyperlink = js.native
+  val Hyperlink: activexDashWordLib.WordNs.Hyperlink = js.native
   val ID: scala.Double = js.native
   var LayoutInCell: scala.Double = js.native
   var Left: scala.Double = js.native
@@ -44,7 +44,7 @@ class ShapeRange protected () extends js.Object {
   val Nodes: ShapeNodes = js.native
   val Parent: js.Any = js.native
   val ParentGroup: Shape = js.native
-  val PictureFormat: PictureFormat = js.native
+  val PictureFormat: activexDashWordLib.WordNs.PictureFormat = js.native
   val RTF: java.lang.String = js.native
   val Reflection: ReflectionFormat = js.native
   var RelativeHorizontalPosition: WdRelativeHorizontalPosition = js.native
@@ -56,7 +56,7 @@ class ShapeRange protected () extends js.Object {
   var ShapeStyle: activexDashOfficeLib.OfficeNs.MsoShapeStyleIndex = js.native
   val SoftEdge: SoftEdgeFormat = js.native
   val TextEffect: TextEffectFormat = js.native
-  val TextFrame: TextFrame = js.native
+  val TextFrame: activexDashWordLib.WordNs.TextFrame = js.native
   val TextFrame2: activexDashOfficeLib.OfficeNs.TextFrame2 = js.native
   val ThreeD: ThreeDFormat = js.native
   var Title: java.lang.String = js.native
@@ -69,7 +69,7 @@ class ShapeRange protected () extends js.Object {
   var Width: scala.Double = js.native
   var WidthRelative: scala.Double = js.native
   var `Word.ShapeRange_typekey`: ShapeRange = js.native
-  val WrapFormat: WrapFormat = js.native
+  val WrapFormat: activexDashWordLib.WordNs.WrapFormat = js.native
   val ZOrderPosition: scala.Double = js.native
   def Activate(): scala.Unit = js.native
   def Align(Align: activexDashOfficeLib.OfficeNs.MsoAlignCmd, RelativeTo: scala.Double): scala.Unit = js.native

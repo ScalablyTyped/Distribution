@@ -11,8 +11,8 @@ trait Helper extends js.Object {
 
 object Helper {
   @scala.inline
-  def apply(register: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, _], scala.Unit]): Helper = {
-    val __obj = js.Dynamic.literal(register = register)
+  def apply(register: (java.lang.String, js.Function1[/* repeated */ js.Any, _]) => scala.Unit): Helper = {
+    val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
   
     __obj.asInstanceOf[Helper]
   }

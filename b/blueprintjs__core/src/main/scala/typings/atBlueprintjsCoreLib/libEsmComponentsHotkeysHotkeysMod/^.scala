@@ -15,8 +15,8 @@ object ^ extends js.Object {
     a: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo,
     b: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo
   ): scala.Boolean = js.native
-  def getKeyCombo(e: reactLib.KeyboardEvent): atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo = js.native
-  def getKeyComboString(e: reactLib.KeyboardEvent): java.lang.String = js.native
+  def getKeyCombo(e: stdLib.KeyboardEvent): atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo = js.native
+  def getKeyComboString(e: stdLib.KeyboardEvent): java.lang.String = js.native
   def hideHotkeysDialog(): scala.Unit = js.native
   def parseKeyCombo(combo: java.lang.String): atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo = js.native
   def setHotkeysDialogProps(

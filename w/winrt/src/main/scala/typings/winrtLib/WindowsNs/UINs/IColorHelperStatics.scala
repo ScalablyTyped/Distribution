@@ -11,8 +11,8 @@ trait IColorHelperStatics extends js.Object {
 
 object IColorHelperStatics {
   @scala.inline
-  def apply(fromArgb: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, Color]): IColorHelperStatics = {
-    val __obj = js.Dynamic.literal(fromArgb = fromArgb)
+  def apply(fromArgb: (scala.Double, scala.Double, scala.Double, scala.Double) => Color): IColorHelperStatics = {
+    val __obj = js.Dynamic.literal(fromArgb = js.Any.fromFunction4(fromArgb))
   
     __obj.asInstanceOf[IColorHelperStatics]
   }

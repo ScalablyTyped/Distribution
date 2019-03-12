@@ -34,17 +34,13 @@ trait XParagraphAppend
 object XParagraphAppend {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    finishParagraph: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, XTextRange],
-    finishParagraphInsert: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
-      XTextRange, 
-      XTextRange
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    finishParagraph: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues => XTextRange,
+    finishParagraphInsert: (activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, XTextRange) => XTextRange,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XParagraphAppend = {
-    val __obj = js.Dynamic.literal(acquire = acquire, finishParagraph = finishParagraph, finishParagraphInsert = finishParagraphInsert, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), finishParagraph = js.Any.fromFunction1(finishParagraph), finishParagraphInsert = js.Any.fromFunction2(finishParagraphInsert), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XParagraphAppend]
   }

@@ -23,19 +23,16 @@ object TransferSearchProps {
   @scala.inline
   def apply(
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    handleClear: js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
-    onChange: js.Function1[/* e */ reactLib.reactMod.ReactNs.FormEvent[_], scala.Unit] = null,
+    handleClear: /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onChange: /* e */ reactLib.reactMod.ReactNs.FormEvent[_] => scala.Unit = null,
     placeholder: java.lang.String = null,
     prefixCls: java.lang.String = null,
     value: js.Any = null
   ): TransferSearchProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (handleClear != null) __obj.updateDynamic("handleClear")(handleClear)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (handleClear != null) __obj.updateDynamic("handleClear")(js.Any.fromFunction1(handleClear))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (value != null) __obj.updateDynamic("value")(value)

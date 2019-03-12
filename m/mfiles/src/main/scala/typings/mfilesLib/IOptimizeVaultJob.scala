@@ -19,14 +19,14 @@ object IOptimizeVaultJob {
   @scala.inline
   def apply(
     GarbageCollectFiles: scala.Boolean,
-    GetNumberOfSteps: js.Function0[scala.Double],
-    GetOneBasedIndexOfStep: js.Function1[scala.Double, scala.Double],
-    GetStepProgressText: js.Function1[scala.Double, java.lang.String],
-    Set: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
+    GetNumberOfSteps: () => scala.Double,
+    GetOneBasedIndexOfStep: scala.Double => scala.Double,
+    GetStepProgressText: scala.Double => java.lang.String,
+    Set: (java.lang.String, scala.Boolean) => scala.Unit,
     Thorough: scala.Boolean,
     VaultGUID: java.lang.String
   ): IOptimizeVaultJob = {
-    val __obj = js.Dynamic.literal(GarbageCollectFiles = GarbageCollectFiles, GetNumberOfSteps = GetNumberOfSteps, GetOneBasedIndexOfStep = GetOneBasedIndexOfStep, GetStepProgressText = GetStepProgressText, Set = Set, Thorough = Thorough, VaultGUID = VaultGUID)
+    val __obj = js.Dynamic.literal(GarbageCollectFiles = GarbageCollectFiles, GetNumberOfSteps = js.Any.fromFunction0(GetNumberOfSteps), GetOneBasedIndexOfStep = js.Any.fromFunction1(GetOneBasedIndexOfStep), GetStepProgressText = js.Any.fromFunction1(GetStepProgressText), Set = js.Any.fromFunction2(Set), Thorough = Thorough, VaultGUID = VaultGUID)
   
     __obj.asInstanceOf[IOptimizeVaultJob]
   }

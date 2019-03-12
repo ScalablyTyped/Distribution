@@ -13,8 +13,8 @@ trait WebViewContext extends js.Object {
 
 object WebViewContext {
   @scala.inline
-  def apply(postMessage: js.Function1[js.Any, scala.Unit]): WebViewContext = {
-    val __obj = js.Dynamic.literal(postMessage = postMessage)
+  def apply(postMessage: js.Any => scala.Unit): WebViewContext = {
+    val __obj = js.Dynamic.literal(postMessage = js.Any.fromFunction1(postMessage))
   
     __obj.asInstanceOf[WebViewContext]
   }

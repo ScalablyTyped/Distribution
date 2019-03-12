@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.ChartFillFormat")
 @js.native
 class ChartFillFormat protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   val BackColor: ChartColorFormat = js.native
   val Creator: scala.Double = js.native
   val ForeColor: ChartColorFormat = js.native

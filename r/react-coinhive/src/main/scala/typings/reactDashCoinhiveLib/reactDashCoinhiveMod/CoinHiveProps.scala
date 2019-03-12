@@ -23,9 +23,9 @@ object CoinHiveProps {
   def apply(
     siteKey: java.lang.String,
     autoThreads: js.UndefOr[scala.Boolean] = js.undefined,
-    onInit: js.Function1[/* callback */ js.Any, scala.Unit] = null,
-    onStart: js.Function1[/* callback */ js.Any, scala.Unit] = null,
-    onStop: js.Function1[/* callback */ js.Any, scala.Unit] = null,
+    onInit: /* callback */ js.Any => scala.Unit = null,
+    onStart: /* callback */ js.Any => scala.Unit = null,
+    onStop: /* callback */ js.Any => scala.Unit = null,
     run: js.UndefOr[scala.Boolean] = js.undefined,
     src: java.lang.String = null,
     threads: scala.Int | scala.Double = null,
@@ -34,9 +34,9 @@ object CoinHiveProps {
   ): CoinHiveProps = {
     val __obj = js.Dynamic.literal(siteKey = siteKey)
     if (!js.isUndefined(autoThreads)) __obj.updateDynamic("autoThreads")(autoThreads)
-    if (onInit != null) __obj.updateDynamic("onInit")(onInit)
-    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
-    if (onStop != null) __obj.updateDynamic("onStop")(onStop)
+    if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction1(onInit))
+    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction1(onStart))
+    if (onStop != null) __obj.updateDynamic("onStop")(js.Any.fromFunction1(onStop))
     if (!js.isUndefined(run)) __obj.updateDynamic("run")(run)
     if (src != null) __obj.updateDynamic("src")(src)
     if (threads != null) __obj.updateDynamic("threads")(threads.asInstanceOf[js.Any])

@@ -24,17 +24,17 @@ trait IVaultEventLogOperations extends js.Object {
 object IVaultEventLogOperations {
   @scala.inline
   def apply(
-    Clear: js.Function0[scala.Unit],
-    ClearRange: js.Function2[scala.Double, scala.Double, scala.Unit],
-    ClearRange_32bit: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    ExportAll: js.Function0[java.lang.String],
-    ExportRange: js.Function3[scala.Double, scala.Double, scala.Boolean, java.lang.String],
-    ExportRange_32bit: js.Function3[java.lang.String, java.lang.String, scala.Boolean, java.lang.String],
-    GetIDRange: js.Function0[IIDRange],
-    IsLoggingEnabled: js.Function0[scala.Boolean],
-    SetLoggingEnabled: js.Function1[scala.Boolean, scala.Unit]
+    Clear: () => scala.Unit,
+    ClearRange: (scala.Double, scala.Double) => scala.Unit,
+    ClearRange_32bit: (java.lang.String, java.lang.String) => scala.Unit,
+    ExportAll: () => java.lang.String,
+    ExportRange: (scala.Double, scala.Double, scala.Boolean) => java.lang.String,
+    ExportRange_32bit: (java.lang.String, java.lang.String, scala.Boolean) => java.lang.String,
+    GetIDRange: () => IIDRange,
+    IsLoggingEnabled: () => scala.Boolean,
+    SetLoggingEnabled: scala.Boolean => scala.Unit
   ): IVaultEventLogOperations = {
-    val __obj = js.Dynamic.literal(Clear = Clear, ClearRange = ClearRange, ClearRange_32bit = ClearRange_32bit, ExportAll = ExportAll, ExportRange = ExportRange, ExportRange_32bit = ExportRange_32bit, GetIDRange = GetIDRange, IsLoggingEnabled = IsLoggingEnabled, SetLoggingEnabled = SetLoggingEnabled)
+    val __obj = js.Dynamic.literal(Clear = js.Any.fromFunction0(Clear), ClearRange = js.Any.fromFunction2(ClearRange), ClearRange_32bit = js.Any.fromFunction2(ClearRange_32bit), ExportAll = js.Any.fromFunction0(ExportAll), ExportRange = js.Any.fromFunction3(ExportRange), ExportRange_32bit = js.Any.fromFunction3(ExportRange_32bit), GetIDRange = js.Any.fromFunction0(GetIDRange), IsLoggingEnabled = js.Any.fromFunction0(IsLoggingEnabled), SetLoggingEnabled = js.Any.fromFunction1(SetLoggingEnabled))
   
     __obj.asInstanceOf[IVaultEventLogOperations]
   }

@@ -32,7 +32,7 @@ object RelationMapping {
     join: RelationJoin,
     modelClass: ModelClass[_] | java.lang.String,
     relation: Relation,
-    beforeInsert: js.Function2[/* model */ Model, /* context */ QueryContext, js.Promise[scala.Unit] | scala.Unit] = null,
+    beforeInsert: (/* model */ Model, /* context */ QueryContext) => js.Promise[scala.Unit] | scala.Unit = null,
     filter: (js.Function1[
       /* queryBuilder */ QueryBuilder[_, js.Array[_], js.Array[_]], 
       QueryBuilder[_, js.Array[_], js.Array[_]]
@@ -43,7 +43,7 @@ object RelationMapping {
     ]) | java.lang.String | js.Object = null
   ): RelationMapping = {
     val __obj = js.Dynamic.literal(join = join, modelClass = modelClass.asInstanceOf[js.Any], relation = relation)
-    if (beforeInsert != null) __obj.updateDynamic("beforeInsert")(beforeInsert)
+    if (beforeInsert != null) __obj.updateDynamic("beforeInsert")(js.Any.fromFunction2(beforeInsert))
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (modify != null) __obj.updateDynamic("modify")(modify.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationMapping]

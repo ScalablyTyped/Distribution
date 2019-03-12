@@ -26,18 +26,18 @@ object ^ extends js.Object {
   def serializeProperty(
     ctx: java.lang.String,
     prop: atPulumiPulumiLib.outputMod.Input[_],
-    dependentResources: nodeLib.Set[atPulumiPulumiLib.resourceMod.Resource]
+    dependentResources: stdLib.Set[atPulumiPulumiLib.resourceMod.Resource]
   ): js.Promise[_] = js.native
   def serializeResourceProperties(label: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs): js.Promise[
     js.Tuple2[
       stdLib.Record[java.lang.String, _], 
-      nodeLib.Map[java.lang.String, nodeLib.Set[atPulumiPulumiLib.resourceMod.Resource]]
+      stdLib.Map[java.lang.String, stdLib.Set[atPulumiPulumiLib.resourceMod.Resource]]
     ]
   ] = js.native
   def transferProperties(
     onto: atPulumiPulumiLib.resourceMod.Resource,
     label: java.lang.String,
     props: atPulumiPulumiLib.outputMod.Inputs
-  ): atPulumiPulumiLib.runtimeRpcMod.OutputResolvers = js.native
+  ): OutputResolvers = js.native
 }
 

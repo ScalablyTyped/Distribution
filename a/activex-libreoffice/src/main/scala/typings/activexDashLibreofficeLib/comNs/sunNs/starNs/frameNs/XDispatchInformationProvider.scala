@@ -20,32 +20,32 @@ trait XDispatchInformationProvider
     * @returns a sequence of supported command groups.
     * @see CommandGroup
     */
-  val SupportedCommandGroups: activexDashInteropLib.SafeArray[scala.Double]
+  val SupportedCommandGroups: stdLib.SafeArray[scala.Double]
   /**
     * returns additional information about supported commands of a given command group.
     * @param CommandGroup specifies a command group.
     * @returns name and group name of every command supported. A group ID which is not supported returns an empty com::sun::star::uno::Sequence.
     */
-  def getConfigurableDispatchInformation(CommandGroup: scala.Double): activexDashInteropLib.SafeArray[DispatchInformation]
+  def getConfigurableDispatchInformation(CommandGroup: scala.Double): stdLib.SafeArray[DispatchInformation]
   /**
     * returns all supported command groups.
     * @returns a sequence of supported command groups.
     * @see CommandGroup
     */
-  def getSupportedCommandGroups(): activexDashInteropLib.SafeArray[scala.Double]
+  def getSupportedCommandGroups(): stdLib.SafeArray[scala.Double]
 }
 
 object XDispatchInformationProvider {
   @scala.inline
   def apply(
-    SupportedCommandGroups: activexDashInteropLib.SafeArray[scala.Double],
-    acquire: js.Function0[scala.Unit],
-    getConfigurableDispatchInformation: js.Function1[scala.Double, activexDashInteropLib.SafeArray[DispatchInformation]],
-    getSupportedCommandGroups: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    SupportedCommandGroups: stdLib.SafeArray[scala.Double],
+    acquire: () => scala.Unit,
+    getConfigurableDispatchInformation: scala.Double => stdLib.SafeArray[DispatchInformation],
+    getSupportedCommandGroups: () => stdLib.SafeArray[scala.Double],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDispatchInformationProvider = {
-    val __obj = js.Dynamic.literal(SupportedCommandGroups = SupportedCommandGroups, acquire = acquire, getConfigurableDispatchInformation = getConfigurableDispatchInformation, getSupportedCommandGroups = getSupportedCommandGroups, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(SupportedCommandGroups = SupportedCommandGroups, acquire = js.Any.fromFunction0(acquire), getConfigurableDispatchInformation = js.Any.fromFunction1(getConfigurableDispatchInformation), getSupportedCommandGroups = js.Any.fromFunction0(getSupportedCommandGroups), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDispatchInformationProvider]
   }

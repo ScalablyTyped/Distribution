@@ -219,23 +219,14 @@ object ValidationOptions {
     errorContainer: java.lang.String = null,
     errorElement: java.lang.String = null,
     errorLabelContainer: java.lang.String = null,
-    errorPlacement: js.Function2[
-      /* error */ jqueryDotValidationLib.JQuery, 
-      /* element */ jqueryDotValidationLib.JQuery, 
-      scala.Unit
-    ] = null,
+    errorPlacement: (/* error */ jqueryDotValidationLib.JQuery, /* element */ jqueryDotValidationLib.JQuery) => scala.Unit = null,
     focusCleanup: js.UndefOr[scala.Boolean] = js.undefined,
     focusInvalid: js.UndefOr[scala.Boolean] = js.undefined,
     groups: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    highlight: js.Function3[
-      /* element */ stdLib.HTMLElement, 
-      /* errorClass */ java.lang.String, 
-      /* validClass */ java.lang.String, 
-      scala.Unit
-    ] = null,
+    highlight: (/* element */ stdLib.HTMLElement, /* errorClass */ java.lang.String, /* validClass */ java.lang.String) => scala.Unit = null,
     ignore: java.lang.String = null,
     ignoreTitle: js.UndefOr[scala.Boolean] = js.undefined,
-    invalidHandler: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* validator */ Validator, scala.Unit] = null,
+    invalidHandler: (/* event */ jqueryLib.JQueryEventObject, /* validator */ Validator) => scala.Unit = null,
     messages: js.Object = null,
     meta: java.lang.String = null,
     onclick: ShouldValidatePredicate = null,
@@ -244,23 +235,14 @@ object ValidationOptions {
     onkeyup: ShouldValidatePredicate = null,
     onsubmit: js.UndefOr[scala.Boolean] = js.undefined,
     rules: RulesDictionary = null,
-    showErrors: js.Function2[/* errorMap */ ErrorDictionary, /* errorList */ js.Array[ErrorListItem], scala.Unit] = null,
-    submitHandler: js.Function2[
-      /* form */ stdLib.HTMLFormElement, 
-      /* event */ js.UndefOr[jqueryLib.JQueryEventObject], 
-      scala.Unit
-    ] = null,
+    showErrors: (/* errorMap */ ErrorDictionary, /* errorList */ js.Array[ErrorListItem]) => scala.Unit = null,
+    submitHandler: (/* form */ stdLib.HTMLFormElement, /* event */ js.UndefOr[jqueryLib.JQueryEventObject]) => scala.Unit = null,
     success: java.lang.String | (js.Function2[
       /* $label */ jqueryDotValidationLib.JQuery, 
       /* validatedInput */ stdLib.HTMLElement, 
       scala.Unit
     ]) = null,
-    unhighlight: js.Function3[
-      /* element */ stdLib.HTMLElement, 
-      /* errorClass */ java.lang.String, 
-      /* validClass */ java.lang.String, 
-      scala.Unit
-    ] = null,
+    unhighlight: (/* element */ stdLib.HTMLElement, /* errorClass */ java.lang.String, /* validClass */ java.lang.String) => scala.Unit = null,
     validClass: java.lang.String = null,
     wrapper: java.lang.String = null
   ): ValidationOptions = {
@@ -270,14 +252,14 @@ object ValidationOptions {
     if (errorContainer != null) __obj.updateDynamic("errorContainer")(errorContainer)
     if (errorElement != null) __obj.updateDynamic("errorElement")(errorElement)
     if (errorLabelContainer != null) __obj.updateDynamic("errorLabelContainer")(errorLabelContainer)
-    if (errorPlacement != null) __obj.updateDynamic("errorPlacement")(errorPlacement)
+    if (errorPlacement != null) __obj.updateDynamic("errorPlacement")(js.Any.fromFunction2(errorPlacement))
     if (!js.isUndefined(focusCleanup)) __obj.updateDynamic("focusCleanup")(focusCleanup)
     if (!js.isUndefined(focusInvalid)) __obj.updateDynamic("focusInvalid")(focusInvalid)
     if (groups != null) __obj.updateDynamic("groups")(groups)
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight)
+    if (highlight != null) __obj.updateDynamic("highlight")(js.Any.fromFunction3(highlight))
     if (ignore != null) __obj.updateDynamic("ignore")(ignore)
     if (!js.isUndefined(ignoreTitle)) __obj.updateDynamic("ignoreTitle")(ignoreTitle)
-    if (invalidHandler != null) __obj.updateDynamic("invalidHandler")(invalidHandler)
+    if (invalidHandler != null) __obj.updateDynamic("invalidHandler")(js.Any.fromFunction2(invalidHandler))
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (meta != null) __obj.updateDynamic("meta")(meta)
     if (onclick != null) __obj.updateDynamic("onclick")(onclick.asInstanceOf[js.Any])
@@ -286,10 +268,10 @@ object ValidationOptions {
     if (onkeyup != null) __obj.updateDynamic("onkeyup")(onkeyup.asInstanceOf[js.Any])
     if (!js.isUndefined(onsubmit)) __obj.updateDynamic("onsubmit")(onsubmit)
     if (rules != null) __obj.updateDynamic("rules")(rules)
-    if (showErrors != null) __obj.updateDynamic("showErrors")(showErrors)
-    if (submitHandler != null) __obj.updateDynamic("submitHandler")(submitHandler)
+    if (showErrors != null) __obj.updateDynamic("showErrors")(js.Any.fromFunction2(showErrors))
+    if (submitHandler != null) __obj.updateDynamic("submitHandler")(js.Any.fromFunction2(submitHandler))
     if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
-    if (unhighlight != null) __obj.updateDynamic("unhighlight")(unhighlight)
+    if (unhighlight != null) __obj.updateDynamic("unhighlight")(js.Any.fromFunction3(unhighlight))
     if (validClass != null) __obj.updateDynamic("validClass")(validClass)
     if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
     __obj.asInstanceOf[ValidationOptions]

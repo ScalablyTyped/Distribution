@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(cb: js.Function1[/* buf */ nodeLib.Buffer, scala.Unit]): nodeLib.streamMod.Writable = js.native
-  def apply(
-    opts: concatDashStreamLib.concatDashStreamMod.ConcatOpts,
-    cb: js.Function1[/* buf */ nodeLib.Buffer, scala.Unit]
-  ): nodeLib.streamMod.Writable = js.native
+  def apply(opts: ConcatOpts, cb: js.Function1[/* buf */ nodeLib.Buffer, scala.Unit]): nodeLib.streamMod.Writable = js.native
 }
 

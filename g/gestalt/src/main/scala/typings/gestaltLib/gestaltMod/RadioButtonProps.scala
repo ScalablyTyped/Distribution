@@ -19,14 +19,14 @@ object RadioButtonProps {
   @scala.inline
   def apply(
     id: java.lang.String,
-    onChange: js.Function1[gestaltLib.Anon_Checked, scala.Unit],
+    onChange: gestaltLib.Anon_Checked => scala.Unit,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
     size: gestaltLib.gestaltLibStrings.sm | gestaltLib.gestaltLibStrings.md = null,
     value: java.lang.String = null
   ): RadioButtonProps = {
-    val __obj = js.Dynamic.literal(id = id, onChange = onChange)
+    val __obj = js.Dynamic.literal(id = id, onChange = js.Any.fromFunction1(onChange))
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (name != null) __obj.updateDynamic("name")(name)

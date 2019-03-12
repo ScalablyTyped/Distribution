@@ -21,7 +21,7 @@ trait Anon_CallBackCallback extends js.Object {
   ] = js.native
   var componentDidCatch: js.UndefOr[
     js.Function2[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* errorInfo */ reactLib.reactMod.ReactNs.ErrorInfo, 
       scala.Unit
     ]

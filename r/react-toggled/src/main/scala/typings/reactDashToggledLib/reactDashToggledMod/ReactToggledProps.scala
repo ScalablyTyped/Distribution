@@ -17,15 +17,15 @@ trait ReactToggledProps extends js.Object {
 object ReactToggledProps {
   @scala.inline
   def apply(
-    children: js.Function1[TogglerStateAndHelpers, reactLib.reactMod.ReactNs.ReactNode],
+    children: TogglerStateAndHelpers => reactLib.reactMod.ReactNs.ReactNode,
     defaultOn: js.UndefOr[scala.Boolean] = js.undefined,
     on: js.UndefOr[scala.Boolean] = js.undefined,
-    onToggle: js.Function2[/* on */ scala.Boolean, /* object */ TogglerStateAndHelpers, scala.Unit] = null
+    onToggle: (/* on */ scala.Boolean, /* object */ TogglerStateAndHelpers) => scala.Unit = null
   ): ReactToggledProps = {
-    val __obj = js.Dynamic.literal(children = children)
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     if (!js.isUndefined(defaultOn)) __obj.updateDynamic("defaultOn")(defaultOn)
     if (!js.isUndefined(on)) __obj.updateDynamic("on")(on)
-    if (onToggle != null) __obj.updateDynamic("onToggle")(onToggle)
+    if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction2(onToggle))
     __obj.asInstanceOf[ReactToggledProps]
   }
 }

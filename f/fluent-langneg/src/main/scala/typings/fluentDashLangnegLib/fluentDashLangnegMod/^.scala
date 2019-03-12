@@ -12,7 +12,7 @@ object ^ extends js.Object {
   def negotiateLanguages(
     requestedLocales: js.Array[java.lang.String],
     availableLocales: js.Array[java.lang.String],
-    options: fluentDashLangnegLib.fluentDashLangnegMod.LanguageNegotiationOptions
+    options: LanguageNegotiationOptions
   ): js.Array[java.lang.String] = js.native
 }
 

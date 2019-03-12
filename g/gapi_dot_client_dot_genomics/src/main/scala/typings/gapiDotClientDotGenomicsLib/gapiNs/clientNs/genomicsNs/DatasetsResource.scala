@@ -102,44 +102,17 @@ trait DatasetsResource extends js.Object {
 object DatasetsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
-    ],
-    getIamPolicy: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    list: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListDatasetsResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackDatasetId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
-    ],
-    setIamPolicy: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    testIamPermissions: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
-    ],
-    undelete: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
-    ]
+    create: gapiDotClientDotGenomicsLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Dataset],
+    delete: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[Dataset],
+    getIamPolicy: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    list: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[ListDatasetsResponse],
+    patch: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackDatasetId => gapiDotClientLib.gapiNs.clientNs.Request[Dataset],
+    setIamPolicy: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    testIamPermissions: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse],
+    undelete: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
   ): DatasetsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, getIamPolicy = getIamPolicy, list = list, patch = patch, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions, undelete = undelete)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions), undelete = js.Any.fromFunction1(undelete))
   
     __obj.asInstanceOf[DatasetsResource]
   }

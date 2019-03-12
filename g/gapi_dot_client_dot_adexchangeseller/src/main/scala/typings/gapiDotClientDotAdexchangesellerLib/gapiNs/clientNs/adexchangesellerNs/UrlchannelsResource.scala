@@ -13,12 +13,9 @@ trait UrlchannelsResource extends js.Object {
 object UrlchannelsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAdClientIdAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UrlChannels]
-    ]
+    list: gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAdClientIdAlt => gapiDotClientLib.gapiNs.clientNs.Request[UrlChannels]
   ): UrlchannelsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[UrlchannelsResource]
   }

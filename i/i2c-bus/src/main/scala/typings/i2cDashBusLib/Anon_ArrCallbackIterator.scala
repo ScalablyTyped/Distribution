@@ -22,9 +22,9 @@ trait Anon_ArrCallbackIterator extends js.Object {
     iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, R, E],
     callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[R, E]
   ): scala.Unit = js.native
-  def apply[T, R, E](arr: nodeLib.IterableIterator[T], iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, R, E]): scala.Unit = js.native
+  def apply[T, R, E](arr: stdLib.IterableIterator[T], iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, R, E]): scala.Unit = js.native
   def apply[T, R, E](
-    arr: nodeLib.IterableIterator[T],
+    arr: stdLib.IterableIterator[T],
     iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, R, E],
     callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[R, E]
   ): scala.Unit = js.native

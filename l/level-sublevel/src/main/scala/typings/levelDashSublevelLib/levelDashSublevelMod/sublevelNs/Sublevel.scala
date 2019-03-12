@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 
 object Sublevel {
   @scala.inline
-  def apply(pre: js.Function1[Hook, js.Function], sublevel: js.Function1[java.lang.String, Sublevel]): Sublevel = {
-    val __obj = js.Dynamic.literal(pre = pre, sublevel = sublevel)
+  def apply(pre: Hook => js.Function, sublevel: java.lang.String => Sublevel): Sublevel = {
+    val __obj = js.Dynamic.literal(pre = js.Any.fromFunction1(pre), sublevel = js.Any.fromFunction1(sublevel))
   
     __obj.asInstanceOf[Sublevel]
   }

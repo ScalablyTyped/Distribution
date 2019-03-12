@@ -43,16 +43,16 @@ trait MissingFilter extends Filter {
 object MissingFilter {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cache: js.Function1[scala.Boolean, MissingFilter],
-    cacheKey: js.Function1[java.lang.String, MissingFilter],
-    existence: js.Function1[scala.Boolean, MissingFilter],
-    field: js.Function1[java.lang.String, MissingFilter],
-    name: js.Function1[java.lang.String, MissingFilter],
-    nullValue: js.Function1[scala.Boolean, MissingFilter],
-    toJSON: js.Function0[MissingFilter]
+    _type: () => java.lang.String,
+    cache: scala.Boolean => MissingFilter,
+    cacheKey: java.lang.String => MissingFilter,
+    existence: scala.Boolean => MissingFilter,
+    field: java.lang.String => MissingFilter,
+    name: java.lang.String => MissingFilter,
+    nullValue: scala.Boolean => MissingFilter,
+    toJSON: () => MissingFilter
   ): MissingFilter = {
-    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, existence = existence, field = field, name = name, nullValue = nullValue, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), existence = js.Any.fromFunction1(existence), field = js.Any.fromFunction1(field), name = js.Any.fromFunction1(name), nullValue = js.Any.fromFunction1(nullValue), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[MissingFilter]
   }

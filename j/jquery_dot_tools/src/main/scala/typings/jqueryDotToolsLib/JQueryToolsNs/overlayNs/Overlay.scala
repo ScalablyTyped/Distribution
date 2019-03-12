@@ -25,15 +25,15 @@ trait Overlay extends js.Object {
 object Overlay {
   @scala.inline
   def apply(
-    close: js.Function0[Overlay],
-    getClosers: js.Function0[jqueryDotToolsLib.JQuery],
-    getConf: js.Function0[OverlayOptions],
-    getOverlay: js.Function0[jqueryDotToolsLib.JQuery],
-    getTrigger: js.Function0[jqueryDotToolsLib.JQuery],
-    isOpened: js.Function0[scala.Boolean],
-    load: js.Function0[Overlay]
+    close: () => Overlay,
+    getClosers: () => jqueryDotToolsLib.JQuery,
+    getConf: () => OverlayOptions,
+    getOverlay: () => jqueryDotToolsLib.JQuery,
+    getTrigger: () => jqueryDotToolsLib.JQuery,
+    isOpened: () => scala.Boolean,
+    load: () => Overlay
   ): Overlay = {
-    val __obj = js.Dynamic.literal(close = close, getClosers = getClosers, getConf = getConf, getOverlay = getOverlay, getTrigger = getTrigger, isOpened = isOpened, load = load)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getClosers = js.Any.fromFunction0(getClosers), getConf = js.Any.fromFunction0(getConf), getOverlay = js.Any.fromFunction0(getOverlay), getTrigger = js.Any.fromFunction0(getTrigger), isOpened = js.Any.fromFunction0(isOpened), load = js.Any.fromFunction0(load))
   
     __obj.asInstanceOf[Overlay]
   }

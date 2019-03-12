@@ -19,15 +19,15 @@ trait XContainerListener
 object XContainerListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    elementInserted: js.Function1[ContainerEvent, scala.Unit],
-    elementRemoved: js.Function1[ContainerEvent, scala.Unit],
-    elementReplaced: js.Function1[ContainerEvent, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    elementInserted: ContainerEvent => scala.Unit,
+    elementRemoved: ContainerEvent => scala.Unit,
+    elementReplaced: ContainerEvent => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XContainerListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, elementInserted = elementInserted, elementRemoved = elementRemoved, elementReplaced = elementReplaced, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), elementInserted = js.Any.fromFunction1(elementInserted), elementRemoved = js.Any.fromFunction1(elementRemoved), elementReplaced = js.Any.fromFunction1(elementReplaced), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XContainerListener]
   }

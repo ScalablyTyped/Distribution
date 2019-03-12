@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.EmailSignature")
 @js.native
 class EmailSignature protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
-  val EmailSignatureEntries: EmailSignatureEntries = js.native
+  val EmailSignatureEntries: activexDashWordLib.WordNs.EmailSignatureEntries = js.native
   var NewMessageSignature: java.lang.String = js.native
   val Parent: js.Any = js.native
   var ReplyMessageSignature: java.lang.String = js.native

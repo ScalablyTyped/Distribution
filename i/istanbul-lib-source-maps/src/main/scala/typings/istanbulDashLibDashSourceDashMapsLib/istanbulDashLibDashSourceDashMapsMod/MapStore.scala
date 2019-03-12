@@ -20,18 +20,15 @@ object MapStore {
   @scala.inline
   def apply(
     data: org.scalablytyped.runtime.StringDictionary[istanbulDashLibDashSourceDashMapsLib.Anon_Data],
-    dispose: js.Function0[scala.Unit],
-    registerMap: js.Function2[java.lang.String, sourceDashMapLib.sourceDashMapMod.RawSourceMap, scala.Unit],
-    registerURL: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    dispose: () => scala.Unit,
+    registerMap: (java.lang.String, sourceDashMapLib.sourceDashMapMod.RawSourceMap) => scala.Unit,
+    registerURL: (java.lang.String, java.lang.String) => scala.Unit,
     sourceStore: SourceStore,
-    transformCoverage: js.Function1[
-      istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageMap, 
-      istanbulDashLibDashSourceDashMapsLib.Anon_Map
-    ],
+    transformCoverage: istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageMap => istanbulDashLibDashSourceDashMapsLib.Anon_Map,
     verbose: scala.Boolean,
     baseDir: java.lang.String = null
   ): MapStore = {
-    val __obj = js.Dynamic.literal(data = data, dispose = dispose, registerMap = registerMap, registerURL = registerURL, sourceStore = sourceStore, transformCoverage = transformCoverage, verbose = verbose)
+    val __obj = js.Dynamic.literal(data = data, dispose = js.Any.fromFunction0(dispose), registerMap = js.Any.fromFunction2(registerMap), registerURL = js.Any.fromFunction2(registerURL), sourceStore = sourceStore, transformCoverage = js.Any.fromFunction1(transformCoverage), verbose = verbose)
     if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir)
     __obj.asInstanceOf[MapStore]
   }

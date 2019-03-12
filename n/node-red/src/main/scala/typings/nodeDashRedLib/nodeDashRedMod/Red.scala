@@ -36,9 +36,9 @@ object Red {
     server: js.Any,
     settings: js.Any,
     util: js.Any,
-    version: js.Function0[java.lang.String]
+    version: () => java.lang.String
   ): Red = {
-    val __obj = js.Dynamic.literal(auth = auth, comms = comms, events = events, httpAdmin = httpAdmin, httpNode = httpNode, library = library, log = log, nodes = nodes, server = server, settings = settings, util = util, version = version)
+    val __obj = js.Dynamic.literal(auth = auth, comms = comms, events = events, httpAdmin = httpAdmin, httpNode = httpNode, library = library, log = log, nodes = nodes, server = server, settings = settings, util = util, version = js.Any.fromFunction0(version))
   
     __obj.asInstanceOf[Red]
   }

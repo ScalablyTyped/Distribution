@@ -36,7 +36,7 @@ object SidebarProps {
     defaultSidebarWidth: scala.Int | scala.Double = null,
     docked: js.UndefOr[scala.Boolean] = js.undefined,
     dragToggleDistance: scala.Int | scala.Double = null,
-    onSetOpen: js.Function1[/* open */ scala.Boolean, scala.Unit] = null,
+    onSetOpen: /* open */ scala.Boolean => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     overlayClassName: java.lang.String = null,
     overlayId: java.lang.String = null,
@@ -58,7 +58,7 @@ object SidebarProps {
     if (defaultSidebarWidth != null) __obj.updateDynamic("defaultSidebarWidth")(defaultSidebarWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(docked)) __obj.updateDynamic("docked")(docked)
     if (dragToggleDistance != null) __obj.updateDynamic("dragToggleDistance")(dragToggleDistance.asInstanceOf[js.Any])
-    if (onSetOpen != null) __obj.updateDynamic("onSetOpen")(onSetOpen)
+    if (onSetOpen != null) __obj.updateDynamic("onSetOpen")(js.Any.fromFunction1(onSetOpen))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName)
     if (overlayId != null) __obj.updateDynamic("overlayId")(overlayId)

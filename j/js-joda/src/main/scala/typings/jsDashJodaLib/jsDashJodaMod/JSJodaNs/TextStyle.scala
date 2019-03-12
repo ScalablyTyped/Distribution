@@ -13,12 +13,8 @@ trait TextStyle extends js.Object {
 
 object TextStyle {
   @scala.inline
-  def apply(
-    asNormal: js.Function0[TextStyle],
-    asStandalone: js.Function0[TextStyle],
-    isStandalone: js.Function0[scala.Boolean]
-  ): TextStyle = {
-    val __obj = js.Dynamic.literal(asNormal = asNormal, asStandalone = asStandalone, isStandalone = isStandalone)
+  def apply(asNormal: () => TextStyle, asStandalone: () => TextStyle, isStandalone: () => scala.Boolean): TextStyle = {
+    val __obj = js.Dynamic.literal(asNormal = js.Any.fromFunction0(asNormal), asStandalone = js.Any.fromFunction0(asStandalone), isStandalone = js.Any.fromFunction0(isStandalone))
   
     __obj.asInstanceOf[TextStyle]
   }

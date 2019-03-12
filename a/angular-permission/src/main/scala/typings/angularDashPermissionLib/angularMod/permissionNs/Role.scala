@@ -17,10 +17,10 @@ object Role {
   def apply(
     permissionNames: js.Array[java.lang.String],
     roleName: java.lang.String,
-    validateRole: js.Function0[angularLib.angularMod.angularNs.IPromise[_]],
+    validateRole: () => angularLib.angularMod.angularNs.IPromise[_],
     validationFunction: RoleValidationFunction = null
   ): Role = {
-    val __obj = js.Dynamic.literal(permissionNames = permissionNames, roleName = roleName, validateRole = validateRole)
+    val __obj = js.Dynamic.literal(permissionNames = permissionNames, roleName = roleName, validateRole = js.Any.fromFunction0(validateRole))
     if (validationFunction != null) __obj.updateDynamic("validationFunction")(validationFunction)
     __obj.asInstanceOf[Role]
   }

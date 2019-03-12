@@ -27,33 +27,33 @@ trait IElement
 object IElement {
   @scala.inline
   def apply(
-    clearIncorrectValues: js.Function0[js.Any],
-    getLayoutType: js.Function0[java.lang.String],
-    getPanel: js.Function0[IPanel],
-    getType: js.Function0[java.lang.String],
-    isLayoutTypeSupported: js.Function1[java.lang.String, scala.Boolean],
+    clearIncorrectValues: () => js.Any,
+    getLayoutType: () => java.lang.String,
+    getPanel: () => IPanel,
+    getType: () => java.lang.String,
+    isLayoutTypeSupported: java.lang.String => scala.Boolean,
     isPage: scala.Boolean,
     isPanel: scala.Boolean,
     isReadOnly: scala.Boolean,
     isVisible: scala.Boolean,
-    locStrsChanged: js.Function0[js.Any],
+    locStrsChanged: () => js.Any,
     name: java.lang.String,
-    onAnyValueChanged: js.Function1[java.lang.String, js.Any],
-    onFirstRendering: js.Function0[js.Any],
-    onSurveyLoad: js.Function0[js.Any],
+    onAnyValueChanged: java.lang.String => js.Any,
+    onFirstRendering: () => js.Any,
+    onSurveyLoad: () => js.Any,
     parent: IPanel,
-    removeElement: js.Function1[IElement, scala.Boolean],
+    removeElement: IElement => scala.Boolean,
     renderWidth: java.lang.String,
     rightIndent: scala.Double,
-    runCondition: js.Function2[HashTable[_], HashTable[_], js.Any],
-    setSurveyImpl: js.Function1[ISurveyImpl, js.Any],
-    setVisibleIndex: js.Function1[scala.Double, scala.Double],
+    runCondition: (HashTable[_], HashTable[_]) => js.Any,
+    setSurveyImpl: ISurveyImpl => js.Any,
+    setVisibleIndex: scala.Double => scala.Double,
     startWithNewLine: scala.Boolean,
-    updateCustomWidgets: js.Function0[js.Any],
+    updateCustomWidgets: () => js.Any,
     visible: scala.Boolean,
     width: java.lang.String
   ): IElement = {
-    val __obj = js.Dynamic.literal(clearIncorrectValues = clearIncorrectValues, getLayoutType = getLayoutType, getPanel = getPanel, getType = getType, isLayoutTypeSupported = isLayoutTypeSupported, isPage = isPage, isPanel = isPanel, isReadOnly = isReadOnly, isVisible = isVisible, locStrsChanged = locStrsChanged, name = name, onAnyValueChanged = onAnyValueChanged, onFirstRendering = onFirstRendering, onSurveyLoad = onSurveyLoad, parent = parent, removeElement = removeElement, renderWidth = renderWidth, rightIndent = rightIndent, runCondition = runCondition, setSurveyImpl = setSurveyImpl, setVisibleIndex = setVisibleIndex, startWithNewLine = startWithNewLine, updateCustomWidgets = updateCustomWidgets, visible = visible, width = width)
+    val __obj = js.Dynamic.literal(clearIncorrectValues = js.Any.fromFunction0(clearIncorrectValues), getLayoutType = js.Any.fromFunction0(getLayoutType), getPanel = js.Any.fromFunction0(getPanel), getType = js.Any.fromFunction0(getType), isLayoutTypeSupported = js.Any.fromFunction1(isLayoutTypeSupported), isPage = isPage, isPanel = isPanel, isReadOnly = isReadOnly, isVisible = isVisible, locStrsChanged = js.Any.fromFunction0(locStrsChanged), name = name, onAnyValueChanged = js.Any.fromFunction1(onAnyValueChanged), onFirstRendering = js.Any.fromFunction0(onFirstRendering), onSurveyLoad = js.Any.fromFunction0(onSurveyLoad), parent = parent, removeElement = js.Any.fromFunction1(removeElement), renderWidth = renderWidth, rightIndent = rightIndent, runCondition = js.Any.fromFunction2(runCondition), setSurveyImpl = js.Any.fromFunction1(setSurveyImpl), setVisibleIndex = js.Any.fromFunction1(setVisibleIndex), startWithNewLine = startWithNewLine, updateCustomWidgets = js.Any.fromFunction0(updateCustomWidgets), visible = visible, width = width)
   
     __obj.asInstanceOf[IElement]
   }

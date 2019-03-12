@@ -16,7 +16,7 @@ trait DriverPropertyInfo extends js.Object {
     * contains a sequence of possible values if the value for the field `DriverPropertyInfo.value` may be selected from a particular set of values;
     * otherwise empty.
     */
-  var Choices: activexDashInteropLib.SafeArray[java.lang.String]
+  var Choices: stdLib.SafeArray[java.lang.String]
   /** is a brief description of the property, which may be null. */
   var Description: java.lang.String
   /** is `TRUE` if a value must be supplied for this property during `Driver.connect` and `FALSE` otherwise. */
@@ -30,7 +30,7 @@ trait DriverPropertyInfo extends js.Object {
 object DriverPropertyInfo {
   @scala.inline
   def apply(
-    Choices: activexDashInteropLib.SafeArray[java.lang.String],
+    Choices: stdLib.SafeArray[java.lang.String],
     Description: java.lang.String,
     IsRequired: scala.Boolean,
     Name: java.lang.String,

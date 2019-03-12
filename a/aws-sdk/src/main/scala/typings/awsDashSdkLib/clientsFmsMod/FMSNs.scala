@@ -50,7 +50,7 @@ object FMSNs extends js.Object {
     /**
       * The ID of the policy that you want to delete. PolicyId is returned by PutPolicy and by ListPolicies.
       */
-    var PolicyId: PolicyId
+    var PolicyId: awsDashSdkLib.clientsFmsMod.FMSNs.PolicyId
   }
   
   trait DisassociateAdminAccountRequest extends js.Object
@@ -91,7 +91,7 @@ object FMSNs extends js.Object {
     /**
       * The ID of the policy that you want to get the details for. PolicyId is returned by PutPolicy and by ListPolicies.
       */
-    var PolicyId: PolicyId
+    var PolicyId: awsDashSdkLib.clientsFmsMod.FMSNs.PolicyId
   }
   
   trait GetComplianceDetailResponse extends js.Object {
@@ -118,7 +118,7 @@ object FMSNs extends js.Object {
     /**
       * The ID of the AWS Firewall Manager policy that you want the details for.
       */
-    var PolicyId: PolicyId
+    var PolicyId: awsDashSdkLib.clientsFmsMod.FMSNs.PolicyId
   }
   
   trait GetPolicyResponse extends js.Object {
@@ -147,7 +147,7 @@ object FMSNs extends js.Object {
     /**
       * The ID of the AWS Firewall Manager policy that you want the details for.
       */
-    var PolicyId: PolicyId
+    var PolicyId: awsDashSdkLib.clientsFmsMod.FMSNs.PolicyId
   }
   
   trait ListComplianceStatusResponse extends js.Object {
@@ -241,11 +241,11 @@ object FMSNs extends js.Object {
     /**
       * The type of resource to protect with the policy, either an Application Load Balancer or a CloudFront distribution. This is in the format shown in AWS Resource Types Reference. Valid values are AWS::ElasticLoadBalancingV2::LoadBalancer or AWS::CloudFront::Distribution.
       */
-    var ResourceType: ResourceType
+    var ResourceType: awsDashSdkLib.clientsFmsMod.FMSNs.ResourceType
     /**
       * Details about the security service that is being used to protect the resources.
       */
-    var SecurityServicePolicyData: SecurityServicePolicyData
+    var SecurityServicePolicyData: awsDashSdkLib.clientsFmsMod.FMSNs.SecurityServicePolicyData
   }
   
   trait PolicyComplianceDetail extends js.Object {
@@ -352,7 +352,7 @@ object FMSNs extends js.Object {
     /**
       * The details of the AWS Firewall Manager policy to be created.
       */
-    var Policy: Policy
+    var Policy: awsDashSdkLib.clientsFmsMod.FMSNs.Policy
   }
   
   trait PutPolicyResponse extends js.Object {

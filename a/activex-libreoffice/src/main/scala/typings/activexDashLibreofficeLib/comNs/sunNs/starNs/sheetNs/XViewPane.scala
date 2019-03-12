@@ -35,16 +35,16 @@ object XViewPane {
     FirstVisibleColumn: scala.Double,
     FirstVisibleRow: scala.Double,
     VisibleRange: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
-    acquire: js.Function0[scala.Unit],
-    getFirstVisibleColumn: js.Function0[scala.Double],
-    getFirstVisibleRow: js.Function0[scala.Double],
-    getVisibleRange: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setFirstVisibleColumn: js.Function1[scala.Double, scala.Unit],
-    setFirstVisibleRow: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    getFirstVisibleColumn: () => scala.Double,
+    getFirstVisibleRow: () => scala.Double,
+    getVisibleRange: () => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setFirstVisibleColumn: scala.Double => scala.Unit,
+    setFirstVisibleRow: scala.Double => scala.Unit
   ): XViewPane = {
-    val __obj = js.Dynamic.literal(FirstVisibleColumn = FirstVisibleColumn, FirstVisibleRow = FirstVisibleRow, VisibleRange = VisibleRange, acquire = acquire, getFirstVisibleColumn = getFirstVisibleColumn, getFirstVisibleRow = getFirstVisibleRow, getVisibleRange = getVisibleRange, queryInterface = queryInterface, release = release, setFirstVisibleColumn = setFirstVisibleColumn, setFirstVisibleRow = setFirstVisibleRow)
+    val __obj = js.Dynamic.literal(FirstVisibleColumn = FirstVisibleColumn, FirstVisibleRow = FirstVisibleRow, VisibleRange = VisibleRange, acquire = js.Any.fromFunction0(acquire), getFirstVisibleColumn = js.Any.fromFunction0(getFirstVisibleColumn), getFirstVisibleRow = js.Any.fromFunction0(getFirstVisibleRow), getVisibleRange = js.Any.fromFunction0(getVisibleRange), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setFirstVisibleColumn = js.Any.fromFunction1(setFirstVisibleColumn), setFirstVisibleRow = js.Any.fromFunction1(setFirstVisibleRow))
   
     __obj.asInstanceOf[XViewPane]
   }

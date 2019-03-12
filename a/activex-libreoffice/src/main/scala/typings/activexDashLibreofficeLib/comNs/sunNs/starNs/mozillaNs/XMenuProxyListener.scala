@@ -22,14 +22,14 @@ trait XMenuProxyListener
 object XMenuProxyListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    menuChangedMultiple: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[MenuMultipleChange], scala.Unit],
-    menuChangedSingle: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[MenuSingleChange], scala.Unit],
-    menuItemDeleted: js.Function1[scala.Double, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    menuChangedMultiple: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[MenuMultipleChange] => scala.Unit,
+    menuChangedSingle: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[MenuSingleChange] => scala.Unit,
+    menuItemDeleted: scala.Double => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XMenuProxyListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, menuChangedMultiple = menuChangedMultiple, menuChangedSingle = menuChangedSingle, menuItemDeleted = menuItemDeleted, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), menuChangedMultiple = js.Any.fromFunction1(menuChangedMultiple), menuChangedSingle = js.Any.fromFunction1(menuChangedSingle), menuItemDeleted = js.Any.fromFunction1(menuItemDeleted), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XMenuProxyListener]
   }

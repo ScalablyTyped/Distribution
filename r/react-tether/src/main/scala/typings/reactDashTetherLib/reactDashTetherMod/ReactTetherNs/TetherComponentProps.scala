@@ -32,8 +32,8 @@ object TetherComponentProps {
     id: java.lang.String = null,
     key: reactLib.reactMod.ReactNs.Key = null,
     offset: java.lang.String = null,
-    onRepositioned: js.Function0[scala.Unit] = null,
-    onUpdate: js.Function0[scala.Unit] = null,
+    onRepositioned: () => scala.Unit = null,
+    onUpdate: () => scala.Unit = null,
     optimizations: js.Any = null,
     ref: reactLib.reactMod.ReactNs.LegacyRef[reactDashTetherLib.reactDashTetherMod.TetherComponent] = null,
     renderElementTag: java.lang.String = null,
@@ -56,8 +56,8 @@ object TetherComponentProps {
     if (id != null) __obj.updateDynamic("id")(id)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (onRepositioned != null) __obj.updateDynamic("onRepositioned")(onRepositioned)
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (onRepositioned != null) __obj.updateDynamic("onRepositioned")(js.Any.fromFunction0(onRepositioned))
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction0(onUpdate))
     if (optimizations != null) __obj.updateDynamic("optimizations")(optimizations)
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (renderElementTag != null) __obj.updateDynamic("renderElementTag")(renderElementTag)

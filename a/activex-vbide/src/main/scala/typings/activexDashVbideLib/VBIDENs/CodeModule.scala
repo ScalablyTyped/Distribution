@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("VBIDE.CodeModule")
 @js.native
 class CodeModule protected () extends js.Object {
-  val CodePane: CodePane = js.native
+  val CodePane: activexDashVbideLib.VBIDENs.CodePane = js.native
   val CountOfDeclarationLines: scala.Double = js.native
   val CountOfLines: scala.Double = js.native
   var Name: java.lang.String = js.native
   val Parent: VBComponent = js.native
-  val VBE: VBE = js.native
+  val VBE: activexDashVbideLib.VBIDENs.VBE = js.native
   var `VBIDE.CodeModule_typekey`: CodeModule = js.native
   def AddFromFile(FileName: java.lang.String): scala.Unit = js.native
   def AddFromString(String: java.lang.String): scala.Unit = js.native

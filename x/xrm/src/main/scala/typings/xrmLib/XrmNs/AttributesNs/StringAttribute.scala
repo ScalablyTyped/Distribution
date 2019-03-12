@@ -35,25 +35,25 @@ trait StringAttribute extends Attribute {
 object StringAttribute {
   @scala.inline
   def apply(
-    addOnChange: js.Function1[xrmLib.XrmNs.EventsNs.ContextSensitiveHandler, scala.Unit],
+    addOnChange: xrmLib.XrmNs.EventsNs.ContextSensitiveHandler => scala.Unit,
     controls: xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.StringControl],
-    fireOnChange: js.Function0[scala.Unit],
-    getAttributeType: js.Function0[AttributeType],
-    getFormat: js.Function0[StringAttributeFormat],
-    getIsDirty: js.Function0[scala.Boolean],
-    getMaxLength: js.Function0[scala.Double],
-    getName: js.Function0[java.lang.String],
-    getParent: js.Function0[xrmLib.XrmNs.Entity],
-    getRequiredLevel: js.Function0[RequirementLevel],
-    getSubmitMode: js.Function0[xrmLib.XrmNs.SubmitMode],
-    getUserPrivilege: js.Function0[xrmLib.XrmNs.Privilege],
-    getValue: js.Function0[java.lang.String],
-    removeOnChange: js.Function1[xrmLib.XrmNs.EventsNs.ContextSensitiveHandler, scala.Unit],
-    setRequiredLevel: js.Function1[RequirementLevel, scala.Unit],
-    setSubmitMode: js.Function1[xrmLib.XrmNs.SubmitMode, scala.Unit],
-    setValue: js.Function1[java.lang.String, scala.Unit]
+    fireOnChange: () => scala.Unit,
+    getAttributeType: () => AttributeType,
+    getFormat: () => StringAttributeFormat,
+    getIsDirty: () => scala.Boolean,
+    getMaxLength: () => scala.Double,
+    getName: () => java.lang.String,
+    getParent: () => xrmLib.XrmNs.Entity,
+    getRequiredLevel: () => RequirementLevel,
+    getSubmitMode: () => xrmLib.XrmNs.SubmitMode,
+    getUserPrivilege: () => xrmLib.XrmNs.Privilege,
+    getValue: () => java.lang.String,
+    removeOnChange: xrmLib.XrmNs.EventsNs.ContextSensitiveHandler => scala.Unit,
+    setRequiredLevel: RequirementLevel => scala.Unit,
+    setSubmitMode: xrmLib.XrmNs.SubmitMode => scala.Unit,
+    setValue: java.lang.String => scala.Unit
   ): StringAttribute = {
-    val __obj = js.Dynamic.literal(addOnChange = addOnChange, controls = controls, fireOnChange = fireOnChange, getAttributeType = getAttributeType, getFormat = getFormat, getIsDirty = getIsDirty, getMaxLength = getMaxLength, getName = getName, getParent = getParent, getRequiredLevel = getRequiredLevel, getSubmitMode = getSubmitMode, getUserPrivilege = getUserPrivilege, getValue = getValue, removeOnChange = removeOnChange, setRequiredLevel = setRequiredLevel, setSubmitMode = setSubmitMode, setValue = setValue)
+    val __obj = js.Dynamic.literal(addOnChange = js.Any.fromFunction1(addOnChange), controls = controls, fireOnChange = js.Any.fromFunction0(fireOnChange), getAttributeType = js.Any.fromFunction0(getAttributeType), getFormat = js.Any.fromFunction0(getFormat), getIsDirty = js.Any.fromFunction0(getIsDirty), getMaxLength = js.Any.fromFunction0(getMaxLength), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getRequiredLevel = js.Any.fromFunction0(getRequiredLevel), getSubmitMode = js.Any.fromFunction0(getSubmitMode), getUserPrivilege = js.Any.fromFunction0(getUserPrivilege), getValue = js.Any.fromFunction0(getValue), removeOnChange = js.Any.fromFunction1(removeOnChange), setRequiredLevel = js.Any.fromFunction1(setRequiredLevel), setSubmitMode = js.Any.fromFunction1(setSubmitMode), setValue = js.Any.fromFunction1(setValue))
   
     __obj.asInstanceOf[StringAttribute]
   }

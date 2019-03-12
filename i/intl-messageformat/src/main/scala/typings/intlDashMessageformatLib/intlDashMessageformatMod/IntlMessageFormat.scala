@@ -12,11 +12,8 @@ trait IntlMessageFormat extends js.Object {
 
 object IntlMessageFormat {
   @scala.inline
-  def apply(
-    format: js.Function1[js.Any, java.lang.String],
-    resolvedOptions: js.Function0[intlDashMessageformatLib.Anon_Locale]
-  ): IntlMessageFormat = {
-    val __obj = js.Dynamic.literal(format = format, resolvedOptions = resolvedOptions)
+  def apply(format: js.Any => java.lang.String, resolvedOptions: () => intlDashMessageformatLib.Anon_Locale): IntlMessageFormat = {
+    val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format), resolvedOptions = js.Any.fromFunction0(resolvedOptions))
   
     __obj.asInstanceOf[IntlMessageFormat]
   }

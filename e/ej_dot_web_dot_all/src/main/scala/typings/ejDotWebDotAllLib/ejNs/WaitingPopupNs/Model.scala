@@ -50,9 +50,9 @@ object Model {
   @scala.inline
   def apply(
     appendTo: java.lang.String = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     htmlAttributes: js.Any = null,
     showImage: js.UndefOr[scala.Boolean] = js.undefined,
     showOnInit: js.UndefOr[scala.Boolean] = js.undefined,
@@ -62,9 +62,9 @@ object Model {
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
     if (!js.isUndefined(showImage)) __obj.updateDynamic("showImage")(showImage)
     if (!js.isUndefined(showOnInit)) __obj.updateDynamic("showOnInit")(showOnInit)

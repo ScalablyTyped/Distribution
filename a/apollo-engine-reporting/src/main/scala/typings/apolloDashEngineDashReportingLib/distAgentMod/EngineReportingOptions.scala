@@ -22,9 +22,9 @@ trait EngineReportingOptions[TContext] extends js.Object {
   var maxAttempts: js.UndefOr[scala.Double] = js.undefined
   var maxUncompressedReportSize: js.UndefOr[scala.Double] = js.undefined
   var minimumRetryDelayMs: js.UndefOr[scala.Double] = js.undefined
-  var privateHeaders: js.UndefOr[js.Array[nodeLib.String] | scala.Boolean] = js.undefined
-  var privateVariables: js.UndefOr[js.Array[nodeLib.String] | scala.Boolean] = js.undefined
-  var reportErrorFunction: js.UndefOr[js.Function1[/* err */ nodeLib.Error, scala.Unit]] = js.undefined
+  var privateHeaders: js.UndefOr[js.Array[java.lang.String] | scala.Boolean] = js.undefined
+  var privateVariables: js.UndefOr[js.Array[java.lang.String] | scala.Boolean] = js.undefined
+  var reportErrorFunction: js.UndefOr[js.Function1[/* err */ stdLib.Error, scala.Unit]] = js.undefined
   var reportIntervalMs: js.UndefOr[scala.Double] = js.undefined
   var requestAgent: js.UndefOr[
     apolloDashServerDashEnvLib.distFetchMod.RequestAgent | apolloDashEngineDashReportingLib.apolloDashEngineDashReportingLibNumbers.`false`
@@ -37,11 +37,7 @@ object EngineReportingOptions {
   @scala.inline
   def apply[TContext](
     apiKey: java.lang.String = null,
-    calculateSignature: js.Function2[
-      /* ast */ graphqlLib.languageAstMod.DocumentNode, 
-      /* operationName */ java.lang.String, 
-      java.lang.String
-    ] = null,
+    calculateSignature: (/* ast */ graphqlLib.languageAstMod.DocumentNode, /* operationName */ java.lang.String) => java.lang.String = null,
     debugPrintReports: js.UndefOr[scala.Boolean] = js.undefined,
     endpointUrl: java.lang.String = null,
     generateClientInfo: GenerateClientInfo[TContext] = null,
@@ -50,9 +46,9 @@ object EngineReportingOptions {
     maxAttempts: scala.Int | scala.Double = null,
     maxUncompressedReportSize: scala.Int | scala.Double = null,
     minimumRetryDelayMs: scala.Int | scala.Double = null,
-    privateHeaders: js.Array[nodeLib.String] | scala.Boolean = null,
-    privateVariables: js.Array[nodeLib.String] | scala.Boolean = null,
-    reportErrorFunction: js.Function1[/* err */ nodeLib.Error, scala.Unit] = null,
+    privateHeaders: js.Array[java.lang.String] | scala.Boolean = null,
+    privateVariables: js.Array[java.lang.String] | scala.Boolean = null,
+    reportErrorFunction: /* err */ stdLib.Error => scala.Unit = null,
     reportIntervalMs: scala.Int | scala.Double = null,
     requestAgent: apolloDashServerDashEnvLib.distFetchMod.RequestAgent | apolloDashEngineDashReportingLib.apolloDashEngineDashReportingLibNumbers.`false` = null,
     schemaTag: java.lang.String = null,
@@ -60,7 +56,7 @@ object EngineReportingOptions {
   ): EngineReportingOptions[TContext] = {
     val __obj = js.Dynamic.literal()
     if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
-    if (calculateSignature != null) __obj.updateDynamic("calculateSignature")(calculateSignature)
+    if (calculateSignature != null) __obj.updateDynamic("calculateSignature")(js.Any.fromFunction2(calculateSignature))
     if (!js.isUndefined(debugPrintReports)) __obj.updateDynamic("debugPrintReports")(debugPrintReports)
     if (endpointUrl != null) __obj.updateDynamic("endpointUrl")(endpointUrl)
     if (generateClientInfo != null) __obj.updateDynamic("generateClientInfo")(generateClientInfo)
@@ -71,7 +67,7 @@ object EngineReportingOptions {
     if (minimumRetryDelayMs != null) __obj.updateDynamic("minimumRetryDelayMs")(minimumRetryDelayMs.asInstanceOf[js.Any])
     if (privateHeaders != null) __obj.updateDynamic("privateHeaders")(privateHeaders.asInstanceOf[js.Any])
     if (privateVariables != null) __obj.updateDynamic("privateVariables")(privateVariables.asInstanceOf[js.Any])
-    if (reportErrorFunction != null) __obj.updateDynamic("reportErrorFunction")(reportErrorFunction)
+    if (reportErrorFunction != null) __obj.updateDynamic("reportErrorFunction")(js.Any.fromFunction1(reportErrorFunction))
     if (reportIntervalMs != null) __obj.updateDynamic("reportIntervalMs")(reportIntervalMs.asInstanceOf[js.Any])
     if (requestAgent != null) __obj.updateDynamic("requestAgent")(requestAgent.asInstanceOf[js.Any])
     if (schemaTag != null) __obj.updateDynamic("schemaTag")(schemaTag)

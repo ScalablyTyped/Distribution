@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DataLabels extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var AutoScaleFont: js.Any = js.native
   var AutoText: scala.Boolean = js.native
-  val Border: Border = js.native
+  val Border: activexDashExcelLib.ExcelNs.Border = js.native
   val Count: scala.Double = js.native
   val Creator: XlCreator = js.native
   val Fill: ChartFillFormat = js.native
-  val Font: Font = js.native
+  val Font: activexDashExcelLib.ExcelNs.Font = js.native
   val Format: ChartFormat = js.native
   var HorizontalAlignment: HorizontalAlignments = js.native
-  val Interior: Interior = js.native
+  val Interior: activexDashExcelLib.ExcelNs.Interior = js.native
   val Name: java.lang.String = js.native
   var NumberFormat: java.lang.String = js.native
   var NumberFormatLinked: scala.Boolean = js.native

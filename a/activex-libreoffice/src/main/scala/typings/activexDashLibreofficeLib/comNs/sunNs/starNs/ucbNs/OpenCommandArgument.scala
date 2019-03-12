@@ -19,7 +19,7 @@ trait OpenCommandArgument extends js.Object {
   /** The command's priority, in the range `0` (highest) to `65535` (lowest). */
   var Priority: scala.Double
   /** The properties, for that the values shall be provided by the {@link DynamicResultSet} returned by the command). */
-  var Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
+  var Properties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
   /**
     * The data sink to write the contents into (supporting either {@link com.sun.star.io.XActiveDataSink} , {@link com.sun.star.io.XOutputStream} or {@link
     * com.sun.star.io.XActiveDataStreamer} ).
@@ -39,7 +39,7 @@ object OpenCommandArgument {
   def apply(
     Mode: scala.Double,
     Priority: scala.Double,
-    Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
+    Properties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
     Sink: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): OpenCommandArgument = {
     val __obj = js.Dynamic.literal(Mode = Mode, Priority = Priority, Properties = Properties, Sink = Sink)

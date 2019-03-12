@@ -20,18 +20,18 @@ object ResponsivePanelOptions {
   def apply(
     autoClose: js.UndefOr[scala.Boolean] = js.undefined,
     breakpoint: scala.Int | scala.Double = null,
-    close: js.Function1[/* e */ ResponsivePanelEvent, scala.Unit] = null,
+    close: /* e */ ResponsivePanelEvent => scala.Unit = null,
     name: java.lang.String = null,
-    open: js.Function1[/* e */ ResponsivePanelEvent, scala.Unit] = null,
+    open: /* e */ ResponsivePanelEvent => scala.Unit = null,
     orientation: java.lang.String = null,
     toggleButton: java.lang.String = null
   ): ResponsivePanelOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
     if (breakpoint != null) __obj.updateDynamic("breakpoint")(breakpoint.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (name != null) __obj.updateDynamic("name")(name)
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation)
     if (toggleButton != null) __obj.updateDynamic("toggleButton")(toggleButton)
     __obj.asInstanceOf[ResponsivePanelOptions]

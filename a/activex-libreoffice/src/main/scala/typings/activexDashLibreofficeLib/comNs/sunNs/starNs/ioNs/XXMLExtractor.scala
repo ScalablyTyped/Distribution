@@ -18,12 +18,12 @@ trait XXMLExtractor
 object XXMLExtractor {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    extract: js.Function1[XInputStream, XInputStream],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    extract: XInputStream => XInputStream,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XXMLExtractor = {
-    val __obj = js.Dynamic.literal(acquire = acquire, extract = extract, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), extract = js.Any.fromFunction1(extract), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XXMLExtractor]
   }

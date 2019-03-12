@@ -151,7 +151,7 @@ object TooltipOption {
       Placement
     ]) = null,
     sanitize: js.UndefOr[scala.Boolean] = js.undefined,
-    sanitizeFn: js.Function1[/* input */ java.lang.String, java.lang.String] = null,
+    sanitizeFn: /* input */ java.lang.String => java.lang.String = null,
     selector: java.lang.String | bootstrapLib.bootstrapLibNumbers.`false` = null,
     template: java.lang.String = null,
     title: java.lang.String | stdLib.Element | (js.ThisFunction0[/* this */ stdLib.Element, java.lang.String | stdLib.Element]) = null,
@@ -168,7 +168,7 @@ object TooltipOption {
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (!js.isUndefined(sanitize)) __obj.updateDynamic("sanitize")(sanitize)
-    if (sanitizeFn != null) __obj.updateDynamic("sanitizeFn")(sanitizeFn)
+    if (sanitizeFn != null) __obj.updateDynamic("sanitizeFn")(js.Any.fromFunction1(sanitizeFn))
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

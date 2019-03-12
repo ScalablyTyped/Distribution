@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/thread/SharedMutex", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val shared_mutex: org.scalablytyped.runtime.Instantiable0[tstlLib.threadSharedMutexMod.SharedMutex] = js.native
+  val shared_mutex: org.scalablytyped.runtime.Instantiable0[SharedMutex] = js.native
 }
 

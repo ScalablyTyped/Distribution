@@ -69,21 +69,21 @@ trait StatisticalFacet extends Facet {
 object StatisticalFacet {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cacheFilter: js.Function1[scala.Boolean, StatisticalFacet],
-    facetFilter: js.Function1[js.Object, StatisticalFacet],
-    field: js.Function1[java.lang.String, StatisticalFacet],
-    fields: js.Function1[js.Array[_], StatisticalFacet],
-    global: js.Function1[scala.Boolean, StatisticalFacet],
-    lang: js.Function1[java.lang.String, StatisticalFacet],
-    mode: js.Function1[java.lang.String, StatisticalFacet],
-    nested: js.Function1[java.lang.String, StatisticalFacet],
-    params: js.Function1[js.Object, StatisticalFacet],
-    scope: js.Function1[java.lang.String, StatisticalFacet],
-    script: js.Function1[java.lang.String, StatisticalFacet],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    cacheFilter: scala.Boolean => StatisticalFacet,
+    facetFilter: js.Object => StatisticalFacet,
+    field: java.lang.String => StatisticalFacet,
+    fields: js.Array[_] => StatisticalFacet,
+    global: scala.Boolean => StatisticalFacet,
+    lang: java.lang.String => StatisticalFacet,
+    mode: java.lang.String => StatisticalFacet,
+    nested: java.lang.String => StatisticalFacet,
+    params: js.Object => StatisticalFacet,
+    scope: java.lang.String => StatisticalFacet,
+    script: java.lang.String => StatisticalFacet,
+    toJSON: () => js.Any
   ): StatisticalFacet = {
-    val __obj = js.Dynamic.literal(_type = _type, cacheFilter = cacheFilter, facetFilter = facetFilter, field = field, fields = fields, global = global, lang = lang, mode = mode, nested = nested, params = params, scope = scope, script = script, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cacheFilter = js.Any.fromFunction1(cacheFilter), facetFilter = js.Any.fromFunction1(facetFilter), field = js.Any.fromFunction1(field), fields = js.Any.fromFunction1(fields), global = js.Any.fromFunction1(global), lang = js.Any.fromFunction1(lang), mode = js.Any.fromFunction1(mode), nested = js.Any.fromFunction1(nested), params = js.Any.fromFunction1(params), scope = js.Any.fromFunction1(scope), script = js.Any.fromFunction1(script), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[StatisticalFacet]
   }

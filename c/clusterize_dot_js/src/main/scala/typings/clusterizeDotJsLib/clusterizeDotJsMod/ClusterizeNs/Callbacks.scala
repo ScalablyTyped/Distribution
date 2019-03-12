@@ -14,14 +14,14 @@ trait Callbacks extends js.Object {
 object Callbacks {
   @scala.inline
   def apply(
-    clusterChanged: js.Function0[scala.Unit] = null,
-    clusterWillChange: js.Function0[scala.Unit] = null,
-    scrollingProgress: js.Function1[/* progress */ scala.Double, scala.Unit] = null
+    clusterChanged: () => scala.Unit = null,
+    clusterWillChange: () => scala.Unit = null,
+    scrollingProgress: /* progress */ scala.Double => scala.Unit = null
   ): Callbacks = {
     val __obj = js.Dynamic.literal()
-    if (clusterChanged != null) __obj.updateDynamic("clusterChanged")(clusterChanged)
-    if (clusterWillChange != null) __obj.updateDynamic("clusterWillChange")(clusterWillChange)
-    if (scrollingProgress != null) __obj.updateDynamic("scrollingProgress")(scrollingProgress)
+    if (clusterChanged != null) __obj.updateDynamic("clusterChanged")(js.Any.fromFunction0(clusterChanged))
+    if (clusterWillChange != null) __obj.updateDynamic("clusterWillChange")(js.Any.fromFunction0(clusterWillChange))
+    if (scrollingProgress != null) __obj.updateDynamic("scrollingProgress")(js.Any.fromFunction1(scrollingProgress))
     __obj.asInstanceOf[Callbacks]
   }
 }

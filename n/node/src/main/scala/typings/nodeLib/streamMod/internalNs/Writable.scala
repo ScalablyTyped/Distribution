@@ -18,8 +18,14 @@ trait Writable
   ] = js.native
   val writableHighWaterMark: scala.Double = js.native
   val writableLength: scala.Double = js.native
-  def _destroy(error: nodeLib.Error, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
-  def _destroy(error: scala.Null, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
+  def _destroy(
+    error: nodeLib.Error,
+    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+  ): scala.Unit = js.native
+  def _destroy(
+    error: scala.Null,
+    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+  ): scala.Unit = js.native
   def _final(callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]): scala.Unit = js.native
   def _write(
     chunk: js.Any,
@@ -63,7 +69,6 @@ trait Writable
   def emit_pipe(event: nodeLib.nodeLibStrings.pipe, src: Readable): scala.Boolean = js.native
   @JSName("emit")
   def emit_unpipe(event: nodeLib.nodeLibStrings.unpipe, src: Readable): scala.Boolean = js.native
-  def end(cb: js.Function0[scala.Unit]): scala.Unit = js.native
   def end(chunk: js.Any): scala.Unit = js.native
   def end(chunk: js.Any, cb: js.Function0[scala.Unit]): scala.Unit = js.native
   def end(chunk: js.Any, encoding: java.lang.String): scala.Unit = js.native

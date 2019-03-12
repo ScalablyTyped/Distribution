@@ -16,7 +16,7 @@ object ^ extends js.Object {
   val inArray: atUirouterCoreLib.Anon_Array = js.native
   var mapObj: js.Function3[
     /* collection */ org.scalablytyped.runtime.StringDictionary[js.Any], 
-    /* callback */ atUirouterCoreLib.libCommonCommonMod.Mapper[js.Any, js.Any], 
+    /* callback */ Mapper[js.Any, js.Any], 
     /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof collection */ /* target */ js.UndefOr[
       /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof collection */ js.Any
     ], 
@@ -26,10 +26,7 @@ object ^ extends js.Object {
   val removeFrom: atUirouterCoreLib.Anon_ArrayObj = js.native
   val root: js.Any = js.native
   val toJson: js.Any = js.native
-  def _extend(
-    toObj: atUirouterCoreLib.libCommonCommonMod.Obj,
-    fromObjs: atUirouterCoreLib.libCommonCommonMod.Obj*
-  ): js.Any = js.native
+  def _extend(toObj: Obj, fromObjs: Obj*): js.Any = js.native
   def _inArray(array: js.Array[_]): js.Function1[/* obj */ js.Any, scala.Boolean] = js.native
   def _inArray(array: js.Array[_], obj: js.Any): scala.Boolean = js.native
   def _pushTo[T](arr: js.Array[T]): js.Function1[/* val */ T, T] = js.native
@@ -42,73 +39,62 @@ object ^ extends js.Object {
     second: atUirouterCoreLib.libStateStateObjectMod.StateObject
   ): js.Array[atUirouterCoreLib.libStateStateObjectMod.StateObject] = js.native
   def anyTrueR(memo: scala.Boolean, elem: js.Any): js.Any = js.native
-  def applyPairs(memo: atUirouterCoreLib.libCommonCommonMod.TypedMap[_], keyValTuple: js.Array[_]): atUirouterCoreLib.libCommonCommonMod.TypedMap[_] = js.native
+  def applyPairs(memo: TypedMap[_], keyValTuple: js.Array[_]): TypedMap[_] = js.native
   def arrayTuples(args: js.Any*): js.Array[_] = js.native
   def assertFn(predicateOrMap: js.Function): js.Any = js.native
   def assertFn(predicateOrMap: js.Function, errMsg: java.lang.String): js.Any = js.native
   def assertFn(predicateOrMap: js.Function, errMsg: js.Function): js.Any = js.native
   def assertMap[T, U](mapFn: js.Function1[/* t */ T, U], errMsg: java.lang.String): js.Function1[/* t */ T, U] = js.native
   def assertMap[T, U](mapFn: js.Function1[/* t */ T, U], errMsg: js.Function): js.Function1[/* t */ T, U] = js.native
-  def assertPredicate[T](predicate: atUirouterCoreLib.libCommonCommonMod.Predicate[T], errMsg: java.lang.String): atUirouterCoreLib.libCommonCommonMod.Predicate[T] = js.native
-  def assertPredicate[T](predicate: atUirouterCoreLib.libCommonCommonMod.Predicate[T], errMsg: js.Function): atUirouterCoreLib.libCommonCommonMod.Predicate[T] = js.native
-  def copy(src: atUirouterCoreLib.libCommonCommonMod.Obj): atUirouterCoreLib.libCommonCommonMod.Obj = js.native
-  def copy(src: atUirouterCoreLib.libCommonCommonMod.Obj, dest: atUirouterCoreLib.libCommonCommonMod.Obj): atUirouterCoreLib.libCommonCommonMod.Obj = js.native
-  def createProxyFunctions(source: js.Function, target: atUirouterCoreLib.libCommonCommonMod.Obj, bind: js.Function): atUirouterCoreLib.libCommonCommonMod.Obj = js.native
+  def assertPredicate[T](predicate: Predicate[T], errMsg: java.lang.String): Predicate[T] = js.native
+  def assertPredicate[T](predicate: Predicate[T], errMsg: js.Function): Predicate[T] = js.native
+  def copy(src: Obj): Obj = js.native
+  def copy(src: Obj, dest: Obj): Obj = js.native
+  def createProxyFunctions(source: js.Function, target: Obj, bind: js.Function): Obj = js.native
+  def createProxyFunctions(source: js.Function, target: Obj, bind: js.Function, fnNames: js.Array[java.lang.String]): Obj = js.native
   def createProxyFunctions(
     source: js.Function,
-    target: atUirouterCoreLib.libCommonCommonMod.Obj,
-    bind: js.Function,
-    fnNames: js.Array[java.lang.String]
-  ): atUirouterCoreLib.libCommonCommonMod.Obj = js.native
-  def createProxyFunctions(
-    source: js.Function,
-    target: atUirouterCoreLib.libCommonCommonMod.Obj,
+    target: Obj,
     bind: js.Function,
     fnNames: js.Array[java.lang.String],
     latebind: scala.Boolean
-  ): atUirouterCoreLib.libCommonCommonMod.Obj = js.native
-  def defaults(opts: js.Any, defaultsList: atUirouterCoreLib.libCommonCommonMod.Obj*): js.Any = js.native
+  ): Obj = js.native
+  def defaults(opts: js.Any, defaultsList: Obj*): js.Any = js.native
   def deregAll(functions: js.Array[js.Function]): scala.Unit = js.native
   def filter[T](
-    collection: atUirouterCoreLib.libCommonCommonMod.TypedMap[T],
+    collection: TypedMap[T],
     callback: js.Function2[/* t */ T, /* key */ js.UndefOr[java.lang.String], scala.Boolean]
-  ): atUirouterCoreLib.libCommonCommonMod.TypedMap[T] = js.native
+  ): TypedMap[T] = js.native
   def filter[T](
     collection: js.Array[T],
     callback: js.Function2[/* t */ T, /* key */ js.UndefOr[scala.Double], scala.Boolean]
   ): js.Array[T] = js.native
-  def find[T](
-    collection: atUirouterCoreLib.libCommonCommonMod.TypedMap[T],
-    callback: atUirouterCoreLib.libCommonCommonMod.Predicate[T]
-  ): T = js.native
-  def find[T](collection: js.Array[T], callback: atUirouterCoreLib.libCommonCommonMod.Predicate[T]): T = js.native
+  def find[T](collection: TypedMap[T], callback: Predicate[T]): T = js.native
+  def find[T](collection: js.Array[T], callback: Predicate[T]): T = js.native
   def flatten(arr: js.Array[_]): js.Any = js.native
   def flattenR(memo: js.Array[_], elem: js.Any): js.Any = js.native
   def identity(x: js.Any): js.Any = js.native
-  def inherit(parent: atUirouterCoreLib.libCommonCommonMod.Obj): js.Any = js.native
-  def inherit(parent: atUirouterCoreLib.libCommonCommonMod.Obj, extra: atUirouterCoreLib.libCommonCommonMod.Obj): js.Any = js.native
-  def map[T, U](collection: js.Array[T], callback: atUirouterCoreLib.libCommonCommonMod.Mapper[T, U]): js.Array[U] = js.native
+  def inherit(parent: Obj): js.Any = js.native
+  def inherit(parent: Obj, extra: Obj): js.Any = js.native
+  def map[T, U](collection: js.Array[T], callback: Mapper[T, U]): js.Array[U] = js.native
   def map[T, U](
     collection: js.Array[T],
-    callback: atUirouterCoreLib.libCommonCommonMod.Mapper[T, U],
+    callback: Mapper[T, U],
     target: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof collection */ js.Any
   ): js.Array[U] = js.native
+  def map[T, U](collection: org.scalablytyped.runtime.StringDictionary[T], callback: Mapper[T, U]): org.scalablytyped.runtime.StringDictionary[U] = js.native
   def map[T, U](
     collection: org.scalablytyped.runtime.StringDictionary[T],
-    callback: atUirouterCoreLib.libCommonCommonMod.Mapper[T, U]
-  ): org.scalablytyped.runtime.StringDictionary[U] = js.native
-  def map[T, U](
-    collection: org.scalablytyped.runtime.StringDictionary[T],
-    callback: atUirouterCoreLib.libCommonCommonMod.Mapper[T, U],
+    callback: Mapper[T, U],
     target: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof collection */ js.Any
   ): org.scalablytyped.runtime.StringDictionary[U] = js.native
-  def mergeR(memo: atUirouterCoreLib.libCommonCommonMod.Obj, item: atUirouterCoreLib.libCommonCommonMod.Obj): atUirouterCoreLib.libCommonCommonMod.Obj = js.native
+  def mergeR(memo: Obj, item: Obj): Obj = js.native
   def noop(): js.Any = js.native
-  def omit(obj: atUirouterCoreLib.libCommonCommonMod.Obj, propNames: js.Array[java.lang.String]): atUirouterCoreLib.libCommonCommonMod.Obj = js.native
-  def pairs(obj: atUirouterCoreLib.libCommonCommonMod.Obj): js.Array[js.Array[_]] = js.native
-  def pick(obj: atUirouterCoreLib.libCommonCommonMod.Obj, propNames: js.Array[java.lang.String]): atUirouterCoreLib.libCommonCommonMod.Obj = js.native
+  def omit(obj: Obj, propNames: js.Array[java.lang.String]): Obj = js.native
+  def pairs(obj: Obj): js.Array[js.Array[_]] = js.native
+  def pick(obj: Obj, propNames: js.Array[java.lang.String]): Obj = js.native
   def pluck(collection: org.scalablytyped.runtime.StringDictionary[js.Any], propName: java.lang.String): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
-  def pluck[T](collection: js.Array[atUirouterCoreLib.libCommonCommonMod.Obj], propName: java.lang.String): js.Array[T] = js.native
+  def pluck[T](collection: js.Array[Obj], propName: java.lang.String): js.Array[T] = js.native
   def pushR(arr: js.Array[_], obj: js.Any): js.Array[_] = js.native
   def silenceUncaughtInPromise(promise: js.Promise[_]): js.Promise[_] = js.native
   def silentRejection(error: js.Any): js.Promise[_] = js.native
@@ -116,6 +102,6 @@ object ^ extends js.Object {
   def uniqR[T](acc: js.Array[T], token: T): js.Array[T] = js.native
   def unnest(arr: js.Array[_]): js.Any = js.native
   def unnestR(memo: js.Array[_], elem: js.Array[_]): js.Array[_] = js.native
-  def values[T](obj: atUirouterCoreLib.libCommonCommonMod.TypedMap[T]): js.Array[T] = js.native
+  def values[T](obj: TypedMap[T]): js.Array[T] = js.native
 }
 

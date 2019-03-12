@@ -102,86 +102,34 @@ trait ChartTooltipCallback extends js.Object {
 object ChartTooltipCallback {
   @scala.inline
   def apply(
-    afterBody: js.Function2[
-      /* item */ js.Array[ChartTooltipItem], 
-      /* data */ ChartData, 
-      java.lang.String | js.Array[java.lang.String]
-    ] = null,
-    afterFooter: js.Function2[
-      /* item */ js.Array[ChartTooltipItem], 
-      /* data */ ChartData, 
-      java.lang.String | js.Array[java.lang.String]
-    ] = null,
-    afterLabel: js.Function2[
-      /* tooltipItem */ ChartTooltipItem, 
-      /* data */ ChartData, 
-      java.lang.String | js.Array[java.lang.String]
-    ] = null,
-    afterTitle: js.Function2[
-      /* item */ js.Array[ChartTooltipItem], 
-      /* data */ ChartData, 
-      java.lang.String | js.Array[java.lang.String]
-    ] = null,
-    beforeBody: js.Function2[
-      /* item */ js.Array[ChartTooltipItem], 
-      /* data */ ChartData, 
-      java.lang.String | js.Array[java.lang.String]
-    ] = null,
-    beforeFooter: js.Function2[
-      /* item */ js.Array[ChartTooltipItem], 
-      /* data */ ChartData, 
-      java.lang.String | js.Array[java.lang.String]
-    ] = null,
-    beforeLabel: js.Function2[
-      /* tooltipItem */ ChartTooltipItem, 
-      /* data */ ChartData, 
-      java.lang.String | js.Array[java.lang.String]
-    ] = null,
-    beforeTitle: js.Function2[
-      /* item */ js.Array[ChartTooltipItem], 
-      /* data */ ChartData, 
-      java.lang.String | js.Array[java.lang.String]
-    ] = null,
-    footer: js.Function2[
-      /* item */ js.Array[ChartTooltipItem], 
-      /* data */ ChartData, 
-      java.lang.String | js.Array[java.lang.String]
-    ] = null,
-    label: js.Function2[
-      /* tooltipItem */ ChartTooltipItem, 
-      /* data */ ChartData, 
-      java.lang.String | js.Array[java.lang.String]
-    ] = null,
-    labelColor: js.Function2[
-      /* tooltipItem */ ChartTooltipItem, 
-      /* chart */ chartDotJsLib.chartDotJsMod.Chart, 
-      ChartTooltipLabelColor
-    ] = null,
-    labelTextColor: js.Function2[
-      /* tooltipItem */ ChartTooltipItem, 
-      /* chart */ chartDotJsLib.chartDotJsMod.Chart, 
-      java.lang.String
-    ] = null,
-    title: js.Function2[
-      /* item */ js.Array[ChartTooltipItem], 
-      /* data */ ChartData, 
-      java.lang.String | js.Array[java.lang.String]
-    ] = null
+    afterBody: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => java.lang.String | js.Array[java.lang.String] = null,
+    afterFooter: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => java.lang.String | js.Array[java.lang.String] = null,
+    afterLabel: (/* tooltipItem */ ChartTooltipItem, /* data */ ChartData) => java.lang.String | js.Array[java.lang.String] = null,
+    afterTitle: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => java.lang.String | js.Array[java.lang.String] = null,
+    beforeBody: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => java.lang.String | js.Array[java.lang.String] = null,
+    beforeFooter: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => java.lang.String | js.Array[java.lang.String] = null,
+    beforeLabel: (/* tooltipItem */ ChartTooltipItem, /* data */ ChartData) => java.lang.String | js.Array[java.lang.String] = null,
+    beforeTitle: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => java.lang.String | js.Array[java.lang.String] = null,
+    footer: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => java.lang.String | js.Array[java.lang.String] = null,
+    label: (/* tooltipItem */ ChartTooltipItem, /* data */ ChartData) => java.lang.String | js.Array[java.lang.String] = null,
+    labelColor: (/* tooltipItem */ ChartTooltipItem, /* chart */ chartDotJsLib.chartDotJsMod.Chart) => ChartTooltipLabelColor = null,
+    labelTextColor: (/* tooltipItem */ ChartTooltipItem, /* chart */ chartDotJsLib.chartDotJsMod.Chart) => java.lang.String = null,
+    title: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => java.lang.String | js.Array[java.lang.String] = null
   ): ChartTooltipCallback = {
     val __obj = js.Dynamic.literal()
-    if (afterBody != null) __obj.updateDynamic("afterBody")(afterBody)
-    if (afterFooter != null) __obj.updateDynamic("afterFooter")(afterFooter)
-    if (afterLabel != null) __obj.updateDynamic("afterLabel")(afterLabel)
-    if (afterTitle != null) __obj.updateDynamic("afterTitle")(afterTitle)
-    if (beforeBody != null) __obj.updateDynamic("beforeBody")(beforeBody)
-    if (beforeFooter != null) __obj.updateDynamic("beforeFooter")(beforeFooter)
-    if (beforeLabel != null) __obj.updateDynamic("beforeLabel")(beforeLabel)
-    if (beforeTitle != null) __obj.updateDynamic("beforeTitle")(beforeTitle)
-    if (footer != null) __obj.updateDynamic("footer")(footer)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor)
-    if (labelTextColor != null) __obj.updateDynamic("labelTextColor")(labelTextColor)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (afterBody != null) __obj.updateDynamic("afterBody")(js.Any.fromFunction2(afterBody))
+    if (afterFooter != null) __obj.updateDynamic("afterFooter")(js.Any.fromFunction2(afterFooter))
+    if (afterLabel != null) __obj.updateDynamic("afterLabel")(js.Any.fromFunction2(afterLabel))
+    if (afterTitle != null) __obj.updateDynamic("afterTitle")(js.Any.fromFunction2(afterTitle))
+    if (beforeBody != null) __obj.updateDynamic("beforeBody")(js.Any.fromFunction2(beforeBody))
+    if (beforeFooter != null) __obj.updateDynamic("beforeFooter")(js.Any.fromFunction2(beforeFooter))
+    if (beforeLabel != null) __obj.updateDynamic("beforeLabel")(js.Any.fromFunction2(beforeLabel))
+    if (beforeTitle != null) __obj.updateDynamic("beforeTitle")(js.Any.fromFunction2(beforeTitle))
+    if (footer != null) __obj.updateDynamic("footer")(js.Any.fromFunction2(footer))
+    if (label != null) __obj.updateDynamic("label")(js.Any.fromFunction2(label))
+    if (labelColor != null) __obj.updateDynamic("labelColor")(js.Any.fromFunction2(labelColor))
+    if (labelTextColor != null) __obj.updateDynamic("labelTextColor")(js.Any.fromFunction2(labelTextColor))
+    if (title != null) __obj.updateDynamic("title")(js.Any.fromFunction2(title))
     __obj.asInstanceOf[ChartTooltipCallback]
   }
 }

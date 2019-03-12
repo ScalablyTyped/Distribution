@@ -17,17 +17,14 @@ trait DatasetBands extends js.Object {
 object DatasetBands {
   @scala.inline
   def apply(
-    count: js.Function0[scala.Double],
-    create: js.Function1[scala.Double, RasterBand],
+    count: () => scala.Double,
+    create: scala.Double => RasterBand,
     ds: Dataset,
-    forEach: js.Function1[js.Function2[/* band */ RasterBand, /* i */ scala.Double, scala.Unit], scala.Unit],
-    get: js.Function1[scala.Double, RasterBand],
-    map: js.Function1[
-      js.Function2[/* band */ RasterBand, /* i */ scala.Double, js.Any], 
-      js.Array[js.Any]
-    ]
+    forEach: js.Function2[/* band */ RasterBand, /* i */ scala.Double, scala.Unit] => scala.Unit,
+    get: scala.Double => RasterBand,
+    map: js.Function2[/* band */ RasterBand, /* i */ scala.Double, js.Any] => js.Array[js.Any]
   ): DatasetBands = {
-    val __obj = js.Dynamic.literal(count = count, create = create, ds = ds, forEach = forEach, get = get, map = map)
+    val __obj = js.Dynamic.literal(count = js.Any.fromFunction0(count), create = js.Any.fromFunction1(create), ds = ds, forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), map = js.Any.fromFunction1(map))
   
     __obj.asInstanceOf[DatasetBands]
   }

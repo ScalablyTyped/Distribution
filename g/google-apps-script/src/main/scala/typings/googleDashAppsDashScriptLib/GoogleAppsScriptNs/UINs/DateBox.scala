@@ -43,41 +43,37 @@ trait DateBox extends js.Object {
 object DateBox {
   @scala.inline
   def apply(
-    addStyleDependentName: js.Function1[java.lang.String, DateBox],
-    addStyleName: js.Function1[java.lang.String, DateBox],
-    addValueChangeHandler: js.Function1[Handler, DateBox],
-    getId: js.Function0[java.lang.String],
-    getTag: js.Function0[java.lang.String],
-    getType: js.Function0[java.lang.String],
-    hideDatePicker: js.Function0[DateBox],
-    setAccessKey: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Char, DateBox],
-    setEnabled: js.Function1[scala.Boolean, DateBox],
-    setFireEventsForInvalid: js.Function1[scala.Boolean, DateBox],
-    setFocus: js.Function1[scala.Boolean, DateBox],
-    setFormat: js.Function1[DateTimeFormat, DateBox],
-    setHeight: js.Function1[java.lang.String, DateBox],
-    setId: js.Function1[java.lang.String, DateBox],
-    setLayoutData: js.Function1[js.Object, DateBox],
-    setName: js.Function1[java.lang.String, DateBox],
-    setPixelSize: js.Function2[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      DateBox
-    ],
-    setSize: js.Function2[java.lang.String, java.lang.String, DateBox],
-    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, DateBox],
-    setStyleAttributes: js.Function1[js.Object, DateBox],
-    setStyleName: js.Function1[java.lang.String, DateBox],
-    setStylePrimaryName: js.Function1[java.lang.String, DateBox],
-    setTabIndex: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, DateBox],
-    setTag: js.Function1[java.lang.String, DateBox],
-    setTitle: js.Function1[java.lang.String, DateBox],
-    setValue: js.Function1[stdLib.Date, DateBox],
-    setVisible: js.Function1[scala.Boolean, DateBox],
-    setWidth: js.Function1[java.lang.String, DateBox],
-    showDatePicker: js.Function0[DateBox]
+    addStyleDependentName: java.lang.String => DateBox,
+    addStyleName: java.lang.String => DateBox,
+    addValueChangeHandler: Handler => DateBox,
+    getId: () => java.lang.String,
+    getTag: () => java.lang.String,
+    getType: () => java.lang.String,
+    hideDatePicker: () => DateBox,
+    setAccessKey: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Char => DateBox,
+    setEnabled: scala.Boolean => DateBox,
+    setFireEventsForInvalid: scala.Boolean => DateBox,
+    setFocus: scala.Boolean => DateBox,
+    setFormat: DateTimeFormat => DateBox,
+    setHeight: java.lang.String => DateBox,
+    setId: java.lang.String => DateBox,
+    setLayoutData: js.Object => DateBox,
+    setName: java.lang.String => DateBox,
+    setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => DateBox,
+    setSize: (java.lang.String, java.lang.String) => DateBox,
+    setStyleAttribute: (java.lang.String, java.lang.String) => DateBox,
+    setStyleAttributes: js.Object => DateBox,
+    setStyleName: java.lang.String => DateBox,
+    setStylePrimaryName: java.lang.String => DateBox,
+    setTabIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => DateBox,
+    setTag: java.lang.String => DateBox,
+    setTitle: java.lang.String => DateBox,
+    setValue: stdLib.Date => DateBox,
+    setVisible: scala.Boolean => DateBox,
+    setWidth: java.lang.String => DateBox,
+    showDatePicker: () => DateBox
   ): DateBox = {
-    val __obj = js.Dynamic.literal(addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, addValueChangeHandler = addValueChangeHandler, getId = getId, getTag = getTag, getType = getType, hideDatePicker = hideDatePicker, setAccessKey = setAccessKey, setEnabled = setEnabled, setFireEventsForInvalid = setFireEventsForInvalid, setFocus = setFocus, setFormat = setFormat, setHeight = setHeight, setId = setId, setLayoutData = setLayoutData, setName = setName, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTabIndex = setTabIndex, setTag = setTag, setTitle = setTitle, setValue = setValue, setVisible = setVisible, setWidth = setWidth, showDatePicker = showDatePicker)
+    val __obj = js.Dynamic.literal(addStyleDependentName = js.Any.fromFunction1(addStyleDependentName), addStyleName = js.Any.fromFunction1(addStyleName), addValueChangeHandler = js.Any.fromFunction1(addValueChangeHandler), getId = js.Any.fromFunction0(getId), getTag = js.Any.fromFunction0(getTag), getType = js.Any.fromFunction0(getType), hideDatePicker = js.Any.fromFunction0(hideDatePicker), setAccessKey = js.Any.fromFunction1(setAccessKey), setEnabled = js.Any.fromFunction1(setEnabled), setFireEventsForInvalid = js.Any.fromFunction1(setFireEventsForInvalid), setFocus = js.Any.fromFunction1(setFocus), setFormat = js.Any.fromFunction1(setFormat), setHeight = js.Any.fromFunction1(setHeight), setId = js.Any.fromFunction1(setId), setLayoutData = js.Any.fromFunction1(setLayoutData), setName = js.Any.fromFunction1(setName), setPixelSize = js.Any.fromFunction2(setPixelSize), setSize = js.Any.fromFunction2(setSize), setStyleAttribute = js.Any.fromFunction2(setStyleAttribute), setStyleAttributes = js.Any.fromFunction1(setStyleAttributes), setStyleName = js.Any.fromFunction1(setStyleName), setStylePrimaryName = js.Any.fromFunction1(setStylePrimaryName), setTabIndex = js.Any.fromFunction1(setTabIndex), setTag = js.Any.fromFunction1(setTag), setTitle = js.Any.fromFunction1(setTitle), setValue = js.Any.fromFunction1(setValue), setVisible = js.Any.fromFunction1(setVisible), setWidth = js.Any.fromFunction1(setWidth), showDatePicker = js.Any.fromFunction0(showDatePicker))
   
     __obj.asInstanceOf[DateBox]
   }

@@ -91,13 +91,8 @@ object UploaderOption {
     deleteConfirm: scala.Boolean | java.lang.String = null,
     dropPlaceholder: js.UndefOr[scala.Boolean] = js.undefined,
     drop_element: java.lang.String = null,
-    fileFormater: js.Function3[/* $file */ JQuery, /* file */ FileObj, /* status */ STATUS, scala.Unit] = null,
-    fileIconCreator: js.Function3[
-      /* fileType */ java.lang.String, 
-      /* file */ FileObj, 
-      /* uploader */ Uploader, 
-      scala.Unit
-    ] = null,
+    fileFormater: (/* $file */ JQuery, /* file */ FileObj, /* status */ STATUS) => scala.Unit = null,
+    fileIconCreator: (/* fileType */ java.lang.String, /* file */ FileObj, /* uploader */ Uploader) => scala.Unit = null,
     fileList: java.lang.String = null,
     fileTemplate: java.lang.String = null,
     file_data_name: java.lang.String = null,
@@ -110,18 +105,18 @@ object UploaderOption {
     multi_selection: js.UndefOr[scala.Boolean] = js.undefined,
     multipart: js.UndefOr[scala.Boolean] = js.undefined,
     multipart_params: js.Object | CallBack = null,
-    onBeforeUpload: js.Function1[/* file */ FileObj, scala.Unit] = null,
-    onChunkUploaded: js.Function2[/* file */ FileObj, /* responseObject */ ResponseObject, scala.Unit] = null,
-    onError: js.Function1[/* error */ Anon_Error, scala.Unit] = null,
-    onFileUploaded: js.Function2[/* file */ FileObj, /* responseObject */ ResponseObject, scala.Unit] = null,
-    onFilesAdded: js.Function1[/* fiels */ js.Array[FileObj], scala.Unit] = null,
-    onFilesRemoved: js.Function1[/* files */ js.Array[FileObj], scala.Unit] = null,
-    onInit: js.Function0[scala.Unit] = null,
-    onQueueChanged: js.Function0[scala.Unit] = null,
-    onStateChanged: js.Function1[/* status */ STATUS, scala.Unit] = null,
-    onUploadComplete: js.Function1[/* files */ js.Array[FileObj], scala.Unit] = null,
-    onUploadFile: js.Function1[/* file */ FileObj, scala.Unit] = null,
-    onUploadProgress: js.Function1[/* file */ FileObj, scala.Unit] = null,
+    onBeforeUpload: /* file */ FileObj => scala.Unit = null,
+    onChunkUploaded: (/* file */ FileObj, /* responseObject */ ResponseObject) => scala.Unit = null,
+    onError: /* error */ Anon_Error => scala.Unit = null,
+    onFileUploaded: (/* file */ FileObj, /* responseObject */ ResponseObject) => scala.Unit = null,
+    onFilesAdded: /* fiels */ js.Array[FileObj] => scala.Unit = null,
+    onFilesRemoved: /* files */ js.Array[FileObj] => scala.Unit = null,
+    onInit: () => scala.Unit = null,
+    onQueueChanged: () => scala.Unit = null,
+    onStateChanged: /* status */ STATUS => scala.Unit = null,
+    onUploadComplete: /* files */ js.Array[FileObj] => scala.Unit = null,
+    onUploadFile: /* file */ FileObj => scala.Unit = null,
+    onUploadProgress: /* file */ FileObj => scala.Unit = null,
     previewImageIcon: js.UndefOr[scala.Boolean] = js.undefined,
     previewImageSize: Anon_Height = null,
     qiniu: js.Object = null,
@@ -137,7 +132,7 @@ object UploaderOption {
     sendFileName: js.UndefOr[scala.Boolean] = js.undefined,
     silverlight_xap_url: java.lang.String = null,
     staticFiles: js.Array[Anon_Id] = null,
-    statusCreator: js.Function3[/* total */ UploadProgress, /* state */ STATUS, /* uploader */ Uploader, scala.Unit] = null,
+    statusCreator: (/* total */ UploadProgress, /* state */ STATUS, /* uploader */ Uploader) => scala.Unit = null,
     unique_names: js.UndefOr[scala.Boolean] = js.undefined,
     uploadedMessage: js.UndefOr[scala.Boolean] = js.undefined
   ): UploaderOption = {
@@ -150,8 +145,8 @@ object UploaderOption {
     if (deleteConfirm != null) __obj.updateDynamic("deleteConfirm")(deleteConfirm.asInstanceOf[js.Any])
     if (!js.isUndefined(dropPlaceholder)) __obj.updateDynamic("dropPlaceholder")(dropPlaceholder)
     if (drop_element != null) __obj.updateDynamic("drop_element")(drop_element)
-    if (fileFormater != null) __obj.updateDynamic("fileFormater")(fileFormater)
-    if (fileIconCreator != null) __obj.updateDynamic("fileIconCreator")(fileIconCreator)
+    if (fileFormater != null) __obj.updateDynamic("fileFormater")(js.Any.fromFunction3(fileFormater))
+    if (fileIconCreator != null) __obj.updateDynamic("fileIconCreator")(js.Any.fromFunction3(fileIconCreator))
     if (fileList != null) __obj.updateDynamic("fileList")(fileList)
     if (fileTemplate != null) __obj.updateDynamic("fileTemplate")(fileTemplate)
     if (file_data_name != null) __obj.updateDynamic("file_data_name")(file_data_name)
@@ -164,18 +159,18 @@ object UploaderOption {
     if (!js.isUndefined(multi_selection)) __obj.updateDynamic("multi_selection")(multi_selection)
     if (!js.isUndefined(multipart)) __obj.updateDynamic("multipart")(multipart)
     if (multipart_params != null) __obj.updateDynamic("multipart_params")(multipart_params.asInstanceOf[js.Any])
-    if (onBeforeUpload != null) __obj.updateDynamic("onBeforeUpload")(onBeforeUpload)
-    if (onChunkUploaded != null) __obj.updateDynamic("onChunkUploaded")(onChunkUploaded)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onFileUploaded != null) __obj.updateDynamic("onFileUploaded")(onFileUploaded)
-    if (onFilesAdded != null) __obj.updateDynamic("onFilesAdded")(onFilesAdded)
-    if (onFilesRemoved != null) __obj.updateDynamic("onFilesRemoved")(onFilesRemoved)
-    if (onInit != null) __obj.updateDynamic("onInit")(onInit)
-    if (onQueueChanged != null) __obj.updateDynamic("onQueueChanged")(onQueueChanged)
-    if (onStateChanged != null) __obj.updateDynamic("onStateChanged")(onStateChanged)
-    if (onUploadComplete != null) __obj.updateDynamic("onUploadComplete")(onUploadComplete)
-    if (onUploadFile != null) __obj.updateDynamic("onUploadFile")(onUploadFile)
-    if (onUploadProgress != null) __obj.updateDynamic("onUploadProgress")(onUploadProgress)
+    if (onBeforeUpload != null) __obj.updateDynamic("onBeforeUpload")(js.Any.fromFunction1(onBeforeUpload))
+    if (onChunkUploaded != null) __obj.updateDynamic("onChunkUploaded")(js.Any.fromFunction2(onChunkUploaded))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onFileUploaded != null) __obj.updateDynamic("onFileUploaded")(js.Any.fromFunction2(onFileUploaded))
+    if (onFilesAdded != null) __obj.updateDynamic("onFilesAdded")(js.Any.fromFunction1(onFilesAdded))
+    if (onFilesRemoved != null) __obj.updateDynamic("onFilesRemoved")(js.Any.fromFunction1(onFilesRemoved))
+    if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction0(onInit))
+    if (onQueueChanged != null) __obj.updateDynamic("onQueueChanged")(js.Any.fromFunction0(onQueueChanged))
+    if (onStateChanged != null) __obj.updateDynamic("onStateChanged")(js.Any.fromFunction1(onStateChanged))
+    if (onUploadComplete != null) __obj.updateDynamic("onUploadComplete")(js.Any.fromFunction1(onUploadComplete))
+    if (onUploadFile != null) __obj.updateDynamic("onUploadFile")(js.Any.fromFunction1(onUploadFile))
+    if (onUploadProgress != null) __obj.updateDynamic("onUploadProgress")(js.Any.fromFunction1(onUploadProgress))
     if (!js.isUndefined(previewImageIcon)) __obj.updateDynamic("previewImageIcon")(previewImageIcon)
     if (previewImageSize != null) __obj.updateDynamic("previewImageSize")(previewImageSize)
     if (qiniu != null) __obj.updateDynamic("qiniu")(qiniu)
@@ -191,7 +186,7 @@ object UploaderOption {
     if (!js.isUndefined(sendFileName)) __obj.updateDynamic("sendFileName")(sendFileName)
     if (silverlight_xap_url != null) __obj.updateDynamic("silverlight_xap_url")(silverlight_xap_url)
     if (staticFiles != null) __obj.updateDynamic("staticFiles")(staticFiles)
-    if (statusCreator != null) __obj.updateDynamic("statusCreator")(statusCreator)
+    if (statusCreator != null) __obj.updateDynamic("statusCreator")(js.Any.fromFunction3(statusCreator))
     if (!js.isUndefined(unique_names)) __obj.updateDynamic("unique_names")(unique_names)
     if (!js.isUndefined(uploadedMessage)) __obj.updateDynamic("uploadedMessage")(uploadedMessage)
     __obj.asInstanceOf[UploaderOption]

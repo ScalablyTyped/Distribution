@@ -12,8 +12,8 @@ trait ColumnNameMappers extends js.Object {
 
 object ColumnNameMappers {
   @scala.inline
-  def apply(format: js.Function1[Pojo, Pojo], parse: js.Function1[Pojo, Pojo]): ColumnNameMappers = {
-    val __obj = js.Dynamic.literal(format = format, parse = parse)
+  def apply(format: Pojo => Pojo, parse: Pojo => Pojo): ColumnNameMappers = {
+    val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format), parse = js.Any.fromFunction1(parse))
   
     __obj.asInstanceOf[ColumnNameMappers]
   }

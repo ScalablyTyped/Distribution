@@ -21,16 +21,16 @@ object EventObject {
   @scala.inline
   def apply(
     cancelled: scala.Boolean,
-    detachHandler: js.Function0[scala.Unit],
+    detachHandler: () => scala.Unit,
     detached: scala.Boolean,
     eventId: scala.Double,
-    preventDefault: js.Function0[scala.Unit],
+    preventDefault: () => scala.Unit,
     prevented: scala.Boolean,
     sender: FusionCharts,
-    stopPropagation: js.Function0[scala.Unit],
+    stopPropagation: () => scala.Unit,
     `type`: java.lang.String
   ): EventObject = {
-    val __obj = js.Dynamic.literal(cancelled = cancelled, detachHandler = detachHandler, detached = detached, eventId = eventId, preventDefault = preventDefault, prevented = prevented, sender = sender, stopPropagation = stopPropagation)
+    val __obj = js.Dynamic.literal(cancelled = cancelled, detachHandler = js.Any.fromFunction0(detachHandler), detached = detached, eventId = eventId, preventDefault = js.Any.fromFunction0(preventDefault), prevented = prevented, sender = sender, stopPropagation = js.Any.fromFunction0(stopPropagation))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[EventObject]
   }

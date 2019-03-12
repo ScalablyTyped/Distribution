@@ -18,15 +18,15 @@ trait AffineTransformBuilder extends js.Object {
 object AffineTransformBuilder {
   @scala.inline
   def apply(
-    build: js.Function0[AffineTransform],
-    setScaleX: js.Function1[stdLib.Number, AffineTransformBuilder],
-    setScaleY: js.Function1[stdLib.Number, AffineTransformBuilder],
-    setShearX: js.Function1[stdLib.Number, AffineTransformBuilder],
-    setShearY: js.Function1[stdLib.Number, AffineTransformBuilder],
-    setTranslateX: js.Function1[stdLib.Number, AffineTransformBuilder],
-    setTranslateY: js.Function1[stdLib.Number, AffineTransformBuilder]
+    build: () => AffineTransform,
+    setScaleX: stdLib.Number => AffineTransformBuilder,
+    setScaleY: stdLib.Number => AffineTransformBuilder,
+    setShearX: stdLib.Number => AffineTransformBuilder,
+    setShearY: stdLib.Number => AffineTransformBuilder,
+    setTranslateX: stdLib.Number => AffineTransformBuilder,
+    setTranslateY: stdLib.Number => AffineTransformBuilder
   ): AffineTransformBuilder = {
-    val __obj = js.Dynamic.literal(build = build, setScaleX = setScaleX, setScaleY = setScaleY, setShearX = setShearX, setShearY = setShearY, setTranslateX = setTranslateX, setTranslateY = setTranslateY)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setScaleX = js.Any.fromFunction1(setScaleX), setScaleY = js.Any.fromFunction1(setScaleY), setShearX = js.Any.fromFunction1(setShearX), setShearY = js.Any.fromFunction1(setShearY), setTranslateX = js.Any.fromFunction1(setTranslateX), setTranslateY = js.Any.fromFunction1(setTranslateY))
   
     __obj.asInstanceOf[AffineTransformBuilder]
   }

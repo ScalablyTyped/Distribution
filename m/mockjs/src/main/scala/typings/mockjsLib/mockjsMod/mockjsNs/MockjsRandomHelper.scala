@@ -23,13 +23,13 @@ trait MockjsRandomHelper extends js.Object {
 object MockjsRandomHelper {
   @scala.inline
   def apply(
-    capitalize: js.Function1[S, S],
-    lower: js.Function1[S, S],
-    pick: js.Function1[js.Array[_], js.Any],
-    shuffle: js.Function1[js.Array[_], js.Array[_]],
-    upper: js.Function1[S, S]
+    capitalize: S => S,
+    lower: S => S,
+    pick: js.Array[_] => js.Any,
+    shuffle: js.Array[_] => js.Array[_],
+    upper: S => S
   ): MockjsRandomHelper = {
-    val __obj = js.Dynamic.literal(capitalize = capitalize, lower = lower, pick = pick, shuffle = shuffle, upper = upper)
+    val __obj = js.Dynamic.literal(capitalize = js.Any.fromFunction1(capitalize), lower = js.Any.fromFunction1(lower), pick = js.Any.fromFunction1(pick), shuffle = js.Any.fromFunction1(shuffle), upper = js.Any.fromFunction1(upper))
   
     __obj.asInstanceOf[MockjsRandomHelper]
   }

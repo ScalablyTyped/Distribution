@@ -13,13 +13,13 @@ trait LayoutShowEvent extends LayoutEvent {
 object LayoutShowEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Layout,
     layout: kendoDashUiLib.JQuery = null,
     view: kendoDashUiLib.JQuery = null
   ): LayoutShowEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (view != null) __obj.updateDynamic("view")(view)
     __obj.asInstanceOf[LayoutShowEvent]

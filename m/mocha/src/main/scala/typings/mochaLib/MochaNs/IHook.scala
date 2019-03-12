@@ -14,6 +14,6 @@ trait IHook extends IRunnable {
   var parent: js.UndefOr[ISuite] = js.native
   var `type`: mochaLib.mochaLibStrings.hook = js.native
   /** @deprecated `.error()` has additional overloads in `Mocha.Hook`. */
-  def error(err: nodeLib.Error): scala.Unit = js.native
+  def error(err: stdLib.Error): scala.Unit = js.native
 }
 

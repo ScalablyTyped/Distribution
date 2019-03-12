@@ -11,8 +11,8 @@ trait Anon_CallbackLink extends js.Object {
 
 object Anon_CallbackLink {
   @scala.inline
-  def apply(link: js.Function2[java.lang.String, js.Function0[_], scala.Unit]): Anon_CallbackLink = {
-    val __obj = js.Dynamic.literal(link = link)
+  def apply(link: (java.lang.String, js.Function0[_]) => scala.Unit): Anon_CallbackLink = {
+    val __obj = js.Dynamic.literal(link = js.Any.fromFunction2(link))
   
     __obj.asInstanceOf[Anon_CallbackLink]
   }

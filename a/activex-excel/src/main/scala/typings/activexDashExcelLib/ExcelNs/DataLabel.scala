@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.DataLabel")
 @js.native
 class DataLabel protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var AutoScaleFont: js.Any = js.native
   var AutoText: scala.Boolean = js.native
-  val Border: Border = js.native
+  val Border: activexDashExcelLib.ExcelNs.Border = js.native
   var Caption: java.lang.String = js.native
   val Creator: XlCreator = js.native
   var `Excel.DataLabel_typekey`: DataLabel = js.native
   val Fill: ChartFillFormat = js.native
-  val Font: Font = js.native
+  val Font: activexDashExcelLib.ExcelNs.Font = js.native
   val Format: ChartFormat = js.native
   var Formula: java.lang.String = js.native
   var FormulaLocal: java.lang.String = js.native
@@ -24,7 +24,7 @@ class DataLabel protected () extends js.Object {
   var FormulaR1C1Local: java.lang.String = js.native
   val Height: scala.Double = js.native
   var HorizontalAlignment: HorizontalAlignments = js.native
-  val Interior: Interior = js.native
+  val Interior: activexDashExcelLib.ExcelNs.Interior = js.native
   var Left: scala.Double = js.native
   val Name: java.lang.String = js.native
   var NumberFormat: java.lang.String = js.native
@@ -47,9 +47,9 @@ class DataLabel protected () extends js.Object {
   var Type: js.Any = js.native
   var VerticalAlignment: VerticalAlignments = js.native
   val Width: scala.Double = js.native
-  def Characters(): Characters = js.native
-  def Characters(Start: scala.Double): Characters = js.native
-  def Characters(Start: scala.Double, Length: scala.Double): Characters = js.native
+  def Characters(): activexDashExcelLib.ExcelNs.Characters = js.native
+  def Characters(Start: scala.Double): activexDashExcelLib.ExcelNs.Characters = js.native
+  def Characters(Start: scala.Double, Length: scala.Double): activexDashExcelLib.ExcelNs.Characters = js.native
   def Delete(): js.Any = js.native
   def Select(): js.Any = js.native
 }

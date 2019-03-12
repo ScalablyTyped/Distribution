@@ -13,25 +13,13 @@ object Alternative1 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS */](
     URI: F,
-    alt: js.Function2[
-      fpDashTsLib.libHKTMod.Type[F, js.Any], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any]
-    ],
-    ap: js.Function2[
-      fpDashTsLib.libHKTMod.Type[F, js.Function1[js.Any, js.Any]], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any]
-    ],
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.Type[F, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any]
-    ],
-    of: js.Function1[js.Any, fpDashTsLib.libHKTMod.Type[F, js.Any]],
-    zero: js.Function0[fpDashTsLib.libHKTMod.Type[F, js.Any]]
+    alt: (fpDashTsLib.libHKTMod.Type[F, js.Any], fpDashTsLib.libHKTMod.Type[F, js.Any]) => fpDashTsLib.libHKTMod.Type[F, js.Any],
+    ap: (fpDashTsLib.libHKTMod.Type[F, js.Function1[js.Any, js.Any]], fpDashTsLib.libHKTMod.Type[F, js.Any]) => fpDashTsLib.libHKTMod.Type[F, js.Any],
+    map: (fpDashTsLib.libHKTMod.Type[F, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type[F, js.Any],
+    of: js.Any => fpDashTsLib.libHKTMod.Type[F, js.Any],
+    zero: () => fpDashTsLib.libHKTMod.Type[F, js.Any]
   ): Alternative1[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], alt = alt, ap = ap, map = map, of = of, zero = zero)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], alt = js.Any.fromFunction2(alt), ap = js.Any.fromFunction2(ap), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of), zero = js.Any.fromFunction0(zero))
   
     __obj.asInstanceOf[Alternative1[F]]
   }

@@ -17,14 +17,14 @@ trait TableRow extends js.Object {
 object TableRow {
   @scala.inline
   def apply(
-    getCell: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, TableCell],
-    getIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getMinimumHeight: js.Function0[stdLib.Number],
-    getNumCells: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getParentTable: js.Function0[Table],
-    remove: js.Function0[scala.Unit]
+    getCell: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => TableCell,
+    getIndex: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getMinimumHeight: () => stdLib.Number,
+    getNumCells: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getParentTable: () => Table,
+    remove: () => scala.Unit
   ): TableRow = {
-    val __obj = js.Dynamic.literal(getCell = getCell, getIndex = getIndex, getMinimumHeight = getMinimumHeight, getNumCells = getNumCells, getParentTable = getParentTable, remove = remove)
+    val __obj = js.Dynamic.literal(getCell = js.Any.fromFunction1(getCell), getIndex = js.Any.fromFunction0(getIndex), getMinimumHeight = js.Any.fromFunction0(getMinimumHeight), getNumCells = js.Any.fromFunction0(getNumCells), getParentTable = js.Any.fromFunction0(getParentTable), remove = js.Any.fromFunction0(remove))
   
     __obj.asInstanceOf[TableRow]
   }

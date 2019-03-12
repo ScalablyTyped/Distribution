@@ -120,7 +120,7 @@ object JobUpdateParameters {
     dataWorkspaceId: java.lang.String,
     description: java.lang.String,
     dueDate: stdLib.Date,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     jobId: scala.Double,
     loi: Geometry,
     name: java.lang.String,
@@ -129,13 +129,13 @@ object JobUpdateParameters {
     parentVersion: java.lang.String,
     percent: scala.Double,
     priority: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     startDate: stdLib.Date,
     status: scala.Double,
     user: java.lang.String,
     versionName: java.lang.String
   ): JobUpdateParameters = {
-    val __obj = js.Dynamic.literal(assignedTo = assignedTo, assignedType = assignedType, constructor = constructor, dataWorkspaceId = dataWorkspaceId, description = description, dueDate = dueDate, hasOwnProperty = hasOwnProperty, jobId = jobId, loi = loi, name = name, ownedBy = ownedBy, parentJobId = parentJobId, parentVersion = parentVersion, percent = percent, priority = priority, propertyIsEnumerable = propertyIsEnumerable, startDate = startDate, status = status, user = user, versionName = versionName)
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo, assignedType = assignedType, constructor = constructor, dataWorkspaceId = dataWorkspaceId, description = description, dueDate = dueDate, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobId = jobId, loi = loi, name = name, ownedBy = ownedBy, parentJobId = parentJobId, parentVersion = parentVersion, percent = percent, priority = priority, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), startDate = startDate, status = status, user = user, versionName = versionName)
   
     __obj.asInstanceOf[JobUpdateParameters]
   }

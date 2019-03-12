@@ -18,15 +18,15 @@ trait CompanyField extends js.Object {
 object CompanyField {
   @scala.inline
   def apply(
-    deleteCompanyField: js.Function0[scala.Unit],
-    getCompanyName: js.Function0[java.lang.String],
-    getJobTitle: js.Function0[java.lang.String],
-    isPrimary: js.Function0[scala.Boolean],
-    setAsPrimary: js.Function0[CompanyField],
-    setCompanyName: js.Function1[java.lang.String, CompanyField],
-    setJobTitle: js.Function1[java.lang.String, CompanyField]
+    deleteCompanyField: () => scala.Unit,
+    getCompanyName: () => java.lang.String,
+    getJobTitle: () => java.lang.String,
+    isPrimary: () => scala.Boolean,
+    setAsPrimary: () => CompanyField,
+    setCompanyName: java.lang.String => CompanyField,
+    setJobTitle: java.lang.String => CompanyField
   ): CompanyField = {
-    val __obj = js.Dynamic.literal(deleteCompanyField = deleteCompanyField, getCompanyName = getCompanyName, getJobTitle = getJobTitle, isPrimary = isPrimary, setAsPrimary = setAsPrimary, setCompanyName = setCompanyName, setJobTitle = setJobTitle)
+    val __obj = js.Dynamic.literal(deleteCompanyField = js.Any.fromFunction0(deleteCompanyField), getCompanyName = js.Any.fromFunction0(getCompanyName), getJobTitle = js.Any.fromFunction0(getJobTitle), isPrimary = js.Any.fromFunction0(isPrimary), setAsPrimary = js.Any.fromFunction0(setAsPrimary), setCompanyName = js.Any.fromFunction1(setCompanyName), setJobTitle = js.Any.fromFunction1(setJobTitle))
   
     __obj.asInstanceOf[CompanyField]
   }

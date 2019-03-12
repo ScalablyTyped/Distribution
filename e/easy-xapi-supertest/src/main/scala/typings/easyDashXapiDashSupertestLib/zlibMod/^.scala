@@ -39,82 +39,61 @@ object ^ extends js.Object {
   var Z_TREES: scala.Double = js.native
   var Z_UNKNOWN: scala.Double = js.native
   var Z_VERSION_ERROR: scala.Double = js.native
-  def createDeflate(): easyDashXapiDashSupertestLib.zlibMod.Deflate = js.native
-  def createDeflate(options: easyDashXapiDashSupertestLib.zlibMod.ZlibOptions): easyDashXapiDashSupertestLib.zlibMod.Deflate = js.native
-  def createDeflateRaw(): easyDashXapiDashSupertestLib.zlibMod.DeflateRaw = js.native
-  def createDeflateRaw(options: easyDashXapiDashSupertestLib.zlibMod.ZlibOptions): easyDashXapiDashSupertestLib.zlibMod.DeflateRaw = js.native
-  def createGunzip(): easyDashXapiDashSupertestLib.zlibMod.Gunzip = js.native
-  def createGunzip(options: easyDashXapiDashSupertestLib.zlibMod.ZlibOptions): easyDashXapiDashSupertestLib.zlibMod.Gunzip = js.native
-  def createGzip(): easyDashXapiDashSupertestLib.zlibMod.Gzip = js.native
-  def createGzip(options: easyDashXapiDashSupertestLib.zlibMod.ZlibOptions): easyDashXapiDashSupertestLib.zlibMod.Gzip = js.native
-  def createInflate(): easyDashXapiDashSupertestLib.zlibMod.Inflate = js.native
-  def createInflate(options: easyDashXapiDashSupertestLib.zlibMod.ZlibOptions): easyDashXapiDashSupertestLib.zlibMod.Inflate = js.native
-  def createInflateRaw(): easyDashXapiDashSupertestLib.zlibMod.InflateRaw = js.native
-  def createInflateRaw(options: easyDashXapiDashSupertestLib.zlibMod.ZlibOptions): easyDashXapiDashSupertestLib.zlibMod.InflateRaw = js.native
-  def createUnzip(): easyDashXapiDashSupertestLib.zlibMod.Unzip = js.native
-  def createUnzip(options: easyDashXapiDashSupertestLib.zlibMod.ZlibOptions): easyDashXapiDashSupertestLib.zlibMod.Unzip = js.native
+  def createDeflate(): Deflate = js.native
+  def createDeflate(options: ZlibOptions): Deflate = js.native
+  def createDeflateRaw(): DeflateRaw = js.native
+  def createDeflateRaw(options: ZlibOptions): DeflateRaw = js.native
+  def createGunzip(): Gunzip = js.native
+  def createGunzip(options: ZlibOptions): Gunzip = js.native
+  def createGzip(): Gzip = js.native
+  def createGzip(options: ZlibOptions): Gzip = js.native
+  def createInflate(): Inflate = js.native
+  def createInflate(options: ZlibOptions): Inflate = js.native
+  def createInflateRaw(): InflateRaw = js.native
+  def createInflateRaw(options: ZlibOptions): InflateRaw = js.native
+  def createUnzip(): Unzip = js.native
+  def createUnzip(options: ZlibOptions): Unzip = js.native
   def deflate(
     buf: easyDashXapiDashSupertestLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error, /* result */ js.Any, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* result */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def deflateRaw(
     buf: easyDashXapiDashSupertestLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error, /* result */ js.Any, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* result */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def deflateRawSync(buf: easyDashXapiDashSupertestLib.Buffer): js.Any = js.native
-  def deflateRawSync(
-    buf: easyDashXapiDashSupertestLib.Buffer,
-    options: easyDashXapiDashSupertestLib.zlibMod.ZlibOptions
-  ): js.Any = js.native
+  def deflateRawSync(buf: easyDashXapiDashSupertestLib.Buffer, options: ZlibOptions): js.Any = js.native
   def deflateSync(buf: easyDashXapiDashSupertestLib.Buffer): js.Any = js.native
-  def deflateSync(
-    buf: easyDashXapiDashSupertestLib.Buffer,
-    options: easyDashXapiDashSupertestLib.zlibMod.ZlibOptions
-  ): js.Any = js.native
+  def deflateSync(buf: easyDashXapiDashSupertestLib.Buffer, options: ZlibOptions): js.Any = js.native
   def gunzip(
     buf: easyDashXapiDashSupertestLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error, /* result */ js.Any, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* result */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def gunzipSync(buf: easyDashXapiDashSupertestLib.Buffer): js.Any = js.native
-  def gunzipSync(
-    buf: easyDashXapiDashSupertestLib.Buffer,
-    options: easyDashXapiDashSupertestLib.zlibMod.ZlibOptions
-  ): js.Any = js.native
+  def gunzipSync(buf: easyDashXapiDashSupertestLib.Buffer, options: ZlibOptions): js.Any = js.native
   def gzip(
     buf: easyDashXapiDashSupertestLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error, /* result */ js.Any, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* result */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def gzipSync(buf: easyDashXapiDashSupertestLib.Buffer): js.Any = js.native
-  def gzipSync(
-    buf: easyDashXapiDashSupertestLib.Buffer,
-    options: easyDashXapiDashSupertestLib.zlibMod.ZlibOptions
-  ): js.Any = js.native
+  def gzipSync(buf: easyDashXapiDashSupertestLib.Buffer, options: ZlibOptions): js.Any = js.native
   def inflate(
     buf: easyDashXapiDashSupertestLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error, /* result */ js.Any, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* result */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def inflateRaw(
     buf: easyDashXapiDashSupertestLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error, /* result */ js.Any, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* result */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def inflateRawSync(buf: easyDashXapiDashSupertestLib.Buffer): js.Any = js.native
-  def inflateRawSync(
-    buf: easyDashXapiDashSupertestLib.Buffer,
-    options: easyDashXapiDashSupertestLib.zlibMod.ZlibOptions
-  ): js.Any = js.native
+  def inflateRawSync(buf: easyDashXapiDashSupertestLib.Buffer, options: ZlibOptions): js.Any = js.native
   def inflateSync(buf: easyDashXapiDashSupertestLib.Buffer): js.Any = js.native
-  def inflateSync(
-    buf: easyDashXapiDashSupertestLib.Buffer,
-    options: easyDashXapiDashSupertestLib.zlibMod.ZlibOptions
-  ): js.Any = js.native
+  def inflateSync(buf: easyDashXapiDashSupertestLib.Buffer, options: ZlibOptions): js.Any = js.native
   def unzip(
     buf: easyDashXapiDashSupertestLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error, /* result */ js.Any, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* result */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def unzipSync(buf: easyDashXapiDashSupertestLib.Buffer): js.Any = js.native
-  def unzipSync(
-    buf: easyDashXapiDashSupertestLib.Buffer,
-    options: easyDashXapiDashSupertestLib.zlibMod.ZlibOptions
-  ): js.Any = js.native
+  def unzipSync(buf: easyDashXapiDashSupertestLib.Buffer, options: ZlibOptions): js.Any = js.native
 }
 

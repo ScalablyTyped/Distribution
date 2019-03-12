@@ -16,20 +16,20 @@ trait SPI extends js.Object {
   def dataMode(mode: mode): scala.Unit = js.native
   def read(
     readcount: scala.Double,
-    cb: js.Function2[/* error */ nodeLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def transfer(
     writebuf: nodeLib.Buffer,
-    cb: js.Function2[/* error */ nodeLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def transfer(
     writebuf: nodeLib.Buffer,
     readcount: scala.Double,
-    cb: js.Function2[/* error */ nodeLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def write(
     writebuf: nodeLib.Buffer,
-    cb: js.Function2[/* error */ nodeLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
 }
 

@@ -37,7 +37,7 @@ trait ColumnSizerProps
 object ColumnSizerProps {
   @scala.inline
   def apply(
-    children: js.Function1[SizedColumnProps, reactLib.reactMod.ReactNs.ReactNode],
+    children: SizedColumnProps => reactLib.reactMod.ReactNs.ReactNode,
     width: scala.Double,
     StringDictionary: /**
     * PLEASE NOTE
@@ -51,7 +51,7 @@ object ColumnSizerProps {
     columnMaxWidth: scala.Int | scala.Double = null,
     columnMinWidth: scala.Int | scala.Double = null
   ): ColumnSizerProps = {
-    val __obj = js.Dynamic.literal(children = children, width = width)
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), width = width)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
     if (columnMaxWidth != null) __obj.updateDynamic("columnMaxWidth")(columnMaxWidth.asInstanceOf[js.Any])

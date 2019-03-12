@@ -18,8 +18,8 @@ trait IgGridResponsiveMethods extends js.Object {
 
 object IgGridResponsiveMethods {
   @scala.inline
-  def apply(destroy: js.Function0[scala.Unit], getCurrentResponsiveMode: js.Function0[scala.Unit]): IgGridResponsiveMethods = {
-    val __obj = js.Dynamic.literal(destroy = destroy, getCurrentResponsiveMode = getCurrentResponsiveMode)
+  def apply(destroy: () => scala.Unit, getCurrentResponsiveMode: () => scala.Unit): IgGridResponsiveMethods = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getCurrentResponsiveMode = js.Any.fromFunction0(getCurrentResponsiveMode))
   
     __obj.asInstanceOf[IgGridResponsiveMethods]
   }

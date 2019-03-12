@@ -31,16 +31,16 @@ trait md5 extends js.Object {
 object Md5 {
   @scala.inline
   def apply(
-    array: js.Function0[js.Array[scala.Double]],
-    arrayBuffer: js.Function0[stdLib.ArrayBuffer],
-    base64: js.Function0[java.lang.String],
-    buffer: js.Function0[stdLib.ArrayBuffer],
-    digest: js.Function0[js.Array[scala.Double]],
-    hex: js.Function0[java.lang.String],
-    toString: js.Function0[java.lang.String],
-    update: js.Function1[message, Md5]
+    array: () => js.Array[scala.Double],
+    arrayBuffer: () => stdLib.ArrayBuffer,
+    base64: () => java.lang.String,
+    buffer: () => stdLib.ArrayBuffer,
+    digest: () => js.Array[scala.Double],
+    hex: () => java.lang.String,
+    toString: () => java.lang.String,
+    update: message => Md5
   ): Md5 = {
-    val __obj = js.Dynamic.literal(array = array, arrayBuffer = arrayBuffer, base64 = base64, buffer = buffer, digest = digest, hex = hex, toString = toString, update = update)
+    val __obj = js.Dynamic.literal(array = js.Any.fromFunction0(array), arrayBuffer = js.Any.fromFunction0(arrayBuffer), base64 = js.Any.fromFunction0(base64), buffer = js.Any.fromFunction0(buffer), digest = js.Any.fromFunction0(digest), hex = js.Any.fromFunction0(hex), toString = js.Any.fromFunction0(toString), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[Md5]
   }

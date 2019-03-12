@@ -22,28 +22,28 @@ object SimpleTransformIteratorOptions {
   def apply[S, T](
     append: js.Array[T] = null,
     autoStart: js.UndefOr[scala.Boolean] = js.undefined,
-    filter: js.Function1[/* item */ S, scala.Boolean] = null,
+    filter: /* item */ S => scala.Boolean = null,
     limit: scala.Int | scala.Double = null,
-    map: js.Function1[/* item */ S, T] = null,
+    map: /* item */ S => T = null,
     maxBufferSize: scala.Int | scala.Double = null,
     offset: scala.Int | scala.Double = null,
     optional: js.UndefOr[scala.Boolean] = js.undefined,
     prepend: js.Array[T] = null,
     source: AsyncIterator[S] = null,
-    transform: js.Function2[/* item */ S, /* callback */ js.Function1[/* result */ T, scala.Unit], scala.Unit] = null
+    transform: (/* item */ S, /* callback */ js.Function1[/* result */ T, scala.Unit]) => scala.Unit = null
   ): SimpleTransformIteratorOptions[S, T] = {
     val __obj = js.Dynamic.literal()
     if (append != null) __obj.updateDynamic("append")(append)
     if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map)
+    if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
     if (maxBufferSize != null) __obj.updateDynamic("maxBufferSize")(maxBufferSize.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
     if (prepend != null) __obj.updateDynamic("prepend")(prepend)
     if (source != null) __obj.updateDynamic("source")(source)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction2(transform))
     __obj.asInstanceOf[SimpleTransformIteratorOptions[S, T]]
   }
 }

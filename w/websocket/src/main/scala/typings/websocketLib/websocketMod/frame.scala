@@ -67,7 +67,7 @@ trait frame extends js.Object {
 object frame {
   @scala.inline
   def apply(
-    addData: js.Function1[IBufferList, scala.Boolean],
+    addData: IBufferList => scala.Boolean,
     binaryPayload: nodeLib.Buffer,
     closeStatus: scala.Double,
     config: IConfig,
@@ -84,10 +84,10 @@ object frame {
     rsv1: scala.Boolean,
     rsv2: scala.Boolean,
     rsv3: scala.Boolean,
-    throwAwayPayload: js.Function1[IBufferList, scala.Boolean],
-    toBuffer: js.Function1[scala.Boolean, nodeLib.Buffer]
+    throwAwayPayload: IBufferList => scala.Boolean,
+    toBuffer: scala.Boolean => nodeLib.Buffer
   ): frame = {
-    val __obj = js.Dynamic.literal(addData = addData, binaryPayload = binaryPayload, closeStatus = closeStatus, config = config, fin = fin, frameHeader = frameHeader, frameTooLarge = frameTooLarge, invalidCloseFrameLength = invalidCloseFrameLength, length = length, mask = mask, maskBytes = maskBytes, maxReceivedFrameSize = maxReceivedFrameSize, opcode = opcode, protocolError = protocolError, rsv1 = rsv1, rsv2 = rsv2, rsv3 = rsv3, throwAwayPayload = throwAwayPayload, toBuffer = toBuffer)
+    val __obj = js.Dynamic.literal(addData = js.Any.fromFunction1(addData), binaryPayload = binaryPayload, closeStatus = closeStatus, config = config, fin = fin, frameHeader = frameHeader, frameTooLarge = frameTooLarge, invalidCloseFrameLength = invalidCloseFrameLength, length = length, mask = mask, maskBytes = maskBytes, maxReceivedFrameSize = maxReceivedFrameSize, opcode = opcode, protocolError = protocolError, rsv1 = rsv1, rsv2 = rsv2, rsv3 = rsv3, throwAwayPayload = js.Any.fromFunction1(throwAwayPayload), toBuffer = js.Any.fromFunction1(toBuffer))
   
     __obj.asInstanceOf[frame]
   }

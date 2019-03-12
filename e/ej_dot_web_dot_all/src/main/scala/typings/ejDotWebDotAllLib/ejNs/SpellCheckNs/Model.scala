@@ -97,19 +97,19 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    actionBegin: js.Function1[/* e */ ActionBeginEventArgs, scala.Unit] = null,
-    actionFailure: js.Function1[/* e */ ActionFailureEventArgs, scala.Unit] = null,
-    actionSuccess: js.Function1[/* e */ ActionSuccessEventArgs, scala.Unit] = null,
+    actionBegin: /* e */ ActionBeginEventArgs => scala.Unit = null,
+    actionFailure: /* e */ ActionFailureEventArgs => scala.Unit = null,
+    actionSuccess: /* e */ ActionSuccessEventArgs => scala.Unit = null,
     ajaxDataType: java.lang.String = null,
     ajaxRequestType: java.lang.String = null,
-    complete: js.Function1[/* e */ CompleteEventArgs, scala.Unit] = null,
-    contextClick: js.Function1[/* e */ ContextClickEventArgs, scala.Unit] = null,
+    complete: /* e */ CompleteEventArgs => scala.Unit = null,
+    contextClick: /* e */ ContextClickEventArgs => scala.Unit = null,
     contextMenuSettings: ContextMenuSettings = null,
-    contextOpen: js.Function1[/* e */ ContextOpenEventArgs, scala.Unit] = null,
+    contextOpen: /* e */ ContextOpenEventArgs => scala.Unit = null,
     controlsToValidate: java.lang.String = null,
-    dialogBeforeOpen: js.Function1[/* e */ DialogBeforeOpenEventArgs, scala.Unit] = null,
-    dialogClose: js.Function1[/* e */ DialogCloseEventArgs, scala.Unit] = null,
-    dialogOpen: js.Function1[/* e */ DialogOpenEventArgs, scala.Unit] = null,
+    dialogBeforeOpen: /* e */ DialogBeforeOpenEventArgs => scala.Unit = null,
+    dialogClose: /* e */ DialogCloseEventArgs => scala.Unit = null,
+    dialogOpen: /* e */ DialogOpenEventArgs => scala.Unit = null,
     dictionarySettings: DictionarySettings = null,
     enableAsync: js.UndefOr[scala.Boolean] = js.undefined,
     enableValidateOnType: js.UndefOr[scala.Boolean] = js.undefined,
@@ -119,24 +119,24 @@ object Model {
     locale: java.lang.String = null,
     maxSuggestionCount: scala.Int | scala.Double = null,
     misspellWordCss: java.lang.String = null,
-    start: js.Function1[/* e */ StartEventArgs, scala.Unit] = null,
-    targetUpdating: js.Function1[/* e */ TargetUpdatingEventArgs, scala.Unit] = null,
-    validating: js.Function1[/* e */ ValidatingEventArgs, scala.Unit] = null
+    start: /* e */ StartEventArgs => scala.Unit = null,
+    targetUpdating: /* e */ TargetUpdatingEventArgs => scala.Unit = null,
+    validating: /* e */ ValidatingEventArgs => scala.Unit = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (actionBegin != null) __obj.updateDynamic("actionBegin")(actionBegin)
-    if (actionFailure != null) __obj.updateDynamic("actionFailure")(actionFailure)
-    if (actionSuccess != null) __obj.updateDynamic("actionSuccess")(actionSuccess)
+    if (actionBegin != null) __obj.updateDynamic("actionBegin")(js.Any.fromFunction1(actionBegin))
+    if (actionFailure != null) __obj.updateDynamic("actionFailure")(js.Any.fromFunction1(actionFailure))
+    if (actionSuccess != null) __obj.updateDynamic("actionSuccess")(js.Any.fromFunction1(actionSuccess))
     if (ajaxDataType != null) __obj.updateDynamic("ajaxDataType")(ajaxDataType)
     if (ajaxRequestType != null) __obj.updateDynamic("ajaxRequestType")(ajaxRequestType)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (contextClick != null) __obj.updateDynamic("contextClick")(contextClick)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (contextClick != null) __obj.updateDynamic("contextClick")(js.Any.fromFunction1(contextClick))
     if (contextMenuSettings != null) __obj.updateDynamic("contextMenuSettings")(contextMenuSettings)
-    if (contextOpen != null) __obj.updateDynamic("contextOpen")(contextOpen)
+    if (contextOpen != null) __obj.updateDynamic("contextOpen")(js.Any.fromFunction1(contextOpen))
     if (controlsToValidate != null) __obj.updateDynamic("controlsToValidate")(controlsToValidate)
-    if (dialogBeforeOpen != null) __obj.updateDynamic("dialogBeforeOpen")(dialogBeforeOpen)
-    if (dialogClose != null) __obj.updateDynamic("dialogClose")(dialogClose)
-    if (dialogOpen != null) __obj.updateDynamic("dialogOpen")(dialogOpen)
+    if (dialogBeforeOpen != null) __obj.updateDynamic("dialogBeforeOpen")(js.Any.fromFunction1(dialogBeforeOpen))
+    if (dialogClose != null) __obj.updateDynamic("dialogClose")(js.Any.fromFunction1(dialogClose))
+    if (dialogOpen != null) __obj.updateDynamic("dialogOpen")(js.Any.fromFunction1(dialogOpen))
     if (dictionarySettings != null) __obj.updateDynamic("dictionarySettings")(dictionarySettings)
     if (!js.isUndefined(enableAsync)) __obj.updateDynamic("enableAsync")(enableAsync)
     if (!js.isUndefined(enableValidateOnType)) __obj.updateDynamic("enableValidateOnType")(enableValidateOnType)
@@ -146,9 +146,9 @@ object Model {
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (maxSuggestionCount != null) __obj.updateDynamic("maxSuggestionCount")(maxSuggestionCount.asInstanceOf[js.Any])
     if (misspellWordCss != null) __obj.updateDynamic("misspellWordCss")(misspellWordCss)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (targetUpdating != null) __obj.updateDynamic("targetUpdating")(targetUpdating)
-    if (validating != null) __obj.updateDynamic("validating")(validating)
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
+    if (targetUpdating != null) __obj.updateDynamic("targetUpdating")(js.Any.fromFunction1(targetUpdating))
+    if (validating != null) __obj.updateDynamic("validating")(js.Any.fromFunction1(validating))
     __obj.asInstanceOf[Model]
   }
 }

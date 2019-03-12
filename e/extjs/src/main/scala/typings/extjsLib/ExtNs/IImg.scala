@@ -34,9 +34,9 @@ object IImg {
     baseCls: java.lang.String = null,
     glyph: js.Any = null,
     imgCls: java.lang.String = null,
-    onDestroy: js.Function0[scala.Unit] = null,
-    onRender: js.Function0[scala.Unit] = null,
-    setSrc: js.Function1[/* src */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    onDestroy: () => scala.Unit = null,
+    onRender: () => scala.Unit = null,
+    setSrc: /* src */ js.UndefOr[java.lang.String] => scala.Unit = null,
     src: java.lang.String = null,
     title: java.lang.String = null
   ): IImg = {
@@ -47,9 +47,9 @@ object IImg {
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
     if (glyph != null) __obj.updateDynamic("glyph")(glyph)
     if (imgCls != null) __obj.updateDynamic("imgCls")(imgCls)
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(onDestroy)
-    if (onRender != null) __obj.updateDynamic("onRender")(onRender)
-    if (setSrc != null) __obj.updateDynamic("setSrc")(setSrc)
+    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
+    if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction0(onRender))
+    if (setSrc != null) __obj.updateDynamic("setSrc")(js.Any.fromFunction1(setSrc))
     if (src != null) __obj.updateDynamic("src")(src)
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[IImg]

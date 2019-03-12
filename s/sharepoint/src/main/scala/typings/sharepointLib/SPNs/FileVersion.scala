@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class FileVersion () extends ClientObject {
   def deleteObject(): scala.Unit = js.native
   def get_checkInComment(): java.lang.String = js.native
-  def get_created(): microsoftDashAjaxLib.Date = js.native
+  def get_created(): stdLib.Date = js.native
   def get_createdBy(): User = js.native
   def get_iD(): scala.Double = js.native
   def get_isCurrentVersion(): scala.Boolean = js.native

@@ -20,17 +20,11 @@ object AccountsResource {
   def apply(
     adclients: AdclientsResource,
     adunits: AdunitsResource,
-    get: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AccountIdAltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Account]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Accounts]
-    ],
+    get: gapiDotClientDotAdsensehostLib.Anon_AccountIdAltFields => gapiDotClientLib.gapiNs.clientNs.Request[Account],
+    list: gapiDotClientDotAdsensehostLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Accounts],
     reports: ReportsResource
   ): AccountsResource = {
-    val __obj = js.Dynamic.literal(adclients = adclients, adunits = adunits, get = get, list = list, reports = reports)
+    val __obj = js.Dynamic.literal(adclients = adclients, adunits = adunits, get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), reports = reports)
   
     __obj.asInstanceOf[AccountsResource]
   }

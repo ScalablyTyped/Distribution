@@ -38,7 +38,7 @@ object StripeCheckoutOptions {
     amount: scala.Int | scala.Double = null,
     billingAddress: js.UndefOr[scala.Boolean] = js.undefined,
     bitcoin: js.UndefOr[scala.Boolean] = js.undefined,
-    closed: js.Function0[scala.Unit] = null,
+    closed: () => scala.Unit = null,
     currency: java.lang.String = null,
     description: java.lang.String = null,
     email: java.lang.String = null,
@@ -47,11 +47,11 @@ object StripeCheckoutOptions {
     label: java.lang.String = null,
     locale: java.lang.String = null,
     name: java.lang.String = null,
-    opened: js.Function0[scala.Unit] = null,
+    opened: () => scala.Unit = null,
     panelLabel: java.lang.String = null,
     shippingAddress: js.UndefOr[scala.Boolean] = js.undefined,
-    source: js.Function1[/* source */ stripeDashV3Lib.stripeNs.Source, scala.Unit] = null,
-    token: js.Function1[/* token */ stripeDashV3Lib.stripeNs.Token, scala.Unit] = null,
+    source: /* source */ stripeDashV3Lib.stripeNs.Source => scala.Unit = null,
+    token: /* token */ stripeDashV3Lib.stripeNs.Token => scala.Unit = null,
     zipCode: js.UndefOr[scala.Boolean] = js.undefined
   ): StripeCheckoutOptions = {
     val __obj = js.Dynamic.literal()
@@ -61,7 +61,7 @@ object StripeCheckoutOptions {
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     if (!js.isUndefined(billingAddress)) __obj.updateDynamic("billingAddress")(billingAddress)
     if (!js.isUndefined(bitcoin)) __obj.updateDynamic("bitcoin")(bitcoin)
-    if (closed != null) __obj.updateDynamic("closed")(closed)
+    if (closed != null) __obj.updateDynamic("closed")(js.Any.fromFunction0(closed))
     if (currency != null) __obj.updateDynamic("currency")(currency)
     if (description != null) __obj.updateDynamic("description")(description)
     if (email != null) __obj.updateDynamic("email")(email)
@@ -70,11 +70,11 @@ object StripeCheckoutOptions {
     if (label != null) __obj.updateDynamic("label")(label)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (opened != null) __obj.updateDynamic("opened")(opened)
+    if (opened != null) __obj.updateDynamic("opened")(js.Any.fromFunction0(opened))
     if (panelLabel != null) __obj.updateDynamic("panelLabel")(panelLabel)
     if (!js.isUndefined(shippingAddress)) __obj.updateDynamic("shippingAddress")(shippingAddress)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (source != null) __obj.updateDynamic("source")(js.Any.fromFunction1(source))
+    if (token != null) __obj.updateDynamic("token")(js.Any.fromFunction1(token))
     if (!js.isUndefined(zipCode)) __obj.updateDynamic("zipCode")(zipCode)
     __obj.asInstanceOf[StripeCheckoutOptions]
   }

@@ -12,12 +12,9 @@ trait EncodedFullHashesResource extends js.Object {
 object EncodedFullHashesResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotSafebrowsingLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FindFullHashesResponse]
-    ]
+    get: gapiDotClientDotSafebrowsingLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[FindFullHashesResponse]
   ): EncodedFullHashesResource = {
-    val __obj = js.Dynamic.literal(get = get)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[EncodedFullHashesResource]
   }

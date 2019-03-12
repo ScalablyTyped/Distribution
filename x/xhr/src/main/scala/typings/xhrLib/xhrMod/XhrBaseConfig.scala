@@ -28,7 +28,7 @@ trait XhrBaseConfig extends js.Object {
 object XhrBaseConfig {
   @scala.inline
   def apply(
-    beforeSend: js.Function1[/* xhrObject */ stdLib.XMLHttpRequest, scala.Unit] = null,
+    beforeSend: /* xhrObject */ stdLib.XMLHttpRequest => scala.Unit = null,
     body: java.lang.String | js.Any = null,
     headers: XhrHeaders = null,
     json: js.UndefOr[scala.Boolean] = js.undefined,
@@ -43,7 +43,7 @@ object XhrBaseConfig {
     xhr: stdLib.XMLHttpRequest = null
   ): XhrBaseConfig = {
     val __obj = js.Dynamic.literal()
-    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)
+    if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction1(beforeSend))
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (!js.isUndefined(json)) __obj.updateDynamic("json")(json)

@@ -19,16 +19,16 @@ object GetFileInfoOptions {
   @scala.inline
   def apply(
     apFilePath: java.lang.String,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    complete: /* res */ js.Any => scala.Unit = null,
     digestAlgorithm: aliDashAppLib.aliDashAppLibStrings.md5 | aliDashAppLib.aliDashAppLibStrings.sha1 = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
-    success: js.Function1[/* options */ GetFileInfoSuccess, scala.Unit] = null
+    fail: js.Any => scala.Unit = null,
+    success: /* options */ GetFileInfoSuccess => scala.Unit = null
   ): GetFileInfoOptions = {
     val __obj = js.Dynamic.literal(apFilePath = apFilePath)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (digestAlgorithm != null) __obj.updateDynamic("digestAlgorithm")(digestAlgorithm.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetFileInfoOptions]
   }
 }

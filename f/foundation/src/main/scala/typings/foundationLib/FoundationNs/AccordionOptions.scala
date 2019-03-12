@@ -18,14 +18,14 @@ object AccordionOptions {
   @scala.inline
   def apply(
     active_class: java.lang.String = null,
-    callback: js.Function0[_] = null,
+    callback: () => _ = null,
     content_class: java.lang.String = null,
     multi_expand: js.UndefOr[scala.Boolean] = js.undefined,
     toggleable: js.UndefOr[scala.Boolean] = js.undefined
   ): AccordionOptions = {
     val __obj = js.Dynamic.literal()
     if (active_class != null) __obj.updateDynamic("active_class")(active_class)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (content_class != null) __obj.updateDynamic("content_class")(content_class)
     if (!js.isUndefined(multi_expand)) __obj.updateDynamic("multi_expand")(multi_expand)
     if (!js.isUndefined(toggleable)) __obj.updateDynamic("toggleable")(toggleable)

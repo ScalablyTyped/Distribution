@@ -35,23 +35,20 @@ object ConfigurableUIElement {
     RealInterface: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     ResourceURL: java.lang.String,
     Type: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    getRealInterface: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    getSettings: js.Function1[
-      scala.Boolean, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
-    ],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    setSettings: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, scala.Unit],
-    update: js.Function0[scala.Unit],
-    updateSettings: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    dispose: () => scala.Unit,
+    getRealInterface: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getSettings: scala.Boolean => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    setSettings: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess => scala.Unit,
+    update: () => scala.Unit,
+    updateSettings: () => scala.Unit
   ): ConfigurableUIElement = {
-    val __obj = js.Dynamic.literal(ConfigurationSource = ConfigurationSource, Frame = Frame, Persistent = Persistent, RealInterface = RealInterface, ResourceURL = ResourceURL, Type = Type, acquire = acquire, addEventListener = addEventListener, dispose = dispose, getRealInterface = getRealInterface, getSettings = getSettings, initialize = initialize, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setSettings = setSettings, update = update, updateSettings = updateSettings)
+    val __obj = js.Dynamic.literal(ConfigurationSource = ConfigurationSource, Frame = Frame, Persistent = Persistent, RealInterface = RealInterface, ResourceURL = ResourceURL, Type = Type, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), dispose = js.Any.fromFunction0(dispose), getRealInterface = js.Any.fromFunction0(getRealInterface), getSettings = js.Any.fromFunction1(getSettings), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), setSettings = js.Any.fromFunction1(setSettings), update = js.Any.fromFunction0(update), updateSettings = js.Any.fromFunction0(updateSettings))
   
     __obj.asInstanceOf[ConfigurableUIElement]
   }

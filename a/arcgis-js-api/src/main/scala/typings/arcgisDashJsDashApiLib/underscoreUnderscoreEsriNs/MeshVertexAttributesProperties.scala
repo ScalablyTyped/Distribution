@@ -37,14 +37,14 @@ object MeshVertexAttributesProperties {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     color: stdLib.Uint8Array | js.Array[scala.Double] | stdLib.Uint8ClampedArray = null,
     normal: stdLib.Float32Array | js.Array[scala.Double] | stdLib.Float64Array = null,
     position: stdLib.Float64Array | js.Array[scala.Double] | stdLib.Float32Array = null,
     uv: stdLib.Float32Array | js.Array[scala.Double] | stdLib.Float64Array = null
   ): MeshVertexAttributesProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (normal != null) __obj.updateDynamic("normal")(normal.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])

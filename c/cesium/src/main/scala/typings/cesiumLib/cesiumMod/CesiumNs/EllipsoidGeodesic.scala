@@ -21,14 +21,14 @@ object EllipsoidGeodesic {
   def apply(
     end: Cartographic,
     endHeading: scala.Double,
-    interpolateUsingFraction: js.Function1[scala.Double, Cartographic],
-    interpolateUsingSurfaceDistance: js.Function1[scala.Double, Cartographic],
-    setEndPoints: js.Function2[Cartographic, Cartographic, scala.Unit],
+    interpolateUsingFraction: scala.Double => Cartographic,
+    interpolateUsingSurfaceDistance: scala.Double => Cartographic,
+    setEndPoints: (Cartographic, Cartographic) => scala.Unit,
     start: Cartographic,
     startHeading: scala.Double,
     surfaceDistance: scala.Double
   ): EllipsoidGeodesic = {
-    val __obj = js.Dynamic.literal(end = end, endHeading = endHeading, interpolateUsingFraction = interpolateUsingFraction, interpolateUsingSurfaceDistance = interpolateUsingSurfaceDistance, setEndPoints = setEndPoints, start = start, startHeading = startHeading, surfaceDistance = surfaceDistance)
+    val __obj = js.Dynamic.literal(end = end, endHeading = endHeading, interpolateUsingFraction = js.Any.fromFunction1(interpolateUsingFraction), interpolateUsingSurfaceDistance = js.Any.fromFunction1(interpolateUsingSurfaceDistance), setEndPoints = js.Any.fromFunction2(setEndPoints), start = start, startHeading = startHeading, surfaceDistance = surfaceDistance)
   
     __obj.asInstanceOf[EllipsoidGeodesic]
   }

@@ -40,7 +40,7 @@ object CURNs extends js.Object {
     /**
       * Represents the output of the PutReportDefinition operation. The content consists of the detailed metadata and data file information. 
       */
-    var ReportDefinition: ReportDefinition
+    var ReportDefinition: awsDashSdkLib.clientsCurMod.CURNs.ReportDefinition
   }
   
   trait PutReportDefinitionResponse extends js.Object
@@ -60,15 +60,15 @@ object CURNs extends js.Object {
       * Whether you want Amazon Web Services to update your reports after they have been finalized if Amazon Web Services detects charges related to previous months. These charges can include refunds, credits, or support fees.
       */
     var RefreshClosedReports: js.UndefOr[RefreshClosedReports] = js.undefined
-    var ReportName: ReportName
+    var ReportName: awsDashSdkLib.clientsCurMod.CURNs.ReportName
     /**
       * Whether you want Amazon Web Services to overwrite the previous version of each report or to deliver the report in addition to the previous versions.
       */
     var ReportVersioning: js.UndefOr[ReportVersioning] = js.undefined
-    var S3Bucket: S3Bucket
-    var S3Prefix: S3Prefix
+    var S3Bucket: awsDashSdkLib.clientsCurMod.CURNs.S3Bucket
+    var S3Prefix: awsDashSdkLib.clientsCurMod.CURNs.S3Prefix
     var S3Region: AWSRegion
-    var TimeUnit: TimeUnit
+    var TimeUnit: awsDashSdkLib.clientsCurMod.CURNs.TimeUnit
   }
   
   @js.native

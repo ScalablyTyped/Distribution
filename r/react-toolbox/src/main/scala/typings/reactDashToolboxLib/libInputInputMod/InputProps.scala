@@ -53,27 +53,27 @@ trait InputProps
   /**
     * Callback function that is fired when component is blurred.
     */
-  var onBlur: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onBlur: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback function that is fired when the component's value changes
     */
-  var onChange: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onChange: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback function that is fired when component is focused.
     */
-  var onFocus: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onFocus: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback function that is fired when a key is pressed down.
     */
-  var onKeyDown: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onKeyDown: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback function that is fired when a key is pressed.
     */
-  var onKeyPress: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onKeyPress: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback function that is fired when a key is released.
     */
-  var onKeyUp: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onKeyUp: js.UndefOr[js.Function] = js.undefined
   /**
     * If true, the html input has a required attribute.
     * @default false
@@ -113,34 +113,34 @@ object InputProps {
     maxLength: scala.Int | scala.Double = null,
     multiline: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
-    onBlur: coreDashJsLib.Function = null,
-    onChange: coreDashJsLib.Function = null,
-    onClick: coreDashJsLib.Function = null,
-    onContextMenu: coreDashJsLib.Function = null,
-    onDoubleClick: coreDashJsLib.Function = null,
-    onDrag: coreDashJsLib.Function = null,
-    onDragEnd: coreDashJsLib.Function = null,
-    onDragEnter: coreDashJsLib.Function = null,
-    onDragExit: coreDashJsLib.Function = null,
-    onDragLeave: coreDashJsLib.Function = null,
-    onDragOver: coreDashJsLib.Function = null,
-    onDragStart: coreDashJsLib.Function = null,
-    onDrop: coreDashJsLib.Function = null,
-    onFocus: coreDashJsLib.Function = null,
-    onKeyDown: coreDashJsLib.Function = null,
-    onKeyPress: coreDashJsLib.Function = null,
-    onKeyUp: coreDashJsLib.Function = null,
-    onMouseDown: coreDashJsLib.Function = null,
-    onMouseEnter: coreDashJsLib.Function = null,
-    onMouseLeave: coreDashJsLib.Function = null,
-    onMouseMove: coreDashJsLib.Function = null,
-    onMouseOut: coreDashJsLib.Function = null,
-    onMouseOver: coreDashJsLib.Function = null,
-    onMouseUp: coreDashJsLib.Function = null,
-    onTouchCancel: coreDashJsLib.Function = null,
-    onTouchEnd: coreDashJsLib.Function = null,
-    onTouchMove: coreDashJsLib.Function = null,
-    onTouchStart: coreDashJsLib.Function = null,
+    onBlur: js.Function = null,
+    onChange: js.Function = null,
+    onClick: js.Function = null,
+    onContextMenu: js.Function = null,
+    onDoubleClick: js.Function = null,
+    onDrag: js.Function = null,
+    onDragEnd: js.Function = null,
+    onDragEnter: js.Function = null,
+    onDragExit: js.Function = null,
+    onDragLeave: js.Function = null,
+    onDragOver: js.Function = null,
+    onDragStart: js.Function = null,
+    onDrop: js.Function = null,
+    onFocus: js.Function = null,
+    onKeyDown: js.Function = null,
+    onKeyPress: js.Function = null,
+    onKeyUp: js.Function = null,
+    onMouseDown: js.Function = null,
+    onMouseEnter: js.Function = null,
+    onMouseLeave: js.Function = null,
+    onMouseMove: js.Function = null,
+    onMouseOut: js.Function = null,
+    onMouseOver: js.Function = null,
+    onMouseUp: js.Function = null,
+    onTouchCancel: js.Function = null,
+    onTouchEnd: js.Function = null,
+    onTouchMove: js.Function = null,
+    onTouchStart: js.Function = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
     rows: scala.Int | scala.Double = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,

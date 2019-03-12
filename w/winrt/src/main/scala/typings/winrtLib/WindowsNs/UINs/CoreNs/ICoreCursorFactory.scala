@@ -11,8 +11,8 @@ trait ICoreCursorFactory extends js.Object {
 
 object ICoreCursorFactory {
   @scala.inline
-  def apply(createCursor: js.Function2[CoreCursorType, scala.Double, CoreCursor]): ICoreCursorFactory = {
-    val __obj = js.Dynamic.literal(createCursor = createCursor)
+  def apply(createCursor: (CoreCursorType, scala.Double) => CoreCursor): ICoreCursorFactory = {
+    val __obj = js.Dynamic.literal(createCursor = js.Any.fromFunction2(createCursor))
   
     __obj.asInstanceOf[ICoreCursorFactory]
   }

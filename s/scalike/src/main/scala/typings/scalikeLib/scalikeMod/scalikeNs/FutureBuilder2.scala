@@ -16,13 +16,13 @@ trait FutureBuilder2[A, B, C] extends js.Object {
 object FutureBuilder2 {
   @scala.inline
   def apply[A, B, C](
-    chain: js.Function1[Future[js.Any], FutureBuilder3[A, B, C, js.Any]],
+    chain: Future[js.Any] => FutureBuilder3[A, B, C, js.Any],
     oa: js.Any,
     ob: js.Any,
     oc: js.Any,
-    run: js.Function1[js.Function3[/* a */ A, /* b */ B, /* c */ C, js.Any], Future[js.Any]]
+    run: js.Function3[/* a */ A, /* b */ B, /* c */ C, js.Any] => Future[js.Any]
   ): FutureBuilder2[A, B, C] = {
-    val __obj = js.Dynamic.literal(chain = chain, oa = oa, ob = ob, oc = oc, run = run)
+    val __obj = js.Dynamic.literal(chain = js.Any.fromFunction1(chain), oa = oa, ob = ob, oc = oc, run = js.Any.fromFunction1(run))
   
     __obj.asInstanceOf[FutureBuilder2[A, B, C]]
   }

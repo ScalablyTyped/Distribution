@@ -15,14 +15,14 @@ trait CustomPropertyButton
 object CustomPropertyButton {
   @scala.inline
   def apply(
-    action: js.Function1[VisualizationOptions, scala.Unit],
+    action: VisualizationOptions => scala.Unit,
     component: qlikLib.qlikLibStrings.button,
     label: java.lang.String = null,
     ref: java.lang.String = null,
     show: scala.Boolean | ShowFunction = null,
     `type`: qlikLib.qlikLibStrings.string | qlikLib.qlikLibStrings.integer | qlikLib.qlikLibStrings.number | qlikLib.qlikLibStrings.array | qlikLib.qlikLibStrings.boolean | qlikLib.qlikLibStrings.items = null
   ): CustomPropertyButton = {
-    val __obj = js.Dynamic.literal(action = action, component = component)
+    val __obj = js.Dynamic.literal(action = js.Any.fromFunction1(action), component = component)
     if (label != null) __obj.updateDynamic("label")(label)
     if (ref != null) __obj.updateDynamic("ref")(ref)
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])

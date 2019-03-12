@@ -14,8 +14,8 @@ trait QueueOptions extends js.Object {
 
 object QueueOptions {
   @scala.inline
-  def apply(onEmpty: js.Function0[scala.Unit]): QueueOptions = {
-    val __obj = js.Dynamic.literal(onEmpty = onEmpty)
+  def apply(onEmpty: () => scala.Unit): QueueOptions = {
+    val __obj = js.Dynamic.literal(onEmpty = js.Any.fromFunction0(onEmpty))
   
     __obj.asInstanceOf[QueueOptions]
   }

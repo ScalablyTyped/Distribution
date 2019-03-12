@@ -91,12 +91,12 @@ object DefineAttributeColumnOptions {
     comment: java.lang.String = null,
     defaultValue: js.Any = null,
     field: java.lang.String = null,
-    get: js.Function0[_] = null,
+    get: () => _ = null,
     onDelete: java.lang.String = null,
     onUpdate: java.lang.String = null,
     primaryKey: js.UndefOr[scala.Boolean] = js.undefined,
     references: DefineAttributeColumnReferencesOptions = null,
-    set: js.Function1[/* val */ js.Any, scala.Unit] = null,
+    set: /* val */ js.Any => scala.Unit = null,
     unique: scala.Boolean | java.lang.String | sequelizeLib.Anon_Msg = null,
     validate: DefineValidateOptions = null,
     values: js.Array[java.lang.String] = null
@@ -108,12 +108,12 @@ object DefineAttributeColumnOptions {
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (field != null) __obj.updateDynamic("field")(field)
-    if (get != null) __obj.updateDynamic("get")(get)
+    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction0(get))
     if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete)
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
     if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey)
     if (references != null) __obj.updateDynamic("references")(references)
-    if (set != null) __obj.updateDynamic("set")(set)
+    if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction1(set))
     if (unique != null) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(validate)
     if (values != null) __obj.updateDynamic("values")(values)

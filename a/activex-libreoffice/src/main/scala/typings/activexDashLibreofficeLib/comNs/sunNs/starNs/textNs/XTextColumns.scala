@@ -19,7 +19,7 @@ trait XTextColumns
     * returns the column description of the object.
     * @see TextColumn
     */
-  var Columns: activexDashInteropLib.SafeArray[TextColumn]
+  var Columns: stdLib.SafeArray[TextColumn]
   /** @returns the sum of all values.  As described above, the width values are relative. */
   val ReferenceValue: scala.Double
   /** @returns the number of columns. */
@@ -28,7 +28,7 @@ trait XTextColumns
     * returns the column description of the object.
     * @see TextColumn
     */
-  def getColumns(): activexDashInteropLib.SafeArray[TextColumn]
+  def getColumns(): stdLib.SafeArray[TextColumn]
   /** @returns the sum of all values.  As described above, the width values are relative. */
   def getReferenceValue(): scala.Double
   /**
@@ -50,18 +50,18 @@ object XTextColumns {
   @scala.inline
   def apply(
     ColumnCount: scala.Double,
-    Columns: activexDashInteropLib.SafeArray[TextColumn],
+    Columns: stdLib.SafeArray[TextColumn],
     ReferenceValue: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getColumnCount: js.Function0[scala.Double],
-    getColumns: js.Function0[activexDashInteropLib.SafeArray[TextColumn]],
-    getReferenceValue: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setColumnCount: js.Function1[scala.Double, scala.Unit],
-    setColumns: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TextColumn], scala.Unit]
+    acquire: () => scala.Unit,
+    getColumnCount: () => scala.Double,
+    getColumns: () => stdLib.SafeArray[TextColumn],
+    getReferenceValue: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setColumnCount: scala.Double => scala.Unit,
+    setColumns: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TextColumn] => scala.Unit
   ): XTextColumns = {
-    val __obj = js.Dynamic.literal(ColumnCount = ColumnCount, Columns = Columns, ReferenceValue = ReferenceValue, acquire = acquire, getColumnCount = getColumnCount, getColumns = getColumns, getReferenceValue = getReferenceValue, queryInterface = queryInterface, release = release, setColumnCount = setColumnCount, setColumns = setColumns)
+    val __obj = js.Dynamic.literal(ColumnCount = ColumnCount, Columns = Columns, ReferenceValue = ReferenceValue, acquire = js.Any.fromFunction0(acquire), getColumnCount = js.Any.fromFunction0(getColumnCount), getColumns = js.Any.fromFunction0(getColumns), getReferenceValue = js.Any.fromFunction0(getReferenceValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setColumnCount = js.Any.fromFunction1(setColumnCount), setColumns = js.Any.fromFunction1(setColumns))
   
     __obj.asInstanceOf[XTextColumns]
   }

@@ -15,7 +15,7 @@ trait ListViewClickEvent extends ListViewEvent {
 object ListViewClickEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: ListView,
     button: Button = null,
@@ -23,7 +23,7 @@ object ListViewClickEvent {
     item: kendoDashUiLib.JQuery = null,
     target: kendoDashUiLib.JQuery = null
   ): ListViewClickEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (button != null) __obj.updateDynamic("button")(button)
     if (dataItem != null) __obj.updateDynamic("dataItem")(dataItem)
     if (item != null) __obj.updateDynamic("item")(item)

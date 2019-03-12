@@ -12,12 +12,12 @@ trait GridGroupEvent extends GridEvent {
 object GridGroupEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Grid,
     groups: js.Any = null
   ): GridGroupEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (groups != null) __obj.updateDynamic("groups")(groups)
     __obj.asInstanceOf[GridGroupEvent]
   }

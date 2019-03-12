@@ -18,13 +18,13 @@ object IVaultsOnServer {
   @scala.inline
   def apply(
     Count: scala.Double,
-    GetVaultByGUID: js.Function1[java.lang.String, IVaultOnServer],
-    GetVaultByName: js.Function1[java.lang.String, IVaultOnServer],
-    GetVaultIndexByGUID: js.Function1[java.lang.String, scala.Double],
-    GetVaultIndexByName: js.Function1[java.lang.String, scala.Double],
-    Item: js.Function1[scala.Double, IVaultOnServer]
+    GetVaultByGUID: java.lang.String => IVaultOnServer,
+    GetVaultByName: java.lang.String => IVaultOnServer,
+    GetVaultIndexByGUID: java.lang.String => scala.Double,
+    GetVaultIndexByName: java.lang.String => scala.Double,
+    Item: scala.Double => IVaultOnServer
   ): IVaultsOnServer = {
-    val __obj = js.Dynamic.literal(Count = Count, GetVaultByGUID = GetVaultByGUID, GetVaultByName = GetVaultByName, GetVaultIndexByGUID = GetVaultIndexByGUID, GetVaultIndexByName = GetVaultIndexByName, Item = Item)
+    val __obj = js.Dynamic.literal(Count = Count, GetVaultByGUID = js.Any.fromFunction1(GetVaultByGUID), GetVaultByName = js.Any.fromFunction1(GetVaultByName), GetVaultIndexByGUID = js.Any.fromFunction1(GetVaultIndexByGUID), GetVaultIndexByName = js.Any.fromFunction1(GetVaultIndexByName), Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[IVaultsOnServer]
   }

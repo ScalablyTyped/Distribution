@@ -14,3 +14,12 @@ trait InfiniteHitsProvided[THit] extends js.Object {
   def refine(args: js.Any*): js.Any
 }
 
+object InfiniteHitsProvided {
+  @scala.inline
+  def apply[THit](hasMore: scala.Boolean, hits: js.Array[THit], refine: /* repeated */ js.Any => js.Any): InfiniteHitsProvided[THit] = {
+    val __obj = js.Dynamic.literal(hasMore = hasMore, hits = hits, refine = js.Any.fromFunction1(refine))
+  
+    __obj.asInstanceOf[InfiniteHitsProvided[THit]]
+  }
+}
+

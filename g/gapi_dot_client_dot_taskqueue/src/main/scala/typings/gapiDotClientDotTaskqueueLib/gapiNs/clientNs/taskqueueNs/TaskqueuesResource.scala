@@ -12,13 +12,8 @@ trait TaskqueuesResource extends js.Object {
 
 object TaskqueuesResource {
   @scala.inline
-  def apply(
-    get: js.Function1[
-      gapiDotClientDotTaskqueueLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TaskQueue]
-    ]
-  ): TaskqueuesResource = {
-    val __obj = js.Dynamic.literal(get = get)
+  def apply(get: gapiDotClientDotTaskqueueLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[TaskQueue]): TaskqueuesResource = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[TaskqueuesResource]
   }

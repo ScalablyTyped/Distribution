@@ -26,7 +26,7 @@ object Anon_BackgroundDocument {
   def apply(
     background: goLib.goMod.goNs.BrushLike = null,
     document: stdLib.Document = null,
-    elementFinished: js.Function2[/* obj */ goLib.goMod.goNs.GraphObject, /* elt */ stdLib.SVGElement, scala.Unit] = null,
+    elementFinished: (/* obj */ goLib.goMod.goNs.GraphObject, /* elt */ stdLib.SVGElement) => scala.Unit = null,
     maxSize: goLib.goMod.goNs.Size = null,
     padding: goLib.goMod.goNs.MarginLike = null,
     parts: goLib.goMod.goNs.Iterable[goLib.goMod.goNs.Part] = null,
@@ -39,7 +39,7 @@ object Anon_BackgroundDocument {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (document != null) __obj.updateDynamic("document")(document)
-    if (elementFinished != null) __obj.updateDynamic("elementFinished")(elementFinished)
+    if (elementFinished != null) __obj.updateDynamic("elementFinished")(js.Any.fromFunction2(elementFinished))
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize)
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (parts != null) __obj.updateDynamic("parts")(parts)

@@ -37,7 +37,7 @@ trait XIeeeDoubleReadOnlyBitmap extends XBitmap {
   def getData(
     bitmapLayout: js.Array[FloatingPointBitmapLayout],
     rect: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerRectangle2D
-  ): activexDashInteropLib.SafeArray[scala.Double]
+  ): stdLib.SafeArray[scala.Double]
   /**
     * Query the memory layout for this bitmap.
     *
@@ -56,7 +56,7 @@ trait XIeeeDoubleReadOnlyBitmap extends XBitmap {
   def getPixel(
     bitmapLayout: js.Array[FloatingPointBitmapLayout],
     pos: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerPoint2D
-  ): activexDashInteropLib.SafeArray[scala.Double]
+  ): stdLib.SafeArray[scala.Double]
 }
 
 object XIeeeDoubleReadOnlyBitmap {
@@ -64,29 +64,17 @@ object XIeeeDoubleReadOnlyBitmap {
   def apply(
     MemoryLayout: FloatingPointBitmapLayout,
     Size: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D,
-    acquire: js.Function0[scala.Unit],
-    getData: js.Function2[
-      js.Array[FloatingPointBitmapLayout], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerRectangle2D, 
-      activexDashInteropLib.SafeArray[scala.Double]
-    ],
-    getMemoryLayout: js.Function0[FloatingPointBitmapLayout],
-    getPixel: js.Function2[
-      js.Array[FloatingPointBitmapLayout], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerPoint2D, 
-      activexDashInteropLib.SafeArray[scala.Double]
-    ],
-    getScaledBitmap: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealSize2D, 
-      scala.Boolean, 
-      XBitmap
-    ],
-    getSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D],
-    hasAlpha: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getData: (js.Array[FloatingPointBitmapLayout], activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerRectangle2D) => stdLib.SafeArray[scala.Double],
+    getMemoryLayout: () => FloatingPointBitmapLayout,
+    getPixel: (js.Array[FloatingPointBitmapLayout], activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerPoint2D) => stdLib.SafeArray[scala.Double],
+    getScaledBitmap: (activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealSize2D, scala.Boolean) => XBitmap,
+    getSize: () => activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D,
+    hasAlpha: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XIeeeDoubleReadOnlyBitmap = {
-    val __obj = js.Dynamic.literal(MemoryLayout = MemoryLayout, Size = Size, acquire = acquire, getData = getData, getMemoryLayout = getMemoryLayout, getPixel = getPixel, getScaledBitmap = getScaledBitmap, getSize = getSize, hasAlpha = hasAlpha, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(MemoryLayout = MemoryLayout, Size = Size, acquire = js.Any.fromFunction0(acquire), getData = js.Any.fromFunction2(getData), getMemoryLayout = js.Any.fromFunction0(getMemoryLayout), getPixel = js.Any.fromFunction2(getPixel), getScaledBitmap = js.Any.fromFunction2(getScaledBitmap), getSize = js.Any.fromFunction0(getSize), hasAlpha = js.Any.fromFunction0(hasAlpha), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XIeeeDoubleReadOnlyBitmap]
   }

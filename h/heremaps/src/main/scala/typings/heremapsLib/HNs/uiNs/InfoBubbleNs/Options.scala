@@ -21,10 +21,10 @@ object Options {
   @scala.inline
   def apply(
     content: java.lang.String | stdLib.Node,
-    onStateChange: js.Function1[/* event */ heremapsLib.HNs.utilNs.Event, scala.Unit] = null
+    onStateChange: /* event */ heremapsLib.HNs.utilNs.Event => scala.Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-    if (onStateChange != null) __obj.updateDynamic("onStateChange")(onStateChange)
+    if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1(onStateChange))
     __obj.asInstanceOf[Options]
   }
 }

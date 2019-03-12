@@ -27,5 +27,32 @@ trait SequenceT1[F /* <: fpDashTsLib.libHKTMod.URIS */] extends js.Object {
     d: fpDashTsLib.libHKTMod.Type[F, D],
     e: fpDashTsLib.libHKTMod.Type[F, E]
   ): fpDashTsLib.libHKTMod.Type[F, js.Tuple5[A, B, C, D, E]] = js.native
+  def apply[A, B, C, D, E, G](
+    a: fpDashTsLib.libHKTMod.Type[F, A],
+    b: fpDashTsLib.libHKTMod.Type[F, B],
+    c: fpDashTsLib.libHKTMod.Type[F, C],
+    d: fpDashTsLib.libHKTMod.Type[F, D],
+    e: fpDashTsLib.libHKTMod.Type[F, E],
+    g: fpDashTsLib.libHKTMod.Type[F, G]
+  ): fpDashTsLib.libHKTMod.Type[F, js.Tuple6[A, B, C, D, E, G]] = js.native
+  def apply[A, B, C, D, E, G, H](
+    a: fpDashTsLib.libHKTMod.Type[F, A],
+    b: fpDashTsLib.libHKTMod.Type[F, B],
+    c: fpDashTsLib.libHKTMod.Type[F, C],
+    d: fpDashTsLib.libHKTMod.Type[F, D],
+    e: fpDashTsLib.libHKTMod.Type[F, E],
+    g: fpDashTsLib.libHKTMod.Type[F, G],
+    h: fpDashTsLib.libHKTMod.Type[F, H]
+  ): fpDashTsLib.libHKTMod.Type[F, js.Tuple7[A, B, C, D, E, G, H]] = js.native
+  def apply[A, B, C, D, E, G, H, I](
+    a: fpDashTsLib.libHKTMod.Type[F, A],
+    b: fpDashTsLib.libHKTMod.Type[F, B],
+    c: fpDashTsLib.libHKTMod.Type[F, C],
+    d: fpDashTsLib.libHKTMod.Type[F, D],
+    e: fpDashTsLib.libHKTMod.Type[F, E],
+    g: fpDashTsLib.libHKTMod.Type[F, G],
+    h: fpDashTsLib.libHKTMod.Type[F, H],
+    i: fpDashTsLib.libHKTMod.Type[F, I]
+  ): fpDashTsLib.libHKTMod.Type[F, js.Tuple8[A, B, C, D, E, G, H, I]] = js.native
 }
 

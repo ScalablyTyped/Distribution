@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.InputHTMLAttributes<react.HTMLInputElement>, antd.antd/lib/input-number.OmitAttrs> ]: react.react.InputHTMLAttributes<react.HTMLInputElement>[P]} */ trait InputNumberProps extends js.Object {
+- Dropped {[ P in std.Exclude<keyof react.react.InputHTMLAttributes<std.HTMLInputElement>, antd.antd/lib/input-number.OmitAttrs> ]: react.react.InputHTMLAttributes<std.HTMLInputElement>[P]} */ trait InputNumberProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var decimalSeparator: js.UndefOr[java.lang.String] = js.undefined
   var defaultValue: js.UndefOr[scala.Double] = js.undefined
@@ -39,13 +39,13 @@ object InputNumberProps {
     decimalSeparator: java.lang.String = null,
     defaultValue: scala.Int | scala.Double = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    formatter: js.Function1[/* value */ js.UndefOr[scala.Double | java.lang.String], java.lang.String] = null,
+    formatter: /* value */ js.UndefOr[scala.Double | java.lang.String] => java.lang.String = null,
     id: java.lang.String = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
     name: java.lang.String = null,
-    onChange: js.Function1[/* value */ js.UndefOr[scala.Double], scala.Unit] = null,
-    parser: js.Function1[/* displayValue */ js.UndefOr[java.lang.String], scala.Double] = null,
+    onChange: /* value */ js.UndefOr[scala.Double] => scala.Unit = null,
+    parser: /* displayValue */ js.UndefOr[java.lang.String] => scala.Double = null,
     placeholder: java.lang.String = null,
     precision: scala.Int | scala.Double = null,
     prefixCls: java.lang.String = null,
@@ -60,13 +60,13 @@ object InputNumberProps {
     if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
     if (id != null) __obj.updateDynamic("id")(id)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (parser != null) __obj.updateDynamic("parser")(parser)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (parser != null) __obj.updateDynamic("parser")(js.Any.fromFunction1(parser))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)

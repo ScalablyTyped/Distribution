@@ -109,11 +109,11 @@ trait MarkupSet extends js.Object {
 object MarkupSet {
   @scala.inline
   def apply(
-    afterInsert: js.Function1[/* h */ MarkupSet, java.lang.String] = null,
-    afterMultiInsert: js.Function1[/* h */ MarkupSet, java.lang.String] = null,
+    afterInsert: /* h */ MarkupSet => java.lang.String = null,
+    afterMultiInsert: /* h */ MarkupSet => java.lang.String = null,
     altKey: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeInsert: js.Function1[/* h */ MarkupSet, java.lang.String] = null,
-    beforeMultiInsert: js.Function1[/* h */ MarkupSet, java.lang.String] = null,
+    beforeInsert: /* h */ MarkupSet => java.lang.String = null,
+    beforeMultiInsert: /* h */ MarkupSet => java.lang.String = null,
     caretPosition: scala.Int | scala.Double = null,
     className: java.lang.String = null,
     closeBlockWith: java.lang.String | (js.Function1[MarkupSet, java.lang.String]) = null,
@@ -136,11 +136,11 @@ object MarkupSet {
     textarea: stdLib.HTMLElement = null
   ): MarkupSet = {
     val __obj = js.Dynamic.literal()
-    if (afterInsert != null) __obj.updateDynamic("afterInsert")(afterInsert)
-    if (afterMultiInsert != null) __obj.updateDynamic("afterMultiInsert")(afterMultiInsert)
+    if (afterInsert != null) __obj.updateDynamic("afterInsert")(js.Any.fromFunction1(afterInsert))
+    if (afterMultiInsert != null) __obj.updateDynamic("afterMultiInsert")(js.Any.fromFunction1(afterMultiInsert))
     if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey)
-    if (beforeInsert != null) __obj.updateDynamic("beforeInsert")(beforeInsert)
-    if (beforeMultiInsert != null) __obj.updateDynamic("beforeMultiInsert")(beforeMultiInsert)
+    if (beforeInsert != null) __obj.updateDynamic("beforeInsert")(js.Any.fromFunction1(beforeInsert))
+    if (beforeMultiInsert != null) __obj.updateDynamic("beforeMultiInsert")(js.Any.fromFunction1(beforeMultiInsert))
     if (caretPosition != null) __obj.updateDynamic("caretPosition")(caretPosition.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (closeBlockWith != null) __obj.updateDynamic("closeBlockWith")(closeBlockWith.asInstanceOf[js.Any])

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def default(): jssLib.jssMod.GenerateClassName[_] = js.native
-  def default(options: atMaterialDashUiCoreLib.stylesCreateGenerateClassNameMod.GenerateClassNameOptions): jssLib.jssMod.GenerateClassName[_] = js.native
+  def default(options: GenerateClassNameOptions): jssLib.jssMod.GenerateClassName[_] = js.native
 }
 

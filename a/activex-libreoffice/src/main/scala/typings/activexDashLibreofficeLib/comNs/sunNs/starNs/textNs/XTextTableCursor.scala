@@ -84,21 +84,21 @@ object XTextTableCursor {
   @scala.inline
   def apply(
     RangeName: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getRangeName: js.Function0[java.lang.String],
-    goDown: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
-    goLeft: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
-    goRight: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
-    goUp: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
-    gotoCellByName: js.Function2[java.lang.String, scala.Boolean, scala.Boolean],
-    gotoEnd: js.Function1[scala.Boolean, scala.Unit],
-    gotoStart: js.Function1[scala.Boolean, scala.Unit],
-    mergeRange: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    splitRange: js.Function2[scala.Double, scala.Boolean, scala.Boolean]
+    acquire: () => scala.Unit,
+    getRangeName: () => java.lang.String,
+    goDown: (scala.Double, scala.Boolean) => scala.Boolean,
+    goLeft: (scala.Double, scala.Boolean) => scala.Boolean,
+    goRight: (scala.Double, scala.Boolean) => scala.Boolean,
+    goUp: (scala.Double, scala.Boolean) => scala.Boolean,
+    gotoCellByName: (java.lang.String, scala.Boolean) => scala.Boolean,
+    gotoEnd: scala.Boolean => scala.Unit,
+    gotoStart: scala.Boolean => scala.Unit,
+    mergeRange: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    splitRange: (scala.Double, scala.Boolean) => scala.Boolean
   ): XTextTableCursor = {
-    val __obj = js.Dynamic.literal(RangeName = RangeName, acquire = acquire, getRangeName = getRangeName, goDown = goDown, goLeft = goLeft, goRight = goRight, goUp = goUp, gotoCellByName = gotoCellByName, gotoEnd = gotoEnd, gotoStart = gotoStart, mergeRange = mergeRange, queryInterface = queryInterface, release = release, splitRange = splitRange)
+    val __obj = js.Dynamic.literal(RangeName = RangeName, acquire = js.Any.fromFunction0(acquire), getRangeName = js.Any.fromFunction0(getRangeName), goDown = js.Any.fromFunction2(goDown), goLeft = js.Any.fromFunction2(goLeft), goRight = js.Any.fromFunction2(goRight), goUp = js.Any.fromFunction2(goUp), gotoCellByName = js.Any.fromFunction2(gotoCellByName), gotoEnd = js.Any.fromFunction1(gotoEnd), gotoStart = js.Any.fromFunction1(gotoStart), mergeRange = js.Any.fromFunction0(mergeRange), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), splitRange = js.Any.fromFunction2(splitRange))
   
     __obj.asInstanceOf[XTextTableCursor]
   }

@@ -25,9 +25,9 @@ object MenuItemProps {
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     level: scala.Int | scala.Double = null,
-    onClick: js.Function1[/* param */ antdLib.libMenuMod.ClickParam, scala.Unit] = null,
-    onMouseEnter: js.Function1[/* e */ antdLib.Anon_DomEvent, scala.Unit] = null,
-    onMouseLeave: js.Function1[/* e */ antdLib.Anon_DomEvent, scala.Unit] = null,
+    onClick: /* param */ antdLib.libMenuMod.ClickParam => scala.Unit = null,
+    onMouseEnter: /* e */ antdLib.Anon_DomEvent => scala.Unit = null,
+    onMouseLeave: /* e */ antdLib.Anon_DomEvent => scala.Unit = null,
     rootPrefixCls: java.lang.String = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     title: reactLib.reactMod.ReactNs.ReactNode = null
@@ -37,9 +37,9 @@ object MenuItemProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
     if (rootPrefixCls != null) __obj.updateDynamic("rootPrefixCls")(rootPrefixCls)
     if (style != null) __obj.updateDynamic("style")(style)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

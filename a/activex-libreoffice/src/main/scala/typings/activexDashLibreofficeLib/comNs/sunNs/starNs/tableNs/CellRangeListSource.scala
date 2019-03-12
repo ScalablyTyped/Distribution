@@ -21,29 +21,23 @@ trait CellRangeListSource
 object CellRangeListSource {
   @scala.inline
   def apply(
-    AllListEntries: activexDashInteropLib.SafeArray[java.lang.String],
+    AllListEntries: stdLib.SafeArray[java.lang.String],
     CellRange: CellRangeAddress,
     ListEntryCount: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    addListEntryListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.bindingNs.XListEntryListener, 
-      scala.Unit
-    ],
-    dispose: js.Function0[scala.Unit],
-    getAllListEntries: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getListEntry: js.Function1[scala.Double, java.lang.String],
-    getListEntryCount: js.Function0[scala.Double],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    removeListEntryListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.bindingNs.XListEntryListener, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    addListEntryListener: activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.bindingNs.XListEntryListener => scala.Unit,
+    dispose: () => scala.Unit,
+    getAllListEntries: () => stdLib.SafeArray[java.lang.String],
+    getListEntry: scala.Double => java.lang.String,
+    getListEntryCount: () => scala.Double,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    removeListEntryListener: activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.bindingNs.XListEntryListener => scala.Unit
   ): CellRangeListSource = {
-    val __obj = js.Dynamic.literal(AllListEntries = AllListEntries, CellRange = CellRange, ListEntryCount = ListEntryCount, acquire = acquire, addEventListener = addEventListener, addListEntryListener = addListEntryListener, dispose = dispose, getAllListEntries = getAllListEntries, getListEntry = getListEntry, getListEntryCount = getListEntryCount, initialize = initialize, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeListEntryListener = removeListEntryListener)
+    val __obj = js.Dynamic.literal(AllListEntries = AllListEntries, CellRange = CellRange, ListEntryCount = ListEntryCount, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addListEntryListener = js.Any.fromFunction1(addListEntryListener), dispose = js.Any.fromFunction0(dispose), getAllListEntries = js.Any.fromFunction0(getAllListEntries), getListEntry = js.Any.fromFunction1(getListEntry), getListEntryCount = js.Any.fromFunction0(getListEntryCount), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removeListEntryListener = js.Any.fromFunction1(removeListEntryListener))
   
     __obj.asInstanceOf[CellRangeListSource]
   }

@@ -18,14 +18,10 @@ object IxMonad {
   @scala.inline
   def apply[F](
     URI: F,
-    ichain: js.Function2[
-      fpDashTsLib.libHKTMod.HKT3[F, js.Any, js.Any, js.Any], 
-      js.Function1[js.Any, fpDashTsLib.libHKTMod.HKT3[F, js.Any, js.Any, js.Any]], 
-      fpDashTsLib.libHKTMod.HKT3[F, js.Any, js.Any, js.Any]
-    ],
-    iof: js.Function1[js.Any, fpDashTsLib.libHKTMod.HKT3[F, js.Any, js.Any, js.Any]]
+    ichain: (fpDashTsLib.libHKTMod.HKT3[F, js.Any, js.Any, js.Any], js.Function1[js.Any, fpDashTsLib.libHKTMod.HKT3[F, js.Any, js.Any, js.Any]]) => fpDashTsLib.libHKTMod.HKT3[F, js.Any, js.Any, js.Any],
+    iof: js.Any => fpDashTsLib.libHKTMod.HKT3[F, js.Any, js.Any, js.Any]
   ): IxMonad[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ichain = ichain, iof = iof)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ichain = js.Any.fromFunction2(ichain), iof = js.Any.fromFunction1(iof))
   
     __obj.asInstanceOf[IxMonad[F]]
   }

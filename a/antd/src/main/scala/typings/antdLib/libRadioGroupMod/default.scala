@@ -15,7 +15,7 @@ class default protected () extends RadioGroup {
 @JSImport("antd/lib/radio/group", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var childContextTypes: antdLib.Anon_RadioGroup = js.native
+  var childContextTypes: antdLib.Anon_ComponentNameLocation = js.native
   var defaultProps: antdLib.Anon_ButtonStyle = js.native
   def getDerivedStateFromProps(nextProps: antdLib.libRadioInterfaceMod.RadioGroupProps): antdLib.Anon_ValueAny | scala.Null = js.native
 }

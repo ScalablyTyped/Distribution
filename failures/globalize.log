@@ -32,7 +32,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(globalize, dist, globalize, unit)) [id => globalize, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/globalize/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/globalize),TsIdentLibrarySimple(globalize)),TsIdentModule(None,List(globalize))) [id => globalize, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(globalize)) [id => globalize, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:200 Processing TsIdentLibrarySimple(globalize) [id => globalize, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:201 Processing TsIdentLibrarySimple(globalize) [id => globalize, phase => typescript] 
 [info ] PreferTypeAlias.scala:122 Could not simplify Globalize to function type alias because of circular references Vector(TsIdentNamespace(Globalize)) [id => globalize, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(globalize/dist/globalize) / TsDeclInterface(Globalize))] 
 [debug] PhaseRunner.scala:82 Success [id => globalize, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing globalize [id => globalize, phase => scala.js] 

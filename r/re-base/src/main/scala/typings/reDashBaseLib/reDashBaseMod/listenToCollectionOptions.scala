@@ -41,16 +41,16 @@ object listenToCollectionOptions {
   @scala.inline
   def apply(
     context: js.Object,
-    `then`: js.Function0[scala.Unit],
-    onFailure: js.Function0[scala.Unit] = null,
-    query: js.Function0[scala.Unit] = null,
+    `then`: () => scala.Unit,
+    onFailure: () => scala.Unit = null,
+    query: () => scala.Unit = null,
     withIds: js.UndefOr[scala.Boolean] = js.undefined,
     withRefs: js.UndefOr[scala.Boolean] = js.undefined
   ): listenToCollectionOptions = {
     val __obj = js.Dynamic.literal(context = context)
-    __obj.updateDynamic("then")(`then`)
-    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
-    if (query != null) __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("then")(js.Any.fromFunction0(`then`))
+    if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction0(onFailure))
+    if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction0(query))
     if (!js.isUndefined(withIds)) __obj.updateDynamic("withIds")(withIds)
     if (!js.isUndefined(withRefs)) __obj.updateDynamic("withRefs")(withRefs)
     __obj.asInstanceOf[listenToCollectionOptions]

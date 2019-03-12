@@ -71,7 +71,7 @@ object VictoryCursorContainerProps {
   def apply(
     cursorComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
     cursorDimension: victoryLib.victoryLibStrings.x | victoryLib.victoryLibStrings.y = null,
-    cursorLabel: js.Function1[/* point */ CursorData, scala.Unit] = null,
+    cursorLabel: /* point */ CursorData => scala.Unit = null,
     cursorLabelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
     cursorLabelOffset: scala.Double | CursorData = null,
     defaultCursorValue: scala.Double | CursorData = null,
@@ -79,7 +79,7 @@ object VictoryCursorContainerProps {
     disable: js.UndefOr[scala.Boolean] = js.undefined,
     events: reactLib.reactMod.ReactNs.DOMAttributes[_] = null,
     height: scala.Int | scala.Double = null,
-    onCursorChange: js.Function2[/* value */ CursorData, /* props */ VictoryCursorContainerProps, scala.Unit] = null,
+    onCursorChange: (/* value */ CursorData, /* props */ VictoryCursorContainerProps) => scala.Unit = null,
     responsive: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     title: java.lang.String = null,
@@ -88,7 +88,7 @@ object VictoryCursorContainerProps {
     val __obj = js.Dynamic.literal()
     if (cursorComponent != null) __obj.updateDynamic("cursorComponent")(cursorComponent)
     if (cursorDimension != null) __obj.updateDynamic("cursorDimension")(cursorDimension.asInstanceOf[js.Any])
-    if (cursorLabel != null) __obj.updateDynamic("cursorLabel")(cursorLabel)
+    if (cursorLabel != null) __obj.updateDynamic("cursorLabel")(js.Any.fromFunction1(cursorLabel))
     if (cursorLabelComponent != null) __obj.updateDynamic("cursorLabelComponent")(cursorLabelComponent)
     if (cursorLabelOffset != null) __obj.updateDynamic("cursorLabelOffset")(cursorLabelOffset.asInstanceOf[js.Any])
     if (defaultCursorValue != null) __obj.updateDynamic("defaultCursorValue")(defaultCursorValue.asInstanceOf[js.Any])
@@ -96,7 +96,7 @@ object VictoryCursorContainerProps {
     if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
     if (events != null) __obj.updateDynamic("events")(events)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (onCursorChange != null) __obj.updateDynamic("onCursorChange")(onCursorChange)
+    if (onCursorChange != null) __obj.updateDynamic("onCursorChange")(js.Any.fromFunction2(onCursorChange))
     if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
     if (style != null) __obj.updateDynamic("style")(style)
     if (title != null) __obj.updateDynamic("title")(title)

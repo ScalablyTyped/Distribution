@@ -21,7 +21,7 @@ object Options {
   @scala.inline
   def apply(
     beforeClose: js.ThisFunction0[/* this */ modal, js.UndefOr[scala.Boolean]] = null,
-    beforeOpen: js.Function0[scala.Unit] = null,
+    beforeOpen: () => scala.Unit = null,
     closeLabel: java.lang.String = null,
     closeMethods: js.Array[java.lang.String] = null,
     cssClass: js.Array[java.lang.String] = null,
@@ -32,7 +32,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
-    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen)
+    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(js.Any.fromFunction0(beforeOpen))
     if (closeLabel != null) __obj.updateDynamic("closeLabel")(closeLabel)
     if (closeMethods != null) __obj.updateDynamic("closeMethods")(closeMethods)
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)

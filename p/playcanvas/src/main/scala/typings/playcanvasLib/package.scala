@@ -8,6 +8,6 @@ package object playcanvasLib {
   type BrowserMouseEvent = stdLib.MouseEvent
   type BrowserTouch = stdLib.Touch
   type BrowserTouchEvent = stdLib.TouchEvent
-  type NativeVRDisplay = webvrDashApiLib.VRDisplay
-  type NativeVRDisplayCapabilities = webvrDashApiLib.VRDisplayCapabilities
+  type NativeVRDisplay = stdLib.VRDisplay
+  type NativeVRDisplayCapabilities = stdLib.VRDisplayCapabilities
 }

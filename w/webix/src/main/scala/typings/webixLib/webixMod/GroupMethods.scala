@@ -17,14 +17,14 @@ trait GroupMethods extends js.Object {
 object GroupMethods {
   @scala.inline
   def apply(
-    any: js.Function2[java.lang.String, js.Any, scala.Unit],
-    count: js.Function2[java.lang.String, js.Any, scala.Unit],
-    max: js.Function2[java.lang.String, js.Any, scala.Unit],
-    min: js.Function2[java.lang.String, js.Any, scala.Unit],
-    string: js.Function2[java.lang.String, js.Any, scala.Unit],
-    sum: js.Function2[java.lang.String, js.Any, scala.Unit]
+    any: (java.lang.String, js.Any) => scala.Unit,
+    count: (java.lang.String, js.Any) => scala.Unit,
+    max: (java.lang.String, js.Any) => scala.Unit,
+    min: (java.lang.String, js.Any) => scala.Unit,
+    string: (java.lang.String, js.Any) => scala.Unit,
+    sum: (java.lang.String, js.Any) => scala.Unit
   ): GroupMethods = {
-    val __obj = js.Dynamic.literal(any = any, count = count, max = max, min = min, string = string, sum = sum)
+    val __obj = js.Dynamic.literal(any = js.Any.fromFunction2(any), count = js.Any.fromFunction2(count), max = js.Any.fromFunction2(max), min = js.Any.fromFunction2(min), string = js.Any.fromFunction2(string), sum = js.Any.fromFunction2(sum))
   
     __obj.asInstanceOf[GroupMethods]
   }

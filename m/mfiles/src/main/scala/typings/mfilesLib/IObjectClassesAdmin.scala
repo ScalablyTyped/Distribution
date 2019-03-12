@@ -15,12 +15,12 @@ trait IObjectClassesAdmin extends js.Object {
 object IObjectClassesAdmin {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IObjectClassAdmin, scala.Unit],
+    Add: (scala.Double, IObjectClassAdmin) => scala.Unit,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IObjectClassAdmin],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => IObjectClassAdmin,
+    Remove: scala.Double => scala.Unit
   ): IObjectClassesAdmin = {
-    val __obj = js.Dynamic.literal(Add = Add, Count = Count, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IObjectClassesAdmin]
   }

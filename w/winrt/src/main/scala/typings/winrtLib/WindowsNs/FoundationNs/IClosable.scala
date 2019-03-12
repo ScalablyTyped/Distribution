@@ -11,8 +11,8 @@ trait IClosable extends js.Object {
 
 object IClosable {
   @scala.inline
-  def apply(close: js.Function0[scala.Unit]): IClosable = {
-    val __obj = js.Dynamic.literal(close = close)
+  def apply(close: () => scala.Unit): IClosable = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
   
     __obj.asInstanceOf[IClosable]
   }

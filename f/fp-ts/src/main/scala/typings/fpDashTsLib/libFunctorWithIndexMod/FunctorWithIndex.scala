@@ -14,18 +14,10 @@ object FunctorWithIndex {
   @scala.inline
   def apply[F, I](
     URI: F,
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.HKT[F, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.HKT[F, js.Any]
-    ],
-    mapWithIndex: js.Function2[
-      fpDashTsLib.libHKTMod.HKT[F, js.Any], 
-      js.Function2[/* i */ I, js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.HKT[F, js.Any]
-    ]
+    map: (fpDashTsLib.libHKTMod.HKT[F, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.HKT[F, js.Any],
+    mapWithIndex: (fpDashTsLib.libHKTMod.HKT[F, js.Any], js.Function2[/* i */ I, js.Any, js.Any]) => fpDashTsLib.libHKTMod.HKT[F, js.Any]
   ): FunctorWithIndex[F, I] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], map = map, mapWithIndex = mapWithIndex)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], map = js.Any.fromFunction2(map), mapWithIndex = js.Any.fromFunction2(mapWithIndex))
   
     __obj.asInstanceOf[FunctorWithIndex[F, I]]
   }

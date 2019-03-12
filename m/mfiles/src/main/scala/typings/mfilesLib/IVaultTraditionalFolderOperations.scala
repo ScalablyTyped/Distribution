@@ -11,8 +11,8 @@ trait IVaultTraditionalFolderOperations extends js.Object {
 
 object IVaultTraditionalFolderOperations {
   @scala.inline
-  def apply(GetTraditionalFolderContents: js.Function1[scala.Double, ITraditionalFolderContents]): IVaultTraditionalFolderOperations = {
-    val __obj = js.Dynamic.literal(GetTraditionalFolderContents = GetTraditionalFolderContents)
+  def apply(GetTraditionalFolderContents: scala.Double => ITraditionalFolderContents): IVaultTraditionalFolderOperations = {
+    val __obj = js.Dynamic.literal(GetTraditionalFolderContents = js.Any.fromFunction1(GetTraditionalFolderContents))
   
     __obj.asInstanceOf[IVaultTraditionalFolderOperations]
   }

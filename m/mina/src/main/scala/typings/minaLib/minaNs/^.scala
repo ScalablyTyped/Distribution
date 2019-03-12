@@ -15,7 +15,7 @@ object ^ extends js.Object {
   def easeinout(n: scala.Double): scala.Double = js.native
   def easeout(n: scala.Double): scala.Double = js.native
   def elastic(n: scala.Double): scala.Double = js.native
-  def getById(id: java.lang.String): minaLib.minaNs.AnimationDescriptor = js.native
+  def getById(id: java.lang.String): AnimationDescriptor = js.native
   def linear(n: scala.Double): scala.Double = js.native
   def time(): scala.Double = js.native
 }

@@ -19,24 +19,12 @@ trait AccountsResource extends js.Object {
 object AccountsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Account]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AccountsList]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AltConfirmUnsafeAccountChange, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Account]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AltConfirmUnsafeAccountChange, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Account]
-    ]
+    get: gapiDotClientDotAdexchangebuyerLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Account],
+    list: gapiDotClientDotAdexchangebuyerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[AccountsList],
+    patch: gapiDotClientDotAdexchangebuyerLib.Anon_AltConfirmUnsafeAccountChange => gapiDotClientLib.gapiNs.clientNs.Request[Account],
+    update: gapiDotClientDotAdexchangebuyerLib.Anon_AltConfirmUnsafeAccountChange => gapiDotClientLib.gapiNs.clientNs.Request[Account]
   ): AccountsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[AccountsResource]
   }

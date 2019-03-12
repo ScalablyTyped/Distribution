@@ -9,15 +9,15 @@ trait DeleteNotificationRequest extends js.Object {
   /**
     * The accountId that is associated with the budget whose notification you want to delete.
     */
-  var AccountId: AccountId
+  var AccountId: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.AccountId
   /**
     * The name of the budget whose notification you want to delete.
     */
-  var BudgetName: BudgetName
+  var BudgetName: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.BudgetName
   /**
     * The notification that you want to delete.
     */
-  var Notification: Notification
+  var Notification: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.Notification
 }
 
 object DeleteNotificationRequest {

@@ -19,7 +19,7 @@ trait IMetadataStructureSelector extends js.Object {
 object IMetadataStructureSelector {
   @scala.inline
   def apply(
-    Clone: js.Function0[IMetadataStructureSelector],
+    Clone: () => IMetadataStructureSelector,
     Flags: mfilesLib.MFilesNs.MFMetadataStructureSelectorFlags,
     ID: java.lang.String,
     Name: java.lang.String,
@@ -28,7 +28,7 @@ object IMetadataStructureSelector {
     StructureItemSemanticAlias: java.lang.String,
     StructureItemType: mfilesLib.MFilesNs.MFMetadataStructureItem
   ): IMetadataStructureSelector = {
-    val __obj = js.Dynamic.literal(Clone = Clone, Flags = Flags, ID = ID, Name = Name, StructureItemGUID = StructureItemGUID, StructureItemID = StructureItemID, StructureItemSemanticAlias = StructureItemSemanticAlias, StructureItemType = StructureItemType)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Flags = Flags, ID = ID, Name = Name, StructureItemGUID = StructureItemGUID, StructureItemID = StructureItemID, StructureItemSemanticAlias = StructureItemSemanticAlias, StructureItemType = StructureItemType)
   
     __obj.asInstanceOf[IMetadataStructureSelector]
   }

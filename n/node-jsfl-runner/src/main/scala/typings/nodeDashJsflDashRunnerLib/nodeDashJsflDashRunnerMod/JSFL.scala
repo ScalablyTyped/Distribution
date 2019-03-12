@@ -13,10 +13,10 @@ trait JSFL
 object JSFL {
   @scala.inline
   def apply(
-    init: js.Function1[/* repeated */ js.Any, scala.Unit],
+    init: /* repeated */ js.Any => scala.Unit,
     StringDictionary: /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): JSFL = {
-    val __obj = js.Dynamic.literal(init = init)
+    val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[JSFL]
   }

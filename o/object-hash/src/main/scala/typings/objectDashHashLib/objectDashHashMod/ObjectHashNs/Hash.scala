@@ -11,8 +11,8 @@ trait Hash extends js.Object {
   var HashTable_Original: HashTableStatic = js.native
   def apply(`object`: js.Any): java.lang.String = js.native
   def apply(`object`: js.Any, options: IOptions): java.lang.String = js.native
-  def HashTable(): HashTable = js.native
-  def HashTable(options: IOptions): HashTable = js.native
+  def HashTable(): objectDashHashLib.objectDashHashMod.ObjectHashNs.HashTable = js.native
+  def HashTable(options: IOptions): objectDashHashLib.objectDashHashMod.ObjectHashNs.HashTable = js.native
   def MD5(`object`: js.Any): java.lang.String = js.native
   def keys(`object`: js.Any): java.lang.String = js.native
   def keysMD5(`object`: js.Any): java.lang.String = js.native

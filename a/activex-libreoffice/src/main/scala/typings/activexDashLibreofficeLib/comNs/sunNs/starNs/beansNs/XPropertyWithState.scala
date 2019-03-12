@@ -48,14 +48,14 @@ object XPropertyWithState {
   def apply(
     DefaultAsProperty: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     StateAsProperty: PropertyState,
-    acquire: js.Function0[scala.Unit],
-    getDefaultAsProperty: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    getStateAsProperty: js.Function0[PropertyState],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setToDefaultAsProperty: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDefaultAsProperty: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getStateAsProperty: () => PropertyState,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setToDefaultAsProperty: () => scala.Unit
   ): XPropertyWithState = {
-    val __obj = js.Dynamic.literal(DefaultAsProperty = DefaultAsProperty, StateAsProperty = StateAsProperty, acquire = acquire, getDefaultAsProperty = getDefaultAsProperty, getStateAsProperty = getStateAsProperty, queryInterface = queryInterface, release = release, setToDefaultAsProperty = setToDefaultAsProperty)
+    val __obj = js.Dynamic.literal(DefaultAsProperty = DefaultAsProperty, StateAsProperty = StateAsProperty, acquire = js.Any.fromFunction0(acquire), getDefaultAsProperty = js.Any.fromFunction0(getDefaultAsProperty), getStateAsProperty = js.Any.fromFunction0(getStateAsProperty), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setToDefaultAsProperty = js.Any.fromFunction0(setToDefaultAsProperty))
   
     __obj.asInstanceOf[XPropertyWithState]
   }

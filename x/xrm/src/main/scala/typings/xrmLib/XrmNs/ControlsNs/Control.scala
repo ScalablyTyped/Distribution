@@ -56,14 +56,14 @@ trait Control
 object Control {
   @scala.inline
   def apply(
-    getControlType: js.Function0[ControlType | java.lang.String],
-    getLabel: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getParent: js.Function0[Section],
-    getVisible: js.Function0[scala.Boolean],
-    setLabel: js.Function1[java.lang.String, scala.Unit]
+    getControlType: () => ControlType | java.lang.String,
+    getLabel: () => java.lang.String,
+    getName: () => java.lang.String,
+    getParent: () => Section,
+    getVisible: () => scala.Boolean,
+    setLabel: java.lang.String => scala.Unit
   ): Control = {
-    val __obj = js.Dynamic.literal(getControlType = getControlType, getLabel = getLabel, getName = getName, getParent = getParent, getVisible = getVisible, setLabel = setLabel)
+    val __obj = js.Dynamic.literal(getControlType = js.Any.fromFunction0(getControlType), getLabel = js.Any.fromFunction0(getLabel), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getVisible = js.Any.fromFunction0(getVisible), setLabel = js.Any.fromFunction1(setLabel))
   
     __obj.asInstanceOf[Control]
   }

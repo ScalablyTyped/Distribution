@@ -50,15 +50,15 @@ object QueryTableDataSource {
   def apply(
     constructor: js.Function,
     geometryType: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     oidFields: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     query: java.lang.String,
     spatialReference: SpatialReference,
     `type`: java.lang.String,
     workspaceId: java.lang.String
   ): QueryTableDataSource = {
-    val __obj = js.Dynamic.literal(constructor = constructor, geometryType = geometryType, hasOwnProperty = hasOwnProperty, oidFields = oidFields, propertyIsEnumerable = propertyIsEnumerable, query = query, spatialReference = spatialReference, workspaceId = workspaceId)
+    val __obj = js.Dynamic.literal(constructor = constructor, geometryType = geometryType, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), oidFields = oidFields, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), query = query, spatialReference = spatialReference, workspaceId = workspaceId)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[QueryTableDataSource]
   }

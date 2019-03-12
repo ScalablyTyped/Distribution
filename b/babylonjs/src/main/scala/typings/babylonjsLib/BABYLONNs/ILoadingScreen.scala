@@ -31,12 +31,12 @@ trait ILoadingScreen extends js.Object {
 object ILoadingScreen {
   @scala.inline
   def apply(
-    displayLoadingUI: js.Function0[scala.Unit],
-    hideLoadingUI: js.Function0[scala.Unit],
+    displayLoadingUI: () => scala.Unit,
+    hideLoadingUI: () => scala.Unit,
     loadingUIBackgroundColor: java.lang.String,
     loadingUIText: java.lang.String
   ): ILoadingScreen = {
-    val __obj = js.Dynamic.literal(displayLoadingUI = displayLoadingUI, hideLoadingUI = hideLoadingUI, loadingUIBackgroundColor = loadingUIBackgroundColor, loadingUIText = loadingUIText)
+    val __obj = js.Dynamic.literal(displayLoadingUI = js.Any.fromFunction0(displayLoadingUI), hideLoadingUI = js.Any.fromFunction0(hideLoadingUI), loadingUIBackgroundColor = loadingUIBackgroundColor, loadingUIText = loadingUIText)
   
     __obj.asInstanceOf[ILoadingScreen]
   }

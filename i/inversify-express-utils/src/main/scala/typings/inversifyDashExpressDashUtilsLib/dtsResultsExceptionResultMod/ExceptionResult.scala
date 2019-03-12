@@ -16,11 +16,9 @@ object ExceptionResult {
   def apply(
     apiController: js.Any,
     error: js.Any,
-    executeAsync: js.Function0[
-      js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
-    ]
+    executeAsync: () => js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
   ): ExceptionResult = {
-    val __obj = js.Dynamic.literal(apiController = apiController, error = error, executeAsync = executeAsync)
+    val __obj = js.Dynamic.literal(apiController = apiController, error = error, executeAsync = js.Any.fromFunction0(executeAsync))
   
     __obj.asInstanceOf[ExceptionResult]
   }

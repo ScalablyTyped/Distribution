@@ -17,10 +17,10 @@ object Anon_MechanismPassword {
   def apply(
     mechanism: java.lang.String,
     password: java.lang.String,
-    response: js.Function0[nodeLib.Buffer],
+    response: () => nodeLib.Buffer,
     username: java.lang.String
   ): Anon_MechanismPassword = {
-    val __obj = js.Dynamic.literal(mechanism = mechanism, password = password, response = response, username = username)
+    val __obj = js.Dynamic.literal(mechanism = mechanism, password = password, response = js.Any.fromFunction0(response), username = username)
   
     __obj.asInstanceOf[Anon_MechanismPassword]
   }

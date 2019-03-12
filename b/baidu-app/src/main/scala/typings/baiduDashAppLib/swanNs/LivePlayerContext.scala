@@ -25,15 +25,15 @@ trait LivePlayerContext extends js.Object {
 object LivePlayerContext {
   @scala.inline
   def apply(
-    exitFullScreen: js.Function1[BaseOptions[_, _], scala.Unit],
-    mute: js.Function1[BaseOptions[_, _], scala.Unit],
-    pause: js.Function1[BaseOptions[_, _], scala.Unit],
-    play: js.Function1[BaseOptions[_, _], scala.Unit],
-    requestFullScreen: js.Function1[RequestFullScreenOptions, scala.Unit],
-    resume: js.Function1[BaseOptions[_, _], scala.Unit],
-    stop: js.Function1[BaseOptions[_, _], scala.Unit]
+    exitFullScreen: BaseOptions[_, _] => scala.Unit,
+    mute: BaseOptions[_, _] => scala.Unit,
+    pause: BaseOptions[_, _] => scala.Unit,
+    play: BaseOptions[_, _] => scala.Unit,
+    requestFullScreen: RequestFullScreenOptions => scala.Unit,
+    resume: BaseOptions[_, _] => scala.Unit,
+    stop: BaseOptions[_, _] => scala.Unit
   ): LivePlayerContext = {
-    val __obj = js.Dynamic.literal(exitFullScreen = exitFullScreen, mute = mute, pause = pause, play = play, requestFullScreen = requestFullScreen, resume = resume, stop = stop)
+    val __obj = js.Dynamic.literal(exitFullScreen = js.Any.fromFunction1(exitFullScreen), mute = js.Any.fromFunction1(mute), pause = js.Any.fromFunction1(pause), play = js.Any.fromFunction1(play), requestFullScreen = js.Any.fromFunction1(requestFullScreen), resume = js.Any.fromFunction1(resume), stop = js.Any.fromFunction1(stop))
   
     __obj.asInstanceOf[LivePlayerContext]
   }

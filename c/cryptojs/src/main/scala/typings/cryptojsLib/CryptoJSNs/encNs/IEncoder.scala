@@ -11,8 +11,8 @@ trait IEncoder extends js.Object {
 
 object IEncoder {
   @scala.inline
-  def apply(stringify: js.Function1[cryptojsLib.CryptoJSNs.libNs.WordArray, java.lang.String]): IEncoder = {
-    val __obj = js.Dynamic.literal(stringify = stringify)
+  def apply(stringify: cryptojsLib.CryptoJSNs.libNs.WordArray => java.lang.String): IEncoder = {
+    val __obj = js.Dynamic.literal(stringify = js.Any.fromFunction1(stringify))
   
     __obj.asInstanceOf[IEncoder]
   }

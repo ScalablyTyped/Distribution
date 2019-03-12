@@ -1063,7 +1063,32 @@ object IgCategoryChart {
     yAxisLabelTextColor: java.lang.String = null,
     yAxisLabelTextStyle: java.lang.String = null,
     yAxisLabelTopMargin: scala.Int | scala.Double = null,
-    yAxisLabelVerticalAlignment: java.lang.String = null
+    yAxisLabelVerticalAlignment: java.lang.String = null,
+    yAxisLabelVisibility: java.lang.String = null,
+    yAxisLogarithmBase: scala.Int | scala.Double = null,
+    yAxisMajorStroke: java.lang.String = null,
+    yAxisMajorStrokeThickness: scala.Int | scala.Double = null,
+    yAxisMaximumValue: scala.Int | scala.Double = null,
+    yAxisMinimumValue: scala.Int | scala.Double = null,
+    yAxisMinorInterval: scala.Int | scala.Double = null,
+    yAxisMinorStroke: java.lang.String = null,
+    yAxisMinorStrokeThickness: scala.Int | scala.Double = null,
+    yAxisStrip: java.lang.String = null,
+    yAxisStroke: java.lang.String = null,
+    yAxisStrokeThickness: scala.Int | scala.Double = null,
+    yAxisTickLength: scala.Int | scala.Double = null,
+    yAxisTickStroke: java.lang.String = null,
+    yAxisTickStrokeThickness: scala.Int | scala.Double = null,
+    yAxisTitle: java.lang.String = null,
+    yAxisTitleAlignment: java.lang.String = null,
+    yAxisTitleAngle: scala.Int | scala.Double = null,
+    yAxisTitleBottomMargin: scala.Int | scala.Double = null,
+    yAxisTitleLeftMargin: scala.Int | scala.Double = null,
+    yAxisTitleMargin: scala.Int | scala.Double = null,
+    yAxisTitleRightMargin: scala.Int | scala.Double = null,
+    yAxisTitleTextColor: java.lang.String = null,
+    yAxisTitleTextStyle: java.lang.String = null,
+    yAxisTitleTopMargin: scala.Int | scala.Double = null
   ): IgCategoryChart = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -1216,6 +1241,31 @@ object IgCategoryChart {
     if (yAxisLabelTextStyle != null) __obj.updateDynamic("yAxisLabelTextStyle")(yAxisLabelTextStyle)
     if (yAxisLabelTopMargin != null) __obj.updateDynamic("yAxisLabelTopMargin")(yAxisLabelTopMargin.asInstanceOf[js.Any])
     if (yAxisLabelVerticalAlignment != null) __obj.updateDynamic("yAxisLabelVerticalAlignment")(yAxisLabelVerticalAlignment)
+    if (yAxisLabelVisibility != null) __obj.updateDynamic("yAxisLabelVisibility")(yAxisLabelVisibility)
+    if (yAxisLogarithmBase != null) __obj.updateDynamic("yAxisLogarithmBase")(yAxisLogarithmBase.asInstanceOf[js.Any])
+    if (yAxisMajorStroke != null) __obj.updateDynamic("yAxisMajorStroke")(yAxisMajorStroke)
+    if (yAxisMajorStrokeThickness != null) __obj.updateDynamic("yAxisMajorStrokeThickness")(yAxisMajorStrokeThickness.asInstanceOf[js.Any])
+    if (yAxisMaximumValue != null) __obj.updateDynamic("yAxisMaximumValue")(yAxisMaximumValue.asInstanceOf[js.Any])
+    if (yAxisMinimumValue != null) __obj.updateDynamic("yAxisMinimumValue")(yAxisMinimumValue.asInstanceOf[js.Any])
+    if (yAxisMinorInterval != null) __obj.updateDynamic("yAxisMinorInterval")(yAxisMinorInterval.asInstanceOf[js.Any])
+    if (yAxisMinorStroke != null) __obj.updateDynamic("yAxisMinorStroke")(yAxisMinorStroke)
+    if (yAxisMinorStrokeThickness != null) __obj.updateDynamic("yAxisMinorStrokeThickness")(yAxisMinorStrokeThickness.asInstanceOf[js.Any])
+    if (yAxisStrip != null) __obj.updateDynamic("yAxisStrip")(yAxisStrip)
+    if (yAxisStroke != null) __obj.updateDynamic("yAxisStroke")(yAxisStroke)
+    if (yAxisStrokeThickness != null) __obj.updateDynamic("yAxisStrokeThickness")(yAxisStrokeThickness.asInstanceOf[js.Any])
+    if (yAxisTickLength != null) __obj.updateDynamic("yAxisTickLength")(yAxisTickLength.asInstanceOf[js.Any])
+    if (yAxisTickStroke != null) __obj.updateDynamic("yAxisTickStroke")(yAxisTickStroke)
+    if (yAxisTickStrokeThickness != null) __obj.updateDynamic("yAxisTickStrokeThickness")(yAxisTickStrokeThickness.asInstanceOf[js.Any])
+    if (yAxisTitle != null) __obj.updateDynamic("yAxisTitle")(yAxisTitle)
+    if (yAxisTitleAlignment != null) __obj.updateDynamic("yAxisTitleAlignment")(yAxisTitleAlignment)
+    if (yAxisTitleAngle != null) __obj.updateDynamic("yAxisTitleAngle")(yAxisTitleAngle.asInstanceOf[js.Any])
+    if (yAxisTitleBottomMargin != null) __obj.updateDynamic("yAxisTitleBottomMargin")(yAxisTitleBottomMargin.asInstanceOf[js.Any])
+    if (yAxisTitleLeftMargin != null) __obj.updateDynamic("yAxisTitleLeftMargin")(yAxisTitleLeftMargin.asInstanceOf[js.Any])
+    if (yAxisTitleMargin != null) __obj.updateDynamic("yAxisTitleMargin")(yAxisTitleMargin.asInstanceOf[js.Any])
+    if (yAxisTitleRightMargin != null) __obj.updateDynamic("yAxisTitleRightMargin")(yAxisTitleRightMargin.asInstanceOf[js.Any])
+    if (yAxisTitleTextColor != null) __obj.updateDynamic("yAxisTitleTextColor")(yAxisTitleTextColor)
+    if (yAxisTitleTextStyle != null) __obj.updateDynamic("yAxisTitleTextStyle")(yAxisTitleTextStyle)
+    if (yAxisTitleTopMargin != null) __obj.updateDynamic("yAxisTitleTopMargin")(yAxisTitleTopMargin.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgCategoryChart]
   }
 }

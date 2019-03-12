@@ -14,14 +14,14 @@ trait ContextMenuActivateEvent extends ContextMenuEvent {
 object ContextMenuActivateEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: ContextMenu,
     item: stdLib.Element = null,
     target: stdLib.Element = null,
     `type`: java.lang.String = null
   ): ContextMenuActivateEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (item != null) __obj.updateDynamic("item")(item)
     if (target != null) __obj.updateDynamic("target")(target)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

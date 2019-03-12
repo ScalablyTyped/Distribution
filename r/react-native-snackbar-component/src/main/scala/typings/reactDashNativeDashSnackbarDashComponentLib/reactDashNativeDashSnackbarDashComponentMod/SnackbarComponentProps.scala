@@ -25,12 +25,12 @@ object SnackbarComponentProps {
   @scala.inline
   def apply(
     accentColor: java.lang.String = null,
-    actionHandler: js.Function0[scala.Unit] = null,
+    actionHandler: () => scala.Unit = null,
     actionText: java.lang.String = null,
     autoHidingTime: scala.Int | scala.Double = null,
     backgroundColor: java.lang.String = null,
     bottom: scala.Int | scala.Double = null,
-    distanceCallback: js.Function0[scala.Unit] = null,
+    distanceCallback: () => scala.Unit = null,
     left: scala.Int | scala.Double = null,
     messageColor: java.lang.String = null,
     position: java.lang.String = null,
@@ -40,12 +40,12 @@ object SnackbarComponentProps {
   ): SnackbarComponentProps = {
     val __obj = js.Dynamic.literal()
     if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor)
-    if (actionHandler != null) __obj.updateDynamic("actionHandler")(actionHandler)
+    if (actionHandler != null) __obj.updateDynamic("actionHandler")(js.Any.fromFunction0(actionHandler))
     if (actionText != null) __obj.updateDynamic("actionText")(actionText)
     if (autoHidingTime != null) __obj.updateDynamic("autoHidingTime")(autoHidingTime.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (distanceCallback != null) __obj.updateDynamic("distanceCallback")(distanceCallback)
+    if (distanceCallback != null) __obj.updateDynamic("distanceCallback")(js.Any.fromFunction0(distanceCallback))
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (messageColor != null) __obj.updateDynamic("messageColor")(messageColor)
     if (position != null) __obj.updateDynamic("position")(position)

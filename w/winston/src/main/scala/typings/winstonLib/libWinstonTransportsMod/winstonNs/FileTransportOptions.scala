@@ -22,15 +22,15 @@ trait FileTransportOptions
 object FileTransportOptions {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit] = null,
+    close: () => scala.Unit = null,
     dirname: java.lang.String = null,
     eol: java.lang.String = null,
     filename: java.lang.String = null,
     format: logformLib.logformMod.Format = null,
     handleExceptions: js.UndefOr[scala.Boolean] = js.undefined,
     level: java.lang.String = null,
-    log: js.Function2[/* info */ js.Any, /* next */ js.Function0[scala.Unit], _] = null,
-    logv: js.Function2[/* info */ js.Any, /* next */ js.Function0[scala.Unit], _] = null,
+    log: (/* info */ js.Any, /* next */ js.Function0[scala.Unit]) => _ = null,
+    logv: (/* info */ js.Any, /* next */ js.Function0[scala.Unit]) => _ = null,
     maxFiles: scala.Int | scala.Double = null,
     maxsize: scala.Int | scala.Double = null,
     options: js.Object = null,
@@ -41,15 +41,15 @@ object FileTransportOptions {
     zippedArchive: js.UndefOr[scala.Boolean] = js.undefined
   ): FileTransportOptions = {
     val __obj = js.Dynamic.literal()
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction0(close))
     if (dirname != null) __obj.updateDynamic("dirname")(dirname)
     if (eol != null) __obj.updateDynamic("eol")(eol)
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (format != null) __obj.updateDynamic("format")(format)
     if (!js.isUndefined(handleExceptions)) __obj.updateDynamic("handleExceptions")(handleExceptions)
     if (level != null) __obj.updateDynamic("level")(level)
-    if (log != null) __obj.updateDynamic("log")(log)
-    if (logv != null) __obj.updateDynamic("logv")(logv)
+    if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction2(log))
+    if (logv != null) __obj.updateDynamic("logv")(js.Any.fromFunction2(logv))
     if (maxFiles != null) __obj.updateDynamic("maxFiles")(maxFiles.asInstanceOf[js.Any])
     if (maxsize != null) __obj.updateDynamic("maxsize")(maxsize.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options)

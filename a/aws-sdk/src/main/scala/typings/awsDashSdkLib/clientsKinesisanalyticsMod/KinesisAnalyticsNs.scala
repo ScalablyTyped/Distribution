@@ -12,11 +12,11 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * The Kinesis Analytics application name.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationName
     /**
       * Provides the CloudWatch log stream Amazon Resource Name (ARN) and the IAM role ARN. Note: To write application messages to CloudWatch, the IAM role that is used must have the PutLogEvents policy action enabled.
       */
-    var CloudWatchLoggingOption: CloudWatchLoggingOption
+    var CloudWatchLoggingOption: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.CloudWatchLoggingOption
     /**
       * The version ID of the Kinesis Analytics application.
       */
@@ -29,7 +29,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Name of the application to which you want to add the input processing configuration.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationName
     /**
       * Version of the application to which you want to add the input processing configuration. You can use the DescribeApplication operation to get the current application version. If the version specified is not the current version, the ConcurrentModificationException is returned.
       */
@@ -41,7 +41,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * The InputProcessingConfiguration to add to the application.
       */
-    var InputProcessingConfiguration: InputProcessingConfiguration
+    var InputProcessingConfiguration: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.InputProcessingConfiguration
   }
   
   trait AddApplicationInputProcessingConfigurationResponse extends js.Object
@@ -50,7 +50,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Name of your existing Amazon Kinesis Analytics application to which you want to add the streaming source.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationName
     /**
       * Current version of your Amazon Kinesis Analytics application. You can use the DescribeApplication operation to find the current application version.
       */
@@ -58,7 +58,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * The Input to add.
       */
-    var Input: Input
+    var Input: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.Input
   }
   
   trait AddApplicationInputResponse extends js.Object
@@ -67,7 +67,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Name of the application to which you want to add the output configuration.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationName
     /**
       * Version of the application to which you want to add the output configuration. You can use the DescribeApplication operation to get the current application version. If the version specified is not the current version, the ConcurrentModificationException is returned. 
       */
@@ -75,7 +75,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * An array of objects, each describing one output configuration. In the output configuration, you specify the name of an in-application stream, a destination (that is, an Amazon Kinesis stream, an Amazon Kinesis Firehose delivery stream, or an AWS Lambda function), and record the formation to use when writing to the destination.
       */
-    var Output: Output
+    var Output: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.Output
   }
   
   trait AddApplicationOutputResponse extends js.Object
@@ -84,7 +84,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Name of an existing application.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationName
     /**
       * Version of the application for which you are adding the reference data source. You can use the DescribeApplication operation to get the current application version. If the version specified is not the current version, the ConcurrentModificationException is returned.
       */
@@ -92,7 +92,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * The reference data source can be an object in your Amazon S3 bucket. Amazon Kinesis Analytics reads the object and copies the data into the in-application table that is created. You provide an S3 bucket, object key name, and the resulting in-application table that is created. You must also provide an IAM role with the necessary permissions that Amazon Kinesis Analytics can assume to read the object from your S3 bucket on your behalf.
       */
-    var ReferenceDataSource: ReferenceDataSource
+    var ReferenceDataSource: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ReferenceDataSource
   }
   
   trait AddApplicationReferenceDataSourceResponse extends js.Object
@@ -113,15 +113,15 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Name of the application.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationName
     /**
       * Status of the application.
       */
-    var ApplicationStatus: ApplicationStatus
+    var ApplicationStatus: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationStatus
     /**
       * Provides the current application version.
       */
-    var ApplicationVersionId: ApplicationVersionId
+    var ApplicationVersionId: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationVersionId
     /**
       * Describes the CloudWatch log streams that are configured to receive application messages. For more information about using CloudWatch log streams with Amazon Kinesis Analytics applications, see Working with Amazon CloudWatch Logs. 
       */
@@ -156,11 +156,11 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Name of the application.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationName
     /**
       * Status of the application.
       */
-    var ApplicationStatus: ApplicationStatus
+    var ApplicationStatus: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationStatus
   }
   
   trait ApplicationUpdate extends js.Object {
@@ -190,11 +190,11 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Column delimiter. For example, in a CSV format, a comma (",") is the typical column delimiter.
       */
-    var RecordColumnDelimiter: RecordColumnDelimiter
+    var RecordColumnDelimiter: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.RecordColumnDelimiter
     /**
       * Row delimiter. For example, in a CSV format, '\n' is the typical row delimiter.
       */
-    var RecordRowDelimiter: RecordRowDelimiter
+    var RecordRowDelimiter: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.RecordRowDelimiter
   }
   
   trait ClientApiVersions extends js.Object {
@@ -208,11 +208,11 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * ARN of the CloudWatch log to receive application messages.
       */
-    var LogStreamARN: LogStreamARN
+    var LogStreamARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.LogStreamARN
     /**
       * IAM ARN of the role to use to send application messages. Note: To write application messages to CloudWatch, the IAM role that is used must have the PutLogEvents policy action enabled.
       */
-    var RoleARN: RoleARN
+    var RoleARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.RoleARN
   }
   
   trait CloudWatchLoggingOptionDescription extends js.Object {
@@ -223,11 +223,11 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * ARN of the CloudWatch log to receive application messages.
       */
-    var LogStreamARN: LogStreamARN
+    var LogStreamARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.LogStreamARN
     /**
       * IAM ARN of the role to use to send application messages. Note: To write application messages to CloudWatch, the IAM role used must have the PutLogEvents policy action enabled.
       */
-    var RoleARN: RoleARN
+    var RoleARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.RoleARN
   }
   
   trait CloudWatchLoggingOptionUpdate extends js.Object {
@@ -257,7 +257,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Name of your Amazon Kinesis Analytics application (for example, sample-app).
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationName
     /**
       * Use this parameter to configure a CloudWatch log stream to monitor application configuration errors. For more information, see Working with Amazon CloudWatch Logs.
       */
@@ -276,14 +276,14 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * In response to your CreateApplication request, Amazon Kinesis Analytics returns a response with a summary of the application it created, including the application Amazon Resource Name (ARN), name, and status.
       */
-    var ApplicationSummary: ApplicationSummary
+    var ApplicationSummary: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationSummary
   }
   
   trait DeleteApplicationCloudWatchLoggingOptionRequest extends js.Object {
     /**
       * The Kinesis Analytics application name.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationName
     /**
       * The CloudWatchLoggingOptionId of the CloudWatch logging option to delete. You can get the CloudWatchLoggingOptionId by using the DescribeApplication operation. 
       */
@@ -300,7 +300,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * The Kinesis Analytics application name.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationName
     /**
       * The version ID of the Kinesis Analytics application.
       */
@@ -317,7 +317,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Amazon Kinesis Analytics application name.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationName
     /**
       * Amazon Kinesis Analytics application version. You can use the DescribeApplication operation to get the current application version. If the version specified is not the current version, the ConcurrentModificationException is returned. 
       */
@@ -334,7 +334,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Name of an existing application.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationName
     /**
       * Version of the application. You can use the DescribeApplication operation to get the current application version. If the version specified is not the current version, the ConcurrentModificationException is returned.
       */
@@ -351,7 +351,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Name of the Amazon Kinesis Analytics application to delete.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationName
     /**
       *  You can use the DescribeApplication operation to get this value. 
       */
@@ -364,21 +364,21 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Name of the application.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationName
   }
   
   trait DescribeApplicationResponse extends js.Object {
     /**
       * Provides a description of the application, such as the application Amazon Resource Name (ARN), status, latest version, and input and output configuration details.
       */
-    var ApplicationDetail: ApplicationDetail
+    var ApplicationDetail: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationDetail
   }
   
   trait DestinationSchema extends js.Object {
     /**
       * Specifies the format of the records on the output stream.
       */
-    var RecordFormatType: RecordFormatType
+    var RecordFormatType: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.RecordFormatType
   }
   
   trait DiscoverInputSchemaRequest extends js.Object {
@@ -454,11 +454,11 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Input source ID. You can get this ID by calling the DescribeApplication operation.
       */
-    var Id: Id
+    var Id: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.Id
     /**
       * Point at which you want the application to start processing records from the streaming source.
       */
-    var InputStartingPositionConfiguration: InputStartingPositionConfiguration
+    var InputStartingPositionConfiguration: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.InputStartingPositionConfiguration
   }
   
   trait InputDescription extends js.Object {
@@ -504,11 +504,11 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * The ARN of the AWS Lambda function that operates on records in the stream.
       */
-    var ResourceARN: ResourceARN
+    var ResourceARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ResourceARN
     /**
       * The ARN of the IAM role that is used to access the AWS Lambda function.
       */
-    var RoleARN: RoleARN
+    var RoleARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.RoleARN
   }
   
   trait InputLambdaProcessorDescription extends js.Object {
@@ -551,7 +551,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * The InputLambdaProcessor that is used to preprocess the records in the stream before being processed by your application code.
       */
-    var InputLambdaProcessor: InputLambdaProcessor
+    var InputLambdaProcessor: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.InputLambdaProcessor
   }
   
   trait InputProcessingConfigurationDescription extends js.Object {
@@ -565,7 +565,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Provides update information for an InputLambdaProcessor.
       */
-    var InputLambdaProcessorUpdate: InputLambdaProcessorUpdate
+    var InputLambdaProcessorUpdate: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.InputLambdaProcessorUpdate
   }
   
   trait InputSchemaUpdate extends js.Object {
@@ -625,18 +625,18 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Path to the top-level parent that contains the records.
       */
-    var RecordRowPath: RecordRowPath
+    var RecordRowPath: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.RecordRowPath
   }
   
   trait KinesisFirehoseInput extends js.Object {
     /**
       * ARN of the input delivery stream.
       */
-    var ResourceARN: ResourceARN
+    var ResourceARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ResourceARN
     /**
       * ARN of the IAM role that Amazon Kinesis Analytics can assume to access the stream on your behalf. You need to make sure that the role has the necessary permissions to access the stream.
       */
-    var RoleARN: RoleARN
+    var RoleARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.RoleARN
   }
   
   trait KinesisFirehoseInputDescription extends js.Object {
@@ -665,11 +665,11 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * ARN of the destination Amazon Kinesis Firehose delivery stream to write to.
       */
-    var ResourceARN: ResourceARN
+    var ResourceARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ResourceARN
     /**
       * ARN of the IAM role that Amazon Kinesis Analytics can assume to write to the destination stream on your behalf. You need to grant the necessary permissions to this role.
       */
-    var RoleARN: RoleARN
+    var RoleARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.RoleARN
   }
   
   trait KinesisFirehoseOutputDescription extends js.Object {
@@ -698,11 +698,11 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * ARN of the input Amazon Kinesis stream to read.
       */
-    var ResourceARN: ResourceARN
+    var ResourceARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ResourceARN
     /**
       * ARN of the IAM role that Amazon Kinesis Analytics can assume to access the stream on your behalf. You need to grant the necessary permissions to this role.
       */
-    var RoleARN: RoleARN
+    var RoleARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.RoleARN
   }
   
   trait KinesisStreamsInputDescription extends js.Object {
@@ -731,11 +731,11 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * ARN of the destination Amazon Kinesis stream to write to.
       */
-    var ResourceARN: ResourceARN
+    var ResourceARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ResourceARN
     /**
       * ARN of the IAM role that Amazon Kinesis Analytics can assume to write to the destination stream on your behalf. You need to grant the necessary permissions to this role.
       */
-    var RoleARN: RoleARN
+    var RoleARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.RoleARN
   }
   
   trait KinesisStreamsOutputDescription extends js.Object {
@@ -764,11 +764,11 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Amazon Resource Name (ARN) of the destination Lambda function to write to.
       */
-    var ResourceARN: ResourceARN
+    var ResourceARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ResourceARN
     /**
       * ARN of the IAM role that Amazon Kinesis Analytics can assume to write to the destination function on your behalf. You need to grant the necessary permissions to this role. 
       */
-    var RoleARN: RoleARN
+    var RoleARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.RoleARN
   }
   
   trait LambdaOutputDescription extends js.Object {
@@ -808,7 +808,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * List of ApplicationSummary objects. 
       */
-    var ApplicationSummaries: ApplicationSummaries
+    var ApplicationSummaries: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationSummaries
     /**
       * Returns true if there are more applications to retrieve.
       */
@@ -830,7 +830,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Describes the data format when records are written to the destination. For more information, see Configuring Application Output.
       */
-    var DestinationSchema: DestinationSchema
+    var DestinationSchema: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.DestinationSchema
     /**
       * Identifies an Amazon Kinesis Firehose delivery stream as the destination.
       */
@@ -926,7 +926,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * The type of record format.
       */
-    var RecordFormatType: RecordFormatType
+    var RecordFormatType: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.RecordFormatType
   }
   
   trait ReferenceDataSource extends js.Object {
@@ -956,7 +956,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Provides the S3 bucket name, the object key name that contains the reference data. It also provides the Amazon Resource Name (ARN) of the IAM role that Amazon Kinesis Analytics can assume to read the Amazon S3 object and populate the in-application reference table.
       */
-    var S3ReferenceDataSourceDescription: S3ReferenceDataSourceDescription
+    var S3ReferenceDataSourceDescription: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.S3ReferenceDataSourceDescription
     /**
       * The in-application table name created by the specific reference data source configuration.
       */
@@ -986,26 +986,26 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * ARN of the S3 bucket that contains the data.
       */
-    var BucketARN: BucketARN
+    var BucketARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.BucketARN
     /**
       * The name of the object that contains the data.
       */
-    var FileKey: FileKey
+    var FileKey: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.FileKey
     /**
       * IAM ARN of the role used to access the data.
       */
-    var RoleARN: RoleARN
+    var RoleARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.RoleARN
   }
   
   trait S3ReferenceDataSource extends js.Object {
     /**
       * Amazon Resource Name (ARN) of the S3 bucket.
       */
-    var BucketARN: BucketARN
+    var BucketARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.BucketARN
     /**
       * Object key name containing reference data.
       */
-    var FileKey: FileKey
+    var FileKey: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.FileKey
     /**
       * ARN of the IAM role that the service can assume to read data on your behalf. This role must have permission for the s3:GetObject action on the object and trust policy that allows Amazon Kinesis Analytics service principal to assume this role.
       */
@@ -1016,11 +1016,11 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Amazon Resource Name (ARN) of the S3 bucket.
       */
-    var BucketARN: BucketARN
+    var BucketARN: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.BucketARN
     /**
       * Amazon S3 object key name.
       */
-    var FileKey: FileKey
+    var FileKey: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.FileKey
     /**
       * ARN of the IAM role that Amazon Kinesis Analytics can assume to read the Amazon S3 object on your behalf to populate the in-application reference table.
       */
@@ -1046,7 +1046,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * A list of RecordColumn objects.
       */
-    var RecordColumns: RecordColumns
+    var RecordColumns: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.RecordColumns
     /**
       * Specifies the encoding of the records in the streaming source. For example, UTF-8.
       */
@@ -1054,18 +1054,18 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Specifies the format of the records on the streaming source.
       */
-    var RecordFormat: RecordFormat
+    var RecordFormat: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.RecordFormat
   }
   
   trait StartApplicationRequest extends js.Object {
     /**
       * Name of the application.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationName
     /**
       * Identifies the specific input, by ID, that the application starts consuming. Amazon Kinesis Analytics starts reading the streaming source associated with the input. You can also specify where in the streaming source you want Amazon Kinesis Analytics to start reading.
       */
-    var InputConfigurations: InputConfigurations
+    var InputConfigurations: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.InputConfigurations
   }
   
   trait StartApplicationResponse extends js.Object
@@ -1074,7 +1074,7 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Name of the running application to stop.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationName
   }
   
   trait StopApplicationResponse extends js.Object
@@ -1517,11 +1517,11 @@ object KinesisAnalyticsNs extends js.Object {
     /**
       * Name of the Amazon Kinesis Analytics application to update.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationName
     /**
       * Describes application updates.
       */
-    var ApplicationUpdate: ApplicationUpdate
+    var ApplicationUpdate: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ApplicationUpdate
     /**
       * The current application version ID. You can use the DescribeApplication operation to get this value.
       */

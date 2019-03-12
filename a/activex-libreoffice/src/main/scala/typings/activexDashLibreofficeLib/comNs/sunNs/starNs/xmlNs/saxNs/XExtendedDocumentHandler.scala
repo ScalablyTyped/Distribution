@@ -34,24 +34,24 @@ trait XExtendedDocumentHandler extends XDocumentHandler {
 object XExtendedDocumentHandler {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    allowLineBreak: js.Function0[scala.Unit],
-    characters: js.Function1[java.lang.String, scala.Unit],
-    comment: js.Function1[java.lang.String, scala.Unit],
-    endCDATA: js.Function0[scala.Unit],
-    endDocument: js.Function0[scala.Unit],
-    endElement: js.Function1[java.lang.String, scala.Unit],
-    ignorableWhitespace: js.Function1[java.lang.String, scala.Unit],
-    processingInstruction: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setDocumentLocator: js.Function1[XLocator, scala.Unit],
-    startCDATA: js.Function0[scala.Unit],
-    startDocument: js.Function0[scala.Unit],
-    startElement: js.Function2[java.lang.String, XAttributeList, scala.Unit],
-    unknown: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    allowLineBreak: () => scala.Unit,
+    characters: java.lang.String => scala.Unit,
+    comment: java.lang.String => scala.Unit,
+    endCDATA: () => scala.Unit,
+    endDocument: () => scala.Unit,
+    endElement: java.lang.String => scala.Unit,
+    ignorableWhitespace: java.lang.String => scala.Unit,
+    processingInstruction: (java.lang.String, java.lang.String) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setDocumentLocator: XLocator => scala.Unit,
+    startCDATA: () => scala.Unit,
+    startDocument: () => scala.Unit,
+    startElement: (java.lang.String, XAttributeList) => scala.Unit,
+    unknown: java.lang.String => scala.Unit
   ): XExtendedDocumentHandler = {
-    val __obj = js.Dynamic.literal(acquire = acquire, allowLineBreak = allowLineBreak, characters = characters, comment = comment, endCDATA = endCDATA, endDocument = endDocument, endElement = endElement, ignorableWhitespace = ignorableWhitespace, processingInstruction = processingInstruction, queryInterface = queryInterface, release = release, setDocumentLocator = setDocumentLocator, startCDATA = startCDATA, startDocument = startDocument, startElement = startElement, unknown = unknown)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), allowLineBreak = js.Any.fromFunction0(allowLineBreak), characters = js.Any.fromFunction1(characters), comment = js.Any.fromFunction1(comment), endCDATA = js.Any.fromFunction0(endCDATA), endDocument = js.Any.fromFunction0(endDocument), endElement = js.Any.fromFunction1(endElement), ignorableWhitespace = js.Any.fromFunction1(ignorableWhitespace), processingInstruction = js.Any.fromFunction2(processingInstruction), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDocumentLocator = js.Any.fromFunction1(setDocumentLocator), startCDATA = js.Any.fromFunction0(startCDATA), startDocument = js.Any.fromFunction0(startDocument), startElement = js.Any.fromFunction2(startElement), unknown = js.Any.fromFunction1(unknown))
   
     __obj.asInstanceOf[XExtendedDocumentHandler]
   }

@@ -16,7 +16,7 @@ trait XDocumentSubStorageSupplier
     * provides the list of substorages
     * @returns sequence of substorages names
     */
-  val DocumentSubStoragesNames: activexDashInteropLib.SafeArray[java.lang.String]
+  val DocumentSubStoragesNames: stdLib.SafeArray[java.lang.String]
   /**
     * provides the access to a substorage with specified name
     * @param StorageName the name of requested substorage
@@ -28,24 +28,20 @@ trait XDocumentSubStorageSupplier
     * provides the list of substorages
     * @returns sequence of substorages names
     */
-  def getDocumentSubStoragesNames(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getDocumentSubStoragesNames(): stdLib.SafeArray[java.lang.String]
 }
 
 object XDocumentSubStorageSupplier {
   @scala.inline
   def apply(
-    DocumentSubStoragesNames: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    getDocumentSubStorage: js.Function2[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage
-    ],
-    getDocumentSubStoragesNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    DocumentSubStoragesNames: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    getDocumentSubStorage: (java.lang.String, scala.Double) => activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage,
+    getDocumentSubStoragesNames: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDocumentSubStorageSupplier = {
-    val __obj = js.Dynamic.literal(DocumentSubStoragesNames = DocumentSubStoragesNames, acquire = acquire, getDocumentSubStorage = getDocumentSubStorage, getDocumentSubStoragesNames = getDocumentSubStoragesNames, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(DocumentSubStoragesNames = DocumentSubStoragesNames, acquire = js.Any.fromFunction0(acquire), getDocumentSubStorage = js.Any.fromFunction2(getDocumentSubStorage), getDocumentSubStoragesNames = js.Any.fromFunction0(getDocumentSubStoragesNames), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDocumentSubStorageSupplier]
   }

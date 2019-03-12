@@ -38,36 +38,32 @@ trait CaptionPanel extends js.Object {
 object CaptionPanel {
   @scala.inline
   def apply(
-    add: js.Function1[Widget, CaptionPanel],
-    addStyleDependentName: js.Function1[java.lang.String, CaptionPanel],
-    addStyleName: js.Function1[java.lang.String, CaptionPanel],
-    clear: js.Function0[CaptionPanel],
-    getId: js.Function0[java.lang.String],
-    getTag: js.Function0[java.lang.String],
-    getType: js.Function0[java.lang.String],
-    setCaptionText: js.Function1[java.lang.String, CaptionPanel],
-    setContentWidget: js.Function1[Widget, CaptionPanel],
-    setHeight: js.Function1[java.lang.String, CaptionPanel],
-    setId: js.Function1[java.lang.String, CaptionPanel],
-    setLayoutData: js.Function1[js.Object, CaptionPanel],
-    setPixelSize: js.Function2[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      CaptionPanel
-    ],
-    setSize: js.Function2[java.lang.String, java.lang.String, CaptionPanel],
-    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, CaptionPanel],
-    setStyleAttributes: js.Function1[js.Object, CaptionPanel],
-    setStyleName: js.Function1[java.lang.String, CaptionPanel],
-    setStylePrimaryName: js.Function1[java.lang.String, CaptionPanel],
-    setTag: js.Function1[java.lang.String, CaptionPanel],
-    setText: js.Function1[java.lang.String, CaptionPanel],
-    setTitle: js.Function1[java.lang.String, CaptionPanel],
-    setVisible: js.Function1[scala.Boolean, CaptionPanel],
-    setWidget: js.Function1[Widget, CaptionPanel],
-    setWidth: js.Function1[java.lang.String, CaptionPanel]
+    add: Widget => CaptionPanel,
+    addStyleDependentName: java.lang.String => CaptionPanel,
+    addStyleName: java.lang.String => CaptionPanel,
+    clear: () => CaptionPanel,
+    getId: () => java.lang.String,
+    getTag: () => java.lang.String,
+    getType: () => java.lang.String,
+    setCaptionText: java.lang.String => CaptionPanel,
+    setContentWidget: Widget => CaptionPanel,
+    setHeight: java.lang.String => CaptionPanel,
+    setId: java.lang.String => CaptionPanel,
+    setLayoutData: js.Object => CaptionPanel,
+    setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => CaptionPanel,
+    setSize: (java.lang.String, java.lang.String) => CaptionPanel,
+    setStyleAttribute: (java.lang.String, java.lang.String) => CaptionPanel,
+    setStyleAttributes: js.Object => CaptionPanel,
+    setStyleName: java.lang.String => CaptionPanel,
+    setStylePrimaryName: java.lang.String => CaptionPanel,
+    setTag: java.lang.String => CaptionPanel,
+    setText: java.lang.String => CaptionPanel,
+    setTitle: java.lang.String => CaptionPanel,
+    setVisible: scala.Boolean => CaptionPanel,
+    setWidget: Widget => CaptionPanel,
+    setWidth: java.lang.String => CaptionPanel
   ): CaptionPanel = {
-    val __obj = js.Dynamic.literal(add = add, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, clear = clear, getId = getId, getTag = getTag, getType = getType, setCaptionText = setCaptionText, setContentWidget = setContentWidget, setHeight = setHeight, setId = setId, setLayoutData = setLayoutData, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setText = setText, setTitle = setTitle, setVisible = setVisible, setWidget = setWidget, setWidth = setWidth)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), addStyleDependentName = js.Any.fromFunction1(addStyleDependentName), addStyleName = js.Any.fromFunction1(addStyleName), clear = js.Any.fromFunction0(clear), getId = js.Any.fromFunction0(getId), getTag = js.Any.fromFunction0(getTag), getType = js.Any.fromFunction0(getType), setCaptionText = js.Any.fromFunction1(setCaptionText), setContentWidget = js.Any.fromFunction1(setContentWidget), setHeight = js.Any.fromFunction1(setHeight), setId = js.Any.fromFunction1(setId), setLayoutData = js.Any.fromFunction1(setLayoutData), setPixelSize = js.Any.fromFunction2(setPixelSize), setSize = js.Any.fromFunction2(setSize), setStyleAttribute = js.Any.fromFunction2(setStyleAttribute), setStyleAttributes = js.Any.fromFunction1(setStyleAttributes), setStyleName = js.Any.fromFunction1(setStyleName), setStylePrimaryName = js.Any.fromFunction1(setStylePrimaryName), setTag = js.Any.fromFunction1(setTag), setText = js.Any.fromFunction1(setText), setTitle = js.Any.fromFunction1(setTitle), setVisible = js.Any.fromFunction1(setVisible), setWidget = js.Any.fromFunction1(setWidget), setWidth = js.Any.fromFunction1(setWidth))
   
     __obj.asInstanceOf[CaptionPanel]
   }

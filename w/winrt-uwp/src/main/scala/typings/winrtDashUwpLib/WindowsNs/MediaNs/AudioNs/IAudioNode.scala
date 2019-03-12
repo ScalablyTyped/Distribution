@@ -37,18 +37,18 @@ trait IAudioNode
 object IAudioNode {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
+    close: () => scala.Unit,
     consumeInput: scala.Boolean,
-    disableEffectsByDefinition: js.Function1[winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition, scala.Unit],
+    disableEffectsByDefinition: winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition => scala.Unit,
     effectDefinitions: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition],
-    enableEffectsByDefinition: js.Function1[winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition, scala.Unit],
+    enableEffectsByDefinition: winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition => scala.Unit,
     encodingProperties: winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.AudioEncodingProperties,
     outgoingGain: scala.Double,
-    reset: js.Function0[scala.Unit],
-    start: js.Function0[scala.Unit],
-    stop: js.Function0[scala.Unit]
+    reset: () => scala.Unit,
+    start: () => scala.Unit,
+    stop: () => scala.Unit
   ): IAudioNode = {
-    val __obj = js.Dynamic.literal(close = close, consumeInput = consumeInput, disableEffectsByDefinition = disableEffectsByDefinition, effectDefinitions = effectDefinitions, enableEffectsByDefinition = enableEffectsByDefinition, encodingProperties = encodingProperties, outgoingGain = outgoingGain, reset = reset, start = start, stop = stop)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), consumeInput = consumeInput, disableEffectsByDefinition = js.Any.fromFunction1(disableEffectsByDefinition), effectDefinitions = effectDefinitions, enableEffectsByDefinition = js.Any.fromFunction1(enableEffectsByDefinition), encodingProperties = encodingProperties, outgoingGain = outgoingGain, reset = js.Any.fromFunction0(reset), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[IAudioNode]
   }

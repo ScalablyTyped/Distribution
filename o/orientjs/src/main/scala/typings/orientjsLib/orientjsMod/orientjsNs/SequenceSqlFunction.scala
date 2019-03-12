@@ -13,12 +13,8 @@ trait SequenceSqlFunction extends js.Object {
 
 object SequenceSqlFunction {
   @scala.inline
-  def apply(
-    current: js.Function0[scala.Double],
-    next: js.Function0[scala.Double],
-    reset: js.Function0[scala.Double]
-  ): SequenceSqlFunction = {
-    val __obj = js.Dynamic.literal(current = current, next = next, reset = reset)
+  def apply(current: () => scala.Double, next: () => scala.Double, reset: () => scala.Double): SequenceSqlFunction = {
+    val __obj = js.Dynamic.literal(current = js.Any.fromFunction0(current), next = js.Any.fromFunction0(next), reset = js.Any.fromFunction0(reset))
   
     __obj.asInstanceOf[SequenceSqlFunction]
   }

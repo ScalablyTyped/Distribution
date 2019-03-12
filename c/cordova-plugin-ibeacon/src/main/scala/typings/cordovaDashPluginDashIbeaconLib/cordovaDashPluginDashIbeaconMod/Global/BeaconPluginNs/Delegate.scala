@@ -20,17 +20,17 @@ trait Delegate extends js.Object {
 object Delegate {
   @scala.inline
   def apply(
-    didChangeAuthorizationStatus: js.Function1[java.lang.String, scala.Unit],
-    didDetermineStateForRegion: js.Function1[PluginResult, scala.Unit],
-    didEnterRegion: js.Function1[PluginResult, scala.Unit],
-    didExitRegion: js.Function1[PluginResult, scala.Unit],
-    didRangeBeaconsInRegion: js.Function1[PluginResult, scala.Unit],
-    didStartMonitoringForRegion: js.Function1[PluginResult, scala.Unit],
-    monitoringDidFailForRegionWithError: js.Function1[PluginResult, scala.Unit],
-    peripheralManagerDidStartAdvertising: js.Function1[PluginResult, scala.Unit],
-    peripheralManagerDidUpdateState: js.Function1[PluginResult, scala.Unit]
+    didChangeAuthorizationStatus: java.lang.String => scala.Unit,
+    didDetermineStateForRegion: PluginResult => scala.Unit,
+    didEnterRegion: PluginResult => scala.Unit,
+    didExitRegion: PluginResult => scala.Unit,
+    didRangeBeaconsInRegion: PluginResult => scala.Unit,
+    didStartMonitoringForRegion: PluginResult => scala.Unit,
+    monitoringDidFailForRegionWithError: PluginResult => scala.Unit,
+    peripheralManagerDidStartAdvertising: PluginResult => scala.Unit,
+    peripheralManagerDidUpdateState: PluginResult => scala.Unit
   ): Delegate = {
-    val __obj = js.Dynamic.literal(didChangeAuthorizationStatus = didChangeAuthorizationStatus, didDetermineStateForRegion = didDetermineStateForRegion, didEnterRegion = didEnterRegion, didExitRegion = didExitRegion, didRangeBeaconsInRegion = didRangeBeaconsInRegion, didStartMonitoringForRegion = didStartMonitoringForRegion, monitoringDidFailForRegionWithError = monitoringDidFailForRegionWithError, peripheralManagerDidStartAdvertising = peripheralManagerDidStartAdvertising, peripheralManagerDidUpdateState = peripheralManagerDidUpdateState)
+    val __obj = js.Dynamic.literal(didChangeAuthorizationStatus = js.Any.fromFunction1(didChangeAuthorizationStatus), didDetermineStateForRegion = js.Any.fromFunction1(didDetermineStateForRegion), didEnterRegion = js.Any.fromFunction1(didEnterRegion), didExitRegion = js.Any.fromFunction1(didExitRegion), didRangeBeaconsInRegion = js.Any.fromFunction1(didRangeBeaconsInRegion), didStartMonitoringForRegion = js.Any.fromFunction1(didStartMonitoringForRegion), monitoringDidFailForRegionWithError = js.Any.fromFunction1(monitoringDidFailForRegionWithError), peripheralManagerDidStartAdvertising = js.Any.fromFunction1(peripheralManagerDidStartAdvertising), peripheralManagerDidUpdateState = js.Any.fromFunction1(peripheralManagerDidUpdateState))
   
     __obj.asInstanceOf[Delegate]
   }

@@ -11,10 +11,8 @@ trait ITileNotificationFactory extends js.Object {
 
 object ITileNotificationFactory {
   @scala.inline
-  def apply(
-    createTileNotification: js.Function1[winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument, TileNotification]
-  ): ITileNotificationFactory = {
-    val __obj = js.Dynamic.literal(createTileNotification = createTileNotification)
+  def apply(createTileNotification: winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument => TileNotification): ITileNotificationFactory = {
+    val __obj = js.Dynamic.literal(createTileNotification = js.Any.fromFunction1(createTileNotification))
   
     __obj.asInstanceOf[ITileNotificationFactory]
   }

@@ -25,7 +25,7 @@ object ICustomApplication {
   def apply(
     ApplicationType: mfilesLib.MFilesNs.MFCustomApplicationType,
     ChecksumHash: java.lang.String,
-    Clone: js.Function0[ICustomApplication],
+    Clone: () => ICustomApplication,
     Description: java.lang.String,
     Enabled: scala.Boolean,
     ID: java.lang.String,
@@ -36,7 +36,7 @@ object ICustomApplication {
     RequireSystemAccess: scala.Boolean,
     Version: java.lang.String
   ): ICustomApplication = {
-    val __obj = js.Dynamic.literal(ApplicationType = ApplicationType, ChecksumHash = ChecksumHash, Clone = Clone, Description = Description, Enabled = Enabled, ID = ID, MasterApplication = MasterApplication, Name = Name, Optional = Optional, Publisher = Publisher, RequireSystemAccess = RequireSystemAccess, Version = Version)
+    val __obj = js.Dynamic.literal(ApplicationType = ApplicationType, ChecksumHash = ChecksumHash, Clone = js.Any.fromFunction0(Clone), Description = Description, Enabled = Enabled, ID = ID, MasterApplication = MasterApplication, Name = Name, Optional = Optional, Publisher = Publisher, RequireSystemAccess = RequireSystemAccess, Version = Version)
   
     __obj.asInstanceOf[ICustomApplication]
   }

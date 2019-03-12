@@ -12,8 +12,8 @@ trait VideoPropertySetting extends js.Object {
 
 object VideoPropertySetting {
   @scala.inline
-  def apply(GetIfAuto: js.Function0[scala.Boolean], GetValue: js.Function0[scala.Double]): VideoPropertySetting = {
-    val __obj = js.Dynamic.literal(GetIfAuto = GetIfAuto, GetValue = GetValue)
+  def apply(GetIfAuto: () => scala.Boolean, GetValue: () => scala.Double): VideoPropertySetting = {
+    val __obj = js.Dynamic.literal(GetIfAuto = js.Any.fromFunction0(GetIfAuto), GetValue = js.Any.fromFunction0(GetValue))
   
     __obj.asInstanceOf[VideoPropertySetting]
   }

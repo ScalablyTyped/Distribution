@@ -118,7 +118,7 @@ trait Guide extends js.Object {
     * Value axis of a guide. As you can add guides directly to the chart,
     * you might need to specify which which value axis should be used.
     */
-  var valueAxis: amchartsLib.valueaxisMod.default
+  var valueAxis: amchartsLib.valueAxisMod.default
 }
 
 object Guide {
@@ -150,7 +150,7 @@ object Guide {
     toDate: stdLib.Date,
     toValue: scala.Double,
     value: scala.Double,
-    valueAxis: amchartsLib.valueaxisMod.default
+    valueAxis: amchartsLib.valueAxisMod.default
   ): Guide = {
     val __obj = js.Dynamic.literal(above = above, angle = angle, balloonColor = balloonColor, balloonText = balloonText, boldLabel = boldLabel, category = category, dashLength = dashLength, date = date, expand = expand, fillAlpha = fillAlpha, fillColor = fillColor, fontSize = fontSize, id = id, inside = inside, label = label, labelRotation = labelRotation, lineAlpha = lineAlpha, lineColor = lineColor, lineThickness = lineThickness, position = position, tickLength = tickLength, toAngle = toAngle, toCategory = toCategory, toDate = toDate, toValue = toValue, value = value, valueAxis = valueAxis)
   

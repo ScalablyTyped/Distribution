@@ -84,11 +84,7 @@ object TextFieldProps {
     multiLine: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
     onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onChange: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.FormEvent[js.Object], 
-      /* newValue */ java.lang.String, 
-      scala.Unit
-    ] = null,
+    onChange: (/* e */ reactLib.reactMod.ReactNs.FormEvent[js.Object], /* newValue */ java.lang.String) => scala.Unit = null,
     onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
     onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
     onKeyPress: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
@@ -133,7 +129,7 @@ object TextFieldProps {
     if (!js.isUndefined(multiLine)) __obj.updateDynamic("multiLine")(multiLine)
     if (name != null) __obj.updateDynamic("name")(name)
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
     if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)

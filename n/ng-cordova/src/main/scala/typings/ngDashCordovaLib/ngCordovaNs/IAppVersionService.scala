@@ -13,10 +13,10 @@ trait IAppVersionService extends js.Object {
 object IAppVersionService {
   @scala.inline
   def apply(
-    getVersionCode: js.Function0[angularLib.angularMod.angularNs.IPromise[java.lang.String]],
-    getVersionNumber: js.Function0[angularLib.angularMod.angularNs.IPromise[java.lang.String]]
+    getVersionCode: () => angularLib.angularMod.angularNs.IPromise[java.lang.String],
+    getVersionNumber: () => angularLib.angularMod.angularNs.IPromise[java.lang.String]
   ): IAppVersionService = {
-    val __obj = js.Dynamic.literal(getVersionCode = getVersionCode, getVersionNumber = getVersionNumber)
+    val __obj = js.Dynamic.literal(getVersionCode = js.Any.fromFunction0(getVersionCode), getVersionNumber = js.Any.fromFunction0(getVersionNumber))
   
     __obj.asInstanceOf[IAppVersionService]
   }

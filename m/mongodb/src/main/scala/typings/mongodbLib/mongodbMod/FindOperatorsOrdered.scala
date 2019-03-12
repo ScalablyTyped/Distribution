@@ -17,14 +17,14 @@ trait FindOperatorsOrdered extends js.Object {
 object FindOperatorsOrdered {
   @scala.inline
   def apply(
-    delete: js.Function0[OrderedBulkOperation],
-    deleteOne: js.Function0[OrderedBulkOperation],
-    replaceOne: js.Function1[js.Object, OrderedBulkOperation],
-    update: js.Function1[js.Object, OrderedBulkOperation],
-    updateOne: js.Function1[js.Object, OrderedBulkOperation],
-    upsert: js.Function0[FindOperatorsOrdered]
+    delete: () => OrderedBulkOperation,
+    deleteOne: () => OrderedBulkOperation,
+    replaceOne: js.Object => OrderedBulkOperation,
+    update: js.Object => OrderedBulkOperation,
+    updateOne: js.Object => OrderedBulkOperation,
+    upsert: () => FindOperatorsOrdered
   ): FindOperatorsOrdered = {
-    val __obj = js.Dynamic.literal(delete = delete, deleteOne = deleteOne, replaceOne = replaceOne, update = update, updateOne = updateOne, upsert = upsert)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), deleteOne = js.Any.fromFunction0(deleteOne), replaceOne = js.Any.fromFunction1(replaceOne), update = js.Any.fromFunction1(update), updateOne = js.Any.fromFunction1(updateOne), upsert = js.Any.fromFunction0(upsert))
   
     __obj.asInstanceOf[FindOperatorsOrdered]
   }

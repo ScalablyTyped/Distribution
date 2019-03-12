@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.PlotArea")
 @js.native
 class PlotArea protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   val Border: ChartBorder = js.native
   val Creator: scala.Double = js.native
   val Fill: ChartFillFormat = js.native
@@ -18,7 +18,7 @@ class PlotArea protected () extends js.Object {
   var InsideLeft: scala.Double = js.native
   var InsideTop: scala.Double = js.native
   var InsideWidth: scala.Double = js.native
-  val Interior: Interior = js.native
+  val Interior: activexDashPowerpointLib.PowerPointNs.Interior = js.native
   var Left: scala.Double = js.native
   val Name: java.lang.String = js.native
   val Parent: js.Any = js.native

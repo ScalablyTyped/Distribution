@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.XSLTransform")
 @js.native
 class XSLTransform protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
   val ID: java.lang.String = js.native
   val Parent: js.Any = js.native

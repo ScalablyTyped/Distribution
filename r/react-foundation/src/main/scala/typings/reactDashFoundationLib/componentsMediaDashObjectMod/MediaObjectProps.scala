@@ -292,7 +292,7 @@ object MediaObjectProps {
   @scala.inline
   def apply(
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
     stackForSmall: js.UndefOr[scala.Boolean] = js.undefined
   ): MediaObjectProps = {
     val __obj = js.Dynamic.literal()

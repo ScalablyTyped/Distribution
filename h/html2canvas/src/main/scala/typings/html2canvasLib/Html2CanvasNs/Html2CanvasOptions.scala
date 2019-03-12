@@ -65,7 +65,7 @@ object Html2CanvasOptions {
     canvas: js.Any = null,
     foreignObjectRendering: js.UndefOr[scala.Boolean] = js.undefined,
     height: scala.Int | scala.Double = null,
-    ignoreElements: js.Function1[/* element */ stdLib.HTMLElement, scala.Boolean] = null,
+    ignoreElements: /* element */ stdLib.HTMLElement => scala.Boolean = null,
     imageTimeout: scala.Int | scala.Double = null,
     letterRendering: js.UndefOr[scala.Boolean] = js.undefined,
     logging: js.UndefOr[scala.Boolean] = js.undefined,
@@ -91,7 +91,7 @@ object Html2CanvasOptions {
     if (canvas != null) __obj.updateDynamic("canvas")(canvas)
     if (!js.isUndefined(foreignObjectRendering)) __obj.updateDynamic("foreignObjectRendering")(foreignObjectRendering)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (ignoreElements != null) __obj.updateDynamic("ignoreElements")(ignoreElements)
+    if (ignoreElements != null) __obj.updateDynamic("ignoreElements")(js.Any.fromFunction1(ignoreElements))
     if (imageTimeout != null) __obj.updateDynamic("imageTimeout")(imageTimeout.asInstanceOf[js.Any])
     if (!js.isUndefined(letterRendering)) __obj.updateDynamic("letterRendering")(letterRendering)
     if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging)

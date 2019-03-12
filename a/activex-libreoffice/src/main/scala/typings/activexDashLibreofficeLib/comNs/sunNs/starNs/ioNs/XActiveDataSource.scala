@@ -27,13 +27,13 @@ object XActiveDataSource {
   @scala.inline
   def apply(
     OutputStream: XOutputStream,
-    acquire: js.Function0[scala.Unit],
-    getOutputStream: js.Function0[XOutputStream],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setOutputStream: js.Function1[XOutputStream, scala.Unit]
+    acquire: () => scala.Unit,
+    getOutputStream: () => XOutputStream,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setOutputStream: XOutputStream => scala.Unit
   ): XActiveDataSource = {
-    val __obj = js.Dynamic.literal(OutputStream = OutputStream, acquire = acquire, getOutputStream = getOutputStream, queryInterface = queryInterface, release = release, setOutputStream = setOutputStream)
+    val __obj = js.Dynamic.literal(OutputStream = OutputStream, acquire = js.Any.fromFunction0(acquire), getOutputStream = js.Any.fromFunction0(getOutputStream), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setOutputStream = js.Any.fromFunction1(setOutputStream))
   
     __obj.asInstanceOf[XActiveDataSource]
   }

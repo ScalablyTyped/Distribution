@@ -25,12 +25,12 @@ trait IMidiOutPort
 object IMidiOutPort {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
+    close: () => scala.Unit,
     deviceId: java.lang.String,
-    sendBuffer: js.Function1[winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer, scala.Unit],
-    sendMessage: js.Function1[IMidiMessage, scala.Unit]
+    sendBuffer: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer => scala.Unit,
+    sendMessage: IMidiMessage => scala.Unit
   ): IMidiOutPort = {
-    val __obj = js.Dynamic.literal(close = close, deviceId = deviceId, sendBuffer = sendBuffer, sendMessage = sendMessage)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), deviceId = deviceId, sendBuffer = js.Any.fromFunction1(sendBuffer), sendMessage = js.Any.fromFunction1(sendMessage))
   
     __obj.asInstanceOf[IMidiOutPort]
   }

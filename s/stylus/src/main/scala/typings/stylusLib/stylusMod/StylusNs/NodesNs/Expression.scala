@@ -18,10 +18,10 @@ trait Expression extends Node {
 object Expression {
   @scala.inline
   def apply(
-    clone: js.Function0[Node],
-    coerce: js.Function1[Node, Node],
+    clone: () => Node,
+    coerce: Node => Node,
     column: scala.Double,
-    eval: js.Function0[Node],
+    eval: () => Node,
     filename: java.lang.String,
     first: Node,
     hash: java.lang.String,
@@ -30,14 +30,14 @@ object Expression {
     lineno: scala.Double,
     nodeName: java.lang.String,
     nodes: js.Array[Node],
-    operate: js.Function2[java.lang.String, Node, Node],
-    push: js.Function1[Node, scala.Unit],
-    shouldCoerce: js.Function1[java.lang.String, scala.Boolean],
-    toBoolean: js.Function0[Boolean],
-    toExpression: js.Function0[Expression],
-    toJSON: js.Function0[stylusLib.Anon_ColumnFilenameIsList]
+    operate: (java.lang.String, Node) => Node,
+    push: Node => scala.Unit,
+    shouldCoerce: java.lang.String => scala.Boolean,
+    toBoolean: () => Boolean,
+    toExpression: () => Expression,
+    toJSON: () => stylusLib.Anon_ColumnFilenameIsList
   ): Expression = {
-    val __obj = js.Dynamic.literal(clone = clone, coerce = coerce, column = column, eval = eval, filename = filename, first = first, hash = hash, isEmpty = isEmpty, isList = isList, lineno = lineno, nodeName = nodeName, nodes = nodes, operate = operate, push = push, shouldCoerce = shouldCoerce, toBoolean = toBoolean, toExpression = toExpression, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), coerce = js.Any.fromFunction1(coerce), column = column, eval = js.Any.fromFunction0(eval), filename = filename, first = first, hash = hash, isEmpty = isEmpty, isList = isList, lineno = lineno, nodeName = nodeName, nodes = nodes, operate = js.Any.fromFunction2(operate), push = js.Any.fromFunction1(push), shouldCoerce = js.Any.fromFunction1(shouldCoerce), toBoolean = js.Any.fromFunction0(toBoolean), toExpression = js.Any.fromFunction0(toExpression), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[Expression]
   }

@@ -10,23 +10,23 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   // Global variables
   @JSName("$dom")
-  var $dom: jsflLib.FlashDocument = js.native
+  var $dom: FlashDocument = js.native
   @JSName("$library")
-  var $library: jsflLib.FlashLibrary = js.native
+  var $library: FlashLibrary = js.native
   @JSName("$selection")
-  var $selection: js.Array[jsflLib.FlashElement] = js.native
+  var $selection: js.Array[FlashElement] = js.native
   @JSName("$timeline")
-  var $timeline: jsflLib.FlashTimeline = js.native
-  var FLfile: jsflLib.FlashFLfile = js.native
-  var fl: jsflLib.FlashFL = js.native
-  var xjsfl: jsflLib._xjsfl = js.native
+  var $timeline: FlashTimeline = js.native
+  var FLfile: FlashFLfile = js.native
+  var fl: FlashFL = js.native
+  var xjsfl: _xjsfl = js.native
   // http://www.xjsfl.com/support/guides/working-with-flash/introduction-to-selectors
   // http://www.xjsfl.com/support/api/elements/ElementSelector
   @JSName("$")
-  def $(selector: java.lang.String): jsflLib.ElementCollection = js.native
+  def $(selector: java.lang.String): ElementCollection = js.native
   // http://www.xjsfl.com/support/api/elements/ItemSelector
   @JSName("$$")
-  def $$(selector: java.lang.String): jsflLib.ItemCollection = js.native
+  def $$(selector: java.lang.String): ItemCollection = js.native
   def alert(alertText: java.lang.String): scala.Unit = js.native
   def clear(): scala.Unit = js.native
   def confirm(strAlert: java.lang.String): scala.Boolean = js.native

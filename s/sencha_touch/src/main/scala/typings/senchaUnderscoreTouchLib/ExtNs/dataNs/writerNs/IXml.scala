@@ -65,89 +65,82 @@ object IXml {
   def apply(
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     defaultDocumentRoot: java.lang.String = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     documentRoot: java.lang.String = null,
     extend: java.lang.String = null,
-    getDefaultDocumentRoot: js.Function0[java.lang.String] = null,
-    getDocumentRoot: js.Function0[java.lang.String] = null,
-    getHeader: js.Function0[java.lang.String] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getNameProperty: js.Function0[java.lang.String] = null,
-    getRecord: js.Function0[java.lang.String] = null,
-    getRecordData: js.Function1[/* record */ js.UndefOr[js.Any], _] = null,
-    getWriteAllFields: js.Function0[scala.Boolean] = null,
+    getDefaultDocumentRoot: () => java.lang.String = null,
+    getDocumentRoot: () => java.lang.String = null,
+    getHeader: () => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getNameProperty: () => java.lang.String = null,
+    getRecord: () => java.lang.String = null,
+    getRecordData: /* record */ js.UndefOr[js.Any] => _ = null,
+    getWriteAllFields: () => scala.Boolean = null,
     header: java.lang.String = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     nameProperty: java.lang.String = null,
     platformConfig: js.Any = null,
     record: java.lang.String = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setDefaultDocumentRoot: js.Function1[/* defaultDocumentRoot */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setDocumentRoot: js.Function1[/* documentRoot */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setHeader: js.Function1[/* header */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setNameProperty: js.Function1[/* nameProperty */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setRecord: js.Function1[/* record */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setWriteAllFields: js.Function1[/* writeAllFields */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setDefaultDocumentRoot: /* defaultDocumentRoot */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setDocumentRoot: /* documentRoot */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setHeader: /* header */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setNameProperty: /* nameProperty */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setRecord: /* record */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setWriteAllFields: /* writeAllFields */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null,
-    write: js.Function1[
-      /* request */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IRequest], 
-      senchaUnderscoreTouchLib.ExtNs.dataNs.IRequest
-    ] = null,
+    write: /* request */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IRequest] => senchaUnderscoreTouchLib.ExtNs.dataNs.IRequest = null,
     writeAllFields: js.UndefOr[scala.Boolean] = js.undefined,
-    writeRecords: js.Function2[
-      /* request */ js.UndefOr[js.Any], 
-      /* data */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
-      _
-    ] = null
+    writeRecords: (/* request */ js.UndefOr[js.Any], /* data */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array]) => _ = null
   ): IXml = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
     if (defaultDocumentRoot != null) __obj.updateDynamic("defaultDocumentRoot")(defaultDocumentRoot)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (documentRoot != null) __obj.updateDynamic("documentRoot")(documentRoot)
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getDefaultDocumentRoot != null) __obj.updateDynamic("getDefaultDocumentRoot")(getDefaultDocumentRoot)
-    if (getDocumentRoot != null) __obj.updateDynamic("getDocumentRoot")(getDocumentRoot)
-    if (getHeader != null) __obj.updateDynamic("getHeader")(getHeader)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getNameProperty != null) __obj.updateDynamic("getNameProperty")(getNameProperty)
-    if (getRecord != null) __obj.updateDynamic("getRecord")(getRecord)
-    if (getRecordData != null) __obj.updateDynamic("getRecordData")(getRecordData)
-    if (getWriteAllFields != null) __obj.updateDynamic("getWriteAllFields")(getWriteAllFields)
+    if (getDefaultDocumentRoot != null) __obj.updateDynamic("getDefaultDocumentRoot")(js.Any.fromFunction0(getDefaultDocumentRoot))
+    if (getDocumentRoot != null) __obj.updateDynamic("getDocumentRoot")(js.Any.fromFunction0(getDocumentRoot))
+    if (getHeader != null) __obj.updateDynamic("getHeader")(js.Any.fromFunction0(getHeader))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getNameProperty != null) __obj.updateDynamic("getNameProperty")(js.Any.fromFunction0(getNameProperty))
+    if (getRecord != null) __obj.updateDynamic("getRecord")(js.Any.fromFunction0(getRecord))
+    if (getRecordData != null) __obj.updateDynamic("getRecordData")(js.Any.fromFunction1(getRecordData))
+    if (getWriteAllFields != null) __obj.updateDynamic("getWriteAllFields")(js.Any.fromFunction0(getWriteAllFields))
     if (header != null) __obj.updateDynamic("header")(header)
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (nameProperty != null) __obj.updateDynamic("nameProperty")(nameProperty)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
     if (record != null) __obj.updateDynamic("record")(record)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setDefaultDocumentRoot != null) __obj.updateDynamic("setDefaultDocumentRoot")(setDefaultDocumentRoot)
-    if (setDocumentRoot != null) __obj.updateDynamic("setDocumentRoot")(setDocumentRoot)
-    if (setHeader != null) __obj.updateDynamic("setHeader")(setHeader)
-    if (setNameProperty != null) __obj.updateDynamic("setNameProperty")(setNameProperty)
-    if (setRecord != null) __obj.updateDynamic("setRecord")(setRecord)
-    if (setWriteAllFields != null) __obj.updateDynamic("setWriteAllFields")(setWriteAllFields)
+    if (setDefaultDocumentRoot != null) __obj.updateDynamic("setDefaultDocumentRoot")(js.Any.fromFunction1(setDefaultDocumentRoot))
+    if (setDocumentRoot != null) __obj.updateDynamic("setDocumentRoot")(js.Any.fromFunction1(setDocumentRoot))
+    if (setHeader != null) __obj.updateDynamic("setHeader")(js.Any.fromFunction1(setHeader))
+    if (setNameProperty != null) __obj.updateDynamic("setNameProperty")(js.Any.fromFunction1(setNameProperty))
+    if (setRecord != null) __obj.updateDynamic("setRecord")(js.Any.fromFunction1(setRecord))
+    if (setWriteAllFields != null) __obj.updateDynamic("setWriteAllFields")(js.Any.fromFunction1(setWriteAllFields))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (uses != null) __obj.updateDynamic("uses")(uses)
-    if (write != null) __obj.updateDynamic("write")(write)
+    if (write != null) __obj.updateDynamic("write")(js.Any.fromFunction1(write))
     if (!js.isUndefined(writeAllFields)) __obj.updateDynamic("writeAllFields")(writeAllFields)
-    if (writeRecords != null) __obj.updateDynamic("writeRecords")(writeRecords)
+    if (writeRecords != null) __obj.updateDynamic("writeRecords")(js.Any.fromFunction2(writeRecords))
     __obj.asInstanceOf[IXml]
   }
 }

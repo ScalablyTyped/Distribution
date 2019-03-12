@@ -7,12 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait CompletionOptions extends js.Object {
   /**
-    * The list of all possible characters that commit a completion. This field can be used
-    * if clients don't support individual commmit characters per completion item. See
-    * `ClientCapabilities.textDocument.completion.completionItem.commitCharactersSupport`
-    */
-  var allCommitCharacters: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /**
     * The server provides support to resolve additional
     * information for a completion item.
     */
@@ -33,12 +27,10 @@ trait CompletionOptions extends js.Object {
 object CompletionOptions {
   @scala.inline
   def apply(
-    allCommitCharacters: js.Array[java.lang.String] = null,
     resolveProvider: js.UndefOr[scala.Boolean] = js.undefined,
     triggerCharacters: js.Array[java.lang.String] = null
   ): CompletionOptions = {
     val __obj = js.Dynamic.literal()
-    if (allCommitCharacters != null) __obj.updateDynamic("allCommitCharacters")(allCommitCharacters)
     if (!js.isUndefined(resolveProvider)) __obj.updateDynamic("resolveProvider")(resolveProvider)
     if (triggerCharacters != null) __obj.updateDynamic("triggerCharacters")(triggerCharacters)
     __obj.asInstanceOf[CompletionOptions]

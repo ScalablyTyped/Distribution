@@ -15,13 +15,13 @@ trait LinearGradient extends _Color {
 object LinearGradient {
   @scala.inline
   def apply(
-    clone: js.Function0[LinearGradient],
+    clone: () => LinearGradient,
     left: Vector,
     right: Vector,
     spread: java.lang.String,
     stops: twoDotJsLib.twoDotJsMod.TwoNs.UtilsNs.Collection[Stop]
   ): LinearGradient = {
-    val __obj = js.Dynamic.literal(clone = clone, left = left, right = right, spread = spread, stops = stops)
+    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), left = left, right = right, spread = spread, stops = stops)
   
     __obj.asInstanceOf[LinearGradient]
   }

@@ -22,19 +22,19 @@ trait RESTResponseV2 extends js.Object {
 object RESTResponseV2 {
   @scala.inline
   def apply(
-    getBody: js.Function0[java.lang.String],
-    getCookies: js.Function0[servicenowLib.Anon_Get],
-    getErrorCode: js.Function0[scala.Double],
-    getErrorMessage: js.Function0[java.lang.String],
-    getHeader: js.Function1[java.lang.String, java.lang.String],
-    getHeaders: js.Function0[js.Object],
-    getQueryString: js.Function0[java.lang.String],
-    getResponseAttachmentSysid: js.Function0[java.lang.String],
-    getStatusCode: js.Function0[scala.Double],
-    haveError: js.Function0[scala.Boolean],
-    waitForResponse: js.Function1[scala.Double, scala.Unit]
+    getBody: () => java.lang.String,
+    getCookies: () => servicenowLib.Anon_Get,
+    getErrorCode: () => scala.Double,
+    getErrorMessage: () => java.lang.String,
+    getHeader: java.lang.String => java.lang.String,
+    getHeaders: () => js.Object,
+    getQueryString: () => java.lang.String,
+    getResponseAttachmentSysid: () => java.lang.String,
+    getStatusCode: () => scala.Double,
+    haveError: () => scala.Boolean,
+    waitForResponse: scala.Double => scala.Unit
   ): RESTResponseV2 = {
-    val __obj = js.Dynamic.literal(getBody = getBody, getCookies = getCookies, getErrorCode = getErrorCode, getErrorMessage = getErrorMessage, getHeader = getHeader, getHeaders = getHeaders, getQueryString = getQueryString, getResponseAttachmentSysid = getResponseAttachmentSysid, getStatusCode = getStatusCode, haveError = haveError, waitForResponse = waitForResponse)
+    val __obj = js.Dynamic.literal(getBody = js.Any.fromFunction0(getBody), getCookies = js.Any.fromFunction0(getCookies), getErrorCode = js.Any.fromFunction0(getErrorCode), getErrorMessage = js.Any.fromFunction0(getErrorMessage), getHeader = js.Any.fromFunction1(getHeader), getHeaders = js.Any.fromFunction0(getHeaders), getQueryString = js.Any.fromFunction0(getQueryString), getResponseAttachmentSysid = js.Any.fromFunction0(getResponseAttachmentSysid), getStatusCode = js.Any.fromFunction0(getStatusCode), haveError = js.Any.fromFunction0(haveError), waitForResponse = js.Any.fromFunction1(waitForResponse))
   
     __obj.asInstanceOf[RESTResponseV2]
   }

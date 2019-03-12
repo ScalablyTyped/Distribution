@@ -8,75 +8,29 @@ import scala.scalajs.js.annotation._
 @JSImport("babel-traverse", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  def default(parent: Node, opts: TraverseOptions[Node]): scala.Unit = js.native
+  def default(parent: Node, opts: TraverseOptions[Node], scope: Scope): scala.Unit = js.native
+  def default(parent: Node, opts: TraverseOptions[Node], scope: Scope, state: js.Any): scala.Unit = js.native
+  def default(parent: Node, opts: TraverseOptions[Node], scope: Scope, state: js.Any, parentPath: NodePath[Node]): scala.Unit = js.native
+  def default(parent: js.Array[Node], opts: TraverseOptions[Node]): scala.Unit = js.native
+  def default(parent: js.Array[Node], opts: TraverseOptions[Node], scope: Scope): scala.Unit = js.native
+  def default(parent: js.Array[Node], opts: TraverseOptions[Node], scope: Scope, state: js.Any): scala.Unit = js.native
   def default(
-    parent: babelDashTraverseLib.babelDashTraverseMod.Node,
-    opts: babelDashTraverseLib.babelDashTraverseMod.TraverseOptions[babelDashTraverseLib.babelDashTraverseMod.Node]
-  ): scala.Unit = js.native
-  def default(
-    parent: babelDashTraverseLib.babelDashTraverseMod.Node,
-    opts: babelDashTraverseLib.babelDashTraverseMod.TraverseOptions[babelDashTraverseLib.babelDashTraverseMod.Node],
-    scope: babelDashTraverseLib.babelDashTraverseMod.Scope
-  ): scala.Unit = js.native
-  def default(
-    parent: babelDashTraverseLib.babelDashTraverseMod.Node,
-    opts: babelDashTraverseLib.babelDashTraverseMod.TraverseOptions[babelDashTraverseLib.babelDashTraverseMod.Node],
-    scope: babelDashTraverseLib.babelDashTraverseMod.Scope,
-    state: js.Any
-  ): scala.Unit = js.native
-  def default(
-    parent: babelDashTraverseLib.babelDashTraverseMod.Node,
-    opts: babelDashTraverseLib.babelDashTraverseMod.TraverseOptions[babelDashTraverseLib.babelDashTraverseMod.Node],
-    scope: babelDashTraverseLib.babelDashTraverseMod.Scope,
+    parent: js.Array[Node],
+    opts: TraverseOptions[Node],
+    scope: Scope,
     state: js.Any,
-    parentPath: babelDashTraverseLib.babelDashTraverseMod.NodePath[babelDashTraverseLib.babelDashTraverseMod.Node]
+    parentPath: NodePath[Node]
   ): scala.Unit = js.native
-  def default(
-    parent: js.Array[babelDashTraverseLib.babelDashTraverseMod.Node],
-    opts: babelDashTraverseLib.babelDashTraverseMod.TraverseOptions[babelDashTraverseLib.babelDashTraverseMod.Node]
-  ): scala.Unit = js.native
-  def default(
-    parent: js.Array[babelDashTraverseLib.babelDashTraverseMod.Node],
-    opts: babelDashTraverseLib.babelDashTraverseMod.TraverseOptions[babelDashTraverseLib.babelDashTraverseMod.Node],
-    scope: babelDashTraverseLib.babelDashTraverseMod.Scope
-  ): scala.Unit = js.native
-  def default(
-    parent: js.Array[babelDashTraverseLib.babelDashTraverseMod.Node],
-    opts: babelDashTraverseLib.babelDashTraverseMod.TraverseOptions[babelDashTraverseLib.babelDashTraverseMod.Node],
-    scope: babelDashTraverseLib.babelDashTraverseMod.Scope,
-    state: js.Any
-  ): scala.Unit = js.native
-  def default(
-    parent: js.Array[babelDashTraverseLib.babelDashTraverseMod.Node],
-    opts: babelDashTraverseLib.babelDashTraverseMod.TraverseOptions[babelDashTraverseLib.babelDashTraverseMod.Node],
-    scope: babelDashTraverseLib.babelDashTraverseMod.Scope,
-    state: js.Any,
-    parentPath: babelDashTraverseLib.babelDashTraverseMod.NodePath[babelDashTraverseLib.babelDashTraverseMod.Node]
-  ): scala.Unit = js.native
+  def default[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S): scala.Unit = js.native
+  def default[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S, parentPath: NodePath[Node]): scala.Unit = js.native
+  def default[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: Scope, state: S): scala.Unit = js.native
   def default[S](
-    parent: babelDashTraverseLib.babelDashTraverseMod.Node,
-    opts: babelDashTraverseLib.babelDashTraverseMod.TraverseOptions[S],
-    scope: babelDashTraverseLib.babelDashTraverseMod.Scope,
-    state: S
-  ): scala.Unit = js.native
-  def default[S](
-    parent: babelDashTraverseLib.babelDashTraverseMod.Node,
-    opts: babelDashTraverseLib.babelDashTraverseMod.TraverseOptions[S],
-    scope: babelDashTraverseLib.babelDashTraverseMod.Scope,
+    parent: js.Array[Node],
+    opts: TraverseOptions[S],
+    scope: Scope,
     state: S,
-    parentPath: babelDashTraverseLib.babelDashTraverseMod.NodePath[babelDashTraverseLib.babelDashTraverseMod.Node]
-  ): scala.Unit = js.native
-  def default[S](
-    parent: js.Array[babelDashTraverseLib.babelDashTraverseMod.Node],
-    opts: babelDashTraverseLib.babelDashTraverseMod.TraverseOptions[S],
-    scope: babelDashTraverseLib.babelDashTraverseMod.Scope,
-    state: S
-  ): scala.Unit = js.native
-  def default[S](
-    parent: js.Array[babelDashTraverseLib.babelDashTraverseMod.Node],
-    opts: babelDashTraverseLib.babelDashTraverseMod.TraverseOptions[S],
-    scope: babelDashTraverseLib.babelDashTraverseMod.Scope,
-    state: S,
-    parentPath: babelDashTraverseLib.babelDashTraverseMod.NodePath[babelDashTraverseLib.babelDashTraverseMod.Node]
+    parentPath: NodePath[Node]
   ): scala.Unit = js.native
 }
 

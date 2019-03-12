@@ -25,10 +25,10 @@ trait ASPxClientReportDesignerCustomizeSaveAsDialogEventArgs extends ASPxClientE
 object ASPxClientReportDesignerCustomizeSaveAsDialogEventArgs {
   @scala.inline
   def apply(
-    Customize: js.Function2[java.lang.String, ASPxDesignerDialogModel, scala.Unit],
+    Customize: (java.lang.String, ASPxDesignerDialogModel) => scala.Unit,
     Popup: ASPxDesignerSaveAsDialog
   ): ASPxClientReportDesignerCustomizeSaveAsDialogEventArgs = {
-    val __obj = js.Dynamic.literal(Customize = Customize, Popup = Popup)
+    val __obj = js.Dynamic.literal(Customize = js.Any.fromFunction2(Customize), Popup = Popup)
   
     __obj.asInstanceOf[ASPxClientReportDesignerCustomizeSaveAsDialogEventArgs]
   }

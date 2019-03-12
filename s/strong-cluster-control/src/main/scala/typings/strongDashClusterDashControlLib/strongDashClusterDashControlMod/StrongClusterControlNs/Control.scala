@@ -14,7 +14,7 @@ trait Control
   @JSName("on")
   def on_error(
     event: strongDashClusterDashControlLib.strongDashClusterDashControlLibStrings.error,
-    handler: js.Function1[/* error */ nodeLib.Error | js.Array[nodeLib.Error], _]
+    handler: js.Function1[/* error */ stdLib.Error | js.Array[stdLib.Error], _]
   ): this.type = js.native
   @JSName("on")
   def on_resize(

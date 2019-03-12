@@ -553,7 +553,7 @@ object RNFirebaseNs extends js.Object {
     }
     
     trait AuthStatics extends js.Object {
-      var EmailAuthProvider: EmailAuthProvider
+      var EmailAuthProvider: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.authNs.EmailAuthProvider
       var FacebookAuthProvider: AuthProvider
       var GithubAuthProvider: AuthProvider
       var GoogleAuthProvider: AuthProvider
@@ -1606,7 +1606,7 @@ object RNFirebaseNs extends js.Object {
       /**
         * Uppercased + underscored variables of @FunctionsErrorCode
         */
-      var HttpsErrorCode: HttpsErrorCode
+      var HttpsErrorCode: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.HttpsErrorCode
     }
     
     /**
@@ -2665,7 +2665,7 @@ object RNFirebaseNs extends js.Object {
     trait StorageStatics extends js.Object {
       var Native: js.UndefOr[reactDashNativeDashFirebaseLib.Anon_CACHESDIRECTORYPATH] = js.undefined
       var TaskEvent: TaskState
-      var TaskState: TaskState
+      var TaskState: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.storageNs.TaskState
     }
     
     @js.native

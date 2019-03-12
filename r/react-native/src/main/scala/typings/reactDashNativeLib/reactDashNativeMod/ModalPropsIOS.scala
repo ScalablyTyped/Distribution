@@ -35,16 +35,16 @@ trait ModalPropsIOS extends js.Object {
 object ModalPropsIOS {
   @scala.inline
   def apply(
-    onDismiss: js.Function0[scala.Unit] = null,
-    onOrientationChange: js.Function1[/* event */ NativeSyntheticEvent[_], scala.Unit] = null,
+    onDismiss: () => scala.Unit = null,
+    onOrientationChange: /* event */ NativeSyntheticEvent[_] => scala.Unit = null,
     presentationStyle: reactDashNativeLib.reactDashNativeLibStrings.fullScreen | reactDashNativeLib.reactDashNativeLibStrings.pageSheet | reactDashNativeLib.reactDashNativeLibStrings.formSheet | reactDashNativeLib.reactDashNativeLibStrings.overFullScreen = null,
     supportedOrientations: js.Array[
       reactDashNativeLib.reactDashNativeLibStrings.portrait | reactDashNativeLib.reactDashNativeLibStrings.`portrait-upside-down` | reactDashNativeLib.reactDashNativeLibStrings.landscape | reactDashNativeLib.reactDashNativeLibStrings.`landscape-left` | reactDashNativeLib.reactDashNativeLibStrings.`landscape-right`
     ] = null
   ): ModalPropsIOS = {
     val __obj = js.Dynamic.literal()
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss)
-    if (onOrientationChange != null) __obj.updateDynamic("onOrientationChange")(onOrientationChange)
+    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
+    if (onOrientationChange != null) __obj.updateDynamic("onOrientationChange")(js.Any.fromFunction1(onOrientationChange))
     if (presentationStyle != null) __obj.updateDynamic("presentationStyle")(presentationStyle.asInstanceOf[js.Any])
     if (supportedOrientations != null) __obj.updateDynamic("supportedOrientations")(supportedOrientations)
     __obj.asInstanceOf[ModalPropsIOS]

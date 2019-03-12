@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def minify(text: java.lang.String): java.lang.String = js.native
-  def minify(text: java.lang.String, options: htmlDashMinifierLib.htmlDashMinifierMod.Options): java.lang.String = js.native
+  def minify(text: java.lang.String, options: Options): java.lang.String = js.native
 }
 

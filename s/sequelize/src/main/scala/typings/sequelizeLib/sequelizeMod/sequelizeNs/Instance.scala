@@ -33,7 +33,7 @@ trait Instance[TAttributes] extends js.Object {
     *
     * @see Model
     */
-  var Model: Model[this.type, TAttributes] = js.native
+  var Model: sequelizeLib.sequelizeMod.sequelizeNs.Model[this.type, TAttributes] = js.native
   /**
     * Returns true if this instance has not yet been persisted to the database
     */

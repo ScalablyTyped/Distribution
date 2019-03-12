@@ -14,3 +14,17 @@ trait HighlightResultPrimitive extends js.Object {
   var value: java.lang.String
 }
 
+object HighlightResultPrimitive {
+  @scala.inline
+  def apply(
+    matchLevel: reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreLibStrings.none | reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreLibStrings.partial | reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreLibStrings.full,
+    matchedWords: js.Array[java.lang.String],
+    value: java.lang.String,
+    fullyHighlighted: js.UndefOr[scala.Boolean] = js.undefined
+  ): HighlightResultPrimitive = {
+    val __obj = js.Dynamic.literal(matchLevel = matchLevel.asInstanceOf[js.Any], matchedWords = matchedWords, value = value)
+    if (!js.isUndefined(fullyHighlighted)) __obj.updateDynamic("fullyHighlighted")(fullyHighlighted)
+    __obj.asInstanceOf[HighlightResultPrimitive]
+  }
+}
+

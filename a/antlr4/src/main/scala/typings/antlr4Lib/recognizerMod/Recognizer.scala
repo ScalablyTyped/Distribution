@@ -17,10 +17,10 @@ class Recognizer () extends js.Object {
   def getTokenErrorDisplay(t: antlr4Lib.tokenMod.Token): java.lang.String = js.native
   def getTokenType(tokenName: java.lang.String): js.Any = js.native
   def getTokenTypeMap(): js.Any = js.native
-  def precpred(localCtx: antlr4Lib.parserrulecontextMod.ParserRuleContext, precedence: js.Any): scala.Boolean = js.native
+  def precpred(localCtx: antlr4Lib.parserRuleContextMod.ParserRuleContext, precedence: js.Any): scala.Boolean = js.native
   def removeErrorListeners(): scala.Unit = js.native
   def sempred(
-    localCtx: antlr4Lib.parserrulecontextMod.ParserRuleContext,
+    localCtx: antlr4Lib.parserRuleContextMod.ParserRuleContext,
     ruleIndex: scala.Double,
     actionIndex: scala.Double
   ): scala.Boolean = js.native

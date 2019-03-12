@@ -57,7 +57,7 @@ trait Anon_Apply extends js.Object {
   def deleteMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): scala.Boolean = js.native
   def deleteMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): scala.Boolean = js.native
   def deleteProperty(target: js.Any, propertyKey: stdLib.PropertyKey): scala.Boolean = js.native
-  def enumerate(target: js.Any): nodeLib.IterableIterator[_] = js.native
+  def enumerate(target: js.Any): stdLib.IterableIterator[_] = js.native
   def get(target: js.Any, propertyKey: stdLib.PropertyKey): js.Any = js.native
   def get(target: js.Any, propertyKey: stdLib.PropertyKey, receiver: js.Any): js.Any = js.native
   /**

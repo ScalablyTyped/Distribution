@@ -17,14 +17,14 @@ trait AssertOptions extends js.Object {
 object AssertOptions {
   @scala.inline
   def apply(
-    fail: js.Function1[/* description */ java.lang.String, scala.Unit] = null,
+    fail: /* description */ java.lang.String => scala.Unit = null,
     message: js.Any = null,
-    pass: js.Function1[/* description */ java.lang.String, scala.Unit] = null
+    pass: /* description */ java.lang.String => scala.Unit = null
   ): AssertOptions = {
     val __obj = js.Dynamic.literal()
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (message != null) __obj.updateDynamic("message")(message)
-    if (pass != null) __obj.updateDynamic("pass")(pass)
+    if (pass != null) __obj.updateDynamic("pass")(js.Any.fromFunction1(pass))
     __obj.asInstanceOf[AssertOptions]
   }
 }

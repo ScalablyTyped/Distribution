@@ -28,17 +28,17 @@ object XPatternField {
   @scala.inline
   def apply(
     String: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getMasks: js.Function2[js.Array[java.lang.String], js.Array[java.lang.String], scala.Unit],
-    getString: js.Function0[java.lang.String],
-    isStrictFormat: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setMasks: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    setStrictFormat: js.Function1[scala.Boolean, scala.Unit],
-    setString: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getMasks: (js.Array[java.lang.String], js.Array[java.lang.String]) => scala.Unit,
+    getString: () => java.lang.String,
+    isStrictFormat: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setMasks: (java.lang.String, java.lang.String) => scala.Unit,
+    setStrictFormat: scala.Boolean => scala.Unit,
+    setString: java.lang.String => scala.Unit
   ): XPatternField = {
-    val __obj = js.Dynamic.literal(String = String, acquire = acquire, getMasks = getMasks, getString = getString, isStrictFormat = isStrictFormat, queryInterface = queryInterface, release = release, setMasks = setMasks, setStrictFormat = setStrictFormat, setString = setString)
+    val __obj = js.Dynamic.literal(String = String, acquire = js.Any.fromFunction0(acquire), getMasks = js.Any.fromFunction2(getMasks), getString = js.Any.fromFunction0(getString), isStrictFormat = js.Any.fromFunction0(isStrictFormat), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setMasks = js.Any.fromFunction2(setMasks), setStrictFormat = js.Any.fromFunction1(setStrictFormat), setString = js.Any.fromFunction1(setString))
   
     __obj.asInstanceOf[XPatternField]
   }

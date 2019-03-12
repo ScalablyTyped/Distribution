@@ -16,13 +16,10 @@ object ZonesResource {
   @scala.inline
   def apply(
     clusters: ClustersResource,
-    getServerconfig: js.Function1[
-      gapiDotClientDotContainerLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ServerConfig]
-    ],
+    getServerconfig: gapiDotClientDotContainerLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ServerConfig],
     operations: OperationsResource
   ): ZonesResource = {
-    val __obj = js.Dynamic.literal(clusters = clusters, getServerconfig = getServerconfig, operations = operations)
+    val __obj = js.Dynamic.literal(clusters = clusters, getServerconfig = js.Any.fromFunction1(getServerconfig), operations = operations)
   
     __obj.asInstanceOf[ZonesResource]
   }

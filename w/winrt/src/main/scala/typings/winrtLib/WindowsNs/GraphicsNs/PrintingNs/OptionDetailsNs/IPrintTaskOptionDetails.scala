@@ -16,13 +16,13 @@ trait IPrintTaskOptionDetails extends js.Object {
 object IPrintTaskOptionDetails {
   @scala.inline
   def apply(
-    createItemListOption: js.Function2[java.lang.String, java.lang.String, PrintCustomItemListOptionDetails],
-    createTextOption: js.Function2[java.lang.String, java.lang.String, PrintCustomTextOptionDetails],
+    createItemListOption: (java.lang.String, java.lang.String) => PrintCustomItemListOptionDetails,
+    createTextOption: (java.lang.String, java.lang.String) => PrintCustomTextOptionDetails,
     onbeginvalidation: js.Any,
     onoptionchanged: js.Any,
     options: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, IPrintOptionDetails]
   ): IPrintTaskOptionDetails = {
-    val __obj = js.Dynamic.literal(createItemListOption = createItemListOption, createTextOption = createTextOption, onbeginvalidation = onbeginvalidation, onoptionchanged = onoptionchanged, options = options)
+    val __obj = js.Dynamic.literal(createItemListOption = js.Any.fromFunction2(createItemListOption), createTextOption = js.Any.fromFunction2(createTextOption), onbeginvalidation = onbeginvalidation, onoptionchanged = onoptionchanged, options = options)
   
     __obj.asInstanceOf[IPrintTaskOptionDetails]
   }

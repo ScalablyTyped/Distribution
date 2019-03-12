@@ -210,7 +210,7 @@ object ICanvasOptions {
     centeredRotation: js.UndefOr[scala.Boolean] = js.undefined,
     centeredScaling: js.UndefOr[scala.Boolean] = js.undefined,
     clipPath: Object = null,
-    clipTo: js.Function1[/* context */ stdLib.CanvasRenderingContext2D, scala.Unit] = null,
+    clipTo: /* context */ stdLib.CanvasRenderingContext2D => scala.Unit = null,
     containerClass: java.lang.String = null,
     controlsAboveOverlay: js.UndefOr[scala.Boolean] = js.undefined,
     defaultCursor: java.lang.String = null,
@@ -263,7 +263,7 @@ object ICanvasOptions {
     if (!js.isUndefined(centeredRotation)) __obj.updateDynamic("centeredRotation")(centeredRotation)
     if (!js.isUndefined(centeredScaling)) __obj.updateDynamic("centeredScaling")(centeredScaling)
     if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath)
-    if (clipTo != null) __obj.updateDynamic("clipTo")(clipTo)
+    if (clipTo != null) __obj.updateDynamic("clipTo")(js.Any.fromFunction1(clipTo))
     if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass)
     if (!js.isUndefined(controlsAboveOverlay)) __obj.updateDynamic("controlsAboveOverlay")(controlsAboveOverlay)
     if (defaultCursor != null) __obj.updateDynamic("defaultCursor")(defaultCursor)

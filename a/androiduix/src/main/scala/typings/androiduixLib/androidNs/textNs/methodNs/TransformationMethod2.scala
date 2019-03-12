@@ -12,18 +12,11 @@ trait TransformationMethod2 extends TransformationMethod {
 object TransformationMethod2 {
   @scala.inline
   def apply(
-    getTransformation: js.Function2[java.lang.String, androiduixLib.androidNs.viewNs.View, java.lang.String],
-    onFocusChanged: js.Function5[
-      androiduixLib.androidNs.viewNs.View, 
-      java.lang.String, 
-      scala.Boolean, 
-      scala.Double, 
-      androiduixLib.androidNs.graphicsNs.Rect, 
-      scala.Unit
-    ],
-    setLengthChangesAllowed: js.Function1[scala.Boolean, scala.Unit]
+    getTransformation: (java.lang.String, androiduixLib.androidNs.viewNs.View) => java.lang.String,
+    onFocusChanged: (androiduixLib.androidNs.viewNs.View, java.lang.String, scala.Boolean, scala.Double, androiduixLib.androidNs.graphicsNs.Rect) => scala.Unit,
+    setLengthChangesAllowed: scala.Boolean => scala.Unit
   ): TransformationMethod2 = {
-    val __obj = js.Dynamic.literal(getTransformation = getTransformation, onFocusChanged = onFocusChanged, setLengthChangesAllowed = setLengthChangesAllowed)
+    val __obj = js.Dynamic.literal(getTransformation = js.Any.fromFunction2(getTransformation), onFocusChanged = js.Any.fromFunction5(onFocusChanged), setLengthChangesAllowed = js.Any.fromFunction1(setLengthChangesAllowed))
   
     __obj.asInstanceOf[TransformationMethod2]
   }

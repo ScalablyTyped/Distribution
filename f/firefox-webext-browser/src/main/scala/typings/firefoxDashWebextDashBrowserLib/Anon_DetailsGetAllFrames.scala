@@ -55,8 +55,8 @@ trait Anon_DetailsGetAllFrames extends js.Object {
 object Anon_DetailsGetAllFrames {
   @scala.inline
   def apply(
-    getAllFrames: js.Function1[Anon_TabIdNumber, js.Promise[js.Array[Anon_ErrorOccurredFrameId]]],
-    getFrame: js.Function1[Anon_FrameId, js.Promise[Anon_ErrorOccurred]],
+    getAllFrames: Anon_TabIdNumber => js.Promise[js.Array[Anon_ErrorOccurredFrameId]],
+    getFrame: Anon_FrameId => js.Promise[Anon_ErrorOccurred],
     onBeforeNavigate: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnBeforeNavigateEvent[js.Function1[/* details */ Anon_FrameIdParentFrameId, scala.Unit]],
     onCommitted: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnCommittedEvent[js.Function1[/* details */ Anon_FrameIdProcessId, scala.Unit]],
     onCompleted: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnCompletedEvent[js.Function1[/* details */ Anon_FrameIdProcessIdTabId, scala.Unit]],
@@ -67,7 +67,7 @@ object Anon_DetailsGetAllFrames {
     onReferenceFragmentUpdated: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnReferenceFragmentUpdatedEvent[js.Function1[/* details */ Anon_FrameIdProcessId, scala.Unit]],
     onTabReplaced: WebExtEvent[js.Function1[/* details */ Anon_ReplacedTabId, scala.Unit]]
   ): Anon_DetailsGetAllFrames = {
-    val __obj = js.Dynamic.literal(getAllFrames = getAllFrames, getFrame = getFrame, onBeforeNavigate = onBeforeNavigate, onCommitted = onCommitted, onCompleted = onCompleted, onCreatedNavigationTarget = onCreatedNavigationTarget, onDOMContentLoaded = onDOMContentLoaded, onErrorOccurred = onErrorOccurred, onHistoryStateUpdated = onHistoryStateUpdated, onReferenceFragmentUpdated = onReferenceFragmentUpdated, onTabReplaced = onTabReplaced)
+    val __obj = js.Dynamic.literal(getAllFrames = js.Any.fromFunction1(getAllFrames), getFrame = js.Any.fromFunction1(getFrame), onBeforeNavigate = onBeforeNavigate, onCommitted = onCommitted, onCompleted = onCompleted, onCreatedNavigationTarget = onCreatedNavigationTarget, onDOMContentLoaded = onDOMContentLoaded, onErrorOccurred = onErrorOccurred, onHistoryStateUpdated = onHistoryStateUpdated, onReferenceFragmentUpdated = onReferenceFragmentUpdated, onTabReplaced = onTabReplaced)
   
     __obj.asInstanceOf[Anon_DetailsGetAllFrames]
   }

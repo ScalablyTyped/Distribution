@@ -15,14 +15,10 @@ object Condition {
   @scala.inline
   def apply(
     args: js.Array[_],
-    func: js.Function2[
-      handsontableLib.handsontableMod.HandsontableNs.pluginsNs.CellValue, 
-      js.Array[_], 
-      scala.Boolean
-    ],
+    func: (handsontableLib.handsontableMod.HandsontableNs.pluginsNs.CellValue, js.Array[_]) => scala.Boolean,
     name: ConditionName
   ): Condition = {
-    val __obj = js.Dynamic.literal(args = args, func = func, name = name)
+    val __obj = js.Dynamic.literal(args = args, func = js.Any.fromFunction2(func), name = name)
   
     __obj.asInstanceOf[Condition]
   }

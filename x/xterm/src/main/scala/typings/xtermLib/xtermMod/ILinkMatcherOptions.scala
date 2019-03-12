@@ -63,32 +63,20 @@ trait ILinkMatcherOptions extends js.Object {
 object ILinkMatcherOptions {
   @scala.inline
   def apply(
-    leaveCallback: js.Function2[
-      /* event */ xtermLib.MouseEvent, 
-      /* uri */ java.lang.String, 
-      scala.Boolean | scala.Unit
-    ] = null,
+    leaveCallback: (/* event */ xtermLib.MouseEvent, /* uri */ java.lang.String) => scala.Boolean | scala.Unit = null,
     matchIndex: scala.Int | scala.Double = null,
     priority: scala.Int | scala.Double = null,
-    tooltipCallback: js.Function2[
-      /* event */ xtermLib.MouseEvent, 
-      /* uri */ java.lang.String, 
-      scala.Boolean | scala.Unit
-    ] = null,
-    validationCallback: js.Function2[
-      /* uri */ java.lang.String, 
-      /* callback */ js.Function1[/* isValid */ scala.Boolean, scala.Unit], 
-      scala.Unit
-    ] = null,
-    willLinkActivate: js.Function2[/* event */ xtermLib.MouseEvent, /* uri */ java.lang.String, scala.Boolean] = null
+    tooltipCallback: (/* event */ xtermLib.MouseEvent, /* uri */ java.lang.String) => scala.Boolean | scala.Unit = null,
+    validationCallback: (/* uri */ java.lang.String, /* callback */ js.Function1[/* isValid */ scala.Boolean, scala.Unit]) => scala.Unit = null,
+    willLinkActivate: (/* event */ xtermLib.MouseEvent, /* uri */ java.lang.String) => scala.Boolean = null
   ): ILinkMatcherOptions = {
     val __obj = js.Dynamic.literal()
-    if (leaveCallback != null) __obj.updateDynamic("leaveCallback")(leaveCallback)
+    if (leaveCallback != null) __obj.updateDynamic("leaveCallback")(js.Any.fromFunction2(leaveCallback))
     if (matchIndex != null) __obj.updateDynamic("matchIndex")(matchIndex.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (tooltipCallback != null) __obj.updateDynamic("tooltipCallback")(tooltipCallback)
-    if (validationCallback != null) __obj.updateDynamic("validationCallback")(validationCallback)
-    if (willLinkActivate != null) __obj.updateDynamic("willLinkActivate")(willLinkActivate)
+    if (tooltipCallback != null) __obj.updateDynamic("tooltipCallback")(js.Any.fromFunction2(tooltipCallback))
+    if (validationCallback != null) __obj.updateDynamic("validationCallback")(js.Any.fromFunction2(validationCallback))
+    if (willLinkActivate != null) __obj.updateDynamic("willLinkActivate")(js.Any.fromFunction2(willLinkActivate))
     __obj.asInstanceOf[ILinkMatcherOptions]
   }
 }

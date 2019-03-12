@@ -18,7 +18,7 @@ trait PopperProps extends js.Object {
 object PopperProps {
   @scala.inline
   def apply(
-    children: js.Function1[PopperChildrenProps, reactLib.reactMod.ReactNs.ReactNode],
+    children: PopperChildrenProps => reactLib.reactMod.ReactNs.ReactNode,
     eventsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     innerRef: reactDashPopperLib.RefHandler = null,
     modifiers: popperDotJsLib.popperDotJsMod.Modifiers = null,
@@ -26,7 +26,7 @@ object PopperProps {
     positionFixed: js.UndefOr[scala.Boolean] = js.undefined,
     referenceElement: popperDotJsLib.popperDotJsMod.ReferenceObject = null
   ): PopperProps = {
-    val __obj = js.Dynamic.literal(children = children)
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled)
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef)
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)

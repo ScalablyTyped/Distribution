@@ -13,7 +13,7 @@ class Shapes protected () extends js.Object {
   val Creator: scala.Double = js.native
   val HasTitle: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   val Parent: js.Any = js.native
-  val Placeholders: Placeholders = js.native
+  val Placeholders: activexDashPowerpointLib.PowerPointNs.Placeholders = js.native
   var `PowerPoint.Shapes_typekey`: Shapes = js.native
   val Title: Shape = js.native
   def AddCallout(

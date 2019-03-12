@@ -91,40 +91,40 @@ trait TableViewSection
 object TableViewSection {
   @scala.inline
   def apply(
-    add: js.Function1[TableViewRow, scala.Unit],
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    add: TableViewRow => scala.Unit,
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     bubbleParent: scala.Boolean,
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
     footerTitle: java.lang.String,
     footerView: View,
-    getApiName: js.Function0[java.lang.String],
-    getBubbleParent: js.Function0[scala.Boolean],
-    getFooterTitle: js.Function0[java.lang.String],
-    getFooterView: js.Function0[View],
-    getHeaderTitle: js.Function0[java.lang.String],
-    getHeaderView: js.Function0[View],
-    getRowCount: js.Function0[scala.Double],
-    getRows: js.Function0[js.Array[TableViewRow]],
+    getApiName: () => java.lang.String,
+    getBubbleParent: () => scala.Boolean,
+    getFooterTitle: () => java.lang.String,
+    getFooterView: () => View,
+    getHeaderTitle: () => java.lang.String,
+    getHeaderView: () => View,
+    getRowCount: () => scala.Double,
+    getRows: () => js.Array[TableViewRow],
     headerTitle: java.lang.String,
     headerView: View,
-    remove: js.Function1[TableViewRow, scala.Unit],
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    rowAtIndex: js.Function1[scala.Double, TableViewRow],
+    remove: TableViewRow => scala.Unit,
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    rowAtIndex: scala.Double => TableViewRow,
     rowCount: scala.Double,
     rows: js.Array[TableViewRow],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
-    setFooterTitle: js.Function1[java.lang.String, scala.Unit],
-    setFooterView: js.Function1[js.Any, scala.Unit],
-    setHeaderTitle: js.Function1[java.lang.String, scala.Unit],
-    setHeaderView: js.Function1[js.Any, scala.Unit],
-    getLifecycleContainer: js.Function0[Window | TabGroup] = null,
+    setBubbleParent: scala.Boolean => scala.Unit,
+    setFooterTitle: java.lang.String => scala.Unit,
+    setFooterView: js.Any => scala.Unit,
+    setHeaderTitle: java.lang.String => scala.Unit,
+    setHeaderView: js.Any => scala.Unit,
+    getLifecycleContainer: () => Window | TabGroup = null,
     lifecycleContainer: Window | TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, scala.Unit]) = null
   ): TableViewSection = {
-    val __obj = js.Dynamic.literal(add = add, addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, footerTitle = footerTitle, footerView = footerView, getApiName = getApiName, getBubbleParent = getBubbleParent, getFooterTitle = getFooterTitle, getFooterView = getFooterView, getHeaderTitle = getHeaderTitle, getHeaderView = getHeaderView, getRowCount = getRowCount, getRows = getRows, headerTitle = headerTitle, headerView = headerView, remove = remove, removeEventListener = removeEventListener, rowAtIndex = rowAtIndex, rowCount = rowCount, rows = rows, setBubbleParent = setBubbleParent, setFooterTitle = setFooterTitle, setFooterView = setFooterView, setHeaderTitle = setHeaderTitle, setHeaderView = setHeaderView)
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, fireEvent = js.Any.fromFunction2(fireEvent), footerTitle = footerTitle, footerView = footerView, getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getFooterTitle = js.Any.fromFunction0(getFooterTitle), getFooterView = js.Any.fromFunction0(getFooterView), getHeaderTitle = js.Any.fromFunction0(getHeaderTitle), getHeaderView = js.Any.fromFunction0(getHeaderView), getRowCount = js.Any.fromFunction0(getRowCount), getRows = js.Any.fromFunction0(getRows), headerTitle = headerTitle, headerView = headerView, remove = js.Any.fromFunction1(remove), removeEventListener = js.Any.fromFunction2(removeEventListener), rowAtIndex = js.Any.fromFunction1(rowAtIndex), rowCount = rowCount, rows = rows, setBubbleParent = js.Any.fromFunction1(setBubbleParent), setFooterTitle = js.Any.fromFunction1(setFooterTitle), setFooterView = js.Any.fromFunction1(setFooterView), setHeaderTitle = js.Any.fromFunction1(setHeaderTitle), setHeaderView = js.Any.fromFunction1(setHeaderView))
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
     __obj.asInstanceOf[TableViewSection]

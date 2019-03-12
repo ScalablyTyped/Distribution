@@ -12,13 +12,6 @@ trait CancellationToken extends js.Object {
     */
   val isCancellationRequested: scala.Boolean = js.native
   /**
-    *
-    * @param listener The listener function will be call when the event happens.
-    * @param thisArgs The 'this' which will be used when calling the event listener.
-    * @param disposables An array to which a {{IDisposable}} will be added. The
-    * @return
-    */
-  /**
     * An [event](#Event) which fires upon cancellation.
     */
   def onCancellationRequested(listener: js.Function1[/* e */ js.Any, _]): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native

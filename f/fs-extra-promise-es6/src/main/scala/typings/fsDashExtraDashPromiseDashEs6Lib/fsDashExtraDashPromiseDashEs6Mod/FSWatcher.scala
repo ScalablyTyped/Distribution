@@ -11,8 +11,8 @@ trait FSWatcher extends js.Object {
 
 object FSWatcher {
   @scala.inline
-  def apply(close: js.Function0[scala.Unit]): FSWatcher = {
-    val __obj = js.Dynamic.literal(close = close)
+  def apply(close: () => scala.Unit): FSWatcher = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
   
     __obj.asInstanceOf[FSWatcher]
   }

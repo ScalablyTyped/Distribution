@@ -17,15 +17,11 @@ object ICoreDispatcher {
   def apply(
     hasThreadAccess: scala.Boolean,
     onacceleratorkeyactivated: js.Any,
-    processEvents: js.Function1[CoreProcessEventsOption, scala.Unit],
-    runAsync: js.Function2[
-      CoreDispatcherPriority, 
-      DispatchedHandler, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncAction
-    ],
-    runIdleAsync: js.Function1[IdleDispatchedHandler, winrtLib.WindowsNs.FoundationNs.IAsyncAction]
+    processEvents: CoreProcessEventsOption => scala.Unit,
+    runAsync: (CoreDispatcherPriority, DispatchedHandler) => winrtLib.WindowsNs.FoundationNs.IAsyncAction,
+    runIdleAsync: IdleDispatchedHandler => winrtLib.WindowsNs.FoundationNs.IAsyncAction
   ): ICoreDispatcher = {
-    val __obj = js.Dynamic.literal(hasThreadAccess = hasThreadAccess, onacceleratorkeyactivated = onacceleratorkeyactivated, processEvents = processEvents, runAsync = runAsync, runIdleAsync = runIdleAsync)
+    val __obj = js.Dynamic.literal(hasThreadAccess = hasThreadAccess, onacceleratorkeyactivated = onacceleratorkeyactivated, processEvents = js.Any.fromFunction1(processEvents), runAsync = js.Any.fromFunction2(runAsync), runIdleAsync = js.Any.fromFunction1(runIdleAsync))
   
     __obj.asInstanceOf[ICoreDispatcher]
   }

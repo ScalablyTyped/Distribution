@@ -52,13 +52,13 @@ object univariateColorSizeContinuousRendererResult {
     color: ContinuousRendererResultColor,
     constructor: js.Function,
     defaultValuesUsed: scala.Boolean,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     renderer: ClassBreaksRenderer,
     size: ContinuousRendererResultSize,
     statistics: SummaryStatisticsResult
   ): univariateColorSizeContinuousRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId, color = color, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer, size = size, statistics = statistics)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, color = color, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer, size = size, statistics = statistics)
   
     __obj.asInstanceOf[univariateColorSizeContinuousRendererResult]
   }

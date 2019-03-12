@@ -21,15 +21,12 @@ object PlatformStatic {
   def apply(
     OS: PlatformOSType,
     Version: scala.Double | java.lang.String,
-    select_default: js.Function1[
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+    select_default: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ platform in react-primitives.react-primitives.PlatformOSType | 'default' ]:? T}
-    */ reactDashPrimitivesLib.reactDashPrimitivesLibStrings.PlatformStatic with js.Any, 
-      js.Any
-    ]
+    */ reactDashPrimitivesLib.reactDashPrimitivesLibStrings.PlatformStatic with js.Any => js.Any
   ): PlatformStatic = {
     val __obj = js.Dynamic.literal(OS = OS.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
-    __obj.updateDynamic("select")(select_default)
+    __obj.updateDynamic("select")(js.Any.fromFunction1(select_default))
     __obj.asInstanceOf[PlatformStatic]
   }
 }

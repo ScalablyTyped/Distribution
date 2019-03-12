@@ -31,15 +31,15 @@ object XFixedText {
   def apply(
     Alignment: scala.Double,
     Text: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getAlignment: js.Function0[scala.Double],
-    getText: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setAlignment: js.Function1[scala.Double, scala.Unit],
-    setText: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getAlignment: () => scala.Double,
+    getText: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setAlignment: scala.Double => scala.Unit,
+    setText: java.lang.String => scala.Unit
   ): XFixedText = {
-    val __obj = js.Dynamic.literal(Alignment = Alignment, Text = Text, acquire = acquire, getAlignment = getAlignment, getText = getText, queryInterface = queryInterface, release = release, setAlignment = setAlignment, setText = setText)
+    val __obj = js.Dynamic.literal(Alignment = Alignment, Text = Text, acquire = js.Any.fromFunction0(acquire), getAlignment = js.Any.fromFunction0(getAlignment), getText = js.Any.fromFunction0(getText), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setAlignment = js.Any.fromFunction1(setAlignment), setText = js.Any.fromFunction1(setText))
   
     __obj.asInstanceOf[XFixedText]
   }

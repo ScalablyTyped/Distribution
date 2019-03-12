@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Collapsible: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsCollapsibleMod.CollapsibleProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    CollapsibleProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
       reactLib.HTMLDivElement
     ]), 

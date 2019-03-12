@@ -13,10 +13,10 @@ trait tmhDynamicLocaleService extends js.Object {
 object tmhDynamicLocaleService {
   @scala.inline
   def apply(
-    get: js.Function0[java.lang.String],
-    set: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[java.lang.String]]
+    get: () => java.lang.String,
+    set: java.lang.String => angularLib.angularMod.angularNs.IPromise[java.lang.String]
   ): tmhDynamicLocaleService = {
-    val __obj = js.Dynamic.literal(get = get, set = set)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), set = js.Any.fromFunction1(set))
   
     __obj.asInstanceOf[tmhDynamicLocaleService]
   }

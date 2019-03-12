@@ -14,11 +14,11 @@ trait BaseX extends js.Object {
 object BaseX {
   @scala.inline
   def apply(
-    decode: js.Function1[java.lang.String, nodeLib.Buffer],
-    decodeUnsafe: js.Function1[java.lang.String, nodeLib.Buffer],
-    encode: js.Function1[nodeLib.Buffer, java.lang.String]
+    decode: java.lang.String => nodeLib.Buffer,
+    decodeUnsafe: java.lang.String => nodeLib.Buffer,
+    encode: nodeLib.Buffer => java.lang.String
   ): BaseX = {
-    val __obj = js.Dynamic.literal(decode = decode, decodeUnsafe = decodeUnsafe, encode = encode)
+    val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), decodeUnsafe = js.Any.fromFunction1(decodeUnsafe), encode = js.Any.fromFunction1(encode))
   
     __obj.asInstanceOf[BaseX]
   }

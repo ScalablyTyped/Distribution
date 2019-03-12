@@ -17,20 +17,11 @@ trait CommentThreadsResource extends js.Object {
 object CommentThreadsResource {
   @scala.inline
   def apply(
-    insert: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CommentThread]
-    ],
-    list: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AllThreadsRelatedToChannelId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CommentThreadListResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CommentThread]
-    ]
+    insert: gapiDotClientDotYoutubeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[CommentThread],
+    list: gapiDotClientDotYoutubeLib.Anon_AllThreadsRelatedToChannelId => gapiDotClientLib.gapiNs.clientNs.Request[CommentThreadListResponse],
+    update: gapiDotClientDotYoutubeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[CommentThread]
   ): CommentThreadsResource = {
-    val __obj = js.Dynamic.literal(insert = insert, list = list, update = update)
+    val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[CommentThreadsResource]
   }

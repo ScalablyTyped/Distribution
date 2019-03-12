@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LinkProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLAnchorElement] {
+  extends reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLAnchorElement] {
   /**
     * Determines the effect on browser history
     */
@@ -22,7 +22,7 @@ trait LinkProps
     */
   var navigating: js.UndefOr[
     js.Function3[
-      /* e */ reactLib.MouseEvent, 
+      /* e */ stdLib.MouseEvent, 
       /* domId */ java.lang.String, 
       /* link */ java.lang.String, 
       scala.Boolean
@@ -37,22 +37,17 @@ trait LinkProps
 object LinkProps {
   @scala.inline
   def apply(
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLAnchorElement] = null,
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLAnchorElement] = null,
     historyAction: navigationDashReactLib.navigationDashReactLibStrings.add | navigationDashReactLib.navigationDashReactLibStrings.replace | navigationDashReactLib.navigationDashReactLibStrings.none = null,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
-    navigating: js.Function3[
-      /* e */ reactLib.MouseEvent, 
-      /* domId */ java.lang.String, 
-      /* link */ java.lang.String, 
-      scala.Boolean
-    ] = null,
+    navigating: (/* e */ stdLib.MouseEvent, /* domId */ java.lang.String, /* link */ java.lang.String) => scala.Boolean = null,
     stateNavigator: navigationLib.navigationMod.StateNavigator = null
   ): LinkProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
     if (historyAction != null) __obj.updateDynamic("historyAction")(historyAction.asInstanceOf[js.Any])
     if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
-    if (navigating != null) __obj.updateDynamic("navigating")(navigating)
+    if (navigating != null) __obj.updateDynamic("navigating")(js.Any.fromFunction3(navigating))
     if (stateNavigator != null) __obj.updateDynamic("stateNavigator")(stateNavigator)
     __obj.asInstanceOf[LinkProps]
   }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class WindowScroller ()
   extends reactLib.reactMod.PureComponent[WindowScrollerProps, WindowScrollerState, js.Any] {
   def updatePosition(): scala.Unit = js.native
-  def updatePosition(scrollElement: reactLib.HTMLElement): scala.Unit = js.native
+  def updatePosition(scrollElement: stdLib.HTMLElement): scala.Unit = js.native
 }
 
 /* static members */

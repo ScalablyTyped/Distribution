@@ -18,7 +18,7 @@ trait XSheetPageBreak
     * property of the column.
     * @returns a sequence of structs containing column page break data.
     */
-  val ColumnPageBreaks: activexDashInteropLib.SafeArray[TablePageBreakData]
+  val ColumnPageBreaks: stdLib.SafeArray[TablePageBreakData]
   /**
     * returns a sequence of descriptions of all vertical page breaks on the sheet.
     *
@@ -26,7 +26,7 @@ trait XSheetPageBreak
     * of the row.
     * @returns a sequence of structs containing row page break data.
     */
-  val RowPageBreaks: activexDashInteropLib.SafeArray[TablePageBreakData]
+  val RowPageBreaks: stdLib.SafeArray[TablePageBreakData]
   /**
     * returns a sequence of descriptions of all horizontal page breaks on the sheet.
     *
@@ -34,7 +34,7 @@ trait XSheetPageBreak
     * property of the column.
     * @returns a sequence of structs containing column page break data.
     */
-  def getColumnPageBreaks(): activexDashInteropLib.SafeArray[TablePageBreakData]
+  def getColumnPageBreaks(): stdLib.SafeArray[TablePageBreakData]
   /**
     * returns a sequence of descriptions of all vertical page breaks on the sheet.
     *
@@ -42,7 +42,7 @@ trait XSheetPageBreak
     * of the row.
     * @returns a sequence of structs containing row page break data.
     */
-  def getRowPageBreaks(): activexDashInteropLib.SafeArray[TablePageBreakData]
+  def getRowPageBreaks(): stdLib.SafeArray[TablePageBreakData]
   /** removes all manual page breaks on the sheet. */
   def removeAllManualPageBreaks(): scala.Unit
 }
@@ -50,16 +50,16 @@ trait XSheetPageBreak
 object XSheetPageBreak {
   @scala.inline
   def apply(
-    ColumnPageBreaks: activexDashInteropLib.SafeArray[TablePageBreakData],
-    RowPageBreaks: activexDashInteropLib.SafeArray[TablePageBreakData],
-    acquire: js.Function0[scala.Unit],
-    getColumnPageBreaks: js.Function0[activexDashInteropLib.SafeArray[TablePageBreakData]],
-    getRowPageBreaks: js.Function0[activexDashInteropLib.SafeArray[TablePageBreakData]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeAllManualPageBreaks: js.Function0[scala.Unit]
+    ColumnPageBreaks: stdLib.SafeArray[TablePageBreakData],
+    RowPageBreaks: stdLib.SafeArray[TablePageBreakData],
+    acquire: () => scala.Unit,
+    getColumnPageBreaks: () => stdLib.SafeArray[TablePageBreakData],
+    getRowPageBreaks: () => stdLib.SafeArray[TablePageBreakData],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeAllManualPageBreaks: () => scala.Unit
   ): XSheetPageBreak = {
-    val __obj = js.Dynamic.literal(ColumnPageBreaks = ColumnPageBreaks, RowPageBreaks = RowPageBreaks, acquire = acquire, getColumnPageBreaks = getColumnPageBreaks, getRowPageBreaks = getRowPageBreaks, queryInterface = queryInterface, release = release, removeAllManualPageBreaks = removeAllManualPageBreaks)
+    val __obj = js.Dynamic.literal(ColumnPageBreaks = ColumnPageBreaks, RowPageBreaks = RowPageBreaks, acquire = js.Any.fromFunction0(acquire), getColumnPageBreaks = js.Any.fromFunction0(getColumnPageBreaks), getRowPageBreaks = js.Any.fromFunction0(getRowPageBreaks), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeAllManualPageBreaks = js.Any.fromFunction0(removeAllManualPageBreaks))
   
     __obj.asInstanceOf[XSheetPageBreak]
   }

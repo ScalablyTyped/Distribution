@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val FlexboxPropTypes: reactDashFoundationLib.Anon_AlignXAlignY = js.native
-  val GeneralPropTypes: reactDashFoundationLib.Anon_Float = js.native
+  val GeneralPropTypes: reactDashFoundationLib.Anon_ComponentName = js.native
   def addBreakpoint(prop: java.lang.String, size: java.lang.String): java.lang.String = js.native
   def createClassName(args: js.Any*): java.lang.String = js.native
-  def flexboxClassNames(props: reactDashFoundationLib.utilsMod.FlexboxPropTypes): org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Boolean]] = js.native
-  def generalClassNames(props: reactDashFoundationLib.utilsMod.GeneralPropTypes): reactDashFoundationLib.Anon_Clearfix = js.native
+  def flexboxClassNames(props: FlexboxPropTypes): org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Boolean]] = js.native
+  def generalClassNames(props: GeneralPropTypes): reactDashFoundationLib.Anon_Clearfix = js.native
   def isDefined(value: js.Any): scala.Boolean = js.native
   def objectKeys(`object`: js.Object): js.Array[java.lang.String] = js.native
   def objectValues(`object`: js.Object): js.Array[_] = js.native

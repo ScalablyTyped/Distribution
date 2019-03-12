@@ -32,7 +32,7 @@ trait Torrent
   def createServer(opts: nodeLib.httpMod.RequestOptions): nodeLib.httpMod.Server = js.native
   def deselect(start: scala.Double, end: scala.Double, priority: scala.Double): scala.Unit = js.native
   def destroy(): scala.Unit = js.native
-  def destroy(cb: js.Function1[/* err */ nodeLib.Error | java.lang.String, scala.Unit]): scala.Unit = js.native
+  def destroy(cb: js.Function1[/* err */ stdLib.Error | java.lang.String, scala.Unit]): scala.Unit = js.native
   def on(
     event: webtorrentLib.webtorrentLibStrings.noPeers,
     callback: js.Function1[
@@ -50,7 +50,7 @@ trait Torrent
   @JSName("on")
   def on_error(
     event: webtorrentLib.webtorrentLibStrings.error,
-    callback: js.Function1[/* err */ nodeLib.Error | java.lang.String, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error | java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_infoHash(event: webtorrentLib.webtorrentLibStrings.infoHash, callback: js.Function0[scala.Unit]): this.type = js.native
@@ -66,7 +66,7 @@ trait Torrent
   @JSName("on")
   def on_warning(
     event: webtorrentLib.webtorrentLibStrings.warning,
-    callback: js.Function1[/* err */ nodeLib.Error | java.lang.String, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error | java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_wire(

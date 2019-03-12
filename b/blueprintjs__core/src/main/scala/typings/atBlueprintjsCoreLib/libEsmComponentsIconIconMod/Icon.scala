@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Icon ()
   extends reactLib.reactMod.PureComponent[
-      IIconProps with reactLib.reactMod.ReactNs.DOMAttributes[reactLib.HTMLElement], 
+      IIconProps with reactLib.reactMod.ReactNs.DOMAttributes[stdLib.HTMLElement], 
       js.Object, 
       js.Any
     ] {

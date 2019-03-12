@@ -24,7 +24,7 @@ class ClientRequest protected () extends EventEmitter {
   @JSName("addListener")
   def addListener_error(
     event: electronLib.electronLibStrings.error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_finish(event: electronLib.electronLibStrings.finish, listener: js.Function): this.type = js.native
@@ -96,7 +96,7 @@ class ClientRequest protected () extends EventEmitter {
   @JSName("on")
   def on_error(
     event: electronLib.electronLibStrings.error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /**
     * Emitted just after the last chunk of the request's data has been written into
@@ -146,7 +146,7 @@ class ClientRequest protected () extends EventEmitter {
   @JSName("once")
   def once_error(
     event: electronLib.electronLibStrings.error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_finish(event: electronLib.electronLibStrings.finish, listener: js.Function): this.type = js.native
@@ -187,7 +187,7 @@ class ClientRequest protected () extends EventEmitter {
   @JSName("removeListener")
   def removeListener_error(
     event: electronLib.electronLibStrings.error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_finish(event: electronLib.electronLibStrings.finish, listener: js.Function): this.type = js.native

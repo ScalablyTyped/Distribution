@@ -36,7 +36,7 @@ object ScreenSpaceCameraController {
   @scala.inline
   def apply(
     bounceAnimationTime: scala.Double,
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     enableCollisionDetection: scala.Boolean,
     enableInputs: scala.Boolean,
     enableLook: scala.Boolean,
@@ -47,7 +47,7 @@ object ScreenSpaceCameraController {
     inertiaSpin: scala.Double,
     inertiaTranslate: scala.Double,
     inertiaZoom: scala.Double,
-    isDestroyed: js.Function0[scala.Boolean],
+    isDestroyed: () => scala.Boolean,
     lookEventTypes: CameraEventType | js.Array[_],
     maximumMovementRatio: scala.Double,
     maximumZoomDistance: scala.Double,
@@ -60,7 +60,7 @@ object ScreenSpaceCameraController {
     translateEventTypes: CameraEventType | js.Array[_],
     zoomEventTypes: CameraEventType | js.Array[_]
   ): ScreenSpaceCameraController = {
-    val __obj = js.Dynamic.literal(bounceAnimationTime = bounceAnimationTime, destroy = destroy, enableCollisionDetection = enableCollisionDetection, enableInputs = enableInputs, enableLook = enableLook, enableRotate = enableRotate, enableTilt = enableTilt, enableTranslate = enableTranslate, enableZoom = enableZoom, inertiaSpin = inertiaSpin, inertiaTranslate = inertiaTranslate, inertiaZoom = inertiaZoom, isDestroyed = isDestroyed, lookEventTypes = lookEventTypes.asInstanceOf[js.Any], maximumMovementRatio = maximumMovementRatio, maximumZoomDistance = maximumZoomDistance, minimumCollisionTerrainHeight = minimumCollisionTerrainHeight, minimumPickingTerrainHeight = minimumPickingTerrainHeight, minimumTrackBallHeight = minimumTrackBallHeight, minimumZoomDistance = minimumZoomDistance, rotateEventTypes = rotateEventTypes.asInstanceOf[js.Any], tiltEventTypes = tiltEventTypes.asInstanceOf[js.Any], translateEventTypes = translateEventTypes.asInstanceOf[js.Any], zoomEventTypes = zoomEventTypes.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bounceAnimationTime = bounceAnimationTime, destroy = js.Any.fromFunction0(destroy), enableCollisionDetection = enableCollisionDetection, enableInputs = enableInputs, enableLook = enableLook, enableRotate = enableRotate, enableTilt = enableTilt, enableTranslate = enableTranslate, enableZoom = enableZoom, inertiaSpin = inertiaSpin, inertiaTranslate = inertiaTranslate, inertiaZoom = inertiaZoom, isDestroyed = js.Any.fromFunction0(isDestroyed), lookEventTypes = lookEventTypes.asInstanceOf[js.Any], maximumMovementRatio = maximumMovementRatio, maximumZoomDistance = maximumZoomDistance, minimumCollisionTerrainHeight = minimumCollisionTerrainHeight, minimumPickingTerrainHeight = minimumPickingTerrainHeight, minimumTrackBallHeight = minimumTrackBallHeight, minimumZoomDistance = minimumZoomDistance, rotateEventTypes = rotateEventTypes.asInstanceOf[js.Any], tiltEventTypes = tiltEventTypes.asInstanceOf[js.Any], translateEventTypes = translateEventTypes.asInstanceOf[js.Any], zoomEventTypes = zoomEventTypes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScreenSpaceCameraController]
   }

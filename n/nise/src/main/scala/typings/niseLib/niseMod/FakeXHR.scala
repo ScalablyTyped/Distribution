@@ -14,9 +14,9 @@ object FakeXHR {
   @scala.inline
   def apply(
     FakeXMLHttpRequest: FakeXMLHttpRequestStatic,
-    useFakeXMLHttpRequest: js.Function0[FakeXMLHttpRequestStatic]
+    useFakeXMLHttpRequest: () => FakeXMLHttpRequestStatic
   ): FakeXHR = {
-    val __obj = js.Dynamic.literal(FakeXMLHttpRequest = FakeXMLHttpRequest, useFakeXMLHttpRequest = useFakeXMLHttpRequest)
+    val __obj = js.Dynamic.literal(FakeXMLHttpRequest = FakeXMLHttpRequest, useFakeXMLHttpRequest = js.Any.fromFunction0(useFakeXMLHttpRequest))
   
     __obj.asInstanceOf[FakeXHR]
   }

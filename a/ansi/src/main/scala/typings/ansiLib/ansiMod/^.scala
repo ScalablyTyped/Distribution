@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(stream: nodeLib.streamMod.Stream): ansiLib.ansiMod.ansiNs.Cursor = js.native
-  def apply(stream: nodeLib.streamMod.Stream, options: ansiLib.ansiMod.CursorOptions): ansiLib.ansiMod.ansiNs.Cursor = js.native
+  def apply(stream: nodeLib.streamMod.Stream, options: CursorOptions): ansiLib.ansiMod.ansiNs.Cursor = js.native
 }
 

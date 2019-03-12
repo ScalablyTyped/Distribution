@@ -11,8 +11,8 @@ trait Anon_Remove extends js.Object {
 
 object Anon_Remove {
   @scala.inline
-  def apply(remove: js.Function0[scala.Unit]): Anon_Remove = {
-    val __obj = js.Dynamic.literal(remove = remove)
+  def apply(remove: () => scala.Unit): Anon_Remove = {
+    val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove))
   
     __obj.asInstanceOf[Anon_Remove]
   }

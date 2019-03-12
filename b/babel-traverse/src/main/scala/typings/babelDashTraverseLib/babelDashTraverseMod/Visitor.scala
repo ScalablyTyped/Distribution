@@ -331,7 +331,30 @@ object Visitor {
     TemplateLiteral: VisitNode[S, babelDashTypesLib.babelDashTypesMod.TemplateLiteral] = null,
     Terminatorless: VisitNode[S, babelDashTypesLib.babelDashTypesMod.Terminatorless] = null,
     ThisExpression: VisitNode[S, babelDashTypesLib.babelDashTypesMod.ThisExpression] = null,
-    VisitNodeObject: VisitNodeObject[Node] = null
+    ThisTypeAnnotation: VisitNode[S, babelDashTypesLib.babelDashTypesMod.ThisTypeAnnotation] = null,
+    ThrowStatement: VisitNode[S, babelDashTypesLib.babelDashTypesMod.ThrowStatement] = null,
+    TryStatement: VisitNode[S, babelDashTypesLib.babelDashTypesMod.TryStatement] = null,
+    TupleTypeAnnotation: VisitNode[S, babelDashTypesLib.babelDashTypesMod.TupleTypeAnnotation] = null,
+    TypeAlias: VisitNode[S, babelDashTypesLib.babelDashTypesMod.TypeAlias] = null,
+    TypeAnnotation: VisitNode[S, babelDashTypesLib.babelDashTypesMod.TypeAnnotation] = null,
+    TypeCastExpression: VisitNode[S, babelDashTypesLib.babelDashTypesMod.TypeCastExpression] = null,
+    TypeParameterDeclaration: VisitNode[S, babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration] = null,
+    TypeParameterInstantiation: VisitNode[S, babelDashTypesLib.babelDashTypesMod.TypeParameterInstantiation] = null,
+    TypeofTypeAnnotation: VisitNode[S, babelDashTypesLib.babelDashTypesMod.TypeofTypeAnnotation] = null,
+    UnaryExpression: VisitNode[S, babelDashTypesLib.babelDashTypesMod.UnaryExpression] = null,
+    UnaryLike: VisitNode[S, babelDashTypesLib.babelDashTypesMod.UnaryLike] = null,
+    UnionTypeAnnotation: VisitNode[S, babelDashTypesLib.babelDashTypesMod.UnionTypeAnnotation] = null,
+    UpdateExpression: VisitNode[S, babelDashTypesLib.babelDashTypesMod.UpdateExpression] = null,
+    UserWhitespacable: VisitNode[S, babelDashTypesLib.babelDashTypesMod.UserWhitespacable] = null,
+    VariableDeclaration: VisitNode[S, babelDashTypesLib.babelDashTypesMod.VariableDeclaration] = null,
+    VariableDeclarator: VisitNode[S, babelDashTypesLib.babelDashTypesMod.VariableDeclarator] = null,
+    VoidTypeAnnotation: VisitNode[S, babelDashTypesLib.babelDashTypesMod.VoidTypeAnnotation] = null,
+    While: VisitNode[S, babelDashTypesLib.babelDashTypesMod.While] = null,
+    WhileStatement: VisitNode[S, babelDashTypesLib.babelDashTypesMod.WhileStatement] = null,
+    WithStatement: VisitNode[S, babelDashTypesLib.babelDashTypesMod.WithStatement] = null,
+    YieldExpression: VisitNode[S, babelDashTypesLib.babelDashTypesMod.YieldExpression] = null,
+    enter: (/* path */ NodePath[Node], /* state */ js.Any) => scala.Unit = null,
+    exit: (/* path */ NodePath[Node], /* state */ js.Any) => scala.Unit = null
   ): Visitor[S] = {
     val __obj = js.Dynamic.literal()
     if (AnyTypeAnnotation != null) __obj.updateDynamic("AnyTypeAnnotation")(AnyTypeAnnotation.asInstanceOf[js.Any])
@@ -483,7 +506,30 @@ object Visitor {
     if (TemplateLiteral != null) __obj.updateDynamic("TemplateLiteral")(TemplateLiteral.asInstanceOf[js.Any])
     if (Terminatorless != null) __obj.updateDynamic("Terminatorless")(Terminatorless.asInstanceOf[js.Any])
     if (ThisExpression != null) __obj.updateDynamic("ThisExpression")(ThisExpression.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, VisitNodeObject)
+    if (ThisTypeAnnotation != null) __obj.updateDynamic("ThisTypeAnnotation")(ThisTypeAnnotation.asInstanceOf[js.Any])
+    if (ThrowStatement != null) __obj.updateDynamic("ThrowStatement")(ThrowStatement.asInstanceOf[js.Any])
+    if (TryStatement != null) __obj.updateDynamic("TryStatement")(TryStatement.asInstanceOf[js.Any])
+    if (TupleTypeAnnotation != null) __obj.updateDynamic("TupleTypeAnnotation")(TupleTypeAnnotation.asInstanceOf[js.Any])
+    if (TypeAlias != null) __obj.updateDynamic("TypeAlias")(TypeAlias.asInstanceOf[js.Any])
+    if (TypeAnnotation != null) __obj.updateDynamic("TypeAnnotation")(TypeAnnotation.asInstanceOf[js.Any])
+    if (TypeCastExpression != null) __obj.updateDynamic("TypeCastExpression")(TypeCastExpression.asInstanceOf[js.Any])
+    if (TypeParameterDeclaration != null) __obj.updateDynamic("TypeParameterDeclaration")(TypeParameterDeclaration.asInstanceOf[js.Any])
+    if (TypeParameterInstantiation != null) __obj.updateDynamic("TypeParameterInstantiation")(TypeParameterInstantiation.asInstanceOf[js.Any])
+    if (TypeofTypeAnnotation != null) __obj.updateDynamic("TypeofTypeAnnotation")(TypeofTypeAnnotation.asInstanceOf[js.Any])
+    if (UnaryExpression != null) __obj.updateDynamic("UnaryExpression")(UnaryExpression.asInstanceOf[js.Any])
+    if (UnaryLike != null) __obj.updateDynamic("UnaryLike")(UnaryLike.asInstanceOf[js.Any])
+    if (UnionTypeAnnotation != null) __obj.updateDynamic("UnionTypeAnnotation")(UnionTypeAnnotation.asInstanceOf[js.Any])
+    if (UpdateExpression != null) __obj.updateDynamic("UpdateExpression")(UpdateExpression.asInstanceOf[js.Any])
+    if (UserWhitespacable != null) __obj.updateDynamic("UserWhitespacable")(UserWhitespacable.asInstanceOf[js.Any])
+    if (VariableDeclaration != null) __obj.updateDynamic("VariableDeclaration")(VariableDeclaration.asInstanceOf[js.Any])
+    if (VariableDeclarator != null) __obj.updateDynamic("VariableDeclarator")(VariableDeclarator.asInstanceOf[js.Any])
+    if (VoidTypeAnnotation != null) __obj.updateDynamic("VoidTypeAnnotation")(VoidTypeAnnotation.asInstanceOf[js.Any])
+    if (While != null) __obj.updateDynamic("While")(While.asInstanceOf[js.Any])
+    if (WhileStatement != null) __obj.updateDynamic("WhileStatement")(WhileStatement.asInstanceOf[js.Any])
+    if (WithStatement != null) __obj.updateDynamic("WithStatement")(WithStatement.asInstanceOf[js.Any])
+    if (YieldExpression != null) __obj.updateDynamic("YieldExpression")(YieldExpression.asInstanceOf[js.Any])
+    if (enter != null) __obj.updateDynamic("enter")(js.Any.fromFunction2(enter))
+    if (exit != null) __obj.updateDynamic("exit")(js.Any.fromFunction2(exit))
     __obj.asInstanceOf[Visitor[S]]
   }
 }

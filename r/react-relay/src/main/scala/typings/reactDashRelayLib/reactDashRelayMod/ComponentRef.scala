@@ -11,9 +11,9 @@ trait ComponentRef extends js.Object {
 
 object ComponentRef {
   @scala.inline
-  def apply(componentRef: js.Function1[/* ref */ js.Any, scala.Unit] = null): ComponentRef = {
+  def apply(componentRef: /* ref */ js.Any => scala.Unit = null): ComponentRef = {
     val __obj = js.Dynamic.literal()
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef)
+    if (componentRef != null) __obj.updateDynamic("componentRef")(js.Any.fromFunction1(componentRef))
     __obj.asInstanceOf[ComponentRef]
   }
 }

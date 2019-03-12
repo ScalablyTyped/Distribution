@@ -24,12 +24,12 @@ object AlgorithmIdentifier {
   def apply(
     algorithmId: java.lang.String,
     algorithmParams: js.Any,
-    fromSchema: js.Function1[js.Any, scala.Unit],
-    isEqual: js.Function1[AlgorithmIdentifier, scala.Boolean],
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    fromSchema: js.Any => scala.Unit,
+    isEqual: AlgorithmIdentifier => scala.Boolean,
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): AlgorithmIdentifier = {
-    val __obj = js.Dynamic.literal(algorithmId = algorithmId, algorithmParams = algorithmParams, fromSchema = fromSchema, isEqual = isEqual, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(algorithmId = algorithmId, algorithmParams = algorithmParams, fromSchema = js.Any.fromFunction1(fromSchema), isEqual = js.Any.fromFunction1(isEqual), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[AlgorithmIdentifier]
   }

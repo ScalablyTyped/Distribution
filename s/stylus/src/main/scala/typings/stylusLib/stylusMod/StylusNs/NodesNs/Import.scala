@@ -13,24 +13,24 @@ trait Import extends Node {
 object Import {
   @scala.inline
   def apply(
-    clone: js.Function0[Node],
-    coerce: js.Function1[Node, Node],
+    clone: () => Node,
+    coerce: Node => Node,
     column: scala.Double,
-    eval: js.Function0[Node],
+    eval: () => Node,
     filename: java.lang.String,
     first: Node,
     hash: java.lang.String,
     lineno: scala.Double,
     nodeName: java.lang.String,
     once: scala.Boolean,
-    operate: js.Function2[java.lang.String, Node, Node],
+    operate: (java.lang.String, Node) => Node,
     path: Expression,
-    shouldCoerce: js.Function1[java.lang.String, scala.Boolean],
-    toBoolean: js.Function0[Boolean],
-    toExpression: js.Function0[Expression],
-    toJSON: js.Function0[stylusLib.Anon_ColumnFilenameLinenoPath]
+    shouldCoerce: java.lang.String => scala.Boolean,
+    toBoolean: () => Boolean,
+    toExpression: () => Expression,
+    toJSON: () => stylusLib.Anon_ColumnFilenameLinenoPath
   ): Import = {
-    val __obj = js.Dynamic.literal(clone = clone, coerce = coerce, column = column, eval = eval, filename = filename, first = first, hash = hash, lineno = lineno, nodeName = nodeName, once = once, operate = operate, path = path, shouldCoerce = shouldCoerce, toBoolean = toBoolean, toExpression = toExpression, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), coerce = js.Any.fromFunction1(coerce), column = column, eval = js.Any.fromFunction0(eval), filename = filename, first = first, hash = hash, lineno = lineno, nodeName = nodeName, once = once, operate = js.Any.fromFunction2(operate), path = path, shouldCoerce = js.Any.fromFunction1(shouldCoerce), toBoolean = js.Any.fromFunction0(toBoolean), toExpression = js.Any.fromFunction0(toExpression), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[Import]
   }

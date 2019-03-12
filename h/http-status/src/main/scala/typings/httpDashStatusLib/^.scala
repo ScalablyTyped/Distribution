@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var httpStatus: httpDashStatusLib.HttpStatus = js.native
+  var httpStatus: HttpStatus = js.native
 }
 

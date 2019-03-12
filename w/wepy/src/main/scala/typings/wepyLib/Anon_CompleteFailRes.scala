@@ -13,12 +13,8 @@ trait Anon_CompleteFailRes extends js.Object {
 
 object Anon_CompleteFailRes {
   @scala.inline
-  def apply(
-    complete: js.Function0[scala.Unit],
-    fail: js.Function0[scala.Unit],
-    success: js.Function1[Anon_Northeast, scala.Unit]
-  ): Anon_CompleteFailRes = {
-    val __obj = js.Dynamic.literal(complete = complete, fail = fail, success = success)
+  def apply(complete: () => scala.Unit, fail: () => scala.Unit, success: Anon_Northeast => scala.Unit): Anon_CompleteFailRes = {
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), fail = js.Any.fromFunction0(fail), success = js.Any.fromFunction1(success))
   
     __obj.asInstanceOf[Anon_CompleteFailRes]
   }

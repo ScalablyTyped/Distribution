@@ -13,10 +13,10 @@ trait ErrorUtils extends js.Object {
 object ErrorUtils {
   @scala.inline
   def apply(
-    getGlobalHandler: js.Function0[reactDashNativeLib.ErrorHandlerCallback],
-    setGlobalHandler: js.Function1[reactDashNativeLib.ErrorHandlerCallback, scala.Unit]
+    getGlobalHandler: () => reactDashNativeLib.ErrorHandlerCallback,
+    setGlobalHandler: reactDashNativeLib.ErrorHandlerCallback => scala.Unit
   ): ErrorUtils = {
-    val __obj = js.Dynamic.literal(getGlobalHandler = getGlobalHandler, setGlobalHandler = setGlobalHandler)
+    val __obj = js.Dynamic.literal(getGlobalHandler = js.Any.fromFunction0(getGlobalHandler), setGlobalHandler = js.Any.fromFunction1(setGlobalHandler))
   
     __obj.asInstanceOf[ErrorUtils]
   }

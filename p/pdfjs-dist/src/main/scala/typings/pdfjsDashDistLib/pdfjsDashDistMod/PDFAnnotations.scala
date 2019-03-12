@@ -21,15 +21,15 @@ trait PDFAnnotations extends js.Object {
 object PDFAnnotations {
   @scala.inline
   def apply(
-    getData: js.Function0[PDFAnnotationData],
-    getEmptyContainer: js.Function2[java.lang.String, js.Array[scala.Double], pdfjsDashDistLib.HTMLElement],
-    getHtmlElement: js.Function1[js.Any, pdfjsDashDistLib.HTMLElement],
-    getOperatorList: js.Function1[js.Any, PDFPromise[_]],
-    hasHtml: js.Function0[scala.Boolean],
-    isViewable: js.Function0[scala.Boolean],
-    loadResources: js.Function1[js.Any, PDFPromise[_]]
+    getData: () => PDFAnnotationData,
+    getEmptyContainer: (java.lang.String, js.Array[scala.Double]) => pdfjsDashDistLib.HTMLElement,
+    getHtmlElement: js.Any => pdfjsDashDistLib.HTMLElement,
+    getOperatorList: js.Any => PDFPromise[_],
+    hasHtml: () => scala.Boolean,
+    isViewable: () => scala.Boolean,
+    loadResources: js.Any => PDFPromise[_]
   ): PDFAnnotations = {
-    val __obj = js.Dynamic.literal(getData = getData, getEmptyContainer = getEmptyContainer, getHtmlElement = getHtmlElement, getOperatorList = getOperatorList, hasHtml = hasHtml, isViewable = isViewable, loadResources = loadResources)
+    val __obj = js.Dynamic.literal(getData = js.Any.fromFunction0(getData), getEmptyContainer = js.Any.fromFunction2(getEmptyContainer), getHtmlElement = js.Any.fromFunction1(getHtmlElement), getOperatorList = js.Any.fromFunction1(getOperatorList), hasHtml = js.Any.fromFunction0(hasHtml), isViewable = js.Any.fromFunction0(isViewable), loadResources = js.Any.fromFunction1(loadResources))
   
     __obj.asInstanceOf[PDFAnnotations]
   }

@@ -17,20 +17,11 @@ trait GroupsResource extends js.Object {
 object GroupsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotGroupssettingsLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Groups]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotGroupssettingsLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Groups]
-    ],
-    update: js.Function1[
-      gapiDotClientDotGroupssettingsLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Groups]
-    ]
+    get: gapiDotClientDotGroupssettingsLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Groups],
+    patch: gapiDotClientDotGroupssettingsLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Groups],
+    update: gapiDotClientDotGroupssettingsLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Groups]
   ): GroupsResource = {
-    val __obj = js.Dynamic.literal(get = get, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[GroupsResource]
   }

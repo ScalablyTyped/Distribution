@@ -22,21 +22,16 @@ trait ServerStreamFileResponseOptions extends js.Object {
 object ServerStreamFileResponseOptions {
   @scala.inline
   def apply(
-    getTrailers: js.Function1[/* trailers */ nodeLib.httpMod.OutgoingHttpHeaders, scala.Unit] = null,
+    getTrailers: /* trailers */ nodeLib.httpMod.OutgoingHttpHeaders => scala.Unit = null,
     length: scala.Int | scala.Double = null,
     offset: scala.Int | scala.Double = null,
-    statCheck: js.Function3[
-      /* stats */ nodeLib.fsMod.Stats, 
-      /* headers */ nodeLib.httpMod.OutgoingHttpHeaders, 
-      /* statOptions */ StatOptions, 
-      scala.Unit | scala.Boolean
-    ] = null
+    statCheck: (/* stats */ nodeLib.fsMod.Stats, /* headers */ nodeLib.httpMod.OutgoingHttpHeaders, /* statOptions */ StatOptions) => scala.Unit | scala.Boolean = null
   ): ServerStreamFileResponseOptions = {
     val __obj = js.Dynamic.literal()
-    if (getTrailers != null) __obj.updateDynamic("getTrailers")(getTrailers)
+    if (getTrailers != null) __obj.updateDynamic("getTrailers")(js.Any.fromFunction1(getTrailers))
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (statCheck != null) __obj.updateDynamic("statCheck")(statCheck)
+    if (statCheck != null) __obj.updateDynamic("statCheck")(js.Any.fromFunction3(statCheck))
     __obj.asInstanceOf[ServerStreamFileResponseOptions]
   }
 }

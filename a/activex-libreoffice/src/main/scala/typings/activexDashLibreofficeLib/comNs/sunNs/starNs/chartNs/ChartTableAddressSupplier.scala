@@ -23,7 +23,7 @@ trait ChartTableAddressSupplier extends js.Object {
     * contains the addresses to the elements of a series. This sequence should contain one element for each series in the chart.
     * @see ChartSeriesAddress
     */
-  var SeriesAddresses: activexDashInteropLib.SafeArray[ChartSeriesAddress]
+  var SeriesAddresses: stdLib.SafeArray[ChartSeriesAddress]
   /** contains the address to the sub title. */
   var SubTitleAddress: java.lang.String
 }
@@ -33,7 +33,7 @@ object ChartTableAddressSupplier {
   def apply(
     CategoriesRangeAddress: java.lang.String,
     MainTitleAddress: java.lang.String,
-    SeriesAddresses: activexDashInteropLib.SafeArray[ChartSeriesAddress],
+    SeriesAddresses: stdLib.SafeArray[ChartSeriesAddress],
     SubTitleAddress: java.lang.String
   ): ChartTableAddressSupplier = {
     val __obj = js.Dynamic.literal(CategoriesRangeAddress = CategoriesRangeAddress, MainTitleAddress = MainTitleAddress, SeriesAddresses = SeriesAddresses, SubTitleAddress = SubTitleAddress)

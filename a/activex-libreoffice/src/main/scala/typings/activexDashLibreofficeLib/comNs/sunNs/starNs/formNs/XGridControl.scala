@@ -22,17 +22,17 @@ object XGridControl {
   @scala.inline
   def apply(
     CurrentColumnPosition: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addGridControlListener: js.Function1[XGridControlListener, scala.Unit],
-    getCurrentColumnPosition: js.Function0[scala.Double],
-    queryFieldData: js.Function2[scala.Double, activexDashLibreofficeLib.`type`, activexDashInteropLib.SafeArray[_]],
-    queryFieldDataType: js.Function1[activexDashLibreofficeLib.`type`, activexDashInteropLib.SafeArray[scala.Boolean]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeGridControlListener: js.Function1[XGridControlListener, scala.Unit],
-    setCurrentColumnPosition: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    addGridControlListener: XGridControlListener => scala.Unit,
+    getCurrentColumnPosition: () => scala.Double,
+    queryFieldData: (scala.Double, activexDashLibreofficeLib.`type`) => stdLib.SafeArray[_],
+    queryFieldDataType: activexDashLibreofficeLib.`type` => stdLib.SafeArray[scala.Boolean],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeGridControlListener: XGridControlListener => scala.Unit,
+    setCurrentColumnPosition: scala.Double => scala.Unit
   ): XGridControl = {
-    val __obj = js.Dynamic.literal(CurrentColumnPosition = CurrentColumnPosition, acquire = acquire, addGridControlListener = addGridControlListener, getCurrentColumnPosition = getCurrentColumnPosition, queryFieldData = queryFieldData, queryFieldDataType = queryFieldDataType, queryInterface = queryInterface, release = release, removeGridControlListener = removeGridControlListener, setCurrentColumnPosition = setCurrentColumnPosition)
+    val __obj = js.Dynamic.literal(CurrentColumnPosition = CurrentColumnPosition, acquire = js.Any.fromFunction0(acquire), addGridControlListener = js.Any.fromFunction1(addGridControlListener), getCurrentColumnPosition = js.Any.fromFunction0(getCurrentColumnPosition), queryFieldData = js.Any.fromFunction2(queryFieldData), queryFieldDataType = js.Any.fromFunction1(queryFieldDataType), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeGridControlListener = js.Any.fromFunction1(removeGridControlListener), setCurrentColumnPosition = js.Any.fromFunction1(setCurrentColumnPosition))
   
     __obj.asInstanceOf[XGridControl]
   }

@@ -50,58 +50,17 @@ trait MovementMethod extends js.Object {
 object MovementMethod {
   @scala.inline
   def apply(
-    canSelectArbitrarily: js.Function0[scala.Boolean],
-    initialize: js.Function2[
-      androiduixLib.androidNs.widgetNs.TextView, 
-      androiduixLib.androidNs.textNs.Spannable, 
-      scala.Unit
-    ],
-    onGenericMotionEvent: js.Function3[
-      androiduixLib.androidNs.widgetNs.TextView, 
-      androiduixLib.androidNs.textNs.Spannable, 
-      androiduixLib.androidNs.viewNs.MotionEvent, 
-      scala.Boolean
-    ],
-    onKeyDown: js.Function4[
-      androiduixLib.androidNs.widgetNs.TextView, 
-      androiduixLib.androidNs.textNs.Spannable, 
-      scala.Double, 
-      androiduixLib.androidNs.viewNs.KeyEvent, 
-      scala.Boolean
-    ],
-    onKeyOther: js.Function3[
-      androiduixLib.androidNs.widgetNs.TextView, 
-      androiduixLib.androidNs.textNs.Spannable, 
-      androiduixLib.androidNs.viewNs.KeyEvent, 
-      scala.Boolean
-    ],
-    onKeyUp: js.Function4[
-      androiduixLib.androidNs.widgetNs.TextView, 
-      androiduixLib.androidNs.textNs.Spannable, 
-      scala.Double, 
-      androiduixLib.androidNs.viewNs.KeyEvent, 
-      scala.Boolean
-    ],
-    onTakeFocus: js.Function3[
-      androiduixLib.androidNs.widgetNs.TextView, 
-      androiduixLib.androidNs.textNs.Spannable, 
-      scala.Double, 
-      scala.Unit
-    ],
-    onTouchEvent: js.Function3[
-      androiduixLib.androidNs.widgetNs.TextView, 
-      androiduixLib.androidNs.textNs.Spannable, 
-      androiduixLib.androidNs.viewNs.MotionEvent, 
-      scala.Boolean
-    ],
-    onTrackballEvent: js.Function3[
-      androiduixLib.androidNs.widgetNs.TextView, 
-      androiduixLib.androidNs.textNs.Spannable, 
-      androiduixLib.androidNs.viewNs.MotionEvent, 
-      scala.Boolean
-    ]
+    canSelectArbitrarily: () => scala.Boolean,
+    initialize: (androiduixLib.androidNs.widgetNs.TextView, androiduixLib.androidNs.textNs.Spannable) => scala.Unit,
+    onGenericMotionEvent: (androiduixLib.androidNs.widgetNs.TextView, androiduixLib.androidNs.textNs.Spannable, androiduixLib.androidNs.viewNs.MotionEvent) => scala.Boolean,
+    onKeyDown: (androiduixLib.androidNs.widgetNs.TextView, androiduixLib.androidNs.textNs.Spannable, scala.Double, androiduixLib.androidNs.viewNs.KeyEvent) => scala.Boolean,
+    onKeyOther: (androiduixLib.androidNs.widgetNs.TextView, androiduixLib.androidNs.textNs.Spannable, androiduixLib.androidNs.viewNs.KeyEvent) => scala.Boolean,
+    onKeyUp: (androiduixLib.androidNs.widgetNs.TextView, androiduixLib.androidNs.textNs.Spannable, scala.Double, androiduixLib.androidNs.viewNs.KeyEvent) => scala.Boolean,
+    onTakeFocus: (androiduixLib.androidNs.widgetNs.TextView, androiduixLib.androidNs.textNs.Spannable, scala.Double) => scala.Unit,
+    onTouchEvent: (androiduixLib.androidNs.widgetNs.TextView, androiduixLib.androidNs.textNs.Spannable, androiduixLib.androidNs.viewNs.MotionEvent) => scala.Boolean,
+    onTrackballEvent: (androiduixLib.androidNs.widgetNs.TextView, androiduixLib.androidNs.textNs.Spannable, androiduixLib.androidNs.viewNs.MotionEvent) => scala.Boolean
   ): MovementMethod = {
-    val __obj = js.Dynamic.literal(canSelectArbitrarily = canSelectArbitrarily, initialize = initialize, onGenericMotionEvent = onGenericMotionEvent, onKeyDown = onKeyDown, onKeyOther = onKeyOther, onKeyUp = onKeyUp, onTakeFocus = onTakeFocus, onTouchEvent = onTouchEvent, onTrackballEvent = onTrackballEvent)
+    val __obj = js.Dynamic.literal(canSelectArbitrarily = js.Any.fromFunction0(canSelectArbitrarily), initialize = js.Any.fromFunction2(initialize), onGenericMotionEvent = js.Any.fromFunction3(onGenericMotionEvent), onKeyDown = js.Any.fromFunction4(onKeyDown), onKeyOther = js.Any.fromFunction3(onKeyOther), onKeyUp = js.Any.fromFunction4(onKeyUp), onTakeFocus = js.Any.fromFunction3(onTakeFocus), onTouchEvent = js.Any.fromFunction3(onTouchEvent), onTrackballEvent = js.Any.fromFunction3(onTrackballEvent))
   
     __obj.asInstanceOf[MovementMethod]
   }

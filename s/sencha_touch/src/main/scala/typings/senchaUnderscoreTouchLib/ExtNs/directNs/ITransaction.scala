@@ -86,36 +86,36 @@ object ITransaction {
   def apply(
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     extend: java.lang.String = null,
-    getAction: js.Function0[_] = null,
-    getArgs: js.Function0[_] = null,
-    getCallback: js.Function0[_] = null,
-    getData: js.Function0[_] = null,
-    getForm: js.Function0[_] = null,
-    getId: js.Function0[_] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getMethod: js.Function0[_] = null,
-    getProvider: js.Function0[_] = null,
-    getRetryCount: js.Function0[scala.Double] = null,
+    getAction: () => _ = null,
+    getArgs: () => _ = null,
+    getCallback: () => _ = null,
+    getData: () => _ = null,
+    getForm: () => _ = null,
+    getId: () => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getMethod: () => _ = null,
+    getProvider: () => _ = null,
+    getRetryCount: () => scala.Double = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setAction: js.Function1[/* action */ js.UndefOr[js.Any], scala.Unit] = null,
-    setArgs: js.Function1[/* args */ js.UndefOr[js.Any], scala.Unit] = null,
-    setCallback: js.Function1[/* callback */ js.UndefOr[js.Any], scala.Unit] = null,
-    setData: js.Function1[/* data */ js.UndefOr[js.Any], scala.Unit] = null,
-    setForm: js.Function1[/* form */ js.UndefOr[js.Any], scala.Unit] = null,
-    setId: js.Function1[/* id */ js.UndefOr[js.Any], scala.Unit] = null,
-    setMethod: js.Function1[/* method */ js.UndefOr[js.Any], scala.Unit] = null,
-    setProvider: js.Function1[/* provider */ js.UndefOr[js.Any], scala.Unit] = null,
-    setRetryCount: js.Function1[/* retryCount */ js.UndefOr[scala.Double], scala.Unit] = null,
+    setAction: /* action */ js.UndefOr[js.Any] => scala.Unit = null,
+    setArgs: /* args */ js.UndefOr[js.Any] => scala.Unit = null,
+    setCallback: /* callback */ js.UndefOr[js.Any] => scala.Unit = null,
+    setData: /* data */ js.UndefOr[js.Any] => scala.Unit = null,
+    setForm: /* form */ js.UndefOr[js.Any] => scala.Unit = null,
+    setId: /* id */ js.UndefOr[js.Any] => scala.Unit = null,
+    setMethod: /* method */ js.UndefOr[js.Any] => scala.Unit = null,
+    setProvider: /* provider */ js.UndefOr[js.Any] => scala.Unit = null,
+    setRetryCount: /* retryCount */ js.UndefOr[scala.Double] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null
@@ -123,36 +123,36 @@ object ITransaction {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getAction != null) __obj.updateDynamic("getAction")(getAction)
-    if (getArgs != null) __obj.updateDynamic("getArgs")(getArgs)
-    if (getCallback != null) __obj.updateDynamic("getCallback")(getCallback)
-    if (getData != null) __obj.updateDynamic("getData")(getData)
-    if (getForm != null) __obj.updateDynamic("getForm")(getForm)
-    if (getId != null) __obj.updateDynamic("getId")(getId)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getMethod != null) __obj.updateDynamic("getMethod")(getMethod)
-    if (getProvider != null) __obj.updateDynamic("getProvider")(getProvider)
-    if (getRetryCount != null) __obj.updateDynamic("getRetryCount")(getRetryCount)
+    if (getAction != null) __obj.updateDynamic("getAction")(js.Any.fromFunction0(getAction))
+    if (getArgs != null) __obj.updateDynamic("getArgs")(js.Any.fromFunction0(getArgs))
+    if (getCallback != null) __obj.updateDynamic("getCallback")(js.Any.fromFunction0(getCallback))
+    if (getData != null) __obj.updateDynamic("getData")(js.Any.fromFunction0(getData))
+    if (getForm != null) __obj.updateDynamic("getForm")(js.Any.fromFunction0(getForm))
+    if (getId != null) __obj.updateDynamic("getId")(js.Any.fromFunction0(getId))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getMethod != null) __obj.updateDynamic("getMethod")(js.Any.fromFunction0(getMethod))
+    if (getProvider != null) __obj.updateDynamic("getProvider")(js.Any.fromFunction0(getProvider))
+    if (getRetryCount != null) __obj.updateDynamic("getRetryCount")(js.Any.fromFunction0(getRetryCount))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setAction != null) __obj.updateDynamic("setAction")(setAction)
-    if (setArgs != null) __obj.updateDynamic("setArgs")(setArgs)
-    if (setCallback != null) __obj.updateDynamic("setCallback")(setCallback)
-    if (setData != null) __obj.updateDynamic("setData")(setData)
-    if (setForm != null) __obj.updateDynamic("setForm")(setForm)
-    if (setId != null) __obj.updateDynamic("setId")(setId)
-    if (setMethod != null) __obj.updateDynamic("setMethod")(setMethod)
-    if (setProvider != null) __obj.updateDynamic("setProvider")(setProvider)
-    if (setRetryCount != null) __obj.updateDynamic("setRetryCount")(setRetryCount)
+    if (setAction != null) __obj.updateDynamic("setAction")(js.Any.fromFunction1(setAction))
+    if (setArgs != null) __obj.updateDynamic("setArgs")(js.Any.fromFunction1(setArgs))
+    if (setCallback != null) __obj.updateDynamic("setCallback")(js.Any.fromFunction1(setCallback))
+    if (setData != null) __obj.updateDynamic("setData")(js.Any.fromFunction1(setData))
+    if (setForm != null) __obj.updateDynamic("setForm")(js.Any.fromFunction1(setForm))
+    if (setId != null) __obj.updateDynamic("setId")(js.Any.fromFunction1(setId))
+    if (setMethod != null) __obj.updateDynamic("setMethod")(js.Any.fromFunction1(setMethod))
+    if (setProvider != null) __obj.updateDynamic("setProvider")(js.Any.fromFunction1(setProvider))
+    if (setRetryCount != null) __obj.updateDynamic("setRetryCount")(js.Any.fromFunction1(setRetryCount))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (uses != null) __obj.updateDynamic("uses")(uses)

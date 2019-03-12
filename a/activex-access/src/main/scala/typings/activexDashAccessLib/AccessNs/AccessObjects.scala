@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AccessObjects extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   val Count: scala.Double = js.native
   val Parent: js.Any = js.native
   def apply(var_0: java.lang.String): AccessObject = js.native

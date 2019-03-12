@@ -9,7 +9,7 @@ trait PortalProps
   extends reactLib.reactMod.ReactNs.Props[js.Any] {
   @JSName("children")
   var children_PortalProps: reactLib.reactMod.ReactNs.ReactNode
-  var node: js.UndefOr[reactLib.Element | scala.Null] = js.undefined
+  var node: js.UndefOr[stdLib.Element | scala.Null] = js.undefined
 }
 
 object PortalProps {
@@ -17,7 +17,7 @@ object PortalProps {
   def apply(
     children: reactLib.reactMod.ReactNs.ReactNode,
     key: reactLib.reactMod.ReactNs.Key = null,
-    node: reactLib.Element = null,
+    node: stdLib.Element = null,
     ref: reactLib.reactMod.ReactNs.LegacyRef[js.Any] = null
   ): PortalProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])

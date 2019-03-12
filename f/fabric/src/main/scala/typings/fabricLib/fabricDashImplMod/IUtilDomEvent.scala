@@ -25,11 +25,11 @@ trait IUtilDomEvent extends js.Object {
 object IUtilDomEvent {
   @scala.inline
   def apply(
-    addListener: js.Function3[stdLib.HTMLElement, java.lang.String, js.Function, scala.Unit],
-    getPointer: js.Function2[stdLib.Event, stdLib.HTMLCanvasElement, Point],
-    removeListener: js.Function3[stdLib.HTMLElement, java.lang.String, js.Function, scala.Unit]
+    addListener: (stdLib.HTMLElement, java.lang.String, js.Function) => scala.Unit,
+    getPointer: (stdLib.Event, stdLib.HTMLCanvasElement) => Point,
+    removeListener: (stdLib.HTMLElement, java.lang.String, js.Function) => scala.Unit
   ): IUtilDomEvent = {
-    val __obj = js.Dynamic.literal(addListener = addListener, getPointer = getPointer, removeListener = removeListener)
+    val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction3(addListener), getPointer = js.Any.fromFunction2(getPointer), removeListener = js.Any.fromFunction3(removeListener))
   
     __obj.asInstanceOf[IUtilDomEvent]
   }

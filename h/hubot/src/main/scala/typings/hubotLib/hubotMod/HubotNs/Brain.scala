@@ -12,8 +12,8 @@ trait Brain extends js.Object {
 
 object Brain {
   @scala.inline
-  def apply(userForId: js.Function1[js.Any, js.Any], userForName: js.Function1[java.lang.String, js.Any]): Brain = {
-    val __obj = js.Dynamic.literal(userForId = userForId, userForName = userForName)
+  def apply(userForId: js.Any => js.Any, userForName: java.lang.String => js.Any): Brain = {
+    val __obj = js.Dynamic.literal(userForId = js.Any.fromFunction1(userForId), userForName = js.Any.fromFunction1(userForName))
   
     __obj.asInstanceOf[Brain]
   }

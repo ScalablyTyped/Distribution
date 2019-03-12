@@ -66,7 +66,7 @@ object PINs extends js.Object {
     /**
       * The AWS service for which Performance Insights will return metrics. The only valid value for ServiceType is: RDS 
       */
-    var ServiceType: ServiceType
+    var ServiceType: awsDashSdkLib.clientsPiMod.PINs.ServiceType
     /**
       * The date and time specifying the beginning of the requested time series data. You can't specify a StartTime that's earlier than 7 days ago. The value specified is inclusive - data points equal to or greater than StartTime will be returned. The value for StartTime must be earlier than the value for EndTime.
       */
@@ -157,7 +157,7 @@ object PINs extends js.Object {
     /**
       * The AWS service for which Performance Insights will return metrics. The only valid value for ServiceType is: RDS 
       */
-    var ServiceType: ServiceType
+    var ServiceType: awsDashSdkLib.clientsPiMod.PINs.ServiceType
     /**
       * The date and time specifying the beginning of the requested time series data. You can't specify a StartTime that's earlier than 7 days ago. The value specified is inclusive - data points equal to or greater than StartTime will be returned. The value for StartTime must be earlier than the value for EndTime.
       */

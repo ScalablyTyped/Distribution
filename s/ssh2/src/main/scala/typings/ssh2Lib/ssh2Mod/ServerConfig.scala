@@ -30,7 +30,7 @@ object ServerConfig {
     hostKeys: js.Array[nodeLib.Buffer | java.lang.String | EncryptedPrivateKey],
     algorithms: ssh2DashStreamsLib.ssh2DashStreamsMod.Algorithms = null,
     banner: java.lang.String = null,
-    debug: js.Function1[/* information */ java.lang.String, _] = null,
+    debug: /* information */ java.lang.String => _ = null,
     greeting: java.lang.String = null,
     highWaterMark: scala.Int | scala.Double = null,
     ident: java.lang.String = null,
@@ -39,7 +39,7 @@ object ServerConfig {
     val __obj = js.Dynamic.literal(hostKeys = hostKeys)
     if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms)
     if (banner != null) __obj.updateDynamic("banner")(banner)
-    if (debug != null) __obj.updateDynamic("debug")(debug)
+    if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction1(debug))
     if (greeting != null) __obj.updateDynamic("greeting")(greeting)
     if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
     if (ident != null) __obj.updateDynamic("ident")(ident)

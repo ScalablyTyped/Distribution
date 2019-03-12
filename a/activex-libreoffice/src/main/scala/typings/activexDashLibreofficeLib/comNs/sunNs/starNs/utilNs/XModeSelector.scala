@@ -11,11 +11,11 @@ trait XModeSelector
   /** @returns the current mode. */
   var Mode: java.lang.String
   /** @returns a sequence of all supported modes. */
-  val SupportedModes: activexDashInteropLib.SafeArray[java.lang.String]
+  val SupportedModes: stdLib.SafeArray[java.lang.String]
   /** @returns the current mode. */
   def getMode(): java.lang.String
   /** @returns a sequence of all supported modes. */
-  def getSupportedModes(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getSupportedModes(): stdLib.SafeArray[java.lang.String]
   /** sets a new mode for the implementing object. */
   def setMode(aMode: java.lang.String): scala.Unit
   /** asks whether a mode is supported or not. */
@@ -26,16 +26,16 @@ object XModeSelector {
   @scala.inline
   def apply(
     Mode: java.lang.String,
-    SupportedModes: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    getMode: js.Function0[java.lang.String],
-    getSupportedModes: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setMode: js.Function1[java.lang.String, scala.Unit],
-    supportsMode: js.Function1[java.lang.String, scala.Boolean]
+    SupportedModes: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    getMode: () => java.lang.String,
+    getSupportedModes: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setMode: java.lang.String => scala.Unit,
+    supportsMode: java.lang.String => scala.Boolean
   ): XModeSelector = {
-    val __obj = js.Dynamic.literal(Mode = Mode, SupportedModes = SupportedModes, acquire = acquire, getMode = getMode, getSupportedModes = getSupportedModes, queryInterface = queryInterface, release = release, setMode = setMode, supportsMode = supportsMode)
+    val __obj = js.Dynamic.literal(Mode = Mode, SupportedModes = SupportedModes, acquire = js.Any.fromFunction0(acquire), getMode = js.Any.fromFunction0(getMode), getSupportedModes = js.Any.fromFunction0(getSupportedModes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setMode = js.Any.fromFunction1(setMode), supportsMode = js.Any.fromFunction1(supportsMode))
   
     __obj.asInstanceOf[XModeSelector]
   }

@@ -14,11 +14,11 @@ trait Lifecycles extends js.Object {
 object Lifecycles {
   @scala.inline
   def apply(
-    bootstrap: js.Function1[js.Any, js.Promise[scala.Unit]],
-    mount: js.Function1[js.Any, js.Promise[scala.Unit]],
-    unmount: js.Function1[js.Any, js.Promise[scala.Unit]]
+    bootstrap: js.Any => js.Promise[scala.Unit],
+    mount: js.Any => js.Promise[scala.Unit],
+    unmount: js.Any => js.Promise[scala.Unit]
   ): Lifecycles = {
-    val __obj = js.Dynamic.literal(bootstrap = bootstrap, mount = mount, unmount = unmount)
+    val __obj = js.Dynamic.literal(bootstrap = js.Any.fromFunction1(bootstrap), mount = js.Any.fromFunction1(mount), unmount = js.Any.fromFunction1(unmount))
   
     __obj.asInstanceOf[Lifecycles]
   }

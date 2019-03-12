@@ -34,13 +34,13 @@ trait IStyleManager extends js.Object {
 object IStyleManager {
   @scala.inline
   def apply(
-    GetCellStyle: js.Function1[java.lang.String, sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Cell],
-    RegisterCellStyle: js.Function2[java.lang.String, sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Cell, scala.Unit],
-    UpdateDefaultCellStyleFromCss: js.Function2[sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Cell, java.lang.String, scala.Unit],
-    UpdateGridPaneStyleFromCss: js.Function2[sharepointLib.SPNs.JsGridNs.IStyleTypeNs.GridPane, js.Any, scala.Unit],
-    UpdateGroupStylesFromCss: js.Function2[sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Cell, java.lang.String, scala.Unit],
-    UpdateHeaderStyleFromCss: js.Function2[sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Header, js.Any, scala.Unit],
-    UpdateSplitterStyleFromCss: js.Function2[sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Splitter, js.Any, scala.Unit],
+    GetCellStyle: java.lang.String => sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Cell,
+    RegisterCellStyle: (java.lang.String, sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Cell) => scala.Unit,
+    UpdateDefaultCellStyleFromCss: (sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Cell, java.lang.String) => scala.Unit,
+    UpdateGridPaneStyleFromCss: (sharepointLib.SPNs.JsGridNs.IStyleTypeNs.GridPane, js.Any) => scala.Unit,
+    UpdateGroupStylesFromCss: (sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Cell, java.lang.String) => scala.Unit,
+    UpdateHeaderStyleFromCss: (sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Header, js.Any) => scala.Unit,
+    UpdateSplitterStyleFromCss: (sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Splitter, js.Any) => scala.Unit,
     columnHeaderStyleCollection: sharepointLib.Anon_AllSelected,
     defaultCellStyle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Cell,
     gridPaneStyle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.GridPane,
@@ -54,7 +54,7 @@ object IStyleManager {
     widgetDockPressedStyle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Widget,
     widgetDockStyle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Widget
   ): IStyleManager = {
-    val __obj = js.Dynamic.literal(GetCellStyle = GetCellStyle, RegisterCellStyle = RegisterCellStyle, UpdateDefaultCellStyleFromCss = UpdateDefaultCellStyleFromCss, UpdateGridPaneStyleFromCss = UpdateGridPaneStyleFromCss, UpdateGroupStylesFromCss = UpdateGroupStylesFromCss, UpdateHeaderStyleFromCss = UpdateHeaderStyleFromCss, UpdateSplitterStyleFromCss = UpdateSplitterStyleFromCss, columnHeaderStyleCollection = columnHeaderStyleCollection, defaultCellStyle = defaultCellStyle, gridPaneStyle = gridPaneStyle, groupingStyles = groupingStyles, readOnlyCellStyle = readOnlyCellStyle, readOnlyFocusedCellStyle = readOnlyFocusedCellStyle, rowHeaderStyleCollection = rowHeaderStyleCollection, splitterStyleCollection = splitterStyleCollection, timescaleTierStyle = timescaleTierStyle, widgetDockHoverStyle = widgetDockHoverStyle, widgetDockPressedStyle = widgetDockPressedStyle, widgetDockStyle = widgetDockStyle)
+    val __obj = js.Dynamic.literal(GetCellStyle = js.Any.fromFunction1(GetCellStyle), RegisterCellStyle = js.Any.fromFunction2(RegisterCellStyle), UpdateDefaultCellStyleFromCss = js.Any.fromFunction2(UpdateDefaultCellStyleFromCss), UpdateGridPaneStyleFromCss = js.Any.fromFunction2(UpdateGridPaneStyleFromCss), UpdateGroupStylesFromCss = js.Any.fromFunction2(UpdateGroupStylesFromCss), UpdateHeaderStyleFromCss = js.Any.fromFunction2(UpdateHeaderStyleFromCss), UpdateSplitterStyleFromCss = js.Any.fromFunction2(UpdateSplitterStyleFromCss), columnHeaderStyleCollection = columnHeaderStyleCollection, defaultCellStyle = defaultCellStyle, gridPaneStyle = gridPaneStyle, groupingStyles = groupingStyles, readOnlyCellStyle = readOnlyCellStyle, readOnlyFocusedCellStyle = readOnlyFocusedCellStyle, rowHeaderStyleCollection = rowHeaderStyleCollection, splitterStyleCollection = splitterStyleCollection, timescaleTierStyle = timescaleTierStyle, widgetDockHoverStyle = widgetDockHoverStyle, widgetDockPressedStyle = widgetDockPressedStyle, widgetDockStyle = widgetDockStyle)
   
     __obj.asInstanceOf[IStyleManager]
   }

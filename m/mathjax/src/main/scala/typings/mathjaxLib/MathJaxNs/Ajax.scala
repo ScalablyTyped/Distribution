@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Ajax extends js.Object {
-  var STATUS: STATUS
+  var STATUS: mathjaxLib.MathJaxNs.STATUS
   /*An object containing the load hooks for the various files, set up by the LoadHook() method, or by the
     * MathJax.Hub.Register.LoadHook() method.
     */
@@ -74,22 +74,22 @@ trait Ajax extends js.Object {
 object Ajax {
   @scala.inline
   def apply(
-    Load: js.Function2[java.lang.String, js.Any, js.Any],
-    LoadHook: js.Function2[java.lang.String, js.Any, js.Any],
-    Preloading: js.Function1[/* repeated */ js.Any, scala.Unit],
-    Require: js.Function2[java.lang.String, js.Any, js.Any],
+    Load: (java.lang.String, js.Any) => js.Any,
+    LoadHook: (java.lang.String, js.Any) => js.Any,
+    Preloading: /* repeated */ js.Any => scala.Unit,
+    Require: (java.lang.String, js.Any) => js.Any,
     STATUS: STATUS,
-    Styles: js.Function2[js.Any, js.Any, js.Any],
-    fileURL: js.Function1[java.lang.String, java.lang.String],
-    loadComplete: js.Function1[java.lang.String, scala.Unit],
-    loadError: js.Function1[java.lang.String, scala.Unit],
+    Styles: (js.Any, js.Any) => js.Any,
+    fileURL: java.lang.String => java.lang.String,
+    loadComplete: java.lang.String => scala.Unit,
+    loadError: java.lang.String => scala.Unit,
     loadHooks: js.Any,
-    loadTimeout: js.Function1[java.lang.String, scala.Unit],
+    loadTimeout: java.lang.String => scala.Unit,
     loaded: js.Any,
     loading: scala.Boolean,
     timeout: scala.Int | scala.Double = null
   ): Ajax = {
-    val __obj = js.Dynamic.literal(Load = Load, LoadHook = LoadHook, Preloading = Preloading, Require = Require, STATUS = STATUS, Styles = Styles, fileURL = fileURL, loadComplete = loadComplete, loadError = loadError, loadHooks = loadHooks, loadTimeout = loadTimeout, loaded = loaded, loading = loading)
+    val __obj = js.Dynamic.literal(Load = js.Any.fromFunction2(Load), LoadHook = js.Any.fromFunction2(LoadHook), Preloading = js.Any.fromFunction1(Preloading), Require = js.Any.fromFunction2(Require), STATUS = STATUS, Styles = js.Any.fromFunction2(Styles), fileURL = js.Any.fromFunction1(fileURL), loadComplete = js.Any.fromFunction1(loadComplete), loadError = js.Any.fromFunction1(loadError), loadHooks = loadHooks, loadTimeout = js.Any.fromFunction1(loadTimeout), loaded = loaded, loading = loading)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ajax]
   }

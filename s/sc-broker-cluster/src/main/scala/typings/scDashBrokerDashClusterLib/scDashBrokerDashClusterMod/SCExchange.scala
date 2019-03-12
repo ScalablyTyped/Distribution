@@ -19,31 +19,31 @@ class SCExchange protected () extends AbstractDataClient {
   def publish(
     channelName: java.lang.String,
     data: js.Any,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): scala.Unit = js.native
   def send(data: js.Any): scala.Unit = js.native
   def send(data: js.Any, mapIndex: java.lang.String): scala.Unit = js.native
   def send(
     data: js.Any,
     mapIndex: java.lang.String,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): scala.Unit = js.native
   def send(data: js.Any, mapIndex: js.Array[java.lang.String]): scala.Unit = js.native
   def send(
     data: js.Any,
     mapIndex: js.Array[java.lang.String],
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): scala.Unit = js.native
   def send(data: js.Any, mapIndex: scala.Double): scala.Unit = js.native
   def send(
     data: js.Any,
     mapIndex: scala.Double,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): scala.Unit = js.native
   def send(
     data: js.Any,
     mapIndex: scala.Null,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): scala.Unit = js.native
   def setMapper(mapper: mapperFunction): scala.Unit = js.native
   def subscribe(channelName: java.lang.String): scDashChannelLib.scDashChannelMod.SCChannel = js.native

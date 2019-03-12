@@ -30,13 +30,13 @@ trait XExtendedInputSequenceChecker extends XInputSequenceChecker {
 object XExtendedInputSequenceChecker {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    checkInputSequence: js.Function4[java.lang.String, scala.Double, java.lang.String, scala.Double, scala.Boolean],
-    correctInputSequence: js.Function4[js.Array[java.lang.String], scala.Double, java.lang.String, scala.Double, scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    checkInputSequence: (java.lang.String, scala.Double, java.lang.String, scala.Double) => scala.Boolean,
+    correctInputSequence: (js.Array[java.lang.String], scala.Double, java.lang.String, scala.Double) => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XExtendedInputSequenceChecker = {
-    val __obj = js.Dynamic.literal(acquire = acquire, checkInputSequence = checkInputSequence, correctInputSequence = correctInputSequence, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), checkInputSequence = js.Any.fromFunction4(checkInputSequence), correctInputSequence = js.Any.fromFunction4(correctInputSequence), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XExtendedInputSequenceChecker]
   }

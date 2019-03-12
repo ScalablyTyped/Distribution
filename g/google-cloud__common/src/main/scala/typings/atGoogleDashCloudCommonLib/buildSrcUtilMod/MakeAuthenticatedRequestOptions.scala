@@ -10,8 +10,8 @@ trait MakeAuthenticatedRequestOptions extends js.Object {
   @JSName("onAuthenticated")
   var onAuthenticated_Original: OnAuthenticatedCallback = js.native
   def onAuthenticated(): scala.Unit = js.native
-  def onAuthenticated(err: nodeLib.Error): scala.Unit = js.native
-  def onAuthenticated(err: nodeLib.Error, reqOpts: DecorateRequestOptions): scala.Unit = js.native
   def onAuthenticated(err: scala.Null, reqOpts: DecorateRequestOptions): scala.Unit = js.native
+  def onAuthenticated(err: stdLib.Error): scala.Unit = js.native
+  def onAuthenticated(err: stdLib.Error, reqOpts: DecorateRequestOptions): scala.Unit = js.native
 }
 

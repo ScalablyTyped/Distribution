@@ -40,7 +40,7 @@ object ConnectionOptions {
     NPNProtocols: js.Array[java.lang.String] | js.Array[nodeLib.Buffer] | js.Array[stdLib.Uint8Array] | nodeLib.Buffer | stdLib.Uint8Array = null,
     ca: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
     cert: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
-    checkServerIdentity: js.Function2[/* host */ java.lang.String, /* cert */ PeerCertificate, js.UndefOr[nodeLib.Error]] = null,
+    checkServerIdentity: (/* host */ java.lang.String, /* cert */ PeerCertificate) => js.UndefOr[nodeLib.Error] = null,
     ciphers: java.lang.String = null,
     clientCertEngine: java.lang.String = null,
     crl: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
@@ -72,7 +72,7 @@ object ConnectionOptions {
     if (NPNProtocols != null) __obj.updateDynamic("NPNProtocols")(NPNProtocols.asInstanceOf[js.Any])
     if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(checkServerIdentity)
+    if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(js.Any.fromFunction2(checkServerIdentity))
     if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)
     if (clientCertEngine != null) __obj.updateDynamic("clientCertEngine")(clientCertEngine)
     if (crl != null) __obj.updateDynamic("crl")(crl.asInstanceOf[js.Any])

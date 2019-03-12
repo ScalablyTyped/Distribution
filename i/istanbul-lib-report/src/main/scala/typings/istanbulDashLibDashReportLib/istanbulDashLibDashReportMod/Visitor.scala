@@ -16,13 +16,13 @@ trait Visitor[N /* <: Node */] extends js.Object {
 object Visitor {
   @scala.inline
   def apply[N /* <: Node */](
-    onDetail: js.Function2[N, js.Any, scala.Unit],
-    onEnd: js.Function2[N, js.Any, scala.Unit],
-    onStart: js.Function2[N, js.Any, scala.Unit],
-    onSummary: js.Function2[N, js.Any, scala.Unit],
-    onSummaryEnd: js.Function2[N, js.Any, scala.Unit]
+    onDetail: (N, js.Any) => scala.Unit,
+    onEnd: (N, js.Any) => scala.Unit,
+    onStart: (N, js.Any) => scala.Unit,
+    onSummary: (N, js.Any) => scala.Unit,
+    onSummaryEnd: (N, js.Any) => scala.Unit
   ): Visitor[N] = {
-    val __obj = js.Dynamic.literal(onDetail = onDetail, onEnd = onEnd, onStart = onStart, onSummary = onSummary, onSummaryEnd = onSummaryEnd)
+    val __obj = js.Dynamic.literal(onDetail = js.Any.fromFunction2(onDetail), onEnd = js.Any.fromFunction2(onEnd), onStart = js.Any.fromFunction2(onStart), onSummary = js.Any.fromFunction2(onSummary), onSummaryEnd = js.Any.fromFunction2(onSummaryEnd))
   
     __obj.asInstanceOf[Visitor[N]]
   }

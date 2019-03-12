@@ -31,13 +31,13 @@ object Symbol3DStyleOrigin {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     name: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     styleName: java.lang.String = null,
     styleUrl: java.lang.String = null
   ): Symbol3DStyleOrigin = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, name = name, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (styleName != null) __obj.updateDynamic("styleName")(styleName)
     if (styleUrl != null) __obj.updateDynamic("styleUrl")(styleUrl)
     __obj.asInstanceOf[Symbol3DStyleOrigin]

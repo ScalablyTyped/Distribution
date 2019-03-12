@@ -70,20 +70,20 @@ trait GeoDistanceAggregation extends Aggregation {
 object GeoDistanceAggregation {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    agg: js.Function1[Aggregation, GeoDistanceAggregation],
-    aggregation: js.Function1[Aggregation, GeoDistanceAggregation],
-    center: js.Function1[GeoPoint, GeoDistanceAggregation],
-    distanceType: js.Function1[java.lang.String, GeoDistanceAggregation],
-    field: js.Function1[java.lang.String, GeoDistanceAggregation],
-    keyed: js.Function1[scala.Boolean, GeoDistanceAggregation],
-    origin: js.Function1[GeoPoint, GeoDistanceAggregation],
-    point: js.Function1[GeoPoint, GeoDistanceAggregation],
-    range: js.Function3[java.lang.String, java.lang.String, java.lang.String, GeoDistanceAggregation],
-    toJSON: js.Function0[js.Any],
-    unit: js.Function1[java.lang.String, GeoDistanceAggregation]
+    _type: () => java.lang.String,
+    agg: Aggregation => GeoDistanceAggregation,
+    aggregation: Aggregation => GeoDistanceAggregation,
+    center: GeoPoint => GeoDistanceAggregation,
+    distanceType: java.lang.String => GeoDistanceAggregation,
+    field: java.lang.String => GeoDistanceAggregation,
+    keyed: scala.Boolean => GeoDistanceAggregation,
+    origin: GeoPoint => GeoDistanceAggregation,
+    point: GeoPoint => GeoDistanceAggregation,
+    range: (java.lang.String, java.lang.String, java.lang.String) => GeoDistanceAggregation,
+    toJSON: () => js.Any,
+    unit: java.lang.String => GeoDistanceAggregation
   ): GeoDistanceAggregation = {
-    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, center = center, distanceType = distanceType, field = field, keyed = keyed, origin = origin, point = point, range = range, toJSON = toJSON, unit = unit)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), agg = js.Any.fromFunction1(agg), aggregation = js.Any.fromFunction1(aggregation), center = js.Any.fromFunction1(center), distanceType = js.Any.fromFunction1(distanceType), field = js.Any.fromFunction1(field), keyed = js.Any.fromFunction1(keyed), origin = js.Any.fromFunction1(origin), point = js.Any.fromFunction1(point), range = js.Any.fromFunction3(range), toJSON = js.Any.fromFunction0(toJSON), unit = js.Any.fromFunction1(unit))
   
     __obj.asInstanceOf[GeoDistanceAggregation]
   }

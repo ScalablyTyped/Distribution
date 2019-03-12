@@ -30,16 +30,16 @@ object IAxisLabels {
     dateFormat: java.lang.String,
     decimals: scala.Double,
     format: IFormat,
-    getLabel: js.Function1[scala.Double, java.lang.String],
+    getLabel: scala.Double => java.lang.String,
     labelStyle: java.lang.String,
     maxWidth: scala.Double,
     padding: scala.Double,
     rotation: scala.Double,
     separation: scala.Double,
     visible: scala.Boolean,
-    width: js.Function1[scala.Double, scala.Double]
+    width: scala.Double => scala.Double
   ): IAxisLabels = {
-    val __obj = js.Dynamic.literal(alternate = alternate, chart = chart, dateFormat = dateFormat, decimals = decimals, format = format, getLabel = getLabel, labelStyle = labelStyle, maxWidth = maxWidth, padding = padding, rotation = rotation, separation = separation, visible = visible, width = width)
+    val __obj = js.Dynamic.literal(alternate = alternate, chart = chart, dateFormat = dateFormat, decimals = decimals, format = format, getLabel = js.Any.fromFunction1(getLabel), labelStyle = labelStyle, maxWidth = maxWidth, padding = padding, rotation = rotation, separation = separation, visible = visible, width = js.Any.fromFunction1(width))
   
     __obj.asInstanceOf[IAxisLabels]
   }

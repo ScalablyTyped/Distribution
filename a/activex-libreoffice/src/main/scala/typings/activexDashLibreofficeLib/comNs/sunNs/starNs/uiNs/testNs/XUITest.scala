@@ -15,10 +15,10 @@ object XUITest {
   @scala.inline
   def apply(
     TopFocusWindow: XUIObject,
-    executeCommand: js.Function1[java.lang.String, scala.Unit],
-    getTopFocusWindow: js.Function0[XUIObject]
+    executeCommand: java.lang.String => scala.Unit,
+    getTopFocusWindow: () => XUIObject
   ): XUITest = {
-    val __obj = js.Dynamic.literal(TopFocusWindow = TopFocusWindow, executeCommand = executeCommand, getTopFocusWindow = getTopFocusWindow)
+    val __obj = js.Dynamic.literal(TopFocusWindow = TopFocusWindow, executeCommand = js.Any.fromFunction1(executeCommand), getTopFocusWindow = js.Any.fromFunction0(getTopFocusWindow))
   
     __obj.asInstanceOf[XUITest]
   }

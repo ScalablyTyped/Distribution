@@ -18,12 +18,12 @@ trait PNotifyconfirmButton extends js.Object {
 object PNotifyconfirmButton {
   @scala.inline
   def apply(
-    click: js.Function2[PNotify, js.Any, scala.Unit],
+    click: (PNotify, js.Any) => scala.Unit,
     addClass: java.lang.String = null,
     promptTrigger: js.UndefOr[scala.Boolean] = js.undefined,
     text: java.lang.String = null
   ): PNotifyconfirmButton = {
-    val __obj = js.Dynamic.literal(click = click)
+    val __obj = js.Dynamic.literal(click = js.Any.fromFunction2(click))
     if (addClass != null) __obj.updateDynamic("addClass")(addClass)
     if (!js.isUndefined(promptTrigger)) __obj.updateDynamic("promptTrigger")(promptTrigger)
     if (text != null) __obj.updateDynamic("text")(text)

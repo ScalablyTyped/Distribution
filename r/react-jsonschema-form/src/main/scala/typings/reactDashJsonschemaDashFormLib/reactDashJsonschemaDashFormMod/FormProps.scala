@@ -64,15 +64,15 @@ object FormProps {
     name: java.lang.String = null,
     noHtml5Validate: js.UndefOr[scala.Boolean] = js.undefined,
     noValidate: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function1[/* e */ IChangeEvent[T], _] = null,
-    onError: js.Function1[/* e */ js.Any, _] = null,
-    onSubmit: js.Function1[/* e */ ISubmitEvent[T], _] = null,
+    onChange: /* e */ IChangeEvent[T] => _ = null,
+    onError: /* e */ js.Any => _ = null,
+    onSubmit: /* e */ ISubmitEvent[T] => _ = null,
     safeRenderCompletion: js.UndefOr[scala.Boolean] = js.undefined,
     showErrorList: js.UndefOr[scala.Boolean] = js.undefined,
     target: java.lang.String = null,
-    transformErrors: js.Function1[/* errors */ js.Array[AjvError], js.Array[AjvError]] = null,
+    transformErrors: /* errors */ js.Array[AjvError] => js.Array[AjvError] = null,
     uiSchema: UiSchema = null,
-    validate: js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation] = null,
+    validate: (/* formData */ T, /* errors */ FormValidation) => FormValidation = null,
     widgets: org.scalablytyped.runtime.StringDictionary[Widget] = null
   ): FormProps[T] = {
     val __obj = js.Dynamic.literal(schema = schema)
@@ -96,15 +96,15 @@ object FormProps {
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(noHtml5Validate)) __obj.updateDynamic("noHtml5Validate")(noHtml5Validate)
     if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(onSubmit)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
     if (!js.isUndefined(safeRenderCompletion)) __obj.updateDynamic("safeRenderCompletion")(safeRenderCompletion)
     if (!js.isUndefined(showErrorList)) __obj.updateDynamic("showErrorList")(showErrorList)
     if (target != null) __obj.updateDynamic("target")(target)
-    if (transformErrors != null) __obj.updateDynamic("transformErrors")(transformErrors)
+    if (transformErrors != null) __obj.updateDynamic("transformErrors")(js.Any.fromFunction1(transformErrors))
     if (uiSchema != null) __obj.updateDynamic("uiSchema")(uiSchema)
-    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction2(validate))
     if (widgets != null) __obj.updateDynamic("widgets")(widgets)
     __obj.asInstanceOf[FormProps[T]]
   }

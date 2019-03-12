@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def destroyAll(): scala.Unit = js.native
   def init(): scala.Unit = js.native
-  def init(options: pulltorefreshjsLib.pulltorefreshjsMod.Options): scala.Unit = js.native
+  def init(options: Options): scala.Unit = js.native
   def setPassiveMode(isPassive: scala.Boolean): scala.Unit = js.native
 }
 

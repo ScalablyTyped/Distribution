@@ -12,10 +12,6 @@ object ^ extends js.Object {
     * Truncate HTML text and also keep tag safe.
     */
   def apply(input: java.lang.String, maxLength: scala.Double): java.lang.String = js.native
-  def apply(
-    input: java.lang.String,
-    maxLength: scala.Double,
-    options: htmlDashTruncateLib.htmlDashTruncateMod.TruncateOptions
-  ): java.lang.String = js.native
+  def apply(input: java.lang.String, maxLength: scala.Double, options: TruncateOptions): java.lang.String = js.native
 }
 

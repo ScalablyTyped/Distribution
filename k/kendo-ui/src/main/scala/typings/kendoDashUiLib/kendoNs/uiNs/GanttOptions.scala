@@ -60,43 +60,43 @@ trait GanttOptions extends js.Object {
 object GanttOptions {
   @scala.inline
   def apply(
-    add: js.Function1[/* e */ GanttAddEvent, scala.Unit] = null,
+    add: /* e */ GanttAddEvent => scala.Unit = null,
     assignments: GanttAssignments = null,
     autoBind: js.UndefOr[scala.Boolean] = js.undefined,
-    cancel: js.Function1[/* e */ GanttCancelEvent, scala.Unit] = null,
-    change: js.Function1[/* e */ GanttChangeEvent, scala.Unit] = null,
-    columnResize: js.Function1[/* e */ GanttColumnResizeEvent, scala.Unit] = null,
+    cancel: /* e */ GanttCancelEvent => scala.Unit = null,
+    change: /* e */ GanttChangeEvent => scala.Unit = null,
+    columnResize: /* e */ GanttColumnResizeEvent => scala.Unit = null,
     columnResizeHandleWidth: scala.Int | scala.Double = null,
     columns: js.Array[GanttColumn] = null,
     currentTimeMarker: scala.Boolean | GanttCurrentTimeMarker = null,
-    dataBinding: js.Function1[/* e */ GanttDataBindingEvent, scala.Unit] = null,
-    dataBound: js.Function1[/* e */ GanttDataBoundEvent, scala.Unit] = null,
+    dataBinding: /* e */ GanttDataBindingEvent => scala.Unit = null,
+    dataBound: /* e */ GanttDataBoundEvent => scala.Unit = null,
     dataSource: js.Any | kendoDashUiLib.kendoNs.dataNs.GanttDataSource = null,
     date: stdLib.Date = null,
     dependencies: js.Any | kendoDashUiLib.kendoNs.dataNs.GanttDependencyDataSource = null,
-    edit: js.Function1[/* e */ GanttEditEvent, scala.Unit] = null,
+    edit: /* e */ GanttEditEvent => scala.Unit = null,
     editable: scala.Boolean | GanttEditable = null,
     height: scala.Double | java.lang.String = null,
     hourSpan: scala.Int | scala.Double = null,
     listWidth: java.lang.String | scala.Double = null,
     messages: GanttMessages = null,
-    move: js.Function1[/* e */ GanttMoveEvent, scala.Unit] = null,
-    moveEnd: js.Function1[/* e */ GanttMoveEndEvent, scala.Unit] = null,
-    moveStart: js.Function1[/* e */ GanttMoveStartEvent, scala.Unit] = null,
+    move: /* e */ GanttMoveEvent => scala.Unit = null,
+    moveEnd: /* e */ GanttMoveEndEvent => scala.Unit = null,
+    moveStart: /* e */ GanttMoveStartEvent => scala.Unit = null,
     name: java.lang.String = null,
     navigatable: js.UndefOr[scala.Boolean] = js.undefined,
-    navigate: js.Function1[/* e */ GanttNavigateEvent, scala.Unit] = null,
+    navigate: /* e */ GanttNavigateEvent => scala.Unit = null,
     pdf: GanttPdf = null,
-    pdfExport: js.Function1[/* e */ GanttPdfExportEvent, scala.Unit] = null,
+    pdfExport: /* e */ GanttPdfExportEvent => scala.Unit = null,
     range: GanttRange = null,
-    remove: js.Function1[/* e */ GanttRemoveEvent, scala.Unit] = null,
+    remove: /* e */ GanttRemoveEvent => scala.Unit = null,
     resizable: js.UndefOr[scala.Boolean] = js.undefined,
-    resize: js.Function1[/* e */ GanttResizeEvent, scala.Unit] = null,
-    resizeEnd: js.Function1[/* e */ GanttResizeEndEvent, scala.Unit] = null,
-    resizeStart: js.Function1[/* e */ GanttResizeStartEvent, scala.Unit] = null,
+    resize: /* e */ GanttResizeEvent => scala.Unit = null,
+    resizeEnd: /* e */ GanttResizeEndEvent => scala.Unit = null,
+    resizeStart: /* e */ GanttResizeStartEvent => scala.Unit = null,
     resources: GanttResources = null,
     rowHeight: scala.Double | java.lang.String = null,
-    save: js.Function1[/* e */ GanttSaveEvent, scala.Unit] = null,
+    save: /* e */ GanttSaveEvent => scala.Unit = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
     showWorkDays: js.UndefOr[scala.Boolean] = js.undefined,
     showWorkHours: js.UndefOr[scala.Boolean] = js.undefined,
@@ -111,43 +111,43 @@ object GanttOptions {
     workWeekStart: scala.Int | scala.Double = null
   ): GanttOptions = {
     val __obj = js.Dynamic.literal()
-    if (add != null) __obj.updateDynamic("add")(add)
+    if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction1(add))
     if (assignments != null) __obj.updateDynamic("assignments")(assignments)
     if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (columnResize != null) __obj.updateDynamic("columnResize")(columnResize)
+    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (columnResize != null) __obj.updateDynamic("columnResize")(js.Any.fromFunction1(columnResize))
     if (columnResizeHandleWidth != null) __obj.updateDynamic("columnResizeHandleWidth")(columnResizeHandleWidth.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns)
     if (currentTimeMarker != null) __obj.updateDynamic("currentTimeMarker")(currentTimeMarker.asInstanceOf[js.Any])
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1(dataBinding))
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date)
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (edit != null) __obj.updateDynamic("edit")(edit)
+    if (edit != null) __obj.updateDynamic("edit")(js.Any.fromFunction1(edit))
     if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hourSpan != null) __obj.updateDynamic("hourSpan")(hourSpan.asInstanceOf[js.Any])
     if (listWidth != null) __obj.updateDynamic("listWidth")(listWidth.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (move != null) __obj.updateDynamic("move")(move)
-    if (moveEnd != null) __obj.updateDynamic("moveEnd")(moveEnd)
-    if (moveStart != null) __obj.updateDynamic("moveStart")(moveStart)
+    if (move != null) __obj.updateDynamic("move")(js.Any.fromFunction1(move))
+    if (moveEnd != null) __obj.updateDynamic("moveEnd")(js.Any.fromFunction1(moveEnd))
+    if (moveStart != null) __obj.updateDynamic("moveStart")(js.Any.fromFunction1(moveStart))
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable)
-    if (navigate != null) __obj.updateDynamic("navigate")(navigate)
+    if (navigate != null) __obj.updateDynamic("navigate")(js.Any.fromFunction1(navigate))
     if (pdf != null) __obj.updateDynamic("pdf")(pdf)
-    if (pdfExport != null) __obj.updateDynamic("pdfExport")(pdfExport)
+    if (pdfExport != null) __obj.updateDynamic("pdfExport")(js.Any.fromFunction1(pdfExport))
     if (range != null) __obj.updateDynamic("range")(range)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
     if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
-    if (resize != null) __obj.updateDynamic("resize")(resize)
-    if (resizeEnd != null) __obj.updateDynamic("resizeEnd")(resizeEnd)
-    if (resizeStart != null) __obj.updateDynamic("resizeStart")(resizeStart)
+    if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction1(resize))
+    if (resizeEnd != null) __obj.updateDynamic("resizeEnd")(js.Any.fromFunction1(resizeEnd))
+    if (resizeStart != null) __obj.updateDynamic("resizeStart")(js.Any.fromFunction1(resizeStart))
     if (resources != null) __obj.updateDynamic("resources")(resources)
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (save != null) __obj.updateDynamic("save")(save)
+    if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction1(save))
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
     if (!js.isUndefined(showWorkDays)) __obj.updateDynamic("showWorkDays")(showWorkDays)
     if (!js.isUndefined(showWorkHours)) __obj.updateDynamic("showWorkHours")(showWorkHours)

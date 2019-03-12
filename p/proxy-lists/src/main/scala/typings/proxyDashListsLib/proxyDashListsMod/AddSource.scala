@@ -12,8 +12,8 @@ trait AddSource extends js.Object {
 
 object AddSource {
   @scala.inline
-  def apply(getProxies: js.Function1[InternalOptions, GetProxiesEventEmitter], homeUrl: java.lang.String): AddSource = {
-    val __obj = js.Dynamic.literal(getProxies = getProxies, homeUrl = homeUrl)
+  def apply(getProxies: InternalOptions => GetProxiesEventEmitter, homeUrl: java.lang.String): AddSource = {
+    val __obj = js.Dynamic.literal(getProxies = js.Any.fromFunction1(getProxies), homeUrl = homeUrl)
   
     __obj.asInstanceOf[AddSource]
   }

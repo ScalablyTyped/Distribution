@@ -14,12 +14,7 @@ trait Options
 object Options {
   @scala.inline
   def apply(
-    afterMove: js.Function3[
-      /* $placeholder */ jqueryDashSortableLib.JQuery, 
-      /* container */ Container, 
-      /* $closestItemOrContainer */ jqueryDashSortableLib.JQuery, 
-      scala.Unit
-    ] = null,
+    afterMove: (/* $placeholder */ jqueryDashSortableLib.JQuery, /* container */ Container, /* $closestItemOrContainer */ jqueryDashSortableLib.JQuery) => scala.Unit = null,
     containerPath: java.lang.String = null,
     containerSelector: java.lang.String = null,
     delay: scala.Int | scala.Double = null,
@@ -29,7 +24,7 @@ object Options {
     exclude: java.lang.String = null,
     group: java.lang.String = null,
     handle: java.lang.String = null,
-    isValidTarget: js.Function2[/* $item */ jqueryDashSortableLib.JQuery, /* container */ Container, scala.Boolean] = null,
+    isValidTarget: (/* $item */ jqueryDashSortableLib.JQuery, /* container */ Container) => scala.Boolean = null,
     itemPath: java.lang.String = null,
     itemSelector: java.lang.String = null,
     nested: js.UndefOr[scala.Boolean] = js.undefined,
@@ -45,7 +40,7 @@ object Options {
     vertical: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (afterMove != null) __obj.updateDynamic("afterMove")(afterMove)
+    if (afterMove != null) __obj.updateDynamic("afterMove")(js.Any.fromFunction3(afterMove))
     if (containerPath != null) __obj.updateDynamic("containerPath")(containerPath)
     if (containerSelector != null) __obj.updateDynamic("containerSelector")(containerSelector)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
@@ -55,7 +50,7 @@ object Options {
     if (exclude != null) __obj.updateDynamic("exclude")(exclude)
     if (group != null) __obj.updateDynamic("group")(group)
     if (handle != null) __obj.updateDynamic("handle")(handle)
-    if (isValidTarget != null) __obj.updateDynamic("isValidTarget")(isValidTarget)
+    if (isValidTarget != null) __obj.updateDynamic("isValidTarget")(js.Any.fromFunction2(isValidTarget))
     if (itemPath != null) __obj.updateDynamic("itemPath")(itemPath)
     if (itemSelector != null) __obj.updateDynamic("itemSelector")(itemSelector)
     if (!js.isUndefined(nested)) __obj.updateDynamic("nested")(nested)

@@ -9,11 +9,11 @@ trait UpdateContinuousBackupsInput extends js.Object {
   /**
     * Represents the settings used to enable point in time recovery.
     */
-  var PointInTimeRecoverySpecification: PointInTimeRecoverySpecification
+  var PointInTimeRecoverySpecification: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.PointInTimeRecoverySpecification
   /**
     * The name of the table.
     */
-  var TableName: TableName
+  var TableName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TableName
 }
 
 object UpdateContinuousBackupsInput {

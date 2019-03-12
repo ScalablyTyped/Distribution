@@ -15,12 +15,12 @@ trait StreamlinedApplicant extends js.Object {
 object StreamlinedApplicant {
   @scala.inline
   def apply(
-    onRequestTimeout: js.Function0[scala.Unit],
-    onTransportError: js.Function0[scala.Unit],
-    receiveResponse: js.Function1[sipDotJsLib.typesSipDashMessageMod.IncomingResponse, scala.Unit],
+    onRequestTimeout: () => scala.Unit,
+    onTransportError: () => scala.Unit,
+    receiveResponse: sipDotJsLib.typesSipDashMessageMod.IncomingResponse => scala.Unit,
     request: sipDotJsLib.typesSipDashMessageMod.OutgoingRequest
   ): StreamlinedApplicant = {
-    val __obj = js.Dynamic.literal(onRequestTimeout = onRequestTimeout, onTransportError = onTransportError, receiveResponse = receiveResponse, request = request)
+    val __obj = js.Dynamic.literal(onRequestTimeout = js.Any.fromFunction0(onRequestTimeout), onTransportError = js.Any.fromFunction0(onTransportError), receiveResponse = js.Any.fromFunction1(receiveResponse), request = request)
   
     __obj.asInstanceOf[StreamlinedApplicant]
   }

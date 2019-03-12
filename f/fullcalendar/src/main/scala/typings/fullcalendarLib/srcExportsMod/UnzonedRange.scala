@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "UnzonedRange")
 @js.native
 class UnzonedRange ()
-  extends fullcalendarLib.unzonedrangeMod.default {
+  extends fullcalendarLib.unzonedRangeMod.default {
   def this(startInput: js.Any) = this()
   def this(startInput: js.Any, endInput: js.Any) = this()
 }

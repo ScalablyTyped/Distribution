@@ -17,18 +17,18 @@ trait GriddleActions
 object GriddleActions {
   @scala.inline
   def apply(
-    onGetPage: js.Function1[/* pageNumber */ scala.Double, scala.Unit] = null,
-    onNext: js.Function0[scala.Unit] = null,
-    onPrevious: js.Function0[scala.Unit] = null,
-    onSort: js.Function1[/* sortProperties */ js.Any, scala.Unit] = null,
-    setFilter: js.Function1[/* filter */ GriddleFilter, scala.Unit] = null
+    onGetPage: /* pageNumber */ scala.Double => scala.Unit = null,
+    onNext: () => scala.Unit = null,
+    onPrevious: () => scala.Unit = null,
+    onSort: /* sortProperties */ js.Any => scala.Unit = null,
+    setFilter: /* filter */ GriddleFilter => scala.Unit = null
   ): GriddleActions = {
     val __obj = js.Dynamic.literal()
-    if (onGetPage != null) __obj.updateDynamic("onGetPage")(onGetPage)
-    if (onNext != null) __obj.updateDynamic("onNext")(onNext)
-    if (onPrevious != null) __obj.updateDynamic("onPrevious")(onPrevious)
-    if (onSort != null) __obj.updateDynamic("onSort")(onSort)
-    if (setFilter != null) __obj.updateDynamic("setFilter")(setFilter)
+    if (onGetPage != null) __obj.updateDynamic("onGetPage")(js.Any.fromFunction1(onGetPage))
+    if (onNext != null) __obj.updateDynamic("onNext")(js.Any.fromFunction0(onNext))
+    if (onPrevious != null) __obj.updateDynamic("onPrevious")(js.Any.fromFunction0(onPrevious))
+    if (onSort != null) __obj.updateDynamic("onSort")(js.Any.fromFunction1(onSort))
+    if (setFilter != null) __obj.updateDynamic("setFilter")(js.Any.fromFunction1(setFilter))
     __obj.asInstanceOf[GriddleActions]
   }
 }

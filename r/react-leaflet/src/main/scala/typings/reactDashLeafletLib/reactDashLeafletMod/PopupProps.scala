@@ -41,8 +41,8 @@ object PopupProps {
     maxWidth: scala.Int | scala.Double = null,
     minWidth: scala.Int | scala.Double = null,
     offset: leafletLib.leafletMod.PointExpression = null,
-    onClose: js.Function0[scala.Unit] = null,
-    onOpen: js.Function0[scala.Unit] = null,
+    onClose: () => scala.Unit = null,
+    onOpen: () => scala.Unit = null,
     pane: java.lang.String = null,
     position: leafletLib.leafletMod.LatLngExpression = null,
     zoomAnimation: js.UndefOr[scala.Boolean] = js.undefined
@@ -63,8 +63,8 @@ object PopupProps {
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
     if (pane != null) __obj.updateDynamic("pane")(pane)
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (!js.isUndefined(zoomAnimation)) __obj.updateDynamic("zoomAnimation")(zoomAnimation)

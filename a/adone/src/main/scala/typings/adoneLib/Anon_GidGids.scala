@@ -31,13 +31,13 @@ trait Anon_GidGids extends js.Object {
 object Anon_GidGids {
   @scala.inline
   def apply(
-    gid: js.Function1[java.lang.String, scala.Double],
-    gids: js.Function1[java.lang.String, js.Array[scala.Double]],
-    groupname: js.Function1[scala.Double, java.lang.String],
-    uid: js.Function1[java.lang.String, Anon_GidUidNumber],
-    username: js.Function1[scala.Double, java.lang.String]
+    gid: java.lang.String => scala.Double,
+    gids: java.lang.String => js.Array[scala.Double],
+    groupname: scala.Double => java.lang.String,
+    uid: java.lang.String => Anon_GidUidNumber,
+    username: scala.Double => java.lang.String
   ): Anon_GidGids = {
-    val __obj = js.Dynamic.literal(gid = gid, gids = gids, groupname = groupname, uid = uid, username = username)
+    val __obj = js.Dynamic.literal(gid = js.Any.fromFunction1(gid), gids = js.Any.fromFunction1(gids), groupname = js.Any.fromFunction1(groupname), uid = js.Any.fromFunction1(uid), username = js.Any.fromFunction1(username))
   
     __obj.asInstanceOf[Anon_GidGids]
   }

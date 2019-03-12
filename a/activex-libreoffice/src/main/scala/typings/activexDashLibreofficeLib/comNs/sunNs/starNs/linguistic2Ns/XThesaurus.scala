@@ -25,28 +25,21 @@ trait XThesaurus extends XSupportedLocales {
     aTerm: java.lang.String,
     aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
     aProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues
-  ): activexDashInteropLib.SafeArray[XMeaning]
+  ): stdLib.SafeArray[XMeaning]
 }
 
 object XThesaurus {
   @scala.inline
   def apply(
-    Locales: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
-    acquire: js.Function0[scala.Unit],
-    getLocales: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
-    ],
-    hasLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    queryMeanings: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
-      activexDashInteropLib.SafeArray[XMeaning]
-    ],
-    release: js.Function0[scala.Unit]
+    Locales: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    acquire: () => scala.Unit,
+    getLocales: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    hasLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    queryMeanings: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues) => stdLib.SafeArray[XMeaning],
+    release: () => scala.Unit
   ): XThesaurus = {
-    val __obj = js.Dynamic.literal(Locales = Locales, acquire = acquire, getLocales = getLocales, hasLocale = hasLocale, queryInterface = queryInterface, queryMeanings = queryMeanings, release = release)
+    val __obj = js.Dynamic.literal(Locales = Locales, acquire = js.Any.fromFunction0(acquire), getLocales = js.Any.fromFunction0(getLocales), hasLocale = js.Any.fromFunction1(hasLocale), queryInterface = js.Any.fromFunction1(queryInterface), queryMeanings = js.Any.fromFunction3(queryMeanings), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XThesaurus]
   }

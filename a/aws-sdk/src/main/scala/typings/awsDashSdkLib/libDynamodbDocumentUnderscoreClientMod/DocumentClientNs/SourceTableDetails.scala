@@ -17,11 +17,11 @@ trait SourceTableDetails extends js.Object {
   /**
     * Schema of the table. 
     */
-  var KeySchema: KeySchema
+  var KeySchema: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.KeySchema
   /**
     * Read IOPs and Write IOPS on the table when the backup was created.
     */
-  var ProvisionedThroughput: ProvisionedThroughput
+  var ProvisionedThroughput: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.ProvisionedThroughput
   /**
     * ARN of the table for which backup was created. 
     */
@@ -29,15 +29,15 @@ trait SourceTableDetails extends js.Object {
   /**
     * Time when the source table was created. 
     */
-  var TableCreationDateTime: TableCreationDateTime
+  var TableCreationDateTime: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TableCreationDateTime
   /**
     * Unique identifier for the table for which the backup was created. 
     */
-  var TableId: TableId
+  var TableId: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TableId
   /**
     * The name of the table for which the backup was created. 
     */
-  var TableName: TableName
+  var TableName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TableName
   /**
     * Size of the table in bytes. Please note this is an approximate value.
     */

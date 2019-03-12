@@ -12,13 +12,13 @@ trait RouterRouteMissingEvent extends RouterEvent {
 object RouterRouteMissingEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     params: js.Any,
     preventDefault: js.Function,
     sender: Router,
     url: java.lang.String
   ): RouterRouteMissingEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, params = params, preventDefault = preventDefault, sender = sender, url = url)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), params = params, preventDefault = preventDefault, sender = sender, url = url)
   
     __obj.asInstanceOf[RouterRouteMissingEvent]
   }

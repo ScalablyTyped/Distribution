@@ -33,18 +33,18 @@ object XDocumentIndexMark {
   def apply(
     Anchor: XTextRange,
     MarkEntry: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    attach: js.Function1[XTextRange, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    getAnchor: js.Function0[XTextRange],
-    getMarkEntry: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    setMarkEntry: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    attach: XTextRange => scala.Unit,
+    dispose: () => scala.Unit,
+    getAnchor: () => XTextRange,
+    getMarkEntry: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    setMarkEntry: java.lang.String => scala.Unit
   ): XDocumentIndexMark = {
-    val __obj = js.Dynamic.literal(Anchor = Anchor, MarkEntry = MarkEntry, acquire = acquire, addEventListener = addEventListener, attach = attach, dispose = dispose, getAnchor = getAnchor, getMarkEntry = getMarkEntry, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setMarkEntry = setMarkEntry)
+    val __obj = js.Dynamic.literal(Anchor = Anchor, MarkEntry = MarkEntry, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), attach = js.Any.fromFunction1(attach), dispose = js.Any.fromFunction0(dispose), getAnchor = js.Any.fromFunction0(getAnchor), getMarkEntry = js.Any.fromFunction0(getMarkEntry), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), setMarkEntry = js.Any.fromFunction1(setMarkEntry))
   
     __obj.asInstanceOf[XDocumentIndexMark]
   }

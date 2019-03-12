@@ -14,11 +14,11 @@ trait TextWatcher extends js.Object {
 object TextWatcher {
   @scala.inline
   def apply(
-    afterTextChanged: js.Function1[java.lang.String, scala.Unit],
-    beforeTextChanged: js.Function4[java.lang.String, scala.Double, scala.Double, scala.Double, scala.Unit],
-    onTextChanged: js.Function4[java.lang.String, scala.Double, scala.Double, scala.Double, scala.Unit]
+    afterTextChanged: java.lang.String => scala.Unit,
+    beforeTextChanged: (java.lang.String, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    onTextChanged: (java.lang.String, scala.Double, scala.Double, scala.Double) => scala.Unit
   ): TextWatcher = {
-    val __obj = js.Dynamic.literal(afterTextChanged = afterTextChanged, beforeTextChanged = beforeTextChanged, onTextChanged = onTextChanged)
+    val __obj = js.Dynamic.literal(afterTextChanged = js.Any.fromFunction1(afterTextChanged), beforeTextChanged = js.Any.fromFunction4(beforeTextChanged), onTextChanged = js.Any.fromFunction4(onTextChanged))
   
     __obj.asInstanceOf[TextWatcher]
   }

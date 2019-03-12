@@ -18,8 +18,8 @@ trait FileOpenCommand extends CommandWithSimpleStateBase {
 
 object FileOpenCommand {
   @scala.inline
-  def apply(execute: js.Function1[java.lang.String, scala.Boolean], getState: js.Function0[SimpleCommandState]): FileOpenCommand = {
-    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  def apply(execute: java.lang.String => scala.Boolean, getState: () => SimpleCommandState): FileOpenCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
   
     __obj.asInstanceOf[FileOpenCommand]
   }

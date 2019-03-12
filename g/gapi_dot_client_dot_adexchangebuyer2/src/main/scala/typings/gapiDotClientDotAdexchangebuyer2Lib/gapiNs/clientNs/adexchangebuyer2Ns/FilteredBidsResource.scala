@@ -22,12 +22,9 @@ object FilteredBidsResource {
   def apply(
     creatives: CreativesResource,
     details: DetailsResource,
-    list: js.Function1[
-      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListFilteredBidsResponse]
-    ]
+    list: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetId => gapiDotClientLib.gapiNs.clientNs.Request[ListFilteredBidsResponse]
   ): FilteredBidsResource = {
-    val __obj = js.Dynamic.literal(creatives = creatives, details = details, list = list)
+    val __obj = js.Dynamic.literal(creatives = creatives, details = details, list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[FilteredBidsResource]
   }

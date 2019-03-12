@@ -17,7 +17,7 @@ object ISyndicationText {
     attributeExtensions: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[SyndicationAttribute],
     baseUri: winrtLib.WindowsNs.FoundationNs.Uri,
     elementExtensions: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[ISyndicationNode],
-    getXmlDocument: js.Function1[SyndicationFormat, winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument],
+    getXmlDocument: SyndicationFormat => winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument,
     language: java.lang.String,
     nodeName: java.lang.String,
     nodeNamespace: java.lang.String,
@@ -26,7 +26,7 @@ object ISyndicationText {
     `type`: java.lang.String,
     xml: winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument
   ): ISyndicationText = {
-    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions, baseUri = baseUri, elementExtensions = elementExtensions, getXmlDocument = getXmlDocument, language = language, nodeName = nodeName, nodeNamespace = nodeNamespace, nodeValue = nodeValue, text = text, xml = xml)
+    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions, baseUri = baseUri, elementExtensions = elementExtensions, getXmlDocument = js.Any.fromFunction1(getXmlDocument), language = language, nodeName = nodeName, nodeNamespace = nodeNamespace, nodeValue = nodeValue, text = text, xml = xml)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ISyndicationText]
   }

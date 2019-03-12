@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(): arangodbLib.FoxxNs.SessionTransport = js.native
   def apply(name: java.lang.String): arangodbLib.FoxxNs.SessionTransport = js.native
-  def apply(options: arangodbLib.atArangodbFoxxSessionsTransportsCookieMod.CookieTransportOptions): arangodbLib.FoxxNs.SessionTransport = js.native
+  def apply(options: CookieTransportOptions): arangodbLib.FoxxNs.SessionTransport = js.native
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val RoutedButton: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsRoutedButtonMod.RoutedButtonProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    RoutedButtonProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
       reactLib.HTMLButtonElement
     ]), 

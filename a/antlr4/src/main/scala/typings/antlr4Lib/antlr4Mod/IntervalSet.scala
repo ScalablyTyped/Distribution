@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("antlr4", "IntervalSet")
 @js.native
 class IntervalSet ()
-  extends antlr4Lib.intervalsetMod.IntervalSet
+  extends antlr4Lib.intervalSetMod.IntervalSet
 

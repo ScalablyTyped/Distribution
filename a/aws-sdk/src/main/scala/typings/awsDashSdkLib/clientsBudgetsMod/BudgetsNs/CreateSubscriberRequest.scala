@@ -9,19 +9,19 @@ trait CreateSubscriberRequest extends js.Object {
   /**
     * The accountId that is associated with the budget that you want to create a subscriber for.
     */
-  var AccountId: AccountId
+  var AccountId: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.AccountId
   /**
     * The name of the budget that you want to subscribe to. Budget names must be unique within an account.
     */
-  var BudgetName: BudgetName
+  var BudgetName: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.BudgetName
   /**
     * The notification that you want to create a subscriber for.
     */
-  var Notification: Notification
+  var Notification: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.Notification
   /**
     * The subscriber that you want to associate with a budget notification.
     */
-  var Subscriber: Subscriber
+  var Subscriber: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.Subscriber
 }
 
 object CreateSubscriberRequest {

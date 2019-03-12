@@ -154,7 +154,7 @@ trait BucketManager extends js.Object {
     */
   def watchIndexes(
     watchList: js.Array[java.lang.String],
-    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Watches a list of indexes, waiting for them to become available for use.
@@ -165,7 +165,7 @@ trait BucketManager extends js.Object {
   def watchIndexes(
     watchList: js.Array[java.lang.String],
     options: WatchIndexesOptions,
-    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]
   ): scala.Unit = js.native
 }
 

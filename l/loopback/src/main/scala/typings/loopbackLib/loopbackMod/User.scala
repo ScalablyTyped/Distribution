@@ -96,7 +96,7 @@ object User extends js.Object {
     userId: js.Any,
     token: java.lang.String,
     redirect: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): js.Promise[scala.Unit] | scala.Unit = js.native
   /**
     * A default verification token generator which accepts the user the token is
@@ -131,7 +131,7 @@ object User extends js.Object {
     credentials: js.Any,
     include: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* token */ loopbackLib.loopbackMod.lNs.AccessToken, 
       scala.Unit
     ]
@@ -141,7 +141,7 @@ object User extends js.Object {
     credentials: js.Any,
     include: js.Array[java.lang.String],
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* token */ loopbackLib.loopbackMod.lNs.AccessToken, 
       scala.Unit
     ]
@@ -160,7 +160,7 @@ object User extends js.Object {
     * @param {Error} er
     */
   def logout(accessTokenID: java.lang.String): js.Promise[scala.Unit] | scala.Unit = js.native
-  def logout(accessTokenID: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): js.Promise[scala.Unit] | scala.Unit = js.native
+  def logout(accessTokenID: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): js.Promise[scala.Unit] | scala.Unit = js.native
   /**
     * Normalize the credentials
     * @param {any} credentials The credential object
@@ -178,6 +178,6 @@ object User extends js.Object {
     * @param {Error} er
     */
   def resetPassword(options: js.Object): js.Promise[scala.Unit] | scala.Unit = js.native
-  def resetPassword(options: js.Object, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): js.Promise[scala.Unit] | scala.Unit = js.native
+  def resetPassword(options: js.Object, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): js.Promise[scala.Unit] | scala.Unit = js.native
 }
 

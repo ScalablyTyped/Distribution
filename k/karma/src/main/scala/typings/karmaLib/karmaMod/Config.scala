@@ -22,9 +22,9 @@ object Config {
     LOG_ERROR: java.lang.String,
     LOG_INFO: java.lang.String,
     LOG_WARN: java.lang.String,
-    set: js.Function1[ConfigOptions, scala.Unit]
+    set: ConfigOptions => scala.Unit
   ): Config = {
-    val __obj = js.Dynamic.literal(LOG_DEBUG = LOG_DEBUG, LOG_DISABLE = LOG_DISABLE, LOG_ERROR = LOG_ERROR, LOG_INFO = LOG_INFO, LOG_WARN = LOG_WARN, set = set)
+    val __obj = js.Dynamic.literal(LOG_DEBUG = LOG_DEBUG, LOG_DISABLE = LOG_DISABLE, LOG_ERROR = LOG_ERROR, LOG_INFO = LOG_INFO, LOG_WARN = LOG_WARN, set = js.Any.fromFunction1(set))
   
     __obj.asInstanceOf[Config]
   }

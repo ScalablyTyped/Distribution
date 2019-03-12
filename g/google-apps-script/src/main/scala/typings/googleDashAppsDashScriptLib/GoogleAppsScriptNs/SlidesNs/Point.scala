@@ -12,8 +12,8 @@ trait Point extends js.Object {
 
 object Point {
   @scala.inline
-  def apply(getX: js.Function0[stdLib.Number], getY: js.Function0[stdLib.Number]): Point = {
-    val __obj = js.Dynamic.literal(getX = getX, getY = getY)
+  def apply(getX: () => stdLib.Number, getY: () => stdLib.Number): Point = {
+    val __obj = js.Dynamic.literal(getX = js.Any.fromFunction0(getX), getY = js.Any.fromFunction0(getY))
   
     __obj.asInstanceOf[Point]
   }

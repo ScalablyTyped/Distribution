@@ -18,11 +18,11 @@ trait ISCEDelegateService extends js.Object {
 object ISCEDelegateService {
   @scala.inline
   def apply(
-    getTrusted: js.Function2[java.lang.String, js.Any, js.Any],
-    trustAs: js.Function2[java.lang.String, js.Any, js.Any],
-    valueOf: js.Function1[js.Any, js.Any]
+    getTrusted: (java.lang.String, js.Any) => js.Any,
+    trustAs: (java.lang.String, js.Any) => js.Any,
+    valueOf: js.Any => js.Any
   ): ISCEDelegateService = {
-    val __obj = js.Dynamic.literal(getTrusted = getTrusted, trustAs = trustAs, valueOf = valueOf)
+    val __obj = js.Dynamic.literal(getTrusted = js.Any.fromFunction2(getTrusted), trustAs = js.Any.fromFunction2(trustAs), valueOf = js.Any.fromFunction1(valueOf))
   
     __obj.asInstanceOf[ISCEDelegateService]
   }

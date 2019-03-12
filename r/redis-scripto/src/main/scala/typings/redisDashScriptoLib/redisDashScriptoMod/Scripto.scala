@@ -10,13 +10,13 @@ trait Scripto extends js.Object {
     scriptName: java.lang.String,
     keys: js.Array[java.lang.String],
     args: js.Array[_],
-    callback: js.Function2[/* err */ nodeLib.Error, /* result */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* result */ js.Any, scala.Unit]
   ): scala.Unit
   def evalSha(
     scriptName: java.lang.String,
     keys: js.Array[java.lang.String],
     args: js.Array[_],
-    callback: js.Function2[/* err */ nodeLib.Error, /* result */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* result */ js.Any, scala.Unit]
   ): scala.Unit
   def load(scripts: redisDashScriptoLib.redisDashScriptoMod.ScriptoNs.Scripts): scala.Unit
   def loadFromDir(scriptsDir: java.lang.String): scala.Unit
@@ -25,39 +25,21 @@ trait Scripto extends js.Object {
     scriptName: java.lang.String,
     keys: js.Array[java.lang.String],
     args: js.Array[_],
-    callback: js.Function2[/* err */ nodeLib.Error, /* result */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* result */ js.Any, scala.Unit]
   ): scala.Unit
 }
 
 object Scripto {
   @scala.inline
   def apply(
-    eval: js.Function4[
-      java.lang.String, 
-      js.Array[java.lang.String], 
-      js.Array[_], 
-      js.Function2[/* err */ nodeLib.Error, /* result */ js.Any, scala.Unit], 
-      scala.Unit
-    ],
-    evalSha: js.Function4[
-      java.lang.String, 
-      js.Array[java.lang.String], 
-      js.Array[_], 
-      js.Function2[/* err */ nodeLib.Error, /* result */ js.Any, scala.Unit], 
-      scala.Unit
-    ],
-    load: js.Function1[redisDashScriptoLib.redisDashScriptoMod.ScriptoNs.Scripts, scala.Unit],
-    loadFromDir: js.Function1[java.lang.String, scala.Unit],
-    loadFromFile: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    run: js.Function4[
-      java.lang.String, 
-      js.Array[java.lang.String], 
-      js.Array[_], 
-      js.Function2[/* err */ nodeLib.Error, /* result */ js.Any, scala.Unit], 
-      scala.Unit
-    ]
+    eval: (java.lang.String, js.Array[java.lang.String], js.Array[_], js.Function2[/* err */ stdLib.Error, /* result */ js.Any, scala.Unit]) => scala.Unit,
+    evalSha: (java.lang.String, js.Array[java.lang.String], js.Array[_], js.Function2[/* err */ stdLib.Error, /* result */ js.Any, scala.Unit]) => scala.Unit,
+    load: redisDashScriptoLib.redisDashScriptoMod.ScriptoNs.Scripts => scala.Unit,
+    loadFromDir: java.lang.String => scala.Unit,
+    loadFromFile: (java.lang.String, java.lang.String) => scala.Unit,
+    run: (java.lang.String, js.Array[java.lang.String], js.Array[_], js.Function2[/* err */ stdLib.Error, /* result */ js.Any, scala.Unit]) => scala.Unit
   ): Scripto = {
-    val __obj = js.Dynamic.literal(eval = eval, evalSha = evalSha, load = load, loadFromDir = loadFromDir, loadFromFile = loadFromFile, run = run)
+    val __obj = js.Dynamic.literal(eval = js.Any.fromFunction4(eval), evalSha = js.Any.fromFunction4(evalSha), load = js.Any.fromFunction1(load), loadFromDir = js.Any.fromFunction1(loadFromDir), loadFromFile = js.Any.fromFunction2(loadFromFile), run = js.Any.fromFunction4(run))
   
     __obj.asInstanceOf[Scripto]
   }

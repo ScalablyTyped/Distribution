@@ -16,14 +16,14 @@ object VirtualOptions {
   @scala.inline
   def apply(
     cache: js.UndefOr[scala.Boolean] = js.undefined,
-    renderExternal: js.Function1[/* data */ js.Any, _] = null,
-    renderSlide: js.Function2[/* slide */ js.Any, /* index */ js.Any, _] = null,
+    renderExternal: /* data */ js.Any => _ = null,
+    renderSlide: (/* slide */ js.Any, /* index */ js.Any) => _ = null,
     slides: js.Array[_] = null
   ): VirtualOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (renderExternal != null) __obj.updateDynamic("renderExternal")(renderExternal)
-    if (renderSlide != null) __obj.updateDynamic("renderSlide")(renderSlide)
+    if (renderExternal != null) __obj.updateDynamic("renderExternal")(js.Any.fromFunction1(renderExternal))
+    if (renderSlide != null) __obj.updateDynamic("renderSlide")(js.Any.fromFunction2(renderSlide))
     if (slides != null) __obj.updateDynamic("slides")(slides)
     __obj.asInstanceOf[VirtualOptions]
   }

@@ -87,42 +87,30 @@ trait ClickEvents extends js.Object {
 object ClickEvents {
   @scala.inline
   def apply(
-    click: js.Function1[/* target */ Target, scala.Unit] = null,
-    nextInterval: js.Function2[
-      /* start */ momentLib.momentMod.momentNs.Moment, 
-      /* end */ momentLib.momentMod.momentNs.Moment, 
-      scala.Unit
-    ] = null,
-    nextMonth: js.Function1[/* month */ momentLib.momentMod.momentNs.Moment, scala.Unit] = null,
-    nextYear: js.Function1[/* month */ momentLib.momentMod.momentNs.Moment, scala.Unit] = null,
-    onIntervalChange: js.Function2[
-      /* start */ momentLib.momentMod.momentNs.Moment, 
-      /* end */ momentLib.momentMod.momentNs.Moment, 
-      scala.Unit
-    ] = null,
-    onMonthChange: js.Function1[/* month */ momentLib.momentMod.momentNs.Moment, scala.Unit] = null,
-    onYearChange: js.Function1[/* month */ momentLib.momentMod.momentNs.Moment, scala.Unit] = null,
-    previousInterval: js.Function2[
-      /* start */ momentLib.momentMod.momentNs.Moment, 
-      /* end */ momentLib.momentMod.momentNs.Moment, 
-      scala.Unit
-    ] = null,
-    previousMonth: js.Function1[/* month */ momentLib.momentMod.momentNs.Moment, scala.Unit] = null,
-    previousYear: js.Function1[/* month */ momentLib.momentMod.momentNs.Moment, scala.Unit] = null,
-    today: js.Function1[/* month */ momentLib.momentMod.momentNs.Moment, scala.Unit] = null
+    click: /* target */ Target => scala.Unit = null,
+    nextInterval: (/* start */ momentLib.momentMod.momentNs.Moment, /* end */ momentLib.momentMod.momentNs.Moment) => scala.Unit = null,
+    nextMonth: /* month */ momentLib.momentMod.momentNs.Moment => scala.Unit = null,
+    nextYear: /* month */ momentLib.momentMod.momentNs.Moment => scala.Unit = null,
+    onIntervalChange: (/* start */ momentLib.momentMod.momentNs.Moment, /* end */ momentLib.momentMod.momentNs.Moment) => scala.Unit = null,
+    onMonthChange: /* month */ momentLib.momentMod.momentNs.Moment => scala.Unit = null,
+    onYearChange: /* month */ momentLib.momentMod.momentNs.Moment => scala.Unit = null,
+    previousInterval: (/* start */ momentLib.momentMod.momentNs.Moment, /* end */ momentLib.momentMod.momentNs.Moment) => scala.Unit = null,
+    previousMonth: /* month */ momentLib.momentMod.momentNs.Moment => scala.Unit = null,
+    previousYear: /* month */ momentLib.momentMod.momentNs.Moment => scala.Unit = null,
+    today: /* month */ momentLib.momentMod.momentNs.Moment => scala.Unit = null
   ): ClickEvents = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (nextInterval != null) __obj.updateDynamic("nextInterval")(nextInterval)
-    if (nextMonth != null) __obj.updateDynamic("nextMonth")(nextMonth)
-    if (nextYear != null) __obj.updateDynamic("nextYear")(nextYear)
-    if (onIntervalChange != null) __obj.updateDynamic("onIntervalChange")(onIntervalChange)
-    if (onMonthChange != null) __obj.updateDynamic("onMonthChange")(onMonthChange)
-    if (onYearChange != null) __obj.updateDynamic("onYearChange")(onYearChange)
-    if (previousInterval != null) __obj.updateDynamic("previousInterval")(previousInterval)
-    if (previousMonth != null) __obj.updateDynamic("previousMonth")(previousMonth)
-    if (previousYear != null) __obj.updateDynamic("previousYear")(previousYear)
-    if (today != null) __obj.updateDynamic("today")(today)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
+    if (nextInterval != null) __obj.updateDynamic("nextInterval")(js.Any.fromFunction2(nextInterval))
+    if (nextMonth != null) __obj.updateDynamic("nextMonth")(js.Any.fromFunction1(nextMonth))
+    if (nextYear != null) __obj.updateDynamic("nextYear")(js.Any.fromFunction1(nextYear))
+    if (onIntervalChange != null) __obj.updateDynamic("onIntervalChange")(js.Any.fromFunction2(onIntervalChange))
+    if (onMonthChange != null) __obj.updateDynamic("onMonthChange")(js.Any.fromFunction1(onMonthChange))
+    if (onYearChange != null) __obj.updateDynamic("onYearChange")(js.Any.fromFunction1(onYearChange))
+    if (previousInterval != null) __obj.updateDynamic("previousInterval")(js.Any.fromFunction2(previousInterval))
+    if (previousMonth != null) __obj.updateDynamic("previousMonth")(js.Any.fromFunction1(previousMonth))
+    if (previousYear != null) __obj.updateDynamic("previousYear")(js.Any.fromFunction1(previousYear))
+    if (today != null) __obj.updateDynamic("today")(js.Any.fromFunction1(today))
     __obj.asInstanceOf[ClickEvents]
   }
 }

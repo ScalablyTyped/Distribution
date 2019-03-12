@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 trait ITreePickerOptions extends js.Object {
   /*callback function*/
-  var callback: angularLib.angularMod.Global.Function
+  var callback: js.Function
   /*should the tree pick one or multiple items before returning*/
   var multiPicker: scala.Boolean
   /*tree section to display*/
@@ -22,7 +22,7 @@ trait ITreePickerOptions extends js.Object {
 object ITreePickerOptions {
   @scala.inline
   def apply(
-    callback: angularLib.angularMod.Global.Function,
+    callback: js.Function,
     multiPicker: scala.Boolean,
     section: java.lang.String,
     treeAlias: java.lang.String

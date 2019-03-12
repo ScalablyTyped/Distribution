@@ -5,28 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Dialog extends js.Object {
-  var activator: durandalLib.DurandalActivator[_]
-  var context: DialogContext
-  var host: stdLib.HTMLElement
-  var owner: js.Any
-  var settings: durandalLib.compositionMod.CompositionContext
-  def close(): durandalLib.DurandalPromise[_]
-}
-
-object Dialog {
-  @scala.inline
-  def apply(
-    activator: durandalLib.DurandalActivator[_],
-    close: js.Function0[durandalLib.DurandalPromise[_]],
-    context: DialogContext,
-    host: stdLib.HTMLElement,
-    owner: js.Any,
-    settings: durandalLib.compositionMod.CompositionContext
-  ): Dialog = {
-    val __obj = js.Dynamic.literal(activator = activator, close = close, context = context, host = host, owner = owner, settings = settings)
-  
-    __obj.asInstanceOf[Dialog]
-  }
+  @JSName("activator")
+  var activator_Original: durandalLib.DurandalActivator[_] = js.native
+  var context: DialogContext = js.native
+  var host: stdLib.HTMLElement = js.native
+  var owner: js.Any = js.native
+  var settings: durandalLib.compositionMod.CompositionContext = js.native
+  def activator(): js.Any = js.native
+  def activator(value: js.Any): scala.Unit = js.native
+  def close(): durandalLib.DurandalPromise[_] = js.native
 }
 

@@ -38,9 +38,9 @@ object KeyboardEvent {
     currentTarget: reactLib.EventTarget with T,
     defaultPrevented: scala.Boolean,
     eventPhase: scala.Double,
-    getModifierState: js.Function1[java.lang.String, scala.Boolean],
-    isDefaultPrevented: js.Function0[scala.Boolean],
-    isPropagationStopped: js.Function0[scala.Boolean],
+    getModifierState: java.lang.String => scala.Boolean,
+    isDefaultPrevented: () => scala.Boolean,
+    isPropagationStopped: () => scala.Boolean,
     isTrusted: scala.Boolean,
     key: java.lang.String,
     keyCode: scala.Double,
@@ -48,17 +48,17 @@ object KeyboardEvent {
     location: scala.Double,
     metaKey: scala.Boolean,
     nativeEvent: reactLib.NativeKeyboardEvent,
-    persist: js.Function0[scala.Unit],
-    preventDefault: js.Function0[scala.Unit],
+    persist: () => scala.Unit,
+    preventDefault: () => scala.Unit,
     repeat: scala.Boolean,
     shiftKey: scala.Boolean,
-    stopPropagation: js.Function0[scala.Unit],
+    stopPropagation: () => scala.Unit,
     target: reactLib.EventTarget,
     timeStamp: scala.Double,
     `type`: java.lang.String,
     which: scala.Double
   ): KeyboardEvent[T] = {
-    val __obj = js.Dynamic.literal(altKey = altKey, bubbles = bubbles, cancelable = cancelable, charCode = charCode, ctrlKey = ctrlKey, currentTarget = currentTarget, defaultPrevented = defaultPrevented, eventPhase = eventPhase, getModifierState = getModifierState, isDefaultPrevented = isDefaultPrevented, isPropagationStopped = isPropagationStopped, isTrusted = isTrusted, key = key, keyCode = keyCode, locale = locale, location = location, metaKey = metaKey, nativeEvent = nativeEvent, persist = persist, preventDefault = preventDefault, repeat = repeat, shiftKey = shiftKey, stopPropagation = stopPropagation, target = target, timeStamp = timeStamp, which = which)
+    val __obj = js.Dynamic.literal(altKey = altKey, bubbles = bubbles, cancelable = cancelable, charCode = charCode, ctrlKey = ctrlKey, currentTarget = currentTarget, defaultPrevented = defaultPrevented, eventPhase = eventPhase, getModifierState = js.Any.fromFunction1(getModifierState), isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted, key = key, keyCode = keyCode, locale = locale, location = location, metaKey = metaKey, nativeEvent = nativeEvent, persist = js.Any.fromFunction0(persist), preventDefault = js.Any.fromFunction0(preventDefault), repeat = repeat, shiftKey = shiftKey, stopPropagation = js.Any.fromFunction0(stopPropagation), target = target, timeStamp = timeStamp, which = which)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[KeyboardEvent[T]]
   }

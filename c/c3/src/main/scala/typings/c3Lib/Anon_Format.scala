@@ -30,17 +30,12 @@ trait Anon_Format extends js.Object {
 object Anon_Format {
   @scala.inline
   def apply(
-    format: js.Function3[
-      /* value */ scala.Double, 
-      /* ratio */ scala.Double, 
-      /* id */ java.lang.String, 
-      java.lang.String
-    ] = null,
+    format: (/* value */ scala.Double, /* ratio */ scala.Double, /* id */ java.lang.String) => java.lang.String = null,
     show: js.UndefOr[scala.Boolean] = js.undefined,
     threshold: scala.Int | scala.Double = null
   ): Anon_Format = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction3(format))
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Format]

@@ -25,12 +25,12 @@ object MeshCenterAtParams {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     geographic: js.UndefOr[scala.Boolean] = js.undefined,
     origin: Point = null
   ): MeshCenterAtParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic)
     if (origin != null) __obj.updateDynamic("origin")(origin)
     __obj.asInstanceOf[MeshCenterAtParams]

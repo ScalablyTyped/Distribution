@@ -17,14 +17,14 @@ trait SetOptions extends js.Object {
     * paths. Any field path that is not specified is ignored and remains
     * untouched.
     */
-  val mergeFields: js.UndefOr[coreDashJsLib.Array[java.lang.String | FieldPath]] = js.undefined
+  val mergeFields: js.UndefOr[js.Array[java.lang.String | FieldPath]] = js.undefined
 }
 
 object SetOptions {
   @scala.inline
   def apply(
     merge: js.UndefOr[scala.Boolean] = js.undefined,
-    mergeFields: coreDashJsLib.Array[java.lang.String | FieldPath] = null
+    mergeFields: js.Array[java.lang.String | FieldPath] = null
   ): SetOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge)

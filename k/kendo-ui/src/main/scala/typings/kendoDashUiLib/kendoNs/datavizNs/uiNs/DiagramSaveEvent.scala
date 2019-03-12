@@ -14,14 +14,14 @@ trait DiagramSaveEvent extends DiagramEvent {
 object DiagramSaveEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Diagram,
     connection: kendoDashUiLib.kendoNs.dataNs.Model = null,
     container: kendoDashUiLib.JQuery = null,
     shape: kendoDashUiLib.kendoNs.dataNs.Model = null
   ): DiagramSaveEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (connection != null) __obj.updateDynamic("connection")(connection)
     if (container != null) __obj.updateDynamic("container")(container)
     if (shape != null) __obj.updateDynamic("shape")(shape)

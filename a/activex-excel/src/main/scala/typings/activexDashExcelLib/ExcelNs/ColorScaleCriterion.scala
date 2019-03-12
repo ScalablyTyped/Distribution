@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ColorScaleCriterion protected () extends js.Object {
   var `Excel.ColorScaleCriterion_typekey`: ColorScaleCriterion = js.native
-  val FormatColor: FormatColor = js.native
+  val FormatColor: activexDashExcelLib.ExcelNs.FormatColor = js.native
   val Index: scala.Double = js.native
   var Type: XlConditionValueTypes = js.native
   var Value: js.Any = js.native

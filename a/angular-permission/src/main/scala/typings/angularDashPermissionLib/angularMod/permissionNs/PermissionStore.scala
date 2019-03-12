@@ -62,15 +62,15 @@ trait PermissionStore extends js.Object {
 object PermissionStore {
   @scala.inline
   def apply(
-    clearStore: js.Function0[scala.Unit],
-    defineManyPermissions: js.Function2[js.Array[java.lang.String], PermissionValidationFunction, scala.Unit],
-    definePermission: js.Function2[java.lang.String, PermissionValidationFunction, scala.Unit],
-    getPermissionDefinition: js.Function1[java.lang.String, Permission],
-    getStore: js.Function0[org.scalablytyped.runtime.StringDictionary[Permission]],
-    hasPermissionDefinition: js.Function1[java.lang.String, scala.Boolean],
-    removePermissionDefinition: js.Function1[java.lang.String, scala.Unit]
+    clearStore: () => scala.Unit,
+    defineManyPermissions: (js.Array[java.lang.String], PermissionValidationFunction) => scala.Unit,
+    definePermission: (java.lang.String, PermissionValidationFunction) => scala.Unit,
+    getPermissionDefinition: java.lang.String => Permission,
+    getStore: () => org.scalablytyped.runtime.StringDictionary[Permission],
+    hasPermissionDefinition: java.lang.String => scala.Boolean,
+    removePermissionDefinition: java.lang.String => scala.Unit
   ): PermissionStore = {
-    val __obj = js.Dynamic.literal(clearStore = clearStore, defineManyPermissions = defineManyPermissions, definePermission = definePermission, getPermissionDefinition = getPermissionDefinition, getStore = getStore, hasPermissionDefinition = hasPermissionDefinition, removePermissionDefinition = removePermissionDefinition)
+    val __obj = js.Dynamic.literal(clearStore = js.Any.fromFunction0(clearStore), defineManyPermissions = js.Any.fromFunction2(defineManyPermissions), definePermission = js.Any.fromFunction2(definePermission), getPermissionDefinition = js.Any.fromFunction1(getPermissionDefinition), getStore = js.Any.fromFunction0(getStore), hasPermissionDefinition = js.Any.fromFunction1(hasPermissionDefinition), removePermissionDefinition = js.Any.fromFunction1(removePermissionDefinition))
   
     __obj.asInstanceOf[PermissionStore]
   }

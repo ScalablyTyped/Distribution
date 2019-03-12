@@ -75,11 +75,11 @@ trait SelectListProps
   /**
     * The native onKeyDown event, called preventDefault will prevent any custom behavior, included keyboard shortcuts.
     */
-  var onKeyDown: js.UndefOr[js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit]] = js.undefined
+  var onKeyDown: js.UndefOr[js.Function1[/* event */ stdLib.KeyboardEvent, scala.Unit]] = js.undefined
   /**
     * The native onKeyPress event, called preventDefault will stop any custom behavior.
     */
-  var onKeyPress: js.UndefOr[js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit]] = js.undefined
+  var onKeyPress: js.UndefOr[js.Function1[/* event */ stdLib.KeyboardEvent, scala.Unit]] = js.undefined
   /**
     * A handler called when focus shifts on the SelectList. Internally this is used to ensure
     * the focused item is in view. If you want to define your own "scrollTo" behavior or just
@@ -89,8 +89,8 @@ trait SelectListProps
     */
   var onMove: js.UndefOr[
     js.Function3[
-      /* list */ reactLib.HTMLElement, 
-      /* focusedNode */ reactLib.HTMLElement, 
+      /* list */ stdLib.HTMLElement, 
+      /* focusedNode */ stdLib.HTMLElement, 
       /* focusedItem */ js.Any, 
       scala.Unit
     ]
@@ -142,15 +142,10 @@ object SelectListProps {
     messages: SelectListMessages = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
-    onChange: js.Function1[/* values */ js.Any | js.Array[_], scala.Unit] = null,
-    onKeyDown: js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit] = null,
-    onKeyPress: js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit] = null,
-    onMove: js.Function3[
-      /* list */ reactLib.HTMLElement, 
-      /* focusedNode */ reactLib.HTMLElement, 
-      /* focusedItem */ js.Any, 
-      scala.Unit
-    ] = null,
+    onChange: /* values */ js.Any | js.Array[_] => scala.Unit = null,
+    onKeyDown: /* event */ stdLib.KeyboardEvent => scala.Unit = null,
+    onKeyPress: /* event */ stdLib.KeyboardEvent => scala.Unit = null,
+    onMove: (/* list */ stdLib.HTMLElement, /* focusedNode */ stdLib.HTMLElement, /* focusedItem */ js.Any) => scala.Unit = null,
     readOnly: scala.Boolean | js.Array[_] = null,
     ref: reactLib.reactMod.ReactNs.LegacyRef[SelectListClass] = null,
     tabIndex: scala.Int | scala.Double = null,
@@ -177,10 +172,10 @@ object SelectListProps {
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
-    if (onMove != null) __obj.updateDynamic("onMove")(onMove)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
+    if (onMove != null) __obj.updateDynamic("onMove")(js.Any.fromFunction3(onMove))
     if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])

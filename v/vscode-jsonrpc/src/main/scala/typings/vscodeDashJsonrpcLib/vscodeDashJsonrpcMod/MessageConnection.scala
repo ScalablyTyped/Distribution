@@ -14,7 +14,7 @@ trait MessageConnection extends js.Object {
   @JSName("onError")
   var onError_Original: vscodeDashJsonrpcLib.libEventsMod.Event[
     js.Tuple3[
-      nodeLib.Error, 
+      stdLib.Error, 
       js.UndefOr[vscodeDashJsonrpcLib.libMessagesMod.Message], 
       js.UndefOr[scala.Double]
     ]
@@ -24,13 +24,6 @@ trait MessageConnection extends js.Object {
   def dispose(): scala.Unit = js.native
   def inspect(): scala.Unit = js.native
   def listen(): scala.Unit = js.native
-  /**
-    *
-    * @param listener The listener function will be call when the event happens.
-    * @param thisArgs The 'this' which will be used when calling the event listener.
-    * @param disposables An array to which a {{IDisposable}} will be added. The
-    * @return
-    */
   def onClose(listener: js.Function1[/* e */ scala.Unit, _]): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
   def onClose(listener: js.Function1[/* e */ scala.Unit, _], thisArgs: js.Any): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
   def onClose(
@@ -38,13 +31,6 @@ trait MessageConnection extends js.Object {
     thisArgs: js.Any,
     disposables: js.Array[vscodeDashJsonrpcLib.libEventsMod.Disposable]
   ): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
-  /**
-    *
-    * @param listener The listener function will be call when the event happens.
-    * @param thisArgs The 'this' which will be used when calling the event listener.
-    * @param disposables An array to which a {{IDisposable}} will be added. The
-    * @return
-    */
   def onDispose(listener: js.Function1[/* e */ scala.Unit, _]): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
   def onDispose(listener: js.Function1[/* e */ scala.Unit, _], thisArgs: js.Any): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
   def onDispose(
@@ -52,17 +38,10 @@ trait MessageConnection extends js.Object {
     thisArgs: js.Any,
     disposables: js.Array[vscodeDashJsonrpcLib.libEventsMod.Disposable]
   ): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
-  /**
-    *
-    * @param listener The listener function will be call when the event happens.
-    * @param thisArgs The 'this' which will be used when calling the event listener.
-    * @param disposables An array to which a {{IDisposable}} will be added. The
-    * @return
-    */
   def onError(
     listener: js.Function1[
       /* e */ js.Tuple3[
-        nodeLib.Error, 
+        stdLib.Error, 
         js.UndefOr[vscodeDashJsonrpcLib.libMessagesMod.Message], 
         js.UndefOr[scala.Double]
       ], 
@@ -72,7 +51,7 @@ trait MessageConnection extends js.Object {
   def onError(
     listener: js.Function1[
       /* e */ js.Tuple3[
-        nodeLib.Error, 
+        stdLib.Error, 
         js.UndefOr[vscodeDashJsonrpcLib.libMessagesMod.Message], 
         js.UndefOr[scala.Double]
       ], 
@@ -83,7 +62,7 @@ trait MessageConnection extends js.Object {
   def onError(
     listener: js.Function1[
       /* e */ js.Tuple3[
-        nodeLib.Error, 
+        stdLib.Error, 
         js.UndefOr[vscodeDashJsonrpcLib.libMessagesMod.Message], 
         js.UndefOr[scala.Double]
       ], 
@@ -178,13 +157,6 @@ trait MessageConnection extends js.Object {
     `type`: vscodeDashJsonrpcLib.libMessagesMod.RequestType9[P1, P2, P3, P4, P5, P6, P7, P8, P9, R, E, RO],
     handler: RequestHandler9[P1, P2, P3, P4, P5, P6, P7, P8, P9, R, E]
   ): scala.Unit = js.native
-  /**
-    *
-    * @param listener The listener function will be call when the event happens.
-    * @param thisArgs The 'this' which will be used when calling the event listener.
-    * @param disposables An array to which a {{IDisposable}} will be added. The
-    * @return
-    */
   def onUnhandledNotification(listener: js.Function1[/* e */ vscodeDashJsonrpcLib.libMessagesMod.NotificationMessage, _]): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
   def onUnhandledNotification(
     listener: js.Function1[/* e */ vscodeDashJsonrpcLib.libMessagesMod.NotificationMessage, _],

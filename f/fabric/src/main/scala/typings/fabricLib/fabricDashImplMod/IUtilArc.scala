@@ -58,38 +58,11 @@ trait IUtilArc extends js.Object {
 object IUtilArc {
   @scala.inline
   def apply(
-    drawArc: js.Function4[
-      stdLib.CanvasRenderingContext2D, 
-      scala.Double, 
-      scala.Double, 
-      js.Array[scala.Double], 
-      scala.Unit
-    ],
-    getBoundsOfArc: js.Function9[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      js.Array[Point]
-    ],
-    getBoundsOfCurve: js.Function8[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      js.Array[Point]
-    ]
+    drawArc: (stdLib.CanvasRenderingContext2D, scala.Double, scala.Double, js.Array[scala.Double]) => scala.Unit,
+    getBoundsOfArc: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => js.Array[Point],
+    getBoundsOfCurve: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => js.Array[Point]
   ): IUtilArc = {
-    val __obj = js.Dynamic.literal(drawArc = drawArc, getBoundsOfArc = getBoundsOfArc, getBoundsOfCurve = getBoundsOfCurve)
+    val __obj = js.Dynamic.literal(drawArc = js.Any.fromFunction4(drawArc), getBoundsOfArc = js.Any.fromFunction9(getBoundsOfArc), getBoundsOfCurve = js.Any.fromFunction8(getBoundsOfCurve))
   
     __obj.asInstanceOf[IUtilArc]
   }

@@ -79,7 +79,7 @@ trait FlipMoveProps extends js.Object {
     * For normal usage of FlipMove you won't need this. An example of usage is when FlipMove is used in a container
     * that is scaled using CSS. You can correct the values from getBoundingClientRect by using this prop.
     */
-  var getPosition: js.UndefOr[js.Function1[/* node */ reactLib.HTMLElement, stdLib.ClientRect]] = js.undefined
+  var getPosition: js.UndefOr[js.Function1[/* node */ stdLib.HTMLElement, stdLib.ClientRect]] = js.undefined
   /**
     * Control the onLeave animation that runs when new items are removed from the DOM.
     *
@@ -109,7 +109,7 @@ trait FlipMoveProps extends js.Object {
   var onFinish: js.UndefOr[
     js.Function2[
       /* childElement */ reactLib.reactMod.ReactNs.ReactElement[_], 
-      /* domNode */ reactLib.HTMLElement, 
+      /* domNode */ stdLib.HTMLElement, 
       scala.Unit
     ]
   ] = js.undefined
@@ -129,7 +129,7 @@ trait FlipMoveProps extends js.Object {
   var onFinishAll: js.UndefOr[
     js.Function2[
       /* childElements */ js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], 
-      /* domNodes */ js.Array[reactLib.HTMLElement], 
+      /* domNodes */ js.Array[stdLib.HTMLElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -145,7 +145,7 @@ trait FlipMoveProps extends js.Object {
   var onStart: js.UndefOr[
     js.Function2[
       /* childElement */ reactLib.reactMod.ReactNs.ReactElement[_], 
-      /* domNode */ reactLib.HTMLElement, 
+      /* domNode */ stdLib.HTMLElement, 
       scala.Unit
     ]
   ] = js.undefined
@@ -166,7 +166,7 @@ trait FlipMoveProps extends js.Object {
   var onStartAll: js.UndefOr[
     js.Function2[
       /* childElements */ js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], 
-      /* domNodes */ js.Array[reactLib.HTMLElement], 
+      /* domNodes */ js.Array[stdLib.HTMLElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -229,29 +229,13 @@ object FlipMoveProps {
     duration: scala.Double | java.lang.String = null,
     easing: java.lang.String = null,
     enterAnimation: AnimationProp = null,
-    getPosition: js.Function1[/* node */ reactLib.HTMLElement, stdLib.ClientRect] = null,
+    getPosition: /* node */ stdLib.HTMLElement => stdLib.ClientRect = null,
     leaveAnimation: AnimationProp = null,
     maintainContainerHeight: js.UndefOr[scala.Boolean] = js.undefined,
-    onFinish: js.Function2[
-      /* childElement */ reactLib.reactMod.ReactNs.ReactElement[_], 
-      /* domNode */ reactLib.HTMLElement, 
-      scala.Unit
-    ] = null,
-    onFinishAll: js.Function2[
-      /* childElements */ js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], 
-      /* domNodes */ js.Array[reactLib.HTMLElement], 
-      scala.Unit
-    ] = null,
-    onStart: js.Function2[
-      /* childElement */ reactLib.reactMod.ReactNs.ReactElement[_], 
-      /* domNode */ reactLib.HTMLElement, 
-      scala.Unit
-    ] = null,
-    onStartAll: js.Function2[
-      /* childElements */ js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], 
-      /* domNodes */ js.Array[reactLib.HTMLElement], 
-      scala.Unit
-    ] = null,
+    onFinish: (/* childElement */ reactLib.reactMod.ReactNs.ReactElement[_], /* domNode */ stdLib.HTMLElement) => scala.Unit = null,
+    onFinishAll: (/* childElements */ js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], /* domNodes */ js.Array[stdLib.HTMLElement]) => scala.Unit = null,
+    onStart: (/* childElement */ reactLib.reactMod.ReactNs.ReactElement[_], /* domNode */ stdLib.HTMLElement) => scala.Unit = null,
+    onStartAll: (/* childElements */ js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], /* domNodes */ js.Array[stdLib.HTMLElement]) => scala.Unit = null,
     staggerDelayBy: scala.Double | java.lang.String = null,
     staggerDurationBy: scala.Double | java.lang.String = null,
     style: Styles = null,
@@ -266,13 +250,13 @@ object FlipMoveProps {
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing)
     if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(enterAnimation.asInstanceOf[js.Any])
-    if (getPosition != null) __obj.updateDynamic("getPosition")(getPosition)
+    if (getPosition != null) __obj.updateDynamic("getPosition")(js.Any.fromFunction1(getPosition))
     if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(leaveAnimation.asInstanceOf[js.Any])
     if (!js.isUndefined(maintainContainerHeight)) __obj.updateDynamic("maintainContainerHeight")(maintainContainerHeight)
-    if (onFinish != null) __obj.updateDynamic("onFinish")(onFinish)
-    if (onFinishAll != null) __obj.updateDynamic("onFinishAll")(onFinishAll)
-    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
-    if (onStartAll != null) __obj.updateDynamic("onStartAll")(onStartAll)
+    if (onFinish != null) __obj.updateDynamic("onFinish")(js.Any.fromFunction2(onFinish))
+    if (onFinishAll != null) __obj.updateDynamic("onFinishAll")(js.Any.fromFunction2(onFinishAll))
+    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction2(onStart))
+    if (onStartAll != null) __obj.updateDynamic("onStartAll")(js.Any.fromFunction2(onStartAll))
     if (staggerDelayBy != null) __obj.updateDynamic("staggerDelayBy")(staggerDelayBy.asInstanceOf[js.Any])
     if (staggerDurationBy != null) __obj.updateDynamic("staggerDurationBy")(staggerDurationBy.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)

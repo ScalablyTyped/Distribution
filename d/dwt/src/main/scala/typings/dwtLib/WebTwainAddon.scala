@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WebTwainAddon extends js.Object {
-  var OCR: OCR
-  var OCRPro: OCRPro
-  var PDF: PDF
-  var Webcam: Webcam
+  var OCR: dwtLib.OCR
+  var OCRPro: dwtLib.OCRPro
+  var PDF: dwtLib.PDF
+  var Webcam: dwtLib.Webcam
 }
 
 object WebTwainAddon {

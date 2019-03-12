@@ -11,7 +11,7 @@ object ^ extends js.Object {
   def apply(form: stdLib.HTMLFormElement): java.lang.String = js.native
   def apply(
     form: stdLib.HTMLFormElement,
-    options: formDashSerializeLib.formDashSerializeMod.OptionsHash | formDashSerializeLib.formDashSerializeLibNumbers.`true`
-  ): formDashSerializeLib.formDashSerializeMod.ResultHash = js.native
+    options: OptionsHash | formDashSerializeLib.formDashSerializeLibNumbers.`true`
+  ): ResultHash = js.native
 }
 

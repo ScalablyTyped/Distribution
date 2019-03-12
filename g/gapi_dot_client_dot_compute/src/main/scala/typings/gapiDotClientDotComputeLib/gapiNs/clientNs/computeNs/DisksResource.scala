@@ -34,40 +34,16 @@ trait DisksResource extends js.Object {
 object DisksResource {
   @scala.inline
   def apply(
-    aggregatedList: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DiskAggregatedList]
-    ],
-    createSnapshot: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltDisk, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltDiskFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltDiskFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Disk]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProject, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DiskList]
-    ],
-    resize: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltDiskFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    setLabels: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUser, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    aggregatedList: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[DiskAggregatedList],
+    createSnapshot: gapiDotClientDotComputeLib.Anon_AltDisk => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    delete: gapiDotClientDotComputeLib.Anon_AltDiskFields => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotComputeLib.Anon_AltDiskFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Disk],
+    insert: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProject => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotComputeLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[DiskList],
+    resize: gapiDotClientDotComputeLib.Anon_AltDiskFields => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    setLabels: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUser => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): DisksResource = {
-    val __obj = js.Dynamic.literal(aggregatedList = aggregatedList, createSnapshot = createSnapshot, delete = delete, get = get, insert = insert, list = list, resize = resize, setLabels = setLabels)
+    val __obj = js.Dynamic.literal(aggregatedList = js.Any.fromFunction1(aggregatedList), createSnapshot = js.Any.fromFunction1(createSnapshot), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), resize = js.Any.fromFunction1(resize), setLabels = js.Any.fromFunction1(setLabels))
   
     __obj.asInstanceOf[DisksResource]
   }

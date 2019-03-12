@@ -22,8 +22,8 @@ object DivOverlayProps {
     className: java.lang.String = null,
     leaflet: LeafletContext = null,
     offset: leafletLib.leafletMod.PointExpression = null,
-    onClose: js.Function0[scala.Unit] = null,
-    onOpen: js.Function0[scala.Unit] = null,
+    onClose: () => scala.Unit = null,
+    onOpen: () => scala.Unit = null,
     pane: java.lang.String = null,
     zoomAnimation: js.UndefOr[scala.Boolean] = js.undefined
   ): DivOverlayProps = {
@@ -31,8 +31,8 @@ object DivOverlayProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
     if (pane != null) __obj.updateDynamic("pane")(pane)
     if (!js.isUndefined(zoomAnimation)) __obj.updateDynamic("zoomAnimation")(zoomAnimation)
     __obj.asInstanceOf[DivOverlayProps]

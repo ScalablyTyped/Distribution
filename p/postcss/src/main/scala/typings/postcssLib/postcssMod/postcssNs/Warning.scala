@@ -40,9 +40,9 @@ object Warning {
     node: Node,
     plugin: java.lang.String,
     text: java.lang.String,
-    toString: js.Function0[java.lang.String]
+    toString: () => java.lang.String
   ): Warning = {
-    val __obj = js.Dynamic.literal(column = column, line = line, node = node, plugin = plugin, text = text, toString = toString)
+    val __obj = js.Dynamic.literal(column = column, line = line, node = node, plugin = plugin, text = text, toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[Warning]
   }

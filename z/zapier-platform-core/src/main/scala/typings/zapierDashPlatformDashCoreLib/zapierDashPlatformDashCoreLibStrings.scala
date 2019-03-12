@@ -7,25 +7,25 @@ import scala.scalajs.js.annotation._
 
 object zapierDashPlatformDashCoreLibStrings {
   @js.native
-  sealed trait DELETE extends js.Object
+  sealed trait DELETE extends HttpMethod
   
   @js.native
-  sealed trait GET extends js.Object
+  sealed trait GET extends HttpMethod
   
   @js.native
-  sealed trait HEAD extends js.Object
+  sealed trait HEAD extends HttpMethod
   
   @js.native
-  sealed trait OPTIONS extends js.Object
+  sealed trait OPTIONS extends HttpMethod
   
   @js.native
-  sealed trait PATCH extends js.Object
+  sealed trait PATCH extends HttpMethod
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait POST extends HttpMethod
   
   @js.native
-  sealed trait PUT extends js.Object
+  sealed trait PUT extends HttpMethod
   
   @js.native
   sealed trait error extends js.Object
@@ -35,9 +35,6 @@ object zapierDashPlatformDashCoreLibStrings {
   
   @js.native
   sealed trait manual extends js.Object
-  
-  @js.native
-  sealed trait oauth2 extends js.Object
   
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
@@ -59,7 +56,5 @@ object zapierDashPlatformDashCoreLibStrings {
   def follow: follow = "follow".asInstanceOf[follow]
   @scala.inline
   def manual: manual = "manual".asInstanceOf[manual]
-  @scala.inline
-  def oauth2: oauth2 = "oauth2".asInstanceOf[oauth2]
 }
 

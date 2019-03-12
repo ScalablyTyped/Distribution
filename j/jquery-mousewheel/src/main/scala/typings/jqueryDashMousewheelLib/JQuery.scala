@@ -28,27 +28,20 @@ trait JQuery extends js.Object {
 object JQuery {
   @scala.inline
   def apply(
-    mousewheel: js.Function1[
-      js.Function2[
-        /* eventObject */ jqueryDashMousewheelLib.JQueryMousewheelNs.JQueryMousewheelEventObject, 
-        /* repeated */ js.Any, 
-        _
-      ], 
-      JQuery
-    ],
-    on_mousewheel: js.Function2[
-      jqueryDashMousewheelLib.jqueryDashMousewheelLibStrings.mousewheel, 
-      js.Function2[
-        /* eventObject */ jqueryDashMousewheelLib.JQueryMousewheelNs.JQueryMousewheelEventObject, 
-        /* repeated */ js.Any, 
-        _
-      ], 
-      JQuery
-    ],
-    unmousewheel: js.Function0[JQuery]
+    mousewheel: js.Function2[
+      /* eventObject */ jqueryDashMousewheelLib.JQueryMousewheelNs.JQueryMousewheelEventObject, 
+      /* repeated */ js.Any, 
+      _
+    ] => JQuery,
+    on_mousewheel: (jqueryDashMousewheelLib.jqueryDashMousewheelLibStrings.mousewheel, js.Function2[
+      /* eventObject */ jqueryDashMousewheelLib.JQueryMousewheelNs.JQueryMousewheelEventObject, 
+      /* repeated */ js.Any, 
+      _
+    ]) => JQuery,
+    unmousewheel: () => JQuery
   ): JQuery = {
-    val __obj = js.Dynamic.literal(mousewheel = mousewheel, unmousewheel = unmousewheel)
-    __obj.updateDynamic("on")(on_mousewheel)
+    val __obj = js.Dynamic.literal(mousewheel = js.Any.fromFunction1(mousewheel), unmousewheel = js.Any.fromFunction0(unmousewheel))
+    __obj.updateDynamic("on")(js.Any.fromFunction2(on_mousewheel))
     __obj.asInstanceOf[JQuery]
   }
 }

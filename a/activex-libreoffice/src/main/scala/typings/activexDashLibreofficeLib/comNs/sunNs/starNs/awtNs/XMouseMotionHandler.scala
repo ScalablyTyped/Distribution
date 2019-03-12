@@ -26,14 +26,14 @@ trait XMouseMotionHandler
 object XMouseMotionHandler {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    mouseDragged: js.Function1[MouseEvent, scala.Boolean],
-    mouseMoved: js.Function1[MouseEvent, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    mouseDragged: MouseEvent => scala.Boolean,
+    mouseMoved: MouseEvent => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XMouseMotionHandler = {
-    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, mouseDragged = mouseDragged, mouseMoved = mouseMoved, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), mouseDragged = js.Any.fromFunction1(mouseDragged), mouseMoved = js.Any.fromFunction1(mouseMoved), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XMouseMotionHandler]
   }

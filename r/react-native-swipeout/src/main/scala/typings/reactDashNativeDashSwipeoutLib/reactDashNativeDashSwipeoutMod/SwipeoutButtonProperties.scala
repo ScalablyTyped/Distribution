@@ -25,7 +25,7 @@ object SwipeoutButtonProperties {
     color: java.lang.String = null,
     component: reactLib.reactMod.Global.JSXNs.Element = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    onPress: js.Function0[scala.Unit] = null,
+    onPress: () => scala.Unit = null,
     text: reactLib.reactMod.ReactNs.ReactNode = null,
     `type`: reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutLibStrings.default | reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutLibStrings.delete | reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutLibStrings.primary | reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutLibStrings.secondary = null,
     underlayColor: java.lang.String = null
@@ -35,7 +35,7 @@ object SwipeoutButtonProperties {
     if (color != null) __obj.updateDynamic("color")(color)
     if (component != null) __obj.updateDynamic("component")(component)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (underlayColor != null) __obj.updateDynamic("underlayColor")(underlayColor)

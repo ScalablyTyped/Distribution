@@ -10,14 +10,10 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val isBrowser: scala.Boolean = js.native
   def getRegisteredStyles(
-    registered: atEmotionUtilsLib.atEmotionUtilsMod.RegisteredCache,
+    registered: RegisteredCache,
     registeredStyles: js.Array[java.lang.String],
     classNames: java.lang.String
   ): java.lang.String = js.native
-  def insertStyles(
-    cache: atEmotionUtilsLib.atEmotionUtilsMod.EmotionCache,
-    serialized: atEmotionUtilsLib.atEmotionUtilsMod.SerializedStyles,
-    isStringTag: scala.Boolean
-  ): java.lang.String | scala.Unit = js.native
+  def insertStyles(cache: EmotionCache, serialized: SerializedStyles, isStringTag: scala.Boolean): java.lang.String | scala.Unit = js.native
 }
 

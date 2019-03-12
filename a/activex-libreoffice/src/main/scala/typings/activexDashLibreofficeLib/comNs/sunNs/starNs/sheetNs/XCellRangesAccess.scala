@@ -48,35 +48,20 @@ trait XCellRangesAccess
     * @returns the specified cell ranges.
     * @see com.sun.star.table.CellRange
     */
-  def getCellRangesByName(aRange: java.lang.String): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange]
+  def getCellRangesByName(aRange: java.lang.String): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange]
 }
 
 object XCellRangesAccess {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getCellByPosition: js.Function3[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCell
-    ],
-    getCellRangeByPosition: js.Function5[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange
-    ],
-    getCellRangesByName: js.Function1[
-      java.lang.String, 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getCellByPosition: (scala.Double, scala.Double, scala.Double) => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCell,
+    getCellRangeByPosition: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange,
+    getCellRangesByName: java.lang.String => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCellRangesAccess = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getCellByPosition = getCellByPosition, getCellRangeByPosition = getCellRangeByPosition, getCellRangesByName = getCellRangesByName, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getCellByPosition = js.Any.fromFunction3(getCellByPosition), getCellRangeByPosition = js.Any.fromFunction5(getCellRangeByPosition), getCellRangesByName = js.Any.fromFunction1(getCellRangesByName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCellRangesAccess]
   }

@@ -42,12 +42,7 @@ object Options {
     assumeAdditional: js.UndefOr[scala.Boolean] = js.undefined,
     asyncTimeout: scala.Int | scala.Double = null,
     breakOnFirstError: js.UndefOr[scala.Boolean] = js.undefined,
-    customValidator: js.Function3[
-      /* report */ zDashSchemaLib.zDashSchemaMod.Report, 
-      /* schema */ js.Any, 
-      /* json */ js.Any, 
-      scala.Unit
-    ] = null,
+    customValidator: (/* report */ zDashSchemaLib.zDashSchemaMod.Report, /* schema */ js.Any, /* json */ js.Any) => scala.Unit = null,
     forceAdditional: js.UndefOr[scala.Boolean] = js.undefined,
     forceItems: js.UndefOr[scala.Boolean] = js.undefined,
     forceMaxItems: js.UndefOr[scala.Boolean] = js.undefined,
@@ -70,7 +65,7 @@ object Options {
     if (!js.isUndefined(assumeAdditional)) __obj.updateDynamic("assumeAdditional")(assumeAdditional)
     if (asyncTimeout != null) __obj.updateDynamic("asyncTimeout")(asyncTimeout.asInstanceOf[js.Any])
     if (!js.isUndefined(breakOnFirstError)) __obj.updateDynamic("breakOnFirstError")(breakOnFirstError)
-    if (customValidator != null) __obj.updateDynamic("customValidator")(customValidator)
+    if (customValidator != null) __obj.updateDynamic("customValidator")(js.Any.fromFunction3(customValidator))
     if (!js.isUndefined(forceAdditional)) __obj.updateDynamic("forceAdditional")(forceAdditional)
     if (!js.isUndefined(forceItems)) __obj.updateDynamic("forceItems")(forceItems)
     if (!js.isUndefined(forceMaxItems)) __obj.updateDynamic("forceMaxItems")(forceMaxItems)

@@ -13,7 +13,7 @@ class ListBox protected () extends js.Object {
   var AfterUpdate: java.lang.String = js.native
   var AfterUpdateMacro: java.lang.String = js.native
   var AllowValueListEdits: scala.Boolean = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   var AutoLabel: scala.Boolean = js.native
   var BackColor: scala.Double = js.native
   var BackShade: scala.Double = js.native
@@ -72,7 +72,7 @@ class ListBox protected () extends js.Object {
   var HelpContextId: scala.Double = js.native
   var HideDuplicates: scala.Boolean = js.native
   var HorizontalAnchor: AcHorizontalAnchor = js.native
-  val Hyperlink: Hyperlink = js.native
+  val Hyperlink: activexDashAccessLib.AccessNs.Hyperlink = js.native
   var IMEHold: scala.Boolean = js.native
   var IMEMode: AcImeMode = js.native
   var IMESentenceMode: AcImeSentenceMode = js.native

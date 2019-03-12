@@ -11,7 +11,7 @@ trait Reference
   /**
     * Gets or sets the digest method Uniform Resource Identifier (URI) of the current
     */
-  var DigestMethod: DigestMethod = js.native
+  var DigestMethod: xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.DigestMethod = js.native
   /**
     * Gets or sets the digest value of the current Reference.
     */
@@ -20,7 +20,7 @@ trait Reference
     * Gets or sets the ID of the current Reference.
     */
   var Id: java.lang.String = js.native
-  var Transforms: Transforms = js.native
+  var Transforms: xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.Transforms = js.native
   /**
     * Gets or sets the type of the object being signed.
     */

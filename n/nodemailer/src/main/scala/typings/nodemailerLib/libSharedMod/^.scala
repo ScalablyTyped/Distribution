@@ -11,22 +11,22 @@ object ^ extends js.Object {
   def assign(target: js.Object, sources: js.Object*): js.Object = js.native
   def callbackPromise(
     resolve: js.Function1[/* repeated */ js.Any, scala.Unit],
-    reject: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    reject: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): js.Function0[scala.Unit] = js.native
   def encodeXText(str: java.lang.String): java.lang.String = js.native
-  def getLogger(): nodemailerLib.libSharedMod.Logger = js.native
-  def getLogger(options: org.scalablytyped.runtime.StringDictionary[js.Any]): nodemailerLib.libSharedMod.Logger = js.native
+  def getLogger(): Logger = js.native
+  def getLogger(options: org.scalablytyped.runtime.StringDictionary[js.Any]): Logger = js.native
   def getLogger(
     options: org.scalablytyped.runtime.StringDictionary[js.Any],
     defaults: org.scalablytyped.runtime.StringDictionary[js.Any]
-  ): nodemailerLib.libSharedMod.Logger = js.native
+  ): Logger = js.native
   def parseConnectionUrl(url: java.lang.String): nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.Options = js.native
   def resolveContent(data: js.Array[_], key: java.lang.String): js.Promise[nodeLib.Buffer | java.lang.String] = js.native
   def resolveContent(
     data: js.Array[_],
     key: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* value */ nodeLib.Buffer | java.lang.String, 
       scala.Unit
     ]
@@ -36,7 +36,7 @@ object ^ extends js.Object {
     data: js.Array[_],
     key: scala.Double,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* value */ nodeLib.Buffer | java.lang.String, 
       scala.Unit
     ]
@@ -46,7 +46,7 @@ object ^ extends js.Object {
     data: js.Object,
     key: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* value */ nodeLib.Buffer | java.lang.String, 
       scala.Unit
     ]
@@ -56,7 +56,7 @@ object ^ extends js.Object {
     data: js.Object,
     key: scala.Double,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* value */ nodeLib.Buffer | java.lang.String, 
       scala.Unit
     ]

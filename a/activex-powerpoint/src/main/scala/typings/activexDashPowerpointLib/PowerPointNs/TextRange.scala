@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.TextRange")
 @js.native
 class TextRange protected () extends js.Object {
-  val ActionSettings: ActionSettings = js.native
-  val Application: Application = js.native
+  val ActionSettings: activexDashPowerpointLib.PowerPointNs.ActionSettings = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   val BoundHeight: scala.Double = js.native
   val BoundLeft: scala.Double = js.native
   val BoundTop: scala.Double = js.native
   val BoundWidth: scala.Double = js.native
   val Count: scala.Double = js.native
-  val Font: Font = js.native
+  val Font: activexDashPowerpointLib.PowerPointNs.Font = js.native
   var IndentLevel: scala.Double = js.native
   var LanguageID: activexDashOfficeLib.OfficeNs.MsoLanguageID = js.native
   val Length: scala.Double = js.native
-  val ParagraphFormat: ParagraphFormat = js.native
+  val ParagraphFormat: activexDashPowerpointLib.PowerPointNs.ParagraphFormat = js.native
   val Parent: js.Any = js.native
   var `PowerPoint.TextRange_typekey`: TextRange = js.native
   val Start: scala.Double = js.native

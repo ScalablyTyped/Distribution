@@ -36,14 +36,14 @@ trait MDCNotchedOutlineAdapter extends js.Object {
 object MDCNotchedOutlineAdapter {
   @scala.inline
   def apply(
-    addClass: js.Function1[java.lang.String, scala.Unit],
-    getHeight: js.Function0[scala.Double],
-    getIdleOutlineStyleValue: js.Function1[java.lang.String, java.lang.String],
-    getWidth: js.Function0[scala.Double],
-    removeClass: js.Function1[java.lang.String, scala.Unit],
-    setOutlinePathAttr: js.Function1[java.lang.String, scala.Unit]
+    addClass: java.lang.String => scala.Unit,
+    getHeight: () => scala.Double,
+    getIdleOutlineStyleValue: java.lang.String => java.lang.String,
+    getWidth: () => scala.Double,
+    removeClass: java.lang.String => scala.Unit,
+    setOutlinePathAttr: java.lang.String => scala.Unit
   ): MDCNotchedOutlineAdapter = {
-    val __obj = js.Dynamic.literal(addClass = addClass, getHeight = getHeight, getIdleOutlineStyleValue = getIdleOutlineStyleValue, getWidth = getWidth, removeClass = removeClass, setOutlinePathAttr = setOutlinePathAttr)
+    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), getHeight = js.Any.fromFunction0(getHeight), getIdleOutlineStyleValue = js.Any.fromFunction1(getIdleOutlineStyleValue), getWidth = js.Any.fromFunction0(getWidth), removeClass = js.Any.fromFunction1(removeClass), setOutlinePathAttr = js.Any.fromFunction1(setOutlinePathAttr))
   
     __obj.asInstanceOf[MDCNotchedOutlineAdapter]
   }

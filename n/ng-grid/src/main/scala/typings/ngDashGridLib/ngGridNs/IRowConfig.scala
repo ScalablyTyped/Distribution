@@ -20,8 +20,8 @@ trait IRowConfig extends js.Object {
 object IRowConfig {
   @scala.inline
   def apply(
-    afterSelectionChangeCallback: js.Function0[scala.Unit],
-    beforeSelectionChangeCallback: js.Function0[scala.Unit],
+    afterSelectionChangeCallback: () => scala.Unit,
+    beforeSelectionChangeCallback: () => scala.Unit,
     enableCellSelection: scala.Boolean,
     enableRowSelection: scala.Boolean,
     jqueryUITheme: scala.Boolean,
@@ -30,7 +30,7 @@ object IRowConfig {
     selectWithCheckboxOnly: scala.Boolean,
     selectedItems: js.Array[_]
   ): IRowConfig = {
-    val __obj = js.Dynamic.literal(afterSelectionChangeCallback = afterSelectionChangeCallback, beforeSelectionChangeCallback = beforeSelectionChangeCallback, enableCellSelection = enableCellSelection, enableRowSelection = enableRowSelection, jqueryUITheme = jqueryUITheme, rowClasses = rowClasses, rowHeight = rowHeight, selectWithCheckboxOnly = selectWithCheckboxOnly, selectedItems = selectedItems)
+    val __obj = js.Dynamic.literal(afterSelectionChangeCallback = js.Any.fromFunction0(afterSelectionChangeCallback), beforeSelectionChangeCallback = js.Any.fromFunction0(beforeSelectionChangeCallback), enableCellSelection = enableCellSelection, enableRowSelection = enableRowSelection, jqueryUITheme = jqueryUITheme, rowClasses = rowClasses, rowHeight = rowHeight, selectWithCheckboxOnly = selectWithCheckboxOnly, selectedItems = selectedItems)
   
     __obj.asInstanceOf[IRowConfig]
   }

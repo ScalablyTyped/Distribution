@@ -41,15 +41,15 @@ trait MetricsAggregationMixin extends Aggregation {
 object MetricsAggregationMixin {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    field: js.Function1[java.lang.String, MetricsAggregationMixin],
-    lang: js.Function1[java.lang.String, MetricsAggregationMixin],
-    params: js.Function1[js.Object, MetricsAggregationMixin],
-    script: js.Function1[java.lang.String, MetricsAggregationMixin],
-    scriptValuesSorted: js.Function1[scala.Boolean, MetricsAggregationMixin],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    field: java.lang.String => MetricsAggregationMixin,
+    lang: java.lang.String => MetricsAggregationMixin,
+    params: js.Object => MetricsAggregationMixin,
+    script: java.lang.String => MetricsAggregationMixin,
+    scriptValuesSorted: scala.Boolean => MetricsAggregationMixin,
+    toJSON: () => js.Any
   ): MetricsAggregationMixin = {
-    val __obj = js.Dynamic.literal(_type = _type, field = field, lang = lang, params = params, script = script, scriptValuesSorted = scriptValuesSorted, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), field = js.Any.fromFunction1(field), lang = js.Any.fromFunction1(lang), params = js.Any.fromFunction1(params), script = js.Any.fromFunction1(script), scriptValuesSorted = js.Any.fromFunction1(scriptValuesSorted), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[MetricsAggregationMixin]
   }

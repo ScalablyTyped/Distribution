@@ -12,8 +12,8 @@ trait IPlayToManagerStatics extends js.Object {
 
 object IPlayToManagerStatics {
   @scala.inline
-  def apply(getForCurrentView: js.Function0[PlayToManager], showPlayToUI: js.Function0[scala.Unit]): IPlayToManagerStatics = {
-    val __obj = js.Dynamic.literal(getForCurrentView = getForCurrentView, showPlayToUI = showPlayToUI)
+  def apply(getForCurrentView: () => PlayToManager, showPlayToUI: () => scala.Unit): IPlayToManagerStatics = {
+    val __obj = js.Dynamic.literal(getForCurrentView = js.Any.fromFunction0(getForCurrentView), showPlayToUI = js.Any.fromFunction0(showPlayToUI))
   
     __obj.asInstanceOf[IPlayToManagerStatics]
   }

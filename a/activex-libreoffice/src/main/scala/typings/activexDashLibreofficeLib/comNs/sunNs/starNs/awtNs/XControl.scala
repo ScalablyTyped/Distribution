@@ -61,24 +61,24 @@ object XControl {
     Model: XControlModel,
     Peer: XWindowPeer,
     View: XView,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    createPeer: js.Function2[XToolkit, XWindowPeer, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    getContext: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    getModel: js.Function0[XControlModel],
-    getPeer: js.Function0[XWindowPeer],
-    getView: js.Function0[XView],
-    isDesignMode: js.Function0[scala.Boolean],
-    isTransparent: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    setContext: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
-    setDesignMode: js.Function1[scala.Boolean, scala.Unit],
-    setModel: js.Function1[XControlModel, scala.Boolean]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    createPeer: (XToolkit, XWindowPeer) => scala.Unit,
+    dispose: () => scala.Unit,
+    getContext: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getModel: () => XControlModel,
+    getPeer: () => XWindowPeer,
+    getView: () => XView,
+    isDesignMode: () => scala.Boolean,
+    isTransparent: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    setContext: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => scala.Unit,
+    setDesignMode: scala.Boolean => scala.Unit,
+    setModel: XControlModel => scala.Boolean
   ): XControl = {
-    val __obj = js.Dynamic.literal(Context = Context, Model = Model, Peer = Peer, View = View, acquire = acquire, addEventListener = addEventListener, createPeer = createPeer, dispose = dispose, getContext = getContext, getModel = getModel, getPeer = getPeer, getView = getView, isDesignMode = isDesignMode, isTransparent = isTransparent, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setContext = setContext, setDesignMode = setDesignMode, setModel = setModel)
+    val __obj = js.Dynamic.literal(Context = Context, Model = Model, Peer = Peer, View = View, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), createPeer = js.Any.fromFunction2(createPeer), dispose = js.Any.fromFunction0(dispose), getContext = js.Any.fromFunction0(getContext), getModel = js.Any.fromFunction0(getModel), getPeer = js.Any.fromFunction0(getPeer), getView = js.Any.fromFunction0(getView), isDesignMode = js.Any.fromFunction0(isDesignMode), isTransparent = js.Any.fromFunction0(isTransparent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), setContext = js.Any.fromFunction1(setContext), setDesignMode = js.Any.fromFunction1(setDesignMode), setModel = js.Any.fromFunction1(setModel))
   
     __obj.asInstanceOf[XControl]
   }

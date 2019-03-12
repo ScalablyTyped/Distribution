@@ -18,10 +18,10 @@ class IMsoChartFormat protected () extends js.Object {
   val Line: LineFormat = js.native
   var `Office.IMsoChartFormat_typekey`: IMsoChartFormat = js.native
   val Parent: js.Any = js.native
-  val PictureFormat: PictureFormat = js.native
+  val PictureFormat: activexDashOfficeLib.OfficeNs.PictureFormat = js.native
   val Shadow: ShadowFormat = js.native
   val SoftEdge: SoftEdgeFormat = js.native
-  val TextFrame2: TextFrame2 = js.native
+  val TextFrame2: activexDashOfficeLib.OfficeNs.TextFrame2 = js.native
   val ThreeD: ThreeDFormat = js.native
   def Adjustments(Index: scala.Double): scala.Double = js.native
 }

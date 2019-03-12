@@ -16,13 +16,9 @@ object Unfoldable2C {
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */, L](
     URI: F,
     _L: L,
-    unfoldr: js.Function2[
-      js.Any, 
-      js.Function1[js.Any, fpDashTsLib.libOptionMod.Option[js.Tuple2[js.Any, js.Any]]], 
-      fpDashTsLib.libHKTMod.Type2[F, L, js.Any]
-    ]
+    unfoldr: (js.Any, js.Function1[js.Any, fpDashTsLib.libOptionMod.Option[js.Tuple2[js.Any, js.Any]]]) => fpDashTsLib.libHKTMod.Type2[F, L, js.Any]
   ): Unfoldable2C[F, L] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], unfoldr = unfoldr)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], unfoldr = js.Any.fromFunction2(unfoldr))
   
     __obj.asInstanceOf[Unfoldable2C[F, L]]
   }

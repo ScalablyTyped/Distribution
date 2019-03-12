@@ -17,13 +17,13 @@ object ^ extends js.Object {
     reader: vscodeDashJsonrpcLib.libMessageReaderMod.MessageReader,
     writer: vscodeDashJsonrpcLib.libMessageWriterMod.MessageWriter,
     logger: vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.Logger
-  ): vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolMod.ProtocolConnection = js.native
+  ): ProtocolConnection = js.native
   def createProtocolConnection(
     reader: vscodeDashJsonrpcLib.libMessageReaderMod.MessageReader,
     writer: vscodeDashJsonrpcLib.libMessageWriterMod.MessageWriter,
     logger: vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.Logger,
     strategy: vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.ConnectionStrategy
-  ): vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolMod.ProtocolConnection = js.native
+  ): ProtocolConnection = js.native
   def createServerPipeTransport(pipeName: java.lang.String): js.Tuple2[
     vscodeDashJsonrpcLib.libMessageReaderMod.MessageReader, 
     vscodeDashJsonrpcLib.libMessageWriterMod.MessageWriter

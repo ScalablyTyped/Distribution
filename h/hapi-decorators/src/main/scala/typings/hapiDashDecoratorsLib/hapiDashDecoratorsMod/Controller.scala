@@ -16,13 +16,11 @@ object Controller {
   @scala.inline
   def apply(
     baseUrl: java.lang.String,
-    routes: js.Function0[
-      js.Array[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify hapi.RouteConfiguration */ _
-      ]
+    routes: () => js.Array[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify hapi.RouteConfiguration */ _
     ]
   ): Controller = {
-    val __obj = js.Dynamic.literal(baseUrl = baseUrl, routes = routes)
+    val __obj = js.Dynamic.literal(baseUrl = baseUrl, routes = js.Any.fromFunction0(routes))
   
     __obj.asInstanceOf[Controller]
   }

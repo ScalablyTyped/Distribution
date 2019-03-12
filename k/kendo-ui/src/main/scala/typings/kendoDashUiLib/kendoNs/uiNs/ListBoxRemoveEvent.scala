@@ -13,13 +13,13 @@ trait ListBoxRemoveEvent extends ListBoxEvent {
 object ListBoxRemoveEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: ListBox,
     dataItems: js.Any = null,
     items: js.Any = null
   ): ListBoxRemoveEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (dataItems != null) __obj.updateDynamic("dataItems")(dataItems)
     if (items != null) __obj.updateDynamic("items")(items)
     __obj.asInstanceOf[ListBoxRemoveEvent]

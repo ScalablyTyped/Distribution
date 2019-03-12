@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Page ()
   extends reactLib.reactMod.Component[
-      PageProps with reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLElement], 
+      PageProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement], 
       js.Object, 
       js.Any
     ]

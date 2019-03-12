@@ -23,7 +23,7 @@ object SyslogTransportOptions {
   @scala.inline
   def apply(
     app_name: java.lang.String = null,
-    close: js.Function0[scala.Unit] = null,
+    close: () => scala.Unit = null,
     eol: java.lang.String = null,
     facility: java.lang.String = null,
     format: logformLib.logformMod.Format = null,
@@ -31,8 +31,8 @@ object SyslogTransportOptions {
     host: java.lang.String = null,
     level: java.lang.String = null,
     localhost: java.lang.String = null,
-    log: js.Function2[/* info */ js.Any, /* next */ js.Function0[scala.Unit], _] = null,
-    logv: js.Function2[/* info */ js.Any, /* next */ js.Function0[scala.Unit], _] = null,
+    log: (/* info */ js.Any, /* next */ js.Function0[scala.Unit]) => _ = null,
+    logv: (/* info */ js.Any, /* next */ js.Function0[scala.Unit]) => _ = null,
     path: java.lang.String = null,
     pid: scala.Int | scala.Double = null,
     port: scala.Int | scala.Double = null,
@@ -42,7 +42,7 @@ object SyslogTransportOptions {
   ): SyslogTransportOptions = {
     val __obj = js.Dynamic.literal()
     if (app_name != null) __obj.updateDynamic("app_name")(app_name)
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction0(close))
     if (eol != null) __obj.updateDynamic("eol")(eol)
     if (facility != null) __obj.updateDynamic("facility")(facility)
     if (format != null) __obj.updateDynamic("format")(format)
@@ -50,8 +50,8 @@ object SyslogTransportOptions {
     if (host != null) __obj.updateDynamic("host")(host)
     if (level != null) __obj.updateDynamic("level")(level)
     if (localhost != null) __obj.updateDynamic("localhost")(localhost)
-    if (log != null) __obj.updateDynamic("log")(log)
-    if (logv != null) __obj.updateDynamic("logv")(logv)
+    if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction2(log))
+    if (logv != null) __obj.updateDynamic("logv")(js.Any.fromFunction2(logv))
     if (path != null) __obj.updateDynamic("path")(path)
     if (pid != null) __obj.updateDynamic("pid")(pid.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

@@ -18,20 +18,17 @@ trait Options extends SimpleOptions {
 object Options {
   @scala.inline
   def apply(
-    requestFactory: js.Function1[
-      SimpleOptions, 
-      js.Function4[
-        /* path */ js.UndefOr[java.lang.String], 
-        /* type */ js.UndefOr[java.lang.String], 
-        /* content */ js.UndefOr[PostmarkMessage], 
-        /* callback */ js.UndefOr[PostmarkCallback[_]], 
-        _
-      ]
+    requestFactory: SimpleOptions => js.Function4[
+      /* path */ js.UndefOr[java.lang.String], 
+      /* type */ js.UndefOr[java.lang.String], 
+      /* content */ js.UndefOr[PostmarkMessage], 
+      /* callback */ js.UndefOr[PostmarkCallback[_]], 
+      _
     ],
     requestHost: java.lang.String,
     ssl: scala.Boolean
   ): Options = {
-    val __obj = js.Dynamic.literal(requestFactory = requestFactory, requestHost = requestHost, ssl = ssl)
+    val __obj = js.Dynamic.literal(requestFactory = js.Any.fromFunction1(requestFactory), requestHost = requestHost, ssl = ssl)
   
     __obj.asInstanceOf[Options]
   }

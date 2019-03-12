@@ -24,12 +24,12 @@ object XKeysSupplier {
   @scala.inline
   def apply(
     Keys: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
-    acquire: js.Function0[scala.Unit],
-    getKeys: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getKeys: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XKeysSupplier = {
-    val __obj = js.Dynamic.literal(Keys = Keys, acquire = acquire, getKeys = getKeys, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Keys = Keys, acquire = js.Any.fromFunction0(acquire), getKeys = js.Any.fromFunction0(getKeys), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XKeysSupplier]
   }

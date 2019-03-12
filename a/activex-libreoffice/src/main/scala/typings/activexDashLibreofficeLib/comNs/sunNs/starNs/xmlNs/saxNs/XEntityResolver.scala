@@ -20,12 +20,12 @@ trait XEntityResolver
 object XEntityResolver {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    resolveEntity: js.Function2[java.lang.String, java.lang.String, InputSource]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    resolveEntity: (java.lang.String, java.lang.String) => InputSource
   ): XEntityResolver = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, resolveEntity = resolveEntity)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), resolveEntity = js.Any.fromFunction2(resolveEntity))
   
     __obj.asInstanceOf[XEntityResolver]
   }

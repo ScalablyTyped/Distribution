@@ -11,15 +11,15 @@ object ^ extends js.Object {
   /**
     * Contains functions and properties related to the current game context.
     */
-  var context: facebookDashInstantDashGamesLib.FBInstantNs.Context = js.native
+  var context: Context = js.native
   /**
     * Contains functions and properties related to payments and purchases of game products.
     */
-  var payments: facebookDashInstantDashGamesLib.FBInstantNs.Payments = js.native
+  var payments: Payments = js.native
   /**
     * Contains functions and properties related to the current player.
     */
-  var player: facebookDashInstantDashGamesLib.FBInstantNs.Player = js.native
+  var player: Player = js.native
   /**
     * Returns whether or not the user is eligible to have shortcut creation requested.
     *
@@ -69,7 +69,7 @@ object ^ extends js.Object {
     * @throws ADS_TOO_MANY_INSTANCES
     * @throws CLIENT_UNSUPPORTED_OPERATION
     */
-  def getInterstitialAdAsync(placementID: java.lang.String): js.Promise[facebookDashInstantDashGamesLib.FBInstantNs.AdInstance] = js.native
+  def getInterstitialAdAsync(placementID: java.lang.String): js.Promise[AdInstance] = js.native
   /**
     * Fetch a specific leaderboard belonging to this Instant Game.
     *
@@ -81,7 +81,7 @@ object ^ extends js.Object {
     * @throws INVALID_OPERATION
     * @throws INVALID_PARAM
     */
-  def getLeaderboardAsync(name: java.lang.String): js.Promise[facebookDashInstantDashGamesLib.FBInstantNs.Leaderboard] = js.native
+  def getLeaderboardAsync(name: java.lang.String): js.Promise[Leaderboard] = js.native
   /**
     * The current locale. Use this to determine what language the current game should be localized with.
     * The value will not be accurate until FBInstant.startGameAsync() resolves.
@@ -92,7 +92,7 @@ object ^ extends js.Object {
   /**
     * The platform on which the game is currently running. The value will always be null until FBInstant.initializeAsync() resolves.
     */
-  def getPlatform(): facebookDashInstantDashGamesLib.FBInstantNs.Platform | scala.Null = js.native
+  def getPlatform(): Platform | scala.Null = js.native
   /**
     * Attempt to create an instance of rewarded video. This instance can then be preloaded and presented.
     * @param placementID The placement ID that's been setup in your Audience Network settings.
@@ -100,7 +100,7 @@ object ^ extends js.Object {
     * @throws ADS_TOO_MANY_INSTANCES
     * @throws CLIENT_UNSUPPORTED_OPERATION
     */
-  def getRewardedVideoAsync(placementID: java.lang.String): js.Promise[facebookDashInstantDashGamesLib.FBInstantNs.AdInstance] = js.native
+  def getRewardedVideoAsync(placementID: java.lang.String): js.Promise[AdInstance] = js.native
   /**
     * The string representation of this SDK version.
     *
@@ -129,13 +129,13 @@ object ^ extends js.Object {
     * and can only contain '_', '-', ' ', and alphanumeric characters. Values must be less than 100 characters in length.
     * @returns The error if the event failed to log; otherwise returns null.
     */
-  def logEvent(eventName: java.lang.String): facebookDashInstantDashGamesLib.FBInstantNs.APIError | scala.Null = js.native
-  def logEvent(eventName: java.lang.String, valueToSum: scala.Double): facebookDashInstantDashGamesLib.FBInstantNs.APIError | scala.Null = js.native
+  def logEvent(eventName: java.lang.String): APIError | scala.Null = js.native
+  def logEvent(eventName: java.lang.String, valueToSum: scala.Double): APIError | scala.Null = js.native
   def logEvent(
     eventName: java.lang.String,
     valueToSum: scala.Double,
     parameters: org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  ): facebookDashInstantDashGamesLib.FBInstantNs.APIError | scala.Null = js.native
+  ): APIError | scala.Null = js.native
   /**
     * Attempts to match the current player with other users looking for people to play with. If successful, a new Messenger group
     * thread will be created containing the matched players and the player will be context switched to that thread.
@@ -196,7 +196,7 @@ object ^ extends js.Object {
     * @throws CLIENT_UNSUPPORTED_OPERATION
     * @throws INVALID_OPERATION
     */
-  def shareAsync(payload: facebookDashInstantDashGamesLib.FBInstantNs.SharePayload): js.Promise[scala.Unit] = js.native
+  def shareAsync(payload: SharePayload): js.Promise[scala.Unit] = js.native
   /**
     * This indicates that the game has finished initial loading and is ready to start.
     * Context information will be up-to-date when the returned promise resolves.
@@ -229,7 +229,7 @@ object ^ extends js.Object {
     * @throws PENDING_REQUEST
     * @throws INVALID_OPERATION
     */
-  def updateAsync(payload: facebookDashInstantDashGamesLib.FBInstantNs.CustomUpdatePayload): js.Promise[scala.Unit] = js.native
-  def updateAsync(payload: facebookDashInstantDashGamesLib.FBInstantNs.LeaderboardUpdatePayload): js.Promise[scala.Unit] = js.native
+  def updateAsync(payload: CustomUpdatePayload): js.Promise[scala.Unit] = js.native
+  def updateAsync(payload: LeaderboardUpdatePayload): js.Promise[scala.Unit] = js.native
 }
 

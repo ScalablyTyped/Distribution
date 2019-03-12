@@ -24,7 +24,7 @@ trait XGridColumnModel
     * Returns all columns of the model.
     * @returns all columns associated with the model in a sequence of {@link XGridColumn} .
     */
-  val Columns: activexDashInteropLib.SafeArray[XGridColumn]
+  val Columns: stdLib.SafeArray[XGridColumn]
   /**
     * Adds a column to the model.
     *
@@ -59,7 +59,7 @@ trait XGridColumnModel
     * Returns all columns of the model.
     * @returns all columns associated with the model in a sequence of {@link XGridColumn} .
     */
-  def getColumns(): activexDashInteropLib.SafeArray[XGridColumn]
+  def getColumns(): stdLib.SafeArray[XGridColumn]
   /**
     * removes a column from the model
     *
@@ -83,31 +83,25 @@ object XGridColumnModel {
   @scala.inline
   def apply(
     ColumnCount: scala.Double,
-    Columns: activexDashInteropLib.SafeArray[XGridColumn],
-    acquire: js.Function0[scala.Unit],
-    addColumn: js.Function1[XGridColumn, scala.Double],
-    addContainerListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
-      scala.Unit
-    ],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
-    createColumn: js.Function0[XGridColumn],
-    dispose: js.Function0[scala.Unit],
-    getColumn: js.Function1[scala.Double, XGridColumn],
-    getColumnCount: js.Function0[scala.Double],
-    getColumns: js.Function0[activexDashInteropLib.SafeArray[XGridColumn]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeColumn: js.Function1[scala.Double, scala.Unit],
-    removeContainerListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
-      scala.Unit
-    ],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    setDefaultColumns: js.Function1[scala.Double, scala.Unit]
+    Columns: stdLib.SafeArray[XGridColumn],
+    acquire: () => scala.Unit,
+    addColumn: XGridColumn => scala.Double,
+    addContainerListener: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    createClone: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable,
+    createColumn: () => XGridColumn,
+    dispose: () => scala.Unit,
+    getColumn: scala.Double => XGridColumn,
+    getColumnCount: () => scala.Double,
+    getColumns: () => stdLib.SafeArray[XGridColumn],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeColumn: scala.Double => scala.Unit,
+    removeContainerListener: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    setDefaultColumns: scala.Double => scala.Unit
   ): XGridColumnModel = {
-    val __obj = js.Dynamic.literal(ColumnCount = ColumnCount, Columns = Columns, acquire = acquire, addColumn = addColumn, addContainerListener = addContainerListener, addEventListener = addEventListener, createClone = createClone, createColumn = createColumn, dispose = dispose, getColumn = getColumn, getColumnCount = getColumnCount, getColumns = getColumns, queryInterface = queryInterface, release = release, removeColumn = removeColumn, removeContainerListener = removeContainerListener, removeEventListener = removeEventListener, setDefaultColumns = setDefaultColumns)
+    val __obj = js.Dynamic.literal(ColumnCount = ColumnCount, Columns = Columns, acquire = js.Any.fromFunction0(acquire), addColumn = js.Any.fromFunction1(addColumn), addContainerListener = js.Any.fromFunction1(addContainerListener), addEventListener = js.Any.fromFunction1(addEventListener), createClone = js.Any.fromFunction0(createClone), createColumn = js.Any.fromFunction0(createColumn), dispose = js.Any.fromFunction0(dispose), getColumn = js.Any.fromFunction1(getColumn), getColumnCount = js.Any.fromFunction0(getColumnCount), getColumns = js.Any.fromFunction0(getColumns), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeColumn = js.Any.fromFunction1(removeColumn), removeContainerListener = js.Any.fromFunction1(removeContainerListener), removeEventListener = js.Any.fromFunction1(removeEventListener), setDefaultColumns = js.Any.fromFunction1(setDefaultColumns))
   
     __obj.asInstanceOf[XGridColumnModel]
   }

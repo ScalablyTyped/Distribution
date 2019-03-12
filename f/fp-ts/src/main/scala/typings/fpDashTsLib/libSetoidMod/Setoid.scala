@@ -11,8 +11,8 @@ trait Setoid[A] extends js.Object {
 
 object Setoid {
   @scala.inline
-  def apply[A](equals: js.Function2[A, A, scala.Boolean]): Setoid[A] = {
-    val __obj = js.Dynamic.literal(equals = equals)
+  def apply[A](equals: (A, A) => scala.Boolean): Setoid[A] = {
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction2(equals))
   
     __obj.asInstanceOf[Setoid[A]]
   }

@@ -22,13 +22,13 @@ object A11yStatusMessageOptions {
     highlightedItem: Item,
     inputValue: java.lang.String,
     isOpen: scala.Boolean,
-    itemToString: js.Function1[Item, java.lang.String],
+    itemToString: Item => java.lang.String,
     previousResultCount: scala.Double,
     resultCount: scala.Double,
     selectedItem: Item,
     highlightedIndex: scala.Int | scala.Double = null
   ): A11yStatusMessageOptions[Item] = {
-    val __obj = js.Dynamic.literal(highlightedItem = highlightedItem.asInstanceOf[js.Any], inputValue = inputValue, isOpen = isOpen, itemToString = itemToString, previousResultCount = previousResultCount, resultCount = resultCount, selectedItem = selectedItem.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(highlightedItem = highlightedItem.asInstanceOf[js.Any], inputValue = inputValue, isOpen = isOpen, itemToString = js.Any.fromFunction1(itemToString), previousResultCount = previousResultCount, resultCount = resultCount, selectedItem = selectedItem.asInstanceOf[js.Any])
     if (highlightedIndex != null) __obj.updateDynamic("highlightedIndex")(highlightedIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[A11yStatusMessageOptions[Item]]
   }

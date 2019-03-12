@@ -24,7 +24,7 @@ trait ImplementationGuideDependency extends BackboneElement {
   /**
     * Where to find dependency
     */
-  var uri: uri
+  var uri: fhirLib.fhirNs.uri
 }
 
 object ImplementationGuideDependency {

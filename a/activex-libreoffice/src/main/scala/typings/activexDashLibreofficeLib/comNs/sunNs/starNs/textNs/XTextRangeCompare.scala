@@ -27,13 +27,13 @@ trait XTextRangeCompare
 object XTextRangeCompare {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    compareRegionEnds: js.Function2[XTextRange, XTextRange, scala.Double],
-    compareRegionStarts: js.Function2[XTextRange, XTextRange, scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    compareRegionEnds: (XTextRange, XTextRange) => scala.Double,
+    compareRegionStarts: (XTextRange, XTextRange) => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTextRangeCompare = {
-    val __obj = js.Dynamic.literal(acquire = acquire, compareRegionEnds = compareRegionEnds, compareRegionStarts = compareRegionStarts, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), compareRegionEnds = js.Any.fromFunction2(compareRegionEnds), compareRegionStarts = js.Any.fromFunction2(compareRegionStarts), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTextRangeCompare]
   }

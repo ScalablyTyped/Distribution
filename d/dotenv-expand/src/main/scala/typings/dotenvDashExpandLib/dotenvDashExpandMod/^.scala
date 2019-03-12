@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("dotenv-expand", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(config: dotenvDashExpandLib.dotenvDashExpandMod.DotenvResult): dotenvDashExpandLib.dotenvDashExpandMod.DotenvResult = js.native
+  def apply(config: DotenvResult): DotenvResult = js.native
 }
 

@@ -14,11 +14,11 @@ trait InstantiableSymbol extends js.Object {
 object InstantiableSymbol {
   @scala.inline
   def apply(
-    getAllowedToReferenceTypeParameters: js.Function0[js.Array[PullTypeParameterSymbol]],
-    getIsSpecialized: js.Function0[scala.Boolean],
-    getTypeParameterArgumentMap: js.Function0[TypeArgumentMap]
+    getAllowedToReferenceTypeParameters: () => js.Array[PullTypeParameterSymbol],
+    getIsSpecialized: () => scala.Boolean,
+    getTypeParameterArgumentMap: () => TypeArgumentMap
   ): InstantiableSymbol = {
-    val __obj = js.Dynamic.literal(getAllowedToReferenceTypeParameters = getAllowedToReferenceTypeParameters, getIsSpecialized = getIsSpecialized, getTypeParameterArgumentMap = getTypeParameterArgumentMap)
+    val __obj = js.Dynamic.literal(getAllowedToReferenceTypeParameters = js.Any.fromFunction0(getAllowedToReferenceTypeParameters), getIsSpecialized = js.Any.fromFunction0(getIsSpecialized), getTypeParameterArgumentMap = js.Any.fromFunction0(getTypeParameterArgumentMap))
   
     __obj.asInstanceOf[InstantiableSymbol]
   }

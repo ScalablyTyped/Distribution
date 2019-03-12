@@ -17,27 +17,27 @@ trait NestedRows extends Base {
 object NestedRows {
   @scala.inline
   def apply(
-    addHook: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit],
+    addHook: (java.lang.String, js.Function0[scala.Unit]) => scala.Unit,
     bindRowsWithHeadersPlugin: BindRowsWithHeaders | scala.Unit,
-    callOnPluginsReady: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    clearHooks: js.Function0[scala.Unit],
+    callOnPluginsReady: js.Function0[scala.Unit] => scala.Unit,
+    clearHooks: () => scala.Unit,
     collapsingUI: js.Object | scala.Unit,
     dataManager: DataManager | scala.Unit,
-    destroy: js.Function0[scala.Unit],
-    disablePlugin: js.Function0[scala.Unit],
-    enablePlugin: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
+    disablePlugin: () => scala.Unit,
+    enablePlugin: () => scala.Unit,
     enabled: scala.Boolean,
     headersUI: js.Object | scala.Unit,
-    init: js.Function0[scala.Unit],
+    init: () => scala.Unit,
     initialized: scala.Boolean,
     isPluginsReady: scala.Boolean,
     pluginName: java.lang.String,
     pluginsInitializedCallback: js.Array[_],
-    removeHook: js.Function1[java.lang.String, scala.Unit],
+    removeHook: java.lang.String => scala.Unit,
     sourceData: js.Object | scala.Unit,
     trimRowsPlugin: TrimRows | scala.Unit
   ): NestedRows = {
-    val __obj = js.Dynamic.literal(addHook = addHook, bindRowsWithHeadersPlugin = bindRowsWithHeadersPlugin.asInstanceOf[js.Any], callOnPluginsReady = callOnPluginsReady, clearHooks = clearHooks, collapsingUI = collapsingUI.asInstanceOf[js.Any], dataManager = dataManager.asInstanceOf[js.Any], destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, headersUI = headersUI.asInstanceOf[js.Any], init = init, initialized = initialized, isPluginsReady = isPluginsReady, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook, sourceData = sourceData.asInstanceOf[js.Any], trimRowsPlugin = trimRowsPlugin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), bindRowsWithHeadersPlugin = bindRowsWithHeadersPlugin.asInstanceOf[js.Any], callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), collapsingUI = collapsingUI.asInstanceOf[js.Any], dataManager = dataManager.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, headersUI = headersUI.asInstanceOf[js.Any], init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = js.Any.fromFunction1(removeHook), sourceData = sourceData.asInstanceOf[js.Any], trimRowsPlugin = trimRowsPlugin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NestedRows]
   }

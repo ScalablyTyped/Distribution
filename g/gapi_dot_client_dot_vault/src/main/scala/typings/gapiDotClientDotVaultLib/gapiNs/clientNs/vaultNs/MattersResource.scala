@@ -41,49 +41,19 @@ trait MattersResource extends js.Object {
 object MattersResource {
   @scala.inline
   def apply(
-    addPermissions: js.Function1[
-      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[MatterPermission]
-    ],
-    close: js.Function1[
-      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CloseMatterResponse]
-    ],
-    create: js.Function1[
-      gapiDotClientDotVaultLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Matter]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Matter]
-    ],
-    get: js.Function1[
-      gapiDotClientDotVaultLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Matter]
-    ],
+    addPermissions: gapiDotClientDotVaultLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[MatterPermission],
+    close: gapiDotClientDotVaultLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[CloseMatterResponse],
+    create: gapiDotClientDotVaultLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[Matter],
+    delete: gapiDotClientDotVaultLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[Matter],
+    get: gapiDotClientDotVaultLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[Matter],
     holds: HoldsResource,
-    list: js.Function1[
-      gapiDotClientDotVaultLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListMattersResponse]
-    ],
-    removePermissions: js.Function1[
-      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    reopen: js.Function1[
-      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ReopenMatterResponse]
-    ],
-    undelete: js.Function1[
-      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Matter]
-    ],
-    update: js.Function1[
-      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Matter]
-    ]
+    list: gapiDotClientDotVaultLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[ListMattersResponse],
+    removePermissions: gapiDotClientDotVaultLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    reopen: gapiDotClientDotVaultLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[ReopenMatterResponse],
+    undelete: gapiDotClientDotVaultLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[Matter],
+    update: gapiDotClientDotVaultLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[Matter]
   ): MattersResource = {
-    val __obj = js.Dynamic.literal(addPermissions = addPermissions, close = close, create = create, delete = delete, get = get, holds = holds, list = list, removePermissions = removePermissions, reopen = reopen, undelete = undelete, update = update)
+    val __obj = js.Dynamic.literal(addPermissions = js.Any.fromFunction1(addPermissions), close = js.Any.fromFunction1(close), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), holds = holds, list = js.Any.fromFunction1(list), removePermissions = js.Any.fromFunction1(removePermissions), reopen = js.Any.fromFunction1(reopen), undelete = js.Any.fromFunction1(undelete), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[MattersResource]
   }

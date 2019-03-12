@@ -15,16 +15,10 @@ trait ProjectsResource extends js.Object {
 object ProjectsResource {
   @scala.inline
   def apply(
-    getServiceAccount: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GetServiceAccountResponse]
-    ],
-    list: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ProjectList]
-    ]
+    getServiceAccount: gapiDotClientDotBigqueryLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[GetServiceAccountResponse],
+    list: gapiDotClientDotBigqueryLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[ProjectList]
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal(getServiceAccount = getServiceAccount, list = list)
+    val __obj = js.Dynamic.literal(getServiceAccount = js.Any.fromFunction1(getServiceAccount), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ProjectsResource]
   }

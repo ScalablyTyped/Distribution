@@ -16,12 +16,12 @@ trait IChangeKey extends js.Object {
 object IChangeKey {
   @scala.inline
   def apply(
-    CompareTo: js.Function1[IChangeKey, scala.Double],
-    GetVersionNumber: js.Function0[scala.Double],
-    Release: js.Function0[scala.Unit],
-    Reserve: js.Function0[scala.Unit]
+    CompareTo: IChangeKey => scala.Double,
+    GetVersionNumber: () => scala.Double,
+    Release: () => scala.Unit,
+    Reserve: () => scala.Unit
   ): IChangeKey = {
-    val __obj = js.Dynamic.literal(CompareTo = CompareTo, GetVersionNumber = GetVersionNumber, Release = Release, Reserve = Reserve)
+    val __obj = js.Dynamic.literal(CompareTo = js.Any.fromFunction1(CompareTo), GetVersionNumber = js.Any.fromFunction0(GetVersionNumber), Release = js.Any.fromFunction0(Release), Reserve = js.Any.fromFunction0(Reserve))
   
     __obj.asInstanceOf[IChangeKey]
   }

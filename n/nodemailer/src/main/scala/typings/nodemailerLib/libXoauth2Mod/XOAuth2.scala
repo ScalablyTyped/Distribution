@@ -15,7 +15,7 @@ trait XOAuth2
   @JSName("addListener")
   def addListener_error(
     event: nodemailerLib.nodemailerLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_token(
@@ -25,7 +25,7 @@ trait XOAuth2
   /** Converts an access_token and user id into a base64 encoded XOAuth2 token */
   def buildXOAuth2Token(accessToken: java.lang.String): java.lang.String = js.native
   @JSName("emit")
-  def emit_error(event: nodemailerLib.nodemailerLibStrings.error, error: nodeLib.Error): scala.Boolean = js.native
+  def emit_error(event: nodemailerLib.nodemailerLibStrings.error, error: stdLib.Error): scala.Boolean = js.native
   @JSName("emit")
   def emit_token(
     event: nodemailerLib.nodemailerLibStrings.token,
@@ -33,12 +33,12 @@ trait XOAuth2
   ): scala.Boolean = js.native
   /** Generates a new XOAuth2 token with the credentials provided at initialization */
   def generateToken(
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* accessToken */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* accessToken */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   /** Returns or generates (if previous has expired) a XOAuth2 token */
   def getToken(
     renew: scala.Boolean,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* accessToken */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* accessToken */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   /** Creates a JSON Web Token signed with RS256 (SHA256 + RSA) */
   def jwtSignRS256(payload: js.Object): java.lang.String = js.native
@@ -47,11 +47,11 @@ trait XOAuth2
     js.Function1[/* token */ nodemailerLib.libXoauth2Mod.XOAuth2Ns.Token, scala.Unit]
   ] = js.native
   @JSName("listeners")
-  def listeners_error(event: nodemailerLib.nodemailerLibStrings.error): js.Array[js.Function1[/* err */ nodeLib.Error, scala.Unit]] = js.native
+  def listeners_error(event: nodemailerLib.nodemailerLibStrings.error): js.Array[js.Function1[/* err */ stdLib.Error, scala.Unit]] = js.native
   @JSName("on")
   def on_error(
     event: nodemailerLib.nodemailerLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_token(
@@ -61,7 +61,7 @@ trait XOAuth2
   @JSName("once")
   def once_error(
     event: nodemailerLib.nodemailerLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_token(
@@ -80,25 +80,25 @@ trait XOAuth2
     url: java.lang.String,
     payload: java.lang.String,
     params: nodemailerLib.libXoauth2Mod.XOAuth2Ns.RequestParams,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def postRequest(
     url: java.lang.String,
     payload: nodeLib.Buffer,
     params: nodemailerLib.libXoauth2Mod.XOAuth2Ns.RequestParams,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def postRequest(
     url: java.lang.String,
     payload: nodeLib.streamMod.Readable,
     params: nodemailerLib.libXoauth2Mod.XOAuth2Ns.RequestParams,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def postRequest(
     url: java.lang.String,
     payload: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     params: nodemailerLib.libXoauth2Mod.XOAuth2Ns.RequestParams,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   @JSName("prependListener")
   def prependListener_end(
@@ -108,7 +108,7 @@ trait XOAuth2
   @JSName("prependListener")
   def prependListener_error(
     event: nodemailerLib.nodemailerLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_end(
@@ -118,7 +118,7 @@ trait XOAuth2
   @JSName("prependOnceListener")
   def prependOnceListener_error(
     event: nodemailerLib.nodemailerLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   def toBase64URL(data: java.lang.String): java.lang.String = js.native
   /** Encodes a buffer or a string into Base64url format */

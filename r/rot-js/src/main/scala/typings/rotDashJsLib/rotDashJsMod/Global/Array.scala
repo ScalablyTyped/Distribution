@@ -12,8 +12,8 @@ trait Array[T] extends js.Object {
 
 object Array {
   @scala.inline
-  def apply[T](random: js.Function0[T], randomize: js.Function0[Array[T]]): Array[T] = {
-    val __obj = js.Dynamic.literal(random = random, randomize = randomize)
+  def apply[T](random: () => T, randomize: () => Array[T]): Array[T] = {
+    val __obj = js.Dynamic.literal(random = js.Any.fromFunction0(random), randomize = js.Any.fromFunction0(randomize))
   
     __obj.asInstanceOf[Array[T]]
   }

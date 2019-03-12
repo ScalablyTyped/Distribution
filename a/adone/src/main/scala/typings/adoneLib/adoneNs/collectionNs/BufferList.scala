@@ -58,6 +58,7 @@ class BufferList ()
     * Ends the stream
     */
   def end(): scala.Unit = js.native
+  def end(chunk: java.lang.String): scala.Unit = js.native
   def end(chunk: js.Function0[scala.Unit]): scala.Unit = js.native
   def end(chunk: nodeLib.Buffer): scala.Unit = js.native
   /**

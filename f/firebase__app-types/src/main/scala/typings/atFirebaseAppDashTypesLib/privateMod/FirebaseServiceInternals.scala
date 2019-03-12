@@ -15,8 +15,8 @@ trait FirebaseServiceInternals extends js.Object {
 
 object FirebaseServiceInternals {
   @scala.inline
-  def apply(delete: js.Function0[js.Promise[scala.Unit]]): FirebaseServiceInternals = {
-    val __obj = js.Dynamic.literal(delete = delete)
+  def apply(delete: () => js.Promise[scala.Unit]): FirebaseServiceInternals = {
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete))
   
     __obj.asInstanceOf[FirebaseServiceInternals]
   }

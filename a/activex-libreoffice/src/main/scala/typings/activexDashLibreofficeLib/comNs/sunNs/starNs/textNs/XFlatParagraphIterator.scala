@@ -63,16 +63,16 @@ object XFlatParagraphIterator {
     FirstPara: XFlatParagraph,
     LastPara: XFlatParagraph,
     NextPara: XFlatParagraph,
-    acquire: js.Function0[scala.Unit],
-    getFirstPara: js.Function0[XFlatParagraph],
-    getLastPara: js.Function0[XFlatParagraph],
-    getNextPara: js.Function0[XFlatParagraph],
-    getParaAfter: js.Function1[XFlatParagraph, XFlatParagraph],
-    getParaBefore: js.Function1[XFlatParagraph, XFlatParagraph],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getFirstPara: () => XFlatParagraph,
+    getLastPara: () => XFlatParagraph,
+    getNextPara: () => XFlatParagraph,
+    getParaAfter: XFlatParagraph => XFlatParagraph,
+    getParaBefore: XFlatParagraph => XFlatParagraph,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XFlatParagraphIterator = {
-    val __obj = js.Dynamic.literal(FirstPara = FirstPara, LastPara = LastPara, NextPara = NextPara, acquire = acquire, getFirstPara = getFirstPara, getLastPara = getLastPara, getNextPara = getNextPara, getParaAfter = getParaAfter, getParaBefore = getParaBefore, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(FirstPara = FirstPara, LastPara = LastPara, NextPara = NextPara, acquire = js.Any.fromFunction0(acquire), getFirstPara = js.Any.fromFunction0(getFirstPara), getLastPara = js.Any.fromFunction0(getLastPara), getNextPara = js.Any.fromFunction0(getNextPara), getParaAfter = js.Any.fromFunction1(getParaAfter), getParaBefore = js.Any.fromFunction1(getParaBefore), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XFlatParagraphIterator]
   }

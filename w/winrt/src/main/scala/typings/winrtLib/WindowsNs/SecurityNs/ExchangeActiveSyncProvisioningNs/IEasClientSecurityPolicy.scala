@@ -21,8 +21,8 @@ trait IEasClientSecurityPolicy extends js.Object {
 object IEasClientSecurityPolicy {
   @scala.inline
   def apply(
-    applyAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[EasComplianceResults]],
-    checkCompliance: js.Function0[EasComplianceResults],
+    applyAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[EasComplianceResults],
+    checkCompliance: () => EasComplianceResults,
     disallowConvenienceLogon: scala.Boolean,
     maxInactivityTimeLock: scala.Double,
     maxPasswordFailedAttempts: scala.Double,
@@ -32,7 +32,7 @@ object IEasClientSecurityPolicy {
     passwordHistory: scala.Double,
     requireEncryption: scala.Boolean
   ): IEasClientSecurityPolicy = {
-    val __obj = js.Dynamic.literal(applyAsync = applyAsync, checkCompliance = checkCompliance, disallowConvenienceLogon = disallowConvenienceLogon, maxInactivityTimeLock = maxInactivityTimeLock, maxPasswordFailedAttempts = maxPasswordFailedAttempts, minPasswordComplexCharacters = minPasswordComplexCharacters, minPasswordLength = minPasswordLength, passwordExpiration = passwordExpiration, passwordHistory = passwordHistory, requireEncryption = requireEncryption)
+    val __obj = js.Dynamic.literal(applyAsync = js.Any.fromFunction0(applyAsync), checkCompliance = js.Any.fromFunction0(checkCompliance), disallowConvenienceLogon = disallowConvenienceLogon, maxInactivityTimeLock = maxInactivityTimeLock, maxPasswordFailedAttempts = maxPasswordFailedAttempts, minPasswordComplexCharacters = minPasswordComplexCharacters, minPasswordLength = minPasswordLength, passwordExpiration = passwordExpiration, passwordHistory = passwordHistory, requireEncryption = requireEncryption)
   
     __obj.asInstanceOf[IEasClientSecurityPolicy]
   }

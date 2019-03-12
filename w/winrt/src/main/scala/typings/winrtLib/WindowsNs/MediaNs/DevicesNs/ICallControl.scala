@@ -22,11 +22,11 @@ trait ICallControl extends js.Object {
 object ICallControl {
   @scala.inline
   def apply(
-    endCall: js.Function1[scala.Double, scala.Unit],
+    endCall: scala.Double => scala.Unit,
     hasRinger: scala.Boolean,
-    indicateActiveCall: js.Function1[scala.Double, scala.Unit],
-    indicateNewIncomingCall: js.Function2[scala.Boolean, java.lang.String, scala.Double],
-    indicateNewOutgoingCall: js.Function0[scala.Double],
+    indicateActiveCall: scala.Double => scala.Unit,
+    indicateNewIncomingCall: (scala.Boolean, java.lang.String) => scala.Double,
+    indicateNewOutgoingCall: () => scala.Double,
     onanswerrequested: js.Any,
     onaudiotransferrequested: js.Any,
     ondialrequested: js.Any,
@@ -34,7 +34,7 @@ object ICallControl {
     onkeypadpressed: js.Any,
     onredialrequested: js.Any
   ): ICallControl = {
-    val __obj = js.Dynamic.literal(endCall = endCall, hasRinger = hasRinger, indicateActiveCall = indicateActiveCall, indicateNewIncomingCall = indicateNewIncomingCall, indicateNewOutgoingCall = indicateNewOutgoingCall, onanswerrequested = onanswerrequested, onaudiotransferrequested = onaudiotransferrequested, ondialrequested = ondialrequested, onhanguprequested = onhanguprequested, onkeypadpressed = onkeypadpressed, onredialrequested = onredialrequested)
+    val __obj = js.Dynamic.literal(endCall = js.Any.fromFunction1(endCall), hasRinger = hasRinger, indicateActiveCall = js.Any.fromFunction1(indicateActiveCall), indicateNewIncomingCall = js.Any.fromFunction2(indicateNewIncomingCall), indicateNewOutgoingCall = js.Any.fromFunction0(indicateNewOutgoingCall), onanswerrequested = onanswerrequested, onaudiotransferrequested = onaudiotransferrequested, ondialrequested = ondialrequested, onhanguprequested = onhanguprequested, onkeypadpressed = onkeypadpressed, onredialrequested = onredialrequested)
   
     __obj.asInstanceOf[ICallControl]
   }

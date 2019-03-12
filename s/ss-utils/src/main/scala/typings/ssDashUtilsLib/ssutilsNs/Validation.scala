@@ -14,11 +14,11 @@ trait Validation extends js.Object {
 object Validation {
   @scala.inline
   def apply(
-    errorFilter: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Unit],
+    errorFilter: (java.lang.String, java.lang.String, java.lang.String) => scala.Unit,
     messages: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     overrideMessages: scala.Boolean
   ): Validation = {
-    val __obj = js.Dynamic.literal(errorFilter = errorFilter, messages = messages, overrideMessages = overrideMessages)
+    val __obj = js.Dynamic.literal(errorFilter = js.Any.fromFunction3(errorFilter), messages = messages, overrideMessages = overrideMessages)
   
     __obj.asInstanceOf[Validation]
   }

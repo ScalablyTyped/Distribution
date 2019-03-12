@@ -40,7 +40,7 @@ object ExportingContextButton {
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     height: scala.Int | scala.Double = null,
     menuItems: js.Array[java.lang.String] | js.Array[MenuItem] = null,
-    onclick: js.Function0[scala.Unit] = null,
+    onclick: () => scala.Unit = null,
     symbol: java.lang.String = null,
     symbolFill: java.lang.String = null,
     symbolSize: scala.Int | scala.Double = null,
@@ -60,7 +60,7 @@ object ExportingContextButton {
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (menuItems != null) __obj.updateDynamic("menuItems")(menuItems.asInstanceOf[js.Any])
-    if (onclick != null) __obj.updateDynamic("onclick")(onclick)
+    if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction0(onclick))
     if (symbol != null) __obj.updateDynamic("symbol")(symbol)
     if (symbolFill != null) __obj.updateDynamic("symbolFill")(symbolFill)
     if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])

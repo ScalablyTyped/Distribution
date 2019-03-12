@@ -18,8 +18,8 @@ trait Anon_False[TTarget]
 
 object Anon_False {
   @scala.inline
-  def apply[TTarget](teardown: js.Function1[TTarget, scala.Unit | jqueryLib.jqueryLibNumbers.`false`]): Anon_False[TTarget] = {
-    val __obj = js.Dynamic.literal(teardown = teardown)
+  def apply[TTarget](teardown: TTarget => scala.Unit | jqueryLib.jqueryLibNumbers.`false`): Anon_False[TTarget] = {
+    val __obj = js.Dynamic.literal(teardown = js.Any.fromFunction1(teardown))
   
     __obj.asInstanceOf[Anon_False[TTarget]]
   }

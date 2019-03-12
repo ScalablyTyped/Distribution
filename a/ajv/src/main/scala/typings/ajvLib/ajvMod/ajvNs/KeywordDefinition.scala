@@ -52,27 +52,11 @@ object KeywordDefinition {
   def apply(
     $data: js.UndefOr[scala.Boolean] = js.undefined,
     async: js.UndefOr[scala.Boolean] = js.undefined,
-    compile: js.Function3[
-      /* schema */ js.Any, 
-      /* parentSchema */ js.Object, 
-      /* it */ CompilationContext, 
-      ValidateFunction
-    ] = null,
+    compile: (/* schema */ js.Any, /* parentSchema */ js.Object, /* it */ CompilationContext) => ValidateFunction = null,
     dependencies: js.Array[java.lang.String] = null,
     errors: scala.Boolean | java.lang.String = null,
-    `inline`: js.Function4[
-      /* it */ CompilationContext, 
-      /* keyword */ java.lang.String, 
-      /* schema */ js.Any, 
-      /* parentSchema */ js.Object, 
-      java.lang.String
-    ] = null,
-    `macro`: js.Function3[
-      /* schema */ js.Any, 
-      /* parentSchema */ js.Object, 
-      /* it */ CompilationContext, 
-      js.Object | scala.Boolean
-    ] = null,
+    `inline`: (/* it */ CompilationContext, /* keyword */ java.lang.String, /* schema */ js.Any, /* parentSchema */ js.Object) => java.lang.String = null,
+    `macro`: (/* schema */ js.Any, /* parentSchema */ js.Object, /* it */ CompilationContext) => js.Object | scala.Boolean = null,
     metaSchema: js.Object = null,
     modifying: js.UndefOr[scala.Boolean] = js.undefined,
     schema: js.UndefOr[scala.Boolean] = js.undefined,
@@ -84,11 +68,11 @@ object KeywordDefinition {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined($data)) __obj.updateDynamic("$data")($data)
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (compile != null) __obj.updateDynamic("compile")(compile)
+    if (compile != null) __obj.updateDynamic("compile")(js.Any.fromFunction3(compile))
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (`inline` != null) __obj.updateDynamic("inline")(`inline`)
-    if (`macro` != null) __obj.updateDynamic("macro")(`macro`)
+    if (`inline` != null) __obj.updateDynamic("inline")(js.Any.fromFunction4(`inline`))
+    if (`macro` != null) __obj.updateDynamic("macro")(js.Any.fromFunction3(`macro`))
     if (metaSchema != null) __obj.updateDynamic("metaSchema")(metaSchema)
     if (!js.isUndefined(modifying)) __obj.updateDynamic("modifying")(modifying)
     if (!js.isUndefined(schema)) __obj.updateDynamic("schema")(schema)

@@ -36,12 +36,12 @@ trait Process extends js.Object {
 object Process {
   @scala.inline
   def apply(
-    getId: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getStages: js.Function0[xrmLib.XrmNs.CollectionNs.ItemCollection[Stage]],
-    isRendered: js.Function0[scala.Boolean]
+    getId: () => java.lang.String,
+    getName: () => java.lang.String,
+    getStages: () => xrmLib.XrmNs.CollectionNs.ItemCollection[Stage],
+    isRendered: () => scala.Boolean
   ): Process = {
-    val __obj = js.Dynamic.literal(getId = getId, getName = getName, getStages = getStages, isRendered = isRendered)
+    val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId), getName = js.Any.fromFunction0(getName), getStages = js.Any.fromFunction0(getStages), isRendered = js.Any.fromFunction0(isRendered))
   
     __obj.asInstanceOf[Process]
   }

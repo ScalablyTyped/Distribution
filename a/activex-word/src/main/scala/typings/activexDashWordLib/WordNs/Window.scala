@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Window protected () extends js.Object {
   val Active: scala.Boolean = js.native
   val ActivePane: Pane = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var Caption: java.lang.String = js.native
   val Creator: scala.Double = js.native
   var DisplayHorizontalScrollBar: scala.Boolean = js.native
@@ -20,7 +20,7 @@ class Window protected () extends js.Object {
   var DisplayScreenTips: scala.Boolean = js.native
   var DisplayVerticalRuler: scala.Boolean = js.native
   var DisplayVerticalScrollBar: scala.Boolean = js.native
-  val Document: Document = js.native
+  val Document: activexDashWordLib.WordNs.Document = js.native
   var DocumentMap: scala.Boolean = js.native
   var DocumentMapPercentWidth: scala.Double = js.native
   var EnvelopeVisible: scala.Boolean = js.native
@@ -30,10 +30,10 @@ class Window protected () extends js.Object {
   val Index: scala.Double = js.native
   var Left: scala.Double = js.native
   val Next: Window = js.native
-  val Panes: Panes = js.native
+  val Panes: activexDashWordLib.WordNs.Panes = js.native
   val Parent: js.Any = js.native
   val Previous: Window = js.native
-  val Selection: Selection = js.native
+  val Selection: activexDashWordLib.WordNs.Selection = js.native
   var ShowSourceDocuments: WdShowSourceDocuments = js.native
   var Split: scala.Boolean = js.native
   var SplitVertical: scala.Double = js.native
@@ -44,7 +44,7 @@ class Window protected () extends js.Object {
   val UsableHeight: scala.Double = js.native
   val UsableWidth: scala.Double = js.native
   var VerticalPercentScrolled: scala.Double = js.native
-  val View: View = js.native
+  val View: activexDashWordLib.WordNs.View = js.native
   var Visible: scala.Boolean = js.native
   var Width: scala.Double = js.native
   val WindowNumber: scala.Double = js.native

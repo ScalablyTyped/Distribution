@@ -16,7 +16,7 @@ trait EllipseShape
   /** If the kind specifies an open circle, this is the end angle. */
   var CircleEndAngle: scala.Double
   /** This is the kind of circle. */
-  var CircleKind: CircleKind
+  var CircleKind: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.CircleKind
   /** If the kind specifies an open circle, this is the start angle. */
   var CircleStartAngle: scala.Double
 }

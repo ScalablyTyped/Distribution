@@ -15,10 +15,10 @@ object Anon_DataService {
   @scala.inline
   def apply(
     dataService: breezeLib.breezeNs.DataService,
-    getUrl: js.Function0[java.lang.String],
+    getUrl: () => java.lang.String,
     query: breezeLib.breezeNs.EntityQuery
   ): Anon_DataService = {
-    val __obj = js.Dynamic.literal(dataService = dataService, getUrl = getUrl, query = query)
+    val __obj = js.Dynamic.literal(dataService = dataService, getUrl = js.Any.fromFunction0(getUrl), query = query)
   
     __obj.asInstanceOf[Anon_DataService]
   }

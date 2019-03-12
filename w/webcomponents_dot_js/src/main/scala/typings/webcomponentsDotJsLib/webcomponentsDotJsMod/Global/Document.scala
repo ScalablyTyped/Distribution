@@ -12,13 +12,9 @@ trait Document extends js.Object {
 object Document {
   @scala.inline
   def apply(
-    registerElement: js.Function2[
-      java.lang.String, 
-      webcomponentsDotJsLib.webcomponentsDotJsMod.CustomElementInit, 
-      webcomponentsDotJsLib.webcomponentsDotJsMod.CustomElementConstructor
-    ]
+    registerElement: (java.lang.String, webcomponentsDotJsLib.webcomponentsDotJsMod.CustomElementInit) => webcomponentsDotJsLib.webcomponentsDotJsMod.CustomElementConstructor
   ): Document = {
-    val __obj = js.Dynamic.literal(registerElement = registerElement)
+    val __obj = js.Dynamic.literal(registerElement = js.Any.fromFunction2(registerElement))
   
     __obj.asInstanceOf[Document]
   }

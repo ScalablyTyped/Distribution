@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Attr extends js.Object {
-  var attr: scala.Double | terminalDashKitLib.screenbufferMod.ScreenBufferNs.Attributes
+  var attr: scala.Double | terminalDashKitLib.screenBufferMod.ScreenBufferNs.Attributes
   var transparencyChar: java.lang.String
   var transparencyType: scala.Double
 }
@@ -14,7 +14,7 @@ trait Anon_Attr extends js.Object {
 object Anon_Attr {
   @scala.inline
   def apply(
-    attr: scala.Double | terminalDashKitLib.screenbufferMod.ScreenBufferNs.Attributes,
+    attr: scala.Double | terminalDashKitLib.screenBufferMod.ScreenBufferNs.Attributes,
     transparencyChar: java.lang.String,
     transparencyType: scala.Double
   ): Anon_Attr = {

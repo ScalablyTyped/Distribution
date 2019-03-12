@@ -44,28 +44,28 @@ trait ApplicationShortcuts
 object ApplicationShortcuts {
   @scala.inline
   def apply(
-    addDynamicShortcut: js.Function1[titaniumLib.ShortcutParams, scala.Unit],
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addDynamicShortcut: titaniumLib.ShortcutParams => scala.Unit,
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     bubbleParent: scala.Boolean,
-    dynamicShortcutExists: js.Function1[java.lang.String, scala.Boolean],
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getApiName: js.Function0[java.lang.String],
-    getBubbleParent: js.Function0[scala.Boolean],
-    getDynamicShortcut: js.Function1[java.lang.String, scala.Unit],
-    listDynamicShortcuts: js.Function0[js.Array[titaniumLib.ShortcutParams]],
-    listStaticShortcuts: js.Function0[js.Array[titaniumLib.ShortcutParams]],
-    removeAllDynamicShortcuts: js.Function0[scala.Unit],
-    removeDynamicShortcut: js.Function1[java.lang.String, scala.Unit],
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
-    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    dynamicShortcutExists: java.lang.String => scala.Boolean,
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
+    getApiName: () => java.lang.String,
+    getBubbleParent: () => scala.Boolean,
+    getDynamicShortcut: java.lang.String => scala.Unit,
+    listDynamicShortcuts: () => js.Array[titaniumLib.ShortcutParams],
+    listStaticShortcuts: () => js.Array[titaniumLib.ShortcutParams],
+    removeAllDynamicShortcuts: () => scala.Unit,
+    removeDynamicShortcut: java.lang.String => scala.Unit,
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    setBubbleParent: scala.Boolean => scala.Unit,
+    getLifecycleContainer: () => titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
   ): ApplicationShortcuts = {
-    val __obj = js.Dynamic.literal(addDynamicShortcut = addDynamicShortcut, addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, dynamicShortcutExists = dynamicShortcutExists, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, getDynamicShortcut = getDynamicShortcut, listDynamicShortcuts = listDynamicShortcuts, listStaticShortcuts = listStaticShortcuts, removeAllDynamicShortcuts = removeAllDynamicShortcuts, removeDynamicShortcut = removeDynamicShortcut, removeEventListener = removeEventListener, setBubbleParent = setBubbleParent)
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    val __obj = js.Dynamic.literal(addDynamicShortcut = js.Any.fromFunction1(addDynamicShortcut), addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, dynamicShortcutExists = js.Any.fromFunction1(dynamicShortcutExists), fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getDynamicShortcut = js.Any.fromFunction1(getDynamicShortcut), listDynamicShortcuts = js.Any.fromFunction0(listDynamicShortcuts), listStaticShortcuts = js.Any.fromFunction0(listStaticShortcuts), removeAllDynamicShortcuts = js.Any.fromFunction0(removeAllDynamicShortcuts), removeDynamicShortcut = js.Any.fromFunction1(removeDynamicShortcut), removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent))
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
     __obj.asInstanceOf[ApplicationShortcuts]

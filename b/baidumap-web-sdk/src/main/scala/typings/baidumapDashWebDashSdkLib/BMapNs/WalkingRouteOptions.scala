@@ -19,19 +19,19 @@ trait WalkingRouteOptions extends js.Object {
 object WalkingRouteOptions {
   @scala.inline
   def apply(
-    onInfoHtmlSet: js.Function2[/* poi */ LocalResultPoi, /* html */ stdLib.HTMLElement, scala.Unit] = null,
-    onMarkersSet: js.Function1[/* pois */ js.Array[LocalResultPoi], scala.Unit] = null,
-    onPolylinesSet: js.Function1[/* routes */ js.Array[Route], scala.Unit] = null,
-    onResultsHtmlSet: js.Function1[/* container */ stdLib.HTMLElement, scala.Unit] = null,
-    onSearchComplete: js.Function1[/* result */ WalkingRouteResult, scala.Unit] = null,
+    onInfoHtmlSet: (/* poi */ LocalResultPoi, /* html */ stdLib.HTMLElement) => scala.Unit = null,
+    onMarkersSet: /* pois */ js.Array[LocalResultPoi] => scala.Unit = null,
+    onPolylinesSet: /* routes */ js.Array[Route] => scala.Unit = null,
+    onResultsHtmlSet: /* container */ stdLib.HTMLElement => scala.Unit = null,
+    onSearchComplete: /* result */ WalkingRouteResult => scala.Unit = null,
     renderOptions: RenderOptions = null
   ): WalkingRouteOptions = {
     val __obj = js.Dynamic.literal()
-    if (onInfoHtmlSet != null) __obj.updateDynamic("onInfoHtmlSet")(onInfoHtmlSet)
-    if (onMarkersSet != null) __obj.updateDynamic("onMarkersSet")(onMarkersSet)
-    if (onPolylinesSet != null) __obj.updateDynamic("onPolylinesSet")(onPolylinesSet)
-    if (onResultsHtmlSet != null) __obj.updateDynamic("onResultsHtmlSet")(onResultsHtmlSet)
-    if (onSearchComplete != null) __obj.updateDynamic("onSearchComplete")(onSearchComplete)
+    if (onInfoHtmlSet != null) __obj.updateDynamic("onInfoHtmlSet")(js.Any.fromFunction2(onInfoHtmlSet))
+    if (onMarkersSet != null) __obj.updateDynamic("onMarkersSet")(js.Any.fromFunction1(onMarkersSet))
+    if (onPolylinesSet != null) __obj.updateDynamic("onPolylinesSet")(js.Any.fromFunction1(onPolylinesSet))
+    if (onResultsHtmlSet != null) __obj.updateDynamic("onResultsHtmlSet")(js.Any.fromFunction1(onResultsHtmlSet))
+    if (onSearchComplete != null) __obj.updateDynamic("onSearchComplete")(js.Any.fromFunction1(onSearchComplete))
     if (renderOptions != null) __obj.updateDynamic("renderOptions")(renderOptions)
     __obj.asInstanceOf[WalkingRouteOptions]
   }

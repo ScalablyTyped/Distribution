@@ -17,13 +17,13 @@ trait XRowSetApproveBroadcaster
 object XRowSetApproveBroadcaster {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addRowSetApproveListener: js.Function1[XRowSetApproveListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeRowSetApproveListener: js.Function1[XRowSetApproveListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addRowSetApproveListener: XRowSetApproveListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeRowSetApproveListener: XRowSetApproveListener => scala.Unit
   ): XRowSetApproveBroadcaster = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addRowSetApproveListener = addRowSetApproveListener, queryInterface = queryInterface, release = release, removeRowSetApproveListener = removeRowSetApproveListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addRowSetApproveListener = js.Any.fromFunction1(addRowSetApproveListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeRowSetApproveListener = js.Any.fromFunction1(removeRowSetApproveListener))
   
     __obj.asInstanceOf[XRowSetApproveBroadcaster]
   }

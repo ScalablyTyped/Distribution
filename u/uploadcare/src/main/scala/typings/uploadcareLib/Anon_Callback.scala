@@ -10,7 +10,7 @@ trait Anon_Callback extends js.Object {
     url: java.lang.String,
     options: Anon_Store,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* res */ uploadcareLib.uploadcareMod.UploadcareNs.File, 
       scala.Unit
     ]
@@ -18,31 +18,21 @@ trait Anon_Callback extends js.Object {
   def upload(
     readStream: nodeLib.fsMod.ReadStream,
     options: Anon_Store,
-    callback: js.Function2[/* err */ nodeLib.Error, /* res */ Anon_File, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* res */ Anon_File, scala.Unit]
   ): scala.Unit
 }
 
 object Anon_Callback {
   @scala.inline
   def apply(
-    fromUrl: js.Function3[
-      java.lang.String, 
-      Anon_Store, 
-      js.Function2[
-        /* err */ nodeLib.Error, 
-        /* res */ uploadcareLib.uploadcareMod.UploadcareNs.File, 
-        scala.Unit
-      ], 
+    fromUrl: (java.lang.String, Anon_Store, js.Function2[
+      /* err */ stdLib.Error, 
+      /* res */ uploadcareLib.uploadcareMod.UploadcareNs.File, 
       scala.Unit
-    ],
-    upload: js.Function3[
-      nodeLib.fsMod.ReadStream, 
-      Anon_Store, 
-      js.Function2[/* err */ nodeLib.Error, /* res */ Anon_File, scala.Unit], 
-      scala.Unit
-    ]
+    ]) => scala.Unit,
+    upload: (nodeLib.fsMod.ReadStream, Anon_Store, js.Function2[/* err */ stdLib.Error, /* res */ Anon_File, scala.Unit]) => scala.Unit
   ): Anon_Callback = {
-    val __obj = js.Dynamic.literal(fromUrl = fromUrl, upload = upload)
+    val __obj = js.Dynamic.literal(fromUrl = js.Any.fromFunction3(fromUrl), upload = js.Any.fromFunction3(upload))
   
     __obj.asInstanceOf[Anon_Callback]
   }

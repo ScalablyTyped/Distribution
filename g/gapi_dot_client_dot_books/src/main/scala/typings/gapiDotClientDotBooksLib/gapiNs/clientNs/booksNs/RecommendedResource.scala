@@ -15,16 +15,10 @@ trait RecommendedResource extends js.Object {
 object RecommendedResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltFieldsKeyLocaleMaxAllowedMaturityRating, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Volumes]
-    ],
-    rate: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltFieldsKeyLocaleOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BooksVolumesRecommendedRateResponse]
-    ]
+    list: gapiDotClientDotBooksLib.Anon_AltFieldsKeyLocaleMaxAllowedMaturityRating => gapiDotClientLib.gapiNs.clientNs.Request[Volumes],
+    rate: gapiDotClientDotBooksLib.Anon_AltFieldsKeyLocaleOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[BooksVolumesRecommendedRateResponse]
   ): RecommendedResource = {
-    val __obj = js.Dynamic.literal(list = list, rate = rate)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), rate = js.Any.fromFunction1(rate))
   
     __obj.asInstanceOf[RecommendedResource]
   }

@@ -14,15 +14,15 @@ trait AudienceBuilder[Audience] extends DisplayBuilder[AudienceBuilder[Audience]
 object AudienceBuilder {
   @scala.inline
   def apply[Audience](
-    build: js.Function0[AdWordsOperation[AudienceBuilder[Audience]]],
-    exclude: js.Function0[AdWordsOperation[AudienceBuilder[Audience]]],
-    withAudience: js.Function1[UserList, AudienceBuilder[Audience]],
-    withAudienceId: js.Function1[scala.Double, AudienceBuilder[Audience]],
-    withAudienceType: js.Function1[AudienceType, AudienceBuilder[Audience]],
-    withCpc: js.Function1[scala.Double, AudienceBuilder[Audience]],
-    withCpm: js.Function1[scala.Double, AudienceBuilder[Audience]]
+    build: () => AdWordsOperation[AudienceBuilder[Audience]],
+    exclude: () => AdWordsOperation[AudienceBuilder[Audience]],
+    withAudience: UserList => AudienceBuilder[Audience],
+    withAudienceId: scala.Double => AudienceBuilder[Audience],
+    withAudienceType: AudienceType => AudienceBuilder[Audience],
+    withCpc: scala.Double => AudienceBuilder[Audience],
+    withCpm: scala.Double => AudienceBuilder[Audience]
   ): AudienceBuilder[Audience] = {
-    val __obj = js.Dynamic.literal(build = build, exclude = exclude, withAudience = withAudience, withAudienceId = withAudienceId, withAudienceType = withAudienceType, withCpc = withCpc, withCpm = withCpm)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), exclude = js.Any.fromFunction0(exclude), withAudience = js.Any.fromFunction1(withAudience), withAudienceId = js.Any.fromFunction1(withAudienceId), withAudienceType = js.Any.fromFunction1(withAudienceType), withCpc = js.Any.fromFunction1(withCpc), withCpm = js.Any.fromFunction1(withCpm))
   
     __obj.asInstanceOf[AudienceBuilder[Audience]]
   }

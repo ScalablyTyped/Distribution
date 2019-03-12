@@ -16,13 +16,13 @@ trait IJsonValueStatics extends js.Object {
 object IJsonValueStatics {
   @scala.inline
   def apply(
-    createBooleanValue: js.Function1[scala.Boolean, JsonValue],
-    createNumberValue: js.Function1[scala.Double, JsonValue],
-    createStringValue: js.Function1[java.lang.String, JsonValue],
-    parse: js.Function1[java.lang.String, JsonValue],
-    tryParse: js.Function1[java.lang.String, winrtLib.Anon_ResultSucceededBoolean]
+    createBooleanValue: scala.Boolean => JsonValue,
+    createNumberValue: scala.Double => JsonValue,
+    createStringValue: java.lang.String => JsonValue,
+    parse: java.lang.String => JsonValue,
+    tryParse: java.lang.String => winrtLib.Anon_ResultSucceededBoolean
   ): IJsonValueStatics = {
-    val __obj = js.Dynamic.literal(createBooleanValue = createBooleanValue, createNumberValue = createNumberValue, createStringValue = createStringValue, parse = parse, tryParse = tryParse)
+    val __obj = js.Dynamic.literal(createBooleanValue = js.Any.fromFunction1(createBooleanValue), createNumberValue = js.Any.fromFunction1(createNumberValue), createStringValue = js.Any.fromFunction1(createStringValue), parse = js.Any.fromFunction1(parse), tryParse = js.Any.fromFunction1(tryParse))
   
     __obj.asInstanceOf[IJsonValueStatics]
   }

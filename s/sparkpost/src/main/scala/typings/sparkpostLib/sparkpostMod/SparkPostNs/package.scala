@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object SparkPostNs {
   type Callback[T] = js.Function2[
-    /* err */ nodeLib.Error | SparkPostError | scala.Null, 
+    /* err */ stdLib.Error | SparkPostError | scala.Null, 
     /* res */ Response[T], 
     scala.Unit
   ]

@@ -22,7 +22,7 @@ trait RippleProps
   /**
     * Function that will be called when the ripple animation ends.
     */
-  var onRippleEnded: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onRippleEnded: js.UndefOr[js.Function] = js.undefined
   /**
     * Factor to indicate how much should the ripple spread under the component.
     * @default 2
@@ -43,7 +43,7 @@ object RippleProps {
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    onRippleEnded: coreDashJsLib.Function = null,
+    onRippleEnded: js.Function = null,
     spread: scala.Int | scala.Double = null,
     theme: RippleTheme = null
   ): RippleProps = {

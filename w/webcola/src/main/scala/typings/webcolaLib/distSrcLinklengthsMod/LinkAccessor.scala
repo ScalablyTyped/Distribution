@@ -12,8 +12,8 @@ trait LinkAccessor[Link] extends js.Object {
 
 object LinkAccessor {
   @scala.inline
-  def apply[Link](getSourceIndex: js.Function1[Link, scala.Double], getTargetIndex: js.Function1[Link, scala.Double]): LinkAccessor[Link] = {
-    val __obj = js.Dynamic.literal(getSourceIndex = getSourceIndex, getTargetIndex = getTargetIndex)
+  def apply[Link](getSourceIndex: Link => scala.Double, getTargetIndex: Link => scala.Double): LinkAccessor[Link] = {
+    val __obj = js.Dynamic.literal(getSourceIndex = js.Any.fromFunction1(getSourceIndex), getTargetIndex = js.Any.fromFunction1(getTargetIndex))
   
     __obj.asInstanceOf[LinkAccessor[Link]]
   }

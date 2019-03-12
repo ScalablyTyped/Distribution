@@ -86,7 +86,7 @@ object JSTreeStaticDefaults {
     dnd: JSTreeStaticDefaultsDragNDrop = null,
     massload: JSTreeStaticDefaultsMassload = null,
     search: JSTreeStaticDefaultsSearch = null,
-    sort: js.Function2[/* x */ js.Any, /* y */ js.Any, scala.Double] = null,
+    sort: (/* x */ js.Any, /* y */ js.Any) => scala.Double = null,
     state: JSTreeStaticDefaultsState = null,
     types: js.Any = null,
     unique: JSTreeStaticDefaultsUnique = null
@@ -97,7 +97,7 @@ object JSTreeStaticDefaults {
     if (dnd != null) __obj.updateDynamic("dnd")(dnd)
     if (massload != null) __obj.updateDynamic("massload")(massload)
     if (search != null) __obj.updateDynamic("search")(search)
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
     if (state != null) __obj.updateDynamic("state")(state)
     if (types != null) __obj.updateDynamic("types")(types)
     if (unique != null) __obj.updateDynamic("unique")(unique)

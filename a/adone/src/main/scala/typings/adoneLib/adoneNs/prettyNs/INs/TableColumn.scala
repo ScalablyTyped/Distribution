@@ -31,7 +31,7 @@ object TableColumn {
     id: java.lang.String,
     align: adoneLib.adoneLibStrings.right | adoneLib.adoneLibStrings.center | adoneLib.adoneLibStrings.left = null,
     format: java.lang.String | (js.Function2[/* val */ js.Any, /* item */ js.Object, java.lang.String]) = null,
-    handle: js.Function1[/* item */ js.Object, java.lang.String] = null,
+    handle: /* item */ js.Object => java.lang.String = null,
     header: java.lang.String = null,
     maxWidth: scala.Double | java.lang.String = null,
     style: java.lang.String | (js.Function2[/* val */ js.Any, /* str */ java.lang.String, java.lang.String]) = null,
@@ -41,7 +41,7 @@ object TableColumn {
     val __obj = js.Dynamic.literal(id = id)
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (handle != null) __obj.updateDynamic("handle")(js.Any.fromFunction1(handle))
     if (header != null) __obj.updateDynamic("header")(header)
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

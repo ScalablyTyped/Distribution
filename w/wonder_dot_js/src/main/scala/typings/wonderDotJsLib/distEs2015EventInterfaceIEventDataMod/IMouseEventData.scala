@@ -32,7 +32,7 @@ object IMouseEventData {
     currentTarget: stdLib.HTMLElement,
     pageX: scala.Double,
     pageY: scala.Double,
-    preventDefault: js.Function0[scala.Unit],
+    preventDefault: () => scala.Unit,
     returnValue: scala.Boolean,
     target: stdLib.HTMLElement,
     detail: scala.Int | scala.Double = null,
@@ -44,7 +44,7 @@ object IMouseEventData {
     webkitMovementY: scala.Int | scala.Double = null,
     wheelDelta: scala.Int | scala.Double = null
   ): IMouseEventData = {
-    val __obj = js.Dynamic.literal(button = button, clientX = clientX, clientY = clientY, currentTarget = currentTarget, pageX = pageX, pageY = pageY, preventDefault = preventDefault, returnValue = returnValue, target = target)
+    val __obj = js.Dynamic.literal(button = button, clientX = clientX, clientY = clientY, currentTarget = currentTarget, pageX = pageX, pageY = pageY, preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue, target = target)
     if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
     if (movementX != null) __obj.updateDynamic("movementX")(movementX.asInstanceOf[js.Any])
     if (movementY != null) __obj.updateDynamic("movementY")(movementY.asInstanceOf[js.Any])

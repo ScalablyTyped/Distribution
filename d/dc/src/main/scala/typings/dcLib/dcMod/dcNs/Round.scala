@@ -14,11 +14,11 @@ trait Round extends js.Object {
 object Round {
   @scala.inline
   def apply(
-    ceil: js.Function1[scala.Double, scala.Double],
-    floor: js.Function1[scala.Double, scala.Double],
-    round: js.Function1[scala.Double, scala.Double]
+    ceil: scala.Double => scala.Double,
+    floor: scala.Double => scala.Double,
+    round: scala.Double => scala.Double
   ): Round = {
-    val __obj = js.Dynamic.literal(ceil = ceil, floor = floor, round = round)
+    val __obj = js.Dynamic.literal(ceil = js.Any.fromFunction1(ceil), floor = js.Any.fromFunction1(floor), round = js.Any.fromFunction1(round))
   
     __obj.asInstanceOf[Round]
   }

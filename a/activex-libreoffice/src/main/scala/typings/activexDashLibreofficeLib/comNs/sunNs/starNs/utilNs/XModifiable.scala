@@ -20,15 +20,15 @@ trait XModifiable extends XModifyBroadcaster {
 object XModifiable {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addModifyListener: js.Function1[XModifyListener, scala.Unit],
-    isModified: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeModifyListener: js.Function1[XModifyListener, scala.Unit],
-    setModified: js.Function1[scala.Boolean, scala.Unit]
+    acquire: () => scala.Unit,
+    addModifyListener: XModifyListener => scala.Unit,
+    isModified: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeModifyListener: XModifyListener => scala.Unit,
+    setModified: scala.Boolean => scala.Unit
   ): XModifiable = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addModifyListener = addModifyListener, isModified = isModified, queryInterface = queryInterface, release = release, removeModifyListener = removeModifyListener, setModified = setModified)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addModifyListener = js.Any.fromFunction1(addModifyListener), isModified = js.Any.fromFunction0(isModified), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeModifyListener = js.Any.fromFunction1(removeModifyListener), setModified = js.Any.fromFunction1(setModified))
   
     __obj.asInstanceOf[XModifiable]
   }

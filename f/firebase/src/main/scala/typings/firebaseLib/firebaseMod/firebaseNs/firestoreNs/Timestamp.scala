@@ -22,7 +22,7 @@ trait Timestamp extends js.Object {
     * @return JavaScript `Date` object representing the same point in time as
     *     this `Timestamp`, with millisecond precision.
     */
-  def toDate(): coreDashJsLib.Date
+  def toDate(): stdLib.Date
   /**
     * Convert a timestamp to a numeric timestamp (in milliseconds since epoch).
     * This operation causes a loss of precision.
@@ -36,13 +36,13 @@ trait Timestamp extends js.Object {
 object Timestamp {
   @scala.inline
   def apply(
-    isEqual: js.Function1[Timestamp, scala.Boolean],
+    isEqual: Timestamp => scala.Boolean,
     nanoseconds: scala.Double,
     seconds: scala.Double,
-    toDate: js.Function0[coreDashJsLib.Date],
-    toMillis: js.Function0[scala.Double]
+    toDate: () => stdLib.Date,
+    toMillis: () => scala.Double
   ): Timestamp = {
-    val __obj = js.Dynamic.literal(isEqual = isEqual, nanoseconds = nanoseconds, seconds = seconds, toDate = toDate, toMillis = toMillis)
+    val __obj = js.Dynamic.literal(isEqual = js.Any.fromFunction1(isEqual), nanoseconds = nanoseconds, seconds = seconds, toDate = js.Any.fromFunction0(toDate), toMillis = js.Any.fromFunction0(toMillis))
   
     __obj.asInstanceOf[Timestamp]
   }

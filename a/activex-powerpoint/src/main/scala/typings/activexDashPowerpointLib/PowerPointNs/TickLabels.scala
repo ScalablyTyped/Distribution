@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TickLabels protected () extends js.Object {
   var Alignment: scala.Double = js.native
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   var AutoScaleFont: js.Any = js.native
   val Creator: scala.Double = js.native
   val Depth: scala.Double = js.native

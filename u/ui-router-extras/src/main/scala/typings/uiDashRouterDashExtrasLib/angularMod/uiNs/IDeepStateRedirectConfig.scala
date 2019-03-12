@@ -36,15 +36,12 @@ object IDeepStateRedirectConfig {
   @scala.inline
   def apply(
     default: java.lang.String | IRedirectParams = null,
-    fn: js.Function1[
-      /* $dsr$ */ uiDashRouterDashExtrasLib.Anon_Redirect, 
-      scala.Boolean | IRedirectParams
-    ] = null,
+    fn: /* $dsr$ */ uiDashRouterDashExtrasLib.Anon_Redirect => scala.Boolean | IRedirectParams = null,
     params: scala.Boolean | js.Array[java.lang.String] = null
   ): IDeepStateRedirectConfig = {
     val __obj = js.Dynamic.literal()
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (fn != null) __obj.updateDynamic("fn")(fn)
+    if (fn != null) __obj.updateDynamic("fn")(js.Any.fromFunction1(fn))
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeepStateRedirectConfig]
   }

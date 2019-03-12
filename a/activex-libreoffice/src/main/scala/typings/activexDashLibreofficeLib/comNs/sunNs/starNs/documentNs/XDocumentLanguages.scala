@@ -11,22 +11,18 @@ trait XDocumentLanguages
     * retrieve the list of languages already used in current document
     * @returns sequence
     */
-  def getDocumentLanguages(nScriptTypes: scala.Double, nCount: scala.Double): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+  def getDocumentLanguages(nScriptTypes: scala.Double, nCount: scala.Double): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
 }
 
 object XDocumentLanguages {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getDocumentLanguages: js.Function2[
-      scala.Double, 
-      scala.Double, 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDocumentLanguages: (scala.Double, scala.Double) => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDocumentLanguages = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getDocumentLanguages = getDocumentLanguages, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDocumentLanguages = js.Any.fromFunction2(getDocumentLanguages), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDocumentLanguages]
   }

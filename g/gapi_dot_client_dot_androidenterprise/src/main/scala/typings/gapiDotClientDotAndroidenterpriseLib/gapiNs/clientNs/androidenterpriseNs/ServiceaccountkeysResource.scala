@@ -29,20 +29,11 @@ trait ServiceaccountkeysResource extends js.Object {
 object ServiceaccountkeysResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyKeyId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccountKey]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccountKeysListResponse]
-    ]
+    delete: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyKeyId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    insert: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields => gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccountKey],
+    list: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields => gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccountKeysListResponse]
   ): ServiceaccountkeysResource = {
-    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ServiceaccountkeysResource]
   }

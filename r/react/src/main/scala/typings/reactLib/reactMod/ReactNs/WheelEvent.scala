@@ -31,9 +31,9 @@ object WheelEvent {
     deltaY: scala.Double,
     deltaZ: scala.Double,
     eventPhase: scala.Double,
-    getModifierState: js.Function1[java.lang.String, scala.Boolean],
-    isDefaultPrevented: js.Function0[scala.Boolean],
-    isPropagationStopped: js.Function0[scala.Boolean],
+    getModifierState: java.lang.String => scala.Boolean,
+    isDefaultPrevented: () => scala.Boolean,
+    isPropagationStopped: () => scala.Boolean,
     isTrusted: scala.Boolean,
     metaKey: scala.Boolean,
     movementX: scala.Double,
@@ -41,18 +41,18 @@ object WheelEvent {
     nativeEvent: reactLib.NativeWheelEvent,
     pageX: scala.Double,
     pageY: scala.Double,
-    persist: js.Function0[scala.Unit],
-    preventDefault: js.Function0[scala.Unit],
+    persist: () => scala.Unit,
+    preventDefault: () => scala.Unit,
     relatedTarget: reactLib.EventTarget,
     screenX: scala.Double,
     screenY: scala.Double,
     shiftKey: scala.Boolean,
-    stopPropagation: js.Function0[scala.Unit],
+    stopPropagation: () => scala.Unit,
     target: reactLib.EventTarget,
     timeStamp: scala.Double,
     `type`: java.lang.String
   ): WheelEvent[T] = {
-    val __obj = js.Dynamic.literal(altKey = altKey, bubbles = bubbles, button = button, buttons = buttons, cancelable = cancelable, clientX = clientX, clientY = clientY, ctrlKey = ctrlKey, currentTarget = currentTarget, defaultPrevented = defaultPrevented, deltaMode = deltaMode, deltaX = deltaX, deltaY = deltaY, deltaZ = deltaZ, eventPhase = eventPhase, getModifierState = getModifierState, isDefaultPrevented = isDefaultPrevented, isPropagationStopped = isPropagationStopped, isTrusted = isTrusted, metaKey = metaKey, movementX = movementX, movementY = movementY, nativeEvent = nativeEvent, pageX = pageX, pageY = pageY, persist = persist, preventDefault = preventDefault, relatedTarget = relatedTarget, screenX = screenX, screenY = screenY, shiftKey = shiftKey, stopPropagation = stopPropagation, target = target, timeStamp = timeStamp)
+    val __obj = js.Dynamic.literal(altKey = altKey, bubbles = bubbles, button = button, buttons = buttons, cancelable = cancelable, clientX = clientX, clientY = clientY, ctrlKey = ctrlKey, currentTarget = currentTarget, defaultPrevented = defaultPrevented, deltaMode = deltaMode, deltaX = deltaX, deltaY = deltaY, deltaZ = deltaZ, eventPhase = eventPhase, getModifierState = js.Any.fromFunction1(getModifierState), isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted, metaKey = metaKey, movementX = movementX, movementY = movementY, nativeEvent = nativeEvent, pageX = pageX, pageY = pageY, persist = js.Any.fromFunction0(persist), preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget, screenX = screenX, screenY = screenY, shiftKey = shiftKey, stopPropagation = js.Any.fromFunction0(stopPropagation), target = target, timeStamp = timeStamp)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WheelEvent[T]]
   }

@@ -17,12 +17,12 @@ object RNFetchBlobWriteStream {
   @scala.inline
   def apply(
     append: scala.Boolean,
-    close: js.Function0[scala.Unit],
+    close: () => scala.Unit,
     encoding: java.lang.String,
     id: java.lang.String,
-    write: js.Function1[java.lang.String, js.Promise[scala.Unit]]
+    write: java.lang.String => js.Promise[scala.Unit]
   ): RNFetchBlobWriteStream = {
-    val __obj = js.Dynamic.literal(append = append, close = close, encoding = encoding, id = id, write = write)
+    val __obj = js.Dynamic.literal(append = append, close = js.Any.fromFunction0(close), encoding = encoding, id = id, write = js.Any.fromFunction1(write))
   
     __obj.asInstanceOf[RNFetchBlobWriteStream]
   }

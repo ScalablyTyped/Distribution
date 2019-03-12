@@ -17,16 +17,14 @@ trait SocketTransport extends js.Object {
 object SocketTransport {
   @scala.inline
   def apply(
-    onConnected: js.Function0[
-      vscodeDashJsonrpcLib.Thenable[
-        js.Tuple2[
-          vscodeDashJsonrpcLib.libMessageReaderMod.MessageReader, 
-          vscodeDashJsonrpcLib.libMessageWriterMod.MessageWriter
-        ]
+    onConnected: () => vscodeDashJsonrpcLib.Thenable[
+      js.Tuple2[
+        vscodeDashJsonrpcLib.libMessageReaderMod.MessageReader, 
+        vscodeDashJsonrpcLib.libMessageWriterMod.MessageWriter
       ]
     ]
   ): SocketTransport = {
-    val __obj = js.Dynamic.literal(onConnected = onConnected)
+    val __obj = js.Dynamic.literal(onConnected = js.Any.fromFunction0(onConnected))
   
     __obj.asInstanceOf[SocketTransport]
   }

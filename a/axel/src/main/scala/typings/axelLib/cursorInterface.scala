@@ -14,13 +14,8 @@ trait cursorInterface extends js.Object {
 
 object cursorInterface {
   @scala.inline
-  def apply(
-    off: js.Function0[scala.Unit],
-    on: js.Function0[scala.Unit],
-    reset: js.Function0[scala.Unit],
-    restore: js.Function0[scala.Unit]
-  ): cursorInterface = {
-    val __obj = js.Dynamic.literal(off = off, on = on, reset = reset, restore = restore)
+  def apply(off: () => scala.Unit, on: () => scala.Unit, reset: () => scala.Unit, restore: () => scala.Unit): cursorInterface = {
+    val __obj = js.Dynamic.literal(off = js.Any.fromFunction0(off), on = js.Any.fromFunction0(on), reset = js.Any.fromFunction0(reset), restore = js.Any.fromFunction0(restore))
   
     __obj.asInstanceOf[cursorInterface]
   }

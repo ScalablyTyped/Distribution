@@ -12,7 +12,7 @@ class CheckBox protected () extends js.Object {
   var AddColon: scala.Boolean = js.native
   var AfterUpdate: java.lang.String = js.native
   var AfterUpdateMacro: java.lang.String = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   var AutoLabel: scala.Boolean = js.native
   var BeforeUpdate: java.lang.String = js.native
   var BeforeUpdateMacro: java.lang.String = js.native

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "maxmind"
-version := "2.12.0-964b25"
+version := "2.12.0-e32c29"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "big-integer" % "1.6.42-37ef8b",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190307Z-7720a8",
-  "org.scalablytyped" %%% "std" % "3.3-05be79")
+  "org.scalablytyped" %%% "big-integer" % "1.6.42-1d3ece",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190311Z-8b4969",
+  "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

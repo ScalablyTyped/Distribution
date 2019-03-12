@@ -12,8 +12,8 @@ trait SubscriptionProps[S, T] extends js.Object {
 
 object SubscriptionProps {
   @scala.inline
-  def apply[S, T](children: js.Function1[T, reactLib.reactMod.ReactNs.ReactNode], source: S): SubscriptionProps[S, T] = {
-    val __obj = js.Dynamic.literal(children = children, source = source.asInstanceOf[js.Any])
+  def apply[S, T](children: T => reactLib.reactMod.ReactNs.ReactNode, source: S): SubscriptionProps[S, T] = {
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SubscriptionProps[S, T]]
   }

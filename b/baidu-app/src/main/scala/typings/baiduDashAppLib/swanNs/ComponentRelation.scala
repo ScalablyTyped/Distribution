@@ -22,17 +22,17 @@ object ComponentRelation {
   @scala.inline
   def apply[D, P](
     `type`: baiduDashAppLib.baiduDashAppLibStrings.parent | baiduDashAppLib.baiduDashAppLibStrings.child | baiduDashAppLib.baiduDashAppLibStrings.ancestor | baiduDashAppLib.baiduDashAppLibStrings.descendant,
-    linkChanged: js.Function1[/* target */ Component[D, P], scala.Unit] = null,
-    linked: js.Function1[/* target */ Component[D, P], scala.Unit] = null,
+    linkChanged: /* target */ Component[D, P] => scala.Unit = null,
+    linked: /* target */ Component[D, P] => scala.Unit = null,
     target: java.lang.String = null,
-    unlinked: js.Function1[/* target */ Component[D, P], scala.Unit] = null
+    unlinked: /* target */ Component[D, P] => scala.Unit = null
   ): ComponentRelation[D, P] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (linkChanged != null) __obj.updateDynamic("linkChanged")(linkChanged)
-    if (linked != null) __obj.updateDynamic("linked")(linked)
+    if (linkChanged != null) __obj.updateDynamic("linkChanged")(js.Any.fromFunction1(linkChanged))
+    if (linked != null) __obj.updateDynamic("linked")(js.Any.fromFunction1(linked))
     if (target != null) __obj.updateDynamic("target")(target)
-    if (unlinked != null) __obj.updateDynamic("unlinked")(unlinked)
+    if (unlinked != null) __obj.updateDynamic("unlinked")(js.Any.fromFunction1(unlinked))
     __obj.asInstanceOf[ComponentRelation[D, P]]
   }
 }

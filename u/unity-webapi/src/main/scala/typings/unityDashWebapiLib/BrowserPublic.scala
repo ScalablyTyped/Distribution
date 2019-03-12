@@ -11,8 +11,8 @@ trait BrowserPublic extends js.Object {
 
 object BrowserPublic {
   @scala.inline
-  def apply(getUnityObject: js.Function1[scala.Double, Unity]): BrowserPublic = {
-    val __obj = js.Dynamic.literal(getUnityObject = getUnityObject)
+  def apply(getUnityObject: scala.Double => Unity): BrowserPublic = {
+    val __obj = js.Dynamic.literal(getUnityObject = js.Any.fromFunction1(getUnityObject))
   
     __obj.asInstanceOf[BrowserPublic]
   }

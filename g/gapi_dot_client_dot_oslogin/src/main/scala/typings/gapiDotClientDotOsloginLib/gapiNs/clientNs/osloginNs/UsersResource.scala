@@ -23,17 +23,11 @@ trait UsersResource extends js.Object {
 object UsersResource {
   @scala.inline
   def apply(
-    getLoginProfile: js.Function1[
-      gapiDotClientDotOsloginLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LoginProfile]
-    ],
-    importSshPublicKey: js.Function1[
-      gapiDotClientDotOsloginLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ImportSshPublicKeyResponse]
-    ],
+    getLoginProfile: gapiDotClientDotOsloginLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[LoginProfile],
+    importSshPublicKey: gapiDotClientDotOsloginLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ImportSshPublicKeyResponse],
     sshPublicKeys: SshPublicKeysResource
   ): UsersResource = {
-    val __obj = js.Dynamic.literal(getLoginProfile = getLoginProfile, importSshPublicKey = importSshPublicKey, sshPublicKeys = sshPublicKeys)
+    val __obj = js.Dynamic.literal(getLoginProfile = js.Any.fromFunction1(getLoginProfile), importSshPublicKey = js.Any.fromFunction1(importSshPublicKey), sshPublicKeys = sshPublicKeys)
   
     __obj.asInstanceOf[UsersResource]
   }

@@ -13,12 +13,9 @@ trait WebfontsResource extends js.Object {
 object WebfontsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotWebfontsLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[WebfontList]
-    ]
+    list: gapiDotClientDotWebfontsLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[WebfontList]
   ): WebfontsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[WebfontsResource]
   }

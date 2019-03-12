@@ -57,18 +57,18 @@ object ReactPlayerProps {
     light: scala.Boolean | java.lang.String = null,
     loop: js.UndefOr[scala.Boolean] = js.undefined,
     muted: js.UndefOr[scala.Boolean] = js.undefined,
-    onBuffer: js.Function0[scala.Unit] = null,
-    onDisablePIP: js.Function0[scala.Unit] = null,
-    onDuration: js.Function1[/* duration */ scala.Double, scala.Unit] = null,
-    onEnablePIP: js.Function0[scala.Unit] = null,
-    onEnded: js.Function0[scala.Unit] = null,
-    onError: js.Function1[/* error */ js.Any, scala.Unit] = null,
-    onPause: js.Function0[scala.Unit] = null,
-    onPlay: js.Function0[scala.Unit] = null,
-    onProgress: js.Function1[/* state */ reactDashPlayerLib.Anon_Loaded, scala.Unit] = null,
-    onReady: js.Function0[scala.Unit] = null,
-    onSeek: js.Function1[/* seconds */ scala.Double, scala.Unit] = null,
-    onStart: js.Function0[scala.Unit] = null,
+    onBuffer: () => scala.Unit = null,
+    onDisablePIP: () => scala.Unit = null,
+    onDuration: /* duration */ scala.Double => scala.Unit = null,
+    onEnablePIP: () => scala.Unit = null,
+    onEnded: () => scala.Unit = null,
+    onError: /* error */ js.Any => scala.Unit = null,
+    onPause: () => scala.Unit = null,
+    onPlay: () => scala.Unit = null,
+    onProgress: /* state */ reactDashPlayerLib.Anon_Loaded => scala.Unit = null,
+    onReady: () => scala.Unit = null,
+    onSeek: /* seconds */ scala.Double => scala.Unit = null,
+    onStart: () => scala.Unit = null,
     pip: js.UndefOr[scala.Boolean] = js.undefined,
     playbackRate: scala.Int | scala.Double = null,
     playing: js.UndefOr[scala.Boolean] = js.undefined,
@@ -95,18 +95,18 @@ object ReactPlayerProps {
     if (light != null) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
     if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
-    if (onBuffer != null) __obj.updateDynamic("onBuffer")(onBuffer)
-    if (onDisablePIP != null) __obj.updateDynamic("onDisablePIP")(onDisablePIP)
-    if (onDuration != null) __obj.updateDynamic("onDuration")(onDuration)
-    if (onEnablePIP != null) __obj.updateDynamic("onEnablePIP")(onEnablePIP)
-    if (onEnded != null) __obj.updateDynamic("onEnded")(onEnded)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onPause != null) __obj.updateDynamic("onPause")(onPause)
-    if (onPlay != null) __obj.updateDynamic("onPlay")(onPlay)
-    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress)
-    if (onReady != null) __obj.updateDynamic("onReady")(onReady)
-    if (onSeek != null) __obj.updateDynamic("onSeek")(onSeek)
-    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
+    if (onBuffer != null) __obj.updateDynamic("onBuffer")(js.Any.fromFunction0(onBuffer))
+    if (onDisablePIP != null) __obj.updateDynamic("onDisablePIP")(js.Any.fromFunction0(onDisablePIP))
+    if (onDuration != null) __obj.updateDynamic("onDuration")(js.Any.fromFunction1(onDuration))
+    if (onEnablePIP != null) __obj.updateDynamic("onEnablePIP")(js.Any.fromFunction0(onEnablePIP))
+    if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction0(onEnded))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction0(onPause))
+    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction0(onPlay))
+    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
+    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction0(onReady))
+    if (onSeek != null) __obj.updateDynamic("onSeek")(js.Any.fromFunction1(onSeek))
+    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction0(onStart))
     if (!js.isUndefined(pip)) __obj.updateDynamic("pip")(pip)
     if (playbackRate != null) __obj.updateDynamic("playbackRate")(playbackRate.asInstanceOf[js.Any])
     if (!js.isUndefined(playing)) __obj.updateDynamic("playing")(playing)

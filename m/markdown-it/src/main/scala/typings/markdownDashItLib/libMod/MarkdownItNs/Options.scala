@@ -22,7 +22,7 @@ object Options {
   @scala.inline
   def apply(
     breaks: js.UndefOr[scala.Boolean] = js.undefined,
-    highlight: js.Function2[/* str */ java.lang.String, /* lang */ java.lang.String, scala.Unit] = null,
+    highlight: (/* str */ java.lang.String, /* lang */ java.lang.String) => scala.Unit = null,
     html: js.UndefOr[scala.Boolean] = js.undefined,
     langPrefix: java.lang.String = null,
     linkify: js.UndefOr[scala.Boolean] = js.undefined,
@@ -32,7 +32,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(breaks)) __obj.updateDynamic("breaks")(breaks)
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight)
+    if (highlight != null) __obj.updateDynamic("highlight")(js.Any.fromFunction2(highlight))
     if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
     if (langPrefix != null) __obj.updateDynamic("langPrefix")(langPrefix)
     if (!js.isUndefined(linkify)) __obj.updateDynamic("linkify")(linkify)

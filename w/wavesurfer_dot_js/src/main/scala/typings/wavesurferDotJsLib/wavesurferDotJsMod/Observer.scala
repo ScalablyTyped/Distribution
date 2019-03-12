@@ -16,21 +16,13 @@ trait Observer extends js.Object {
 object Observer {
   @scala.inline
   def apply(
-    fireEvent: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Unit],
-    on: js.Function2[
-      java.lang.String, 
-      js.Function1[/* repeated */ js.Any, scala.Unit], 
-      wavesurferDotJsLib.wavesurferDotJsMod.WaveSurferNs.ListenerDescriptor
-    ],
-    once: js.Function2[
-      java.lang.String, 
-      js.Function1[/* repeated */ js.Any, scala.Unit], 
-      wavesurferDotJsLib.wavesurferDotJsMod.WaveSurferNs.ListenerDescriptor
-    ],
-    un: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit], scala.Unit],
-    unAll: js.Function0[scala.Unit]
+    fireEvent: (java.lang.String, /* repeated */ js.Any) => scala.Unit,
+    on: (java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit]) => wavesurferDotJsLib.wavesurferDotJsMod.WaveSurferNs.ListenerDescriptor,
+    once: (java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit]) => wavesurferDotJsLib.wavesurferDotJsMod.WaveSurferNs.ListenerDescriptor,
+    un: (java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit]) => scala.Unit,
+    unAll: () => scala.Unit
   ): Observer = {
-    val __obj = js.Dynamic.literal(fireEvent = fireEvent, on = on, once = once, un = un, unAll = unAll)
+    val __obj = js.Dynamic.literal(fireEvent = js.Any.fromFunction2(fireEvent), on = js.Any.fromFunction2(on), once = js.Any.fromFunction2(once), un = js.Any.fromFunction2(un), unAll = js.Any.fromFunction0(unAll))
   
     __obj.asInstanceOf[Observer]
   }

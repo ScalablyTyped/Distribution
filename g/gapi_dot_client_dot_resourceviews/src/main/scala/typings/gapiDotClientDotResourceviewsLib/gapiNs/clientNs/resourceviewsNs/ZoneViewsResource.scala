@@ -29,44 +29,17 @@ trait ZoneViewsResource extends js.Object {
 object ZoneViewsResource {
   @scala.inline
   def apply(
-    addResources: js.Function1[
-      gapiDotClientDotResourceviewsLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotResourceviewsLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotResourceviewsLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ResourceView]
-    ],
-    getService: js.Function1[
-      gapiDotClientDotResourceviewsLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ZoneViewsGetServiceResponse]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotResourceviewsLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotResourceviewsLib.Anon_AltFieldsKeyMaxResults, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ZoneViewsList]
-    ],
-    listResources: js.Function1[
-      gapiDotClientDotResourceviewsLib.Anon_AltFieldsFormat, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ZoneViewsListResourcesResponse]
-    ],
-    removeResources: js.Function1[
-      gapiDotClientDotResourceviewsLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    setService: js.Function1[
-      gapiDotClientDotResourceviewsLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    addResources: gapiDotClientDotResourceviewsLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    delete: gapiDotClientDotResourceviewsLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotResourceviewsLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[ResourceView],
+    getService: gapiDotClientDotResourceviewsLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[ZoneViewsGetServiceResponse],
+    insert: gapiDotClientDotResourceviewsLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotResourceviewsLib.Anon_AltFieldsKeyMaxResults => gapiDotClientLib.gapiNs.clientNs.Request[ZoneViewsList],
+    listResources: gapiDotClientDotResourceviewsLib.Anon_AltFieldsFormat => gapiDotClientLib.gapiNs.clientNs.Request[ZoneViewsListResourcesResponse],
+    removeResources: gapiDotClientDotResourceviewsLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    setService: gapiDotClientDotResourceviewsLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): ZoneViewsResource = {
-    val __obj = js.Dynamic.literal(addResources = addResources, delete = delete, get = get, getService = getService, insert = insert, list = list, listResources = listResources, removeResources = removeResources, setService = setService)
+    val __obj = js.Dynamic.literal(addResources = js.Any.fromFunction1(addResources), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getService = js.Any.fromFunction1(getService), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), listResources = js.Any.fromFunction1(listResources), removeResources = js.Any.fromFunction1(removeResources), setService = js.Any.fromFunction1(setService))
   
     __obj.asInstanceOf[ZoneViewsResource]
   }

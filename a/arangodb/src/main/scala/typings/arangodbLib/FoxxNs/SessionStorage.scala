@@ -14,12 +14,12 @@ trait SessionStorage extends js.Object {
 object SessionStorage {
   @scala.inline
   def apply(
-    forClient: js.Function1[Session, java.lang.String | scala.Null],
-    fromClient: js.Function1[java.lang.String, Session | scala.Null],
-    `new`: js.Function0[Session] = null
+    forClient: Session => java.lang.String | scala.Null,
+    fromClient: java.lang.String => Session | scala.Null,
+    `new`: () => Session = null
   ): SessionStorage = {
-    val __obj = js.Dynamic.literal(forClient = forClient, fromClient = fromClient)
-    if (`new` != null) __obj.updateDynamic("new")(`new`)
+    val __obj = js.Dynamic.literal(forClient = js.Any.fromFunction1(forClient), fromClient = js.Any.fromFunction1(fromClient))
+    if (`new` != null) __obj.updateDynamic("new")(js.Any.fromFunction0(`new`))
     __obj.asInstanceOf[SessionStorage]
   }
 }

@@ -30,16 +30,13 @@ trait XSingleServiceFactory
 object XSingleServiceFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createInstance: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    createInstanceWithArguments: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createInstance: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    createInstanceWithArguments: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSingleServiceFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createInstance = createInstance, createInstanceWithArguments = createInstanceWithArguments, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createInstance = js.Any.fromFunction0(createInstance), createInstanceWithArguments = js.Any.fromFunction1(createInstanceWithArguments), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSingleServiceFactory]
   }

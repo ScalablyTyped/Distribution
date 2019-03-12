@@ -37,14 +37,14 @@ object JobTaskCreateJobVersionParams {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     jobId: scala.Double,
     name: java.lang.String,
     parent: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     user: java.lang.String
   ): JobTaskCreateJobVersionParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, name = name, parent = parent, propertyIsEnumerable = propertyIsEnumerable, user = user)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobId = jobId, name = name, parent = parent, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user)
   
     __obj.asInstanceOf[JobTaskCreateJobVersionParams]
   }

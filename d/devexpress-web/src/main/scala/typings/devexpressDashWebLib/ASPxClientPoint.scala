@@ -21,8 +21,8 @@ trait ASPxClientPoint extends js.Object {
 
 object ASPxClientPoint {
   @scala.inline
-  def apply(GetX: js.Function0[scala.Double], GetY: js.Function0[scala.Double]): ASPxClientPoint = {
-    val __obj = js.Dynamic.literal(GetX = GetX, GetY = GetY)
+  def apply(GetX: () => scala.Double, GetY: () => scala.Double): ASPxClientPoint = {
+    val __obj = js.Dynamic.literal(GetX = js.Any.fromFunction0(GetX), GetY = js.Any.fromFunction0(GetY))
   
     __obj.asInstanceOf[ASPxClientPoint]
   }

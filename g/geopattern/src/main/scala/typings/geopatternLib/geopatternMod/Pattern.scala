@@ -28,13 +28,13 @@ object Pattern {
   @scala.inline
   def apply(
     color: java.lang.String,
-    toBase64: js.Function0[java.lang.String],
-    toDataUri: js.Function0[java.lang.String],
-    toDataUrl: js.Function0[java.lang.String],
-    toString: js.Function0[java.lang.String],
-    toSvg: js.Function0[java.lang.String]
+    toBase64: () => java.lang.String,
+    toDataUri: () => java.lang.String,
+    toDataUrl: () => java.lang.String,
+    toString: () => java.lang.String,
+    toSvg: () => java.lang.String
   ): Pattern = {
-    val __obj = js.Dynamic.literal(color = color, toBase64 = toBase64, toDataUri = toDataUri, toDataUrl = toDataUrl, toString = toString, toSvg = toSvg)
+    val __obj = js.Dynamic.literal(color = color, toBase64 = js.Any.fromFunction0(toBase64), toDataUri = js.Any.fromFunction0(toDataUri), toDataUrl = js.Any.fromFunction0(toDataUrl), toString = js.Any.fromFunction0(toString), toSvg = js.Any.fromFunction0(toSvg))
   
     __obj.asInstanceOf[Pattern]
   }

@@ -25,24 +25,12 @@ trait KeysResource extends js.Object {
 object KeysResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccountKey]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccountKey]
-    ],
-    list: js.Function1[
-      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyKeyTypes, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListServiceAccountKeysResponse]
-    ]
+    create: gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccountKey],
+    delete: gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotIamLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyName => gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccountKey],
+    list: gapiDotClientDotIamLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyKeyTypes => gapiDotClientLib.gapiNs.clientNs.Request[ListServiceAccountKeysResponse]
   ): KeysResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[KeysResource]
   }

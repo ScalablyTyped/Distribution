@@ -16,19 +16,11 @@ object Plus3C {
     URI: F,
     _L: L,
     _U: U,
-    alt: js.Function2[
-      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
-    ],
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
-    ],
-    zero: js.Function0[fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]]
+    alt: (fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]) => fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any],
+    map: (fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any],
+    zero: () => fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
   ): Plus3C[F, U, L] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], alt = alt, map = map, zero = zero)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], alt = js.Any.fromFunction2(alt), map = js.Any.fromFunction2(map), zero = js.Any.fromFunction0(zero))
   
     __obj.asInstanceOf[Plus3C[F, U, L]]
   }

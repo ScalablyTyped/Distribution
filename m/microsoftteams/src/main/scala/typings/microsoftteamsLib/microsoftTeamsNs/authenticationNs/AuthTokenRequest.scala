@@ -24,12 +24,12 @@ object AuthTokenRequest {
   @scala.inline
   def apply(
     resources: js.Array[java.lang.String],
-    failureCallback: js.Function1[/* reason */ java.lang.String, scala.Unit] = null,
-    successCallback: js.Function1[/* token */ java.lang.String, scala.Unit] = null
+    failureCallback: /* reason */ java.lang.String => scala.Unit = null,
+    successCallback: /* token */ java.lang.String => scala.Unit = null
   ): AuthTokenRequest = {
     val __obj = js.Dynamic.literal(resources = resources)
-    if (failureCallback != null) __obj.updateDynamic("failureCallback")(failureCallback)
-    if (successCallback != null) __obj.updateDynamic("successCallback")(successCallback)
+    if (failureCallback != null) __obj.updateDynamic("failureCallback")(js.Any.fromFunction1(failureCallback))
+    if (successCallback != null) __obj.updateDynamic("successCallback")(js.Any.fromFunction1(successCallback))
     __obj.asInstanceOf[AuthTokenRequest]
   }
 }

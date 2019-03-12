@@ -21,12 +21,12 @@ trait XFetchProvider
 object XFetchProvider {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    fetch: js.Function3[scala.Double, scala.Double, scala.Boolean, FetchResult],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    fetch: (scala.Double, scala.Double, scala.Boolean) => FetchResult,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XFetchProvider = {
-    val __obj = js.Dynamic.literal(acquire = acquire, fetch = fetch, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), fetch = js.Any.fromFunction3(fetch), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XFetchProvider]
   }

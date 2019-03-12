@@ -17,14 +17,14 @@ trait SimpleSignal[F /* <: js.Function */] extends js.Object {
 object SimpleSignal {
   @scala.inline
   def apply[F /* <: js.Function */](
-    add: js.Function1[F, scala.Boolean],
-    dispatch: js.Function1[/* repeated */ js.Any, scala.Unit],
+    add: F => scala.Boolean,
+    dispatch: /* repeated */ js.Any => scala.Unit,
     functions: js.Any,
     numItems: scala.Double,
-    remove: js.Function1[F, scala.Boolean],
-    removeAll: js.Function0[scala.Boolean]
+    remove: F => scala.Boolean,
+    removeAll: () => scala.Boolean
   ): SimpleSignal[F] = {
-    val __obj = js.Dynamic.literal(add = add, dispatch = dispatch, functions = functions, numItems = numItems, remove = remove, removeAll = removeAll)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), dispatch = js.Any.fromFunction1(dispatch), functions = functions, numItems = numItems, remove = js.Any.fromFunction1(remove), removeAll = js.Any.fromFunction0(removeAll))
   
     __obj.asInstanceOf[SimpleSignal[F]]
   }

@@ -22,8 +22,8 @@ object DrawerSectionItem {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     icon: java.lang.String = null,
     label: java.lang.String = null,
-    onLongPress: js.Function0[scala.Unit] = null,
-    onPress: js.Function0[scala.Unit] = null,
+    onLongPress: () => scala.Unit = null,
+    onPress: () => scala.Unit = null,
     value: java.lang.String | reactLib.reactMod.Global.JSXNs.Element = null
   ): DrawerSectionItem = {
     val __obj = js.Dynamic.literal()
@@ -31,8 +31,8 @@ object DrawerSectionItem {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (label != null) __obj.updateDynamic("label")(label)
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction0(onLongPress))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerSectionItem]
   }

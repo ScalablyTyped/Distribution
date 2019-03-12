@@ -28,21 +28,21 @@ object IShellPaneTab {
   def apply(
     Events: IShellPaneTabEvents,
     IsBuiltIn: scala.Boolean,
-    Remove: js.Function0[scala.Unit],
-    Select: js.Function0[scala.Unit],
+    Remove: () => scala.Unit,
+    Select: () => scala.Unit,
     Selected: scala.Boolean,
-    ShowDashboard: js.Function2[java.lang.String, js.Any, scala.Unit],
-    ShowEmptyContent: js.Function0[scala.Unit],
-    ShowFilePreview: js.Function1[java.lang.String, scala.Unit],
-    ShowObjectVersionProperties: js.Function1[IPropertyValuesWithIconClues, scala.Unit],
-    ShowPersistentContent: js.Function1[scala.Double, scala.Unit],
-    ShowSSRSReport: js.Function1[java.lang.String, scala.Unit],
+    ShowDashboard: (java.lang.String, js.Any) => scala.Unit,
+    ShowEmptyContent: () => scala.Unit,
+    ShowFilePreview: java.lang.String => scala.Unit,
+    ShowObjectVersionProperties: IPropertyValuesWithIconClues => scala.Unit,
+    ShowPersistentContent: scala.Double => scala.Unit,
+    ShowSSRSReport: java.lang.String => scala.Unit,
     TabId: java.lang.String,
     Title: java.lang.String,
-    Unselect: js.Function0[scala.Unit],
+    Unselect: () => scala.Unit,
     Visible: scala.Boolean
   ): IShellPaneTab = {
-    val __obj = js.Dynamic.literal(Events = Events, IsBuiltIn = IsBuiltIn, Remove = Remove, Select = Select, Selected = Selected, ShowDashboard = ShowDashboard, ShowEmptyContent = ShowEmptyContent, ShowFilePreview = ShowFilePreview, ShowObjectVersionProperties = ShowObjectVersionProperties, ShowPersistentContent = ShowPersistentContent, ShowSSRSReport = ShowSSRSReport, TabId = TabId, Title = Title, Unselect = Unselect, Visible = Visible)
+    val __obj = js.Dynamic.literal(Events = Events, IsBuiltIn = IsBuiltIn, Remove = js.Any.fromFunction0(Remove), Select = js.Any.fromFunction0(Select), Selected = Selected, ShowDashboard = js.Any.fromFunction2(ShowDashboard), ShowEmptyContent = js.Any.fromFunction0(ShowEmptyContent), ShowFilePreview = js.Any.fromFunction1(ShowFilePreview), ShowObjectVersionProperties = js.Any.fromFunction1(ShowObjectVersionProperties), ShowPersistentContent = js.Any.fromFunction1(ShowPersistentContent), ShowSSRSReport = js.Any.fromFunction1(ShowSSRSReport), TabId = TabId, Title = Title, Unselect = js.Any.fromFunction0(Unselect), Visible = Visible)
   
     __obj.asInstanceOf[IShellPaneTab]
   }

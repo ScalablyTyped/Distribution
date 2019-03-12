@@ -16,12 +16,12 @@ object CheckboxProps {
   def apply(
     `type`: reactDashBootstrapLib.reactDashBootstrapLibStrings.checkbox,
     name: java.lang.String = null,
-    onChange: js.Function1[/* values */ js.Array[_], scala.Unit] = null
+    onChange: /* values */ js.Array[_] => scala.Unit = null
   ): CheckboxProps = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[CheckboxProps]
   }
 }

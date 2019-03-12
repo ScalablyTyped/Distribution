@@ -40,9 +40,9 @@ object Anon_AnimationOptions {
     index: scala.Int | scala.Double = null,
     itemHeight: scala.Double | java.lang.String = null,
     itemWidth: scala.Double | java.lang.String = null,
-    onOverscroll: js.Function0[scala.Unit] = null,
-    onPostChange: js.Function0[scala.Unit] = null,
-    onRefresh: js.Function0[scala.Unit] = null,
+    onOverscroll: () => scala.Unit = null,
+    onPostChange: () => scala.Unit = null,
+    onRefresh: () => scala.Unit = null,
     overscrollable: js.UndefOr[scala.Boolean] = js.undefined,
     swipeable: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AnimationOptions = {
@@ -58,9 +58,9 @@ object Anon_AnimationOptions {
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight.asInstanceOf[js.Any])
     if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
-    if (onOverscroll != null) __obj.updateDynamic("onOverscroll")(onOverscroll)
-    if (onPostChange != null) __obj.updateDynamic("onPostChange")(onPostChange)
-    if (onRefresh != null) __obj.updateDynamic("onRefresh")(onRefresh)
+    if (onOverscroll != null) __obj.updateDynamic("onOverscroll")(js.Any.fromFunction0(onOverscroll))
+    if (onPostChange != null) __obj.updateDynamic("onPostChange")(js.Any.fromFunction0(onPostChange))
+    if (onRefresh != null) __obj.updateDynamic("onRefresh")(js.Any.fromFunction0(onRefresh))
     if (!js.isUndefined(overscrollable)) __obj.updateDynamic("overscrollable")(overscrollable)
     if (!js.isUndefined(swipeable)) __obj.updateDynamic("swipeable")(swipeable)
     __obj.asInstanceOf[Anon_AnimationOptions]

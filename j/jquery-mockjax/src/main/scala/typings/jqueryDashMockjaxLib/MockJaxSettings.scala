@@ -56,7 +56,7 @@ object MockJaxSettings {
     onAfterSuccess: js.Function = null,
     proxy: java.lang.String = null,
     proxyType: java.lang.String = null,
-    response: js.Function2[/* settings */ js.Any, /* done */ js.UndefOr[js.Function], scala.Unit] = null,
+    response: (/* settings */ js.Any, /* done */ js.UndefOr[js.Function]) => scala.Unit = null,
     responseText: java.lang.String | js.Object = null,
     responseTime: scala.Int | scala.Double = null,
     responseXml: java.lang.String = null,
@@ -85,7 +85,7 @@ object MockJaxSettings {
     if (onAfterSuccess != null) __obj.updateDynamic("onAfterSuccess")(onAfterSuccess)
     if (proxy != null) __obj.updateDynamic("proxy")(proxy)
     if (proxyType != null) __obj.updateDynamic("proxyType")(proxyType)
-    if (response != null) __obj.updateDynamic("response")(response)
+    if (response != null) __obj.updateDynamic("response")(js.Any.fromFunction2(response))
     if (responseText != null) __obj.updateDynamic("responseText")(responseText.asInstanceOf[js.Any])
     if (responseTime != null) __obj.updateDynamic("responseTime")(responseTime.asInstanceOf[js.Any])
     if (responseXml != null) __obj.updateDynamic("responseXml")(responseXml)

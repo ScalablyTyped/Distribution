@@ -25,11 +25,11 @@ trait DatePickerProps
   /**
     * An array of date objects which will be disabled in the calendar. All other dates will be enabled.
     */
-  var disabledDates: js.UndefOr[coreDashJsLib.Array[coreDashJsLib.Date]] = js.undefined
+  var disabledDates: js.UndefOr[js.Array[stdLib.Date]] = js.undefined
   /**
     * An array of date objects which will be enabled in the calendar. All other dates will be disabled.
     */
-  var enabledDates: js.UndefOr[coreDashJsLib.Array[coreDashJsLib.Date]] = js.undefined
+  var enabledDates: js.UndefOr[js.Array[stdLib.Date]] = js.undefined
   /**
     * Give an error node to display under the field.
     */
@@ -45,7 +45,7 @@ trait DatePickerProps
   /**
     * Function to format the date displayed on the input.
     */
-  var inputFormat: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var inputFormat: js.UndefOr[js.Function] = js.undefined
   /**
     * The text string to use for the floating label element in the input component.
     */
@@ -60,11 +60,11 @@ trait DatePickerProps
   /**
     * Date object with the maximum selectable date.
     */
-  var maxDate: js.UndefOr[coreDashJsLib.Date] = js.undefined
+  var maxDate: js.UndefOr[stdLib.Date] = js.undefined
   /**
     * Date object with the minimum selectable date.
     */
-  var minDate: js.UndefOr[coreDashJsLib.Date] = js.undefined
+  var minDate: js.UndefOr[stdLib.Date] = js.undefined
   /**
     * Name for the input field.
     */
@@ -77,23 +77,23 @@ trait DatePickerProps
   /**
     * Callback called when the picker value is changed.
     */
-  var onChange: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onChange: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback fired after dismissing the Dialog.
     */
-  var onDismiss: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onDismiss: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback called when the ESC key is pressed with the overlay active.
     */
-  var onEscKeyDown: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onEscKeyDown: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback invoked on Input key press.
     */
-  var onKeyPress: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onKeyPress: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback to be invoked when the dialog overlay is clicked.
     */
-  var onOverlayClick: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onOverlayClick: js.UndefOr[js.Function] = js.undefined
   /**
     * The input element will be readonly and look like disabled.
     */
@@ -114,7 +114,7 @@ trait DatePickerProps
   /**
     * Date object with the currently selected date.
     */
-  var value: js.UndefOr[coreDashJsLib.Date | java.lang.String] = js.undefined
+  var value: js.UndefOr[stdLib.Date | java.lang.String] = js.undefined
 }
 
 object DatePickerProps {
@@ -124,52 +124,52 @@ object DatePickerProps {
     autoOk: js.UndefOr[scala.Boolean] = js.undefined,
     cancelLabel: java.lang.String = null,
     className: java.lang.String = null,
-    disabledDates: coreDashJsLib.Array[coreDashJsLib.Date] = null,
-    enabledDates: coreDashJsLib.Array[coreDashJsLib.Date] = null,
+    disabledDates: js.Array[stdLib.Date] = null,
+    enabledDates: js.Array[stdLib.Date] = null,
     error: java.lang.String = null,
     icon: reactLib.reactMod.ReactNs.ReactNode = null,
     inputClassName: java.lang.String = null,
-    inputFormat: coreDashJsLib.Function = null,
+    inputFormat: js.Function = null,
     key: reactLib.reactMod.ReactNs.Key = null,
     label: java.lang.String = null,
     locale: reactDashToolboxLib.reactDashToolboxLibStrings.de | reactDashToolboxLib.reactDashToolboxLibStrings.no | reactDashToolboxLib.reactDashToolboxLibStrings.en | reactDashToolboxLib.reactDashToolboxLibStrings.es | reactDashToolboxLib.reactDashToolboxLibStrings.af | reactDashToolboxLib.reactDashToolboxLibStrings.ar | reactDashToolboxLib.reactDashToolboxLibStrings.be | reactDashToolboxLib.reactDashToolboxLibStrings.bg | reactDashToolboxLib.reactDashToolboxLibStrings.bn | reactDashToolboxLib.reactDashToolboxLibStrings.bo | reactDashToolboxLib.reactDashToolboxLibStrings.br | reactDashToolboxLib.reactDashToolboxLibStrings.bs | reactDashToolboxLib.reactDashToolboxLibStrings.ca | reactDashToolboxLib.reactDashToolboxLibStrings.gl | reactDashToolboxLib.reactDashToolboxLibStrings.eu | reactDashToolboxLib.reactDashToolboxLibStrings.pt | reactDashToolboxLib.reactDashToolboxLibStrings.it | reactDashToolboxLib.reactDashToolboxLibStrings.fr | reactDashToolboxLib.reactDashToolboxLibStrings.ru | reactDashToolboxLib.reactDashToolboxLibStrings.ua | reactDashToolboxLib.reactDashToolboxLibStrings.`zh-cn` | reactDashToolboxLib.reactDashToolboxLibStrings.`zh-hk` | reactDashToolboxLib.reactDashToolboxLibStrings.`zh-tw` | DatePickerLocale = null,
-    maxDate: coreDashJsLib.Date = null,
-    minDate: coreDashJsLib.Date = null,
+    maxDate: stdLib.Date = null,
+    minDate: stdLib.Date = null,
     name: java.lang.String = null,
     okLabel: java.lang.String = null,
-    onChange: coreDashJsLib.Function = null,
-    onClick: coreDashJsLib.Function = null,
-    onContextMenu: coreDashJsLib.Function = null,
-    onDismiss: coreDashJsLib.Function = null,
-    onDoubleClick: coreDashJsLib.Function = null,
-    onDrag: coreDashJsLib.Function = null,
-    onDragEnd: coreDashJsLib.Function = null,
-    onDragEnter: coreDashJsLib.Function = null,
-    onDragExit: coreDashJsLib.Function = null,
-    onDragLeave: coreDashJsLib.Function = null,
-    onDragOver: coreDashJsLib.Function = null,
-    onDragStart: coreDashJsLib.Function = null,
-    onDrop: coreDashJsLib.Function = null,
-    onEscKeyDown: coreDashJsLib.Function = null,
-    onKeyPress: coreDashJsLib.Function = null,
-    onMouseDown: coreDashJsLib.Function = null,
-    onMouseEnter: coreDashJsLib.Function = null,
-    onMouseLeave: coreDashJsLib.Function = null,
-    onMouseMove: coreDashJsLib.Function = null,
-    onMouseOut: coreDashJsLib.Function = null,
-    onMouseOver: coreDashJsLib.Function = null,
-    onMouseUp: coreDashJsLib.Function = null,
-    onOverlayClick: coreDashJsLib.Function = null,
-    onTouchCancel: coreDashJsLib.Function = null,
-    onTouchEnd: coreDashJsLib.Function = null,
-    onTouchMove: coreDashJsLib.Function = null,
-    onTouchStart: coreDashJsLib.Function = null,
+    onChange: js.Function = null,
+    onClick: js.Function = null,
+    onContextMenu: js.Function = null,
+    onDismiss: js.Function = null,
+    onDoubleClick: js.Function = null,
+    onDrag: js.Function = null,
+    onDragEnd: js.Function = null,
+    onDragEnter: js.Function = null,
+    onDragExit: js.Function = null,
+    onDragLeave: js.Function = null,
+    onDragOver: js.Function = null,
+    onDragStart: js.Function = null,
+    onDrop: js.Function = null,
+    onEscKeyDown: js.Function = null,
+    onKeyPress: js.Function = null,
+    onMouseDown: js.Function = null,
+    onMouseEnter: js.Function = null,
+    onMouseLeave: js.Function = null,
+    onMouseMove: js.Function = null,
+    onMouseOut: js.Function = null,
+    onMouseOver: js.Function = null,
+    onMouseUp: js.Function = null,
+    onOverlayClick: js.Function = null,
+    onTouchCancel: js.Function = null,
+    onTouchEnd: js.Function = null,
+    onTouchMove: js.Function = null,
+    onTouchStart: js.Function = null,
     readonly: js.UndefOr[scala.Boolean] = js.undefined,
     required: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     sundayFirstDayOfWeek: js.UndefOr[scala.Boolean] = js.undefined,
     theme: DatePickerTheme = null,
-    value: coreDashJsLib.Date | java.lang.String = null
+    value: stdLib.Date | java.lang.String = null
   ): DatePickerProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)

@@ -15,12 +15,12 @@ trait Anon_FlipX extends js.Object {
 object Anon_FlipX {
   @scala.inline
   def apply(
-    flipX: js.Function0[seenLib.seenMod.Matrix],
-    flipY: js.Function0[seenLib.seenMod.Matrix],
-    flipZ: js.Function0[seenLib.seenMod.Matrix],
-    identity: js.Function0[seenLib.seenMod.Matrix]
+    flipX: () => seenLib.seenMod.Matrix,
+    flipY: () => seenLib.seenMod.Matrix,
+    flipZ: () => seenLib.seenMod.Matrix,
+    identity: () => seenLib.seenMod.Matrix
   ): Anon_FlipX = {
-    val __obj = js.Dynamic.literal(flipX = flipX, flipY = flipY, flipZ = flipZ, identity = identity)
+    val __obj = js.Dynamic.literal(flipX = js.Any.fromFunction0(flipX), flipY = js.Any.fromFunction0(flipY), flipZ = js.Any.fromFunction0(flipZ), identity = js.Any.fromFunction0(identity))
   
     __obj.asInstanceOf[Anon_FlipX]
   }

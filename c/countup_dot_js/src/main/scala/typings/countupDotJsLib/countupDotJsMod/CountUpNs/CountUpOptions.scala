@@ -63,14 +63,8 @@ object CountUpOptions {
   @scala.inline
   def apply(
     decimal: java.lang.String = null,
-    easingFn: js.Function4[
-      /* t */ scala.Double, 
-      /* b */ scala.Double, 
-      /* c */ scala.Double, 
-      /* d */ scala.Double, 
-      scala.Double
-    ] = null,
-    formattingFn: js.Function1[/* num */ scala.Double, java.lang.String] = null,
+    easingFn: (/* t */ scala.Double, /* b */ scala.Double, /* c */ scala.Double, /* d */ scala.Double) => scala.Double = null,
+    formattingFn: /* num */ scala.Double => java.lang.String = null,
     numerals: js.Array[_] = null,
     prefix: java.lang.String = null,
     separator: java.lang.String = null,
@@ -80,8 +74,8 @@ object CountUpOptions {
   ): CountUpOptions = {
     val __obj = js.Dynamic.literal()
     if (decimal != null) __obj.updateDynamic("decimal")(decimal)
-    if (easingFn != null) __obj.updateDynamic("easingFn")(easingFn)
-    if (formattingFn != null) __obj.updateDynamic("formattingFn")(formattingFn)
+    if (easingFn != null) __obj.updateDynamic("easingFn")(js.Any.fromFunction4(easingFn))
+    if (formattingFn != null) __obj.updateDynamic("formattingFn")(js.Any.fromFunction1(formattingFn))
     if (numerals != null) __obj.updateDynamic("numerals")(numerals)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (separator != null) __obj.updateDynamic("separator")(separator)

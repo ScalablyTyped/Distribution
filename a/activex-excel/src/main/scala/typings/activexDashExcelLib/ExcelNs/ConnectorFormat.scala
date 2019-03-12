@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.ConnectorFormat")
 @js.native
 class ConnectorFormat protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val BeginConnected: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   val BeginConnectedShape: Shape = js.native
   val BeginConnectionSite: scala.Double = js.native

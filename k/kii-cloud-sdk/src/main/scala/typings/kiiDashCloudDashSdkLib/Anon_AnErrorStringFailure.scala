@@ -16,14 +16,10 @@ trait Anon_AnErrorStringFailure extends js.Object {
 object Anon_AnErrorStringFailure {
   @scala.inline
   def apply(
-    failure: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiACL, java.lang.String, js.Any],
-    success: js.Function2[
-      kiiDashCloudDashSdkLib.KiiCloudNs.KiiACL, 
-      js.Array[kiiDashCloudDashSdkLib.KiiCloudNs.KiiACLEntry], 
-      js.Any
-    ]
+    failure: (kiiDashCloudDashSdkLib.KiiCloudNs.KiiACL, java.lang.String) => js.Any,
+    success: (kiiDashCloudDashSdkLib.KiiCloudNs.KiiACL, js.Array[kiiDashCloudDashSdkLib.KiiCloudNs.KiiACLEntry]) => js.Any
   ): Anon_AnErrorStringFailure = {
-    val __obj = js.Dynamic.literal(failure = failure, success = success)
+    val __obj = js.Dynamic.literal(failure = js.Any.fromFunction2(failure), success = js.Any.fromFunction2(success))
   
     __obj.asInstanceOf[Anon_AnErrorStringFailure]
   }

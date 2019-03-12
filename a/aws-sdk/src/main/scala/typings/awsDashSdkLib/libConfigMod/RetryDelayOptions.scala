@@ -22,11 +22,11 @@ object RetryDelayOptions {
   @scala.inline
   def apply(
     base: scala.Int | scala.Double = null,
-    customBackoff: js.Function1[/* retryCount */ scala.Double, scala.Double] = null
+    customBackoff: /* retryCount */ scala.Double => scala.Double = null
   ): RetryDelayOptions = {
     val __obj = js.Dynamic.literal()
     if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (customBackoff != null) __obj.updateDynamic("customBackoff")(customBackoff)
+    if (customBackoff != null) __obj.updateDynamic("customBackoff")(js.Any.fromFunction1(customBackoff))
     __obj.asInstanceOf[RetryDelayOptions]
   }
 }

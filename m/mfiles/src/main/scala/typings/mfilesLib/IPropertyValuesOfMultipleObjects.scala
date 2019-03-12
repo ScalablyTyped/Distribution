@@ -14,11 +14,11 @@ trait IPropertyValuesOfMultipleObjects extends js.Object {
 object IPropertyValuesOfMultipleObjects {
   @scala.inline
   def apply(
-    Clone: js.Function0[IPropertyValuesOfMultipleObjects],
+    Clone: () => IPropertyValuesOfMultipleObjects,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IPropertyValues]
+    Item: scala.Double => IPropertyValues
   ): IPropertyValuesOfMultipleObjects = {
-    val __obj = js.Dynamic.literal(Clone = Clone, Count = Count, Item = Item)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Count = Count, Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[IPropertyValuesOfMultipleObjects]
   }

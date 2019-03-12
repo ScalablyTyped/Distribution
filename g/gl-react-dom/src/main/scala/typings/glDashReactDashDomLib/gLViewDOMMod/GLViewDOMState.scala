@@ -1,0 +1,20 @@
+package typings
+package glDashReactDashDomLib.gLViewDOMMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait GLViewDOMState extends js.Object {
+  var error: stdLib.Error
+}
+
+object GLViewDOMState {
+  @scala.inline
+  def apply(error: stdLib.Error): GLViewDOMState = {
+    val __obj = js.Dynamic.literal(error = error)
+  
+    __obj.asInstanceOf[GLViewDOMState]
+  }
+}
+

@@ -73,13 +73,7 @@ object Anon_CacheFile {
     postprocess: Anon_Css = null,
     preprocess: Anon_CssImportPaths = null,
     render: Anon_Compress = null,
-    storeCss: js.Function4[
-      /* pathname */ java.lang.String, 
-      /* css */ java.lang.String, 
-      /* req */ expressLib.expressMod.eNs.Request, 
-      /* next */ js.Function, 
-      scala.Unit
-    ] = null
+    storeCss: (/* pathname */ java.lang.String, /* css */ java.lang.String, /* req */ expressLib.expressMod.eNs.Request, /* next */ js.Function) => scala.Unit = null
   ): Anon_CacheFile = {
     val __obj = js.Dynamic.literal()
     if (cacheFile != null) __obj.updateDynamic("cacheFile")(cacheFile)
@@ -91,7 +85,7 @@ object Anon_CacheFile {
     if (postprocess != null) __obj.updateDynamic("postprocess")(postprocess)
     if (preprocess != null) __obj.updateDynamic("preprocess")(preprocess)
     if (render != null) __obj.updateDynamic("render")(render)
-    if (storeCss != null) __obj.updateDynamic("storeCss")(storeCss)
+    if (storeCss != null) __obj.updateDynamic("storeCss")(js.Any.fromFunction4(storeCss))
     __obj.asInstanceOf[Anon_CacheFile]
   }
 }

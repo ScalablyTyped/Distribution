@@ -16,11 +16,11 @@ object CertificateSet {
   @scala.inline
   def apply(
     certificates: js.Array[pkijsLib.srcCertificateMod.default],
-    fromSchema: js.Function1[js.Any, scala.Unit],
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    fromSchema: js.Any => scala.Unit,
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): CertificateSet = {
-    val __obj = js.Dynamic.literal(certificates = certificates, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(certificates = certificates, fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[CertificateSet]
   }

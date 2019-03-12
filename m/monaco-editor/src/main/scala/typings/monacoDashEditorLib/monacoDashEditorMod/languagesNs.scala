@@ -1516,8 +1516,8 @@ object languagesNs extends js.Object {
     @js.native
     trait LanguageServiceDefaults extends js.Object {
       val diagnosticsOptions: DiagnosticsOptions = js.native
-      def onDidChange(listener: js.Function1[/* e */ this.type, _]): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
-      def onDidChange(listener: js.Function1[/* e */ this.type, _], thisArg: js.Any): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
+      def onDidChange(listener: js.Function1[/* e */ LanguageServiceDefaults, _]): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
+      def onDidChange(listener: js.Function1[/* e */ LanguageServiceDefaults, _], thisArg: js.Any): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
       def setDiagnosticsOptions(options: DiagnosticsOptions): scala.Unit = js.native
     }
     
@@ -1550,8 +1550,8 @@ object languagesNs extends js.Object {
     @js.native
     trait LanguageServiceDefaults extends js.Object {
       val options: Options = js.native
-      def onDidChange(listener: js.Function1[/* e */ this.type, _]): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
-      def onDidChange(listener: js.Function1[/* e */ this.type, _], thisArg: js.Any): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
+      def onDidChange(listener: js.Function1[/* e */ LanguageServiceDefaults, _]): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
+      def onDidChange(listener: js.Function1[/* e */ LanguageServiceDefaults, _], thisArg: js.Any): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
       def setOptions(options: Options): scala.Unit = js.native
     }
     
@@ -1596,8 +1596,8 @@ object languagesNs extends js.Object {
     @js.native
     trait LanguageServiceDefaults extends js.Object {
       val diagnosticsOptions: DiagnosticsOptions = js.native
-      def onDidChange(listener: js.Function1[/* e */ this.type, _]): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
-      def onDidChange(listener: js.Function1[/* e */ this.type, _], thisArg: js.Any): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
+      def onDidChange(listener: js.Function1[/* e */ LanguageServiceDefaults, _]): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
+      def onDidChange(listener: js.Function1[/* e */ LanguageServiceDefaults, _], thisArg: js.Any): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
       def setDiagnosticsOptions(options: DiagnosticsOptions): scala.Unit = js.native
     }
     

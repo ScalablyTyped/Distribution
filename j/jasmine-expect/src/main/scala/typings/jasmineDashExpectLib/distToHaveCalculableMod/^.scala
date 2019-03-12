@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jasmine-expect/dist/toHaveCalculable", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val toHaveCalculable: jasmineDashExpectLib.distToHaveCalculableMod.ToHaveCalculable = js.native
+  val toHaveCalculable: ToHaveCalculable = js.native
 }
 

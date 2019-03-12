@@ -50,16 +50,16 @@ trait GeoPolygonFilter extends js.Object {
 object GeoPolygonFilter {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cache: js.Function1[scala.Boolean, GeoPolygonFilter],
-    cacheKey: js.Function1[java.lang.String, GeoPolygonFilter],
-    field: js.Function1[java.lang.String, GeoPolygonFilter],
-    name: js.Function1[java.lang.String, GeoPolygonFilter],
-    normalize: js.Function1[java.lang.String, GeoPolygonFilter],
-    points: js.Function1[js.Array[_], GeoPolygonFilter],
-    toJSON: js.Function0[GeoPolygonFilter]
+    _type: () => java.lang.String,
+    cache: scala.Boolean => GeoPolygonFilter,
+    cacheKey: java.lang.String => GeoPolygonFilter,
+    field: java.lang.String => GeoPolygonFilter,
+    name: java.lang.String => GeoPolygonFilter,
+    normalize: java.lang.String => GeoPolygonFilter,
+    points: js.Array[_] => GeoPolygonFilter,
+    toJSON: () => GeoPolygonFilter
   ): GeoPolygonFilter = {
-    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, field = field, name = name, normalize = normalize, points = points, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), field = js.Any.fromFunction1(field), name = js.Any.fromFunction1(name), normalize = js.Any.fromFunction1(normalize), points = js.Any.fromFunction1(points), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[GeoPolygonFilter]
   }

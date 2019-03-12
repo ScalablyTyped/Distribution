@@ -29,28 +29,11 @@ trait ISecondaryTileFactory extends js.Object {
 object ISecondaryTileFactory {
   @scala.inline
   def apply(
-    createTile: js.Function6[
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      TileOptions, 
-      winrtLib.WindowsNs.FoundationNs.Uri, 
-      SecondaryTile
-    ],
-    createWideTile: js.Function7[
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      TileOptions, 
-      winrtLib.WindowsNs.FoundationNs.Uri, 
-      winrtLib.WindowsNs.FoundationNs.Uri, 
-      SecondaryTile
-    ],
-    createWithId: js.Function1[java.lang.String, SecondaryTile]
+    createTile: (java.lang.String, java.lang.String, java.lang.String, java.lang.String, TileOptions, winrtLib.WindowsNs.FoundationNs.Uri) => SecondaryTile,
+    createWideTile: (java.lang.String, java.lang.String, java.lang.String, java.lang.String, TileOptions, winrtLib.WindowsNs.FoundationNs.Uri, winrtLib.WindowsNs.FoundationNs.Uri) => SecondaryTile,
+    createWithId: java.lang.String => SecondaryTile
   ): ISecondaryTileFactory = {
-    val __obj = js.Dynamic.literal(createTile = createTile, createWideTile = createWideTile, createWithId = createWithId)
+    val __obj = js.Dynamic.literal(createTile = js.Any.fromFunction6(createTile), createWideTile = js.Any.fromFunction7(createWideTile), createWithId = js.Any.fromFunction1(createWithId))
   
     __obj.asInstanceOf[ISecondaryTileFactory]
   }

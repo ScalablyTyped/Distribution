@@ -48,15 +48,15 @@ object XSubToolbarController {
   @scala.inline
   def apply(
     SubToolbarName: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    functionSelected: js.Function1[java.lang.String, scala.Unit],
-    getSubToolbarName: js.Function0[java.lang.String],
-    opensSubToolbar: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    updateImage: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    functionSelected: java.lang.String => scala.Unit,
+    getSubToolbarName: () => java.lang.String,
+    opensSubToolbar: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    updateImage: () => scala.Unit
   ): XSubToolbarController = {
-    val __obj = js.Dynamic.literal(SubToolbarName = SubToolbarName, acquire = acquire, functionSelected = functionSelected, getSubToolbarName = getSubToolbarName, opensSubToolbar = opensSubToolbar, queryInterface = queryInterface, release = release, updateImage = updateImage)
+    val __obj = js.Dynamic.literal(SubToolbarName = SubToolbarName, acquire = js.Any.fromFunction0(acquire), functionSelected = js.Any.fromFunction1(functionSelected), getSubToolbarName = js.Any.fromFunction0(getSubToolbarName), opensSubToolbar = js.Any.fromFunction0(opensSubToolbar), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), updateImage = js.Any.fromFunction0(updateImage))
   
     __obj.asInstanceOf[XSubToolbarController]
   }

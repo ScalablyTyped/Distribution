@@ -29,7 +29,7 @@ trait XReportDefinition
   /** specifies the active connection which is used to create the resulting report. */
   var ActiveConnection: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection
   /** returns a sequence of the currently supported output formats. */
-  val AvailableMimeTypes: activexDashInteropLib.SafeArray[java.lang.String]
+  val AvailableMimeTypes: stdLib.SafeArray[java.lang.String]
   /** Represents the title of the report in print preview. */
   var Caption: java.lang.String
   /**
@@ -140,7 +140,7 @@ trait XReportDefinition
   /** Defines that the report header is on. Default is `FALSE` . */
   var ReportHeaderOn: scala.Boolean
   /** returns a sequence of the currently supported output formats. */
-  def getAvailableMimeTypes(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getAvailableMimeTypes(): stdLib.SafeArray[java.lang.String]
   /**
     * makes it possible to register listeners which are called whenever a document event occurs. This is a workaround due to the fact that this interface
     * can not be directly inherited from {@link com.sun.star.document.XEventBroadcaster} because the methods addEventListener and removeEventListener are
@@ -154,8 +154,8 @@ object XReportDefinition {
   @scala.inline
   def apply(
     ActiveConnection: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
-    Args: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
-    AvailableMimeTypes: activexDashInteropLib.SafeArray[java.lang.String],
+    Args: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    AvailableMimeTypes: stdLib.SafeArray[java.lang.String],
     Caption: java.lang.String,
     Command: java.lang.String,
     CommandType: scala.Double,
@@ -165,9 +165,9 @@ object XReportDefinition {
     CurrentSelection: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     DataSourceName: java.lang.String,
     Detail: XSection,
-    DetailFields: activexDashInteropLib.SafeArray[java.lang.String],
+    DetailFields: stdLib.SafeArray[java.lang.String],
     DocumentStorage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage,
-    DocumentSubStoragesNames: activexDashInteropLib.SafeArray[java.lang.String],
+    DocumentSubStoragesNames: stdLib.SafeArray[java.lang.String],
     EscapeProcessing: scala.Boolean,
     EventBroadcaster: activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventBroadcaster,
     Filter: java.lang.String,
@@ -175,7 +175,7 @@ object XReportDefinition {
     GroupKeepTogether: scala.Double,
     Groups: XGroups,
     Height: scala.Double,
-    MasterFields: activexDashInteropLib.SafeArray[java.lang.String],
+    MasterFields: stdLib.SafeArray[java.lang.String],
     MimeType: java.lang.String,
     Name: java.lang.String,
     PageFooter: XSection,
@@ -202,116 +202,70 @@ object XReportDefinition {
     URL: java.lang.String,
     ViewData: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
     Width: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addCloseListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseListener, scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    addModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
-    addPropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    addStorageChangeListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XStorageChangeListener, 
-      scala.Unit
-    ],
-    addVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    attachResource: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Boolean
-    ],
-    close: js.Function1[scala.Boolean, scala.Unit],
-    connectController: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, scala.Unit],
-    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
-    disableSetModified: js.Function0[scala.Boolean],
-    disconnectController: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    enableSetModified: js.Function0[scala.Boolean],
-    getArgs: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    getAvailableMimeTypes: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getCurrentController: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController],
-    getCurrentSelection: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    getDocumentStorage: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage],
-    getDocumentSubStorage: js.Function2[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage
-    ],
-    getDocumentSubStoragesNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getEventBroadcaster: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventBroadcaster],
-    getMapUnit: js.Function1[scala.Double, scala.Double],
-    getParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    getPosition: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point],
-    getPreferredVisualRepresentation: js.Function1[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.VisualRepresentation
-    ],
-    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
-    getPropertyValue: js.Function1[java.lang.String, js.Any],
-    getShapeType: js.Function0[java.lang.String],
-    getSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
-    getStyleFamilies: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    getUIConfigurationManager: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XUIConfigurationManager],
-    getURL: js.Function0[java.lang.String],
-    getViewData: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
-    getVisualAreaSize: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
-    hasControllersLocked: js.Function0[scala.Boolean],
-    initNew: js.Function0[scala.Unit],
-    isModified: js.Function0[scala.Boolean],
-    isSetModifiedEnabled: js.Function0[scala.Boolean],
-    load: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    loadFromStorage: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    lockControllers: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeCloseListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseListener, scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    removeModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
-    removePropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    removeStorageChangeListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XStorageChangeListener, 
-      scala.Unit
-    ],
-    removeVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    setCurrentController: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, scala.Unit],
-    setModified: js.Function1[scala.Boolean, scala.Unit],
-    setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
-    setPosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Unit],
-    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
-    setSize: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit],
-    setViewData: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, scala.Unit],
-    setVisualAreaSize: js.Function2[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit],
-    storeToStorage: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    switchToStorage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, scala.Unit],
-    unlockControllers: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addCloseListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseListener => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    addModifyListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener => scala.Unit,
+    addPropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    addStorageChangeListener: activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XStorageChangeListener => scala.Unit,
+    addVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    attachResource: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Boolean,
+    close: scala.Boolean => scala.Unit,
+    connectController: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController => scala.Unit,
+    createClone: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable,
+    disableSetModified: () => scala.Boolean,
+    disconnectController: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController => scala.Unit,
+    dispose: () => scala.Unit,
+    enableSetModified: () => scala.Boolean,
+    getArgs: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    getAvailableMimeTypes: () => stdLib.SafeArray[java.lang.String],
+    getCurrentController: () => activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController,
+    getCurrentSelection: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getDocumentStorage: () => activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage,
+    getDocumentSubStorage: (java.lang.String, scala.Double) => activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage,
+    getDocumentSubStoragesNames: () => stdLib.SafeArray[java.lang.String],
+    getEventBroadcaster: () => activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventBroadcaster,
+    getMapUnit: scala.Double => scala.Double,
+    getParent: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getPosition: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    getPreferredVisualRepresentation: scala.Double => activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.VisualRepresentation,
+    getPropertySetInfo: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    getPropertyValue: java.lang.String => js.Any,
+    getShapeType: () => java.lang.String,
+    getSize: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    getStyleFamilies: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    getUIConfigurationManager: () => activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XUIConfigurationManager,
+    getURL: () => java.lang.String,
+    getViewData: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    getVisualAreaSize: scala.Double => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    hasControllersLocked: () => scala.Boolean,
+    initNew: () => scala.Unit,
+    isModified: () => scala.Boolean,
+    isSetModifiedEnabled: () => scala.Boolean,
+    load: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] => scala.Unit,
+    loadFromStorage: (activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    lockControllers: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeCloseListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseListener => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    removeModifyListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener => scala.Unit,
+    removePropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    removeStorageChangeListener: activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XStorageChangeListener => scala.Unit,
+    removeVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    setCurrentController: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController => scala.Unit,
+    setModified: scala.Boolean => scala.Unit,
+    setParent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => scala.Unit,
+    setPosition: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point => scala.Unit,
+    setPropertyValue: (java.lang.String, js.Any) => scala.Unit,
+    setSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size => scala.Unit,
+    setViewData: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess => scala.Unit,
+    setVisualAreaSize: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size) => scala.Unit,
+    storeToStorage: (activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    switchToStorage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage => scala.Unit,
+    unlockControllers: () => scala.Unit
   ): XReportDefinition = {
-    val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection, Args = Args, AvailableMimeTypes = AvailableMimeTypes, Caption = Caption, Command = Command, CommandType = CommandType, ControlBorder = ControlBorder, ControlBorderColor = ControlBorderColor, CurrentController = CurrentController, CurrentSelection = CurrentSelection, DataSourceName = DataSourceName, Detail = Detail, DetailFields = DetailFields, DocumentStorage = DocumentStorage, DocumentSubStoragesNames = DocumentSubStoragesNames, EscapeProcessing = EscapeProcessing, EventBroadcaster = EventBroadcaster, Filter = Filter, Functions = Functions, GroupKeepTogether = GroupKeepTogether, Groups = Groups, Height = Height, MasterFields = MasterFields, MimeType = MimeType, Name = Name, PageFooter = PageFooter, PageFooterOn = PageFooterOn, PageFooterOption = PageFooterOption, PageHeader = PageHeader, PageHeaderOn = PageHeaderOn, PageHeaderOption = PageHeaderOption, Parent = Parent, Position = Position, PositionX = PositionX, PositionY = PositionY, PrintRepeatedValues = PrintRepeatedValues, PropertySetInfo = PropertySetInfo, ReportFooter = ReportFooter, ReportFooterOn = ReportFooterOn, ReportHeader = ReportHeader, ReportHeaderOn = ReportHeaderOn, Section = Section, ShapeType = ShapeType, Size = Size, StyleFamilies = StyleFamilies, UIConfigurationManager = UIConfigurationManager, URL = URL, ViewData = ViewData, Width = Width, acquire = acquire, addCloseListener = addCloseListener, addEventListener = addEventListener, addModifyListener = addModifyListener, addPropertyChangeListener = addPropertyChangeListener, addStorageChangeListener = addStorageChangeListener, addVetoableChangeListener = addVetoableChangeListener, attachResource = attachResource, close = close, connectController = connectController, createClone = createClone, disableSetModified = disableSetModified, disconnectController = disconnectController, dispose = dispose, enableSetModified = enableSetModified, getArgs = getArgs, getAvailableMimeTypes = getAvailableMimeTypes, getCurrentController = getCurrentController, getCurrentSelection = getCurrentSelection, getDocumentStorage = getDocumentStorage, getDocumentSubStorage = getDocumentSubStorage, getDocumentSubStoragesNames = getDocumentSubStoragesNames, getEventBroadcaster = getEventBroadcaster, getMapUnit = getMapUnit, getParent = getParent, getPosition = getPosition, getPreferredVisualRepresentation = getPreferredVisualRepresentation, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getShapeType = getShapeType, getSize = getSize, getStyleFamilies = getStyleFamilies, getUIConfigurationManager = getUIConfigurationManager, getURL = getURL, getViewData = getViewData, getVisualAreaSize = getVisualAreaSize, hasControllersLocked = hasControllersLocked, initNew = initNew, isModified = isModified, isSetModifiedEnabled = isSetModifiedEnabled, load = load, loadFromStorage = loadFromStorage, lockControllers = lockControllers, queryInterface = queryInterface, release = release, removeCloseListener = removeCloseListener, removeEventListener = removeEventListener, removeModifyListener = removeModifyListener, removePropertyChangeListener = removePropertyChangeListener, removeStorageChangeListener = removeStorageChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setCurrentController = setCurrentController, setModified = setModified, setParent = setParent, setPosition = setPosition, setPropertyValue = setPropertyValue, setSize = setSize, setViewData = setViewData, setVisualAreaSize = setVisualAreaSize, storeToStorage = storeToStorage, switchToStorage = switchToStorage, unlockControllers = unlockControllers)
+    val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection, Args = Args, AvailableMimeTypes = AvailableMimeTypes, Caption = Caption, Command = Command, CommandType = CommandType, ControlBorder = ControlBorder, ControlBorderColor = ControlBorderColor, CurrentController = CurrentController, CurrentSelection = CurrentSelection, DataSourceName = DataSourceName, Detail = Detail, DetailFields = DetailFields, DocumentStorage = DocumentStorage, DocumentSubStoragesNames = DocumentSubStoragesNames, EscapeProcessing = EscapeProcessing, EventBroadcaster = EventBroadcaster, Filter = Filter, Functions = Functions, GroupKeepTogether = GroupKeepTogether, Groups = Groups, Height = Height, MasterFields = MasterFields, MimeType = MimeType, Name = Name, PageFooter = PageFooter, PageFooterOn = PageFooterOn, PageFooterOption = PageFooterOption, PageHeader = PageHeader, PageHeaderOn = PageHeaderOn, PageHeaderOption = PageHeaderOption, Parent = Parent, Position = Position, PositionX = PositionX, PositionY = PositionY, PrintRepeatedValues = PrintRepeatedValues, PropertySetInfo = PropertySetInfo, ReportFooter = ReportFooter, ReportFooterOn = ReportFooterOn, ReportHeader = ReportHeader, ReportHeaderOn = ReportHeaderOn, Section = Section, ShapeType = ShapeType, Size = Size, StyleFamilies = StyleFamilies, UIConfigurationManager = UIConfigurationManager, URL = URL, ViewData = ViewData, Width = Width, acquire = js.Any.fromFunction0(acquire), addCloseListener = js.Any.fromFunction1(addCloseListener), addEventListener = js.Any.fromFunction1(addEventListener), addModifyListener = js.Any.fromFunction1(addModifyListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addStorageChangeListener = js.Any.fromFunction1(addStorageChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), attachResource = js.Any.fromFunction2(attachResource), close = js.Any.fromFunction1(close), connectController = js.Any.fromFunction1(connectController), createClone = js.Any.fromFunction0(createClone), disableSetModified = js.Any.fromFunction0(disableSetModified), disconnectController = js.Any.fromFunction1(disconnectController), dispose = js.Any.fromFunction0(dispose), enableSetModified = js.Any.fromFunction0(enableSetModified), getArgs = js.Any.fromFunction0(getArgs), getAvailableMimeTypes = js.Any.fromFunction0(getAvailableMimeTypes), getCurrentController = js.Any.fromFunction0(getCurrentController), getCurrentSelection = js.Any.fromFunction0(getCurrentSelection), getDocumentStorage = js.Any.fromFunction0(getDocumentStorage), getDocumentSubStorage = js.Any.fromFunction2(getDocumentSubStorage), getDocumentSubStoragesNames = js.Any.fromFunction0(getDocumentSubStoragesNames), getEventBroadcaster = js.Any.fromFunction0(getEventBroadcaster), getMapUnit = js.Any.fromFunction1(getMapUnit), getParent = js.Any.fromFunction0(getParent), getPosition = js.Any.fromFunction0(getPosition), getPreferredVisualRepresentation = js.Any.fromFunction1(getPreferredVisualRepresentation), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getShapeType = js.Any.fromFunction0(getShapeType), getSize = js.Any.fromFunction0(getSize), getStyleFamilies = js.Any.fromFunction0(getStyleFamilies), getUIConfigurationManager = js.Any.fromFunction0(getUIConfigurationManager), getURL = js.Any.fromFunction0(getURL), getViewData = js.Any.fromFunction0(getViewData), getVisualAreaSize = js.Any.fromFunction1(getVisualAreaSize), hasControllersLocked = js.Any.fromFunction0(hasControllersLocked), initNew = js.Any.fromFunction0(initNew), isModified = js.Any.fromFunction0(isModified), isSetModifiedEnabled = js.Any.fromFunction0(isSetModifiedEnabled), load = js.Any.fromFunction1(load), loadFromStorage = js.Any.fromFunction2(loadFromStorage), lockControllers = js.Any.fromFunction0(lockControllers), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeCloseListener = js.Any.fromFunction1(removeCloseListener), removeEventListener = js.Any.fromFunction1(removeEventListener), removeModifyListener = js.Any.fromFunction1(removeModifyListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeStorageChangeListener = js.Any.fromFunction1(removeStorageChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setCurrentController = js.Any.fromFunction1(setCurrentController), setModified = js.Any.fromFunction1(setModified), setParent = js.Any.fromFunction1(setParent), setPosition = js.Any.fromFunction1(setPosition), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setSize = js.Any.fromFunction1(setSize), setViewData = js.Any.fromFunction1(setViewData), setVisualAreaSize = js.Any.fromFunction2(setVisualAreaSize), storeToStorage = js.Any.fromFunction2(storeToStorage), switchToStorage = js.Any.fromFunction1(switchToStorage), unlockControllers = js.Any.fromFunction0(unlockControllers))
   
     __obj.asInstanceOf[XReportDefinition]
   }

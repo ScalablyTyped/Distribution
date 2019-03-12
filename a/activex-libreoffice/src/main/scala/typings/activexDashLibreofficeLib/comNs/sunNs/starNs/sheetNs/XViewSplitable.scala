@@ -55,17 +55,17 @@ object XViewSplitable {
     SplitHorizontal: scala.Double,
     SplitRow: scala.Double,
     SplitVertical: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getIsWindowSplit: js.Function0[scala.Boolean],
-    getSplitColumn: js.Function0[scala.Double],
-    getSplitHorizontal: js.Function0[scala.Double],
-    getSplitRow: js.Function0[scala.Double],
-    getSplitVertical: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    splitAtPosition: js.Function2[scala.Double, scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    getIsWindowSplit: () => scala.Boolean,
+    getSplitColumn: () => scala.Double,
+    getSplitHorizontal: () => scala.Double,
+    getSplitRow: () => scala.Double,
+    getSplitVertical: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    splitAtPosition: (scala.Double, scala.Double) => scala.Unit
   ): XViewSplitable = {
-    val __obj = js.Dynamic.literal(IsWindowSplit = IsWindowSplit, SplitColumn = SplitColumn, SplitHorizontal = SplitHorizontal, SplitRow = SplitRow, SplitVertical = SplitVertical, acquire = acquire, getIsWindowSplit = getIsWindowSplit, getSplitColumn = getSplitColumn, getSplitHorizontal = getSplitHorizontal, getSplitRow = getSplitRow, getSplitVertical = getSplitVertical, queryInterface = queryInterface, release = release, splitAtPosition = splitAtPosition)
+    val __obj = js.Dynamic.literal(IsWindowSplit = IsWindowSplit, SplitColumn = SplitColumn, SplitHorizontal = SplitHorizontal, SplitRow = SplitRow, SplitVertical = SplitVertical, acquire = js.Any.fromFunction0(acquire), getIsWindowSplit = js.Any.fromFunction0(getIsWindowSplit), getSplitColumn = js.Any.fromFunction0(getSplitColumn), getSplitHorizontal = js.Any.fromFunction0(getSplitHorizontal), getSplitRow = js.Any.fromFunction0(getSplitRow), getSplitVertical = js.Any.fromFunction0(getSplitVertical), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), splitAtPosition = js.Any.fromFunction2(splitAtPosition))
   
     __obj.asInstanceOf[XViewSplitable]
   }

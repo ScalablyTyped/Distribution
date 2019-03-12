@@ -14,17 +14,11 @@ trait Anon_Attributes extends js.Object {
 object Anon_Attributes {
   @scala.inline
   def apply(
-    computeTangents: js.Function1[threeLib.threeDashCoreMod.BufferGeometry, scala.Null],
-    mergeBufferAttributes: js.Function1[
-      js.Array[threeLib.threeDashCoreMod.BufferAttribute], 
-      threeLib.threeDashCoreMod.BufferAttribute
-    ],
-    mergeBufferGeometries: js.Function1[
-      js.Array[threeLib.threeDashCoreMod.BufferGeometry], 
-      threeLib.threeDashCoreMod.BufferGeometry
-    ]
+    computeTangents: threeLib.threeDashCoreMod.BufferGeometry => scala.Null,
+    mergeBufferAttributes: js.Array[threeLib.threeDashCoreMod.BufferAttribute] => threeLib.threeDashCoreMod.BufferAttribute,
+    mergeBufferGeometries: js.Array[threeLib.threeDashCoreMod.BufferGeometry] => threeLib.threeDashCoreMod.BufferGeometry
   ): Anon_Attributes = {
-    val __obj = js.Dynamic.literal(computeTangents = computeTangents, mergeBufferAttributes = mergeBufferAttributes, mergeBufferGeometries = mergeBufferGeometries)
+    val __obj = js.Dynamic.literal(computeTangents = js.Any.fromFunction1(computeTangents), mergeBufferAttributes = js.Any.fromFunction1(mergeBufferAttributes), mergeBufferGeometries = js.Any.fromFunction1(mergeBufferGeometries))
   
     __obj.asInstanceOf[Anon_Attributes]
   }

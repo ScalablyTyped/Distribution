@@ -16,13 +16,13 @@ trait UserInstance extends js.Object {
 object UserInstance {
   @scala.inline
   def apply(
-    getAccountSwitcherContactList: js.Function0[js.Array[inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.Contact]],
-    getEmailAddress: js.Function0[java.lang.String],
-    getLanguage: js.Function0[java.lang.String],
-    isConversationViewDisabled: js.Function0[scala.Boolean],
-    isUsingGmailMaterialUI: js.Function0[scala.Boolean]
+    getAccountSwitcherContactList: () => js.Array[inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.Contact],
+    getEmailAddress: () => java.lang.String,
+    getLanguage: () => java.lang.String,
+    isConversationViewDisabled: () => scala.Boolean,
+    isUsingGmailMaterialUI: () => scala.Boolean
   ): UserInstance = {
-    val __obj = js.Dynamic.literal(getAccountSwitcherContactList = getAccountSwitcherContactList, getEmailAddress = getEmailAddress, getLanguage = getLanguage, isConversationViewDisabled = isConversationViewDisabled, isUsingGmailMaterialUI = isUsingGmailMaterialUI)
+    val __obj = js.Dynamic.literal(getAccountSwitcherContactList = js.Any.fromFunction0(getAccountSwitcherContactList), getEmailAddress = js.Any.fromFunction0(getEmailAddress), getLanguage = js.Any.fromFunction0(getLanguage), isConversationViewDisabled = js.Any.fromFunction0(isConversationViewDisabled), isUsingGmailMaterialUI = js.Any.fromFunction0(isUsingGmailMaterialUI))
   
     __obj.asInstanceOf[UserInstance]
   }

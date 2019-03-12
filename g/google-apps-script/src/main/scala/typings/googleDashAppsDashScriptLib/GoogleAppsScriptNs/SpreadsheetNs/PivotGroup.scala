@@ -37,35 +37,30 @@ trait PivotGroup extends js.Object {
 object PivotGroup {
   @scala.inline
   def apply(
-    addManualGroupingRule: js.Function2[java.lang.String, js.Array[js.Object], PivotGroup],
-    areLabelsRepeated: js.Function0[scala.Boolean],
-    clearGroupingRule: js.Function0[PivotGroup],
-    clearSort: js.Function0[PivotGroup],
-    getDimension: js.Function0[Dimension],
-    getIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getPivotTable: js.Function0[PivotTable],
-    getSourceDataColumn: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    hideRepeatedLabels: js.Function0[PivotGroup],
-    isSortAscending: js.Function0[scala.Boolean],
-    moveToIndex: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, PivotGroup],
-    remove: js.Function0[scala.Unit],
-    removeManualGroupingRule: js.Function1[java.lang.String, PivotGroup],
-    resetDisplayName: js.Function0[PivotGroup],
-    setDisplayName: js.Function1[java.lang.String, PivotGroup],
-    setHistogramGroupingRule: js.Function3[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      PivotGroup
-    ],
-    showRepeatedLabels: js.Function0[PivotGroup],
-    showTotals: js.Function1[scala.Boolean, PivotGroup],
-    sortAscending: js.Function0[PivotGroup],
-    sortBy: js.Function2[PivotValue, js.Array[js.Object], PivotGroup],
-    sortDescending: js.Function0[PivotGroup],
-    totalsAreShown: js.Function0[scala.Boolean]
+    addManualGroupingRule: (java.lang.String, js.Array[js.Object]) => PivotGroup,
+    areLabelsRepeated: () => scala.Boolean,
+    clearGroupingRule: () => PivotGroup,
+    clearSort: () => PivotGroup,
+    getDimension: () => Dimension,
+    getIndex: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getPivotTable: () => PivotTable,
+    getSourceDataColumn: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    hideRepeatedLabels: () => PivotGroup,
+    isSortAscending: () => scala.Boolean,
+    moveToIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => PivotGroup,
+    remove: () => scala.Unit,
+    removeManualGroupingRule: java.lang.String => PivotGroup,
+    resetDisplayName: () => PivotGroup,
+    setDisplayName: java.lang.String => PivotGroup,
+    setHistogramGroupingRule: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => PivotGroup,
+    showRepeatedLabels: () => PivotGroup,
+    showTotals: scala.Boolean => PivotGroup,
+    sortAscending: () => PivotGroup,
+    sortBy: (PivotValue, js.Array[js.Object]) => PivotGroup,
+    sortDescending: () => PivotGroup,
+    totalsAreShown: () => scala.Boolean
   ): PivotGroup = {
-    val __obj = js.Dynamic.literal(addManualGroupingRule = addManualGroupingRule, areLabelsRepeated = areLabelsRepeated, clearGroupingRule = clearGroupingRule, clearSort = clearSort, getDimension = getDimension, getIndex = getIndex, getPivotTable = getPivotTable, getSourceDataColumn = getSourceDataColumn, hideRepeatedLabels = hideRepeatedLabels, isSortAscending = isSortAscending, moveToIndex = moveToIndex, remove = remove, removeManualGroupingRule = removeManualGroupingRule, resetDisplayName = resetDisplayName, setDisplayName = setDisplayName, setHistogramGroupingRule = setHistogramGroupingRule, showRepeatedLabels = showRepeatedLabels, showTotals = showTotals, sortAscending = sortAscending, sortBy = sortBy, sortDescending = sortDescending, totalsAreShown = totalsAreShown)
+    val __obj = js.Dynamic.literal(addManualGroupingRule = js.Any.fromFunction2(addManualGroupingRule), areLabelsRepeated = js.Any.fromFunction0(areLabelsRepeated), clearGroupingRule = js.Any.fromFunction0(clearGroupingRule), clearSort = js.Any.fromFunction0(clearSort), getDimension = js.Any.fromFunction0(getDimension), getIndex = js.Any.fromFunction0(getIndex), getPivotTable = js.Any.fromFunction0(getPivotTable), getSourceDataColumn = js.Any.fromFunction0(getSourceDataColumn), hideRepeatedLabels = js.Any.fromFunction0(hideRepeatedLabels), isSortAscending = js.Any.fromFunction0(isSortAscending), moveToIndex = js.Any.fromFunction1(moveToIndex), remove = js.Any.fromFunction0(remove), removeManualGroupingRule = js.Any.fromFunction1(removeManualGroupingRule), resetDisplayName = js.Any.fromFunction0(resetDisplayName), setDisplayName = js.Any.fromFunction1(setDisplayName), setHistogramGroupingRule = js.Any.fromFunction3(setHistogramGroupingRule), showRepeatedLabels = js.Any.fromFunction0(showRepeatedLabels), showTotals = js.Any.fromFunction1(showTotals), sortAscending = js.Any.fromFunction0(sortAscending), sortBy = js.Any.fromFunction2(sortBy), sortDescending = js.Any.fromFunction0(sortDescending), totalsAreShown = js.Any.fromFunction0(totalsAreShown))
   
     __obj.asInstanceOf[PivotGroup]
   }

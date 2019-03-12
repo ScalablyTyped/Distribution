@@ -45,16 +45,12 @@ object Anon_CallbackDetails {
         scala.Unit
       ]
     ],
-    selectFile: js.Function2[
-      chromeDashAppsLib.chromeNs.fileBrowserHandlerNs.SelectFileParameters, 
-      js.Function1[
-        /* result */ chromeDashAppsLib.chromeNs.fileBrowserHandlerNs.SelectionResult, 
-        scala.Unit
-      ], 
+    selectFile: (chromeDashAppsLib.chromeNs.fileBrowserHandlerNs.SelectFileParameters, js.Function1[
+      /* result */ chromeDashAppsLib.chromeNs.fileBrowserHandlerNs.SelectionResult, 
       scala.Unit
-    ]
+    ]) => scala.Unit
   ): Anon_CallbackDetails = {
-    val __obj = js.Dynamic.literal(onExecute = onExecute, selectFile = selectFile)
+    val __obj = js.Dynamic.literal(onExecute = onExecute, selectFile = js.Any.fromFunction2(selectFile))
   
     __obj.asInstanceOf[Anon_CallbackDetails]
   }

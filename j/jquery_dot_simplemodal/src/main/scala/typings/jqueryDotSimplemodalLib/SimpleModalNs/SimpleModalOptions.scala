@@ -82,9 +82,9 @@ object SimpleModalOptions {
     minHeight: scala.Int | scala.Double = null,
     minWidth: scala.Int | scala.Double = null,
     modal: js.UndefOr[scala.Boolean] = js.undefined,
-    onClose: js.Function1[/* dialog */ SimpleModalDialog, scala.Unit] = null,
-    onOpen: js.Function1[/* dialog */ SimpleModalDialog, scala.Unit] = null,
-    onShow: js.Function1[/* dialog */ SimpleModalDialog, scala.Unit] = null,
+    onClose: /* dialog */ SimpleModalDialog => scala.Unit = null,
+    onOpen: /* dialog */ SimpleModalDialog => scala.Unit = null,
+    onShow: /* dialog */ SimpleModalDialog => scala.Unit = null,
     opacity: scala.Int | scala.Double = null,
     overlayClose: js.UndefOr[scala.Boolean] = js.undefined,
     overlayCss: js.Object = null,
@@ -111,9 +111,9 @@ object SimpleModalOptions {
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (!js.isUndefined(overlayClose)) __obj.updateDynamic("overlayClose")(overlayClose)
     if (overlayCss != null) __obj.updateDynamic("overlayCss")(overlayCss)

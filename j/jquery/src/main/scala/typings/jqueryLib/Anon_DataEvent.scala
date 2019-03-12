@@ -19,14 +19,9 @@ trait Anon_DataEvent[TTarget, TData]
 object Anon_DataEvent {
   @scala.inline
   def apply[TTarget, TData](
-    trigger: js.Function3[
-      TTarget, 
-      jqueryLib.JQueryNs.Event, 
-      TData, 
-      scala.Unit | jqueryLib.jqueryLibNumbers.`false`
-    ]
+    trigger: (TTarget, jqueryLib.JQueryNs.Event, TData) => scala.Unit | jqueryLib.jqueryLibNumbers.`false`
   ): Anon_DataEvent[TTarget, TData] = {
-    val __obj = js.Dynamic.literal(trigger = trigger)
+    val __obj = js.Dynamic.literal(trigger = js.Any.fromFunction3(trigger))
   
     __obj.asInstanceOf[Anon_DataEvent[TTarget, TData]]
   }

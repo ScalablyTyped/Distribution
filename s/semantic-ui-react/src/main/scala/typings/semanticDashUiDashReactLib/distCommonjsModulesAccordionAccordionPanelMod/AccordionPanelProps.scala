@@ -18,11 +18,7 @@ object AccordionPanelProps {
       semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionContentMod.AccordionContentProps
     ] = null,
     index: scala.Double | java.lang.String = null,
-    onTitleClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionTitleMod.AccordionTitleProps, 
-      scala.Unit
-    ] = null,
+    onTitleClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionTitleMod.AccordionTitleProps) => scala.Unit = null,
     title: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[
       semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionTitleMod.AccordionTitleProps
     ] = null
@@ -32,7 +28,7 @@ object AccordionPanelProps {
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (onTitleClick != null) __obj.updateDynamic("onTitleClick")(onTitleClick)
+    if (onTitleClick != null) __obj.updateDynamic("onTitleClick")(js.Any.fromFunction2(onTitleClick))
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccordionPanelProps]
   }

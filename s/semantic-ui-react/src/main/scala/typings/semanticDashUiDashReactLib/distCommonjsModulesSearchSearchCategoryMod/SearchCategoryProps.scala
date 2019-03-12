@@ -19,7 +19,7 @@ object SearchCategoryProps {
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     name: java.lang.String = null,
-    renderer: js.Function1[/* props */ SearchCategoryProps, reactLib.reactMod.ReactNs.ReactElement[_]] = null,
+    renderer: /* props */ SearchCategoryProps => reactLib.reactMod.ReactNs.ReactElement[_] = null,
     results: js.Array[
       reactLib.reactMod.ReactNs.ComponentClass[
         semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.SearchResultProps, 
@@ -35,7 +35,7 @@ object SearchCategoryProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (renderer != null) __obj.updateDynamic("renderer")(js.Any.fromFunction1(renderer))
     if (results != null) __obj.updateDynamic("results")(results)
     __obj.asInstanceOf[SearchCategoryProps]
   }

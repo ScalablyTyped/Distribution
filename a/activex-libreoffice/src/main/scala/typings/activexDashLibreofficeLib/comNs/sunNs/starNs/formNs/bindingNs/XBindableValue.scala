@@ -29,13 +29,13 @@ object XBindableValue {
   @scala.inline
   def apply(
     ValueBinding: XValueBinding,
-    acquire: js.Function0[scala.Unit],
-    getValueBinding: js.Function0[XValueBinding],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setValueBinding: js.Function1[XValueBinding, scala.Unit]
+    acquire: () => scala.Unit,
+    getValueBinding: () => XValueBinding,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setValueBinding: XValueBinding => scala.Unit
   ): XBindableValue = {
-    val __obj = js.Dynamic.literal(ValueBinding = ValueBinding, acquire = acquire, getValueBinding = getValueBinding, queryInterface = queryInterface, release = release, setValueBinding = setValueBinding)
+    val __obj = js.Dynamic.literal(ValueBinding = ValueBinding, acquire = js.Any.fromFunction0(acquire), getValueBinding = js.Any.fromFunction0(getValueBinding), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setValueBinding = js.Any.fromFunction1(setValueBinding))
   
     __obj.asInstanceOf[XBindableValue]
   }

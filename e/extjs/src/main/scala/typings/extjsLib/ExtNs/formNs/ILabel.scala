@@ -35,11 +35,7 @@ object ILabel {
     autoEl: js.Any = null,
     forId: java.lang.String = null,
     html: java.lang.String = null,
-    setText: js.Function2[
-      /* text */ js.UndefOr[java.lang.String], 
-      /* encode */ js.UndefOr[scala.Boolean], 
-      ILabel
-    ] = null,
+    setText: (/* text */ js.UndefOr[java.lang.String], /* encode */ js.UndefOr[scala.Boolean]) => ILabel = null,
     text: java.lang.String = null
   ): ILabel = {
     val __obj = js.Dynamic.literal()
@@ -47,7 +43,7 @@ object ILabel {
     if (autoEl != null) __obj.updateDynamic("autoEl")(autoEl)
     if (forId != null) __obj.updateDynamic("forId")(forId)
     if (html != null) __obj.updateDynamic("html")(html)
-    if (setText != null) __obj.updateDynamic("setText")(setText)
+    if (setText != null) __obj.updateDynamic("setText")(js.Any.fromFunction2(setText))
     if (text != null) __obj.updateDynamic("text")(text)
     __obj.asInstanceOf[ILabel]
   }

@@ -12,7 +12,7 @@ object ^ extends js.Object {
     * An instance of default adone serializer with registered encoders/decoders for standard js/adone types like
     * x.Exception, Error, Date, Map, Set, math.Long
     */
-  val serializer: adoneLib.adoneNs.dataNs.mpakNs.Serializer = js.native
+  val serializer: Serializer = js.native
   /**
     * Decoder the given buffer
     */
@@ -21,7 +21,7 @@ object ^ extends js.Object {
     * Encodes the given object
     */
   def encode(obj: js.Any): nodeLib.Buffer = js.native
-  def registerCommonTypesFor(s: adoneLib.adoneNs.dataNs.mpakNs.Serializer): scala.Unit = js.native
+  def registerCommonTypesFor(s: Serializer): scala.Unit = js.native
   def tryDecode(buf: adoneLib.adoneNs.collectionNs.ByteArray): js.Any = js.native
 }
 

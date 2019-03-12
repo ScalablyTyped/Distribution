@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.omnibox")
 @js.native
 object ^ extends js.Object {
-  var onDeleteSuggestion: chromeLib.chromeNs.omniboxNs.OmniboxSuggestionDeletedEvent = js.native
-  var onInputCancelled: chromeLib.chromeNs.omniboxNs.OmniboxInputCancelledEvent = js.native
-  var onInputChanged: chromeLib.chromeNs.omniboxNs.OmniboxInputChangedEvent = js.native
-  var onInputEntered: chromeLib.chromeNs.omniboxNs.OmniboxInputEnteredEvent = js.native
-  var onInputStarted: chromeLib.chromeNs.omniboxNs.OmniboxInputStartedEvent = js.native
-  def setDefaultSuggestion(suggestion: chromeLib.chromeNs.omniboxNs.Suggestion): scala.Unit = js.native
+  var onDeleteSuggestion: OmniboxSuggestionDeletedEvent = js.native
+  var onInputCancelled: OmniboxInputCancelledEvent = js.native
+  var onInputChanged: OmniboxInputChangedEvent = js.native
+  var onInputEntered: OmniboxInputEnteredEvent = js.native
+  var onInputStarted: OmniboxInputStartedEvent = js.native
+  def setDefaultSuggestion(suggestion: Suggestion): scala.Unit = js.native
 }
 

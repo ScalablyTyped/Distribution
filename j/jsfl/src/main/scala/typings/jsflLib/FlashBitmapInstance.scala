@@ -16,12 +16,12 @@ trait FlashBitmapInstance extends js.Object {
 object FlashBitmapInstance {
   @scala.inline
   def apply(
-    getBits: js.Function0[_FlashBitmap],
+    getBits: () => _FlashBitmap,
     hPixels: scala.Double,
-    setBits: js.Function1[_FlashBitmap, scala.Unit],
+    setBits: _FlashBitmap => scala.Unit,
     vPixels: scala.Double
   ): FlashBitmapInstance = {
-    val __obj = js.Dynamic.literal(getBits = getBits, hPixels = hPixels, setBits = setBits, vPixels = vPixels)
+    val __obj = js.Dynamic.literal(getBits = js.Any.fromFunction0(getBits), hPixels = hPixels, setBits = js.Any.fromFunction1(setBits), vPixels = vPixels)
   
     __obj.asInstanceOf[FlashBitmapInstance]
   }

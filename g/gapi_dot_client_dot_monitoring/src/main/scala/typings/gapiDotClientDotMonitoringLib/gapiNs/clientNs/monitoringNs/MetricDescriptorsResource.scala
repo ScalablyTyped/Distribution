@@ -19,24 +19,12 @@ trait MetricDescriptorsResource extends js.Object {
 object MetricDescriptorsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotMonitoringLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[MetricDescriptor]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotMonitoringLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotMonitoringLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[MetricDescriptor]
-    ],
-    list: js.Function1[
-      gapiDotClientDotMonitoringLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListMetricDescriptorsResponse]
-    ]
+    create: gapiDotClientDotMonitoringLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[MetricDescriptor],
+    delete: gapiDotClientDotMonitoringLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotMonitoringLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[MetricDescriptor],
+    list: gapiDotClientDotMonitoringLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[ListMetricDescriptorsResponse]
   ): MetricDescriptorsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[MetricDescriptorsResource]
   }

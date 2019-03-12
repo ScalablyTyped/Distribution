@@ -95,24 +95,24 @@ trait TermSuggester extends Suggest {
 object TermSuggester {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    accuracy: js.Function1[scala.Double, TermSuggester],
-    analyzer: js.Function1[java.lang.String, TermSuggester],
-    field: js.Function1[java.lang.String, TermSuggester],
-    maxEdits: js.Function1[scala.Double, TermSuggester],
-    maxInspections: js.Function1[scala.Double, TermSuggester],
-    maxTermFreq: js.Function1[scala.Double, TermSuggester],
-    minDocFreq: js.Function1[scala.Double, TermSuggester],
-    minWordLen: js.Function1[scala.Double, TermSuggester],
-    shardSize: js.Function1[scala.Double, TermSuggester],
-    size: js.Function1[scala.Double, TermSuggester],
-    sort: js.Function1[java.lang.String, TermSuggester],
-    stringDistance: js.Function1[java.lang.String, TermSuggester],
-    suggestMode: js.Function1[java.lang.String, TermSuggester],
-    text: js.Function1[java.lang.String, TermSuggester],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    accuracy: scala.Double => TermSuggester,
+    analyzer: java.lang.String => TermSuggester,
+    field: java.lang.String => TermSuggester,
+    maxEdits: scala.Double => TermSuggester,
+    maxInspections: scala.Double => TermSuggester,
+    maxTermFreq: scala.Double => TermSuggester,
+    minDocFreq: scala.Double => TermSuggester,
+    minWordLen: scala.Double => TermSuggester,
+    shardSize: scala.Double => TermSuggester,
+    size: scala.Double => TermSuggester,
+    sort: java.lang.String => TermSuggester,
+    stringDistance: java.lang.String => TermSuggester,
+    suggestMode: java.lang.String => TermSuggester,
+    text: java.lang.String => TermSuggester,
+    toJSON: () => js.Any
   ): TermSuggester = {
-    val __obj = js.Dynamic.literal(_type = _type, accuracy = accuracy, analyzer = analyzer, field = field, maxEdits = maxEdits, maxInspections = maxInspections, maxTermFreq = maxTermFreq, minDocFreq = minDocFreq, minWordLen = minWordLen, shardSize = shardSize, size = size, sort = sort, stringDistance = stringDistance, suggestMode = suggestMode, text = text, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), accuracy = js.Any.fromFunction1(accuracy), analyzer = js.Any.fromFunction1(analyzer), field = js.Any.fromFunction1(field), maxEdits = js.Any.fromFunction1(maxEdits), maxInspections = js.Any.fromFunction1(maxInspections), maxTermFreq = js.Any.fromFunction1(maxTermFreq), minDocFreq = js.Any.fromFunction1(minDocFreq), minWordLen = js.Any.fromFunction1(minWordLen), shardSize = js.Any.fromFunction1(shardSize), size = js.Any.fromFunction1(size), sort = js.Any.fromFunction1(sort), stringDistance = js.Any.fromFunction1(stringDistance), suggestMode = js.Any.fromFunction1(suggestMode), text = js.Any.fromFunction1(text), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[TermSuggester]
   }

@@ -18,14 +18,14 @@ object TraceId {
   @scala.inline
   def apply(
     flags: scala.Double,
-    isDebug: js.Function0[scala.Boolean],
+    isDebug: () => scala.Boolean,
     parentId: java.lang.String,
     sampled: zipkinLib.zipkinMod.zipkinNs.optionNs.IOption[scala.Boolean],
     spanId: java.lang.String,
-    toString: js.Function0[java.lang.String],
+    toString: () => java.lang.String,
     traceId: java.lang.String
   ): TraceId = {
-    val __obj = js.Dynamic.literal(flags = flags, isDebug = isDebug, parentId = parentId, sampled = sampled, spanId = spanId, toString = toString, traceId = traceId)
+    val __obj = js.Dynamic.literal(flags = flags, isDebug = js.Any.fromFunction0(isDebug), parentId = parentId, sampled = sampled, spanId = spanId, toString = js.Any.fromFunction0(toString), traceId = traceId)
   
     __obj.asInstanceOf[TraceId]
   }

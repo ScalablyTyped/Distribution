@@ -11,9 +11,7 @@ object ^ extends js.Object {
   def hideHotkeysDialog(): scala.Unit = js.native
   def hideHotkeysDialogAfterDelay(): scala.Unit = js.native
   def isHotkeysDialogShowing(): scala.Boolean = js.native
-  def setHotkeysDialogProps(
-    props: stdLib.Partial[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeysDialogMod.IHotkeysDialogProps]
-  ): scala.Unit = js.native
+  def setHotkeysDialogProps(props: stdLib.Partial[IHotkeysDialogProps]): scala.Unit = js.native
   def showHotkeysDialog(hotkeys: js.Array[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyMod.IHotkeyProps]): scala.Unit = js.native
 }
 

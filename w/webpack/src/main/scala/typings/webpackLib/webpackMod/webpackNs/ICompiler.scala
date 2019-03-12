@@ -17,14 +17,10 @@ trait ICompiler extends js.Object {
 object ICompiler {
   @scala.inline
   def apply(
-    run: js.Function1[webpackLib.webpackMod.webpackNs.ICompilerNs.Handler, scala.Unit],
-    watch: js.Function2[
-      webpackLib.webpackMod.webpackNs.ICompilerNs.WatchOptions, 
-      webpackLib.webpackMod.webpackNs.ICompilerNs.Handler, 
-      Watching
-    ]
+    run: webpackLib.webpackMod.webpackNs.ICompilerNs.Handler => scala.Unit,
+    watch: (webpackLib.webpackMod.webpackNs.ICompilerNs.WatchOptions, webpackLib.webpackMod.webpackNs.ICompilerNs.Handler) => Watching
   ): ICompiler = {
-    val __obj = js.Dynamic.literal(run = run, watch = watch)
+    val __obj = js.Dynamic.literal(run = js.Any.fromFunction1(run), watch = js.Any.fromFunction2(watch))
   
     __obj.asInstanceOf[ICompiler]
   }

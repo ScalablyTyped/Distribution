@@ -86,19 +86,19 @@ object SinonFakeXMLHttpRequest {
   @scala.inline
   def apply(
     async: scala.Boolean,
-    autoRespond: js.Function1[scala.Double, scala.Unit],
-    error: js.Function0[scala.Unit],
-    getAllResponseHeaders: js.Function0[js.Any],
-    getResponseHeader: js.Function1[java.lang.String, java.lang.String],
+    autoRespond: scala.Double => scala.Unit,
+    error: () => scala.Unit,
+    getAllResponseHeaders: () => js.Any,
+    getResponseHeader: java.lang.String => java.lang.String,
     method: java.lang.String,
-    onerror: js.Function0[scala.Unit],
+    onerror: () => scala.Unit,
     password: java.lang.String,
     requestBody: java.lang.String,
     requestHeaders: js.Any,
-    respond: js.Function3[scala.Double, js.Any, java.lang.String, scala.Unit],
+    respond: (scala.Double, js.Any, java.lang.String) => scala.Unit,
     responseXML: sinonLib.sinonMod.Document,
-    setResponseBody: js.Function1[java.lang.String, scala.Unit],
-    setResponseHeaders: js.Function1[js.Any, scala.Unit],
+    setResponseBody: java.lang.String => scala.Unit,
+    setResponseHeaders: js.Any => scala.Unit,
     status: scala.Double,
     statusText: java.lang.String,
     upload: SinonFakeUploadProgress,
@@ -106,7 +106,7 @@ object SinonFakeXMLHttpRequest {
     username: java.lang.String,
     withCredentials: scala.Boolean
   ): SinonFakeXMLHttpRequest = {
-    val __obj = js.Dynamic.literal(async = async, autoRespond = autoRespond, error = error, getAllResponseHeaders = getAllResponseHeaders, getResponseHeader = getResponseHeader, method = method, onerror = onerror, password = password, requestBody = requestBody, requestHeaders = requestHeaders, respond = respond, responseXML = responseXML, setResponseBody = setResponseBody, setResponseHeaders = setResponseHeaders, status = status, statusText = statusText, upload = upload, url = url, username = username, withCredentials = withCredentials)
+    val __obj = js.Dynamic.literal(async = async, autoRespond = js.Any.fromFunction1(autoRespond), error = js.Any.fromFunction0(error), getAllResponseHeaders = js.Any.fromFunction0(getAllResponseHeaders), getResponseHeader = js.Any.fromFunction1(getResponseHeader), method = method, onerror = js.Any.fromFunction0(onerror), password = password, requestBody = requestBody, requestHeaders = requestHeaders, respond = js.Any.fromFunction3(respond), responseXML = responseXML, setResponseBody = js.Any.fromFunction1(setResponseBody), setResponseHeaders = js.Any.fromFunction1(setResponseHeaders), status = status, statusText = statusText, upload = upload, url = url, username = username, withCredentials = withCredentials)
   
     __obj.asInstanceOf[SinonFakeXMLHttpRequest]
   }

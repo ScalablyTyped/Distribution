@@ -30,18 +30,18 @@ object XInteractionPassword2 {
     Password: java.lang.String,
     PasswordToModify: java.lang.String,
     RecommendReadOnly: scala.Boolean,
-    acquire: js.Function0[scala.Unit],
-    getPassword: js.Function0[java.lang.String],
-    getPasswordToModify: js.Function0[java.lang.String],
-    getRecommendReadOnly: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    select: js.Function0[scala.Unit],
-    setPassword: js.Function1[java.lang.String, scala.Unit],
-    setPasswordToModify: js.Function1[java.lang.String, scala.Unit],
-    setRecommendReadOnly: js.Function1[scala.Boolean, scala.Unit]
+    acquire: () => scala.Unit,
+    getPassword: () => java.lang.String,
+    getPasswordToModify: () => java.lang.String,
+    getRecommendReadOnly: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    select: () => scala.Unit,
+    setPassword: java.lang.String => scala.Unit,
+    setPasswordToModify: java.lang.String => scala.Unit,
+    setRecommendReadOnly: scala.Boolean => scala.Unit
   ): XInteractionPassword2 = {
-    val __obj = js.Dynamic.literal(Password = Password, PasswordToModify = PasswordToModify, RecommendReadOnly = RecommendReadOnly, acquire = acquire, getPassword = getPassword, getPasswordToModify = getPasswordToModify, getRecommendReadOnly = getRecommendReadOnly, queryInterface = queryInterface, release = release, select = select, setPassword = setPassword, setPasswordToModify = setPasswordToModify, setRecommendReadOnly = setRecommendReadOnly)
+    val __obj = js.Dynamic.literal(Password = Password, PasswordToModify = PasswordToModify, RecommendReadOnly = RecommendReadOnly, acquire = js.Any.fromFunction0(acquire), getPassword = js.Any.fromFunction0(getPassword), getPasswordToModify = js.Any.fromFunction0(getPasswordToModify), getRecommendReadOnly = js.Any.fromFunction0(getRecommendReadOnly), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), select = js.Any.fromFunction0(select), setPassword = js.Any.fromFunction1(setPassword), setPasswordToModify = js.Any.fromFunction1(setPasswordToModify), setRecommendReadOnly = js.Any.fromFunction1(setRecommendReadOnly))
   
     __obj.asInstanceOf[XInteractionPassword2]
   }

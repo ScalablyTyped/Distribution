@@ -15,18 +15,10 @@ object XFilterFormulaParser {
   @scala.inline
   def apply(
     SupportedNamespace: java.lang.String,
-    parseFormula: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
-      activexDashInteropLib.SafeArray[FormulaToken]
-    ],
-    printFormula: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[FormulaToken], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
-      java.lang.String
-    ]
+    parseFormula: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress) => stdLib.SafeArray[FormulaToken],
+    printFormula: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[FormulaToken], activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress) => java.lang.String
   ): XFilterFormulaParser = {
-    val __obj = js.Dynamic.literal(SupportedNamespace = SupportedNamespace, parseFormula = parseFormula, printFormula = printFormula)
+    val __obj = js.Dynamic.literal(SupportedNamespace = SupportedNamespace, parseFormula = js.Any.fromFunction2(parseFormula), printFormula = js.Any.fromFunction2(printFormula))
   
     __obj.asInstanceOf[XFilterFormulaParser]
   }

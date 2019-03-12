@@ -24,12 +24,12 @@ object XStyleFamiliesSupplier {
   @scala.inline
   def apply(
     StyleFamilies: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
-    acquire: js.Function0[scala.Unit],
-    getStyleFamilies: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getStyleFamilies: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XStyleFamiliesSupplier = {
-    val __obj = js.Dynamic.literal(StyleFamilies = StyleFamilies, acquire = acquire, getStyleFamilies = getStyleFamilies, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(StyleFamilies = StyleFamilies, acquire = js.Any.fromFunction0(acquire), getStyleFamilies = js.Any.fromFunction0(getStyleFamilies), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XStyleFamiliesSupplier]
   }

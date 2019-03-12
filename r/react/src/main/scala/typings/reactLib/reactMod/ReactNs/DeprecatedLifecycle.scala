@@ -115,30 +115,20 @@ trait DeprecatedLifecycle[P, S] extends js.Object {
 object DeprecatedLifecycle {
   @scala.inline
   def apply[P, S](
-    UNSAFE_componentWillMount: js.Function0[scala.Unit] = null,
-    UNSAFE_componentWillReceiveProps: js.Function2[/* nextProps */ stdLib.Readonly[P], /* nextContext */ js.Any, scala.Unit] = null,
-    UNSAFE_componentWillUpdate: js.Function3[
-      /* nextProps */ stdLib.Readonly[P], 
-      /* nextState */ stdLib.Readonly[S], 
-      /* nextContext */ js.Any, 
-      scala.Unit
-    ] = null,
-    componentWillMount: js.Function0[scala.Unit] = null,
-    componentWillReceiveProps: js.Function2[/* nextProps */ stdLib.Readonly[P], /* nextContext */ js.Any, scala.Unit] = null,
-    componentWillUpdate: js.Function3[
-      /* nextProps */ stdLib.Readonly[P], 
-      /* nextState */ stdLib.Readonly[S], 
-      /* nextContext */ js.Any, 
-      scala.Unit
-    ] = null
+    UNSAFE_componentWillMount: () => scala.Unit = null,
+    UNSAFE_componentWillReceiveProps: (/* nextProps */ stdLib.Readonly[P], /* nextContext */ js.Any) => scala.Unit = null,
+    UNSAFE_componentWillUpdate: (/* nextProps */ stdLib.Readonly[P], /* nextState */ stdLib.Readonly[S], /* nextContext */ js.Any) => scala.Unit = null,
+    componentWillMount: () => scala.Unit = null,
+    componentWillReceiveProps: (/* nextProps */ stdLib.Readonly[P], /* nextContext */ js.Any) => scala.Unit = null,
+    componentWillUpdate: (/* nextProps */ stdLib.Readonly[P], /* nextState */ stdLib.Readonly[S], /* nextContext */ js.Any) => scala.Unit = null
   ): DeprecatedLifecycle[P, S] = {
     val __obj = js.Dynamic.literal()
-    if (UNSAFE_componentWillMount != null) __obj.updateDynamic("UNSAFE_componentWillMount")(UNSAFE_componentWillMount)
-    if (UNSAFE_componentWillReceiveProps != null) __obj.updateDynamic("UNSAFE_componentWillReceiveProps")(UNSAFE_componentWillReceiveProps)
-    if (UNSAFE_componentWillUpdate != null) __obj.updateDynamic("UNSAFE_componentWillUpdate")(UNSAFE_componentWillUpdate)
-    if (componentWillMount != null) __obj.updateDynamic("componentWillMount")(componentWillMount)
-    if (componentWillReceiveProps != null) __obj.updateDynamic("componentWillReceiveProps")(componentWillReceiveProps)
-    if (componentWillUpdate != null) __obj.updateDynamic("componentWillUpdate")(componentWillUpdate)
+    if (UNSAFE_componentWillMount != null) __obj.updateDynamic("UNSAFE_componentWillMount")(js.Any.fromFunction0(UNSAFE_componentWillMount))
+    if (UNSAFE_componentWillReceiveProps != null) __obj.updateDynamic("UNSAFE_componentWillReceiveProps")(js.Any.fromFunction2(UNSAFE_componentWillReceiveProps))
+    if (UNSAFE_componentWillUpdate != null) __obj.updateDynamic("UNSAFE_componentWillUpdate")(js.Any.fromFunction3(UNSAFE_componentWillUpdate))
+    if (componentWillMount != null) __obj.updateDynamic("componentWillMount")(js.Any.fromFunction0(componentWillMount))
+    if (componentWillReceiveProps != null) __obj.updateDynamic("componentWillReceiveProps")(js.Any.fromFunction2(componentWillReceiveProps))
+    if (componentWillUpdate != null) __obj.updateDynamic("componentWillUpdate")(js.Any.fromFunction3(componentWillUpdate))
     __obj.asInstanceOf[DeprecatedLifecycle[P, S]]
   }
 }

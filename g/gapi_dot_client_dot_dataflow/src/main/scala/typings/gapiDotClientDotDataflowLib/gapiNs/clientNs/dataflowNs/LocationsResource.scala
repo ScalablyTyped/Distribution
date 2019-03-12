@@ -19,12 +19,9 @@ object LocationsResource {
   def apply(
     jobs: JobsResource,
     templates: TemplatesResource,
-    workerMessages: js.Function1[
-      gapiDotClientDotDataflowLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyLocationOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SendWorkerMessagesResponse]
-    ]
+    workerMessages: gapiDotClientDotDataflowLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyLocationOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[SendWorkerMessagesResponse]
   ): LocationsResource = {
-    val __obj = js.Dynamic.literal(jobs = jobs, templates = templates, workerMessages = workerMessages)
+    val __obj = js.Dynamic.literal(jobs = jobs, templates = templates, workerMessages = js.Any.fromFunction1(workerMessages))
   
     __obj.asInstanceOf[LocationsResource]
   }

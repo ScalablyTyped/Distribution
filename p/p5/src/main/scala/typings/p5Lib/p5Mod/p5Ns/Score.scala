@@ -39,14 +39,14 @@ trait Score extends js.Object {
 object Score {
   @scala.inline
   def apply(
-    loop: js.Function0[scala.Unit],
-    noLoop: js.Function0[scala.Unit],
-    pause: js.Function0[scala.Unit],
-    setBPM: js.Function2[scala.Double, scala.Double, scala.Unit],
-    start: js.Function0[scala.Unit],
-    stop: js.Function0[scala.Unit]
+    loop: () => scala.Unit,
+    noLoop: () => scala.Unit,
+    pause: () => scala.Unit,
+    setBPM: (scala.Double, scala.Double) => scala.Unit,
+    start: () => scala.Unit,
+    stop: () => scala.Unit
   ): Score = {
-    val __obj = js.Dynamic.literal(loop = loop, noLoop = noLoop, pause = pause, setBPM = setBPM, start = start, stop = stop)
+    val __obj = js.Dynamic.literal(loop = js.Any.fromFunction0(loop), noLoop = js.Any.fromFunction0(noLoop), pause = js.Any.fromFunction0(pause), setBPM = js.Any.fromFunction2(setBPM), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[Score]
   }

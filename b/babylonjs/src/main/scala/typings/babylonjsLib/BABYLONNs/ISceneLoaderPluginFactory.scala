@@ -27,12 +27,12 @@ trait ISceneLoaderPluginFactory extends js.Object {
 object ISceneLoaderPluginFactory {
   @scala.inline
   def apply(
-    createPlugin: js.Function0[ISceneLoaderPlugin | ISceneLoaderPluginAsync],
+    createPlugin: () => ISceneLoaderPlugin | ISceneLoaderPluginAsync,
     name: java.lang.String,
-    canDirectLoad: js.Function1[/* data */ java.lang.String, scala.Boolean] = null
+    canDirectLoad: /* data */ java.lang.String => scala.Boolean = null
   ): ISceneLoaderPluginFactory = {
-    val __obj = js.Dynamic.literal(createPlugin = createPlugin, name = name)
-    if (canDirectLoad != null) __obj.updateDynamic("canDirectLoad")(canDirectLoad)
+    val __obj = js.Dynamic.literal(createPlugin = js.Any.fromFunction0(createPlugin), name = name)
+    if (canDirectLoad != null) __obj.updateDynamic("canDirectLoad")(js.Any.fromFunction1(canDirectLoad))
     __obj.asInstanceOf[ISceneLoaderPluginFactory]
   }
 }

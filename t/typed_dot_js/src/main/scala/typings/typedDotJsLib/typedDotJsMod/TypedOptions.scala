@@ -139,16 +139,16 @@ object TypedOptions {
     fadeOutDelay: js.UndefOr[scala.Boolean] = js.undefined,
     loop: js.UndefOr[scala.Boolean] = js.undefined,
     loopCount: scala.Int | scala.Double = null,
-    onComplete: js.Function1[/* self */ Typed, scala.Unit] = null,
-    onDestroy: js.Function1[/* self */ Typed, scala.Unit] = null,
-    onLastStringBackspaced: js.Function1[/* self */ Typed, scala.Unit] = null,
-    onReset: js.Function1[/* self */ Typed, scala.Unit] = null,
-    onStart: js.Function2[/* arrayPos */ scala.Double, /* self */ Typed, scala.Unit] = null,
-    onStop: js.Function2[/* arrayPos */ scala.Double, /* self */ Typed, scala.Unit] = null,
-    onStringTyped: js.Function2[/* arrayPos */ scala.Double, /* self */ Typed, scala.Unit] = null,
-    onTypingPaused: js.Function2[/* arrayPos */ scala.Double, /* self */ Typed, scala.Unit] = null,
-    onTypingResumed: js.Function2[/* arrayPos */ scala.Double, /* self */ Typed, scala.Unit] = null,
-    preStringTyped: js.Function2[/* arrayPos */ scala.Double, /* self */ Typed, scala.Unit] = null,
+    onComplete: /* self */ Typed => scala.Unit = null,
+    onDestroy: /* self */ Typed => scala.Unit = null,
+    onLastStringBackspaced: /* self */ Typed => scala.Unit = null,
+    onReset: /* self */ Typed => scala.Unit = null,
+    onStart: (/* arrayPos */ scala.Double, /* self */ Typed) => scala.Unit = null,
+    onStop: (/* arrayPos */ scala.Double, /* self */ Typed) => scala.Unit = null,
+    onStringTyped: (/* arrayPos */ scala.Double, /* self */ Typed) => scala.Unit = null,
+    onTypingPaused: (/* arrayPos */ scala.Double, /* self */ Typed) => scala.Unit = null,
+    onTypingResumed: (/* arrayPos */ scala.Double, /* self */ Typed) => scala.Unit = null,
+    preStringTyped: (/* arrayPos */ scala.Double, /* self */ Typed) => scala.Unit = null,
     showCursor: js.UndefOr[scala.Boolean] = js.undefined,
     shuffle: js.UndefOr[scala.Boolean] = js.undefined,
     smartBackspace: js.UndefOr[scala.Boolean] = js.undefined,
@@ -170,16 +170,16 @@ object TypedOptions {
     if (!js.isUndefined(fadeOutDelay)) __obj.updateDynamic("fadeOutDelay")(fadeOutDelay)
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
     if (loopCount != null) __obj.updateDynamic("loopCount")(loopCount.asInstanceOf[js.Any])
-    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(onDestroy)
-    if (onLastStringBackspaced != null) __obj.updateDynamic("onLastStringBackspaced")(onLastStringBackspaced)
-    if (onReset != null) __obj.updateDynamic("onReset")(onReset)
-    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
-    if (onStop != null) __obj.updateDynamic("onStop")(onStop)
-    if (onStringTyped != null) __obj.updateDynamic("onStringTyped")(onStringTyped)
-    if (onTypingPaused != null) __obj.updateDynamic("onTypingPaused")(onTypingPaused)
-    if (onTypingResumed != null) __obj.updateDynamic("onTypingResumed")(onTypingResumed)
-    if (preStringTyped != null) __obj.updateDynamic("preStringTyped")(preStringTyped)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
+    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction1(onDestroy))
+    if (onLastStringBackspaced != null) __obj.updateDynamic("onLastStringBackspaced")(js.Any.fromFunction1(onLastStringBackspaced))
+    if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1(onReset))
+    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction2(onStart))
+    if (onStop != null) __obj.updateDynamic("onStop")(js.Any.fromFunction2(onStop))
+    if (onStringTyped != null) __obj.updateDynamic("onStringTyped")(js.Any.fromFunction2(onStringTyped))
+    if (onTypingPaused != null) __obj.updateDynamic("onTypingPaused")(js.Any.fromFunction2(onTypingPaused))
+    if (onTypingResumed != null) __obj.updateDynamic("onTypingResumed")(js.Any.fromFunction2(onTypingResumed))
+    if (preStringTyped != null) __obj.updateDynamic("preStringTyped")(js.Any.fromFunction2(preStringTyped))
     if (!js.isUndefined(showCursor)) __obj.updateDynamic("showCursor")(showCursor)
     if (!js.isUndefined(shuffle)) __obj.updateDynamic("shuffle")(shuffle)
     if (!js.isUndefined(smartBackspace)) __obj.updateDynamic("smartBackspace")(smartBackspace)

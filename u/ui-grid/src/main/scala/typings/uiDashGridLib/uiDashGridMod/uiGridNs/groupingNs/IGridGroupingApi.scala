@@ -9,12 +9,6 @@ import scala.scalajs.js.annotation._
 trait IGridGroupingApi[TEntity] extends js.Object {
   // Events
   var on: uiDashGridLib.Anon_AggregationChanged[TEntity] = js.native
-  def aggregateColumn(columnName: java.lang.String, or: angularLib.angularMod.Global.Function): scala.Unit = js.native
-  def aggregateColumn(
-    columnName: java.lang.String,
-    or: angularLib.angularMod.Global.Function,
-    aggregationLabel: java.lang.String
-  ): scala.Unit = js.native
   // Methods
   /**
     * Sets the aggregation type on a column.
@@ -27,6 +21,8 @@ trait IGridGroupingApi[TEntity] extends js.Object {
     */
   def aggregateColumn(columnName: java.lang.String, or: java.lang.String): scala.Unit = js.native
   def aggregateColumn(columnName: java.lang.String, or: java.lang.String, aggregationLabel: java.lang.String): scala.Unit = js.native
+  def aggregateColumn(columnName: java.lang.String, or: js.Function): scala.Unit = js.native
+  def aggregateColumn(columnName: java.lang.String, or: js.Function, aggregationLabel: java.lang.String): scala.Unit = js.native
   /**
     * Clear any grouped columns and any aggregations.
     * Doesn't remove sorting, as we don't know whether that sorting was added by grouping or was there

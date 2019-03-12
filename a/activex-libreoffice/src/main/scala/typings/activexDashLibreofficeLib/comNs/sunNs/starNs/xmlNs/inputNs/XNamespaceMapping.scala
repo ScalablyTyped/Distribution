@@ -25,13 +25,13 @@ trait XNamespaceMapping
 object XNamespaceMapping {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getUidByUri: js.Function1[java.lang.String, scala.Double],
-    getUriByUid: js.Function1[scala.Double, java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getUidByUri: java.lang.String => scala.Double,
+    getUriByUid: scala.Double => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XNamespaceMapping = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getUidByUri = getUidByUri, getUriByUid = getUriByUid, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getUidByUri = js.Any.fromFunction1(getUidByUri), getUriByUid = js.Any.fromFunction1(getUriByUid), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XNamespaceMapping]
   }

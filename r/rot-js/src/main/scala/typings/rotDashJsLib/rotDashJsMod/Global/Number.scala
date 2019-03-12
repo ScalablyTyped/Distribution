@@ -11,8 +11,8 @@ trait Number extends js.Object {
 
 object Number {
   @scala.inline
-  def apply(mod: js.Function1[scala.Double, scala.Double]): Number = {
-    val __obj = js.Dynamic.literal(mod = mod)
+  def apply(mod: scala.Double => scala.Double): Number = {
+    val __obj = js.Dynamic.literal(mod = js.Any.fromFunction1(mod))
   
     __obj.asInstanceOf[Number]
   }

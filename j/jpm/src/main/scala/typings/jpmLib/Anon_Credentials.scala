@@ -20,9 +20,9 @@ trait Anon_Credentials extends js.Object {
 object Anon_Credentials {
   @scala.inline
   def apply(
-    onComplete: js.Function1[js.Array[jpmLib.sdkPasswordsMod.Credential], js.Any],
+    onComplete: js.Array[jpmLib.sdkPasswordsMod.Credential] => js.Any,
     formSubmitURL: java.lang.String = null,
-    onError: js.Function1[/* error */ jpmLib.FFAddonSDKNs.NSIException, _] = null,
+    onError: /* error */ jpmLib.FFAddonSDKNs.NSIException => _ = null,
     password: java.lang.String = null,
     passwordField: java.lang.String = null,
     realm: java.lang.String = null,
@@ -30,9 +30,9 @@ object Anon_Credentials {
     username: java.lang.String = null,
     usernameField: java.lang.String = null
   ): Anon_Credentials = {
-    val __obj = js.Dynamic.literal(onComplete = onComplete)
+    val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction1(onComplete))
     if (formSubmitURL != null) __obj.updateDynamic("formSubmitURL")(formSubmitURL)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (password != null) __obj.updateDynamic("password")(password)
     if (passwordField != null) __obj.updateDynamic("passwordField")(passwordField)
     if (realm != null) __obj.updateDynamic("realm")(realm)

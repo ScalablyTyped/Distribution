@@ -36,23 +36,15 @@ trait OCSPResponse extends js.Object {
 object OCSPResponse {
   @scala.inline
   def apply(
-    createForCertificate: js.Function2[
-      pkijsLib.srcCertificateMod.default, 
-      pkijsLib.srcCertIDMod.CreateFroCertificateParams, 
-      js.Thenable[scala.Unit]
-    ],
-    fromSchema: js.Function1[js.Any, scala.Unit],
-    getCertificateStatus: js.Function2[
-      pkijsLib.srcCertificateMod.default, 
-      pkijsLib.srcCertificateMod.default, 
-      js.Thenable[pkijsLib.srcBasicOCSPResponseMod.GetCertificateStatusResult]
-    ],
+    createForCertificate: (pkijsLib.srcCertificateMod.default, pkijsLib.srcCertIDMod.CreateFroCertificateParams) => js.Thenable[scala.Unit],
+    fromSchema: js.Any => scala.Unit,
+    getCertificateStatus: (pkijsLib.srcCertificateMod.default, pkijsLib.srcCertificateMod.default) => js.Thenable[pkijsLib.srcBasicOCSPResponseMod.GetCertificateStatusResult],
     responseStatus: asn1jsLib.asn1jsMod.Enumerated,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     responseBytes: pkijsLib.srcResponseBytesMod.default = null
   ): OCSPResponse = {
-    val __obj = js.Dynamic.literal(createForCertificate = createForCertificate, fromSchema = fromSchema, getCertificateStatus = getCertificateStatus, responseStatus = responseStatus, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(createForCertificate = js.Any.fromFunction2(createForCertificate), fromSchema = js.Any.fromFunction1(fromSchema), getCertificateStatus = js.Any.fromFunction2(getCertificateStatus), responseStatus = responseStatus, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
     if (responseBytes != null) __obj.updateDynamic("responseBytes")(responseBytes)
     __obj.asInstanceOf[OCSPResponse]
   }

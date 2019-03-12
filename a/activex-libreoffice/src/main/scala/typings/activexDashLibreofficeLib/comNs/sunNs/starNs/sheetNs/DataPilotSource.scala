@@ -44,46 +44,27 @@ object DataPilotSource {
     DataFieldCount: scala.Double,
     Dimensions: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
     PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
-    Results: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[DataResult]],
+    Results: stdLib.SafeArray[stdLib.SafeArray[DataResult]],
     RowFieldCount: scala.Double,
     RowGrand: scala.Boolean,
-    acquire: js.Function0[scala.Unit],
-    addPropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    addRefreshListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XRefreshListener, scala.Unit],
-    addVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    getDimensions: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    getFilteredResults: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataPilotFieldFilter], 
-      activexDashInteropLib.SafeArray[scala.Double]
-    ],
-    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
-    getPropertyValue: js.Function1[java.lang.String, js.Any],
-    getResults: js.Function0[activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[DataResult]]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    refresh: js.Function0[scala.Unit],
-    release: js.Function0[scala.Unit],
-    removePropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    removeRefreshListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XRefreshListener, scala.Unit],
-    removeVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    addPropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    addRefreshListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XRefreshListener => scala.Unit,
+    addVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    getDimensions: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    getFilteredResults: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataPilotFieldFilter] => stdLib.SafeArray[scala.Double],
+    getPropertySetInfo: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    getPropertyValue: java.lang.String => js.Any,
+    getResults: () => stdLib.SafeArray[stdLib.SafeArray[DataResult]],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    refresh: () => scala.Unit,
+    release: () => scala.Unit,
+    removePropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    removeRefreshListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XRefreshListener => scala.Unit,
+    removeVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    setPropertyValue: (java.lang.String, js.Any) => scala.Unit
   ): DataPilotSource = {
-    val __obj = js.Dynamic.literal(ColumnFieldCount = ColumnFieldCount, ColumnGrand = ColumnGrand, DataFieldCount = DataFieldCount, Dimensions = Dimensions, PropertySetInfo = PropertySetInfo, Results = Results, RowFieldCount = RowFieldCount, RowGrand = RowGrand, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addRefreshListener = addRefreshListener, addVetoableChangeListener = addVetoableChangeListener, getDimensions = getDimensions, getFilteredResults = getFilteredResults, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getResults = getResults, queryInterface = queryInterface, refresh = refresh, release = release, removePropertyChangeListener = removePropertyChangeListener, removeRefreshListener = removeRefreshListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+    val __obj = js.Dynamic.literal(ColumnFieldCount = ColumnFieldCount, ColumnGrand = ColumnGrand, DataFieldCount = DataFieldCount, Dimensions = Dimensions, PropertySetInfo = PropertySetInfo, Results = Results, RowFieldCount = RowFieldCount, RowGrand = RowGrand, acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addRefreshListener = js.Any.fromFunction1(addRefreshListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getDimensions = js.Any.fromFunction0(getDimensions), getFilteredResults = js.Any.fromFunction1(getFilteredResults), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getResults = js.Any.fromFunction0(getResults), queryInterface = js.Any.fromFunction1(queryInterface), refresh = js.Any.fromFunction0(refresh), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeRefreshListener = js.Any.fromFunction1(removeRefreshListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
   
     __obj.asInstanceOf[DataPilotSource]
   }

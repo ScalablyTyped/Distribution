@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "TimeGridHelperRenderer")
 @js.native
 class TimeGridHelperRenderer ()
-  extends fullcalendarLib.timegridhelperrendererMod.default
+  extends fullcalendarLib.timeGridHelperRendererMod.default
 

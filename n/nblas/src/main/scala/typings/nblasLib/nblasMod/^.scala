@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 @JSImport("nblas", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val ConjTrans: nblasLib.nblasMod.TRANS = js.native
-  val Left: nblasLib.nblasMod.SIDE = js.native
-  val Lower: nblasLib.nblasMod.UPLO = js.native
-  val NoTrans: nblasLib.nblasMod.TRANS = js.native
-  val NonUnit: nblasLib.nblasMod.DIAG = js.native
-  val Right: nblasLib.nblasMod.SIDE = js.native
-  val Trans: nblasLib.nblasMod.TRANS = js.native
-  val Unit: nblasLib.nblasMod.DIAG = js.native
-  val Upper: nblasLib.nblasMod.UPLO = js.native
+  val ConjTrans: TRANS = js.native
+  val Left: SIDE = js.native
+  val Lower: UPLO = js.native
+  val NoTrans: TRANS = js.native
+  val NonUnit: DIAG = js.native
+  val Right: SIDE = js.native
+  val Trans: TRANS = js.native
+  val Unit: DIAG = js.native
+  val Upper: UPLO = js.native
   def asum(x: stdLib.Float32Array): scala.Double = js.native
   def asum(x: stdLib.Float64Array): scala.Double = js.native
   def axpy(x: stdLib.Float32Array, y: stdLib.Float32Array): scala.Unit = js.native
@@ -61,7 +61,7 @@ object ^ extends js.Object {
     ku: scala.Double,
     alpha: scala.Double,
     beta: scala.Double,
-    trans: nblasLib.nblasMod.TRANS
+    trans: TRANS
   ): scala.Unit = js.native
   def gbmv(a: stdLib.Float64Array, x: stdLib.Float64Array, y: stdLib.Float64Array): scala.Unit = js.native
   def gbmv(a: stdLib.Float64Array, x: stdLib.Float64Array, y: stdLib.Float64Array, kl: scala.Double): scala.Unit = js.native
@@ -97,7 +97,7 @@ object ^ extends js.Object {
     ku: scala.Double,
     alpha: scala.Double,
     beta: scala.Double,
-    trans: nblasLib.nblasMod.TRANS
+    trans: TRANS
   ): scala.Unit = js.native
   def gemm(
     a: stdLib.Float32Array,
@@ -114,7 +114,7 @@ object ^ extends js.Object {
     m: scala.Double,
     n: scala.Double,
     k: scala.Double,
-    transa: nblasLib.nblasMod.TRANS
+    transa: TRANS
   ): scala.Unit = js.native
   def gemm(
     a: stdLib.Float32Array,
@@ -123,8 +123,8 @@ object ^ extends js.Object {
     m: scala.Double,
     n: scala.Double,
     k: scala.Double,
-    transa: nblasLib.nblasMod.TRANS,
-    transb: nblasLib.nblasMod.TRANS
+    transa: TRANS,
+    transb: TRANS
   ): scala.Unit = js.native
   def gemm(
     a: stdLib.Float32Array,
@@ -133,8 +133,8 @@ object ^ extends js.Object {
     m: scala.Double,
     n: scala.Double,
     k: scala.Double,
-    transa: nblasLib.nblasMod.TRANS,
-    transb: nblasLib.nblasMod.TRANS,
+    transa: TRANS,
+    transb: TRANS,
     alpha: scala.Double
   ): scala.Unit = js.native
   def gemm(
@@ -144,8 +144,8 @@ object ^ extends js.Object {
     m: scala.Double,
     n: scala.Double,
     k: scala.Double,
-    transa: nblasLib.nblasMod.TRANS,
-    transb: nblasLib.nblasMod.TRANS,
+    transa: TRANS,
+    transb: TRANS,
     alpha: scala.Double,
     beta: scala.Double
   ): scala.Unit = js.native
@@ -164,7 +164,7 @@ object ^ extends js.Object {
     m: scala.Double,
     n: scala.Double,
     k: scala.Double,
-    transa: nblasLib.nblasMod.TRANS
+    transa: TRANS
   ): scala.Unit = js.native
   def gemm(
     a: stdLib.Float64Array,
@@ -173,8 +173,8 @@ object ^ extends js.Object {
     m: scala.Double,
     n: scala.Double,
     k: scala.Double,
-    transa: nblasLib.nblasMod.TRANS,
-    transb: nblasLib.nblasMod.TRANS
+    transa: TRANS,
+    transb: TRANS
   ): scala.Unit = js.native
   def gemm(
     a: stdLib.Float64Array,
@@ -183,8 +183,8 @@ object ^ extends js.Object {
     m: scala.Double,
     n: scala.Double,
     k: scala.Double,
-    transa: nblasLib.nblasMod.TRANS,
-    transb: nblasLib.nblasMod.TRANS,
+    transa: TRANS,
+    transb: TRANS,
     alpha: scala.Double
   ): scala.Unit = js.native
   def gemm(
@@ -194,8 +194,8 @@ object ^ extends js.Object {
     m: scala.Double,
     n: scala.Double,
     k: scala.Double,
-    transa: nblasLib.nblasMod.TRANS,
-    transb: nblasLib.nblasMod.TRANS,
+    transa: TRANS,
+    transb: TRANS,
     alpha: scala.Double,
     beta: scala.Double
   ): scala.Unit = js.native
@@ -214,7 +214,7 @@ object ^ extends js.Object {
     y: stdLib.Float32Array,
     alpha: scala.Double,
     beta: scala.Double,
-    trans: nblasLib.nblasMod.TRANS
+    trans: TRANS
   ): scala.Unit = js.native
   def gemv(a: stdLib.Float64Array, x: stdLib.Float64Array, y: stdLib.Float64Array): scala.Unit = js.native
   def gemv(a: stdLib.Float64Array, x: stdLib.Float64Array, y: stdLib.Float64Array, alpha: scala.Double): scala.Unit = js.native
@@ -231,7 +231,7 @@ object ^ extends js.Object {
     y: stdLib.Float64Array,
     alpha: scala.Double,
     beta: scala.Double,
-    trans: nblasLib.nblasMod.TRANS
+    trans: TRANS
   ): scala.Unit = js.native
   def ger(a: stdLib.Float32Array, x: stdLib.Float32Array, y: stdLib.Float32Array): scala.Unit = js.native
   def ger(a: stdLib.Float32Array, x: stdLib.Float32Array, y: stdLib.Float32Array, alpha: scala.Double): scala.Unit = js.native
@@ -268,14 +268,14 @@ object ^ extends js.Object {
     x: stdLib.Float32Array,
     y: stdLib.Float32Array,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO
+    uplo: UPLO
   ): scala.Unit = js.native
   def sbmv(
     a: stdLib.Float32Array,
     x: stdLib.Float32Array,
     y: stdLib.Float32Array,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO,
+    uplo: UPLO,
     alpha: scala.Double
   ): scala.Unit = js.native
   def sbmv(
@@ -283,7 +283,7 @@ object ^ extends js.Object {
     x: stdLib.Float32Array,
     y: stdLib.Float32Array,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO,
+    uplo: UPLO,
     alpha: scala.Double,
     beta: scala.Double
   ): scala.Unit = js.native
@@ -294,14 +294,14 @@ object ^ extends js.Object {
     x: stdLib.Float64Array,
     y: stdLib.Float64Array,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO
+    uplo: UPLO
   ): scala.Unit = js.native
   def sbmv(
     a: stdLib.Float64Array,
     x: stdLib.Float64Array,
     y: stdLib.Float64Array,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO,
+    uplo: UPLO,
     alpha: scala.Double
   ): scala.Unit = js.native
   def sbmv(
@@ -309,88 +309,68 @@ object ^ extends js.Object {
     x: stdLib.Float64Array,
     y: stdLib.Float64Array,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO,
+    uplo: UPLO,
     alpha: scala.Double,
     beta: scala.Double
   ): scala.Unit = js.native
   def scal(x: stdLib.Float32Array, alpha: scala.Double): scala.Unit = js.native
   def scal(x: stdLib.Float64Array, alpha: scala.Double): scala.Unit = js.native
   def spmv(ap: stdLib.Float32Array, x: stdLib.Float32Array, y: stdLib.Float32Array): scala.Unit = js.native
+  def spmv(ap: stdLib.Float32Array, x: stdLib.Float32Array, y: stdLib.Float32Array, uplo: UPLO): scala.Unit = js.native
   def spmv(
     ap: stdLib.Float32Array,
     x: stdLib.Float32Array,
     y: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO
-  ): scala.Unit = js.native
-  def spmv(
-    ap: stdLib.Float32Array,
-    x: stdLib.Float32Array,
-    y: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO,
+    uplo: UPLO,
     alpha: scala.Double
   ): scala.Unit = js.native
   def spmv(
     ap: stdLib.Float32Array,
     x: stdLib.Float32Array,
     y: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO,
+    uplo: UPLO,
     alpha: scala.Double,
     beta: scala.Double
   ): scala.Unit = js.native
   def spmv(ap: stdLib.Float64Array, x: stdLib.Float64Array, y: stdLib.Float64Array): scala.Unit = js.native
+  def spmv(ap: stdLib.Float64Array, x: stdLib.Float64Array, y: stdLib.Float64Array, uplo: UPLO): scala.Unit = js.native
   def spmv(
     ap: stdLib.Float64Array,
     x: stdLib.Float64Array,
     y: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO
-  ): scala.Unit = js.native
-  def spmv(
-    ap: stdLib.Float64Array,
-    x: stdLib.Float64Array,
-    y: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO,
+    uplo: UPLO,
     alpha: scala.Double
   ): scala.Unit = js.native
   def spmv(
     ap: stdLib.Float64Array,
     x: stdLib.Float64Array,
     y: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO,
+    uplo: UPLO,
     alpha: scala.Double,
     beta: scala.Double
   ): scala.Unit = js.native
   def spr(ap: stdLib.Float32Array, x: stdLib.Float32Array): scala.Unit = js.native
-  def spr(ap: stdLib.Float32Array, x: stdLib.Float32Array, uplo: nblasLib.nblasMod.UPLO): scala.Unit = js.native
-  def spr(ap: stdLib.Float32Array, x: stdLib.Float32Array, uplo: nblasLib.nblasMod.UPLO, alpha: scala.Double): scala.Unit = js.native
+  def spr(ap: stdLib.Float32Array, x: stdLib.Float32Array, uplo: UPLO): scala.Unit = js.native
+  def spr(ap: stdLib.Float32Array, x: stdLib.Float32Array, uplo: UPLO, alpha: scala.Double): scala.Unit = js.native
   def spr(ap: stdLib.Float64Array, x: stdLib.Float64Array): scala.Unit = js.native
-  def spr(ap: stdLib.Float64Array, x: stdLib.Float64Array, uplo: nblasLib.nblasMod.UPLO): scala.Unit = js.native
-  def spr(ap: stdLib.Float64Array, x: stdLib.Float64Array, uplo: nblasLib.nblasMod.UPLO, alpha: scala.Double): scala.Unit = js.native
+  def spr(ap: stdLib.Float64Array, x: stdLib.Float64Array, uplo: UPLO): scala.Unit = js.native
+  def spr(ap: stdLib.Float64Array, x: stdLib.Float64Array, uplo: UPLO, alpha: scala.Double): scala.Unit = js.native
   def spr2(ap: stdLib.Float32Array, x: stdLib.Float32Array, y: stdLib.Float32Array): scala.Unit = js.native
+  def spr2(ap: stdLib.Float32Array, x: stdLib.Float32Array, y: stdLib.Float32Array, uplo: UPLO): scala.Unit = js.native
   def spr2(
     ap: stdLib.Float32Array,
     x: stdLib.Float32Array,
     y: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO
-  ): scala.Unit = js.native
-  def spr2(
-    ap: stdLib.Float32Array,
-    x: stdLib.Float32Array,
-    y: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO,
+    uplo: UPLO,
     alpha: scala.Double
   ): scala.Unit = js.native
   def spr2(ap: stdLib.Float64Array, x: stdLib.Float64Array, y: stdLib.Float64Array): scala.Unit = js.native
+  def spr2(ap: stdLib.Float64Array, x: stdLib.Float64Array, y: stdLib.Float64Array, uplo: UPLO): scala.Unit = js.native
   def spr2(
     ap: stdLib.Float64Array,
     x: stdLib.Float64Array,
     y: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO
-  ): scala.Unit = js.native
-  def spr2(
-    ap: stdLib.Float64Array,
-    x: stdLib.Float64Array,
-    y: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO,
+    uplo: UPLO,
     alpha: scala.Double
   ): scala.Unit = js.native
   def swap(x: stdLib.Float32Array, y: stdLib.Float32Array): scala.Unit = js.native
@@ -401,7 +381,7 @@ object ^ extends js.Object {
     c: stdLib.Float32Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE
+    side: SIDE
   ): scala.Unit = js.native
   def symm(
     a: stdLib.Float32Array,
@@ -409,8 +389,8 @@ object ^ extends js.Object {
     c: stdLib.Float32Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO
+    side: SIDE,
+    uplo: UPLO
   ): scala.Unit = js.native
   def symm(
     a: stdLib.Float32Array,
@@ -418,8 +398,8 @@ object ^ extends js.Object {
     c: stdLib.Float32Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO,
+    side: SIDE,
+    uplo: UPLO,
     alpha: scala.Double
   ): scala.Unit = js.native
   def symm(
@@ -428,8 +408,8 @@ object ^ extends js.Object {
     c: stdLib.Float32Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO,
+    side: SIDE,
+    uplo: UPLO,
     alpha: scala.Double,
     beta: scala.Double
   ): scala.Unit = js.native
@@ -439,7 +419,7 @@ object ^ extends js.Object {
     c: stdLib.Float64Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE
+    side: SIDE
   ): scala.Unit = js.native
   def symm(
     a: stdLib.Float64Array,
@@ -447,8 +427,8 @@ object ^ extends js.Object {
     c: stdLib.Float64Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO
+    side: SIDE,
+    uplo: UPLO
   ): scala.Unit = js.native
   def symm(
     a: stdLib.Float64Array,
@@ -456,8 +436,8 @@ object ^ extends js.Object {
     c: stdLib.Float64Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO,
+    side: SIDE,
+    uplo: UPLO,
     alpha: scala.Double
   ): scala.Unit = js.native
   def symm(
@@ -466,87 +446,67 @@ object ^ extends js.Object {
     c: stdLib.Float64Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO,
+    side: SIDE,
+    uplo: UPLO,
     alpha: scala.Double,
     beta: scala.Double
   ): scala.Unit = js.native
   def symv(a: stdLib.Float32Array, x: stdLib.Float32Array, y: stdLib.Float32Array): scala.Unit = js.native
+  def symv(a: stdLib.Float32Array, x: stdLib.Float32Array, y: stdLib.Float32Array, uplo: UPLO): scala.Unit = js.native
   def symv(
     a: stdLib.Float32Array,
     x: stdLib.Float32Array,
     y: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO
-  ): scala.Unit = js.native
-  def symv(
-    a: stdLib.Float32Array,
-    x: stdLib.Float32Array,
-    y: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO,
+    uplo: UPLO,
     alpha: scala.Double
   ): scala.Unit = js.native
   def symv(
     a: stdLib.Float32Array,
     x: stdLib.Float32Array,
     y: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO,
+    uplo: UPLO,
     alpha: scala.Double,
     beta: scala.Double
   ): scala.Unit = js.native
   def symv(a: stdLib.Float64Array, x: stdLib.Float64Array, y: stdLib.Float64Array): scala.Unit = js.native
+  def symv(a: stdLib.Float64Array, x: stdLib.Float64Array, y: stdLib.Float64Array, uplo: UPLO): scala.Unit = js.native
   def symv(
     a: stdLib.Float64Array,
     x: stdLib.Float64Array,
     y: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO
-  ): scala.Unit = js.native
-  def symv(
-    a: stdLib.Float64Array,
-    x: stdLib.Float64Array,
-    y: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO,
+    uplo: UPLO,
     alpha: scala.Double
   ): scala.Unit = js.native
   def symv(
     a: stdLib.Float64Array,
     x: stdLib.Float64Array,
     y: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO,
+    uplo: UPLO,
     alpha: scala.Double,
     beta: scala.Double
   ): scala.Unit = js.native
   def syr(a: stdLib.Float32Array, x: stdLib.Float32Array): scala.Unit = js.native
-  def syr(a: stdLib.Float32Array, x: stdLib.Float32Array, uplo: nblasLib.nblasMod.UPLO): scala.Unit = js.native
-  def syr(a: stdLib.Float32Array, x: stdLib.Float32Array, uplo: nblasLib.nblasMod.UPLO, alpha: scala.Double): scala.Unit = js.native
+  def syr(a: stdLib.Float32Array, x: stdLib.Float32Array, uplo: UPLO): scala.Unit = js.native
+  def syr(a: stdLib.Float32Array, x: stdLib.Float32Array, uplo: UPLO, alpha: scala.Double): scala.Unit = js.native
   def syr(a: stdLib.Float64Array, x: stdLib.Float64Array): scala.Unit = js.native
-  def syr(a: stdLib.Float64Array, x: stdLib.Float64Array, uplo: nblasLib.nblasMod.UPLO): scala.Unit = js.native
-  def syr(a: stdLib.Float64Array, x: stdLib.Float64Array, uplo: nblasLib.nblasMod.UPLO, alpha: scala.Double): scala.Unit = js.native
+  def syr(a: stdLib.Float64Array, x: stdLib.Float64Array, uplo: UPLO): scala.Unit = js.native
+  def syr(a: stdLib.Float64Array, x: stdLib.Float64Array, uplo: UPLO, alpha: scala.Double): scala.Unit = js.native
   def syr2(a: stdLib.Float32Array, x: stdLib.Float32Array, y: stdLib.Float32Array): scala.Unit = js.native
+  def syr2(a: stdLib.Float32Array, x: stdLib.Float32Array, y: stdLib.Float32Array, uplo: UPLO): scala.Unit = js.native
   def syr2(
     a: stdLib.Float32Array,
     x: stdLib.Float32Array,
     y: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO
-  ): scala.Unit = js.native
-  def syr2(
-    a: stdLib.Float32Array,
-    x: stdLib.Float32Array,
-    y: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO,
+    uplo: UPLO,
     alpha: scala.Double
   ): scala.Unit = js.native
   def syr2(a: stdLib.Float64Array, x: stdLib.Float64Array, y: stdLib.Float64Array): scala.Unit = js.native
+  def syr2(a: stdLib.Float64Array, x: stdLib.Float64Array, y: stdLib.Float64Array, uplo: UPLO): scala.Unit = js.native
   def syr2(
     a: stdLib.Float64Array,
     x: stdLib.Float64Array,
     y: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO
-  ): scala.Unit = js.native
-  def syr2(
-    a: stdLib.Float64Array,
-    x: stdLib.Float64Array,
-    y: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO,
+    uplo: UPLO,
     alpha: scala.Double
   ): scala.Unit = js.native
   def syr2k(
@@ -562,7 +522,7 @@ object ^ extends js.Object {
     c: stdLib.Float32Array,
     n: scala.Double,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO
+    uplo: UPLO
   ): scala.Unit = js.native
   def syr2k(
     a: stdLib.Float32Array,
@@ -570,8 +530,8 @@ object ^ extends js.Object {
     c: stdLib.Float32Array,
     n: scala.Double,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS
+    uplo: UPLO,
+    trans: TRANS
   ): scala.Unit = js.native
   def syr2k(
     a: stdLib.Float32Array,
@@ -579,8 +539,8 @@ object ^ extends js.Object {
     c: stdLib.Float32Array,
     n: scala.Double,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
+    uplo: UPLO,
+    trans: TRANS,
     alpha: scala.Double
   ): scala.Unit = js.native
   def syr2k(
@@ -589,8 +549,8 @@ object ^ extends js.Object {
     c: stdLib.Float32Array,
     n: scala.Double,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
+    uplo: UPLO,
+    trans: TRANS,
     alpha: scala.Double,
     beta: scala.Double
   ): scala.Unit = js.native
@@ -607,7 +567,7 @@ object ^ extends js.Object {
     c: stdLib.Float64Array,
     n: scala.Double,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO
+    uplo: UPLO
   ): scala.Unit = js.native
   def syr2k(
     a: stdLib.Float64Array,
@@ -615,8 +575,8 @@ object ^ extends js.Object {
     c: stdLib.Float64Array,
     n: scala.Double,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS
+    uplo: UPLO,
+    trans: TRANS
   ): scala.Unit = js.native
   def syr2k(
     a: stdLib.Float64Array,
@@ -624,8 +584,8 @@ object ^ extends js.Object {
     c: stdLib.Float64Array,
     n: scala.Double,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
+    uplo: UPLO,
+    trans: TRANS,
     alpha: scala.Double
   ): scala.Unit = js.native
   def syr2k(
@@ -634,34 +594,28 @@ object ^ extends js.Object {
     c: stdLib.Float64Array,
     n: scala.Double,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
+    uplo: UPLO,
+    trans: TRANS,
     alpha: scala.Double,
     beta: scala.Double
   ): scala.Unit = js.native
   def syrk(a: stdLib.Float32Array, c: stdLib.Float32Array, n: scala.Double, k: scala.Double): scala.Unit = js.native
+  def syrk(a: stdLib.Float32Array, c: stdLib.Float32Array, n: scala.Double, k: scala.Double, uplo: UPLO): scala.Unit = js.native
   def syrk(
     a: stdLib.Float32Array,
     c: stdLib.Float32Array,
     n: scala.Double,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO
+    uplo: UPLO,
+    trans: TRANS
   ): scala.Unit = js.native
   def syrk(
     a: stdLib.Float32Array,
     c: stdLib.Float32Array,
     n: scala.Double,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS
-  ): scala.Unit = js.native
-  def syrk(
-    a: stdLib.Float32Array,
-    c: stdLib.Float32Array,
-    n: scala.Double,
-    k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
+    uplo: UPLO,
+    trans: TRANS,
     alpha: scala.Double
   ): scala.Unit = js.native
   def syrk(
@@ -669,34 +623,28 @@ object ^ extends js.Object {
     c: stdLib.Float32Array,
     n: scala.Double,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
+    uplo: UPLO,
+    trans: TRANS,
     alpha: scala.Double,
     beta: scala.Double
   ): scala.Unit = js.native
   def syrk(a: stdLib.Float64Array, c: stdLib.Float64Array, n: scala.Double, k: scala.Double): scala.Unit = js.native
+  def syrk(a: stdLib.Float64Array, c: stdLib.Float64Array, n: scala.Double, k: scala.Double, uplo: UPLO): scala.Unit = js.native
   def syrk(
     a: stdLib.Float64Array,
     c: stdLib.Float64Array,
     n: scala.Double,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO
+    uplo: UPLO,
+    trans: TRANS
   ): scala.Unit = js.native
   def syrk(
     a: stdLib.Float64Array,
     c: stdLib.Float64Array,
     n: scala.Double,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS
-  ): scala.Unit = js.native
-  def syrk(
-    a: stdLib.Float64Array,
-    c: stdLib.Float64Array,
-    n: scala.Double,
-    k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
+    uplo: UPLO,
+    trans: TRANS,
     alpha: scala.Double
   ): scala.Unit = js.native
   def syrk(
@@ -704,384 +652,228 @@ object ^ extends js.Object {
     c: stdLib.Float64Array,
     n: scala.Double,
     k: scala.Double,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
+    uplo: UPLO,
+    trans: TRANS,
     alpha: scala.Double,
     beta: scala.Double
   ): scala.Unit = js.native
   def tbmv(a: stdLib.Float32Array, x: stdLib.Float32Array, y: stdLib.Float32Array): scala.Unit = js.native
+  def tbmv(a: stdLib.Float32Array, x: stdLib.Float32Array, y: stdLib.Float32Array, uplo: UPLO): scala.Unit = js.native
+  def tbmv(a: stdLib.Float32Array, x: stdLib.Float32Array, y: stdLib.Float32Array, uplo: UPLO, trans: TRANS): scala.Unit = js.native
   def tbmv(
     a: stdLib.Float32Array,
     x: stdLib.Float32Array,
     y: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO
-  ): scala.Unit = js.native
-  def tbmv(
-    a: stdLib.Float32Array,
-    x: stdLib.Float32Array,
-    y: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS
-  ): scala.Unit = js.native
-  def tbmv(
-    a: stdLib.Float32Array,
-    x: stdLib.Float32Array,
-    y: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG
+    uplo: UPLO,
+    trans: TRANS,
+    diag: DIAG
   ): scala.Unit = js.native
   def tbmv(a: stdLib.Float64Array, x: stdLib.Float64Array, y: stdLib.Float64Array): scala.Unit = js.native
+  def tbmv(a: stdLib.Float64Array, x: stdLib.Float64Array, y: stdLib.Float64Array, uplo: UPLO): scala.Unit = js.native
+  def tbmv(a: stdLib.Float64Array, x: stdLib.Float64Array, y: stdLib.Float64Array, uplo: UPLO, trans: TRANS): scala.Unit = js.native
   def tbmv(
     a: stdLib.Float64Array,
     x: stdLib.Float64Array,
     y: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO
-  ): scala.Unit = js.native
-  def tbmv(
-    a: stdLib.Float64Array,
-    x: stdLib.Float64Array,
-    y: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS
-  ): scala.Unit = js.native
-  def tbmv(
-    a: stdLib.Float64Array,
-    x: stdLib.Float64Array,
-    y: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG
+    uplo: UPLO,
+    trans: TRANS,
+    diag: DIAG
   ): scala.Unit = js.native
   def tbsv(a: stdLib.Float32Array, x: stdLib.Float32Array): scala.Unit = js.native
-  def tbsv(a: stdLib.Float32Array, x: stdLib.Float32Array, uplo: nblasLib.nblasMod.UPLO): scala.Unit = js.native
-  def tbsv(
-    a: stdLib.Float32Array,
-    x: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS
-  ): scala.Unit = js.native
-  def tbsv(
-    a: stdLib.Float32Array,
-    x: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG
-  ): scala.Unit = js.native
+  def tbsv(a: stdLib.Float32Array, x: stdLib.Float32Array, uplo: UPLO): scala.Unit = js.native
+  def tbsv(a: stdLib.Float32Array, x: stdLib.Float32Array, uplo: UPLO, trans: TRANS): scala.Unit = js.native
+  def tbsv(a: stdLib.Float32Array, x: stdLib.Float32Array, uplo: UPLO, trans: TRANS, diag: DIAG): scala.Unit = js.native
   def tbsv(a: stdLib.Float64Array, x: stdLib.Float64Array): scala.Unit = js.native
-  def tbsv(a: stdLib.Float64Array, x: stdLib.Float64Array, uplo: nblasLib.nblasMod.UPLO): scala.Unit = js.native
-  def tbsv(
-    a: stdLib.Float64Array,
-    x: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS
-  ): scala.Unit = js.native
-  def tbsv(
-    a: stdLib.Float64Array,
-    x: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG
-  ): scala.Unit = js.native
+  def tbsv(a: stdLib.Float64Array, x: stdLib.Float64Array, uplo: UPLO): scala.Unit = js.native
+  def tbsv(a: stdLib.Float64Array, x: stdLib.Float64Array, uplo: UPLO, trans: TRANS): scala.Unit = js.native
+  def tbsv(a: stdLib.Float64Array, x: stdLib.Float64Array, uplo: UPLO, trans: TRANS, diag: DIAG): scala.Unit = js.native
   def tpmv(ap: stdLib.Float32Array, x: stdLib.Float32Array): scala.Unit = js.native
-  def tpmv(ap: stdLib.Float32Array, x: stdLib.Float32Array, uplo: nblasLib.nblasMod.UPLO): scala.Unit = js.native
-  def tpmv(
-    ap: stdLib.Float32Array,
-    x: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS
-  ): scala.Unit = js.native
-  def tpmv(
-    ap: stdLib.Float32Array,
-    x: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG
-  ): scala.Unit = js.native
+  def tpmv(ap: stdLib.Float32Array, x: stdLib.Float32Array, uplo: UPLO): scala.Unit = js.native
+  def tpmv(ap: stdLib.Float32Array, x: stdLib.Float32Array, uplo: UPLO, trans: TRANS): scala.Unit = js.native
+  def tpmv(ap: stdLib.Float32Array, x: stdLib.Float32Array, uplo: UPLO, trans: TRANS, diag: DIAG): scala.Unit = js.native
   def tpmv(ap: stdLib.Float64Array, x: stdLib.Float64Array): scala.Unit = js.native
-  def tpmv(ap: stdLib.Float64Array, x: stdLib.Float64Array, uplo: nblasLib.nblasMod.UPLO): scala.Unit = js.native
-  def tpmv(
-    ap: stdLib.Float64Array,
-    x: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS
-  ): scala.Unit = js.native
-  def tpmv(
-    ap: stdLib.Float64Array,
-    x: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG
-  ): scala.Unit = js.native
+  def tpmv(ap: stdLib.Float64Array, x: stdLib.Float64Array, uplo: UPLO): scala.Unit = js.native
+  def tpmv(ap: stdLib.Float64Array, x: stdLib.Float64Array, uplo: UPLO, trans: TRANS): scala.Unit = js.native
+  def tpmv(ap: stdLib.Float64Array, x: stdLib.Float64Array, uplo: UPLO, trans: TRANS, diag: DIAG): scala.Unit = js.native
   def tpsv(ap: stdLib.Float32Array, x: stdLib.Float32Array): scala.Unit = js.native
-  def tpsv(ap: stdLib.Float32Array, x: stdLib.Float32Array, uplo: nblasLib.nblasMod.UPLO): scala.Unit = js.native
-  def tpsv(
-    ap: stdLib.Float32Array,
-    x: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS
-  ): scala.Unit = js.native
-  def tpsv(
-    ap: stdLib.Float32Array,
-    x: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG
-  ): scala.Unit = js.native
+  def tpsv(ap: stdLib.Float32Array, x: stdLib.Float32Array, uplo: UPLO): scala.Unit = js.native
+  def tpsv(ap: stdLib.Float32Array, x: stdLib.Float32Array, uplo: UPLO, trans: TRANS): scala.Unit = js.native
+  def tpsv(ap: stdLib.Float32Array, x: stdLib.Float32Array, uplo: UPLO, trans: TRANS, diag: DIAG): scala.Unit = js.native
   def tpsv(ap: stdLib.Float64Array, x: stdLib.Float64Array): scala.Unit = js.native
-  def tpsv(ap: stdLib.Float64Array, x: stdLib.Float64Array, uplo: nblasLib.nblasMod.UPLO): scala.Unit = js.native
-  def tpsv(
-    ap: stdLib.Float64Array,
-    x: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS
-  ): scala.Unit = js.native
-  def tpsv(
-    ap: stdLib.Float64Array,
-    x: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG
+  def tpsv(ap: stdLib.Float64Array, x: stdLib.Float64Array, uplo: UPLO): scala.Unit = js.native
+  def tpsv(ap: stdLib.Float64Array, x: stdLib.Float64Array, uplo: UPLO, trans: TRANS): scala.Unit = js.native
+  def tpsv(ap: stdLib.Float64Array, x: stdLib.Float64Array, uplo: UPLO, trans: TRANS, diag: DIAG): scala.Unit = js.native
+  def trmm(a: stdLib.Float32Array, b: stdLib.Float32Array, m: scala.Double, n: scala.Double, side: SIDE): scala.Unit = js.native
+  def trmm(
+    a: stdLib.Float32Array,
+    b: stdLib.Float32Array,
+    m: scala.Double,
+    n: scala.Double,
+    side: SIDE,
+    uplo: UPLO
   ): scala.Unit = js.native
   def trmm(
     a: stdLib.Float32Array,
     b: stdLib.Float32Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE
+    side: SIDE,
+    uplo: UPLO,
+    transa: TRANS
   ): scala.Unit = js.native
   def trmm(
     a: stdLib.Float32Array,
     b: stdLib.Float32Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO
+    side: SIDE,
+    uplo: UPLO,
+    transa: TRANS,
+    diag: DIAG
   ): scala.Unit = js.native
   def trmm(
     a: stdLib.Float32Array,
     b: stdLib.Float32Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO,
-    transa: nblasLib.nblasMod.TRANS
-  ): scala.Unit = js.native
-  def trmm(
-    a: stdLib.Float32Array,
-    b: stdLib.Float32Array,
-    m: scala.Double,
-    n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO,
-    transa: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG
-  ): scala.Unit = js.native
-  def trmm(
-    a: stdLib.Float32Array,
-    b: stdLib.Float32Array,
-    m: scala.Double,
-    n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO,
-    transa: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG,
+    side: SIDE,
+    uplo: UPLO,
+    transa: TRANS,
+    diag: DIAG,
     alpha: scala.Double
   ): scala.Unit = js.native
+  def trmm(a: stdLib.Float64Array, b: stdLib.Float64Array, m: scala.Double, n: scala.Double, side: SIDE): scala.Unit = js.native
   def trmm(
     a: stdLib.Float64Array,
     b: stdLib.Float64Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE
+    side: SIDE,
+    uplo: UPLO
   ): scala.Unit = js.native
   def trmm(
     a: stdLib.Float64Array,
     b: stdLib.Float64Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO
+    side: SIDE,
+    uplo: UPLO,
+    transa: TRANS
   ): scala.Unit = js.native
   def trmm(
     a: stdLib.Float64Array,
     b: stdLib.Float64Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO,
-    transa: nblasLib.nblasMod.TRANS
+    side: SIDE,
+    uplo: UPLO,
+    transa: TRANS,
+    diag: DIAG
   ): scala.Unit = js.native
   def trmm(
     a: stdLib.Float64Array,
     b: stdLib.Float64Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO,
-    transa: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG
-  ): scala.Unit = js.native
-  def trmm(
-    a: stdLib.Float64Array,
-    b: stdLib.Float64Array,
-    m: scala.Double,
-    n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO,
-    transa: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG,
+    side: SIDE,
+    uplo: UPLO,
+    transa: TRANS,
+    diag: DIAG,
     alpha: scala.Double
   ): scala.Unit = js.native
   def trmv(a: stdLib.Float32Array, x: stdLib.Float32Array): scala.Unit = js.native
-  def trmv(a: stdLib.Float32Array, x: stdLib.Float32Array, uplo: nblasLib.nblasMod.UPLO): scala.Unit = js.native
-  def trmv(
-    a: stdLib.Float32Array,
-    x: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS
-  ): scala.Unit = js.native
-  def trmv(
-    a: stdLib.Float32Array,
-    x: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG
-  ): scala.Unit = js.native
+  def trmv(a: stdLib.Float32Array, x: stdLib.Float32Array, uplo: UPLO): scala.Unit = js.native
+  def trmv(a: stdLib.Float32Array, x: stdLib.Float32Array, uplo: UPLO, trans: TRANS): scala.Unit = js.native
+  def trmv(a: stdLib.Float32Array, x: stdLib.Float32Array, uplo: UPLO, trans: TRANS, diag: DIAG): scala.Unit = js.native
   def trmv(a: stdLib.Float64Array, x: stdLib.Float64Array): scala.Unit = js.native
-  def trmv(a: stdLib.Float64Array, x: stdLib.Float64Array, uplo: nblasLib.nblasMod.UPLO): scala.Unit = js.native
-  def trmv(
-    a: stdLib.Float64Array,
-    x: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS
-  ): scala.Unit = js.native
-  def trmv(
-    a: stdLib.Float64Array,
-    x: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG
+  def trmv(a: stdLib.Float64Array, x: stdLib.Float64Array, uplo: UPLO): scala.Unit = js.native
+  def trmv(a: stdLib.Float64Array, x: stdLib.Float64Array, uplo: UPLO, trans: TRANS): scala.Unit = js.native
+  def trmv(a: stdLib.Float64Array, x: stdLib.Float64Array, uplo: UPLO, trans: TRANS, diag: DIAG): scala.Unit = js.native
+  def trsm(a: stdLib.Float32Array, b: stdLib.Float32Array, m: scala.Double, n: scala.Double, side: SIDE): scala.Unit = js.native
+  def trsm(
+    a: stdLib.Float32Array,
+    b: stdLib.Float32Array,
+    m: scala.Double,
+    n: scala.Double,
+    side: SIDE,
+    uplo: UPLO
   ): scala.Unit = js.native
   def trsm(
     a: stdLib.Float32Array,
     b: stdLib.Float32Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE
+    side: SIDE,
+    uplo: UPLO,
+    transa: TRANS
   ): scala.Unit = js.native
   def trsm(
     a: stdLib.Float32Array,
     b: stdLib.Float32Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO
+    side: SIDE,
+    uplo: UPLO,
+    transa: TRANS,
+    diag: DIAG
   ): scala.Unit = js.native
   def trsm(
     a: stdLib.Float32Array,
     b: stdLib.Float32Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO,
-    transa: nblasLib.nblasMod.TRANS
-  ): scala.Unit = js.native
-  def trsm(
-    a: stdLib.Float32Array,
-    b: stdLib.Float32Array,
-    m: scala.Double,
-    n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO,
-    transa: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG
-  ): scala.Unit = js.native
-  def trsm(
-    a: stdLib.Float32Array,
-    b: stdLib.Float32Array,
-    m: scala.Double,
-    n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO,
-    transa: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG,
+    side: SIDE,
+    uplo: UPLO,
+    transa: TRANS,
+    diag: DIAG,
     alpha: scala.Double
   ): scala.Unit = js.native
+  def trsm(a: stdLib.Float64Array, b: stdLib.Float64Array, m: scala.Double, n: scala.Double, side: SIDE): scala.Unit = js.native
   def trsm(
     a: stdLib.Float64Array,
     b: stdLib.Float64Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE
+    side: SIDE,
+    uplo: UPLO
   ): scala.Unit = js.native
   def trsm(
     a: stdLib.Float64Array,
     b: stdLib.Float64Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO
+    side: SIDE,
+    uplo: UPLO,
+    transa: TRANS
   ): scala.Unit = js.native
   def trsm(
     a: stdLib.Float64Array,
     b: stdLib.Float64Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO,
-    transa: nblasLib.nblasMod.TRANS
+    side: SIDE,
+    uplo: UPLO,
+    transa: TRANS,
+    diag: DIAG
   ): scala.Unit = js.native
   def trsm(
     a: stdLib.Float64Array,
     b: stdLib.Float64Array,
     m: scala.Double,
     n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO,
-    transa: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG
-  ): scala.Unit = js.native
-  def trsm(
-    a: stdLib.Float64Array,
-    b: stdLib.Float64Array,
-    m: scala.Double,
-    n: scala.Double,
-    side: nblasLib.nblasMod.SIDE,
-    uplo: nblasLib.nblasMod.UPLO,
-    transa: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG,
+    side: SIDE,
+    uplo: UPLO,
+    transa: TRANS,
+    diag: DIAG,
     alpha: scala.Double
   ): scala.Unit = js.native
   def trsv(a: stdLib.Float32Array, x: stdLib.Float32Array): scala.Unit = js.native
-  def trsv(a: stdLib.Float32Array, x: stdLib.Float32Array, uplo: nblasLib.nblasMod.UPLO): scala.Unit = js.native
-  def trsv(
-    a: stdLib.Float32Array,
-    x: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS
-  ): scala.Unit = js.native
-  def trsv(
-    a: stdLib.Float32Array,
-    x: stdLib.Float32Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG
-  ): scala.Unit = js.native
+  def trsv(a: stdLib.Float32Array, x: stdLib.Float32Array, uplo: UPLO): scala.Unit = js.native
+  def trsv(a: stdLib.Float32Array, x: stdLib.Float32Array, uplo: UPLO, trans: TRANS): scala.Unit = js.native
+  def trsv(a: stdLib.Float32Array, x: stdLib.Float32Array, uplo: UPLO, trans: TRANS, diag: DIAG): scala.Unit = js.native
   def trsv(a: stdLib.Float64Array, x: stdLib.Float64Array): scala.Unit = js.native
-  def trsv(a: stdLib.Float64Array, x: stdLib.Float64Array, uplo: nblasLib.nblasMod.UPLO): scala.Unit = js.native
-  def trsv(
-    a: stdLib.Float64Array,
-    x: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS
-  ): scala.Unit = js.native
-  def trsv(
-    a: stdLib.Float64Array,
-    x: stdLib.Float64Array,
-    uplo: nblasLib.nblasMod.UPLO,
-    trans: nblasLib.nblasMod.TRANS,
-    diag: nblasLib.nblasMod.DIAG
-  ): scala.Unit = js.native
+  def trsv(a: stdLib.Float64Array, x: stdLib.Float64Array, uplo: UPLO): scala.Unit = js.native
+  def trsv(a: stdLib.Float64Array, x: stdLib.Float64Array, uplo: UPLO, trans: TRANS): scala.Unit = js.native
+  def trsv(a: stdLib.Float64Array, x: stdLib.Float64Array, uplo: UPLO, trans: TRANS, diag: DIAG): scala.Unit = js.native
 }
 

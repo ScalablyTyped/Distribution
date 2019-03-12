@@ -30,8 +30,8 @@ object Anon_BaseClass {
     className: java.lang.String = null,
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
     in: js.UndefOr[scala.Boolean] = js.undefined,
-    onEnter: js.Function0[scala.Unit] = null,
-    onLeave: js.Function0[scala.Unit] = null,
+    onEnter: () => scala.Unit = null,
+    onLeave: () => scala.Unit = null,
     tag: reactLib.reactMod.ReactNs.ReactType[_] = null,
     transitionAppear: js.UndefOr[scala.Boolean] = js.undefined,
     transitionAppearTimeout: scala.Int | scala.Double = null,
@@ -46,8 +46,8 @@ object Anon_BaseClass {
     if (className != null) __obj.updateDynamic("className")(className)
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
     if (!js.isUndefined(in)) __obj.updateDynamic("in")(in)
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
-    if (onLeave != null) __obj.updateDynamic("onLeave")(onLeave)
+    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction0(onEnter))
+    if (onLeave != null) __obj.updateDynamic("onLeave")(js.Any.fromFunction0(onLeave))
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     if (!js.isUndefined(transitionAppear)) __obj.updateDynamic("transitionAppear")(transitionAppear)
     if (transitionAppearTimeout != null) __obj.updateDynamic("transitionAppearTimeout")(transitionAppearTimeout.asInstanceOf[js.Any])

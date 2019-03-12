@@ -22,39 +22,31 @@ object DataInputStream {
     InputStream: XInputStream,
     Predecessor: XConnectable,
     Successor: XConnectable,
-    acquire: js.Function0[scala.Unit],
-    available: js.Function0[scala.Double],
-    closeInput: js.Function0[scala.Unit],
-    getInputStream: js.Function0[XInputStream],
-    getPredecessor: js.Function0[XConnectable],
-    getSuccessor: js.Function0[XConnectable],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    readBoolean: js.Function0[scala.Double],
-    readByte: js.Function0[scala.Double],
-    readBytes: js.Function2[
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      scala.Double, 
-      scala.Double
-    ],
-    readChar: js.Function0[java.lang.String],
-    readDouble: js.Function0[scala.Double],
-    readFloat: js.Function0[scala.Double],
-    readHyper: js.Function0[scala.Double],
-    readLong: js.Function0[scala.Double],
-    readShort: js.Function0[scala.Double],
-    readSomeBytes: js.Function2[
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      scala.Double, 
-      scala.Double
-    ],
-    readUTF: js.Function0[java.lang.String],
-    release: js.Function0[scala.Unit],
-    setInputStream: js.Function1[XInputStream, scala.Unit],
-    setPredecessor: js.Function1[XConnectable, scala.Unit],
-    setSuccessor: js.Function1[XConnectable, scala.Unit],
-    skipBytes: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    available: () => scala.Double,
+    closeInput: () => scala.Unit,
+    getInputStream: () => XInputStream,
+    getPredecessor: () => XConnectable,
+    getSuccessor: () => XConnectable,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    readBoolean: () => scala.Double,
+    readByte: () => scala.Double,
+    readBytes: (js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], scala.Double) => scala.Double,
+    readChar: () => java.lang.String,
+    readDouble: () => scala.Double,
+    readFloat: () => scala.Double,
+    readHyper: () => scala.Double,
+    readLong: () => scala.Double,
+    readShort: () => scala.Double,
+    readSomeBytes: (js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], scala.Double) => scala.Double,
+    readUTF: () => java.lang.String,
+    release: () => scala.Unit,
+    setInputStream: XInputStream => scala.Unit,
+    setPredecessor: XConnectable => scala.Unit,
+    setSuccessor: XConnectable => scala.Unit,
+    skipBytes: scala.Double => scala.Unit
   ): DataInputStream = {
-    val __obj = js.Dynamic.literal(InputStream = InputStream, Predecessor = Predecessor, Successor = Successor, acquire = acquire, available = available, closeInput = closeInput, getInputStream = getInputStream, getPredecessor = getPredecessor, getSuccessor = getSuccessor, queryInterface = queryInterface, readBoolean = readBoolean, readByte = readByte, readBytes = readBytes, readChar = readChar, readDouble = readDouble, readFloat = readFloat, readHyper = readHyper, readLong = readLong, readShort = readShort, readSomeBytes = readSomeBytes, readUTF = readUTF, release = release, setInputStream = setInputStream, setPredecessor = setPredecessor, setSuccessor = setSuccessor, skipBytes = skipBytes)
+    val __obj = js.Dynamic.literal(InputStream = InputStream, Predecessor = Predecessor, Successor = Successor, acquire = js.Any.fromFunction0(acquire), available = js.Any.fromFunction0(available), closeInput = js.Any.fromFunction0(closeInput), getInputStream = js.Any.fromFunction0(getInputStream), getPredecessor = js.Any.fromFunction0(getPredecessor), getSuccessor = js.Any.fromFunction0(getSuccessor), queryInterface = js.Any.fromFunction1(queryInterface), readBoolean = js.Any.fromFunction0(readBoolean), readByte = js.Any.fromFunction0(readByte), readBytes = js.Any.fromFunction2(readBytes), readChar = js.Any.fromFunction0(readChar), readDouble = js.Any.fromFunction0(readDouble), readFloat = js.Any.fromFunction0(readFloat), readHyper = js.Any.fromFunction0(readHyper), readLong = js.Any.fromFunction0(readLong), readShort = js.Any.fromFunction0(readShort), readSomeBytes = js.Any.fromFunction2(readSomeBytes), readUTF = js.Any.fromFunction0(readUTF), release = js.Any.fromFunction0(release), setInputStream = js.Any.fromFunction1(setInputStream), setPredecessor = js.Any.fromFunction1(setPredecessor), setSuccessor = js.Any.fromFunction1(setSuccessor), skipBytes = js.Any.fromFunction1(skipBytes))
   
     __obj.asInstanceOf[DataInputStream]
   }

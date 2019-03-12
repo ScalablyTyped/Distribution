@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.CaptionLabel")
 @js.native
 class CaptionLabel protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val BuiltIn: scala.Boolean = js.native
   var ChapterStyleLevel: scala.Double = js.native
   val Creator: scala.Double = js.native

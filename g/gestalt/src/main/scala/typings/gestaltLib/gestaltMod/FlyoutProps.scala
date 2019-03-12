@@ -25,14 +25,14 @@ object FlyoutProps {
   @scala.inline
   def apply(
     anchor: reactLib.reactMod.ReactNs.RefObject[_],
-    onDismiss: js.Function0[scala.Unit],
+    onDismiss: () => scala.Unit,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     color: gestaltLib.gestaltLibStrings.blue | gestaltLib.gestaltLibStrings.orange | gestaltLib.gestaltLibStrings.white = null,
     idealDirection: gestaltLib.gestaltLibStrings.up | gestaltLib.gestaltLibStrings.right | gestaltLib.gestaltLibStrings.down | gestaltLib.gestaltLibStrings.left = null,
     positionRelativeToAnchor: js.UndefOr[scala.Boolean] = js.undefined,
     size: gestaltLib.gestaltLibStrings.xs | gestaltLib.gestaltLibStrings.sm | gestaltLib.gestaltLibStrings.md | gestaltLib.gestaltLibStrings.lg | gestaltLib.gestaltLibStrings.xl | scala.Double = null
   ): FlyoutProps = {
-    val __obj = js.Dynamic.literal(anchor = anchor, onDismiss = onDismiss)
+    val __obj = js.Dynamic.literal(anchor = anchor, onDismiss = js.Any.fromFunction0(onDismiss))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (idealDirection != null) __obj.updateDynamic("idealDirection")(idealDirection.asInstanceOf[js.Any])

@@ -12,7 +12,7 @@ object winstonNs extends js.Object {
   trait Container
     extends org.scalablytyped.runtime.Instantiable0[Container]
        with org.scalablytyped.runtime.Instantiable1[/* options */ LoggerOptions, Container] {
-    var loggers: nodeLib.Map[java.lang.String, Logger] = js.native
+    var loggers: stdLib.Map[java.lang.String, Logger] = js.native
     var options: LoggerOptions = js.native
     def add(id: java.lang.String): Logger = js.native
     def add(id: java.lang.String, options: LoggerOptions): Logger = js.native
@@ -27,13 +27,13 @@ object winstonNs extends js.Object {
   trait ExceptionHandler
     extends org.scalablytyped.runtime.Instantiable1[/* logger */ Logger, ExceptionHandler] {
     var catcher: js.Function | scala.Boolean = js.native
-    var handlers: nodeLib.Map[_, _] = js.native
+    var handlers: stdLib.Map[_, _] = js.native
     var logger: Logger = js.native
     def getAllInfo(err: java.lang.String): js.Object = js.native
-    def getAllInfo(err: nodeLib.Error): js.Object = js.native
+    def getAllInfo(err: stdLib.Error): js.Object = js.native
     def getOsInfo(): js.Object = js.native
     def getProcessInfo(): js.Object = js.native
-    def getTrace(err: nodeLib.Error): js.Object = js.native
+    def getTrace(err: stdLib.Error): js.Object = js.native
     def handle(transports: winstonDashTransportLib.winstonDashTransportMod.namespaced*): scala.Unit = js.native
     def unhandle(transports: winstonDashTransportLib.winstonDashTransportMod.namespaced*): scala.Unit = js.native
   }
@@ -111,10 +111,16 @@ object winstonNs extends js.Object {
     var warning_Original: LeveledLogMethod = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def _destroy(error: nodeLib.Error, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
+    override def _destroy(
+      error: nodeLib.Error,
+      callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    ): scala.Unit = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def _destroy(error: scala.Null, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
+    override def _destroy(
+      error: scala.Null,
+      callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    ): scala.Unit = js.native
     def add(transport: winstonDashTransportLib.winstonDashTransportMod.namespaced): Logger = js.native
     /**
       * Event emitter
@@ -258,7 +264,7 @@ object winstonNs extends js.Object {
     def query(options: QueryOptions): js.Any = js.native
     def query(
       options: QueryOptions,
-      callback: js.Function2[/* err */ nodeLib.Error, /* results */ js.Any, scala.Unit]
+      callback: js.Function2[/* err */ stdLib.Error, /* results */ js.Any, scala.Unit]
     ): js.Any = js.native
     def remove(transport: winstonDashTransportLib.winstonDashTransportMod.namespaced): Logger = js.native
     /* InferMemberOverrides */

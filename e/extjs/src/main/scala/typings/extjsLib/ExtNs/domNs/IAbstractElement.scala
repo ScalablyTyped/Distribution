@@ -509,273 +509,178 @@ object IAbstractElement {
     DISPLAY: scala.Int | scala.Double = null,
     OFFSETS: scala.Int | scala.Double = null,
     VISIBILITY: scala.Int | scala.Double = null,
-    addCls: js.Function1[/* className */ js.UndefOr[js.Any], IElement] = null,
+    addCls: /* className */ js.UndefOr[js.Any] => IElement = null,
     alias: extjsLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    appendChild: js.Function2[
-      /* el */ js.UndefOr[js.Any], 
-      /* returnDom */ js.UndefOr[scala.Boolean], 
-      IAbstractElement
-    ] = null,
-    appendTo: js.Function1[/* el */ js.UndefOr[js.Any], IAbstractElement] = null,
-    applyStyles: js.Function1[/* styles */ js.UndefOr[js.Any], IElement] = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    child: js.Function2[
-      /* selector */ js.UndefOr[java.lang.String], 
-      /* returnDom */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
+    appendChild: (/* el */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[scala.Boolean]) => IAbstractElement = null,
+    appendTo: /* el */ js.UndefOr[js.Any] => IAbstractElement = null,
+    applyStyles: /* styles */ js.UndefOr[js.Any] => IElement = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
+    child: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => _ = null,
     config: js.Any = null,
-    contains: js.Function1[/* el */ js.UndefOr[js.Any], scala.Boolean] = null,
-    createChild: js.Function3[
-      /* config */ js.UndefOr[js.Any], 
-      /* insertBefore */ js.UndefOr[stdLib.HTMLElement], 
-      /* returnDom */ js.UndefOr[scala.Boolean], 
-      IAbstractElement
-    ] = null,
+    contains: /* el */ js.UndefOr[js.Any] => scala.Boolean = null,
+    createChild: (/* config */ js.UndefOr[js.Any], /* insertBefore */ js.UndefOr[stdLib.HTMLElement], /* returnDom */ js.UndefOr[scala.Boolean]) => IAbstractElement = null,
     defaultUnit: java.lang.String = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     dom: stdLib.HTMLElement = null,
-    down: js.Function2[
-      /* selector */ js.UndefOr[java.lang.String], 
-      /* returnDom */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
+    down: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => _ = null,
     extend: java.lang.String = null,
-    findParent: js.Function3[
-      /* selector */ js.UndefOr[java.lang.String], 
-      /* limit */ js.UndefOr[js.Any], 
-      /* returnEl */ js.UndefOr[scala.Boolean], 
-      stdLib.HTMLElement
-    ] = null,
-    findParentNode: js.Function3[
-      /* selector */ js.UndefOr[java.lang.String], 
-      /* limit */ js.UndefOr[js.Any], 
-      /* returnEl */ js.UndefOr[scala.Boolean], 
-      stdLib.HTMLElement
-    ] = null,
-    first: js.Function2[
-      /* selector */ js.UndefOr[java.lang.String], 
-      /* returnDom */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    getActiveElement: js.Function0[stdLib.HTMLElement] = null,
-    getAttribute: js.Function2[
-      /* name */ js.UndefOr[java.lang.String], 
-      /* namespace */ js.UndefOr[java.lang.String], 
-      java.lang.String
-    ] = null,
-    getBorderWidth: js.Function1[/* side */ js.UndefOr[java.lang.String], scala.Double] = null,
-    getById: js.Function2[
-      /* id */ js.UndefOr[java.lang.String], 
-      /* asDom */ js.UndefOr[scala.Boolean], 
-      scala.Unit
-    ] = null,
-    getHTML: js.Function0[scala.Unit] = null,
-    getHeight: js.Function1[/* contentHeight */ js.UndefOr[scala.Boolean], scala.Double] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getMargin: js.Function1[/* sides */ js.UndefOr[java.lang.String], _] = null,
-    getPadding: js.Function1[/* side */ js.UndefOr[java.lang.String], scala.Double] = null,
-    getSize: js.Function1[/* contentSize */ js.UndefOr[scala.Boolean], _] = null,
-    getStyle: js.Function2[/* property */ js.UndefOr[js.Any], /* inline */ js.UndefOr[scala.Boolean], _] = null,
-    getValue: js.Function1[/* asNumber */ js.UndefOr[scala.Boolean], _] = null,
-    getViewSize: js.Function0[_] = null,
-    getWidth: js.Function1[/* contentWidth */ js.UndefOr[scala.Boolean], scala.Double] = null,
-    hasCls: js.Function1[/* className */ js.UndefOr[java.lang.String], scala.Boolean] = null,
-    hide: js.Function1[/* animate */ js.UndefOr[js.Any], IElement] = null,
+    findParent: (/* selector */ js.UndefOr[java.lang.String], /* limit */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[scala.Boolean]) => stdLib.HTMLElement = null,
+    findParentNode: (/* selector */ js.UndefOr[java.lang.String], /* limit */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[scala.Boolean]) => stdLib.HTMLElement = null,
+    first: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => _ = null,
+    getActiveElement: () => stdLib.HTMLElement = null,
+    getAttribute: (/* name */ js.UndefOr[java.lang.String], /* namespace */ js.UndefOr[java.lang.String]) => java.lang.String = null,
+    getBorderWidth: /* side */ js.UndefOr[java.lang.String] => scala.Double = null,
+    getById: (/* id */ js.UndefOr[java.lang.String], /* asDom */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
+    getHTML: () => scala.Unit = null,
+    getHeight: /* contentHeight */ js.UndefOr[scala.Boolean] => scala.Double = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getMargin: /* sides */ js.UndefOr[java.lang.String] => _ = null,
+    getPadding: /* side */ js.UndefOr[java.lang.String] => scala.Double = null,
+    getSize: /* contentSize */ js.UndefOr[scala.Boolean] => _ = null,
+    getStyle: (/* property */ js.UndefOr[js.Any], /* inline */ js.UndefOr[scala.Boolean]) => _ = null,
+    getValue: /* asNumber */ js.UndefOr[scala.Boolean] => _ = null,
+    getViewSize: () => _ = null,
+    getWidth: /* contentWidth */ js.UndefOr[scala.Boolean] => scala.Double = null,
+    hasCls: /* className */ js.UndefOr[java.lang.String] => scala.Boolean = null,
+    hide: /* animate */ js.UndefOr[js.Any] => IElement = null,
     id: java.lang.String = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IAbstractElement] = null,
-    insertAfter: js.Function1[/* el */ js.UndefOr[js.Any], IAbstractElement] = null,
-    insertBefore: js.Function1[/* el */ js.UndefOr[js.Any], IAbstractElement] = null,
-    insertFirst: js.Function1[/* el */ js.UndefOr[js.Any], IAbstractElement] = null,
-    insertHtml: js.Function3[
-      /* where */ js.UndefOr[java.lang.String], 
-      /* html */ js.UndefOr[java.lang.String], 
-      /* returnEl */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    insertSibling: js.Function3[
-      /* el */ js.UndefOr[js.Any], 
-      /* where */ js.UndefOr[java.lang.String], 
-      /* returnDom */ js.UndefOr[scala.Boolean], 
-      IAbstractElement
-    ] = null,
-    is: js.Function1[/* selector */ js.UndefOr[java.lang.String], scala.Boolean] = null,
-    isStyle: js.Function2[
-      /* style */ js.UndefOr[java.lang.String], 
-      /* value */ js.UndefOr[java.lang.String], 
-      scala.Boolean
-    ] = null,
-    isTransparent: js.Function1[/* prop */ js.UndefOr[java.lang.String], scala.Boolean] = null,
-    last: js.Function2[
-      /* selector */ js.UndefOr[java.lang.String], 
-      /* returnDom */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    mask: js.Function2[
-      /* msg */ js.UndefOr[java.lang.String], 
-      /* msgCls */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IAbstractElement = null,
+    insertAfter: /* el */ js.UndefOr[js.Any] => IAbstractElement = null,
+    insertBefore: /* el */ js.UndefOr[js.Any] => IAbstractElement = null,
+    insertFirst: /* el */ js.UndefOr[js.Any] => IAbstractElement = null,
+    insertHtml: (/* where */ js.UndefOr[java.lang.String], /* html */ js.UndefOr[java.lang.String], /* returnEl */ js.UndefOr[scala.Boolean]) => _ = null,
+    insertSibling: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => IAbstractElement = null,
+    is: /* selector */ js.UndefOr[java.lang.String] => scala.Boolean = null,
+    isStyle: (/* style */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[java.lang.String]) => scala.Boolean = null,
+    isTransparent: /* prop */ js.UndefOr[java.lang.String] => scala.Boolean = null,
+    last: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => _ = null,
+    mask: (/* msg */ js.UndefOr[java.lang.String], /* msgCls */ js.UndefOr[java.lang.String]) => scala.Unit = null,
     mixins: js.Any = null,
-    next: js.Function2[
-      /* selector */ js.UndefOr[java.lang.String], 
-      /* returnDom */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    parent: js.Function2[
-      /* selector */ js.UndefOr[java.lang.String], 
-      /* returnDom */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    prev: js.Function2[
-      /* selector */ js.UndefOr[java.lang.String], 
-      /* returnDom */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    query: js.Function1[/* selector */ js.UndefOr[java.lang.String], extjsLib.ExtNs.Array] = null,
-    radioCls: js.Function1[/* className */ js.UndefOr[js.Any], IElement] = null,
-    remove: js.Function0[scala.Unit] = null,
-    removeCls: js.Function1[/* className */ js.UndefOr[js.Any], IElement] = null,
-    repaint: js.Function0[IElement] = null,
-    replace: js.Function1[/* el */ js.UndefOr[js.Any], IAbstractElement] = null,
-    replaceCls: js.Function2[
-      /* oldClassName */ js.UndefOr[java.lang.String], 
-      /* newClassName */ js.UndefOr[java.lang.String], 
-      IElement
-    ] = null,
-    replaceWith: js.Function1[/* el */ js.UndefOr[js.Any], IAbstractElement] = null,
+    next: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => _ = null,
+    parent: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => _ = null,
+    prev: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => _ = null,
+    query: /* selector */ js.UndefOr[java.lang.String] => extjsLib.ExtNs.Array = null,
+    radioCls: /* className */ js.UndefOr[js.Any] => IElement = null,
+    remove: () => scala.Unit = null,
+    removeCls: /* className */ js.UndefOr[js.Any] => IElement = null,
+    repaint: () => IElement = null,
+    replace: /* el */ js.UndefOr[js.Any] => IAbstractElement = null,
+    replaceCls: (/* oldClassName */ js.UndefOr[java.lang.String], /* newClassName */ js.UndefOr[java.lang.String]) => IElement = null,
+    replaceWith: /* el */ js.UndefOr[js.Any] => IAbstractElement = null,
     requires: extjsLib.ExtNs.Array = null,
-    select: js.Function2[
-      /* selector */ js.UndefOr[java.lang.String], 
-      /* unique */ js.UndefOr[scala.Boolean], 
-      extjsLib.ExtNs.ICompositeElement
-    ] = null,
+    select: (/* selector */ js.UndefOr[java.lang.String], /* unique */ js.UndefOr[scala.Boolean]) => extjsLib.ExtNs.ICompositeElement = null,
     self: extjsLib.ExtNs.IClass = null,
-    serializeForm: js.Function1[/* form */ js.UndefOr[js.Any], java.lang.String] = null,
-    set: js.Function2[/* o */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[scala.Boolean], IElement] = null,
-    setHTML: js.Function1[/* html */ js.UndefOr[java.lang.String], extjsLib.ExtNs.IElement] = null,
-    setHeight: js.Function1[/* height */ js.UndefOr[js.Any], IElement] = null,
-    setSize: js.Function2[/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], IElement] = null,
-    setStyle: js.Function2[
-      /* property */ js.UndefOr[js.Any], 
-      /* value */ js.UndefOr[java.lang.String], 
-      IElement
-    ] = null,
-    setVisibilityMode: js.Function1[/* mode */ js.UndefOr[js.Any], IAbstractElement] = null,
-    setVisible: js.Function2[/* visible */ js.UndefOr[scala.Boolean], /* animate */ js.UndefOr[js.Any], IElement] = null,
-    setWidth: js.Function1[/* width */ js.UndefOr[js.Any], IElement] = null,
-    show: js.Function1[/* animate */ js.UndefOr[js.Any], IElement] = null,
+    serializeForm: /* form */ js.UndefOr[js.Any] => java.lang.String = null,
+    set: (/* o */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[scala.Boolean]) => IElement = null,
+    setHTML: /* html */ js.UndefOr[java.lang.String] => extjsLib.ExtNs.IElement = null,
+    setHeight: /* height */ js.UndefOr[js.Any] => IElement = null,
+    setSize: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any]) => IElement = null,
+    setStyle: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => IElement = null,
+    setVisibilityMode: /* mode */ js.UndefOr[js.Any] => IAbstractElement = null,
+    setVisible: (/* visible */ js.UndefOr[scala.Boolean], /* animate */ js.UndefOr[js.Any]) => IElement = null,
+    setWidth: /* width */ js.UndefOr[js.Any] => IElement = null,
+    show: /* animate */ js.UndefOr[js.Any] => IElement = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
-    toggleCls: js.Function1[/* className */ js.UndefOr[java.lang.String], IElement] = null,
-    unmask: js.Function0[scala.Unit] = null,
-    up: js.Function3[
-      /* selector */ js.UndefOr[java.lang.String], 
-      /* limit */ js.UndefOr[js.Any], 
-      /* returnDom */ js.UndefOr[scala.Boolean], 
-      extjsLib.ExtNs.IElement
-    ] = null,
-    update: js.Function1[/* html */ js.UndefOr[java.lang.String], IElement] = null,
+    toggleCls: /* className */ js.UndefOr[java.lang.String] => IElement = null,
+    unmask: () => scala.Unit = null,
+    up: (/* selector */ js.UndefOr[java.lang.String], /* limit */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[scala.Boolean]) => extjsLib.ExtNs.IElement = null,
+    update: /* html */ js.UndefOr[java.lang.String] => IElement = null,
     uses: extjsLib.ExtNs.Array = null,
-    wrap: js.Function3[
-      /* config */ js.UndefOr[js.Any], 
-      /* returnDom */ js.UndefOr[scala.Boolean], 
-      /* selector */ js.UndefOr[java.lang.String], 
-      _
-    ] = null
+    wrap: (/* config */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[scala.Boolean], /* selector */ js.UndefOr[java.lang.String]) => _ = null
   ): IAbstractElement = {
     val __obj = js.Dynamic.literal()
     if (ASCLASS != null) __obj.updateDynamic("ASCLASS")(ASCLASS.asInstanceOf[js.Any])
     if (DISPLAY != null) __obj.updateDynamic("DISPLAY")(DISPLAY.asInstanceOf[js.Any])
     if (OFFSETS != null) __obj.updateDynamic("OFFSETS")(OFFSETS.asInstanceOf[js.Any])
     if (VISIBILITY != null) __obj.updateDynamic("VISIBILITY")(VISIBILITY.asInstanceOf[js.Any])
-    if (addCls != null) __obj.updateDynamic("addCls")(addCls)
+    if (addCls != null) __obj.updateDynamic("addCls")(js.Any.fromFunction1(addCls))
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (appendChild != null) __obj.updateDynamic("appendChild")(appendChild)
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
-    if (applyStyles != null) __obj.updateDynamic("applyStyles")(applyStyles)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
-    if (child != null) __obj.updateDynamic("child")(child)
+    if (appendChild != null) __obj.updateDynamic("appendChild")(js.Any.fromFunction2(appendChild))
+    if (appendTo != null) __obj.updateDynamic("appendTo")(js.Any.fromFunction1(appendTo))
+    if (applyStyles != null) __obj.updateDynamic("applyStyles")(js.Any.fromFunction1(applyStyles))
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
+    if (child != null) __obj.updateDynamic("child")(js.Any.fromFunction2(child))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (contains != null) __obj.updateDynamic("contains")(contains)
-    if (createChild != null) __obj.updateDynamic("createChild")(createChild)
+    if (contains != null) __obj.updateDynamic("contains")(js.Any.fromFunction1(contains))
+    if (createChild != null) __obj.updateDynamic("createChild")(js.Any.fromFunction3(createChild))
     if (defaultUnit != null) __obj.updateDynamic("defaultUnit")(defaultUnit)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (dom != null) __obj.updateDynamic("dom")(dom)
-    if (down != null) __obj.updateDynamic("down")(down)
+    if (down != null) __obj.updateDynamic("down")(js.Any.fromFunction2(down))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (findParent != null) __obj.updateDynamic("findParent")(findParent)
-    if (findParentNode != null) __obj.updateDynamic("findParentNode")(findParentNode)
-    if (first != null) __obj.updateDynamic("first")(first)
-    if (getActiveElement != null) __obj.updateDynamic("getActiveElement")(getActiveElement)
-    if (getAttribute != null) __obj.updateDynamic("getAttribute")(getAttribute)
-    if (getBorderWidth != null) __obj.updateDynamic("getBorderWidth")(getBorderWidth)
-    if (getById != null) __obj.updateDynamic("getById")(getById)
-    if (getHTML != null) __obj.updateDynamic("getHTML")(getHTML)
-    if (getHeight != null) __obj.updateDynamic("getHeight")(getHeight)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getMargin != null) __obj.updateDynamic("getMargin")(getMargin)
-    if (getPadding != null) __obj.updateDynamic("getPadding")(getPadding)
-    if (getSize != null) __obj.updateDynamic("getSize")(getSize)
-    if (getStyle != null) __obj.updateDynamic("getStyle")(getStyle)
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
-    if (getViewSize != null) __obj.updateDynamic("getViewSize")(getViewSize)
-    if (getWidth != null) __obj.updateDynamic("getWidth")(getWidth)
-    if (hasCls != null) __obj.updateDynamic("hasCls")(hasCls)
-    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (findParent != null) __obj.updateDynamic("findParent")(js.Any.fromFunction3(findParent))
+    if (findParentNode != null) __obj.updateDynamic("findParentNode")(js.Any.fromFunction3(findParentNode))
+    if (first != null) __obj.updateDynamic("first")(js.Any.fromFunction2(first))
+    if (getActiveElement != null) __obj.updateDynamic("getActiveElement")(js.Any.fromFunction0(getActiveElement))
+    if (getAttribute != null) __obj.updateDynamic("getAttribute")(js.Any.fromFunction2(getAttribute))
+    if (getBorderWidth != null) __obj.updateDynamic("getBorderWidth")(js.Any.fromFunction1(getBorderWidth))
+    if (getById != null) __obj.updateDynamic("getById")(js.Any.fromFunction2(getById))
+    if (getHTML != null) __obj.updateDynamic("getHTML")(js.Any.fromFunction0(getHTML))
+    if (getHeight != null) __obj.updateDynamic("getHeight")(js.Any.fromFunction1(getHeight))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getMargin != null) __obj.updateDynamic("getMargin")(js.Any.fromFunction1(getMargin))
+    if (getPadding != null) __obj.updateDynamic("getPadding")(js.Any.fromFunction1(getPadding))
+    if (getSize != null) __obj.updateDynamic("getSize")(js.Any.fromFunction1(getSize))
+    if (getStyle != null) __obj.updateDynamic("getStyle")(js.Any.fromFunction2(getStyle))
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction1(getValue))
+    if (getViewSize != null) __obj.updateDynamic("getViewSize")(js.Any.fromFunction0(getViewSize))
+    if (getWidth != null) __obj.updateDynamic("getWidth")(js.Any.fromFunction1(getWidth))
+    if (hasCls != null) __obj.updateDynamic("hasCls")(js.Any.fromFunction1(hasCls))
+    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
     if (id != null) __obj.updateDynamic("id")(id)
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
-    if (insertAfter != null) __obj.updateDynamic("insertAfter")(insertAfter)
-    if (insertBefore != null) __obj.updateDynamic("insertBefore")(insertBefore)
-    if (insertFirst != null) __obj.updateDynamic("insertFirst")(insertFirst)
-    if (insertHtml != null) __obj.updateDynamic("insertHtml")(insertHtml)
-    if (insertSibling != null) __obj.updateDynamic("insertSibling")(insertSibling)
-    if (is != null) __obj.updateDynamic("is")(is)
-    if (isStyle != null) __obj.updateDynamic("isStyle")(isStyle)
-    if (isTransparent != null) __obj.updateDynamic("isTransparent")(isTransparent)
-    if (last != null) __obj.updateDynamic("last")(last)
-    if (mask != null) __obj.updateDynamic("mask")(mask)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (insertAfter != null) __obj.updateDynamic("insertAfter")(js.Any.fromFunction1(insertAfter))
+    if (insertBefore != null) __obj.updateDynamic("insertBefore")(js.Any.fromFunction1(insertBefore))
+    if (insertFirst != null) __obj.updateDynamic("insertFirst")(js.Any.fromFunction1(insertFirst))
+    if (insertHtml != null) __obj.updateDynamic("insertHtml")(js.Any.fromFunction3(insertHtml))
+    if (insertSibling != null) __obj.updateDynamic("insertSibling")(js.Any.fromFunction3(insertSibling))
+    if (is != null) __obj.updateDynamic("is")(js.Any.fromFunction1(is))
+    if (isStyle != null) __obj.updateDynamic("isStyle")(js.Any.fromFunction2(isStyle))
+    if (isTransparent != null) __obj.updateDynamic("isTransparent")(js.Any.fromFunction1(isTransparent))
+    if (last != null) __obj.updateDynamic("last")(js.Any.fromFunction2(last))
+    if (mask != null) __obj.updateDynamic("mask")(js.Any.fromFunction2(mask))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (prev != null) __obj.updateDynamic("prev")(prev)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (radioCls != null) __obj.updateDynamic("radioCls")(radioCls)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (removeCls != null) __obj.updateDynamic("removeCls")(removeCls)
-    if (repaint != null) __obj.updateDynamic("repaint")(repaint)
-    if (replace != null) __obj.updateDynamic("replace")(replace)
-    if (replaceCls != null) __obj.updateDynamic("replaceCls")(replaceCls)
-    if (replaceWith != null) __obj.updateDynamic("replaceWith")(replaceWith)
+    if (next != null) __obj.updateDynamic("next")(js.Any.fromFunction2(next))
+    if (parent != null) __obj.updateDynamic("parent")(js.Any.fromFunction2(parent))
+    if (prev != null) __obj.updateDynamic("prev")(js.Any.fromFunction2(prev))
+    if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction1(query))
+    if (radioCls != null) __obj.updateDynamic("radioCls")(js.Any.fromFunction1(radioCls))
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction0(remove))
+    if (removeCls != null) __obj.updateDynamic("removeCls")(js.Any.fromFunction1(removeCls))
+    if (repaint != null) __obj.updateDynamic("repaint")(js.Any.fromFunction0(repaint))
+    if (replace != null) __obj.updateDynamic("replace")(js.Any.fromFunction1(replace))
+    if (replaceCls != null) __obj.updateDynamic("replaceCls")(js.Any.fromFunction2(replaceCls))
+    if (replaceWith != null) __obj.updateDynamic("replaceWith")(js.Any.fromFunction1(replaceWith))
     if (requires != null) __obj.updateDynamic("requires")(requires)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction2(select))
     if (self != null) __obj.updateDynamic("self")(self)
-    if (serializeForm != null) __obj.updateDynamic("serializeForm")(serializeForm)
-    if (set != null) __obj.updateDynamic("set")(set)
-    if (setHTML != null) __obj.updateDynamic("setHTML")(setHTML)
-    if (setHeight != null) __obj.updateDynamic("setHeight")(setHeight)
-    if (setSize != null) __obj.updateDynamic("setSize")(setSize)
-    if (setStyle != null) __obj.updateDynamic("setStyle")(setStyle)
-    if (setVisibilityMode != null) __obj.updateDynamic("setVisibilityMode")(setVisibilityMode)
-    if (setVisible != null) __obj.updateDynamic("setVisible")(setVisible)
-    if (setWidth != null) __obj.updateDynamic("setWidth")(setWidth)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (serializeForm != null) __obj.updateDynamic("serializeForm")(js.Any.fromFunction1(serializeForm))
+    if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction2(set))
+    if (setHTML != null) __obj.updateDynamic("setHTML")(js.Any.fromFunction1(setHTML))
+    if (setHeight != null) __obj.updateDynamic("setHeight")(js.Any.fromFunction1(setHeight))
+    if (setSize != null) __obj.updateDynamic("setSize")(js.Any.fromFunction2(setSize))
+    if (setStyle != null) __obj.updateDynamic("setStyle")(js.Any.fromFunction2(setStyle))
+    if (setVisibilityMode != null) __obj.updateDynamic("setVisibilityMode")(js.Any.fromFunction1(setVisibilityMode))
+    if (setVisible != null) __obj.updateDynamic("setVisible")(js.Any.fromFunction2(setVisible))
+    if (setWidth != null) __obj.updateDynamic("setWidth")(js.Any.fromFunction1(setWidth))
+    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
-    if (toggleCls != null) __obj.updateDynamic("toggleCls")(toggleCls)
-    if (unmask != null) __obj.updateDynamic("unmask")(unmask)
-    if (up != null) __obj.updateDynamic("up")(up)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (toggleCls != null) __obj.updateDynamic("toggleCls")(js.Any.fromFunction1(toggleCls))
+    if (unmask != null) __obj.updateDynamic("unmask")(js.Any.fromFunction0(unmask))
+    if (up != null) __obj.updateDynamic("up")(js.Any.fromFunction3(up))
+    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction1(update))
     if (uses != null) __obj.updateDynamic("uses")(uses)
-    if (wrap != null) __obj.updateDynamic("wrap")(wrap)
+    if (wrap != null) __obj.updateDynamic("wrap")(js.Any.fromFunction3(wrap))
     __obj.asInstanceOf[IAbstractElement]
   }
 }

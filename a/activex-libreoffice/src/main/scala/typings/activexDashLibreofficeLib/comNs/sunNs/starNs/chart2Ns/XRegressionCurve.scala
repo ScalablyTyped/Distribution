@@ -19,14 +19,14 @@ object XRegressionCurve {
   def apply(
     Calculator: XRegressionCurveCalculator,
     EquationProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
-    acquire: js.Function0[scala.Unit],
-    getCalculator: js.Function0[XRegressionCurveCalculator],
-    getEquationProperties: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setEquationProperties: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, scala.Unit]
+    acquire: () => scala.Unit,
+    getCalculator: () => XRegressionCurveCalculator,
+    getEquationProperties: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setEquationProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet => scala.Unit
   ): XRegressionCurve = {
-    val __obj = js.Dynamic.literal(Calculator = Calculator, EquationProperties = EquationProperties, acquire = acquire, getCalculator = getCalculator, getEquationProperties = getEquationProperties, queryInterface = queryInterface, release = release, setEquationProperties = setEquationProperties)
+    val __obj = js.Dynamic.literal(Calculator = Calculator, EquationProperties = EquationProperties, acquire = js.Any.fromFunction0(acquire), getCalculator = js.Any.fromFunction0(getCalculator), getEquationProperties = js.Any.fromFunction0(getEquationProperties), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setEquationProperties = js.Any.fromFunction1(setEquationProperties))
   
     __obj.asInstanceOf[XRegressionCurve]
   }

@@ -27,7 +27,7 @@ trait XFilePicker extends XExecutableDialog {
     * @deprecated Deprecateduse com::sun::star::ui::dialogs::XFilePicker2::getSelectedFiles instead
     * @returns The complete path of the file or directory currently selected in URL format. This always returns only the first entry of the sequence. ;   **Note
     */
-  val Files: activexDashInteropLib.SafeArray[java.lang.String]
+  val Files: stdLib.SafeArray[java.lang.String]
   /**
     * Returns the directory that the file dialog is currently showing or was last showing before closing the dialog with Ok. If the user did cancel the
     * dialog, the returned value is undefined.
@@ -48,7 +48,7 @@ trait XFilePicker extends XExecutableDialog {
     * @deprecated Deprecateduse com::sun::star::ui::dialogs::XFilePicker2::getSelectedFiles instead
     * @returns The complete path of the file or directory currently selected in URL format. This always returns only the first entry of the sequence. ;   **Note
     */
-  def getFiles(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getFiles(): stdLib.SafeArray[java.lang.String]
   /**
     * Sets the default string that appears in the file name box of a {@link FilePicker} .
     * @param aName  Specifies the default file name, displayed when the {@link FilePicker} is shown. The implementation may accept any string, and does not ha
@@ -73,19 +73,19 @@ object XFilePicker {
   @scala.inline
   def apply(
     DisplayDirectory: java.lang.String,
-    Files: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    execute: js.Function0[scala.Double],
-    getDisplayDirectory: js.Function0[java.lang.String],
-    getFiles: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setDefaultName: js.Function1[java.lang.String, scala.Unit],
-    setDisplayDirectory: js.Function1[java.lang.String, scala.Unit],
-    setMultiSelectionMode: js.Function1[scala.Boolean, scala.Unit],
-    setTitle: js.Function1[java.lang.String, scala.Unit]
+    Files: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    execute: () => scala.Double,
+    getDisplayDirectory: () => java.lang.String,
+    getFiles: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setDefaultName: java.lang.String => scala.Unit,
+    setDisplayDirectory: java.lang.String => scala.Unit,
+    setMultiSelectionMode: scala.Boolean => scala.Unit,
+    setTitle: java.lang.String => scala.Unit
   ): XFilePicker = {
-    val __obj = js.Dynamic.literal(DisplayDirectory = DisplayDirectory, Files = Files, acquire = acquire, execute = execute, getDisplayDirectory = getDisplayDirectory, getFiles = getFiles, queryInterface = queryInterface, release = release, setDefaultName = setDefaultName, setDisplayDirectory = setDisplayDirectory, setMultiSelectionMode = setMultiSelectionMode, setTitle = setTitle)
+    val __obj = js.Dynamic.literal(DisplayDirectory = DisplayDirectory, Files = Files, acquire = js.Any.fromFunction0(acquire), execute = js.Any.fromFunction0(execute), getDisplayDirectory = js.Any.fromFunction0(getDisplayDirectory), getFiles = js.Any.fromFunction0(getFiles), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDefaultName = js.Any.fromFunction1(setDefaultName), setDisplayDirectory = js.Any.fromFunction1(setDisplayDirectory), setMultiSelectionMode = js.Any.fromFunction1(setMultiSelectionMode), setTitle = js.Any.fromFunction1(setTitle))
   
     __obj.asInstanceOf[XFilePicker]
   }

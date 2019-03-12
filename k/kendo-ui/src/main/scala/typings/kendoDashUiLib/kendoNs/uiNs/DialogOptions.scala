@@ -37,11 +37,11 @@ object DialogOptions {
     animation: scala.Boolean | DialogAnimation = null,
     buttonLayout: java.lang.String = null,
     closable: js.UndefOr[scala.Boolean] = js.undefined,
-    close: js.Function1[/* e */ DialogCloseEvent, scala.Unit] = null,
+    close: /* e */ DialogCloseEvent => scala.Unit = null,
     content: java.lang.String = null,
     height: scala.Double | java.lang.String = null,
-    hide: js.Function1[/* e */ DialogEvent, scala.Unit] = null,
-    initOpen: js.Function1[/* e */ DialogEvent, scala.Unit] = null,
+    hide: /* e */ DialogEvent => scala.Unit = null,
+    initOpen: /* e */ DialogEvent => scala.Unit = null,
     maxHeight: scala.Int | scala.Double = null,
     maxWidth: scala.Int | scala.Double = null,
     messages: DialogMessages = null,
@@ -49,8 +49,8 @@ object DialogOptions {
     minWidth: scala.Int | scala.Double = null,
     modal: scala.Boolean | DialogModal = null,
     name: java.lang.String = null,
-    open: js.Function1[/* e */ DialogEvent, scala.Unit] = null,
-    show: js.Function1[/* e */ DialogEvent, scala.Unit] = null,
+    open: /* e */ DialogEvent => scala.Unit = null,
+    show: /* e */ DialogEvent => scala.Unit = null,
     size: java.lang.String = null,
     title: java.lang.String | scala.Boolean = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined,
@@ -61,11 +61,11 @@ object DialogOptions {
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (buttonLayout != null) __obj.updateDynamic("buttonLayout")(buttonLayout)
     if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (content != null) __obj.updateDynamic("content")(content)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hide != null) __obj.updateDynamic("hide")(hide)
-    if (initOpen != null) __obj.updateDynamic("initOpen")(initOpen)
+    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
+    if (initOpen != null) __obj.updateDynamic("initOpen")(js.Any.fromFunction1(initOpen))
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages)
@@ -73,8 +73,8 @@ object DialogOptions {
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     if (modal != null) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (open != null) __obj.updateDynamic("open")(open)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
+    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
     if (size != null) __obj.updateDynamic("size")(size)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)

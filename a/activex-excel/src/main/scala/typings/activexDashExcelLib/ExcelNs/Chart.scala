@@ -9,28 +9,28 @@ import scala.scalajs.js.annotation._
 - activexDashExcelLib.ExcelNs.AddSheetResult because Already inherited */ @JSGlobal("Excel.Chart")
 @js.native
 class Chart protected () extends Sheet {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Area3DGroup: ChartGroup = js.native
   var AutoScaling: scala.Boolean = js.native
   val BackWall: Walls = js.native
   val Bar3DGroup: ChartGroup = js.native
   var BarShape: XlBarShape = js.native
-  val ChartArea: ChartArea = js.native
+  val ChartArea: activexDashExcelLib.ExcelNs.ChartArea = js.native
   var ChartStyle: activexDashExcelLib.activexDashExcelLibNumbers.`1` | activexDashExcelLib.activexDashExcelLibNumbers.`2` | activexDashExcelLib.activexDashExcelLibNumbers.`3` | activexDashExcelLib.activexDashExcelLibNumbers.`4` | activexDashExcelLib.activexDashExcelLibNumbers.`5` | activexDashExcelLib.activexDashExcelLibNumbers.`6` | activexDashExcelLib.activexDashExcelLibNumbers.`7` | activexDashExcelLib.activexDashExcelLibNumbers.`8` | activexDashExcelLib.activexDashExcelLibNumbers.`9` | activexDashExcelLib.activexDashExcelLibNumbers.`10` | activexDashExcelLib.activexDashExcelLibNumbers.`11` | activexDashExcelLib.activexDashExcelLibNumbers.`12` | activexDashExcelLib.activexDashExcelLibNumbers.`13` | activexDashExcelLib.activexDashExcelLibNumbers.`14` | activexDashExcelLib.activexDashExcelLibNumbers.`15` | activexDashExcelLib.activexDashExcelLibNumbers.`16` | activexDashExcelLib.activexDashExcelLibNumbers.`17` | activexDashExcelLib.activexDashExcelLibNumbers.`18` | activexDashExcelLib.activexDashExcelLibNumbers.`19` | activexDashExcelLib.activexDashExcelLibNumbers.`20` | activexDashExcelLib.activexDashExcelLibNumbers.`21` | activexDashExcelLib.activexDashExcelLibNumbers.`22` | activexDashExcelLib.activexDashExcelLibNumbers.`23` | activexDashExcelLib.activexDashExcelLibNumbers.`24` | activexDashExcelLib.activexDashExcelLibNumbers.`25` | activexDashExcelLib.activexDashExcelLibNumbers.`26` | activexDashExcelLib.activexDashExcelLibNumbers.`27` | activexDashExcelLib.activexDashExcelLibNumbers.`28` | activexDashExcelLib.activexDashExcelLibNumbers.`29` | activexDashExcelLib.activexDashExcelLibNumbers.`30` | activexDashExcelLib.activexDashExcelLibNumbers.`31` | activexDashExcelLib.activexDashExcelLibNumbers.`32` | activexDashExcelLib.activexDashExcelLibNumbers.`33` | activexDashExcelLib.activexDashExcelLibNumbers.`34` | activexDashExcelLib.activexDashExcelLibNumbers.`35` | activexDashExcelLib.activexDashExcelLibNumbers.`36` | activexDashExcelLib.activexDashExcelLibNumbers.`37` | activexDashExcelLib.activexDashExcelLibNumbers.`38` | activexDashExcelLib.activexDashExcelLibNumbers.`39` | activexDashExcelLib.activexDashExcelLibNumbers.`40` | activexDashExcelLib.activexDashExcelLibNumbers.`41` | activexDashExcelLib.activexDashExcelLibNumbers.`42` | activexDashExcelLib.activexDashExcelLibNumbers.`43` | activexDashExcelLib.activexDashExcelLibNumbers.`44` | activexDashExcelLib.activexDashExcelLibNumbers.`45` | activexDashExcelLib.activexDashExcelLibNumbers.`46` | activexDashExcelLib.activexDashExcelLibNumbers.`47` | activexDashExcelLib.activexDashExcelLibNumbers.`48` = js.native
-  val ChartTitle: ChartTitle = js.native
+  val ChartTitle: activexDashExcelLib.ExcelNs.ChartTitle = js.native
   var ChartType: XlChartType = js.native
   val CodeName: java.lang.String = js.native
   val Column3DGroup: ChartGroup = js.native
-  val Corners: Corners = js.native
+  val Corners: activexDashExcelLib.ExcelNs.Corners = js.native
   val Creator: XlCreator = js.native
-  val DataTable: DataTable = js.native
+  val DataTable: activexDashExcelLib.ExcelNs.DataTable = js.native
   var DepthPercent: scala.Double = js.native
   var DisplayBlanksAs: XlDisplayBlanksAs = js.native
   var Dummy24: scala.Boolean = js.native
   var Dummy25: scala.Boolean = js.native
   var Elevation: scala.Double = js.native
   var `Excel.Chart_typekey`: Chart = js.native
-  val Floor: Floor = js.native
+  val Floor: activexDashExcelLib.ExcelNs.Floor = js.native
   var GapDepth: scala.Double = js.native
   var HasDataTable: scala.Boolean = js.native
   var HasLegend: scala.Boolean = js.native
@@ -40,7 +40,7 @@ class Chart protected () extends Sheet {
   @JSName("Hyperlinks")
   val Hyperlinks_Original: Hyperlinks = js.native
   val Index: scala.Double = js.native
-  val Legend: Legend = js.native
+  val Legend: activexDashExcelLib.ExcelNs.Legend = js.native
   val Line3DGroup: ChartGroup = js.native
   val MailEnvelope: activexDashOfficeLib.OfficeNs.MsoEnvelope = js.native
   var Name: java.lang.String = js.native
@@ -48,12 +48,12 @@ class Chart protected () extends Sheet {
   var OnDoubleClick: java.lang.String = js.native
   var OnSheetActivate: java.lang.String = js.native
   var OnSheetDeactivate: java.lang.String = js.native
-  val PageSetup: PageSetup = js.native
+  val PageSetup: activexDashExcelLib.ExcelNs.PageSetup = js.native
   val Parent: js.Any = js.native
   var Perspective: scala.Double = js.native
   val Pie3DGroup: ChartGroup = js.native
-  val PivotLayout: PivotLayout = js.native
-  val PlotArea: PlotArea = js.native
+  val PivotLayout: activexDashExcelLib.ExcelNs.PivotLayout = js.native
+  val PlotArea: activexDashExcelLib.ExcelNs.PlotArea = js.native
   var PlotBy: XlRowCol = js.native
   var PlotVisibleOnly: scala.Boolean = js.native
   val Previous: Sheet = js.native
@@ -83,10 +83,10 @@ class Chart protected () extends Sheet {
   var SizeWithWindow: scala.Boolean = js.native
   var SubType: scala.Double = js.native
   val SurfaceGroup: ChartGroup = js.native
-  val Tab: Tab = js.native
+  val Tab: activexDashExcelLib.ExcelNs.Tab = js.native
   var Type: scala.Double = js.native
   var Visible: XlSheetVisibility = js.native
-  val Walls: Walls = js.native
+  val Walls: activexDashExcelLib.ExcelNs.Walls = js.native
   var WallsAndGridlines2D: scala.Boolean = js.native
   var _CodeName: java.lang.String = js.native
   def Activate(): scala.Unit = js.native
@@ -127,10 +127,10 @@ class Chart protected () extends Sheet {
   def BarGroups(Index: js.Any): js.Any = js.native
   def Buttons(): js.Any = js.native
   def Buttons(Index: js.Any): js.Any = js.native
-  def ChartObjects(): ChartObjects = js.native
-  def ChartObjects(Index: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): ChartObjects = js.native
+  def ChartObjects(): activexDashExcelLib.ExcelNs.ChartObjects = js.native
   def ChartObjects(Index: java.lang.String): ChartObject = js.native
   def ChartObjects(Index: scala.Double): ChartObject = js.native
+  def ChartObjects(Index: stdLib.SafeArray[java.lang.String | scala.Double]): activexDashExcelLib.ExcelNs.ChartObjects = js.native
   def ChartWizard(
     Source: js.UndefOr[Range],
     Gallery: js.UndefOr[XlChartType],
@@ -235,7 +235,7 @@ class Chart protected () extends Sheet {
   def Move(): scala.Unit = js.native
   def Move(Before: Sheet): scala.Unit = js.native
   def Move(Before: Sheet, After: Sheet): scala.Unit = js.native
-  def OLEObjects(): OLEObjects = js.native
+  def OLEObjects(): activexDashExcelLib.ExcelNs.OLEObjects = js.native
   def OLEObjects(Index: java.lang.String): OLEObject = js.native
   def OLEObjects(Index: scala.Double): OLEObject = js.native
   def OptionButtons(): js.Any = js.native

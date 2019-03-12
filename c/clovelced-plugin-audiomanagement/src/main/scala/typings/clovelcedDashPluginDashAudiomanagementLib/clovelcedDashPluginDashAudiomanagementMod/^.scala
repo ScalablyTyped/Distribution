@@ -13,22 +13,22 @@ object ^ extends js.Object {
     onError: js.Function1[/* error */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def getMaxVolume(
-    `type`: clovelcedDashPluginDashAudiomanagementLib.clovelcedDashPluginDashAudiomanagementMod.VolumeType,
+    `type`: VolumeType,
     onSuccess: js.Function1[/* results */ clovelcedDashPluginDashAudiomanagementLib.Anon_MaxVolume, scala.Unit],
     onError: js.Function1[/* error */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def getVolume(
-    `type`: clovelcedDashPluginDashAudiomanagementLib.clovelcedDashPluginDashAudiomanagementMod.VolumeType,
+    `type`: VolumeType,
     onSuccess: js.Function1[/* results */ clovelcedDashPluginDashAudiomanagementLib.Anon_Volume, scala.Unit],
     onError: js.Function1[/* error */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def setAudioMode(
-    mode: clovelcedDashPluginDashAudiomanagementLib.clovelcedDashPluginDashAudiomanagementMod.AudioMode,
+    mode: AudioMode,
     onSuccess: js.Function0[scala.Unit],
     onError: js.Function1[/* error */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def setVolume(
-    `type`: clovelcedDashPluginDashAudiomanagementLib.clovelcedDashPluginDashAudiomanagementMod.VolumeType,
+    `type`: VolumeType,
     volume: scala.Double,
     onSuccess: js.Function0[scala.Unit],
     onError: js.Function1[/* error */ js.Any, scala.Unit]

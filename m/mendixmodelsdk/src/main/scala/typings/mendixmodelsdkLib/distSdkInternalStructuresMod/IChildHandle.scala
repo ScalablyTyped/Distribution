@@ -13,12 +13,8 @@ trait IChildHandle extends js.Object {
 
 object IChildHandle {
   @scala.inline
-  def apply(
-    containingProperty: AbstractStructureProperty,
-    delete: js.Function0[scala.Unit],
-    detach: js.Function0[scala.Unit]
-  ): IChildHandle = {
-    val __obj = js.Dynamic.literal(containingProperty = containingProperty.asInstanceOf[js.Any], delete = delete, detach = detach)
+  def apply(containingProperty: AbstractStructureProperty, delete: () => scala.Unit, detach: () => scala.Unit): IChildHandle = {
+    val __obj = js.Dynamic.literal(containingProperty = containingProperty.asInstanceOf[js.Any], delete = js.Any.fromFunction0(delete), detach = js.Any.fromFunction0(detach))
   
     __obj.asInstanceOf[IChildHandle]
   }

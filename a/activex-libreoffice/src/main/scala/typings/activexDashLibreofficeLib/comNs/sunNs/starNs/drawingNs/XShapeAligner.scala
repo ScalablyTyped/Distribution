@@ -18,12 +18,12 @@ trait XShapeAligner
 object XShapeAligner {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    alignShapes: js.Function2[js.Array[XShapes], Alignment, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    alignShapes: (js.Array[XShapes], Alignment) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XShapeAligner = {
-    val __obj = js.Dynamic.literal(acquire = acquire, alignShapes = alignShapes, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), alignShapes = js.Any.fromFunction2(alignShapes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XShapeAligner]
   }

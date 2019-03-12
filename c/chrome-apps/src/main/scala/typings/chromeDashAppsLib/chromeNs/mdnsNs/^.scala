@@ -30,10 +30,7 @@ object ^ extends js.Object {
     * chrome.mdns.onServiceList.addListener(() => { },
     *  { 'serviceType': 'definitelyTyped._tcp.local' });
     */
-  val onServiceList: chromeDashAppsLib.chromeNs.eventsNs.FilteredEvent[
-    js.Function1[/* services */ js.Array[chromeDashAppsLib.chromeNs.mdnsNs.Service], scala.Unit], 
-    chromeDashAppsLib.chromeNs.mdnsNs.ServiceTypes
-  ] = js.native
+  val onServiceList: chromeDashAppsLib.chromeNs.eventsNs.FilteredEvent[js.Function1[/* services */ js.Array[Service], scala.Unit], ServiceTypes] = js.native
   /**
     * Immediately issues a multicast DNS query for all service types.
     * |callback| is invoked immediately.

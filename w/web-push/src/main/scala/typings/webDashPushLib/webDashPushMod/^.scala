@@ -13,64 +13,44 @@ object ^ extends js.Object {
     userPublicKey: java.lang.String,
     userAuth: java.lang.String,
     payload: java.lang.String,
-    contentEncoding: webDashPushLib.webDashPushMod.ContentEncoding
-  ): webDashPushLib.webDashPushMod.EncryptionResult = js.native
+    contentEncoding: ContentEncoding
+  ): EncryptionResult = js.native
   def encrypt(
     userPublicKey: java.lang.String,
     userAuth: java.lang.String,
     payload: nodeLib.Buffer,
-    contentEncoding: webDashPushLib.webDashPushMod.ContentEncoding
-  ): webDashPushLib.webDashPushMod.EncryptionResult = js.native
-  def generateRequestDetails(subscription: webDashPushLib.webDashPushMod.PushSubscription): webDashPushLib.webDashPushMod.RequestDetails = js.native
-  def generateRequestDetails(subscription: webDashPushLib.webDashPushMod.PushSubscription, payload: java.lang.String): webDashPushLib.webDashPushMod.RequestDetails = js.native
-  def generateRequestDetails(
-    subscription: webDashPushLib.webDashPushMod.PushSubscription,
-    payload: java.lang.String,
-    options: webDashPushLib.webDashPushMod.RequestOptions
-  ): webDashPushLib.webDashPushMod.RequestDetails = js.native
-  def generateRequestDetails(subscription: webDashPushLib.webDashPushMod.PushSubscription, payload: nodeLib.Buffer): webDashPushLib.webDashPushMod.RequestDetails = js.native
-  def generateRequestDetails(
-    subscription: webDashPushLib.webDashPushMod.PushSubscription,
-    payload: nodeLib.Buffer,
-    options: webDashPushLib.webDashPushMod.RequestOptions
-  ): webDashPushLib.webDashPushMod.RequestDetails = js.native
-  def generateRequestDetails(
-    subscription: webDashPushLib.webDashPushMod.PushSubscription,
-    payload: scala.Null,
-    options: webDashPushLib.webDashPushMod.RequestOptions
-  ): webDashPushLib.webDashPushMod.RequestDetails with webDashPushLib.Anon_Body = js.native
+    contentEncoding: ContentEncoding
+  ): EncryptionResult = js.native
+  def generateRequestDetails(subscription: PushSubscription): RequestDetails = js.native
+  def generateRequestDetails(subscription: PushSubscription, payload: java.lang.String): RequestDetails = js.native
+  def generateRequestDetails(subscription: PushSubscription, payload: java.lang.String, options: RequestOptions): RequestDetails = js.native
+  def generateRequestDetails(subscription: PushSubscription, payload: nodeLib.Buffer): RequestDetails = js.native
+  def generateRequestDetails(subscription: PushSubscription, payload: nodeLib.Buffer, options: RequestOptions): RequestDetails = js.native
+  def generateRequestDetails(subscription: PushSubscription, payload: scala.Null, options: RequestOptions): RequestDetails with webDashPushLib.Anon_Body = js.native
   @JSName("generateRequestDetails")
-  def `generateRequestDetails_<intersection>`(subscription: webDashPushLib.webDashPushMod.PushSubscription): webDashPushLib.webDashPushMod.RequestDetails with webDashPushLib.Anon_Body = js.native
+  def `generateRequestDetails_<intersection>`(subscription: PushSubscription): RequestDetails with webDashPushLib.Anon_Body = js.native
   @JSName("generateRequestDetails")
-  def `generateRequestDetails_<intersection>`(subscription: webDashPushLib.webDashPushMod.PushSubscription, payload: java.lang.String): webDashPushLib.webDashPushMod.RequestDetails with webDashPushLib.Anon_BodyBuffer = js.native
+  def `generateRequestDetails_<intersection>`(subscription: PushSubscription, payload: java.lang.String): RequestDetails with webDashPushLib.Anon_BodyBuffer = js.native
   @JSName("generateRequestDetails")
-  def `generateRequestDetails_<intersection>`(
-    subscription: webDashPushLib.webDashPushMod.PushSubscription,
-    payload: java.lang.String,
-    options: webDashPushLib.webDashPushMod.RequestOptions
-  ): webDashPushLib.webDashPushMod.RequestDetails with webDashPushLib.Anon_BodyBuffer = js.native
+  def `generateRequestDetails_<intersection>`(subscription: PushSubscription, payload: java.lang.String, options: RequestOptions): RequestDetails with webDashPushLib.Anon_BodyBuffer = js.native
   @JSName("generateRequestDetails")
-  def `generateRequestDetails_<intersection>`(subscription: webDashPushLib.webDashPushMod.PushSubscription, payload: nodeLib.Buffer): webDashPushLib.webDashPushMod.RequestDetails with webDashPushLib.Anon_BodyBuffer = js.native
+  def `generateRequestDetails_<intersection>`(subscription: PushSubscription, payload: nodeLib.Buffer): RequestDetails with webDashPushLib.Anon_BodyBuffer = js.native
   @JSName("generateRequestDetails")
-  def `generateRequestDetails_<intersection>`(
-    subscription: webDashPushLib.webDashPushMod.PushSubscription,
-    payload: nodeLib.Buffer,
-    options: webDashPushLib.webDashPushMod.RequestOptions
-  ): webDashPushLib.webDashPushMod.RequestDetails with webDashPushLib.Anon_BodyBuffer = js.native
-  def generateVAPIDKeys(): webDashPushLib.webDashPushMod.VapidKeys = js.native
+  def `generateRequestDetails_<intersection>`(subscription: PushSubscription, payload: nodeLib.Buffer, options: RequestOptions): RequestDetails with webDashPushLib.Anon_BodyBuffer = js.native
+  def generateVAPIDKeys(): VapidKeys = js.native
   def getVapidHeaders(
     audience: java.lang.String,
     subject: java.lang.String,
     publicKey: java.lang.String,
     privateKey: java.lang.String,
-    contentEncoding: webDashPushLib.webDashPushMod.ContentEncoding
+    contentEncoding: ContentEncoding
   ): webDashPushLib.Anon_AuthorizationCryptoKeyString = js.native
   def getVapidHeaders(
     audience: java.lang.String,
     subject: java.lang.String,
     publicKey: java.lang.String,
     privateKey: java.lang.String,
-    contentEncoding: webDashPushLib.webDashPushMod.ContentEncoding,
+    contentEncoding: ContentEncoding,
     expiration: scala.Double
   ): webDashPushLib.Anon_AuthorizationCryptoKeyString = js.native
   @JSName("getVapidHeaders")
@@ -107,24 +87,12 @@ object ^ extends js.Object {
     contentEncoding: webDashPushLib.webDashPushLibStrings.aesgcm,
     expiration: scala.Double
   ): webDashPushLib.Anon_AuthorizationCryptoKey = js.native
-  def sendNotification(subscription: webDashPushLib.webDashPushMod.PushSubscription): js.Promise[webDashPushLib.webDashPushMod.SendResult] = js.native
-  def sendNotification(subscription: webDashPushLib.webDashPushMod.PushSubscription, payload: java.lang.String): js.Promise[webDashPushLib.webDashPushMod.SendResult] = js.native
-  def sendNotification(
-    subscription: webDashPushLib.webDashPushMod.PushSubscription,
-    payload: java.lang.String,
-    options: webDashPushLib.webDashPushMod.RequestOptions
-  ): js.Promise[webDashPushLib.webDashPushMod.SendResult] = js.native
-  def sendNotification(subscription: webDashPushLib.webDashPushMod.PushSubscription, payload: nodeLib.Buffer): js.Promise[webDashPushLib.webDashPushMod.SendResult] = js.native
-  def sendNotification(
-    subscription: webDashPushLib.webDashPushMod.PushSubscription,
-    payload: nodeLib.Buffer,
-    options: webDashPushLib.webDashPushMod.RequestOptions
-  ): js.Promise[webDashPushLib.webDashPushMod.SendResult] = js.native
-  def sendNotification(
-    subscription: webDashPushLib.webDashPushMod.PushSubscription,
-    payload: scala.Null,
-    options: webDashPushLib.webDashPushMod.RequestOptions
-  ): js.Promise[webDashPushLib.webDashPushMod.SendResult] = js.native
+  def sendNotification(subscription: PushSubscription): js.Promise[SendResult] = js.native
+  def sendNotification(subscription: PushSubscription, payload: java.lang.String): js.Promise[SendResult] = js.native
+  def sendNotification(subscription: PushSubscription, payload: java.lang.String, options: RequestOptions): js.Promise[SendResult] = js.native
+  def sendNotification(subscription: PushSubscription, payload: nodeLib.Buffer): js.Promise[SendResult] = js.native
+  def sendNotification(subscription: PushSubscription, payload: nodeLib.Buffer, options: RequestOptions): js.Promise[SendResult] = js.native
+  def sendNotification(subscription: PushSubscription, payload: scala.Null, options: RequestOptions): js.Promise[SendResult] = js.native
   def setGCMAPIKey(): scala.Unit = js.native
   def setGCMAPIKey(apiKey: java.lang.String): scala.Unit = js.native
   def setVapidDetails(subject: java.lang.String, publicKey: java.lang.String, privateKey: java.lang.String): scala.Unit = js.native

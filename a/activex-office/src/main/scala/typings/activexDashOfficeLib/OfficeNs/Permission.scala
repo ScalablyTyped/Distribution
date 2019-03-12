@@ -22,7 +22,7 @@ trait Permission extends js.Object {
   def apply(Index: js.Any): UserPermission = js.native
   def Add(UserId: java.lang.String): UserPermission = js.native
   def Add(UserId: java.lang.String, Permission: MsoPermission): UserPermission = js.native
-  def Add(UserId: java.lang.String, Permission: MsoPermission, ExpirationDate: activexDashInteropLib.VarDate): UserPermission = js.native
+  def Add(UserId: java.lang.String, Permission: MsoPermission, ExpirationDate: stdLib.VarDate): UserPermission = js.native
   def ApplyPolicy(FileName: java.lang.String): scala.Unit = js.native
   def Item(Index: js.Any): UserPermission = js.native
   def RemoveAll(): scala.Unit = js.native

@@ -295,7 +295,7 @@ object ButtonGroupProps {
   @scala.inline
   def apply(
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
     color: reactDashFoundationLib.enumsMod.ButtonGroupColors = null,
     isExpanded: js.UndefOr[scala.Boolean] = js.undefined,
     isStacked: js.UndefOr[scala.Boolean] = js.undefined,

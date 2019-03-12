@@ -30,21 +30,21 @@ trait IonMenuShareAppMessage extends BaseParams {
 object IonMenuShareAppMessage {
   @scala.inline
   def apply(
-    cancel: js.Function0[scala.Unit],
+    cancel: () => scala.Unit,
     desc: java.lang.String,
     imgUrl: java.lang.String,
     link: java.lang.String,
-    success: js.Function0[scala.Unit],
+    success: () => scala.Unit,
     title: java.lang.String,
-    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    complete: /* repeated */ js.Any => scala.Unit = null,
     dataUrl: java.lang.String = null,
-    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    fail: /* repeated */ js.Any => scala.Unit = null,
     `type`: jweixinLib.jweixinLibStrings.music | jweixinLib.jweixinLibStrings.videoBACKSLASHu6216link | jweixinLib.jweixinLibStrings.link = null
   ): IonMenuShareAppMessage = {
-    val __obj = js.Dynamic.literal(cancel = cancel, desc = desc, imgUrl = imgUrl, link = link, success = success, title = title)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), desc = desc, imgUrl = imgUrl, link = link, success = js.Any.fromFunction0(success), title = title)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (dataUrl != null) __obj.updateDynamic("dataUrl")(dataUrl)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonMenuShareAppMessage]
   }

@@ -17,8 +17,8 @@ trait ToggleMultilevelListCommand extends CommandWithBooleanStateBase {
 
 object ToggleMultilevelListCommand {
   @scala.inline
-  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[js.Any]): ToggleMultilevelListCommand = {
-    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  def apply(execute: () => scala.Boolean, getState: () => js.Any): ToggleMultilevelListCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
   
     __obj.asInstanceOf[ToggleMultilevelListCommand]
   }

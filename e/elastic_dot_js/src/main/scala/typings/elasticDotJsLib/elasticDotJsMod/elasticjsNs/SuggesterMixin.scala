@@ -24,12 +24,8 @@ trait SuggesterMixin extends js.Object {
 
 object SuggesterMixin {
   @scala.inline
-  def apply(
-    _type: js.Function0[java.lang.String],
-    text: js.Function1[java.lang.String, SuggesterMixin],
-    toJSON: js.Function0[js.Any]
-  ): SuggesterMixin = {
-    val __obj = js.Dynamic.literal(_type = _type, text = text, toJSON = toJSON)
+  def apply(_type: () => java.lang.String, text: java.lang.String => SuggesterMixin, toJSON: () => js.Any): SuggesterMixin = {
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), text = js.Any.fromFunction1(text), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[SuggesterMixin]
   }

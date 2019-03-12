@@ -22,15 +22,15 @@ object EditorOptions {
     column: slickgridLib.SlickNs.Column[T],
     container: stdLib.HTMLElement,
     grid: slickgridLib.SlickNs.Grid[T],
-    cancelChanges: js.Function0[scala.Unit] = null,
-    commitChanges: js.Function0[scala.Unit] = null,
+    cancelChanges: () => scala.Unit = null,
+    commitChanges: () => scala.Unit = null,
     gridPosition: slickgridLib.SlickNs.CellPosition = null,
     item: T = null,
     position: slickgridLib.SlickNs.CellPosition = null
   ): EditorOptions[T] = {
     val __obj = js.Dynamic.literal(column = column, container = container, grid = grid)
-    if (cancelChanges != null) __obj.updateDynamic("cancelChanges")(cancelChanges)
-    if (commitChanges != null) __obj.updateDynamic("commitChanges")(commitChanges)
+    if (cancelChanges != null) __obj.updateDynamic("cancelChanges")(js.Any.fromFunction0(cancelChanges))
+    if (commitChanges != null) __obj.updateDynamic("commitChanges")(js.Any.fromFunction0(commitChanges))
     if (gridPosition != null) __obj.updateDynamic("gridPosition")(gridPosition)
     if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position)

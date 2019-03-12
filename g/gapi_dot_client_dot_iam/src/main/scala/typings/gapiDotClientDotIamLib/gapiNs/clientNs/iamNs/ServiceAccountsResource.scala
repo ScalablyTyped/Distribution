@@ -56,49 +56,19 @@ trait ServiceAccountsResource extends js.Object {
 object ServiceAccountsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccount]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccount]
-    ],
-    getIamPolicy: js.Function1[
-      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
+    create: gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccount],
+    delete: gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccount],
+    getIamPolicy: gapiDotClientDotIamLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
     keys: KeysResource,
-    list: js.Function1[
-      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyNameOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListServiceAccountsResponse]
-    ],
-    setIamPolicy: js.Function1[
-      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    signBlob: js.Function1[
-      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SignBlobResponse]
-    ],
-    signJwt: js.Function1[
-      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SignJwtResponse]
-    ],
-    testIamPermissions: js.Function1[
-      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccount]
-    ]
+    list: gapiDotClientDotIamLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyNameOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[ListServiceAccountsResponse],
+    setIamPolicy: gapiDotClientDotIamLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    signBlob: gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[SignBlobResponse],
+    signJwt: gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[SignJwtResponse],
+    testIamPermissions: gapiDotClientDotIamLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp => gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse],
+    update: gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccount]
   ): ServiceAccountsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, getIamPolicy = getIamPolicy, keys = keys, list = list, setIamPolicy = setIamPolicy, signBlob = signBlob, signJwt = signJwt, testIamPermissions = testIamPermissions, update = update)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), keys = keys, list = js.Any.fromFunction1(list), setIamPolicy = js.Any.fromFunction1(setIamPolicy), signBlob = js.Any.fromFunction1(signBlob), signJwt = js.Any.fromFunction1(signJwt), testIamPermissions = js.Any.fromFunction1(testIamPermissions), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[ServiceAccountsResource]
   }

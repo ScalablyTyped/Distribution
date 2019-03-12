@@ -15,11 +15,11 @@ trait XSubTotalField
   /** returns the column by which entries are grouped. */
   var GroupColumn: scala.Double
   /** returns the definitions of which columns should have subtotals added to them. */
-  var SubTotalColumns: activexDashInteropLib.SafeArray[SubTotalColumn]
+  var SubTotalColumns: stdLib.SafeArray[SubTotalColumn]
   /** returns the column by which entries are grouped. */
   def getGroupColumn(): scala.Double
   /** returns the definitions of which columns should have subtotals added to them. */
-  def getSubTotalColumns(): activexDashInteropLib.SafeArray[SubTotalColumn]
+  def getSubTotalColumns(): stdLib.SafeArray[SubTotalColumn]
   /** sets the column by which entries are grouped. */
   def setGroupColumn(nGroupColumn: scala.Double): scala.Unit
   /** sets the definitions of which columns should have subtotals added to them. */
@@ -30,16 +30,16 @@ object XSubTotalField {
   @scala.inline
   def apply(
     GroupColumn: scala.Double,
-    SubTotalColumns: activexDashInteropLib.SafeArray[SubTotalColumn],
-    acquire: js.Function0[scala.Unit],
-    getGroupColumn: js.Function0[scala.Double],
-    getSubTotalColumns: js.Function0[activexDashInteropLib.SafeArray[SubTotalColumn]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setGroupColumn: js.Function1[scala.Double, scala.Unit],
-    setSubTotalColumns: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[SubTotalColumn], scala.Unit]
+    SubTotalColumns: stdLib.SafeArray[SubTotalColumn],
+    acquire: () => scala.Unit,
+    getGroupColumn: () => scala.Double,
+    getSubTotalColumns: () => stdLib.SafeArray[SubTotalColumn],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setGroupColumn: scala.Double => scala.Unit,
+    setSubTotalColumns: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[SubTotalColumn] => scala.Unit
   ): XSubTotalField = {
-    val __obj = js.Dynamic.literal(GroupColumn = GroupColumn, SubTotalColumns = SubTotalColumns, acquire = acquire, getGroupColumn = getGroupColumn, getSubTotalColumns = getSubTotalColumns, queryInterface = queryInterface, release = release, setGroupColumn = setGroupColumn, setSubTotalColumns = setSubTotalColumns)
+    val __obj = js.Dynamic.literal(GroupColumn = GroupColumn, SubTotalColumns = SubTotalColumns, acquire = js.Any.fromFunction0(acquire), getGroupColumn = js.Any.fromFunction0(getGroupColumn), getSubTotalColumns = js.Any.fromFunction0(getSubTotalColumns), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setGroupColumn = js.Any.fromFunction1(setGroupColumn), setSubTotalColumns = js.Any.fromFunction1(setSubTotalColumns))
   
     __obj.asInstanceOf[XSubTotalField]
   }

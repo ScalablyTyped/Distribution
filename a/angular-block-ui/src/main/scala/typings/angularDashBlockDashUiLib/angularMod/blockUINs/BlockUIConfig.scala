@@ -120,10 +120,7 @@ object BlockUIConfig {
     cssClass: java.lang.String = null,
     delay: scala.Int | scala.Double = null,
     message: java.lang.String = null,
-    requestFilter: js.Function1[
-      /* config */ angularLib.angularMod.angularNs.IRequestConfig, 
-      java.lang.String | scala.Boolean
-    ] = null,
+    requestFilter: /* config */ angularLib.angularMod.angularNs.IRequestConfig => java.lang.String | scala.Boolean = null,
     resetOnException: js.UndefOr[scala.Boolean] = js.undefined,
     template: java.lang.String = null,
     templateUrl: java.lang.String = null
@@ -135,7 +132,7 @@ object BlockUIConfig {
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message)
-    if (requestFilter != null) __obj.updateDynamic("requestFilter")(requestFilter)
+    if (requestFilter != null) __obj.updateDynamic("requestFilter")(js.Any.fromFunction1(requestFilter))
     if (!js.isUndefined(resetOnException)) __obj.updateDynamic("resetOnException")(resetOnException)
     if (template != null) __obj.updateDynamic("template")(template)
     if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)

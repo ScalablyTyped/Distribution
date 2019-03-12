@@ -95,18 +95,18 @@ trait XObjectInspectorUI extends js.Object {
 object XObjectInspectorUI {
   @scala.inline
   def apply(
-    enablePropertyUI: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
-    enablePropertyUIElements: js.Function3[java.lang.String, scala.Double, scala.Boolean, scala.Unit],
-    getPropertyControl: js.Function1[java.lang.String, XPropertyControl],
-    hidePropertyUI: js.Function1[java.lang.String, scala.Unit],
-    rebuildPropertyUI: js.Function1[java.lang.String, scala.Unit],
-    registerControlObserver: js.Function1[XPropertyControlObserver, scala.Unit],
-    revokeControlObserver: js.Function1[XPropertyControlObserver, scala.Unit],
-    setHelpSectionText: js.Function1[java.lang.String, scala.Unit],
-    showCategory: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
-    showPropertyUI: js.Function1[java.lang.String, scala.Unit]
+    enablePropertyUI: (java.lang.String, scala.Boolean) => scala.Unit,
+    enablePropertyUIElements: (java.lang.String, scala.Double, scala.Boolean) => scala.Unit,
+    getPropertyControl: java.lang.String => XPropertyControl,
+    hidePropertyUI: java.lang.String => scala.Unit,
+    rebuildPropertyUI: java.lang.String => scala.Unit,
+    registerControlObserver: XPropertyControlObserver => scala.Unit,
+    revokeControlObserver: XPropertyControlObserver => scala.Unit,
+    setHelpSectionText: java.lang.String => scala.Unit,
+    showCategory: (java.lang.String, scala.Boolean) => scala.Unit,
+    showPropertyUI: java.lang.String => scala.Unit
   ): XObjectInspectorUI = {
-    val __obj = js.Dynamic.literal(enablePropertyUI = enablePropertyUI, enablePropertyUIElements = enablePropertyUIElements, getPropertyControl = getPropertyControl, hidePropertyUI = hidePropertyUI, rebuildPropertyUI = rebuildPropertyUI, registerControlObserver = registerControlObserver, revokeControlObserver = revokeControlObserver, setHelpSectionText = setHelpSectionText, showCategory = showCategory, showPropertyUI = showPropertyUI)
+    val __obj = js.Dynamic.literal(enablePropertyUI = js.Any.fromFunction2(enablePropertyUI), enablePropertyUIElements = js.Any.fromFunction3(enablePropertyUIElements), getPropertyControl = js.Any.fromFunction1(getPropertyControl), hidePropertyUI = js.Any.fromFunction1(hidePropertyUI), rebuildPropertyUI = js.Any.fromFunction1(rebuildPropertyUI), registerControlObserver = js.Any.fromFunction1(registerControlObserver), revokeControlObserver = js.Any.fromFunction1(revokeControlObserver), setHelpSectionText = js.Any.fromFunction1(setHelpSectionText), showCategory = js.Any.fromFunction2(showCategory), showPropertyUI = js.Any.fromFunction1(showPropertyUI))
   
     __obj.asInstanceOf[XObjectInspectorUI]
   }

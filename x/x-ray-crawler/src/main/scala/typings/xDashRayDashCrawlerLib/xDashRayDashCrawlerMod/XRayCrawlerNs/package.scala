@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object XRayCrawlerNs {
-  type Callback[T] = js.Function2[/* err */ nodeLib.Error, /* obj */ T, scala.Unit]
+  type Callback[T] = js.Function2[/* err */ stdLib.Error, /* obj */ T, scala.Unit]
   type Driver = js.Function2[
     /* context */ httpDashContextLib.httpDashContextMod.HttpContextNs.Context, 
     /* callback */ Callback[httpDashContextLib.httpDashContextMod.HttpContextNs.Context], 

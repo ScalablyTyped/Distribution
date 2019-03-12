@@ -15,14 +15,14 @@ import scala.scalajs.js.annotation._
 object IMapObjectCollection {
   @scala.inline
   def apply(
-    add: js.Function1[js.Object, IMapObjectCollection],
+    add: js.Object => IMapObjectCollection,
     events: IEventManager,
-    getIterator: js.Function0[IIterator],
-    getMap: js.Function0[Map],
+    getIterator: () => IIterator,
+    getMap: () => Map,
     options: IOptionManager,
-    remove: js.Function1[js.Object, IMapObjectCollection]
+    remove: js.Object => IMapObjectCollection
   ): IMapObjectCollection = {
-    val __obj = js.Dynamic.literal(add = add, events = events, getIterator = getIterator, getMap = getMap, options = options, remove = remove)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), events = events, getIterator = js.Any.fromFunction0(getIterator), getMap = js.Any.fromFunction0(getMap), options = options, remove = js.Any.fromFunction1(remove))
   
     __obj.asInstanceOf[IMapObjectCollection]
   }

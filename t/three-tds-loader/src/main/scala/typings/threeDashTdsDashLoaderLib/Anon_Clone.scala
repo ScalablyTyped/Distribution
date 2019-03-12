@@ -12,8 +12,8 @@ trait Anon_Clone extends js.Object {
 
 object Anon_Clone {
   @scala.inline
-  def apply(clone: js.Function1[js.Any, js.Any], merge: js.Function1[js.Array[_], js.Any]): Anon_Clone = {
-    val __obj = js.Dynamic.literal(clone = clone, merge = merge)
+  def apply(clone: js.Any => js.Any, merge: js.Array[_] => js.Any): Anon_Clone = {
+    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction1(clone), merge = js.Any.fromFunction1(merge))
   
     __obj.asInstanceOf[Anon_Clone]
   }

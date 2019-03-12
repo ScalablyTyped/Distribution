@@ -22,7 +22,7 @@ package object atGoogleDashCloudTasksMod {
   type GoogleError = js.Any
   type Keys[T] = java.lang.String
   type ProjectIdCallback = js.Function2[
-    /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+    /* err */ js.UndefOr[stdLib.Error | scala.Null], 
     /* projectId */ js.UndefOr[java.lang.String | scala.Null], 
     scala.Unit
   ]

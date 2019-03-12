@@ -12,8 +12,8 @@ trait Context extends js.Object {
 
 object Context {
   @scala.inline
-  def apply(init: js.Function0[scala.Unit], main: js.Function0[scala.Unit]): Context = {
-    val __obj = js.Dynamic.literal(init = init, main = main)
+  def apply(init: () => scala.Unit, main: () => scala.Unit): Context = {
+    val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init), main = js.Any.fromFunction0(main))
   
     __obj.asInstanceOf[Context]
   }

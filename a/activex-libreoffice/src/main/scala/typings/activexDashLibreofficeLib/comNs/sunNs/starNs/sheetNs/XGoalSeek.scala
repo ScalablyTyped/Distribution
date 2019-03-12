@@ -25,17 +25,12 @@ trait XGoalSeek
 object XGoalSeek {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    seekGoal: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
-      java.lang.String, 
-      GoalResult
-    ]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    seekGoal: (activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, java.lang.String) => GoalResult
   ): XGoalSeek = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, seekGoal = seekGoal)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), seekGoal = js.Any.fromFunction3(seekGoal))
   
     __obj.asInstanceOf[XGoalSeek]
   }

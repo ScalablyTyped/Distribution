@@ -14,11 +14,11 @@ trait GlideServletResponse extends js.Object {
 object GlideServletResponse {
   @scala.inline
   def apply(
-    setContentType: js.Function1[java.lang.String, scala.Unit],
-    setHeader: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    setStatus: js.Function1[scala.Double, scala.Unit]
+    setContentType: java.lang.String => scala.Unit,
+    setHeader: (java.lang.String, java.lang.String) => scala.Unit,
+    setStatus: scala.Double => scala.Unit
   ): GlideServletResponse = {
-    val __obj = js.Dynamic.literal(setContentType = setContentType, setHeader = setHeader, setStatus = setStatus)
+    val __obj = js.Dynamic.literal(setContentType = js.Any.fromFunction1(setContentType), setHeader = js.Any.fromFunction2(setHeader), setStatus = js.Any.fromFunction1(setStatus))
   
     __obj.asInstanceOf[GlideServletResponse]
   }

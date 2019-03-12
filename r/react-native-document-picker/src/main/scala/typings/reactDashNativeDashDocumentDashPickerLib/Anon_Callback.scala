@@ -19,17 +19,13 @@ trait Anon_Callback extends js.Object {
 object Anon_Callback {
   @scala.inline
   def apply(
-    show: js.Function2[
-      reactDashNativeDashDocumentDashPickerLib.reactDashNativeDashDocumentDashPickerMod.Options, 
-      js.Function2[
-        /* error */ stdLib.Error, 
-        /* result */ reactDashNativeDashDocumentDashPickerLib.reactDashNativeDashDocumentDashPickerMod.Result, 
-        scala.Unit
-      ], 
+    show: (reactDashNativeDashDocumentDashPickerLib.reactDashNativeDashDocumentDashPickerMod.Options, js.Function2[
+      /* error */ stdLib.Error, 
+      /* result */ reactDashNativeDashDocumentDashPickerLib.reactDashNativeDashDocumentDashPickerMod.Result, 
       scala.Unit
-    ]
+    ]) => scala.Unit
   ): Anon_Callback = {
-    val __obj = js.Dynamic.literal(show = show)
+    val __obj = js.Dynamic.literal(show = js.Any.fromFunction2(show))
   
     __obj.asInstanceOf[Anon_Callback]
   }

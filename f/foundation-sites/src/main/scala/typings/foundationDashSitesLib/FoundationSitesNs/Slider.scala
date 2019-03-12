@@ -12,8 +12,8 @@ trait Slider extends js.Object {
 
 object Slider {
   @scala.inline
-  def apply(destroy: js.Function0[scala.Unit]): Slider = {
-    val __obj = js.Dynamic.literal(destroy = destroy)
+  def apply(destroy: () => scala.Unit): Slider = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
   
     __obj.asInstanceOf[Slider]
   }

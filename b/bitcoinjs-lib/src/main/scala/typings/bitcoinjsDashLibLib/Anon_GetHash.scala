@@ -11,8 +11,8 @@ trait Anon_GetHash extends js.Object {
 
 object Anon_GetHash {
   @scala.inline
-  def apply(getHash: js.Function0[nodeLib.Buffer]): Anon_GetHash = {
-    val __obj = js.Dynamic.literal(getHash = getHash)
+  def apply(getHash: () => nodeLib.Buffer): Anon_GetHash = {
+    val __obj = js.Dynamic.literal(getHash = js.Any.fromFunction0(getHash))
   
     __obj.asInstanceOf[Anon_GetHash]
   }

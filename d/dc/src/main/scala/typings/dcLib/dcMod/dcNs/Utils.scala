@@ -37,35 +37,30 @@ trait Utils extends js.Object {
 object Utils {
   @scala.inline
   def apply(
-    add: js.Function2[js.Any, js.Any, js.Any],
-    appendOrSelect: js.Function3[
-      d3DashSelectionLib.d3DashSelectionMod.Selection[
-        _, 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
-        d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
-      ], 
-      java.lang.String, 
-      js.Any, 
-      d3DashSelectionLib.d3DashSelectionMod.Selection[
-        _, 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
-        d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
-      ]
+    add: (js.Any, js.Any) => js.Any,
+    appendOrSelect: (d3DashSelectionLib.d3DashSelectionMod.Selection[
+      _, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+      d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+    ], java.lang.String, js.Any) => d3DashSelectionLib.d3DashSelectionMod.Selection[
+      _, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+      d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
     ],
-    clamp: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double],
-    isFloat: js.Function1[js.Any, scala.Boolean],
-    isInteger: js.Function1[js.Any, scala.Boolean],
-    isNegligible: js.Function1[js.Any, scala.Boolean],
-    isNumber: js.Function1[js.Any, scala.Boolean],
-    nameToId: js.Function1[java.lang.String, java.lang.String],
-    printSingleValue: js.Function1[js.Any, java.lang.String],
-    safeNumber: js.Function1[js.Any, scala.Double],
-    subtract: js.Function2[js.Any, js.Any, js.Any],
-    uniqueId: js.Function0[scala.Double]
+    clamp: (scala.Double, scala.Double, scala.Double) => scala.Double,
+    isFloat: js.Any => scala.Boolean,
+    isInteger: js.Any => scala.Boolean,
+    isNegligible: js.Any => scala.Boolean,
+    isNumber: js.Any => scala.Boolean,
+    nameToId: java.lang.String => java.lang.String,
+    printSingleValue: js.Any => java.lang.String,
+    safeNumber: js.Any => scala.Double,
+    subtract: (js.Any, js.Any) => js.Any,
+    uniqueId: () => scala.Double
   ): Utils = {
-    val __obj = js.Dynamic.literal(add = add, appendOrSelect = appendOrSelect, clamp = clamp, isFloat = isFloat, isInteger = isInteger, isNegligible = isNegligible, isNumber = isNumber, nameToId = nameToId, printSingleValue = printSingleValue, safeNumber = safeNumber, subtract = subtract, uniqueId = uniqueId)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), appendOrSelect = js.Any.fromFunction3(appendOrSelect), clamp = js.Any.fromFunction3(clamp), isFloat = js.Any.fromFunction1(isFloat), isInteger = js.Any.fromFunction1(isInteger), isNegligible = js.Any.fromFunction1(isNegligible), isNumber = js.Any.fromFunction1(isNumber), nameToId = js.Any.fromFunction1(nameToId), printSingleValue = js.Any.fromFunction1(printSingleValue), safeNumber = js.Any.fromFunction1(safeNumber), subtract = js.Any.fromFunction2(subtract), uniqueId = js.Any.fromFunction0(uniqueId))
   
     __obj.asInstanceOf[Utils]
   }

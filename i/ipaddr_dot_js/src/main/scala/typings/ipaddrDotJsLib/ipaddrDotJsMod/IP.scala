@@ -15,12 +15,12 @@ trait IP extends js.Object {
 object IP {
   @scala.inline
   def apply(
-    prefixLengthFromSubnetMask: js.Function0[scala.Double | ipaddrDotJsLib.ipaddrDotJsLibNumbers.`false`],
-    toByteArray: js.Function0[js.Array[scala.Double]],
-    toNormalizedString: js.Function0[java.lang.String],
-    toString: js.Function0[java.lang.String]
+    prefixLengthFromSubnetMask: () => scala.Double | ipaddrDotJsLib.ipaddrDotJsLibNumbers.`false`,
+    toByteArray: () => js.Array[scala.Double],
+    toNormalizedString: () => java.lang.String,
+    toString: () => java.lang.String
   ): IP = {
-    val __obj = js.Dynamic.literal(prefixLengthFromSubnetMask = prefixLengthFromSubnetMask, toByteArray = toByteArray, toNormalizedString = toNormalizedString, toString = toString)
+    val __obj = js.Dynamic.literal(prefixLengthFromSubnetMask = js.Any.fromFunction0(prefixLengthFromSubnetMask), toByteArray = js.Any.fromFunction0(toByteArray), toNormalizedString = js.Any.fromFunction0(toNormalizedString), toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[IP]
   }

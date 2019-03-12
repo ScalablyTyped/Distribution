@@ -43,11 +43,7 @@ object TreeListColumn {
     columns: js.Any = null,
     command: js.Array[TreeListColumnCommandItem] = null,
     editable: js.Function = null,
-    editor: js.Function2[
-      /* container */ kendoDashUiLib.JQuery, 
-      /* options */ TreeListEditorOptions, 
-      scala.Unit
-    ] = null,
+    editor: (/* container */ kendoDashUiLib.JQuery, /* options */ TreeListEditorOptions) => scala.Unit = null,
     encoded: js.UndefOr[scala.Boolean] = js.undefined,
     expandable: js.UndefOr[scala.Boolean] = js.undefined,
     field: java.lang.String = null,
@@ -71,7 +67,7 @@ object TreeListColumn {
     if (columns != null) __obj.updateDynamic("columns")(columns)
     if (command != null) __obj.updateDynamic("command")(command)
     if (editable != null) __obj.updateDynamic("editable")(editable)
-    if (editor != null) __obj.updateDynamic("editor")(editor)
+    if (editor != null) __obj.updateDynamic("editor")(js.Any.fromFunction2(editor))
     if (!js.isUndefined(encoded)) __obj.updateDynamic("encoded")(encoded)
     if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable)
     if (field != null) __obj.updateDynamic("field")(field)

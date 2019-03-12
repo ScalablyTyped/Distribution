@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FingerprintFormatError
-  extends nodeLib.Error {
-  var message: java.lang.String
-  var name: java.lang.String
-}
+  extends stdLib.Error
 
 object FingerprintFormatError {
   @scala.inline

@@ -219,7 +219,7 @@ object ^ extends js.Object {
     view: atAngularCoreLib.srcRender3InterfacesViewMod.LView
   ): atAngularCoreLib.srcRender3InterfacesInjectorMod.RelativeInjectorLocation = js.native
   def injectAttributeImpl(tNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode, attrNameToInject: java.lang.String): java.lang.String | scala.Null = js.native
-  def injectInjector(): atAngularCoreLib.srcRender3DiMod.NodeInjector = js.native
+  def injectInjector(): NodeInjector = js.native
   def locateDirectiveOrProvider[T](
     tNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,
     lView: atAngularCoreLib.srcRender3InterfacesViewMod.LView,

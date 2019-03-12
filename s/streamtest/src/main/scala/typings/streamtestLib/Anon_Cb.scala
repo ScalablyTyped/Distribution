@@ -27,8 +27,8 @@ trait Anon_Cb extends js.Object {
     * Defaults to 0.
     * @returns A new readable stream
     */
-  def fromErroredChunks(err: nodeLib.Error, chunks: js.Array[streamtestLib.streamtestMod.Chunk]): nodeLib.streamMod.Readable = js.native
-  def fromErroredChunks(err: nodeLib.Error, chunks: js.Array[streamtestLib.streamtestMod.Chunk], timeout: scala.Double): nodeLib.streamMod.Readable = js.native
+  def fromErroredChunks(err: stdLib.Error, chunks: js.Array[streamtestLib.streamtestMod.Chunk]): nodeLib.streamMod.Readable = js.native
+  def fromErroredChunks(err: stdLib.Error, chunks: js.Array[streamtestLib.streamtestMod.Chunk], timeout: scala.Double): nodeLib.streamMod.Readable = js.native
   /**
     * Create a readable stream streaming 'objects' each after 'timeout'
     * milliseconds, emit 'err,' and then end. Useful for testing objectMode
@@ -39,8 +39,8 @@ trait Anon_Cb extends js.Object {
     * Defaults to 0.
     * @returns A new readable stream
     */
-  def fromErroredObjects(err: nodeLib.Error, objects: js.Array[streamtestLib.streamtestMod.NonNull]): nodeLib.streamMod.Readable = js.native
-  def fromErroredObjects(err: nodeLib.Error, objects: js.Array[streamtestLib.streamtestMod.NonNull], timeout: scala.Double): nodeLib.streamMod.Readable = js.native
+  def fromErroredObjects(err: stdLib.Error, objects: js.Array[streamtestLib.streamtestMod.NonNull]): nodeLib.streamMod.Readable = js.native
+  def fromErroredObjects(err: stdLib.Error, objects: js.Array[streamtestLib.streamtestMod.NonNull], timeout: scala.Double): nodeLib.streamMod.Readable = js.native
   /**
     * Create a readable stream streaming 'objects' each after 'timeout'
     * milliseconds and then end. Useful for testing objectMode based streams.
@@ -66,7 +66,7 @@ trait Anon_Cb extends js.Object {
     */
   def syncError(
     stream: nodeLib.streamMod.Writable,
-    err: nodeLib.Error,
+    err: stdLib.Error,
     chunks: js.Array[streamtestLib.streamtestMod.Chunk]
   ): scala.Unit = js.native
   /**
@@ -93,7 +93,7 @@ trait Anon_Cb extends js.Object {
     * @returns A new writable stream
     */
   def toChunks(
-    cb: js.Function2[/* err */ nodeLib.Error, /* chunks */ js.Array[streamtestLib.streamtestMod.Chunk], _]
+    cb: js.Function2[/* err */ stdLib.Error, /* chunks */ js.Array[streamtestLib.streamtestMod.Chunk], _]
   ): nodeLib.streamMod.Writable = js.native
   /**
     * Create a writable stream collecting written chunks and call the passed
@@ -104,7 +104,7 @@ trait Anon_Cb extends js.Object {
     */
   def toObjects(
     cb: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* objects */ js.Array[streamtestLib.streamtestMod.NonNull], 
       _
     ]
@@ -116,7 +116,7 @@ trait Anon_Cb extends js.Object {
     * an string as its second
     * @returns A new writable stream
     */
-  def toText(cb: js.Function2[/* err */ nodeLib.Error, /* text */ java.lang.String, _]): nodeLib.streamMod.Writable = js.native
+  def toText(cb: js.Function2[/* err */ stdLib.Error, /* text */ java.lang.String, _]): nodeLib.streamMod.Writable = js.native
   /**
     * Create a new writable stream
     * @param options The options used to create the stream

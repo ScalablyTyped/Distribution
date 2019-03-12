@@ -9,7 +9,7 @@ trait LimitsInfo extends js.Object {
   var ConcurrentAsyncGetReportInstances: Limit
   var ConcurrentSyncReportRuns: Limit
   var DailyAnalyticsDataflowJobExecutions: Limit
-  var DailyApiRequests: DailyApiRequests
+  var DailyApiRequests: jsforceLib.limitsDashInfoMod.DailyApiRequests
   var DailyAsyncApexExecutions: Limit
   var DailyBulkApiRequests: DailyApiRequests
   var DailyDurableGenericStreamingApiEvents: Limit
@@ -30,7 +30,7 @@ trait LimitsInfo extends js.Object {
   var MassEmail: Limit
   var MonthlyPlatformEvents: Limit
   var Package2VersionCreates: Limit
-  var PermissionSets: PermissionSets
+  var PermissionSets: jsforceLib.limitsDashInfoMod.PermissionSets
   var SingleEmail: Limit
   var StreamingApiConcurrentClients: Limit
 }

@@ -162,24 +162,12 @@ object _Impl {
     namespace: java.lang.String,
     observeChanges: scala.Boolean,
     offset: scala.Double,
-    onApprove: js.Function2[
-      semanticDashUiDashModalLib.JQuery, 
-      semanticDashUiDashModalLib.JQuery, 
-      semanticDashUiDashModalLib.semanticDashUiDashModalLibNumbers.`false` | scala.Unit
-    ],
-    onDeny: js.Function2[
-      semanticDashUiDashModalLib.JQuery, 
-      semanticDashUiDashModalLib.JQuery, 
-      semanticDashUiDashModalLib.semanticDashUiDashModalLibNumbers.`false` | scala.Unit
-    ],
-    onHidden: js.Function1[semanticDashUiDashModalLib.JQuery, scala.Unit],
-    onHide: js.Function2[
-      semanticDashUiDashModalLib.JQuery, 
-      semanticDashUiDashModalLib.JQuery, 
-      semanticDashUiDashModalLib.semanticDashUiDashModalLibNumbers.`false` | scala.Unit
-    ],
-    onShow: js.Function1[semanticDashUiDashModalLib.JQuery, scala.Unit],
-    onVisible: js.Function1[semanticDashUiDashModalLib.JQuery, scala.Unit],
+    onApprove: (semanticDashUiDashModalLib.JQuery, semanticDashUiDashModalLib.JQuery) => semanticDashUiDashModalLib.semanticDashUiDashModalLibNumbers.`false` | scala.Unit,
+    onDeny: (semanticDashUiDashModalLib.JQuery, semanticDashUiDashModalLib.JQuery) => semanticDashUiDashModalLib.semanticDashUiDashModalLibNumbers.`false` | scala.Unit,
+    onHidden: semanticDashUiDashModalLib.JQuery => scala.Unit,
+    onHide: (semanticDashUiDashModalLib.JQuery, semanticDashUiDashModalLib.JQuery) => semanticDashUiDashModalLib.semanticDashUiDashModalLibNumbers.`false` | scala.Unit,
+    onShow: semanticDashUiDashModalLib.JQuery => scala.Unit,
+    onVisible: semanticDashUiDashModalLib.JQuery => scala.Unit,
     performance: scala.Boolean,
     queue: scala.Boolean,
     selector: semanticDashUiDashModalLib.SemanticUINs.ModalNs.SelectorSettings,
@@ -187,7 +175,7 @@ object _Impl {
     transition: java.lang.String,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(allowMultiple = allowMultiple, autofocus = autofocus, className = className.asInstanceOf[js.Any], closable = closable, context = context.asInstanceOf[js.Any], debug = debug, detachable = detachable, dimmerSettings = dimmerSettings.asInstanceOf[js.Any], duration = duration, error = error, keyboardShortcuts = keyboardShortcuts, name = name, namespace = namespace, observeChanges = observeChanges, offset = offset, onApprove = onApprove, onDeny = onDeny, onHidden = onHidden, onHide = onHide, onShow = onShow, onVisible = onVisible, performance = performance, queue = queue, selector = selector.asInstanceOf[js.Any], silent = silent, transition = transition, verbose = verbose)
+    val __obj = js.Dynamic.literal(allowMultiple = allowMultiple, autofocus = autofocus, className = className.asInstanceOf[js.Any], closable = closable, context = context.asInstanceOf[js.Any], debug = debug, detachable = detachable, dimmerSettings = dimmerSettings.asInstanceOf[js.Any], duration = duration, error = error, keyboardShortcuts = keyboardShortcuts, name = name, namespace = namespace, observeChanges = observeChanges, offset = offset, onApprove = js.Any.fromFunction2(onApprove), onDeny = js.Any.fromFunction2(onDeny), onHidden = js.Any.fromFunction1(onHidden), onHide = js.Any.fromFunction2(onHide), onShow = js.Any.fromFunction1(onShow), onVisible = js.Any.fromFunction1(onVisible), performance = performance, queue = queue, selector = selector.asInstanceOf[js.Any], silent = silent, transition = transition, verbose = verbose)
   
     __obj.asInstanceOf[_Impl]
   }

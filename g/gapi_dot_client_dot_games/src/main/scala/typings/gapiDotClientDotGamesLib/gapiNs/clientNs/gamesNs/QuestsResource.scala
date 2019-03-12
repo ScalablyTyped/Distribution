@@ -15,16 +15,10 @@ trait QuestsResource extends js.Object {
 object QuestsResource {
   @scala.inline
   def apply(
-    accept: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Quest]
-    ],
-    list: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageMaxResults, 
-      gapiDotClientLib.gapiNs.clientNs.Request[QuestListResponse]
-    ]
+    accept: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Quest],
+    list: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageMaxResults => gapiDotClientLib.gapiNs.clientNs.Request[QuestListResponse]
   ): QuestsResource = {
-    val __obj = js.Dynamic.literal(accept = accept, list = list)
+    val __obj = js.Dynamic.literal(accept = js.Any.fromFunction1(accept), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[QuestsResource]
   }

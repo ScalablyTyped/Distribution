@@ -24,21 +24,21 @@ trait IVaultManagementOperations extends js.Object {
 object IVaultManagementOperations {
   @scala.inline
   def apply(
-    ArchiveOldVersions: js.Function1[IArchiveOldVersionsJob, scala.Unit],
-    ExportContent: js.Function1[IExportContentJob, scala.Unit],
-    GetEventHandlers: js.Function0[IEventHandlers],
-    GetVaultProperties: js.Function0[IVaultProperties],
-    ImportContent: js.Function1[IImportContentJob, scala.Unit],
-    ImportContentAsync: js.Function1[IImportContentJob, scala.Double],
-    IsAsyncJobRunning: js.Function1[scala.Double, scala.Boolean],
-    PreviewImportContent: js.Function2[IImportContentJob, java.lang.String, scala.Unit],
-    RebuildFullTextSearchIndex: js.Function2[scala.Boolean, scala.Boolean, scala.Unit],
-    SetEventHandlers: js.Function1[IEventHandlers, scala.Unit],
-    UpdateVaultProperties: js.Function2[IVaultProperties, scala.Boolean, scala.Unit],
-    VerifyVault: js.Function1[IVerifyVaultJob, IVerifyVaultJobOutput],
-    WaitAsyncJob: js.Function1[scala.Double, scala.Unit]
+    ArchiveOldVersions: IArchiveOldVersionsJob => scala.Unit,
+    ExportContent: IExportContentJob => scala.Unit,
+    GetEventHandlers: () => IEventHandlers,
+    GetVaultProperties: () => IVaultProperties,
+    ImportContent: IImportContentJob => scala.Unit,
+    ImportContentAsync: IImportContentJob => scala.Double,
+    IsAsyncJobRunning: scala.Double => scala.Boolean,
+    PreviewImportContent: (IImportContentJob, java.lang.String) => scala.Unit,
+    RebuildFullTextSearchIndex: (scala.Boolean, scala.Boolean) => scala.Unit,
+    SetEventHandlers: IEventHandlers => scala.Unit,
+    UpdateVaultProperties: (IVaultProperties, scala.Boolean) => scala.Unit,
+    VerifyVault: IVerifyVaultJob => IVerifyVaultJobOutput,
+    WaitAsyncJob: scala.Double => scala.Unit
   ): IVaultManagementOperations = {
-    val __obj = js.Dynamic.literal(ArchiveOldVersions = ArchiveOldVersions, ExportContent = ExportContent, GetEventHandlers = GetEventHandlers, GetVaultProperties = GetVaultProperties, ImportContent = ImportContent, ImportContentAsync = ImportContentAsync, IsAsyncJobRunning = IsAsyncJobRunning, PreviewImportContent = PreviewImportContent, RebuildFullTextSearchIndex = RebuildFullTextSearchIndex, SetEventHandlers = SetEventHandlers, UpdateVaultProperties = UpdateVaultProperties, VerifyVault = VerifyVault, WaitAsyncJob = WaitAsyncJob)
+    val __obj = js.Dynamic.literal(ArchiveOldVersions = js.Any.fromFunction1(ArchiveOldVersions), ExportContent = js.Any.fromFunction1(ExportContent), GetEventHandlers = js.Any.fromFunction0(GetEventHandlers), GetVaultProperties = js.Any.fromFunction0(GetVaultProperties), ImportContent = js.Any.fromFunction1(ImportContent), ImportContentAsync = js.Any.fromFunction1(ImportContentAsync), IsAsyncJobRunning = js.Any.fromFunction1(IsAsyncJobRunning), PreviewImportContent = js.Any.fromFunction2(PreviewImportContent), RebuildFullTextSearchIndex = js.Any.fromFunction2(RebuildFullTextSearchIndex), SetEventHandlers = js.Any.fromFunction1(SetEventHandlers), UpdateVaultProperties = js.Any.fromFunction2(UpdateVaultProperties), VerifyVault = js.Any.fromFunction1(VerifyVault), WaitAsyncJob = js.Any.fromFunction1(WaitAsyncJob))
   
     __obj.asInstanceOf[IVaultManagementOperations]
   }

@@ -12,11 +12,8 @@ trait DiscardMissingTileImagePolicy extends js.Object {
 
 object DiscardMissingTileImagePolicy {
   @scala.inline
-  def apply(
-    isReady: js.Function0[scala.Boolean],
-    shouldDiscardImage: js.Function1[stdLib.HTMLImageElement, scala.Boolean]
-  ): DiscardMissingTileImagePolicy = {
-    val __obj = js.Dynamic.literal(isReady = isReady, shouldDiscardImage = shouldDiscardImage)
+  def apply(isReady: () => scala.Boolean, shouldDiscardImage: stdLib.HTMLImageElement => scala.Boolean): DiscardMissingTileImagePolicy = {
+    val __obj = js.Dynamic.literal(isReady = js.Any.fromFunction0(isReady), shouldDiscardImage = js.Any.fromFunction1(shouldDiscardImage))
   
     __obj.asInstanceOf[DiscardMissingTileImagePolicy]
   }

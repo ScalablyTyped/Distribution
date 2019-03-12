@@ -15,12 +15,12 @@ trait IWallabyFile extends js.Object {
 object IWallabyFile {
   @scala.inline
   def apply(
-    changeExt: js.Function1[java.lang.String, scala.Unit],
-    rename: js.Function1[java.lang.String, scala.Unit],
+    changeExt: java.lang.String => scala.Unit,
+    rename: java.lang.String => scala.Unit,
     content: java.lang.String = null,
     path: java.lang.String = null
   ): IWallabyFile = {
-    val __obj = js.Dynamic.literal(changeExt = changeExt, rename = rename)
+    val __obj = js.Dynamic.literal(changeExt = js.Any.fromFunction1(changeExt), rename = js.Any.fromFunction1(rename))
     if (content != null) __obj.updateDynamic("content")(content)
     if (path != null) __obj.updateDynamic("path")(path)
     __obj.asInstanceOf[IWallabyFile]

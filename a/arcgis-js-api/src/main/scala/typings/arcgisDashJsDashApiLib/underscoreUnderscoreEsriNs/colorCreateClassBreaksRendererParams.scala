@@ -183,9 +183,9 @@ object colorCreateClassBreaksRendererParams {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     layer: FeatureLayer | SceneLayer | CSVLayer,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     basemap: java.lang.String | Basemap = null,
     classificationMethod: java.lang.String = null,
     colorMixMode: java.lang.String = null,
@@ -207,7 +207,7 @@ object colorCreateClassBreaksRendererParams {
     valueExpressionTitle: java.lang.String = null,
     view: View = null
   ): colorCreateClassBreaksRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (classificationMethod != null) __obj.updateDynamic("classificationMethod")(classificationMethod)
     if (colorMixMode != null) __obj.updateDynamic("colorMixMode")(colorMixMode)

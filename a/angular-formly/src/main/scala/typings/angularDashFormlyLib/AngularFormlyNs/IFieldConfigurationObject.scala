@@ -29,7 +29,7 @@ trait IFieldConfigurationObject extends js.Object {
   		 *
   		 * see http://docs.angular-formly.com/docs/field-configuration-object#controller-controller-name-as-string--controller-f
   		 */
-  var controller: js.UndefOr[java.lang.String | angularLib.angularMod.Global.Function] = js.undefined
+  var controller: js.UndefOr[java.lang.String | js.Function] = js.undefined
   /**
   		 * This is reserved for the developer. You have our guarantee to be able to use this and not worry about
   		 * future versions of formly overriding your usage and preventing you from upgrading :-)
@@ -289,7 +289,7 @@ object IFieldConfigurationObject {
   def apply(
     asyncValidators: org.scalablytyped.runtime.StringDictionary[java.lang.String | IExpressionFunction | IValidator] = null,
     className: java.lang.String = null,
-    controller: java.lang.String | angularLib.angularMod.Global.Function = null,
+    controller: java.lang.String | js.Function = null,
     data: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     defaultValue: js.Any = null,
     elementAttributes: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
@@ -313,14 +313,14 @@ object IFieldConfigurationObject {
     ngModelElAttrs: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     noFormControl: js.UndefOr[scala.Boolean] = js.undefined,
     optionsTypes: java.lang.String | js.Array[java.lang.String] = null,
-    resetModel: js.Function0[scala.Unit] = null,
-    runExpressions: js.Function0[scala.Unit] = null,
+    resetModel: () => scala.Unit = null,
+    runExpressions: () => scala.Unit = null,
     template: java.lang.String | angularDashFormlyLib.Anon_FieldConfiguration = null,
     templateManipulators: ITemplateManipulators = null,
     templateOptions: ITemplateOptions = null,
     templateUrl: java.lang.String | angularDashFormlyLib.Anon_FieldConfiguration = null,
     `type`: java.lang.String = null,
-    updateInitialValue: js.Function0[scala.Unit] = null,
+    updateInitialValue: () => scala.Unit = null,
     validation: angularDashFormlyLib.Anon_ErrorExistsAndShouldBeVisible = null,
     validators: org.scalablytyped.runtime.StringDictionary[java.lang.String | IExpressionFunction | IValidator] = null,
     value: js.Function0[_] with (js.Function1[/* val */ js.Any, scala.Unit]) = null,
@@ -349,14 +349,14 @@ object IFieldConfigurationObject {
     if (ngModelElAttrs != null) __obj.updateDynamic("ngModelElAttrs")(ngModelElAttrs)
     if (!js.isUndefined(noFormControl)) __obj.updateDynamic("noFormControl")(noFormControl)
     if (optionsTypes != null) __obj.updateDynamic("optionsTypes")(optionsTypes.asInstanceOf[js.Any])
-    if (resetModel != null) __obj.updateDynamic("resetModel")(resetModel)
-    if (runExpressions != null) __obj.updateDynamic("runExpressions")(runExpressions)
+    if (resetModel != null) __obj.updateDynamic("resetModel")(js.Any.fromFunction0(resetModel))
+    if (runExpressions != null) __obj.updateDynamic("runExpressions")(js.Any.fromFunction0(runExpressions))
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (templateManipulators != null) __obj.updateDynamic("templateManipulators")(templateManipulators)
     if (templateOptions != null) __obj.updateDynamic("templateOptions")(templateOptions)
     if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (updateInitialValue != null) __obj.updateDynamic("updateInitialValue")(updateInitialValue)
+    if (updateInitialValue != null) __obj.updateDynamic("updateInitialValue")(js.Any.fromFunction0(updateInitialValue))
     if (validation != null) __obj.updateDynamic("validation")(validation)
     if (validators != null) __obj.updateDynamic("validators")(validators)
     if (value != null) __obj.updateDynamic("value")(value)

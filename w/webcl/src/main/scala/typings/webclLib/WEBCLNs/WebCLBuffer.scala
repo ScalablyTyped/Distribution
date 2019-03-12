@@ -13,11 +13,11 @@ trait WebCLBuffer extends WebCLMemoryObject {
 object WebCLBuffer {
   @scala.inline
   def apply(
-    createSubBuffer: js.Function3[MemFlagsBits, scala.Double, scala.Double, WebCLBuffer],
-    getInfo: js.Function1[MemInfo, js.Any],
-    release: js.Function0[scala.Unit]
+    createSubBuffer: (MemFlagsBits, scala.Double, scala.Double) => WebCLBuffer,
+    getInfo: MemInfo => js.Any,
+    release: () => scala.Unit
   ): WebCLBuffer = {
-    val __obj = js.Dynamic.literal(createSubBuffer = createSubBuffer, getInfo = getInfo, release = release)
+    val __obj = js.Dynamic.literal(createSubBuffer = js.Any.fromFunction3(createSubBuffer), getInfo = js.Any.fromFunction1(getInfo), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[WebCLBuffer]
   }

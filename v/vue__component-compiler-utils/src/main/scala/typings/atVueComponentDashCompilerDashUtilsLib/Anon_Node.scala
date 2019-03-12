@@ -12,12 +12,9 @@ trait Anon_Node extends js.Object {
 object Anon_Node {
   @scala.inline
   def apply(
-    postTransformNode: js.Function1[
-      atVueComponentDashCompilerDashUtilsLib.distTemplateCompilerModulesUtilsMod.ASTNode, 
-      scala.Unit
-    ]
+    postTransformNode: atVueComponentDashCompilerDashUtilsLib.distTemplateCompilerModulesUtilsMod.ASTNode => scala.Unit
   ): Anon_Node = {
-    val __obj = js.Dynamic.literal(postTransformNode = postTransformNode)
+    val __obj = js.Dynamic.literal(postTransformNode = js.Any.fromFunction1(postTransformNode))
   
     __obj.asInstanceOf[Anon_Node]
   }

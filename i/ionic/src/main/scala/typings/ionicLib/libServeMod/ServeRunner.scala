@@ -22,7 +22,7 @@ abstract class ServeRunner[T /* <: ionicLib.definitionsMod.ServeOptions */] ()
   def gatherDevAppDetails(options: T, details: ionicLib.definitionsMod.ServeDetails): js.Promise[js.UndefOr[ionicLib.definitionsMod.DevAppDetails]] = js.native
   def getCommandMetadata(): js.Promise[stdLib.Partial[ionicLib.definitionsMod.CommandMetadata]] = js.native
   def getPkgManagerServeCLI(): PkgManagerServeCLI = js.native
-  def getSupportedDevAppPlugins(): js.Promise[nodeLib.Set[java.lang.String]] = js.native
+  def getSupportedDevAppPlugins(): js.Promise[stdLib.Set[java.lang.String]] = js.native
   def modifyOpenURL(url: java.lang.String, options: T): java.lang.String = js.native
   def publishDevApp(options: T, details: ionicLib.definitionsMod.DevAppDetails): js.Promise[js.UndefOr[java.lang.String]] = js.native
   /* CompleteClass */

@@ -27,13 +27,13 @@ object Options {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     empty: js.UndefOr[scala.Boolean] = js.undefined,
     hash: js.UndefOr[scala.Boolean] = js.undefined,
-    serializer: js.Function3[/* result */ Result, /* key */ java.lang.String, /* value */ java.lang.String, Result] = null
+    serializer: (/* result */ Result, /* key */ java.lang.String, /* value */ java.lang.String) => Result = null
   ): Options[Result] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(empty)) __obj.updateDynamic("empty")(empty)
     if (!js.isUndefined(hash)) __obj.updateDynamic("hash")(hash)
-    if (serializer != null) __obj.updateDynamic("serializer")(serializer)
+    if (serializer != null) __obj.updateDynamic("serializer")(js.Any.fromFunction3(serializer))
     __obj.asInstanceOf[Options[Result]]
   }
 }

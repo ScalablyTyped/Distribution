@@ -38,14 +38,14 @@ object ImagePropsIOS {
   def apply(
     blurRadius: scala.Int | scala.Double = null,
     capInsets: Insets = null,
-    onPartialLoad: js.Function0[scala.Unit] = null,
-    onProgress: js.Function1[/* event */ NativeSyntheticEvent[ImageProgressEventDataIOS], scala.Unit] = null
+    onPartialLoad: () => scala.Unit = null,
+    onProgress: /* event */ NativeSyntheticEvent[ImageProgressEventDataIOS] => scala.Unit = null
   ): ImagePropsIOS = {
     val __obj = js.Dynamic.literal()
     if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius.asInstanceOf[js.Any])
     if (capInsets != null) __obj.updateDynamic("capInsets")(capInsets)
-    if (onPartialLoad != null) __obj.updateDynamic("onPartialLoad")(onPartialLoad)
-    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress)
+    if (onPartialLoad != null) __obj.updateDynamic("onPartialLoad")(js.Any.fromFunction0(onPartialLoad))
+    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
     __obj.asInstanceOf[ImagePropsIOS]
   }
 }

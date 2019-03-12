@@ -13,8 +13,8 @@ trait ICancelable[T] extends js.Object {
 
 object ICancelable {
   @scala.inline
-  def apply[T](cancel: js.Function0[scala.Unit], flush: js.Function0[T], pending: js.Function0[scala.Boolean]): ICancelable[T] = {
-    val __obj = js.Dynamic.literal(cancel = cancel, flush = flush, pending = pending)
+  def apply[T](cancel: () => scala.Unit, flush: () => T, pending: () => scala.Boolean): ICancelable[T] = {
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), flush = js.Any.fromFunction0(flush), pending = js.Any.fromFunction0(pending))
   
     __obj.asInstanceOf[ICancelable[T]]
   }

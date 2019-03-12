@@ -298,13 +298,13 @@ trait Response
   def render(view: java.lang.String): scala.Unit = js.native
   def render(
     view: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* html */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* html */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def render(view: java.lang.String, options: js.Object): scala.Unit = js.native
   def render(
     view: java.lang.String,
     options: js.Object,
-    callback: js.Function2[/* err */ nodeLib.Error, /* html */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* html */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Send a response.

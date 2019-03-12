@@ -5,20 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpsertRetInsertRet extends js.Object {
-  var replace: js.Function1[/* updateOrReplaceExpr */ js.Any, UpsertRetInsertRetUpdateRet]
-  def update(updateOrReplaceExpr: js.Any): UpsertRetInsertRetUpdateRet
-}
-
-object UpsertRetInsertRet {
-  @scala.inline
-  def apply(
-    replace: js.Function1[/* updateOrReplaceExpr */ js.Any, UpsertRetInsertRetUpdateRet],
-    update: js.Function1[js.Any, UpsertRetInsertRetUpdateRet]
-  ): UpsertRetInsertRet = {
-    val __obj = js.Dynamic.literal(replace = replace, update = update)
-  
-    __obj.asInstanceOf[UpsertRetInsertRet]
-  }
+  @JSName("replace")
+  var replace_Original: js.Function1[/* updateOrReplaceExpr */ js.Any, UpsertRetInsertRetUpdateRet] = js.native
+  def replace(updateOrReplaceExpr: js.Any): UpsertRetInsertRetUpdateRet = js.native
+  def update(updateOrReplaceExpr: js.Any): UpsertRetInsertRetUpdateRet = js.native
 }
 

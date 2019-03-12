@@ -14,8 +14,8 @@ trait InteractionOptions extends js.Object {
 
 object InteractionOptions {
   @scala.inline
-  def apply(handleEvent: js.Function1[openlayersLib.openlayersMod.MapBrowserEvent, scala.Boolean]): InteractionOptions = {
-    val __obj = js.Dynamic.literal(handleEvent = handleEvent)
+  def apply(handleEvent: openlayersLib.openlayersMod.MapBrowserEvent => scala.Boolean): InteractionOptions = {
+    val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
   
     __obj.asInstanceOf[InteractionOptions]
   }

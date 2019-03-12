@@ -19,10 +19,10 @@ object AbstractHandshake {
     authType: java.lang.String,
     authVersion: java.lang.String,
     deploymentId: java.lang.String,
-    getHandshakeFields: js.Function1[Client, HandshakeFields],
+    getHandshakeFields: Client => HandshakeFields,
     sandboxId: java.lang.String
   ): AbstractHandshake = {
-    val __obj = js.Dynamic.literal(authType = authType, authVersion = authVersion, deploymentId = deploymentId, getHandshakeFields = getHandshakeFields, sandboxId = sandboxId)
+    val __obj = js.Dynamic.literal(authType = authType, authVersion = authVersion, deploymentId = deploymentId, getHandshakeFields = js.Any.fromFunction1(getHandshakeFields), sandboxId = sandboxId)
   
     __obj.asInstanceOf[AbstractHandshake]
   }

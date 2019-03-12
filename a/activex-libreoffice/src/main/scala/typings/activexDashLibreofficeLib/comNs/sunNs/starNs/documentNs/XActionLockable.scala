@@ -35,16 +35,16 @@ trait XActionLockable
 object XActionLockable {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addActionLock: js.Function0[scala.Unit],
-    isActionLocked: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeActionLock: js.Function0[scala.Unit],
-    resetActionLocks: js.Function0[scala.Double],
-    setActionLocks: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    addActionLock: () => scala.Unit,
+    isActionLocked: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeActionLock: () => scala.Unit,
+    resetActionLocks: () => scala.Double,
+    setActionLocks: scala.Double => scala.Unit
   ): XActionLockable = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addActionLock = addActionLock, isActionLocked = isActionLocked, queryInterface = queryInterface, release = release, removeActionLock = removeActionLock, resetActionLocks = resetActionLocks, setActionLocks = setActionLocks)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addActionLock = js.Any.fromFunction0(addActionLock), isActionLocked = js.Any.fromFunction0(isActionLocked), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeActionLock = js.Any.fromFunction0(removeActionLock), resetActionLocks = js.Any.fromFunction0(resetActionLocks), setActionLocks = js.Any.fromFunction1(setActionLocks))
   
     __obj.asInstanceOf[XActionLockable]
   }

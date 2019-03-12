@@ -31,21 +31,17 @@ trait CertID extends js.Object {
 object CertID {
   @scala.inline
   def apply(
-    createForCertificate: js.Function2[
-      pkijsLib.srcCertificateMod.default, 
-      CreateFroCertificateParams, 
-      js.Thenable[scala.Unit]
-    ],
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    createForCertificate: (pkijsLib.srcCertificateMod.default, CreateFroCertificateParams) => js.Thenable[scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     hashAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
-    isEqual: js.Function1[CertID, scala.Boolean],
+    isEqual: CertID => scala.Boolean,
     issuerKeyHash: asn1jsLib.asn1jsMod.OctetString,
     issuerNameHash: asn1jsLib.asn1jsMod.OctetString,
     serialNumber: asn1jsLib.asn1jsMod.Integer,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): CertID = {
-    val __obj = js.Dynamic.literal(createForCertificate = createForCertificate, fromSchema = fromSchema, hashAlgorithm = hashAlgorithm, isEqual = isEqual, issuerKeyHash = issuerKeyHash, issuerNameHash = issuerNameHash, serialNumber = serialNumber, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(createForCertificate = js.Any.fromFunction2(createForCertificate), fromSchema = js.Any.fromFunction1(fromSchema), hashAlgorithm = hashAlgorithm, isEqual = js.Any.fromFunction1(isEqual), issuerKeyHash = issuerKeyHash, issuerNameHash = issuerNameHash, serialNumber = serialNumber, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[CertID]
   }

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("mobx/lib/api/observabledecorator", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def createDecoratorForEnhancer(enhancer: mobxLib.libTypesModifiersMod.IEnhancer[_]): mobxLib.libApiObservabledecoratorMod.IObservableDecorator = js.native
+  def createDecoratorForEnhancer(enhancer: mobxLib.libTypesModifiersMod.IEnhancer[_]): IObservableDecorator = js.native
 }
 

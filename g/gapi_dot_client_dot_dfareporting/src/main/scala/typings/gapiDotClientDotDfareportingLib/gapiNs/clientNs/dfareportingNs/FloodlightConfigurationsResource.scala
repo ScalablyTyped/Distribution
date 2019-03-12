@@ -19,24 +19,12 @@ trait FloodlightConfigurationsResource extends js.Object {
 object FloodlightConfigurationsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightConfiguration]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsIdsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightConfigurationsListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightConfiguration]
-    ],
-    update: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightConfiguration]
-    ]
+    get: gapiDotClientDotDfareportingLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[FloodlightConfiguration],
+    list: gapiDotClientDotDfareportingLib.Anon_AltFieldsIdsKey => gapiDotClientLib.gapiNs.clientNs.Request[FloodlightConfigurationsListResponse],
+    patch: gapiDotClientDotDfareportingLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[FloodlightConfiguration],
+    update: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[FloodlightConfiguration]
   ): FloodlightConfigurationsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[FloodlightConfigurationsResource]
   }

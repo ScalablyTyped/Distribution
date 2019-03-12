@@ -18,15 +18,15 @@ trait IShape extends js.Object {
 object IShape {
   @scala.inline
   def apply(
-    contains: js.Function1[js.Array[scala.Double], scala.Boolean],
-    equals: js.Function1[IShape, scala.Boolean],
-    getBounds: js.Function0[js.Array[js.Array[scala.Double]] | scala.Null],
-    getGeometry: js.Function0[IPixelGeometry],
-    getType: js.Function0[java.lang.String],
-    scale: js.Function1[scala.Double, IShape],
-    shift: js.Function1[js.Array[scala.Double], IShape]
+    contains: js.Array[scala.Double] => scala.Boolean,
+    equals: IShape => scala.Boolean,
+    getBounds: () => js.Array[js.Array[scala.Double]] | scala.Null,
+    getGeometry: () => IPixelGeometry,
+    getType: () => java.lang.String,
+    scale: scala.Double => IShape,
+    shift: js.Array[scala.Double] => IShape
   ): IShape = {
-    val __obj = js.Dynamic.literal(contains = contains, equals = equals, getBounds = getBounds, getGeometry = getGeometry, getType = getType, scale = scale, shift = shift)
+    val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), equals = js.Any.fromFunction1(equals), getBounds = js.Any.fromFunction0(getBounds), getGeometry = js.Any.fromFunction0(getGeometry), getType = js.Any.fromFunction0(getType), scale = js.Any.fromFunction1(scale), shift = js.Any.fromFunction1(shift))
   
     __obj.asInstanceOf[IShape]
   }

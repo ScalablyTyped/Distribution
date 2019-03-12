@@ -12,8 +12,8 @@ trait ValidatorError extends js.Object {
 
 object ValidatorError {
   @scala.inline
-  def apply(getMessage: js.Function0[atOracleOraclejetLib.ojmessagingMod.namespaced]): ValidatorError = {
-    val __obj = js.Dynamic.literal(getMessage = getMessage)
+  def apply(getMessage: () => atOracleOraclejetLib.ojmessagingMod.namespaced): ValidatorError = {
+    val __obj = js.Dynamic.literal(getMessage = js.Any.fromFunction0(getMessage))
   
     __obj.asInstanceOf[ValidatorError]
   }

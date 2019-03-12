@@ -12,7 +12,7 @@ trait MenuMultipleChange extends js.Object {
   /** unique ID of this menu item */
   var ID: scala.Double
   /** sequence of bytes representing a possible image */
-  var Image: activexDashInteropLib.SafeArray[scala.Double]
+  var Image: stdLib.SafeArray[scala.Double]
   /** true if active, so clickable */
   var IsActive: scala.Boolean
   /** true if checkable, so there can be a checkmark */
@@ -32,7 +32,7 @@ object MenuMultipleChange {
   def apply(
     GroupID: scala.Double,
     ID: scala.Double,
-    Image: activexDashInteropLib.SafeArray[scala.Double],
+    Image: stdLib.SafeArray[scala.Double],
     IsActive: scala.Boolean,
     IsCheckable: scala.Boolean,
     IsChecked: scala.Boolean,

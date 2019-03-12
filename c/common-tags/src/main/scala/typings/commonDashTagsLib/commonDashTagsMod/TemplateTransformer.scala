@@ -44,21 +44,16 @@ trait TemplateTransformer[TCtx] extends js.Object {
 object TemplateTransformer {
   @scala.inline
   def apply[TCtx](
-    getInitialContext: js.Function0[TCtx] = null,
-    onEndResult: js.Function2[/* endResult */ java.lang.String, /* context */ TCtx, java.lang.String] = null,
-    onString: js.Function2[/* str */ java.lang.String, /* context */ TCtx, java.lang.String] = null,
-    onSubstitution: js.Function3[
-      /* substitution */ java.lang.String, 
-      /* resultSoFar */ java.lang.String, 
-      /* context */ TCtx, 
-      java.lang.String
-    ] = null
+    getInitialContext: () => TCtx = null,
+    onEndResult: (/* endResult */ java.lang.String, /* context */ TCtx) => java.lang.String = null,
+    onString: (/* str */ java.lang.String, /* context */ TCtx) => java.lang.String = null,
+    onSubstitution: (/* substitution */ java.lang.String, /* resultSoFar */ java.lang.String, /* context */ TCtx) => java.lang.String = null
   ): TemplateTransformer[TCtx] = {
     val __obj = js.Dynamic.literal()
-    if (getInitialContext != null) __obj.updateDynamic("getInitialContext")(getInitialContext)
-    if (onEndResult != null) __obj.updateDynamic("onEndResult")(onEndResult)
-    if (onString != null) __obj.updateDynamic("onString")(onString)
-    if (onSubstitution != null) __obj.updateDynamic("onSubstitution")(onSubstitution)
+    if (getInitialContext != null) __obj.updateDynamic("getInitialContext")(js.Any.fromFunction0(getInitialContext))
+    if (onEndResult != null) __obj.updateDynamic("onEndResult")(js.Any.fromFunction2(onEndResult))
+    if (onString != null) __obj.updateDynamic("onString")(js.Any.fromFunction2(onString))
+    if (onSubstitution != null) __obj.updateDynamic("onSubstitution")(js.Any.fromFunction3(onSubstitution))
     __obj.asInstanceOf[TemplateTransformer[TCtx]]
   }
 }

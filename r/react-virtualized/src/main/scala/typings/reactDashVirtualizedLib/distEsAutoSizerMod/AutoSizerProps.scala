@@ -53,7 +53,7 @@ trait AutoSizerProps
 object AutoSizerProps {
   @scala.inline
   def apply(
-    children: js.Function1[Size, reactLib.reactMod.ReactNs.ReactNode],
+    children: Size => reactLib.reactMod.ReactNs.ReactNode,
     StringDictionary: /**
     * PLEASE NOTE
     * The [key: string]: any; line is here on purpose
@@ -68,10 +68,10 @@ object AutoSizerProps {
     disableHeight: js.UndefOr[scala.Boolean] = js.undefined,
     disableWidth: js.UndefOr[scala.Boolean] = js.undefined,
     nonce: java.lang.String = null,
-    onResize: js.Function1[/* info */ Size, _] = null,
+    onResize: /* info */ Size => _ = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): AutoSizerProps = {
-    val __obj = js.Dynamic.literal(children = children)
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className)
     if (defaultHeight != null) __obj.updateDynamic("defaultHeight")(defaultHeight.asInstanceOf[js.Any])
@@ -79,7 +79,7 @@ object AutoSizerProps {
     if (!js.isUndefined(disableHeight)) __obj.updateDynamic("disableHeight")(disableHeight)
     if (!js.isUndefined(disableWidth)) __obj.updateDynamic("disableWidth")(disableWidth)
     if (nonce != null) __obj.updateDynamic("nonce")(nonce)
-    if (onResize != null) __obj.updateDynamic("onResize")(onResize)
+    if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction1(onResize))
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[AutoSizerProps]
   }

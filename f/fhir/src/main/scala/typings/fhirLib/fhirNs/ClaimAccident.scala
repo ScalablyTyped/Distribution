@@ -18,7 +18,7 @@ trait ClaimAccident extends BackboneElement {
     * see information codes
     * see information codes
     */
-  var date: date
+  var date: fhirLib.fhirNs.date
   /**
     * Accident Place
     */

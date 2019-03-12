@@ -25,12 +25,12 @@ trait Bleno
   @JSName("on")
   def on_advertisingStart(
     event: blenoLib.blenoLibStrings.advertisingStart,
-    cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    cb: js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_advertisingStartError(
     event: blenoLib.blenoLibStrings.advertisingStartError,
-    cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    cb: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_advertisingStop(event: blenoLib.blenoLibStrings.advertisingStop, cb: js.Function0[scala.Unit]): this.type = js.native
@@ -46,12 +46,12 @@ trait Bleno
   @JSName("on")
   def on_servicesSet(
     event: blenoLib.blenoLibStrings.servicesSet,
-    cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    cb: js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_servicesSetError(
     event: blenoLib.blenoLibStrings.servicesSetError,
-    cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    cb: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_stateChange(
@@ -61,14 +61,14 @@ trait Bleno
   def setServices(services: js.Array[PrimaryService]): scala.Unit = js.native
   def setServices(
     services: js.Array[PrimaryService],
-    callback: js.Function1[/* arg */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[/* arg */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native
   def startAdvertising(name: java.lang.String): scala.Unit = js.native
   def startAdvertising(name: java.lang.String, serviceUuids: js.Array[java.lang.String]): scala.Unit = js.native
   def startAdvertising(
     name: java.lang.String,
     serviceUuids: js.Array[java.lang.String],
-    callback: js.Function1[/* arg */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[/* arg */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native
   def startAdvertisingIBeacon(uuid: java.lang.String, major: scala.Double, minor: scala.Double, measuredPower: scala.Double): scala.Unit = js.native
   def startAdvertisingIBeacon(
@@ -76,18 +76,18 @@ trait Bleno
     major: scala.Double,
     minor: scala.Double,
     measuredPower: scala.Double,
-    callback: js.Function1[/* arg */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[/* arg */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native
   def startAdvertisingWithEIRData(advertisementData: nodeLib.Buffer): scala.Unit = js.native
   def startAdvertisingWithEIRData(
     advertisementData: nodeLib.Buffer,
-    callback: js.Function1[/* arg */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[/* arg */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native
   def startAdvertisingWithEIRData(advertisementData: nodeLib.Buffer, scanData: nodeLib.Buffer): scala.Unit = js.native
   def startAdvertisingWithEIRData(
     advertisementData: nodeLib.Buffer,
     scanData: nodeLib.Buffer,
-    callback: js.Function1[/* arg */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[/* arg */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native
   def stopAdvertising(): scala.Unit = js.native
   def stopAdvertising(callback: js.Function0[scala.Unit]): scala.Unit = js.native

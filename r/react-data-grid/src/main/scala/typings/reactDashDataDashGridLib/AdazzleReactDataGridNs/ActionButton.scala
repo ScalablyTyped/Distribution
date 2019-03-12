@@ -12,8 +12,8 @@ trait ActionButton extends js.Object {
 
 object ActionButton {
   @scala.inline
-  def apply(callback: js.Function0[scala.Unit], icon: java.lang.String): ActionButton = {
-    val __obj = js.Dynamic.literal(callback = callback, icon = icon)
+  def apply(callback: () => scala.Unit, icon: java.lang.String): ActionButton = {
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), icon = icon)
   
     __obj.asInstanceOf[ActionButton]
   }

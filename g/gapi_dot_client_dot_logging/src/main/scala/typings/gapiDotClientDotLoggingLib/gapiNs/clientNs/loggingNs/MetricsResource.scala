@@ -21,28 +21,13 @@ trait MetricsResource extends js.Object {
 object MetricsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotLoggingLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LogMetric]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyMetricName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyMetricName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LogMetric]
-    ],
-    list: js.Function1[
-      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListLogMetricsResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyMetricName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LogMetric]
-    ]
+    create: gapiDotClientDotLoggingLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[LogMetric],
+    delete: gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyMetricName => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyMetricName => gapiDotClientLib.gapiNs.clientNs.Request[LogMetric],
+    list: gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ListLogMetricsResponse],
+    update: gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyMetricName => gapiDotClientLib.gapiNs.clientNs.Request[LogMetric]
   ): MetricsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, update = update)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[MetricsResource]
   }

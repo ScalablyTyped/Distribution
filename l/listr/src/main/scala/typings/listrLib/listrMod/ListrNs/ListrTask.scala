@@ -28,28 +28,16 @@ trait ListrTask extends js.Object {
 object ListrTask {
   @scala.inline
   def apply(
-    task: js.Function2[
-      js.Any, 
-      ListrTaskWrapper, 
-      scala.Unit | java.lang.String | js.Promise[_] | nodeLib.streamMod.Readable | listrLib.listrMod.Listr
-    ],
+    task: (js.Any, ListrTaskWrapper) => scala.Unit | java.lang.String | js.Promise[_] | nodeLib.streamMod.Readable | listrLib.listrMod.Listr,
     title: java.lang.String,
-    enabled: js.Function2[
-      /* ctx */ js.Any, 
-      /* task */ ListrTaskWrapper, 
-      scala.Boolean | js.Promise[scala.Boolean]
-    ] = null,
+    enabled: (/* ctx */ js.Any, /* task */ ListrTaskWrapper) => scala.Boolean | js.Promise[scala.Boolean] = null,
     output: java.lang.String = null,
-    skip: js.Function2[
-      /* ctx */ js.Any, 
-      /* task */ ListrTaskWrapper, 
-      scala.Boolean | js.Promise[scala.Boolean] | java.lang.String | scala.Unit
-    ] = null
+    skip: (/* ctx */ js.Any, /* task */ ListrTaskWrapper) => scala.Boolean | js.Promise[scala.Boolean] | java.lang.String | scala.Unit = null
   ): ListrTask = {
-    val __obj = js.Dynamic.literal(task = task, title = title)
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled)
+    val __obj = js.Dynamic.literal(task = js.Any.fromFunction2(task), title = title)
+    if (enabled != null) __obj.updateDynamic("enabled")(js.Any.fromFunction2(enabled))
     if (output != null) __obj.updateDynamic("output")(output)
-    if (skip != null) __obj.updateDynamic("skip")(skip)
+    if (skip != null) __obj.updateDynamic("skip")(js.Any.fromFunction2(skip))
     __obj.asInstanceOf[ListrTask]
   }
 }

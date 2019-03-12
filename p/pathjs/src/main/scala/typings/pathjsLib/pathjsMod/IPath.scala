@@ -21,17 +21,17 @@ object IPath {
   @scala.inline
   def apply(
     core: IPathCore,
-    dispatch: js.Function1[java.lang.String, scala.Unit],
+    dispatch: java.lang.String => scala.Unit,
     history: IPathHistory,
-    listen: js.Function0[scala.Unit],
-    map: js.Function1[java.lang.String, IPathRoute],
-    `match`: js.Function2[java.lang.String, scala.Boolean, IPathRoute | scala.Null],
-    rescue: js.Function1[js.Function, scala.Unit],
-    root: js.Function1[java.lang.String, scala.Unit],
+    listen: () => scala.Unit,
+    map: java.lang.String => IPathRoute,
+    `match`: (java.lang.String, scala.Boolean) => IPathRoute | scala.Null,
+    rescue: js.Function => scala.Unit,
+    root: java.lang.String => scala.Unit,
     routes: IPathRoutes
   ): IPath = {
-    val __obj = js.Dynamic.literal(core = core, dispatch = dispatch, history = history, listen = listen, map = map, rescue = rescue, root = root, routes = routes)
-    __obj.updateDynamic("match")(`match`)
+    val __obj = js.Dynamic.literal(core = core, dispatch = js.Any.fromFunction1(dispatch), history = history, listen = js.Any.fromFunction0(listen), map = js.Any.fromFunction1(map), rescue = js.Any.fromFunction1(rescue), root = js.Any.fromFunction1(root), routes = routes)
+    __obj.updateDynamic("match")(js.Any.fromFunction2(`match`))
     __obj.asInstanceOf[IPath]
   }
 }

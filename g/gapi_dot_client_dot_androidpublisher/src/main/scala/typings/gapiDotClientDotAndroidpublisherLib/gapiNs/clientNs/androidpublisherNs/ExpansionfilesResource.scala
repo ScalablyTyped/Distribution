@@ -22,24 +22,12 @@ trait ExpansionfilesResource extends js.Object {
 object ExpansionfilesResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltApkVersionCodeEditId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ExpansionFile]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltApkVersionCodeEditId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ExpansionFile]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltApkVersionCodeEditId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ExpansionFile]
-    ],
-    upload: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltApkVersionCodeEditId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ExpansionFilesUploadResponse]
-    ]
+    get: gapiDotClientDotAndroidpublisherLib.Anon_AltApkVersionCodeEditId => gapiDotClientLib.gapiNs.clientNs.Request[ExpansionFile],
+    patch: gapiDotClientDotAndroidpublisherLib.Anon_AltApkVersionCodeEditId => gapiDotClientLib.gapiNs.clientNs.Request[ExpansionFile],
+    update: gapiDotClientDotAndroidpublisherLib.Anon_AltApkVersionCodeEditId => gapiDotClientLib.gapiNs.clientNs.Request[ExpansionFile],
+    upload: gapiDotClientDotAndroidpublisherLib.Anon_AltApkVersionCodeEditId => gapiDotClientLib.gapiNs.clientNs.Request[ExpansionFilesUploadResponse]
   ): ExpansionfilesResource = {
-    val __obj = js.Dynamic.literal(get = get, patch = patch, update = update, upload = upload)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update), upload = js.Any.fromFunction1(upload))
   
     __obj.asInstanceOf[ExpansionfilesResource]
   }

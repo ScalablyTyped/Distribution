@@ -25,10 +25,14 @@ object errorsNs extends js.Object {
   
   @js.native
   abstract class DriverError protected ()
-    extends nodeLib.Error {
+    extends stdLib.Error {
     def this(message: java.lang.String) = this()
     def this(message: java.lang.String, constructor: js.Any) = this()
     var info: java.lang.String = js.native
+    /* CompleteClass */
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
   }
   
   @js.native

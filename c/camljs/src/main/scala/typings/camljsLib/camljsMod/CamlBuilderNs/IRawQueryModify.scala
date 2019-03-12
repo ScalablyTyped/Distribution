@@ -12,8 +12,8 @@ trait IRawQueryModify extends js.Object {
 
 object IRawQueryModify {
   @scala.inline
-  def apply(AppendAnd: js.Function0[IFieldExpression], AppendOr: js.Function0[IFieldExpression]): IRawQueryModify = {
-    val __obj = js.Dynamic.literal(AppendAnd = AppendAnd, AppendOr = AppendOr)
+  def apply(AppendAnd: () => IFieldExpression, AppendOr: () => IFieldExpression): IRawQueryModify = {
+    val __obj = js.Dynamic.literal(AppendAnd = js.Any.fromFunction0(AppendAnd), AppendOr = js.Any.fromFunction0(AppendOr))
   
     __obj.asInstanceOf[IRawQueryModify]
   }

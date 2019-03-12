@@ -19,30 +19,24 @@ object ^ extends js.Object {
   val REPLACE: /* ROUTER_REPLACE */ java.lang.String = js.native
   val REPLACE_ROUTES: /* ROUTER_REPLACE_ROUTES */ java.lang.String = js.native
   val UNBLOCK: /* ROUTER_UNBLOCK */ java.lang.String = js.native
-  def block(historyShouldBlock: reduxDashLittleDashRouterLib.BlockCallback): reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.BlockAction = js.native
-  def go(index: scala.Double): reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.GoAction = js.native
-  def goBack(): reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.GoBackAction = js.native
-  def goForward(): reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.GoForwardAction = js.native
-  def immutableRouterForBrowser(options: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.BrowserRouterArgs): reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.Router = js.native
-  def immutableRouterForExpress(options: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.ExpressRouterArgs): reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.Router = js.native
-  def immutableRouterForHapi(options: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.HapiRouterArgs): reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.Router = js.native
-  def immutableRouterForHash(options: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.HashRouterArgs): reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.Router = js.native
-  def initializeCurrentLocation(location: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.Location): reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.LocationChangedAction = js.native
-  def push(href: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.Href): reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.PushAction = js.native
-  def push(
-    href: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.Href,
-    options: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.LocationOptions
-  ): reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.PushAction = js.native
-  def replace(href: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.Href): reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.ReplaceAction = js.native
-  def replace(
-    href: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.Href,
-    options: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.LocationOptions
-  ): reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.ReplaceAction = js.native
-  def replaceRoutes(routes: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.Routes): reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.ReplaceRoutesAction = js.native
-  def routerForBrowser(options: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.BrowserRouterArgs): reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.Router = js.native
-  def routerForExpress(options: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.ExpressRouterArgs): reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.Router = js.native
-  def routerForHapi(options: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.HapiRouterArgs): reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.Router = js.native
-  def routerForHash(options: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.HashRouterArgs): reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.Router = js.native
-  def unblock(): reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.UnblockAction = js.native
+  def block(historyShouldBlock: reduxDashLittleDashRouterLib.BlockCallback): BlockAction = js.native
+  def go(index: scala.Double): GoAction = js.native
+  def goBack(): GoBackAction = js.native
+  def goForward(): GoForwardAction = js.native
+  def immutableRouterForBrowser(options: BrowserRouterArgs): Router = js.native
+  def immutableRouterForExpress(options: ExpressRouterArgs): Router = js.native
+  def immutableRouterForHapi(options: HapiRouterArgs): Router = js.native
+  def immutableRouterForHash(options: HashRouterArgs): Router = js.native
+  def initializeCurrentLocation(location: Location): LocationChangedAction = js.native
+  def push(href: Href): PushAction = js.native
+  def push(href: Href, options: LocationOptions): PushAction = js.native
+  def replace(href: Href): ReplaceAction = js.native
+  def replace(href: Href, options: LocationOptions): ReplaceAction = js.native
+  def replaceRoutes(routes: Routes): ReplaceRoutesAction = js.native
+  def routerForBrowser(options: BrowserRouterArgs): Router = js.native
+  def routerForExpress(options: ExpressRouterArgs): Router = js.native
+  def routerForHapi(options: HapiRouterArgs): Router = js.native
+  def routerForHash(options: HashRouterArgs): Router = js.native
+  def unblock(): UnblockAction = js.native
 }
 

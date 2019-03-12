@@ -57,86 +57,47 @@ object IPieSlice {
   def apply(
     A: scala.Int | scala.Double = null,
     An: senchaUnderscoreTouchLib.ExtNs.Array = null,
-    addAfterListener: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    addBeforeListener: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    addEvents: js.Function1[/* eventNames */ js.UndefOr[js.Any], scala.Unit] = null,
-    addListener: js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    addManagedListener: js.Function5[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
+    addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    addEvents: /* eventNames */ js.UndefOr[js.Any] => scala.Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
     attr: js.Any = null,
-    bindMarker: js.Function2[
-      /* name */ js.UndefOr[java.lang.String], 
-      /* marker */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.chartNs.IMarkers], 
-      scala.Unit
-    ] = null,
+    bindMarker: (/* name */ js.UndefOr[java.lang.String], /* marker */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.chartNs.IMarkers]) => scala.Unit = null,
     bubbleEvents: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     centerX: scala.Int | scala.Double = null,
     centerY: scala.Int | scala.Double = null,
-    clearListeners: js.Function0[scala.Unit] = null,
+    clearListeners: () => scala.Unit = null,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     doCallout: js.UndefOr[scala.Boolean] = js.undefined,
-    enableBubble: js.Function1[/* events */ js.UndefOr[js.Any], scala.Unit] = null,
+    enableBubble: /* events */ js.UndefOr[js.Any] => scala.Unit = null,
     endAngle: scala.Int | scala.Double = null,
     endRho: scala.Int | scala.Double = null,
     extend: java.lang.String = null,
     fillOpacity: scala.Int | scala.Double = null,
     fillStyle: java.lang.String = null,
-    fireAction: js.Function4[
-      /* eventName */ js.UndefOr[java.lang.String], 
-      /* args */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      _
-    ] = null,
-    fireEvent: js.Function2[/* eventName */ java.lang.String, /* repeated */ js.Any, scala.Boolean] = null,
-    getBBox: js.Function1[/* isWithoutTransform */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    getBBoxCenter: js.Function1[
-      /* isWithoutTransform */ js.UndefOr[scala.Boolean], 
-      senchaUnderscoreTouchLib.ExtNs.Array
-    ] = null,
-    getBubbleEvents: js.Function0[_] = null,
-    getId: js.Function0[_] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getListeners: js.Function0[_] = null,
-    getParent: js.Function0[_] = null,
-    getRendererIndex: js.Function0[scala.Double] = null,
+    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => scala.Boolean = null,
+    getBBox: /* isWithoutTransform */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    getBBoxCenter: /* isWithoutTransform */ js.UndefOr[scala.Boolean] => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getBubbleEvents: () => _ = null,
+    getId: () => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getListeners: () => _ = null,
+    getParent: () => _ = null,
+    getRendererIndex: () => scala.Double = null,
     globalAlpha: scala.Int | scala.Double = null,
-    hasListener: js.Function1[/* eventName */ js.UndefOr[java.lang.String], scala.Boolean] = null,
+    hasListener: /* eventName */ js.UndefOr[java.lang.String] => scala.Boolean = null,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
-    hide: js.Function0[IPieSlice] = null,
+    hide: () => IPieSlice = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     label: java.lang.String = null,
     labelOverflowPadding: scala.Int | scala.Double = null,
     lineCap: java.lang.String = null,
@@ -146,87 +107,21 @@ object IPieSlice {
     margin: scala.Int | scala.Double = null,
     miterLimit: scala.Int | scala.Double = null,
     mixins: js.Any = null,
-    mon: js.Function5[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    mun: js.Function4[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    on: js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    onAfter: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    onBefore: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
+    mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     path: java.lang.String = null,
     platformConfig: js.Any = null,
-    preRender: js.Function0[scala.Unit] = null,
-    relayEvents: js.Function2[
-      /* object */ js.UndefOr[js.Any], 
-      /* events */ js.UndefOr[js.Any], 
-      senchaUnderscoreTouchLib.ExtNs.mixinNs.IObservable
-    ] = null,
-    removeAfterListener: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    removeBeforeListener: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    removeListener: js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    removeManagedListener: js.Function4[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    render: js.Function3[
-      /* ctx */ js.UndefOr[js.Any], 
-      /* surface */ js.UndefOr[js.Any], 
-      /* clipRegion */ js.UndefOr[js.Any], 
-      _
-    ] = null,
-    resumeEvents: js.Function1[/* discardQueuedEvents */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    preRender: () => scala.Unit = null,
+    relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => senchaUnderscoreTouchLib.ExtNs.mixinNs.IObservable = null,
+    removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    render: (/* ctx */ js.UndefOr[js.Any], /* surface */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => _ = null,
+    resumeEvents: /* discardQueuedEvents */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     rotateLabels: js.UndefOr[scala.Boolean] = js.undefined,
     rotationCenterX: scala.Int | scala.Double = null,
     rotationCenterY: scala.Int | scala.Double = null,
@@ -236,113 +131,81 @@ object IPieSlice {
     scalingX: scala.Int | scala.Double = null,
     scalingY: scala.Int | scala.Double = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setAttributes: js.Function3[
-      /* changes */ js.UndefOr[js.Any], 
-      /* bypassNormalization */ js.UndefOr[scala.Boolean], 
-      /* avoidCopy */ js.UndefOr[scala.Boolean], 
-      scala.Unit
-    ] = null,
-    setAttributesBypassingNormalization: js.Function2[
-      /* changes */ js.UndefOr[js.Any], 
-      /* avoidCopy */ js.UndefOr[scala.Boolean], 
-      scala.Unit
-    ] = null,
-    setBubbleEvents: js.Function1[/* bubbleEvents */ js.UndefOr[js.Any], scala.Unit] = null,
-    setListeners: js.Function1[/* listeners */ js.UndefOr[js.Any], scala.Unit] = null,
-    setParent: js.Function1[/* parent */ js.UndefOr[js.Any], scala.Unit] = null,
-    setRendererIndex: js.Function1[/* rendererIndex */ js.UndefOr[scala.Double], scala.Unit] = null,
+    setAttributes: (/* changes */ js.UndefOr[js.Any], /* bypassNormalization */ js.UndefOr[scala.Boolean], /* avoidCopy */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
+    setAttributesBypassingNormalization: (/* changes */ js.UndefOr[js.Any], /* avoidCopy */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
+    setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => scala.Unit = null,
+    setListeners: /* listeners */ js.UndefOr[js.Any] => scala.Unit = null,
+    setParent: /* parent */ js.UndefOr[js.Any] => scala.Unit = null,
+    setRendererIndex: /* rendererIndex */ js.UndefOr[scala.Double] => scala.Unit = null,
     shadowBlur: scala.Int | scala.Double = null,
     shadowColor: java.lang.String = null,
     shadowOffsetX: scala.Int | scala.Double = null,
     shadowOffsetY: scala.Int | scala.Double = null,
-    show: js.Function0[IPieSlice] = null,
+    show: () => IPieSlice = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     startAngle: scala.Int | scala.Double = null,
     startRho: scala.Int | scala.Double = null,
     statics: js.Any = null,
     strokeOpacity: scala.Int | scala.Double = null,
     strokeStyle: java.lang.String = null,
-    suspendEvents: js.Function0[scala.Unit] = null,
+    suspendEvents: () => scala.Unit = null,
     transformFillStroke: js.UndefOr[scala.Boolean] = js.undefined,
     translationX: scala.Int | scala.Double = null,
     translationY: scala.Int | scala.Double = null,
-    un: js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    unAfter: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    unBefore: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    updatePath: js.Function2[/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any], scala.Unit] = null,
-    updatePlainBBox: js.Function1[/* plain */ js.UndefOr[js.Any], scala.Unit] = null,
-    updateTransformedBBox: js.Function1[/* transform */ js.UndefOr[js.Any], scala.Unit] = null,
-    useAttributes: js.Function2[
-      /* ctx */ js.UndefOr[js.Any], 
-      /* region */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
-      scala.Unit
-    ] = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    updatePath: (/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any]) => scala.Unit = null,
+    updatePlainBBox: /* plain */ js.UndefOr[js.Any] => scala.Unit = null,
+    updateTransformedBBox: /* transform */ js.UndefOr[js.Any] => scala.Unit = null,
+    useAttributes: (/* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array]) => scala.Unit = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null,
     zIndex: scala.Int | scala.Double = null
   ): IPieSlice = {
     val __obj = js.Dynamic.literal()
     if (A != null) __obj.updateDynamic("A")(A.asInstanceOf[js.Any])
     if (An != null) __obj.updateDynamic("An")(An)
-    if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(addAfterListener)
-    if (addBeforeListener != null) __obj.updateDynamic("addBeforeListener")(addBeforeListener)
-    if (addEvents != null) __obj.updateDynamic("addEvents")(addEvents)
-    if (addListener != null) __obj.updateDynamic("addListener")(addListener)
-    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(addManagedListener)
+    if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4(addAfterListener))
+    if (addBeforeListener != null) __obj.updateDynamic("addBeforeListener")(js.Any.fromFunction4(addBeforeListener))
+    if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
+    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction5(addListener))
+    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
     if (attr != null) __obj.updateDynamic("attr")(attr)
-    if (bindMarker != null) __obj.updateDynamic("bindMarker")(bindMarker)
+    if (bindMarker != null) __obj.updateDynamic("bindMarker")(js.Any.fromFunction2(bindMarker))
     if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (centerX != null) __obj.updateDynamic("centerX")(centerX.asInstanceOf[js.Any])
     if (centerY != null) __obj.updateDynamic("centerY")(centerY.asInstanceOf[js.Any])
-    if (clearListeners != null) __obj.updateDynamic("clearListeners")(clearListeners)
+    if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (!js.isUndefined(doCallout)) __obj.updateDynamic("doCallout")(doCallout)
-    if (enableBubble != null) __obj.updateDynamic("enableBubble")(enableBubble)
+    if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
     if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
     if (endRho != null) __obj.updateDynamic("endRho")(endRho.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend)
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle)
-    if (fireAction != null) __obj.updateDynamic("fireAction")(fireAction)
-    if (fireEvent != null) __obj.updateDynamic("fireEvent")(fireEvent)
-    if (getBBox != null) __obj.updateDynamic("getBBox")(getBBox)
-    if (getBBoxCenter != null) __obj.updateDynamic("getBBoxCenter")(getBBoxCenter)
-    if (getBubbleEvents != null) __obj.updateDynamic("getBubbleEvents")(getBubbleEvents)
-    if (getId != null) __obj.updateDynamic("getId")(getId)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getListeners != null) __obj.updateDynamic("getListeners")(getListeners)
-    if (getParent != null) __obj.updateDynamic("getParent")(getParent)
-    if (getRendererIndex != null) __obj.updateDynamic("getRendererIndex")(getRendererIndex)
+    if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
+    if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
+    if (getBBox != null) __obj.updateDynamic("getBBox")(js.Any.fromFunction1(getBBox))
+    if (getBBoxCenter != null) __obj.updateDynamic("getBBoxCenter")(js.Any.fromFunction1(getBBoxCenter))
+    if (getBubbleEvents != null) __obj.updateDynamic("getBubbleEvents")(js.Any.fromFunction0(getBubbleEvents))
+    if (getId != null) __obj.updateDynamic("getId")(js.Any.fromFunction0(getId))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getListeners != null) __obj.updateDynamic("getListeners")(js.Any.fromFunction0(getListeners))
+    if (getParent != null) __obj.updateDynamic("getParent")(js.Any.fromFunction0(getParent))
+    if (getRendererIndex != null) __obj.updateDynamic("getRendererIndex")(js.Any.fromFunction0(getRendererIndex))
     if (globalAlpha != null) __obj.updateDynamic("globalAlpha")(globalAlpha.asInstanceOf[js.Any])
-    if (hasListener != null) __obj.updateDynamic("hasListener")(hasListener)
+    if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction0(hide))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (label != null) __obj.updateDynamic("label")(label)
     if (labelOverflowPadding != null) __obj.updateDynamic("labelOverflowPadding")(labelOverflowPadding.asInstanceOf[js.Any])
     if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap)
@@ -352,21 +215,21 @@ object IPieSlice {
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (miterLimit != null) __obj.updateDynamic("miterLimit")(miterLimit.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (mon != null) __obj.updateDynamic("mon")(mon)
-    if (mun != null) __obj.updateDynamic("mun")(mun)
-    if (on != null) __obj.updateDynamic("on")(on)
-    if (onAfter != null) __obj.updateDynamic("onAfter")(onAfter)
-    if (onBefore != null) __obj.updateDynamic("onBefore")(onBefore)
+    if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
+    if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
+    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
+    if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
+    if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
     if (path != null) __obj.updateDynamic("path")(path)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
-    if (preRender != null) __obj.updateDynamic("preRender")(preRender)
-    if (relayEvents != null) __obj.updateDynamic("relayEvents")(relayEvents)
-    if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(removeAfterListener)
-    if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(removeBeforeListener)
-    if (removeListener != null) __obj.updateDynamic("removeListener")(removeListener)
-    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(removeManagedListener)
-    if (render != null) __obj.updateDynamic("render")(render)
-    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(resumeEvents)
+    if (preRender != null) __obj.updateDynamic("preRender")(js.Any.fromFunction0(preRender))
+    if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
+    if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4(removeAfterListener))
+    if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(js.Any.fromFunction4(removeBeforeListener))
+    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction5(removeListener))
+    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction3(render))
+    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1(resumeEvents))
     if (!js.isUndefined(rotateLabels)) __obj.updateDynamic("rotateLabels")(rotateLabels)
     if (rotationCenterX != null) __obj.updateDynamic("rotationCenterX")(rotationCenterX.asInstanceOf[js.Any])
     if (rotationCenterY != null) __obj.updateDynamic("rotationCenterY")(rotationCenterY.asInstanceOf[js.Any])
@@ -376,34 +239,34 @@ object IPieSlice {
     if (scalingX != null) __obj.updateDynamic("scalingX")(scalingX.asInstanceOf[js.Any])
     if (scalingY != null) __obj.updateDynamic("scalingY")(scalingY.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setAttributes != null) __obj.updateDynamic("setAttributes")(setAttributes)
-    if (setAttributesBypassingNormalization != null) __obj.updateDynamic("setAttributesBypassingNormalization")(setAttributesBypassingNormalization)
-    if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(setBubbleEvents)
-    if (setListeners != null) __obj.updateDynamic("setListeners")(setListeners)
-    if (setParent != null) __obj.updateDynamic("setParent")(setParent)
-    if (setRendererIndex != null) __obj.updateDynamic("setRendererIndex")(setRendererIndex)
+    if (setAttributes != null) __obj.updateDynamic("setAttributes")(js.Any.fromFunction3(setAttributes))
+    if (setAttributesBypassingNormalization != null) __obj.updateDynamic("setAttributesBypassingNormalization")(js.Any.fromFunction2(setAttributesBypassingNormalization))
+    if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
+    if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
+    if (setParent != null) __obj.updateDynamic("setParent")(js.Any.fromFunction1(setParent))
+    if (setRendererIndex != null) __obj.updateDynamic("setRendererIndex")(js.Any.fromFunction1(setRendererIndex))
     if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
     if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor)
     if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
     if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction0(show))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
     if (startRho != null) __obj.updateDynamic("startRho")(startRho.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
     if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle)
-    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(suspendEvents)
+    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (!js.isUndefined(transformFillStroke)) __obj.updateDynamic("transformFillStroke")(transformFillStroke)
     if (translationX != null) __obj.updateDynamic("translationX")(translationX.asInstanceOf[js.Any])
     if (translationY != null) __obj.updateDynamic("translationY")(translationY.asInstanceOf[js.Any])
-    if (un != null) __obj.updateDynamic("un")(un)
-    if (unAfter != null) __obj.updateDynamic("unAfter")(unAfter)
-    if (unBefore != null) __obj.updateDynamic("unBefore")(unBefore)
-    if (updatePath != null) __obj.updateDynamic("updatePath")(updatePath)
-    if (updatePlainBBox != null) __obj.updateDynamic("updatePlainBBox")(updatePlainBBox)
-    if (updateTransformedBBox != null) __obj.updateDynamic("updateTransformedBBox")(updateTransformedBBox)
-    if (useAttributes != null) __obj.updateDynamic("useAttributes")(useAttributes)
+    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
+    if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
+    if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
+    if (updatePath != null) __obj.updateDynamic("updatePath")(js.Any.fromFunction2(updatePath))
+    if (updatePlainBBox != null) __obj.updateDynamic("updatePlainBBox")(js.Any.fromFunction1(updatePlainBBox))
+    if (updateTransformedBBox != null) __obj.updateDynamic("updateTransformedBBox")(js.Any.fromFunction1(updateTransformedBBox))
+    if (useAttributes != null) __obj.updateDynamic("useAttributes")(js.Any.fromFunction2(useAttributes))
     if (uses != null) __obj.updateDynamic("uses")(uses)
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPieSlice]

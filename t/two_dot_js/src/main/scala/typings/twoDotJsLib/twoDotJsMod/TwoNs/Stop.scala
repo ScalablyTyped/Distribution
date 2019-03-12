@@ -13,8 +13,8 @@ trait Stop extends js.Object {
 
 object Stop {
   @scala.inline
-  def apply(clone: js.Function0[Stop], color: java.lang.String, offset: scala.Double, opacity: scala.Double): Stop = {
-    val __obj = js.Dynamic.literal(clone = clone, color = color, offset = offset, opacity = opacity)
+  def apply(clone: () => Stop, color: java.lang.String, offset: scala.Double, opacity: scala.Double): Stop = {
+    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), color = color, offset = offset, opacity = opacity)
   
     __obj.asInstanceOf[Stop]
   }

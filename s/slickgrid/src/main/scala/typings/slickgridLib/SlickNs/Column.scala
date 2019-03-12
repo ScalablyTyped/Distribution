@@ -112,13 +112,7 @@ trait Column[T /* <: SlickData */] extends js.Object {
 object Column {
   @scala.inline
   def apply[T /* <: SlickData */](
-    asyncPostRender: js.Function4[
-      /* cellNode */ js.Any, 
-      /* row */ js.Any, 
-      /* dataContext */ js.Any, 
-      /* colDef */ js.Any, 
-      scala.Unit
-    ] = null,
+    asyncPostRender: (/* cellNode */ js.Any, /* row */ js.Any, /* dataContext */ js.Any, /* colDef */ js.Any) => scala.Unit = null,
     behavior: js.Any = null,
     cannotTriggerInsert: js.UndefOr[scala.Boolean] = js.undefined,
     cssClass: java.lang.String = null,
@@ -141,7 +135,7 @@ object Column {
     width: scala.Int | scala.Double = null
   ): Column[T] = {
     val __obj = js.Dynamic.literal()
-    if (asyncPostRender != null) __obj.updateDynamic("asyncPostRender")(asyncPostRender)
+    if (asyncPostRender != null) __obj.updateDynamic("asyncPostRender")(js.Any.fromFunction4(asyncPostRender))
     if (behavior != null) __obj.updateDynamic("behavior")(behavior)
     if (!js.isUndefined(cannotTriggerInsert)) __obj.updateDynamic("cannotTriggerInsert")(cannotTriggerInsert)
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)

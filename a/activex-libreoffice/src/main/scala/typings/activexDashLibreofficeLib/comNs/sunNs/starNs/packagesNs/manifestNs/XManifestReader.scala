@@ -12,25 +12,22 @@ import scala.scalajs.js.annotation._
 trait XManifestReader
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** Supplies the {@link XManifestReader} with an XInputStream to read from, reads the data and returns it to the caller. */
-  def readManifestSequence(rStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream): activexDashInteropLib.SafeArray[
-    activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  def readManifestSequence(rStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream): stdLib.SafeArray[
+    stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   ]
 }
 
 object XManifestReader {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    readManifestSequence: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      activexDashInteropLib.SafeArray[
-        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-      ]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    readManifestSequence: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream => stdLib.SafeArray[
+      stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
     ],
-    release: js.Function0[scala.Unit]
+    release: () => scala.Unit
   ): XManifestReader = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, readManifestSequence = readManifestSequence, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), readManifestSequence = js.Any.fromFunction1(readManifestSequence), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XManifestReader]
   }

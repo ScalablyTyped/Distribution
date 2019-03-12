@@ -32,32 +32,14 @@ trait JobsResource extends js.Object {
 object JobsResource {
   @scala.inline
   def apply(
-    cancel: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AltFieldsJobId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[JobCancelResponse]
-    ],
-    get: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AltFieldsJobId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Job]
-    ],
-    getQueryResults: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AltFieldsJobIdKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GetQueryResultsResponse]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Job]
-    ],
-    list: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AllUsers, 
-      gapiDotClientLib.gapiNs.clientNs.Request[JobList]
-    ],
-    query: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[QueryResponse]
-    ]
+    cancel: gapiDotClientDotBigqueryLib.Anon_AltFieldsJobId => gapiDotClientLib.gapiNs.clientNs.Request[JobCancelResponse],
+    get: gapiDotClientDotBigqueryLib.Anon_AltFieldsJobId => gapiDotClientLib.gapiNs.clientNs.Request[Job],
+    getQueryResults: gapiDotClientDotBigqueryLib.Anon_AltFieldsJobIdKey => gapiDotClientLib.gapiNs.clientNs.Request[GetQueryResultsResponse],
+    insert: gapiDotClientDotBigqueryLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Job],
+    list: gapiDotClientDotBigqueryLib.Anon_AllUsers => gapiDotClientLib.gapiNs.clientNs.Request[JobList],
+    query: gapiDotClientDotBigqueryLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[QueryResponse]
   ): JobsResource = {
-    val __obj = js.Dynamic.literal(cancel = cancel, get = get, getQueryResults = getQueryResults, insert = insert, list = list, query = query)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), get = js.Any.fromFunction1(get), getQueryResults = js.Any.fromFunction1(getQueryResults), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), query = js.Any.fromFunction1(query))
   
     __obj.asInstanceOf[JobsResource]
   }

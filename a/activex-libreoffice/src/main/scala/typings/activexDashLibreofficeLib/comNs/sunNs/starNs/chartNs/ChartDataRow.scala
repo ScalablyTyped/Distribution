@@ -15,15 +15,12 @@ trait ChartDataRow extends js.Object {
   /** The name of the data row. */
   var Name: java.lang.String
   /** The points contained in this data row. */
-  var Points: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[ChartDataValue]]
+  var Points: stdLib.SafeArray[stdLib.SafeArray[ChartDataValue]]
 }
 
 object ChartDataRow {
   @scala.inline
-  def apply(
-    Name: java.lang.String,
-    Points: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[ChartDataValue]]
-  ): ChartDataRow = {
+  def apply(Name: java.lang.String, Points: stdLib.SafeArray[stdLib.SafeArray[ChartDataValue]]): ChartDataRow = {
     val __obj = js.Dynamic.literal(Name = Name, Points = Points)
   
     __obj.asInstanceOf[ChartDataRow]

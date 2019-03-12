@@ -14,9 +14,9 @@ object Anon_Options {
   @scala.inline
   def apply(
     shippingAddress: stripeDashV3Lib.stripeNs.paymentRequestNs.ShippingAddress,
-    updateWith: js.Function1[stripeDashV3Lib.stripeNs.paymentRequestNs.UpdateDetails, scala.Unit]
+    updateWith: stripeDashV3Lib.stripeNs.paymentRequestNs.UpdateDetails => scala.Unit
   ): Anon_Options = {
-    val __obj = js.Dynamic.literal(shippingAddress = shippingAddress, updateWith = updateWith)
+    val __obj = js.Dynamic.literal(shippingAddress = shippingAddress, updateWith = js.Any.fromFunction1(updateWith))
   
     __obj.asInstanceOf[Anon_Options]
   }

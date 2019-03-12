@@ -24,12 +24,12 @@ trait Instance extends js.Object {
 object Instance {
   @scala.inline
   def apply(
-    collapse: js.Function1[scala.Double, scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    getSizes: js.Function0[js.Array[scala.Double]],
-    setSizes: js.Function1[js.Array[scala.Double], scala.Unit]
+    collapse: scala.Double => scala.Unit,
+    destroy: () => scala.Unit,
+    getSizes: () => js.Array[scala.Double],
+    setSizes: js.Array[scala.Double] => scala.Unit
   ): Instance = {
-    val __obj = js.Dynamic.literal(collapse = collapse, destroy = destroy, getSizes = getSizes, setSizes = setSizes)
+    val __obj = js.Dynamic.literal(collapse = js.Any.fromFunction1(collapse), destroy = js.Any.fromFunction0(destroy), getSizes = js.Any.fromFunction0(getSizes), setSizes = js.Any.fromFunction1(setSizes))
   
     __obj.asInstanceOf[Instance]
   }

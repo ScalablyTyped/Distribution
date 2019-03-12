@@ -12,7 +12,7 @@ object CognitoSyncNs extends js.Object {
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityPoolId
   }
   
   trait BulkPublishResponse extends js.Object {
@@ -79,15 +79,15 @@ object CognitoSyncNs extends js.Object {
     /**
       * A string of up to 128 characters. Allowed characters are a-z, A-Z, 0-9, '_' (underscore), '-' (dash), and '.' (dot).
       */
-    var DatasetName: DatasetName
+    var DatasetName: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.DatasetName
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
       */
-    var IdentityId: IdentityId
+    var IdentityId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityId
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityPoolId
   }
   
   trait DeleteDatasetResponse extends js.Object {
@@ -101,15 +101,15 @@ object CognitoSyncNs extends js.Object {
     /**
       * A string of up to 128 characters. Allowed characters are a-z, A-Z, 0-9, '_' (underscore), '-' (dash), and '.' (dot).
       */
-    var DatasetName: DatasetName
+    var DatasetName: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.DatasetName
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
       */
-    var IdentityId: IdentityId
+    var IdentityId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityId
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityPoolId
   }
   
   trait DescribeDatasetResponse extends js.Object {
@@ -123,7 +123,7 @@ object CognitoSyncNs extends js.Object {
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityPoolId
   }
   
   trait DescribeIdentityPoolUsageResponse extends js.Object {
@@ -137,11 +137,11 @@ object CognitoSyncNs extends js.Object {
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
       */
-    var IdentityId: IdentityId
+    var IdentityId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityId
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityPoolId
   }
   
   trait DescribeIdentityUsageResponse extends js.Object {
@@ -158,7 +158,7 @@ object CognitoSyncNs extends js.Object {
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityPoolId
   }
   
   trait GetBulkPublishDetailsResponse extends js.Object {
@@ -188,7 +188,7 @@ object CognitoSyncNs extends js.Object {
     /**
       * The Cognito Identity Pool ID for the request
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityPoolId
   }
   
   trait GetCognitoEventsResponse extends js.Object {
@@ -202,7 +202,7 @@ object CognitoSyncNs extends js.Object {
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. This is the ID of the pool for which to return a configuration.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityPoolId
   }
   
   trait GetIdentityPoolConfigurationResponse extends js.Object {
@@ -266,11 +266,11 @@ object CognitoSyncNs extends js.Object {
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
       */
-    var IdentityId: IdentityId
+    var IdentityId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityId
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityPoolId
     /**
       * The maximum number of results to be returned.
       */
@@ -330,15 +330,15 @@ object CognitoSyncNs extends js.Object {
     /**
       * A string of up to 128 characters. Allowed characters are a-z, A-Z, 0-9, '_' (underscore), '-' (dash), and '.' (dot).
       */
-    var DatasetName: DatasetName
+    var DatasetName: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.DatasetName
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
       */
-    var IdentityId: IdentityId
+    var IdentityId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityId
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityPoolId
     /**
       * The last server sync count for this record.
       */
@@ -461,15 +461,15 @@ object CognitoSyncNs extends js.Object {
     /**
       * The unique ID for this identity.
       */
-    var IdentityId: IdentityId
+    var IdentityId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityId
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. Here, the ID of the pool that the identity belongs to.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityPoolId
     /**
       * The SNS platform type (e.g. GCM, SDM, APNS, APNS_SANDBOX).
       */
-    var Platform: Platform
+    var Platform: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.Platform
     /**
       * The push token.
       */
@@ -487,11 +487,11 @@ object CognitoSyncNs extends js.Object {
     /**
       * The events to configure
       */
-    var Events: Events
+    var Events: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.Events
     /**
       * The Cognito Identity Pool to use when configuring Cognito Events
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityPoolId
   }
   
   trait SetIdentityPoolConfigurationRequest extends js.Object {
@@ -502,7 +502,7 @@ object CognitoSyncNs extends js.Object {
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. This is the ID of the pool to modify.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityPoolId
     /**
       * Options to apply to this identity pool for push synchronization.
       */
@@ -528,19 +528,19 @@ object CognitoSyncNs extends js.Object {
     /**
       * The name of the dataset to subcribe to.
       */
-    var DatasetName: DatasetName
+    var DatasetName: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.DatasetName
     /**
       * The unique ID generated for this device by Cognito.
       */
-    var DeviceId: DeviceId
+    var DeviceId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.DeviceId
     /**
       * Unique ID for this identity.
       */
-    var IdentityId: IdentityId
+    var IdentityId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityId
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. The ID of the pool to which the identity belongs.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityPoolId
   }
   
   trait SubscribeToDatasetResponse extends js.Object
@@ -939,19 +939,19 @@ object CognitoSyncNs extends js.Object {
     /**
       * The name of the dataset from which to unsubcribe.
       */
-    var DatasetName: DatasetName
+    var DatasetName: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.DatasetName
     /**
       * The unique ID generated for this device by Cognito.
       */
-    var DeviceId: DeviceId
+    var DeviceId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.DeviceId
     /**
       * Unique ID for this identity.
       */
-    var IdentityId: IdentityId
+    var IdentityId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityId
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. The ID of the pool to which this identity belongs.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityPoolId
   }
   
   trait UnsubscribeFromDatasetResponse extends js.Object
@@ -964,7 +964,7 @@ object CognitoSyncNs extends js.Object {
     /**
       * A string of up to 128 characters. Allowed characters are a-z, A-Z, 0-9, '_' (underscore), '-' (dash), and '.' (dot).
       */
-    var DatasetName: DatasetName
+    var DatasetName: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.DatasetName
     /**
       * The unique ID generated for this device by Cognito.
       */
@@ -972,11 +972,11 @@ object CognitoSyncNs extends js.Object {
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
       */
-    var IdentityId: IdentityId
+    var IdentityId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityId
     /**
       * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.IdentityPoolId
     /**
       * A list of patch operations.
       */
@@ -984,7 +984,7 @@ object CognitoSyncNs extends js.Object {
     /**
       * The SyncSessionToken returned by a previous call to ListRecords for this dataset and identity.
       */
-    var SyncSessionToken: SyncSessionToken
+    var SyncSessionToken: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.SyncSessionToken
   }
   
   trait UpdateRecordsResponse extends js.Object {

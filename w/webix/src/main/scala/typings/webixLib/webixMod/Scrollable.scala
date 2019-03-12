@@ -12,11 +12,8 @@ trait Scrollable extends js.Object {
 
 object Scrollable {
   @scala.inline
-  def apply(
-    getScrollState: js.Function0[js.Any],
-    scrollTo: js.Function2[scala.Double, scala.Double, scala.Unit]
-  ): Scrollable = {
-    val __obj = js.Dynamic.literal(getScrollState = getScrollState, scrollTo = scrollTo)
+  def apply(getScrollState: () => js.Any, scrollTo: (scala.Double, scala.Double) => scala.Unit): Scrollable = {
+    val __obj = js.Dynamic.literal(getScrollState = js.Any.fromFunction0(getScrollState), scrollTo = js.Any.fromFunction2(scrollTo))
   
     __obj.asInstanceOf[Scrollable]
   }

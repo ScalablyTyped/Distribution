@@ -20,7 +20,7 @@ object CheckboxChangeEventTarget {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     indeterminate: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
-    onChange: js.Function1[CheckboxChangeEvent, scala.Unit] = null,
+    onChange: CheckboxChangeEvent => scala.Unit = null,
     onClick: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
     onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[_] = null,
     onKeyPress: reactLib.reactMod.ReactNs.KeyboardEventHandler[_] = null,
@@ -38,7 +38,7 @@ object CheckboxChangeEventTarget {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
     if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)

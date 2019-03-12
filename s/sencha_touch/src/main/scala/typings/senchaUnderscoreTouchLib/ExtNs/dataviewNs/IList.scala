@@ -180,63 +180,58 @@ object IList {
     baseCls: java.lang.String = null,
     bufferSize: scala.Int | scala.Double = null,
     defaultType: java.lang.String = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     disclosureProperty: java.lang.String = null,
-    getBaseCls: js.Function0[java.lang.String] = null,
-    getDefaultType: js.Function0[java.lang.String] = null,
-    getDisclosureProperty: js.Function0[java.lang.String] = null,
-    getGrouped: js.Function0[scala.Boolean] = null,
-    getIcon: js.Function0[_] = null,
-    getIndexBar: js.Function0[_] = null,
-    getInfinite: js.Function0[scala.Boolean] = null,
-    getItemAt: js.Function1[/* index */ js.UndefOr[scala.Double], _] = null,
-    getItemHeight: js.Function0[scala.Double] = null,
-    getItemIndex: js.Function1[/* item */ js.UndefOr[scala.Double], scala.Double] = null,
-    getMinimumBufferDistance: js.Function0[scala.Double] = null,
-    getOnItemDisclosure: js.Function0[_] = null,
-    getPinHeaders: js.Function0[scala.Boolean] = null,
-    getPreventSelectionOnDisclose: js.Function0[scala.Boolean] = null,
-    getRefreshHeightOnUpdate: js.Function0[scala.Boolean] = null,
-    getScrollDockedItems: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getStriped: js.Function0[scala.Boolean] = null,
-    getUi: js.Function0[java.lang.String] = null,
-    getUseHeaders: js.Function0[scala.Boolean] = null,
-    getUseSimpleItems: js.Function0[scala.Boolean] = null,
-    getVariableHeights: js.Function0[scala.Boolean] = null,
-    getViewItems: js.Function0[_] = null,
+    getBaseCls: () => java.lang.String = null,
+    getDefaultType: () => java.lang.String = null,
+    getDisclosureProperty: () => java.lang.String = null,
+    getGrouped: () => scala.Boolean = null,
+    getIcon: () => _ = null,
+    getIndexBar: () => _ = null,
+    getInfinite: () => scala.Boolean = null,
+    getItemAt: /* index */ js.UndefOr[scala.Double] => _ = null,
+    getItemHeight: () => scala.Double = null,
+    getItemIndex: /* item */ js.UndefOr[scala.Double] => scala.Double = null,
+    getMinimumBufferDistance: () => scala.Double = null,
+    getOnItemDisclosure: () => _ = null,
+    getPinHeaders: () => scala.Boolean = null,
+    getPreventSelectionOnDisclose: () => scala.Boolean = null,
+    getRefreshHeightOnUpdate: () => scala.Boolean = null,
+    getScrollDockedItems: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getStriped: () => scala.Boolean = null,
+    getUi: () => java.lang.String = null,
+    getUseHeaders: () => scala.Boolean = null,
+    getUseSimpleItems: () => scala.Boolean = null,
+    getVariableHeights: () => scala.Boolean = null,
+    getViewItems: () => _ = null,
     grouped: js.UndefOr[scala.Boolean] = js.undefined,
     indexBar: js.Any = null,
     infinite: js.UndefOr[scala.Boolean] = js.undefined,
-    initialize: js.Function0[scala.Unit] = null,
+    initialize: () => scala.Unit = null,
     itemHeight: scala.Int | scala.Double = null,
     onItemDisclosure: js.Any = null,
     pinHeaders: js.UndefOr[scala.Boolean] = js.undefined,
     preventSelectionOnDisclose: js.UndefOr[scala.Boolean] = js.undefined,
     refreshHeightOnUpdate: js.UndefOr[scala.Boolean] = js.undefined,
-    scrollToRecord: js.Function3[
-      /* record */ js.UndefOr[js.Any], 
-      /* animate */ js.UndefOr[js.Any], 
-      /* overscroll */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    setBaseCls: js.Function1[/* baseCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setDefaultType: js.Function1[/* defaultType */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setDisclosureProperty: js.Function1[/* disclosureProperty */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setGrouped: js.Function1[/* grouped */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setIcon: js.Function1[/* icon */ js.UndefOr[js.Any], scala.Unit] = null,
-    setIndexBar: js.Function1[/* indexBar */ js.UndefOr[js.Any], scala.Unit] = null,
-    setInfinite: js.Function1[/* infinite */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setItemHeight: js.Function1[/* itemHeight */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setMinimumBufferDistance: js.Function1[/* minimumBufferDistance */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setOnItemDisclosure: js.Function1[/* onItemDisclosure */ js.UndefOr[js.Any], scala.Unit] = null,
-    setPinHeaders: js.Function1[/* pinHeaders */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setPreventSelectionOnDisclose: js.Function1[/* preventSelectionOnDisclose */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setRefreshHeightOnUpdate: js.Function1[/* refreshHeightOnUpdate */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setStriped: js.Function1[/* striped */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setUi: js.Function1[/* ui */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setUseHeaders: js.Function1[/* useHeaders */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setUseSimpleItems: js.Function1[/* useSimpleItems */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setVariableHeights: js.Function1[/* variableHeights */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    scrollToRecord: (/* record */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* overscroll */ js.UndefOr[js.Any]) => scala.Unit = null,
+    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setDefaultType: /* defaultType */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setDisclosureProperty: /* disclosureProperty */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setGrouped: /* grouped */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setIcon: /* icon */ js.UndefOr[js.Any] => scala.Unit = null,
+    setIndexBar: /* indexBar */ js.UndefOr[js.Any] => scala.Unit = null,
+    setInfinite: /* infinite */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setItemHeight: /* itemHeight */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setMinimumBufferDistance: /* minimumBufferDistance */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setOnItemDisclosure: /* onItemDisclosure */ js.UndefOr[js.Any] => scala.Unit = null,
+    setPinHeaders: /* pinHeaders */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setPreventSelectionOnDisclose: /* preventSelectionOnDisclose */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setRefreshHeightOnUpdate: /* refreshHeightOnUpdate */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setStriped: /* striped */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setUi: /* ui */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setUseHeaders: /* useHeaders */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setUseSimpleItems: /* useSimpleItems */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setVariableHeights: /* variableHeights */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     striped: js.UndefOr[scala.Boolean] = js.undefined,
     ui: java.lang.String = null,
     useSimpleItems: js.UndefOr[scala.Boolean] = js.undefined,
@@ -247,58 +242,58 @@ object IList {
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
     if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
     if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (disclosureProperty != null) __obj.updateDynamic("disclosureProperty")(disclosureProperty)
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(getBaseCls)
-    if (getDefaultType != null) __obj.updateDynamic("getDefaultType")(getDefaultType)
-    if (getDisclosureProperty != null) __obj.updateDynamic("getDisclosureProperty")(getDisclosureProperty)
-    if (getGrouped != null) __obj.updateDynamic("getGrouped")(getGrouped)
-    if (getIcon != null) __obj.updateDynamic("getIcon")(getIcon)
-    if (getIndexBar != null) __obj.updateDynamic("getIndexBar")(getIndexBar)
-    if (getInfinite != null) __obj.updateDynamic("getInfinite")(getInfinite)
-    if (getItemAt != null) __obj.updateDynamic("getItemAt")(getItemAt)
-    if (getItemHeight != null) __obj.updateDynamic("getItemHeight")(getItemHeight)
-    if (getItemIndex != null) __obj.updateDynamic("getItemIndex")(getItemIndex)
-    if (getMinimumBufferDistance != null) __obj.updateDynamic("getMinimumBufferDistance")(getMinimumBufferDistance)
-    if (getOnItemDisclosure != null) __obj.updateDynamic("getOnItemDisclosure")(getOnItemDisclosure)
-    if (getPinHeaders != null) __obj.updateDynamic("getPinHeaders")(getPinHeaders)
-    if (getPreventSelectionOnDisclose != null) __obj.updateDynamic("getPreventSelectionOnDisclose")(getPreventSelectionOnDisclose)
-    if (getRefreshHeightOnUpdate != null) __obj.updateDynamic("getRefreshHeightOnUpdate")(getRefreshHeightOnUpdate)
-    if (getScrollDockedItems != null) __obj.updateDynamic("getScrollDockedItems")(getScrollDockedItems)
-    if (getStriped != null) __obj.updateDynamic("getStriped")(getStriped)
-    if (getUi != null) __obj.updateDynamic("getUi")(getUi)
-    if (getUseHeaders != null) __obj.updateDynamic("getUseHeaders")(getUseHeaders)
-    if (getUseSimpleItems != null) __obj.updateDynamic("getUseSimpleItems")(getUseSimpleItems)
-    if (getVariableHeights != null) __obj.updateDynamic("getVariableHeights")(getVariableHeights)
-    if (getViewItems != null) __obj.updateDynamic("getViewItems")(getViewItems)
+    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
+    if (getDefaultType != null) __obj.updateDynamic("getDefaultType")(js.Any.fromFunction0(getDefaultType))
+    if (getDisclosureProperty != null) __obj.updateDynamic("getDisclosureProperty")(js.Any.fromFunction0(getDisclosureProperty))
+    if (getGrouped != null) __obj.updateDynamic("getGrouped")(js.Any.fromFunction0(getGrouped))
+    if (getIcon != null) __obj.updateDynamic("getIcon")(js.Any.fromFunction0(getIcon))
+    if (getIndexBar != null) __obj.updateDynamic("getIndexBar")(js.Any.fromFunction0(getIndexBar))
+    if (getInfinite != null) __obj.updateDynamic("getInfinite")(js.Any.fromFunction0(getInfinite))
+    if (getItemAt != null) __obj.updateDynamic("getItemAt")(js.Any.fromFunction1(getItemAt))
+    if (getItemHeight != null) __obj.updateDynamic("getItemHeight")(js.Any.fromFunction0(getItemHeight))
+    if (getItemIndex != null) __obj.updateDynamic("getItemIndex")(js.Any.fromFunction1(getItemIndex))
+    if (getMinimumBufferDistance != null) __obj.updateDynamic("getMinimumBufferDistance")(js.Any.fromFunction0(getMinimumBufferDistance))
+    if (getOnItemDisclosure != null) __obj.updateDynamic("getOnItemDisclosure")(js.Any.fromFunction0(getOnItemDisclosure))
+    if (getPinHeaders != null) __obj.updateDynamic("getPinHeaders")(js.Any.fromFunction0(getPinHeaders))
+    if (getPreventSelectionOnDisclose != null) __obj.updateDynamic("getPreventSelectionOnDisclose")(js.Any.fromFunction0(getPreventSelectionOnDisclose))
+    if (getRefreshHeightOnUpdate != null) __obj.updateDynamic("getRefreshHeightOnUpdate")(js.Any.fromFunction0(getRefreshHeightOnUpdate))
+    if (getScrollDockedItems != null) __obj.updateDynamic("getScrollDockedItems")(js.Any.fromFunction0(getScrollDockedItems))
+    if (getStriped != null) __obj.updateDynamic("getStriped")(js.Any.fromFunction0(getStriped))
+    if (getUi != null) __obj.updateDynamic("getUi")(js.Any.fromFunction0(getUi))
+    if (getUseHeaders != null) __obj.updateDynamic("getUseHeaders")(js.Any.fromFunction0(getUseHeaders))
+    if (getUseSimpleItems != null) __obj.updateDynamic("getUseSimpleItems")(js.Any.fromFunction0(getUseSimpleItems))
+    if (getVariableHeights != null) __obj.updateDynamic("getVariableHeights")(js.Any.fromFunction0(getVariableHeights))
+    if (getViewItems != null) __obj.updateDynamic("getViewItems")(js.Any.fromFunction0(getViewItems))
     if (!js.isUndefined(grouped)) __obj.updateDynamic("grouped")(grouped)
     if (indexBar != null) __obj.updateDynamic("indexBar")(indexBar)
     if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite)
-    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
+    if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction0(initialize))
     if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight.asInstanceOf[js.Any])
     if (onItemDisclosure != null) __obj.updateDynamic("onItemDisclosure")(onItemDisclosure)
     if (!js.isUndefined(pinHeaders)) __obj.updateDynamic("pinHeaders")(pinHeaders)
     if (!js.isUndefined(preventSelectionOnDisclose)) __obj.updateDynamic("preventSelectionOnDisclose")(preventSelectionOnDisclose)
     if (!js.isUndefined(refreshHeightOnUpdate)) __obj.updateDynamic("refreshHeightOnUpdate")(refreshHeightOnUpdate)
-    if (scrollToRecord != null) __obj.updateDynamic("scrollToRecord")(scrollToRecord)
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(setBaseCls)
-    if (setDefaultType != null) __obj.updateDynamic("setDefaultType")(setDefaultType)
-    if (setDisclosureProperty != null) __obj.updateDynamic("setDisclosureProperty")(setDisclosureProperty)
-    if (setGrouped != null) __obj.updateDynamic("setGrouped")(setGrouped)
-    if (setIcon != null) __obj.updateDynamic("setIcon")(setIcon)
-    if (setIndexBar != null) __obj.updateDynamic("setIndexBar")(setIndexBar)
-    if (setInfinite != null) __obj.updateDynamic("setInfinite")(setInfinite)
-    if (setItemHeight != null) __obj.updateDynamic("setItemHeight")(setItemHeight)
-    if (setMinimumBufferDistance != null) __obj.updateDynamic("setMinimumBufferDistance")(setMinimumBufferDistance)
-    if (setOnItemDisclosure != null) __obj.updateDynamic("setOnItemDisclosure")(setOnItemDisclosure)
-    if (setPinHeaders != null) __obj.updateDynamic("setPinHeaders")(setPinHeaders)
-    if (setPreventSelectionOnDisclose != null) __obj.updateDynamic("setPreventSelectionOnDisclose")(setPreventSelectionOnDisclose)
-    if (setRefreshHeightOnUpdate != null) __obj.updateDynamic("setRefreshHeightOnUpdate")(setRefreshHeightOnUpdate)
-    if (setStriped != null) __obj.updateDynamic("setStriped")(setStriped)
-    if (setUi != null) __obj.updateDynamic("setUi")(setUi)
-    if (setUseHeaders != null) __obj.updateDynamic("setUseHeaders")(setUseHeaders)
-    if (setUseSimpleItems != null) __obj.updateDynamic("setUseSimpleItems")(setUseSimpleItems)
-    if (setVariableHeights != null) __obj.updateDynamic("setVariableHeights")(setVariableHeights)
+    if (scrollToRecord != null) __obj.updateDynamic("scrollToRecord")(js.Any.fromFunction3(scrollToRecord))
+    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
+    if (setDefaultType != null) __obj.updateDynamic("setDefaultType")(js.Any.fromFunction1(setDefaultType))
+    if (setDisclosureProperty != null) __obj.updateDynamic("setDisclosureProperty")(js.Any.fromFunction1(setDisclosureProperty))
+    if (setGrouped != null) __obj.updateDynamic("setGrouped")(js.Any.fromFunction1(setGrouped))
+    if (setIcon != null) __obj.updateDynamic("setIcon")(js.Any.fromFunction1(setIcon))
+    if (setIndexBar != null) __obj.updateDynamic("setIndexBar")(js.Any.fromFunction1(setIndexBar))
+    if (setInfinite != null) __obj.updateDynamic("setInfinite")(js.Any.fromFunction1(setInfinite))
+    if (setItemHeight != null) __obj.updateDynamic("setItemHeight")(js.Any.fromFunction1(setItemHeight))
+    if (setMinimumBufferDistance != null) __obj.updateDynamic("setMinimumBufferDistance")(js.Any.fromFunction1(setMinimumBufferDistance))
+    if (setOnItemDisclosure != null) __obj.updateDynamic("setOnItemDisclosure")(js.Any.fromFunction1(setOnItemDisclosure))
+    if (setPinHeaders != null) __obj.updateDynamic("setPinHeaders")(js.Any.fromFunction1(setPinHeaders))
+    if (setPreventSelectionOnDisclose != null) __obj.updateDynamic("setPreventSelectionOnDisclose")(js.Any.fromFunction1(setPreventSelectionOnDisclose))
+    if (setRefreshHeightOnUpdate != null) __obj.updateDynamic("setRefreshHeightOnUpdate")(js.Any.fromFunction1(setRefreshHeightOnUpdate))
+    if (setStriped != null) __obj.updateDynamic("setStriped")(js.Any.fromFunction1(setStriped))
+    if (setUi != null) __obj.updateDynamic("setUi")(js.Any.fromFunction1(setUi))
+    if (setUseHeaders != null) __obj.updateDynamic("setUseHeaders")(js.Any.fromFunction1(setUseHeaders))
+    if (setUseSimpleItems != null) __obj.updateDynamic("setUseSimpleItems")(js.Any.fromFunction1(setUseSimpleItems))
+    if (setVariableHeights != null) __obj.updateDynamic("setVariableHeights")(js.Any.fromFunction1(setVariableHeights))
     if (!js.isUndefined(striped)) __obj.updateDynamic("striped")(striped)
     if (ui != null) __obj.updateDynamic("ui")(ui)
     if (!js.isUndefined(useSimpleItems)) __obj.updateDynamic("useSimpleItems")(useSimpleItems)

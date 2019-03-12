@@ -13,13 +13,13 @@ trait Mail
   var MailMessage: nodemailerLib.libMailerMailDashMessageMod.namespaced = js.native
   var dkim: nodemailerLib.libDkimMod.namespaced = js.native
   var logger: nodemailerLib.libSharedMod.Logger = js.native
-  var meta: nodeLib.Map[java.lang.String, _] = js.native
+  var meta: stdLib.Map[java.lang.String, _] = js.native
   var options: nodemailerLib.libMailerMod.MailNs.Options = js.native
   var transporter: nodemailerLib.nodemailerMod.Transport = js.native
   @JSName("addListener")
   def addListener_error(
     event: nodemailerLib.nodemailerLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_idle(event: nodemailerLib.nodemailerLibStrings.idle, listener: js.Function0[scala.Unit]): this.type = js.native
@@ -31,7 +31,7 @@ trait Mail
   /** Closes all connections in the pool. If there is a message being sent, the connection is closed later */
   def close(): scala.Unit = js.native
   @JSName("emit")
-  def emit_error(event: nodemailerLib.nodemailerLibStrings.error, error: nodeLib.Error): scala.Boolean = js.native
+  def emit_error(event: nodemailerLib.nodemailerLibStrings.error, error: stdLib.Error): scala.Boolean = js.native
   @JSName("emit")
   def emit_idle(event: nodemailerLib.nodemailerLibStrings.idle): scala.Boolean = js.native
   @JSName("emit")
@@ -46,7 +46,7 @@ trait Mail
     /* user */ java.lang.String, 
     /* renew */ scala.Boolean, 
     /* callback */ js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* accessToken */ java.lang.String, 
       /* expires */ scala.Double, 
       scala.Unit
@@ -58,7 +58,7 @@ trait Mail
     /* proxy */ nodeLib.urlMod.Url, 
     /* options */ nodemailerLib.nodemailerMod.TransportOptions, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* socketOptions */ nodemailerLib.Anon_Connection, 
       scala.Unit
     ], 
@@ -69,7 +69,7 @@ trait Mail
     /* proxy */ nodeLib.urlMod.Url, 
     /* options */ nodemailerLib.nodemailerMod.TransportOptions, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* socketOptions */ nodemailerLib.Anon_Connection, 
       scala.Unit
     ], 
@@ -80,7 +80,7 @@ trait Mail
     /* proxy */ nodeLib.urlMod.Url, 
     /* options */ nodemailerLib.nodemailerMod.TransportOptions, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* socketOptions */ nodemailerLib.Anon_Connection, 
       scala.Unit
     ], 
@@ -91,7 +91,7 @@ trait Mail
     /* proxy */ nodeLib.urlMod.Url, 
     /* options */ nodemailerLib.nodemailerMod.TransportOptions, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* socketOptions */ nodemailerLib.Anon_Connection, 
       scala.Unit
     ], 
@@ -102,7 +102,7 @@ trait Mail
     /* proxy */ nodeLib.urlMod.Url, 
     /* options */ nodemailerLib.nodemailerMod.TransportOptions, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* socketOptions */ nodemailerLib.Anon_Connection, 
       scala.Unit
     ], 
@@ -113,7 +113,7 @@ trait Mail
     /* proxy */ nodeLib.urlMod.Url, 
     /* options */ nodemailerLib.nodemailerMod.TransportOptions, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* socketOptions */ nodemailerLib.Anon_Connection, 
       scala.Unit
     ], 
@@ -126,13 +126,13 @@ trait Mail
     js.Function1[/* token */ nodemailerLib.libXoauth2Mod.XOAuth2Ns.Token, scala.Unit]
   ] = js.native
   @JSName("listeners")
-  def listeners_error(event: nodemailerLib.nodemailerLibStrings.error): js.Array[js.Function1[/* err */ nodeLib.Error, scala.Unit]] = js.native
+  def listeners_error(event: nodemailerLib.nodemailerLibStrings.error): js.Array[js.Function1[/* err */ stdLib.Error, scala.Unit]] = js.native
   @JSName("listeners")
   def listeners_idle(event: nodemailerLib.nodemailerLibStrings.idle): js.Array[js.Function0[scala.Unit]] = js.native
   @JSName("on")
   def on_error(
     event: nodemailerLib.nodemailerLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_idle(event: nodemailerLib.nodemailerLibStrings.idle, listener: js.Function0[scala.Unit]): this.type = js.native
@@ -144,7 +144,7 @@ trait Mail
   @JSName("once")
   def once_error(
     event: nodemailerLib.nodemailerLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_idle(event: nodemailerLib.nodemailerLibStrings.idle, listener: js.Function0[scala.Unit]): this.type = js.native
@@ -161,7 +161,7 @@ trait Mail
   @JSName("prependListener")
   def prependListener_error(
     event: nodemailerLib.nodemailerLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_idle(event: nodemailerLib.nodemailerLibStrings.idle, listener: js.Function0[scala.Unit]): this.type = js.native
@@ -173,7 +173,7 @@ trait Mail
   @JSName("prependOnceListener")
   def prependOnceListener_error(
     event: nodemailerLib.nodemailerLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_idle(event: nodemailerLib.nodemailerLibStrings.idle, listener: js.Function0[scala.Unit]): this.type = js.native
@@ -182,12 +182,12 @@ trait Mail
   def sendMail(
     mailOptions: nodemailerLib.libMailerMod.MailNs.Options,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* info */ nodemailerLib.nodemailerMod.SentMessageInfo, 
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def set(key: java.lang.String, value: js.Any): nodeLib.Map[java.lang.String, _] = js.native
+  def set(key: java.lang.String, value: js.Any): stdLib.Map[java.lang.String, _] = js.native
   @JSName("set")
   def set_oauth2_provision_cb(
     key: nodemailerLib.nodemailerLibStrings.oauth2_provision_cb,
@@ -195,14 +195,14 @@ trait Mail
       /* user */ java.lang.String, 
       /* renew */ scala.Boolean, 
       /* callback */ js.Function3[
-        /* err */ nodeLib.Error | scala.Null, 
+        /* err */ stdLib.Error | scala.Null, 
         /* accessToken */ js.UndefOr[java.lang.String], 
         /* expires */ js.UndefOr[scala.Double], 
         scala.Unit
       ], 
       scala.Unit
     ]
-  ): nodeLib.Map[java.lang.String, _] = js.native
+  ): stdLib.Map[java.lang.String, _] = js.native
   @JSName("set")
   def set_proxy_handler_http(
     key: nodemailerLib.nodemailerLibStrings.proxy_handler_http,
@@ -210,13 +210,13 @@ trait Mail
       /* proxy */ nodeLib.urlMod.Url, 
       /* options */ nodemailerLib.nodemailerMod.TransportOptions, 
       /* callback */ js.Function2[
-        /* err */ nodeLib.Error | scala.Null, 
+        /* err */ stdLib.Error | scala.Null, 
         /* socketOptions */ js.UndefOr[nodemailerLib.Anon_Connection], 
         scala.Unit
       ], 
       scala.Unit
     ]
-  ): nodeLib.Map[java.lang.String, _] = js.native
+  ): stdLib.Map[java.lang.String, _] = js.native
   @JSName("set")
   def set_proxy_handler_https(
     key: nodemailerLib.nodemailerLibStrings.proxy_handler_https,
@@ -224,13 +224,13 @@ trait Mail
       /* proxy */ nodeLib.urlMod.Url, 
       /* options */ nodemailerLib.nodemailerMod.TransportOptions, 
       /* callback */ js.Function2[
-        /* err */ nodeLib.Error | scala.Null, 
+        /* err */ stdLib.Error | scala.Null, 
         /* socketOptions */ js.UndefOr[nodemailerLib.Anon_Connection], 
         scala.Unit
       ], 
       scala.Unit
     ]
-  ): nodeLib.Map[java.lang.String, _] = js.native
+  ): stdLib.Map[java.lang.String, _] = js.native
   @JSName("set")
   def set_proxy_handler_socks(
     key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks,
@@ -238,13 +238,13 @@ trait Mail
       /* proxy */ nodeLib.urlMod.Url, 
       /* options */ nodemailerLib.nodemailerMod.TransportOptions, 
       /* callback */ js.Function2[
-        /* err */ nodeLib.Error | scala.Null, 
+        /* err */ stdLib.Error | scala.Null, 
         /* socketOptions */ js.UndefOr[nodemailerLib.Anon_Connection], 
         scala.Unit
       ], 
       scala.Unit
     ]
-  ): nodeLib.Map[java.lang.String, _] = js.native
+  ): stdLib.Map[java.lang.String, _] = js.native
   @JSName("set")
   def set_proxy_handler_socks4(
     key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks4,
@@ -252,13 +252,13 @@ trait Mail
       /* proxy */ nodeLib.urlMod.Url, 
       /* options */ nodemailerLib.nodemailerMod.TransportOptions, 
       /* callback */ js.Function2[
-        /* err */ nodeLib.Error | scala.Null, 
+        /* err */ stdLib.Error | scala.Null, 
         /* socketOptions */ js.UndefOr[nodemailerLib.Anon_Connection], 
         scala.Unit
       ], 
       scala.Unit
     ]
-  ): nodeLib.Map[java.lang.String, _] = js.native
+  ): stdLib.Map[java.lang.String, _] = js.native
   @JSName("set")
   def set_proxy_handler_socks4a(
     key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks4a,
@@ -266,13 +266,13 @@ trait Mail
       /* proxy */ nodeLib.urlMod.Url, 
       /* options */ nodemailerLib.nodemailerMod.TransportOptions, 
       /* callback */ js.Function2[
-        /* err */ nodeLib.Error | scala.Null, 
+        /* err */ stdLib.Error | scala.Null, 
         /* socketOptions */ js.UndefOr[nodemailerLib.Anon_Connection], 
         scala.Unit
       ], 
       scala.Unit
     ]
-  ): nodeLib.Map[java.lang.String, _] = js.native
+  ): stdLib.Map[java.lang.String, _] = js.native
   @JSName("set")
   def set_proxy_handler_socks5(
     key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks5,
@@ -280,13 +280,13 @@ trait Mail
       /* proxy */ nodeLib.urlMod.Url, 
       /* options */ nodemailerLib.nodemailerMod.TransportOptions, 
       /* callback */ js.Function2[
-        /* err */ nodeLib.Error | scala.Null, 
+        /* err */ stdLib.Error | scala.Null, 
         /* socketOptions */ js.UndefOr[nodemailerLib.Anon_Connection], 
         scala.Unit
       ], 
       scala.Unit
     ]
-  ): nodeLib.Map[java.lang.String, _] = js.native
+  ): stdLib.Map[java.lang.String, _] = js.native
   /** Sets up proxy handler for a Nodemailer object */
   def setupProxy(proxyUrl: java.lang.String): scala.Unit = js.native
   def use(step: java.lang.String, plugin: nodemailerLib.libMailerMod.MailNs.PluginFunction): this.type = js.native
@@ -294,7 +294,7 @@ trait Mail
   /** Verifies SMTP configuration */
   def verify(
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       nodemailerLib.nodemailerLibNumbers.`true`, 
       scala.Unit
     ]

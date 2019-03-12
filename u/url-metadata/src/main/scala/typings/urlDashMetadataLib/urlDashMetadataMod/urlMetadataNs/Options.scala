@@ -20,7 +20,7 @@ object Options {
   @scala.inline
   def apply(
     descriptionLength: scala.Int | scala.Double = null,
-    encode: js.Function0[scala.Unit] = null,
+    encode: () => scala.Unit = null,
     ensureSecureImageRequest: js.UndefOr[scala.Boolean] = js.undefined,
     fromEmail: java.lang.String = null,
     maxRedirects: scala.Int | scala.Double = null,
@@ -30,7 +30,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (descriptionLength != null) __obj.updateDynamic("descriptionLength")(descriptionLength.asInstanceOf[js.Any])
-    if (encode != null) __obj.updateDynamic("encode")(encode)
+    if (encode != null) __obj.updateDynamic("encode")(js.Any.fromFunction0(encode))
     if (!js.isUndefined(ensureSecureImageRequest)) __obj.updateDynamic("ensureSecureImageRequest")(ensureSecureImageRequest)
     if (fromEmail != null) __obj.updateDynamic("fromEmail")(fromEmail)
     if (maxRedirects != null) __obj.updateDynamic("maxRedirects")(maxRedirects.asInstanceOf[js.Any])

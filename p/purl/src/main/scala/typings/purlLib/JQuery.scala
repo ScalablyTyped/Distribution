@@ -14,8 +14,8 @@ trait JQuery extends js.Object {
 
 object JQuery {
   @scala.inline
-  def apply(url: js.Function0[purlLib.purlMod.purlNs.Url]): JQuery = {
-    val __obj = js.Dynamic.literal(url = url)
+  def apply(url: () => purlLib.purlMod.purlNs.Url): JQuery = {
+    val __obj = js.Dynamic.literal(url = js.Any.fromFunction0(url))
   
     __obj.asInstanceOf[JQuery]
   }

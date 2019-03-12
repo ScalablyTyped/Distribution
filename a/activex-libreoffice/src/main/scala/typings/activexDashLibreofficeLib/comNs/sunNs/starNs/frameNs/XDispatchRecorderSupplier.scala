@@ -63,19 +63,14 @@ object XDispatchRecorderSupplier {
   @scala.inline
   def apply(
     DispatchRecorder: XDispatchRecorder,
-    acquire: js.Function0[scala.Unit],
-    dispatchAndRecord: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      XDispatch, 
-      scala.Unit
-    ],
-    getDispatchRecorder: js.Function0[XDispatchRecorder],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setDispatchRecorder: js.Function1[XDispatchRecorder, scala.Unit]
+    acquire: () => scala.Unit,
+    dispatchAndRecord: (activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], XDispatch) => scala.Unit,
+    getDispatchRecorder: () => XDispatchRecorder,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setDispatchRecorder: XDispatchRecorder => scala.Unit
   ): XDispatchRecorderSupplier = {
-    val __obj = js.Dynamic.literal(DispatchRecorder = DispatchRecorder, acquire = acquire, dispatchAndRecord = dispatchAndRecord, getDispatchRecorder = getDispatchRecorder, queryInterface = queryInterface, release = release, setDispatchRecorder = setDispatchRecorder)
+    val __obj = js.Dynamic.literal(DispatchRecorder = DispatchRecorder, acquire = js.Any.fromFunction0(acquire), dispatchAndRecord = js.Any.fromFunction3(dispatchAndRecord), getDispatchRecorder = js.Any.fromFunction0(getDispatchRecorder), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDispatchRecorder = js.Any.fromFunction1(setDispatchRecorder))
   
     __obj.asInstanceOf[XDispatchRecorderSupplier]
   }

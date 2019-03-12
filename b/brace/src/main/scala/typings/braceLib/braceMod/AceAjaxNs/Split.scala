@@ -72,21 +72,21 @@ trait Split extends js.Object {
 object Split {
   @scala.inline
   def apply(
-    blur: js.Function0[scala.Unit],
-    focus: js.Function0[scala.Unit],
-    forEach: js.Function2[js.Function, java.lang.String, scala.Unit],
-    getCurrentEditor: js.Function0[Editor],
-    getEditor: js.Function1[scala.Double, scala.Unit],
-    getOrientation: js.Function0[scala.Double],
-    getSplits: js.Function0[scala.Double],
-    resize: js.Function0[scala.Unit],
-    setFontSize: js.Function1[scala.Double, scala.Unit],
-    setKeyboardHandler: js.Function1[java.lang.String, scala.Unit],
-    setOrientation: js.Function1[scala.Double, scala.Unit],
-    setSession: js.Function2[IEditSession, scala.Double, scala.Unit],
-    setTheme: js.Function1[java.lang.String, scala.Unit]
+    blur: () => scala.Unit,
+    focus: () => scala.Unit,
+    forEach: (js.Function, java.lang.String) => scala.Unit,
+    getCurrentEditor: () => Editor,
+    getEditor: scala.Double => scala.Unit,
+    getOrientation: () => scala.Double,
+    getSplits: () => scala.Double,
+    resize: () => scala.Unit,
+    setFontSize: scala.Double => scala.Unit,
+    setKeyboardHandler: java.lang.String => scala.Unit,
+    setOrientation: scala.Double => scala.Unit,
+    setSession: (IEditSession, scala.Double) => scala.Unit,
+    setTheme: java.lang.String => scala.Unit
   ): Split = {
-    val __obj = js.Dynamic.literal(blur = blur, focus = focus, forEach = forEach, getCurrentEditor = getCurrentEditor, getEditor = getEditor, getOrientation = getOrientation, getSplits = getSplits, resize = resize, setFontSize = setFontSize, setKeyboardHandler = setKeyboardHandler, setOrientation = setOrientation, setSession = setSession, setTheme = setTheme)
+    val __obj = js.Dynamic.literal(blur = js.Any.fromFunction0(blur), focus = js.Any.fromFunction0(focus), forEach = js.Any.fromFunction2(forEach), getCurrentEditor = js.Any.fromFunction0(getCurrentEditor), getEditor = js.Any.fromFunction1(getEditor), getOrientation = js.Any.fromFunction0(getOrientation), getSplits = js.Any.fromFunction0(getSplits), resize = js.Any.fromFunction0(resize), setFontSize = js.Any.fromFunction1(setFontSize), setKeyboardHandler = js.Any.fromFunction1(setKeyboardHandler), setOrientation = js.Any.fromFunction1(setOrientation), setSession = js.Any.fromFunction2(setSession), setTheme = js.Any.fromFunction1(setTheme))
   
     __obj.asInstanceOf[Split]
   }

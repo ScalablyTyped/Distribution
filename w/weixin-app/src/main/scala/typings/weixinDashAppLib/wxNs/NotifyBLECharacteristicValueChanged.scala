@@ -34,13 +34,13 @@ object NotifyBLECharacteristicValueChanged {
     deviceId: java.lang.String,
     serviceId: java.lang.String,
     state: scala.Boolean,
-    success: js.Function1[ErrMsgResponse, scala.Unit],
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
-    fail: js.Function1[js.Any, scala.Unit] = null
+    success: ErrMsgResponse => scala.Unit,
+    complete: /* res */ js.Any => scala.Unit = null,
+    fail: js.Any => scala.Unit = null
   ): NotifyBLECharacteristicValueChanged = {
-    val __obj = js.Dynamic.literal(characteristicId = characteristicId, deviceId = deviceId, serviceId = serviceId, state = state, success = success)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    val __obj = js.Dynamic.literal(characteristicId = characteristicId, deviceId = deviceId, serviceId = serviceId, state = state, success = js.Any.fromFunction1(success))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[NotifyBLECharacteristicValueChanged]
   }
 }

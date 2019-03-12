@@ -13,13 +13,13 @@ trait XMLElementWrapper
 object XMLElementWrapper {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getSomething: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Double],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getSomething: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => scala.Double,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XMLElementWrapper = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getSomething = getSomething, initialize = initialize, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getSomething = js.Any.fromFunction1(getSomething), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XMLElementWrapper]
   }

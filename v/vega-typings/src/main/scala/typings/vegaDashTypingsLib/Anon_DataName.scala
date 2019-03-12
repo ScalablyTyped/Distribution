@@ -26,22 +26,14 @@ trait Anon_DataName extends js.Object {
 object Anon_DataName {
   @scala.inline
   def apply(
-    data: js.Function2[
-      /* name */ js.UndefOr[java.lang.String], 
-      /* object */ js.UndefOr[js.Any], 
-      scala.Boolean
-    ] = null,
+    data: (/* name */ js.UndefOr[java.lang.String], /* object */ js.UndefOr[js.Any]) => scala.Boolean = null,
     recurse: js.UndefOr[scala.Boolean] = js.undefined,
-    signals: js.Function2[
-      /* name */ js.UndefOr[java.lang.String], 
-      /* operator */ js.UndefOr[js.Any], 
-      scala.Boolean
-    ] = null
+    signals: (/* name */ js.UndefOr[java.lang.String], /* operator */ js.UndefOr[js.Any]) => scala.Boolean = null
   ): Anon_DataName = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(js.Any.fromFunction2(data))
     if (!js.isUndefined(recurse)) __obj.updateDynamic("recurse")(recurse)
-    if (signals != null) __obj.updateDynamic("signals")(signals)
+    if (signals != null) __obj.updateDynamic("signals")(js.Any.fromFunction2(signals))
     __obj.asInstanceOf[Anon_DataName]
   }
 }

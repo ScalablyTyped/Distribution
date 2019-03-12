@@ -11,7 +11,7 @@ trait Anon_CallbackClear extends js.Object {
   def apply(): jsforceLib.describeDashResultMod.DescribeGlobalResult = js.native
   def apply(
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* result */ jsforceLib.describeDashResultMod.DescribeGlobalResult, 
       scala.Unit
     ]

@@ -32,12 +32,12 @@ trait EditableMixin extends js.Object {
 object EditableMixin {
   @scala.inline
   def apply(
-    disableEdit: js.Function0[scala.Unit],
-    editEnabled: js.Function0[scala.Boolean],
-    enableEdit: js.Function0[js.Any],
-    toggleEdit: js.Function0[scala.Unit]
+    disableEdit: () => scala.Unit,
+    editEnabled: () => scala.Boolean,
+    enableEdit: () => js.Any,
+    toggleEdit: () => scala.Unit
   ): EditableMixin = {
-    val __obj = js.Dynamic.literal(disableEdit = disableEdit, editEnabled = editEnabled, enableEdit = enableEdit, toggleEdit = toggleEdit)
+    val __obj = js.Dynamic.literal(disableEdit = js.Any.fromFunction0(disableEdit), editEnabled = js.Any.fromFunction0(editEnabled), enableEdit = js.Any.fromFunction0(enableEdit), toggleEdit = js.Any.fromFunction0(toggleEdit))
   
     __obj.asInstanceOf[EditableMixin]
   }

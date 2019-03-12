@@ -28,7 +28,7 @@ object FragmentProps {
     parentId: java.lang.String = null,
     parentRoute: java.lang.String = null,
     style: ObjectLiteral[_] = null,
-    withConditions: js.Function1[/* location */ Location, scala.Boolean] = null
+    withConditions: /* location */ Location => scala.Boolean = null
   ): FragmentProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(forNoMatch)) __obj.updateDynamic("forNoMatch")(forNoMatch)
@@ -39,7 +39,7 @@ object FragmentProps {
     if (parentId != null) __obj.updateDynamic("parentId")(parentId)
     if (parentRoute != null) __obj.updateDynamic("parentRoute")(parentRoute)
     if (style != null) __obj.updateDynamic("style")(style)
-    if (withConditions != null) __obj.updateDynamic("withConditions")(withConditions)
+    if (withConditions != null) __obj.updateDynamic("withConditions")(js.Any.fromFunction1(withConditions))
     __obj.asInstanceOf[FragmentProps]
   }
 }

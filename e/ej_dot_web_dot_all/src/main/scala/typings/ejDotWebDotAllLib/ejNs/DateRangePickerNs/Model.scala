@@ -118,16 +118,16 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    Change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    Change: /* e */ ChangeEventArgs => scala.Unit = null,
     allowEdit: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeClose: js.Function1[/* e */ BeforeCloseEventArgs, scala.Unit] = null,
-    beforeOpen: js.Function1[/* e */ BeforeOpenEventArgs, scala.Unit] = null,
+    beforeClose: /* e */ BeforeCloseEventArgs => scala.Unit = null,
+    beforeOpen: /* e */ BeforeOpenEventArgs => scala.Unit = null,
     buttonText: js.Any = null,
-    close: js.Function1[/* e */ CloseEventArgs, scala.Unit] = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    close: /* e */ CloseEventArgs => scala.Unit = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
     dateFormat: java.lang.String = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
     enableTimePicker: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -136,9 +136,9 @@ object Model {
     locale: java.lang.String = null,
     maxDate: java.lang.String | stdLib.Date = null,
     minDate: java.lang.String | stdLib.Date = null,
-    open: js.Function1[/* e */ OpenEventArgs, scala.Unit] = null,
+    open: /* e */ OpenEventArgs => scala.Unit = null,
     ranges: js.Any = null,
-    select: js.Function1[/* e */ SelectEventArgs, scala.Unit] = null,
+    select: /* e */ SelectEventArgs => scala.Unit = null,
     separator: java.lang.String = null,
     showPopupButton: js.UndefOr[scala.Boolean] = js.undefined,
     showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
@@ -149,16 +149,16 @@ object Model {
     width: java.lang.String | scala.Double = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (Change != null) __obj.updateDynamic("Change")(Change)
+    if (Change != null) __obj.updateDynamic("Change")(js.Any.fromFunction1(Change))
     if (!js.isUndefined(allowEdit)) __obj.updateDynamic("allowEdit")(allowEdit)
-    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
-    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen)
+    if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction1(beforeClose))
+    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(js.Any.fromFunction1(beforeOpen))
     if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
     if (!js.isUndefined(enableTimePicker)) __obj.updateDynamic("enableTimePicker")(enableTimePicker)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
@@ -167,9 +167,9 @@ object Model {
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (ranges != null) __obj.updateDynamic("ranges")(ranges)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (separator != null) __obj.updateDynamic("separator")(separator)
     if (!js.isUndefined(showPopupButton)) __obj.updateDynamic("showPopupButton")(showPopupButton)
     if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)

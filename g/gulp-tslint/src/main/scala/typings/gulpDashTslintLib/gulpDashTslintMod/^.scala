@@ -14,6 +14,6 @@ object ^ extends js.Object {
     * Optional.
     * @returns {any}
     */
-  val default: gulpDashTslintLib.gulpDashTslintMod.TslintPlugin = js.native
+  val default: TslintPlugin = js.native
 }
 

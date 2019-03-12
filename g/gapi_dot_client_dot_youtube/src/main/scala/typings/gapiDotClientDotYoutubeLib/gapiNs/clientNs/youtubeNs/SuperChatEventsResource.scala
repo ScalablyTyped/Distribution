@@ -13,12 +13,9 @@ trait SuperChatEventsResource extends js.Object {
 object SuperChatEventsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFieldsHl, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SuperChatEventListResponse]
-    ]
+    list: gapiDotClientDotYoutubeLib.Anon_AltFieldsHl => gapiDotClientLib.gapiNs.clientNs.Request[SuperChatEventListResponse]
   ): SuperChatEventsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[SuperChatEventsResource]
   }

@@ -77,7 +77,7 @@ object atMaterialDashUiCoreLibNumbers {
   
   @js.native
   sealed trait `false`
-    extends atMaterialDashUiCoreLib.tablecellTableCellMod.SortDirection
+    extends atMaterialDashUiCoreLib.tableCellTableCellMod.SortDirection
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

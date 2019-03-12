@@ -21,12 +21,12 @@ object XSolverDescription {
   def apply(
     ComponentDescription: java.lang.String,
     StatusDescription: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getPropertyDescription: js.Function1[java.lang.String, java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getPropertyDescription: java.lang.String => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSolverDescription = {
-    val __obj = js.Dynamic.literal(ComponentDescription = ComponentDescription, StatusDescription = StatusDescription, acquire = acquire, getPropertyDescription = getPropertyDescription, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ComponentDescription = ComponentDescription, StatusDescription = StatusDescription, acquire = js.Any.fromFunction0(acquire), getPropertyDescription = js.Any.fromFunction1(getPropertyDescription), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSolverDescription]
   }

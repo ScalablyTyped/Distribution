@@ -17,13 +17,13 @@ trait XTransactionBroadcaster
 object XTransactionBroadcaster {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addTransactionListener: js.Function1[XTransactionListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeTransactionListener: js.Function1[XTransactionListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addTransactionListener: XTransactionListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeTransactionListener: XTransactionListener => scala.Unit
   ): XTransactionBroadcaster = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addTransactionListener = addTransactionListener, queryInterface = queryInterface, release = release, removeTransactionListener = removeTransactionListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addTransactionListener = js.Any.fromFunction1(addTransactionListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeTransactionListener = js.Any.fromFunction1(removeTransactionListener))
   
     __obj.asInstanceOf[XTransactionBroadcaster]
   }

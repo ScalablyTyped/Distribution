@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@google/maps", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def createClient(options: atGoogleMapsLib.atGoogleMapsMod.CreateClientOptions): atGoogleMapsLib.atGoogleMapsMod.GoogleMapsClient = js.native
+  def createClient(options: CreateClientOptions): GoogleMapsClient = js.native
 }
 

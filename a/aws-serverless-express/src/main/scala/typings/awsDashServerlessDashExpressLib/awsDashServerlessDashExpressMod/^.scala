@@ -46,11 +46,7 @@ object ^ extends js.Object {
     event: js.Any,
     context: awsDashLambdaLib.awsDashLambdaMod.Context,
     resolutionMode: awsDashServerlessDashExpressLib.awsDashServerlessDashExpressLibStrings.CALLBACK,
-    callback: js.Function2[
-      /* error */ js.Any, 
-      /* response */ awsDashServerlessDashExpressLib.awsDashServerlessDashExpressMod.Response, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* error */ js.Any, /* response */ Response, scala.Unit]
   ): scala.Unit = js.native
   @JSName("proxy")
   def proxy_CONTEXT_SUCCEED(
@@ -65,6 +61,6 @@ object ^ extends js.Object {
     event: js.Any,
     context: awsDashLambdaLib.awsDashLambdaMod.Context,
     resolutionMode: awsDashServerlessDashExpressLib.awsDashServerlessDashExpressLibStrings.PROMISE
-  ): awsDashServerlessDashExpressLib.awsDashServerlessDashExpressMod.ProxyResult = js.native
+  ): ProxyResult = js.native
 }
 

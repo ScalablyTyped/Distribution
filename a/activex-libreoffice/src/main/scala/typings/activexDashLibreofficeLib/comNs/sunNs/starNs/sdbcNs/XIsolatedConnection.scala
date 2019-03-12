@@ -37,16 +37,13 @@ trait XIsolatedConnection
 object XIsolatedConnection {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getIsolatedConnection: js.Function2[java.lang.String, java.lang.String, XConnection],
-    getIsolatedConnectionWithCompletion: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler, 
-      XConnection
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getIsolatedConnection: (java.lang.String, java.lang.String) => XConnection,
+    getIsolatedConnectionWithCompletion: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler => XConnection,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XIsolatedConnection = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getIsolatedConnection = getIsolatedConnection, getIsolatedConnectionWithCompletion = getIsolatedConnectionWithCompletion, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getIsolatedConnection = js.Any.fromFunction2(getIsolatedConnection), getIsolatedConnectionWithCompletion = js.Any.fromFunction1(getIsolatedConnectionWithCompletion), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XIsolatedConnection]
   }

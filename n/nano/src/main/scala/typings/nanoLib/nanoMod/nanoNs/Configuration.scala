@@ -19,16 +19,16 @@ object Configuration {
   def apply(
     url: java.lang.String,
     cookie: java.lang.String = null,
-    log: js.Function2[/* id */ java.lang.String, /* args */ js.Any, scala.Unit] = null,
+    log: (/* id */ java.lang.String, /* args */ js.Any) => scala.Unit = null,
     parseUrl: js.UndefOr[scala.Boolean] = js.undefined,
-    request: js.Function1[/* params */ js.Any, scala.Unit] = null,
+    request: /* params */ js.Any => scala.Unit = null,
     requestDefaults: requestLib.requestMod.requestNs.CoreOptions = null
   ): Configuration = {
     val __obj = js.Dynamic.literal(url = url)
     if (cookie != null) __obj.updateDynamic("cookie")(cookie)
-    if (log != null) __obj.updateDynamic("log")(log)
+    if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction2(log))
     if (!js.isUndefined(parseUrl)) __obj.updateDynamic("parseUrl")(parseUrl)
-    if (request != null) __obj.updateDynamic("request")(request)
+    if (request != null) __obj.updateDynamic("request")(js.Any.fromFunction1(request))
     if (requestDefaults != null) __obj.updateDynamic("requestDefaults")(requestDefaults)
     __obj.asInstanceOf[Configuration]
   }

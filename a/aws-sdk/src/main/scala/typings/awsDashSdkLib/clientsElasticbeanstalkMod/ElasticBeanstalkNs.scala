@@ -469,7 +469,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
       * The name of the application. Constraint: This name must be unique within your account. If the specified name already exists, the action returns an InvalidParameterValue error.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.ApplicationName
     /**
       * Describes the application.
       */
@@ -478,13 +478,17 @@ object ElasticBeanstalkNs extends js.Object {
       * Specify an application resource lifecycle configuration to prevent your application from accumulating too many versions.
       */
     var ResourceLifecycleConfig: js.UndefOr[ApplicationResourceLifecycleConfig] = js.undefined
+    /**
+      * Specifies the tags applied to the application. Elastic Beanstalk applies these tags only to the application. Environments that you create in the application don't inherit the tags.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait CreateApplicationVersionMessage extends js.Object {
     /**
       *  The name of the application. If no application is found with this name, and AutoCreateApplication is false, returns an InvalidParameterValue error. 
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.ApplicationName
     /**
       * Set to true to create an application with the specified name if it doesn't already exist.
       */
@@ -510,16 +514,20 @@ object ElasticBeanstalkNs extends js.Object {
       */
     var SourceBundle: js.UndefOr[S3Location] = js.undefined
     /**
+      * Specifies the tags applied to the application version. Elastic Beanstalk applies these tags only to the application version. Environments that use the application version don't inherit the tags.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
+    /**
       * A label identifying this version. Constraint: Must be unique per application. If an application version already exists with this label for the specified application, AWS Elastic Beanstalk returns an InvalidParameterValue error. 
       */
-    var VersionLabel: VersionLabel
+    var VersionLabel: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.VersionLabel
   }
   
   trait CreateConfigurationTemplateMessage extends js.Object {
     /**
       * The name of the application to associate with this configuration template. If no application is found with this name, AWS Elastic Beanstalk returns an InvalidParameterValue error. 
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.ApplicationName
     /**
       * Describes this configuration.
       */
@@ -545,6 +553,10 @@ object ElasticBeanstalkNs extends js.Object {
       */
     var SourceConfiguration: js.UndefOr[SourceConfiguration] = js.undefined
     /**
+      * Specifies the tags applied to the configuration template.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
+    /**
       * The name of the configuration template. Constraint: This name must be unique per application. Default: If a configuration template already exists with this name, AWS Elastic Beanstalk returns an InvalidParameterValue error. 
       */
     var TemplateName: ConfigurationTemplateName
@@ -554,7 +566,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
       * The name of the application that contains the version to be deployed.  If no application is found with this name, CreateEnvironment returns an InvalidParameterValue error. 
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.ApplicationName
     /**
       * If specified, the environment attempts to use this value as the prefix for the CNAME. If not specified, the CNAME is generated automatically by appending a random alphanumeric string to the environment name.
       */
@@ -588,7 +600,7 @@ object ElasticBeanstalkNs extends js.Object {
       */
     var SolutionStackName: js.UndefOr[SolutionStackName] = js.undefined
     /**
-      * This specifies the tags applied to resources in the environment.
+      * Specifies the tags applied to resources in the environment.
       */
     var Tags: js.UndefOr[Tags] = js.undefined
     /**
@@ -621,11 +633,15 @@ object ElasticBeanstalkNs extends js.Object {
     /**
       * The name of your custom platform.
       */
-    var PlatformName: PlatformName
+    var PlatformName: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.PlatformName
     /**
       * The number, such as 1.0.2, for the new platform version.
       */
-    var PlatformVersion: PlatformVersion
+    var PlatformVersion: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.PlatformVersion
+    /**
+      * Specifies the tags applied to the new platform version. Elastic Beanstalk applies these tags only to the platform version. Environments that you create using the platform version don't inherit the tags.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait CreatePlatformVersionResult extends js.Object {
@@ -661,7 +677,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
       * The name of the application to delete.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.ApplicationName
     /**
       * When set to true, running environments will be terminated before deleting the application.
       */
@@ -672,7 +688,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
       * The name of the application to which the version belongs.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.ApplicationName
     /**
       * Set to true to delete the source bundle from your storage bucket. Otherwise, the application version is deleted only from Elastic Beanstalk and the source bundle remains in Amazon S3.
       */
@@ -680,14 +696,14 @@ object ElasticBeanstalkNs extends js.Object {
     /**
       * The label of the version to delete.
       */
-    var VersionLabel: VersionLabel
+    var VersionLabel: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.VersionLabel
   }
   
   trait DeleteConfigurationTemplateMessage extends js.Object {
     /**
       * The name of the application to delete the configuration template from.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.ApplicationName
     /**
       * The name of the configuration template to delete.
       */
@@ -698,11 +714,11 @@ object ElasticBeanstalkNs extends js.Object {
     /**
       * The name of the application the environment is associated with.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.ApplicationName
     /**
       * The name of the environment to delete the draft configuration from.
       */
-    var EnvironmentName: EnvironmentName
+    var EnvironmentName: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.EnvironmentName
   }
   
   trait DeletePlatformVersionRequest extends js.Object {
@@ -802,7 +818,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
       * The application for the environment or configuration template.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.ApplicationName
     /**
       * The name of the environment to describe.  Condition: You must specify either this or a TemplateName, but not both. If you specify both, AWS Elastic Beanstalk returns an InvalidParameterCombination error. If you do not specify either, AWS Elastic Beanstalk returns MissingRequiredParameter error. 
       */
@@ -1430,7 +1446,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the resouce for which a tag list is requested. Must be the ARN of an Elastic Beanstalk environment.
       */
-    var ResourceArn: ResourceArn
+    var ResourceArn: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.ResourceArn
   }
   
   trait Listener extends js.Object {
@@ -1907,15 +1923,15 @@ object ElasticBeanstalkNs extends js.Object {
     /**
       * The location of the source code, as a formatted string, depending on the value of SourceRepository    For CodeCommit, the format is the repository name and commit ID, separated by a forward slash. For example, my-git-repo/265cfa0cf6af46153527f55d6503ec030551f57a.   For S3, the format is the S3 bucket name and object key, separated by a forward slash. For example, my-s3-bucket/Folders/my-source-file.  
       */
-    var SourceLocation: SourceLocation
+    var SourceLocation: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.SourceLocation
     /**
       * Location where the repository is stored.    CodeCommit     S3   
       */
-    var SourceRepository: SourceRepository
+    var SourceRepository: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.SourceRepository
     /**
       * The type of repository.    Git     Zip   
       */
-    var SourceType: SourceType
+    var SourceType: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.SourceType
   }
   
   trait SourceConfiguration extends js.Object {
@@ -2922,7 +2938,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
       * The name of the application to update. If no such application is found, UpdateApplication returns an InvalidParameterValue error. 
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.ApplicationName
     /**
       * A new description for the application. Default: If not specified, AWS Elastic Beanstalk does not update the description.
       */
@@ -2933,7 +2949,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
       * The name of the application.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.ApplicationName
     /**
       * The lifecycle configuration.
       */
@@ -2944,7 +2960,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
       * The name of the application associated with this version.  If no application is found with this name, UpdateApplication returns an InvalidParameterValue error.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.ApplicationName
     /**
       * A new description for this version.
       */
@@ -2952,14 +2968,14 @@ object ElasticBeanstalkNs extends js.Object {
     /**
       * The name of the version to update. If no application version is found with this label, UpdateApplication returns an InvalidParameterValue error. 
       */
-    var VersionLabel: VersionLabel
+    var VersionLabel: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.VersionLabel
   }
   
   trait UpdateConfigurationTemplateMessage extends js.Object {
     /**
       * The name of the application associated with the configuration template to update.  If no application is found with this name, UpdateConfigurationTemplate returns an InvalidParameterValue error. 
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.ApplicationName
     /**
       * A new description for the configuration.
       */
@@ -3033,7 +3049,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the resouce to be updated. Must be the ARN of an Elastic Beanstalk environment.
       */
-    var ResourceArn: ResourceArn
+    var ResourceArn: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.ResourceArn
     /**
       * A list of tags to add or update. If a key of an existing tag is added, the tag's value is updated.
       */
@@ -3048,7 +3064,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
       * The name of the application that the configuration template or environment belongs to.
       */
-    var ApplicationName: ApplicationName
+    var ApplicationName: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.ApplicationName
     /**
       * The name of the environment to validate the settings against. Condition: You cannot specify both this and a configuration template name.
       */

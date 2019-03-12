@@ -27,17 +27,12 @@ trait XScriptEventsAttacher
 object XScriptEventsAttacher {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    attachEvents: js.Function3[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface], 
-      XScriptListener, 
-      js.Any, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    attachEvents: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface], XScriptListener, js.Any) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XScriptEventsAttacher = {
-    val __obj = js.Dynamic.literal(acquire = acquire, attachEvents = attachEvents, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), attachEvents = js.Any.fromFunction3(attachEvents), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XScriptEventsAttacher]
   }

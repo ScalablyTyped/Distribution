@@ -16,13 +16,13 @@ object Anon_Context {
   @scala.inline
   def apply[E, A](
     retries: scala.Double,
-    source: js.Function0[baconjsLib.BaconNs.EventStream[E, A]],
-    delay: js.Function1[/* context */ Anon_Error[E], scala.Double] = null,
-    isRetryable: js.Function1[/* error */ E, scala.Boolean] = null
+    source: () => baconjsLib.BaconNs.EventStream[E, A],
+    delay: /* context */ Anon_Error[E] => scala.Double = null,
+    isRetryable: /* error */ E => scala.Boolean = null
   ): Anon_Context[E, A] = {
-    val __obj = js.Dynamic.literal(retries = retries, source = source)
-    if (delay != null) __obj.updateDynamic("delay")(delay)
-    if (isRetryable != null) __obj.updateDynamic("isRetryable")(isRetryable)
+    val __obj = js.Dynamic.literal(retries = retries, source = js.Any.fromFunction0(source))
+    if (delay != null) __obj.updateDynamic("delay")(js.Any.fromFunction1(delay))
+    if (isRetryable != null) __obj.updateDynamic("isRetryable")(js.Any.fromFunction1(isRetryable))
     __obj.asInstanceOf[Anon_Context[E, A]]
   }
 }

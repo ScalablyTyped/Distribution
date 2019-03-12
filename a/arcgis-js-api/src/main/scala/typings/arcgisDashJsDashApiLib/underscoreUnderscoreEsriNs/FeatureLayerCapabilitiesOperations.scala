@@ -67,8 +67,8 @@ object FeatureLayerCapabilitiesOperations {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     supportsAdd: scala.Boolean,
     supportsCalculate: scala.Boolean,
     supportsDelete: scala.Boolean,
@@ -79,7 +79,7 @@ object FeatureLayerCapabilitiesOperations {
     supportsUpdate: scala.Boolean,
     supportsValidateSql: scala.Boolean
   ): FeatureLayerCapabilitiesOperations = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, supportsAdd = supportsAdd, supportsCalculate = supportsCalculate, supportsDelete = supportsDelete, supportsEditing = supportsEditing, supportsQuery = supportsQuery, supportsQueryAttachments = supportsQueryAttachments, supportsResizeAttachments = supportsResizeAttachments, supportsUpdate = supportsUpdate, supportsValidateSql = supportsValidateSql)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsAdd = supportsAdd, supportsCalculate = supportsCalculate, supportsDelete = supportsDelete, supportsEditing = supportsEditing, supportsQuery = supportsQuery, supportsQueryAttachments = supportsQueryAttachments, supportsResizeAttachments = supportsResizeAttachments, supportsUpdate = supportsUpdate, supportsValidateSql = supportsValidateSql)
   
     __obj.asInstanceOf[FeatureLayerCapabilitiesOperations]
   }

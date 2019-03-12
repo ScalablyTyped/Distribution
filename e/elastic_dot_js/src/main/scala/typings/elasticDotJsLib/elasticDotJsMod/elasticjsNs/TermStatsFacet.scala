@@ -102,25 +102,25 @@ trait TermStatsFacet extends Facet {
 object TermStatsFacet {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    allTerms: js.Function1[java.lang.String, TermStatsFacet],
-    cacheFilter: js.Function1[scala.Boolean, TermStatsFacet],
-    facetFilter: js.Function1[js.Object, TermStatsFacet],
-    global: js.Function1[scala.Boolean, TermStatsFacet],
-    keyField: js.Function1[java.lang.String, TermStatsFacet],
-    lang: js.Function1[java.lang.String, TermStatsFacet],
-    mode: js.Function1[java.lang.String, TermStatsFacet],
-    nested: js.Function1[java.lang.String, TermStatsFacet],
-    order: js.Function1[java.lang.String, TermStatsFacet],
-    params: js.Function1[js.Object, TermStatsFacet],
-    scope: js.Function1[java.lang.String, TermStatsFacet],
-    scriptField: js.Function1[java.lang.String, TermStatsFacet],
-    size: js.Function1[scala.Double, TermStatsFacet],
-    toJSON: js.Function0[js.Any],
-    valueField: js.Function1[java.lang.String, TermStatsFacet],
-    valueScript: js.Function1[java.lang.String, TermStatsFacet]
+    _type: () => java.lang.String,
+    allTerms: java.lang.String => TermStatsFacet,
+    cacheFilter: scala.Boolean => TermStatsFacet,
+    facetFilter: js.Object => TermStatsFacet,
+    global: scala.Boolean => TermStatsFacet,
+    keyField: java.lang.String => TermStatsFacet,
+    lang: java.lang.String => TermStatsFacet,
+    mode: java.lang.String => TermStatsFacet,
+    nested: java.lang.String => TermStatsFacet,
+    order: java.lang.String => TermStatsFacet,
+    params: js.Object => TermStatsFacet,
+    scope: java.lang.String => TermStatsFacet,
+    scriptField: java.lang.String => TermStatsFacet,
+    size: scala.Double => TermStatsFacet,
+    toJSON: () => js.Any,
+    valueField: java.lang.String => TermStatsFacet,
+    valueScript: java.lang.String => TermStatsFacet
   ): TermStatsFacet = {
-    val __obj = js.Dynamic.literal(_type = _type, allTerms = allTerms, cacheFilter = cacheFilter, facetFilter = facetFilter, global = global, keyField = keyField, lang = lang, mode = mode, nested = nested, order = order, params = params, scope = scope, scriptField = scriptField, size = size, toJSON = toJSON, valueField = valueField, valueScript = valueScript)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), allTerms = js.Any.fromFunction1(allTerms), cacheFilter = js.Any.fromFunction1(cacheFilter), facetFilter = js.Any.fromFunction1(facetFilter), global = js.Any.fromFunction1(global), keyField = js.Any.fromFunction1(keyField), lang = js.Any.fromFunction1(lang), mode = js.Any.fromFunction1(mode), nested = js.Any.fromFunction1(nested), order = js.Any.fromFunction1(order), params = js.Any.fromFunction1(params), scope = js.Any.fromFunction1(scope), scriptField = js.Any.fromFunction1(scriptField), size = js.Any.fromFunction1(size), toJSON = js.Any.fromFunction0(toJSON), valueField = js.Any.fromFunction1(valueField), valueScript = js.Any.fromFunction1(valueScript))
   
     __obj.asInstanceOf[TermStatsFacet]
   }

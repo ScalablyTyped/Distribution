@@ -13,12 +13,8 @@ trait ReadJsonOptions extends js.Object {
 
 object ReadJsonOptions {
   @scala.inline
-  def apply(
-    encoding: java.lang.String,
-    reviver: js.Function2[js.Any, js.Any, js.Any],
-    flag: java.lang.String = null
-  ): ReadJsonOptions = {
-    val __obj = js.Dynamic.literal(encoding = encoding, reviver = reviver)
+  def apply(encoding: java.lang.String, reviver: (js.Any, js.Any) => js.Any, flag: java.lang.String = null): ReadJsonOptions = {
+    val __obj = js.Dynamic.literal(encoding = encoding, reviver = js.Any.fromFunction2(reviver))
     if (flag != null) __obj.updateDynamic("flag")(flag)
     __obj.asInstanceOf[ReadJsonOptions]
   }

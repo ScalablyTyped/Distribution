@@ -46,14 +46,14 @@ trait XCellRange
 object XCellRange {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getCellByPosition: js.Function2[scala.Double, scala.Double, XCell],
-    getCellRangeByName: js.Function1[java.lang.String, XCellRange],
-    getCellRangeByPosition: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, XCellRange],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getCellByPosition: (scala.Double, scala.Double) => XCell,
+    getCellRangeByName: java.lang.String => XCellRange,
+    getCellRangeByPosition: (scala.Double, scala.Double, scala.Double, scala.Double) => XCellRange,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCellRange = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getCellByPosition = getCellByPosition, getCellRangeByName = getCellRangeByName, getCellRangeByPosition = getCellRangeByPosition, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getCellByPosition = js.Any.fromFunction2(getCellByPosition), getCellRangeByName = js.Any.fromFunction1(getCellRangeByName), getCellRangeByPosition = js.Any.fromFunction4(getCellRangeByPosition), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCellRange]
   }

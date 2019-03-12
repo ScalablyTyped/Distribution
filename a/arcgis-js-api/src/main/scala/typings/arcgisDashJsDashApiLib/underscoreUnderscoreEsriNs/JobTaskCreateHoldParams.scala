@@ -38,13 +38,13 @@ object JobTaskCreateHoldParams {
   def apply(
     comments: java.lang.String,
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     holdTypeId: scala.Double,
     jobId: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     user: java.lang.String
   ): JobTaskCreateHoldParams = {
-    val __obj = js.Dynamic.literal(comments = comments, constructor = constructor, hasOwnProperty = hasOwnProperty, holdTypeId = holdTypeId, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, user = user)
+    val __obj = js.Dynamic.literal(comments = comments, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), holdTypeId = holdTypeId, jobId = jobId, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user)
   
     __obj.asInstanceOf[JobTaskCreateHoldParams]
   }

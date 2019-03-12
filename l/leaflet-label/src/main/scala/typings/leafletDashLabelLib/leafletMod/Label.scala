@@ -19,15 +19,15 @@ import scala.scalajs.js.annotation._
 object Label {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
-    onAdd: js.Function1[leafletLib.leafletMod.Map, scala.Unit],
-    onRemove: js.Function1[leafletLib.leafletMod.Map, scala.Unit],
-    setContent: js.Function1[java.lang.String, Label],
-    setLatLng: js.Function1[leafletLib.leafletMod.LatLng, Label],
-    setOpacity: js.Function1[scala.Double, scala.Unit],
-    updateZIndex: js.Function1[scala.Double, scala.Unit]
+    close: () => scala.Unit,
+    onAdd: leafletLib.leafletMod.Map => scala.Unit,
+    onRemove: leafletLib.leafletMod.Map => scala.Unit,
+    setContent: java.lang.String => Label,
+    setLatLng: leafletLib.leafletMod.LatLng => Label,
+    setOpacity: scala.Double => scala.Unit,
+    updateZIndex: scala.Double => scala.Unit
   ): Label = {
-    val __obj = js.Dynamic.literal(close = close, onAdd = onAdd, onRemove = onRemove, setContent = setContent, setLatLng = setLatLng, setOpacity = setOpacity, updateZIndex = updateZIndex)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), onAdd = js.Any.fromFunction1(onAdd), onRemove = js.Any.fromFunction1(onRemove), setContent = js.Any.fromFunction1(setContent), setLatLng = js.Any.fromFunction1(setLatLng), setOpacity = js.Any.fromFunction1(setOpacity), updateZIndex = js.Any.fromFunction1(updateZIndex))
   
     __obj.asInstanceOf[Label]
   }

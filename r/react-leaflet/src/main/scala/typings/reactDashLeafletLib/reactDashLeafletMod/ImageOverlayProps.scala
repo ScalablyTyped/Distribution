@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
   extends leafletLib.leafletMod.ImageOverlayOptions {
   var bounds: js.UndefOr[leafletLib.leafletMod.LatLngBoundsExpression] = js.undefined
   var children: js.UndefOr[Children] = js.undefined
-  var url: java.lang.String | reactLib.HTMLImageElement
+  var url: java.lang.String | stdLib.HTMLImageElement
 }
 
 object ImageOverlayProps {
   @scala.inline
   def apply(
-    url: java.lang.String | reactLib.HTMLImageElement,
+    url: java.lang.String | stdLib.HTMLImageElement,
     alt: java.lang.String = null,
     attribution: java.lang.String = null,
     bounds: leafletLib.leafletMod.LatLngBoundsExpression = null,

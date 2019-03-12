@@ -17,13 +17,13 @@ trait XTransactedObject
 object XTransactedObject {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    commit: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    revert: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    commit: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    revert: () => scala.Unit
   ): XTransactedObject = {
-    val __obj = js.Dynamic.literal(acquire = acquire, commit = commit, queryInterface = queryInterface, release = release, revert = revert)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), commit = js.Any.fromFunction0(commit), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), revert = js.Any.fromFunction0(revert))
   
     __obj.asInstanceOf[XTransactedObject]
   }

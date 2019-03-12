@@ -44,14 +44,14 @@ object DirectionsViewModelLastRoute {
   def apply(
     barriers: js.Array[Graphic],
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     messages: js.Array[DirectionsViewModelLastRouteMessages],
     polygonBarriers: js.Array[Graphic],
     polylineBarriers: js.Array[Graphic],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     routeResults: RouteResult
   ): DirectionsViewModelLastRoute = {
-    val __obj = js.Dynamic.literal(barriers = barriers, constructor = constructor, hasOwnProperty = hasOwnProperty, messages = messages, polygonBarriers = polygonBarriers, polylineBarriers = polylineBarriers, propertyIsEnumerable = propertyIsEnumerable, routeResults = routeResults)
+    val __obj = js.Dynamic.literal(barriers = barriers, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), messages = messages, polygonBarriers = polygonBarriers, polylineBarriers = polylineBarriers, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), routeResults = routeResults)
   
     __obj.asInstanceOf[DirectionsViewModelLastRoute]
   }

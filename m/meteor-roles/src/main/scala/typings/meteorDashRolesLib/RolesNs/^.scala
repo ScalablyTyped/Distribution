@@ -111,7 +111,7 @@ object ^ extends js.Object {
     * @method getAllRoles
     * @return {Cursor} cursor of existing roles
     */
-  def getAllRoles(): meteorLib.MongoNs.Cursor[meteorDashRolesLib.RolesNs.Role] = js.native
+  def getAllRoles(): meteorLib.MongoNs.Cursor[Role] = js.native
   /**
     * Retrieve users groups, if any
     *

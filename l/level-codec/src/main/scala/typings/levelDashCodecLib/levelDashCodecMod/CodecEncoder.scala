@@ -16,11 +16,11 @@ object CodecEncoder {
   @scala.inline
   def apply(
     buffer: scala.Boolean,
-    decode: js.Function1[js.Any, js.Any],
-    encode: js.Function1[js.Any, js.Any],
+    decode: js.Any => js.Any,
+    encode: js.Any => js.Any,
     `type`: java.lang.String
   ): CodecEncoder = {
-    val __obj = js.Dynamic.literal(buffer = buffer, decode = decode, encode = encode)
+    val __obj = js.Dynamic.literal(buffer = buffer, decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CodecEncoder]
   }

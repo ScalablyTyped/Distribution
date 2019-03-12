@@ -11,8 +11,8 @@ trait Anon_Measure extends js.Object {
 
 object Anon_Measure {
   @scala.inline
-  def apply(measure: js.Function0[scala.Unit]): Anon_Measure = {
-    val __obj = js.Dynamic.literal(measure = measure)
+  def apply(measure: () => scala.Unit): Anon_Measure = {
+    val __obj = js.Dynamic.literal(measure = js.Any.fromFunction0(measure))
   
     __obj.asInstanceOf[Anon_Measure]
   }

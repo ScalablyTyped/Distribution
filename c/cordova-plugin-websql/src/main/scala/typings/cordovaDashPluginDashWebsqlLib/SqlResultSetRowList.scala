@@ -12,8 +12,8 @@ trait SqlResultSetRowList extends js.Object {
 
 object SqlResultSetRowList {
   @scala.inline
-  def apply(item: js.Function1[scala.Double, js.Object], length: scala.Double): SqlResultSetRowList = {
-    val __obj = js.Dynamic.literal(item = item, length = length)
+  def apply(item: scala.Double => js.Object, length: scala.Double): SqlResultSetRowList = {
+    val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), length = length)
   
     __obj.asInstanceOf[SqlResultSetRowList]
   }

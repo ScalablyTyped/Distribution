@@ -22,7 +22,7 @@ object ^ extends js.Object {
   //  Creates a new instance of a Component or returns the instance of an existing Component.
   def component(vConfig: java.lang.String): openui5Lib.sapNs.uiNs.coreNs.Component | jqueryLib.JQueryPromise[_] = js.native
   def component(vConfig: js.Any): openui5Lib.sapNs.uiNs.coreNs.Component | jqueryLib.JQueryPromise[_] = js.native
-  def component(vConfig: openui5Lib.sapNs.uiNs.ComponentConfig): jqueryLib.JQueryPromise[openui5Lib.sapNs.uiNs.coreNs.Component] | openui5Lib.sapNs.uiNs.coreNs.Component = js.native
+  def component(vConfig: ComponentConfig): jqueryLib.JQueryPromise[openui5Lib.sapNs.uiNs.coreNs.Component] | openui5Lib.sapNs.uiNs.coreNs.Component = js.native
   /**
     * Defines a controller class or creates an instance of an already defined controller class.When a name
     * and a controller implementation object is given, a new controller classof the given name is created.

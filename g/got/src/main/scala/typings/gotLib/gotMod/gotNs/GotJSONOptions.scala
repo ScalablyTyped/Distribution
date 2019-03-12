@@ -29,11 +29,7 @@ object GotJSONOptions {
     ciphers: java.lang.String = null,
     clientCertEngine: java.lang.String = null,
     cookieJar: toughDashCookieLib.toughDashCookieMod.CookieJar = null,
-    createConnection: js.Function2[
-      /* options */ nodeLib.httpMod.ClientRequestArgs, 
-      /* oncreate */ js.Function2[/* err */ nodeLib.Error, /* socket */ nodeLib.netMod.Socket, scala.Unit], 
-      nodeLib.netMod.Socket
-    ] = null,
+    createConnection: (/* options */ nodeLib.httpMod.ClientRequestArgs, /* oncreate */ js.Function2[/* err */ nodeLib.Error, /* socket */ nodeLib.netMod.Socket, scala.Unit]) => nodeLib.netMod.Socket = null,
     crl: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
     decompress: js.UndefOr[scala.Boolean] = js.undefined,
     defaultPort: scala.Double | java.lang.String = null,
@@ -83,7 +79,7 @@ object GotJSONOptions {
     if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)
     if (clientCertEngine != null) __obj.updateDynamic("clientCertEngine")(clientCertEngine)
     if (cookieJar != null) __obj.updateDynamic("cookieJar")(cookieJar)
-    if (createConnection != null) __obj.updateDynamic("createConnection")(createConnection)
+    if (createConnection != null) __obj.updateDynamic("createConnection")(js.Any.fromFunction2(createConnection))
     if (crl != null) __obj.updateDynamic("crl")(crl.asInstanceOf[js.Any])
     if (!js.isUndefined(decompress)) __obj.updateDynamic("decompress")(decompress)
     if (defaultPort != null) __obj.updateDynamic("defaultPort")(defaultPort.asInstanceOf[js.Any])

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.Endnotes")
 @js.native
 class Endnotes protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val ContinuationNotice: Range = js.native
   val ContinuationSeparator: Range = js.native
   val Count: scala.Double = js.native

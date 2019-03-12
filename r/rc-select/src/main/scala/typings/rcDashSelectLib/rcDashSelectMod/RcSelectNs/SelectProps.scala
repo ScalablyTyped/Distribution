@@ -35,7 +35,7 @@ trait SelectProps extends js.Object {
   ] = js.undefined
   var onDeselect: js.UndefOr[js.Function2[/* value */ java.lang.String, /* option */ Option, scala.Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onInputKeyDown: js.UndefOr[js.Function1[/* e */ reactLib.Event, scala.Unit]] = js.undefined
+  var onInputKeyDown: js.UndefOr[js.Function1[/* e */ stdLib.Event, scala.Unit]] = js.undefined
   var onPopupScroll: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onSearch: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onSelect: js.UndefOr[js.Function2[/* value */ java.lang.String, /* ontion */ Option, scala.Unit]] = js.undefined
@@ -69,8 +69,8 @@ object SelectProps {
     dropdownMenuStyle: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     dropdownStyle: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     filterOption: js.UndefOr[scala.Boolean] = js.undefined,
-    getInputElement: js.Function0[stdLib.Node] = null,
-    getPopupContainer: js.Function1[/* trigger */ stdLib.Node, stdLib.Node] = null,
+    getInputElement: () => stdLib.Node = null,
+    getPopupContainer: /* trigger */ stdLib.Node => stdLib.Node = null,
     id: java.lang.String = null,
     labelInValue: js.UndefOr[scala.Boolean] = js.undefined,
     maxTagCount: scala.Int | scala.Double = null,
@@ -78,14 +78,14 @@ object SelectProps {
     maxTagTextLength: scala.Int | scala.Double = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     notFoundContent: java.lang.String = null,
-    onBlur: js.Function0[scala.Unit] = null,
-    onChange: js.Function2[/* value */ java.lang.String, /* label */ java.lang.String, scala.Unit] = null,
-    onDeselect: js.Function2[/* value */ java.lang.String, /* option */ Option, scala.Unit] = null,
-    onFocus: js.Function0[scala.Unit] = null,
-    onInputKeyDown: js.Function1[/* e */ reactLib.Event, scala.Unit] = null,
-    onPopupScroll: js.Function0[scala.Unit] = null,
-    onSearch: js.Function0[scala.Unit] = null,
-    onSelect: js.Function2[/* value */ java.lang.String, /* ontion */ Option, scala.Unit] = null,
+    onBlur: () => scala.Unit = null,
+    onChange: (/* value */ java.lang.String, /* label */ java.lang.String) => scala.Unit = null,
+    onDeselect: (/* value */ java.lang.String, /* option */ Option) => scala.Unit = null,
+    onFocus: () => scala.Unit = null,
+    onInputKeyDown: /* e */ stdLib.Event => scala.Unit = null,
+    onPopupScroll: () => scala.Unit = null,
+    onSearch: () => scala.Unit = null,
+    onSelect: (/* value */ java.lang.String, /* ontion */ Option) => scala.Unit = null,
     optionFilterProp: java.lang.String = null,
     optionLabelProp: java.lang.String = null,
     placeholder: reactLib.reactMod.ReactNs.ReactNode = null,
@@ -113,8 +113,8 @@ object SelectProps {
     if (dropdownMenuStyle != null) __obj.updateDynamic("dropdownMenuStyle")(dropdownMenuStyle)
     if (dropdownStyle != null) __obj.updateDynamic("dropdownStyle")(dropdownStyle)
     if (!js.isUndefined(filterOption)) __obj.updateDynamic("filterOption")(filterOption)
-    if (getInputElement != null) __obj.updateDynamic("getInputElement")(getInputElement)
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer)
+    if (getInputElement != null) __obj.updateDynamic("getInputElement")(js.Any.fromFunction0(getInputElement))
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(labelInValue)) __obj.updateDynamic("labelInValue")(labelInValue)
     if (maxTagCount != null) __obj.updateDynamic("maxTagCount")(maxTagCount.asInstanceOf[js.Any])
@@ -122,14 +122,14 @@ object SelectProps {
     if (maxTagTextLength != null) __obj.updateDynamic("maxTagTextLength")(maxTagTextLength.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onDeselect != null) __obj.updateDynamic("onDeselect")(onDeselect)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onInputKeyDown != null) __obj.updateDynamic("onInputKeyDown")(onInputKeyDown)
-    if (onPopupScroll != null) __obj.updateDynamic("onPopupScroll")(onPopupScroll)
-    if (onSearch != null) __obj.updateDynamic("onSearch")(onSearch)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onDeselect != null) __obj.updateDynamic("onDeselect")(js.Any.fromFunction2(onDeselect))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction0(onFocus))
+    if (onInputKeyDown != null) __obj.updateDynamic("onInputKeyDown")(js.Any.fromFunction1(onInputKeyDown))
+    if (onPopupScroll != null) __obj.updateDynamic("onPopupScroll")(js.Any.fromFunction0(onPopupScroll))
+    if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction0(onSearch))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
     if (optionFilterProp != null) __obj.updateDynamic("optionFilterProp")(optionFilterProp)
     if (optionLabelProp != null) __obj.updateDynamic("optionLabelProp")(optionLabelProp)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])

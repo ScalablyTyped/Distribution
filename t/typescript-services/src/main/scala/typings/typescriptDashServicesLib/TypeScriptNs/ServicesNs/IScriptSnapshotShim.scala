@@ -15,12 +15,12 @@ trait IScriptSnapshotShim extends js.Object {
 object IScriptSnapshotShim {
   @scala.inline
   def apply(
-    getLength: js.Function0[scala.Double],
-    getLineStartPositions: js.Function0[java.lang.String],
-    getText: js.Function2[scala.Double, scala.Double, java.lang.String],
-    getTextChangeRangeSinceVersion: js.Function1[scala.Double, java.lang.String]
+    getLength: () => scala.Double,
+    getLineStartPositions: () => java.lang.String,
+    getText: (scala.Double, scala.Double) => java.lang.String,
+    getTextChangeRangeSinceVersion: scala.Double => java.lang.String
   ): IScriptSnapshotShim = {
-    val __obj = js.Dynamic.literal(getLength = getLength, getLineStartPositions = getLineStartPositions, getText = getText, getTextChangeRangeSinceVersion = getTextChangeRangeSinceVersion)
+    val __obj = js.Dynamic.literal(getLength = js.Any.fromFunction0(getLength), getLineStartPositions = js.Any.fromFunction0(getLineStartPositions), getText = js.Any.fromFunction2(getText), getTextChangeRangeSinceVersion = js.Any.fromFunction1(getTextChangeRangeSinceVersion))
   
     __obj.asInstanceOf[IScriptSnapshotShim]
   }

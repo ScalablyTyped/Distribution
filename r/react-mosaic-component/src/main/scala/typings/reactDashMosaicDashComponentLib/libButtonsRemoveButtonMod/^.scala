@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val RemoveButtonFactory: reactLib.reactMod.ReactNs.ComponentFactory[
     reactDashMosaicDashComponentLib.libButtonsMosaicButtonMod.MosaicButtonProps, 
-    reactDashMosaicDashComponentLib.libButtonsRemoveButtonMod.RemoveButton[java.lang.String | scala.Double]
+    RemoveButton[java.lang.String | scala.Double]
   ] = js.native
 }
 

@@ -18,15 +18,15 @@ trait MDCTabAdapter extends js.Object {
 object MDCTabAdapter {
   @scala.inline
   def apply(
-    addClass: js.Function1[java.lang.String, scala.Unit],
-    deregisterInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    getOffsetLeft: js.Function0[scala.Double],
-    getOffsetWidth: js.Function0[scala.Double],
-    notifySelected: js.Function0[scala.Unit],
-    registerInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    removeClass: js.Function1[java.lang.String, scala.Unit]
+    addClass: java.lang.String => scala.Unit,
+    deregisterInteractionHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    getOffsetLeft: () => scala.Double,
+    getOffsetWidth: () => scala.Double,
+    notifySelected: () => scala.Unit,
+    registerInteractionHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    removeClass: java.lang.String => scala.Unit
   ): MDCTabAdapter = {
-    val __obj = js.Dynamic.literal(addClass = addClass, deregisterInteractionHandler = deregisterInteractionHandler, getOffsetLeft = getOffsetLeft, getOffsetWidth = getOffsetWidth, notifySelected = notifySelected, registerInteractionHandler = registerInteractionHandler, removeClass = removeClass)
+    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), deregisterInteractionHandler = js.Any.fromFunction2(deregisterInteractionHandler), getOffsetLeft = js.Any.fromFunction0(getOffsetLeft), getOffsetWidth = js.Any.fromFunction0(getOffsetWidth), notifySelected = js.Any.fromFunction0(notifySelected), registerInteractionHandler = js.Any.fromFunction2(registerInteractionHandler), removeClass = js.Any.fromFunction1(removeClass))
   
     __obj.asInstanceOf[MDCTabAdapter]
   }

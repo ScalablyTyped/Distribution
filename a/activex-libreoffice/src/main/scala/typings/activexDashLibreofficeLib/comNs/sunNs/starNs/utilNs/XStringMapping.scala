@@ -15,15 +15,12 @@ trait XStringMapping
 object XStringMapping {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    mapStrings: js.Function1[
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]], 
-      scala.Boolean
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    mapStrings: js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]] => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XStringMapping = {
-    val __obj = js.Dynamic.literal(acquire = acquire, mapStrings = mapStrings, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), mapStrings = js.Any.fromFunction1(mapStrings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XStringMapping]
   }

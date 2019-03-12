@@ -23,13 +23,13 @@ object XDataPilotTable {
   @scala.inline
   def apply(
     OutputRange: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
-    acquire: js.Function0[scala.Unit],
-    getOutputRange: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    refresh: js.Function0[scala.Unit],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getOutputRange: () => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    refresh: () => scala.Unit,
+    release: () => scala.Unit
   ): XDataPilotTable = {
-    val __obj = js.Dynamic.literal(OutputRange = OutputRange, acquire = acquire, getOutputRange = getOutputRange, queryInterface = queryInterface, refresh = refresh, release = release)
+    val __obj = js.Dynamic.literal(OutputRange = OutputRange, acquire = js.Any.fromFunction0(acquire), getOutputRange = js.Any.fromFunction0(getOutputRange), queryInterface = js.Any.fromFunction1(queryInterface), refresh = js.Any.fromFunction0(refresh), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDataPilotTable]
   }

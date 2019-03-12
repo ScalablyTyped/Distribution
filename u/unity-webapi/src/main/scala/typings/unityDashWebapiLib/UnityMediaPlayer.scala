@@ -21,18 +21,18 @@ trait UnityMediaPlayer extends js.Object {
 object UnityMediaPlayer {
   @scala.inline
   def apply(
-    getPlaybackstate: js.Function1[js.Function, js.Any],
-    onNext: js.Function1[js.Function, js.Any],
-    onPlayPause: js.Function1[js.Function, js.Any],
-    onPrevious: js.Function1[js.Function, js.Any],
-    setCanGoNext: js.Function1[scala.Boolean, js.Any],
-    setCanGoPrev: js.Function1[scala.Boolean, js.Any],
-    setCanPause: js.Function1[scala.Boolean, js.Any],
-    setCanPlay: js.Function1[scala.Boolean, js.Any],
-    setPlaybackstate: js.Function1[UnityPlaybackState, js.Any],
-    setTrack: js.Function1[UnityTrackMetadata, js.Any]
+    getPlaybackstate: js.Function => js.Any,
+    onNext: js.Function => js.Any,
+    onPlayPause: js.Function => js.Any,
+    onPrevious: js.Function => js.Any,
+    setCanGoNext: scala.Boolean => js.Any,
+    setCanGoPrev: scala.Boolean => js.Any,
+    setCanPause: scala.Boolean => js.Any,
+    setCanPlay: scala.Boolean => js.Any,
+    setPlaybackstate: UnityPlaybackState => js.Any,
+    setTrack: UnityTrackMetadata => js.Any
   ): UnityMediaPlayer = {
-    val __obj = js.Dynamic.literal(getPlaybackstate = getPlaybackstate, onNext = onNext, onPlayPause = onPlayPause, onPrevious = onPrevious, setCanGoNext = setCanGoNext, setCanGoPrev = setCanGoPrev, setCanPause = setCanPause, setCanPlay = setCanPlay, setPlaybackstate = setPlaybackstate, setTrack = setTrack)
+    val __obj = js.Dynamic.literal(getPlaybackstate = js.Any.fromFunction1(getPlaybackstate), onNext = js.Any.fromFunction1(onNext), onPlayPause = js.Any.fromFunction1(onPlayPause), onPrevious = js.Any.fromFunction1(onPrevious), setCanGoNext = js.Any.fromFunction1(setCanGoNext), setCanGoPrev = js.Any.fromFunction1(setCanGoPrev), setCanPause = js.Any.fromFunction1(setCanPause), setCanPlay = js.Any.fromFunction1(setCanPlay), setPlaybackstate = js.Any.fromFunction1(setPlaybackstate), setTrack = js.Any.fromFunction1(setTrack))
   
     __obj.asInstanceOf[UnityMediaPlayer]
   }

@@ -14,11 +14,11 @@ trait PublishCompositeConfig[OutLevel] extends js.Object {
 object PublishCompositeConfig {
   @scala.inline
   def apply[OutLevel](
-    find: js.Function0[meteorLib.MongoNs.Cursor[OutLevel]],
+    find: () => meteorLib.MongoNs.Cursor[OutLevel],
     children: js.Array[PublishCompositeConfig1[OutLevel, _]] = null,
     collectionName: java.lang.String = null
   ): PublishCompositeConfig[OutLevel] = {
-    val __obj = js.Dynamic.literal(find = find)
+    val __obj = js.Dynamic.literal(find = js.Any.fromFunction0(find))
     if (children != null) __obj.updateDynamic("children")(children)
     if (collectionName != null) __obj.updateDynamic("collectionName")(collectionName)
     __obj.asInstanceOf[PublishCompositeConfig[OutLevel]]

@@ -14,11 +14,11 @@ trait IRequestHandler extends js.Object {
 object IRequestHandler {
   @scala.inline
   def apply(
-    canHandleAuthentication: js.Function1[IHttpResponse, scala.Boolean],
-    handleAuthentication: js.Function5[js.Any, js.Any, js.Any, js.Any, js.Any, scala.Unit],
-    prepareRequest: js.Function1[js.Any, scala.Unit]
+    canHandleAuthentication: IHttpResponse => scala.Boolean,
+    handleAuthentication: (js.Any, js.Any, js.Any, js.Any, js.Any) => scala.Unit,
+    prepareRequest: js.Any => scala.Unit
   ): IRequestHandler = {
-    val __obj = js.Dynamic.literal(canHandleAuthentication = canHandleAuthentication, handleAuthentication = handleAuthentication, prepareRequest = prepareRequest)
+    val __obj = js.Dynamic.literal(canHandleAuthentication = js.Any.fromFunction1(canHandleAuthentication), handleAuthentication = js.Any.fromFunction5(handleAuthentication), prepareRequest = js.Any.fromFunction1(prepareRequest))
   
     __obj.asInstanceOf[IRequestHandler]
   }

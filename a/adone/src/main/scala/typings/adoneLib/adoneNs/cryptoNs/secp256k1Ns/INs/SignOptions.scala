@@ -23,18 +23,11 @@ object SignOptions {
   @scala.inline
   def apply(
     data: nodeLib.Buffer = null,
-    noncefn: js.Function5[
-      /* message */ nodeLib.Buffer, 
-      /* privateKey */ nodeLib.Buffer, 
-      /* algo */ nodeLib.Buffer, 
-      /* data */ nodeLib.Buffer, 
-      /* attempt */ scala.Double, 
-      nodeLib.Buffer
-    ] = null
+    noncefn: (/* message */ nodeLib.Buffer, /* privateKey */ nodeLib.Buffer, /* algo */ nodeLib.Buffer, /* data */ nodeLib.Buffer, /* attempt */ scala.Double) => nodeLib.Buffer = null
   ): SignOptions = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data)
-    if (noncefn != null) __obj.updateDynamic("noncefn")(noncefn)
+    if (noncefn != null) __obj.updateDynamic("noncefn")(js.Any.fromFunction5(noncefn))
     __obj.asInstanceOf[SignOptions]
   }
 }

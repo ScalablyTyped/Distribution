@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(app: expressLib.expressMod.eNs.Application): js.Any = js.native
-  def apply(
-    app: expressLib.expressMod.eNs.Application,
-    options: expressDashFlashDashNotificationLib.expressDashFlashDashNotificationMod.efnOptions,
-    args: js.Any*
-  ): js.Any = js.native
+  def apply(app: expressLib.expressMod.eNs.Application, options: efnOptions, args: js.Any*): js.Any = js.native
 }
 

@@ -12,8 +12,8 @@ trait BaseServer extends js.Object {
 
 object BaseServer {
   @scala.inline
-  def apply(close: js.Function0[scala.Unit], getIndexedDB: js.Function0[stdLib.IDBDatabase]): BaseServer = {
-    val __obj = js.Dynamic.literal(close = close, getIndexedDB = getIndexedDB)
+  def apply(close: () => scala.Unit, getIndexedDB: () => stdLib.IDBDatabase): BaseServer = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getIndexedDB = js.Any.fromFunction0(getIndexedDB))
   
     __obj.asInstanceOf[BaseServer]
   }

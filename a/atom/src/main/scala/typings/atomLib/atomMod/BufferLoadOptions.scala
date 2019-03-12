@@ -17,10 +17,10 @@ trait BufferLoadOptions extends js.Object {
 
 object BufferLoadOptions {
   @scala.inline
-  def apply(encoding: java.lang.String = null, shouldDestroyOnFileDelete: js.Function0[scala.Boolean] = null): BufferLoadOptions = {
+  def apply(encoding: java.lang.String = null, shouldDestroyOnFileDelete: () => scala.Boolean = null): BufferLoadOptions = {
     val __obj = js.Dynamic.literal()
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (shouldDestroyOnFileDelete != null) __obj.updateDynamic("shouldDestroyOnFileDelete")(shouldDestroyOnFileDelete)
+    if (shouldDestroyOnFileDelete != null) __obj.updateDynamic("shouldDestroyOnFileDelete")(js.Any.fromFunction0(shouldDestroyOnFileDelete))
     __obj.asInstanceOf[BufferLoadOptions]
   }
 }

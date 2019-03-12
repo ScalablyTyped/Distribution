@@ -43,12 +43,12 @@ object DateRangePickerPhrases {
   @scala.inline
   def apply(
     calendarLabel: java.lang.String = null,
-    chooseAvailableEndDate: js.Function1[/* date */ java.lang.String, java.lang.String] = null,
-    chooseAvailableStartDate: js.Function1[/* date */ java.lang.String, java.lang.String] = null,
+    chooseAvailableEndDate: /* date */ java.lang.String => java.lang.String = null,
+    chooseAvailableStartDate: /* date */ java.lang.String => java.lang.String = null,
     clearDates: java.lang.String = null,
     closeDatePicker: java.lang.String = null,
-    dateIsSelected: js.Function1[/* date */ java.lang.String, java.lang.String] = null,
-    dateIsUnavailable: js.Function1[/* date */ java.lang.String, java.lang.String] = null,
+    dateIsSelected: /* date */ java.lang.String => java.lang.String = null,
+    dateIsUnavailable: /* date */ java.lang.String => java.lang.String = null,
     enterKey: java.lang.String = null,
     escape: java.lang.String = null,
     focusStartDate: java.lang.String = null,
@@ -73,12 +73,12 @@ object DateRangePickerPhrases {
   ): DateRangePickerPhrases = {
     val __obj = js.Dynamic.literal()
     if (calendarLabel != null) __obj.updateDynamic("calendarLabel")(calendarLabel)
-    if (chooseAvailableEndDate != null) __obj.updateDynamic("chooseAvailableEndDate")(chooseAvailableEndDate)
-    if (chooseAvailableStartDate != null) __obj.updateDynamic("chooseAvailableStartDate")(chooseAvailableStartDate)
+    if (chooseAvailableEndDate != null) __obj.updateDynamic("chooseAvailableEndDate")(js.Any.fromFunction1(chooseAvailableEndDate))
+    if (chooseAvailableStartDate != null) __obj.updateDynamic("chooseAvailableStartDate")(js.Any.fromFunction1(chooseAvailableStartDate))
     if (clearDates != null) __obj.updateDynamic("clearDates")(clearDates)
     if (closeDatePicker != null) __obj.updateDynamic("closeDatePicker")(closeDatePicker)
-    if (dateIsSelected != null) __obj.updateDynamic("dateIsSelected")(dateIsSelected)
-    if (dateIsUnavailable != null) __obj.updateDynamic("dateIsUnavailable")(dateIsUnavailable)
+    if (dateIsSelected != null) __obj.updateDynamic("dateIsSelected")(js.Any.fromFunction1(dateIsSelected))
+    if (dateIsUnavailable != null) __obj.updateDynamic("dateIsUnavailable")(js.Any.fromFunction1(dateIsUnavailable))
     if (enterKey != null) __obj.updateDynamic("enterKey")(enterKey)
     if (escape != null) __obj.updateDynamic("escape")(escape)
     if (focusStartDate != null) __obj.updateDynamic("focusStartDate")(focusStartDate)

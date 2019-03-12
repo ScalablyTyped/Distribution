@@ -82,74 +82,56 @@ object ILayout {
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
     axis: senchaUnderscoreTouchLib.ExtNs.chartNs.axisNs.IAxis = null,
-    calculateLayout: js.Function1[/* context */ js.UndefOr[js.Any], _] = null,
-    calculateMajorTicks: js.Function1[/* context */ js.UndefOr[js.Any], scala.Unit] = null,
-    calculateMinorTicks: js.Function1[/* context */ js.UndefOr[js.Any], scala.Unit] = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    calculateLayout: /* context */ js.UndefOr[js.Any] => _ = null,
+    calculateMajorTicks: /* context */ js.UndefOr[js.Any] => scala.Unit = null,
+    calculateMinorTicks: /* context */ js.UndefOr[js.Any] => scala.Unit = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     extend: java.lang.String = null,
-    getAxis: js.Function0[senchaUnderscoreTouchLib.ExtNs.chartNs.axisNs.IAxis] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getAxis: () => senchaUnderscoreTouchLib.ExtNs.chartNs.axisNs.IAxis = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
-    processData: js.Function1[
-      /* series */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.chartNs.seriesNs.ISeries], 
-      scala.Unit
-    ] = null,
+    processData: /* series */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.chartNs.seriesNs.ISeries] => scala.Unit = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setAxis: js.Function1[
-      /* axis */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.chartNs.axisNs.IAxis], 
-      scala.Unit
-    ] = null,
+    setAxis: /* axis */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.chartNs.axisNs.IAxis] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
-    snapEnds: js.Function4[
-      /* context */ js.UndefOr[js.Any], 
-      /* min */ js.UndefOr[scala.Double], 
-      /* max */ js.UndefOr[scala.Double], 
-      /* estStepSize */ js.UndefOr[scala.Double], 
-      scala.Unit
-    ] = null,
+    snapEnds: (/* context */ js.UndefOr[js.Any], /* min */ js.UndefOr[scala.Double], /* max */ js.UndefOr[scala.Double], /* estStepSize */ js.UndefOr[scala.Double]) => scala.Unit = null,
     statics: js.Any = null,
-    trimByRange: js.Function4[
-      /* context */ js.UndefOr[js.Any], 
-      /* out */ js.UndefOr[js.Any], 
-      /* trimMin */ js.UndefOr[scala.Double], 
-      /* trimMax */ js.UndefOr[scala.Double], 
-      scala.Unit
-    ] = null,
+    trimByRange: (/* context */ js.UndefOr[js.Any], /* out */ js.UndefOr[js.Any], /* trimMin */ js.UndefOr[scala.Double], /* trimMax */ js.UndefOr[scala.Double]) => scala.Unit = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null
   ): ILayout = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
     if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (calculateLayout != null) __obj.updateDynamic("calculateLayout")(calculateLayout)
-    if (calculateMajorTicks != null) __obj.updateDynamic("calculateMajorTicks")(calculateMajorTicks)
-    if (calculateMinorTicks != null) __obj.updateDynamic("calculateMinorTicks")(calculateMinorTicks)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (calculateLayout != null) __obj.updateDynamic("calculateLayout")(js.Any.fromFunction1(calculateLayout))
+    if (calculateMajorTicks != null) __obj.updateDynamic("calculateMajorTicks")(js.Any.fromFunction1(calculateMajorTicks))
+    if (calculateMinorTicks != null) __obj.updateDynamic("calculateMinorTicks")(js.Any.fromFunction1(calculateMinorTicks))
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getAxis != null) __obj.updateDynamic("getAxis")(getAxis)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getAxis != null) __obj.updateDynamic("getAxis")(js.Any.fromFunction0(getAxis))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
-    if (processData != null) __obj.updateDynamic("processData")(processData)
+    if (processData != null) __obj.updateDynamic("processData")(js.Any.fromFunction1(processData))
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setAxis != null) __obj.updateDynamic("setAxis")(setAxis)
+    if (setAxis != null) __obj.updateDynamic("setAxis")(js.Any.fromFunction1(setAxis))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
-    if (snapEnds != null) __obj.updateDynamic("snapEnds")(snapEnds)
+    if (snapEnds != null) __obj.updateDynamic("snapEnds")(js.Any.fromFunction4(snapEnds))
     if (statics != null) __obj.updateDynamic("statics")(statics)
-    if (trimByRange != null) __obj.updateDynamic("trimByRange")(trimByRange)
+    if (trimByRange != null) __obj.updateDynamic("trimByRange")(js.Any.fromFunction4(trimByRange))
     if (uses != null) __obj.updateDynamic("uses")(uses)
     __obj.asInstanceOf[ILayout]
   }

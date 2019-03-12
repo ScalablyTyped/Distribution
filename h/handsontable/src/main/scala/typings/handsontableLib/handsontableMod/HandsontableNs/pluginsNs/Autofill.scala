@@ -18,28 +18,28 @@ trait Autofill extends Base {
 object Autofill {
   @scala.inline
   def apply(
-    addHook: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit],
+    addHook: (java.lang.String, js.Function0[scala.Unit]) => scala.Unit,
     addingStarted: scala.Boolean,
     autoInsertRow: scala.Boolean,
-    callOnPluginsReady: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    clearHooks: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
+    callOnPluginsReady: js.Function0[scala.Unit] => scala.Unit,
+    clearHooks: () => scala.Unit,
+    destroy: () => scala.Unit,
     directions: js.Array[java.lang.String],
-    disablePlugin: js.Function0[scala.Unit],
-    enablePlugin: js.Function0[scala.Unit],
+    disablePlugin: () => scala.Unit,
+    enablePlugin: () => scala.Unit,
     enabled: scala.Boolean,
     eventManager: EventManager,
     handleDraggedCells: scala.Double,
-    init: js.Function0[scala.Unit],
+    init: () => scala.Unit,
     initialized: scala.Boolean,
     isPluginsReady: scala.Boolean,
     mouseDownOnCellCorner: scala.Boolean,
     mouseDragOutside: scala.Boolean,
     pluginName: java.lang.String,
     pluginsInitializedCallback: js.Array[_],
-    removeHook: js.Function1[java.lang.String, scala.Unit]
+    removeHook: java.lang.String => scala.Unit
   ): Autofill = {
-    val __obj = js.Dynamic.literal(addHook = addHook, addingStarted = addingStarted, autoInsertRow = autoInsertRow, callOnPluginsReady = callOnPluginsReady, clearHooks = clearHooks, destroy = destroy, directions = directions, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, eventManager = eventManager, handleDraggedCells = handleDraggedCells, init = init, initialized = initialized, isPluginsReady = isPluginsReady, mouseDownOnCellCorner = mouseDownOnCellCorner, mouseDragOutside = mouseDragOutside, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook)
+    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), addingStarted = addingStarted, autoInsertRow = autoInsertRow, callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), destroy = js.Any.fromFunction0(destroy), directions = directions, disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, eventManager = eventManager, handleDraggedCells = handleDraggedCells, init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, mouseDownOnCellCorner = mouseDownOnCellCorner, mouseDragOutside = mouseDragOutside, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = js.Any.fromFunction1(removeHook))
   
     __obj.asInstanceOf[Autofill]
   }

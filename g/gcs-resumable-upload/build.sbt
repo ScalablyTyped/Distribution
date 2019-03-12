@@ -1,37 +1,37 @@
 organization := "org.scalablytyped"
 name := "gcs-resumable-upload"
-version := "0.14.1-cf73e8"
+version := "0.14.1-ae3356"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "abort-controller" % "2.0.3-85087a",
-  "org.scalablytyped" %%% "base64-js" % "1.2-dt-20180214Z-c05865",
-  "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-197130",
-  "org.scalablytyped" %%% "configstore" % "4.0-dt-20181202Z-8611a3",
-  "org.scalablytyped" %%% "duplexify" % "3.6-dt-20181030Z-d46223",
-  "org.scalablytyped" %%% "event-target-shim" % "5.0.1-f65764",
-  "org.scalablytyped" %%% "extend" % "3.0-dt-20190212Z-11c3fe",
-  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-e66f03",
-  "org.scalablytyped" %%% "gaxios" % "1.8.2-7fa3d1",
-  "org.scalablytyped" %%% "gcp-metadata" % "0.9.3-52f592",
-  "org.scalablytyped" %%% "google-auth-library" % "3.1.0-8e7e4a",
-  "org.scalablytyped" %%% "google-p12-pem" % "1.0.3-763ac2",
-  "org.scalablytyped" %%% "gtoken" % "2.3.2-3005a4",
-  "org.scalablytyped" %%% "jws" % "3.2-dt-20190131Z-25c961",
-  "org.scalablytyped" %%% "lru-cache" % "5.1-dt-20190222Z-c41785",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-5cf9d4",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190307Z-7720a8",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-95f41a",
-  "org.scalablytyped" %%% "node-forge" % "0.7.6-dt-20190130Z-8c8d6d",
-  "org.scalablytyped" %%% "pify" % "3.0.0-dt-20180501Z-9a0452",
-  "org.scalablytyped" %%% "pumpify" % "1.4-dt-20181017Z-3db940",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-21f55d",
-  "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-cfbe1c",
-  "org.scalablytyped" %%% "std" % "3.3-05be79",
-  "org.scalablytyped" %%% "stream-events" % "1.0.5-6b3621",
-  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-3a715e")
+  "org.scalablytyped" %%% "abort-controller" % "2.0.3-5961d3",
+  "org.scalablytyped" %%% "base64-js" % "1.2-dt-20180214Z-645745",
+  "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-768261",
+  "org.scalablytyped" %%% "configstore" % "4.0-dt-20181202Z-7b12ec",
+  "org.scalablytyped" %%% "duplexify" % "3.6-dt-20181030Z-51a776",
+  "org.scalablytyped" %%% "event-target-shim" % "5.0.1-439abd",
+  "org.scalablytyped" %%% "extend" % "3.0-dt-20190212Z-b3669a",
+  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-696f06",
+  "org.scalablytyped" %%% "gaxios" % "1.8.2-ae1173",
+  "org.scalablytyped" %%% "gcp-metadata" % "0.9.3-06456c",
+  "org.scalablytyped" %%% "google-auth-library" % "3.1.0-95f0ab",
+  "org.scalablytyped" %%% "google-p12-pem" % "1.0.3-3d7809",
+  "org.scalablytyped" %%% "gtoken" % "2.3.2-357a1a",
+  "org.scalablytyped" %%% "jws" % "3.2-dt-20190131Z-cc3cfb",
+  "org.scalablytyped" %%% "lru-cache" % "5.1-dt-20190222Z-7f28fe",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-fcf6a3",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190311Z-8b4969",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-e0cf78",
+  "org.scalablytyped" %%% "node-forge" % "0.7.6-dt-20190130Z-d94c28",
+  "org.scalablytyped" %%% "pify" % "3.0.0-dt-20180501Z-937816",
+  "org.scalablytyped" %%% "pumpify" % "1.4-dt-20181017Z-36451c",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-1a0420",
+  "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-cc5b51",
+  "org.scalablytyped" %%% "std" % "3.3-ec2942",
+  "org.scalablytyped" %%% "stream-events" % "1.0.5-32b845",
+  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-0cc572")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

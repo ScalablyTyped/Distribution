@@ -41,7 +41,7 @@ object ^ extends js.Object {
   def last[T](): js.UndefOr[T] = js.native
   def last[T](iterable: js.Array[T]): js.UndefOr[T] = js.native
   def last[T](iterable: stdLib.Iterable[T]): js.UndefOr[T] = js.native
-  def mapFromObject[T](`object`: grammarkdownLib.distCoreMod.DictionaryLike[T]): stdLib.Map[java.lang.String, T] = js.native
+  def mapFromObject[T](`object`: DictionaryLike[T]): stdLib.Map[java.lang.String, T] = js.native
   def mapSet[K, V](map: stdLib.Map[K, V], key: K, value: V): V = js.native
   def mapSet[K /* <: js.Object */, V](map: stdLib.WeakMap[K, V], key: K, value: V): V = js.native
   def only[T](): js.UndefOr[T] = js.native

@@ -63,24 +63,12 @@ trait TeachersResource extends js.Object {
 object TeachersResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Teacher]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Teacher]
-    ],
-    list: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListTeachersResponse]
-    ]
+    create: gapiDotClientDotClassroomLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Teacher],
+    delete: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdFields => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdFields => gapiDotClientLib.gapiNs.clientNs.Request[Teacher],
+    list: gapiDotClientDotClassroomLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[ListTeachersResponse]
   ): TeachersResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[TeachersResource]
   }

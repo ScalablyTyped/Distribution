@@ -14,11 +14,11 @@ trait IParentElement extends js.Object {
 object IParentElement {
   @scala.inline
   def apply(
-    addElement: js.Function2[IElement, scala.Double, js.Any],
+    addElement: (IElement, scala.Double) => js.Any,
     isReadOnly: scala.Boolean,
-    removeElement: js.Function1[IElement, scala.Boolean]
+    removeElement: IElement => scala.Boolean
   ): IParentElement = {
-    val __obj = js.Dynamic.literal(addElement = addElement, isReadOnly = isReadOnly, removeElement = removeElement)
+    val __obj = js.Dynamic.literal(addElement = js.Any.fromFunction2(addElement), isReadOnly = isReadOnly, removeElement = js.Any.fromFunction1(removeElement))
   
     __obj.asInstanceOf[IParentElement]
   }

@@ -29,16 +29,16 @@ trait XStreamListener
 object XStreamListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    closed: js.Function0[scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    error: js.Function1[js.Any, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    started: js.Function0[scala.Unit],
-    terminated: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    closed: () => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    error: js.Any => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    started: () => scala.Unit,
+    terminated: () => scala.Unit
   ): XStreamListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, closed = closed, disposing = disposing, error = error, queryInterface = queryInterface, release = release, started = started, terminated = terminated)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), closed = js.Any.fromFunction0(closed), disposing = js.Any.fromFunction1(disposing), error = js.Any.fromFunction1(error), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), started = js.Any.fromFunction0(started), terminated = js.Any.fromFunction0(terminated))
   
     __obj.asInstanceOf[XStreamListener]
   }

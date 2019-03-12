@@ -189,43 +189,22 @@ trait IWebElement extends js.Object {
 object IWebElement {
   @scala.inline
   def apply(
-    clear: js.Function0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]],
-    click: js.Function0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]],
-    getAttribute: js.Function1[
-      java.lang.String, 
-      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String]
-    ],
-    getCssValue: js.Function1[
-      java.lang.String, 
-      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String]
-    ],
-    getId: js.Function0[
-      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[IWebElementId]
-    ],
-    getLocation: js.Function0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[ILocation]],
-    getSize: js.Function0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[ISize]],
-    getTagName: js.Function0[
-      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String]
-    ],
-    getText: js.Function0[
-      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String]
-    ],
-    isDisplayed: js.Function0[
-      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean]
-    ],
-    isEnabled: js.Function0[
-      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean]
-    ],
-    isSelected: js.Function0[
-      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean]
-    ],
-    sendKeys: js.Function1[
-      /* repeated */ scala.Double | java.lang.String | (seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String | scala.Double]), 
-      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]
-    ],
-    submit: js.Function0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]]
+    clear: () => seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit],
+    click: () => seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit],
+    getAttribute: java.lang.String => seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String],
+    getCssValue: java.lang.String => seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String],
+    getId: () => seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[IWebElementId],
+    getLocation: () => seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[ILocation],
+    getSize: () => seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[ISize],
+    getTagName: () => seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String],
+    getText: () => seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String],
+    isDisplayed: () => seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean],
+    isEnabled: () => seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean],
+    isSelected: () => seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean],
+    sendKeys: /* repeated */ scala.Double | java.lang.String | (seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String | scala.Double]) => seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit],
+    submit: () => seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]
   ): IWebElement = {
-    val __obj = js.Dynamic.literal(clear = clear, click = click, getAttribute = getAttribute, getCssValue = getCssValue, getId = getId, getLocation = getLocation, getSize = getSize, getTagName = getTagName, getText = getText, isDisplayed = isDisplayed, isEnabled = isEnabled, isSelected = isSelected, sendKeys = sendKeys, submit = submit)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), click = js.Any.fromFunction0(click), getAttribute = js.Any.fromFunction1(getAttribute), getCssValue = js.Any.fromFunction1(getCssValue), getId = js.Any.fromFunction0(getId), getLocation = js.Any.fromFunction0(getLocation), getSize = js.Any.fromFunction0(getSize), getTagName = js.Any.fromFunction0(getTagName), getText = js.Any.fromFunction0(getText), isDisplayed = js.Any.fromFunction0(isDisplayed), isEnabled = js.Any.fromFunction0(isEnabled), isSelected = js.Any.fromFunction0(isSelected), sendKeys = js.Any.fromFunction1(sendKeys), submit = js.Any.fromFunction0(submit))
   
     __obj.asInstanceOf[IWebElement]
   }

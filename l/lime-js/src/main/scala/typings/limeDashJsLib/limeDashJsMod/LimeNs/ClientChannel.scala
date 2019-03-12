@@ -20,30 +20,30 @@ trait ClientChannel extends Channel {
 object ClientChannel {
   @scala.inline
   def apply(
-    authenticateSession: js.Function3[java.lang.String, Authentication, java.lang.String, scala.Unit],
+    authenticateSession: (java.lang.String, Authentication, java.lang.String) => scala.Unit,
     localNode: java.lang.String,
-    negotiateSession: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    onCommand: js.Function1[Command, scala.Unit],
-    onMessage: js.Function1[Message, scala.Unit],
-    onNotification: js.Function1[Notification, scala.Unit],
-    onSession: js.Function1[Session, scala.Unit],
-    onSessionAuthenticating: js.Function1[Session, scala.Unit],
-    onSessionEstablished: js.Function1[Session, scala.Unit],
-    onSessionFailed: js.Function1[Session, scala.Unit],
-    onSessionFinished: js.Function1[Session, scala.Unit],
-    onSessionNegotiating: js.Function1[Session, scala.Unit],
+    negotiateSession: (java.lang.String, java.lang.String) => scala.Unit,
+    onCommand: Command => scala.Unit,
+    onMessage: Message => scala.Unit,
+    onNotification: Notification => scala.Unit,
+    onSession: Session => scala.Unit,
+    onSessionAuthenticating: Session => scala.Unit,
+    onSessionEstablished: Session => scala.Unit,
+    onSessionFailed: Session => scala.Unit,
+    onSessionFinished: Session => scala.Unit,
+    onSessionNegotiating: Session => scala.Unit,
     remoteNode: java.lang.String,
-    sendCommand: js.Function1[Command, scala.Unit],
-    sendFinishingSession: js.Function0[scala.Unit],
-    sendMessage: js.Function1[Message, scala.Unit],
-    sendNotification: js.Function1[Notification, scala.Unit],
-    sendSession: js.Function1[Session, scala.Unit],
+    sendCommand: Command => scala.Unit,
+    sendFinishingSession: () => scala.Unit,
+    sendMessage: Message => scala.Unit,
+    sendNotification: Notification => scala.Unit,
+    sendSession: Session => scala.Unit,
     sessionId: java.lang.String,
-    startNewSession: js.Function0[scala.Unit],
+    startNewSession: () => scala.Unit,
     state: java.lang.String,
     transport: Transport
   ): ClientChannel = {
-    val __obj = js.Dynamic.literal(authenticateSession = authenticateSession, localNode = localNode, negotiateSession = negotiateSession, onCommand = onCommand, onMessage = onMessage, onNotification = onNotification, onSession = onSession, onSessionAuthenticating = onSessionAuthenticating, onSessionEstablished = onSessionEstablished, onSessionFailed = onSessionFailed, onSessionFinished = onSessionFinished, onSessionNegotiating = onSessionNegotiating, remoteNode = remoteNode, sendCommand = sendCommand, sendFinishingSession = sendFinishingSession, sendMessage = sendMessage, sendNotification = sendNotification, sendSession = sendSession, sessionId = sessionId, startNewSession = startNewSession, state = state, transport = transport)
+    val __obj = js.Dynamic.literal(authenticateSession = js.Any.fromFunction3(authenticateSession), localNode = localNode, negotiateSession = js.Any.fromFunction2(negotiateSession), onCommand = js.Any.fromFunction1(onCommand), onMessage = js.Any.fromFunction1(onMessage), onNotification = js.Any.fromFunction1(onNotification), onSession = js.Any.fromFunction1(onSession), onSessionAuthenticating = js.Any.fromFunction1(onSessionAuthenticating), onSessionEstablished = js.Any.fromFunction1(onSessionEstablished), onSessionFailed = js.Any.fromFunction1(onSessionFailed), onSessionFinished = js.Any.fromFunction1(onSessionFinished), onSessionNegotiating = js.Any.fromFunction1(onSessionNegotiating), remoteNode = remoteNode, sendCommand = js.Any.fromFunction1(sendCommand), sendFinishingSession = js.Any.fromFunction0(sendFinishingSession), sendMessage = js.Any.fromFunction1(sendMessage), sendNotification = js.Any.fromFunction1(sendNotification), sendSession = js.Any.fromFunction1(sendSession), sessionId = sessionId, startNewSession = js.Any.fromFunction0(startNewSession), state = state, transport = transport)
   
     __obj.asInstanceOf[ClientChannel]
   }

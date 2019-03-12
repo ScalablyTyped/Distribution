@@ -57,17 +57,17 @@ trait RegexpFilter extends Filter {
 object RegexpFilter {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cache: js.Function1[scala.Boolean, RegexpFilter],
-    cacheKey: js.Function1[java.lang.String, RegexpFilter],
-    field: js.Function1[java.lang.String, RegexpFilter],
-    flags: js.Function1[java.lang.String, RegexpFilter],
-    flagsValue: js.Function1[java.lang.String, RegexpFilter],
-    name: js.Function1[java.lang.String, RegexpFilter],
-    toJSON: js.Function0[RegexpFilter],
-    value: js.Function1[java.lang.String, RegexpFilter]
+    _type: () => java.lang.String,
+    cache: scala.Boolean => RegexpFilter,
+    cacheKey: java.lang.String => RegexpFilter,
+    field: java.lang.String => RegexpFilter,
+    flags: java.lang.String => RegexpFilter,
+    flagsValue: java.lang.String => RegexpFilter,
+    name: java.lang.String => RegexpFilter,
+    toJSON: () => RegexpFilter,
+    value: java.lang.String => RegexpFilter
   ): RegexpFilter = {
-    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, field = field, flags = flags, flagsValue = flagsValue, name = name, toJSON = toJSON, value = value)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), field = js.Any.fromFunction1(field), flags = js.Any.fromFunction1(flags), flagsValue = js.Any.fromFunction1(flagsValue), name = js.Any.fromFunction1(name), toJSON = js.Any.fromFunction0(toJSON), value = js.Any.fromFunction1(value))
   
     __obj.asInstanceOf[RegexpFilter]
   }

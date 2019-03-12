@@ -16,11 +16,11 @@ object ICallExpression {
     _end: scala.Double,
     _start: scala.Double,
     argumentList: ArgumentList,
-    end: js.Function0[scala.Double],
+    end: () => scala.Double,
     expression: AST,
-    start: js.Function0[scala.Double]
+    start: () => scala.Double
   ): ICallExpression = {
-    val __obj = js.Dynamic.literal(_end = _end, _start = _start, argumentList = argumentList, end = end, expression = expression, start = start)
+    val __obj = js.Dynamic.literal(_end = _end, _start = _start, argumentList = argumentList, end = js.Any.fromFunction0(end), expression = expression, start = js.Any.fromFunction0(start))
   
     __obj.asInstanceOf[ICallExpression]
   }

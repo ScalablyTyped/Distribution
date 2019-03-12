@@ -40,25 +40,13 @@ object ScaleProps {
     friction: scala.Int | scala.Double = null,
     hitSlop: reactDashNativeLib.reactDashNativeMod.Insets = null,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
-    onAccessibilityTap: js.Function0[scala.Unit] = null,
-    onLayout: js.Function1[/* event */ reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent, scala.Unit] = null,
-    onLongPress: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onMagicTap: js.Function0[scala.Unit] = null,
-    onPress: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onPressIn: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onPressOut: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
+    onAccessibilityTap: () => scala.Unit = null,
+    onLayout: /* event */ reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent => scala.Unit = null,
+    onLongPress: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onMagicTap: () => scala.Unit = null,
+    onPress: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onPressIn: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onPressOut: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
     pressInFriction: scala.Int | scala.Double = null,
     pressInTension: scala.Int | scala.Double = null,
     pressOutFriction: scala.Int | scala.Double = null,
@@ -89,13 +77,13 @@ object ScaleProps {
     if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(onAccessibilityTap)
-    if (onLayout != null) __obj.updateDynamic("onLayout")(onLayout)
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(onMagicTap)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
-    if (onPressIn != null) __obj.updateDynamic("onPressIn")(onPressIn)
-    if (onPressOut != null) __obj.updateDynamic("onPressOut")(onPressOut)
+    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
+    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
+    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
+    if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction1(onPressIn))
+    if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction1(onPressOut))
     if (pressInFriction != null) __obj.updateDynamic("pressInFriction")(pressInFriction.asInstanceOf[js.Any])
     if (pressInTension != null) __obj.updateDynamic("pressInTension")(pressInTension.asInstanceOf[js.Any])
     if (pressOutFriction != null) __obj.updateDynamic("pressOutFriction")(pressOutFriction.asInstanceOf[js.Any])

@@ -16,12 +16,12 @@ trait XDateCategories extends js.Object {
     * retrieves the date values if the category x-axis id a date axis
     * @returns a sequence of doubles representing dates.
     */
-  var DateCategories: activexDashInteropLib.SafeArray[scala.Double]
+  var DateCategories: stdLib.SafeArray[scala.Double]
   /**
     * retrieves the date values if the category x-axis id a date axis
     * @returns a sequence of doubles representing dates.
     */
-  def getDateCategories(): activexDashInteropLib.SafeArray[scala.Double]
+  def getDateCategories(): stdLib.SafeArray[scala.Double]
   /**
     * sets dates as categories
     * @param rDates a sequence of sequences of doubles representing dates.
@@ -32,11 +32,11 @@ trait XDateCategories extends js.Object {
 object XDateCategories {
   @scala.inline
   def apply(
-    DateCategories: activexDashInteropLib.SafeArray[scala.Double],
-    getDateCategories: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    setDateCategories: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
+    DateCategories: stdLib.SafeArray[scala.Double],
+    getDateCategories: () => stdLib.SafeArray[scala.Double],
+    setDateCategories: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => scala.Unit
   ): XDateCategories = {
-    val __obj = js.Dynamic.literal(DateCategories = DateCategories, getDateCategories = getDateCategories, setDateCategories = setDateCategories)
+    val __obj = js.Dynamic.literal(DateCategories = DateCategories, getDateCategories = js.Any.fromFunction0(getDateCategories), setDateCategories = js.Any.fromFunction1(setDateCategories))
   
     __obj.asInstanceOf[XDateCategories]
   }

@@ -27,7 +27,7 @@ object PagerOptions {
   def apply(
     autoBind: js.UndefOr[scala.Boolean] = js.undefined,
     buttonCount: scala.Int | scala.Double = null,
-    change: js.Function1[/* e */ PagerChangeEvent, scala.Unit] = null,
+    change: /* e */ PagerChangeEvent => scala.Unit = null,
     dataSource: js.Any | kendoDashUiLib.kendoNs.dataNs.DataSource = null,
     info: js.UndefOr[scala.Boolean] = js.undefined,
     input: js.UndefOr[scala.Boolean] = js.undefined,
@@ -43,7 +43,7 @@ object PagerOptions {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind)
     if (buttonCount != null) __obj.updateDynamic("buttonCount")(buttonCount.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (!js.isUndefined(info)) __obj.updateDynamic("info")(info)
     if (!js.isUndefined(input)) __obj.updateDynamic("input")(input)

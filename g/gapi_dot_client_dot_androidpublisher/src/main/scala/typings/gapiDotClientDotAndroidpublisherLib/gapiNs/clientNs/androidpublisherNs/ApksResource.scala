@@ -18,20 +18,11 @@ trait ApksResource extends js.Object {
 object ApksResource {
   @scala.inline
   def apply(
-    addexternallyhosted: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ApksAddExternallyHostedResponse]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ApksListResponse]
-    ],
-    upload: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Apk]
-    ]
+    addexternallyhosted: gapiDotClientDotAndroidpublisherLib.Anon_AltEditId => gapiDotClientLib.gapiNs.clientNs.Request[ApksAddExternallyHostedResponse],
+    list: gapiDotClientDotAndroidpublisherLib.Anon_AltEditId => gapiDotClientLib.gapiNs.clientNs.Request[ApksListResponse],
+    upload: gapiDotClientDotAndroidpublisherLib.Anon_AltEditId => gapiDotClientLib.gapiNs.clientNs.Request[Apk]
   ): ApksResource = {
-    val __obj = js.Dynamic.literal(addexternallyhosted = addexternallyhosted, list = list, upload = upload)
+    val __obj = js.Dynamic.literal(addexternallyhosted = js.Any.fromFunction1(addexternallyhosted), list = js.Any.fromFunction1(list), upload = js.Any.fromFunction1(upload))
   
     __obj.asInstanceOf[ApksResource]
   }

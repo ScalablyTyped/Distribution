@@ -57,22 +57,12 @@ trait ImageStoreStatic extends js.Object {
 object ImageStoreStatic {
   @scala.inline
   def apply(
-    addImageFromBase64: js.Function3[
-      java.lang.String, 
-      js.Function1[/* uri */ java.lang.String, scala.Unit], 
-      js.Function1[/* error */ js.Any, scala.Unit], 
-      scala.Unit
-    ],
-    getBase64ForTag: js.Function3[
-      java.lang.String, 
-      js.Function1[/* base64ImageData */ java.lang.String, scala.Unit], 
-      js.Function1[/* error */ js.Any, scala.Unit], 
-      scala.Unit
-    ],
-    hasImageForTag: js.Function2[java.lang.String, js.Function1[/* hasImage */ scala.Boolean, scala.Unit], scala.Unit],
-    removeImageForTag: js.Function1[java.lang.String, scala.Unit]
+    addImageFromBase64: (java.lang.String, js.Function1[/* uri */ java.lang.String, scala.Unit], js.Function1[/* error */ js.Any, scala.Unit]) => scala.Unit,
+    getBase64ForTag: (java.lang.String, js.Function1[/* base64ImageData */ java.lang.String, scala.Unit], js.Function1[/* error */ js.Any, scala.Unit]) => scala.Unit,
+    hasImageForTag: (java.lang.String, js.Function1[/* hasImage */ scala.Boolean, scala.Unit]) => scala.Unit,
+    removeImageForTag: java.lang.String => scala.Unit
   ): ImageStoreStatic = {
-    val __obj = js.Dynamic.literal(addImageFromBase64 = addImageFromBase64, getBase64ForTag = getBase64ForTag, hasImageForTag = hasImageForTag, removeImageForTag = removeImageForTag)
+    val __obj = js.Dynamic.literal(addImageFromBase64 = js.Any.fromFunction3(addImageFromBase64), getBase64ForTag = js.Any.fromFunction3(getBase64ForTag), hasImageForTag = js.Any.fromFunction2(hasImageForTag), removeImageForTag = js.Any.fromFunction1(removeImageForTag))
   
     __obj.asInstanceOf[ImageStoreStatic]
   }

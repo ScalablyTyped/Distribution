@@ -14,13 +14,9 @@ object Contravariant1 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS */](
     URI: F,
-    contramap: js.Function2[
-      fpDashTsLib.libHKTMod.Type[F, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any]
-    ]
+    contramap: (fpDashTsLib.libHKTMod.Type[F, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type[F, js.Any]
   ): Contravariant1[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], contramap = contramap)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], contramap = js.Any.fromFunction2(contramap))
   
     __obj.asInstanceOf[Contravariant1[F]]
   }

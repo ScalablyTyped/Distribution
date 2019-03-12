@@ -14,12 +14,12 @@ trait ThenRet extends js.Object {
 object ThenRet {
   @scala.inline
   def apply(
-    `else`: js.Function1[js.Any, TernaryOperation],
+    `else`: js.Any => TernaryOperation,
     else_ : TernaryOperation,
-    otherwise: js.Function1[js.Any, TernaryOperation]
+    otherwise: js.Any => TernaryOperation
   ): ThenRet = {
-    val __obj = js.Dynamic.literal(else_ = else_, otherwise = otherwise)
-    __obj.updateDynamic("else")(`else`)
+    val __obj = js.Dynamic.literal(else_ = else_, otherwise = js.Any.fromFunction1(otherwise))
+    __obj.updateDynamic("else")(js.Any.fromFunction1(`else`))
     __obj.asInstanceOf[ThenRet]
   }
 }

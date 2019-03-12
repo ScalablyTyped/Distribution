@@ -40,15 +40,15 @@ trait IServerConnector
 object IServerConnector {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
-    connect: js.Function2[java.lang.String, scala.Double, scala.Unit],
-    isConnected: js.Function0[scala.Boolean],
+    close: () => scala.Unit,
+    connect: (java.lang.String, scala.Double) => scala.Unit,
+    isConnected: () => scala.Boolean,
     onClose: js.Function,
     onConnect: js.Function,
-    replyData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit],
-    sendData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit]
+    replyData: samchonLib.protocolInvokeInvokeMod.Invoke => scala.Unit,
+    sendData: samchonLib.protocolInvokeInvokeMod.Invoke => scala.Unit
   ): IServerConnector = {
-    val __obj = js.Dynamic.literal(close = close, connect = connect, isConnected = isConnected, onClose = onClose, onConnect = onConnect, replyData = replyData, sendData = sendData)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), connect = js.Any.fromFunction2(connect), isConnected = js.Any.fromFunction0(isConnected), onClose = onClose, onConnect = onConnect, replyData = js.Any.fromFunction1(replyData), sendData = js.Any.fromFunction1(sendData))
   
     __obj.asInstanceOf[IServerConnector]
   }

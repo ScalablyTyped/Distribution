@@ -24,13 +24,13 @@ object XNamed {
   @scala.inline
   def apply(
     Name: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getName: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setName: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getName: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setName: java.lang.String => scala.Unit
   ): XNamed = {
-    val __obj = js.Dynamic.literal(Name = Name, acquire = acquire, getName = getName, queryInterface = queryInterface, release = release, setName = setName)
+    val __obj = js.Dynamic.literal(Name = Name, acquire = js.Any.fromFunction0(acquire), getName = js.Any.fromFunction0(getName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setName = js.Any.fromFunction1(setName))
   
     __obj.asInstanceOf[XNamed]
   }

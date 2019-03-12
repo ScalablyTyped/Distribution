@@ -1524,7 +1524,111 @@ object ServicesNameMap {
     `com.sun.star.chart.BarDiagram`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.BarDiagram,
     `com.sun.star.chart.BubbleDiagram`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.BubbleDiagram,
     `com.sun.star.chart.Chart3DBarProperties`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.Chart3DBarProperties,
-    `com.sun.star.chart.ChartArea`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartArea
+    `com.sun.star.chart.ChartArea`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartArea,
+    `com.sun.star.chart.ChartAxis`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartAxis,
+    `com.sun.star.chart.ChartAxisXSupplier`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartAxisXSupplier,
+    `com.sun.star.chart.ChartAxisYSupplier`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartAxisYSupplier,
+    `com.sun.star.chart.ChartAxisZSupplier`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartAxisZSupplier,
+    `com.sun.star.chart.ChartData`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartData,
+    `com.sun.star.chart.ChartDataArray`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartDataArray,
+    `com.sun.star.chart.ChartDataPointProperties`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartDataPointProperties,
+    `com.sun.star.chart.ChartDataRowProperties`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartDataRowProperties,
+    `com.sun.star.chart.ChartDocument`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartDocument,
+    `com.sun.star.chart.ChartGrid`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartGrid,
+    `com.sun.star.chart.ChartLegend`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartLegend,
+    `com.sun.star.chart.ChartLine`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartLine,
+    `com.sun.star.chart.ChartPieSegmentProperties`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartPieSegmentProperties,
+    `com.sun.star.chart.ChartStatistics`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartStatistics,
+    `com.sun.star.chart.ChartTableAddressSupplier`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartTableAddressSupplier,
+    `com.sun.star.chart.ChartTitle`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartTitle,
+    `com.sun.star.chart.ChartTwoAxisXSupplier`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartTwoAxisXSupplier,
+    `com.sun.star.chart.ChartTwoAxisYSupplier`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartTwoAxisYSupplier,
+    `com.sun.star.chart.Diagram`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.Diagram,
+    `com.sun.star.chart.Dim3DDiagram`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.Dim3DDiagram,
+    `com.sun.star.chart.DonutDiagram`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.DonutDiagram,
+    `com.sun.star.chart.FilledNetDiagram`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.FilledNetDiagram,
+    `com.sun.star.chart.LineDiagram`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.LineDiagram,
+    `com.sun.star.chart.NetDiagram`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.NetDiagram,
+    `com.sun.star.chart.PieDiagram`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.PieDiagram,
+    `com.sun.star.chart.StackableDiagram`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.StackableDiagram,
+    `com.sun.star.chart.StockDiagram`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.StockDiagram,
+    `com.sun.star.chart.XYDiagram`: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.XYDiagram,
+    `com.sun.star.chart2.Axis`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.Axis,
+    `com.sun.star.chart2.CandleStickChartType`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.CandleStickChartType,
+    `com.sun.star.chart2.CartesianCoordinateSystem2d`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.CartesianCoordinateSystem2d,
+    `com.sun.star.chart2.CartesianCoordinateSystem3d`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.CartesianCoordinateSystem3d,
+    `com.sun.star.chart2.ChartDocument`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.ChartDocument,
+    `com.sun.star.chart2.ChartDocumentWrapper`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.ChartDocumentWrapper,
+    `com.sun.star.chart2.ChartType`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.ChartType,
+    `com.sun.star.chart2.ChartTypeManager`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.ChartTypeManager,
+    `com.sun.star.chart2.ChartTypeTemplate`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.ChartTypeTemplate,
+    `com.sun.star.chart2.CoordinateSystem`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.CoordinateSystem,
+    `com.sun.star.chart2.CoordinateSystemType`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.CoordinateSystemType,
+    `com.sun.star.chart2.DataPoint`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.DataPoint,
+    `com.sun.star.chart2.DataPointProperties`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.DataPointProperties,
+    `com.sun.star.chart2.DataSeries`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.DataSeries,
+    `com.sun.star.chart2.Diagram`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.Diagram,
+    `com.sun.star.chart2.ErrorBar`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.ErrorBar,
+    `com.sun.star.chart2.ExponentialRegressionCurve`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.ExponentialRegressionCurve,
+    `com.sun.star.chart2.ExponentialScaling`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.ExponentialScaling,
+    `com.sun.star.chart2.FormattedString`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.FormattedString,
+    `com.sun.star.chart2.GridProperties`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.GridProperties,
+    `com.sun.star.chart2.Legend`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.Legend,
+    `com.sun.star.chart2.LinearRegressionCurve`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.LinearRegressionCurve,
+    `com.sun.star.chart2.LinearScaling`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.LinearScaling,
+    `com.sun.star.chart2.LogarithmicRegressionCurve`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.LogarithmicRegressionCurve,
+    `com.sun.star.chart2.LogarithmicScaling`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.LogarithmicScaling,
+    `com.sun.star.chart2.LogicTargetModel`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.LogicTargetModel,
+    `com.sun.star.chart2.MovingAverageRegressionCurve`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.MovingAverageRegressionCurve,
+    `com.sun.star.chart2.PolarCoordinateSystem2d`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.PolarCoordinateSystem2d,
+    `com.sun.star.chart2.PolarCoordinateSystem3d`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.PolarCoordinateSystem3d,
+    `com.sun.star.chart2.PolynomialRegressionCurve`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.PolynomialRegressionCurve,
+    `com.sun.star.chart2.PotentialRegressionCurve`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.PotentialRegressionCurve,
+    `com.sun.star.chart2.PowerScaling`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.PowerScaling,
+    `com.sun.star.chart2.PropertyPool`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.PropertyPool,
+    `com.sun.star.chart2.RegressionCurve`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.RegressionCurve,
+    `com.sun.star.chart2.RegressionCurveEquation`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.RegressionCurveEquation,
+    `com.sun.star.chart2.RegressionEquation`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.RegressionEquation,
+    `com.sun.star.chart2.Scaling`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.Scaling,
+    `com.sun.star.chart2.StandardDiagramCreationParameters`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.StandardDiagramCreationParameters,
+    `com.sun.star.chart2.Title`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.Title,
+    `com.sun.star.chart2.data.DataFilter`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.DataFilter,
+    `com.sun.star.chart2.data.DataProvider`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.DataProvider,
+    `com.sun.star.chart2.data.DataSequence`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.DataSequence,
+    `com.sun.star.chart2.data.DataSink`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.DataSink,
+    `com.sun.star.chart2.data.DataSource`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.DataSource,
+    `com.sun.star.chart2.data.DatabaseDataProvider`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.DatabaseDataProvider,
+    `com.sun.star.chart2.data.LabeledDataSequence`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.LabeledDataSequence,
+    `com.sun.star.chart2.data.RangeHighlightListener`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.RangeHighlightListener,
+    `com.sun.star.chart2.data.RangeHighlighter`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.RangeHighlighter,
+    `com.sun.star.chart2.data.TabularDataProviderArguments`: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.TabularDataProviderArguments,
+    `com.sun.star.configuration.AccessRootElement`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.AccessRootElement,
+    `com.sun.star.configuration.AdministrationProvider`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.AdministrationProvider,
+    `com.sun.star.configuration.ConfigurationAccess`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.ConfigurationAccess,
+    `com.sun.star.configuration.ConfigurationProvider`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.ConfigurationProvider,
+    `com.sun.star.configuration.ConfigurationRegistry`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.ConfigurationRegistry,
+    `com.sun.star.configuration.ConfigurationUpdateAccess`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.ConfigurationUpdateAccess,
+    `com.sun.star.configuration.DefaultProvider`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.DefaultProvider,
+    `com.sun.star.configuration.GroupAccess`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.GroupAccess,
+    `com.sun.star.configuration.GroupElement`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.GroupElement,
+    `com.sun.star.configuration.GroupUpdate`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.GroupUpdate,
+    `com.sun.star.configuration.HierarchyAccess`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.HierarchyAccess,
+    `com.sun.star.configuration.HierarchyElement`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.HierarchyElement,
+    `com.sun.star.configuration.PropertyHierarchy`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.PropertyHierarchy,
+    `com.sun.star.configuration.ReadOnlyAccess`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.ReadOnlyAccess,
+    `com.sun.star.configuration.ReadWriteAccess`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.ReadWriteAccess,
+    `com.sun.star.configuration.SetAccess`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.SetAccess,
+    `com.sun.star.configuration.SetElement`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.SetElement,
+    `com.sun.star.configuration.SetUpdate`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.SetUpdate,
+    `com.sun.star.configuration.SimpleSetAccess`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.SimpleSetAccess,
+    `com.sun.star.configuration.SimpleSetUpdate`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.SimpleSetUpdate,
+    `com.sun.star.configuration.UpdateRootElement`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.UpdateRootElement,
+    `com.sun.star.configuration.backend.Backend`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.backendNs.Backend,
+    `com.sun.star.configuration.backend.BackendAdapter`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.backendNs.BackendAdapter,
+    `com.sun.star.configuration.backend.CopyImporter`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.backendNs.CopyImporter,
+    `com.sun.star.configuration.backend.DataImporter`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.backendNs.DataImporter,
+    `com.sun.star.configuration.backend.DefaultBackend`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.backendNs.DefaultBackend,
+    `com.sun.star.configuration.backend.HierarchyBrowser`: activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.backendNs.HierarchyBrowser
   ): ServicesNameMap = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("com.sun.star.accessibility.Accessible")(`com.sun.star.accessibility.Accessible`)
@@ -1677,6 +1781,110 @@ object ServicesNameMap {
     __obj.updateDynamic("com.sun.star.chart.BubbleDiagram")(`com.sun.star.chart.BubbleDiagram`)
     __obj.updateDynamic("com.sun.star.chart.Chart3DBarProperties")(`com.sun.star.chart.Chart3DBarProperties`)
     __obj.updateDynamic("com.sun.star.chart.ChartArea")(`com.sun.star.chart.ChartArea`)
+    __obj.updateDynamic("com.sun.star.chart.ChartAxis")(`com.sun.star.chart.ChartAxis`)
+    __obj.updateDynamic("com.sun.star.chart.ChartAxisXSupplier")(`com.sun.star.chart.ChartAxisXSupplier`)
+    __obj.updateDynamic("com.sun.star.chart.ChartAxisYSupplier")(`com.sun.star.chart.ChartAxisYSupplier`)
+    __obj.updateDynamic("com.sun.star.chart.ChartAxisZSupplier")(`com.sun.star.chart.ChartAxisZSupplier`)
+    __obj.updateDynamic("com.sun.star.chart.ChartData")(`com.sun.star.chart.ChartData`)
+    __obj.updateDynamic("com.sun.star.chart.ChartDataArray")(`com.sun.star.chart.ChartDataArray`)
+    __obj.updateDynamic("com.sun.star.chart.ChartDataPointProperties")(`com.sun.star.chart.ChartDataPointProperties`)
+    __obj.updateDynamic("com.sun.star.chart.ChartDataRowProperties")(`com.sun.star.chart.ChartDataRowProperties`)
+    __obj.updateDynamic("com.sun.star.chart.ChartDocument")(`com.sun.star.chart.ChartDocument`)
+    __obj.updateDynamic("com.sun.star.chart.ChartGrid")(`com.sun.star.chart.ChartGrid`)
+    __obj.updateDynamic("com.sun.star.chart.ChartLegend")(`com.sun.star.chart.ChartLegend`)
+    __obj.updateDynamic("com.sun.star.chart.ChartLine")(`com.sun.star.chart.ChartLine`)
+    __obj.updateDynamic("com.sun.star.chart.ChartPieSegmentProperties")(`com.sun.star.chart.ChartPieSegmentProperties`)
+    __obj.updateDynamic("com.sun.star.chart.ChartStatistics")(`com.sun.star.chart.ChartStatistics`)
+    __obj.updateDynamic("com.sun.star.chart.ChartTableAddressSupplier")(`com.sun.star.chart.ChartTableAddressSupplier`)
+    __obj.updateDynamic("com.sun.star.chart.ChartTitle")(`com.sun.star.chart.ChartTitle`)
+    __obj.updateDynamic("com.sun.star.chart.ChartTwoAxisXSupplier")(`com.sun.star.chart.ChartTwoAxisXSupplier`)
+    __obj.updateDynamic("com.sun.star.chart.ChartTwoAxisYSupplier")(`com.sun.star.chart.ChartTwoAxisYSupplier`)
+    __obj.updateDynamic("com.sun.star.chart.Diagram")(`com.sun.star.chart.Diagram`)
+    __obj.updateDynamic("com.sun.star.chart.Dim3DDiagram")(`com.sun.star.chart.Dim3DDiagram`)
+    __obj.updateDynamic("com.sun.star.chart.DonutDiagram")(`com.sun.star.chart.DonutDiagram`)
+    __obj.updateDynamic("com.sun.star.chart.FilledNetDiagram")(`com.sun.star.chart.FilledNetDiagram`)
+    __obj.updateDynamic("com.sun.star.chart.LineDiagram")(`com.sun.star.chart.LineDiagram`)
+    __obj.updateDynamic("com.sun.star.chart.NetDiagram")(`com.sun.star.chart.NetDiagram`)
+    __obj.updateDynamic("com.sun.star.chart.PieDiagram")(`com.sun.star.chart.PieDiagram`)
+    __obj.updateDynamic("com.sun.star.chart.StackableDiagram")(`com.sun.star.chart.StackableDiagram`)
+    __obj.updateDynamic("com.sun.star.chart.StockDiagram")(`com.sun.star.chart.StockDiagram`)
+    __obj.updateDynamic("com.sun.star.chart.XYDiagram")(`com.sun.star.chart.XYDiagram`)
+    __obj.updateDynamic("com.sun.star.chart2.Axis")(`com.sun.star.chart2.Axis`)
+    __obj.updateDynamic("com.sun.star.chart2.CandleStickChartType")(`com.sun.star.chart2.CandleStickChartType`)
+    __obj.updateDynamic("com.sun.star.chart2.CartesianCoordinateSystem2d")(`com.sun.star.chart2.CartesianCoordinateSystem2d`)
+    __obj.updateDynamic("com.sun.star.chart2.CartesianCoordinateSystem3d")(`com.sun.star.chart2.CartesianCoordinateSystem3d`)
+    __obj.updateDynamic("com.sun.star.chart2.ChartDocument")(`com.sun.star.chart2.ChartDocument`)
+    __obj.updateDynamic("com.sun.star.chart2.ChartDocumentWrapper")(`com.sun.star.chart2.ChartDocumentWrapper`)
+    __obj.updateDynamic("com.sun.star.chart2.ChartType")(`com.sun.star.chart2.ChartType`)
+    __obj.updateDynamic("com.sun.star.chart2.ChartTypeManager")(`com.sun.star.chart2.ChartTypeManager`)
+    __obj.updateDynamic("com.sun.star.chart2.ChartTypeTemplate")(`com.sun.star.chart2.ChartTypeTemplate`)
+    __obj.updateDynamic("com.sun.star.chart2.CoordinateSystem")(`com.sun.star.chart2.CoordinateSystem`)
+    __obj.updateDynamic("com.sun.star.chart2.CoordinateSystemType")(`com.sun.star.chart2.CoordinateSystemType`)
+    __obj.updateDynamic("com.sun.star.chart2.DataPoint")(`com.sun.star.chart2.DataPoint`)
+    __obj.updateDynamic("com.sun.star.chart2.DataPointProperties")(`com.sun.star.chart2.DataPointProperties`)
+    __obj.updateDynamic("com.sun.star.chart2.DataSeries")(`com.sun.star.chart2.DataSeries`)
+    __obj.updateDynamic("com.sun.star.chart2.Diagram")(`com.sun.star.chart2.Diagram`)
+    __obj.updateDynamic("com.sun.star.chart2.ErrorBar")(`com.sun.star.chart2.ErrorBar`)
+    __obj.updateDynamic("com.sun.star.chart2.ExponentialRegressionCurve")(`com.sun.star.chart2.ExponentialRegressionCurve`)
+    __obj.updateDynamic("com.sun.star.chart2.ExponentialScaling")(`com.sun.star.chart2.ExponentialScaling`)
+    __obj.updateDynamic("com.sun.star.chart2.FormattedString")(`com.sun.star.chart2.FormattedString`)
+    __obj.updateDynamic("com.sun.star.chart2.GridProperties")(`com.sun.star.chart2.GridProperties`)
+    __obj.updateDynamic("com.sun.star.chart2.Legend")(`com.sun.star.chart2.Legend`)
+    __obj.updateDynamic("com.sun.star.chart2.LinearRegressionCurve")(`com.sun.star.chart2.LinearRegressionCurve`)
+    __obj.updateDynamic("com.sun.star.chart2.LinearScaling")(`com.sun.star.chart2.LinearScaling`)
+    __obj.updateDynamic("com.sun.star.chart2.LogarithmicRegressionCurve")(`com.sun.star.chart2.LogarithmicRegressionCurve`)
+    __obj.updateDynamic("com.sun.star.chart2.LogarithmicScaling")(`com.sun.star.chart2.LogarithmicScaling`)
+    __obj.updateDynamic("com.sun.star.chart2.LogicTargetModel")(`com.sun.star.chart2.LogicTargetModel`)
+    __obj.updateDynamic("com.sun.star.chart2.MovingAverageRegressionCurve")(`com.sun.star.chart2.MovingAverageRegressionCurve`)
+    __obj.updateDynamic("com.sun.star.chart2.PolarCoordinateSystem2d")(`com.sun.star.chart2.PolarCoordinateSystem2d`)
+    __obj.updateDynamic("com.sun.star.chart2.PolarCoordinateSystem3d")(`com.sun.star.chart2.PolarCoordinateSystem3d`)
+    __obj.updateDynamic("com.sun.star.chart2.PolynomialRegressionCurve")(`com.sun.star.chart2.PolynomialRegressionCurve`)
+    __obj.updateDynamic("com.sun.star.chart2.PotentialRegressionCurve")(`com.sun.star.chart2.PotentialRegressionCurve`)
+    __obj.updateDynamic("com.sun.star.chart2.PowerScaling")(`com.sun.star.chart2.PowerScaling`)
+    __obj.updateDynamic("com.sun.star.chart2.PropertyPool")(`com.sun.star.chart2.PropertyPool`)
+    __obj.updateDynamic("com.sun.star.chart2.RegressionCurve")(`com.sun.star.chart2.RegressionCurve`)
+    __obj.updateDynamic("com.sun.star.chart2.RegressionCurveEquation")(`com.sun.star.chart2.RegressionCurveEquation`)
+    __obj.updateDynamic("com.sun.star.chart2.RegressionEquation")(`com.sun.star.chart2.RegressionEquation`)
+    __obj.updateDynamic("com.sun.star.chart2.Scaling")(`com.sun.star.chart2.Scaling`)
+    __obj.updateDynamic("com.sun.star.chart2.StandardDiagramCreationParameters")(`com.sun.star.chart2.StandardDiagramCreationParameters`)
+    __obj.updateDynamic("com.sun.star.chart2.Title")(`com.sun.star.chart2.Title`)
+    __obj.updateDynamic("com.sun.star.chart2.data.DataFilter")(`com.sun.star.chart2.data.DataFilter`)
+    __obj.updateDynamic("com.sun.star.chart2.data.DataProvider")(`com.sun.star.chart2.data.DataProvider`)
+    __obj.updateDynamic("com.sun.star.chart2.data.DataSequence")(`com.sun.star.chart2.data.DataSequence`)
+    __obj.updateDynamic("com.sun.star.chart2.data.DataSink")(`com.sun.star.chart2.data.DataSink`)
+    __obj.updateDynamic("com.sun.star.chart2.data.DataSource")(`com.sun.star.chart2.data.DataSource`)
+    __obj.updateDynamic("com.sun.star.chart2.data.DatabaseDataProvider")(`com.sun.star.chart2.data.DatabaseDataProvider`)
+    __obj.updateDynamic("com.sun.star.chart2.data.LabeledDataSequence")(`com.sun.star.chart2.data.LabeledDataSequence`)
+    __obj.updateDynamic("com.sun.star.chart2.data.RangeHighlightListener")(`com.sun.star.chart2.data.RangeHighlightListener`)
+    __obj.updateDynamic("com.sun.star.chart2.data.RangeHighlighter")(`com.sun.star.chart2.data.RangeHighlighter`)
+    __obj.updateDynamic("com.sun.star.chart2.data.TabularDataProviderArguments")(`com.sun.star.chart2.data.TabularDataProviderArguments`)
+    __obj.updateDynamic("com.sun.star.configuration.AccessRootElement")(`com.sun.star.configuration.AccessRootElement`)
+    __obj.updateDynamic("com.sun.star.configuration.AdministrationProvider")(`com.sun.star.configuration.AdministrationProvider`)
+    __obj.updateDynamic("com.sun.star.configuration.ConfigurationAccess")(`com.sun.star.configuration.ConfigurationAccess`)
+    __obj.updateDynamic("com.sun.star.configuration.ConfigurationProvider")(`com.sun.star.configuration.ConfigurationProvider`)
+    __obj.updateDynamic("com.sun.star.configuration.ConfigurationRegistry")(`com.sun.star.configuration.ConfigurationRegistry`)
+    __obj.updateDynamic("com.sun.star.configuration.ConfigurationUpdateAccess")(`com.sun.star.configuration.ConfigurationUpdateAccess`)
+    __obj.updateDynamic("com.sun.star.configuration.DefaultProvider")(`com.sun.star.configuration.DefaultProvider`)
+    __obj.updateDynamic("com.sun.star.configuration.GroupAccess")(`com.sun.star.configuration.GroupAccess`)
+    __obj.updateDynamic("com.sun.star.configuration.GroupElement")(`com.sun.star.configuration.GroupElement`)
+    __obj.updateDynamic("com.sun.star.configuration.GroupUpdate")(`com.sun.star.configuration.GroupUpdate`)
+    __obj.updateDynamic("com.sun.star.configuration.HierarchyAccess")(`com.sun.star.configuration.HierarchyAccess`)
+    __obj.updateDynamic("com.sun.star.configuration.HierarchyElement")(`com.sun.star.configuration.HierarchyElement`)
+    __obj.updateDynamic("com.sun.star.configuration.PropertyHierarchy")(`com.sun.star.configuration.PropertyHierarchy`)
+    __obj.updateDynamic("com.sun.star.configuration.ReadOnlyAccess")(`com.sun.star.configuration.ReadOnlyAccess`)
+    __obj.updateDynamic("com.sun.star.configuration.ReadWriteAccess")(`com.sun.star.configuration.ReadWriteAccess`)
+    __obj.updateDynamic("com.sun.star.configuration.SetAccess")(`com.sun.star.configuration.SetAccess`)
+    __obj.updateDynamic("com.sun.star.configuration.SetElement")(`com.sun.star.configuration.SetElement`)
+    __obj.updateDynamic("com.sun.star.configuration.SetUpdate")(`com.sun.star.configuration.SetUpdate`)
+    __obj.updateDynamic("com.sun.star.configuration.SimpleSetAccess")(`com.sun.star.configuration.SimpleSetAccess`)
+    __obj.updateDynamic("com.sun.star.configuration.SimpleSetUpdate")(`com.sun.star.configuration.SimpleSetUpdate`)
+    __obj.updateDynamic("com.sun.star.configuration.UpdateRootElement")(`com.sun.star.configuration.UpdateRootElement`)
+    __obj.updateDynamic("com.sun.star.configuration.backend.Backend")(`com.sun.star.configuration.backend.Backend`)
+    __obj.updateDynamic("com.sun.star.configuration.backend.BackendAdapter")(`com.sun.star.configuration.backend.BackendAdapter`)
+    __obj.updateDynamic("com.sun.star.configuration.backend.CopyImporter")(`com.sun.star.configuration.backend.CopyImporter`)
+    __obj.updateDynamic("com.sun.star.configuration.backend.DataImporter")(`com.sun.star.configuration.backend.DataImporter`)
+    __obj.updateDynamic("com.sun.star.configuration.backend.DefaultBackend")(`com.sun.star.configuration.backend.DefaultBackend`)
+    __obj.updateDynamic("com.sun.star.configuration.backend.HierarchyBrowser")(`com.sun.star.configuration.backend.HierarchyBrowser`)
     __obj.asInstanceOf[ServicesNameMap]
   }
 }

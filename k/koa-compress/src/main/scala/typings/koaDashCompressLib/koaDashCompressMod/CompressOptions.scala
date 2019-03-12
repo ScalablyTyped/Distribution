@@ -22,7 +22,7 @@ object CompressOptions {
   def apply(
     chunkSize: scala.Int | scala.Double = null,
     dictionary: nodeLib.Buffer | nodeLib.NodeJSNs.TypedArray | stdLib.DataView | stdLib.ArrayBuffer = null,
-    filter: js.Function1[/* content_type */ java.lang.String, scala.Boolean] = null,
+    filter: /* content_type */ java.lang.String => scala.Boolean = null,
     finishFlush: scala.Int | scala.Double = null,
     flush: scala.Int | scala.Double = null,
     level: scala.Int | scala.Double = null,
@@ -34,7 +34,7 @@ object CompressOptions {
     val __obj = js.Dynamic.literal()
     if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
     if (dictionary != null) __obj.updateDynamic("dictionary")(dictionary.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (finishFlush != null) __obj.updateDynamic("finishFlush")(finishFlush.asInstanceOf[js.Any])
     if (flush != null) __obj.updateDynamic("flush")(flush.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])

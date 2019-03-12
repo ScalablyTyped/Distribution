@@ -66,15 +66,11 @@ trait XStorageRawAccess extends js.Object {
 object XStorageRawAccess {
   @scala.inline
   def apply(
-    getPlainRawStreamElement: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
-    getRawEncrStreamElement: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
-    insertRawEncrStreamElement: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      scala.Unit
-    ]
+    getPlainRawStreamElement: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    getRawEncrStreamElement: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    insertRawEncrStreamElement: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream) => scala.Unit
   ): XStorageRawAccess = {
-    val __obj = js.Dynamic.literal(getPlainRawStreamElement = getPlainRawStreamElement, getRawEncrStreamElement = getRawEncrStreamElement, insertRawEncrStreamElement = insertRawEncrStreamElement)
+    val __obj = js.Dynamic.literal(getPlainRawStreamElement = js.Any.fromFunction1(getPlainRawStreamElement), getRawEncrStreamElement = js.Any.fromFunction1(getRawEncrStreamElement), insertRawEncrStreamElement = js.Any.fromFunction2(insertRawEncrStreamElement))
   
     __obj.asInstanceOf[XStorageRawAccess]
   }

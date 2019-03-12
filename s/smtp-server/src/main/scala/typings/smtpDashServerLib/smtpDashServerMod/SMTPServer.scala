@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation._
 class SMTPServer ()
   extends nodeLib.eventsMod.EventEmitter {
   def this(options: SMTPServerOptions) = this()
-  var connections: nodeLib.Set[_] = js.native
+  var connections: stdLib.Set[_] = js.native
   var logger: nodemailerLib.libSharedMod.Logger = js.native
   var options: SMTPServerOptions = js.native
-  var secureContext: nodeLib.Map[java.lang.String, nodeLib.tlsMod.SecureContext] = js.native
+  var secureContext: stdLib.Map[java.lang.String, nodeLib.tlsMod.SecureContext] = js.native
   var server: nodeLib.netMod.Server = js.native
   @JSName("addListener")
   def addListener_close(event: smtpDashServerLib.smtpDashServerLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_error(
     event: smtpDashServerLib.smtpDashServerLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
    // tslint:disable-line unified-signatures
   /** Closes the server */
@@ -28,7 +28,7 @@ class SMTPServer ()
   @JSName("emit")
   def emit_close(event: smtpDashServerLib.smtpDashServerLibStrings.close): scala.Boolean = js.native
   @JSName("emit")
-  def emit_error(event: smtpDashServerLib.smtpDashServerLibStrings.error, err: nodeLib.Error): scala.Boolean = js.native
+  def emit_error(event: smtpDashServerLib.smtpDashServerLibStrings.error, err: stdLib.Error): scala.Boolean = js.native
   /** Start listening on selected port and interface */
   def listen(): nodeLib.netMod.Server = js.native
   def listen(handle: js.Any): nodeLib.netMod.Server = js.native
@@ -63,20 +63,20 @@ class SMTPServer ()
   @JSName("listeners")
   def listeners_close(event: smtpDashServerLib.smtpDashServerLibStrings.close): js.Array[js.Function0[scala.Unit]] = js.native
   @JSName("listeners")
-  def listeners_error(event: smtpDashServerLib.smtpDashServerLibStrings.error): js.Array[js.Function1[/* err */ nodeLib.Error, scala.Unit]] = js.native
+  def listeners_error(event: smtpDashServerLib.smtpDashServerLibStrings.error): js.Array[js.Function1[/* err */ stdLib.Error, scala.Unit]] = js.native
   @JSName("off")
   def off_close(event: smtpDashServerLib.smtpDashServerLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("off")
   def off_error(
     event: smtpDashServerLib.smtpDashServerLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /** Authentication handler. Override this */
   def onAuth(
     auth: SMTPServerAuthentication,
     session: SMTPServerSession,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[stdLib.Error | scala.Null], 
       /* response */ js.UndefOr[SMTPServerAuthenticationResponse], 
       scala.Unit
     ]
@@ -84,63 +84,63 @@ class SMTPServer ()
   /** Override this */
   def onClose(
     session: SMTPServerSession,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native
   /** Override this */
   def onConnect(
     session: SMTPServerSession,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native
   /** Override this */
   def onData(
     stream: SMTPServerDataStream,
     session: SMTPServerSession,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native
   /** Override this */
   def onMailFrom(
     address: SMTPServerAddress,
     session: SMTPServerSession,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native
   /** Override this */
   def onRcptTo(
     address: SMTPServerAddress,
     session: SMTPServerSession,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
   def on_close(event: smtpDashServerLib.smtpDashServerLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
   def on_error(
     event: smtpDashServerLib.smtpDashServerLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_close(event: smtpDashServerLib.smtpDashServerLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("once")
   def once_error(
     event: smtpDashServerLib.smtpDashServerLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_close(event: smtpDashServerLib.smtpDashServerLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_error(
     event: smtpDashServerLib.smtpDashServerLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_close(event: smtpDashServerLib.smtpDashServerLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_error(
     event: smtpDashServerLib.smtpDashServerLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("rawListeners")
   def rawListeners_close(event: smtpDashServerLib.smtpDashServerLibStrings.close): js.Array[js.Function0[scala.Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_error(event: smtpDashServerLib.smtpDashServerLibStrings.error): js.Array[js.Function1[/* err */ nodeLib.Error, scala.Unit]] = js.native
+  def rawListeners_error(event: smtpDashServerLib.smtpDashServerLibStrings.error): js.Array[js.Function1[/* err */ stdLib.Error, scala.Unit]] = js.native
   @JSName("removeAllListener")
   def removeAllListener_close(event: smtpDashServerLib.smtpDashServerLibStrings.close): this.type = js.native
   @JSName("removeAllListener")
@@ -150,7 +150,7 @@ class SMTPServer ()
   @JSName("removeListener")
   def removeListener_error(
     event: smtpDashServerLib.smtpDashServerLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   def updateSecureContext(options: nodeLib.tlsMod.TlsOptions): scala.Unit = js.native
 }

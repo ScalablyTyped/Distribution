@@ -24,9 +24,9 @@ object ILocaleService {
     DATETIME_FORMATS: ILocaleDateTimeFormatDescriptor,
     NUMBER_FORMATS: ILocaleNumberFormatDescriptor,
     id: java.lang.String,
-    pluralCat: js.Function1[js.Any, java.lang.String]
+    pluralCat: js.Any => java.lang.String
   ): ILocaleService = {
-    val __obj = js.Dynamic.literal(DATETIME_FORMATS = DATETIME_FORMATS, NUMBER_FORMATS = NUMBER_FORMATS, id = id, pluralCat = pluralCat)
+    val __obj = js.Dynamic.literal(DATETIME_FORMATS = DATETIME_FORMATS, NUMBER_FORMATS = NUMBER_FORMATS, id = id, pluralCat = js.Any.fromFunction1(pluralCat))
   
     __obj.asInstanceOf[ILocaleService]
   }

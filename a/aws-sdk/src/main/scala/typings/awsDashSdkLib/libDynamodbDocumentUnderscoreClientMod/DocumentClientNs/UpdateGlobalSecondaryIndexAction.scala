@@ -9,11 +9,11 @@ trait UpdateGlobalSecondaryIndexAction extends js.Object {
   /**
     * The name of the global secondary index to be updated.
     */
-  var IndexName: IndexName
+  var IndexName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.IndexName
   /**
     * Represents the provisioned throughput settings for the specified global secondary index. For current minimum and maximum provisioned throughput values, see Limits in the Amazon DynamoDB Developer Guide.
     */
-  var ProvisionedThroughput: ProvisionedThroughput
+  var ProvisionedThroughput: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.ProvisionedThroughput
 }
 
 object UpdateGlobalSecondaryIndexAction {

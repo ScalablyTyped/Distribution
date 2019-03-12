@@ -15,11 +15,11 @@ object Anon_Err {
   @scala.inline
   def apply(
     moduleName: java.lang.String,
-    onRequire: js.Function0[scala.Unit],
-    onError: js.Function1[/* err */ stdLib.Error, scala.Unit] = null
+    onRequire: () => scala.Unit,
+    onError: /* err */ stdLib.Error => scala.Unit = null
   ): Anon_Err = {
-    val __obj = js.Dynamic.literal(moduleName = moduleName, onRequire = onRequire)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
+    val __obj = js.Dynamic.literal(moduleName = moduleName, onRequire = js.Any.fromFunction0(onRequire))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     __obj.asInstanceOf[Anon_Err]
   }
 }

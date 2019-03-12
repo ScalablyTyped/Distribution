@@ -17,15 +17,15 @@ trait NegativeKeyword
 object NegativeKeyword {
   @scala.inline
   def apply(
-    getAdGroup: js.Function0[AdGroup],
-    getCampaign: js.Function0[Campaign],
-    getMatchType: js.Function0[MatchType],
-    getText: js.Function0[java.lang.String],
-    remove: js.Function0[scala.Unit],
-    getEntityType: js.Function0[java.lang.String] = null
+    getAdGroup: () => AdGroup,
+    getCampaign: () => Campaign,
+    getMatchType: () => MatchType,
+    getText: () => java.lang.String,
+    remove: () => scala.Unit,
+    getEntityType: () => java.lang.String = null
   ): NegativeKeyword = {
-    val __obj = js.Dynamic.literal(getAdGroup = getAdGroup, getCampaign = getCampaign, getMatchType = getMatchType, getText = getText, remove = remove)
-    if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
+    val __obj = js.Dynamic.literal(getAdGroup = js.Any.fromFunction0(getAdGroup), getCampaign = js.Any.fromFunction0(getCampaign), getMatchType = js.Any.fromFunction0(getMatchType), getText = js.Any.fromFunction0(getText), remove = js.Any.fromFunction0(remove))
+    if (getEntityType != null) __obj.updateDynamic("getEntityType")(js.Any.fromFunction0(getEntityType))
     __obj.asInstanceOf[NegativeKeyword]
   }
 }

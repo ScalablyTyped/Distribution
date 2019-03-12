@@ -36,7 +36,7 @@ trait StrictRatingProps extends js.Object {
     */
   var onRate: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       /* data */ RatingProps, 
       scala.Unit
     ]
@@ -59,11 +59,7 @@ object StrictRatingProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     icon: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.star | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.heart = null,
     maxRating: scala.Double | java.lang.String = null,
-    onRate: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
-      /* data */ RatingProps, 
-      scala.Unit
-    ] = null,
+    onRate: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ RatingProps) => scala.Unit = null,
     rating: scala.Double | java.lang.String = null,
     size: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mini | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tiny | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.small | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.large | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.huge | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.massive = null
   ): StrictRatingProps = {
@@ -75,7 +71,7 @@ object StrictRatingProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (maxRating != null) __obj.updateDynamic("maxRating")(maxRating.asInstanceOf[js.Any])
-    if (onRate != null) __obj.updateDynamic("onRate")(onRate)
+    if (onRate != null) __obj.updateDynamic("onRate")(js.Any.fromFunction2(onRate))
     if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictRatingProps]

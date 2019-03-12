@@ -23,6 +23,6 @@ trait Query
     * as other any-db libraries may rely on modifying the callback property
     * of a Query they did not create.
     */
-  def callback(error: nodeLib.Error, results: ResultSet): scala.Unit = js.native
+  def callback(error: stdLib.Error, results: ResultSet): scala.Unit = js.native
 }
 

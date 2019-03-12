@@ -11,10 +11,8 @@ trait IApplicationDataManagerStatics extends js.Object {
 
 object IApplicationDataManagerStatics {
   @scala.inline
-  def apply(
-    createForPackageFamily: js.Function1[java.lang.String, winrtLib.WindowsNs.StorageNs.ApplicationData]
-  ): IApplicationDataManagerStatics = {
-    val __obj = js.Dynamic.literal(createForPackageFamily = createForPackageFamily)
+  def apply(createForPackageFamily: java.lang.String => winrtLib.WindowsNs.StorageNs.ApplicationData): IApplicationDataManagerStatics = {
+    val __obj = js.Dynamic.literal(createForPackageFamily = js.Any.fromFunction1(createForPackageFamily))
   
     __obj.asInstanceOf[IApplicationDataManagerStatics]
   }

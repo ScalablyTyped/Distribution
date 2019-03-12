@@ -28,7 +28,7 @@ object ApplicationOptions {
   def apply(
     browserHistory: js.UndefOr[scala.Boolean] = js.undefined,
     hideAddressBar: js.UndefOr[scala.Boolean] = js.undefined,
-    init: js.Function1[/* e */ ApplicationEvent, scala.Unit] = null,
+    init: /* e */ ApplicationEvent => scala.Unit = null,
     initial: java.lang.String = null,
     layout: java.lang.String = null,
     loading: java.lang.String = null,
@@ -45,7 +45,7 @@ object ApplicationOptions {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(browserHistory)) __obj.updateDynamic("browserHistory")(browserHistory)
     if (!js.isUndefined(hideAddressBar)) __obj.updateDynamic("hideAddressBar")(hideAddressBar)
-    if (init != null) __obj.updateDynamic("init")(init)
+    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (initial != null) __obj.updateDynamic("initial")(initial)
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (loading != null) __obj.updateDynamic("loading")(loading)

@@ -18,13 +18,13 @@ object StyleSheet {
   @scala.inline
   def apply(
     container: stdLib.HTMLElement,
-    flush: js.Function0[scala.Unit],
-    insert: js.Function1[java.lang.String, scala.Unit],
+    flush: () => scala.Unit,
+    insert: java.lang.String => scala.Unit,
     key: java.lang.String,
     tags: js.Array[stdLib.HTMLStyleElement],
     nonce: java.lang.String = null
   ): StyleSheet = {
-    val __obj = js.Dynamic.literal(container = container, flush = flush, insert = insert, key = key, tags = tags)
+    val __obj = js.Dynamic.literal(container = container, flush = js.Any.fromFunction0(flush), insert = js.Any.fromFunction1(insert), key = key, tags = tags)
     if (nonce != null) __obj.updateDynamic("nonce")(nonce)
     __obj.asInstanceOf[StyleSheet]
   }

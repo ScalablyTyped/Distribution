@@ -276,9 +276,9 @@ trait FancyBoxOptions extends js.Object {
 object FancyBoxOptions {
   @scala.inline
   def apply(
-    afterClose: js.Function2[/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide, scala.Unit] = null,
-    afterLoad: js.Function2[/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide, scala.Unit] = null,
-    afterShow: js.Function2[/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide, scala.Unit] = null,
+    afterClose: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => scala.Unit = null,
+    afterLoad: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => scala.Unit = null,
+    afterShow: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => scala.Unit = null,
     ajax: FancyBoxAjaxOption = null,
     animationDuration: scala.Int | scala.Double = null,
     animationEffect: scala.Boolean | fancyboxLib.fancyboxLibStrings.zoom | fancyboxLib.fancyboxLibStrings.fade | fancyboxLib.fancyboxLibStrings.`zoom-in-out` = null,
@@ -287,9 +287,9 @@ object FancyBoxOptions {
     backFocus: js.UndefOr[scala.Boolean] = js.undefined,
     baseClass: java.lang.String = null,
     baseTpl: java.lang.String = null,
-    beforeClose: js.Function2[/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide, scala.Unit] = null,
-    beforeLoad: js.Function2[/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide, scala.Unit] = null,
-    beforeShow: js.Function2[/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide, scala.Unit] = null,
+    beforeClose: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => scala.Unit = null,
+    beforeLoad: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => scala.Unit = null,
+    beforeShow: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => scala.Unit = null,
     btnTpl: FancyBoxButtonTemplateOptions = null,
     buttons: js.Array[
       fancyboxLib.fancyboxLibStrings.zoom | fancyboxLib.fancyboxLibStrings.share | fancyboxLib.fancyboxLibStrings.slideShow | fancyboxLib.fancyboxLibStrings.fullScreen | fancyboxLib.fancyboxLibStrings.download | fancyboxLib.fancyboxLibStrings.thumbs | fancyboxLib.fancyboxLibStrings.close
@@ -318,9 +318,9 @@ object FancyBoxOptions {
     loop: js.UndefOr[scala.Boolean] = js.undefined,
     media: FancyBoxPlainObject = null,
     modal: js.UndefOr[scala.Boolean] = js.undefined,
-    onActivate: js.Function1[/* instance */ FancyBoxInstance, scala.Unit] = null,
-    onDeactivate: js.Function1[/* instance */ FancyBoxInstance, scala.Unit] = null,
-    onInit: js.Function1[/* instance */ FancyBoxInstance, scala.Unit] = null,
+    onActivate: /* instance */ FancyBoxInstance => scala.Unit = null,
+    onDeactivate: /* instance */ FancyBoxInstance => scala.Unit = null,
+    onInit: /* instance */ FancyBoxInstance => scala.Unit = null,
     parentEl: java.lang.String = null,
     preventCaptionOverlap: js.UndefOr[scala.Boolean] = js.undefined,
     protect: js.UndefOr[scala.Boolean] = js.undefined,
@@ -339,9 +339,9 @@ object FancyBoxOptions {
     zoomOpacity: fancyboxLib.fancyboxLibStrings.auto | scala.Boolean = null
   ): FancyBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose)
-    if (afterLoad != null) __obj.updateDynamic("afterLoad")(afterLoad)
-    if (afterShow != null) __obj.updateDynamic("afterShow")(afterShow)
+    if (afterClose != null) __obj.updateDynamic("afterClose")(js.Any.fromFunction2(afterClose))
+    if (afterLoad != null) __obj.updateDynamic("afterLoad")(js.Any.fromFunction2(afterLoad))
+    if (afterShow != null) __obj.updateDynamic("afterShow")(js.Any.fromFunction2(afterShow))
     if (ajax != null) __obj.updateDynamic("ajax")(ajax)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (animationEffect != null) __obj.updateDynamic("animationEffect")(animationEffect.asInstanceOf[js.Any])
@@ -350,9 +350,9 @@ object FancyBoxOptions {
     if (!js.isUndefined(backFocus)) __obj.updateDynamic("backFocus")(backFocus)
     if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass)
     if (baseTpl != null) __obj.updateDynamic("baseTpl")(baseTpl)
-    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
-    if (beforeLoad != null) __obj.updateDynamic("beforeLoad")(beforeLoad)
-    if (beforeShow != null) __obj.updateDynamic("beforeShow")(beforeShow)
+    if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction2(beforeClose))
+    if (beforeLoad != null) __obj.updateDynamic("beforeLoad")(js.Any.fromFunction2(beforeLoad))
+    if (beforeShow != null) __obj.updateDynamic("beforeShow")(js.Any.fromFunction2(beforeShow))
     if (btnTpl != null) __obj.updateDynamic("btnTpl")(btnTpl)
     if (buttons != null) __obj.updateDynamic("buttons")(buttons)
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
@@ -379,9 +379,9 @@ object FancyBoxOptions {
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
     if (media != null) __obj.updateDynamic("media")(media)
     if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
-    if (onActivate != null) __obj.updateDynamic("onActivate")(onActivate)
-    if (onDeactivate != null) __obj.updateDynamic("onDeactivate")(onDeactivate)
-    if (onInit != null) __obj.updateDynamic("onInit")(onInit)
+    if (onActivate != null) __obj.updateDynamic("onActivate")(js.Any.fromFunction1(onActivate))
+    if (onDeactivate != null) __obj.updateDynamic("onDeactivate")(js.Any.fromFunction1(onDeactivate))
+    if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction1(onInit))
     if (parentEl != null) __obj.updateDynamic("parentEl")(parentEl)
     if (!js.isUndefined(preventCaptionOverlap)) __obj.updateDynamic("preventCaptionOverlap")(preventCaptionOverlap)
     if (!js.isUndefined(protect)) __obj.updateDynamic("protect")(protect)

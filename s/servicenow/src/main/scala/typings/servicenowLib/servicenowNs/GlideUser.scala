@@ -19,16 +19,16 @@ trait GlideUser extends js.Object {
 object GlideUser {
   @scala.inline
   def apply(
-    getCompanyID: js.Function0[java.lang.String],
-    getDisplayName: js.Function0[java.lang.String],
-    getID: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getPreference: js.Function1[java.lang.String, java.lang.String],
-    hasRole: js.Function1[java.lang.String, scala.Boolean],
-    isMemberOf: js.Function1[java.lang.String, scala.Boolean],
-    savePreference: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    getCompanyID: () => java.lang.String,
+    getDisplayName: () => java.lang.String,
+    getID: () => java.lang.String,
+    getName: () => java.lang.String,
+    getPreference: java.lang.String => java.lang.String,
+    hasRole: java.lang.String => scala.Boolean,
+    isMemberOf: java.lang.String => scala.Boolean,
+    savePreference: (java.lang.String, java.lang.String) => scala.Unit
   ): GlideUser = {
-    val __obj = js.Dynamic.literal(getCompanyID = getCompanyID, getDisplayName = getDisplayName, getID = getID, getName = getName, getPreference = getPreference, hasRole = hasRole, isMemberOf = isMemberOf, savePreference = savePreference)
+    val __obj = js.Dynamic.literal(getCompanyID = js.Any.fromFunction0(getCompanyID), getDisplayName = js.Any.fromFunction0(getDisplayName), getID = js.Any.fromFunction0(getID), getName = js.Any.fromFunction0(getName), getPreference = js.Any.fromFunction1(getPreference), hasRole = js.Any.fromFunction1(hasRole), isMemberOf = js.Any.fromFunction1(isMemberOf), savePreference = js.Any.fromFunction2(savePreference))
   
     __obj.asInstanceOf[GlideUser]
   }

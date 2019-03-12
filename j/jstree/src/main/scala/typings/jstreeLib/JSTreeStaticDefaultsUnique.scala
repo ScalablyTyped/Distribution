@@ -24,11 +24,8 @@ trait JSTreeStaticDefaultsUnique extends js.Object {
 
 object JSTreeStaticDefaultsUnique {
   @scala.inline
-  def apply(
-    case_sensitive: scala.Boolean,
-    duplicate: js.Function2[java.lang.String, scala.Double, java.lang.String]
-  ): JSTreeStaticDefaultsUnique = {
-    val __obj = js.Dynamic.literal(case_sensitive = case_sensitive, duplicate = duplicate)
+  def apply(case_sensitive: scala.Boolean, duplicate: (java.lang.String, scala.Double) => java.lang.String): JSTreeStaticDefaultsUnique = {
+    val __obj = js.Dynamic.literal(case_sensitive = case_sensitive, duplicate = js.Any.fromFunction2(duplicate))
   
     __obj.asInstanceOf[JSTreeStaticDefaultsUnique]
   }

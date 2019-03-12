@@ -62,9 +62,9 @@ object Options {
     array: js.UndefOr[scala.Boolean] = js.undefined,
     boolean: js.UndefOr[scala.Boolean] = js.undefined,
     choices: Choices = null,
-    coerce: js.Function1[/* arg */ js.Any, _] = null,
+    coerce: /* arg */ js.Any => _ = null,
     config: js.UndefOr[scala.Boolean] = js.undefined,
-    configParser: js.Function1[/* configPath */ java.lang.String, js.Object] = null,
+    configParser: /* configPath */ java.lang.String => js.Object = null,
     conflicts: java.lang.String | js.Array[java.lang.String] | (org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]) = null,
     count: js.UndefOr[scala.Boolean] = js.undefined,
     default: js.Any = null,
@@ -93,9 +93,9 @@ object Options {
     if (!js.isUndefined(array)) __obj.updateDynamic("array")(array)
     if (!js.isUndefined(boolean)) __obj.updateDynamic("boolean")(boolean)
     if (choices != null) __obj.updateDynamic("choices")(choices)
-    if (coerce != null) __obj.updateDynamic("coerce")(coerce)
+    if (coerce != null) __obj.updateDynamic("coerce")(js.Any.fromFunction1(coerce))
     if (!js.isUndefined(config)) __obj.updateDynamic("config")(config)
-    if (configParser != null) __obj.updateDynamic("configParser")(configParser)
+    if (configParser != null) __obj.updateDynamic("configParser")(js.Any.fromFunction1(configParser))
     if (conflicts != null) __obj.updateDynamic("conflicts")(conflicts.asInstanceOf[js.Any])
     if (!js.isUndefined(count)) __obj.updateDynamic("count")(count)
     if (default != null) __obj.updateDynamic("default")(default)

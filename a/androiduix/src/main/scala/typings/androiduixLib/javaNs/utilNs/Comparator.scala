@@ -11,8 +11,8 @@ trait Comparator[T] extends js.Object {
 
 object Comparator {
   @scala.inline
-  def apply[T](compare: js.Function2[T, T, scala.Double]): Comparator[T] = {
-    val __obj = js.Dynamic.literal(compare = compare)
+  def apply[T](compare: (T, T) => scala.Double): Comparator[T] = {
+    val __obj = js.Dynamic.literal(compare = js.Any.fromFunction2(compare))
   
     __obj.asInstanceOf[Comparator[T]]
   }

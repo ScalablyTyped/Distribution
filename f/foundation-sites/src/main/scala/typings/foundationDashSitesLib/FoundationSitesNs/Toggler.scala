@@ -13,8 +13,8 @@ trait Toggler extends js.Object {
 
 object Toggler {
   @scala.inline
-  def apply(destroy: js.Function0[scala.Unit], toggle: js.Function0[scala.Unit]): Toggler = {
-    val __obj = js.Dynamic.literal(destroy = destroy, toggle = toggle)
+  def apply(destroy: () => scala.Unit, toggle: () => scala.Unit): Toggler = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), toggle = js.Any.fromFunction0(toggle))
   
     __obj.asInstanceOf[Toggler]
   }

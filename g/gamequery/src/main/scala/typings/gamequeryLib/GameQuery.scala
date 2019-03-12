@@ -12,7 +12,7 @@ trait GameQuery extends js.Object {
   var ANIMATION_ONCE: scala.Double
   var ANIMATION_PINGPONG: scala.Double
   var ANIMATION_VERTICAL: scala.Double
-  var Animation: Animation
+  var Animation: gamequeryLib.Animation
   var groupCssClass: java.lang.String
   var keyTracker: js.Array[scala.Boolean]
   var spriteCssClass: java.lang.String

@@ -16,7 +16,7 @@ trait TorrentFile
   def appendTo(
     rootElement: java.lang.String,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       /* element */ stdLib.HTMLMediaElement, 
       scala.Unit
     ]
@@ -26,7 +26,7 @@ trait TorrentFile
     rootElement: java.lang.String,
     opts: webtorrentLib.Anon_Autoplay,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       /* element */ stdLib.HTMLMediaElement, 
       scala.Unit
     ]
@@ -35,7 +35,7 @@ trait TorrentFile
   def appendTo(
     rootElement: stdLib.HTMLElement,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       /* element */ stdLib.HTMLMediaElement, 
       scala.Unit
     ]
@@ -45,7 +45,7 @@ trait TorrentFile
     rootElement: stdLib.HTMLElement,
     opts: webtorrentLib.Anon_Autoplay,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       /* element */ stdLib.HTMLMediaElement, 
       scala.Unit
     ]
@@ -55,21 +55,21 @@ trait TorrentFile
   def deselect(): scala.Unit = js.native
   def getBlob(
     callback: js.Function2[
-      /* err */ js.UndefOr[java.lang.String | nodeLib.Error], 
+      /* err */ js.UndefOr[java.lang.String | stdLib.Error], 
       /* blob */ js.UndefOr[stdLib.Blob], 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def getBlobURL(
     callback: js.Function2[
-      /* err */ js.UndefOr[java.lang.String | nodeLib.Error], 
+      /* err */ js.UndefOr[java.lang.String | stdLib.Error], 
       /* blobURL */ js.UndefOr[java.lang.String], 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def getBuffer(
     callback: js.Function2[
-      /* err */ js.UndefOr[java.lang.String | nodeLib.Error], 
+      /* err */ js.UndefOr[java.lang.String | stdLib.Error], 
       /* buffer */ js.UndefOr[nodeLib.Buffer], 
       scala.Unit
     ]
@@ -78,7 +78,7 @@ trait TorrentFile
   def renderTo(
     rootElement: java.lang.String,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       /* element */ stdLib.HTMLMediaElement, 
       scala.Unit
     ]
@@ -88,7 +88,7 @@ trait TorrentFile
     rootElement: java.lang.String,
     opts: webtorrentLib.Anon_Autoplay,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       /* element */ stdLib.HTMLMediaElement, 
       scala.Unit
     ]
@@ -97,7 +97,7 @@ trait TorrentFile
   def renderTo(
     rootElement: stdLib.HTMLMediaElement,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       /* element */ stdLib.HTMLMediaElement, 
       scala.Unit
     ]
@@ -107,7 +107,7 @@ trait TorrentFile
     rootElement: stdLib.HTMLMediaElement,
     opts: webtorrentLib.Anon_Autoplay,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       /* element */ stdLib.HTMLMediaElement, 
       scala.Unit
     ]

@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val Figlet: js.Any = js.native
   val Image: js.Any = js.native
-  val artwork: asciiDashArtLib.asciiDashArtMod.ArtworkType = js.native
-  val font: asciiDashArtLib.asciiDashArtMod.FontType = js.native
-  val image: asciiDashArtLib.asciiDashArtMod.ImageType = js.native
-  val join: asciiDashArtLib.asciiDashArtMod.JoinType = js.native
-  val lines: asciiDashArtLib.asciiDashArtMod.LinesType = js.native
-  val overlay: asciiDashArtLib.asciiDashArtMod.OverlayType = js.native
-  val strings: asciiDashArtLib.asciiDashArtMod.StringsType = js.native
-  val style: asciiDashArtLib.asciiDashArtMod.StyleType = js.native
-  val table: asciiDashArtLib.asciiDashArtMod.TableType = js.native
+  val artwork: ArtworkType = js.native
+  val font: FontType = js.native
+  val image: ImageType = js.native
+  val join: JoinType = js.native
+  val lines: LinesType = js.native
+  val overlay: OverlayType = js.native
+  val strings: StringsType = js.native
+  val style: StyleType = js.native
+  val table: TableType = js.native
 }
 

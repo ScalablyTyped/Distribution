@@ -38,12 +38,12 @@ object Literal {
   @scala.inline
   def apply(
     datatype: NamedNode,
-    equals: js.Function1[Term, scala.Boolean],
+    equals: Term => scala.Boolean,
     language: java.lang.String,
     termType: rdfDashJsLib.rdfDashJsLibStrings.Literal,
     value: java.lang.String
   ): Literal = {
-    val __obj = js.Dynamic.literal(datatype = datatype, equals = equals, language = language, termType = termType, value = value)
+    val __obj = js.Dynamic.literal(datatype = datatype, equals = js.Any.fromFunction1(equals), language = language, termType = termType, value = value)
   
     __obj.asInstanceOf[Literal]
   }

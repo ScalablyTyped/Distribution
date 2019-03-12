@@ -21,28 +21,13 @@ trait CustomDimensionsResource extends js.Object {
 object CustomDimensionsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDimensionId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CustomDimension]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CustomDimension]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresults, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CustomDimensions]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDimensionIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CustomDimension]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDimensionIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CustomDimension]
-    ]
+    get: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDimensionId => gapiDotClientLib.gapiNs.clientNs.Request[CustomDimension],
+    insert: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[CustomDimension],
+    list: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresults => gapiDotClientLib.gapiNs.clientNs.Request[CustomDimensions],
+    patch: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDimensionIdFields => gapiDotClientLib.gapiNs.clientNs.Request[CustomDimension],
+    update: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDimensionIdFields => gapiDotClientLib.gapiNs.clientNs.Request[CustomDimension]
   ): CustomDimensionsResource = {
-    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[CustomDimensionsResource]
   }

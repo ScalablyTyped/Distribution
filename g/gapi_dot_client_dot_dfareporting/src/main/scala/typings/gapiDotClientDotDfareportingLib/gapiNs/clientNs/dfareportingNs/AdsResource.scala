@@ -21,28 +21,13 @@ trait AdsResource extends js.Object {
 object AdsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Ad]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Ad]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_ActiveAdvertiserId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AdsListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Ad]
-    ],
-    update: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Ad]
-    ]
+    get: gapiDotClientDotDfareportingLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Ad],
+    insert: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Ad],
+    list: gapiDotClientDotDfareportingLib.Anon_ActiveAdvertiserId => gapiDotClientLib.gapiNs.clientNs.Request[AdsListResponse],
+    patch: gapiDotClientDotDfareportingLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Ad],
+    update: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Ad]
   ): AdsResource = {
-    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[AdsResource]
   }

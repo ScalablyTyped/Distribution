@@ -18,15 +18,15 @@ trait Dependency extends js.Object {
 object Dependency {
   @scala.inline
   def apply(
-    disconnect: js.Function0[scala.Unit],
-    getErrors: js.Function0[js.Any],
-    getExports: js.Function0[js.Any],
-    getReference: js.Function0[js.Any],
-    getResourceIdentifier: js.Function0[js.Any],
-    getWarnings: js.Function0[js.Any],
-    updateHash: js.Function1[js.Any, scala.Unit]
+    disconnect: () => scala.Unit,
+    getErrors: () => js.Any,
+    getExports: () => js.Any,
+    getReference: () => js.Any,
+    getResourceIdentifier: () => js.Any,
+    getWarnings: () => js.Any,
+    updateHash: js.Any => scala.Unit
   ): Dependency = {
-    val __obj = js.Dynamic.literal(disconnect = disconnect, getErrors = getErrors, getExports = getExports, getReference = getReference, getResourceIdentifier = getResourceIdentifier, getWarnings = getWarnings, updateHash = updateHash)
+    val __obj = js.Dynamic.literal(disconnect = js.Any.fromFunction0(disconnect), getErrors = js.Any.fromFunction0(getErrors), getExports = js.Any.fromFunction0(getExports), getReference = js.Any.fromFunction0(getReference), getResourceIdentifier = js.Any.fromFunction0(getResourceIdentifier), getWarnings = js.Any.fromFunction0(getWarnings), updateHash = js.Any.fromFunction1(updateHash))
   
     __obj.asInstanceOf[Dependency]
   }

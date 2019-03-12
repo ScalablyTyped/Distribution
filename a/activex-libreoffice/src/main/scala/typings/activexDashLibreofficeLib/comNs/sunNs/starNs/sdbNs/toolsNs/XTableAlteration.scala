@@ -57,28 +57,15 @@ object XTableAlteration {
   @scala.inline
   def apply(
     ActiveConnection: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
-    acquire: js.Function0[scala.Unit],
-    addColumn: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
-      scala.Unit
-    ],
-    alterColumnByName: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
-      scala.Unit
-    ],
-    dropColumn: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
-      java.lang.String, 
-      scala.Unit
-    ],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addColumn: (activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet) => scala.Unit,
+    alterColumnByName: (activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet) => scala.Unit,
+    dropColumn: (activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, java.lang.String) => scala.Unit,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTableAlteration = {
-    val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection, acquire = acquire, addColumn = addColumn, alterColumnByName = alterColumnByName, dropColumn = dropColumn, initialize = initialize, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection, acquire = js.Any.fromFunction0(acquire), addColumn = js.Any.fromFunction2(addColumn), alterColumnByName = js.Any.fromFunction3(alterColumnByName), dropColumn = js.Any.fromFunction2(dropColumn), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTableAlteration]
   }

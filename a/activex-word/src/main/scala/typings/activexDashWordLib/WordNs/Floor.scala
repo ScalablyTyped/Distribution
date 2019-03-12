@@ -13,7 +13,7 @@ class Floor protected () extends js.Object {
   val Creator: scala.Double = js.native
   val Fill: ChartFillFormat = js.native
   val Format: ChartFormat = js.native
-  val Interior: Interior = js.native
+  val Interior: activexDashWordLib.WordNs.Interior = js.native
   val Name: java.lang.String = js.native
   val Parent: js.Any = js.native
   var PictureType: js.Any = js.native

@@ -16,12 +16,12 @@ trait AliasFieldPlugin extends js.Object {
 object AliasFieldPlugin {
   @scala.inline
   def apply(
-    apply: js.Function1[enhancedDashResolveLib.libResolverMod.namespaced, scala.Unit],
+    apply: enhancedDashResolveLib.libResolverMod.namespaced => scala.Unit,
     field: java.lang.String,
     source: java.lang.String,
     target: java.lang.String
   ): AliasFieldPlugin = {
-    val __obj = js.Dynamic.literal(apply = apply, field = field, source = source, target = target)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), field = field, source = source, target = target)
   
     __obj.asInstanceOf[AliasFieldPlugin]
   }

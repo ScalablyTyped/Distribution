@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val default: sqlanywhereLib.Anon_CreateConnection = js.native
-  def createConnection(): sqlanywhereLib.sqlanywhereMod.SybaseConnection = js.native
+  def createConnection(): SybaseConnection = js.native
 }
 

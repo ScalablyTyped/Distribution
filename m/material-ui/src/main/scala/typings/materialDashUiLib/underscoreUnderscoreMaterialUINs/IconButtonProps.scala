@@ -51,11 +51,7 @@ object IconButtonProps {
     iconStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
     onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onKeyboardFocus: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], 
-      /* isKeyboardFocused */ scala.Boolean, 
-      scala.Unit
-    ] = null,
+    onKeyboardFocus: (/* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], /* isKeyboardFocused */ scala.Boolean) => scala.Unit = null,
     onMouseEnter: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
     onMouseLeave: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
     onMouseOut: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
@@ -76,7 +72,7 @@ object IconButtonProps {
     if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle)
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onKeyboardFocus != null) __obj.updateDynamic("onKeyboardFocus")(onKeyboardFocus)
+    if (onKeyboardFocus != null) __obj.updateDynamic("onKeyboardFocus")(js.Any.fromFunction2(onKeyboardFocus))
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
     if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut)

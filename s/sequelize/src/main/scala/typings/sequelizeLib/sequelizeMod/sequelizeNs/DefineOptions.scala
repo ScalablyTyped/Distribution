@@ -99,7 +99,7 @@ trait DefineOptions[TInstance] extends js.Object {
   /**
     * Throws an error when no records found
     */
-  var rejectOnError: js.UndefOr[scala.Boolean | nodeLib.Error] = js.undefined
+  var rejectOnError: js.UndefOr[scala.Boolean | stdLib.Error] = js.undefined
   /**
     * Specify the ROW_FORMAT for use with the MySQL InnoDB engine.
     */
@@ -182,7 +182,7 @@ object DefineOptions {
     name: DefineNameOptions = null,
     omitNull: js.UndefOr[scala.Boolean] = js.undefined,
     paranoid: js.UndefOr[scala.Boolean] = js.undefined,
-    rejectOnError: scala.Boolean | nodeLib.Error = null,
+    rejectOnError: scala.Boolean | stdLib.Error = null,
     rowFormat: java.lang.String = null,
     schema: java.lang.String = null,
     schemaDelimiter: java.lang.String = null,

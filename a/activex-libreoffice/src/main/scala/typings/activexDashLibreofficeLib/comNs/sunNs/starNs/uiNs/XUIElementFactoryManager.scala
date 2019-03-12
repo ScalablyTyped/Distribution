@@ -16,27 +16,21 @@ trait XUIElementFactoryManager
 object XUIElementFactoryManager {
   @scala.inline
   def apply(
-    RegisteredFactories: activexDashInteropLib.SafeArray[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    RegisteredFactories: stdLib.SafeArray[
+      stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
     ],
-    acquire: js.Function0[scala.Unit],
-    createUIElement: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      XUIElement
+    acquire: () => scala.Unit,
+    createUIElement: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => XUIElement,
+    deregisterFactory: (java.lang.String, java.lang.String, java.lang.String) => scala.Unit,
+    getFactory: (java.lang.String, java.lang.String) => XUIElementFactory,
+    getRegisteredFactories: () => stdLib.SafeArray[
+      stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
     ],
-    deregisterFactory: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Unit],
-    getFactory: js.Function2[java.lang.String, java.lang.String, XUIElementFactory],
-    getRegisteredFactories: js.Function0[
-      activexDashInteropLib.SafeArray[
-        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-      ]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerFactory: js.Function4[java.lang.String, java.lang.String, java.lang.String, java.lang.String, scala.Unit],
-    release: js.Function0[scala.Unit]
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerFactory: (java.lang.String, java.lang.String, java.lang.String, java.lang.String) => scala.Unit,
+    release: () => scala.Unit
   ): XUIElementFactoryManager = {
-    val __obj = js.Dynamic.literal(RegisteredFactories = RegisteredFactories, acquire = acquire, createUIElement = createUIElement, deregisterFactory = deregisterFactory, getFactory = getFactory, getRegisteredFactories = getRegisteredFactories, queryInterface = queryInterface, registerFactory = registerFactory, release = release)
+    val __obj = js.Dynamic.literal(RegisteredFactories = RegisteredFactories, acquire = js.Any.fromFunction0(acquire), createUIElement = js.Any.fromFunction2(createUIElement), deregisterFactory = js.Any.fromFunction3(deregisterFactory), getFactory = js.Any.fromFunction2(getFactory), getRegisteredFactories = js.Any.fromFunction0(getRegisteredFactories), queryInterface = js.Any.fromFunction1(queryInterface), registerFactory = js.Any.fromFunction4(registerFactory), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XUIElementFactoryManager]
   }

@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.Cell")
 @js.native
 class Cell protected () extends js.Object {
-  val Application: Application = js.native
-  var Borders: Borders = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
+  var Borders: activexDashWordLib.WordNs.Borders = js.native
   var BottomPadding: scala.Double = js.native
-  val Column: Column = js.native
+  val Column: activexDashWordLib.WordNs.Column = js.native
   val ColumnIndex: scala.Double = js.native
   val Creator: scala.Double = js.native
   var FitText: scala.Boolean = js.native
@@ -25,12 +25,12 @@ class Cell protected () extends js.Object {
   var PreferredWidth: scala.Double = js.native
   var PreferredWidthType: WdPreferredWidthType = js.native
   val Previous: Cell = js.native
-  val Range: Range = js.native
+  val Range: activexDashWordLib.WordNs.Range = js.native
   var RightPadding: scala.Double = js.native
-  val Row: Row = js.native
+  val Row: activexDashWordLib.WordNs.Row = js.native
   val RowIndex: scala.Double = js.native
-  val Shading: Shading = js.native
-  val Tables: Tables = js.native
+  val Shading: activexDashWordLib.WordNs.Shading = js.native
+  val Tables: activexDashWordLib.WordNs.Tables = js.native
   var TopPadding: scala.Double = js.native
   var VerticalAlignment: WdCellVerticalAlignment = js.native
   var Width: scala.Double = js.native

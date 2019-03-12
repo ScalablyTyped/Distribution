@@ -55,16 +55,16 @@ object ITabPanel {
     activeItem: js.Any = null,
     activeTab: js.Any = null,
     deferredRender: js.UndefOr[scala.Boolean] = js.undefined,
-    getActiveTab: js.Function0[IComponent] = null,
-    getTabBar: js.Function0[extjsLib.ExtNs.tabNs.IBar] = null,
+    getActiveTab: () => IComponent = null,
+    getTabBar: () => extjsLib.ExtNs.tabNs.IBar = null,
     itemCls: java.lang.String = null,
     layout: js.Any = null,
     maxTabWidth: scala.Int | scala.Double = null,
     minTabWidth: scala.Int | scala.Double = null,
-    onAdd: js.Function2[/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any], scala.Unit] = null,
+    onAdd: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any]) => scala.Unit = null,
     plain: js.UndefOr[scala.Boolean] = js.undefined,
     removePanelHeader: js.UndefOr[scala.Boolean] = js.undefined,
-    setActiveTab: js.Function1[/* card */ js.UndefOr[js.Any], IComponent] = null,
+    setActiveTab: /* card */ js.UndefOr[js.Any] => IComponent = null,
     tabBar: js.Any = null,
     tabPosition: js.Any = null
   ): ITabPanel = {
@@ -73,16 +73,16 @@ object ITabPanel {
     if (activeItem != null) __obj.updateDynamic("activeItem")(activeItem)
     if (activeTab != null) __obj.updateDynamic("activeTab")(activeTab)
     if (!js.isUndefined(deferredRender)) __obj.updateDynamic("deferredRender")(deferredRender)
-    if (getActiveTab != null) __obj.updateDynamic("getActiveTab")(getActiveTab)
-    if (getTabBar != null) __obj.updateDynamic("getTabBar")(getTabBar)
+    if (getActiveTab != null) __obj.updateDynamic("getActiveTab")(js.Any.fromFunction0(getActiveTab))
+    if (getTabBar != null) __obj.updateDynamic("getTabBar")(js.Any.fromFunction0(getTabBar))
     if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls)
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (maxTabWidth != null) __obj.updateDynamic("maxTabWidth")(maxTabWidth.asInstanceOf[js.Any])
     if (minTabWidth != null) __obj.updateDynamic("minTabWidth")(minTabWidth.asInstanceOf[js.Any])
-    if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd)
+    if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction2(onAdd))
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
     if (!js.isUndefined(removePanelHeader)) __obj.updateDynamic("removePanelHeader")(removePanelHeader)
-    if (setActiveTab != null) __obj.updateDynamic("setActiveTab")(setActiveTab)
+    if (setActiveTab != null) __obj.updateDynamic("setActiveTab")(js.Any.fromFunction1(setActiveTab))
     if (tabBar != null) __obj.updateDynamic("tabBar")(tabBar)
     if (tabPosition != null) __obj.updateDynamic("tabPosition")(tabPosition)
     __obj.asInstanceOf[ITabPanel]

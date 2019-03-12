@@ -21,12 +21,12 @@ object ViewConfig {
   @scala.inline
   def apply(
     $id: scala.Double,
-    load: js.Function0[js.Promise[ViewConfig]],
+    load: () => js.Promise[ViewConfig],
     loaded: scala.Boolean,
     path: js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode],
     viewDecl: atUirouterCoreLib.libStateInterfaceMod._ViewDeclaration
   ): ViewConfig = {
-    val __obj = js.Dynamic.literal($id = $id, load = load, loaded = loaded, path = path, viewDecl = viewDecl)
+    val __obj = js.Dynamic.literal($id = $id, load = js.Any.fromFunction0(load), loaded = loaded, path = path, viewDecl = viewDecl)
   
     __obj.asInstanceOf[ViewConfig]
   }

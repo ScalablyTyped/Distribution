@@ -85,12 +85,12 @@ object ChartConfiguration {
     interaction: c3Lib.Anon_Enabled = null,
     legend: LegendOptions = null,
     line: c3Lib.Anon_ConnectNull = null,
-    oninit: js.Function0[scala.Unit] = null,
-    onmouseout: js.Function0[scala.Unit] = null,
-    onmouseover: js.Function0[scala.Unit] = null,
-    onrendered: js.Function0[scala.Unit] = null,
-    onresize: js.Function0[scala.Unit] = null,
-    onresized: js.Function0[scala.Unit] = null,
+    oninit: () => scala.Unit = null,
+    onmouseout: () => scala.Unit = null,
+    onmouseover: () => scala.Unit = null,
+    onrendered: () => scala.Unit = null,
+    onresize: () => scala.Unit = null,
+    onresized: () => scala.Unit = null,
     padding: c3Lib.Anon_Bottom = null,
     pie: c3Lib.Anon_Expand = null,
     point: PointOptions = null,
@@ -115,12 +115,12 @@ object ChartConfiguration {
     if (interaction != null) __obj.updateDynamic("interaction")(interaction)
     if (legend != null) __obj.updateDynamic("legend")(legend)
     if (line != null) __obj.updateDynamic("line")(line)
-    if (oninit != null) __obj.updateDynamic("oninit")(oninit)
-    if (onmouseout != null) __obj.updateDynamic("onmouseout")(onmouseout)
-    if (onmouseover != null) __obj.updateDynamic("onmouseover")(onmouseover)
-    if (onrendered != null) __obj.updateDynamic("onrendered")(onrendered)
-    if (onresize != null) __obj.updateDynamic("onresize")(onresize)
-    if (onresized != null) __obj.updateDynamic("onresized")(onresized)
+    if (oninit != null) __obj.updateDynamic("oninit")(js.Any.fromFunction0(oninit))
+    if (onmouseout != null) __obj.updateDynamic("onmouseout")(js.Any.fromFunction0(onmouseout))
+    if (onmouseover != null) __obj.updateDynamic("onmouseover")(js.Any.fromFunction0(onmouseover))
+    if (onrendered != null) __obj.updateDynamic("onrendered")(js.Any.fromFunction0(onrendered))
+    if (onresize != null) __obj.updateDynamic("onresize")(js.Any.fromFunction0(onresize))
+    if (onresized != null) __obj.updateDynamic("onresized")(js.Any.fromFunction0(onresized))
     if (padding != null) __obj.updateDynamic("padding")(padding)
     if (pie != null) __obj.updateDynamic("pie")(pie)
     if (point != null) __obj.updateDynamic("point")(point)

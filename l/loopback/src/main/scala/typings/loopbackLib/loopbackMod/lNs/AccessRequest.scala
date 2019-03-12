@@ -35,12 +35,8 @@ trait AccessRequest extends js.Object {
 
 object AccessRequest {
   @scala.inline
-  def apply(
-    exactlyMatches: js.Function1[ACL, scala.Unit],
-    isAllowed: js.Function0[scala.Boolean],
-    isWildcard: js.Function0[scala.Boolean]
-  ): AccessRequest = {
-    val __obj = js.Dynamic.literal(exactlyMatches = exactlyMatches, isAllowed = isAllowed, isWildcard = isWildcard)
+  def apply(exactlyMatches: ACL => scala.Unit, isAllowed: () => scala.Boolean, isWildcard: () => scala.Boolean): AccessRequest = {
+    val __obj = js.Dynamic.literal(exactlyMatches = js.Any.fromFunction1(exactlyMatches), isAllowed = js.Any.fromFunction0(isAllowed), isWildcard = js.Any.fromFunction0(isWildcard))
   
     __obj.asInstanceOf[AccessRequest]
   }

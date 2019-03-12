@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait EcdsaKeyValue extends KeyInfoClause {
-  var DomainParameters: DomainParameters = js.native
+  var DomainParameters: xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.DomainParameters = js.native
   /**
     * Gets the NamedCurve value of then public key
     */

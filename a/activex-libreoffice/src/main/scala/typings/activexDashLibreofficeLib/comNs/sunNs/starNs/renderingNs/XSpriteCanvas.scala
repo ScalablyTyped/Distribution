@@ -56,93 +56,35 @@ object XSpriteCanvas {
   @scala.inline
   def apply(
     Device: XGraphicDevice,
-    acquire: js.Function0[scala.Unit],
-    clear: js.Function0[scala.Unit],
-    createClonedSprite: js.Function1[XSprite, XSprite],
-    createCustomSprite: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealSize2D, XCustomSprite],
-    createFont: js.Function3[
-      FontRequest, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.Matrix2D, 
-      XCanvasFont
-    ],
-    createSpriteFromAnimation: js.Function1[XAnimation, XAnimatedSprite],
-    createSpriteFromBitmaps: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XBitmap], 
-      scala.Double, 
-      XAnimatedSprite
-    ],
-    drawBezier: js.Function4[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealBezierSegment2D, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
-      ViewState, 
-      RenderState, 
-      scala.Unit
-    ],
-    drawBitmap: js.Function3[XBitmap, ViewState, RenderState, XCachedPrimitive],
-    drawBitmapModulated: js.Function3[XBitmap, ViewState, RenderState, XCachedPrimitive],
-    drawLine: js.Function4[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
-      ViewState, 
-      RenderState, 
-      scala.Unit
-    ],
-    drawPoint: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
-      ViewState, 
-      RenderState, 
-      scala.Unit
-    ],
-    drawPolyPolygon: js.Function3[XPolyPolygon2D, ViewState, RenderState, XCachedPrimitive],
-    drawText: js.Function5[StringContext, XCanvasFont, ViewState, RenderState, scala.Double, XCachedPrimitive],
-    drawTextLayout: js.Function3[XTextLayout, ViewState, RenderState, XCachedPrimitive],
-    fillPolyPolygon: js.Function3[XPolyPolygon2D, ViewState, RenderState, XCachedPrimitive],
-    fillTextureMappedPolyPolygon: js.Function5[
-      XPolyPolygon2D, 
-      ViewState, 
-      RenderState, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[Texture], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.XMapping2D, 
-      XCachedPrimitive
-    ],
-    fillTexturedPolyPolygon: js.Function4[
-      XPolyPolygon2D, 
-      ViewState, 
-      RenderState, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[Texture], 
-      XCachedPrimitive
-    ],
-    getDevice: js.Function0[XGraphicDevice],
-    queryAvailableFonts: js.Function2[
-      FontInfo, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      activexDashInteropLib.SafeArray[FontInfo]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    queryStrokeShapes: js.Function4[XPolyPolygon2D, ViewState, RenderState, StrokeAttributes, XPolyPolygon2D],
-    release: js.Function0[scala.Unit],
-    strokePolyPolygon: js.Function4[XPolyPolygon2D, ViewState, RenderState, StrokeAttributes, XCachedPrimitive],
-    strokeTextureMappedPolyPolygon: js.Function6[
-      XPolyPolygon2D, 
-      ViewState, 
-      RenderState, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[Texture], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.XMapping2D, 
-      StrokeAttributes, 
-      XCachedPrimitive
-    ],
-    strokeTexturedPolyPolygon: js.Function5[
-      XPolyPolygon2D, 
-      ViewState, 
-      RenderState, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[Texture], 
-      StrokeAttributes, 
-      XCachedPrimitive
-    ],
-    updateScreen: js.Function1[scala.Boolean, scala.Boolean]
+    acquire: () => scala.Unit,
+    clear: () => scala.Unit,
+    createClonedSprite: XSprite => XSprite,
+    createCustomSprite: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealSize2D => XCustomSprite,
+    createFont: (FontRequest, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.Matrix2D) => XCanvasFont,
+    createSpriteFromAnimation: XAnimation => XAnimatedSprite,
+    createSpriteFromBitmaps: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XBitmap], scala.Double) => XAnimatedSprite,
+    drawBezier: (activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealBezierSegment2D, activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, ViewState, RenderState) => scala.Unit,
+    drawBitmap: (XBitmap, ViewState, RenderState) => XCachedPrimitive,
+    drawBitmapModulated: (XBitmap, ViewState, RenderState) => XCachedPrimitive,
+    drawLine: (activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, ViewState, RenderState) => scala.Unit,
+    drawPoint: (activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, ViewState, RenderState) => scala.Unit,
+    drawPolyPolygon: (XPolyPolygon2D, ViewState, RenderState) => XCachedPrimitive,
+    drawText: (StringContext, XCanvasFont, ViewState, RenderState, scala.Double) => XCachedPrimitive,
+    drawTextLayout: (XTextLayout, ViewState, RenderState) => XCachedPrimitive,
+    fillPolyPolygon: (XPolyPolygon2D, ViewState, RenderState) => XCachedPrimitive,
+    fillTextureMappedPolyPolygon: (XPolyPolygon2D, ViewState, RenderState, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[Texture], activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.XMapping2D) => XCachedPrimitive,
+    fillTexturedPolyPolygon: (XPolyPolygon2D, ViewState, RenderState, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[Texture]) => XCachedPrimitive,
+    getDevice: () => XGraphicDevice,
+    queryAvailableFonts: (FontInfo, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => stdLib.SafeArray[FontInfo],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    queryStrokeShapes: (XPolyPolygon2D, ViewState, RenderState, StrokeAttributes) => XPolyPolygon2D,
+    release: () => scala.Unit,
+    strokePolyPolygon: (XPolyPolygon2D, ViewState, RenderState, StrokeAttributes) => XCachedPrimitive,
+    strokeTextureMappedPolyPolygon: (XPolyPolygon2D, ViewState, RenderState, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[Texture], activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.XMapping2D, StrokeAttributes) => XCachedPrimitive,
+    strokeTexturedPolyPolygon: (XPolyPolygon2D, ViewState, RenderState, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[Texture], StrokeAttributes) => XCachedPrimitive,
+    updateScreen: scala.Boolean => scala.Boolean
   ): XSpriteCanvas = {
-    val __obj = js.Dynamic.literal(Device = Device, acquire = acquire, clear = clear, createClonedSprite = createClonedSprite, createCustomSprite = createCustomSprite, createFont = createFont, createSpriteFromAnimation = createSpriteFromAnimation, createSpriteFromBitmaps = createSpriteFromBitmaps, drawBezier = drawBezier, drawBitmap = drawBitmap, drawBitmapModulated = drawBitmapModulated, drawLine = drawLine, drawPoint = drawPoint, drawPolyPolygon = drawPolyPolygon, drawText = drawText, drawTextLayout = drawTextLayout, fillPolyPolygon = fillPolyPolygon, fillTextureMappedPolyPolygon = fillTextureMappedPolyPolygon, fillTexturedPolyPolygon = fillTexturedPolyPolygon, getDevice = getDevice, queryAvailableFonts = queryAvailableFonts, queryInterface = queryInterface, queryStrokeShapes = queryStrokeShapes, release = release, strokePolyPolygon = strokePolyPolygon, strokeTextureMappedPolyPolygon = strokeTextureMappedPolyPolygon, strokeTexturedPolyPolygon = strokeTexturedPolyPolygon, updateScreen = updateScreen)
+    val __obj = js.Dynamic.literal(Device = Device, acquire = js.Any.fromFunction0(acquire), clear = js.Any.fromFunction0(clear), createClonedSprite = js.Any.fromFunction1(createClonedSprite), createCustomSprite = js.Any.fromFunction1(createCustomSprite), createFont = js.Any.fromFunction3(createFont), createSpriteFromAnimation = js.Any.fromFunction1(createSpriteFromAnimation), createSpriteFromBitmaps = js.Any.fromFunction2(createSpriteFromBitmaps), drawBezier = js.Any.fromFunction4(drawBezier), drawBitmap = js.Any.fromFunction3(drawBitmap), drawBitmapModulated = js.Any.fromFunction3(drawBitmapModulated), drawLine = js.Any.fromFunction4(drawLine), drawPoint = js.Any.fromFunction3(drawPoint), drawPolyPolygon = js.Any.fromFunction3(drawPolyPolygon), drawText = js.Any.fromFunction5(drawText), drawTextLayout = js.Any.fromFunction3(drawTextLayout), fillPolyPolygon = js.Any.fromFunction3(fillPolyPolygon), fillTextureMappedPolyPolygon = js.Any.fromFunction5(fillTextureMappedPolyPolygon), fillTexturedPolyPolygon = js.Any.fromFunction4(fillTexturedPolyPolygon), getDevice = js.Any.fromFunction0(getDevice), queryAvailableFonts = js.Any.fromFunction2(queryAvailableFonts), queryInterface = js.Any.fromFunction1(queryInterface), queryStrokeShapes = js.Any.fromFunction4(queryStrokeShapes), release = js.Any.fromFunction0(release), strokePolyPolygon = js.Any.fromFunction4(strokePolyPolygon), strokeTextureMappedPolyPolygon = js.Any.fromFunction6(strokeTextureMappedPolyPolygon), strokeTexturedPolyPolygon = js.Any.fromFunction5(strokeTexturedPolyPolygon), updateScreen = js.Any.fromFunction1(updateScreen))
   
     __obj.asInstanceOf[XSpriteCanvas]
   }

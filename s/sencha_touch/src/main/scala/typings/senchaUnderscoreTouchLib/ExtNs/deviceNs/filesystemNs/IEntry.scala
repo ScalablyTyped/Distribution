@@ -50,26 +50,26 @@ object IEntry {
   def apply(
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    copyTo: js.Function1[/* config */ js.UndefOr[js.Any], scala.Unit] = null,
-    destroy: js.Function0[scala.Unit] = null,
+    copyTo: /* config */ js.UndefOr[js.Any] => scala.Unit = null,
+    destroy: () => scala.Unit = null,
     extend: java.lang.String = null,
-    getFileSystem: js.Function0[IFileSystem] = null,
-    getFullPath: js.Function0[java.lang.String] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getName: js.Function0[java.lang.String] = null,
-    getParent: js.Function1[/* config */ js.UndefOr[js.Any], scala.Unit] = null,
+    getFileSystem: () => IFileSystem = null,
+    getFullPath: () => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getName: () => java.lang.String = null,
+    getParent: /* config */ js.UndefOr[js.Any] => scala.Unit = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
-    isDirectory: js.Function0[scala.Boolean] = null,
-    isFile: js.Function0[scala.Boolean] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
+    isDirectory: () => scala.Boolean = null,
+    isFile: () => scala.Boolean = null,
     mixins: js.Any = null,
-    moveTo: js.Function1[/* config */ js.UndefOr[js.Any], scala.Unit] = null,
+    moveTo: /* config */ js.UndefOr[js.Any] => scala.Unit = null,
     platformConfig: js.Any = null,
-    remove: js.Function1[/* config */ js.UndefOr[js.Any], scala.Unit] = null,
+    remove: /* config */ js.UndefOr[js.Any] => scala.Unit = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
@@ -78,26 +78,26 @@ object IEntry {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (copyTo != null) __obj.updateDynamic("copyTo")(copyTo)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (copyTo != null) __obj.updateDynamic("copyTo")(js.Any.fromFunction1(copyTo))
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getFileSystem != null) __obj.updateDynamic("getFileSystem")(getFileSystem)
-    if (getFullPath != null) __obj.updateDynamic("getFullPath")(getFullPath)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getName != null) __obj.updateDynamic("getName")(getName)
-    if (getParent != null) __obj.updateDynamic("getParent")(getParent)
+    if (getFileSystem != null) __obj.updateDynamic("getFileSystem")(js.Any.fromFunction0(getFileSystem))
+    if (getFullPath != null) __obj.updateDynamic("getFullPath")(js.Any.fromFunction0(getFullPath))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getName != null) __obj.updateDynamic("getName")(js.Any.fromFunction0(getName))
+    if (getParent != null) __obj.updateDynamic("getParent")(js.Any.fromFunction1(getParent))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
-    if (isDirectory != null) __obj.updateDynamic("isDirectory")(isDirectory)
-    if (isFile != null) __obj.updateDynamic("isFile")(isFile)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (isDirectory != null) __obj.updateDynamic("isDirectory")(js.Any.fromFunction0(isDirectory))
+    if (isFile != null) __obj.updateDynamic("isFile")(js.Any.fromFunction0(isFile))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (moveTo != null) __obj.updateDynamic("moveTo")(moveTo)
+    if (moveTo != null) __obj.updateDynamic("moveTo")(js.Any.fromFunction1(moveTo))
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
     if (self != null) __obj.updateDynamic("self")(self)
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)

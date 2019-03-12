@@ -132,53 +132,18 @@ object SwiperProperties {
     loadMinimalSize: scala.Int | scala.Double = null,
     loop: js.UndefOr[scala.Boolean] = js.undefined,
     nextButton: reactLib.reactMod.Global.JSXNs.Element = null,
-    onMomentumScrollEnd: js.Function3[
-      /* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.NativeScrollEvent], 
-      /* state */ SwiperState, 
-      /* context */ Swiper, 
-      scala.Unit
-    ] = null,
-    onResponderRelease: js.Function3[
-      /* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.NativeScrollEvent], 
-      /* state */ SwiperState, 
-      /* context */ Swiper, 
-      scala.Unit
-    ] = null,
-    onScrollBeginDrag: js.Function3[
-      /* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.NativeScrollEvent], 
-      /* state */ SwiperState, 
-      /* context */ Swiper, 
-      scala.Unit
-    ] = null,
-    onTouchEnd: js.Function3[
-      /* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.NativeScrollEvent], 
-      /* state */ SwiperState, 
-      /* context */ Swiper, 
-      scala.Unit
-    ] = null,
-    onTouchStart: js.Function3[
-      /* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.NativeScrollEvent], 
-      /* state */ SwiperState, 
-      /* context */ Swiper, 
-      scala.Unit
-    ] = null,
-    onTouchStartCapture: js.Function3[
-      /* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.NativeScrollEvent], 
-      /* state */ SwiperState, 
-      /* context */ Swiper, 
-      scala.Unit
-    ] = null,
+    onMomentumScrollEnd: (/* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.NativeScrollEvent], /* state */ SwiperState, /* context */ Swiper) => scala.Unit = null,
+    onResponderRelease: (/* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.NativeScrollEvent], /* state */ SwiperState, /* context */ Swiper) => scala.Unit = null,
+    onScrollBeginDrag: (/* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.NativeScrollEvent], /* state */ SwiperState, /* context */ Swiper) => scala.Unit = null,
+    onTouchEnd: (/* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.NativeScrollEvent], /* state */ SwiperState, /* context */ Swiper) => scala.Unit = null,
+    onTouchStart: (/* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.NativeScrollEvent], /* state */ SwiperState, /* context */ Swiper) => scala.Unit = null,
+    onTouchStartCapture: (/* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.NativeScrollEvent], /* state */ SwiperState, /* context */ Swiper) => scala.Unit = null,
     paginationStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     pagingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     prevButton: reactLib.reactMod.Global.JSXNs.Element = null,
     ref: reactLib.reactMod.ReactNs.LegacyRef[Swiper] = null,
     removeClippedSubviews: js.UndefOr[scala.Boolean] = js.undefined,
-    renderPagination: js.Function3[
-      /* index */ scala.Double, 
-      /* total */ scala.Double, 
-      /* thisObject */ Swiper, 
-      reactLib.reactMod.Global.JSXNs.Element
-    ] = null,
+    renderPagination: (/* index */ scala.Double, /* total */ scala.Double, /* thisObject */ Swiper) => reactLib.reactMod.Global.JSXNs.Element = null,
     scrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     scrollsToTop: js.UndefOr[scala.Boolean] = js.undefined,
     showsButtons: js.UndefOr[scala.Boolean] = js.undefined,
@@ -211,18 +176,18 @@ object SwiperProperties {
     if (loadMinimalSize != null) __obj.updateDynamic("loadMinimalSize")(loadMinimalSize.asInstanceOf[js.Any])
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
     if (nextButton != null) __obj.updateDynamic("nextButton")(nextButton)
-    if (onMomentumScrollEnd != null) __obj.updateDynamic("onMomentumScrollEnd")(onMomentumScrollEnd)
-    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(onResponderRelease)
-    if (onScrollBeginDrag != null) __obj.updateDynamic("onScrollBeginDrag")(onScrollBeginDrag)
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
-    if (onTouchStartCapture != null) __obj.updateDynamic("onTouchStartCapture")(onTouchStartCapture)
+    if (onMomentumScrollEnd != null) __obj.updateDynamic("onMomentumScrollEnd")(js.Any.fromFunction3(onMomentumScrollEnd))
+    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(js.Any.fromFunction3(onResponderRelease))
+    if (onScrollBeginDrag != null) __obj.updateDynamic("onScrollBeginDrag")(js.Any.fromFunction3(onScrollBeginDrag))
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction3(onTouchEnd))
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction3(onTouchStart))
+    if (onTouchStartCapture != null) __obj.updateDynamic("onTouchStartCapture")(js.Any.fromFunction3(onTouchStartCapture))
     if (paginationStyle != null) __obj.updateDynamic("paginationStyle")(paginationStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(pagingEnabled)) __obj.updateDynamic("pagingEnabled")(pagingEnabled)
     if (prevButton != null) __obj.updateDynamic("prevButton")(prevButton)
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews)
-    if (renderPagination != null) __obj.updateDynamic("renderPagination")(renderPagination)
+    if (renderPagination != null) __obj.updateDynamic("renderPagination")(js.Any.fromFunction3(renderPagination))
     if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled)
     if (!js.isUndefined(scrollsToTop)) __obj.updateDynamic("scrollsToTop")(scrollsToTop)
     if (!js.isUndefined(showsButtons)) __obj.updateDynamic("showsButtons")(showsButtons)

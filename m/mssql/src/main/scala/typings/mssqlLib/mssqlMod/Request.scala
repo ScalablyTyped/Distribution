@@ -23,7 +23,7 @@ class Request ()
   def batch(
     batch: java.lang.String,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       /* recordset */ js.UndefOr[IResult[_]], 
       scala.Unit
     ]
@@ -40,7 +40,7 @@ class Request ()
     ]
   ): scala.Unit = js.native
   def bulk(table: Table): js.Promise[scala.Double] = js.native
-  def bulk(table: Table, callback: js.Function2[/* err */ nodeLib.Error, /* rowCount */ js.Any, scala.Unit]): scala.Unit = js.native
+  def bulk(table: Table, callback: js.Function2[/* err */ stdLib.Error, /* rowCount */ js.Any, scala.Unit]): scala.Unit = js.native
   def cancel(): scala.Unit = js.native
   def execute(procedure: java.lang.String): js.Promise[IProcedureResult[_]] = js.native
   def execute[Entity](
@@ -66,7 +66,7 @@ class Request ()
   def query[Entity](
     command: java.lang.String,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       /* recordset */ js.UndefOr[IResult[Entity]], 
       scala.Unit
     ]

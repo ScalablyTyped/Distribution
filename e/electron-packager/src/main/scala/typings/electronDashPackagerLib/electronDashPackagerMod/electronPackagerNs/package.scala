@@ -13,7 +13,7 @@ package object electronPackagerNs {
     * @param appPaths - Path(s) to the newly created application(s).
     */
   type finalCallback = js.Function2[
-    /* err */ nodeLib.Error, 
+    /* err */ stdLib.Error, 
     /* appPaths */ java.lang.String | js.Array[java.lang.String], 
     scala.Unit
   ]

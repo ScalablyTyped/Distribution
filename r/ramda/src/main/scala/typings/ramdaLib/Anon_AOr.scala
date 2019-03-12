@@ -11,9 +11,9 @@ trait Anon_AOr extends js.Object {
 
 object Anon_AOr {
   @scala.inline
-  def apply(or: js.Function1[/* repeated */ js.Any, _] = null): Anon_AOr = {
+  def apply(or: /* repeated */ js.Any => _ = null): Anon_AOr = {
     val __obj = js.Dynamic.literal()
-    if (or != null) __obj.updateDynamic("or")(or)
+    if (or != null) __obj.updateDynamic("or")(js.Any.fromFunction1(or))
     __obj.asInstanceOf[Anon_AOr]
   }
 }

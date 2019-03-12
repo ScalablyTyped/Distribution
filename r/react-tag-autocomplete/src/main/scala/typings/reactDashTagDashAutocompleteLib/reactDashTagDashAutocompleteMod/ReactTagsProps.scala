@@ -86,8 +86,8 @@ trait ReactTagsProps extends js.Object {
 object ReactTagsProps {
   @scala.inline
   def apply(
-    handleAddition: js.Function1[Tag, scala.Unit],
-    handleDelete: js.Function1[scala.Double, scala.Unit],
+    handleAddition: Tag => scala.Unit,
+    handleDelete: scala.Double => scala.Unit,
     allowBackspace: js.UndefOr[scala.Boolean] = js.undefined,
     allowNew: js.UndefOr[scala.Boolean] = js.undefined,
     autofocus: js.UndefOr[scala.Boolean] = js.undefined,
@@ -95,9 +95,9 @@ object ReactTagsProps {
     classNames: ClassNames = null,
     delimiterChars: js.Array[java.lang.String] = null,
     delimiters: js.Array[scala.Double] = null,
-    handleBlur: js.Function0[scala.Unit] = null,
-    handleFocus: js.Function0[scala.Unit] = null,
-    handleInputChange: js.Function1[/* input */ java.lang.String, scala.Unit] = null,
+    handleBlur: () => scala.Unit = null,
+    handleFocus: () => scala.Unit = null,
+    handleInputChange: /* input */ java.lang.String => scala.Unit = null,
     inputAttributes: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     maxSuggestionsLength: scala.Int | scala.Double = null,
     minQueryLength: scala.Int | scala.Double = null,
@@ -106,7 +106,7 @@ object ReactTagsProps {
     tagComponent: reactLib.reactMod.ReactNs.SFC[TagComponentProps] = null,
     tags: js.Array[Tag] = null
   ): ReactTagsProps = {
-    val __obj = js.Dynamic.literal(handleAddition = handleAddition, handleDelete = handleDelete)
+    val __obj = js.Dynamic.literal(handleAddition = js.Any.fromFunction1(handleAddition), handleDelete = js.Any.fromFunction1(handleDelete))
     if (!js.isUndefined(allowBackspace)) __obj.updateDynamic("allowBackspace")(allowBackspace)
     if (!js.isUndefined(allowNew)) __obj.updateDynamic("allowNew")(allowNew)
     if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus)
@@ -114,9 +114,9 @@ object ReactTagsProps {
     if (classNames != null) __obj.updateDynamic("classNames")(classNames)
     if (delimiterChars != null) __obj.updateDynamic("delimiterChars")(delimiterChars)
     if (delimiters != null) __obj.updateDynamic("delimiters")(delimiters)
-    if (handleBlur != null) __obj.updateDynamic("handleBlur")(handleBlur)
-    if (handleFocus != null) __obj.updateDynamic("handleFocus")(handleFocus)
-    if (handleInputChange != null) __obj.updateDynamic("handleInputChange")(handleInputChange)
+    if (handleBlur != null) __obj.updateDynamic("handleBlur")(js.Any.fromFunction0(handleBlur))
+    if (handleFocus != null) __obj.updateDynamic("handleFocus")(js.Any.fromFunction0(handleFocus))
+    if (handleInputChange != null) __obj.updateDynamic("handleInputChange")(js.Any.fromFunction1(handleInputChange))
     if (inputAttributes != null) __obj.updateDynamic("inputAttributes")(inputAttributes)
     if (maxSuggestionsLength != null) __obj.updateDynamic("maxSuggestionsLength")(maxSuggestionsLength.asInstanceOf[js.Any])
     if (minQueryLength != null) __obj.updateDynamic("minQueryLength")(minQueryLength.asInstanceOf[js.Any])

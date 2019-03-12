@@ -37,48 +37,18 @@ trait SubscriptionsResource extends js.Object {
 object SubscriptionsResource {
   @scala.inline
   def apply(
-    activate: js.Function1[
-      gapiDotClientDotResellerLib.Anon_AltCustomerIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
-    ],
-    changePlan: js.Function1[
-      gapiDotClientDotResellerLib.Anon_AltCustomerIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
-    ],
-    changeRenewalSettings: js.Function1[
-      gapiDotClientDotResellerLib.Anon_AltCustomerIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
-    ],
-    changeSeats: js.Function1[
-      gapiDotClientDotResellerLib.Anon_AltCustomerIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotResellerLib.Anon_AltCustomerIdDeletionType, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotResellerLib.Anon_AltCustomerIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotResellerLib.Anon_AltCustomerAuthTokenCustomerId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
-    ],
-    list: js.Function1[
-      gapiDotClientDotResellerLib.Anon_AltCustomerAuthTokenCustomerIdCustomerNamePrefix, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Subscriptions]
-    ],
-    startPaidService: js.Function1[
-      gapiDotClientDotResellerLib.Anon_AltCustomerIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
-    ],
-    suspend: js.Function1[
-      gapiDotClientDotResellerLib.Anon_AltCustomerIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
-    ]
+    activate: gapiDotClientDotResellerLib.Anon_AltCustomerIdFields => gapiDotClientLib.gapiNs.clientNs.Request[Subscription],
+    changePlan: gapiDotClientDotResellerLib.Anon_AltCustomerIdFields => gapiDotClientLib.gapiNs.clientNs.Request[Subscription],
+    changeRenewalSettings: gapiDotClientDotResellerLib.Anon_AltCustomerIdFields => gapiDotClientLib.gapiNs.clientNs.Request[Subscription],
+    changeSeats: gapiDotClientDotResellerLib.Anon_AltCustomerIdFields => gapiDotClientLib.gapiNs.clientNs.Request[Subscription],
+    delete: gapiDotClientDotResellerLib.Anon_AltCustomerIdDeletionType => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotResellerLib.Anon_AltCustomerIdFields => gapiDotClientLib.gapiNs.clientNs.Request[Subscription],
+    insert: gapiDotClientDotResellerLib.Anon_AltCustomerAuthTokenCustomerId => gapiDotClientLib.gapiNs.clientNs.Request[Subscription],
+    list: gapiDotClientDotResellerLib.Anon_AltCustomerAuthTokenCustomerIdCustomerNamePrefix => gapiDotClientLib.gapiNs.clientNs.Request[Subscriptions],
+    startPaidService: gapiDotClientDotResellerLib.Anon_AltCustomerIdFields => gapiDotClientLib.gapiNs.clientNs.Request[Subscription],
+    suspend: gapiDotClientDotResellerLib.Anon_AltCustomerIdFields => gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
   ): SubscriptionsResource = {
-    val __obj = js.Dynamic.literal(activate = activate, changePlan = changePlan, changeRenewalSettings = changeRenewalSettings, changeSeats = changeSeats, delete = delete, get = get, insert = insert, list = list, startPaidService = startPaidService, suspend = suspend)
+    val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate), changePlan = js.Any.fromFunction1(changePlan), changeRenewalSettings = js.Any.fromFunction1(changeRenewalSettings), changeSeats = js.Any.fromFunction1(changeSeats), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), startPaidService = js.Any.fromFunction1(startPaidService), suspend = js.Any.fromFunction1(suspend))
   
     __obj.asInstanceOf[SubscriptionsResource]
   }

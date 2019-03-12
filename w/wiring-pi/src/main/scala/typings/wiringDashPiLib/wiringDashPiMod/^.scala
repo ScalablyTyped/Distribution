@@ -201,7 +201,7 @@ object ^ extends js.Object {
   def pcf8574Setup(pinBase: scala.Double, i2cAddress: scala.Double): scala.Double = js.native
   def pcf8591Setup(pinBase: scala.Double, i2cAddress: scala.Double): scala.Double = js.native
   def physPinToGpio(pin: scala.Double): scala.Double = js.native
-  def piBoardId(): wiringDashPiLib.wiringDashPiMod.PiBoardId = js.native
+  def piBoardId(): PiBoardId = js.native
   def piBoardRev(): scala.Double = js.native
   def piFaceSetup(pinBase: scala.Double): scala.Double = js.native
   def piGlow1(leg: scala.Double, ring: scala.Double, intensity: scala.Double): scala.Unit = js.native
@@ -262,8 +262,8 @@ object ^ extends js.Object {
   def tcs34725Enable(id: scala.Double): scala.Unit = js.native
   def tcs34725GetCorrelatedColorTemperature(r: scala.Double, g: scala.Double, b: scala.Double): scala.Unit = js.native
   def tcs34725GetIlluminance(r: scala.Double, g: scala.Double, b: scala.Double): scala.Unit = js.native
-  def tcs34725ReadHSV(id: scala.Double): wiringDashPiLib.wiringDashPiMod.tcs34725HSV = js.native
-  def tcs34725ReadRGBC(id: scala.Double): wiringDashPiLib.wiringDashPiMod.tcs34725RGBC = js.native
+  def tcs34725ReadHSV(id: scala.Double): tcs34725HSV = js.native
+  def tcs34725ReadRGBC(id: scala.Double): tcs34725RGBC = js.native
   def tcs34725SetInterrupt(id: scala.Double, aien: scala.Double): scala.Unit = js.native
   def tcs34725SetInterruptLimits(id: scala.Double, low: scala.Double, high: scala.Double): scala.Unit = js.native
   def tcs34725Setup(i2cAddress: scala.Double, integrationTime: scala.Double, gain: scala.Double): scala.Double = js.native

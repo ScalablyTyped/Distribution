@@ -14,7 +14,7 @@ package object ChaiNs {
   ]
   type PromisedEqual = js.Function2[/* value */ js.Any, /* message */ js.UndefOr[java.lang.String], PromisedAssertion]
   type PromisedInstanceOf = js.Function2[
-    /* constructor */ chaiLib.Object, 
+    /* constructor */ js.Object, 
     /* message */ js.UndefOr[java.lang.String], 
     PromisedAssertion
   ]
@@ -45,7 +45,7 @@ package object ChaiNs {
     PromisedAssertion
   ]
   type PromisedPropertyChange = js.Function3[
-    /* object */ chaiLib.Object, 
+    /* object */ js.Object, 
     /* property */ java.lang.String, 
     /* message */ js.UndefOr[java.lang.String], 
     PromisedAssertion

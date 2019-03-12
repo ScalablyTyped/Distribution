@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val version: scala.Double = js.native
-  def createClient(options: logglyLib.logglyMod.LogglyOptions): logglyLib.logglyMod.LogglyInstance = js.native
+  def createClient(options: LogglyOptions): LogglyInstance = js.native
 }
 

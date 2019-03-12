@@ -15,12 +15,8 @@ trait event extends js.Object {
 
 object event {
   @scala.inline
-  def apply(
-    $destroy: js.Function0[scala.Unit],
-    $transfor: js.Function1[js.Array[_], scala.Unit],
-    active: scala.Boolean
-  ): event = {
-    val __obj = js.Dynamic.literal($destroy = $destroy, $transfor = $transfor, active = active)
+  def apply($destroy: () => scala.Unit, $transfor: js.Array[_] => scala.Unit, active: scala.Boolean): event = {
+    val __obj = js.Dynamic.literal($destroy = js.Any.fromFunction0($destroy), $transfor = js.Any.fromFunction1($transfor), active = active)
   
     __obj.asInstanceOf[event]
   }

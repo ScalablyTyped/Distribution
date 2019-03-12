@@ -9,7 +9,7 @@ trait IBackdropProps extends js.Object {
   /** CSS class names to apply to backdrop element. */
   var backdropClassName: js.UndefOr[java.lang.String] = js.undefined
   /** HTML props for the backdrop element. */
-  var backdropProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement]] = js.undefined
+  var backdropProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement]] = js.undefined
   /**
     * Whether clicking outside the overlay element (either on backdrop when present or on document)
     * should invoke `onClose`.
@@ -27,7 +27,7 @@ object IBackdropProps {
   @scala.inline
   def apply(
     backdropClassName: java.lang.String = null,
-    backdropProps: reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement] = null,
+    backdropProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement] = null,
     canOutsideClickClose: js.UndefOr[scala.Boolean] = js.undefined,
     hasBackdrop: js.UndefOr[scala.Boolean] = js.undefined
   ): IBackdropProps = {

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WIZ_WIN32_FIND_DATA extends js.Object {
-  val cAlternate: activexDashInteropLib.SafeArray[scala.Double]
-  val cFileName: activexDashInteropLib.SafeArray[scala.Double]
+  val cAlternate: stdLib.SafeArray[scala.Double]
+  val cFileName: stdLib.SafeArray[scala.Double]
   val dwFileAttributes: scala.Double
   val dwReserved0: scala.Double
   val dwReserved1: scala.Double
@@ -21,8 +21,8 @@ trait WIZ_WIN32_FIND_DATA extends js.Object {
 object WIZ_WIN32_FIND_DATA {
   @scala.inline
   def apply(
-    cAlternate: activexDashInteropLib.SafeArray[scala.Double],
-    cFileName: activexDashInteropLib.SafeArray[scala.Double],
+    cAlternate: stdLib.SafeArray[scala.Double],
+    cFileName: stdLib.SafeArray[scala.Double],
     dwFileAttributes: scala.Double,
     dwReserved0: scala.Double,
     dwReserved1: scala.Double,

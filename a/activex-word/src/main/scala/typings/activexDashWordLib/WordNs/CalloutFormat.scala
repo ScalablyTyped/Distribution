@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class CalloutFormat protected () extends js.Object {
   var Accent: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   var Angle: activexDashOfficeLib.OfficeNs.MsoCalloutAngleType = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var AutoAttach: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   val AutoLength: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   var Border: activexDashOfficeLib.OfficeNs.MsoTriState = js.native

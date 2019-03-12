@@ -26,14 +26,14 @@ object Auth0LockAdditionalSelectSignUpField {
     options: js.Array[Auth0LockAdditionalSignUpFieldOption] | Auth0LockAdditionalSignUpFieldOptionsFunction = null,
     prefill: java.lang.String | Auth0LockAdditionalSignUpFieldPrefillFunction = null,
     `type`: auth0DashLockLib.auth0DashLockLibStrings.select = null,
-    validator: js.Function1[/* input */ java.lang.String, Anon_Hint] = null
+    validator: /* input */ java.lang.String => Anon_Hint = null
   ): Auth0LockAdditionalSelectSignUpField = {
     val __obj = js.Dynamic.literal(name = name, placeholder = placeholder)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (prefill != null) __obj.updateDynamic("prefill")(prefill.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (validator != null) __obj.updateDynamic("validator")(validator)
+    if (validator != null) __obj.updateDynamic("validator")(js.Any.fromFunction1(validator))
     __obj.asInstanceOf[Auth0LockAdditionalSelectSignUpField]
   }
 }

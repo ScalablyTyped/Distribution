@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
 object CloseButtonProps {
   @scala.inline
   def apply(
-    ButtonHTMLAttributes: reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement] = null,
+    ButtonHTMLAttributes: reactLib.reactMod.ReactNs.ButtonHTMLAttributes[stdLib.HTMLButtonElement] = null,
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null
   ): CloseButtonProps = {
     val __obj = js.Dynamic.literal()

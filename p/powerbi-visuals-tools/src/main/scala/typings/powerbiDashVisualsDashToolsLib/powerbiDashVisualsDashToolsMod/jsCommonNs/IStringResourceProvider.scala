@@ -12,11 +12,8 @@ trait IStringResourceProvider extends js.Object {
 
 object IStringResourceProvider {
   @scala.inline
-  def apply(
-    get: js.Function1[java.lang.String, java.lang.String],
-    getOptional: js.Function1[java.lang.String, java.lang.String]
-  ): IStringResourceProvider = {
-    val __obj = js.Dynamic.literal(get = get, getOptional = getOptional)
+  def apply(get: java.lang.String => java.lang.String, getOptional: java.lang.String => java.lang.String): IStringResourceProvider = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), getOptional = js.Any.fromFunction1(getOptional))
   
     __obj.asInstanceOf[IStringResourceProvider]
   }

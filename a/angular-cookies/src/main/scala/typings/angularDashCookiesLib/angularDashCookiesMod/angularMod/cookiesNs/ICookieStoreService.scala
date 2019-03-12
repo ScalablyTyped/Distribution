@@ -31,11 +31,11 @@ trait ICookieStoreService extends js.Object {
 object ICookieStoreService {
   @scala.inline
   def apply(
-    get: js.Function1[java.lang.String, js.Any],
-    put: js.Function2[java.lang.String, js.Any, scala.Unit],
-    remove: js.Function1[java.lang.String, scala.Unit]
+    get: java.lang.String => js.Any,
+    put: (java.lang.String, js.Any) => scala.Unit,
+    remove: java.lang.String => scala.Unit
   ): ICookieStoreService = {
-    val __obj = js.Dynamic.literal(get = get, put = put, remove = remove)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), put = js.Any.fromFunction2(put), remove = js.Any.fromFunction1(remove))
   
     __obj.asInstanceOf[ICookieStoreService]
   }

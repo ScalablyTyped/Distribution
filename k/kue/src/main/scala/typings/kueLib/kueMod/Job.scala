@@ -38,7 +38,7 @@ class Job protected ()
   def delay(ms: stdLib.Date): Job = js.native
   def delayed(): Job = js.native
   def delayed(fn: js.Function): Job = js.native
-  def error(err: nodeLib.Error): Job = js.native
+  def error(err: stdLib.Error): Job = js.native
   def events(events: scala.Boolean): Job = js.native
   def failed(): Job = js.native
   def failed(fn: js.Function): Job = js.native

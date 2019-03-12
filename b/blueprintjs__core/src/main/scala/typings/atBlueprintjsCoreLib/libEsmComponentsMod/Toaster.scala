@@ -24,7 +24,7 @@ object Toaster extends js.Object {
   def create(props: atBlueprintjsCoreLib.libEsmComponentsToastToasterMod.IToasterProps): atBlueprintjsCoreLib.libEsmComponentsToastToasterMod.IToaster = js.native
   def create(
     props: atBlueprintjsCoreLib.libEsmComponentsToastToasterMod.IToasterProps,
-    container: reactLib.HTMLElement
+    container: stdLib.HTMLElement
   ): atBlueprintjsCoreLib.libEsmComponentsToastToasterMod.IToaster = js.native
 }
 

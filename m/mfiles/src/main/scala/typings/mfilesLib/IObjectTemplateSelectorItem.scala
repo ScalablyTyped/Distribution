@@ -21,18 +21,18 @@ trait IObjectTemplateSelectorItem extends js.Object {
 object IObjectTemplateSelectorItem {
   @scala.inline
   def apply(
-    GetClassID: js.Function0[scala.Double],
-    GetClassName: js.Function0[java.lang.String],
-    GetGroupID: js.Function0[scala.Double],
-    GetGroupName: js.Function0[java.lang.String],
-    GetID: js.Function0[java.lang.String],
-    GetIconURL: js.Function0[java.lang.String],
-    GetName: js.Function0[java.lang.String],
-    GetTemplateID: js.Function0[scala.Double],
-    IsBlankItem: js.Function0[scala.Boolean],
-    IsDefaultTemplateForClass: js.Function0[scala.Boolean]
+    GetClassID: () => scala.Double,
+    GetClassName: () => java.lang.String,
+    GetGroupID: () => scala.Double,
+    GetGroupName: () => java.lang.String,
+    GetID: () => java.lang.String,
+    GetIconURL: () => java.lang.String,
+    GetName: () => java.lang.String,
+    GetTemplateID: () => scala.Double,
+    IsBlankItem: () => scala.Boolean,
+    IsDefaultTemplateForClass: () => scala.Boolean
   ): IObjectTemplateSelectorItem = {
-    val __obj = js.Dynamic.literal(GetClassID = GetClassID, GetClassName = GetClassName, GetGroupID = GetGroupID, GetGroupName = GetGroupName, GetID = GetID, GetIconURL = GetIconURL, GetName = GetName, GetTemplateID = GetTemplateID, IsBlankItem = IsBlankItem, IsDefaultTemplateForClass = IsDefaultTemplateForClass)
+    val __obj = js.Dynamic.literal(GetClassID = js.Any.fromFunction0(GetClassID), GetClassName = js.Any.fromFunction0(GetClassName), GetGroupID = js.Any.fromFunction0(GetGroupID), GetGroupName = js.Any.fromFunction0(GetGroupName), GetID = js.Any.fromFunction0(GetID), GetIconURL = js.Any.fromFunction0(GetIconURL), GetName = js.Any.fromFunction0(GetName), GetTemplateID = js.Any.fromFunction0(GetTemplateID), IsBlankItem = js.Any.fromFunction0(IsBlankItem), IsDefaultTemplateForClass = js.Any.fromFunction0(IsDefaultTemplateForClass))
   
     __obj.asInstanceOf[IObjectTemplateSelectorItem]
   }

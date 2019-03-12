@@ -14,11 +14,11 @@ trait Anon_In extends js.Object {
 object Anon_In {
   @scala.inline
   def apply(
-    In: js.Function1[scala.Double, scala.Double],
-    InOut: js.Function1[scala.Double, scala.Double],
-    Out: js.Function1[scala.Double, scala.Double]
+    In: scala.Double => scala.Double,
+    InOut: scala.Double => scala.Double,
+    Out: scala.Double => scala.Double
   ): Anon_In = {
-    val __obj = js.Dynamic.literal(In = In, InOut = InOut, Out = Out)
+    val __obj = js.Dynamic.literal(In = js.Any.fromFunction1(In), InOut = js.Any.fromFunction1(InOut), Out = js.Any.fromFunction1(Out))
   
     __obj.asInstanceOf[Anon_In]
   }

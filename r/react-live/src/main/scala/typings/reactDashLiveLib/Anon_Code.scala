@@ -20,14 +20,14 @@ object Anon_Code {
     mountStylesheet: js.UndefOr[scala.Boolean] = js.undefined,
     noInline: js.UndefOr[scala.Boolean] = js.undefined,
     scope: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    transformCode: js.Function1[/* code */ java.lang.String, java.lang.String] = null
+    transformCode: /* code */ java.lang.String => java.lang.String = null
   ): Anon_Code = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code)
     if (!js.isUndefined(mountStylesheet)) __obj.updateDynamic("mountStylesheet")(mountStylesheet)
     if (!js.isUndefined(noInline)) __obj.updateDynamic("noInline")(noInline)
     if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (transformCode != null) __obj.updateDynamic("transformCode")(transformCode)
+    if (transformCode != null) __obj.updateDynamic("transformCode")(js.Any.fromFunction1(transformCode))
     __obj.asInstanceOf[Anon_Code]
   }
 }

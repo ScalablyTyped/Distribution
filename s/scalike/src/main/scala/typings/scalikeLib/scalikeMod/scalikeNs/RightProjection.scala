@@ -21,19 +21,19 @@ trait RightProjection[A, B] extends js.Object {
 object RightProjection {
   @scala.inline
   def apply[A, B](
-    exists: js.Function1[js.Function1[/* b */ B, scala.Boolean], scala.Boolean],
-    filter: js.Function1[js.Function1[/* b */ B, scala.Boolean], Optional[Either[A, B]]],
-    flatMap: js.Function1[js.Function1[/* a */ B, Either[A, js.Any]], Either[A, js.Any | B]],
-    forall: js.Function1[js.Function1[/* b */ B, scala.Boolean], scala.Boolean],
-    foreach: js.Function1[js.Function1[/* b */ B, scala.Unit], scala.Unit],
-    get: js.Function0[B],
-    getOrElse: js.Function1[js.Any, B],
-    map: js.Function1[js.Function1[/* b */ B, js.Any], Either[A, js.Any | B]],
+    exists: js.Function1[/* b */ B, scala.Boolean] => scala.Boolean,
+    filter: js.Function1[/* b */ B, scala.Boolean] => Optional[Either[A, B]],
+    flatMap: js.Function1[/* a */ B, Either[A, js.Any]] => Either[A, js.Any | B],
+    forall: js.Function1[/* b */ B, scala.Boolean] => scala.Boolean,
+    foreach: js.Function1[/* b */ B, scala.Unit] => scala.Unit,
+    get: () => B,
+    getOrElse: js.Any => B,
+    map: js.Function1[/* b */ B, js.Any] => Either[A, js.Any | B],
     self: js.Any,
-    toOptional: js.Function0[Optional[B]],
-    toString: js.Function0[java.lang.String]
+    toOptional: () => Optional[B],
+    toString: () => java.lang.String
   ): RightProjection[A, B] = {
-    val __obj = js.Dynamic.literal(exists = exists, filter = filter, flatMap = flatMap, forall = forall, foreach = foreach, get = get, getOrElse = getOrElse, map = map, self = self, toOptional = toOptional, toString = toString)
+    val __obj = js.Dynamic.literal(exists = js.Any.fromFunction1(exists), filter = js.Any.fromFunction1(filter), flatMap = js.Any.fromFunction1(flatMap), forall = js.Any.fromFunction1(forall), foreach = js.Any.fromFunction1(foreach), get = js.Any.fromFunction0(get), getOrElse = js.Any.fromFunction1(getOrElse), map = js.Any.fromFunction1(map), self = self, toOptional = js.Any.fromFunction0(toOptional), toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[RightProjection[A, B]]
   }

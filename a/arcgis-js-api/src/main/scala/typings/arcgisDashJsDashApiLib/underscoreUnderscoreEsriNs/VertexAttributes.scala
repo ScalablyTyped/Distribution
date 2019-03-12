@@ -25,12 +25,12 @@ object VertexAttributes {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     position: stdLib.Float64Array,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     normal: stdLib.Float32Array = null
   ): VertexAttributes = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, position = position, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), position = position, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (normal != null) __obj.updateDynamic("normal")(normal)
     __obj.asInstanceOf[VertexAttributes]
   }

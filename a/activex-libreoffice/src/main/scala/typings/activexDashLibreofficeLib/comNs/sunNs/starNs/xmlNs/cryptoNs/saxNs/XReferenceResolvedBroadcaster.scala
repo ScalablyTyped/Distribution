@@ -33,13 +33,13 @@ trait XReferenceResolvedBroadcaster
 object XReferenceResolvedBroadcaster {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addReferenceResolvedListener: js.Function2[scala.Double, XReferenceResolvedListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeReferenceResolvedListener: js.Function2[scala.Double, XReferenceResolvedListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addReferenceResolvedListener: (scala.Double, XReferenceResolvedListener) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeReferenceResolvedListener: (scala.Double, XReferenceResolvedListener) => scala.Unit
   ): XReferenceResolvedBroadcaster = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addReferenceResolvedListener = addReferenceResolvedListener, queryInterface = queryInterface, release = release, removeReferenceResolvedListener = removeReferenceResolvedListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addReferenceResolvedListener = js.Any.fromFunction2(addReferenceResolvedListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeReferenceResolvedListener = js.Any.fromFunction2(removeReferenceResolvedListener))
   
     __obj.asInstanceOf[XReferenceResolvedBroadcaster]
   }

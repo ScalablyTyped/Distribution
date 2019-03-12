@@ -14,40 +14,40 @@ trait Props
   /**
     * Callback called when the component is clicked.
     */
-  var onClick: js.UndefOr[coreDashJsLib.Function] = js.undefined
-  var onContextMenu: js.UndefOr[coreDashJsLib.Function] = js.undefined
-  var onDoubleClick: js.UndefOr[coreDashJsLib.Function] = js.undefined
-  var onDrag: js.UndefOr[coreDashJsLib.Function] = js.undefined
-  var onDragEnd: js.UndefOr[coreDashJsLib.Function] = js.undefined
-  var onDragEnter: js.UndefOr[coreDashJsLib.Function] = js.undefined
-  var onDragExit: js.UndefOr[coreDashJsLib.Function] = js.undefined
-  var onDragLeave: js.UndefOr[coreDashJsLib.Function] = js.undefined
-  var onDragOver: js.UndefOr[coreDashJsLib.Function] = js.undefined
-  var onDragStart: js.UndefOr[coreDashJsLib.Function] = js.undefined
-  var onDrop: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onClick: js.UndefOr[js.Function] = js.undefined
+  var onContextMenu: js.UndefOr[js.Function] = js.undefined
+  var onDoubleClick: js.UndefOr[js.Function] = js.undefined
+  var onDrag: js.UndefOr[js.Function] = js.undefined
+  var onDragEnd: js.UndefOr[js.Function] = js.undefined
+  var onDragEnter: js.UndefOr[js.Function] = js.undefined
+  var onDragExit: js.UndefOr[js.Function] = js.undefined
+  var onDragLeave: js.UndefOr[js.Function] = js.undefined
+  var onDragOver: js.UndefOr[js.Function] = js.undefined
+  var onDragStart: js.UndefOr[js.Function] = js.undefined
+  var onDrop: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback called when the mouse press the Component.
     */
-  var onMouseDown: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onMouseDown: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback called when the mouse enters the Component.
     */
-  var onMouseEnter: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onMouseEnter: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback called when the mouse leaves the Component.
     */
-  var onMouseLeave: js.UndefOr[coreDashJsLib.Function] = js.undefined
-  var onMouseMove: js.UndefOr[coreDashJsLib.Function] = js.undefined
-  var onMouseOut: js.UndefOr[coreDashJsLib.Function] = js.undefined
-  var onMouseOver: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onMouseLeave: js.UndefOr[js.Function] = js.undefined
+  var onMouseMove: js.UndefOr[js.Function] = js.undefined
+  var onMouseOut: js.UndefOr[js.Function] = js.undefined
+  var onMouseOver: js.UndefOr[js.Function] = js.undefined
   /**
     * Fires after the mouse is released from the Component.
     */
-  var onMouseUp: js.UndefOr[coreDashJsLib.Function] = js.undefined
-  var onTouchCancel: js.UndefOr[coreDashJsLib.Function] = js.undefined
-  var onTouchEnd: js.UndefOr[coreDashJsLib.Function] = js.undefined
-  var onTouchMove: js.UndefOr[coreDashJsLib.Function] = js.undefined
-  var onTouchStart: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onMouseUp: js.UndefOr[js.Function] = js.undefined
+  var onTouchCancel: js.UndefOr[js.Function] = js.undefined
+  var onTouchEnd: js.UndefOr[js.Function] = js.undefined
+  var onTouchMove: js.UndefOr[js.Function] = js.undefined
+  var onTouchStart: js.UndefOr[js.Function] = js.undefined
   /**
     * Set inline style for the root component.
     */
@@ -59,28 +59,28 @@ object Props {
   def apply(
     className: java.lang.String = null,
     key: reactLib.reactMod.ReactNs.Key = null,
-    onClick: coreDashJsLib.Function = null,
-    onContextMenu: coreDashJsLib.Function = null,
-    onDoubleClick: coreDashJsLib.Function = null,
-    onDrag: coreDashJsLib.Function = null,
-    onDragEnd: coreDashJsLib.Function = null,
-    onDragEnter: coreDashJsLib.Function = null,
-    onDragExit: coreDashJsLib.Function = null,
-    onDragLeave: coreDashJsLib.Function = null,
-    onDragOver: coreDashJsLib.Function = null,
-    onDragStart: coreDashJsLib.Function = null,
-    onDrop: coreDashJsLib.Function = null,
-    onMouseDown: coreDashJsLib.Function = null,
-    onMouseEnter: coreDashJsLib.Function = null,
-    onMouseLeave: coreDashJsLib.Function = null,
-    onMouseMove: coreDashJsLib.Function = null,
-    onMouseOut: coreDashJsLib.Function = null,
-    onMouseOver: coreDashJsLib.Function = null,
-    onMouseUp: coreDashJsLib.Function = null,
-    onTouchCancel: coreDashJsLib.Function = null,
-    onTouchEnd: coreDashJsLib.Function = null,
-    onTouchMove: coreDashJsLib.Function = null,
-    onTouchStart: coreDashJsLib.Function = null,
+    onClick: js.Function = null,
+    onContextMenu: js.Function = null,
+    onDoubleClick: js.Function = null,
+    onDrag: js.Function = null,
+    onDragEnd: js.Function = null,
+    onDragEnter: js.Function = null,
+    onDragExit: js.Function = null,
+    onDragLeave: js.Function = null,
+    onDragOver: js.Function = null,
+    onDragStart: js.Function = null,
+    onDrop: js.Function = null,
+    onMouseDown: js.Function = null,
+    onMouseEnter: js.Function = null,
+    onMouseLeave: js.Function = null,
+    onMouseMove: js.Function = null,
+    onMouseOut: js.Function = null,
+    onMouseOver: js.Function = null,
+    onMouseUp: js.Function = null,
+    onTouchCancel: js.Function = null,
+    onTouchEnd: js.Function = null,
+    onTouchMove: js.Function = null,
+    onTouchStart: js.Function = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): Props = {
     val __obj = js.Dynamic.literal()

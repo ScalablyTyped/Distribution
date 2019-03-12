@@ -24,12 +24,8 @@ trait ServiceProvider extends js.Object {
 
 object ServiceProvider {
   @scala.inline
-  def apply(
-    check: js.Function0[scala.Unit],
-    config: js.Function1[Config, scala.Unit],
-    read: js.Function1[java.lang.String, js.Any]
-  ): ServiceProvider = {
-    val __obj = js.Dynamic.literal(check = check, config = config, read = read)
+  def apply(check: () => scala.Unit, config: Config => scala.Unit, read: java.lang.String => js.Any): ServiceProvider = {
+    val __obj = js.Dynamic.literal(check = js.Any.fromFunction0(check), config = js.Any.fromFunction1(config), read = js.Any.fromFunction1(read))
   
     __obj.asInstanceOf[ServiceProvider]
   }

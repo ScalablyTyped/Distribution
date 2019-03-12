@@ -23,32 +23,14 @@ trait StyleResource extends js.Object {
 object StyleResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StyleSetting]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotFusiontablesLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StyleSetting]
-    ],
-    list: js.Function1[
-      gapiDotClientDotFusiontablesLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StyleSettingList]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StyleSetting]
-    ],
-    update: js.Function1[
-      gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StyleSetting]
-    ]
+    delete: gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[StyleSetting],
+    insert: gapiDotClientDotFusiontablesLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[StyleSetting],
+    list: gapiDotClientDotFusiontablesLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[StyleSettingList],
+    patch: gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[StyleSetting],
+    update: gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[StyleSetting]
   ): StyleResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[StyleResource]
   }

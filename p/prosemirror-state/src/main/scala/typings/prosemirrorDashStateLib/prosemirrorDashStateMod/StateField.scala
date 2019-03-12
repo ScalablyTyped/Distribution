@@ -43,19 +43,14 @@ trait StateField[T, S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Sche
 object StateField {
   @scala.inline
   def apply[T, S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
-    apply: js.Function4[Transaction[S], T, EditorState[S], EditorState[S], T],
-    init: js.Function2[org.scalablytyped.runtime.StringDictionary[js.Any], EditorState[S], T],
-    fromJSON: js.Function3[
-      /* config */ org.scalablytyped.runtime.StringDictionary[js.Any], 
-      /* value */ js.Any, 
-      /* state */ EditorState[S], 
-      T
-    ] = null,
-    toJSON: js.Function1[/* value */ T, _] = null
+    apply: (Transaction[S], T, EditorState[S], EditorState[S]) => T,
+    init: (org.scalablytyped.runtime.StringDictionary[js.Any], EditorState[S]) => T,
+    fromJSON: (/* config */ org.scalablytyped.runtime.StringDictionary[js.Any], /* value */ js.Any, /* state */ EditorState[S]) => T = null,
+    toJSON: /* value */ T => _ = null
   ): StateField[T, S] = {
-    val __obj = js.Dynamic.literal(apply = apply, init = init)
-    if (fromJSON != null) __obj.updateDynamic("fromJSON")(fromJSON)
-    if (toJSON != null) __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction4(apply), init = js.Any.fromFunction2(init))
+    if (fromJSON != null) __obj.updateDynamic("fromJSON")(js.Any.fromFunction3(fromJSON))
+    if (toJSON != null) __obj.updateDynamic("toJSON")(js.Any.fromFunction1(toJSON))
     __obj.asInstanceOf[StateField[T, S]]
   }
 }

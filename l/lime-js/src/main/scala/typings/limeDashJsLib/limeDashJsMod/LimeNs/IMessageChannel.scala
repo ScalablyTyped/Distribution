@@ -12,8 +12,8 @@ trait IMessageChannel extends js.Object {
 
 object IMessageChannel {
   @scala.inline
-  def apply(onMessage: js.Function1[Message, js.Any], sendMessage: js.Function1[Message, scala.Unit]): IMessageChannel = {
-    val __obj = js.Dynamic.literal(onMessage = onMessage, sendMessage = sendMessage)
+  def apply(onMessage: Message => js.Any, sendMessage: Message => scala.Unit): IMessageChannel = {
+    val __obj = js.Dynamic.literal(onMessage = js.Any.fromFunction1(onMessage), sendMessage = js.Any.fromFunction1(sendMessage))
   
     __obj.asInstanceOf[IMessageChannel]
   }

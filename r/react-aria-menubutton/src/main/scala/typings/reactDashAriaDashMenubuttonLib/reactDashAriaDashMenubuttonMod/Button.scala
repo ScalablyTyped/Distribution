@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-aria-menubutton", "Button")
 @js.native
 class Button ()
-  extends reactLib.reactMod.Component[ButtonProps[reactLib.HTMLElement], js.Object, js.Any]
+  extends reactLib.reactMod.Component[ButtonProps[stdLib.HTMLElement], js.Object, js.Any]
 

@@ -56,21 +56,21 @@ trait FetchBlobResponse extends js.Object {
 object FetchBlobResponse {
   @scala.inline
   def apply(
-    base64: js.Function0[js.Any],
-    blob: js.Function2[java.lang.String, scala.Double, js.Promise[PolyfillBlob]],
+    base64: () => js.Any,
+    blob: (java.lang.String, scala.Double) => js.Promise[PolyfillBlob],
     data: js.Any,
-    flush: js.Function0[scala.Unit],
-    json: js.Function0[js.Any],
-    path: js.Function0[java.lang.String],
-    readFile: js.Function1[reactDashNativeDashFetchDashBlobLib.Encoding, js.Promise[_] | scala.Null],
-    readStream: js.Function1[reactDashNativeDashFetchDashBlobLib.Encoding, RNFetchBlobStream | scala.Null],
+    flush: () => scala.Unit,
+    json: () => js.Any,
+    path: () => java.lang.String,
+    readFile: reactDashNativeDashFetchDashBlobLib.Encoding => js.Promise[_] | scala.Null,
+    readStream: reactDashNativeDashFetchDashBlobLib.Encoding => RNFetchBlobStream | scala.Null,
     respInfo: RNFetchBlobResponseInfo,
-    session: js.Function1[java.lang.String, RNFetchBlobSession | scala.Null],
+    session: java.lang.String => RNFetchBlobSession | scala.Null,
     taskId: java.lang.String,
-    text: js.Function0[java.lang.String | js.Promise[_]],
+    text: () => java.lang.String | js.Promise[_],
     `type`: reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobLibStrings.base64 | reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobLibStrings.path | reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobLibStrings.utf8
   ): FetchBlobResponse = {
-    val __obj = js.Dynamic.literal(base64 = base64, blob = blob, data = data, flush = flush, json = json, path = path, readFile = readFile, readStream = readStream, respInfo = respInfo, session = session, taskId = taskId, text = text)
+    val __obj = js.Dynamic.literal(base64 = js.Any.fromFunction0(base64), blob = js.Any.fromFunction2(blob), data = data, flush = js.Any.fromFunction0(flush), json = js.Any.fromFunction0(json), path = js.Any.fromFunction0(path), readFile = js.Any.fromFunction1(readFile), readStream = js.Any.fromFunction1(readStream), respInfo = respInfo, session = js.Any.fromFunction1(session), taskId = taskId, text = js.Any.fromFunction0(text))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchBlobResponse]
   }

@@ -16,7 +16,7 @@ trait ChartDocument
 object ChartDocument {
   @scala.inline
   def apply(
-    Args: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    Args: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     ChartTypeManager: XChartTypeManager,
     CurrentController: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController,
     CurrentSelection: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
@@ -30,63 +30,48 @@ object ChartDocument {
     TitleObject: XTitle,
     URL: java.lang.String,
     UsedData: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource,
-    UsedRangeRepresentations: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    attachDataProvider: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataProvider, 
-      scala.Unit
-    ],
-    attachNumberFormatsSupplier: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XNumberFormatsSupplier, 
-      scala.Unit
-    ],
-    attachResource: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Boolean
-    ],
-    connectController: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, scala.Unit],
-    createDefaultChart: js.Function0[scala.Unit],
-    createInternalDataProvider: js.Function1[scala.Boolean, scala.Unit],
-    disconnectController: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    getArgs: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    getChartTypeManager: js.Function0[XChartTypeManager],
-    getCurrentController: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController],
-    getCurrentSelection: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    getDataProvider: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataProvider],
-    getFirstDiagram: js.Function0[XDiagram],
-    getNumberFormatSettings: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    getNumberFormats: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XNumberFormats],
-    getPageBackground: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    getRangeHighlighter: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XRangeHighlighter],
-    getStyleFamilies: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    getTitleObject: js.Function0[XTitle],
-    getURL: js.Function0[java.lang.String],
-    getUsedData: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource],
-    getUsedRangeRepresentations: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    hasControllersLocked: js.Function0[scala.Boolean],
-    hasInternalDataProvider: js.Function0[scala.Boolean],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    isOpenGLChart: js.Function0[scala.Boolean],
-    lockControllers: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    setArguments: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    setChartTypeManager: js.Function1[XChartTypeManager, scala.Unit],
-    setCurrentController: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, scala.Unit],
-    setFirstDiagram: js.Function1[XDiagram, scala.Unit],
-    setTitleObject: js.Function1[XTitle, scala.Unit],
-    unlockControllers: js.Function0[scala.Unit]
+    UsedRangeRepresentations: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    attachDataProvider: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataProvider => scala.Unit,
+    attachNumberFormatsSupplier: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XNumberFormatsSupplier => scala.Unit,
+    attachResource: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Boolean,
+    connectController: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController => scala.Unit,
+    createDefaultChart: () => scala.Unit,
+    createInternalDataProvider: scala.Boolean => scala.Unit,
+    disconnectController: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController => scala.Unit,
+    dispose: () => scala.Unit,
+    getArgs: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    getChartTypeManager: () => XChartTypeManager,
+    getCurrentController: () => activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController,
+    getCurrentSelection: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getDataProvider: () => activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataProvider,
+    getFirstDiagram: () => XDiagram,
+    getNumberFormatSettings: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    getNumberFormats: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XNumberFormats,
+    getPageBackground: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    getRangeHighlighter: () => activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XRangeHighlighter,
+    getStyleFamilies: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    getTitleObject: () => XTitle,
+    getURL: () => java.lang.String,
+    getUsedData: () => activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource,
+    getUsedRangeRepresentations: () => stdLib.SafeArray[java.lang.String],
+    hasControllersLocked: () => scala.Boolean,
+    hasInternalDataProvider: () => scala.Boolean,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    isOpenGLChart: () => scala.Boolean,
+    lockControllers: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    setArguments: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] => scala.Unit,
+    setChartTypeManager: XChartTypeManager => scala.Unit,
+    setCurrentController: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController => scala.Unit,
+    setFirstDiagram: XDiagram => scala.Unit,
+    setTitleObject: XTitle => scala.Unit,
+    unlockControllers: () => scala.Unit
   ): ChartDocument = {
-    val __obj = js.Dynamic.literal(Args = Args, ChartTypeManager = ChartTypeManager, CurrentController = CurrentController, CurrentSelection = CurrentSelection, DataProvider = DataProvider, FirstDiagram = FirstDiagram, NumberFormatSettings = NumberFormatSettings, NumberFormats = NumberFormats, PageBackground = PageBackground, RangeHighlighter = RangeHighlighter, StyleFamilies = StyleFamilies, TitleObject = TitleObject, URL = URL, UsedData = UsedData, UsedRangeRepresentations = UsedRangeRepresentations, acquire = acquire, addEventListener = addEventListener, attachDataProvider = attachDataProvider, attachNumberFormatsSupplier = attachNumberFormatsSupplier, attachResource = attachResource, connectController = connectController, createDefaultChart = createDefaultChart, createInternalDataProvider = createInternalDataProvider, disconnectController = disconnectController, dispose = dispose, getArgs = getArgs, getChartTypeManager = getChartTypeManager, getCurrentController = getCurrentController, getCurrentSelection = getCurrentSelection, getDataProvider = getDataProvider, getFirstDiagram = getFirstDiagram, getNumberFormatSettings = getNumberFormatSettings, getNumberFormats = getNumberFormats, getPageBackground = getPageBackground, getRangeHighlighter = getRangeHighlighter, getStyleFamilies = getStyleFamilies, getTitleObject = getTitleObject, getURL = getURL, getUsedData = getUsedData, getUsedRangeRepresentations = getUsedRangeRepresentations, hasControllersLocked = hasControllersLocked, hasInternalDataProvider = hasInternalDataProvider, initialize = initialize, isOpenGLChart = isOpenGLChart, lockControllers = lockControllers, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setArguments = setArguments, setChartTypeManager = setChartTypeManager, setCurrentController = setCurrentController, setFirstDiagram = setFirstDiagram, setTitleObject = setTitleObject, unlockControllers = unlockControllers)
+    val __obj = js.Dynamic.literal(Args = Args, ChartTypeManager = ChartTypeManager, CurrentController = CurrentController, CurrentSelection = CurrentSelection, DataProvider = DataProvider, FirstDiagram = FirstDiagram, NumberFormatSettings = NumberFormatSettings, NumberFormats = NumberFormats, PageBackground = PageBackground, RangeHighlighter = RangeHighlighter, StyleFamilies = StyleFamilies, TitleObject = TitleObject, URL = URL, UsedData = UsedData, UsedRangeRepresentations = UsedRangeRepresentations, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), attachDataProvider = js.Any.fromFunction1(attachDataProvider), attachNumberFormatsSupplier = js.Any.fromFunction1(attachNumberFormatsSupplier), attachResource = js.Any.fromFunction2(attachResource), connectController = js.Any.fromFunction1(connectController), createDefaultChart = js.Any.fromFunction0(createDefaultChart), createInternalDataProvider = js.Any.fromFunction1(createInternalDataProvider), disconnectController = js.Any.fromFunction1(disconnectController), dispose = js.Any.fromFunction0(dispose), getArgs = js.Any.fromFunction0(getArgs), getChartTypeManager = js.Any.fromFunction0(getChartTypeManager), getCurrentController = js.Any.fromFunction0(getCurrentController), getCurrentSelection = js.Any.fromFunction0(getCurrentSelection), getDataProvider = js.Any.fromFunction0(getDataProvider), getFirstDiagram = js.Any.fromFunction0(getFirstDiagram), getNumberFormatSettings = js.Any.fromFunction0(getNumberFormatSettings), getNumberFormats = js.Any.fromFunction0(getNumberFormats), getPageBackground = js.Any.fromFunction0(getPageBackground), getRangeHighlighter = js.Any.fromFunction0(getRangeHighlighter), getStyleFamilies = js.Any.fromFunction0(getStyleFamilies), getTitleObject = js.Any.fromFunction0(getTitleObject), getURL = js.Any.fromFunction0(getURL), getUsedData = js.Any.fromFunction0(getUsedData), getUsedRangeRepresentations = js.Any.fromFunction0(getUsedRangeRepresentations), hasControllersLocked = js.Any.fromFunction0(hasControllersLocked), hasInternalDataProvider = js.Any.fromFunction0(hasInternalDataProvider), initialize = js.Any.fromFunction1(initialize), isOpenGLChart = js.Any.fromFunction0(isOpenGLChart), lockControllers = js.Any.fromFunction0(lockControllers), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), setArguments = js.Any.fromFunction1(setArguments), setChartTypeManager = js.Any.fromFunction1(setChartTypeManager), setCurrentController = js.Any.fromFunction1(setCurrentController), setFirstDiagram = js.Any.fromFunction1(setFirstDiagram), setTitleObject = js.Any.fromFunction1(setTitleObject), unlockControllers = js.Any.fromFunction0(unlockControllers))
   
     __obj.asInstanceOf[ChartDocument]
   }

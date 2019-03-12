@@ -29,14 +29,14 @@ object SliderProps {
   def apply(
     value: scala.Double,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    format: js.Function1[/* value */ scala.Double, js.UndefOr[java.lang.String | scala.Double]] = null,
+    format: /* value */ scala.Double => js.UndefOr[java.lang.String | scala.Double] = null,
     handleLabel: js.UndefOr[scala.Boolean] = js.undefined,
     labels: org.scalablytyped.runtime.NumberDictionary[java.lang.String] = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
-    onChange: js.Function1[/* value */ scala.Double, scala.Unit] = null,
-    onChangeComplete: js.Function1[/* value */ scala.Double, scala.Unit] = null,
-    onChangeStart: js.Function1[/* value */ scala.Double, scala.Unit] = null,
+    onChange: /* value */ scala.Double => scala.Unit = null,
+    onChangeComplete: /* value */ scala.Double => scala.Unit = null,
+    onChangeStart: /* value */ scala.Double => scala.Unit = null,
     orientation: java.lang.String = null,
     reverse: js.UndefOr[scala.Boolean] = js.undefined,
     step: scala.Int | scala.Double = null,
@@ -44,14 +44,14 @@ object SliderProps {
   ): SliderProps = {
     val __obj = js.Dynamic.literal(value = value)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction1(format))
     if (!js.isUndefined(handleLabel)) __obj.updateDynamic("handleLabel")(handleLabel)
     if (labels != null) __obj.updateDynamic("labels")(labels)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onChangeComplete != null) __obj.updateDynamic("onChangeComplete")(onChangeComplete)
-    if (onChangeStart != null) __obj.updateDynamic("onChangeStart")(onChangeStart)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onChangeComplete != null) __obj.updateDynamic("onChangeComplete")(js.Any.fromFunction1(onChangeComplete))
+    if (onChangeStart != null) __obj.updateDynamic("onChangeStart")(js.Any.fromFunction1(onChangeStart))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation)
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])

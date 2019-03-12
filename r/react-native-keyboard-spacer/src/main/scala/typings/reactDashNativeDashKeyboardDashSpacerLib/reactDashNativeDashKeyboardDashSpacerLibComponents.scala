@@ -1,0 +1,18 @@
+package typings
+package reactDashNativeDashKeyboardDashSpacerLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashNativeDashKeyboardDashSpacerLibComponents {
+  @scala.inline
+  def ReactDashNativeDashKeyboardDashSpacer: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashNativeDashKeyboardDashSpacerLib.reactDashNativeDashKeyboardDashSpacerMod.KeyboardSpacerProps
+  ] = js.constructorOf[reactDashNativeDashKeyboardDashSpacerLib.reactDashNativeDashKeyboardDashSpacerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashNativeDashKeyboardDashSpacerLib.reactDashNativeDashKeyboardDashSpacerMod.KeyboardSpacerProps]]
+  @scala.inline
+  def KeyboardSpacerProps: reactDashNativeDashKeyboardDashSpacerLib.reactDashNativeDashKeyboardDashSpacerMod.KeyboardSpacerProps.type = reactDashNativeDashKeyboardDashSpacerLib.reactDashNativeDashKeyboardDashSpacerMod.KeyboardSpacerProps
+  type KeyboardSpacerProps = reactDashNativeDashKeyboardDashSpacerLib.reactDashNativeDashKeyboardDashSpacerMod.KeyboardSpacerProps
+}
+

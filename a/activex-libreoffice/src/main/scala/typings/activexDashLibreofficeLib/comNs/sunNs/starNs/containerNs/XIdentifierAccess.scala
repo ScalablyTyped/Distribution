@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /** provides access to the elements of a collection through a unique identifier. */
 trait XIdentifierAccess extends XElementAccess {
   /** @returns a sequence of all identifiers in this container.  The order of the identifiers is not specified. */
-  val Identifiers: activexDashInteropLib.SafeArray[scala.Double]
+  val Identifiers: stdLib.SafeArray[scala.Double]
   /**
     * @param Identifier specifies the identifier of the element that should be retrieved.
     * @returns the element with the specified identifier
@@ -17,23 +17,23 @@ trait XIdentifierAccess extends XElementAccess {
     */
   def getByIdentifier(Identifier: scala.Double): js.Any
   /** @returns a sequence of all identifiers in this container.  The order of the identifiers is not specified. */
-  def getIdentifiers(): activexDashInteropLib.SafeArray[scala.Double]
+  def getIdentifiers(): stdLib.SafeArray[scala.Double]
 }
 
 object XIdentifierAccess {
   @scala.inline
   def apply(
     ElementType: activexDashLibreofficeLib.`type`,
-    Identifiers: activexDashInteropLib.SafeArray[scala.Double],
-    acquire: js.Function0[scala.Unit],
-    getByIdentifier: js.Function1[scala.Double, js.Any],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    getIdentifiers: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    hasElements: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    Identifiers: stdLib.SafeArray[scala.Double],
+    acquire: () => scala.Unit,
+    getByIdentifier: scala.Double => js.Any,
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    getIdentifiers: () => stdLib.SafeArray[scala.Double],
+    hasElements: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XIdentifierAccess = {
-    val __obj = js.Dynamic.literal(ElementType = ElementType, Identifiers = Identifiers, acquire = acquire, getByIdentifier = getByIdentifier, getElementType = getElementType, getIdentifiers = getIdentifiers, hasElements = hasElements, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ElementType = ElementType, Identifiers = Identifiers, acquire = js.Any.fromFunction0(acquire), getByIdentifier = js.Any.fromFunction1(getByIdentifier), getElementType = js.Any.fromFunction0(getElementType), getIdentifiers = js.Any.fromFunction0(getIdentifiers), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XIdentifierAccess]
   }

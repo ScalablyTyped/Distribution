@@ -8,29 +8,29 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  val Array: pDashEventLib.ArrayConstructor = js.native
-  val ArrayBuffer: pDashEventLib.ArrayBufferConstructor = js.native
+  val Array: ArrayConstructor = js.native
+  val ArrayBuffer: ArrayBufferConstructor = js.native
   var Atomics: pDashEventLib.Atomics = js.native
-  val BigInt: pDashEventLib.BigIntConstructor = js.native
-  val BigInt64Array: pDashEventLib.BigInt64ArrayConstructor = js.native
-  val BigUint64Array: pDashEventLib.BigUint64ArrayConstructor = js.native
-  val Boolean: pDashEventLib.BooleanConstructor = js.native
-  val DataView: pDashEventLib.DataViewConstructor = js.native
-  val Date: pDashEventLib.DateConstructor = js.native
-  val Error: pDashEventLib.ErrorConstructor = js.native
-  val EvalError: pDashEventLib.EvalErrorConstructor = js.native
-  val Float32Array: pDashEventLib.Float32ArrayConstructor = js.native
-  val Float64Array: pDashEventLib.Float64ArrayConstructor = js.native
-  val Function: pDashEventLib.FunctionConstructor = js.native
+  val BigInt: BigIntConstructor = js.native
+  val BigInt64Array: BigInt64ArrayConstructor = js.native
+  val BigUint64Array: BigUint64ArrayConstructor = js.native
+  val Boolean: BooleanConstructor = js.native
+  val DataView: DataViewConstructor = js.native
+  val Date: DateConstructor = js.native
+  val Error: ErrorConstructor = js.native
+  val EvalError: EvalErrorConstructor = js.native
+  val Float32Array: Float32ArrayConstructor = js.native
+  val Float64Array: Float64ArrayConstructor = js.native
+  val Function: FunctionConstructor = js.native
   val Infinity: scala.Double = js.native
-  val Int16Array: pDashEventLib.Int16ArrayConstructor = js.native
-  val Int32Array: pDashEventLib.Int32ArrayConstructor = js.native
-  val Int8Array: pDashEventLib.Int8ArrayConstructor = js.native
+  val Int16Array: Int16ArrayConstructor = js.native
+  val Int32Array: Int32ArrayConstructor = js.native
+  val Int8Array: Int8ArrayConstructor = js.native
   /**
     * An intrinsic object that provides functions to convert JavaScript values to and from the JavaScript Object Notation (JSON) format.
     */
   val JSON: pDashEventLib.JSON = js.native
-  var Map: pDashEventLib.MapConstructor = js.native
+  var Map: MapConstructor = js.native
   /** An intrinsic object that provides basic mathematics functionality and constants. */
   val Math: pDashEventLib.Math = js.native
   /////////////////////////////
@@ -38,31 +38,31 @@ object ^ extends js.Object {
   /////////////////////////////
   val NaN: scala.Double = js.native
   /** An object that represents a number of any kind. All JavaScript numbers are 64-bit floating-point numbers. */
-  val Number: pDashEventLib.NumberConstructor = js.native
+  val Number: NumberConstructor = js.native
   /**
     * Provides functionality common to all JavaScript objects.
     */
-  val Object: pDashEventLib.ObjectConstructor = js.native
-  var Promise: pDashEventLib.PromiseConstructor = js.native
-  var Proxy: pDashEventLib.ProxyConstructor = js.native
-  val RangeError: pDashEventLib.RangeErrorConstructor = js.native
-  val ReferenceError: pDashEventLib.ReferenceErrorConstructor = js.native
-  val RegExp: pDashEventLib.RegExpConstructor = js.native
-  var Set: pDashEventLib.SetConstructor = js.native
-  var SharedArrayBuffer: pDashEventLib.SharedArrayBufferConstructor = js.native
+  val Object: ObjectConstructor = js.native
+  var Promise: PromiseConstructor = js.native
+  var Proxy: ProxyConstructor = js.native
+  val RangeError: RangeErrorConstructor = js.native
+  val ReferenceError: ReferenceErrorConstructor = js.native
+  val RegExp: RegExpConstructor = js.native
+  var Set: SetConstructor = js.native
+  var SharedArrayBuffer: SharedArrayBufferConstructor = js.native
   /**
     * Allows manipulation and formatting of text strings and determination and location of substrings within strings.
     */
-  val String: pDashEventLib.StringConstructor = js.native
-  val SyntaxError: pDashEventLib.SyntaxErrorConstructor = js.native
-  val TypeError: pDashEventLib.TypeErrorConstructor = js.native
-  val URIError: pDashEventLib.URIErrorConstructor = js.native
-  val Uint16Array: pDashEventLib.Uint16ArrayConstructor = js.native
-  val Uint32Array: pDashEventLib.Uint32ArrayConstructor = js.native
-  val Uint8Array: pDashEventLib.Uint8ArrayConstructor = js.native
-  val Uint8ClampedArray: pDashEventLib.Uint8ClampedArrayConstructor = js.native
-  var WeakMap: pDashEventLib.WeakMapConstructor = js.native
-  var WeakSet: pDashEventLib.WeakSetConstructor = js.native
+  val String: StringConstructor = js.native
+  val SyntaxError: SyntaxErrorConstructor = js.native
+  val TypeError: TypeErrorConstructor = js.native
+  val URIError: URIErrorConstructor = js.native
+  val Uint16Array: Uint16ArrayConstructor = js.native
+  val Uint32Array: Uint32ArrayConstructor = js.native
+  val Uint8Array: Uint8ArrayConstructor = js.native
+  val Uint8ClampedArray: Uint8ClampedArrayConstructor = js.native
+  var WeakMap: WeakMapConstructor = js.native
+  var WeakSet: WeakSetConstructor = js.native
   /**
     * Gets the unencoded version of an encoded Uniform Resource Identifier (URI).
     * @param encodedURI A value representing an encoded URI.

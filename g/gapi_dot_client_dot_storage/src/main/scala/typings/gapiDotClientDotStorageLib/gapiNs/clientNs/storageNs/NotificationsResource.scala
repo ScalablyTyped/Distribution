@@ -19,24 +19,12 @@ trait NotificationsResource extends js.Object {
 object NotificationsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketFieldsKeyNotification, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketFieldsKeyNotification, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Notification]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucket, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Notification]
-    ],
-    list: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucket, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Notifications]
-    ]
+    delete: gapiDotClientDotStorageLib.Anon_AltBucketFieldsKeyNotification => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotStorageLib.Anon_AltBucketFieldsKeyNotification => gapiDotClientLib.gapiNs.clientNs.Request[Notification],
+    insert: gapiDotClientDotStorageLib.Anon_AltBucket => gapiDotClientLib.gapiNs.clientNs.Request[Notification],
+    list: gapiDotClientDotStorageLib.Anon_AltBucket => gapiDotClientLib.gapiNs.clientNs.Request[Notifications]
   ): NotificationsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[NotificationsResource]
   }

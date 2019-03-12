@@ -13,12 +13,8 @@ trait ProfileMapper extends js.Object {
 
 object ProfileMapper {
   @scala.inline
-  def apply(
-    getClaims: js.Function0[js.Any],
-    getNameIdentifier: js.Function0[js.Any],
-    metadata: js.Array[MetadataItem]
-  ): ProfileMapper = {
-    val __obj = js.Dynamic.literal(getClaims = getClaims, getNameIdentifier = getNameIdentifier, metadata = metadata)
+  def apply(getClaims: () => js.Any, getNameIdentifier: () => js.Any, metadata: js.Array[MetadataItem]): ProfileMapper = {
+    val __obj = js.Dynamic.literal(getClaims = js.Any.fromFunction0(getClaims), getNameIdentifier = js.Any.fromFunction0(getNameIdentifier), metadata = metadata)
   
     __obj.asInstanceOf[ProfileMapper]
   }

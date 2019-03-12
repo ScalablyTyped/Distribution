@@ -24,7 +24,7 @@ trait AuthContextBase
     * Emitted when the client aborts the authentication request.
     */
   @JSName("on")
-  def on_abort(event: ssh2Lib.ssh2LibStrings.abort, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def on_abort(event: ssh2Lib.ssh2LibStrings.abort, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   /**
     * Rejects the authentication request.
     */

@@ -21,15 +21,15 @@ object GetLocalImgDataConfig {
   @scala.inline
   def apply(
     localId: java.lang.String,
-    success: js.Function1[wxDashJsDashSdkDashDtLib.Anon_LocalData, scala.Unit],
-    cancel: js.Function0[scala.Unit] = null,
-    complete: js.Function1[/* res */ js.UndefOr[js.Any], scala.Unit] = null,
-    fail: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit] = null
+    success: wxDashJsDashSdkDashDtLib.Anon_LocalData => scala.Unit,
+    cancel: () => scala.Unit = null,
+    complete: /* res */ js.UndefOr[js.Any] => scala.Unit = null,
+    fail: /* error */ js.UndefOr[js.Any] => scala.Unit = null
   ): GetLocalImgDataConfig = {
-    val __obj = js.Dynamic.literal(localId = localId, success = success)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    val __obj = js.Dynamic.literal(localId = localId, success = js.Any.fromFunction1(success))
+    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[GetLocalImgDataConfig]
   }
 }

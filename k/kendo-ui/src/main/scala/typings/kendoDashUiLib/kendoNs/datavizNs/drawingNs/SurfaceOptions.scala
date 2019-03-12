@@ -21,26 +21,26 @@ trait SurfaceOptions extends js.Object {
 object SurfaceOptions {
   @scala.inline
   def apply(
-    click: js.Function1[/* e */ SurfaceClickEvent, scala.Unit] = null,
+    click: /* e */ SurfaceClickEvent => scala.Unit = null,
     height: java.lang.String = null,
-    mouseenter: js.Function1[/* e */ SurfaceMouseenterEvent, scala.Unit] = null,
-    mouseleave: js.Function1[/* e */ SurfaceMouseleaveEvent, scala.Unit] = null,
+    mouseenter: /* e */ SurfaceMouseenterEvent => scala.Unit = null,
+    mouseleave: /* e */ SurfaceMouseleaveEvent => scala.Unit = null,
     name: java.lang.String = null,
     tooltip: SurfaceTooltip = null,
-    tooltipClose: js.Function1[/* e */ SurfaceTooltipCloseEvent, scala.Unit] = null,
-    tooltipOpen: js.Function1[/* e */ SurfaceTooltipOpenEvent, scala.Unit] = null,
+    tooltipClose: /* e */ SurfaceTooltipCloseEvent => scala.Unit = null,
+    tooltipOpen: /* e */ SurfaceTooltipOpenEvent => scala.Unit = null,
     `type`: java.lang.String = null,
     width: java.lang.String = null
   ): SurfaceOptions = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
     if (height != null) __obj.updateDynamic("height")(height)
-    if (mouseenter != null) __obj.updateDynamic("mouseenter")(mouseenter)
-    if (mouseleave != null) __obj.updateDynamic("mouseleave")(mouseleave)
+    if (mouseenter != null) __obj.updateDynamic("mouseenter")(js.Any.fromFunction1(mouseenter))
+    if (mouseleave != null) __obj.updateDynamic("mouseleave")(js.Any.fromFunction1(mouseleave))
     if (name != null) __obj.updateDynamic("name")(name)
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
-    if (tooltipClose != null) __obj.updateDynamic("tooltipClose")(tooltipClose)
-    if (tooltipOpen != null) __obj.updateDynamic("tooltipOpen")(tooltipOpen)
+    if (tooltipClose != null) __obj.updateDynamic("tooltipClose")(js.Any.fromFunction1(tooltipClose))
+    if (tooltipOpen != null) __obj.updateDynamic("tooltipOpen")(js.Any.fromFunction1(tooltipOpen))
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (width != null) __obj.updateDynamic("width")(width)
     __obj.asInstanceOf[SurfaceOptions]

@@ -44,7 +44,7 @@ trait XConversionDictionary
     * @param eDirection specifies if all left or all right parts of the entries should be returned.
     * @returns a list of all left or right parts of the dictionaries entries.
     */
-  def getConversionEntries(eDirection: ConversionDirection): activexDashInteropLib.SafeArray[java.lang.String]
+  def getConversionEntries(eDirection: ConversionDirection): stdLib.SafeArray[java.lang.String]
   /**
     * @returns the conversion type supported by the dictionary.
     * @see com.sun.star.linguistic2.ConversionDictionaryType
@@ -68,7 +68,7 @@ trait XConversionDictionary
     nLength: scala.Double,
     eDirection: ConversionDirection,
     nTextConversionOptions: scala.Double
-  ): activexDashInteropLib.SafeArray[java.lang.String]
+  ): stdLib.SafeArray[java.lang.String]
   /**
     * @returns the language supported by the dictionary.
     * @see com.sun.star.lang.Locale
@@ -104,29 +104,22 @@ object XConversionDictionary {
     ConversionType: scala.Double,
     Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
     Name: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    addEntry: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    clear: js.Function0[scala.Unit],
-    getConversionEntries: js.Function1[ConversionDirection, activexDashInteropLib.SafeArray[java.lang.String]],
-    getConversionType: js.Function0[scala.Double],
-    getConversions: js.Function5[
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      ConversionDirection, 
-      scala.Double, 
-      activexDashInteropLib.SafeArray[java.lang.String]
-    ],
-    getLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
-    getMaxCharCount: js.Function1[ConversionDirection, scala.Double],
-    getName: js.Function0[java.lang.String],
-    isActive: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEntry: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    setActive: js.Function1[scala.Boolean, scala.Unit]
+    acquire: () => scala.Unit,
+    addEntry: (java.lang.String, java.lang.String) => scala.Unit,
+    clear: () => scala.Unit,
+    getConversionEntries: ConversionDirection => stdLib.SafeArray[java.lang.String],
+    getConversionType: () => scala.Double,
+    getConversions: (java.lang.String, scala.Double, scala.Double, ConversionDirection, scala.Double) => stdLib.SafeArray[java.lang.String],
+    getLocale: () => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    getMaxCharCount: ConversionDirection => scala.Double,
+    getName: () => java.lang.String,
+    isActive: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEntry: (java.lang.String, java.lang.String) => scala.Unit,
+    setActive: scala.Boolean => scala.Unit
   ): XConversionDictionary = {
-    val __obj = js.Dynamic.literal(ConversionType = ConversionType, Locale = Locale, Name = Name, acquire = acquire, addEntry = addEntry, clear = clear, getConversionEntries = getConversionEntries, getConversionType = getConversionType, getConversions = getConversions, getLocale = getLocale, getMaxCharCount = getMaxCharCount, getName = getName, isActive = isActive, queryInterface = queryInterface, release = release, removeEntry = removeEntry, setActive = setActive)
+    val __obj = js.Dynamic.literal(ConversionType = ConversionType, Locale = Locale, Name = Name, acquire = js.Any.fromFunction0(acquire), addEntry = js.Any.fromFunction2(addEntry), clear = js.Any.fromFunction0(clear), getConversionEntries = js.Any.fromFunction1(getConversionEntries), getConversionType = js.Any.fromFunction0(getConversionType), getConversions = js.Any.fromFunction5(getConversions), getLocale = js.Any.fromFunction0(getLocale), getMaxCharCount = js.Any.fromFunction1(getMaxCharCount), getName = js.Any.fromFunction0(getName), isActive = js.Any.fromFunction0(isActive), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEntry = js.Any.fromFunction2(removeEntry), setActive = js.Any.fromFunction1(setActive))
   
     __obj.asInstanceOf[XConversionDictionary]
   }

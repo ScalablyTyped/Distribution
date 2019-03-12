@@ -12,7 +12,7 @@ object GameLiftNs extends js.Object {
     /**
       * Player response to the proposed match.
       */
-    var AcceptanceType: AcceptanceType
+    var AcceptanceType: awsDashSdkLib.clientsGameliftMod.GameLiftNs.AcceptanceType
     /**
       * Unique identifier for a player delivering the response. This parameter can include one or multiple player IDs.
       */
@@ -140,7 +140,7 @@ object GameLiftNs extends js.Object {
     /**
       * Object that specifies the fleet and routing type to use for the alias.
       */
-    var RoutingStrategy: RoutingStrategy
+    var RoutingStrategy: awsDashSdkLib.clientsGameliftMod.GameLiftNs.RoutingStrategy
   }
   
   trait CreateAliasOutput extends js.Object {
@@ -188,7 +188,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a build to be deployed on the new fleet. The build must have been successfully uploaded to Amazon GameLift and be in a READY status. This fleet setting cannot be changed once the fleet is created.
       */
-    var BuildId: BuildId
+    var BuildId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.BuildId
     /**
       * Human-readable description of a fleet.
       */
@@ -200,7 +200,7 @@ object GameLiftNs extends js.Object {
     /**
       * Name of an EC2 instance type that is supported in Amazon GameLift. A fleet instance type determines the computing resources of each instance in the fleet, including CPU, memory, storage, and networking capacity. Amazon GameLift supports the following EC2 instance types. See Amazon EC2 Instance Types for detailed descriptions.
       */
-    var EC2InstanceType: EC2InstanceType
+    var EC2InstanceType: awsDashSdkLib.clientsGameliftMod.GameLiftNs.EC2InstanceType
     /**
       * Indicates whether to use on-demand instances or spot instances for this fleet. If empty, the default is ON_DEMAND. Both categories of instances use identical hardware and configurations, based on the instance type selected for this fleet. You can acquire on-demand instances at any time for a fixed price and keep them as long as you need them. Spot instances have lower prices, but spot pricing is variable, and while in use they can be interrupted (with a two-minute notification). Learn more about Amazon GameLift spot instances with at  Set up Access to External Services. 
       */
@@ -396,7 +396,7 @@ object GameLiftNs extends js.Object {
     /**
       * Collection of matchmaking rules, formatted as a JSON string. Note that comments are not allowed in JSON, but most elements support a description field.
       */
-    var RuleSetBody: RuleSetBody
+    var RuleSetBody: awsDashSdkLib.clientsGameliftMod.GameLiftNs.RuleSetBody
   }
   
   trait CreateMatchmakingRuleSetOutput extends js.Object {
@@ -472,7 +472,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a fleet. This tells Amazon GameLift which GameLift VPC to peer with. 
       */
-    var FleetId: FleetId
+    var FleetId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.FleetId
     /**
       * Unique identifier for the AWS account with the VPC that you want to peer your Amazon GameLift fleet with. You can find your Account ID in the AWS Management Console under account settings.
       */
@@ -489,21 +489,21 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a fleet alias. Specify the alias you want to delete.
       */
-    var AliasId: AliasId
+    var AliasId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.AliasId
   }
   
   trait DeleteBuildInput extends js.Object {
     /**
       * Unique identifier for a build to delete.
       */
-    var BuildId: BuildId
+    var BuildId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.BuildId
   }
   
   trait DeleteFleetInput extends js.Object {
     /**
       * Unique identifier for a fleet to be deleted.
       */
-    var FleetId: FleetId
+    var FleetId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.FleetId
   }
   
   trait DeleteGameSessionQueueInput extends js.Object {
@@ -537,7 +537,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a fleet to be deleted.
       */
-    var FleetId: FleetId
+    var FleetId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.FleetId
     /**
       * Descriptive label that is associated with a scaling policy. Policy names do not need to be unique.
       */
@@ -561,7 +561,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a fleet. This value must match the fleet ID referenced in the VPC peering connection record.
       */
-    var FleetId: FleetId
+    var FleetId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.FleetId
     /**
       * Unique identifier for a VPC peering connection. This value is included in the VpcPeeringConnection object, which can be retrieved by calling DescribeVpcPeeringConnections.
       */
@@ -574,7 +574,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a fleet alias. Specify the alias you want to retrieve.
       */
-    var AliasId: AliasId
+    var AliasId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.AliasId
   }
   
   trait DescribeAliasOutput extends js.Object {
@@ -588,7 +588,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a build to retrieve properties for.
       */
-    var BuildId: BuildId
+    var BuildId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.BuildId
   }
   
   trait DescribeBuildOutput extends js.Object {
@@ -672,7 +672,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a fleet to get event logs for.
       */
-    var FleetId: FleetId
+    var FleetId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.FleetId
     /**
       * Maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential pages.
       */
@@ -702,7 +702,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a fleet to retrieve port settings for.
       */
-    var FleetId: FleetId
+    var FleetId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.FleetId
   }
   
   trait DescribeFleetPortSettingsOutput extends js.Object {
@@ -858,7 +858,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a fleet to retrieve instance information for.
       */
-    var FleetId: FleetId
+    var FleetId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.FleetId
     /**
       * Unique identifier for an instance to retrieve. Specify an instance ID or leave blank to retrieve all instances in the fleet.
       */
@@ -996,7 +996,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a fleet to get the run-time configuration for.
       */
-    var FleetId: FleetId
+    var FleetId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.FleetId
   }
   
   trait DescribeRuntimeConfigurationOutput extends js.Object {
@@ -1010,7 +1010,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a fleet to retrieve scaling policies for.
       */
-    var FleetId: FleetId
+    var FleetId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.FleetId
     /**
       * Maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential pages.
       */
@@ -1487,11 +1487,11 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a fleet that contains the instance you want access to. The fleet can be in any of the following statuses: ACTIVATING, ACTIVE, or ERROR. Fleets with an ERROR status may be accessible for a short time before they are deleted.
       */
-    var FleetId: FleetId
+    var FleetId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.FleetId
     /**
       * Unique identifier for an instance you want to get access to. You can access an instance in any status.
       */
-    var InstanceId: InstanceId
+    var InstanceId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.InstanceId
   }
   
   trait GetInstanceAccessOutput extends js.Object {
@@ -1744,7 +1744,7 @@ object GameLiftNs extends js.Object {
     /**
       * Collection of matchmaking rules, formatted as a JSON string. (Note that comments14 are not allowed in JSON, but most elements support a description field.)
       */
-    var RuleSetBody: RuleSetBody
+    var RuleSetBody: awsDashSdkLib.clientsGameliftMod.GameLiftNs.RuleSetBody
     /**
       * Unique identifier for a matchmaking rule set
       */
@@ -1911,11 +1911,11 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a fleet to apply this policy to. The fleet cannot be in any of the following statuses: ERROR or DELETING.
       */
-    var FleetId: FleetId
+    var FleetId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.FleetId
     /**
       * Name of the Amazon GameLift-defined metric that is used to trigger a scaling adjustment. For detailed descriptions of fleet metrics, see Monitor Amazon GameLift with Amazon CloudWatch.     ActivatingGameSessions -- Game sessions in the process of being created.    ActiveGameSessions -- Game sessions that are currently running.    ActiveInstances -- Fleet instances that are currently running at least one game session.    AvailableGameSessions -- Additional game sessions that fleet could host simultaneously, given current capacity.    AvailablePlayerSessions -- Empty player slots in currently active game sessions. This includes game sessions that are not currently accepting players. Reserved player slots are not included.    CurrentPlayerSessions -- Player slots in active game sessions that are being used by a player or are reserved for a player.     IdleInstances -- Active instances that are currently hosting zero game sessions.     PercentAvailableGameSessions -- Unused percentage of the total number of game sessions that a fleet could host simultaneously, given current capacity. Use this metric for a target-based scaling policy.    PercentIdleInstances -- Percentage of the total number of active instances that are hosting zero game sessions.    QueueDepth -- Pending game session placement requests, in any queue, where the current fleet is the top-priority destination.    WaitTime -- Current wait time for pending game session placement requests, in any queue, where the current fleet is the top-priority destination.   
       */
-    var MetricName: MetricName
+    var MetricName: awsDashSdkLib.clientsGameliftMod.GameLiftNs.MetricName
     /**
       * Descriptive label that is associated with a scaling policy. Policy names do not need to be unique. A fleet can have only one scaling policy with the same name.
       */
@@ -1953,7 +1953,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a build to get credentials for.
       */
-    var BuildId: BuildId
+    var BuildId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.BuildId
   }
   
   trait RequestUploadCredentialsOutput extends js.Object {
@@ -1971,7 +1971,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for the alias you want to resolve.
       */
-    var AliasId: AliasId
+    var AliasId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.AliasId
   }
   
   trait ResolveAliasOutput extends js.Object {
@@ -2145,7 +2145,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a fleet
       */
-    var FleetId: FleetId
+    var FleetId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.FleetId
   }
   
   trait StartFleetActionsOutput extends js.Object
@@ -2170,7 +2170,7 @@ object GameLiftNs extends js.Object {
     /**
       * Name of the queue to use to place the new game session.
       */
-    var GameSessionQueueName: GameSessionQueueName
+    var GameSessionQueueName: awsDashSdkLib.clientsGameliftMod.GameLiftNs.GameSessionQueueName
     /**
       * Maximum number of players that can be connected simultaneously to the game session.
       */
@@ -2248,7 +2248,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a fleet
       */
-    var FleetId: FleetId
+    var FleetId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.FleetId
   }
   
   trait StopFleetActionsOutput extends js.Object
@@ -3829,7 +3829,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a fleet alias. Specify the alias you want to update.
       */
-    var AliasId: AliasId
+    var AliasId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.AliasId
     /**
       * Human-readable description of an alias.
       */
@@ -3855,7 +3855,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a build to update.
       */
-    var BuildId: BuildId
+    var BuildId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.BuildId
     /**
       * Descriptive label that is associated with a build. Build names do not need to be unique. 
       */
@@ -3881,7 +3881,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a fleet to update attribute metadata for.
       */
-    var FleetId: FleetId
+    var FleetId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.FleetId
     /**
       * Names of metric groups to include this fleet in. Amazon CloudWatch uses a fleet metric group is to aggregate metrics from multiple fleets. Use an existing metric group name to add this fleet to the group. Or use a new name to create a new metric group. A fleet can only be included in one metric group at a time.
       */
@@ -3915,7 +3915,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a fleet to update capacity for.
       */
-    var FleetId: FleetId
+    var FleetId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.FleetId
     /**
       * Maximum value allowed for the fleet's instance count. Default if not set is 1.
       */
@@ -3937,7 +3937,7 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a fleet to update port settings for.
       */
-    var FleetId: FleetId
+    var FleetId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.FleetId
     /**
       * Collection of port settings to be added to the fleet record.
       */
@@ -4073,11 +4073,11 @@ object GameLiftNs extends js.Object {
     /**
       * Unique identifier for a fleet to update run-time configuration for.
       */
-    var FleetId: FleetId
+    var FleetId: awsDashSdkLib.clientsGameliftMod.GameLiftNs.FleetId
     /**
       * Instructions for launching server processes on each instance in the fleet. The run-time configuration for a fleet has a collection of server process configurations, one for each type of server process to run on an instance. A server process configuration specifies the location of the server executable, launch parameters, and the number of concurrent processes with that configuration to maintain on each instance.
       */
-    var RuntimeConfiguration: RuntimeConfiguration
+    var RuntimeConfiguration: awsDashSdkLib.clientsGameliftMod.GameLiftNs.RuntimeConfiguration
   }
   
   trait UpdateRuntimeConfigurationOutput extends js.Object {
@@ -4091,7 +4091,7 @@ object GameLiftNs extends js.Object {
     /**
       * Collection of matchmaking rules to validate, formatted as a JSON string.
       */
-    var RuleSetBody: RuleSetBody
+    var RuleSetBody: awsDashSdkLib.clientsGameliftMod.GameLiftNs.RuleSetBody
   }
   
   trait ValidateMatchmakingRuleSetOutput extends js.Object {

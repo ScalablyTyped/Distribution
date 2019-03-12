@@ -12,8 +12,8 @@ trait Intercept extends js.Object {
 
 object Intercept {
   @scala.inline
-  def apply(abort: js.Function0[scala.Unit], passthrough: js.Function0[scala.Unit]): Intercept = {
-    val __obj = js.Dynamic.literal(abort = abort, passthrough = passthrough)
+  def apply(abort: () => scala.Unit, passthrough: () => scala.Unit): Intercept = {
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), passthrough = js.Any.fromFunction0(passthrough))
   
     __obj.asInstanceOf[Intercept]
   }

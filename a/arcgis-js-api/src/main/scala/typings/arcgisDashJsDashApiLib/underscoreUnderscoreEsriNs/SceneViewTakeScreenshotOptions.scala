@@ -47,15 +47,15 @@ object SceneViewTakeScreenshotOptions {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     area: SceneViewTakeScreenshotOptionsArea = null,
     format: java.lang.String = null,
     height: scala.Int | scala.Double = null,
     quality: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): SceneViewTakeScreenshotOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (area != null) __obj.updateDynamic("area")(area)
     if (format != null) __obj.updateDynamic("format")(format)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

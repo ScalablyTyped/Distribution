@@ -8,51 +8,51 @@ import scala.scalajs.js.annotation._
 @JSImport("timezonecomplete/dist/lib/parse", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def parse(dateTimeString: java.lang.String, formatString: java.lang.String): timezonecompleteLib.distLibParseMod.AwareTimeStruct = js.native
+  def parse(dateTimeString: java.lang.String, formatString: java.lang.String): AwareTimeStruct = js.native
   def parse(
     dateTimeString: java.lang.String,
     formatString: java.lang.String,
     overrideZone: js.UndefOr[scala.Nothing],
     allowTrailing: scala.Boolean
-  ): timezonecompleteLib.distLibParseMod.AwareTimeStruct = js.native
+  ): AwareTimeStruct = js.native
   def parse(
     dateTimeString: java.lang.String,
     formatString: java.lang.String,
     overrideZone: js.UndefOr[scala.Nothing],
     allowTrailing: scala.Boolean,
     locale: timezonecompleteLib.distLibLocaleMod.PartialLocale
-  ): timezonecompleteLib.distLibParseMod.AwareTimeStruct = js.native
+  ): AwareTimeStruct = js.native
   def parse(
     dateTimeString: java.lang.String,
     formatString: java.lang.String,
     overrideZone: scala.Null,
     allowTrailing: scala.Boolean
-  ): timezonecompleteLib.distLibParseMod.AwareTimeStruct = js.native
+  ): AwareTimeStruct = js.native
   def parse(
     dateTimeString: java.lang.String,
     formatString: java.lang.String,
     overrideZone: scala.Null,
     allowTrailing: scala.Boolean,
     locale: timezonecompleteLib.distLibLocaleMod.PartialLocale
-  ): timezonecompleteLib.distLibParseMod.AwareTimeStruct = js.native
+  ): AwareTimeStruct = js.native
   def parse(
     dateTimeString: java.lang.String,
     formatString: java.lang.String,
     overrideZone: timezonecompleteLib.distLibTimezoneMod.TimeZone
-  ): timezonecompleteLib.distLibParseMod.AwareTimeStruct = js.native
+  ): AwareTimeStruct = js.native
   def parse(
     dateTimeString: java.lang.String,
     formatString: java.lang.String,
     overrideZone: timezonecompleteLib.distLibTimezoneMod.TimeZone,
     allowTrailing: scala.Boolean
-  ): timezonecompleteLib.distLibParseMod.AwareTimeStruct = js.native
+  ): AwareTimeStruct = js.native
   def parse(
     dateTimeString: java.lang.String,
     formatString: java.lang.String,
     overrideZone: timezonecompleteLib.distLibTimezoneMod.TimeZone,
     allowTrailing: scala.Boolean,
     locale: timezonecompleteLib.distLibLocaleMod.PartialLocale
-  ): timezonecompleteLib.distLibParseMod.AwareTimeStruct = js.native
+  ): AwareTimeStruct = js.native
   def parseable(dateTimeString: java.lang.String, formatString: java.lang.String): scala.Boolean = js.native
   def parseable(dateTimeString: java.lang.String, formatString: java.lang.String, allowTrailing: scala.Boolean): scala.Boolean = js.native
   def parseable(

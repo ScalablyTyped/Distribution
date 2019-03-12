@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("cradle", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def setup(options: cradleLib.cradleMod.Options): scala.Unit = js.native
+  def setup(options: Options): scala.Unit = js.native
 }
 

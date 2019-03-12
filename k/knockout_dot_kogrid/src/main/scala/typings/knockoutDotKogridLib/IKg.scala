@@ -24,15 +24,15 @@ trait IKg extends js.Object {
 object IKg {
   @scala.inline
   def apply(
-    aggregateTemplate: js.Function0[java.lang.String],
-    defaultCellTemplate: js.Function0[java.lang.String],
-    defaultGridTemplate: js.Function0[java.lang.String],
-    defaultHeaderCellTemplate: js.Function0[java.lang.String],
-    defaultHeaderRowTemplate: js.Function0[java.lang.String],
-    defaultRowTemplate: js.Function0[java.lang.String],
+    aggregateTemplate: () => java.lang.String,
+    defaultCellTemplate: () => java.lang.String,
+    defaultGridTemplate: () => java.lang.String,
+    defaultHeaderCellTemplate: () => java.lang.String,
+    defaultHeaderRowTemplate: () => java.lang.String,
+    defaultRowTemplate: () => java.lang.String,
     domUtilityService: knockoutDotKogridLib.kgNs.DomUtilityService
   ): IKg = {
-    val __obj = js.Dynamic.literal(aggregateTemplate = aggregateTemplate, defaultCellTemplate = defaultCellTemplate, defaultGridTemplate = defaultGridTemplate, defaultHeaderCellTemplate = defaultHeaderCellTemplate, defaultHeaderRowTemplate = defaultHeaderRowTemplate, defaultRowTemplate = defaultRowTemplate, domUtilityService = domUtilityService)
+    val __obj = js.Dynamic.literal(aggregateTemplate = js.Any.fromFunction0(aggregateTemplate), defaultCellTemplate = js.Any.fromFunction0(defaultCellTemplate), defaultGridTemplate = js.Any.fromFunction0(defaultGridTemplate), defaultHeaderCellTemplate = js.Any.fromFunction0(defaultHeaderCellTemplate), defaultHeaderRowTemplate = js.Any.fromFunction0(defaultHeaderRowTemplate), defaultRowTemplate = js.Any.fromFunction0(defaultRowTemplate), domUtilityService = domUtilityService)
   
     __obj.asInstanceOf[IKg]
   }

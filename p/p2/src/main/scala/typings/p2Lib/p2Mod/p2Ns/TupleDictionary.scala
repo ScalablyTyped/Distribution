@@ -19,16 +19,16 @@ trait TupleDictionary extends js.Object {
 object TupleDictionary {
   @scala.inline
   def apply(
-    copy: js.Function1[TupleDictionary, scala.Unit],
+    copy: TupleDictionary => scala.Unit,
     data: js.Any,
-    get: js.Function2[scala.Double, scala.Double, scala.Double],
-    getByKey: js.Function1[scala.Double, js.Any],
-    getKey: js.Function2[scala.Double, scala.Double, java.lang.String],
+    get: (scala.Double, scala.Double) => scala.Double,
+    getByKey: scala.Double => js.Any,
+    getKey: (scala.Double, scala.Double) => java.lang.String,
     keys: js.Array[scala.Double],
-    reset: js.Function0[scala.Unit],
-    set: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double]
+    reset: () => scala.Unit,
+    set: (scala.Double, scala.Double, scala.Double) => scala.Double
   ): TupleDictionary = {
-    val __obj = js.Dynamic.literal(copy = copy, data = data, get = get, getByKey = getByKey, getKey = getKey, keys = keys, reset = reset, set = set)
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction1(copy), data = data, get = js.Any.fromFunction2(get), getByKey = js.Any.fromFunction1(getByKey), getKey = js.Any.fromFunction2(getKey), keys = keys, reset = js.Any.fromFunction0(reset), set = js.Any.fromFunction3(set))
   
     __obj.asInstanceOf[TupleDictionary]
   }

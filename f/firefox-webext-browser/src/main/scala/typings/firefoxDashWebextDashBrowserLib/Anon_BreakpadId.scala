@@ -39,16 +39,16 @@ trait Anon_BreakpadId extends js.Object {
 object Anon_BreakpadId {
   @scala.inline
   def apply(
-    getProfile: js.Function0[js.Promise[_]],
-    getProfileAsArrayBuffer: js.Function0[js.Promise[_]],
-    getSymbols: js.Function2[java.lang.String, java.lang.String, js.Promise[_]],
+    getProfile: () => js.Promise[_],
+    getProfileAsArrayBuffer: () => js.Promise[_],
+    getSymbols: (java.lang.String, java.lang.String) => js.Promise[_],
     onRunning: WebExtEvent[js.Function1[/* isRunning */ scala.Boolean, scala.Unit]],
-    pause: js.Function0[js.Promise[_]],
-    resume: js.Function0[js.Promise[_]],
-    start: js.Function1[Anon_BufferSize, js.Promise[_]],
-    stop: js.Function0[js.Promise[_]]
+    pause: () => js.Promise[_],
+    resume: () => js.Promise[_],
+    start: Anon_BufferSize => js.Promise[_],
+    stop: () => js.Promise[_]
   ): Anon_BreakpadId = {
-    val __obj = js.Dynamic.literal(getProfile = getProfile, getProfileAsArrayBuffer = getProfileAsArrayBuffer, getSymbols = getSymbols, onRunning = onRunning, pause = pause, resume = resume, start = start, stop = stop)
+    val __obj = js.Dynamic.literal(getProfile = js.Any.fromFunction0(getProfile), getProfileAsArrayBuffer = js.Any.fromFunction0(getProfileAsArrayBuffer), getSymbols = js.Any.fromFunction2(getSymbols), onRunning = onRunning, pause = js.Any.fromFunction0(pause), resume = js.Any.fromFunction0(resume), start = js.Any.fromFunction1(start), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[Anon_BreakpadId]
   }

@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Environment extends js.Object {
-  var Browser: Browser
-  var Features: Features
-  var OS: OS
+  var Browser: jwplayerLib.jwplayerNs.Browser
+  var Features: jwplayerLib.jwplayerNs.Features
+  var OS: jwplayerLib.jwplayerNs.OS
 }
 
 object Environment {

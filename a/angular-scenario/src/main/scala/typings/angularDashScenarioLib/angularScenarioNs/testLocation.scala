@@ -14,13 +14,8 @@ trait testLocation extends js.Object {
 
 object testLocation {
   @scala.inline
-  def apply(
-    hash: js.Function0[Future],
-    path: js.Function0[Future],
-    search: js.Function0[Future],
-    url: js.Function0[Future]
-  ): testLocation = {
-    val __obj = js.Dynamic.literal(hash = hash, path = path, search = search, url = url)
+  def apply(hash: () => Future, path: () => Future, search: () => Future, url: () => Future): testLocation = {
+    val __obj = js.Dynamic.literal(hash = js.Any.fromFunction0(hash), path = js.Any.fromFunction0(path), search = js.Any.fromFunction0(search), url = js.Any.fromFunction0(url))
   
     __obj.asInstanceOf[testLocation]
   }

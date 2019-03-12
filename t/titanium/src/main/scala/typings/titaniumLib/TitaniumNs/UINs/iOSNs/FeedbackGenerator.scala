@@ -44,29 +44,29 @@ trait FeedbackGenerator
 object FeedbackGenerator {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     bubbleParent: scala.Boolean,
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getApiName: js.Function0[java.lang.String],
-    getBubbleParent: js.Function0[scala.Boolean],
-    getType: js.Function0[scala.Double],
-    impactOccurred: js.Function0[scala.Unit],
-    notificationOccurred: js.Function1[scala.Double, scala.Unit],
-    prepare: js.Function0[scala.Unit],
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    selectionChanged: js.Function0[scala.Unit],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
-    setType: js.Function1[scala.Double, scala.Unit],
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
+    getApiName: () => java.lang.String,
+    getBubbleParent: () => scala.Boolean,
+    getType: () => scala.Double,
+    impactOccurred: () => scala.Unit,
+    notificationOccurred: scala.Double => scala.Unit,
+    prepare: () => scala.Unit,
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    selectionChanged: () => scala.Unit,
+    setBubbleParent: scala.Boolean => scala.Unit,
+    setType: scala.Double => scala.Unit,
     `type`: scala.Double,
-    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    getLifecycleContainer: () => titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
   ): FeedbackGenerator = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, getType = getType, impactOccurred = impactOccurred, notificationOccurred = notificationOccurred, prepare = prepare, removeEventListener = removeEventListener, selectionChanged = selectionChanged, setBubbleParent = setBubbleParent, setType = setType)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getType = js.Any.fromFunction0(getType), impactOccurred = js.Any.fromFunction0(impactOccurred), notificationOccurred = js.Any.fromFunction1(notificationOccurred), prepare = js.Any.fromFunction0(prepare), removeEventListener = js.Any.fromFunction2(removeEventListener), selectionChanged = js.Any.fromFunction0(selectionChanged), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setType = js.Any.fromFunction1(setType))
     __obj.updateDynamic("type")(`type`)
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
     __obj.asInstanceOf[FeedbackGenerator]

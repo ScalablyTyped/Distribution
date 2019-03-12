@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.FormRegion")
 @js.native
 class FormRegion protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   var Detail: java.lang.String = js.native
   val DisplayName: java.lang.String = js.native
   var EnableAutoLayout: scala.Boolean = js.native
   val Form: js.Any = js.native
   val FormRegionMode: OlFormRegionMode = js.native
-  val Inspector: Inspector = js.native
+  val Inspector: activexDashOutlookLib.OutlookNs.Inspector = js.native
   val InternalName: java.lang.String = js.native
   val IsExpanded: scala.Boolean = js.native
   val Item: js.Any = js.native

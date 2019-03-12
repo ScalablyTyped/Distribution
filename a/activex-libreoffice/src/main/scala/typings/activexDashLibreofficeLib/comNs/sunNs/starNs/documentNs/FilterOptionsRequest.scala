@@ -14,7 +14,7 @@ trait FilterOptionsRequest
   /** The model of the document that should be provided to filters that supports {@link XExporter} interface. */
   var rModel: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel
   /** The Media-descriptor of the document */
-  var rProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  var rProperties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
 }
 
 object FilterOptionsRequest {
@@ -23,7 +23,7 @@ object FilterOptionsRequest {
     Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     Message: java.lang.String,
     rModel: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel,
-    rProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    rProperties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   ): FilterOptionsRequest = {
     val __obj = js.Dynamic.literal(Context = Context, Message = Message, rModel = rModel, rProperties = rProperties)
   

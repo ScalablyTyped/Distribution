@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Validation protected () extends js.Object {
   val AlertStyle: scala.Double = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Creator: XlCreator = js.native
   var ErrorMessage: java.lang.String = js.native
   var ErrorTitle: java.lang.String = js.native

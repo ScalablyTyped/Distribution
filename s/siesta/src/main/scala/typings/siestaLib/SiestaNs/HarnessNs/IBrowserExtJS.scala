@@ -27,7 +27,7 @@ object IBrowserExtJS {
     autoScrollElementsIntoView: scala.Boolean,
     breakOnFail: scala.Boolean,
     cachePreload: scala.Boolean,
-    configure: js.Function1[js.Any, scala.Unit],
+    configure: js.Any => scala.Unit,
     coverageUnit: java.lang.String,
     defaultTimeout: scala.Boolean,
     disableCaching: scala.Boolean,
@@ -53,7 +53,7 @@ object IBrowserExtJS {
     separateContext: scala.Boolean,
     simulateEventsWith: java.lang.String,
     speedRun: scala.Boolean,
-    start: js.Function1[/* repeated */ js.Any, scala.Unit],
+    start: /* repeated */ js.Any => scala.Unit,
     subTestTimeout: scala.Double,
     testClass: siestaLib.SiestaNs.ITest,
     title: java.lang.String,
@@ -66,7 +66,7 @@ object IBrowserExtJS {
     waitForExtReady: js.Any,
     waitForTimeout: scala.Double
   ): IBrowserExtJS = {
-    val __obj = js.Dynamic.literal(allowExtVersionChange = allowExtVersionChange, alsoPreload = alsoPreload, autoCheckGlobals = autoCheckGlobals, autoRun = autoRun, autoScrollElementsIntoView = autoScrollElementsIntoView, breakOnFail = breakOnFail, cachePreload = cachePreload, configure = configure, coverageUnit = coverageUnit, defaultTimeout = defaultTimeout, disableCaching = disableCaching, disableColoring = disableColoring, enableCodeCoverage = enableCodeCoverage, excludeCoverageUnits = excludeCoverageUnits, expectedGlobals = expectedGlobals, hostPageUrl = hostPageUrl, includeCoverageUnits = includeCoverageUnits, installLoaderInstrumentationHook = installLoaderInstrumentationHook, isReadyTimeout = isReadyTimeout, keepNLastResults = keepNLastResults, keepResults = keepResults, listenters = listenters, loaderPath = loaderPath, maintainViewportSize = maintainViewportSize, maxThreads = maxThreads, needDone = needDone, overrideSetTimeout = overrideSetTimeout, pauseBetweenTests = pauseBetweenTests, preload = preload, runCore = runCore, separateContext = separateContext, simulateEventsWith = simulateEventsWith, speedRun = speedRun, start = start, subTestTimeout = subTestTimeout, testClass = testClass, title = title, transparentEx = transparentEx, useStrictMode = useStrictMode, viewDOM = viewDOM, viewportHeight = viewportHeight, viewportWidth = viewportWidth, waitForAppReady = waitForAppReady, waitForExtReady = waitForExtReady, waitForTimeout = waitForTimeout)
+    val __obj = js.Dynamic.literal(allowExtVersionChange = allowExtVersionChange, alsoPreload = alsoPreload, autoCheckGlobals = autoCheckGlobals, autoRun = autoRun, autoScrollElementsIntoView = autoScrollElementsIntoView, breakOnFail = breakOnFail, cachePreload = cachePreload, configure = js.Any.fromFunction1(configure), coverageUnit = coverageUnit, defaultTimeout = defaultTimeout, disableCaching = disableCaching, disableColoring = disableColoring, enableCodeCoverage = enableCodeCoverage, excludeCoverageUnits = excludeCoverageUnits, expectedGlobals = expectedGlobals, hostPageUrl = hostPageUrl, includeCoverageUnits = includeCoverageUnits, installLoaderInstrumentationHook = installLoaderInstrumentationHook, isReadyTimeout = isReadyTimeout, keepNLastResults = keepNLastResults, keepResults = keepResults, listenters = listenters, loaderPath = loaderPath, maintainViewportSize = maintainViewportSize, maxThreads = maxThreads, needDone = needDone, overrideSetTimeout = overrideSetTimeout, pauseBetweenTests = pauseBetweenTests, preload = preload, runCore = runCore, separateContext = separateContext, simulateEventsWith = simulateEventsWith, speedRun = speedRun, start = js.Any.fromFunction1(start), subTestTimeout = subTestTimeout, testClass = testClass, title = title, transparentEx = transparentEx, useStrictMode = useStrictMode, viewDOM = viewDOM, viewportHeight = viewportHeight, viewportWidth = viewportWidth, waitForAppReady = waitForAppReady, waitForExtReady = waitForExtReady, waitForTimeout = waitForTimeout)
   
     __obj.asInstanceOf[IBrowserExtJS]
   }

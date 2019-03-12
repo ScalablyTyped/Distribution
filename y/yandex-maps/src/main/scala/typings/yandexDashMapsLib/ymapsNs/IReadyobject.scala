@@ -16,15 +16,15 @@ object IReadyobject {
   @scala.inline
   def apply(
     context: js.Object = null,
-    errorCallback: js.Function0[scala.Unit] = null,
+    errorCallback: () => scala.Unit = null,
     require: js.Array[java.lang.String] = null,
-    successCallback: js.Function0[scala.Unit] = null
+    successCallback: () => scala.Unit = null
   ): IReadyobject = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context)
-    if (errorCallback != null) __obj.updateDynamic("errorCallback")(errorCallback)
+    if (errorCallback != null) __obj.updateDynamic("errorCallback")(js.Any.fromFunction0(errorCallback))
     if (require != null) __obj.updateDynamic("require")(require)
-    if (successCallback != null) __obj.updateDynamic("successCallback")(successCallback)
+    if (successCallback != null) __obj.updateDynamic("successCallback")(js.Any.fromFunction0(successCallback))
     __obj.asInstanceOf[IReadyobject]
   }
 }

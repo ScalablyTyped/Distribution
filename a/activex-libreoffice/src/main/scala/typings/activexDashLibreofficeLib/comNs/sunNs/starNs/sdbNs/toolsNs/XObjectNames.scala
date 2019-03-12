@@ -88,13 +88,13 @@ trait XObjectNames extends js.Object {
 object XObjectNames {
   @scala.inline
   def apply(
-    checkNameForCreate: js.Function2[scala.Double, java.lang.String, scala.Unit],
-    convertToSQLName: js.Function1[java.lang.String, java.lang.String],
-    isNameUsed: js.Function2[scala.Double, java.lang.String, scala.Boolean],
-    isNameValid: js.Function2[scala.Double, java.lang.String, scala.Boolean],
-    suggestName: js.Function2[scala.Double, java.lang.String, java.lang.String]
+    checkNameForCreate: (scala.Double, java.lang.String) => scala.Unit,
+    convertToSQLName: java.lang.String => java.lang.String,
+    isNameUsed: (scala.Double, java.lang.String) => scala.Boolean,
+    isNameValid: (scala.Double, java.lang.String) => scala.Boolean,
+    suggestName: (scala.Double, java.lang.String) => java.lang.String
   ): XObjectNames = {
-    val __obj = js.Dynamic.literal(checkNameForCreate = checkNameForCreate, convertToSQLName = convertToSQLName, isNameUsed = isNameUsed, isNameValid = isNameValid, suggestName = suggestName)
+    val __obj = js.Dynamic.literal(checkNameForCreate = js.Any.fromFunction2(checkNameForCreate), convertToSQLName = js.Any.fromFunction1(convertToSQLName), isNameUsed = js.Any.fromFunction2(isNameUsed), isNameValid = js.Any.fromFunction2(isNameValid), suggestName = js.Any.fromFunction2(suggestName))
   
     __obj.asInstanceOf[XObjectNames]
   }

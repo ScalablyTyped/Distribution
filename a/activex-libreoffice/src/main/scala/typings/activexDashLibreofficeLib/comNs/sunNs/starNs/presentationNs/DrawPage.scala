@@ -92,61 +92,36 @@ object DrawPage {
     Speed: AnimationSpeed,
     UserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
     Width: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    add: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, scala.Unit],
-    addPropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    addVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    bind: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShapes, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape
-    ],
-    combine: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShapes, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape
-    ],
-    getByIndex: js.Function1[scala.Double, js.Any],
-    getCount: js.Function0[scala.Double],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    getForms: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer],
-    getLinks: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    getMasterPage: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage],
-    getName: js.Function0[java.lang.String],
-    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
-    getPropertyValue: js.Function1[java.lang.String, js.Any],
-    group: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShapes, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShapeGroup
-    ],
-    hasElements: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    remove: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, scala.Unit],
-    removePropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    removeVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    setMasterPage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage, scala.Unit],
-    setName: js.Function1[java.lang.String, scala.Unit],
-    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
-    split: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, scala.Unit],
-    unbind: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, scala.Unit],
-    ungroup: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShapeGroup, scala.Unit]
+    acquire: () => scala.Unit,
+    add: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape => scala.Unit,
+    addPropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    addVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    bind: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShapes => activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape,
+    combine: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShapes => activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape,
+    getByIndex: scala.Double => js.Any,
+    getCount: () => scala.Double,
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    getForms: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    getLinks: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    getMasterPage: () => activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage,
+    getName: () => java.lang.String,
+    getPropertySetInfo: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    getPropertyValue: java.lang.String => js.Any,
+    group: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShapes => activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShapeGroup,
+    hasElements: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    remove: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape => scala.Unit,
+    removePropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    removeVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    setMasterPage: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage => scala.Unit,
+    setName: java.lang.String => scala.Unit,
+    setPropertyValue: (java.lang.String, js.Any) => scala.Unit,
+    split: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape => scala.Unit,
+    unbind: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape => scala.Unit,
+    ungroup: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShapeGroup => scala.Unit
   ): DrawPage = {
-    val __obj = js.Dynamic.literal(BorderBottom = BorderBottom, BorderLeft = BorderLeft, BorderRight = BorderRight, BorderTop = BorderTop, Change = Change, Count = Count, DateTimeFormat = DateTimeFormat, DateTimeText = DateTimeText, Duration = Duration, Effect = Effect, ElementType = ElementType, FooterText = FooterText, Forms = Forms, HeaderText = HeaderText, Height = Height, HighResDuration = HighResDuration, IsBackgroundDark = IsBackgroundDark, IsDateTimeFixed = IsDateTimeFixed, IsDateTimeVisible = IsDateTimeVisible, IsFooterVisible = IsFooterVisible, IsHeaderVisible = IsHeaderVisible, IsPageNumberVisible = IsPageNumberVisible, Layout = Layout, LinkDisplayName = LinkDisplayName, Links = Links, MasterPage = MasterPage, Name = Name, NavigationOrder = NavigationOrder, Number = Number, Orientation = Orientation, PropertySetInfo = PropertySetInfo, Speed = Speed, UserDefinedAttributes = UserDefinedAttributes, Width = Width, acquire = acquire, add = add, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, bind = bind, combine = combine, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, getForms = getForms, getLinks = getLinks, getMasterPage = getMasterPage, getName = getName, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, group = group, hasElements = hasElements, queryInterface = queryInterface, release = release, remove = remove, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setMasterPage = setMasterPage, setName = setName, setPropertyValue = setPropertyValue, split = split, unbind = unbind, ungroup = ungroup)
+    val __obj = js.Dynamic.literal(BorderBottom = BorderBottom, BorderLeft = BorderLeft, BorderRight = BorderRight, BorderTop = BorderTop, Change = Change, Count = Count, DateTimeFormat = DateTimeFormat, DateTimeText = DateTimeText, Duration = Duration, Effect = Effect, ElementType = ElementType, FooterText = FooterText, Forms = Forms, HeaderText = HeaderText, Height = Height, HighResDuration = HighResDuration, IsBackgroundDark = IsBackgroundDark, IsDateTimeFixed = IsDateTimeFixed, IsDateTimeVisible = IsDateTimeVisible, IsFooterVisible = IsFooterVisible, IsHeaderVisible = IsHeaderVisible, IsPageNumberVisible = IsPageNumberVisible, Layout = Layout, LinkDisplayName = LinkDisplayName, Links = Links, MasterPage = MasterPage, Name = Name, NavigationOrder = NavigationOrder, Number = Number, Orientation = Orientation, PropertySetInfo = PropertySetInfo, Speed = Speed, UserDefinedAttributes = UserDefinedAttributes, Width = Width, acquire = js.Any.fromFunction0(acquire), add = js.Any.fromFunction1(add), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), bind = js.Any.fromFunction1(bind), combine = js.Any.fromFunction1(combine), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), getForms = js.Any.fromFunction0(getForms), getLinks = js.Any.fromFunction0(getLinks), getMasterPage = js.Any.fromFunction0(getMasterPage), getName = js.Any.fromFunction0(getName), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), group = js.Any.fromFunction1(group), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), remove = js.Any.fromFunction1(remove), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setMasterPage = js.Any.fromFunction1(setMasterPage), setName = js.Any.fromFunction1(setName), setPropertyValue = js.Any.fromFunction2(setPropertyValue), split = js.Any.fromFunction1(split), unbind = js.Any.fromFunction1(unbind), ungroup = js.Any.fromFunction1(ungroup))
   
     __obj.asInstanceOf[DrawPage]
   }

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  def apply(options: gulpDashLessLib.gulpDashLessMod.IOptions): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def apply(options: IOptions): nodeLib.NodeJSNs.ReadWriteStream = js.native
 }
 

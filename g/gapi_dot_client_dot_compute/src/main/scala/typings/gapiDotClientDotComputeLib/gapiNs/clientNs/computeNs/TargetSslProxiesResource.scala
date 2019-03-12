@@ -35,36 +35,15 @@ trait TargetSslProxiesResource extends js.Object {
 object TargetSslProxiesResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdTargetSslProxy, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserTargetSslProxy, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TargetSslProxy]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TargetSslProxyList]
-    ],
-    setBackendService: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdTargetSslProxy, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    setProxyHeader: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdTargetSslProxy, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    setSslCertificates: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdTargetSslProxy, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    delete: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdTargetSslProxy => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserTargetSslProxy => gapiDotClientLib.gapiNs.clientNs.Request[TargetSslProxy],
+    insert: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[TargetSslProxyList],
+    setBackendService: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdTargetSslProxy => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    setProxyHeader: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdTargetSslProxy => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    setSslCertificates: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdTargetSslProxy => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): TargetSslProxiesResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, setBackendService = setBackendService, setProxyHeader = setProxyHeader, setSslCertificates = setSslCertificates)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), setBackendService = js.Any.fromFunction1(setBackendService), setProxyHeader = js.Any.fromFunction1(setProxyHeader), setSslCertificates = js.Any.fromFunction1(setSslCertificates))
   
     __obj.asInstanceOf[TargetSslProxiesResource]
   }

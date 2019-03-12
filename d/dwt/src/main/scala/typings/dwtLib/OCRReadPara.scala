@@ -27,12 +27,12 @@ object OCRReadPara {
     FunctionName: java.lang.String,
     ImageIndex: scala.Double,
     JsonString: java.lang.String,
-    OnFailure: js.Function0[scala.Unit],
-    OnSuccess: js.Function0[scala.Unit],
+    OnFailure: () => scala.Unit,
+    OnSuccess: () => scala.Unit,
     STWAIN: WebTwain,
     Type: java.lang.String
   ): OCRReadPara = {
-    val __obj = js.Dynamic.literal(AjaxFunctionUrl = AjaxFunctionUrl, AryZone = AryZone, FileNames = FileNames, FunctionName = FunctionName, ImageIndex = ImageIndex, JsonString = JsonString, OnFailure = OnFailure, OnSuccess = OnSuccess, STWAIN = STWAIN, Type = Type)
+    val __obj = js.Dynamic.literal(AjaxFunctionUrl = AjaxFunctionUrl, AryZone = AryZone, FileNames = FileNames, FunctionName = FunctionName, ImageIndex = ImageIndex, JsonString = JsonString, OnFailure = js.Any.fromFunction0(OnFailure), OnSuccess = js.Any.fromFunction0(OnSuccess), STWAIN = STWAIN, Type = Type)
   
     __obj.asInstanceOf[OCRReadPara]
   }

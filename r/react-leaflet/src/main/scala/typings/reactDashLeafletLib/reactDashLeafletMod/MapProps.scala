@@ -41,6 +41,8 @@ import scala.scalajs.js.annotation._
   var maxBoundsViscosity: js.UndefOr[scala.Double] = js.undefined
   var maximumAge: js.UndefOr[scala.Double] = js.undefined
   var minZoom: js.UndefOr[scala.Double] = js.undefined
+  var onViewportChange: js.UndefOr[js.Function1[/* viewport */ Viewport, scala.Unit]] = js.undefined
+  var onViewportChanged: js.UndefOr[js.Function1[/* viewport */ Viewport, scala.Unit]] = js.undefined
   var preferCanvas: js.UndefOr[scala.Boolean] = js.undefined
   var renderer: js.UndefOr[leafletLib.leafletMod.Renderer] = js.undefined
   // Mousewheel options
@@ -103,40 +105,42 @@ object MapProps {
     maximumAge: scala.Int | scala.Double = null,
     minZoom: scala.Int | scala.Double = null,
     noMoveStart: js.UndefOr[scala.Boolean] = js.undefined,
-    onautopanstart: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    onbaselayerchange: js.Function1[/* event */ leafletLib.leafletMod.LayersControlEvent, scala.Unit] = null,
-    onblur: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    onclick: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null,
-    oncontextmenu: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null,
-    ondblclick: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null,
-    ondrag: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    ondragend: js.Function1[/* event */ leafletLib.leafletMod.DragEndEvent, scala.Unit] = null,
-    ondragstart: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    onfocus: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    onlayeradd: js.Function1[/* event */ leafletLib.leafletMod.LayerEvent, scala.Unit] = null,
-    onlayerremove: js.Function1[/* event */ leafletLib.leafletMod.LayerEvent, scala.Unit] = null,
-    onload: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    onlocationerror: js.Function1[/* event */ leafletLib.leafletMod.ErrorEvent, scala.Unit] = null,
-    onlocationfound: js.Function1[/* event */ leafletLib.leafletMod.LocationEvent, scala.Unit] = null,
-    onmousedown: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null,
-    onmousemove: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null,
-    onmouseout: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null,
-    onmouseover: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null,
-    onmouseup: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null,
-    onmove: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    onmoveend: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    onmovestart: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    onoverlayadd: js.Function1[/* event */ leafletLib.leafletMod.LayersControlEvent, scala.Unit] = null,
-    onoverlayremove: js.Function1[/* event */ leafletLib.leafletMod.LayersControlEvent, scala.Unit] = null,
-    onpopupclose: js.Function1[/* event */ leafletLib.leafletMod.PopupEvent, scala.Unit] = null,
-    onpopupopen: js.Function1[/* event */ leafletLib.leafletMod.PopupEvent, scala.Unit] = null,
-    onpreclick: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null,
-    onresize: js.Function1[/* event */ leafletLib.leafletMod.ResizeEvent, scala.Unit] = null,
-    onunload: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    onviewreset: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    onzoomend: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    onzoomlevelschange: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    onzoomstart: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
+    onViewportChange: /* viewport */ Viewport => scala.Unit = null,
+    onViewportChanged: /* viewport */ Viewport => scala.Unit = null,
+    onautopanstart: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    onbaselayerchange: /* event */ leafletLib.leafletMod.LayersControlEvent => scala.Unit = null,
+    onblur: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    onclick: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null,
+    oncontextmenu: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null,
+    ondblclick: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null,
+    ondrag: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    ondragend: /* event */ leafletLib.leafletMod.DragEndEvent => scala.Unit = null,
+    ondragstart: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    onfocus: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    onlayeradd: /* event */ leafletLib.leafletMod.LayerEvent => scala.Unit = null,
+    onlayerremove: /* event */ leafletLib.leafletMod.LayerEvent => scala.Unit = null,
+    onload: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    onlocationerror: /* event */ leafletLib.leafletMod.ErrorEvent => scala.Unit = null,
+    onlocationfound: /* event */ leafletLib.leafletMod.LocationEvent => scala.Unit = null,
+    onmousedown: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null,
+    onmousemove: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null,
+    onmouseout: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null,
+    onmouseover: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null,
+    onmouseup: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null,
+    onmove: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    onmoveend: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    onmovestart: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    onoverlayadd: /* event */ leafletLib.leafletMod.LayersControlEvent => scala.Unit = null,
+    onoverlayremove: /* event */ leafletLib.leafletMod.LayersControlEvent => scala.Unit = null,
+    onpopupclose: /* event */ leafletLib.leafletMod.PopupEvent => scala.Unit = null,
+    onpopupopen: /* event */ leafletLib.leafletMod.PopupEvent => scala.Unit = null,
+    onpreclick: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null,
+    onresize: /* event */ leafletLib.leafletMod.ResizeEvent => scala.Unit = null,
+    onunload: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    onviewreset: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    onzoomend: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    onzoomlevelschange: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    onzoomstart: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
     padding: leafletLib.leafletMod.PointExpression = null,
     paddingBottomRight: leafletLib.leafletMod.PointExpression = null,
     paddingTopLeft: leafletLib.leafletMod.PointExpression = null,
@@ -156,7 +160,7 @@ object MapProps {
     watch: js.UndefOr[scala.Boolean] = js.undefined,
     wheelDebounceTime: scala.Int | scala.Double = null,
     wheelPxPerZoomLevel: scala.Int | scala.Double = null,
-    whenReady: js.Function0[scala.Unit] = null,
+    whenReady: () => scala.Unit = null,
     worldCopyJump: js.UndefOr[scala.Boolean] = js.undefined,
     zoom: scala.Int | scala.Double = null,
     zoomAnimation: js.UndefOr[scala.Boolean] = js.undefined,
@@ -196,40 +200,42 @@ object MapProps {
     if (maximumAge != null) __obj.updateDynamic("maximumAge")(maximumAge.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (!js.isUndefined(noMoveStart)) __obj.updateDynamic("noMoveStart")(noMoveStart)
-    if (onautopanstart != null) __obj.updateDynamic("onautopanstart")(onautopanstart)
-    if (onbaselayerchange != null) __obj.updateDynamic("onbaselayerchange")(onbaselayerchange)
-    if (onblur != null) __obj.updateDynamic("onblur")(onblur)
-    if (onclick != null) __obj.updateDynamic("onclick")(onclick)
-    if (oncontextmenu != null) __obj.updateDynamic("oncontextmenu")(oncontextmenu)
-    if (ondblclick != null) __obj.updateDynamic("ondblclick")(ondblclick)
-    if (ondrag != null) __obj.updateDynamic("ondrag")(ondrag)
-    if (ondragend != null) __obj.updateDynamic("ondragend")(ondragend)
-    if (ondragstart != null) __obj.updateDynamic("ondragstart")(ondragstart)
-    if (onfocus != null) __obj.updateDynamic("onfocus")(onfocus)
-    if (onlayeradd != null) __obj.updateDynamic("onlayeradd")(onlayeradd)
-    if (onlayerremove != null) __obj.updateDynamic("onlayerremove")(onlayerremove)
-    if (onload != null) __obj.updateDynamic("onload")(onload)
-    if (onlocationerror != null) __obj.updateDynamic("onlocationerror")(onlocationerror)
-    if (onlocationfound != null) __obj.updateDynamic("onlocationfound")(onlocationfound)
-    if (onmousedown != null) __obj.updateDynamic("onmousedown")(onmousedown)
-    if (onmousemove != null) __obj.updateDynamic("onmousemove")(onmousemove)
-    if (onmouseout != null) __obj.updateDynamic("onmouseout")(onmouseout)
-    if (onmouseover != null) __obj.updateDynamic("onmouseover")(onmouseover)
-    if (onmouseup != null) __obj.updateDynamic("onmouseup")(onmouseup)
-    if (onmove != null) __obj.updateDynamic("onmove")(onmove)
-    if (onmoveend != null) __obj.updateDynamic("onmoveend")(onmoveend)
-    if (onmovestart != null) __obj.updateDynamic("onmovestart")(onmovestart)
-    if (onoverlayadd != null) __obj.updateDynamic("onoverlayadd")(onoverlayadd)
-    if (onoverlayremove != null) __obj.updateDynamic("onoverlayremove")(onoverlayremove)
-    if (onpopupclose != null) __obj.updateDynamic("onpopupclose")(onpopupclose)
-    if (onpopupopen != null) __obj.updateDynamic("onpopupopen")(onpopupopen)
-    if (onpreclick != null) __obj.updateDynamic("onpreclick")(onpreclick)
-    if (onresize != null) __obj.updateDynamic("onresize")(onresize)
-    if (onunload != null) __obj.updateDynamic("onunload")(onunload)
-    if (onviewreset != null) __obj.updateDynamic("onviewreset")(onviewreset)
-    if (onzoomend != null) __obj.updateDynamic("onzoomend")(onzoomend)
-    if (onzoomlevelschange != null) __obj.updateDynamic("onzoomlevelschange")(onzoomlevelschange)
-    if (onzoomstart != null) __obj.updateDynamic("onzoomstart")(onzoomstart)
+    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(js.Any.fromFunction1(onViewportChange))
+    if (onViewportChanged != null) __obj.updateDynamic("onViewportChanged")(js.Any.fromFunction1(onViewportChanged))
+    if (onautopanstart != null) __obj.updateDynamic("onautopanstart")(js.Any.fromFunction1(onautopanstart))
+    if (onbaselayerchange != null) __obj.updateDynamic("onbaselayerchange")(js.Any.fromFunction1(onbaselayerchange))
+    if (onblur != null) __obj.updateDynamic("onblur")(js.Any.fromFunction1(onblur))
+    if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction1(onclick))
+    if (oncontextmenu != null) __obj.updateDynamic("oncontextmenu")(js.Any.fromFunction1(oncontextmenu))
+    if (ondblclick != null) __obj.updateDynamic("ondblclick")(js.Any.fromFunction1(ondblclick))
+    if (ondrag != null) __obj.updateDynamic("ondrag")(js.Any.fromFunction1(ondrag))
+    if (ondragend != null) __obj.updateDynamic("ondragend")(js.Any.fromFunction1(ondragend))
+    if (ondragstart != null) __obj.updateDynamic("ondragstart")(js.Any.fromFunction1(ondragstart))
+    if (onfocus != null) __obj.updateDynamic("onfocus")(js.Any.fromFunction1(onfocus))
+    if (onlayeradd != null) __obj.updateDynamic("onlayeradd")(js.Any.fromFunction1(onlayeradd))
+    if (onlayerremove != null) __obj.updateDynamic("onlayerremove")(js.Any.fromFunction1(onlayerremove))
+    if (onload != null) __obj.updateDynamic("onload")(js.Any.fromFunction1(onload))
+    if (onlocationerror != null) __obj.updateDynamic("onlocationerror")(js.Any.fromFunction1(onlocationerror))
+    if (onlocationfound != null) __obj.updateDynamic("onlocationfound")(js.Any.fromFunction1(onlocationfound))
+    if (onmousedown != null) __obj.updateDynamic("onmousedown")(js.Any.fromFunction1(onmousedown))
+    if (onmousemove != null) __obj.updateDynamic("onmousemove")(js.Any.fromFunction1(onmousemove))
+    if (onmouseout != null) __obj.updateDynamic("onmouseout")(js.Any.fromFunction1(onmouseout))
+    if (onmouseover != null) __obj.updateDynamic("onmouseover")(js.Any.fromFunction1(onmouseover))
+    if (onmouseup != null) __obj.updateDynamic("onmouseup")(js.Any.fromFunction1(onmouseup))
+    if (onmove != null) __obj.updateDynamic("onmove")(js.Any.fromFunction1(onmove))
+    if (onmoveend != null) __obj.updateDynamic("onmoveend")(js.Any.fromFunction1(onmoveend))
+    if (onmovestart != null) __obj.updateDynamic("onmovestart")(js.Any.fromFunction1(onmovestart))
+    if (onoverlayadd != null) __obj.updateDynamic("onoverlayadd")(js.Any.fromFunction1(onoverlayadd))
+    if (onoverlayremove != null) __obj.updateDynamic("onoverlayremove")(js.Any.fromFunction1(onoverlayremove))
+    if (onpopupclose != null) __obj.updateDynamic("onpopupclose")(js.Any.fromFunction1(onpopupclose))
+    if (onpopupopen != null) __obj.updateDynamic("onpopupopen")(js.Any.fromFunction1(onpopupopen))
+    if (onpreclick != null) __obj.updateDynamic("onpreclick")(js.Any.fromFunction1(onpreclick))
+    if (onresize != null) __obj.updateDynamic("onresize")(js.Any.fromFunction1(onresize))
+    if (onunload != null) __obj.updateDynamic("onunload")(js.Any.fromFunction1(onunload))
+    if (onviewreset != null) __obj.updateDynamic("onviewreset")(js.Any.fromFunction1(onviewreset))
+    if (onzoomend != null) __obj.updateDynamic("onzoomend")(js.Any.fromFunction1(onzoomend))
+    if (onzoomlevelschange != null) __obj.updateDynamic("onzoomlevelschange")(js.Any.fromFunction1(onzoomlevelschange))
+    if (onzoomstart != null) __obj.updateDynamic("onzoomstart")(js.Any.fromFunction1(onzoomstart))
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (paddingBottomRight != null) __obj.updateDynamic("paddingBottomRight")(paddingBottomRight.asInstanceOf[js.Any])
     if (paddingTopLeft != null) __obj.updateDynamic("paddingTopLeft")(paddingTopLeft.asInstanceOf[js.Any])
@@ -249,7 +255,7 @@ object MapProps {
     if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch)
     if (wheelDebounceTime != null) __obj.updateDynamic("wheelDebounceTime")(wheelDebounceTime.asInstanceOf[js.Any])
     if (wheelPxPerZoomLevel != null) __obj.updateDynamic("wheelPxPerZoomLevel")(wheelPxPerZoomLevel.asInstanceOf[js.Any])
-    if (whenReady != null) __obj.updateDynamic("whenReady")(whenReady)
+    if (whenReady != null) __obj.updateDynamic("whenReady")(js.Any.fromFunction0(whenReady))
     if (!js.isUndefined(worldCopyJump)) __obj.updateDynamic("worldCopyJump")(worldCopyJump)
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     if (!js.isUndefined(zoomAnimation)) __obj.updateDynamic("zoomAnimation")(zoomAnimation)

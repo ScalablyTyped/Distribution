@@ -87,15 +87,15 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends js.Object {
   /* Provides the ability to specify a prefix before the user-entered text to indicate that the selection will be new. No-op unless allowNew={true}. */
   var newSelectionPrefix: js.UndefOr[java.lang.String] = js.undefined
   /* Invoked when the input is blurred. Receives an event. */
-  var onBlur: js.UndefOr[js.Function1[/* e */ reactLib.Event, scala.Unit]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* e */ stdLib.Event, scala.Unit]] = js.undefined
   /* Invoked whenever items are added or removed. Receives an array of the selected options. */
   var onChange: js.UndefOr[js.Function1[/* selected */ js.Array[T], scala.Unit]] = js.undefined
   /* Invoked when the input is focused. Receives an event. */
-  var onFocus: js.UndefOr[js.Function1[/* e */ reactLib.Event, scala.Unit]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* e */ stdLib.Event, scala.Unit]] = js.undefined
   /* Invoked when the input value changes. Receives the string value of the input, as well as the original event. */
-  var onInputChange: js.UndefOr[js.Function2[/* input */ java.lang.String, /* e */ reactLib.Event, scala.Unit]] = js.undefined
+  var onInputChange: js.UndefOr[js.Function2[/* input */ java.lang.String, /* e */ stdLib.Event, scala.Unit]] = js.undefined
   /* Invoked when a key is pressed. Receives an event. */
-  var onKeyDown: js.UndefOr[js.Function1[/* e */ reactLib.Event, scala.Unit]] = js.undefined
+  var onKeyDown: js.UndefOr[js.Function1[/* e */ stdLib.Event, scala.Unit]] = js.undefined
   /* DEPRECATED: Invoked when the menu is hidden. */
   var onMenuHide: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /* DEPRECATED: Invoked when the menu is shown. */
@@ -103,7 +103,7 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends js.Object {
   /* 	Invoked when menu visibility changes. */
   var onMenuToggle: js.UndefOr[js.Function1[/* show */ scala.Boolean, scala.Unit]] = js.undefined
   /* Invoked when the pagination menu item is clicked. */
-  var onPaginate: js.UndefOr[js.Function2[/* e */ reactLib.Event, /* numResults */ scala.Double, scala.Unit]] = js.undefined
+  var onPaginate: js.UndefOr[js.Function2[/* e */ stdLib.Event, /* numResults */ scala.Double, scala.Unit]] = js.undefined
   /* Whether or not the menu should be displayed. undefined allows the component to control visibility,
     while true and false show and hide the menu, respectively. */
   var open: js.UndefOr[scala.Boolean] = js.undefined
@@ -154,8 +154,8 @@ object TypeaheadProps {
   @scala.inline
   def apply[T /* <: TypeaheadModel */](
     options: js.Array[T],
-    a11yNumResults: js.Function0[scala.Unit] = null,
-    a11yNumSelected: js.Function0[scala.Unit] = null,
+    a11yNumResults: () => scala.Unit = null,
+    a11yNumSelected: () => scala.Unit = null,
     align: TypeaheadAlign = null,
     allowNew: scala.Boolean | (js.Function2[
       /* results */ js.Array[T], 
@@ -189,43 +189,29 @@ object TypeaheadProps {
     minLength: scala.Int | scala.Double = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     newSelectionPrefix: java.lang.String = null,
-    onBlur: js.Function1[/* e */ reactLib.Event, scala.Unit] = null,
-    onChange: js.Function1[/* selected */ js.Array[T], scala.Unit] = null,
-    onFocus: js.Function1[/* e */ reactLib.Event, scala.Unit] = null,
-    onInputChange: js.Function2[/* input */ java.lang.String, /* e */ reactLib.Event, scala.Unit] = null,
-    onKeyDown: js.Function1[/* e */ reactLib.Event, scala.Unit] = null,
-    onMenuHide: js.Function0[scala.Unit] = null,
-    onMenuShow: js.Function0[scala.Unit] = null,
-    onMenuToggle: js.Function1[/* show */ scala.Boolean, scala.Unit] = null,
-    onPaginate: js.Function2[/* e */ reactLib.Event, /* numResults */ scala.Double, scala.Unit] = null,
+    onBlur: /* e */ stdLib.Event => scala.Unit = null,
+    onChange: /* selected */ js.Array[T] => scala.Unit = null,
+    onFocus: /* e */ stdLib.Event => scala.Unit = null,
+    onInputChange: (/* input */ java.lang.String, /* e */ stdLib.Event) => scala.Unit = null,
+    onKeyDown: /* e */ stdLib.Event => scala.Unit = null,
+    onMenuHide: () => scala.Unit = null,
+    onMenuShow: () => scala.Unit = null,
+    onMenuToggle: /* show */ scala.Boolean => scala.Unit = null,
+    onPaginate: (/* e */ stdLib.Event, /* numResults */ scala.Double) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     paginate: js.UndefOr[scala.Boolean] = js.undefined,
     paginationText: java.lang.String = null,
     placeholder: java.lang.String = null,
     positionFixed: js.UndefOr[scala.Boolean] = js.undefined,
-    renderMenu: js.Function2[
-      /* results */ js.Array[TypeaheadResult[T]], 
-      /* menuProps */ js.Any, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
-    renderMenuItemChildren: js.Function3[
-      /* option */ TypeaheadResult[T], 
-      /* props */ TypeaheadMenuProps[T], 
-      /* index */ scala.Double, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
-    renderToken: js.Function3[
-      /* selectedItem */ T, 
-      /* props */ TypeaheadMenuProps[T], 
-      /* index */ scala.Double, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    renderMenu: (/* results */ js.Array[TypeaheadResult[T]], /* menuProps */ js.Any) => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderMenuItemChildren: (/* option */ TypeaheadResult[T], /* props */ TypeaheadMenuProps[T], /* index */ scala.Double) => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderToken: (/* selectedItem */ T, /* props */ TypeaheadMenuProps[T], /* index */ scala.Double) => reactLib.reactMod.ReactNs.ReactNode = null,
     selectHintOnEnter: js.UndefOr[scala.Boolean] = js.undefined,
     selected: js.Array[T] = null
   ): TypeaheadProps[T] = {
     val __obj = js.Dynamic.literal(options = options)
-    if (a11yNumResults != null) __obj.updateDynamic("a11yNumResults")(a11yNumResults)
-    if (a11yNumSelected != null) __obj.updateDynamic("a11yNumSelected")(a11yNumSelected)
+    if (a11yNumResults != null) __obj.updateDynamic("a11yNumResults")(js.Any.fromFunction0(a11yNumResults))
+    if (a11yNumSelected != null) __obj.updateDynamic("a11yNumSelected")(js.Any.fromFunction0(a11yNumSelected))
     if (align != null) __obj.updateDynamic("align")(align)
     if (allowNew != null) __obj.updateDynamic("allowNew")(allowNew.asInstanceOf[js.Any])
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
@@ -255,23 +241,23 @@ object TypeaheadProps {
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (newSelectionPrefix != null) __obj.updateDynamic("newSelectionPrefix")(newSelectionPrefix)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onInputChange != null) __obj.updateDynamic("onInputChange")(onInputChange)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onMenuHide != null) __obj.updateDynamic("onMenuHide")(onMenuHide)
-    if (onMenuShow != null) __obj.updateDynamic("onMenuShow")(onMenuShow)
-    if (onMenuToggle != null) __obj.updateDynamic("onMenuToggle")(onMenuToggle)
-    if (onPaginate != null) __obj.updateDynamic("onPaginate")(onPaginate)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onInputChange != null) __obj.updateDynamic("onInputChange")(js.Any.fromFunction2(onInputChange))
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
+    if (onMenuHide != null) __obj.updateDynamic("onMenuHide")(js.Any.fromFunction0(onMenuHide))
+    if (onMenuShow != null) __obj.updateDynamic("onMenuShow")(js.Any.fromFunction0(onMenuShow))
+    if (onMenuToggle != null) __obj.updateDynamic("onMenuToggle")(js.Any.fromFunction1(onMenuToggle))
+    if (onPaginate != null) __obj.updateDynamic("onPaginate")(js.Any.fromFunction2(onPaginate))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (!js.isUndefined(paginate)) __obj.updateDynamic("paginate")(paginate)
     if (paginationText != null) __obj.updateDynamic("paginationText")(paginationText)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(positionFixed)) __obj.updateDynamic("positionFixed")(positionFixed)
-    if (renderMenu != null) __obj.updateDynamic("renderMenu")(renderMenu)
-    if (renderMenuItemChildren != null) __obj.updateDynamic("renderMenuItemChildren")(renderMenuItemChildren)
-    if (renderToken != null) __obj.updateDynamic("renderToken")(renderToken)
+    if (renderMenu != null) __obj.updateDynamic("renderMenu")(js.Any.fromFunction2(renderMenu))
+    if (renderMenuItemChildren != null) __obj.updateDynamic("renderMenuItemChildren")(js.Any.fromFunction3(renderMenuItemChildren))
+    if (renderToken != null) __obj.updateDynamic("renderToken")(js.Any.fromFunction3(renderToken))
     if (!js.isUndefined(selectHintOnEnter)) __obj.updateDynamic("selectHintOnEnter")(selectHintOnEnter)
     if (selected != null) __obj.updateDynamic("selected")(selected)
     __obj.asInstanceOf[TypeaheadProps[T]]

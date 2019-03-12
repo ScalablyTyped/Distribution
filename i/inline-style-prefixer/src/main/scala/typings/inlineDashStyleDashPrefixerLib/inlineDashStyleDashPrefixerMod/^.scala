@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("inline-style-prefixer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val prefix: inlineDashStyleDashPrefixerLib.inlineDashStyleDashPrefixerMod.Prefix = js.native
-  def createPrefixer(staticData: inlineDashStyleDashPrefixerLib.inlineDashStyleDashPrefixerMod.StaticData): inlineDashStyleDashPrefixerLib.inlineDashStyleDashPrefixerMod.Prefix = js.native
+  val prefix: Prefix = js.native
+  def createPrefixer(staticData: StaticData): Prefix = js.native
 }
 

@@ -12,13 +12,9 @@ trait IRTreeSplitStrategy extends js.Object {
 object IRTreeSplitStrategy {
   @scala.inline
   def apply(
-    split: js.Function2[
-      js.Array[plottableLib.buildSrcUtilsRTreeMod.RTreeNode[js.Any]], 
-      NodePair[js.Any], 
-      scala.Unit
-    ]
+    split: (js.Array[plottableLib.buildSrcUtilsRTreeMod.RTreeNode[js.Any]], NodePair[js.Any]) => scala.Unit
   ): IRTreeSplitStrategy = {
-    val __obj = js.Dynamic.literal(split = split)
+    val __obj = js.Dynamic.literal(split = js.Any.fromFunction2(split))
   
     __obj.asInstanceOf[IRTreeSplitStrategy]
   }

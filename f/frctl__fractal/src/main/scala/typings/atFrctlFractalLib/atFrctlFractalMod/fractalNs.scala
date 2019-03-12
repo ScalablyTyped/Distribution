@@ -51,7 +51,7 @@ object fractalNs extends js.Object {
       trait AssetSourceCollection
         extends atFrctlFractalLib.atFrctlFractalMod.fractalNs.coreNs.mixinsNs.ConfigurableEmitter[js.Any] {
         @JSName(org.scalablytyped.runtime.Symbol.iterator)
-        var iterator: js.Function0[nodeLib.IterableIterator[AssetSource]] = js.native
+        var iterator: js.Function0[stdLib.IterableIterator[AssetSource]] = js.native
         val label: java.lang.String = js.native
         val title: java.lang.String = js.native
         def add(name: java.lang.String, config: js.Any): AssetSource = js.native
@@ -198,7 +198,7 @@ object fractalNs extends js.Object {
           files: atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.filesNs.FileCollection,
           resources: atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.assetsNs.AssetCollection,
           parent: atFrctlFractalLib.atFrctlFractalMod.fractalNs.coreNs.entitiesNs.Entity
-        ): nodeLib.IterableIterator[
+        ): stdLib.IterableIterator[
                 js.Object | atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.variantsNs.VariantCollection | atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.componentsNs.Component
               ] = js.native
       }
@@ -518,8 +518,8 @@ object fractalNs extends js.Object {
       def debug(text: java.lang.String, data: js.Any): this.type = js.native
       def debugMode(status: scala.Boolean): scala.Unit = js.native
       def dump(data: js.Any): scala.Unit = js.native
-      def error(err: java.lang.String, data: nodeLib.Error): this.type = js.native
-      def error(err: nodeLib.Error): this.type = js.native
+      def error(err: java.lang.String, data: stdLib.Error): this.type = js.native
+      def error(err: stdLib.Error): this.type = js.native
       def isSlogging(): scala.Boolean = js.native
       def log(text: java.lang.String): this.type = js.native
       def persist(): this.type = js.native
@@ -603,7 +603,7 @@ object fractalNs extends js.Object {
         val isVariant: js.UndefOr[scala.Nothing] = js.native
         val items: js.Array[T] = js.native
         @JSName(org.scalablytyped.runtime.Symbol.iterator)
-        var iterator: js.Function0[nodeLib.IterableIterator[T]] = js.native
+        var iterator: js.Function0[stdLib.IterableIterator[T]] = js.native
         val size: scala.Double = js.native
         def collections(): this.type = js.native
         def each(fn: js.Function1[/* item */ T, scala.Unit]): this.type = js.native

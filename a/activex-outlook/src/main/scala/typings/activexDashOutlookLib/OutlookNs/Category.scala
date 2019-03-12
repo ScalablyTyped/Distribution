@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.Category")
 @js.native
 class Category protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val CategoryBorderColor: activexDashStdoleLib.stdoleNs.OLE_COLOR = js.native
   val CategoryGradientBottomColor: activexDashStdoleLib.stdoleNs.OLE_COLOR = js.native
   val CategoryGradientTopColor: activexDashStdoleLib.stdoleNs.OLE_COLOR = js.native

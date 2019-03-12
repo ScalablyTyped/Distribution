@@ -35,14 +35,14 @@ trait Shape extends Geo {
 object Shape {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    coordinates: js.Function1[js.Array[_], Shape],
-    radius: js.Function1[java.lang.String, Shape],
-    toJSON: js.Function0[js.Any],
-    `type`: js.Function1[java.lang.String, Shape]
+    _type: () => java.lang.String,
+    coordinates: js.Array[_] => Shape,
+    radius: java.lang.String => Shape,
+    toJSON: () => js.Any,
+    `type`: java.lang.String => Shape
   ): Shape = {
-    val __obj = js.Dynamic.literal(_type = _type, coordinates = coordinates, radius = radius, toJSON = toJSON)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), coordinates = js.Any.fromFunction1(coordinates), radius = js.Any.fromFunction1(radius), toJSON = js.Any.fromFunction0(toJSON))
+    __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
     __obj.asInstanceOf[Shape]
   }
 }

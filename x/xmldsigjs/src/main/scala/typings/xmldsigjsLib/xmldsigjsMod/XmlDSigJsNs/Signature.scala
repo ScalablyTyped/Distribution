@@ -15,7 +15,7 @@ trait Signature
   /**
     * Gets or sets the KeyInfo of the current Signature.
     */
-  var KeyInfo: KeyInfo = js.native
+  var KeyInfo: xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.KeyInfo = js.native
   var ObjectList: DataObjects = js.native
   /**
     * Gets or sets the value of the digital signature.
@@ -24,6 +24,6 @@ trait Signature
   /**
     * Gets or sets the SignedInfo of the current Signature.
     */
-  var SignedInfo: SignedInfo = js.native
+  var SignedInfo: xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.SignedInfo = js.native
 }
 

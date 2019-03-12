@@ -16,12 +16,12 @@ trait Accordion extends js.Object {
 object Accordion {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
-    down: js.Function2[foundationDashSitesLib.JQuery, scala.Boolean, scala.Unit],
-    toggle: js.Function1[foundationDashSitesLib.JQuery, scala.Unit],
-    up: js.Function1[foundationDashSitesLib.JQuery, scala.Unit]
+    destroy: () => scala.Unit,
+    down: (foundationDashSitesLib.JQuery, scala.Boolean) => scala.Unit,
+    toggle: foundationDashSitesLib.JQuery => scala.Unit,
+    up: foundationDashSitesLib.JQuery => scala.Unit
   ): Accordion = {
-    val __obj = js.Dynamic.literal(destroy = destroy, down = down, toggle = toggle, up = up)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), down = js.Any.fromFunction2(down), toggle = js.Any.fromFunction1(toggle), up = js.Any.fromFunction1(up))
   
     __obj.asInstanceOf[Accordion]
   }

@@ -34,90 +34,39 @@ object AdMobBannerProperties {
     accessibilityViewIsModal: js.UndefOr[scala.Boolean] = js.undefined,
     accessible: js.UndefOr[scala.Boolean] = js.undefined,
     adUnitID: java.lang.String = null,
-    adViewDidDismissScreen: js.Function0[scala.Unit] = null,
-    adViewDidReceiveAd: js.Function0[scala.Unit] = null,
-    adViewWillDismissScreen: js.Function0[scala.Unit] = null,
-    adViewWillLeaveApplication: js.Function0[scala.Unit] = null,
-    adViewWillPresentScreen: js.Function0[scala.Unit] = null,
+    adViewDidDismissScreen: () => scala.Unit = null,
+    adViewDidReceiveAd: () => scala.Unit = null,
+    adViewWillDismissScreen: () => scala.Unit = null,
+    adViewWillLeaveApplication: () => scala.Unit = null,
+    adViewWillPresentScreen: () => scala.Unit = null,
     bannerSize: AdMobBannerSize = null,
     collapsable: js.UndefOr[scala.Boolean] = js.undefined,
-    didFailToReceiveAdWithError: js.Function1[/* errorDescription */ java.lang.String, scala.Unit] = null,
+    didFailToReceiveAdWithError: /* errorDescription */ java.lang.String => scala.Unit = null,
     hitSlop: reactDashNativeLib.reactDashNativeMod.Insets = null,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
     nativeID: java.lang.String = null,
     needsOffscreenAlphaCompositing: js.UndefOr[scala.Boolean] = js.undefined,
-    onAccessibilityAction: js.Function0[scala.Unit] = null,
-    onAccessibilityTap: js.Function0[scala.Unit] = null,
-    onLayout: js.Function1[/* event */ reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent, scala.Unit] = null,
-    onMagicTap: js.Function0[scala.Unit] = null,
-    onMoveShouldSetResponder: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
-    onMoveShouldSetResponderCapture: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
-    onResponderEnd: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderGrant: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderMove: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderReject: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderRelease: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderStart: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderTerminate: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onResponderTerminationRequest: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
-    onStartShouldSetResponder: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
-    onStartShouldSetResponderCapture: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
-    onTouchCancel: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onTouchEnd: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onTouchEndCapture: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onTouchMove: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onTouchStart: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
+    onAccessibilityAction: () => scala.Unit = null,
+    onAccessibilityTap: () => scala.Unit = null,
+    onLayout: /* event */ reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent => scala.Unit = null,
+    onMagicTap: () => scala.Unit = null,
+    onMoveShouldSetResponder: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onMoveShouldSetResponderCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onResponderEnd: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderGrant: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderMove: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderReject: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderRelease: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderStart: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderTerminate: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderTerminationRequest: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onStartShouldSetResponder: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onStartShouldSetResponderCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onTouchCancel: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onTouchEnd: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onTouchEndCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onTouchMove: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onTouchStart: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
     pointerEvents: reactDashNativeLib.reactDashNativeLibStrings.`box-none` | reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.`box-only` | reactDashNativeLib.reactDashNativeLibStrings.auto = null,
     removeClippedSubviews: js.UndefOr[scala.Boolean] = js.undefined,
     renderToHardwareTextureAndroid: js.UndefOr[scala.Boolean] = js.undefined,
@@ -140,39 +89,39 @@ object AdMobBannerProperties {
     if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal)
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible)
     if (adUnitID != null) __obj.updateDynamic("adUnitID")(adUnitID)
-    if (adViewDidDismissScreen != null) __obj.updateDynamic("adViewDidDismissScreen")(adViewDidDismissScreen)
-    if (adViewDidReceiveAd != null) __obj.updateDynamic("adViewDidReceiveAd")(adViewDidReceiveAd)
-    if (adViewWillDismissScreen != null) __obj.updateDynamic("adViewWillDismissScreen")(adViewWillDismissScreen)
-    if (adViewWillLeaveApplication != null) __obj.updateDynamic("adViewWillLeaveApplication")(adViewWillLeaveApplication)
-    if (adViewWillPresentScreen != null) __obj.updateDynamic("adViewWillPresentScreen")(adViewWillPresentScreen)
+    if (adViewDidDismissScreen != null) __obj.updateDynamic("adViewDidDismissScreen")(js.Any.fromFunction0(adViewDidDismissScreen))
+    if (adViewDidReceiveAd != null) __obj.updateDynamic("adViewDidReceiveAd")(js.Any.fromFunction0(adViewDidReceiveAd))
+    if (adViewWillDismissScreen != null) __obj.updateDynamic("adViewWillDismissScreen")(js.Any.fromFunction0(adViewWillDismissScreen))
+    if (adViewWillLeaveApplication != null) __obj.updateDynamic("adViewWillLeaveApplication")(js.Any.fromFunction0(adViewWillLeaveApplication))
+    if (adViewWillPresentScreen != null) __obj.updateDynamic("adViewWillPresentScreen")(js.Any.fromFunction0(adViewWillPresentScreen))
     if (bannerSize != null) __obj.updateDynamic("bannerSize")(bannerSize)
     if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable)
-    if (didFailToReceiveAdWithError != null) __obj.updateDynamic("didFailToReceiveAdWithError")(didFailToReceiveAdWithError)
+    if (didFailToReceiveAdWithError != null) __obj.updateDynamic("didFailToReceiveAdWithError")(js.Any.fromFunction1(didFailToReceiveAdWithError))
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(onAccessibilityAction)
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(onAccessibilityTap)
-    if (onLayout != null) __obj.updateDynamic("onLayout")(onLayout)
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(onMagicTap)
-    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(onMoveShouldSetResponder)
-    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(onMoveShouldSetResponderCapture)
-    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(onResponderEnd)
-    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(onResponderGrant)
-    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(onResponderMove)
-    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(onResponderReject)
-    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(onResponderRelease)
-    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(onResponderStart)
-    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(onResponderTerminate)
-    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(onResponderTerminationRequest)
-    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(onStartShouldSetResponder)
-    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(onStartShouldSetResponderCapture)
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel)
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
-    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(onTouchEndCapture)
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction0(onAccessibilityAction))
+    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
+    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
+    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
+    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))
+    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(js.Any.fromFunction1(onMoveShouldSetResponderCapture))
+    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(js.Any.fromFunction1(onResponderEnd))
+    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(js.Any.fromFunction1(onResponderGrant))
+    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(js.Any.fromFunction1(onResponderMove))
+    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(js.Any.fromFunction1(onResponderReject))
+    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(js.Any.fromFunction1(onResponderRelease))
+    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(js.Any.fromFunction1(onResponderStart))
+    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(js.Any.fromFunction1(onResponderTerminate))
+    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(js.Any.fromFunction1(onResponderTerminationRequest))
+    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1(onStartShouldSetResponder))
+    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1(onStartShouldSetResponderCapture))
+    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
+    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(js.Any.fromFunction1(onTouchEndCapture))
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
     if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews)
     if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid)

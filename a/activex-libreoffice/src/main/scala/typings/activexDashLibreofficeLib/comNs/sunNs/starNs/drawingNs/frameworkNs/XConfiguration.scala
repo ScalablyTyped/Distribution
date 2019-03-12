@@ -31,7 +31,7 @@ trait XConfiguration
     * @param eSearchMode This flag defines whether to return only resources that are directly bound to the given anchor or a recursive search is to be made. N
     * @returns The set of returned resource ids may be empty when there are no resource ids that match all conditions. The resources in the sequence are ordered
     */
-  def getResources(xAnchorId: XResourceId, sTargetURLPrefix: java.lang.String, eSearchMode: AnchorBindingMode): activexDashInteropLib.SafeArray[XResourceId]
+  def getResources(xAnchorId: XResourceId, sTargetURLPrefix: java.lang.String, eSearchMode: AnchorBindingMode): stdLib.SafeArray[XResourceId]
   /**
     * Returns whether the specified resource is part of the configuration.
     *
@@ -53,21 +53,16 @@ trait XConfiguration
 object XConfiguration {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addResource: js.Function1[XResourceId, scala.Unit],
-    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
-    getResources: js.Function3[
-      XResourceId, 
-      java.lang.String, 
-      AnchorBindingMode, 
-      activexDashInteropLib.SafeArray[XResourceId]
-    ],
-    hasResource: js.Function1[XResourceId, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeResource: js.Function1[XResourceId, scala.Unit]
+    acquire: () => scala.Unit,
+    addResource: XResourceId => scala.Unit,
+    createClone: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable,
+    getResources: (XResourceId, java.lang.String, AnchorBindingMode) => stdLib.SafeArray[XResourceId],
+    hasResource: XResourceId => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeResource: XResourceId => scala.Unit
   ): XConfiguration = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addResource = addResource, createClone = createClone, getResources = getResources, hasResource = hasResource, queryInterface = queryInterface, release = release, removeResource = removeResource)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addResource = js.Any.fromFunction1(addResource), createClone = js.Any.fromFunction0(createClone), getResources = js.Any.fromFunction3(getResources), hasResource = js.Any.fromFunction1(hasResource), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeResource = js.Any.fromFunction1(removeResource))
   
     __obj.asInstanceOf[XConfiguration]
   }

@@ -22,14 +22,14 @@ trait ISimpleText extends js.Object {
 object ISimpleText {
   @scala.inline
   def apply(
-    charCodeAt: js.Function1[scala.Double, scala.Double],
-    copyTo: js.Function4[scala.Double, js.Array[scala.Double], scala.Double, scala.Double, scala.Unit],
-    length: js.Function0[scala.Double],
-    lineMap: js.Function0[LineMap],
-    subText: js.Function1[TextSpan, ISimpleText],
-    substr: js.Function3[scala.Double, scala.Double, scala.Boolean, java.lang.String]
+    charCodeAt: scala.Double => scala.Double,
+    copyTo: (scala.Double, js.Array[scala.Double], scala.Double, scala.Double) => scala.Unit,
+    length: () => scala.Double,
+    lineMap: () => LineMap,
+    subText: TextSpan => ISimpleText,
+    substr: (scala.Double, scala.Double, scala.Boolean) => java.lang.String
   ): ISimpleText = {
-    val __obj = js.Dynamic.literal(charCodeAt = charCodeAt, copyTo = copyTo, length = length, lineMap = lineMap, subText = subText, substr = substr)
+    val __obj = js.Dynamic.literal(charCodeAt = js.Any.fromFunction1(charCodeAt), copyTo = js.Any.fromFunction4(copyTo), length = js.Any.fromFunction0(length), lineMap = js.Any.fromFunction0(lineMap), subText = js.Any.fromFunction1(subText), substr = js.Any.fromFunction3(substr))
   
     __obj.asInstanceOf[ISimpleText]
   }

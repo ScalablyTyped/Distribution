@@ -11,8 +11,8 @@ trait IGeographicRegionStatics extends js.Object {
 
 object IGeographicRegionStatics {
   @scala.inline
-  def apply(isSupported: js.Function1[java.lang.String, scala.Boolean]): IGeographicRegionStatics = {
-    val __obj = js.Dynamic.literal(isSupported = isSupported)
+  def apply(isSupported: java.lang.String => scala.Boolean): IGeographicRegionStatics = {
+    val __obj = js.Dynamic.literal(isSupported = js.Any.fromFunction1(isSupported))
   
     __obj.asInstanceOf[IGeographicRegionStatics]
   }

@@ -17,20 +17,11 @@ trait UrlcrawlerrorssamplesResource extends js.Object {
 object UrlcrawlerrorssamplesResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotWebmastersLib.Anon_AltCategoryFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UrlCrawlErrorsSample]
-    ],
-    list: js.Function1[
-      gapiDotClientDotWebmastersLib.Anon_AltCategoryFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UrlCrawlErrorsSamplesListResponse]
-    ],
-    markAsFixed: js.Function1[
-      gapiDotClientDotWebmastersLib.Anon_AltCategoryFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ]
+    get: gapiDotClientDotWebmastersLib.Anon_AltCategoryFields => gapiDotClientLib.gapiNs.clientNs.Request[UrlCrawlErrorsSample],
+    list: gapiDotClientDotWebmastersLib.Anon_AltCategoryFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[UrlCrawlErrorsSamplesListResponse],
+    markAsFixed: gapiDotClientDotWebmastersLib.Anon_AltCategoryFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   ): UrlcrawlerrorssamplesResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list, markAsFixed = markAsFixed)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), markAsFixed = js.Any.fromFunction1(markAsFixed))
   
     __obj.asInstanceOf[UrlcrawlerrorssamplesResource]
   }

@@ -30,7 +30,7 @@ trait XFilePreview
     * @returns A sequence of all supported preview formats
     * @see com.sun.star.ui.dialogs.FilePreviewImageFormats
     */
-  val SupportedImageFormats: activexDashInteropLib.SafeArray[scala.Double]
+  val SupportedImageFormats: stdLib.SafeArray[scala.Double]
   /**
     * The method returns the supported color depth of the target device.
     * @returns The color depth in bit, e.g. 8 bit, 16 bit, 32 bit.
@@ -58,7 +58,7 @@ trait XFilePreview
     * @returns A sequence of all supported preview formats
     * @see com.sun.star.ui.dialogs.FilePreviewImageFormats
     */
-  def getSupportedImageFormats(): activexDashInteropLib.SafeArray[scala.Double]
+  def getSupportedImageFormats(): stdLib.SafeArray[scala.Double]
   /**
     * The method returns the supported color depth of the target device.
     * @returns The color depth in bit, e.g. 8 bit, 16 bit, 32 bit.
@@ -86,20 +86,20 @@ object XFilePreview {
     AvailableHeight: scala.Double,
     AvailableWidth: scala.Double,
     ShowState: scala.Boolean,
-    SupportedImageFormats: activexDashInteropLib.SafeArray[scala.Double],
+    SupportedImageFormats: stdLib.SafeArray[scala.Double],
     TargetColorDepth: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
-    acquire: js.Function0[scala.Unit],
-    getAvailableHeight: js.Function0[scala.Double],
-    getAvailableWidth: js.Function0[scala.Double],
-    getShowState: js.Function0[scala.Boolean],
-    getSupportedImageFormats: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    getTargetColorDepth: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setImage: js.Function2[scala.Double, js.Any, scala.Unit],
-    setShowState: js.Function1[scala.Boolean, scala.Boolean]
+    acquire: () => scala.Unit,
+    getAvailableHeight: () => scala.Double,
+    getAvailableWidth: () => scala.Double,
+    getShowState: () => scala.Boolean,
+    getSupportedImageFormats: () => stdLib.SafeArray[scala.Double],
+    getTargetColorDepth: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setImage: (scala.Double, js.Any) => scala.Unit,
+    setShowState: scala.Boolean => scala.Boolean
   ): XFilePreview = {
-    val __obj = js.Dynamic.literal(AvailableHeight = AvailableHeight, AvailableWidth = AvailableWidth, ShowState = ShowState, SupportedImageFormats = SupportedImageFormats, TargetColorDepth = TargetColorDepth, acquire = acquire, getAvailableHeight = getAvailableHeight, getAvailableWidth = getAvailableWidth, getShowState = getShowState, getSupportedImageFormats = getSupportedImageFormats, getTargetColorDepth = getTargetColorDepth, queryInterface = queryInterface, release = release, setImage = setImage, setShowState = setShowState)
+    val __obj = js.Dynamic.literal(AvailableHeight = AvailableHeight, AvailableWidth = AvailableWidth, ShowState = ShowState, SupportedImageFormats = SupportedImageFormats, TargetColorDepth = TargetColorDepth, acquire = js.Any.fromFunction0(acquire), getAvailableHeight = js.Any.fromFunction0(getAvailableHeight), getAvailableWidth = js.Any.fromFunction0(getAvailableWidth), getShowState = js.Any.fromFunction0(getShowState), getSupportedImageFormats = js.Any.fromFunction0(getSupportedImageFormats), getTargetColorDepth = js.Any.fromFunction0(getTargetColorDepth), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setImage = js.Any.fromFunction2(setImage), setShowState = js.Any.fromFunction1(setShowState))
   
     __obj.asInstanceOf[XFilePreview]
   }

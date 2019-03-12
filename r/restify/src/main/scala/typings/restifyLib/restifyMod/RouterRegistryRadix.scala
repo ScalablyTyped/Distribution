@@ -27,13 +27,13 @@ trait RouterRegistryRadix extends js.Object {
 object RouterRegistryRadix {
   @scala.inline
   def apply(
-    add: js.Function1[Route, scala.Boolean],
-    get: js.Function0[js.Array[Route]],
-    lookup: js.Function2[java.lang.String, java.lang.String, js.UndefOr[Chain]],
-    remove: js.Function1[java.lang.String, js.UndefOr[Route]],
-    toString: js.Function0[java.lang.String]
+    add: Route => scala.Boolean,
+    get: () => js.Array[Route],
+    lookup: (java.lang.String, java.lang.String) => js.UndefOr[Chain],
+    remove: java.lang.String => js.UndefOr[Route],
+    toString: () => java.lang.String
   ): RouterRegistryRadix = {
-    val __obj = js.Dynamic.literal(add = add, get = get, lookup = lookup, remove = remove, toString = toString)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), get = js.Any.fromFunction0(get), lookup = js.Any.fromFunction2(lookup), remove = js.Any.fromFunction1(remove), toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[RouterRegistryRadix]
   }

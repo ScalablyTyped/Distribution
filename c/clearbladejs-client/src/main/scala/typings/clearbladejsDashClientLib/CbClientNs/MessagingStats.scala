@@ -20,13 +20,13 @@ object MessagingStats {
   def apply(
     URI: java.lang.String,
     endpoint: java.lang.String,
-    getAveragePayloadSize: js.Function4[java.lang.String, scala.Double, scala.Double, CbCallback, scala.Unit],
-    getCurrentSubscribers: js.Function2[java.lang.String, CbCallback, scala.Unit],
-    getOpenConnections: js.Function1[CbCallback, scala.Unit],
+    getAveragePayloadSize: (java.lang.String, scala.Double, scala.Double, CbCallback) => scala.Unit,
+    getCurrentSubscribers: (java.lang.String, CbCallback) => scala.Unit,
+    getOpenConnections: CbCallback => scala.Unit,
     systemKey: java.lang.String,
     user: APIUser
   ): MessagingStats = {
-    val __obj = js.Dynamic.literal(URI = URI, endpoint = endpoint, getAveragePayloadSize = getAveragePayloadSize, getCurrentSubscribers = getCurrentSubscribers, getOpenConnections = getOpenConnections, systemKey = systemKey, user = user)
+    val __obj = js.Dynamic.literal(URI = URI, endpoint = endpoint, getAveragePayloadSize = js.Any.fromFunction4(getAveragePayloadSize), getCurrentSubscribers = js.Any.fromFunction2(getCurrentSubscribers), getOpenConnections = js.Any.fromFunction1(getOpenConnections), systemKey = systemKey, user = user)
   
     __obj.asInstanceOf[MessagingStats]
   }

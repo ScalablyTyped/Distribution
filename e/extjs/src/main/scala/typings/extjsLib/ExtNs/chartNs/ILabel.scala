@@ -53,33 +53,18 @@ object ILabel {
   def apply(
     alias: extjsLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     extend: java.lang.String = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], ILabel] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => ILabel = null,
     label: js.Any = null,
     mixins: js.Any = null,
-    onCreateLabel: js.Function4[
-      /* storeItem */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel], 
-      /* item */ js.UndefOr[js.Any], 
-      /* i */ js.UndefOr[scala.Double], 
-      /* display */ js.UndefOr[java.lang.String], 
-      extjsLib.ExtNs.drawNs.ISprite
-    ] = null,
-    onPlaceLabel: js.Function7[
-      /* label */ js.UndefOr[extjsLib.ExtNs.drawNs.ISprite], 
-      /* storeItem */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel], 
-      /* item */ js.UndefOr[js.Any], 
-      /* i */ js.UndefOr[scala.Double], 
-      /* display */ js.UndefOr[java.lang.String], 
-      /* animate */ js.UndefOr[scala.Boolean], 
-      /* index */ js.UndefOr[scala.Double], 
-      scala.Unit
-    ] = null,
+    onCreateLabel: (/* storeItem */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel], /* item */ js.UndefOr[js.Any], /* i */ js.UndefOr[scala.Double], /* display */ js.UndefOr[java.lang.String]) => extjsLib.ExtNs.drawNs.ISprite = null,
+    onPlaceLabel: (/* label */ js.UndefOr[extjsLib.ExtNs.drawNs.ISprite], /* storeItem */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel], /* item */ js.UndefOr[js.Any], /* i */ js.UndefOr[scala.Double], /* display */ js.UndefOr[java.lang.String], /* animate */ js.UndefOr[scala.Boolean], /* index */ js.UndefOr[scala.Double]) => scala.Unit = null,
     requires: extjsLib.ExtNs.Array = null,
     self: extjsLib.ExtNs.IClass = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
@@ -89,18 +74,18 @@ object ILabel {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (label != null) __obj.updateDynamic("label")(label)
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (onCreateLabel != null) __obj.updateDynamic("onCreateLabel")(onCreateLabel)
-    if (onPlaceLabel != null) __obj.updateDynamic("onPlaceLabel")(onPlaceLabel)
+    if (onCreateLabel != null) __obj.updateDynamic("onCreateLabel")(js.Any.fromFunction4(onCreateLabel))
+    if (onPlaceLabel != null) __obj.updateDynamic("onPlaceLabel")(js.Any.fromFunction7(onPlaceLabel))
     if (requires != null) __obj.updateDynamic("requires")(requires)
     if (self != null) __obj.updateDynamic("self")(self)
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)

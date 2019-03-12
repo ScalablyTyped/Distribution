@@ -79,19 +79,19 @@ trait ILayout2 extends js.Object {
 object ILayout2 {
   @scala.inline
   def apply(
-    dragLeave: js.Function0[scala.Unit],
-    dragOver: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
-    executeAnimations: js.Function0[scala.Unit],
-    getAdjacent: js.Function2[js.Any, winjsLib.WinJSNs.UtilitiesNs.Key, js.Any],
-    hitTest: js.Function2[scala.Double, scala.Double, js.Any],
-    initialize: js.Function2[ILayoutSite2, scala.Boolean, scala.Unit],
-    itemsFromRange: js.Function2[scala.Double, scala.Double, scala.Unit],
-    layout: js.Function4[js.Any, js.Any, js.Any, js.Any, js.Any],
+    dragLeave: () => scala.Unit,
+    dragOver: (scala.Double, scala.Double, scala.Double) => scala.Unit,
+    executeAnimations: () => scala.Unit,
+    getAdjacent: (js.Any, winjsLib.WinJSNs.UtilitiesNs.Key) => js.Any,
+    hitTest: (scala.Double, scala.Double) => js.Any,
+    initialize: (ILayoutSite2, scala.Boolean) => scala.Unit,
+    itemsFromRange: (scala.Double, scala.Double) => scala.Unit,
+    layout: (js.Any, js.Any, js.Any, js.Any) => js.Any,
     orientation: js.Any,
-    setupAnimations: js.Function0[scala.Unit],
-    uninitialize: js.Function0[scala.Unit]
+    setupAnimations: () => scala.Unit,
+    uninitialize: () => scala.Unit
   ): ILayout2 = {
-    val __obj = js.Dynamic.literal(dragLeave = dragLeave, dragOver = dragOver, executeAnimations = executeAnimations, getAdjacent = getAdjacent, hitTest = hitTest, initialize = initialize, itemsFromRange = itemsFromRange, layout = layout, orientation = orientation, setupAnimations = setupAnimations, uninitialize = uninitialize)
+    val __obj = js.Dynamic.literal(dragLeave = js.Any.fromFunction0(dragLeave), dragOver = js.Any.fromFunction3(dragOver), executeAnimations = js.Any.fromFunction0(executeAnimations), getAdjacent = js.Any.fromFunction2(getAdjacent), hitTest = js.Any.fromFunction2(hitTest), initialize = js.Any.fromFunction2(initialize), itemsFromRange = js.Any.fromFunction2(itemsFromRange), layout = js.Any.fromFunction4(layout), orientation = orientation, setupAnimations = js.Any.fromFunction0(setupAnimations), uninitialize = js.Any.fromFunction0(uninitialize))
   
     __obj.asInstanceOf[ILayout2]
   }

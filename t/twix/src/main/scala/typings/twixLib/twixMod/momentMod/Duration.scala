@@ -13,10 +13,10 @@ trait Duration extends js.Object {
 object Duration {
   @scala.inline
   def apply(
-    afterMoment: js.Function1[java.lang.String, java.lang.String],
-    beforeMoment: js.Function1[java.lang.String, java.lang.String]
+    afterMoment: java.lang.String => java.lang.String,
+    beforeMoment: java.lang.String => java.lang.String
   ): Duration = {
-    val __obj = js.Dynamic.literal(afterMoment = afterMoment, beforeMoment = beforeMoment)
+    val __obj = js.Dynamic.literal(afterMoment = js.Any.fromFunction1(afterMoment), beforeMoment = js.Any.fromFunction1(beforeMoment))
   
     __obj.asInstanceOf[Duration]
   }

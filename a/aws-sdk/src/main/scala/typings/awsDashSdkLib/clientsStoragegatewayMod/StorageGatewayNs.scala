@@ -12,11 +12,11 @@ object StorageGatewayNs extends js.Object {
     /**
       * Your gateway activation key. You can obtain the activation key by sending an HTTP GET request with redirects enabled to the gateway IP address (port 80). The redirect URL returned in the response provides you the activation key for your gateway in the query string parameter activationKey. It may also include other activation-related parameters, however, these are merely defaults -- the arguments you pass to the ActivateGateway API call determine the actual configuration of your gateway.  For more information, see https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html in the Storage Gateway User Guide.
       */
-    var ActivationKey: ActivationKey
+    var ActivationKey: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.ActivationKey
     /**
       * The name you configured for your gateway.
       */
-    var GatewayName: GatewayName
+    var GatewayName: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayName
     /**
       * A value that indicates the region where you want to store your data. The gateway region specified must be the same region as the region in your Host header in the request. For more information about available regions and endpoints for AWS Storage Gateway, see Regions and Endpoints in the Amazon Web Services Glossary.  Valid Values: See AWS Storage Gateway Regions and Endpoints in the AWS General Reference. 
       */
@@ -24,7 +24,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * A value that indicates the time zone you want to set for the gateway. The time zone is of the format "GMT-hr:mm" or "GMT+hr:mm". For example, GMT-4:00 indicates the time is 4 hours behind GMT. GMT+2:00 indicates the time is 2 hours ahead of GMT. The time zone is used, for example, for scheduling snapshots and your gateway's maintenance schedule.
       */
-    var GatewayTimezone: GatewayTimezone
+    var GatewayTimezone: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayTimezone
     /**
       * A value that defines the type of gateway to activate. The type specified is critical to all later functions of the gateway and cannot be changed after activation. The default value is CACHED.   Valid Values: "STORED", "CACHED", "VTL", "FILE_S3"
       */
@@ -51,8 +51,8 @@ object StorageGatewayNs extends js.Object {
     /**
       * An array of strings that identify disks that are to be configured as working storage. Each string have a minimum length of 1 and maximum length of 300. You can get the disk IDs from the ListLocalDisks API.
       */
-    var DiskIds: DiskIds
-    var GatewayARN: GatewayARN
+    var DiskIds: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.DiskIds
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait AddCacheOutput extends js.Object {
@@ -63,11 +63,11 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the resource you want to add tags to.
       */
-    var ResourceARN: ResourceARN
+    var ResourceARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.ResourceARN
     /**
       * The key-value pair that represents the tag you want to add to the resource. The value can be an empty string.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256. 
       */
-    var Tags: Tags
+    var Tags: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.Tags
   }
   
   trait AddTagsToResourceOutput extends js.Object {
@@ -81,8 +81,8 @@ object StorageGatewayNs extends js.Object {
     /**
       * An array of strings that identify disks that are to be configured as working storage. Each string have a minimum length of 1 and maximum length of 300. You can get the disk IDs from the ListLocalDisks API.
       */
-    var DiskIds: DiskIds
-    var GatewayARN: GatewayARN
+    var DiskIds: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.DiskIds
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait AddUploadBufferOutput extends js.Object {
@@ -93,8 +93,8 @@ object StorageGatewayNs extends js.Object {
     /**
       * An array of strings that identify disks that are to be configured as working storage. Each string have a minimum length of 1 and maximum length of 300. You can get the disk IDs from the ListLocalDisks API.
       */
-    var DiskIds: DiskIds
-    var GatewayARN: GatewayARN
+    var DiskIds: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.DiskIds
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait AddWorkingStorageOutput extends js.Object {
@@ -109,11 +109,11 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the gateway that you want to attach the volume to.
       */
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     /**
       * The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted. Use DescribeGatewayInformation to get a list of the network interfaces available on a gateway.  Valid Values: A valid IP address.
       */
-    var NetworkInterfaceId: NetworkInterfaceId
+    var NetworkInterfaceId: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.NetworkInterfaceId
     /**
       * The name of the iSCSI target used by an initiator to connect to a volume and used as a suffix for the target ARN. For example, specifying TargetName as myvolume results in the target ARN of arn:aws:storagegateway:us-east-2:111122223333:gateway/sgw-12A3456B/target/iqn.1997-05.com.amazon:myvolume. The target name must be unique across all volumes on a gateway. If you don't specify a value, Storage Gateway uses the value that was previously used for this volume as the new target name.
       */
@@ -121,7 +121,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the volume to attach to the specified gateway.
       */
-    var VolumeARN: VolumeARN
+    var VolumeARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.VolumeARN
   }
   
   trait AttachVolumeOutput extends js.Object {
@@ -188,11 +188,11 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait CancelArchivalInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     /**
       * The Amazon Resource Name (ARN) of the virtual tape you want to cancel archiving for.
       */
-    var TapeARN: TapeARN
+    var TapeARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.TapeARN
   }
   
   trait CancelArchivalOutput extends js.Object {
@@ -203,11 +203,11 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait CancelRetrievalInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     /**
       * The Amazon Resource Name (ARN) of the virtual tape you want to cancel retrieval for.
       */
-    var TapeARN: TapeARN
+    var TapeARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.TapeARN
   }
   
   trait CancelRetrievalOutput extends js.Object {
@@ -247,8 +247,8 @@ object StorageGatewayNs extends js.Object {
     /**
       * A unique identifier that you use to retry a request. If you retry a request, use the same ClientToken you specified in the initial request.
       */
-    var ClientToken: ClientToken
-    var GatewayARN: GatewayARN
+    var ClientToken: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.ClientToken
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     /**
       * True to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional.
       */
@@ -260,7 +260,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted. Use DescribeGatewayInformation to get a list of the network interfaces available on a gateway.  Valid Values: A valid IP address.
       */
-    var NetworkInterfaceId: NetworkInterfaceId
+    var NetworkInterfaceId: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.NetworkInterfaceId
     /**
       * The snapshot ID (e.g. "snap-1122aabb") of the snapshot to restore as the new cached volume. Specify this field if you want to create the iSCSI storage volume from a snapshot otherwise do not include this field. To list snapshots for your account use DescribeSnapshots in the Amazon Elastic Compute Cloud API Reference.
       */
@@ -272,7 +272,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The name of the iSCSI target used by an initiator to connect to a volume and used as a suffix for the target ARN. For example, specifying TargetName as myvolume results in the target ARN of arn:aws:storagegateway:us-east-2:111122223333:gateway/sgw-12A3456B/target/iqn.1997-05.com.amazon:myvolume. The target name must be unique across all volumes on a gateway. If you don't specify a value, Storage Gateway uses the value that was previously used for this volume as the new target name.
       */
-    var TargetName: TargetName
+    var TargetName: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.TargetName
     /**
       * The size of the volume in bytes.
       */
@@ -298,7 +298,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * A unique string value that you supply that is used by file gateway to ensure idempotent file share creation.
       */
-    var ClientToken: ClientToken
+    var ClientToken: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.ClientToken
     /**
       * The default storage class for objects put into an Amazon S3 bucket by the file gateway. Possible values are S3_STANDARD, S3_STANDARD_IA, or S3_ONEZONE_IA. If this field is not populated, the default value S3_STANDARD is used. Optional.
       */
@@ -306,7 +306,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the file gateway on which you want to create a file share.
       */
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     /**
       * A value that enables guessing of the MIME type for uploaded objects based on file extensions. Set this value to true to enable MIME type guessing, and otherwise to false. The default value is true.
       */
@@ -322,7 +322,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The ARN of the backed storage used for storing file data. 
       */
-    var LocationARN: LocationARN
+    var LocationARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.LocationARN
     /**
       * File share default values. Optional.
       */
@@ -342,7 +342,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The ARN of the AWS Identity and Access Management (IAM) role that a file gateway assumes when it accesses the underlying storage. 
       */
-    var Role: Role
+    var Role: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.Role
     /**
       * Maps a user to anonymous user. Valid options are the following:     RootSquash - Only root is mapped to anonymous user.    NoSquash - No one is mapped to anonymous user    AllSquash - Everyone is mapped to anonymous user.  
       */
@@ -368,7 +368,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * A unique string value that you supply that is used by file gateway to ensure idempotent file share creation.
       */
-    var ClientToken: ClientToken
+    var ClientToken: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.ClientToken
     /**
       * The default storage class for objects put into an Amazon S3 bucket by the file gateway. Possible values are S3_STANDARD, S3_STANDARD_IA, or S3_ONEZONE_IA. If this field is not populated, the default value S3_STANDARD is used. Optional.
       */
@@ -376,7 +376,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the file gateway on which you want to create a file share.
       */
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     /**
       * A value that enables guessing of the MIME type for uploaded objects based on file extensions. Set this value to true to enable MIME type guessing, and otherwise to false. The default value is true.
       */
@@ -396,7 +396,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The ARN of the backed storage used for storing file data. 
       */
-    var LocationARN: LocationARN
+    var LocationARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.LocationARN
     /**
       * A value that sets the access control list permission for objects in the S3 bucket that a file gateway puts objects into. The default value is "private".
       */
@@ -412,7 +412,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The ARN of the AWS Identity and Access Management (IAM) role that a file gateway assumes when it accesses the underlying storage. 
       */
-    var Role: Role
+    var Role: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.Role
     /**
       * A list of up to ten (10) tags can be assigned to the NFS file share. Every tag is a key-value pair.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256. 
       */
@@ -434,11 +434,11 @@ object StorageGatewayNs extends js.Object {
     /**
       * Textual description of the snapshot that appears in the Amazon EC2 console, Elastic Block Store snapshots panel in the Description field, and in the AWS Storage Gateway snapshot Details pane, Description field
       */
-    var SnapshotDescription: SnapshotDescription
+    var SnapshotDescription: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.SnapshotDescription
     /**
       * The Amazon Resource Name (ARN) of the iSCSI volume target. Use the DescribeStorediSCSIVolumes operation to return to retrieve the TargetARN for specified VolumeARN.
       */
-    var VolumeARN: VolumeARN
+    var VolumeARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.VolumeARN
   }
   
   trait CreateSnapshotFromVolumeRecoveryPointOutput extends js.Object {
@@ -460,11 +460,11 @@ object StorageGatewayNs extends js.Object {
     /**
       * Textual description of the snapshot that appears in the Amazon EC2 console, Elastic Block Store snapshots panel in the Description field, and in the AWS Storage Gateway snapshot Details pane, Description field
       */
-    var SnapshotDescription: SnapshotDescription
+    var SnapshotDescription: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.SnapshotDescription
     /**
       * The Amazon Resource Name (ARN) of the volume. Use the ListVolumes operation to return a list of gateway volumes.
       */
-    var VolumeARN: VolumeARN
+    var VolumeARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.VolumeARN
   }
   
   trait CreateSnapshotOutput extends js.Object {
@@ -482,8 +482,8 @@ object StorageGatewayNs extends js.Object {
     /**
       * The unique identifier for the gateway local disk that is configured as a stored volume. Use ListLocalDisks to list disk IDs for a gateway.
       */
-    var DiskId: DiskId
-    var GatewayARN: GatewayARN
+    var DiskId: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.DiskId
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     /**
       * True to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional.
       */
@@ -495,7 +495,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted. Use DescribeGatewayInformation to get a list of the network interfaces available on a gateway.  Valid Values: A valid IP address.
       */
-    var NetworkInterfaceId: NetworkInterfaceId
+    var NetworkInterfaceId: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.NetworkInterfaceId
     /**
       * Specify this field as true if you want to preserve the data on the local disk. Otherwise, specifying this field as false creates an empty volume.  Valid Values: true, false
       */
@@ -507,7 +507,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The name of the iSCSI target used by an initiator to connect to a volume and used as a suffix for the target ARN. For example, specifying TargetName as myvolume results in the target ARN of arn:aws:storagegateway:us-east-2:111122223333:gateway/sgw-12A3456B/target/iqn.1997-05.com.amazon:myvolume. The target name must be unique across all volumes on a gateway. If you don't specify a value, Storage Gateway uses the value that was previously used for this volume as the new target name.
       */
-    var TargetName: TargetName
+    var TargetName: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.TargetName
   }
   
   trait CreateStorediSCSIVolumeOutput extends js.Object {
@@ -529,7 +529,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The unique Amazon Resource Name (ARN) that represents the gateway to associate the virtual tape with. Use the ListGateways operation to return a list of gateways for your account and region.
       */
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     /**
       * True to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional.
       */
@@ -541,7 +541,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The barcode that you want to assign to the tape.  Barcodes cannot be reused. This includes barcodes used for tapes that have been deleted. 
       */
-    var TapeBarcode: TapeBarcode
+    var TapeBarcode: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.TapeBarcode
     /**
       * The size, in bytes, of the virtual tape that you want to create.  The size must be aligned by gigabyte (1024*1024*1024 byte). 
       */
@@ -559,11 +559,11 @@ object StorageGatewayNs extends js.Object {
     /**
       * A unique identifier that you use to retry a request. If you retry a request, use the same ClientToken you specified in the initial request.  Using the same ClientToken prevents creating the tape multiple times. 
       */
-    var ClientToken: ClientToken
+    var ClientToken: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.ClientToken
     /**
       * The unique Amazon Resource Name (ARN) that represents the gateway to associate the virtual tapes with. Use the ListGateways operation to return a list of gateways for your account and region.
       */
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     /**
       * True to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional.
       */
@@ -575,11 +575,11 @@ object StorageGatewayNs extends js.Object {
     /**
       * The number of virtual tapes that you want to create.
       */
-    var NumTapesToCreate: NumTapesToCreate
+    var NumTapesToCreate: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.NumTapesToCreate
     /**
       * A prefix that you append to the barcode of the virtual tape you are creating. This prefix makes the barcode unique.  The prefix must be 1 to 4 characters in length and must be one of the uppercase letters from A to Z. 
       */
-    var TapeBarcodePrefix: TapeBarcodePrefix
+    var TapeBarcodePrefix: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.TapeBarcodePrefix
     /**
       * The size, in bytes, of the virtual tapes that you want to create.  The size must be aligned by gigabyte (1024*1024*1024 byte). 
       */
@@ -597,8 +597,8 @@ object StorageGatewayNs extends js.Object {
     /**
       * One of the BandwidthType values that indicates the gateway bandwidth rate limit to delete. Valid Values: Upload, Download, All.
       */
-    var BandwidthType: BandwidthType
-    var GatewayARN: GatewayARN
+    var BandwidthType: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.BandwidthType
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait DeleteBandwidthRateLimitOutput extends js.Object {
@@ -613,7 +613,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the iSCSI volume target. Use the DescribeStorediSCSIVolumes operation to return to retrieve the TargetARN for specified VolumeARN.
       */
-    var TargetARN: TargetARN
+    var TargetARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.TargetARN
   }
   
   trait DeleteChapCredentialsOutput extends js.Object {
@@ -631,7 +631,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the file share to be deleted. 
       */
-    var FileShareARN: FileShareARN
+    var FileShareARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.FileShareARN
     /**
       * If this value is set to true, the operation deletes a file share immediately and aborts all data uploads to AWS. Otherwise, the file share is not deleted until all data is uploaded to AWS. This process aborts the data upload process, and the file share enters the FORCE_DELETING status.
       */
@@ -646,7 +646,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait DeleteGatewayInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait DeleteGatewayOutput extends js.Object {
@@ -657,7 +657,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The volume which snapshot schedule to delete.
       */
-    var VolumeARN: VolumeARN
+    var VolumeARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.VolumeARN
   }
   
   trait DeleteSnapshotScheduleOutput extends js.Object {
@@ -671,7 +671,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the virtual tape to delete from the virtual tape shelf (VTS).
       */
-    var TapeARN: TapeARN
+    var TapeARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.TapeARN
   }
   
   trait DeleteTapeArchiveOutput extends js.Object {
@@ -685,11 +685,11 @@ object StorageGatewayNs extends js.Object {
     /**
       * The unique Amazon Resource Name (ARN) of the gateway that the virtual tape to delete is associated with. Use the ListGateways operation to return a list of gateways for your account and region.
       */
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     /**
       * The Amazon Resource Name (ARN) of the virtual tape to delete.
       */
-    var TapeARN: TapeARN
+    var TapeARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.TapeARN
   }
   
   trait DeleteTapeOutput extends js.Object {
@@ -703,7 +703,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the volume. Use the ListVolumes operation to return a list of gateway volumes.
       */
-    var VolumeARN: VolumeARN
+    var VolumeARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.VolumeARN
   }
   
   trait DeleteVolumeOutput extends js.Object {
@@ -714,7 +714,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait DescribeBandwidthRateLimitInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait DescribeBandwidthRateLimitOutput extends js.Object {
@@ -730,7 +730,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait DescribeCacheInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait DescribeCacheOutput extends js.Object {
@@ -765,7 +765,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * An array of strings where each string represents the Amazon Resource Name (ARN) of a cached volume. All of the specified cached volumes must from the same gateway. Use ListVolumes to get volume ARNs for a gateway.
       */
-    var VolumeARNs: VolumeARNs
+    var VolumeARNs: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.VolumeARNs
   }
   
   trait DescribeCachediSCSIVolumesOutput extends js.Object {
@@ -779,7 +779,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the iSCSI volume target. Use the DescribeStorediSCSIVolumes operation to return to retrieve the TargetARN for specified VolumeARN.
       */
-    var TargetARN: TargetARN
+    var TargetARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.TargetARN
   }
   
   trait DescribeChapCredentialsOutput extends js.Object {
@@ -790,7 +790,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait DescribeGatewayInformationInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait DescribeGatewayInformationOutput extends js.Object {
@@ -834,7 +834,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait DescribeMaintenanceStartTimeInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait DescribeMaintenanceStartTimeOutput extends js.Object {
@@ -861,7 +861,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * An array containing the Amazon Resource Name (ARN) of each file share to be described. 
       */
-    var FileShareARNList: FileShareARNList
+    var FileShareARNList: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.FileShareARNList
   }
   
   trait DescribeNFSFileSharesOutput extends js.Object {
@@ -875,7 +875,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * An array containing the Amazon Resource Name (ARN) of each file share to be described. 
       */
-    var FileShareARNList: FileShareARNList
+    var FileShareARNList: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.FileShareARNList
   }
   
   trait DescribeSMBFileSharesOutput extends js.Object {
@@ -886,7 +886,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait DescribeSMBSettingsInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait DescribeSMBSettingsOutput extends js.Object {
@@ -905,7 +905,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the volume. Use the ListVolumes operation to return a list of gateway volumes.
       */
-    var VolumeARN: VolumeARN
+    var VolumeARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.VolumeARN
   }
   
   trait DescribeSnapshotScheduleOutput extends js.Object {
@@ -935,7 +935,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * An array of strings where each string represents the Amazon Resource Name (ARN) of a stored volume. All of the specified stored volumes must from the same gateway. Use ListVolumes to get volume ARNs for a gateway.
       */
-    var VolumeARNs: VolumeARNs
+    var VolumeARNs: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.VolumeARNs
   }
   
   trait DescribeStorediSCSIVolumesOutput extends js.Object {
@@ -972,7 +972,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait DescribeTapeRecoveryPointsInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     /**
       * Specifies that the number of virtual tape recovery points that are described be limited to the specified number.
       */
@@ -996,7 +996,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait DescribeTapesInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     /**
       * Specifies that the number of virtual tapes described be limited to the specified number.  Amazon Web Services may impose its own limit, if this field is not set. 
       */
@@ -1023,7 +1023,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait DescribeUploadBufferInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait DescribeUploadBufferOutput extends js.Object {
@@ -1043,7 +1043,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait DescribeVTLDevicesInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     /**
       * Specifies that the number of VTL devices described be limited to the specified number.
       */
@@ -1071,7 +1071,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait DescribeWorkingStorageInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait DescribeWorkingStorageOutput extends js.Object {
@@ -1098,7 +1098,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the volume to detach from the gateway.
       */
-    var VolumeARN: VolumeARN
+    var VolumeARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.VolumeARN
   }
   
   trait DetachVolumeOutput extends js.Object {
@@ -1128,7 +1128,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait DisableGatewayInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait DisableGatewayOutput extends js.Object {
@@ -1206,11 +1206,11 @@ object StorageGatewayNs extends js.Object {
     /**
       * The name of the domain that you want the gateway to join.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.DomainName
     /**
       * The Amazon Resource Name (ARN) of the gateway. Use the ListGateways operation to return a list of gateways for your account and region.
       */
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     /**
       * The organizational unit (OU) is a container with an Active Directory that can hold users, groups, computers, and other OUs and this parameter specifies the OU that the gateway will join within the AD domain.
       */
@@ -1285,7 +1285,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait ListLocalDisksInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait ListLocalDisksOutput extends js.Object {
@@ -1308,7 +1308,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the resource for which you want to list tags.
       */
-    var ResourceARN: ResourceARN
+    var ResourceARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.ResourceARN
   }
   
   trait ListTagsForResourceOutput extends js.Object {
@@ -1350,7 +1350,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the volume. Use the ListVolumes operation to return a list of gateway volumes for the gateway.
       */
-    var VolumeARN: VolumeARN
+    var VolumeARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.VolumeARN
   }
   
   trait ListVolumeInitiatorsOutput extends js.Object {
@@ -1361,7 +1361,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait ListVolumeRecoveryPointsInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait ListVolumeRecoveryPointsOutput extends js.Object {
@@ -1470,7 +1470,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait NotifyWhenUploadedInput extends js.Object {
-    var FileShareARN: FileShareARN
+    var FileShareARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.FileShareARN
   }
   
   trait NotifyWhenUploadedOutput extends js.Object {
@@ -1482,7 +1482,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the file share you want to refresh.
       */
-    var FileShareARN: FileShareARN
+    var FileShareARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.FileShareARN
     /**
       * A comma-separated list of the paths of folders to refresh in the cache. The default is ["/"]. The default refreshes objects and folders at the root of the Amazon S3 bucket. If Recursive is set to "true", the entire S3 bucket that the file share has access to is refreshed.
       */
@@ -1502,11 +1502,11 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the resource you want to remove the tags from.
       */
-    var ResourceARN: ResourceARN
+    var ResourceARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.ResourceARN
     /**
       * The keys of the tags you want to remove from the specified resource. A tag is composed of a key/value pair.
       */
-    var TagKeys: TagKeys
+    var TagKeys: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.TagKeys
   }
   
   trait RemoveTagsFromResourceOutput extends js.Object {
@@ -1517,7 +1517,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait ResetCacheInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait ResetCacheOutput extends js.Object {
@@ -1528,11 +1528,11 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the gateway you want to retrieve the virtual tape to. Use the ListGateways operation to return a list of gateways for your account and region. You retrieve archived virtual tapes to only one gateway and the gateway must be a tape gateway.
       */
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     /**
       * The Amazon Resource Name (ARN) of the virtual tape you want to retrieve from the virtual tape shelf (VTS).
       */
-    var TapeARN: TapeARN
+    var TapeARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.TapeARN
   }
   
   trait RetrieveTapeArchiveOutput extends js.Object {
@@ -1543,11 +1543,11 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait RetrieveTapeRecoveryPointInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     /**
       * The Amazon Resource Name (ARN) of the virtual tape for which you want to retrieve the recovery point.
       */
-    var TapeARN: TapeARN
+    var TapeARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.TapeARN
   }
   
   trait RetrieveTapeRecoveryPointOutput extends js.Object {
@@ -1606,11 +1606,11 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait SetLocalConsolePasswordInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     /**
       * The password you want to set for your VM local console.
       */
-    var LocalConsolePassword: LocalConsolePassword
+    var LocalConsolePassword: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.LocalConsolePassword
   }
   
   trait SetLocalConsolePasswordOutput extends js.Object {
@@ -1621,7 +1621,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the file gateway the SMB file share is associated with.
       */
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     /**
       * The password that you want to set for your SMB Server.
       */
@@ -1633,7 +1633,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait ShutdownGatewayInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait ShutdownGatewayOutput extends js.Object {
@@ -1641,7 +1641,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait StartGatewayInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait StartGatewayOutput extends js.Object {
@@ -3466,7 +3466,7 @@ object StorageGatewayNs extends js.Object {
       * The average upload bandwidth rate limit in bits per second.
       */
     var AverageUploadRateLimitInBitsPerSec: js.UndefOr[BandwidthUploadRateLimit] = js.undefined
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait UpdateBandwidthRateLimitOutput extends js.Object {
@@ -3489,7 +3489,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the iSCSI volume target. Use the DescribeStorediSCSIVolumes operation to return the TargetARN for specified VolumeARN.
       */
-    var TargetARN: TargetARN
+    var TargetARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.TargetARN
   }
   
   trait UpdateChapCredentialsOutput extends js.Object {
@@ -3504,7 +3504,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait UpdateGatewayInformationInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     var GatewayName: js.UndefOr[GatewayName] = js.undefined
     /**
       * A value that indicates the time zone of the gateway.
@@ -3521,7 +3521,7 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait UpdateGatewaySoftwareNowInput extends js.Object {
-    var GatewayARN: GatewayARN
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
   }
   
   trait UpdateGatewaySoftwareNowOutput extends js.Object {
@@ -3532,16 +3532,16 @@ object StorageGatewayNs extends js.Object {
     /**
       * The maintenance start time day of the week represented as an ordinal number from 0 to 6, where 0 represents Sunday and 6 Saturday.
       */
-    var DayOfWeek: DayOfWeek
-    var GatewayARN: GatewayARN
+    var DayOfWeek: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.DayOfWeek
+    var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.GatewayARN
     /**
       * The hour component of the maintenance start time represented as hh, where hh is the hour (00 to 23). The hour of the day is in the time zone of the gateway.
       */
-    var HourOfDay: HourOfDay
+    var HourOfDay: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.HourOfDay
     /**
       * The minute component of the maintenance start time represented as mm, where mm is the minute (00 to 59). The minute of the hour is in the time zone of the gateway.
       */
-    var MinuteOfHour: MinuteOfHour
+    var MinuteOfHour: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.MinuteOfHour
   }
   
   trait UpdateMaintenanceStartTimeOutput extends js.Object {
@@ -3560,7 +3560,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the file share to be updated. 
       */
-    var FileShareARN: FileShareARN
+    var FileShareARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.FileShareARN
     /**
       * A value that enables guessing of the MIME type for uploaded objects based on file extensions. Set this value to true to enable MIME type guessing, and otherwise to false. The default value is true.
       */
@@ -3610,7 +3610,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the SMB file share that you want to update.
       */
-    var FileShareARN: FileShareARN
+    var FileShareARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.FileShareARN
     /**
       * A value that enables guessing of the MIME type for uploaded objects based on file extensions. Set this value to true to enable MIME type guessing, and otherwise to false. The default value is true.
       */
@@ -3660,7 +3660,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * Frequency of snapshots. Specify the number of hours between snapshots.
       */
-    var RecurrenceInHours: RecurrenceInHours
+    var RecurrenceInHours: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.RecurrenceInHours
     /**
       * The hour of the day at which the snapshot schedule begins represented as hh, where hh is the hour (0 to 23). The hour of the day is in the time zone of the gateway.
       */
@@ -3668,7 +3668,7 @@ object StorageGatewayNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the volume. Use the ListVolumes operation to return a list of gateway volumes.
       */
-    var VolumeARN: VolumeARN
+    var VolumeARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.VolumeARN
   }
   
   trait UpdateSnapshotScheduleOutput extends js.Object {
@@ -3682,11 +3682,11 @@ object StorageGatewayNs extends js.Object {
     /**
       * The type of medium changer you want to select.  Valid Values: "STK-L700", "AWS-Gateway-VTL"
       */
-    var DeviceType: DeviceType
+    var DeviceType: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.DeviceType
     /**
       * The Amazon Resource Name (ARN) of the medium changer you want to select.
       */
-    var VTLDeviceARN: VTLDeviceARN
+    var VTLDeviceARN: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.VTLDeviceARN
   }
   
   trait UpdateVTLDeviceTypeOutput extends js.Object {

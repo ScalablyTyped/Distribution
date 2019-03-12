@@ -158,31 +158,27 @@ trait IServerValidationManager extends js.Object {
     *  field alias to listen for.
     *  If propertyAlias is null, then this subscription is for a field property (not a user defined property).
     */
-  def subscribe(
-    propertyAlias: java.lang.String,
-    fieldName: java.lang.String,
-    callback: angularLib.angularMod.Global.Function
-  ): scala.Unit
+  def subscribe(propertyAlias: java.lang.String, fieldName: java.lang.String, callback: js.Function): scala.Unit
 }
 
 object IServerValidationManager {
   @scala.inline
   def apply(
-    addFieldError: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    addPropertyError: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Unit],
-    clear: js.Function0[scala.Unit],
-    executeAndClearAllSubscriptions: js.Function0[scala.Unit],
-    getFieldCallbacks: js.Function1[java.lang.String, js.Any],
-    getFieldError: js.Function1[java.lang.String, java.lang.String],
-    getPropertyCallbacks: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    getPropertyError: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    hasFieldError: js.Function1[java.lang.String, scala.Boolean],
-    hasPropertyError: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    removePropertyError: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    reset: js.Function0[scala.Unit],
-    subscribe: js.Function3[java.lang.String, java.lang.String, angularLib.angularMod.Global.Function, scala.Unit]
+    addFieldError: (java.lang.String, java.lang.String) => scala.Unit,
+    addPropertyError: (java.lang.String, java.lang.String, java.lang.String) => scala.Unit,
+    clear: () => scala.Unit,
+    executeAndClearAllSubscriptions: () => scala.Unit,
+    getFieldCallbacks: java.lang.String => js.Any,
+    getFieldError: java.lang.String => java.lang.String,
+    getPropertyCallbacks: (java.lang.String, java.lang.String) => scala.Unit,
+    getPropertyError: (java.lang.String, java.lang.String) => java.lang.String,
+    hasFieldError: java.lang.String => scala.Boolean,
+    hasPropertyError: (java.lang.String, java.lang.String) => scala.Boolean,
+    removePropertyError: (java.lang.String, java.lang.String) => scala.Unit,
+    reset: () => scala.Unit,
+    subscribe: (java.lang.String, java.lang.String, js.Function) => scala.Unit
   ): IServerValidationManager = {
-    val __obj = js.Dynamic.literal(addFieldError = addFieldError, addPropertyError = addPropertyError, clear = clear, executeAndClearAllSubscriptions = executeAndClearAllSubscriptions, getFieldCallbacks = getFieldCallbacks, getFieldError = getFieldError, getPropertyCallbacks = getPropertyCallbacks, getPropertyError = getPropertyError, hasFieldError = hasFieldError, hasPropertyError = hasPropertyError, removePropertyError = removePropertyError, reset = reset, subscribe = subscribe)
+    val __obj = js.Dynamic.literal(addFieldError = js.Any.fromFunction2(addFieldError), addPropertyError = js.Any.fromFunction3(addPropertyError), clear = js.Any.fromFunction0(clear), executeAndClearAllSubscriptions = js.Any.fromFunction0(executeAndClearAllSubscriptions), getFieldCallbacks = js.Any.fromFunction1(getFieldCallbacks), getFieldError = js.Any.fromFunction1(getFieldError), getPropertyCallbacks = js.Any.fromFunction2(getPropertyCallbacks), getPropertyError = js.Any.fromFunction2(getPropertyError), hasFieldError = js.Any.fromFunction1(hasFieldError), hasPropertyError = js.Any.fromFunction2(hasPropertyError), removePropertyError = js.Any.fromFunction2(removePropertyError), reset = js.Any.fromFunction0(reset), subscribe = js.Any.fromFunction3(subscribe))
   
     __obj.asInstanceOf[IServerValidationManager]
   }

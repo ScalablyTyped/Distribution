@@ -28,7 +28,7 @@ trait XStruct
     * @returns an array containing the ordered attribute values.
     * @throws SQLException if a database access error occurs.
     */
-  def getAttributes(typeMap: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess): activexDashInteropLib.SafeArray[_]
+  def getAttributes(typeMap: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess): stdLib.SafeArray[_]
   /**
     * retrieves the SQL type name of the SQL structured type that this `Struct` object represents.
     * @returns the name of the SQL type.
@@ -41,16 +41,13 @@ object XStruct {
   @scala.inline
   def apply(
     SQLTypeName: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getAttributes: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess, 
-      activexDashInteropLib.SafeArray[_]
-    ],
-    getSQLTypeName: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess => stdLib.SafeArray[_],
+    getSQLTypeName: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XStruct = {
-    val __obj = js.Dynamic.literal(SQLTypeName = SQLTypeName, acquire = acquire, getAttributes = getAttributes, getSQLTypeName = getSQLTypeName, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(SQLTypeName = SQLTypeName, acquire = js.Any.fromFunction0(acquire), getAttributes = js.Any.fromFunction1(getAttributes), getSQLTypeName = js.Any.fromFunction0(getSQLTypeName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XStruct]
   }

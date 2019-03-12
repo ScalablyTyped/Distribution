@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Scenarios extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Count: scala.Double = js.native
   val Creator: XlCreator = js.native
   val Parent: js.Any = js.native
   def apply(Index: java.lang.String): Scenario = js.native
   def apply(Index: scala.Double): Scenario = js.native
   def Add(Name: java.lang.String, ChangingCells: Range): Scenario = js.native
-  def Add(Name: java.lang.String, ChangingCells: Range, Values: activexDashInteropLib.SafeArray[_]): Scenario = js.native
+  def Add(Name: java.lang.String, ChangingCells: Range, Values: stdLib.SafeArray[_]): Scenario = js.native
   def Add(
     Name: java.lang.String,
     ChangingCells: Range,
-    Values: activexDashInteropLib.SafeArray[_],
+    Values: stdLib.SafeArray[_],
     Comment: java.lang.String
   ): Scenario = js.native
   def Add(
     Name: java.lang.String,
     ChangingCells: Range,
-    Values: activexDashInteropLib.SafeArray[_],
+    Values: stdLib.SafeArray[_],
     Comment: java.lang.String,
     Locked: scala.Boolean
   ): Scenario = js.native
   def Add(
     Name: java.lang.String,
     ChangingCells: Range,
-    Values: activexDashInteropLib.SafeArray[_],
+    Values: stdLib.SafeArray[_],
     Comment: java.lang.String,
     Locked: scala.Boolean,
     Hidden: scala.Boolean

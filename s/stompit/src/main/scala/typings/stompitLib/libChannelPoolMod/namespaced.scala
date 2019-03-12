@@ -13,7 +13,7 @@ class namespaced protected () extends ChannelPool {
   /* CompleteClass */
   override def channel(
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* channel */ stompitLib.libChannelMod.namespaced, 
       scala.Unit
     ]

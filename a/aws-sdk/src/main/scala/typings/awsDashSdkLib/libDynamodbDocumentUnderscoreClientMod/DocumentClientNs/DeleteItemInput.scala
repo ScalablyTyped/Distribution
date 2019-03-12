@@ -29,7 +29,7 @@ trait DeleteItemInput extends js.Object {
   /**
     * A map of attribute names to AttributeValue objects, representing the primary key of the item to delete. For the primary key, you must provide all of the attributes. For example, with a simple primary key, you only need to provide a value for the partition key. For a composite primary key, you must provide values for both the partition key and the sort key.
     */
-  var Key: Key
+  var Key: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.Key
   var ReturnConsumedCapacity: js.UndefOr[ReturnConsumedCapacity] = js.undefined
   /**
     * Determines whether item collection metrics are returned. If set to SIZE, the response includes statistics about item collections, if any, that were modified during the operation are returned in the response. If set to NONE (the default), no statistics are returned.
@@ -42,7 +42,7 @@ trait DeleteItemInput extends js.Object {
   /**
     * The name of the table from which to delete the item.
     */
-  var TableName: TableName
+  var TableName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TableName
 }
 
 object DeleteItemInput {

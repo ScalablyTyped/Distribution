@@ -29,12 +29,12 @@ object LazifyOptions {
   @scala.inline
   def apply(
     configurable: js.UndefOr[scala.Boolean] = js.undefined,
-    mapper: js.Function2[/* key */ java.lang.String, /* mod */ js.Any, _] = null,
+    mapper: (/* key */ java.lang.String, /* mod */ js.Any) => _ = null,
     writable: js.UndefOr[scala.Boolean] = js.undefined
   ): LazifyOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(configurable)) __obj.updateDynamic("configurable")(configurable)
-    if (mapper != null) __obj.updateDynamic("mapper")(mapper)
+    if (mapper != null) __obj.updateDynamic("mapper")(js.Any.fromFunction2(mapper))
     if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable)
     __obj.asInstanceOf[LazifyOptions]
   }

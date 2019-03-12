@@ -16,13 +16,13 @@ trait XEditableSubmitOptions extends js.Object {
 object XEditableSubmitOptions {
   @scala.inline
   def apply(
-    error: js.Function1[js.Any, scala.Unit],
-    success: js.Function2[js.Any, js.Any, scala.Unit],
+    error: js.Any => scala.Unit,
+    success: (js.Any, js.Any) => scala.Unit,
     ajaxOptions: js.Any = null,
     data: js.Any = null,
     url: js.Any = null
   ): XEditableSubmitOptions = {
-    val __obj = js.Dynamic.literal(error = error, success = success)
+    val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), success = js.Any.fromFunction2(success))
     if (ajaxOptions != null) __obj.updateDynamic("ajaxOptions")(ajaxOptions)
     if (data != null) __obj.updateDynamic("data")(data)
     if (url != null) __obj.updateDynamic("url")(url)

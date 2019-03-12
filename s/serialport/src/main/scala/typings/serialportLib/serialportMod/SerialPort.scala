@@ -13,7 +13,7 @@ trait SerialPort
   val isOpen: scala.Boolean = js.native
   val path: java.lang.String = js.native
   def close(): scala.Unit = js.native
-  def close(callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def close(callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def drain(): scala.Unit = js.native
   def drain(callback: serialportLib.serialportMod.SerialPortNs.ErrorCallback): scala.Unit = js.native
   def flush(): scala.Unit = js.native

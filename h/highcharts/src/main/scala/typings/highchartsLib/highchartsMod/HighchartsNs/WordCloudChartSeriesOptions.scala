@@ -169,7 +169,7 @@ object WordCloudChartSeriesOptions {
     negativeColor: java.lang.String = null,
     placementStrategy: java.lang.String = null,
     point: highchartsLib.Anon_Events = null,
-    pointDescriptionFormatter: js.Function0[java.lang.String] = null,
+    pointDescriptionFormatter: () => java.lang.String = null,
     pointInterval: scala.Int | scala.Double = null,
     pointIntervalUnit: java.lang.String = null,
     pointPadding: java.lang.String | scala.Double = null,
@@ -251,7 +251,7 @@ object WordCloudChartSeriesOptions {
     if (negativeColor != null) __obj.updateDynamic("negativeColor")(negativeColor)
     if (placementStrategy != null) __obj.updateDynamic("placementStrategy")(placementStrategy)
     if (point != null) __obj.updateDynamic("point")(point)
-    if (pointDescriptionFormatter != null) __obj.updateDynamic("pointDescriptionFormatter")(pointDescriptionFormatter)
+    if (pointDescriptionFormatter != null) __obj.updateDynamic("pointDescriptionFormatter")(js.Any.fromFunction0(pointDescriptionFormatter))
     if (pointInterval != null) __obj.updateDynamic("pointInterval")(pointInterval.asInstanceOf[js.Any])
     if (pointIntervalUnit != null) __obj.updateDynamic("pointIntervalUnit")(pointIntervalUnit)
     if (pointPadding != null) __obj.updateDynamic("pointPadding")(pointPadding.asInstanceOf[js.Any])

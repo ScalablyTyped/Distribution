@@ -58,19 +58,19 @@ trait TopChildrenQuery extends Query {
 object TopChildrenQuery {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    boost: js.Function1[scala.Double, TopChildrenQuery],
-    factor: js.Function1[scala.Double, TopChildrenQuery],
-    incrementalFactor: js.Function1[scala.Double, TopChildrenQuery],
-    query: js.Function1[js.Object, TopChildrenQuery],
-    scope: js.Function1[java.lang.String, TopChildrenQuery],
-    score: js.Function1[java.lang.String, TopChildrenQuery],
-    scoreMode: js.Function1[java.lang.String, TopChildrenQuery],
-    toJSON: js.Function0[js.Any],
-    `type`: js.Function1[java.lang.String, TopChildrenQuery]
+    _type: () => java.lang.String,
+    boost: scala.Double => TopChildrenQuery,
+    factor: scala.Double => TopChildrenQuery,
+    incrementalFactor: scala.Double => TopChildrenQuery,
+    query: js.Object => TopChildrenQuery,
+    scope: java.lang.String => TopChildrenQuery,
+    score: java.lang.String => TopChildrenQuery,
+    scoreMode: java.lang.String => TopChildrenQuery,
+    toJSON: () => js.Any,
+    `type`: java.lang.String => TopChildrenQuery
   ): TopChildrenQuery = {
-    val __obj = js.Dynamic.literal(_type = _type, boost = boost, factor = factor, incrementalFactor = incrementalFactor, query = query, scope = scope, score = score, scoreMode = scoreMode, toJSON = toJSON)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), boost = js.Any.fromFunction1(boost), factor = js.Any.fromFunction1(factor), incrementalFactor = js.Any.fromFunction1(incrementalFactor), query = js.Any.fromFunction1(query), scope = js.Any.fromFunction1(scope), score = js.Any.fromFunction1(score), scoreMode = js.Any.fromFunction1(scoreMode), toJSON = js.Any.fromFunction0(toJSON))
+    __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
     __obj.asInstanceOf[TopChildrenQuery]
   }
 }

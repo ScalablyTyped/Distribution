@@ -94,7 +94,7 @@ object PlusGalleryGalleryOptions {
     filter: html5plusLib.html5plusLibStrings.image | html5plusLib.html5plusLibStrings.video | html5plusLib.html5plusLibStrings.none = null,
     maximum: scala.Int | scala.Double = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
-    onmaxed: js.Function0[scala.Unit] = null,
+    onmaxed: () => scala.Unit = null,
     popover: PlusGalleryPopPosition = null,
     selected: js.Array[_] = null,
     system: js.UndefOr[scala.Boolean] = js.undefined
@@ -105,7 +105,7 @@ object PlusGalleryGalleryOptions {
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (onmaxed != null) __obj.updateDynamic("onmaxed")(onmaxed)
+    if (onmaxed != null) __obj.updateDynamic("onmaxed")(js.Any.fromFunction0(onmaxed))
     if (popover != null) __obj.updateDynamic("popover")(popover)
     if (selected != null) __obj.updateDynamic("selected")(selected)
     if (!js.isUndefined(system)) __obj.updateDynamic("system")(system)

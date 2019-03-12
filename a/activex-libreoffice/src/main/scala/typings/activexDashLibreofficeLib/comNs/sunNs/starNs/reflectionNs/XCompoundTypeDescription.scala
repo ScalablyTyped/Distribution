@@ -20,7 +20,7 @@ trait XCompoundTypeDescription extends XTypeDescription {
     * Returns the member names of the struct/exception in IDL declaration order.
     * @returns members names of struct/exception
     */
-  val MemberNames: activexDashInteropLib.SafeArray[java.lang.String]
+  val MemberNames: stdLib.SafeArray[java.lang.String]
   /**
     * Returns the member types of the struct/exception in IDL declaration order.
     *
@@ -28,7 +28,7 @@ trait XCompoundTypeDescription extends XTypeDescription {
     * com.sun.star.reflection.XTypeDescription} whose type class is `UNKNOWN` and whose name is the name of the type parameter.
     * @returns members of struct/exception
     */
-  val MemberTypes: activexDashInteropLib.SafeArray[XTypeDescription]
+  val MemberTypes: stdLib.SafeArray[XTypeDescription]
   /**
     * Returns the type of the base type of the compound type. If the compound does not have a base type, the method returns a null interface.
     * @returns base interface or null
@@ -38,7 +38,7 @@ trait XCompoundTypeDescription extends XTypeDescription {
     * Returns the member names of the struct/exception in IDL declaration order.
     * @returns members names of struct/exception
     */
-  def getMemberNames(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getMemberNames(): stdLib.SafeArray[java.lang.String]
   /**
     * Returns the member types of the struct/exception in IDL declaration order.
     *
@@ -46,27 +46,27 @@ trait XCompoundTypeDescription extends XTypeDescription {
     * com.sun.star.reflection.XTypeDescription} whose type class is `UNKNOWN` and whose name is the name of the type parameter.
     * @returns members of struct/exception
     */
-  def getMemberTypes(): activexDashInteropLib.SafeArray[XTypeDescription]
+  def getMemberTypes(): stdLib.SafeArray[XTypeDescription]
 }
 
 object XCompoundTypeDescription {
   @scala.inline
   def apply(
     BaseType: XTypeDescription,
-    MemberNames: activexDashInteropLib.SafeArray[java.lang.String],
-    MemberTypes: activexDashInteropLib.SafeArray[XTypeDescription],
+    MemberNames: stdLib.SafeArray[java.lang.String],
+    MemberTypes: stdLib.SafeArray[XTypeDescription],
     Name: java.lang.String,
     TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
-    acquire: js.Function0[scala.Unit],
-    getBaseType: js.Function0[XTypeDescription],
-    getMemberNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getMemberTypes: js.Function0[activexDashInteropLib.SafeArray[XTypeDescription]],
-    getName: js.Function0[java.lang.String],
-    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getBaseType: () => XTypeDescription,
+    getMemberNames: () => stdLib.SafeArray[java.lang.String],
+    getMemberTypes: () => stdLib.SafeArray[XTypeDescription],
+    getName: () => java.lang.String,
+    getTypeClass: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCompoundTypeDescription = {
-    val __obj = js.Dynamic.literal(BaseType = BaseType, MemberNames = MemberNames, MemberTypes = MemberTypes, Name = Name, TypeClass = TypeClass, acquire = acquire, getBaseType = getBaseType, getMemberNames = getMemberNames, getMemberTypes = getMemberTypes, getName = getName, getTypeClass = getTypeClass, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(BaseType = BaseType, MemberNames = MemberNames, MemberTypes = MemberTypes, Name = Name, TypeClass = TypeClass, acquire = js.Any.fromFunction0(acquire), getBaseType = js.Any.fromFunction0(getBaseType), getMemberNames = js.Any.fromFunction0(getMemberNames), getMemberTypes = js.Any.fromFunction0(getMemberTypes), getName = js.Any.fromFunction0(getName), getTypeClass = js.Any.fromFunction0(getTypeClass), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCompoundTypeDescription]
   }

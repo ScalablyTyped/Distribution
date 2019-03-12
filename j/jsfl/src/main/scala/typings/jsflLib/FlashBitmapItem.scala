@@ -23,7 +23,7 @@ object FlashBitmapItem {
   def apply(
     allowSmoothing: scala.Boolean,
     compressionType: java.lang.String,
-    exportToFile: js.Function1[java.lang.String, scala.Boolean],
+    exportToFile: java.lang.String => scala.Boolean,
     fileLastModifiedDate: java.lang.String,
     originalCompressionType: java.lang.String,
     sourceFileExists: scala.Boolean,
@@ -32,7 +32,7 @@ object FlashBitmapItem {
     useDeblocking: scala.Boolean,
     useImportedJPEGQuality: scala.Boolean
   ): FlashBitmapItem = {
-    val __obj = js.Dynamic.literal(allowSmoothing = allowSmoothing, compressionType = compressionType, exportToFile = exportToFile, fileLastModifiedDate = fileLastModifiedDate, originalCompressionType = originalCompressionType, sourceFileExists = sourceFileExists, sourceFileIsCurrent = sourceFileIsCurrent, sourceFilePath = sourceFilePath, useDeblocking = useDeblocking, useImportedJPEGQuality = useImportedJPEGQuality)
+    val __obj = js.Dynamic.literal(allowSmoothing = allowSmoothing, compressionType = compressionType, exportToFile = js.Any.fromFunction1(exportToFile), fileLastModifiedDate = fileLastModifiedDate, originalCompressionType = originalCompressionType, sourceFileExists = sourceFileExists, sourceFileIsCurrent = sourceFileIsCurrent, sourceFilePath = sourceFilePath, useDeblocking = useDeblocking, useImportedJPEGQuality = useImportedJPEGQuality)
   
     __obj.asInstanceOf[FlashBitmapItem]
   }

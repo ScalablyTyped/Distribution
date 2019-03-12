@@ -18,8 +18,8 @@ trait XAnnotationEnumeration extends js.Object {
 
 object XAnnotationEnumeration {
   @scala.inline
-  def apply(hasMoreElements: js.Function0[scala.Boolean], nextElement: js.Function0[XAnnotation]): XAnnotationEnumeration = {
-    val __obj = js.Dynamic.literal(hasMoreElements = hasMoreElements, nextElement = nextElement)
+  def apply(hasMoreElements: () => scala.Boolean, nextElement: () => XAnnotation): XAnnotationEnumeration = {
+    val __obj = js.Dynamic.literal(hasMoreElements = js.Any.fromFunction0(hasMoreElements), nextElement = js.Any.fromFunction0(nextElement))
   
     __obj.asInstanceOf[XAnnotationEnumeration]
   }

@@ -26,7 +26,7 @@ object IconToggleProps {
     color: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     maxOpacity: scala.Int | scala.Double = null,
-    onPress: js.Function0[scala.Unit] = null,
+    onPress: () => scala.Unit = null,
     percent: scala.Int | scala.Double = null,
     size: scala.Int | scala.Double = null,
     style: reactDashNativeDashMaterialDashUiLib.Anon_ContainerIconViewStyle = null,
@@ -37,7 +37,7 @@ object IconToggleProps {
     if (color != null) __obj.updateDynamic("color")(color)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (maxOpacity != null) __obj.updateDynamic("maxOpacity")(maxOpacity.asInstanceOf[js.Any])
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)

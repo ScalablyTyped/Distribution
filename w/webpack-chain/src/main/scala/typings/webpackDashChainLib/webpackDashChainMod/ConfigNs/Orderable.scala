@@ -12,11 +12,8 @@ trait Orderable extends js.Object {
 
 object Orderable {
   @scala.inline
-  def apply(
-    after: js.Function1[java.lang.String, Orderable],
-    before: js.Function1[java.lang.String, Orderable]
-  ): Orderable = {
-    val __obj = js.Dynamic.literal(after = after, before = before)
+  def apply(after: java.lang.String => Orderable, before: java.lang.String => Orderable): Orderable = {
+    val __obj = js.Dynamic.literal(after = js.Any.fromFunction1(after), before = js.Any.fromFunction1(before))
   
     __obj.asInstanceOf[Orderable]
   }

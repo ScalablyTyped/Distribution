@@ -18,17 +18,17 @@ trait Quickstart
 object Quickstart {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createAndSetVeto: js.Function3[scala.Boolean, scala.Boolean, scala.Boolean, scala.Unit],
-    createAutoStart: js.Function2[scala.Boolean, scala.Boolean, scala.Unit],
-    createDefault: js.Function0[scala.Unit],
-    createStart: js.Function1[scala.Boolean, scala.Unit],
-    getFastPropertyValue: js.Function1[scala.Double, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setFastPropertyValue: js.Function2[scala.Double, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    createAndSetVeto: (scala.Boolean, scala.Boolean, scala.Boolean) => scala.Unit,
+    createAutoStart: (scala.Boolean, scala.Boolean) => scala.Unit,
+    createDefault: () => scala.Unit,
+    createStart: scala.Boolean => scala.Unit,
+    getFastPropertyValue: scala.Double => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setFastPropertyValue: (scala.Double, js.Any) => scala.Unit
   ): Quickstart = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createAndSetVeto = createAndSetVeto, createAutoStart = createAutoStart, createDefault = createDefault, createStart = createStart, getFastPropertyValue = getFastPropertyValue, queryInterface = queryInterface, release = release, setFastPropertyValue = setFastPropertyValue)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createAndSetVeto = js.Any.fromFunction3(createAndSetVeto), createAutoStart = js.Any.fromFunction2(createAutoStart), createDefault = js.Any.fromFunction0(createDefault), createStart = js.Any.fromFunction1(createStart), getFastPropertyValue = js.Any.fromFunction1(getFastPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setFastPropertyValue = js.Any.fromFunction2(setFastPropertyValue))
   
     __obj.asInstanceOf[Quickstart]
   }

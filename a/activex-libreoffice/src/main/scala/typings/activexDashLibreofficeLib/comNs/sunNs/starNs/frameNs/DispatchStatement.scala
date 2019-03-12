@@ -15,7 +15,7 @@ trait DispatchStatement extends js.Object {
     *
     * That means the **Arguments** parameter of a corresponding {@link XDispatch.dispatch()} request.
     */
-  var aArgs: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  var aArgs: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * specifies the dispatch command
     *
@@ -44,7 +44,7 @@ trait DispatchStatement extends js.Object {
 object DispatchStatement {
   @scala.inline
   def apply(
-    aArgs: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    aArgs: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     aCommand: java.lang.String,
     aTarget: java.lang.String,
     bIsComment: scala.Boolean,

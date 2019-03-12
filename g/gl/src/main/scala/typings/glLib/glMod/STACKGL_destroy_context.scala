@@ -11,8 +11,8 @@ trait STACKGL_destroy_context extends js.Object {
 
 object STACKGL_destroy_context {
   @scala.inline
-  def apply(destroy: js.Function0[scala.Unit]): STACKGL_destroy_context = {
-    val __obj = js.Dynamic.literal(destroy = destroy)
+  def apply(destroy: () => scala.Unit): STACKGL_destroy_context = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
   
     __obj.asInstanceOf[STACKGL_destroy_context]
   }

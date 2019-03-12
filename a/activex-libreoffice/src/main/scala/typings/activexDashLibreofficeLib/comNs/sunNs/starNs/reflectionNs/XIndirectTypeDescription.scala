@@ -25,14 +25,14 @@ object XIndirectTypeDescription {
     Name: java.lang.String,
     ReferencedType: XTypeDescription,
     TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
-    acquire: js.Function0[scala.Unit],
-    getName: js.Function0[java.lang.String],
-    getReferencedType: js.Function0[XTypeDescription],
-    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getName: () => java.lang.String,
+    getReferencedType: () => XTypeDescription,
+    getTypeClass: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XIndirectTypeDescription = {
-    val __obj = js.Dynamic.literal(Name = Name, ReferencedType = ReferencedType, TypeClass = TypeClass, acquire = acquire, getName = getName, getReferencedType = getReferencedType, getTypeClass = getTypeClass, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Name = Name, ReferencedType = ReferencedType, TypeClass = TypeClass, acquire = js.Any.fromFunction0(acquire), getName = js.Any.fromFunction0(getName), getReferencedType = js.Any.fromFunction0(getReferencedType), getTypeClass = js.Any.fromFunction0(getTypeClass), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XIndirectTypeDescription]
   }

@@ -13,10 +13,10 @@ trait SketchSharedStyleContainer extends js.Object {
 object SketchSharedStyleContainer {
   @scala.inline
   def apply(
-    addSharedStyleWithName_firstInstance: js.Function2[java.lang.String, js.Any, scala.Unit],
-    setObjects: js.Function1[js.Array[_], scala.Unit]
+    addSharedStyleWithName_firstInstance: (java.lang.String, js.Any) => scala.Unit,
+    setObjects: js.Array[_] => scala.Unit
   ): SketchSharedStyleContainer = {
-    val __obj = js.Dynamic.literal(addSharedStyleWithName_firstInstance = addSharedStyleWithName_firstInstance, setObjects = setObjects)
+    val __obj = js.Dynamic.literal(addSharedStyleWithName_firstInstance = js.Any.fromFunction2(addSharedStyleWithName_firstInstance), setObjects = js.Any.fromFunction1(setObjects))
   
     __obj.asInstanceOf[SketchSharedStyleContainer]
   }

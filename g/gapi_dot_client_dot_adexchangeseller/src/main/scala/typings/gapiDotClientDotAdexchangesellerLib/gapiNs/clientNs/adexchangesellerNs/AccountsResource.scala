@@ -25,20 +25,14 @@ object AccountsResource {
     adclients: AdclientsResource,
     alerts: AlertsResource,
     customchannels: CustomchannelsResource,
-    get: js.Function1[
-      gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Account]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAdexchangesellerLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Accounts]
-    ],
+    get: gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAltFields => gapiDotClientLib.gapiNs.clientNs.Request[Account],
+    list: gapiDotClientDotAdexchangesellerLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Accounts],
     metadata: MetadataResource,
     preferreddeals: PreferreddealsResource,
     reports: ReportsResource,
     urlchannels: UrlchannelsResource
   ): AccountsResource = {
-    val __obj = js.Dynamic.literal(adclients = adclients, alerts = alerts, customchannels = customchannels, get = get, list = list, metadata = metadata, preferreddeals = preferreddeals, reports = reports, urlchannels = urlchannels)
+    val __obj = js.Dynamic.literal(adclients = adclients, alerts = alerts, customchannels = customchannels, get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), metadata = metadata, preferreddeals = preferreddeals, reports = reports, urlchannels = urlchannels)
   
     __obj.asInstanceOf[AccountsResource]
   }

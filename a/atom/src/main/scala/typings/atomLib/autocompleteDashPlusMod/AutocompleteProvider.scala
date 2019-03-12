@@ -60,26 +60,23 @@ trait AutocompleteProvider extends js.Object {
 object AutocompleteProvider {
   @scala.inline
   def apply(
-    getSuggestions: js.Function1[SuggestionsRequestedEvent, Suggestions | js.Promise[Suggestions]],
+    getSuggestions: SuggestionsRequestedEvent => Suggestions | js.Promise[Suggestions],
     selector: java.lang.String,
     disableForSelector: java.lang.String = null,
-    dispose: js.Function0[scala.Unit] = null,
+    dispose: () => scala.Unit = null,
     excludeLowerPriority: js.UndefOr[scala.Boolean] = js.undefined,
-    getSuggestionDetailsOnSelect: js.Function1[
-      /* suggestion */ AnySuggestion, 
-      (js.Promise[AnySuggestion | scala.Null]) | AnySuggestion | scala.Null
-    ] = null,
+    getSuggestionDetailsOnSelect: /* suggestion */ AnySuggestion => (js.Promise[AnySuggestion | scala.Null]) | AnySuggestion | scala.Null = null,
     inclusionPriority: scala.Int | scala.Double = null,
-    onDidInsertSuggestion: js.Function1[/* params */ SuggestionInsertedEvent, scala.Unit] = null,
+    onDidInsertSuggestion: /* params */ SuggestionInsertedEvent => scala.Unit = null,
     suggestionPriority: scala.Int | scala.Double = null
   ): AutocompleteProvider = {
-    val __obj = js.Dynamic.literal(getSuggestions = getSuggestions, selector = selector)
+    val __obj = js.Dynamic.literal(getSuggestions = js.Any.fromFunction1(getSuggestions), selector = selector)
     if (disableForSelector != null) __obj.updateDynamic("disableForSelector")(disableForSelector)
-    if (dispose != null) __obj.updateDynamic("dispose")(dispose)
+    if (dispose != null) __obj.updateDynamic("dispose")(js.Any.fromFunction0(dispose))
     if (!js.isUndefined(excludeLowerPriority)) __obj.updateDynamic("excludeLowerPriority")(excludeLowerPriority)
-    if (getSuggestionDetailsOnSelect != null) __obj.updateDynamic("getSuggestionDetailsOnSelect")(getSuggestionDetailsOnSelect)
+    if (getSuggestionDetailsOnSelect != null) __obj.updateDynamic("getSuggestionDetailsOnSelect")(js.Any.fromFunction1(getSuggestionDetailsOnSelect))
     if (inclusionPriority != null) __obj.updateDynamic("inclusionPriority")(inclusionPriority.asInstanceOf[js.Any])
-    if (onDidInsertSuggestion != null) __obj.updateDynamic("onDidInsertSuggestion")(onDidInsertSuggestion)
+    if (onDidInsertSuggestion != null) __obj.updateDynamic("onDidInsertSuggestion")(js.Any.fromFunction1(onDidInsertSuggestion))
     if (suggestionPriority != null) __obj.updateDynamic("suggestionPriority")(suggestionPriority.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutocompleteProvider]
   }

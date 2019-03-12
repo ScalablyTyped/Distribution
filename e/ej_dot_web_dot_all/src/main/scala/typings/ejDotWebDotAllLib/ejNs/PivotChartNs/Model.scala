@@ -133,17 +133,17 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    afterServiceInvoke: js.Function1[/* e */ AfterServiceInvokeEventArgs, scala.Unit] = null,
+    afterServiceInvoke: /* e */ AfterServiceInvokeEventArgs => scala.Unit = null,
     analysisMode: ejDotWebDotAllLib.ejNs.PivotNs.AnalysisMode | java.lang.String = null,
     axes: js.Array[_] = null,
-    beforeExport: js.Function1[/* e */ BeforeExportEventArgs, scala.Unit] = null,
-    beforeSeriesRender: js.Function1[/* e */ BeforeSeriesRenderEventArgs, scala.Unit] = null,
-    beforeServiceInvoke: js.Function1[/* e */ BeforeServiceInvokeEventArgs, scala.Unit] = null,
+    beforeExport: /* e */ BeforeExportEventArgs => scala.Unit = null,
+    beforeSeriesRender: /* e */ BeforeSeriesRenderEventArgs => scala.Unit = null,
+    beforeServiceInvoke: /* e */ BeforeServiceInvokeEventArgs => scala.Unit = null,
     commonSeriesOptions: CommonSeriesOptions = null,
     cssClass: java.lang.String = null,
     customObject: js.Any = null,
     dataSource: DataSource = null,
-    drillSuccess: js.Function1[/* e */ DrillSuccessEventArgs, scala.Unit] = null,
+    drillSuccess: /* e */ DrillSuccessEventArgs => scala.Unit = null,
     enable3D: js.UndefOr[scala.Boolean] = js.undefined,
     enableContextMenu: js.UndefOr[scala.Boolean] = js.undefined,
     enableMultiLevelLabels: js.UndefOr[scala.Boolean] = js.undefined,
@@ -151,14 +151,14 @@ object Model {
     enableXHRCredentials: js.UndefOr[scala.Boolean] = js.undefined,
     isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
     legend: js.Any = null,
-    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    load: /* e */ LoadEventArgs => scala.Unit = null,
     locale: java.lang.String = null,
     operationalMode: ejDotWebDotAllLib.ejNs.PivotNs.OperationalMode | java.lang.String = null,
     primaryXAxis: js.Any = null,
     primaryYAxis: js.Any = null,
-    renderComplete: js.Function1[/* e */ RenderCompleteEventArgs, scala.Unit] = null,
-    renderFailure: js.Function1[/* e */ RenderFailureEventArgs, scala.Unit] = null,
-    renderSuccess: js.Function1[/* e */ RenderSuccessEventArgs, scala.Unit] = null,
+    renderComplete: /* e */ RenderCompleteEventArgs => scala.Unit = null,
+    renderFailure: /* e */ RenderFailureEventArgs => scala.Unit = null,
+    renderSuccess: /* e */ RenderSuccessEventArgs => scala.Unit = null,
     rotation: scala.Int | scala.Double = null,
     serviceMethodSettings: ServiceMethodSettings = null,
     size: js.Any = null,
@@ -167,17 +167,17 @@ object Model {
     zooming: Zooming = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (afterServiceInvoke != null) __obj.updateDynamic("afterServiceInvoke")(afterServiceInvoke)
+    if (afterServiceInvoke != null) __obj.updateDynamic("afterServiceInvoke")(js.Any.fromFunction1(afterServiceInvoke))
     if (analysisMode != null) __obj.updateDynamic("analysisMode")(analysisMode.asInstanceOf[js.Any])
     if (axes != null) __obj.updateDynamic("axes")(axes)
-    if (beforeExport != null) __obj.updateDynamic("beforeExport")(beforeExport)
-    if (beforeSeriesRender != null) __obj.updateDynamic("beforeSeriesRender")(beforeSeriesRender)
-    if (beforeServiceInvoke != null) __obj.updateDynamic("beforeServiceInvoke")(beforeServiceInvoke)
+    if (beforeExport != null) __obj.updateDynamic("beforeExport")(js.Any.fromFunction1(beforeExport))
+    if (beforeSeriesRender != null) __obj.updateDynamic("beforeSeriesRender")(js.Any.fromFunction1(beforeSeriesRender))
+    if (beforeServiceInvoke != null) __obj.updateDynamic("beforeServiceInvoke")(js.Any.fromFunction1(beforeServiceInvoke))
     if (commonSeriesOptions != null) __obj.updateDynamic("commonSeriesOptions")(commonSeriesOptions)
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (customObject != null) __obj.updateDynamic("customObject")(customObject)
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (drillSuccess != null) __obj.updateDynamic("drillSuccess")(drillSuccess)
+    if (drillSuccess != null) __obj.updateDynamic("drillSuccess")(js.Any.fromFunction1(drillSuccess))
     if (!js.isUndefined(enable3D)) __obj.updateDynamic("enable3D")(enable3D)
     if (!js.isUndefined(enableContextMenu)) __obj.updateDynamic("enableContextMenu")(enableContextMenu)
     if (!js.isUndefined(enableMultiLevelLabels)) __obj.updateDynamic("enableMultiLevelLabels")(enableMultiLevelLabels)
@@ -185,14 +185,14 @@ object Model {
     if (!js.isUndefined(enableXHRCredentials)) __obj.updateDynamic("enableXHRCredentials")(enableXHRCredentials)
     if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
     if (legend != null) __obj.updateDynamic("legend")(legend)
-    if (load != null) __obj.updateDynamic("load")(load)
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (operationalMode != null) __obj.updateDynamic("operationalMode")(operationalMode.asInstanceOf[js.Any])
     if (primaryXAxis != null) __obj.updateDynamic("primaryXAxis")(primaryXAxis)
     if (primaryYAxis != null) __obj.updateDynamic("primaryYAxis")(primaryYAxis)
-    if (renderComplete != null) __obj.updateDynamic("renderComplete")(renderComplete)
-    if (renderFailure != null) __obj.updateDynamic("renderFailure")(renderFailure)
-    if (renderSuccess != null) __obj.updateDynamic("renderSuccess")(renderSuccess)
+    if (renderComplete != null) __obj.updateDynamic("renderComplete")(js.Any.fromFunction1(renderComplete))
+    if (renderFailure != null) __obj.updateDynamic("renderFailure")(js.Any.fromFunction1(renderFailure))
+    if (renderSuccess != null) __obj.updateDynamic("renderSuccess")(js.Any.fromFunction1(renderSuccess))
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (serviceMethodSettings != null) __obj.updateDynamic("serviceMethodSettings")(serviceMethodSettings)
     if (size != null) __obj.updateDynamic("size")(size)

@@ -12,13 +12,9 @@ trait IScheduledTileNotificationFactory extends js.Object {
 object IScheduledTileNotificationFactory {
   @scala.inline
   def apply(
-    createScheduledTileNotification: js.Function2[
-      winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument, 
-      stdLib.Date, 
-      ScheduledTileNotification
-    ]
+    createScheduledTileNotification: (winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument, stdLib.Date) => ScheduledTileNotification
   ): IScheduledTileNotificationFactory = {
-    val __obj = js.Dynamic.literal(createScheduledTileNotification = createScheduledTileNotification)
+    val __obj = js.Dynamic.literal(createScheduledTileNotification = js.Any.fromFunction2(createScheduledTileNotification))
   
     __obj.asInstanceOf[IScheduledTileNotificationFactory]
   }

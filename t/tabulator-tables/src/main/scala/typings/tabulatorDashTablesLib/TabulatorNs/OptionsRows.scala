@@ -178,54 +178,30 @@ object OptionsRows {
   @scala.inline
   def apply(
     addRowPos: tabulatorDashTablesLib.tabulatorDashTablesLibStrings.bottom | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.top = null,
-    dataTreeRowCollapsed: js.Function2[/* row */ RowComponent, /* level */ scala.Double, scala.Unit] = null,
-    dataTreeRowExpanded: js.Function2[/* row */ RowComponent, /* level */ scala.Double, scala.Unit] = null,
+    dataTreeRowCollapsed: (/* row */ RowComponent, /* level */ scala.Double) => scala.Unit = null,
+    dataTreeRowExpanded: (/* row */ RowComponent, /* level */ scala.Double) => scala.Unit = null,
     movableRows: js.UndefOr[scala.Boolean] = js.undefined,
     movableRowsConnectedTables: java.lang.String | js.Array[java.lang.String] | stdLib.HTMLElement | js.Array[stdLib.HTMLElement] = null,
-    movableRowsReceived: js.Function3[
-      /* fromRow */ RowComponent, 
-      /* toRow */ RowComponent, 
-      /* fromTable */ tabulatorDashTablesLib.Tabulator, 
-      scala.Unit
-    ] = null,
-    movableRowsReceivedFailed: js.Function3[
-      /* fromRow */ RowComponent, 
-      /* toRow */ RowComponent, 
-      /* fromTable */ tabulatorDashTablesLib.Tabulator, 
-      scala.Unit
-    ] = null,
+    movableRowsReceived: (/* fromRow */ RowComponent, /* toRow */ RowComponent, /* fromTable */ tabulatorDashTablesLib.Tabulator) => scala.Unit = null,
+    movableRowsReceivedFailed: (/* fromRow */ RowComponent, /* toRow */ RowComponent, /* fromTable */ tabulatorDashTablesLib.Tabulator) => scala.Unit = null,
     movableRowsReceiver: tabulatorDashTablesLib.tabulatorDashTablesLibStrings.insert | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.add | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.update | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.replace | (js.Function3[
       /* fromRow */ RowComponent, 
       /* toRow */ RowComponent, 
       /* fromTable */ tabulatorDashTablesLib.Tabulator, 
       _
     ]) = null,
-    movableRowsReceivingStart: js.Function2[
-      /* fromRow */ RowComponent, 
-      /* toTable */ tabulatorDashTablesLib.Tabulator, 
-      scala.Unit
-    ] = null,
-    movableRowsReceivingStop: js.Function1[/* fromTable */ tabulatorDashTablesLib.Tabulator, scala.Unit] = null,
+    movableRowsReceivingStart: (/* fromRow */ RowComponent, /* toTable */ tabulatorDashTablesLib.Tabulator) => scala.Unit = null,
+    movableRowsReceivingStop: /* fromTable */ tabulatorDashTablesLib.Tabulator => scala.Unit = null,
     movableRowsSender: tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`false` | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.delete | (js.Function3[
       /* fromRow */ RowComponent, 
       /* toRow */ RowComponent, 
       /* toTable */ tabulatorDashTablesLib.Tabulator, 
       _
     ]) = null,
-    movableRowsSendingStart: js.Function1[/* toTables */ js.Array[_], scala.Unit] = null,
-    movableRowsSendingStop: js.Function1[/* toTables */ js.Array[_], scala.Unit] = null,
-    movableRowsSent: js.Function3[
-      /* fromRow */ RowComponent, 
-      /* toRow */ RowComponent, 
-      /* toTable */ tabulatorDashTablesLib.Tabulator, 
-      scala.Unit
-    ] = null,
-    movableRowsSentFailed: js.Function3[
-      /* fromRow */ RowComponent, 
-      /* toRow */ RowComponent, 
-      /* toTable */ tabulatorDashTablesLib.Tabulator, 
-      scala.Unit
-    ] = null,
+    movableRowsSendingStart: /* toTables */ js.Array[_] => scala.Unit = null,
+    movableRowsSendingStop: /* toTables */ js.Array[_] => scala.Unit = null,
+    movableRowsSent: (/* fromRow */ RowComponent, /* toRow */ RowComponent, /* toTable */ tabulatorDashTablesLib.Tabulator) => scala.Unit = null,
+    movableRowsSentFailed: (/* fromRow */ RowComponent, /* toRow */ RowComponent, /* toTable */ tabulatorDashTablesLib.Tabulator) => scala.Unit = null,
     resizableRows: js.UndefOr[scala.Boolean] = js.undefined,
     rowAdded: RowChangedCallback = null,
     rowClick: RowEventCallback = null,
@@ -234,7 +210,7 @@ object OptionsRows {
     rowDblTap: RowEventCallback = null,
     rowDeleted: RowChangedCallback = null,
     rowDeselected: RowChangedCallback = null,
-    rowFormatter: js.Function1[/* row */ RowComponent, _] = null,
+    rowFormatter: /* row */ RowComponent => _ = null,
     rowMouseEnter: RowEventCallback = null,
     rowMouseLeave: RowEventCallback = null,
     rowMouseMove: RowEventCallback = null,
@@ -243,34 +219,34 @@ object OptionsRows {
     rowMoved: RowChangedCallback = null,
     rowResized: RowChangedCallback = null,
     rowSelected: RowChangedCallback = null,
-    rowSelectionChanged: js.Function2[/* data */ js.Array[_], /* rows */ js.Array[RowComponent], scala.Unit] = null,
+    rowSelectionChanged: (/* data */ js.Array[_], /* rows */ js.Array[RowComponent]) => scala.Unit = null,
     rowTap: RowEventCallback = null,
     rowTapHold: RowEventCallback = null,
     rowUpdated: RowChangedCallback = null,
     scrollToRowIfVisible: js.UndefOr[scala.Boolean] = js.undefined,
     scrollToRowPosition: ScrollToRowPostition = null,
     selectable: scala.Boolean | scala.Double | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.highlight = null,
-    selectableCheck: js.Function1[/* row */ RowComponent, scala.Boolean] = null,
+    selectableCheck: /* row */ RowComponent => scala.Boolean = null,
     selectablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
     selectableRangeMode: tabulatorDashTablesLib.tabulatorDashTablesLibStrings.click = null,
     selectableRollingSelection: js.UndefOr[scala.Boolean] = js.undefined
   ): OptionsRows = {
     val __obj = js.Dynamic.literal()
     if (addRowPos != null) __obj.updateDynamic("addRowPos")(addRowPos.asInstanceOf[js.Any])
-    if (dataTreeRowCollapsed != null) __obj.updateDynamic("dataTreeRowCollapsed")(dataTreeRowCollapsed)
-    if (dataTreeRowExpanded != null) __obj.updateDynamic("dataTreeRowExpanded")(dataTreeRowExpanded)
+    if (dataTreeRowCollapsed != null) __obj.updateDynamic("dataTreeRowCollapsed")(js.Any.fromFunction2(dataTreeRowCollapsed))
+    if (dataTreeRowExpanded != null) __obj.updateDynamic("dataTreeRowExpanded")(js.Any.fromFunction2(dataTreeRowExpanded))
     if (!js.isUndefined(movableRows)) __obj.updateDynamic("movableRows")(movableRows)
     if (movableRowsConnectedTables != null) __obj.updateDynamic("movableRowsConnectedTables")(movableRowsConnectedTables.asInstanceOf[js.Any])
-    if (movableRowsReceived != null) __obj.updateDynamic("movableRowsReceived")(movableRowsReceived)
-    if (movableRowsReceivedFailed != null) __obj.updateDynamic("movableRowsReceivedFailed")(movableRowsReceivedFailed)
+    if (movableRowsReceived != null) __obj.updateDynamic("movableRowsReceived")(js.Any.fromFunction3(movableRowsReceived))
+    if (movableRowsReceivedFailed != null) __obj.updateDynamic("movableRowsReceivedFailed")(js.Any.fromFunction3(movableRowsReceivedFailed))
     if (movableRowsReceiver != null) __obj.updateDynamic("movableRowsReceiver")(movableRowsReceiver.asInstanceOf[js.Any])
-    if (movableRowsReceivingStart != null) __obj.updateDynamic("movableRowsReceivingStart")(movableRowsReceivingStart)
-    if (movableRowsReceivingStop != null) __obj.updateDynamic("movableRowsReceivingStop")(movableRowsReceivingStop)
+    if (movableRowsReceivingStart != null) __obj.updateDynamic("movableRowsReceivingStart")(js.Any.fromFunction2(movableRowsReceivingStart))
+    if (movableRowsReceivingStop != null) __obj.updateDynamic("movableRowsReceivingStop")(js.Any.fromFunction1(movableRowsReceivingStop))
     if (movableRowsSender != null) __obj.updateDynamic("movableRowsSender")(movableRowsSender.asInstanceOf[js.Any])
-    if (movableRowsSendingStart != null) __obj.updateDynamic("movableRowsSendingStart")(movableRowsSendingStart)
-    if (movableRowsSendingStop != null) __obj.updateDynamic("movableRowsSendingStop")(movableRowsSendingStop)
-    if (movableRowsSent != null) __obj.updateDynamic("movableRowsSent")(movableRowsSent)
-    if (movableRowsSentFailed != null) __obj.updateDynamic("movableRowsSentFailed")(movableRowsSentFailed)
+    if (movableRowsSendingStart != null) __obj.updateDynamic("movableRowsSendingStart")(js.Any.fromFunction1(movableRowsSendingStart))
+    if (movableRowsSendingStop != null) __obj.updateDynamic("movableRowsSendingStop")(js.Any.fromFunction1(movableRowsSendingStop))
+    if (movableRowsSent != null) __obj.updateDynamic("movableRowsSent")(js.Any.fromFunction3(movableRowsSent))
+    if (movableRowsSentFailed != null) __obj.updateDynamic("movableRowsSentFailed")(js.Any.fromFunction3(movableRowsSentFailed))
     if (!js.isUndefined(resizableRows)) __obj.updateDynamic("resizableRows")(resizableRows)
     if (rowAdded != null) __obj.updateDynamic("rowAdded")(rowAdded)
     if (rowClick != null) __obj.updateDynamic("rowClick")(rowClick)
@@ -279,7 +255,7 @@ object OptionsRows {
     if (rowDblTap != null) __obj.updateDynamic("rowDblTap")(rowDblTap)
     if (rowDeleted != null) __obj.updateDynamic("rowDeleted")(rowDeleted)
     if (rowDeselected != null) __obj.updateDynamic("rowDeselected")(rowDeselected)
-    if (rowFormatter != null) __obj.updateDynamic("rowFormatter")(rowFormatter)
+    if (rowFormatter != null) __obj.updateDynamic("rowFormatter")(js.Any.fromFunction1(rowFormatter))
     if (rowMouseEnter != null) __obj.updateDynamic("rowMouseEnter")(rowMouseEnter)
     if (rowMouseLeave != null) __obj.updateDynamic("rowMouseLeave")(rowMouseLeave)
     if (rowMouseMove != null) __obj.updateDynamic("rowMouseMove")(rowMouseMove)
@@ -288,14 +264,14 @@ object OptionsRows {
     if (rowMoved != null) __obj.updateDynamic("rowMoved")(rowMoved)
     if (rowResized != null) __obj.updateDynamic("rowResized")(rowResized)
     if (rowSelected != null) __obj.updateDynamic("rowSelected")(rowSelected)
-    if (rowSelectionChanged != null) __obj.updateDynamic("rowSelectionChanged")(rowSelectionChanged)
+    if (rowSelectionChanged != null) __obj.updateDynamic("rowSelectionChanged")(js.Any.fromFunction2(rowSelectionChanged))
     if (rowTap != null) __obj.updateDynamic("rowTap")(rowTap)
     if (rowTapHold != null) __obj.updateDynamic("rowTapHold")(rowTapHold)
     if (rowUpdated != null) __obj.updateDynamic("rowUpdated")(rowUpdated)
     if (!js.isUndefined(scrollToRowIfVisible)) __obj.updateDynamic("scrollToRowIfVisible")(scrollToRowIfVisible)
     if (scrollToRowPosition != null) __obj.updateDynamic("scrollToRowPosition")(scrollToRowPosition)
     if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (selectableCheck != null) __obj.updateDynamic("selectableCheck")(selectableCheck)
+    if (selectableCheck != null) __obj.updateDynamic("selectableCheck")(js.Any.fromFunction1(selectableCheck))
     if (!js.isUndefined(selectablePersistence)) __obj.updateDynamic("selectablePersistence")(selectablePersistence)
     if (selectableRangeMode != null) __obj.updateDynamic("selectableRangeMode")(selectableRangeMode)
     if (!js.isUndefined(selectableRollingSelection)) __obj.updateDynamic("selectableRollingSelection")(selectableRollingSelection)

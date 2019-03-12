@@ -45,10 +45,8 @@ trait classBreaks extends js.Object {
 
 object classBreaks {
   @scala.inline
-  def apply(
-    classBreaks: js.Function1[classBreaksClassBreaksParams, arcgisDashJsDashApiLib.IPromise[ClassBreaksResult]]
-  ): classBreaks = {
-    val __obj = js.Dynamic.literal(classBreaks = classBreaks)
+  def apply(classBreaks: classBreaksClassBreaksParams => arcgisDashJsDashApiLib.IPromise[ClassBreaksResult]): classBreaks = {
+    val __obj = js.Dynamic.literal(classBreaks = js.Any.fromFunction1(classBreaks))
   
     __obj.asInstanceOf[classBreaks]
   }

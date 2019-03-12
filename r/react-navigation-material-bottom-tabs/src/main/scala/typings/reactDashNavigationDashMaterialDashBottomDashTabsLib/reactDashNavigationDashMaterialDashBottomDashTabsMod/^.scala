@@ -11,7 +11,7 @@ object ^ extends js.Object {
   def createMaterialBottomTabNavigator(routeConfigMap: reactDashNavigationLib.reactDashNavigationMod.NavigationRouteConfigMap): reactDashNavigationLib.reactDashNavigationMod.NavigationContainer = js.native
   def createMaterialBottomTabNavigator(
     routeConfigMap: reactDashNavigationLib.reactDashNavigationMod.NavigationRouteConfigMap,
-    config: reactDashNavigationDashMaterialDashBottomDashTabsLib.reactDashNavigationDashMaterialDashBottomDashTabsMod.TabConfig
+    config: TabConfig
   ): reactDashNavigationLib.reactDashNavigationMod.NavigationContainer = js.native
 }
 

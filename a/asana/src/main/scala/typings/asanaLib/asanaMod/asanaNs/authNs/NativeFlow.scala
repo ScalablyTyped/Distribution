@@ -27,12 +27,12 @@ trait NativeFlow extends Flow {
 object NativeFlow {
   @scala.inline
   def apply(
-    accessToken: js.Function1[java.lang.String, scala.Unit],
-    authorizeUrl: js.Function0[java.lang.String],
-    promptForCode: js.Function1[java.lang.String, js.Any],
-    run: js.Function0[scala.Unit]
+    accessToken: java.lang.String => scala.Unit,
+    authorizeUrl: () => java.lang.String,
+    promptForCode: java.lang.String => js.Any,
+    run: () => scala.Unit
   ): NativeFlow = {
-    val __obj = js.Dynamic.literal(accessToken = accessToken, authorizeUrl = authorizeUrl, promptForCode = promptForCode, run = run)
+    val __obj = js.Dynamic.literal(accessToken = js.Any.fromFunction1(accessToken), authorizeUrl = js.Any.fromFunction0(authorizeUrl), promptForCode = js.Any.fromFunction1(promptForCode), run = js.Any.fromFunction0(run))
   
     __obj.asInstanceOf[NativeFlow]
   }

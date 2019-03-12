@@ -28,7 +28,7 @@ object HeatmapOverlayConfiguration {
     lngField: TLong = null,
     maxOpacity: scala.Int | scala.Double = null,
     minOpacity: scala.Int | scala.Double = null,
-    onExtremaChange: js.Function0[scala.Unit] = null,
+    onExtremaChange: () => scala.Unit = null,
     opacity: scala.Int | scala.Double = null,
     radius: scala.Int | scala.Double = null,
     scaleRadius: js.UndefOr[scala.Boolean] = js.undefined,
@@ -43,7 +43,7 @@ object HeatmapOverlayConfiguration {
     if (lngField != null) __obj.updateDynamic("lngField")(lngField.asInstanceOf[js.Any])
     if (maxOpacity != null) __obj.updateDynamic("maxOpacity")(maxOpacity.asInstanceOf[js.Any])
     if (minOpacity != null) __obj.updateDynamic("minOpacity")(minOpacity.asInstanceOf[js.Any])
-    if (onExtremaChange != null) __obj.updateDynamic("onExtremaChange")(onExtremaChange)
+    if (onExtremaChange != null) __obj.updateDynamic("onExtremaChange")(js.Any.fromFunction0(onExtremaChange))
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (!js.isUndefined(scaleRadius)) __obj.updateDynamic("scaleRadius")(scaleRadius)

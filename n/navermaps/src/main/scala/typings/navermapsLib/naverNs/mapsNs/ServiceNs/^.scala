@@ -10,23 +10,15 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def fromAddrToCoord(): scala.Unit = js.native
   def fromCoordToAddr(): scala.Unit = js.native
-  def geocode(options: navermapsLib.naverNs.mapsNs.ServiceNs.GeocodeServiceOptions): scala.Unit = js.native
+  def geocode(options: GeocodeServiceOptions): scala.Unit = js.native
   def geocode(
-    options: navermapsLib.naverNs.mapsNs.ServiceNs.GeocodeServiceOptions,
-    callback: js.Function2[
-      /* status */ navermapsLib.naverNs.mapsNs.ServiceNs.Status, 
-      /* response */ navermapsLib.naverNs.mapsNs.ServiceNs.GeocodeResponse, 
-      scala.Unit
-    ]
+    options: GeocodeServiceOptions,
+    callback: js.Function2[/* status */ Status, /* response */ GeocodeResponse, scala.Unit]
   ): scala.Unit = js.native
-  def reverseGeocode(options: navermapsLib.naverNs.mapsNs.ServiceNs.ReverseServiceOptions): scala.Unit = js.native
+  def reverseGeocode(options: ReverseServiceOptions): scala.Unit = js.native
   def reverseGeocode(
-    options: navermapsLib.naverNs.mapsNs.ServiceNs.ReverseServiceOptions,
-    callback: js.Function2[
-      /* status */ navermapsLib.naverNs.mapsNs.ServiceNs.Status, 
-      /* response */ navermapsLib.naverNs.mapsNs.ServiceNs.ReverseGeocodeResponse, 
-      scala.Unit
-    ]
+    options: ReverseServiceOptions,
+    callback: js.Function2[/* status */ Status, /* response */ ReverseGeocodeResponse, scala.Unit]
   ): scala.Unit = js.native
 }
 

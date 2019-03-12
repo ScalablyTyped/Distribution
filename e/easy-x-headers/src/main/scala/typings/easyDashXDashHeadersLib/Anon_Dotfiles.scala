@@ -70,12 +70,7 @@ object Anon_Dotfiles {
     lastModified: js.UndefOr[scala.Boolean] = js.undefined,
     maxAge: scala.Int | scala.Double = null,
     redirect: js.UndefOr[scala.Boolean] = js.undefined,
-    setHeaders: js.Function3[
-      /* res */ easyDashXDashHeadersLib.expressMod.eNs.Response, 
-      /* path */ java.lang.String, 
-      /* stat */ js.Any, 
-      _
-    ] = null
+    setHeaders: (/* res */ easyDashXDashHeadersLib.expressMod.eNs.Response, /* path */ java.lang.String, /* stat */ js.Any) => _ = null
   ): Anon_Dotfiles = {
     val __obj = js.Dynamic.literal()
     if (dotfiles != null) __obj.updateDynamic("dotfiles")(dotfiles)
@@ -85,7 +80,7 @@ object Anon_Dotfiles {
     if (!js.isUndefined(lastModified)) __obj.updateDynamic("lastModified")(lastModified)
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (!js.isUndefined(redirect)) __obj.updateDynamic("redirect")(redirect)
-    if (setHeaders != null) __obj.updateDynamic("setHeaders")(setHeaders)
+    if (setHeaders != null) __obj.updateDynamic("setHeaders")(js.Any.fromFunction3(setHeaders))
     __obj.asInstanceOf[Anon_Dotfiles]
   }
 }

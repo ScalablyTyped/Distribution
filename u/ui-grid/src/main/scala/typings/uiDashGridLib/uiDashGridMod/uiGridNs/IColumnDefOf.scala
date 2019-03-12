@@ -30,7 +30,7 @@ trait IColumnDefOf[TEntity]
     * in this case your function needs to accept the full set of visible rows,
     * and return a value that should be shown
     */
-  var aggregationType: js.UndefOr[scala.Double | angularLib.angularMod.Global.Function] = js.undefined
+  var aggregationType: js.UndefOr[scala.Double | js.Function] = js.undefined
   /**
     * cellClass can be a string specifying the class to append to a cell
     * or it can be a function(row,rowRenderIndex, col, colRenderIndex)
@@ -222,24 +222,15 @@ object IColumnDefOf {
   @scala.inline
   def apply[TEntity](
     aggregationHideLabel: js.UndefOr[scala.Boolean] = js.undefined,
-    aggregationType: scala.Double | angularLib.angularMod.Global.Function = null,
+    aggregationType: scala.Double | js.Function = null,
     allowCellFocus: js.UndefOr[scala.Boolean] = js.undefined,
     cellClass: java.lang.String | ICellClassGetter[TEntity] = null,
     cellEditableCondition: js.Any | uiDashGridLib.Anon_Scope = null,
     cellFilter: java.lang.String = null,
     cellTemplate: java.lang.String = null,
     cellTooltip: scala.Boolean | java.lang.String | ICellTooltipGetter[TEntity] = null,
-    customTreeAggregationFinalizerFn: js.Function1[
-      /* aggregation */ uiDashGridLib.uiDashGridMod.uiGridNs.treeBaseNs.IGridTreeBaseAggregationObject, 
-      scala.Unit
-    ] = null,
-    customTreeAggregationFn: js.Function4[
-      /* aggregation */ uiDashGridLib.uiDashGridMod.uiGridNs.treeBaseNs.IGridTreeBaseAggregationObject, 
-      /* fieldValue */ js.Any, 
-      /* numValue */ scala.Double, 
-      /* row */ IGridRowOf[TEntity], 
-      scala.Unit
-    ] = null,
+    customTreeAggregationFinalizerFn: /* aggregation */ uiDashGridLib.uiDashGridMod.uiGridNs.treeBaseNs.IGridTreeBaseAggregationObject => scala.Unit = null,
+    customTreeAggregationFn: (/* aggregation */ uiDashGridLib.uiDashGridMod.uiGridNs.treeBaseNs.IGridTreeBaseAggregationObject, /* fieldValue */ js.Any, /* numValue */ scala.Double, /* row */ IGridRowOf[TEntity]) => scala.Unit = null,
     defaultSort: ISortInfo = null,
     displayName: java.lang.String = null,
     editDropdownFilter: java.lang.String = null,
@@ -247,12 +238,7 @@ object IColumnDefOf {
     editDropdownOptionsArray: js.Array[uiDashGridLib.uiDashGridMod.uiGridNs.editNs.IEditDropdown] = null,
     editDropdownRowEntityOptionsArrayPath: java.lang.String = null,
     editDropdownValueLabel: java.lang.String = null,
-    editFileChooserCallback: js.Function3[
-      /* gridRow */ IGridRowOf[TEntity], 
-      /* gridCol */ IGridColumnOf[TEntity], 
-      /* files */ stdLib.FileList, 
-      scala.Unit
-    ] = null,
+    editFileChooserCallback: (/* gridRow */ IGridRowOf[TEntity], /* gridCol */ IGridColumnOf[TEntity], /* files */ stdLib.FileList) => scala.Unit = null,
     editModelField: java.lang.String = null,
     editableCellTemplate: java.lang.String = null,
     enableCellEdit: js.UndefOr[scala.Boolean] = js.undefined,
@@ -292,14 +278,7 @@ object IColumnDefOf {
     sort: ISortInfo = null,
     sortCellFiltered: js.UndefOr[scala.Boolean] = js.undefined,
     sortDirectionCycle: js.Array[scala.Null | java.lang.String] = null,
-    sortingAlgorithm: js.Function5[
-      /* a */ js.Any, 
-      /* b */ js.Any, 
-      /* rowA */ IGridRowOf[TEntity], 
-      /* rowB */ IGridRowOf[TEntity], 
-      /* direction */ java.lang.String, 
-      scala.Double
-    ] = null,
+    sortingAlgorithm: (/* a */ js.Any, /* b */ js.Any, /* rowA */ IGridRowOf[TEntity], /* rowB */ IGridRowOf[TEntity], /* direction */ java.lang.String) => scala.Double = null,
     suppressRemoveSort: js.UndefOr[scala.Boolean] = js.undefined,
     treeAggregationLabel: java.lang.String = null,
     treeAggregationType: java.lang.String = null,
@@ -317,8 +296,8 @@ object IColumnDefOf {
     if (cellFilter != null) __obj.updateDynamic("cellFilter")(cellFilter)
     if (cellTemplate != null) __obj.updateDynamic("cellTemplate")(cellTemplate)
     if (cellTooltip != null) __obj.updateDynamic("cellTooltip")(cellTooltip.asInstanceOf[js.Any])
-    if (customTreeAggregationFinalizerFn != null) __obj.updateDynamic("customTreeAggregationFinalizerFn")(customTreeAggregationFinalizerFn)
-    if (customTreeAggregationFn != null) __obj.updateDynamic("customTreeAggregationFn")(customTreeAggregationFn)
+    if (customTreeAggregationFinalizerFn != null) __obj.updateDynamic("customTreeAggregationFinalizerFn")(js.Any.fromFunction1(customTreeAggregationFinalizerFn))
+    if (customTreeAggregationFn != null) __obj.updateDynamic("customTreeAggregationFn")(js.Any.fromFunction4(customTreeAggregationFn))
     if (defaultSort != null) __obj.updateDynamic("defaultSort")(defaultSort)
     if (displayName != null) __obj.updateDynamic("displayName")(displayName)
     if (editDropdownFilter != null) __obj.updateDynamic("editDropdownFilter")(editDropdownFilter)
@@ -326,7 +305,7 @@ object IColumnDefOf {
     if (editDropdownOptionsArray != null) __obj.updateDynamic("editDropdownOptionsArray")(editDropdownOptionsArray)
     if (editDropdownRowEntityOptionsArrayPath != null) __obj.updateDynamic("editDropdownRowEntityOptionsArrayPath")(editDropdownRowEntityOptionsArrayPath)
     if (editDropdownValueLabel != null) __obj.updateDynamic("editDropdownValueLabel")(editDropdownValueLabel)
-    if (editFileChooserCallback != null) __obj.updateDynamic("editFileChooserCallback")(editFileChooserCallback)
+    if (editFileChooserCallback != null) __obj.updateDynamic("editFileChooserCallback")(js.Any.fromFunction3(editFileChooserCallback))
     if (editModelField != null) __obj.updateDynamic("editModelField")(editModelField)
     if (editableCellTemplate != null) __obj.updateDynamic("editableCellTemplate")(editableCellTemplate)
     if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit)
@@ -366,7 +345,7 @@ object IColumnDefOf {
     if (sort != null) __obj.updateDynamic("sort")(sort)
     if (!js.isUndefined(sortCellFiltered)) __obj.updateDynamic("sortCellFiltered")(sortCellFiltered)
     if (sortDirectionCycle != null) __obj.updateDynamic("sortDirectionCycle")(sortDirectionCycle)
-    if (sortingAlgorithm != null) __obj.updateDynamic("sortingAlgorithm")(sortingAlgorithm)
+    if (sortingAlgorithm != null) __obj.updateDynamic("sortingAlgorithm")(js.Any.fromFunction5(sortingAlgorithm))
     if (!js.isUndefined(suppressRemoveSort)) __obj.updateDynamic("suppressRemoveSort")(suppressRemoveSort)
     if (treeAggregationLabel != null) __obj.updateDynamic("treeAggregationLabel")(treeAggregationLabel)
     if (treeAggregationType != null) __obj.updateDynamic("treeAggregationType")(treeAggregationType)

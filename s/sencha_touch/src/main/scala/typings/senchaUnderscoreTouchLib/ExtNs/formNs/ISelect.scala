@@ -121,41 +121,41 @@ object ISelect {
     autoSelect: js.UndefOr[scala.Boolean] = js.undefined,
     defaultPhonePickerConfig: js.Any = null,
     defaultTabletPickerConfig: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     displayField: js.Any = null,
-    getAutoSelect: js.Function0[scala.Boolean] = null,
-    getDefaultPhonePickerConfig: js.Function0[_] = null,
-    getDefaultTabletPickerConfig: js.Function0[_] = null,
-    getDisplayField: js.Function0[_] = null,
-    getHiddenName: js.Function0[java.lang.String] = null,
-    getName: js.Function0[java.lang.String] = null,
-    getOptions: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getRecord: js.Function0[senchaUnderscoreTouchLib.ExtNs.dataNs.IModel] = null,
-    getStore: js.Function0[_] = null,
-    getUi: js.Function0[java.lang.String] = null,
-    getUsePicker: js.Function0[_] = null,
-    getValue: js.Function0[_] = null,
-    getValueField: js.Function0[_] = null,
+    getAutoSelect: () => scala.Boolean = null,
+    getDefaultPhonePickerConfig: () => _ = null,
+    getDefaultTabletPickerConfig: () => _ = null,
+    getDisplayField: () => _ = null,
+    getHiddenName: () => java.lang.String = null,
+    getName: () => java.lang.String = null,
+    getOptions: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getRecord: () => senchaUnderscoreTouchLib.ExtNs.dataNs.IModel = null,
+    getStore: () => _ = null,
+    getUi: () => java.lang.String = null,
+    getUsePicker: () => _ = null,
+    getValue: () => _ = null,
+    getValueField: () => _ = null,
     hiddenName: java.lang.String = null,
     name: java.lang.String = null,
-    onStoreDataChanged: js.Function1[/* store */ js.UndefOr[js.Any], scala.Unit] = null,
+    onStoreDataChanged: /* store */ js.UndefOr[js.Any] => scala.Unit = null,
     options: senchaUnderscoreTouchLib.ExtNs.Array = null,
-    reset: js.Function0[ISelect] = null,
-    setAutoSelect: js.Function1[/* autoSelect */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setDefaultPhonePickerConfig: js.Function1[/* defaultPhonePickerConfig */ js.UndefOr[js.Any], scala.Unit] = null,
-    setDefaultTabletPickerConfig: js.Function1[/* defaultTabletPickerConfig */ js.UndefOr[js.Any], scala.Unit] = null,
-    setDisplayField: js.Function1[/* displayField */ js.UndefOr[js.Any], scala.Unit] = null,
-    setHiddenName: js.Function1[/* hiddenName */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setName: js.Function1[/* name */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setOptions: js.Function1[/* options */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
-    setStore: js.Function1[/* store */ js.UndefOr[js.Any], scala.Unit] = null,
-    setUi: js.Function1[/* ui */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setUsePicker: js.Function1[/* usePicker */ js.UndefOr[js.Any], scala.Unit] = null,
-    setValueField: js.Function1[/* valueField */ js.UndefOr[js.Any], scala.Unit] = null,
-    showPicker: js.Function0[scala.Unit] = null,
+    reset: () => ISelect = null,
+    setAutoSelect: /* autoSelect */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setDefaultPhonePickerConfig: /* defaultPhonePickerConfig */ js.UndefOr[js.Any] => scala.Unit = null,
+    setDefaultTabletPickerConfig: /* defaultTabletPickerConfig */ js.UndefOr[js.Any] => scala.Unit = null,
+    setDisplayField: /* displayField */ js.UndefOr[js.Any] => scala.Unit = null,
+    setHiddenName: /* hiddenName */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setName: /* name */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setOptions: /* options */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
+    setStore: /* store */ js.UndefOr[js.Any] => scala.Unit = null,
+    setUi: /* ui */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setUsePicker: /* usePicker */ js.UndefOr[js.Any] => scala.Unit = null,
+    setValueField: /* valueField */ js.UndefOr[js.Any] => scala.Unit = null,
+    showPicker: () => scala.Unit = null,
     store: js.Any = null,
     ui: java.lang.String = null,
-    updateOptions: js.Function1[/* newOptions */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], ISelect] = null,
+    updateOptions: /* newOptions */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => ISelect = null,
     usePicker: js.Any = null,
     valueField: js.Any = null
   ): ISelect = {
@@ -164,41 +164,41 @@ object ISelect {
     if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect)
     if (defaultPhonePickerConfig != null) __obj.updateDynamic("defaultPhonePickerConfig")(defaultPhonePickerConfig)
     if (defaultTabletPickerConfig != null) __obj.updateDynamic("defaultTabletPickerConfig")(defaultTabletPickerConfig)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (displayField != null) __obj.updateDynamic("displayField")(displayField)
-    if (getAutoSelect != null) __obj.updateDynamic("getAutoSelect")(getAutoSelect)
-    if (getDefaultPhonePickerConfig != null) __obj.updateDynamic("getDefaultPhonePickerConfig")(getDefaultPhonePickerConfig)
-    if (getDefaultTabletPickerConfig != null) __obj.updateDynamic("getDefaultTabletPickerConfig")(getDefaultTabletPickerConfig)
-    if (getDisplayField != null) __obj.updateDynamic("getDisplayField")(getDisplayField)
-    if (getHiddenName != null) __obj.updateDynamic("getHiddenName")(getHiddenName)
-    if (getName != null) __obj.updateDynamic("getName")(getName)
-    if (getOptions != null) __obj.updateDynamic("getOptions")(getOptions)
-    if (getRecord != null) __obj.updateDynamic("getRecord")(getRecord)
-    if (getStore != null) __obj.updateDynamic("getStore")(getStore)
-    if (getUi != null) __obj.updateDynamic("getUi")(getUi)
-    if (getUsePicker != null) __obj.updateDynamic("getUsePicker")(getUsePicker)
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
-    if (getValueField != null) __obj.updateDynamic("getValueField")(getValueField)
+    if (getAutoSelect != null) __obj.updateDynamic("getAutoSelect")(js.Any.fromFunction0(getAutoSelect))
+    if (getDefaultPhonePickerConfig != null) __obj.updateDynamic("getDefaultPhonePickerConfig")(js.Any.fromFunction0(getDefaultPhonePickerConfig))
+    if (getDefaultTabletPickerConfig != null) __obj.updateDynamic("getDefaultTabletPickerConfig")(js.Any.fromFunction0(getDefaultTabletPickerConfig))
+    if (getDisplayField != null) __obj.updateDynamic("getDisplayField")(js.Any.fromFunction0(getDisplayField))
+    if (getHiddenName != null) __obj.updateDynamic("getHiddenName")(js.Any.fromFunction0(getHiddenName))
+    if (getName != null) __obj.updateDynamic("getName")(js.Any.fromFunction0(getName))
+    if (getOptions != null) __obj.updateDynamic("getOptions")(js.Any.fromFunction0(getOptions))
+    if (getRecord != null) __obj.updateDynamic("getRecord")(js.Any.fromFunction0(getRecord))
+    if (getStore != null) __obj.updateDynamic("getStore")(js.Any.fromFunction0(getStore))
+    if (getUi != null) __obj.updateDynamic("getUi")(js.Any.fromFunction0(getUi))
+    if (getUsePicker != null) __obj.updateDynamic("getUsePicker")(js.Any.fromFunction0(getUsePicker))
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
+    if (getValueField != null) __obj.updateDynamic("getValueField")(js.Any.fromFunction0(getValueField))
     if (hiddenName != null) __obj.updateDynamic("hiddenName")(hiddenName)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onStoreDataChanged != null) __obj.updateDynamic("onStoreDataChanged")(onStoreDataChanged)
+    if (onStoreDataChanged != null) __obj.updateDynamic("onStoreDataChanged")(js.Any.fromFunction1(onStoreDataChanged))
     if (options != null) __obj.updateDynamic("options")(options)
-    if (reset != null) __obj.updateDynamic("reset")(reset)
-    if (setAutoSelect != null) __obj.updateDynamic("setAutoSelect")(setAutoSelect)
-    if (setDefaultPhonePickerConfig != null) __obj.updateDynamic("setDefaultPhonePickerConfig")(setDefaultPhonePickerConfig)
-    if (setDefaultTabletPickerConfig != null) __obj.updateDynamic("setDefaultTabletPickerConfig")(setDefaultTabletPickerConfig)
-    if (setDisplayField != null) __obj.updateDynamic("setDisplayField")(setDisplayField)
-    if (setHiddenName != null) __obj.updateDynamic("setHiddenName")(setHiddenName)
-    if (setName != null) __obj.updateDynamic("setName")(setName)
-    if (setOptions != null) __obj.updateDynamic("setOptions")(setOptions)
-    if (setStore != null) __obj.updateDynamic("setStore")(setStore)
-    if (setUi != null) __obj.updateDynamic("setUi")(setUi)
-    if (setUsePicker != null) __obj.updateDynamic("setUsePicker")(setUsePicker)
-    if (setValueField != null) __obj.updateDynamic("setValueField")(setValueField)
-    if (showPicker != null) __obj.updateDynamic("showPicker")(showPicker)
+    if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
+    if (setAutoSelect != null) __obj.updateDynamic("setAutoSelect")(js.Any.fromFunction1(setAutoSelect))
+    if (setDefaultPhonePickerConfig != null) __obj.updateDynamic("setDefaultPhonePickerConfig")(js.Any.fromFunction1(setDefaultPhonePickerConfig))
+    if (setDefaultTabletPickerConfig != null) __obj.updateDynamic("setDefaultTabletPickerConfig")(js.Any.fromFunction1(setDefaultTabletPickerConfig))
+    if (setDisplayField != null) __obj.updateDynamic("setDisplayField")(js.Any.fromFunction1(setDisplayField))
+    if (setHiddenName != null) __obj.updateDynamic("setHiddenName")(js.Any.fromFunction1(setHiddenName))
+    if (setName != null) __obj.updateDynamic("setName")(js.Any.fromFunction1(setName))
+    if (setOptions != null) __obj.updateDynamic("setOptions")(js.Any.fromFunction1(setOptions))
+    if (setStore != null) __obj.updateDynamic("setStore")(js.Any.fromFunction1(setStore))
+    if (setUi != null) __obj.updateDynamic("setUi")(js.Any.fromFunction1(setUi))
+    if (setUsePicker != null) __obj.updateDynamic("setUsePicker")(js.Any.fromFunction1(setUsePicker))
+    if (setValueField != null) __obj.updateDynamic("setValueField")(js.Any.fromFunction1(setValueField))
+    if (showPicker != null) __obj.updateDynamic("showPicker")(js.Any.fromFunction0(showPicker))
     if (store != null) __obj.updateDynamic("store")(store)
     if (ui != null) __obj.updateDynamic("ui")(ui)
-    if (updateOptions != null) __obj.updateDynamic("updateOptions")(updateOptions)
+    if (updateOptions != null) __obj.updateDynamic("updateOptions")(js.Any.fromFunction1(updateOptions))
     if (usePicker != null) __obj.updateDynamic("usePicker")(usePicker)
     if (valueField != null) __obj.updateDynamic("valueField")(valueField)
     __obj.asInstanceOf[ISelect]

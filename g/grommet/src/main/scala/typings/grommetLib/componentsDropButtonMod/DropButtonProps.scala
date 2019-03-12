@@ -34,8 +34,8 @@ object DropButtonProps {
     dropTarget: js.Object = null,
     gridArea: java.lang.String = null,
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null,
-    onClose: js.Function1[/* repeated */ js.Any, _] = null,
-    onOpen: js.Function1[/* repeated */ js.Any, _] = null,
+    onClose: /* repeated */ js.Any => _ = null,
+    onOpen: /* repeated */ js.Any => _ = null,
     open: js.UndefOr[scala.Boolean] = js.undefined
   ): DropButtonProps = {
     val __obj = js.Dynamic.literal(dropContent = dropContent)
@@ -46,8 +46,8 @@ object DropButtonProps {
     if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget)
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     __obj.asInstanceOf[DropButtonProps]
   }

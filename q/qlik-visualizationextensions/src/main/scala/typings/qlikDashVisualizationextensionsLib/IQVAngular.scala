@@ -40,12 +40,10 @@ trait IQVAngular extends js.Object {
   ): scala.Unit = js.native
   def filter(
     name: java.lang.String,
-    filterFactoryFunction: angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.Global.Function]
+    filterFactoryFunction: angularLib.angularMod.angularNs.Injectable[js.Function]
   ): scala.Unit = js.native
   def filter(
-    `object`: org.scalablytyped.runtime.StringDictionary[
-      angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.Global.Function]
-    ]
+    `object`: org.scalablytyped.runtime.StringDictionary[angularLib.angularMod.angularNs.Injectable[js.Function]]
   ): scala.Unit = js.native
   /**
     * Register a service constructor, which will be invoked with new to create
@@ -58,12 +56,10 @@ trait IQVAngular extends js.Object {
     */
   def service[T](
     name: java.lang.String,
-    serviceConstructor: angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.Global.Function]
+    serviceConstructor: angularLib.angularMod.angularNs.Injectable[js.Function]
   ): T = js.native
   def service[T](
-    `object`: org.scalablytyped.runtime.StringDictionary[
-      angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.Global.Function]
-    ]
+    `object`: org.scalablytyped.runtime.StringDictionary[angularLib.angularMod.angularNs.Injectable[js.Function]]
   ): T = js.native
 }
 

@@ -25,15 +25,15 @@ trait ReadDirItem extends js.Object {
 object ReadDirItem {
   @scala.inline
   def apply(
-    isDirectory: js.Function0[scala.Boolean],
-    isFile: js.Function0[scala.Boolean],
+    isDirectory: () => scala.Boolean,
+    isFile: () => scala.Boolean,
     name: java.lang.String,
     path: java.lang.String,
     size: java.lang.String,
     ctime: stdLib.Date = null,
     mtime: stdLib.Date = null
   ): ReadDirItem = {
-    val __obj = js.Dynamic.literal(isDirectory = isDirectory, isFile = isFile, name = name, path = path, size = size)
+    val __obj = js.Dynamic.literal(isDirectory = js.Any.fromFunction0(isDirectory), isFile = js.Any.fromFunction0(isFile), name = name, path = path, size = size)
     if (ctime != null) __obj.updateDynamic("ctime")(ctime)
     if (mtime != null) __obj.updateDynamic("mtime")(mtime)
     __obj.asInstanceOf[ReadDirItem]

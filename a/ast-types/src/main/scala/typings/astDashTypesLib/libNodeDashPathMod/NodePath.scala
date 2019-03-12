@@ -11,7 +11,7 @@ trait NodePath[N, V]
   var node: N = js.native
   var parent: js.Any = js.native
   @JSName("replace")
-  var replace_FNodePath: js.Function2[
+  var replace_Original: js.Function2[
     /* replacement */ js.UndefOr[astDashTypesLib.libTypesMod.ASTNode], 
     /* repeated */ astDashTypesLib.libTypesMod.ASTNode, 
     _

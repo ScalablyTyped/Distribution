@@ -40,7 +40,7 @@ object NotifyOptions {
     onClick: js.Function = null,
     onClickUrl: java.lang.String = null,
     position: java.lang.String = null,
-    remove: js.Function0[_] = null,
+    remove: () => _ = null,
     showAfterPrevious: js.UndefOr[scala.Boolean] = js.undefined,
     showClass: java.lang.String = null,
     size: java.lang.String = null,
@@ -70,7 +70,7 @@ object NotifyOptions {
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
     if (onClickUrl != null) __obj.updateDynamic("onClickUrl")(onClickUrl)
     if (position != null) __obj.updateDynamic("position")(position)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction0(remove))
     if (!js.isUndefined(showAfterPrevious)) __obj.updateDynamic("showAfterPrevious")(showAfterPrevious)
     if (showClass != null) __obj.updateDynamic("showClass")(showClass)
     if (size != null) __obj.updateDynamic("size")(size)

@@ -30,12 +30,12 @@ trait ChildNode extends js.Object {
 object ChildNode {
   @scala.inline
   def apply(
-    after: js.Function1[/* repeated */ stdLib.Node | java.lang.String, scala.Unit],
-    before: js.Function1[/* repeated */ stdLib.Node | java.lang.String, scala.Unit],
-    remove: js.Function0[scala.Unit],
-    replaceWith: js.Function1[/* repeated */ stdLib.Node | java.lang.String, scala.Unit]
+    after: /* repeated */ stdLib.Node | java.lang.String => scala.Unit,
+    before: /* repeated */ stdLib.Node | java.lang.String => scala.Unit,
+    remove: () => scala.Unit,
+    replaceWith: /* repeated */ stdLib.Node | java.lang.String => scala.Unit
   ): ChildNode = {
-    val __obj = js.Dynamic.literal(after = after, before = before, remove = remove, replaceWith = replaceWith)
+    val __obj = js.Dynamic.literal(after = js.Any.fromFunction1(after), before = js.Any.fromFunction1(before), remove = js.Any.fromFunction0(remove), replaceWith = js.Any.fromFunction1(replaceWith))
   
     __obj.asInstanceOf[ChildNode]
   }

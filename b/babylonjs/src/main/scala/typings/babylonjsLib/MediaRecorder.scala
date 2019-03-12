@@ -21,13 +21,13 @@ trait MediaRecorder extends js.Object {
 object MediaRecorder {
   @scala.inline
   def apply(
-    ondataavailable: js.Function1[stdLib.Event, scala.Unit],
-    onerror: js.Function1[stdLib.ErrorEvent, scala.Unit],
-    onstop: js.Function1[stdLib.Event, scala.Unit],
-    start: js.Function1[scala.Double, scala.Unit],
-    stop: js.Function0[scala.Unit]
+    ondataavailable: stdLib.Event => scala.Unit,
+    onerror: stdLib.ErrorEvent => scala.Unit,
+    onstop: stdLib.Event => scala.Unit,
+    start: scala.Double => scala.Unit,
+    stop: () => scala.Unit
   ): MediaRecorder = {
-    val __obj = js.Dynamic.literal(ondataavailable = ondataavailable, onerror = onerror, onstop = onstop, start = start, stop = stop)
+    val __obj = js.Dynamic.literal(ondataavailable = js.Any.fromFunction1(ondataavailable), onerror = js.Any.fromFunction1(onerror), onstop = js.Any.fromFunction1(onstop), start = js.Any.fromFunction1(start), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[MediaRecorder]
   }

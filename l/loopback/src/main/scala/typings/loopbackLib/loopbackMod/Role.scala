@@ -61,7 +61,7 @@ object Role extends js.Object {
     */
   def getRoles(
     context: js.Any,
-    callback: js.Function2[/* err */ nodeLib.Error, /* roles */ js.Array[java.lang.String], scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* roles */ js.Array[java.lang.String], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Check if the user ID is authenticated
@@ -71,7 +71,7 @@ object Role extends js.Object {
     */
   def isAuthenticated(
     context: js.Any,
-    callback: js.Function2[/* err */ nodeLib.Error, /* isAuthenticated */ scala.Boolean, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* isAuthenticated */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Check if a given principal is in the specified role.
@@ -84,7 +84,7 @@ object Role extends js.Object {
   def isInRole(
     role: java.lang.String,
     context: js.Any,
-    callback: js.Function2[/* err */ nodeLib.Error, /* isInRole */ scala.Boolean, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* isInRole */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Check if a given user ID is the owner the model instance.
@@ -111,7 +111,7 @@ object Role extends js.Object {
     resolver: js.Function3[
       /* role */ java.lang.String, 
       /* ctx */ loopbackLib.loopbackMod.lNs.Context, 
-      /* callback */ js.UndefOr[js.Function2[/* err */ nodeLib.Error, /* resolved */ scala.Boolean, scala.Unit]], 
+      /* callback */ js.UndefOr[js.Function2[/* err */ stdLib.Error, /* resolved */ scala.Boolean, scala.Unit]], 
       js.Promise[scala.Boolean] | scala.Unit
     ]
   ): scala.Unit = js.native

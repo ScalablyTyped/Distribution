@@ -40,19 +40,16 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    action: js.Function1[
-      /* elem */ stdLib.Element, 
-      clipboardLib.clipboardLibStrings.cut | clipboardLib.clipboardLibStrings.copy
-    ] = null,
+    action: /* elem */ stdLib.Element => clipboardLib.clipboardLibStrings.cut | clipboardLib.clipboardLibStrings.copy = null,
     container: stdLib.Element = null,
-    target: js.Function1[/* elem */ stdLib.Element, stdLib.Element] = null,
-    text: js.Function1[/* elem */ stdLib.Element, java.lang.String] = null
+    target: /* elem */ stdLib.Element => stdLib.Element = null,
+    text: /* elem */ stdLib.Element => java.lang.String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
+    if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
     if (container != null) __obj.updateDynamic("container")(container)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (target != null) __obj.updateDynamic("target")(js.Any.fromFunction1(target))
+    if (text != null) __obj.updateDynamic("text")(js.Any.fromFunction1(text))
     __obj.asInstanceOf[Options]
   }
 }

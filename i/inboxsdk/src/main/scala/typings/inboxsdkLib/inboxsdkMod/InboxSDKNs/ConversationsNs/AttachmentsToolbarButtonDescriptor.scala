@@ -15,10 +15,10 @@ object AttachmentsToolbarButtonDescriptor {
   @scala.inline
   def apply(
     iconUrl: java.lang.String,
-    onClick: js.Function1[AttachmentsToolbarButtonEvent, scala.Unit],
+    onClick: AttachmentsToolbarButtonEvent => scala.Unit,
     tooltip: java.lang.String
   ): AttachmentsToolbarButtonDescriptor = {
-    val __obj = js.Dynamic.literal(iconUrl = iconUrl, onClick = onClick, tooltip = tooltip)
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl, onClick = js.Any.fromFunction1(onClick), tooltip = tooltip)
   
     __obj.asInstanceOf[AttachmentsToolbarButtonDescriptor]
   }

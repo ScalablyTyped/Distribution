@@ -67,7 +67,7 @@ object RichEditDocument {
     abstractNumberingListsInfo: js.Array[AbstractNumberingList],
     activeSubDocument: SubDocument,
     characterStylesInfo: js.Array[CharacterStyle],
-    getSubDocumentById: js.Function1[scala.Double, SubDocument],
+    getSubDocumentById: scala.Double => SubDocument,
     mainSubDocument: SubDocument,
     paragraphStylesInfo: js.Array[ParagraphStyle],
     sectionsInfo: js.Array[Section],
@@ -75,7 +75,7 @@ object RichEditDocument {
     subDocuments: js.Array[SubDocument],
     tableStylesInfo: js.Array[TableStyle]
   ): RichEditDocument = {
-    val __obj = js.Dynamic.literal(abstractNumberingListsInfo = abstractNumberingListsInfo, activeSubDocument = activeSubDocument, characterStylesInfo = characterStylesInfo, getSubDocumentById = getSubDocumentById, mainSubDocument = mainSubDocument, paragraphStylesInfo = paragraphStylesInfo, sectionsInfo = sectionsInfo, spellingInfo = spellingInfo, subDocuments = subDocuments, tableStylesInfo = tableStylesInfo)
+    val __obj = js.Dynamic.literal(abstractNumberingListsInfo = abstractNumberingListsInfo, activeSubDocument = activeSubDocument, characterStylesInfo = characterStylesInfo, getSubDocumentById = js.Any.fromFunction1(getSubDocumentById), mainSubDocument = mainSubDocument, paragraphStylesInfo = paragraphStylesInfo, sectionsInfo = sectionsInfo, spellingInfo = spellingInfo, subDocuments = subDocuments, tableStylesInfo = tableStylesInfo)
   
     __obj.asInstanceOf[RichEditDocument]
   }

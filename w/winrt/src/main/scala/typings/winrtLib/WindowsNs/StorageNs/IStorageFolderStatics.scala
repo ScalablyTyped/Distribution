@@ -12,9 +12,9 @@ trait IStorageFolderStatics extends js.Object {
 object IStorageFolderStatics {
   @scala.inline
   def apply(
-    getFolderFromPathAsync: js.Function1[java.lang.String, winrtLib.WindowsNs.FoundationNs.IAsyncOperation[StorageFolder]]
+    getFolderFromPathAsync: java.lang.String => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[StorageFolder]
   ): IStorageFolderStatics = {
-    val __obj = js.Dynamic.literal(getFolderFromPathAsync = getFolderFromPathAsync)
+    val __obj = js.Dynamic.literal(getFolderFromPathAsync = js.Any.fromFunction1(getFolderFromPathAsync))
   
     __obj.asInstanceOf[IStorageFolderStatics]
   }

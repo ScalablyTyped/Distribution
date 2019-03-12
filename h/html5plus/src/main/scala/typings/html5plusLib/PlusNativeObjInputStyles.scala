@@ -102,9 +102,9 @@ object PlusNativeObjInputStyles {
     borderRadius: java.lang.String = null,
     borderWidth: java.lang.String = null,
     fontSize: java.lang.String = null,
-    onBlur: js.Function1[/* result */ js.Any, scala.Unit] = null,
-    onComplete: js.Function1[/* result */ js.Any, scala.Unit] = null,
-    onFocus: js.Function1[/* result */ js.Any, scala.Unit] = null,
+    onBlur: /* result */ js.Any => scala.Unit = null,
+    onComplete: /* result */ js.Any => scala.Unit = null,
+    onFocus: /* result */ js.Any => scala.Unit = null,
     placeholder: java.lang.String = null,
     `type`: html5plusLib.html5plusLibStrings.email | html5plusLib.html5plusLibStrings.number | html5plusLib.html5plusLibStrings.search | html5plusLib.html5plusLibStrings.tel | html5plusLib.html5plusLibStrings.text | html5plusLib.html5plusLibStrings.url = null
   ): PlusNativeObjInputStyles = {
@@ -113,9 +113,9 @@ object PlusNativeObjInputStyles {
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius)
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth)
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeObjInputStyles]

@@ -20,11 +20,11 @@ trait Autolinker extends js.Object {
 object Autolinker {
   @scala.inline
   def apply(
-    getTagBuilder: js.Function0[js.Any],
-    link: js.Function1[java.lang.String, java.lang.String],
-    parse: js.Function1[java.lang.String, js.Array[_]]
+    getTagBuilder: () => js.Any,
+    link: java.lang.String => java.lang.String,
+    parse: java.lang.String => js.Array[_]
   ): Autolinker = {
-    val __obj = js.Dynamic.literal(getTagBuilder = getTagBuilder, link = link, parse = parse)
+    val __obj = js.Dynamic.literal(getTagBuilder = js.Any.fromFunction0(getTagBuilder), link = js.Any.fromFunction1(link), parse = js.Any.fromFunction1(parse))
   
     __obj.asInstanceOf[Autolinker]
   }

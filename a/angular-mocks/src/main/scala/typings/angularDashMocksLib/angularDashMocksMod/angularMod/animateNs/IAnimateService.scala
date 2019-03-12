@@ -21,8 +21,8 @@ trait IAnimateService extends js.Object {
 
 object IAnimateService {
   @scala.inline
-  def apply(closeAndFlush: js.Function0[scala.Unit], flush: js.Function0[scala.Unit]): IAnimateService = {
-    val __obj = js.Dynamic.literal(closeAndFlush = closeAndFlush, flush = flush)
+  def apply(closeAndFlush: () => scala.Unit, flush: () => scala.Unit): IAnimateService = {
+    val __obj = js.Dynamic.literal(closeAndFlush = js.Any.fromFunction0(closeAndFlush), flush = js.Any.fromFunction0(flush))
   
     __obj.asInstanceOf[IAnimateService]
   }

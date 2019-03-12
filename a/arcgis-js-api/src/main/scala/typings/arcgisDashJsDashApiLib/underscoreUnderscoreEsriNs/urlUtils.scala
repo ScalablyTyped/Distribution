@@ -40,11 +40,11 @@ trait urlUtils extends js.Object {
 object urlUtils {
   @scala.inline
   def apply(
-    addProxyRule: js.Function1[urlUtilsAddProxyRuleRule, scala.Double],
-    getProxyRule: js.Function1[java.lang.String, js.Any],
-    urlToObject: js.Function1[java.lang.String, js.Any]
+    addProxyRule: urlUtilsAddProxyRuleRule => scala.Double,
+    getProxyRule: java.lang.String => js.Any,
+    urlToObject: java.lang.String => js.Any
   ): urlUtils = {
-    val __obj = js.Dynamic.literal(addProxyRule = addProxyRule, getProxyRule = getProxyRule, urlToObject = urlToObject)
+    val __obj = js.Dynamic.literal(addProxyRule = js.Any.fromFunction1(addProxyRule), getProxyRule = js.Any.fromFunction1(getProxyRule), urlToObject = js.Any.fromFunction1(urlToObject))
   
     __obj.asInstanceOf[urlUtils]
   }

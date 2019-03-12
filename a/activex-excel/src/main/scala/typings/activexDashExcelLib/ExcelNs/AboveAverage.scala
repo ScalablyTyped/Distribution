@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class AboveAverage protected () extends js.Object {
   var AboveBelow: XlAboveBelow = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   @JSName("AppliesTo")
   val AppliesTo_Original: Range = js.native
   @JSName("Borders")
@@ -17,8 +17,8 @@ class AboveAverage protected () extends js.Object {
   var CalcFor: XlCalcFor = js.native
   val Creator: XlCreator = js.native
   var `Excel.AboveAverage_typekey`: AboveAverage = js.native
-  val Font: Font = js.native
-  val Interior: Interior = js.native
+  val Font: activexDashExcelLib.ExcelNs.Font = js.native
+  val Interior: activexDashExcelLib.ExcelNs.Interior = js.native
   var NumStdDev: scala.Double = js.native
   var NumberFormat: java.lang.String = js.native
   val PTCondition: scala.Boolean = js.native

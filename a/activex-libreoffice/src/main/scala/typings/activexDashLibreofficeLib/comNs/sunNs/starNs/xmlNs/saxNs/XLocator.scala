@@ -37,15 +37,15 @@ object XLocator {
     LineNumber: scala.Double,
     PublicId: java.lang.String,
     SystemId: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getColumnNumber: js.Function0[scala.Double],
-    getLineNumber: js.Function0[scala.Double],
-    getPublicId: js.Function0[java.lang.String],
-    getSystemId: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getColumnNumber: () => scala.Double,
+    getLineNumber: () => scala.Double,
+    getPublicId: () => java.lang.String,
+    getSystemId: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XLocator = {
-    val __obj = js.Dynamic.literal(ColumnNumber = ColumnNumber, LineNumber = LineNumber, PublicId = PublicId, SystemId = SystemId, acquire = acquire, getColumnNumber = getColumnNumber, getLineNumber = getLineNumber, getPublicId = getPublicId, getSystemId = getSystemId, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ColumnNumber = ColumnNumber, LineNumber = LineNumber, PublicId = PublicId, SystemId = SystemId, acquire = js.Any.fromFunction0(acquire), getColumnNumber = js.Any.fromFunction0(getColumnNumber), getLineNumber = js.Any.fromFunction0(getLineNumber), getPublicId = js.Any.fromFunction0(getPublicId), getSystemId = js.Any.fromFunction0(getSystemId), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XLocator]
   }

@@ -71,8 +71,8 @@ object BodyParserOptions {
     mapParams: js.UndefOr[scala.Boolean] = js.undefined,
     maxBodySize: scala.Int | scala.Double = null,
     maxFieldsSize: scala.Int | scala.Double = null,
-    multipartFileHandler: js.Function0[scala.Unit] = null,
-    multipartHandler: js.Function0[scala.Unit] = null,
+    multipartFileHandler: () => scala.Unit = null,
+    multipartHandler: () => scala.Unit = null,
     multiples: js.UndefOr[scala.Boolean] = js.undefined,
     overrideParams: js.UndefOr[scala.Boolean] = js.undefined,
     rejectUnknown: js.UndefOr[scala.Boolean] = js.undefined,
@@ -86,8 +86,8 @@ object BodyParserOptions {
     if (!js.isUndefined(mapParams)) __obj.updateDynamic("mapParams")(mapParams)
     if (maxBodySize != null) __obj.updateDynamic("maxBodySize")(maxBodySize.asInstanceOf[js.Any])
     if (maxFieldsSize != null) __obj.updateDynamic("maxFieldsSize")(maxFieldsSize.asInstanceOf[js.Any])
-    if (multipartFileHandler != null) __obj.updateDynamic("multipartFileHandler")(multipartFileHandler)
-    if (multipartHandler != null) __obj.updateDynamic("multipartHandler")(multipartHandler)
+    if (multipartFileHandler != null) __obj.updateDynamic("multipartFileHandler")(js.Any.fromFunction0(multipartFileHandler))
+    if (multipartHandler != null) __obj.updateDynamic("multipartHandler")(js.Any.fromFunction0(multipartHandler))
     if (!js.isUndefined(multiples)) __obj.updateDynamic("multiples")(multiples)
     if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams)
     if (!js.isUndefined(rejectUnknown)) __obj.updateDynamic("rejectUnknown")(rejectUnknown)

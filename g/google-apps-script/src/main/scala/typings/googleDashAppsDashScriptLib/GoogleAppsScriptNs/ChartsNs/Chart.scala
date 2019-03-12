@@ -17,14 +17,14 @@ trait Chart extends js.Object {
 object Chart {
   @scala.inline
   def apply(
-    getAs: js.Function1[java.lang.String, googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob],
-    getBlob: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob],
-    getId: js.Function0[java.lang.String],
-    getOptions: js.Function0[ChartOptions],
-    getType: js.Function0[java.lang.String],
-    setId: js.Function1[java.lang.String, Chart]
+    getAs: java.lang.String => googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob,
+    getBlob: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob,
+    getId: () => java.lang.String,
+    getOptions: () => ChartOptions,
+    getType: () => java.lang.String,
+    setId: java.lang.String => Chart
   ): Chart = {
-    val __obj = js.Dynamic.literal(getAs = getAs, getBlob = getBlob, getId = getId, getOptions = getOptions, getType = getType, setId = setId)
+    val __obj = js.Dynamic.literal(getAs = js.Any.fromFunction1(getAs), getBlob = js.Any.fromFunction0(getBlob), getId = js.Any.fromFunction0(getId), getOptions = js.Any.fromFunction0(getOptions), getType = js.Any.fromFunction0(getType), setId = js.Any.fromFunction1(setId))
   
     __obj.asInstanceOf[Chart]
   }

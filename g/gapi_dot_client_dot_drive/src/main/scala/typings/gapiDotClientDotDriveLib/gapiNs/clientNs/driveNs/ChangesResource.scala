@@ -17,20 +17,11 @@ trait ChangesResource extends js.Object {
 object ChangesResource {
   @scala.inline
   def apply(
-    getStartPageToken: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StartPageToken]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltFieldsIncludeCorpusRemovals, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ChangeList]
-    ],
-    watch: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltFieldsIncludeCorpusRemovals, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Channel]
-    ]
+    getStartPageToken: gapiDotClientDotDriveLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[StartPageToken],
+    list: gapiDotClientDotDriveLib.Anon_AltFieldsIncludeCorpusRemovals => gapiDotClientLib.gapiNs.clientNs.Request[ChangeList],
+    watch: gapiDotClientDotDriveLib.Anon_AltFieldsIncludeCorpusRemovals => gapiDotClientLib.gapiNs.clientNs.Request[Channel]
   ): ChangesResource = {
-    val __obj = js.Dynamic.literal(getStartPageToken = getStartPageToken, list = list, watch = watch)
+    val __obj = js.Dynamic.literal(getStartPageToken = js.Any.fromFunction1(getStartPageToken), list = js.Any.fromFunction1(list), watch = js.Any.fromFunction1(watch))
   
     __obj.asInstanceOf[ChangesResource]
   }

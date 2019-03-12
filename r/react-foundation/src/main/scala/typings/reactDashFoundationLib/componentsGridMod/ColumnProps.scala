@@ -319,7 +319,7 @@ object ColumnProps {
   @scala.inline
   def apply(
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
     centerOnLarge: js.UndefOr[scala.Boolean] = js.undefined,
     centerOnMedium: js.UndefOr[scala.Boolean] = js.undefined,
     centerOnSmall: js.UndefOr[scala.Boolean] = js.undefined,

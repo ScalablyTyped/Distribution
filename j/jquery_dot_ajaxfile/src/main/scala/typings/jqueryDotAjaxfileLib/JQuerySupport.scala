@@ -48,7 +48,7 @@ object JQuerySupport {
     opacity: js.UndefOr[scala.Boolean] = js.undefined,
     optDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     optSelected: js.UndefOr[scala.Boolean] = js.undefined,
-    scriptEval: js.Function0[scala.Boolean] = null,
+    scriptEval: () => scala.Boolean = null,
     style: js.UndefOr[scala.Boolean] = js.undefined,
     submitBubbles: js.UndefOr[scala.Boolean] = js.undefined,
     tbody: js.UndefOr[scala.Boolean] = js.undefined
@@ -69,7 +69,7 @@ object JQuerySupport {
     if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity)
     if (!js.isUndefined(optDisabled)) __obj.updateDynamic("optDisabled")(optDisabled)
     if (!js.isUndefined(optSelected)) __obj.updateDynamic("optSelected")(optSelected)
-    if (scriptEval != null) __obj.updateDynamic("scriptEval")(scriptEval)
+    if (scriptEval != null) __obj.updateDynamic("scriptEval")(js.Any.fromFunction0(scriptEval))
     if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
     if (!js.isUndefined(submitBubbles)) __obj.updateDynamic("submitBubbles")(submitBubbles)
     if (!js.isUndefined(tbody)) __obj.updateDynamic("tbody")(tbody)

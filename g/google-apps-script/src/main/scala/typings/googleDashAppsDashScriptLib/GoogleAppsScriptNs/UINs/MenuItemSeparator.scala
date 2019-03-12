@@ -31,29 +31,25 @@ trait MenuItemSeparator extends js.Object {
 object MenuItemSeparator {
   @scala.inline
   def apply(
-    addStyleDependentName: js.Function1[java.lang.String, MenuItemSeparator],
-    addStyleName: js.Function1[java.lang.String, MenuItemSeparator],
-    getId: js.Function0[java.lang.String],
-    getTag: js.Function0[java.lang.String],
-    getType: js.Function0[java.lang.String],
-    setHeight: js.Function1[java.lang.String, MenuItemSeparator],
-    setId: js.Function1[java.lang.String, MenuItemSeparator],
-    setPixelSize: js.Function2[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      MenuItemSeparator
-    ],
-    setSize: js.Function2[java.lang.String, java.lang.String, MenuItemSeparator],
-    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, MenuItemSeparator],
-    setStyleAttributes: js.Function1[js.Object, MenuItemSeparator],
-    setStyleName: js.Function1[java.lang.String, MenuItemSeparator],
-    setStylePrimaryName: js.Function1[java.lang.String, MenuItemSeparator],
-    setTag: js.Function1[java.lang.String, MenuItemSeparator],
-    setTitle: js.Function1[java.lang.String, MenuItemSeparator],
-    setVisible: js.Function1[scala.Boolean, MenuItemSeparator],
-    setWidth: js.Function1[java.lang.String, MenuItemSeparator]
+    addStyleDependentName: java.lang.String => MenuItemSeparator,
+    addStyleName: java.lang.String => MenuItemSeparator,
+    getId: () => java.lang.String,
+    getTag: () => java.lang.String,
+    getType: () => java.lang.String,
+    setHeight: java.lang.String => MenuItemSeparator,
+    setId: java.lang.String => MenuItemSeparator,
+    setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => MenuItemSeparator,
+    setSize: (java.lang.String, java.lang.String) => MenuItemSeparator,
+    setStyleAttribute: (java.lang.String, java.lang.String) => MenuItemSeparator,
+    setStyleAttributes: js.Object => MenuItemSeparator,
+    setStyleName: java.lang.String => MenuItemSeparator,
+    setStylePrimaryName: java.lang.String => MenuItemSeparator,
+    setTag: java.lang.String => MenuItemSeparator,
+    setTitle: java.lang.String => MenuItemSeparator,
+    setVisible: scala.Boolean => MenuItemSeparator,
+    setWidth: java.lang.String => MenuItemSeparator
   ): MenuItemSeparator = {
-    val __obj = js.Dynamic.literal(addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, getId = getId, getTag = getTag, getType = getType, setHeight = setHeight, setId = setId, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setTitle = setTitle, setVisible = setVisible, setWidth = setWidth)
+    val __obj = js.Dynamic.literal(addStyleDependentName = js.Any.fromFunction1(addStyleDependentName), addStyleName = js.Any.fromFunction1(addStyleName), getId = js.Any.fromFunction0(getId), getTag = js.Any.fromFunction0(getTag), getType = js.Any.fromFunction0(getType), setHeight = js.Any.fromFunction1(setHeight), setId = js.Any.fromFunction1(setId), setPixelSize = js.Any.fromFunction2(setPixelSize), setSize = js.Any.fromFunction2(setSize), setStyleAttribute = js.Any.fromFunction2(setStyleAttribute), setStyleAttributes = js.Any.fromFunction1(setStyleAttributes), setStyleName = js.Any.fromFunction1(setStyleName), setStylePrimaryName = js.Any.fromFunction1(setStylePrimaryName), setTag = js.Any.fromFunction1(setTag), setTitle = js.Any.fromFunction1(setTitle), setVisible = js.Any.fromFunction1(setVisible), setWidth = js.Any.fromFunction1(setWidth))
   
     __obj.asInstanceOf[MenuItemSeparator]
   }

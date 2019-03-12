@@ -22,12 +22,12 @@ object XSheetAnnotationShapeSupplier {
   @scala.inline
   def apply(
     AnnotationShape: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape,
-    acquire: js.Function0[scala.Unit],
-    getAnnotationShape: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getAnnotationShape: () => activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSheetAnnotationShapeSupplier = {
-    val __obj = js.Dynamic.literal(AnnotationShape = AnnotationShape, acquire = acquire, getAnnotationShape = getAnnotationShape, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(AnnotationShape = AnnotationShape, acquire = js.Any.fromFunction0(acquire), getAnnotationShape = js.Any.fromFunction0(getAnnotationShape), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSheetAnnotationShapeSupplier]
   }

@@ -109,70 +109,62 @@ object IPagingToolbar {
     IToolbar: extjsLib.ExtNs.toolbarNs.IToolbar = null,
     afterPageText: java.lang.String = null,
     beforePageText: java.lang.String = null,
-    bind: js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IStore], scala.Unit] = null,
-    bindStore: js.Function1[/* store */ js.UndefOr[js.Any], scala.Unit] = null,
-    bindStoreListeners: js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit] = null,
+    bind: /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IStore] => scala.Unit = null,
+    bindStore: /* store */ js.UndefOr[js.Any] => scala.Unit = null,
+    bindStoreListeners: /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore] => scala.Unit = null,
     displayInfo: js.UndefOr[scala.Boolean] = js.undefined,
     displayMsg: java.lang.String = null,
-    doRefresh: js.Function0[scala.Unit] = null,
+    doRefresh: () => scala.Unit = null,
     emptyMsg: java.lang.String = null,
     firstText: java.lang.String = null,
-    getStore: js.Function0[extjsLib.ExtNs.dataNs.IAbstractStore] = null,
-    getStoreListeners: js.Function0[_] = null,
+    getStore: () => extjsLib.ExtNs.dataNs.IAbstractStore = null,
+    getStoreListeners: () => _ = null,
     inputItemWidth: scala.Int | scala.Double = null,
     lastText: java.lang.String = null,
-    moveFirst: js.Function0[scala.Unit] = null,
-    moveLast: js.Function0[scala.Unit] = null,
-    moveNext: js.Function0[scala.Unit] = null,
-    movePrevious: js.Function0[scala.Unit] = null,
+    moveFirst: () => scala.Unit = null,
+    moveLast: () => scala.Unit = null,
+    moveNext: () => scala.Unit = null,
+    movePrevious: () => scala.Unit = null,
     nextText: java.lang.String = null,
-    onBindStore: js.Function2[
-      /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
-      /* initial */ js.UndefOr[scala.Boolean], 
-      scala.Unit
-    ] = null,
-    onUnbindStore: js.Function2[
-      /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
-      /* initial */ js.UndefOr[scala.Boolean], 
-      scala.Unit
-    ] = null,
+    onBindStore: (/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], /* initial */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
+    onUnbindStore: (/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], /* initial */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
     prependButtons: js.UndefOr[scala.Boolean] = js.undefined,
     prevText: java.lang.String = null,
     refreshText: java.lang.String = null,
     store: extjsLib.ExtNs.dataNs.IStore = null,
-    unbind: js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IStore], scala.Unit] = null,
-    unbindStoreListeners: js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit] = null
+    unbind: /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IStore] => scala.Unit = null,
+    unbindStoreListeners: /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore] => scala.Unit = null
   ): IPagingToolbar = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IBindable)
     js.Dynamic.global.Object.assign(__obj, IToolbar)
     if (afterPageText != null) __obj.updateDynamic("afterPageText")(afterPageText)
     if (beforePageText != null) __obj.updateDynamic("beforePageText")(beforePageText)
-    if (bind != null) __obj.updateDynamic("bind")(bind)
-    if (bindStore != null) __obj.updateDynamic("bindStore")(bindStore)
-    if (bindStoreListeners != null) __obj.updateDynamic("bindStoreListeners")(bindStoreListeners)
+    if (bind != null) __obj.updateDynamic("bind")(js.Any.fromFunction1(bind))
+    if (bindStore != null) __obj.updateDynamic("bindStore")(js.Any.fromFunction1(bindStore))
+    if (bindStoreListeners != null) __obj.updateDynamic("bindStoreListeners")(js.Any.fromFunction1(bindStoreListeners))
     if (!js.isUndefined(displayInfo)) __obj.updateDynamic("displayInfo")(displayInfo)
     if (displayMsg != null) __obj.updateDynamic("displayMsg")(displayMsg)
-    if (doRefresh != null) __obj.updateDynamic("doRefresh")(doRefresh)
+    if (doRefresh != null) __obj.updateDynamic("doRefresh")(js.Any.fromFunction0(doRefresh))
     if (emptyMsg != null) __obj.updateDynamic("emptyMsg")(emptyMsg)
     if (firstText != null) __obj.updateDynamic("firstText")(firstText)
-    if (getStore != null) __obj.updateDynamic("getStore")(getStore)
-    if (getStoreListeners != null) __obj.updateDynamic("getStoreListeners")(getStoreListeners)
+    if (getStore != null) __obj.updateDynamic("getStore")(js.Any.fromFunction0(getStore))
+    if (getStoreListeners != null) __obj.updateDynamic("getStoreListeners")(js.Any.fromFunction0(getStoreListeners))
     if (inputItemWidth != null) __obj.updateDynamic("inputItemWidth")(inputItemWidth.asInstanceOf[js.Any])
     if (lastText != null) __obj.updateDynamic("lastText")(lastText)
-    if (moveFirst != null) __obj.updateDynamic("moveFirst")(moveFirst)
-    if (moveLast != null) __obj.updateDynamic("moveLast")(moveLast)
-    if (moveNext != null) __obj.updateDynamic("moveNext")(moveNext)
-    if (movePrevious != null) __obj.updateDynamic("movePrevious")(movePrevious)
+    if (moveFirst != null) __obj.updateDynamic("moveFirst")(js.Any.fromFunction0(moveFirst))
+    if (moveLast != null) __obj.updateDynamic("moveLast")(js.Any.fromFunction0(moveLast))
+    if (moveNext != null) __obj.updateDynamic("moveNext")(js.Any.fromFunction0(moveNext))
+    if (movePrevious != null) __obj.updateDynamic("movePrevious")(js.Any.fromFunction0(movePrevious))
     if (nextText != null) __obj.updateDynamic("nextText")(nextText)
-    if (onBindStore != null) __obj.updateDynamic("onBindStore")(onBindStore)
-    if (onUnbindStore != null) __obj.updateDynamic("onUnbindStore")(onUnbindStore)
+    if (onBindStore != null) __obj.updateDynamic("onBindStore")(js.Any.fromFunction2(onBindStore))
+    if (onUnbindStore != null) __obj.updateDynamic("onUnbindStore")(js.Any.fromFunction2(onUnbindStore))
     if (!js.isUndefined(prependButtons)) __obj.updateDynamic("prependButtons")(prependButtons)
     if (prevText != null) __obj.updateDynamic("prevText")(prevText)
     if (refreshText != null) __obj.updateDynamic("refreshText")(refreshText)
     if (store != null) __obj.updateDynamic("store")(store)
-    if (unbind != null) __obj.updateDynamic("unbind")(unbind)
-    if (unbindStoreListeners != null) __obj.updateDynamic("unbindStoreListeners")(unbindStoreListeners)
+    if (unbind != null) __obj.updateDynamic("unbind")(js.Any.fromFunction1(unbind))
+    if (unbindStoreListeners != null) __obj.updateDynamic("unbindStoreListeners")(js.Any.fromFunction1(unbindStoreListeners))
     __obj.asInstanceOf[IPagingToolbar]
   }
 }

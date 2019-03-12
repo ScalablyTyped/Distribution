@@ -22,10 +22,10 @@ object WebIDLParseError {
     input: java.lang.String,
     line: scala.Double,
     message: java.lang.String,
-    toString: js.Function0[java.lang.String],
+    toString: () => java.lang.String,
     tokens: js.Array[ValueDescription]
   ): WebIDLParseError = {
-    val __obj = js.Dynamic.literal(input = input, line = line, message = message, toString = toString, tokens = tokens)
+    val __obj = js.Dynamic.literal(input = input, line = line, message = message, toString = js.Any.fromFunction0(toString), tokens = tokens)
   
     __obj.asInstanceOf[WebIDLParseError]
   }

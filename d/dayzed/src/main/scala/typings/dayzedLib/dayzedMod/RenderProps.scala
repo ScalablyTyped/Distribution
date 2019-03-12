@@ -16,11 +16,11 @@ object RenderProps {
   @scala.inline
   def apply(
     calendars: js.Array[Calendar],
-    getBackProps: js.Function1[dayzedLib.Anon_Calendars, stdLib.Record[java.lang.String, _]],
-    getDateProps: js.Function1[dayzedLib.Anon_DateObj, stdLib.Record[java.lang.String, _]],
-    getForwardProps: js.Function1[dayzedLib.Anon_Calendars, stdLib.Record[java.lang.String, _]]
+    getBackProps: dayzedLib.Anon_Calendars => stdLib.Record[java.lang.String, _],
+    getDateProps: dayzedLib.Anon_DateObj => stdLib.Record[java.lang.String, _],
+    getForwardProps: dayzedLib.Anon_Calendars => stdLib.Record[java.lang.String, _]
   ): RenderProps = {
-    val __obj = js.Dynamic.literal(calendars = calendars, getBackProps = getBackProps, getDateProps = getDateProps, getForwardProps = getForwardProps)
+    val __obj = js.Dynamic.literal(calendars = calendars, getBackProps = js.Any.fromFunction1(getBackProps), getDateProps = js.Any.fromFunction1(getDateProps), getForwardProps = js.Any.fromFunction1(getForwardProps))
   
     __obj.asInstanceOf[RenderProps]
   }

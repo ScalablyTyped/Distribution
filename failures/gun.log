@@ -4,7 +4,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(gun, gun)) [id => gun, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/gun/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/gun),TsIdentLibrarySimple(gun)),TsIdentModule(None,List(gun))) [id => gun, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(gun)) [id => gun, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:200 Processing TsIdentLibrarySimple(gun) [id => gun, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:201 Processing TsIdentLibrarySimple(gun) [id => gun, phase => typescript] 
 [warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof imported_gun [id => gun, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(gun/gun) / TsDeclVar(cons) / TsTypeQuery())] 
 [info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Bucket) [id => gun, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(gun) / TsDeclNamespace(Gun) / TsDeclTypeAlias(ConstructorOptions) / TsTypeRef() / TsTypeObject() / TsMemberProperty(s3) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_File) [id => gun, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(gun) / TsDeclNamespace(Gun) / TsDeclTypeAlias(ConstructorOptions) / TsTypeRef() / TsTypeObject())] 

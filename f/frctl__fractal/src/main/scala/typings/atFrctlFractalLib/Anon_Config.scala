@@ -19,7 +19,7 @@ trait Anon_Config
     files: atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.filesNs.FileCollection,
     resources: atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.assetsNs.AssetCollection,
     parent: atFrctlFractalLib.atFrctlFractalMod.fractalNs.coreNs.entitiesNs.Entity
-  ): nodeLib.IterableIterator[
+  ): stdLib.IterableIterator[
     js.Object | atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.variantsNs.VariantCollection | atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.componentsNs.Component
   ] = js.native
 }

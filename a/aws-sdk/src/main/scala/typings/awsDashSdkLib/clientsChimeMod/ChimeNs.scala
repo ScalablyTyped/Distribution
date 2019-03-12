@@ -58,7 +58,7 @@ object ChimeNs extends js.Object {
     /**
       * The request containing the user IDs to suspend.
       */
-    var UserIdList: UserIdList
+    var UserIdList: awsDashSdkLib.clientsChimeMod.ChimeNs.UserIdList
   }
   
   trait BatchSuspendUserResponse extends js.Object {
@@ -76,7 +76,7 @@ object ChimeNs extends js.Object {
     /**
       * The request containing the user IDs to unsuspend.
       */
-    var UserIdList: UserIdList
+    var UserIdList: awsDashSdkLib.clientsChimeMod.ChimeNs.UserIdList
   }
   
   trait BatchUnsuspendUserResponse extends js.Object {
@@ -207,7 +207,7 @@ object ChimeNs extends js.Object {
     /**
       * The user email addresses to which to send the invite.
       */
-    var UserEmailList: UserEmailList
+    var UserEmailList: awsDashSdkLib.clientsChimeMod.ChimeNs.UserEmailList
   }
   
   trait InviteUsersResponse extends js.Object {
@@ -701,7 +701,7 @@ object ChimeNs extends js.Object {
     /**
       * The Amazon Chime account settings to update.
       */
-    var AccountSettings: AccountSettings
+    var AccountSettings: awsDashSdkLib.clientsChimeMod.ChimeNs.AccountSettings
   }
   
   trait UpdateAccountSettingsResponse extends js.Object

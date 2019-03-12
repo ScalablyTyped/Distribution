@@ -78,7 +78,7 @@ object Options {
     allowReserved: scala.Boolean | detectiveLib.detectiveLibStrings.never = null,
     allowReturnOutsideFunction: js.UndefOr[scala.Boolean] = js.undefined,
     ecmaVersion: java.lang.String | scala.Double = null,
-    isRequire: js.Function1[/* node */ js.Any, scala.Boolean] = null,
+    isRequire: /* node */ js.Any => scala.Boolean = null,
     locations: js.UndefOr[scala.Boolean] = js.undefined,
     nodes: java.lang.String = null,
     parse: acornLib.acornMod.acornNs.Options = null,
@@ -92,7 +92,7 @@ object Options {
     if (allowReserved != null) __obj.updateDynamic("allowReserved")(allowReserved.asInstanceOf[js.Any])
     if (!js.isUndefined(allowReturnOutsideFunction)) __obj.updateDynamic("allowReturnOutsideFunction")(allowReturnOutsideFunction)
     if (ecmaVersion != null) __obj.updateDynamic("ecmaVersion")(ecmaVersion.asInstanceOf[js.Any])
-    if (isRequire != null) __obj.updateDynamic("isRequire")(isRequire)
+    if (isRequire != null) __obj.updateDynamic("isRequire")(js.Any.fromFunction1(isRequire))
     if (!js.isUndefined(locations)) __obj.updateDynamic("locations")(locations)
     if (nodes != null) __obj.updateDynamic("nodes")(nodes)
     if (parse != null) __obj.updateDynamic("parse")(parse)

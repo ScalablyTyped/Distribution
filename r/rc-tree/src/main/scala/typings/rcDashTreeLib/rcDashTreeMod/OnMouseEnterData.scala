@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OnMouseEnterData extends js.Object {
-  var event: reactLib.Event
+  var event: stdLib.Event
   var node: InternalTreeNode
 }
 
 object OnMouseEnterData {
   @scala.inline
-  def apply(event: reactLib.Event, node: InternalTreeNode): OnMouseEnterData = {
+  def apply(event: stdLib.Event, node: InternalTreeNode): OnMouseEnterData = {
     val __obj = js.Dynamic.literal(event = event, node = node)
   
     __obj.asInstanceOf[OnMouseEnterData]

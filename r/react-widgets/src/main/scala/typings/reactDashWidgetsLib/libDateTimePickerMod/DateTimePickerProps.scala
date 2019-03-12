@@ -231,18 +231,14 @@ object DateTimePickerProps {
     messages: DateTimePickerMessages = null,
     min: stdLib.Date = null,
     name: java.lang.String = null,
-    onBlur: js.Function0[scala.Unit] = null,
-    onChange: js.Function2[
-      /* date */ js.UndefOr[stdLib.Date], 
-      /* dateStr */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    onCurrentDateChange: js.Function1[/* date */ js.UndefOr[stdLib.Date], scala.Unit] = null,
-    onFocus: js.Function0[scala.Unit] = null,
-    onKeyDown: js.Function1[/* event */ reactLib.reactMod.ReactNs.KeyboardEvent[_], scala.Unit] = null,
-    onKeyPress: js.Function1[/* event */ reactLib.reactMod.ReactNs.KeyboardEvent[_], scala.Unit] = null,
-    onSelect: js.Function1[/* date */ js.UndefOr[stdLib.Date], scala.Unit] = null,
-    onToggle: js.Function1[/* isOpen */ scala.Boolean, scala.Unit] = null,
+    onBlur: () => scala.Unit = null,
+    onChange: (/* date */ js.UndefOr[stdLib.Date], /* dateStr */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    onCurrentDateChange: /* date */ js.UndefOr[stdLib.Date] => scala.Unit = null,
+    onFocus: () => scala.Unit = null,
+    onKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[_] => scala.Unit = null,
+    onKeyPress: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[_] => scala.Unit = null,
+    onSelect: /* date */ js.UndefOr[stdLib.Date] => scala.Unit = null,
+    onToggle: /* isOpen */ scala.Boolean => scala.Unit = null,
     open: reactDashWidgetsLib.reactDashWidgetsLibNumbers.`false` | reactDashWidgetsLib.reactDashWidgetsLibStrings.date | reactDashWidgetsLib.reactDashWidgetsLibStrings.time = null,
     parse: (js.Function1[/* str */ java.lang.String, stdLib.Date]) | js.Array[java.lang.String] | java.lang.String = null,
     placeholder: java.lang.String = null,
@@ -283,14 +279,14 @@ object DateTimePickerProps {
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (min != null) __obj.updateDynamic("min")(min)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onCurrentDateChange != null) __obj.updateDynamic("onCurrentDateChange")(onCurrentDateChange)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (onToggle != null) __obj.updateDynamic("onToggle")(onToggle)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onCurrentDateChange != null) __obj.updateDynamic("onCurrentDateChange")(js.Any.fromFunction1(onCurrentDateChange))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction0(onFocus))
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
+    if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction1(onToggle))
     if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)

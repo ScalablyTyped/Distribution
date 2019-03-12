@@ -29,7 +29,7 @@ class Publisher protected ()
   @JSName("on")
   override def on_error(
     event: atIonicDiscoverLib.atIonicDiscoverLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /* protected */ def sayHello(): scala.Unit = js.native
   def start(): js.Promise[scala.Unit] = js.native

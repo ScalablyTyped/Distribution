@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jasmine-expect/dist/toHaveDateBefore", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val toHaveDateBefore: jasmineDashExpectLib.distToHaveDateBeforeMod.ToHaveDateBefore = js.native
+  val toHaveDateBefore: ToHaveDateBefore = js.native
 }
 

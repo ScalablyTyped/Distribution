@@ -26,11 +26,11 @@ object QueryResult {
   def apply(
     constructor: js.Function,
     fields: js.Array[QueryFieldInfo],
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     rows: js.Array[java.lang.String]
   ): QueryResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor, fields = fields, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, rows = rows)
+    val __obj = js.Dynamic.literal(constructor = constructor, fields = fields, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), rows = rows)
   
     __obj.asInstanceOf[QueryResult]
   }

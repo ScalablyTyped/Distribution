@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val version: java.lang.String = js.native
-  def icon(options: leafletDotAwesomeDashMarkersLib.leafletMod.AwesomeMarkersNs.AwesomeMarkersIconOptions): leafletDotAwesomeDashMarkersLib.leafletMod.AwesomeMarkersNs.Icon = js.native
+  def icon(options: AwesomeMarkersIconOptions): Icon = js.native
 }
 

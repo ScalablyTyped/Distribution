@@ -23,7 +23,7 @@ object ^ extends js.Object {
   @JSName("address")
   def address_public(name: ipLib.ipLibStrings.public): java.lang.String = js.native
   def cidr(cidr: java.lang.String): java.lang.String = js.native
-  def cidrSubnet(cidr: java.lang.String): ipLib.ipMod.SubnetInfo = js.native
+  def cidrSubnet(cidr: java.lang.String): SubnetInfo = js.native
   def fromLong(ip: scala.Double): java.lang.String = js.native
   def fromPrefixLen(prefixLength: scala.Double): java.lang.String = js.native
   @JSName("fromPrefixLen")
@@ -44,7 +44,7 @@ object ^ extends js.Object {
   def mask(ip: java.lang.String, mask: java.lang.String): java.lang.String = js.native
   def not(ip: java.lang.String): java.lang.String = js.native
   def or(ip: java.lang.String, mask: java.lang.String): java.lang.String = js.native
-  def subnet(ip: java.lang.String, subnet: java.lang.String): ipLib.ipMod.SubnetInfo = js.native
+  def subnet(ip: java.lang.String, subnet: java.lang.String): SubnetInfo = js.native
   def toBuffer(ip: java.lang.String): nodeLib.Buffer = js.native
   def toBuffer(ip: java.lang.String, buffer: nodeLib.Buffer): nodeLib.Buffer = js.native
   def toBuffer(ip: java.lang.String, buffer: nodeLib.Buffer, offset: scala.Double): nodeLib.Buffer = js.native

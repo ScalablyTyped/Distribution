@@ -11,5 +11,5 @@ package object tcpNs {
     * @param err error if any
     * @param connection issued from the pool
     */
-  type ConnectionCallback = js.Function2[/* err */ nodeLib.Error, /* connection */ PooledConnection, scala.Unit]
+  type ConnectionCallback = js.Function2[/* err */ stdLib.Error, /* connection */ PooledConnection, scala.Unit]
 }

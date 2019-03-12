@@ -11,8 +11,8 @@ trait IPrintTaskRequestedDeferral extends js.Object {
 
 object IPrintTaskRequestedDeferral {
   @scala.inline
-  def apply(complete: js.Function0[scala.Unit]): IPrintTaskRequestedDeferral = {
-    val __obj = js.Dynamic.literal(complete = complete)
+  def apply(complete: () => scala.Unit): IPrintTaskRequestedDeferral = {
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
   
     __obj.asInstanceOf[IPrintTaskRequestedDeferral]
   }

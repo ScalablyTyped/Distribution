@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Windows extends js.Object {
   val Count: scala.Double = js.native
   val Parent: Application = js.native
-  val VBE: VBE = js.native
+  val VBE: activexDashVbideLib.VBIDENs.VBE = js.native
   def apply(index: js.Any): Window = js.native
   def CreateToolWindow(
     AddInInst: AddIn,

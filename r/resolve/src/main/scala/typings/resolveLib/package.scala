@@ -12,7 +12,7 @@ package object resolveLib {
     * @param isFile If the given file exists
     */
   type isFileCallback = js.Function2[
-    /* err */ nodeLib.Error | scala.Null, 
+    /* err */ stdLib.Error | scala.Null, 
     /* isFile */ js.UndefOr[scala.Boolean], 
     scala.Unit
   ]
@@ -23,7 +23,7 @@ package object resolveLib {
     * @param isFile If the given file exists
     */
   type readFileCallback = js.Function2[
-    /* err */ nodeLib.Error | scala.Null, 
+    /* err */ stdLib.Error | scala.Null, 
     /* file */ js.UndefOr[nodeLib.Buffer], 
     scala.Unit
   ]
@@ -34,7 +34,7 @@ package object resolveLib {
     * @param resolved Absolute path to resolved identifier
     */
   type resolveCallback = js.Function3[
-    /* err */ nodeLib.Error | scala.Null, 
+    /* err */ stdLib.Error | scala.Null, 
     /* resolved */ js.UndefOr[java.lang.String], 
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PackageMeta */ /* pkg */ js.UndefOr[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PackageMeta */ js.Any

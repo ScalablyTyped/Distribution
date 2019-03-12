@@ -15,8 +15,8 @@ trait IFilter extends js.Object {
 
 object IFilter {
   @scala.inline
-  def apply(execute: js.Function1[js.Any, scala.Boolean], toString: js.Function0[java.lang.String]): IFilter = {
-    val __obj = js.Dynamic.literal(execute = execute, toString = toString)
+  def apply(execute: js.Any => scala.Boolean, toString: () => java.lang.String): IFilter = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[IFilter]
   }

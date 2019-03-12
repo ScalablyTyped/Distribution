@@ -12,13 +12,13 @@ trait DisplayKeywordBuilder[DisplayKeyword] extends DisplayBuilder[DisplayKeywor
 object DisplayKeywordBuilder {
   @scala.inline
   def apply[DisplayKeyword](
-    build: js.Function0[AdWordsOperation[DisplayKeywordBuilder[DisplayKeyword]]],
-    exclude: js.Function0[AdWordsOperation[DisplayKeywordBuilder[DisplayKeyword]]],
-    withCpc: js.Function1[scala.Double, DisplayKeywordBuilder[DisplayKeyword]],
-    withCpm: js.Function1[scala.Double, DisplayKeywordBuilder[DisplayKeyword]],
-    withText: js.Function1[java.lang.String, DisplayKeywordBuilder[DisplayKeyword]]
+    build: () => AdWordsOperation[DisplayKeywordBuilder[DisplayKeyword]],
+    exclude: () => AdWordsOperation[DisplayKeywordBuilder[DisplayKeyword]],
+    withCpc: scala.Double => DisplayKeywordBuilder[DisplayKeyword],
+    withCpm: scala.Double => DisplayKeywordBuilder[DisplayKeyword],
+    withText: java.lang.String => DisplayKeywordBuilder[DisplayKeyword]
   ): DisplayKeywordBuilder[DisplayKeyword] = {
-    val __obj = js.Dynamic.literal(build = build, exclude = exclude, withCpc = withCpc, withCpm = withCpm, withText = withText)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), exclude = js.Any.fromFunction0(exclude), withCpc = js.Any.fromFunction1(withCpc), withCpm = js.Any.fromFunction1(withCpm), withText = js.Any.fromFunction1(withText))
   
     __obj.asInstanceOf[DisplayKeywordBuilder[DisplayKeyword]]
   }

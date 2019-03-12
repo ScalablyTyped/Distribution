@@ -13,15 +13,15 @@ object ^ extends js.Object {
   val version: java.lang.String = js.native
   def memoryUsage(): scala.Double = js.native
   def nodeCount(): scala.Double = js.native
-  def parseHtml(source: java.lang.String): libxmljsLib.libxmljsMod.Document = js.native
-  def parseHtml(source: java.lang.String, options: libxmljsLib.libxmljsMod.ParserOptions): libxmljsLib.libxmljsMod.Document = js.native
-  def parseHtmlFragment(source: java.lang.String): libxmljsLib.libxmljsMod.Document = js.native
-  def parseHtmlFragment(source: java.lang.String, options: libxmljsLib.libxmljsMod.ParserOptions): libxmljsLib.libxmljsMod.Document = js.native
-  def parseHtmlString(source: java.lang.String): libxmljsLib.libxmljsMod.Document = js.native
-  def parseHtmlString(source: java.lang.String, options: libxmljsLib.libxmljsMod.ParserOptions): libxmljsLib.libxmljsMod.Document = js.native
-  def parseXml(source: java.lang.String): libxmljsLib.libxmljsMod.Document = js.native
-  def parseXml(source: java.lang.String, options: libxmljsLib.libxmljsMod.ParserOptions): libxmljsLib.libxmljsMod.Document = js.native
-  def parseXmlString(source: java.lang.String): libxmljsLib.libxmljsMod.Document = js.native
-  def parseXmlString(source: java.lang.String, options: libxmljsLib.libxmljsMod.ParserOptions): libxmljsLib.libxmljsMod.Document = js.native
+  def parseHtml(source: java.lang.String): Document = js.native
+  def parseHtml(source: java.lang.String, options: ParserOptions): Document = js.native
+  def parseHtmlFragment(source: java.lang.String): Document = js.native
+  def parseHtmlFragment(source: java.lang.String, options: ParserOptions): Document = js.native
+  def parseHtmlString(source: java.lang.String): Document = js.native
+  def parseHtmlString(source: java.lang.String, options: ParserOptions): Document = js.native
+  def parseXml(source: java.lang.String): Document = js.native
+  def parseXml(source: java.lang.String, options: ParserOptions): Document = js.native
+  def parseXmlString(source: java.lang.String): Document = js.native
+  def parseXmlString(source: java.lang.String, options: ParserOptions): Document = js.native
 }
 

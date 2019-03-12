@@ -14,11 +14,11 @@ trait Anon_Date extends js.Object {
 object Anon_Date {
   @scala.inline
   def apply(
-    decodeIso8601: js.Function1[java.lang.String, stdLib.Date],
-    encodeIso8601: js.Function1[stdLib.Date, java.lang.String],
-    setOpts: js.Function1[xmlrpcLib.xmlrpcMod.DateFormatterOptions, scala.Unit]
+    decodeIso8601: java.lang.String => stdLib.Date,
+    encodeIso8601: stdLib.Date => java.lang.String,
+    setOpts: xmlrpcLib.xmlrpcMod.DateFormatterOptions => scala.Unit
   ): Anon_Date = {
-    val __obj = js.Dynamic.literal(decodeIso8601 = decodeIso8601, encodeIso8601 = encodeIso8601, setOpts = setOpts)
+    val __obj = js.Dynamic.literal(decodeIso8601 = js.Any.fromFunction1(decodeIso8601), encodeIso8601 = js.Any.fromFunction1(encodeIso8601), setOpts = js.Any.fromFunction1(setOpts))
   
     __obj.asInstanceOf[Anon_Date]
   }

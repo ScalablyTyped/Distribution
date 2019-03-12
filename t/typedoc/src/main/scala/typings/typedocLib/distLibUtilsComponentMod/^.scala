@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val DUMMY_APPLICATION_OWNER: js.Symbol = js.native
-  def Component(options: typedocLib.distLibUtilsComponentMod.ComponentOptions): stdLib.ClassDecorator = js.native
+  def Component(options: ComponentOptions): stdLib.ClassDecorator = js.native
   def Option(options: typedocLib.distLibUtilsOptionsDeclarationMod.DeclarationOption): stdLib.PropertyDecorator = js.native
 }
 

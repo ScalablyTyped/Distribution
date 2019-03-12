@@ -41,15 +41,15 @@ trait SumAggregation extends Aggregation {
 object SumAggregation {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    field: js.Function1[java.lang.String, SumAggregation],
-    lang: js.Function1[java.lang.String, SumAggregation],
-    params: js.Function1[js.Object, SumAggregation],
-    script: js.Function1[java.lang.String, SumAggregation],
-    scriptValuesSorted: js.Function1[scala.Boolean, SumAggregation],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    field: java.lang.String => SumAggregation,
+    lang: java.lang.String => SumAggregation,
+    params: js.Object => SumAggregation,
+    script: java.lang.String => SumAggregation,
+    scriptValuesSorted: scala.Boolean => SumAggregation,
+    toJSON: () => js.Any
   ): SumAggregation = {
-    val __obj = js.Dynamic.literal(_type = _type, field = field, lang = lang, params = params, script = script, scriptValuesSorted = scriptValuesSorted, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), field = js.Any.fromFunction1(field), lang = js.Any.fromFunction1(lang), params = js.Any.fromFunction1(params), script = js.Any.fromFunction1(script), scriptValuesSorted = js.Any.fromFunction1(scriptValuesSorted), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[SumAggregation]
   }

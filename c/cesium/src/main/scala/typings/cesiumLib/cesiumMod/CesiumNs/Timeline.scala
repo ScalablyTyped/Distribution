@@ -17,12 +17,12 @@ object Timeline {
   @scala.inline
   def apply(
     container: stdLib.Element,
-    destroy: js.Function0[scala.Unit],
-    isDestroyed: js.Function0[scala.Boolean],
-    resize: js.Function0[scala.Unit],
-    zoomTo: js.Function2[JulianDate, JulianDate, scala.Unit]
+    destroy: () => scala.Unit,
+    isDestroyed: () => scala.Boolean,
+    resize: () => scala.Unit,
+    zoomTo: (JulianDate, JulianDate) => scala.Unit
   ): Timeline = {
-    val __obj = js.Dynamic.literal(container = container, destroy = destroy, isDestroyed = isDestroyed, resize = resize, zoomTo = zoomTo)
+    val __obj = js.Dynamic.literal(container = container, destroy = js.Any.fromFunction0(destroy), isDestroyed = js.Any.fromFunction0(isDestroyed), resize = js.Any.fromFunction0(resize), zoomTo = js.Any.fromFunction2(zoomTo))
   
     __obj.asInstanceOf[Timeline]
   }

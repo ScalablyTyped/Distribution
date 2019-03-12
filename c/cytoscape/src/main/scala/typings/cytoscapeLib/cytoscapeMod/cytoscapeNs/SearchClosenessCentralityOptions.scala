@@ -35,12 +35,12 @@ object SearchClosenessCentralityOptions {
     root: NodeSingular | Selector,
     directed: js.UndefOr[scala.Boolean] = js.undefined,
     harmonic: js.UndefOr[scala.Boolean] = js.undefined,
-    weight: js.Function1[/* edge */ EdgeSingular, scala.Double] = null
+    weight: /* edge */ EdgeSingular => scala.Double = null
   ): SearchClosenessCentralityOptions = {
     val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
     if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed)
     if (!js.isUndefined(harmonic)) __obj.updateDynamic("harmonic")(harmonic)
-    if (weight != null) __obj.updateDynamic("weight")(weight)
+    if (weight != null) __obj.updateDynamic("weight")(js.Any.fromFunction1(weight))
     __obj.asInstanceOf[SearchClosenessCentralityOptions]
   }
 }

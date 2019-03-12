@@ -39,11 +39,7 @@ object ProgressProps {
   @scala.inline
   def apply(
     className: java.lang.String = null,
-    format: js.Function2[
-      /* percent */ js.UndefOr[scala.Double], 
-      /* successPercent */ js.UndefOr[scala.Double], 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    format: (/* percent */ js.UndefOr[scala.Double], /* successPercent */ js.UndefOr[scala.Double]) => reactLib.reactMod.ReactNs.ReactNode = null,
     gapDegree: scala.Int | scala.Double = null,
     gapPosition: antdLib.antdLibStrings.top | antdLib.antdLibStrings.bottom | antdLib.antdLibStrings.left | antdLib.antdLibStrings.right = null,
     percent: scala.Int | scala.Double = null,
@@ -62,7 +58,7 @@ object ProgressProps {
   ): ProgressProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction2(format))
     if (gapDegree != null) __obj.updateDynamic("gapDegree")(gapDegree.asInstanceOf[js.Any])
     if (gapPosition != null) __obj.updateDynamic("gapPosition")(gapPosition.asInstanceOf[js.Any])
     if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])

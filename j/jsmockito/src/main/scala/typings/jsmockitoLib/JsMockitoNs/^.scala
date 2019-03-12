@@ -16,7 +16,7 @@ object ^ extends js.Object {
   def mockFunction(funcName: java.lang.String, delegate: js.Function): js.Function = js.native
   def spy[T](delegate: T): T = js.native
   def verify[T](mock: T): T = js.native
-  def verify[T](mock: T, verifier: jsmockitoLib.JsMockitoNs.Verifier): T = js.native
+  def verify[T](mock: T, verifier: Verifier): T = js.native
   def verifyNoMoreInteractions(mock: js.Any*): scala.Unit = js.native
   def verifyZeroInteractions(mock: js.Any*): scala.Unit = js.native
   def when[T](mock: T): T = js.native

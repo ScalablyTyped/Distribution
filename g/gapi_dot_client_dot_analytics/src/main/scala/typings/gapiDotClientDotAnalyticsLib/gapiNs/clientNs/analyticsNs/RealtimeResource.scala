@@ -13,12 +13,9 @@ trait RealtimeResource extends js.Object {
 object RealtimeResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AltDimensionsFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RealtimeData]
-    ]
+    get: gapiDotClientDotAnalyticsLib.Anon_AltDimensionsFields => gapiDotClientLib.gapiNs.clientNs.Request[RealtimeData]
   ): RealtimeResource = {
-    val __obj = js.Dynamic.literal(get = get)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[RealtimeResource]
   }

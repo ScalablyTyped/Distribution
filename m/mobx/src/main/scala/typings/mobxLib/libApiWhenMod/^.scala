@@ -13,8 +13,8 @@ object ^ extends js.Object {
   def when(
     predicate: js.Function0[scala.Boolean],
     effect: mobxLib.libUtilsUtilsMod.Lambda,
-    opts: mobxLib.libApiWhenMod.IWhenOptions
+    opts: IWhenOptions
   ): mobxLib.libCoreReactionMod.IReactionDisposer = js.native
-  def when(predicate: js.Function0[scala.Boolean], opts: mobxLib.libApiWhenMod.IWhenOptions): js.Promise[scala.Unit] with mobxLib.Anon_Cancel = js.native
+  def when(predicate: js.Function0[scala.Boolean], opts: IWhenOptions): js.Promise[scala.Unit] with mobxLib.Anon_Cancel = js.native
 }
 

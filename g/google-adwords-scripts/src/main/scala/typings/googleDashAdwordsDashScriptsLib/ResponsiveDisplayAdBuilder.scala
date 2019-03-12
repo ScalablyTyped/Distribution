@@ -17,19 +17,19 @@ trait ResponsiveDisplayAdBuilder[ResponsiveDisplayAd] extends AdBuilder[Responsi
 object ResponsiveDisplayAdBuilder {
   @scala.inline
   def apply[ResponsiveDisplayAd](
-    build: js.Function0[AdWordsOperation[ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]]],
-    withBusinessName: js.Function1[java.lang.String, ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]],
-    withCustomParameters: js.Function1[js.Object, ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]],
-    withDescription: js.Function1[java.lang.String, ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]],
-    withFinalUrl: js.Function1[java.lang.String, ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]],
-    withLogoImage: js.Function1[Media, ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]],
-    withLongHeadline: js.Function1[java.lang.String, ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]],
-    withMarketingImage: js.Function1[Media, ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]],
-    withMobileFinalUrl: js.Function1[java.lang.String, ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]],
-    withShortHeadline: js.Function1[java.lang.String, ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]],
-    withTrackingTemplate: js.Function1[java.lang.String, ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]]
+    build: () => AdWordsOperation[ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]],
+    withBusinessName: java.lang.String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd],
+    withCustomParameters: js.Object => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd],
+    withDescription: java.lang.String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd],
+    withFinalUrl: java.lang.String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd],
+    withLogoImage: Media => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd],
+    withLongHeadline: java.lang.String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd],
+    withMarketingImage: Media => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd],
+    withMobileFinalUrl: java.lang.String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd],
+    withShortHeadline: java.lang.String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd],
+    withTrackingTemplate: java.lang.String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]
   ): ResponsiveDisplayAdBuilder[ResponsiveDisplayAd] = {
-    val __obj = js.Dynamic.literal(build = build, withBusinessName = withBusinessName, withCustomParameters = withCustomParameters, withDescription = withDescription, withFinalUrl = withFinalUrl, withLogoImage = withLogoImage, withLongHeadline = withLongHeadline, withMarketingImage = withMarketingImage, withMobileFinalUrl = withMobileFinalUrl, withShortHeadline = withShortHeadline, withTrackingTemplate = withTrackingTemplate)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), withBusinessName = js.Any.fromFunction1(withBusinessName), withCustomParameters = js.Any.fromFunction1(withCustomParameters), withDescription = js.Any.fromFunction1(withDescription), withFinalUrl = js.Any.fromFunction1(withFinalUrl), withLogoImage = js.Any.fromFunction1(withLogoImage), withLongHeadline = js.Any.fromFunction1(withLongHeadline), withMarketingImage = js.Any.fromFunction1(withMarketingImage), withMobileFinalUrl = js.Any.fromFunction1(withMobileFinalUrl), withShortHeadline = js.Any.fromFunction1(withShortHeadline), withTrackingTemplate = js.Any.fromFunction1(withTrackingTemplate))
   
     __obj.asInstanceOf[ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]]
   }

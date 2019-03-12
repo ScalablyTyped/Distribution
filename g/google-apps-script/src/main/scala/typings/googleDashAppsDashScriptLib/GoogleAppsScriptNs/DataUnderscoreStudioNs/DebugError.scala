@@ -14,11 +14,11 @@ trait DebugError extends js.Object {
 object DebugError {
   @scala.inline
   def apply(
-    printJson: js.Function0[java.lang.String],
-    setText: js.Function1[java.lang.String, DebugError],
-    throwException: js.Function0[scala.Unit]
+    printJson: () => java.lang.String,
+    setText: java.lang.String => DebugError,
+    throwException: () => scala.Unit
   ): DebugError = {
-    val __obj = js.Dynamic.literal(printJson = printJson, setText = setText, throwException = throwException)
+    val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson), setText = js.Any.fromFunction1(setText), throwException = js.Any.fromFunction0(throwException))
   
     __obj.asInstanceOf[DebugError]
   }

@@ -12,7 +12,7 @@ object ^ extends js.Object {
   def createPlaygroundOptions(): js.UndefOr[
     atApollographqlGraphqlDashPlaygroundDashHtmlLib.distRenderDashPlaygroundDashPageMod.RenderPageOptions
   ] = js.native
-  def createPlaygroundOptions(playground: apolloDashServerDashCoreLib.distPlaygroundMod.PlaygroundConfig): js.UndefOr[
+  def createPlaygroundOptions(playground: PlaygroundConfig): js.UndefOr[
     atApollographqlGraphqlDashPlaygroundDashHtmlLib.distRenderDashPlaygroundDashPageMod.RenderPageOptions
   ] = js.native
 }

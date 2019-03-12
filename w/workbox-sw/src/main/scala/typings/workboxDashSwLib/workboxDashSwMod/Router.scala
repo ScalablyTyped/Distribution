@@ -49,16 +49,13 @@ trait Router extends js.Object {
 object Router {
   @scala.inline
   def apply(
-    handleRequest: js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.Any, 
-      js.UndefOr[js.Promise[stdLib.Response]]
-    ],
-    registerRoute: js.Function1[Route, scala.Unit],
-    setCatchHandler: js.Function1[workboxDashSwLib.HandlerCallback, scala.Unit],
-    setDefaultHandler: js.Function1[workboxDashSwLib.HandlerCallback, scala.Unit],
-    unregisterRoute: js.Function1[Route, scala.Unit]
+    handleRequest: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.Any => js.UndefOr[js.Promise[stdLib.Response]],
+    registerRoute: Route => scala.Unit,
+    setCatchHandler: workboxDashSwLib.HandlerCallback => scala.Unit,
+    setDefaultHandler: workboxDashSwLib.HandlerCallback => scala.Unit,
+    unregisterRoute: Route => scala.Unit
   ): Router = {
-    val __obj = js.Dynamic.literal(handleRequest = handleRequest, registerRoute = registerRoute, setCatchHandler = setCatchHandler, setDefaultHandler = setDefaultHandler, unregisterRoute = unregisterRoute)
+    val __obj = js.Dynamic.literal(handleRequest = js.Any.fromFunction1(handleRequest), registerRoute = js.Any.fromFunction1(registerRoute), setCatchHandler = js.Any.fromFunction1(setCatchHandler), setDefaultHandler = js.Any.fromFunction1(setDefaultHandler), unregisterRoute = js.Any.fromFunction1(unregisterRoute))
   
     __obj.asInstanceOf[Router]
   }

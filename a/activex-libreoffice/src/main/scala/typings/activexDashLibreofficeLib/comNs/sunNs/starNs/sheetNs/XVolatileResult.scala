@@ -21,13 +21,13 @@ trait XVolatileResult
 object XVolatileResult {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addResultListener: js.Function1[XResultListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeResultListener: js.Function1[XResultListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addResultListener: XResultListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeResultListener: XResultListener => scala.Unit
   ): XVolatileResult = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addResultListener = addResultListener, queryInterface = queryInterface, release = release, removeResultListener = removeResultListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addResultListener = js.Any.fromFunction1(addResultListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeResultListener = js.Any.fromFunction1(removeResultListener))
   
     __obj.asInstanceOf[XVolatileResult]
   }

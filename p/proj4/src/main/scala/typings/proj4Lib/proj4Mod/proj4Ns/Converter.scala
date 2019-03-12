@@ -12,8 +12,8 @@ trait Converter extends js.Object {
 
 object Converter {
   @scala.inline
-  def apply(forward: js.Function1[js.Any, js.Any], inverse: js.Function1[js.Any, js.Any]): Converter = {
-    val __obj = js.Dynamic.literal(forward = forward, inverse = inverse)
+  def apply(forward: js.Any => js.Any, inverse: js.Any => js.Any): Converter = {
+    val __obj = js.Dynamic.literal(forward = js.Any.fromFunction1(forward), inverse = js.Any.fromFunction1(inverse))
   
     __obj.asInstanceOf[Converter]
   }

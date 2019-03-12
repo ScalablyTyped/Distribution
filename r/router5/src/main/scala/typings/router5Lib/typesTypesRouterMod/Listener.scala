@@ -13,10 +13,10 @@ trait Listener
 object Listener {
   @scala.inline
   def apply(
-    next: js.Function1[js.Any, js.Object],
+    next: js.Any => js.Object,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Listener = {
-    val __obj = js.Dynamic.literal(next = next)
+    val __obj = js.Dynamic.literal(next = js.Any.fromFunction1(next))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Listener]
   }

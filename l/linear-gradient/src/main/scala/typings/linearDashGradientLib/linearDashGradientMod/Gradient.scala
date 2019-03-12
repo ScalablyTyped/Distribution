@@ -18,11 +18,8 @@ trait Gradient extends js.Object {
 
 object Gradient {
   @scala.inline
-  def apply(
-    calcArray: js.Function1[scala.Double, linearDashGradientLib.Color],
-    calcHex: js.Function1[scala.Double, java.lang.String]
-  ): Gradient = {
-    val __obj = js.Dynamic.literal(calcArray = calcArray, calcHex = calcHex)
+  def apply(calcArray: scala.Double => linearDashGradientLib.Color, calcHex: scala.Double => java.lang.String): Gradient = {
+    val __obj = js.Dynamic.literal(calcArray = js.Any.fromFunction1(calcArray), calcHex = js.Any.fromFunction1(calcHex))
   
     __obj.asInstanceOf[Gradient]
   }

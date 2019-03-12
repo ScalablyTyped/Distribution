@@ -27,11 +27,8 @@ trait INotifyDisposing extends js.Object {
 
 object INotifyDisposing {
   @scala.inline
-  def apply(
-    add_disposing: js.Function1[js.Function, scala.Unit],
-    remove_disposing: js.Function1[js.Function, scala.Unit]
-  ): INotifyDisposing = {
-    val __obj = js.Dynamic.literal(add_disposing = add_disposing, remove_disposing = remove_disposing)
+  def apply(add_disposing: js.Function => scala.Unit, remove_disposing: js.Function => scala.Unit): INotifyDisposing = {
+    val __obj = js.Dynamic.literal(add_disposing = js.Any.fromFunction1(add_disposing), remove_disposing = js.Any.fromFunction1(remove_disposing))
   
     __obj.asInstanceOf[INotifyDisposing]
   }

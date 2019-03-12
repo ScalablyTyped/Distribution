@@ -11,8 +11,8 @@ trait IPanoramaGraphNode extends js.Object {
 
 object IPanoramaGraphNode {
   @scala.inline
-  def apply(getConnectedPanorama: js.Function0[js.Promise[IPanorama]]): IPanoramaGraphNode = {
-    val __obj = js.Dynamic.literal(getConnectedPanorama = getConnectedPanorama)
+  def apply(getConnectedPanorama: () => js.Promise[IPanorama]): IPanoramaGraphNode = {
+    val __obj = js.Dynamic.literal(getConnectedPanorama = js.Any.fromFunction0(getConnectedPanorama))
   
     __obj.asInstanceOf[IPanoramaGraphNode]
   }

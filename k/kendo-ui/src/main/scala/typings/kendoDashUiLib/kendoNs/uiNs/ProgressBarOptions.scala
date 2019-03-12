@@ -25,9 +25,9 @@ object ProgressBarOptions {
   @scala.inline
   def apply(
     animation: ProgressBarAnimation = null,
-    change: js.Function1[/* e */ ProgressBarChangeEvent, scala.Unit] = null,
+    change: /* e */ ProgressBarChangeEvent => scala.Unit = null,
     chunkCount: scala.Int | scala.Double = null,
-    complete: js.Function1[/* e */ ProgressBarCompleteEvent, scala.Unit] = null,
+    complete: /* e */ ProgressBarCompleteEvent => scala.Unit = null,
     enable: js.UndefOr[scala.Boolean] = js.undefined,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
@@ -40,9 +40,9 @@ object ProgressBarOptions {
   ): ProgressBarOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (chunkCount != null) __obj.updateDynamic("chunkCount")(chunkCount.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])

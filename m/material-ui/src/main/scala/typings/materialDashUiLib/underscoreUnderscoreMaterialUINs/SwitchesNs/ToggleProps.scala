@@ -43,11 +43,7 @@ object ToggleProps {
     label: reactLib.reactMod.ReactNs.ReactNode = null,
     labelPosition: materialDashUiLib.materialDashUiLibStrings.left | materialDashUiLib.materialDashUiLibStrings.right = null,
     labelStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    onToggle: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
-      /* isInputChecked */ scala.Boolean, 
-      scala.Unit
-    ] = null,
+    onToggle: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* isInputChecked */ scala.Boolean) => scala.Unit = null,
     rippleStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     thumbStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -67,7 +63,7 @@ object ToggleProps {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
-    if (onToggle != null) __obj.updateDynamic("onToggle")(onToggle)
+    if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction2(onToggle))
     if (rippleStyle != null) __obj.updateDynamic("rippleStyle")(rippleStyle)
     if (style != null) __obj.updateDynamic("style")(style)
     if (thumbStyle != null) __obj.updateDynamic("thumbStyle")(thumbStyle)

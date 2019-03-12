@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-foundation/components/icon", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Icon: reactLib.reactMod.ReactNs.StatelessComponent[reactDashFoundationLib.componentsIconMod.IconProps] = js.native
+  val Icon: reactLib.reactMod.ReactNs.StatelessComponent[IconProps] = js.native
 }
 

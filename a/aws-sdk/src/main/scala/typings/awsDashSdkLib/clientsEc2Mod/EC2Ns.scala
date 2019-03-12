@@ -896,7 +896,7 @@ object EC2Ns extends js.Object {
     /**
       * The bucket in which to store the AMI. You can specify a bucket that you already own or a new bucket that Amazon EC2 creates on your behalf. If you specify a bucket that belongs to someone else, Amazon EC2 returns an error.
       */
-    var Storage: Storage
+    var Storage: awsDashSdkLib.clientsEc2Mod.EC2Ns.Storage
   }
   
   trait BundleInstanceResult extends js.Object {
@@ -1940,7 +1940,7 @@ object EC2Ns extends js.Object {
     /**
       * Information about the client connection logging options. If you enable client connection logging, data about client connections is sent to a Cloudwatch Logs log stream. The following information is logged:   Client connection requests   Client connection results (successful and unsuccessful)   Reasons for unsuccessful client connection requests   Client connection termination time  
       */
-    var ConnectionLogOptions: ConnectionLogOptions
+    var ConnectionLogOptions: awsDashSdkLib.clientsEc2Mod.EC2Ns.ConnectionLogOptions
     /**
       * A brief description of the Client VPN endpoint.
       */
@@ -2262,7 +2262,7 @@ object EC2Ns extends js.Object {
     /**
       * The type of traffic to log.
       */
-    var TrafficType: TrafficType
+    var TrafficType: awsDashSdkLib.clientsEc2Mod.EC2Ns.TrafficType
   }
   
   trait CreateFlowLogsResult extends js.Object {
@@ -2419,7 +2419,7 @@ object EC2Ns extends js.Object {
     /**
       * A name for the launch template.
       */
-    var LaunchTemplateName: LaunchTemplateName
+    var LaunchTemplateName: awsDashSdkLib.clientsEc2Mod.EC2Ns.LaunchTemplateName
     /**
       * A description for the first version of the launch template.
       */
@@ -2533,7 +2533,7 @@ object EC2Ns extends js.Object {
     /**
       * Indicates whether to allow or deny the traffic that matches the rule.
       */
-    var RuleAction: RuleAction
+    var RuleAction: awsDashSdkLib.clientsEc2Mod.EC2Ns.RuleAction
     /**
       * The rule number for the entry (for example, 100). ACL entries are processed in ascending order by rule number. Constraints: Positive integer from 1 to 32766. The range 32767 to 65535 is reserved for internal use.
       */
@@ -3415,7 +3415,7 @@ object EC2Ns extends js.Object {
     /**
       * The ID of the egress-only internet gateway.
       */
-    var EgressOnlyInternetGatewayId: EgressOnlyInternetGatewayId
+    var EgressOnlyInternetGatewayId: awsDashSdkLib.clientsEc2Mod.EC2Ns.EgressOnlyInternetGatewayId
   }
   
   trait DeleteEgressOnlyInternetGatewayResult extends js.Object {
@@ -4159,7 +4159,7 @@ object EC2Ns extends js.Object {
     /**
       * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
       */
-    var MaxResults: MaxResults
+    var MaxResults: awsDashSdkLib.clientsEc2Mod.EC2Ns.MaxResults
     /**
       * The token for the next page of results.
       */
@@ -11031,7 +11031,7 @@ object EC2Ns extends js.Object {
     /**
       * Specify whether to enable or disable auto-placement.
       */
-    var AutoPlacement: AutoPlacement
+    var AutoPlacement: awsDashSdkLib.clientsEc2Mod.EC2Ns.AutoPlacement
     /**
       * The IDs of the Dedicated Hosts to modify.
       */
@@ -11189,7 +11189,7 @@ object EC2Ns extends js.Object {
     /**
       * Information about the Capacity Reservation targeting option.
       */
-    var CapacityReservationSpecification: CapacityReservationSpecification
+    var CapacityReservationSpecification: awsDashSdkLib.clientsEc2Mod.EC2Ns.CapacityReservationSpecification
     /**
       * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
       */
@@ -12907,7 +12907,7 @@ object EC2Ns extends js.Object {
     /**
       * Indicates whether to allow or deny the traffic that matches the rule.
       */
-    var RuleAction: RuleAction
+    var RuleAction: awsDashSdkLib.clientsEc2Mod.EC2Ns.RuleAction
     /**
       * The rule number of the entry to replace.
       */

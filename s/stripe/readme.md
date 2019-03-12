@@ -19,6 +19,7 @@
 //                 Corey Psoinos <https://github.com/cpsoinos>
 //                 Saransh Kataria <https://github.com/saranshkataria>
 //                 Jonas Keisel <https://github.com/0xJoKe>
+//                 Andrew Delianides <https://github.com/delianides>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 ```

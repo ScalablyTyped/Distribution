@@ -32,19 +32,19 @@ object FormApp {
     FeedbackType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FeedbackType */ js.Any,
     ItemType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ItemType */ js.Any,
     PageNavigationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageNavigationType */ js.Any,
-    create: js.Function1[java.lang.String, Form],
-    createCheckboxGridValidation: js.Function0[CheckboxGridValidationBuilder],
-    createCheckboxValidation: js.Function0[CheckboxValidationBuilder],
-    createFeedback: js.Function0[QuizFeedbackBuilder],
-    createGridValidation: js.Function0[GridValidationBuilder],
-    createParagraphTextValidation: js.Function0[ParagraphTextValidationBuilder],
-    createTextValidation: js.Function0[TextValidationBuilder],
-    getActiveForm: js.Function0[Form],
-    getUi: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Ui],
-    openById: js.Function1[java.lang.String, Form],
-    openByUrl: js.Function1[java.lang.String, Form]
+    create: java.lang.String => Form,
+    createCheckboxGridValidation: () => CheckboxGridValidationBuilder,
+    createCheckboxValidation: () => CheckboxValidationBuilder,
+    createFeedback: () => QuizFeedbackBuilder,
+    createGridValidation: () => GridValidationBuilder,
+    createParagraphTextValidation: () => ParagraphTextValidationBuilder,
+    createTextValidation: () => TextValidationBuilder,
+    getActiveForm: () => Form,
+    getUi: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Ui,
+    openById: java.lang.String => Form,
+    openByUrl: java.lang.String => Form
   ): FormApp = {
-    val __obj = js.Dynamic.literal(Alignment = Alignment, DestinationType = DestinationType, FeedbackType = FeedbackType, ItemType = ItemType, PageNavigationType = PageNavigationType, create = create, createCheckboxGridValidation = createCheckboxGridValidation, createCheckboxValidation = createCheckboxValidation, createFeedback = createFeedback, createGridValidation = createGridValidation, createParagraphTextValidation = createParagraphTextValidation, createTextValidation = createTextValidation, getActiveForm = getActiveForm, getUi = getUi, openById = openById, openByUrl = openByUrl)
+    val __obj = js.Dynamic.literal(Alignment = Alignment, DestinationType = DestinationType, FeedbackType = FeedbackType, ItemType = ItemType, PageNavigationType = PageNavigationType, create = js.Any.fromFunction1(create), createCheckboxGridValidation = js.Any.fromFunction0(createCheckboxGridValidation), createCheckboxValidation = js.Any.fromFunction0(createCheckboxValidation), createFeedback = js.Any.fromFunction0(createFeedback), createGridValidation = js.Any.fromFunction0(createGridValidation), createParagraphTextValidation = js.Any.fromFunction0(createParagraphTextValidation), createTextValidation = js.Any.fromFunction0(createTextValidation), getActiveForm = js.Any.fromFunction0(getActiveForm), getUi = js.Any.fromFunction0(getUi), openById = js.Any.fromFunction1(openById), openByUrl = js.Any.fromFunction1(openByUrl))
   
     __obj.asInstanceOf[FormApp]
   }

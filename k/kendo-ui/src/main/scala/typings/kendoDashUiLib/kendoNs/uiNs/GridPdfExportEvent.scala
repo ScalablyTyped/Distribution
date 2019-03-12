@@ -12,12 +12,12 @@ trait GridPdfExportEvent extends GridEvent {
 object GridPdfExportEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Grid,
     promise: kendoDashUiLib.JQueryPromise[_] = null
   ): GridPdfExportEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (promise != null) __obj.updateDynamic("promise")(promise)
     __obj.asInstanceOf[GridPdfExportEvent]
   }

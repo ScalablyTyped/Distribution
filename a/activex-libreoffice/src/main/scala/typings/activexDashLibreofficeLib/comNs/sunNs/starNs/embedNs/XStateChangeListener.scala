@@ -39,24 +39,14 @@ trait XStateChangeListener
 object XStateChangeListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    changingState: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    stateChanged: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    changingState: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Double, scala.Double) => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    stateChanged: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Double, scala.Double) => scala.Unit
   ): XStateChangeListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, changingState = changingState, disposing = disposing, queryInterface = queryInterface, release = release, stateChanged = stateChanged)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), changingState = js.Any.fromFunction3(changingState), disposing = js.Any.fromFunction1(disposing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), stateChanged = js.Any.fromFunction3(stateChanged))
   
     __obj.asInstanceOf[XStateChangeListener]
   }

@@ -33,7 +33,7 @@ trait XPropertyState
     * @returns a sequence of the states of the properties which are specified by their names.  The order of the states is correlating to the order of the given
     * @throws UnknownPropertyException if one property does not exist.
     */
-  def getPropertyStates(aPropertyName: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): activexDashInteropLib.SafeArray[PropertyState]
+  def getPropertyStates(aPropertyName: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): stdLib.SafeArray[PropertyState]
   /**
     * Sets the property to default value.
     *
@@ -48,18 +48,15 @@ trait XPropertyState
 object XPropertyState {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getPropertyDefault: js.Function1[java.lang.String, js.Any],
-    getPropertyState: js.Function1[java.lang.String, PropertyState],
-    getPropertyStates: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashInteropLib.SafeArray[PropertyState]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setPropertyToDefault: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getPropertyDefault: java.lang.String => js.Any,
+    getPropertyState: java.lang.String => PropertyState,
+    getPropertyStates: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => stdLib.SafeArray[PropertyState],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setPropertyToDefault: java.lang.String => scala.Unit
   ): XPropertyState = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getPropertyDefault = getPropertyDefault, getPropertyState = getPropertyState, getPropertyStates = getPropertyStates, queryInterface = queryInterface, release = release, setPropertyToDefault = setPropertyToDefault)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getPropertyDefault = js.Any.fromFunction1(getPropertyDefault), getPropertyState = js.Any.fromFunction1(getPropertyState), getPropertyStates = js.Any.fromFunction1(getPropertyStates), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setPropertyToDefault = js.Any.fromFunction1(setPropertyToDefault))
   
     __obj.asInstanceOf[XPropertyState]
   }

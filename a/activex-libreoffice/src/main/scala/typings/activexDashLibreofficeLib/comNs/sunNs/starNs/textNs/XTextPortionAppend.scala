@@ -35,22 +35,13 @@ trait XTextPortionAppend
 object XTextPortionAppend {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    appendTextPortion: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
-      XTextRange
-    ],
-    insertTextPortion: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
-      XTextRange, 
-      XTextRange
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    appendTextPortion: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues) => XTextRange,
+    insertTextPortion: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, XTextRange) => XTextRange,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTextPortionAppend = {
-    val __obj = js.Dynamic.literal(acquire = acquire, appendTextPortion = appendTextPortion, insertTextPortion = insertTextPortion, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), appendTextPortion = js.Any.fromFunction2(appendTextPortion), insertTextPortion = js.Any.fromFunction3(insertTextPortion), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTextPortionAppend]
   }

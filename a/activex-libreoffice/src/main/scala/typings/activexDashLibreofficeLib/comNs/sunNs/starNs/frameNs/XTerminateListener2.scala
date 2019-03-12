@@ -22,15 +22,15 @@ trait XTerminateListener2 extends XTerminateListener {
 object XTerminateListener2 {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    cancelTermination: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    notifyTermination: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    queryTermination: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    cancelTermination: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    notifyTermination: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    queryTermination: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    release: () => scala.Unit
   ): XTerminateListener2 = {
-    val __obj = js.Dynamic.literal(acquire = acquire, cancelTermination = cancelTermination, disposing = disposing, notifyTermination = notifyTermination, queryInterface = queryInterface, queryTermination = queryTermination, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), cancelTermination = js.Any.fromFunction1(cancelTermination), disposing = js.Any.fromFunction1(disposing), notifyTermination = js.Any.fromFunction1(notifyTermination), queryInterface = js.Any.fromFunction1(queryInterface), queryTermination = js.Any.fromFunction1(queryTermination), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTerminateListener2]
   }

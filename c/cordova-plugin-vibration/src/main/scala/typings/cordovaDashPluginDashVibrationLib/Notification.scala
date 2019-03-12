@@ -32,11 +32,11 @@ trait Notification extends js.Object {
 object Notification {
   @scala.inline
   def apply(
-    cancelVibration: js.Function0[scala.Unit],
-    vibrate: js.Function1[scala.Double, scala.Unit],
-    vibrateWithPattern: js.Function2[js.Array[scala.Double], scala.Double, scala.Unit]
+    cancelVibration: () => scala.Unit,
+    vibrate: scala.Double => scala.Unit,
+    vibrateWithPattern: (js.Array[scala.Double], scala.Double) => scala.Unit
   ): Notification = {
-    val __obj = js.Dynamic.literal(cancelVibration = cancelVibration, vibrate = vibrate, vibrateWithPattern = vibrateWithPattern)
+    val __obj = js.Dynamic.literal(cancelVibration = js.Any.fromFunction0(cancelVibration), vibrate = js.Any.fromFunction1(vibrate), vibrateWithPattern = js.Any.fromFunction2(vibrateWithPattern))
   
     __obj.asInstanceOf[Notification]
   }

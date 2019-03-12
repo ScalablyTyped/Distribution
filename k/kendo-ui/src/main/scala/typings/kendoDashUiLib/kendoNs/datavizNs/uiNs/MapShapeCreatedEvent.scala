@@ -14,14 +14,14 @@ trait MapShapeCreatedEvent extends MapEvent {
 object MapShapeCreatedEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Map,
     layer: kendoDashUiLib.kendoNs.datavizNs.mapNs.layerNs.Shape = null,
     originalEvent: js.Any = null,
     shape: kendoDashUiLib.kendoNs.drawingNs.Element = null
   ): MapShapeCreatedEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (layer != null) __obj.updateDynamic("layer")(layer)
     if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
     if (shape != null) __obj.updateDynamic("shape")(shape)

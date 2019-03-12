@@ -9,18 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val EOL: js.Array[java.lang.String] = js.native
-  def combineClientFeatures[O, T](
-    one: vscodeDashLanguageserverLib.libMainMod.ClientFeature[O],
-    two: vscodeDashLanguageserverLib.libMainMod.ClientFeature[T]
-  ): vscodeDashLanguageserverLib.libMainMod.ClientFeature[O with T] = js.native
-  def combineConsoleFeatures[O, T](
-    one: vscodeDashLanguageserverLib.libMainMod.ConsoleFeature[O],
-    two: vscodeDashLanguageserverLib.libMainMod.ConsoleFeature[T]
-  ): vscodeDashLanguageserverLib.libMainMod.ConsoleFeature[O with T] = js.native
+  def combineClientFeatures[O, T](one: ClientFeature[O], two: ClientFeature[T]): ClientFeature[O with T] = js.native
+  def combineConsoleFeatures[O, T](one: ConsoleFeature[O], two: ConsoleFeature[T]): ConsoleFeature[O with T] = js.native
   def combineFeatures[OConsole, OTracer, OTelemetry, OClient, OWindow, OWorkspace, TConsole, TTracer, TTelemetry, TClient, TWindow, TWorkspace](
-    one: vscodeDashLanguageserverLib.libMainMod.Features[OConsole, OTracer, OTelemetry, OClient, OWindow, OWorkspace],
-    two: vscodeDashLanguageserverLib.libMainMod.Features[TConsole, TTracer, TTelemetry, TClient, TWindow, TWorkspace]
-  ): vscodeDashLanguageserverLib.libMainMod.Features[
+    one: Features[OConsole, OTracer, OTelemetry, OClient, OWindow, OWorkspace],
+    two: Features[TConsole, TTracer, TTelemetry, TClient, TWindow, TWorkspace]
+  ): Features[
     OConsole with TConsole, 
     OTracer with TTracer, 
     OTelemetry with TTelemetry, 
@@ -28,72 +22,58 @@ object ^ extends js.Object {
     OWindow with TWindow, 
     OWorkspace with TWorkspace
   ] = js.native
-  def combineTelemetryFeatures[O, T](
-    one: vscodeDashLanguageserverLib.libMainMod.TelemetryFeature[O],
-    two: vscodeDashLanguageserverLib.libMainMod.TelemetryFeature[T]
-  ): vscodeDashLanguageserverLib.libMainMod.TelemetryFeature[O with T] = js.native
-  def combineTracerFeatures[O, T](
-    one: vscodeDashLanguageserverLib.libMainMod.TracerFeature[O],
-    two: vscodeDashLanguageserverLib.libMainMod.TracerFeature[T]
-  ): vscodeDashLanguageserverLib.libMainMod.TracerFeature[O with T] = js.native
-  def combineWindowFeatures[O, T](
-    one: vscodeDashLanguageserverLib.libMainMod.WindowFeature[O],
-    two: vscodeDashLanguageserverLib.libMainMod.WindowFeature[T]
-  ): vscodeDashLanguageserverLib.libMainMod.WindowFeature[O with T] = js.native
-  def combineWorkspaceFeatures[O, T](
-    one: vscodeDashLanguageserverLib.libMainMod.WorkspaceFeature[O],
-    two: vscodeDashLanguageserverLib.libMainMod.WorkspaceFeature[T]
-  ): vscodeDashLanguageserverLib.libMainMod.WorkspaceFeature[O with T] = js.native
+  def combineTelemetryFeatures[O, T](one: TelemetryFeature[O], two: TelemetryFeature[T]): TelemetryFeature[O with T] = js.native
+  def combineTracerFeatures[O, T](one: TracerFeature[O], two: TracerFeature[T]): TracerFeature[O with T] = js.native
+  def combineWindowFeatures[O, T](one: WindowFeature[O], two: WindowFeature[T]): WindowFeature[O with T] = js.native
+  def combineWorkspaceFeatures[O, T](one: WorkspaceFeature[O], two: WorkspaceFeature[T]): WorkspaceFeature[O with T] = js.native
   def createClientPipeTransport(pipeName: java.lang.String): vscodeDashJsonrpcLib.Thenable[vscodeDashJsonrpcLib.libPipeSupportMod.PipeTransport] = js.native
   def createClientPipeTransport(pipeName: java.lang.String, encoding: java.lang.String): vscodeDashJsonrpcLib.Thenable[vscodeDashJsonrpcLib.libPipeSupportMod.PipeTransport] = js.native
   def createClientSocketTransport(port: scala.Double): vscodeDashJsonrpcLib.Thenable[vscodeDashJsonrpcLib.libSocketSupportMod.SocketTransport] = js.native
   def createClientSocketTransport(port: scala.Double, encoding: java.lang.String): vscodeDashJsonrpcLib.Thenable[vscodeDashJsonrpcLib.libSocketSupportMod.SocketTransport] = js.native
-  def createConnection(): vscodeDashLanguageserverLib.libMainMod.IConnection = js.native
-  def createConnection(inputStream: nodeLib.NodeJSNs.ReadableStream, outputStream: nodeLib.NodeJSNs.WritableStream): vscodeDashLanguageserverLib.libMainMod.IConnection = js.native
+  def createConnection(): IConnection = js.native
+  def createConnection(inputStream: nodeLib.NodeJSNs.ReadableStream, outputStream: nodeLib.NodeJSNs.WritableStream): IConnection = js.native
   def createConnection(
     inputStream: nodeLib.NodeJSNs.ReadableStream,
     outputStream: nodeLib.NodeJSNs.WritableStream,
     strategy: vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.ConnectionStrategy
-  ): vscodeDashLanguageserverLib.libMainMod.IConnection = js.native
+  ): IConnection = js.native
   def createConnection(
     reader: vscodeDashJsonrpcLib.libMessageReaderMod.MessageReader,
     writer: vscodeDashJsonrpcLib.libMessageWriterMod.MessageWriter
-  ): vscodeDashLanguageserverLib.libMainMod.IConnection = js.native
+  ): IConnection = js.native
   def createConnection(
     reader: vscodeDashJsonrpcLib.libMessageReaderMod.MessageReader,
     writer: vscodeDashJsonrpcLib.libMessageWriterMod.MessageWriter,
     strategy: vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.ConnectionStrategy
-  ): vscodeDashLanguageserverLib.libMainMod.IConnection = js.native
-  def createConnection(strategy: vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.ConnectionStrategy): vscodeDashLanguageserverLib.libMainMod.IConnection = js.native
+  ): IConnection = js.native
+  def createConnection(strategy: vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.ConnectionStrategy): IConnection = js.native
+  def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace](factories: Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace]): Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = js.native
   def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace](
-    factories: vscodeDashLanguageserverLib.libMainMod.Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace]
-  ): vscodeDashLanguageserverLib.libMainMod.Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = js.native
-  def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace](
-    factories: vscodeDashLanguageserverLib.libMainMod.Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace],
+    factories: Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace],
     inputStream: nodeLib.NodeJSNs.ReadableStream,
     outputStream: nodeLib.NodeJSNs.WritableStream
-  ): vscodeDashLanguageserverLib.libMainMod.Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = js.native
+  ): Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = js.native
   def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace](
-    factories: vscodeDashLanguageserverLib.libMainMod.Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace],
+    factories: Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace],
     inputStream: nodeLib.NodeJSNs.ReadableStream,
     outputStream: nodeLib.NodeJSNs.WritableStream,
     strategy: vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.ConnectionStrategy
-  ): vscodeDashLanguageserverLib.libMainMod.Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = js.native
+  ): Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = js.native
   def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace](
-    factories: vscodeDashLanguageserverLib.libMainMod.Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace],
+    factories: Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace],
     reader: vscodeDashJsonrpcLib.libMessageReaderMod.MessageReader,
     writer: vscodeDashJsonrpcLib.libMessageWriterMod.MessageWriter
-  ): vscodeDashLanguageserverLib.libMainMod.Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = js.native
+  ): Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = js.native
   def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace](
-    factories: vscodeDashLanguageserverLib.libMainMod.Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace],
+    factories: Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace],
     reader: vscodeDashJsonrpcLib.libMessageReaderMod.MessageReader,
     writer: vscodeDashJsonrpcLib.libMessageWriterMod.MessageWriter,
     strategy: vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.ConnectionStrategy
-  ): vscodeDashLanguageserverLib.libMainMod.Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = js.native
+  ): Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = js.native
   def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace](
-    factories: vscodeDashLanguageserverLib.libMainMod.Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace],
+    factories: Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace],
     strategy: vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.ConnectionStrategy
-  ): vscodeDashLanguageserverLib.libMainMod.Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = js.native
+  ): Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = js.native
   def createProtocolConnection(
     reader: vscodeDashJsonrpcLib.libMessageReaderMod.MessageReader,
     writer: vscodeDashJsonrpcLib.libMessageWriterMod.MessageWriter,

@@ -68,12 +68,12 @@ trait ISearchService extends js.Object {
 object ISearchService {
   @scala.inline
   def apply(
-    searchAll: js.Function1[ISearchArgs, angularLib.angularMod.angularNs.IPromise[_]],
-    searchContent: js.Function1[ISearchArgs, angularLib.angularMod.angularNs.IPromise[js.Array[ISearchContent]]],
-    searchMedia: js.Function1[ISearchArgs, angularLib.angularMod.angularNs.IPromise[js.Array[ISearchMedia]]],
-    searchMembers: js.Function1[ISearchArgs, angularLib.angularMod.angularNs.IPromise[js.Array[ISearchMember]]]
+    searchAll: ISearchArgs => angularLib.angularMod.angularNs.IPromise[_],
+    searchContent: ISearchArgs => angularLib.angularMod.angularNs.IPromise[js.Array[ISearchContent]],
+    searchMedia: ISearchArgs => angularLib.angularMod.angularNs.IPromise[js.Array[ISearchMedia]],
+    searchMembers: ISearchArgs => angularLib.angularMod.angularNs.IPromise[js.Array[ISearchMember]]
   ): ISearchService = {
-    val __obj = js.Dynamic.literal(searchAll = searchAll, searchContent = searchContent, searchMedia = searchMedia, searchMembers = searchMembers)
+    val __obj = js.Dynamic.literal(searchAll = js.Any.fromFunction1(searchAll), searchContent = js.Any.fromFunction1(searchContent), searchMedia = js.Any.fromFunction1(searchMedia), searchMembers = js.Any.fromFunction1(searchMembers))
   
     __obj.asInstanceOf[ISearchService]
   }

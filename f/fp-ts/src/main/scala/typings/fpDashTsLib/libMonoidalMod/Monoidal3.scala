@@ -15,19 +15,11 @@ object Monoidal3 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS3 */](
     URI: F,
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
-    ],
-    mult: js.Function2[
-      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Tuple2[js.Any, js.Any]]
-    ],
-    unit: js.Function0[fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, scala.Unit]]
+    map: (fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any],
+    mult: (fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Tuple2[js.Any, js.Any]],
+    unit: () => fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, scala.Unit]
   ): Monoidal3[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], map = map, mult = mult, unit = unit)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], map = js.Any.fromFunction2(map), mult = js.Any.fromFunction2(mult), unit = js.Any.fromFunction0(unit))
   
     __obj.asInstanceOf[Monoidal3[F]]
   }

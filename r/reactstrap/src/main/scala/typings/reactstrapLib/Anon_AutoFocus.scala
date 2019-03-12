@@ -50,13 +50,13 @@ object Anon_AutoFocus {
     labelledBy: java.lang.String = null,
     modalClassName: java.lang.String = null,
     modalTransition: reactstrapLib.libFadeMod.FadeProps[js.Object] = null,
-    onClosed: js.Function0[scala.Unit] = null,
-    onEnter: js.Function0[scala.Unit] = null,
-    onExit: js.Function0[scala.Unit] = null,
-    onOpened: js.Function0[scala.Unit] = null,
+    onClosed: () => scala.Unit = null,
+    onEnter: () => scala.Unit = null,
+    onExit: () => scala.Unit = null,
+    onOpened: () => scala.Unit = null,
     role: java.lang.String = null,
     size: java.lang.String = null,
-    toggle: js.Function0[scala.Unit] = null,
+    toggle: () => scala.Unit = null,
     wrapClassName: java.lang.String = null,
     zIndex: scala.Double | java.lang.String = null
   ): Anon_AutoFocus = {
@@ -76,13 +76,13 @@ object Anon_AutoFocus {
     if (labelledBy != null) __obj.updateDynamic("labelledBy")(labelledBy)
     if (modalClassName != null) __obj.updateDynamic("modalClassName")(modalClassName)
     if (modalTransition != null) __obj.updateDynamic("modalTransition")(modalTransition)
-    if (onClosed != null) __obj.updateDynamic("onClosed")(onClosed)
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
-    if (onExit != null) __obj.updateDynamic("onExit")(onExit)
-    if (onOpened != null) __obj.updateDynamic("onOpened")(onOpened)
+    if (onClosed != null) __obj.updateDynamic("onClosed")(js.Any.fromFunction0(onClosed))
+    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction0(onEnter))
+    if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction0(onExit))
+    if (onOpened != null) __obj.updateDynamic("onOpened")(js.Any.fromFunction0(onOpened))
     if (role != null) __obj.updateDynamic("role")(role)
     if (size != null) __obj.updateDynamic("size")(size)
-    if (toggle != null) __obj.updateDynamic("toggle")(toggle)
+    if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction0(toggle))
     if (wrapClassName != null) __obj.updateDynamic("wrapClassName")(wrapClassName)
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoFocus]

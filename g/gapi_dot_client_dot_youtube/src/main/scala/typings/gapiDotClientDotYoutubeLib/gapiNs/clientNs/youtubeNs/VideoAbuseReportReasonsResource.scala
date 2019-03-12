@@ -13,12 +13,9 @@ trait VideoAbuseReportReasonsResource extends js.Object {
 object VideoAbuseReportReasonsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFieldsHlKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[VideoAbuseReportReasonListResponse]
-    ]
+    list: gapiDotClientDotYoutubeLib.Anon_AltFieldsHlKey => gapiDotClientLib.gapiNs.clientNs.Request[VideoAbuseReportReasonListResponse]
   ): VideoAbuseReportReasonsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[VideoAbuseReportReasonsResource]
   }

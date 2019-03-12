@@ -15,12 +15,12 @@ trait PolicyMappings extends js.Object {
 object PolicyMappings {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     mappings: js.Array[pkijsLib.srcPolicyMappingMod.default],
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): PolicyMappings = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, mappings = mappings, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), mappings = mappings, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[PolicyMappings]
   }

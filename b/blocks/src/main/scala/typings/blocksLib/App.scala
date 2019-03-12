@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation._
 /////////////////////////////////////////
 @js.native
 trait App extends Extendable[App] {
-  def Collection(model: Model, prototype: CollectionPrototype): Collection = js.native
+  def Collection(model: Model, prototype: CollectionPrototype): blocksLib.Collection = js.native
   /**
   	 * Creates a new Collection
   	 * 
   	 * @param prototype The Collection object properties that will be created.
   	 */
-  def Collection(prototype: CollectionPrototype): Collection = js.native
+  def Collection(prototype: CollectionPrototype): blocksLib.Collection = js.native
   /**
   	 * Creates a new Model
   	 * 
   	 * @param prototype The Model object properties that will be created
   	 */
-  def Model(prototype: ModelPrototype): Model = js.native
+  def Model(prototype: ModelPrototype): blocksLib.Model = js.native
   /**
   	 * Creates an application property for a Model.
   	 */

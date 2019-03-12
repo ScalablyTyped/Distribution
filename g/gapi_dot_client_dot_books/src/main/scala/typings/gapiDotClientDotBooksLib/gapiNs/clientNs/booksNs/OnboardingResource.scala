@@ -15,16 +15,10 @@ trait OnboardingResource extends js.Object {
 object OnboardingResource {
   @scala.inline
   def apply(
-    listCategories: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltFieldsKeyLocaleOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Category]
-    ],
-    listCategoryVolumes: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltCategoryId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Volume2]
-    ]
+    listCategories: gapiDotClientDotBooksLib.Anon_AltFieldsKeyLocaleOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Category],
+    listCategoryVolumes: gapiDotClientDotBooksLib.Anon_AltCategoryId => gapiDotClientLib.gapiNs.clientNs.Request[Volume2]
   ): OnboardingResource = {
-    val __obj = js.Dynamic.literal(listCategories = listCategories, listCategoryVolumes = listCategoryVolumes)
+    val __obj = js.Dynamic.literal(listCategories = js.Any.fromFunction1(listCategories), listCategoryVolumes = js.Any.fromFunction1(listCategoryVolumes))
   
     __obj.asInstanceOf[OnboardingResource]
   }

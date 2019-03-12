@@ -43,27 +43,27 @@ object IFilter {
     alias: extjsLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
     anyMatch: js.UndefOr[scala.Boolean] = js.undefined,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
     config: js.Any = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     exactMatch: js.UndefOr[scala.Boolean] = js.undefined,
     extend: java.lang.String = null,
     filterFn: js.Any = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
     id: java.lang.String = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IFilter] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IFilter = null,
     mixins: js.Any = null,
     operator: java.lang.String = null,
     property: java.lang.String = null,
     requires: extjsLib.ExtNs.Array = null,
     root: java.lang.String = null,
     self: extjsLib.ExtNs.IClass = null,
-    setFilterFn: js.Function1[/* filterFn */ js.UndefOr[js.Any], scala.Unit] = null,
-    setValue: js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit] = null,
+    setFilterFn: /* filterFn */ js.UndefOr[js.Any] => scala.Unit = null,
+    setValue: /* value */ js.UndefOr[js.Any] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     uses: extjsLib.ExtNs.Array = null,
@@ -73,27 +73,27 @@ object IFilter {
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
     if (!js.isUndefined(anyMatch)) __obj.updateDynamic("anyMatch")(anyMatch)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
     if (config != null) __obj.updateDynamic("config")(config)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(exactMatch)) __obj.updateDynamic("exactMatch")(exactMatch)
     if (extend != null) __obj.updateDynamic("extend")(extend)
     if (filterFn != null) __obj.updateDynamic("filterFn")(filterFn)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (id != null) __obj.updateDynamic("id")(id)
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (operator != null) __obj.updateDynamic("operator")(operator)
     if (property != null) __obj.updateDynamic("property")(property)
     if (requires != null) __obj.updateDynamic("requires")(requires)
     if (root != null) __obj.updateDynamic("root")(root)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setFilterFn != null) __obj.updateDynamic("setFilterFn")(setFilterFn)
-    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
+    if (setFilterFn != null) __obj.updateDynamic("setFilterFn")(js.Any.fromFunction1(setFilterFn))
+    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (uses != null) __obj.updateDynamic("uses")(uses)

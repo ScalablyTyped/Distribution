@@ -15,7 +15,7 @@ class Form ()
   @JSName("on")
   def on_error(
     event: multipartyLib.multipartyLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_field(
@@ -41,7 +41,7 @@ class Form ()
   def parse(request: nodeLib.httpMod.IncomingMessage): scala.Unit = js.native
   def parse(
     request: nodeLib.httpMod.IncomingMessage,
-    callback: js.Function3[/* error */ nodeLib.Error, /* fields */ js.Any, /* files */ js.Any, _]
+    callback: js.Function3[/* error */ stdLib.Error, /* fields */ js.Any, /* files */ js.Any, _]
   ): scala.Unit = js.native
 }
 

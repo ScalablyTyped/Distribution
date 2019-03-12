@@ -14,14 +14,11 @@ trait Enum extends js.Object {
 object Enum {
   @scala.inline
   def apply(
-    toDescriptor: js.Function1[
-      java.lang.String, 
-      (protobufjsLib.protobufjsMod.Message[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify descriptor.IEnumDescriptorProto */ _
-      ]) with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify descriptor.IEnumDescriptorProto */ js.Any)
-    ]
+    toDescriptor: java.lang.String => (protobufjsLib.protobufjsMod.Message[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify descriptor.IEnumDescriptorProto */ _
+    ]) with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify descriptor.IEnumDescriptorProto */ js.Any)
   ): Enum = {
-    val __obj = js.Dynamic.literal(toDescriptor = toDescriptor)
+    val __obj = js.Dynamic.literal(toDescriptor = js.Any.fromFunction1(toDescriptor))
   
     __obj.asInstanceOf[Enum]
   }

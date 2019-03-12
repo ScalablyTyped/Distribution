@@ -28,8 +28,8 @@ trait XDocumentPropertiesSupplier extends js.Object {
 
 object XDocumentPropertiesSupplier {
   @scala.inline
-  def apply(DocumentProperties: XDocumentProperties, getDocumentProperties: js.Function0[XDocumentProperties]): XDocumentPropertiesSupplier = {
-    val __obj = js.Dynamic.literal(DocumentProperties = DocumentProperties, getDocumentProperties = getDocumentProperties)
+  def apply(DocumentProperties: XDocumentProperties, getDocumentProperties: () => XDocumentProperties): XDocumentPropertiesSupplier = {
+    val __obj = js.Dynamic.literal(DocumentProperties = DocumentProperties, getDocumentProperties = js.Any.fromFunction0(getDocumentProperties))
   
     __obj.asInstanceOf[XDocumentPropertiesSupplier]
   }

@@ -14,11 +14,11 @@ trait IValidIconStrategy extends js.Object {
 object IValidIconStrategy {
   @scala.inline
   def apply(
-    getContainer: js.Function1[angularLib.angularMod.angularNs.IAugmentedJQueryStatic, scala.Unit],
+    getContainer: angularLib.angularMod.angularNs.IAugmentedJQueryStatic => scala.Unit,
     invalidIcon: java.lang.String,
     validIcon: java.lang.String
   ): IValidIconStrategy = {
-    val __obj = js.Dynamic.literal(getContainer = getContainer, invalidIcon = invalidIcon, validIcon = validIcon)
+    val __obj = js.Dynamic.literal(getContainer = js.Any.fromFunction1(getContainer), invalidIcon = invalidIcon, validIcon = validIcon)
   
     __obj.asInstanceOf[IValidIconStrategy]
   }

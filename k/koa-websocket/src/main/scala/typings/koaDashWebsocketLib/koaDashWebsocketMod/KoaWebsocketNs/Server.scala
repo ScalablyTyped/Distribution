@@ -18,13 +18,13 @@ object Server {
   @scala.inline
   def apply(
     app: App,
-    listen: js.Function1[wsLib.wsMod.WebSocketNs.ServerOptions, wsLib.wsMod.Server],
+    listen: wsLib.wsMod.WebSocketNs.ServerOptions => wsLib.wsMod.Server,
     middleware: js.Array[Middleware],
-    onConnection: js.Function2[wsLib.wsMod.namespaced, nodeLib.httpMod.IncomingMessage, scala.Unit],
-    use: js.Function1[Middleware, Server],
+    onConnection: (wsLib.wsMod.namespaced, nodeLib.httpMod.IncomingMessage) => scala.Unit,
+    use: Middleware => Server,
     server: wsLib.wsMod.Server = null
   ): Server = {
-    val __obj = js.Dynamic.literal(app = app, listen = listen, middleware = middleware, onConnection = onConnection, use = use)
+    val __obj = js.Dynamic.literal(app = app, listen = js.Any.fromFunction1(listen), middleware = middleware, onConnection = js.Any.fromFunction2(onConnection), use = js.Any.fromFunction1(use))
     if (server != null) __obj.updateDynamic("server")(server)
     __obj.asInstanceOf[Server]
   }

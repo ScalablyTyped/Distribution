@@ -27,15 +27,15 @@ trait SinonArrayMatcher extends SinonMatcher {
 object SinonArrayMatcher {
   @scala.inline
   def apply(
-    and: js.Function1[SinonMatcher, SinonMatcher],
-    contains: js.Function1[js.Array[_], SinonMatcher],
-    deepEquals: js.Function1[js.Array[_], SinonMatcher],
-    endsWith: js.Function1[js.Array[_], SinonMatcher],
-    or: js.Function1[SinonMatcher, SinonMatcher],
-    startsWith: js.Function1[js.Array[_], SinonMatcher],
-    test: js.Function1[js.Any, scala.Boolean]
+    and: SinonMatcher => SinonMatcher,
+    contains: js.Array[_] => SinonMatcher,
+    deepEquals: js.Array[_] => SinonMatcher,
+    endsWith: js.Array[_] => SinonMatcher,
+    or: SinonMatcher => SinonMatcher,
+    startsWith: js.Array[_] => SinonMatcher,
+    test: js.Any => scala.Boolean
   ): SinonArrayMatcher = {
-    val __obj = js.Dynamic.literal(and = and, contains = contains, deepEquals = deepEquals, endsWith = endsWith, or = or, startsWith = startsWith, test = test)
+    val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), contains = js.Any.fromFunction1(contains), deepEquals = js.Any.fromFunction1(deepEquals), endsWith = js.Any.fromFunction1(endsWith), or = js.Any.fromFunction1(or), startsWith = js.Any.fromFunction1(startsWith), test = js.Any.fromFunction1(test))
   
     __obj.asInstanceOf[SinonArrayMatcher]
   }

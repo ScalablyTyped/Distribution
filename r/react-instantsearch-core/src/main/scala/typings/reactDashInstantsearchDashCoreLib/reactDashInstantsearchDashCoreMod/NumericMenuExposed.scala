@@ -17,3 +17,20 @@ trait NumericMenuExposed extends js.Object {
   var transformItems: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
 }
 
+object NumericMenuExposed {
+  @scala.inline
+  def apply(
+    attribute: java.lang.String,
+    items: js.Array[reactDashInstantsearchDashCoreLib.Anon_End],
+    defaultRefinement: java.lang.String = null,
+    id: java.lang.String = null,
+    transformItems: /* repeated */ js.Any => _ = null
+  ): NumericMenuExposed = {
+    val __obj = js.Dynamic.literal(attribute = attribute, items = items)
+    if (defaultRefinement != null) __obj.updateDynamic("defaultRefinement")(defaultRefinement)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (transformItems != null) __obj.updateDynamic("transformItems")(js.Any.fromFunction1(transformItems))
+    __obj.asInstanceOf[NumericMenuExposed]
+  }
+}
+

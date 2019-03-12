@@ -35,13 +35,13 @@ trait Quad extends BaseQuad {
 object Quad {
   @scala.inline
   def apply(
-    equals: js.Function1[BaseQuad, scala.Boolean],
+    equals: BaseQuad => scala.Boolean,
     graph: Quad_Graph,
     `object`: Quad_Object,
     predicate: Quad_Predicate,
     subject: Quad_Subject
   ): Quad = {
-    val __obj = js.Dynamic.literal(equals = equals, graph = graph, predicate = predicate, subject = subject)
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), graph = graph, predicate = predicate, subject = subject)
     __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[Quad]
   }

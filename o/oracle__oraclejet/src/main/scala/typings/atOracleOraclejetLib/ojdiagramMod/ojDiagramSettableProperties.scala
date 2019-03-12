@@ -66,7 +66,7 @@ object ojDiagramSettableProperties {
     highlightMatch: atOracleOraclejetLib.atOracleOraclejetLibStrings.any | atOracleOraclejetLib.atOracleOraclejetLibStrings.all,
     highlightedCategories: js.Array[java.lang.String],
     hoverBehavior: atOracleOraclejetLib.atOracleOraclejetLibStrings.dim | atOracleOraclejetLib.atOracleOraclejetLibStrings.none,
-    layout: js.Function1[DvtDiagramLayoutContext, scala.Unit],
+    layout: DvtDiagramLayoutContext => scala.Unit,
     linkHighlightMode: atOracleOraclejetLib.atOracleOraclejetLibStrings.linkAndNodes | atOracleOraclejetLib.atOracleOraclejetLibStrings.link,
     maxZoom: scala.Double,
     minZoom: scala.Double,
@@ -75,10 +75,7 @@ object ojDiagramSettableProperties {
     panDirection: atOracleOraclejetLib.atOracleOraclejetLibStrings.x | atOracleOraclejetLib.atOracleOraclejetLibStrings.y | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
     panning: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.none,
     promotedLinkBehavior: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.full | atOracleOraclejetLib.atOracleOraclejetLibStrings.`lazy`,
-    renderer: js.Function1[
-      atOracleOraclejetLib.ojdiagramMod.ojDiagramNs.RendererContext[K1, D1], 
-      atOracleOraclejetLib.Anon_InsertSVGElement
-    ],
+    renderer: atOracleOraclejetLib.ojdiagramMod.ojDiagramNs.RendererContext[K1, D1] => atOracleOraclejetLib.Anon_InsertSVGElement,
     selection: js.Array[K1 | K2],
     selectionMode: atOracleOraclejetLib.atOracleOraclejetLibStrings.single | atOracleOraclejetLib.atOracleOraclejetLibStrings.multiple | atOracleOraclejetLib.atOracleOraclejetLibStrings.none,
     styleDefaults: atOracleOraclejetLib.Anon_AnimationDuration,
@@ -87,32 +84,20 @@ object ojDiagramSettableProperties {
     trackResize: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off,
     translations: atOracleOraclejetLib.Anon_ComponentNameLabelAndValueLabelClearSelection,
     zooming: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.none,
-    focusRenderer: js.Function1[
-      /* context */ atOracleOraclejetLib.ojdiagramMod.ojDiagramNs.RendererContext[K1, D1], 
-      atOracleOraclejetLib.Anon_InsertSVGElement | scala.Unit
-    ] = null,
-    hoverRenderer: js.Function1[
-      /* context */ atOracleOraclejetLib.ojdiagramMod.ojDiagramNs.RendererContext[K1, D1], 
-      atOracleOraclejetLib.Anon_InsertSVGElement | scala.Unit
-    ] = null,
+    focusRenderer: /* context */ atOracleOraclejetLib.ojdiagramMod.ojDiagramNs.RendererContext[K1, D1] => atOracleOraclejetLib.Anon_InsertSVGElement | scala.Unit = null,
+    hoverRenderer: /* context */ atOracleOraclejetLib.ojdiagramMod.ojDiagramNs.RendererContext[K1, D1] => atOracleOraclejetLib.Anon_InsertSVGElement | scala.Unit = null,
     linkData: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K2, D2] = null,
     nodeData: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K1, D1] = null,
-    selectionRenderer: js.Function1[
-      /* context */ atOracleOraclejetLib.ojdiagramMod.ojDiagramNs.RendererContext[K1, D1], 
-      atOracleOraclejetLib.Anon_InsertSVGElement | scala.Unit
-    ] = null,
-    zoomRenderer: js.Function1[
-      /* context */ atOracleOraclejetLib.ojdiagramMod.ojDiagramNs.RendererContext[K1, D1], 
-      atOracleOraclejetLib.Anon_InsertSVGElement | scala.Unit
-    ] = null
+    selectionRenderer: /* context */ atOracleOraclejetLib.ojdiagramMod.ojDiagramNs.RendererContext[K1, D1] => atOracleOraclejetLib.Anon_InsertSVGElement | scala.Unit = null,
+    zoomRenderer: /* context */ atOracleOraclejetLib.ojdiagramMod.ojDiagramNs.RendererContext[K1, D1] => atOracleOraclejetLib.Anon_InsertSVGElement | scala.Unit = null
   ): ojDiagramSettableProperties[K1, K2, D1, D2] = {
-    val __obj = js.Dynamic.literal(animationOnDataChange = animationOnDataChange.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], as = as, dnd = dnd, expanded = expanded, hiddenCategories = hiddenCategories, highlightMatch = highlightMatch.asInstanceOf[js.Any], highlightedCategories = highlightedCategories, hoverBehavior = hoverBehavior.asInstanceOf[js.Any], layout = layout, linkHighlightMode = linkHighlightMode.asInstanceOf[js.Any], maxZoom = maxZoom, minZoom = minZoom, nodeHighlightMode = nodeHighlightMode.asInstanceOf[js.Any], overview = overview, panDirection = panDirection.asInstanceOf[js.Any], panning = panning.asInstanceOf[js.Any], promotedLinkBehavior = promotedLinkBehavior.asInstanceOf[js.Any], renderer = renderer, selection = selection, selectionMode = selectionMode.asInstanceOf[js.Any], styleDefaults = styleDefaults, tooltip = tooltip, touchResponse = touchResponse.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations, zooming = zooming.asInstanceOf[js.Any])
-    if (focusRenderer != null) __obj.updateDynamic("focusRenderer")(focusRenderer)
-    if (hoverRenderer != null) __obj.updateDynamic("hoverRenderer")(hoverRenderer)
+    val __obj = js.Dynamic.literal(animationOnDataChange = animationOnDataChange.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], as = as, dnd = dnd, expanded = expanded, hiddenCategories = hiddenCategories, highlightMatch = highlightMatch.asInstanceOf[js.Any], highlightedCategories = highlightedCategories, hoverBehavior = hoverBehavior.asInstanceOf[js.Any], layout = js.Any.fromFunction1(layout), linkHighlightMode = linkHighlightMode.asInstanceOf[js.Any], maxZoom = maxZoom, minZoom = minZoom, nodeHighlightMode = nodeHighlightMode.asInstanceOf[js.Any], overview = overview, panDirection = panDirection.asInstanceOf[js.Any], panning = panning.asInstanceOf[js.Any], promotedLinkBehavior = promotedLinkBehavior.asInstanceOf[js.Any], renderer = js.Any.fromFunction1(renderer), selection = selection, selectionMode = selectionMode.asInstanceOf[js.Any], styleDefaults = styleDefaults, tooltip = tooltip, touchResponse = touchResponse.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations, zooming = zooming.asInstanceOf[js.Any])
+    if (focusRenderer != null) __obj.updateDynamic("focusRenderer")(js.Any.fromFunction1(focusRenderer))
+    if (hoverRenderer != null) __obj.updateDynamic("hoverRenderer")(js.Any.fromFunction1(hoverRenderer))
     if (linkData != null) __obj.updateDynamic("linkData")(linkData)
     if (nodeData != null) __obj.updateDynamic("nodeData")(nodeData)
-    if (selectionRenderer != null) __obj.updateDynamic("selectionRenderer")(selectionRenderer)
-    if (zoomRenderer != null) __obj.updateDynamic("zoomRenderer")(zoomRenderer)
+    if (selectionRenderer != null) __obj.updateDynamic("selectionRenderer")(js.Any.fromFunction1(selectionRenderer))
+    if (zoomRenderer != null) __obj.updateDynamic("zoomRenderer")(js.Any.fromFunction1(zoomRenderer))
     __obj.asInstanceOf[ojDiagramSettableProperties[K1, K2, D1, D2]]
   }
 }

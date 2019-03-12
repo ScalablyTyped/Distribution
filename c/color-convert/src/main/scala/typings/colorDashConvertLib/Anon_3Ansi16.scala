@@ -17,14 +17,14 @@ trait Anon_3Ansi16 extends js.Object {
 object Anon_3Ansi16 {
   @scala.inline
   def apply(
-    ansi16: js.Function1[colorDashConvertLib.conversionsMod.HSV, colorDashConvertLib.conversionsMod.ANSI16],
+    ansi16: colorDashConvertLib.conversionsMod.HSV => colorDashConvertLib.conversionsMod.ANSI16,
     channels: colorDashConvertLib.colorDashConvertLibNumbers.`3`,
-    hcg: js.Function1[colorDashConvertLib.conversionsMod.HSV, colorDashConvertLib.conversionsMod.HCG],
-    hsl: js.Function1[colorDashConvertLib.conversionsMod.HSV, colorDashConvertLib.conversionsMod.HSL],
+    hcg: colorDashConvertLib.conversionsMod.HSV => colorDashConvertLib.conversionsMod.HCG,
+    hsl: colorDashConvertLib.conversionsMod.HSV => colorDashConvertLib.conversionsMod.HSL,
     labels: colorDashConvertLib.colorDashConvertLibStrings.hsv,
-    rgb: js.Function1[colorDashConvertLib.conversionsMod.HSV, colorDashConvertLib.conversionsMod.RGB]
+    rgb: colorDashConvertLib.conversionsMod.HSV => colorDashConvertLib.conversionsMod.RGB
   ): Anon_3Ansi16 = {
-    val __obj = js.Dynamic.literal(ansi16 = ansi16, channels = channels, hcg = hcg, hsl = hsl, labels = labels, rgb = rgb)
+    val __obj = js.Dynamic.literal(ansi16 = js.Any.fromFunction1(ansi16), channels = channels, hcg = js.Any.fromFunction1(hcg), hsl = js.Any.fromFunction1(hsl), labels = labels, rgb = js.Any.fromFunction1(rgb))
   
     __obj.asInstanceOf[Anon_3Ansi16]
   }

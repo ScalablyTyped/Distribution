@@ -59,19 +59,14 @@ trait PrintHandlers extends js.Object {
 object PrintHandlers {
   @scala.inline
   def apply(
-    hasGlobalName: js.Function1[/* name */ java.lang.String, scala.Boolean] = null,
-    onEmitNode: js.Function3[
-      /* hint */ EmitHint, 
-      /* node */ js.UndefOr[Node], 
-      /* emitCallback */ js.Function2[/* hint */ EmitHint, /* node */ js.UndefOr[Node], scala.Unit], 
-      scala.Unit
-    ] = null,
-    substituteNode: js.Function2[/* hint */ EmitHint, /* node */ Node, Node] = null
+    hasGlobalName: /* name */ java.lang.String => scala.Boolean = null,
+    onEmitNode: (/* hint */ EmitHint, /* node */ js.UndefOr[Node], /* emitCallback */ js.Function2[/* hint */ EmitHint, /* node */ js.UndefOr[Node], scala.Unit]) => scala.Unit = null,
+    substituteNode: (/* hint */ EmitHint, /* node */ Node) => Node = null
   ): PrintHandlers = {
     val __obj = js.Dynamic.literal()
-    if (hasGlobalName != null) __obj.updateDynamic("hasGlobalName")(hasGlobalName)
-    if (onEmitNode != null) __obj.updateDynamic("onEmitNode")(onEmitNode)
-    if (substituteNode != null) __obj.updateDynamic("substituteNode")(substituteNode)
+    if (hasGlobalName != null) __obj.updateDynamic("hasGlobalName")(js.Any.fromFunction1(hasGlobalName))
+    if (onEmitNode != null) __obj.updateDynamic("onEmitNode")(js.Any.fromFunction3(onEmitNode))
+    if (substituteNode != null) __obj.updateDynamic("substituteNode")(js.Any.fromFunction2(substituteNode))
     __obj.asInstanceOf[PrintHandlers]
   }
 }

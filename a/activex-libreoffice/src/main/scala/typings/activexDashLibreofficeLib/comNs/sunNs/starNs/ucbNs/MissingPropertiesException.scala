@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 trait MissingPropertiesException
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Exception {
   /** contains the names of the missing properties. */
-  var Properties: activexDashInteropLib.SafeArray[java.lang.String]
+  var Properties: stdLib.SafeArray[java.lang.String]
 }
 
 object MissingPropertiesException {
@@ -25,7 +25,7 @@ object MissingPropertiesException {
   def apply(
     Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     Message: java.lang.String,
-    Properties: activexDashInteropLib.SafeArray[java.lang.String]
+    Properties: stdLib.SafeArray[java.lang.String]
   ): MissingPropertiesException = {
     val __obj = js.Dynamic.literal(Context = Context, Message = Message, Properties = Properties)
   

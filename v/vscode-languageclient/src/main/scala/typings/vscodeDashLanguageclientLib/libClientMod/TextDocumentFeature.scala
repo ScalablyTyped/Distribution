@@ -11,7 +11,7 @@ abstract class TextDocumentFeature[T /* <: vscodeDashLanguageserverDashProtocolL
   def this(_client: BaseLanguageClient, _message: vscodeDashJsonrpcLib.libMessagesMod.MessageType) = this()
   var _client: BaseLanguageClient = js.native
   var _message: js.Any = js.native
-  var _providers: nodeLib.Map[java.lang.String, vscodeDashJsonrpcLib.libEventsMod.Disposable] = js.native
+  var _providers: stdLib.Map[java.lang.String, vscodeDashJsonrpcLib.libEventsMod.Disposable] = js.native
   @JSName("messages")
   val messages_TextDocumentFeature: vscodeDashJsonrpcLib.libMessagesMod.MessageType = js.native
   /* protected */ def registerLanguageProvider(options: T): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native

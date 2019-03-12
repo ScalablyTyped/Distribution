@@ -41,18 +41,14 @@ trait XSubmit
 object XSubmit {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addSubmitListener: js.Function1[XSubmitListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeSubmitListener: js.Function1[XSubmitListener, scala.Unit],
-    submit: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.MouseEvent, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    addSubmitListener: XSubmitListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeSubmitListener: XSubmitListener => scala.Unit,
+    submit: (activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.MouseEvent) => scala.Unit
   ): XSubmit = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addSubmitListener = addSubmitListener, queryInterface = queryInterface, release = release, removeSubmitListener = removeSubmitListener, submit = submit)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addSubmitListener = js.Any.fromFunction1(addSubmitListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeSubmitListener = js.Any.fromFunction1(removeSubmitListener), submit = js.Any.fromFunction2(submit))
   
     __obj.asInstanceOf[XSubmit]
   }

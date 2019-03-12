@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(text: java.lang.String): scala.Boolean = js.native
-  def apply(text: java.lang.String, options: copyDashToDashClipboardLib.copyDashToDashClipboardMod.Options): scala.Boolean = js.native
+  def apply(text: java.lang.String, options: Options): scala.Boolean = js.native
 }
 

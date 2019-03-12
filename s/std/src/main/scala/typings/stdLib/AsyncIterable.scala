@@ -12,8 +12,8 @@ trait AsyncIterable[T] extends js.Object {
 
 object AsyncIterable {
   @scala.inline
-  def apply[T](asyncIterator: js.Function0[AsyncIterator[T]]): AsyncIterable[T] = {
-    val __obj = js.Dynamic.literal(asyncIterator = asyncIterator)
+  def apply[T](asyncIterator: () => AsyncIterator[T]): AsyncIterable[T] = {
+    val __obj = js.Dynamic.literal(asyncIterator = js.Any.fromFunction0(asyncIterator))
   
     __obj.asInstanceOf[AsyncIterable[T]]
   }

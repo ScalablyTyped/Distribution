@@ -20,12 +20,12 @@ trait XTextRangeMover
 object XTextRangeMover {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    moveTextRange: js.Function2[XTextRange, scala.Double, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    moveTextRange: (XTextRange, scala.Double) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTextRangeMover = {
-    val __obj = js.Dynamic.literal(acquire = acquire, moveTextRange = moveTextRange, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), moveTextRange = js.Any.fromFunction2(moveTextRange), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTextRangeMover]
   }

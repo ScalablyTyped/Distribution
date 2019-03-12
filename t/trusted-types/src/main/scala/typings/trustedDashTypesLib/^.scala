@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  val TrustedTypes: trustedDashTypesLib.TrustedTypePolicyFactory = js.native
+  val TrustedTypes: TrustedTypePolicyFactory = js.native
 }
 

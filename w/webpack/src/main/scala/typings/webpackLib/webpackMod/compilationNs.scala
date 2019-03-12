@@ -57,7 +57,7 @@ object compilationNs extends js.Object {
     /* CompleteClass */
     override def containsModule(module: js.Any): scala.Boolean = js.native
     /* CompleteClass */
-    override def getAllAsyncChunks(): nodeLib.Set[_] = js.native
+    override def getAllAsyncChunks(): stdLib.Set[_] = js.native
     /* CompleteClass */
     override def getChunkMaps(realHash: js.Any): webpackLib.Anon_Hash = js.native
     // tslint:disable-next-line:ban-types

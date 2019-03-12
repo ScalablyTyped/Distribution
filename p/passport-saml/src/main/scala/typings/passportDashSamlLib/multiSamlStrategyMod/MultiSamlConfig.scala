@@ -10,7 +10,7 @@ trait MultiSamlConfig
   def getSamlOptions(
     req: expressLib.expressMod.eNs.Request,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* samlOptions */ passportDashSamlLib.passportDashSamlMod.SamlConfig, 
       scala.Unit
     ]
@@ -21,15 +21,11 @@ object MultiSamlConfig {
   @scala.inline
   def apply(
     entryPoint: java.lang.String,
-    getSamlOptions: js.Function2[
-      expressLib.expressMod.eNs.Request, 
-      js.Function2[
-        /* err */ nodeLib.Error | scala.Null, 
-        /* samlOptions */ passportDashSamlLib.passportDashSamlMod.SamlConfig, 
-        scala.Unit
-      ], 
+    getSamlOptions: (expressLib.expressMod.eNs.Request, js.Function2[
+      /* err */ stdLib.Error | scala.Null, 
+      /* samlOptions */ passportDashSamlLib.passportDashSamlMod.SamlConfig, 
       scala.Unit
-    ],
+    ]) => scala.Unit,
     issuer: java.lang.String,
     acceptedClockSkewMs: scala.Int | scala.Double = null,
     additionalAuthorizeParams: js.Any = null,
@@ -58,7 +54,7 @@ object MultiSamlConfig {
     skipRequestCompression: js.UndefOr[scala.Boolean] = js.undefined,
     validateInResponseTo: js.UndefOr[scala.Boolean] = js.undefined
   ): MultiSamlConfig = {
-    val __obj = js.Dynamic.literal(entryPoint = entryPoint, getSamlOptions = getSamlOptions, issuer = issuer)
+    val __obj = js.Dynamic.literal(entryPoint = entryPoint, getSamlOptions = js.Any.fromFunction2(getSamlOptions), issuer = issuer)
     if (acceptedClockSkewMs != null) __obj.updateDynamic("acceptedClockSkewMs")(acceptedClockSkewMs.asInstanceOf[js.Any])
     if (additionalAuthorizeParams != null) __obj.updateDynamic("additionalAuthorizeParams")(additionalAuthorizeParams)
     if (additionalLogoutParams != null) __obj.updateDynamic("additionalLogoutParams")(additionalLogoutParams)

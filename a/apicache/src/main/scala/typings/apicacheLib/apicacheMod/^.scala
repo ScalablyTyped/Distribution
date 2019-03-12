@@ -16,13 +16,9 @@ object ^ extends js.Object {
   def middleware(): js.Any = js.native
   def middleware(duration: java.lang.String): js.Any = js.native
   def middleware(duration: java.lang.String, toggleMiddleware: js.Any): js.Any = js.native
-  def middleware(
-    duration: java.lang.String,
-    toggleMiddleware: js.Any,
-    localOptions: apicacheLib.apicacheMod.Options
-  ): js.Any = js.native
-  def newInstance(config: apicacheLib.apicacheMod.Options): js.Any = js.native
-  def options(options: apicacheLib.apicacheMod.Options): js.Any = js.native
+  def middleware(duration: java.lang.String, toggleMiddleware: js.Any, localOptions: Options): js.Any = js.native
+  def newInstance(config: Options): js.Any = js.native
+  def options(options: Options): js.Any = js.native
   def resetIndex(): scala.Unit = js.native
 }
 

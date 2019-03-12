@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Image: reactLib.reactMod.ReactNs.FC[
-    grommetLib.componentsImageMod.ImageProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    ImageProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.ImgHTMLAttributes[reactLib.HTMLImageElement], 
       reactLib.HTMLImageElement
     ])

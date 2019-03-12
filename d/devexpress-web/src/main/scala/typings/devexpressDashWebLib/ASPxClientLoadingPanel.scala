@@ -47,30 +47,30 @@ trait ASPxClientLoadingPanel extends ASPxClientControl {
 object ASPxClientLoadingPanel {
   @scala.inline
   def apply(
-    AdjustControl: js.Function0[scala.Unit],
-    GetClientVisible: js.Function0[scala.Boolean],
-    GetHeight: js.Function0[scala.Double],
-    GetMainElement: js.Function0[js.Object],
-    GetParentControl: js.Function0[js.Object],
-    GetText: js.Function0[java.lang.String],
-    GetVisible: js.Function0[scala.Boolean],
-    GetWidth: js.Function0[scala.Double],
-    Hide: js.Function0[scala.Unit],
-    InCallback: js.Function0[scala.Boolean],
+    AdjustControl: () => scala.Unit,
+    GetClientVisible: () => scala.Boolean,
+    GetHeight: () => scala.Double,
+    GetMainElement: () => js.Object,
+    GetParentControl: () => js.Object,
+    GetText: () => java.lang.String,
+    GetVisible: () => scala.Boolean,
+    GetWidth: () => scala.Double,
+    Hide: () => scala.Unit,
+    InCallback: () => scala.Boolean,
     Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
-    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
-    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetHeight: js.Function1[scala.Double, scala.Unit],
-    SetText: js.Function1[java.lang.String, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetWidth: js.Function1[scala.Double, scala.Unit],
-    Show: js.Function0[scala.Unit],
-    ShowAtPos: js.Function2[scala.Double, scala.Double, scala.Unit],
-    ShowInElement: js.Function1[js.Object, scala.Unit],
-    ShowInElementByID: js.Function1[java.lang.String, scala.Unit],
+    SendMessageToAssistiveTechnology: java.lang.String => scala.Unit,
+    SetClientVisible: scala.Boolean => scala.Unit,
+    SetHeight: scala.Double => scala.Unit,
+    SetText: java.lang.String => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
+    SetWidth: scala.Double => scala.Unit,
+    Show: () => scala.Unit,
+    ShowAtPos: (scala.Double, scala.Double) => scala.Unit,
+    ShowInElement: js.Object => scala.Unit,
+    ShowInElementByID: java.lang.String => scala.Unit,
     name: java.lang.String
   ): ASPxClientLoadingPanel = {
-    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, GetClientVisible = GetClientVisible, GetHeight = GetHeight, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetText = GetText, GetVisible = GetVisible, GetWidth = GetWidth, Hide = Hide, InCallback = InCallback, Init = Init, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetText = SetText, SetVisible = SetVisible, SetWidth = SetWidth, Show = Show, ShowAtPos = ShowAtPos, ShowInElement = ShowInElement, ShowInElementByID = ShowInElementByID, name = name)
+    val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetHeight = js.Any.fromFunction0(GetHeight), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetText = js.Any.fromFunction0(GetText), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), Hide = js.Any.fromFunction0(Hide), InCallback = js.Any.fromFunction0(InCallback), Init = Init, SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetHeight = js.Any.fromFunction1(SetHeight), SetText = js.Any.fromFunction1(SetText), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), Show = js.Any.fromFunction0(Show), ShowAtPos = js.Any.fromFunction2(ShowAtPos), ShowInElement = js.Any.fromFunction1(ShowInElement), ShowInElementByID = js.Any.fromFunction1(ShowInElementByID), name = name)
   
     __obj.asInstanceOf[ASPxClientLoadingPanel]
   }

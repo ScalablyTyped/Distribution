@@ -28,7 +28,8 @@ trait ReactSVG
   @JSName("componentWillUnmount")
   def componentWillUnmount_MReactSVG(): scala.Unit = js.native
   def refCallback(): scala.Unit = js.native
-  def refCallback(container: reactLib.HTMLDivElement | reactLib.HTMLSpanElement): scala.Unit = js.native
+  def refCallback(container: stdLib.HTMLDivElement): scala.Unit = js.native
+  def refCallback(container: stdLib.HTMLSpanElement): scala.Unit = js.native
   def removeSVG(): scala.Unit = js.native
   def renderSVG(): scala.Unit = js.native
 }

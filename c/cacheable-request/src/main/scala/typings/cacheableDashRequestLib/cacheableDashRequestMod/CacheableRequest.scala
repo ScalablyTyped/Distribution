@@ -34,7 +34,7 @@ trait CacheableRequest
         cacheableDashRequestLib.cacheableDashRequestMod.CacheableRequestNs.Emitter
       ]
     ] {
-  var CacheError: org.scalablytyped.runtime.Instantiable1[/* error */ nodeLib.Error, CacheErrorCls] = js.native
-  var RequestError: org.scalablytyped.runtime.Instantiable1[/* error */ nodeLib.Error, RequestErrorCls] = js.native
+  var CacheError: org.scalablytyped.runtime.Instantiable1[/* error */ stdLib.Error, CacheErrorCls] = js.native
+  var RequestError: org.scalablytyped.runtime.Instantiable1[/* error */ stdLib.Error, RequestErrorCls] = js.native
 }
 

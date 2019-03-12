@@ -12,7 +12,7 @@ trait Anon_ClassName[H /* <: reactLib.reactMod.ReactNs.HTMLAttributes[_] */] ext
   var tabIndex: /* import warning: ImportType.apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['tabIndex'] */ js.Any
   def onKeyDown(e: reactLib.reactMod.ReactNs.KeyboardEvent[_]): scala.Unit
   def onKeyUp(e: reactLib.reactMod.ReactNs.KeyboardEvent[_]): scala.Unit
-  def ref(ref: reactLib.HTMLElement): scala.Unit
+  def ref(ref: stdLib.HTMLElement): scala.Unit
 }
 
 object Anon_ClassName {
@@ -21,12 +21,12 @@ object Anon_ClassName {
     className: java.lang.String,
     disabled: /* import warning: ImportType.apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['loading'] */ js.Any,
     onClick: /* import warning: ImportType.apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['onClick'] */ js.Any,
-    onKeyDown: js.Function1[reactLib.reactMod.ReactNs.KeyboardEvent[_], scala.Unit],
-    onKeyUp: js.Function1[reactLib.reactMod.ReactNs.KeyboardEvent[_], scala.Unit],
-    ref: js.Function1[reactLib.HTMLElement, scala.Unit],
+    onKeyDown: reactLib.reactMod.ReactNs.KeyboardEvent[_] => scala.Unit,
+    onKeyUp: reactLib.reactMod.ReactNs.KeyboardEvent[_] => scala.Unit,
+    ref: stdLib.HTMLElement => scala.Unit,
     tabIndex: /* import warning: ImportType.apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['tabIndex'] */ js.Any
   ): Anon_ClassName[H] = {
-    val __obj = js.Dynamic.literal(className = className, disabled = disabled, onClick = onClick, onKeyDown = onKeyDown, onKeyUp = onKeyUp, ref = ref, tabIndex = tabIndex)
+    val __obj = js.Dynamic.literal(className = className, disabled = disabled, onClick = onClick, onKeyDown = js.Any.fromFunction1(onKeyDown), onKeyUp = js.Any.fromFunction1(onKeyUp), ref = js.Any.fromFunction1(ref), tabIndex = tabIndex)
   
     __obj.asInstanceOf[Anon_ClassName[H]]
   }

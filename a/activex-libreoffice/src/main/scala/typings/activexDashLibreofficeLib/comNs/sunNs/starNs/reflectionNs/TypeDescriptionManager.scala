@@ -23,28 +23,23 @@ object TypeDescriptionManager {
   @scala.inline
   def apply(
     ElementType: activexDashLibreofficeLib.`type`,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    createEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
-    createTypeDescriptionEnumeration: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass], 
-      TypeDescriptionSearchDepth, 
-      XTypeDescriptionEnumeration
-    ],
-    dispose: js.Function0[scala.Unit],
-    getByHierarchicalName: js.Function1[java.lang.String, js.Any],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    has: js.Function1[js.Any, scala.Boolean],
-    hasByHierarchicalName: js.Function1[java.lang.String, scala.Boolean],
-    hasElements: js.Function0[scala.Boolean],
-    insert: js.Function1[js.Any, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    remove: js.Function1[js.Any, scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    createEnumeration: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration,
+    createTypeDescriptionEnumeration: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass], TypeDescriptionSearchDepth) => XTypeDescriptionEnumeration,
+    dispose: () => scala.Unit,
+    getByHierarchicalName: java.lang.String => js.Any,
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    has: js.Any => scala.Boolean,
+    hasByHierarchicalName: java.lang.String => scala.Boolean,
+    hasElements: () => scala.Boolean,
+    insert: js.Any => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    remove: js.Any => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit
   ): TypeDescriptionManager = {
-    val __obj = js.Dynamic.literal(ElementType = ElementType, acquire = acquire, addEventListener = addEventListener, createEnumeration = createEnumeration, createTypeDescriptionEnumeration = createTypeDescriptionEnumeration, dispose = dispose, getByHierarchicalName = getByHierarchicalName, getElementType = getElementType, has = has, hasByHierarchicalName = hasByHierarchicalName, hasElements = hasElements, insert = insert, queryInterface = queryInterface, release = release, remove = remove, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(ElementType = ElementType, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), createEnumeration = js.Any.fromFunction0(createEnumeration), createTypeDescriptionEnumeration = js.Any.fromFunction3(createTypeDescriptionEnumeration), dispose = js.Any.fromFunction0(dispose), getByHierarchicalName = js.Any.fromFunction1(getByHierarchicalName), getElementType = js.Any.fromFunction0(getElementType), has = js.Any.fromFunction1(has), hasByHierarchicalName = js.Any.fromFunction1(hasByHierarchicalName), hasElements = js.Any.fromFunction0(hasElements), insert = js.Any.fromFunction1(insert), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), remove = js.Any.fromFunction1(remove), removeEventListener = js.Any.fromFunction1(removeEventListener))
   
     __obj.asInstanceOf[TypeDescriptionManager]
   }

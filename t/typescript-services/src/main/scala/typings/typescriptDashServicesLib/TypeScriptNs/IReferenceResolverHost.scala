@@ -16,13 +16,13 @@ trait IReferenceResolverHost extends js.Object {
 object IReferenceResolverHost {
   @scala.inline
   def apply(
-    directoryExists: js.Function1[java.lang.String, scala.Boolean],
-    fileExists: js.Function1[java.lang.String, scala.Boolean],
-    getParentDirectory: js.Function1[java.lang.String, java.lang.String],
-    getScriptSnapshot: js.Function1[java.lang.String, IScriptSnapshot],
-    resolveRelativePath: js.Function2[java.lang.String, java.lang.String, java.lang.String]
+    directoryExists: java.lang.String => scala.Boolean,
+    fileExists: java.lang.String => scala.Boolean,
+    getParentDirectory: java.lang.String => java.lang.String,
+    getScriptSnapshot: java.lang.String => IScriptSnapshot,
+    resolveRelativePath: (java.lang.String, java.lang.String) => java.lang.String
   ): IReferenceResolverHost = {
-    val __obj = js.Dynamic.literal(directoryExists = directoryExists, fileExists = fileExists, getParentDirectory = getParentDirectory, getScriptSnapshot = getScriptSnapshot, resolveRelativePath = resolveRelativePath)
+    val __obj = js.Dynamic.literal(directoryExists = js.Any.fromFunction1(directoryExists), fileExists = js.Any.fromFunction1(fileExists), getParentDirectory = js.Any.fromFunction1(getParentDirectory), getScriptSnapshot = js.Any.fromFunction1(getScriptSnapshot), resolveRelativePath = js.Any.fromFunction2(resolveRelativePath))
   
     __obj.asInstanceOf[IReferenceResolverHost]
   }

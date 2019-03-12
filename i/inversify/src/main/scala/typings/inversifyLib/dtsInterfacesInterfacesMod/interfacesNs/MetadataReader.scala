@@ -13,10 +13,10 @@ trait MetadataReader extends js.Object {
 object MetadataReader {
   @scala.inline
   def apply(
-    getConstructorMetadata: js.Function1[js.Function, ConstructorMetadata],
-    getPropertiesMetadata: js.Function1[js.Function, MetadataMap]
+    getConstructorMetadata: js.Function => ConstructorMetadata,
+    getPropertiesMetadata: js.Function => MetadataMap
   ): MetadataReader = {
-    val __obj = js.Dynamic.literal(getConstructorMetadata = getConstructorMetadata, getPropertiesMetadata = getPropertiesMetadata)
+    val __obj = js.Dynamic.literal(getConstructorMetadata = js.Any.fromFunction1(getConstructorMetadata), getPropertiesMetadata = js.Any.fromFunction1(getPropertiesMetadata))
   
     __obj.asInstanceOf[MetadataReader]
   }

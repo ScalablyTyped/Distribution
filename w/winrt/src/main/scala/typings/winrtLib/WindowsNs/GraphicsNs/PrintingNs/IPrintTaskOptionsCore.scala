@@ -11,8 +11,8 @@ trait IPrintTaskOptionsCore extends js.Object {
 
 object IPrintTaskOptionsCore {
   @scala.inline
-  def apply(getPageDescription: js.Function1[scala.Double, PrintPageDescription]): IPrintTaskOptionsCore = {
-    val __obj = js.Dynamic.literal(getPageDescription = getPageDescription)
+  def apply(getPageDescription: scala.Double => PrintPageDescription): IPrintTaskOptionsCore = {
+    val __obj = js.Dynamic.literal(getPageDescription = js.Any.fromFunction1(getPageDescription))
   
     __obj.asInstanceOf[IPrintTaskOptionsCore]
   }

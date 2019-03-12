@@ -29,28 +29,13 @@ trait DomainMappingsResource extends js.Object {
 object DomainMappingsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackDomainMappingsId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackDomainMappingsId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DomainMapping]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListDomainMappingsResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackDomainMappingsIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    create: gapiDotClientDotAppengineLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    delete: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackDomainMappingsId => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackDomainMappingsId => gapiDotClientLib.gapiNs.clientNs.Request[DomainMapping],
+    list: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[ListDomainMappingsResponse],
+    patch: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackDomainMappingsIdFields => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): DomainMappingsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, patch = patch)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch))
   
     __obj.asInstanceOf[DomainMappingsResource]
   }

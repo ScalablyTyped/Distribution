@@ -14,11 +14,11 @@ trait URLS extends js.Object {
 object URLS {
   @scala.inline
   def apply(
-    enrollAccount: js.Function1[java.lang.String, java.lang.String],
-    resetPassword: js.Function1[java.lang.String, java.lang.String],
-    verifyEmail: js.Function1[java.lang.String, java.lang.String]
+    enrollAccount: java.lang.String => java.lang.String,
+    resetPassword: java.lang.String => java.lang.String,
+    verifyEmail: java.lang.String => java.lang.String
   ): URLS = {
-    val __obj = js.Dynamic.literal(enrollAccount = enrollAccount, resetPassword = resetPassword, verifyEmail = verifyEmail)
+    val __obj = js.Dynamic.literal(enrollAccount = js.Any.fromFunction1(enrollAccount), resetPassword = js.Any.fromFunction1(resetPassword), verifyEmail = js.Any.fromFunction1(verifyEmail))
   
     __obj.asInstanceOf[URLS]
   }

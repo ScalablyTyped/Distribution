@@ -13,12 +13,9 @@ trait CustomAppsResource extends js.Object {
 object CustomAppsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotPlaycustomappLib.Anon_Account, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CustomApp]
-    ]
+    create: gapiDotClientDotPlaycustomappLib.Anon_Account => gapiDotClientLib.gapiNs.clientNs.Request[CustomApp]
   ): CustomAppsResource = {
-    val __obj = js.Dynamic.literal(create = create)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
   
     __obj.asInstanceOf[CustomAppsResource]
   }

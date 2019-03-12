@@ -52,15 +52,15 @@ trait XURLTransformer
 object XURLTransformer {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    assemble: js.Function1[js.Array[URL], scala.Boolean],
-    getPresentation: js.Function2[URL, scala.Boolean, java.lang.String],
-    parseSmart: js.Function2[js.Array[URL], java.lang.String, scala.Boolean],
-    parseStrict: js.Function1[js.Array[URL], scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    assemble: js.Array[URL] => scala.Boolean,
+    getPresentation: (URL, scala.Boolean) => java.lang.String,
+    parseSmart: (js.Array[URL], java.lang.String) => scala.Boolean,
+    parseStrict: js.Array[URL] => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XURLTransformer = {
-    val __obj = js.Dynamic.literal(acquire = acquire, assemble = assemble, getPresentation = getPresentation, parseSmart = parseSmart, parseStrict = parseStrict, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), assemble = js.Any.fromFunction1(assemble), getPresentation = js.Any.fromFunction2(getPresentation), parseSmart = js.Any.fromFunction2(parseSmart), parseStrict = js.Any.fromFunction1(parseStrict), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XURLTransformer]
   }

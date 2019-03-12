@@ -15,12 +15,12 @@ trait IPrintTaskConfigurationSaveRequest extends js.Object {
 object IPrintTaskConfigurationSaveRequest {
   @scala.inline
   def apply(
-    cancel: js.Function0[scala.Unit],
+    cancel: () => scala.Unit,
     deadline: stdLib.Date,
-    getDeferral: js.Function0[PrintTaskConfigurationSaveRequestedDeferral],
-    save: js.Function1[js.Any, scala.Unit]
+    getDeferral: () => PrintTaskConfigurationSaveRequestedDeferral,
+    save: js.Any => scala.Unit
   ): IPrintTaskConfigurationSaveRequest = {
-    val __obj = js.Dynamic.literal(cancel = cancel, deadline = deadline, getDeferral = getDeferral, save = save)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), deadline = deadline, getDeferral = js.Any.fromFunction0(getDeferral), save = js.Any.fromFunction1(save))
   
     __obj.asInstanceOf[IPrintTaskConfigurationSaveRequest]
   }

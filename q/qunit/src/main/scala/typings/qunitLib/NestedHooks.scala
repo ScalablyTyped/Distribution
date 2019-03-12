@@ -28,12 +28,12 @@ trait NestedHooks extends js.Object {
 object NestedHooks {
   @scala.inline
   def apply(
-    after: js.Function1[js.Function1[/* assert */ Assert, scala.Unit], scala.Unit],
-    afterEach: js.Function1[js.Function1[/* assert */ Assert, scala.Unit], scala.Unit],
-    before: js.Function1[js.Function1[/* assert */ Assert, scala.Unit], scala.Unit],
-    beforeEach: js.Function1[js.Function1[/* assert */ Assert, scala.Unit], scala.Unit]
+    after: js.Function1[/* assert */ Assert, scala.Unit] => scala.Unit,
+    afterEach: js.Function1[/* assert */ Assert, scala.Unit] => scala.Unit,
+    before: js.Function1[/* assert */ Assert, scala.Unit] => scala.Unit,
+    beforeEach: js.Function1[/* assert */ Assert, scala.Unit] => scala.Unit
   ): NestedHooks = {
-    val __obj = js.Dynamic.literal(after = after, afterEach = afterEach, before = before, beforeEach = beforeEach)
+    val __obj = js.Dynamic.literal(after = js.Any.fromFunction1(after), afterEach = js.Any.fromFunction1(afterEach), before = js.Any.fromFunction1(before), beforeEach = js.Any.fromFunction1(beforeEach))
   
     __obj.asInstanceOf[NestedHooks]
   }

@@ -16,17 +16,11 @@ trait CompaniesResource extends js.Object {
 object CompaniesResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotPartnersLib.Anon_AccesstokenAddress, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GetCompanyResponse]
-    ],
+    get: gapiDotClientDotPartnersLib.Anon_AccesstokenAddress => gapiDotClientLib.gapiNs.clientNs.Request[GetCompanyResponse],
     leads: LeadsResource,
-    list: js.Function1[
-      gapiDotClientDotPartnersLib.Anon_AccesstokenAddressAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListCompaniesResponse]
-    ]
+    list: gapiDotClientDotPartnersLib.Anon_AccesstokenAddressAlt => gapiDotClientLib.gapiNs.clientNs.Request[ListCompaniesResponse]
   ): CompaniesResource = {
-    val __obj = js.Dynamic.literal(get = get, leads = leads, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), leads = leads, list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[CompaniesResource]
   }

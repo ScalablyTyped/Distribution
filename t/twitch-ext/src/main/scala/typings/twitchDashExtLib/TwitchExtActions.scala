@@ -43,15 +43,12 @@ trait TwitchExtActions extends js.Object {
 object TwitchExtActions {
   @scala.inline
   def apply(
-    followChannel: js.Function1[java.lang.String, scala.Unit],
-    minimize: js.Function0[scala.Unit],
-    onFollow: js.Function1[
-      js.Function2[/* didFollow */ scala.Boolean, /* channelName */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ],
-    requestIdShare: js.Function0[scala.Unit]
+    followChannel: java.lang.String => scala.Unit,
+    minimize: () => scala.Unit,
+    onFollow: js.Function2[/* didFollow */ scala.Boolean, /* channelName */ java.lang.String, scala.Unit] => scala.Unit,
+    requestIdShare: () => scala.Unit
   ): TwitchExtActions = {
-    val __obj = js.Dynamic.literal(followChannel = followChannel, minimize = minimize, onFollow = onFollow, requestIdShare = requestIdShare)
+    val __obj = js.Dynamic.literal(followChannel = js.Any.fromFunction1(followChannel), minimize = js.Any.fromFunction0(minimize), onFollow = js.Any.fromFunction1(onFollow), requestIdShare = js.Any.fromFunction0(requestIdShare))
   
     __obj.asInstanceOf[TwitchExtActions]
   }

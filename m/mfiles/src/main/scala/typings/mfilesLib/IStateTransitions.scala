@@ -15,12 +15,12 @@ trait IStateTransitions extends js.Object {
 object IStateTransitions {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IStateTransition, scala.Unit],
+    Add: (scala.Double, IStateTransition) => scala.Unit,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IStateTransition],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => IStateTransition,
+    Remove: scala.Double => scala.Unit
   ): IStateTransitions = {
-    val __obj = js.Dynamic.literal(Add = Add, Count = Count, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IStateTransitions]
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "EventFootprint")
 @js.native
 class EventFootprint protected ()
-  extends fullcalendarLib.eventfootprintMod.default {
+  extends fullcalendarLib.eventFootprintMod.default {
   def this(componentFootprint: js.Any, eventDef: js.Any, eventInstance: js.Any) = this()
 }
 

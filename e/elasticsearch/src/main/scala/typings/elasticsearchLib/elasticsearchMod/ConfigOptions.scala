@@ -48,7 +48,7 @@ object ConfigOptions {
     ]) = null,
     createNodeAgent: js.Any = null,
     deadTimeout: scala.Int | scala.Double = null,
-    defer: js.Function0[scala.Unit] = null,
+    defer: () => scala.Unit = null,
     host: js.Any = null,
     hosts: js.Any = null,
     httpAuth: java.lang.String = null,
@@ -73,7 +73,7 @@ object ConfigOptions {
     if (connectionClass != null) __obj.updateDynamic("connectionClass")(connectionClass.asInstanceOf[js.Any])
     if (createNodeAgent != null) __obj.updateDynamic("createNodeAgent")(createNodeAgent)
     if (deadTimeout != null) __obj.updateDynamic("deadTimeout")(deadTimeout.asInstanceOf[js.Any])
-    if (defer != null) __obj.updateDynamic("defer")(defer)
+    if (defer != null) __obj.updateDynamic("defer")(js.Any.fromFunction0(defer))
     if (host != null) __obj.updateDynamic("host")(host)
     if (hosts != null) __obj.updateDynamic("hosts")(hosts)
     if (httpAuth != null) __obj.updateDynamic("httpAuth")(httpAuth)

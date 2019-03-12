@@ -16,9 +16,9 @@ trait XMailMessage
     * Return a sequence of {@link MailAttachment} 's that will be attached to this mail message.
     * @see com.sun.star.mail.MailAttachment
     */
-  val Attachments: activexDashInteropLib.SafeArray[MailAttachment]
+  val Attachments: stdLib.SafeArray[MailAttachment]
   /** Return a sequence of the e-mail addresses of all the BCC recipients of this mail message. */
-  val BccRecipients: activexDashInteropLib.SafeArray[java.lang.String]
+  val BccRecipients: stdLib.SafeArray[java.lang.String]
   /**
     * The body of the mail message. It is expected that the transferable delivers the data as a string. Although a transferable may support multiple data
     * flavors only the first data flavor supplied will be used to retrieve the data and it is expected that the data will be provided as a string.
@@ -26,9 +26,9 @@ trait XMailMessage
     */
   var Body: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable
   /** Return a sequence of the e-mail addresses of all the Cc recipients of this mail message. */
-  val CcRecipients: activexDashInteropLib.SafeArray[java.lang.String]
+  val CcRecipients: stdLib.SafeArray[java.lang.String]
   /** Return a sequence of the e-mail addresses of all recipients of this mail message. */
-  val Recipients: activexDashInteropLib.SafeArray[java.lang.String]
+  val Recipients: stdLib.SafeArray[java.lang.String]
   /**
     * The e-mail address where replies on this mail message should be sent to. If the e-mail address doesn't conform to [RFC   822]{@link
     * url="http://www.ietf.org/rfc/rfc822.txt"} sending the mail message later will fail. If no ReplyToAddress is set replies go to the SenderAddress.
@@ -72,40 +72,40 @@ trait XMailMessage
     * Return a sequence of {@link MailAttachment} 's that will be attached to this mail message.
     * @see com.sun.star.mail.MailAttachment
     */
-  def getAttachments(): activexDashInteropLib.SafeArray[MailAttachment]
+  def getAttachments(): stdLib.SafeArray[MailAttachment]
   /** Return a sequence of the e-mail addresses of all the BCC recipients of this mail message. */
-  def getBccRecipients(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getBccRecipients(): stdLib.SafeArray[java.lang.String]
   /** Return a sequence of the e-mail addresses of all the Cc recipients of this mail message. */
-  def getCcRecipients(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getCcRecipients(): stdLib.SafeArray[java.lang.String]
   /** Return a sequence of the e-mail addresses of all recipients of this mail message. */
-  def getRecipients(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getRecipients(): stdLib.SafeArray[java.lang.String]
 }
 
 object XMailMessage {
   @scala.inline
   def apply(
-    Attachments: activexDashInteropLib.SafeArray[MailAttachment],
-    BccRecipients: activexDashInteropLib.SafeArray[java.lang.String],
+    Attachments: stdLib.SafeArray[MailAttachment],
+    BccRecipients: stdLib.SafeArray[java.lang.String],
     Body: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable,
-    CcRecipients: activexDashInteropLib.SafeArray[java.lang.String],
-    Recipients: activexDashInteropLib.SafeArray[java.lang.String],
+    CcRecipients: stdLib.SafeArray[java.lang.String],
+    Recipients: stdLib.SafeArray[java.lang.String],
     ReplyToAddress: java.lang.String,
     SenderAddress: java.lang.String,
     SenderName: java.lang.String,
     Subject: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    addAttachment: js.Function1[MailAttachment, scala.Unit],
-    addBccRecipient: js.Function1[java.lang.String, scala.Unit],
-    addCcRecipient: js.Function1[java.lang.String, scala.Unit],
-    addRecipient: js.Function1[java.lang.String, scala.Unit],
-    getAttachments: js.Function0[activexDashInteropLib.SafeArray[MailAttachment]],
-    getBccRecipients: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getCcRecipients: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getRecipients: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addAttachment: MailAttachment => scala.Unit,
+    addBccRecipient: java.lang.String => scala.Unit,
+    addCcRecipient: java.lang.String => scala.Unit,
+    addRecipient: java.lang.String => scala.Unit,
+    getAttachments: () => stdLib.SafeArray[MailAttachment],
+    getBccRecipients: () => stdLib.SafeArray[java.lang.String],
+    getCcRecipients: () => stdLib.SafeArray[java.lang.String],
+    getRecipients: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XMailMessage = {
-    val __obj = js.Dynamic.literal(Attachments = Attachments, BccRecipients = BccRecipients, Body = Body, CcRecipients = CcRecipients, Recipients = Recipients, ReplyToAddress = ReplyToAddress, SenderAddress = SenderAddress, SenderName = SenderName, Subject = Subject, acquire = acquire, addAttachment = addAttachment, addBccRecipient = addBccRecipient, addCcRecipient = addCcRecipient, addRecipient = addRecipient, getAttachments = getAttachments, getBccRecipients = getBccRecipients, getCcRecipients = getCcRecipients, getRecipients = getRecipients, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Attachments = Attachments, BccRecipients = BccRecipients, Body = Body, CcRecipients = CcRecipients, Recipients = Recipients, ReplyToAddress = ReplyToAddress, SenderAddress = SenderAddress, SenderName = SenderName, Subject = Subject, acquire = js.Any.fromFunction0(acquire), addAttachment = js.Any.fromFunction1(addAttachment), addBccRecipient = js.Any.fromFunction1(addBccRecipient), addCcRecipient = js.Any.fromFunction1(addCcRecipient), addRecipient = js.Any.fromFunction1(addRecipient), getAttachments = js.Any.fromFunction0(getAttachments), getBccRecipients = js.Any.fromFunction0(getBccRecipients), getCcRecipients = js.Any.fromFunction0(getCcRecipients), getRecipients = js.Any.fromFunction0(getRecipients), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XMailMessage]
   }

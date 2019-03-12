@@ -37,11 +37,7 @@ object CheckboxProps {
     inputStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     labelPosition: materialDashUiLib.materialDashUiLibStrings.left | materialDashUiLib.materialDashUiLibStrings.right = null,
     labelStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    onCheck: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
-      /* checked */ scala.Boolean, 
-      scala.Unit
-    ] = null,
+    onCheck: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* checked */ scala.Boolean) => scala.Unit = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     uncheckedIcon: reactLib.reactMod.ReactNs.ReactElement[materialDashUiLib.Anon_Style] = null,
     valueLink: materialDashUiLib.underscoreUnderscoreMaterialUINs.ReactLink[scala.Boolean] = null
@@ -56,7 +52,7 @@ object CheckboxProps {
     if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle)
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
-    if (onCheck != null) __obj.updateDynamic("onCheck")(onCheck)
+    if (onCheck != null) __obj.updateDynamic("onCheck")(js.Any.fromFunction2(onCheck))
     if (style != null) __obj.updateDynamic("style")(style)
     if (uncheckedIcon != null) __obj.updateDynamic("uncheckedIcon")(uncheckedIcon)
     if (valueLink != null) __obj.updateDynamic("valueLink")(valueLink)

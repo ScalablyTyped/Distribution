@@ -24,7 +24,7 @@ class Popover ()
     * When `usePortal={true}`, this element will be portaled outside the usual DOM flow,
     * so this reference can be very useful for testing.
     */
-  var popoverElement: reactLib.HTMLElement = js.native
+  var popoverElement: stdLib.HTMLElement = js.native
   var popperScheduleUpdate: js.Any = js.native
   var refHandlers: js.Any = js.native
   var renderPopover: js.Any = js.native
@@ -32,7 +32,7 @@ class Popover ()
   @JSName("state")
   var state_Popover: IPopoverState = js.native
   /** DOM element that contains the target. */
-  var targetElement: reactLib.HTMLElement = js.native
+  var targetElement: stdLib.HTMLElement = js.native
   /** Popper modifier that updates React state (for style properties) based on latest data. */
   var updatePopoverState: js.Any = js.native
   @JSName("componentDidMount")

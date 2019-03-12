@@ -13,10 +13,10 @@ trait JQuery extends js.Object {
 object JQuery {
   @scala.inline
   def apply(
-    addNavigation: js.Function1[virtualDashKeyboardLib.virtualDashKeyboardMod.NavigateOptions, JQuery],
-    keyboard: js.Function1[virtualDashKeyboardLib.virtualDashKeyboardMod.KeyboardOptions, JQuery]
+    addNavigation: virtualDashKeyboardLib.virtualDashKeyboardMod.NavigateOptions => JQuery,
+    keyboard: virtualDashKeyboardLib.virtualDashKeyboardMod.KeyboardOptions => JQuery
   ): JQuery = {
-    val __obj = js.Dynamic.literal(addNavigation = addNavigation, keyboard = keyboard)
+    val __obj = js.Dynamic.literal(addNavigation = js.Any.fromFunction1(addNavigation), keyboard = js.Any.fromFunction1(keyboard))
   
     __obj.asInstanceOf[JQuery]
   }

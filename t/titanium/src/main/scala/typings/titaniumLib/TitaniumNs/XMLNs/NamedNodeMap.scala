@@ -52,30 +52,30 @@ trait NamedNodeMap
 object NamedNodeMap {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     bubbleParent: scala.Boolean,
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getApiName: js.Function0[java.lang.String],
-    getBubbleParent: js.Function0[scala.Boolean],
-    getLength: js.Function0[scala.Double],
-    getNamedItem: js.Function1[java.lang.String, Node],
-    getNamedItemNS: js.Function2[java.lang.String, java.lang.String, Node],
-    item: js.Function1[scala.Double, Node],
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
+    getApiName: () => java.lang.String,
+    getBubbleParent: () => scala.Boolean,
+    getLength: () => scala.Double,
+    getNamedItem: java.lang.String => Node,
+    getNamedItemNS: (java.lang.String, java.lang.String) => Node,
+    item: scala.Double => Node,
     length: scala.Double,
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    removeNamedItem: js.Function1[java.lang.String, Node],
-    removeNamedItemNS: js.Function2[java.lang.String, java.lang.String, Node],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
-    setNamedItem: js.Function1[Node, Node],
-    setNamedItemNS: js.Function1[Node, Node],
-    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    removeNamedItem: java.lang.String => Node,
+    removeNamedItemNS: (java.lang.String, java.lang.String) => Node,
+    setBubbleParent: scala.Boolean => scala.Unit,
+    setNamedItem: Node => Node,
+    setNamedItemNS: Node => Node,
+    getLifecycleContainer: () => titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
   ): NamedNodeMap = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, getLength = getLength, getNamedItem = getNamedItem, getNamedItemNS = getNamedItemNS, item = item, length = length, removeEventListener = removeEventListener, removeNamedItem = removeNamedItem, removeNamedItemNS = removeNamedItemNS, setBubbleParent = setBubbleParent, setNamedItem = setNamedItem, setNamedItemNS = setNamedItemNS)
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getLength = js.Any.fromFunction0(getLength), getNamedItem = js.Any.fromFunction1(getNamedItem), getNamedItemNS = js.Any.fromFunction2(getNamedItemNS), item = js.Any.fromFunction1(item), length = length, removeEventListener = js.Any.fromFunction2(removeEventListener), removeNamedItem = js.Any.fromFunction1(removeNamedItem), removeNamedItemNS = js.Any.fromFunction2(removeNamedItemNS), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setNamedItem = js.Any.fromFunction1(setNamedItem), setNamedItemNS = js.Any.fromFunction1(setNamedItemNS))
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
     __obj.asInstanceOf[NamedNodeMap]

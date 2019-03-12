@@ -17,7 +17,7 @@ object Props {
   @scala.inline
   def apply(
     value: reactDashIntlLib.ReactIntlNs.DateSource,
-    children: js.Function1[/* formattedTime */ java.lang.String, reactLib.reactMod.ReactNs.ReactNode] = null,
+    children: /* formattedTime */ java.lang.String => reactLib.reactMod.ReactNs.ReactNode = null,
     day: java.lang.String = null,
     era: java.lang.String = null,
     format: java.lang.String = null,
@@ -34,7 +34,7 @@ object Props {
     year: java.lang.String = null
   ): Props = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (day != null) __obj.updateDynamic("day")(day)
     if (era != null) __obj.updateDynamic("era")(era)
     if (format != null) __obj.updateDynamic("format")(format)

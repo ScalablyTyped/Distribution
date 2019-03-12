@@ -42,60 +42,21 @@ trait DocumentsResource extends js.Object {
 object DocumentsResource {
   @scala.inline
   def apply(
-    batchGet: js.Function1[
-      gapiDotClientDotFirestoreLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BatchGetDocumentsResponse]
-    ],
-    beginTransaction: js.Function1[
-      gapiDotClientDotFirestoreLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BeginTransactionResponse]
-    ],
-    commit: js.Function1[
-      gapiDotClientDotFirestoreLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CommitResponse]
-    ],
-    createDocument: js.Function1[
-      gapiDotClientDotFirestoreLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Document]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Document]
-    ],
-    list: js.Function1[
-      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackCollectionId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListDocumentsResponse]
-    ],
-    listCollectionIds: js.Function1[
-      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListCollectionIdsResponse]
-    ],
-    listen: js.Function1[
-      gapiDotClientDotFirestoreLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListenResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackCurrentDocumentexists, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Document]
-    ],
-    rollback: js.Function1[
-      gapiDotClientDotFirestoreLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    runQuery: js.Function1[
-      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RunQueryResponse]
-    ],
-    write: js.Function1[
-      gapiDotClientDotFirestoreLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[WriteResponse]
-    ]
+    batchGet: gapiDotClientDotFirestoreLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[BatchGetDocumentsResponse],
+    beginTransaction: gapiDotClientDotFirestoreLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[BeginTransactionResponse],
+    commit: gapiDotClientDotFirestoreLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[CommitResponse],
+    createDocument: gapiDotClientDotFirestoreLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[Document],
+    delete: gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[Document],
+    list: gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackCollectionId => gapiDotClientLib.gapiNs.clientNs.Request[ListDocumentsResponse],
+    listCollectionIds: gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[ListCollectionIdsResponse],
+    listen: gapiDotClientDotFirestoreLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[ListenResponse],
+    patch: gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackCurrentDocumentexists => gapiDotClientLib.gapiNs.clientNs.Request[Document],
+    rollback: gapiDotClientDotFirestoreLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    runQuery: gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[RunQueryResponse],
+    write: gapiDotClientDotFirestoreLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[WriteResponse]
   ): DocumentsResource = {
-    val __obj = js.Dynamic.literal(batchGet = batchGet, beginTransaction = beginTransaction, commit = commit, createDocument = createDocument, delete = delete, get = get, list = list, listCollectionIds = listCollectionIds, listen = listen, patch = patch, rollback = rollback, runQuery = runQuery, write = write)
+    val __obj = js.Dynamic.literal(batchGet = js.Any.fromFunction1(batchGet), beginTransaction = js.Any.fromFunction1(beginTransaction), commit = js.Any.fromFunction1(commit), createDocument = js.Any.fromFunction1(createDocument), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), listCollectionIds = js.Any.fromFunction1(listCollectionIds), listen = js.Any.fromFunction1(listen), patch = js.Any.fromFunction1(patch), rollback = js.Any.fromFunction1(rollback), runQuery = js.Any.fromFunction1(runQuery), write = js.Any.fromFunction1(write))
   
     __obj.asInstanceOf[DocumentsResource]
   }

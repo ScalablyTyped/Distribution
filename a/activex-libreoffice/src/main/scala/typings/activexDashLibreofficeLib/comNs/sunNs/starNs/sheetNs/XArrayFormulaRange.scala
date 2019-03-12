@@ -23,13 +23,13 @@ object XArrayFormulaRange {
   @scala.inline
   def apply(
     ArrayFormula: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getArrayFormula: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setArrayFormula: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getArrayFormula: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setArrayFormula: java.lang.String => scala.Unit
   ): XArrayFormulaRange = {
-    val __obj = js.Dynamic.literal(ArrayFormula = ArrayFormula, acquire = acquire, getArrayFormula = getArrayFormula, queryInterface = queryInterface, release = release, setArrayFormula = setArrayFormula)
+    val __obj = js.Dynamic.literal(ArrayFormula = ArrayFormula, acquire = js.Any.fromFunction0(acquire), getArrayFormula = js.Any.fromFunction0(getArrayFormula), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setArrayFormula = js.Any.fromFunction1(setArrayFormula))
   
     __obj.asInstanceOf[XArrayFormulaRange]
   }

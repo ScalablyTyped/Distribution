@@ -12,8 +12,8 @@ trait Set
 
 object Set {
   @scala.inline
-  def apply(toJSON: js.Function0[js.Any], value: js.Function0[js.Any]): Set = {
-    val __obj = js.Dynamic.literal(toJSON = toJSON, value = value)
+  def apply(toJSON: () => js.Any, value: () => js.Any): Set = {
+    val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON), value = js.Any.fromFunction0(value))
   
     __obj.asInstanceOf[Set]
   }

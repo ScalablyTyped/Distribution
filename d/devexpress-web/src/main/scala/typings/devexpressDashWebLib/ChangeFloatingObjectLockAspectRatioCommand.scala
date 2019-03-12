@@ -22,8 +22,8 @@ trait ChangeFloatingObjectLockAspectRatioCommand extends CommandBase {
 
 object ChangeFloatingObjectLockAspectRatioCommand {
   @scala.inline
-  def apply(execute: js.Function1[scala.Boolean, scala.Boolean], getState: js.Function0[js.Any]): ChangeFloatingObjectLockAspectRatioCommand = {
-    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  def apply(execute: scala.Boolean => scala.Boolean, getState: () => js.Any): ChangeFloatingObjectLockAspectRatioCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
   
     __obj.asInstanceOf[ChangeFloatingObjectLockAspectRatioCommand]
   }

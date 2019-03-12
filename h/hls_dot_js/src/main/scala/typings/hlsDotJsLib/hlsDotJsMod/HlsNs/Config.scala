@@ -515,16 +515,16 @@ object Config {
     timelineController: TimelineController,
     enableWebVTT: js.UndefOr[scala.Boolean] = js.undefined,
     fLoader: org.scalablytyped.runtime.Instantiable1[/* config */ LoaderConfig, Loader] = null,
-    fetchSetup: js.Function2[/* context */ js.Any, /* initParams */ js.Any, stdLib.Request] = null,
+    fetchSetup: (/* context */ js.Any, /* initParams */ js.Any) => stdLib.Request = null,
     pLoader: org.scalablytyped.runtime.Instantiable1[/* config */ LoaderConfig, Loader] = null,
-    xhrSetup: js.Function2[/* xhr */ stdLib.XMLHttpRequest, /* url */ java.lang.String, scala.Unit] = null
+    xhrSetup: (/* xhr */ stdLib.XMLHttpRequest, /* url */ java.lang.String) => scala.Unit = null
   ): Config = {
     val __obj = js.Dynamic.literal(abrBandWidthFactor = abrBandWidthFactor, abrBandWidthUpFactor = abrBandWidthUpFactor, abrController = abrController, abrEwmaDefaultEstimate = abrEwmaDefaultEstimate, abrEwmaFastLive = abrEwmaFastLive, abrEwmaFastVod = abrEwmaFastVod, abrEwmaSlowLive = abrEwmaSlowLive, abrEwmaSlowVod = abrEwmaSlowVod, abrMaxWithRealBitrate = abrMaxWithRealBitrate, appendErrorMaxRetry = appendErrorMaxRetry, autoStartLoad = autoStartLoad, capLevelToPlayerSize = capLevelToPlayerSize, captionsTextTrack1Label = captionsTextTrack1Label, captionsTextTrack1LanguagedCode = captionsTextTrack1LanguagedCode, captionsTextTrack2Label = captionsTextTrack2Label, captionsTextTrack2LanguageCode = captionsTextTrack2LanguageCode, debug = debug.asInstanceOf[js.Any], defaultAudioCodec = defaultAudioCodec, enableCEA708Captions = enableCEA708Captions, enableSoftwareAES = enableSoftwareAES, enableWorker = enableWorker, forceKeyFrameOnDiscontinuity = forceKeyFrameOnDiscontinuity, fragLoadingMaxRetry = fragLoadingMaxRetry, fragLoadingMaxRetryDelay = fragLoadingMaxRetryDelay, fragLoadingRetryDelay = fragLoadingRetryDelay, fragLoadingTimeOut = fragLoadingTimeOut, highBufferWatchdogPeriod = highBufferWatchdogPeriod, initialLiveManifestSize = initialLiveManifestSize, levelLoadingMaxRetry = levelLoadingMaxRetry, levelLoadingMaxRetryTimeout = levelLoadingMaxRetryTimeout, levelLoadingRetryDelay = levelLoadingRetryDelay, levelLoadingTimeOut = levelLoadingTimeOut, liveBackBufferLength = liveBackBufferLength, liveDurationInfinity = liveDurationInfinity, liveMaxLatencyDuration = liveMaxLatencyDuration, liveMaxLatencyDurationCount = liveMaxLatencyDurationCount, liveSyncDuration = liveSyncDuration, liveSyncDurationCount = liveSyncDurationCount, loader = loader, lowBufferWatchdogPeriod = lowBufferWatchdogPeriod, manifestLoadingMaxRetry = manifestLoadingMaxRetry, manifestLoadingMaxRetryTimeout = manifestLoadingMaxRetryTimeout, manifestLoadingRetryDelay = manifestLoadingRetryDelay, manifestLoadingTimeOut = manifestLoadingTimeOut, maxAudioFramesDrift = maxAudioFramesDrift, maxBufferHole = maxBufferHole, maxBufferLength = maxBufferLength, maxBufferSize = maxBufferSize, maxFragLookUpTolerance = maxFragLookUpTolerance, maxLoadingDelay = maxLoadingDelay, maxMaxBufferLength = maxMaxBufferLength, maxSeekHole = maxSeekHole, maxStarvationDelay = maxStarvationDelay, minAutoBitrate = minAutoBitrate, nudgeMaxRetry = nudgeMaxRetry, nudgeOffset = nudgeOffset, startFragPrefetch = startFragPrefetch, startLevel = startLevel, startPosition = startPosition, stretchShortVideoTrack = stretchShortVideoTrack, timelineController = timelineController)
     if (!js.isUndefined(enableWebVTT)) __obj.updateDynamic("enableWebVTT")(enableWebVTT)
     if (fLoader != null) __obj.updateDynamic("fLoader")(fLoader)
-    if (fetchSetup != null) __obj.updateDynamic("fetchSetup")(fetchSetup)
+    if (fetchSetup != null) __obj.updateDynamic("fetchSetup")(js.Any.fromFunction2(fetchSetup))
     if (pLoader != null) __obj.updateDynamic("pLoader")(pLoader)
-    if (xhrSetup != null) __obj.updateDynamic("xhrSetup")(xhrSetup)
+    if (xhrSetup != null) __obj.updateDynamic("xhrSetup")(js.Any.fromFunction2(xhrSetup))
     __obj.asInstanceOf[Config]
   }
 }

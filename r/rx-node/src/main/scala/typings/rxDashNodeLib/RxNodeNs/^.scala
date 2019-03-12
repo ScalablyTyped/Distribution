@@ -58,7 +58,7 @@ object ^ extends js.Object {
   	 * @param {String} eventName The event name to emit onNext calls.
   	 * @returns {EventEmitter} An EventEmitter which emits the given eventName for each onNext call in addition to 'error' and 'end' events.
   	 */
-  def toEventEmitter[T](observable: rxDashLiteDashAggregatesLib.RxNs.Observable[T], eventName: java.lang.String): rxDashNodeLib.RxNodeNs.PublishableEventEmitter = js.native
+  def toEventEmitter[T](observable: rxDashLiteDashAggregatesLib.RxNs.Observable[T], eventName: java.lang.String): PublishableEventEmitter = js.native
   /**
   	 * Writes an observable sequence to a stream
   	 * @param {Observable} observable Observable sequence to write to a stream.

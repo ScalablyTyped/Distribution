@@ -42,9 +42,9 @@ object XMetadatable {
     MetadataReference: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair,
     Namespace: java.lang.String,
     StringValue: java.lang.String,
-    ensureMetadataReference: js.Function0[scala.Unit]
+    ensureMetadataReference: () => scala.Unit
   ): XMetadatable = {
-    val __obj = js.Dynamic.literal(LocalName = LocalName, MetadataReference = MetadataReference, Namespace = Namespace, StringValue = StringValue, ensureMetadataReference = ensureMetadataReference)
+    val __obj = js.Dynamic.literal(LocalName = LocalName, MetadataReference = MetadataReference, Namespace = Namespace, StringValue = StringValue, ensureMetadataReference = js.Any.fromFunction0(ensureMetadataReference))
   
     __obj.asInstanceOf[XMetadatable]
   }

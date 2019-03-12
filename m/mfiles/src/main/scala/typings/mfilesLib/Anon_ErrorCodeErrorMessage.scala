@@ -21,19 +21,14 @@ trait Anon_ErrorCodeErrorMessage extends js.Object {
 object Anon_ErrorCodeErrorMessage {
   @scala.inline
   def apply(
-    Finally: js.Function0[scala.Unit] = null,
-    OnError: js.Function3[
-      /* errorCode */ scala.Double, 
-      /* errorMessage */ java.lang.String, 
-      /* errorStack */ java.lang.String, 
-      scala.Unit
-    ] = null,
-    OnSuccess: js.Function0[scala.Unit] = null
+    Finally: () => scala.Unit = null,
+    OnError: (/* errorCode */ scala.Double, /* errorMessage */ java.lang.String, /* errorStack */ java.lang.String) => scala.Unit = null,
+    OnSuccess: () => scala.Unit = null
   ): Anon_ErrorCodeErrorMessage = {
     val __obj = js.Dynamic.literal()
-    if (Finally != null) __obj.updateDynamic("Finally")(Finally)
-    if (OnError != null) __obj.updateDynamic("OnError")(OnError)
-    if (OnSuccess != null) __obj.updateDynamic("OnSuccess")(OnSuccess)
+    if (Finally != null) __obj.updateDynamic("Finally")(js.Any.fromFunction0(Finally))
+    if (OnError != null) __obj.updateDynamic("OnError")(js.Any.fromFunction3(OnError))
+    if (OnSuccess != null) __obj.updateDynamic("OnSuccess")(js.Any.fromFunction0(OnSuccess))
     __obj.asInstanceOf[Anon_ErrorCodeErrorMessage]
   }
 }

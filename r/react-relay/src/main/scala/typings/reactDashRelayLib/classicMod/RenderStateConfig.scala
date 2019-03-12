@@ -20,12 +20,12 @@ object RenderStateConfig {
     stale: scala.Boolean,
     error: stdLib.Error = null,
     props: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    retry: js.Function0[scala.Unit] = null
+    retry: () => scala.Unit = null
   ): RenderStateConfig = {
     val __obj = js.Dynamic.literal(done = done, stale = stale)
     if (error != null) __obj.updateDynamic("error")(error)
     if (props != null) __obj.updateDynamic("props")(props)
-    if (retry != null) __obj.updateDynamic("retry")(retry)
+    if (retry != null) __obj.updateDynamic("retry")(js.Any.fromFunction0(retry))
     __obj.asInstanceOf[RenderStateConfig]
   }
 }

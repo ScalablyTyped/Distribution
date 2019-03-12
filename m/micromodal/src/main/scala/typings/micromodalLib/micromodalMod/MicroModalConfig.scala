@@ -35,8 +35,8 @@ object MicroModalConfig {
     debugMode: js.UndefOr[scala.Boolean] = js.undefined,
     disableFocus: js.UndefOr[scala.Boolean] = js.undefined,
     disableScroll: js.UndefOr[scala.Boolean] = js.undefined,
-    onClose: js.Function1[/* modal */ js.UndefOr[stdLib.HTMLElement], scala.Unit] = null,
-    onShow: js.Function1[/* modal */ js.UndefOr[stdLib.HTMLElement], scala.Unit] = null,
+    onClose: /* modal */ js.UndefOr[stdLib.HTMLElement] => scala.Unit = null,
+    onShow: /* modal */ js.UndefOr[stdLib.HTMLElement] => scala.Unit = null,
     openTrigger: java.lang.String = null
   ): MicroModalConfig = {
     val __obj = js.Dynamic.literal()
@@ -45,8 +45,8 @@ object MicroModalConfig {
     if (!js.isUndefined(debugMode)) __obj.updateDynamic("debugMode")(debugMode)
     if (!js.isUndefined(disableFocus)) __obj.updateDynamic("disableFocus")(disableFocus)
     if (!js.isUndefined(disableScroll)) __obj.updateDynamic("disableScroll")(disableScroll)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (openTrigger != null) __obj.updateDynamic("openTrigger")(openTrigger)
     __obj.asInstanceOf[MicroModalConfig]
   }

@@ -16,9 +16,9 @@ object DropdownToggleRenderProps {
   def apply(
     props: reactDashOverlaysLib.Anon_Ariaexpanded,
     show: scala.Boolean,
-    toggle: js.Function1[scala.Boolean, scala.Unit]
+    toggle: scala.Boolean => scala.Unit
   ): DropdownToggleRenderProps = {
-    val __obj = js.Dynamic.literal(props = props, show = show, toggle = toggle)
+    val __obj = js.Dynamic.literal(props = props, show = show, toggle = js.Any.fromFunction1(toggle))
   
     __obj.asInstanceOf[DropdownToggleRenderProps]
   }

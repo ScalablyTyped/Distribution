@@ -35,17 +35,14 @@ trait XExtendedFilterDetection
 object XExtendedFilterDetection {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    detect: js.Function1[
-      js.Array[
-        activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-      ], 
-      java.lang.String
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    detect: js.Array[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ] => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XExtendedFilterDetection = {
-    val __obj = js.Dynamic.literal(acquire = acquire, detect = detect, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), detect = js.Any.fromFunction1(detect), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XExtendedFilterDetection]
   }

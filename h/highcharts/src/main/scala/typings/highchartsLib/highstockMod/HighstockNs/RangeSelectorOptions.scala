@@ -36,7 +36,7 @@ object RangeSelectorOptions {
     inputBoxHeight: scala.Int | scala.Double = null,
     inputBoxWidth: scala.Int | scala.Double = null,
     inputDateFormat: java.lang.String = null,
-    inputDateParser: js.Function1[/* date */ java.lang.String, scala.Double] = null,
+    inputDateParser: /* date */ java.lang.String => scala.Double = null,
     inputEditDateFormat: java.lang.String = null,
     inputEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     inputPosition: highchartsLib.Anon_Align = null,
@@ -54,7 +54,7 @@ object RangeSelectorOptions {
     if (inputBoxHeight != null) __obj.updateDynamic("inputBoxHeight")(inputBoxHeight.asInstanceOf[js.Any])
     if (inputBoxWidth != null) __obj.updateDynamic("inputBoxWidth")(inputBoxWidth.asInstanceOf[js.Any])
     if (inputDateFormat != null) __obj.updateDynamic("inputDateFormat")(inputDateFormat)
-    if (inputDateParser != null) __obj.updateDynamic("inputDateParser")(inputDateParser)
+    if (inputDateParser != null) __obj.updateDynamic("inputDateParser")(js.Any.fromFunction1(inputDateParser))
     if (inputEditDateFormat != null) __obj.updateDynamic("inputEditDateFormat")(inputEditDateFormat)
     if (!js.isUndefined(inputEnabled)) __obj.updateDynamic("inputEnabled")(inputEnabled)
     if (inputPosition != null) __obj.updateDynamic("inputPosition")(inputPosition)

@@ -14,11 +14,11 @@ trait IAccessControlEntryKeys extends js.Object {
 object IAccessControlEntryKeys {
   @scala.inline
   def apply(
-    Clone: js.Function0[IAccessControlEntryKeys],
+    Clone: () => IAccessControlEntryKeys,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IAccessControlEntryKey]
+    Item: scala.Double => IAccessControlEntryKey
   ): IAccessControlEntryKeys = {
-    val __obj = js.Dynamic.literal(Clone = Clone, Count = Count, Item = Item)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Count = Count, Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[IAccessControlEntryKeys]
   }

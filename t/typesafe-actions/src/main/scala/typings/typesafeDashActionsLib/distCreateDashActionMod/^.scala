@@ -15,7 +15,7 @@ object ^ extends js.Object {
       /* actionCallback */ js.Function2[
         /* payload */ js.UndefOr[js.Any], 
         /* meta */ js.UndefOr[js.Any], 
-        typesafeDashActionsLib.distCreateDashActionMod.PayloadMetaAction[T, _, _]
+        PayloadMetaAction[T, _, _]
       ], 
       AC
     ]

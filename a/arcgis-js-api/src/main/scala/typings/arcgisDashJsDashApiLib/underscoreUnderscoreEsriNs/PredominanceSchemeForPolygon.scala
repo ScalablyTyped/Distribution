@@ -45,14 +45,14 @@ object PredominanceSchemeForPolygon {
   def apply(
     colors: js.Array[Color],
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     noDataColor: Color,
     opacity: scala.Double,
     outline: PredominanceSchemeForPolygonOutline,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     sizeScheme: SizeSchemeForPolygon
   ): PredominanceSchemeForPolygon = {
-    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = hasOwnProperty, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = propertyIsEnumerable, sizeScheme = sizeScheme)
+    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sizeScheme = sizeScheme)
   
     __obj.asInstanceOf[PredominanceSchemeForPolygon]
   }

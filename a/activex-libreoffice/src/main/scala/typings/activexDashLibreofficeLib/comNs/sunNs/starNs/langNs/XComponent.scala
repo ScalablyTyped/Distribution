@@ -63,14 +63,14 @@ trait XComponent
 object XComponent {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[XEventListener, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[XEventListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: XEventListener => scala.Unit,
+    dispose: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: XEventListener => scala.Unit
   ): XComponent = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addEventListener = addEventListener, dispose = dispose, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), dispose = js.Any.fromFunction0(dispose), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener))
   
     __obj.asInstanceOf[XComponent]
   }

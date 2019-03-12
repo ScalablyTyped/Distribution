@@ -108,7 +108,7 @@ object pkiNs extends js.Object {
   trait oids
     extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
   
-  var oids: oids = js.native
+  var oids: nodeDashForgeLib.nodeDashForgeMod.pkiNs.oids = js.native
   def certificateFromAsn1(obj: nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1): Certificate = js.native
   def certificateFromAsn1(obj: nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1, computeHash: scala.Boolean): Certificate = js.native
   def certificateFromPem(pem: PEM): Certificate = js.native
@@ -234,12 +234,12 @@ object pkiNs extends js.Object {
     def generateKeyPair(
       bits: scala.Double,
       e: scala.Double,
-      callback: js.Function2[/* err */ nodeLib.Error, /* keypair */ KeyPair, scala.Unit]
+      callback: js.Function2[/* err */ stdLib.Error, /* keypair */ KeyPair, scala.Unit]
     ): KeyPair = js.native
     def generateKeyPair(options: GenerateKeyPairOptions): KeyPair = js.native
     def generateKeyPair(
       options: GenerateKeyPairOptions,
-      callback: js.Function2[/* err */ nodeLib.Error, /* keypair */ KeyPair, scala.Unit]
+      callback: js.Function2[/* err */ stdLib.Error, /* keypair */ KeyPair, scala.Unit]
     ): KeyPair = js.native
     def setPublicKey(n: js.Any, e: js.Any): js.Any = js.native
     type EncryptionScheme = _EncryptionScheme | scala.Null

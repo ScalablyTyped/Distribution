@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def withResizeDetector(WrappedComponent: reactLib.reactMod.ReactNs.ReactNode): reactLib.reactMod.Component[js.Object, js.Object, _] = js.native
-  def withResizeDetector(
-    WrappedComponent: reactLib.reactMod.ReactNs.ReactNode,
-    props: reactDashResizeDashDetectorLib.reactDashResizeDashDetectorMod.ReactResizeDetectorProps
-  ): reactLib.reactMod.Component[js.Object, js.Object, _] = js.native
+  def withResizeDetector(WrappedComponent: reactLib.reactMod.ReactNs.ReactNode, props: ReactResizeDetectorProps): reactLib.reactMod.Component[js.Object, js.Object, _] = js.native
 }
 

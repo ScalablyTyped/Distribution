@@ -15,11 +15,11 @@ trait RTCDtlsTransport extends js.Object {
 object RTCDtlsTransport {
   @scala.inline
   def apply(
-    getRemoteCertificates: js.Function0[js.Array[stdLib.ArrayBuffer]],
+    getRemoteCertificates: () => js.Array[stdLib.ArrayBuffer],
     onstatechange: DtlsTransportEventHandler,
     transport: RTCIceTransport
   ): RTCDtlsTransport = {
-    val __obj = js.Dynamic.literal(getRemoteCertificates = getRemoteCertificates, onstatechange = onstatechange.asInstanceOf[js.Any], transport = transport)
+    val __obj = js.Dynamic.literal(getRemoteCertificates = js.Any.fromFunction0(getRemoteCertificates), onstatechange = onstatechange.asInstanceOf[js.Any], transport = transport)
   
     __obj.asInstanceOf[RTCDtlsTransport]
   }

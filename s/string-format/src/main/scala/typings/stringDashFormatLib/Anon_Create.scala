@@ -21,13 +21,10 @@ trait Anon_Create extends js.Object {
 object Anon_Create {
   @scala.inline
   def apply(
-    create: js.Function1[
-      stringDashFormatLib.stringDashFormatMod.Transformers, 
-      /* import warning: ImportType.apply Failed type conversion: typeof Format */ js.Any
-    ],
-    extend: js.Function2[js.Any, stringDashFormatLib.stringDashFormatMod.Transformers, scala.Unit]
+    create: stringDashFormatLib.stringDashFormatMod.Transformers => /* import warning: ImportType.apply Failed type conversion: typeof Format */ js.Any,
+    extend: (js.Any, stringDashFormatLib.stringDashFormatMod.Transformers) => scala.Unit
   ): Anon_Create = {
-    val __obj = js.Dynamic.literal(create = create, extend = extend)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), extend = js.Any.fromFunction2(extend))
   
     __obj.asInstanceOf[Anon_Create]
   }

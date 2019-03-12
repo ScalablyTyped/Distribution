@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Map extends js.Object {
-  var Draw: Draw = js.native
+  var Draw: leafletDotPmLib.leafletMod.PMNs.Draw = js.native
   def addControls(): scala.Unit = js.native
   def addControls(options: ToolbarOptions): scala.Unit = js.native
   def disableDraw(shape: java.lang.String): scala.Unit = js.native

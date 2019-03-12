@@ -21,26 +21,12 @@ trait IDataProtectionProvider extends js.Object {
 object IDataProtectionProvider {
   @scala.inline
   def apply(
-    protectAsync: js.Function1[
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer]
-    ],
-    protectStreamAsync: js.Function2[
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IOutputStream, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncAction
-    ],
-    unprotectAsync: js.Function1[
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer]
-    ],
-    unprotectStreamAsync: js.Function2[
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IOutputStream, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncAction
-    ]
+    protectAsync: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer],
+    protectStreamAsync: (winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream, winrtLib.WindowsNs.StorageNs.StreamsNs.IOutputStream) => winrtLib.WindowsNs.FoundationNs.IAsyncAction,
+    unprotectAsync: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer],
+    unprotectStreamAsync: (winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream, winrtLib.WindowsNs.StorageNs.StreamsNs.IOutputStream) => winrtLib.WindowsNs.FoundationNs.IAsyncAction
   ): IDataProtectionProvider = {
-    val __obj = js.Dynamic.literal(protectAsync = protectAsync, protectStreamAsync = protectStreamAsync, unprotectAsync = unprotectAsync, unprotectStreamAsync = unprotectStreamAsync)
+    val __obj = js.Dynamic.literal(protectAsync = js.Any.fromFunction1(protectAsync), protectStreamAsync = js.Any.fromFunction2(protectStreamAsync), unprotectAsync = js.Any.fromFunction1(unprotectAsync), unprotectStreamAsync = js.Any.fromFunction2(unprotectStreamAsync))
   
     __obj.asInstanceOf[IDataProtectionProvider]
   }

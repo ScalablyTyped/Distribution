@@ -15,13 +15,13 @@ trait GlideServletRequest extends js.Object {
 object GlideServletRequest {
   @scala.inline
   def apply(
-    getContentType: js.Function0[java.lang.String],
-    getHeader: js.Function1[java.lang.String, java.lang.String],
-    getParameter: js.Function1[java.lang.String, java.lang.String],
-    toString: js.Function0[java.lang.String],
-    writeOutput: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    getContentType: () => java.lang.String,
+    getHeader: java.lang.String => java.lang.String,
+    getParameter: java.lang.String => java.lang.String,
+    toString: () => java.lang.String,
+    writeOutput: (java.lang.String, java.lang.String) => scala.Unit
   ): GlideServletRequest = {
-    val __obj = js.Dynamic.literal(getContentType = getContentType, getHeader = getHeader, getParameter = getParameter, toString = toString, writeOutput = writeOutput)
+    val __obj = js.Dynamic.literal(getContentType = js.Any.fromFunction0(getContentType), getHeader = js.Any.fromFunction1(getHeader), getParameter = js.Any.fromFunction1(getParameter), toString = js.Any.fromFunction0(toString), writeOutput = js.Any.fromFunction2(writeOutput))
   
     __obj.asInstanceOf[GlideServletRequest]
   }

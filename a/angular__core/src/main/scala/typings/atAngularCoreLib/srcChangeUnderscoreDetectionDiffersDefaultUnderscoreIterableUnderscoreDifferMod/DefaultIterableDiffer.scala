@@ -26,7 +26,7 @@ class DefaultIterableDiffer[V] ()
   var _removalsTail: js.Any = js.native
   var _trackByFn: js.Any = js.native
   var _unlinkedRecords: js.Any = js.native
-  val collection: js.Array[V] | nodeLib.Iterable[V] | scala.Null = js.native
+  val collection: js.Array[V] | stdLib.Iterable[V] | scala.Null = js.native
   val isDirty: scala.Boolean = js.native
   val length: scala.Double = js.native
   def check(

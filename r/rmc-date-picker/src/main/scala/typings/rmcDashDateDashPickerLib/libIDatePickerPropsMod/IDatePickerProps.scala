@@ -39,17 +39,17 @@ object IDatePickerProps {
     date: js.Any = null,
     defaultDate: js.Any = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    formatDay: js.Function2[/* day */ scala.Double, /* date */ js.UndefOr[js.Any], _] = null,
-    formatMonth: js.Function2[/* month */ scala.Double, /* date */ js.UndefOr[js.Any], _] = null,
+    formatDay: (/* day */ scala.Double, /* date */ js.UndefOr[js.Any]) => _ = null,
+    formatMonth: (/* month */ scala.Double, /* date */ js.UndefOr[js.Any]) => _ = null,
     itemStyle: js.Any = null,
     locale: js.Any = null,
     maxDate: js.Any = null,
     minDate: js.Any = null,
     minuteStep: scala.Int | scala.Double = null,
     mode: java.lang.String = null,
-    onDateChange: js.Function1[/* date */ js.Any, scala.Unit] = null,
-    onScrollChange: js.Function3[/* date */ js.Any, /* vals */ js.Any, /* index */ scala.Double, scala.Unit] = null,
-    onValueChange: js.Function2[/* vals */ js.Any, /* index */ scala.Double, scala.Unit] = null,
+    onDateChange: /* date */ js.Any => scala.Unit = null,
+    onScrollChange: (/* date */ js.Any, /* vals */ js.Any, /* index */ scala.Double) => scala.Unit = null,
+    onValueChange: (/* vals */ js.Any, /* index */ scala.Double) => scala.Unit = null,
     pickerPrefixCls: java.lang.String = null,
     prefixCls: java.lang.String = null,
     rootNativeProps: js.Object = null,
@@ -61,17 +61,17 @@ object IDatePickerProps {
     if (date != null) __obj.updateDynamic("date")(date)
     if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (formatDay != null) __obj.updateDynamic("formatDay")(formatDay)
-    if (formatMonth != null) __obj.updateDynamic("formatMonth")(formatMonth)
+    if (formatDay != null) __obj.updateDynamic("formatDay")(js.Any.fromFunction2(formatDay))
+    if (formatMonth != null) __obj.updateDynamic("formatMonth")(js.Any.fromFunction2(formatMonth))
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
     if (minDate != null) __obj.updateDynamic("minDate")(minDate)
     if (minuteStep != null) __obj.updateDynamic("minuteStep")(minuteStep.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (onDateChange != null) __obj.updateDynamic("onDateChange")(onDateChange)
-    if (onScrollChange != null) __obj.updateDynamic("onScrollChange")(onScrollChange)
-    if (onValueChange != null) __obj.updateDynamic("onValueChange")(onValueChange)
+    if (onDateChange != null) __obj.updateDynamic("onDateChange")(js.Any.fromFunction1(onDateChange))
+    if (onScrollChange != null) __obj.updateDynamic("onScrollChange")(js.Any.fromFunction3(onScrollChange))
+    if (onValueChange != null) __obj.updateDynamic("onValueChange")(js.Any.fromFunction2(onValueChange))
     if (pickerPrefixCls != null) __obj.updateDynamic("pickerPrefixCls")(pickerPrefixCls)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (rootNativeProps != null) __obj.updateDynamic("rootNativeProps")(rootNativeProps)

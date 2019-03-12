@@ -28,11 +28,11 @@ trait Validator extends js.Object {
 object Validator {
   @scala.inline
   def apply(
-    validate: js.Function1[atAngularFormsLib.srcModelMod.AbstractControl, ValidationErrors | scala.Null],
-    registerOnValidatorChange: js.Function1[/* fn */ js.Function0[scala.Unit], scala.Unit] = null
+    validate: atAngularFormsLib.srcModelMod.AbstractControl => ValidationErrors | scala.Null,
+    registerOnValidatorChange: /* fn */ js.Function0[scala.Unit] => scala.Unit = null
   ): Validator = {
-    val __obj = js.Dynamic.literal(validate = validate)
-    if (registerOnValidatorChange != null) __obj.updateDynamic("registerOnValidatorChange")(registerOnValidatorChange)
+    val __obj = js.Dynamic.literal(validate = js.Any.fromFunction1(validate))
+    if (registerOnValidatorChange != null) __obj.updateDynamic("registerOnValidatorChange")(js.Any.fromFunction1(registerOnValidatorChange))
     __obj.asInstanceOf[Validator]
   }
 }

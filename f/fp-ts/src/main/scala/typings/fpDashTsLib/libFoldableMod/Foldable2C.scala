@@ -16,14 +16,9 @@ object Foldable2C {
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */, L](
     URI: F,
     _L: L,
-    reduce: js.Function3[
-      fpDashTsLib.libHKTMod.Type2[F, L, js.Any], 
-      js.Any, 
-      js.Function2[js.Any, js.Any, js.Any], 
-      js.Any
-    ]
+    reduce: (fpDashTsLib.libHKTMod.Type2[F, L, js.Any], js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any
   ): Foldable2C[F, L] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], reduce = reduce)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], reduce = js.Any.fromFunction3(reduce))
   
     __obj.asInstanceOf[Foldable2C[F, L]]
   }

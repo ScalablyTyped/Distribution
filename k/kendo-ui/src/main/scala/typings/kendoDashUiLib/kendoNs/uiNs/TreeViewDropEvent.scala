@@ -17,7 +17,7 @@ trait TreeViewDropEvent extends TreeViewEvent {
 object TreeViewDropEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: TreeView,
     destinationNode: stdLib.Element = null,
@@ -27,7 +27,7 @@ object TreeViewDropEvent {
     sourceNode: stdLib.Element = null,
     valid: js.UndefOr[scala.Boolean] = js.undefined
   ): TreeViewDropEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (destinationNode != null) __obj.updateDynamic("destinationNode")(destinationNode)
     if (dropPosition != null) __obj.updateDynamic("dropPosition")(dropPosition)
     if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget)

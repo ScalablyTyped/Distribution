@@ -15,15 +15,12 @@ trait Radio extends js.Object {
 object Radio {
   @scala.inline
   def apply(
-    channel: js.Function1[
-      java.lang.String, 
-      backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Channel
-    ],
-    log: js.Function3[java.lang.String, java.lang.String, /* repeated */ js.Any, scala.Unit],
-    tuneIn: js.Function1[java.lang.String, Radio],
-    tuneOut: js.Function1[java.lang.String, Radio]
+    channel: java.lang.String => backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Channel,
+    log: (java.lang.String, java.lang.String, /* repeated */ js.Any) => scala.Unit,
+    tuneIn: java.lang.String => Radio,
+    tuneOut: java.lang.String => Radio
   ): Radio = {
-    val __obj = js.Dynamic.literal(channel = channel, log = log, tuneIn = tuneIn, tuneOut = tuneOut)
+    val __obj = js.Dynamic.literal(channel = js.Any.fromFunction1(channel), log = js.Any.fromFunction3(log), tuneIn = js.Any.fromFunction1(tuneIn), tuneOut = js.Any.fromFunction1(tuneOut))
   
     __obj.asInstanceOf[Radio]
   }

@@ -20,16 +20,16 @@ trait XTransferable2 extends XTransferable {
 object XTransferable2 {
   @scala.inline
   def apply(
-    TransferDataFlavors: activexDashInteropLib.SafeArray[DataFlavor],
-    acquire: js.Function0[scala.Unit],
-    getTransferData: js.Function1[DataFlavor, js.Any],
-    getTransferData2: js.Function2[DataFlavor, java.lang.String, js.Any],
-    getTransferDataFlavors: js.Function0[activexDashInteropLib.SafeArray[DataFlavor]],
-    isDataFlavorSupported: js.Function1[DataFlavor, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    TransferDataFlavors: stdLib.SafeArray[DataFlavor],
+    acquire: () => scala.Unit,
+    getTransferData: DataFlavor => js.Any,
+    getTransferData2: (DataFlavor, java.lang.String) => js.Any,
+    getTransferDataFlavors: () => stdLib.SafeArray[DataFlavor],
+    isDataFlavorSupported: DataFlavor => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTransferable2 = {
-    val __obj = js.Dynamic.literal(TransferDataFlavors = TransferDataFlavors, acquire = acquire, getTransferData = getTransferData, getTransferData2 = getTransferData2, getTransferDataFlavors = getTransferDataFlavors, isDataFlavorSupported = isDataFlavorSupported, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(TransferDataFlavors = TransferDataFlavors, acquire = js.Any.fromFunction0(acquire), getTransferData = js.Any.fromFunction1(getTransferData), getTransferData2 = js.Any.fromFunction2(getTransferData2), getTransferDataFlavors = js.Any.fromFunction0(getTransferDataFlavors), isDataFlavorSupported = js.Any.fromFunction1(isDataFlavorSupported), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTransferable2]
   }

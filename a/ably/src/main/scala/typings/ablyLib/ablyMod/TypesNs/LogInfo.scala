@@ -19,12 +19,9 @@ trait LogInfo extends js.Object {
 
 object LogInfo {
   @scala.inline
-  def apply(
-    handler: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    level: scala.Int | scala.Double = null
-  ): LogInfo = {
+  def apply(handler: /* repeated */ js.Any => scala.Unit = null, level: scala.Int | scala.Double = null): LogInfo = {
     val __obj = js.Dynamic.literal()
-    if (handler != null) __obj.updateDynamic("handler")(handler)
+    if (handler != null) __obj.updateDynamic("handler")(js.Any.fromFunction1(handler))
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogInfo]
   }

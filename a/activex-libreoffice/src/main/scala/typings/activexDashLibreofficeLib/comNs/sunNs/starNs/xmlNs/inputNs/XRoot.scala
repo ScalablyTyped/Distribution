@@ -38,16 +38,16 @@ trait XRoot
 object XRoot {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    endDocument: js.Function0[scala.Unit],
-    processingInstruction: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setDocumentLocator: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XLocator, scala.Unit],
-    startDocument: js.Function1[XNamespaceMapping, scala.Unit],
-    startRootElement: js.Function3[scala.Double, java.lang.String, XAttributes, XElement]
+    acquire: () => scala.Unit,
+    endDocument: () => scala.Unit,
+    processingInstruction: (java.lang.String, java.lang.String) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setDocumentLocator: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XLocator => scala.Unit,
+    startDocument: XNamespaceMapping => scala.Unit,
+    startRootElement: (scala.Double, java.lang.String, XAttributes) => XElement
   ): XRoot = {
-    val __obj = js.Dynamic.literal(acquire = acquire, endDocument = endDocument, processingInstruction = processingInstruction, queryInterface = queryInterface, release = release, setDocumentLocator = setDocumentLocator, startDocument = startDocument, startRootElement = startRootElement)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), endDocument = js.Any.fromFunction0(endDocument), processingInstruction = js.Any.fromFunction2(processingInstruction), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDocumentLocator = js.Any.fromFunction1(setDocumentLocator), startDocument = js.Any.fromFunction1(startDocument), startRootElement = js.Any.fromFunction3(startRootElement))
   
     __obj.asInstanceOf[XRoot]
   }

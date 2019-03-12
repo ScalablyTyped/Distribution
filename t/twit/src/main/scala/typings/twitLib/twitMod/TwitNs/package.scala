@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object TwitNs {
   type Callback = js.Function3[
-    /* err */ nodeLib.Error, 
+    /* err */ stdLib.Error, 
     /* result */ Response, 
     /* response */ nodeLib.httpMod.IncomingMessage, 
     scala.Unit

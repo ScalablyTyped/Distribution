@@ -30,27 +30,27 @@ trait IRow extends js.Object {
 object IRow {
   @scala.inline
   def apply(
-    afterSelectionChange: js.Function0[scala.Unit],
-    alternatingRowClass: js.Function0[scala.Unit],
-    beforeSelectionChange: js.Function0[scala.Unit],
+    afterSelectionChange: () => scala.Unit,
+    alternatingRowClass: () => scala.Unit,
+    beforeSelectionChange: () => scala.Unit,
     config: IRowConfig,
-    continueSelection: js.Function1[js.Any, scala.Unit],
-    copy: js.Function0[IRow],
+    continueSelection: js.Any => scala.Unit,
+    copy: () => IRow,
     cursor: java.lang.String,
-    ensureEntity: js.Function1[js.Any, scala.Unit],
+    ensureEntity: js.Any => scala.Unit,
     entity: js.Any,
-    getProperty: js.Function1[java.lang.String, js.Any],
+    getProperty: java.lang.String => js.Any,
     offsetTop: scala.Double,
     rowDisplayIndex: scala.Double,
     rowIndex: scala.Double,
     selected: scala.Boolean,
     selectionProvider: ISelectionProvider,
-    setSelection: js.Function1[scala.Boolean, scala.Unit],
-    setVars: js.Function1[IRow, scala.Unit],
-    toggleSelected: js.Function1[js.Any, scala.Boolean],
+    setSelection: scala.Boolean => scala.Unit,
+    setVars: IRow => scala.Unit,
+    toggleSelected: js.Any => scala.Boolean,
     utils: js.Any
   ): IRow = {
-    val __obj = js.Dynamic.literal(afterSelectionChange = afterSelectionChange, alternatingRowClass = alternatingRowClass, beforeSelectionChange = beforeSelectionChange, config = config, continueSelection = continueSelection, copy = copy, cursor = cursor, ensureEntity = ensureEntity, entity = entity, getProperty = getProperty, offsetTop = offsetTop, rowDisplayIndex = rowDisplayIndex, rowIndex = rowIndex, selected = selected, selectionProvider = selectionProvider, setSelection = setSelection, setVars = setVars, toggleSelected = toggleSelected, utils = utils)
+    val __obj = js.Dynamic.literal(afterSelectionChange = js.Any.fromFunction0(afterSelectionChange), alternatingRowClass = js.Any.fromFunction0(alternatingRowClass), beforeSelectionChange = js.Any.fromFunction0(beforeSelectionChange), config = config, continueSelection = js.Any.fromFunction1(continueSelection), copy = js.Any.fromFunction0(copy), cursor = cursor, ensureEntity = js.Any.fromFunction1(ensureEntity), entity = entity, getProperty = js.Any.fromFunction1(getProperty), offsetTop = offsetTop, rowDisplayIndex = rowDisplayIndex, rowIndex = rowIndex, selected = selected, selectionProvider = selectionProvider, setSelection = js.Any.fromFunction1(setSelection), setVars = js.Any.fromFunction1(setVars), toggleSelected = js.Any.fromFunction1(toggleSelected), utils = utils)
   
     __obj.asInstanceOf[IRow]
   }

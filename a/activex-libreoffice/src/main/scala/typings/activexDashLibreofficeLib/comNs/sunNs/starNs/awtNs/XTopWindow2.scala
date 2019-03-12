@@ -29,16 +29,16 @@ object XTopWindow2 {
     Display: scala.Double,
     IsMaximized: scala.Boolean,
     IsMinimized: scala.Boolean,
-    acquire: js.Function0[scala.Unit],
-    addTopWindowListener: js.Function1[XTopWindowListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeTopWindowListener: js.Function1[XTopWindowListener, scala.Unit],
-    setMenuBar: js.Function1[XMenuBar, scala.Unit],
-    toBack: js.Function0[scala.Unit],
-    toFront: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addTopWindowListener: XTopWindowListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeTopWindowListener: XTopWindowListener => scala.Unit,
+    setMenuBar: XMenuBar => scala.Unit,
+    toBack: () => scala.Unit,
+    toFront: () => scala.Unit
   ): XTopWindow2 = {
-    val __obj = js.Dynamic.literal(Display = Display, IsMaximized = IsMaximized, IsMinimized = IsMinimized, acquire = acquire, addTopWindowListener = addTopWindowListener, queryInterface = queryInterface, release = release, removeTopWindowListener = removeTopWindowListener, setMenuBar = setMenuBar, toBack = toBack, toFront = toFront)
+    val __obj = js.Dynamic.literal(Display = Display, IsMaximized = IsMaximized, IsMinimized = IsMinimized, acquire = js.Any.fromFunction0(acquire), addTopWindowListener = js.Any.fromFunction1(addTopWindowListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeTopWindowListener = js.Any.fromFunction1(removeTopWindowListener), setMenuBar = js.Any.fromFunction1(setMenuBar), toBack = js.Any.fromFunction0(toBack), toFront = js.Any.fromFunction0(toFront))
   
     __obj.asInstanceOf[XTopWindow2]
   }

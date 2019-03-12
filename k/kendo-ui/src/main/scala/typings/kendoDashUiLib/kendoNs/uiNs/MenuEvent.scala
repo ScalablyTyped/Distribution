@@ -13,8 +13,8 @@ trait MenuEvent extends js.Object {
 
 object MenuEvent {
   @scala.inline
-  def apply(isDefaultPrevented: js.Function0[scala.Boolean], preventDefault: js.Function, sender: Menu): MenuEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+  def apply(isDefaultPrevented: () => scala.Boolean, preventDefault: js.Function, sender: Menu): MenuEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
   
     __obj.asInstanceOf[MenuEvent]
   }

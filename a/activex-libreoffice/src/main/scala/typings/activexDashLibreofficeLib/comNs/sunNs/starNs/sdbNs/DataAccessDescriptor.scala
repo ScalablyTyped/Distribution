@@ -83,7 +83,7 @@ trait DataAccessDescriptor extends js.Object {
     *
     * If the sequence is empty, it is ignored.
     */
-  var ConnectionInfo: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  var ConnectionInfo: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * specifies the database URL which locates a database driver.
     *
@@ -179,7 +179,7 @@ trait DataAccessDescriptor extends js.Object {
     * If the elements specify bookmarks, and a {@link ResultSet} has been specified, then this result set is required to support the {@link
     * com.sun.star.sdbcx.XRowLocate} interface.
     */
-  var Selection: activexDashInteropLib.SafeArray[_]
+  var Selection: stdLib.SafeArray[_]
 }
 
 object DataAccessDescriptor {
@@ -191,7 +191,7 @@ object DataAccessDescriptor {
     ColumnName: java.lang.String,
     Command: java.lang.String,
     CommandType: scala.Double,
-    ConnectionInfo: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    ConnectionInfo: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     ConnectionResource: java.lang.String,
     DataSourceName: java.lang.String,
     DatabaseLocation: java.lang.String,
@@ -201,7 +201,7 @@ object DataAccessDescriptor {
     HavingClause: java.lang.String,
     Order: java.lang.String,
     ResultSet: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet,
-    Selection: activexDashInteropLib.SafeArray[_]
+    Selection: stdLib.SafeArray[_]
   ): DataAccessDescriptor = {
     val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection, BookmarkSelection = BookmarkSelection, Column = Column, ColumnName = ColumnName, Command = Command, CommandType = CommandType, ConnectionInfo = ConnectionInfo, ConnectionResource = ConnectionResource, DataSourceName = DataSourceName, DatabaseLocation = DatabaseLocation, EscapeProcessing = EscapeProcessing, Filter = Filter, GroupBy = GroupBy, HavingClause = HavingClause, Order = Order, ResultSet = ResultSet, Selection = Selection)
   

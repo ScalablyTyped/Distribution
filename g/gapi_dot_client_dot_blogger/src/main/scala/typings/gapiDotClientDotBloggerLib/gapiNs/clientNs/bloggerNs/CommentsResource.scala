@@ -25,36 +25,15 @@ trait CommentsResource extends js.Object {
 object CommentsResource {
   @scala.inline
   def apply(
-    approve: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdCommentId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Comment]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdCommentId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdCommentIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Comment]
-    ],
-    list: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdEndDate, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CommentList]
-    ],
-    listByBlog: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdEndDateFetchBodies, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CommentList]
-    ],
-    markAsSpam: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdCommentId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Comment]
-    ],
-    removeContent: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdCommentId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Comment]
-    ]
+    approve: gapiDotClientDotBloggerLib.Anon_AltBlogIdCommentId => gapiDotClientLib.gapiNs.clientNs.Request[Comment],
+    delete: gapiDotClientDotBloggerLib.Anon_AltBlogIdCommentId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotBloggerLib.Anon_AltBlogIdCommentIdFields => gapiDotClientLib.gapiNs.clientNs.Request[Comment],
+    list: gapiDotClientDotBloggerLib.Anon_AltBlogIdEndDate => gapiDotClientLib.gapiNs.clientNs.Request[CommentList],
+    listByBlog: gapiDotClientDotBloggerLib.Anon_AltBlogIdEndDateFetchBodies => gapiDotClientLib.gapiNs.clientNs.Request[CommentList],
+    markAsSpam: gapiDotClientDotBloggerLib.Anon_AltBlogIdCommentId => gapiDotClientLib.gapiNs.clientNs.Request[Comment],
+    removeContent: gapiDotClientDotBloggerLib.Anon_AltBlogIdCommentId => gapiDotClientLib.gapiNs.clientNs.Request[Comment]
   ): CommentsResource = {
-    val __obj = js.Dynamic.literal(approve = approve, delete = delete, get = get, list = list, listByBlog = listByBlog, markAsSpam = markAsSpam, removeContent = removeContent)
+    val __obj = js.Dynamic.literal(approve = js.Any.fromFunction1(approve), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), listByBlog = js.Any.fromFunction1(listByBlog), markAsSpam = js.Any.fromFunction1(markAsSpam), removeContent = js.Any.fromFunction1(removeContent))
   
     __obj.asInstanceOf[CommentsResource]
   }

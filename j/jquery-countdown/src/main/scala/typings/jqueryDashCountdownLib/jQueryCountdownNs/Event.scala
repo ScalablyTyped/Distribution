@@ -27,14 +27,14 @@ object Event {
   def apply(
     elapsed: scala.Boolean,
     finalDate: stdLib.Date,
-    isDefaultPrevented: js.Function0[scala.Boolean],
-    isImmediatePropagationStopped: js.Function0[scala.Boolean],
-    isPropagationStopped: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
+    isImmediatePropagationStopped: () => scala.Boolean,
+    isPropagationStopped: () => scala.Boolean,
     offset: OffsetEvent,
-    preventDefault: js.Function0[scala.Unit],
-    stopImmediatePropagation: js.Function0[scala.Unit],
-    stopPropagation: js.Function0[scala.Unit],
-    strftime: js.Function1[java.lang.String, java.lang.String],
+    preventDefault: () => scala.Unit,
+    stopImmediatePropagation: () => scala.Unit,
+    stopPropagation: () => scala.Unit,
+    strftime: java.lang.String => java.lang.String,
     timeStamp: scala.Double,
     `type`: java.lang.String,
     altKey: js.UndefOr[scala.Boolean] = js.undefined,
@@ -68,7 +68,7 @@ object Event {
     view: stdLib.Window = null,
     which: scala.Int | scala.Double = null
   ): Event = {
-    val __obj = js.Dynamic.literal(elapsed = elapsed, finalDate = finalDate, isDefaultPrevented = isDefaultPrevented, isImmediatePropagationStopped = isImmediatePropagationStopped, isPropagationStopped = isPropagationStopped, offset = offset, preventDefault = preventDefault, stopImmediatePropagation = stopImmediatePropagation, stopPropagation = stopPropagation, strftime = strftime, timeStamp = timeStamp)
+    val __obj = js.Dynamic.literal(elapsed = elapsed, finalDate = finalDate, isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), offset = offset, preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), strftime = js.Any.fromFunction1(strftime), timeStamp = timeStamp)
     __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey)
     if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): js.Function1[/* handler */ microLib.microMod.RequestHandler, microLib.microMod.RequestHandler] = js.native
-  def apply(options: microDashCorsLib.microDashCorsMod.Options): js.Function1[/* handler */ microLib.microMod.RequestHandler, microLib.microMod.RequestHandler] = js.native
+  def apply(options: Options): js.Function1[/* handler */ microLib.microMod.RequestHandler, microLib.microMod.RequestHandler] = js.native
 }
 

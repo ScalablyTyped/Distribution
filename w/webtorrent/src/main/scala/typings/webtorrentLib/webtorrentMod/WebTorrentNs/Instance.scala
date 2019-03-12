@@ -33,14 +33,14 @@ trait Instance
     cb: js.Function1[/* torrent */ Torrent, _]
   ): Torrent = js.native
   def destroy(): scala.Unit = js.native
-  def destroy(callback: js.Function1[/* err */ nodeLib.Error | java.lang.String, scala.Unit]): scala.Unit = js.native
+  def destroy(callback: js.Function1[/* err */ stdLib.Error | java.lang.String, scala.Unit]): scala.Unit = js.native
   def get(torrentId: java.lang.String): Torrent | scala.Unit = js.native
   def get(torrentId: nodeLib.Buffer): Torrent | scala.Unit = js.native
   def get(torrentId: Torrent): Torrent | scala.Unit = js.native
   @JSName("on")
   def on_error(
     event: webtorrentLib.webtorrentLibStrings.error,
-    callback: js.Function1[/* err */ nodeLib.Error | java.lang.String, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error | java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_torrent(
@@ -50,15 +50,15 @@ trait Instance
   def remove(torrentId: java.lang.String): scala.Unit = js.native
   def remove(
     torrentId: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error | java.lang.String, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error | java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def remove(torrentId: nodeLib.Buffer): scala.Unit = js.native
   def remove(
     torrentId: nodeLib.Buffer,
-    callback: js.Function1[/* err */ nodeLib.Error | java.lang.String, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error | java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def remove(torrentId: Torrent): scala.Unit = js.native
-  def remove(torrentId: Torrent, callback: js.Function1[/* err */ nodeLib.Error | java.lang.String, scala.Unit]): scala.Unit = js.native
+  def remove(torrentId: Torrent, callback: js.Function1[/* err */ stdLib.Error | java.lang.String, scala.Unit]): scala.Unit = js.native
   def seed(input: java.lang.String): Torrent = js.native
   def seed(input: java.lang.String, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
   def seed(input: java.lang.String, opts: TorrentOptions): Torrent = js.native

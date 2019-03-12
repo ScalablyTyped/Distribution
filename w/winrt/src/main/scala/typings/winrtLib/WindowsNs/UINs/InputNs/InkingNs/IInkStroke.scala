@@ -17,15 +17,13 @@ object IInkStroke {
   @scala.inline
   def apply(
     boundingRect: winrtLib.WindowsNs.FoundationNs.Rect,
-    clone: js.Function0[InkStroke],
+    clone: () => InkStroke,
     drawingAttributes: InkDrawingAttributes,
-    getRenderingSegments: js.Function0[
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[InkStrokeRenderingSegment]
-    ],
+    getRenderingSegments: () => winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[InkStrokeRenderingSegment],
     recognized: scala.Boolean,
     selected: scala.Boolean
   ): IInkStroke = {
-    val __obj = js.Dynamic.literal(boundingRect = boundingRect, clone = clone, drawingAttributes = drawingAttributes, getRenderingSegments = getRenderingSegments, recognized = recognized, selected = selected)
+    val __obj = js.Dynamic.literal(boundingRect = boundingRect, clone = js.Any.fromFunction0(clone), drawingAttributes = drawingAttributes, getRenderingSegments = js.Any.fromFunction0(getRenderingSegments), recognized = recognized, selected = selected)
   
     __obj.asInstanceOf[IInkStroke]
   }

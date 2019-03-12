@@ -57,19 +57,19 @@ trait Fingerprint extends js.Object {
 object Fingerprint {
   @scala.inline
   def apply(
-    get: js.Function0[scala.Double],
-    getCanvasFingerprint: js.Function0[java.lang.String],
-    getIEPluginsString: js.Function0[java.lang.String],
-    getPluginsString: js.Function0[java.lang.String],
-    getRegularPluginsString: js.Function0[java.lang.String],
-    getScreenResolution: js.Function0[js.Array[scala.Double]],
-    hasLocalStorage: js.Function0[scala.Boolean],
-    hasSessionStorage: js.Function0[scala.Boolean],
-    isCanvasSupported: js.Function0[scala.Boolean],
-    isIE: js.Function0[scala.Boolean],
-    murmurhash3_32_gc: js.Function2[java.lang.String, scala.Double, scala.Double]
+    get: () => scala.Double,
+    getCanvasFingerprint: () => java.lang.String,
+    getIEPluginsString: () => java.lang.String,
+    getPluginsString: () => java.lang.String,
+    getRegularPluginsString: () => java.lang.String,
+    getScreenResolution: () => js.Array[scala.Double],
+    hasLocalStorage: () => scala.Boolean,
+    hasSessionStorage: () => scala.Boolean,
+    isCanvasSupported: () => scala.Boolean,
+    isIE: () => scala.Boolean,
+    murmurhash3_32_gc: (java.lang.String, scala.Double) => scala.Double
   ): Fingerprint = {
-    val __obj = js.Dynamic.literal(get = get, getCanvasFingerprint = getCanvasFingerprint, getIEPluginsString = getIEPluginsString, getPluginsString = getPluginsString, getRegularPluginsString = getRegularPluginsString, getScreenResolution = getScreenResolution, hasLocalStorage = hasLocalStorage, hasSessionStorage = hasSessionStorage, isCanvasSupported = isCanvasSupported, isIE = isIE, murmurhash3_32_gc = murmurhash3_32_gc)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), getCanvasFingerprint = js.Any.fromFunction0(getCanvasFingerprint), getIEPluginsString = js.Any.fromFunction0(getIEPluginsString), getPluginsString = js.Any.fromFunction0(getPluginsString), getRegularPluginsString = js.Any.fromFunction0(getRegularPluginsString), getScreenResolution = js.Any.fromFunction0(getScreenResolution), hasLocalStorage = js.Any.fromFunction0(hasLocalStorage), hasSessionStorage = js.Any.fromFunction0(hasSessionStorage), isCanvasSupported = js.Any.fromFunction0(isCanvasSupported), isIE = js.Any.fromFunction0(isIE), murmurhash3_32_gc = js.Any.fromFunction2(murmurhash3_32_gc))
   
     __obj.asInstanceOf[Fingerprint]
   }

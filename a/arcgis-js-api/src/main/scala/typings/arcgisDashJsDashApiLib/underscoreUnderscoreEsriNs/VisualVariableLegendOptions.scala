@@ -25,12 +25,12 @@ object VisualVariableLegendOptions {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     showLegend: js.UndefOr[scala.Boolean] = js.undefined,
     title: java.lang.String = null
   ): VisualVariableLegendOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (!js.isUndefined(showLegend)) __obj.updateDynamic("showLegend")(showLegend)
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[VisualVariableLegendOptions]

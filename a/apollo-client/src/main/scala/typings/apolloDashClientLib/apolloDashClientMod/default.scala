@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-client", JSImport.Default)
 @js.native
 class default[TCacheShape] protected ()
-  extends apolloDashClientLib.apolloclientMod.default[TCacheShape] {
-  def this(options: apolloDashClientLib.apolloclientMod.ApolloClientOptions[TCacheShape]) = this()
+  extends apolloDashClientLib.apolloClientMod.default[TCacheShape] {
+  def this(options: apolloDashClientLib.apolloClientMod.ApolloClientOptions[TCacheShape]) = this()
 }
 

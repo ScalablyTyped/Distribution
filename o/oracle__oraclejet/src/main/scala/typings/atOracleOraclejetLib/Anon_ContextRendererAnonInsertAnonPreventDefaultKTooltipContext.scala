@@ -12,12 +12,9 @@ trait Anon_ContextRendererAnonInsertAnonPreventDefaultKTooltipContext[K] extends
 object Anon_ContextRendererAnonInsertAnonPreventDefaultKTooltipContext {
   @scala.inline
   def apply[K](
-    renderer: js.Function1[
-      atOracleOraclejetLib.ojtagcloudMod.ojTagCloudNs.TooltipContext[K], 
-      Anon_Insert | Anon_PreventDefault
-    ]
+    renderer: atOracleOraclejetLib.ojtagcloudMod.ojTagCloudNs.TooltipContext[K] => Anon_Insert | Anon_PreventDefault
   ): Anon_ContextRendererAnonInsertAnonPreventDefaultKTooltipContext[K] = {
-    val __obj = js.Dynamic.literal(renderer = renderer)
+    val __obj = js.Dynamic.literal(renderer = js.Any.fromFunction1(renderer))
   
     __obj.asInstanceOf[Anon_ContextRendererAnonInsertAnonPreventDefaultKTooltipContext[K]]
   }

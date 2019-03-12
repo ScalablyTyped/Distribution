@@ -32,10 +32,10 @@ object OAuth2 {
   def apply(
     STATE_PARAMETER_LOCATION: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof StateParameterLocation */ js.Any,
     TOKEN_FORMAT: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TokenFormat */ js.Any,
-    createService: js.Function1[java.lang.String, OAuth2Service],
-    getRedirectUri: js.Function1[java.lang.String, java.lang.String]
+    createService: java.lang.String => OAuth2Service,
+    getRedirectUri: java.lang.String => java.lang.String
   ): OAuth2 = {
-    val __obj = js.Dynamic.literal(STATE_PARAMETER_LOCATION = STATE_PARAMETER_LOCATION, TOKEN_FORMAT = TOKEN_FORMAT, createService = createService, getRedirectUri = getRedirectUri)
+    val __obj = js.Dynamic.literal(STATE_PARAMETER_LOCATION = STATE_PARAMETER_LOCATION, TOKEN_FORMAT = TOKEN_FORMAT, createService = js.Any.fromFunction1(createService), getRedirectUri = js.Any.fromFunction1(getRedirectUri))
   
     __obj.asInstanceOf[OAuth2]
   }

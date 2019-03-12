@@ -25,7 +25,7 @@ class ZipFile protected ()
   def openReadStream(
     entry: Entry,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       /* stream */ js.UndefOr[nodeLib.streamMod.Readable], 
       scala.Unit
     ]
@@ -34,7 +34,7 @@ class ZipFile protected ()
     entry: Entry,
     options: ZipFileOptions,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       /* stream */ js.UndefOr[nodeLib.streamMod.Readable], 
       scala.Unit
     ]

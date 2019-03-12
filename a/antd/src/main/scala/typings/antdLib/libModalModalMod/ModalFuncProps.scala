@@ -13,7 +13,7 @@ trait ModalFuncProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var content: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var getContainer: js.UndefOr[
-    js.Function1[/* instance */ reactLib.reactMod.ReactNs.ReactInstance, reactLib.HTMLElement]
+    js.Function1[/* instance */ reactLib.reactMod.ReactNs.ReactInstance, stdLib.HTMLElement]
   ] = js.undefined
   var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var iconClassName: js.UndefOr[java.lang.String] = js.undefined
@@ -48,7 +48,7 @@ object ModalFuncProps {
     centered: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     content: reactLib.reactMod.ReactNs.ReactNode = null,
-    getContainer: js.Function1[/* instance */ reactLib.reactMod.ReactNs.ReactInstance, reactLib.HTMLElement] = null,
+    getContainer: /* instance */ reactLib.reactMod.ReactNs.ReactInstance => stdLib.HTMLElement = null,
     icon: reactLib.reactMod.ReactNs.ReactNode = null,
     iconClassName: java.lang.String = null,
     iconType: java.lang.String = null,
@@ -61,8 +61,8 @@ object ModalFuncProps {
     okCancel: js.UndefOr[scala.Boolean] = js.undefined,
     okText: reactLib.reactMod.ReactNs.ReactNode = null,
     okType: antdLib.libButtonButtonMod.ButtonType = null,
-    onCancel: js.Function1[/* repeated */ js.Any, _ | js.Thenable[_]] = null,
-    onOk: js.Function1[/* repeated */ js.Any, _ | js.Thenable[_]] = null,
+    onCancel: /* repeated */ js.Any => _ | js.Thenable[_] = null,
+    onOk: /* repeated */ js.Any => _ | js.Thenable[_] = null,
     prefixCls: java.lang.String = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     title: reactLib.reactMod.ReactNs.ReactNode = null,
@@ -79,7 +79,7 @@ object ModalFuncProps {
     if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered)
     if (className != null) __obj.updateDynamic("className")(className)
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer)
+    if (getContainer != null) __obj.updateDynamic("getContainer")(js.Any.fromFunction1(getContainer))
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconClassName != null) __obj.updateDynamic("iconClassName")(iconClassName)
     if (iconType != null) __obj.updateDynamic("iconType")(iconType)
@@ -92,8 +92,8 @@ object ModalFuncProps {
     if (!js.isUndefined(okCancel)) __obj.updateDynamic("okCancel")(okCancel)
     if (okText != null) __obj.updateDynamic("okText")(okText.asInstanceOf[js.Any])
     if (okType != null) __obj.updateDynamic("okType")(okType)
-    if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel)
-    if (onOk != null) __obj.updateDynamic("onOk")(onOk)
+    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction1(onCancel))
+    if (onOk != null) __obj.updateDynamic("onOk")(js.Any.fromFunction1(onOk))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (style != null) __obj.updateDynamic("style")(style)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

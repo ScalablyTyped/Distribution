@@ -23,28 +23,19 @@ object XFont2 {
   def apply(
     FontDescriptor: FontDescriptor,
     FontMetric: SimpleFontMetric,
-    acquire: js.Function0[scala.Unit],
-    getCharWidth: js.Function1[java.lang.String, scala.Double],
-    getCharWidths: js.Function2[java.lang.String, java.lang.String, activexDashInteropLib.SafeArray[scala.Double]],
-    getFontDescriptor: js.Function0[FontDescriptor],
-    getFontMetric: js.Function0[SimpleFontMetric],
-    getKernPairs: js.Function3[
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]], 
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]], 
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      scala.Unit
-    ],
-    getStringWidth: js.Function1[java.lang.String, scala.Double],
-    getStringWidthArray: js.Function2[
-      java.lang.String, 
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      scala.Double
-    ],
-    hasGlyphs: js.Function1[java.lang.String, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getCharWidth: java.lang.String => scala.Double,
+    getCharWidths: (java.lang.String, java.lang.String) => stdLib.SafeArray[scala.Double],
+    getFontDescriptor: () => FontDescriptor,
+    getFontMetric: () => SimpleFontMetric,
+    getKernPairs: (js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]], js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]], js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]]) => scala.Unit,
+    getStringWidth: java.lang.String => scala.Double,
+    getStringWidthArray: (java.lang.String, js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]]) => scala.Double,
+    hasGlyphs: java.lang.String => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XFont2 = {
-    val __obj = js.Dynamic.literal(FontDescriptor = FontDescriptor, FontMetric = FontMetric, acquire = acquire, getCharWidth = getCharWidth, getCharWidths = getCharWidths, getFontDescriptor = getFontDescriptor, getFontMetric = getFontMetric, getKernPairs = getKernPairs, getStringWidth = getStringWidth, getStringWidthArray = getStringWidthArray, hasGlyphs = hasGlyphs, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(FontDescriptor = FontDescriptor, FontMetric = FontMetric, acquire = js.Any.fromFunction0(acquire), getCharWidth = js.Any.fromFunction1(getCharWidth), getCharWidths = js.Any.fromFunction2(getCharWidths), getFontDescriptor = js.Any.fromFunction0(getFontDescriptor), getFontMetric = js.Any.fromFunction0(getFontMetric), getKernPairs = js.Any.fromFunction3(getKernPairs), getStringWidth = js.Any.fromFunction1(getStringWidth), getStringWidthArray = js.Any.fromFunction2(getStringWidthArray), hasGlyphs = js.Any.fromFunction1(hasGlyphs), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XFont2]
   }

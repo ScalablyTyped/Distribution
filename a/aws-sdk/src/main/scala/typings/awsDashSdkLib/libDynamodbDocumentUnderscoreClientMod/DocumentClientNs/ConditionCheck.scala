@@ -9,7 +9,7 @@ trait ConditionCheck extends js.Object {
   /**
     * A condition that must be satisfied in order for a conditional update to succeed.
     */
-  var ConditionExpression: ConditionExpression
+  var ConditionExpression: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.ConditionExpression
   /**
     * One or more substitution tokens for attribute names in an expression.
     */
@@ -21,7 +21,7 @@ trait ConditionCheck extends js.Object {
   /**
     * The primary key of the item to be checked. Each element consists of an attribute name and a value for that attribute.
     */
-  var Key: Key
+  var Key: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.Key
   /**
     * Use ReturnValuesOnConditionCheckFailure to get the item attributes if the ConditionCheck condition fails. For ReturnValuesOnConditionCheckFailure, the valid values are: NONE and ALL_OLD.
     */
@@ -29,7 +29,7 @@ trait ConditionCheck extends js.Object {
   /**
     * Name of the table for the check item request.
     */
-  var TableName: TableName
+  var TableName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TableName
 }
 
 object ConditionCheck {

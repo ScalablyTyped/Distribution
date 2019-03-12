@@ -15,11 +15,11 @@ object PreventableExceptionThrownEvent {
     column: scala.Double,
     line: scala.Double,
     message: java.lang.String,
-    originalError: nodeLib.Error,
-    preventDefault: js.Function0[scala.Unit],
+    originalError: stdLib.Error,
+    preventDefault: () => scala.Unit,
     url: java.lang.String
   ): PreventableExceptionThrownEvent = {
-    val __obj = js.Dynamic.literal(column = column, line = line, message = message, originalError = originalError, preventDefault = preventDefault, url = url)
+    val __obj = js.Dynamic.literal(column = column, line = line, message = message, originalError = originalError, preventDefault = js.Any.fromFunction0(preventDefault), url = url)
   
     __obj.asInstanceOf[PreventableExceptionThrownEvent]
   }

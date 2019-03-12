@@ -31,7 +31,7 @@ trait XAccessibleKeyBinding
     * @returns The returned sequence of key strokes specifies one way to invoke the associated action. The sequence may be empty (but should not be; better not
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the index is not valid.
     */
-  def getAccessibleKeyBinding(nIndex: scala.Double): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyStroke]
+  def getAccessibleKeyBinding(nIndex: scala.Double): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyStroke]
   /**
     * Return the number of available key bindings.
     * @returns The returned value may be 0 to indicate that there are no key bindings or the positive number of the available key bindings.
@@ -43,16 +43,13 @@ object XAccessibleKeyBinding {
   @scala.inline
   def apply(
     AccessibleKeyBindingCount: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getAccessibleKeyBinding: js.Function1[
-      scala.Double, 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyStroke]
-    ],
-    getAccessibleKeyBindingCount: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getAccessibleKeyBinding: scala.Double => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyStroke],
+    getAccessibleKeyBindingCount: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAccessibleKeyBinding = {
-    val __obj = js.Dynamic.literal(AccessibleKeyBindingCount = AccessibleKeyBindingCount, acquire = acquire, getAccessibleKeyBinding = getAccessibleKeyBinding, getAccessibleKeyBindingCount = getAccessibleKeyBindingCount, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(AccessibleKeyBindingCount = AccessibleKeyBindingCount, acquire = js.Any.fromFunction0(acquire), getAccessibleKeyBinding = js.Any.fromFunction1(getAccessibleKeyBinding), getAccessibleKeyBindingCount = js.Any.fromFunction0(getAccessibleKeyBindingCount), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAccessibleKeyBinding]
   }

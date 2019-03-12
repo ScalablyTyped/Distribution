@@ -29,16 +29,16 @@ object Model {
   @scala.inline
   def apply(
     accept: js.Any = null,
-    drop: js.Function1[/* e */ DropEventArgs, scala.Unit] = null,
-    out: js.Function1[/* e */ OutEventArgs, scala.Unit] = null,
-    over: js.Function1[/* e */ OverEventArgs, scala.Unit] = null,
+    drop: /* e */ DropEventArgs => scala.Unit = null,
+    out: /* e */ OutEventArgs => scala.Unit = null,
+    over: /* e */ OverEventArgs => scala.Unit = null,
     scope: java.lang.String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (accept != null) __obj.updateDynamic("accept")(accept)
-    if (drop != null) __obj.updateDynamic("drop")(drop)
-    if (out != null) __obj.updateDynamic("out")(out)
-    if (over != null) __obj.updateDynamic("over")(over)
+    if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction1(drop))
+    if (out != null) __obj.updateDynamic("out")(js.Any.fromFunction1(out))
+    if (over != null) __obj.updateDynamic("over")(js.Any.fromFunction1(over))
     if (scope != null) __obj.updateDynamic("scope")(scope)
     __obj.asInstanceOf[Model]
   }

@@ -11,10 +11,8 @@ trait IDecompressorFactory extends js.Object {
 
 object IDecompressorFactory {
   @scala.inline
-  def apply(
-    createDecompressor: js.Function1[winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream, Decompressor]
-  ): IDecompressorFactory = {
-    val __obj = js.Dynamic.literal(createDecompressor = createDecompressor)
+  def apply(createDecompressor: winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream => Decompressor): IDecompressorFactory = {
+    val __obj = js.Dynamic.literal(createDecompressor = js.Any.fromFunction1(createDecompressor))
   
     __obj.asInstanceOf[IDecompressorFactory]
   }

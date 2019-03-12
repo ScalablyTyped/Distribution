@@ -36,20 +36,12 @@ object HeaderRendererContext {
     data: java.lang.String,
     headerContext: atOracleOraclejetLib.Anon_DatasourceD[K, D],
     parentElement: stdLib.Element,
-    columnHeaderDefaultRenderer: js.Function2[
-      /* param0 */ js.Object, 
-      /* param1 */ js.Function1[/* param0 */ js.Object, scala.Unit], 
-      scala.Unit
-    ] = null,
-    columnHeaderSortableIconRenderer: js.Function2[
-      /* param0 */ js.Object, 
-      /* param1 */ js.Function1[/* param0 */ js.Object, scala.Unit], 
-      scala.Unit
-    ] = null
+    columnHeaderDefaultRenderer: (/* param0 */ js.Object, /* param1 */ js.Function1[/* param0 */ js.Object, scala.Unit]) => scala.Unit = null,
+    columnHeaderSortableIconRenderer: (/* param0 */ js.Object, /* param1 */ js.Function1[/* param0 */ js.Object, scala.Unit]) => scala.Unit = null
   ): HeaderRendererContext[K, D] = {
     val __obj = js.Dynamic.literal(columnIndex = columnIndex, componentElement = componentElement, data = data, headerContext = headerContext, parentElement = parentElement)
-    if (columnHeaderDefaultRenderer != null) __obj.updateDynamic("columnHeaderDefaultRenderer")(columnHeaderDefaultRenderer)
-    if (columnHeaderSortableIconRenderer != null) __obj.updateDynamic("columnHeaderSortableIconRenderer")(columnHeaderSortableIconRenderer)
+    if (columnHeaderDefaultRenderer != null) __obj.updateDynamic("columnHeaderDefaultRenderer")(js.Any.fromFunction2(columnHeaderDefaultRenderer))
+    if (columnHeaderSortableIconRenderer != null) __obj.updateDynamic("columnHeaderSortableIconRenderer")(js.Any.fromFunction2(columnHeaderSortableIconRenderer))
     __obj.asInstanceOf[HeaderRendererContext[K, D]]
   }
 }

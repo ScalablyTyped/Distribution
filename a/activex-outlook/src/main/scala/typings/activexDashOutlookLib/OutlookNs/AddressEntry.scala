@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class AddressEntry protected () extends js.Object {
   var Address: java.lang.String = js.native
   val AddressEntryUserType: OlAddressEntryUserType = js.native
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   val DisplayType: OlDisplayType = js.native
   val ID: java.lang.String = js.native
@@ -20,7 +20,7 @@ class AddressEntry protected () extends js.Object {
   var Name: java.lang.String = js.native
   var `Outlook.AddressEntry_typekey`: AddressEntry = js.native
   val Parent: js.Any = js.native
-  val PropertyAccessor: PropertyAccessor = js.native
+  val PropertyAccessor: activexDashOutlookLib.OutlookNs.PropertyAccessor = js.native
   val Session: NameSpace = js.native
   var Type: java.lang.String = js.native
   def Delete(): scala.Unit = js.native
@@ -29,8 +29,8 @@ class AddressEntry protected () extends js.Object {
   def GetContact(): ContactItem = js.native
   def GetExchangeDistributionList(): ExchangeDistributionList = js.native
   def GetExchangeUser(): ExchangeUser = js.native
-  def GetFreeBusy(Start: activexDashInteropLib.VarDate, MinPerChar: scala.Double): java.lang.String = js.native
-  def GetFreeBusy(Start: activexDashInteropLib.VarDate, MinPerChar: scala.Double, CompleteFormat: js.Any): java.lang.String = js.native
+  def GetFreeBusy(Start: stdLib.VarDate, MinPerChar: scala.Double): java.lang.String = js.native
+  def GetFreeBusy(Start: stdLib.VarDate, MinPerChar: scala.Double, CompleteFormat: js.Any): java.lang.String = js.native
   def Update(): scala.Unit = js.native
   def Update(MakePermanent: js.Any): scala.Unit = js.native
   def Update(MakePermanent: js.Any, Refresh: js.Any): scala.Unit = js.native

@@ -29,26 +29,26 @@ trait SensorManager extends js.Object {
 object SensorManager {
   @scala.inline
   def apply(
-    startAccelerometer: js.Function1[scala.Double, scala.Unit],
-    startGyroscope: js.Function1[scala.Double, scala.Unit],
-    startLightSensor: js.Function1[scala.Double, scala.Unit],
-    startMagnetometer: js.Function1[scala.Double, scala.Unit],
-    startMotionValue: js.Function1[scala.Double, scala.Unit],
-    startOrientation: js.Function1[scala.Double, scala.Unit],
-    startProximity: js.Function1[scala.Double, scala.Unit],
-    startStepCounter: js.Function1[scala.Double, scala.Unit],
-    startThermometer: js.Function1[scala.Double, scala.Unit],
-    stopAccelerometer: js.Function0[scala.Unit],
-    stopGyroscope: js.Function0[scala.Unit],
-    stopLightSensor: js.Function0[scala.Unit],
-    stopMagnetometer: js.Function0[scala.Unit],
-    stopMotionValue: js.Function0[scala.Unit],
-    stopOrientation: js.Function0[scala.Unit],
-    stopProximity: js.Function0[scala.Unit],
-    stopStepCounter: js.Function0[scala.Unit],
-    stopThermometer: js.Function0[scala.Unit]
+    startAccelerometer: scala.Double => scala.Unit,
+    startGyroscope: scala.Double => scala.Unit,
+    startLightSensor: scala.Double => scala.Unit,
+    startMagnetometer: scala.Double => scala.Unit,
+    startMotionValue: scala.Double => scala.Unit,
+    startOrientation: scala.Double => scala.Unit,
+    startProximity: scala.Double => scala.Unit,
+    startStepCounter: scala.Double => scala.Unit,
+    startThermometer: scala.Double => scala.Unit,
+    stopAccelerometer: () => scala.Unit,
+    stopGyroscope: () => scala.Unit,
+    stopLightSensor: () => scala.Unit,
+    stopMagnetometer: () => scala.Unit,
+    stopMotionValue: () => scala.Unit,
+    stopOrientation: () => scala.Unit,
+    stopProximity: () => scala.Unit,
+    stopStepCounter: () => scala.Unit,
+    stopThermometer: () => scala.Unit
   ): SensorManager = {
-    val __obj = js.Dynamic.literal(startAccelerometer = startAccelerometer, startGyroscope = startGyroscope, startLightSensor = startLightSensor, startMagnetometer = startMagnetometer, startMotionValue = startMotionValue, startOrientation = startOrientation, startProximity = startProximity, startStepCounter = startStepCounter, startThermometer = startThermometer, stopAccelerometer = stopAccelerometer, stopGyroscope = stopGyroscope, stopLightSensor = stopLightSensor, stopMagnetometer = stopMagnetometer, stopMotionValue = stopMotionValue, stopOrientation = stopOrientation, stopProximity = stopProximity, stopStepCounter = stopStepCounter, stopThermometer = stopThermometer)
+    val __obj = js.Dynamic.literal(startAccelerometer = js.Any.fromFunction1(startAccelerometer), startGyroscope = js.Any.fromFunction1(startGyroscope), startLightSensor = js.Any.fromFunction1(startLightSensor), startMagnetometer = js.Any.fromFunction1(startMagnetometer), startMotionValue = js.Any.fromFunction1(startMotionValue), startOrientation = js.Any.fromFunction1(startOrientation), startProximity = js.Any.fromFunction1(startProximity), startStepCounter = js.Any.fromFunction1(startStepCounter), startThermometer = js.Any.fromFunction1(startThermometer), stopAccelerometer = js.Any.fromFunction0(stopAccelerometer), stopGyroscope = js.Any.fromFunction0(stopGyroscope), stopLightSensor = js.Any.fromFunction0(stopLightSensor), stopMagnetometer = js.Any.fromFunction0(stopMagnetometer), stopMotionValue = js.Any.fromFunction0(stopMotionValue), stopOrientation = js.Any.fromFunction0(stopOrientation), stopProximity = js.Any.fromFunction0(stopProximity), stopStepCounter = js.Any.fromFunction0(stopStepCounter), stopThermometer = js.Any.fromFunction0(stopThermometer))
   
     __obj.asInstanceOf[SensorManager]
   }

@@ -63,24 +63,24 @@ object XFilePickerControlAccess {
   @scala.inline
   def apply(
     DisplayDirectory: java.lang.String,
-    Files: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    enableControl: js.Function2[scala.Double, scala.Boolean, scala.Unit],
-    execute: js.Function0[scala.Double],
-    getDisplayDirectory: js.Function0[java.lang.String],
-    getFiles: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getLabel: js.Function1[scala.Double, java.lang.String],
-    getValue: js.Function2[scala.Double, scala.Double, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setDefaultName: js.Function1[java.lang.String, scala.Unit],
-    setDisplayDirectory: js.Function1[java.lang.String, scala.Unit],
-    setLabel: js.Function2[scala.Double, java.lang.String, scala.Unit],
-    setMultiSelectionMode: js.Function1[scala.Boolean, scala.Unit],
-    setTitle: js.Function1[java.lang.String, scala.Unit],
-    setValue: js.Function3[scala.Double, scala.Double, js.Any, scala.Unit]
+    Files: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    enableControl: (scala.Double, scala.Boolean) => scala.Unit,
+    execute: () => scala.Double,
+    getDisplayDirectory: () => java.lang.String,
+    getFiles: () => stdLib.SafeArray[java.lang.String],
+    getLabel: scala.Double => java.lang.String,
+    getValue: (scala.Double, scala.Double) => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setDefaultName: java.lang.String => scala.Unit,
+    setDisplayDirectory: java.lang.String => scala.Unit,
+    setLabel: (scala.Double, java.lang.String) => scala.Unit,
+    setMultiSelectionMode: scala.Boolean => scala.Unit,
+    setTitle: java.lang.String => scala.Unit,
+    setValue: (scala.Double, scala.Double, js.Any) => scala.Unit
   ): XFilePickerControlAccess = {
-    val __obj = js.Dynamic.literal(DisplayDirectory = DisplayDirectory, Files = Files, acquire = acquire, enableControl = enableControl, execute = execute, getDisplayDirectory = getDisplayDirectory, getFiles = getFiles, getLabel = getLabel, getValue = getValue, queryInterface = queryInterface, release = release, setDefaultName = setDefaultName, setDisplayDirectory = setDisplayDirectory, setLabel = setLabel, setMultiSelectionMode = setMultiSelectionMode, setTitle = setTitle, setValue = setValue)
+    val __obj = js.Dynamic.literal(DisplayDirectory = DisplayDirectory, Files = Files, acquire = js.Any.fromFunction0(acquire), enableControl = js.Any.fromFunction2(enableControl), execute = js.Any.fromFunction0(execute), getDisplayDirectory = js.Any.fromFunction0(getDisplayDirectory), getFiles = js.Any.fromFunction0(getFiles), getLabel = js.Any.fromFunction1(getLabel), getValue = js.Any.fromFunction2(getValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDefaultName = js.Any.fromFunction1(setDefaultName), setDisplayDirectory = js.Any.fromFunction1(setDisplayDirectory), setLabel = js.Any.fromFunction2(setLabel), setMultiSelectionMode = js.Any.fromFunction1(setMultiSelectionMode), setTitle = js.Any.fromFunction1(setTitle), setValue = js.Any.fromFunction3(setValue))
   
     __obj.asInstanceOf[XFilePickerControlAccess]
   }

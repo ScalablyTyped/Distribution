@@ -15,7 +15,7 @@ object ^ extends js.Object {
   /**
     * A (read-only) array of all initialized apps.
     */
-  var apps: coreDashJsLib.Array[firebaseLib.firebaseMod.firebaseNs.appNs.App] = js.native
+  var apps: js.Array[firebaseLib.firebaseMod.firebaseNs.appNs.App] = js.native
   /**
     * Retrieves a Firebase {@link firebase.app.App app} instance.
     *
@@ -151,8 +151,8 @@ object ^ extends js.Object {
     *
     * @return {!firebase.app.App} The initialized app.
     */
-  def initializeApp(options: coreDashJsLib.Object): firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
-  def initializeApp(options: coreDashJsLib.Object, name: java.lang.String): firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
+  def initializeApp(options: js.Object): firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
+  def initializeApp(options: js.Object, name: java.lang.String): firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
   /**
     * Gets the {@link firebase.messaging.Messaging `Messaging`} service for the
     * default app or a given app.

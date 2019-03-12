@@ -35,19 +35,19 @@ object ImageBackgroundProps {
     defaultSource: ImageURISource | scala.Double = null,
     fadeDuration: scala.Int | scala.Double = null,
     height: scala.Int | scala.Double = null,
-    imageRef: js.Function1[/* image */ Image, scala.Unit] = null,
+    imageRef: /* image */ Image => scala.Unit = null,
     imageStyle: StyleProp[ImageStyle] = null,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
     loadingIndicatorSource: ImageURISource = null,
-    onAccessibilityTap: js.Function0[scala.Unit] = null,
-    onError: js.Function1[/* error */ NativeSyntheticEvent[ImageErrorEventData], scala.Unit] = null,
-    onLayout: js.Function1[/* event */ LayoutChangeEvent, scala.Unit] = null,
-    onLoad: js.Function1[/* event */ NativeSyntheticEvent[ImageLoadEventData], scala.Unit] = null,
-    onLoadEnd: js.Function0[scala.Unit] = null,
-    onLoadStart: js.Function0[scala.Unit] = null,
-    onMagicTap: js.Function0[scala.Unit] = null,
-    onPartialLoad: js.Function0[scala.Unit] = null,
-    onProgress: js.Function1[/* event */ NativeSyntheticEvent[ImageProgressEventDataIOS], scala.Unit] = null,
+    onAccessibilityTap: () => scala.Unit = null,
+    onError: /* error */ NativeSyntheticEvent[ImageErrorEventData] => scala.Unit = null,
+    onLayout: /* event */ LayoutChangeEvent => scala.Unit = null,
+    onLoad: /* event */ NativeSyntheticEvent[ImageLoadEventData] => scala.Unit = null,
+    onLoadEnd: () => scala.Unit = null,
+    onLoadStart: () => scala.Unit = null,
+    onMagicTap: () => scala.Unit = null,
+    onPartialLoad: () => scala.Unit = null,
+    onProgress: /* event */ NativeSyntheticEvent[ImageProgressEventDataIOS] => scala.Unit = null,
     progressiveRenderingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     resizeMethod: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.resize | reactDashNativeLib.reactDashNativeLibStrings.scale = null,
     resizeMode: ImageResizeMode = null,
@@ -76,19 +76,19 @@ object ImageBackgroundProps {
     if (defaultSource != null) __obj.updateDynamic("defaultSource")(defaultSource.asInstanceOf[js.Any])
     if (fadeDuration != null) __obj.updateDynamic("fadeDuration")(fadeDuration.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (imageRef != null) __obj.updateDynamic("imageRef")(imageRef)
+    if (imageRef != null) __obj.updateDynamic("imageRef")(js.Any.fromFunction1(imageRef))
     if (imageStyle != null) __obj.updateDynamic("imageStyle")(imageStyle.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
     if (loadingIndicatorSource != null) __obj.updateDynamic("loadingIndicatorSource")(loadingIndicatorSource)
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(onAccessibilityTap)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onLayout != null) __obj.updateDynamic("onLayout")(onLayout)
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
-    if (onLoadEnd != null) __obj.updateDynamic("onLoadEnd")(onLoadEnd)
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(onLoadStart)
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(onMagicTap)
-    if (onPartialLoad != null) __obj.updateDynamic("onPartialLoad")(onPartialLoad)
-    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress)
+    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
+    if (onLoadEnd != null) __obj.updateDynamic("onLoadEnd")(js.Any.fromFunction0(onLoadEnd))
+    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(js.Any.fromFunction0(onLoadStart))
+    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
+    if (onPartialLoad != null) __obj.updateDynamic("onPartialLoad")(js.Any.fromFunction0(onPartialLoad))
+    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
     if (!js.isUndefined(progressiveRenderingEnabled)) __obj.updateDynamic("progressiveRenderingEnabled")(progressiveRenderingEnabled)
     if (resizeMethod != null) __obj.updateDynamic("resizeMethod")(resizeMethod.asInstanceOf[js.Any])
     if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode)

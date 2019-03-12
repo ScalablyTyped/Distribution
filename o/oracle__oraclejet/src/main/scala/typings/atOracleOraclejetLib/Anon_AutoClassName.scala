@@ -52,25 +52,16 @@ object Anon_AutoClassName {
     className: java.lang.String = null,
     field: java.lang.String = null,
     footerClassName: java.lang.String = null,
-    footerRenderer: js.Function1[
-      /* context */ atOracleOraclejetLib.ojtableMod.ojTableNs.FooterRendererContext[K, D], 
-      Anon_InsertHTMLElement | scala.Unit
-    ] = null,
+    footerRenderer: /* context */ atOracleOraclejetLib.ojtableMod.ojTableNs.FooterRendererContext[K, D] => Anon_InsertHTMLElement | scala.Unit = null,
     footerStyle: java.lang.String = null,
     footerTemplate: Anon_ComponentElementElement = null,
     headerClassName: java.lang.String = null,
-    headerRenderer: js.Function1[
-      /* context */ atOracleOraclejetLib.ojtableMod.ojTableNs.HeaderRendererContext[K, D], 
-      Anon_InsertHTMLElement | scala.Unit
-    ] = null,
+    headerRenderer: /* context */ atOracleOraclejetLib.ojtableMod.ojTableNs.HeaderRendererContext[K, D] => Anon_InsertHTMLElement | scala.Unit = null,
     headerStyle: java.lang.String = null,
     headerTemplate: Anon_ComponentElementData = null,
     headerText: java.lang.String = null,
     id: java.lang.String = null,
-    renderer: js.Function1[
-      /* context */ atOracleOraclejetLib.ojtableMod.ojTableNs.ColumnsRendererContext[K, D], 
-      Anon_InsertHTMLElement | scala.Unit
-    ] = null,
+    renderer: /* context */ atOracleOraclejetLib.ojtableMod.ojTableNs.ColumnsRendererContext[K, D] => Anon_InsertHTMLElement | scala.Unit = null,
     resizable: atOracleOraclejetLib.atOracleOraclejetLibStrings.enabled | atOracleOraclejetLib.atOracleOraclejetLibStrings.disabled = null,
     sortProperty: java.lang.String = null,
     sortable: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.enabled | atOracleOraclejetLib.atOracleOraclejetLibStrings.disabled = null,
@@ -82,16 +73,16 @@ object Anon_AutoClassName {
     if (className != null) __obj.updateDynamic("className")(className)
     if (field != null) __obj.updateDynamic("field")(field)
     if (footerClassName != null) __obj.updateDynamic("footerClassName")(footerClassName)
-    if (footerRenderer != null) __obj.updateDynamic("footerRenderer")(footerRenderer)
+    if (footerRenderer != null) __obj.updateDynamic("footerRenderer")(js.Any.fromFunction1(footerRenderer))
     if (footerStyle != null) __obj.updateDynamic("footerStyle")(footerStyle)
     if (footerTemplate != null) __obj.updateDynamic("footerTemplate")(footerTemplate)
     if (headerClassName != null) __obj.updateDynamic("headerClassName")(headerClassName)
-    if (headerRenderer != null) __obj.updateDynamic("headerRenderer")(headerRenderer)
+    if (headerRenderer != null) __obj.updateDynamic("headerRenderer")(js.Any.fromFunction1(headerRenderer))
     if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle)
     if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate)
     if (headerText != null) __obj.updateDynamic("headerText")(headerText)
     if (id != null) __obj.updateDynamic("id")(id)
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (renderer != null) __obj.updateDynamic("renderer")(js.Any.fromFunction1(renderer))
     if (resizable != null) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
     if (sortProperty != null) __obj.updateDynamic("sortProperty")(sortProperty)
     if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])

@@ -17,15 +17,15 @@ object GraphQLScalarTypeConfig {
   @scala.inline
   def apply(
     name: java.lang.String,
-    serialize: js.Function1[js.Any, js.Any],
+    serialize: js.Any => js.Any,
     description: java.lang.String = null,
-    parseLiteral: js.Function1[/* valueAST */ Value, _] = null,
-    parseValue: js.Function1[/* value */ js.Any, _] = null
+    parseLiteral: /* valueAST */ Value => _ = null,
+    parseValue: /* value */ js.Any => _ = null
   ): GraphQLScalarTypeConfig = {
-    val __obj = js.Dynamic.literal(name = name, serialize = serialize)
+    val __obj = js.Dynamic.literal(name = name, serialize = js.Any.fromFunction1(serialize))
     if (description != null) __obj.updateDynamic("description")(description)
-    if (parseLiteral != null) __obj.updateDynamic("parseLiteral")(parseLiteral)
-    if (parseValue != null) __obj.updateDynamic("parseValue")(parseValue)
+    if (parseLiteral != null) __obj.updateDynamic("parseLiteral")(js.Any.fromFunction1(parseLiteral))
+    if (parseValue != null) __obj.updateDynamic("parseValue")(js.Any.fromFunction1(parseValue))
     __obj.asInstanceOf[GraphQLScalarTypeConfig]
   }
 }

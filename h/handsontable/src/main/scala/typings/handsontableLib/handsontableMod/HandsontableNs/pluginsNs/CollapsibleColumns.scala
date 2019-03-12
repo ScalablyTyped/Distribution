@@ -29,39 +29,39 @@ trait CollapsibleColumns extends Base {
 object CollapsibleColumns {
   @scala.inline
   def apply(
-    addHook: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit],
+    addHook: (java.lang.String, js.Function0[scala.Unit]) => scala.Unit,
     buttonEnabledList: js.Object,
-    callOnPluginsReady: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    checkDependencies: js.Function0[scala.Unit],
-    clearHooks: js.Function0[scala.Unit],
-    collapseAll: js.Function0[scala.Unit],
-    collapseSection: js.Function1[js.Object, scala.Unit],
+    callOnPluginsReady: js.Function0[scala.Unit] => scala.Unit,
+    checkDependencies: () => scala.Unit,
+    clearHooks: () => scala.Unit,
+    collapseAll: () => scala.Unit,
+    collapseSection: js.Object => scala.Unit,
     collapsedSections: js.Object,
     columnHeaderLevelCount: scala.Double,
-    destroy: js.Function0[scala.Unit],
-    disablePlugin: js.Function0[scala.Unit],
-    enablePlugin: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
+    disablePlugin: () => scala.Unit,
+    enablePlugin: () => scala.Unit,
     enabled: scala.Boolean,
     eventManager: EventManager,
-    expandAll: js.Function0[scala.Unit],
-    expandSection: js.Function1[js.Object, scala.Unit],
-    generateIndicator: js.Function2[scala.Double, stdLib.HTMLElement, stdLib.HTMLElement],
+    expandAll: () => scala.Unit,
+    expandSection: js.Object => scala.Unit,
+    generateIndicator: (scala.Double, stdLib.HTMLElement) => stdLib.HTMLElement,
     hiddenColumnsPlugin: js.Object,
-    init: js.Function0[scala.Unit],
+    init: () => scala.Unit,
     initialized: scala.Boolean,
     isPluginsReady: scala.Boolean,
-    markSectionAs: js.Function4[java.lang.String, scala.Double, scala.Double, scala.Boolean, scala.Unit],
-    meetsDependencies: js.Function0[scala.Boolean],
+    markSectionAs: (java.lang.String, scala.Double, scala.Double, scala.Boolean) => scala.Unit,
+    meetsDependencies: () => scala.Boolean,
     nestedHeadersPlugin: js.Object,
-    parseSettings: js.Function0[scala.Unit],
+    parseSettings: () => scala.Unit,
     pluginName: java.lang.String,
     pluginsInitializedCallback: js.Array[_],
-    removeHook: js.Function1[java.lang.String, scala.Unit],
+    removeHook: java.lang.String => scala.Unit,
     settings: scala.Boolean | js.Array[_],
-    toggleAllCollapsibleSections: js.Function1[java.lang.String, scala.Unit],
-    toggleCollapsibleSection: js.Function2[js.Object, java.lang.String, scala.Unit]
+    toggleAllCollapsibleSections: java.lang.String => scala.Unit,
+    toggleCollapsibleSection: (js.Object, java.lang.String) => scala.Unit
   ): CollapsibleColumns = {
-    val __obj = js.Dynamic.literal(addHook = addHook, buttonEnabledList = buttonEnabledList, callOnPluginsReady = callOnPluginsReady, checkDependencies = checkDependencies, clearHooks = clearHooks, collapseAll = collapseAll, collapseSection = collapseSection, collapsedSections = collapsedSections, columnHeaderLevelCount = columnHeaderLevelCount, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, eventManager = eventManager, expandAll = expandAll, expandSection = expandSection, generateIndicator = generateIndicator, hiddenColumnsPlugin = hiddenColumnsPlugin, init = init, initialized = initialized, isPluginsReady = isPluginsReady, markSectionAs = markSectionAs, meetsDependencies = meetsDependencies, nestedHeadersPlugin = nestedHeadersPlugin, parseSettings = parseSettings, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook, settings = settings.asInstanceOf[js.Any], toggleAllCollapsibleSections = toggleAllCollapsibleSections, toggleCollapsibleSection = toggleCollapsibleSection)
+    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), buttonEnabledList = buttonEnabledList, callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), checkDependencies = js.Any.fromFunction0(checkDependencies), clearHooks = js.Any.fromFunction0(clearHooks), collapseAll = js.Any.fromFunction0(collapseAll), collapseSection = js.Any.fromFunction1(collapseSection), collapsedSections = collapsedSections, columnHeaderLevelCount = columnHeaderLevelCount, destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, eventManager = eventManager, expandAll = js.Any.fromFunction0(expandAll), expandSection = js.Any.fromFunction1(expandSection), generateIndicator = js.Any.fromFunction2(generateIndicator), hiddenColumnsPlugin = hiddenColumnsPlugin, init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, markSectionAs = js.Any.fromFunction4(markSectionAs), meetsDependencies = js.Any.fromFunction0(meetsDependencies), nestedHeadersPlugin = nestedHeadersPlugin, parseSettings = js.Any.fromFunction0(parseSettings), pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = js.Any.fromFunction1(removeHook), settings = settings.asInstanceOf[js.Any], toggleAllCollapsibleSections = js.Any.fromFunction1(toggleAllCollapsibleSections), toggleCollapsibleSection = js.Any.fromFunction2(toggleCollapsibleSection))
   
     __obj.asInstanceOf[CollapsibleColumns]
   }

@@ -27,16 +27,16 @@ trait Api extends js.Object {
 object Api {
   @scala.inline
   def apply(
-    animateTo: js.Function1[js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double], scala.Unit],
-    disable: js.Function0[scala.Unit],
-    enable: js.Function0[scala.Unit],
-    release: js.Function0[scala.Unit],
-    remove: js.Function0[scala.Unit],
-    setSelect: js.Function1[js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double], scala.Unit],
-    tellScaled: js.Function0[SelectionInfo],
-    tellSelect: js.Function0[SelectionInfo]
+    animateTo: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double] => scala.Unit,
+    disable: () => scala.Unit,
+    enable: () => scala.Unit,
+    release: () => scala.Unit,
+    remove: () => scala.Unit,
+    setSelect: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double] => scala.Unit,
+    tellScaled: () => SelectionInfo,
+    tellSelect: () => SelectionInfo
   ): Api = {
-    val __obj = js.Dynamic.literal(animateTo = animateTo, disable = disable, enable = enable, release = release, remove = remove, setSelect = setSelect, tellScaled = tellScaled, tellSelect = tellSelect)
+    val __obj = js.Dynamic.literal(animateTo = js.Any.fromFunction1(animateTo), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), release = js.Any.fromFunction0(release), remove = js.Any.fromFunction0(remove), setSelect = js.Any.fromFunction1(setSelect), tellScaled = js.Any.fromFunction0(tellScaled), tellSelect = js.Any.fromFunction0(tellSelect))
   
     __obj.asInstanceOf[Api]
   }

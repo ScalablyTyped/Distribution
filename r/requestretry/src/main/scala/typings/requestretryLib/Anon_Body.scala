@@ -13,8 +13,8 @@ trait Anon_Body extends js.Object {
   var HttpError_Original: requestretryLib.requestretryMod.requestretryNs.RetryStrategy = js.native
   @JSName("NetworkError")
   var NetworkError_Original: requestretryLib.requestretryMod.requestretryNs.RetryStrategy = js.native
-  def HTTPOrNetworkError(err: nodeLib.Error, response: nodeLib.httpMod.IncomingMessage, body: js.Any): scala.Boolean = js.native
-  def HttpError(err: nodeLib.Error, response: nodeLib.httpMod.IncomingMessage, body: js.Any): scala.Boolean = js.native
-  def NetworkError(err: nodeLib.Error, response: nodeLib.httpMod.IncomingMessage, body: js.Any): scala.Boolean = js.native
+  def HTTPOrNetworkError(err: stdLib.Error, response: nodeLib.httpMod.IncomingMessage, body: js.Any): scala.Boolean = js.native
+  def HttpError(err: stdLib.Error, response: nodeLib.httpMod.IncomingMessage, body: js.Any): scala.Boolean = js.native
+  def NetworkError(err: stdLib.Error, response: nodeLib.httpMod.IncomingMessage, body: js.Any): scala.Boolean = js.native
 }
 

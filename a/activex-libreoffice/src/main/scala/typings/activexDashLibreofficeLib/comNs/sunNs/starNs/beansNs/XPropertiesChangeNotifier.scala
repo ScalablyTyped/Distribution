@@ -26,21 +26,13 @@ trait XPropertiesChangeNotifier
 object XPropertiesChangeNotifier {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addPropertiesChangeListener: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      XPropertiesChangeListener, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removePropertiesChangeListener: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      XPropertiesChangeListener, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    addPropertiesChangeListener: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], XPropertiesChangeListener) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removePropertiesChangeListener: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], XPropertiesChangeListener) => scala.Unit
   ): XPropertiesChangeNotifier = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addPropertiesChangeListener = addPropertiesChangeListener, queryInterface = queryInterface, release = release, removePropertiesChangeListener = removePropertiesChangeListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertiesChangeListener = js.Any.fromFunction2(removePropertiesChangeListener))
   
     __obj.asInstanceOf[XPropertiesChangeNotifier]
   }

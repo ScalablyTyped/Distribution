@@ -11,8 +11,8 @@ trait ECPrivate extends js.Object {
 
 object ECPrivate {
   @scala.inline
-  def apply(deriveSharedSecret: js.Function1[Key, nodeLib.Buffer]): ECPrivate = {
-    val __obj = js.Dynamic.literal(deriveSharedSecret = deriveSharedSecret)
+  def apply(deriveSharedSecret: Key => nodeLib.Buffer): ECPrivate = {
+    val __obj = js.Dynamic.literal(deriveSharedSecret = js.Any.fromFunction1(deriveSharedSecret))
   
     __obj.asInstanceOf[ECPrivate]
   }

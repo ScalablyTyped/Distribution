@@ -16,12 +16,12 @@ trait canBeEnabled extends js.Object {
 object canBeEnabled {
   @scala.inline
   def apply(
-    enable: js.Function0[scala.Unit],
-    isEnabled: js.Function0[scala.Boolean],
-    isPaused: js.Function0[scala.Boolean],
-    pause: js.Function0[scala.Unit]
+    enable: () => scala.Unit,
+    isEnabled: () => scala.Boolean,
+    isPaused: () => scala.Boolean,
+    pause: () => scala.Unit
   ): canBeEnabled = {
-    val __obj = js.Dynamic.literal(enable = enable, isEnabled = isEnabled, isPaused = isPaused, pause = pause)
+    val __obj = js.Dynamic.literal(enable = js.Any.fromFunction0(enable), isEnabled = js.Any.fromFunction0(isEnabled), isPaused = js.Any.fromFunction0(isPaused), pause = js.Any.fromFunction0(pause))
   
     __obj.asInstanceOf[canBeEnabled]
   }

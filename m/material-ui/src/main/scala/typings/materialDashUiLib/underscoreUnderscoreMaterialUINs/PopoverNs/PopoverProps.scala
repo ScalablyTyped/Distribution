@@ -33,7 +33,7 @@ object PopoverProps {
     autoCloseWhenOffScreen: js.UndefOr[scala.Boolean] = js.undefined,
     canAutoPosition: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
-    onRequestClose: js.Function1[/* reason */ java.lang.String, scala.Unit] = null,
+    onRequestClose: /* reason */ java.lang.String => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     targetOrigin: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin = null,
@@ -48,7 +48,7 @@ object PopoverProps {
     if (!js.isUndefined(autoCloseWhenOffScreen)) __obj.updateDynamic("autoCloseWhenOffScreen")(autoCloseWhenOffScreen)
     if (!js.isUndefined(canAutoPosition)) __obj.updateDynamic("canAutoPosition")(canAutoPosition)
     if (className != null) __obj.updateDynamic("className")(className)
-    if (onRequestClose != null) __obj.updateDynamic("onRequestClose")(onRequestClose)
+    if (onRequestClose != null) __obj.updateDynamic("onRequestClose")(js.Any.fromFunction1(onRequestClose))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (style != null) __obj.updateDynamic("style")(style)
     if (targetOrigin != null) __obj.updateDynamic("targetOrigin")(targetOrigin)

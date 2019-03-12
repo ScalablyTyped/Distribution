@@ -19,11 +19,11 @@ trait Anon_FormatRatio extends js.Object {
 object Anon_FormatRatio {
   @scala.inline
   def apply(
-    format: js.Function2[/* value */ js.Any, /* ratio */ scala.Double, java.lang.String] = null,
+    format: (/* value */ js.Any, /* ratio */ scala.Double) => java.lang.String = null,
     show: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_FormatRatio = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction2(format))
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
     __obj.asInstanceOf[Anon_FormatRatio]
   }

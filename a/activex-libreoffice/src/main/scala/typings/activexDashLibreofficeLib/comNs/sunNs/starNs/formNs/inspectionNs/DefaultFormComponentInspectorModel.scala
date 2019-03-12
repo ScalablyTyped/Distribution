@@ -38,21 +38,19 @@ trait DefaultFormComponentInspectorModel
 object DefaultFormComponentInspectorModel {
   @scala.inline
   def apply(
-    HandlerFactories: activexDashInteropLib.SafeArray[_],
+    HandlerFactories: stdLib.SafeArray[_],
     HasHelpSection: scala.Boolean,
     IsReadOnly: scala.Boolean,
     MaxHelpTextLines: scala.Double,
     MinHelpTextLines: scala.Double,
-    createDefault: js.Function0[scala.Unit],
-    createWithHelpSection: js.Function2[scala.Double, scala.Double, scala.Unit],
-    describeCategories: js.Function0[
-      activexDashInteropLib.SafeArray[
-        activexDashLibreofficeLib.comNs.sunNs.starNs.inspectionNs.PropertyCategoryDescriptor
-      ]
+    createDefault: () => scala.Unit,
+    createWithHelpSection: (scala.Double, scala.Double) => scala.Unit,
+    describeCategories: () => stdLib.SafeArray[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.inspectionNs.PropertyCategoryDescriptor
     ],
-    getPropertyOrderIndex: js.Function1[java.lang.String, scala.Double]
+    getPropertyOrderIndex: java.lang.String => scala.Double
   ): DefaultFormComponentInspectorModel = {
-    val __obj = js.Dynamic.literal(HandlerFactories = HandlerFactories, HasHelpSection = HasHelpSection, IsReadOnly = IsReadOnly, MaxHelpTextLines = MaxHelpTextLines, MinHelpTextLines = MinHelpTextLines, createDefault = createDefault, createWithHelpSection = createWithHelpSection, describeCategories = describeCategories, getPropertyOrderIndex = getPropertyOrderIndex)
+    val __obj = js.Dynamic.literal(HandlerFactories = HandlerFactories, HasHelpSection = HasHelpSection, IsReadOnly = IsReadOnly, MaxHelpTextLines = MaxHelpTextLines, MinHelpTextLines = MinHelpTextLines, createDefault = js.Any.fromFunction0(createDefault), createWithHelpSection = js.Any.fromFunction2(createWithHelpSection), describeCategories = js.Any.fromFunction0(describeCategories), getPropertyOrderIndex = js.Any.fromFunction1(getPropertyOrderIndex))
   
     __obj.asInstanceOf[DefaultFormComponentInspectorModel]
   }

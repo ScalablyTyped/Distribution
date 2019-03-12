@@ -44,42 +44,38 @@ trait HTML extends js.Object {
 object HTML {
   @scala.inline
   def apply(
-    addClickHandler: js.Function1[Handler, HTML],
-    addMouseDownHandler: js.Function1[Handler, HTML],
-    addMouseMoveHandler: js.Function1[Handler, HTML],
-    addMouseOutHandler: js.Function1[Handler, HTML],
-    addMouseOverHandler: js.Function1[Handler, HTML],
-    addMouseUpHandler: js.Function1[Handler, HTML],
-    addMouseWheelHandler: js.Function1[Handler, HTML],
-    addStyleDependentName: js.Function1[java.lang.String, HTML],
-    addStyleName: js.Function1[java.lang.String, HTML],
-    getId: js.Function0[java.lang.String],
-    getTag: js.Function0[java.lang.String],
-    getType: js.Function0[java.lang.String],
-    setDirection: js.Function1[Component, HTML],
-    setHTML: js.Function1[java.lang.String, HTML],
-    setHeight: js.Function1[java.lang.String, HTML],
-    setHorizontalAlignment: js.Function1[HorizontalAlignment, HTML],
-    setId: js.Function1[java.lang.String, HTML],
-    setLayoutData: js.Function1[js.Object, HTML],
-    setPixelSize: js.Function2[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      HTML
-    ],
-    setSize: js.Function2[java.lang.String, java.lang.String, HTML],
-    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, HTML],
-    setStyleAttributes: js.Function1[js.Object, HTML],
-    setStyleName: js.Function1[java.lang.String, HTML],
-    setStylePrimaryName: js.Function1[java.lang.String, HTML],
-    setTag: js.Function1[java.lang.String, HTML],
-    setText: js.Function1[java.lang.String, HTML],
-    setTitle: js.Function1[java.lang.String, HTML],
-    setVisible: js.Function1[scala.Boolean, HTML],
-    setWidth: js.Function1[java.lang.String, HTML],
-    setWordWrap: js.Function1[scala.Boolean, HTML]
+    addClickHandler: Handler => HTML,
+    addMouseDownHandler: Handler => HTML,
+    addMouseMoveHandler: Handler => HTML,
+    addMouseOutHandler: Handler => HTML,
+    addMouseOverHandler: Handler => HTML,
+    addMouseUpHandler: Handler => HTML,
+    addMouseWheelHandler: Handler => HTML,
+    addStyleDependentName: java.lang.String => HTML,
+    addStyleName: java.lang.String => HTML,
+    getId: () => java.lang.String,
+    getTag: () => java.lang.String,
+    getType: () => java.lang.String,
+    setDirection: Component => HTML,
+    setHTML: java.lang.String => HTML,
+    setHeight: java.lang.String => HTML,
+    setHorizontalAlignment: HorizontalAlignment => HTML,
+    setId: java.lang.String => HTML,
+    setLayoutData: js.Object => HTML,
+    setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => HTML,
+    setSize: (java.lang.String, java.lang.String) => HTML,
+    setStyleAttribute: (java.lang.String, java.lang.String) => HTML,
+    setStyleAttributes: js.Object => HTML,
+    setStyleName: java.lang.String => HTML,
+    setStylePrimaryName: java.lang.String => HTML,
+    setTag: java.lang.String => HTML,
+    setText: java.lang.String => HTML,
+    setTitle: java.lang.String => HTML,
+    setVisible: scala.Boolean => HTML,
+    setWidth: java.lang.String => HTML,
+    setWordWrap: scala.Boolean => HTML
   ): HTML = {
-    val __obj = js.Dynamic.literal(addClickHandler = addClickHandler, addMouseDownHandler = addMouseDownHandler, addMouseMoveHandler = addMouseMoveHandler, addMouseOutHandler = addMouseOutHandler, addMouseOverHandler = addMouseOverHandler, addMouseUpHandler = addMouseUpHandler, addMouseWheelHandler = addMouseWheelHandler, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, getId = getId, getTag = getTag, getType = getType, setDirection = setDirection, setHTML = setHTML, setHeight = setHeight, setHorizontalAlignment = setHorizontalAlignment, setId = setId, setLayoutData = setLayoutData, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setText = setText, setTitle = setTitle, setVisible = setVisible, setWidth = setWidth, setWordWrap = setWordWrap)
+    val __obj = js.Dynamic.literal(addClickHandler = js.Any.fromFunction1(addClickHandler), addMouseDownHandler = js.Any.fromFunction1(addMouseDownHandler), addMouseMoveHandler = js.Any.fromFunction1(addMouseMoveHandler), addMouseOutHandler = js.Any.fromFunction1(addMouseOutHandler), addMouseOverHandler = js.Any.fromFunction1(addMouseOverHandler), addMouseUpHandler = js.Any.fromFunction1(addMouseUpHandler), addMouseWheelHandler = js.Any.fromFunction1(addMouseWheelHandler), addStyleDependentName = js.Any.fromFunction1(addStyleDependentName), addStyleName = js.Any.fromFunction1(addStyleName), getId = js.Any.fromFunction0(getId), getTag = js.Any.fromFunction0(getTag), getType = js.Any.fromFunction0(getType), setDirection = js.Any.fromFunction1(setDirection), setHTML = js.Any.fromFunction1(setHTML), setHeight = js.Any.fromFunction1(setHeight), setHorizontalAlignment = js.Any.fromFunction1(setHorizontalAlignment), setId = js.Any.fromFunction1(setId), setLayoutData = js.Any.fromFunction1(setLayoutData), setPixelSize = js.Any.fromFunction2(setPixelSize), setSize = js.Any.fromFunction2(setSize), setStyleAttribute = js.Any.fromFunction2(setStyleAttribute), setStyleAttributes = js.Any.fromFunction1(setStyleAttributes), setStyleName = js.Any.fromFunction1(setStyleName), setStylePrimaryName = js.Any.fromFunction1(setStylePrimaryName), setTag = js.Any.fromFunction1(setTag), setText = js.Any.fromFunction1(setText), setTitle = js.Any.fromFunction1(setTitle), setVisible = js.Any.fromFunction1(setVisible), setWidth = js.Any.fromFunction1(setWidth), setWordWrap = js.Any.fromFunction1(setWordWrap))
   
     __obj.asInstanceOf[HTML]
   }

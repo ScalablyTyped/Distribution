@@ -17,14 +17,14 @@ trait Errors extends js.Object {
 object Errors {
   @scala.inline
   def apply(
-    add: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    all: js.Function0[ValidationErrors],
+    add: (java.lang.String, java.lang.String) => scala.Unit,
+    all: () => ValidationErrors,
     errors: ValidationErrors,
-    first: js.Function1[java.lang.String, java.lang.String | validatorjsLib.validatorjsLibNumbers.`false`],
-    get: js.Function1[java.lang.String, js.Array[java.lang.String]],
-    has: js.Function1[java.lang.String, scala.Boolean]
+    first: java.lang.String => java.lang.String | validatorjsLib.validatorjsLibNumbers.`false`,
+    get: java.lang.String => js.Array[java.lang.String],
+    has: java.lang.String => scala.Boolean
   ): Errors = {
-    val __obj = js.Dynamic.literal(add = add, all = all, errors = errors, first = first, get = get, has = has)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), all = js.Any.fromFunction0(all), errors = errors, first = js.Any.fromFunction1(first), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has))
   
     __obj.asInstanceOf[Errors]
   }

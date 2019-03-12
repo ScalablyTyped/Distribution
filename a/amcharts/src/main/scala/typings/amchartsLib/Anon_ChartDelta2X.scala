@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ChartDelta2X extends js.Object {
-  var chart: amchartsLib.amchartMod.default
+  var chart: amchartsLib.amChartMod.default
   var delta2X: js.UndefOr[scala.Double] = js.undefined
   var delta2Y: js.UndefOr[scala.Double] = js.undefined
   var deltaX: js.UndefOr[scala.Double] = js.undefined
@@ -17,7 +17,7 @@ trait Anon_ChartDelta2X extends js.Object {
   var index: js.UndefOr[scala.Double] = js.undefined
   var initialX: js.UndefOr[scala.Double] = js.undefined
   var initialY: js.UndefOr[scala.Double] = js.undefined
-  var mostCloseGraph: js.UndefOr[amchartsLib.amgraphMod.default] = js.undefined
+  var mostCloseGraph: js.UndefOr[amchartsLib.amGraphMod.default] = js.undefined
   var start: js.UndefOr[scala.Double] = js.undefined
   var target: js.UndefOr[this.type] = js.undefined
   var `type`: java.lang.String
@@ -29,7 +29,7 @@ trait Anon_ChartDelta2X extends js.Object {
 object Anon_ChartDelta2X {
   @scala.inline
   def apply(
-    chart: amchartsLib.amchartMod.default,
+    chart: amchartsLib.amChartMod.default,
     `type`: java.lang.String,
     delta2X: scala.Int | scala.Double = null,
     delta2Y: scala.Int | scala.Double = null,
@@ -41,7 +41,7 @@ object Anon_ChartDelta2X {
     index: scala.Int | scala.Double = null,
     initialX: scala.Int | scala.Double = null,
     initialY: scala.Int | scala.Double = null,
-    mostCloseGraph: amchartsLib.amgraphMod.default = null,
+    mostCloseGraph: amchartsLib.amGraphMod.default = null,
     start: scala.Int | scala.Double = null,
     target: Anon_ChartDelta2X = null,
     x: scala.Int | scala.Double = null,

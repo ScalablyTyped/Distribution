@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowsAzureStatic extends js.Object {
-  var MobileServiceClient: MobileServiceClient
+  var MobileServiceClient: azureDashMobileDashServicesDashClientLib.MicrosoftNs.WindowsAzureNs.MobileServiceClient
 }
 
 object WindowsAzureStatic {

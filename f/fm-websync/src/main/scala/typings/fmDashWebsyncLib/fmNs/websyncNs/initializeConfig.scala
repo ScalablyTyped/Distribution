@@ -112,9 +112,9 @@ object initializeConfig {
     backoffInterval: scala.Int | scala.Double = null,
     clientFrameUrl: java.lang.String = null,
     key: java.lang.String = null,
-    onComplete: js.Function1[/* args */ baseArgs, scala.Unit] = null,
-    onFailure: js.Function1[/* args */ initializeFailureArgs, scala.Unit] = null,
-    onSuccess: js.Function1[/* args */ baseArgs, scala.Unit] = null,
+    onComplete: /* args */ baseArgs => scala.Unit = null,
+    onFailure: /* args */ initializeFailureArgs => scala.Unit = null,
+    onSuccess: /* args */ baseArgs => scala.Unit = null,
     quiet: js.UndefOr[scala.Boolean] = js.undefined,
     requestUrl: java.lang.String = null,
     retries: scala.Int | scala.Double = null,
@@ -128,9 +128,9 @@ object initializeConfig {
     if (backoffInterval != null) __obj.updateDynamic("backoffInterval")(backoffInterval.asInstanceOf[js.Any])
     if (clientFrameUrl != null) __obj.updateDynamic("clientFrameUrl")(clientFrameUrl)
     if (key != null) __obj.updateDynamic("key")(key)
-    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
-    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
+    if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction1(onFailure))
+    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction1(onSuccess))
     if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
     if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl)
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])

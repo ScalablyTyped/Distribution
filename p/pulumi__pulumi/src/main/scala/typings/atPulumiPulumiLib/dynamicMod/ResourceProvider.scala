@@ -79,37 +79,19 @@ trait ResourceProvider extends js.Object {
 object ResourceProvider {
   @scala.inline
   def apply(
-    create: js.Function1[js.Any, js.Promise[CreateResult]],
-    check: js.Function2[/* olds */ js.Any, /* news */ js.Any, js.Promise[CheckResult]] = null,
-    delete: js.Function2[
-      /* id */ atPulumiPulumiLib.resourceMod.ID, 
-      /* props */ js.Any, 
-      js.Promise[scala.Unit]
-    ] = null,
-    diff: js.Function3[
-      /* id */ atPulumiPulumiLib.resourceMod.ID, 
-      /* olds */ js.Any, 
-      /* news */ js.Any, 
-      js.Promise[DiffResult]
-    ] = null,
-    read: js.Function2[
-      /* id */ atPulumiPulumiLib.resourceMod.ID, 
-      /* props */ js.UndefOr[js.Any], 
-      js.Promise[ReadResult]
-    ] = null,
-    update: js.Function3[
-      /* id */ atPulumiPulumiLib.resourceMod.ID, 
-      /* olds */ js.Any, 
-      /* news */ js.Any, 
-      js.Promise[UpdateResult]
-    ] = null
+    create: js.Any => js.Promise[CreateResult],
+    check: (/* olds */ js.Any, /* news */ js.Any) => js.Promise[CheckResult] = null,
+    delete: (/* id */ atPulumiPulumiLib.resourceMod.ID, /* props */ js.Any) => js.Promise[scala.Unit] = null,
+    diff: (/* id */ atPulumiPulumiLib.resourceMod.ID, /* olds */ js.Any, /* news */ js.Any) => js.Promise[DiffResult] = null,
+    read: (/* id */ atPulumiPulumiLib.resourceMod.ID, /* props */ js.UndefOr[js.Any]) => js.Promise[ReadResult] = null,
+    update: (/* id */ atPulumiPulumiLib.resourceMod.ID, /* olds */ js.Any, /* news */ js.Any) => js.Promise[UpdateResult] = null
   ): ResourceProvider = {
-    val __obj = js.Dynamic.literal(create = create)
-    if (check != null) __obj.updateDynamic("check")(check)
-    if (delete != null) __obj.updateDynamic("delete")(delete)
-    if (diff != null) __obj.updateDynamic("diff")(diff)
-    if (read != null) __obj.updateDynamic("read")(read)
-    if (update != null) __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
+    if (check != null) __obj.updateDynamic("check")(js.Any.fromFunction2(check))
+    if (delete != null) __obj.updateDynamic("delete")(js.Any.fromFunction2(delete))
+    if (diff != null) __obj.updateDynamic("diff")(js.Any.fromFunction3(diff))
+    if (read != null) __obj.updateDynamic("read")(js.Any.fromFunction2(read))
+    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction3(update))
     __obj.asInstanceOf[ResourceProvider]
   }
 }

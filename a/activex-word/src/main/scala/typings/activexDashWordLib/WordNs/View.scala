@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.View")
 @js.native
 class View protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var BrowseToWindow: scala.Double = js.native
   var ConflictMode: scala.Boolean = js.native
   val Creator: scala.Double = js.native
@@ -29,7 +29,7 @@ class View protected () extends js.Object {
   var ReadingLayoutAllowEditing: scala.Boolean = js.native
   var ReadingLayoutAllowMultiplePages: scala.Boolean = js.native
   var ReadingLayoutTruncateMargins: WdReadingLayoutMargin = js.native
-  val Reviewers: Reviewers = js.native
+  val Reviewers: activexDashWordLib.WordNs.Reviewers = js.native
   var RevisionsBalloonShowConnectingLines: scala.Boolean = js.native
   var RevisionsBalloonSide: WdRevisionsBalloonMargin = js.native
   var RevisionsBalloonWidth: scala.Double = js.native
@@ -70,7 +70,7 @@ class View protected () extends js.Object {
   var Type: WdViewType = js.native
   var `Word.View_typekey`: View = js.native
   var WrapToWindow: scala.Boolean = js.native
-  val Zoom: Zoom = js.native
+  val Zoom: activexDashWordLib.WordNs.Zoom = js.native
   def CollapseOutline(): scala.Unit = js.native
   def CollapseOutline(Range: js.Any): scala.Unit = js.native
   def ExpandOutline(): scala.Unit = js.native

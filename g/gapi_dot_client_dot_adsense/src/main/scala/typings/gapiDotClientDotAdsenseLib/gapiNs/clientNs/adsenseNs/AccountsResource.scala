@@ -27,20 +27,14 @@ object AccountsResource {
     adunits: AdunitsResource,
     alerts: AlertsResource,
     customchannels: CustomchannelsResource,
-    get: js.Function1[
-      gapiDotClientDotAdsenseLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Account]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAdsenseLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Accounts]
-    ],
+    get: gapiDotClientDotAdsenseLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Account],
+    list: gapiDotClientDotAdsenseLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Accounts],
     payments: PaymentsResource,
     reports: ReportsResource,
     savedadstyles: SavedadstylesResource,
     urlchannels: UrlchannelsResource
   ): AccountsResource = {
-    val __obj = js.Dynamic.literal(adclients = adclients, adunits = adunits, alerts = alerts, customchannels = customchannels, get = get, list = list, payments = payments, reports = reports, savedadstyles = savedadstyles, urlchannels = urlchannels)
+    val __obj = js.Dynamic.literal(adclients = adclients, adunits = adunits, alerts = alerts, customchannels = customchannels, get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), payments = payments, reports = reports, savedadstyles = savedadstyles, urlchannels = urlchannels)
   
     __obj.asInstanceOf[AccountsResource]
   }

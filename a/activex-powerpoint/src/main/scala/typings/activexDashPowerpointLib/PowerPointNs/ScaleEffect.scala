@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.ScaleEffect")
 @js.native
 class ScaleEffect protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   var ByX: scala.Double = js.native
   var ByY: scala.Double = js.native
   var FromX: scala.Double = js.native

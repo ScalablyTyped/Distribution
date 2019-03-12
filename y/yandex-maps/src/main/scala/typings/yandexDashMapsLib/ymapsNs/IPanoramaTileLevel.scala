@@ -13,10 +13,10 @@ trait IPanoramaTileLevel extends js.Object {
 object IPanoramaTileLevel {
   @scala.inline
   def apply(
-    getImageSize: js.Function0[js.Array[scala.Double]],
-    getTileUrl: js.Function2[scala.Double, scala.Double, java.lang.String]
+    getImageSize: () => js.Array[scala.Double],
+    getTileUrl: (scala.Double, scala.Double) => java.lang.String
   ): IPanoramaTileLevel = {
-    val __obj = js.Dynamic.literal(getImageSize = getImageSize, getTileUrl = getTileUrl)
+    val __obj = js.Dynamic.literal(getImageSize = js.Any.fromFunction0(getImageSize), getTileUrl = js.Any.fromFunction2(getTileUrl))
   
     __obj.asInstanceOf[IPanoramaTileLevel]
   }

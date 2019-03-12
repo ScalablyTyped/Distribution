@@ -18,11 +18,8 @@ trait NumberConstructor extends js.Object {
 
 object NumberConstructor {
   @scala.inline
-  def apply(
-    parseInvariant: js.Function1[java.lang.String, scala.Double],
-    parseLocale: js.Function1[java.lang.String, scala.Double]
-  ): NumberConstructor = {
-    val __obj = js.Dynamic.literal(parseInvariant = parseInvariant, parseLocale = parseLocale)
+  def apply(parseInvariant: java.lang.String => scala.Double, parseLocale: java.lang.String => scala.Double): NumberConstructor = {
+    val __obj = js.Dynamic.literal(parseInvariant = js.Any.fromFunction1(parseInvariant), parseLocale = js.Any.fromFunction1(parseLocale))
   
     __obj.asInstanceOf[NumberConstructor]
   }

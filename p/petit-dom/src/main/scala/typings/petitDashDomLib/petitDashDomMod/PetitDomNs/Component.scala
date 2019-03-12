@@ -20,11 +20,11 @@ trait Component[P /* <: ComponentProps */] extends js.Object {
 object Component {
   @scala.inline
   def apply[P /* <: ComponentProps */](
-    mount: js.Function2[P, js.Array[VNode], stdLib.Element],
-    patch: js.Function5[stdLib.Element, P, P, js.Array[VNode], js.Array[VNode], stdLib.Element],
-    unmount: js.Function1[stdLib.Element, scala.Unit]
+    mount: (P, js.Array[VNode]) => stdLib.Element,
+    patch: (stdLib.Element, P, P, js.Array[VNode], js.Array[VNode]) => stdLib.Element,
+    unmount: stdLib.Element => scala.Unit
   ): Component[P] = {
-    val __obj = js.Dynamic.literal(mount = mount, patch = patch, unmount = unmount)
+    val __obj = js.Dynamic.literal(mount = js.Any.fromFunction2(mount), patch = js.Any.fromFunction5(patch), unmount = js.Any.fromFunction1(unmount))
   
     __obj.asInstanceOf[Component[P]]
   }

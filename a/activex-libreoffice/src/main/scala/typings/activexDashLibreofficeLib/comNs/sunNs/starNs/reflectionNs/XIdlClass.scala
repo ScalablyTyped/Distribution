@@ -18,7 +18,7 @@ trait XIdlClass[T]
     * Deprecated. Do not call.
     * @deprecated Deprecated
     */
-  val Classes: activexDashInteropLib.SafeArray[XIdlClass[_]]
+  val Classes: stdLib.SafeArray[XIdlClass[_]]
   /**
     * If the reflected type is an array or sequence, then this method returns a {@link XIdlClass} interface reflecting the element.
     * @returns reflection interface of the element type of an array or sequence type (null-reference otherwise).
@@ -30,19 +30,19 @@ trait XIdlClass[T]
     * interface, struct or union or the interface, struct or union does not have any field (/interface attribute), then an empty sequence is returned.
     * @returns all field (/interface attribute) reflections (or empty sequence)
     */
-  val Fields: activexDashInteropLib.SafeArray[XIdlField]
+  val Fields: stdLib.SafeArray[XIdlField]
   /**
     * Deprecated. Do not call.
     * @deprecated Deprecated
     */
-  val Interfaces: activexDashInteropLib.SafeArray[XIdlClass[_]]
+  val Interfaces: stdLib.SafeArray[XIdlClass[_]]
   /**
     * If the reflected type is an interface, then you get a sequence of {@link XIdlMethod} interfaces reflecting all methods of the interface. This also
     * includes the inherited methods of the interface. ;  If the reflected type is not an interface or the interface does not have any methods, then a
     * null-reference is returned.
     * @returns all method reflections (or empty sequence)
     */
-  val Methods: activexDashInteropLib.SafeArray[XIdlMethod]
+  val Methods: stdLib.SafeArray[XIdlMethod]
   /**
     * Returns the fully-qualified name of the reflected type.
     * @returns the fully-qualified name of the type
@@ -53,7 +53,7 @@ trait XIdlClass[T]
     * interface or an interface that is not derived from another, then an empty sequence is returned.
     * @returns all base interfaces of an interface type or an empty sequence.
     */
-  val Superclasses: activexDashInteropLib.SafeArray[XIdlClass[_]]
+  val Superclasses: stdLib.SafeArray[XIdlClass[_]]
   /**
     * Returns the {@link com.sun.star.uno.TypeClass} of the reflected type.
     * @returns type class of the reflected type.
@@ -89,7 +89,7 @@ trait XIdlClass[T]
     * Deprecated. Do not call.
     * @deprecated Deprecated
     */
-  def getClasses(): activexDashInteropLib.SafeArray[XIdlClass[_]]
+  def getClasses(): stdLib.SafeArray[XIdlClass[_]]
   /**
     * If the reflected type is an array or sequence, then this method returns a {@link XIdlClass} interface reflecting the element.
     * @returns reflection interface of the element type of an array or sequence type (null-reference otherwise).
@@ -109,12 +109,12 @@ trait XIdlClass[T]
     * interface, struct or union or the interface, struct or union does not have any field (/interface attribute), then an empty sequence is returned.
     * @returns all field (/interface attribute) reflections (or empty sequence)
     */
-  def getFields(): activexDashInteropLib.SafeArray[XIdlField]
+  def getFields(): stdLib.SafeArray[XIdlField]
   /**
     * Deprecated. Do not call.
     * @deprecated Deprecated
     */
-  def getInterfaces(): activexDashInteropLib.SafeArray[XIdlClass[_]]
+  def getInterfaces(): stdLib.SafeArray[XIdlClass[_]]
   /**
     * If the reflected type is an interface, then you get a {@link XIdlMethod} interface reflecting the demanded method by name. ;  If the reflected type is
     * not an interface or the interface does not have a method with the demanded name (including inherited methods), then a null-reference is returned.
@@ -128,7 +128,7 @@ trait XIdlClass[T]
     * null-reference is returned.
     * @returns all method reflections (or empty sequence)
     */
-  def getMethods(): activexDashInteropLib.SafeArray[XIdlMethod]
+  def getMethods(): stdLib.SafeArray[XIdlMethod]
   /**
     * Returns the fully-qualified name of the reflected type.
     * @returns the fully-qualified name of the type
@@ -139,7 +139,7 @@ trait XIdlClass[T]
     * interface or an interface that is not derived from another, then an empty sequence is returned.
     * @returns all base interfaces of an interface type or an empty sequence.
     */
-  def getSuperclasses(): activexDashInteropLib.SafeArray[XIdlClass[_]]
+  def getSuperclasses(): stdLib.SafeArray[XIdlClass[_]]
   /**
     * Returns the {@link com.sun.star.uno.TypeClass} of the reflected type.
     * @returns type class of the reflected type.
@@ -162,36 +162,36 @@ object XIdlClass {
   @scala.inline
   def apply[T](
     Array: XIdlArray,
-    Classes: activexDashInteropLib.SafeArray[XIdlClass[_]],
+    Classes: stdLib.SafeArray[XIdlClass[_]],
     ComponentType: XIdlClass[_],
-    Fields: activexDashInteropLib.SafeArray[XIdlField],
-    Interfaces: activexDashInteropLib.SafeArray[XIdlClass[_]],
-    Methods: activexDashInteropLib.SafeArray[XIdlMethod],
+    Fields: stdLib.SafeArray[XIdlField],
+    Interfaces: stdLib.SafeArray[XIdlClass[_]],
+    Methods: stdLib.SafeArray[XIdlMethod],
     Name: java.lang.String,
-    Superclasses: activexDashInteropLib.SafeArray[XIdlClass[_]],
+    Superclasses: stdLib.SafeArray[XIdlClass[_]],
     TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
     Uik: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik,
-    acquire: js.Function0[scala.Unit],
-    createObject: js.Function1[js.Array[T], scala.Unit],
-    equals: js.Function1[XIdlClass[_], scala.Boolean],
-    getArray: js.Function0[XIdlArray],
-    getClass: js.Function1[java.lang.String, XIdlClass[_]],
-    getClasses: js.Function0[activexDashInteropLib.SafeArray[XIdlClass[_]]],
-    getComponentType: js.Function0[XIdlClass[_]],
-    getField: js.Function1[java.lang.String, XIdlField],
-    getFields: js.Function0[activexDashInteropLib.SafeArray[XIdlField]],
-    getInterfaces: js.Function0[activexDashInteropLib.SafeArray[XIdlClass[_]]],
-    getMethod: js.Function1[java.lang.String, XIdlMethod],
-    getMethods: js.Function0[activexDashInteropLib.SafeArray[XIdlMethod]],
-    getName: js.Function0[java.lang.String],
-    getSuperclasses: js.Function0[activexDashInteropLib.SafeArray[XIdlClass[_]]],
-    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
-    getUik: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik],
-    isAssignableFrom: js.Function1[XIdlClass[_], scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createObject: js.Array[T] => scala.Unit,
+    equals: XIdlClass[_] => scala.Boolean,
+    getArray: () => XIdlArray,
+    getClass: java.lang.String => XIdlClass[_],
+    getClasses: () => stdLib.SafeArray[XIdlClass[_]],
+    getComponentType: () => XIdlClass[_],
+    getField: java.lang.String => XIdlField,
+    getFields: () => stdLib.SafeArray[XIdlField],
+    getInterfaces: () => stdLib.SafeArray[XIdlClass[_]],
+    getMethod: java.lang.String => XIdlMethod,
+    getMethods: () => stdLib.SafeArray[XIdlMethod],
+    getName: () => java.lang.String,
+    getSuperclasses: () => stdLib.SafeArray[XIdlClass[_]],
+    getTypeClass: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    getUik: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik,
+    isAssignableFrom: XIdlClass[_] => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XIdlClass[T] = {
-    val __obj = js.Dynamic.literal(Array = Array, Classes = Classes, ComponentType = ComponentType, Fields = Fields, Interfaces = Interfaces, Methods = Methods, Name = Name, Superclasses = Superclasses, TypeClass = TypeClass, Uik = Uik, acquire = acquire, createObject = createObject, equals = equals, getArray = getArray, getClass = getClass, getClasses = getClasses, getComponentType = getComponentType, getField = getField, getFields = getFields, getInterfaces = getInterfaces, getMethod = getMethod, getMethods = getMethods, getName = getName, getSuperclasses = getSuperclasses, getTypeClass = getTypeClass, getUik = getUik, isAssignableFrom = isAssignableFrom, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Array = Array, Classes = Classes, ComponentType = ComponentType, Fields = Fields, Interfaces = Interfaces, Methods = Methods, Name = Name, Superclasses = Superclasses, TypeClass = TypeClass, Uik = Uik, acquire = js.Any.fromFunction0(acquire), createObject = js.Any.fromFunction1(createObject), equals = js.Any.fromFunction1(equals), getArray = js.Any.fromFunction0(getArray), getClass = js.Any.fromFunction1(getClass), getClasses = js.Any.fromFunction0(getClasses), getComponentType = js.Any.fromFunction0(getComponentType), getField = js.Any.fromFunction1(getField), getFields = js.Any.fromFunction0(getFields), getInterfaces = js.Any.fromFunction0(getInterfaces), getMethod = js.Any.fromFunction1(getMethod), getMethods = js.Any.fromFunction0(getMethods), getName = js.Any.fromFunction0(getName), getSuperclasses = js.Any.fromFunction0(getSuperclasses), getTypeClass = js.Any.fromFunction0(getTypeClass), getUik = js.Any.fromFunction0(getUik), isAssignableFrom = js.Any.fromFunction1(isAssignableFrom), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XIdlClass[T]]
   }

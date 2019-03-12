@@ -25,14 +25,14 @@ trait MongoDBStorageOptions extends Storage {
 object MongoDBStorageOptions {
   @scala.inline
   def apply(
-    executed: js.Function0[js.Promise[js.Array[nodeLib.String]]],
-    logMigration: js.Function1[java.lang.String, js.Promise[scala.Unit]],
-    unlogMigration: js.Function1[java.lang.String, js.Promise[scala.Unit]],
+    executed: () => js.Promise[js.Array[java.lang.String]],
+    logMigration: java.lang.String => js.Promise[scala.Unit],
+    unlogMigration: java.lang.String => js.Promise[scala.Unit],
     collection: mongodbLib.mongodbMod.Collection[mongodbLib.Default] = null,
     collectionName: java.lang.String = null,
     connection: mongodbLib.mongodbMod.Db = null
   ): MongoDBStorageOptions = {
-    val __obj = js.Dynamic.literal(executed = executed, logMigration = logMigration, unlogMigration = unlogMigration)
+    val __obj = js.Dynamic.literal(executed = js.Any.fromFunction0(executed), logMigration = js.Any.fromFunction1(logMigration), unlogMigration = js.Any.fromFunction1(unlogMigration))
     if (collection != null) __obj.updateDynamic("collection")(collection)
     if (collectionName != null) __obj.updateDynamic("collectionName")(collectionName)
     if (connection != null) __obj.updateDynamic("connection")(connection)

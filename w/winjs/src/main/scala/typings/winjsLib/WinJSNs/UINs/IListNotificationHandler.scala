@@ -67,17 +67,17 @@ trait IListNotificationHandler[T] extends js.Object {
 object IListNotificationHandler {
   @scala.inline
   def apply[T](
-    beginNotifications: js.Function0[scala.Unit],
-    changed: js.Function2[IItem[T], IItem[T], scala.Unit],
-    countChanged: js.Function2[scala.Double, scala.Double, scala.Unit],
-    endNotifications: js.Function0[scala.Unit],
-    indexChanged: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit],
-    inserted: js.Function3[IItemPromise[T], java.lang.String, java.lang.String, scala.Unit],
-    itemAvailable: js.Function1[IItem[T], scala.Unit],
-    moved: js.Function3[IItemPromise[T], java.lang.String, java.lang.String, scala.Unit],
-    removed: js.Function2[java.lang.String, scala.Boolean, scala.Unit]
+    beginNotifications: () => scala.Unit,
+    changed: (IItem[T], IItem[T]) => scala.Unit,
+    countChanged: (scala.Double, scala.Double) => scala.Unit,
+    endNotifications: () => scala.Unit,
+    indexChanged: (java.lang.String, scala.Double, scala.Double) => scala.Unit,
+    inserted: (IItemPromise[T], java.lang.String, java.lang.String) => scala.Unit,
+    itemAvailable: IItem[T] => scala.Unit,
+    moved: (IItemPromise[T], java.lang.String, java.lang.String) => scala.Unit,
+    removed: (java.lang.String, scala.Boolean) => scala.Unit
   ): IListNotificationHandler[T] = {
-    val __obj = js.Dynamic.literal(beginNotifications = beginNotifications, changed = changed, countChanged = countChanged, endNotifications = endNotifications, indexChanged = indexChanged, inserted = inserted, itemAvailable = itemAvailable, moved = moved, removed = removed)
+    val __obj = js.Dynamic.literal(beginNotifications = js.Any.fromFunction0(beginNotifications), changed = js.Any.fromFunction2(changed), countChanged = js.Any.fromFunction2(countChanged), endNotifications = js.Any.fromFunction0(endNotifications), indexChanged = js.Any.fromFunction3(indexChanged), inserted = js.Any.fromFunction3(inserted), itemAvailable = js.Any.fromFunction1(itemAvailable), moved = js.Any.fromFunction3(moved), removed = js.Any.fromFunction2(removed))
   
     __obj.asInstanceOf[IListNotificationHandler[T]]
   }

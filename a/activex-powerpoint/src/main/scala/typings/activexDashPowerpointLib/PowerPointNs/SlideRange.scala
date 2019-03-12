@@ -8,22 +8,22 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.SlideRange")
 @js.native
 class SlideRange protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   val Background: ShapeRange = js.native
   var BackgroundStyle: activexDashOfficeLib.OfficeNs.MsoBackgroundStyleIndex = js.native
-  var ColorScheme: ColorScheme = js.native
-  val Comments: Comments = js.native
+  var ColorScheme: activexDashPowerpointLib.PowerPointNs.ColorScheme = js.native
+  val Comments: activexDashPowerpointLib.PowerPointNs.Comments = js.native
   val Count: scala.Double = js.native
-  var CustomLayout: CustomLayout = js.native
-  val CustomerData: CustomerData = js.native
-  var Design: Design = js.native
+  var CustomLayout: activexDashPowerpointLib.PowerPointNs.CustomLayout = js.native
+  val CustomerData: activexDashPowerpointLib.PowerPointNs.CustomerData = js.native
+  var Design: activexDashPowerpointLib.PowerPointNs.Design = js.native
   var DisplayMasterShapes: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   var FollowMasterBackground: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   val HasNotesPage: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
-  val HeadersFooters: HeadersFooters = js.native
-  val Hyperlinks: Hyperlinks = js.native
+  val HeadersFooters: activexDashPowerpointLib.PowerPointNs.HeadersFooters = js.native
+  val Hyperlinks: activexDashPowerpointLib.PowerPointNs.Hyperlinks = js.native
   var Layout: PpSlideLayout = js.native
-  val Master: Master = js.native
+  val Master: activexDashPowerpointLib.PowerPointNs.Master = js.native
   var Name: java.lang.String = js.native
   val NotesPage: SlideRange = js.native
   val Parent: js.Any = js.native
@@ -32,15 +32,15 @@ class SlideRange protected () extends js.Object {
   @JSName("Scripts")
   val Scripts_Original: activexDashOfficeLib.OfficeNs.Scripts = js.native
   val SectionNumber: scala.Double = js.native
-  val Shapes: Shapes = js.native
+  val Shapes: activexDashPowerpointLib.PowerPointNs.Shapes = js.native
   val SlideID: scala.Double = js.native
   val SlideIndex: scala.Double = js.native
   val SlideNumber: scala.Double = js.native
-  val SlideShowTransition: SlideShowTransition = js.native
-  val Tags: Tags = js.native
+  val SlideShowTransition: activexDashPowerpointLib.PowerPointNs.SlideShowTransition = js.native
+  val Tags: activexDashPowerpointLib.PowerPointNs.Tags = js.native
   @JSName("ThemeColorScheme")
   val ThemeColorScheme_Original: activexDashOfficeLib.OfficeNs.ThemeColorScheme = js.native
-  val TimeLine: TimeLine = js.native
+  val TimeLine: activexDashPowerpointLib.PowerPointNs.TimeLine = js.native
   val sectionIndex: scala.Double = js.native
   def ApplyTemplate(FileName: java.lang.String): scala.Unit = js.native
   def ApplyTheme(themeName: java.lang.String): scala.Unit = js.native

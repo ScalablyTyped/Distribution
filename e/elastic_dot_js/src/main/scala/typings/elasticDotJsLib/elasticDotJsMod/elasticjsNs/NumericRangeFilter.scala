@@ -72,22 +72,22 @@ trait NumericRangeFilter extends Filter {
 object NumericRangeFilter {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cache: js.Function1[scala.Boolean, NumericRangeFilter],
-    cacheKey: js.Function1[java.lang.String, NumericRangeFilter],
-    field: js.Function1[java.lang.String, NumericRangeFilter],
-    from: js.Function1[stdLib.Number, NumericRangeFilter],
-    gt: js.Function1[js.Any, NumericRangeFilter],
-    gte: js.Function1[js.Any, NumericRangeFilter],
-    includeLower: js.Function1[scala.Boolean, NumericRangeFilter],
-    includeUpper: js.Function1[scala.Boolean, NumericRangeFilter],
-    lt: js.Function1[js.Any, NumericRangeFilter],
-    lte: js.Function1[js.Any, NumericRangeFilter],
-    name: js.Function1[java.lang.String, NumericRangeFilter],
-    to: js.Function1[stdLib.Number, NumericRangeFilter],
-    toJSON: js.Function0[NumericRangeFilter]
+    _type: () => java.lang.String,
+    cache: scala.Boolean => NumericRangeFilter,
+    cacheKey: java.lang.String => NumericRangeFilter,
+    field: java.lang.String => NumericRangeFilter,
+    from: stdLib.Number => NumericRangeFilter,
+    gt: js.Any => NumericRangeFilter,
+    gte: js.Any => NumericRangeFilter,
+    includeLower: scala.Boolean => NumericRangeFilter,
+    includeUpper: scala.Boolean => NumericRangeFilter,
+    lt: js.Any => NumericRangeFilter,
+    lte: js.Any => NumericRangeFilter,
+    name: java.lang.String => NumericRangeFilter,
+    to: stdLib.Number => NumericRangeFilter,
+    toJSON: () => NumericRangeFilter
   ): NumericRangeFilter = {
-    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, field = field, from = from, gt = gt, gte = gte, includeLower = includeLower, includeUpper = includeUpper, lt = lt, lte = lte, name = name, to = to, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), field = js.Any.fromFunction1(field), from = js.Any.fromFunction1(from), gt = js.Any.fromFunction1(gt), gte = js.Any.fromFunction1(gte), includeLower = js.Any.fromFunction1(includeLower), includeUpper = js.Any.fromFunction1(includeUpper), lt = js.Any.fromFunction1(lt), lte = js.Any.fromFunction1(lte), name = js.Any.fromFunction1(name), to = js.Any.fromFunction1(to), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[NumericRangeFilter]
   }

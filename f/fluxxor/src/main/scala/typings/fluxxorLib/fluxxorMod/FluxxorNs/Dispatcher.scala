@@ -15,12 +15,12 @@ trait Dispatcher extends js.Object {
 object Dispatcher {
   @scala.inline
   def apply(
-    addStore: js.Function2[java.lang.String, Store, scala.Unit],
-    dispatch: js.Function1[js.Function, scala.Unit],
-    doDispatchLoop: js.Function1[js.Function, scala.Unit],
-    waitForStores: js.Function3[Store, js.Array[java.lang.String], js.Function, scala.Unit]
+    addStore: (java.lang.String, Store) => scala.Unit,
+    dispatch: js.Function => scala.Unit,
+    doDispatchLoop: js.Function => scala.Unit,
+    waitForStores: (Store, js.Array[java.lang.String], js.Function) => scala.Unit
   ): Dispatcher = {
-    val __obj = js.Dynamic.literal(addStore = addStore, dispatch = dispatch, doDispatchLoop = doDispatchLoop, waitForStores = waitForStores)
+    val __obj = js.Dynamic.literal(addStore = js.Any.fromFunction2(addStore), dispatch = js.Any.fromFunction1(dispatch), doDispatchLoop = js.Any.fromFunction1(doDispatchLoop), waitForStores = js.Any.fromFunction3(waitForStores))
   
     __obj.asInstanceOf[Dispatcher]
   }

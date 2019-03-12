@@ -15,18 +15,18 @@ object NodeChangeEvent {
   @scala.inline
   def apply(
     element: stdLib.Node,
-    isDefaultPrevented: js.Function0[scala.Boolean],
-    isImmediatePropagationStopped: js.Function0[scala.Boolean],
-    isPropagationStopped: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
+    isImmediatePropagationStopped: () => scala.Boolean,
+    isPropagationStopped: () => scala.Boolean,
     parents: js.Array[stdLib.Node],
-    preventDefault: js.Function0[scala.Unit],
+    preventDefault: () => scala.Unit,
     selectionChange: scala.Boolean,
-    stopImmediatePropagation: js.Function0[scala.Unit],
-    stopPropagation: js.Function0[scala.Unit],
+    stopImmediatePropagation: () => scala.Unit,
+    stopPropagation: () => scala.Unit,
     target: java.lang.String,
     `type`: java.lang.String
   ): NodeChangeEvent = {
-    val __obj = js.Dynamic.literal(element = element, isDefaultPrevented = isDefaultPrevented, isImmediatePropagationStopped = isImmediatePropagationStopped, isPropagationStopped = isPropagationStopped, parents = parents, preventDefault = preventDefault, selectionChange = selectionChange, stopImmediatePropagation = stopImmediatePropagation, stopPropagation = stopPropagation, target = target)
+    val __obj = js.Dynamic.literal(element = element, isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), parents = parents, preventDefault = js.Any.fromFunction0(preventDefault), selectionChange = selectionChange, stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[NodeChangeEvent]
   }

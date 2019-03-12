@@ -12,13 +12,9 @@ trait IObservable[T] extends js.Object {
 object IObservable {
   @scala.inline
   def apply[T](
-    safeApply: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      js.Function1[/* data */ T, scala.Unit], 
-      rxDashLiteDashAggregatesLib.RxNs.Observable[T]
-    ]
+    safeApply: (angularLib.angularMod.angularNs.IScope, js.Function1[/* data */ T, scala.Unit]) => rxDashLiteDashAggregatesLib.RxNs.Observable[T]
   ): IObservable[T] = {
-    val __obj = js.Dynamic.literal(safeApply = safeApply)
+    val __obj = js.Dynamic.literal(safeApply = js.Any.fromFunction2(safeApply))
   
     __obj.asInstanceOf[IObservable[T]]
   }

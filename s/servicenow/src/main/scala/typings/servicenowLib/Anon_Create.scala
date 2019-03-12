@@ -11,8 +11,8 @@ trait Anon_Create extends js.Object {
 
 object Anon_Create {
   @scala.inline
-  def apply(create: js.Function0[js.Any]): Anon_Create = {
-    val __obj = js.Dynamic.literal(create = create)
+  def apply(create: () => js.Any): Anon_Create = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create))
   
     __obj.asInstanceOf[Anon_Create]
   }

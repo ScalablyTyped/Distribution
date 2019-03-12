@@ -9,14 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def default(key: java.lang.String): reduxDashStorageLib.reduxDashStorageMod.StorageEngine = js.native
-  def default(
-    key: java.lang.String,
-    replacer: reduxDashStorageDashEngineDashLocalstorageLib.reduxDashStorageDashEngineDashLocalstorageMod.Replacer
-  ): reduxDashStorageLib.reduxDashStorageMod.StorageEngine = js.native
-  def default(
-    key: java.lang.String,
-    replacer: reduxDashStorageDashEngineDashLocalstorageLib.reduxDashStorageDashEngineDashLocalstorageMod.Replacer,
-    reviver: reduxDashStorageDashEngineDashLocalstorageLib.reduxDashStorageDashEngineDashLocalstorageMod.Reviver
-  ): reduxDashStorageLib.reduxDashStorageMod.StorageEngine = js.native
+  def default(key: java.lang.String, replacer: Replacer): reduxDashStorageLib.reduxDashStorageMod.StorageEngine = js.native
+  def default(key: java.lang.String, replacer: Replacer, reviver: Reviver): reduxDashStorageLib.reduxDashStorageMod.StorageEngine = js.native
 }
 

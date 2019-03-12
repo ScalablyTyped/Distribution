@@ -14,7 +14,7 @@ object ^ extends js.Object {
     /* next */ expressLib.expressMod.eNs.NextFunction, 
     scala.Unit
   ] = js.native
-  def apply(options: expressDashMongoDashSanitizeLib.expressDashMongoDashSanitizeMod.MongoSanitizeOptions): js.Function3[
+  def apply(options: MongoSanitizeOptions): js.Function3[
     /* req */ expressLib.expressMod.eNs.Request, 
     /* res */ expressLib.expressMod.eNs.Response, 
     /* next */ expressLib.expressMod.eNs.NextFunction, 
@@ -22,9 +22,6 @@ object ^ extends js.Object {
   ] = js.native
   def has(payload: js.Any): scala.Boolean = js.native
   def sanitize[T](payload: T): T = js.native
-  def sanitize[T](
-    payload: T,
-    options: expressDashMongoDashSanitizeLib.expressDashMongoDashSanitizeMod.MongoSanitizeOptions
-  ): T = js.native
+  def sanitize[T](payload: T, options: MongoSanitizeOptions): T = js.native
 }
 

@@ -18,13 +18,13 @@ object ^ extends js.Object {
     * @return Promise object that resolves to the alert dialog component object.
     */
   def createAlertDialog(page: java.lang.String): js.Promise[stdLib.HTMLElement] = js.native
-  def createAlertDialog(page: java.lang.String, options: onsenuiLib.onsenuiMod.OnsOptions): js.Promise[stdLib.HTMLElement] = js.native
+  def createAlertDialog(page: java.lang.String, options: OnsOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
     * @description Create a dialog instance from a template.
     * @return Promise object that resolves to the dialog component object.
     */
   def createDialog(page: java.lang.String): js.Promise[stdLib.HTMLElement] = js.native
-  def createDialog(page: java.lang.String, options: onsenuiLib.onsenuiMod.OnsOptions): js.Promise[stdLib.HTMLElement] = js.native
+  def createDialog(page: java.lang.String, options: OnsOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
     * @description Create a new element from a template. Both inline HTML and external files are supported although the return value differs.
     * @return If the provided template was an inline HTML string, it returns the new element. Otherwise, it returns a promise that resolves to the new element.
@@ -35,7 +35,7 @@ object ^ extends js.Object {
     * @return Promise object that resolves to the popover component object.
     */
   def createPopover(page: java.lang.String): js.Promise[stdLib.HTMLElement] = js.native
-  def createPopover(page: java.lang.String, options: onsenuiLib.onsenuiMod.OnsOptions): js.Promise[stdLib.HTMLElement] = js.native
+  def createPopover(page: java.lang.String, options: OnsOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
     * @description Disable all animations. Could be handy for testing and older devices.
     */
@@ -109,12 +109,12 @@ object ^ extends js.Object {
     * @description Separated files need to be requested on demand and this can slightly delay pushing new pages. This method requests and caches templates for later use.
     * @return Promise that resolves when all the templates are cached.
     */
-  def preload(args: js.Any*): js.Promise[coreDashJsLib.Array[stdLib.DocumentFragment]] = js.native
+  def preload(args: js.Any*): js.Promise[js.Array[stdLib.DocumentFragment]] = js.native
   /**
     * @description Method used to wait for app initialization. The callback will not be executed until Onsen UI has been completely initialized
     * @param {Function} callback Function that executes after Onsen UI has been initialized
     */
-  def ready(callback: coreDashJsLib.Function): scala.Unit = js.native
+  def ready(callback: js.Function): scala.Unit = js.native
   /**
     * @description If no page is defined for the `ons-loading-placeholder` attribute it will wait for this method being called before loading the page.
     */

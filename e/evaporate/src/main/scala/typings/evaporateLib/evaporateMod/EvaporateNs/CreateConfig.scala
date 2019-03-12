@@ -86,22 +86,11 @@ object CreateConfig {
     aws_url: java.lang.String = null,
     cloudfront: js.UndefOr[scala.Boolean] = js.undefined,
     computeContentMd5: js.UndefOr[scala.Boolean] = js.undefined,
-    cryptoHexEncodedHash256: js.Function1[/* data */ java.lang.String | stdLib.ArrayBuffer | scala.Null, java.lang.String] = null,
-    cryptoMd5Method: js.Function1[/* data */ stdLib.ArrayBuffer, java.lang.String] = null,
-    customAuthMethod: js.Function5[
-      /* signParams */ java.lang.String, 
-      /* signHeaders */ java.lang.String, 
-      /* stringToSign */ java.lang.String, 
-      /* signatureDateTime */ java.lang.String, 
-      /* canonicalRequest */ java.lang.String, 
-      js.Promise[java.lang.String]
-    ] = null,
+    cryptoHexEncodedHash256: /* data */ java.lang.String | stdLib.ArrayBuffer | scala.Null => java.lang.String = null,
+    cryptoMd5Method: /* data */ stdLib.ArrayBuffer => java.lang.String = null,
+    customAuthMethod: (/* signParams */ java.lang.String, /* signHeaders */ java.lang.String, /* stringToSign */ java.lang.String, /* signatureDateTime */ java.lang.String, /* canonicalRequest */ java.lang.String) => js.Promise[java.lang.String] = null,
     encodeFilename: js.UndefOr[scala.Boolean] = js.undefined,
-    evaporateChanged: js.Function2[
-      /* evaporate */ evaporateLib.evaporateMod.Evaporate, 
-      /* evaporatingCount */ scala.Double, 
-      scala.Unit
-    ] = null,
+    evaporateChanged: (/* evaporate */ evaporateLib.evaporateMod.Evaporate, /* evaporatingCount */ scala.Double) => scala.Unit = null,
     localTimeOffset: scala.Int | scala.Double = null,
     logging: js.UndefOr[scala.Boolean] = js.undefined,
     maxConcurrentParts: scala.Int | scala.Double = null,
@@ -111,12 +100,7 @@ object CreateConfig {
     onlyRetryForSameFileName: js.UndefOr[scala.Boolean] = js.undefined,
     partSize: scala.Int | scala.Double = null,
     progressIntervalMS: scala.Int | scala.Double = null,
-    readableStreamPartMethod: js.Function3[
-      /* file */ stdLib.File, 
-      /* start */ scala.Double, 
-      /* end */ scala.Double, 
-      stdLib.ReadableStream[_]
-    ] = null,
+    readableStreamPartMethod: (/* file */ stdLib.File, /* start */ scala.Double, /* end */ scala.Double) => stdLib.ReadableStream[_] = null,
     readableStreams: js.UndefOr[scala.Boolean] = js.undefined,
     retryBackoffPower: scala.Int | scala.Double = null,
     s3Acceleration: js.UndefOr[scala.Boolean] = js.undefined,
@@ -124,12 +108,7 @@ object CreateConfig {
     sendCanonicalRequestToSignerUrl: js.UndefOr[scala.Boolean] = js.undefined,
     signHeaders: js.Object = null,
     signParams: js.Object = null,
-    signResponseHandler: js.Function3[
-      /* response */ js.Any, 
-      /* stringToSign */ java.lang.String, 
-      /* signatureDateTime */ java.lang.String, 
-      js.Promise[java.lang.String]
-    ] = null,
+    signResponseHandler: (/* response */ js.Any, /* stringToSign */ java.lang.String, /* signatureDateTime */ java.lang.String) => js.Promise[java.lang.String] = null,
     signerUrl: java.lang.String = null,
     timeUrl: java.lang.String = null,
     xhrWithCredentials: js.UndefOr[scala.Boolean] = js.undefined
@@ -143,11 +122,11 @@ object CreateConfig {
     if (aws_url != null) __obj.updateDynamic("aws_url")(aws_url)
     if (!js.isUndefined(cloudfront)) __obj.updateDynamic("cloudfront")(cloudfront)
     if (!js.isUndefined(computeContentMd5)) __obj.updateDynamic("computeContentMd5")(computeContentMd5)
-    if (cryptoHexEncodedHash256 != null) __obj.updateDynamic("cryptoHexEncodedHash256")(cryptoHexEncodedHash256)
-    if (cryptoMd5Method != null) __obj.updateDynamic("cryptoMd5Method")(cryptoMd5Method)
-    if (customAuthMethod != null) __obj.updateDynamic("customAuthMethod")(customAuthMethod)
+    if (cryptoHexEncodedHash256 != null) __obj.updateDynamic("cryptoHexEncodedHash256")(js.Any.fromFunction1(cryptoHexEncodedHash256))
+    if (cryptoMd5Method != null) __obj.updateDynamic("cryptoMd5Method")(js.Any.fromFunction1(cryptoMd5Method))
+    if (customAuthMethod != null) __obj.updateDynamic("customAuthMethod")(js.Any.fromFunction5(customAuthMethod))
     if (!js.isUndefined(encodeFilename)) __obj.updateDynamic("encodeFilename")(encodeFilename)
-    if (evaporateChanged != null) __obj.updateDynamic("evaporateChanged")(evaporateChanged)
+    if (evaporateChanged != null) __obj.updateDynamic("evaporateChanged")(js.Any.fromFunction2(evaporateChanged))
     if (localTimeOffset != null) __obj.updateDynamic("localTimeOffset")(localTimeOffset.asInstanceOf[js.Any])
     if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging)
     if (maxConcurrentParts != null) __obj.updateDynamic("maxConcurrentParts")(maxConcurrentParts.asInstanceOf[js.Any])
@@ -157,7 +136,7 @@ object CreateConfig {
     if (!js.isUndefined(onlyRetryForSameFileName)) __obj.updateDynamic("onlyRetryForSameFileName")(onlyRetryForSameFileName)
     if (partSize != null) __obj.updateDynamic("partSize")(partSize.asInstanceOf[js.Any])
     if (progressIntervalMS != null) __obj.updateDynamic("progressIntervalMS")(progressIntervalMS.asInstanceOf[js.Any])
-    if (readableStreamPartMethod != null) __obj.updateDynamic("readableStreamPartMethod")(readableStreamPartMethod)
+    if (readableStreamPartMethod != null) __obj.updateDynamic("readableStreamPartMethod")(js.Any.fromFunction3(readableStreamPartMethod))
     if (!js.isUndefined(readableStreams)) __obj.updateDynamic("readableStreams")(readableStreams)
     if (retryBackoffPower != null) __obj.updateDynamic("retryBackoffPower")(retryBackoffPower.asInstanceOf[js.Any])
     if (!js.isUndefined(s3Acceleration)) __obj.updateDynamic("s3Acceleration")(s3Acceleration)
@@ -165,7 +144,7 @@ object CreateConfig {
     if (!js.isUndefined(sendCanonicalRequestToSignerUrl)) __obj.updateDynamic("sendCanonicalRequestToSignerUrl")(sendCanonicalRequestToSignerUrl)
     if (signHeaders != null) __obj.updateDynamic("signHeaders")(signHeaders)
     if (signParams != null) __obj.updateDynamic("signParams")(signParams)
-    if (signResponseHandler != null) __obj.updateDynamic("signResponseHandler")(signResponseHandler)
+    if (signResponseHandler != null) __obj.updateDynamic("signResponseHandler")(js.Any.fromFunction3(signResponseHandler))
     if (signerUrl != null) __obj.updateDynamic("signerUrl")(signerUrl)
     if (timeUrl != null) __obj.updateDynamic("timeUrl")(timeUrl)
     if (!js.isUndefined(xhrWithCredentials)) __obj.updateDynamic("xhrWithCredentials")(xhrWithCredentials)

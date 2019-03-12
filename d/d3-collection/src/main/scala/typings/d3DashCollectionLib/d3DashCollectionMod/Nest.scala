@@ -149,19 +149,16 @@ trait Nest[Datum, RollupType] extends js.Object {
 object Nest {
   @scala.inline
   def apply[Datum, RollupType](
-    entries: js.Function1[js.Array[Datum], js.Array[d3DashCollectionLib.Anon_KeyValueValuesAny[RollupType]]],
-    key: js.Function1[js.Function1[/* datum */ Datum, java.lang.String], Nest[Datum, RollupType]],
-    map: js.Function1[js.Array[Datum], Map[_]],
-    `object`: js.Function1[js.Array[Datum], org.scalablytyped.runtime.StringDictionary[js.Any]],
-    rollup: js.Function1[js.Function1[/* values */ js.Array[Datum], RollupType], Nest[Datum, RollupType]],
-    sortKeys: js.Function1[
-      js.Function2[/* a */ java.lang.String, /* b */ java.lang.String, scala.Double], 
-      Nest[Datum, RollupType]
-    ],
-    sortValues: js.Function1[js.Function2[/* a */ Datum, /* b */ Datum, scala.Double], Nest[Datum, RollupType]]
+    entries: js.Array[Datum] => js.Array[d3DashCollectionLib.Anon_KeyValueValuesAny[RollupType]],
+    key: js.Function1[/* datum */ Datum, java.lang.String] => Nest[Datum, RollupType],
+    map: js.Array[Datum] => Map[_],
+    `object`: js.Array[Datum] => org.scalablytyped.runtime.StringDictionary[js.Any],
+    rollup: js.Function1[/* values */ js.Array[Datum], RollupType] => Nest[Datum, RollupType],
+    sortKeys: js.Function2[/* a */ java.lang.String, /* b */ java.lang.String, scala.Double] => Nest[Datum, RollupType],
+    sortValues: js.Function2[/* a */ Datum, /* b */ Datum, scala.Double] => Nest[Datum, RollupType]
   ): Nest[Datum, RollupType] = {
-    val __obj = js.Dynamic.literal(entries = entries, key = key, map = map, rollup = rollup, sortKeys = sortKeys, sortValues = sortValues)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(entries = js.Any.fromFunction1(entries), key = js.Any.fromFunction1(key), map = js.Any.fromFunction1(map), rollup = js.Any.fromFunction1(rollup), sortKeys = js.Any.fromFunction1(sortKeys), sortValues = js.Any.fromFunction1(sortValues))
+    __obj.updateDynamic("object")(js.Any.fromFunction1(`object`))
     __obj.asInstanceOf[Nest[Datum, RollupType]]
   }
 }

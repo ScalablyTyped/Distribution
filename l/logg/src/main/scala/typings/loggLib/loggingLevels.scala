@@ -24,9 +24,9 @@ object loggingLevels {
     INFO: scala.Double,
     SEVERE: scala.Double,
     WARN: scala.Double,
-    toString: js.Function1[scala.Double, java.lang.String]
+    toString: scala.Double => java.lang.String
   ): loggingLevels = {
-    val __obj = js.Dynamic.literal(FINE = FINE, FINER = FINER, FINEST = FINEST, INFO = INFO, SEVERE = SEVERE, WARN = WARN, toString = toString)
+    val __obj = js.Dynamic.literal(FINE = FINE, FINER = FINER, FINEST = FINEST, INFO = INFO, SEVERE = SEVERE, WARN = WARN, toString = js.Any.fromFunction1(toString))
   
     __obj.asInstanceOf[loggingLevels]
   }

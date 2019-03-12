@@ -36,16 +36,16 @@ object RendererContext {
     label: java.lang.String,
     parentElement: stdLib.Element,
     previousState: atOracleOraclejetLib.Anon_Focused,
-    renderDefaultFocus: js.Function0[scala.Unit],
-    renderDefaultHover: js.Function0[scala.Unit],
-    renderDefaultSelection: js.Function0[scala.Unit],
+    renderDefaultFocus: () => scala.Unit,
+    renderDefaultHover: () => scala.Unit,
+    renderDefaultSelection: () => scala.Unit,
     state: atOracleOraclejetLib.Anon_Focused,
     location: java.lang.String = null,
     root: stdLib.Element = null,
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): RendererContext[K1, K2, K3, D1, D2, D3] = {
-    val __obj = js.Dynamic.literal(color = color, componentElement = componentElement, data = data, id = id.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any], label = label, parentElement = parentElement, previousState = previousState, renderDefaultFocus = renderDefaultFocus, renderDefaultHover = renderDefaultHover, renderDefaultSelection = renderDefaultSelection, state = state)
+    val __obj = js.Dynamic.literal(color = color, componentElement = componentElement, data = data, id = id.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any], label = label, parentElement = parentElement, previousState = previousState, renderDefaultFocus = js.Any.fromFunction0(renderDefaultFocus), renderDefaultHover = js.Any.fromFunction0(renderDefaultHover), renderDefaultSelection = js.Any.fromFunction0(renderDefaultSelection), state = state)
     if (location != null) __obj.updateDynamic("location")(location)
     if (root != null) __obj.updateDynamic("root")(root)
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])

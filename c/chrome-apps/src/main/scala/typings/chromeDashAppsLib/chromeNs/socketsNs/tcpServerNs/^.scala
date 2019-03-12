@@ -56,7 +56,7 @@ object ^ extends js.Object {
     * @param callback   Called when the socket has been created.
     */
   def create(
-    properties: chromeDashAppsLib.chromeNs.socketsNs.tcpServerNs.SocketProperties,
+    properties: SocketProperties,
     callback: js.Function1[/* createInfo */ chromeDashAppsLib.chromeNs.socketsNs.CreateInfo, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -80,10 +80,7 @@ object ^ extends js.Object {
     */
   def getInfo(
     socketId: chromeDashAppsLib.chromeNs.integer,
-    callback: js.Function1[
-      /* socketInfo */ chromeDashAppsLib.chromeNs.socketsNs.tcpServerNs.SocketInfo, 
-      scala.Unit
-    ]
+    callback: js.Function1[/* socketInfo */ SocketInfo, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Retrieves the list of currently opened sockets owned by the application.
@@ -91,12 +88,7 @@ object ^ extends js.Object {
     * @see https://developer.chrome.com/apps/sockets_tcpServer#method-getSockets
     * @param callback Called when the list of sockets is available.
     */
-  def getSockets(
-    callback: js.Function1[
-      /* socketInfos */ js.Array[chromeDashAppsLib.chromeNs.socketsNs.tcpServerNs.SocketInfo], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def getSockets(callback: js.Function1[/* socketInfos */ js.Array[SocketInfo], scala.Unit]): scala.Unit = js.native
   /**
     * Listens for connections on the specified port and address. If the
     * port/address is in use, the callback indicates a failure.
@@ -160,13 +152,10 @@ object ^ extends js.Object {
     * @param properties The properties to update.
     * @param callback   Called when the properties are updated.
     */
+  def update(socketId: chromeDashAppsLib.chromeNs.integer, properties: SocketProperties): scala.Unit = js.native
   def update(
     socketId: chromeDashAppsLib.chromeNs.integer,
-    properties: chromeDashAppsLib.chromeNs.socketsNs.tcpServerNs.SocketProperties
-  ): scala.Unit = js.native
-  def update(
-    socketId: chromeDashAppsLib.chromeNs.integer,
-    properties: chromeDashAppsLib.chromeNs.socketsNs.tcpServerNs.SocketProperties,
+    properties: SocketProperties,
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
 }

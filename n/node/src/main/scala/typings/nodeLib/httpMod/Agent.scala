@@ -11,8 +11,8 @@ class Agent () extends js.Object {
   def this(opts: AgentOptions) = this()
   var maxFreeSockets: scala.Double = js.native
   var maxSockets: scala.Double = js.native
-  var requests: js.Any = js.native
-  var sockets: js.Any = js.native
+  val requests: org.scalablytyped.runtime.StringDictionary[js.Array[IncomingMessage]] = js.native
+  val sockets: org.scalablytyped.runtime.StringDictionary[js.Array[nodeLib.netMod.Socket]] = js.native
   /**
     * Destroy any sockets that are currently in use by the agent.
     * It is usually not necessary to do this. However, if you are using an agent with KeepAlive enabled,

@@ -12,11 +12,8 @@ trait hasSetFinalUrl extends js.Object {
 
 object hasSetFinalUrl {
   @scala.inline
-  def apply(
-    setFinalUrl: js.Function1[java.lang.String, scala.Unit],
-    setMobileFinalUrl: js.Function1[java.lang.String, scala.Unit]
-  ): hasSetFinalUrl = {
-    val __obj = js.Dynamic.literal(setFinalUrl = setFinalUrl, setMobileFinalUrl = setMobileFinalUrl)
+  def apply(setFinalUrl: java.lang.String => scala.Unit, setMobileFinalUrl: java.lang.String => scala.Unit): hasSetFinalUrl = {
+    val __obj = js.Dynamic.literal(setFinalUrl = js.Any.fromFunction1(setFinalUrl), setMobileFinalUrl = js.Any.fromFunction1(setMobileFinalUrl))
   
     __obj.asInstanceOf[hasSetFinalUrl]
   }

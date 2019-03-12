@@ -96,16 +96,16 @@ trait UtilColor extends js.Object {
 object UtilColor {
   @scala.inline
   def apply(
-    HSVtoRGB: js.Function3[scala.Double, scala.Double, scala.Double, js.Any],
-    RGBtoHSV: js.Function3[scala.Double, scala.Double, scala.Double, js.Any],
-    darken: js.Function2[java.lang.String, scala.Double, java.lang.String],
-    format: js.Function2[js.Any, java.lang.String, java.lang.String],
-    lighten: js.Function2[java.lang.String, scala.Double, java.lang.String],
-    map: js.Function2[js.Array[java.lang.String], scala.Double, js.Array[java.lang.String]],
-    rgb: js.Function1[java.lang.String, js.Any],
-    scale: js.Function0[ColorScale]
+    HSVtoRGB: (scala.Double, scala.Double, scala.Double) => js.Any,
+    RGBtoHSV: (scala.Double, scala.Double, scala.Double) => js.Any,
+    darken: (java.lang.String, scala.Double) => java.lang.String,
+    format: (js.Any, java.lang.String) => java.lang.String,
+    lighten: (java.lang.String, scala.Double) => java.lang.String,
+    map: (js.Array[java.lang.String], scala.Double) => js.Array[java.lang.String],
+    rgb: java.lang.String => js.Any,
+    scale: () => ColorScale
   ): UtilColor = {
-    val __obj = js.Dynamic.literal(HSVtoRGB = HSVtoRGB, RGBtoHSV = RGBtoHSV, darken = darken, format = format, lighten = lighten, map = map, rgb = rgb, scale = scale)
+    val __obj = js.Dynamic.literal(HSVtoRGB = js.Any.fromFunction3(HSVtoRGB), RGBtoHSV = js.Any.fromFunction3(RGBtoHSV), darken = js.Any.fromFunction2(darken), format = js.Any.fromFunction2(format), lighten = js.Any.fromFunction2(lighten), map = js.Any.fromFunction2(map), rgb = js.Any.fromFunction1(rgb), scale = js.Any.fromFunction0(scale))
   
     __obj.asInstanceOf[UtilColor]
   }

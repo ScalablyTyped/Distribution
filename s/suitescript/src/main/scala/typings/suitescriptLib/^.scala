@@ -113,8 +113,8 @@ object ^ extends js.Object {
     * @param initializeValues
     * @return
     */
-  def nlapiCopyRecord(`type`: java.lang.String, id: js.Any): suitescriptLib.nlobjRecord = js.native
-  def nlapiCopyRecord(`type`: java.lang.String, id: js.Any, initializeValues: js.Any): suitescriptLib.nlobjRecord = js.native
+  def nlapiCopyRecord(`type`: java.lang.String, id: js.Any): nlobjRecord = js.native
+  def nlapiCopyRecord(`type`: java.lang.String, id: js.Any, initializeValues: js.Any): nlobjRecord = js.native
   /**
     * Return a new assistant page.
     * @restriction Suitelets only
@@ -186,7 +186,7 @@ object ^ extends js.Object {
     * @param contents
     * @return
     */
-  def nlapiCreateFile(name: java.lang.String, `type`: java.lang.String, contents: java.lang.String): suitescriptLib.nlobjFile = js.native
+  def nlapiCreateFile(name: java.lang.String, `type`: java.lang.String, contents: java.lang.String): nlobjFile = js.native
   /**
     * Return a new entry form page.
     * @restriction Suitelets only
@@ -200,8 +200,8 @@ object ^ extends js.Object {
     * @param hideHeader?
     * @return
     */
-  def nlapiCreateForm(title: java.lang.String): suitescriptLib.nlobjForm = js.native
-  def nlapiCreateForm(title: java.lang.String, hideHeader: scala.Boolean): suitescriptLib.nlobjForm = js.native
+  def nlapiCreateForm(title: java.lang.String): nlobjForm = js.native
+  def nlapiCreateForm(title: java.lang.String, hideHeader: scala.Boolean): nlobjForm = js.native
   /**
     * Return a new list page.
     * @restriction Suitelets only
@@ -233,28 +233,16 @@ object ^ extends js.Object {
     * @param initializeValues
     * @return
     */
-  def nlapiCreateRecord(`type`: java.lang.String): suitescriptLib.nlobjRecord = js.native
-  def nlapiCreateRecord(`type`: java.lang.String, initializeValues: js.Any): suitescriptLib.nlobjRecord = js.native
+  def nlapiCreateRecord(`type`: java.lang.String): nlobjRecord = js.native
+  def nlapiCreateRecord(`type`: java.lang.String, initializeValues: js.Any): nlobjRecord = js.native
   def nlapiCreateSearch(
     `type`: java.lang.String,
-    filters: js.Array[suitescriptLib.nlobjSearchFilter],
-    columns: js.Array[suitescriptLib.nlobjSearchColumn]
-  ): suitescriptLib.nlobjSearch = js.native
-  def nlapiCreateSearch(
-    `type`: java.lang.String,
-    filters: js.Array[suitescriptLib.nlobjSearchFilter],
-    columns: suitescriptLib.nlobjSearchColumn
-  ): suitescriptLib.nlobjSearch = js.native
-  def nlapiCreateSearch(
-    `type`: java.lang.String,
-    filters: suitescriptLib.nlobjSearchFilter,
-    columns: js.Array[suitescriptLib.nlobjSearchColumn]
-  ): suitescriptLib.nlobjSearch = js.native
-  def nlapiCreateSearch(
-    `type`: java.lang.String,
-    filters: suitescriptLib.nlobjSearchFilter,
-    columns: suitescriptLib.nlobjSearchColumn
-  ): suitescriptLib.nlobjSearch = js.native
+    filters: js.Array[nlobjSearchFilter],
+    columns: js.Array[nlobjSearchColumn]
+  ): nlobjSearch = js.native
+  def nlapiCreateSearch(`type`: java.lang.String, filters: js.Array[nlobjSearchFilter], columns: nlobjSearchColumn): nlobjSearch = js.native
+  def nlapiCreateSearch(`type`: java.lang.String, filters: nlobjSearchFilter, columns: js.Array[nlobjSearchColumn]): nlobjSearch = js.native
+  def nlapiCreateSearch(`type`: java.lang.String, filters: nlobjSearchFilter, columns: nlobjSearchColumn): nlobjSearch = js.native
   /**
     * Create a template renderer used to generate various outputs based on a template.
     * @restriction Server SuiteScript only
@@ -997,8 +985,8 @@ object ^ extends js.Object {
     * @param initializeValues
     * @return
     */
-  def nlapiLoadRecord(`type`: java.lang.String, id: js.Any): suitescriptLib.nlobjRecord = js.native
-  def nlapiLoadRecord(`type`: java.lang.String, id: js.Any, initializeValues: js.Any): suitescriptLib.nlobjRecord = js.native
+  def nlapiLoadRecord(`type`: java.lang.String, id: js.Any): nlobjRecord = js.native
+  def nlapiLoadRecord(`type`: java.lang.String, id: js.Any, initializeValues: js.Any): nlobjRecord = js.native
   def nlapiLoadSearch(fldnam: java.lang.String, `val`: js.Any): scala.Unit = js.native
   /**
     * Create an entry in the script execution log (note that execution log entries are automatically purged after 30 days).
@@ -1263,8 +1251,8 @@ object ^ extends js.Object {
     * @param fields
     * @param id?
     */
-  def nlapiSearchDuplicate(`type`: java.lang.String, fields: js.Any): js.Array[suitescriptLib.nlobjSearchResult] = js.native
-  def nlapiSearchDuplicate(`type`: java.lang.String, fields: js.Any, id: js.Any): js.Array[suitescriptLib.nlobjSearchResult] = js.native
+  def nlapiSearchDuplicate(`type`: java.lang.String, fields: js.Any): js.Array[nlobjSearchResult] = js.native
+  def nlapiSearchDuplicate(`type`: java.lang.String, fields: js.Any, id: js.Any): js.Array[nlobjSearchResult] = js.native
   /**
     * Perform a global record search across the system.
     * @governance 10 units
@@ -1276,7 +1264,7 @@ object ^ extends js.Object {
     * @since    2008.1
     * @param keywords
     */
-  def nlapiSearchGlobal(keywords: java.lang.String): js.Array[suitescriptLib.nlobjSearchResult] = js.native
+  def nlapiSearchGlobal(keywords: java.lang.String): js.Array[nlobjSearchResult] = js.native
   /**
     * Perform a record search using an existing search or filters and columns.
     * @governance 10 units
@@ -1303,7 +1291,7 @@ object ^ extends js.Object {
     * @param filters
     * @param columns
     */
-  def nlapiSearchRecord(`type`: java.lang.String, id: js.Any, filters: js.Any, columns: js.Any): js.Array[suitescriptLib.nlobjSearchResult] = js.native
+  def nlapiSearchRecord(`type`: java.lang.String, id: js.Any, filters: js.Any, columns: js.Any): js.Array[nlobjSearchResult] = js.native
   /**
     * Select an existing line in a sublist.
     *
@@ -1431,11 +1419,11 @@ object ^ extends js.Object {
     author: scala.Double,
     recipient: java.lang.String | scala.Double,
     subject: java.lang.String,
-    body: java.lang.String | js.Array[suitescriptLib.nlobjFile],
+    body: java.lang.String | js.Array[nlobjFile],
     cc: js.UndefOr[java.lang.String | js.Array[java.lang.String]],
     bcc: js.UndefOr[java.lang.String | js.Array[java.lang.String]],
     records: js.UndefOr[js.Any],
-    attachments: js.UndefOr[suitescriptLib.nlobjFile | js.Array[suitescriptLib.nlobjFile]],
+    attachments: js.UndefOr[nlobjFile | js.Array[nlobjFile]],
     notifySenderOnBounce: js.UndefOr[scala.Boolean],
     internalOnly: js.UndefOr[scala.Boolean],
     replyTo: js.UndefOr[java.lang.String]
@@ -1953,7 +1941,7 @@ object ^ extends js.Object {
     * @param file
     * @return
     */
-  def nlapiSubmitFile(file: suitescriptLib.nlobjFile): js.Any = js.native
+  def nlapiSubmitFile(file: nlobjFile): js.Any = js.native
   /**
     * Submit a record to the system for creation or update.
     * @governance 20 units for transactions, 4 for custom records, 8 for all other records
@@ -2000,8 +1988,8 @@ object ^ extends js.Object {
     * @param transformValues?
     * @return
     */
-  def nlapiTransformRecord(`type`: java.lang.String, id: js.Any, transformType: java.lang.String): suitescriptLib.nlobjRecord = js.native
-  def nlapiTransformRecord(`type`: java.lang.String, id: js.Any, transformType: java.lang.String, transformValues: js.Any): suitescriptLib.nlobjRecord = js.native
+  def nlapiTransformRecord(`type`: java.lang.String, id: js.Any, transformType: java.lang.String): nlobjRecord = js.native
+  def nlapiTransformRecord(`type`: java.lang.String, id: js.Any, transformType: java.lang.String, transformValues: js.Any): nlobjRecord = js.native
   /**
     * Triggers a workflow on a record.
     * @governance 20 units

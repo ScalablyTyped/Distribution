@@ -14,12 +14,12 @@ trait ImageSource
 object ImageSource {
   @scala.inline
   def apply(
-    setCoordinates: js.Function1[js.Array[js.Array[scala.Double]], ImageSource],
+    setCoordinates: js.Array[js.Array[scala.Double]] => ImageSource,
     `type`: mapboxDashGlLib.mapboxDashGlLibStrings.image,
     coordinates: js.Array[js.Array[scala.Double]] = null,
     url: java.lang.String = null
   ): ImageSource = {
-    val __obj = js.Dynamic.literal(setCoordinates = setCoordinates)
+    val __obj = js.Dynamic.literal(setCoordinates = js.Any.fromFunction1(setCoordinates))
     __obj.updateDynamic("type")(`type`)
     if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
     if (url != null) __obj.updateDynamic("url")(url)

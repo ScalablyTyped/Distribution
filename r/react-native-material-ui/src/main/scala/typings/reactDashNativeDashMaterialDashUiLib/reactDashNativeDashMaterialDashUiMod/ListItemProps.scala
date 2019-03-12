@@ -28,9 +28,9 @@ object ListItemProps {
     divider: js.UndefOr[scala.Boolean] = js.undefined,
     leftElement: reactLib.reactMod.Global.JSXNs.Element | java.lang.String = null,
     numberOfLines: reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiLibNumbers.`1` | reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiLibNumbers.`2` | reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiLibNumbers.`3` | reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiLibStrings.dynamic = null,
-    onPress: js.Function0[scala.Unit] = null,
+    onPress: () => scala.Unit = null,
     onPressValue: js.Any = null,
-    onRightElementPress: js.Function0[scala.Unit] = null,
+    onRightElementPress: () => scala.Unit = null,
     rightElement: reactLib.reactMod.Global.JSXNs.Element | java.lang.String = null,
     style: ListItemStyle = null
   ): ListItemProps = {
@@ -39,9 +39,9 @@ object ListItemProps {
     if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider)
     if (leftElement != null) __obj.updateDynamic("leftElement")(leftElement.asInstanceOf[js.Any])
     if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (onPressValue != null) __obj.updateDynamic("onPressValue")(onPressValue)
-    if (onRightElementPress != null) __obj.updateDynamic("onRightElementPress")(onRightElementPress)
+    if (onRightElementPress != null) __obj.updateDynamic("onRightElementPress")(js.Any.fromFunction0(onRightElementPress))
     if (rightElement != null) __obj.updateDynamic("rightElement")(rightElement.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[ListItemProps]

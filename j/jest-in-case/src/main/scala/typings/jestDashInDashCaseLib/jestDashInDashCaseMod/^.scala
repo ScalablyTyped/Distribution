@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jest-in-case", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply[Opts /* <: jestDashInDashCaseLib.jestDashInDashCaseMod.Config */](
+  def apply[Opts /* <: Config */](
     title: java.lang.String,
     tester: jestDashInDashCaseLib.Tester[Opts],
     testCases: jestDashInDashCaseLib.TestCases[Opts]

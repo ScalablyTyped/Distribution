@@ -18,13 +18,13 @@ object RadioButtonProps {
   @scala.inline
   def apply(
     label: java.lang.String,
-    onSelect: js.Function1[java.lang.String, scala.Unit],
+    onSelect: java.lang.String => scala.Unit,
     value: java.lang.String | scala.Double,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     theme: java.lang.String = null
   ): RadioButtonProps = {
-    val __obj = js.Dynamic.literal(label = label, onSelect = onSelect, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(label = label, onSelect = js.Any.fromFunction1(onSelect), value = value.asInstanceOf[js.Any])
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (theme != null) __obj.updateDynamic("theme")(theme)

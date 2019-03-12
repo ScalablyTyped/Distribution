@@ -43,17 +43,17 @@ object showContactsParams {
   @scala.inline
   def apply(
     animated: js.UndefOr[scala.Boolean] = js.undefined,
-    cancel: js.Function1[/* param0 */ js.Any, _] = null,
+    cancel: /* param0 */ js.Any => _ = null,
     fields: js.Array[java.lang.String] = null,
-    selectedPerson: js.Function1[/* param0 */ js.Any, _] = null,
-    selectedProperty: js.Function1[/* param0 */ js.Any, _] = null
+    selectedPerson: /* param0 */ js.Any => _ = null,
+    selectedProperty: /* param0 */ js.Any => _ = null
   ): showContactsParams = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
     if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (selectedPerson != null) __obj.updateDynamic("selectedPerson")(selectedPerson)
-    if (selectedProperty != null) __obj.updateDynamic("selectedProperty")(selectedProperty)
+    if (selectedPerson != null) __obj.updateDynamic("selectedPerson")(js.Any.fromFunction1(selectedPerson))
+    if (selectedProperty != null) __obj.updateDynamic("selectedProperty")(js.Any.fromFunction1(selectedProperty))
     __obj.asInstanceOf[showContactsParams]
   }
 }

@@ -15,20 +15,11 @@ trait CloudloadingResource extends js.Object {
 object CloudloadingResource {
   @scala.inline
   def apply(
-    addBook: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltDrivedocumentid, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BooksCloudloadingResource]
-    ],
-    deleteBook: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserUserIp, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    updateBook: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserUserIpBoolean, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BooksCloudloadingResource]
-    ]
+    addBook: gapiDotClientDotBooksLib.Anon_AltDrivedocumentid => gapiDotClientLib.gapiNs.clientNs.Request[BooksCloudloadingResource],
+    deleteBook: gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserUserIp => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    updateBook: gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserUserIpBoolean => gapiDotClientLib.gapiNs.clientNs.Request[BooksCloudloadingResource]
   ): CloudloadingResource = {
-    val __obj = js.Dynamic.literal(addBook = addBook, deleteBook = deleteBook, updateBook = updateBook)
+    val __obj = js.Dynamic.literal(addBook = js.Any.fromFunction1(addBook), deleteBook = js.Any.fromFunction1(deleteBook), updateBook = js.Any.fromFunction1(updateBook))
   
     __obj.asInstanceOf[CloudloadingResource]
   }

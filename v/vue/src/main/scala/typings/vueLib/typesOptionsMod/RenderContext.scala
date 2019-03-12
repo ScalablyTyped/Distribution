@@ -26,9 +26,9 @@ object RenderContext {
     parent: vueLib.typesVueMod.Vue,
     props: Props,
     scopedSlots: org.scalablytyped.runtime.StringDictionary[vueLib.typesVnodeMod.ScopedSlot],
-    slots: js.Function0[js.Any]
+    slots: () => js.Any
   ): RenderContext[Props] = {
-    val __obj = js.Dynamic.literal(children = children, data = data, injections = injections, listeners = listeners, parent = parent, props = props.asInstanceOf[js.Any], scopedSlots = scopedSlots, slots = slots)
+    val __obj = js.Dynamic.literal(children = children, data = data, injections = injections, listeners = listeners, parent = parent, props = props.asInstanceOf[js.Any], scopedSlots = scopedSlots, slots = js.Any.fromFunction0(slots))
   
     __obj.asInstanceOf[RenderContext[Props]]
   }

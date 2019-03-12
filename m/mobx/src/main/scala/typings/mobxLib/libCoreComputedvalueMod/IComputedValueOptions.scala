@@ -21,20 +21,20 @@ object IComputedValueOptions {
   def apply[T](
     context: js.Any = null,
     equals: mobxLib.libUtilsComparerMod.IEqualsComparer[T] = null,
-    get: js.Function0[T] = null,
+    get: () => T = null,
     keepAlive: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
     requiresReaction: js.UndefOr[scala.Boolean] = js.undefined,
-    set: js.Function1[/* value */ T, scala.Unit] = null
+    set: /* value */ T => scala.Unit = null
   ): IComputedValueOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context)
     if (equals != null) __obj.updateDynamic("equals")(equals)
-    if (get != null) __obj.updateDynamic("get")(get)
+    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction0(get))
     if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive)
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(requiresReaction)) __obj.updateDynamic("requiresReaction")(requiresReaction)
-    if (set != null) __obj.updateDynamic("set")(set)
+    if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction1(set))
     __obj.asInstanceOf[IComputedValueOptions[T]]
   }
 }

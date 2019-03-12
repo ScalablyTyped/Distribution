@@ -18,7 +18,7 @@ object ^ extends js.Object {
     * @param members An object that defines the members that the control will have.
     * @returns A constructor function that creates the PageControl.
     **/
-  def define(uri: java.lang.String, members: winjsLib.WinJSNs.UINs.PagesNs.IPageControlMembers): js.Function4[
+  def define(uri: java.lang.String, members: IPageControlMembers): js.Function4[
     /* element */ js.UndefOr[stdLib.HTMLElement], 
     /* options */ js.UndefOr[js.Any], 
     /* complete */ js.UndefOr[js.Function1[/* page */ js.Any, scala.Unit]], 

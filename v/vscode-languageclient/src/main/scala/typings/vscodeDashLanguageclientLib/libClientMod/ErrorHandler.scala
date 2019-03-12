@@ -18,16 +18,16 @@ trait ErrorHandler extends js.Object {
     * @param count - a count indicating how often an error is received. Will
     *  be reset if a message got successfully send or received.
     */
-  def error(error: nodeLib.Error, message: vscodeDashJsonrpcLib.libMessagesMod.Message, count: scala.Double): ErrorAction
+  def error(error: stdLib.Error, message: vscodeDashJsonrpcLib.libMessagesMod.Message, count: scala.Double): ErrorAction
 }
 
 object ErrorHandler {
   @scala.inline
   def apply(
-    closed: js.Function0[CloseAction],
-    error: js.Function3[nodeLib.Error, vscodeDashJsonrpcLib.libMessagesMod.Message, scala.Double, ErrorAction]
+    closed: () => CloseAction,
+    error: (stdLib.Error, vscodeDashJsonrpcLib.libMessagesMod.Message, scala.Double) => ErrorAction
   ): ErrorHandler = {
-    val __obj = js.Dynamic.literal(closed = closed, error = error)
+    val __obj = js.Dynamic.literal(closed = js.Any.fromFunction0(closed), error = js.Any.fromFunction3(error))
   
     __obj.asInstanceOf[ErrorHandler]
   }

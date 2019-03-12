@@ -44,11 +44,11 @@ object CalendarProps {
     disabled: js.Array[java.lang.String | js.Array[java.lang.String]] = null,
     firstDayOfWeek: grommetLib.grommetLibStrings.`0` | grommetLib.grommetLibStrings.`1` = null,
     gridArea: java.lang.String = null,
-    header: js.Function1[/* repeated */ js.Any, _] = null,
+    header: /* repeated */ js.Any => _ = null,
     locale: java.lang.String = null,
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null,
-    onReference: js.Function1[/* repeated */ js.Any, _] = null,
-    onSelect: js.Function1[/* repeated */ js.Any, _] = null,
+    onReference: /* repeated */ js.Any => _ = null,
+    onSelect: /* repeated */ js.Any => _ = null,
     range: js.UndefOr[scala.Boolean] = js.undefined,
     reference: java.lang.String = null,
     showAdjacentDays: js.UndefOr[scala.Boolean] = js.undefined,
@@ -64,11 +64,11 @@ object CalendarProps {
     if (disabled != null) __obj.updateDynamic("disabled")(disabled)
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
-    if (header != null) __obj.updateDynamic("header")(header)
+    if (header != null) __obj.updateDynamic("header")(js.Any.fromFunction1(header))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (onReference != null) __obj.updateDynamic("onReference")(onReference)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onReference != null) __obj.updateDynamic("onReference")(js.Any.fromFunction1(onReference))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (!js.isUndefined(range)) __obj.updateDynamic("range")(range)
     if (reference != null) __obj.updateDynamic("reference")(reference)
     if (!js.isUndefined(showAdjacentDays)) __obj.updateDynamic("showAdjacentDays")(showAdjacentDays)

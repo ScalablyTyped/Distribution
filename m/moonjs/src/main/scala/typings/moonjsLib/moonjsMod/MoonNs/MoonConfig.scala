@@ -17,12 +17,12 @@ object MoonConfig {
   @scala.inline
   def apply(
     delimiters: js.Array[java.lang.String],
-    keycodes: js.Function1[stdLib.Record[java.lang.String, scala.Double], scala.Unit],
+    keycodes: stdLib.Record[java.lang.String, scala.Double] => scala.Unit,
     prefix: java.lang.String,
     silent: scala.Boolean,
     version: java.lang.String
   ): MoonConfig = {
-    val __obj = js.Dynamic.literal(delimiters = delimiters, keycodes = keycodes, prefix = prefix, silent = silent, version = version)
+    val __obj = js.Dynamic.literal(delimiters = delimiters, keycodes = js.Any.fromFunction1(keycodes), prefix = prefix, silent = silent, version = version)
   
     __obj.asInstanceOf[MoonConfig]
   }

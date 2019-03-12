@@ -16,13 +16,13 @@ trait IOCRZones extends js.Object {
 object IOCRZones {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IOCRZone, scala.Unit],
-    Clone: js.Function0[IOCRZones],
+    Add: (scala.Double, IOCRZone) => scala.Unit,
+    Clone: () => IOCRZones,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IOCRZone],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => IOCRZone,
+    Remove: scala.Double => scala.Unit
   ): IOCRZones = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IOCRZones]
   }

@@ -77,11 +77,7 @@ object Editable {
     rows: scala.Int | scala.Double = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     `type`: EditCellType = null,
-    validator: js.Function2[
-      /* import warning: ImportType.apply Failed type conversion: TRow[K] */ /* cell */ js.Any, 
-      /* row */ TRow, 
-      scala.Boolean | java.lang.String | EditValidatorObject
-    ] = null
+    validator: (/* import warning: ImportType.apply Failed type conversion: TRow[K] */ /* cell */ js.Any, /* row */ TRow) => scala.Boolean | java.lang.String | EditValidatorObject = null
   ): Editable[TRow, K] = {
     val __obj = js.Dynamic.literal()
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
@@ -94,7 +90,7 @@ object Editable {
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (validator != null) __obj.updateDynamic("validator")(validator)
+    if (validator != null) __obj.updateDynamic("validator")(js.Any.fromFunction2(validator))
     __obj.asInstanceOf[Editable[TRow, K]]
   }
 }

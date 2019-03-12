@@ -15,10 +15,10 @@ trait FBSDKCanvasPrefetcher extends js.Object {
 object FBSDKCanvasPrefetcher {
   @scala.inline
   def apply(
-    addStaticResource: js.Function1[java.lang.String, scala.Unit],
-    setCollectionMode: js.Function1[java.lang.String, scala.Unit]
+    addStaticResource: java.lang.String => scala.Unit,
+    setCollectionMode: java.lang.String => scala.Unit
   ): FBSDKCanvasPrefetcher = {
-    val __obj = js.Dynamic.literal(addStaticResource = addStaticResource, setCollectionMode = setCollectionMode)
+    val __obj = js.Dynamic.literal(addStaticResource = js.Any.fromFunction1(addStaticResource), setCollectionMode = js.Any.fromFunction1(setCollectionMode))
   
     __obj.asInstanceOf[FBSDKCanvasPrefetcher]
   }

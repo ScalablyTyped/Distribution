@@ -19,16 +19,16 @@ trait ILookups extends js.Object {
 object ILookups {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, ILookup, scala.Unit],
-    Clone: js.Function0[ILookups],
-    CloneFrom: js.Function1[ILookups, scala.Unit],
+    Add: (scala.Double, ILookup) => scala.Unit,
+    Clone: () => ILookups,
+    CloneFrom: ILookups => scala.Unit,
     Count: scala.Double,
-    GetLookupByItem: js.Function1[scala.Double, ILookup],
-    GetLookupIndexByItem: js.Function1[scala.Double, scala.Double],
-    Item: js.Function1[scala.Double, ILookup],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    GetLookupByItem: scala.Double => ILookup,
+    GetLookupIndexByItem: scala.Double => scala.Double,
+    Item: scala.Double => ILookup,
+    Remove: scala.Double => scala.Unit
   ): ILookups = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, CloneFrom = CloneFrom, Count = Count, GetLookupByItem = GetLookupByItem, GetLookupIndexByItem = GetLookupIndexByItem, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), CloneFrom = js.Any.fromFunction1(CloneFrom), Count = Count, GetLookupByItem = js.Any.fromFunction1(GetLookupByItem), GetLookupIndexByItem = js.Any.fromFunction1(GetLookupIndexByItem), Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[ILookups]
   }

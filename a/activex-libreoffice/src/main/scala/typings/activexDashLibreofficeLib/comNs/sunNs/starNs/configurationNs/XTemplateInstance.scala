@@ -32,12 +32,12 @@ object XTemplateInstance {
   @scala.inline
   def apply(
     TemplateName: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getTemplateName: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getTemplateName: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTemplateInstance = {
-    val __obj = js.Dynamic.literal(TemplateName = TemplateName, acquire = acquire, getTemplateName = getTemplateName, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(TemplateName = TemplateName, acquire = js.Any.fromFunction0(acquire), getTemplateName = js.Any.fromFunction0(getTemplateName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTemplateInstance]
   }

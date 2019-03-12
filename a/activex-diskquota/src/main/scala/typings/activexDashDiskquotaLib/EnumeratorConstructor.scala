@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait EnumeratorConstructor
   extends org.scalablytyped.runtime.Instantiable1[
       /* col */ activexDashDiskquotaLib.DiskQuotaTypeLibraryNs.DiskQuotaControl, 
-      activexDashInteropLib.Enumerator[activexDashDiskquotaLib.DiskQuotaTypeLibraryNs.DIDiskQuotaUser]
+      stdLib.Enumerator[activexDashDiskquotaLib.DiskQuotaTypeLibraryNs.DIDiskQuotaUser]
     ]
 

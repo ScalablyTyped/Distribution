@@ -8,336 +8,196 @@ import scala.scalajs.js.annotation._
 @JSImport("babel-types", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val react: babelDashTypesLib.babelDashTypesMod.ReactHelpers = js.native
+  val react: ReactHelpers = js.native
   def TSAnyKeyword(): babelDashTypesLib.babelDashTypesMod.TSAnyKeyword = js.native
-  def TSArrayType(elementType: babelDashTypesLib.babelDashTypesMod.TSType): babelDashTypesLib.babelDashTypesMod.TSArrayType = js.native
-  def TSAsExpression(
-    expression: babelDashTypesLib.babelDashTypesMod.Expression,
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TSType
-  ): babelDashTypesLib.babelDashTypesMod.TSAsExpression = js.native
+  def TSArrayType(elementType: TSType): babelDashTypesLib.babelDashTypesMod.TSArrayType = js.native
+  def TSAsExpression(expression: Expression, typeAnnotation: TSType): babelDashTypesLib.babelDashTypesMod.TSAsExpression = js.native
   def TSBooleanKeyword(): babelDashTypesLib.babelDashTypesMod.TSBooleanKeyword = js.native
   def TSCallSignatureDeclaration(): babelDashTypesLib.babelDashTypesMod.TSCallSignatureDeclaration = js.native
-  def TSCallSignatureDeclaration(typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration): babelDashTypesLib.babelDashTypesMod.TSCallSignatureDeclaration = js.native
+  def TSCallSignatureDeclaration(typeParameters: TypeParameterDeclaration): babelDashTypesLib.babelDashTypesMod.TSCallSignatureDeclaration = js.native
+  def TSCallSignatureDeclaration(typeParameters: TypeParameterDeclaration, parameters: js.Array[Identifier | RestElement]): babelDashTypesLib.babelDashTypesMod.TSCallSignatureDeclaration = js.native
   def TSCallSignatureDeclaration(
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    parameters: js.Array[
-      babelDashTypesLib.babelDashTypesMod.Identifier | babelDashTypesLib.babelDashTypesMod.RestElement
-    ]
+    typeParameters: TypeParameterDeclaration,
+    parameters: js.Array[Identifier | RestElement],
+    typeAnnotation: TSTypeAnnotation
   ): babelDashTypesLib.babelDashTypesMod.TSCallSignatureDeclaration = js.native
-  def TSCallSignatureDeclaration(
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    parameters: js.Array[
-      babelDashTypesLib.babelDashTypesMod.Identifier | babelDashTypesLib.babelDashTypesMod.RestElement
-    ],
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TSTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.TSCallSignatureDeclaration = js.native
-  def TSConstructSignatureDeclaration(): babelDashTypesLib.babelDashTypesMod.TSTypeElement = js.native
-  def TSConstructSignatureDeclaration(typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration): babelDashTypesLib.babelDashTypesMod.TSTypeElement = js.native
+  def TSConstructSignatureDeclaration(): TSTypeElement = js.native
+  def TSConstructSignatureDeclaration(typeParameters: TypeParameterDeclaration): TSTypeElement = js.native
+  def TSConstructSignatureDeclaration(typeParameters: TypeParameterDeclaration, parameters: js.Array[Identifier | RestElement]): TSTypeElement = js.native
   def TSConstructSignatureDeclaration(
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    parameters: js.Array[
-      babelDashTypesLib.babelDashTypesMod.Identifier | babelDashTypesLib.babelDashTypesMod.RestElement
-    ]
-  ): babelDashTypesLib.babelDashTypesMod.TSTypeElement = js.native
-  def TSConstructSignatureDeclaration(
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    parameters: js.Array[
-      babelDashTypesLib.babelDashTypesMod.Identifier | babelDashTypesLib.babelDashTypesMod.RestElement
-    ],
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TSTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.TSTypeElement = js.native
+    typeParameters: TypeParameterDeclaration,
+    parameters: js.Array[Identifier | RestElement],
+    typeAnnotation: TSTypeAnnotation
+  ): TSTypeElement = js.native
   def TSConstructorType(): babelDashTypesLib.babelDashTypesMod.TSConstructorType = js.native
-  def TSConstructorType(typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration): babelDashTypesLib.babelDashTypesMod.TSConstructorType = js.native
-  def TSConstructorType(
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TSTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.TSConstructorType = js.native
+  def TSConstructorType(typeParameters: TypeParameterDeclaration): babelDashTypesLib.babelDashTypesMod.TSConstructorType = js.native
+  def TSConstructorType(typeParameters: TypeParameterDeclaration, typeAnnotation: TSTypeAnnotation): babelDashTypesLib.babelDashTypesMod.TSConstructorType = js.native
   def TSDeclareFunction(
-    id: js.UndefOr[babelDashTypesLib.babelDashTypesMod.Identifier | scala.Null],
-    typeParameters: js.UndefOr[
-      babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration | babelDashTypesLib.babelDashTypesMod.Noop | scala.Null
-    ],
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal]
+    id: js.UndefOr[Identifier | scala.Null],
+    typeParameters: js.UndefOr[TypeParameterDeclaration | Noop | scala.Null],
+    params: js.Array[LVal]
   ): babelDashTypesLib.babelDashTypesMod.TSDeclareFunction = js.native
   def TSDeclareFunction(
-    id: js.UndefOr[babelDashTypesLib.babelDashTypesMod.Identifier | scala.Null],
-    typeParameters: js.UndefOr[
-      babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration | babelDashTypesLib.babelDashTypesMod.Noop | scala.Null
-    ],
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal],
-    returnType: babelDashTypesLib.babelDashTypesMod.TypeAnnotation | babelDashTypesLib.babelDashTypesMod.TSTypeAnnotation | babelDashTypesLib.babelDashTypesMod.Noop
+    id: js.UndefOr[Identifier | scala.Null],
+    typeParameters: js.UndefOr[TypeParameterDeclaration | Noop | scala.Null],
+    params: js.Array[LVal],
+    returnType: TypeAnnotation | TSTypeAnnotation | Noop
   ): babelDashTypesLib.babelDashTypesMod.TSDeclareFunction = js.native
   def TSDeclareMethod(
-    decorators: js.UndefOr[js.Array[babelDashTypesLib.babelDashTypesMod.Decorator] | scala.Null],
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    typeParameters: js.UndefOr[
-      babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration | babelDashTypesLib.babelDashTypesMod.Noop | scala.Null
-    ],
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal]
+    decorators: js.UndefOr[js.Array[Decorator] | scala.Null],
+    key: Expression,
+    typeParameters: js.UndefOr[TypeParameterDeclaration | Noop | scala.Null],
+    params: js.Array[LVal]
   ): babelDashTypesLib.babelDashTypesMod.TSDeclareMethod = js.native
   def TSDeclareMethod(
-    decorators: js.UndefOr[js.Array[babelDashTypesLib.babelDashTypesMod.Decorator] | scala.Null],
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    typeParameters: js.UndefOr[
-      babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration | babelDashTypesLib.babelDashTypesMod.Noop | scala.Null
-    ],
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal],
-    returnType: babelDashTypesLib.babelDashTypesMod.TypeAnnotation | babelDashTypesLib.babelDashTypesMod.TSTypeAnnotation | babelDashTypesLib.babelDashTypesMod.Noop
+    decorators: js.UndefOr[js.Array[Decorator] | scala.Null],
+    key: Expression,
+    typeParameters: js.UndefOr[TypeParameterDeclaration | Noop | scala.Null],
+    params: js.Array[LVal],
+    returnType: TypeAnnotation | TSTypeAnnotation | Noop
   ): babelDashTypesLib.babelDashTypesMod.TSDeclareMethod = js.native
-  def TSEnumDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    members: js.Array[babelDashTypesLib.babelDashTypesMod.TSEnumMember]
-  ): babelDashTypesLib.babelDashTypesMod.TSEnumDeclaration = js.native
-  def TSEnumMember(id: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.TSEnumMember = js.native
-  def TSEnumMember(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    initializer: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.TSEnumMember = js.native
-  def TSEnumMember(id: babelDashTypesLib.babelDashTypesMod.StringLiteral): babelDashTypesLib.babelDashTypesMod.TSEnumMember = js.native
-  def TSEnumMember(
-    id: babelDashTypesLib.babelDashTypesMod.StringLiteral,
-    initializer: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.TSEnumMember = js.native
-  def TSExportAssignment(expression: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.TSExportAssignment = js.native
-  def TSExpressionWithTypeArguments(expression: babelDashTypesLib.babelDashTypesMod.TSEntityName): babelDashTypesLib.babelDashTypesMod.TSExpressionWithTypeArguments = js.native
-  def TSExpressionWithTypeArguments(
-    expression: babelDashTypesLib.babelDashTypesMod.TSEntityName,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterInstantiation
-  ): babelDashTypesLib.babelDashTypesMod.TSExpressionWithTypeArguments = js.native
-  def TSExternalModuleReference(expression: babelDashTypesLib.babelDashTypesMod.StringLiteral): babelDashTypesLib.babelDashTypesMod.TSExternalModuleReference = js.native
+  def TSEnumDeclaration(id: Identifier, members: js.Array[TSEnumMember]): babelDashTypesLib.babelDashTypesMod.TSEnumDeclaration = js.native
+  def TSEnumMember(id: Identifier): babelDashTypesLib.babelDashTypesMod.TSEnumMember = js.native
+  def TSEnumMember(id: Identifier, initializer: Expression): babelDashTypesLib.babelDashTypesMod.TSEnumMember = js.native
+  def TSEnumMember(id: StringLiteral): babelDashTypesLib.babelDashTypesMod.TSEnumMember = js.native
+  def TSEnumMember(id: StringLiteral, initializer: Expression): babelDashTypesLib.babelDashTypesMod.TSEnumMember = js.native
+  def TSExportAssignment(expression: Expression): babelDashTypesLib.babelDashTypesMod.TSExportAssignment = js.native
+  def TSExpressionWithTypeArguments(expression: TSEntityName): babelDashTypesLib.babelDashTypesMod.TSExpressionWithTypeArguments = js.native
+  def TSExpressionWithTypeArguments(expression: TSEntityName, typeParameters: TypeParameterInstantiation): babelDashTypesLib.babelDashTypesMod.TSExpressionWithTypeArguments = js.native
+  def TSExternalModuleReference(expression: StringLiteral): babelDashTypesLib.babelDashTypesMod.TSExternalModuleReference = js.native
   def TSFunctionType(): babelDashTypesLib.babelDashTypesMod.TSFunctionType = js.native
-  def TSFunctionType(typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration): babelDashTypesLib.babelDashTypesMod.TSFunctionType = js.native
-  def TSFunctionType(
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TSTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.TSFunctionType = js.native
-  def TSImportEqualsDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    moduleReference: babelDashTypesLib.babelDashTypesMod.TSEntityName
-  ): babelDashTypesLib.babelDashTypesMod.TSImportEqualsDeclaration = js.native
-  def TSImportEqualsDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    moduleReference: babelDashTypesLib.babelDashTypesMod.TSExternalModuleReference
-  ): babelDashTypesLib.babelDashTypesMod.TSImportEqualsDeclaration = js.native
-  def TSIndexSignature(parameters: js.Array[babelDashTypesLib.babelDashTypesMod.Identifier]): babelDashTypesLib.babelDashTypesMod.TSIndexSignature = js.native
-  def TSIndexSignature(
-    parameters: js.Array[babelDashTypesLib.babelDashTypesMod.Identifier],
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TSTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.TSIndexSignature = js.native
-  def TSIndexedAccessType(
-    objectType: babelDashTypesLib.babelDashTypesMod.TSType,
-    indexType: babelDashTypesLib.babelDashTypesMod.TSType
-  ): babelDashTypesLib.babelDashTypesMod.TSIndexedAccessType = js.native
-  def TSInterfaceBody(body: js.Array[babelDashTypesLib.babelDashTypesMod.TSTypeElement]): babelDashTypesLib.babelDashTypesMod.TSInterfaceBody = js.native
+  def TSFunctionType(typeParameters: TypeParameterDeclaration): babelDashTypesLib.babelDashTypesMod.TSFunctionType = js.native
+  def TSFunctionType(typeParameters: TypeParameterDeclaration, typeAnnotation: TSTypeAnnotation): babelDashTypesLib.babelDashTypesMod.TSFunctionType = js.native
+  def TSImportEqualsDeclaration(id: Identifier, moduleReference: TSEntityName): babelDashTypesLib.babelDashTypesMod.TSImportEqualsDeclaration = js.native
+  def TSImportEqualsDeclaration(id: Identifier, moduleReference: TSExternalModuleReference): babelDashTypesLib.babelDashTypesMod.TSImportEqualsDeclaration = js.native
+  def TSIndexSignature(parameters: js.Array[Identifier]): babelDashTypesLib.babelDashTypesMod.TSIndexSignature = js.native
+  def TSIndexSignature(parameters: js.Array[Identifier], typeAnnotation: TSTypeAnnotation): babelDashTypesLib.babelDashTypesMod.TSIndexSignature = js.native
+  def TSIndexedAccessType(objectType: TSType, indexType: TSType): babelDashTypesLib.babelDashTypesMod.TSIndexedAccessType = js.native
+  def TSInterfaceBody(body: js.Array[TSTypeElement]): babelDashTypesLib.babelDashTypesMod.TSInterfaceBody = js.native
   def TSInterfaceDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    extends_ : js.Array[babelDashTypesLib.babelDashTypesMod.TSExpressionWithTypeArguments],
-    body: babelDashTypesLib.babelDashTypesMod.TSInterfaceBody
+    id: Identifier,
+    typeParameters: TypeParameterDeclaration,
+    extends_ : js.Array[TSExpressionWithTypeArguments],
+    body: TSInterfaceBody
   ): babelDashTypesLib.babelDashTypesMod.TSInterfaceDeclaration = js.native
   def TSInterfaceDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
+    id: Identifier,
+    typeParameters: TypeParameterDeclaration,
     extends_ : js.UndefOr[scala.Nothing],
-    body: babelDashTypesLib.babelDashTypesMod.TSInterfaceBody
+    body: TSInterfaceBody
   ): babelDashTypesLib.babelDashTypesMod.TSInterfaceDeclaration = js.native
   def TSInterfaceDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
+    id: Identifier,
+    typeParameters: TypeParameterDeclaration,
     extends_ : scala.Null,
-    body: babelDashTypesLib.babelDashTypesMod.TSInterfaceBody
+    body: TSInterfaceBody
   ): babelDashTypesLib.babelDashTypesMod.TSInterfaceDeclaration = js.native
   def TSInterfaceDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
+    id: Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
-    extends_ : js.Array[babelDashTypesLib.babelDashTypesMod.TSExpressionWithTypeArguments],
-    body: babelDashTypesLib.babelDashTypesMod.TSInterfaceBody
+    extends_ : js.Array[TSExpressionWithTypeArguments],
+    body: TSInterfaceBody
   ): babelDashTypesLib.babelDashTypesMod.TSInterfaceDeclaration = js.native
   def TSInterfaceDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
+    id: Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
     extends_ : js.UndefOr[scala.Nothing],
-    body: babelDashTypesLib.babelDashTypesMod.TSInterfaceBody
+    body: TSInterfaceBody
   ): babelDashTypesLib.babelDashTypesMod.TSInterfaceDeclaration = js.native
   def TSInterfaceDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
+    id: Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
     extends_ : scala.Null,
-    body: babelDashTypesLib.babelDashTypesMod.TSInterfaceBody
+    body: TSInterfaceBody
   ): babelDashTypesLib.babelDashTypesMod.TSInterfaceDeclaration = js.native
   def TSInterfaceDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
+    id: Identifier,
     typeParameters: scala.Null,
-    extends_ : js.Array[babelDashTypesLib.babelDashTypesMod.TSExpressionWithTypeArguments],
-    body: babelDashTypesLib.babelDashTypesMod.TSInterfaceBody
+    extends_ : js.Array[TSExpressionWithTypeArguments],
+    body: TSInterfaceBody
   ): babelDashTypesLib.babelDashTypesMod.TSInterfaceDeclaration = js.native
   def TSInterfaceDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
+    id: Identifier,
     typeParameters: scala.Null,
     extends_ : js.UndefOr[scala.Nothing],
-    body: babelDashTypesLib.babelDashTypesMod.TSInterfaceBody
+    body: TSInterfaceBody
   ): babelDashTypesLib.babelDashTypesMod.TSInterfaceDeclaration = js.native
-  def TSInterfaceDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: scala.Null,
-    extends_ : scala.Null,
-    body: babelDashTypesLib.babelDashTypesMod.TSInterfaceBody
-  ): babelDashTypesLib.babelDashTypesMod.TSInterfaceDeclaration = js.native
-  def TSIntersectionType(types: js.Array[babelDashTypesLib.babelDashTypesMod.TSType]): babelDashTypesLib.babelDashTypesMod.TSIntersectionType = js.native
-  def TSLiteralType(literal: babelDashTypesLib.babelDashTypesMod.BooleanLiteral): babelDashTypesLib.babelDashTypesMod.TSLiteralType = js.native
-  def TSLiteralType(literal: babelDashTypesLib.babelDashTypesMod.NumericLiteral): babelDashTypesLib.babelDashTypesMod.TSLiteralType = js.native
-  def TSLiteralType(literal: babelDashTypesLib.babelDashTypesMod.StringLiteral): babelDashTypesLib.babelDashTypesMod.TSLiteralType = js.native
-  def TSMappedType(typeParameter: babelDashTypesLib.babelDashTypesMod.TypeParameter): babelDashTypesLib.babelDashTypesMod.TSMappedType = js.native
-  def TSMappedType(
-    typeParameter: babelDashTypesLib.babelDashTypesMod.TypeParameter,
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TSType
-  ): babelDashTypesLib.babelDashTypesMod.TSMappedType = js.native
-  def TSMethodSignature(key: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.TSMethodSignature = js.native
+  def TSInterfaceDeclaration(id: Identifier, typeParameters: scala.Null, extends_ : scala.Null, body: TSInterfaceBody): babelDashTypesLib.babelDashTypesMod.TSInterfaceDeclaration = js.native
+  def TSIntersectionType(types: js.Array[TSType]): babelDashTypesLib.babelDashTypesMod.TSIntersectionType = js.native
+  def TSLiteralType(literal: BooleanLiteral): babelDashTypesLib.babelDashTypesMod.TSLiteralType = js.native
+  def TSLiteralType(literal: NumericLiteral): babelDashTypesLib.babelDashTypesMod.TSLiteralType = js.native
+  def TSLiteralType(literal: StringLiteral): babelDashTypesLib.babelDashTypesMod.TSLiteralType = js.native
+  def TSMappedType(typeParameter: TypeParameter): babelDashTypesLib.babelDashTypesMod.TSMappedType = js.native
+  def TSMappedType(typeParameter: TypeParameter, typeAnnotation: TSType): babelDashTypesLib.babelDashTypesMod.TSMappedType = js.native
+  def TSMethodSignature(key: Expression): babelDashTypesLib.babelDashTypesMod.TSMethodSignature = js.native
+  def TSMethodSignature(key: Expression, typeParameters: TypeParameterDeclaration): babelDashTypesLib.babelDashTypesMod.TSMethodSignature = js.native
   def TSMethodSignature(
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration
+    key: Expression,
+    typeParameters: TypeParameterDeclaration,
+    parameters: js.Array[Identifier | RestElement]
   ): babelDashTypesLib.babelDashTypesMod.TSMethodSignature = js.native
   def TSMethodSignature(
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    parameters: js.Array[
-      babelDashTypesLib.babelDashTypesMod.Identifier | babelDashTypesLib.babelDashTypesMod.RestElement
-    ]
+    key: Expression,
+    typeParameters: TypeParameterDeclaration,
+    parameters: js.Array[Identifier | RestElement],
+    typeAnnotation: TSTypeAnnotation
   ): babelDashTypesLib.babelDashTypesMod.TSMethodSignature = js.native
-  def TSMethodSignature(
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    parameters: js.Array[
-      babelDashTypesLib.babelDashTypesMod.Identifier | babelDashTypesLib.babelDashTypesMod.RestElement
-    ],
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TSTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.TSMethodSignature = js.native
-  def TSModuleBlock(body: js.Array[babelDashTypesLib.babelDashTypesMod.Statement]): babelDashTypesLib.babelDashTypesMod.TSModuleBlock = js.native
-  def TSModuleDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    body: babelDashTypesLib.babelDashTypesMod.TSModuleBlock
-  ): babelDashTypesLib.babelDashTypesMod.TSModuleDeclaration = js.native
-  def TSModuleDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    body: babelDashTypesLib.babelDashTypesMod.TSModuleDeclaration
-  ): babelDashTypesLib.babelDashTypesMod.TSModuleDeclaration = js.native
-  def TSModuleDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.StringLiteral,
-    body: babelDashTypesLib.babelDashTypesMod.TSModuleBlock
-  ): babelDashTypesLib.babelDashTypesMod.TSModuleDeclaration = js.native
-  def TSModuleDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.StringLiteral,
-    body: babelDashTypesLib.babelDashTypesMod.TSModuleDeclaration
-  ): babelDashTypesLib.babelDashTypesMod.TSModuleDeclaration = js.native
-  def TSNamespaceExportDeclaration(id: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.TSNamespaceExportDeclaration = js.native
+  def TSModuleBlock(body: js.Array[Statement]): babelDashTypesLib.babelDashTypesMod.TSModuleBlock = js.native
+  def TSModuleDeclaration(id: Identifier, body: TSModuleBlock): babelDashTypesLib.babelDashTypesMod.TSModuleDeclaration = js.native
+  def TSModuleDeclaration(id: Identifier, body: TSModuleDeclaration): babelDashTypesLib.babelDashTypesMod.TSModuleDeclaration = js.native
+  def TSModuleDeclaration(id: StringLiteral, body: TSModuleBlock): babelDashTypesLib.babelDashTypesMod.TSModuleDeclaration = js.native
+  def TSModuleDeclaration(id: StringLiteral, body: TSModuleDeclaration): babelDashTypesLib.babelDashTypesMod.TSModuleDeclaration = js.native
+  def TSNamespaceExportDeclaration(id: Identifier): babelDashTypesLib.babelDashTypesMod.TSNamespaceExportDeclaration = js.native
   def TSNeverKeyword(): babelDashTypesLib.babelDashTypesMod.TSNeverKeyword = js.native
-  def TSNonNullExpression(expression: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.TSNonNullExpression = js.native
+  def TSNonNullExpression(expression: Expression): babelDashTypesLib.babelDashTypesMod.TSNonNullExpression = js.native
   def TSNullKeyword(): babelDashTypesLib.babelDashTypesMod.TSNullKeyword = js.native
   def TSNumberKeyword(): babelDashTypesLib.babelDashTypesMod.TSNumberKeyword = js.native
   def TSObjectKeyword(): babelDashTypesLib.babelDashTypesMod.TSObjectKeyword = js.native
-  def TSParameterProperty(parameter: babelDashTypesLib.babelDashTypesMod.AssignmentPattern): babelDashTypesLib.babelDashTypesMod.TSParameterProperty = js.native
-  def TSParameterProperty(parameter: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.TSParameterProperty = js.native
-  def TSParenthesizedType(typeAnnotation: babelDashTypesLib.babelDashTypesMod.TSType): babelDashTypesLib.babelDashTypesMod.TSParenthesizedType = js.native
-  def TSPropertySignature(key: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.TSPropertySignature = js.native
-  def TSPropertySignature(
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TSTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.TSPropertySignature = js.native
-  def TSPropertySignature(
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TSTypeAnnotation,
-    initializer: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.TSPropertySignature = js.native
-  def TSQualifiedName(
-    left: babelDashTypesLib.babelDashTypesMod.TSEntityName,
-    right: babelDashTypesLib.babelDashTypesMod.Identifier
-  ): babelDashTypesLib.babelDashTypesMod.TSQualifiedName = js.native
+  def TSParameterProperty(parameter: AssignmentPattern): babelDashTypesLib.babelDashTypesMod.TSParameterProperty = js.native
+  def TSParameterProperty(parameter: Identifier): babelDashTypesLib.babelDashTypesMod.TSParameterProperty = js.native
+  def TSParenthesizedType(typeAnnotation: TSType): babelDashTypesLib.babelDashTypesMod.TSParenthesizedType = js.native
+  def TSPropertySignature(key: Expression): babelDashTypesLib.babelDashTypesMod.TSPropertySignature = js.native
+  def TSPropertySignature(key: Expression, typeAnnotation: TSTypeAnnotation): babelDashTypesLib.babelDashTypesMod.TSPropertySignature = js.native
+  def TSPropertySignature(key: Expression, typeAnnotation: TSTypeAnnotation, initializer: Expression): babelDashTypesLib.babelDashTypesMod.TSPropertySignature = js.native
+  def TSQualifiedName(left: TSEntityName, right: Identifier): babelDashTypesLib.babelDashTypesMod.TSQualifiedName = js.native
   def TSStringKeyword(): babelDashTypesLib.babelDashTypesMod.TSStringKeyword = js.native
   def TSSymbolKeyword(): babelDashTypesLib.babelDashTypesMod.TSSymbolKeyword = js.native
   def TSThisType(): babelDashTypesLib.babelDashTypesMod.TSThisType = js.native
-  def TSTupleType(elementTypes: js.Array[babelDashTypesLib.babelDashTypesMod.TSType]): babelDashTypesLib.babelDashTypesMod.TSTupleType = js.native
-  def TSTypeAliasDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TSType
-  ): babelDashTypesLib.babelDashTypesMod.TSTypeAliasDeclaration = js.native
-  def TSTypeAliasDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TSType
-  ): babelDashTypesLib.babelDashTypesMod.TSTypeAliasDeclaration = js.native
-  def TSTypeAliasDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: scala.Null,
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TSType
-  ): babelDashTypesLib.babelDashTypesMod.TSTypeAliasDeclaration = js.native
-  def TSTypeAnnotation(typeAnnotation: babelDashTypesLib.babelDashTypesMod.TSType): babelDashTypesLib.babelDashTypesMod.TSTypeAnnotation = js.native
-  def TSTypeAssertion(
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TSType,
-    expression: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.TSTypeAssertion = js.native
-  def TSTypeLiteral(members: js.Array[babelDashTypesLib.babelDashTypesMod.TSTypeElement]): babelDashTypesLib.babelDashTypesMod.TSTypeLiteral = js.native
-  def TSTypeOperator(typeAnnotation: babelDashTypesLib.babelDashTypesMod.TSType): babelDashTypesLib.babelDashTypesMod.TSTypeOperator = js.native
+  def TSTupleType(elementTypes: js.Array[TSType]): babelDashTypesLib.babelDashTypesMod.TSTupleType = js.native
+  def TSTypeAliasDeclaration(id: Identifier, typeParameters: TypeParameterDeclaration, typeAnnotation: TSType): babelDashTypesLib.babelDashTypesMod.TSTypeAliasDeclaration = js.native
+  def TSTypeAliasDeclaration(id: Identifier, typeParameters: js.UndefOr[scala.Nothing], typeAnnotation: TSType): babelDashTypesLib.babelDashTypesMod.TSTypeAliasDeclaration = js.native
+  def TSTypeAliasDeclaration(id: Identifier, typeParameters: scala.Null, typeAnnotation: TSType): babelDashTypesLib.babelDashTypesMod.TSTypeAliasDeclaration = js.native
+  def TSTypeAnnotation(typeAnnotation: TSType): babelDashTypesLib.babelDashTypesMod.TSTypeAnnotation = js.native
+  def TSTypeAssertion(typeAnnotation: TSType, expression: Expression): babelDashTypesLib.babelDashTypesMod.TSTypeAssertion = js.native
+  def TSTypeLiteral(members: js.Array[TSTypeElement]): babelDashTypesLib.babelDashTypesMod.TSTypeLiteral = js.native
+  def TSTypeOperator(typeAnnotation: TSType): babelDashTypesLib.babelDashTypesMod.TSTypeOperator = js.native
   def TSTypeParameter(): babelDashTypesLib.babelDashTypesMod.TSTypeParameter = js.native
-  def TSTypeParameter(constraint: babelDashTypesLib.babelDashTypesMod.TSType): babelDashTypesLib.babelDashTypesMod.TSTypeParameter = js.native
-  def TSTypeParameter(
-    constraint: babelDashTypesLib.babelDashTypesMod.TSType,
-    default_ : babelDashTypesLib.babelDashTypesMod.TSType
-  ): babelDashTypesLib.babelDashTypesMod.TSTypeParameter = js.native
-  def TSTypeParameterDeclaration(params: js.Array[babelDashTypesLib.babelDashTypesMod.TSTypeParameter]): babelDashTypesLib.babelDashTypesMod.TSTypeParameterDeclaration = js.native
-  def TSTypeParameterInstantiation(params: js.Array[babelDashTypesLib.babelDashTypesMod.TSType]): babelDashTypesLib.babelDashTypesMod.TSTypeParameterInstantiation = js.native
-  def TSTypePredicate(
-    parameterName: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TSTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.TSTypePredicate = js.native
-  def TSTypePredicate(
-    parameterName: babelDashTypesLib.babelDashTypesMod.TSThisType,
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TSTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.TSTypePredicate = js.native
-  def TSTypeQuery(exprName: babelDashTypesLib.babelDashTypesMod.TSEntityName): babelDashTypesLib.babelDashTypesMod.TSTypeQuery = js.native
-  def TSTypeReference(typeName: babelDashTypesLib.babelDashTypesMod.TSEntityName): babelDashTypesLib.babelDashTypesMod.TSTypeReference = js.native
-  def TSTypeReference(
-    typeName: babelDashTypesLib.babelDashTypesMod.TSEntityName,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterInstantiation
-  ): babelDashTypesLib.babelDashTypesMod.TSTypeReference = js.native
+  def TSTypeParameter(constraint: TSType): babelDashTypesLib.babelDashTypesMod.TSTypeParameter = js.native
+  def TSTypeParameter(constraint: TSType, default_ : TSType): babelDashTypesLib.babelDashTypesMod.TSTypeParameter = js.native
+  def TSTypeParameterDeclaration(params: js.Array[TSTypeParameter]): babelDashTypesLib.babelDashTypesMod.TSTypeParameterDeclaration = js.native
+  def TSTypeParameterInstantiation(params: js.Array[TSType]): babelDashTypesLib.babelDashTypesMod.TSTypeParameterInstantiation = js.native
+  def TSTypePredicate(parameterName: Identifier, typeAnnotation: TSTypeAnnotation): babelDashTypesLib.babelDashTypesMod.TSTypePredicate = js.native
+  def TSTypePredicate(parameterName: TSThisType, typeAnnotation: TSTypeAnnotation): babelDashTypesLib.babelDashTypesMod.TSTypePredicate = js.native
+  def TSTypeQuery(exprName: TSEntityName): babelDashTypesLib.babelDashTypesMod.TSTypeQuery = js.native
+  def TSTypeReference(typeName: TSEntityName): babelDashTypesLib.babelDashTypesMod.TSTypeReference = js.native
+  def TSTypeReference(typeName: TSEntityName, typeParameters: TypeParameterInstantiation): babelDashTypesLib.babelDashTypesMod.TSTypeReference = js.native
   def TSUndefinedKeyword(): babelDashTypesLib.babelDashTypesMod.TSUndefinedKeyword = js.native
-  def TSUnionType(types: js.Array[babelDashTypesLib.babelDashTypesMod.TSType]): babelDashTypesLib.babelDashTypesMod.TSUnionType = js.native
+  def TSUnionType(types: js.Array[TSType]): babelDashTypesLib.babelDashTypesMod.TSUnionType = js.native
   def TSVoidKeyword(): babelDashTypesLib.babelDashTypesMod.TSVoidKeyword = js.native
-  def anyTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.AnyTypeAnnotation = js.native
-  def arrayExpression(): babelDashTypesLib.babelDashTypesMod.ArrayExpression = js.native
-  def arrayExpression(
-    elements: js.Array[
-      scala.Null | babelDashTypesLib.babelDashTypesMod.Expression | babelDashTypesLib.babelDashTypesMod.SpreadElement
-    ]
-  ): babelDashTypesLib.babelDashTypesMod.ArrayExpression = js.native
-  def arrayPattern(): babelDashTypesLib.babelDashTypesMod.ArrayPattern = js.native
-  def arrayPattern(elements: js.Array[babelDashTypesLib.babelDashTypesMod.Expression]): babelDashTypesLib.babelDashTypesMod.ArrayPattern = js.native
-  def arrayPattern(
-    elements: js.Array[babelDashTypesLib.babelDashTypesMod.Expression],
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.ArrayPattern = js.native
-  def arrayTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.ArrayTypeAnnotation = js.native
-  def arrayTypeAnnotation(elementType: babelDashTypesLib.babelDashTypesMod.FlowTypeAnnotation): babelDashTypesLib.babelDashTypesMod.ArrayTypeAnnotation = js.native
-  def arrowFunctionExpression(): babelDashTypesLib.babelDashTypesMod.ArrowFunctionExpression = js.native
-  def arrowFunctionExpression(params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal]): babelDashTypesLib.babelDashTypesMod.ArrowFunctionExpression = js.native
-  def arrowFunctionExpression(
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal],
-    body: babelDashTypesLib.babelDashTypesMod.BlockStatement
-  ): babelDashTypesLib.babelDashTypesMod.ArrowFunctionExpression = js.native
-  def arrowFunctionExpression(
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal],
-    body: babelDashTypesLib.babelDashTypesMod.BlockStatement,
-    async: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.ArrowFunctionExpression = js.native
-  def arrowFunctionExpression(
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal],
-    body: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.ArrowFunctionExpression = js.native
-  def arrowFunctionExpression(
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal],
-    body: babelDashTypesLib.babelDashTypesMod.Expression,
-    async: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.ArrowFunctionExpression = js.native
+  def anyTypeAnnotation(): AnyTypeAnnotation = js.native
+  def arrayExpression(): ArrayExpression = js.native
+  def arrayExpression(elements: js.Array[scala.Null | Expression | SpreadElement]): ArrayExpression = js.native
+  def arrayPattern(): ArrayPattern = js.native
+  def arrayPattern(elements: js.Array[Expression]): ArrayPattern = js.native
+  def arrayPattern(elements: js.Array[Expression], typeAnnotation: TypeAnnotation): ArrayPattern = js.native
+  def arrayTypeAnnotation(): ArrayTypeAnnotation = js.native
+  def arrayTypeAnnotation(elementType: FlowTypeAnnotation): ArrayTypeAnnotation = js.native
+  def arrowFunctionExpression(): ArrowFunctionExpression = js.native
+  def arrowFunctionExpression(params: js.Array[LVal]): ArrowFunctionExpression = js.native
+  def arrowFunctionExpression(params: js.Array[LVal], body: BlockStatement): ArrowFunctionExpression = js.native
+  def arrowFunctionExpression(params: js.Array[LVal], body: BlockStatement, async: scala.Boolean): ArrowFunctionExpression = js.native
+  def arrowFunctionExpression(params: js.Array[LVal], body: Expression): ArrowFunctionExpression = js.native
+  def arrowFunctionExpression(params: js.Array[LVal], body: Expression, async: scala.Boolean): ArrowFunctionExpression = js.native
   def assertAnyTypeAnnotation(): scala.Unit = js.native
   def assertAnyTypeAnnotation(node: js.Object): scala.Unit = js.native
   def assertAnyTypeAnnotation(node: js.Object, opts: js.Object): scala.Unit = js.native
@@ -1473,508 +1333,284 @@ object ^ extends js.Object {
   def assertYieldExpression(node: js.Object, opts: js.Object): scala.Unit = js.native
   def assertYieldExpression(node: js.UndefOr[scala.Nothing], opts: js.Object): scala.Unit = js.native
   def assertYieldExpression(node: scala.Null, opts: js.Object): scala.Unit = js.native
-  def assignmentExpression(): babelDashTypesLib.babelDashTypesMod.AssignmentExpression = js.native
-  def assignmentExpression(operator: java.lang.String): babelDashTypesLib.babelDashTypesMod.AssignmentExpression = js.native
-  def assignmentExpression(operator: java.lang.String, left: babelDashTypesLib.babelDashTypesMod.LVal): babelDashTypesLib.babelDashTypesMod.AssignmentExpression = js.native
-  def assignmentExpression(
-    operator: java.lang.String,
-    left: babelDashTypesLib.babelDashTypesMod.LVal,
-    right: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.AssignmentExpression = js.native
-  def assignmentPattern(): babelDashTypesLib.babelDashTypesMod.AssignmentPattern = js.native
-  def assignmentPattern(left: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.AssignmentPattern = js.native
-  def assignmentPattern(
-    left: babelDashTypesLib.babelDashTypesMod.Identifier,
-    right: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.AssignmentPattern = js.native
-  def awaitExpression(): babelDashTypesLib.babelDashTypesMod.AwaitExpression = js.native
-  def awaitExpression(argument: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.AwaitExpression = js.native
-  def binaryExpression(): babelDashTypesLib.babelDashTypesMod.BinaryExpression = js.native
+  def assignmentExpression(): AssignmentExpression = js.native
+  def assignmentExpression(operator: java.lang.String): AssignmentExpression = js.native
+  def assignmentExpression(operator: java.lang.String, left: LVal): AssignmentExpression = js.native
+  def assignmentExpression(operator: java.lang.String, left: LVal, right: Expression): AssignmentExpression = js.native
+  def assignmentPattern(): AssignmentPattern = js.native
+  def assignmentPattern(left: Identifier): AssignmentPattern = js.native
+  def assignmentPattern(left: Identifier, right: Expression): AssignmentPattern = js.native
+  def awaitExpression(): AwaitExpression = js.native
+  def awaitExpression(argument: Expression): AwaitExpression = js.native
+  def binaryExpression(): BinaryExpression = js.native
   def binaryExpression(
     operator: babelDashTypesLib.babelDashTypesLibStrings.`+` | babelDashTypesLib.babelDashTypesLibStrings.`-` | babelDashTypesLib.babelDashTypesLibStrings.`/` | babelDashTypesLib.babelDashTypesLibStrings.`%` | babelDashTypesLib.babelDashTypesLibStrings.`*` | babelDashTypesLib.babelDashTypesLibStrings.`**` | babelDashTypesLib.babelDashTypesLibStrings.`&` | babelDashTypesLib.babelDashTypesLibStrings.`|` | babelDashTypesLib.babelDashTypesLibStrings.`>>` | babelDashTypesLib.babelDashTypesLibStrings.`>>>` | babelDashTypesLib.babelDashTypesLibStrings.`<<` | babelDashTypesLib.babelDashTypesLibStrings.`_backtick^_backtick` | babelDashTypesLib.babelDashTypesLibStrings.`==` | babelDashTypesLib.babelDashTypesLibStrings.`===` | babelDashTypesLib.babelDashTypesLibStrings.`!=` | babelDashTypesLib.babelDashTypesLibStrings.`!==` | babelDashTypesLib.babelDashTypesLibStrings.in | babelDashTypesLib.babelDashTypesLibStrings.instanceof | babelDashTypesLib.babelDashTypesLibStrings.`>` | babelDashTypesLib.babelDashTypesLibStrings.`<` | babelDashTypesLib.babelDashTypesLibStrings.`>=` | babelDashTypesLib.babelDashTypesLibStrings.`<=`
-  ): babelDashTypesLib.babelDashTypesMod.BinaryExpression = js.native
+  ): BinaryExpression = js.native
   def binaryExpression(
     operator: babelDashTypesLib.babelDashTypesLibStrings.`+` | babelDashTypesLib.babelDashTypesLibStrings.`-` | babelDashTypesLib.babelDashTypesLibStrings.`/` | babelDashTypesLib.babelDashTypesLibStrings.`%` | babelDashTypesLib.babelDashTypesLibStrings.`*` | babelDashTypesLib.babelDashTypesLibStrings.`**` | babelDashTypesLib.babelDashTypesLibStrings.`&` | babelDashTypesLib.babelDashTypesLibStrings.`|` | babelDashTypesLib.babelDashTypesLibStrings.`>>` | babelDashTypesLib.babelDashTypesLibStrings.`>>>` | babelDashTypesLib.babelDashTypesLibStrings.`<<` | babelDashTypesLib.babelDashTypesLibStrings.`_backtick^_backtick` | babelDashTypesLib.babelDashTypesLibStrings.`==` | babelDashTypesLib.babelDashTypesLibStrings.`===` | babelDashTypesLib.babelDashTypesLibStrings.`!=` | babelDashTypesLib.babelDashTypesLibStrings.`!==` | babelDashTypesLib.babelDashTypesLibStrings.in | babelDashTypesLib.babelDashTypesLibStrings.instanceof | babelDashTypesLib.babelDashTypesLibStrings.`>` | babelDashTypesLib.babelDashTypesLibStrings.`<` | babelDashTypesLib.babelDashTypesLibStrings.`>=` | babelDashTypesLib.babelDashTypesLibStrings.`<=`,
-    left: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.BinaryExpression = js.native
+    left: Expression
+  ): BinaryExpression = js.native
   def binaryExpression(
     operator: babelDashTypesLib.babelDashTypesLibStrings.`+` | babelDashTypesLib.babelDashTypesLibStrings.`-` | babelDashTypesLib.babelDashTypesLibStrings.`/` | babelDashTypesLib.babelDashTypesLibStrings.`%` | babelDashTypesLib.babelDashTypesLibStrings.`*` | babelDashTypesLib.babelDashTypesLibStrings.`**` | babelDashTypesLib.babelDashTypesLibStrings.`&` | babelDashTypesLib.babelDashTypesLibStrings.`|` | babelDashTypesLib.babelDashTypesLibStrings.`>>` | babelDashTypesLib.babelDashTypesLibStrings.`>>>` | babelDashTypesLib.babelDashTypesLibStrings.`<<` | babelDashTypesLib.babelDashTypesLibStrings.`_backtick^_backtick` | babelDashTypesLib.babelDashTypesLibStrings.`==` | babelDashTypesLib.babelDashTypesLibStrings.`===` | babelDashTypesLib.babelDashTypesLibStrings.`!=` | babelDashTypesLib.babelDashTypesLibStrings.`!==` | babelDashTypesLib.babelDashTypesLibStrings.in | babelDashTypesLib.babelDashTypesLibStrings.instanceof | babelDashTypesLib.babelDashTypesLibStrings.`>` | babelDashTypesLib.babelDashTypesLibStrings.`<` | babelDashTypesLib.babelDashTypesLibStrings.`>=` | babelDashTypesLib.babelDashTypesLibStrings.`<=`,
-    left: babelDashTypesLib.babelDashTypesMod.Expression,
-    right: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.BinaryExpression = js.native
-  def bindExpression(): babelDashTypesLib.babelDashTypesMod.BindExpression = js.native
-  def bindExpression(`object`: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.BindExpression = js.native
-  def bindExpression(
-    `object`: babelDashTypesLib.babelDashTypesMod.Expression,
-    callee: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.BindExpression = js.native
-  def blockStatement(): babelDashTypesLib.babelDashTypesMod.BlockStatement = js.native
-  def blockStatement(body: js.Array[babelDashTypesLib.babelDashTypesMod.Statement]): babelDashTypesLib.babelDashTypesMod.BlockStatement = js.native
-  def blockStatement(
-    body: js.Array[babelDashTypesLib.babelDashTypesMod.Statement],
-    directives: js.Array[babelDashTypesLib.babelDashTypesMod.Directive]
-  ): babelDashTypesLib.babelDashTypesMod.BlockStatement = js.native
-  def booleanLiteral(): babelDashTypesLib.babelDashTypesMod.BooleanLiteral = js.native
-  def booleanLiteral(value: scala.Boolean): babelDashTypesLib.babelDashTypesMod.BooleanLiteral = js.native
-  def booleanLiteralTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.BooleanLiteralTypeAnnotation = js.native
-  def booleanTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.BooleanTypeAnnotation = js.native
-  def breakStatement(): babelDashTypesLib.babelDashTypesMod.BreakStatement = js.native
-  def breakStatement(label: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.BreakStatement = js.native
-  def callExpression(): babelDashTypesLib.babelDashTypesMod.CallExpression = js.native
-  def callExpression(callee: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.CallExpression = js.native
-  def callExpression(
-    callee: babelDashTypesLib.babelDashTypesMod.Expression,
-    _arguments: js.Array[
-      babelDashTypesLib.babelDashTypesMod.Expression | babelDashTypesLib.babelDashTypesMod.SpreadElement
-    ]
-  ): babelDashTypesLib.babelDashTypesMod.CallExpression = js.native
-  def catchClause(): babelDashTypesLib.babelDashTypesMod.CatchClause = js.native
-  def catchClause(param: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.CatchClause = js.native
-  def catchClause(
-    param: babelDashTypesLib.babelDashTypesMod.Identifier,
-    body: babelDashTypesLib.babelDashTypesMod.BlockStatement
-  ): babelDashTypesLib.babelDashTypesMod.CatchClause = js.native
-  def classBody(): babelDashTypesLib.babelDashTypesMod.ClassBody = js.native
-  def classBody(
-    body: js.Array[
-      babelDashTypesLib.babelDashTypesMod.ClassMethod | babelDashTypesLib.babelDashTypesMod.ClassProperty
-    ]
-  ): babelDashTypesLib.babelDashTypesMod.ClassBody = js.native
-  def classDeclaration(): babelDashTypesLib.babelDashTypesMod.ClassDeclaration = js.native
-  def classDeclaration(id: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.ClassDeclaration = js.native
-  def classDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    superClass: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.ClassDeclaration = js.native
-  def classDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    superClass: babelDashTypesLib.babelDashTypesMod.Expression,
-    body: babelDashTypesLib.babelDashTypesMod.ClassBody
-  ): babelDashTypesLib.babelDashTypesMod.ClassDeclaration = js.native
-  def classDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    superClass: babelDashTypesLib.babelDashTypesMod.Expression,
-    body: babelDashTypesLib.babelDashTypesMod.ClassBody,
-    decorators: js.Array[babelDashTypesLib.babelDashTypesMod.Decorator]
-  ): babelDashTypesLib.babelDashTypesMod.ClassDeclaration = js.native
-  def classExpression(): babelDashTypesLib.babelDashTypesMod.ClassExpression = js.native
-  def classExpression(id: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.ClassExpression = js.native
-  def classExpression(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    superClass: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.ClassExpression = js.native
-  def classExpression(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    superClass: babelDashTypesLib.babelDashTypesMod.Expression,
-    body: babelDashTypesLib.babelDashTypesMod.ClassBody
-  ): babelDashTypesLib.babelDashTypesMod.ClassExpression = js.native
-  def classExpression(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    superClass: babelDashTypesLib.babelDashTypesMod.Expression,
-    body: babelDashTypesLib.babelDashTypesMod.ClassBody,
-    decorators: js.Array[babelDashTypesLib.babelDashTypesMod.Decorator]
-  ): babelDashTypesLib.babelDashTypesMod.ClassExpression = js.native
-  def classImplements(): babelDashTypesLib.babelDashTypesMod.ClassImplements = js.native
-  def classImplements(id: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.ClassImplements = js.native
-  def classImplements(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterInstantiation
-  ): babelDashTypesLib.babelDashTypesMod.ClassImplements = js.native
+    left: Expression,
+    right: Expression
+  ): BinaryExpression = js.native
+  def bindExpression(): BindExpression = js.native
+  def bindExpression(`object`: Expression): BindExpression = js.native
+  def bindExpression(`object`: Expression, callee: Expression): BindExpression = js.native
+  def blockStatement(): BlockStatement = js.native
+  def blockStatement(body: js.Array[Statement]): BlockStatement = js.native
+  def blockStatement(body: js.Array[Statement], directives: js.Array[Directive]): BlockStatement = js.native
+  def booleanLiteral(): BooleanLiteral = js.native
+  def booleanLiteral(value: scala.Boolean): BooleanLiteral = js.native
+  def booleanLiteralTypeAnnotation(): BooleanLiteralTypeAnnotation = js.native
+  def booleanTypeAnnotation(): BooleanTypeAnnotation = js.native
+  def breakStatement(): BreakStatement = js.native
+  def breakStatement(label: Identifier): BreakStatement = js.native
+  def callExpression(): CallExpression = js.native
+  def callExpression(callee: Expression): CallExpression = js.native
+  def callExpression(callee: Expression, _arguments: js.Array[Expression | SpreadElement]): CallExpression = js.native
+  def catchClause(): CatchClause = js.native
+  def catchClause(param: Identifier): CatchClause = js.native
+  def catchClause(param: Identifier, body: BlockStatement): CatchClause = js.native
+  def classBody(): ClassBody = js.native
+  def classBody(body: js.Array[ClassMethod | ClassProperty]): ClassBody = js.native
+  def classDeclaration(): ClassDeclaration = js.native
+  def classDeclaration(id: Identifier): ClassDeclaration = js.native
+  def classDeclaration(id: Identifier, superClass: Expression): ClassDeclaration = js.native
+  def classDeclaration(id: Identifier, superClass: Expression, body: ClassBody): ClassDeclaration = js.native
+  def classDeclaration(id: Identifier, superClass: Expression, body: ClassBody, decorators: js.Array[Decorator]): ClassDeclaration = js.native
+  def classExpression(): ClassExpression = js.native
+  def classExpression(id: Identifier): ClassExpression = js.native
+  def classExpression(id: Identifier, superClass: Expression): ClassExpression = js.native
+  def classExpression(id: Identifier, superClass: Expression, body: ClassBody): ClassExpression = js.native
+  def classExpression(id: Identifier, superClass: Expression, body: ClassBody, decorators: js.Array[Decorator]): ClassExpression = js.native
+  def classImplements(): ClassImplements = js.native
+  def classImplements(id: Identifier): ClassImplements = js.native
+  def classImplements(id: Identifier, typeParameters: TypeParameterInstantiation): ClassImplements = js.native
   @JSName("classMethod")
   def classMethod_constructor(
     kind: js.UndefOr[babelDashTypesLib.babelDashTypesLibStrings.constructor],
-    key: js.UndefOr[babelDashTypesLib.babelDashTypesMod.Expression],
-    params: js.UndefOr[js.Array[babelDashTypesLib.babelDashTypesMod.LVal]],
-    body: js.UndefOr[babelDashTypesLib.babelDashTypesMod.BlockStatement],
+    key: js.UndefOr[Expression],
+    params: js.UndefOr[js.Array[LVal]],
+    body: js.UndefOr[BlockStatement],
     computed: js.UndefOr[scala.Boolean],
     _static: js.UndefOr[scala.Boolean]
-  ): babelDashTypesLib.babelDashTypesMod.ClassMethod = js.native
+  ): ClassMethod = js.native
   @JSName("classMethod")
   def classMethod_get(
     kind: js.UndefOr[babelDashTypesLib.babelDashTypesLibStrings.get],
-    key: js.UndefOr[babelDashTypesLib.babelDashTypesMod.Expression],
-    params: js.UndefOr[js.Array[babelDashTypesLib.babelDashTypesMod.LVal]],
-    body: js.UndefOr[babelDashTypesLib.babelDashTypesMod.BlockStatement],
+    key: js.UndefOr[Expression],
+    params: js.UndefOr[js.Array[LVal]],
+    body: js.UndefOr[BlockStatement],
     computed: js.UndefOr[scala.Boolean],
     _static: js.UndefOr[scala.Boolean]
-  ): babelDashTypesLib.babelDashTypesMod.ClassMethod = js.native
+  ): ClassMethod = js.native
   @JSName("classMethod")
   def classMethod_method(
     kind: js.UndefOr[babelDashTypesLib.babelDashTypesLibStrings.method],
-    key: js.UndefOr[babelDashTypesLib.babelDashTypesMod.Expression],
-    params: js.UndefOr[js.Array[babelDashTypesLib.babelDashTypesMod.LVal]],
-    body: js.UndefOr[babelDashTypesLib.babelDashTypesMod.BlockStatement],
+    key: js.UndefOr[Expression],
+    params: js.UndefOr[js.Array[LVal]],
+    body: js.UndefOr[BlockStatement],
     computed: js.UndefOr[scala.Boolean],
     _static: js.UndefOr[scala.Boolean]
-  ): babelDashTypesLib.babelDashTypesMod.ClassMethod = js.native
+  ): ClassMethod = js.native
   @JSName("classMethod")
   def classMethod_set(
     kind: js.UndefOr[babelDashTypesLib.babelDashTypesLibStrings.set],
-    key: js.UndefOr[babelDashTypesLib.babelDashTypesMod.Expression],
-    params: js.UndefOr[js.Array[babelDashTypesLib.babelDashTypesMod.LVal]],
-    body: js.UndefOr[babelDashTypesLib.babelDashTypesMod.BlockStatement],
+    key: js.UndefOr[Expression],
+    params: js.UndefOr[js.Array[LVal]],
+    body: js.UndefOr[BlockStatement],
     computed: js.UndefOr[scala.Boolean],
     _static: js.UndefOr[scala.Boolean]
-  ): babelDashTypesLib.babelDashTypesMod.ClassMethod = js.native
-  def classProperty(): babelDashTypesLib.babelDashTypesMod.ClassProperty = js.native
-  def classProperty(key: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.ClassProperty = js.native
+  ): ClassMethod = js.native
+  def classProperty(): ClassProperty = js.native
+  def classProperty(key: Identifier): ClassProperty = js.native
+  def classProperty(key: Identifier, value: Expression): ClassProperty = js.native
+  def classProperty(key: Identifier, value: Expression, typeAnnotation: TypeAnnotation): ClassProperty = js.native
   def classProperty(
-    key: babelDashTypesLib.babelDashTypesMod.Identifier,
-    value: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.ClassProperty = js.native
-  def classProperty(
-    key: babelDashTypesLib.babelDashTypesMod.Identifier,
-    value: babelDashTypesLib.babelDashTypesMod.Expression,
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.ClassProperty = js.native
-  def classProperty(
-    key: babelDashTypesLib.babelDashTypesMod.Identifier,
-    value: babelDashTypesLib.babelDashTypesMod.Expression,
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TypeAnnotation,
-    decorators: js.Array[babelDashTypesLib.babelDashTypesMod.Decorator]
-  ): babelDashTypesLib.babelDashTypesMod.ClassProperty = js.native
-  def conditionalExpression(): babelDashTypesLib.babelDashTypesMod.ConditionalExpression = js.native
-  def conditionalExpression(test: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.ConditionalExpression = js.native
-  def conditionalExpression(
-    test: babelDashTypesLib.babelDashTypesMod.Expression,
-    consequent: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.ConditionalExpression = js.native
-  def conditionalExpression(
-    test: babelDashTypesLib.babelDashTypesMod.Expression,
-    consequent: babelDashTypesLib.babelDashTypesMod.Expression,
-    alternate: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.ConditionalExpression = js.native
-  def continueStatement(): babelDashTypesLib.babelDashTypesMod.ContinueStatement = js.native
-  def continueStatement(label: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.ContinueStatement = js.native
-  def debuggerStatement(): babelDashTypesLib.babelDashTypesMod.DebuggerStatement = js.native
-  def declareClass(): babelDashTypesLib.babelDashTypesMod.DeclareClass = js.native
-  def declareClass(id: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.DeclareClass = js.native
+    key: Identifier,
+    value: Expression,
+    typeAnnotation: TypeAnnotation,
+    decorators: js.Array[Decorator]
+  ): ClassProperty = js.native
+  def conditionalExpression(): ConditionalExpression = js.native
+  def conditionalExpression(test: Expression): ConditionalExpression = js.native
+  def conditionalExpression(test: Expression, consequent: Expression): ConditionalExpression = js.native
+  def conditionalExpression(test: Expression, consequent: Expression, alternate: Expression): ConditionalExpression = js.native
+  def continueStatement(): ContinueStatement = js.native
+  def continueStatement(label: Identifier): ContinueStatement = js.native
+  def debuggerStatement(): DebuggerStatement = js.native
+  def declareClass(): DeclareClass = js.native
+  def declareClass(id: Identifier): DeclareClass = js.native
+  def declareClass(id: Identifier, typeParameters: TypeParameterDeclaration): DeclareClass = js.native
+  def declareClass(id: Identifier, typeParameters: TypeParameterDeclaration, _extends: js.Array[InterfaceExtends]): DeclareClass = js.native
   def declareClass(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration
-  ): babelDashTypesLib.babelDashTypesMod.DeclareClass = js.native
-  def declareClass(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    _extends: js.Array[babelDashTypesLib.babelDashTypesMod.InterfaceExtends]
-  ): babelDashTypesLib.babelDashTypesMod.DeclareClass = js.native
-  def declareClass(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    _extends: js.Array[babelDashTypesLib.babelDashTypesMod.InterfaceExtends],
-    body: babelDashTypesLib.babelDashTypesMod.ObjectTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.DeclareClass = js.native
-  def declareFunction(): babelDashTypesLib.babelDashTypesMod.DeclareFunction = js.native
-  def declareFunction(id: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.DeclareFunction = js.native
-  def declareInterface(): babelDashTypesLib.babelDashTypesMod.DeclareInterface = js.native
-  def declareInterface(id: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.DeclareInterface = js.native
+    id: Identifier,
+    typeParameters: TypeParameterDeclaration,
+    _extends: js.Array[InterfaceExtends],
+    body: ObjectTypeAnnotation
+  ): DeclareClass = js.native
+  def declareFunction(): DeclareFunction = js.native
+  def declareFunction(id: Identifier): DeclareFunction = js.native
+  def declareInterface(): DeclareInterface = js.native
+  def declareInterface(id: Identifier): DeclareInterface = js.native
+  def declareInterface(id: Identifier, typeParameters: TypeParameterDeclaration): DeclareInterface = js.native
+  def declareInterface(id: Identifier, typeParameters: TypeParameterDeclaration, _extends: js.Array[InterfaceExtends]): DeclareInterface = js.native
   def declareInterface(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration
-  ): babelDashTypesLib.babelDashTypesMod.DeclareInterface = js.native
-  def declareInterface(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    _extends: js.Array[babelDashTypesLib.babelDashTypesMod.InterfaceExtends]
-  ): babelDashTypesLib.babelDashTypesMod.DeclareInterface = js.native
-  def declareInterface(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    _extends: js.Array[babelDashTypesLib.babelDashTypesMod.InterfaceExtends],
-    body: babelDashTypesLib.babelDashTypesMod.ObjectTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.DeclareInterface = js.native
-  def declareModule(): babelDashTypesLib.babelDashTypesMod.DeclareModule = js.native
-  def declareModule(id: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.DeclareModule = js.native
-  def declareModule(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    body: babelDashTypesLib.babelDashTypesMod.BlockStatement
-  ): babelDashTypesLib.babelDashTypesMod.DeclareModule = js.native
-  def declareModule(id: babelDashTypesLib.babelDashTypesMod.StringLiteral): babelDashTypesLib.babelDashTypesMod.DeclareModule = js.native
-  def declareModule(
-    id: babelDashTypesLib.babelDashTypesMod.StringLiteral,
-    body: babelDashTypesLib.babelDashTypesMod.BlockStatement
-  ): babelDashTypesLib.babelDashTypesMod.DeclareModule = js.native
-  def declareTypeAlias(): babelDashTypesLib.babelDashTypesMod.DeclareTypeAlias = js.native
-  def declareTypeAlias(id: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.DeclareTypeAlias = js.native
-  def declareTypeAlias(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration
-  ): babelDashTypesLib.babelDashTypesMod.DeclareTypeAlias = js.native
-  def declareTypeAlias(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    right: babelDashTypesLib.babelDashTypesMod.FlowTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.DeclareTypeAlias = js.native
-  def declareVariable(): babelDashTypesLib.babelDashTypesMod.DeclareVariable = js.native
-  def declareVariable(id: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.DeclareVariable = js.native
-  def decorator(): babelDashTypesLib.babelDashTypesMod.Decorator = js.native
-  def decorator(expression: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.Decorator = js.native
-  def directive(): babelDashTypesLib.babelDashTypesMod.Directive = js.native
-  def directive(value: babelDashTypesLib.babelDashTypesMod.DirectiveLiteral): babelDashTypesLib.babelDashTypesMod.Directive = js.native
-  def directiveLiteral(): babelDashTypesLib.babelDashTypesMod.DirectiveLiteral = js.native
-  def directiveLiteral(value: java.lang.String): babelDashTypesLib.babelDashTypesMod.DirectiveLiteral = js.native
-  def doExpression(): babelDashTypesLib.babelDashTypesMod.DoExpression = js.native
-  def doExpression(body: babelDashTypesLib.babelDashTypesMod.BlockStatement): babelDashTypesLib.babelDashTypesMod.DoExpression = js.native
-  def doWhileStatement(): babelDashTypesLib.babelDashTypesMod.DoWhileStatement = js.native
-  def doWhileStatement(test: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.DoWhileStatement = js.native
-  def doWhileStatement(
-    test: babelDashTypesLib.babelDashTypesMod.Expression,
-    body: babelDashTypesLib.babelDashTypesMod.Statement
-  ): babelDashTypesLib.babelDashTypesMod.DoWhileStatement = js.native
-  def emptyStatement(): babelDashTypesLib.babelDashTypesMod.EmptyStatement = js.native
-  def existentialTypeParam(): babelDashTypesLib.babelDashTypesMod.ExistentialTypeParam = js.native
-  def exportAllDeclaration(): babelDashTypesLib.babelDashTypesMod.ExportAllDeclaration = js.native
-  def exportAllDeclaration(source: babelDashTypesLib.babelDashTypesMod.StringLiteral): babelDashTypesLib.babelDashTypesMod.ExportAllDeclaration = js.native
-  def exportDefaultDeclaration(): babelDashTypesLib.babelDashTypesMod.ExportDefaultDeclaration = js.native
-  def exportDefaultDeclaration(declaration: babelDashTypesLib.babelDashTypesMod.ClassDeclaration): babelDashTypesLib.babelDashTypesMod.ExportDefaultDeclaration = js.native
-  def exportDefaultDeclaration(declaration: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.ExportDefaultDeclaration = js.native
-  def exportDefaultDeclaration(declaration: babelDashTypesLib.babelDashTypesMod.FunctionDeclaration): babelDashTypesLib.babelDashTypesMod.ExportDefaultDeclaration = js.native
-  def exportDefaultSpecifier(): babelDashTypesLib.babelDashTypesMod.ExportDefaultSpecifier = js.native
-  def exportDefaultSpecifier(exported: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.ExportDefaultSpecifier = js.native
-  def exportNamedDeclaration(): babelDashTypesLib.babelDashTypesMod.ExportNamedDeclaration = js.native
-  def exportNamedDeclaration(declaration: babelDashTypesLib.babelDashTypesMod.Declaration): babelDashTypesLib.babelDashTypesMod.ExportNamedDeclaration = js.native
-  def exportNamedDeclaration(
-    declaration: babelDashTypesLib.babelDashTypesMod.Declaration,
-    specifiers: js.Array[babelDashTypesLib.babelDashTypesMod.ExportSpecifier]
-  ): babelDashTypesLib.babelDashTypesMod.ExportNamedDeclaration = js.native
-  def exportNamedDeclaration(
-    declaration: babelDashTypesLib.babelDashTypesMod.Declaration,
-    specifiers: js.Array[babelDashTypesLib.babelDashTypesMod.ExportSpecifier],
-    source: babelDashTypesLib.babelDashTypesMod.StringLiteral
-  ): babelDashTypesLib.babelDashTypesMod.ExportNamedDeclaration = js.native
-  def exportNamespaceSpecifier(): babelDashTypesLib.babelDashTypesMod.ExportNamespaceSpecifier = js.native
-  def exportNamespaceSpecifier(exported: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.ExportNamespaceSpecifier = js.native
-  def exportSpecifier(): babelDashTypesLib.babelDashTypesMod.ExportSpecifier = js.native
-  def exportSpecifier(local: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.ExportSpecifier = js.native
-  def exportSpecifier(
-    local: babelDashTypesLib.babelDashTypesMod.Identifier,
-    exported: babelDashTypesLib.babelDashTypesMod.Identifier
-  ): babelDashTypesLib.babelDashTypesMod.ExportSpecifier = js.native
-  def expressionStatement(): babelDashTypesLib.babelDashTypesMod.ExpressionStatement = js.native
-  def expressionStatement(expression: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.ExpressionStatement = js.native
-  def file(): babelDashTypesLib.babelDashTypesMod.File = js.native
-  def file(program: babelDashTypesLib.babelDashTypesMod.Program): babelDashTypesLib.babelDashTypesMod.File = js.native
-  def file(
-    program: babelDashTypesLib.babelDashTypesMod.Program,
-    comments: js.Array[babelDashTypesLib.babelDashTypesMod.Comment]
-  ): babelDashTypesLib.babelDashTypesMod.File = js.native
-  def file(
-    program: babelDashTypesLib.babelDashTypesMod.Program,
-    comments: js.Array[babelDashTypesLib.babelDashTypesMod.Comment],
-    tokens: js.Array[_]
-  ): babelDashTypesLib.babelDashTypesMod.File = js.native
-  def forInStatement(): babelDashTypesLib.babelDashTypesMod.ForInStatement = js.native
-  def forInStatement(left: babelDashTypesLib.babelDashTypesMod.LVal): babelDashTypesLib.babelDashTypesMod.ForInStatement = js.native
-  def forInStatement(
-    left: babelDashTypesLib.babelDashTypesMod.LVal,
-    right: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.ForInStatement = js.native
-  def forInStatement(
-    left: babelDashTypesLib.babelDashTypesMod.LVal,
-    right: babelDashTypesLib.babelDashTypesMod.Expression,
-    body: babelDashTypesLib.babelDashTypesMod.Statement
-  ): babelDashTypesLib.babelDashTypesMod.ForInStatement = js.native
-  def forInStatement(left: babelDashTypesLib.babelDashTypesMod.VariableDeclaration): babelDashTypesLib.babelDashTypesMod.ForInStatement = js.native
-  def forInStatement(
-    left: babelDashTypesLib.babelDashTypesMod.VariableDeclaration,
-    right: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.ForInStatement = js.native
-  def forInStatement(
-    left: babelDashTypesLib.babelDashTypesMod.VariableDeclaration,
-    right: babelDashTypesLib.babelDashTypesMod.Expression,
-    body: babelDashTypesLib.babelDashTypesMod.Statement
-  ): babelDashTypesLib.babelDashTypesMod.ForInStatement = js.native
-  def forOfStatement(): babelDashTypesLib.babelDashTypesMod.ForOfStatement = js.native
-  def forOfStatement(left: babelDashTypesLib.babelDashTypesMod.LVal): babelDashTypesLib.babelDashTypesMod.ForOfStatement = js.native
-  def forOfStatement(
-    left: babelDashTypesLib.babelDashTypesMod.LVal,
-    right: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.ForOfStatement = js.native
-  def forOfStatement(
-    left: babelDashTypesLib.babelDashTypesMod.LVal,
-    right: babelDashTypesLib.babelDashTypesMod.Expression,
-    body: babelDashTypesLib.babelDashTypesMod.Statement
-  ): babelDashTypesLib.babelDashTypesMod.ForOfStatement = js.native
-  def forOfStatement(left: babelDashTypesLib.babelDashTypesMod.VariableDeclaration): babelDashTypesLib.babelDashTypesMod.ForOfStatement = js.native
-  def forOfStatement(
-    left: babelDashTypesLib.babelDashTypesMod.VariableDeclaration,
-    right: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.ForOfStatement = js.native
-  def forOfStatement(
-    left: babelDashTypesLib.babelDashTypesMod.VariableDeclaration,
-    right: babelDashTypesLib.babelDashTypesMod.Expression,
-    body: babelDashTypesLib.babelDashTypesMod.Statement
-  ): babelDashTypesLib.babelDashTypesMod.ForOfStatement = js.native
-  def forStatement(): babelDashTypesLib.babelDashTypesMod.ForStatement = js.native
-  def forStatement(init: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.ForStatement = js.native
-  def forStatement(
-    init: babelDashTypesLib.babelDashTypesMod.Expression,
-    test: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.ForStatement = js.native
-  def forStatement(
-    init: babelDashTypesLib.babelDashTypesMod.Expression,
-    test: babelDashTypesLib.babelDashTypesMod.Expression,
-    update: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.ForStatement = js.native
-  def forStatement(
-    init: babelDashTypesLib.babelDashTypesMod.Expression,
-    test: babelDashTypesLib.babelDashTypesMod.Expression,
-    update: babelDashTypesLib.babelDashTypesMod.Expression,
-    body: babelDashTypesLib.babelDashTypesMod.Statement
-  ): babelDashTypesLib.babelDashTypesMod.ForStatement = js.native
-  def forStatement(init: babelDashTypesLib.babelDashTypesMod.VariableDeclaration): babelDashTypesLib.babelDashTypesMod.ForStatement = js.native
-  def forStatement(
-    init: babelDashTypesLib.babelDashTypesMod.VariableDeclaration,
-    test: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.ForStatement = js.native
-  def forStatement(
-    init: babelDashTypesLib.babelDashTypesMod.VariableDeclaration,
-    test: babelDashTypesLib.babelDashTypesMod.Expression,
-    update: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.ForStatement = js.native
-  def forStatement(
-    init: babelDashTypesLib.babelDashTypesMod.VariableDeclaration,
-    test: babelDashTypesLib.babelDashTypesMod.Expression,
-    update: babelDashTypesLib.babelDashTypesMod.Expression,
-    body: babelDashTypesLib.babelDashTypesMod.Statement
-  ): babelDashTypesLib.babelDashTypesMod.ForStatement = js.native
-  def functionDeclaration(): babelDashTypesLib.babelDashTypesMod.FunctionDeclaration = js.native
-  def functionDeclaration(id: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.FunctionDeclaration = js.native
+    id: Identifier,
+    typeParameters: TypeParameterDeclaration,
+    _extends: js.Array[InterfaceExtends],
+    body: ObjectTypeAnnotation
+  ): DeclareInterface = js.native
+  def declareModule(): DeclareModule = js.native
+  def declareModule(id: Identifier): DeclareModule = js.native
+  def declareModule(id: Identifier, body: BlockStatement): DeclareModule = js.native
+  def declareModule(id: StringLiteral): DeclareModule = js.native
+  def declareModule(id: StringLiteral, body: BlockStatement): DeclareModule = js.native
+  def declareTypeAlias(): DeclareTypeAlias = js.native
+  def declareTypeAlias(id: Identifier): DeclareTypeAlias = js.native
+  def declareTypeAlias(id: Identifier, typeParameters: TypeParameterDeclaration): DeclareTypeAlias = js.native
+  def declareTypeAlias(id: Identifier, typeParameters: TypeParameterDeclaration, right: FlowTypeAnnotation): DeclareTypeAlias = js.native
+  def declareVariable(): DeclareVariable = js.native
+  def declareVariable(id: Identifier): DeclareVariable = js.native
+  def decorator(): Decorator = js.native
+  def decorator(expression: Expression): Decorator = js.native
+  def directive(): Directive = js.native
+  def directive(value: DirectiveLiteral): Directive = js.native
+  def directiveLiteral(): DirectiveLiteral = js.native
+  def directiveLiteral(value: java.lang.String): DirectiveLiteral = js.native
+  def doExpression(): DoExpression = js.native
+  def doExpression(body: BlockStatement): DoExpression = js.native
+  def doWhileStatement(): DoWhileStatement = js.native
+  def doWhileStatement(test: Expression): DoWhileStatement = js.native
+  def doWhileStatement(test: Expression, body: Statement): DoWhileStatement = js.native
+  def emptyStatement(): EmptyStatement = js.native
+  def existentialTypeParam(): ExistentialTypeParam = js.native
+  def exportAllDeclaration(): ExportAllDeclaration = js.native
+  def exportAllDeclaration(source: StringLiteral): ExportAllDeclaration = js.native
+  def exportDefaultDeclaration(): ExportDefaultDeclaration = js.native
+  def exportDefaultDeclaration(declaration: ClassDeclaration): ExportDefaultDeclaration = js.native
+  def exportDefaultDeclaration(declaration: Expression): ExportDefaultDeclaration = js.native
+  def exportDefaultDeclaration(declaration: FunctionDeclaration): ExportDefaultDeclaration = js.native
+  def exportDefaultSpecifier(): ExportDefaultSpecifier = js.native
+  def exportDefaultSpecifier(exported: Identifier): ExportDefaultSpecifier = js.native
+  def exportNamedDeclaration(): ExportNamedDeclaration = js.native
+  def exportNamedDeclaration(declaration: Declaration): ExportNamedDeclaration = js.native
+  def exportNamedDeclaration(declaration: Declaration, specifiers: js.Array[ExportSpecifier]): ExportNamedDeclaration = js.native
+  def exportNamedDeclaration(declaration: Declaration, specifiers: js.Array[ExportSpecifier], source: StringLiteral): ExportNamedDeclaration = js.native
+  def exportNamespaceSpecifier(): ExportNamespaceSpecifier = js.native
+  def exportNamespaceSpecifier(exported: Identifier): ExportNamespaceSpecifier = js.native
+  def exportSpecifier(): ExportSpecifier = js.native
+  def exportSpecifier(local: Identifier): ExportSpecifier = js.native
+  def exportSpecifier(local: Identifier, exported: Identifier): ExportSpecifier = js.native
+  def expressionStatement(): ExpressionStatement = js.native
+  def expressionStatement(expression: Expression): ExpressionStatement = js.native
+  def file(): File = js.native
+  def file(program: Program): File = js.native
+  def file(program: Program, comments: js.Array[Comment]): File = js.native
+  def file(program: Program, comments: js.Array[Comment], tokens: js.Array[_]): File = js.native
+  def forInStatement(): ForInStatement = js.native
+  def forInStatement(left: LVal): ForInStatement = js.native
+  def forInStatement(left: LVal, right: Expression): ForInStatement = js.native
+  def forInStatement(left: LVal, right: Expression, body: Statement): ForInStatement = js.native
+  def forInStatement(left: VariableDeclaration): ForInStatement = js.native
+  def forInStatement(left: VariableDeclaration, right: Expression): ForInStatement = js.native
+  def forInStatement(left: VariableDeclaration, right: Expression, body: Statement): ForInStatement = js.native
+  def forOfStatement(): ForOfStatement = js.native
+  def forOfStatement(left: LVal): ForOfStatement = js.native
+  def forOfStatement(left: LVal, right: Expression): ForOfStatement = js.native
+  def forOfStatement(left: LVal, right: Expression, body: Statement): ForOfStatement = js.native
+  def forOfStatement(left: VariableDeclaration): ForOfStatement = js.native
+  def forOfStatement(left: VariableDeclaration, right: Expression): ForOfStatement = js.native
+  def forOfStatement(left: VariableDeclaration, right: Expression, body: Statement): ForOfStatement = js.native
+  def forStatement(): ForStatement = js.native
+  def forStatement(init: Expression): ForStatement = js.native
+  def forStatement(init: Expression, test: Expression): ForStatement = js.native
+  def forStatement(init: Expression, test: Expression, update: Expression): ForStatement = js.native
+  def forStatement(init: Expression, test: Expression, update: Expression, body: Statement): ForStatement = js.native
+  def forStatement(init: VariableDeclaration): ForStatement = js.native
+  def forStatement(init: VariableDeclaration, test: Expression): ForStatement = js.native
+  def forStatement(init: VariableDeclaration, test: Expression, update: Expression): ForStatement = js.native
+  def forStatement(init: VariableDeclaration, test: Expression, update: Expression, body: Statement): ForStatement = js.native
+  def functionDeclaration(): FunctionDeclaration = js.native
+  def functionDeclaration(id: Identifier): FunctionDeclaration = js.native
+  def functionDeclaration(id: Identifier, params: js.Array[LVal]): FunctionDeclaration = js.native
+  def functionDeclaration(id: Identifier, params: js.Array[LVal], body: BlockStatement): FunctionDeclaration = js.native
+  def functionDeclaration(id: Identifier, params: js.Array[LVal], body: BlockStatement, generator: scala.Boolean): FunctionDeclaration = js.native
   def functionDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal]
-  ): babelDashTypesLib.babelDashTypesMod.FunctionDeclaration = js.native
-  def functionDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal],
-    body: babelDashTypesLib.babelDashTypesMod.BlockStatement
-  ): babelDashTypesLib.babelDashTypesMod.FunctionDeclaration = js.native
-  def functionDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal],
-    body: babelDashTypesLib.babelDashTypesMod.BlockStatement,
-    generator: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.FunctionDeclaration = js.native
-  def functionDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal],
-    body: babelDashTypesLib.babelDashTypesMod.BlockStatement,
+    id: Identifier,
+    params: js.Array[LVal],
+    body: BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.FunctionDeclaration = js.native
-  def functionExpression(): babelDashTypesLib.babelDashTypesMod.FunctionExpression = js.native
-  def functionExpression(id: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.FunctionExpression = js.native
+  ): FunctionDeclaration = js.native
+  def functionExpression(): FunctionExpression = js.native
+  def functionExpression(id: Identifier): FunctionExpression = js.native
+  def functionExpression(id: Identifier, params: js.Array[LVal]): FunctionExpression = js.native
+  def functionExpression(id: Identifier, params: js.Array[LVal], body: BlockStatement): FunctionExpression = js.native
+  def functionExpression(id: Identifier, params: js.Array[LVal], body: BlockStatement, generator: scala.Boolean): FunctionExpression = js.native
   def functionExpression(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal]
-  ): babelDashTypesLib.babelDashTypesMod.FunctionExpression = js.native
-  def functionExpression(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal],
-    body: babelDashTypesLib.babelDashTypesMod.BlockStatement
-  ): babelDashTypesLib.babelDashTypesMod.FunctionExpression = js.native
-  def functionExpression(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal],
-    body: babelDashTypesLib.babelDashTypesMod.BlockStatement,
-    generator: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.FunctionExpression = js.native
-  def functionExpression(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal],
-    body: babelDashTypesLib.babelDashTypesMod.BlockStatement,
+    id: Identifier,
+    params: js.Array[LVal],
+    body: BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.FunctionExpression = js.native
-  def functionTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.FunctionTypeAnnotation = js.native
-  def functionTypeAnnotation(typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration): babelDashTypesLib.babelDashTypesMod.FunctionTypeAnnotation = js.native
+  ): FunctionExpression = js.native
+  def functionTypeAnnotation(): FunctionTypeAnnotation = js.native
+  def functionTypeAnnotation(typeParameters: TypeParameterDeclaration): FunctionTypeAnnotation = js.native
+  def functionTypeAnnotation(typeParameters: TypeParameterDeclaration, params: js.Array[FunctionTypeParam]): FunctionTypeAnnotation = js.native
   def functionTypeAnnotation(
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.FunctionTypeParam]
-  ): babelDashTypesLib.babelDashTypesMod.FunctionTypeAnnotation = js.native
+    typeParameters: TypeParameterDeclaration,
+    params: js.Array[FunctionTypeParam],
+    rest: FunctionTypeParam
+  ): FunctionTypeAnnotation = js.native
   def functionTypeAnnotation(
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.FunctionTypeParam],
-    rest: babelDashTypesLib.babelDashTypesMod.FunctionTypeParam
-  ): babelDashTypesLib.babelDashTypesMod.FunctionTypeAnnotation = js.native
-  def functionTypeAnnotation(
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.FunctionTypeParam],
-    rest: babelDashTypesLib.babelDashTypesMod.FunctionTypeParam,
-    returnType: babelDashTypesLib.babelDashTypesMod.FlowTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.FunctionTypeAnnotation = js.native
-  def functionTypeParam(): babelDashTypesLib.babelDashTypesMod.FunctionTypeParam = js.native
-  def functionTypeParam(name: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.FunctionTypeParam = js.native
-  def functionTypeParam(
-    name: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.FlowTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.FunctionTypeParam = js.native
-  def genericTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.GenericTypeAnnotation = js.native
-  def genericTypeAnnotation(id: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.GenericTypeAnnotation = js.native
-  def genericTypeAnnotation(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterInstantiation
-  ): babelDashTypesLib.babelDashTypesMod.GenericTypeAnnotation = js.native
-  def identifier(): babelDashTypesLib.babelDashTypesMod.Identifier = js.native
-  def identifier(name: java.lang.String): babelDashTypesLib.babelDashTypesMod.Identifier = js.native
-  def ifStatement(): babelDashTypesLib.babelDashTypesMod.IfStatement = js.native
-  def ifStatement(test: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.IfStatement = js.native
-  def ifStatement(
-    test: babelDashTypesLib.babelDashTypesMod.Expression,
-    consequent: babelDashTypesLib.babelDashTypesMod.Statement
-  ): babelDashTypesLib.babelDashTypesMod.IfStatement = js.native
-  def ifStatement(
-    test: babelDashTypesLib.babelDashTypesMod.Expression,
-    consequent: babelDashTypesLib.babelDashTypesMod.Statement,
-    alternate: babelDashTypesLib.babelDashTypesMod.Statement
-  ): babelDashTypesLib.babelDashTypesMod.IfStatement = js.native
-  def importDeclaration(): babelDashTypesLib.babelDashTypesMod.ImportDeclaration = js.native
+    typeParameters: TypeParameterDeclaration,
+    params: js.Array[FunctionTypeParam],
+    rest: FunctionTypeParam,
+    returnType: FlowTypeAnnotation
+  ): FunctionTypeAnnotation = js.native
+  def functionTypeParam(): FunctionTypeParam = js.native
+  def functionTypeParam(name: Identifier): FunctionTypeParam = js.native
+  def functionTypeParam(name: Identifier, typeAnnotation: FlowTypeAnnotation): FunctionTypeParam = js.native
+  def genericTypeAnnotation(): GenericTypeAnnotation = js.native
+  def genericTypeAnnotation(id: Identifier): GenericTypeAnnotation = js.native
+  def genericTypeAnnotation(id: Identifier, typeParameters: TypeParameterInstantiation): GenericTypeAnnotation = js.native
+  def identifier(): Identifier = js.native
+  def identifier(name: java.lang.String): Identifier = js.native
+  def ifStatement(): IfStatement = js.native
+  def ifStatement(test: Expression): IfStatement = js.native
+  def ifStatement(test: Expression, consequent: Statement): IfStatement = js.native
+  def ifStatement(test: Expression, consequent: Statement, alternate: Statement): IfStatement = js.native
+  def importDeclaration(): ImportDeclaration = js.native
+  def importDeclaration(specifiers: js.Array[ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier]): ImportDeclaration = js.native
   def importDeclaration(
-    specifiers: js.Array[
-      babelDashTypesLib.babelDashTypesMod.ImportSpecifier | babelDashTypesLib.babelDashTypesMod.ImportDefaultSpecifier | babelDashTypesLib.babelDashTypesMod.ImportNamespaceSpecifier
-    ]
-  ): babelDashTypesLib.babelDashTypesMod.ImportDeclaration = js.native
-  def importDeclaration(
-    specifiers: js.Array[
-      babelDashTypesLib.babelDashTypesMod.ImportSpecifier | babelDashTypesLib.babelDashTypesMod.ImportDefaultSpecifier | babelDashTypesLib.babelDashTypesMod.ImportNamespaceSpecifier
-    ],
-    source: babelDashTypesLib.babelDashTypesMod.StringLiteral
-  ): babelDashTypesLib.babelDashTypesMod.ImportDeclaration = js.native
-  def importDefaultSpecifier(): babelDashTypesLib.babelDashTypesMod.ImportDefaultSpecifier = js.native
-  def importDefaultSpecifier(local: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.ImportDefaultSpecifier = js.native
-  def importNamespaceSpecifier(): babelDashTypesLib.babelDashTypesMod.ImportNamespaceSpecifier = js.native
-  def importNamespaceSpecifier(local: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.ImportNamespaceSpecifier = js.native
-  def importSpecifier(): babelDashTypesLib.babelDashTypesMod.ImportSpecifier = js.native
-  def importSpecifier(local: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.ImportSpecifier = js.native
-  def importSpecifier(
-    local: babelDashTypesLib.babelDashTypesMod.Identifier,
-    imported: babelDashTypesLib.babelDashTypesMod.Identifier
-  ): babelDashTypesLib.babelDashTypesMod.ImportSpecifier = js.native
-  def interfaceDeclaration(): babelDashTypesLib.babelDashTypesMod.InterfaceDeclaration = js.native
-  def interfaceDeclaration(id: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.InterfaceDeclaration = js.native
+    specifiers: js.Array[ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier],
+    source: StringLiteral
+  ): ImportDeclaration = js.native
+  def importDefaultSpecifier(): ImportDefaultSpecifier = js.native
+  def importDefaultSpecifier(local: Identifier): ImportDefaultSpecifier = js.native
+  def importNamespaceSpecifier(): ImportNamespaceSpecifier = js.native
+  def importNamespaceSpecifier(local: Identifier): ImportNamespaceSpecifier = js.native
+  def importSpecifier(): ImportSpecifier = js.native
+  def importSpecifier(local: Identifier): ImportSpecifier = js.native
+  def importSpecifier(local: Identifier, imported: Identifier): ImportSpecifier = js.native
+  def interfaceDeclaration(): InterfaceDeclaration = js.native
+  def interfaceDeclaration(id: Identifier): InterfaceDeclaration = js.native
+  def interfaceDeclaration(id: Identifier, typeParameters: TypeParameterDeclaration): InterfaceDeclaration = js.native
+  def interfaceDeclaration(id: Identifier, typeParameters: TypeParameterDeclaration, _extends: js.Array[InterfaceExtends]): InterfaceDeclaration = js.native
   def interfaceDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration
-  ): babelDashTypesLib.babelDashTypesMod.InterfaceDeclaration = js.native
-  def interfaceDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    _extends: js.Array[babelDashTypesLib.babelDashTypesMod.InterfaceExtends]
-  ): babelDashTypesLib.babelDashTypesMod.InterfaceDeclaration = js.native
-  def interfaceDeclaration(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    _extends: js.Array[babelDashTypesLib.babelDashTypesMod.InterfaceExtends],
-    body: babelDashTypesLib.babelDashTypesMod.ObjectTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.InterfaceDeclaration = js.native
-  def interfaceExtends(): babelDashTypesLib.babelDashTypesMod.InterfaceExtends = js.native
-  def interfaceExtends(id: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.InterfaceExtends = js.native
-  def interfaceExtends(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterInstantiation
-  ): babelDashTypesLib.babelDashTypesMod.InterfaceExtends = js.native
-  def intersectionTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.IntersectionTypeAnnotation = js.native
-  def intersectionTypeAnnotation(types: js.Array[babelDashTypesLib.babelDashTypesMod.FlowTypeAnnotation]): babelDashTypesLib.babelDashTypesMod.IntersectionTypeAnnotation = js.native
+    id: Identifier,
+    typeParameters: TypeParameterDeclaration,
+    _extends: js.Array[InterfaceExtends],
+    body: ObjectTypeAnnotation
+  ): InterfaceDeclaration = js.native
+  def interfaceExtends(): InterfaceExtends = js.native
+  def interfaceExtends(id: Identifier): InterfaceExtends = js.native
+  def interfaceExtends(id: Identifier, typeParameters: TypeParameterInstantiation): InterfaceExtends = js.native
+  def intersectionTypeAnnotation(): IntersectionTypeAnnotation = js.native
+  def intersectionTypeAnnotation(types: js.Array[FlowTypeAnnotation]): IntersectionTypeAnnotation = js.native
   def isAnyTypeAnnotation(): /* is babel-types.babel-types.AnyTypeAnnotation */ scala.Boolean = js.native
   def isAnyTypeAnnotation(node: js.Object): /* is babel-types.babel-types.AnyTypeAnnotation */ scala.Boolean = js.native
   def isAnyTypeAnnotation(node: js.Object, opts: js.Object): /* is babel-types.babel-types.AnyTypeAnnotation */ scala.Boolean = js.native
@@ -3160,660 +2796,408 @@ object ^ extends js.Object {
   def isYieldExpression(node: js.Object, opts: js.Object): /* is babel-types.babel-types.YieldExpression */ scala.Boolean = js.native
   def isYieldExpression(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is babel-types.babel-types.YieldExpression */ scala.Boolean = js.native
   def isYieldExpression(node: scala.Null, opts: js.Object): /* is babel-types.babel-types.YieldExpression */ scala.Boolean = js.native
-  def jSXAttribute(): babelDashTypesLib.babelDashTypesMod.JSXAttribute = js.native
-  def jSXAttribute(name: babelDashTypesLib.babelDashTypesMod.JSXIdentifier): babelDashTypesLib.babelDashTypesMod.JSXAttribute = js.native
-  def jSXAttribute(
-    name: babelDashTypesLib.babelDashTypesMod.JSXIdentifier,
-    value: babelDashTypesLib.babelDashTypesMod.JSXElement
-  ): babelDashTypesLib.babelDashTypesMod.JSXAttribute = js.native
-  def jSXAttribute(
-    name: babelDashTypesLib.babelDashTypesMod.JSXIdentifier,
-    value: babelDashTypesLib.babelDashTypesMod.JSXExpressionContainer
-  ): babelDashTypesLib.babelDashTypesMod.JSXAttribute = js.native
-  def jSXAttribute(
-    name: babelDashTypesLib.babelDashTypesMod.JSXIdentifier,
-    value: babelDashTypesLib.babelDashTypesMod.StringLiteral
-  ): babelDashTypesLib.babelDashTypesMod.JSXAttribute = js.native
-  def jSXAttribute(name: babelDashTypesLib.babelDashTypesMod.JSXNamespacedName): babelDashTypesLib.babelDashTypesMod.JSXAttribute = js.native
-  def jSXAttribute(
-    name: babelDashTypesLib.babelDashTypesMod.JSXNamespacedName,
-    value: babelDashTypesLib.babelDashTypesMod.JSXElement
-  ): babelDashTypesLib.babelDashTypesMod.JSXAttribute = js.native
-  def jSXAttribute(
-    name: babelDashTypesLib.babelDashTypesMod.JSXNamespacedName,
-    value: babelDashTypesLib.babelDashTypesMod.JSXExpressionContainer
-  ): babelDashTypesLib.babelDashTypesMod.JSXAttribute = js.native
-  def jSXAttribute(
-    name: babelDashTypesLib.babelDashTypesMod.JSXNamespacedName,
-    value: babelDashTypesLib.babelDashTypesMod.StringLiteral
-  ): babelDashTypesLib.babelDashTypesMod.JSXAttribute = js.native
-  def jSXClosingElement(): babelDashTypesLib.babelDashTypesMod.JSXClosingElement = js.native
-  def jSXClosingElement(name: babelDashTypesLib.babelDashTypesMod.JSXIdentifier): babelDashTypesLib.babelDashTypesMod.JSXClosingElement = js.native
-  def jSXClosingElement(name: babelDashTypesLib.babelDashTypesMod.JSXMemberExpression): babelDashTypesLib.babelDashTypesMod.JSXClosingElement = js.native
-  def jSXElement(): babelDashTypesLib.babelDashTypesMod.JSXElement = js.native
-  def jSXElement(openingElement: babelDashTypesLib.babelDashTypesMod.JSXOpeningElement): babelDashTypesLib.babelDashTypesMod.JSXElement = js.native
+  def jSXAttribute(): JSXAttribute = js.native
+  def jSXAttribute(name: JSXIdentifier): JSXAttribute = js.native
+  def jSXAttribute(name: JSXIdentifier, value: JSXElement): JSXAttribute = js.native
+  def jSXAttribute(name: JSXIdentifier, value: JSXExpressionContainer): JSXAttribute = js.native
+  def jSXAttribute(name: JSXIdentifier, value: StringLiteral): JSXAttribute = js.native
+  def jSXAttribute(name: JSXNamespacedName): JSXAttribute = js.native
+  def jSXAttribute(name: JSXNamespacedName, value: JSXElement): JSXAttribute = js.native
+  def jSXAttribute(name: JSXNamespacedName, value: JSXExpressionContainer): JSXAttribute = js.native
+  def jSXAttribute(name: JSXNamespacedName, value: StringLiteral): JSXAttribute = js.native
+  def jSXClosingElement(): JSXClosingElement = js.native
+  def jSXClosingElement(name: JSXIdentifier): JSXClosingElement = js.native
+  def jSXClosingElement(name: JSXMemberExpression): JSXClosingElement = js.native
+  def jSXElement(): JSXElement = js.native
+  def jSXElement(openingElement: JSXOpeningElement): JSXElement = js.native
+  def jSXElement(openingElement: JSXOpeningElement, closingElement: JSXClosingElement): JSXElement = js.native
   def jSXElement(
-    openingElement: babelDashTypesLib.babelDashTypesMod.JSXOpeningElement,
-    closingElement: babelDashTypesLib.babelDashTypesMod.JSXClosingElement
-  ): babelDashTypesLib.babelDashTypesMod.JSXElement = js.native
+    openingElement: JSXOpeningElement,
+    closingElement: JSXClosingElement,
+    children: js.Array[JSXElement | JSXExpressionContainer | JSXText]
+  ): JSXElement = js.native
   def jSXElement(
-    openingElement: babelDashTypesLib.babelDashTypesMod.JSXOpeningElement,
-    closingElement: babelDashTypesLib.babelDashTypesMod.JSXClosingElement,
-    children: js.Array[
-      babelDashTypesLib.babelDashTypesMod.JSXElement | babelDashTypesLib.babelDashTypesMod.JSXExpressionContainer | babelDashTypesLib.babelDashTypesMod.JSXText
-    ]
-  ): babelDashTypesLib.babelDashTypesMod.JSXElement = js.native
-  def jSXElement(
-    openingElement: babelDashTypesLib.babelDashTypesMod.JSXOpeningElement,
-    closingElement: babelDashTypesLib.babelDashTypesMod.JSXClosingElement,
-    children: js.Array[
-      babelDashTypesLib.babelDashTypesMod.JSXElement | babelDashTypesLib.babelDashTypesMod.JSXExpressionContainer | babelDashTypesLib.babelDashTypesMod.JSXText
-    ],
+    openingElement: JSXOpeningElement,
+    closingElement: JSXClosingElement,
+    children: js.Array[JSXElement | JSXExpressionContainer | JSXText],
     selfClosing: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.JSXElement = js.native
-  def jSXEmptyExpression(): babelDashTypesLib.babelDashTypesMod.JSXEmptyExpression = js.native
-  def jSXExpressionContainer(): babelDashTypesLib.babelDashTypesMod.JSXExpressionContainer = js.native
-  def jSXExpressionContainer(expression: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.JSXExpressionContainer = js.native
-  def jSXIdentifier(): babelDashTypesLib.babelDashTypesMod.JSXIdentifier = js.native
-  def jSXIdentifier(name: java.lang.String): babelDashTypesLib.babelDashTypesMod.JSXIdentifier = js.native
-  def jSXMemberExpression(): babelDashTypesLib.babelDashTypesMod.JSXMemberExpression = js.native
-  def jSXMemberExpression(`object`: babelDashTypesLib.babelDashTypesMod.JSXIdentifier): babelDashTypesLib.babelDashTypesMod.JSXMemberExpression = js.native
-  def jSXMemberExpression(
-    `object`: babelDashTypesLib.babelDashTypesMod.JSXIdentifier,
-    property: babelDashTypesLib.babelDashTypesMod.JSXIdentifier
-  ): babelDashTypesLib.babelDashTypesMod.JSXMemberExpression = js.native
-  def jSXMemberExpression(`object`: babelDashTypesLib.babelDashTypesMod.JSXMemberExpression): babelDashTypesLib.babelDashTypesMod.JSXMemberExpression = js.native
-  def jSXMemberExpression(
-    `object`: babelDashTypesLib.babelDashTypesMod.JSXMemberExpression,
-    property: babelDashTypesLib.babelDashTypesMod.JSXIdentifier
-  ): babelDashTypesLib.babelDashTypesMod.JSXMemberExpression = js.native
-  def jSXNamespacedName(): babelDashTypesLib.babelDashTypesMod.JSXNamespacedName = js.native
-  def jSXNamespacedName(namespace: babelDashTypesLib.babelDashTypesMod.JSXIdentifier): babelDashTypesLib.babelDashTypesMod.JSXNamespacedName = js.native
-  def jSXNamespacedName(
-    namespace: babelDashTypesLib.babelDashTypesMod.JSXIdentifier,
-    name: babelDashTypesLib.babelDashTypesMod.JSXIdentifier
-  ): babelDashTypesLib.babelDashTypesMod.JSXNamespacedName = js.native
-  def jSXOpeningElement(): babelDashTypesLib.babelDashTypesMod.JSXOpeningElement = js.native
-  def jSXOpeningElement(name: babelDashTypesLib.babelDashTypesMod.JSXIdentifier): babelDashTypesLib.babelDashTypesMod.JSXOpeningElement = js.native
-  def jSXOpeningElement(
-    name: babelDashTypesLib.babelDashTypesMod.JSXIdentifier,
-    attributes: js.Array[babelDashTypesLib.babelDashTypesMod.JSXAttribute]
-  ): babelDashTypesLib.babelDashTypesMod.JSXOpeningElement = js.native
-  def jSXOpeningElement(
-    name: babelDashTypesLib.babelDashTypesMod.JSXIdentifier,
-    attributes: js.Array[babelDashTypesLib.babelDashTypesMod.JSXAttribute],
-    selfClosing: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.JSXOpeningElement = js.native
-  def jSXOpeningElement(name: babelDashTypesLib.babelDashTypesMod.JSXMemberExpression): babelDashTypesLib.babelDashTypesMod.JSXOpeningElement = js.native
-  def jSXOpeningElement(
-    name: babelDashTypesLib.babelDashTypesMod.JSXMemberExpression,
-    attributes: js.Array[babelDashTypesLib.babelDashTypesMod.JSXAttribute]
-  ): babelDashTypesLib.babelDashTypesMod.JSXOpeningElement = js.native
-  def jSXOpeningElement(
-    name: babelDashTypesLib.babelDashTypesMod.JSXMemberExpression,
-    attributes: js.Array[babelDashTypesLib.babelDashTypesMod.JSXAttribute],
-    selfClosing: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.JSXOpeningElement = js.native
-  def jSXSpreadAttribute(): babelDashTypesLib.babelDashTypesMod.JSXSpreadAttribute = js.native
-  def jSXSpreadAttribute(argument: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.JSXSpreadAttribute = js.native
-  def jSXText(): babelDashTypesLib.babelDashTypesMod.JSXText = js.native
-  def jSXText(value: java.lang.String): babelDashTypesLib.babelDashTypesMod.JSXText = js.native
-  def labeledStatement(): babelDashTypesLib.babelDashTypesMod.LabeledStatement = js.native
-  def labeledStatement(label: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.LabeledStatement = js.native
-  def labeledStatement(
-    label: babelDashTypesLib.babelDashTypesMod.Identifier,
-    body: babelDashTypesLib.babelDashTypesMod.Statement
-  ): babelDashTypesLib.babelDashTypesMod.LabeledStatement = js.native
-  def logicalExpression(): babelDashTypesLib.babelDashTypesMod.LogicalExpression = js.native
+  ): JSXElement = js.native
+  def jSXEmptyExpression(): JSXEmptyExpression = js.native
+  def jSXExpressionContainer(): JSXExpressionContainer = js.native
+  def jSXExpressionContainer(expression: Expression): JSXExpressionContainer = js.native
+  def jSXIdentifier(): JSXIdentifier = js.native
+  def jSXIdentifier(name: java.lang.String): JSXIdentifier = js.native
+  def jSXMemberExpression(): JSXMemberExpression = js.native
+  def jSXMemberExpression(`object`: JSXIdentifier): JSXMemberExpression = js.native
+  def jSXMemberExpression(`object`: JSXIdentifier, property: JSXIdentifier): JSXMemberExpression = js.native
+  def jSXMemberExpression(`object`: JSXMemberExpression): JSXMemberExpression = js.native
+  def jSXMemberExpression(`object`: JSXMemberExpression, property: JSXIdentifier): JSXMemberExpression = js.native
+  def jSXNamespacedName(): JSXNamespacedName = js.native
+  def jSXNamespacedName(namespace: JSXIdentifier): JSXNamespacedName = js.native
+  def jSXNamespacedName(namespace: JSXIdentifier, name: JSXIdentifier): JSXNamespacedName = js.native
+  def jSXOpeningElement(): JSXOpeningElement = js.native
+  def jSXOpeningElement(name: JSXIdentifier): JSXOpeningElement = js.native
+  def jSXOpeningElement(name: JSXIdentifier, attributes: js.Array[JSXAttribute]): JSXOpeningElement = js.native
+  def jSXOpeningElement(name: JSXIdentifier, attributes: js.Array[JSXAttribute], selfClosing: scala.Boolean): JSXOpeningElement = js.native
+  def jSXOpeningElement(name: JSXMemberExpression): JSXOpeningElement = js.native
+  def jSXOpeningElement(name: JSXMemberExpression, attributes: js.Array[JSXAttribute]): JSXOpeningElement = js.native
+  def jSXOpeningElement(name: JSXMemberExpression, attributes: js.Array[JSXAttribute], selfClosing: scala.Boolean): JSXOpeningElement = js.native
+  def jSXSpreadAttribute(): JSXSpreadAttribute = js.native
+  def jSXSpreadAttribute(argument: Expression): JSXSpreadAttribute = js.native
+  def jSXText(): JSXText = js.native
+  def jSXText(value: java.lang.String): JSXText = js.native
+  def labeledStatement(): LabeledStatement = js.native
+  def labeledStatement(label: Identifier): LabeledStatement = js.native
+  def labeledStatement(label: Identifier, body: Statement): LabeledStatement = js.native
+  def logicalExpression(): LogicalExpression = js.native
   @JSName("logicalExpression")
-  def `logicalExpression_&&`(operator: babelDashTypesLib.babelDashTypesLibStrings.`&&`): babelDashTypesLib.babelDashTypesMod.LogicalExpression = js.native
+  def `logicalExpression_&&`(operator: babelDashTypesLib.babelDashTypesLibStrings.`&&`): LogicalExpression = js.native
   @JSName("logicalExpression")
-  def `logicalExpression_&&`(
-    operator: babelDashTypesLib.babelDashTypesLibStrings.`&&`,
-    left: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.LogicalExpression = js.native
+  def `logicalExpression_&&`(operator: babelDashTypesLib.babelDashTypesLibStrings.`&&`, left: Expression): LogicalExpression = js.native
   @JSName("logicalExpression")
-  def `logicalExpression_&&`(
-    operator: babelDashTypesLib.babelDashTypesLibStrings.`&&`,
-    left: babelDashTypesLib.babelDashTypesMod.Expression,
-    right: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.LogicalExpression = js.native
+  def `logicalExpression_&&`(operator: babelDashTypesLib.babelDashTypesLibStrings.`&&`, left: Expression, right: Expression): LogicalExpression = js.native
   @JSName("logicalExpression")
-  def `logicalExpression_||`(operator: babelDashTypesLib.babelDashTypesLibStrings.`||`): babelDashTypesLib.babelDashTypesMod.LogicalExpression = js.native
+  def `logicalExpression_||`(operator: babelDashTypesLib.babelDashTypesLibStrings.`||`): LogicalExpression = js.native
   @JSName("logicalExpression")
-  def `logicalExpression_||`(
-    operator: babelDashTypesLib.babelDashTypesLibStrings.`||`,
-    left: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.LogicalExpression = js.native
+  def `logicalExpression_||`(operator: babelDashTypesLib.babelDashTypesLibStrings.`||`, left: Expression): LogicalExpression = js.native
   @JSName("logicalExpression")
-  def `logicalExpression_||`(
-    operator: babelDashTypesLib.babelDashTypesLibStrings.`||`,
-    left: babelDashTypesLib.babelDashTypesMod.Expression,
-    right: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.LogicalExpression = js.native
-  def memberExpression(): babelDashTypesLib.babelDashTypesMod.MemberExpression = js.native
-  def memberExpression(`object`: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.MemberExpression = js.native
-  def memberExpression(
-    `object`: babelDashTypesLib.babelDashTypesMod.Expression,
-    property: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.MemberExpression = js.native
-  def memberExpression(
-    `object`: babelDashTypesLib.babelDashTypesMod.Expression,
-    property: babelDashTypesLib.babelDashTypesMod.Expression,
-    computed: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.MemberExpression = js.native
-  def memberExpression(`object`: babelDashTypesLib.babelDashTypesMod.Super): babelDashTypesLib.babelDashTypesMod.MemberExpression = js.native
-  def memberExpression(
-    `object`: babelDashTypesLib.babelDashTypesMod.Super,
-    property: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.MemberExpression = js.native
-  def memberExpression(
-    `object`: babelDashTypesLib.babelDashTypesMod.Super,
-    property: babelDashTypesLib.babelDashTypesMod.Expression,
-    computed: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.MemberExpression = js.native
-  def metaProperty(): babelDashTypesLib.babelDashTypesMod.MetaProperty = js.native
-  def metaProperty(meta: java.lang.String): babelDashTypesLib.babelDashTypesMod.MetaProperty = js.native
-  def metaProperty(meta: java.lang.String, property: java.lang.String): babelDashTypesLib.babelDashTypesMod.MetaProperty = js.native
-  def mixedTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.MixedTypeAnnotation = js.native
-  def newExpression(): babelDashTypesLib.babelDashTypesMod.NewExpression = js.native
-  def newExpression(callee: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.NewExpression = js.native
-  def newExpression(
-    callee: babelDashTypesLib.babelDashTypesMod.Expression,
-    _arguments: js.Array[
-      babelDashTypesLib.babelDashTypesMod.Expression | babelDashTypesLib.babelDashTypesMod.SpreadElement
-    ]
-  ): babelDashTypesLib.babelDashTypesMod.NewExpression = js.native
-  def newExpression(callee: babelDashTypesLib.babelDashTypesMod.Super): babelDashTypesLib.babelDashTypesMod.NewExpression = js.native
-  def newExpression(
-    callee: babelDashTypesLib.babelDashTypesMod.Super,
-    _arguments: js.Array[
-      babelDashTypesLib.babelDashTypesMod.Expression | babelDashTypesLib.babelDashTypesMod.SpreadElement
-    ]
-  ): babelDashTypesLib.babelDashTypesMod.NewExpression = js.native
-  def noop(): babelDashTypesLib.babelDashTypesMod.Noop = js.native
-  def nullLiteral(): babelDashTypesLib.babelDashTypesMod.NullLiteral = js.native
-  def nullLiteralTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.NullLiteralTypeAnnotation = js.native
-  def nullableTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.NullableTypeAnnotation = js.native
-  def nullableTypeAnnotation(typeAnnotation: babelDashTypesLib.babelDashTypesMod.FlowTypeAnnotation): babelDashTypesLib.babelDashTypesMod.NullableTypeAnnotation = js.native
-  def numberTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.NumberTypeAnnotation = js.native
-  def numericLiteral(): babelDashTypesLib.babelDashTypesMod.NumericLiteral = js.native
-  def numericLiteral(value: scala.Double): babelDashTypesLib.babelDashTypesMod.NumericLiteral = js.native
-  def numericLiteralTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.NumericLiteralTypeAnnotation = js.native
-  def objectExpression(): babelDashTypesLib.babelDashTypesMod.ObjectExpression = js.native
-  def objectExpression(
-    properties: js.Array[
-      babelDashTypesLib.babelDashTypesMod.ObjectProperty | babelDashTypesLib.babelDashTypesMod.ObjectMethod | babelDashTypesLib.babelDashTypesMod.SpreadProperty
-    ]
-  ): babelDashTypesLib.babelDashTypesMod.ObjectExpression = js.native
-  def objectMethod(): babelDashTypesLib.babelDashTypesMod.ObjectMethod = js.native
+  def `logicalExpression_||`(operator: babelDashTypesLib.babelDashTypesLibStrings.`||`, left: Expression, right: Expression): LogicalExpression = js.native
+  def memberExpression(): MemberExpression = js.native
+  def memberExpression(`object`: Expression): MemberExpression = js.native
+  def memberExpression(`object`: Expression, property: Expression): MemberExpression = js.native
+  def memberExpression(`object`: Expression, property: Expression, computed: scala.Boolean): MemberExpression = js.native
+  def memberExpression(`object`: Super): MemberExpression = js.native
+  def memberExpression(`object`: Super, property: Expression): MemberExpression = js.native
+  def memberExpression(`object`: Super, property: Expression, computed: scala.Boolean): MemberExpression = js.native
+  def metaProperty(): MetaProperty = js.native
+  def metaProperty(meta: java.lang.String): MetaProperty = js.native
+  def metaProperty(meta: java.lang.String, property: java.lang.String): MetaProperty = js.native
+  def mixedTypeAnnotation(): MixedTypeAnnotation = js.native
+  def newExpression(): NewExpression = js.native
+  def newExpression(callee: Expression): NewExpression = js.native
+  def newExpression(callee: Expression, _arguments: js.Array[Expression | SpreadElement]): NewExpression = js.native
+  def newExpression(callee: Super): NewExpression = js.native
+  def newExpression(callee: Super, _arguments: js.Array[Expression | SpreadElement]): NewExpression = js.native
+  def noop(): Noop = js.native
+  def nullLiteral(): NullLiteral = js.native
+  def nullLiteralTypeAnnotation(): NullLiteralTypeAnnotation = js.native
+  def nullableTypeAnnotation(): NullableTypeAnnotation = js.native
+  def nullableTypeAnnotation(typeAnnotation: FlowTypeAnnotation): NullableTypeAnnotation = js.native
+  def numberTypeAnnotation(): NumberTypeAnnotation = js.native
+  def numericLiteral(): NumericLiteral = js.native
+  def numericLiteral(value: scala.Double): NumericLiteral = js.native
+  def numericLiteralTypeAnnotation(): NumericLiteralTypeAnnotation = js.native
+  def objectExpression(): ObjectExpression = js.native
+  def objectExpression(properties: js.Array[ObjectProperty | ObjectMethod | SpreadProperty]): ObjectExpression = js.native
+  def objectMethod(): ObjectMethod = js.native
   @JSName("objectMethod")
-  def objectMethod_get(kind: babelDashTypesLib.babelDashTypesLibStrings.get): babelDashTypesLib.babelDashTypesMod.ObjectMethod = js.native
+  def objectMethod_get(kind: babelDashTypesLib.babelDashTypesLibStrings.get): ObjectMethod = js.native
+  @JSName("objectMethod")
+  def objectMethod_get(kind: babelDashTypesLib.babelDashTypesLibStrings.get, key: Expression): ObjectMethod = js.native
+  @JSName("objectMethod")
+  def objectMethod_get(kind: babelDashTypesLib.babelDashTypesLibStrings.get, key: Expression, params: js.Array[LVal]): ObjectMethod = js.native
   @JSName("objectMethod")
   def objectMethod_get(
     kind: babelDashTypesLib.babelDashTypesLibStrings.get,
-    key: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.ObjectMethod = js.native
+    key: Expression,
+    params: js.Array[LVal],
+    body: BlockStatement
+  ): ObjectMethod = js.native
   @JSName("objectMethod")
   def objectMethod_get(
     kind: babelDashTypesLib.babelDashTypesLibStrings.get,
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal]
-  ): babelDashTypesLib.babelDashTypesMod.ObjectMethod = js.native
-  @JSName("objectMethod")
-  def objectMethod_get(
-    kind: babelDashTypesLib.babelDashTypesLibStrings.get,
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal],
-    body: babelDashTypesLib.babelDashTypesMod.BlockStatement
-  ): babelDashTypesLib.babelDashTypesMod.ObjectMethod = js.native
-  @JSName("objectMethod")
-  def objectMethod_get(
-    kind: babelDashTypesLib.babelDashTypesLibStrings.get,
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal],
-    body: babelDashTypesLib.babelDashTypesMod.BlockStatement,
+    key: Expression,
+    params: js.Array[LVal],
+    body: BlockStatement,
     computed: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.ObjectMethod = js.native
+  ): ObjectMethod = js.native
   @JSName("objectMethod")
-  def objectMethod_method(kind: babelDashTypesLib.babelDashTypesLibStrings.method): babelDashTypesLib.babelDashTypesMod.ObjectMethod = js.native
+  def objectMethod_method(kind: babelDashTypesLib.babelDashTypesLibStrings.method): ObjectMethod = js.native
+  @JSName("objectMethod")
+  def objectMethod_method(kind: babelDashTypesLib.babelDashTypesLibStrings.method, key: Expression): ObjectMethod = js.native
+  @JSName("objectMethod")
+  def objectMethod_method(kind: babelDashTypesLib.babelDashTypesLibStrings.method, key: Expression, params: js.Array[LVal]): ObjectMethod = js.native
   @JSName("objectMethod")
   def objectMethod_method(
     kind: babelDashTypesLib.babelDashTypesLibStrings.method,
-    key: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.ObjectMethod = js.native
+    key: Expression,
+    params: js.Array[LVal],
+    body: BlockStatement
+  ): ObjectMethod = js.native
   @JSName("objectMethod")
   def objectMethod_method(
     kind: babelDashTypesLib.babelDashTypesLibStrings.method,
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal]
-  ): babelDashTypesLib.babelDashTypesMod.ObjectMethod = js.native
-  @JSName("objectMethod")
-  def objectMethod_method(
-    kind: babelDashTypesLib.babelDashTypesLibStrings.method,
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal],
-    body: babelDashTypesLib.babelDashTypesMod.BlockStatement
-  ): babelDashTypesLib.babelDashTypesMod.ObjectMethod = js.native
-  @JSName("objectMethod")
-  def objectMethod_method(
-    kind: babelDashTypesLib.babelDashTypesLibStrings.method,
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal],
-    body: babelDashTypesLib.babelDashTypesMod.BlockStatement,
+    key: Expression,
+    params: js.Array[LVal],
+    body: BlockStatement,
     computed: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.ObjectMethod = js.native
+  ): ObjectMethod = js.native
   @JSName("objectMethod")
-  def objectMethod_set(kind: babelDashTypesLib.babelDashTypesLibStrings.set): babelDashTypesLib.babelDashTypesMod.ObjectMethod = js.native
+  def objectMethod_set(kind: babelDashTypesLib.babelDashTypesLibStrings.set): ObjectMethod = js.native
   @JSName("objectMethod")
-  def objectMethod_set(
-    kind: babelDashTypesLib.babelDashTypesLibStrings.set,
-    key: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.ObjectMethod = js.native
+  def objectMethod_set(kind: babelDashTypesLib.babelDashTypesLibStrings.set, key: Expression): ObjectMethod = js.native
   @JSName("objectMethod")
-  def objectMethod_set(
-    kind: babelDashTypesLib.babelDashTypesLibStrings.set,
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal]
-  ): babelDashTypesLib.babelDashTypesMod.ObjectMethod = js.native
+  def objectMethod_set(kind: babelDashTypesLib.babelDashTypesLibStrings.set, key: Expression, params: js.Array[LVal]): ObjectMethod = js.native
   @JSName("objectMethod")
   def objectMethod_set(
     kind: babelDashTypesLib.babelDashTypesLibStrings.set,
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal],
-    body: babelDashTypesLib.babelDashTypesMod.BlockStatement
-  ): babelDashTypesLib.babelDashTypesMod.ObjectMethod = js.native
+    key: Expression,
+    params: js.Array[LVal],
+    body: BlockStatement
+  ): ObjectMethod = js.native
   @JSName("objectMethod")
   def objectMethod_set(
     kind: babelDashTypesLib.babelDashTypesLibStrings.set,
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    params: js.Array[babelDashTypesLib.babelDashTypesMod.LVal],
-    body: babelDashTypesLib.babelDashTypesMod.BlockStatement,
+    key: Expression,
+    params: js.Array[LVal],
+    body: BlockStatement,
     computed: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.ObjectMethod = js.native
-  def objectPattern(): babelDashTypesLib.babelDashTypesMod.ObjectPattern = js.native
-  def objectPattern(
-    properties: js.Array[
-      babelDashTypesLib.babelDashTypesMod.AssignmentProperty | babelDashTypesLib.babelDashTypesMod.RestProperty
-    ]
-  ): babelDashTypesLib.babelDashTypesMod.ObjectPattern = js.native
-  def objectPattern(
-    properties: js.Array[
-      babelDashTypesLib.babelDashTypesMod.AssignmentProperty | babelDashTypesLib.babelDashTypesMod.RestProperty
-    ],
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.ObjectPattern = js.native
-  def objectProperty(): babelDashTypesLib.babelDashTypesMod.ObjectProperty = js.native
-  def objectProperty(key: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.ObjectProperty = js.native
+  ): ObjectMethod = js.native
+  def objectPattern(): ObjectPattern = js.native
+  def objectPattern(properties: js.Array[AssignmentProperty | RestProperty]): ObjectPattern = js.native
+  def objectPattern(properties: js.Array[AssignmentProperty | RestProperty], typeAnnotation: TypeAnnotation): ObjectPattern = js.native
+  def objectProperty(): ObjectProperty = js.native
+  def objectProperty(key: Expression): ObjectProperty = js.native
+  def objectProperty(key: Expression, value: Expression): ObjectProperty = js.native
+  def objectProperty(key: Expression, value: Expression, computed: scala.Boolean): ObjectProperty = js.native
+  def objectProperty(key: Expression, value: Expression, computed: scala.Boolean, shorthand: scala.Boolean): ObjectProperty = js.native
   def objectProperty(
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    value: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.ObjectProperty = js.native
-  def objectProperty(
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    value: babelDashTypesLib.babelDashTypesMod.Expression,
-    computed: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.ObjectProperty = js.native
-  def objectProperty(
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    value: babelDashTypesLib.babelDashTypesMod.Expression,
-    computed: scala.Boolean,
-    shorthand: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.ObjectProperty = js.native
-  def objectProperty(
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    value: babelDashTypesLib.babelDashTypesMod.Expression,
+    key: Expression,
+    value: Expression,
     computed: scala.Boolean,
     shorthand: scala.Boolean,
-    decorators: js.Array[babelDashTypesLib.babelDashTypesMod.Decorator]
-  ): babelDashTypesLib.babelDashTypesMod.ObjectProperty = js.native
-  def objectTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.ObjectTypeAnnotation = js.native
-  def objectTypeAnnotation(properties: js.Array[babelDashTypesLib.babelDashTypesMod.ObjectTypeProperty]): babelDashTypesLib.babelDashTypesMod.ObjectTypeAnnotation = js.native
+    decorators: js.Array[Decorator]
+  ): ObjectProperty = js.native
+  def objectTypeAnnotation(): ObjectTypeAnnotation = js.native
+  def objectTypeAnnotation(properties: js.Array[ObjectTypeProperty]): ObjectTypeAnnotation = js.native
+  def objectTypeAnnotation(properties: js.Array[ObjectTypeProperty], indexers: js.Array[ObjectTypeIndexer]): ObjectTypeAnnotation = js.native
   def objectTypeAnnotation(
-    properties: js.Array[babelDashTypesLib.babelDashTypesMod.ObjectTypeProperty],
-    indexers: js.Array[babelDashTypesLib.babelDashTypesMod.ObjectTypeIndexer]
-  ): babelDashTypesLib.babelDashTypesMod.ObjectTypeAnnotation = js.native
-  def objectTypeAnnotation(
-    properties: js.Array[babelDashTypesLib.babelDashTypesMod.ObjectTypeProperty],
-    indexers: js.Array[babelDashTypesLib.babelDashTypesMod.ObjectTypeIndexer],
-    callProperties: js.Array[babelDashTypesLib.babelDashTypesMod.ObjectTypeCallProperty]
-  ): babelDashTypesLib.babelDashTypesMod.ObjectTypeAnnotation = js.native
-  def objectTypeCallProperty(): babelDashTypesLib.babelDashTypesMod.ObjectTypeCallProperty = js.native
-  def objectTypeCallProperty(value: babelDashTypesLib.babelDashTypesMod.FlowTypeAnnotation): babelDashTypesLib.babelDashTypesMod.ObjectTypeCallProperty = js.native
-  def objectTypeIndexer(): babelDashTypesLib.babelDashTypesMod.ObjectTypeIndexer = js.native
-  def objectTypeIndexer(id: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.ObjectTypeIndexer = js.native
-  def objectTypeIndexer(
-    id: babelDashTypesLib.babelDashTypesMod.Expression,
-    key: babelDashTypesLib.babelDashTypesMod.FlowTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.ObjectTypeIndexer = js.native
-  def objectTypeIndexer(
-    id: babelDashTypesLib.babelDashTypesMod.Expression,
-    key: babelDashTypesLib.babelDashTypesMod.FlowTypeAnnotation,
-    value: babelDashTypesLib.babelDashTypesMod.FlowTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.ObjectTypeIndexer = js.native
-  def objectTypeProperty(): babelDashTypesLib.babelDashTypesMod.ObjectTypeProperty = js.native
-  def objectTypeProperty(key: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.ObjectTypeProperty = js.native
-  def objectTypeProperty(
-    key: babelDashTypesLib.babelDashTypesMod.Expression,
-    value: babelDashTypesLib.babelDashTypesMod.FlowTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.ObjectTypeProperty = js.native
-  def parenthesizedExpression(): babelDashTypesLib.babelDashTypesMod.ParenthesizedExpression = js.native
-  def parenthesizedExpression(expression: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.ParenthesizedExpression = js.native
-  def program(): babelDashTypesLib.babelDashTypesMod.Program = js.native
-  def program(
-    body: js.Array[
-      babelDashTypesLib.babelDashTypesMod.Statement | babelDashTypesLib.babelDashTypesMod.ModuleDeclaration
-    ]
-  ): babelDashTypesLib.babelDashTypesMod.Program = js.native
-  def program(
-    body: js.Array[
-      babelDashTypesLib.babelDashTypesMod.Statement | babelDashTypesLib.babelDashTypesMod.ModuleDeclaration
-    ],
-    directives: js.Array[babelDashTypesLib.babelDashTypesMod.Directive]
-  ): babelDashTypesLib.babelDashTypesMod.Program = js.native
-  def qualifiedTypeIdentifier(): babelDashTypesLib.babelDashTypesMod.QualifiedTypeIdentifier = js.native
-  def qualifiedTypeIdentifier(id: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.QualifiedTypeIdentifier = js.native
-  def qualifiedTypeIdentifier(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    qualification: babelDashTypesLib.babelDashTypesMod.Identifier
-  ): babelDashTypesLib.babelDashTypesMod.QualifiedTypeIdentifier = js.native
-  def qualifiedTypeIdentifier(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    qualification: babelDashTypesLib.babelDashTypesMod.QualifiedTypeIdentifier
-  ): babelDashTypesLib.babelDashTypesMod.QualifiedTypeIdentifier = js.native
-  def regExpLiteral(): babelDashTypesLib.babelDashTypesMod.RegExpLiteral = js.native
-  def regExpLiteral(pattern: java.lang.String): babelDashTypesLib.babelDashTypesMod.RegExpLiteral = js.native
-  def regExpLiteral(pattern: java.lang.String, flags: java.lang.String): babelDashTypesLib.babelDashTypesMod.RegExpLiteral = js.native
-  def restElement(): babelDashTypesLib.babelDashTypesMod.RestElement = js.native
-  def restElement(argument: babelDashTypesLib.babelDashTypesMod.LVal): babelDashTypesLib.babelDashTypesMod.RestElement = js.native
-  def restElement(
-    argument: babelDashTypesLib.babelDashTypesMod.LVal,
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.TypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.RestElement = js.native
-  def restProperty(): babelDashTypesLib.babelDashTypesMod.RestProperty = js.native
-  def restProperty(argument: babelDashTypesLib.babelDashTypesMod.LVal): babelDashTypesLib.babelDashTypesMod.RestProperty = js.native
-  def returnStatement(): babelDashTypesLib.babelDashTypesMod.ReturnStatement = js.native
-  def returnStatement(argument: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.ReturnStatement = js.native
-  def sequenceExpression(): babelDashTypesLib.babelDashTypesMod.SequenceExpression = js.native
-  def sequenceExpression(expressions: js.Array[babelDashTypesLib.babelDashTypesMod.Expression]): babelDashTypesLib.babelDashTypesMod.SequenceExpression = js.native
-  def spreadElement(): babelDashTypesLib.babelDashTypesMod.SpreadElement = js.native
-  def spreadElement(argument: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.SpreadElement = js.native
-  def spreadProperty(): babelDashTypesLib.babelDashTypesMod.SpreadProperty = js.native
-  def spreadProperty(argument: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.SpreadProperty = js.native
-  def stringLiteral(): babelDashTypesLib.babelDashTypesMod.StringLiteral = js.native
-  def stringLiteral(value: java.lang.String): babelDashTypesLib.babelDashTypesMod.StringLiteral = js.native
-  def stringLiteralTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.StringLiteralTypeAnnotation = js.native
-  def stringTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.StringTypeAnnotation = js.native
-  def switchCase(): babelDashTypesLib.babelDashTypesMod.SwitchCase = js.native
-  def switchCase(test: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.SwitchCase = js.native
-  def switchCase(
-    test: babelDashTypesLib.babelDashTypesMod.Expression,
-    consequent: js.Array[babelDashTypesLib.babelDashTypesMod.Statement]
-  ): babelDashTypesLib.babelDashTypesMod.SwitchCase = js.native
-  def switchStatement(): babelDashTypesLib.babelDashTypesMod.SwitchStatement = js.native
-  def switchStatement(discriminant: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.SwitchStatement = js.native
-  def switchStatement(
-    discriminant: babelDashTypesLib.babelDashTypesMod.Expression,
-    cases: js.Array[babelDashTypesLib.babelDashTypesMod.SwitchCase]
-  ): babelDashTypesLib.babelDashTypesMod.SwitchStatement = js.native
-  def taggedTemplateExpression(): babelDashTypesLib.babelDashTypesMod.TaggedTemplateExpression = js.native
-  def taggedTemplateExpression(tag: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.TaggedTemplateExpression = js.native
-  def taggedTemplateExpression(
-    tag: babelDashTypesLib.babelDashTypesMod.Expression,
-    quasi: babelDashTypesLib.babelDashTypesMod.TemplateLiteral
-  ): babelDashTypesLib.babelDashTypesMod.TaggedTemplateExpression = js.native
-  def templateElement(): babelDashTypesLib.babelDashTypesMod.TemplateElement = js.native
-  def templateElement(value: babelDashTypesLib.Anon_CookedRaw): babelDashTypesLib.babelDashTypesMod.TemplateElement = js.native
-  def templateElement(value: babelDashTypesLib.Anon_CookedRaw, tail: scala.Boolean): babelDashTypesLib.babelDashTypesMod.TemplateElement = js.native
-  def templateLiteral(): babelDashTypesLib.babelDashTypesMod.TemplateLiteral = js.native
-  def templateLiteral(quasis: js.Array[babelDashTypesLib.babelDashTypesMod.TemplateElement]): babelDashTypesLib.babelDashTypesMod.TemplateLiteral = js.native
-  def templateLiteral(
-    quasis: js.Array[babelDashTypesLib.babelDashTypesMod.TemplateElement],
-    expressions: js.Array[babelDashTypesLib.babelDashTypesMod.Expression]
-  ): babelDashTypesLib.babelDashTypesMod.TemplateLiteral = js.native
-  def thisExpression(): babelDashTypesLib.babelDashTypesMod.ThisExpression = js.native
-  def thisTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.ThisTypeAnnotation = js.native
-  def throwStatement(): babelDashTypesLib.babelDashTypesMod.ThrowStatement = js.native
-  def throwStatement(argument: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.ThrowStatement = js.native
-  def tryStatement(): babelDashTypesLib.babelDashTypesMod.TryStatement = js.native
-  def tryStatement(block: babelDashTypesLib.babelDashTypesMod.BlockStatement): babelDashTypesLib.babelDashTypesMod.TryStatement = js.native
-  def tryStatement(
-    block: babelDashTypesLib.babelDashTypesMod.BlockStatement,
-    handler: babelDashTypesLib.babelDashTypesMod.CatchClause
-  ): babelDashTypesLib.babelDashTypesMod.TryStatement = js.native
-  def tryStatement(
-    block: babelDashTypesLib.babelDashTypesMod.BlockStatement,
-    handler: babelDashTypesLib.babelDashTypesMod.CatchClause,
-    finalizer: babelDashTypesLib.babelDashTypesMod.BlockStatement
-  ): babelDashTypesLib.babelDashTypesMod.TryStatement = js.native
-  def tupleTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.TupleTypeAnnotation = js.native
-  def tupleTypeAnnotation(types: js.Array[babelDashTypesLib.babelDashTypesMod.FlowTypeAnnotation]): babelDashTypesLib.babelDashTypesMod.TupleTypeAnnotation = js.native
-  def typeAlias(): babelDashTypesLib.babelDashTypesMod.TypeAlias = js.native
-  def typeAlias(id: babelDashTypesLib.babelDashTypesMod.Identifier): babelDashTypesLib.babelDashTypesMod.TypeAlias = js.native
-  def typeAlias(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration
-  ): babelDashTypesLib.babelDashTypesMod.TypeAlias = js.native
-  def typeAlias(
-    id: babelDashTypesLib.babelDashTypesMod.Identifier,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    right: babelDashTypesLib.babelDashTypesMod.FlowTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.TypeAlias = js.native
-  def typeAnnotation(): babelDashTypesLib.babelDashTypesMod.TypeAnnotation = js.native
-  def typeAnnotation(typeAnnotation: babelDashTypesLib.babelDashTypesMod.FlowTypeAnnotation): babelDashTypesLib.babelDashTypesMod.TypeAnnotation = js.native
-  def typeCastExpression(): babelDashTypesLib.babelDashTypesMod.TypeCastExpression = js.native
-  def typeCastExpression(expression: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.TypeCastExpression = js.native
-  def typeCastExpression(
-    expression: babelDashTypesLib.babelDashTypesMod.Expression,
-    typeAnnotation: babelDashTypesLib.babelDashTypesMod.FlowTypeAnnotation
-  ): babelDashTypesLib.babelDashTypesMod.TypeCastExpression = js.native
-  def typeParameter(): babelDashTypesLib.babelDashTypesMod.TypeParameter = js.native
-  def typeParameter(bound: babelDashTypesLib.babelDashTypesMod.TypeAnnotation): babelDashTypesLib.babelDashTypesMod.TypeParameter = js.native
-  def typeParameter(
-    bound: babelDashTypesLib.babelDashTypesMod.TypeAnnotation,
-    default_ : babelDashTypesLib.babelDashTypesMod.Flow
-  ): babelDashTypesLib.babelDashTypesMod.TypeParameter = js.native
-  def typeParameterDeclaration(): babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration = js.native
-  def typeParameterDeclaration(params: js.Array[babelDashTypesLib.babelDashTypesMod.Identifier]): babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration = js.native
-  def typeParameterInstantiation(): babelDashTypesLib.babelDashTypesMod.TypeParameterInstantiation = js.native
-  def typeParameterInstantiation(params: js.Array[babelDashTypesLib.babelDashTypesMod.FlowTypeAnnotation]): babelDashTypesLib.babelDashTypesMod.TypeParameterInstantiation = js.native
-  def typeofTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.TypeofTypeAnnotation = js.native
-  def typeofTypeAnnotation(argument: babelDashTypesLib.babelDashTypesMod.FlowTypeAnnotation): babelDashTypesLib.babelDashTypesMod.TypeofTypeAnnotation = js.native
-  def unaryExpression(): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
+    properties: js.Array[ObjectTypeProperty],
+    indexers: js.Array[ObjectTypeIndexer],
+    callProperties: js.Array[ObjectTypeCallProperty]
+  ): ObjectTypeAnnotation = js.native
+  def objectTypeCallProperty(): ObjectTypeCallProperty = js.native
+  def objectTypeCallProperty(value: FlowTypeAnnotation): ObjectTypeCallProperty = js.native
+  def objectTypeIndexer(): ObjectTypeIndexer = js.native
+  def objectTypeIndexer(id: Expression): ObjectTypeIndexer = js.native
+  def objectTypeIndexer(id: Expression, key: FlowTypeAnnotation): ObjectTypeIndexer = js.native
+  def objectTypeIndexer(id: Expression, key: FlowTypeAnnotation, value: FlowTypeAnnotation): ObjectTypeIndexer = js.native
+  def objectTypeProperty(): ObjectTypeProperty = js.native
+  def objectTypeProperty(key: Expression): ObjectTypeProperty = js.native
+  def objectTypeProperty(key: Expression, value: FlowTypeAnnotation): ObjectTypeProperty = js.native
+  def parenthesizedExpression(): ParenthesizedExpression = js.native
+  def parenthesizedExpression(expression: Expression): ParenthesizedExpression = js.native
+  def program(): Program = js.native
+  def program(body: js.Array[Statement | ModuleDeclaration]): Program = js.native
+  def program(body: js.Array[Statement | ModuleDeclaration], directives: js.Array[Directive]): Program = js.native
+  def qualifiedTypeIdentifier(): QualifiedTypeIdentifier = js.native
+  def qualifiedTypeIdentifier(id: Identifier): QualifiedTypeIdentifier = js.native
+  def qualifiedTypeIdentifier(id: Identifier, qualification: Identifier): QualifiedTypeIdentifier = js.native
+  def qualifiedTypeIdentifier(id: Identifier, qualification: QualifiedTypeIdentifier): QualifiedTypeIdentifier = js.native
+  def regExpLiteral(): RegExpLiteral = js.native
+  def regExpLiteral(pattern: java.lang.String): RegExpLiteral = js.native
+  def regExpLiteral(pattern: java.lang.String, flags: java.lang.String): RegExpLiteral = js.native
+  def restElement(): RestElement = js.native
+  def restElement(argument: LVal): RestElement = js.native
+  def restElement(argument: LVal, typeAnnotation: TypeAnnotation): RestElement = js.native
+  def restProperty(): RestProperty = js.native
+  def restProperty(argument: LVal): RestProperty = js.native
+  def returnStatement(): ReturnStatement = js.native
+  def returnStatement(argument: Expression): ReturnStatement = js.native
+  def sequenceExpression(): SequenceExpression = js.native
+  def sequenceExpression(expressions: js.Array[Expression]): SequenceExpression = js.native
+  def spreadElement(): SpreadElement = js.native
+  def spreadElement(argument: Expression): SpreadElement = js.native
+  def spreadProperty(): SpreadProperty = js.native
+  def spreadProperty(argument: Expression): SpreadProperty = js.native
+  def stringLiteral(): StringLiteral = js.native
+  def stringLiteral(value: java.lang.String): StringLiteral = js.native
+  def stringLiteralTypeAnnotation(): StringLiteralTypeAnnotation = js.native
+  def stringTypeAnnotation(): StringTypeAnnotation = js.native
+  def switchCase(): SwitchCase = js.native
+  def switchCase(test: Expression): SwitchCase = js.native
+  def switchCase(test: Expression, consequent: js.Array[Statement]): SwitchCase = js.native
+  def switchStatement(): SwitchStatement = js.native
+  def switchStatement(discriminant: Expression): SwitchStatement = js.native
+  def switchStatement(discriminant: Expression, cases: js.Array[SwitchCase]): SwitchStatement = js.native
+  def taggedTemplateExpression(): TaggedTemplateExpression = js.native
+  def taggedTemplateExpression(tag: Expression): TaggedTemplateExpression = js.native
+  def taggedTemplateExpression(tag: Expression, quasi: TemplateLiteral): TaggedTemplateExpression = js.native
+  def templateElement(): TemplateElement = js.native
+  def templateElement(value: babelDashTypesLib.Anon_CookedRaw): TemplateElement = js.native
+  def templateElement(value: babelDashTypesLib.Anon_CookedRaw, tail: scala.Boolean): TemplateElement = js.native
+  def templateLiteral(): TemplateLiteral = js.native
+  def templateLiteral(quasis: js.Array[TemplateElement]): TemplateLiteral = js.native
+  def templateLiteral(quasis: js.Array[TemplateElement], expressions: js.Array[Expression]): TemplateLiteral = js.native
+  def thisExpression(): ThisExpression = js.native
+  def thisTypeAnnotation(): ThisTypeAnnotation = js.native
+  def throwStatement(): ThrowStatement = js.native
+  def throwStatement(argument: Expression): ThrowStatement = js.native
+  def tryStatement(): TryStatement = js.native
+  def tryStatement(block: BlockStatement): TryStatement = js.native
+  def tryStatement(block: BlockStatement, handler: CatchClause): TryStatement = js.native
+  def tryStatement(block: BlockStatement, handler: CatchClause, finalizer: BlockStatement): TryStatement = js.native
+  def tupleTypeAnnotation(): TupleTypeAnnotation = js.native
+  def tupleTypeAnnotation(types: js.Array[FlowTypeAnnotation]): TupleTypeAnnotation = js.native
+  def typeAlias(): TypeAlias = js.native
+  def typeAlias(id: Identifier): TypeAlias = js.native
+  def typeAlias(id: Identifier, typeParameters: TypeParameterDeclaration): TypeAlias = js.native
+  def typeAlias(id: Identifier, typeParameters: TypeParameterDeclaration, right: FlowTypeAnnotation): TypeAlias = js.native
+  def typeAnnotation(): TypeAnnotation = js.native
+  def typeAnnotation(typeAnnotation: FlowTypeAnnotation): TypeAnnotation = js.native
+  def typeCastExpression(): TypeCastExpression = js.native
+  def typeCastExpression(expression: Expression): TypeCastExpression = js.native
+  def typeCastExpression(expression: Expression, typeAnnotation: FlowTypeAnnotation): TypeCastExpression = js.native
+  def typeParameter(): TypeParameter = js.native
+  def typeParameter(bound: TypeAnnotation): TypeParameter = js.native
+  def typeParameter(bound: TypeAnnotation, default_ : Flow): TypeParameter = js.native
+  def typeParameterDeclaration(): TypeParameterDeclaration = js.native
+  def typeParameterDeclaration(params: js.Array[Identifier]): TypeParameterDeclaration = js.native
+  def typeParameterInstantiation(): TypeParameterInstantiation = js.native
+  def typeParameterInstantiation(params: js.Array[FlowTypeAnnotation]): TypeParameterInstantiation = js.native
+  def typeofTypeAnnotation(): TypeofTypeAnnotation = js.native
+  def typeofTypeAnnotation(argument: FlowTypeAnnotation): TypeofTypeAnnotation = js.native
+  def unaryExpression(): UnaryExpression = js.native
   @JSName("unaryExpression")
-  def `unaryExpression_!`(operator: babelDashTypesLib.babelDashTypesLibStrings.`!`): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
+  def `unaryExpression_!`(operator: babelDashTypesLib.babelDashTypesLibStrings.`!`): UnaryExpression = js.native
+  @JSName("unaryExpression")
+  def `unaryExpression_!`(operator: babelDashTypesLib.babelDashTypesLibStrings.`!`, argument: Expression): UnaryExpression = js.native
   @JSName("unaryExpression")
   def `unaryExpression_!`(
     operator: babelDashTypesLib.babelDashTypesLibStrings.`!`,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_!`(
-    operator: babelDashTypesLib.babelDashTypesLibStrings.`!`,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression,
+    argument: Expression,
     prefix: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
+  ): UnaryExpression = js.native
   @JSName("unaryExpression")
-  def `unaryExpression_+`(operator: babelDashTypesLib.babelDashTypesLibStrings.`+`): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
+  def `unaryExpression_+`(operator: babelDashTypesLib.babelDashTypesLibStrings.`+`): UnaryExpression = js.native
+  @JSName("unaryExpression")
+  def `unaryExpression_+`(operator: babelDashTypesLib.babelDashTypesLibStrings.`+`, argument: Expression): UnaryExpression = js.native
   @JSName("unaryExpression")
   def `unaryExpression_+`(
     operator: babelDashTypesLib.babelDashTypesLibStrings.`+`,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_+`(
-    operator: babelDashTypesLib.babelDashTypesLibStrings.`+`,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression,
+    argument: Expression,
     prefix: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
+  ): UnaryExpression = js.native
   @JSName("unaryExpression")
-  def `unaryExpression_++`(operator: babelDashTypesLib.babelDashTypesLibStrings.`++`): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
+  def `unaryExpression_++`(operator: babelDashTypesLib.babelDashTypesLibStrings.`++`): UnaryExpression = js.native
+  @JSName("unaryExpression")
+  def `unaryExpression_++`(operator: babelDashTypesLib.babelDashTypesLibStrings.`++`, argument: Expression): UnaryExpression = js.native
   @JSName("unaryExpression")
   def `unaryExpression_++`(
     operator: babelDashTypesLib.babelDashTypesLibStrings.`++`,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_++`(
-    operator: babelDashTypesLib.babelDashTypesLibStrings.`++`,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression,
+    argument: Expression,
     prefix: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
+  ): UnaryExpression = js.native
   @JSName("unaryExpression")
-  def `unaryExpression_-`(operator: babelDashTypesLib.babelDashTypesLibStrings.`-`): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
+  def `unaryExpression_-`(operator: babelDashTypesLib.babelDashTypesLibStrings.`-`): UnaryExpression = js.native
+  @JSName("unaryExpression")
+  def `unaryExpression_-`(operator: babelDashTypesLib.babelDashTypesLibStrings.`-`, argument: Expression): UnaryExpression = js.native
   @JSName("unaryExpression")
   def `unaryExpression_-`(
     operator: babelDashTypesLib.babelDashTypesLibStrings.`-`,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_-`(
-    operator: babelDashTypesLib.babelDashTypesLibStrings.`-`,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression,
+    argument: Expression,
     prefix: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
+  ): UnaryExpression = js.native
   @JSName("unaryExpression")
-  def `unaryExpression_--`(operator: babelDashTypesLib.babelDashTypesLibStrings.`--`): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
+  def `unaryExpression_--`(operator: babelDashTypesLib.babelDashTypesLibStrings.`--`): UnaryExpression = js.native
+  @JSName("unaryExpression")
+  def `unaryExpression_--`(operator: babelDashTypesLib.babelDashTypesLibStrings.`--`, argument: Expression): UnaryExpression = js.native
   @JSName("unaryExpression")
   def `unaryExpression_--`(
     operator: babelDashTypesLib.babelDashTypesLibStrings.`--`,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_--`(
-    operator: babelDashTypesLib.babelDashTypesLibStrings.`--`,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression,
+    argument: Expression,
     prefix: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
+  ): UnaryExpression = js.native
   @JSName("unaryExpression")
-  def unaryExpression_delete(operator: babelDashTypesLib.babelDashTypesLibStrings.delete): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
+  def unaryExpression_delete(operator: babelDashTypesLib.babelDashTypesLibStrings.delete): UnaryExpression = js.native
+  @JSName("unaryExpression")
+  def unaryExpression_delete(operator: babelDashTypesLib.babelDashTypesLibStrings.delete, argument: Expression): UnaryExpression = js.native
   @JSName("unaryExpression")
   def unaryExpression_delete(
     operator: babelDashTypesLib.babelDashTypesLibStrings.delete,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def unaryExpression_delete(
-    operator: babelDashTypesLib.babelDashTypesLibStrings.delete,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression,
+    argument: Expression,
     prefix: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
+  ): UnaryExpression = js.native
   @JSName("unaryExpression")
-  def unaryExpression_typeof(operator: babelDashTypesLib.babelDashTypesLibStrings.typeof): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
+  def unaryExpression_typeof(operator: babelDashTypesLib.babelDashTypesLibStrings.typeof): UnaryExpression = js.native
+  @JSName("unaryExpression")
+  def unaryExpression_typeof(operator: babelDashTypesLib.babelDashTypesLibStrings.typeof, argument: Expression): UnaryExpression = js.native
   @JSName("unaryExpression")
   def unaryExpression_typeof(
     operator: babelDashTypesLib.babelDashTypesLibStrings.typeof,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def unaryExpression_typeof(
-    operator: babelDashTypesLib.babelDashTypesLibStrings.typeof,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression,
+    argument: Expression,
     prefix: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
+  ): UnaryExpression = js.native
   @JSName("unaryExpression")
-  def unaryExpression_void(operator: babelDashTypesLib.babelDashTypesLibStrings.void): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
+  def unaryExpression_void(operator: babelDashTypesLib.babelDashTypesLibStrings.void): UnaryExpression = js.native
+  @JSName("unaryExpression")
+  def unaryExpression_void(operator: babelDashTypesLib.babelDashTypesLibStrings.void, argument: Expression): UnaryExpression = js.native
   @JSName("unaryExpression")
   def unaryExpression_void(
     operator: babelDashTypesLib.babelDashTypesLibStrings.void,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def unaryExpression_void(
-    operator: babelDashTypesLib.babelDashTypesLibStrings.void,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression,
+    argument: Expression,
     prefix: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
+  ): UnaryExpression = js.native
   @JSName("unaryExpression")
-  def `unaryExpression_~`(operator: babelDashTypesLib.babelDashTypesLibStrings.`~`): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
+  def `unaryExpression_~`(operator: babelDashTypesLib.babelDashTypesLibStrings.`~`): UnaryExpression = js.native
+  @JSName("unaryExpression")
+  def `unaryExpression_~`(operator: babelDashTypesLib.babelDashTypesLibStrings.`~`, argument: Expression): UnaryExpression = js.native
   @JSName("unaryExpression")
   def `unaryExpression_~`(
     operator: babelDashTypesLib.babelDashTypesLibStrings.`~`,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_~`(
-    operator: babelDashTypesLib.babelDashTypesLibStrings.`~`,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression,
+    argument: Expression,
     prefix: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.UnaryExpression = js.native
-  def unionTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.UnionTypeAnnotation = js.native
-  def unionTypeAnnotation(types: js.Array[babelDashTypesLib.babelDashTypesMod.FlowTypeAnnotation]): babelDashTypesLib.babelDashTypesMod.UnionTypeAnnotation = js.native
-  def updateExpression(): babelDashTypesLib.babelDashTypesMod.UpdateExpression = js.native
+  ): UnaryExpression = js.native
+  def unionTypeAnnotation(): UnionTypeAnnotation = js.native
+  def unionTypeAnnotation(types: js.Array[FlowTypeAnnotation]): UnionTypeAnnotation = js.native
+  def updateExpression(): UpdateExpression = js.native
   @JSName("updateExpression")
-  def `updateExpression_++`(operator: babelDashTypesLib.babelDashTypesLibStrings.`++`): babelDashTypesLib.babelDashTypesMod.UpdateExpression = js.native
+  def `updateExpression_++`(operator: babelDashTypesLib.babelDashTypesLibStrings.`++`): UpdateExpression = js.native
+  @JSName("updateExpression")
+  def `updateExpression_++`(operator: babelDashTypesLib.babelDashTypesLibStrings.`++`, argument: Expression): UpdateExpression = js.native
   @JSName("updateExpression")
   def `updateExpression_++`(
     operator: babelDashTypesLib.babelDashTypesLibStrings.`++`,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.UpdateExpression = js.native
-  @JSName("updateExpression")
-  def `updateExpression_++`(
-    operator: babelDashTypesLib.babelDashTypesLibStrings.`++`,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression,
+    argument: Expression,
     prefix: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.UpdateExpression = js.native
+  ): UpdateExpression = js.native
   @JSName("updateExpression")
-  def `updateExpression_--`(operator: babelDashTypesLib.babelDashTypesLibStrings.`--`): babelDashTypesLib.babelDashTypesMod.UpdateExpression = js.native
+  def `updateExpression_--`(operator: babelDashTypesLib.babelDashTypesLibStrings.`--`): UpdateExpression = js.native
+  @JSName("updateExpression")
+  def `updateExpression_--`(operator: babelDashTypesLib.babelDashTypesLibStrings.`--`, argument: Expression): UpdateExpression = js.native
   @JSName("updateExpression")
   def `updateExpression_--`(
     operator: babelDashTypesLib.babelDashTypesLibStrings.`--`,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression
-  ): babelDashTypesLib.babelDashTypesMod.UpdateExpression = js.native
-  @JSName("updateExpression")
-  def `updateExpression_--`(
-    operator: babelDashTypesLib.babelDashTypesLibStrings.`--`,
-    argument: babelDashTypesLib.babelDashTypesMod.Expression,
+    argument: Expression,
     prefix: scala.Boolean
-  ): babelDashTypesLib.babelDashTypesMod.UpdateExpression = js.native
-  def variableDeclaration(): babelDashTypesLib.babelDashTypesMod.VariableDeclaration = js.native
+  ): UpdateExpression = js.native
+  def variableDeclaration(): VariableDeclaration = js.native
   @JSName("variableDeclaration")
-  def variableDeclaration_const(kind: babelDashTypesLib.babelDashTypesLibStrings.const): babelDashTypesLib.babelDashTypesMod.VariableDeclaration = js.native
+  def variableDeclaration_const(kind: babelDashTypesLib.babelDashTypesLibStrings.const): VariableDeclaration = js.native
   @JSName("variableDeclaration")
-  def variableDeclaration_const(
-    kind: babelDashTypesLib.babelDashTypesLibStrings.const,
-    declarations: js.Array[babelDashTypesLib.babelDashTypesMod.VariableDeclarator]
-  ): babelDashTypesLib.babelDashTypesMod.VariableDeclaration = js.native
+  def variableDeclaration_const(kind: babelDashTypesLib.babelDashTypesLibStrings.const, declarations: js.Array[VariableDeclarator]): VariableDeclaration = js.native
   @JSName("variableDeclaration")
-  def variableDeclaration_let(kind: babelDashTypesLib.babelDashTypesLibStrings.let): babelDashTypesLib.babelDashTypesMod.VariableDeclaration = js.native
+  def variableDeclaration_let(kind: babelDashTypesLib.babelDashTypesLibStrings.let): VariableDeclaration = js.native
   @JSName("variableDeclaration")
-  def variableDeclaration_let(
-    kind: babelDashTypesLib.babelDashTypesLibStrings.let,
-    declarations: js.Array[babelDashTypesLib.babelDashTypesMod.VariableDeclarator]
-  ): babelDashTypesLib.babelDashTypesMod.VariableDeclaration = js.native
+  def variableDeclaration_let(kind: babelDashTypesLib.babelDashTypesLibStrings.let, declarations: js.Array[VariableDeclarator]): VariableDeclaration = js.native
   @JSName("variableDeclaration")
-  def variableDeclaration_var(kind: babelDashTypesLib.babelDashTypesLibStrings.`var`): babelDashTypesLib.babelDashTypesMod.VariableDeclaration = js.native
+  def variableDeclaration_var(kind: babelDashTypesLib.babelDashTypesLibStrings.`var`): VariableDeclaration = js.native
   @JSName("variableDeclaration")
-  def variableDeclaration_var(
-    kind: babelDashTypesLib.babelDashTypesLibStrings.`var`,
-    declarations: js.Array[babelDashTypesLib.babelDashTypesMod.VariableDeclarator]
-  ): babelDashTypesLib.babelDashTypesMod.VariableDeclaration = js.native
-  def variableDeclarator(): babelDashTypesLib.babelDashTypesMod.VariableDeclarator = js.native
-  def variableDeclarator(id: babelDashTypesLib.babelDashTypesMod.LVal): babelDashTypesLib.babelDashTypesMod.VariableDeclarator = js.native
-  def variableDeclarator(id: babelDashTypesLib.babelDashTypesMod.LVal, init: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.VariableDeclarator = js.native
-  def voidTypeAnnotation(): babelDashTypesLib.babelDashTypesMod.VoidTypeAnnotation = js.native
-  def whileStatement(): babelDashTypesLib.babelDashTypesMod.WhileStatement = js.native
-  def whileStatement(test: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.WhileStatement = js.native
-  def whileStatement(
-    test: babelDashTypesLib.babelDashTypesMod.Expression,
-    body: babelDashTypesLib.babelDashTypesMod.BlockStatement
-  ): babelDashTypesLib.babelDashTypesMod.WhileStatement = js.native
-  def whileStatement(
-    test: babelDashTypesLib.babelDashTypesMod.Expression,
-    body: babelDashTypesLib.babelDashTypesMod.Statement
-  ): babelDashTypesLib.babelDashTypesMod.WhileStatement = js.native
-  def withStatement(): babelDashTypesLib.babelDashTypesMod.WithStatement = js.native
-  def withStatement(`object`: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.WithStatement = js.native
-  def withStatement(
-    `object`: babelDashTypesLib.babelDashTypesMod.Expression,
-    body: babelDashTypesLib.babelDashTypesMod.BlockStatement
-  ): babelDashTypesLib.babelDashTypesMod.WithStatement = js.native
-  def withStatement(
-    `object`: babelDashTypesLib.babelDashTypesMod.Expression,
-    body: babelDashTypesLib.babelDashTypesMod.Statement
-  ): babelDashTypesLib.babelDashTypesMod.WithStatement = js.native
-  def yieldExpression(): babelDashTypesLib.babelDashTypesMod.YieldExpression = js.native
-  def yieldExpression(argument: babelDashTypesLib.babelDashTypesMod.Expression): babelDashTypesLib.babelDashTypesMod.YieldExpression = js.native
-  def yieldExpression(argument: babelDashTypesLib.babelDashTypesMod.Expression, delegate: scala.Boolean): babelDashTypesLib.babelDashTypesMod.YieldExpression = js.native
+  def variableDeclaration_var(kind: babelDashTypesLib.babelDashTypesLibStrings.`var`, declarations: js.Array[VariableDeclarator]): VariableDeclaration = js.native
+  def variableDeclarator(): VariableDeclarator = js.native
+  def variableDeclarator(id: LVal): VariableDeclarator = js.native
+  def variableDeclarator(id: LVal, init: Expression): VariableDeclarator = js.native
+  def voidTypeAnnotation(): VoidTypeAnnotation = js.native
+  def whileStatement(): WhileStatement = js.native
+  def whileStatement(test: Expression): WhileStatement = js.native
+  def whileStatement(test: Expression, body: BlockStatement): WhileStatement = js.native
+  def whileStatement(test: Expression, body: Statement): WhileStatement = js.native
+  def withStatement(): WithStatement = js.native
+  def withStatement(`object`: Expression): WithStatement = js.native
+  def withStatement(`object`: Expression, body: BlockStatement): WithStatement = js.native
+  def withStatement(`object`: Expression, body: Statement): WithStatement = js.native
+  def yieldExpression(): YieldExpression = js.native
+  def yieldExpression(argument: Expression): YieldExpression = js.native
+  def yieldExpression(argument: Expression, delegate: scala.Boolean): YieldExpression = js.native
 }
 

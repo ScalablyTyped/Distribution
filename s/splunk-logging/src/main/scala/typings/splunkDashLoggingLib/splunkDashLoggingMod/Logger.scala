@@ -13,7 +13,7 @@ class Logger protected () extends js.Object {
   var eventFormatter_Original: EventFormatter = js.native
   var requestOptions: requestLib.requestMod.requestNs.CoreOptions = js.native
   val serializedEventQueue: js.Array[_] = js.native
-  def error(error: nodeLib.Error, context: SendContext): scala.Unit = js.native
+  def error(error: stdLib.Error, context: SendContext): scala.Unit = js.native
   def eventFormatter(message: js.Any, severity: java.lang.String): js.Any = js.native
   def flush(): scala.Unit = js.native
   def flush(callback: Callback): scala.Unit = js.native

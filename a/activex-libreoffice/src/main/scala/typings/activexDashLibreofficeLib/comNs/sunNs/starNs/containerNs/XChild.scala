@@ -27,13 +27,13 @@ object XChild {
   @scala.inline
   def apply(
     Parent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
-    acquire: js.Function0[scala.Unit],
-    getParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
+    acquire: () => scala.Unit,
+    getParent: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setParent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => scala.Unit
   ): XChild = {
-    val __obj = js.Dynamic.literal(Parent = Parent, acquire = acquire, getParent = getParent, queryInterface = queryInterface, release = release, setParent = setParent)
+    val __obj = js.Dynamic.literal(Parent = Parent, acquire = js.Any.fromFunction0(acquire), getParent = js.Any.fromFunction0(getParent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setParent = js.Any.fromFunction1(setParent))
   
     __obj.asInstanceOf[XChild]
   }

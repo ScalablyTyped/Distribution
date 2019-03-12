@@ -22,7 +22,7 @@ trait TransactionOptions extends js.Object {
     * Callback for transaction
     */
   var callback: js.UndefOr[
-    js.Function2[/* error */ nodeLib.Error, /* transaction */ Transaction, scala.Unit]
+    js.Function2[/* error */ stdLib.Error, /* transaction */ Transaction, scala.Unit]
   ] = js.undefined
   /**
     * SQL statement for committing a transaction, default 'COMMIT'
@@ -40,7 +40,7 @@ object TransactionOptions {
     adapter: anyDashDbLib.anyDashDbMod.Adapter = null,
     autoRollback: js.UndefOr[scala.Boolean] = js.undefined,
     begin: java.lang.String = null,
-    callback: js.Function2[/* error */ nodeLib.Error, /* transaction */ Transaction, scala.Unit] = null,
+    callback: (/* error */ stdLib.Error, /* transaction */ Transaction) => scala.Unit = null,
     commit: java.lang.String = null,
     rollback: java.lang.String = null
   ): TransactionOptions = {
@@ -48,7 +48,7 @@ object TransactionOptions {
     if (adapter != null) __obj.updateDynamic("adapter")(adapter)
     if (!js.isUndefined(autoRollback)) __obj.updateDynamic("autoRollback")(autoRollback)
     if (begin != null) __obj.updateDynamic("begin")(begin)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
     if (commit != null) __obj.updateDynamic("commit")(commit)
     if (rollback != null) __obj.updateDynamic("rollback")(rollback)
     __obj.asInstanceOf[TransactionOptions]

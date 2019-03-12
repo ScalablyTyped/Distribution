@@ -14,7 +14,7 @@ trait XPackageRegistry extends js.Object {
     * gets the supported XPackageTypeInfos.
     * @returns supported XPackageTypeInfos.
     */
-  val SupportedPackageTypes: activexDashInteropLib.SafeArray[XPackageTypeInfo]
+  val SupportedPackageTypes: stdLib.SafeArray[XPackageTypeInfo]
   /**
     * binds a package URL to a {@link XPackage} handle. The returned UNO package handle ought to late-initialize itself, thus the process of binding must
     * not be an expensive operation, because it is not abortable.
@@ -52,26 +52,19 @@ trait XPackageRegistry extends js.Object {
     * gets the supported XPackageTypeInfos.
     * @returns supported XPackageTypeInfos.
     */
-  def getSupportedPackageTypes(): activexDashInteropLib.SafeArray[XPackageTypeInfo]
+  def getSupportedPackageTypes(): stdLib.SafeArray[XPackageTypeInfo]
   def packageRemoved(url: java.lang.String, mediaType: java.lang.String): scala.Unit
 }
 
 object XPackageRegistry {
   @scala.inline
   def apply(
-    SupportedPackageTypes: activexDashInteropLib.SafeArray[XPackageTypeInfo],
-    bindPackage: js.Function5[
-      java.lang.String, 
-      java.lang.String, 
-      scala.Boolean, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
-      XPackage
-    ],
-    getSupportedPackageTypes: js.Function0[activexDashInteropLib.SafeArray[XPackageTypeInfo]],
-    packageRemoved: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    SupportedPackageTypes: stdLib.SafeArray[XPackageTypeInfo],
+    bindPackage: (java.lang.String, java.lang.String, scala.Boolean, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment) => XPackage,
+    getSupportedPackageTypes: () => stdLib.SafeArray[XPackageTypeInfo],
+    packageRemoved: (java.lang.String, java.lang.String) => scala.Unit
   ): XPackageRegistry = {
-    val __obj = js.Dynamic.literal(SupportedPackageTypes = SupportedPackageTypes, bindPackage = bindPackage, getSupportedPackageTypes = getSupportedPackageTypes, packageRemoved = packageRemoved)
+    val __obj = js.Dynamic.literal(SupportedPackageTypes = SupportedPackageTypes, bindPackage = js.Any.fromFunction5(bindPackage), getSupportedPackageTypes = js.Any.fromFunction0(getSupportedPackageTypes), packageRemoved = js.Any.fromFunction2(packageRemoved))
   
     __obj.asInstanceOf[XPackageRegistry]
   }

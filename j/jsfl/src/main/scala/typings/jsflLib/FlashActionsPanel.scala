@@ -20,17 +20,17 @@ trait FlashActionsPanel extends js.Object {
 object FlashActionsPanel {
   @scala.inline
   def apply(
-    getClassForObject: js.Function0[js.Any],
-    getScriptAssistMode: js.Function0[js.Any],
-    getSelectedText: js.Function0[js.Any],
-    getText: js.Function0[js.Any],
-    hasSelection: js.Function0[js.Any],
-    replaceSelectedText: js.Function0[js.Any],
-    setScriptAssistMode: js.Function0[js.Any],
-    setSelection: js.Function0[js.Any],
-    setText: js.Function0[js.Any]
+    getClassForObject: () => js.Any,
+    getScriptAssistMode: () => js.Any,
+    getSelectedText: () => js.Any,
+    getText: () => js.Any,
+    hasSelection: () => js.Any,
+    replaceSelectedText: () => js.Any,
+    setScriptAssistMode: () => js.Any,
+    setSelection: () => js.Any,
+    setText: () => js.Any
   ): FlashActionsPanel = {
-    val __obj = js.Dynamic.literal(getClassForObject = getClassForObject, getScriptAssistMode = getScriptAssistMode, getSelectedText = getSelectedText, getText = getText, hasSelection = hasSelection, replaceSelectedText = replaceSelectedText, setScriptAssistMode = setScriptAssistMode, setSelection = setSelection, setText = setText)
+    val __obj = js.Dynamic.literal(getClassForObject = js.Any.fromFunction0(getClassForObject), getScriptAssistMode = js.Any.fromFunction0(getScriptAssistMode), getSelectedText = js.Any.fromFunction0(getSelectedText), getText = js.Any.fromFunction0(getText), hasSelection = js.Any.fromFunction0(hasSelection), replaceSelectedText = js.Any.fromFunction0(replaceSelectedText), setScriptAssistMode = js.Any.fromFunction0(setScriptAssistMode), setSelection = js.Any.fromFunction0(setSelection), setText = js.Any.fromFunction0(setText))
   
     __obj.asInstanceOf[FlashActionsPanel]
   }

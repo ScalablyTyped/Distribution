@@ -11,8 +11,8 @@ class Rows protected () extends js.Object {
   var Alignment: WdRowAlignment = js.native
   var AllowBreakAcrossPages: scala.Double = js.native
   var AllowOverlap: scala.Double = js.native
-  val Application: Application = js.native
-  var Borders: Borders = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
+  var Borders: activexDashWordLib.WordNs.Borders = js.native
   val Count: scala.Double = js.native
   val Creator: scala.Double = js.native
   var DistanceBottom: scala.Double = js.native
@@ -30,7 +30,7 @@ class Rows protected () extends js.Object {
   val Parent: js.Any = js.native
   var RelativeHorizontalPosition: WdRelativeHorizontalPosition = js.native
   var RelativeVerticalPosition: WdRelativeVerticalPosition = js.native
-  val Shading: Shading = js.native
+  val Shading: activexDashWordLib.WordNs.Shading = js.native
   var SpaceBetweenColumns: scala.Double = js.native
   var TableDirection: WdTableDirection = js.native
   var VerticalPosition: scala.Double = js.native

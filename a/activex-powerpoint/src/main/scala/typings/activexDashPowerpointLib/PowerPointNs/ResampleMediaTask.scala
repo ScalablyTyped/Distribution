@@ -16,7 +16,7 @@ class ResampleMediaTask protected () extends js.Object {
   var `PowerPoint.ResampleMediaTask_typekey`: ResampleMediaTask = js.native
   val SampleHeight: scala.Double = js.native
   val SampleWidth: scala.Double = js.native
-  val Shape: Shape = js.native
+  val Shape: activexDashPowerpointLib.PowerPointNs.Shape = js.native
   val VideoCompressionType: java.lang.String = js.native
   val VideoFrameRate: scala.Double = js.native
   val profile: PpResampleMediaProfile = js.native

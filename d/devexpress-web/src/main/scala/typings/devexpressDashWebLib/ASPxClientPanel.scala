@@ -42,34 +42,34 @@ trait ASPxClientPanel extends ASPxClientPanelBase {
 object ASPxClientPanel {
   @scala.inline
   def apply(
-    AdjustControl: js.Function0[scala.Unit],
-    Collapse: js.Function0[scala.Unit],
+    AdjustControl: () => scala.Unit,
+    Collapse: () => scala.Unit,
     Collapsed: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]],
-    Expand: js.Function0[scala.Unit],
+    Expand: () => scala.Unit,
     Expanded: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]],
-    GetClientVisible: js.Function0[scala.Boolean],
-    GetContentHtml: js.Function0[java.lang.String],
-    GetEnabled: js.Function0[scala.Boolean],
-    GetHeight: js.Function0[scala.Double],
-    GetMainElement: js.Function0[js.Object],
-    GetParentControl: js.Function0[js.Object],
-    GetVisible: js.Function0[scala.Boolean],
-    GetWidth: js.Function0[scala.Double],
-    InCallback: js.Function0[scala.Boolean],
+    GetClientVisible: () => scala.Boolean,
+    GetContentHtml: () => java.lang.String,
+    GetEnabled: () => scala.Boolean,
+    GetHeight: () => scala.Double,
+    GetMainElement: () => js.Object,
+    GetParentControl: () => js.Object,
+    GetVisible: () => scala.Boolean,
+    GetWidth: () => scala.Double,
+    InCallback: () => scala.Boolean,
     Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
-    IsExpandable: js.Function0[scala.Boolean],
-    IsExpanded: js.Function0[scala.Boolean],
-    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
-    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetContentHtml: js.Function1[java.lang.String, scala.Unit],
-    SetEnabled: js.Function1[scala.Boolean, scala.Unit],
-    SetHeight: js.Function1[scala.Double, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetWidth: js.Function1[scala.Double, scala.Unit],
-    Toggle: js.Function0[scala.Unit],
+    IsExpandable: () => scala.Boolean,
+    IsExpanded: () => scala.Boolean,
+    SendMessageToAssistiveTechnology: java.lang.String => scala.Unit,
+    SetClientVisible: scala.Boolean => scala.Unit,
+    SetContentHtml: java.lang.String => scala.Unit,
+    SetEnabled: scala.Boolean => scala.Unit,
+    SetHeight: scala.Double => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
+    SetWidth: scala.Double => scala.Unit,
+    Toggle: () => scala.Unit,
     name: java.lang.String
   ): ASPxClientPanel = {
-    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, Collapse = Collapse, Collapsed = Collapsed, Expand = Expand, Expanded = Expanded, GetClientVisible = GetClientVisible, GetContentHtml = GetContentHtml, GetEnabled = GetEnabled, GetHeight = GetHeight, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, IsExpandable = IsExpandable, IsExpanded = IsExpanded, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetContentHtml = SetContentHtml, SetEnabled = SetEnabled, SetHeight = SetHeight, SetVisible = SetVisible, SetWidth = SetWidth, Toggle = Toggle, name = name)
+    val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), Collapse = js.Any.fromFunction0(Collapse), Collapsed = Collapsed, Expand = js.Any.fromFunction0(Expand), Expanded = Expanded, GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetContentHtml = js.Any.fromFunction0(GetContentHtml), GetEnabled = js.Any.fromFunction0(GetEnabled), GetHeight = js.Any.fromFunction0(GetHeight), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), InCallback = js.Any.fromFunction0(InCallback), Init = Init, IsExpandable = js.Any.fromFunction0(IsExpandable), IsExpanded = js.Any.fromFunction0(IsExpanded), SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetContentHtml = js.Any.fromFunction1(SetContentHtml), SetEnabled = js.Any.fromFunction1(SetEnabled), SetHeight = js.Any.fromFunction1(SetHeight), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), Toggle = js.Any.fromFunction0(Toggle), name = name)
   
     __obj.asInstanceOf[ASPxClientPanel]
   }

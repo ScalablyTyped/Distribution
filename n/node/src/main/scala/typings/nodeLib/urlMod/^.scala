@@ -16,37 +16,37 @@ object ^ extends js.Object {
     * @param url The file URL string or URL object to convert to a path.
     */
   def fileURLToPath(url: java.lang.String): java.lang.String = js.native
-  def fileURLToPath(url: nodeLib.urlMod.URL): java.lang.String = js.native
-  def format(URL: nodeLib.urlMod.URL): java.lang.String = js.native
-  def format(URL: nodeLib.urlMod.URL, options: nodeLib.urlMod.URLFormatOptions): java.lang.String = js.native
+  def fileURLToPath(url: URL): java.lang.String = js.native
+  def format(URL: URL): java.lang.String = js.native
+  def format(URL: URL, options: URLFormatOptions): java.lang.String = js.native
   def format(urlObject: java.lang.String): java.lang.String = js.native
-  def format(urlObject: nodeLib.urlMod.UrlObject): java.lang.String = js.native
-  def parse(urlStr: java.lang.String): nodeLib.urlMod.UrlWithStringQuery = js.native
+  def format(urlObject: UrlObject): java.lang.String = js.native
+  def parse(urlStr: java.lang.String): UrlWithStringQuery = js.native
   def parse(
     urlStr: java.lang.String,
     parseQueryString: js.UndefOr[scala.Nothing],
     slashesDenoteHost: scala.Boolean
-  ): nodeLib.urlMod.UrlWithStringQuery = js.native
-  def parse(urlStr: java.lang.String, parseQueryString: nodeLib.nodeLibNumbers.`false`): nodeLib.urlMod.UrlWithStringQuery = js.native
+  ): UrlWithStringQuery = js.native
+  def parse(urlStr: java.lang.String, parseQueryString: nodeLib.nodeLibNumbers.`false`): UrlWithStringQuery = js.native
   def parse(
     urlStr: java.lang.String,
     parseQueryString: nodeLib.nodeLibNumbers.`false`,
     slashesDenoteHost: scala.Boolean
-  ): nodeLib.urlMod.UrlWithStringQuery = js.native
-  def parse(urlStr: java.lang.String, parseQueryString: nodeLib.nodeLibNumbers.`true`): nodeLib.urlMod.UrlWithParsedQuery = js.native
+  ): UrlWithStringQuery = js.native
+  def parse(urlStr: java.lang.String, parseQueryString: nodeLib.nodeLibNumbers.`true`): UrlWithParsedQuery = js.native
   def parse(
     urlStr: java.lang.String,
     parseQueryString: nodeLib.nodeLibNumbers.`true`,
     slashesDenoteHost: scala.Boolean
-  ): nodeLib.urlMod.UrlWithParsedQuery = js.native
-  def parse(urlStr: java.lang.String, parseQueryString: scala.Boolean): nodeLib.urlMod.Url = js.native
-  def parse(urlStr: java.lang.String, parseQueryString: scala.Boolean, slashesDenoteHost: scala.Boolean): nodeLib.urlMod.Url = js.native
+  ): UrlWithParsedQuery = js.native
+  def parse(urlStr: java.lang.String, parseQueryString: scala.Boolean): Url = js.native
+  def parse(urlStr: java.lang.String, parseQueryString: scala.Boolean, slashesDenoteHost: scala.Boolean): Url = js.native
   /**
     * This function ensures that path is resolved absolutely, and that the URL
     * control characters are correctly encoded when converting into a File URL.
     * @param url The path to convert to a File URL.
     */
-  def pathToFileURL(url: java.lang.String): nodeLib.urlMod.URL = js.native
+  def pathToFileURL(url: java.lang.String): URL = js.native
   def resolve(from: java.lang.String, to: java.lang.String): java.lang.String = js.native
 }
 

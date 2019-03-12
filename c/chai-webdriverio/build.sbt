@@ -1,27 +1,27 @@
 organization := "org.scalablytyped"
 name := "chai-webdriverio"
-version := "0.4-dt-20190128Z-ae8981"
+version := "0.4-dt-20190128Z-baf1db"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-197130",
-  "org.scalablytyped" %%% "chai" % "4.1-dt-20181019Z-ad776a",
-  "org.scalablytyped" %%% "deepmerge" % "3.2.0-065978",
-  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-e66f03",
-  "org.scalablytyped" %%% "grapheme-splitter" % "1.0.4-805b20",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190227Z-56553a",
-  "org.scalablytyped" %%% "lodash_dot_isobject" % "3.0-dt-20190214Z-eb2fa0",
-  "org.scalablytyped" %%% "lodash_dot_merge" % "4.6-dt-20190214Z-7f7267",
-  "org.scalablytyped" %%% "lodash_dot_zip" % "4.2-dt-20190214Z-797e1d",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190307Z-7720a8",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-21f55d",
-  "org.scalablytyped" %%% "serialize-error" % "2.1-dt-20180607Z-4e1c58",
-  "org.scalablytyped" %%% "std" % "3.3-05be79",
-  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-3a715e",
-  "org.scalablytyped" %%% "webdriver" % "5.7.2-835991",
-  "org.scalablytyped" %%% "webdriverio" % "5.7.2-900ae4")
+  "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-768261",
+  "org.scalablytyped" %%% "chai" % "4.1-dt-20181019Z-bcb1b2",
+  "org.scalablytyped" %%% "deepmerge" % "3.2.0-4b2fad",
+  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-696f06",
+  "org.scalablytyped" %%% "grapheme-splitter" % "1.0.4-9ffd11",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-601106",
+  "org.scalablytyped" %%% "lodash_dot_isobject" % "3.0-dt-20190214Z-739da4",
+  "org.scalablytyped" %%% "lodash_dot_merge" % "4.6-dt-20190214Z-0ebd83",
+  "org.scalablytyped" %%% "lodash_dot_zip" % "4.2-dt-20190214Z-04825d",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190311Z-8b4969",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-1a0420",
+  "org.scalablytyped" %%% "serialize-error" % "2.1-dt-20180607Z-c0fad8",
+  "org.scalablytyped" %%% "std" % "3.3-ec2942",
+  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-0cc572",
+  "org.scalablytyped" %%% "webdriver" % "5.7.2-e5989f",
+  "org.scalablytyped" %%% "webdriverio" % "5.7.2-d90f1c")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

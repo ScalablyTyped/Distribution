@@ -28,25 +28,25 @@ trait DateTimeItem extends js.Object {
 object DateTimeItem {
   @scala.inline
   def apply(
-    createResponse: js.Function1[stdLib.Date, ItemResponse],
-    duplicate: js.Function0[DateTimeItem],
-    getGeneralFeedback: js.Function0[QuizFeedback],
-    getHelpText: js.Function0[java.lang.String],
-    getId: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getPoints: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getTitle: js.Function0[java.lang.String],
-    getType: js.Function0[ItemType],
-    includesYear: js.Function0[scala.Boolean],
-    isRequired: js.Function0[scala.Boolean],
-    setGeneralFeedback: js.Function1[QuizFeedback, DateTimeItem],
-    setHelpText: js.Function1[java.lang.String, DateTimeItem],
-    setIncludesYear: js.Function1[scala.Boolean, DateTimeItem],
-    setPoints: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, DateTimeItem],
-    setRequired: js.Function1[scala.Boolean, DateTimeItem],
-    setTitle: js.Function1[java.lang.String, DateTimeItem]
+    createResponse: stdLib.Date => ItemResponse,
+    duplicate: () => DateTimeItem,
+    getGeneralFeedback: () => QuizFeedback,
+    getHelpText: () => java.lang.String,
+    getId: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getIndex: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getPoints: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getTitle: () => java.lang.String,
+    getType: () => ItemType,
+    includesYear: () => scala.Boolean,
+    isRequired: () => scala.Boolean,
+    setGeneralFeedback: QuizFeedback => DateTimeItem,
+    setHelpText: java.lang.String => DateTimeItem,
+    setIncludesYear: scala.Boolean => DateTimeItem,
+    setPoints: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => DateTimeItem,
+    setRequired: scala.Boolean => DateTimeItem,
+    setTitle: java.lang.String => DateTimeItem
   ): DateTimeItem = {
-    val __obj = js.Dynamic.literal(createResponse = createResponse, duplicate = duplicate, getGeneralFeedback = getGeneralFeedback, getHelpText = getHelpText, getId = getId, getIndex = getIndex, getPoints = getPoints, getTitle = getTitle, getType = getType, includesYear = includesYear, isRequired = isRequired, setGeneralFeedback = setGeneralFeedback, setHelpText = setHelpText, setIncludesYear = setIncludesYear, setPoints = setPoints, setRequired = setRequired, setTitle = setTitle)
+    val __obj = js.Dynamic.literal(createResponse = js.Any.fromFunction1(createResponse), duplicate = js.Any.fromFunction0(duplicate), getGeneralFeedback = js.Any.fromFunction0(getGeneralFeedback), getHelpText = js.Any.fromFunction0(getHelpText), getId = js.Any.fromFunction0(getId), getIndex = js.Any.fromFunction0(getIndex), getPoints = js.Any.fromFunction0(getPoints), getTitle = js.Any.fromFunction0(getTitle), getType = js.Any.fromFunction0(getType), includesYear = js.Any.fromFunction0(includesYear), isRequired = js.Any.fromFunction0(isRequired), setGeneralFeedback = js.Any.fromFunction1(setGeneralFeedback), setHelpText = js.Any.fromFunction1(setHelpText), setIncludesYear = js.Any.fromFunction1(setIncludesYear), setPoints = js.Any.fromFunction1(setPoints), setRequired = js.Any.fromFunction1(setRequired), setTitle = js.Any.fromFunction1(setTitle))
   
     __obj.asInstanceOf[DateTimeItem]
   }

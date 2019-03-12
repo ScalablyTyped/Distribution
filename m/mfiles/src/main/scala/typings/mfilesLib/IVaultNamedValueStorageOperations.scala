@@ -22,11 +22,11 @@ trait IVaultNamedValueStorageOperations extends js.Object {
 object IVaultNamedValueStorageOperations {
   @scala.inline
   def apply(
-    GetNamedValues: js.Function2[mfilesLib.MFilesNs.MFNamedValueType, java.lang.String, INamedValues],
-    RemoveNamedValues: js.Function3[mfilesLib.MFilesNs.MFNamedValueType, java.lang.String, IStrings, scala.Unit],
-    SetNamedValues: js.Function3[mfilesLib.MFilesNs.MFNamedValueType, java.lang.String, INamedValues, scala.Unit]
+    GetNamedValues: (mfilesLib.MFilesNs.MFNamedValueType, java.lang.String) => INamedValues,
+    RemoveNamedValues: (mfilesLib.MFilesNs.MFNamedValueType, java.lang.String, IStrings) => scala.Unit,
+    SetNamedValues: (mfilesLib.MFilesNs.MFNamedValueType, java.lang.String, INamedValues) => scala.Unit
   ): IVaultNamedValueStorageOperations = {
-    val __obj = js.Dynamic.literal(GetNamedValues = GetNamedValues, RemoveNamedValues = RemoveNamedValues, SetNamedValues = SetNamedValues)
+    val __obj = js.Dynamic.literal(GetNamedValues = js.Any.fromFunction2(GetNamedValues), RemoveNamedValues = js.Any.fromFunction3(RemoveNamedValues), SetNamedValues = js.Any.fromFunction3(SetNamedValues))
   
     __obj.asInstanceOf[IVaultNamedValueStorageOperations]
   }

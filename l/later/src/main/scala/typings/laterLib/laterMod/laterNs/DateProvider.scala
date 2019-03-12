@@ -79,30 +79,14 @@ trait DateProvider extends js.Object {
 object DateProvider {
   @scala.inline
   def apply(
-    UTC: js.Function0[scala.Unit],
-    localTime: js.Function0[scala.Unit],
-    next: js.Function6[
-      js.UndefOr[scala.Double], 
-      js.UndefOr[scala.Double], 
-      js.UndefOr[scala.Double], 
-      js.UndefOr[scala.Double], 
-      js.UndefOr[scala.Double], 
-      js.UndefOr[scala.Double], 
-      stdLib.Date
-    ],
-    nextRollover: js.Function4[stdLib.Date, scala.Double, Modifier, TimePeriod, stdLib.Date],
-    prev: js.Function6[
-      js.UndefOr[scala.Double], 
-      js.UndefOr[scala.Double], 
-      js.UndefOr[scala.Double], 
-      js.UndefOr[scala.Double], 
-      js.UndefOr[scala.Double], 
-      js.UndefOr[scala.Double], 
-      stdLib.Date
-    ],
-    prevRollover: js.Function4[stdLib.Date, scala.Double, Modifier, TimePeriod, stdLib.Date]
+    UTC: () => scala.Unit,
+    localTime: () => scala.Unit,
+    next: (js.UndefOr[scala.Double], js.UndefOr[scala.Double], js.UndefOr[scala.Double], js.UndefOr[scala.Double], js.UndefOr[scala.Double], js.UndefOr[scala.Double]) => stdLib.Date,
+    nextRollover: (stdLib.Date, scala.Double, Modifier, TimePeriod) => stdLib.Date,
+    prev: (js.UndefOr[scala.Double], js.UndefOr[scala.Double], js.UndefOr[scala.Double], js.UndefOr[scala.Double], js.UndefOr[scala.Double], js.UndefOr[scala.Double]) => stdLib.Date,
+    prevRollover: (stdLib.Date, scala.Double, Modifier, TimePeriod) => stdLib.Date
   ): DateProvider = {
-    val __obj = js.Dynamic.literal(UTC = UTC, localTime = localTime, next = next, nextRollover = nextRollover, prev = prev, prevRollover = prevRollover)
+    val __obj = js.Dynamic.literal(UTC = js.Any.fromFunction0(UTC), localTime = js.Any.fromFunction0(localTime), next = js.Any.fromFunction6(next), nextRollover = js.Any.fromFunction4(nextRollover), prev = js.Any.fromFunction6(prev), prevRollover = js.Any.fromFunction4(prevRollover))
   
     __obj.asInstanceOf[DateProvider]
   }

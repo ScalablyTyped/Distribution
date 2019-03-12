@@ -112,63 +112,22 @@ trait JS2XML
 object JS2XML {
   @scala.inline
   def apply(
-    attributeNameFn: js.Function4[
-      /* attributeName */ java.lang.String, 
-      /* attributeValue */ java.lang.String, 
-      /* currentElementName */ java.lang.String, 
-      /* currentElementObj */ js.Object, 
-      scala.Unit
-    ] = null,
-    attributeValueFn: js.Function4[
-      /* attributeValue */ java.lang.String, 
-      /* attributeName */ java.lang.String, 
-      /* currentElementName */ java.lang.String, 
-      /* currentElementObj */ js.Object, 
-      scala.Unit
-    ] = null,
-    attributesFn: js.Function3[
-      /* value */ java.lang.String, 
-      /* currentElementName */ java.lang.String, 
-      /* currentElementObj */ js.Object, 
-      scala.Unit
-    ] = null,
+    attributeNameFn: (/* attributeName */ java.lang.String, /* attributeValue */ java.lang.String, /* currentElementName */ java.lang.String, /* currentElementObj */ js.Object) => scala.Unit = null,
+    attributeValueFn: (/* attributeValue */ java.lang.String, /* attributeName */ java.lang.String, /* currentElementName */ java.lang.String, /* currentElementObj */ js.Object) => scala.Unit = null,
+    attributesFn: (/* value */ java.lang.String, /* currentElementName */ java.lang.String, /* currentElementObj */ js.Object) => scala.Unit = null,
     attributesKey: java.lang.String = null,
-    cdataFn: js.Function3[
-      /* value */ java.lang.String, 
-      /* currentElementName */ java.lang.String, 
-      /* currentElementObj */ js.Object, 
-      scala.Unit
-    ] = null,
+    cdataFn: (/* value */ java.lang.String, /* currentElementName */ java.lang.String, /* currentElementObj */ js.Object) => scala.Unit = null,
     cdataKey: java.lang.String = null,
-    commentFn: js.Function3[
-      /* value */ java.lang.String, 
-      /* currentElementName */ java.lang.String, 
-      /* currentElementObj */ js.Object, 
-      scala.Unit
-    ] = null,
+    commentFn: (/* value */ java.lang.String, /* currentElementName */ java.lang.String, /* currentElementObj */ js.Object) => scala.Unit = null,
     commentKey: java.lang.String = null,
     compact: js.UndefOr[scala.Boolean] = js.undefined,
     declarationKey: java.lang.String = null,
-    doctypeFn: js.Function3[
-      /* value */ java.lang.String, 
-      /* currentElementName */ java.lang.String, 
-      /* currentElementObj */ js.Object, 
-      scala.Unit
-    ] = null,
+    doctypeFn: (/* value */ java.lang.String, /* currentElementName */ java.lang.String, /* currentElementObj */ js.Object) => scala.Unit = null,
     doctypeKey: java.lang.String = null,
-    elementNameFn: js.Function3[
-      /* value */ java.lang.String, 
-      /* currentElementName */ java.lang.String, 
-      /* currentElementObj */ js.Object, 
-      scala.Unit
-    ] = null,
+    elementNameFn: (/* value */ java.lang.String, /* currentElementName */ java.lang.String, /* currentElementObj */ js.Object) => scala.Unit = null,
     elementsKey: java.lang.String = null,
     fullTagEmptyElement: js.UndefOr[scala.Boolean] = js.undefined,
-    fullTagEmptyElementFn: js.Function2[
-      /* currentElementName */ java.lang.String, 
-      /* currentElementObj */ js.Object, 
-      scala.Unit
-    ] = null,
+    fullTagEmptyElementFn: (/* currentElementName */ java.lang.String, /* currentElementObj */ js.Object) => scala.Unit = null,
     ignoreAttributes: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreCdata: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreComment: js.UndefOr[scala.Boolean] = js.undefined,
@@ -180,51 +139,34 @@ object JS2XML {
     indentCdata: js.UndefOr[scala.Boolean] = js.undefined,
     indentInstruction: js.UndefOr[scala.Boolean] = js.undefined,
     indentText: js.UndefOr[scala.Boolean] = js.undefined,
-    instructionFn: js.Function4[
-      /* instructionValue */ java.lang.String, 
-      /* instructionName */ java.lang.String, 
-      /* currentElementName */ java.lang.String, 
-      /* currentElementObj */ js.Object, 
-      scala.Unit
-    ] = null,
+    instructionFn: (/* instructionValue */ java.lang.String, /* instructionName */ java.lang.String, /* currentElementName */ java.lang.String, /* currentElementObj */ js.Object) => scala.Unit = null,
     instructionKey: java.lang.String = null,
-    instructionNameFn: js.Function4[
-      /* instructionName */ java.lang.String, 
-      /* instructionValue */ java.lang.String, 
-      /* currentElementName */ java.lang.String, 
-      /* currentElementObj */ js.Object, 
-      scala.Unit
-    ] = null,
+    instructionNameFn: (/* instructionName */ java.lang.String, /* instructionValue */ java.lang.String, /* currentElementName */ java.lang.String, /* currentElementObj */ js.Object) => scala.Unit = null,
     nameKey: java.lang.String = null,
     noQuotesForNativeAttributes: js.UndefOr[scala.Boolean] = js.undefined,
     parentKey: java.lang.String = null,
     spaces: scala.Double | java.lang.String = null,
-    textFn: js.Function3[
-      /* value */ java.lang.String, 
-      /* currentElementName */ java.lang.String, 
-      /* currentElementObj */ js.Object, 
-      scala.Unit
-    ] = null,
+    textFn: (/* value */ java.lang.String, /* currentElementName */ java.lang.String, /* currentElementObj */ js.Object) => scala.Unit = null,
     textKey: java.lang.String = null,
     typeKey: java.lang.String = null
   ): JS2XML = {
     val __obj = js.Dynamic.literal()
-    if (attributeNameFn != null) __obj.updateDynamic("attributeNameFn")(attributeNameFn)
-    if (attributeValueFn != null) __obj.updateDynamic("attributeValueFn")(attributeValueFn)
-    if (attributesFn != null) __obj.updateDynamic("attributesFn")(attributesFn)
+    if (attributeNameFn != null) __obj.updateDynamic("attributeNameFn")(js.Any.fromFunction4(attributeNameFn))
+    if (attributeValueFn != null) __obj.updateDynamic("attributeValueFn")(js.Any.fromFunction4(attributeValueFn))
+    if (attributesFn != null) __obj.updateDynamic("attributesFn")(js.Any.fromFunction3(attributesFn))
     if (attributesKey != null) __obj.updateDynamic("attributesKey")(attributesKey)
-    if (cdataFn != null) __obj.updateDynamic("cdataFn")(cdataFn)
+    if (cdataFn != null) __obj.updateDynamic("cdataFn")(js.Any.fromFunction3(cdataFn))
     if (cdataKey != null) __obj.updateDynamic("cdataKey")(cdataKey)
-    if (commentFn != null) __obj.updateDynamic("commentFn")(commentFn)
+    if (commentFn != null) __obj.updateDynamic("commentFn")(js.Any.fromFunction3(commentFn))
     if (commentKey != null) __obj.updateDynamic("commentKey")(commentKey)
     if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
     if (declarationKey != null) __obj.updateDynamic("declarationKey")(declarationKey)
-    if (doctypeFn != null) __obj.updateDynamic("doctypeFn")(doctypeFn)
+    if (doctypeFn != null) __obj.updateDynamic("doctypeFn")(js.Any.fromFunction3(doctypeFn))
     if (doctypeKey != null) __obj.updateDynamic("doctypeKey")(doctypeKey)
-    if (elementNameFn != null) __obj.updateDynamic("elementNameFn")(elementNameFn)
+    if (elementNameFn != null) __obj.updateDynamic("elementNameFn")(js.Any.fromFunction3(elementNameFn))
     if (elementsKey != null) __obj.updateDynamic("elementsKey")(elementsKey)
     if (!js.isUndefined(fullTagEmptyElement)) __obj.updateDynamic("fullTagEmptyElement")(fullTagEmptyElement)
-    if (fullTagEmptyElementFn != null) __obj.updateDynamic("fullTagEmptyElementFn")(fullTagEmptyElementFn)
+    if (fullTagEmptyElementFn != null) __obj.updateDynamic("fullTagEmptyElementFn")(js.Any.fromFunction2(fullTagEmptyElementFn))
     if (!js.isUndefined(ignoreAttributes)) __obj.updateDynamic("ignoreAttributes")(ignoreAttributes)
     if (!js.isUndefined(ignoreCdata)) __obj.updateDynamic("ignoreCdata")(ignoreCdata)
     if (!js.isUndefined(ignoreComment)) __obj.updateDynamic("ignoreComment")(ignoreComment)
@@ -236,14 +178,14 @@ object JS2XML {
     if (!js.isUndefined(indentCdata)) __obj.updateDynamic("indentCdata")(indentCdata)
     if (!js.isUndefined(indentInstruction)) __obj.updateDynamic("indentInstruction")(indentInstruction)
     if (!js.isUndefined(indentText)) __obj.updateDynamic("indentText")(indentText)
-    if (instructionFn != null) __obj.updateDynamic("instructionFn")(instructionFn)
+    if (instructionFn != null) __obj.updateDynamic("instructionFn")(js.Any.fromFunction4(instructionFn))
     if (instructionKey != null) __obj.updateDynamic("instructionKey")(instructionKey)
-    if (instructionNameFn != null) __obj.updateDynamic("instructionNameFn")(instructionNameFn)
+    if (instructionNameFn != null) __obj.updateDynamic("instructionNameFn")(js.Any.fromFunction4(instructionNameFn))
     if (nameKey != null) __obj.updateDynamic("nameKey")(nameKey)
     if (!js.isUndefined(noQuotesForNativeAttributes)) __obj.updateDynamic("noQuotesForNativeAttributes")(noQuotesForNativeAttributes)
     if (parentKey != null) __obj.updateDynamic("parentKey")(parentKey)
     if (spaces != null) __obj.updateDynamic("spaces")(spaces.asInstanceOf[js.Any])
-    if (textFn != null) __obj.updateDynamic("textFn")(textFn)
+    if (textFn != null) __obj.updateDynamic("textFn")(js.Any.fromFunction3(textFn))
     if (textKey != null) __obj.updateDynamic("textKey")(textKey)
     if (typeKey != null) __obj.updateDynamic("typeKey")(typeKey)
     __obj.asInstanceOf[JS2XML]

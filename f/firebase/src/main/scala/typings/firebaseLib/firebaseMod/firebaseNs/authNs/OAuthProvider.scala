@@ -78,6 +78,6 @@ trait OAuthProvider extends AuthProvider {
     * @param {!Object} customOAuthParameters The custom OAuth parameters to pass
     *     in the OAuth request.
     */
-  def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): AuthProvider = js.native
+  def setCustomParameters(customOAuthParameters: js.Object): AuthProvider = js.native
 }
 

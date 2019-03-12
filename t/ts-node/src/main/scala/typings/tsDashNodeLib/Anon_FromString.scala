@@ -11,8 +11,8 @@ trait Anon_FromString extends js.Object {
 
 object Anon_FromString {
   @scala.inline
-  def apply(fromString: js.Function1[java.lang.String, typescriptLib.typescriptMod.tsNs.IScriptSnapshot]): Anon_FromString = {
-    val __obj = js.Dynamic.literal(fromString = fromString)
+  def apply(fromString: java.lang.String => typescriptLib.typescriptMod.tsNs.IScriptSnapshot): Anon_FromString = {
+    val __obj = js.Dynamic.literal(fromString = js.Any.fromFunction1(fromString))
   
     __obj.asInstanceOf[Anon_FromString]
   }

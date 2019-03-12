@@ -38,17 +38,17 @@ object XInterfaceAttributeTypeDescription {
     Position: scala.Double,
     Type: XTypeDescription,
     TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
-    acquire: js.Function0[scala.Unit],
-    getMemberName: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getPosition: js.Function0[scala.Double],
-    getType: js.Function0[XTypeDescription],
-    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
-    isReadOnly: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getMemberName: () => java.lang.String,
+    getName: () => java.lang.String,
+    getPosition: () => scala.Double,
+    getType: () => XTypeDescription,
+    getTypeClass: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    isReadOnly: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XInterfaceAttributeTypeDescription = {
-    val __obj = js.Dynamic.literal(MemberName = MemberName, Name = Name, Position = Position, Type = Type, TypeClass = TypeClass, acquire = acquire, getMemberName = getMemberName, getName = getName, getPosition = getPosition, getType = getType, getTypeClass = getTypeClass, isReadOnly = isReadOnly, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(MemberName = MemberName, Name = Name, Position = Position, Type = Type, TypeClass = TypeClass, acquire = js.Any.fromFunction0(acquire), getMemberName = js.Any.fromFunction0(getMemberName), getName = js.Any.fromFunction0(getName), getPosition = js.Any.fromFunction0(getPosition), getType = js.Any.fromFunction0(getType), getTypeClass = js.Any.fromFunction0(getTypeClass), isReadOnly = js.Any.fromFunction0(isReadOnly), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XInterfaceAttributeTypeDescription]
   }

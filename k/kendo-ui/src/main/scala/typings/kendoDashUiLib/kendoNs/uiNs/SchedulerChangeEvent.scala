@@ -16,7 +16,7 @@ trait SchedulerChangeEvent extends SchedulerEvent {
 object SchedulerChangeEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Scheduler,
     end: stdLib.Date = null,
@@ -25,7 +25,7 @@ object SchedulerChangeEvent {
     slots: js.Any = null,
     start: stdLib.Date = null
   ): SchedulerChangeEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (end != null) __obj.updateDynamic("end")(end)
     if (events != null) __obj.updateDynamic("events")(events)
     if (resources != null) __obj.updateDynamic("resources")(resources)

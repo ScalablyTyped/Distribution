@@ -12,13 +12,13 @@ trait PlacementBuilder[Placement] extends DisplayBuilder[PlacementBuilder[Placem
 object PlacementBuilder {
   @scala.inline
   def apply[Placement](
-    build: js.Function0[AdWordsOperation[PlacementBuilder[Placement]]],
-    exclude: js.Function0[AdWordsOperation[PlacementBuilder[Placement]]],
-    withCpc: js.Function1[scala.Double, PlacementBuilder[Placement]],
-    withCpm: js.Function1[scala.Double, PlacementBuilder[Placement]],
-    withUrl: js.Function1[java.lang.String, PlacementBuilder[Placement]]
+    build: () => AdWordsOperation[PlacementBuilder[Placement]],
+    exclude: () => AdWordsOperation[PlacementBuilder[Placement]],
+    withCpc: scala.Double => PlacementBuilder[Placement],
+    withCpm: scala.Double => PlacementBuilder[Placement],
+    withUrl: java.lang.String => PlacementBuilder[Placement]
   ): PlacementBuilder[Placement] = {
-    val __obj = js.Dynamic.literal(build = build, exclude = exclude, withCpc = withCpc, withCpm = withCpm, withUrl = withUrl)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), exclude = js.Any.fromFunction0(exclude), withCpc = js.Any.fromFunction1(withCpc), withCpm = js.Any.fromFunction1(withCpm), withUrl = js.Any.fromFunction1(withUrl))
   
     __obj.asInstanceOf[PlacementBuilder[Placement]]
   }

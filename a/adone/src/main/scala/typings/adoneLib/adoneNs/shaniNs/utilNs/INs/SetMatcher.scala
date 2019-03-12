@@ -9,22 +9,22 @@ trait SetMatcher extends Matcher {
   /**
     * Requires a Set to contain each one of the items the given set has.
     */
-  def contains(expected: nodeLib.Set[_]): Matcher
+  def contains(expected: stdLib.Set[_]): Matcher
   /**
     *  Requires a Set to be deep equal another one.
     */
-  def deepEquals(expected: nodeLib.Set[_]): Matcher
+  def deepEquals(expected: stdLib.Set[_]): Matcher
 }
 
 object SetMatcher {
   @scala.inline
   def apply(
-    and: js.Function1[Matcher, Matcher],
-    contains: js.Function1[nodeLib.Set[_], Matcher],
-    deepEquals: js.Function1[nodeLib.Set[_], Matcher],
-    or: js.Function1[Matcher, Matcher]
+    and: Matcher => Matcher,
+    contains: stdLib.Set[_] => Matcher,
+    deepEquals: stdLib.Set[_] => Matcher,
+    or: Matcher => Matcher
   ): SetMatcher = {
-    val __obj = js.Dynamic.literal(and = and, contains = contains, deepEquals = deepEquals, or = or)
+    val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), contains = js.Any.fromFunction1(contains), deepEquals = js.Any.fromFunction1(deepEquals), or = js.Any.fromFunction1(or))
   
     __obj.asInstanceOf[SetMatcher]
   }

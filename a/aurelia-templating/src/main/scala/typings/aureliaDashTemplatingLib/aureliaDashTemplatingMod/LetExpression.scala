@@ -11,8 +11,8 @@ trait LetExpression extends js.Object {
 
 object LetExpression {
   @scala.inline
-  def apply(createBinding: js.Function0[LetBinding]): LetExpression = {
-    val __obj = js.Dynamic.literal(createBinding = createBinding)
+  def apply(createBinding: () => LetBinding): LetExpression = {
+    val __obj = js.Dynamic.literal(createBinding = js.Any.fromFunction0(createBinding))
   
     __obj.asInstanceOf[LetExpression]
   }

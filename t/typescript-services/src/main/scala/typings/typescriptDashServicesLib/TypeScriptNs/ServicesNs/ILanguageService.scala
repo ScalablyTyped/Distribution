@@ -57,38 +57,34 @@ trait ILanguageService extends js.Object {
 object ILanguageService {
   @scala.inline
   def apply(
-    cleanupSemanticCache: js.Function0[scala.Unit],
-    getBraceMatchingAtPosition: js.Function2[
-      java.lang.String, 
-      scala.Double, 
-      js.Array[typescriptDashServicesLib.TypeScriptNs.TextSpan]
-    ],
-    getBreakpointStatementAtPosition: js.Function2[java.lang.String, scala.Double, SpanInfo],
-    getCompilerOptionsDiagnostics: js.Function0[js.Array[typescriptDashServicesLib.TypeScriptNs.Diagnostic]],
-    getCompletionEntryDetails: js.Function3[java.lang.String, scala.Double, java.lang.String, CompletionEntryDetails],
-    getCompletionsAtPosition: js.Function3[java.lang.String, scala.Double, scala.Boolean, CompletionInfo],
-    getDefinitionAtPosition: js.Function2[java.lang.String, scala.Double, js.Array[DefinitionInfo]],
-    getEmitOutput: js.Function1[java.lang.String, typescriptDashServicesLib.TypeScriptNs.EmitOutput],
-    getFormattingEditsAfterKeystroke: js.Function4[java.lang.String, scala.Double, java.lang.String, FormatCodeOptions, js.Array[TextEdit]],
-    getFormattingEditsForDocument: js.Function4[java.lang.String, scala.Double, scala.Double, FormatCodeOptions, js.Array[TextEdit]],
-    getFormattingEditsForRange: js.Function4[java.lang.String, scala.Double, scala.Double, FormatCodeOptions, js.Array[TextEdit]],
-    getFormattingEditsOnPaste: js.Function4[java.lang.String, scala.Double, scala.Double, FormatCodeOptions, js.Array[TextEdit]],
-    getImplementorsAtPosition: js.Function2[java.lang.String, scala.Double, js.Array[ReferenceEntry]],
-    getIndentationAtPosition: js.Function3[java.lang.String, scala.Double, EditorOptions, scala.Double],
-    getNameOrDottedNameSpan: js.Function3[java.lang.String, scala.Double, scala.Double, SpanInfo],
-    getNavigateToItems: js.Function1[java.lang.String, js.Array[NavigateToItem]],
-    getOccurrencesAtPosition: js.Function2[java.lang.String, scala.Double, js.Array[ReferenceEntry]],
-    getOutliningRegions: js.Function1[java.lang.String, js.Array[typescriptDashServicesLib.TypeScriptNs.TextSpan]],
-    getReferencesAtPosition: js.Function2[java.lang.String, scala.Double, js.Array[ReferenceEntry]],
-    getScriptLexicalStructure: js.Function1[java.lang.String, js.Array[NavigateToItem]],
-    getSemanticDiagnostics: js.Function1[java.lang.String, js.Array[typescriptDashServicesLib.TypeScriptNs.Diagnostic]],
-    getSignatureAtPosition: js.Function2[java.lang.String, scala.Double, SignatureInfo],
-    getSyntacticDiagnostics: js.Function1[java.lang.String, js.Array[typescriptDashServicesLib.TypeScriptNs.Diagnostic]],
-    getSyntaxTree: js.Function1[java.lang.String, typescriptDashServicesLib.TypeScriptNs.SyntaxTree],
-    getTypeAtPosition: js.Function2[java.lang.String, scala.Double, TypeInfo],
-    refresh: js.Function0[scala.Unit]
+    cleanupSemanticCache: () => scala.Unit,
+    getBraceMatchingAtPosition: (java.lang.String, scala.Double) => js.Array[typescriptDashServicesLib.TypeScriptNs.TextSpan],
+    getBreakpointStatementAtPosition: (java.lang.String, scala.Double) => SpanInfo,
+    getCompilerOptionsDiagnostics: () => js.Array[typescriptDashServicesLib.TypeScriptNs.Diagnostic],
+    getCompletionEntryDetails: (java.lang.String, scala.Double, java.lang.String) => CompletionEntryDetails,
+    getCompletionsAtPosition: (java.lang.String, scala.Double, scala.Boolean) => CompletionInfo,
+    getDefinitionAtPosition: (java.lang.String, scala.Double) => js.Array[DefinitionInfo],
+    getEmitOutput: java.lang.String => typescriptDashServicesLib.TypeScriptNs.EmitOutput,
+    getFormattingEditsAfterKeystroke: (java.lang.String, scala.Double, java.lang.String, FormatCodeOptions) => js.Array[TextEdit],
+    getFormattingEditsForDocument: (java.lang.String, scala.Double, scala.Double, FormatCodeOptions) => js.Array[TextEdit],
+    getFormattingEditsForRange: (java.lang.String, scala.Double, scala.Double, FormatCodeOptions) => js.Array[TextEdit],
+    getFormattingEditsOnPaste: (java.lang.String, scala.Double, scala.Double, FormatCodeOptions) => js.Array[TextEdit],
+    getImplementorsAtPosition: (java.lang.String, scala.Double) => js.Array[ReferenceEntry],
+    getIndentationAtPosition: (java.lang.String, scala.Double, EditorOptions) => scala.Double,
+    getNameOrDottedNameSpan: (java.lang.String, scala.Double, scala.Double) => SpanInfo,
+    getNavigateToItems: java.lang.String => js.Array[NavigateToItem],
+    getOccurrencesAtPosition: (java.lang.String, scala.Double) => js.Array[ReferenceEntry],
+    getOutliningRegions: java.lang.String => js.Array[typescriptDashServicesLib.TypeScriptNs.TextSpan],
+    getReferencesAtPosition: (java.lang.String, scala.Double) => js.Array[ReferenceEntry],
+    getScriptLexicalStructure: java.lang.String => js.Array[NavigateToItem],
+    getSemanticDiagnostics: java.lang.String => js.Array[typescriptDashServicesLib.TypeScriptNs.Diagnostic],
+    getSignatureAtPosition: (java.lang.String, scala.Double) => SignatureInfo,
+    getSyntacticDiagnostics: java.lang.String => js.Array[typescriptDashServicesLib.TypeScriptNs.Diagnostic],
+    getSyntaxTree: java.lang.String => typescriptDashServicesLib.TypeScriptNs.SyntaxTree,
+    getTypeAtPosition: (java.lang.String, scala.Double) => TypeInfo,
+    refresh: () => scala.Unit
   ): ILanguageService = {
-    val __obj = js.Dynamic.literal(cleanupSemanticCache = cleanupSemanticCache, getBraceMatchingAtPosition = getBraceMatchingAtPosition, getBreakpointStatementAtPosition = getBreakpointStatementAtPosition, getCompilerOptionsDiagnostics = getCompilerOptionsDiagnostics, getCompletionEntryDetails = getCompletionEntryDetails, getCompletionsAtPosition = getCompletionsAtPosition, getDefinitionAtPosition = getDefinitionAtPosition, getEmitOutput = getEmitOutput, getFormattingEditsAfterKeystroke = getFormattingEditsAfterKeystroke, getFormattingEditsForDocument = getFormattingEditsForDocument, getFormattingEditsForRange = getFormattingEditsForRange, getFormattingEditsOnPaste = getFormattingEditsOnPaste, getImplementorsAtPosition = getImplementorsAtPosition, getIndentationAtPosition = getIndentationAtPosition, getNameOrDottedNameSpan = getNameOrDottedNameSpan, getNavigateToItems = getNavigateToItems, getOccurrencesAtPosition = getOccurrencesAtPosition, getOutliningRegions = getOutliningRegions, getReferencesAtPosition = getReferencesAtPosition, getScriptLexicalStructure = getScriptLexicalStructure, getSemanticDiagnostics = getSemanticDiagnostics, getSignatureAtPosition = getSignatureAtPosition, getSyntacticDiagnostics = getSyntacticDiagnostics, getSyntaxTree = getSyntaxTree, getTypeAtPosition = getTypeAtPosition, refresh = refresh)
+    val __obj = js.Dynamic.literal(cleanupSemanticCache = js.Any.fromFunction0(cleanupSemanticCache), getBraceMatchingAtPosition = js.Any.fromFunction2(getBraceMatchingAtPosition), getBreakpointStatementAtPosition = js.Any.fromFunction2(getBreakpointStatementAtPosition), getCompilerOptionsDiagnostics = js.Any.fromFunction0(getCompilerOptionsDiagnostics), getCompletionEntryDetails = js.Any.fromFunction3(getCompletionEntryDetails), getCompletionsAtPosition = js.Any.fromFunction3(getCompletionsAtPosition), getDefinitionAtPosition = js.Any.fromFunction2(getDefinitionAtPosition), getEmitOutput = js.Any.fromFunction1(getEmitOutput), getFormattingEditsAfterKeystroke = js.Any.fromFunction4(getFormattingEditsAfterKeystroke), getFormattingEditsForDocument = js.Any.fromFunction4(getFormattingEditsForDocument), getFormattingEditsForRange = js.Any.fromFunction4(getFormattingEditsForRange), getFormattingEditsOnPaste = js.Any.fromFunction4(getFormattingEditsOnPaste), getImplementorsAtPosition = js.Any.fromFunction2(getImplementorsAtPosition), getIndentationAtPosition = js.Any.fromFunction3(getIndentationAtPosition), getNameOrDottedNameSpan = js.Any.fromFunction3(getNameOrDottedNameSpan), getNavigateToItems = js.Any.fromFunction1(getNavigateToItems), getOccurrencesAtPosition = js.Any.fromFunction2(getOccurrencesAtPosition), getOutliningRegions = js.Any.fromFunction1(getOutliningRegions), getReferencesAtPosition = js.Any.fromFunction2(getReferencesAtPosition), getScriptLexicalStructure = js.Any.fromFunction1(getScriptLexicalStructure), getSemanticDiagnostics = js.Any.fromFunction1(getSemanticDiagnostics), getSignatureAtPosition = js.Any.fromFunction2(getSignatureAtPosition), getSyntacticDiagnostics = js.Any.fromFunction1(getSyntacticDiagnostics), getSyntaxTree = js.Any.fromFunction1(getSyntaxTree), getTypeAtPosition = js.Any.fromFunction2(getTypeAtPosition), refresh = js.Any.fromFunction0(refresh))
   
     __obj.asInstanceOf[ILanguageService]
   }

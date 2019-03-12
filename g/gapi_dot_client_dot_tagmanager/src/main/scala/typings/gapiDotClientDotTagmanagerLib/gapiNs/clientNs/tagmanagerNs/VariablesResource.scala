@@ -23,32 +23,14 @@ trait VariablesResource extends js.Object {
 object VariablesResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Variable]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Variable]
-    ],
-    list: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListVariablesResponse]
-    ],
-    revert: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RevertVariableResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Variable]
-    ]
+    create: gapiDotClientDotTagmanagerLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Variable],
+    delete: gapiDotClientDotTagmanagerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotTagmanagerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Variable],
+    list: gapiDotClientDotTagmanagerLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[ListVariablesResponse],
+    revert: gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint => gapiDotClientLib.gapiNs.clientNs.Request[RevertVariableResponse],
+    update: gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint => gapiDotClientLib.gapiNs.clientNs.Request[Variable]
   ): VariablesResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, revert = revert, update = update)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), revert = js.Any.fromFunction1(revert), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[VariablesResource]
   }

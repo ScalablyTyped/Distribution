@@ -17,13 +17,10 @@ trait ReportsResource extends js.Object {
 object ReportsResource {
   @scala.inline
   def apply(
-    generate: js.Function1[
-      gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAltDimension, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Report]
-    ],
+    generate: gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAltDimension => gapiDotClientLib.gapiNs.clientNs.Request[Report],
     saved: SavedResource
   ): ReportsResource = {
-    val __obj = js.Dynamic.literal(generate = generate, saved = saved)
+    val __obj = js.Dynamic.literal(generate = js.Any.fromFunction1(generate), saved = saved)
   
     __obj.asInstanceOf[ReportsResource]
   }

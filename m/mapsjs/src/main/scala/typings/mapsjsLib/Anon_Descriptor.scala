@@ -31,8 +31,8 @@ object Anon_Descriptor {
     maxConcurrentRequests: scala.Int | scala.Double = null,
     maxZoomLevel: scala.Int | scala.Double = null,
     minZoomLevel: scala.Int | scala.Double = null,
-    notifyErrorAction: js.Function1[/* msg */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    notifyLoadingQueueHasEmptiedAction: js.Function0[scala.Unit] = null,
+    notifyErrorAction: /* msg */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    notifyLoadingQueueHasEmptiedAction: () => scala.Unit = null,
     opacity: scala.Int | scala.Double = null,
     renderer: mapsjsLib.mapsjsMod.tileNs.renderer = null,
     requestProcessor: js.Any = null,
@@ -48,8 +48,8 @@ object Anon_Descriptor {
     if (maxConcurrentRequests != null) __obj.updateDynamic("maxConcurrentRequests")(maxConcurrentRequests.asInstanceOf[js.Any])
     if (maxZoomLevel != null) __obj.updateDynamic("maxZoomLevel")(maxZoomLevel.asInstanceOf[js.Any])
     if (minZoomLevel != null) __obj.updateDynamic("minZoomLevel")(minZoomLevel.asInstanceOf[js.Any])
-    if (notifyErrorAction != null) __obj.updateDynamic("notifyErrorAction")(notifyErrorAction)
-    if (notifyLoadingQueueHasEmptiedAction != null) __obj.updateDynamic("notifyLoadingQueueHasEmptiedAction")(notifyLoadingQueueHasEmptiedAction)
+    if (notifyErrorAction != null) __obj.updateDynamic("notifyErrorAction")(js.Any.fromFunction1(notifyErrorAction))
+    if (notifyLoadingQueueHasEmptiedAction != null) __obj.updateDynamic("notifyLoadingQueueHasEmptiedAction")(js.Any.fromFunction0(notifyLoadingQueueHasEmptiedAction))
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(renderer)
     if (requestProcessor != null) __obj.updateDynamic("requestProcessor")(requestProcessor)

@@ -9,9 +9,9 @@ trait BuildResult extends js.Object {
   val artifactPaths: js.Array[java.lang.String]
   val configuration: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Configuration */ js.Any
   val outDir: java.lang.String
-  val platformToTargets: nodeLib.Map[
+  val platformToTargets: stdLib.Map[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ _, 
-    nodeLib.Map[
+    stdLib.Map[
       java.lang.String, 
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Target */ _
     ]
@@ -24,9 +24,9 @@ object BuildResult {
     artifactPaths: js.Array[java.lang.String],
     configuration: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Configuration */ js.Any,
     outDir: java.lang.String,
-    platformToTargets: nodeLib.Map[
+    platformToTargets: stdLib.Map[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ _, 
-      nodeLib.Map[
+      stdLib.Map[
         java.lang.String, 
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Target */ _
       ]

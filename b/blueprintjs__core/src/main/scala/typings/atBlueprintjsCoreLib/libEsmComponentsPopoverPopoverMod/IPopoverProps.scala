@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait IPopoverProps
   extends atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverSharedPropsMod.IPopoverSharedProps {
   /** HTML props for the backdrop element. Can be combined with `backdropClassName`. */
-  var backdropProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement]] = js.undefined
+  var backdropProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement]] = js.undefined
   /**
     * The content displayed inside the popover. This can instead be provided as
     * the _second_ element in `children` (first is `target`).
@@ -38,7 +38,7 @@ trait IPopoverProps
   /**
     * Ref supplied to the `Classes.POPOVER` element.
     */
-  var popoverRef: js.UndefOr[js.Function1[/* ref */ reactLib.HTMLDivElement | scala.Null, scala.Unit]] = js.undefined
+  var popoverRef: js.UndefOr[js.Function1[/* ref */ stdLib.HTMLDivElement | scala.Null, scala.Unit]] = js.undefined
   /**
     * The target to which the popover content is attached. This can instead be
     * provided as the _first_ element in `children`.
@@ -50,7 +50,7 @@ object IPopoverProps {
   @scala.inline
   def apply(
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
-    backdropProps: reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement] = null,
+    backdropProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement] = null,
     boundary: popperDotJsLib.popperDotJsMod.Boundary = null,
     canEscapeKeyClose: js.UndefOr[scala.Boolean] = js.undefined,
     captureDismiss: js.UndefOr[scala.Boolean] = js.undefined,
@@ -68,28 +68,21 @@ object IPopoverProps {
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
     minimal: js.UndefOr[scala.Boolean] = js.undefined,
     modifiers: popperDotJsLib.popperDotJsMod.Modifiers = null,
-    onClose: js.Function1[
-      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
-      scala.Unit
-    ] = null,
-    onClosed: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
-    onClosing: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
-    onInteraction: js.Function2[
-      /* nextOpenState */ scala.Boolean, 
-      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
-      scala.Unit
-    ] = null,
-    onOpened: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
-    onOpening: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
+    onClose: /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]] => scala.Unit = null,
+    onClosed: /* node */ stdLib.HTMLElement => scala.Unit = null,
+    onClosing: /* node */ stdLib.HTMLElement => scala.Unit = null,
+    onInteraction: (/* nextOpenState */ scala.Boolean, /* e */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]]) => scala.Unit = null,
+    onOpened: /* node */ stdLib.HTMLElement => scala.Unit = null,
+    onOpening: /* node */ stdLib.HTMLElement => scala.Unit = null,
     openOnTargetFocus: js.UndefOr[scala.Boolean] = js.undefined,
     popoverClassName: java.lang.String = null,
-    popoverRef: js.Function1[/* ref */ reactLib.HTMLDivElement | scala.Null, scala.Unit] = null,
+    popoverRef: /* ref */ stdLib.HTMLDivElement | scala.Null => scala.Unit = null,
     portalClassName: java.lang.String = null,
-    portalContainer: reactLib.HTMLElement = null,
+    portalContainer: stdLib.HTMLElement = null,
     position: atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverSharedPropsMod.PopoverPosition = null,
     target: java.lang.String | reactLib.reactMod.Global.JSXNs.Element = null,
     targetClassName: java.lang.String = null,
-    targetProps: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] = null,
+    targetProps: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] = null,
     targetTagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null,
     transitionDuration: scala.Int | scala.Double = null,
     usePortal: js.UndefOr[scala.Boolean] = js.undefined,
@@ -115,15 +108,15 @@ object IPopoverProps {
     if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
     if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal)
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onClosed != null) __obj.updateDynamic("onClosed")(onClosed)
-    if (onClosing != null) __obj.updateDynamic("onClosing")(onClosing)
-    if (onInteraction != null) __obj.updateDynamic("onInteraction")(onInteraction)
-    if (onOpened != null) __obj.updateDynamic("onOpened")(onOpened)
-    if (onOpening != null) __obj.updateDynamic("onOpening")(onOpening)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
+    if (onClosed != null) __obj.updateDynamic("onClosed")(js.Any.fromFunction1(onClosed))
+    if (onClosing != null) __obj.updateDynamic("onClosing")(js.Any.fromFunction1(onClosing))
+    if (onInteraction != null) __obj.updateDynamic("onInteraction")(js.Any.fromFunction2(onInteraction))
+    if (onOpened != null) __obj.updateDynamic("onOpened")(js.Any.fromFunction1(onOpened))
+    if (onOpening != null) __obj.updateDynamic("onOpening")(js.Any.fromFunction1(onOpening))
     if (!js.isUndefined(openOnTargetFocus)) __obj.updateDynamic("openOnTargetFocus")(openOnTargetFocus)
     if (popoverClassName != null) __obj.updateDynamic("popoverClassName")(popoverClassName)
-    if (popoverRef != null) __obj.updateDynamic("popoverRef")(popoverRef)
+    if (popoverRef != null) __obj.updateDynamic("popoverRef")(js.Any.fromFunction1(popoverRef))
     if (portalClassName != null) __obj.updateDynamic("portalClassName")(portalClassName)
     if (portalContainer != null) __obj.updateDynamic("portalContainer")(portalContainer)
     if (position != null) __obj.updateDynamic("position")(position)

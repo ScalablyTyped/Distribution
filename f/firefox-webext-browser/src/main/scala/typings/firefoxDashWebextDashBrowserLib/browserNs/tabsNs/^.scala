@@ -47,9 +47,7 @@ object ^ extends js.Object {
     * listen to onUpdated events to be notified when a URL is set.
     * @param tab Details of the tab that was created.
     */
-  val onCreated: firefoxDashWebextDashBrowserLib.WebExtEvent[
-    js.Function1[/* tab */ firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab, scala.Unit]
-  ] = js.native
+  val onCreated: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* tab */ Tab, scala.Unit]] = js.native
   /** Fired when a tab is detached from a window, for example because it is being moved between windows. */
   val onDetached: firefoxDashWebextDashBrowserLib.WebExtEvent[
     js.Function2[
@@ -114,11 +112,11 @@ object ^ extends js.Object {
     * @param changeInfo Lists the changes to the state of the tab that was updated.
     * @param tab Gives the state of the tab that was updated.
     */
-  val onUpdated: firefoxDashWebextDashBrowserLib.browserNs.tabsNs._TabsOnUpdatedEvent[
+  val onUpdated: _TabsOnUpdatedEvent[
     js.Function3[
       /* tabId */ scala.Double, 
       /* changeInfo */ firefoxDashWebextDashBrowserLib.Anon_Attention, 
-      /* tab */ firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab, 
+      /* tab */ Tab, 
       scala.Unit
     ]
   ] = js.native
@@ -159,7 +157,7 @@ object ^ extends js.Object {
   def connect(tabId: scala.Double): firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.Port = js.native
   def connect(tabId: scala.Double, connectInfo: firefoxDashWebextDashBrowserLib.Anon_FrameIdName): firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.Port = js.native
   /** Creates a new tab. */
-  def create(createProperties: firefoxDashWebextDashBrowserLib.Anon_Active): js.Promise[js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab]] = js.native
+  def create(createProperties: firefoxDashWebextDashBrowserLib.Anon_Active): js.Promise[js.UndefOr[Tab]] = js.native
   /**
     * Detects the primary language of the content in a tab.
     * @param [tabId] Defaults to the active tab of the current window.
@@ -176,7 +174,7 @@ object ^ extends js.Object {
     * Duplicates a tab.
     * @param tabId The ID of the tab which is to be duplicated.
     */
-  def duplicate(tabId: scala.Double): js.Promise[js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab]] = js.native
+  def duplicate(tabId: scala.Double): js.Promise[js.UndefOr[Tab]] = js.native
   /**
     * Injects JavaScript code into a page. For details, see the programmatic injection section of the content scripts
     * doc.
@@ -195,26 +193,26 @@ object ^ extends js.Object {
   ): js.Promise[js.UndefOr[js.Array[_]]] = js.native
   /* tabs functions */
   /** Retrieves details about the specified tab. */
-  def get(tabId: scala.Double): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab] = js.native
+  def get(tabId: scala.Double): js.Promise[Tab] = js.native
   /**
     * Gets details about all tabs in the specified window.
     * @param [windowId] Defaults to the current window.
     * @deprecated Please use `tabs.query` `{windowId: windowId}`.
     */
-  def getAllInWindow(): js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab]] = js.native
-  def getAllInWindow(windowId: scala.Double): js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab]] = js.native
+  def getAllInWindow(): js.Promise[js.Array[Tab]] = js.native
+  def getAllInWindow(windowId: scala.Double): js.Promise[js.Array[Tab]] = js.native
   /**
     * Gets the tab that this script call is being made from. May be undefined if called from a non-tab context (for
     * example: a background page or popup view).
     */
-  def getCurrent(): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab] = js.native
+  def getCurrent(): js.Promise[Tab] = js.native
   /**
     * Gets the tab that is selected in the specified window.
     * @param [windowId] Defaults to the current window.
     * @deprecated Please use `tabs.query` `{active: true}`.
     */
-  def getSelected(): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab] = js.native
-  def getSelected(windowId: scala.Double): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab] = js.native
+  def getSelected(): js.Promise[Tab] = js.native
+  def getSelected(windowId: scala.Double): js.Promise[Tab] = js.native
   /**
     * Gets the current zoom factor of a specified tab.
     * @param [tabId] The ID of the tab to get the current zoom factor from; defaults to the active tab of the current
@@ -227,8 +225,8 @@ object ^ extends js.Object {
     * @param [tabId] The ID of the tab to get the current zoom settings from; defaults to the active tab of the
     *     current window.
     */
-  def getZoomSettings(): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.tabsNs.ZoomSettings] = js.native
-  def getZoomSettings(tabId: scala.Double): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.tabsNs.ZoomSettings] = js.native
+  def getZoomSettings(): js.Promise[ZoomSettings] = js.native
+  def getZoomSettings(tabId: scala.Double): js.Promise[ZoomSettings] = js.native
   def hide(tabIds: js.Array[scala.Double]): js.Promise[js.Array[scala.Double]] = js.native
   /**
     * Hides one or more tabs. The `"tabHide"` permission is required to hide tabs. Not all tabs are hidable. Returns
@@ -252,21 +250,13 @@ object ^ extends js.Object {
     tabId: scala.Double,
     details: firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.InjectDetails
   ): js.Promise[scala.Unit] = js.native
-  def move(tabIds: js.Array[scala.Double], moveProperties: firefoxDashWebextDashBrowserLib.Anon_IndexWindowId): js.Promise[
-    js.UndefOr[
-      firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab | js.Array[firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab]
-    ]
-  ] = js.native
+  def move(tabIds: js.Array[scala.Double], moveProperties: firefoxDashWebextDashBrowserLib.Anon_IndexWindowId): js.Promise[js.UndefOr[Tab | js.Array[Tab]]] = js.native
   /**
     * Moves one or more tabs to a new position within its window, or to a new window. Note that tabs can only be moved
     * to and from normal (window.type === "normal") windows.
     * @param tabIds The tab or list of tabs to move.
     */
-  def move(tabIds: scala.Double, moveProperties: firefoxDashWebextDashBrowserLib.Anon_IndexWindowId): js.Promise[
-    js.UndefOr[
-      firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab | js.Array[firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab]
-    ]
-  ] = js.native
+  def move(tabIds: scala.Double, moveProperties: firefoxDashWebextDashBrowserLib.Anon_IndexWindowId): js.Promise[js.UndefOr[Tab | js.Array[Tab]]] = js.native
   /**
     * Removes an array of tabs from their lines of succession and prepends or appends them in a chain to another tab.
     * @param tabIds An array of tab IDs to move in the line of succession. For each tab in the array, the tab's
@@ -289,7 +279,7 @@ object ^ extends js.Object {
   /** Shows print preview for page in active tab. */
   def printPreview(): js.Promise[scala.Unit] = js.native
   /** Gets all tabs that have the specified properties, or all tabs if no properties are specified. */
-  def query(queryInfo: firefoxDashWebextDashBrowserLib.Anon_ActiveAttention): js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab]] = js.native
+  def query(queryInfo: firefoxDashWebextDashBrowserLib.Anon_ActiveAttention): js.Promise[js.Array[Tab]] = js.native
   /**
     * Reload a tab.
     * @param [tabId] The ID of the tab to reload; defaults to the selected tab of the current window.
@@ -323,7 +313,7 @@ object ^ extends js.Object {
     * Saves page in active tab as a PDF file.
     * @param pageSettings The page settings used to save the PDF file.
     */
-  def saveAsPDF(pageSettings: firefoxDashWebextDashBrowserLib.browserNs.tabsNs.PageSettings): js.Promise[js.UndefOr[java.lang.String]] = js.native
+  def saveAsPDF(pageSettings: PageSettings): js.Promise[js.UndefOr[java.lang.String]] = js.native
   /**
     * Sends a single message to the content script(s) in the specified tab, with an optional callback to run when a
     * response is sent back. The `runtime.onMessage` event is fired in each content script running in the specified
@@ -363,13 +353,13 @@ object ^ extends js.Object {
     *     window.
     * @param zoomSettings Defines how zoom changes are handled and at what scope.
     */
-  def setZoomSettings(tabId: scala.Double, zoomSettings: firefoxDashWebextDashBrowserLib.browserNs.tabsNs.ZoomSettings): js.Promise[scala.Unit] = js.native
+  def setZoomSettings(tabId: scala.Double, zoomSettings: ZoomSettings): js.Promise[scala.Unit] = js.native
   /**
     * Sets the zoom settings for a specified tab, which define how zoom changes are handled. These settings are reset
     * to defaults upon navigating the tab.
     * @param zoomSettings Defines how zoom changes are handled and at what scope.
     */
-  def setZoomSettings(zoomSettings: firefoxDashWebextDashBrowserLib.browserNs.tabsNs.ZoomSettings): js.Promise[scala.Unit] = js.native
+  def setZoomSettings(zoomSettings: ZoomSettings): js.Promise[scala.Unit] = js.native
   def show(tabIds: js.Array[scala.Double]): js.Promise[scala.Unit] = js.native
   /**
     * Shows one or more tabs.
@@ -386,10 +376,10 @@ object ^ extends js.Object {
     * Modifies the properties of a tab. Properties that are not specified in `updateProperties` are not modified.
     * @param tabId Defaults to the selected tab of the current window.
     */
-  def update(tabId: scala.Double, updateProperties: firefoxDashWebextDashBrowserLib.Anon_ActiveHighlighted): js.Promise[js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab]] = js.native
+  def update(tabId: scala.Double, updateProperties: firefoxDashWebextDashBrowserLib.Anon_ActiveHighlighted): js.Promise[js.UndefOr[Tab]] = js.native
   /**
     * Modifies the properties of a tab. Properties that are not specified in `updateProperties` are not modified.
     */
-  def update(updateProperties: firefoxDashWebextDashBrowserLib.Anon_ActiveHighlighted): js.Promise[js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab]] = js.native
+  def update(updateProperties: firefoxDashWebextDashBrowserLib.Anon_ActiveHighlighted): js.Promise[js.UndefOr[Tab]] = js.native
 }
 

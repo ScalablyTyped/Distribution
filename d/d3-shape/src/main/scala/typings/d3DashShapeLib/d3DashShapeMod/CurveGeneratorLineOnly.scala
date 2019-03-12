@@ -23,11 +23,11 @@ trait CurveGeneratorLineOnly extends js.Object {
 object CurveGeneratorLineOnly {
   @scala.inline
   def apply(
-    lineEnd: js.Function0[scala.Unit],
-    lineStart: js.Function0[scala.Unit],
-    point: js.Function2[scala.Double, scala.Double, scala.Unit]
+    lineEnd: () => scala.Unit,
+    lineStart: () => scala.Unit,
+    point: (scala.Double, scala.Double) => scala.Unit
   ): CurveGeneratorLineOnly = {
-    val __obj = js.Dynamic.literal(lineEnd = lineEnd, lineStart = lineStart, point = point)
+    val __obj = js.Dynamic.literal(lineEnd = js.Any.fromFunction0(lineEnd), lineStart = js.Any.fromFunction0(lineStart), point = js.Any.fromFunction2(point))
   
     __obj.asInstanceOf[CurveGeneratorLineOnly]
   }

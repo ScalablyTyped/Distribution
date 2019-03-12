@@ -23,21 +23,13 @@ trait CanvasFillStrokeStyles extends js.Object {
 object CanvasFillStrokeStyles {
   @scala.inline
   def apply(
-    createLinearGradient: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, CanvasGradient],
-    createPattern: js.Function2[CanvasImageSource, java.lang.String, CanvasPattern | scala.Null],
-    createRadialGradient: js.Function6[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      CanvasGradient
-    ],
+    createLinearGradient: (scala.Double, scala.Double, scala.Double, scala.Double) => CanvasGradient,
+    createPattern: (CanvasImageSource, java.lang.String) => CanvasPattern | scala.Null,
+    createRadialGradient: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => CanvasGradient,
     fillStyle: java.lang.String | CanvasGradient | CanvasPattern,
     strokeStyle: java.lang.String | CanvasGradient | CanvasPattern
   ): CanvasFillStrokeStyles = {
-    val __obj = js.Dynamic.literal(createLinearGradient = createLinearGradient, createPattern = createPattern, createRadialGradient = createRadialGradient, fillStyle = fillStyle.asInstanceOf[js.Any], strokeStyle = strokeStyle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(createLinearGradient = js.Any.fromFunction4(createLinearGradient), createPattern = js.Any.fromFunction2(createPattern), createRadialGradient = js.Any.fromFunction6(createRadialGradient), fillStyle = fillStyle.asInstanceOf[js.Any], strokeStyle = strokeStyle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CanvasFillStrokeStyles]
   }

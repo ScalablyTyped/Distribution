@@ -20,17 +20,17 @@ object StoreOptions {
   def apply(
     handlers: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     storeName: java.lang.String,
-    dehydrate: js.Function0[_] = null,
-    initialize: js.Function0[scala.Unit] = null,
+    dehydrate: () => _ = null,
+    initialize: () => scala.Unit = null,
     mixins: js.Array[js.Object] = null,
-    rehydrate: js.Function1[/* state */ js.Any, scala.Unit] = null,
+    rehydrate: /* state */ js.Any => scala.Unit = null,
     statics: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): StoreOptions = {
     val __obj = js.Dynamic.literal(handlers = handlers, storeName = storeName)
-    if (dehydrate != null) __obj.updateDynamic("dehydrate")(dehydrate)
-    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
+    if (dehydrate != null) __obj.updateDynamic("dehydrate")(js.Any.fromFunction0(dehydrate))
+    if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction0(initialize))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (rehydrate != null) __obj.updateDynamic("rehydrate")(rehydrate)
+    if (rehydrate != null) __obj.updateDynamic("rehydrate")(js.Any.fromFunction1(rehydrate))
     if (statics != null) __obj.updateDynamic("statics")(statics)
     __obj.asInstanceOf[StoreOptions]
   }

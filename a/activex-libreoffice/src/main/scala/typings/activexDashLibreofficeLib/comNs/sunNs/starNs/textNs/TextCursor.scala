@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
     * @throws UnknownPropertyException if one property does not exist.
     */
   /* InferMemberOverrides */
-  override def getPropertyStates(aPropertyName: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState]
+  override def getPropertyStates(aPropertyName: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState]
   /**
     * moves the cursor to the end of the current paragraph.
     * @returns `TRUE` if the cursor is now at the end of a paragraph, `FALSE` otherwise. If `FALSE` was returned the cursor will remain at its original position.
@@ -111,13 +111,10 @@ object TextCursor {
     XSentenceCursor: XSentenceCursor = null,
     XSortable: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XSortable = null,
     XWordCursor: XWordCursor = null,
-    getPropertyStates: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState]
-    ],
+    getPropertyStates: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState],
     TextRange: TextRange = null
   ): TextCursor = {
-    val __obj = js.Dynamic.literal(getPropertyStates = getPropertyStates)
+    val __obj = js.Dynamic.literal(getPropertyStates = js.Any.fromFunction1(getPropertyStates))
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XDocumentInsertable)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XMultiPropertyStates)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XParagraphCursor)

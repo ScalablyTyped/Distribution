@@ -24,23 +24,21 @@ trait EmbeddedChart extends js.Object {
 object EmbeddedChart {
   @scala.inline
   def apply(
-    getAs: js.Function1[java.lang.String, googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob],
-    getBlob: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob],
-    getContainerInfo: js.Function0[ContainerInfo],
-    getHiddenDimensionStrategy: js.Function0[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartHiddenDimensionStrategy
-    ],
-    getId: js.Function0[java.lang.String],
-    getMergeStrategy: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartMergeStrategy],
-    getNumHeaders: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getOptions: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartOptions],
-    getRanges: js.Function0[js.Array[Range]],
-    getTransposeRowsAndColumns: js.Function0[scala.Boolean],
-    getType: js.Function0[java.lang.String],
-    modify: js.Function0[EmbeddedChartBuilder],
-    setId: js.Function1[java.lang.String, googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.Chart]
+    getAs: java.lang.String => googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob,
+    getBlob: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob,
+    getContainerInfo: () => ContainerInfo,
+    getHiddenDimensionStrategy: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartHiddenDimensionStrategy,
+    getId: () => java.lang.String,
+    getMergeStrategy: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartMergeStrategy,
+    getNumHeaders: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getOptions: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartOptions,
+    getRanges: () => js.Array[Range],
+    getTransposeRowsAndColumns: () => scala.Boolean,
+    getType: () => java.lang.String,
+    modify: () => EmbeddedChartBuilder,
+    setId: java.lang.String => googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.Chart
   ): EmbeddedChart = {
-    val __obj = js.Dynamic.literal(getAs = getAs, getBlob = getBlob, getContainerInfo = getContainerInfo, getHiddenDimensionStrategy = getHiddenDimensionStrategy, getId = getId, getMergeStrategy = getMergeStrategy, getNumHeaders = getNumHeaders, getOptions = getOptions, getRanges = getRanges, getTransposeRowsAndColumns = getTransposeRowsAndColumns, getType = getType, modify = modify, setId = setId)
+    val __obj = js.Dynamic.literal(getAs = js.Any.fromFunction1(getAs), getBlob = js.Any.fromFunction0(getBlob), getContainerInfo = js.Any.fromFunction0(getContainerInfo), getHiddenDimensionStrategy = js.Any.fromFunction0(getHiddenDimensionStrategy), getId = js.Any.fromFunction0(getId), getMergeStrategy = js.Any.fromFunction0(getMergeStrategy), getNumHeaders = js.Any.fromFunction0(getNumHeaders), getOptions = js.Any.fromFunction0(getOptions), getRanges = js.Any.fromFunction0(getRanges), getTransposeRowsAndColumns = js.Any.fromFunction0(getTransposeRowsAndColumns), getType = js.Any.fromFunction0(getType), modify = js.Any.fromFunction0(modify), setId = js.Any.fromFunction1(setId))
   
     __obj.asInstanceOf[EmbeddedChart]
   }

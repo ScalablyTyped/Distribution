@@ -12,14 +12,14 @@ trait MtfRenderer extends XMtfRenderer {
 object MtfRenderer {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createWithBitmapCanvas: js.Function1[XBitmapCanvas, scala.Unit],
-    draw: js.Function2[scala.Double, scala.Double, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setMetafile: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
+    acquire: () => scala.Unit,
+    createWithBitmapCanvas: XBitmapCanvas => scala.Unit,
+    draw: (scala.Double, scala.Double) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setMetafile: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => scala.Unit
   ): MtfRenderer = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createWithBitmapCanvas = createWithBitmapCanvas, draw = draw, queryInterface = queryInterface, release = release, setMetafile = setMetafile)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createWithBitmapCanvas = js.Any.fromFunction1(createWithBitmapCanvas), draw = js.Any.fromFunction2(draw), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setMetafile = js.Any.fromFunction1(setMetafile))
   
     __obj.asInstanceOf[MtfRenderer]
   }

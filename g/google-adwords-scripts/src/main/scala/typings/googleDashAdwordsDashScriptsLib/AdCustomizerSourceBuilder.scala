@@ -14,12 +14,12 @@ trait AdCustomizerSourceBuilder[AdCustomizerSource] extends AdWordsBuilder[AdCus
 object AdCustomizerSourceBuilder {
   @scala.inline
   def apply[AdCustomizerSource](
-    addAttribute: js.Function2[java.lang.String, java.lang.String, AdCustomizerSourceBuilder[AdCustomizerSource]],
-    addAttributes: js.Function1[js.Object, AdCustomizerSourceBuilder[AdCustomizerSource]],
-    build: js.Function0[AdWordsOperation[AdCustomizerSource]],
-    withName: js.Function1[java.lang.String, AdCustomizerSourceBuilder[AdCustomizerSource]]
+    addAttribute: (java.lang.String, java.lang.String) => AdCustomizerSourceBuilder[AdCustomizerSource],
+    addAttributes: js.Object => AdCustomizerSourceBuilder[AdCustomizerSource],
+    build: () => AdWordsOperation[AdCustomizerSource],
+    withName: java.lang.String => AdCustomizerSourceBuilder[AdCustomizerSource]
   ): AdCustomizerSourceBuilder[AdCustomizerSource] = {
-    val __obj = js.Dynamic.literal(addAttribute = addAttribute, addAttributes = addAttributes, build = build, withName = withName)
+    val __obj = js.Dynamic.literal(addAttribute = js.Any.fromFunction2(addAttribute), addAttributes = js.Any.fromFunction1(addAttributes), build = js.Any.fromFunction0(build), withName = js.Any.fromFunction1(withName))
   
     __obj.asInstanceOf[AdCustomizerSourceBuilder[AdCustomizerSource]]
   }

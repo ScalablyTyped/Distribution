@@ -29,13 +29,13 @@ trait XConnectionBroadcaster
 object XConnectionBroadcaster {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addStreamListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStreamListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeStreamListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStreamListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addStreamListener: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStreamListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeStreamListener: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStreamListener => scala.Unit
   ): XConnectionBroadcaster = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addStreamListener = addStreamListener, queryInterface = queryInterface, release = release, removeStreamListener = removeStreamListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addStreamListener = js.Any.fromFunction1(addStreamListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeStreamListener = js.Any.fromFunction1(removeStreamListener))
   
     __obj.asInstanceOf[XConnectionBroadcaster]
   }

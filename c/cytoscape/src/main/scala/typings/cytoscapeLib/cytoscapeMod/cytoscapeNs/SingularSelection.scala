@@ -23,8 +23,8 @@ trait SingularSelection extends js.Object {
 
 object SingularSelection {
   @scala.inline
-  def apply(selectable: js.Function0[scala.Boolean], selected: js.Function0[scala.Boolean]): SingularSelection = {
-    val __obj = js.Dynamic.literal(selectable = selectable, selected = selected)
+  def apply(selectable: () => scala.Boolean, selected: () => scala.Boolean): SingularSelection = {
+    val __obj = js.Dynamic.literal(selectable = js.Any.fromFunction0(selectable), selected = js.Any.fromFunction0(selected))
   
     __obj.asInstanceOf[SingularSelection]
   }

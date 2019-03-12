@@ -38,35 +38,35 @@ trait App extends js.Object {
 object App {
   @scala.inline
   def apply(
-    all: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    checkout: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    copy: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    delete: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    get: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    head: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    lock: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    `m-search`: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    merge: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    mkactivity: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    mkcol: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    move: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    notify: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    options: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    patch: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    post: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    propfind: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    proppatch: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    put: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    redirect: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    report: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    search: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    subscribe: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    trace: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    unlock: js.Function2[java.lang.String, HttpHandler, scala.Unit],
-    unsubscribe: js.Function2[java.lang.String, HttpHandler, scala.Unit]
+    all: (java.lang.String, HttpHandler) => scala.Unit,
+    checkout: (java.lang.String, HttpHandler) => scala.Unit,
+    copy: (java.lang.String, HttpHandler) => scala.Unit,
+    delete: (java.lang.String, HttpHandler) => scala.Unit,
+    get: (java.lang.String, HttpHandler) => scala.Unit,
+    head: (java.lang.String, HttpHandler) => scala.Unit,
+    lock: (java.lang.String, HttpHandler) => scala.Unit,
+    `m-search`: (java.lang.String, HttpHandler) => scala.Unit,
+    merge: (java.lang.String, HttpHandler) => scala.Unit,
+    mkactivity: (java.lang.String, HttpHandler) => scala.Unit,
+    mkcol: (java.lang.String, HttpHandler) => scala.Unit,
+    move: (java.lang.String, HttpHandler) => scala.Unit,
+    notify: (java.lang.String, HttpHandler) => scala.Unit,
+    options: (java.lang.String, HttpHandler) => scala.Unit,
+    patch: (java.lang.String, HttpHandler) => scala.Unit,
+    post: (java.lang.String, HttpHandler) => scala.Unit,
+    propfind: (java.lang.String, HttpHandler) => scala.Unit,
+    proppatch: (java.lang.String, HttpHandler) => scala.Unit,
+    put: (java.lang.String, HttpHandler) => scala.Unit,
+    redirect: (java.lang.String, java.lang.String) => scala.Unit,
+    report: (java.lang.String, HttpHandler) => scala.Unit,
+    search: (java.lang.String, HttpHandler) => scala.Unit,
+    subscribe: (java.lang.String, HttpHandler) => scala.Unit,
+    trace: (java.lang.String, HttpHandler) => scala.Unit,
+    unlock: (java.lang.String, HttpHandler) => scala.Unit,
+    unsubscribe: (java.lang.String, HttpHandler) => scala.Unit
   ): App = {
-    val __obj = js.Dynamic.literal(all = all, checkout = checkout, copy = copy, delete = delete, get = get, head = head, lock = lock, merge = merge, mkactivity = mkactivity, mkcol = mkcol, move = move, notify = notify, options = options, patch = patch, post = post, propfind = propfind, proppatch = proppatch, put = put, redirect = redirect, report = report, search = search, subscribe = subscribe, trace = trace, unlock = unlock, unsubscribe = unsubscribe)
-    __obj.updateDynamic("m-search")(`m-search`)
+    val __obj = js.Dynamic.literal(all = js.Any.fromFunction2(all), checkout = js.Any.fromFunction2(checkout), copy = js.Any.fromFunction2(copy), delete = js.Any.fromFunction2(delete), get = js.Any.fromFunction2(get), head = js.Any.fromFunction2(head), lock = js.Any.fromFunction2(lock), merge = js.Any.fromFunction2(merge), mkactivity = js.Any.fromFunction2(mkactivity), mkcol = js.Any.fromFunction2(mkcol), move = js.Any.fromFunction2(move), notify = js.Any.fromFunction2(notify), options = js.Any.fromFunction2(options), patch = js.Any.fromFunction2(patch), post = js.Any.fromFunction2(post), propfind = js.Any.fromFunction2(propfind), proppatch = js.Any.fromFunction2(proppatch), put = js.Any.fromFunction2(put), redirect = js.Any.fromFunction2(redirect), report = js.Any.fromFunction2(report), search = js.Any.fromFunction2(search), subscribe = js.Any.fromFunction2(subscribe), trace = js.Any.fromFunction2(trace), unlock = js.Any.fromFunction2(unlock), unsubscribe = js.Any.fromFunction2(unsubscribe))
+    __obj.updateDynamic("m-search")(js.Any.fromFunction2(`m-search`))
     __obj.asInstanceOf[App]
   }
 }

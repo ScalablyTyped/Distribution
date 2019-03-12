@@ -24,9 +24,9 @@ object Anon_3Apple {
       colorDashConvertLib.colorDashConvertLibStrings.g16, 
       colorDashConvertLib.colorDashConvertLibStrings.b16
     ],
-    rgb: js.Function1[colorDashConvertLib.conversionsMod.APPLE, colorDashConvertLib.conversionsMod.RGB]
+    rgb: colorDashConvertLib.conversionsMod.APPLE => colorDashConvertLib.conversionsMod.RGB
   ): Anon_3Apple = {
-    val __obj = js.Dynamic.literal(channels = channels, labels = labels, rgb = rgb)
+    val __obj = js.Dynamic.literal(channels = channels, labels = labels, rgb = js.Any.fromFunction1(rgb))
   
     __obj.asInstanceOf[Anon_3Apple]
   }

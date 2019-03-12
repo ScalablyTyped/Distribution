@@ -21,12 +21,12 @@ object File {
     name: java.lang.String,
     path: java.lang.String,
     size: scala.Double,
-    toJSON: js.Function0[js.Object],
+    toJSON: () => js.Object,
     `type`: java.lang.String,
     hash: java.lang.String = null,
     lastModifiedDate: stdLib.Date = null
   ): File = {
-    val __obj = js.Dynamic.literal(name = name, path = path, size = size, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(name = name, path = path, size = size, toJSON = js.Any.fromFunction0(toJSON))
     __obj.updateDynamic("type")(`type`)
     if (hash != null) __obj.updateDynamic("hash")(hash)
     if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate)

@@ -12,8 +12,8 @@ trait ObjFileParser extends js.Object {
 
 object ObjFileParser {
   @scala.inline
-  def apply(parse: js.Function0[objDashFileDashParserLib.objDashFileDashParserMod.ObjFileParserNs.ObjFile]): ObjFileParser = {
-    val __obj = js.Dynamic.literal(parse = parse)
+  def apply(parse: () => objDashFileDashParserLib.objDashFileDashParserMod.ObjFileParserNs.ObjFile): ObjFileParser = {
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction0(parse))
   
     __obj.asInstanceOf[ObjFileParser]
   }

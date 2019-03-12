@@ -16,9 +16,9 @@ object Anon_DisableHeight {
   def apply(
     disableHeight: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`false`,
     disableWidth: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`false`,
-    onResize: js.Function0[scala.Unit]
+    onResize: () => scala.Unit
   ): Anon_DisableHeight = {
-    val __obj = js.Dynamic.literal(disableHeight = disableHeight, disableWidth = disableWidth, onResize = onResize)
+    val __obj = js.Dynamic.literal(disableHeight = disableHeight, disableWidth = disableWidth, onResize = js.Any.fromFunction0(onResize))
   
     __obj.asInstanceOf[Anon_DisableHeight]
   }

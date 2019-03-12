@@ -14,11 +14,11 @@ trait IEmailComposerService extends js.Object {
 object IEmailComposerService {
   @scala.inline
   def apply(
-    addAlias: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    isAvailable: js.Function0[angularLib.angularMod.angularNs.IPromise[scala.Boolean]],
-    open: js.Function1[IEmailComposerOptions, angularLib.angularMod.angularNs.IPromise[_]]
+    addAlias: (java.lang.String, java.lang.String) => scala.Unit,
+    isAvailable: () => angularLib.angularMod.angularNs.IPromise[scala.Boolean],
+    open: IEmailComposerOptions => angularLib.angularMod.angularNs.IPromise[_]
   ): IEmailComposerService = {
-    val __obj = js.Dynamic.literal(addAlias = addAlias, isAvailable = isAvailable, open = open)
+    val __obj = js.Dynamic.literal(addAlias = js.Any.fromFunction2(addAlias), isAvailable = js.Any.fromFunction0(isAvailable), open = js.Any.fromFunction1(open))
   
     __obj.asInstanceOf[IEmailComposerService]
   }

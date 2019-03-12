@@ -18,19 +18,16 @@ trait Lookup[T] extends Clonable[Lookup[T]] {
 object Lookup {
   @scala.inline
   def apply[T](
-    add: js.Function2[ServiceIdentifier[_], T, scala.Unit],
-    clone: js.Function0[Lookup[T]],
-    get: js.Function1[ServiceIdentifier[_], js.Array[T]],
-    getMap: js.Function0[stdLib.Map[ServiceIdentifier[_], js.Array[T]]],
-    hasKey: js.Function1[ServiceIdentifier[_], scala.Boolean],
-    remove: js.Function1[ServiceIdentifier[_], scala.Unit],
-    removeByCondition: js.Function1[js.Function1[/* item */ T, scala.Boolean], scala.Unit],
-    traverse: js.Function1[
-      js.Function2[/* key */ ServiceIdentifier[_], /* value */ js.Array[T], scala.Unit], 
-      scala.Unit
-    ]
+    add: (ServiceIdentifier[_], T) => scala.Unit,
+    clone: () => Lookup[T],
+    get: ServiceIdentifier[_] => js.Array[T],
+    getMap: () => stdLib.Map[ServiceIdentifier[_], js.Array[T]],
+    hasKey: ServiceIdentifier[_] => scala.Boolean,
+    remove: ServiceIdentifier[_] => scala.Unit,
+    removeByCondition: js.Function1[/* item */ T, scala.Boolean] => scala.Unit,
+    traverse: js.Function2[/* key */ ServiceIdentifier[_], /* value */ js.Array[T], scala.Unit] => scala.Unit
   ): Lookup[T] = {
-    val __obj = js.Dynamic.literal(add = add, clone = clone, get = get, getMap = getMap, hasKey = hasKey, remove = remove, removeByCondition = removeByCondition, traverse = traverse)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), clone = js.Any.fromFunction0(clone), get = js.Any.fromFunction1(get), getMap = js.Any.fromFunction0(getMap), hasKey = js.Any.fromFunction1(hasKey), remove = js.Any.fromFunction1(remove), removeByCondition = js.Any.fromFunction1(removeByCondition), traverse = js.Any.fromFunction1(traverse))
   
     __obj.asInstanceOf[Lookup[T]]
   }

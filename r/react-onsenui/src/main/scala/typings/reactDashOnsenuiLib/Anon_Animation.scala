@@ -17,11 +17,11 @@ trait Anon_Animation extends js.Object {
   var mode: js.UndefOr[
     reactDashOnsenuiLib.reactDashOnsenuiLibStrings.collapse | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.split
   ] = js.undefined
-  var onClose: js.UndefOr[js.Function1[/* e */ js.UndefOr[reactLib.Event], scala.Unit]] = js.undefined
-  var onModeChange: js.UndefOr[js.Function1[/* e */ js.UndefOr[reactLib.Event], scala.Unit]] = js.undefined
-  var onOpen: js.UndefOr[js.Function1[/* e */ js.UndefOr[reactLib.Event], scala.Unit]] = js.undefined
-  var onPreClose: js.UndefOr[js.Function1[/* e */ js.UndefOr[reactLib.Event], scala.Unit]] = js.undefined
-  var onPreOpen: js.UndefOr[js.Function1[/* e */ js.UndefOr[reactLib.Event], scala.Unit]] = js.undefined
+  var onClose: js.UndefOr[js.Function1[/* e */ js.UndefOr[stdLib.Event], scala.Unit]] = js.undefined
+  var onModeChange: js.UndefOr[js.Function1[/* e */ js.UndefOr[stdLib.Event], scala.Unit]] = js.undefined
+  var onOpen: js.UndefOr[js.Function1[/* e */ js.UndefOr[stdLib.Event], scala.Unit]] = js.undefined
+  var onPreClose: js.UndefOr[js.Function1[/* e */ js.UndefOr[stdLib.Event], scala.Unit]] = js.undefined
+  var onPreOpen: js.UndefOr[js.Function1[/* e */ js.UndefOr[stdLib.Event], scala.Unit]] = js.undefined
   var openThreshold: js.UndefOr[scala.Double] = js.undefined
   var side: js.UndefOr[
     reactDashOnsenuiLib.reactDashOnsenuiLibStrings.left | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.right
@@ -39,11 +39,11 @@ object Anon_Animation {
     collapse: reactDashOnsenuiLib.reactDashOnsenuiLibStrings.portrait | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.landscape | scala.Boolean = null,
     isOpen: js.UndefOr[scala.Boolean] = js.undefined,
     mode: reactDashOnsenuiLib.reactDashOnsenuiLibStrings.collapse | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.split = null,
-    onClose: js.Function1[/* e */ js.UndefOr[reactLib.Event], scala.Unit] = null,
-    onModeChange: js.Function1[/* e */ js.UndefOr[reactLib.Event], scala.Unit] = null,
-    onOpen: js.Function1[/* e */ js.UndefOr[reactLib.Event], scala.Unit] = null,
-    onPreClose: js.Function1[/* e */ js.UndefOr[reactLib.Event], scala.Unit] = null,
-    onPreOpen: js.Function1[/* e */ js.UndefOr[reactLib.Event], scala.Unit] = null,
+    onClose: /* e */ js.UndefOr[stdLib.Event] => scala.Unit = null,
+    onModeChange: /* e */ js.UndefOr[stdLib.Event] => scala.Unit = null,
+    onOpen: /* e */ js.UndefOr[stdLib.Event] => scala.Unit = null,
+    onPreClose: /* e */ js.UndefOr[stdLib.Event] => scala.Unit = null,
+    onPreOpen: /* e */ js.UndefOr[stdLib.Event] => scala.Unit = null,
     openThreshold: scala.Int | scala.Double = null,
     side: reactDashOnsenuiLib.reactDashOnsenuiLibStrings.left | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.right = null,
     swipeTargetWidth: scala.Int | scala.Double = null,
@@ -56,11 +56,11 @@ object Anon_Animation {
     if (collapse != null) __obj.updateDynamic("collapse")(collapse.asInstanceOf[js.Any])
     if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onModeChange != null) __obj.updateDynamic("onModeChange")(onModeChange)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
-    if (onPreClose != null) __obj.updateDynamic("onPreClose")(onPreClose)
-    if (onPreOpen != null) __obj.updateDynamic("onPreOpen")(onPreOpen)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
+    if (onModeChange != null) __obj.updateDynamic("onModeChange")(js.Any.fromFunction1(onModeChange))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
+    if (onPreClose != null) __obj.updateDynamic("onPreClose")(js.Any.fromFunction1(onPreClose))
+    if (onPreOpen != null) __obj.updateDynamic("onPreOpen")(js.Any.fromFunction1(onPreOpen))
     if (openThreshold != null) __obj.updateDynamic("openThreshold")(openThreshold.asInstanceOf[js.Any])
     if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
     if (swipeTargetWidth != null) __obj.updateDynamic("swipeTargetWidth")(swipeTargetWidth.asInstanceOf[js.Any])

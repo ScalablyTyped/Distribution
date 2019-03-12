@@ -37,7 +37,7 @@ object ClockProps {
     gridArea: java.lang.String = null,
     hourLimit: grommetLib.grommetLibStrings.`12` | grommetLib.grommetLibStrings.`24` = null,
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null,
-    onChange: js.Function1[/* repeated */ js.Any, _] = null,
+    onChange: /* repeated */ js.Any => _ = null,
     precision: grommetLib.grommetLibStrings.hours | grommetLib.grommetLibStrings.minutes | grommetLib.grommetLibStrings.seconds = null,
     run: scala.Boolean | grommetLib.grommetLibStrings.backward | grommetLib.grommetLibStrings.forward = null,
     size: grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String = null,
@@ -50,7 +50,7 @@ object ClockProps {
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
     if (hourLimit != null) __obj.updateDynamic("hourLimit")(hourLimit.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (run != null) __obj.updateDynamic("run")(run.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

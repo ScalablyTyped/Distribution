@@ -91,48 +91,48 @@ object ISlot {
   def apply(
     IDataView: senchaUnderscoreTouchLib.ExtNs.dataviewNs.IDataView = null,
     align: java.lang.String = null,
-    applyData: js.Function1[/* data */ js.UndefOr[js.Any], _] = null,
-    applyTitle: js.Function1[/* title */ js.UndefOr[java.lang.String], java.lang.String] = null,
+    applyData: /* data */ js.UndefOr[js.Any] => _ = null,
+    applyTitle: /* title */ js.UndefOr[java.lang.String] => java.lang.String = null,
     displayField: java.lang.String = null,
-    getAlign: js.Function0[java.lang.String] = null,
-    getDisplayField: js.Function0[java.lang.String] = null,
-    getName: js.Function0[java.lang.String] = null,
-    getTitle: js.Function0[java.lang.String] = null,
-    getValueField: js.Function0[java.lang.String] = null,
+    getAlign: () => java.lang.String = null,
+    getDisplayField: () => java.lang.String = null,
+    getName: () => java.lang.String = null,
+    getTitle: () => java.lang.String = null,
+    getValueField: () => java.lang.String = null,
     itemTpl: java.lang.String = null,
     name: java.lang.String = null,
-    setAlign: js.Function1[/* align */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setDisplayField: js.Function1[/* displayField */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setItemTpl: js.Function1[/* itemTpl */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setName: js.Function1[/* name */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setTitle: js.Function1[/* title */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setValueField: js.Function1[/* valueField */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setAlign: /* align */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setDisplayField: /* displayField */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setItemTpl: /* itemTpl */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setName: /* name */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setTitle: /* title */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setValueField: /* valueField */ js.UndefOr[java.lang.String] => scala.Unit = null,
     title: java.lang.String = null,
-    updateAlign: js.Function2[/* newAlign */ js.UndefOr[js.Any], /* oldAlign */ js.UndefOr[js.Any], scala.Unit] = null,
+    updateAlign: (/* newAlign */ js.UndefOr[js.Any], /* oldAlign */ js.UndefOr[js.Any]) => scala.Unit = null,
     value: scala.Int | scala.Double = null,
     valueField: java.lang.String = null
   ): ISlot = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IDataView)
     if (align != null) __obj.updateDynamic("align")(align)
-    if (applyData != null) __obj.updateDynamic("applyData")(applyData)
-    if (applyTitle != null) __obj.updateDynamic("applyTitle")(applyTitle)
+    if (applyData != null) __obj.updateDynamic("applyData")(js.Any.fromFunction1(applyData))
+    if (applyTitle != null) __obj.updateDynamic("applyTitle")(js.Any.fromFunction1(applyTitle))
     if (displayField != null) __obj.updateDynamic("displayField")(displayField)
-    if (getAlign != null) __obj.updateDynamic("getAlign")(getAlign)
-    if (getDisplayField != null) __obj.updateDynamic("getDisplayField")(getDisplayField)
-    if (getName != null) __obj.updateDynamic("getName")(getName)
-    if (getTitle != null) __obj.updateDynamic("getTitle")(getTitle)
-    if (getValueField != null) __obj.updateDynamic("getValueField")(getValueField)
+    if (getAlign != null) __obj.updateDynamic("getAlign")(js.Any.fromFunction0(getAlign))
+    if (getDisplayField != null) __obj.updateDynamic("getDisplayField")(js.Any.fromFunction0(getDisplayField))
+    if (getName != null) __obj.updateDynamic("getName")(js.Any.fromFunction0(getName))
+    if (getTitle != null) __obj.updateDynamic("getTitle")(js.Any.fromFunction0(getTitle))
+    if (getValueField != null) __obj.updateDynamic("getValueField")(js.Any.fromFunction0(getValueField))
     if (itemTpl != null) __obj.updateDynamic("itemTpl")(itemTpl)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (setAlign != null) __obj.updateDynamic("setAlign")(setAlign)
-    if (setDisplayField != null) __obj.updateDynamic("setDisplayField")(setDisplayField)
-    if (setItemTpl != null) __obj.updateDynamic("setItemTpl")(setItemTpl)
-    if (setName != null) __obj.updateDynamic("setName")(setName)
-    if (setTitle != null) __obj.updateDynamic("setTitle")(setTitle)
-    if (setValueField != null) __obj.updateDynamic("setValueField")(setValueField)
+    if (setAlign != null) __obj.updateDynamic("setAlign")(js.Any.fromFunction1(setAlign))
+    if (setDisplayField != null) __obj.updateDynamic("setDisplayField")(js.Any.fromFunction1(setDisplayField))
+    if (setItemTpl != null) __obj.updateDynamic("setItemTpl")(js.Any.fromFunction1(setItemTpl))
+    if (setName != null) __obj.updateDynamic("setName")(js.Any.fromFunction1(setName))
+    if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction1(setTitle))
+    if (setValueField != null) __obj.updateDynamic("setValueField")(js.Any.fromFunction1(setValueField))
     if (title != null) __obj.updateDynamic("title")(title)
-    if (updateAlign != null) __obj.updateDynamic("updateAlign")(updateAlign)
+    if (updateAlign != null) __obj.updateDynamic("updateAlign")(js.Any.fromFunction2(updateAlign))
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (valueField != null) __obj.updateDynamic("valueField")(valueField)
     __obj.asInstanceOf[ISlot]

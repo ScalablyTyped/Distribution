@@ -15,14 +15,14 @@ object IconsumeAndShareCard {
   def apply(
     cardId: java.lang.String,
     code: java.lang.String,
-    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    success: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+    complete: /* repeated */ js.Any => scala.Unit = null,
+    fail: /* repeated */ js.Any => scala.Unit = null,
+    success: /* repeated */ js.Any => scala.Unit = null
   ): IconsumeAndShareCard = {
     val __obj = js.Dynamic.literal(cardId = cardId, code = code)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[IconsumeAndShareCard]
   }
 }

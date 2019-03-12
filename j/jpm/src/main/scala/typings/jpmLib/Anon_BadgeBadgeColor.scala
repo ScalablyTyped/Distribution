@@ -27,16 +27,16 @@ object Anon_BadgeBadgeColor {
     badgeColor: java.lang.String = null,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function1[/* state */ jpmLib.FFAddonSDKNs.ToggleButtonState, _] = null,
-    onClick: js.Function1[/* state */ jpmLib.FFAddonSDKNs.ToggleButtonState, _] = null
+    onChange: /* state */ jpmLib.FFAddonSDKNs.ToggleButtonState => _ = null,
+    onClick: /* state */ jpmLib.FFAddonSDKNs.ToggleButtonState => _ = null
   ): Anon_BadgeBadgeColor = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], id = id, label = label)
     if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
     if (badgeColor != null) __obj.updateDynamic("badgeColor")(badgeColor)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     __obj.asInstanceOf[Anon_BadgeBadgeColor]
   }
 }

@@ -38,13 +38,13 @@ object UnivariateColorSizeSliderStatistics {
   def apply(
     avg: scala.Double,
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     max: scala.Double,
     min: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     stddev: scala.Double
   ): UnivariateColorSizeSliderStatistics = {
-    val __obj = js.Dynamic.literal(avg = avg, constructor = constructor, hasOwnProperty = hasOwnProperty, max = max, min = min, propertyIsEnumerable = propertyIsEnumerable, stddev = stddev)
+    val __obj = js.Dynamic.literal(avg = avg, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), max = max, min = min, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stddev = stddev)
   
     __obj.asInstanceOf[UnivariateColorSizeSliderStatistics]
   }

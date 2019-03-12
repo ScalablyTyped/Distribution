@@ -15,10 +15,10 @@ object Opts {
   @scala.inline
   def apply[Item, Result](
     graph: stdLib.Map[Item, js.Array[Item]],
-    task: js.Function1[Item, Result],
+    task: Item => Result,
     force: js.UndefOr[scala.Boolean] = js.undefined
   ): Opts[Item, Result] = {
-    val __obj = js.Dynamic.literal(graph = graph, task = task)
+    val __obj = js.Dynamic.literal(graph = graph, task = js.Any.fromFunction1(task))
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
     __obj.asInstanceOf[Opts[Item, Result]]
   }

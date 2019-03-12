@@ -18,12 +18,12 @@ trait XBookmarkInsertTool
 object XBookmarkInsertTool {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    insertNewBookmark: js.Function2[XTextRange, java.lang.String, XTextContent],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    insertNewBookmark: (XTextRange, java.lang.String) => XTextContent,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XBookmarkInsertTool = {
-    val __obj = js.Dynamic.literal(acquire = acquire, insertNewBookmark = insertNewBookmark, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), insertNewBookmark = js.Any.fromFunction2(insertNewBookmark), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XBookmarkInsertTool]
   }

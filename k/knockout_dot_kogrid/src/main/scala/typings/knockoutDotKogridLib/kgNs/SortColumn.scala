@@ -14,12 +14,9 @@ trait SortColumn extends js.Object {
 
 object SortColumn {
   @scala.inline
-  def apply(
-    field: java.lang.String,
-    sortingAlgorithm: js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = null
-  ): SortColumn = {
+  def apply(field: java.lang.String, sortingAlgorithm: (/* a */ js.Any, /* b */ js.Any) => scala.Double = null): SortColumn = {
     val __obj = js.Dynamic.literal(field = field)
-    if (sortingAlgorithm != null) __obj.updateDynamic("sortingAlgorithm")(sortingAlgorithm)
+    if (sortingAlgorithm != null) __obj.updateDynamic("sortingAlgorithm")(js.Any.fromFunction2(sortingAlgorithm))
     __obj.asInstanceOf[SortColumn]
   }
 }

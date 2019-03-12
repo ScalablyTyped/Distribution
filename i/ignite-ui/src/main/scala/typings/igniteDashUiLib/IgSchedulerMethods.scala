@@ -74,21 +74,21 @@ trait IgSchedulerMethods extends js.Object {
 object IgSchedulerMethods {
   @scala.inline
   def apply(
-    changeGlobalLanguage: js.Function0[scala.Unit],
-    changeGlobalRegional: js.Function0[scala.Unit],
-    changeLocale: js.Function0[scala.Unit],
-    createAppointment: js.Function1[js.Object, js.Object],
-    dateRangeButton: js.Function0[java.lang.String],
-    deleteAppointment: js.Function1[js.Object, js.Object],
-    destroy: js.Function0[scala.Unit],
-    editAppointment: js.Function2[js.Object, js.Object, js.Object],
-    getAppointmentsInRange: js.Function2[stdLib.Date, stdLib.Date, js.Object],
-    getCalendar: js.Function0[java.lang.String],
-    nextButton: js.Function0[java.lang.String],
-    previousButton: js.Function0[java.lang.String],
-    todayButton: js.Function0[java.lang.String]
+    changeGlobalLanguage: () => scala.Unit,
+    changeGlobalRegional: () => scala.Unit,
+    changeLocale: () => scala.Unit,
+    createAppointment: js.Object => js.Object,
+    dateRangeButton: () => java.lang.String,
+    deleteAppointment: js.Object => js.Object,
+    destroy: () => scala.Unit,
+    editAppointment: (js.Object, js.Object) => js.Object,
+    getAppointmentsInRange: (stdLib.Date, stdLib.Date) => js.Object,
+    getCalendar: () => java.lang.String,
+    nextButton: () => java.lang.String,
+    previousButton: () => java.lang.String,
+    todayButton: () => java.lang.String
   ): IgSchedulerMethods = {
-    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, createAppointment = createAppointment, dateRangeButton = dateRangeButton, deleteAppointment = deleteAppointment, destroy = destroy, editAppointment = editAppointment, getAppointmentsInRange = getAppointmentsInRange, getCalendar = getCalendar, nextButton = nextButton, previousButton = previousButton, todayButton = todayButton)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = js.Any.fromFunction0(changeGlobalLanguage), changeGlobalRegional = js.Any.fromFunction0(changeGlobalRegional), changeLocale = js.Any.fromFunction0(changeLocale), createAppointment = js.Any.fromFunction1(createAppointment), dateRangeButton = js.Any.fromFunction0(dateRangeButton), deleteAppointment = js.Any.fromFunction1(deleteAppointment), destroy = js.Any.fromFunction0(destroy), editAppointment = js.Any.fromFunction2(editAppointment), getAppointmentsInRange = js.Any.fromFunction2(getAppointmentsInRange), getCalendar = js.Any.fromFunction0(getCalendar), nextButton = js.Any.fromFunction0(nextButton), previousButton = js.Any.fromFunction0(previousButton), todayButton = js.Any.fromFunction0(todayButton))
   
     __obj.asInstanceOf[IgSchedulerMethods]
   }

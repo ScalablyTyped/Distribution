@@ -23,32 +23,14 @@ trait LandingPagesResource extends js.Object {
 object LandingPagesResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltCampaignIdFieldsId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltCampaignIdFieldsId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LandingPage]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltCampaignId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LandingPage]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltCampaignId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LandingPagesListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltCampaignIdFieldsId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LandingPage]
-    ],
-    update: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltCampaignId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LandingPage]
-    ]
+    delete: gapiDotClientDotDfareportingLib.Anon_AltCampaignIdFieldsId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotDfareportingLib.Anon_AltCampaignIdFieldsId => gapiDotClientLib.gapiNs.clientNs.Request[LandingPage],
+    insert: gapiDotClientDotDfareportingLib.Anon_AltCampaignId => gapiDotClientLib.gapiNs.clientNs.Request[LandingPage],
+    list: gapiDotClientDotDfareportingLib.Anon_AltCampaignId => gapiDotClientLib.gapiNs.clientNs.Request[LandingPagesListResponse],
+    patch: gapiDotClientDotDfareportingLib.Anon_AltCampaignIdFieldsId => gapiDotClientLib.gapiNs.clientNs.Request[LandingPage],
+    update: gapiDotClientDotDfareportingLib.Anon_AltCampaignId => gapiDotClientLib.gapiNs.clientNs.Request[LandingPage]
   ): LandingPagesResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[LandingPagesResource]
   }

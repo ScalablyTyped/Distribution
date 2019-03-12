@@ -9,8 +9,8 @@ trait Anon_ValueOf extends js.Object
 
 object Anon_ValueOf {
   @scala.inline
-  def apply(valueOf: js.Function0[scala.Double]): Anon_ValueOf = {
-    val __obj = js.Dynamic.literal(valueOf = valueOf)
+  def apply(valueOf: () => scala.Double): Anon_ValueOf = {
+    val __obj = js.Dynamic.literal(valueOf = js.Any.fromFunction0(valueOf))
   
     __obj.asInstanceOf[Anon_ValueOf]
   }

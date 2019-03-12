@@ -20,15 +20,15 @@ trait XCommandProcessor2 extends XCommandProcessor {
 object XCommandProcessor2 {
   @scala.inline
   def apply(
-    abort: js.Function1[scala.Double, scala.Unit],
-    acquire: js.Function0[scala.Unit],
-    createCommandIdentifier: js.Function0[scala.Double],
-    execute: js.Function3[Command, scala.Double, XCommandEnvironment, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    releaseCommandIdentifier: js.Function1[scala.Double, scala.Unit]
+    abort: scala.Double => scala.Unit,
+    acquire: () => scala.Unit,
+    createCommandIdentifier: () => scala.Double,
+    execute: (Command, scala.Double, XCommandEnvironment) => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    releaseCommandIdentifier: scala.Double => scala.Unit
   ): XCommandProcessor2 = {
-    val __obj = js.Dynamic.literal(abort = abort, acquire = acquire, createCommandIdentifier = createCommandIdentifier, execute = execute, queryInterface = queryInterface, release = release, releaseCommandIdentifier = releaseCommandIdentifier)
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction1(abort), acquire = js.Any.fromFunction0(acquire), createCommandIdentifier = js.Any.fromFunction0(createCommandIdentifier), execute = js.Any.fromFunction3(execute), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), releaseCommandIdentifier = js.Any.fromFunction1(releaseCommandIdentifier))
   
     __obj.asInstanceOf[XCommandProcessor2]
   }

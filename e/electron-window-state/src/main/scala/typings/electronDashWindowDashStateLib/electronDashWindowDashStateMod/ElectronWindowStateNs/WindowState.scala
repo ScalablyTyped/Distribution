@@ -56,13 +56,13 @@ object WindowState {
     height: scala.Double,
     isFullScreen: scala.Boolean,
     isMaximized: scala.Boolean,
-    manage: js.Function1[electronLib.ElectronNs.BrowserWindow, scala.Unit],
-    saveState: js.Function1[electronLib.ElectronNs.BrowserWindow, scala.Unit],
+    manage: electronLib.ElectronNs.BrowserWindow => scala.Unit,
+    saveState: electronLib.ElectronNs.BrowserWindow => scala.Unit,
     width: scala.Double,
     x: scala.Double,
     y: scala.Double
   ): WindowState = {
-    val __obj = js.Dynamic.literal(height = height, isFullScreen = isFullScreen, isMaximized = isMaximized, manage = manage, saveState = saveState, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(height = height, isFullScreen = isFullScreen, isMaximized = isMaximized, manage = js.Any.fromFunction1(manage), saveState = js.Any.fromFunction1(saveState), width = width, x = x, y = y)
   
     __obj.asInstanceOf[WindowState]
   }

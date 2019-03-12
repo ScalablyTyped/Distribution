@@ -21,10 +21,10 @@ trait SplitTableCellsCommand extends CommandWithSimpleStateBase {
 object SplitTableCellsCommand {
   @scala.inline
   def apply(
-    execute: js.Function3[scala.Double, scala.Double, scala.Boolean, scala.Boolean],
-    getState: js.Function0[SimpleCommandState]
+    execute: (scala.Double, scala.Double, scala.Boolean) => scala.Boolean,
+    getState: () => SimpleCommandState
   ): SplitTableCellsCommand = {
-    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction3(execute), getState = js.Any.fromFunction0(getState))
   
     __obj.asInstanceOf[SplitTableCellsCommand]
   }

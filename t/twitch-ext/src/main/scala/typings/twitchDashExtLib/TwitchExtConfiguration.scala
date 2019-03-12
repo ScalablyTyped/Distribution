@@ -45,19 +45,14 @@ trait TwitchExtConfiguration extends js.Object {
 object TwitchExtConfiguration {
   @scala.inline
   def apply(
-    onChanged: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    set_broadcaster: js.Function3[
-      twitchDashExtLib.twitchDashExtLibStrings.broadcaster, 
-      java.lang.String, 
-      java.lang.String, 
-      scala.Unit
-    ],
+    onChanged: js.Function0[scala.Unit] => scala.Unit,
+    set_broadcaster: (twitchDashExtLib.twitchDashExtLibStrings.broadcaster, java.lang.String, java.lang.String) => scala.Unit,
     broadcaster: Anon_Content = null,
     developer: Anon_Content = null,
     global: Anon_Content = null
   ): TwitchExtConfiguration = {
-    val __obj = js.Dynamic.literal(onChanged = onChanged)
-    __obj.updateDynamic("set")(set_broadcaster)
+    val __obj = js.Dynamic.literal(onChanged = js.Any.fromFunction1(onChanged))
+    __obj.updateDynamic("set")(js.Any.fromFunction3(set_broadcaster))
     if (broadcaster != null) __obj.updateDynamic("broadcaster")(broadcaster)
     if (developer != null) __obj.updateDynamic("developer")(developer)
     if (global != null) __obj.updateDynamic("global")(global)

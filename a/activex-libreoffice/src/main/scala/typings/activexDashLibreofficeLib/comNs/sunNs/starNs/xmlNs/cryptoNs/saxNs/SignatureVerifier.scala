@@ -18,25 +18,21 @@ trait SignatureVerifier
 object SignatureVerifier {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addSignatureVerifyResultListener: js.Function1[XSignatureVerifyResultListener, scala.Unit],
-    endMission: js.Function0[scala.Boolean],
-    getUriBinding: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    referenceResolved: js.Function1[scala.Double, scala.Unit],
-    release: js.Function0[scala.Unit],
-    removeSignatureVerifyResultListener: js.Function1[XSignatureVerifyResultListener, scala.Unit],
-    setKeyId: js.Function1[scala.Double, scala.Unit],
-    setReferenceCount: js.Function1[scala.Double, scala.Unit],
-    setReferenceId: js.Function1[scala.Double, scala.Unit],
-    setUriBinding: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    addSignatureVerifyResultListener: XSignatureVerifyResultListener => scala.Unit,
+    endMission: () => scala.Boolean,
+    getUriBinding: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    referenceResolved: scala.Double => scala.Unit,
+    release: () => scala.Unit,
+    removeSignatureVerifyResultListener: XSignatureVerifyResultListener => scala.Unit,
+    setKeyId: scala.Double => scala.Unit,
+    setReferenceCount: scala.Double => scala.Unit,
+    setReferenceId: scala.Double => scala.Unit,
+    setUriBinding: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream) => scala.Unit
   ): SignatureVerifier = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addSignatureVerifyResultListener = addSignatureVerifyResultListener, endMission = endMission, getUriBinding = getUriBinding, initialize = initialize, queryInterface = queryInterface, referenceResolved = referenceResolved, release = release, removeSignatureVerifyResultListener = removeSignatureVerifyResultListener, setKeyId = setKeyId, setReferenceCount = setReferenceCount, setReferenceId = setReferenceId, setUriBinding = setUriBinding)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addSignatureVerifyResultListener = js.Any.fromFunction1(addSignatureVerifyResultListener), endMission = js.Any.fromFunction0(endMission), getUriBinding = js.Any.fromFunction1(getUriBinding), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), referenceResolved = js.Any.fromFunction1(referenceResolved), release = js.Any.fromFunction0(release), removeSignatureVerifyResultListener = js.Any.fromFunction1(removeSignatureVerifyResultListener), setKeyId = js.Any.fromFunction1(setKeyId), setReferenceCount = js.Any.fromFunction1(setReferenceCount), setReferenceId = js.Any.fromFunction1(setReferenceId), setUriBinding = js.Any.fromFunction2(setUriBinding))
   
     __obj.asInstanceOf[SignatureVerifier]
   }

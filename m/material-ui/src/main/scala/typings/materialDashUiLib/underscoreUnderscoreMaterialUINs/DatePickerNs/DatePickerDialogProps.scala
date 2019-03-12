@@ -56,10 +56,10 @@ object DatePickerDialogProps {
     minDate: stdLib.Date = null,
     mode: materialDashUiLib.materialDashUiLibStrings.portrait | materialDashUiLib.materialDashUiLibStrings.landscape = null,
     okLabel: reactLib.reactMod.ReactNs.ReactNode = null,
-    onAccept: js.Function1[/* d */ stdLib.Date, scala.Unit] = null,
-    onDismiss: js.Function0[scala.Unit] = null,
-    onShow: js.Function0[scala.Unit] = null,
-    shouldDisableDate: js.Function1[/* day */ stdLib.Date, scala.Boolean] = null,
+    onAccept: /* d */ stdLib.Date => scala.Unit = null,
+    onDismiss: () => scala.Unit = null,
+    onShow: () => scala.Unit = null,
+    shouldDisableDate: /* day */ stdLib.Date => scala.Boolean = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     utils: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.utils = null
   ): DatePickerDialogProps = {
@@ -77,10 +77,10 @@ object DatePickerDialogProps {
     if (minDate != null) __obj.updateDynamic("minDate")(minDate)
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (okLabel != null) __obj.updateDynamic("okLabel")(okLabel.asInstanceOf[js.Any])
-    if (onAccept != null) __obj.updateDynamic("onAccept")(onAccept)
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
-    if (shouldDisableDate != null) __obj.updateDynamic("shouldDisableDate")(shouldDisableDate)
+    if (onAccept != null) __obj.updateDynamic("onAccept")(js.Any.fromFunction1(onAccept))
+    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
+    if (shouldDisableDate != null) __obj.updateDynamic("shouldDisableDate")(js.Any.fromFunction1(shouldDisableDate))
     if (style != null) __obj.updateDynamic("style")(style)
     if (utils != null) __obj.updateDynamic("utils")(utils)
     __obj.asInstanceOf[DatePickerDialogProps]

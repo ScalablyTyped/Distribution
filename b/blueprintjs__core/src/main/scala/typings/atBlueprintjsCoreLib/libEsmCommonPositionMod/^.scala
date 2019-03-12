@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Position: atBlueprintjsCoreLib.Anon_BOTTOM = js.native
-  def isPositionHorizontal(position: atBlueprintjsCoreLib.libEsmCommonPositionMod.Position): scala.Boolean = js.native
-  def isPositionVertical(position: atBlueprintjsCoreLib.libEsmCommonPositionMod.Position): scala.Boolean = js.native
+  def isPositionHorizontal(position: Position): scala.Boolean = js.native
+  def isPositionVertical(position: Position): scala.Boolean = js.native
 }
 

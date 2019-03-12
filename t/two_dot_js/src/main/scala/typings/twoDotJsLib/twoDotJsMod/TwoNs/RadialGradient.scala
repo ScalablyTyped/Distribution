@@ -17,13 +17,13 @@ object RadialGradient {
   @scala.inline
   def apply(
     center: Vector,
-    clone: js.Function0[RadialGradient],
+    clone: () => RadialGradient,
     focal: Vector,
     radius: scala.Double,
     spread: java.lang.String,
     stops: twoDotJsLib.twoDotJsMod.TwoNs.UtilsNs.Collection[Stop]
   ): RadialGradient = {
-    val __obj = js.Dynamic.literal(center = center, clone = clone, focal = focal, radius = radius, spread = spread, stops = stops)
+    val __obj = js.Dynamic.literal(center = center, clone = js.Any.fromFunction0(clone), focal = focal, radius = radius, spread = spread, stops = stops)
   
     __obj.asInstanceOf[RadialGradient]
   }

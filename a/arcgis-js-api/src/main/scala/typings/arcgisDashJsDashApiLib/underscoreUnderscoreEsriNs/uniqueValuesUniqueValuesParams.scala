@@ -61,9 +61,9 @@ object uniqueValuesUniqueValuesParams {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     features: js.Array[Graphic] = null,
     field: java.lang.String = null,
     returnAllCodedValues: js.UndefOr[scala.Boolean] = js.undefined,
@@ -72,7 +72,7 @@ object uniqueValuesUniqueValuesParams {
     valueExpression: java.lang.String = null,
     view: View = null
   ): uniqueValuesUniqueValuesParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (features != null) __obj.updateDynamic("features")(features)
     if (field != null) __obj.updateDynamic("field")(field)
     if (!js.isUndefined(returnAllCodedValues)) __obj.updateDynamic("returnAllCodedValues")(returnAllCodedValues)

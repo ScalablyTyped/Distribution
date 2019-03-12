@@ -16,7 +16,7 @@ object DropdownSearchInputProps {
     as: js.Any = null,
     autoComplete: java.lang.String = null,
     className: java.lang.String = null,
-    inputRef: reactLib.reactMod.ReactNs.Ref[reactLib.HTMLInputElement] = null,
+    inputRef: reactLib.reactMod.ReactNs.Ref[stdLib.HTMLInputElement] = null,
     tabIndex: scala.Double | java.lang.String = null,
     `type`: java.lang.String = null,
     value: scala.Double | java.lang.String = null

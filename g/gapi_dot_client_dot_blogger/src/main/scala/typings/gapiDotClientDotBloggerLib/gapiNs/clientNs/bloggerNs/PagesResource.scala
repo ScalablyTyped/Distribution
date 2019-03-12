@@ -27,40 +27,16 @@ trait PagesResource extends js.Object {
 object PagesResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Page]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsIsDraft, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Page]
-    ],
-    list: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodies, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PageList]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyOauthtokenPageId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Page]
-    ],
-    publish: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Page]
-    ],
-    revert: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Page]
-    ],
-    update: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyOauthtokenPageId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Page]
-    ]
+    delete: gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Page],
+    insert: gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsIsDraft => gapiDotClientLib.gapiNs.clientNs.Request[Page],
+    list: gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodies => gapiDotClientLib.gapiNs.clientNs.Request[PageList],
+    patch: gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyOauthtokenPageId => gapiDotClientLib.gapiNs.clientNs.Request[Page],
+    publish: gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Page],
+    revert: gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Page],
+    update: gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyOauthtokenPageId => gapiDotClientLib.gapiNs.clientNs.Request[Page]
   ): PagesResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, publish = publish, revert = revert, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), publish = js.Any.fromFunction1(publish), revert = js.Any.fromFunction1(revert), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[PagesResource]
   }

@@ -53,7 +53,7 @@ object KeyValueModel extends js.Object {
   def get(
     key: java.lang.String,
     option: js.Any,
-    callback: js.Function2[/* err */ nodeLib.Error, /* result */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* result */ js.Any, scala.Unit]
   ): js.Thenable[_] = js.native
   /**
     * Asynchronously iterate all keys in the database. Similar to .keys()
@@ -135,14 +135,14 @@ object KeyValueModel extends js.Object {
     key: java.lang.String,
     value: js.Any,
     options: js.Any,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): js.Thenable[_] = js.native
   def set(key: java.lang.String, value: js.Any, options: scala.Double): js.Thenable[_] = js.native
   def set(
     key: java.lang.String,
     value: js.Any,
     options: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): js.Thenable[_] = js.native
   /**
     * Return the TTL (time to live) for a given key.
@@ -158,6 +158,6 @@ object KeyValueModel extends js.Object {
     */
   def ttl(key: java.lang.String): js.Thenable[_] = js.native
   def ttl(key: java.lang.String, options: js.Any): js.Thenable[_] = js.native
-  def ttl(key: java.lang.String, options: js.Any, cb: js.Function1[/* error */ nodeLib.Error, scala.Unit]): js.Thenable[_] = js.native
+  def ttl(key: java.lang.String, options: js.Any, cb: js.Function1[/* error */ stdLib.Error, scala.Unit]): js.Thenable[_] = js.native
 }
 

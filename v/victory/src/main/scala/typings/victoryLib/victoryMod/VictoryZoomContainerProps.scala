@@ -100,7 +100,7 @@ object VictoryZoomContainerProps {
     events: reactLib.reactMod.ReactNs.DOMAttributes[_] = null,
     height: scala.Int | scala.Double = null,
     minimumZoom: CursorData = null,
-    onZoomDomainChange: js.Function2[/* domain */ DomainPropType, /* props */ VictoryZoomContainerProps, scala.Unit] = null,
+    onZoomDomainChange: (/* domain */ DomainPropType, /* props */ VictoryZoomContainerProps) => scala.Unit = null,
     responsive: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     title: java.lang.String = null,
@@ -120,7 +120,7 @@ object VictoryZoomContainerProps {
     if (events != null) __obj.updateDynamic("events")(events)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (minimumZoom != null) __obj.updateDynamic("minimumZoom")(minimumZoom)
-    if (onZoomDomainChange != null) __obj.updateDynamic("onZoomDomainChange")(onZoomDomainChange)
+    if (onZoomDomainChange != null) __obj.updateDynamic("onZoomDomainChange")(js.Any.fromFunction2(onZoomDomainChange))
     if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
     if (style != null) __obj.updateDynamic("style")(style)
     if (title != null) __obj.updateDynamic("title")(title)

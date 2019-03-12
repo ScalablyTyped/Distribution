@@ -47,13 +47,13 @@ object Anon_CallbackForceDiscovery {
   @scala.inline
   def apply(
     MAX_SERVICE_INSTANCES_PER_EVENT: chromeDashAppsLib.chromeNs.integer,
-    forceDiscovery: js.Function1[js.Function0[scala.Unit], scala.Unit],
+    forceDiscovery: js.Function0[scala.Unit] => scala.Unit,
     onServiceList: chromeDashAppsLib.chromeNs.eventsNs.FilteredEvent[
       js.Function1[/* services */ js.Array[chromeDashAppsLib.chromeNs.mdnsNs.Service], scala.Unit], 
       chromeDashAppsLib.chromeNs.mdnsNs.ServiceTypes
     ]
   ): Anon_CallbackForceDiscovery = {
-    val __obj = js.Dynamic.literal(MAX_SERVICE_INSTANCES_PER_EVENT = MAX_SERVICE_INSTANCES_PER_EVENT, forceDiscovery = forceDiscovery, onServiceList = onServiceList)
+    val __obj = js.Dynamic.literal(MAX_SERVICE_INSTANCES_PER_EVENT = MAX_SERVICE_INSTANCES_PER_EVENT, forceDiscovery = js.Any.fromFunction1(forceDiscovery), onServiceList = onServiceList)
   
     __obj.asInstanceOf[Anon_CallbackForceDiscovery]
   }

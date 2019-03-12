@@ -9,13 +9,13 @@ package object expressDashWinstonMod {
   type DynamicLevelFunction = js.Function3[
     /* req */ expressLib.expressMod.eNs.Request, 
     /* res */ expressLib.expressMod.eNs.Response, 
-    /* err */ nodeLib.Error, 
+    /* err */ stdLib.Error, 
     java.lang.String
   ]
   type DynamicMetaFunction = js.Function3[
     /* req */ expressLib.expressMod.eNs.Request, 
     /* res */ expressLib.expressMod.eNs.Response, 
-    /* err */ nodeLib.Error, 
+    /* err */ stdLib.Error, 
     js.Object
   ]
   type RequestFilter = js.Function2[/* req */ FilterRequest, /* propName */ java.lang.String, js.Any]

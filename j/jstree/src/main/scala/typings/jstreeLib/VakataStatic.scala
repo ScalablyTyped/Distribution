@@ -36,18 +36,18 @@ trait VakataStatic extends js.Object {
 object VakataStatic {
   @scala.inline
   def apply(
-    array_filter: js.Function5[js.Any, js.Any, js.Any, js.Array[_], js.Any, js.Array[_]],
-    array_remove: js.Function2[js.Array[_], scala.Double, js.Array[_]],
-    array_remove_item: js.Function2[js.Array[_], js.Any, js.Array[_]],
-    array_unique: js.Function1[js.Array[_], js.Array[_]],
-    attributes: js.Function2[js.Any, js.Any, js.Any],
+    array_filter: (js.Any, js.Any, js.Any, js.Array[_], js.Any) => js.Array[_],
+    array_remove: (js.Array[_], scala.Double) => js.Array[_],
+    array_remove_item: (js.Array[_], js.Any) => js.Array[_],
+    array_unique: js.Array[_] => js.Array[_],
+    attributes: (js.Any, js.Any) => js.Any,
     context: js.Any,
     dnd: js.Any,
     html: js.Any,
     search: js.Any,
     storage: js.Any
   ): VakataStatic = {
-    val __obj = js.Dynamic.literal(array_filter = array_filter, array_remove = array_remove, array_remove_item = array_remove_item, array_unique = array_unique, attributes = attributes, context = context, dnd = dnd, html = html, search = search, storage = storage)
+    val __obj = js.Dynamic.literal(array_filter = js.Any.fromFunction5(array_filter), array_remove = js.Any.fromFunction2(array_remove), array_remove_item = js.Any.fromFunction2(array_remove_item), array_unique = js.Any.fromFunction1(array_unique), attributes = js.Any.fromFunction2(attributes), context = context, dnd = dnd, html = html, search = search, storage = storage)
   
     __obj.asInstanceOf[VakataStatic]
   }

@@ -21,20 +21,16 @@ object SynchronousFrameLoader {
   @scala.inline
   def apply(
     Name: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    cancel: js.Function0[scala.Unit],
-    getName: js.Function0[java.lang.String],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    load: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      XFrame, 
-      scala.Boolean
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setName: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    cancel: () => scala.Unit,
+    getName: () => java.lang.String,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    load: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], XFrame) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setName: java.lang.String => scala.Unit
   ): SynchronousFrameLoader = {
-    val __obj = js.Dynamic.literal(Name = Name, acquire = acquire, cancel = cancel, getName = getName, initialize = initialize, load = load, queryInterface = queryInterface, release = release, setName = setName)
+    val __obj = js.Dynamic.literal(Name = Name, acquire = js.Any.fromFunction0(acquire), cancel = js.Any.fromFunction0(cancel), getName = js.Any.fromFunction0(getName), initialize = js.Any.fromFunction1(initialize), load = js.Any.fromFunction2(load), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setName = js.Any.fromFunction1(setName))
   
     __obj.asInstanceOf[SynchronousFrameLoader]
   }

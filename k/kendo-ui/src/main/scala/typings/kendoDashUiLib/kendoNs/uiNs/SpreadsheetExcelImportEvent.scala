@@ -13,13 +13,13 @@ trait SpreadsheetExcelImportEvent extends SpreadsheetEvent {
 object SpreadsheetExcelImportEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Spreadsheet,
     file: stdLib.Blob | stdLib.File = null,
     progress: kendoDashUiLib.JQueryPromise[_] = null
   ): SpreadsheetExcelImportEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     if (progress != null) __obj.updateDynamic("progress")(progress)
     __obj.asInstanceOf[SpreadsheetExcelImportEvent]

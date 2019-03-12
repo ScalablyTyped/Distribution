@@ -23,12 +23,8 @@ trait XResource extends js.Object {
 
 object XResource {
   @scala.inline
-  def apply(
-    ResourceId: XResourceId,
-    getResourceId: js.Function0[XResourceId],
-    isAnchorOnly: js.Function0[scala.Boolean]
-  ): XResource = {
-    val __obj = js.Dynamic.literal(ResourceId = ResourceId, getResourceId = getResourceId, isAnchorOnly = isAnchorOnly)
+  def apply(ResourceId: XResourceId, getResourceId: () => XResourceId, isAnchorOnly: () => scala.Boolean): XResource = {
+    val __obj = js.Dynamic.literal(ResourceId = ResourceId, getResourceId = js.Any.fromFunction0(getResourceId), isAnchorOnly = js.Any.fromFunction0(isAnchorOnly))
   
     __obj.asInstanceOf[XResource]
   }

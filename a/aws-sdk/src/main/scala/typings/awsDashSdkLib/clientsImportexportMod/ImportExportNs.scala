@@ -15,7 +15,7 @@ object ImportExportNs extends js.Object {
   
   trait CancelJobInput extends js.Object {
     var APIVersion: js.UndefOr[APIVersion] = js.undefined
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsImportexportMod.ImportExportNs.JobId
   }
   
   trait CancelJobOutput extends js.Object {
@@ -31,10 +31,10 @@ object ImportExportNs extends js.Object {
   
   trait CreateJobInput extends js.Object {
     var APIVersion: js.UndefOr[APIVersion] = js.undefined
-    var JobType: JobType
-    var Manifest: Manifest
+    var JobType: awsDashSdkLib.clientsImportexportMod.ImportExportNs.JobType
+    var Manifest: awsDashSdkLib.clientsImportexportMod.ImportExportNs.Manifest
     var ManifestAddendum: js.UndefOr[ManifestAddendum] = js.undefined
-    var ValidateOnly: ValidateOnly
+    var ValidateOnly: awsDashSdkLib.clientsImportexportMod.ImportExportNs.ValidateOnly
   }
   
   trait CreateJobOutput extends js.Object {
@@ -68,7 +68,7 @@ object ImportExportNs extends js.Object {
   
   trait GetStatusInput extends js.Object {
     var APIVersion: js.UndefOr[APIVersion] = js.undefined
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsImportexportMod.ImportExportNs.JobId
   }
   
   trait GetStatusOutput extends js.Object {
@@ -215,10 +215,10 @@ object ImportExportNs extends js.Object {
   
   trait UpdateJobInput extends js.Object {
     var APIVersion: js.UndefOr[APIVersion] = js.undefined
-    var JobId: JobId
-    var JobType: JobType
-    var Manifest: Manifest
-    var ValidateOnly: ValidateOnly
+    var JobId: awsDashSdkLib.clientsImportexportMod.ImportExportNs.JobId
+    var JobType: awsDashSdkLib.clientsImportexportMod.ImportExportNs.JobType
+    var Manifest: awsDashSdkLib.clientsImportexportMod.ImportExportNs.Manifest
+    var ValidateOnly: awsDashSdkLib.clientsImportexportMod.ImportExportNs.ValidateOnly
   }
   
   trait UpdateJobOutput extends js.Object {

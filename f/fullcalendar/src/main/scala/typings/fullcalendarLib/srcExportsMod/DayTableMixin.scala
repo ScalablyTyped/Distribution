@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "DayTableMixin")
 @js.native
 class DayTableMixin ()
-  extends fullcalendarLib.daytablemixinMod.default
+  extends fullcalendarLib.dayTableMixinMod.default
 

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jasmine-expect/dist/toBeWithinRange", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val toBeWithinRange: jasmineDashExpectLib.distToBeWithinRangeMod.ToBeWithinRange = js.native
+  val toBeWithinRange: ToBeWithinRange = js.native
 }
 

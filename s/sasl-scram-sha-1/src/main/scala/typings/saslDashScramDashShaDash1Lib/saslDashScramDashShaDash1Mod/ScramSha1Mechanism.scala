@@ -16,15 +16,12 @@ trait ScramSha1Mechanism
 object ScramSha1Mechanism {
   @scala.inline
   def apply(
-    challenge: js.Function1[java.lang.String, ScramSha1Mechanism],
+    challenge: java.lang.String => ScramSha1Mechanism,
     clientFirst: saslDashScramDashShaDash1Lib.saslDashScramDashShaDash1LibNumbers.`true`,
     name: saslDashScramDashShaDash1Lib.saslDashScramDashShaDash1LibStrings.`SCRAM-SHA-1`,
-    response: js.Function1[
-      saslDashScramDashShaDash1Lib.saslDashScramDashShaDash1Mod.ScramSha1MechanismNs.Credentials, 
-      java.lang.String
-    ]
+    response: saslDashScramDashShaDash1Lib.saslDashScramDashShaDash1Mod.ScramSha1MechanismNs.Credentials => java.lang.String
   ): ScramSha1Mechanism = {
-    val __obj = js.Dynamic.literal(challenge = challenge, clientFirst = clientFirst, name = name, response = response)
+    val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = clientFirst, name = name, response = js.Any.fromFunction1(response))
   
     __obj.asInstanceOf[ScramSha1Mechanism]
   }

@@ -56,7 +56,7 @@ object HamburgerMenuProps {
   def apply(
     color: java.lang.String,
     isOpen: scala.Boolean,
-    menuClicked: js.Function0[scala.Unit],
+    menuClicked: () => scala.Unit,
     animationDuration: scala.Int | scala.Double = null,
     borderRadius: scala.Int | scala.Double = null,
     height: scala.Int | scala.Double = null,
@@ -64,7 +64,7 @@ object HamburgerMenuProps {
     strokeWidth: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): HamburgerMenuProps = {
-    val __obj = js.Dynamic.literal(color = color, isOpen = isOpen, menuClicked = menuClicked)
+    val __obj = js.Dynamic.literal(color = color, isOpen = isOpen, menuClicked = js.Any.fromFunction0(menuClicked))
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

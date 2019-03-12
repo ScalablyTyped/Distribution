@@ -10,10 +10,6 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def default[T](arr: js.Array[T]): js.Array[T] = js.native
   def default[T](arr: js.Array[T], props: arrayDashSortLib.ComparisonArgs[T]): js.Array[T] = js.native
-  def default[T](
-    arr: js.Array[T],
-    props: arrayDashSortLib.ComparisonArgs[T],
-    options: arrayDashSortLib.arrayDashSortMod.Options
-  ): js.Array[T] = js.native
+  def default[T](arr: js.Array[T], props: arrayDashSortLib.ComparisonArgs[T], options: Options): js.Array[T] = js.native
 }
 

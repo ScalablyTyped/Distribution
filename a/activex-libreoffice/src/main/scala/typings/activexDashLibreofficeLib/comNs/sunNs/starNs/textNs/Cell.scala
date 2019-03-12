@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation._
     * Grab bag of cell properties, used as a string-any map for interim interop purposes.
     * @since LibreOffice 4.3  This property is intentionally not handled by the ODF filter. Any member that should be handled there should be first moved out
     */
-  var CellInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  var CellInteropGrabBag: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * contains a description of the cell protection.
     *
@@ -136,7 +136,7 @@ object Cell {
     BottomBorder2: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine2,
     BottomBorderDistance: scala.Double,
     CellBackColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
-    CellInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    CellInteropGrabBag: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     CellName: java.lang.String,
     CellProtection: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.CellProtection,
     CellStyle: java.lang.String,
@@ -178,51 +178,35 @@ object Cell {
     Value: scala.Double,
     VertJustify: scala.Double,
     VertOrient: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addPropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    addVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    createTextCursor: js.Function0[XTextCursor],
-    createTextCursorByRange: js.Function1[XTextRange, XTextCursor],
-    getEnd: js.Function0[XTextRange],
-    getError: js.Function0[scala.Double],
-    getFormula: js.Function0[java.lang.String],
-    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
-    getPropertyValue: js.Function1[java.lang.String, js.Any],
-    getStart: js.Function0[XTextRange],
-    getString: js.Function0[java.lang.String],
-    getText: js.Function0[XText],
-    getType: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellContentType],
-    getValue: js.Function0[scala.Double],
-    insertControlCharacter: js.Function3[XTextRange, scala.Double, scala.Boolean, scala.Unit],
-    insertString: js.Function3[XTextRange, java.lang.String, scala.Boolean, scala.Unit],
-    insertTextContent: js.Function3[XTextRange, XTextContent, scala.Boolean, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removePropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    removeTextContent: js.Function1[XTextContent, scala.Unit],
-    removeVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    setFormula: js.Function1[java.lang.String, scala.Unit],
-    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
-    setString: js.Function1[java.lang.String, scala.Unit],
-    setValue: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    addPropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    addVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    createTextCursor: () => XTextCursor,
+    createTextCursorByRange: XTextRange => XTextCursor,
+    getEnd: () => XTextRange,
+    getError: () => scala.Double,
+    getFormula: () => java.lang.String,
+    getPropertySetInfo: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    getPropertyValue: java.lang.String => js.Any,
+    getStart: () => XTextRange,
+    getString: () => java.lang.String,
+    getText: () => XText,
+    getType: () => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellContentType,
+    getValue: () => scala.Double,
+    insertControlCharacter: (XTextRange, scala.Double, scala.Boolean) => scala.Unit,
+    insertString: (XTextRange, java.lang.String, scala.Boolean) => scala.Unit,
+    insertTextContent: (XTextRange, XTextContent, scala.Boolean) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removePropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    removeTextContent: XTextContent => scala.Unit,
+    removeVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    setFormula: java.lang.String => scala.Unit,
+    setPropertyValue: (java.lang.String, js.Any) => scala.Unit,
+    setString: java.lang.String => scala.Unit,
+    setValue: scala.Double => scala.Unit
   ): Cell = {
-    val __obj = js.Dynamic.literal(AsianVerticalMode = AsianVerticalMode, BackColor = BackColor, BackGraphicFilter = BackGraphicFilter, BackGraphicLocation = BackGraphicLocation, BackGraphicURL = BackGraphicURL, BackTransparent = BackTransparent, BottomBorder = BottomBorder, BottomBorder2 = BottomBorder2, BottomBorderDistance = BottomBorderDistance, CellBackColor = CellBackColor, CellInteropGrabBag = CellInteropGrabBag, CellName = CellName, CellProtection = CellProtection, CellStyle = CellStyle, DiagonalBLTR = DiagonalBLTR, DiagonalBLTR2 = DiagonalBLTR2, DiagonalTLBR = DiagonalTLBR, DiagonalTLBR2 = DiagonalTLBR2, End = End, Error = Error, Formula = Formula, HoriJustify = HoriJustify, IsCellBackgroundTransparent = IsCellBackgroundTransparent, IsProtected = IsProtected, IsTextWrapped = IsTextWrapped, LeftBorder = LeftBorder, LeftBorder2 = LeftBorder2, LeftBorderDistance = LeftBorderDistance, NumberFormat = NumberFormat, Orientation = Orientation, ParaIndent = ParaIndent, PropertySetInfo = PropertySetInfo, RightBorder = RightBorder, RightBorder2 = RightBorder2, RightBorderDistance = RightBorderDistance, RotateAngle = RotateAngle, RotateReference = RotateReference, ShadowFormat = ShadowFormat, ShrinkToFit = ShrinkToFit, Start = Start, String = String, TableBorder = TableBorder, TableBorder2 = TableBorder2, TextSection = TextSection, TopBorder = TopBorder, TopBorder2 = TopBorder2, TopBorderDistance = TopBorderDistance, Type = Type, UserDefinedAttributes = UserDefinedAttributes, Value = Value, VertJustify = VertJustify, VertOrient = VertOrient, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, createTextCursor = createTextCursor, createTextCursorByRange = createTextCursorByRange, getEnd = getEnd, getError = getError, getFormula = getFormula, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getStart = getStart, getString = getString, getText = getText, getType = getType, getValue = getValue, insertControlCharacter = insertControlCharacter, insertString = insertString, insertTextContent = insertTextContent, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeTextContent = removeTextContent, removeVetoableChangeListener = removeVetoableChangeListener, setFormula = setFormula, setPropertyValue = setPropertyValue, setString = setString, setValue = setValue)
+    val __obj = js.Dynamic.literal(AsianVerticalMode = AsianVerticalMode, BackColor = BackColor, BackGraphicFilter = BackGraphicFilter, BackGraphicLocation = BackGraphicLocation, BackGraphicURL = BackGraphicURL, BackTransparent = BackTransparent, BottomBorder = BottomBorder, BottomBorder2 = BottomBorder2, BottomBorderDistance = BottomBorderDistance, CellBackColor = CellBackColor, CellInteropGrabBag = CellInteropGrabBag, CellName = CellName, CellProtection = CellProtection, CellStyle = CellStyle, DiagonalBLTR = DiagonalBLTR, DiagonalBLTR2 = DiagonalBLTR2, DiagonalTLBR = DiagonalTLBR, DiagonalTLBR2 = DiagonalTLBR2, End = End, Error = Error, Formula = Formula, HoriJustify = HoriJustify, IsCellBackgroundTransparent = IsCellBackgroundTransparent, IsProtected = IsProtected, IsTextWrapped = IsTextWrapped, LeftBorder = LeftBorder, LeftBorder2 = LeftBorder2, LeftBorderDistance = LeftBorderDistance, NumberFormat = NumberFormat, Orientation = Orientation, ParaIndent = ParaIndent, PropertySetInfo = PropertySetInfo, RightBorder = RightBorder, RightBorder2 = RightBorder2, RightBorderDistance = RightBorderDistance, RotateAngle = RotateAngle, RotateReference = RotateReference, ShadowFormat = ShadowFormat, ShrinkToFit = ShrinkToFit, Start = Start, String = String, TableBorder = TableBorder, TableBorder2 = TableBorder2, TextSection = TextSection, TopBorder = TopBorder, TopBorder2 = TopBorder2, TopBorderDistance = TopBorderDistance, Type = Type, UserDefinedAttributes = UserDefinedAttributes, Value = Value, VertJustify = VertJustify, VertOrient = VertOrient, acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createTextCursor = js.Any.fromFunction0(createTextCursor), createTextCursorByRange = js.Any.fromFunction1(createTextCursorByRange), getEnd = js.Any.fromFunction0(getEnd), getError = js.Any.fromFunction0(getError), getFormula = js.Any.fromFunction0(getFormula), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getStart = js.Any.fromFunction0(getStart), getString = js.Any.fromFunction0(getString), getText = js.Any.fromFunction0(getText), getType = js.Any.fromFunction0(getType), getValue = js.Any.fromFunction0(getValue), insertControlCharacter = js.Any.fromFunction3(insertControlCharacter), insertString = js.Any.fromFunction3(insertString), insertTextContent = js.Any.fromFunction3(insertTextContent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeTextContent = js.Any.fromFunction1(removeTextContent), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setFormula = js.Any.fromFunction1(setFormula), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setString = js.Any.fromFunction1(setString), setValue = js.Any.fromFunction1(setValue))
   
     __obj.asInstanceOf[Cell]
   }

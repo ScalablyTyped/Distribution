@@ -21,28 +21,13 @@ trait PermissionsResource extends js.Object {
 object PermissionsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltEmailMessage, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Permission]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Permission]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyOauthtokenPageSize, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PermissionList]
-    ],
-    update: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyOauthtokenPermissionId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Permission]
-    ]
+    create: gapiDotClientDotDriveLib.Anon_AltEmailMessage => gapiDotClientLib.gapiNs.clientNs.Request[Permission],
+    delete: gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Permission],
+    list: gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyOauthtokenPageSize => gapiDotClientLib.gapiNs.clientNs.Request[PermissionList],
+    update: gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyOauthtokenPermissionId => gapiDotClientLib.gapiNs.clientNs.Request[Permission]
   ): PermissionsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, update = update)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[PermissionsResource]
   }

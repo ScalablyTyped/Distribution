@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TypeScriptError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   var diagnostic: typescriptLib.typescriptMod.tsNs.Diagnostic
   var endPosition: js.UndefOr[gulpDashTypescriptLib.Anon_Character] = js.undefined
   var file: js.UndefOr[gulpDashTypescriptLib.releaseTypesMod.VinylFile] = js.undefined
@@ -20,6 +20,8 @@ object TypeScriptError {
   @scala.inline
   def apply(
     diagnostic: typescriptLib.typescriptMod.tsNs.Diagnostic,
+    message: java.lang.String,
+    name: java.lang.String,
     endPosition: gulpDashTypescriptLib.Anon_Character = null,
     file: gulpDashTypescriptLib.releaseTypesMod.VinylFile = null,
     fullFilename: java.lang.String = null,
@@ -28,7 +30,7 @@ object TypeScriptError {
     startPosition: gulpDashTypescriptLib.Anon_Character = null,
     tsFile: typescriptLib.typescriptMod.tsNs.SourceFile = null
   ): TypeScriptError = {
-    val __obj = js.Dynamic.literal(diagnostic = diagnostic)
+    val __obj = js.Dynamic.literal(diagnostic = diagnostic, message = message, name = name)
     if (endPosition != null) __obj.updateDynamic("endPosition")(endPosition)
     if (file != null) __obj.updateDynamic("file")(file)
     if (fullFilename != null) __obj.updateDynamic("fullFilename")(fullFilename)

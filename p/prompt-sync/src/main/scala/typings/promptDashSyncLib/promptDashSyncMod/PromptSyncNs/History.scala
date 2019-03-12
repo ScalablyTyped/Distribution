@@ -20,17 +20,17 @@ trait History extends js.Object {
 object History {
   @scala.inline
   def apply(
-    atEnd: js.Function0[scala.Boolean],
-    atPenultimate: js.Function0[scala.Boolean],
-    atStart: js.Function0[scala.Boolean],
-    next: js.Function0[java.lang.String],
-    pastEnd: js.Function0[scala.Boolean],
-    prev: js.Function0[java.lang.String],
-    push: js.Function1[java.lang.String, scala.Unit],
-    reset: js.Function0[scala.Unit],
-    save: js.Function0[scala.Unit]
+    atEnd: () => scala.Boolean,
+    atPenultimate: () => scala.Boolean,
+    atStart: () => scala.Boolean,
+    next: () => java.lang.String,
+    pastEnd: () => scala.Boolean,
+    prev: () => java.lang.String,
+    push: java.lang.String => scala.Unit,
+    reset: () => scala.Unit,
+    save: () => scala.Unit
   ): History = {
-    val __obj = js.Dynamic.literal(atEnd = atEnd, atPenultimate = atPenultimate, atStart = atStart, next = next, pastEnd = pastEnd, prev = prev, push = push, reset = reset, save = save)
+    val __obj = js.Dynamic.literal(atEnd = js.Any.fromFunction0(atEnd), atPenultimate = js.Any.fromFunction0(atPenultimate), atStart = js.Any.fromFunction0(atStart), next = js.Any.fromFunction0(next), pastEnd = js.Any.fromFunction0(pastEnd), prev = js.Any.fromFunction0(prev), push = js.Any.fromFunction1(push), reset = js.Any.fromFunction0(reset), save = js.Any.fromFunction0(save))
   
     __obj.asInstanceOf[History]
   }

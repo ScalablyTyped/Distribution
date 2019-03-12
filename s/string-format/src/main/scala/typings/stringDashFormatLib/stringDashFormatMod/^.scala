@@ -16,7 +16,7 @@ object ^ extends js.Object {
     * create a format function with given transformers
     * @param transformers functions which convert a string, indexed by a name
     */
-  def create(transformers: stringDashFormatLib.stringDashFormatMod.Transformers): (js.Function2[
+  def create(transformers: Transformers): (js.Function2[
     /* template */ java.lang.String, 
     /* repeated */ org.scalablytyped.runtime.StringDictionary[js.Any] | java.lang.String, 
     java.lang.String
@@ -25,6 +25,6 @@ object ^ extends js.Object {
     * @param prototype prototype which should be extended by format (usually String.prototype)
     * @param transformers functions which convert a string, indexed by a name
     */
-  def extend(prototype: js.Any, transformers: stringDashFormatLib.stringDashFormatMod.Transformers): scala.Unit = js.native
+  def extend(prototype: js.Any, transformers: Transformers): scala.Unit = js.native
 }
 

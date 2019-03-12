@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Domain ()
   extends nodeLib.eventsMod.EventEmitter
      with nodeLib.NodeJSNs.Domain {
-  var members: js.Array[_] = js.native
+  var members: js.Array[nodeLib.eventsMod.EventEmitter | nodeLib.NodeJSNs.Timer] = js.native
   def add(emitter: nodeLib.eventsMod.EventEmitter): scala.Unit = js.native
   def enter(): scala.Unit = js.native
   def exit(): scala.Unit = js.native

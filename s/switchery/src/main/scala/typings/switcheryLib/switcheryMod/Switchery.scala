@@ -32,12 +32,12 @@ trait Switchery extends js.Object {
 object Switchery {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
-    disable: js.Function0[scala.Unit],
-    enable: js.Function0[scala.Unit],
-    isDisabled: js.Function0[scala.Boolean]
+    destroy: () => scala.Unit,
+    disable: () => scala.Unit,
+    enable: () => scala.Unit,
+    isDisabled: () => scala.Boolean
   ): Switchery = {
-    val __obj = js.Dynamic.literal(destroy = destroy, disable = disable, enable = enable, isDisabled = isDisabled)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), isDisabled = js.Any.fromFunction0(isDisabled))
   
     __obj.asInstanceOf[Switchery]
   }

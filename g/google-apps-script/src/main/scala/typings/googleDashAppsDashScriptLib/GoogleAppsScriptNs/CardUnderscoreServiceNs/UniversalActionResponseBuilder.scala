@@ -14,11 +14,11 @@ trait UniversalActionResponseBuilder extends js.Object {
 object UniversalActionResponseBuilder {
   @scala.inline
   def apply(
-    build: js.Function0[UniversalActionResponse],
-    displayAddOnCards: js.Function1[js.Array[js.Object], UniversalActionResponseBuilder],
-    setOpenLink: js.Function1[OpenLink, UniversalActionResponseBuilder]
+    build: () => UniversalActionResponse,
+    displayAddOnCards: js.Array[js.Object] => UniversalActionResponseBuilder,
+    setOpenLink: OpenLink => UniversalActionResponseBuilder
   ): UniversalActionResponseBuilder = {
-    val __obj = js.Dynamic.literal(build = build, displayAddOnCards = displayAddOnCards, setOpenLink = setOpenLink)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), displayAddOnCards = js.Any.fromFunction1(displayAddOnCards), setOpenLink = js.Any.fromFunction1(setOpenLink))
   
     __obj.asInstanceOf[UniversalActionResponseBuilder]
   }

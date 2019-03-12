@@ -17,14 +17,14 @@ trait VueSelectWatch extends js.Object {
 object VueSelectWatch {
   @scala.inline
   def apply(
-    created: js.Function0[scala.Unit],
-    multiple: js.Function1[scala.Boolean, scala.Unit],
-    mutableOptions: js.Function0[scala.Unit],
-    mutableValue: js.Function2[js.Any, js.Any, scala.Unit],
-    options: js.Function1[js.Any, scala.Unit],
-    value: js.Function1[js.Any, scala.Unit]
+    created: () => scala.Unit,
+    multiple: scala.Boolean => scala.Unit,
+    mutableOptions: () => scala.Unit,
+    mutableValue: (js.Any, js.Any) => scala.Unit,
+    options: js.Any => scala.Unit,
+    value: js.Any => scala.Unit
   ): VueSelectWatch = {
-    val __obj = js.Dynamic.literal(created = created, multiple = multiple, mutableOptions = mutableOptions, mutableValue = mutableValue, options = options, value = value)
+    val __obj = js.Dynamic.literal(created = js.Any.fromFunction0(created), multiple = js.Any.fromFunction1(multiple), mutableOptions = js.Any.fromFunction0(mutableOptions), mutableValue = js.Any.fromFunction2(mutableValue), options = js.Any.fromFunction1(options), value = js.Any.fromFunction1(value))
   
     __obj.asInstanceOf[VueSelectWatch]
   }

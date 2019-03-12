@@ -16,8 +16,8 @@ trait Clipboard extends js.Object {
 
 object Clipboard {
   @scala.inline
-  def apply(get: js.Function0[nwDotJsLib.NWJSUnderscoreHelpersNs.clip]): Clipboard = {
-    val __obj = js.Dynamic.literal(get = get)
+  def apply(get: () => nwDotJsLib.NWJSUnderscoreHelpersNs.clip): Clipboard = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get))
   
     __obj.asInstanceOf[Clipboard]
   }

@@ -13,12 +13,9 @@ trait EntitlementsResource extends js.Object {
 object EntitlementsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[EntitlementsListResponse]
-    ]
+    list: gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[EntitlementsListResponse]
   ): EntitlementsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[EntitlementsResource]
   }

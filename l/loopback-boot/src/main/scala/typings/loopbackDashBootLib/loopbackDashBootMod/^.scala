@@ -78,14 +78,11 @@ object ^ extends js.Object {
     * @param app LoopBack application created by loopback().
     * @param options Boot options; If String, this is the application root directory; if object, has below properties.
     */
+  def apply(app: loopbackLib.loopbackMod.lNs.LoopBackApplication, options: java.lang.String | OptionsLB): scala.Unit = js.native
   def apply(
     app: loopbackLib.loopbackMod.lNs.LoopBackApplication,
-    options: java.lang.String | loopbackDashBootLib.loopbackDashBootMod.OptionsLB
-  ): scala.Unit = js.native
-  def apply(
-    app: loopbackLib.loopbackMod.lNs.LoopBackApplication,
-    options: java.lang.String | loopbackDashBootLib.loopbackDashBootMod.OptionsLB,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    options: java.lang.String | OptionsLB,
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
 }
 

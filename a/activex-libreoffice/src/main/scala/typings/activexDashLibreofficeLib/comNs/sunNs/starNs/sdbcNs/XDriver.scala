@@ -84,7 +84,7 @@ trait XDriver
   def getPropertyInfo(
     url: java.lang.String,
     info: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-  ): activexDashInteropLib.SafeArray[DriverPropertyInfo]
+  ): stdLib.SafeArray[DriverPropertyInfo]
 }
 
 object XDriver {
@@ -92,24 +92,16 @@ object XDriver {
   def apply(
     MajorVersion: scala.Double,
     MinorVersion: scala.Double,
-    acceptsURL: js.Function1[java.lang.String, scala.Boolean],
-    acquire: js.Function0[scala.Unit],
-    connect: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      XConnection
-    ],
-    getMajorVersion: js.Function0[scala.Double],
-    getMinorVersion: js.Function0[scala.Double],
-    getPropertyInfo: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      activexDashInteropLib.SafeArray[DriverPropertyInfo]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acceptsURL: java.lang.String => scala.Boolean,
+    acquire: () => scala.Unit,
+    connect: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => XConnection,
+    getMajorVersion: () => scala.Double,
+    getMinorVersion: () => scala.Double,
+    getPropertyInfo: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => stdLib.SafeArray[DriverPropertyInfo],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDriver = {
-    val __obj = js.Dynamic.literal(MajorVersion = MajorVersion, MinorVersion = MinorVersion, acceptsURL = acceptsURL, acquire = acquire, connect = connect, getMajorVersion = getMajorVersion, getMinorVersion = getMinorVersion, getPropertyInfo = getPropertyInfo, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(MajorVersion = MajorVersion, MinorVersion = MinorVersion, acceptsURL = js.Any.fromFunction1(acceptsURL), acquire = js.Any.fromFunction0(acquire), connect = js.Any.fromFunction2(connect), getMajorVersion = js.Any.fromFunction0(getMajorVersion), getMinorVersion = js.Any.fromFunction0(getMinorVersion), getPropertyInfo = js.Any.fromFunction2(getPropertyInfo), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDriver]
   }

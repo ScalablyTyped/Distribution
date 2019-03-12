@@ -34,13 +34,13 @@ object DocumentApp {
     PositionedLayout: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PositionedLayout */ js.Any,
     TextAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextAlignment */ js.Any,
     VerticalAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VerticalAlignment */ js.Any,
-    create: js.Function1[java.lang.String, Document],
-    getActiveDocument: js.Function0[Document],
-    getUi: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Ui],
-    openById: js.Function1[java.lang.String, Document],
-    openByUrl: js.Function1[java.lang.String, Document]
+    create: java.lang.String => Document,
+    getActiveDocument: () => Document,
+    getUi: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Ui,
+    openById: java.lang.String => Document,
+    openByUrl: java.lang.String => Document
   ): DocumentApp = {
-    val __obj = js.Dynamic.literal(Attribute = Attribute, ElementType = ElementType, FontFamily = FontFamily, GlyphType = GlyphType, HorizontalAlignment = HorizontalAlignment, ParagraphHeading = ParagraphHeading, PositionedLayout = PositionedLayout, TextAlignment = TextAlignment, VerticalAlignment = VerticalAlignment, create = create, getActiveDocument = getActiveDocument, getUi = getUi, openById = openById, openByUrl = openByUrl)
+    val __obj = js.Dynamic.literal(Attribute = Attribute, ElementType = ElementType, FontFamily = FontFamily, GlyphType = GlyphType, HorizontalAlignment = HorizontalAlignment, ParagraphHeading = ParagraphHeading, PositionedLayout = PositionedLayout, TextAlignment = TextAlignment, VerticalAlignment = VerticalAlignment, create = js.Any.fromFunction1(create), getActiveDocument = js.Any.fromFunction0(getActiveDocument), getUi = js.Any.fromFunction0(getUi), openById = js.Any.fromFunction1(openById), openByUrl = js.Any.fromFunction1(openByUrl))
   
     __obj.asInstanceOf[DocumentApp]
   }

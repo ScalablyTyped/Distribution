@@ -16,11 +16,11 @@ object StorageAdapter {
   @scala.inline
   def apply[A](
     `0`: A,
-    del: js.Function2[java.lang.String, AdapterCallback, scala.Unit],
-    get: js.Function2[java.lang.String, AdapterCallback, scala.Unit],
-    put: js.Function3[java.lang.String, js.Any, AdapterCallback, scala.Unit]
+    del: (java.lang.String, AdapterCallback) => scala.Unit,
+    get: (java.lang.String, AdapterCallback) => scala.Unit,
+    put: (java.lang.String, js.Any, AdapterCallback) => scala.Unit
   ): StorageAdapter[A] = {
-    val __obj = js.Dynamic.literal(del = del, get = get, put = put)
+    val __obj = js.Dynamic.literal(del = js.Any.fromFunction2(del), get = js.Any.fromFunction2(get), put = js.Any.fromFunction3(put))
     __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageAdapter[A]]
   }

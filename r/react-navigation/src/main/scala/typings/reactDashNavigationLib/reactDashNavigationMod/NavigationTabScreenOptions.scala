@@ -22,7 +22,7 @@ object NavigationTabScreenOptions {
       /* options */ reactDashNavigationLib.Anon_Focused, 
       reactLib.reactMod.ReactNs.ReactElement[_] | java.lang.String | scala.Null
     ]) = null,
-    tabBarOnPress: js.Function1[/* options */ reactDashNavigationLib.Anon_Index, scala.Unit] = null,
+    tabBarOnPress: /* options */ reactDashNavigationLib.Anon_Index => scala.Unit = null,
     tabBarTestIDProps: reactDashNavigationLib.Anon_AccessibilityLabel = null,
     tabBarVisible: js.UndefOr[scala.Boolean] = js.undefined,
     title: java.lang.String = null
@@ -31,7 +31,7 @@ object NavigationTabScreenOptions {
     if (!js.isUndefined(swipeEnabled)) __obj.updateDynamic("swipeEnabled")(swipeEnabled)
     if (tabBarIcon != null) __obj.updateDynamic("tabBarIcon")(tabBarIcon.asInstanceOf[js.Any])
     if (tabBarLabel != null) __obj.updateDynamic("tabBarLabel")(tabBarLabel.asInstanceOf[js.Any])
-    if (tabBarOnPress != null) __obj.updateDynamic("tabBarOnPress")(tabBarOnPress)
+    if (tabBarOnPress != null) __obj.updateDynamic("tabBarOnPress")(js.Any.fromFunction1(tabBarOnPress))
     if (tabBarTestIDProps != null) __obj.updateDynamic("tabBarTestIDProps")(tabBarTestIDProps)
     if (!js.isUndefined(tabBarVisible)) __obj.updateDynamic("tabBarVisible")(tabBarVisible)
     if (title != null) __obj.updateDynamic("title")(title)

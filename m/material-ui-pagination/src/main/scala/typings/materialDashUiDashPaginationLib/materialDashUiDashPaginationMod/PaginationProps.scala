@@ -17,10 +17,10 @@ object PaginationProps {
   def apply(
     current: scala.Double,
     display: scala.Double,
-    onChange: js.Function1[scala.Double, scala.Unit],
+    onChange: scala.Double => scala.Unit,
     total: scala.Double
   ): PaginationProps = {
-    val __obj = js.Dynamic.literal(current = current, display = display, onChange = onChange, total = total)
+    val __obj = js.Dynamic.literal(current = current, display = display, onChange = js.Any.fromFunction1(onChange), total = total)
   
     __obj.asInstanceOf[PaginationProps]
   }

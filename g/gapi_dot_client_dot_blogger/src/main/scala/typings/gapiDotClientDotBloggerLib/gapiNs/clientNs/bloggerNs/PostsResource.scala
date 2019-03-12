@@ -31,48 +31,18 @@ trait PostsResource extends js.Object {
 object PostsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyOauthtokenPostId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBody, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Post]
-    ],
-    getByPath: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyMaxCommentsOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Post]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodyFetchImages, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Post]
-    ],
-    list: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdEndDateFetchBodiesFetchImages, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PostList]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodyFetchImagesFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Post]
-    ],
-    publish: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyOauthtokenPostIdPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Post]
-    ],
-    revert: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyOauthtokenPostId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Post]
-    ],
-    search: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodiesFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PostList]
-    ],
-    update: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodyFetchImagesFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Post]
-    ]
+    delete: gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyOauthtokenPostId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBody => gapiDotClientLib.gapiNs.clientNs.Request[Post],
+    getByPath: gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyMaxCommentsOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Post],
+    insert: gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodyFetchImages => gapiDotClientLib.gapiNs.clientNs.Request[Post],
+    list: gapiDotClientDotBloggerLib.Anon_AltBlogIdEndDateFetchBodiesFetchImages => gapiDotClientLib.gapiNs.clientNs.Request[PostList],
+    patch: gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodyFetchImagesFields => gapiDotClientLib.gapiNs.clientNs.Request[Post],
+    publish: gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyOauthtokenPostIdPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Post],
+    revert: gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyOauthtokenPostId => gapiDotClientLib.gapiNs.clientNs.Request[Post],
+    search: gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodiesFields => gapiDotClientLib.gapiNs.clientNs.Request[PostList],
+    update: gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodyFetchImagesFields => gapiDotClientLib.gapiNs.clientNs.Request[Post]
   ): PostsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, getByPath = getByPath, insert = insert, list = list, patch = patch, publish = publish, revert = revert, search = search, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getByPath = js.Any.fromFunction1(getByPath), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), publish = js.Any.fromFunction1(publish), revert = js.Any.fromFunction1(revert), search = js.Any.fromFunction1(search), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[PostsResource]
   }

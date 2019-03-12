@@ -18,9 +18,9 @@ object IPnpObject {
     id: java.lang.String,
     properties: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, _],
     `type`: PnpObjectType,
-    update: js.Function1[PnpObjectUpdate, scala.Unit]
+    update: PnpObjectUpdate => scala.Unit
   ): IPnpObject = {
-    val __obj = js.Dynamic.literal(id = id, properties = properties, update = update)
+    val __obj = js.Dynamic.literal(id = id, properties = properties, update = js.Any.fromFunction1(update))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IPnpObject]
   }

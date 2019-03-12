@@ -15,16 +15,10 @@ trait PlayersResource extends js.Object {
 object PlayersResource {
   @scala.inline
   def apply(
-    hide: js.Function1[
-      gapiDotClientDotGamesmanagementLib.Anon_AltApplicationIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    unhide: js.Function1[
-      gapiDotClientDotGamesmanagementLib.Anon_AltApplicationIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ]
+    hide: gapiDotClientDotGamesmanagementLib.Anon_AltApplicationIdFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    unhide: gapiDotClientDotGamesmanagementLib.Anon_AltApplicationIdFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   ): PlayersResource = {
-    val __obj = js.Dynamic.literal(hide = hide, unhide = unhide)
+    val __obj = js.Dynamic.literal(hide = js.Any.fromFunction1(hide), unhide = js.Any.fromFunction1(unhide))
   
     __obj.asInstanceOf[PlayersResource]
   }

@@ -45,31 +45,31 @@ object IToggle {
   @scala.inline
   def apply(
     ISlider: ISlider = null,
-    applyIncrement: js.Function0[scala.Double] = null,
+    applyIncrement: () => scala.Double = null,
     baseCls: java.lang.String = null,
-    getBaseCls: js.Function0[java.lang.String] = null,
-    getMaxValueCls: js.Function0[java.lang.String] = null,
-    getMinValueCls: js.Function0[java.lang.String] = null,
+    getBaseCls: () => java.lang.String = null,
+    getMaxValueCls: () => java.lang.String = null,
+    getMinValueCls: () => java.lang.String = null,
     maxValueCls: java.lang.String = null,
     minValueCls: java.lang.String = null,
-    setBaseCls: js.Function1[/* baseCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setMaxValueCls: js.Function1[/* maxValueCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setMinValueCls: js.Function1[/* minValueCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setValue: js.Function2[/* newValue */ js.UndefOr[js.Any], /* oldValue */ js.UndefOr[js.Any], scala.Unit] = null
+    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setMaxValueCls: /* maxValueCls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setMinValueCls: /* minValueCls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setValue: (/* newValue */ js.UndefOr[js.Any], /* oldValue */ js.UndefOr[js.Any]) => scala.Unit = null
   ): IToggle = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, ISlider)
-    if (applyIncrement != null) __obj.updateDynamic("applyIncrement")(applyIncrement)
+    if (applyIncrement != null) __obj.updateDynamic("applyIncrement")(js.Any.fromFunction0(applyIncrement))
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(getBaseCls)
-    if (getMaxValueCls != null) __obj.updateDynamic("getMaxValueCls")(getMaxValueCls)
-    if (getMinValueCls != null) __obj.updateDynamic("getMinValueCls")(getMinValueCls)
+    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
+    if (getMaxValueCls != null) __obj.updateDynamic("getMaxValueCls")(js.Any.fromFunction0(getMaxValueCls))
+    if (getMinValueCls != null) __obj.updateDynamic("getMinValueCls")(js.Any.fromFunction0(getMinValueCls))
     if (maxValueCls != null) __obj.updateDynamic("maxValueCls")(maxValueCls)
     if (minValueCls != null) __obj.updateDynamic("minValueCls")(minValueCls)
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(setBaseCls)
-    if (setMaxValueCls != null) __obj.updateDynamic("setMaxValueCls")(setMaxValueCls)
-    if (setMinValueCls != null) __obj.updateDynamic("setMinValueCls")(setMinValueCls)
-    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
+    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
+    if (setMaxValueCls != null) __obj.updateDynamic("setMaxValueCls")(js.Any.fromFunction1(setMaxValueCls))
+    if (setMinValueCls != null) __obj.updateDynamic("setMinValueCls")(js.Any.fromFunction1(setMinValueCls))
+    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction2(setValue))
     __obj.asInstanceOf[IToggle]
   }
 }

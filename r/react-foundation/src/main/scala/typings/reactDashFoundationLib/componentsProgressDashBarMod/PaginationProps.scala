@@ -296,7 +296,7 @@ object PaginationProps {
   @scala.inline
   def apply(
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
     color: reactDashFoundationLib.enumsMod.ProgressColors = null,
     max: scala.Int | scala.Double = null,
     meter: ProgressMeterWithTextProps = null,

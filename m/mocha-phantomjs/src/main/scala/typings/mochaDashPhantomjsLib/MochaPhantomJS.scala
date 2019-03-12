@@ -19,14 +19,14 @@ object MochaPhantomJS {
   @scala.inline
   def apply(
     columns: scala.Double,
-    customizeMocha: js.Function1[MochaPhantomJSOptions, scala.Unit],
+    customizeMocha: MochaPhantomJSOptions => scala.Unit,
     mochaStartWait: scala.Double,
     output: js.Any,
-    run: js.Function0[scala.Unit],
+    run: () => scala.Unit,
     startTime: stdLib.Date,
     url: java.lang.String
   ): MochaPhantomJS = {
-    val __obj = js.Dynamic.literal(columns = columns, customizeMocha = customizeMocha, mochaStartWait = mochaStartWait, output = output, run = run, startTime = startTime, url = url)
+    val __obj = js.Dynamic.literal(columns = columns, customizeMocha = js.Any.fromFunction1(customizeMocha), mochaStartWait = mochaStartWait, output = output, run = js.Any.fromFunction0(run), startTime = startTime, url = url)
   
     __obj.asInstanceOf[MochaPhantomJS]
   }

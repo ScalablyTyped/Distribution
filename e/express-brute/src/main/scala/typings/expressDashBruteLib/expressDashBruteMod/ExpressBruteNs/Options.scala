@@ -52,13 +52,7 @@ object Options {
   @scala.inline
   def apply(
     attachResetToRequest: js.UndefOr[scala.Boolean] = js.undefined,
-    failCallback: js.Function4[
-      /* req */ expressLib.expressMod.eNs.Request, 
-      /* res */ expressLib.expressMod.eNs.Response, 
-      /* next */ js.Function, 
-      /* nextValidRequestDate */ js.Any, 
-      scala.Unit
-    ] = null,
+    failCallback: (/* req */ expressLib.expressMod.eNs.Request, /* res */ expressLib.expressMod.eNs.Response, /* next */ js.Function, /* nextValidRequestDate */ js.Any) => scala.Unit = null,
     freeRetries: scala.Int | scala.Double = null,
     handleStoreError: js.Any = null,
     lifetime: scala.Int | scala.Double = null,
@@ -68,7 +62,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(attachResetToRequest)) __obj.updateDynamic("attachResetToRequest")(attachResetToRequest)
-    if (failCallback != null) __obj.updateDynamic("failCallback")(failCallback)
+    if (failCallback != null) __obj.updateDynamic("failCallback")(js.Any.fromFunction4(failCallback))
     if (freeRetries != null) __obj.updateDynamic("freeRetries")(freeRetries.asInstanceOf[js.Any])
     if (handleStoreError != null) __obj.updateDynamic("handleStoreError")(handleStoreError)
     if (lifetime != null) __obj.updateDynamic("lifetime")(lifetime.asInstanceOf[js.Any])

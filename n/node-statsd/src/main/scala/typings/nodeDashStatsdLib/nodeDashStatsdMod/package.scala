@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object nodeDashStatsdMod {
   type Callback = js.Function2[
-    /* error */ js.UndefOr[nodeLib.Error], 
+    /* error */ js.UndefOr[stdLib.Error], 
     /* bytes */ js.UndefOr[nodeLib.Buffer], 
     scala.Unit
   ]

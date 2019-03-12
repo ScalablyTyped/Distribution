@@ -27,16 +27,16 @@ trait EditableAttrs extends js.Object {
 object EditableAttrs {
   @scala.inline
   def apply(
-    onBlur: js.Function0[scala.Unit] = null,
-    onKeyDown: js.Function0[scala.Unit] = null,
+    onBlur: () => scala.Unit = null,
+    onKeyDown: () => scala.Unit = null,
     placeholder: java.lang.String = null,
-    ref: js.Function1[/* ref */ js.Any, _] = null
+    ref: /* ref */ js.Any => _ = null
   ): EditableAttrs = {
     val __obj = js.Dynamic.literal()
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction0(onKeyDown))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    if (ref != null) __obj.updateDynamic("ref")(js.Any.fromFunction1(ref))
     __obj.asInstanceOf[EditableAttrs]
   }
 }

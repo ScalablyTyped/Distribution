@@ -20,27 +20,27 @@ trait XChangesSet
     * queries for all contained changes at once.
     * @returns an array of {@link ElementChange} holding information about each changes that is part of this object.
     */
-  val AllChanges: activexDashInteropLib.SafeArray[ElementChange]
+  val AllChanges: stdLib.SafeArray[ElementChange]
   /**
     * queries for all contained changes at once.
     * @returns an array of {@link ElementChange} holding information about each changes that is part of this object.
     */
-  def getAllChanges(): activexDashInteropLib.SafeArray[ElementChange]
+  def getAllChanges(): stdLib.SafeArray[ElementChange]
 }
 
 object XChangesSet {
   @scala.inline
   def apply(
-    AllChanges: activexDashInteropLib.SafeArray[ElementChange],
+    AllChanges: stdLib.SafeArray[ElementChange],
     ElementType: activexDashLibreofficeLib.`type`,
-    acquire: js.Function0[scala.Unit],
-    getAllChanges: js.Function0[activexDashInteropLib.SafeArray[ElementChange]],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    hasElements: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getAllChanges: () => stdLib.SafeArray[ElementChange],
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    hasElements: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XChangesSet = {
-    val __obj = js.Dynamic.literal(AllChanges = AllChanges, ElementType = ElementType, acquire = acquire, getAllChanges = getAllChanges, getElementType = getElementType, hasElements = hasElements, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(AllChanges = AllChanges, ElementType = ElementType, acquire = js.Any.fromFunction0(acquire), getAllChanges = js.Any.fromFunction0(getAllChanges), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XChangesSet]
   }

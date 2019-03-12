@@ -11,12 +11,12 @@ trait Static extends js.Object {
     * Export Context
     * @type {Context}
     */
-  var Context: Context = js.native
+  var Context: pageLib.PageJSNs.Context = js.native
   /**
     * Expose Route
     * @type {Route}
     */
-  var Route: Route = js.native
+  var Route: pageLib.PageJSNs.Route = js.native
   /**
     * Register page's popstate / click bindings. If you're doing selective binding you'll like want to pass { click: false } to specify this yourself. The following options are available:
     *

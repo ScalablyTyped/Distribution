@@ -53,17 +53,17 @@ trait ASPxClientDashboardParameter extends js.Object {
 object ASPxClientDashboardParameter {
   @scala.inline
   def apply(
-    GetDefaultValue: js.Function0[js.Object],
-    GetDescription: js.Function0[java.lang.String],
-    GetName: js.Function0[java.lang.String],
-    GetType: js.Function0[java.lang.String],
-    GetValue: js.Function0[js.Object],
-    GetValues: js.Function0[js.Array[ASPxClientDashboardParameterValue]],
+    GetDefaultValue: () => js.Object,
+    GetDescription: () => java.lang.String,
+    GetName: () => java.lang.String,
+    GetType: () => java.lang.String,
+    GetValue: () => js.Object,
+    GetValues: () => js.Array[ASPxClientDashboardParameterValue],
     Name: java.lang.String,
-    SetValue: js.Function1[js.Object, scala.Unit],
+    SetValue: js.Object => scala.Unit,
     Value: js.Object
   ): ASPxClientDashboardParameter = {
-    val __obj = js.Dynamic.literal(GetDefaultValue = GetDefaultValue, GetDescription = GetDescription, GetName = GetName, GetType = GetType, GetValue = GetValue, GetValues = GetValues, Name = Name, SetValue = SetValue, Value = Value)
+    val __obj = js.Dynamic.literal(GetDefaultValue = js.Any.fromFunction0(GetDefaultValue), GetDescription = js.Any.fromFunction0(GetDescription), GetName = js.Any.fromFunction0(GetName), GetType = js.Any.fromFunction0(GetType), GetValue = js.Any.fromFunction0(GetValue), GetValues = js.Any.fromFunction0(GetValues), Name = Name, SetValue = js.Any.fromFunction1(SetValue), Value = Value)
   
     __obj.asInstanceOf[ASPxClientDashboardParameter]
   }

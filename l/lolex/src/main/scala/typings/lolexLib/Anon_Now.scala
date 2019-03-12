@@ -11,8 +11,8 @@ trait Anon_Now extends js.Object {
 
 object Anon_Now {
   @scala.inline
-  def apply(now: js.Function0[scala.Double]): Anon_Now = {
-    val __obj = js.Dynamic.literal(now = now)
+  def apply(now: () => scala.Double): Anon_Now = {
+    val __obj = js.Dynamic.literal(now = js.Any.fromFunction0(now))
   
     __obj.asInstanceOf[Anon_Now]
   }

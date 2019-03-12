@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("plottable/build/src/core/symbolFactories", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def circle(): plottableLib.buildSrcCoreSymbolFactoriesMod.SymbolFactory = js.native
-  def cross(): plottableLib.buildSrcCoreSymbolFactoriesMod.SymbolFactory = js.native
-  def diamond(): plottableLib.buildSrcCoreSymbolFactoriesMod.SymbolFactory = js.native
-  def square(): plottableLib.buildSrcCoreSymbolFactoriesMod.SymbolFactory = js.native
-  def star(): plottableLib.buildSrcCoreSymbolFactoriesMod.SymbolFactory = js.native
-  def triangle(): plottableLib.buildSrcCoreSymbolFactoriesMod.SymbolFactory = js.native
-  def wye(): plottableLib.buildSrcCoreSymbolFactoriesMod.SymbolFactory = js.native
+  def circle(): SymbolFactory = js.native
+  def cross(): SymbolFactory = js.native
+  def diamond(): SymbolFactory = js.native
+  def square(): SymbolFactory = js.native
+  def star(): SymbolFactory = js.native
+  def triangle(): SymbolFactory = js.native
+  def wye(): SymbolFactory = js.native
 }
 

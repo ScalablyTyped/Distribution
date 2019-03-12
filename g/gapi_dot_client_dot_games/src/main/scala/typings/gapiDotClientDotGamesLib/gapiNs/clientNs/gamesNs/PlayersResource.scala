@@ -15,16 +15,10 @@ trait PlayersResource extends js.Object {
 object PlayersResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Player]
-    ],
-    list: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltCollectionConsistencyToken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PlayerListResponse]
-    ]
+    get: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Player],
+    list: gapiDotClientDotGamesLib.Anon_AltCollectionConsistencyToken => gapiDotClientLib.gapiNs.clientNs.Request[PlayerListResponse]
   ): PlayersResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[PlayersResource]
   }

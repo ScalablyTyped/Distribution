@@ -28,16 +28,16 @@ trait EncryptedData extends js.Object {
 object EncryptedData {
   @scala.inline
   def apply(
-    decrypt: js.Function1[pkijsLib.Anon_Password, js.Thenable[stdLib.ArrayBuffer]],
-    encrypt: js.Function1[pkijsLib.Anon_ContentEncryptionAlgorithm, js.Thenable[stdLib.ArrayBuffer]],
+    decrypt: pkijsLib.Anon_Password => js.Thenable[stdLib.ArrayBuffer],
+    encrypt: pkijsLib.Anon_ContentEncryptionAlgorithm => js.Thenable[stdLib.ArrayBuffer],
     encryptedContentInfo: pkijsLib.srcEncryptedContentInfoMod.default,
-    fromSchema: js.Function1[js.Any, scala.Unit],
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    fromSchema: js.Any => scala.Unit,
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     unprotectedAttrs: js.Array[pkijsLib.srcAttributeMod.default],
     version: scala.Double
   ): EncryptedData = {
-    val __obj = js.Dynamic.literal(decrypt = decrypt, encrypt = encrypt, encryptedContentInfo = encryptedContentInfo, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema, unprotectedAttrs = unprotectedAttrs, version = version)
+    val __obj = js.Dynamic.literal(decrypt = js.Any.fromFunction1(decrypt), encrypt = js.Any.fromFunction1(encrypt), encryptedContentInfo = encryptedContentInfo, fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), unprotectedAttrs = unprotectedAttrs, version = version)
   
     __obj.asInstanceOf[EncryptedData]
   }

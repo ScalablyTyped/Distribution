@@ -136,21 +136,21 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    activate: js.Function1[/* e */ ActivateEventArgs, scala.Unit] = null,
-    ajaxBeforeLoad: js.Function1[/* e */ AjaxBeforeLoadEventArgs, scala.Unit] = null,
-    ajaxError: js.Function1[/* e */ AjaxErrorEventArgs, scala.Unit] = null,
-    ajaxLoad: js.Function1[/* e */ AjaxLoadEventArgs, scala.Unit] = null,
+    activate: /* e */ ActivateEventArgs => scala.Unit = null,
+    ajaxBeforeLoad: /* e */ AjaxBeforeLoadEventArgs => scala.Unit = null,
+    ajaxError: /* e */ AjaxErrorEventArgs => scala.Unit = null,
+    ajaxLoad: /* e */ AjaxLoadEventArgs => scala.Unit = null,
     ajaxSettings: AjaxSettings = null,
-    ajaxSuccess: js.Function1[/* e */ AjaxSuccessEventArgs, scala.Unit] = null,
+    ajaxSuccess: /* e */ AjaxSuccessEventArgs => scala.Unit = null,
     allowKeyboardNavigation: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeActivate: js.Function1[/* e */ BeforeActivateEventArgs, scala.Unit] = null,
-    beforeInactivate: js.Function1[/* e */ BeforeInactivateEventArgs, scala.Unit] = null,
+    beforeActivate: /* e */ BeforeActivateEventArgs => scala.Unit = null,
+    beforeInactivate: /* e */ BeforeInactivateEventArgs => scala.Unit = null,
     collapseSpeed: scala.Int | scala.Double = null,
     collapsible: js.UndefOr[scala.Boolean] = js.undefined,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
     customIcon: CustomIcon = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     disabledItems: js.Array[scala.Double] = null,
     enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
     enableMultipleOpen: js.UndefOr[scala.Boolean] = js.undefined,
@@ -164,7 +164,7 @@ object Model {
     height: scala.Double | java.lang.String = null,
     heightAdjustMode: HeightAdjustMode | java.lang.String = null,
     htmlAttributes: js.Any = null,
-    inActivate: js.Function1[/* e */ InActivateEventArgs, scala.Unit] = null,
+    inActivate: /* e */ InActivateEventArgs => scala.Unit = null,
     selectedItemIndex: scala.Int | scala.Double = null,
     selectedItems: js.Array[scala.Double] = null,
     showCloseButton: js.UndefOr[scala.Boolean] = js.undefined,
@@ -172,21 +172,21 @@ object Model {
     width: scala.Double | java.lang.String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (activate != null) __obj.updateDynamic("activate")(activate)
-    if (ajaxBeforeLoad != null) __obj.updateDynamic("ajaxBeforeLoad")(ajaxBeforeLoad)
-    if (ajaxError != null) __obj.updateDynamic("ajaxError")(ajaxError)
-    if (ajaxLoad != null) __obj.updateDynamic("ajaxLoad")(ajaxLoad)
+    if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction1(activate))
+    if (ajaxBeforeLoad != null) __obj.updateDynamic("ajaxBeforeLoad")(js.Any.fromFunction1(ajaxBeforeLoad))
+    if (ajaxError != null) __obj.updateDynamic("ajaxError")(js.Any.fromFunction1(ajaxError))
+    if (ajaxLoad != null) __obj.updateDynamic("ajaxLoad")(js.Any.fromFunction1(ajaxLoad))
     if (ajaxSettings != null) __obj.updateDynamic("ajaxSettings")(ajaxSettings)
-    if (ajaxSuccess != null) __obj.updateDynamic("ajaxSuccess")(ajaxSuccess)
+    if (ajaxSuccess != null) __obj.updateDynamic("ajaxSuccess")(js.Any.fromFunction1(ajaxSuccess))
     if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation)
-    if (beforeActivate != null) __obj.updateDynamic("beforeActivate")(beforeActivate)
-    if (beforeInactivate != null) __obj.updateDynamic("beforeInactivate")(beforeInactivate)
+    if (beforeActivate != null) __obj.updateDynamic("beforeActivate")(js.Any.fromFunction1(beforeActivate))
+    if (beforeInactivate != null) __obj.updateDynamic("beforeInactivate")(js.Any.fromFunction1(beforeInactivate))
     if (collapseSpeed != null) __obj.updateDynamic("collapseSpeed")(collapseSpeed.asInstanceOf[js.Any])
     if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (customIcon != null) __obj.updateDynamic("customIcon")(customIcon)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (disabledItems != null) __obj.updateDynamic("disabledItems")(disabledItems)
     if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
     if (!js.isUndefined(enableMultipleOpen)) __obj.updateDynamic("enableMultipleOpen")(enableMultipleOpen)
@@ -200,7 +200,7 @@ object Model {
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (heightAdjustMode != null) __obj.updateDynamic("heightAdjustMode")(heightAdjustMode.asInstanceOf[js.Any])
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
-    if (inActivate != null) __obj.updateDynamic("inActivate")(inActivate)
+    if (inActivate != null) __obj.updateDynamic("inActivate")(js.Any.fromFunction1(inActivate))
     if (selectedItemIndex != null) __obj.updateDynamic("selectedItemIndex")(selectedItemIndex.asInstanceOf[js.Any])
     if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems)
     if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton)

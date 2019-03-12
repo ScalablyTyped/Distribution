@@ -13,12 +13,9 @@ trait I18nRegionsResource extends js.Object {
 object I18nRegionsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFieldsHlKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[I18nRegionListResponse]
-    ]
+    list: gapiDotClientDotYoutubeLib.Anon_AltFieldsHlKey => gapiDotClientLib.gapiNs.clientNs.Request[I18nRegionListResponse]
   ): I18nRegionsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[I18nRegionsResource]
   }

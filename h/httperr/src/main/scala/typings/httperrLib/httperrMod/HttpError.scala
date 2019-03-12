@@ -24,10 +24,10 @@ object HttpError {
     name: java.lang.String,
     statusCode: scala.Double,
     title: java.lang.String,
-    toObject: js.Function1[/* repeated */ java.lang.String | stdLib.RegExp, js.Any],
+    toObject: /* repeated */ java.lang.String | stdLib.RegExp => js.Any,
     stack: java.lang.String = null
   ): HttpError = {
-    val __obj = js.Dynamic.literal(code = code, message = message, name = name, statusCode = statusCode, title = title, toObject = toObject)
+    val __obj = js.Dynamic.literal(code = code, message = message, name = name, statusCode = statusCode, title = title, toObject = js.Any.fromFunction1(toObject))
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[HttpError]
   }

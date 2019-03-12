@@ -14,14 +14,14 @@ trait CsvUpload extends BulkUpload[CsvUpload] {
 object CsvUpload {
   @scala.inline
   def apply(
-    append: js.Function1[js.Object, CsvUpload],
-    apply: js.Function0[scala.Unit],
-    forCampaignManagement: js.Function0[CsvUpload],
-    forOfflineConversions: js.Function0[CsvUpload],
-    preview: js.Function0[scala.Unit],
-    setFileName: js.Function1[java.lang.String, CsvUpload]
+    append: js.Object => CsvUpload,
+    apply: () => scala.Unit,
+    forCampaignManagement: () => CsvUpload,
+    forOfflineConversions: () => CsvUpload,
+    preview: () => scala.Unit,
+    setFileName: java.lang.String => CsvUpload
   ): CsvUpload = {
-    val __obj = js.Dynamic.literal(append = append, apply = apply, forCampaignManagement = forCampaignManagement, forOfflineConversions = forOfflineConversions, preview = preview, setFileName = setFileName)
+    val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), apply = js.Any.fromFunction0(apply), forCampaignManagement = js.Any.fromFunction0(forCampaignManagement), forOfflineConversions = js.Any.fromFunction0(forOfflineConversions), preview = js.Any.fromFunction0(preview), setFileName = js.Any.fromFunction1(setFileName))
   
     __obj.asInstanceOf[CsvUpload]
   }

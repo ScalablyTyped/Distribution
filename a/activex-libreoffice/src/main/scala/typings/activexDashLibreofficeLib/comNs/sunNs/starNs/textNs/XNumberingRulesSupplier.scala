@@ -21,12 +21,12 @@ object XNumberingRulesSupplier {
   @scala.inline
   def apply(
     NumberingRules: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
-    acquire: js.Function0[scala.Unit],
-    getNumberingRules: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getNumberingRules: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XNumberingRulesSupplier = {
-    val __obj = js.Dynamic.literal(NumberingRules = NumberingRules, acquire = acquire, getNumberingRules = getNumberingRules, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(NumberingRules = NumberingRules, acquire = js.Any.fromFunction0(acquire), getNumberingRules = js.Any.fromFunction0(getNumberingRules), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XNumberingRulesSupplier]
   }

@@ -13,19 +13,19 @@ trait CustomShapeEngine
 object CustomShapeEngine {
   @scala.inline
   def apply(
-    Interaction: activexDashInteropLib.SafeArray[XCustomShapeHandle],
+    Interaction: stdLib.SafeArray[XCustomShapeHandle],
     LineGeometry: PolyPolygonBezierCoords,
     TextBounds: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
-    acquire: js.Function0[scala.Unit],
-    getInteraction: js.Function0[activexDashInteropLib.SafeArray[XCustomShapeHandle]],
-    getLineGeometry: js.Function0[PolyPolygonBezierCoords],
-    getTextBounds: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    render: js.Function0[XShape]
+    acquire: () => scala.Unit,
+    getInteraction: () => stdLib.SafeArray[XCustomShapeHandle],
+    getLineGeometry: () => PolyPolygonBezierCoords,
+    getTextBounds: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    render: () => XShape
   ): CustomShapeEngine = {
-    val __obj = js.Dynamic.literal(Interaction = Interaction, LineGeometry = LineGeometry, TextBounds = TextBounds, acquire = acquire, getInteraction = getInteraction, getLineGeometry = getLineGeometry, getTextBounds = getTextBounds, initialize = initialize, queryInterface = queryInterface, release = release, render = render)
+    val __obj = js.Dynamic.literal(Interaction = Interaction, LineGeometry = LineGeometry, TextBounds = TextBounds, acquire = js.Any.fromFunction0(acquire), getInteraction = js.Any.fromFunction0(getInteraction), getLineGeometry = js.Any.fromFunction0(getLineGeometry), getTextBounds = js.Any.fromFunction0(getTextBounds), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), render = js.Any.fromFunction0(render))
   
     __obj.asInstanceOf[CustomShapeEngine]
   }

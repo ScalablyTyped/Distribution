@@ -12,8 +12,8 @@ trait FSEvents extends js.Object {
 
 object FSEvents {
   @scala.inline
-  def apply(start: js.Function0[FSEvents], stop: js.Function0[FSEvents]): FSEvents = {
-    val __obj = js.Dynamic.literal(start = start, stop = stop)
+  def apply(start: () => FSEvents, stop: () => FSEvents): FSEvents = {
+    val __obj = js.Dynamic.literal(start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[FSEvents]
   }

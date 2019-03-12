@@ -11,8 +11,8 @@ trait TargetBinder[D /* <: DirectiveMeta */] extends js.Object {
 
 object TargetBinder {
   @scala.inline
-  def apply[D /* <: DirectiveMeta */](bind: js.Function1[Target, BoundTarget[D]]): TargetBinder[D] = {
-    val __obj = js.Dynamic.literal(bind = bind)
+  def apply[D /* <: DirectiveMeta */](bind: Target => BoundTarget[D]): TargetBinder[D] = {
+    val __obj = js.Dynamic.literal(bind = js.Any.fromFunction1(bind))
   
     __obj.asInstanceOf[TargetBinder[D]]
   }

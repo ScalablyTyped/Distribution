@@ -15,7 +15,7 @@ trait UploadUploadEvent extends UploadEvent {
 object UploadUploadEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Upload,
     XMLHttpRequest: js.Any = null,
@@ -23,7 +23,7 @@ object UploadUploadEvent {
     files: js.Array[_] = null,
     formData: js.Any = null
   ): UploadUploadEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (XMLHttpRequest != null) __obj.updateDynamic("XMLHttpRequest")(XMLHttpRequest)
     if (data != null) __obj.updateDynamic("data")(data)
     if (files != null) __obj.updateDynamic("files")(files)

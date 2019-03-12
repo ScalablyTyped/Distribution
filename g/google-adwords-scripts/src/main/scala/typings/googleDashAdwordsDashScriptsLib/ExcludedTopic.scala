@@ -14,13 +14,13 @@ trait ExcludedTopic extends isAdGroupChild {
 object ExcludedTopic {
   @scala.inline
   def apply(
-    getAdGroup: js.Function0[AdGroup],
-    getCampaign: js.Function0[Campaign],
-    getId: js.Function0[scala.Double],
-    getTopicId: js.Function0[scala.Double],
-    remove: js.Function0[scala.Unit]
+    getAdGroup: () => AdGroup,
+    getCampaign: () => Campaign,
+    getId: () => scala.Double,
+    getTopicId: () => scala.Double,
+    remove: () => scala.Unit
   ): ExcludedTopic = {
-    val __obj = js.Dynamic.literal(getAdGroup = getAdGroup, getCampaign = getCampaign, getId = getId, getTopicId = getTopicId, remove = remove)
+    val __obj = js.Dynamic.literal(getAdGroup = js.Any.fromFunction0(getAdGroup), getCampaign = js.Any.fromFunction0(getCampaign), getId = js.Any.fromFunction0(getId), getTopicId = js.Any.fromFunction0(getTopicId), remove = js.Any.fromFunction0(remove))
   
     __obj.asInstanceOf[ExcludedTopic]
   }

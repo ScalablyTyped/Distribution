@@ -12,8 +12,8 @@ trait DropdownMenu extends js.Object {
 
 object DropdownMenu {
   @scala.inline
-  def apply(destroy: js.Function0[scala.Unit]): DropdownMenu = {
-    val __obj = js.Dynamic.literal(destroy = destroy)
+  def apply(destroy: () => scala.Unit): DropdownMenu = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
   
     __obj.asInstanceOf[DropdownMenu]
   }

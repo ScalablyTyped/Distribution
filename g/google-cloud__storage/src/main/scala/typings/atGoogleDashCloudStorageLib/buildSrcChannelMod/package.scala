@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object buildSrcChannelMod {
   type StopCallback = js.Function2[
-    /* err */ nodeLib.Error | scala.Null, 
+    /* err */ stdLib.Error | scala.Null, 
     /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
     scala.Unit
   ]

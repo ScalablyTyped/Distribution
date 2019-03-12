@@ -155,9 +155,6 @@ object ^ extends js.Object {
     * @param parameters The parameters for the VPN session.
     * @param callback Called when the parameters are set or if there is an error.
     */
-  def setParameters(
-    parameters: chromeDashAppsLib.chromeNs.vpnProviderNs.VpnSessionParameters,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
+  def setParameters(parameters: VpnSessionParameters, callback: js.Function0[scala.Unit]): scala.Unit = js.native
 }
 

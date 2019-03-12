@@ -16,13 +16,13 @@ trait IObjectTypeColumnMappings extends js.Object {
 object IObjectTypeColumnMappings {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IObjectTypeColumnMapping, scala.Unit],
-    Clone: js.Function0[IObjectTypeColumnMappings],
+    Add: (scala.Double, IObjectTypeColumnMapping) => scala.Unit,
+    Clone: () => IObjectTypeColumnMappings,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IObjectTypeColumnMapping],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => IObjectTypeColumnMapping,
+    Remove: scala.Double => scala.Unit
   ): IObjectTypeColumnMappings = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IObjectTypeColumnMappings]
   }

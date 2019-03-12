@@ -23,16 +23,16 @@ object Token {
   def apply(
     clientId: java.lang.String,
     content: TokenContent,
-    hasApplicationRole: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    hasRealmRole: js.Function1[java.lang.String, scala.Boolean],
-    hasRole: js.Function1[java.lang.String, scala.Boolean],
-    isExpired: js.Function0[scala.Boolean],
+    hasApplicationRole: (java.lang.String, java.lang.String) => scala.Boolean,
+    hasRealmRole: java.lang.String => scala.Boolean,
+    hasRole: java.lang.String => scala.Boolean,
+    isExpired: () => scala.Boolean,
     token: java.lang.String,
     header: js.Any = null,
     signature: nodeLib.Buffer = null,
     signed: java.lang.String = null
   ): Token = {
-    val __obj = js.Dynamic.literal(clientId = clientId, content = content, hasApplicationRole = hasApplicationRole, hasRealmRole = hasRealmRole, hasRole = hasRole, isExpired = isExpired, token = token)
+    val __obj = js.Dynamic.literal(clientId = clientId, content = content, hasApplicationRole = js.Any.fromFunction2(hasApplicationRole), hasRealmRole = js.Any.fromFunction1(hasRealmRole), hasRole = js.Any.fromFunction1(hasRole), isExpired = js.Any.fromFunction0(isExpired), token = token)
     if (header != null) __obj.updateDynamic("header")(header)
     if (signature != null) __obj.updateDynamic("signature")(signature)
     if (signed != null) __obj.updateDynamic("signed")(signed)

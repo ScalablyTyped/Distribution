@@ -16,14 +16,10 @@ trait Anon_AnErrorStringFailureSuccessTheGroupTheOwner extends js.Object {
 object Anon_AnErrorStringFailureSuccessTheGroupTheOwner {
   @scala.inline
   def apply(
-    failure: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup, java.lang.String, js.Any],
-    success: js.Function2[
-      kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup, 
-      kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser, 
-      js.Any
-    ]
+    failure: (kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup, java.lang.String) => js.Any,
+    success: (kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup, kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser) => js.Any
   ): Anon_AnErrorStringFailureSuccessTheGroupTheOwner = {
-    val __obj = js.Dynamic.literal(failure = failure, success = success)
+    val __obj = js.Dynamic.literal(failure = js.Any.fromFunction2(failure), success = js.Any.fromFunction2(success))
   
     __obj.asInstanceOf[Anon_AnErrorStringFailureSuccessTheGroupTheOwner]
   }

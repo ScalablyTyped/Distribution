@@ -20,17 +20,17 @@ trait TextButton extends js.Object {
 object TextButton {
   @scala.inline
   def apply(
-    setAuthorizationAction: js.Function1[AuthorizationAction, TextButton],
-    setBackgroundColor: js.Function1[java.lang.String, TextButton],
-    setComposeAction: js.Function2[Action, ComposedEmailType, TextButton],
-    setDisabled: js.Function1[scala.Boolean, TextButton],
-    setOnClickAction: js.Function1[Action, TextButton],
-    setOnClickOpenLinkAction: js.Function1[Action, TextButton],
-    setOpenLink: js.Function1[OpenLink, TextButton],
-    setText: js.Function1[java.lang.String, TextButton],
-    setTextButtonStyle: js.Function1[TextButtonStyle, TextButton]
+    setAuthorizationAction: AuthorizationAction => TextButton,
+    setBackgroundColor: java.lang.String => TextButton,
+    setComposeAction: (Action, ComposedEmailType) => TextButton,
+    setDisabled: scala.Boolean => TextButton,
+    setOnClickAction: Action => TextButton,
+    setOnClickOpenLinkAction: Action => TextButton,
+    setOpenLink: OpenLink => TextButton,
+    setText: java.lang.String => TextButton,
+    setTextButtonStyle: TextButtonStyle => TextButton
   ): TextButton = {
-    val __obj = js.Dynamic.literal(setAuthorizationAction = setAuthorizationAction, setBackgroundColor = setBackgroundColor, setComposeAction = setComposeAction, setDisabled = setDisabled, setOnClickAction = setOnClickAction, setOnClickOpenLinkAction = setOnClickOpenLinkAction, setOpenLink = setOpenLink, setText = setText, setTextButtonStyle = setTextButtonStyle)
+    val __obj = js.Dynamic.literal(setAuthorizationAction = js.Any.fromFunction1(setAuthorizationAction), setBackgroundColor = js.Any.fromFunction1(setBackgroundColor), setComposeAction = js.Any.fromFunction2(setComposeAction), setDisabled = js.Any.fromFunction1(setDisabled), setOnClickAction = js.Any.fromFunction1(setOnClickAction), setOnClickOpenLinkAction = js.Any.fromFunction1(setOnClickOpenLinkAction), setOpenLink = js.Any.fromFunction1(setOpenLink), setText = js.Any.fromFunction1(setText), setTextButtonStyle = js.Any.fromFunction1(setTextButtonStyle))
   
     __obj.asInstanceOf[TextButton]
   }

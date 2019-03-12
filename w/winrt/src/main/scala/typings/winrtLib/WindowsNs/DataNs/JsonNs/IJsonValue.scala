@@ -18,15 +18,15 @@ trait IJsonValue extends js.Object {
 object IJsonValue {
   @scala.inline
   def apply(
-    getArray: js.Function0[JsonArray],
-    getBoolean: js.Function0[scala.Boolean],
-    getNumber: js.Function0[scala.Double],
-    getObject: js.Function0[JsonObject],
-    getString: js.Function0[java.lang.String],
-    stringify: js.Function0[java.lang.String],
+    getArray: () => JsonArray,
+    getBoolean: () => scala.Boolean,
+    getNumber: () => scala.Double,
+    getObject: () => JsonObject,
+    getString: () => java.lang.String,
+    stringify: () => java.lang.String,
     valueType: JsonValueType
   ): IJsonValue = {
-    val __obj = js.Dynamic.literal(getArray = getArray, getBoolean = getBoolean, getNumber = getNumber, getObject = getObject, getString = getString, stringify = stringify, valueType = valueType)
+    val __obj = js.Dynamic.literal(getArray = js.Any.fromFunction0(getArray), getBoolean = js.Any.fromFunction0(getBoolean), getNumber = js.Any.fromFunction0(getNumber), getObject = js.Any.fromFunction0(getObject), getString = js.Any.fromFunction0(getString), stringify = js.Any.fromFunction0(stringify), valueType = valueType)
   
     __obj.asInstanceOf[IJsonValue]
   }

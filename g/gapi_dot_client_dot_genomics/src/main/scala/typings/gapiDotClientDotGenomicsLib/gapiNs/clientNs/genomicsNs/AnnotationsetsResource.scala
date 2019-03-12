@@ -48,28 +48,13 @@ trait AnnotationsetsResource extends js.Object {
 object AnnotationsetsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AnnotationSet]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltAnnotationSetId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltAnnotationSetId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AnnotationSet]
-    ],
-    search: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SearchAnnotationSetsResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltAnnotationSetIdBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AnnotationSet]
-    ]
+    create: gapiDotClientDotGenomicsLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[AnnotationSet],
+    delete: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltAnnotationSetId => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltAnnotationSetId => gapiDotClientLib.gapiNs.clientNs.Request[AnnotationSet],
+    search: gapiDotClientDotGenomicsLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[SearchAnnotationSetsResponse],
+    update: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltAnnotationSetIdBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[AnnotationSet]
   ): AnnotationsetsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, search = search, update = update)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), search = js.Any.fromFunction1(search), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[AnnotationsetsResource]
   }

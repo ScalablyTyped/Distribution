@@ -51,21 +51,21 @@ trait JQueryMenuAimOptions extends js.Object {
 object JQueryMenuAimOptions {
   @scala.inline
   def apply(
-    activate: js.Function0[scala.Unit] = null,
-    deactivate: js.Function0[scala.Unit] = null,
-    enter: js.Function0[scala.Unit] = null,
-    exit: js.Function0[scala.Unit] = null,
-    exitMenu: js.Function0[scala.Unit] = null,
+    activate: () => scala.Unit = null,
+    deactivate: () => scala.Unit = null,
+    enter: () => scala.Unit = null,
+    exit: () => scala.Unit = null,
+    exitMenu: () => scala.Unit = null,
     rowSelector: java.lang.String = null,
     submenuDirection: java.lang.String = null,
     submenuSelector: java.lang.String = null
   ): JQueryMenuAimOptions = {
     val __obj = js.Dynamic.literal()
-    if (activate != null) __obj.updateDynamic("activate")(activate)
-    if (deactivate != null) __obj.updateDynamic("deactivate")(deactivate)
-    if (enter != null) __obj.updateDynamic("enter")(enter)
-    if (exit != null) __obj.updateDynamic("exit")(exit)
-    if (exitMenu != null) __obj.updateDynamic("exitMenu")(exitMenu)
+    if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction0(activate))
+    if (deactivate != null) __obj.updateDynamic("deactivate")(js.Any.fromFunction0(deactivate))
+    if (enter != null) __obj.updateDynamic("enter")(js.Any.fromFunction0(enter))
+    if (exit != null) __obj.updateDynamic("exit")(js.Any.fromFunction0(exit))
+    if (exitMenu != null) __obj.updateDynamic("exitMenu")(js.Any.fromFunction0(exitMenu))
     if (rowSelector != null) __obj.updateDynamic("rowSelector")(rowSelector)
     if (submenuDirection != null) __obj.updateDynamic("submenuDirection")(submenuDirection)
     if (submenuSelector != null) __obj.updateDynamic("submenuSelector")(submenuSelector)

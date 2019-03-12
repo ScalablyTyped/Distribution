@@ -35,19 +35,14 @@ object RouteRecord {
     path: java.lang.String,
     props: scala.Boolean | js.Object | RoutePropsFunction | (Dictionary[scala.Boolean | js.Object | RoutePropsFunction]),
     regex: stdLib.RegExp,
-    beforeEnter: js.Function3[
-      /* route */ Route, 
-      /* redirect */ js.Function1[/* location */ RawLocation, scala.Unit], 
-      /* next */ js.Function0[scala.Unit], 
-      _
-    ] = null,
+    beforeEnter: (/* route */ Route, /* redirect */ js.Function1[/* location */ RawLocation, scala.Unit], /* next */ js.Function0[scala.Unit]) => _ = null,
     matchAs: java.lang.String = null,
     name: java.lang.String = null,
     parent: RouteRecord = null,
     redirect: RedirectOption = null
   ): RouteRecord = {
     val __obj = js.Dynamic.literal(components = components, instances = instances, meta = meta, path = path, props = props.asInstanceOf[js.Any], regex = regex)
-    if (beforeEnter != null) __obj.updateDynamic("beforeEnter")(beforeEnter)
+    if (beforeEnter != null) __obj.updateDynamic("beforeEnter")(js.Any.fromFunction3(beforeEnter))
     if (matchAs != null) __obj.updateDynamic("matchAs")(matchAs)
     if (name != null) __obj.updateDynamic("name")(name)
     if (parent != null) __obj.updateDynamic("parent")(parent)

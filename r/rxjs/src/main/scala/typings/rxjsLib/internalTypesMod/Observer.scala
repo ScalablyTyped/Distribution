@@ -15,12 +15,12 @@ trait Observer[T] extends js.Object {
 object Observer {
   @scala.inline
   def apply[T](
-    complete: js.Function0[scala.Unit],
-    error: js.Function1[js.Any, scala.Unit],
-    next: js.Function1[T, scala.Unit],
+    complete: () => scala.Unit,
+    error: js.Any => scala.Unit,
+    next: T => scala.Unit,
     closed: js.UndefOr[scala.Boolean] = js.undefined
   ): Observer[T] = {
-    val __obj = js.Dynamic.literal(complete = complete, error = error, next = next)
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), error = js.Any.fromFunction1(error), next = js.Any.fromFunction1(next))
     if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed)
     __obj.asInstanceOf[Observer[T]]
   }

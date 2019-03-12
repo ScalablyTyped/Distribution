@@ -20,19 +20,19 @@ object FocusEvent {
     currentTarget: reactLib.EventTarget with T,
     defaultPrevented: scala.Boolean,
     eventPhase: scala.Double,
-    isDefaultPrevented: js.Function0[scala.Boolean],
-    isPropagationStopped: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
+    isPropagationStopped: () => scala.Boolean,
     isTrusted: scala.Boolean,
     nativeEvent: reactLib.NativeFocusEvent,
-    persist: js.Function0[scala.Unit],
-    preventDefault: js.Function0[scala.Unit],
+    persist: () => scala.Unit,
+    preventDefault: () => scala.Unit,
     relatedTarget: reactLib.EventTarget,
-    stopPropagation: js.Function0[scala.Unit],
+    stopPropagation: () => scala.Unit,
     target: reactLib.EventTarget with T,
     timeStamp: scala.Double,
     `type`: java.lang.String
   ): FocusEvent[T] = {
-    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelable = cancelable, currentTarget = currentTarget, defaultPrevented = defaultPrevented, eventPhase = eventPhase, isDefaultPrevented = isDefaultPrevented, isPropagationStopped = isPropagationStopped, isTrusted = isTrusted, nativeEvent = nativeEvent, persist = persist, preventDefault = preventDefault, relatedTarget = relatedTarget, stopPropagation = stopPropagation, target = target, timeStamp = timeStamp)
+    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelable = cancelable, currentTarget = currentTarget, defaultPrevented = defaultPrevented, eventPhase = eventPhase, isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted, nativeEvent = nativeEvent, persist = js.Any.fromFunction0(persist), preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget, stopPropagation = js.Any.fromFunction0(stopPropagation), target = target, timeStamp = timeStamp)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[FocusEvent[T]]
   }

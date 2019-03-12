@@ -17,23 +17,16 @@ object ^ extends js.Object {
     failure: tslintLib.libLanguageRuleRuleMod.RuleFailure,
     disabledIntervals: js.Array[tslintLib.libLanguageRuleRuleMod.IDisabledInterval]
   ): scala.Boolean = js.native
-  def forEachComment(
-    node: typescriptLib.typescriptMod.tsNs.Node,
-    cb: tslintLib.libLanguageUtilsMod.ForEachCommentCallback
-  ): scala.Unit = js.native
+  def forEachComment(node: typescriptLib.typescriptMod.tsNs.Node, cb: ForEachCommentCallback): scala.Unit = js.native
+  def forEachToken(node: typescriptLib.typescriptMod.tsNs.Node, skipTrivia: scala.Boolean, cb: ForEachTokenCallback): scala.Unit = js.native
   def forEachToken(
     node: typescriptLib.typescriptMod.tsNs.Node,
     skipTrivia: scala.Boolean,
-    cb: tslintLib.libLanguageUtilsMod.ForEachTokenCallback
-  ): scala.Unit = js.native
-  def forEachToken(
-    node: typescriptLib.typescriptMod.tsNs.Node,
-    skipTrivia: scala.Boolean,
-    cb: tslintLib.libLanguageUtilsMod.ForEachTokenCallback,
-    filter: tslintLib.libLanguageUtilsMod.FilterCallback
+    cb: ForEachTokenCallback,
+    filter: FilterCallback
   ): scala.Unit = js.native
   def getBindingElementVariableDeclaration(node: typescriptLib.typescriptMod.tsNs.BindingElement): typescriptLib.typescriptMod.tsNs.VariableDeclaration | scala.Null = js.native
-  def getEqualsKind(node: typescriptLib.typescriptMod.tsNs.BinaryOperatorToken): js.UndefOr[tslintLib.libLanguageUtilsMod.EqualsKind] = js.native
+  def getEqualsKind(node: typescriptLib.typescriptMod.tsNs.BinaryOperatorToken): js.UndefOr[EqualsKind] = js.native
   def getSourceFile(fileName: java.lang.String, source: java.lang.String): typescriptLib.typescriptMod.tsNs.SourceFile = js.native
   def hasCommentAfterPosition(text: java.lang.String, position: scala.Double): scala.Boolean = js.native
   def hasModifier(modifierKinds: typescriptLib.typescriptMod.tsNs.SyntaxKind*): scala.Boolean = js.native

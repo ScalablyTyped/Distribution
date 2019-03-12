@@ -41,28 +41,13 @@ trait TriggersResource extends js.Object {
 object TriggersResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BuildTrigger]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BuildTrigger]
-    ],
-    list: js.Function1[
-      gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListBuildTriggersResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BuildTrigger]
-    ]
+    create: gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[BuildTrigger],
+    delete: gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[BuildTrigger],
+    list: gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[ListBuildTriggersResponse],
+    patch: gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[BuildTrigger]
   ): TriggersResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, patch = patch)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch))
   
     __obj.asInstanceOf[TriggersResource]
   }

@@ -15,7 +15,7 @@ object ^ extends js.Object {
   val is: electronDashUtilLib.Anon_Development = js.native
   def activeWindow(): js.Any = js.native
   def fixPathForAsarUnpack(path: java.lang.String): java.lang.String = js.native
-  def platform[T](platforms: electronDashUtilLib.electronDashUtilMod.PlatformsParameter[T]): T = js.native
+  def platform[T](platforms: PlatformsParameter[T]): T = js.native
   def runJS(code: java.lang.String): js.Promise[_] = js.native
   def runJS(code: java.lang.String, window: js.Any): js.Promise[_] = js.native
 }

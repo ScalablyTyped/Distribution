@@ -14,13 +14,13 @@ trait GetConnectedWifiOptions
 object GetConnectedWifiOptions {
   @scala.inline
   def apply(
-    success: js.Function1[WiFi, scala.Unit],
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
-    fail: js.Function1[js.Any, scala.Unit] = null
+    success: WiFi => scala.Unit,
+    complete: /* res */ js.Any => scala.Unit = null,
+    fail: js.Any => scala.Unit = null
   ): GetConnectedWifiOptions = {
-    val __obj = js.Dynamic.literal(success = success)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[GetConnectedWifiOptions]
   }
 }

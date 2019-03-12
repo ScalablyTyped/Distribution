@@ -31,11 +31,8 @@ trait ConfirmationResult extends js.Object {
 
 object ConfirmationResult {
   @scala.inline
-  def apply(
-    confirm: js.Function1[java.lang.String, js.Promise[UserCredential]],
-    verificationId: java.lang.String
-  ): ConfirmationResult = {
-    val __obj = js.Dynamic.literal(confirm = confirm, verificationId = verificationId)
+  def apply(confirm: java.lang.String => js.Promise[UserCredential], verificationId: java.lang.String): ConfirmationResult = {
+    val __obj = js.Dynamic.literal(confirm = js.Any.fromFunction1(confirm), verificationId = verificationId)
   
     __obj.asInstanceOf[ConfirmationResult]
   }

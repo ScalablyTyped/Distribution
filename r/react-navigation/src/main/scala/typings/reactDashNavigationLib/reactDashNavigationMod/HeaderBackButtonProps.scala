@@ -20,7 +20,7 @@ trait HeaderBackButtonProps extends js.Object {
 object HeaderBackButtonProps {
   @scala.inline
   def apply(
-    onPress: js.Function0[scala.Unit] = null,
+    onPress: () => scala.Unit = null,
     pressColorAndroid: java.lang.String = null,
     tintColor: java.lang.String = null,
     title: java.lang.String = null,
@@ -29,7 +29,7 @@ object HeaderBackButtonProps {
     width: scala.Int | scala.Double = null
   ): HeaderBackButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (pressColorAndroid != null) __obj.updateDynamic("pressColorAndroid")(pressColorAndroid)
     if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor)
     if (title != null) __obj.updateDynamic("title")(title)

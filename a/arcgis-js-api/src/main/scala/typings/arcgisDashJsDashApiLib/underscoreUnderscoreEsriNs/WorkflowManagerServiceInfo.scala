@@ -83,17 +83,17 @@ object WorkflowManagerServiceInfo {
     constructor: js.Function,
     currentVersion: scala.Double,
     dataWorkspaces: js.Array[DataWorkspace],
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     holdTypes: js.Array[HoldType],
     jobPriorities: js.Array[JobPriority],
     jobStatuses: js.Array[JobStatus],
     jobTypes: js.Array[JobType],
     notificationTypes: js.Array[NotificationType],
     privileges: js.Array[Privilege],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     publicQueries: js.Array[JobQueryContainer]
   ): WorkflowManagerServiceInfo = {
-    val __obj = js.Dynamic.literal(activityTypes = activityTypes, configProperties = configProperties, constructor = constructor, currentVersion = currentVersion, dataWorkspaces = dataWorkspaces, hasOwnProperty = hasOwnProperty, holdTypes = holdTypes, jobPriorities = jobPriorities, jobStatuses = jobStatuses, jobTypes = jobTypes, notificationTypes = notificationTypes, privileges = privileges, propertyIsEnumerable = propertyIsEnumerable, publicQueries = publicQueries)
+    val __obj = js.Dynamic.literal(activityTypes = activityTypes, configProperties = configProperties, constructor = constructor, currentVersion = currentVersion, dataWorkspaces = dataWorkspaces, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), holdTypes = holdTypes, jobPriorities = jobPriorities, jobStatuses = jobStatuses, jobTypes = jobTypes, notificationTypes = notificationTypes, privileges = privileges, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), publicQueries = publicQueries)
   
     __obj.asInstanceOf[WorkflowManagerServiceInfo]
   }

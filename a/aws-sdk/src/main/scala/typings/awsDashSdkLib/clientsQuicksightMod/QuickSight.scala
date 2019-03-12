@@ -186,6 +186,41 @@ trait QuickSight
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * Deletes a user after locating the user by its principal ID.
+    */
+  def deleteUserByPrincipalId(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsQuicksightMod.QuickSightNs.DeleteUserByPrincipalIdResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def deleteUserByPrincipalId(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsQuicksightMod.QuickSightNs.DeleteUserByPrincipalIdResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsQuicksightMod.QuickSightNs.DeleteUserByPrincipalIdResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Deletes a user after locating the user by its principal ID.
+    */
+  def deleteUserByPrincipalId(params: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.DeleteUserByPrincipalIdRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsQuicksightMod.QuickSightNs.DeleteUserByPrincipalIdResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def deleteUserByPrincipalId(
+    params: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.DeleteUserByPrincipalIdRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsQuicksightMod.QuickSightNs.DeleteUserByPrincipalIdResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsQuicksightMod.QuickSightNs.DeleteUserByPrincipalIdResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Returns an Amazon QuickSight group's description and Amazon Resource Name (ARN).  The permissions resource is arn:aws:quicksight:us-east-1:&lt;relevant-aws-account-id&gt;:group/default/&lt;group-name&gt; . The response is the group object.   CLI Sample:   aws quicksight describe-group -\-aws-account-id=11112222333 -\-namespace=default -\-group-name=Sales  
     */
   def describeGroup(): awsDashSdkLib.libRequestMod.Request[

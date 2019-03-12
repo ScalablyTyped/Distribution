@@ -55,7 +55,7 @@ trait EditorProps extends js.Object {
   var textAlignment: js.UndefOr[java.lang.String] = js.undefined
   var toolbar: js.UndefOr[js.Object] = js.undefined
   var toolbarClassName: js.UndefOr[java.lang.String] = js.undefined
-  var toolbarCustomButtons: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactElement[reactLib.HTMLElement]]] = js.undefined
+  var toolbarCustomButtons: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactElement[stdLib.HTMLElement]]] = js.undefined
   var toolbarHidden: js.UndefOr[scala.Boolean] = js.undefined
   var toolbarOnFocus: js.UndefOr[scala.Boolean] = js.undefined
   var toolbarStyle: js.UndefOr[js.Object] = js.undefined
@@ -76,37 +76,31 @@ object EditorProps {
     ariaLabel: java.lang.String = null,
     ariaOwneeID: java.lang.String = null,
     contentState: RawDraftContentState = null,
-    customBlockRenderFunc: js.Function1[/* block */ ContentBlock, _] = null,
+    customBlockRenderFunc: /* block */ ContentBlock => _ = null,
     customDecorators: js.Array[js.Object] = null,
     defaultContentState: RawDraftContentState = null,
     defaultEditorState: EditorState = null,
     editorClassName: java.lang.String = null,
-    editorRef: js.Function1[/* ref */ js.Object, scala.Unit] = null,
+    editorRef: /* ref */ js.Object => scala.Unit = null,
     editorState: EditorState = null,
     editorStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    handlePastedText: js.Function4[
-      /* text */ java.lang.String, 
-      /* html */ java.lang.String, 
-      /* editorState */ EditorState, 
-      /* onChange */ js.Function1[/* editorState */ EditorState, scala.Unit], 
-      scala.Boolean
-    ] = null,
+    handlePastedText: (/* text */ java.lang.String, /* html */ java.lang.String, /* editorState */ EditorState, /* onChange */ js.Function1[/* editorState */ EditorState, scala.Unit]) => scala.Boolean = null,
     hashtag: js.Object = null,
     initialContentState: RawDraftContentState = null,
     locale: java.lang.String = null,
     localization: js.Object = null,
     mention: js.Object = null,
-    onBlur: js.Function1[/* event */ SyntheticEvent, scala.Unit] = null,
-    onChange: js.Function1[/* contentState */ RawDraftContentState, scala.Unit] = null,
-    onContentStateChange: js.Function1[/* contentState */ RawDraftContentState, scala.Unit] = null,
-    onDownArrow: js.Function1[/* e */ SyntheticKeyboardEvent, scala.Unit] = null,
-    onEditorStateChange: js.Function1[/* editorState */ EditorState, scala.Unit] = null,
-    onEscape: js.Function1[/* e */ SyntheticKeyboardEvent, scala.Unit] = null,
-    onFocus: js.Function1[/* event */ SyntheticEvent, scala.Unit] = null,
-    onLeftArrow: js.Function1[/* e */ SyntheticKeyboardEvent, scala.Unit] = null,
-    onRightArrow: js.Function1[/* e */ SyntheticKeyboardEvent, scala.Unit] = null,
-    onTab: js.Function1[/* event */ SyntheticKeyboardEvent, scala.Unit] = null,
-    onUpArrow: js.Function1[/* e */ SyntheticKeyboardEvent, scala.Unit] = null,
+    onBlur: /* event */ SyntheticEvent => scala.Unit = null,
+    onChange: /* contentState */ RawDraftContentState => scala.Unit = null,
+    onContentStateChange: /* contentState */ RawDraftContentState => scala.Unit = null,
+    onDownArrow: /* e */ SyntheticKeyboardEvent => scala.Unit = null,
+    onEditorStateChange: /* editorState */ EditorState => scala.Unit = null,
+    onEscape: /* e */ SyntheticKeyboardEvent => scala.Unit = null,
+    onFocus: /* event */ SyntheticEvent => scala.Unit = null,
+    onLeftArrow: /* e */ SyntheticKeyboardEvent => scala.Unit = null,
+    onRightArrow: /* e */ SyntheticKeyboardEvent => scala.Unit = null,
+    onTab: /* event */ SyntheticKeyboardEvent => scala.Unit = null,
+    onUpArrow: /* e */ SyntheticKeyboardEvent => scala.Unit = null,
     placeholder: java.lang.String = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     spellCheck: js.UndefOr[scala.Boolean] = js.undefined,
@@ -115,11 +109,11 @@ object EditorProps {
     textAlignment: java.lang.String = null,
     toolbar: js.Object = null,
     toolbarClassName: java.lang.String = null,
-    toolbarCustomButtons: js.Array[reactLib.reactMod.ReactNs.ReactElement[reactLib.HTMLElement]] = null,
+    toolbarCustomButtons: js.Array[reactLib.reactMod.ReactNs.ReactElement[stdLib.HTMLElement]] = null,
     toolbarHidden: js.UndefOr[scala.Boolean] = js.undefined,
     toolbarOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
     toolbarStyle: js.Object = null,
-    uploadCallback: js.Function1[/* file */ js.Object, js.Promise[js.Object]] = null,
+    uploadCallback: /* file */ js.Object => js.Promise[js.Object] = null,
     wrapperClassName: java.lang.String = null,
     wrapperId: scala.Int | scala.Double = null,
     wrapperStyle: reactLib.reactMod.ReactNs.CSSProperties = null
@@ -133,31 +127,31 @@ object EditorProps {
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
     if (ariaOwneeID != null) __obj.updateDynamic("ariaOwneeID")(ariaOwneeID)
     if (contentState != null) __obj.updateDynamic("contentState")(contentState)
-    if (customBlockRenderFunc != null) __obj.updateDynamic("customBlockRenderFunc")(customBlockRenderFunc)
+    if (customBlockRenderFunc != null) __obj.updateDynamic("customBlockRenderFunc")(js.Any.fromFunction1(customBlockRenderFunc))
     if (customDecorators != null) __obj.updateDynamic("customDecorators")(customDecorators)
     if (defaultContentState != null) __obj.updateDynamic("defaultContentState")(defaultContentState)
     if (defaultEditorState != null) __obj.updateDynamic("defaultEditorState")(defaultEditorState)
     if (editorClassName != null) __obj.updateDynamic("editorClassName")(editorClassName)
-    if (editorRef != null) __obj.updateDynamic("editorRef")(editorRef)
+    if (editorRef != null) __obj.updateDynamic("editorRef")(js.Any.fromFunction1(editorRef))
     if (editorState != null) __obj.updateDynamic("editorState")(editorState)
     if (editorStyle != null) __obj.updateDynamic("editorStyle")(editorStyle)
-    if (handlePastedText != null) __obj.updateDynamic("handlePastedText")(handlePastedText)
+    if (handlePastedText != null) __obj.updateDynamic("handlePastedText")(js.Any.fromFunction4(handlePastedText))
     if (hashtag != null) __obj.updateDynamic("hashtag")(hashtag)
     if (initialContentState != null) __obj.updateDynamic("initialContentState")(initialContentState)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (localization != null) __obj.updateDynamic("localization")(localization)
     if (mention != null) __obj.updateDynamic("mention")(mention)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onContentStateChange != null) __obj.updateDynamic("onContentStateChange")(onContentStateChange)
-    if (onDownArrow != null) __obj.updateDynamic("onDownArrow")(onDownArrow)
-    if (onEditorStateChange != null) __obj.updateDynamic("onEditorStateChange")(onEditorStateChange)
-    if (onEscape != null) __obj.updateDynamic("onEscape")(onEscape)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onLeftArrow != null) __obj.updateDynamic("onLeftArrow")(onLeftArrow)
-    if (onRightArrow != null) __obj.updateDynamic("onRightArrow")(onRightArrow)
-    if (onTab != null) __obj.updateDynamic("onTab")(onTab)
-    if (onUpArrow != null) __obj.updateDynamic("onUpArrow")(onUpArrow)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onContentStateChange != null) __obj.updateDynamic("onContentStateChange")(js.Any.fromFunction1(onContentStateChange))
+    if (onDownArrow != null) __obj.updateDynamic("onDownArrow")(js.Any.fromFunction1(onDownArrow))
+    if (onEditorStateChange != null) __obj.updateDynamic("onEditorStateChange")(js.Any.fromFunction1(onEditorStateChange))
+    if (onEscape != null) __obj.updateDynamic("onEscape")(js.Any.fromFunction1(onEscape))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onLeftArrow != null) __obj.updateDynamic("onLeftArrow")(js.Any.fromFunction1(onLeftArrow))
+    if (onRightArrow != null) __obj.updateDynamic("onRightArrow")(js.Any.fromFunction1(onRightArrow))
+    if (onTab != null) __obj.updateDynamic("onTab")(js.Any.fromFunction1(onTab))
+    if (onUpArrow != null) __obj.updateDynamic("onUpArrow")(js.Any.fromFunction1(onUpArrow))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck)
@@ -170,7 +164,7 @@ object EditorProps {
     if (!js.isUndefined(toolbarHidden)) __obj.updateDynamic("toolbarHidden")(toolbarHidden)
     if (!js.isUndefined(toolbarOnFocus)) __obj.updateDynamic("toolbarOnFocus")(toolbarOnFocus)
     if (toolbarStyle != null) __obj.updateDynamic("toolbarStyle")(toolbarStyle)
-    if (uploadCallback != null) __obj.updateDynamic("uploadCallback")(uploadCallback)
+    if (uploadCallback != null) __obj.updateDynamic("uploadCallback")(js.Any.fromFunction1(uploadCallback))
     if (wrapperClassName != null) __obj.updateDynamic("wrapperClassName")(wrapperClassName)
     if (wrapperId != null) __obj.updateDynamic("wrapperId")(wrapperId.asInstanceOf[js.Any])
     if (wrapperStyle != null) __obj.updateDynamic("wrapperStyle")(wrapperStyle)

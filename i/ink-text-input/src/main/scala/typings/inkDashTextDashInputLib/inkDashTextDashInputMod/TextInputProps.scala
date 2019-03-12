@@ -17,15 +17,15 @@ object TextInputProps {
   @scala.inline
   def apply(
     focus: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function1[/* value */ java.lang.String, scala.Unit] = null,
-    onSubmit: js.Function1[/* value */ java.lang.String, scala.Unit] = null,
+    onChange: /* value */ java.lang.String => scala.Unit = null,
+    onSubmit: /* value */ java.lang.String => scala.Unit = null,
     placeholder: java.lang.String = null,
     value: java.lang.String = null
   ): TextInputProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(onSubmit)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[TextInputProps]

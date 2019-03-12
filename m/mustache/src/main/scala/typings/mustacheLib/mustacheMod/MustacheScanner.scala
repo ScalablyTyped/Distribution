@@ -41,14 +41,14 @@ trait MustacheScanner extends js.Object {
 object MustacheScanner {
   @scala.inline
   def apply(
-    eos: js.Function0[scala.Boolean],
+    eos: () => scala.Boolean,
     pos: scala.Double,
-    scan: js.Function1[stdLib.RegExp, java.lang.String],
-    scanUntil: js.Function1[stdLib.RegExp, java.lang.String],
+    scan: stdLib.RegExp => java.lang.String,
+    scanUntil: stdLib.RegExp => java.lang.String,
     string: java.lang.String,
     tail: java.lang.String
   ): MustacheScanner = {
-    val __obj = js.Dynamic.literal(eos = eos, pos = pos, scan = scan, scanUntil = scanUntil, string = string, tail = tail)
+    val __obj = js.Dynamic.literal(eos = js.Any.fromFunction0(eos), pos = pos, scan = js.Any.fromFunction1(scan), scanUntil = js.Any.fromFunction1(scanUntil), string = string, tail = tail)
   
     __obj.asInstanceOf[MustacheScanner]
   }

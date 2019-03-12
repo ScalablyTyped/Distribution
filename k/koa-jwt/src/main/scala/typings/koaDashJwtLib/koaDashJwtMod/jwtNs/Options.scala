@@ -40,13 +40,8 @@ object Options {
     audience: java.lang.String = null,
     cookie: java.lang.String = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
-    getToken: js.Function2[/* ctx */ koaLib.koaMod.ApplicationNs.Context, Options, java.lang.String] = null,
-    isRevoked: js.Function3[
-      /* ctx */ koaLib.koaMod.ApplicationNs.Context, 
-      /* decodedToken */ js.Object, 
-      /* token */ java.lang.String, 
-      js.Promise[scala.Boolean]
-    ] = null,
+    getToken: (/* ctx */ koaLib.koaMod.ApplicationNs.Context, Options) => java.lang.String = null,
+    isRevoked: (/* ctx */ koaLib.koaMod.ApplicationNs.Context, /* decodedToken */ js.Object, /* token */ java.lang.String) => js.Promise[scala.Boolean] = null,
     issuer: java.lang.String = null,
     key: java.lang.String = null,
     passthrough: js.UndefOr[scala.Boolean] = js.undefined,
@@ -57,8 +52,8 @@ object Options {
     if (audience != null) __obj.updateDynamic("audience")(audience)
     if (cookie != null) __obj.updateDynamic("cookie")(cookie)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (getToken != null) __obj.updateDynamic("getToken")(getToken)
-    if (isRevoked != null) __obj.updateDynamic("isRevoked")(isRevoked)
+    if (getToken != null) __obj.updateDynamic("getToken")(js.Any.fromFunction2(getToken))
+    if (isRevoked != null) __obj.updateDynamic("isRevoked")(js.Any.fromFunction3(isRevoked))
     if (issuer != null) __obj.updateDynamic("issuer")(issuer)
     if (key != null) __obj.updateDynamic("key")(key)
     if (!js.isUndefined(passthrough)) __obj.updateDynamic("passthrough")(passthrough)

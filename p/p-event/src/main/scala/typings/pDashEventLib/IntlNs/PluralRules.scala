@@ -12,11 +12,8 @@ trait PluralRules extends js.Object {
 
 object PluralRules {
   @scala.inline
-  def apply(
-    resolvedOptions: js.Function0[ResolvedPluralRulesOptions],
-    select: js.Function1[scala.Double, java.lang.String]
-  ): PluralRules = {
-    val __obj = js.Dynamic.literal(resolvedOptions = resolvedOptions, select = select)
+  def apply(resolvedOptions: () => ResolvedPluralRulesOptions, select: scala.Double => java.lang.String): PluralRules = {
+    val __obj = js.Dynamic.literal(resolvedOptions = js.Any.fromFunction0(resolvedOptions), select = js.Any.fromFunction1(select))
   
     __obj.asInstanceOf[PluralRules]
   }

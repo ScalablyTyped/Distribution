@@ -17,7 +17,7 @@ trait receiveArgs extends baseResponseArgs {
   /**
     * Details about the client publishing the data.
     */
-  var publishingClient: publishingClient
+  var publishingClient: fmDashWebsyncLib.fmNs.websyncNs.publishingClient
 }
 
 object receiveArgs {

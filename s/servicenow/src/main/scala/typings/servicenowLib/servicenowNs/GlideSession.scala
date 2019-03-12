@@ -21,18 +21,18 @@ trait GlideSession extends js.Object {
 object GlideSession {
   @scala.inline
   def apply(
-    getClientData: js.Function1[java.lang.String, java.lang.String],
-    getClientIP: js.Function0[java.lang.String],
-    getCurrentApplicationId: js.Function0[java.lang.String],
-    getLanguage: js.Function0[java.lang.String],
-    getSessionToken: js.Function0[java.lang.String],
-    getTimeZoneName: js.Function0[java.lang.String],
-    getUrlOnStack: js.Function0[java.lang.String],
-    isInteractive: js.Function0[scala.Boolean],
-    isLoggedIn: js.Function0[scala.Boolean],
-    putClientData: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    getClientData: java.lang.String => java.lang.String,
+    getClientIP: () => java.lang.String,
+    getCurrentApplicationId: () => java.lang.String,
+    getLanguage: () => java.lang.String,
+    getSessionToken: () => java.lang.String,
+    getTimeZoneName: () => java.lang.String,
+    getUrlOnStack: () => java.lang.String,
+    isInteractive: () => scala.Boolean,
+    isLoggedIn: () => scala.Boolean,
+    putClientData: (java.lang.String, java.lang.String) => scala.Unit
   ): GlideSession = {
-    val __obj = js.Dynamic.literal(getClientData = getClientData, getClientIP = getClientIP, getCurrentApplicationId = getCurrentApplicationId, getLanguage = getLanguage, getSessionToken = getSessionToken, getTimeZoneName = getTimeZoneName, getUrlOnStack = getUrlOnStack, isInteractive = isInteractive, isLoggedIn = isLoggedIn, putClientData = putClientData)
+    val __obj = js.Dynamic.literal(getClientData = js.Any.fromFunction1(getClientData), getClientIP = js.Any.fromFunction0(getClientIP), getCurrentApplicationId = js.Any.fromFunction0(getCurrentApplicationId), getLanguage = js.Any.fromFunction0(getLanguage), getSessionToken = js.Any.fromFunction0(getSessionToken), getTimeZoneName = js.Any.fromFunction0(getTimeZoneName), getUrlOnStack = js.Any.fromFunction0(getUrlOnStack), isInteractive = js.Any.fromFunction0(isInteractive), isLoggedIn = js.Any.fromFunction0(isLoggedIn), putClientData = js.Any.fromFunction2(putClientData))
   
     __obj.asInstanceOf[GlideSession]
   }

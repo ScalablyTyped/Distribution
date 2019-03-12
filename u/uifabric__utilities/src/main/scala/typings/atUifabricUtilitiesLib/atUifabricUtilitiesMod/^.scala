@@ -24,8 +24,8 @@ object ^ extends js.Object {
   val textAreaProperties: js.Array[java.lang.String] = js.native
   def addDirectionalKeyCode(which: scala.Double): scala.Unit = js.native
   def addElementAtIndex[T](array: js.Array[T], index: scala.Double, itemToAdd: T): js.Array[T] = js.native
-  def allowScrollOnElement(element: reactLib.HTMLElement, events: atUifabricUtilitiesLib.libEventGroupMod.EventGroup): scala.Unit = js.native
   def allowScrollOnElement(element: scala.Null, events: atUifabricUtilitiesLib.libEventGroupMod.EventGroup): scala.Unit = js.native
+  def allowScrollOnElement(element: stdLib.HTMLElement, events: atUifabricUtilitiesLib.libEventGroupMod.EventGroup): scala.Unit = js.native
   def appendFunction(parent: js.Any, functions: js.Any*): js.Function0[scala.Unit] = js.native
   def arraysEqual[T](array1: js.Array[T], array2: js.Array[T]): scala.Boolean = js.native
   def asAsync[TProps](options: atUifabricUtilitiesLib.libAsAsyncMod.IAsAsyncOptions[TProps]): reactLib.reactMod.ReactNs.ComponentType[TProps with atUifabricUtilitiesLib.Anon_AsyncPlaceholder] = js.native
@@ -47,16 +47,16 @@ object ^ extends js.Object {
   def customizable(scope: java.lang.String, fields: js.Array[java.lang.String]): js.Function1[/* ComposedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], _] = js.native
   def customizable(scope: java.lang.String, fields: js.Array[java.lang.String], concatStyles: scala.Boolean): js.Function1[/* ComposedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], _] = js.native
   def disableBodyScroll(): scala.Unit = js.native
-  def doesElementContainFocus(element: reactLib.HTMLElement): scala.Boolean = js.native
+  def doesElementContainFocus(element: stdLib.HTMLElement): scala.Boolean = js.native
   def elementContains(): scala.Boolean = js.native
-  def elementContains(parent: reactLib.HTMLElement): scala.Boolean = js.native
-  def elementContains(parent: reactLib.HTMLElement, child: reactLib.HTMLElement): scala.Boolean = js.native
-  def elementContains(parent: reactLib.HTMLElement, child: reactLib.HTMLElement, allowVirtualParents: scala.Boolean): scala.Boolean = js.native
-  def elementContains(parent: reactLib.HTMLElement, child: scala.Null, allowVirtualParents: scala.Boolean): scala.Boolean = js.native
-  def elementContains(parent: scala.Null, child: reactLib.HTMLElement): scala.Boolean = js.native
-  def elementContains(parent: scala.Null, child: reactLib.HTMLElement, allowVirtualParents: scala.Boolean): scala.Boolean = js.native
   def elementContains(parent: scala.Null, child: scala.Null, allowVirtualParents: scala.Boolean): scala.Boolean = js.native
-  def elementContainsAttribute(element: reactLib.HTMLElement, attribute: java.lang.String): java.lang.String | scala.Null = js.native
+  def elementContains(parent: scala.Null, child: stdLib.HTMLElement): scala.Boolean = js.native
+  def elementContains(parent: scala.Null, child: stdLib.HTMLElement, allowVirtualParents: scala.Boolean): scala.Boolean = js.native
+  def elementContains(parent: stdLib.HTMLElement): scala.Boolean = js.native
+  def elementContains(parent: stdLib.HTMLElement, child: scala.Null, allowVirtualParents: scala.Boolean): scala.Boolean = js.native
+  def elementContains(parent: stdLib.HTMLElement, child: stdLib.HTMLElement): scala.Boolean = js.native
+  def elementContains(parent: stdLib.HTMLElement, child: stdLib.HTMLElement, allowVirtualParents: scala.Boolean): scala.Boolean = js.native
+  def elementContainsAttribute(element: stdLib.HTMLElement, attribute: java.lang.String): java.lang.String | scala.Null = js.native
   def enableBodyScroll(): scala.Unit = js.native
   def extendComponent[T /* <: reactLib.reactMod.Component[js.Object, js.Object, _] */](
     parent: T,
@@ -70,46 +70,43 @@ object ^ extends js.Object {
     args: js.Any*
   ): js.Any = js.native
   def find[T](array: js.Array[T], cb: js.Function2[/* item */ T, /* index */ scala.Double, scala.Boolean]): js.UndefOr[T] = js.native
+  def findElementRecursive(element: scala.Null, matchFunction: js.Function1[/* element */ stdLib.HTMLElement, scala.Boolean]): stdLib.HTMLElement | scala.Null = js.native
   def findElementRecursive(
-    element: reactLib.HTMLElement,
-    matchFunction: js.Function1[/* element */ reactLib.HTMLElement, scala.Boolean]
-  ): reactLib.HTMLElement | scala.Null = js.native
-  def findElementRecursive(
-    element: scala.Null,
-    matchFunction: js.Function1[/* element */ reactLib.HTMLElement, scala.Boolean]
-  ): reactLib.HTMLElement | scala.Null = js.native
+    element: stdLib.HTMLElement,
+    matchFunction: js.Function1[/* element */ stdLib.HTMLElement, scala.Boolean]
+  ): stdLib.HTMLElement | scala.Null = js.native
   def findIndex[T](array: js.Array[T], cb: js.Function2[/* item */ T, /* index */ scala.Double, scala.Boolean]): scala.Double = js.native
-  def findScrollableParent(): reactLib.HTMLElement | scala.Null = js.native
-  def findScrollableParent(startingElement: reactLib.HTMLElement): reactLib.HTMLElement | scala.Null = js.native
+  def findScrollableParent(): stdLib.HTMLElement | scala.Null = js.native
+  def findScrollableParent(startingElement: stdLib.HTMLElement): stdLib.HTMLElement | scala.Null = js.native
   def fitContentToBounds(options: atUifabricUtilitiesLib.libMathMod.IFitContentToBoundsOptions): atUifabricUtilitiesLib.libISizeMod.ISize = js.native
   def flatten[T](array: js.Array[T | js.Array[T]]): js.Array[T] = js.native
   def focusAsync(): scala.Unit = js.native
   def focusAsync(element: atUifabricUtilitiesLib.Anon_Focus): scala.Unit = js.native
-  def focusAsync(element: reactLib.HTMLElement): scala.Unit = js.native
-  def focusFirstChild(rootElement: reactLib.HTMLElement): scala.Boolean = js.native
+  def focusAsync(element: stdLib.HTMLElement): scala.Unit = js.native
+  def focusFirstChild(rootElement: stdLib.HTMLElement): scala.Boolean = js.native
   def format(s: java.lang.String, values: js.Any*): java.lang.String = js.native
-  def getChildren(parent: reactLib.HTMLElement): js.Array[reactLib.HTMLElement] = js.native
-  def getChildren(parent: reactLib.HTMLElement, allowVirtualChildren: scala.Boolean): js.Array[reactLib.HTMLElement] = js.native
+  def getChildren(parent: stdLib.HTMLElement): js.Array[stdLib.HTMLElement] = js.native
+  def getChildren(parent: stdLib.HTMLElement, allowVirtualChildren: scala.Boolean): js.Array[stdLib.HTMLElement] = js.native
   def getDistanceBetweenPoints(
     point1: atUifabricUtilitiesLib.libIPointMod.IPoint,
     point2: atUifabricUtilitiesLib.libIPointMod.IPoint
   ): scala.Double = js.native
-  def getDocument(): js.UndefOr[reactLib.Document] = js.native
-  def getDocument(rootElement: reactLib.HTMLElement): js.UndefOr[reactLib.Document] = js.native
-  def getElementIndexPath(fromElement: reactLib.HTMLElement, toElement: reactLib.HTMLElement): js.Array[scala.Double] = js.native
-  def getFirstFocusable(rootElement: reactLib.HTMLElement, currentElement: reactLib.HTMLElement): reactLib.HTMLElement | scala.Null = js.native
+  def getDocument(): js.UndefOr[stdLib.Document] = js.native
+  def getDocument(rootElement: stdLib.HTMLElement): js.UndefOr[stdLib.Document] = js.native
+  def getElementIndexPath(fromElement: stdLib.HTMLElement, toElement: stdLib.HTMLElement): js.Array[scala.Double] = js.native
+  def getFirstFocusable(rootElement: stdLib.HTMLElement, currentElement: stdLib.HTMLElement): stdLib.HTMLElement | scala.Null = js.native
   def getFirstFocusable(
-    rootElement: reactLib.HTMLElement,
-    currentElement: reactLib.HTMLElement,
+    rootElement: stdLib.HTMLElement,
+    currentElement: stdLib.HTMLElement,
     includeElementsInFocusZones: scala.Boolean
-  ): reactLib.HTMLElement | scala.Null = js.native
-  def getFirstTabbable(rootElement: reactLib.HTMLElement, currentElement: reactLib.HTMLElement): reactLib.HTMLElement | scala.Null = js.native
+  ): stdLib.HTMLElement | scala.Null = js.native
+  def getFirstTabbable(rootElement: stdLib.HTMLElement, currentElement: stdLib.HTMLElement): stdLib.HTMLElement | scala.Null = js.native
   def getFirstTabbable(
-    rootElement: reactLib.HTMLElement,
-    currentElement: reactLib.HTMLElement,
+    rootElement: stdLib.HTMLElement,
+    currentElement: stdLib.HTMLElement,
     includeElementsInFocusZones: scala.Boolean
-  ): reactLib.HTMLElement | scala.Null = js.native
-  def getFocusableByIndexPath(parent: reactLib.HTMLElement, path: js.Array[scala.Double]): js.UndefOr[reactLib.HTMLElement] = js.native
+  ): stdLib.HTMLElement | scala.Null = js.native
+  def getFocusableByIndexPath(parent: stdLib.HTMLElement, path: js.Array[scala.Double]): js.UndefOr[stdLib.HTMLElement] = js.native
   def getId(): java.lang.String = js.native
   def getId(prefix: java.lang.String): java.lang.String = js.native
   def getInitials(displayName: java.lang.String, isRtl: scala.Boolean): java.lang.String = js.native
@@ -119,18 +116,18 @@ object ^ extends js.Object {
   def getInitials(displayName: scala.Null, isRtl: scala.Boolean): java.lang.String = js.native
   def getInitials(displayName: scala.Null, isRtl: scala.Boolean, allowPhoneInitials: scala.Boolean): java.lang.String = js.native
   def getLanguage(): java.lang.String | scala.Null = js.native
-  def getLastFocusable(rootElement: reactLib.HTMLElement, currentElement: reactLib.HTMLElement): reactLib.HTMLElement | scala.Null = js.native
+  def getLastFocusable(rootElement: stdLib.HTMLElement, currentElement: stdLib.HTMLElement): stdLib.HTMLElement | scala.Null = js.native
   def getLastFocusable(
-    rootElement: reactLib.HTMLElement,
-    currentElement: reactLib.HTMLElement,
+    rootElement: stdLib.HTMLElement,
+    currentElement: stdLib.HTMLElement,
     includeElementsInFocusZones: scala.Boolean
-  ): reactLib.HTMLElement | scala.Null = js.native
-  def getLastTabbable(rootElement: reactLib.HTMLElement, currentElement: reactLib.HTMLElement): reactLib.HTMLElement | scala.Null = js.native
+  ): stdLib.HTMLElement | scala.Null = js.native
+  def getLastTabbable(rootElement: stdLib.HTMLElement, currentElement: stdLib.HTMLElement): stdLib.HTMLElement | scala.Null = js.native
   def getLastTabbable(
-    rootElement: reactLib.HTMLElement,
-    currentElement: reactLib.HTMLElement,
+    rootElement: stdLib.HTMLElement,
+    currentElement: stdLib.HTMLElement,
     includeElementsInFocusZones: scala.Boolean
-  ): reactLib.HTMLElement | scala.Null = js.native
+  ): stdLib.HTMLElement | scala.Null = js.native
   def getNativeProps[T](props: js.Object, allowedPropNames: js.Array[java.lang.String]): T = js.native
   def getNativeProps[T](
     props: js.Object,
@@ -138,39 +135,29 @@ object ^ extends js.Object {
     excludedPropNames: js.Array[java.lang.String]
   ): T = js.native
   def getNextElement(
-    rootElement: reactLib.HTMLElement,
-    currentElement: reactLib.HTMLElement,
+    rootElement: stdLib.HTMLElement,
+    currentElement: scala.Null,
     checkNode: js.UndefOr[scala.Boolean],
     suppressParentTraversal: js.UndefOr[scala.Boolean],
     suppressChildTraversal: js.UndefOr[scala.Boolean],
     includeElementsInFocusZones: js.UndefOr[scala.Boolean],
     allowFocusRoot: js.UndefOr[scala.Boolean],
     tabbable: js.UndefOr[scala.Boolean]
-  ): reactLib.HTMLElement | scala.Null = js.native
+  ): stdLib.HTMLElement | scala.Null = js.native
   def getNextElement(
-    rootElement: reactLib.HTMLElement,
-    currentElement: scala.Null,
+    rootElement: stdLib.HTMLElement,
+    currentElement: stdLib.HTMLElement,
     checkNode: js.UndefOr[scala.Boolean],
     suppressParentTraversal: js.UndefOr[scala.Boolean],
     suppressChildTraversal: js.UndefOr[scala.Boolean],
     includeElementsInFocusZones: js.UndefOr[scala.Boolean],
     allowFocusRoot: js.UndefOr[scala.Boolean],
     tabbable: js.UndefOr[scala.Boolean]
-  ): reactLib.HTMLElement | scala.Null = js.native
-  def getParent(child: reactLib.HTMLElement): reactLib.HTMLElement | scala.Null = js.native
-  def getParent(child: reactLib.HTMLElement, allowVirtualParents: scala.Boolean): reactLib.HTMLElement | scala.Null = js.native
+  ): stdLib.HTMLElement | scala.Null = js.native
+  def getParent(child: stdLib.HTMLElement): stdLib.HTMLElement | scala.Null = js.native
+  def getParent(child: stdLib.HTMLElement, allowVirtualParents: scala.Boolean): stdLib.HTMLElement | scala.Null = js.native
   def getPreviousElement(
-    rootElement: reactLib.HTMLElement,
-    currentElement: reactLib.HTMLElement,
-    checkNode: js.UndefOr[scala.Boolean],
-    suppressParentTraversal: js.UndefOr[scala.Boolean],
-    traverseChildren: js.UndefOr[scala.Boolean],
-    includeElementsInFocusZones: js.UndefOr[scala.Boolean],
-    allowFocusRoot: js.UndefOr[scala.Boolean],
-    tabbable: js.UndefOr[scala.Boolean]
-  ): reactLib.HTMLElement | scala.Null = js.native
-  def getPreviousElement(
-    rootElement: reactLib.HTMLElement,
+    rootElement: stdLib.HTMLElement,
     currentElement: scala.Null,
     checkNode: js.UndefOr[scala.Boolean],
     suppressParentTraversal: js.UndefOr[scala.Boolean],
@@ -178,20 +165,30 @@ object ^ extends js.Object {
     includeElementsInFocusZones: js.UndefOr[scala.Boolean],
     allowFocusRoot: js.UndefOr[scala.Boolean],
     tabbable: js.UndefOr[scala.Boolean]
-  ): reactLib.HTMLElement | scala.Null = js.native
+  ): stdLib.HTMLElement | scala.Null = js.native
+  def getPreviousElement(
+    rootElement: stdLib.HTMLElement,
+    currentElement: stdLib.HTMLElement,
+    checkNode: js.UndefOr[scala.Boolean],
+    suppressParentTraversal: js.UndefOr[scala.Boolean],
+    traverseChildren: js.UndefOr[scala.Boolean],
+    includeElementsInFocusZones: js.UndefOr[scala.Boolean],
+    allowFocusRoot: js.UndefOr[scala.Boolean],
+    tabbable: js.UndefOr[scala.Boolean]
+  ): stdLib.HTMLElement | scala.Null = js.native
   def getRTL(): scala.Boolean = js.native
   def getRTLSafeKeyCode(key: scala.Double): scala.Double = js.native
   def getRect(): js.UndefOr[atUifabricUtilitiesLib.libIRectangleMod.IRectangle] = js.native
-  def getRect(element: reactLib.HTMLElement): js.UndefOr[atUifabricUtilitiesLib.libIRectangleMod.IRectangle] = js.native
+  def getRect(element: stdLib.HTMLElement): js.UndefOr[atUifabricUtilitiesLib.libIRectangleMod.IRectangle] = js.native
   def getRect(element: stdLib.Window): js.UndefOr[atUifabricUtilitiesLib.libIRectangleMod.IRectangle] = js.native
   def getResourceUrl(url: java.lang.String): java.lang.String = js.native
   def getScrollbarWidth(): scala.Double = js.native
-  def getVirtualParent(child: reactLib.HTMLElement): js.UndefOr[reactLib.HTMLElement] = js.native
+  def getVirtualParent(child: stdLib.HTMLElement): js.UndefOr[stdLib.HTMLElement] = js.native
   def getWindow(): js.UndefOr[stdLib.Window] = js.native
-  def getWindow(rootElement: reactLib.Element): js.UndefOr[stdLib.Window] = js.native
-  def hasHorizontalOverflow(element: reactLib.HTMLElement): scala.Boolean = js.native
-  def hasOverflow(element: reactLib.HTMLElement): scala.Boolean = js.native
-  def hasVerticalOverflow(element: reactLib.HTMLElement): scala.Boolean = js.native
+  def getWindow(rootElement: stdLib.Element): js.UndefOr[stdLib.Window] = js.native
+  def hasHorizontalOverflow(element: stdLib.HTMLElement): scala.Boolean = js.native
+  def hasOverflow(element: stdLib.HTMLElement): scala.Boolean = js.native
+  def hasVerticalOverflow(element: stdLib.HTMLElement): scala.Boolean = js.native
   def hoistMethods(destination: js.Any, source: js.Any): js.Array[java.lang.String] = js.native
   def hoistMethods(destination: js.Any, source: js.Any, exclusions: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def hoistStatics[TSource, TDest](source: TSource, dest: TDest): TDest = js.native
@@ -200,18 +197,18 @@ object ^ extends js.Object {
   def initializeFocusRects(window: stdLib.Window): scala.Unit = js.native
   def isDirectionalKeyCode(which: scala.Double): scala.Boolean = js.native
   def isElementFocusSubZone(): scala.Boolean = js.native
-  def isElementFocusSubZone(element: reactLib.HTMLElement): scala.Boolean = js.native
+  def isElementFocusSubZone(element: stdLib.HTMLElement): scala.Boolean = js.native
   def isElementFocusZone(): scala.Boolean = js.native
-  def isElementFocusZone(element: reactLib.HTMLElement): scala.Boolean = js.native
-  def isElementTabbable(element: reactLib.HTMLElement): scala.Boolean = js.native
-  def isElementTabbable(element: reactLib.HTMLElement, checkTabIndex: scala.Boolean): scala.Boolean = js.native
+  def isElementFocusZone(element: stdLib.HTMLElement): scala.Boolean = js.native
+  def isElementTabbable(element: stdLib.HTMLElement): scala.Boolean = js.native
+  def isElementTabbable(element: stdLib.HTMLElement, checkTabIndex: scala.Boolean): scala.Boolean = js.native
   def isElementVisible(): scala.Boolean = js.native
-  def isElementVisible(element: reactLib.HTMLElement): scala.Boolean = js.native
+  def isElementVisible(element: stdLib.HTMLElement): scala.Boolean = js.native
   def isIOS(): scala.Boolean = js.native
   def isMac(): scala.Boolean = js.native
   def isMac(reset: scala.Boolean): scala.Boolean = js.native
   def isVirtualElement(element: atUifabricUtilitiesLib.libDomIVirtualElementMod.IVirtualElement): /* is @uifabric/utilities.@uifabric/utilities/lib/dom/IVirtualElement.IVirtualElement */ scala.Boolean = js.native
-  def isVirtualElement(element: reactLib.HTMLElement): /* is @uifabric/utilities.@uifabric/utilities/lib/dom/IVirtualElement.IVirtualElement */ scala.Boolean = js.native
+  def isVirtualElement(element: stdLib.HTMLElement): /* is @uifabric/utilities.@uifabric/utilities/lib/dom/IVirtualElement.IVirtualElement */ scala.Boolean = js.native
   def mapEnumByName[T](
     theEnum: js.Any,
     callback: js.Function2[
@@ -256,36 +253,36 @@ object ^ extends js.Object {
   ): atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings = js.native
   def nullRender(): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   def on(
-    element: reactLib.Element,
+    element: stdLib.Element,
     eventName: java.lang.String,
-    callback: js.Function1[/* ev */ reactLib.Event, scala.Unit]
+    callback: js.Function1[/* ev */ stdLib.Event, scala.Unit]
   ): js.Function0[scala.Unit] = js.native
   def on(
-    element: reactLib.Element,
+    element: stdLib.Element,
     eventName: java.lang.String,
-    callback: js.Function1[/* ev */ reactLib.Event, scala.Unit],
+    callback: js.Function1[/* ev */ stdLib.Event, scala.Unit],
     options: scala.Boolean
   ): js.Function0[scala.Unit] = js.native
   def on(
     element: stdLib.Window,
     eventName: java.lang.String,
-    callback: js.Function1[/* ev */ reactLib.Event, scala.Unit]
+    callback: js.Function1[/* ev */ stdLib.Event, scala.Unit]
   ): js.Function0[scala.Unit] = js.native
   def on(
     element: stdLib.Window,
     eventName: java.lang.String,
-    callback: js.Function1[/* ev */ reactLib.Event, scala.Unit],
+    callback: js.Function1[/* ev */ stdLib.Event, scala.Unit],
     options: scala.Boolean
   ): js.Function0[scala.Unit] = js.native
-  def portalContainsElement(target: reactLib.HTMLElement): scala.Boolean = js.native
-  def portalContainsElement(target: reactLib.HTMLElement, parent: reactLib.HTMLElement): scala.Boolean = js.native
+  def portalContainsElement(target: stdLib.HTMLElement): scala.Boolean = js.native
+  def portalContainsElement(target: stdLib.HTMLElement, parent: stdLib.HTMLElement): scala.Boolean = js.native
   def precisionRound(value: scala.Double, precision: scala.Double): scala.Double = js.native
   def precisionRound(value: scala.Double, precision: scala.Double, base: scala.Double): scala.Double = js.native
   def provideContext[TContext, TProps](
     contextTypes: propDashTypesLib.propDashTypesMod.ValidationMap[TContext],
     mapPropsToContext: js.Function1[/* props */ TProps, TContext]
   ): reactLib.reactMod.ReactNs.ComponentType[TProps] = js.native
-  def raiseClick(target: reactLib.Element): scala.Unit = js.native
+  def raiseClick(target: stdLib.Element): scala.Unit = js.native
   def removeIndex[T](array: js.Array[T], index: scala.Double): js.Array[T] = js.native
   def replaceElement[T](array: js.Array[T], newElement: T, index: scala.Double): js.Array[T] = js.native
   def resetIds(): scala.Unit = js.native
@@ -295,22 +292,22 @@ object ^ extends js.Object {
   def setLanguage(language: java.lang.String): scala.Unit = js.native
   def setLanguage(language: java.lang.String, avoidPersisting: scala.Boolean): scala.Unit = js.native
   def setMemoizeWeakMap(weakMap: js.Any): scala.Unit = js.native
-  def setPortalAttribute(element: reactLib.HTMLElement): scala.Unit = js.native
+  def setPortalAttribute(element: stdLib.HTMLElement): scala.Unit = js.native
   def setRTL(isRTL: scala.Boolean): scala.Unit = js.native
   def setRTL(isRTL: scala.Boolean, persistSetting: scala.Boolean): scala.Unit = js.native
   def setSSR(isEnabled: scala.Boolean): scala.Unit = js.native
-  def setVirtualParent(child: reactLib.HTMLElement, parent: reactLib.HTMLElement): scala.Unit = js.native
+  def setVirtualParent(child: stdLib.HTMLElement, parent: stdLib.HTMLElement): scala.Unit = js.native
   def setWarningCallback(): scala.Unit = js.native
   def setWarningCallback(warningCallback: js.Function1[/* message */ java.lang.String, scala.Unit]): scala.Unit = js.native
   def shallowCompare[TA, TB](a: TA, b: TB): scala.Boolean = js.native
   @JSName("shouldWrapFocus")
   def `shouldWrapFocus_data-no-horizontal-wrap`(
-    element: reactLib.HTMLElement,
+    element: stdLib.HTMLElement,
     noWrapDataAttribute: atUifabricUtilitiesLib.atUifabricUtilitiesLibStrings.`data-no-horizontal-wrap`
   ): scala.Boolean = js.native
   @JSName("shouldWrapFocus")
   def `shouldWrapFocus_data-no-vertical-wrap`(
-    element: reactLib.HTMLElement,
+    element: stdLib.HTMLElement,
     noWrapDataAttribute: atUifabricUtilitiesLib.atUifabricUtilitiesLibStrings.`data-no-vertical-wrap`
   ): scala.Boolean = js.native
   def styled[TComponentProps /* <: atUifabricUtilitiesLib.libStyledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](

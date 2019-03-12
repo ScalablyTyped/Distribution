@@ -32,14 +32,14 @@ object XDDELink {
     Application: java.lang.String,
     Item: java.lang.String,
     Topic: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getApplication: js.Function0[java.lang.String],
-    getItem: js.Function0[java.lang.String],
-    getTopic: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getApplication: () => java.lang.String,
+    getItem: () => java.lang.String,
+    getTopic: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDDELink = {
-    val __obj = js.Dynamic.literal(Application = Application, Item = Item, Topic = Topic, acquire = acquire, getApplication = getApplication, getItem = getItem, getTopic = getTopic, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Application = Application, Item = Item, Topic = Topic, acquire = js.Any.fromFunction0(acquire), getApplication = js.Any.fromFunction0(getApplication), getItem = js.Any.fromFunction0(getItem), getTopic = js.Any.fromFunction0(getTopic), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDDELink]
   }

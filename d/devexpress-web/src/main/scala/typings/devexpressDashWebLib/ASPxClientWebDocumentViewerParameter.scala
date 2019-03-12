@@ -33,12 +33,12 @@ trait ASPxClientWebDocumentViewerParameter extends js.Object {
 object ASPxClientWebDocumentViewerParameter {
   @scala.inline
   def apply(
-    getParameterDescriptor: js.Function0[ASPxDesignerElementParameterDescriptor],
+    getParameterDescriptor: () => ASPxDesignerElementParameterDescriptor,
     isMultiValue: scala.Boolean,
     `type`: js.Object,
     value: js.Object
   ): ASPxClientWebDocumentViewerParameter = {
-    val __obj = js.Dynamic.literal(getParameterDescriptor = getParameterDescriptor, isMultiValue = isMultiValue, value = value)
+    val __obj = js.Dynamic.literal(getParameterDescriptor = js.Any.fromFunction0(getParameterDescriptor), isMultiValue = isMultiValue, value = value)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ASPxClientWebDocumentViewerParameter]
   }

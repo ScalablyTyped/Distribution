@@ -17,12 +17,12 @@ trait CallbackSolution extends js.Object {
 object CallbackSolution {
   @scala.inline
   def apply(
-    apply: js.Function0[js.Any],
+    apply: () => js.Any,
     position: atomLib.atomMod.Range,
     priority: scala.Int | scala.Double = null,
     title: java.lang.String = null
   ): CallbackSolution = {
-    val __obj = js.Dynamic.literal(apply = apply, position = position)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction0(apply), position = position)
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[CallbackSolution]

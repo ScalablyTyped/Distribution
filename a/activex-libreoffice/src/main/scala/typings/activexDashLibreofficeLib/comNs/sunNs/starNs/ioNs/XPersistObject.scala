@@ -60,14 +60,14 @@ object XPersistObject {
   @scala.inline
   def apply(
     ServiceName: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getServiceName: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    read: js.Function1[XObjectInputStream, scala.Unit],
-    release: js.Function0[scala.Unit],
-    write: js.Function1[XObjectOutputStream, scala.Unit]
+    acquire: () => scala.Unit,
+    getServiceName: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    read: XObjectInputStream => scala.Unit,
+    release: () => scala.Unit,
+    write: XObjectOutputStream => scala.Unit
   ): XPersistObject = {
-    val __obj = js.Dynamic.literal(ServiceName = ServiceName, acquire = acquire, getServiceName = getServiceName, queryInterface = queryInterface, read = read, release = release, write = write)
+    val __obj = js.Dynamic.literal(ServiceName = ServiceName, acquire = js.Any.fromFunction0(acquire), getServiceName = js.Any.fromFunction0(getServiceName), queryInterface = js.Any.fromFunction1(queryInterface), read = js.Any.fromFunction1(read), release = js.Any.fromFunction0(release), write = js.Any.fromFunction1(write))
   
     __obj.asInstanceOf[XPersistObject]
   }

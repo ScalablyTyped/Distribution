@@ -12,12 +12,12 @@ trait ViewTransitionStartEvent extends ViewEvent {
 object ViewTransitionStartEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: View,
     `type`: java.lang.String = null
   ): ViewTransitionStartEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ViewTransitionStartEvent]
   }

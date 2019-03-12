@@ -24,7 +24,7 @@ object ISignatureSettings {
   @scala.inline
   def apply(
     AdditionalInfo: java.lang.String,
-    Clone: js.Function0[ISignatureSettings],
+    Clone: () => ISignatureSettings,
     FreeFormTextPropertyID: scala.Double,
     IsFreeFormTextPrompted: scala.Boolean,
     IsRequired: scala.Boolean,
@@ -36,7 +36,7 @@ object ISignatureSettings {
     SignaturePromptInfoMetadataBased: ISignaturePromptInfoMetadataBased,
     SignaturePromptInfoSelectable: ISignaturePromptInfoSelectable
   ): ISignatureSettings = {
-    val __obj = js.Dynamic.literal(AdditionalInfo = AdditionalInfo, Clone = Clone, FreeFormTextPropertyID = FreeFormTextPropertyID, IsFreeFormTextPrompted = IsFreeFormTextPrompted, IsRequired = IsRequired, IsSeparateSignatureObject = IsSeparateSignatureObject, ManifestationPropertyID = ManifestationPropertyID, PromptInfoType = PromptInfoType, SignatureIdentifier = SignatureIdentifier, SignaturePromptInfoFixed = SignaturePromptInfoFixed, SignaturePromptInfoMetadataBased = SignaturePromptInfoMetadataBased, SignaturePromptInfoSelectable = SignaturePromptInfoSelectable)
+    val __obj = js.Dynamic.literal(AdditionalInfo = AdditionalInfo, Clone = js.Any.fromFunction0(Clone), FreeFormTextPropertyID = FreeFormTextPropertyID, IsFreeFormTextPrompted = IsFreeFormTextPrompted, IsRequired = IsRequired, IsSeparateSignatureObject = IsSeparateSignatureObject, ManifestationPropertyID = ManifestationPropertyID, PromptInfoType = PromptInfoType, SignatureIdentifier = SignatureIdentifier, SignaturePromptInfoFixed = SignaturePromptInfoFixed, SignaturePromptInfoMetadataBased = SignaturePromptInfoMetadataBased, SignaturePromptInfoSelectable = SignaturePromptInfoSelectable)
   
     __obj.asInstanceOf[ISignatureSettings]
   }

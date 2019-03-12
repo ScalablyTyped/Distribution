@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in 'formatError' | 'debug' | 'rootValue' | 'validationRules' | 'formatResponse' | 'fieldResolver' | 'tracing' | 'dataSources' | 'cache' ]: apollo-server-core.apollo-server-core/dist/graphqlOptions.GraphQLServerOptions<apollo-server-core.apollo-server-core/dist/types.Context<object>, any>[P]} */ trait Config extends js.Object {
   var cacheControl: js.UndefOr[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any) | scala.Boolean
+    apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions | scala.Boolean
   ] = js.undefined
   var context: js.UndefOr[Context[js.Object] | (ContextFunction[_, js.Object])] = js.undefined
   var engine: js.UndefOr[
     scala.Boolean | apolloDashEngineDashReportingLib.distAgentMod.EngineReportingOptions[Context[js.Object]]
   ] = js.undefined
   var extensions: js.UndefOr[
-    apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
+    js.Array[
       js.Function0[
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLExtension */ _
       ]
@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
   var mockEntireSchema: js.UndefOr[scala.Boolean] = js.undefined
   var mocks: js.UndefOr[scala.Boolean | graphqlDashToolsLib.distInterfacesMod.IMocks] = js.undefined
   var modules: js.UndefOr[
-    apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
+    js.Array[
       atApollographqlApolloDashToolsLib.libBuildServiceDefinitionMod.GraphQLSchemaModule
     ]
   ] = js.undefined
@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation._
     apolloDashServerDashCoreLib.distGraphqlOptionsMod.PersistedQueryOptions | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibNumbers.`false`
   ] = js.undefined
   var playground: js.UndefOr[apolloDashServerDashCoreLib.distPlaygroundMod.PlaygroundConfig] = js.undefined
-  var plugins: js.UndefOr[apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[PluginDefinition]] = js.undefined
+  var plugins: js.UndefOr[js.Array[PluginDefinition]] = js.undefined
   var resolvers: js.UndefOr[graphqlDashToolsLib.distInterfacesMod.IResolvers[_, _]] = js.undefined
   var schema: js.UndefOr[graphqlLib.graphqlMod.GraphQLSchema] = js.undefined
   var schemaDirectives: js.UndefOr[stdLib.Record[java.lang.String, apolloDashServerDashCoreLib.Anon_Config]] = js.undefined
@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation._
     stdLib.Partial[SubscriptionServerOptions] | java.lang.String | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibNumbers.`false`
   ] = js.undefined
   var typeDefs: js.UndefOr[
-    graphqlLib.languageAstMod.DocumentNode | apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[graphqlLib.languageAstMod.DocumentNode]
+    graphqlLib.languageAstMod.DocumentNode | js.Array[graphqlLib.languageAstMod.DocumentNode]
   ] = js.undefined
   var uploads: js.UndefOr[scala.Boolean | FileUploadOptions] = js.undefined
 }
@@ -50,10 +50,10 @@ import scala.scalajs.js.annotation._
 object Config {
   @scala.inline
   def apply(
-    cacheControl: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any) | scala.Boolean = null,
+    cacheControl: apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions | scala.Boolean = null,
     context: Context[js.Object] | (ContextFunction[_, js.Object]) = null,
     engine: scala.Boolean | apolloDashEngineDashReportingLib.distAgentMod.EngineReportingOptions[Context[js.Object]] = null,
-    extensions: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
+    extensions: js.Array[
       js.Function0[
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLExtension */ _
       ]
@@ -61,18 +61,18 @@ object Config {
     introspection: js.UndefOr[scala.Boolean] = js.undefined,
     mockEntireSchema: js.UndefOr[scala.Boolean] = js.undefined,
     mocks: scala.Boolean | graphqlDashToolsLib.distInterfacesMod.IMocks = null,
-    modules: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
+    modules: js.Array[
       atApollographqlApolloDashToolsLib.libBuildServiceDefinitionMod.GraphQLSchemaModule
     ] = null,
     parseOptions: graphqlDashToolsLib.distInterfacesMod.GraphQLParseOptions = null,
     persistedQueries: apolloDashServerDashCoreLib.distGraphqlOptionsMod.PersistedQueryOptions | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibNumbers.`false` = null,
     playground: apolloDashServerDashCoreLib.distPlaygroundMod.PlaygroundConfig = null,
-    plugins: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[PluginDefinition] = null,
+    plugins: js.Array[PluginDefinition] = null,
     resolvers: graphqlDashToolsLib.distInterfacesMod.IResolvers[_, _] = null,
     schema: graphqlLib.graphqlMod.GraphQLSchema = null,
     schemaDirectives: stdLib.Record[java.lang.String, apolloDashServerDashCoreLib.Anon_Config] = null,
     subscriptions: stdLib.Partial[SubscriptionServerOptions] | java.lang.String | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibNumbers.`false` = null,
-    typeDefs: graphqlLib.languageAstMod.DocumentNode | apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[graphqlLib.languageAstMod.DocumentNode] = null,
+    typeDefs: graphqlLib.languageAstMod.DocumentNode | js.Array[graphqlLib.languageAstMod.DocumentNode] = null,
     uploads: scala.Boolean | FileUploadOptions = null
   ): Config = {
     val __obj = js.Dynamic.literal()

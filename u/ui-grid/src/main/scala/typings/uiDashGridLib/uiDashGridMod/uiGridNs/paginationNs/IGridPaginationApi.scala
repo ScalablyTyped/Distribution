@@ -37,14 +37,14 @@ trait IGridPaginationApi extends js.Object {
 object IGridPaginationApi {
   @scala.inline
   def apply(
-    getPage: js.Function0[scala.Double],
-    getTotalPages: js.Function0[scala.Double],
-    nextPage: js.Function0[scala.Unit],
+    getPage: () => scala.Double,
+    getTotalPages: () => scala.Double,
+    nextPage: () => scala.Unit,
     on: uiDashGridLib.Anon_HandlerPaginationChanged,
-    previousPage: js.Function0[scala.Unit],
-    seek: js.Function1[scala.Double, scala.Unit]
+    previousPage: () => scala.Unit,
+    seek: scala.Double => scala.Unit
   ): IGridPaginationApi = {
-    val __obj = js.Dynamic.literal(getPage = getPage, getTotalPages = getTotalPages, nextPage = nextPage, on = on, previousPage = previousPage, seek = seek)
+    val __obj = js.Dynamic.literal(getPage = js.Any.fromFunction0(getPage), getTotalPages = js.Any.fromFunction0(getTotalPages), nextPage = js.Any.fromFunction0(nextPage), on = on, previousPage = js.Any.fromFunction0(previousPage), seek = js.Any.fromFunction1(seek))
   
     __obj.asInstanceOf[IGridPaginationApi]
   }

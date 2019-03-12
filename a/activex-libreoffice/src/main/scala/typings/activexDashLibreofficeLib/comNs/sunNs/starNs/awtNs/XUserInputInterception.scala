@@ -38,15 +38,15 @@ trait XUserInputInterception
 object XUserInputInterception {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addKeyHandler: js.Function1[XKeyHandler, scala.Unit],
-    addMouseClickHandler: js.Function1[XMouseClickHandler, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeKeyHandler: js.Function1[XKeyHandler, scala.Unit],
-    removeMouseClickHandler: js.Function1[XMouseClickHandler, scala.Unit]
+    acquire: () => scala.Unit,
+    addKeyHandler: XKeyHandler => scala.Unit,
+    addMouseClickHandler: XMouseClickHandler => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeKeyHandler: XKeyHandler => scala.Unit,
+    removeMouseClickHandler: XMouseClickHandler => scala.Unit
   ): XUserInputInterception = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addKeyHandler = addKeyHandler, addMouseClickHandler = addMouseClickHandler, queryInterface = queryInterface, release = release, removeKeyHandler = removeKeyHandler, removeMouseClickHandler = removeMouseClickHandler)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addKeyHandler = js.Any.fromFunction1(addKeyHandler), addMouseClickHandler = js.Any.fromFunction1(addMouseClickHandler), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeKeyHandler = js.Any.fromFunction1(removeKeyHandler), removeMouseClickHandler = js.Any.fromFunction1(removeMouseClickHandler))
   
     __obj.asInstanceOf[XUserInputInterception]
   }

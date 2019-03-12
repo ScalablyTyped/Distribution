@@ -33,12 +33,12 @@ trait ASPxDesignerDialogModel extends js.Object {
 object ASPxDesignerDialogModel {
   @scala.inline
   def apply(
-    getUrl: js.Function0[java.lang.String],
-    onShow: js.Function1[ASPxDesignerNavigateTab, scala.Unit],
+    getUrl: () => java.lang.String,
+    onShow: ASPxDesignerNavigateTab => scala.Unit,
     popupButtons: js.Array[js.Object],
-    setUrl: js.Function1[java.lang.String, scala.Unit]
+    setUrl: java.lang.String => scala.Unit
   ): ASPxDesignerDialogModel = {
-    val __obj = js.Dynamic.literal(getUrl = getUrl, onShow = onShow, popupButtons = popupButtons, setUrl = setUrl)
+    val __obj = js.Dynamic.literal(getUrl = js.Any.fromFunction0(getUrl), onShow = js.Any.fromFunction1(onShow), popupButtons = popupButtons, setUrl = js.Any.fromFunction1(setUrl))
   
     __obj.asInstanceOf[ASPxDesignerDialogModel]
   }

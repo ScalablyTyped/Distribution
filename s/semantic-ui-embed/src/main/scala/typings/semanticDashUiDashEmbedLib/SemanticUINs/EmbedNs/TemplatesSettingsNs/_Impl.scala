@@ -19,10 +19,10 @@ trait _Impl extends js.Object {
 object _Impl {
   @scala.inline
   def apply(
-    iframe: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    placeholder: js.Function2[java.lang.String, java.lang.String, java.lang.String]
+    iframe: (java.lang.String, java.lang.String) => java.lang.String,
+    placeholder: (java.lang.String, java.lang.String) => java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal(iframe = iframe, placeholder = placeholder)
+    val __obj = js.Dynamic.literal(iframe = js.Any.fromFunction2(iframe), placeholder = js.Any.fromFunction2(placeholder))
   
     __obj.asInstanceOf[_Impl]
   }

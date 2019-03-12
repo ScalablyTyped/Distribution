@@ -15,18 +15,18 @@ trait Map[T] extends ReadonlyMap[T] {
 object Map {
   @scala.inline
   def apply[T](
-    clear: js.Function0[scala.Unit],
-    delete: js.Function1[java.lang.String, scala.Boolean],
-    entries: js.Function0[Iterator[js.Tuple2[java.lang.String, T]]],
-    forEach: js.Function1[js.Function2[T, /* key */ java.lang.String, scala.Unit], scala.Unit],
-    get: js.Function1[java.lang.String, js.UndefOr[T]],
-    has: js.Function1[java.lang.String, scala.Boolean],
-    keys: js.Function0[Iterator[java.lang.String]],
-    set: js.Function2[java.lang.String, T, Map[T]],
+    clear: () => scala.Unit,
+    delete: java.lang.String => scala.Boolean,
+    entries: () => Iterator[js.Tuple2[java.lang.String, T]],
+    forEach: js.Function2[T, /* key */ java.lang.String, scala.Unit] => scala.Unit,
+    get: java.lang.String => js.UndefOr[T],
+    has: java.lang.String => scala.Boolean,
+    keys: () => Iterator[java.lang.String],
+    set: (java.lang.String, T) => Map[T],
     size: scala.Double,
-    values: js.Function0[Iterator[T]]
+    values: () => Iterator[T]
   ): Map[T] = {
-    val __obj = js.Dynamic.literal(clear = clear, delete = delete, entries = entries, forEach = forEach, get = get, has = has, keys = keys, set = set, size = size, values = values)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), delete = js.Any.fromFunction1(delete), entries = js.Any.fromFunction0(entries), forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), keys = js.Any.fromFunction0(keys), set = js.Any.fromFunction2(set), size = size, values = js.Any.fromFunction0(values))
   
     __obj.asInstanceOf[Map[T]]
   }

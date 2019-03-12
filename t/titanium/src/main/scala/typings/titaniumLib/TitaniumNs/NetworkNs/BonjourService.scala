@@ -87,40 +87,40 @@ trait BonjourService
 object BonjourService {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     bubbleParent: scala.Boolean,
     domain: java.lang.String,
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getApiName: js.Function0[java.lang.String],
-    getBubbleParent: js.Function0[scala.Boolean],
-    getDomain: js.Function0[java.lang.String],
-    getIsLocal: js.Function0[scala.Boolean],
-    getName: js.Function0[java.lang.String],
-    getSocket: js.Function0[js.Any],
-    getType: js.Function0[java.lang.String],
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
+    getApiName: () => java.lang.String,
+    getBubbleParent: () => scala.Boolean,
+    getDomain: () => java.lang.String,
+    getIsLocal: () => scala.Boolean,
+    getName: () => java.lang.String,
+    getSocket: () => js.Any,
+    getType: () => java.lang.String,
     isLocal: scala.Boolean,
     name: java.lang.String,
-    publish: js.Function1[js.Any, scala.Unit],
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    resolve: js.Function1[scala.Double, scala.Unit],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
-    setDomain: js.Function1[java.lang.String, scala.Unit],
-    setIsLocal: js.Function1[scala.Boolean, scala.Unit],
-    setName: js.Function1[java.lang.String, scala.Unit],
-    setSocket: js.Function1[js.Any, scala.Unit],
-    setType: js.Function1[java.lang.String, scala.Unit],
+    publish: js.Any => scala.Unit,
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    resolve: scala.Double => scala.Unit,
+    setBubbleParent: scala.Boolean => scala.Unit,
+    setDomain: java.lang.String => scala.Unit,
+    setIsLocal: scala.Boolean => scala.Unit,
+    setName: java.lang.String => scala.Unit,
+    setSocket: js.Any => scala.Unit,
+    setType: java.lang.String => scala.Unit,
     socket: js.Any,
-    stop: js.Function0[scala.Unit],
+    stop: () => scala.Unit,
     `type`: java.lang.String,
-    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    getLifecycleContainer: () => titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
   ): BonjourService = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, domain = domain, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, getDomain = getDomain, getIsLocal = getIsLocal, getName = getName, getSocket = getSocket, getType = getType, isLocal = isLocal, name = name, publish = publish, removeEventListener = removeEventListener, resolve = resolve, setBubbleParent = setBubbleParent, setDomain = setDomain, setIsLocal = setIsLocal, setName = setName, setSocket = setSocket, setType = setType, socket = socket, stop = stop)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, domain = domain, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getDomain = js.Any.fromFunction0(getDomain), getIsLocal = js.Any.fromFunction0(getIsLocal), getName = js.Any.fromFunction0(getName), getSocket = js.Any.fromFunction0(getSocket), getType = js.Any.fromFunction0(getType), isLocal = isLocal, name = name, publish = js.Any.fromFunction1(publish), removeEventListener = js.Any.fromFunction2(removeEventListener), resolve = js.Any.fromFunction1(resolve), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setDomain = js.Any.fromFunction1(setDomain), setIsLocal = js.Any.fromFunction1(setIsLocal), setName = js.Any.fromFunction1(setName), setSocket = js.Any.fromFunction1(setSocket), setType = js.Any.fromFunction1(setType), socket = socket, stop = js.Any.fromFunction0(stop))
     __obj.updateDynamic("type")(`type`)
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
     __obj.asInstanceOf[BonjourService]

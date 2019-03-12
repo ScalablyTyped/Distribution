@@ -15,12 +15,12 @@ trait DrawerListener extends js.Object {
 object DrawerListener {
   @scala.inline
   def apply(
-    onDrawerClosed: js.Function1[androiduixLib.androidNs.viewNs.View, scala.Unit],
-    onDrawerOpened: js.Function1[androiduixLib.androidNs.viewNs.View, scala.Unit],
-    onDrawerSlide: js.Function2[androiduixLib.androidNs.viewNs.View, scala.Double, scala.Unit],
-    onDrawerStateChanged: js.Function1[scala.Double, scala.Unit]
+    onDrawerClosed: androiduixLib.androidNs.viewNs.View => scala.Unit,
+    onDrawerOpened: androiduixLib.androidNs.viewNs.View => scala.Unit,
+    onDrawerSlide: (androiduixLib.androidNs.viewNs.View, scala.Double) => scala.Unit,
+    onDrawerStateChanged: scala.Double => scala.Unit
   ): DrawerListener = {
-    val __obj = js.Dynamic.literal(onDrawerClosed = onDrawerClosed, onDrawerOpened = onDrawerOpened, onDrawerSlide = onDrawerSlide, onDrawerStateChanged = onDrawerStateChanged)
+    val __obj = js.Dynamic.literal(onDrawerClosed = js.Any.fromFunction1(onDrawerClosed), onDrawerOpened = js.Any.fromFunction1(onDrawerOpened), onDrawerSlide = js.Any.fromFunction2(onDrawerSlide), onDrawerStateChanged = js.Any.fromFunction1(onDrawerStateChanged))
   
     __obj.asInstanceOf[DrawerListener]
   }

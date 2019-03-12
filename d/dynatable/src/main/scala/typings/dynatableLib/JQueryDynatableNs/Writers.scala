@@ -90,20 +90,14 @@ trait Writers extends js.Object {
 object Writers {
   @scala.inline
   def apply(
-    _attributeWriter: js.Function1[/* record */ js.Any, _] = null,
-    _cellWriter: js.Function2[/* column */ Column, /* record */ js.Any, java.lang.String] = null,
-    _rowWriter: js.Function4[
-      /* rowIndex */ scala.Double, 
-      /* record */ js.Any, 
-      /* columns */ js.Array[Column], 
-      /* cellWriter */ js.Function, 
-      java.lang.String
-    ] = null
+    _attributeWriter: /* record */ js.Any => _ = null,
+    _cellWriter: (/* column */ Column, /* record */ js.Any) => java.lang.String = null,
+    _rowWriter: (/* rowIndex */ scala.Double, /* record */ js.Any, /* columns */ js.Array[Column], /* cellWriter */ js.Function) => java.lang.String = null
   ): Writers = {
     val __obj = js.Dynamic.literal()
-    if (_attributeWriter != null) __obj.updateDynamic("_attributeWriter")(_attributeWriter)
-    if (_cellWriter != null) __obj.updateDynamic("_cellWriter")(_cellWriter)
-    if (_rowWriter != null) __obj.updateDynamic("_rowWriter")(_rowWriter)
+    if (_attributeWriter != null) __obj.updateDynamic("_attributeWriter")(js.Any.fromFunction1(_attributeWriter))
+    if (_cellWriter != null) __obj.updateDynamic("_cellWriter")(js.Any.fromFunction2(_cellWriter))
+    if (_rowWriter != null) __obj.updateDynamic("_rowWriter")(js.Any.fromFunction4(_rowWriter))
     __obj.asInstanceOf[Writers]
   }
 }

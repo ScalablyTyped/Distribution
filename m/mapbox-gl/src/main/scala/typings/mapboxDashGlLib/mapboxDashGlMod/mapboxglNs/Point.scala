@@ -30,28 +30,28 @@ trait Point extends js.Object {
 object Point {
   @scala.inline
   def apply(
-    add: js.Function1[Point, Point],
-    angle: js.Function0[scala.Double],
-    angleTo: js.Function1[Point, scala.Double],
-    angleWidth: js.Function1[Point, scala.Double],
-    angleWithSep: js.Function2[scala.Double, scala.Double, scala.Double],
-    clone: js.Function0[Point],
-    dist: js.Function1[Point, scala.Double],
-    distSqr: js.Function1[Point, scala.Double],
-    div: js.Function1[scala.Double, Point],
-    equals: js.Function1[Point, scala.Boolean],
-    mag: js.Function0[scala.Double],
-    matMult: js.Function1[scala.Double, Point],
-    mult: js.Function1[scala.Double, Point],
-    perp: js.Function0[Point],
-    rotate: js.Function1[scala.Double, Point],
-    round: js.Function0[Point],
-    sub: js.Function1[Point, Point],
-    unit: js.Function0[Point],
+    add: Point => Point,
+    angle: () => scala.Double,
+    angleTo: Point => scala.Double,
+    angleWidth: Point => scala.Double,
+    angleWithSep: (scala.Double, scala.Double) => scala.Double,
+    clone: () => Point,
+    dist: Point => scala.Double,
+    distSqr: Point => scala.Double,
+    div: scala.Double => Point,
+    equals: Point => scala.Boolean,
+    mag: () => scala.Double,
+    matMult: scala.Double => Point,
+    mult: scala.Double => Point,
+    perp: () => Point,
+    rotate: scala.Double => Point,
+    round: () => Point,
+    sub: Point => Point,
+    unit: () => Point,
     x: scala.Double,
     y: scala.Double
   ): Point = {
-    val __obj = js.Dynamic.literal(add = add, angle = angle, angleTo = angleTo, angleWidth = angleWidth, angleWithSep = angleWithSep, clone = clone, dist = dist, distSqr = distSqr, div = div, equals = equals, mag = mag, matMult = matMult, mult = mult, perp = perp, rotate = rotate, round = round, sub = sub, unit = unit, x = x, y = y)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), angle = js.Any.fromFunction0(angle), angleTo = js.Any.fromFunction1(angleTo), angleWidth = js.Any.fromFunction1(angleWidth), angleWithSep = js.Any.fromFunction2(angleWithSep), clone = js.Any.fromFunction0(clone), dist = js.Any.fromFunction1(dist), distSqr = js.Any.fromFunction1(distSqr), div = js.Any.fromFunction1(div), equals = js.Any.fromFunction1(equals), mag = js.Any.fromFunction0(mag), matMult = js.Any.fromFunction1(matMult), mult = js.Any.fromFunction1(mult), perp = js.Any.fromFunction0(perp), rotate = js.Any.fromFunction1(rotate), round = js.Any.fromFunction0(round), sub = js.Any.fromFunction1(sub), unit = js.Any.fromFunction0(unit), x = x, y = y)
   
     __obj.asInstanceOf[Point]
   }

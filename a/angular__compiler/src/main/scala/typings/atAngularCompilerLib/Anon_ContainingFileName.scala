@@ -11,10 +11,8 @@ trait Anon_ContainingFileName extends js.Object {
 
 object Anon_ContainingFileName {
   @scala.inline
-  def apply(
-    resourceNameToFileName: js.Function2[java.lang.String, java.lang.String, java.lang.String | scala.Null]
-  ): Anon_ContainingFileName = {
-    val __obj = js.Dynamic.literal(resourceNameToFileName = resourceNameToFileName)
+  def apply(resourceNameToFileName: (java.lang.String, java.lang.String) => java.lang.String | scala.Null): Anon_ContainingFileName = {
+    val __obj = js.Dynamic.literal(resourceNameToFileName = js.Any.fromFunction2(resourceNameToFileName))
   
     __obj.asInstanceOf[Anon_ContainingFileName]
   }

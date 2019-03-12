@@ -123,27 +123,27 @@ trait MatchQuery extends Query {
 object MatchQuery {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    analyzer: js.Function1[java.lang.String, MatchQuery],
-    boost: js.Function1[stdLib.Number, MatchQuery],
-    cutoffFrequency: js.Function1[stdLib.Number, MatchQuery],
-    fuzziness: js.Function1[scala.Double, MatchQuery],
-    fuzzyRewrite: js.Function1[java.lang.String, MatchQuery],
-    fuzzyTranspositions: js.Function1[scala.Boolean, MatchQuery],
-    lenient: js.Function1[scala.Boolean, MatchQuery],
-    maxExpansions: js.Function1[scala.Double, MatchQuery],
-    minimumShouldMatch: js.Function1[scala.Double, MatchQuery],
-    operator: js.Function1[java.lang.String, MatchQuery],
-    prefixLength: js.Function1[scala.Double, MatchQuery],
-    query: js.Function1[java.lang.String, MatchQuery],
-    rewrite: js.Function1[java.lang.String, MatchQuery],
-    slop: js.Function1[scala.Double, MatchQuery],
-    toJSON: js.Function0[js.Any],
-    `type`: js.Function1[java.lang.String, MatchQuery],
-    zeroTermsQuery: js.Function1[java.lang.String, MatchQuery]
+    _type: () => java.lang.String,
+    analyzer: java.lang.String => MatchQuery,
+    boost: stdLib.Number => MatchQuery,
+    cutoffFrequency: stdLib.Number => MatchQuery,
+    fuzziness: scala.Double => MatchQuery,
+    fuzzyRewrite: java.lang.String => MatchQuery,
+    fuzzyTranspositions: scala.Boolean => MatchQuery,
+    lenient: scala.Boolean => MatchQuery,
+    maxExpansions: scala.Double => MatchQuery,
+    minimumShouldMatch: scala.Double => MatchQuery,
+    operator: java.lang.String => MatchQuery,
+    prefixLength: scala.Double => MatchQuery,
+    query: java.lang.String => MatchQuery,
+    rewrite: java.lang.String => MatchQuery,
+    slop: scala.Double => MatchQuery,
+    toJSON: () => js.Any,
+    `type`: java.lang.String => MatchQuery,
+    zeroTermsQuery: java.lang.String => MatchQuery
   ): MatchQuery = {
-    val __obj = js.Dynamic.literal(_type = _type, analyzer = analyzer, boost = boost, cutoffFrequency = cutoffFrequency, fuzziness = fuzziness, fuzzyRewrite = fuzzyRewrite, fuzzyTranspositions = fuzzyTranspositions, lenient = lenient, maxExpansions = maxExpansions, minimumShouldMatch = minimumShouldMatch, operator = operator, prefixLength = prefixLength, query = query, rewrite = rewrite, slop = slop, toJSON = toJSON, zeroTermsQuery = zeroTermsQuery)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), analyzer = js.Any.fromFunction1(analyzer), boost = js.Any.fromFunction1(boost), cutoffFrequency = js.Any.fromFunction1(cutoffFrequency), fuzziness = js.Any.fromFunction1(fuzziness), fuzzyRewrite = js.Any.fromFunction1(fuzzyRewrite), fuzzyTranspositions = js.Any.fromFunction1(fuzzyTranspositions), lenient = js.Any.fromFunction1(lenient), maxExpansions = js.Any.fromFunction1(maxExpansions), minimumShouldMatch = js.Any.fromFunction1(minimumShouldMatch), operator = js.Any.fromFunction1(operator), prefixLength = js.Any.fromFunction1(prefixLength), query = js.Any.fromFunction1(query), rewrite = js.Any.fromFunction1(rewrite), slop = js.Any.fromFunction1(slop), toJSON = js.Any.fromFunction0(toJSON), zeroTermsQuery = js.Any.fromFunction1(zeroTermsQuery))
+    __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
     __obj.asInstanceOf[MatchQuery]
   }
 }

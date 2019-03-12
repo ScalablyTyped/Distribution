@@ -27,7 +27,7 @@ object NavDropdownBaseProps {
     noCaret: js.UndefOr[scala.Boolean] = js.undefined,
     onClose: js.Function = null,
     onSelect: reactDashBootstrapLib.reactDashBootstrapMod.SelectCallback = null,
-    onToggle: js.Function1[/* isOpen */ scala.Boolean, scala.Unit] = null,
+    onToggle: /* isOpen */ scala.Boolean => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     pullRight: js.UndefOr[scala.Boolean] = js.undefined,
     role: java.lang.String = null
@@ -42,7 +42,7 @@ object NavDropdownBaseProps {
     if (!js.isUndefined(noCaret)) __obj.updateDynamic("noCaret")(noCaret)
     if (onClose != null) __obj.updateDynamic("onClose")(onClose)
     if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (onToggle != null) __obj.updateDynamic("onToggle")(onToggle)
+    if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction1(onToggle))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight)
     if (role != null) __obj.updateDynamic("role")(role)

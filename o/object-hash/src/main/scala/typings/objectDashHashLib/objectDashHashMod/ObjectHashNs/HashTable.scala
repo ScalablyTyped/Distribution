@@ -19,16 +19,16 @@ trait HashTable extends js.Object {
 object HashTable {
   @scala.inline
   def apply(
-    add: js.Function1[/* repeated */ js.Any, HashTable],
-    getCount: js.Function1[java.lang.String, scala.Double],
-    getValue: js.Function1[java.lang.String, js.Any],
-    hasKey: js.Function1[java.lang.String, scala.Boolean],
-    remove: js.Function1[/* repeated */ js.Any, HashTable],
-    reset: js.Function0[HashTable],
-    table: js.Function0[org.scalablytyped.runtime.StringDictionary[HashTableItem]],
-    toArray: js.Function0[js.Array[HashTableItemWithKey]]
+    add: /* repeated */ js.Any => HashTable,
+    getCount: java.lang.String => scala.Double,
+    getValue: java.lang.String => js.Any,
+    hasKey: java.lang.String => scala.Boolean,
+    remove: /* repeated */ js.Any => HashTable,
+    reset: () => HashTable,
+    table: () => org.scalablytyped.runtime.StringDictionary[HashTableItem],
+    toArray: () => js.Array[HashTableItemWithKey]
   ): HashTable = {
-    val __obj = js.Dynamic.literal(add = add, getCount = getCount, getValue = getValue, hasKey = hasKey, remove = remove, reset = reset, table = table, toArray = toArray)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), getCount = js.Any.fromFunction1(getCount), getValue = js.Any.fromFunction1(getValue), hasKey = js.Any.fromFunction1(hasKey), remove = js.Any.fromFunction1(remove), reset = js.Any.fromFunction0(reset), table = js.Any.fromFunction0(table), toArray = js.Any.fromFunction0(toArray))
   
     __obj.asInstanceOf[HashTable]
   }

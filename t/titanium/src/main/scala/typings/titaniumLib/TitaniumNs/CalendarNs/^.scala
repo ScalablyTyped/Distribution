@@ -274,16 +274,16 @@ object ^ extends js.Object {
   /**
   		 * All alerts in selected calendars.
   		 */
-  val allAlerts: js.Array[titaniumLib.TitaniumNs.CalendarNs.Alert] = js.native
+  val allAlerts: js.Array[Alert] = js.native
   /**
   		 * All calendars known to the native calendar app.
   		 */
-  val allCalendars: js.Array[titaniumLib.TitaniumNs.CalendarNs.Calendar] = js.native
+  val allCalendars: js.Array[Calendar] = js.native
   /**
   		 * All calendars known to the native calendar app that can add, edit, and
   		 * delete items in the calendar.
   		 */
-  val allEditableCalendars: js.Array[titaniumLib.TitaniumNs.CalendarNs.Calendar] = js.native
+  val allEditableCalendars: js.Array[Calendar] = js.native
   /**
   		 * The name of the API that this proxy corresponds to.
   		 */
@@ -299,7 +299,7 @@ object ^ extends js.Object {
   /**
   		 * Calendar that events are added to by default, as specified by user settings.
   		 */
-  val defaultCalendar: titaniumLib.TitaniumNs.CalendarNs.Calendar = js.native
+  val defaultCalendar: Calendar = js.native
   /**
   		 * Returns an authorization constant indicating if the application has access to the events in the EventKit.
   		 */
@@ -311,7 +311,7 @@ object ^ extends js.Object {
   /**
   		 * All calendars selected within the native calendar app, which may be a subset of `allCalendars`.
   		 */
-  val selectableCalendars: js.Array[titaniumLib.TitaniumNs.CalendarNs.Calendar] = js.native
+  val selectableCalendars: js.Array[Calendar] = js.native
   /**
   		 * Adds the specified callback as an event listener for the named event.
   		 */
@@ -327,15 +327,15 @@ object ^ extends js.Object {
   /**
   		 * Gets the value of the <Titanium.Calendar.allAlerts> property.
   		 */
-  def getAllAlerts(): js.Array[titaniumLib.TitaniumNs.CalendarNs.Alert] = js.native
+  def getAllAlerts(): js.Array[Alert] = js.native
   /**
   		 * Gets the value of the <Titanium.Calendar.allCalendars> property.
   		 */
-  def getAllCalendars(): js.Array[titaniumLib.TitaniumNs.CalendarNs.Calendar] = js.native
+  def getAllCalendars(): js.Array[Calendar] = js.native
   /**
   		 * Gets the value of the <Titanium.Calendar.allEditableCalendars> property.
   		 */
-  def getAllEditableCalendars(): js.Array[titaniumLib.TitaniumNs.CalendarNs.Calendar] = js.native
+  def getAllEditableCalendars(): js.Array[Calendar] = js.native
   /**
   		 * Gets the value of the <Titanium.Calendar.apiName> property.
   		 */
@@ -351,11 +351,11 @@ object ^ extends js.Object {
   /**
   		 * Gets the calendar with the specified identifier.
   		 */
-  def getCalendarById(id: java.lang.String): titaniumLib.TitaniumNs.CalendarNs.Calendar = js.native
+  def getCalendarById(id: java.lang.String): Calendar = js.native
   /**
   		 * Gets the value of the <Titanium.Calendar.defaultCalendar> property.
   		 */
-  def getDefaultCalendar(): titaniumLib.TitaniumNs.CalendarNs.Calendar = js.native
+  def getDefaultCalendar(): Calendar = js.native
   /**
   		 * Gets the value of the <Titanium.Calendar.eventsAuthorization> property.
   		 */
@@ -367,7 +367,7 @@ object ^ extends js.Object {
   /**
   		 * Gets the value of the <Titanium.Calendar.selectableCalendars> property.
   		 */
-  def getSelectableCalendars(): js.Array[titaniumLib.TitaniumNs.CalendarNs.Calendar] = js.native
+  def getSelectableCalendars(): js.Array[Calendar] = js.native
   /**
   		 * Returns `true` if the app has calendar access.
   		 */

@@ -25,22 +25,22 @@ trait InlineDrawing extends js.Object {
 object InlineDrawing {
   @scala.inline
   def apply(
-    copy: js.Function0[InlineDrawing],
-    getAltDescription: js.Function0[java.lang.String],
-    getAltTitle: js.Function0[java.lang.String],
-    getAttributes: js.Function0[js.Object],
-    getNextSibling: js.Function0[Element],
-    getParent: js.Function0[ContainerElement],
-    getPreviousSibling: js.Function0[Element],
-    getType: js.Function0[ElementType],
-    isAtDocumentEnd: js.Function0[scala.Boolean],
-    merge: js.Function0[InlineDrawing],
-    removeFromParent: js.Function0[InlineDrawing],
-    setAltDescription: js.Function1[java.lang.String, InlineDrawing],
-    setAltTitle: js.Function1[java.lang.String, InlineDrawing],
-    setAttributes: js.Function1[js.Object, InlineDrawing]
+    copy: () => InlineDrawing,
+    getAltDescription: () => java.lang.String,
+    getAltTitle: () => java.lang.String,
+    getAttributes: () => js.Object,
+    getNextSibling: () => Element,
+    getParent: () => ContainerElement,
+    getPreviousSibling: () => Element,
+    getType: () => ElementType,
+    isAtDocumentEnd: () => scala.Boolean,
+    merge: () => InlineDrawing,
+    removeFromParent: () => InlineDrawing,
+    setAltDescription: java.lang.String => InlineDrawing,
+    setAltTitle: java.lang.String => InlineDrawing,
+    setAttributes: js.Object => InlineDrawing
   ): InlineDrawing = {
-    val __obj = js.Dynamic.literal(copy = copy, getAltDescription = getAltDescription, getAltTitle = getAltTitle, getAttributes = getAttributes, getNextSibling = getNextSibling, getParent = getParent, getPreviousSibling = getPreviousSibling, getType = getType, isAtDocumentEnd = isAtDocumentEnd, merge = merge, removeFromParent = removeFromParent, setAltDescription = setAltDescription, setAltTitle = setAltTitle, setAttributes = setAttributes)
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), getAltDescription = js.Any.fromFunction0(getAltDescription), getAltTitle = js.Any.fromFunction0(getAltTitle), getAttributes = js.Any.fromFunction0(getAttributes), getNextSibling = js.Any.fromFunction0(getNextSibling), getParent = js.Any.fromFunction0(getParent), getPreviousSibling = js.Any.fromFunction0(getPreviousSibling), getType = js.Any.fromFunction0(getType), isAtDocumentEnd = js.Any.fromFunction0(isAtDocumentEnd), merge = js.Any.fromFunction0(merge), removeFromParent = js.Any.fromFunction0(removeFromParent), setAltDescription = js.Any.fromFunction1(setAltDescription), setAltTitle = js.Any.fromFunction1(setAltTitle), setAttributes = js.Any.fromFunction1(setAttributes))
   
     __obj.asInstanceOf[InlineDrawing]
   }

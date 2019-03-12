@@ -19,7 +19,7 @@ trait IAxes extends js.Object {
 object IAxes {
   @scala.inline
   def apply(
-    add: js.Function2[scala.Boolean, scala.Boolean, IAxis],
+    add: (scala.Boolean, scala.Boolean) => IAxis,
     bottom: IAxis,
     chart: IChart,
     items: js.Array[IAxis],
@@ -28,7 +28,7 @@ object IAxes {
     top: IAxis,
     visible: scala.Boolean
   ): IAxes = {
-    val __obj = js.Dynamic.literal(add = add, bottom = bottom, chart = chart, items = items, left = left, right = right, top = top, visible = visible)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), bottom = bottom, chart = chart, items = items, left = left, right = right, top = top, visible = visible)
   
     __obj.asInstanceOf[IAxes]
   }

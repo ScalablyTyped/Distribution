@@ -46,15 +46,15 @@ trait IgColorPickerSplitButtonMethods extends js.Object {
 object IgColorPickerSplitButtonMethods {
   @scala.inline
   def apply(
-    collapse: js.Function1[js.Object, js.Object],
-    destroy: js.Function0[js.Object],
-    expand: js.Function1[js.Object, js.Object],
-    setColor: js.Function1[java.lang.String, js.Object],
-    switchToButton: js.Function1[js.Object, scala.Unit],
-    toggle: js.Function1[js.Object, js.Object],
-    widget: js.Function0[scala.Unit]
+    collapse: js.Object => js.Object,
+    destroy: () => js.Object,
+    expand: js.Object => js.Object,
+    setColor: java.lang.String => js.Object,
+    switchToButton: js.Object => scala.Unit,
+    toggle: js.Object => js.Object,
+    widget: () => scala.Unit
   ): IgColorPickerSplitButtonMethods = {
-    val __obj = js.Dynamic.literal(collapse = collapse, destroy = destroy, expand = expand, setColor = setColor, switchToButton = switchToButton, toggle = toggle, widget = widget)
+    val __obj = js.Dynamic.literal(collapse = js.Any.fromFunction1(collapse), destroy = js.Any.fromFunction0(destroy), expand = js.Any.fromFunction1(expand), setColor = js.Any.fromFunction1(setColor), switchToButton = js.Any.fromFunction1(switchToButton), toggle = js.Any.fromFunction1(toggle), widget = js.Any.fromFunction0(widget))
   
     __obj.asInstanceOf[IgColorPickerSplitButtonMethods]
   }

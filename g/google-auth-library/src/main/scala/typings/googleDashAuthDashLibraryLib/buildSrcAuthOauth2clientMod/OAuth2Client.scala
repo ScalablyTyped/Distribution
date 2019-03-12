@@ -35,7 +35,7 @@ class OAuth2Client ()
   var projectId: js.UndefOr[java.lang.String] = js.native
   var redirectUri: js.UndefOr[js.Any] = js.native
   var refreshAccessTokenAsync: js.Any = js.native
-  var refreshTokenPromises: nodeLib.Map[java.lang.String, js.Promise[GetTokenResponse]] = js.native
+  var refreshTokenPromises: stdLib.Map[java.lang.String, js.Promise[GetTokenResponse]] = js.native
   var revokeCredentialsAsync: js.Any = js.native
   var verifyIdTokenAsync: js.Any = js.native
   /**
@@ -165,7 +165,7 @@ class OAuth2Client ()
   def verifyIdToken(
     options: VerifyIdTokenOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* login */ js.UndefOr[googleDashAuthDashLibraryLib.buildSrcAuthLoginticketMod.LoginTicket], 
       scala.Unit
     ]

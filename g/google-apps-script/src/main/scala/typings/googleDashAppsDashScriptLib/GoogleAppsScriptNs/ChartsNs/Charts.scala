@@ -45,22 +45,22 @@ object Charts {
     PickerValuesLayout: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PickerValuesLayout */ js.Any,
     PointStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PointStyle */ js.Any,
     Position: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Position */ js.Any,
-    newAreaChart: js.Function0[AreaChartBuilder],
-    newBarChart: js.Function0[BarChartBuilder],
-    newCategoryFilter: js.Function0[CategoryFilterBuilder],
-    newColumnChart: js.Function0[ColumnChartBuilder],
-    newDashboardPanel: js.Function0[DashboardPanelBuilder],
-    newDataTable: js.Function0[DataTableBuilder],
-    newDataViewDefinition: js.Function0[DataViewDefinitionBuilder],
-    newLineChart: js.Function0[LineChartBuilder],
-    newNumberRangeFilter: js.Function0[NumberRangeFilterBuilder],
-    newPieChart: js.Function0[PieChartBuilder],
-    newScatterChart: js.Function0[ScatterChartBuilder],
-    newStringFilter: js.Function0[StringFilterBuilder],
-    newTableChart: js.Function0[TableChartBuilder],
-    newTextStyle: js.Function0[TextStyleBuilder]
+    newAreaChart: () => AreaChartBuilder,
+    newBarChart: () => BarChartBuilder,
+    newCategoryFilter: () => CategoryFilterBuilder,
+    newColumnChart: () => ColumnChartBuilder,
+    newDashboardPanel: () => DashboardPanelBuilder,
+    newDataTable: () => DataTableBuilder,
+    newDataViewDefinition: () => DataViewDefinitionBuilder,
+    newLineChart: () => LineChartBuilder,
+    newNumberRangeFilter: () => NumberRangeFilterBuilder,
+    newPieChart: () => PieChartBuilder,
+    newScatterChart: () => ScatterChartBuilder,
+    newStringFilter: () => StringFilterBuilder,
+    newTableChart: () => TableChartBuilder,
+    newTextStyle: () => TextStyleBuilder
   ): Charts = {
-    val __obj = js.Dynamic.literal(ChartHiddenDimensionStrategy = ChartHiddenDimensionStrategy, ChartMergeStrategy = ChartMergeStrategy, ChartType = ChartType, ColumnType = ColumnType, CurveStyle = CurveStyle, MatchType = MatchType, Orientation = Orientation, PickerValuesLayout = PickerValuesLayout, PointStyle = PointStyle, Position = Position, newAreaChart = newAreaChart, newBarChart = newBarChart, newCategoryFilter = newCategoryFilter, newColumnChart = newColumnChart, newDashboardPanel = newDashboardPanel, newDataTable = newDataTable, newDataViewDefinition = newDataViewDefinition, newLineChart = newLineChart, newNumberRangeFilter = newNumberRangeFilter, newPieChart = newPieChart, newScatterChart = newScatterChart, newStringFilter = newStringFilter, newTableChart = newTableChart, newTextStyle = newTextStyle)
+    val __obj = js.Dynamic.literal(ChartHiddenDimensionStrategy = ChartHiddenDimensionStrategy, ChartMergeStrategy = ChartMergeStrategy, ChartType = ChartType, ColumnType = ColumnType, CurveStyle = CurveStyle, MatchType = MatchType, Orientation = Orientation, PickerValuesLayout = PickerValuesLayout, PointStyle = PointStyle, Position = Position, newAreaChart = js.Any.fromFunction0(newAreaChart), newBarChart = js.Any.fromFunction0(newBarChart), newCategoryFilter = js.Any.fromFunction0(newCategoryFilter), newColumnChart = js.Any.fromFunction0(newColumnChart), newDashboardPanel = js.Any.fromFunction0(newDashboardPanel), newDataTable = js.Any.fromFunction0(newDataTable), newDataViewDefinition = js.Any.fromFunction0(newDataViewDefinition), newLineChart = js.Any.fromFunction0(newLineChart), newNumberRangeFilter = js.Any.fromFunction0(newNumberRangeFilter), newPieChart = js.Any.fromFunction0(newPieChart), newScatterChart = js.Any.fromFunction0(newScatterChart), newStringFilter = js.Any.fromFunction0(newStringFilter), newTableChart = js.Any.fromFunction0(newTableChart), newTextStyle = js.Any.fromFunction0(newTextStyle))
   
     __obj.asInstanceOf[Charts]
   }

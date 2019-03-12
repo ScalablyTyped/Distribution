@@ -30,27 +30,19 @@ trait XDispatchProvider
     * @param Requests list of dispatch requests
     * @returns multiple dispatch interfaces for the specified descriptors at once  It's not allowed to pack it - because every request must match to his real re
     */
-  def queryDispatches(Requests: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DispatchDescriptor]): activexDashInteropLib.SafeArray[XDispatch]
+  def queryDispatches(Requests: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DispatchDescriptor]): stdLib.SafeArray[XDispatch]
 }
 
 object XDispatchProvider {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryDispatch: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
-      java.lang.String, 
-      scala.Double, 
-      XDispatch
-    ],
-    queryDispatches: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DispatchDescriptor], 
-      activexDashInteropLib.SafeArray[XDispatch]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    queryDispatch: (activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, java.lang.String, scala.Double) => XDispatch,
+    queryDispatches: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DispatchDescriptor] => stdLib.SafeArray[XDispatch],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDispatchProvider = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryDispatch = queryDispatch, queryDispatches = queryDispatches, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryDispatch = js.Any.fromFunction3(queryDispatch), queryDispatches = js.Any.fromFunction1(queryDispatches), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDispatchProvider]
   }

@@ -13,7 +13,7 @@ class InformationRightsManagementSettings () extends ClientObject {
   def get_allowWriteCopy(): scala.Boolean = js.native
   def get_disableDocumentBrowserView(): scala.Boolean = js.native
   def get_documentAccessExpireDays(): scala.Double = js.native
-  def get_documentLibraryProtectionExpireDate(): microsoftDashAjaxLib.Date = js.native
+  def get_documentLibraryProtectionExpireDate(): stdLib.Date = js.native
   def get_enableDocumentAccessExpire(): scala.Boolean = js.native
   def get_enableDocumentBrowserPublishingView(): scala.Boolean = js.native
   def get_enableGroupProtection(): scala.Boolean = js.native
@@ -28,7 +28,7 @@ class InformationRightsManagementSettings () extends ClientObject {
   def set_allowWriteCopy(value: scala.Boolean): scala.Unit = js.native
   def set_disableDocumentBrowserView(value: scala.Boolean): scala.Unit = js.native
   def set_documentAccessExpireDays(value: scala.Double): scala.Unit = js.native
-  def set_documentLibraryProtectionExpireDate(value: microsoftDashAjaxLib.Date): scala.Unit = js.native
+  def set_documentLibraryProtectionExpireDate(value: stdLib.Date): scala.Unit = js.native
   def set_enableDocumentAccessExpire(value: scala.Boolean): scala.Unit = js.native
   def set_enableDocumentBrowserPublishingView(value: scala.Boolean): scala.Unit = js.native
   def set_enableGroupProtection(value: scala.Boolean): scala.Unit = js.native

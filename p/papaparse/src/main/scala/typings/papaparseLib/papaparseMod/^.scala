@@ -17,17 +17,17 @@ object ^ extends js.Object {
   var SCRIPT_PATH: java.lang.String = js.native
   val UNIT_SEP: java.lang.String = js.native
   val WORKERS_SUPPORTED: scala.Boolean = js.native
-  def parse(csvString: java.lang.String): papaparseLib.papaparseMod.ParseResult = js.native
-  def parse(csvString: java.lang.String, config: papaparseLib.papaparseMod.ParseConfig): papaparseLib.papaparseMod.ParseResult = js.native
-  def parse(file: stdLib.File): papaparseLib.papaparseMod.ParseResult = js.native
-  def parse(file: stdLib.File, config: papaparseLib.papaparseMod.ParseConfig): papaparseLib.papaparseMod.ParseResult = js.native
-  def parse(stream: nodeLib.NodeJSNs.ReadableStream): papaparseLib.papaparseMod.ParseResult = js.native
-  def parse(stream: nodeLib.NodeJSNs.ReadableStream, config: papaparseLib.papaparseMod.ParseConfig): papaparseLib.papaparseMod.ParseResult = js.native
+  def parse(csvString: java.lang.String): ParseResult = js.native
+  def parse(csvString: java.lang.String, config: ParseConfig): ParseResult = js.native
+  def parse(file: stdLib.File): ParseResult = js.native
+  def parse(file: stdLib.File, config: ParseConfig): ParseResult = js.native
+  def parse(stream: nodeLib.NodeJSNs.ReadableStream): ParseResult = js.native
+  def parse(stream: nodeLib.NodeJSNs.ReadableStream, config: ParseConfig): ParseResult = js.native
   def parse(stream: papaparseLib.papaparseLibNumbers.`1`): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  def parse(stream: papaparseLib.papaparseLibNumbers.`1`, config: papaparseLib.papaparseMod.ParseConfig): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def parse(stream: papaparseLib.papaparseLibNumbers.`1`, config: ParseConfig): nodeLib.NodeJSNs.ReadWriteStream = js.native
   def unparse(data: js.Array[js.Array[_] | js.Object]): java.lang.String = js.native
-  def unparse(data: js.Array[js.Array[_] | js.Object], config: papaparseLib.papaparseMod.UnparseConfig): java.lang.String = js.native
-  def unparse(data: papaparseLib.papaparseMod.UnparseObject): java.lang.String = js.native
-  def unparse(data: papaparseLib.papaparseMod.UnparseObject, config: papaparseLib.papaparseMod.UnparseConfig): java.lang.String = js.native
+  def unparse(data: js.Array[js.Array[_] | js.Object], config: UnparseConfig): java.lang.String = js.native
+  def unparse(data: UnparseObject): java.lang.String = js.native
+  def unparse(data: UnparseObject, config: UnparseConfig): java.lang.String = js.native
 }
 

@@ -12,11 +12,8 @@ trait Signer extends js.Object {
 
 object Signer {
   @scala.inline
-  def apply(
-    sign: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    update: js.Function1[js.Any, scala.Unit]
-  ): Signer = {
-    val __obj = js.Dynamic.literal(sign = sign, update = update)
+  def apply(sign: (java.lang.String, java.lang.String) => java.lang.String, update: js.Any => scala.Unit): Signer = {
+    val __obj = js.Dynamic.literal(sign = js.Any.fromFunction2(sign), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[Signer]
   }

@@ -36,13 +36,13 @@ trait ASPxClientHtmlEditorSelection extends js.Object {
 object ASPxClientHtmlEditorSelection {
   @scala.inline
   def apply(
-    GetElements: js.Function0[js.Array[js.Object]],
-    GetHtml: js.Function0[java.lang.String],
-    GetSelectedElement: js.Function0[js.Object],
-    GetText: js.Function0[java.lang.String],
-    SetHtml: js.Function2[java.lang.String, scala.Boolean, scala.Unit]
+    GetElements: () => js.Array[js.Object],
+    GetHtml: () => java.lang.String,
+    GetSelectedElement: () => js.Object,
+    GetText: () => java.lang.String,
+    SetHtml: (java.lang.String, scala.Boolean) => scala.Unit
   ): ASPxClientHtmlEditorSelection = {
-    val __obj = js.Dynamic.literal(GetElements = GetElements, GetHtml = GetHtml, GetSelectedElement = GetSelectedElement, GetText = GetText, SetHtml = SetHtml)
+    val __obj = js.Dynamic.literal(GetElements = js.Any.fromFunction0(GetElements), GetHtml = js.Any.fromFunction0(GetHtml), GetSelectedElement = js.Any.fromFunction0(GetSelectedElement), GetText = js.Any.fromFunction0(GetText), SetHtml = js.Any.fromFunction2(SetHtml))
   
     __obj.asInstanceOf[ASPxClientHtmlEditorSelection]
   }

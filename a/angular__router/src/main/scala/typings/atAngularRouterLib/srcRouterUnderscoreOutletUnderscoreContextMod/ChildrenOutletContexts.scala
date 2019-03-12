@@ -26,7 +26,7 @@ class ChildrenOutletContexts () extends js.Object {
     * Called when the corresponding route is deactivated during navigation.
     * Because the component get destroyed, all children outlet are destroyed.
     */
-  def onOutletDeactivated(): nodeLib.Map[java.lang.String, OutletContext] = js.native
-  def onOutletReAttached(contexts: nodeLib.Map[java.lang.String, OutletContext]): scala.Unit = js.native
+  def onOutletDeactivated(): stdLib.Map[java.lang.String, OutletContext] = js.native
+  def onOutletReAttached(contexts: stdLib.Map[java.lang.String, OutletContext]): scala.Unit = js.native
 }
 

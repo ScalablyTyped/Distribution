@@ -11,8 +11,8 @@ trait PageRange extends js.Object {
 
 object PageRange {
   @scala.inline
-  def apply(getPages: js.Function0[js.Array[Page]]): PageRange = {
-    val __obj = js.Dynamic.literal(getPages = getPages)
+  def apply(getPages: () => js.Array[Page]): PageRange = {
+    val __obj = js.Dynamic.literal(getPages = js.Any.fromFunction0(getPages))
   
     __obj.asInstanceOf[PageRange]
   }

@@ -140,286 +140,164 @@ object IScroller {
   @scala.inline
   def apply(
     acceleration: scala.Int | scala.Double = null,
-    addAfterListener: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    addBeforeListener: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    addEvents: js.Function1[/* eventNames */ js.UndefOr[js.Any], scala.Unit] = null,
-    addListener: js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    addManagedListener: js.Function5[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
+    addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    addEvents: /* eventNames */ js.UndefOr[js.Any] => scala.Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
     bubbleEvents: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    clearListeners: js.Function0[scala.Unit] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
+    clearListeners: () => scala.Unit = null,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     direction: java.lang.String = null,
     directionLock: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    enableBubble: js.Function1[/* events */ js.UndefOr[js.Any], scala.Unit] = null,
+    enableBubble: /* events */ js.UndefOr[js.Any] => scala.Unit = null,
     extend: java.lang.String = null,
-    fireAction: js.Function4[
-      /* eventName */ js.UndefOr[java.lang.String], 
-      /* args */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      _
-    ] = null,
-    fireEvent: js.Function2[/* eventName */ java.lang.String, /* repeated */ js.Any, scala.Boolean] = null,
+    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => scala.Boolean = null,
     friction: scala.Int | scala.Double = null,
-    getBubbleEvents: js.Function0[_] = null,
-    getDirection: js.Function0[java.lang.String] = null,
-    getDirectionLock: js.Function0[scala.Boolean] = null,
-    getDisabled: js.Function0[scala.Boolean] = null,
-    getId: js.Function0[_] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getInitialOffset: js.Function0[_] = null,
-    getListeners: js.Function0[_] = null,
-    getMomentumEasing: js.Function0[_] = null,
-    getSlotSnapEasing: js.Function0[_] = null,
-    getSlotSnapSize: js.Function0[_] = null,
-    getTranslatable: js.Function0[_] = null,
-    hasListener: js.Function1[/* eventName */ js.UndefOr[java.lang.String], scala.Boolean] = null,
+    getBubbleEvents: () => _ = null,
+    getDirection: () => java.lang.String = null,
+    getDirectionLock: () => scala.Boolean = null,
+    getDisabled: () => scala.Boolean = null,
+    getId: () => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialOffset: () => _ = null,
+    getListeners: () => _ = null,
+    getMomentumEasing: () => _ = null,
+    getSlotSnapEasing: () => _ = null,
+    getSlotSnapSize: () => _ = null,
+    getTranslatable: () => _ = null,
+    hasListener: /* eventName */ js.UndefOr[java.lang.String] => scala.Boolean = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     initialOffset: js.Any = null,
-    isAxisEnabled: js.Function1[/* axis */ js.UndefOr[java.lang.String], scala.Boolean] = null,
+    isAxisEnabled: /* axis */ js.UndefOr[java.lang.String] => scala.Boolean = null,
     listeners: js.Any = null,
     mixins: js.Any = null,
     momentumEasing: js.Any = null,
-    mon: js.Function5[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    mun: js.Function4[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    on: js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    onAfter: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    onBefore: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
+    mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     platformConfig: js.Any = null,
-    relayEvents: js.Function2[
-      /* object */ js.UndefOr[js.Any], 
-      /* events */ js.UndefOr[js.Any], 
-      senchaUnderscoreTouchLib.ExtNs.mixinNs.IObservable
-    ] = null,
-    removeAfterListener: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    removeBeforeListener: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    removeListener: js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    removeManagedListener: js.Function4[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    resumeEvents: js.Function1[/* discardQueuedEvents */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    scrollBy: js.Function3[
-      /* x */ js.UndefOr[scala.Double], 
-      /* y */ js.UndefOr[scala.Double], 
-      /* animation */ js.UndefOr[js.Any], 
-      IScroller
-    ] = null,
-    scrollTo: js.Function3[
-      /* x */ js.UndefOr[scala.Double], 
-      /* y */ js.UndefOr[scala.Double], 
-      /* animation */ js.UndefOr[js.Any], 
-      IScroller
-    ] = null,
-    scrollToEnd: js.Function1[/* animation */ js.UndefOr[js.Any], IScroller] = null,
+    relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => senchaUnderscoreTouchLib.ExtNs.mixinNs.IObservable = null,
+    removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    resumeEvents: /* discardQueuedEvents */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    scrollBy: (/* x */ js.UndefOr[scala.Double], /* y */ js.UndefOr[scala.Double], /* animation */ js.UndefOr[js.Any]) => IScroller = null,
+    scrollTo: (/* x */ js.UndefOr[scala.Double], /* y */ js.UndefOr[scala.Double], /* animation */ js.UndefOr[js.Any]) => IScroller = null,
+    scrollToEnd: /* animation */ js.UndefOr[js.Any] => IScroller = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setBubbleEvents: js.Function1[/* bubbleEvents */ js.UndefOr[js.Any], scala.Unit] = null,
-    setDirection: js.Function1[/* direction */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setDirectionLock: js.Function1[/* directionLock */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setDisabled: js.Function1[/* disabled */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setInitialOffset: js.Function1[/* initialOffset */ js.UndefOr[js.Any], scala.Unit] = null,
-    setListeners: js.Function1[/* listeners */ js.UndefOr[js.Any], scala.Unit] = null,
-    setMomentumEasing: js.Function1[/* momentumEasing */ js.UndefOr[js.Any], scala.Unit] = null,
-    setOffset: js.Function1[/* offset */ js.UndefOr[js.Any], IScroller] = null,
-    setSlotSnapEasing: js.Function1[/* slotSnapEasing */ js.UndefOr[js.Any], scala.Unit] = null,
-    setSlotSnapSize: js.Function1[/* slotSnapSize */ js.UndefOr[js.Any], scala.Unit] = null,
-    setTranslatable: js.Function1[/* translatable */ js.UndefOr[js.Any], scala.Unit] = null,
+    setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => scala.Unit = null,
+    setDirection: /* direction */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setDirectionLock: /* directionLock */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setDisabled: /* disabled */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setInitialOffset: /* initialOffset */ js.UndefOr[js.Any] => scala.Unit = null,
+    setListeners: /* listeners */ js.UndefOr[js.Any] => scala.Unit = null,
+    setMomentumEasing: /* momentumEasing */ js.UndefOr[js.Any] => scala.Unit = null,
+    setOffset: /* offset */ js.UndefOr[js.Any] => IScroller = null,
+    setSlotSnapEasing: /* slotSnapEasing */ js.UndefOr[js.Any] => scala.Unit = null,
+    setSlotSnapSize: /* slotSnapSize */ js.UndefOr[js.Any] => scala.Unit = null,
+    setTranslatable: /* translatable */ js.UndefOr[js.Any] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     slotSnapSize: js.Any = null,
     statics: js.Any = null,
-    suspendEvents: js.Function0[scala.Unit] = null,
-    un: js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    unAfter: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    unBefore: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    updateBoundary: js.Function0[IScroller] = null,
+    suspendEvents: () => scala.Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    updateBoundary: () => IScroller = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null
   ): IScroller = {
     val __obj = js.Dynamic.literal()
     if (acceleration != null) __obj.updateDynamic("acceleration")(acceleration.asInstanceOf[js.Any])
-    if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(addAfterListener)
-    if (addBeforeListener != null) __obj.updateDynamic("addBeforeListener")(addBeforeListener)
-    if (addEvents != null) __obj.updateDynamic("addEvents")(addEvents)
-    if (addListener != null) __obj.updateDynamic("addListener")(addListener)
-    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(addManagedListener)
+    if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4(addAfterListener))
+    if (addBeforeListener != null) __obj.updateDynamic("addBeforeListener")(js.Any.fromFunction4(addBeforeListener))
+    if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
+    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction5(addListener))
+    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
     if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
-    if (clearListeners != null) __obj.updateDynamic("clearListeners")(clearListeners)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
+    if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (direction != null) __obj.updateDynamic("direction")(direction)
     if (!js.isUndefined(directionLock)) __obj.updateDynamic("directionLock")(directionLock)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (enableBubble != null) __obj.updateDynamic("enableBubble")(enableBubble)
+    if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (fireAction != null) __obj.updateDynamic("fireAction")(fireAction)
-    if (fireEvent != null) __obj.updateDynamic("fireEvent")(fireEvent)
+    if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
+    if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
     if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
-    if (getBubbleEvents != null) __obj.updateDynamic("getBubbleEvents")(getBubbleEvents)
-    if (getDirection != null) __obj.updateDynamic("getDirection")(getDirection)
-    if (getDirectionLock != null) __obj.updateDynamic("getDirectionLock")(getDirectionLock)
-    if (getDisabled != null) __obj.updateDynamic("getDisabled")(getDisabled)
-    if (getId != null) __obj.updateDynamic("getId")(getId)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getInitialOffset != null) __obj.updateDynamic("getInitialOffset")(getInitialOffset)
-    if (getListeners != null) __obj.updateDynamic("getListeners")(getListeners)
-    if (getMomentumEasing != null) __obj.updateDynamic("getMomentumEasing")(getMomentumEasing)
-    if (getSlotSnapEasing != null) __obj.updateDynamic("getSlotSnapEasing")(getSlotSnapEasing)
-    if (getSlotSnapSize != null) __obj.updateDynamic("getSlotSnapSize")(getSlotSnapSize)
-    if (getTranslatable != null) __obj.updateDynamic("getTranslatable")(getTranslatable)
-    if (hasListener != null) __obj.updateDynamic("hasListener")(hasListener)
+    if (getBubbleEvents != null) __obj.updateDynamic("getBubbleEvents")(js.Any.fromFunction0(getBubbleEvents))
+    if (getDirection != null) __obj.updateDynamic("getDirection")(js.Any.fromFunction0(getDirection))
+    if (getDirectionLock != null) __obj.updateDynamic("getDirectionLock")(js.Any.fromFunction0(getDirectionLock))
+    if (getDisabled != null) __obj.updateDynamic("getDisabled")(js.Any.fromFunction0(getDisabled))
+    if (getId != null) __obj.updateDynamic("getId")(js.Any.fromFunction0(getId))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getInitialOffset != null) __obj.updateDynamic("getInitialOffset")(js.Any.fromFunction0(getInitialOffset))
+    if (getListeners != null) __obj.updateDynamic("getListeners")(js.Any.fromFunction0(getListeners))
+    if (getMomentumEasing != null) __obj.updateDynamic("getMomentumEasing")(js.Any.fromFunction0(getMomentumEasing))
+    if (getSlotSnapEasing != null) __obj.updateDynamic("getSlotSnapEasing")(js.Any.fromFunction0(getSlotSnapEasing))
+    if (getSlotSnapSize != null) __obj.updateDynamic("getSlotSnapSize")(js.Any.fromFunction0(getSlotSnapSize))
+    if (getTranslatable != null) __obj.updateDynamic("getTranslatable")(js.Any.fromFunction0(getTranslatable))
+    if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (initialOffset != null) __obj.updateDynamic("initialOffset")(initialOffset)
-    if (isAxisEnabled != null) __obj.updateDynamic("isAxisEnabled")(isAxisEnabled)
+    if (isAxisEnabled != null) __obj.updateDynamic("isAxisEnabled")(js.Any.fromFunction1(isAxisEnabled))
     if (listeners != null) __obj.updateDynamic("listeners")(listeners)
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (momentumEasing != null) __obj.updateDynamic("momentumEasing")(momentumEasing)
-    if (mon != null) __obj.updateDynamic("mon")(mon)
-    if (mun != null) __obj.updateDynamic("mun")(mun)
-    if (on != null) __obj.updateDynamic("on")(on)
-    if (onAfter != null) __obj.updateDynamic("onAfter")(onAfter)
-    if (onBefore != null) __obj.updateDynamic("onBefore")(onBefore)
+    if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
+    if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
+    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
+    if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
+    if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
-    if (relayEvents != null) __obj.updateDynamic("relayEvents")(relayEvents)
-    if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(removeAfterListener)
-    if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(removeBeforeListener)
-    if (removeListener != null) __obj.updateDynamic("removeListener")(removeListener)
-    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(removeManagedListener)
-    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(resumeEvents)
-    if (scrollBy != null) __obj.updateDynamic("scrollBy")(scrollBy)
-    if (scrollTo != null) __obj.updateDynamic("scrollTo")(scrollTo)
-    if (scrollToEnd != null) __obj.updateDynamic("scrollToEnd")(scrollToEnd)
+    if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
+    if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4(removeAfterListener))
+    if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(js.Any.fromFunction4(removeBeforeListener))
+    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction5(removeListener))
+    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
+    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1(resumeEvents))
+    if (scrollBy != null) __obj.updateDynamic("scrollBy")(js.Any.fromFunction3(scrollBy))
+    if (scrollTo != null) __obj.updateDynamic("scrollTo")(js.Any.fromFunction3(scrollTo))
+    if (scrollToEnd != null) __obj.updateDynamic("scrollToEnd")(js.Any.fromFunction1(scrollToEnd))
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(setBubbleEvents)
-    if (setDirection != null) __obj.updateDynamic("setDirection")(setDirection)
-    if (setDirectionLock != null) __obj.updateDynamic("setDirectionLock")(setDirectionLock)
-    if (setDisabled != null) __obj.updateDynamic("setDisabled")(setDisabled)
-    if (setInitialOffset != null) __obj.updateDynamic("setInitialOffset")(setInitialOffset)
-    if (setListeners != null) __obj.updateDynamic("setListeners")(setListeners)
-    if (setMomentumEasing != null) __obj.updateDynamic("setMomentumEasing")(setMomentumEasing)
-    if (setOffset != null) __obj.updateDynamic("setOffset")(setOffset)
-    if (setSlotSnapEasing != null) __obj.updateDynamic("setSlotSnapEasing")(setSlotSnapEasing)
-    if (setSlotSnapSize != null) __obj.updateDynamic("setSlotSnapSize")(setSlotSnapSize)
-    if (setTranslatable != null) __obj.updateDynamic("setTranslatable")(setTranslatable)
+    if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
+    if (setDirection != null) __obj.updateDynamic("setDirection")(js.Any.fromFunction1(setDirection))
+    if (setDirectionLock != null) __obj.updateDynamic("setDirectionLock")(js.Any.fromFunction1(setDirectionLock))
+    if (setDisabled != null) __obj.updateDynamic("setDisabled")(js.Any.fromFunction1(setDisabled))
+    if (setInitialOffset != null) __obj.updateDynamic("setInitialOffset")(js.Any.fromFunction1(setInitialOffset))
+    if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
+    if (setMomentumEasing != null) __obj.updateDynamic("setMomentumEasing")(js.Any.fromFunction1(setMomentumEasing))
+    if (setOffset != null) __obj.updateDynamic("setOffset")(js.Any.fromFunction1(setOffset))
+    if (setSlotSnapEasing != null) __obj.updateDynamic("setSlotSnapEasing")(js.Any.fromFunction1(setSlotSnapEasing))
+    if (setSlotSnapSize != null) __obj.updateDynamic("setSlotSnapSize")(js.Any.fromFunction1(setSlotSnapSize))
+    if (setTranslatable != null) __obj.updateDynamic("setTranslatable")(js.Any.fromFunction1(setTranslatable))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (slotSnapSize != null) __obj.updateDynamic("slotSnapSize")(slotSnapSize)
     if (statics != null) __obj.updateDynamic("statics")(statics)
-    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(suspendEvents)
-    if (un != null) __obj.updateDynamic("un")(un)
-    if (unAfter != null) __obj.updateDynamic("unAfter")(unAfter)
-    if (unBefore != null) __obj.updateDynamic("unBefore")(unBefore)
-    if (updateBoundary != null) __obj.updateDynamic("updateBoundary")(updateBoundary)
+    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
+    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
+    if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
+    if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
+    if (updateBoundary != null) __obj.updateDynamic("updateBoundary")(js.Any.fromFunction0(updateBoundary))
     if (uses != null) __obj.updateDynamic("uses")(uses)
     __obj.asInstanceOf[IScroller]
   }

@@ -18,6 +18,6 @@ trait HiddenControl
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.FormComponent {
   /** specifies the value of the component. */
   var HiddenValue: java.lang.String = js.native
-  def getPropertyValues(aPropertyNames: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): activexDashInteropLib.SafeArray[_] = js.native
+  def getPropertyValues(aPropertyNames: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): stdLib.SafeArray[_] = js.native
 }
 

@@ -163,7 +163,7 @@ object typesNs extends js.Object {
     var columns: js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
     var info: cassandraDashDriverLib.Anon_AchievedConsistency
     @JSName(org.scalablytyped.runtime.Symbol.iterator)
-    var iterator: js.Function0[nodeLib.Iterator[Row]]
+    var iterator: js.Function0[stdLib.Iterator[Row]]
     var pageState: java.lang.String
     var rowLength: scala.Double
     var rows: js.Array[Row]

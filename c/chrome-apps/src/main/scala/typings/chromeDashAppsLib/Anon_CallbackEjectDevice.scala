@@ -70,36 +70,25 @@ object Anon_CallbackEjectDevice {
   def apply(
     EjectDeviceResultCode: Anon_FAILURE,
     StorageUnitType: Anon_FIXED,
-    ejectDevice: js.Function2[
-      java.lang.String, 
-      js.Function1[
-        /* result */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          /* import warning: ImportType.apply Failed type conversion: typeof EjectDeviceResultCode */ js.Any, 
+    ejectDevice: (java.lang.String, js.Function1[
+      /* result */ chromeDashAppsLib.chromeNs.ToStringLiteral[
+        /* import warning: ImportType.apply Failed type conversion: typeof EjectDeviceResultCode */ js.Any, 
+        java.lang.String, 
+        stdLib.Exclude[
           java.lang.String, 
-          stdLib.Exclude[
-            java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: typeof EjectDeviceResultCode[keyof typeof EjectDeviceResultCode] */ js.Any
-          ]
-        ], 
-        scala.Unit
+          /* import warning: ImportType.apply Failed type conversion: typeof EjectDeviceResultCode[keyof typeof EjectDeviceResultCode] */ js.Any
+        ]
       ], 
       scala.Unit
-    ],
-    getAvailableCapacity: js.Function2[
-      java.lang.String, 
-      js.Function1[
-        /* info */ chromeDashAppsLib.chromeNs.systemNs.storageNs.StorageCapacityInfo, 
-        scala.Unit
-      ], 
+    ]) => scala.Unit,
+    getAvailableCapacity: (java.lang.String, js.Function1[
+      /* info */ chromeDashAppsLib.chromeNs.systemNs.storageNs.StorageCapacityInfo, 
       scala.Unit
-    ],
+    ]) => scala.Unit,
     getInfo: js.Function1[
-      js.Function1[
-        /* info */ js.Array[chromeDashAppsLib.chromeNs.systemNs.storageNs.StorageUnitInfo], 
-        scala.Unit
-      ], 
+      /* info */ js.Array[chromeDashAppsLib.chromeNs.systemNs.storageNs.StorageUnitInfo], 
       scala.Unit
-    ],
+    ] => scala.Unit,
     onAttached: chromeDashAppsLib.chromeNs.eventsNs.Event[
       js.Function1[
         /* info */ chromeDashAppsLib.chromeNs.systemNs.storageNs.StorageUnitInfo, 
@@ -108,7 +97,7 @@ object Anon_CallbackEjectDevice {
     ],
     onDetached: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* id */ java.lang.String, scala.Unit]]
   ): Anon_CallbackEjectDevice = {
-    val __obj = js.Dynamic.literal(EjectDeviceResultCode = EjectDeviceResultCode, StorageUnitType = StorageUnitType, ejectDevice = ejectDevice, getAvailableCapacity = getAvailableCapacity, getInfo = getInfo, onAttached = onAttached, onDetached = onDetached)
+    val __obj = js.Dynamic.literal(EjectDeviceResultCode = EjectDeviceResultCode, StorageUnitType = StorageUnitType, ejectDevice = js.Any.fromFunction2(ejectDevice), getAvailableCapacity = js.Any.fromFunction2(getAvailableCapacity), getInfo = js.Any.fromFunction1(getInfo), onAttached = onAttached, onDetached = onDetached)
   
     __obj.asInstanceOf[Anon_CallbackEjectDevice]
   }

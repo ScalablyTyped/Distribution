@@ -21,19 +21,19 @@ trait LeftProjection[A, B] extends js.Object {
 object LeftProjection {
   @scala.inline
   def apply[A, B](
-    exists: js.Function1[js.Function1[/* a */ A, scala.Boolean], scala.Boolean],
-    filter: js.Function1[js.Function1[/* a */ A, scala.Boolean], Optional[Either[A, B]]],
-    flatMap: js.Function1[js.Function1[/* a */ A, Either[js.Any, B]], Either[js.Any | A, B]],
-    forall: js.Function1[js.Function1[/* a */ A, scala.Boolean], scala.Boolean],
-    foreach: js.Function1[js.Function1[/* a */ A, scala.Unit], scala.Unit],
-    get: js.Function0[A],
-    getOrElse: js.Function1[js.Any, A],
-    map: js.Function1[js.Function1[/* a */ A, js.Any], Either[js.Any | A, B]],
+    exists: js.Function1[/* a */ A, scala.Boolean] => scala.Boolean,
+    filter: js.Function1[/* a */ A, scala.Boolean] => Optional[Either[A, B]],
+    flatMap: js.Function1[/* a */ A, Either[js.Any, B]] => Either[js.Any | A, B],
+    forall: js.Function1[/* a */ A, scala.Boolean] => scala.Boolean,
+    foreach: js.Function1[/* a */ A, scala.Unit] => scala.Unit,
+    get: () => A,
+    getOrElse: js.Any => A,
+    map: js.Function1[/* a */ A, js.Any] => Either[js.Any | A, B],
     self: js.Any,
-    toOptional: js.Function0[Optional[A]],
-    toString: js.Function0[java.lang.String]
+    toOptional: () => Optional[A],
+    toString: () => java.lang.String
   ): LeftProjection[A, B] = {
-    val __obj = js.Dynamic.literal(exists = exists, filter = filter, flatMap = flatMap, forall = forall, foreach = foreach, get = get, getOrElse = getOrElse, map = map, self = self, toOptional = toOptional, toString = toString)
+    val __obj = js.Dynamic.literal(exists = js.Any.fromFunction1(exists), filter = js.Any.fromFunction1(filter), flatMap = js.Any.fromFunction1(flatMap), forall = js.Any.fromFunction1(forall), foreach = js.Any.fromFunction1(foreach), get = js.Any.fromFunction0(get), getOrElse = js.Any.fromFunction1(getOrElse), map = js.Any.fromFunction1(map), self = self, toOptional = js.Any.fromFunction0(toOptional), toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[LeftProjection[A, B]]
   }

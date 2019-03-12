@@ -18,20 +18,20 @@ trait GmailImageAdBuilder[GmailImageAd] extends AdBuilder[GmailImageAdBuilder[Gm
 object GmailImageAdBuilder {
   @scala.inline
   def apply[GmailImageAd](
-    build: js.Function0[AdWordsOperation[GmailImageAdBuilder[GmailImageAd]]],
-    withAdvertiser: js.Function1[java.lang.String, GmailImageAdBuilder[GmailImageAd]],
-    withCustomParameters: js.Function1[js.Object, GmailImageAdBuilder[GmailImageAd]],
-    withDescription: js.Function1[java.lang.String, GmailImageAdBuilder[GmailImageAd]],
-    withDisplayUrl: js.Function1[java.lang.String, GmailImageAdBuilder[GmailImageAd]],
-    withFinalUrl: js.Function1[java.lang.String, GmailImageAdBuilder[GmailImageAd]],
-    withImage: js.Function1[Media, GmailImageAdBuilder[GmailImageAd]],
-    withLogo: js.Function1[Media, GmailImageAdBuilder[GmailImageAd]],
-    withMobileFinalUrl: js.Function1[java.lang.String, GmailImageAdBuilder[GmailImageAd]],
-    withName: js.Function1[java.lang.String, GmailImageAdBuilder[GmailImageAd]],
-    withSubject: js.Function1[java.lang.String, GmailImageAdBuilder[GmailImageAd]],
-    withTrackingTemplate: js.Function1[java.lang.String, GmailImageAdBuilder[GmailImageAd]]
+    build: () => AdWordsOperation[GmailImageAdBuilder[GmailImageAd]],
+    withAdvertiser: java.lang.String => GmailImageAdBuilder[GmailImageAd],
+    withCustomParameters: js.Object => GmailImageAdBuilder[GmailImageAd],
+    withDescription: java.lang.String => GmailImageAdBuilder[GmailImageAd],
+    withDisplayUrl: java.lang.String => GmailImageAdBuilder[GmailImageAd],
+    withFinalUrl: java.lang.String => GmailImageAdBuilder[GmailImageAd],
+    withImage: Media => GmailImageAdBuilder[GmailImageAd],
+    withLogo: Media => GmailImageAdBuilder[GmailImageAd],
+    withMobileFinalUrl: java.lang.String => GmailImageAdBuilder[GmailImageAd],
+    withName: java.lang.String => GmailImageAdBuilder[GmailImageAd],
+    withSubject: java.lang.String => GmailImageAdBuilder[GmailImageAd],
+    withTrackingTemplate: java.lang.String => GmailImageAdBuilder[GmailImageAd]
   ): GmailImageAdBuilder[GmailImageAd] = {
-    val __obj = js.Dynamic.literal(build = build, withAdvertiser = withAdvertiser, withCustomParameters = withCustomParameters, withDescription = withDescription, withDisplayUrl = withDisplayUrl, withFinalUrl = withFinalUrl, withImage = withImage, withLogo = withLogo, withMobileFinalUrl = withMobileFinalUrl, withName = withName, withSubject = withSubject, withTrackingTemplate = withTrackingTemplate)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), withAdvertiser = js.Any.fromFunction1(withAdvertiser), withCustomParameters = js.Any.fromFunction1(withCustomParameters), withDescription = js.Any.fromFunction1(withDescription), withDisplayUrl = js.Any.fromFunction1(withDisplayUrl), withFinalUrl = js.Any.fromFunction1(withFinalUrl), withImage = js.Any.fromFunction1(withImage), withLogo = js.Any.fromFunction1(withLogo), withMobileFinalUrl = js.Any.fromFunction1(withMobileFinalUrl), withName = js.Any.fromFunction1(withName), withSubject = js.Any.fromFunction1(withSubject), withTrackingTemplate = js.Any.fromFunction1(withTrackingTemplate))
   
     __obj.asInstanceOf[GmailImageAdBuilder[GmailImageAd]]
   }

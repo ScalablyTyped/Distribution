@@ -20,19 +20,19 @@ object UIEvent {
     defaultPrevented: scala.Boolean,
     detail: scala.Double,
     eventPhase: scala.Double,
-    isDefaultPrevented: js.Function0[scala.Boolean],
-    isPropagationStopped: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
+    isPropagationStopped: () => scala.Boolean,
     isTrusted: scala.Boolean,
     nativeEvent: reactLib.NativeUIEvent,
-    persist: js.Function0[scala.Unit],
-    preventDefault: js.Function0[scala.Unit],
-    stopPropagation: js.Function0[scala.Unit],
+    persist: () => scala.Unit,
+    preventDefault: () => scala.Unit,
+    stopPropagation: () => scala.Unit,
     target: reactLib.EventTarget,
     timeStamp: scala.Double,
     `type`: java.lang.String,
     view: AbstractView
   ): UIEvent[T] = {
-    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelable = cancelable, currentTarget = currentTarget, defaultPrevented = defaultPrevented, detail = detail, eventPhase = eventPhase, isDefaultPrevented = isDefaultPrevented, isPropagationStopped = isPropagationStopped, isTrusted = isTrusted, nativeEvent = nativeEvent, persist = persist, preventDefault = preventDefault, stopPropagation = stopPropagation, target = target, timeStamp = timeStamp, view = view)
+    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelable = cancelable, currentTarget = currentTarget, defaultPrevented = defaultPrevented, detail = detail, eventPhase = eventPhase, isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted, nativeEvent = nativeEvent, persist = js.Any.fromFunction0(persist), preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target, timeStamp = timeStamp, view = view)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[UIEvent[T]]
   }

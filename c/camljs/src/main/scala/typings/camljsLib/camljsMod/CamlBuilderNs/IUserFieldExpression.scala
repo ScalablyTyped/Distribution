@@ -29,17 +29,17 @@ trait IUserFieldExpression extends js.Object {
 object IUserFieldExpression {
   @scala.inline
   def apply(
-    EqualToCurrentUser: js.Function0[IExpression],
-    Id: js.Function0[INumberFieldExpression],
-    IsInCurrentUserGroups: js.Function0[IExpression],
-    IsInSPGroup: js.Function1[scala.Double, IExpression],
-    IsInSPWebAllUsers: js.Function0[IExpression],
-    IsInSPWebGroups: js.Function0[IExpression],
-    IsInSPWebUsers: js.Function0[IExpression],
+    EqualToCurrentUser: () => IExpression,
+    Id: () => INumberFieldExpression,
+    IsInCurrentUserGroups: () => IExpression,
+    IsInSPGroup: scala.Double => IExpression,
+    IsInSPWebAllUsers: () => IExpression,
+    IsInSPWebGroups: () => IExpression,
+    IsInSPWebUsers: () => IExpression,
     Membership: IMembership,
-    ValueAsText: js.Function0[ITextFieldExpression]
+    ValueAsText: () => ITextFieldExpression
   ): IUserFieldExpression = {
-    val __obj = js.Dynamic.literal(EqualToCurrentUser = EqualToCurrentUser, Id = Id, IsInCurrentUserGroups = IsInCurrentUserGroups, IsInSPGroup = IsInSPGroup, IsInSPWebAllUsers = IsInSPWebAllUsers, IsInSPWebGroups = IsInSPWebGroups, IsInSPWebUsers = IsInSPWebUsers, Membership = Membership, ValueAsText = ValueAsText)
+    val __obj = js.Dynamic.literal(EqualToCurrentUser = js.Any.fromFunction0(EqualToCurrentUser), Id = js.Any.fromFunction0(Id), IsInCurrentUserGroups = js.Any.fromFunction0(IsInCurrentUserGroups), IsInSPGroup = js.Any.fromFunction1(IsInSPGroup), IsInSPWebAllUsers = js.Any.fromFunction0(IsInSPWebAllUsers), IsInSPWebGroups = js.Any.fromFunction0(IsInSPWebGroups), IsInSPWebUsers = js.Any.fromFunction0(IsInSPWebUsers), Membership = Membership, ValueAsText = js.Any.fromFunction0(ValueAsText))
   
     __obj.asInstanceOf[IUserFieldExpression]
   }

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@google-cloud/common/build/src/util", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val util: atGoogleDashCloudCommonLib.buildSrcUtilMod.Util = js.native
+  val util: Util = js.native
 }
 

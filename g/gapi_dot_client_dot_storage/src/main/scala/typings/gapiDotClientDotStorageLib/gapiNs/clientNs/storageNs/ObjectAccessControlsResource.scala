@@ -23,32 +23,14 @@ trait ObjectAccessControlsResource extends js.Object {
 object ObjectAccessControlsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketEntity, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketEntity, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ObjectAccessControl]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketFieldsGeneration, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ObjectAccessControl]
-    ],
-    list: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketFieldsGeneration, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ObjectAccessControls]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketEntity, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ObjectAccessControl]
-    ],
-    update: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketEntity, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ObjectAccessControl]
-    ]
+    delete: gapiDotClientDotStorageLib.Anon_AltBucketEntity => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotStorageLib.Anon_AltBucketEntity => gapiDotClientLib.gapiNs.clientNs.Request[ObjectAccessControl],
+    insert: gapiDotClientDotStorageLib.Anon_AltBucketFieldsGeneration => gapiDotClientLib.gapiNs.clientNs.Request[ObjectAccessControl],
+    list: gapiDotClientDotStorageLib.Anon_AltBucketFieldsGeneration => gapiDotClientLib.gapiNs.clientNs.Request[ObjectAccessControls],
+    patch: gapiDotClientDotStorageLib.Anon_AltBucketEntity => gapiDotClientLib.gapiNs.clientNs.Request[ObjectAccessControl],
+    update: gapiDotClientDotStorageLib.Anon_AltBucketEntity => gapiDotClientLib.gapiNs.clientNs.Request[ObjectAccessControl]
   ): ObjectAccessControlsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[ObjectAccessControlsResource]
   }

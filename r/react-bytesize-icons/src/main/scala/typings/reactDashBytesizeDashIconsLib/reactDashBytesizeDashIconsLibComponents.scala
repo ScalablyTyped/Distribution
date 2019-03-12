@@ -1,0 +1,185 @@
+package typings
+package reactDashBytesizeDashIconsLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashBytesizeDashIconsLibComponents {
+  @scala.inline
+  def Activity: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Activity].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Alert: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Alert].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Archive: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Archive].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def ArrowBottom: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.ArrowBottom].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def ArrowLeft: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.ArrowLeft].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def ArrowRight: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.ArrowRight].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def ArrowTop: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.ArrowTop].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Backwards: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Backwards].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Ban: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Ban].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Bell: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Bell].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Book: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Book].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Bookmark: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Bookmark].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def BytesizeIconComponent: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconComponent].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Calendar: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Calendar].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Camera: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Camera].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def CaretBottom: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.CaretBottom].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def CaretLeft: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.CaretLeft].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def CaretRight: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.CaretRight].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def CaretTop: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.CaretTop].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Cart: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Cart].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Checkmark: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Checkmark].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def ChevronBottom: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.ChevronBottom].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def ChevronLeft: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.ChevronLeft].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def ChevronRight: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.ChevronRight].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def ChevronTop: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.ChevronTop].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Clock: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Clock].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Close: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Close].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Code: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Code].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Compose: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Compose].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Creditcard: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Creditcard].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Download: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Download].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Edit: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Edit].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Eject: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Eject].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def EllipsisHorizontal: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.EllipsisHorizontal].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def EllipsisVertical: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.EllipsisVertical].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def End: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.End].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Export: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Export].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def External: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.External].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Eye: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Eye].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def File: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.File].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Fire: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Fire].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Flag: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Flag].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Folder: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Folder].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def FolderOpen: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.FolderOpen].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Forwards: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Forwards].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Gift: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Gift].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Github: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Github].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Heart: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Heart].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Home: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Home].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Import: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Import].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Inbox: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Inbox].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Info: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Info].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Lightning: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Lightning].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Link: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Link].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Location: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Location].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Lock: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Lock].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Mail: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Mail].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Menu: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Menu].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Message: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Message].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Minus: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Minus].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Music: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Music].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Mute: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Mute].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Options: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Options].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Paperclip: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Paperclip].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Pause: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Pause].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Photo: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Photo].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Play: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Play].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Plus: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Plus].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Portfolio: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Portfolio].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Print: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Print].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Reload: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Reload].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Reply: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Reply].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Search: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Search].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Send: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Send].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Settings: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Settings].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Star: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Star].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Start: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Start].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Tag: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Tag].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Trash: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Trash].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Twitter: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Twitter].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Unlock: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Unlock].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Upload: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Upload].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def User: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.User].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Video: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Video].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Volume: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Volume].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def Work: reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps] = js.constructorOf[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.Work].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps]]
+  @scala.inline
+  def BytesizeIconsProps: reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps.type = reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps
+  type BytesizeIconsProps = reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.BytesizeIconsProps
+}
+

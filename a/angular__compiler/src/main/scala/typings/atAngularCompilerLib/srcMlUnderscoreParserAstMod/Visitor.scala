@@ -18,16 +18,16 @@ trait Visitor extends js.Object {
 object Visitor {
   @scala.inline
   def apply(
-    visitAttribute: js.Function2[Attribute, js.Any, js.Any],
-    visitComment: js.Function2[Comment, js.Any, js.Any],
-    visitElement: js.Function2[Element, js.Any, js.Any],
-    visitExpansion: js.Function2[Expansion, js.Any, js.Any],
-    visitExpansionCase: js.Function2[ExpansionCase, js.Any, js.Any],
-    visitText: js.Function2[Text, js.Any, js.Any],
-    visit: js.Function2[/* node */ Node, /* context */ js.Any, _] = null
+    visitAttribute: (Attribute, js.Any) => js.Any,
+    visitComment: (Comment, js.Any) => js.Any,
+    visitElement: (Element, js.Any) => js.Any,
+    visitExpansion: (Expansion, js.Any) => js.Any,
+    visitExpansionCase: (ExpansionCase, js.Any) => js.Any,
+    visitText: (Text, js.Any) => js.Any,
+    visit: (/* node */ Node, /* context */ js.Any) => _ = null
   ): Visitor = {
-    val __obj = js.Dynamic.literal(visitAttribute = visitAttribute, visitComment = visitComment, visitElement = visitElement, visitExpansion = visitExpansion, visitExpansionCase = visitExpansionCase, visitText = visitText)
-    if (visit != null) __obj.updateDynamic("visit")(visit)
+    val __obj = js.Dynamic.literal(visitAttribute = js.Any.fromFunction2(visitAttribute), visitComment = js.Any.fromFunction2(visitComment), visitElement = js.Any.fromFunction2(visitElement), visitExpansion = js.Any.fromFunction2(visitExpansion), visitExpansionCase = js.Any.fromFunction2(visitExpansionCase), visitText = js.Any.fromFunction2(visitText))
+    if (visit != null) __obj.updateDynamic("visit")(js.Any.fromFunction2(visit))
     __obj.asInstanceOf[Visitor]
   }
 }

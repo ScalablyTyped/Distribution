@@ -31,12 +31,12 @@ object syncDocOptions {
   def apply(
     context: js.Object,
     state: java.lang.String,
-    onFailure: js.Function0[scala.Unit] = null,
-    `then`: js.Function0[scala.Unit] = null
+    onFailure: () => scala.Unit = null,
+    `then`: () => scala.Unit = null
   ): syncDocOptions = {
     val __obj = js.Dynamic.literal(context = context, state = state)
-    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
-    if (`then` != null) __obj.updateDynamic("then")(`then`)
+    if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction0(onFailure))
+    if (`then` != null) __obj.updateDynamic("then")(js.Any.fromFunction0(`then`))
     __obj.asInstanceOf[syncDocOptions]
   }
 }

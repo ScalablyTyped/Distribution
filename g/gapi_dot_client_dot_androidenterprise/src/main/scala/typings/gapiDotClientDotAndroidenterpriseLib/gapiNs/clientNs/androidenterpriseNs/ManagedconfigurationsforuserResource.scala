@@ -29,28 +29,13 @@ trait ManagedconfigurationsforuserResource extends js.Object {
 object ManagedconfigurationsforuserResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyManagedConfigurationForUserId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyManagedConfigurationForUserId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfigurationsForUserListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyManagedConfigurationForUserId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyManagedConfigurationForUserId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration]
-    ]
+    delete: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyManagedConfigurationForUserId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyManagedConfigurationForUserId => gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration],
+    list: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseId => gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfigurationsForUserListResponse],
+    patch: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyManagedConfigurationForUserId => gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration],
+    update: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyManagedConfigurationForUserId => gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration]
   ): ManagedconfigurationsforuserResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[ManagedconfigurationsforuserResource]
   }

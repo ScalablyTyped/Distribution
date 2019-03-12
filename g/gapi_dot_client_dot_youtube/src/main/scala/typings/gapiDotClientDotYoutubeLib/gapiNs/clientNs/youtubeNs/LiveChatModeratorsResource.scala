@@ -17,20 +17,11 @@ trait LiveChatModeratorsResource extends js.Object {
 object LiveChatModeratorsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LiveChatModerator]
-    ],
-    list: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyLiveChatId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LiveChatModeratorListResponse]
-    ]
+    delete: gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    insert: gapiDotClientDotYoutubeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[LiveChatModerator],
+    list: gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyLiveChatId => gapiDotClientLib.gapiNs.clientNs.Request[LiveChatModeratorListResponse]
   ): LiveChatModeratorsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[LiveChatModeratorsResource]
   }

@@ -12,7 +12,7 @@ object CloudHSMV2Ns extends js.Object {
     /**
       * The identifier (ID) of the backup.
       */
-    var BackupId: BackupId
+    var BackupId: awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns.BackupId
     /**
       * The state of the backup.
       */
@@ -124,7 +124,7 @@ object CloudHSMV2Ns extends js.Object {
     /**
       * The ID of the backup that will be copied to the destination region. 
       */
-    var BackupId: BackupId
+    var BackupId: awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns.BackupId
     /**
       * The AWS region that will contain your copied CloudHSM cluster backup.
       */
@@ -142,7 +142,7 @@ object CloudHSMV2Ns extends js.Object {
     /**
       * The type of HSM to use in the cluster. Currently the only allowed value is hsm1.medium.
       */
-    var HsmType: HsmType
+    var HsmType: awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns.HsmType
     /**
       * The identifier (ID) of the cluster backup to restore. Use this value to restore the cluster from a backup instead of creating a new cluster. To find the backup ID, use DescribeBackups.
       */
@@ -150,7 +150,7 @@ object CloudHSMV2Ns extends js.Object {
     /**
       * The identifiers (IDs) of the subnets where you are creating the cluster. You must specify at least one subnet. If you specify multiple subnets, they must meet the following criteria:   All subnets must be in the same virtual private cloud (VPC).   You can specify only one subnet per Availability Zone.  
       */
-    var SubnetIds: SubnetIds
+    var SubnetIds: awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns.SubnetIds
   }
   
   trait CreateClusterResponse extends js.Object {
@@ -168,7 +168,7 @@ object CloudHSMV2Ns extends js.Object {
     /**
       * The identifier (ID) of the HSM's cluster. To find the cluster ID, use DescribeClusters.
       */
-    var ClusterId: ClusterId
+    var ClusterId: awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns.ClusterId
     /**
       * The HSM's IP address. If you specify an IP address, use an available address from the subnet that maps to the Availability Zone where you are creating the HSM. If you don't specify an IP address, one is chosen for you from that subnet.
       */
@@ -186,7 +186,7 @@ object CloudHSMV2Ns extends js.Object {
     /**
       * The ID of the backup to be deleted. To find the ID of a backup, use the DescribeBackups operation.
       */
-    var BackupId: BackupId
+    var BackupId: awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns.BackupId
   }
   
   trait DeleteBackupResponse extends js.Object {
@@ -200,7 +200,7 @@ object CloudHSMV2Ns extends js.Object {
     /**
       * The identifier (ID) of the cluster that you are deleting. To find the cluster ID, use DescribeClusters.
       */
-    var ClusterId: ClusterId
+    var ClusterId: awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns.ClusterId
   }
   
   trait DeleteClusterResponse extends js.Object {
@@ -214,7 +214,7 @@ object CloudHSMV2Ns extends js.Object {
     /**
       * The identifier (ID) of the cluster that contains the HSM that you are deleting.
       */
-    var ClusterId: ClusterId
+    var ClusterId: awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns.ClusterId
     /**
       * The identifier (ID) of the elastic network interface (ENI) of the HSM that you are deleting.
       */
@@ -322,7 +322,7 @@ object CloudHSMV2Ns extends js.Object {
     /**
       * The HSM's identifier (ID).
       */
-    var HsmId: HsmId
+    var HsmId: awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns.HsmId
     /**
       * The HSM's state.
       */
@@ -341,7 +341,7 @@ object CloudHSMV2Ns extends js.Object {
     /**
       * The identifier (ID) of the cluster that you are claiming. To find the cluster ID, use DescribeClusters.
       */
-    var ClusterId: ClusterId
+    var ClusterId: awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns.ClusterId
     /**
       * The cluster certificate issued (signed) by your issuing certificate authority (CA). The certificate must be in PEM format and can contain a maximum of 5000 characters.
       */
@@ -386,14 +386,14 @@ object CloudHSMV2Ns extends js.Object {
     /**
       * A list of tags.
       */
-    var TagList: TagList
+    var TagList: awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns.TagList
   }
   
   trait RestoreBackupRequest extends js.Object {
     /**
       * The ID of the backup to be restored. To find the ID of a backup, use the DescribeBackups operation.
       */
-    var BackupId: BackupId
+    var BackupId: awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns.BackupId
   }
   
   trait RestoreBackupResponse extends js.Object {
@@ -422,7 +422,7 @@ object CloudHSMV2Ns extends js.Object {
     /**
       * A list of one or more tags.
       */
-    var TagList: TagList
+    var TagList: awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns.TagList
   }
   
   trait TagResourceResponse extends js.Object
@@ -741,7 +741,7 @@ object CloudHSMV2Ns extends js.Object {
     /**
       * A list of one or more tag keys for the tags that you are removing. Specify only the tag keys, not the tag values.
       */
-    var TagKeyList: TagKeyList
+    var TagKeyList: awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns.TagKeyList
   }
   
   trait UntagResourceResponse extends js.Object

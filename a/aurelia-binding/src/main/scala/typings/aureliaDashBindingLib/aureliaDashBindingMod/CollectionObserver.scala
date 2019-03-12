@@ -15,12 +15,9 @@ trait CollectionObserver extends js.Object {
 object CollectionObserver {
   @scala.inline
   def apply(
-    subscribe: js.Function1[
-      js.Function1[/* changeRecords */ js.Array[ICollectionObserverSplice[_, _]], scala.Unit], 
-      Disposable
-    ]
+    subscribe: js.Function1[/* changeRecords */ js.Array[ICollectionObserverSplice[_, _]], scala.Unit] => Disposable
   ): CollectionObserver = {
-    val __obj = js.Dynamic.literal(subscribe = subscribe)
+    val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
   
     __obj.asInstanceOf[CollectionObserver]
   }

@@ -12,12 +12,12 @@ trait LayoutInitEvent extends LayoutEvent {
 object LayoutInitEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Layout,
     layout: kendoDashUiLib.JQuery = null
   ): LayoutInitEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (layout != null) __obj.updateDynamic("layout")(layout)
     __obj.asInstanceOf[LayoutInitEvent]
   }

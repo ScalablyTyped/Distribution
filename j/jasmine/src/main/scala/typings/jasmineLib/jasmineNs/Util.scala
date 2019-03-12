@@ -16,13 +16,13 @@ trait Util extends js.Object {
 object Util {
   @scala.inline
   def apply(
-    argsToArray: js.Function1[js.Any, js.Any],
-    extend: js.Function2[js.Any, js.Any, js.Any],
-    formatException: js.Function1[js.Any, js.Any],
-    htmlEscape: js.Function1[java.lang.String, java.lang.String],
-    inherit: js.Function2[js.Function, js.Function, js.Any]
+    argsToArray: js.Any => js.Any,
+    extend: (js.Any, js.Any) => js.Any,
+    formatException: js.Any => js.Any,
+    htmlEscape: java.lang.String => java.lang.String,
+    inherit: (js.Function, js.Function) => js.Any
   ): Util = {
-    val __obj = js.Dynamic.literal(argsToArray = argsToArray, extend = extend, formatException = formatException, htmlEscape = htmlEscape, inherit = inherit)
+    val __obj = js.Dynamic.literal(argsToArray = js.Any.fromFunction1(argsToArray), extend = js.Any.fromFunction2(extend), formatException = js.Any.fromFunction1(formatException), htmlEscape = js.Any.fromFunction1(htmlEscape), inherit = js.Any.fromFunction2(inherit))
   
     __obj.asInstanceOf[Util]
   }

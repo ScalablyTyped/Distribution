@@ -49,7 +49,7 @@ trait XIntrospectionAccess
     * will be one of the elements in the returned sequence.
     * @returns a sequence of the types of listener interfaces which are supported by the introspected object.
     */
-  val SupportedListeners: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`]
+  val SupportedListeners: stdLib.SafeArray[activexDashLibreofficeLib.`type`]
   /**
     * returns information about a method if a method with the demanded name exists and if it accords to one of the demanded MethodConcepts. The information
     * is provided as {@link com.sun.star.reflection.XIdlMethod} .
@@ -64,13 +64,13 @@ trait XIntrospectionAccess
     * @param nMethodConcepts zero or more constants of the {@link MethodConcept} constants group combined by an arithmetical or-operation.
     * @returns all methods of the introspected object which accord to the demanded MethodConcepts.
     */
-  def getMethods(nMethodConcepts: scala.Double): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.reflectionNs.XIdlMethod]
+  def getMethods(nMethodConcepts: scala.Double): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.reflectionNs.XIdlMethod]
   /**
     * returns a sequence of properties of the introspected object
     * @param nPropertyConcepts zero or more constants of the {@link PropertyConcept} constants group combined by an arithmetical or-operation.
     * @returns all properties of the introspected object which accord to the demanded PropertyConcepts.
     */
-  def getProperties(nPropertyConcepts: scala.Double): activexDashInteropLib.SafeArray[Property]
+  def getProperties(nPropertyConcepts: scala.Double): stdLib.SafeArray[Property]
   /**
     * returns information about a property if a property with the demanded name exists and if it accords to one of the demanded PropertyConcepts. The
     * information is provided as {@link Property} struct.
@@ -108,7 +108,7 @@ trait XIntrospectionAccess
     * will be one of the elements in the returned sequence.
     * @returns a sequence of the types of listener interfaces which are supported by the introspected object.
     */
-  def getSupportedListeners(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`]
+  def getSupportedListeners(): stdLib.SafeArray[activexDashLibreofficeLib.`type`]
   /**
     * allows to ask if a method with the demanded name exists and if it accords to one of the demanded {@link MethodConcept} .
     * @param aName the name of the method.
@@ -152,32 +152,22 @@ object XIntrospectionAccess {
   def apply(
     SuppliedMethodConcepts: scala.Double,
     SuppliedPropertyConcepts: scala.Double,
-    SupportedListeners: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`],
-    acquire: js.Function0[scala.Unit],
-    getMethod: js.Function2[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.reflectionNs.XIdlMethod
-    ],
-    getMethods: js.Function1[
-      scala.Double, 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.reflectionNs.XIdlMethod]
-    ],
-    getProperties: js.Function1[scala.Double, activexDashInteropLib.SafeArray[Property]],
-    getProperty: js.Function2[java.lang.String, scala.Double, Property],
-    getSuppliedMethodConcepts: js.Function0[scala.Double],
-    getSuppliedPropertyConcepts: js.Function0[scala.Double],
-    getSupportedListeners: js.Function0[activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`]],
-    hasMethod: js.Function2[java.lang.String, scala.Double, scala.Boolean],
-    hasProperty: js.Function2[java.lang.String, scala.Double, scala.Boolean],
-    queryAdapter: js.Function1[
-      activexDashLibreofficeLib.`type`, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    SupportedListeners: stdLib.SafeArray[activexDashLibreofficeLib.`type`],
+    acquire: () => scala.Unit,
+    getMethod: (java.lang.String, scala.Double) => activexDashLibreofficeLib.comNs.sunNs.starNs.reflectionNs.XIdlMethod,
+    getMethods: scala.Double => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.reflectionNs.XIdlMethod],
+    getProperties: scala.Double => stdLib.SafeArray[Property],
+    getProperty: (java.lang.String, scala.Double) => Property,
+    getSuppliedMethodConcepts: () => scala.Double,
+    getSuppliedPropertyConcepts: () => scala.Double,
+    getSupportedListeners: () => stdLib.SafeArray[activexDashLibreofficeLib.`type`],
+    hasMethod: (java.lang.String, scala.Double) => scala.Boolean,
+    hasProperty: (java.lang.String, scala.Double) => scala.Boolean,
+    queryAdapter: activexDashLibreofficeLib.`type` => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XIntrospectionAccess = {
-    val __obj = js.Dynamic.literal(SuppliedMethodConcepts = SuppliedMethodConcepts, SuppliedPropertyConcepts = SuppliedPropertyConcepts, SupportedListeners = SupportedListeners, acquire = acquire, getMethod = getMethod, getMethods = getMethods, getProperties = getProperties, getProperty = getProperty, getSuppliedMethodConcepts = getSuppliedMethodConcepts, getSuppliedPropertyConcepts = getSuppliedPropertyConcepts, getSupportedListeners = getSupportedListeners, hasMethod = hasMethod, hasProperty = hasProperty, queryAdapter = queryAdapter, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(SuppliedMethodConcepts = SuppliedMethodConcepts, SuppliedPropertyConcepts = SuppliedPropertyConcepts, SupportedListeners = SupportedListeners, acquire = js.Any.fromFunction0(acquire), getMethod = js.Any.fromFunction2(getMethod), getMethods = js.Any.fromFunction1(getMethods), getProperties = js.Any.fromFunction1(getProperties), getProperty = js.Any.fromFunction2(getProperty), getSuppliedMethodConcepts = js.Any.fromFunction0(getSuppliedMethodConcepts), getSuppliedPropertyConcepts = js.Any.fromFunction0(getSuppliedPropertyConcepts), getSupportedListeners = js.Any.fromFunction0(getSupportedListeners), hasMethod = js.Any.fromFunction2(hasMethod), hasProperty = js.Any.fromFunction2(hasProperty), queryAdapter = js.Any.fromFunction1(queryAdapter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XIntrospectionAccess]
   }

@@ -21,28 +21,13 @@ trait QueriesResource extends js.Object {
 object QueriesResource {
   @scala.inline
   def apply(
-    createquery: js.Function1[
-      gapiDotClientDotDoubleclickbidmanagerLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Query]
-    ],
-    deletequery: js.Function1[
-      gapiDotClientDotDoubleclickbidmanagerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    getquery: js.Function1[
-      gapiDotClientDotDoubleclickbidmanagerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Query]
-    ],
-    listqueries: js.Function1[
-      gapiDotClientDotDoubleclickbidmanagerLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListQueriesResponse]
-    ],
-    runquery: js.Function1[
-      gapiDotClientDotDoubleclickbidmanagerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ]
+    createquery: gapiDotClientDotDoubleclickbidmanagerLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Query],
+    deletequery: gapiDotClientDotDoubleclickbidmanagerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    getquery: gapiDotClientDotDoubleclickbidmanagerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Query],
+    listqueries: gapiDotClientDotDoubleclickbidmanagerLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ListQueriesResponse],
+    runquery: gapiDotClientDotDoubleclickbidmanagerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   ): QueriesResource = {
-    val __obj = js.Dynamic.literal(createquery = createquery, deletequery = deletequery, getquery = getquery, listqueries = listqueries, runquery = runquery)
+    val __obj = js.Dynamic.literal(createquery = js.Any.fromFunction1(createquery), deletequery = js.Any.fromFunction1(deletequery), getquery = js.Any.fromFunction1(getquery), listqueries = js.Any.fromFunction1(listqueries), runquery = js.Any.fromFunction1(runquery))
   
     __obj.asInstanceOf[QueriesResource]
   }

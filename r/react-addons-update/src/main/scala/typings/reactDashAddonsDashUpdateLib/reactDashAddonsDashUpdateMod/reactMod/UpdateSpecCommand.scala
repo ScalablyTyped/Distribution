@@ -16,9 +16,9 @@ trait UpdateSpecCommand extends _UpdateSpec {
 
 object UpdateSpecCommand {
   @scala.inline
-  def apply($apply: js.Function1[/* value */ js.Any, _] = null, $merge: js.Object = null, $set: js.Any = null): UpdateSpecCommand = {
+  def apply($apply: /* value */ js.Any => _ = null, $merge: js.Object = null, $set: js.Any = null): UpdateSpecCommand = {
     val __obj = js.Dynamic.literal()
-    if ($apply != null) __obj.updateDynamic("$apply")($apply)
+    if ($apply != null) __obj.updateDynamic("$apply")(js.Any.fromFunction1($apply))
     if ($merge != null) __obj.updateDynamic("$merge")($merge)
     if ($set != null) __obj.updateDynamic("$set")($set)
     __obj.asInstanceOf[UpdateSpecCommand]

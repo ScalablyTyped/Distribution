@@ -37,12 +37,9 @@ trait opacity extends js.Object {
 object opacity {
   @scala.inline
   def apply(
-    createVisualVariable: js.Function1[
-      opacityCreateVisualVariableParams, 
-      arcgisDashJsDashApiLib.IPromise[opacityVisualVariableResult]
-    ]
+    createVisualVariable: opacityCreateVisualVariableParams => arcgisDashJsDashApiLib.IPromise[opacityVisualVariableResult]
   ): opacity = {
-    val __obj = js.Dynamic.literal(createVisualVariable = createVisualVariable)
+    val __obj = js.Dynamic.literal(createVisualVariable = js.Any.fromFunction1(createVisualVariable))
   
     __obj.asInstanceOf[opacity]
   }

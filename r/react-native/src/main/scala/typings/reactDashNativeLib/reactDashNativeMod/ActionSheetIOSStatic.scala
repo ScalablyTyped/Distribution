@@ -40,19 +40,10 @@ trait ActionSheetIOSStatic extends js.Object {
 object ActionSheetIOSStatic {
   @scala.inline
   def apply(
-    showActionSheetWithOptions: js.Function2[
-      ActionSheetIOSOptions, 
-      js.Function1[/* buttonIndex */ scala.Double, scala.Unit], 
-      scala.Unit
-    ],
-    showShareActionSheetWithOptions: js.Function3[
-      ShareActionSheetIOSOptions, 
-      js.Function1[/* error */ stdLib.Error, scala.Unit], 
-      js.Function2[/* success */ scala.Boolean, /* method */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ]
+    showActionSheetWithOptions: (ActionSheetIOSOptions, js.Function1[/* buttonIndex */ scala.Double, scala.Unit]) => scala.Unit,
+    showShareActionSheetWithOptions: (ShareActionSheetIOSOptions, js.Function1[/* error */ stdLib.Error, scala.Unit], js.Function2[/* success */ scala.Boolean, /* method */ java.lang.String, scala.Unit]) => scala.Unit
   ): ActionSheetIOSStatic = {
-    val __obj = js.Dynamic.literal(showActionSheetWithOptions = showActionSheetWithOptions, showShareActionSheetWithOptions = showShareActionSheetWithOptions)
+    val __obj = js.Dynamic.literal(showActionSheetWithOptions = js.Any.fromFunction2(showActionSheetWithOptions), showShareActionSheetWithOptions = js.Any.fromFunction3(showShareActionSheetWithOptions))
   
     __obj.asInstanceOf[ActionSheetIOSStatic]
   }

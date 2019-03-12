@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(actual: js.Any, expected: js.Any): scala.Boolean = js.native
-  def apply(actual: js.Any, expected: js.Any, opts: deepDashEqualLib.deepDashEqualMod.DeepEqualOptions): scala.Boolean = js.native
+  def apply(actual: js.Any, expected: js.Any, opts: DeepEqualOptions): scala.Boolean = js.native
 }
 

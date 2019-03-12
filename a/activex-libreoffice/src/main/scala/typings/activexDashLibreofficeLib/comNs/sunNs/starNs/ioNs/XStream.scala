@@ -23,13 +23,13 @@ object XStream {
   def apply(
     InputStream: XInputStream,
     OutputStream: XOutputStream,
-    acquire: js.Function0[scala.Unit],
-    getInputStream: js.Function0[XInputStream],
-    getOutputStream: js.Function0[XOutputStream],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getInputStream: () => XInputStream,
+    getOutputStream: () => XOutputStream,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XStream = {
-    val __obj = js.Dynamic.literal(InputStream = InputStream, OutputStream = OutputStream, acquire = acquire, getInputStream = getInputStream, getOutputStream = getOutputStream, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(InputStream = InputStream, OutputStream = OutputStream, acquire = js.Any.fromFunction0(acquire), getInputStream = js.Any.fromFunction0(getInputStream), getOutputStream = js.Any.fromFunction0(getOutputStream), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XStream]
   }

@@ -11,8 +11,8 @@ class Document protected () extends js.Object {
   val AllPermissions: scala.Double = js.native
   val Container: java.lang.String = js.native
   var `DAO.Document_typekey`: Document = js.native
-  val DateCreated: activexDashInteropLib.VarDate = js.native
-  val LastUpdated: activexDashInteropLib.VarDate = js.native
+  val DateCreated: stdLib.VarDate = js.native
+  val LastUpdated: stdLib.VarDate = js.native
   val Name: java.lang.String = js.native
   var Owner: java.lang.String = js.native
   var Permissions: scala.Double = js.native

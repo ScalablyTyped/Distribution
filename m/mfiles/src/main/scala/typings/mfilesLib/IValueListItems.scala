@@ -12,8 +12,8 @@ trait IValueListItems extends js.Object {
 
 object IValueListItems {
   @scala.inline
-  def apply(Count: scala.Double, Item: js.Function1[scala.Double, IValueListItem]): IValueListItems = {
-    val __obj = js.Dynamic.literal(Count = Count, Item = Item)
+  def apply(Count: scala.Double, Item: scala.Double => IValueListItem): IValueListItems = {
+    val __obj = js.Dynamic.literal(Count = Count, Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[IValueListItems]
   }

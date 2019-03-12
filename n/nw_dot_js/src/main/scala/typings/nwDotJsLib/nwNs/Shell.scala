@@ -33,11 +33,11 @@ trait Shell extends js.Object {
 object Shell {
   @scala.inline
   def apply(
-    openExternal: js.Function1[java.lang.String, scala.Unit],
-    openItem: js.Function1[java.lang.String, scala.Unit],
-    showItemInFolder: js.Function1[java.lang.String, scala.Unit]
+    openExternal: java.lang.String => scala.Unit,
+    openItem: java.lang.String => scala.Unit,
+    showItemInFolder: java.lang.String => scala.Unit
   ): Shell = {
-    val __obj = js.Dynamic.literal(openExternal = openExternal, openItem = openItem, showItemInFolder = showItemInFolder)
+    val __obj = js.Dynamic.literal(openExternal = js.Any.fromFunction1(openExternal), openItem = js.Any.fromFunction1(openItem), showItemInFolder = js.Any.fromFunction1(showItemInFolder))
   
     __obj.asInstanceOf[Shell]
   }

@@ -75,38 +75,26 @@ trait IDragDropElement extends js.Object {
 object IDragDropElement {
   @scala.inline
   def apply(
-    getPosX: js.Function1[/* el */ js.UndefOr[stdLib.HTMLElement], scala.Double] = null,
-    getPosY: js.Function1[/* el */ js.UndefOr[stdLib.HTMLElement], scala.Double] = null,
-    getScrollLeft: js.Function0[scala.Double] = null,
-    getScrollTop: js.Function0[scala.Double] = null,
-    getStyle: js.Function2[
-      /* el */ js.UndefOr[stdLib.HTMLElement], 
-      /* styleProp */ js.UndefOr[java.lang.String], 
-      java.lang.String
-    ] = null,
-    handleWasClicked: js.Function1[/* node */ js.UndefOr[stdLib.HTMLElement], scala.Unit] = null,
-    moveToEl: js.Function2[
-      /* moveEl */ js.UndefOr[stdLib.HTMLElement], 
-      /* targetEl */ js.UndefOr[stdLib.HTMLElement], 
-      scala.Unit
-    ] = null,
-    numericSort: js.Function2[/* a */ js.UndefOr[scala.Double], /* b */ js.UndefOr[scala.Double], scala.Double] = null,
-    swapNode: js.Function2[
-      /* n1 */ js.UndefOr[stdLib.HTMLElement], 
-      /* n2 */ js.UndefOr[stdLib.HTMLElement], 
-      scala.Unit
-    ] = null
+    getPosX: /* el */ js.UndefOr[stdLib.HTMLElement] => scala.Double = null,
+    getPosY: /* el */ js.UndefOr[stdLib.HTMLElement] => scala.Double = null,
+    getScrollLeft: () => scala.Double = null,
+    getScrollTop: () => scala.Double = null,
+    getStyle: (/* el */ js.UndefOr[stdLib.HTMLElement], /* styleProp */ js.UndefOr[java.lang.String]) => java.lang.String = null,
+    handleWasClicked: /* node */ js.UndefOr[stdLib.HTMLElement] => scala.Unit = null,
+    moveToEl: (/* moveEl */ js.UndefOr[stdLib.HTMLElement], /* targetEl */ js.UndefOr[stdLib.HTMLElement]) => scala.Unit = null,
+    numericSort: (/* a */ js.UndefOr[scala.Double], /* b */ js.UndefOr[scala.Double]) => scala.Double = null,
+    swapNode: (/* n1 */ js.UndefOr[stdLib.HTMLElement], /* n2 */ js.UndefOr[stdLib.HTMLElement]) => scala.Unit = null
   ): IDragDropElement = {
     val __obj = js.Dynamic.literal()
-    if (getPosX != null) __obj.updateDynamic("getPosX")(getPosX)
-    if (getPosY != null) __obj.updateDynamic("getPosY")(getPosY)
-    if (getScrollLeft != null) __obj.updateDynamic("getScrollLeft")(getScrollLeft)
-    if (getScrollTop != null) __obj.updateDynamic("getScrollTop")(getScrollTop)
-    if (getStyle != null) __obj.updateDynamic("getStyle")(getStyle)
-    if (handleWasClicked != null) __obj.updateDynamic("handleWasClicked")(handleWasClicked)
-    if (moveToEl != null) __obj.updateDynamic("moveToEl")(moveToEl)
-    if (numericSort != null) __obj.updateDynamic("numericSort")(numericSort)
-    if (swapNode != null) __obj.updateDynamic("swapNode")(swapNode)
+    if (getPosX != null) __obj.updateDynamic("getPosX")(js.Any.fromFunction1(getPosX))
+    if (getPosY != null) __obj.updateDynamic("getPosY")(js.Any.fromFunction1(getPosY))
+    if (getScrollLeft != null) __obj.updateDynamic("getScrollLeft")(js.Any.fromFunction0(getScrollLeft))
+    if (getScrollTop != null) __obj.updateDynamic("getScrollTop")(js.Any.fromFunction0(getScrollTop))
+    if (getStyle != null) __obj.updateDynamic("getStyle")(js.Any.fromFunction2(getStyle))
+    if (handleWasClicked != null) __obj.updateDynamic("handleWasClicked")(js.Any.fromFunction1(handleWasClicked))
+    if (moveToEl != null) __obj.updateDynamic("moveToEl")(js.Any.fromFunction2(moveToEl))
+    if (numericSort != null) __obj.updateDynamic("numericSort")(js.Any.fromFunction2(numericSort))
+    if (swapNode != null) __obj.updateDynamic("swapNode")(js.Any.fromFunction2(swapNode))
     __obj.asInstanceOf[IDragDropElement]
   }
 }

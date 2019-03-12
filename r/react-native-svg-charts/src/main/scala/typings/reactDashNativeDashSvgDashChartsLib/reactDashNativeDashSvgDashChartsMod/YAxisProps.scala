@@ -17,7 +17,7 @@ object YAxisProps {
   def apply[T](
     data: js.Array[T],
     contentInset: reactDashNativeDashSvgDashChartsLib.Anon_BottomTop = null,
-    formatLabel: js.Function2[/* value */ js.Any, /* index */ scala.Double, scala.Double | java.lang.String] = null,
+    formatLabel: (/* value */ js.Any, /* index */ scala.Double) => scala.Double | java.lang.String = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
     numberOfTicks: scala.Int | scala.Double = null,
@@ -30,7 +30,7 @@ object YAxisProps {
   ): YAxisProps[T] = {
     val __obj = js.Dynamic.literal(data = data)
     if (contentInset != null) __obj.updateDynamic("contentInset")(contentInset)
-    if (formatLabel != null) __obj.updateDynamic("formatLabel")(formatLabel)
+    if (formatLabel != null) __obj.updateDynamic("formatLabel")(js.Any.fromFunction2(formatLabel))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (numberOfTicks != null) __obj.updateDynamic("numberOfTicks")(numberOfTicks.asInstanceOf[js.Any])

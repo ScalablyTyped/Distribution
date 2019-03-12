@@ -37,32 +37,12 @@ trait ITransportation extends js.Object {
 object ITransportation {
   @scala.inline
   def apply(
-    request: js.Function3[
-      IRequestOptions, 
-      IResponseCallback[js.Any], 
-      mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback, 
-      scala.Unit
-    ],
-    requestFileDownload: js.Function3[
-      IRequestFileDownloadOptions, 
-      mendixmodelsdkLib.distCommonMod.commonNs.ICallback[js.Any], 
-      mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback, 
-      scala.Unit
-    ],
-    requestMultipartBinaryFileUpload: js.Function3[
-      IRequestMultipartBinaryFileUploadOptions, 
-      mendixmodelsdkLib.distCommonMod.commonNs.ICallback[js.Any], 
-      mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback, 
-      scala.Unit
-    ],
-    retryableRequest: js.Function3[
-      IRequestOptions, 
-      IResponseCallback[js.Any], 
-      mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback, 
-      scala.Unit
-    ]
+    request: (IRequestOptions, IResponseCallback[js.Any], mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback) => scala.Unit,
+    requestFileDownload: (IRequestFileDownloadOptions, mendixmodelsdkLib.distCommonMod.commonNs.ICallback[js.Any], mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback) => scala.Unit,
+    requestMultipartBinaryFileUpload: (IRequestMultipartBinaryFileUploadOptions, mendixmodelsdkLib.distCommonMod.commonNs.ICallback[js.Any], mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback) => scala.Unit,
+    retryableRequest: (IRequestOptions, IResponseCallback[js.Any], mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback) => scala.Unit
   ): ITransportation = {
-    val __obj = js.Dynamic.literal(request = request, requestFileDownload = requestFileDownload, requestMultipartBinaryFileUpload = requestMultipartBinaryFileUpload, retryableRequest = retryableRequest)
+    val __obj = js.Dynamic.literal(request = js.Any.fromFunction3(request), requestFileDownload = js.Any.fromFunction3(requestFileDownload), requestMultipartBinaryFileUpload = js.Any.fromFunction3(requestMultipartBinaryFileUpload), retryableRequest = js.Any.fromFunction3(retryableRequest))
   
     __obj.asInstanceOf[ITransportation]
   }

@@ -11,9 +11,9 @@ trait TwixStatic extends js.Object {
 
 object TwixStatic {
   @scala.inline
-  def apply(formatTemplate: js.Function2[/* left */ js.Any, /* right */ js.Any, _] = null): TwixStatic = {
+  def apply(formatTemplate: (/* left */ js.Any, /* right */ js.Any) => _ = null): TwixStatic = {
     val __obj = js.Dynamic.literal()
-    if (formatTemplate != null) __obj.updateDynamic("formatTemplate")(formatTemplate)
+    if (formatTemplate != null) __obj.updateDynamic("formatTemplate")(js.Any.fromFunction2(formatTemplate))
     __obj.asInstanceOf[TwixStatic]
   }
 }

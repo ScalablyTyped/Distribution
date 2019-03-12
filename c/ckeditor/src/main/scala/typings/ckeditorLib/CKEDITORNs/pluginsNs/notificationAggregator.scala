@@ -12,7 +12,7 @@ class notificationAggregator protected ()
   def this(editor: ckeditorLib.CKEDITORNs.editor, message: java.lang.String) = this()
   def this(editor: ckeditorLib.CKEDITORNs.editor, message: java.lang.String, singularMessage: java.lang.String) = this()
   val editor: ckeditorLib.CKEDITORNs.editor = js.native
-  val notification: notification = js.native
+  val notification: ckeditorLib.CKEDITORNs.pluginsNs.notification = js.native
   def createTask(): ckeditorLib.CKEDITORNs.pluginsNs.notificationAggregatorNs.task = js.native
   def createTask(options: ckeditorLib.Anon_Weight): ckeditorLib.CKEDITORNs.pluginsNs.notificationAggregatorNs.task = js.native
   def getDoneTaskCount(): scala.Double = js.native

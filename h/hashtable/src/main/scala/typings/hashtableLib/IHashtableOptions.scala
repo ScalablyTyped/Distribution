@@ -16,13 +16,13 @@ trait IHashtableOptions[TKey] extends js.Object {
 object IHashtableOptions {
   @scala.inline
   def apply[TKey](
-    equals: js.Function2[/* key1 */ TKey, /* key2 */ TKey, scala.Boolean] = null,
-    hashCode: js.Function1[/* key */ TKey, _] = null,
+    equals: (/* key1 */ TKey, /* key2 */ TKey) => scala.Boolean = null,
+    hashCode: /* key */ TKey => _ = null,
     replaceDuplicateKey: js.UndefOr[scala.Boolean] = js.undefined
   ): IHashtableOptions[TKey] = {
     val __obj = js.Dynamic.literal()
-    if (equals != null) __obj.updateDynamic("equals")(equals)
-    if (hashCode != null) __obj.updateDynamic("hashCode")(hashCode)
+    if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction2(equals))
+    if (hashCode != null) __obj.updateDynamic("hashCode")(js.Any.fromFunction1(hashCode))
     if (!js.isUndefined(replaceDuplicateKey)) __obj.updateDynamic("replaceDuplicateKey")(replaceDuplicateKey)
     __obj.asInstanceOf[IHashtableOptions[TKey]]
   }

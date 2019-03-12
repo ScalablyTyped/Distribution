@@ -16,12 +16,12 @@ trait Actions extends js.Object {
 object Actions {
   @scala.inline
   def apply(
-    addNotification: js.Function1[Notification, Notification],
-    removeNotification: js.Function1[Notification, reapopLib.Anon_Payload],
-    removeNotifications: js.Function0[reapopLib.Anon_Type],
-    updateNotification: js.Function1[Notification, Notification]
+    addNotification: Notification => Notification,
+    removeNotification: Notification => reapopLib.Anon_Payload,
+    removeNotifications: () => reapopLib.Anon_Type,
+    updateNotification: Notification => Notification
   ): Actions = {
-    val __obj = js.Dynamic.literal(addNotification = addNotification, removeNotification = removeNotification, removeNotifications = removeNotifications, updateNotification = updateNotification)
+    val __obj = js.Dynamic.literal(addNotification = js.Any.fromFunction1(addNotification), removeNotification = js.Any.fromFunction1(removeNotification), removeNotifications = js.Any.fromFunction0(removeNotifications), updateNotification = js.Any.fromFunction1(updateNotification))
   
     __obj.asInstanceOf[Actions]
   }

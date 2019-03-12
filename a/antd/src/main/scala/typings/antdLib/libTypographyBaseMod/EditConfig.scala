@@ -15,13 +15,13 @@ object EditConfig {
   @scala.inline
   def apply(
     editing: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function1[/* value */ java.lang.String, scala.Unit] = null,
-    onStart: js.Function0[scala.Unit] = null
+    onChange: /* value */ java.lang.String => scala.Unit = null,
+    onStart: () => scala.Unit = null
   ): EditConfig = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(editing)) __obj.updateDynamic("editing")(editing)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction0(onStart))
     __obj.asInstanceOf[EditConfig]
   }
 }

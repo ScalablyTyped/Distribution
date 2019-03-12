@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jasmine-expect/dist/toHaveWhitespaceString", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val toHaveWhitespaceString: jasmineDashExpectLib.distToHaveWhitespaceStringMod.ToHaveWhitespaceString = js.native
+  val toHaveWhitespaceString: ToHaveWhitespaceString = js.native
 }
 

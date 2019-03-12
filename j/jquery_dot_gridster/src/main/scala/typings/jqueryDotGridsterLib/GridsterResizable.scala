@@ -32,9 +32,9 @@ object GridsterResizable {
     handle_class: java.lang.String = null,
     max_size: js.Array[scala.Double] = null,
     min_size: js.Array[scala.Double] = null,
-    resize: js.Function3[/* event */ stdLib.Event, /* ui */ GridsterUi, /* $el */ JQuery, scala.Unit] = null,
-    start: js.Function3[/* event */ stdLib.Event, /* ui */ Anon_Helper, /* $el */ JQuery, scala.Unit] = null,
-    stop: js.Function3[/* event */ stdLib.Event, /* ui */ Anon_Helper, /* $el */ JQuery, scala.Unit] = null
+    resize: (/* event */ stdLib.Event, /* ui */ GridsterUi, /* $el */ JQuery) => scala.Unit = null,
+    start: (/* event */ stdLib.Event, /* ui */ Anon_Helper, /* $el */ JQuery) => scala.Unit = null,
+    stop: (/* event */ stdLib.Event, /* ui */ Anon_Helper, /* $el */ JQuery) => scala.Unit = null
   ): GridsterResizable = {
     val __obj = js.Dynamic.literal()
     if (axes != null) __obj.updateDynamic("axes")(axes)
@@ -43,9 +43,9 @@ object GridsterResizable {
     if (handle_class != null) __obj.updateDynamic("handle_class")(handle_class)
     if (max_size != null) __obj.updateDynamic("max_size")(max_size)
     if (min_size != null) __obj.updateDynamic("min_size")(min_size)
-    if (resize != null) __obj.updateDynamic("resize")(resize)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction3(resize))
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction3(start))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction3(stop))
     __obj.asInstanceOf[GridsterResizable]
   }
 }

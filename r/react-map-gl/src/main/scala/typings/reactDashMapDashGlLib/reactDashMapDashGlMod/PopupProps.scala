@@ -40,7 +40,7 @@ object PopupProps {
     dynamicPosition: js.UndefOr[scala.Boolean] = js.undefined,
     offsetLeft: scala.Int | scala.Double = null,
     offsetTop: scala.Int | scala.Double = null,
-    onClose: js.Function0[scala.Unit] = null,
+    onClose: () => scala.Unit = null,
     sortByDepth: js.UndefOr[scala.Boolean] = js.undefined,
     tipSize: scala.Int | scala.Double = null
   ): PopupProps = {
@@ -57,7 +57,7 @@ object PopupProps {
     if (!js.isUndefined(dynamicPosition)) __obj.updateDynamic("dynamicPosition")(dynamicPosition)
     if (offsetLeft != null) __obj.updateDynamic("offsetLeft")(offsetLeft.asInstanceOf[js.Any])
     if (offsetTop != null) __obj.updateDynamic("offsetTop")(offsetTop.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     if (!js.isUndefined(sortByDepth)) __obj.updateDynamic("sortByDepth")(sortByDepth)
     if (tipSize != null) __obj.updateDynamic("tipSize")(tipSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupProps]

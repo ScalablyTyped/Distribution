@@ -25,8 +25,8 @@ object DropProps {
     target: js.Object,
     align: grommetLib.Anon_BottomLeft = null,
     elevation: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String = null,
-    onClickOutside: js.Function1[/* repeated */ js.Any, _] = null,
-    onEsc: js.Function1[/* repeated */ js.Any, _] = null,
+    onClickOutside: /* repeated */ js.Any => _ = null,
+    onEsc: /* repeated */ js.Any => _ = null,
     plain: js.UndefOr[scala.Boolean] = js.undefined,
     responsive: js.UndefOr[scala.Boolean] = js.undefined,
     restrictFocus: js.UndefOr[scala.Boolean] = js.undefined,
@@ -35,8 +35,8 @@ object DropProps {
     val __obj = js.Dynamic.literal(target = target)
     if (align != null) __obj.updateDynamic("align")(align)
     if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
-    if (onClickOutside != null) __obj.updateDynamic("onClickOutside")(onClickOutside)
-    if (onEsc != null) __obj.updateDynamic("onEsc")(onEsc)
+    if (onClickOutside != null) __obj.updateDynamic("onClickOutside")(js.Any.fromFunction1(onClickOutside))
+    if (onEsc != null) __obj.updateDynamic("onEsc")(js.Any.fromFunction1(onEsc))
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
     if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
     if (!js.isUndefined(restrictFocus)) __obj.updateDynamic("restrictFocus")(restrictFocus)

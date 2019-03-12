@@ -13,12 +13,9 @@ trait DivisionsResource extends js.Object {
 object DivisionsResource {
   @scala.inline
   def apply(
-    search: js.Function1[
-      gapiDotClientDotCivicinfoLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DivisionSearchResponse]
-    ]
+    search: gapiDotClientDotCivicinfoLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[DivisionSearchResponse]
   ): DivisionsResource = {
-    val __obj = js.Dynamic.literal(search = search)
+    val __obj = js.Dynamic.literal(search = js.Any.fromFunction1(search))
   
     __obj.asInstanceOf[DivisionsResource]
   }

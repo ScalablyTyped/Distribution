@@ -81,7 +81,7 @@ object LaunchNavigatorOptions {
     destinationName: java.lang.String = null,
     enableGeocoding: js.UndefOr[scala.Boolean] = js.undefined,
     enableGeolocation: js.UndefOr[scala.Boolean] = js.undefined,
-    errorCallback: js.Function1[/* error */ java.lang.String, scala.Unit] = null,
+    errorCallback: /* error */ java.lang.String => scala.Unit = null,
     extras: js.Any = null,
     launchModeAppleMaps: java.lang.String = null,
     launchModeGoogleMaps: java.lang.String = null,
@@ -96,7 +96,7 @@ object LaunchNavigatorOptions {
     if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName)
     if (!js.isUndefined(enableGeocoding)) __obj.updateDynamic("enableGeocoding")(enableGeocoding)
     if (!js.isUndefined(enableGeolocation)) __obj.updateDynamic("enableGeolocation")(enableGeolocation)
-    if (errorCallback != null) __obj.updateDynamic("errorCallback")(errorCallback)
+    if (errorCallback != null) __obj.updateDynamic("errorCallback")(js.Any.fromFunction1(errorCallback))
     if (extras != null) __obj.updateDynamic("extras")(extras)
     if (launchModeAppleMaps != null) __obj.updateDynamic("launchModeAppleMaps")(launchModeAppleMaps)
     if (launchModeGoogleMaps != null) __obj.updateDynamic("launchModeGoogleMaps")(launchModeGoogleMaps)

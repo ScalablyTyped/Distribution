@@ -20,20 +20,16 @@ trait DDPStatic extends js.Object {
 object DDPStatic {
   @scala.inline
   def apply(
-    apply: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Unit],
-    call: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Unit],
-    disconnect: js.Function0[scala.Unit],
-    methods: js.Function1[js.Any, js.Any],
-    onReconnect: js.Function0[scala.Unit],
-    reconnect: js.Function0[scala.Unit],
-    status: js.Function0[DDPStatus],
-    subscribe: js.Function2[
-      java.lang.String, 
-      /* repeated */ js.Any, 
-      meteorDashTypingsLib.MeteorNs.SubscriptionHandle
-    ]
+    apply: (java.lang.String, /* repeated */ js.Any) => scala.Unit,
+    call: (java.lang.String, /* repeated */ js.Any) => scala.Unit,
+    disconnect: () => scala.Unit,
+    methods: js.Any => js.Any,
+    onReconnect: () => scala.Unit,
+    reconnect: () => scala.Unit,
+    status: () => DDPStatus,
+    subscribe: (java.lang.String, /* repeated */ js.Any) => meteorDashTypingsLib.MeteorNs.SubscriptionHandle
   ): DDPStatic = {
-    val __obj = js.Dynamic.literal(apply = apply, call = call, disconnect = disconnect, methods = methods, onReconnect = onReconnect, reconnect = reconnect, status = status, subscribe = subscribe)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction2(apply), call = js.Any.fromFunction2(call), disconnect = js.Any.fromFunction0(disconnect), methods = js.Any.fromFunction1(methods), onReconnect = js.Any.fromFunction0(onReconnect), reconnect = js.Any.fromFunction0(reconnect), status = js.Any.fromFunction0(status), subscribe = js.Any.fromFunction2(subscribe))
   
     __obj.asInstanceOf[DDPStatic]
   }

@@ -10,3 +10,12 @@ trait SearchBoxExposed extends js.Object {
   var defaultRefinement: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SearchBoxExposed {
+  @scala.inline
+  def apply(defaultRefinement: java.lang.String = null): SearchBoxExposed = {
+    val __obj = js.Dynamic.literal()
+    if (defaultRefinement != null) __obj.updateDynamic("defaultRefinement")(defaultRefinement)
+    __obj.asInstanceOf[SearchBoxExposed]
+  }
+}
+

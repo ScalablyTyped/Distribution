@@ -48,18 +48,18 @@ trait UtilModule extends js.Object {
     /* callback */ js.Function1[/* result */ R, scala.Unit], 
     scala.Unit
   ] = js.native
-  def error(error: js.Any): nodeLib.Error = js.native
-  def error(error: js.Any, origError: nodeLib.Error): nodeLib.Error = js.native
-  def error(error: nodeLib.Error): nodeLib.Error = js.native
-  def error(error: nodeLib.Error, origError: nodeLib.Error): nodeLib.Error = js.native
+  def error(error: js.Any): stdLib.Error = js.native
+  def error(error: js.Any, origError: stdLib.Error): stdLib.Error = js.native
+  def error(error: stdLib.Error): stdLib.Error = js.native
+  def error(error: stdLib.Error, origError: stdLib.Error): stdLib.Error = js.native
   /**
     * Return a new Error instance (that can be thrown) with the appropriate message.
     * If an Error object is specified instead of message that object will be returned.
     * Also, if an Error object is specified for origError and Grunt was run with the --debug 9 option,
     * the original Error stack will be dumped.
     */
-  def error(message: java.lang.String): nodeLib.Error = js.native
-  def error(message: java.lang.String, origError: nodeLib.Error): nodeLib.Error = js.native
+  def error(message: java.lang.String): stdLib.Error = js.native
+  def error(message: java.lang.String, origError: stdLib.Error): stdLib.Error = js.native
   /**
     * Return the "kind" of a value. Like typeof but returns the internal [Class](Class/) value.
     * Possible results are "number", "string", "boolean", "function", "regexp", "array", "date",
@@ -104,7 +104,7 @@ trait UtilModule extends js.Object {
   def spawn(
     options: ISpawnOptions,
     done: js.Function3[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* result */ ISpawnResult, 
       /* code */ scala.Double, 
       scala.Unit

@@ -25,7 +25,7 @@ trait Queryable
   def query(
     text: java.lang.String,
     params: js.Array[_],
-    callback: js.Function2[/* error */ nodeLib.Error, /* results */ ResultSet, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* results */ ResultSet, scala.Unit]
   ): Query = js.native
 }
 

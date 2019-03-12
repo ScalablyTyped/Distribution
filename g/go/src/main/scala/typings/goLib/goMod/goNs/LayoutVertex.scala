@@ -76,15 +76,15 @@ trait LayoutVertex extends js.Object {
 object LayoutVertex {
   @scala.inline
   def apply(
-    addDestinationEdge: js.Function1[LayoutEdge, scala.Unit],
-    addSourceEdge: js.Function1[LayoutEdge, scala.Unit],
+    addDestinationEdge: LayoutEdge => scala.Unit,
+    addSourceEdge: LayoutEdge => scala.Unit,
     bounds: Rect,
     centerX: scala.Double,
     centerY: scala.Double,
-    commit: js.Function0[scala.Unit],
+    commit: () => scala.Unit,
     data: js.Any,
-    deleteDestinationEdge: js.Function1[LayoutEdge, scala.Unit],
-    deleteSourceEdge: js.Function1[LayoutEdge, scala.Unit],
+    deleteDestinationEdge: LayoutEdge => scala.Unit,
+    deleteSourceEdge: LayoutEdge => scala.Unit,
     destinationEdges: Iterator[LayoutEdge],
     destinationVertexes: Iterator[LayoutVertex],
     edges: Iterator[LayoutEdge],
@@ -102,7 +102,7 @@ object LayoutVertex {
     x: scala.Double,
     y: scala.Double
   ): LayoutVertex = {
-    val __obj = js.Dynamic.literal(addDestinationEdge = addDestinationEdge, addSourceEdge = addSourceEdge, bounds = bounds, centerX = centerX, centerY = centerY, commit = commit, data = data, deleteDestinationEdge = deleteDestinationEdge, deleteSourceEdge = deleteSourceEdge, destinationEdges = destinationEdges, destinationVertexes = destinationVertexes, edges = edges, edgesCount = edgesCount, focus = focus, focusX = focusX, focusY = focusY, height = height, network = network, node = node, sourceEdges = sourceEdges, sourceVertexes = sourceVertexes, vertexes = vertexes, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(addDestinationEdge = js.Any.fromFunction1(addDestinationEdge), addSourceEdge = js.Any.fromFunction1(addSourceEdge), bounds = bounds, centerX = centerX, centerY = centerY, commit = js.Any.fromFunction0(commit), data = data, deleteDestinationEdge = js.Any.fromFunction1(deleteDestinationEdge), deleteSourceEdge = js.Any.fromFunction1(deleteSourceEdge), destinationEdges = destinationEdges, destinationVertexes = destinationVertexes, edges = edges, edgesCount = edgesCount, focus = focus, focusX = focusX, focusY = focusY, height = height, network = network, node = node, sourceEdges = sourceEdges, sourceVertexes = sourceVertexes, vertexes = vertexes, width = width, x = x, y = y)
   
     __obj.asInstanceOf[LayoutVertex]
   }

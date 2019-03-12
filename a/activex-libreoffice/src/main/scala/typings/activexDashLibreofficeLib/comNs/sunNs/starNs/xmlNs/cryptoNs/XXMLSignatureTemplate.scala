@@ -21,11 +21,11 @@ trait XXMLSignatureTemplate extends XXMLSecurityTemplate {
   /** Get the dynamic URI binding */
   var Binding: XUriBinding
   /** Get the target XML element, i.e. the element to be signed */
-  val Targets: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper]
+  val Targets: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper]
   /** Get the dynamic URI binding */
   def getBinding(): XUriBinding
   /** Get the target XML element, i.e. the element to be signed */
-  def getTargets(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper]
+  def getTargets(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper]
   /** Set the dynamic URI binding */
   def setBinding(aUriBinding: XUriBinding): scala.Unit
 }
@@ -35,29 +35,21 @@ object XXMLSignatureTemplate {
   def apply(
     Binding: XUriBinding,
     Status: SecurityOperationStatus,
-    Targets: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper],
+    Targets: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper],
     Template: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper,
-    acquire: js.Function0[scala.Unit],
-    getBinding: js.Function0[XUriBinding],
-    getStatus: js.Function0[SecurityOperationStatus],
-    getTargets: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper]
-    ],
-    getTemplate: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setBinding: js.Function1[XUriBinding, scala.Unit],
-    setStatus: js.Function1[SecurityOperationStatus, scala.Unit],
-    setTarget: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper, 
-      scala.Unit
-    ],
-    setTemplate: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    getBinding: () => XUriBinding,
+    getStatus: () => SecurityOperationStatus,
+    getTargets: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper],
+    getTemplate: () => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setBinding: XUriBinding => scala.Unit,
+    setStatus: SecurityOperationStatus => scala.Unit,
+    setTarget: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper => scala.Unit,
+    setTemplate: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper => scala.Unit
   ): XXMLSignatureTemplate = {
-    val __obj = js.Dynamic.literal(Binding = Binding, Status = Status, Targets = Targets, Template = Template, acquire = acquire, getBinding = getBinding, getStatus = getStatus, getTargets = getTargets, getTemplate = getTemplate, queryInterface = queryInterface, release = release, setBinding = setBinding, setStatus = setStatus, setTarget = setTarget, setTemplate = setTemplate)
+    val __obj = js.Dynamic.literal(Binding = Binding, Status = Status, Targets = Targets, Template = Template, acquire = js.Any.fromFunction0(acquire), getBinding = js.Any.fromFunction0(getBinding), getStatus = js.Any.fromFunction0(getStatus), getTargets = js.Any.fromFunction0(getTargets), getTemplate = js.Any.fromFunction0(getTemplate), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setBinding = js.Any.fromFunction1(setBinding), setStatus = js.Any.fromFunction1(setStatus), setTarget = js.Any.fromFunction1(setTarget), setTemplate = js.Any.fromFunction1(setTemplate))
   
     __obj.asInstanceOf[XXMLSignatureTemplate]
   }

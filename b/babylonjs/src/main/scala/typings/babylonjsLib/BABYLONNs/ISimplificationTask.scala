@@ -38,10 +38,10 @@ object ISimplificationTask {
     parallelProcessing: scala.Boolean,
     settings: js.Array[ISimplificationSettings],
     simplificationType: SimplificationType,
-    successCallback: js.Function0[scala.Unit] = null
+    successCallback: () => scala.Unit = null
   ): ISimplificationTask = {
     val __obj = js.Dynamic.literal(mesh = mesh, parallelProcessing = parallelProcessing, settings = settings, simplificationType = simplificationType)
-    if (successCallback != null) __obj.updateDynamic("successCallback")(successCallback)
+    if (successCallback != null) __obj.updateDynamic("successCallback")(js.Any.fromFunction0(successCallback))
     __obj.asInstanceOf[ISimplificationTask]
   }
 }

@@ -19,7 +19,7 @@ trait ASPxClientHtmlEditorInsertVideoCommandArguments extends ASPxClientHtmlEdit
 object ASPxClientHtmlEditorInsertVideoCommandArguments {
   @scala.inline
   def apply(
-    GetCommandName: js.Function0[java.lang.String],
+    GetCommandName: () => java.lang.String,
     align: java.lang.String,
     autoPlay: scala.Boolean,
     id: java.lang.String,
@@ -31,7 +31,7 @@ object ASPxClientHtmlEditorInsertVideoCommandArguments {
     src: java.lang.String,
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings
   ): ASPxClientHtmlEditorInsertVideoCommandArguments = {
-    val __obj = js.Dynamic.literal(GetCommandName = GetCommandName, align = align, autoPlay = autoPlay, id = id, loop = loop, posterUrl = posterUrl, preloadMode = preloadMode, selectedElement = selectedElement, showPlayerControls = showPlayerControls, src = src, styleSettings = styleSettings)
+    val __obj = js.Dynamic.literal(GetCommandName = js.Any.fromFunction0(GetCommandName), align = align, autoPlay = autoPlay, id = id, loop = loop, posterUrl = posterUrl, preloadMode = preloadMode, selectedElement = selectedElement, showPlayerControls = showPlayerControls, src = src, styleSettings = styleSettings)
   
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertVideoCommandArguments]
   }

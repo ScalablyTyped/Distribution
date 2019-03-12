@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
 trait XNumericalDataSequence
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** retrieves data as `double` values. */
-  val NumericalData: activexDashInteropLib.SafeArray[scala.Double]
+  val NumericalData: stdLib.SafeArray[scala.Double]
   /** retrieves data as `double` values. */
-  def getNumericalData(): activexDashInteropLib.SafeArray[scala.Double]
+  def getNumericalData(): stdLib.SafeArray[scala.Double]
 }
 
 object XNumericalDataSequence {
   @scala.inline
   def apply(
-    NumericalData: activexDashInteropLib.SafeArray[scala.Double],
-    acquire: js.Function0[scala.Unit],
-    getNumericalData: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    NumericalData: stdLib.SafeArray[scala.Double],
+    acquire: () => scala.Unit,
+    getNumericalData: () => stdLib.SafeArray[scala.Double],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XNumericalDataSequence = {
-    val __obj = js.Dynamic.literal(NumericalData = NumericalData, acquire = acquire, getNumericalData = getNumericalData, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(NumericalData = NumericalData, acquire = js.Any.fromFunction0(acquire), getNumericalData = js.Any.fromFunction0(getNumericalData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XNumericalDataSequence]
   }

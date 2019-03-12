@@ -18,8 +18,8 @@ trait IgGridTooltipsMethods extends js.Object {
 
 object IgGridTooltipsMethods {
   @scala.inline
-  def apply(destroy: js.Function0[scala.Unit], id: js.Function0[java.lang.String]): IgGridTooltipsMethods = {
-    val __obj = js.Dynamic.literal(destroy = destroy, id = id)
+  def apply(destroy: () => scala.Unit, id: () => java.lang.String): IgGridTooltipsMethods = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), id = js.Any.fromFunction0(id))
   
     __obj.asInstanceOf[IgGridTooltipsMethods]
   }

@@ -44,21 +44,12 @@ trait HistoriesResource extends js.Object {
 object HistoriesResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[History]
-    ],
+    create: gapiDotClientDotToolresultsLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[History],
     executions: ExecutionsResource,
-    get: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_AltFieldsHistoryIdKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[History]
-    ],
-    list: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_AltFieldsFilterByName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListHistoriesResponse]
-    ]
+    get: gapiDotClientDotToolresultsLib.Anon_AltFieldsHistoryIdKey => gapiDotClientLib.gapiNs.clientNs.Request[History],
+    list: gapiDotClientDotToolresultsLib.Anon_AltFieldsFilterByName => gapiDotClientLib.gapiNs.clientNs.Request[ListHistoriesResponse]
   ): HistoriesResource = {
-    val __obj = js.Dynamic.literal(create = create, executions = executions, get = get, list = list)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), executions = executions, get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[HistoriesResource]
   }

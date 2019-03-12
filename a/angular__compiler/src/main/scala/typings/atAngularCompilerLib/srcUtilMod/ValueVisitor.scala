@@ -15,12 +15,12 @@ trait ValueVisitor extends js.Object {
 object ValueVisitor {
   @scala.inline
   def apply(
-    visitArray: js.Function2[js.Array[_], js.Any, js.Any],
-    visitOther: js.Function2[js.Any, js.Any, js.Any],
-    visitPrimitive: js.Function2[js.Any, js.Any, js.Any],
-    visitStringMap: js.Function2[org.scalablytyped.runtime.StringDictionary[js.Any], js.Any, js.Any]
+    visitArray: (js.Array[_], js.Any) => js.Any,
+    visitOther: (js.Any, js.Any) => js.Any,
+    visitPrimitive: (js.Any, js.Any) => js.Any,
+    visitStringMap: (org.scalablytyped.runtime.StringDictionary[js.Any], js.Any) => js.Any
   ): ValueVisitor = {
-    val __obj = js.Dynamic.literal(visitArray = visitArray, visitOther = visitOther, visitPrimitive = visitPrimitive, visitStringMap = visitStringMap)
+    val __obj = js.Dynamic.literal(visitArray = js.Any.fromFunction2(visitArray), visitOther = js.Any.fromFunction2(visitOther), visitPrimitive = js.Any.fromFunction2(visitPrimitive), visitStringMap = js.Any.fromFunction2(visitStringMap))
   
     __obj.asInstanceOf[ValueVisitor]
   }

@@ -20,17 +20,17 @@ trait StandardLine extends js.Object {
 object StandardLine {
   @scala.inline
   def apply(
-    getEntityId: js.Function0[scala.Double],
-    getId: js.Function0[scala.Double],
-    getSubsidiaryId: js.Function0[scala.Double],
-    getTaxAmount: js.Function0[java.lang.String],
-    getTaxItemId: js.Function0[scala.Double],
-    getTaxType: js.Function0[java.lang.String],
-    getTaxableAmount: js.Function0[java.lang.String],
-    isPosting: js.Function0[scala.Boolean],
-    isTaxable: js.Function0[scala.Boolean]
+    getEntityId: () => scala.Double,
+    getId: () => scala.Double,
+    getSubsidiaryId: () => scala.Double,
+    getTaxAmount: () => java.lang.String,
+    getTaxItemId: () => scala.Double,
+    getTaxType: () => java.lang.String,
+    getTaxableAmount: () => java.lang.String,
+    isPosting: () => scala.Boolean,
+    isTaxable: () => scala.Boolean
   ): StandardLine = {
-    val __obj = js.Dynamic.literal(getEntityId = getEntityId, getId = getId, getSubsidiaryId = getSubsidiaryId, getTaxAmount = getTaxAmount, getTaxItemId = getTaxItemId, getTaxType = getTaxType, getTaxableAmount = getTaxableAmount, isPosting = isPosting, isTaxable = isTaxable)
+    val __obj = js.Dynamic.literal(getEntityId = js.Any.fromFunction0(getEntityId), getId = js.Any.fromFunction0(getId), getSubsidiaryId = js.Any.fromFunction0(getSubsidiaryId), getTaxAmount = js.Any.fromFunction0(getTaxAmount), getTaxItemId = js.Any.fromFunction0(getTaxItemId), getTaxType = js.Any.fromFunction0(getTaxType), getTaxableAmount = js.Any.fromFunction0(getTaxableAmount), isPosting = js.Any.fromFunction0(isPosting), isTaxable = js.Any.fromFunction0(isTaxable))
   
     __obj.asInstanceOf[StandardLine]
   }

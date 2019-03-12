@@ -11,8 +11,8 @@ trait Anon_State extends js.Object {
 
 object Anon_State {
   @scala.inline
-  def apply(withState: js.Function1[js.Any, reduxDashTestkitLib.reduxDashTestkitMod.ReducerTestkit]): Anon_State = {
-    val __obj = js.Dynamic.literal(withState = withState)
+  def apply(withState: js.Any => reduxDashTestkitLib.reduxDashTestkitMod.ReducerTestkit): Anon_State = {
+    val __obj = js.Dynamic.literal(withState = js.Any.fromFunction1(withState))
   
     __obj.asInstanceOf[Anon_State]
   }

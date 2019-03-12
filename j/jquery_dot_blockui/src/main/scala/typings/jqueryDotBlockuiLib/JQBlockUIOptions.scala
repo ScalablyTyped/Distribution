@@ -96,8 +96,8 @@ object JQBlockUIOptions {
     iframeSrc: java.lang.String = null,
     ignoreIfBlocked: js.UndefOr[scala.Boolean] = js.undefined,
     message: js.Any = null,
-    onBlock: js.Function0[scala.Unit] = null,
-    onUnblock: js.Function2[/* element */ js.Any, /* options */ js.Any, scala.Unit] = null,
+    onBlock: () => scala.Unit = null,
+    onUnblock: (/* element */ js.Any, /* options */ js.Any) => scala.Unit = null,
     overlayCSS: js.Any = null,
     quirksmodeOffsetHack: scala.Int | scala.Double = null,
     showOverlay: js.UndefOr[scala.Boolean] = js.undefined,
@@ -125,8 +125,8 @@ object JQBlockUIOptions {
     if (iframeSrc != null) __obj.updateDynamic("iframeSrc")(iframeSrc)
     if (!js.isUndefined(ignoreIfBlocked)) __obj.updateDynamic("ignoreIfBlocked")(ignoreIfBlocked)
     if (message != null) __obj.updateDynamic("message")(message)
-    if (onBlock != null) __obj.updateDynamic("onBlock")(onBlock)
-    if (onUnblock != null) __obj.updateDynamic("onUnblock")(onUnblock)
+    if (onBlock != null) __obj.updateDynamic("onBlock")(js.Any.fromFunction0(onBlock))
+    if (onUnblock != null) __obj.updateDynamic("onUnblock")(js.Any.fromFunction2(onUnblock))
     if (overlayCSS != null) __obj.updateDynamic("overlayCSS")(overlayCSS)
     if (quirksmodeOffsetHack != null) __obj.updateDynamic("quirksmodeOffsetHack")(quirksmodeOffsetHack.asInstanceOf[js.Any])
     if (!js.isUndefined(showOverlay)) __obj.updateDynamic("showOverlay")(showOverlay)

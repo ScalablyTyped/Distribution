@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ListObjects extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Count: scala.Double = js.native
   val Creator: XlCreator = js.native
   val Parent: js.Any = js.native
@@ -31,14 +31,14 @@ trait ListObjects extends js.Object {
   ): ListObject = js.native
   def Add(
     SourceType: XlListObjectSourceType,
-    Source: activexDashInteropLib.SafeArray[java.lang.String],
+    Source: stdLib.SafeArray[java.lang.String],
     LinkSource: scala.Boolean,
     XlListObjectHasHeaders: XlYesNoGuess,
     Destination: Range
   ): ListObject = js.native
   def Add(
     SourceType: XlListObjectSourceType,
-    Source: activexDashInteropLib.SafeArray[java.lang.String],
+    Source: stdLib.SafeArray[java.lang.String],
     LinkSource: scala.Boolean,
     XlListObjectHasHeaders: XlYesNoGuess,
     Destination: Range,

@@ -90,30 +90,15 @@ object IconMenuProps {
     maxHeight: scala.Int | scala.Double = null,
     menuStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
-      /* itemValue */ js.Any | js.Array[_], 
-      scala.Unit
-    ] = null,
-    onClick: js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
-      scala.Unit
-    ] = null,
-    onItemClick: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
-      /* item */ MenuItem, 
-      scala.Unit
-    ] = null,
-    onKeyboardFocus: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], 
-      /* isKeyboardFocused */ scala.Boolean, 
-      scala.Unit
-    ] = null,
+    onChange: (/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], /* itemValue */ js.Any | js.Array[_]) => scala.Unit = null,
+    onClick: /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event] => scala.Unit = null,
+    onItemClick: (/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], /* item */ MenuItem) => scala.Unit = null,
+    onKeyboardFocus: (/* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], /* isKeyboardFocused */ scala.Boolean) => scala.Unit = null,
     onMouseDown: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
     onMouseEnter: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
     onMouseLeave: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
     onMouseUp: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onRequestChange: js.Function2[/* opening */ scala.Boolean, /* reason */ java.lang.String, scala.Unit] = null,
+    onRequestChange: (/* opening */ scala.Boolean, /* reason */ java.lang.String) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     targetOrigin: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin = null,
@@ -135,15 +120,15 @@ object IconMenuProps {
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (menuStyle != null) __obj.updateDynamic("menuStyle")(menuStyle)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onItemClick != null) __obj.updateDynamic("onItemClick")(onItemClick)
-    if (onKeyboardFocus != null) __obj.updateDynamic("onKeyboardFocus")(onKeyboardFocus)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction2(onItemClick))
+    if (onKeyboardFocus != null) __obj.updateDynamic("onKeyboardFocus")(js.Any.fromFunction2(onKeyboardFocus))
     if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
     if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
-    if (onRequestChange != null) __obj.updateDynamic("onRequestChange")(onRequestChange)
+    if (onRequestChange != null) __obj.updateDynamic("onRequestChange")(js.Any.fromFunction2(onRequestChange))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (style != null) __obj.updateDynamic("style")(style)
     if (targetOrigin != null) __obj.updateDynamic("targetOrigin")(targetOrigin)

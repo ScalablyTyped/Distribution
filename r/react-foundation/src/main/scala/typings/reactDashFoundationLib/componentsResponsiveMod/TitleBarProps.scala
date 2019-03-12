@@ -291,7 +291,7 @@ object TitleBarProps {
   @scala.inline
   def apply(
     GeneralPropTypes: reactDashFoundationLib.utilsMod.GeneralPropTypes = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null
   ): TitleBarProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, GeneralPropTypes)

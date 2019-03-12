@@ -37,19 +37,19 @@ trait XCellCursor extends XCellRange {
 object XCellCursor {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getCellByPosition: js.Function2[scala.Double, scala.Double, XCell],
-    getCellRangeByName: js.Function1[java.lang.String, XCellRange],
-    getCellRangeByPosition: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, XCellRange],
-    gotoEnd: js.Function0[scala.Unit],
-    gotoNext: js.Function0[scala.Unit],
-    gotoOffset: js.Function2[scala.Double, scala.Double, scala.Unit],
-    gotoPrevious: js.Function0[scala.Unit],
-    gotoStart: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getCellByPosition: (scala.Double, scala.Double) => XCell,
+    getCellRangeByName: java.lang.String => XCellRange,
+    getCellRangeByPosition: (scala.Double, scala.Double, scala.Double, scala.Double) => XCellRange,
+    gotoEnd: () => scala.Unit,
+    gotoNext: () => scala.Unit,
+    gotoOffset: (scala.Double, scala.Double) => scala.Unit,
+    gotoPrevious: () => scala.Unit,
+    gotoStart: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCellCursor = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getCellByPosition = getCellByPosition, getCellRangeByName = getCellRangeByName, getCellRangeByPosition = getCellRangeByPosition, gotoEnd = gotoEnd, gotoNext = gotoNext, gotoOffset = gotoOffset, gotoPrevious = gotoPrevious, gotoStart = gotoStart, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getCellByPosition = js.Any.fromFunction2(getCellByPosition), getCellRangeByName = js.Any.fromFunction1(getCellRangeByName), getCellRangeByPosition = js.Any.fromFunction4(getCellRangeByPosition), gotoEnd = js.Any.fromFunction0(gotoEnd), gotoNext = js.Any.fromFunction0(gotoNext), gotoOffset = js.Any.fromFunction2(gotoOffset), gotoPrevious = js.Any.fromFunction0(gotoPrevious), gotoStart = js.Any.fromFunction0(gotoStart), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCellCursor]
   }

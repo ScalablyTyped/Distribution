@@ -14,11 +14,11 @@ trait ConfigStore extends js.Object {
 object ConfigStore {
   @scala.inline
   def apply(
-    get: js.Function1[java.lang.String, js.Any],
-    set: js.Function2[java.lang.String, js.Any, js.Any],
-    use: js.Function1[js.Object, scala.Unit]
+    get: java.lang.String => js.Any,
+    set: (java.lang.String, js.Any) => js.Any,
+    use: js.Object => scala.Unit
   ): ConfigStore = {
-    val __obj = js.Dynamic.literal(get = get, set = set, use = use)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set), use = js.Any.fromFunction1(use))
   
     __obj.asInstanceOf[ConfigStore]
   }

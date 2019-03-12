@@ -15,8 +15,8 @@ trait JQuery extends js.Object {
 
 object JQuery {
   @scala.inline
-  def apply(affix: js.Function1[java.lang.String, JQuery]): JQuery = {
-    val __obj = js.Dynamic.literal(affix = affix)
+  def apply(affix: java.lang.String => JQuery): JQuery = {
+    val __obj = js.Dynamic.literal(affix = js.Any.fromFunction1(affix))
   
     __obj.asInstanceOf[JQuery]
   }

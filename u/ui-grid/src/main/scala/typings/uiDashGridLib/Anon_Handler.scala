@@ -42,23 +42,11 @@ trait Anon_Handler[TEntity] extends js.Object {
 object Anon_Handler {
   @scala.inline
   def apply[TEntity](
-    navigate: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      uiDashGridLib.uiDashGridMod.uiGridNs.cellNavNs.navigateHandler[TEntity], 
-      scala.Unit
-    ],
-    viewPortKeyDown: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      uiDashGridLib.uiDashGridMod.uiGridNs.cellNavNs.viewportKeyDownHandler[TEntity], 
-      scala.Unit
-    ],
-    viewPortKeyPress: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      uiDashGridLib.uiDashGridMod.uiGridNs.cellNavNs.viewportKeyPressHandler[TEntity], 
-      scala.Unit
-    ]
+    navigate: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.cellNavNs.navigateHandler[TEntity]) => scala.Unit,
+    viewPortKeyDown: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.cellNavNs.viewportKeyDownHandler[TEntity]) => scala.Unit,
+    viewPortKeyPress: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.cellNavNs.viewportKeyPressHandler[TEntity]) => scala.Unit
   ): Anon_Handler[TEntity] = {
-    val __obj = js.Dynamic.literal(navigate = navigate, viewPortKeyDown = viewPortKeyDown, viewPortKeyPress = viewPortKeyPress)
+    val __obj = js.Dynamic.literal(navigate = js.Any.fromFunction2(navigate), viewPortKeyDown = js.Any.fromFunction2(viewPortKeyDown), viewPortKeyPress = js.Any.fromFunction2(viewPortKeyPress))
   
     __obj.asInstanceOf[Anon_Handler[TEntity]]
   }

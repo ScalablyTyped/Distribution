@@ -13,10 +13,10 @@ trait IdHandlerProps extends js.Object {
 object IdHandlerProps {
   @scala.inline
   def apply(
-    get: js.Function2[stdLib.HTMLElement, scala.Boolean, java.lang.String],
-    set: js.Function1[stdLib.HTMLElement, java.lang.String]
+    get: (stdLib.HTMLElement, scala.Boolean) => java.lang.String,
+    set: stdLib.HTMLElement => java.lang.String
   ): IdHandlerProps = {
-    val __obj = js.Dynamic.literal(get = get, set = set)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), set = js.Any.fromFunction1(set))
   
     __obj.asInstanceOf[IdHandlerProps]
   }

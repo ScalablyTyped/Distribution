@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def publish(basePath: java.lang.String, callback: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit = js.native
-  def publish(basePath: java.lang.String, config: ghDashPagesLib.ghDashPagesMod.PublishOptions): scala.Unit = js.native
+  def publish(basePath: java.lang.String, config: PublishOptions): scala.Unit = js.native
   def publish(
     basePath: java.lang.String,
-    config: ghDashPagesLib.ghDashPagesMod.PublishOptions,
+    config: PublishOptions,
     callback: js.Function1[/* err */ js.Any, scala.Unit]
   ): scala.Unit = js.native
 }

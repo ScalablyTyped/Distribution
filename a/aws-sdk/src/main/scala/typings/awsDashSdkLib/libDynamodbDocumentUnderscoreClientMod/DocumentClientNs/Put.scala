@@ -29,7 +29,7 @@ trait Put extends js.Object {
   /**
     * Name of the table in which to write the item.
     */
-  var TableName: TableName
+  var TableName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TableName
 }
 
 object Put {

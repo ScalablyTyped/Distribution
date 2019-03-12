@@ -17,13 +17,13 @@ trait XIndent
 object XIndent {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    decrementIndent: js.Function0[scala.Unit],
-    incrementIndent: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    decrementIndent: () => scala.Unit,
+    incrementIndent: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XIndent = {
-    val __obj = js.Dynamic.literal(acquire = acquire, decrementIndent = decrementIndent, incrementIndent = incrementIndent, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), decrementIndent = js.Any.fromFunction0(decrementIndent), incrementIndent = js.Any.fromFunction0(incrementIndent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XIndent]
   }

@@ -11,9 +11,9 @@ trait FilePondHookProps extends js.Object {
 
 object FilePondHookProps {
   @scala.inline
-  def apply(beforeRemoveFile: js.Function1[/* file */ File, scala.Boolean] = null): FilePondHookProps = {
+  def apply(beforeRemoveFile: /* file */ File => scala.Boolean = null): FilePondHookProps = {
     val __obj = js.Dynamic.literal()
-    if (beforeRemoveFile != null) __obj.updateDynamic("beforeRemoveFile")(beforeRemoveFile)
+    if (beforeRemoveFile != null) __obj.updateDynamic("beforeRemoveFile")(js.Any.fromFunction1(beforeRemoveFile))
     __obj.asInstanceOf[FilePondHookProps]
   }
 }

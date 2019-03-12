@@ -22,26 +22,26 @@ trait XInterceptorInfo
     * Wildcards inside the URLs are allowed to register the interceptor for URLs too, which can have optional arguments (e.g. "..#.." or "..?..").
     * @returns a list of URLs which are handled by this interceptor
     */
-  val InterceptedURLs: activexDashInteropLib.SafeArray[java.lang.String]
+  val InterceptedURLs: stdLib.SafeArray[java.lang.String]
   /**
     * returns the URL list for interception.
     *
     * Wildcards inside the URLs are allowed to register the interceptor for URLs too, which can have optional arguments (e.g. "..#.." or "..?..").
     * @returns a list of URLs which are handled by this interceptor
     */
-  def getInterceptedURLs(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getInterceptedURLs(): stdLib.SafeArray[java.lang.String]
 }
 
 object XInterceptorInfo {
   @scala.inline
   def apply(
-    InterceptedURLs: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    getInterceptedURLs: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    InterceptedURLs: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    getInterceptedURLs: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XInterceptorInfo = {
-    val __obj = js.Dynamic.literal(InterceptedURLs = InterceptedURLs, acquire = acquire, getInterceptedURLs = getInterceptedURLs, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(InterceptedURLs = InterceptedURLs, acquire = js.Any.fromFunction0(acquire), getInterceptedURLs = js.Any.fromFunction0(getInterceptedURLs), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XInterceptorInfo]
   }

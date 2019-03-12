@@ -16,11 +16,11 @@ object Anon_3ChannelsLab {
   @scala.inline
   def apply(
     channels: colorDashConvertLib.colorDashConvertLibNumbers.`3`,
-    lab: js.Function1[colorDashConvertLib.conversionsMod.XYZ, colorDashConvertLib.conversionsMod.LAB],
+    lab: colorDashConvertLib.conversionsMod.XYZ => colorDashConvertLib.conversionsMod.LAB,
     labels: colorDashConvertLib.colorDashConvertLibStrings.xyz,
-    rgb: js.Function1[colorDashConvertLib.conversionsMod.XYZ, colorDashConvertLib.conversionsMod.RGB]
+    rgb: colorDashConvertLib.conversionsMod.XYZ => colorDashConvertLib.conversionsMod.RGB
   ): Anon_3ChannelsLab = {
-    val __obj = js.Dynamic.literal(channels = channels, lab = lab, labels = labels, rgb = rgb)
+    val __obj = js.Dynamic.literal(channels = channels, lab = js.Any.fromFunction1(lab), labels = labels, rgb = js.Any.fromFunction1(rgb))
   
     __obj.asInstanceOf[Anon_3ChannelsLab]
   }

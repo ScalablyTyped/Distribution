@@ -403,23 +403,23 @@ object ^ extends js.Object {
   /**
   			 * Creates and returns an instance of <Titanium.UI.Android.CardView>.
   			 */
-  def createCardView(): titaniumLib.TitaniumNs.UINs.AndroidNs.CardView = js.native
-  def createCardView(parameters: js.Any): titaniumLib.TitaniumNs.UINs.AndroidNs.CardView = js.native
+  def createCardView(): CardView = js.native
+  def createCardView(parameters: js.Any): CardView = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.Android.DrawerLayout>.
   			 */
-  def createDrawerLayout(): titaniumLib.TitaniumNs.UINs.AndroidNs.DrawerLayout = js.native
-  def createDrawerLayout(parameters: js.Any): titaniumLib.TitaniumNs.UINs.AndroidNs.DrawerLayout = js.native
+  def createDrawerLayout(): DrawerLayout = js.native
+  def createDrawerLayout(parameters: js.Any): DrawerLayout = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.Android.ProgressIndicator>.
   			 */
-  def createProgressIndicator(): titaniumLib.TitaniumNs.UINs.AndroidNs.ProgressIndicator = js.native
-  def createProgressIndicator(parameters: js.Any): titaniumLib.TitaniumNs.UINs.AndroidNs.ProgressIndicator = js.native
+  def createProgressIndicator(): ProgressIndicator = js.native
+  def createProgressIndicator(parameters: js.Any): ProgressIndicator = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.Android.SearchView>.
   			 */
-  def createSearchView(): titaniumLib.TitaniumNs.UINs.AndroidNs.SearchView = js.native
-  def createSearchView(parameters: js.Any): titaniumLib.TitaniumNs.UINs.AndroidNs.SearchView = js.native
+  def createSearchView(): SearchView = js.native
+  def createSearchView(parameters: js.Any): SearchView = js.native
   /**
   			 * Fires a synthesized event to any registered listeners.
   			 */

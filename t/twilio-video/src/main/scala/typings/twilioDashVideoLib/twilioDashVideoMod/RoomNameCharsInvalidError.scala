@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class RoomNameCharsInvalidError () extends TwilioError {
   @JSName("code")
   var code_RoomNameCharsInvalidError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53102` = js.native
-  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Room name contains invalid characters` = js.native
+  @JSName("message")
+  var message_RoomNameCharsInvalidError: twilioDashVideoLib.twilioDashVideoLibStrings.`Room name contains invalid characters` = js.native
 }
 

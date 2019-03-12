@@ -13,11 +13,8 @@ trait ValidationResultStatic extends js.Object {
 
 object ValidationResultStatic {
   @scala.inline
-  def apply(
-    createFailedResult: js.Function1[java.lang.String, ValidationResult],
-    passedInstance: ValidationResult
-  ): ValidationResultStatic = {
-    val __obj = js.Dynamic.literal(createFailedResult = createFailedResult, passedInstance = passedInstance)
+  def apply(createFailedResult: java.lang.String => ValidationResult, passedInstance: ValidationResult): ValidationResultStatic = {
+    val __obj = js.Dynamic.literal(createFailedResult = js.Any.fromFunction1(createFailedResult), passedInstance = passedInstance)
   
     __obj.asInstanceOf[ValidationResultStatic]
   }

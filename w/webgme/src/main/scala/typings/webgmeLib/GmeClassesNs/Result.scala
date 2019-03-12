@@ -10,7 +10,7 @@ trait Result extends js.Object {
   /** array of hashes */
   var artifacts: js.Array[webgmeLib.GmeCommonNs.ArtifactHash] = js.native
   var commits: js.Array[_] = js.native
-  var error: nodeLib.Error = js.native
+  var error: stdLib.Error = js.native
   var finishTime: stdLib.Date = js.native
   /** array of PluginMessages */
   var messages: js.Array[java.lang.String] = js.native
@@ -64,7 +64,7 @@ trait Result extends js.Object {
     * Serializes this object to a JSON representation.
     */
   def serialize(): webgmeLib.Anon_FinishTime = js.native
-  def setError(error: nodeLib.Error): scala.Unit = js.native
+  def setError(error: stdLib.Error): scala.Unit = js.native
   /**
     * Sets the error string if any error occured during execution.
     */

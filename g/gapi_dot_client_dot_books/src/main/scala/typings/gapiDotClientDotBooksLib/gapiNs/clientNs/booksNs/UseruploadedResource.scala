@@ -13,12 +13,9 @@ trait UseruploadedResource extends js.Object {
 object UseruploadedResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltFieldsKeyLocaleMaxResults, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Volumes]
-    ]
+    list: gapiDotClientDotBooksLib.Anon_AltFieldsKeyLocaleMaxResults => gapiDotClientLib.gapiNs.clientNs.Request[Volumes]
   ): UseruploadedResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[UseruploadedResource]
   }

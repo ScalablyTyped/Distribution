@@ -25,12 +25,12 @@ object configWorkers {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     loaderConfig: configWorkersLoaderConfig = null,
     loaderUrl: js.Any = null
   ): configWorkers = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (loaderConfig != null) __obj.updateDynamic("loaderConfig")(loaderConfig)
     if (loaderUrl != null) __obj.updateDynamic("loaderUrl")(loaderUrl)
     __obj.asInstanceOf[configWorkers]

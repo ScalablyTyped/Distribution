@@ -55,17 +55,13 @@ trait Options[State, TStateProps, TOwnProps, TMergedProps] extends ConnectOption
 object Options {
   @scala.inline
   def apply[State, TStateProps, TOwnProps, TMergedProps](
-    areMergedPropsEqual: js.Function2[
-      /* nextMergedProps */ TMergedProps, 
-      /* prevMergedProps */ TMergedProps, 
-      scala.Boolean
-    ] = null,
-    areOwnPropsEqual: js.Function2[/* nextOwnProps */ TOwnProps, /* prevOwnProps */ TOwnProps, scala.Boolean] = null,
-    areStatePropsEqual: js.Function2[/* nextStateProps */ TStateProps, /* prevStateProps */ TStateProps, scala.Boolean] = null,
-    areStatesEqual: js.Function2[/* nextState */ State, /* prevState */ State, scala.Boolean] = null,
+    areMergedPropsEqual: (/* nextMergedProps */ TMergedProps, /* prevMergedProps */ TMergedProps) => scala.Boolean = null,
+    areOwnPropsEqual: (/* nextOwnProps */ TOwnProps, /* prevOwnProps */ TOwnProps) => scala.Boolean = null,
+    areStatePropsEqual: (/* nextStateProps */ TStateProps, /* prevStateProps */ TStateProps) => scala.Boolean = null,
+    areStatesEqual: (/* nextState */ State, /* prevState */ State) => scala.Boolean = null,
     context: reactLib.reactMod.ReactNs.Context[ReactReduxContextValue[_, reduxLib.reduxMod.AnyAction]] = null,
     forwardRef: js.UndefOr[scala.Boolean] = js.undefined,
-    getDisplayName: js.Function1[/* componentName */ java.lang.String, java.lang.String] = null,
+    getDisplayName: /* componentName */ java.lang.String => java.lang.String = null,
     methodName: java.lang.String = null,
     pure: js.UndefOr[scala.Boolean] = js.undefined,
     renderCountProp: java.lang.String = null,
@@ -74,13 +70,13 @@ object Options {
     withRef: js.UndefOr[scala.Boolean] = js.undefined
   ): Options[State, TStateProps, TOwnProps, TMergedProps] = {
     val __obj = js.Dynamic.literal()
-    if (areMergedPropsEqual != null) __obj.updateDynamic("areMergedPropsEqual")(areMergedPropsEqual)
-    if (areOwnPropsEqual != null) __obj.updateDynamic("areOwnPropsEqual")(areOwnPropsEqual)
-    if (areStatePropsEqual != null) __obj.updateDynamic("areStatePropsEqual")(areStatePropsEqual)
-    if (areStatesEqual != null) __obj.updateDynamic("areStatesEqual")(areStatesEqual)
+    if (areMergedPropsEqual != null) __obj.updateDynamic("areMergedPropsEqual")(js.Any.fromFunction2(areMergedPropsEqual))
+    if (areOwnPropsEqual != null) __obj.updateDynamic("areOwnPropsEqual")(js.Any.fromFunction2(areOwnPropsEqual))
+    if (areStatePropsEqual != null) __obj.updateDynamic("areStatePropsEqual")(js.Any.fromFunction2(areStatePropsEqual))
+    if (areStatesEqual != null) __obj.updateDynamic("areStatesEqual")(js.Any.fromFunction2(areStatesEqual))
     if (context != null) __obj.updateDynamic("context")(context)
     if (!js.isUndefined(forwardRef)) __obj.updateDynamic("forwardRef")(forwardRef)
-    if (getDisplayName != null) __obj.updateDynamic("getDisplayName")(getDisplayName)
+    if (getDisplayName != null) __obj.updateDynamic("getDisplayName")(js.Any.fromFunction1(getDisplayName))
     if (methodName != null) __obj.updateDynamic("methodName")(methodName)
     if (!js.isUndefined(pure)) __obj.updateDynamic("pure")(pure)
     if (renderCountProp != null) __obj.updateDynamic("renderCountProp")(renderCountProp)

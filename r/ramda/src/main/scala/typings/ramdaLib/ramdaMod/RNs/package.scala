@@ -11,13 +11,14 @@ package object RNs {
   type Arity2Fn = js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any]
   // Represents all objects evolvable with Evolver E
   type Evolvable[E /* <: Evolver */] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof E ]:? any}
-    */ ramdaLib.ramdaLibStrings.Evolvable with js.Any
+  {[ P in keyof E ]:? ramda.ramda.R.Evolved<E[P]>}
+    */ ramdaLib.ramdaLibStrings.Evolvable with E
   type Evolve[O /* <: Evolvable[E] */, E /* <: Evolver */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof O ]: O[P] | ramda.ramda.R.EvolveValue<O[P], E[P]>}
     */ ramdaLib.ramdaLibStrings.Evolve with js.Any
   type EvolveNestedValue[V, E /* <: Evolver */] = Evolve[V, E]
   type EvolveValue[V, E] = (EvolveNestedValue[V, E]) | stdLib.ReturnType[E]
+  type Evolved[T] = Evolvable[T]
   type ObjPred = js.Function2[/* value */ js.Any, /* key */ java.lang.String, scala.Boolean]
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
   type Ord = scala.Double | java.lang.String | scala.Boolean | stdLib.Date

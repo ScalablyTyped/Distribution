@@ -14,8 +14,8 @@ trait SchedulerEnterprise extends js.Object {
 
 object SchedulerEnterprise {
   @scala.inline
-  def apply(getSchedulerInstance: js.Function0[SchedulerStatic]): SchedulerEnterprise = {
-    val __obj = js.Dynamic.literal(getSchedulerInstance = getSchedulerInstance)
+  def apply(getSchedulerInstance: () => SchedulerStatic): SchedulerEnterprise = {
+    val __obj = js.Dynamic.literal(getSchedulerInstance = js.Any.fromFunction0(getSchedulerInstance))
   
     __obj.asInstanceOf[SchedulerEnterprise]
   }

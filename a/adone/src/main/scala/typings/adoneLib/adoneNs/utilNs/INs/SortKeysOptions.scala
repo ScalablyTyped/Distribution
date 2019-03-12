@@ -13,11 +13,11 @@ trait SortKeysOptions extends js.Object {
 object SortKeysOptions {
   @scala.inline
   def apply(
-    compare: js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = null,
+    compare: (/* a */ js.Any, /* b */ js.Any) => scala.Double = null,
     deep: js.UndefOr[scala.Boolean] = js.undefined
   ): SortKeysOptions = {
     val __obj = js.Dynamic.literal()
-    if (compare != null) __obj.updateDynamic("compare")(compare)
+    if (compare != null) __obj.updateDynamic("compare")(js.Any.fromFunction2(compare))
     if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep)
     __obj.asInstanceOf[SortKeysOptions]
   }

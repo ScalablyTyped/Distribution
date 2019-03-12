@@ -42,8 +42,8 @@ object ^ extends js.Object {
   def log(options: blessedLib.blessedMod.WidgetsNs.LogOptions): blessedLib.blessedMod.WidgetsNs.Log = js.native
   def message(): blessedLib.blessedMod.WidgetsNs.MessageElement = js.native
   def message(options: blessedLib.blessedMod.WidgetsNs.MessageOptions): blessedLib.blessedMod.WidgetsNs.MessageElement = js.native
-  def program(): blessedLib.blessedMod.BlessedProgram = js.native
-  def program(options: blessedLib.blessedMod.WidgetsNs.IScreenOptions): blessedLib.blessedMod.BlessedProgram = js.native
+  def program(): BlessedProgram = js.native
+  def program(options: blessedLib.blessedMod.WidgetsNs.IScreenOptions): BlessedProgram = js.native
   def progressbar(): blessedLib.blessedMod.WidgetsNs.ProgressBarElement = js.native
   def progressbar(options: blessedLib.blessedMod.WidgetsNs.ProgressBarOptions): blessedLib.blessedMod.WidgetsNs.ProgressBarElement = js.native
   def prompt(): blessedLib.blessedMod.WidgetsNs.PromptElement = js.native

@@ -31,13 +31,13 @@ object IdentityManagerGenerateTokenOptions {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     serverUrl: java.lang.String,
     ssl: scala.Boolean,
     token: java.lang.String
   ): IdentityManagerGenerateTokenOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, serverUrl = serverUrl, ssl = ssl, token = token)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), serverUrl = serverUrl, ssl = ssl, token = token)
   
     __obj.asInstanceOf[IdentityManagerGenerateTokenOptions]
   }

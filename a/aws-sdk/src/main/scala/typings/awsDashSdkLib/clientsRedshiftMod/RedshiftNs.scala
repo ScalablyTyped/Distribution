@@ -139,7 +139,7 @@ object RedshiftNs extends js.Object {
     /**
       * A list of snapshot identifiers you want to modify.
       */
-    var SnapshotIdentifierList: SnapshotIdentifierList
+    var SnapshotIdentifierList: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.SnapshotIdentifierList
   }
   
   trait BatchModifyClusterSnapshotsOutputMessage extends js.Object {

@@ -47,26 +47,26 @@ trait ColumnComponent extends _ColumnLookup {
 object ColumnComponent {
   @scala.inline
   def apply(
-    delete: js.Function0[scala.Unit],
-    getCells: js.Function0[js.Array[CellComponent]],
-    getDefinition: js.Function0[ColumnDefinition],
-    getElement: js.Function0[stdLib.HTMLElement],
-    getField: js.Function0[java.lang.String],
-    getNextColumn: js.Function0[ColumnComponent | tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`false`],
-    getParentColumn: js.Function0[ColumnComponent | tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`false`],
-    getPrevColumn: js.Function0[ColumnComponent | tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`false`],
-    getSubColumns: js.Function0[js.Array[ColumnComponent]],
-    getTable: js.Function0[tabulatorDashTablesLib.Tabulator],
-    getVisibility: js.Function0[scala.Boolean],
-    headerFilterFocus: js.Function0[scala.Unit],
-    hide: js.Function0[scala.Unit],
-    reloadHeaderFilter: js.Function0[scala.Unit],
-    scrollTo: js.Function0[js.Promise[scala.Unit]],
-    setHeaderFilterValue: js.Function1[js.Any, scala.Unit],
-    show: js.Function0[scala.Unit],
-    toggle: js.Function0[scala.Unit]
+    delete: () => scala.Unit,
+    getCells: () => js.Array[CellComponent],
+    getDefinition: () => ColumnDefinition,
+    getElement: () => stdLib.HTMLElement,
+    getField: () => java.lang.String,
+    getNextColumn: () => ColumnComponent | tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`false`,
+    getParentColumn: () => ColumnComponent | tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`false`,
+    getPrevColumn: () => ColumnComponent | tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`false`,
+    getSubColumns: () => js.Array[ColumnComponent],
+    getTable: () => tabulatorDashTablesLib.Tabulator,
+    getVisibility: () => scala.Boolean,
+    headerFilterFocus: () => scala.Unit,
+    hide: () => scala.Unit,
+    reloadHeaderFilter: () => scala.Unit,
+    scrollTo: () => js.Promise[scala.Unit],
+    setHeaderFilterValue: js.Any => scala.Unit,
+    show: () => scala.Unit,
+    toggle: () => scala.Unit
   ): ColumnComponent = {
-    val __obj = js.Dynamic.literal(delete = delete, getCells = getCells, getDefinition = getDefinition, getElement = getElement, getField = getField, getNextColumn = getNextColumn, getParentColumn = getParentColumn, getPrevColumn = getPrevColumn, getSubColumns = getSubColumns, getTable = getTable, getVisibility = getVisibility, headerFilterFocus = headerFilterFocus, hide = hide, reloadHeaderFilter = reloadHeaderFilter, scrollTo = scrollTo, setHeaderFilterValue = setHeaderFilterValue, show = show, toggle = toggle)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), getCells = js.Any.fromFunction0(getCells), getDefinition = js.Any.fromFunction0(getDefinition), getElement = js.Any.fromFunction0(getElement), getField = js.Any.fromFunction0(getField), getNextColumn = js.Any.fromFunction0(getNextColumn), getParentColumn = js.Any.fromFunction0(getParentColumn), getPrevColumn = js.Any.fromFunction0(getPrevColumn), getSubColumns = js.Any.fromFunction0(getSubColumns), getTable = js.Any.fromFunction0(getTable), getVisibility = js.Any.fromFunction0(getVisibility), headerFilterFocus = js.Any.fromFunction0(headerFilterFocus), hide = js.Any.fromFunction0(hide), reloadHeaderFilter = js.Any.fromFunction0(reloadHeaderFilter), scrollTo = js.Any.fromFunction0(scrollTo), setHeaderFilterValue = js.Any.fromFunction1(setHeaderFilterValue), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
   
     __obj.asInstanceOf[ColumnComponent]
   }

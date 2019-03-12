@@ -26,12 +26,9 @@ object QueryRendererProps {
   @scala.inline
   def apply[T /* <: relayDashRuntimeLib.relayDashRuntimeMod.OperationBase */](
     environment: relayDashRuntimeLib.relayDashRuntimeMod.Environment,
-    render_response: js.Function1[
-      ReadyState[
-        /* import warning: ImportType.apply Failed type conversion: T['response'] */ js.Any
-      ], 
-      js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null]
-    ],
+    render_response: ReadyState[
+      /* import warning: ImportType.apply Failed type conversion: T['response'] */ js.Any
+    ] => js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null],
     variables: /* import warning: ImportType.apply Failed type conversion: T['variables'] */ js.Any,
     cacheConfig: relayDashRuntimeLib.relayDashRuntimeMod.CacheConfig = null,
     dataFrom: reactDashRelayLib.reactDashRelayLibStrings.NETWORK_ONLY | reactDashRelayLib.reactDashRelayLibStrings.STORE_THEN_NETWORK = null,
@@ -39,7 +36,7 @@ object QueryRendererProps {
     rerunParamExperimental: relayDashRuntimeLib.relayDashRuntimeMod.RerunParam = null
   ): QueryRendererProps[T] = {
     val __obj = js.Dynamic.literal(environment = environment, variables = variables)
-    __obj.updateDynamic("render")(render_response)
+    __obj.updateDynamic("render")(js.Any.fromFunction1(render_response))
     if (cacheConfig != null) __obj.updateDynamic("cacheConfig")(cacheConfig)
     if (dataFrom != null) __obj.updateDynamic("dataFrom")(dataFrom.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])

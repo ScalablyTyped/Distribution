@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Instance
   extends stdLib.HTMLElement {
-  var noUiSlider: noUiSlider = js.native
+  var noUiSlider: nouisliderLib.nouisliderMod.noUiSliderNs.noUiSlider = js.native
 }
 

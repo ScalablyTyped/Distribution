@@ -15,11 +15,11 @@ trait NumeralJsFormat extends js.Object {
 object NumeralJsFormat {
   @scala.inline
   def apply(
-    format: js.Function3[js.Any, java.lang.String, RoundingFunction, java.lang.String],
+    format: (js.Any, java.lang.String, RoundingFunction) => java.lang.String,
     regexps: Anon_Format,
-    unformat: js.Function1[java.lang.String, scala.Double]
+    unformat: java.lang.String => scala.Double
   ): NumeralJsFormat = {
-    val __obj = js.Dynamic.literal(format = format, regexps = regexps, unformat = unformat)
+    val __obj = js.Dynamic.literal(format = js.Any.fromFunction3(format), regexps = regexps, unformat = js.Any.fromFunction1(unformat))
   
     __obj.asInstanceOf[NumeralJsFormat]
   }

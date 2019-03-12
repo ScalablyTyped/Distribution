@@ -21,7 +21,7 @@ trait XAccessibleStateSet
     * contains()} for every state type. Now a single call is sufficient.
     * @returns The returned sequence contains one entry for every currently set state. This entry is the id of that state. The order of the states in the sequen
     */
-  val States: activexDashInteropLib.SafeArray[scala.Double]
+  val States: stdLib.SafeArray[scala.Double]
   /**
     * Checks if the given state is a member of the state set of the called object.
     * @param aState The state for which to check membership. This has to be one of the constants of {@link AccessibleStateType} .
@@ -41,7 +41,7 @@ trait XAccessibleStateSet
     * contains()} for every state type. Now a single call is sufficient.
     * @returns The returned sequence contains one entry for every currently set state. This entry is the id of that state. The order of the states in the sequen
     */
-  def getStates(): activexDashInteropLib.SafeArray[scala.Double]
+  def getStates(): stdLib.SafeArray[scala.Double]
   /**
     * Checks whether the current state set is empty.
     * @returns Returns `TRUE` if there is no state in this state set and `FALSE` if there is at least one set state in it.
@@ -52,16 +52,16 @@ trait XAccessibleStateSet
 object XAccessibleStateSet {
   @scala.inline
   def apply(
-    States: activexDashInteropLib.SafeArray[scala.Double],
-    acquire: js.Function0[scala.Unit],
-    contains: js.Function1[scala.Double, scala.Boolean],
-    containsAll: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Boolean],
-    getStates: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    isEmpty: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    States: stdLib.SafeArray[scala.Double],
+    acquire: () => scala.Unit,
+    contains: scala.Double => scala.Boolean,
+    containsAll: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => scala.Boolean,
+    getStates: () => stdLib.SafeArray[scala.Double],
+    isEmpty: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAccessibleStateSet = {
-    val __obj = js.Dynamic.literal(States = States, acquire = acquire, contains = contains, containsAll = containsAll, getStates = getStates, isEmpty = isEmpty, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(States = States, acquire = js.Any.fromFunction0(acquire), contains = js.Any.fromFunction1(contains), containsAll = js.Any.fromFunction1(containsAll), getStates = js.Any.fromFunction0(getStates), isEmpty = js.Any.fromFunction0(isEmpty), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAccessibleStateSet]
   }

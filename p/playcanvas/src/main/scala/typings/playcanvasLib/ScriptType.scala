@@ -49,21 +49,21 @@ object ScriptType {
   @scala.inline
   def apply(
     attributes: org.scalablytyped.runtime.StringDictionary[playcanvasLib.pcNs.AttributesArgs] = null,
-    initialize: js.Function0[scala.Unit] = null,
+    initialize: () => scala.Unit = null,
     name: java.lang.String = null,
-    postInitialize: js.Function0[scala.Unit] = null,
-    postUpdate: js.Function0[scala.Unit] = null,
-    swap: js.Function0[scala.Unit] = null,
-    update: js.Function1[/* dt */ scala.Double, scala.Unit] = null
+    postInitialize: () => scala.Unit = null,
+    postUpdate: () => scala.Unit = null,
+    swap: () => scala.Unit = null,
+    update: /* dt */ scala.Double => scala.Unit = null
   ): ScriptType = {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
+    if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction0(initialize))
     if (name != null) __obj.updateDynamic("name")(name)
-    if (postInitialize != null) __obj.updateDynamic("postInitialize")(postInitialize)
-    if (postUpdate != null) __obj.updateDynamic("postUpdate")(postUpdate)
-    if (swap != null) __obj.updateDynamic("swap")(swap)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (postInitialize != null) __obj.updateDynamic("postInitialize")(js.Any.fromFunction0(postInitialize))
+    if (postUpdate != null) __obj.updateDynamic("postUpdate")(js.Any.fromFunction0(postUpdate))
+    if (swap != null) __obj.updateDynamic("swap")(js.Any.fromFunction0(swap))
+    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction1(update))
     __obj.asInstanceOf[ScriptType]
   }
 }

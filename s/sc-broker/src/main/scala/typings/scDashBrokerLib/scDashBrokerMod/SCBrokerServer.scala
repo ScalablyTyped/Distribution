@@ -18,14 +18,14 @@ trait SCBrokerServer
     listener: js.Function3[
       /* brokerId */ java.lang.String, 
       /* data */ js.Any, 
-      /* callback */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* data */ js.Any, scala.Unit], 
+      /* callback */ js.Function2[/* err */ stdLib.Error | scala.Null, /* data */ js.Any, scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
   @JSName("on")
   def on_error(
     event: scDashBrokerLib.scDashBrokerLibStrings.error,
-    listener: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    listener: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_exit(
@@ -44,7 +44,7 @@ trait SCBrokerServer
   def sendToBroker(
     data: js.Any,
     callback: js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* data */ js.Any, 
       /* brokerId */ java.lang.String, 
       scala.Unit

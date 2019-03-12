@@ -16,8 +16,8 @@ trait Anon_Get[TElement]
 
 object Anon_Get {
   @scala.inline
-  def apply[TElement](get: js.Function1[jqueryLib.JQueryNs.Tween[TElement], js.Any]): Anon_Get[TElement] = {
-    val __obj = js.Dynamic.literal(get = get)
+  def apply[TElement](get: jqueryLib.JQueryNs.Tween[TElement] => js.Any): Anon_Get[TElement] = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[Anon_Get[TElement]]
   }

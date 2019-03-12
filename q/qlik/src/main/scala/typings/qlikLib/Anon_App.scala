@@ -16,14 +16,10 @@ trait Anon_App extends js.Object {
 object Anon_App {
   @scala.inline
   def apply(
-    getContent: js.Function2[
-      java.lang.String, 
-      js.Function2[/* value */ qlikLib.qlikMod.Variable, Anon_App, scala.Unit], 
-      js.Promise[_]
-    ],
-    setContent: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    getContent: (java.lang.String, js.Function2[/* value */ qlikLib.qlikMod.Variable, Anon_App, scala.Unit]) => js.Promise[_],
+    setContent: (java.lang.String, java.lang.String) => scala.Unit
   ): Anon_App = {
-    val __obj = js.Dynamic.literal(getContent = getContent, setContent = setContent)
+    val __obj = js.Dynamic.literal(getContent = js.Any.fromFunction2(getContent), setContent = js.Any.fromFunction2(setContent))
   
     __obj.asInstanceOf[Anon_App]
   }

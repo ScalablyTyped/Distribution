@@ -26,7 +26,7 @@ object CardProps {
     expandable: js.UndefOr[scala.Boolean] = js.undefined,
     expanded: js.UndefOr[scala.Boolean] = js.undefined,
     initiallyExpanded: js.UndefOr[scala.Boolean] = js.undefined,
-    onExpandChange: js.Function1[/* isExpanded */ scala.Boolean, scala.Unit] = null,
+    onExpandChange: /* isExpanded */ scala.Boolean => scala.Unit = null,
     showExpandableButton: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): CardProps = {
@@ -37,7 +37,7 @@ object CardProps {
     if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable)
     if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
     if (!js.isUndefined(initiallyExpanded)) __obj.updateDynamic("initiallyExpanded")(initiallyExpanded)
-    if (onExpandChange != null) __obj.updateDynamic("onExpandChange")(onExpandChange)
+    if (onExpandChange != null) __obj.updateDynamic("onExpandChange")(js.Any.fromFunction1(onExpandChange))
     if (!js.isUndefined(showExpandableButton)) __obj.updateDynamic("showExpandableButton")(showExpandableButton)
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[CardProps]

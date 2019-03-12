@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait XDigestContext
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** finalizes digest and disposes context. */
-  def finalizeDigestAndDispose(): activexDashInteropLib.SafeArray[scala.Double]
+  def finalizeDigestAndDispose(): stdLib.SafeArray[scala.Double]
   /**
     * update the digest with the given data.
     * @param aData data that should be used to update the digest
@@ -26,13 +26,13 @@ trait XDigestContext
 object XDigestContext {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    finalizeDigestAndDispose: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    updateDigest: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
+    acquire: () => scala.Unit,
+    finalizeDigestAndDispose: () => stdLib.SafeArray[scala.Double],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    updateDigest: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => scala.Unit
   ): XDigestContext = {
-    val __obj = js.Dynamic.literal(acquire = acquire, finalizeDigestAndDispose = finalizeDigestAndDispose, queryInterface = queryInterface, release = release, updateDigest = updateDigest)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), finalizeDigestAndDispose = js.Any.fromFunction0(finalizeDigestAndDispose), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), updateDigest = js.Any.fromFunction1(updateDigest))
   
     __obj.asInstanceOf[XDigestContext]
   }

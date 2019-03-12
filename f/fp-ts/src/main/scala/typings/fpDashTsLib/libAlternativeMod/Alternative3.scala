@@ -13,25 +13,13 @@ object Alternative3 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS3 */](
     URI: F,
-    alt: js.Function2[
-      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
-    ],
-    ap: js.Function2[
-      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Function1[js.Any, js.Any]], 
-      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
-    ],
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
-    ],
-    of: js.Function1[js.Any, fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]],
-    zero: js.Function0[fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]]
+    alt: (fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any],
+    ap: (fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Function1[js.Any, js.Any]], fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any],
+    map: (fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any],
+    of: js.Any => fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any],
+    zero: () => fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
   ): Alternative3[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], alt = alt, ap = ap, map = map, of = of, zero = zero)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], alt = js.Any.fromFunction2(alt), ap = js.Any.fromFunction2(ap), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of), zero = js.Any.fromFunction0(zero))
   
     __obj.asInstanceOf[Alternative3[F]]
   }

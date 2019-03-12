@@ -70,16 +70,16 @@ object XClob {
   @scala.inline
   def apply(
     CharacterStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
-    acquire: js.Function0[scala.Unit],
-    getCharacterStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
-    getSubString: js.Function2[scala.Double, scala.Double, java.lang.String],
-    length: js.Function0[scala.Double],
-    position: js.Function2[java.lang.String, scala.Double, scala.Double],
-    positionOfClob: js.Function2[XClob, scala.Double, scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getCharacterStream: () => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    getSubString: (scala.Double, scala.Double) => java.lang.String,
+    length: () => scala.Double,
+    position: (java.lang.String, scala.Double) => scala.Double,
+    positionOfClob: (XClob, scala.Double) => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XClob = {
-    val __obj = js.Dynamic.literal(CharacterStream = CharacterStream, acquire = acquire, getCharacterStream = getCharacterStream, getSubString = getSubString, length = length, position = position, positionOfClob = positionOfClob, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(CharacterStream = CharacterStream, acquire = js.Any.fromFunction0(acquire), getCharacterStream = js.Any.fromFunction0(getCharacterStream), getSubString = js.Any.fromFunction2(getSubString), length = js.Any.fromFunction0(length), position = js.Any.fromFunction2(position), positionOfClob = js.Any.fromFunction2(positionOfClob), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XClob]
   }

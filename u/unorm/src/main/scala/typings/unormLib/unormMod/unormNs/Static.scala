@@ -15,12 +15,12 @@ trait Static extends js.Object {
 object Static {
   @scala.inline
   def apply(
-    nfc: js.Function1[java.lang.String, java.lang.String],
-    nfd: js.Function1[java.lang.String, java.lang.String],
-    nfkc: js.Function1[java.lang.String, java.lang.String],
-    nfkd: js.Function1[java.lang.String, java.lang.String]
+    nfc: java.lang.String => java.lang.String,
+    nfd: java.lang.String => java.lang.String,
+    nfkc: java.lang.String => java.lang.String,
+    nfkd: java.lang.String => java.lang.String
   ): Static = {
-    val __obj = js.Dynamic.literal(nfc = nfc, nfd = nfd, nfkc = nfkc, nfkd = nfkd)
+    val __obj = js.Dynamic.literal(nfc = js.Any.fromFunction1(nfc), nfd = js.Any.fromFunction1(nfd), nfkc = js.Any.fromFunction1(nfkc), nfkd = js.Any.fromFunction1(nfkd))
   
     __obj.asInstanceOf[Static]
   }

@@ -15,10 +15,10 @@ object OutgoingWebhooks {
   @scala.inline
   def apply[T](
     calls: js.Array[OutgoingWebhookCall[T]],
-    reset: js.Function0[scala.Unit],
-    send: js.Function2[OutgoingWebhookUrl, T, js.Promise[scala.Unit]]
+    reset: () => scala.Unit,
+    send: (OutgoingWebhookUrl, T) => js.Promise[scala.Unit]
   ): OutgoingWebhooks[T] = {
-    val __obj = js.Dynamic.literal(calls = calls, reset = reset, send = send)
+    val __obj = js.Dynamic.literal(calls = calls, reset = js.Any.fromFunction0(reset), send = js.Any.fromFunction2(send))
   
     __obj.asInstanceOf[OutgoingWebhooks[T]]
   }

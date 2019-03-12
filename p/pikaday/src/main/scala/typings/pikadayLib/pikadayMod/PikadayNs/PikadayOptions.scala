@@ -187,7 +187,7 @@ object PikadayOptions {
     bound: js.UndefOr[scala.Boolean] = js.undefined,
     container: stdLib.HTMLElement = null,
     defaultDate: stdLib.Date = null,
-    disableDayFn: js.Function1[/* date */ stdLib.Date, scala.Boolean] = null,
+    disableDayFn: /* date */ stdLib.Date => scala.Boolean = null,
     disableWeekends: js.UndefOr[scala.Boolean] = js.undefined,
     enableSelectionDaysInNextAndPreviousMonths: js.UndefOr[scala.Boolean] = js.undefined,
     events: js.Array[java.lang.String] = null,
@@ -202,11 +202,11 @@ object PikadayOptions {
     maxDate: stdLib.Date = null,
     minDate: stdLib.Date = null,
     numberOfMonths: scala.Int | scala.Double = null,
-    onClose: js.Function0[scala.Unit] = null,
-    onDraw: js.Function0[scala.Unit] = null,
-    onOpen: js.Function0[scala.Unit] = null,
+    onClose: () => scala.Unit = null,
+    onDraw: () => scala.Unit = null,
+    onOpen: () => scala.Unit = null,
     onSelect: js.ThisFunction1[/* this */ pikadayLib.pikadayMod.Pikaday, /* date */ stdLib.Date, scala.Unit] = null,
-    parse: js.Function2[/* date */ java.lang.String, /* format */ java.lang.String, stdLib.Date | scala.Null] = null,
+    parse: (/* date */ java.lang.String, /* format */ java.lang.String) => stdLib.Date | scala.Null = null,
     pickWholeWeek: js.UndefOr[scala.Boolean] = js.undefined,
     position: java.lang.String = null,
     reposition: js.UndefOr[scala.Boolean] = js.undefined,
@@ -215,7 +215,7 @@ object PikadayOptions {
     showMonthAfterYear: js.UndefOr[scala.Boolean] = js.undefined,
     showWeekNumber: js.UndefOr[scala.Boolean] = js.undefined,
     theme: java.lang.String = null,
-    toString: js.Function2[/* date */ stdLib.Date, /* format */ js.UndefOr[java.lang.String], java.lang.String] = null,
+    toString: (/* date */ stdLib.Date, /* format */ js.UndefOr[java.lang.String]) => java.lang.String = null,
     trigger: stdLib.HTMLElement = null,
     yearRange: scala.Double | js.Array[scala.Double] = null,
     yearSuffix: java.lang.String = null
@@ -226,7 +226,7 @@ object PikadayOptions {
     if (!js.isUndefined(bound)) __obj.updateDynamic("bound")(bound)
     if (container != null) __obj.updateDynamic("container")(container)
     if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate)
-    if (disableDayFn != null) __obj.updateDynamic("disableDayFn")(disableDayFn)
+    if (disableDayFn != null) __obj.updateDynamic("disableDayFn")(js.Any.fromFunction1(disableDayFn))
     if (!js.isUndefined(disableWeekends)) __obj.updateDynamic("disableWeekends")(disableWeekends)
     if (!js.isUndefined(enableSelectionDaysInNextAndPreviousMonths)) __obj.updateDynamic("enableSelectionDaysInNextAndPreviousMonths")(enableSelectionDaysInNextAndPreviousMonths)
     if (events != null) __obj.updateDynamic("events")(events)
@@ -241,11 +241,11 @@ object PikadayOptions {
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
     if (minDate != null) __obj.updateDynamic("minDate")(minDate)
     if (numberOfMonths != null) __obj.updateDynamic("numberOfMonths")(numberOfMonths.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onDraw != null) __obj.updateDynamic("onDraw")(onDraw)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
+    if (onDraw != null) __obj.updateDynamic("onDraw")(js.Any.fromFunction0(onDraw))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
     if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (parse != null) __obj.updateDynamic("parse")(parse)
+    if (parse != null) __obj.updateDynamic("parse")(js.Any.fromFunction2(parse))
     if (!js.isUndefined(pickWholeWeek)) __obj.updateDynamic("pickWholeWeek")(pickWholeWeek)
     if (position != null) __obj.updateDynamic("position")(position)
     if (!js.isUndefined(reposition)) __obj.updateDynamic("reposition")(reposition)
@@ -254,7 +254,7 @@ object PikadayOptions {
     if (!js.isUndefined(showMonthAfterYear)) __obj.updateDynamic("showMonthAfterYear")(showMonthAfterYear)
     if (!js.isUndefined(showWeekNumber)) __obj.updateDynamic("showWeekNumber")(showWeekNumber)
     if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (toString != null) __obj.updateDynamic("toString")(toString)
+    if (toString != null) __obj.updateDynamic("toString")(js.Any.fromFunction2(toString))
     if (trigger != null) __obj.updateDynamic("trigger")(trigger)
     if (yearRange != null) __obj.updateDynamic("yearRange")(yearRange.asInstanceOf[js.Any])
     if (yearSuffix != null) __obj.updateDynamic("yearSuffix")(yearSuffix)

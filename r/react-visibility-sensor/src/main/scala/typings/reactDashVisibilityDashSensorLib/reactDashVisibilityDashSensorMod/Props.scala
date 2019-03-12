@@ -10,7 +10,7 @@ trait Props extends js.Object {
   var children: js.UndefOr[
     reactLib.reactMod.ReactNs.ReactElement[_] | reactDashVisibilityDashSensorLib.ChildFunction
   ] = js.undefined
-  var containment: js.UndefOr[reactLib.HTMLElement] = js.undefined
+  var containment: js.UndefOr[stdLib.HTMLElement] = js.undefined
   var delayedCall: js.UndefOr[scala.Boolean] = js.undefined
   var intervalCheck: js.UndefOr[scala.Boolean] = js.undefined
   var intervalDelay: js.UndefOr[scala.Double] = js.undefined
@@ -31,13 +31,13 @@ object Props {
   def apply(
     active: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNs.ReactElement[_] | reactDashVisibilityDashSensorLib.ChildFunction = null,
-    containment: reactLib.HTMLElement = null,
+    containment: stdLib.HTMLElement = null,
     delayedCall: js.UndefOr[scala.Boolean] = js.undefined,
     intervalCheck: js.UndefOr[scala.Boolean] = js.undefined,
     intervalDelay: scala.Int | scala.Double = null,
     minTopValue: scala.Int | scala.Double = null,
     offset: Shape = null,
-    onChange: js.Function1[/* isVisible */ scala.Boolean, scala.Unit] = null,
+    onChange: /* isVisible */ scala.Boolean => scala.Unit = null,
     partialVisibility: js.UndefOr[scala.Boolean] = js.undefined,
     resizeCheck: js.UndefOr[scala.Boolean] = js.undefined,
     resizeDelay: scala.Int | scala.Double = null,
@@ -55,7 +55,7 @@ object Props {
     if (intervalDelay != null) __obj.updateDynamic("intervalDelay")(intervalDelay.asInstanceOf[js.Any])
     if (minTopValue != null) __obj.updateDynamic("minTopValue")(minTopValue.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (!js.isUndefined(partialVisibility)) __obj.updateDynamic("partialVisibility")(partialVisibility)
     if (!js.isUndefined(resizeCheck)) __obj.updateDynamic("resizeCheck")(resizeCheck)
     if (resizeDelay != null) __obj.updateDynamic("resizeDelay")(resizeDelay.asInstanceOf[js.Any])

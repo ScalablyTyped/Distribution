@@ -15,12 +15,12 @@ trait PageEvents extends js.Object {
 object PageEvents {
   @scala.inline
   def apply(
-    onPageScroll: js.Function1[Page, scala.Unit],
-    onPullDownRefresh: js.Function1[Page, scala.Unit],
-    onReachBottom: js.Function1[Page, scala.Unit],
-    onShareAppMessage: js.Function1[Page, scala.Unit]
+    onPageScroll: Page => scala.Unit,
+    onPullDownRefresh: Page => scala.Unit,
+    onReachBottom: Page => scala.Unit,
+    onShareAppMessage: Page => scala.Unit
   ): PageEvents = {
-    val __obj = js.Dynamic.literal(onPageScroll = onPageScroll, onPullDownRefresh = onPullDownRefresh, onReachBottom = onReachBottom, onShareAppMessage = onShareAppMessage)
+    val __obj = js.Dynamic.literal(onPageScroll = js.Any.fromFunction1(onPageScroll), onPullDownRefresh = js.Any.fromFunction1(onPullDownRefresh), onReachBottom = js.Any.fromFunction1(onReachBottom), onShareAppMessage = js.Any.fromFunction1(onShareAppMessage))
   
     __obj.asInstanceOf[PageEvents]
   }

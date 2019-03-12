@@ -18,9 +18,9 @@ object Sparklines {
     paddingX: scala.Double,
     paddingY: scala.Double,
     radius: scala.Double,
-    template: js.Function5[js.Any, java.lang.String, js.Array[_], js.Any, scala.Double, java.lang.String]
+    template: (js.Any, java.lang.String, js.Array[_], js.Any, scala.Double) => java.lang.String
   ): Sparklines = {
-    val __obj = js.Dynamic.literal(paddingX = paddingX, paddingY = paddingY, radius = radius, template = template)
+    val __obj = js.Dynamic.literal(paddingX = paddingX, paddingY = paddingY, radius = radius, template = js.Any.fromFunction5(template))
   
     __obj.asInstanceOf[Sparklines]
   }

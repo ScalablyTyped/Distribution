@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ParagraphFormat protected () extends js.Object {
   var Alignment: PpParagraphAlignment = js.native
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   var BaseLineAlignment: PpBaselineAlignment = js.native
   val Bullet: BulletFormat = js.native
   var FarEastLineBreakControl: activexDashOfficeLib.OfficeNs.MsoTriState = js.native

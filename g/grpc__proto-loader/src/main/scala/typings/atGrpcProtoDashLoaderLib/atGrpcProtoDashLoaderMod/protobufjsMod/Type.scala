@@ -14,14 +14,11 @@ trait Type extends js.Object {
 object Type {
   @scala.inline
   def apply(
-    toDescriptor: js.Function1[
-      java.lang.String, 
-      (protobufjsLib.protobufjsMod.Message[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify descriptor.IDescriptorProto */ _
-      ]) with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify descriptor.IDescriptorProto */ js.Any)
-    ]
+    toDescriptor: java.lang.String => (protobufjsLib.protobufjsMod.Message[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify descriptor.IDescriptorProto */ _
+    ]) with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify descriptor.IDescriptorProto */ js.Any)
   ): Type = {
-    val __obj = js.Dynamic.literal(toDescriptor = toDescriptor)
+    val __obj = js.Dynamic.literal(toDescriptor = js.Any.fromFunction1(toDescriptor))
   
     __obj.asInstanceOf[Type]
   }

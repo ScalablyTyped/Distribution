@@ -12,8 +12,8 @@ trait Static extends js.Object {
 
 object Static {
   @scala.inline
-  def apply(connect: js.Function1[ConnectOptions, Connection], options: ConnectOptions): Static = {
-    val __obj = js.Dynamic.literal(connect = connect, options = options)
+  def apply(connect: ConnectOptions => Connection, options: ConnectOptions): Static = {
+    val __obj = js.Dynamic.literal(connect = js.Any.fromFunction1(connect), options = options)
   
     __obj.asInstanceOf[Static]
   }

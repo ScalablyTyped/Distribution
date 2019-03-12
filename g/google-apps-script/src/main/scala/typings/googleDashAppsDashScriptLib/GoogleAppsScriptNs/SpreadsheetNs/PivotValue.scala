@@ -19,16 +19,16 @@ trait PivotValue extends js.Object {
 object PivotValue {
   @scala.inline
   def apply(
-    getDisplayType: js.Function0[PivotValueDisplayType],
-    getFormula: js.Function0[java.lang.String],
-    getPivotTable: js.Function0[PivotTable],
-    getSummarizedBy: js.Function0[PivotTableSummarizeFunction],
-    setDisplayName: js.Function1[java.lang.String, PivotValue],
-    setFormula: js.Function1[java.lang.String, PivotValue],
-    showAs: js.Function1[PivotValueDisplayType, PivotValue],
-    summarizeBy: js.Function1[PivotTableSummarizeFunction, PivotValue]
+    getDisplayType: () => PivotValueDisplayType,
+    getFormula: () => java.lang.String,
+    getPivotTable: () => PivotTable,
+    getSummarizedBy: () => PivotTableSummarizeFunction,
+    setDisplayName: java.lang.String => PivotValue,
+    setFormula: java.lang.String => PivotValue,
+    showAs: PivotValueDisplayType => PivotValue,
+    summarizeBy: PivotTableSummarizeFunction => PivotValue
   ): PivotValue = {
-    val __obj = js.Dynamic.literal(getDisplayType = getDisplayType, getFormula = getFormula, getPivotTable = getPivotTable, getSummarizedBy = getSummarizedBy, setDisplayName = setDisplayName, setFormula = setFormula, showAs = showAs, summarizeBy = summarizeBy)
+    val __obj = js.Dynamic.literal(getDisplayType = js.Any.fromFunction0(getDisplayType), getFormula = js.Any.fromFunction0(getFormula), getPivotTable = js.Any.fromFunction0(getPivotTable), getSummarizedBy = js.Any.fromFunction0(getSummarizedBy), setDisplayName = js.Any.fromFunction1(setDisplayName), setFormula = js.Any.fromFunction1(setFormula), showAs = js.Any.fromFunction1(showAs), summarizeBy = js.Any.fromFunction1(summarizeBy))
   
     __obj.asInstanceOf[PivotValue]
   }

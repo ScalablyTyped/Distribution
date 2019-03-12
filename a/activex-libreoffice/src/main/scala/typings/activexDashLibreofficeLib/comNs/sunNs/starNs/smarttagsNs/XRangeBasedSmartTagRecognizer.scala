@@ -28,20 +28,13 @@ trait XRangeBasedSmartTagRecognizer
 object XRangeBasedSmartTagRecognizer {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    recognizeTextRange: js.Function5[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange, 
-      SmartTagRecognizerMode, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextMarkup, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, 
-      scala.Unit
-    ],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    recognizeTextRange: (activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange, SmartTagRecognizerMode, activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextMarkup, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController) => scala.Unit,
+    release: () => scala.Unit
   ): XRangeBasedSmartTagRecognizer = {
-    val __obj = js.Dynamic.literal(acquire = acquire, initialize = initialize, queryInterface = queryInterface, recognizeTextRange = recognizeTextRange, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), recognizeTextRange = js.Any.fromFunction5(recognizeTextRange), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XRangeBasedSmartTagRecognizer]
   }

@@ -34,7 +34,7 @@ trait Server
   def on_econnreset(
     event: httpDashProxyLib.httpDashProxyLibStrings.econnreset,
     listener: js.Function4[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* req */ nodeLib.httpMod.IncomingMessage, 
       /* res */ nodeLib.httpMod.ServerResponse, 
       /* target */ httpDashProxyLib.ProxyTargetUrl, 

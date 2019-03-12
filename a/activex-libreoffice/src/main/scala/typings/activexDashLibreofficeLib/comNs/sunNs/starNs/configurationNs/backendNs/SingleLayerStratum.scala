@@ -15,17 +15,17 @@ object SingleLayerStratum {
   def apply(
     AdminEntity: java.lang.String,
     OwnerEntity: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getAdminEntity: js.Function0[java.lang.String],
-    getLayer: js.Function2[java.lang.String, java.lang.String, XLayer],
-    getOwnerEntity: js.Function0[java.lang.String],
-    getUpdatableLayer: js.Function1[java.lang.String, XUpdatableLayer],
-    isEqualEntity: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    supportsEntity: js.Function1[java.lang.String, scala.Boolean]
+    acquire: () => scala.Unit,
+    getAdminEntity: () => java.lang.String,
+    getLayer: (java.lang.String, java.lang.String) => XLayer,
+    getOwnerEntity: () => java.lang.String,
+    getUpdatableLayer: java.lang.String => XUpdatableLayer,
+    isEqualEntity: (java.lang.String, java.lang.String) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    supportsEntity: java.lang.String => scala.Boolean
   ): SingleLayerStratum = {
-    val __obj = js.Dynamic.literal(AdminEntity = AdminEntity, OwnerEntity = OwnerEntity, acquire = acquire, getAdminEntity = getAdminEntity, getLayer = getLayer, getOwnerEntity = getOwnerEntity, getUpdatableLayer = getUpdatableLayer, isEqualEntity = isEqualEntity, queryInterface = queryInterface, release = release, supportsEntity = supportsEntity)
+    val __obj = js.Dynamic.literal(AdminEntity = AdminEntity, OwnerEntity = OwnerEntity, acquire = js.Any.fromFunction0(acquire), getAdminEntity = js.Any.fromFunction0(getAdminEntity), getLayer = js.Any.fromFunction2(getLayer), getOwnerEntity = js.Any.fromFunction0(getOwnerEntity), getUpdatableLayer = js.Any.fromFunction1(getUpdatableLayer), isEqualEntity = js.Any.fromFunction2(isEqualEntity), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), supportsEntity = js.Any.fromFunction1(supportsEntity))
   
     __obj.asInstanceOf[SingleLayerStratum]
   }

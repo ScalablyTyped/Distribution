@@ -41,48 +41,16 @@ trait Wallet extends js.Object {
 object Wallet {
   @scala.inline
   def apply(
-    accountInfo: js.Function1[
-      ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.AccountInfoResult], 
-      scala.Unit
-    ],
-    incomingTransferAccept: js.Function3[
-      java.lang.String, 
-      java.lang.String, 
-      ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.IncomingTransferAcceptResult], 
-      scala.Unit
-    ],
-    incomingTransferReject: js.Function2[
-      java.lang.String, 
-      ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.IncomingTransferRejectResult], 
-      scala.Unit
-    ],
-    operationDetails: js.Function2[
-      java.lang.String, 
-      ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.OperationDetailsResult], 
-      scala.Unit
-    ],
-    operationHistory: js.Function2[
-      yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.OperationHistoryOptions, 
-      ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.OperationHistoryResult], 
-      scala.Unit
-    ],
-    processPayment: js.Function2[
-      yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.ProcessPaymentOptions, 
-      ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.ProcessPaymentResult], 
-      scala.Unit
-    ],
-    requestPayment: js.Function2[
-      yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.RequestPaymentOptions, 
-      ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.RequestPaymentResult], 
-      scala.Unit
-    ],
-    sendAuthenticatedRequest: js.Function2[
-      yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.SendAuthenticatedRequestParams, 
-      ResponseCallback[_], 
-      scala.Unit
-    ]
+    accountInfo: ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.AccountInfoResult] => scala.Unit,
+    incomingTransferAccept: (java.lang.String, java.lang.String, ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.IncomingTransferAcceptResult]) => scala.Unit,
+    incomingTransferReject: (java.lang.String, ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.IncomingTransferRejectResult]) => scala.Unit,
+    operationDetails: (java.lang.String, ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.OperationDetailsResult]) => scala.Unit,
+    operationHistory: (yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.OperationHistoryOptions, ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.OperationHistoryResult]) => scala.Unit,
+    processPayment: (yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.ProcessPaymentOptions, ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.ProcessPaymentResult]) => scala.Unit,
+    requestPayment: (yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.RequestPaymentOptions, ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.RequestPaymentResult]) => scala.Unit,
+    sendAuthenticatedRequest: (yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.SendAuthenticatedRequestParams, ResponseCallback[_]) => scala.Unit
   ): Wallet = {
-    val __obj = js.Dynamic.literal(accountInfo = accountInfo, incomingTransferAccept = incomingTransferAccept, incomingTransferReject = incomingTransferReject, operationDetails = operationDetails, operationHistory = operationHistory, processPayment = processPayment, requestPayment = requestPayment, sendAuthenticatedRequest = sendAuthenticatedRequest)
+    val __obj = js.Dynamic.literal(accountInfo = js.Any.fromFunction1(accountInfo), incomingTransferAccept = js.Any.fromFunction3(incomingTransferAccept), incomingTransferReject = js.Any.fromFunction2(incomingTransferReject), operationDetails = js.Any.fromFunction2(operationDetails), operationHistory = js.Any.fromFunction2(operationHistory), processPayment = js.Any.fromFunction2(processPayment), requestPayment = js.Any.fromFunction2(requestPayment), sendAuthenticatedRequest = js.Any.fromFunction2(sendAuthenticatedRequest))
   
     __obj.asInstanceOf[Wallet]
   }

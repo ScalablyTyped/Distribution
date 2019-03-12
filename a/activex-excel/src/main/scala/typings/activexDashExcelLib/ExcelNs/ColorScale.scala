@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.ColorScale")
 @js.native
 class ColorScale protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   @JSName("AppliesTo")
   val AppliesTo_Original: Range = js.native
   @JSName("ColorScaleCriteria")

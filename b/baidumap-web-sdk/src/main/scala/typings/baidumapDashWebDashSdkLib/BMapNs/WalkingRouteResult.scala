@@ -17,12 +17,12 @@ object WalkingRouteResult {
   @scala.inline
   def apply(
     city: java.lang.String,
-    getEnd: js.Function0[LocalResultPoi],
-    getNumPlans: js.Function0[scala.Double],
-    getPlan: js.Function1[scala.Double, RoutePlan],
-    getStart: js.Function0[LocalResultPoi]
+    getEnd: () => LocalResultPoi,
+    getNumPlans: () => scala.Double,
+    getPlan: scala.Double => RoutePlan,
+    getStart: () => LocalResultPoi
   ): WalkingRouteResult = {
-    val __obj = js.Dynamic.literal(city = city, getEnd = getEnd, getNumPlans = getNumPlans, getPlan = getPlan, getStart = getStart)
+    val __obj = js.Dynamic.literal(city = city, getEnd = js.Any.fromFunction0(getEnd), getNumPlans = js.Any.fromFunction0(getNumPlans), getPlan = js.Any.fromFunction1(getPlan), getStart = js.Any.fromFunction0(getStart))
   
     __obj.asInstanceOf[WalkingRouteResult]
   }

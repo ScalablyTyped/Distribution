@@ -20,14 +20,14 @@ object Session {
   @scala.inline
   def apply(
     cookie: SessionCookie,
-    destroy: js.Function1[js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
+    destroy: js.Function1[/* err */ js.Any, scala.Unit] => scala.Unit,
     id: java.lang.String,
-    regenerate: js.Function1[js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
-    reload: js.Function1[js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
-    save: js.Function1[js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
-    touch: js.Function1[js.Function1[/* err */ js.Any, scala.Unit], scala.Unit]
+    regenerate: js.Function1[/* err */ js.Any, scala.Unit] => scala.Unit,
+    reload: js.Function1[/* err */ js.Any, scala.Unit] => scala.Unit,
+    save: js.Function1[/* err */ js.Any, scala.Unit] => scala.Unit,
+    touch: js.Function1[/* err */ js.Any, scala.Unit] => scala.Unit
   ): Session = {
-    val __obj = js.Dynamic.literal(cookie = cookie, destroy = destroy, id = id, regenerate = regenerate, reload = reload, save = save, touch = touch)
+    val __obj = js.Dynamic.literal(cookie = cookie, destroy = js.Any.fromFunction1(destroy), id = id, regenerate = js.Any.fromFunction1(regenerate), reload = js.Any.fromFunction1(reload), save = js.Any.fromFunction1(save), touch = js.Any.fromFunction1(touch))
   
     __obj.asInstanceOf[Session]
   }

@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val FIELD_NAMES: js.Array[java.lang.String] = js.native
   val FIELD_SIZES: js.Array[scala.Double] = js.native
-  val NIL: uuidjsLib.uuidjsMod.UUID = js.native
+  val NIL: UUID = js.native
   var overwrittenUUID: js.Any = js.native
-  def genV1(): uuidjsLib.uuidjsMod.UUID = js.native
-  def genV4(): uuidjsLib.uuidjsMod.UUID = js.native
+  def genV1(): UUID = js.native
+  def genV4(): UUID = js.native
   def generate(): java.lang.String = js.native
-  def parse(strId: java.lang.String): uuidjsLib.uuidjsMod.UUID = js.native
+  def parse(strId: java.lang.String): UUID = js.native
   def resetState(): scala.Unit = js.native
   def useMathRandom(): scala.Unit = js.native
 }

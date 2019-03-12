@@ -17,18 +17,10 @@ object Extend1 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS */](
     URI: F,
-    extend: js.Function2[
-      fpDashTsLib.libHKTMod.Type[F, js.Any], 
-      js.Function1[/* fa */ fpDashTsLib.libHKTMod.Type[F, js.Any], js.Any], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any]
-    ],
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.Type[F, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any]
-    ]
+    extend: (fpDashTsLib.libHKTMod.Type[F, js.Any], js.Function1[/* fa */ fpDashTsLib.libHKTMod.Type[F, js.Any], js.Any]) => fpDashTsLib.libHKTMod.Type[F, js.Any],
+    map: (fpDashTsLib.libHKTMod.Type[F, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type[F, js.Any]
   ): Extend1[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], extend = extend, map = map)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], extend = js.Any.fromFunction2(extend), map = js.Any.fromFunction2(map))
   
     __obj.asInstanceOf[Extend1[F]]
   }

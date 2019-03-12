@@ -96,14 +96,14 @@ object FormatSpecifier {
     fill: java.lang.String,
     sign: d3DashFormatLib.d3DashFormatLibStrings.`-` | d3DashFormatLib.d3DashFormatLibStrings.`+` | d3DashFormatLib.d3DashFormatLibStrings.`(` | (d3DashFormatLib.d3DashFormatLibStrings.` `),
     symbol: d3DashFormatLib.d3DashFormatLibStrings.DOLLAR | d3DashFormatLib.d3DashFormatLibStrings.`#` | d3DashFormatLib.d3DashFormatLibStrings.Empty,
-    toString: js.Function0[java.lang.String],
+    toString: () => java.lang.String,
     trim: scala.Boolean,
     `type`: d3DashFormatLib.d3DashFormatLibStrings.e | d3DashFormatLib.d3DashFormatLibStrings.f | d3DashFormatLib.d3DashFormatLibStrings.g | d3DashFormatLib.d3DashFormatLibStrings.r | d3DashFormatLib.d3DashFormatLibStrings.s | d3DashFormatLib.d3DashFormatLibStrings.`%` | d3DashFormatLib.d3DashFormatLibStrings.p | d3DashFormatLib.d3DashFormatLibStrings.b | d3DashFormatLib.d3DashFormatLibStrings.o | d3DashFormatLib.d3DashFormatLibStrings.d | d3DashFormatLib.d3DashFormatLibStrings.x | d3DashFormatLib.d3DashFormatLibStrings.X | d3DashFormatLib.d3DashFormatLibStrings.c | d3DashFormatLib.d3DashFormatLibStrings.Empty | d3DashFormatLib.d3DashFormatLibStrings.n,
     zero: scala.Boolean,
     precision: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): FormatSpecifier = {
-    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], comma = comma, fill = fill, sign = sign.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], toString = toString, trim = trim, zero = zero)
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], comma = comma, fill = fill, sign = sign.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], toString = js.Any.fromFunction0(toString), trim = trim, zero = zero)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

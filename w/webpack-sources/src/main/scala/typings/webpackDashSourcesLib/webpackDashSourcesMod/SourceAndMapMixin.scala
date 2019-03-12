@@ -13,10 +13,10 @@ trait SourceAndMapMixin extends js.Object {
 object SourceAndMapMixin {
   @scala.inline
   def apply(
-    map: js.Function1[webpackDashSourcesLib.Anon_Columns, sourceDashMapLib.sourceDashMapMod.RawSourceMap],
-    sourceAndMap: js.Function1[webpackDashSourcesLib.Anon_Columns, webpackDashSourcesLib.Anon_Map]
+    map: webpackDashSourcesLib.Anon_Columns => sourceDashMapLib.sourceDashMapMod.RawSourceMap,
+    sourceAndMap: webpackDashSourcesLib.Anon_Columns => webpackDashSourcesLib.Anon_Map
   ): SourceAndMapMixin = {
-    val __obj = js.Dynamic.literal(map = map, sourceAndMap = sourceAndMap)
+    val __obj = js.Dynamic.literal(map = js.Any.fromFunction1(map), sourceAndMap = js.Any.fromFunction1(sourceAndMap))
   
     __obj.asInstanceOf[SourceAndMapMixin]
   }

@@ -25,14 +25,10 @@ trait IGridPinningApi[TEntity] extends js.Object {
 object IGridPinningApi {
   @scala.inline
   def apply[TEntity](
-    columnPin: js.Function2[angularLib.angularMod.angularNs.IScope, columnPinHandler, scala.Unit],
-    pinColumn: js.Function2[
-      uiDashGridLib.uiDashGridMod.uiGridNs.IGridColumnOf[TEntity], 
-      java.lang.String, 
-      scala.Unit
-    ]
+    columnPin: (angularLib.angularMod.angularNs.IScope, columnPinHandler) => scala.Unit,
+    pinColumn: (uiDashGridLib.uiDashGridMod.uiGridNs.IGridColumnOf[TEntity], java.lang.String) => scala.Unit
   ): IGridPinningApi[TEntity] = {
-    val __obj = js.Dynamic.literal(columnPin = columnPin, pinColumn = pinColumn)
+    val __obj = js.Dynamic.literal(columnPin = js.Any.fromFunction2(columnPin), pinColumn = js.Any.fromFunction2(pinColumn))
   
     __obj.asInstanceOf[IGridPinningApi[TEntity]]
   }

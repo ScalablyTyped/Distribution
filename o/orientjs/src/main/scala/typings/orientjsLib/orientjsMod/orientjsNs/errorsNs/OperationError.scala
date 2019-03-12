@@ -14,11 +14,11 @@ object OperationError {
   @scala.inline
   def apply(
     date: js.Any,
-    init: js.Function1[java.lang.String, scala.Unit],
+    init: java.lang.String => scala.Unit,
     message: java.lang.String,
     name: java.lang.String
   ): OperationError = {
-    val __obj = js.Dynamic.literal(date = date, init = init, message = message, name = name)
+    val __obj = js.Dynamic.literal(date = date, init = js.Any.fromFunction1(init), message = message, name = name)
   
     __obj.asInstanceOf[OperationError]
   }

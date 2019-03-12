@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation._
   */
 trait SingleProofreadingError extends js.Object {
   var aFullComment: java.lang.String
-  var aProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  var aProperties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   var aRuleIdentifier: java.lang.String
   var aShortComment: java.lang.String
-  var aSuggestions: activexDashInteropLib.SafeArray[java.lang.String]
+  var aSuggestions: stdLib.SafeArray[java.lang.String]
   var nErrorLength: scala.Double
   var nErrorStart: scala.Double
   var nErrorType: scala.Double
@@ -24,10 +24,10 @@ object SingleProofreadingError {
   @scala.inline
   def apply(
     aFullComment: java.lang.String,
-    aProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    aProperties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     aRuleIdentifier: java.lang.String,
     aShortComment: java.lang.String,
-    aSuggestions: activexDashInteropLib.SafeArray[java.lang.String],
+    aSuggestions: stdLib.SafeArray[java.lang.String],
     nErrorLength: scala.Double,
     nErrorStart: scala.Double,
     nErrorType: scala.Double

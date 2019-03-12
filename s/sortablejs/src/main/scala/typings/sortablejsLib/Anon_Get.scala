@@ -13,10 +13,10 @@ trait Anon_Get extends js.Object {
 object Anon_Get {
   @scala.inline
   def apply(
-    get: js.Function1[sortablejsLib.sortablejsMod.Sortable, js.Array[java.lang.String]],
-    set: js.Function1[sortablejsLib.sortablejsMod.Sortable, scala.Unit]
+    get: sortablejsLib.sortablejsMod.Sortable => js.Array[java.lang.String],
+    set: sortablejsLib.sortablejsMod.Sortable => scala.Unit
   ): Anon_Get = {
-    val __obj = js.Dynamic.literal(get = get, set = set)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction1(set))
   
     __obj.asInstanceOf[Anon_Get]
   }

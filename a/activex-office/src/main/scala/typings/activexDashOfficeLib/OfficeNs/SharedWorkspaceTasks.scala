@@ -39,7 +39,7 @@ trait SharedWorkspaceTasks extends js.Object {
     Priority: MsoSharedWorkspaceTaskPriority,
     Assignee: SharedWorkspaceMember,
     Description: java.lang.String,
-    DueDate: activexDashInteropLib.VarDate
+    DueDate: stdLib.VarDate
   ): SharedWorkspaceTask = js.native
   def Item(Index: scala.Double): SharedWorkspaceTask = js.native
 }

@@ -21,18 +21,18 @@ trait JdbcTime extends js.Object {
 object JdbcTime {
   @scala.inline
   def apply(
-    after: js.Function1[JdbcTime, scala.Boolean],
-    before: js.Function1[JdbcTime, scala.Boolean],
-    getHours: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getMinutes: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getSeconds: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getTime: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    setHours: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit],
-    setMinutes: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit],
-    setSeconds: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit],
-    setTime: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit]
+    after: JdbcTime => scala.Boolean,
+    before: JdbcTime => scala.Boolean,
+    getHours: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getMinutes: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getSeconds: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getTime: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    setHours: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => scala.Unit,
+    setMinutes: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => scala.Unit,
+    setSeconds: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => scala.Unit,
+    setTime: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => scala.Unit
   ): JdbcTime = {
-    val __obj = js.Dynamic.literal(after = after, before = before, getHours = getHours, getMinutes = getMinutes, getSeconds = getSeconds, getTime = getTime, setHours = setHours, setMinutes = setMinutes, setSeconds = setSeconds, setTime = setTime)
+    val __obj = js.Dynamic.literal(after = js.Any.fromFunction1(after), before = js.Any.fromFunction1(before), getHours = js.Any.fromFunction0(getHours), getMinutes = js.Any.fromFunction0(getMinutes), getSeconds = js.Any.fromFunction0(getSeconds), getTime = js.Any.fromFunction0(getTime), setHours = js.Any.fromFunction1(setHours), setMinutes = js.Any.fromFunction1(setMinutes), setSeconds = js.Any.fromFunction1(setSeconds), setTime = js.Any.fromFunction1(setTime))
   
     __obj.asInstanceOf[JdbcTime]
   }

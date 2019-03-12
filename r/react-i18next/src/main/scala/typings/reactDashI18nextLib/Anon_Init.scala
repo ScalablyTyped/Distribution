@@ -12,8 +12,8 @@ trait Anon_Init extends js.Object {
 
 object Anon_Init {
   @scala.inline
-  def apply(init: js.Function1[i18nextLib.i18nextMod.i18nextNs.i18n, scala.Unit], `type`: java.lang.String): Anon_Init = {
-    val __obj = js.Dynamic.literal(init = init)
+  def apply(init: i18nextLib.i18nextMod.i18nextNs.i18n => scala.Unit, `type`: java.lang.String): Anon_Init = {
+    val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Init]
   }

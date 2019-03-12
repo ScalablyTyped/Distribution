@@ -18,15 +18,15 @@ trait ASPxClientHtmlEditorTableCellPropertiesDialog extends ASPxClientHtmlEditor
 object ASPxClientHtmlEditorTableCellPropertiesDialog {
   @scala.inline
   def apply(
-    GetApplyToAllCellsCheckBox: js.Function0[ASPxClientCheckBox],
-    GetBackgroundColorColorEdit: js.Function0[ASPxClientColorEdit],
-    GetCancelButton: js.Function0[ASPxClientButton],
-    GetFormLayout: js.Function0[ASPxClientFormLayout],
-    GetHorizontalAlignmentComboBox: js.Function0[ASPxClientComboBox],
-    GetOkButton: js.Function0[ASPxClientButton],
-    GetVerticalAlignmentComboBox: js.Function0[ASPxClientComboBox]
+    GetApplyToAllCellsCheckBox: () => ASPxClientCheckBox,
+    GetBackgroundColorColorEdit: () => ASPxClientColorEdit,
+    GetCancelButton: () => ASPxClientButton,
+    GetFormLayout: () => ASPxClientFormLayout,
+    GetHorizontalAlignmentComboBox: () => ASPxClientComboBox,
+    GetOkButton: () => ASPxClientButton,
+    GetVerticalAlignmentComboBox: () => ASPxClientComboBox
   ): ASPxClientHtmlEditorTableCellPropertiesDialog = {
-    val __obj = js.Dynamic.literal(GetApplyToAllCellsCheckBox = GetApplyToAllCellsCheckBox, GetBackgroundColorColorEdit = GetBackgroundColorColorEdit, GetCancelButton = GetCancelButton, GetFormLayout = GetFormLayout, GetHorizontalAlignmentComboBox = GetHorizontalAlignmentComboBox, GetOkButton = GetOkButton, GetVerticalAlignmentComboBox = GetVerticalAlignmentComboBox)
+    val __obj = js.Dynamic.literal(GetApplyToAllCellsCheckBox = js.Any.fromFunction0(GetApplyToAllCellsCheckBox), GetBackgroundColorColorEdit = js.Any.fromFunction0(GetBackgroundColorColorEdit), GetCancelButton = js.Any.fromFunction0(GetCancelButton), GetFormLayout = js.Any.fromFunction0(GetFormLayout), GetHorizontalAlignmentComboBox = js.Any.fromFunction0(GetHorizontalAlignmentComboBox), GetOkButton = js.Any.fromFunction0(GetOkButton), GetVerticalAlignmentComboBox = js.Any.fromFunction0(GetVerticalAlignmentComboBox))
   
     __obj.asInstanceOf[ASPxClientHtmlEditorTableCellPropertiesDialog]
   }

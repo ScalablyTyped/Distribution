@@ -23,15 +23,15 @@ object XHatchWindow {
   @scala.inline
   def apply(
     HatchBorderSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    setController: js.Function1[XHatchWindowController, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    dispose: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    setController: XHatchWindowController => scala.Unit
   ): XHatchWindow = {
-    val __obj = js.Dynamic.literal(HatchBorderSize = HatchBorderSize, acquire = acquire, addEventListener = addEventListener, dispose = dispose, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setController = setController)
+    val __obj = js.Dynamic.literal(HatchBorderSize = HatchBorderSize, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), dispose = js.Any.fromFunction0(dispose), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), setController = js.Any.fromFunction1(setController))
   
     __obj.asInstanceOf[XHatchWindow]
   }

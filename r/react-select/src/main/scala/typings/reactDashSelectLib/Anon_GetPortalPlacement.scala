@@ -11,8 +11,8 @@ trait Anon_GetPortalPlacement extends js.Object {
 
 object Anon_GetPortalPlacement {
   @scala.inline
-  def apply(getPortalPlacement: js.Function1[reactDashSelectLib.libComponentsMenuMod.MenuState, scala.Unit]): Anon_GetPortalPlacement = {
-    val __obj = js.Dynamic.literal(getPortalPlacement = getPortalPlacement)
+  def apply(getPortalPlacement: reactDashSelectLib.libComponentsMenuMod.MenuState => scala.Unit): Anon_GetPortalPlacement = {
+    val __obj = js.Dynamic.literal(getPortalPlacement = js.Any.fromFunction1(getPortalPlacement))
   
     __obj.asInstanceOf[Anon_GetPortalPlacement]
   }

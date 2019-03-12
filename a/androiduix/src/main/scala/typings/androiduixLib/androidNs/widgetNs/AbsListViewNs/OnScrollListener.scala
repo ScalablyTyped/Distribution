@@ -18,16 +18,10 @@ trait OnScrollListener extends js.Object {
 object OnScrollListener {
   @scala.inline
   def apply(
-    onScroll: js.Function4[
-      androiduixLib.androidNs.widgetNs.AbsListView, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ],
-    onScrollStateChanged: js.Function2[androiduixLib.androidNs.widgetNs.AbsListView, scala.Double, scala.Unit]
+    onScroll: (androiduixLib.androidNs.widgetNs.AbsListView, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    onScrollStateChanged: (androiduixLib.androidNs.widgetNs.AbsListView, scala.Double) => scala.Unit
   ): OnScrollListener = {
-    val __obj = js.Dynamic.literal(onScroll = onScroll, onScrollStateChanged = onScrollStateChanged)
+    val __obj = js.Dynamic.literal(onScroll = js.Any.fromFunction4(onScroll), onScrollStateChanged = js.Any.fromFunction2(onScrollStateChanged))
   
     __obj.asInstanceOf[OnScrollListener]
   }

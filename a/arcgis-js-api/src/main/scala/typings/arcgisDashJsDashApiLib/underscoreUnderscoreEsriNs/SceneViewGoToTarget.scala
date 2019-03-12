@@ -57,8 +57,8 @@ object SceneViewGoToTarget {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     center: js.Array[scala.Double] | Point = null,
     heading: scala.Int | scala.Double = null,
     position: Point = null,
@@ -67,7 +67,7 @@ object SceneViewGoToTarget {
     tilt: scala.Int | scala.Double = null,
     zoom: scala.Int | scala.Double = null
   ): SceneViewGoToTarget = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position)

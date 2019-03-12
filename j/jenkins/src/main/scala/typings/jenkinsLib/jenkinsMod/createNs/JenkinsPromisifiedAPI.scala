@@ -18,13 +18,13 @@ object JenkinsPromisifiedAPI {
   @scala.inline
   def apply(
     build: jenkinsLib.Anon_DelayGet,
-    info: js.Function0[js.Promise[_]],
+    info: () => js.Promise[_],
     job: jenkinsLib.Anon_BuildConfig,
     node: jenkinsLib.Anon_Config,
     queue: jenkinsLib.Anon_Cancel,
     view: jenkinsLib.Anon_AddConfig
   ): JenkinsPromisifiedAPI = {
-    val __obj = js.Dynamic.literal(build = build, info = info, job = job, node = node, queue = queue, view = view)
+    val __obj = js.Dynamic.literal(build = build, info = js.Any.fromFunction0(info), job = job, node = node, queue = queue, view = view)
   
     __obj.asInstanceOf[JenkinsPromisifiedAPI]
   }

@@ -16,7 +16,7 @@ trait FieldSchema_InForm_MultiLineText extends FieldSchema_InForm {
   /** Specifies whether rich text formatting can be used in the field */
   var RichText: scala.Boolean
   /** Rich text mode for the field */
-  var RichTextMode: RichTextMode
+  var RichTextMode: sharepointLib.SPClientTemplatesNs.RichTextMode
   /** WebPartAdderId for the ScriptEditorWebPart */
   var ScriptEditorAdderId: java.lang.String
 }

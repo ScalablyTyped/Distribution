@@ -25,8 +25,8 @@ object ButtonProps {
     accent: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     icon: java.lang.String | reactLib.reactMod.Global.JSXNs.Element = null,
-    onLongPress: js.Function0[scala.Unit] = null,
-    onPress: js.Function0[scala.Unit] = null,
+    onLongPress: () => scala.Unit = null,
+    onPress: () => scala.Unit = null,
     primary: js.UndefOr[scala.Boolean] = js.undefined,
     raised: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactDashNativeDashMaterialDashUiLib.Anon_ContainerText = null,
@@ -36,8 +36,8 @@ object ButtonProps {
     if (!js.isUndefined(accent)) __obj.updateDynamic("accent")(accent)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction0(onLongPress))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
     if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised)
     if (style != null) __obj.updateDynamic("style")(style)

@@ -26,7 +26,7 @@ trait StrictModalActionsProps extends js.Object {
     */
   var onActionClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
       /* data */ semanticDashUiDashReactLib.distCommonjsElementsButtonButtonMod.ButtonProps, 
       scala.Unit
     ]
@@ -41,11 +41,7 @@ object StrictModalActionsProps {
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
-    onActionClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsElementsButtonButtonMod.ButtonProps, 
-      scala.Unit
-    ] = null
+    onActionClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsElementsButtonButtonMod.ButtonProps) => scala.Unit = null
   ): StrictModalActionsProps = {
     val __obj = js.Dynamic.literal()
     if (actions != null) __obj.updateDynamic("actions")(actions)
@@ -53,7 +49,7 @@ object StrictModalActionsProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (onActionClick != null) __obj.updateDynamic("onActionClick")(onActionClick)
+    if (onActionClick != null) __obj.updateDynamic("onActionClick")(js.Any.fromFunction2(onActionClick))
     __obj.asInstanceOf[StrictModalActionsProps]
   }
 }

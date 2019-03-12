@@ -27,7 +27,7 @@ object ThumbnailProps {
   @scala.inline
   def apply(
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    ImgHTMLAttributes: reactLib.reactMod.ReactNs.ImgHTMLAttributes[reactLib.HTMLImageElement] = null
+    ImgHTMLAttributes: reactLib.reactMod.ReactNs.ImgHTMLAttributes[stdLib.HTMLImageElement] = null
   ): ThumbnailProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)

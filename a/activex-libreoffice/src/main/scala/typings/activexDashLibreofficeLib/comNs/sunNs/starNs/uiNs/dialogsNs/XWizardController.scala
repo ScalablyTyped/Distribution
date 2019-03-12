@@ -42,18 +42,14 @@ trait XWizardController extends js.Object {
 object XWizardController {
   @scala.inline
   def apply(
-    canAdvance: js.Function0[scala.Boolean],
-    confirmFinish: js.Function0[scala.Boolean],
-    createPage: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
-      scala.Double, 
-      XWizardPage
-    ],
-    getPageTitle: js.Function1[scala.Double, java.lang.String],
-    onActivatePage: js.Function1[scala.Double, scala.Unit],
-    onDeactivatePage: js.Function1[scala.Double, scala.Unit]
+    canAdvance: () => scala.Boolean,
+    confirmFinish: () => scala.Boolean,
+    createPage: (activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, scala.Double) => XWizardPage,
+    getPageTitle: scala.Double => java.lang.String,
+    onActivatePage: scala.Double => scala.Unit,
+    onDeactivatePage: scala.Double => scala.Unit
   ): XWizardController = {
-    val __obj = js.Dynamic.literal(canAdvance = canAdvance, confirmFinish = confirmFinish, createPage = createPage, getPageTitle = getPageTitle, onActivatePage = onActivatePage, onDeactivatePage = onDeactivatePage)
+    val __obj = js.Dynamic.literal(canAdvance = js.Any.fromFunction0(canAdvance), confirmFinish = js.Any.fromFunction0(confirmFinish), createPage = js.Any.fromFunction2(createPage), getPageTitle = js.Any.fromFunction1(getPageTitle), onActivatePage = js.Any.fromFunction1(onActivatePage), onDeactivatePage = js.Any.fromFunction1(onDeactivatePage))
   
     __obj.asInstanceOf[XWizardController]
   }

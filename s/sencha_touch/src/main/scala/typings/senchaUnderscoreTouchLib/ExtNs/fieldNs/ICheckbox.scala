@@ -71,50 +71,50 @@ object ICheckbox {
   @scala.inline
   def apply(
     IField: IField = null,
-    check: js.Function0[ICheckbox] = null,
+    check: () => ICheckbox = null,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     component: js.Any = null,
-    doChecked: js.Function0[scala.Unit] = null,
-    doUnChecked: js.Function0[scala.Unit] = null,
-    getChecked: js.Function0[_] = null,
-    getComponent: js.Function0[_] = null,
-    getGroupValues: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getSubmitValue: js.Function0[_] = null,
-    getUi: js.Function0[java.lang.String] = null,
-    getValue: js.Function0[java.lang.String] = null,
-    isChecked: js.Function0[scala.Boolean] = null,
-    reset: js.Function0[IField] = null,
-    resetGroupValues: js.Function0[ICheckbox] = null,
-    setComponent: js.Function1[/* component */ js.UndefOr[js.Any], scala.Unit] = null,
-    setGroupValues: js.Function1[/* values */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], ICheckbox] = null,
-    setUi: js.Function1[/* ui */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setValue: js.Function1[/* value */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    doChecked: () => scala.Unit = null,
+    doUnChecked: () => scala.Unit = null,
+    getChecked: () => _ = null,
+    getComponent: () => _ = null,
+    getGroupValues: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getSubmitValue: () => _ = null,
+    getUi: () => java.lang.String = null,
+    getValue: () => java.lang.String = null,
+    isChecked: () => scala.Boolean = null,
+    reset: () => IField = null,
+    resetGroupValues: () => ICheckbox = null,
+    setComponent: /* component */ js.UndefOr[js.Any] => scala.Unit = null,
+    setGroupValues: /* values */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => ICheckbox = null,
+    setUi: /* ui */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setValue: /* value */ js.UndefOr[java.lang.String] => scala.Unit = null,
     ui: java.lang.String = null,
-    uncheck: js.Function0[ICheckbox] = null,
+    uncheck: () => ICheckbox = null,
     value: java.lang.String = null
   ): ICheckbox = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IField)
-    if (check != null) __obj.updateDynamic("check")(check)
+    if (check != null) __obj.updateDynamic("check")(js.Any.fromFunction0(check))
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (component != null) __obj.updateDynamic("component")(component)
-    if (doChecked != null) __obj.updateDynamic("doChecked")(doChecked)
-    if (doUnChecked != null) __obj.updateDynamic("doUnChecked")(doUnChecked)
-    if (getChecked != null) __obj.updateDynamic("getChecked")(getChecked)
-    if (getComponent != null) __obj.updateDynamic("getComponent")(getComponent)
-    if (getGroupValues != null) __obj.updateDynamic("getGroupValues")(getGroupValues)
-    if (getSubmitValue != null) __obj.updateDynamic("getSubmitValue")(getSubmitValue)
-    if (getUi != null) __obj.updateDynamic("getUi")(getUi)
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
-    if (isChecked != null) __obj.updateDynamic("isChecked")(isChecked)
-    if (reset != null) __obj.updateDynamic("reset")(reset)
-    if (resetGroupValues != null) __obj.updateDynamic("resetGroupValues")(resetGroupValues)
-    if (setComponent != null) __obj.updateDynamic("setComponent")(setComponent)
-    if (setGroupValues != null) __obj.updateDynamic("setGroupValues")(setGroupValues)
-    if (setUi != null) __obj.updateDynamic("setUi")(setUi)
-    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
+    if (doChecked != null) __obj.updateDynamic("doChecked")(js.Any.fromFunction0(doChecked))
+    if (doUnChecked != null) __obj.updateDynamic("doUnChecked")(js.Any.fromFunction0(doUnChecked))
+    if (getChecked != null) __obj.updateDynamic("getChecked")(js.Any.fromFunction0(getChecked))
+    if (getComponent != null) __obj.updateDynamic("getComponent")(js.Any.fromFunction0(getComponent))
+    if (getGroupValues != null) __obj.updateDynamic("getGroupValues")(js.Any.fromFunction0(getGroupValues))
+    if (getSubmitValue != null) __obj.updateDynamic("getSubmitValue")(js.Any.fromFunction0(getSubmitValue))
+    if (getUi != null) __obj.updateDynamic("getUi")(js.Any.fromFunction0(getUi))
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
+    if (isChecked != null) __obj.updateDynamic("isChecked")(js.Any.fromFunction0(isChecked))
+    if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
+    if (resetGroupValues != null) __obj.updateDynamic("resetGroupValues")(js.Any.fromFunction0(resetGroupValues))
+    if (setComponent != null) __obj.updateDynamic("setComponent")(js.Any.fromFunction1(setComponent))
+    if (setGroupValues != null) __obj.updateDynamic("setGroupValues")(js.Any.fromFunction1(setGroupValues))
+    if (setUi != null) __obj.updateDynamic("setUi")(js.Any.fromFunction1(setUi))
+    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
     if (ui != null) __obj.updateDynamic("ui")(ui)
-    if (uncheck != null) __obj.updateDynamic("uncheck")(uncheck)
+    if (uncheck != null) __obj.updateDynamic("uncheck")(js.Any.fromFunction0(uncheck))
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[ICheckbox]
   }

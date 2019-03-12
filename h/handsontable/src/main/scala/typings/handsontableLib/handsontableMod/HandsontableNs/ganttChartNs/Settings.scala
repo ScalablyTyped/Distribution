@@ -24,13 +24,13 @@ object Settings {
     allowSplitWeeks: js.UndefOr[scala.Boolean] = js.undefined,
     hideDaysAfterFullWeeks: js.UndefOr[scala.Boolean] = js.undefined,
     hideDaysBeforeFullWeeks: js.UndefOr[scala.Boolean] = js.undefined,
-    weekHeaderGenerator: js.Function2[/* start */ scala.Double, /* end */ scala.Double, java.lang.String] = null
+    weekHeaderGenerator: (/* start */ scala.Double, /* end */ scala.Double) => java.lang.String = null
   ): Settings = {
     val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any], firstWeekDay = firstWeekDay.asInstanceOf[js.Any], startYear = startYear)
     if (!js.isUndefined(allowSplitWeeks)) __obj.updateDynamic("allowSplitWeeks")(allowSplitWeeks)
     if (!js.isUndefined(hideDaysAfterFullWeeks)) __obj.updateDynamic("hideDaysAfterFullWeeks")(hideDaysAfterFullWeeks)
     if (!js.isUndefined(hideDaysBeforeFullWeeks)) __obj.updateDynamic("hideDaysBeforeFullWeeks")(hideDaysBeforeFullWeeks)
-    if (weekHeaderGenerator != null) __obj.updateDynamic("weekHeaderGenerator")(weekHeaderGenerator)
+    if (weekHeaderGenerator != null) __obj.updateDynamic("weekHeaderGenerator")(js.Any.fromFunction2(weekHeaderGenerator))
     __obj.asInstanceOf[Settings]
   }
 }

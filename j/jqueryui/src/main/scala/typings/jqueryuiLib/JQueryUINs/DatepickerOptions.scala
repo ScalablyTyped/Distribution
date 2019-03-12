@@ -256,12 +256,12 @@ object DatepickerOptions {
     appendText: java.lang.String = null,
     autoSize: js.UndefOr[scala.Boolean] = js.undefined,
     autohide: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeShow: js.Function2[/* input */ stdLib.Element, /* inst */ js.Any, DatepickerOptions] = null,
-    beforeShowDay: js.Function1[/* date */ stdLib.Date, js.Array[_]] = null,
+    beforeShow: (/* input */ stdLib.Element, /* inst */ js.Any) => DatepickerOptions = null,
+    beforeShowDay: /* date */ stdLib.Date => js.Array[_] = null,
     buttonImage: java.lang.String = null,
     buttonImageOnly: js.UndefOr[scala.Boolean] = js.undefined,
     buttonText: java.lang.String = null,
-    calculateWeek: js.Function1[/* date */ stdLib.Date, java.lang.String] = null,
+    calculateWeek: /* date */ stdLib.Date => java.lang.String = null,
     changeMonth: js.UndefOr[scala.Boolean] = js.undefined,
     changeYear: js.UndefOr[scala.Boolean] = js.undefined,
     closeText: java.lang.String = null,
@@ -285,9 +285,9 @@ object DatepickerOptions {
     navigationAsDateFormat: js.UndefOr[scala.Boolean] = js.undefined,
     nextText: java.lang.String = null,
     numberOfMonths: js.Any = null,
-    onChangeMonthYear: js.Function3[/* year */ scala.Double, /* month */ scala.Double, /* inst */ js.Any, scala.Unit] = null,
-    onClose: js.Function2[/* dateText */ java.lang.String, /* inst */ js.Any, scala.Unit] = null,
-    onSelect: js.Function2[/* dateText */ java.lang.String, /* inst */ js.Any, scala.Unit] = null,
+    onChangeMonthYear: (/* year */ scala.Double, /* month */ scala.Double, /* inst */ js.Any) => scala.Unit = null,
+    onClose: (/* dateText */ java.lang.String, /* inst */ js.Any) => scala.Unit = null,
+    onSelect: (/* dateText */ java.lang.String, /* inst */ js.Any) => scala.Unit = null,
     prevText: java.lang.String = null,
     selectOtherMonths: js.UndefOr[scala.Boolean] = js.undefined,
     shortYearCutoff: js.Any = null,
@@ -310,12 +310,12 @@ object DatepickerOptions {
     if (appendText != null) __obj.updateDynamic("appendText")(appendText)
     if (!js.isUndefined(autoSize)) __obj.updateDynamic("autoSize")(autoSize)
     if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide)
-    if (beforeShow != null) __obj.updateDynamic("beforeShow")(beforeShow)
-    if (beforeShowDay != null) __obj.updateDynamic("beforeShowDay")(beforeShowDay)
+    if (beforeShow != null) __obj.updateDynamic("beforeShow")(js.Any.fromFunction2(beforeShow))
+    if (beforeShowDay != null) __obj.updateDynamic("beforeShowDay")(js.Any.fromFunction1(beforeShowDay))
     if (buttonImage != null) __obj.updateDynamic("buttonImage")(buttonImage)
     if (!js.isUndefined(buttonImageOnly)) __obj.updateDynamic("buttonImageOnly")(buttonImageOnly)
     if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
-    if (calculateWeek != null) __obj.updateDynamic("calculateWeek")(calculateWeek)
+    if (calculateWeek != null) __obj.updateDynamic("calculateWeek")(js.Any.fromFunction1(calculateWeek))
     if (!js.isUndefined(changeMonth)) __obj.updateDynamic("changeMonth")(changeMonth)
     if (!js.isUndefined(changeYear)) __obj.updateDynamic("changeYear")(changeYear)
     if (closeText != null) __obj.updateDynamic("closeText")(closeText)
@@ -339,9 +339,9 @@ object DatepickerOptions {
     if (!js.isUndefined(navigationAsDateFormat)) __obj.updateDynamic("navigationAsDateFormat")(navigationAsDateFormat)
     if (nextText != null) __obj.updateDynamic("nextText")(nextText)
     if (numberOfMonths != null) __obj.updateDynamic("numberOfMonths")(numberOfMonths)
-    if (onChangeMonthYear != null) __obj.updateDynamic("onChangeMonthYear")(onChangeMonthYear)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onChangeMonthYear != null) __obj.updateDynamic("onChangeMonthYear")(js.Any.fromFunction3(onChangeMonthYear))
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2(onClose))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
     if (prevText != null) __obj.updateDynamic("prevText")(prevText)
     if (!js.isUndefined(selectOtherMonths)) __obj.updateDynamic("selectOtherMonths")(selectOtherMonths)
     if (shortYearCutoff != null) __obj.updateDynamic("shortYearCutoff")(shortYearCutoff)

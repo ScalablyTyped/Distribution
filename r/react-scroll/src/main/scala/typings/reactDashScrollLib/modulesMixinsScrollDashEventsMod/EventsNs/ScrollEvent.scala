@@ -16,14 +16,10 @@ trait ScrollEvent extends js.Object {
 object ScrollEvent {
   @scala.inline
   def apply(
-    register: js.Function2[
-      java.lang.String, 
-      js.Function2[/* to */ java.lang.String, /* element */ js.Any, scala.Unit], 
-      scala.Unit
-    ],
-    remove: js.Function1[java.lang.String, scala.Unit]
+    register: (java.lang.String, js.Function2[/* to */ java.lang.String, /* element */ js.Any, scala.Unit]) => scala.Unit,
+    remove: java.lang.String => scala.Unit
   ): ScrollEvent = {
-    val __obj = js.Dynamic.literal(register = register, remove = remove)
+    val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register), remove = js.Any.fromFunction1(remove))
   
     __obj.asInstanceOf[ScrollEvent]
   }

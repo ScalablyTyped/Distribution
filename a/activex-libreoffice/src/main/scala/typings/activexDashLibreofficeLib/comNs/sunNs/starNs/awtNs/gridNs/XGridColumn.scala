@@ -99,17 +99,17 @@ object XGridColumn {
     MinWidth: scala.Double,
     Resizeable: scala.Boolean,
     Title: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    addGridColumnListener: js.Function1[XGridColumnListener, scala.Unit],
-    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
-    dispose: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    removeGridColumnListener: js.Function1[XGridColumnListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    addGridColumnListener: XGridColumnListener => scala.Unit,
+    createClone: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable,
+    dispose: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    removeGridColumnListener: XGridColumnListener => scala.Unit
   ): XGridColumn = {
-    val __obj = js.Dynamic.literal(ColumnWidth = ColumnWidth, DataColumnIndex = DataColumnIndex, Flexibility = Flexibility, HelpText = HelpText, HorizontalAlign = HorizontalAlign, Identifier = Identifier, Index = Index, MaxWidth = MaxWidth, MinWidth = MinWidth, Resizeable = Resizeable, Title = Title, acquire = acquire, addEventListener = addEventListener, addGridColumnListener = addGridColumnListener, createClone = createClone, dispose = dispose, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeGridColumnListener = removeGridColumnListener)
+    val __obj = js.Dynamic.literal(ColumnWidth = ColumnWidth, DataColumnIndex = DataColumnIndex, Flexibility = Flexibility, HelpText = HelpText, HorizontalAlign = HorizontalAlign, Identifier = Identifier, Index = Index, MaxWidth = MaxWidth, MinWidth = MinWidth, Resizeable = Resizeable, Title = Title, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addGridColumnListener = js.Any.fromFunction1(addGridColumnListener), createClone = js.Any.fromFunction0(createClone), dispose = js.Any.fromFunction0(dispose), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removeGridColumnListener = js.Any.fromFunction1(removeGridColumnListener))
   
     __obj.asInstanceOf[XGridColumn]
   }

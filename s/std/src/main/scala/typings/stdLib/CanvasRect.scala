@@ -14,11 +14,11 @@ trait CanvasRect extends js.Object {
 object CanvasRect {
   @scala.inline
   def apply(
-    clearRect: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
-    fillRect: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
-    strokeRect: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit]
+    clearRect: (scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    fillRect: (scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    strokeRect: (scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit
   ): CanvasRect = {
-    val __obj = js.Dynamic.literal(clearRect = clearRect, fillRect = fillRect, strokeRect = strokeRect)
+    val __obj = js.Dynamic.literal(clearRect = js.Any.fromFunction4(clearRect), fillRect = js.Any.fromFunction4(fillRect), strokeRect = js.Any.fromFunction4(strokeRect))
   
     __obj.asInstanceOf[CanvasRect]
   }

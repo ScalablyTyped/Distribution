@@ -19,14 +19,14 @@ object FilterMenuProps {
   @scala.inline
   def apply[T](
     column: ColumnProps[T],
-    confirmFilter: js.Function2[ColumnProps[T], js.Array[java.lang.String], js.Any],
+    confirmFilter: (ColumnProps[T], js.Array[java.lang.String]) => js.Any,
     dropdownPrefixCls: java.lang.String,
     locale: TableLocale,
     prefixCls: java.lang.String,
     selectedKeys: js.Array[java.lang.String],
     getPopupContainer: GetPopupContainer = null
   ): FilterMenuProps[T] = {
-    val __obj = js.Dynamic.literal(column = column, confirmFilter = confirmFilter, dropdownPrefixCls = dropdownPrefixCls, locale = locale, prefixCls = prefixCls, selectedKeys = selectedKeys)
+    val __obj = js.Dynamic.literal(column = column, confirmFilter = js.Any.fromFunction2(confirmFilter), dropdownPrefixCls = dropdownPrefixCls, locale = locale, prefixCls = prefixCls, selectedKeys = selectedKeys)
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer)
     __obj.asInstanceOf[FilterMenuProps[T]]
   }

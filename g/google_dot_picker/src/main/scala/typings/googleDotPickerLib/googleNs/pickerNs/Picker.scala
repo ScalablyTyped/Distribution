@@ -15,12 +15,12 @@ trait Picker extends js.Object {
 object Picker {
   @scala.inline
   def apply(
-    isVisible: js.Function0[scala.Boolean],
-    setCallback: js.Function1[js.Function, Picker],
-    setRelayUrl: js.Function1[java.lang.String, Picker],
-    setVisible: js.Function1[scala.Boolean, Picker]
+    isVisible: () => scala.Boolean,
+    setCallback: js.Function => Picker,
+    setRelayUrl: java.lang.String => Picker,
+    setVisible: scala.Boolean => Picker
   ): Picker = {
-    val __obj = js.Dynamic.literal(isVisible = isVisible, setCallback = setCallback, setRelayUrl = setRelayUrl, setVisible = setVisible)
+    val __obj = js.Dynamic.literal(isVisible = js.Any.fromFunction0(isVisible), setCallback = js.Any.fromFunction1(setCallback), setRelayUrl = js.Any.fromFunction1(setRelayUrl), setVisible = js.Any.fromFunction1(setVisible))
   
     __obj.asInstanceOf[Picker]
   }

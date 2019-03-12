@@ -13,10 +13,10 @@ trait Algorithm extends js.Object {
 object Algorithm {
   @scala.inline
   def apply(
-    getPosition: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double],
-    getValue: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double]
+    getPosition: (scala.Double, scala.Double, scala.Double) => scala.Double,
+    getValue: (scala.Double, scala.Double, scala.Double) => scala.Double
   ): Algorithm = {
-    val __obj = js.Dynamic.literal(getPosition = getPosition, getValue = getValue)
+    val __obj = js.Dynamic.literal(getPosition = js.Any.fromFunction3(getPosition), getValue = js.Any.fromFunction3(getValue))
   
     __obj.asInstanceOf[Algorithm]
   }

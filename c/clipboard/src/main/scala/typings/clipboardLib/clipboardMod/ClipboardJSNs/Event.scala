@@ -16,11 +16,11 @@ object Event {
   @scala.inline
   def apply(
     action: java.lang.String,
-    clearSelection: js.Function0[scala.Unit],
+    clearSelection: () => scala.Unit,
     text: java.lang.String,
     trigger: stdLib.Element
   ): Event = {
-    val __obj = js.Dynamic.literal(action = action, clearSelection = clearSelection, text = text, trigger = trigger)
+    val __obj = js.Dynamic.literal(action = action, clearSelection = js.Any.fromFunction0(clearSelection), text = text, trigger = trigger)
   
     __obj.asInstanceOf[Event]
   }

@@ -25,7 +25,7 @@ class GraphQLExtension[TContext] () extends js.Object {
       /* args */ org.scalablytyped.runtime.StringDictionary[js.Any], 
       /* context */ TContext, 
       /* info */ graphqlLib.typeDefinitionMod.GraphQLResolveInfo, 
-      (js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ js.UndefOr[_], scala.Unit]) | scala.Unit
+      (js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ js.UndefOr[_], scala.Unit]) | scala.Unit
     ]
   ] = js.native
   var willSendResponse: js.UndefOr[

@@ -19,12 +19,12 @@ trait XContentTransmitter
 object XContentTransmitter {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    transmit: js.Function3[java.lang.String, java.lang.String, scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    transmit: (java.lang.String, java.lang.String, scala.Double) => scala.Unit
   ): XContentTransmitter = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, transmit = transmit)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), transmit = js.Any.fromFunction3(transmit))
   
     __obj.asInstanceOf[XContentTransmitter]
   }

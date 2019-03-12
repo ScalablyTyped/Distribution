@@ -19,23 +19,23 @@ trait ChatOptions extends js.Object {
 object ChatOptions {
   @scala.inline
   def apply(
-    actionClick: js.Function1[/* e */ ChatActionClickEvent, scala.Unit] = null,
+    actionClick: /* e */ ChatActionClickEvent => scala.Unit = null,
     messages: ChatMessages = null,
     name: java.lang.String = null,
-    post: js.Function1[/* e */ ChatPostEvent, scala.Unit] = null,
-    sendMessage: js.Function1[/* e */ ChatSendMessageEvent, scala.Unit] = null,
-    typingEnd: js.Function1[/* e */ ChatTypingEndEvent, scala.Unit] = null,
-    typingStart: js.Function1[/* e */ ChatTypingStartEvent, scala.Unit] = null,
+    post: /* e */ ChatPostEvent => scala.Unit = null,
+    sendMessage: /* e */ ChatSendMessageEvent => scala.Unit = null,
+    typingEnd: /* e */ ChatTypingEndEvent => scala.Unit = null,
+    typingStart: /* e */ ChatTypingStartEvent => scala.Unit = null,
     user: ChatUser = null
   ): ChatOptions = {
     val __obj = js.Dynamic.literal()
-    if (actionClick != null) __obj.updateDynamic("actionClick")(actionClick)
+    if (actionClick != null) __obj.updateDynamic("actionClick")(js.Any.fromFunction1(actionClick))
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (post != null) __obj.updateDynamic("post")(post)
-    if (sendMessage != null) __obj.updateDynamic("sendMessage")(sendMessage)
-    if (typingEnd != null) __obj.updateDynamic("typingEnd")(typingEnd)
-    if (typingStart != null) __obj.updateDynamic("typingStart")(typingStart)
+    if (post != null) __obj.updateDynamic("post")(js.Any.fromFunction1(post))
+    if (sendMessage != null) __obj.updateDynamic("sendMessage")(js.Any.fromFunction1(sendMessage))
+    if (typingEnd != null) __obj.updateDynamic("typingEnd")(js.Any.fromFunction1(typingEnd))
+    if (typingStart != null) __obj.updateDynamic("typingStart")(js.Any.fromFunction1(typingStart))
     if (user != null) __obj.updateDynamic("user")(user)
     __obj.asInstanceOf[ChatOptions]
   }

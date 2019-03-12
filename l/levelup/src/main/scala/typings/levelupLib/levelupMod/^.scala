@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("levelup", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: levelupLib.levelupMod.LevelUpConstructor = js.native
+  val default: LevelUpConstructor = js.native
   val errors: /*typeof levelerrors*/ js.Any = js.native
 }
 

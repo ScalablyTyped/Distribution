@@ -13,10 +13,10 @@ trait DefaultFormsInformationRequestor extends js.Object {
 object DefaultFormsInformationRequestor {
   @scala.inline
   def apply(
-    onDefaultFormsInformationRetrieveFailure: js.Function0[scala.Unit],
-    onDefaultFormsInformationRetrieveSuccess: js.Function1[DefaultFormsInformation, scala.Unit]
+    onDefaultFormsInformationRetrieveFailure: () => scala.Unit,
+    onDefaultFormsInformationRetrieveSuccess: DefaultFormsInformation => scala.Unit
   ): DefaultFormsInformationRequestor = {
-    val __obj = js.Dynamic.literal(onDefaultFormsInformationRetrieveFailure = onDefaultFormsInformationRetrieveFailure, onDefaultFormsInformationRetrieveSuccess = onDefaultFormsInformationRetrieveSuccess)
+    val __obj = js.Dynamic.literal(onDefaultFormsInformationRetrieveFailure = js.Any.fromFunction0(onDefaultFormsInformationRetrieveFailure), onDefaultFormsInformationRetrieveSuccess = js.Any.fromFunction1(onDefaultFormsInformationRetrieveSuccess))
   
     __obj.asInstanceOf[DefaultFormsInformationRequestor]
   }

@@ -14,11 +14,11 @@ trait CharacterMetadata extends js.Object {
 object CharacterMetadata {
   @scala.inline
   def apply(
-    getEntity: js.Function0[java.lang.String],
-    getStyle: js.Function0[DraftInlineStyle],
-    hasStyle: js.Function1[java.lang.String, scala.Boolean]
+    getEntity: () => java.lang.String,
+    getStyle: () => DraftInlineStyle,
+    hasStyle: java.lang.String => scala.Boolean
   ): CharacterMetadata = {
-    val __obj = js.Dynamic.literal(getEntity = getEntity, getStyle = getStyle, hasStyle = hasStyle)
+    val __obj = js.Dynamic.literal(getEntity = js.Any.fromFunction0(getEntity), getStyle = js.Any.fromFunction0(getStyle), hasStyle = js.Any.fromFunction1(hasStyle))
   
     __obj.asInstanceOf[CharacterMetadata]
   }

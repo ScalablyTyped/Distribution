@@ -17,11 +17,11 @@ trait ParagraphProperties extends js.Object {
     * determines the type of break that is applied at the beginning of the table.
     * @see com.sun.star.style.BreakType
     */
-  var BreakType: BreakType
+  var BreakType: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.BreakType
   /** specifies the character style name for drop caps. */
   var DropCapCharStyleName: java.lang.String
   /** specifies whether the first characters of the paragraph are displayed in capital letters and how they are formatted. */
-  var DropCapFormat: DropCapFormat
+  var DropCapFormat: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.DropCapFormat
   /** specifies if the property **DropCapFormat** is applied to the whole first word. */
   var DropCapWholeWord: scala.Boolean
   /** contains the left border of the object. */
@@ -110,7 +110,7 @@ trait ParagraphProperties extends js.Object {
     * Grab bag of paragraph properties, used as a string-any map for interim interop purposes.
     * @since LibreOffice 4.2  This property is intentionally not handled by the ODF filter. Any member that should be handled there should be first moved out
     */
-  var ParaInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  var ParaInteropGrabBag: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /** determines if the first line should be indented automatically. */
   var ParaIsAutoFirstLineIndent: scala.Boolean
   /**
@@ -163,7 +163,7 @@ trait ParagraphProperties extends js.Object {
   /** contains the name of the current paragraph style. */
   var ParaStyleName: java.lang.String
   /** specifies the positions and kinds of the tab stops within this paragraph. */
-  var ParaTabStops: activexDashInteropLib.SafeArray[TabStop]
+  var ParaTabStops: stdLib.SafeArray[TabStop]
   /**
     * determines the top margin of the paragraph in 100th mm.
     *
@@ -229,7 +229,7 @@ object ParagraphProperties {
     ParaHyphenationMaxHyphens: scala.Double,
     ParaHyphenationMaxLeadingChars: scala.Double,
     ParaHyphenationMaxTrailingChars: scala.Double,
-    ParaInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    ParaInteropGrabBag: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     ParaIsAutoFirstLineIndent: scala.Boolean,
     ParaIsConnectBorder: scala.Boolean,
     ParaIsHyphenation: scala.Boolean,
@@ -246,7 +246,7 @@ object ParagraphProperties {
     ParaShadowFormat: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.ShadowFormat,
     ParaSplit: scala.Boolean,
     ParaStyleName: java.lang.String,
-    ParaTabStops: activexDashInteropLib.SafeArray[TabStop],
+    ParaTabStops: stdLib.SafeArray[TabStop],
     ParaTopMargin: scala.Double,
     ParaUserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
     ParaVertAlignment: scala.Double,

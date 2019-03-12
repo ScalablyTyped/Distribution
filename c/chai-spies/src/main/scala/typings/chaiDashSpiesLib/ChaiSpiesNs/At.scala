@@ -33,10 +33,10 @@ trait At extends js.Object {
 object At {
   @scala.inline
   def apply(
-    least: js.Function1[scala.Double, chaiDashSpiesLib.ChaiNs.Assertion],
-    most: js.Function1[scala.Double, chaiDashSpiesLib.ChaiNs.Assertion]
+    least: scala.Double => chaiDashSpiesLib.ChaiNs.Assertion,
+    most: scala.Double => chaiDashSpiesLib.ChaiNs.Assertion
   ): At = {
-    val __obj = js.Dynamic.literal(least = least, most = most)
+    val __obj = js.Dynamic.literal(least = js.Any.fromFunction1(least), most = js.Any.fromFunction1(most))
   
     __obj.asInstanceOf[At]
   }

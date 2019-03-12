@@ -9,10 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val TTY_WIDTH: scala.Double = js.native
-  def columnar(
-    rows: js.Array[js.Array[java.lang.String]],
-    hasHsepVsepHeaders: atIonicCliDashFrameworkLib.utilsFormatMod.ColumnarOptions
-  ): java.lang.String = js.native
+  def columnar(rows: js.Array[js.Array[java.lang.String]], hasHsepVsepHeaders: ColumnarOptions): java.lang.String = js.native
   def expandPath(p: java.lang.String): java.lang.String = js.native
   def generateFillSpaceStringList(list: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def generateFillSpaceStringList(list: js.Array[java.lang.String], optimalLength: scala.Double): js.Array[java.lang.String] = js.native
@@ -22,9 +19,6 @@ object ^ extends js.Object {
   def prettyPath(p: java.lang.String): java.lang.String = js.native
   def stringWidth(text: java.lang.String): scala.Double = js.native
   def stripAnsi(str: java.lang.String): java.lang.String = js.native
-  def wordWrap(
-    msg: java.lang.String,
-    hasWidthIndentationAppend: atIonicCliDashFrameworkLib.utilsFormatMod.WordWrapOptions
-  ): java.lang.String = js.native
+  def wordWrap(msg: java.lang.String, hasWidthIndentationAppend: WordWrapOptions): java.lang.String = js.native
 }
 

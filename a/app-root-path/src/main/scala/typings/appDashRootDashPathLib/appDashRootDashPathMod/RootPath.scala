@@ -34,12 +34,12 @@ object RootPath {
   @scala.inline
   def apply(
     path: java.lang.String,
-    require: js.Function1[java.lang.String, js.Any],
-    resolve: js.Function1[java.lang.String, java.lang.String],
-    setPath: js.Function1[java.lang.String, scala.Unit],
-    toString: js.Function0[java.lang.String]
+    require: java.lang.String => js.Any,
+    resolve: java.lang.String => java.lang.String,
+    setPath: java.lang.String => scala.Unit,
+    toString: () => java.lang.String
   ): RootPath = {
-    val __obj = js.Dynamic.literal(path = path, require = require, resolve = resolve, setPath = setPath, toString = toString)
+    val __obj = js.Dynamic.literal(path = path, require = js.Any.fromFunction1(require), resolve = js.Any.fromFunction1(resolve), setPath = js.Any.fromFunction1(setPath), toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[RootPath]
   }

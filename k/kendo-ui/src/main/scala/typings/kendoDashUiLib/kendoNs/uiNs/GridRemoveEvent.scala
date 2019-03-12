@@ -13,13 +13,13 @@ trait GridRemoveEvent extends GridEvent {
 object GridRemoveEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Grid,
     model: kendoDashUiLib.kendoNs.dataNs.Model = null,
     row: kendoDashUiLib.JQuery = null
   ): GridRemoveEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (model != null) __obj.updateDynamic("model")(model)
     if (row != null) __obj.updateDynamic("row")(row)
     __obj.asInstanceOf[GridRemoveEvent]

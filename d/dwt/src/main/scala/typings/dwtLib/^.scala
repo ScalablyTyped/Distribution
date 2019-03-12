@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  val dwt: dwtLib.WebTwain = js.native
+  val dwt: WebTwain = js.native
 }
 

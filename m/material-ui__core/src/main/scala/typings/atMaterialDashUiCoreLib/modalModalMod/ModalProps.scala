@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HtmlHTMLAttributes<react.HTMLDivElement>, 'classes' | never> ]: react.react.HtmlHTMLAttributes<react.HTMLDivElement>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HtmlHTMLAttributes<react.HTMLDivElement>, @material-ui/core.@material-ui/core/Modal/Modal.ModalClassKey, never>) */ trait ModalProps
+- Dropped {[ P in std.Exclude<keyof react.react.HtmlHTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.HtmlHTMLAttributes<std.HTMLDivElement>[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HtmlHTMLAttributes<std.HTMLDivElement>, @material-ui/core.@material-ui/core/Modal/Modal.ModalClassKey, never>) */ trait ModalProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ModalClassKey] {
   var BackdropComponent: js.UndefOr[
     reactLib.reactMod.ReactNs.ReactType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]
@@ -58,7 +58,7 @@ object ModalProps {
     onBackdropClick: reactLib.reactMod.ReactNs.ReactEventHandler[js.Object] = null,
     onClose: reactLib.reactMod.ReactNs.ReactEventHandler[js.Object] = null,
     onEscapeKeyDown: reactLib.reactMod.ReactNs.ReactEventHandler[js.Object] = null,
-    onRendered: js.Function0[scala.Unit] = null,
+    onRendered: () => scala.Unit = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): ModalProps = {
     val __obj = js.Dynamic.literal(open = open)
@@ -81,7 +81,7 @@ object ModalProps {
     if (onBackdropClick != null) __obj.updateDynamic("onBackdropClick")(onBackdropClick)
     if (onClose != null) __obj.updateDynamic("onClose")(onClose)
     if (onEscapeKeyDown != null) __obj.updateDynamic("onEscapeKeyDown")(onEscapeKeyDown)
-    if (onRendered != null) __obj.updateDynamic("onRendered")(onRendered)
+    if (onRendered != null) __obj.updateDynamic("onRendered")(js.Any.fromFunction0(onRendered))
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[ModalProps]
   }

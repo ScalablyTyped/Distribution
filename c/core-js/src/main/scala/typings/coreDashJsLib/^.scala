@@ -11,13 +11,13 @@ object ^ extends js.Object {
   /**
     * Non-standard.
     */
-  var Dict: coreDashJsLib.DictConstructor = js.native
+  var Dict: DictConstructor = js.native
   /**
     * Non-standard.
     */
-  var log: coreDashJsLib.Log = js.native
+  var log: Log = js.native
   @JSName("$for")
-  def $for[T](iterable: nodeLib.Iterable[T]): coreDashJsLib.$for[T] = js.native
+  def $for[T](iterable: stdLib.Iterable[T]): coreDashJsLib.$for[T] = js.native
   // #############################################################################################
   // delay - https://github.com/zloirock/core-js/#delay
   // Modules: core.delay

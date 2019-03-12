@@ -31,13 +31,13 @@ trait FilterMixin extends js.Object {
 object FilterMixin {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cache: js.Function1[scala.Boolean, FilterMixin],
-    cacheKey: js.Function1[java.lang.String, FilterMixin],
-    name: js.Function1[java.lang.String, FilterMixin],
-    toJSON: js.Function0[FilterMixin]
+    _type: () => java.lang.String,
+    cache: scala.Boolean => FilterMixin,
+    cacheKey: java.lang.String => FilterMixin,
+    name: java.lang.String => FilterMixin,
+    toJSON: () => FilterMixin
   ): FilterMixin = {
-    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, name = name, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), name = js.Any.fromFunction1(name), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[FilterMixin]
   }

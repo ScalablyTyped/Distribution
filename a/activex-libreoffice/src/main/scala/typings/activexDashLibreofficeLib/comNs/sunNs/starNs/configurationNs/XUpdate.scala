@@ -19,17 +19,12 @@ trait XUpdate extends js.Object {
 object XUpdate {
   @scala.inline
   def apply(
-    insertExtensionXcsFile: js.Function2[scala.Boolean, java.lang.String, scala.Unit],
-    insertExtensionXcuFile: js.Function2[scala.Boolean, java.lang.String, scala.Unit],
-    insertModificationXcuFile: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      scala.Unit
-    ],
-    removeExtensionXcuFile: js.Function1[java.lang.String, scala.Unit]
+    insertExtensionXcsFile: (scala.Boolean, java.lang.String) => scala.Unit,
+    insertExtensionXcuFile: (scala.Boolean, java.lang.String) => scala.Unit,
+    insertModificationXcuFile: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]) => scala.Unit,
+    removeExtensionXcuFile: java.lang.String => scala.Unit
   ): XUpdate = {
-    val __obj = js.Dynamic.literal(insertExtensionXcsFile = insertExtensionXcsFile, insertExtensionXcuFile = insertExtensionXcuFile, insertModificationXcuFile = insertModificationXcuFile, removeExtensionXcuFile = removeExtensionXcuFile)
+    val __obj = js.Dynamic.literal(insertExtensionXcsFile = js.Any.fromFunction2(insertExtensionXcsFile), insertExtensionXcuFile = js.Any.fromFunction2(insertExtensionXcuFile), insertModificationXcuFile = js.Any.fromFunction3(insertModificationXcuFile), removeExtensionXcuFile = js.Any.fromFunction1(removeExtensionXcuFile))
   
     __obj.asInstanceOf[XUpdate]
   }

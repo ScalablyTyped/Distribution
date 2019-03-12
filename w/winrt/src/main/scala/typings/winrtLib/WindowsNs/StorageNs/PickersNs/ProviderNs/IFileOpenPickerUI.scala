@@ -21,18 +21,18 @@ trait IFileOpenPickerUI extends js.Object {
 object IFileOpenPickerUI {
   @scala.inline
   def apply(
-    addFile: js.Function2[java.lang.String, winrtLib.WindowsNs.StorageNs.IStorageFile, AddFileResult],
+    addFile: (java.lang.String, winrtLib.WindowsNs.StorageNs.IStorageFile) => AddFileResult,
     allowedFileTypes: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String],
-    canAddFile: js.Function1[winrtLib.WindowsNs.StorageNs.IStorageFile, scala.Boolean],
-    containsFile: js.Function1[java.lang.String, scala.Boolean],
+    canAddFile: winrtLib.WindowsNs.StorageNs.IStorageFile => scala.Boolean,
+    containsFile: java.lang.String => scala.Boolean,
     onclosing: js.Any,
     onfileremoved: js.Any,
-    removeFile: js.Function1[java.lang.String, scala.Unit],
+    removeFile: java.lang.String => scala.Unit,
     selectionMode: FileSelectionMode,
     settingsIdentifier: java.lang.String,
     title: java.lang.String
   ): IFileOpenPickerUI = {
-    val __obj = js.Dynamic.literal(addFile = addFile, allowedFileTypes = allowedFileTypes, canAddFile = canAddFile, containsFile = containsFile, onclosing = onclosing, onfileremoved = onfileremoved, removeFile = removeFile, selectionMode = selectionMode, settingsIdentifier = settingsIdentifier, title = title)
+    val __obj = js.Dynamic.literal(addFile = js.Any.fromFunction2(addFile), allowedFileTypes = allowedFileTypes, canAddFile = js.Any.fromFunction1(canAddFile), containsFile = js.Any.fromFunction1(containsFile), onclosing = onclosing, onfileremoved = onfileremoved, removeFile = js.Any.fromFunction1(removeFile), selectionMode = selectionMode, settingsIdentifier = settingsIdentifier, title = title)
   
     __obj.asInstanceOf[IFileOpenPickerUI]
   }

@@ -63,11 +63,6 @@ class TemplateFactory ()
     params: js.Any,
     context: atUirouterCoreLib.atUirouterCoreMod.ResolveContext
   ): js.Promise[_] = js.native
-  def fromString(template: angularLib.angularMod.Global.Function): js.Any = js.native
-  def fromString(
-    template: angularLib.angularMod.Global.Function,
-    params: atUirouterCoreLib.libParamsInterfaceMod.RawParams
-  ): js.Any = js.native
   /**
     * Creates a template from a string or a function returning a string.
     *
@@ -79,7 +74,8 @@ class TemplateFactory ()
     */
   def fromString(template: java.lang.String): js.Any = js.native
   def fromString(template: java.lang.String, params: atUirouterCoreLib.libParamsInterfaceMod.RawParams): js.Any = js.native
-  def fromUrl(url: angularLib.angularMod.Global.Function, params: js.Any): js.Any = js.native
+  def fromString(template: js.Function): js.Any = js.native
+  def fromString(template: js.Function, params: atUirouterCoreLib.libParamsInterfaceMod.RawParams): js.Any = js.native
   /**
     * Loads a template from the a URL via `$http` and `$templateCache`.
     *
@@ -90,6 +86,7 @@ class TemplateFactory ()
     * for that string.
     */
   def fromUrl(url: java.lang.String, params: js.Any): js.Any = js.native
+  def fromUrl(url: js.Function, params: js.Any): js.Any = js.native
   /**
     * Creates a template from a component's name
     *

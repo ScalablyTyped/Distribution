@@ -13,7 +13,7 @@ trait RegressionCurveEquation
      with activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterProperties {
   var NumberFormat: scala.Double = js.native
   var ReferencePageSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size = js.native
-  var RelativePosition: RelativePosition = js.native
+  var RelativePosition: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.RelativePosition = js.native
   var ShowCorrelationCoefficient: scala.Boolean = js.native
   var ShowEquation: scala.Boolean = js.native
   var XName: java.lang.String = js.native

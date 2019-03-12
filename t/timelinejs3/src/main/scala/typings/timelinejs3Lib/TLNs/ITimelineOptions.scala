@@ -179,7 +179,7 @@ object ITimelineOptions {
     default_bg_color: java.lang.String = null,
     dragging: js.UndefOr[scala.Boolean] = js.undefined,
     duration: scala.Int | scala.Double = null,
-    ease: js.Function0[scala.Double] = null,
+    ease: () => scala.Double = null,
     ga_property_id: js.Any = null,
     hash_bookmark: js.UndefOr[scala.Boolean] = js.undefined,
     height: scala.Int | scala.Double = null,
@@ -216,7 +216,7 @@ object ITimelineOptions {
     if (default_bg_color != null) __obj.updateDynamic("default_bg_color")(default_bg_color)
     if (!js.isUndefined(dragging)) __obj.updateDynamic("dragging")(dragging)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (ease != null) __obj.updateDynamic("ease")(ease)
+    if (ease != null) __obj.updateDynamic("ease")(js.Any.fromFunction0(ease))
     if (ga_property_id != null) __obj.updateDynamic("ga_property_id")(ga_property_id)
     if (!js.isUndefined(hash_bookmark)) __obj.updateDynamic("hash_bookmark")(hash_bookmark)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

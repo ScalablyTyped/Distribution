@@ -34,28 +34,14 @@ trait Anon_Bleed extends js.Object {
 object Anon_Bleed {
   @scala.inline
   def apply(
-    renderBitmap: js.Function4[
-      /* img */ stdLib.HTMLElement, 
-      /* context */ stdLib.CanvasRenderingContext2D, 
-      /* contextSize */ scala.Double, 
-      /* bleed */ scala.Double, 
-      scala.Unit
-    ] = null,
-    renderGeometry: js.Function2[
-      /* shape */ mapsjsLib.mapsjsMod.geometry, 
-      /* context */ stdLib.CanvasRenderingContext2D, 
-      scala.Unit
-    ] = null,
-    renderPoint: js.Function2[
-      /* pt */ mapsjsLib.mapsjsMod.point, 
-      /* context */ stdLib.CanvasRenderingContext2D, 
-      scala.Unit
-    ] = null
+    renderBitmap: (/* img */ stdLib.HTMLElement, /* context */ stdLib.CanvasRenderingContext2D, /* contextSize */ scala.Double, /* bleed */ scala.Double) => scala.Unit = null,
+    renderGeometry: (/* shape */ mapsjsLib.mapsjsMod.geometry, /* context */ stdLib.CanvasRenderingContext2D) => scala.Unit = null,
+    renderPoint: (/* pt */ mapsjsLib.mapsjsMod.point, /* context */ stdLib.CanvasRenderingContext2D) => scala.Unit = null
   ): Anon_Bleed = {
     val __obj = js.Dynamic.literal()
-    if (renderBitmap != null) __obj.updateDynamic("renderBitmap")(renderBitmap)
-    if (renderGeometry != null) __obj.updateDynamic("renderGeometry")(renderGeometry)
-    if (renderPoint != null) __obj.updateDynamic("renderPoint")(renderPoint)
+    if (renderBitmap != null) __obj.updateDynamic("renderBitmap")(js.Any.fromFunction4(renderBitmap))
+    if (renderGeometry != null) __obj.updateDynamic("renderGeometry")(js.Any.fromFunction2(renderGeometry))
+    if (renderPoint != null) __obj.updateDynamic("renderPoint")(js.Any.fromFunction2(renderPoint))
     __obj.asInstanceOf[Anon_Bleed]
   }
 }

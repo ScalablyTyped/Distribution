@@ -184,13 +184,7 @@ object CycleOptions {
   @scala.inline
   def apply(
     activePagerClass: java.lang.String = null,
-    after: js.Function4[
-      /* currSlideElement */ stdLib.Element, 
-      /* nextSlideElement */ stdLib.Element, 
-      /* options */ CycleOptions, 
-      /* forwardFlag */ scala.Boolean, 
-      scala.Unit
-    ] = null,
+    after: (/* currSlideElement */ stdLib.Element, /* nextSlideElement */ stdLib.Element, /* options */ CycleOptions, /* forwardFlag */ scala.Boolean) => scala.Unit = null,
     allowPagerClickBubble: js.UndefOr[scala.Boolean] = js.undefined,
     animIn: js.Any = null,
     animOut: js.Any = null,
@@ -198,13 +192,7 @@ object CycleOptions {
     autostop: js.UndefOr[scala.Boolean] = js.undefined,
     autostopCount: scala.Int | scala.Double = null,
     backwards: js.UndefOr[scala.Boolean] = js.undefined,
-    before: js.Function4[
-      /* currSlideElement */ stdLib.Element, 
-      /* nextSlideElement */ stdLib.Element, 
-      /* options */ CycleOptions, 
-      /* forwardFlag */ scala.Boolean, 
-      scala.Unit
-    ] = null,
+    before: (/* currSlideElement */ stdLib.Element, /* nextSlideElement */ stdLib.Element, /* options */ CycleOptions, /* forwardFlag */ scala.Boolean) => scala.Unit = null,
     center: js.UndefOr[scala.Boolean] = js.undefined,
     cleartype: js.UndefOr[scala.Boolean] = js.undefined,
     cleartypeNoBg: js.UndefOr[scala.Boolean] = js.undefined,
@@ -217,36 +205,20 @@ object CycleOptions {
     easeIn: java.lang.String = null,
     easeOut: java.lang.String = null,
     easing: java.lang.String = null,
-    end: js.Function1[/* options */ CycleOptions, scala.Unit] = null,
+    end: /* options */ CycleOptions => scala.Unit = null,
     fastOnEvent: js.UndefOr[scala.Boolean] = js.undefined,
     fit: js.UndefOr[scala.Boolean] = js.undefined,
     fx: java.lang.String = null,
-    fxFn: js.Function5[
-      /* currSlideElement */ stdLib.Element, 
-      /* nextSlideElement */ stdLib.Element, 
-      /* options */ CycleOptions, 
-      /* afterCalback */ js.Function, 
-      /* forwardFlag */ scala.Boolean, 
-      scala.Unit
-    ] = null,
+    fxFn: (/* currSlideElement */ stdLib.Element, /* nextSlideElement */ stdLib.Element, /* options */ CycleOptions, /* afterCalback */ js.Function, /* forwardFlag */ scala.Boolean) => scala.Unit = null,
     height: js.Any = null,
     manualTrump: js.UndefOr[scala.Boolean] = js.undefined,
     metaAttr: java.lang.String = null,
     next: js.Any = null,
     nowrap: js.UndefOr[scala.Boolean] = js.undefined,
-    onPagerEvent: js.Function2[
-      /* zeroBasedSlideIndex */ scala.Double, 
-      /* slideElement */ stdLib.Element, 
-      scala.Unit
-    ] = null,
-    onPrevNextEvent: js.Function3[
-      /* isNext */ scala.Boolean, 
-      /* zeroBasedSlideIndex */ scala.Double, 
-      /* slideElement */ stdLib.Element, 
-      scala.Unit
-    ] = null,
+    onPagerEvent: (/* zeroBasedSlideIndex */ scala.Double, /* slideElement */ stdLib.Element) => scala.Unit = null,
+    onPrevNextEvent: (/* isNext */ scala.Boolean, /* zeroBasedSlideIndex */ scala.Double, /* slideElement */ stdLib.Element) => scala.Unit = null,
     pager: js.Any = null,
-    pagerAnchorBuilder: js.Function2[/* index */ scala.Double, /* DOMelement */ stdLib.Element, java.lang.String] = null,
+    pagerAnchorBuilder: (/* index */ scala.Double, /* DOMelement */ stdLib.Element) => java.lang.String = null,
     pagerEvent: java.lang.String = null,
     pause: js.UndefOr[scala.Boolean] = js.undefined,
     pauseOnPagerHover: js.UndefOr[scala.Boolean] = js.undefined,
@@ -267,24 +239,13 @@ object CycleOptions {
     startingSlide: scala.Int | scala.Double = null,
     sync: js.UndefOr[scala.Boolean] = js.undefined,
     timeout: scala.Int | scala.Double = null,
-    timeoutFn: js.Function4[
-      /* currSlideElement */ stdLib.Element, 
-      /* nextSlideElement */ stdLib.Element, 
-      /* options */ CycleOptions, 
-      /* forwardFlag */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    updateActivePagerLink: js.Function3[
-      /* pager */ js.Any, 
-      /* currSlide */ scala.Double, 
-      /* clsName */ java.lang.String, 
-      scala.Unit
-    ] = null,
+    timeoutFn: (/* currSlideElement */ stdLib.Element, /* nextSlideElement */ stdLib.Element, /* options */ CycleOptions, /* forwardFlag */ scala.Boolean) => scala.Unit = null,
+    updateActivePagerLink: (/* pager */ js.Any, /* currSlide */ scala.Double, /* clsName */ java.lang.String) => scala.Unit = null,
     width: js.Any = null
   ): CycleOptions = {
     val __obj = js.Dynamic.literal()
     if (activePagerClass != null) __obj.updateDynamic("activePagerClass")(activePagerClass)
-    if (after != null) __obj.updateDynamic("after")(after)
+    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction4(after))
     if (!js.isUndefined(allowPagerClickBubble)) __obj.updateDynamic("allowPagerClickBubble")(allowPagerClickBubble)
     if (animIn != null) __obj.updateDynamic("animIn")(animIn)
     if (animOut != null) __obj.updateDynamic("animOut")(animOut)
@@ -292,7 +253,7 @@ object CycleOptions {
     if (!js.isUndefined(autostop)) __obj.updateDynamic("autostop")(autostop)
     if (autostopCount != null) __obj.updateDynamic("autostopCount")(autostopCount.asInstanceOf[js.Any])
     if (!js.isUndefined(backwards)) __obj.updateDynamic("backwards")(backwards)
-    if (before != null) __obj.updateDynamic("before")(before)
+    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction4(before))
     if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
     if (!js.isUndefined(cleartype)) __obj.updateDynamic("cleartype")(cleartype)
     if (!js.isUndefined(cleartypeNoBg)) __obj.updateDynamic("cleartypeNoBg")(cleartypeNoBg)
@@ -305,20 +266,20 @@ object CycleOptions {
     if (easeIn != null) __obj.updateDynamic("easeIn")(easeIn)
     if (easeOut != null) __obj.updateDynamic("easeOut")(easeOut)
     if (easing != null) __obj.updateDynamic("easing")(easing)
-    if (end != null) __obj.updateDynamic("end")(end)
+    if (end != null) __obj.updateDynamic("end")(js.Any.fromFunction1(end))
     if (!js.isUndefined(fastOnEvent)) __obj.updateDynamic("fastOnEvent")(fastOnEvent)
     if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit)
     if (fx != null) __obj.updateDynamic("fx")(fx)
-    if (fxFn != null) __obj.updateDynamic("fxFn")(fxFn)
+    if (fxFn != null) __obj.updateDynamic("fxFn")(js.Any.fromFunction5(fxFn))
     if (height != null) __obj.updateDynamic("height")(height)
     if (!js.isUndefined(manualTrump)) __obj.updateDynamic("manualTrump")(manualTrump)
     if (metaAttr != null) __obj.updateDynamic("metaAttr")(metaAttr)
     if (next != null) __obj.updateDynamic("next")(next)
     if (!js.isUndefined(nowrap)) __obj.updateDynamic("nowrap")(nowrap)
-    if (onPagerEvent != null) __obj.updateDynamic("onPagerEvent")(onPagerEvent)
-    if (onPrevNextEvent != null) __obj.updateDynamic("onPrevNextEvent")(onPrevNextEvent)
+    if (onPagerEvent != null) __obj.updateDynamic("onPagerEvent")(js.Any.fromFunction2(onPagerEvent))
+    if (onPrevNextEvent != null) __obj.updateDynamic("onPrevNextEvent")(js.Any.fromFunction3(onPrevNextEvent))
     if (pager != null) __obj.updateDynamic("pager")(pager)
-    if (pagerAnchorBuilder != null) __obj.updateDynamic("pagerAnchorBuilder")(pagerAnchorBuilder)
+    if (pagerAnchorBuilder != null) __obj.updateDynamic("pagerAnchorBuilder")(js.Any.fromFunction2(pagerAnchorBuilder))
     if (pagerEvent != null) __obj.updateDynamic("pagerEvent")(pagerEvent)
     if (!js.isUndefined(pause)) __obj.updateDynamic("pause")(pause)
     if (!js.isUndefined(pauseOnPagerHover)) __obj.updateDynamic("pauseOnPagerHover")(pauseOnPagerHover)
@@ -339,8 +300,8 @@ object CycleOptions {
     if (startingSlide != null) __obj.updateDynamic("startingSlide")(startingSlide.asInstanceOf[js.Any])
     if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (timeoutFn != null) __obj.updateDynamic("timeoutFn")(timeoutFn)
-    if (updateActivePagerLink != null) __obj.updateDynamic("updateActivePagerLink")(updateActivePagerLink)
+    if (timeoutFn != null) __obj.updateDynamic("timeoutFn")(js.Any.fromFunction4(timeoutFn))
+    if (updateActivePagerLink != null) __obj.updateDynamic("updateActivePagerLink")(js.Any.fromFunction3(updateActivePagerLink))
     if (width != null) __obj.updateDynamic("width")(width)
     __obj.asInstanceOf[CycleOptions]
   }

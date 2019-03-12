@@ -18,7 +18,7 @@ trait ColumnSpec extends js.Object {
 object ColumnSpec {
   @scala.inline
   def apply(
-    calc: js.Function2[DataTable, scala.Double, js.Any],
+    calc: (DataTable, scala.Double) => js.Any,
     `type`: java.lang.String,
     id: java.lang.String = null,
     label: java.lang.String = null,
@@ -26,7 +26,7 @@ object ColumnSpec {
     role: java.lang.String = null,
     sourceColumn: scala.Int | scala.Double = null
   ): ColumnSpec = {
-    val __obj = js.Dynamic.literal(calc = calc)
+    val __obj = js.Dynamic.literal(calc = js.Any.fromFunction2(calc))
     __obj.updateDynamic("type")(`type`)
     if (id != null) __obj.updateDynamic("id")(id)
     if (label != null) __obj.updateDynamic("label")(label)

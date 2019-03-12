@@ -15,3 +15,16 @@ trait CurrentRefinementsExposed extends js.Object {
   var transformItems: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
 }
 
+object CurrentRefinementsExposed {
+  @scala.inline
+  def apply(
+    clearsQuery: js.UndefOr[scala.Boolean] = js.undefined,
+    transformItems: /* repeated */ js.Any => _ = null
+  ): CurrentRefinementsExposed = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(clearsQuery)) __obj.updateDynamic("clearsQuery")(clearsQuery)
+    if (transformItems != null) __obj.updateDynamic("transformItems")(js.Any.fromFunction1(transformItems))
+    __obj.asInstanceOf[CurrentRefinementsExposed]
+  }
+}
+

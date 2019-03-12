@@ -13,10 +13,10 @@ trait GetTestability extends js.Object {
 object GetTestability {
   @scala.inline
   def apply(
-    addToWindow: js.Function1[TestabilityRegistry, scala.Unit],
-    findTestabilityInTree: js.Function3[TestabilityRegistry, js.Any, scala.Boolean, Testability | scala.Null]
+    addToWindow: TestabilityRegistry => scala.Unit,
+    findTestabilityInTree: (TestabilityRegistry, js.Any, scala.Boolean) => Testability | scala.Null
   ): GetTestability = {
-    val __obj = js.Dynamic.literal(addToWindow = addToWindow, findTestabilityInTree = findTestabilityInTree)
+    val __obj = js.Dynamic.literal(addToWindow = js.Any.fromFunction1(addToWindow), findTestabilityInTree = js.Any.fromFunction3(findTestabilityInTree))
   
     __obj.asInstanceOf[GetTestability]
   }

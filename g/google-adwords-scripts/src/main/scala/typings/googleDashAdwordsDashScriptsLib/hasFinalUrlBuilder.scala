@@ -12,11 +12,8 @@ trait hasFinalUrlBuilder[B] extends js.Object {
 
 object hasFinalUrlBuilder {
   @scala.inline
-  def apply[B](
-    withFinalUrl: js.Function1[java.lang.String, B],
-    withMobileFinalUrl: js.Function1[java.lang.String, B]
-  ): hasFinalUrlBuilder[B] = {
-    val __obj = js.Dynamic.literal(withFinalUrl = withFinalUrl, withMobileFinalUrl = withMobileFinalUrl)
+  def apply[B](withFinalUrl: java.lang.String => B, withMobileFinalUrl: java.lang.String => B): hasFinalUrlBuilder[B] = {
+    val __obj = js.Dynamic.literal(withFinalUrl = js.Any.fromFunction1(withFinalUrl), withMobileFinalUrl = js.Any.fromFunction1(withMobileFinalUrl))
   
     __obj.asInstanceOf[hasFinalUrlBuilder[B]]
   }

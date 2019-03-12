@@ -17,11 +17,11 @@ trait Template extends js.Object {
 object Template {
   @scala.inline
   def apply(
-    expression: js.Function1[/* repeated */ js.Any, js.Any],
-    statement: js.Function1[/* repeated */ js.Any, js.Any],
-    statements: js.Function1[/* repeated */ js.Any, js.Any]
+    expression: /* repeated */ js.Any => js.Any,
+    statement: /* repeated */ js.Any => js.Any,
+    statements: /* repeated */ js.Any => js.Any
   ): Template = {
-    val __obj = js.Dynamic.literal(expression = expression, statement = statement, statements = statements)
+    val __obj = js.Dynamic.literal(expression = js.Any.fromFunction1(expression), statement = js.Any.fromFunction1(statement), statements = js.Any.fromFunction1(statements))
   
     __obj.asInstanceOf[Template]
   }

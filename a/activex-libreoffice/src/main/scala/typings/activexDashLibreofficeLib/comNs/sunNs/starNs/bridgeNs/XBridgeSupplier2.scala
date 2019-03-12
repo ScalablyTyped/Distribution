@@ -53,18 +53,12 @@ trait XBridgeSupplier2
 object XBridgeSupplier2 {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createBridge: js.Function4[
-      js.Any, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      scala.Double, 
-      scala.Double, 
-      js.Any
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createBridge: (js.Any, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Double, scala.Double) => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XBridgeSupplier2 = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createBridge = createBridge, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createBridge = js.Any.fromFunction4(createBridge), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XBridgeSupplier2]
   }

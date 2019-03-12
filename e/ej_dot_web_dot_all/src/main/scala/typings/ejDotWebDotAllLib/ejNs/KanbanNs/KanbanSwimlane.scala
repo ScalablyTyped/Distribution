@@ -23,12 +23,8 @@ trait KanbanSwimlane extends js.Object {
 
 object KanbanSwimlane {
   @scala.inline
-  def apply(
-    collapseAll: js.Function0[scala.Unit],
-    expandAll: js.Function0[scala.Unit],
-    toggle: js.Function1[js.Any, scala.Unit]
-  ): KanbanSwimlane = {
-    val __obj = js.Dynamic.literal(collapseAll = collapseAll, expandAll = expandAll, toggle = toggle)
+  def apply(collapseAll: () => scala.Unit, expandAll: () => scala.Unit, toggle: js.Any => scala.Unit): KanbanSwimlane = {
+    val __obj = js.Dynamic.literal(collapseAll = js.Any.fromFunction0(collapseAll), expandAll = js.Any.fromFunction0(expandAll), toggle = js.Any.fromFunction1(toggle))
   
     __obj.asInstanceOf[KanbanSwimlane]
   }

@@ -54,21 +54,21 @@ trait GridControl extends Control {
 object GridControl {
   @scala.inline
   def apply(
-    addOnLoad: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    getContextType: js.Function0[xrmLib.XrmEnumNs.GridControlContext],
-    getControlType: js.Function0[ControlType | java.lang.String],
-    getEntityName: js.Function0[java.lang.String],
-    getGrid: js.Function0[Grid],
-    getLabel: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getParent: js.Function0[Section],
-    getViewSelector: js.Function0[ViewSelector],
-    getVisible: js.Function0[scala.Boolean],
-    refresh: js.Function0[scala.Unit],
-    removeOnLoad: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    setLabel: js.Function1[java.lang.String, scala.Unit]
+    addOnLoad: js.Function0[scala.Unit] => scala.Unit,
+    getContextType: () => xrmLib.XrmEnumNs.GridControlContext,
+    getControlType: () => ControlType | java.lang.String,
+    getEntityName: () => java.lang.String,
+    getGrid: () => Grid,
+    getLabel: () => java.lang.String,
+    getName: () => java.lang.String,
+    getParent: () => Section,
+    getViewSelector: () => ViewSelector,
+    getVisible: () => scala.Boolean,
+    refresh: () => scala.Unit,
+    removeOnLoad: js.Function0[scala.Unit] => scala.Unit,
+    setLabel: java.lang.String => scala.Unit
   ): GridControl = {
-    val __obj = js.Dynamic.literal(addOnLoad = addOnLoad, getContextType = getContextType, getControlType = getControlType, getEntityName = getEntityName, getGrid = getGrid, getLabel = getLabel, getName = getName, getParent = getParent, getViewSelector = getViewSelector, getVisible = getVisible, refresh = refresh, removeOnLoad = removeOnLoad, setLabel = setLabel)
+    val __obj = js.Dynamic.literal(addOnLoad = js.Any.fromFunction1(addOnLoad), getContextType = js.Any.fromFunction0(getContextType), getControlType = js.Any.fromFunction0(getControlType), getEntityName = js.Any.fromFunction0(getEntityName), getGrid = js.Any.fromFunction0(getGrid), getLabel = js.Any.fromFunction0(getLabel), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getViewSelector = js.Any.fromFunction0(getViewSelector), getVisible = js.Any.fromFunction0(getVisible), refresh = js.Any.fromFunction0(refresh), removeOnLoad = js.Any.fromFunction1(removeOnLoad), setLabel = js.Any.fromFunction1(setLabel))
   
     __obj.asInstanceOf[GridControl]
   }

@@ -32,38 +32,29 @@ trait Future[A] extends js.Object {
 object Future {
   @scala.inline
   def apply[A](
-    andThen: js.Function1[js.Function1[/* t */ Try[A], js.Any], Future[A]],
-    apply1: js.Function2[Future[js.Any], js.Function2[/* a */ A, js.Any, js.Any], Future[js.Any]],
-    apply2: js.Function3[
-      Future[js.Any], 
-      Future[js.Any], 
-      js.Function3[/* a */ A, js.Any, js.Any, js.Any], 
-      Future[js.Any]
-    ],
-    chain: js.Function1[Future[js.Any], FutureBuilder1[A, js.Any]],
-    failed: js.Function0[Future[stdLib.Error]],
-    fallbackTo: js.Function1[Future[js.Any], Future[A]],
-    filter: js.Function1[js.Function1[/* a */ A, scala.Boolean], Future[A]],
-    flatMap: js.Function1[js.Function1[/* a */ A, Future[js.Any]], Future[js.Any]],
-    foreach: js.Function1[js.Function1[/* a */ A, js.Any], scala.Unit],
-    getPromise: js.Function0[js.Promise[A]],
-    isCompleted: js.Function0[scala.Boolean],
-    map: js.Function1[js.Function1[/* a */ A, js.Any], Future[js.Any]],
-    onComplete: js.Function1[js.Function1[/* t */ Try[A], js.Any], scala.Unit],
-    recover: js.Function1[js.Function1[/* e */ stdLib.Error, Optional[js.Any]], Future[A]],
-    recoverWith: js.Function1[js.Function1[/* e */ stdLib.Error, Optional[Future[js.Any]]], Future[A]],
-    transform: js.Function1[js.Function1[/* t */ Try[A], Try[js.Any]], Future[js.Any]],
-    transform1: js.Function2[
-      js.Function1[/* a */ A, js.Any], 
-      js.Function1[/* e */ stdLib.Error, stdLib.Error], 
-      Future[js.Any]
-    ],
-    transformWith: js.Function1[js.Function1[/* t */ Try[A], Future[js.Any]], Future[js.Any]],
-    value: js.Function0[Optional[Try[A]]],
-    zip: js.Function1[Future[js.Any], Future[js.Tuple2[A, js.Any]]],
-    zipWith: js.Function2[Future[js.Any], js.Function2[/* a */ A, js.Any, js.Any], Future[js.Any]]
+    andThen: js.Function1[/* t */ Try[A], js.Any] => Future[A],
+    apply1: (Future[js.Any], js.Function2[/* a */ A, js.Any, js.Any]) => Future[js.Any],
+    apply2: (Future[js.Any], Future[js.Any], js.Function3[/* a */ A, js.Any, js.Any, js.Any]) => Future[js.Any],
+    chain: Future[js.Any] => FutureBuilder1[A, js.Any],
+    failed: () => Future[stdLib.Error],
+    fallbackTo: Future[js.Any] => Future[A],
+    filter: js.Function1[/* a */ A, scala.Boolean] => Future[A],
+    flatMap: js.Function1[/* a */ A, Future[js.Any]] => Future[js.Any],
+    foreach: js.Function1[/* a */ A, js.Any] => scala.Unit,
+    getPromise: () => js.Promise[A],
+    isCompleted: () => scala.Boolean,
+    map: js.Function1[/* a */ A, js.Any] => Future[js.Any],
+    onComplete: js.Function1[/* t */ Try[A], js.Any] => scala.Unit,
+    recover: js.Function1[/* e */ stdLib.Error, Optional[js.Any]] => Future[A],
+    recoverWith: js.Function1[/* e */ stdLib.Error, Optional[Future[js.Any]]] => Future[A],
+    transform: js.Function1[/* t */ Try[A], Try[js.Any]] => Future[js.Any],
+    transform1: (js.Function1[/* a */ A, js.Any], js.Function1[/* e */ stdLib.Error, stdLib.Error]) => Future[js.Any],
+    transformWith: js.Function1[/* t */ Try[A], Future[js.Any]] => Future[js.Any],
+    value: () => Optional[Try[A]],
+    zip: Future[js.Any] => Future[js.Tuple2[A, js.Any]],
+    zipWith: (Future[js.Any], js.Function2[/* a */ A, js.Any, js.Any]) => Future[js.Any]
   ): Future[A] = {
-    val __obj = js.Dynamic.literal(andThen = andThen, apply1 = apply1, apply2 = apply2, chain = chain, failed = failed, fallbackTo = fallbackTo, filter = filter, flatMap = flatMap, foreach = foreach, getPromise = getPromise, isCompleted = isCompleted, map = map, onComplete = onComplete, recover = recover, recoverWith = recoverWith, transform = transform, transform1 = transform1, transformWith = transformWith, value = value, zip = zip, zipWith = zipWith)
+    val __obj = js.Dynamic.literal(andThen = js.Any.fromFunction1(andThen), apply1 = js.Any.fromFunction2(apply1), apply2 = js.Any.fromFunction3(apply2), chain = js.Any.fromFunction1(chain), failed = js.Any.fromFunction0(failed), fallbackTo = js.Any.fromFunction1(fallbackTo), filter = js.Any.fromFunction1(filter), flatMap = js.Any.fromFunction1(flatMap), foreach = js.Any.fromFunction1(foreach), getPromise = js.Any.fromFunction0(getPromise), isCompleted = js.Any.fromFunction0(isCompleted), map = js.Any.fromFunction1(map), onComplete = js.Any.fromFunction1(onComplete), recover = js.Any.fromFunction1(recover), recoverWith = js.Any.fromFunction1(recoverWith), transform = js.Any.fromFunction1(transform), transform1 = js.Any.fromFunction2(transform1), transformWith = js.Any.fromFunction1(transformWith), value = js.Any.fromFunction0(value), zip = js.Any.fromFunction1(zip), zipWith = js.Any.fromFunction2(zipWith))
   
     __obj.asInstanceOf[Future[A]]
   }

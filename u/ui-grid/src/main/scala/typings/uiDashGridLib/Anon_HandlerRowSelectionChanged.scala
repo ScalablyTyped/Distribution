@@ -31,18 +31,10 @@ trait Anon_HandlerRowSelectionChanged[TEntity] extends js.Object {
 object Anon_HandlerRowSelectionChanged {
   @scala.inline
   def apply[TEntity](
-    rowSelectionChanged: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      uiDashGridLib.uiDashGridMod.uiGridNs.selectionNs.rowSelectionChangedHandler[TEntity], 
-      scala.Unit
-    ],
-    rowSelectionChangedBatch: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      uiDashGridLib.uiDashGridMod.uiGridNs.selectionNs.rowSelectionChangedBatchHandler[TEntity], 
-      scala.Unit
-    ]
+    rowSelectionChanged: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.selectionNs.rowSelectionChangedHandler[TEntity]) => scala.Unit,
+    rowSelectionChangedBatch: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.selectionNs.rowSelectionChangedBatchHandler[TEntity]) => scala.Unit
   ): Anon_HandlerRowSelectionChanged[TEntity] = {
-    val __obj = js.Dynamic.literal(rowSelectionChanged = rowSelectionChanged, rowSelectionChangedBatch = rowSelectionChangedBatch)
+    val __obj = js.Dynamic.literal(rowSelectionChanged = js.Any.fromFunction2(rowSelectionChanged), rowSelectionChangedBatch = js.Any.fromFunction2(rowSelectionChangedBatch))
   
     __obj.asInstanceOf[Anon_HandlerRowSelectionChanged[TEntity]]
   }

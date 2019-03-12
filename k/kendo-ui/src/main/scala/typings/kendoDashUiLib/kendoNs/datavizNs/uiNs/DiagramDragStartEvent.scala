@@ -14,14 +14,14 @@ trait DiagramDragStartEvent extends DiagramEvent {
 object DiagramDragStartEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Diagram,
     connectionHandle: java.lang.String = null,
     connections: js.Any = null,
     shapes: js.Any = null
   ): DiagramDragStartEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (connectionHandle != null) __obj.updateDynamic("connectionHandle")(connectionHandle)
     if (connections != null) __obj.updateDynamic("connections")(connections)
     if (shapes != null) __obj.updateDynamic("shapes")(shapes)

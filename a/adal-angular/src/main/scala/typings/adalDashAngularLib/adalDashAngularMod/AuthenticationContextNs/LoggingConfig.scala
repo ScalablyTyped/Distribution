@@ -13,12 +13,8 @@ trait LoggingConfig extends js.Object {
 
 object LoggingConfig {
   @scala.inline
-  def apply(
-    level: LoggingLevel,
-    log: js.Function1[java.lang.String, scala.Unit],
-    piiLoggingEnabled: scala.Boolean
-  ): LoggingConfig = {
-    val __obj = js.Dynamic.literal(level = level, log = log, piiLoggingEnabled = piiLoggingEnabled)
+  def apply(level: LoggingLevel, log: java.lang.String => scala.Unit, piiLoggingEnabled: scala.Boolean): LoggingConfig = {
+    val __obj = js.Dynamic.literal(level = level, log = js.Any.fromFunction1(log), piiLoggingEnabled = piiLoggingEnabled)
   
     __obj.asInstanceOf[LoggingConfig]
   }

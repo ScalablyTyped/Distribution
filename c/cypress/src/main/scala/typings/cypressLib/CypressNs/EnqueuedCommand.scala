@@ -18,11 +18,11 @@ object EnqueuedCommand {
   def apply(
     args: js.Array[_],
     chainerId: java.lang.String,
-    fn: js.Function1[/* repeated */ js.Any, js.Any],
+    fn: /* repeated */ js.Any => js.Any,
     name: java.lang.String,
     `type`: java.lang.String
   ): EnqueuedCommand = {
-    val __obj = js.Dynamic.literal(args = args, chainerId = chainerId, fn = fn, name = name)
+    val __obj = js.Dynamic.literal(args = args, chainerId = chainerId, fn = js.Any.fromFunction1(fn), name = name)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[EnqueuedCommand]
   }

@@ -24,8 +24,8 @@ object IEmailMessageInformation {
   @scala.inline
   def apply(
     Cc: IStrings,
-    Clone: js.Function0[IEmailMessageInformation],
-    CloneFrom: js.Function1[IEmailMessageInformation, scala.Unit],
+    Clone: () => IEmailMessageInformation,
+    CloneFrom: IEmailMessageInformation => scala.Unit,
     From: java.lang.String,
     Importance: mfilesLib.MFilesNs.MFEmailImportance,
     InReplyTo: java.lang.String,
@@ -36,7 +36,7 @@ object IEmailMessageInformation {
     Subject: java.lang.String,
     To: IStrings
   ): IEmailMessageInformation = {
-    val __obj = js.Dynamic.literal(Cc = Cc, Clone = Clone, CloneFrom = CloneFrom, From = From, Importance = Importance, InReplyTo = InReplyTo, MessageID = MessageID, Received = Received, Sensitivity = Sensitivity, Sent = Sent, Subject = Subject, To = To)
+    val __obj = js.Dynamic.literal(Cc = Cc, Clone = js.Any.fromFunction0(Clone), CloneFrom = js.Any.fromFunction1(CloneFrom), From = From, Importance = Importance, InReplyTo = InReplyTo, MessageID = MessageID, Received = Received, Sensitivity = Sensitivity, Sent = Sent, Subject = Subject, To = To)
   
     __obj.asInstanceOf[IEmailMessageInformation]
   }

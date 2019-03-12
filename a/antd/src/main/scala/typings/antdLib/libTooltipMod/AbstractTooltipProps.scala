@@ -13,9 +13,9 @@ trait AbstractTooltipProps extends js.Object {
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var defaultVisible: js.UndefOr[scala.Boolean] = js.undefined
   var getPopupContainer: js.UndefOr[
-    js.Function1[/* triggerNode */ js.UndefOr[reactLib.HTMLElement], reactLib.HTMLElement]
+    js.Function1[/* triggerNode */ js.UndefOr[stdLib.HTMLElement], stdLib.HTMLElement]
   ] = js.undefined
-  var getTooltipContainer: js.UndefOr[js.Function1[/* triggerNode */ reactLib.Element, reactLib.HTMLElement]] = js.undefined
+  var getTooltipContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.Element, stdLib.HTMLElement]] = js.undefined
   var mouseEnterDelay: js.UndefOr[scala.Double] = js.undefined
   var mouseLeaveDelay: js.UndefOr[scala.Double] = js.undefined
   var onVisibleChange: js.UndefOr[js.Function1[/* visible */ scala.Boolean, scala.Unit]] = js.undefined
@@ -39,11 +39,11 @@ object AbstractTooltipProps {
     builtinPlacements: js.Object = null,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     defaultVisible: js.UndefOr[scala.Boolean] = js.undefined,
-    getPopupContainer: js.Function1[/* triggerNode */ js.UndefOr[reactLib.HTMLElement], reactLib.HTMLElement] = null,
-    getTooltipContainer: js.Function1[/* triggerNode */ reactLib.Element, reactLib.HTMLElement] = null,
+    getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.HTMLElement] => stdLib.HTMLElement = null,
+    getTooltipContainer: /* triggerNode */ stdLib.Element => stdLib.HTMLElement = null,
     mouseEnterDelay: scala.Int | scala.Double = null,
     mouseLeaveDelay: scala.Int | scala.Double = null,
-    onVisibleChange: js.Function1[/* visible */ scala.Boolean, scala.Unit] = null,
+    onVisibleChange: /* visible */ scala.Boolean => scala.Unit = null,
     openClassName: java.lang.String = null,
     overlayClassName: java.lang.String = null,
     overlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -61,11 +61,11 @@ object AbstractTooltipProps {
     if (builtinPlacements != null) __obj.updateDynamic("builtinPlacements")(builtinPlacements)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultVisible)) __obj.updateDynamic("defaultVisible")(defaultVisible)
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer)
-    if (getTooltipContainer != null) __obj.updateDynamic("getTooltipContainer")(getTooltipContainer)
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
+    if (getTooltipContainer != null) __obj.updateDynamic("getTooltipContainer")(js.Any.fromFunction1(getTooltipContainer))
     if (mouseEnterDelay != null) __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay.asInstanceOf[js.Any])
     if (mouseLeaveDelay != null) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.asInstanceOf[js.Any])
-    if (onVisibleChange != null) __obj.updateDynamic("onVisibleChange")(onVisibleChange)
+    if (onVisibleChange != null) __obj.updateDynamic("onVisibleChange")(js.Any.fromFunction1(onVisibleChange))
     if (openClassName != null) __obj.updateDynamic("openClassName")(openClassName)
     if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName)
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle)

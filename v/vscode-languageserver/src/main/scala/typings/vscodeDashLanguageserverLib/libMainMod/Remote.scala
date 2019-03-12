@@ -34,18 +34,12 @@ trait Remote extends js.Object {
 object Remote {
   @scala.inline
   def apply(
-    attach: js.Function1[IConnection, scala.Unit],
+    attach: IConnection => scala.Unit,
     connection: IConnection,
-    fillServerCapabilities: js.Function1[
-      vscodeDashLanguageserverDashProtocolLib.libProtocolMod.ServerCapabilities, 
-      scala.Unit
-    ],
-    initialize: js.Function1[
-      vscodeDashLanguageserverDashProtocolLib.libProtocolMod.ClientCapabilities, 
-      scala.Unit
-    ]
+    fillServerCapabilities: vscodeDashLanguageserverDashProtocolLib.libProtocolMod.ServerCapabilities => scala.Unit,
+    initialize: vscodeDashLanguageserverDashProtocolLib.libProtocolMod.ClientCapabilities => scala.Unit
   ): Remote = {
-    val __obj = js.Dynamic.literal(attach = attach, connection = connection, fillServerCapabilities = fillServerCapabilities, initialize = initialize)
+    val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach), connection = connection, fillServerCapabilities = js.Any.fromFunction1(fillServerCapabilities), initialize = js.Any.fromFunction1(initialize))
   
     __obj.asInstanceOf[Remote]
   }

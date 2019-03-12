@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 trait ClearBladeInt extends js.Object {
   var Timer: TimerClass = js.native
   var Trigger: TriggerClass = js.native
-  def Code(): Code = js.native
-  def Collection(options: CollectionOptionsWithCollection): Collection = js.native
-  def Collection(options: CollectionOptionsWithID): Collection = js.native
-  def Collection(options: CollectionOptionsWithName): Collection = js.native
-  def Collection(options: java.lang.String): Collection = js.native
-  def Deployment(): Deployment = js.native
-  def Device(): Device = js.native
-  def Item(data: js.Object, options: ItemOptions): Item = js.native
-  def Item(data: js.Object, options: java.lang.String): Item = js.native
-  def Messaging(options: MessagingOptions, callback: CbCallback): Messaging = js.native
+  def Code(): clearbladejsDashServerLib.CbServerNs.Code = js.native
+  def Collection(options: CollectionOptionsWithCollection): clearbladejsDashServerLib.CbServerNs.Collection = js.native
+  def Collection(options: CollectionOptionsWithID): clearbladejsDashServerLib.CbServerNs.Collection = js.native
+  def Collection(options: CollectionOptionsWithName): clearbladejsDashServerLib.CbServerNs.Collection = js.native
+  def Collection(options: java.lang.String): clearbladejsDashServerLib.CbServerNs.Collection = js.native
+  def Deployment(): clearbladejsDashServerLib.CbServerNs.Deployment = js.native
+  def Device(): clearbladejsDashServerLib.CbServerNs.Device = js.native
+  def Item(data: js.Object, options: ItemOptions): clearbladejsDashServerLib.CbServerNs.Item = js.native
+  def Item(data: js.Object, options: java.lang.String): clearbladejsDashServerLib.CbServerNs.Item = js.native
+  def Messaging(options: MessagingOptions, callback: CbCallback): clearbladejsDashServerLib.CbServerNs.Messaging = js.native
   def Query(options: QueryOptionsWithCollection): QueryObj = js.native
   def Query(options: QueryOptionsWithID): QueryObj = js.native
   def Query(options: QueryOptionsWithName): QueryObj = js.native

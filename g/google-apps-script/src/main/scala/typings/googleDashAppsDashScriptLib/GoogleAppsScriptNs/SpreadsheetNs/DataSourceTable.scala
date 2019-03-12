@@ -17,14 +17,14 @@ trait DataSourceTable extends js.Object {
 object DataSourceTable {
   @scala.inline
   def apply(
-    forceRefreshData: js.Function0[DataSourceTable],
-    getDataSource: js.Function0[DataSource],
-    getRange: js.Function0[Range],
-    getStatus: js.Function0[DataExecutionStatus],
-    refreshData: js.Function0[DataSourceTable],
-    waitForCompletion: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, DataExecutionStatus]
+    forceRefreshData: () => DataSourceTable,
+    getDataSource: () => DataSource,
+    getRange: () => Range,
+    getStatus: () => DataExecutionStatus,
+    refreshData: () => DataSourceTable,
+    waitForCompletion: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => DataExecutionStatus
   ): DataSourceTable = {
-    val __obj = js.Dynamic.literal(forceRefreshData = forceRefreshData, getDataSource = getDataSource, getRange = getRange, getStatus = getStatus, refreshData = refreshData, waitForCompletion = waitForCompletion)
+    val __obj = js.Dynamic.literal(forceRefreshData = js.Any.fromFunction0(forceRefreshData), getDataSource = js.Any.fromFunction0(getDataSource), getRange = js.Any.fromFunction0(getRange), getStatus = js.Any.fromFunction0(getStatus), refreshData = js.Any.fromFunction0(refreshData), waitForCompletion = js.Any.fromFunction1(waitForCompletion))
   
     __obj.asInstanceOf[DataSourceTable]
   }

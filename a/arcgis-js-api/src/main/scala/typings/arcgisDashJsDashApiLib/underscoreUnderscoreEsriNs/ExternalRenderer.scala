@@ -31,13 +31,13 @@ object ExternalRenderer {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     dispose: RenderContextCallback = null,
     render: RenderContextCallback = null,
     setup: RenderContextCallback = null
   ): ExternalRenderer = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (dispose != null) __obj.updateDynamic("dispose")(dispose)
     if (render != null) __obj.updateDynamic("render")(render)
     if (setup != null) __obj.updateDynamic("setup")(setup)

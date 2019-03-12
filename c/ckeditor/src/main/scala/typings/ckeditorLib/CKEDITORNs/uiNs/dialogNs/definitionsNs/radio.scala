@@ -16,10 +16,10 @@ object radio {
   def apply(
     default: js.Any,
     items: js.Array[(js.Tuple2[java.lang.String, java.lang.String]) | js.Array[java.lang.String]],
-    validate: js.Function0[scala.Boolean] = null
+    validate: () => scala.Boolean = null
   ): radio = {
     val __obj = js.Dynamic.literal(default = default, items = items)
-    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction0(validate))
     __obj.asInstanceOf[radio]
   }
 }

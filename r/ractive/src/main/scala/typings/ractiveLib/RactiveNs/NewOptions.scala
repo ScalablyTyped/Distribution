@@ -160,17 +160,17 @@ object NewOptions {
     modifyArrays: js.UndefOr[scala.Boolean] = js.undefined,
     noCSSTransform: js.UndefOr[scala.Boolean] = js.undefined,
     noIntro: js.UndefOr[scala.Boolean] = js.undefined,
-    onchange: js.Function1[/* options */ NewOptions, scala.Unit] = null,
-    oncomplete: js.Function0[scala.Unit] = null,
-    onconfig: js.Function0[scala.Unit] = null,
-    onconstruct: js.Function1[/* options */ NewOptions, scala.Unit] = null,
-    ondetach: js.Function0[scala.Unit] = null,
-    oninit: js.Function0[scala.Unit] = null,
-    oninsert: js.Function0[scala.Unit] = null,
-    onrender: js.Function0[scala.Unit] = null,
-    onteardown: js.Function0[scala.Unit] = null,
-    onunrender: js.Function0[scala.Unit] = null,
-    onupdate: js.Function0[scala.Unit] = null,
+    onchange: /* options */ NewOptions => scala.Unit = null,
+    oncomplete: () => scala.Unit = null,
+    onconfig: () => scala.Unit = null,
+    onconstruct: /* options */ NewOptions => scala.Unit = null,
+    ondetach: () => scala.Unit = null,
+    oninit: () => scala.Unit = null,
+    oninsert: () => scala.Unit = null,
+    onrender: () => scala.Unit = null,
+    onteardown: () => scala.Unit = null,
+    onunrender: () => scala.Unit = null,
+    onupdate: () => scala.Unit = null,
     partials: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     preserveWhitespace: js.UndefOr[scala.Boolean] = js.undefined,
     sanitize: scala.Boolean | SanitizeOptions = null,
@@ -203,17 +203,17 @@ object NewOptions {
     if (!js.isUndefined(modifyArrays)) __obj.updateDynamic("modifyArrays")(modifyArrays)
     if (!js.isUndefined(noCSSTransform)) __obj.updateDynamic("noCSSTransform")(noCSSTransform)
     if (!js.isUndefined(noIntro)) __obj.updateDynamic("noIntro")(noIntro)
-    if (onchange != null) __obj.updateDynamic("onchange")(onchange)
-    if (oncomplete != null) __obj.updateDynamic("oncomplete")(oncomplete)
-    if (onconfig != null) __obj.updateDynamic("onconfig")(onconfig)
-    if (onconstruct != null) __obj.updateDynamic("onconstruct")(onconstruct)
-    if (ondetach != null) __obj.updateDynamic("ondetach")(ondetach)
-    if (oninit != null) __obj.updateDynamic("oninit")(oninit)
-    if (oninsert != null) __obj.updateDynamic("oninsert")(oninsert)
-    if (onrender != null) __obj.updateDynamic("onrender")(onrender)
-    if (onteardown != null) __obj.updateDynamic("onteardown")(onteardown)
-    if (onunrender != null) __obj.updateDynamic("onunrender")(onunrender)
-    if (onupdate != null) __obj.updateDynamic("onupdate")(onupdate)
+    if (onchange != null) __obj.updateDynamic("onchange")(js.Any.fromFunction1(onchange))
+    if (oncomplete != null) __obj.updateDynamic("oncomplete")(js.Any.fromFunction0(oncomplete))
+    if (onconfig != null) __obj.updateDynamic("onconfig")(js.Any.fromFunction0(onconfig))
+    if (onconstruct != null) __obj.updateDynamic("onconstruct")(js.Any.fromFunction1(onconstruct))
+    if (ondetach != null) __obj.updateDynamic("ondetach")(js.Any.fromFunction0(ondetach))
+    if (oninit != null) __obj.updateDynamic("oninit")(js.Any.fromFunction0(oninit))
+    if (oninsert != null) __obj.updateDynamic("oninsert")(js.Any.fromFunction0(oninsert))
+    if (onrender != null) __obj.updateDynamic("onrender")(js.Any.fromFunction0(onrender))
+    if (onteardown != null) __obj.updateDynamic("onteardown")(js.Any.fromFunction0(onteardown))
+    if (onunrender != null) __obj.updateDynamic("onunrender")(js.Any.fromFunction0(onunrender))
+    if (onupdate != null) __obj.updateDynamic("onupdate")(js.Any.fromFunction0(onupdate))
     if (partials != null) __obj.updateDynamic("partials")(partials)
     if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace)
     if (sanitize != null) __obj.updateDynamic("sanitize")(sanitize.asInstanceOf[js.Any])

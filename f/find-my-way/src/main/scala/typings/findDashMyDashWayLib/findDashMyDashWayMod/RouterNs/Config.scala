@@ -25,11 +25,7 @@ object Config {
   def apply[V /* <: HTTPVersion */](
     allowUnsafeRegex: js.UndefOr[scala.Boolean] = js.undefined,
     caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
-    defaultRoute: js.Function2[
-      /* req */ nodeLib.http2Mod.Http2ServerRequest | nodeLib.httpMod.IncomingMessage, 
-      /* res */ nodeLib.http2Mod.Http2ServerResponse | nodeLib.httpMod.ServerResponse, 
-      scala.Unit
-    ] = null,
+    defaultRoute: (/* req */ nodeLib.http2Mod.Http2ServerRequest | nodeLib.httpMod.IncomingMessage, /* res */ nodeLib.http2Mod.Http2ServerResponse | nodeLib.httpMod.ServerResponse) => scala.Unit = null,
     ignoreTrailingSlash: js.UndefOr[scala.Boolean] = js.undefined,
     maxParamLength: scala.Int | scala.Double = null,
     versioning: findDashMyDashWayLib.Anon_Ctx[V] = null
@@ -37,7 +33,7 @@ object Config {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowUnsafeRegex)) __obj.updateDynamic("allowUnsafeRegex")(allowUnsafeRegex)
     if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
-    if (defaultRoute != null) __obj.updateDynamic("defaultRoute")(defaultRoute)
+    if (defaultRoute != null) __obj.updateDynamic("defaultRoute")(js.Any.fromFunction2(defaultRoute))
     if (!js.isUndefined(ignoreTrailingSlash)) __obj.updateDynamic("ignoreTrailingSlash")(ignoreTrailingSlash)
     if (maxParamLength != null) __obj.updateDynamic("maxParamLength")(maxParamLength.asInstanceOf[js.Any])
     if (versioning != null) __obj.updateDynamic("versioning")(versioning)

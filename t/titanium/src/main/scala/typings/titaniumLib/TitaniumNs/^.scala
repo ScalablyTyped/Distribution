@@ -47,12 +47,12 @@ object ^ extends js.Object {
   /**
   	 * Creates a new buffer based on the params.
   	 */
-  def createBuffer(params: titaniumLib.CreateBufferArgs): titaniumLib.TitaniumNs.Buffer = js.native
+  def createBuffer(params: titaniumLib.CreateBufferArgs): Buffer = js.native
   /**
   	 * Creates and returns an instance of <Titanium.Proxy>.
   	 */
-  def createProxy(): titaniumLib.TitaniumNs.Proxy = js.native
-  def createProxy(parameters: js.Any): titaniumLib.TitaniumNs.Proxy = js.native
+  def createProxy(): Proxy = js.native
+  def createProxy(parameters: js.Any): Proxy = js.native
   /**
   	 * Fires a synthesized event to any registered listeners.
   	 */

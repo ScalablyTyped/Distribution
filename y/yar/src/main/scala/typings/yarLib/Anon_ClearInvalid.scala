@@ -71,7 +71,7 @@ object Anon_ClearInvalid {
   def apply(
     password: java.lang.String,
     clearInvalid: js.UndefOr[scala.Boolean] = js.undefined,
-    customSessionIDGenerator: js.Function1[/* req */ hapiLib.hapiMod.Request, java.lang.String] = null,
+    customSessionIDGenerator: /* req */ hapiLib.hapiMod.Request => java.lang.String = null,
     ignoreErrors: js.UndefOr[scala.Boolean] = js.undefined,
     isHttpOnly: js.UndefOr[scala.Boolean] = js.undefined,
     isSameSite: yarLib.yarLibStrings.Lax | yarLib.yarLibStrings.Strict | yarLib.yarLibNumbers.`false` = null,
@@ -81,7 +81,7 @@ object Anon_ClearInvalid {
   ): Anon_ClearInvalid = {
     val __obj = js.Dynamic.literal(password = password)
     if (!js.isUndefined(clearInvalid)) __obj.updateDynamic("clearInvalid")(clearInvalid)
-    if (customSessionIDGenerator != null) __obj.updateDynamic("customSessionIDGenerator")(customSessionIDGenerator)
+    if (customSessionIDGenerator != null) __obj.updateDynamic("customSessionIDGenerator")(js.Any.fromFunction1(customSessionIDGenerator))
     if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors)
     if (!js.isUndefined(isHttpOnly)) __obj.updateDynamic("isHttpOnly")(isHttpOnly)
     if (isSameSite != null) __obj.updateDynamic("isSameSite")(isSameSite.asInstanceOf[js.Any])

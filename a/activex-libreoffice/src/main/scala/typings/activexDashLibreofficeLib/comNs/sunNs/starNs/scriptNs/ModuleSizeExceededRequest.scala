@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ModuleSizeExceededRequest
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Exception {
   /** The name of the modules that exceed size that can be stored */
-  var Names: activexDashInteropLib.SafeArray[java.lang.String]
+  var Names: stdLib.SafeArray[java.lang.String]
 }
 
 object ModuleSizeExceededRequest {
@@ -17,7 +17,7 @@ object ModuleSizeExceededRequest {
   def apply(
     Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     Message: java.lang.String,
-    Names: activexDashInteropLib.SafeArray[java.lang.String]
+    Names: stdLib.SafeArray[java.lang.String]
   ): ModuleSizeExceededRequest = {
     val __obj = js.Dynamic.literal(Context = Context, Message = Message, Names = Names)
   

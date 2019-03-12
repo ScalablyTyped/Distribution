@@ -178,7 +178,7 @@ object PikadayOptions {
     bound: js.UndefOr[scala.Boolean] = js.undefined,
     container: stdLib.HTMLElement = null,
     defaultDate: stdLib.Date = null,
-    disableDayFn: js.Function1[/* date */ stdLib.Date, scala.Boolean] = null,
+    disableDayFn: /* date */ stdLib.Date => scala.Boolean = null,
     disableWeekends: js.UndefOr[scala.Boolean] = js.undefined,
     field: stdLib.HTMLElement = null,
     firstDay: scala.Int | scala.Double = null,
@@ -192,10 +192,10 @@ object PikadayOptions {
     maxDate: stdLib.Date = null,
     minDate: stdLib.Date = null,
     numberOfMonths: scala.Int | scala.Double = null,
-    onClose: js.Function0[scala.Unit] = null,
-    onDraw: js.Function0[scala.Unit] = null,
-    onOpen: js.Function0[scala.Unit] = null,
-    onSelect: js.Function1[/* date */ stdLib.Date, scala.Unit] = null,
+    onClose: () => scala.Unit = null,
+    onDraw: () => scala.Unit = null,
+    onOpen: () => scala.Unit = null,
+    onSelect: /* date */ stdLib.Date => scala.Unit = null,
     position: java.lang.String = null,
     reposition: js.UndefOr[scala.Boolean] = js.undefined,
     setDefaultDate: js.UndefOr[scala.Boolean] = js.undefined,
@@ -217,7 +217,7 @@ object PikadayOptions {
     if (!js.isUndefined(bound)) __obj.updateDynamic("bound")(bound)
     if (container != null) __obj.updateDynamic("container")(container)
     if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate)
-    if (disableDayFn != null) __obj.updateDynamic("disableDayFn")(disableDayFn)
+    if (disableDayFn != null) __obj.updateDynamic("disableDayFn")(js.Any.fromFunction1(disableDayFn))
     if (!js.isUndefined(disableWeekends)) __obj.updateDynamic("disableWeekends")(disableWeekends)
     if (field != null) __obj.updateDynamic("field")(field)
     if (firstDay != null) __obj.updateDynamic("firstDay")(firstDay.asInstanceOf[js.Any])
@@ -231,10 +231,10 @@ object PikadayOptions {
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
     if (minDate != null) __obj.updateDynamic("minDate")(minDate)
     if (numberOfMonths != null) __obj.updateDynamic("numberOfMonths")(numberOfMonths.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onDraw != null) __obj.updateDynamic("onDraw")(onDraw)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
+    if (onDraw != null) __obj.updateDynamic("onDraw")(js.Any.fromFunction0(onDraw))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (position != null) __obj.updateDynamic("position")(position)
     if (!js.isUndefined(reposition)) __obj.updateDynamic("reposition")(reposition)
     if (!js.isUndefined(setDefaultDate)) __obj.updateDynamic("setDefaultDate")(setDefaultDate)

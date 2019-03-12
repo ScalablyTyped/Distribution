@@ -31,13 +31,13 @@ trait TestRunnerParams extends js.Object {
 object TestRunnerParams {
   @scala.inline
   def apply(
-    buildAtomEnvironment: js.Function1[BuildEnvironmentOptions, AtomEnvironment],
-    buildDefaultApplicationDelegate: js.Function0[js.Object],
+    buildAtomEnvironment: BuildEnvironmentOptions => AtomEnvironment,
+    buildDefaultApplicationDelegate: () => js.Object,
     headless: scala.Boolean,
     logFile: java.lang.String,
     testPaths: js.Array[java.lang.String]
   ): TestRunnerParams = {
-    val __obj = js.Dynamic.literal(buildAtomEnvironment = buildAtomEnvironment, buildDefaultApplicationDelegate = buildDefaultApplicationDelegate, headless = headless, logFile = logFile, testPaths = testPaths)
+    val __obj = js.Dynamic.literal(buildAtomEnvironment = js.Any.fromFunction1(buildAtomEnvironment), buildDefaultApplicationDelegate = js.Any.fromFunction0(buildDefaultApplicationDelegate), headless = headless, logFile = logFile, testPaths = testPaths)
   
     __obj.asInstanceOf[TestRunnerParams]
   }

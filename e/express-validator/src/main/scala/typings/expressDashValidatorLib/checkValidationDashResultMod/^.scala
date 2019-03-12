@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("express-validator/check/validation-result", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val validationResult: expressDashValidatorLib.checkValidationDashResultMod.ResultFactory = js.native
+  val validationResult: ResultFactory = js.native
 }
 

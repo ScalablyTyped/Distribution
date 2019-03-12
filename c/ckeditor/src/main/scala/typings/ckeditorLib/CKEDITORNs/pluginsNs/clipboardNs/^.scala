@@ -17,10 +17,7 @@ object ^ extends js.Object {
     name: java.lang.String,
     definition: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
-  def canClipboardApiBeTrusted(
-    dataTransfer: ckeditorLib.CKEDITORNs.pluginsNs.clipboardNs.dataTransfer,
-    editor: ckeditorLib.CKEDITORNs.editor
-  ): scala.Boolean = js.native
+  def canClipboardApiBeTrusted(dataTransfer: dataTransfer, editor: ckeditorLib.CKEDITORNs.editor): scala.Boolean = js.native
   def getDropTarget(editor: ckeditorLib.CKEDITORNs.editor): ckeditorLib.CKEDITORNs.domNs.domObject = js.native
   def getRangeAtDropPosition(domEvent: stdLib.Event, editor: ckeditorLib.CKEDITORNs.editor): ckeditorLib.CKEDITORNs.domNs.range = js.native
   def initDragDataTransfer(): scala.Unit = js.native

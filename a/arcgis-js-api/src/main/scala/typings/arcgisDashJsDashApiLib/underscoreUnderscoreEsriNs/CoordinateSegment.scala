@@ -33,11 +33,11 @@ object CoordinateSegment {
     alias: java.lang.String,
     constructor: js.Function,
     description: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     searchPattern: stdLib.RegExp
   ): CoordinateSegment = {
-    val __obj = js.Dynamic.literal(alias = alias, constructor = constructor, description = description, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, searchPattern = searchPattern)
+    val __obj = js.Dynamic.literal(alias = alias, constructor = constructor, description = description, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), searchPattern = searchPattern)
   
     __obj.asInstanceOf[CoordinateSegment]
   }

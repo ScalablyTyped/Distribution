@@ -50,16 +50,16 @@ trait IgRadialMenuMethods extends js.Object {
 object IgRadialMenuMethods {
   @scala.inline
   def apply(
-    changeGlobalLanguage: js.Function0[scala.Unit],
-    changeGlobalRegional: js.Function0[scala.Unit],
-    changeLocale: js.Function1[js.Object, scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    exportVisualData: js.Function0[scala.Unit],
-    flush: js.Function0[scala.Unit],
-    itemOption: js.Function3[java.lang.String, java.lang.String, js.Object, js.Object],
-    styleUpdated: js.Function0[scala.Unit]
+    changeGlobalLanguage: () => scala.Unit,
+    changeGlobalRegional: () => scala.Unit,
+    changeLocale: js.Object => scala.Unit,
+    destroy: () => scala.Unit,
+    exportVisualData: () => scala.Unit,
+    flush: () => scala.Unit,
+    itemOption: (java.lang.String, java.lang.String, js.Object) => js.Object,
+    styleUpdated: () => scala.Unit
   ): IgRadialMenuMethods = {
-    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, exportVisualData = exportVisualData, flush = flush, itemOption = itemOption, styleUpdated = styleUpdated)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = js.Any.fromFunction0(changeGlobalLanguage), changeGlobalRegional = js.Any.fromFunction0(changeGlobalRegional), changeLocale = js.Any.fromFunction1(changeLocale), destroy = js.Any.fromFunction0(destroy), exportVisualData = js.Any.fromFunction0(exportVisualData), flush = js.Any.fromFunction0(flush), itemOption = js.Any.fromFunction3(itemOption), styleUpdated = js.Any.fromFunction0(styleUpdated))
   
     __obj.asInstanceOf[IgRadialMenuMethods]
   }

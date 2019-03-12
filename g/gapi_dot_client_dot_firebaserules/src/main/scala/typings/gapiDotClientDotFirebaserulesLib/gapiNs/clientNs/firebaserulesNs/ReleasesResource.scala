@@ -56,32 +56,14 @@ trait ReleasesResource extends js.Object {
 object ReleasesResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotFirebaserulesLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Release]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotFirebaserulesLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotFirebaserulesLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Release]
-    ],
-    getExecutable: js.Function1[
-      gapiDotClientDotFirebaserulesLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GetReleaseExecutableResponse]
-    ],
-    list: js.Function1[
-      gapiDotClientDotFirebaserulesLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListReleasesResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotFirebaserulesLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Release]
-    ]
+    create: gapiDotClientDotFirebaserulesLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Release],
+    delete: gapiDotClientDotFirebaserulesLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotFirebaserulesLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Release],
+    getExecutable: gapiDotClientDotFirebaserulesLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[GetReleaseExecutableResponse],
+    list: gapiDotClientDotFirebaserulesLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ListReleasesResponse],
+    update: gapiDotClientDotFirebaserulesLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Release]
   ): ReleasesResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, getExecutable = getExecutable, list = list, update = update)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getExecutable = js.Any.fromFunction1(getExecutable), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[ReleasesResource]
   }

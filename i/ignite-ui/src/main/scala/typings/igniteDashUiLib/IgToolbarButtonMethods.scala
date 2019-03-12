@@ -35,13 +35,13 @@ trait IgToolbarButtonMethods extends js.Object {
 object IgToolbarButtonMethods {
   @scala.inline
   def apply(
-    activate: js.Function1[js.Object, scala.Unit],
-    deactivate: js.Function1[js.Object, scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    toggle: js.Function0[scala.Unit],
-    widget: js.Function0[js.Object]
+    activate: js.Object => scala.Unit,
+    deactivate: js.Object => scala.Unit,
+    destroy: () => scala.Unit,
+    toggle: () => scala.Unit,
+    widget: () => js.Object
   ): IgToolbarButtonMethods = {
-    val __obj = js.Dynamic.literal(activate = activate, deactivate = deactivate, destroy = destroy, toggle = toggle, widget = widget)
+    val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate), deactivate = js.Any.fromFunction1(deactivate), destroy = js.Any.fromFunction0(destroy), toggle = js.Any.fromFunction0(toggle), widget = js.Any.fromFunction0(widget))
   
     __obj.asInstanceOf[IgToolbarButtonMethods]
   }

@@ -20,15 +20,15 @@ object ISmsDevice {
   @scala.inline
   def apply(
     accountPhoneNumber: java.lang.String,
-    calculateLength: js.Function1[SmsTextMessage, SmsEncodedLength],
+    calculateLength: SmsTextMessage => SmsEncodedLength,
     cellularClass: CellularClass,
     deviceStatus: SmsDeviceStatus,
     messageStore: SmsDeviceMessageStore,
     onsmsdevicestatuschanged: js.Any,
     onsmsmessagereceived: js.Any,
-    sendMessageAsync: js.Function1[ISmsMessage, SendSmsMessageOperation]
+    sendMessageAsync: ISmsMessage => SendSmsMessageOperation
   ): ISmsDevice = {
-    val __obj = js.Dynamic.literal(accountPhoneNumber = accountPhoneNumber, calculateLength = calculateLength, cellularClass = cellularClass, deviceStatus = deviceStatus, messageStore = messageStore, onsmsdevicestatuschanged = onsmsdevicestatuschanged, onsmsmessagereceived = onsmsmessagereceived, sendMessageAsync = sendMessageAsync)
+    val __obj = js.Dynamic.literal(accountPhoneNumber = accountPhoneNumber, calculateLength = js.Any.fromFunction1(calculateLength), cellularClass = cellularClass, deviceStatus = deviceStatus, messageStore = messageStore, onsmsdevicestatuschanged = onsmsdevicestatuschanged, onsmsmessagereceived = onsmsmessagereceived, sendMessageAsync = js.Any.fromFunction1(sendMessageAsync))
   
     __obj.asInstanceOf[ISmsDevice]
   }

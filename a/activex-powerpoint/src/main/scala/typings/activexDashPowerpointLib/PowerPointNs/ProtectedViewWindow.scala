@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class ProtectedViewWindow protected () extends js.Object {
   val Active: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   val Caption: java.lang.String = js.native
   var Height: scala.Double = js.native
   var Left: scala.Double = js.native
   val Parent: js.Any = js.native
   var `PowerPoint.ProtectedViewWindow_typekey`: ProtectedViewWindow = js.native
-  val Presentation: Presentation = js.native
+  val Presentation: activexDashPowerpointLib.PowerPointNs.Presentation = js.native
   val SourceName: java.lang.String = js.native
   val SourcePath: java.lang.String = js.native
   var Top: scala.Double = js.native

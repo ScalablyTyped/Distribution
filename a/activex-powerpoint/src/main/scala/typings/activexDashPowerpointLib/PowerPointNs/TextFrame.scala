@@ -20,8 +20,8 @@ class TextFrame protected () extends js.Object {
   var Orientation: activexDashOfficeLib.OfficeNs.MsoTextOrientation = js.native
   val Parent: js.Any = js.native
   var `PowerPoint.TextFrame_typekey`: TextFrame = js.native
-  val Ruler: Ruler = js.native
-  val TextRange: TextRange = js.native
+  val Ruler: activexDashPowerpointLib.PowerPointNs.Ruler = js.native
+  val TextRange: activexDashPowerpointLib.PowerPointNs.TextRange = js.native
   var VerticalAnchor: activexDashOfficeLib.OfficeNs.MsoVerticalAnchor = js.native
   var WordWrap: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   def DeleteText(): scala.Unit = js.native

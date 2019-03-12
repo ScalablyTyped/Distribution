@@ -11,8 +11,8 @@ trait Abortable extends js.Object {
 
 object Abortable {
   @scala.inline
-  def apply(abort: js.Function0[scala.Unit]): Abortable = {
-    val __obj = js.Dynamic.literal(abort = abort)
+  def apply(abort: () => scala.Unit): Abortable = {
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort))
   
     __obj.asInstanceOf[Abortable]
   }

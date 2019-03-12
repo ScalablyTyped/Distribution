@@ -31,12 +31,12 @@ object XMaterialHolder {
   @scala.inline
   def apply(
     Material: js.Any,
-    acquire: js.Function0[scala.Unit],
-    getMaterial: js.Function0[js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getMaterial: () => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XMaterialHolder = {
-    val __obj = js.Dynamic.literal(Material = Material, acquire = acquire, getMaterial = getMaterial, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Material = Material, acquire = js.Any.fromFunction0(acquire), getMaterial = js.Any.fromFunction0(getMaterial), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XMaterialHolder]
   }

@@ -9,7 +9,7 @@ trait Anon_ClassNameCssModuleInline extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
-  var innerRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[reactLib.HTMLFormElement]] = js.undefined
+  var innerRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[stdLib.HTMLFormElement]] = js.undefined
   var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
 }
 
@@ -19,7 +19,7 @@ object Anon_ClassNameCssModuleInline {
     className: java.lang.String = null,
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[reactLib.HTMLFormElement] = null,
+    innerRef: reactLib.reactMod.ReactNs.Ref[stdLib.HTMLFormElement] = null,
     tag: reactLib.reactMod.ReactNs.ReactType[_] = null
   ): Anon_ClassNameCssModuleInline = {
     val __obj = js.Dynamic.literal()

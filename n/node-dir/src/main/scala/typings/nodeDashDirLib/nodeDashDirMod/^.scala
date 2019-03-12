@@ -14,72 +14,40 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def paths(
     dir: java.lang.String,
-    callback: js.Function2[
-      /* error */ js.Any, 
-      /* paths */ nodeDashDirLib.nodeDashDirMod.PathsResult, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* error */ js.Any, /* paths */ PathsResult, scala.Unit]
   ): scala.Unit = js.native
   def paths(
     dir: java.lang.String,
     combine: scala.Boolean,
-    callback: js.Function2[
-      /* error */ js.Any, 
-      /* paths */ js.Array[java.lang.String] | nodeDashDirLib.nodeDashDirMod.PathsResult, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* error */ js.Any, /* paths */ js.Array[java.lang.String] | PathsResult, scala.Unit]
   ): scala.Unit = js.native
-  def readFiles(dir: java.lang.String, fileCallback: nodeDashDirLib.nodeDashDirMod.FileCallback): scala.Unit = js.native
+  def readFiles(dir: java.lang.String, fileCallback: FileCallback): scala.Unit = js.native
+  def readFiles(dir: java.lang.String, fileCallback: FileCallback, finishedCallback: FinishedCallback): scala.Unit = js.native
+  def readFiles(dir: java.lang.String, fileCallback: FileNamedCallback): scala.Unit = js.native
+  def readFiles(dir: java.lang.String, fileCallback: FileNamedCallback, finishedCallback: FinishedCallback): scala.Unit = js.native
+  def readFiles(dir: java.lang.String, options: Options, fileCallback: FileCallback): scala.Unit = js.native
   def readFiles(
     dir: java.lang.String,
-    fileCallback: nodeDashDirLib.nodeDashDirMod.FileCallback,
-    finishedCallback: nodeDashDirLib.nodeDashDirMod.FinishedCallback
+    options: Options,
+    fileCallback: FileCallback,
+    finishedCallback: FinishedCallback
   ): scala.Unit = js.native
-  def readFiles(dir: java.lang.String, fileCallback: nodeDashDirLib.nodeDashDirMod.FileNamedCallback): scala.Unit = js.native
+  def readFiles(dir: java.lang.String, options: Options, fileCallback: FileNamedCallback): scala.Unit = js.native
   def readFiles(
     dir: java.lang.String,
-    fileCallback: nodeDashDirLib.nodeDashDirMod.FileNamedCallback,
-    finishedCallback: nodeDashDirLib.nodeDashDirMod.FinishedCallback
+    options: Options,
+    fileCallback: FileNamedCallback,
+    finishedCallback: FinishedCallback
   ): scala.Unit = js.native
-  def readFiles(
-    dir: java.lang.String,
-    options: nodeDashDirLib.nodeDashDirMod.Options,
-    fileCallback: nodeDashDirLib.nodeDashDirMod.FileCallback
-  ): scala.Unit = js.native
-  def readFiles(
-    dir: java.lang.String,
-    options: nodeDashDirLib.nodeDashDirMod.Options,
-    fileCallback: nodeDashDirLib.nodeDashDirMod.FileCallback,
-    finishedCallback: nodeDashDirLib.nodeDashDirMod.FinishedCallback
-  ): scala.Unit = js.native
-  def readFiles(
-    dir: java.lang.String,
-    options: nodeDashDirLib.nodeDashDirMod.Options,
-    fileCallback: nodeDashDirLib.nodeDashDirMod.FileNamedCallback
-  ): scala.Unit = js.native
-  def readFiles(
-    dir: java.lang.String,
-    options: nodeDashDirLib.nodeDashDirMod.Options,
-    fileCallback: nodeDashDirLib.nodeDashDirMod.FileNamedCallback,
-    finishedCallback: nodeDashDirLib.nodeDashDirMod.FinishedCallback
-  ): scala.Unit = js.native
+  def readFilesStream(dir: java.lang.String, options: Options, streamCallback: StreamCallback): scala.Unit = js.native
   def readFilesStream(
     dir: java.lang.String,
-    options: nodeDashDirLib.nodeDashDirMod.Options,
-    streamCallback: nodeDashDirLib.nodeDashDirMod.StreamCallback
+    options: Options,
+    streamCallback: StreamCallback,
+    finishedCallback: FinishedCallback
   ): scala.Unit = js.native
-  def readFilesStream(
-    dir: java.lang.String,
-    options: nodeDashDirLib.nodeDashDirMod.Options,
-    streamCallback: nodeDashDirLib.nodeDashDirMod.StreamCallback,
-    finishedCallback: nodeDashDirLib.nodeDashDirMod.FinishedCallback
-  ): scala.Unit = js.native
-  def readFilesStream(dir: java.lang.String, streamCallback: nodeDashDirLib.nodeDashDirMod.StreamCallback): scala.Unit = js.native
-  def readFilesStream(
-    dir: java.lang.String,
-    streamCallback: nodeDashDirLib.nodeDashDirMod.StreamCallback,
-    finishedCallback: nodeDashDirLib.nodeDashDirMod.FinishedCallback
-  ): scala.Unit = js.native
+  def readFilesStream(dir: java.lang.String, streamCallback: StreamCallback): scala.Unit = js.native
+  def readFilesStream(dir: java.lang.String, streamCallback: StreamCallback, finishedCallback: FinishedCallback): scala.Unit = js.native
   def subdirs(
     dir: java.lang.String,
     callback: js.Function2[/* error */ js.Any, /* subdirs */ js.Array[java.lang.String], scala.Unit]

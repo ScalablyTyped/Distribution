@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in react-dropzone.PickedAttributes ]: react.react.InputHTMLAttributes<react.HTMLDivElement>[P]} */ trait DropzoneProps extends js.Object {
+- Dropped {[ P in react-dropzone.PickedAttributes ]: react.react.InputHTMLAttributes<std.HTMLDivElement>[P]} */ trait DropzoneProps extends js.Object {
   var accept: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var acceptClassName: js.UndefOr[java.lang.String] = js.undefined
   var acceptStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var disabledClassName: js.UndefOr[java.lang.String] = js.undefined
   var disabledStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var inputProps: js.UndefOr[reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement]] = js.undefined
+  var inputProps: js.UndefOr[reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement]] = js.undefined
   var maxSize: js.UndefOr[scala.Double] = js.undefined
   var minSize: js.UndefOr[scala.Double] = js.undefined
   var onDrop: js.UndefOr[DropFilesEventHandler] = js.undefined
@@ -42,13 +42,13 @@ object DropzoneProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     disabledClassName: java.lang.String = null,
     disabledStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    inputProps: reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] = null,
+    inputProps: reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement] = null,
     maxSize: scala.Int | scala.Double = null,
     minSize: scala.Int | scala.Double = null,
     onDrop: DropFilesEventHandler = null,
     onDropAccepted: DropFileEventHandler = null,
     onDropRejected: DropFileEventHandler = null,
-    onFileDialogCancel: js.Function0[scala.Unit] = null,
+    onFileDialogCancel: () => scala.Unit = null,
     preventDropOnDocument: js.UndefOr[scala.Boolean] = js.undefined,
     rejectClassName: java.lang.String = null,
     rejectStyle: reactLib.reactMod.ReactNs.CSSProperties = null
@@ -70,7 +70,7 @@ object DropzoneProps {
     if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop)
     if (onDropAccepted != null) __obj.updateDynamic("onDropAccepted")(onDropAccepted)
     if (onDropRejected != null) __obj.updateDynamic("onDropRejected")(onDropRejected)
-    if (onFileDialogCancel != null) __obj.updateDynamic("onFileDialogCancel")(onFileDialogCancel)
+    if (onFileDialogCancel != null) __obj.updateDynamic("onFileDialogCancel")(js.Any.fromFunction0(onFileDialogCancel))
     if (!js.isUndefined(preventDropOnDocument)) __obj.updateDynamic("preventDropOnDocument")(preventDropOnDocument)
     if (rejectClassName != null) __obj.updateDynamic("rejectClassName")(rejectClassName)
     if (rejectStyle != null) __obj.updateDynamic("rejectStyle")(rejectStyle)

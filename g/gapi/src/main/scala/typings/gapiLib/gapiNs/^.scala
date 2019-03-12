@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("gapi")
 @js.native
 object ^ extends js.Object {
-  def load(apiName: java.lang.String, callback: gapiLib.gapiNs.CallbackOrConfig): scala.Unit = js.native
+  def load(apiName: java.lang.String, callback: CallbackOrConfig): scala.Unit = js.native
 }
 

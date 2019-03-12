@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@lingui/macro", "Plural")
 @js.native
 class Plural ()
-  extends atLinguiMacroLib.reactselectMod.Plural
+  extends atLinguiMacroLib.reactSelectMod.Plural
 

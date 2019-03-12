@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait XLocalizable
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** @returns the locale, which is used by this object. */
-  var Locale: Locale
+  var Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale
   /** @returns the locale, which is used by this object. */
   def getLocale(): Locale
   /** sets the locale to be used by this object. */
@@ -20,13 +20,13 @@ object XLocalizable {
   @scala.inline
   def apply(
     Locale: Locale,
-    acquire: js.Function0[scala.Unit],
-    getLocale: js.Function0[Locale],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setLocale: js.Function1[Locale, scala.Unit]
+    acquire: () => scala.Unit,
+    getLocale: () => Locale,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setLocale: Locale => scala.Unit
   ): XLocalizable = {
-    val __obj = js.Dynamic.literal(Locale = Locale, acquire = acquire, getLocale = getLocale, queryInterface = queryInterface, release = release, setLocale = setLocale)
+    val __obj = js.Dynamic.literal(Locale = Locale, acquire = js.Any.fromFunction0(acquire), getLocale = js.Any.fromFunction0(getLocale), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setLocale = js.Any.fromFunction1(setLocale))
   
     __obj.asInstanceOf[XLocalizable]
   }

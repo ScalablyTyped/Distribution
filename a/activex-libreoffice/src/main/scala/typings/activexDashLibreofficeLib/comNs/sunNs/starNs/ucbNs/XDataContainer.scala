@@ -24,7 +24,7 @@ trait XDataContainer
     * returns the data of the data container.
     * @returns the data
     */
-  var Data: activexDashInteropLib.SafeArray[scala.Double]
+  var Data: stdLib.SafeArray[scala.Double]
   /**
     * Deprecated. Do not use!
     * @deprecated Deprecated
@@ -39,7 +39,7 @@ trait XDataContainer
     * returns the data of the data container.
     * @returns the data
     */
-  def getData(): activexDashInteropLib.SafeArray[scala.Double]
+  def getData(): stdLib.SafeArray[scala.Double]
   /**
     * Deprecated. Do not use!
     * @deprecated Deprecated
@@ -67,27 +67,27 @@ object XDataContainer {
   def apply(
     ContentType: java.lang.String,
     Count: scala.Double,
-    Data: activexDashInteropLib.SafeArray[scala.Double],
+    Data: stdLib.SafeArray[scala.Double],
     DataURL: java.lang.String,
     ElementType: activexDashLibreofficeLib.`type`,
-    acquire: js.Function0[scala.Unit],
-    getByIndex: js.Function1[scala.Double, js.Any],
-    getContentType: js.Function0[java.lang.String],
-    getCount: js.Function0[scala.Double],
-    getData: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    getDataURL: js.Function0[java.lang.String],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    hasElements: js.Function0[scala.Boolean],
-    insertByIndex: js.Function2[scala.Double, js.Any, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeByIndex: js.Function1[scala.Double, scala.Unit],
-    replaceByIndex: js.Function2[scala.Double, js.Any, scala.Unit],
-    setContentType: js.Function1[java.lang.String, scala.Unit],
-    setData: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
-    setDataURL: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getByIndex: scala.Double => js.Any,
+    getContentType: () => java.lang.String,
+    getCount: () => scala.Double,
+    getData: () => stdLib.SafeArray[scala.Double],
+    getDataURL: () => java.lang.String,
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    hasElements: () => scala.Boolean,
+    insertByIndex: (scala.Double, js.Any) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeByIndex: scala.Double => scala.Unit,
+    replaceByIndex: (scala.Double, js.Any) => scala.Unit,
+    setContentType: java.lang.String => scala.Unit,
+    setData: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => scala.Unit,
+    setDataURL: java.lang.String => scala.Unit
   ): XDataContainer = {
-    val __obj = js.Dynamic.literal(ContentType = ContentType, Count = Count, Data = Data, DataURL = DataURL, ElementType = ElementType, acquire = acquire, getByIndex = getByIndex, getContentType = getContentType, getCount = getCount, getData = getData, getDataURL = getDataURL, getElementType = getElementType, hasElements = hasElements, insertByIndex = insertByIndex, queryInterface = queryInterface, release = release, removeByIndex = removeByIndex, replaceByIndex = replaceByIndex, setContentType = setContentType, setData = setData, setDataURL = setDataURL)
+    val __obj = js.Dynamic.literal(ContentType = ContentType, Count = Count, Data = Data, DataURL = DataURL, ElementType = ElementType, acquire = js.Any.fromFunction0(acquire), getByIndex = js.Any.fromFunction1(getByIndex), getContentType = js.Any.fromFunction0(getContentType), getCount = js.Any.fromFunction0(getCount), getData = js.Any.fromFunction0(getData), getDataURL = js.Any.fromFunction0(getDataURL), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), insertByIndex = js.Any.fromFunction2(insertByIndex), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByIndex = js.Any.fromFunction1(removeByIndex), replaceByIndex = js.Any.fromFunction2(replaceByIndex), setContentType = js.Any.fromFunction1(setContentType), setData = js.Any.fromFunction1(setData), setDataURL = js.Any.fromFunction1(setDataURL))
   
     __obj.asInstanceOf[XDataContainer]
   }

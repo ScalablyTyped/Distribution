@@ -205,7 +205,7 @@ trait Ng1ViewDeclaration
     * }
     * ```
     */
-  var template: js.UndefOr[angularLib.angularMod.Global.Function | java.lang.String] = js.undefined
+  var template: js.UndefOr[js.Function | java.lang.String] = js.undefined
   /**
     * Injected function which returns the HTML template.
     *
@@ -244,7 +244,7 @@ trait Ng1ViewDeclaration
     * }
     * ```
     */
-  var templateUrl: js.UndefOr[java.lang.String | angularLib.angularMod.Global.Function] = js.undefined
+  var templateUrl: js.UndefOr[java.lang.String | js.Function] = js.undefined
 }
 
 object Ng1ViewDeclaration {
@@ -262,9 +262,9 @@ object Ng1ViewDeclaration {
     controllerAs: java.lang.String = null,
     controllerProvider: atUirouterCoreLib.libCommonCommonMod.IInjectable = null,
     resolveAs: java.lang.String = null,
-    template: angularLib.angularMod.Global.Function | java.lang.String = null,
+    template: js.Function | java.lang.String = null,
     templateProvider: atUirouterCoreLib.libCommonCommonMod.IInjectable = null,
-    templateUrl: java.lang.String | angularLib.angularMod.Global.Function = null
+    templateUrl: java.lang.String | js.Function = null
   ): Ng1ViewDeclaration = {
     val __obj = js.Dynamic.literal()
     if ($context != null) __obj.updateDynamic("$context")($context)

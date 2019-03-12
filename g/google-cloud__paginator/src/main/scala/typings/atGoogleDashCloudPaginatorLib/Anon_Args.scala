@@ -13,10 +13,10 @@ trait Anon_Args extends js.Object {
 object Anon_Args {
   @scala.inline
   def apply(
-    makeRequest: js.Function1[/* repeated */ js.Any, js.UndefOr[nodeLib.streamMod.Transform]],
+    makeRequest: /* repeated */ js.Any => js.UndefOr[nodeLib.streamMod.Transform],
     stream: nodeLib.streamMod.Transform
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal(makeRequest = makeRequest, stream = stream)
+    val __obj = js.Dynamic.literal(makeRequest = js.Any.fromFunction1(makeRequest), stream = stream)
   
     __obj.asInstanceOf[Anon_Args]
   }

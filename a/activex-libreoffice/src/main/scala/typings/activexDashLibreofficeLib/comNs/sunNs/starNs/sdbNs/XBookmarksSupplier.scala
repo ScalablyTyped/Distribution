@@ -18,12 +18,12 @@ object XBookmarksSupplier {
   @scala.inline
   def apply(
     Bookmarks: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
-    acquire: js.Function0[scala.Unit],
-    getBookmarks: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getBookmarks: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XBookmarksSupplier = {
-    val __obj = js.Dynamic.literal(Bookmarks = Bookmarks, acquire = acquire, getBookmarks = getBookmarks, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Bookmarks = Bookmarks, acquire = js.Any.fromFunction0(acquire), getBookmarks = js.Any.fromFunction0(getBookmarks), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XBookmarksSupplier]
   }

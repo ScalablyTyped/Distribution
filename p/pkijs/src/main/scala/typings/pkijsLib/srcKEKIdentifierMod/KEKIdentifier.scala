@@ -17,14 +17,14 @@ trait KEKIdentifier extends js.Object {
 object KEKIdentifier {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     keyIdentifier: asn1jsLib.asn1jsMod.OctetString,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     date: asn1jsLib.asn1jsMod.GeneralizedTime = null,
     other: pkijsLib.srcOtherKeyAttributeMod.default = null
   ): KEKIdentifier = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, keyIdentifier = keyIdentifier, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), keyIdentifier = keyIdentifier, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
     if (date != null) __obj.updateDynamic("date")(date)
     if (other != null) __obj.updateDynamic("other")(other)
     __obj.asInstanceOf[KEKIdentifier]

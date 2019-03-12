@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.idle")
 @js.native
 object ^ extends js.Object {
-  var onStateChanged: chromeLib.chromeNs.idleNs.IdleStateChangedEvent = js.native
+  var onStateChanged: IdleStateChangedEvent = js.native
   def queryState(
     detectionIntervalInSeconds: scala.Double,
     callback: js.Function1[/* newState */ java.lang.String, scala.Unit]

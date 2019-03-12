@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /** describes the request to approve or deny the execution of macros contained in a document. */
 trait DocumentMacroConfirmationRequest extends ClassifiedInteractionRequest {
   /** contains information about the signatures in the document */
-  var DocumentSignatureInformation: activexDashInteropLib.SafeArray[
+  var DocumentSignatureInformation: stdLib.SafeArray[
     activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.DocumentSignatureInformation
   ]
   /**
@@ -30,7 +30,7 @@ object DocumentMacroConfirmationRequest {
   def apply(
     Classification: InteractionClassification,
     Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
-    DocumentSignatureInformation: activexDashInteropLib.SafeArray[
+    DocumentSignatureInformation: stdLib.SafeArray[
       activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.DocumentSignatureInformation
     ],
     DocumentStorage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage,

@@ -24,13 +24,13 @@ trait XPrintJobBroadcaster
 object XPrintJobBroadcaster {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addPrintJobListener: js.Function1[XPrintJobListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removePrintJobListener: js.Function1[XPrintJobListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addPrintJobListener: XPrintJobListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removePrintJobListener: XPrintJobListener => scala.Unit
   ): XPrintJobBroadcaster = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addPrintJobListener = addPrintJobListener, queryInterface = queryInterface, release = release, removePrintJobListener = removePrintJobListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addPrintJobListener = js.Any.fromFunction1(addPrintJobListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePrintJobListener = js.Any.fromFunction1(removePrintJobListener))
   
     __obj.asInstanceOf[XPrintJobBroadcaster]
   }

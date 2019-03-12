@@ -172,24 +172,21 @@ trait TilebeltStatic extends js.Object {
 object TilebeltStatic {
   @scala.inline
   def apply(
-    bboxToTile: js.Function1[js.Array[scala.Double], js.Array[scala.Double]],
-    getChildren: js.Function1[js.Array[scala.Double], js.Array[js.Array[scala.Double]]],
-    getParent: js.Function1[js.Array[scala.Double], js.Array[scala.Double]],
-    getSiblings: js.Function1[js.Array[scala.Double], js.Array[js.Array[scala.Double]]],
-    hasSiblings: js.Function2[js.Array[scala.Double], js.Array[js.Array[scala.Double]], scala.Boolean],
-    hasTile: js.Function2[js.Array[js.Array[scala.Double]], js.Array[scala.Double], scala.Boolean],
-    pointToTile: js.Function3[scala.Double, scala.Double, scala.Double, js.Array[scala.Double]],
-    pointToTileFraction: js.Function3[scala.Double, scala.Double, scala.Double, js.Array[scala.Double]],
-    quadkeyToTile: js.Function1[java.lang.String, js.Array[scala.Double]],
-    tileToBBOX: js.Function1[js.Array[scala.Double], js.Array[scala.Double]],
-    tileToGeoJSON: js.Function1[
-      js.Array[scala.Double], 
-      geojsonLib.geojsonMod.Feature[geojsonLib.geojsonMod.Polygon, geojsonLib.geojsonMod.GeoJsonProperties]
-    ],
-    tileToQuadkey: js.Function1[js.Array[scala.Double], java.lang.String],
-    tilesEqual: js.Function2[js.Array[scala.Double], js.Array[scala.Double], scala.Boolean]
+    bboxToTile: js.Array[scala.Double] => js.Array[scala.Double],
+    getChildren: js.Array[scala.Double] => js.Array[js.Array[scala.Double]],
+    getParent: js.Array[scala.Double] => js.Array[scala.Double],
+    getSiblings: js.Array[scala.Double] => js.Array[js.Array[scala.Double]],
+    hasSiblings: (js.Array[scala.Double], js.Array[js.Array[scala.Double]]) => scala.Boolean,
+    hasTile: (js.Array[js.Array[scala.Double]], js.Array[scala.Double]) => scala.Boolean,
+    pointToTile: (scala.Double, scala.Double, scala.Double) => js.Array[scala.Double],
+    pointToTileFraction: (scala.Double, scala.Double, scala.Double) => js.Array[scala.Double],
+    quadkeyToTile: java.lang.String => js.Array[scala.Double],
+    tileToBBOX: js.Array[scala.Double] => js.Array[scala.Double],
+    tileToGeoJSON: js.Array[scala.Double] => geojsonLib.geojsonMod.Feature[geojsonLib.geojsonMod.Polygon, geojsonLib.geojsonMod.GeoJsonProperties],
+    tileToQuadkey: js.Array[scala.Double] => java.lang.String,
+    tilesEqual: (js.Array[scala.Double], js.Array[scala.Double]) => scala.Boolean
   ): TilebeltStatic = {
-    val __obj = js.Dynamic.literal(bboxToTile = bboxToTile, getChildren = getChildren, getParent = getParent, getSiblings = getSiblings, hasSiblings = hasSiblings, hasTile = hasTile, pointToTile = pointToTile, pointToTileFraction = pointToTileFraction, quadkeyToTile = quadkeyToTile, tileToBBOX = tileToBBOX, tileToGeoJSON = tileToGeoJSON, tileToQuadkey = tileToQuadkey, tilesEqual = tilesEqual)
+    val __obj = js.Dynamic.literal(bboxToTile = js.Any.fromFunction1(bboxToTile), getChildren = js.Any.fromFunction1(getChildren), getParent = js.Any.fromFunction1(getParent), getSiblings = js.Any.fromFunction1(getSiblings), hasSiblings = js.Any.fromFunction2(hasSiblings), hasTile = js.Any.fromFunction2(hasTile), pointToTile = js.Any.fromFunction3(pointToTile), pointToTileFraction = js.Any.fromFunction3(pointToTileFraction), quadkeyToTile = js.Any.fromFunction1(quadkeyToTile), tileToBBOX = js.Any.fromFunction1(tileToBBOX), tileToGeoJSON = js.Any.fromFunction1(tileToGeoJSON), tileToQuadkey = js.Any.fromFunction1(tileToQuadkey), tilesEqual = js.Any.fromFunction2(tilesEqual))
   
     __obj.asInstanceOf[TilebeltStatic]
   }

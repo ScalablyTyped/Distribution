@@ -12,8 +12,8 @@ trait AttrRecognizerStatic extends js.Object {
 
 object AttrRecognizerStatic {
   @scala.inline
-  def apply(attrTest: js.Function1[HammerInput, scala.Boolean], process: js.Function1[HammerInput, js.Any]): AttrRecognizerStatic = {
-    val __obj = js.Dynamic.literal(attrTest = attrTest, process = process)
+  def apply(attrTest: HammerInput => scala.Boolean, process: HammerInput => js.Any): AttrRecognizerStatic = {
+    val __obj = js.Dynamic.literal(attrTest = js.Any.fromFunction1(attrTest), process = js.Any.fromFunction1(process))
   
     __obj.asInstanceOf[AttrRecognizerStatic]
   }

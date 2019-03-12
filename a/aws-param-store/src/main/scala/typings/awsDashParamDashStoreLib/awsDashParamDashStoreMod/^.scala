@@ -38,7 +38,7 @@ object ^ extends js.Object {
     names: awsDashSdkLib.clientsSsmMod.SSMNs.ParameterNameList,
     options: awsDashSdkLib.clientsSsmMod.SSMNs.ClientConfiguration
   ): awsDashSdkLib.clientsSsmMod.SSMNs.GetParametersResult = js.native
-  def parameterQuery(): awsDashParamDashStoreLib.awsDashParamDashStoreMod.ParameterQuery = js.native
-  def parameterQuery(options: awsDashSdkLib.clientsSsmMod.SSMNs.ClientConfiguration): awsDashParamDashStoreLib.awsDashParamDashStoreMod.ParameterQuery = js.native
+  def parameterQuery(): ParameterQuery = js.native
+  def parameterQuery(options: awsDashSdkLib.clientsSsmMod.SSMNs.ClientConfiguration): ParameterQuery = js.native
 }
 

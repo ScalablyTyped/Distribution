@@ -53,11 +53,11 @@ object JoyrideOptions {
     next_button: js.UndefOr[scala.Boolean] = js.undefined,
     nub_position: java.lang.String = null,
     pause_after: js.Array[scala.Double] = null,
-    post_expose_callback: js.Function0[scala.Unit] = null,
-    post_ride_callback: js.Function0[scala.Unit] = null,
-    post_step_callback: js.Function0[scala.Unit] = null,
-    pre_ride_callback: js.Function0[scala.Unit] = null,
-    pre_step_callback: js.Function0[scala.Unit] = null,
+    post_expose_callback: () => scala.Unit = null,
+    post_ride_callback: () => scala.Unit = null,
+    post_step_callback: () => scala.Unit = null,
+    pre_ride_callback: () => scala.Unit = null,
+    pre_step_callback: () => scala.Unit = null,
     prev_button: js.UndefOr[scala.Boolean] = js.undefined,
     scroll_animation: java.lang.String = null,
     scroll_speed: scala.Int | scala.Double = null,
@@ -84,11 +84,11 @@ object JoyrideOptions {
     if (!js.isUndefined(next_button)) __obj.updateDynamic("next_button")(next_button)
     if (nub_position != null) __obj.updateDynamic("nub_position")(nub_position)
     if (pause_after != null) __obj.updateDynamic("pause_after")(pause_after)
-    if (post_expose_callback != null) __obj.updateDynamic("post_expose_callback")(post_expose_callback)
-    if (post_ride_callback != null) __obj.updateDynamic("post_ride_callback")(post_ride_callback)
-    if (post_step_callback != null) __obj.updateDynamic("post_step_callback")(post_step_callback)
-    if (pre_ride_callback != null) __obj.updateDynamic("pre_ride_callback")(pre_ride_callback)
-    if (pre_step_callback != null) __obj.updateDynamic("pre_step_callback")(pre_step_callback)
+    if (post_expose_callback != null) __obj.updateDynamic("post_expose_callback")(js.Any.fromFunction0(post_expose_callback))
+    if (post_ride_callback != null) __obj.updateDynamic("post_ride_callback")(js.Any.fromFunction0(post_ride_callback))
+    if (post_step_callback != null) __obj.updateDynamic("post_step_callback")(js.Any.fromFunction0(post_step_callback))
+    if (pre_ride_callback != null) __obj.updateDynamic("pre_ride_callback")(js.Any.fromFunction0(pre_ride_callback))
+    if (pre_step_callback != null) __obj.updateDynamic("pre_step_callback")(js.Any.fromFunction0(pre_step_callback))
     if (!js.isUndefined(prev_button)) __obj.updateDynamic("prev_button")(prev_button)
     if (scroll_animation != null) __obj.updateDynamic("scroll_animation")(scroll_animation)
     if (scroll_speed != null) __obj.updateDynamic("scroll_speed")(scroll_speed.asInstanceOf[js.Any])

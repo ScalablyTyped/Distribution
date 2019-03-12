@@ -24,16 +24,10 @@ trait EventsResource extends js.Object {
 object EventsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotClouderrorreportingLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListEventsResponse]
-    ],
-    report: js.Function1[
-      gapiDotClientDotClouderrorreportingLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ]
+    list: gapiDotClientDotClouderrorreportingLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[ListEventsResponse],
+    report: gapiDotClientDotClouderrorreportingLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   ): EventsResource = {
-    val __obj = js.Dynamic.literal(list = list, report = report)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), report = js.Any.fromFunction1(report))
   
     __obj.asInstanceOf[EventsResource]
   }

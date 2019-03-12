@@ -12,12 +12,12 @@ trait TreeViewDragstartEvent extends TreeViewEvent {
 object TreeViewDragstartEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: TreeView,
     sourceNode: stdLib.Element = null
   ): TreeViewDragstartEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (sourceNode != null) __obj.updateDynamic("sourceNode")(sourceNode)
     __obj.asInstanceOf[TreeViewDragstartEvent]
   }

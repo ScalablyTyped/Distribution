@@ -11,8 +11,8 @@ trait KeyableQuery[T] extends js.Object {
 
 object KeyableQuery {
   @scala.inline
-  def apply[T](keys: js.Function0[KeysQuery[T]]): KeyableQuery[T] = {
-    val __obj = js.Dynamic.literal(keys = keys)
+  def apply[T](keys: () => KeysQuery[T]): KeyableQuery[T] = {
+    val __obj = js.Dynamic.literal(keys = js.Any.fromFunction0(keys))
   
     __obj.asInstanceOf[KeyableQuery[T]]
   }

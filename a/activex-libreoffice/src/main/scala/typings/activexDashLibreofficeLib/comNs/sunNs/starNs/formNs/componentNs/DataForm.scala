@@ -56,7 +56,7 @@ trait DataForm
     *
     * If the form is no sub form (e.g. its parent is not a form itself), this property is not evaluated.
     */
-  var DetailFields: activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  var DetailFields: stdLib.SafeArray[java.lang.String] = js.native
   /**
     * is used for subforms and contains the names of columns of the parent form.
     *
@@ -65,7 +65,7 @@ trait DataForm
     *
     * If the form is no sub form (e.g. its parent is not a form itself), this property is not evaluated.
     */
-  var MasterFields: activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  var MasterFields: stdLib.SafeArray[java.lang.String] = js.native
   /** determines how an navigation bar for this form should act. */
   var NavigationBarMode: activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.NavigationBarMode = js.native
 }

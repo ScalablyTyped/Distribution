@@ -40,18 +40,13 @@ object UploadOptions {
   def apply(
     endpoint: java.lang.String,
     chunkSize: scala.Int | scala.Double = null,
-    fingerprint: js.Function2[/* file */ stdLib.File, /* options */ js.UndefOr[UploadOptions], java.lang.String] = null,
+    fingerprint: (/* file */ stdLib.File, /* options */ js.UndefOr[UploadOptions]) => java.lang.String = null,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     metadata: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    onChunkComplete: js.Function3[
-      /* chunkSize */ scala.Double, 
-      /* bytesAccepted */ scala.Double, 
-      /* bytesTotal */ scala.Double, 
-      scala.Unit
-    ] = null,
-    onError: js.Function1[/* error */ stdLib.Error, scala.Unit] = null,
-    onProgress: js.Function2[/* bytesSent */ scala.Double, /* bytesTotal */ scala.Double, scala.Unit] = null,
-    onSuccess: js.Function0[scala.Unit] = null,
+    onChunkComplete: (/* chunkSize */ scala.Double, /* bytesAccepted */ scala.Double, /* bytesTotal */ scala.Double) => scala.Unit = null,
+    onError: /* error */ stdLib.Error => scala.Unit = null,
+    onProgress: (/* bytesSent */ scala.Double, /* bytesTotal */ scala.Double) => scala.Unit = null,
+    onSuccess: () => scala.Unit = null,
     overridePatchMethod: js.UndefOr[scala.Boolean] = js.undefined,
     removeFingerprintOnSuccess: js.UndefOr[scala.Boolean] = js.undefined,
     resume: js.UndefOr[scala.Boolean] = js.undefined,
@@ -62,13 +57,13 @@ object UploadOptions {
   ): UploadOptions = {
     val __obj = js.Dynamic.literal(endpoint = endpoint)
     if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(js.Any.fromFunction2(fingerprint))
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (onChunkComplete != null) __obj.updateDynamic("onChunkComplete")(onChunkComplete)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress)
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess)
+    if (onChunkComplete != null) __obj.updateDynamic("onChunkComplete")(js.Any.fromFunction3(onChunkComplete))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction2(onProgress))
+    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction0(onSuccess))
     if (!js.isUndefined(overridePatchMethod)) __obj.updateDynamic("overridePatchMethod")(overridePatchMethod)
     if (!js.isUndefined(removeFingerprintOnSuccess)) __obj.updateDynamic("removeFingerprintOnSuccess")(removeFingerprintOnSuccess)
     if (!js.isUndefined(resume)) __obj.updateDynamic("resume")(resume)

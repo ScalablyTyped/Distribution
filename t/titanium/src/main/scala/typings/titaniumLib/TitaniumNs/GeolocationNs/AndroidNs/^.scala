@@ -31,11 +31,11 @@ object ^ extends js.Object {
   /**
   			 * Adds and enables the specified location provider, possibly replacing an existing one.
   			 */
-  def addLocationProvider(provider: titaniumLib.TitaniumNs.GeolocationNs.AndroidNs.LocationProvider): scala.Unit = js.native
+  def addLocationProvider(provider: LocationProvider): scala.Unit = js.native
   /**
   			 * Adds and enables the specified location rule.
   			 */
-  def addLocationRule(rule: titaniumLib.TitaniumNs.GeolocationNs.AndroidNs.LocationRule): scala.Unit = js.native
+  def addLocationRule(rule: LocationRule): scala.Unit = js.native
   /**
   			 * Applies the properties to the proxy.
   			 */
@@ -43,13 +43,13 @@ object ^ extends js.Object {
   /**
   			 * Creates and returns an instance of <Titanium.Geolocation.Android.LocationProvider>.
   			 */
-  def createLocationProvider(): titaniumLib.TitaniumNs.GeolocationNs.AndroidNs.LocationProvider = js.native
-  def createLocationProvider(parameters: js.Any): titaniumLib.TitaniumNs.GeolocationNs.AndroidNs.LocationProvider = js.native
+  def createLocationProvider(): LocationProvider = js.native
+  def createLocationProvider(parameters: js.Any): LocationProvider = js.native
   /**
   			 * Creates and returns an instance of <Titanium.Geolocation.Android.LocationRule>.
   			 */
-  def createLocationRule(): titaniumLib.TitaniumNs.GeolocationNs.AndroidNs.LocationRule = js.native
-  def createLocationRule(parameters: js.Any): titaniumLib.TitaniumNs.GeolocationNs.AndroidNs.LocationRule = js.native
+  def createLocationRule(): LocationRule = js.native
+  def createLocationRule(parameters: js.Any): LocationRule = js.native
   /**
   			 * Fires a synthesized event to any registered listeners.
   			 */
@@ -77,11 +77,11 @@ object ^ extends js.Object {
   /**
   			 * Disables and removes the specified location provider.
   			 */
-  def removeLocationProvider(provider: titaniumLib.TitaniumNs.GeolocationNs.AndroidNs.LocationProvider): scala.Unit = js.native
+  def removeLocationProvider(provider: LocationProvider): scala.Unit = js.native
   /**
   			 * Disables and removes the specified location rule.
   			 */
-  def removeLocationRule(rule: titaniumLib.TitaniumNs.GeolocationNs.AndroidNs.LocationRule): scala.Unit = js.native
+  def removeLocationRule(rule: LocationRule): scala.Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Geolocation.Android.bubbleParent> property.
   			 */

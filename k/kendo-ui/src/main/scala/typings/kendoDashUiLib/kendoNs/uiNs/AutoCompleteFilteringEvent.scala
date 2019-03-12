@@ -12,12 +12,12 @@ trait AutoCompleteFilteringEvent extends AutoCompleteEvent {
 object AutoCompleteFilteringEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: AutoComplete,
     filter: js.Any = null
   ): AutoCompleteFilteringEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     __obj.asInstanceOf[AutoCompleteFilteringEvent]
   }

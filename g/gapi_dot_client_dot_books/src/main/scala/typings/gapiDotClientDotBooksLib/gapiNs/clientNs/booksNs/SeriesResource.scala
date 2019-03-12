@@ -14,13 +14,10 @@ trait SeriesResource extends js.Object {
 object SeriesResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserSeriesid, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Series]
-    ],
+    get: gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserSeriesid => gapiDotClientLib.gapiNs.clientNs.Request[Series],
     membership: MembershipResource
   ): SeriesResource = {
-    val __obj = js.Dynamic.literal(get = get, membership = membership)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), membership = membership)
   
     __obj.asInstanceOf[SeriesResource]
   }

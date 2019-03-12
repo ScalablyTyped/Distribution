@@ -25,17 +25,17 @@ object XIdlField {
     DeclaringClass: XIdlClass[_],
     Name: java.lang.String,
     Type: XIdlClass[_],
-    acquire: js.Function0[scala.Unit],
-    get: js.Function1[js.Any, js.Any],
-    getAccessMode: js.Function0[FieldAccessMode],
-    getDeclaringClass: js.Function0[XIdlClass[_]],
-    getName: js.Function0[java.lang.String],
-    getType: js.Function0[XIdlClass[_]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    set: js.Function2[js.Any, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    get: js.Any => js.Any,
+    getAccessMode: () => FieldAccessMode,
+    getDeclaringClass: () => XIdlClass[_],
+    getName: () => java.lang.String,
+    getType: () => XIdlClass[_],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    set: (js.Any, js.Any) => scala.Unit
   ): XIdlField = {
-    val __obj = js.Dynamic.literal(AccessMode = AccessMode, DeclaringClass = DeclaringClass, Name = Name, Type = Type, acquire = acquire, get = get, getAccessMode = getAccessMode, getDeclaringClass = getDeclaringClass, getName = getName, getType = getType, queryInterface = queryInterface, release = release, set = set)
+    val __obj = js.Dynamic.literal(AccessMode = AccessMode, DeclaringClass = DeclaringClass, Name = Name, Type = Type, acquire = js.Any.fromFunction0(acquire), get = js.Any.fromFunction1(get), getAccessMode = js.Any.fromFunction0(getAccessMode), getDeclaringClass = js.Any.fromFunction0(getDeclaringClass), getName = js.Any.fromFunction0(getName), getType = js.Any.fromFunction0(getType), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), set = js.Any.fromFunction2(set))
   
     __obj.asInstanceOf[XIdlField]
   }

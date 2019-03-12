@@ -11,9 +11,9 @@ class DefaultLinkWidget protected ()
   extends stormDashReactDashDiagramsLib.distSrcWidgetsBaseWidgetMod.BaseWidget[DefaultLinkProps, DefaultLinkState] {
   def this(props: DefaultLinkProps) = this()
   var pathFinding: stormDashReactDashDiagramsLib.distSrcRoutingPathFindingMod.default = js.native
-  var refLabels: org.scalablytyped.runtime.StringDictionary[reactLib.HTMLElement] = js.native
-  var refPaths: js.Array[reactLib.SVGPathElement] = js.native
-  def addPointToLink(event: reactLib.MouseEvent, index: scala.Double): scala.Unit = js.native
+  var refLabels: org.scalablytyped.runtime.StringDictionary[stdLib.HTMLElement] = js.native
+  var refPaths: js.Array[stdLib.SVGPathElement] = js.native
+  def addPointToLink(event: stdLib.MouseEvent, index: scala.Double): scala.Unit = js.native
   def calculateAllLabelPosition(): scala.Unit = js.native
   def calculateLabelPosition(label: js.Any, index: scala.Double): scala.Unit = js.native
   @JSName("componentDidMount")

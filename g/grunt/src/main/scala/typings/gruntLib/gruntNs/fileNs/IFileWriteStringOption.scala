@@ -19,10 +19,10 @@ trait IFileWriteStringOption extends IFileWriteOptions {
 
 object IFileWriteStringOption {
   @scala.inline
-  def apply(noProcess: js.Any = null, process: js.Function1[/* file */ java.lang.String, scala.Boolean] = null): IFileWriteStringOption = {
+  def apply(noProcess: js.Any = null, process: /* file */ java.lang.String => scala.Boolean = null): IFileWriteStringOption = {
     val __obj = js.Dynamic.literal()
     if (noProcess != null) __obj.updateDynamic("noProcess")(noProcess)
-    if (process != null) __obj.updateDynamic("process")(process)
+    if (process != null) __obj.updateDynamic("process")(js.Any.fromFunction1(process))
     __obj.asInstanceOf[IFileWriteStringOption]
   }
 }

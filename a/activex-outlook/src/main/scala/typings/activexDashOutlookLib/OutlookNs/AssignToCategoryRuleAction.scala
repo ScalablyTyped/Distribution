@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class AssignToCategoryRuleAction protected () extends js.Object {
   val ActionType: OlRuleActionType = js.native
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   var Categories: js.Any = js.native
   val Class: OlObjectClass = js.native
   var Enabled: scala.Boolean = js.native

@@ -23,11 +23,8 @@ trait ASPxClientCustomizeMenuActionsEventArgs extends ASPxClientEventArgs {
 
 object ASPxClientCustomizeMenuActionsEventArgs {
   @scala.inline
-  def apply(
-    Actions: js.Array[ASPxClientMenuAction],
-    GetById: js.Function1[java.lang.String, ASPxClientMenuAction]
-  ): ASPxClientCustomizeMenuActionsEventArgs = {
-    val __obj = js.Dynamic.literal(Actions = Actions, GetById = GetById)
+  def apply(Actions: js.Array[ASPxClientMenuAction], GetById: java.lang.String => ASPxClientMenuAction): ASPxClientCustomizeMenuActionsEventArgs = {
+    val __obj = js.Dynamic.literal(Actions = Actions, GetById = js.Any.fromFunction1(GetById))
   
     __obj.asInstanceOf[ASPxClientCustomizeMenuActionsEventArgs]
   }

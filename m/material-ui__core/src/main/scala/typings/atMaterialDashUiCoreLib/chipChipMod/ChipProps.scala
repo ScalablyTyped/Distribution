@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<react.HTMLDivElement>, 'classes' | never> ]: react.react.HTMLAttributes<react.HTMLDivElement>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLDivElement>, @material-ui/core.@material-ui/core/Chip/Chip.ChipClassKey, never>) */ trait ChipProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement>, @material-ui/core.@material-ui/core/Chip/Chip.ChipClassKey, never>) */ trait ChipProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ChipClassKey] {
   var avatar: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined

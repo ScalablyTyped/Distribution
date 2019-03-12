@@ -31,13 +31,13 @@ trait XSignatureCreationResultBroadcaster
 object XSignatureCreationResultBroadcaster {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addSignatureCreationResultListener: js.Function1[XSignatureCreationResultListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeSignatureCreationResultListener: js.Function1[XSignatureCreationResultListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addSignatureCreationResultListener: XSignatureCreationResultListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeSignatureCreationResultListener: XSignatureCreationResultListener => scala.Unit
   ): XSignatureCreationResultBroadcaster = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addSignatureCreationResultListener = addSignatureCreationResultListener, queryInterface = queryInterface, release = release, removeSignatureCreationResultListener = removeSignatureCreationResultListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addSignatureCreationResultListener = js.Any.fromFunction1(addSignatureCreationResultListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeSignatureCreationResultListener = js.Any.fromFunction1(removeSignatureCreationResultListener))
   
     __obj.asInstanceOf[XSignatureCreationResultBroadcaster]
   }

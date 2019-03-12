@@ -14,14 +14,14 @@ trait SchedulerNavigateEvent extends SchedulerEvent {
 object SchedulerNavigateEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Scheduler,
     action: java.lang.String = null,
     date: stdLib.Date = null,
     view: java.lang.String = null
   ): SchedulerNavigateEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (action != null) __obj.updateDynamic("action")(action)
     if (date != null) __obj.updateDynamic("date")(date)
     if (view != null) __obj.updateDynamic("view")(view)

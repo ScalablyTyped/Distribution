@@ -19,14 +19,14 @@ object FullscreenButtonViewModel {
   @scala.inline
   def apply(
     command: Command,
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     fullscreenElement: stdLib.Element,
-    isDestroyed: js.Function0[scala.Boolean],
+    isDestroyed: () => scala.Boolean,
     isFullscreen: scala.Boolean,
     isFullscreenEnabled: scala.Boolean,
     tooltip: java.lang.String
   ): FullscreenButtonViewModel = {
-    val __obj = js.Dynamic.literal(command = command, destroy = destroy, fullscreenElement = fullscreenElement, isDestroyed = isDestroyed, isFullscreen = isFullscreen, isFullscreenEnabled = isFullscreenEnabled, tooltip = tooltip)
+    val __obj = js.Dynamic.literal(command = command, destroy = js.Any.fromFunction0(destroy), fullscreenElement = fullscreenElement, isDestroyed = js.Any.fromFunction0(isDestroyed), isFullscreen = isFullscreen, isFullscreenEnabled = isFullscreenEnabled, tooltip = tooltip)
   
     __obj.asInstanceOf[FullscreenButtonViewModel]
   }

@@ -18,12 +18,12 @@ object XMasterPagesSupplier {
   @scala.inline
   def apply(
     MasterPages: XDrawPages,
-    acquire: js.Function0[scala.Unit],
-    getMasterPages: js.Function0[XDrawPages],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getMasterPages: () => XDrawPages,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XMasterPagesSupplier = {
-    val __obj = js.Dynamic.literal(MasterPages = MasterPages, acquire = acquire, getMasterPages = getMasterPages, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(MasterPages = MasterPages, acquire = js.Any.fromFunction0(acquire), getMasterPages = js.Any.fromFunction0(getMasterPages), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XMasterPagesSupplier]
   }

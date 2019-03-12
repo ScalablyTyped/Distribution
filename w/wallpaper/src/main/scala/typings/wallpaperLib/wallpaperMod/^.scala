@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def get(): js.Promise[java.lang.String] = js.native
   def set(imagePath: java.lang.String): js.Promise[scala.Unit] = js.native
-  def set(imagePath: java.lang.String, options: wallpaperLib.wallpaperMod.WallpaperOptions): js.Promise[scala.Unit] = js.native
+  def set(imagePath: java.lang.String, options: WallpaperOptions): js.Promise[scala.Unit] = js.native
 }
 

@@ -27,11 +27,11 @@ object DocumentProperties {
     CreationDate: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime,
     DefaultTarget: java.lang.String,
     Description: java.lang.String,
-    DocumentStatistics: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    DocumentStatistics: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
     EditingCycles: scala.Double,
     EditingDuration: scala.Double,
     Generator: java.lang.String,
-    Keywords: activexDashInteropLib.SafeArray[java.lang.String],
+    Keywords: stdLib.SafeArray[java.lang.String],
     Language: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
     ModificationDate: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime,
     ModifiedBy: java.lang.String,
@@ -43,31 +43,15 @@ object DocumentProperties {
     TemplateURL: java.lang.String,
     Title: java.lang.String,
     UserDefinedProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyContainer,
-    create: js.Function0[scala.Unit],
-    getUserDefinedProperties: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyContainer],
-    loadFromMedium: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    loadFromStorage: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    resetUserData: js.Function1[java.lang.String, scala.Unit],
-    storeToMedium: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    storeToStorage: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ]
+    create: () => scala.Unit,
+    getUserDefinedProperties: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyContainer,
+    loadFromMedium: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    loadFromStorage: (activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    resetUserData: java.lang.String => scala.Unit,
+    storeToMedium: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    storeToStorage: (activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit
   ): DocumentProperties = {
-    val __obj = js.Dynamic.literal(Author = Author, AutoloadSecs = AutoloadSecs, AutoloadURL = AutoloadURL, CreationDate = CreationDate, DefaultTarget = DefaultTarget, Description = Description, DocumentStatistics = DocumentStatistics, EditingCycles = EditingCycles, EditingDuration = EditingDuration, Generator = Generator, Keywords = Keywords, Language = Language, ModificationDate = ModificationDate, ModifiedBy = ModifiedBy, PrintDate = PrintDate, PrintedBy = PrintedBy, Subject = Subject, TemplateDate = TemplateDate, TemplateName = TemplateName, TemplateURL = TemplateURL, Title = Title, UserDefinedProperties = UserDefinedProperties, create = create, getUserDefinedProperties = getUserDefinedProperties, loadFromMedium = loadFromMedium, loadFromStorage = loadFromStorage, resetUserData = resetUserData, storeToMedium = storeToMedium, storeToStorage = storeToStorage)
+    val __obj = js.Dynamic.literal(Author = Author, AutoloadSecs = AutoloadSecs, AutoloadURL = AutoloadURL, CreationDate = CreationDate, DefaultTarget = DefaultTarget, Description = Description, DocumentStatistics = DocumentStatistics, EditingCycles = EditingCycles, EditingDuration = EditingDuration, Generator = Generator, Keywords = Keywords, Language = Language, ModificationDate = ModificationDate, ModifiedBy = ModifiedBy, PrintDate = PrintDate, PrintedBy = PrintedBy, Subject = Subject, TemplateDate = TemplateDate, TemplateName = TemplateName, TemplateURL = TemplateURL, Title = Title, UserDefinedProperties = UserDefinedProperties, create = js.Any.fromFunction0(create), getUserDefinedProperties = js.Any.fromFunction0(getUserDefinedProperties), loadFromMedium = js.Any.fromFunction2(loadFromMedium), loadFromStorage = js.Any.fromFunction2(loadFromStorage), resetUserData = js.Any.fromFunction1(resetUserData), storeToMedium = js.Any.fromFunction2(storeToMedium), storeToStorage = js.Any.fromFunction2(storeToStorage))
   
     __obj.asInstanceOf[DocumentProperties]
   }

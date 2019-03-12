@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   */
 trait XNameAccess extends XElementAccess {
   /** @returns a sequence of all element names in this container.  The order of the names is not specified. */
-  val ElementNames: activexDashInteropLib.SafeArray[java.lang.String]
+  val ElementNames: stdLib.SafeArray[java.lang.String]
   /**
     * @param aName the name of the object.
     * @returns the object with the specified name.
@@ -22,7 +22,7 @@ trait XNameAccess extends XElementAccess {
     */
   def getByName(aName: java.lang.String): js.Any
   /** @returns a sequence of all element names in this container.  The order of the names is not specified. */
-  def getElementNames(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getElementNames(): stdLib.SafeArray[java.lang.String]
   /**
     * @param aName the name of the object.
     * @returns `TRUE` if an element with this name is in the container, `FALSE` otherwise.  In many cases the next call is {@link XNameAccess.getByName()} . You
@@ -33,18 +33,18 @@ trait XNameAccess extends XElementAccess {
 object XNameAccess {
   @scala.inline
   def apply(
-    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementNames: stdLib.SafeArray[java.lang.String],
     ElementType: activexDashLibreofficeLib.`type`,
-    acquire: js.Function0[scala.Unit],
-    getByName: js.Function1[java.lang.String, js.Any],
-    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    hasByName: js.Function1[java.lang.String, scala.Boolean],
-    hasElements: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getByName: java.lang.String => js.Any,
+    getElementNames: () => stdLib.SafeArray[java.lang.String],
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    hasByName: java.lang.String => scala.Boolean,
+    hasElements: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XNameAccess = {
-    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = js.Any.fromFunction0(acquire), getByName = js.Any.fromFunction1(getByName), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XNameAccess]
   }

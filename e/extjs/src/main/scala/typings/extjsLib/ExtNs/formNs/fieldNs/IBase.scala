@@ -325,158 +325,158 @@ object IBase {
     IField: IField = null,
     ILabelable: extjsLib.ExtNs.formNs.ILabelable = null,
     baseCls: java.lang.String = null,
-    batchChanges: js.Function1[/* fn */ js.UndefOr[js.Any], scala.Unit] = null,
-    beforeReset: js.Function0[scala.Unit] = null,
-    checkChange: js.Function0[scala.Unit] = null,
+    batchChanges: /* fn */ js.UndefOr[js.Any] => scala.Unit = null,
+    beforeReset: () => scala.Unit = null,
+    checkChange: () => scala.Unit = null,
     checkChangeBuffer: scala.Int | scala.Double = null,
     checkChangeEvents: extjsLib.ExtNs.Array = null,
-    checkDirty: js.Function0[scala.Unit] = null,
-    clearInvalid: js.Function0[scala.Unit] = null,
+    checkDirty: () => scala.Unit = null,
+    clearInvalid: () => scala.Unit = null,
     componentLayout: js.Any = null,
     dirtyCls: java.lang.String = null,
-    doComponentLayout: js.Function0[extjsLib.ExtNs.containerNs.IContainer] = null,
-    extractFileInput: js.Function0[stdLib.HTMLElement] = null,
+    doComponentLayout: () => extjsLib.ExtNs.containerNs.IContainer = null,
+    extractFileInput: () => stdLib.HTMLElement = null,
     fieldCls: java.lang.String = null,
     fieldStyle: java.lang.String = null,
     focusCls: java.lang.String = null,
-    getActiveError: js.Function0[java.lang.String] = null,
-    getActiveErrors: js.Function0[extjsLib.ExtNs.Array] = null,
-    getErrors: js.Function1[/* value */ js.UndefOr[js.Any], extjsLib.ExtNs.Array] = null,
-    getFieldLabel: js.Function0[java.lang.String] = null,
-    getLabelWidth: js.Function0[scala.Double] = null,
-    getLabelableRenderData: js.Function0[_] = null,
-    getModelData: js.Function0[_] = null,
-    getName: js.Function0[java.lang.String] = null,
-    getRawValue: js.Function0[_] = null,
-    getSubTplData: js.Function0[_] = null,
-    getSubmitData: js.Function0[_] = null,
-    getSubmitValue: js.Function0[_] = null,
-    getValue: js.Function0[_] = null,
-    hasActiveError: js.Function0[scala.Boolean] = null,
-    hasVisibleLabel: js.Function0[scala.Boolean] = null,
-    initComponent: js.Function0[scala.Unit] = null,
-    initEvents: js.Function0[scala.Unit] = null,
-    initField: js.Function0[scala.Unit] = null,
-    initLabelable: js.Function0[scala.Unit] = null,
-    initRenderData: js.Function0[_] = null,
-    initValue: js.Function0[scala.Unit] = null,
+    getActiveError: () => java.lang.String = null,
+    getActiveErrors: () => extjsLib.ExtNs.Array = null,
+    getErrors: /* value */ js.UndefOr[js.Any] => extjsLib.ExtNs.Array = null,
+    getFieldLabel: () => java.lang.String = null,
+    getLabelWidth: () => scala.Double = null,
+    getLabelableRenderData: () => _ = null,
+    getModelData: () => _ = null,
+    getName: () => java.lang.String = null,
+    getRawValue: () => _ = null,
+    getSubTplData: () => _ = null,
+    getSubmitData: () => _ = null,
+    getSubmitValue: () => _ = null,
+    getValue: () => _ = null,
+    hasActiveError: () => scala.Boolean = null,
+    hasVisibleLabel: () => scala.Boolean = null,
+    initComponent: () => scala.Unit = null,
+    initEvents: () => scala.Unit = null,
+    initField: () => scala.Unit = null,
+    initLabelable: () => scala.Unit = null,
+    initRenderData: () => _ = null,
+    initValue: () => scala.Unit = null,
     inputAttrTpl: js.Any = null,
     inputEl: extjsLib.ExtNs.IElement = null,
     inputId: java.lang.String = null,
     inputType: java.lang.String = null,
     invalidText: java.lang.String = null,
-    isDirty: js.Function0[scala.Boolean] = null,
-    isEqual: js.Function2[/* value1 */ js.UndefOr[js.Any], /* value2 */ js.UndefOr[js.Any], scala.Boolean] = null,
-    isFileUpload: js.Function0[scala.Boolean] = null,
-    isValid: js.Function0[scala.Boolean] = null,
-    markInvalid: js.Function1[/* errors */ js.UndefOr[js.Any], scala.Unit] = null,
+    isDirty: () => scala.Boolean = null,
+    isEqual: (/* value1 */ js.UndefOr[js.Any], /* value2 */ js.UndefOr[js.Any]) => scala.Boolean = null,
+    isFileUpload: () => scala.Boolean = null,
+    isValid: () => scala.Boolean = null,
+    markInvalid: /* errors */ js.UndefOr[js.Any] => scala.Unit = null,
     maskOnDisable: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
-    onDisable: js.Function0[scala.Unit] = null,
-    onEnable: js.Function0[scala.Unit] = null,
-    onRender: js.Function0[scala.Unit] = null,
-    processRawValue: js.Function1[/* value */ js.UndefOr[js.Any], _] = null,
-    rawToValue: js.Function1[/* rawValue */ js.UndefOr[js.Any], _] = null,
+    onDisable: () => scala.Unit = null,
+    onEnable: () => scala.Unit = null,
+    onRender: () => scala.Unit = null,
+    processRawValue: /* value */ js.UndefOr[js.Any] => _ = null,
+    rawToValue: /* rawValue */ js.UndefOr[js.Any] => _ = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     readOnlyCls: java.lang.String = null,
-    reset: js.Function0[scala.Unit] = null,
-    resetOriginalValue: js.Function0[scala.Unit] = null,
-    setActiveError: js.Function1[/* msg */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setActiveErrors: js.Function1[/* errors */ js.UndefOr[extjsLib.ExtNs.Array], scala.Unit] = null,
-    setFieldDefaults: js.Function1[/* defaults */ js.UndefOr[js.Any], scala.Unit] = null,
-    setFieldLabel: js.Function1[/* label */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setFieldStyle: js.Function1[/* style */ js.UndefOr[js.Any], scala.Unit] = null,
-    setRawValue: js.Function1[/* value */ js.UndefOr[js.Any], _] = null,
-    setReadOnly: js.Function1[/* readOnly */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setValue: js.Function1[/* value */ js.UndefOr[js.Any], _] = null,
+    reset: () => scala.Unit = null,
+    resetOriginalValue: () => scala.Unit = null,
+    setActiveError: /* msg */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setActiveErrors: /* errors */ js.UndefOr[extjsLib.ExtNs.Array] => scala.Unit = null,
+    setFieldDefaults: /* defaults */ js.UndefOr[js.Any] => scala.Unit = null,
+    setFieldLabel: /* label */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setFieldStyle: /* style */ js.UndefOr[js.Any] => scala.Unit = null,
+    setRawValue: /* value */ js.UndefOr[js.Any] => _ = null,
+    setReadOnly: /* readOnly */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setValue: /* value */ js.UndefOr[js.Any] => _ = null,
     tabIndex: scala.Int | scala.Double = null,
-    transformOriginalValue: js.Function1[/* value */ js.UndefOr[js.Any], _] = null,
-    transformRawValue: js.Function1[/* value */ js.UndefOr[js.Any], _] = null,
-    trimLabelSeparator: js.Function0[java.lang.String] = null,
-    unsetActiveError: js.Function0[scala.Unit] = null,
-    validate: js.Function0[scala.Boolean] = null,
+    transformOriginalValue: /* value */ js.UndefOr[js.Any] => _ = null,
+    transformRawValue: /* value */ js.UndefOr[js.Any] => _ = null,
+    trimLabelSeparator: () => java.lang.String = null,
+    unsetActiveError: () => scala.Unit = null,
+    validate: () => scala.Boolean = null,
     validateOnBlur: js.UndefOr[scala.Boolean] = js.undefined,
-    validateValue: js.Function1[/* value */ js.UndefOr[js.Any], scala.Boolean] = null,
-    valueToRaw: js.Function1[/* value */ js.UndefOr[js.Any], _] = null
+    validateValue: /* value */ js.UndefOr[js.Any] => scala.Boolean = null,
+    valueToRaw: /* value */ js.UndefOr[js.Any] => _ = null
   ): IBase = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IComponent)
     js.Dynamic.global.Object.assign(__obj, IField)
     js.Dynamic.global.Object.assign(__obj, ILabelable)
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (batchChanges != null) __obj.updateDynamic("batchChanges")(batchChanges)
-    if (beforeReset != null) __obj.updateDynamic("beforeReset")(beforeReset)
-    if (checkChange != null) __obj.updateDynamic("checkChange")(checkChange)
+    if (batchChanges != null) __obj.updateDynamic("batchChanges")(js.Any.fromFunction1(batchChanges))
+    if (beforeReset != null) __obj.updateDynamic("beforeReset")(js.Any.fromFunction0(beforeReset))
+    if (checkChange != null) __obj.updateDynamic("checkChange")(js.Any.fromFunction0(checkChange))
     if (checkChangeBuffer != null) __obj.updateDynamic("checkChangeBuffer")(checkChangeBuffer.asInstanceOf[js.Any])
     if (checkChangeEvents != null) __obj.updateDynamic("checkChangeEvents")(checkChangeEvents)
-    if (checkDirty != null) __obj.updateDynamic("checkDirty")(checkDirty)
-    if (clearInvalid != null) __obj.updateDynamic("clearInvalid")(clearInvalid)
+    if (checkDirty != null) __obj.updateDynamic("checkDirty")(js.Any.fromFunction0(checkDirty))
+    if (clearInvalid != null) __obj.updateDynamic("clearInvalid")(js.Any.fromFunction0(clearInvalid))
     if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
     if (dirtyCls != null) __obj.updateDynamic("dirtyCls")(dirtyCls)
-    if (doComponentLayout != null) __obj.updateDynamic("doComponentLayout")(doComponentLayout)
-    if (extractFileInput != null) __obj.updateDynamic("extractFileInput")(extractFileInput)
+    if (doComponentLayout != null) __obj.updateDynamic("doComponentLayout")(js.Any.fromFunction0(doComponentLayout))
+    if (extractFileInput != null) __obj.updateDynamic("extractFileInput")(js.Any.fromFunction0(extractFileInput))
     if (fieldCls != null) __obj.updateDynamic("fieldCls")(fieldCls)
     if (fieldStyle != null) __obj.updateDynamic("fieldStyle")(fieldStyle)
     if (focusCls != null) __obj.updateDynamic("focusCls")(focusCls)
-    if (getActiveError != null) __obj.updateDynamic("getActiveError")(getActiveError)
-    if (getActiveErrors != null) __obj.updateDynamic("getActiveErrors")(getActiveErrors)
-    if (getErrors != null) __obj.updateDynamic("getErrors")(getErrors)
-    if (getFieldLabel != null) __obj.updateDynamic("getFieldLabel")(getFieldLabel)
-    if (getLabelWidth != null) __obj.updateDynamic("getLabelWidth")(getLabelWidth)
-    if (getLabelableRenderData != null) __obj.updateDynamic("getLabelableRenderData")(getLabelableRenderData)
-    if (getModelData != null) __obj.updateDynamic("getModelData")(getModelData)
-    if (getName != null) __obj.updateDynamic("getName")(getName)
-    if (getRawValue != null) __obj.updateDynamic("getRawValue")(getRawValue)
-    if (getSubTplData != null) __obj.updateDynamic("getSubTplData")(getSubTplData)
-    if (getSubmitData != null) __obj.updateDynamic("getSubmitData")(getSubmitData)
-    if (getSubmitValue != null) __obj.updateDynamic("getSubmitValue")(getSubmitValue)
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
-    if (hasActiveError != null) __obj.updateDynamic("hasActiveError")(hasActiveError)
-    if (hasVisibleLabel != null) __obj.updateDynamic("hasVisibleLabel")(hasVisibleLabel)
-    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
-    if (initEvents != null) __obj.updateDynamic("initEvents")(initEvents)
-    if (initField != null) __obj.updateDynamic("initField")(initField)
-    if (initLabelable != null) __obj.updateDynamic("initLabelable")(initLabelable)
-    if (initRenderData != null) __obj.updateDynamic("initRenderData")(initRenderData)
-    if (initValue != null) __obj.updateDynamic("initValue")(initValue)
+    if (getActiveError != null) __obj.updateDynamic("getActiveError")(js.Any.fromFunction0(getActiveError))
+    if (getActiveErrors != null) __obj.updateDynamic("getActiveErrors")(js.Any.fromFunction0(getActiveErrors))
+    if (getErrors != null) __obj.updateDynamic("getErrors")(js.Any.fromFunction1(getErrors))
+    if (getFieldLabel != null) __obj.updateDynamic("getFieldLabel")(js.Any.fromFunction0(getFieldLabel))
+    if (getLabelWidth != null) __obj.updateDynamic("getLabelWidth")(js.Any.fromFunction0(getLabelWidth))
+    if (getLabelableRenderData != null) __obj.updateDynamic("getLabelableRenderData")(js.Any.fromFunction0(getLabelableRenderData))
+    if (getModelData != null) __obj.updateDynamic("getModelData")(js.Any.fromFunction0(getModelData))
+    if (getName != null) __obj.updateDynamic("getName")(js.Any.fromFunction0(getName))
+    if (getRawValue != null) __obj.updateDynamic("getRawValue")(js.Any.fromFunction0(getRawValue))
+    if (getSubTplData != null) __obj.updateDynamic("getSubTplData")(js.Any.fromFunction0(getSubTplData))
+    if (getSubmitData != null) __obj.updateDynamic("getSubmitData")(js.Any.fromFunction0(getSubmitData))
+    if (getSubmitValue != null) __obj.updateDynamic("getSubmitValue")(js.Any.fromFunction0(getSubmitValue))
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
+    if (hasActiveError != null) __obj.updateDynamic("hasActiveError")(js.Any.fromFunction0(hasActiveError))
+    if (hasVisibleLabel != null) __obj.updateDynamic("hasVisibleLabel")(js.Any.fromFunction0(hasVisibleLabel))
+    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
+    if (initEvents != null) __obj.updateDynamic("initEvents")(js.Any.fromFunction0(initEvents))
+    if (initField != null) __obj.updateDynamic("initField")(js.Any.fromFunction0(initField))
+    if (initLabelable != null) __obj.updateDynamic("initLabelable")(js.Any.fromFunction0(initLabelable))
+    if (initRenderData != null) __obj.updateDynamic("initRenderData")(js.Any.fromFunction0(initRenderData))
+    if (initValue != null) __obj.updateDynamic("initValue")(js.Any.fromFunction0(initValue))
     if (inputAttrTpl != null) __obj.updateDynamic("inputAttrTpl")(inputAttrTpl)
     if (inputEl != null) __obj.updateDynamic("inputEl")(inputEl)
     if (inputId != null) __obj.updateDynamic("inputId")(inputId)
     if (inputType != null) __obj.updateDynamic("inputType")(inputType)
     if (invalidText != null) __obj.updateDynamic("invalidText")(invalidText)
-    if (isDirty != null) __obj.updateDynamic("isDirty")(isDirty)
-    if (isEqual != null) __obj.updateDynamic("isEqual")(isEqual)
-    if (isFileUpload != null) __obj.updateDynamic("isFileUpload")(isFileUpload)
-    if (isValid != null) __obj.updateDynamic("isValid")(isValid)
-    if (markInvalid != null) __obj.updateDynamic("markInvalid")(markInvalid)
+    if (isDirty != null) __obj.updateDynamic("isDirty")(js.Any.fromFunction0(isDirty))
+    if (isEqual != null) __obj.updateDynamic("isEqual")(js.Any.fromFunction2(isEqual))
+    if (isFileUpload != null) __obj.updateDynamic("isFileUpload")(js.Any.fromFunction0(isFileUpload))
+    if (isValid != null) __obj.updateDynamic("isValid")(js.Any.fromFunction0(isValid))
+    if (markInvalid != null) __obj.updateDynamic("markInvalid")(js.Any.fromFunction1(markInvalid))
     if (!js.isUndefined(maskOnDisable)) __obj.updateDynamic("maskOnDisable")(maskOnDisable)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onDisable != null) __obj.updateDynamic("onDisable")(onDisable)
-    if (onEnable != null) __obj.updateDynamic("onEnable")(onEnable)
-    if (onRender != null) __obj.updateDynamic("onRender")(onRender)
-    if (processRawValue != null) __obj.updateDynamic("processRawValue")(processRawValue)
-    if (rawToValue != null) __obj.updateDynamic("rawToValue")(rawToValue)
+    if (onDisable != null) __obj.updateDynamic("onDisable")(js.Any.fromFunction0(onDisable))
+    if (onEnable != null) __obj.updateDynamic("onEnable")(js.Any.fromFunction0(onEnable))
+    if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction0(onRender))
+    if (processRawValue != null) __obj.updateDynamic("processRawValue")(js.Any.fromFunction1(processRawValue))
+    if (rawToValue != null) __obj.updateDynamic("rawToValue")(js.Any.fromFunction1(rawToValue))
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (readOnlyCls != null) __obj.updateDynamic("readOnlyCls")(readOnlyCls)
-    if (reset != null) __obj.updateDynamic("reset")(reset)
-    if (resetOriginalValue != null) __obj.updateDynamic("resetOriginalValue")(resetOriginalValue)
-    if (setActiveError != null) __obj.updateDynamic("setActiveError")(setActiveError)
-    if (setActiveErrors != null) __obj.updateDynamic("setActiveErrors")(setActiveErrors)
-    if (setFieldDefaults != null) __obj.updateDynamic("setFieldDefaults")(setFieldDefaults)
-    if (setFieldLabel != null) __obj.updateDynamic("setFieldLabel")(setFieldLabel)
-    if (setFieldStyle != null) __obj.updateDynamic("setFieldStyle")(setFieldStyle)
-    if (setRawValue != null) __obj.updateDynamic("setRawValue")(setRawValue)
-    if (setReadOnly != null) __obj.updateDynamic("setReadOnly")(setReadOnly)
-    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
+    if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
+    if (resetOriginalValue != null) __obj.updateDynamic("resetOriginalValue")(js.Any.fromFunction0(resetOriginalValue))
+    if (setActiveError != null) __obj.updateDynamic("setActiveError")(js.Any.fromFunction1(setActiveError))
+    if (setActiveErrors != null) __obj.updateDynamic("setActiveErrors")(js.Any.fromFunction1(setActiveErrors))
+    if (setFieldDefaults != null) __obj.updateDynamic("setFieldDefaults")(js.Any.fromFunction1(setFieldDefaults))
+    if (setFieldLabel != null) __obj.updateDynamic("setFieldLabel")(js.Any.fromFunction1(setFieldLabel))
+    if (setFieldStyle != null) __obj.updateDynamic("setFieldStyle")(js.Any.fromFunction1(setFieldStyle))
+    if (setRawValue != null) __obj.updateDynamic("setRawValue")(js.Any.fromFunction1(setRawValue))
+    if (setReadOnly != null) __obj.updateDynamic("setReadOnly")(js.Any.fromFunction1(setReadOnly))
+    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (transformOriginalValue != null) __obj.updateDynamic("transformOriginalValue")(transformOriginalValue)
-    if (transformRawValue != null) __obj.updateDynamic("transformRawValue")(transformRawValue)
-    if (trimLabelSeparator != null) __obj.updateDynamic("trimLabelSeparator")(trimLabelSeparator)
-    if (unsetActiveError != null) __obj.updateDynamic("unsetActiveError")(unsetActiveError)
-    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (transformOriginalValue != null) __obj.updateDynamic("transformOriginalValue")(js.Any.fromFunction1(transformOriginalValue))
+    if (transformRawValue != null) __obj.updateDynamic("transformRawValue")(js.Any.fromFunction1(transformRawValue))
+    if (trimLabelSeparator != null) __obj.updateDynamic("trimLabelSeparator")(js.Any.fromFunction0(trimLabelSeparator))
+    if (unsetActiveError != null) __obj.updateDynamic("unsetActiveError")(js.Any.fromFunction0(unsetActiveError))
+    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction0(validate))
     if (!js.isUndefined(validateOnBlur)) __obj.updateDynamic("validateOnBlur")(validateOnBlur)
-    if (validateValue != null) __obj.updateDynamic("validateValue")(validateValue)
-    if (valueToRaw != null) __obj.updateDynamic("valueToRaw")(valueToRaw)
+    if (validateValue != null) __obj.updateDynamic("validateValue")(js.Any.fromFunction1(validateValue))
+    if (valueToRaw != null) __obj.updateDynamic("valueToRaw")(js.Any.fromFunction1(valueToRaw))
     __obj.asInstanceOf[IBase]
   }
 }

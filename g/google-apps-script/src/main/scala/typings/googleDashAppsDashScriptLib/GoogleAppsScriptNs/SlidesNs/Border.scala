@@ -18,15 +18,15 @@ trait Border extends js.Object {
 object Border {
   @scala.inline
   def apply(
-    getDashStyle: js.Function0[DashStyle],
-    getLineFill: js.Function0[LineFill],
-    getWeight: js.Function0[stdLib.Number],
-    isVisible: js.Function0[scala.Boolean],
-    setDashStyle: js.Function1[DashStyle, Border],
-    setTransparent: js.Function0[Border],
-    setWeight: js.Function1[stdLib.Number, Border]
+    getDashStyle: () => DashStyle,
+    getLineFill: () => LineFill,
+    getWeight: () => stdLib.Number,
+    isVisible: () => scala.Boolean,
+    setDashStyle: DashStyle => Border,
+    setTransparent: () => Border,
+    setWeight: stdLib.Number => Border
   ): Border = {
-    val __obj = js.Dynamic.literal(getDashStyle = getDashStyle, getLineFill = getLineFill, getWeight = getWeight, isVisible = isVisible, setDashStyle = setDashStyle, setTransparent = setTransparent, setWeight = setWeight)
+    val __obj = js.Dynamic.literal(getDashStyle = js.Any.fromFunction0(getDashStyle), getLineFill = js.Any.fromFunction0(getLineFill), getWeight = js.Any.fromFunction0(getWeight), isVisible = js.Any.fromFunction0(isVisible), setDashStyle = js.Any.fromFunction1(setDashStyle), setTransparent = js.Any.fromFunction0(setTransparent), setWeight = js.Any.fromFunction1(setWeight))
   
     __obj.asInstanceOf[Border]
   }

@@ -35,15 +35,15 @@ trait TypeFilter extends Filter {
 object TypeFilter {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cache: js.Function1[scala.Boolean, TypeFilter],
-    cacheKey: js.Function1[java.lang.String, TypeFilter],
-    name: js.Function1[java.lang.String, TypeFilter],
-    toJSON: js.Function0[TypeFilter],
-    `type`: js.Function1[java.lang.String, TypeFilter]
+    _type: () => java.lang.String,
+    cache: scala.Boolean => TypeFilter,
+    cacheKey: java.lang.String => TypeFilter,
+    name: java.lang.String => TypeFilter,
+    toJSON: () => TypeFilter,
+    `type`: java.lang.String => TypeFilter
   ): TypeFilter = {
-    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, name = name, toJSON = toJSON)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), name = js.Any.fromFunction1(name), toJSON = js.Any.fromFunction0(toJSON))
+    __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
     __obj.asInstanceOf[TypeFilter]
   }
 }

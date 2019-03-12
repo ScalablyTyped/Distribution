@@ -11,8 +11,8 @@ trait IActivatedOperation extends js.Object {
 
 object IActivatedOperation {
   @scala.inline
-  def apply(getDeferral: js.Function0[ActivatedDeferral]): IActivatedOperation = {
-    val __obj = js.Dynamic.literal(getDeferral = getDeferral)
+  def apply(getDeferral: () => ActivatedDeferral): IActivatedOperation = {
+    val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral))
   
     __obj.asInstanceOf[IActivatedOperation]
   }

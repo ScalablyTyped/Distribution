@@ -16,11 +16,11 @@ object Anon_Configuration {
   @scala.inline
   def apply(
     configuration: atUirouterCoreLib.libCommonCoreservicesMod.LocationConfig,
-    dispose: js.Function1[atUirouterCoreLib.libRouterMod.UIRouter, scala.Unit],
+    dispose: atUirouterCoreLib.libRouterMod.UIRouter => scala.Unit,
     name: java.lang.String,
     service: atUirouterCoreLib.libCommonCoreservicesMod.LocationServices
   ): Anon_Configuration = {
-    val __obj = js.Dynamic.literal(configuration = configuration, dispose = dispose, name = name, service = service)
+    val __obj = js.Dynamic.literal(configuration = configuration, dispose = js.Any.fromFunction1(dispose), name = name, service = service)
   
     __obj.asInstanceOf[Anon_Configuration]
   }

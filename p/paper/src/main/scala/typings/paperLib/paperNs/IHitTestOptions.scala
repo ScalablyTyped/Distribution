@@ -75,7 +75,7 @@ object IHitTestOptions {
     fill: js.UndefOr[scala.Boolean] = js.undefined,
     guides: js.UndefOr[scala.Boolean] = js.undefined,
     handles: js.UndefOr[scala.Boolean] = js.undefined,
-    `match`: js.Function1[/* hit */ HitResult, scala.Boolean] = null,
+    `match`: /* hit */ HitResult => scala.Boolean = null,
     position: js.UndefOr[scala.Boolean] = js.undefined,
     segments: js.UndefOr[scala.Boolean] = js.undefined,
     selected: js.UndefOr[scala.Boolean] = js.undefined,
@@ -91,7 +91,7 @@ object IHitTestOptions {
     if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
     if (!js.isUndefined(guides)) __obj.updateDynamic("guides")(guides)
     if (!js.isUndefined(handles)) __obj.updateDynamic("handles")(handles)
-    if (`match` != null) __obj.updateDynamic("match")(`match`)
+    if (`match` != null) __obj.updateDynamic("match")(js.Any.fromFunction1(`match`))
     if (!js.isUndefined(position)) __obj.updateDynamic("position")(position)
     if (!js.isUndefined(segments)) __obj.updateDynamic("segments")(segments)
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)

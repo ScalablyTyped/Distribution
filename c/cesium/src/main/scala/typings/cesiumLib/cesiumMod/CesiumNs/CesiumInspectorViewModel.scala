@@ -62,7 +62,7 @@ trait CesiumInspectorViewModel extends js.Object {
 object CesiumInspectorViewModel {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     doFilterPrimitive: Command,
     doFilterTile: Command,
     doSuspendUpdates: Command,
@@ -75,7 +75,7 @@ object CesiumInspectorViewModel {
     generalVisible: scala.Boolean,
     hasPickedPrimitive: scala.Boolean,
     hasPickedTile: scala.Boolean,
-    isDestroyed: js.Function0[scala.Boolean],
+    isDestroyed: () => scala.Boolean,
     performance: scala.Boolean,
     performanceContainer: stdLib.Element,
     pickPimitiveActive: scala.Boolean,
@@ -114,7 +114,7 @@ object CesiumInspectorViewModel {
     toggleTerrain: Command,
     wireframe: scala.Boolean
   ): CesiumInspectorViewModel = {
-    val __obj = js.Dynamic.literal(destroy = destroy, doFilterPrimitive = doFilterPrimitive, doFilterTile = doFilterTile, doSuspendUpdates = doSuspendUpdates, dropDownVisible = dropDownVisible, filterPrimitive = filterPrimitive, filterTile = filterTile, frustumStatisticText = frustumStatisticText, frustums = frustums, generalSwitchText = generalSwitchText, generalVisible = generalVisible, hasPickedPrimitive = hasPickedPrimitive, hasPickedTile = hasPickedTile, isDestroyed = isDestroyed, performance = performance, performanceContainer = performanceContainer, pickPimitiveActive = pickPimitiveActive, pickPrimitive = pickPrimitive, pickTile = pickTile, pickTileActive = pickTileActive, primitive = primitive, primitiveBoundingSphere = primitiveBoundingSphere, primitiveReferenceFrame = primitiveReferenceFrame, primitivesSwitchText = primitivesSwitchText, primitivesVisible = primitivesVisible, scene = scene, selectNE = selectNE, selectNW = selectNW, selectParent = selectParent, selectSE = selectSE, selectSW = selectSW, shaderCacheText = shaderCacheText, showFrustums = showFrustums, showPerformance = showPerformance, showPrimitiveBoundingSphere = showPrimitiveBoundingSphere, showPrimitiveReferenceFrame = showPrimitiveReferenceFrame, showTileBoundingSphere = showTileBoundingSphere, showTileCoordinates = showTileCoordinates, showWireframe = showWireframe, suspendUpdates = suspendUpdates, terrainSwitchText = terrainSwitchText, terrainVisible = terrainVisible, tile = tile, tileBoundingSphere = tileBoundingSphere, tileCoordinates = tileCoordinates, tileText = tileText, toggleDropDown = toggleDropDown, toggleGeneral = toggleGeneral, togglePrimitives = togglePrimitives, toggleTerrain = toggleTerrain, wireframe = wireframe)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), doFilterPrimitive = doFilterPrimitive, doFilterTile = doFilterTile, doSuspendUpdates = doSuspendUpdates, dropDownVisible = dropDownVisible, filterPrimitive = filterPrimitive, filterTile = filterTile, frustumStatisticText = frustumStatisticText, frustums = frustums, generalSwitchText = generalSwitchText, generalVisible = generalVisible, hasPickedPrimitive = hasPickedPrimitive, hasPickedTile = hasPickedTile, isDestroyed = js.Any.fromFunction0(isDestroyed), performance = performance, performanceContainer = performanceContainer, pickPimitiveActive = pickPimitiveActive, pickPrimitive = pickPrimitive, pickTile = pickTile, pickTileActive = pickTileActive, primitive = primitive, primitiveBoundingSphere = primitiveBoundingSphere, primitiveReferenceFrame = primitiveReferenceFrame, primitivesSwitchText = primitivesSwitchText, primitivesVisible = primitivesVisible, scene = scene, selectNE = selectNE, selectNW = selectNW, selectParent = selectParent, selectSE = selectSE, selectSW = selectSW, shaderCacheText = shaderCacheText, showFrustums = showFrustums, showPerformance = showPerformance, showPrimitiveBoundingSphere = showPrimitiveBoundingSphere, showPrimitiveReferenceFrame = showPrimitiveReferenceFrame, showTileBoundingSphere = showTileBoundingSphere, showTileCoordinates = showTileCoordinates, showWireframe = showWireframe, suspendUpdates = suspendUpdates, terrainSwitchText = terrainSwitchText, terrainVisible = terrainVisible, tile = tile, tileBoundingSphere = tileBoundingSphere, tileCoordinates = tileCoordinates, tileText = tileText, toggleDropDown = toggleDropDown, toggleGeneral = toggleGeneral, togglePrimitives = togglePrimitives, toggleTerrain = toggleTerrain, wireframe = wireframe)
   
     __obj.asInstanceOf[CesiumInspectorViewModel]
   }

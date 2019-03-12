@@ -20,16 +20,16 @@ trait ExcludedContentLabel
 object ExcludedContentLabel {
   @scala.inline
   def apply(
-    getCampaign: js.Function0[Campaign],
-    getCampaignType: js.Function0[CampaignType],
-    getContentLabelType: js.Function0[java.lang.String],
-    getId: js.Function0[scala.Double],
-    getVideoCampaign: js.Function0[Campaign],
-    remove: js.Function0[scala.Unit],
-    getEntityType: js.Function0[java.lang.String] = null
+    getCampaign: () => Campaign,
+    getCampaignType: () => CampaignType,
+    getContentLabelType: () => java.lang.String,
+    getId: () => scala.Double,
+    getVideoCampaign: () => Campaign,
+    remove: () => scala.Unit,
+    getEntityType: () => java.lang.String = null
   ): ExcludedContentLabel = {
-    val __obj = js.Dynamic.literal(getCampaign = getCampaign, getCampaignType = getCampaignType, getContentLabelType = getContentLabelType, getId = getId, getVideoCampaign = getVideoCampaign, remove = remove)
-    if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
+    val __obj = js.Dynamic.literal(getCampaign = js.Any.fromFunction0(getCampaign), getCampaignType = js.Any.fromFunction0(getCampaignType), getContentLabelType = js.Any.fromFunction0(getContentLabelType), getId = js.Any.fromFunction0(getId), getVideoCampaign = js.Any.fromFunction0(getVideoCampaign), remove = js.Any.fromFunction0(remove))
+    if (getEntityType != null) __obj.updateDynamic("getEntityType")(js.Any.fromFunction0(getEntityType))
     __obj.asInstanceOf[ExcludedContentLabel]
   }
 }

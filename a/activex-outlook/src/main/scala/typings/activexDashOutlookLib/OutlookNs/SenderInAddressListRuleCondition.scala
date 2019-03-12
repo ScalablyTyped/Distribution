@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.SenderInAddressListRuleCondition")
 @js.native
 class SenderInAddressListRuleCondition protected () extends js.Object {
-  var AddressList: AddressList = js.native
-  val Application: Application = js.native
+  var AddressList: activexDashOutlookLib.OutlookNs.AddressList = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   val ConditionType: OlRuleConditionType = js.native
   var Enabled: scala.Boolean = js.native

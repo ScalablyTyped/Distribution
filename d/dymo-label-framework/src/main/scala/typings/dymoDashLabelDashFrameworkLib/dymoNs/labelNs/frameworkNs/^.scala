@@ -15,16 +15,12 @@ object ^ extends js.Object {
   	 */
   def addPrinterUri(printerUri: java.lang.String): scala.Unit = js.native
   def addPrinterUri(printerUri: java.lang.String, location: java.lang.String): scala.Unit = js.native
+  def addPrinterUri(printerUri: java.lang.String, location: java.lang.String, successCallback: AddPrinterUriCallback): scala.Unit = js.native
   def addPrinterUri(
     printerUri: java.lang.String,
     location: java.lang.String,
-    successCallback: dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.AddPrinterUriCallback
-  ): scala.Unit = js.native
-  def addPrinterUri(
-    printerUri: java.lang.String,
-    location: java.lang.String,
-    successCallback: dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.AddPrinterUriCallback,
-    errorCallback: dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.AddPrinterUriCallback
+    successCallback: AddPrinterUriCallback,
+    errorCallback: AddPrinterUriCallback
   ): scala.Unit = js.native
   /** Checks that the browser enviroment is suitable for the Framework. */
   def checkEnvironment(): dymoDashLabelDashFrameworkLib.Anon_ErrorDetails = js.native
@@ -35,7 +31,7 @@ object ^ extends js.Object {
   	 * @param params A JavaScript object with the following properties
   	 *   (not all properties must be defined; if a property is not defined, a default value is used)
   	 */
-  def createLabelRenderParamsXml(params: dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.CreateLabelRenderParamsXmlParams): java.lang.String = js.native
+  def createLabelRenderParamsXml(params: CreateLabelRenderParamsXmlParams): java.lang.String = js.native
   /**
   	 * Creates an XML string suitable to to pass to the dymo.label.framework.printLabel function
   	 * as printParamsXml parameter. Created print parameters are for printing to LabelWriter printers.
@@ -44,9 +40,7 @@ object ^ extends js.Object {
   	 * @param params A JavaScript object with the following properties
   	 *   (not all properties must be defined; if a property is not defined, a default value is used)
   	 */
-  def createLabelWriterPrintParamsXml(
-    params: dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.CreateLabelWriterPrintParamsXmlParams
-  ): java.lang.String = js.native
+  def createLabelWriterPrintParamsXml(params: CreateLabelWriterPrintParamsXmlParams): java.lang.String = js.native
   /**
   	 * Creates an XML string suitable to pass to the dymo.label.framework.printLabel function as printParamsXml parameter. Created print parameters are for printing to Tape printers.
   	 * Returns an XML string.
@@ -54,22 +48,22 @@ object ^ extends js.Object {
   	 * @param params A JavaScript object with the following properties
   	 *   (not all properties must be defined; if a property is not defined, a default value is used)
   	 */
-  def createTapePrintParamsXml(params: dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.CreateTapePrintParamsXmlParams): java.lang.String = js.native
+  def createTapePrintParamsXml(params: CreateTapePrintParamsXmlParams): java.lang.String = js.native
   /**
   	 * Convenience method (overload of getPrinters) to get a list of all printers of type "LabelWriterPrinter".
   	 */
-  def getLabelWriterPrinters(): js.Array[dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.PrinterInfo] = js.native
+  def getLabelWriterPrinters(): js.Array[PrinterInfo] = js.native
   /**
   	 * Gets a list of all printers supported by the DYMO Label Framework.
   	 * Results are returned in an array-like object.
   	 * Each item is of the type dymo.label.framework.PrinterInfo.
   	 * In addition, items can be accessed by printer name.
   	 */
-  def getPrinters(): js.Array[dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.PrinterInfo] = js.native
+  def getPrinters(): js.Array[PrinterInfo] = js.native
   /**
   	 * Convenience method (overload of getPrinters) to get a list of all printers of type "TapePrinter".
   	 */
-  def getTapePrinters(): js.Array[dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.PrinterInfo] = js.native
+  def getTapePrinters(): js.Array[PrinterInfo] = js.native
   /**
   	 * Loads an image from a URL or file and returns it as a base64-encoded PNG stream.
   	 * The loaded image is not necessarily in PNG format.
@@ -99,7 +93,7 @@ object ^ extends js.Object {
   	 * 
   	 * @returns Returns Label object; provides label manipulation methods.
   	 */
-  def openLabelFile(fileName: java.lang.String): dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.ILabel = js.native
+  def openLabelFile(fileName: java.lang.String): ILabel = js.native
   /**
   	 * Loads label content from an XML stream/string.
   	 * Note: This is the preferred way to load/open label files.
@@ -108,7 +102,7 @@ object ^ extends js.Object {
   	 * @param labelXml The label definition as an XML string.
   	 * @returns Label object.
   	 */
-  def openLabelXml(labelXml: java.lang.String): dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.ILabel = js.native
+  def openLabelXml(labelXml: java.lang.String): ILabel = js.native
   /**
   	 * Prints one or more labels.
   	 *
@@ -143,7 +137,7 @@ object ^ extends js.Object {
     printParamsXml: java.lang.String,
     labelXml: java.lang.String,
     labelSetXml: java.lang.String
-  ): dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.PrintJob = js.native
+  ): PrintJob = js.native
   /**
   	 * Prints a label and runs status checking in a loop
   	 *
@@ -165,13 +159,9 @@ object ^ extends js.Object {
     printParamsXml: java.lang.String,
     labelXml: java.lang.String,
     labelSetXml: java.lang.String,
-    statusCallback: js.Function2[
-      /* printJob */ dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.PrintJob, 
-      /* printJobStatusInfo */ dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.PrintJobStatusInfo, 
-      scala.Boolean
-    ],
+    statusCallback: js.Function2[/* printJob */ PrintJob, /* printJobStatusInfo */ PrintJobStatusInfo, scala.Boolean],
     pollInterval: scala.Double
-  ): dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.PrintJob = js.native
+  ): PrintJob = js.native
   /**
   	 * Undocumented, removed, see http://developers.dymo.com/2013/08/14/dymo-sdk-qa/#comment-27119
   	 */

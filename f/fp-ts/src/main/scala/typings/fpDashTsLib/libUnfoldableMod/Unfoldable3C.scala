@@ -18,13 +18,9 @@ object Unfoldable3C {
     URI: F,
     _L: L,
     _U: U,
-    unfoldr: js.Function2[
-      js.Any, 
-      js.Function1[js.Any, fpDashTsLib.libOptionMod.Option[js.Tuple2[js.Any, js.Any]]], 
-      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
-    ]
+    unfoldr: (js.Any, js.Function1[js.Any, fpDashTsLib.libOptionMod.Option[js.Tuple2[js.Any, js.Any]]]) => fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
   ): Unfoldable3C[F, U, L] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], unfoldr = unfoldr)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], unfoldr = js.Any.fromFunction2(unfoldr))
   
     __obj.asInstanceOf[Unfoldable3C[F, U, L]]
   }

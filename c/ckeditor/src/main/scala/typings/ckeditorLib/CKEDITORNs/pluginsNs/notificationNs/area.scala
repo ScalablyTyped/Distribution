@@ -16,13 +16,13 @@ trait area extends js.Object {
 object area {
   @scala.inline
   def apply(
-    add: js.Function1[ckeditorLib.CKEDITORNs.pluginsNs.notification, scala.Unit],
+    add: ckeditorLib.CKEDITORNs.pluginsNs.notification => scala.Unit,
     editor: ckeditorLib.CKEDITORNs.editor,
     element: ckeditorLib.CKEDITORNs.domNs.element,
     notifications: js.Array[ckeditorLib.CKEDITORNs.pluginsNs.notification],
-    remove: js.Function1[ckeditorLib.CKEDITORNs.pluginsNs.notification, scala.Unit]
+    remove: ckeditorLib.CKEDITORNs.pluginsNs.notification => scala.Unit
   ): area = {
-    val __obj = js.Dynamic.literal(add = add, editor = editor, element = element, notifications = notifications, remove = remove)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), editor = editor, element = element, notifications = notifications, remove = js.Any.fromFunction1(remove))
   
     __obj.asInstanceOf[area]
   }

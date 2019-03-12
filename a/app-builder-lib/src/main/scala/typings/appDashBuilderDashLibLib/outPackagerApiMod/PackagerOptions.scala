@@ -22,9 +22,9 @@ trait PackagerOptions extends js.Object {
   val prepackaged: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var projectDir: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var targets: js.UndefOr[
-    nodeLib.Map[
+    stdLib.Map[
       appDashBuilderDashLibLib.outCoreMod.Platform, 
-      nodeLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
+      stdLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
     ]
   ] = js.undefined
   var win: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -34,28 +34,24 @@ object PackagerOptions {
   @scala.inline
   def apply(
     config: appDashBuilderDashLibLib.outConfigurationMod.Configuration | java.lang.String = null,
-    effectiveOptionComputed: js.Function1[/* options */ js.Any, js.Promise[scala.Boolean]] = null,
+    effectiveOptionComputed: /* options */ js.Any => js.Promise[scala.Boolean] = null,
     linux: js.Array[java.lang.String] = null,
     mac: js.Array[java.lang.String] = null,
-    platformPackagerFactory: js.Function2[
-      /* info */ appDashBuilderDashLibLib.outPackagerMod.Packager, 
-      /* platform */ appDashBuilderDashLibLib.outCoreMod.Platform, 
-      appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_]
-    ] = null,
+    platformPackagerFactory: (/* info */ appDashBuilderDashLibLib.outPackagerMod.Packager, /* platform */ appDashBuilderDashLibLib.outCoreMod.Platform) => appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_] = null,
     prepackaged: java.lang.String = null,
     projectDir: java.lang.String = null,
-    targets: nodeLib.Map[
+    targets: stdLib.Map[
       appDashBuilderDashLibLib.outCoreMod.Platform, 
-      nodeLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
+      stdLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
     ] = null,
     win: js.Array[java.lang.String] = null
   ): PackagerOptions = {
     val __obj = js.Dynamic.literal()
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (effectiveOptionComputed != null) __obj.updateDynamic("effectiveOptionComputed")(effectiveOptionComputed)
+    if (effectiveOptionComputed != null) __obj.updateDynamic("effectiveOptionComputed")(js.Any.fromFunction1(effectiveOptionComputed))
     if (linux != null) __obj.updateDynamic("linux")(linux)
     if (mac != null) __obj.updateDynamic("mac")(mac)
-    if (platformPackagerFactory != null) __obj.updateDynamic("platformPackagerFactory")(platformPackagerFactory)
+    if (platformPackagerFactory != null) __obj.updateDynamic("platformPackagerFactory")(js.Any.fromFunction2(platformPackagerFactory))
     if (prepackaged != null) __obj.updateDynamic("prepackaged")(prepackaged)
     if (projectDir != null) __obj.updateDynamic("projectDir")(projectDir)
     if (targets != null) __obj.updateDynamic("targets")(targets)

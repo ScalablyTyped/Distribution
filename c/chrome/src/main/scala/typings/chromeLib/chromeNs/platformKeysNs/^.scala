@@ -18,16 +18,13 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   def selectClientCertificates(
-    details: chromeLib.chromeNs.platformKeysNs.ClientCertificateSelectDetails,
-    callback: js.Function1[/* matches */ js.Array[chromeLib.chromeNs.platformKeysNs.Match], scala.Unit]
+    details: ClientCertificateSelectDetails,
+    callback: js.Function1[/* matches */ js.Array[Match], scala.Unit]
   ): scala.Unit = js.native
   def subtleCrypto(): stdLib.SubtleCrypto = js.native
   def verifyTLSServerCertificate(
-    details: chromeLib.chromeNs.platformKeysNs.ServerCertificateVerificationDetails,
-    callback: js.Function1[
-      /* result */ chromeLib.chromeNs.platformKeysNs.ServerCertificateVerificationResult, 
-      scala.Unit
-    ]
+    details: ServerCertificateVerificationDetails,
+    callback: js.Function1[/* result */ ServerCertificateVerificationResult, scala.Unit]
   ): scala.Unit = js.native
 }
 

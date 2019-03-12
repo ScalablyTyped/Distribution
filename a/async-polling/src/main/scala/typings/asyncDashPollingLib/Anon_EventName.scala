@@ -14,15 +14,11 @@ trait Anon_EventName extends js.Object {
 object Anon_EventName {
   @scala.inline
   def apply(
-    on: js.Function2[
-      asyncDashPollingLib.asyncDashPollingMod.AsyncPollingNs.EventName, 
-      js.Function, 
-      js.Any
-    ],
-    run: js.Function0[js.Any],
-    stop: js.Function0[js.Any]
+    on: (asyncDashPollingLib.asyncDashPollingMod.AsyncPollingNs.EventName, js.Function) => js.Any,
+    run: () => js.Any,
+    stop: () => js.Any
   ): Anon_EventName = {
-    val __obj = js.Dynamic.literal(on = on, run = run, stop = stop)
+    val __obj = js.Dynamic.literal(on = js.Any.fromFunction2(on), run = js.Any.fromFunction0(run), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[Anon_EventName]
   }

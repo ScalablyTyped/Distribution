@@ -13,7 +13,7 @@ object ^ extends js.Object {
   def persistStore(
     store: js.Any,
     persistorOptions: reduxDashPersistLib.esTypesMod.PersistorOptions,
-    callback: reduxDashPersistLib.esPersistStoreMod.BoostrappedCallback
+    callback: BoostrappedCallback
   ): reduxDashPersistLib.esTypesMod.Persistor = js.native
 }
 

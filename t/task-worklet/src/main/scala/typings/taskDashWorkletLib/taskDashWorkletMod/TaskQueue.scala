@@ -13,10 +13,10 @@ trait TaskQueue extends js.Object {
 object TaskQueue {
   @scala.inline
   def apply(
-    addModule: js.Function1[java.lang.String, js.Promise[scala.Unit]],
-    postTask: js.Function2[java.lang.String, /* repeated */ js.Any, Task[_]]
+    addModule: java.lang.String => js.Promise[scala.Unit],
+    postTask: (java.lang.String, /* repeated */ js.Any) => Task[_]
   ): TaskQueue = {
-    val __obj = js.Dynamic.literal(addModule = addModule, postTask = postTask)
+    val __obj = js.Dynamic.literal(addModule = js.Any.fromFunction1(addModule), postTask = js.Any.fromFunction2(postTask))
   
     __obj.asInstanceOf[TaskQueue]
   }

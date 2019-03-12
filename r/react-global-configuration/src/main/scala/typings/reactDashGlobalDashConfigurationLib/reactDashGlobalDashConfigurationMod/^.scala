@@ -13,9 +13,6 @@ object ^ extends js.Object {
   def get[Value](key: java.lang.String, fallbackValue: Value): Value = js.native
   def serialize(): java.lang.String = js.native
   def set(newConfiguration: js.Any): scala.Unit = js.native
-  def set(
-    newConfiguration: js.Any,
-    newOptions: reactDashGlobalDashConfigurationLib.reactDashGlobalDashConfigurationMod.Options
-  ): scala.Unit = js.native
+  def set(newConfiguration: js.Any, newOptions: Options): scala.Unit = js.native
 }
 

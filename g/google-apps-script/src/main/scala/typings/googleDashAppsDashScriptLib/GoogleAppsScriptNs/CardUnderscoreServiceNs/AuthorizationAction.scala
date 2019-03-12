@@ -11,8 +11,8 @@ trait AuthorizationAction extends js.Object {
 
 object AuthorizationAction {
   @scala.inline
-  def apply(setAuthorizationUrl: js.Function1[java.lang.String, AuthorizationAction]): AuthorizationAction = {
-    val __obj = js.Dynamic.literal(setAuthorizationUrl = setAuthorizationUrl)
+  def apply(setAuthorizationUrl: java.lang.String => AuthorizationAction): AuthorizationAction = {
+    val __obj = js.Dynamic.literal(setAuthorizationUrl = js.Any.fromFunction1(setAuthorizationUrl))
   
     __obj.asInstanceOf[AuthorizationAction]
   }

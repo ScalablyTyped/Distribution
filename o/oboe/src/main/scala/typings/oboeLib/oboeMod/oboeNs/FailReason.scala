@@ -9,7 +9,7 @@ trait FailReason extends js.Object {
   var body: js.UndefOr[java.lang.String] = js.undefined
   var jsonBody: js.UndefOr[js.Object] = js.undefined
   var statusCode: js.UndefOr[scala.Double] = js.undefined
-  var thrown: js.UndefOr[nodeLib.Error] = js.undefined
+  var thrown: js.UndefOr[stdLib.Error] = js.undefined
 }
 
 object FailReason {
@@ -18,7 +18,7 @@ object FailReason {
     body: java.lang.String = null,
     jsonBody: js.Object = null,
     statusCode: scala.Int | scala.Double = null,
-    thrown: nodeLib.Error = null
+    thrown: stdLib.Error = null
   ): FailReason = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body)

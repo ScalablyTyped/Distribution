@@ -10,10 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val CreateMode: nodeDashZookeeperDashClientLib.Anon_EPHEMERAL = js.native
   val Permission: nodeDashZookeeperDashClientLib.Anon_ADMIN = js.native
-  def createClient(connectionString: java.lang.String): nodeDashZookeeperDashClientLib.nodeDashZookeeperDashClientMod.Client = js.native
-  def createClient(
-    connectionString: java.lang.String,
-    options: stdLib.Partial[nodeDashZookeeperDashClientLib.nodeDashZookeeperDashClientMod.Option]
-  ): nodeDashZookeeperDashClientLib.nodeDashZookeeperDashClientMod.Client = js.native
+  def createClient(connectionString: java.lang.String): Client = js.native
+  def createClient(connectionString: java.lang.String, options: stdLib.Partial[Option]): Client = js.native
 }
 

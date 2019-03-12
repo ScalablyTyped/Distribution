@@ -746,7 +746,7 @@ package object underscoreNs {
   type LodashIsNil = js.Function1[/* value */ js.Any, scala.Boolean]
   type LodashIsNull = js.Function1[/* value */ js.Any, /* is null */ scala.Boolean]
   type LodashIsNumber = js.Function1[/* value */ js.Any, /* is number */ scala.Boolean]
-  type LodashIsObject = js.Function1[/* value */ js.Any, scala.Boolean]
+  type LodashIsObject = js.Function1[/* value */ js.Any, /* is object */ scala.Boolean]
   type LodashIsObjectLike = js.Function1[/* value */ js.Any, scala.Boolean]
   type LodashIsPlainObject = js.Function1[/* value */ js.Any, scala.Boolean]
   type LodashIsRegExp = js.Function1[/* value */ js.Any, /* is std.RegExp */ scala.Boolean]

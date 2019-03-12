@@ -23,21 +23,21 @@ trait ChronoField extends js.Object {
 object ChronoField {
   @scala.inline
   def apply(
-    baseUnit: js.Function0[scala.Double],
-    checkValidIntValue: js.Function1[scala.Double, scala.Double],
-    checkValidValue: js.Function1[scala.Double, js.Any],
-    displayName: js.Function0[java.lang.String],
-    equals: js.Function1[js.Any, scala.Boolean],
-    getFrom: js.Function1[TemporalAccessor, scala.Double],
-    isDateBased: js.Function0[scala.Boolean],
-    isTimeBased: js.Function0[scala.Boolean],
-    name: js.Function0[java.lang.String],
-    range: js.Function0[ValueRange],
-    rangeRefinedBy: js.Function1[TemporalAccessor, ValueRange],
-    rangeUnit: js.Function0[scala.Double],
-    toString: js.Function0[java.lang.String]
+    baseUnit: () => scala.Double,
+    checkValidIntValue: scala.Double => scala.Double,
+    checkValidValue: scala.Double => js.Any,
+    displayName: () => java.lang.String,
+    equals: js.Any => scala.Boolean,
+    getFrom: TemporalAccessor => scala.Double,
+    isDateBased: () => scala.Boolean,
+    isTimeBased: () => scala.Boolean,
+    name: () => java.lang.String,
+    range: () => ValueRange,
+    rangeRefinedBy: TemporalAccessor => ValueRange,
+    rangeUnit: () => scala.Double,
+    toString: () => java.lang.String
   ): ChronoField = {
-    val __obj = js.Dynamic.literal(baseUnit = baseUnit, checkValidIntValue = checkValidIntValue, checkValidValue = checkValidValue, displayName = displayName, equals = equals, getFrom = getFrom, isDateBased = isDateBased, isTimeBased = isTimeBased, name = name, range = range, rangeRefinedBy = rangeRefinedBy, rangeUnit = rangeUnit, toString = toString)
+    val __obj = js.Dynamic.literal(baseUnit = js.Any.fromFunction0(baseUnit), checkValidIntValue = js.Any.fromFunction1(checkValidIntValue), checkValidValue = js.Any.fromFunction1(checkValidValue), displayName = js.Any.fromFunction0(displayName), equals = js.Any.fromFunction1(equals), getFrom = js.Any.fromFunction1(getFrom), isDateBased = js.Any.fromFunction0(isDateBased), isTimeBased = js.Any.fromFunction0(isTimeBased), name = js.Any.fromFunction0(name), range = js.Any.fromFunction0(range), rangeRefinedBy = js.Any.fromFunction1(rangeRefinedBy), rangeUnit = js.Any.fromFunction0(rangeUnit), toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[ChronoField]
   }

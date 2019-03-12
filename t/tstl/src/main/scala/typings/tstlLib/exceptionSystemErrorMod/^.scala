@@ -11,7 +11,7 @@ object ^ extends js.Object {
   var system_error: org.scalablytyped.runtime.Instantiable2[
     /* code */ tstlLib.exceptionErrorCodeMod.ErrorCode, 
     /* message */ js.UndefOr[/* message */ java.lang.String], 
-    tstlLib.exceptionSystemErrorMod.SystemError
+    SystemError
   ] = js.native
 }
 

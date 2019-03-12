@@ -14,11 +14,11 @@ trait IImageEncodingPropertiesStatics extends js.Object {
 object IImageEncodingPropertiesStatics {
   @scala.inline
   def apply(
-    createJpeg: js.Function0[ImageEncodingProperties],
-    createJpegXR: js.Function0[ImageEncodingProperties],
-    createPng: js.Function0[ImageEncodingProperties]
+    createJpeg: () => ImageEncodingProperties,
+    createJpegXR: () => ImageEncodingProperties,
+    createPng: () => ImageEncodingProperties
   ): IImageEncodingPropertiesStatics = {
-    val __obj = js.Dynamic.literal(createJpeg = createJpeg, createJpegXR = createJpegXR, createPng = createPng)
+    val __obj = js.Dynamic.literal(createJpeg = js.Any.fromFunction0(createJpeg), createJpegXR = js.Any.fromFunction0(createJpegXR), createPng = js.Any.fromFunction0(createPng))
   
     __obj.asInstanceOf[IImageEncodingPropertiesStatics]
   }

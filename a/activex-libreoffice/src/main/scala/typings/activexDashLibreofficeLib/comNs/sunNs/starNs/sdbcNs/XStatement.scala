@@ -61,15 +61,15 @@ object XStatement {
   @scala.inline
   def apply(
     Connection: XConnection,
-    acquire: js.Function0[scala.Unit],
-    execute: js.Function1[java.lang.String, scala.Boolean],
-    executeQuery: js.Function1[java.lang.String, XResultSet],
-    executeUpdate: js.Function1[java.lang.String, scala.Double],
-    getConnection: js.Function0[XConnection],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    execute: java.lang.String => scala.Boolean,
+    executeQuery: java.lang.String => XResultSet,
+    executeUpdate: java.lang.String => scala.Double,
+    getConnection: () => XConnection,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XStatement = {
-    val __obj = js.Dynamic.literal(Connection = Connection, acquire = acquire, execute = execute, executeQuery = executeQuery, executeUpdate = executeUpdate, getConnection = getConnection, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Connection = Connection, acquire = js.Any.fromFunction0(acquire), execute = js.Any.fromFunction1(execute), executeQuery = js.Any.fromFunction1(executeQuery), executeUpdate = js.Any.fromFunction1(executeUpdate), getConnection = js.Any.fromFunction0(getConnection), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XStatement]
   }

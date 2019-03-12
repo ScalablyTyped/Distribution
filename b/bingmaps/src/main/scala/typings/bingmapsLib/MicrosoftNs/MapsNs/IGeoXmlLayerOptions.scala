@@ -25,7 +25,7 @@ object IGeoXmlLayerOptions {
     autoUpdateMapView: js.UndefOr[scala.Boolean] = js.undefined,
     captureGpxPathWaypoints: js.UndefOr[scala.Boolean] = js.undefined,
     defaultStyles: IStylesOptions = null,
-    error: js.Function1[/* msg */ java.lang.String, scala.Unit] = null,
+    error: /* msg */ java.lang.String => scala.Unit = null,
     ignoreVisibility: js.UndefOr[scala.Boolean] = js.undefined,
     infoboxOptions: IInfoboxOptions = null,
     layerName: java.lang.String = null,
@@ -40,7 +40,7 @@ object IGeoXmlLayerOptions {
     if (!js.isUndefined(autoUpdateMapView)) __obj.updateDynamic("autoUpdateMapView")(autoUpdateMapView)
     if (!js.isUndefined(captureGpxPathWaypoints)) __obj.updateDynamic("captureGpxPathWaypoints")(captureGpxPathWaypoints)
     if (defaultStyles != null) __obj.updateDynamic("defaultStyles")(defaultStyles)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (!js.isUndefined(ignoreVisibility)) __obj.updateDynamic("ignoreVisibility")(ignoreVisibility)
     if (infoboxOptions != null) __obj.updateDynamic("infoboxOptions")(infoboxOptions)
     if (layerName != null) __obj.updateDynamic("layerName")(layerName)

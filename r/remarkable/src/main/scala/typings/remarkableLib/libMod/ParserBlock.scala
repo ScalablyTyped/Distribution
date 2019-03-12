@@ -22,16 +22,10 @@ trait ParserBlock extends js.Object {
 object ParserBlock {
   @scala.inline
   def apply(
-    parse: js.Function4[
-      java.lang.String, 
-      remarkableLib.libMod.RemarkableNs.Options, 
-      remarkableLib.libMod.RemarkableNs.Env, 
-      js.Array[remarkableLib.libMod.RemarkableNs.Token], 
-      scala.Unit
-    ],
-    tokenize: js.Function3[remarkableLib.libMod.RemarkableNs.StateBlock, scala.Double, scala.Double, scala.Unit]
+    parse: (java.lang.String, remarkableLib.libMod.RemarkableNs.Options, remarkableLib.libMod.RemarkableNs.Env, js.Array[remarkableLib.libMod.RemarkableNs.Token]) => scala.Unit,
+    tokenize: (remarkableLib.libMod.RemarkableNs.StateBlock, scala.Double, scala.Double) => scala.Unit
   ): ParserBlock = {
-    val __obj = js.Dynamic.literal(parse = parse, tokenize = tokenize)
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction4(parse), tokenize = js.Any.fromFunction3(tokenize))
   
     __obj.asInstanceOf[ParserBlock]
   }

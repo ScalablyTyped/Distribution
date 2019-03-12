@@ -21,17 +21,14 @@ trait Request extends js.Object {
 object Request {
   @scala.inline
   def apply(
-    getConnection: js.Function1[
-      /* callback */ js.Function2[
-        /* err */ expressDashMyconnectionLib.mysqlNs.MysqlError, 
-        /* connection */ expressDashMyconnectionLib.mysqlNs.Connection, 
-        scala.Unit
-      ], 
+    getConnection: /* callback */ js.Function2[
+      /* err */ expressDashMyconnectionLib.mysqlNs.MysqlError, 
+      /* connection */ expressDashMyconnectionLib.mysqlNs.Connection, 
       scala.Unit
-    ] = null
+    ] => scala.Unit = null
   ): Request = {
     val __obj = js.Dynamic.literal()
-    if (getConnection != null) __obj.updateDynamic("getConnection")(getConnection)
+    if (getConnection != null) __obj.updateDynamic("getConnection")(js.Any.fromFunction1(getConnection))
     __obj.asInstanceOf[Request]
   }
 }

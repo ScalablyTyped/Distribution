@@ -52,17 +52,17 @@ trait Size extends js.Object {
 object Size {
   @scala.inline
   def apply(
-    copy: js.Function0[Size],
-    equalTo: js.Function2[scala.Double, scala.Double, scala.Boolean],
-    equals: js.Function1[Size, scala.Boolean],
-    equalsApprox: js.Function1[Size, scala.Boolean],
+    copy: () => Size,
+    equalTo: (scala.Double, scala.Double) => scala.Boolean,
+    equals: Size => scala.Boolean,
+    equalsApprox: Size => scala.Boolean,
     height: scala.Double,
-    isReal: js.Function0[scala.Boolean],
-    set: js.Function1[Size, Size],
-    setTo: js.Function2[scala.Double, scala.Double, Size],
+    isReal: () => scala.Boolean,
+    set: Size => Size,
+    setTo: (scala.Double, scala.Double) => Size,
     width: scala.Double
   ): Size = {
-    val __obj = js.Dynamic.literal(copy = copy, equalTo = equalTo, equals = equals, equalsApprox = equalsApprox, height = height, isReal = isReal, set = set, setTo = setTo, width = width)
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), equalTo = js.Any.fromFunction2(equalTo), equals = js.Any.fromFunction1(equals), equalsApprox = js.Any.fromFunction1(equalsApprox), height = height, isReal = js.Any.fromFunction0(isReal), set = js.Any.fromFunction1(set), setTo = js.Any.fromFunction2(setTo), width = width)
   
     __obj.asInstanceOf[Size]
   }

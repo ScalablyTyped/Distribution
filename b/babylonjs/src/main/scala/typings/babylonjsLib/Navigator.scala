@@ -33,31 +33,16 @@ object Navigator {
   @scala.inline
   def apply(
     activeVRDisplays: js.Array[VRDisplay],
-    getVRDisplays: js.Function0[js.Promise[js.Array[VRDisplay]]],
-    mozGetUserMedia: js.Function3[
-      stdLib.MediaStreamConstraints, 
-      stdLib.NavigatorUserMediaSuccessCallback, 
-      stdLib.NavigatorUserMediaErrorCallback, 
-      scala.Unit
-    ],
-    mozGetVRDevices: js.Function1[js.Any, js.Any],
-    msGetGamepads: js.Function0[js.Array[Gamepad]],
-    msGetUserMedia: js.Function3[
-      stdLib.MediaStreamConstraints, 
-      stdLib.NavigatorUserMediaSuccessCallback, 
-      stdLib.NavigatorUserMediaErrorCallback, 
-      scala.Unit
-    ],
-    webkitGamepads: js.Function0[js.Array[Gamepad]],
-    webkitGetGamepads: js.Function0[js.Array[Gamepad]],
-    webkitGetUserMedia: js.Function3[
-      stdLib.MediaStreamConstraints, 
-      stdLib.NavigatorUserMediaSuccessCallback, 
-      stdLib.NavigatorUserMediaErrorCallback, 
-      scala.Unit
-    ]
+    getVRDisplays: () => js.Promise[js.Array[VRDisplay]],
+    mozGetUserMedia: (stdLib.MediaStreamConstraints, stdLib.NavigatorUserMediaSuccessCallback, stdLib.NavigatorUserMediaErrorCallback) => scala.Unit,
+    mozGetVRDevices: js.Any => js.Any,
+    msGetGamepads: () => js.Array[Gamepad],
+    msGetUserMedia: (stdLib.MediaStreamConstraints, stdLib.NavigatorUserMediaSuccessCallback, stdLib.NavigatorUserMediaErrorCallback) => scala.Unit,
+    webkitGamepads: () => js.Array[Gamepad],
+    webkitGetGamepads: () => js.Array[Gamepad],
+    webkitGetUserMedia: (stdLib.MediaStreamConstraints, stdLib.NavigatorUserMediaSuccessCallback, stdLib.NavigatorUserMediaErrorCallback) => scala.Unit
   ): Navigator = {
-    val __obj = js.Dynamic.literal(activeVRDisplays = activeVRDisplays, getVRDisplays = getVRDisplays, mozGetUserMedia = mozGetUserMedia, mozGetVRDevices = mozGetVRDevices, msGetGamepads = msGetGamepads, msGetUserMedia = msGetUserMedia, webkitGamepads = webkitGamepads, webkitGetGamepads = webkitGetGamepads, webkitGetUserMedia = webkitGetUserMedia)
+    val __obj = js.Dynamic.literal(activeVRDisplays = activeVRDisplays, getVRDisplays = js.Any.fromFunction0(getVRDisplays), mozGetUserMedia = js.Any.fromFunction3(mozGetUserMedia), mozGetVRDevices = js.Any.fromFunction1(mozGetVRDevices), msGetGamepads = js.Any.fromFunction0(msGetGamepads), msGetUserMedia = js.Any.fromFunction3(msGetUserMedia), webkitGamepads = js.Any.fromFunction0(webkitGamepads), webkitGetGamepads = js.Any.fromFunction0(webkitGetGamepads), webkitGetUserMedia = js.Any.fromFunction3(webkitGetUserMedia))
   
     __obj.asInstanceOf[Navigator]
   }

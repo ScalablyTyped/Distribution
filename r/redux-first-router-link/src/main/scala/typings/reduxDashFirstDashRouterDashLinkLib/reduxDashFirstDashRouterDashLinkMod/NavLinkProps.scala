@@ -28,11 +28,7 @@ object NavLinkProps {
     activeStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     ariaCurrent: java.lang.String = null,
     exact: js.UndefOr[scala.Boolean] = js.undefined,
-    isActive: js.Function2[
-      /* match */ Match[js.Object], 
-      /* location */ reduxDashFirstDashRouterLib.reduxDashFirstDashRouterMod.Location, 
-      scala.Boolean
-    ] = null,
+    isActive: (/* match */ Match[js.Object], /* location */ reduxDashFirstDashRouterLib.reduxDashFirstDashRouterMod.Location) => scala.Boolean = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined
   ): NavLinkProps = {
     val __obj = js.Dynamic.literal()
@@ -41,7 +37,7 @@ object NavLinkProps {
     if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle)
     if (ariaCurrent != null) __obj.updateDynamic("ariaCurrent")(ariaCurrent)
     if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
-    if (isActive != null) __obj.updateDynamic("isActive")(isActive)
+    if (isActive != null) __obj.updateDynamic("isActive")(js.Any.fromFunction2(isActive))
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
     __obj.asInstanceOf[NavLinkProps]
   }

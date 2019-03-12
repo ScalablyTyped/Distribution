@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val default: atBabelTemplateLib.DefaultTemplateBuilder = js.native
-  val expression: atBabelTemplateLib.atBabelTemplateMod.TemplateBuilder[atBabelTypesLib.atBabelTypesMod.Expression] = js.native
-  val program: atBabelTemplateLib.atBabelTemplateMod.TemplateBuilder[atBabelTypesLib.atBabelTypesMod.Program] = js.native
-  val smart: atBabelTemplateLib.atBabelTemplateMod.TemplateBuilder[
+  val expression: TemplateBuilder[atBabelTypesLib.atBabelTypesMod.Expression] = js.native
+  val program: TemplateBuilder[atBabelTypesLib.atBabelTypesMod.Program] = js.native
+  val smart: TemplateBuilder[
     atBabelTypesLib.atBabelTypesMod.Statement | js.Array[atBabelTypesLib.atBabelTypesMod.Statement]
   ] = js.native
-  val statement: atBabelTemplateLib.atBabelTemplateMod.TemplateBuilder[atBabelTypesLib.atBabelTypesMod.Statement] = js.native
-  val statements: atBabelTemplateLib.atBabelTemplateMod.TemplateBuilder[js.Array[atBabelTypesLib.atBabelTypesMod.Statement]] = js.native
+  val statement: TemplateBuilder[atBabelTypesLib.atBabelTypesMod.Statement] = js.native
+  val statements: TemplateBuilder[js.Array[atBabelTypesLib.atBabelTypesMod.Statement]] = js.native
 }
 

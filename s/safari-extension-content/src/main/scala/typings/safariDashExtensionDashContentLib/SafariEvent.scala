@@ -62,13 +62,13 @@ object SafariEvent {
     currentTarget: SafariEventTarget,
     defaultPrevented: scala.Boolean,
     eventPhase: scala.Double,
-    preventDefault: js.Function0[scala.Unit],
-    stopPropagation: js.Function0[scala.Unit],
+    preventDefault: () => scala.Unit,
+    stopPropagation: () => scala.Unit,
     target: SafariEventTarget,
     timestamp: scala.Double,
     `type`: java.lang.String
   ): SafariEvent = {
-    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelable = cancelable, currentTarget = currentTarget, defaultPrevented = defaultPrevented, eventPhase = eventPhase, preventDefault = preventDefault, stopPropagation = stopPropagation, target = target, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelable = cancelable, currentTarget = currentTarget, defaultPrevented = defaultPrevented, eventPhase = eventPhase, preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target, timestamp = timestamp)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SafariEvent]
   }

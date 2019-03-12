@@ -24,13 +24,13 @@ trait XSEInitializer
 object XSEInitializer {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createSecurityContext: js.Function1[java.lang.String, XXMLSecurityContext],
-    freeSecurityContext: js.Function1[XXMLSecurityContext, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createSecurityContext: java.lang.String => XXMLSecurityContext,
+    freeSecurityContext: XXMLSecurityContext => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSEInitializer = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createSecurityContext = createSecurityContext, freeSecurityContext = freeSecurityContext, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createSecurityContext = js.Any.fromFunction1(createSecurityContext), freeSecurityContext = js.Any.fromFunction1(freeSecurityContext), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSEInitializer]
   }

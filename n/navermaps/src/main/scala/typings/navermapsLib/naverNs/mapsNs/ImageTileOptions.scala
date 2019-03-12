@@ -21,8 +21,8 @@ object ImageTileOptions {
   @scala.inline
   def apply(
     urls: js.Array[java.lang.String],
-    imgonerror: js.Function0[_] = null,
-    imgonload: js.Function0[_] = null,
+    imgonerror: () => _ = null,
+    imgonload: () => _ = null,
     offset: Point = null,
     opacity: scala.Int | scala.Double = null,
     pane: stdLib.HTMLElement = null,
@@ -31,8 +31,8 @@ object ImageTileOptions {
     zIndex: scala.Int | scala.Double = null
   ): ImageTileOptions = {
     val __obj = js.Dynamic.literal(urls = urls)
-    if (imgonerror != null) __obj.updateDynamic("imgonerror")(imgonerror)
-    if (imgonload != null) __obj.updateDynamic("imgonload")(imgonload)
+    if (imgonerror != null) __obj.updateDynamic("imgonerror")(js.Any.fromFunction0(imgonerror))
+    if (imgonload != null) __obj.updateDynamic("imgonload")(js.Any.fromFunction0(imgonload))
     if (offset != null) __obj.updateDynamic("offset")(offset)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (pane != null) __obj.updateDynamic("pane")(pane)

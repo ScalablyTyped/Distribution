@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation._
 object AccordionTitleProps {
   @scala.inline
   def apply(
-    AnchorHTMLAttributes: reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement] = null,
+    AnchorHTMLAttributes: reactLib.reactMod.ReactNs.AnchorHTMLAttributes[stdLib.HTMLAnchorElement] = null,
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
     isActive: js.UndefOr[scala.Boolean] = js.undefined
   ): AccordionTitleProps = {

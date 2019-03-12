@@ -4173,7 +4173,7 @@ trait LoDashFp extends js.Object {
   def isNil(value: js.Any): scala.Boolean = js.native
   def isNull(value: js.Any): /* is null */ scala.Boolean = js.native
   def isNumber(value: js.Any): /* is number */ scala.Boolean = js.native
-  def isObject(value: js.Any): scala.Boolean = js.native
+  def isObject(value: js.Any): /* is object */ scala.Boolean = js.native
   def isObjectLike(value: js.Any): scala.Boolean = js.native
   def isPlainObject(value: js.Any): scala.Boolean = js.native
   def isRegExp(value: js.Any): /* is std.RegExp */ scala.Boolean = js.native

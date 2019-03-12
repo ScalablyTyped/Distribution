@@ -34,7 +34,7 @@ trait ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments extends ASPxCl
 object ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments {
   @scala.inline
   def apply(
-    GetCommandName: js.Function0[java.lang.String],
+    GetCommandName: () => java.lang.String,
     align: java.lang.String,
     autoPlay: scala.Boolean,
     id: java.lang.String,
@@ -45,7 +45,7 @@ object ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments {
     src: java.lang.String,
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings
   ): ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments = {
-    val __obj = js.Dynamic.literal(GetCommandName = GetCommandName, align = align, autoPlay = autoPlay, id = id, loop = loop, preloadMode = preloadMode, selectedElement = selectedElement, showPlayerControls = showPlayerControls, src = src, styleSettings = styleSettings)
+    val __obj = js.Dynamic.literal(GetCommandName = js.Any.fromFunction0(GetCommandName), align = align, autoPlay = autoPlay, id = id, loop = loop, preloadMode = preloadMode, selectedElement = selectedElement, showPlayerControls = showPlayerControls, src = src, styleSettings = styleSettings)
   
     __obj.asInstanceOf[ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments]
   }

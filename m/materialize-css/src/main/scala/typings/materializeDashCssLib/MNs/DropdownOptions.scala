@@ -84,13 +84,13 @@ object DropdownOptions {
     coverTrigger: scala.Boolean,
     hover: scala.Boolean,
     inDuration: scala.Double,
-    onCloseEnd: js.Function2[Dropdown, stdLib.Element, scala.Unit],
-    onCloseStart: js.Function2[Dropdown, stdLib.Element, scala.Unit],
-    onOpenEnd: js.Function2[Dropdown, stdLib.Element, scala.Unit],
-    onOpenStart: js.Function2[Dropdown, stdLib.Element, scala.Unit],
+    onCloseEnd: (Dropdown, stdLib.Element) => scala.Unit,
+    onCloseStart: (Dropdown, stdLib.Element) => scala.Unit,
+    onOpenEnd: (Dropdown, stdLib.Element) => scala.Unit,
+    onOpenStart: (Dropdown, stdLib.Element) => scala.Unit,
     outDuration: scala.Double
   ): DropdownOptions = {
-    val __obj = js.Dynamic.literal(alignment = alignment.asInstanceOf[js.Any], autoTrigger = autoTrigger, closeOnClick = closeOnClick, constrainWidth = constrainWidth, container = container, coverTrigger = coverTrigger, hover = hover, inDuration = inDuration, onCloseEnd = onCloseEnd, onCloseStart = onCloseStart, onOpenEnd = onOpenEnd, onOpenStart = onOpenStart, outDuration = outDuration)
+    val __obj = js.Dynamic.literal(alignment = alignment.asInstanceOf[js.Any], autoTrigger = autoTrigger, closeOnClick = closeOnClick, constrainWidth = constrainWidth, container = container, coverTrigger = coverTrigger, hover = hover, inDuration = inDuration, onCloseEnd = js.Any.fromFunction2(onCloseEnd), onCloseStart = js.Any.fromFunction2(onCloseStart), onOpenEnd = js.Any.fromFunction2(onOpenEnd), onOpenStart = js.Any.fromFunction2(onOpenStart), outDuration = outDuration)
   
     __obj.asInstanceOf[DropdownOptions]
   }

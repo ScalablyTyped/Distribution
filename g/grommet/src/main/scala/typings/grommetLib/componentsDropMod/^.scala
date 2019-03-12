@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Drop: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsDropMod.DropProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    DropProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
       reactLib.HTMLDivElement
     ]), 

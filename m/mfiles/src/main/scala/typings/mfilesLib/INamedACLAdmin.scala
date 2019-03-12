@@ -16,11 +16,11 @@ object INamedACLAdmin {
   @scala.inline
   def apply(
     AccessControlListForNamedACL: IAccessControlList,
-    Clone: js.Function0[INamedACLAdmin],
+    Clone: () => INamedACLAdmin,
     NamedACL: INamedACL,
     SemanticAliases: ISemanticAliases
   ): INamedACLAdmin = {
-    val __obj = js.Dynamic.literal(AccessControlListForNamedACL = AccessControlListForNamedACL, Clone = Clone, NamedACL = NamedACL, SemanticAliases = SemanticAliases)
+    val __obj = js.Dynamic.literal(AccessControlListForNamedACL = AccessControlListForNamedACL, Clone = js.Any.fromFunction0(Clone), NamedACL = NamedACL, SemanticAliases = SemanticAliases)
   
     __obj.asInstanceOf[INamedACLAdmin]
   }

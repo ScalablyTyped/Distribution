@@ -29,7 +29,7 @@ trait XMailService
     * based connection
     * @returns a sequence of supported connection types.
     */
-  val SupportedConnectionTypes: activexDashInteropLib.SafeArray[java.lang.String]
+  val SupportedConnectionTypes: stdLib.SafeArray[java.lang.String]
   /**
     * Register a connection listener.
     * @param xListener [in] a listener that will be informed about connection events.
@@ -85,7 +85,7 @@ trait XMailService
     * based connection
     * @returns a sequence of supported connection types.
     */
-  def getSupportedConnectionTypes(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getSupportedConnectionTypes(): stdLib.SafeArray[java.lang.String]
   /**
     * Returns whether a connection to a mail service currently exist or not.
     * @returns `TRUE` if a connection to a mail service is established.
@@ -103,23 +103,19 @@ object XMailService {
   @scala.inline
   def apply(
     CurrentConnectionContext: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XCurrentContext,
-    SupportedConnectionTypes: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    addConnectionListener: js.Function1[XConnectionListener, scala.Unit],
-    connect: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XCurrentContext, 
-      XAuthenticator, 
-      scala.Unit
-    ],
-    disconnect: js.Function0[scala.Unit],
-    getCurrentConnectionContext: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XCurrentContext],
-    getSupportedConnectionTypes: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    isConnected: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeConnectionListener: js.Function1[XConnectionListener, scala.Unit]
+    SupportedConnectionTypes: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    addConnectionListener: XConnectionListener => scala.Unit,
+    connect: (activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XCurrentContext, XAuthenticator) => scala.Unit,
+    disconnect: () => scala.Unit,
+    getCurrentConnectionContext: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XCurrentContext,
+    getSupportedConnectionTypes: () => stdLib.SafeArray[java.lang.String],
+    isConnected: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeConnectionListener: XConnectionListener => scala.Unit
   ): XMailService = {
-    val __obj = js.Dynamic.literal(CurrentConnectionContext = CurrentConnectionContext, SupportedConnectionTypes = SupportedConnectionTypes, acquire = acquire, addConnectionListener = addConnectionListener, connect = connect, disconnect = disconnect, getCurrentConnectionContext = getCurrentConnectionContext, getSupportedConnectionTypes = getSupportedConnectionTypes, isConnected = isConnected, queryInterface = queryInterface, release = release, removeConnectionListener = removeConnectionListener)
+    val __obj = js.Dynamic.literal(CurrentConnectionContext = CurrentConnectionContext, SupportedConnectionTypes = SupportedConnectionTypes, acquire = js.Any.fromFunction0(acquire), addConnectionListener = js.Any.fromFunction1(addConnectionListener), connect = js.Any.fromFunction2(connect), disconnect = js.Any.fromFunction0(disconnect), getCurrentConnectionContext = js.Any.fromFunction0(getCurrentConnectionContext), getSupportedConnectionTypes = js.Any.fromFunction0(getSupportedConnectionTypes), isConnected = js.Any.fromFunction0(isConnected), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeConnectionListener = js.Any.fromFunction1(removeConnectionListener))
   
     __obj.asInstanceOf[XMailService]
   }

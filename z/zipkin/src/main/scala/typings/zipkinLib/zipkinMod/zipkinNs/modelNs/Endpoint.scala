@@ -15,12 +15,12 @@ trait Endpoint extends js.Object {
 object Endpoint {
   @scala.inline
   def apply(
-    isEmpty: js.Function0[scala.Boolean],
-    setIpv4: js.Function1[java.lang.String, scala.Unit],
-    setPort: js.Function1[scala.Double, scala.Unit],
-    setServiceName: js.Function1[java.lang.String, scala.Unit]
+    isEmpty: () => scala.Boolean,
+    setIpv4: java.lang.String => scala.Unit,
+    setPort: scala.Double => scala.Unit,
+    setServiceName: java.lang.String => scala.Unit
   ): Endpoint = {
-    val __obj = js.Dynamic.literal(isEmpty = isEmpty, setIpv4 = setIpv4, setPort = setPort, setServiceName = setServiceName)
+    val __obj = js.Dynamic.literal(isEmpty = js.Any.fromFunction0(isEmpty), setIpv4 = js.Any.fromFunction1(setIpv4), setPort = js.Any.fromFunction1(setPort), setServiceName = js.Any.fromFunction1(setServiceName))
   
     __obj.asInstanceOf[Endpoint]
   }

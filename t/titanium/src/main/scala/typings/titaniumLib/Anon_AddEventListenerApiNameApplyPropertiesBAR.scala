@@ -62,17 +62,17 @@ object Anon_AddEventListenerApiNameApplyPropertiesBAR {
     BAR: scala.Double,
     DEFAULT: scala.Double,
     PLAIN: scala.Double,
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     bubbleParent: scala.Boolean,
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getApiName: js.Function0[java.lang.String],
-    getBubbleParent: js.Function0[scala.Boolean],
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit]
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
+    getApiName: () => java.lang.String,
+    getBubbleParent: () => scala.Boolean,
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    setBubbleParent: scala.Boolean => scala.Unit
   ): Anon_AddEventListenerApiNameApplyPropertiesBAR = {
-    val __obj = js.Dynamic.literal(BAR = BAR, DEFAULT = DEFAULT, PLAIN = PLAIN, addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, removeEventListener = removeEventListener, setBubbleParent = setBubbleParent)
+    val __obj = js.Dynamic.literal(BAR = BAR, DEFAULT = DEFAULT, PLAIN = PLAIN, addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent))
   
     __obj.asInstanceOf[Anon_AddEventListenerApiNameApplyPropertiesBAR]
   }

@@ -20,10 +20,10 @@ object PortalItemUpdateParams {
   def apply(
     constructor: js.Function,
     data: java.lang.String | js.Any,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): PortalItemUpdateParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, data = data.asInstanceOf[js.Any], hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, data = data.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[PortalItemUpdateParams]
   }

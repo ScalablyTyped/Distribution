@@ -15,10 +15,10 @@ object DialogStackedActionsProps {
   @scala.inline
   def apply(
     actions: js.Array[java.lang.String],
-    onActionPress: js.Function1[java.lang.String, scala.Unit],
+    onActionPress: java.lang.String => scala.Unit,
     style: reactDashNativeDashMaterialDashUiLib.Anon_StackedActionsContainer = null
   ): DialogStackedActionsProps = {
-    val __obj = js.Dynamic.literal(actions = actions, onActionPress = onActionPress)
+    val __obj = js.Dynamic.literal(actions = actions, onActionPress = js.Any.fromFunction1(onActionPress))
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[DialogStackedActionsProps]
   }

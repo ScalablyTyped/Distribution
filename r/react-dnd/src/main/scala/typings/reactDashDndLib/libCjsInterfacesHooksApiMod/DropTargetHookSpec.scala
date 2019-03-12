@@ -76,33 +76,18 @@ object DropTargetHookSpec {
   @scala.inline
   def apply[DragObject, DropResult, CollectedProps](
     accept: dndDashCoreLib.libCjsInterfacesMod.TargetType,
-    canDrop: js.Function2[
-      /* item */ DragObject, 
-      /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DropTargetMonitor, 
-      scala.Boolean
-    ] = null,
-    collect: js.Function1[
-      /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DropTargetMonitor, 
-      CollectedProps
-    ] = null,
-    drop: js.Function2[
-      /* item */ DragObject, 
-      /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DropTargetMonitor, 
-      js.UndefOr[DropResult]
-    ] = null,
-    hover: js.Function2[
-      /* item */ DragObject, 
-      /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DropTargetMonitor, 
-      scala.Unit
-    ] = null,
+    canDrop: (/* item */ DragObject, /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DropTargetMonitor) => scala.Boolean = null,
+    collect: /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DropTargetMonitor => CollectedProps = null,
+    drop: (/* item */ DragObject, /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DropTargetMonitor) => js.UndefOr[DropResult] = null,
+    hover: (/* item */ DragObject, /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DropTargetMonitor) => scala.Unit = null,
     options: js.Any = null,
     ref: reactLib.reactMod.ReactNs.RefObject[_] = null
   ): DropTargetHookSpec[DragObject, DropResult, CollectedProps] = {
     val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any])
-    if (canDrop != null) __obj.updateDynamic("canDrop")(canDrop)
-    if (collect != null) __obj.updateDynamic("collect")(collect)
-    if (drop != null) __obj.updateDynamic("drop")(drop)
-    if (hover != null) __obj.updateDynamic("hover")(hover)
+    if (canDrop != null) __obj.updateDynamic("canDrop")(js.Any.fromFunction2(canDrop))
+    if (collect != null) __obj.updateDynamic("collect")(js.Any.fromFunction1(collect))
+    if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction2(drop))
+    if (hover != null) __obj.updateDynamic("hover")(js.Any.fromFunction2(hover))
     if (options != null) __obj.updateDynamic("options")(options)
     if (ref != null) __obj.updateDynamic("ref")(ref)
     __obj.asInstanceOf[DropTargetHookSpec[DragObject, DropResult, CollectedProps]]

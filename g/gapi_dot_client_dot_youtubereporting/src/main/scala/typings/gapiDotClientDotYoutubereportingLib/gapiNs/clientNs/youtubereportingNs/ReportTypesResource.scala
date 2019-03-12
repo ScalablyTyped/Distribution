@@ -13,12 +13,9 @@ trait ReportTypesResource extends js.Object {
 object ReportTypesResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotYoutubereportingLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListReportTypesResponse]
-    ]
+    list: gapiDotClientDotYoutubereportingLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[ListReportTypesResponse]
   ): ReportTypesResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ReportTypesResource]
   }

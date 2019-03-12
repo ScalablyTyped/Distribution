@@ -9,10 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   @JSName("$")
-  var $: appframeworkLib.appFrameworkStatic = js.native
-  var af: js.Function1[
-    /* fn */ js.Function1[/* $ */ appframeworkLib.appFrameworkStatic, scala.Unit], 
-    scala.Unit
-  ] = js.native
+  var $: appFrameworkStatic = js.native
+  var af: js.Function1[/* fn */ js.Function1[/* $ */ appFrameworkStatic, scala.Unit], scala.Unit] = js.native
 }
 

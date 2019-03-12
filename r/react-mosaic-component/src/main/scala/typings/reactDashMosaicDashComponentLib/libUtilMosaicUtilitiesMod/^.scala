@@ -27,10 +27,7 @@ object ^ extends js.Object {
   def getNodeAtPath[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](tree: scala.Null, path: reactDashMosaicDashComponentLib.libTypesMod.MosaicPath): reactDashMosaicDashComponentLib.libTypesMod.MosaicNode[T] | scala.Null = js.native
   def getOtherBranch(branch: reactDashMosaicDashComponentLib.libTypesMod.MosaicBranch): reactDashMosaicDashComponentLib.libTypesMod.MosaicBranch = js.native
   def getOtherDirection(direction: reactDashMosaicDashComponentLib.libTypesMod.MosaicDirection): reactDashMosaicDashComponentLib.libTypesMod.MosaicDirection = js.native
-  def getPathToCorner(
-    tree: reactDashMosaicDashComponentLib.libTypesMod.MosaicNode[_],
-    corner: reactDashMosaicDashComponentLib.libUtilMosaicUtilitiesMod.Corner
-  ): reactDashMosaicDashComponentLib.libTypesMod.MosaicPath = js.native
+  def getPathToCorner(tree: reactDashMosaicDashComponentLib.libTypesMod.MosaicNode[_], corner: Corner): reactDashMosaicDashComponentLib.libTypesMod.MosaicPath = js.native
   def isParent[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](node: reactDashMosaicDashComponentLib.libTypesMod.MosaicNode[T]): /* is react-mosaic-component.react-mosaic-component/lib/types.MosaicParent<T> */ scala.Boolean = js.native
 }
 

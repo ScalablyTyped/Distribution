@@ -17,7 +17,7 @@ trait XTransferDataAccess
     * @param aFlavorList The sequence of requested {@link DataFlavor} . An unsupported {@link DataFlavor} will be ignored.
     * @returns The data in the requested {@link DataFlavor} . For unsupported {@link DataFlavor} an empty any will be returned.
     */
-  def getData(aFlavorList: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataFlavor]): activexDashInteropLib.SafeArray[_]
+  def getData(aFlavorList: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataFlavor]): stdLib.SafeArray[_]
   /**
     * To query for the summarized data size in bytes of a sequence of {@link DataFlavor} .
     * @param aFlavorList A sequence of requested {@link DataFlavor} . An unsupported {@link DataFlavor} will be ignored.
@@ -29,16 +29,13 @@ trait XTransferDataAccess
 object XTransferDataAccess {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getData: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataFlavor], 
-      activexDashInteropLib.SafeArray[_]
-    ],
-    queryDataSize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataFlavor], scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getData: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataFlavor] => stdLib.SafeArray[_],
+    queryDataSize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataFlavor] => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTransferDataAccess = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getData = getData, queryDataSize = queryDataSize, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getData = js.Any.fromFunction1(getData), queryDataSize = js.Any.fromFunction1(queryDataSize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTransferDataAccess]
   }

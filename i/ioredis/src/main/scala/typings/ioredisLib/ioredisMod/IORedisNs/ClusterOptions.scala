@@ -9,7 +9,7 @@ trait ClusterOptions extends js.Object {
   var clusterRetryStrategy: js.UndefOr[
     js.Function2[
       /* times */ scala.Double, 
-      /* reason */ js.UndefOr[nodeLib.Error], 
+      /* reason */ js.UndefOr[stdLib.Error], 
       scala.Double | scala.Null
     ]
   ] = js.undefined
@@ -31,11 +31,7 @@ trait ClusterOptions extends js.Object {
 object ClusterOptions {
   @scala.inline
   def apply(
-    clusterRetryStrategy: js.Function2[
-      /* times */ scala.Double, 
-      /* reason */ js.UndefOr[nodeLib.Error], 
-      scala.Double | scala.Null
-    ] = null,
+    clusterRetryStrategy: (/* times */ scala.Double, /* reason */ js.UndefOr[stdLib.Error]) => scala.Double | scala.Null = null,
     dnsLookup: DNSLookupFunction = null,
     enableOfflineQueue: js.UndefOr[scala.Boolean] = js.undefined,
     enableReadyCheck: js.UndefOr[scala.Boolean] = js.undefined,
@@ -51,7 +47,7 @@ object ClusterOptions {
     slotsRefreshTimeout: scala.Int | scala.Double = null
   ): ClusterOptions = {
     val __obj = js.Dynamic.literal()
-    if (clusterRetryStrategy != null) __obj.updateDynamic("clusterRetryStrategy")(clusterRetryStrategy)
+    if (clusterRetryStrategy != null) __obj.updateDynamic("clusterRetryStrategy")(js.Any.fromFunction2(clusterRetryStrategy))
     if (dnsLookup != null) __obj.updateDynamic("dnsLookup")(dnsLookup)
     if (!js.isUndefined(enableOfflineQueue)) __obj.updateDynamic("enableOfflineQueue")(enableOfflineQueue)
     if (!js.isUndefined(enableReadyCheck)) __obj.updateDynamic("enableReadyCheck")(enableReadyCheck)

@@ -274,143 +274,122 @@ object IContainer {
   def apply(
     IComponent: senchaUnderscoreTouchLib.ExtNs.IComponent = null,
     activeItem: js.Any = null,
-    add: js.Function1[/* newItems */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.IComponent] = null,
-    addAll: js.Function1[
-      /* items */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
-      senchaUnderscoreTouchLib.ExtNs.Array
-    ] = null,
-    animateActiveItem: js.Function2[/* activeItem */ js.UndefOr[js.Any], /* animation */ js.UndefOr[js.Any], scala.Unit] = null,
-    applyMasked: js.Function1[/* masked */ js.UndefOr[js.Any], _] = null,
+    add: /* newItems */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.IComponent = null,
+    addAll: /* items */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    animateActiveItem: (/* activeItem */ js.UndefOr[js.Any], /* animation */ js.UndefOr[js.Any]) => scala.Unit = null,
+    applyMasked: /* masked */ js.UndefOr[js.Any] => _ = null,
     autoDestroy: js.UndefOr[scala.Boolean] = js.undefined,
     cardSwitchAnimation: js.Any = null,
-    child: js.Function1[
-      /* selector */ js.UndefOr[java.lang.String], 
-      senchaUnderscoreTouchLib.ExtNs.IComponent
-    ] = null,
+    child: /* selector */ js.UndefOr[java.lang.String] => senchaUnderscoreTouchLib.ExtNs.IComponent = null,
     control: js.Any = null,
     defaultType: java.lang.String = null,
     defaults: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
-    down: js.Function1[
-      /* selector */ js.UndefOr[java.lang.String], 
-      senchaUnderscoreTouchLib.ExtNs.IComponent
-    ] = null,
-    getActiveItem: js.Function0[_] = null,
-    getAt: js.Function1[/* index */ js.UndefOr[scala.Double], senchaUnderscoreTouchLib.ExtNs.IComponent] = null,
-    getAutoDestroy: js.Function0[scala.Boolean] = null,
-    getComponent: js.Function1[/* component */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.IComponent] = null,
-    getControl: js.Function0[_] = null,
-    getDefaultType: js.Function0[java.lang.String] = null,
-    getDefaults: js.Function0[_] = null,
-    getDockedComponent: js.Function1[/* component */ js.UndefOr[js.Any], _] = null,
-    getDockedItems: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getHideOnMaskTap: js.Function0[scala.Boolean] = null,
-    getInnerItems: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getItems: js.Function0[_] = null,
-    getMasked: js.Function0[_] = null,
-    getModal: js.Function0[scala.Boolean] = null,
-    getScrollable: js.Function0[senchaUnderscoreTouchLib.ExtNs.scrollNs.IView] = null,
-    hide: js.Function0[senchaUnderscoreTouchLib.ExtNs.IComponent] = null,
+    destroy: () => scala.Unit = null,
+    down: /* selector */ js.UndefOr[java.lang.String] => senchaUnderscoreTouchLib.ExtNs.IComponent = null,
+    getActiveItem: () => _ = null,
+    getAt: /* index */ js.UndefOr[scala.Double] => senchaUnderscoreTouchLib.ExtNs.IComponent = null,
+    getAutoDestroy: () => scala.Boolean = null,
+    getComponent: /* component */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.IComponent = null,
+    getControl: () => _ = null,
+    getDefaultType: () => java.lang.String = null,
+    getDefaults: () => _ = null,
+    getDockedComponent: /* component */ js.UndefOr[js.Any] => _ = null,
+    getDockedItems: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getHideOnMaskTap: () => scala.Boolean = null,
+    getInnerItems: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getItems: () => _ = null,
+    getMasked: () => _ = null,
+    getModal: () => scala.Boolean = null,
+    getScrollable: () => senchaUnderscoreTouchLib.ExtNs.scrollNs.IView = null,
+    hide: () => senchaUnderscoreTouchLib.ExtNs.IComponent = null,
     hideOnMaskTap: js.UndefOr[scala.Boolean] = js.undefined,
-    insert: js.Function2[/* index */ js.UndefOr[scala.Double], /* item */ js.UndefOr[js.Any], scala.Unit] = null,
+    insert: (/* index */ js.UndefOr[scala.Double], /* item */ js.UndefOr[js.Any]) => scala.Unit = null,
     items: js.Any = null,
     layout: js.Any = null,
-    mask: js.Function1[/* mask */ js.UndefOr[js.Any], scala.Unit] = null,
+    mask: /* mask */ js.UndefOr[js.Any] => scala.Unit = null,
     masked: js.Any = null,
     modal: js.UndefOr[scala.Boolean] = js.undefined,
-    query: js.Function1[/* selector */ js.UndefOr[java.lang.String], senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    remove: js.Function2[
-      /* item */ js.UndefOr[js.Any], 
-      /* destroy */ js.UndefOr[scala.Boolean], 
-      senchaUnderscoreTouchLib.ExtNs.IComponent
-    ] = null,
-    removeAll: js.Function2[
-      /* destroy */ js.UndefOr[scala.Boolean], 
-      /* everything */ js.UndefOr[scala.Boolean], 
-      senchaUnderscoreTouchLib.ExtNs.IComponent
-    ] = null,
-    removeAt: js.Function1[/* index */ js.UndefOr[scala.Double], IContainer] = null,
-    removeDocked: js.Function2[
-      /* item */ js.UndefOr[js.Any], 
-      /* destroy */ js.UndefOr[scala.Boolean], 
-      senchaUnderscoreTouchLib.ExtNs.IComponent
-    ] = null,
-    removeInnerAt: js.Function1[/* index */ js.UndefOr[scala.Double], IContainer] = null,
+    query: /* selector */ js.UndefOr[java.lang.String] => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    remove: (/* item */ js.UndefOr[js.Any], /* destroy */ js.UndefOr[scala.Boolean]) => senchaUnderscoreTouchLib.ExtNs.IComponent = null,
+    removeAll: (/* destroy */ js.UndefOr[scala.Boolean], /* everything */ js.UndefOr[scala.Boolean]) => senchaUnderscoreTouchLib.ExtNs.IComponent = null,
+    removeAt: /* index */ js.UndefOr[scala.Double] => IContainer = null,
+    removeDocked: (/* item */ js.UndefOr[js.Any], /* destroy */ js.UndefOr[scala.Boolean]) => senchaUnderscoreTouchLib.ExtNs.IComponent = null,
+    removeInnerAt: /* index */ js.UndefOr[scala.Double] => IContainer = null,
     scroll: js.Any = null,
     scrollable: js.Any = null,
-    setActiveItem: js.Function1[/* activeItem */ js.UndefOr[js.Any], scala.Unit] = null,
-    setAutoDestroy: js.Function1[/* autoDestroy */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setControl: js.Function1[/* control */ js.UndefOr[js.Any], scala.Unit] = null,
-    setDefaultType: js.Function1[/* defaultType */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setDefaults: js.Function1[/* defaults */ js.UndefOr[js.Any], scala.Unit] = null,
-    setHideOnMaskTap: js.Function1[/* hideOnMaskTap */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setItems: js.Function1[/* items */ js.UndefOr[js.Any], scala.Unit] = null,
-    setLayout: js.Function1[/* layout */ js.UndefOr[js.Any], scala.Unit] = null,
-    setMasked: js.Function1[/* masked */ js.UndefOr[js.Any], scala.Unit] = null,
-    setModal: js.Function1[/* modal */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setScrollable: js.Function1[/* scrollable */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.scrollNs.IView] = null,
-    show: js.Function0[senchaUnderscoreTouchLib.ExtNs.IComponent] = null,
-    unmask: js.Function0[scala.Unit] = null
+    setActiveItem: /* activeItem */ js.UndefOr[js.Any] => scala.Unit = null,
+    setAutoDestroy: /* autoDestroy */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setControl: /* control */ js.UndefOr[js.Any] => scala.Unit = null,
+    setDefaultType: /* defaultType */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setDefaults: /* defaults */ js.UndefOr[js.Any] => scala.Unit = null,
+    setHideOnMaskTap: /* hideOnMaskTap */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setItems: /* items */ js.UndefOr[js.Any] => scala.Unit = null,
+    setLayout: /* layout */ js.UndefOr[js.Any] => scala.Unit = null,
+    setMasked: /* masked */ js.UndefOr[js.Any] => scala.Unit = null,
+    setModal: /* modal */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setScrollable: /* scrollable */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.scrollNs.IView = null,
+    show: () => senchaUnderscoreTouchLib.ExtNs.IComponent = null,
+    unmask: () => scala.Unit = null
   ): IContainer = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IComponent)
     if (activeItem != null) __obj.updateDynamic("activeItem")(activeItem)
-    if (add != null) __obj.updateDynamic("add")(add)
-    if (addAll != null) __obj.updateDynamic("addAll")(addAll)
-    if (animateActiveItem != null) __obj.updateDynamic("animateActiveItem")(animateActiveItem)
-    if (applyMasked != null) __obj.updateDynamic("applyMasked")(applyMasked)
+    if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction1(add))
+    if (addAll != null) __obj.updateDynamic("addAll")(js.Any.fromFunction1(addAll))
+    if (animateActiveItem != null) __obj.updateDynamic("animateActiveItem")(js.Any.fromFunction2(animateActiveItem))
+    if (applyMasked != null) __obj.updateDynamic("applyMasked")(js.Any.fromFunction1(applyMasked))
     if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy)
     if (cardSwitchAnimation != null) __obj.updateDynamic("cardSwitchAnimation")(cardSwitchAnimation)
-    if (child != null) __obj.updateDynamic("child")(child)
+    if (child != null) __obj.updateDynamic("child")(js.Any.fromFunction1(child))
     if (control != null) __obj.updateDynamic("control")(control)
     if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
     if (defaults != null) __obj.updateDynamic("defaults")(defaults)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (down != null) __obj.updateDynamic("down")(down)
-    if (getActiveItem != null) __obj.updateDynamic("getActiveItem")(getActiveItem)
-    if (getAt != null) __obj.updateDynamic("getAt")(getAt)
-    if (getAutoDestroy != null) __obj.updateDynamic("getAutoDestroy")(getAutoDestroy)
-    if (getComponent != null) __obj.updateDynamic("getComponent")(getComponent)
-    if (getControl != null) __obj.updateDynamic("getControl")(getControl)
-    if (getDefaultType != null) __obj.updateDynamic("getDefaultType")(getDefaultType)
-    if (getDefaults != null) __obj.updateDynamic("getDefaults")(getDefaults)
-    if (getDockedComponent != null) __obj.updateDynamic("getDockedComponent")(getDockedComponent)
-    if (getDockedItems != null) __obj.updateDynamic("getDockedItems")(getDockedItems)
-    if (getHideOnMaskTap != null) __obj.updateDynamic("getHideOnMaskTap")(getHideOnMaskTap)
-    if (getInnerItems != null) __obj.updateDynamic("getInnerItems")(getInnerItems)
-    if (getItems != null) __obj.updateDynamic("getItems")(getItems)
-    if (getMasked != null) __obj.updateDynamic("getMasked")(getMasked)
-    if (getModal != null) __obj.updateDynamic("getModal")(getModal)
-    if (getScrollable != null) __obj.updateDynamic("getScrollable")(getScrollable)
-    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
+    if (down != null) __obj.updateDynamic("down")(js.Any.fromFunction1(down))
+    if (getActiveItem != null) __obj.updateDynamic("getActiveItem")(js.Any.fromFunction0(getActiveItem))
+    if (getAt != null) __obj.updateDynamic("getAt")(js.Any.fromFunction1(getAt))
+    if (getAutoDestroy != null) __obj.updateDynamic("getAutoDestroy")(js.Any.fromFunction0(getAutoDestroy))
+    if (getComponent != null) __obj.updateDynamic("getComponent")(js.Any.fromFunction1(getComponent))
+    if (getControl != null) __obj.updateDynamic("getControl")(js.Any.fromFunction0(getControl))
+    if (getDefaultType != null) __obj.updateDynamic("getDefaultType")(js.Any.fromFunction0(getDefaultType))
+    if (getDefaults != null) __obj.updateDynamic("getDefaults")(js.Any.fromFunction0(getDefaults))
+    if (getDockedComponent != null) __obj.updateDynamic("getDockedComponent")(js.Any.fromFunction1(getDockedComponent))
+    if (getDockedItems != null) __obj.updateDynamic("getDockedItems")(js.Any.fromFunction0(getDockedItems))
+    if (getHideOnMaskTap != null) __obj.updateDynamic("getHideOnMaskTap")(js.Any.fromFunction0(getHideOnMaskTap))
+    if (getInnerItems != null) __obj.updateDynamic("getInnerItems")(js.Any.fromFunction0(getInnerItems))
+    if (getItems != null) __obj.updateDynamic("getItems")(js.Any.fromFunction0(getItems))
+    if (getMasked != null) __obj.updateDynamic("getMasked")(js.Any.fromFunction0(getMasked))
+    if (getModal != null) __obj.updateDynamic("getModal")(js.Any.fromFunction0(getModal))
+    if (getScrollable != null) __obj.updateDynamic("getScrollable")(js.Any.fromFunction0(getScrollable))
+    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction0(hide))
     if (!js.isUndefined(hideOnMaskTap)) __obj.updateDynamic("hideOnMaskTap")(hideOnMaskTap)
-    if (insert != null) __obj.updateDynamic("insert")(insert)
+    if (insert != null) __obj.updateDynamic("insert")(js.Any.fromFunction2(insert))
     if (items != null) __obj.updateDynamic("items")(items)
     if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (mask != null) __obj.updateDynamic("mask")(mask)
+    if (mask != null) __obj.updateDynamic("mask")(js.Any.fromFunction1(mask))
     if (masked != null) __obj.updateDynamic("masked")(masked)
     if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (removeAll != null) __obj.updateDynamic("removeAll")(removeAll)
-    if (removeAt != null) __obj.updateDynamic("removeAt")(removeAt)
-    if (removeDocked != null) __obj.updateDynamic("removeDocked")(removeDocked)
-    if (removeInnerAt != null) __obj.updateDynamic("removeInnerAt")(removeInnerAt)
+    if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction1(query))
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction2(remove))
+    if (removeAll != null) __obj.updateDynamic("removeAll")(js.Any.fromFunction2(removeAll))
+    if (removeAt != null) __obj.updateDynamic("removeAt")(js.Any.fromFunction1(removeAt))
+    if (removeDocked != null) __obj.updateDynamic("removeDocked")(js.Any.fromFunction2(removeDocked))
+    if (removeInnerAt != null) __obj.updateDynamic("removeInnerAt")(js.Any.fromFunction1(removeInnerAt))
     if (scroll != null) __obj.updateDynamic("scroll")(scroll)
     if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable)
-    if (setActiveItem != null) __obj.updateDynamic("setActiveItem")(setActiveItem)
-    if (setAutoDestroy != null) __obj.updateDynamic("setAutoDestroy")(setAutoDestroy)
-    if (setControl != null) __obj.updateDynamic("setControl")(setControl)
-    if (setDefaultType != null) __obj.updateDynamic("setDefaultType")(setDefaultType)
-    if (setDefaults != null) __obj.updateDynamic("setDefaults")(setDefaults)
-    if (setHideOnMaskTap != null) __obj.updateDynamic("setHideOnMaskTap")(setHideOnMaskTap)
-    if (setItems != null) __obj.updateDynamic("setItems")(setItems)
-    if (setLayout != null) __obj.updateDynamic("setLayout")(setLayout)
-    if (setMasked != null) __obj.updateDynamic("setMasked")(setMasked)
-    if (setModal != null) __obj.updateDynamic("setModal")(setModal)
-    if (setScrollable != null) __obj.updateDynamic("setScrollable")(setScrollable)
-    if (show != null) __obj.updateDynamic("show")(show)
-    if (unmask != null) __obj.updateDynamic("unmask")(unmask)
+    if (setActiveItem != null) __obj.updateDynamic("setActiveItem")(js.Any.fromFunction1(setActiveItem))
+    if (setAutoDestroy != null) __obj.updateDynamic("setAutoDestroy")(js.Any.fromFunction1(setAutoDestroy))
+    if (setControl != null) __obj.updateDynamic("setControl")(js.Any.fromFunction1(setControl))
+    if (setDefaultType != null) __obj.updateDynamic("setDefaultType")(js.Any.fromFunction1(setDefaultType))
+    if (setDefaults != null) __obj.updateDynamic("setDefaults")(js.Any.fromFunction1(setDefaults))
+    if (setHideOnMaskTap != null) __obj.updateDynamic("setHideOnMaskTap")(js.Any.fromFunction1(setHideOnMaskTap))
+    if (setItems != null) __obj.updateDynamic("setItems")(js.Any.fromFunction1(setItems))
+    if (setLayout != null) __obj.updateDynamic("setLayout")(js.Any.fromFunction1(setLayout))
+    if (setMasked != null) __obj.updateDynamic("setMasked")(js.Any.fromFunction1(setMasked))
+    if (setModal != null) __obj.updateDynamic("setModal")(js.Any.fromFunction1(setModal))
+    if (setScrollable != null) __obj.updateDynamic("setScrollable")(js.Any.fromFunction1(setScrollable))
+    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction0(show))
+    if (unmask != null) __obj.updateDynamic("unmask")(js.Any.fromFunction0(unmask))
     __obj.asInstanceOf[IContainer]
   }
 }

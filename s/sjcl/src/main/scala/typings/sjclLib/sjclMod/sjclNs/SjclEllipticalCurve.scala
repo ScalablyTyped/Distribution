@@ -11,8 +11,8 @@ trait SjclEllipticalCurve extends js.Object {
 
 object SjclEllipticalCurve {
   @scala.inline
-  def apply(fromBits: js.Function1[BitArray, SjclEllipticalPoint]): SjclEllipticalCurve = {
-    val __obj = js.Dynamic.literal(fromBits = fromBits)
+  def apply(fromBits: BitArray => SjclEllipticalPoint): SjclEllipticalCurve = {
+    val __obj = js.Dynamic.literal(fromBits = js.Any.fromFunction1(fromBits))
   
     __obj.asInstanceOf[SjclEllipticalCurve]
   }

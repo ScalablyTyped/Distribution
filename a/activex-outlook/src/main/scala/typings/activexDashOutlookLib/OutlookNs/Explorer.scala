@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.Explorer")
 @js.native
 class Explorer protected () extends js.Object {
-  val AccountSelector: AccountSelector = js.native
-  val Application: Application = js.native
-  val AttachmentSelection: AttachmentSelection = js.native
+  val AccountSelector: activexDashOutlookLib.OutlookNs.AccountSelector = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
+  val AttachmentSelection: activexDashOutlookLib.OutlookNs.AttachmentSelection = js.native
   val Caption: java.lang.String = js.native
   val Class: OlObjectClass = js.native
   val CommandBars: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.CommandBars */ js.Any = js.native
@@ -19,11 +19,11 @@ class Explorer protected () extends js.Object {
   val HTMLDocument: js.Any = js.native
   var Height: scala.Double = js.native
   var Left: scala.Double = js.native
-  val NavigationPane: NavigationPane = js.native
+  val NavigationPane: activexDashOutlookLib.OutlookNs.NavigationPane = js.native
   var `Outlook.Explorer_typekey`: Explorer = js.native
-  val Panes: Panes = js.native
+  val Panes: activexDashOutlookLib.OutlookNs.Panes = js.native
   val Parent: js.Any = js.native
-  val Selection: Selection = js.native
+  val Selection: activexDashOutlookLib.OutlookNs.Selection = js.native
   val Session: NameSpace = js.native
   var Top: scala.Double = js.native
   val Views: js.Any = js.native

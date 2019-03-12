@@ -13,8 +13,8 @@ trait Toast extends js.Object {
 
 object Toast {
   @scala.inline
-  def apply(destroy: js.Function0[scala.Unit], hide: js.Function0[scala.Unit], show: js.Function0[scala.Unit]): Toast = {
-    val __obj = js.Dynamic.literal(destroy = destroy, hide = hide, show = show)
+  def apply(destroy: () => scala.Unit, hide: () => scala.Unit, show: () => scala.Unit): Toast = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show))
   
     __obj.asInstanceOf[Toast]
   }

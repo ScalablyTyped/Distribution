@@ -30,22 +30,22 @@ object IInner {
   def apply(
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     extend: java.lang.String = null,
-    getContainer: js.Function0[_] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getSizeState: js.Function0[_] = null,
+    getContainer: () => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getSizeState: () => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setContainer: js.Function1[/* container */ js.UndefOr[js.Any], scala.Unit] = null,
-    setSizeState: js.Function1[/* sizeState */ js.UndefOr[js.Any], scala.Unit] = null,
+    setContainer: /* container */ js.UndefOr[js.Any] => scala.Unit = null,
+    setSizeState: /* sizeState */ js.UndefOr[js.Any] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null
@@ -53,22 +53,22 @@ object IInner {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getSizeState != null) __obj.updateDynamic("getSizeState")(getSizeState)
+    if (getContainer != null) __obj.updateDynamic("getContainer")(js.Any.fromFunction0(getContainer))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getSizeState != null) __obj.updateDynamic("getSizeState")(js.Any.fromFunction0(getSizeState))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setContainer != null) __obj.updateDynamic("setContainer")(setContainer)
-    if (setSizeState != null) __obj.updateDynamic("setSizeState")(setSizeState)
+    if (setContainer != null) __obj.updateDynamic("setContainer")(js.Any.fromFunction1(setContainer))
+    if (setSizeState != null) __obj.updateDynamic("setSizeState")(js.Any.fromFunction1(setSizeState))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (uses != null) __obj.updateDynamic("uses")(uses)

@@ -19,16 +19,16 @@ trait DataObserver extends js.Object {
 object DataObserver {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
-    isPaused: js.Function0[scala.Boolean],
+    destroy: () => scala.Unit,
+    isPaused: () => scala.Boolean,
     observedData: js.Array[_],
     observer: js.Object,
-    pause: js.Function0[scala.Unit],
+    pause: () => scala.Unit,
     paused: scala.Boolean,
-    resume: js.Function0[scala.Unit],
-    setObservedData: js.Function1[js.Any, scala.Unit]
+    resume: () => scala.Unit,
+    setObservedData: js.Any => scala.Unit
   ): DataObserver = {
-    val __obj = js.Dynamic.literal(destroy = destroy, isPaused = isPaused, observedData = observedData, observer = observer, pause = pause, paused = paused, resume = resume, setObservedData = setObservedData)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), isPaused = js.Any.fromFunction0(isPaused), observedData = observedData, observer = observer, pause = js.Any.fromFunction0(pause), paused = paused, resume = js.Any.fromFunction0(resume), setObservedData = js.Any.fromFunction1(setObservedData))
   
     __obj.asInstanceOf[DataObserver]
   }

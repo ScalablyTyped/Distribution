@@ -25,31 +25,31 @@ object IBoundListKeyNav {
     alias: extjsLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
     boundList: IBoundList = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     defaultEventAction: java.lang.String = null,
-    destroy: js.Function1[/* removeEl */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    disable: js.Function0[scala.Unit] = null,
+    destroy: /* removeEl */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    disable: () => scala.Unit = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    enable: js.Function0[scala.Unit] = null,
+    enable: () => scala.Unit = null,
     eventName: java.lang.String = null,
     extend: java.lang.String = null,
     forceKeyDown: js.UndefOr[scala.Boolean] = js.undefined,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    highlightAt: js.Function1[/* index */ js.UndefOr[scala.Double], scala.Unit] = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    highlightAt: /* index */ js.UndefOr[scala.Double] => scala.Unit = null,
     ignoreInputFields: js.UndefOr[scala.Boolean] = js.undefined,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IBoundListKeyNav] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IBoundListKeyNav = null,
     keyMap: extjsLib.ExtNs.utilNs.IKeyMap = null,
     mixins: js.Any = null,
     processEvent: js.Any = null,
     processEventScope: js.Any = null,
     requires: extjsLib.ExtNs.Array = null,
-    selectHighlighted: js.Function1[/* e */ js.UndefOr[js.Any], scala.Unit] = null,
+    selectHighlighted: /* e */ js.UndefOr[js.Any] => scala.Unit = null,
     self: extjsLib.ExtNs.IClass = null,
-    setDisabled: js.Function1[/* disabled */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setDisabled: /* disabled */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     target: js.Any = null,
@@ -59,31 +59,31 @@ object IBoundListKeyNav {
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
     if (boundList != null) __obj.updateDynamic("boundList")(boundList)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
     if (defaultEventAction != null) __obj.updateDynamic("defaultEventAction")(defaultEventAction)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (disable != null) __obj.updateDynamic("disable")(disable)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
+    if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction0(disable))
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (enable != null) __obj.updateDynamic("enable")(enable)
+    if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction0(enable))
     if (eventName != null) __obj.updateDynamic("eventName")(eventName)
     if (extend != null) __obj.updateDynamic("extend")(extend)
     if (!js.isUndefined(forceKeyDown)) __obj.updateDynamic("forceKeyDown")(forceKeyDown)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (highlightAt != null) __obj.updateDynamic("highlightAt")(highlightAt)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (highlightAt != null) __obj.updateDynamic("highlightAt")(js.Any.fromFunction1(highlightAt))
     if (!js.isUndefined(ignoreInputFields)) __obj.updateDynamic("ignoreInputFields")(ignoreInputFields)
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (keyMap != null) __obj.updateDynamic("keyMap")(keyMap)
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (processEvent != null) __obj.updateDynamic("processEvent")(processEvent)
     if (processEventScope != null) __obj.updateDynamic("processEventScope")(processEventScope)
     if (requires != null) __obj.updateDynamic("requires")(requires)
-    if (selectHighlighted != null) __obj.updateDynamic("selectHighlighted")(selectHighlighted)
+    if (selectHighlighted != null) __obj.updateDynamic("selectHighlighted")(js.Any.fromFunction1(selectHighlighted))
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setDisabled != null) __obj.updateDynamic("setDisabled")(setDisabled)
+    if (setDisabled != null) __obj.updateDynamic("setDisabled")(js.Any.fromFunction1(setDisabled))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (target != null) __obj.updateDynamic("target")(target)

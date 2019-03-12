@@ -11,10 +11,8 @@ trait DoBootstrap extends js.Object {
 
 object DoBootstrap {
   @scala.inline
-  def apply(
-    ngDoBootstrap: js.Function1[atAngularCoreLib.srcApplicationUnderscoreRefMod.ApplicationRef, scala.Unit]
-  ): DoBootstrap = {
-    val __obj = js.Dynamic.literal(ngDoBootstrap = ngDoBootstrap)
+  def apply(ngDoBootstrap: atAngularCoreLib.srcApplicationUnderscoreRefMod.ApplicationRef => scala.Unit): DoBootstrap = {
+    val __obj = js.Dynamic.literal(ngDoBootstrap = js.Any.fromFunction1(ngDoBootstrap))
   
     __obj.asInstanceOf[DoBootstrap]
   }

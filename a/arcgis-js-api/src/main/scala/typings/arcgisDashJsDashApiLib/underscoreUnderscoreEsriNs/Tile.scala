@@ -70,16 +70,16 @@ object Tile {
     col: scala.Double,
     constructor: js.Function,
     coords: js.Array[scala.Double],
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     id: java.lang.String,
     level: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     resolution: scala.Double,
     row: scala.Double,
     scale: scala.Double,
     world: scala.Double
   ): Tile = {
-    val __obj = js.Dynamic.literal(bounds = bounds, col = col, constructor = constructor, coords = coords, hasOwnProperty = hasOwnProperty, id = id, level = level, propertyIsEnumerable = propertyIsEnumerable, resolution = resolution, row = row, scale = scale, world = world)
+    val __obj = js.Dynamic.literal(bounds = bounds, col = col, constructor = constructor, coords = coords, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, level = level, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), resolution = resolution, row = row, scale = scale, world = world)
   
     __obj.asInstanceOf[Tile]
   }

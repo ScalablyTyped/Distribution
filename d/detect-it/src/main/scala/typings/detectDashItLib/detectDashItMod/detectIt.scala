@@ -13,7 +13,7 @@ trait detectIt extends js.Object {
   var passiveEvents: scala.Boolean
   var primaryHover: detectDashItLib.detectDashItLibStrings.hover | detectDashItLib.detectDashItLibStrings.none
   var primaryPointer: detectDashItLib.detectDashItLibStrings.coarse | detectDashItLib.detectDashItLibStrings.fine | detectDashItLib.detectDashItLibStrings.none
-  var state: state
+  var state: detectDashItLib.detectDashItMod.state
   def update(): scala.Unit
 }
 
@@ -28,9 +28,9 @@ object detectIt {
     primaryHover: detectDashItLib.detectDashItLibStrings.hover | detectDashItLib.detectDashItLibStrings.none,
     primaryPointer: detectDashItLib.detectDashItLibStrings.coarse | detectDashItLib.detectDashItLibStrings.fine | detectDashItLib.detectDashItLibStrings.none,
     state: state,
-    update: js.Function0[scala.Unit]
+    update: () => scala.Unit
   ): detectIt = {
-    val __obj = js.Dynamic.literal(deviceType = deviceType.asInstanceOf[js.Any], hasMouse = hasMouse, hasTouch = hasTouch, maxTouchPoints = maxTouchPoints, passiveEvents = passiveEvents, primaryHover = primaryHover.asInstanceOf[js.Any], primaryPointer = primaryPointer.asInstanceOf[js.Any], state = state, update = update)
+    val __obj = js.Dynamic.literal(deviceType = deviceType.asInstanceOf[js.Any], hasMouse = hasMouse, hasTouch = hasTouch, maxTouchPoints = maxTouchPoints, passiveEvents = passiveEvents, primaryHover = primaryHover.asInstanceOf[js.Any], primaryPointer = primaryPointer.asInstanceOf[js.Any], state = state, update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[detectIt]
   }

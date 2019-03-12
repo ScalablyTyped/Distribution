@@ -37,7 +37,7 @@ trait Config extends js.Object {
   ] = js.undefined
   var onError: js.UndefOr[
     js.Function3[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* req */ nodeLib.httpMod.IncomingMessage, 
       /* res */ nodeLib.httpMod.ServerResponse, 
       scala.Unit
@@ -119,40 +119,13 @@ object Config {
     ignorePath: js.UndefOr[scala.Boolean] = js.undefined,
     localAddress: java.lang.String = null,
     logLevel: httpDashProxyDashMiddlewareLib.httpDashProxyDashMiddlewareLibStrings.debug | httpDashProxyDashMiddlewareLib.httpDashProxyDashMiddlewareLibStrings.info | httpDashProxyDashMiddlewareLib.httpDashProxyDashMiddlewareLibStrings.warn | httpDashProxyDashMiddlewareLib.httpDashProxyDashMiddlewareLibStrings.error | httpDashProxyDashMiddlewareLib.httpDashProxyDashMiddlewareLibStrings.silent = null,
-    logProvider: js.Function1[/* provider */ LogProvider, LogProvider] = null,
-    onClose: js.Function3[
-      /* res */ nodeLib.httpMod.IncomingMessage, 
-      /* socket */ nodeLib.netMod.Socket, 
-      /* head */ js.Any, 
-      scala.Unit
-    ] = null,
-    onError: js.Function3[
-      /* err */ nodeLib.Error, 
-      /* req */ nodeLib.httpMod.IncomingMessage, 
-      /* res */ nodeLib.httpMod.ServerResponse, 
-      scala.Unit
-    ] = null,
-    onOpen: js.Function1[/* proxySocket */ nodeLib.netMod.Socket, scala.Unit] = null,
-    onProxyReq: js.Function3[
-      /* proxyReq */ nodeLib.httpMod.ClientRequest, 
-      /* req */ nodeLib.httpMod.IncomingMessage, 
-      /* res */ nodeLib.httpMod.ServerResponse, 
-      scala.Unit
-    ] = null,
-    onProxyReqWs: js.Function5[
-      /* proxyReq */ nodeLib.httpMod.ClientRequest, 
-      /* req */ nodeLib.httpMod.IncomingMessage, 
-      /* socket */ nodeLib.netMod.Socket, 
-      /* options */ httpDashProxyLib.httpDashProxyMod.ServerNs.ServerOptions, 
-      /* head */ js.Any, 
-      scala.Unit
-    ] = null,
-    onProxyRes: js.Function3[
-      /* proxyRes */ nodeLib.httpMod.IncomingMessage, 
-      /* req */ nodeLib.httpMod.IncomingMessage, 
-      /* res */ nodeLib.httpMod.ServerResponse, 
-      scala.Unit
-    ] = null,
+    logProvider: /* provider */ LogProvider => LogProvider = null,
+    onClose: (/* res */ nodeLib.httpMod.IncomingMessage, /* socket */ nodeLib.netMod.Socket, /* head */ js.Any) => scala.Unit = null,
+    onError: (/* err */ stdLib.Error, /* req */ nodeLib.httpMod.IncomingMessage, /* res */ nodeLib.httpMod.ServerResponse) => scala.Unit = null,
+    onOpen: /* proxySocket */ nodeLib.netMod.Socket => scala.Unit = null,
+    onProxyReq: (/* proxyReq */ nodeLib.httpMod.ClientRequest, /* req */ nodeLib.httpMod.IncomingMessage, /* res */ nodeLib.httpMod.ServerResponse) => scala.Unit = null,
+    onProxyReqWs: (/* proxyReq */ nodeLib.httpMod.ClientRequest, /* req */ nodeLib.httpMod.IncomingMessage, /* socket */ nodeLib.netMod.Socket, /* options */ httpDashProxyLib.httpDashProxyMod.ServerNs.ServerOptions, /* head */ js.Any) => scala.Unit = null,
+    onProxyRes: (/* proxyRes */ nodeLib.httpMod.IncomingMessage, /* req */ nodeLib.httpMod.IncomingMessage, /* res */ nodeLib.httpMod.ServerResponse) => scala.Unit = null,
     pathRewrite: org.scalablytyped.runtime.StringDictionary[java.lang.String] | (js.Function2[
       /* path */ java.lang.String, 
       /* req */ nodeLib.httpMod.IncomingMessage, 
@@ -189,13 +162,13 @@ object Config {
     if (!js.isUndefined(ignorePath)) __obj.updateDynamic("ignorePath")(ignorePath)
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (logProvider != null) __obj.updateDynamic("logProvider")(logProvider)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
-    if (onProxyReq != null) __obj.updateDynamic("onProxyReq")(onProxyReq)
-    if (onProxyReqWs != null) __obj.updateDynamic("onProxyReqWs")(onProxyReqWs)
-    if (onProxyRes != null) __obj.updateDynamic("onProxyRes")(onProxyRes)
+    if (logProvider != null) __obj.updateDynamic("logProvider")(js.Any.fromFunction1(logProvider))
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction3(onClose))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction3(onError))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
+    if (onProxyReq != null) __obj.updateDynamic("onProxyReq")(js.Any.fromFunction3(onProxyReq))
+    if (onProxyReqWs != null) __obj.updateDynamic("onProxyReqWs")(js.Any.fromFunction5(onProxyReqWs))
+    if (onProxyRes != null) __obj.updateDynamic("onProxyRes")(js.Any.fromFunction3(onProxyRes))
     if (pathRewrite != null) __obj.updateDynamic("pathRewrite")(pathRewrite.asInstanceOf[js.Any])
     if (!js.isUndefined(prependPath)) __obj.updateDynamic("prependPath")(prependPath)
     if (!js.isUndefined(preserveHeaderKeyCase)) __obj.updateDynamic("preserveHeaderKeyCase")(preserveHeaderKeyCase)

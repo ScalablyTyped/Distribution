@@ -21,13 +21,10 @@ trait Clustering extends js.Object {
 object Clustering {
   @scala.inline
   def apply(
-    options: js.Function1[
-      heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, 
-      heremapsLib.HNs.clusteringNs.ProviderNs.ClusteringOptions
-    ],
-    rowToDataPoint: js.Function1[Row, heremapsLib.HNs.clusteringNs.DataPoint]
+    options: heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom => heremapsLib.HNs.clusteringNs.ProviderNs.ClusteringOptions,
+    rowToDataPoint: Row => heremapsLib.HNs.clusteringNs.DataPoint
   ): Clustering = {
-    val __obj = js.Dynamic.literal(options = options, rowToDataPoint = rowToDataPoint)
+    val __obj = js.Dynamic.literal(options = js.Any.fromFunction1(options), rowToDataPoint = js.Any.fromFunction1(rowToDataPoint))
   
     __obj.asInstanceOf[Clustering]
   }

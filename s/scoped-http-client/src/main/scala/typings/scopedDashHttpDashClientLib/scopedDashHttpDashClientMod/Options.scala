@@ -22,11 +22,7 @@ object Options {
     _defaultAgent: nodeLib.httpMod.Agent = null,
     agent: nodeLib.httpMod.Agent | scala.Boolean = null,
     auth: java.lang.String = null,
-    createConnection: js.Function2[
-      /* options */ nodeLib.httpMod.ClientRequestArgs, 
-      /* oncreate */ js.Function2[/* err */ nodeLib.Error, /* socket */ nodeLib.netMod.Socket, scala.Unit], 
-      nodeLib.netMod.Socket
-    ] = null,
+    createConnection: (/* options */ nodeLib.httpMod.ClientRequestArgs, /* oncreate */ js.Function2[/* err */ nodeLib.Error, /* socket */ nodeLib.netMod.Socket, scala.Unit]) => nodeLib.netMod.Socket = null,
     defaultPort: scala.Double | java.lang.String = null,
     encoding: java.lang.String = null,
     family: scala.Int | scala.Double = null,
@@ -52,7 +48,7 @@ object Options {
     if (_defaultAgent != null) __obj.updateDynamic("_defaultAgent")(_defaultAgent)
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth)
-    if (createConnection != null) __obj.updateDynamic("createConnection")(createConnection)
+    if (createConnection != null) __obj.updateDynamic("createConnection")(js.Any.fromFunction2(createConnection))
     if (defaultPort != null) __obj.updateDynamic("defaultPort")(defaultPort.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])

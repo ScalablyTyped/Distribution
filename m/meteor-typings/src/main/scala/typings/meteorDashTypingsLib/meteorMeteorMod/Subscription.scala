@@ -20,17 +20,17 @@ trait Subscription extends js.Object {
 object Subscription {
   @scala.inline
   def apply(
-    added: js.Function3[java.lang.String, java.lang.String, js.Object, scala.Unit],
-    changed: js.Function3[java.lang.String, java.lang.String, js.Object, scala.Unit],
+    added: (java.lang.String, java.lang.String, js.Object) => scala.Unit,
+    changed: (java.lang.String, java.lang.String, js.Object) => scala.Unit,
     connection: meteorDashTypingsLib.meteorMeteorMod.MeteorNs.Connection,
-    error: js.Function1[stdLib.Error, scala.Unit],
-    onStop: js.Function1[js.Function, scala.Unit],
-    ready: js.Function0[scala.Unit],
-    removed: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    stop: js.Function0[scala.Unit],
+    error: stdLib.Error => scala.Unit,
+    onStop: js.Function => scala.Unit,
+    ready: () => scala.Unit,
+    removed: (java.lang.String, java.lang.String) => scala.Unit,
+    stop: () => scala.Unit,
     userId: java.lang.String
   ): Subscription = {
-    val __obj = js.Dynamic.literal(added = added, changed = changed, connection = connection, error = error, onStop = onStop, ready = ready, removed = removed, stop = stop, userId = userId)
+    val __obj = js.Dynamic.literal(added = js.Any.fromFunction3(added), changed = js.Any.fromFunction3(changed), connection = connection, error = js.Any.fromFunction1(error), onStop = js.Any.fromFunction1(onStop), ready = js.Any.fromFunction0(ready), removed = js.Any.fromFunction2(removed), stop = js.Any.fromFunction0(stop), userId = userId)
   
     __obj.asInstanceOf[Subscription]
   }

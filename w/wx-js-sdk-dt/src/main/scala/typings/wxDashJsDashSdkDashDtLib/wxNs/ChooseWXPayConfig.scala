@@ -35,19 +35,19 @@ object ChooseWXPayConfig {
     `package`: java.lang.String,
     paySign: java.lang.String,
     timestamp: scala.Double,
-    cancel: js.Function0[scala.Unit] = null,
-    complete: js.Function1[/* res */ js.UndefOr[js.Any], scala.Unit] = null,
-    fail: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit] = null,
+    cancel: () => scala.Unit = null,
+    complete: /* res */ js.UndefOr[js.Any] => scala.Unit = null,
+    fail: /* error */ js.UndefOr[js.Any] => scala.Unit = null,
     signType: java.lang.String = null,
-    success: js.Function1[/* res */ js.UndefOr[js.Any], scala.Unit] = null
+    success: /* res */ js.UndefOr[js.Any] => scala.Unit = null
   ): ChooseWXPayConfig = {
     val __obj = js.Dynamic.literal(nonceStr = nonceStr, paySign = paySign, timestamp = timestamp)
     __obj.updateDynamic("package")(`package`)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (signType != null) __obj.updateDynamic("signType")(signType)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ChooseWXPayConfig]
   }
 }

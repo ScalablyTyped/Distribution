@@ -59,8 +59,8 @@ object ReactInfiniteCalendarProps {
     maxDate: DateType = null,
     min: DateType = null,
     minDate: DateType = null,
-    onScroll: js.Function1[/* scrollTop */ scala.Double, scala.Unit] = null,
-    onScrollEnd: js.Function1[/* scrollTop */ scala.Double, scala.Unit] = null,
+    onScroll: /* scrollTop */ scala.Double => scala.Unit = null,
+    onScrollEnd: /* scrollTop */ scala.Double => scala.Unit = null,
     onSelect: DateSelectFunction | RangedSelectFunction = null,
     rowHeight: scala.Int | scala.Double = null,
     selected: DateType | reactDashInfiniteDashCalendarLib.reactDashInfiniteDashCalendarLibNumbers.`false` | reactDashInfiniteDashCalendarLib.Anon_End = null,
@@ -82,8 +82,8 @@ object ReactInfiniteCalendarProps {
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
-    if (onScrollEnd != null) __obj.updateDynamic("onScrollEnd")(onScrollEnd)
+    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
+    if (onScrollEnd != null) __obj.updateDynamic("onScrollEnd")(js.Any.fromFunction1(onScrollEnd))
     if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])

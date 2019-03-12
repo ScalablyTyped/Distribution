@@ -19,7 +19,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    filter: js.Function2[/* path */ java.lang.String, /* stat */ nodeLib.fsMod.Stats, scala.Boolean] = null,
+    filter: (/* path */ java.lang.String, /* stat */ nodeLib.fsMod.Stats) => scala.Boolean = null,
     ignoreDirectoryPattern: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreDotFiles: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreNotPermitted: js.UndefOr[scala.Boolean] = js.undefined,
@@ -27,7 +27,7 @@ object Options {
     interval: scala.Int | scala.Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
     if (!js.isUndefined(ignoreDirectoryPattern)) __obj.updateDynamic("ignoreDirectoryPattern")(ignoreDirectoryPattern)
     if (!js.isUndefined(ignoreDotFiles)) __obj.updateDynamic("ignoreDotFiles")(ignoreDotFiles)
     if (!js.isUndefined(ignoreNotPermitted)) __obj.updateDynamic("ignoreNotPermitted")(ignoreNotPermitted)

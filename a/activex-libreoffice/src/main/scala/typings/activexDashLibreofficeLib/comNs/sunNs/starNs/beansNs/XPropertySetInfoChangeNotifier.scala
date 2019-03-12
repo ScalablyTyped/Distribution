@@ -29,13 +29,13 @@ trait XPropertySetInfoChangeNotifier
 object XPropertySetInfoChangeNotifier {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addPropertySetInfoChangeListener: js.Function1[XPropertySetInfoChangeListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removePropertySetInfoChangeListener: js.Function1[XPropertySetInfoChangeListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addPropertySetInfoChangeListener: XPropertySetInfoChangeListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removePropertySetInfoChangeListener: XPropertySetInfoChangeListener => scala.Unit
   ): XPropertySetInfoChangeNotifier = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addPropertySetInfoChangeListener = addPropertySetInfoChangeListener, queryInterface = queryInterface, release = release, removePropertySetInfoChangeListener = removePropertySetInfoChangeListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addPropertySetInfoChangeListener = js.Any.fromFunction1(addPropertySetInfoChangeListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertySetInfoChangeListener = js.Any.fromFunction1(removePropertySetInfoChangeListener))
   
     __obj.asInstanceOf[XPropertySetInfoChangeNotifier]
   }

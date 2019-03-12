@@ -25,20 +25,12 @@ trait IInterceptor[T] extends js.Object {
 object IInterceptor {
   @scala.inline
   def apply[T](
-    response: js.Function2[
-      /* data */ js.Any, 
-      /* params */ ngDashTableLib.srcCoreNgTableParamsMod.NgTableParams[T], 
-      _
-    ] = null,
-    responseError: js.Function2[
-      /* reason */ js.Any, 
-      /* params */ ngDashTableLib.srcCoreNgTableParamsMod.NgTableParams[T], 
-      _
-    ] = null
+    response: (/* data */ js.Any, /* params */ ngDashTableLib.srcCoreNgTableParamsMod.NgTableParams[T]) => _ = null,
+    responseError: (/* reason */ js.Any, /* params */ ngDashTableLib.srcCoreNgTableParamsMod.NgTableParams[T]) => _ = null
   ): IInterceptor[T] = {
     val __obj = js.Dynamic.literal()
-    if (response != null) __obj.updateDynamic("response")(response)
-    if (responseError != null) __obj.updateDynamic("responseError")(responseError)
+    if (response != null) __obj.updateDynamic("response")(js.Any.fromFunction2(response))
+    if (responseError != null) __obj.updateDynamic("responseError")(js.Any.fromFunction2(responseError))
     __obj.asInstanceOf[IInterceptor[T]]
   }
 }

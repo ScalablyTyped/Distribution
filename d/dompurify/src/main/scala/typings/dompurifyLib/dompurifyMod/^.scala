@@ -16,7 +16,7 @@ object ^ extends js.Object {
     cb: js.Function3[
       /* currentNode */ stdLib.Element, 
       /* data */ dompurifyLib.HookEvent, 
-      /* config */ dompurifyLib.dompurifyMod.Config, 
+      /* config */ Config, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -25,8 +25,8 @@ object ^ extends js.Object {
     hook: dompurifyLib.dompurifyLibStrings.uponSanitizeAttribute,
     cb: js.Function3[
       /* currentNode */ stdLib.Element, 
-      /* data */ dompurifyLib.dompurifyMod.SanitizeAttributeHookEvent, 
-      /* config */ dompurifyLib.dompurifyMod.Config, 
+      /* data */ SanitizeAttributeHookEvent, 
+      /* config */ Config, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -35,8 +35,8 @@ object ^ extends js.Object {
     hook: dompurifyLib.dompurifyLibStrings.uponSanitizeElement,
     cb: js.Function3[
       /* currentNode */ stdLib.Element, 
-      /* data */ dompurifyLib.dompurifyMod.SanitizeElementHookEvent, 
-      /* config */ dompurifyLib.dompurifyMod.Config, 
+      /* data */ SanitizeElementHookEvent, 
+      /* config */ Config, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -46,30 +46,21 @@ object ^ extends js.Object {
   def removeHook(entryPoint: dompurifyLib.HookName): scala.Unit = js.native
   def removeHooks(entryPoint: dompurifyLib.HookName): scala.Unit = js.native
   def sanitize(source: java.lang.String): java.lang.String = js.native
-  def sanitize(source: java.lang.String, config: dompurifyLib.dompurifyMod.Config): java.lang.String | stdLib.HTMLElement | stdLib.DocumentFragment = js.native
+  def sanitize(source: java.lang.String, config: Config): java.lang.String | stdLib.HTMLElement | stdLib.DocumentFragment = js.native
   def sanitize(source: stdLib.Node): java.lang.String = js.native
-  def sanitize(source: stdLib.Node, config: dompurifyLib.dompurifyMod.Config): java.lang.String | stdLib.HTMLElement | stdLib.DocumentFragment = js.native
+  def sanitize(source: stdLib.Node, config: Config): java.lang.String | stdLib.HTMLElement | stdLib.DocumentFragment = js.native
   @JSName("sanitize")
-  def sanitize_DocumentFragment(
-    source: java.lang.String,
-    config: dompurifyLib.dompurifyMod.Config with dompurifyLib.Anon_RETURNDOMFRAGMENT
-  ): stdLib.DocumentFragment = js.native
+  def sanitize_DocumentFragment(source: java.lang.String, config: Config with dompurifyLib.Anon_RETURNDOMFRAGMENT): stdLib.DocumentFragment = js.native
   @JSName("sanitize")
-  def sanitize_DocumentFragment(
-    source: stdLib.Node,
-    config: dompurifyLib.dompurifyMod.Config with dompurifyLib.Anon_RETURNDOMFRAGMENT
-  ): stdLib.DocumentFragment = js.native
+  def sanitize_DocumentFragment(source: stdLib.Node, config: Config with dompurifyLib.Anon_RETURNDOMFRAGMENT): stdLib.DocumentFragment = js.native
   @JSName("sanitize")
-  def sanitize_HTMLElement(
-    source: java.lang.String,
-    config: dompurifyLib.dompurifyMod.Config with dompurifyLib.Anon_RETURNDOM
-  ): stdLib.HTMLElement = js.native
+  def sanitize_HTMLElement(source: java.lang.String, config: Config with dompurifyLib.Anon_RETURNDOM): stdLib.HTMLElement = js.native
   @JSName("sanitize")
-  def sanitize_HTMLElement(source: stdLib.Node, config: dompurifyLib.dompurifyMod.Config with dompurifyLib.Anon_RETURNDOM): stdLib.HTMLElement = js.native
+  def sanitize_HTMLElement(source: stdLib.Node, config: Config with dompurifyLib.Anon_RETURNDOM): stdLib.HTMLElement = js.native
   @JSName("sanitize")
-  def sanitize_String(source: java.lang.String, config: dompurifyLib.dompurifyMod.Config with dompurifyLib.Anon_False): java.lang.String = js.native
+  def sanitize_String(source: java.lang.String, config: Config with dompurifyLib.Anon_False): java.lang.String = js.native
   @JSName("sanitize")
-  def sanitize_String(source: stdLib.Node, config: dompurifyLib.dompurifyMod.Config with dompurifyLib.Anon_False): java.lang.String = js.native
-  def setConfig(cfg: dompurifyLib.dompurifyMod.Config): scala.Unit = js.native
+  def sanitize_String(source: stdLib.Node, config: Config with dompurifyLib.Anon_False): java.lang.String = js.native
+  def setConfig(cfg: Config): scala.Unit = js.native
 }
 

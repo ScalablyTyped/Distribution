@@ -25,31 +25,19 @@ trait ICryptographicBufferStatics extends js.Object {
 object ICryptographicBufferStatics {
   @scala.inline
   def apply(
-    compare: js.Function2[
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      scala.Boolean
-    ],
-    convertBinaryToString: js.Function2[
-      BinaryStringEncoding, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      java.lang.String
-    ],
-    convertStringToBinary: js.Function2[
-      java.lang.String, 
-      BinaryStringEncoding, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer
-    ],
-    copyToByteArray: js.Function1[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, stdLib.Uint8Array],
-    createFromByteArray: js.Function1[stdLib.Uint8Array, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer],
-    decodeFromBase64String: js.Function1[java.lang.String, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer],
-    decodeFromHexString: js.Function1[java.lang.String, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer],
-    encodeToBase64String: js.Function1[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, java.lang.String],
-    encodeToHexString: js.Function1[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, java.lang.String],
-    generateRandom: js.Function1[scala.Double, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer],
-    generateRandomNumber: js.Function0[scala.Double]
+    compare: (winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer) => scala.Boolean,
+    convertBinaryToString: (BinaryStringEncoding, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer) => java.lang.String,
+    convertStringToBinary: (java.lang.String, BinaryStringEncoding) => winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
+    copyToByteArray: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer => stdLib.Uint8Array,
+    createFromByteArray: stdLib.Uint8Array => winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
+    decodeFromBase64String: java.lang.String => winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
+    decodeFromHexString: java.lang.String => winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
+    encodeToBase64String: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer => java.lang.String,
+    encodeToHexString: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer => java.lang.String,
+    generateRandom: scala.Double => winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
+    generateRandomNumber: () => scala.Double
   ): ICryptographicBufferStatics = {
-    val __obj = js.Dynamic.literal(compare = compare, convertBinaryToString = convertBinaryToString, convertStringToBinary = convertStringToBinary, copyToByteArray = copyToByteArray, createFromByteArray = createFromByteArray, decodeFromBase64String = decodeFromBase64String, decodeFromHexString = decodeFromHexString, encodeToBase64String = encodeToBase64String, encodeToHexString = encodeToHexString, generateRandom = generateRandom, generateRandomNumber = generateRandomNumber)
+    val __obj = js.Dynamic.literal(compare = js.Any.fromFunction2(compare), convertBinaryToString = js.Any.fromFunction2(convertBinaryToString), convertStringToBinary = js.Any.fromFunction2(convertStringToBinary), copyToByteArray = js.Any.fromFunction1(copyToByteArray), createFromByteArray = js.Any.fromFunction1(createFromByteArray), decodeFromBase64String = js.Any.fromFunction1(decodeFromBase64String), decodeFromHexString = js.Any.fromFunction1(decodeFromHexString), encodeToBase64String = js.Any.fromFunction1(encodeToBase64String), encodeToHexString = js.Any.fromFunction1(encodeToHexString), generateRandom = js.Any.fromFunction1(generateRandom), generateRandomNumber = js.Any.fromFunction0(generateRandomNumber))
   
     __obj.asInstanceOf[ICryptographicBufferStatics]
   }

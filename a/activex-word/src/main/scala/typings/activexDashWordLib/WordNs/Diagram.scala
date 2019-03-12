@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.Diagram")
 @js.native
 class Diagram protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var AutoFormat: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   var AutoLayout: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   val Creator: scala.Double = js.native

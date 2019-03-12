@@ -37,24 +37,12 @@ trait ConfigsResource extends js.Object {
 object ConfigsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Service]
-    ],
-    get: js.Function1[
-      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Service]
-    ],
-    list: js.Function1[
-      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListServiceConfigsResponse]
-    ],
-    submit: js.Function1[
-      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    create: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[Service],
+    get: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[Service],
+    list: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[ListServiceConfigsResponse],
+    submit: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): ConfigsResource = {
-    val __obj = js.Dynamic.literal(create = create, get = get, list = list, submit = submit)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), submit = js.Any.fromFunction1(submit))
   
     __obj.asInstanceOf[ConfigsResource]
   }

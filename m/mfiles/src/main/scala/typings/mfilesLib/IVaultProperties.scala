@@ -23,7 +23,7 @@ trait IVaultProperties extends js.Object {
 object IVaultProperties {
   @scala.inline
   def apply(
-    Clone: js.Function0[IVaultProperties],
+    Clone: () => IVaultProperties,
     DisplayName: java.lang.String,
     EncryptionOfFileDataAtRest: scala.Boolean,
     ExtendedMetadataDrivenPermissions: scala.Boolean,
@@ -36,7 +36,7 @@ object IVaultProperties {
     SeparateLocationForFileData: IAdditionalFolders,
     VaultGUID: java.lang.String
   ): IVaultProperties = {
-    val __obj = js.Dynamic.literal(Clone = Clone, DisplayName = DisplayName, EncryptionOfFileDataAtRest = EncryptionOfFileDataAtRest, ExtendedMetadataDrivenPermissions = ExtendedMetadataDrivenPermissions, FileDataConnectionString = FileDataConnectionString, FileDataStorageType = FileDataStorageType, FullTextSearchLanguage = FullTextSearchLanguage, Icon = Icon, MainDataFolder = MainDataFolder, SQLDatabase = SQLDatabase, SeparateLocationForFileData = SeparateLocationForFileData, VaultGUID = VaultGUID)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), DisplayName = DisplayName, EncryptionOfFileDataAtRest = EncryptionOfFileDataAtRest, ExtendedMetadataDrivenPermissions = ExtendedMetadataDrivenPermissions, FileDataConnectionString = FileDataConnectionString, FileDataStorageType = FileDataStorageType, FullTextSearchLanguage = FullTextSearchLanguage, Icon = Icon, MainDataFolder = MainDataFolder, SQLDatabase = SQLDatabase, SeparateLocationForFileData = SeparateLocationForFileData, VaultGUID = VaultGUID)
   
     __obj.asInstanceOf[IVaultProperties]
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PssAlgorithmParams
   extends xmlDashCoreLib.xmlDashCoreMod.XmlObject {
-  var DigestMethod: DigestMethod = js.native
+  var DigestMethod: xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.DigestMethod = js.native
   var MGF: MaskGenerationFunction = js.native
   var SaltLength: scala.Double = js.native
   var TrailerField: scala.Double = js.native

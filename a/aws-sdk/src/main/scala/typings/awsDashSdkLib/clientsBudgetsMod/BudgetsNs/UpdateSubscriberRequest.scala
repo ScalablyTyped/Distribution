@@ -9,11 +9,11 @@ trait UpdateSubscriberRequest extends js.Object {
   /**
     * The accountId that is associated with the budget whose subscriber you want to update.
     */
-  var AccountId: AccountId
+  var AccountId: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.AccountId
   /**
     * The name of the budget whose subscriber you want to update.
     */
-  var BudgetName: BudgetName
+  var BudgetName: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.BudgetName
   /**
     * The updated subscriber that is associated with a budget notification.
     */
@@ -21,7 +21,7 @@ trait UpdateSubscriberRequest extends js.Object {
   /**
     * The notification whose subscriber you want to update.
     */
-  var Notification: Notification
+  var Notification: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.Notification
   /**
     * The previous subscriber that is associated with a budget notification.
     */

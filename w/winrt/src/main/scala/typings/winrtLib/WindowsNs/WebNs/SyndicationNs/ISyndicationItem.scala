@@ -41,14 +41,14 @@ object ISyndicationItem {
     editMediaUri: winrtLib.WindowsNs.FoundationNs.Uri,
     editUri: winrtLib.WindowsNs.FoundationNs.Uri,
     elementExtensions: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[ISyndicationNode],
-    getXmlDocument: js.Function1[SyndicationFormat, winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument],
+    getXmlDocument: SyndicationFormat => winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument,
     id: java.lang.String,
     itemUri: winrtLib.WindowsNs.FoundationNs.Uri,
     language: java.lang.String,
     lastUpdatedTime: stdLib.Date,
     links: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[SyndicationLink],
-    load: js.Function1[java.lang.String, scala.Unit],
-    loadFromXml: js.Function1[winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument, scala.Unit],
+    load: java.lang.String => scala.Unit,
+    loadFromXml: winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument => scala.Unit,
     nodeName: java.lang.String,
     nodeNamespace: java.lang.String,
     nodeValue: java.lang.String,
@@ -58,7 +58,7 @@ object ISyndicationItem {
     summary: ISyndicationText,
     title: ISyndicationText
   ): ISyndicationItem = {
-    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions, authors = authors, baseUri = baseUri, categories = categories, commentsUri = commentsUri, content = content, contributors = contributors, eTag = eTag, editMediaUri = editMediaUri, editUri = editUri, elementExtensions = elementExtensions, getXmlDocument = getXmlDocument, id = id, itemUri = itemUri, language = language, lastUpdatedTime = lastUpdatedTime, links = links, load = load, loadFromXml = loadFromXml, nodeName = nodeName, nodeNamespace = nodeNamespace, nodeValue = nodeValue, publishedDate = publishedDate, rights = rights, source = source, summary = summary, title = title)
+    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions, authors = authors, baseUri = baseUri, categories = categories, commentsUri = commentsUri, content = content, contributors = contributors, eTag = eTag, editMediaUri = editMediaUri, editUri = editUri, elementExtensions = elementExtensions, getXmlDocument = js.Any.fromFunction1(getXmlDocument), id = id, itemUri = itemUri, language = language, lastUpdatedTime = lastUpdatedTime, links = links, load = js.Any.fromFunction1(load), loadFromXml = js.Any.fromFunction1(loadFromXml), nodeName = nodeName, nodeNamespace = nodeNamespace, nodeValue = nodeValue, publishedDate = publishedDate, rights = rights, source = source, summary = summary, title = title)
   
     __obj.asInstanceOf[ISyndicationItem]
   }

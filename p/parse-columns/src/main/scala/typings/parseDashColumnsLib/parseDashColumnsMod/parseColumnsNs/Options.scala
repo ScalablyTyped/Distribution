@@ -17,11 +17,11 @@ trait Options[T] extends BaseOptions {
 object Options {
   @scala.inline
   def apply[T](
-    transform: js.Function4[java.lang.String, java.lang.String, scala.Double, scala.Double, T],
+    transform: (java.lang.String, java.lang.String, scala.Double, scala.Double) => T,
     headers: js.Array[java.lang.String] = null,
     separator: java.lang.String = null
   ): Options[T] = {
-    val __obj = js.Dynamic.literal(transform = transform)
+    val __obj = js.Dynamic.literal(transform = js.Any.fromFunction4(transform))
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (separator != null) __obj.updateDynamic("separator")(separator)
     __obj.asInstanceOf[Options[T]]

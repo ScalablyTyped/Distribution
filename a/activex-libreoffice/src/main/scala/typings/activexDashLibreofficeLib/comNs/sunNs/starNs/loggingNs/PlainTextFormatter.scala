@@ -21,12 +21,12 @@ object PlainTextFormatter {
   def apply(
     Head: java.lang.String,
     Tail: java.lang.String,
-    create: js.Function0[scala.Unit],
-    format: js.Function1[LogRecord, java.lang.String],
-    getHead: js.Function0[java.lang.String],
-    getTail: js.Function0[java.lang.String]
+    create: () => scala.Unit,
+    format: LogRecord => java.lang.String,
+    getHead: () => java.lang.String,
+    getTail: () => java.lang.String
   ): PlainTextFormatter = {
-    val __obj = js.Dynamic.literal(Head = Head, Tail = Tail, create = create, format = format, getHead = getHead, getTail = getTail)
+    val __obj = js.Dynamic.literal(Head = Head, Tail = Tail, create = js.Any.fromFunction0(create), format = js.Any.fromFunction1(format), getHead = js.Any.fromFunction0(getHead), getTail = js.Any.fromFunction0(getTail))
   
     __obj.asInstanceOf[PlainTextFormatter]
   }

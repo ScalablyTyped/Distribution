@@ -31,13 +31,13 @@ trait XTypeConverter
 object XTypeConverter {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    convertTo: js.Function2[js.Any, activexDashLibreofficeLib.`type`, js.Any],
-    convertToSimpleType: js.Function2[js.Any, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    convertTo: (js.Any, activexDashLibreofficeLib.`type`) => js.Any,
+    convertToSimpleType: (js.Any, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass) => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTypeConverter = {
-    val __obj = js.Dynamic.literal(acquire = acquire, convertTo = convertTo, convertToSimpleType = convertToSimpleType, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), convertTo = js.Any.fromFunction2(convertTo), convertToSimpleType = js.Any.fromFunction2(convertToSimpleType), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTypeConverter]
   }

@@ -23,32 +23,14 @@ trait ColumnResource extends js.Object {
 object ColumnResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotFusiontablesLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotFusiontablesLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Column]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotFusiontablesLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Column]
-    ],
-    list: js.Function1[
-      gapiDotClientDotFusiontablesLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ColumnList]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotFusiontablesLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Column]
-    ],
-    update: js.Function1[
-      gapiDotClientDotFusiontablesLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Column]
-    ]
+    delete: gapiDotClientDotFusiontablesLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotFusiontablesLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Column],
+    insert: gapiDotClientDotFusiontablesLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Column],
+    list: gapiDotClientDotFusiontablesLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[ColumnList],
+    patch: gapiDotClientDotFusiontablesLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Column],
+    update: gapiDotClientDotFusiontablesLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Column]
   ): ColumnResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[ColumnResource]
   }

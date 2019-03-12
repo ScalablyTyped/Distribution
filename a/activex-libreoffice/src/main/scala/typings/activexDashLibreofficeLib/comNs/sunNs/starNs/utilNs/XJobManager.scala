@@ -19,14 +19,14 @@ trait XJobManager
 object XJobManager {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    cancelAllJobs: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerJob: js.Function1[XCancellable, scala.Unit],
-    release: js.Function0[scala.Unit],
-    releaseJob: js.Function1[XCancellable, scala.Unit]
+    acquire: () => scala.Unit,
+    cancelAllJobs: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerJob: XCancellable => scala.Unit,
+    release: () => scala.Unit,
+    releaseJob: XCancellable => scala.Unit
   ): XJobManager = {
-    val __obj = js.Dynamic.literal(acquire = acquire, cancelAllJobs = cancelAllJobs, queryInterface = queryInterface, registerJob = registerJob, release = release, releaseJob = releaseJob)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), cancelAllJobs = js.Any.fromFunction0(cancelAllJobs), queryInterface = js.Any.fromFunction1(queryInterface), registerJob = js.Any.fromFunction1(registerJob), release = js.Any.fromFunction0(release), releaseJob = js.Any.fromFunction1(releaseJob))
   
     __obj.asInstanceOf[XJobManager]
   }

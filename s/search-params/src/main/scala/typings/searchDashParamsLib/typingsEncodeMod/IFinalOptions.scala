@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IFinalOptions extends js.Object {
-  var arrayFormat: arrayFormat
-  var booleanFormat: booleanFormat
-  var nullFormat: nullFormat
+  var arrayFormat: searchDashParamsLib.typingsEncodeMod.arrayFormat
+  var booleanFormat: searchDashParamsLib.typingsEncodeMod.booleanFormat
+  var nullFormat: searchDashParamsLib.typingsEncodeMod.nullFormat
 }
 
 object IFinalOptions {

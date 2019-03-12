@@ -12,8 +12,8 @@ trait Observer extends js.Object {
 
 object Observer {
   @scala.inline
-  def apply(observe: js.Function0[scala.Unit], triggerLoad: js.Function1[stdLib.Element, scala.Unit]): Observer = {
-    val __obj = js.Dynamic.literal(observe = observe, triggerLoad = triggerLoad)
+  def apply(observe: () => scala.Unit, triggerLoad: stdLib.Element => scala.Unit): Observer = {
+    val __obj = js.Dynamic.literal(observe = js.Any.fromFunction0(observe), triggerLoad = js.Any.fromFunction1(triggerLoad))
   
     __obj.asInstanceOf[Observer]
   }

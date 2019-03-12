@@ -36,13 +36,13 @@ trait IRadioGroupProps
     * Use `event.currentTarget.value` to read the currently selected value.
     * This prop is required because this component only supports controlled usage.
     */
-  def onChange(event: reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLInputElement]): scala.Unit
+  def onChange(event: reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLInputElement]): scala.Unit
 }
 
 object IRadioGroupProps {
   @scala.inline
   def apply(
-    onChange: js.Function1[reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLInputElement], scala.Unit],
+    onChange: reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLInputElement] => scala.Unit,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
@@ -51,7 +51,7 @@ object IRadioGroupProps {
     options: js.Array[atBlueprintjsCoreLib.libEsmCommonPropsMod.IOptionProps] = null,
     selectedValue: java.lang.String | scala.Double = null
   ): IRadioGroupProps = {
-    val __obj = js.Dynamic.literal(onChange = onChange)
+    val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange))
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)

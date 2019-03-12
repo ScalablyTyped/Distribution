@@ -27,15 +27,15 @@ class Application protected () extends js.Object {
   var AltStartupPath: java.lang.String = js.native
   var AlwaysUseClearType: scala.Boolean = js.native
   val AnswerWizard: activexDashOfficeLib.OfficeNs.AnswerWizard = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val ArbitraryXMLSupportAvailable: scala.Boolean = js.native
   var AskToUpdateLinks: scala.Boolean = js.native
   val Assistance: activexDashOfficeLib.OfficeNs.IAssistance = js.native
   val Assistant: activexDashOfficeLib.OfficeNs.Assistant = js.native
-  val AutoCorrect: AutoCorrect = js.native
+  val AutoCorrect: activexDashExcelLib.ExcelNs.AutoCorrect = js.native
   var AutoFormatAsYouTypeReplaceHyperlinks: scala.Boolean = js.native
   var AutoPercentEntry: scala.Boolean = js.native
-  val AutoRecover: AutoRecover = js.native
+  val AutoRecover: activexDashExcelLib.ExcelNs.AutoRecover = js.native
   var AutomationSecurity: activexDashOfficeLib.OfficeNs.MsoAutomationSecurity = js.native
   val Build: scala.Double = js.native
   @JSName("COMAddIns")
@@ -54,7 +54,7 @@ class Application protected () extends js.Object {
   @JSName("Charts")
   val Charts_Original: Sheets[Chart] = js.native
   @JSName("ClipboardFormats")
-  var ClipboardFormats_Original: activexDashInteropLib.SafeArray[XlClipboardFormat] with (js.Function1[/* Index */ scala.Double, XlClipboardFormat]) = js.native
+  var ClipboardFormats_Original: stdLib.SafeArray[XlClipboardFormat] with (js.Function1[/* Index */ scala.Double, XlClipboardFormat]) = js.native
   var ClusterConnector: java.lang.String = js.native
   var ColorButtons: scala.Boolean = js.native
   @JSName("Columns")
@@ -76,7 +76,7 @@ class Application protected () extends js.Object {
   var DefaultFilePath: java.lang.String = js.native
   var DefaultSaveFormat: XlFileFormat = js.native
   var DefaultSheetDirection: scala.Double = js.native
-  val DefaultWebOptions: DefaultWebOptions = js.native
+  val DefaultWebOptions: activexDashExcelLib.ExcelNs.DefaultWebOptions = js.native
   var DeferAsyncQueries: scala.Boolean = js.native
   @JSName("DialogSheets")
   val DialogSheets_Original: Sheets[DialogSheet] = js.native
@@ -111,7 +111,7 @@ class Application protected () extends js.Object {
   var EnableLivePreview: scala.Boolean = js.native
   var EnableSound: scala.Boolean = js.native
   var EnableTipWizard: scala.Boolean = js.native
-  val ErrorCheckingOptions: ErrorCheckingOptions = js.native
+  val ErrorCheckingOptions: activexDashExcelLib.ExcelNs.ErrorCheckingOptions = js.native
   var `Excel.Application_typekey`: Application = js.native
   @JSName("Excel4IntlMacroSheets")
   val Excel4IntlMacroSheets_Original: Sheets[Sheet] = js.native
@@ -139,7 +139,7 @@ class Application protected () extends js.Object {
   var IgnoreRemoteRequests: scala.Boolean = js.native
   var Interactive: scala.Boolean = js.native
   @JSName("International")
-  var International_Original: activexDashInteropLib.SafeArray[_] with (js.Function1[/* Index */ js.Any, InternationalResult[_]]) = js.native
+  var International_Original: stdLib.SafeArray[_] with (js.Function1[/* Index */ js.Any, InternationalResult[_]]) = js.native
   val IsSandboxed: scala.Boolean = js.native
   var Iteration: scala.Boolean = js.native
   val LanguageSettings: activexDashOfficeLib.OfficeNs.LanguageSettings = js.native
@@ -164,7 +164,7 @@ class Application protected () extends js.Object {
   val MouseAvailable: scala.Boolean = js.native
   var MoveAfterReturn: scala.Boolean = js.native
   var MoveAfterReturnDirection: XlDirection = js.native
-  val MultiThreadedCalculation: MultiThreadedCalculation = js.native
+  val MultiThreadedCalculation: activexDashExcelLib.ExcelNs.MultiThreadedCalculation = js.native
   val Name: java.lang.String = js.native
   @JSName("Names")
   val Names_Original: Names = js.native
@@ -194,7 +194,7 @@ class Application protected () extends js.Object {
   @JSName("ProtectedViewWindows")
   val ProtectedViewWindows_Original: ProtectedViewWindows = js.native
   val Quitting: scala.Boolean = js.native
-  val RTD: RTD = js.native
+  val RTD: activexDashExcelLib.ExcelNs.RTD = js.native
   val Ready: scala.Boolean = js.native
   @JSName("RecentFiles")
   val RecentFiles_Original: RecentFiles = js.native
@@ -226,8 +226,8 @@ class Application protected () extends js.Object {
   val SmartArtQuickStyles_Original: activexDashOfficeLib.OfficeNs.SmartArtQuickStyles = js.native
   @JSName("SmartTagRecognizers")
   val SmartTagRecognizers_Original: SmartTagRecognizers = js.native
-  val Speech: Speech = js.native
-  val SpellingOptions: SpellingOptions = js.native
+  val Speech: activexDashExcelLib.ExcelNs.Speech = js.native
+  val SpellingOptions: activexDashExcelLib.ExcelNs.SpellingOptions = js.native
   var StandardFont: java.lang.String = js.native
   var StandardFontSize: scala.Double = js.native
   val StartupPath: java.lang.String = js.native
@@ -274,7 +274,7 @@ class Application protected () extends js.Object {
   val Windows_Original: Windows = js.native
   @JSName("Workbooks")
   val Workbooks_Original: Workbooks = js.native
-  val WorksheetFunction: WorksheetFunction = js.native
+  val WorksheetFunction: activexDashExcelLib.ExcelNs.WorksheetFunction = js.native
   @JSName("Worksheets")
   val Worksheets_Original: Sheets[Worksheet] = js.native
   val _Default: java.lang.String = js.native
@@ -286,8 +286,8 @@ class Application protected () extends js.Object {
   def AddChartAutoFormat(Chart: js.Any, Name: java.lang.String, Description: js.Any): scala.Unit = js.native
   def AddCustomList(ListArray: Range): scala.Unit = js.native
   def AddCustomList(ListArray: Range, ByRow: scala.Boolean): scala.Unit = js.native
-  def AddCustomList(ListArray: activexDashInteropLib.SafeArray[java.lang.String]): scala.Unit = js.native
-  def AddCustomList(ListArray: activexDashInteropLib.SafeArray[java.lang.String], ByRow: scala.Boolean): scala.Unit = js.native
+  def AddCustomList(ListArray: stdLib.SafeArray[java.lang.String]): scala.Unit = js.native
+  def AddCustomList(ListArray: stdLib.SafeArray[java.lang.String], ByRow: scala.Boolean): scala.Unit = js.native
   def AddIns(Index: java.lang.String): AddIn = js.native
   def AddIns(Index: scala.Double): AddIn = js.native
   def AddIns2(Index: java.lang.String): AddIn = js.native
@@ -304,7 +304,7 @@ class Application protected () extends js.Object {
   def Cells(RowIndex: scala.Double): Range = js.native
   def Cells(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native
   def CentimetersToPoints(Centimeters: scala.Double): scala.Double = js.native
-  def Charts(Indexes: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): Sheets[Chart] = js.native
+  def Charts(Indexes: stdLib.SafeArray[java.lang.String | scala.Double]): Sheets[Chart] = js.native
   def Charts(Index: java.lang.String): Chart = js.native
   def Charts(Index: scala.Double): Chart = js.native
   def CheckAbort(): scala.Unit = js.native
@@ -344,7 +344,7 @@ class Application protected () extends js.Object {
   def DDETerminate(Channel: scala.Double): scala.Unit = js.native
   def DeleteChartAutoFormat(Name: java.lang.String): scala.Unit = js.native
   def DeleteCustomList(ListNum: scala.Double): scala.Unit = js.native
-  def DialogSheets(Indexes: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): Sheets[DialogSheet] = js.native
+  def DialogSheets(Indexes: stdLib.SafeArray[java.lang.String | scala.Double]): Sheets[DialogSheet] = js.native
   def DialogSheets(Index: java.lang.String): DialogSheet = js.native
   def DialogSheets(Index: scala.Double): DialogSheet = js.native
   def Dialogs(Index: XlBuiltInDialog): Dialog = js.native
@@ -443,21 +443,21 @@ class Application protected () extends js.Object {
   def Dummy8(Arg1: js.Any): js.Any = js.native
   def Dummy9(): js.Any = js.native
   def Evaluate(Name: java.lang.String): js.Any = js.native
-  def Excel4IntlMacroSheets(Indexes: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): Sheets[Sheet] = js.native
+  def Excel4IntlMacroSheets(Indexes: stdLib.SafeArray[java.lang.String | scala.Double]): Sheets[Sheet] = js.native
   def Excel4IntlMacroSheets(Index: java.lang.String): Sheet = js.native
   def Excel4IntlMacroSheets(Index: scala.Double): Sheet = js.native
-  def Excel4MacroSheets(Indexes: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): Sheets[Sheet] = js.native
+  def Excel4MacroSheets(Indexes: stdLib.SafeArray[java.lang.String | scala.Double]): Sheets[Sheet] = js.native
   def Excel4MacroSheets(Index: java.lang.String): Sheet = js.native
   def Excel4MacroSheets(Index: scala.Double): Sheet = js.native
   def ExecuteExcel4Macro(String: java.lang.String): js.Any = js.native
-  def FileConverters(): activexDashInteropLib.SafeArray[_] = js.native
-  def FileConverters(Index1: java.lang.String): activexDashInteropLib.SafeArray[_] = js.native
-  def FileConverters(Index1: java.lang.String, Index2: java.lang.String): activexDashInteropLib.SafeArray[_] = js.native
+  def FileConverters(): stdLib.SafeArray[_] = js.native
+  def FileConverters(Index1: java.lang.String): stdLib.SafeArray[_] = js.native
+  def FileConverters(Index1: java.lang.String, Index2: java.lang.String): stdLib.SafeArray[_] = js.native
   def FileDialog(fileDialogType: activexDashOfficeLib.OfficeNs.MsoFileDialogType): activexDashOfficeLib.OfficeNs.FileDialog = js.native
   def FileExportConverters(Index: scala.Double): FileExportConverter = js.native
   def FindFile(): scala.Boolean = js.native
-  def GetCustomListContents(ListNum: scala.Double): activexDashInteropLib.SafeArray[java.lang.String] = js.native
-  def GetCustomListNum(ListArray: activexDashInteropLib.SafeArray[java.lang.String]): scala.Double = js.native
+  def GetCustomListContents(ListNum: scala.Double): stdLib.SafeArray[java.lang.String] = js.native
+  def GetCustomListNum(ListArray: stdLib.SafeArray[java.lang.String]): scala.Double = js.native
   /** @param ButtonText Macintosh only */
   def GetOpenFilename(): java.lang.String = js.native
   def GetOpenFilename(FileFilter: java.lang.String): java.lang.String = js.native
@@ -477,56 +477,56 @@ class Application protected () extends js.Object {
     Title: java.lang.String,
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
-  ): activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  ): stdLib.SafeArray[java.lang.String] = js.native
   def GetOpenFilename(
     FileFilter: java.lang.String,
     FilterIndex: scala.Double,
     Title: scala.Null,
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
-  ): activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  ): stdLib.SafeArray[java.lang.String] = js.native
   def GetOpenFilename(
     FileFilter: java.lang.String,
     FilterIndex: scala.Null,
     Title: java.lang.String,
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
-  ): activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  ): stdLib.SafeArray[java.lang.String] = js.native
   def GetOpenFilename(
     FileFilter: java.lang.String,
     FilterIndex: scala.Null,
     Title: scala.Null,
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
-  ): activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  ): stdLib.SafeArray[java.lang.String] = js.native
   def GetOpenFilename(
     FileFilter: scala.Null,
     FilterIndex: scala.Double,
     Title: java.lang.String,
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
-  ): activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  ): stdLib.SafeArray[java.lang.String] = js.native
   def GetOpenFilename(
     FileFilter: scala.Null,
     FilterIndex: scala.Double,
     Title: scala.Null,
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
-  ): activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  ): stdLib.SafeArray[java.lang.String] = js.native
   def GetOpenFilename(
     FileFilter: scala.Null,
     FilterIndex: scala.Null,
     Title: java.lang.String,
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
-  ): activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  ): stdLib.SafeArray[java.lang.String] = js.native
   def GetOpenFilename(
     FileFilter: scala.Null,
     FilterIndex: scala.Null,
     Title: scala.Null,
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
-  ): activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  ): stdLib.SafeArray[java.lang.String] = js.native
   def GetPhonetic(): java.lang.String = js.native
   def GetPhonetic(Text: java.lang.String): java.lang.String = js.native
   /** @param ButtonText Macintosh only */
@@ -558,7 +558,7 @@ class Application protected () extends js.Object {
     HelpFile: js.UndefOr[java.lang.String],
     HelpContextID: js.UndefOr[scala.Double],
     Type: js.UndefOr[InputBoxReturnType]
-  ): java.lang.String | scala.Double | scala.Boolean | Range | Error | activexDashInteropLib.SafeArray[java.lang.String] | activexDashInteropLib.SafeArray[scala.Double] | activexDashInteropLib.SafeArray[scala.Boolean] = js.native
+  ): java.lang.String | scala.Double | scala.Boolean | Range | Error | stdLib.SafeArray[java.lang.String] | stdLib.SafeArray[scala.Double] | stdLib.SafeArray[scala.Boolean] = js.native
   def International[T](Index: T): InternationalResult[T] = js.native
   def Intersect(
     Arg1: Range,
@@ -603,7 +603,7 @@ class Application protected () extends js.Object {
     StatusBar: js.UndefOr[java.lang.String],
     HelpContextID: js.UndefOr[scala.Double],
     HelpFile: js.UndefOr[java.lang.String],
-    ArgumentDescriptions: js.UndefOr[activexDashInteropLib.SafeArray[java.lang.String]]
+    ArgumentDescriptions: js.UndefOr[stdLib.SafeArray[java.lang.String]]
   ): scala.Unit = js.native
   def MailLogoff(): scala.Unit = js.native
   def MailLogon(): scala.Unit = js.native
@@ -637,12 +637,12 @@ class Application protected () extends js.Object {
   def ProtectedViewWindows(Index: java.lang.String): ProtectedViewWindow = js.native
   def ProtectedViewWindows(Index: scala.Double): ProtectedViewWindow = js.native
   def Quit(): scala.Unit = js.native
-  def Range(Cell1: Range): Range = js.native
-  def Range(Cell1: Range, Cell2: Range): Range = js.native
-  def Range(Cell1: Range, Cell2: java.lang.String): Range = js.native
-  def Range(Cell1: java.lang.String): Range = js.native
-  def Range(Cell1: java.lang.String, Cell2: Range): Range = js.native
-  def Range(Cell1: java.lang.String, Cell2: java.lang.String): Range = js.native
+  def Range(Cell1: Range): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(Cell1: Range, Cell2: Range): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(Cell1: Range, Cell2: java.lang.String): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(Cell1: java.lang.String): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(Cell1: java.lang.String, Cell2: Range): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(Cell1: java.lang.String, Cell2: java.lang.String): activexDashExcelLib.ExcelNs.Range = js.native
   def RecentFiles(Index: scala.Double): RecentFile = js.native
   def RecordMacro(BasicCode: java.lang.String): scala.Unit = js.native
   /** This overload prevents recording */
@@ -652,10 +652,10 @@ class Application protected () extends js.Object {
     XlmCode: activexDashExcelLib.activexDashExcelLibStrings.Empty
   ): scala.Unit = js.native
   def RegisterXLL(Filename: java.lang.String): scala.Boolean = js.native
-  def RegisteredFunctions(): activexDashInteropLib.SafeArray[_] | scala.Null = js.native
-  def RegisteredFunctions(Index1: java.lang.String): activexDashInteropLib.SafeArray[_] | scala.Null = js.native
-  def RegisteredFunctions(Index1: java.lang.String, Index2: java.lang.String): activexDashInteropLib.SafeArray[_] | scala.Null = js.native
-  def RegisteredFunctions(Index1: js.UndefOr[scala.Nothing], Index2: java.lang.String): activexDashInteropLib.SafeArray[_] | scala.Null = js.native
+  def RegisteredFunctions(): stdLib.SafeArray[_] | scala.Null = js.native
+  def RegisteredFunctions(Index1: java.lang.String): stdLib.SafeArray[_] | scala.Null = js.native
+  def RegisteredFunctions(Index1: java.lang.String, Index2: java.lang.String): stdLib.SafeArray[_] | scala.Null = js.native
+  def RegisteredFunctions(Index1: js.UndefOr[scala.Nothing], Index2: java.lang.String): stdLib.SafeArray[_] | scala.Null = js.native
   def Repeat(): scala.Unit = js.native
   def ResetTipWizard(): scala.Unit = js.native
   def Rows(Address: java.lang.String): Range = js.native
@@ -705,7 +705,7 @@ class Application protected () extends js.Object {
   def SetDefaultChart(FormatName: js.Any): scala.Unit = js.native
   def SetDefaultChart(FormatName: js.Any, Gallery: js.Any): scala.Unit = js.native
   def SharePointVersion(bstrUrl: java.lang.String): scala.Double = js.native
-  def Sheets(Indexes: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): Sheets[Sheet] = js.native
+  def Sheets(Indexes: stdLib.SafeArray[java.lang.String | scala.Double]): activexDashExcelLib.ExcelNs.Sheets[activexDashExcelLib.ExcelNs.Sheet] = js.native
   def Sheets(Index: java.lang.String): Sheet = js.native
   def Sheets(Index: scala.Double): Sheet = js.native
   def ShortcutMenus(Index: scala.Double): Menu = js.native
@@ -769,7 +769,7 @@ class Application protected () extends js.Object {
   def Windows(Index: scala.Double): Window = js.native
   def Workbooks(Index: java.lang.String): Workbook = js.native
   def Workbooks(Index: scala.Double): Workbook = js.native
-  def Worksheets(Indexes: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): Sheets[Worksheet] = js.native
+  def Worksheets(Indexes: stdLib.SafeArray[java.lang.String | scala.Double]): Sheets[Worksheet] = js.native
   def Worksheets(Index: java.lang.String): Worksheet = js.native
   def Worksheets(Index: scala.Double): Worksheet = js.native
   def _Evaluate(Name: js.Any): js.Any = js.native

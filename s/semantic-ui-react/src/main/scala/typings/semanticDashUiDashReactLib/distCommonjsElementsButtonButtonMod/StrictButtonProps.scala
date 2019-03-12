@@ -65,7 +65,7 @@ trait StrictButtonProps extends js.Object {
     */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
       /* data */ ButtonProps, 
       scala.Unit
     ]
@@ -109,11 +109,7 @@ object StrictButtonProps {
     labelPosition: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     negative: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
-      /* data */ ButtonProps, 
-      scala.Unit
-    ] = null,
+    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLButtonElement, reactLib.NativeMouseEvent], /* data */ ButtonProps) => scala.Unit = null,
     positive: js.UndefOr[scala.Boolean] = js.undefined,
     primary: js.UndefOr[scala.Boolean] = js.undefined,
     role: java.lang.String = null,
@@ -143,7 +139,7 @@ object StrictButtonProps {
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
     if (!js.isUndefined(negative)) __obj.updateDynamic("negative")(negative)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive)
     if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
     if (role != null) __obj.updateDynamic("role")(role)

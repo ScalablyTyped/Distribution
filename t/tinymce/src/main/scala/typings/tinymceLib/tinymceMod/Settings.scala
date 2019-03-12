@@ -201,11 +201,7 @@ object Settings {
     branding: js.UndefOr[scala.Boolean] = js.undefined,
     browser_spellcheck: js.UndefOr[scala.Boolean] = js.undefined,
     cache_suffix: java.lang.String = null,
-    color_picker_callback: js.Function2[
-      /* callback */ js.Function1[/* hexColor */ java.lang.String, scala.Unit], 
-      /* value */ java.lang.String, 
-      scala.Unit
-    ] = null,
+    color_picker_callback: (/* callback */ js.Function1[/* hexColor */ java.lang.String, scala.Unit], /* value */ java.lang.String) => scala.Unit = null,
     content_css: java.lang.String | js.Array[java.lang.String] = null,
     content_security_policy: java.lang.String = null,
     content_style: java.lang.String = null,
@@ -226,20 +222,9 @@ object Settings {
     event_root: js.UndefOr[scala.Boolean] = js.undefined,
     extended_valid_elements: java.lang.String = null,
     external_plugins: js.Object = null,
-    file_browser_callback: js.Function4[
-      /* field_name */ java.lang.String, 
-      /* url */ java.lang.String, 
-      /* type */ java.lang.String, 
-      /* win */ stdLib.Window, 
-      scala.Unit
-    ] = null,
+    file_browser_callback: (/* field_name */ java.lang.String, /* url */ java.lang.String, /* type */ java.lang.String, /* win */ stdLib.Window) => scala.Unit = null,
     file_browser_callback_types: java.lang.String = null,
-    file_picker_callback: js.Function3[
-      /* callback */ js.Function2[/* filename */ java.lang.String, /* metadata */ js.Object, scala.Unit], 
-      /* valud */ java.lang.String, 
-      /* meta */ js.Object, 
-      scala.Unit
-    ] = null,
+    file_picker_callback: (/* callback */ js.Function2[/* filename */ java.lang.String, /* metadata */ js.Object, scala.Unit], /* valud */ java.lang.String, /* meta */ js.Object) => scala.Unit = null,
     file_picker_types: java.lang.String = null,
     fix_list_elements: js.UndefOr[scala.Boolean] = js.undefined,
     fixed_toolbar_container: java.lang.String = null,
@@ -252,23 +237,18 @@ object Settings {
     gecko_spellcheck: js.UndefOr[scala.Boolean] = js.undefined,
     height: scala.Double | java.lang.String = null,
     hidden_input: js.UndefOr[scala.Boolean] = js.undefined,
-    images_dataimg_filter: js.Function1[/* img */ js.Any, scala.Unit] = null,
+    images_dataimg_filter: /* img */ js.Any => scala.Unit = null,
     images_reuse_filename: js.UndefOr[scala.Boolean] = js.undefined,
     images_upload_base_path: java.lang.String = null,
     images_upload_credentials: js.UndefOr[scala.Boolean] = js.undefined,
-    images_upload_handler: js.Function3[
-      /* blobInfo */ js.Any, 
-      /* success */ js.Function1[/* msg */ java.lang.String, scala.Unit], 
-      /* failure */ js.Function1[/* msg */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ] = null,
+    images_upload_handler: (/* blobInfo */ js.Any, /* success */ js.Function1[/* msg */ java.lang.String, scala.Unit], /* failure */ js.Function1[/* msg */ java.lang.String, scala.Unit]) => scala.Unit = null,
     images_upload_url: java.lang.String = null,
     imagetools_api_key: java.lang.String = null,
     imagetools_cors_hosts: js.Array[java.lang.String] = null,
     imagetools_proxy: java.lang.String = null,
     imagetools_toolbar: java.lang.String = null,
     indentation: java.lang.String = null,
-    init_instance_callback: js.Function1[/* editor */ Editor, scala.Unit] = null,
+    init_instance_callback: /* editor */ Editor => scala.Unit = null,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
     inline_boundaries: js.UndefOr[scala.Boolean] = js.undefined,
     insert_button_items: java.lang.String = null,
@@ -299,7 +279,7 @@ object Settings {
     schema: java.lang.String = null,
     selection_toolbar: java.lang.String = null,
     selector: java.lang.String = null,
-    setup: js.Function1[/* edtor */ Editor, scala.Unit] = null,
+    setup: /* edtor */ Editor => scala.Unit = null,
     skin: java.lang.String = null,
     skin_url: java.lang.String = null,
     statusbar: js.UndefOr[scala.Boolean] = js.undefined,
@@ -324,13 +304,7 @@ object Settings {
     theme_url: java.lang.String = null,
     toolbar: scala.Boolean | java.lang.String | js.Array[java.lang.String] = null,
     type_ahead_urls: js.UndefOr[scala.Boolean] = js.undefined,
-    urlconverter_callback: js.Function4[
-      /* url */ java.lang.String, 
-      /* node */ stdLib.HTMLElement, 
-      /* on_save */ scala.Boolean, 
-      /* name */ java.lang.String, 
-      scala.Unit
-    ] = null,
+    urlconverter_callback: (/* url */ java.lang.String, /* node */ stdLib.HTMLElement, /* on_save */ scala.Boolean, /* name */ java.lang.String) => scala.Unit = null,
     valid_children: java.lang.String = null,
     valid_classes: java.lang.String | js.Object = null,
     valid_elements: java.lang.String = null,
@@ -362,7 +336,7 @@ object Settings {
     if (!js.isUndefined(branding)) __obj.updateDynamic("branding")(branding)
     if (!js.isUndefined(browser_spellcheck)) __obj.updateDynamic("browser_spellcheck")(browser_spellcheck)
     if (cache_suffix != null) __obj.updateDynamic("cache_suffix")(cache_suffix)
-    if (color_picker_callback != null) __obj.updateDynamic("color_picker_callback")(color_picker_callback)
+    if (color_picker_callback != null) __obj.updateDynamic("color_picker_callback")(js.Any.fromFunction2(color_picker_callback))
     if (content_css != null) __obj.updateDynamic("content_css")(content_css.asInstanceOf[js.Any])
     if (content_security_policy != null) __obj.updateDynamic("content_security_policy")(content_security_policy)
     if (content_style != null) __obj.updateDynamic("content_style")(content_style)
@@ -383,9 +357,9 @@ object Settings {
     if (!js.isUndefined(event_root)) __obj.updateDynamic("event_root")(event_root)
     if (extended_valid_elements != null) __obj.updateDynamic("extended_valid_elements")(extended_valid_elements)
     if (external_plugins != null) __obj.updateDynamic("external_plugins")(external_plugins)
-    if (file_browser_callback != null) __obj.updateDynamic("file_browser_callback")(file_browser_callback)
+    if (file_browser_callback != null) __obj.updateDynamic("file_browser_callback")(js.Any.fromFunction4(file_browser_callback))
     if (file_browser_callback_types != null) __obj.updateDynamic("file_browser_callback_types")(file_browser_callback_types)
-    if (file_picker_callback != null) __obj.updateDynamic("file_picker_callback")(file_picker_callback)
+    if (file_picker_callback != null) __obj.updateDynamic("file_picker_callback")(js.Any.fromFunction3(file_picker_callback))
     if (file_picker_types != null) __obj.updateDynamic("file_picker_types")(file_picker_types)
     if (!js.isUndefined(fix_list_elements)) __obj.updateDynamic("fix_list_elements")(fix_list_elements)
     if (fixed_toolbar_container != null) __obj.updateDynamic("fixed_toolbar_container")(fixed_toolbar_container)
@@ -398,18 +372,18 @@ object Settings {
     if (!js.isUndefined(gecko_spellcheck)) __obj.updateDynamic("gecko_spellcheck")(gecko_spellcheck)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden_input)) __obj.updateDynamic("hidden_input")(hidden_input)
-    if (images_dataimg_filter != null) __obj.updateDynamic("images_dataimg_filter")(images_dataimg_filter)
+    if (images_dataimg_filter != null) __obj.updateDynamic("images_dataimg_filter")(js.Any.fromFunction1(images_dataimg_filter))
     if (!js.isUndefined(images_reuse_filename)) __obj.updateDynamic("images_reuse_filename")(images_reuse_filename)
     if (images_upload_base_path != null) __obj.updateDynamic("images_upload_base_path")(images_upload_base_path)
     if (!js.isUndefined(images_upload_credentials)) __obj.updateDynamic("images_upload_credentials")(images_upload_credentials)
-    if (images_upload_handler != null) __obj.updateDynamic("images_upload_handler")(images_upload_handler)
+    if (images_upload_handler != null) __obj.updateDynamic("images_upload_handler")(js.Any.fromFunction3(images_upload_handler))
     if (images_upload_url != null) __obj.updateDynamic("images_upload_url")(images_upload_url)
     if (imagetools_api_key != null) __obj.updateDynamic("imagetools_api_key")(imagetools_api_key)
     if (imagetools_cors_hosts != null) __obj.updateDynamic("imagetools_cors_hosts")(imagetools_cors_hosts)
     if (imagetools_proxy != null) __obj.updateDynamic("imagetools_proxy")(imagetools_proxy)
     if (imagetools_toolbar != null) __obj.updateDynamic("imagetools_toolbar")(imagetools_toolbar)
     if (indentation != null) __obj.updateDynamic("indentation")(indentation)
-    if (init_instance_callback != null) __obj.updateDynamic("init_instance_callback")(init_instance_callback)
+    if (init_instance_callback != null) __obj.updateDynamic("init_instance_callback")(js.Any.fromFunction1(init_instance_callback))
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
     if (!js.isUndefined(inline_boundaries)) __obj.updateDynamic("inline_boundaries")(inline_boundaries)
     if (insert_button_items != null) __obj.updateDynamic("insert_button_items")(insert_button_items)
@@ -440,7 +414,7 @@ object Settings {
     if (schema != null) __obj.updateDynamic("schema")(schema)
     if (selection_toolbar != null) __obj.updateDynamic("selection_toolbar")(selection_toolbar)
     if (selector != null) __obj.updateDynamic("selector")(selector)
-    if (setup != null) __obj.updateDynamic("setup")(setup)
+    if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction1(setup))
     if (skin != null) __obj.updateDynamic("skin")(skin)
     if (skin_url != null) __obj.updateDynamic("skin_url")(skin_url)
     if (!js.isUndefined(statusbar)) __obj.updateDynamic("statusbar")(statusbar)
@@ -465,7 +439,7 @@ object Settings {
     if (theme_url != null) __obj.updateDynamic("theme_url")(theme_url)
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     if (!js.isUndefined(type_ahead_urls)) __obj.updateDynamic("type_ahead_urls")(type_ahead_urls)
-    if (urlconverter_callback != null) __obj.updateDynamic("urlconverter_callback")(urlconverter_callback)
+    if (urlconverter_callback != null) __obj.updateDynamic("urlconverter_callback")(js.Any.fromFunction4(urlconverter_callback))
     if (valid_children != null) __obj.updateDynamic("valid_children")(valid_children)
     if (valid_classes != null) __obj.updateDynamic("valid_classes")(valid_classes.asInstanceOf[js.Any])
     if (valid_elements != null) __obj.updateDynamic("valid_elements")(valid_elements)

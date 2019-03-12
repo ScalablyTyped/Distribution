@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ToggleProps
-  extends reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] {
+  extends reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement] {
   var icons: js.UndefOr[scala.Boolean | ToggleIcons] = js.undefined
 }
 
 object ToggleProps {
   @scala.inline
   def apply(
-    InputHTMLAttributes: reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] = null,
+    InputHTMLAttributes: reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement] = null,
     `aria-label`: java.lang.String = null,
     `aria-labelledby`: java.lang.String = null,
     icons: scala.Boolean | ToggleIcons = null

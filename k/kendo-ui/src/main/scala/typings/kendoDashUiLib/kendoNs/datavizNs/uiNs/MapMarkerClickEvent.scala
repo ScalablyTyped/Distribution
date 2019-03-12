@@ -13,13 +13,13 @@ trait MapMarkerClickEvent extends MapEvent {
 object MapMarkerClickEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Map,
     layer: kendoDashUiLib.kendoNs.datavizNs.mapNs.Marker = null,
     marker: kendoDashUiLib.kendoNs.datavizNs.mapNs.Marker = null
   ): MapMarkerClickEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (layer != null) __obj.updateDynamic("layer")(layer)
     if (marker != null) __obj.updateDynamic("marker")(marker)
     __obj.asInstanceOf[MapMarkerClickEvent]

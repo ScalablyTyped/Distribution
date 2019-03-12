@@ -12,8 +12,8 @@ trait CullingVolume extends js.Object {
 
 object CullingVolume {
   @scala.inline
-  def apply(computeVisibility: js.Function1[js.Any, Intersect], planes: js.Array[Cartesian4]): CullingVolume = {
-    val __obj = js.Dynamic.literal(computeVisibility = computeVisibility, planes = planes)
+  def apply(computeVisibility: js.Any => Intersect, planes: js.Array[Cartesian4]): CullingVolume = {
+    val __obj = js.Dynamic.literal(computeVisibility = js.Any.fromFunction1(computeVisibility), planes = planes)
   
     __obj.asInstanceOf[CullingVolume]
   }

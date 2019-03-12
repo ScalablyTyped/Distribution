@@ -44,38 +44,22 @@ trait ObserveCallbacks extends js.Object {
 object ObserveCallbacks {
   @scala.inline
   def apply(
-    added: js.Function1[/* document */ js.Object, scala.Unit] = null,
-    addedAt: js.Function3[
-      /* document */ js.Object, 
-      /* atIndex */ scala.Double, 
-      /* before */ js.Object, 
-      scala.Unit
-    ] = null,
-    changed: js.Function2[/* newDocument */ js.Object, /* oldDocument */ js.Object, scala.Unit] = null,
-    changedAt: js.Function3[
-      /* newDocument */ js.Object, 
-      /* oldDocument */ js.Object, 
-      /* indexAt */ scala.Double, 
-      scala.Unit
-    ] = null,
-    movedTo: js.Function4[
-      /* document */ js.Object, 
-      /* fromIndex */ scala.Double, 
-      /* toIndex */ scala.Double, 
-      /* before */ js.Object, 
-      scala.Unit
-    ] = null,
-    removed: js.Function1[/* oldDocument */ js.Object, scala.Unit] = null,
-    removedAt: js.Function2[/* oldDocument */ js.Object, /* atIndex */ scala.Double, scala.Unit] = null
+    added: /* document */ js.Object => scala.Unit = null,
+    addedAt: (/* document */ js.Object, /* atIndex */ scala.Double, /* before */ js.Object) => scala.Unit = null,
+    changed: (/* newDocument */ js.Object, /* oldDocument */ js.Object) => scala.Unit = null,
+    changedAt: (/* newDocument */ js.Object, /* oldDocument */ js.Object, /* indexAt */ scala.Double) => scala.Unit = null,
+    movedTo: (/* document */ js.Object, /* fromIndex */ scala.Double, /* toIndex */ scala.Double, /* before */ js.Object) => scala.Unit = null,
+    removed: /* oldDocument */ js.Object => scala.Unit = null,
+    removedAt: (/* oldDocument */ js.Object, /* atIndex */ scala.Double) => scala.Unit = null
   ): ObserveCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (added != null) __obj.updateDynamic("added")(added)
-    if (addedAt != null) __obj.updateDynamic("addedAt")(addedAt)
-    if (changed != null) __obj.updateDynamic("changed")(changed)
-    if (changedAt != null) __obj.updateDynamic("changedAt")(changedAt)
-    if (movedTo != null) __obj.updateDynamic("movedTo")(movedTo)
-    if (removed != null) __obj.updateDynamic("removed")(removed)
-    if (removedAt != null) __obj.updateDynamic("removedAt")(removedAt)
+    if (added != null) __obj.updateDynamic("added")(js.Any.fromFunction1(added))
+    if (addedAt != null) __obj.updateDynamic("addedAt")(js.Any.fromFunction3(addedAt))
+    if (changed != null) __obj.updateDynamic("changed")(js.Any.fromFunction2(changed))
+    if (changedAt != null) __obj.updateDynamic("changedAt")(js.Any.fromFunction3(changedAt))
+    if (movedTo != null) __obj.updateDynamic("movedTo")(js.Any.fromFunction4(movedTo))
+    if (removed != null) __obj.updateDynamic("removed")(js.Any.fromFunction1(removed))
+    if (removedAt != null) __obj.updateDynamic("removedAt")(js.Any.fromFunction2(removedAt))
     __obj.asInstanceOf[ObserveCallbacks]
   }
 }

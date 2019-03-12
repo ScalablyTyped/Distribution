@@ -14,6 +14,6 @@ object ^ extends js.Object {
   def convertInputType(inputType: js.Array[java.lang.String]): js.Any = js.native
   def createHammer(element: stdLib.HTMLElement, recognizers: js.Any): js.Any = js.native
   def createHammer(element: stdLib.HTMLElement, recognizers: js.Any, inputClass: js.Any): js.Any = js.native
-  def toAxis(source: js.Array[java.lang.String], offset: js.Array[scala.Double]): atEgjsAxesLib.axismanagerMod.Axis = js.native
+  def toAxis(source: js.Array[java.lang.String], offset: js.Array[scala.Double]): atEgjsAxesLib.axisManagerMod.Axis = js.native
 }
 

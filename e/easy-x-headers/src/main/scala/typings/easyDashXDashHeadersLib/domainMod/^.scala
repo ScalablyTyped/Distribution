@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("domain", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def create(): easyDashXDashHeadersLib.domainMod.Domain = js.native
+  def create(): Domain = js.native
 }
 

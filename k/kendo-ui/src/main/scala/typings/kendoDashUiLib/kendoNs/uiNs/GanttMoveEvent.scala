@@ -14,14 +14,14 @@ trait GanttMoveEvent extends GanttEvent {
 object GanttMoveEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Gantt,
     end: stdLib.Date = null,
     start: stdLib.Date = null,
     task: kendoDashUiLib.kendoNs.dataNs.GanttTask = null
   ): GanttMoveEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (end != null) __obj.updateDynamic("end")(end)
     if (start != null) __obj.updateDynamic("start")(start)
     if (task != null) __obj.updateDynamic("task")(task)

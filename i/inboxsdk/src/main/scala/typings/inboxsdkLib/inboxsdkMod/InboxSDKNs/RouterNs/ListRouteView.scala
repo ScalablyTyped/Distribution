@@ -16,17 +16,17 @@ trait ListRouteView extends RouteView {
 object ListRouteView {
   @scala.inline
   def apply(
-    addCollapsibleSection: js.Function1[SectionDescriptor, CollapsibleSectionView],
-    addSection: js.Function1[SectionDescriptor, SectionView],
+    addCollapsibleSection: SectionDescriptor => CollapsibleSectionView,
+    addSection: SectionDescriptor => SectionView,
     destroyed: scala.Boolean,
-    getParams: js.Function0[RouteParams],
-    getRouteID: js.Function0[java.lang.String],
-    getRouteType: js.Function0[RouteTypes],
-    on_destroy: js.Function2[inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit], scala.Unit],
-    refresh: js.Function0[scala.Unit]
+    getParams: () => RouteParams,
+    getRouteID: () => java.lang.String,
+    getRouteType: () => RouteTypes,
+    on_destroy: (inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit]) => scala.Unit,
+    refresh: () => scala.Unit
   ): ListRouteView = {
-    val __obj = js.Dynamic.literal(addCollapsibleSection = addCollapsibleSection, addSection = addSection, destroyed = destroyed, getParams = getParams, getRouteID = getRouteID, getRouteType = getRouteType, refresh = refresh)
-    __obj.updateDynamic("on")(on_destroy)
+    val __obj = js.Dynamic.literal(addCollapsibleSection = js.Any.fromFunction1(addCollapsibleSection), addSection = js.Any.fromFunction1(addSection), destroyed = destroyed, getParams = js.Any.fromFunction0(getParams), getRouteID = js.Any.fromFunction0(getRouteID), getRouteType = js.Any.fromFunction0(getRouteType), refresh = js.Any.fromFunction0(refresh))
+    __obj.updateDynamic("on")(js.Any.fromFunction2(on_destroy))
     __obj.asInstanceOf[ListRouteView]
   }
 }

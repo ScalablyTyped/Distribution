@@ -18,13 +18,13 @@ object Options {
     defaultDirMode: scala.Int | scala.Double = null,
     defaultFileMode: scala.Int | scala.Double = null,
     dir: java.lang.String = null,
-    onEntry: js.Function2[/* entry */ js.Any, /* zipfile */ js.Any, scala.Unit] = null
+    onEntry: (/* entry */ js.Any, /* zipfile */ js.Any) => scala.Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (defaultDirMode != null) __obj.updateDynamic("defaultDirMode")(defaultDirMode.asInstanceOf[js.Any])
     if (defaultFileMode != null) __obj.updateDynamic("defaultFileMode")(defaultFileMode.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (onEntry != null) __obj.updateDynamic("onEntry")(onEntry)
+    if (onEntry != null) __obj.updateDynamic("onEntry")(js.Any.fromFunction2(onEntry))
     __obj.asInstanceOf[Options]
   }
 }

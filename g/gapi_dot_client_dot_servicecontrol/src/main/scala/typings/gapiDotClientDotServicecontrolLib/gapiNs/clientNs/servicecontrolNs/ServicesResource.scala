@@ -109,32 +109,14 @@ trait ServicesResource extends js.Object {
 object ServicesResource {
   @scala.inline
   def apply(
-    allocateQuota: js.Function1[
-      gapiDotClientDotServicecontrolLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AllocateQuotaResponse]
-    ],
-    check: js.Function1[
-      gapiDotClientDotServicecontrolLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CheckResponse]
-    ],
-    endReconciliation: js.Function1[
-      gapiDotClientDotServicecontrolLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[EndReconciliationResponse]
-    ],
-    releaseQuota: js.Function1[
-      gapiDotClientDotServicecontrolLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ReleaseQuotaResponse]
-    ],
-    report: js.Function1[
-      gapiDotClientDotServicecontrolLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ReportResponse]
-    ],
-    startReconciliation: js.Function1[
-      gapiDotClientDotServicecontrolLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StartReconciliationResponse]
-    ]
+    allocateQuota: gapiDotClientDotServicecontrolLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[AllocateQuotaResponse],
+    check: gapiDotClientDotServicecontrolLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[CheckResponse],
+    endReconciliation: gapiDotClientDotServicecontrolLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[EndReconciliationResponse],
+    releaseQuota: gapiDotClientDotServicecontrolLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[ReleaseQuotaResponse],
+    report: gapiDotClientDotServicecontrolLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[ReportResponse],
+    startReconciliation: gapiDotClientDotServicecontrolLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[StartReconciliationResponse]
   ): ServicesResource = {
-    val __obj = js.Dynamic.literal(allocateQuota = allocateQuota, check = check, endReconciliation = endReconciliation, releaseQuota = releaseQuota, report = report, startReconciliation = startReconciliation)
+    val __obj = js.Dynamic.literal(allocateQuota = js.Any.fromFunction1(allocateQuota), check = js.Any.fromFunction1(check), endReconciliation = js.Any.fromFunction1(endReconciliation), releaseQuota = js.Any.fromFunction1(releaseQuota), report = js.Any.fromFunction1(report), startReconciliation = js.Any.fromFunction1(startReconciliation))
   
     __obj.asInstanceOf[ServicesResource]
   }

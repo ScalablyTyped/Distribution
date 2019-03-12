@@ -18,22 +18,22 @@ trait Translation extends js.Object {
 object Translation {
   @scala.inline
   def apply(
-    errorLoading: js.Function0[java.lang.String] = null,
-    inputTooLong: js.Function1[/* arg */ TranslationArg, java.lang.String] = null,
-    inputTooShort: js.Function1[/* arg */ TranslationArg, java.lang.String] = null,
-    loadingMore: js.Function0[java.lang.String] = null,
-    maximumSelected: js.Function1[/* arg */ TranslationArg, java.lang.String] = null,
-    noResults: js.Function0[java.lang.String] = null,
-    searching: js.Function0[java.lang.String] = null
+    errorLoading: () => java.lang.String = null,
+    inputTooLong: /* arg */ TranslationArg => java.lang.String = null,
+    inputTooShort: /* arg */ TranslationArg => java.lang.String = null,
+    loadingMore: () => java.lang.String = null,
+    maximumSelected: /* arg */ TranslationArg => java.lang.String = null,
+    noResults: () => java.lang.String = null,
+    searching: () => java.lang.String = null
   ): Translation = {
     val __obj = js.Dynamic.literal()
-    if (errorLoading != null) __obj.updateDynamic("errorLoading")(errorLoading)
-    if (inputTooLong != null) __obj.updateDynamic("inputTooLong")(inputTooLong)
-    if (inputTooShort != null) __obj.updateDynamic("inputTooShort")(inputTooShort)
-    if (loadingMore != null) __obj.updateDynamic("loadingMore")(loadingMore)
-    if (maximumSelected != null) __obj.updateDynamic("maximumSelected")(maximumSelected)
-    if (noResults != null) __obj.updateDynamic("noResults")(noResults)
-    if (searching != null) __obj.updateDynamic("searching")(searching)
+    if (errorLoading != null) __obj.updateDynamic("errorLoading")(js.Any.fromFunction0(errorLoading))
+    if (inputTooLong != null) __obj.updateDynamic("inputTooLong")(js.Any.fromFunction1(inputTooLong))
+    if (inputTooShort != null) __obj.updateDynamic("inputTooShort")(js.Any.fromFunction1(inputTooShort))
+    if (loadingMore != null) __obj.updateDynamic("loadingMore")(js.Any.fromFunction0(loadingMore))
+    if (maximumSelected != null) __obj.updateDynamic("maximumSelected")(js.Any.fromFunction1(maximumSelected))
+    if (noResults != null) __obj.updateDynamic("noResults")(js.Any.fromFunction0(noResults))
+    if (searching != null) __obj.updateDynamic("searching")(js.Any.fromFunction0(searching))
     __obj.asInstanceOf[Translation]
   }
 }

@@ -11,8 +11,8 @@ trait String extends js.Object {
 
 object String {
   @scala.inline
-  def apply(toTitleCase: js.Function0[java.lang.String]): String = {
-    val __obj = js.Dynamic.literal(toTitleCase = toTitleCase)
+  def apply(toTitleCase: () => java.lang.String): String = {
+    val __obj = js.Dynamic.literal(toTitleCase = js.Any.fromFunction0(toTitleCase))
   
     __obj.asInstanceOf[String]
   }

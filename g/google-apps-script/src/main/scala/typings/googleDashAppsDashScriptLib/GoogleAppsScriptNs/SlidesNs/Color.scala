@@ -13,12 +13,8 @@ trait Color extends js.Object {
 
 object Color {
   @scala.inline
-  def apply(
-    asRgbColor: js.Function0[RgbColor],
-    asThemeColor: js.Function0[ThemeColor],
-    getColorType: js.Function0[ColorType]
-  ): Color = {
-    val __obj = js.Dynamic.literal(asRgbColor = asRgbColor, asThemeColor = asThemeColor, getColorType = getColorType)
+  def apply(asRgbColor: () => RgbColor, asThemeColor: () => ThemeColor, getColorType: () => ColorType): Color = {
+    val __obj = js.Dynamic.literal(asRgbColor = js.Any.fromFunction0(asRgbColor), asThemeColor = js.Any.fromFunction0(asThemeColor), getColorType = js.Any.fromFunction0(getColorType))
   
     __obj.asInstanceOf[Color]
   }

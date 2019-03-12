@@ -45,17 +45,17 @@ trait IgGridCellMergingMethods extends js.Object {
 object IgGridCellMergingMethods {
   @scala.inline
   def apply(
-    changeGlobalLanguage: js.Function0[scala.Unit],
-    changeGlobalRegional: js.Function0[scala.Unit],
-    changeLocale: js.Function1[js.Object, scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    isMerged: js.Function1[js.Object, scala.Boolean],
-    mergeColumn: js.Function2[js.Object, scala.Boolean, java.lang.String],
-    mergeRow: js.Function2[js.Object, js.Object, scala.Unit],
-    unmergeColumn: js.Function1[js.Object, java.lang.String],
-    unmergeRow: js.Function2[js.Object, js.Object, scala.Unit]
+    changeGlobalLanguage: () => scala.Unit,
+    changeGlobalRegional: () => scala.Unit,
+    changeLocale: js.Object => scala.Unit,
+    destroy: () => scala.Unit,
+    isMerged: js.Object => scala.Boolean,
+    mergeColumn: (js.Object, scala.Boolean) => java.lang.String,
+    mergeRow: (js.Object, js.Object) => scala.Unit,
+    unmergeColumn: js.Object => java.lang.String,
+    unmergeRow: (js.Object, js.Object) => scala.Unit
   ): IgGridCellMergingMethods = {
-    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, isMerged = isMerged, mergeColumn = mergeColumn, mergeRow = mergeRow, unmergeColumn = unmergeColumn, unmergeRow = unmergeRow)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = js.Any.fromFunction0(changeGlobalLanguage), changeGlobalRegional = js.Any.fromFunction0(changeGlobalRegional), changeLocale = js.Any.fromFunction1(changeLocale), destroy = js.Any.fromFunction0(destroy), isMerged = js.Any.fromFunction1(isMerged), mergeColumn = js.Any.fromFunction2(mergeColumn), mergeRow = js.Any.fromFunction2(mergeRow), unmergeColumn = js.Any.fromFunction1(unmergeColumn), unmergeRow = js.Any.fromFunction2(unmergeRow))
   
     __obj.asInstanceOf[IgGridCellMergingMethods]
   }

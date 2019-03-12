@@ -267,7 +267,7 @@ object JQuerySlickOptions {
     centerMode: js.UndefOr[scala.Boolean] = js.undefined,
     centerPadding: java.lang.String = null,
     cssEase: java.lang.String = null,
-    customPaging: js.Function2[/* slider */ js.Any, /* i */ scala.Double, java.lang.String] = null,
+    customPaging: (/* slider */ js.Any, /* i */ scala.Double) => java.lang.String = null,
     dots: js.UndefOr[scala.Boolean] = js.undefined,
     dotsClass: java.lang.String = null,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -317,7 +317,7 @@ object JQuerySlickOptions {
     if (!js.isUndefined(centerMode)) __obj.updateDynamic("centerMode")(centerMode)
     if (centerPadding != null) __obj.updateDynamic("centerPadding")(centerPadding)
     if (cssEase != null) __obj.updateDynamic("cssEase")(cssEase)
-    if (customPaging != null) __obj.updateDynamic("customPaging")(customPaging)
+    if (customPaging != null) __obj.updateDynamic("customPaging")(js.Any.fromFunction2(customPaging))
     if (!js.isUndefined(dots)) __obj.updateDynamic("dots")(dots)
     if (dotsClass != null) __obj.updateDynamic("dotsClass")(dotsClass)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)

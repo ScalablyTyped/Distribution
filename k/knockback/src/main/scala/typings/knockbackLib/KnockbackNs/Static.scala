@@ -10,7 +10,7 @@ trait Static extends Utils {
   var CollectionObservable: js.Any = js.native
   var ViewModel: js.Any = js.native
   def applyBindings(viewModel: ViewModel): js.Any = js.native
-  def applyBindings(viewModel: ViewModel, node: underscoreLib.underscoreMod.Global.Element): js.Any = js.native
+  def applyBindings(viewModel: ViewModel, node: stdLib.Element): js.Any = js.native
   def collectionObservable(): CollectionObservable = js.native
   def collectionObservable(model: backboneLib.backboneMod.Collection[backboneLib.backboneMod.Model]): CollectionObservable = js.native
   def collectionObservable(
@@ -53,7 +53,7 @@ trait Static extends Utils {
   def release(`object`: js.Any): js.Any = js.native
   def release(`object`: js.Any, pre_release: js.Function0[scala.Unit]): js.Any = js.native
   def releaseKeys(`object`: js.Any): js.Any = js.native
-  def releaseOnNodeRemove(viewmodel: ViewModel, node: underscoreLib.underscoreMod.Global.Element): js.Any = js.native
+  def releaseOnNodeRemove(viewmodel: ViewModel, node: stdLib.Element): js.Any = js.native
   def renderAutoReleasedTemplate(template: java.lang.String, viewModel: ViewModel, options: js.Any): js.Any = js.native
   def renderTemplate(template: java.lang.String, viewModel: ViewModel, options: js.Any): js.Any = js.native
   def viewModel(): knockoutLib.KnockoutObservable[_] = js.native

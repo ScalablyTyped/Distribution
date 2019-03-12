@@ -12,12 +12,12 @@ class TableDef protected () extends js.Object {
   val ConflictTable: java.lang.String = js.native
   var Connect: java.lang.String = js.native
   var `DAO.TableDef_typekey`: TableDef = js.native
-  val DateCreated: activexDashInteropLib.VarDate = js.native
+  val DateCreated: stdLib.VarDate = js.native
   @JSName("Fields")
   val Fields_Original: Fields = js.native
   @JSName("Indexes")
   val Indexes_Original: Indexes = js.native
-  val LastUpdated: activexDashInteropLib.VarDate = js.native
+  val LastUpdated: stdLib.VarDate = js.native
   var Name: java.lang.String = js.native
   @JSName("Properties")
   val Properties_Original: Properties = js.native

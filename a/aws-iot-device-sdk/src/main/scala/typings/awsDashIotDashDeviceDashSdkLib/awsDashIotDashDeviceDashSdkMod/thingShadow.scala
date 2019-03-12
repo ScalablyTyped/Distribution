@@ -106,7 +106,7 @@ class thingShadow ()
   @JSName("on")
   def on_error(
     event: awsDashIotDashDeviceDashSdkLib.awsDashIotDashDeviceDashSdkLibStrings.error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /** Emitted when a message is received on a topic not related to any Thing Shadows */
   @JSName("on")
@@ -184,7 +184,7 @@ class thingShadow ()
     thingName: java.lang.String,
     options: RegisterOptions,
     callback: js.Function2[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* failedTopics */ js.Array[mqttLib.typesLibClientMod.ISubscriptionGrant], 
       scala.Unit
     ]

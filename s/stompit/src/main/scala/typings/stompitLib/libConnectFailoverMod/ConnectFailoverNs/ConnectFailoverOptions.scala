@@ -12,7 +12,7 @@ trait ConnectFailoverOptions extends js.Object {
       /* options */ stompitLib.libConnectMod.connectNs.ConnectOptions, 
       /* connectionListener */ js.UndefOr[
         js.Function2[
-          /* err */ nodeLib.Error | scala.Null, 
+          /* err */ stdLib.Error | scala.Null, 
           /* client */ stompitLib.libClientMod.namespaced, 
           scala.Unit
         ]
@@ -37,17 +37,13 @@ trait ConnectFailoverOptions extends js.Object {
 object ConnectFailoverOptions {
   @scala.inline
   def apply(
-    connectFunction: js.Function2[
-      /* options */ stompitLib.libConnectMod.connectNs.ConnectOptions, 
-      /* connectionListener */ js.UndefOr[
-        js.Function2[
-          /* err */ nodeLib.Error | scala.Null, 
-          /* client */ stompitLib.libClientMod.namespaced, 
-          scala.Unit
-        ]
-      ], 
-      stompitLib.libClientMod.namespaced
-    ] = null,
+    connectFunction: (/* options */ stompitLib.libConnectMod.connectNs.ConnectOptions, /* connectionListener */ js.UndefOr[
+      js.Function2[
+        /* err */ stdLib.Error | scala.Null, 
+        /* client */ stompitLib.libClientMod.namespaced, 
+        scala.Unit
+      ]
+    ]) => stompitLib.libClientMod.namespaced = null,
     initialReconnectDelay: scala.Int | scala.Double = null,
     maxReconnectDelay: scala.Int | scala.Double = null,
     maxReconnects: scala.Int | scala.Double = null,
@@ -56,7 +52,7 @@ object ConnectFailoverOptions {
     useExponentialBackOff: js.UndefOr[scala.Boolean] = js.undefined
   ): ConnectFailoverOptions = {
     val __obj = js.Dynamic.literal()
-    if (connectFunction != null) __obj.updateDynamic("connectFunction")(connectFunction)
+    if (connectFunction != null) __obj.updateDynamic("connectFunction")(js.Any.fromFunction2(connectFunction))
     if (initialReconnectDelay != null) __obj.updateDynamic("initialReconnectDelay")(initialReconnectDelay.asInstanceOf[js.Any])
     if (maxReconnectDelay != null) __obj.updateDynamic("maxReconnectDelay")(maxReconnectDelay.asInstanceOf[js.Any])
     if (maxReconnects != null) __obj.updateDynamic("maxReconnects")(maxReconnects.asInstanceOf[js.Any])

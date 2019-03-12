@@ -30,18 +30,13 @@ object ShowdownExtension {
   @scala.inline
   def apply(
     `type`: java.lang.String,
-    filter: js.Function3[
-      /* text */ java.lang.String, 
-      /* converter */ Converter, 
-      /* options */ js.UndefOr[ConverterOptions], 
-      java.lang.String
-    ] = null,
+    filter: (/* text */ java.lang.String, /* converter */ Converter, /* options */ js.UndefOr[ConverterOptions]) => java.lang.String = null,
     regex: java.lang.String | stdLib.RegExp = null,
     replace: js.Any = null
   ): ShowdownExtension = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction3(filter))
     if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
     if (replace != null) __obj.updateDynamic("replace")(replace)
     __obj.asInstanceOf[ShowdownExtension]

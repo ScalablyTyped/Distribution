@@ -17,14 +17,14 @@ trait Attribute extends js.Object {
 object Attribute {
   @scala.inline
   def apply(
-    getName: js.Function0[java.lang.String],
-    getNamespace: js.Function0[Namespace],
-    getValue: js.Function0[java.lang.String],
-    setName: js.Function1[java.lang.String, Attribute],
-    setNamespace: js.Function1[Namespace, Attribute],
-    setValue: js.Function1[java.lang.String, Attribute]
+    getName: () => java.lang.String,
+    getNamespace: () => Namespace,
+    getValue: () => java.lang.String,
+    setName: java.lang.String => Attribute,
+    setNamespace: Namespace => Attribute,
+    setValue: java.lang.String => Attribute
   ): Attribute = {
-    val __obj = js.Dynamic.literal(getName = getName, getNamespace = getNamespace, getValue = getValue, setName = setName, setNamespace = setNamespace, setValue = setValue)
+    val __obj = js.Dynamic.literal(getName = js.Any.fromFunction0(getName), getNamespace = js.Any.fromFunction0(getNamespace), getValue = js.Any.fromFunction0(getValue), setName = js.Any.fromFunction1(setName), setNamespace = js.Any.fromFunction1(setNamespace), setValue = js.Any.fromFunction1(setValue))
   
     __obj.asInstanceOf[Attribute]
   }

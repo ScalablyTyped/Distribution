@@ -14,11 +14,11 @@ trait Recorder extends js.Object {
 object Recorder {
   @scala.inline
   def apply(
-    init: js.Function1[stdLib.MediaStream, js.Promise[scala.Unit]],
-    start: js.Function0[js.Promise[js.UndefOr[stdLib.MediaStream]]],
-    stop: js.Function0[js.Promise[recorderDashJsLib.recorderDashJsMod.RecorderNs.RecorderResult]]
+    init: stdLib.MediaStream => js.Promise[scala.Unit],
+    start: () => js.Promise[js.UndefOr[stdLib.MediaStream]],
+    stop: () => js.Promise[recorderDashJsLib.recorderDashJsMod.RecorderNs.RecorderResult]
   ): Recorder = {
-    val __obj = js.Dynamic.literal(init = init, start = start, stop = stop)
+    val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[Recorder]
   }

@@ -17,13 +17,13 @@ trait CommandQueue extends ObjectLike {
 object CommandQueue {
   @scala.inline
   def apply(
-    add: js.Function1[js.Any, js.Any],
-    create: js.Function0[CommandQueue],
-    get: js.Function0[js.Any],
-    logs: js.Function1[js.Any, js.Any],
-    toJSON: js.Function0[js.Array[java.lang.String]]
+    add: js.Any => js.Any,
+    create: () => CommandQueue,
+    get: () => js.Any,
+    logs: js.Any => js.Any,
+    toJSON: () => js.Array[java.lang.String]
   ): CommandQueue = {
-    val __obj = js.Dynamic.literal(add = add, create = create, get = get, logs = logs, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), create = js.Any.fromFunction0(create), get = js.Any.fromFunction0(get), logs = js.Any.fromFunction1(logs), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[CommandQueue]
   }

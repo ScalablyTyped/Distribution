@@ -26,17 +26,17 @@ object ImageryLayer {
     alpha: scala.Double,
     brightness: scala.Double,
     contrast: scala.Double,
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     gamma: scala.Double,
     hue: scala.Double,
     imageryProvider: ImageryProvider,
-    isBaseLayer: js.Function0[scala.Boolean],
-    isDestroyed: js.Function0[scala.Boolean],
+    isBaseLayer: () => scala.Boolean,
+    isDestroyed: () => scala.Boolean,
     rectangle: Rectangle,
     saturation: scala.Double,
     show: scala.Boolean
   ): ImageryLayer = {
-    val __obj = js.Dynamic.literal(alpha = alpha, brightness = brightness, contrast = contrast, destroy = destroy, gamma = gamma, hue = hue, imageryProvider = imageryProvider, isBaseLayer = isBaseLayer, isDestroyed = isDestroyed, rectangle = rectangle, saturation = saturation, show = show)
+    val __obj = js.Dynamic.literal(alpha = alpha, brightness = brightness, contrast = contrast, destroy = js.Any.fromFunction0(destroy), gamma = gamma, hue = hue, imageryProvider = imageryProvider, isBaseLayer = js.Any.fromFunction0(isBaseLayer), isDestroyed = js.Any.fromFunction0(isDestroyed), rectangle = rectangle, saturation = saturation, show = show)
   
     __obj.asInstanceOf[ImageryLayer]
   }

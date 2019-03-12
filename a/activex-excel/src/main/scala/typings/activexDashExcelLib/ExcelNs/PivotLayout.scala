@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.PivotLayout")
 @js.native
 class PivotLayout protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Creator: XlCreator = js.native
   @JSName("CubeFields")
   val CubeFields_Original: CubeFields = js.native
   var `Excel.PivotLayout_typekey`: PivotLayout = js.native
   var InnerDetail: java.lang.String = js.native
   val Parent: js.Any = js.native
-  val PivotCache: PivotCache = js.native
-  val PivotTable: PivotTable = js.native
+  val PivotCache: activexDashExcelLib.ExcelNs.PivotCache = js.native
+  val PivotTable: activexDashExcelLib.ExcelNs.PivotTable = js.native
   def AddFields(): scala.Unit = js.native
   def AddFields(RowFields: js.Any): scala.Unit = js.native
   def AddFields(RowFields: js.Any, ColumnFields: js.Any): scala.Unit = js.native

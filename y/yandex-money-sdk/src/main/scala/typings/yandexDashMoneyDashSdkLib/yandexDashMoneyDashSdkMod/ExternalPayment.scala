@@ -19,18 +19,10 @@ trait ExternalPayment extends js.Object {
 object ExternalPayment {
   @scala.inline
   def apply(
-    process: js.Function2[
-      yandexDashMoneyDashSdkLib.YandexMoneySDKNs.ExternalPaymentNs.ProcessOptions, 
-      ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.ExternalPaymentNs.ProcessResult], 
-      scala.Unit
-    ],
-    request: js.Function2[
-      yandexDashMoneyDashSdkLib.YandexMoneySDKNs.ExternalPaymentNs.RequestOptions, 
-      ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.ExternalPaymentNs.RequestResult], 
-      scala.Unit
-    ]
+    process: (yandexDashMoneyDashSdkLib.YandexMoneySDKNs.ExternalPaymentNs.ProcessOptions, ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.ExternalPaymentNs.ProcessResult]) => scala.Unit,
+    request: (yandexDashMoneyDashSdkLib.YandexMoneySDKNs.ExternalPaymentNs.RequestOptions, ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.ExternalPaymentNs.RequestResult]) => scala.Unit
   ): ExternalPayment = {
-    val __obj = js.Dynamic.literal(process = process, request = request)
+    val __obj = js.Dynamic.literal(process = js.Any.fromFunction2(process), request = js.Any.fromFunction2(request))
   
     __obj.asInstanceOf[ExternalPayment]
   }

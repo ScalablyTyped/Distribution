@@ -11,6 +11,6 @@ object ^ extends js.Object {
   /**
     * Initializes a lazypipe.
     */
-  def apply(): lazypipeLib.lazypipeMod.IPipelineBuilder = js.native
+  def apply(): IPipelineBuilder = js.native
 }
 

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val VERSION: java.lang.String = js.native
-  val constants: karmaLib.karmaMod.Constants = js.native
-  val runner: karmaLib.karmaMod.Runner = js.native
-  val server: karmaLib.karmaMod.DeprecatedServer = js.native
-  val stopper: karmaLib.karmaMod.Stopper = js.native
+  val constants: Constants = js.native
+  val runner: Runner = js.native
+  val server: DeprecatedServer = js.native
+  val stopper: Stopper = js.native
 }
 

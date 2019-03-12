@@ -12,11 +12,8 @@ trait TestOptions extends js.Object {
 
 object TestOptions {
   @scala.inline
-  def apply(
-    testFn: js.Function3[java.lang.String, scala.Double, Headers, scala.Unit],
-    testUrl: java.lang.String
-  ): TestOptions = {
-    val __obj = js.Dynamic.literal(testFn = testFn, testUrl = testUrl)
+  def apply(testFn: (java.lang.String, scala.Double, Headers) => scala.Unit, testUrl: java.lang.String): TestOptions = {
+    val __obj = js.Dynamic.literal(testFn = js.Any.fromFunction3(testFn), testUrl = testUrl)
   
     __obj.asInstanceOf[TestOptions]
   }

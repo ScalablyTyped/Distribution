@@ -20,14 +20,14 @@ object XFormField {
   def apply(
     FieldType: java.lang.String,
     Parameters: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
-    acquire: js.Function0[scala.Unit],
-    getFieldType: js.Function0[java.lang.String],
-    getParameters: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setFieldType: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getFieldType: () => java.lang.String,
+    getParameters: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setFieldType: java.lang.String => scala.Unit
   ): XFormField = {
-    val __obj = js.Dynamic.literal(FieldType = FieldType, Parameters = Parameters, acquire = acquire, getFieldType = getFieldType, getParameters = getParameters, queryInterface = queryInterface, release = release, setFieldType = setFieldType)
+    val __obj = js.Dynamic.literal(FieldType = FieldType, Parameters = Parameters, acquire = js.Any.fromFunction0(acquire), getFieldType = js.Any.fromFunction0(getFieldType), getParameters = js.Any.fromFunction0(getParameters), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setFieldType = js.Any.fromFunction1(setFieldType))
   
     __obj.asInstanceOf[XFormField]
   }

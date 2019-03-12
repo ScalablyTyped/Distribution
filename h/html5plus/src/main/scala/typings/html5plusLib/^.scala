@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  val plus: html5plusLib.Plus = js.native
+  val plus: Plus = js.native
 }
 

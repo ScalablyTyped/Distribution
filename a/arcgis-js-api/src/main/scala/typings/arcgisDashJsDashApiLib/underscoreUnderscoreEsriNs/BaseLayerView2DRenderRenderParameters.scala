@@ -32,12 +32,12 @@ object BaseLayerView2DRenderRenderParameters {
   def apply(
     constructor: js.Function,
     context: stdLib.CanvasRenderingContext2D,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     state: ViewState,
     stationary: scala.Boolean
   ): BaseLayerView2DRenderRenderParameters = {
-    val __obj = js.Dynamic.literal(constructor = constructor, context = context, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, state = state, stationary = stationary)
+    val __obj = js.Dynamic.literal(constructor = constructor, context = context, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), state = state, stationary = stationary)
   
     __obj.asInstanceOf[BaseLayerView2DRenderRenderParameters]
   }

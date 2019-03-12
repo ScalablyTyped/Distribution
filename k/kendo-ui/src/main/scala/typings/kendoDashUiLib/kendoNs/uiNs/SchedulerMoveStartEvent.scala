@@ -12,12 +12,12 @@ trait SchedulerMoveStartEvent extends SchedulerEvent {
 object SchedulerMoveStartEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Scheduler,
     event: kendoDashUiLib.kendoNs.dataNs.SchedulerEvent = null
   ): SchedulerMoveStartEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (event != null) __obj.updateDynamic("event")(event)
     __obj.asInstanceOf[SchedulerMoveStartEvent]
   }

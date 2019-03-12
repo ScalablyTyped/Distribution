@@ -22,7 +22,7 @@ class _XDocument protected () extends js.Object {
   var Language: java.lang.String = js.native
   val QueryAdapter: js.Any = js.native
   val Solution: SolutionObject = js.native
-  val UI: UI = js.native
+  val UI: activexDashInfopathLib.InfoPathNs.UI = js.native
   val URI: java.lang.String = js.native
   val View: ViewObject = js.native
   val ViewInfos: ViewInfosCollection = js.native

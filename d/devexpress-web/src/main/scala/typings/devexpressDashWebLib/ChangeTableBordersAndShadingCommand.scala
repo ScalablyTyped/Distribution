@@ -23,11 +23,8 @@ trait ChangeTableBordersAndShadingCommand extends CommandBase {
 
 object ChangeTableBordersAndShadingCommand {
   @scala.inline
-  def apply(
-    execute: js.Function2[TableBordersSettings, scala.Boolean, scala.Boolean],
-    getState: js.Function0[js.Any]
-  ): ChangeTableBordersAndShadingCommand = {
-    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  def apply(execute: (TableBordersSettings, scala.Boolean) => scala.Boolean, getState: () => js.Any): ChangeTableBordersAndShadingCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction2(execute), getState = js.Any.fromFunction0(getState))
   
     __obj.asInstanceOf[ChangeTableBordersAndShadingCommand]
   }

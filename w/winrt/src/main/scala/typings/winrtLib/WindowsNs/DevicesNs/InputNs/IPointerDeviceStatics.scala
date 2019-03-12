@@ -13,10 +13,10 @@ trait IPointerDeviceStatics extends js.Object {
 object IPointerDeviceStatics {
   @scala.inline
   def apply(
-    getPointerDevice: js.Function1[scala.Double, PointerDevice],
-    getPointerDevices: js.Function0[winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[PointerDevice]]
+    getPointerDevice: scala.Double => PointerDevice,
+    getPointerDevices: () => winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[PointerDevice]
   ): IPointerDeviceStatics = {
-    val __obj = js.Dynamic.literal(getPointerDevice = getPointerDevice, getPointerDevices = getPointerDevices)
+    val __obj = js.Dynamic.literal(getPointerDevice = js.Any.fromFunction1(getPointerDevice), getPointerDevices = js.Any.fromFunction0(getPointerDevices))
   
     __obj.asInstanceOf[IPointerDeviceStatics]
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Props[HolderProps /* <: js.Object */]
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] {
   /**
     * Sticky state will be triggered when the bottom of the element is
     * `bottomOffset` pixels from the bottom of the `scrollElement`.
@@ -118,7 +118,7 @@ trait Props[HolderProps /* <: js.Object */]
 object Props {
   @scala.inline
   def apply[HolderProps /* <: js.Object */](
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] = null,
     bottomOffset: scala.Int | scala.Double = null,
     boundaryElement: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -126,7 +126,7 @@ object Props {
     holderCmp: java.lang.String = null,
     holderProps: HolderProps = null,
     mode: reactDashStickyDashElLib.reactDashStickyDashElLibStrings.top | reactDashStickyDashElLib.reactDashStickyDashElLibStrings.bottom = null,
-    onFixedToggle: js.Function1[/* fixed */ scala.Boolean, scala.Unit] = null,
+    onFixedToggle: /* fixed */ scala.Boolean => scala.Unit = null,
     positionRecheckInterval: scala.Int | scala.Double = null,
     scrollElement: java.lang.String = null,
     stickyClassName: java.lang.String = null,
@@ -143,7 +143,7 @@ object Props {
     if (holderCmp != null) __obj.updateDynamic("holderCmp")(holderCmp)
     if (holderProps != null) __obj.updateDynamic("holderProps")(holderProps.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (onFixedToggle != null) __obj.updateDynamic("onFixedToggle")(onFixedToggle)
+    if (onFixedToggle != null) __obj.updateDynamic("onFixedToggle")(js.Any.fromFunction1(onFixedToggle))
     if (positionRecheckInterval != null) __obj.updateDynamic("positionRecheckInterval")(positionRecheckInterval.asInstanceOf[js.Any])
     if (scrollElement != null) __obj.updateDynamic("scrollElement")(scrollElement)
     if (stickyClassName != null) __obj.updateDynamic("stickyClassName")(stickyClassName)

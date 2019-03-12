@@ -19,7 +19,7 @@ trait SagaMiddlewareOptions[C /* <: js.Object */] extends js.Object {
     * If provided, the middleware will call it with uncaught errors from Sagas.
     * useful for sending uncaught exceptions to error tracking services.
     */
-  var onError: js.UndefOr[js.Function2[/* error */ nodeLib.Error, /* errorInfo */ ErrorInfo, scala.Unit]] = js.undefined
+  var onError: js.UndefOr[js.Function2[/* error */ stdLib.Error, /* errorInfo */ ErrorInfo, scala.Unit]] = js.undefined
   /**
     * If a Saga Monitor is provided, the middleware will deliver monitoring
     * events to the monitor.
@@ -32,13 +32,13 @@ object SagaMiddlewareOptions {
   def apply[C /* <: js.Object */](
     context: C = null,
     effectMiddlewares: js.Array[EffectMiddleware] = null,
-    onError: js.Function2[/* error */ nodeLib.Error, /* errorInfo */ ErrorInfo, scala.Unit] = null,
+    onError: (/* error */ stdLib.Error, /* errorInfo */ ErrorInfo) => scala.Unit = null,
     sagaMonitor: SagaMonitor = null
   ): SagaMiddlewareOptions[C] = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (effectMiddlewares != null) __obj.updateDynamic("effectMiddlewares")(effectMiddlewares)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction2(onError))
     if (sagaMonitor != null) __obj.updateDynamic("sagaMonitor")(sagaMonitor)
     __obj.asInstanceOf[SagaMiddlewareOptions[C]]
   }

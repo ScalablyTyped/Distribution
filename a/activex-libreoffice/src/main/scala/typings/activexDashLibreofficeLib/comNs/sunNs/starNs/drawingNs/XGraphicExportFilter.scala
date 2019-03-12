@@ -14,20 +14,17 @@ trait XGraphicExportFilter
 object XGraphicExportFilter {
   @scala.inline
   def apply(
-    SupportedMimeTypeNames: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    cancel: js.Function0[scala.Unit],
-    filter: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Boolean
-    ],
-    getSupportedMimeTypeNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setSourceDocument: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent, scala.Unit],
-    supportsMimeType: js.Function1[java.lang.String, scala.Boolean]
+    SupportedMimeTypeNames: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    cancel: () => scala.Unit,
+    filter: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] => scala.Boolean,
+    getSupportedMimeTypeNames: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setSourceDocument: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent => scala.Unit,
+    supportsMimeType: java.lang.String => scala.Boolean
   ): XGraphicExportFilter = {
-    val __obj = js.Dynamic.literal(SupportedMimeTypeNames = SupportedMimeTypeNames, acquire = acquire, cancel = cancel, filter = filter, getSupportedMimeTypeNames = getSupportedMimeTypeNames, queryInterface = queryInterface, release = release, setSourceDocument = setSourceDocument, supportsMimeType = supportsMimeType)
+    val __obj = js.Dynamic.literal(SupportedMimeTypeNames = SupportedMimeTypeNames, acquire = js.Any.fromFunction0(acquire), cancel = js.Any.fromFunction0(cancel), filter = js.Any.fromFunction1(filter), getSupportedMimeTypeNames = js.Any.fromFunction0(getSupportedMimeTypeNames), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setSourceDocument = js.Any.fromFunction1(setSourceDocument), supportsMimeType = js.Any.fromFunction1(supportsMimeType))
   
     __obj.asInstanceOf[XGraphicExportFilter]
   }

@@ -23,12 +23,12 @@ object AttachmentCardNoPreviewOptions {
     description: java.lang.String,
     fileIconImageUrl: java.lang.String,
     iconThumbnailUrl: java.lang.String,
-    previewOnClick: js.Function1[PreviewClickEvent, scala.Unit],
+    previewOnClick: PreviewClickEvent => scala.Unit,
     previewUrl: java.lang.String,
     title: java.lang.String,
     foldColor: java.lang.String = null
   ): AttachmentCardNoPreviewOptions = {
-    val __obj = js.Dynamic.literal(buttons = buttons, description = description, fileIconImageUrl = fileIconImageUrl, iconThumbnailUrl = iconThumbnailUrl, previewOnClick = previewOnClick, previewUrl = previewUrl, title = title)
+    val __obj = js.Dynamic.literal(buttons = buttons, description = description, fileIconImageUrl = fileIconImageUrl, iconThumbnailUrl = iconThumbnailUrl, previewOnClick = js.Any.fromFunction1(previewOnClick), previewUrl = previewUrl, title = title)
     if (foldColor != null) __obj.updateDynamic("foldColor")(foldColor)
     __obj.asInstanceOf[AttachmentCardNoPreviewOptions]
   }

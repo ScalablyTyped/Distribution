@@ -17,14 +17,14 @@ trait Distribution extends js.Object {
 object Distribution {
   @scala.inline
   def apply(
-    cdf: js.Function1[scala.Double, scala.Double],
-    inv: js.Function1[scala.Double, scala.Double],
-    mean: js.Function0[scala.Double],
-    median: js.Function0[scala.Double],
-    pdf: js.Function1[scala.Double, scala.Double],
-    variance: js.Function0[scala.Double]
+    cdf: scala.Double => scala.Double,
+    inv: scala.Double => scala.Double,
+    mean: () => scala.Double,
+    median: () => scala.Double,
+    pdf: scala.Double => scala.Double,
+    variance: () => scala.Double
   ): Distribution = {
-    val __obj = js.Dynamic.literal(cdf = cdf, inv = inv, mean = mean, median = median, pdf = pdf, variance = variance)
+    val __obj = js.Dynamic.literal(cdf = js.Any.fromFunction1(cdf), inv = js.Any.fromFunction1(inv), mean = js.Any.fromFunction0(mean), median = js.Any.fromFunction0(median), pdf = js.Any.fromFunction1(pdf), variance = js.Any.fromFunction0(variance))
   
     __obj.asInstanceOf[Distribution]
   }

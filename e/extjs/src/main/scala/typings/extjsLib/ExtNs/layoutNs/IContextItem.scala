@@ -209,82 +209,47 @@ trait IContextItem
 object IContextItem {
   @scala.inline
   def apply(
-    addCls: js.Function1[/* newCls */ js.UndefOr[js.Any], scala.Unit] = null,
+    addCls: /* newCls */ js.UndefOr[js.Any] => scala.Unit = null,
     alias: extjsLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    block: js.Function2[
-      /* layout */ js.UndefOr[ILayout], 
-      /* propName */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    clearMarginCache: js.Function0[scala.Unit] = null,
+    block: (/* layout */ js.UndefOr[ILayout], /* propName */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
+    clearMarginCache: () => scala.Unit = null,
     config: js.Any = null,
-    domBlock: js.Function2[
-      /* layout */ js.UndefOr[ILayout], 
-      /* propName */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
+    domBlock: (/* layout */ js.UndefOr[ILayout], /* propName */ js.UndefOr[java.lang.String]) => scala.Unit = null,
     extend: java.lang.String = null,
-    flush: js.Function0[scala.Unit] = null,
-    getBorderInfo: js.Function0[_] = null,
-    getClassList: js.Function0[scala.Unit] = null,
-    getDomProp: js.Function1[/* propName */ js.UndefOr[java.lang.String], _] = null,
-    getEl: js.Function2[/* nameOrEl */ js.UndefOr[js.Any], /* owner */ js.UndefOr[js.Any], IContextItem] = null,
-    getFrameInfo: js.Function0[_] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getMarginInfo: js.Function0[_] = null,
-    getPaddingInfo: js.Function0[_] = null,
-    getProp: js.Function1[/* propName */ js.UndefOr[java.lang.String], _] = null,
-    getStyle: js.Function1[/* styleName */ js.UndefOr[java.lang.String], _] = null,
-    getStyles: js.Function2[
-      /* styleNames */ js.UndefOr[extjsLib.ExtNs.Array], 
-      /* altNames */ js.UndefOr[extjsLib.ExtNs.Array], 
-      _
-    ] = null,
-    hasDomProp: js.Function1[/* propName */ js.UndefOr[java.lang.String], scala.Boolean] = null,
-    hasProp: js.Function1[/* propName */ js.UndefOr[java.lang.String], scala.Boolean] = null,
+    flush: () => scala.Unit = null,
+    getBorderInfo: () => _ = null,
+    getClassList: () => scala.Unit = null,
+    getDomProp: /* propName */ js.UndefOr[java.lang.String] => _ = null,
+    getEl: (/* nameOrEl */ js.UndefOr[js.Any], /* owner */ js.UndefOr[js.Any]) => IContextItem = null,
+    getFrameInfo: () => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getMarginInfo: () => _ = null,
+    getPaddingInfo: () => _ = null,
+    getProp: /* propName */ js.UndefOr[java.lang.String] => _ = null,
+    getStyle: /* styleName */ js.UndefOr[java.lang.String] => _ = null,
+    getStyles: (/* styleNames */ js.UndefOr[extjsLib.ExtNs.Array], /* altNames */ js.UndefOr[extjsLib.ExtNs.Array]) => _ = null,
+    hasDomProp: /* propName */ js.UndefOr[java.lang.String] => scala.Boolean = null,
+    hasProp: /* propName */ js.UndefOr[java.lang.String] => scala.Boolean = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IContextItem] = null,
-    invalidate: js.Function1[/* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IContextItem = null,
+    invalidate: /* options */ js.UndefOr[js.Any] => scala.Unit = null,
     mixins: js.Any = null,
-    recoverProp: js.Function3[
-      /* propName */ js.UndefOr[java.lang.String], 
-      /* oldProps */ js.UndefOr[js.Any], 
-      /* oldDirty */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    removeCls: js.Function1[/* removeCls */ js.UndefOr[js.Any], scala.Unit] = null,
-    removeEl: js.Function2[/* nameOrEl */ js.UndefOr[js.Any], /* owner */ js.UndefOr[js.Any], scala.Unit] = null,
+    recoverProp: (/* propName */ js.UndefOr[java.lang.String], /* oldProps */ js.UndefOr[js.Any], /* oldDirty */ js.UndefOr[js.Any]) => scala.Unit = null,
+    removeCls: /* removeCls */ js.UndefOr[js.Any] => scala.Unit = null,
+    removeEl: (/* nameOrEl */ js.UndefOr[js.Any], /* owner */ js.UndefOr[js.Any]) => scala.Unit = null,
     requires: extjsLib.ExtNs.Array = null,
     self: extjsLib.ExtNs.IClass = null,
-    setAttribute: js.Function2[/* name */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], scala.Unit] = null,
-    setContentHeight: js.Function2[/* height */ js.UndefOr[js.Any], /* measured */ js.UndefOr[js.Any], scala.Unit] = null,
-    setContentSize: js.Function3[
-      /* width */ js.UndefOr[js.Any], 
-      /* height */ js.UndefOr[js.Any], 
-      /* measured */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    setContentWidth: js.Function2[/* width */ js.UndefOr[js.Any], /* measured */ js.UndefOr[js.Any], scala.Unit] = null,
-    setHeight: js.Function2[
-      /* height */ js.UndefOr[scala.Double], 
-      /* dirty */ js.UndefOr[scala.Boolean], 
-      scala.Double
-    ] = null,
-    setProp: js.Function3[
-      /* propName */ js.UndefOr[java.lang.String], 
-      /* value */ js.UndefOr[js.Any], 
-      /* dirty */ js.UndefOr[scala.Boolean], 
-      scala.Double
-    ] = null,
-    setWidth: js.Function2[
-      /* width */ js.UndefOr[scala.Double], 
-      /* dirty */ js.UndefOr[scala.Boolean], 
-      scala.Double
-    ] = null,
+    setAttribute: (/* name */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any]) => scala.Unit = null,
+    setContentHeight: (/* height */ js.UndefOr[js.Any], /* measured */ js.UndefOr[js.Any]) => scala.Unit = null,
+    setContentSize: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], /* measured */ js.UndefOr[js.Any]) => scala.Unit = null,
+    setContentWidth: (/* width */ js.UndefOr[js.Any], /* measured */ js.UndefOr[js.Any]) => scala.Unit = null,
+    setHeight: (/* height */ js.UndefOr[scala.Double], /* dirty */ js.UndefOr[scala.Boolean]) => scala.Double = null,
+    setProp: (/* propName */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], /* dirty */ js.UndefOr[scala.Boolean]) => scala.Double = null,
+    setWidth: (/* width */ js.UndefOr[scala.Double], /* dirty */ js.UndefOr[scala.Boolean]) => scala.Double = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     state: js.Any = null,
     statics: js.Any = null,
@@ -292,47 +257,47 @@ object IContextItem {
     wrapsComponent: js.UndefOr[scala.Boolean] = js.undefined
   ): IContextItem = {
     val __obj = js.Dynamic.literal()
-    if (addCls != null) __obj.updateDynamic("addCls")(addCls)
+    if (addCls != null) __obj.updateDynamic("addCls")(js.Any.fromFunction1(addCls))
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (block != null) __obj.updateDynamic("block")(block)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
-    if (clearMarginCache != null) __obj.updateDynamic("clearMarginCache")(clearMarginCache)
+    if (block != null) __obj.updateDynamic("block")(js.Any.fromFunction2(block))
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
+    if (clearMarginCache != null) __obj.updateDynamic("clearMarginCache")(js.Any.fromFunction0(clearMarginCache))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (domBlock != null) __obj.updateDynamic("domBlock")(domBlock)
+    if (domBlock != null) __obj.updateDynamic("domBlock")(js.Any.fromFunction2(domBlock))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (flush != null) __obj.updateDynamic("flush")(flush)
-    if (getBorderInfo != null) __obj.updateDynamic("getBorderInfo")(getBorderInfo)
-    if (getClassList != null) __obj.updateDynamic("getClassList")(getClassList)
-    if (getDomProp != null) __obj.updateDynamic("getDomProp")(getDomProp)
-    if (getEl != null) __obj.updateDynamic("getEl")(getEl)
-    if (getFrameInfo != null) __obj.updateDynamic("getFrameInfo")(getFrameInfo)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getMarginInfo != null) __obj.updateDynamic("getMarginInfo")(getMarginInfo)
-    if (getPaddingInfo != null) __obj.updateDynamic("getPaddingInfo")(getPaddingInfo)
-    if (getProp != null) __obj.updateDynamic("getProp")(getProp)
-    if (getStyle != null) __obj.updateDynamic("getStyle")(getStyle)
-    if (getStyles != null) __obj.updateDynamic("getStyles")(getStyles)
-    if (hasDomProp != null) __obj.updateDynamic("hasDomProp")(hasDomProp)
-    if (hasProp != null) __obj.updateDynamic("hasProp")(hasProp)
+    if (flush != null) __obj.updateDynamic("flush")(js.Any.fromFunction0(flush))
+    if (getBorderInfo != null) __obj.updateDynamic("getBorderInfo")(js.Any.fromFunction0(getBorderInfo))
+    if (getClassList != null) __obj.updateDynamic("getClassList")(js.Any.fromFunction0(getClassList))
+    if (getDomProp != null) __obj.updateDynamic("getDomProp")(js.Any.fromFunction1(getDomProp))
+    if (getEl != null) __obj.updateDynamic("getEl")(js.Any.fromFunction2(getEl))
+    if (getFrameInfo != null) __obj.updateDynamic("getFrameInfo")(js.Any.fromFunction0(getFrameInfo))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getMarginInfo != null) __obj.updateDynamic("getMarginInfo")(js.Any.fromFunction0(getMarginInfo))
+    if (getPaddingInfo != null) __obj.updateDynamic("getPaddingInfo")(js.Any.fromFunction0(getPaddingInfo))
+    if (getProp != null) __obj.updateDynamic("getProp")(js.Any.fromFunction1(getProp))
+    if (getStyle != null) __obj.updateDynamic("getStyle")(js.Any.fromFunction1(getStyle))
+    if (getStyles != null) __obj.updateDynamic("getStyles")(js.Any.fromFunction2(getStyles))
+    if (hasDomProp != null) __obj.updateDynamic("hasDomProp")(js.Any.fromFunction1(hasDomProp))
+    if (hasProp != null) __obj.updateDynamic("hasProp")(js.Any.fromFunction1(hasProp))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
-    if (invalidate != null) __obj.updateDynamic("invalidate")(invalidate)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (invalidate != null) __obj.updateDynamic("invalidate")(js.Any.fromFunction1(invalidate))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (recoverProp != null) __obj.updateDynamic("recoverProp")(recoverProp)
-    if (removeCls != null) __obj.updateDynamic("removeCls")(removeCls)
-    if (removeEl != null) __obj.updateDynamic("removeEl")(removeEl)
+    if (recoverProp != null) __obj.updateDynamic("recoverProp")(js.Any.fromFunction3(recoverProp))
+    if (removeCls != null) __obj.updateDynamic("removeCls")(js.Any.fromFunction1(removeCls))
+    if (removeEl != null) __obj.updateDynamic("removeEl")(js.Any.fromFunction2(removeEl))
     if (requires != null) __obj.updateDynamic("requires")(requires)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setAttribute != null) __obj.updateDynamic("setAttribute")(setAttribute)
-    if (setContentHeight != null) __obj.updateDynamic("setContentHeight")(setContentHeight)
-    if (setContentSize != null) __obj.updateDynamic("setContentSize")(setContentSize)
-    if (setContentWidth != null) __obj.updateDynamic("setContentWidth")(setContentWidth)
-    if (setHeight != null) __obj.updateDynamic("setHeight")(setHeight)
-    if (setProp != null) __obj.updateDynamic("setProp")(setProp)
-    if (setWidth != null) __obj.updateDynamic("setWidth")(setWidth)
+    if (setAttribute != null) __obj.updateDynamic("setAttribute")(js.Any.fromFunction2(setAttribute))
+    if (setContentHeight != null) __obj.updateDynamic("setContentHeight")(js.Any.fromFunction2(setContentHeight))
+    if (setContentSize != null) __obj.updateDynamic("setContentSize")(js.Any.fromFunction3(setContentSize))
+    if (setContentWidth != null) __obj.updateDynamic("setContentWidth")(js.Any.fromFunction2(setContentWidth))
+    if (setHeight != null) __obj.updateDynamic("setHeight")(js.Any.fromFunction2(setHeight))
+    if (setProp != null) __obj.updateDynamic("setProp")(js.Any.fromFunction3(setProp))
+    if (setWidth != null) __obj.updateDynamic("setWidth")(js.Any.fromFunction2(setWidth))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (state != null) __obj.updateDynamic("state")(state)
     if (statics != null) __obj.updateDynamic("statics")(statics)

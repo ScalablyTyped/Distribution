@@ -30,14 +30,14 @@ object PageOptions {
   @scala.inline
   def apply(
     data: js.Any,
-    onError: js.Function1[Page, scala.Unit],
-    onHide: js.Function1[Page, scala.Unit],
-    onLaunch: js.Function2[Page, Options, scala.Unit],
-    onShow: js.Function2[Page, Options, scala.Unit],
+    onError: Page => scala.Unit,
+    onHide: Page => scala.Unit,
+    onLaunch: (Page, Options) => scala.Unit,
+    onShow: (Page, Options) => scala.Unit,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     onPullDownRefresh: js.ThisFunction0[/* this */ Page, scala.Unit] = null
   ): PageOptions = {
-    val __obj = js.Dynamic.literal(data = data, onError = onError, onHide = onHide, onLaunch = onLaunch, onShow = onShow)
+    val __obj = js.Dynamic.literal(data = data, onError = js.Any.fromFunction1(onError), onHide = js.Any.fromFunction1(onHide), onLaunch = js.Any.fromFunction2(onLaunch), onShow = js.Any.fromFunction2(onShow))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (onPullDownRefresh != null) __obj.updateDynamic("onPullDownRefresh")(onPullDownRefresh)
     __obj.asInstanceOf[PageOptions]

@@ -28,25 +28,25 @@ trait ParagraphTextItem extends js.Object {
 object ParagraphTextItem {
   @scala.inline
   def apply(
-    clearValidation: js.Function0[ParagraphTextItem],
-    createResponse: js.Function1[java.lang.String, ItemResponse],
-    duplicate: js.Function0[ParagraphTextItem],
-    getGeneralFeedback: js.Function0[QuizFeedback],
-    getHelpText: js.Function0[java.lang.String],
-    getId: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getPoints: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getTitle: js.Function0[java.lang.String],
-    getType: js.Function0[ItemType],
-    isRequired: js.Function0[scala.Boolean],
-    setGeneralFeedback: js.Function1[QuizFeedback, ParagraphTextItem],
-    setHelpText: js.Function1[java.lang.String, ParagraphTextItem],
-    setPoints: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ParagraphTextItem],
-    setRequired: js.Function1[scala.Boolean, ParagraphTextItem],
-    setTitle: js.Function1[java.lang.String, ParagraphTextItem],
-    setValidation: js.Function1[ParagraphTextValidation, ParagraphTextItem]
+    clearValidation: () => ParagraphTextItem,
+    createResponse: java.lang.String => ItemResponse,
+    duplicate: () => ParagraphTextItem,
+    getGeneralFeedback: () => QuizFeedback,
+    getHelpText: () => java.lang.String,
+    getId: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getIndex: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getPoints: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getTitle: () => java.lang.String,
+    getType: () => ItemType,
+    isRequired: () => scala.Boolean,
+    setGeneralFeedback: QuizFeedback => ParagraphTextItem,
+    setHelpText: java.lang.String => ParagraphTextItem,
+    setPoints: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => ParagraphTextItem,
+    setRequired: scala.Boolean => ParagraphTextItem,
+    setTitle: java.lang.String => ParagraphTextItem,
+    setValidation: ParagraphTextValidation => ParagraphTextItem
   ): ParagraphTextItem = {
-    val __obj = js.Dynamic.literal(clearValidation = clearValidation, createResponse = createResponse, duplicate = duplicate, getGeneralFeedback = getGeneralFeedback, getHelpText = getHelpText, getId = getId, getIndex = getIndex, getPoints = getPoints, getTitle = getTitle, getType = getType, isRequired = isRequired, setGeneralFeedback = setGeneralFeedback, setHelpText = setHelpText, setPoints = setPoints, setRequired = setRequired, setTitle = setTitle, setValidation = setValidation)
+    val __obj = js.Dynamic.literal(clearValidation = js.Any.fromFunction0(clearValidation), createResponse = js.Any.fromFunction1(createResponse), duplicate = js.Any.fromFunction0(duplicate), getGeneralFeedback = js.Any.fromFunction0(getGeneralFeedback), getHelpText = js.Any.fromFunction0(getHelpText), getId = js.Any.fromFunction0(getId), getIndex = js.Any.fromFunction0(getIndex), getPoints = js.Any.fromFunction0(getPoints), getTitle = js.Any.fromFunction0(getTitle), getType = js.Any.fromFunction0(getType), isRequired = js.Any.fromFunction0(isRequired), setGeneralFeedback = js.Any.fromFunction1(setGeneralFeedback), setHelpText = js.Any.fromFunction1(setHelpText), setPoints = js.Any.fromFunction1(setPoints), setRequired = js.Any.fromFunction1(setRequired), setTitle = js.Any.fromFunction1(setTitle), setValidation = js.Any.fromFunction1(setValidation))
   
     __obj.asInstanceOf[ParagraphTextItem]
   }

@@ -13,6 +13,6 @@ object ^ extends js.Object {
     tree: reactLib.reactMod.ReactNs.ReactNode,
     context: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): js.Promise[java.lang.String] = js.native
-  def getMarkupFromTree(hasTreeContextRenderFunction: reactDashApolloLib.getDataFromTreeMod.GetMarkupFromTreeOptions): js.Promise[java.lang.String] = js.native
+  def getMarkupFromTree(hasTreeContextRenderFunction: GetMarkupFromTreeOptions): js.Promise[java.lang.String] = js.native
 }
 

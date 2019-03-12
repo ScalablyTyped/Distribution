@@ -31,28 +31,13 @@ trait SubscriptionsResource extends js.Object {
 object SubscriptionsResource {
   @scala.inline
   def apply(
-    cancel: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUser, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    defer: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUser, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SubscriptionPurchasesDeferResponse]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUser, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SubscriptionPurchase]
-    ],
-    refund: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUser, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    revoke: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUser, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ]
+    cancel: gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUser => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    defer: gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUser => gapiDotClientLib.gapiNs.clientNs.Request[SubscriptionPurchasesDeferResponse],
+    get: gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUser => gapiDotClientLib.gapiNs.clientNs.Request[SubscriptionPurchase],
+    refund: gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUser => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    revoke: gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUser => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   ): SubscriptionsResource = {
-    val __obj = js.Dynamic.literal(cancel = cancel, defer = defer, get = get, refund = refund, revoke = revoke)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), defer = js.Any.fromFunction1(defer), get = js.Any.fromFunction1(get), refund = js.Any.fromFunction1(refund), revoke = js.Any.fromFunction1(revoke))
   
     __obj.asInstanceOf[SubscriptionsResource]
   }

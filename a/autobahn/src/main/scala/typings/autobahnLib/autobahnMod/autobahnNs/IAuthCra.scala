@@ -13,10 +13,10 @@ trait IAuthCra extends js.Object {
 object IAuthCra {
   @scala.inline
   def apply(
-    derive_key: js.Function4[java.lang.String, java.lang.String, scala.Double, scala.Double, java.lang.String],
-    sign: js.Function2[java.lang.String, java.lang.String, java.lang.String]
+    derive_key: (java.lang.String, java.lang.String, scala.Double, scala.Double) => java.lang.String,
+    sign: (java.lang.String, java.lang.String) => java.lang.String
   ): IAuthCra = {
-    val __obj = js.Dynamic.literal(derive_key = derive_key, sign = sign)
+    val __obj = js.Dynamic.literal(derive_key = js.Any.fromFunction4(derive_key), sign = js.Any.fromFunction2(sign))
   
     __obj.asInstanceOf[IAuthCra]
   }

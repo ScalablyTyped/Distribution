@@ -32,19 +32,19 @@ object XMutableTreeDataModel {
   @scala.inline
   def apply(
     Root: XTreeNode,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    addTreeDataModelListener: js.Function1[XTreeDataModelListener, scala.Unit],
-    createNode: js.Function2[js.Any, scala.Boolean, XMutableTreeNode],
-    dispose: js.Function0[scala.Unit],
-    getRoot: js.Function0[XTreeNode],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    removeTreeDataModelListener: js.Function1[XTreeDataModelListener, scala.Unit],
-    setRoot: js.Function1[XMutableTreeNode, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    addTreeDataModelListener: XTreeDataModelListener => scala.Unit,
+    createNode: (js.Any, scala.Boolean) => XMutableTreeNode,
+    dispose: () => scala.Unit,
+    getRoot: () => XTreeNode,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    removeTreeDataModelListener: XTreeDataModelListener => scala.Unit,
+    setRoot: XMutableTreeNode => scala.Unit
   ): XMutableTreeDataModel = {
-    val __obj = js.Dynamic.literal(Root = Root, acquire = acquire, addEventListener = addEventListener, addTreeDataModelListener = addTreeDataModelListener, createNode = createNode, dispose = dispose, getRoot = getRoot, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeTreeDataModelListener = removeTreeDataModelListener, setRoot = setRoot)
+    val __obj = js.Dynamic.literal(Root = Root, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addTreeDataModelListener = js.Any.fromFunction1(addTreeDataModelListener), createNode = js.Any.fromFunction2(createNode), dispose = js.Any.fromFunction0(dispose), getRoot = js.Any.fromFunction0(getRoot), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removeTreeDataModelListener = js.Any.fromFunction1(removeTreeDataModelListener), setRoot = js.Any.fromFunction1(setRoot))
   
     __obj.asInstanceOf[XMutableTreeDataModel]
   }

@@ -11,9 +11,9 @@ trait DndOptions[Props] extends js.Object {
 
 object DndOptions {
   @scala.inline
-  def apply[Props](arePropsEqual: js.Function2[/* first */ Props, /* second */ Props, scala.Boolean] = null): DndOptions[Props] = {
+  def apply[Props](arePropsEqual: (/* first */ Props, /* second */ Props) => scala.Boolean = null): DndOptions[Props] = {
     val __obj = js.Dynamic.literal()
-    if (arePropsEqual != null) __obj.updateDynamic("arePropsEqual")(arePropsEqual)
+    if (arePropsEqual != null) __obj.updateDynamic("arePropsEqual")(js.Any.fromFunction2(arePropsEqual))
     __obj.asInstanceOf[DndOptions[Props]]
   }
 }

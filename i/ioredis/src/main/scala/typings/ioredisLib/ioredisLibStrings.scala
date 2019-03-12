@@ -28,6 +28,9 @@ object ioredisLibStrings {
   sealed trait NOSAVE extends js.Object
   
   @js.native
+  sealed trait OK extends js.Object
+  
+  @js.native
   sealed trait SAVE extends js.Object
   
   @js.native
@@ -74,6 +77,8 @@ object ioredisLibStrings {
   def MAXLEN: MAXLEN = "MAXLEN".asInstanceOf[MAXLEN]
   @scala.inline
   def NOSAVE: NOSAVE = "NOSAVE".asInstanceOf[NOSAVE]
+  @scala.inline
+  def OK: OK = "OK".asInstanceOf[OK]
   @scala.inline
   def SAVE: SAVE = "SAVE".asInstanceOf[SAVE]
   @scala.inline

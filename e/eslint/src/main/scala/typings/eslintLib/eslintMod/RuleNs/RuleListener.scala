@@ -52,24 +52,19 @@ object RuleListener {
         ]) | (js.Function1[/* node */ estreeLib.estreeMod.Node, scala.Unit])
       ]
     ] = null,
-    onCodePathEnd: js.Function2[/* codePath */ CodePath, /* node */ estreeLib.estreeMod.Node, scala.Unit] = null,
-    onCodePathSegmentEnd: js.Function2[/* segment */ CodePathSegment, /* node */ estreeLib.estreeMod.Node, scala.Unit] = null,
-    onCodePathSegmentLoop: js.Function3[
-      /* fromSegment */ CodePathSegment, 
-      /* toSegment */ CodePathSegment, 
-      /* node */ estreeLib.estreeMod.Node, 
-      scala.Unit
-    ] = null,
-    onCodePathSegmentStart: js.Function2[/* segment */ CodePathSegment, /* node */ estreeLib.estreeMod.Node, scala.Unit] = null,
-    onCodePathStart: js.Function2[/* codePath */ CodePath, /* node */ estreeLib.estreeMod.Node, scala.Unit] = null
+    onCodePathEnd: (/* codePath */ CodePath, /* node */ estreeLib.estreeMod.Node) => scala.Unit = null,
+    onCodePathSegmentEnd: (/* segment */ CodePathSegment, /* node */ estreeLib.estreeMod.Node) => scala.Unit = null,
+    onCodePathSegmentLoop: (/* fromSegment */ CodePathSegment, /* toSegment */ CodePathSegment, /* node */ estreeLib.estreeMod.Node) => scala.Unit = null,
+    onCodePathSegmentStart: (/* segment */ CodePathSegment, /* node */ estreeLib.estreeMod.Node) => scala.Unit = null,
+    onCodePathStart: (/* codePath */ CodePath, /* node */ estreeLib.estreeMod.Node) => scala.Unit = null
   ): RuleListener = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (onCodePathEnd != null) __obj.updateDynamic("onCodePathEnd")(onCodePathEnd)
-    if (onCodePathSegmentEnd != null) __obj.updateDynamic("onCodePathSegmentEnd")(onCodePathSegmentEnd)
-    if (onCodePathSegmentLoop != null) __obj.updateDynamic("onCodePathSegmentLoop")(onCodePathSegmentLoop)
-    if (onCodePathSegmentStart != null) __obj.updateDynamic("onCodePathSegmentStart")(onCodePathSegmentStart)
-    if (onCodePathStart != null) __obj.updateDynamic("onCodePathStart")(onCodePathStart)
+    if (onCodePathEnd != null) __obj.updateDynamic("onCodePathEnd")(js.Any.fromFunction2(onCodePathEnd))
+    if (onCodePathSegmentEnd != null) __obj.updateDynamic("onCodePathSegmentEnd")(js.Any.fromFunction2(onCodePathSegmentEnd))
+    if (onCodePathSegmentLoop != null) __obj.updateDynamic("onCodePathSegmentLoop")(js.Any.fromFunction3(onCodePathSegmentLoop))
+    if (onCodePathSegmentStart != null) __obj.updateDynamic("onCodePathSegmentStart")(js.Any.fromFunction2(onCodePathSegmentStart))
+    if (onCodePathStart != null) __obj.updateDynamic("onCodePathStart")(js.Any.fromFunction2(onCodePathStart))
     __obj.asInstanceOf[RuleListener]
   }
 }

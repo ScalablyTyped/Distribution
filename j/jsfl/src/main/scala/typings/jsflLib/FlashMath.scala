@@ -17,11 +17,11 @@ trait FlashMath extends js.Object {
 object FlashMath {
   @scala.inline
   def apply(
-    concatMatrix: js.Function2[FlashMatrix, FlashMatrix, FlashMatrix],
-    invertMatrix: js.Function1[FlashMatrix, FlashMatrix],
-    pointDistance: js.Function2[FlashPoint, FlashPoint, scala.Double]
+    concatMatrix: (FlashMatrix, FlashMatrix) => FlashMatrix,
+    invertMatrix: FlashMatrix => FlashMatrix,
+    pointDistance: (FlashPoint, FlashPoint) => scala.Double
   ): FlashMath = {
-    val __obj = js.Dynamic.literal(concatMatrix = concatMatrix, invertMatrix = invertMatrix, pointDistance = pointDistance)
+    val __obj = js.Dynamic.literal(concatMatrix = js.Any.fromFunction2(concatMatrix), invertMatrix = js.Any.fromFunction1(invertMatrix), pointDistance = js.Any.fromFunction2(pointDistance))
   
     __obj.asInstanceOf[FlashMath]
   }

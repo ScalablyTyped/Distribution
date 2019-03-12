@@ -29,26 +29,26 @@ trait JdbcTimestamp extends js.Object {
 object JdbcTimestamp {
   @scala.inline
   def apply(
-    after: js.Function1[JdbcTimestamp, scala.Boolean],
-    before: js.Function1[JdbcTimestamp, scala.Boolean],
-    getDate: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getHours: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getMinutes: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getMonth: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getNanos: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getSeconds: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getTime: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getYear: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    setDate: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit],
-    setHours: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit],
-    setMinutes: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit],
-    setMonth: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit],
-    setNanos: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit],
-    setSeconds: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit],
-    setTime: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit],
-    setYear: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit]
+    after: JdbcTimestamp => scala.Boolean,
+    before: JdbcTimestamp => scala.Boolean,
+    getDate: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getHours: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getMinutes: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getMonth: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getNanos: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getSeconds: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getTime: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getYear: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    setDate: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => scala.Unit,
+    setHours: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => scala.Unit,
+    setMinutes: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => scala.Unit,
+    setMonth: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => scala.Unit,
+    setNanos: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => scala.Unit,
+    setSeconds: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => scala.Unit,
+    setTime: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => scala.Unit,
+    setYear: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => scala.Unit
   ): JdbcTimestamp = {
-    val __obj = js.Dynamic.literal(after = after, before = before, getDate = getDate, getHours = getHours, getMinutes = getMinutes, getMonth = getMonth, getNanos = getNanos, getSeconds = getSeconds, getTime = getTime, getYear = getYear, setDate = setDate, setHours = setHours, setMinutes = setMinutes, setMonth = setMonth, setNanos = setNanos, setSeconds = setSeconds, setTime = setTime, setYear = setYear)
+    val __obj = js.Dynamic.literal(after = js.Any.fromFunction1(after), before = js.Any.fromFunction1(before), getDate = js.Any.fromFunction0(getDate), getHours = js.Any.fromFunction0(getHours), getMinutes = js.Any.fromFunction0(getMinutes), getMonth = js.Any.fromFunction0(getMonth), getNanos = js.Any.fromFunction0(getNanos), getSeconds = js.Any.fromFunction0(getSeconds), getTime = js.Any.fromFunction0(getTime), getYear = js.Any.fromFunction0(getYear), setDate = js.Any.fromFunction1(setDate), setHours = js.Any.fromFunction1(setHours), setMinutes = js.Any.fromFunction1(setMinutes), setMonth = js.Any.fromFunction1(setMonth), setNanos = js.Any.fromFunction1(setNanos), setSeconds = js.Any.fromFunction1(setSeconds), setTime = js.Any.fromFunction1(setTime), setYear = js.Any.fromFunction1(setYear))
   
     __obj.asInstanceOf[JdbcTimestamp]
   }

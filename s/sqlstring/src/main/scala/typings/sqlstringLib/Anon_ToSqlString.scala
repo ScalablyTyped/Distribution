@@ -11,8 +11,8 @@ trait Anon_ToSqlString extends js.Object {
 
 object Anon_ToSqlString {
   @scala.inline
-  def apply(toSqlString: js.Function0[java.lang.String]): Anon_ToSqlString = {
-    val __obj = js.Dynamic.literal(toSqlString = toSqlString)
+  def apply(toSqlString: () => java.lang.String): Anon_ToSqlString = {
+    val __obj = js.Dynamic.literal(toSqlString = js.Any.fromFunction0(toSqlString))
   
     __obj.asInstanceOf[Anon_ToSqlString]
   }

@@ -21,7 +21,7 @@ trait IExpressionEx extends js.Object {
 object IExpressionEx {
   @scala.inline
   def apply(
-    Clone: js.Function0[IExpressionEx],
+    Clone: () => IExpressionEx,
     Conditions: ISearchConditions,
     Expression: IExpression,
     FolderListingAlgorithm: mfilesLib.MFilesNs.MFFolderListingAlgorithm,
@@ -32,7 +32,7 @@ object IExpressionEx {
     ShowNULLFolder: scala.Boolean,
     ShowNULLFolderContentsOnThisLevel: scala.Boolean
   ): IExpressionEx = {
-    val __obj = js.Dynamic.literal(Clone = Clone, Conditions = Conditions, Expression = Expression, FolderListingAlgorithm = FolderListingAlgorithm, NULLFolderName = NULLFolderName, ShowContentsAsJITFolders = ShowContentsAsJITFolders, ShowEmptyFolders = ShowEmptyFolders, ShowMatchingObjectsOnThisLevel = ShowMatchingObjectsOnThisLevel, ShowNULLFolder = ShowNULLFolder, ShowNULLFolderContentsOnThisLevel = ShowNULLFolderContentsOnThisLevel)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Conditions = Conditions, Expression = Expression, FolderListingAlgorithm = FolderListingAlgorithm, NULLFolderName = NULLFolderName, ShowContentsAsJITFolders = ShowContentsAsJITFolders, ShowEmptyFolders = ShowEmptyFolders, ShowMatchingObjectsOnThisLevel = ShowMatchingObjectsOnThisLevel, ShowNULLFolder = ShowNULLFolder, ShowNULLFolderContentsOnThisLevel = ShowNULLFolderContentsOnThisLevel)
   
     __obj.asInstanceOf[IExpressionEx]
   }

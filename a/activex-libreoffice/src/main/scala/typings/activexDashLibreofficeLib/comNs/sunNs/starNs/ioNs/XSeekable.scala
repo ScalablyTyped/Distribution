@@ -48,14 +48,14 @@ object XSeekable {
   def apply(
     Length: scala.Double,
     Position: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getLength: js.Function0[scala.Double],
-    getPosition: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    seek: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    getLength: () => scala.Double,
+    getPosition: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    seek: scala.Double => scala.Unit
   ): XSeekable = {
-    val __obj = js.Dynamic.literal(Length = Length, Position = Position, acquire = acquire, getLength = getLength, getPosition = getPosition, queryInterface = queryInterface, release = release, seek = seek)
+    val __obj = js.Dynamic.literal(Length = Length, Position = Position, acquire = js.Any.fromFunction0(acquire), getLength = js.Any.fromFunction0(getLength), getPosition = js.Any.fromFunction0(getPosition), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), seek = js.Any.fromFunction1(seek))
   
     __obj.asInstanceOf[XSeekable]
   }

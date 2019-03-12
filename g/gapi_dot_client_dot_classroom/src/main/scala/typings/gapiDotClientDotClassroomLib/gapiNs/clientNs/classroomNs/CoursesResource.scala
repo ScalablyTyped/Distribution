@@ -95,34 +95,16 @@ object CoursesResource {
     aliases: AliasesResource,
     announcements: AnnouncementsResource,
     courseWork: CourseWorkResource,
-    create: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Course]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Course]
-    ],
-    list: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseStates, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListCoursesResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsIdKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Course]
-    ],
+    create: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[Course],
+    delete: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId => gapiDotClientLib.gapiNs.clientNs.Request[Course],
+    list: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseStates => gapiDotClientLib.gapiNs.clientNs.Request[ListCoursesResponse],
+    patch: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsIdKey => gapiDotClientLib.gapiNs.clientNs.Request[Course],
     students: StudentsResource,
     teachers: TeachersResource,
-    update: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Course]
-    ]
+    update: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId => gapiDotClientLib.gapiNs.clientNs.Request[Course]
   ): CoursesResource = {
-    val __obj = js.Dynamic.literal(aliases = aliases, announcements = announcements, courseWork = courseWork, create = create, delete = delete, get = get, list = list, patch = patch, students = students, teachers = teachers, update = update)
+    val __obj = js.Dynamic.literal(aliases = aliases, announcements = announcements, courseWork = courseWork, create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), students = students, teachers = teachers, update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[CoursesResource]
   }

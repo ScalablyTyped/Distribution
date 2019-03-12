@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Hyperlink protected () extends js.Object {
   var Address: java.lang.String = js.native
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   var EmailSubject: java.lang.String = js.native
   val Parent: js.Any = js.native
   var `PowerPoint.Hyperlink_typekey`: Hyperlink = js.native

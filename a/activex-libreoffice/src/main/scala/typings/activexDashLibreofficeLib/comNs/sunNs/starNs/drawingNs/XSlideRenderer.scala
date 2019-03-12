@@ -51,26 +51,11 @@ trait XSlideRenderer extends js.Object {
 object XSlideRenderer {
   @scala.inline
   def apply(
-    calculatePreviewSize: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size
-    ],
-    createPreview: js.Function3[
-      XDrawPage, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XBitmap
-    ],
-    createPreviewForCanvas: js.Function4[
-      XDrawPage, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap
-    ]
+    calculatePreviewSize: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size) => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    createPreview: (XDrawPage, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Double) => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XBitmap,
+    createPreviewForCanvas: (XDrawPage, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas) => activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap
   ): XSlideRenderer = {
-    val __obj = js.Dynamic.literal(calculatePreviewSize = calculatePreviewSize, createPreview = createPreview, createPreviewForCanvas = createPreviewForCanvas)
+    val __obj = js.Dynamic.literal(calculatePreviewSize = js.Any.fromFunction2(calculatePreviewSize), createPreview = js.Any.fromFunction3(createPreview), createPreviewForCanvas = js.Any.fromFunction4(createPreviewForCanvas))
   
     __obj.asInstanceOf[XSlideRenderer]
   }

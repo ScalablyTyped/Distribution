@@ -18,16 +18,10 @@ trait TurnBasedMatchesResource extends js.Object {
 object TurnBasedMatchesResource {
   @scala.inline
   def apply(
-    reset: js.Function1[
-      gapiDotClientDotGamesmanagementLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    resetForAllPlayers: js.Function1[
-      gapiDotClientDotGamesmanagementLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ]
+    reset: gapiDotClientDotGamesmanagementLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    resetForAllPlayers: gapiDotClientDotGamesmanagementLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   ): TurnBasedMatchesResource = {
-    val __obj = js.Dynamic.literal(reset = reset, resetForAllPlayers = resetForAllPlayers)
+    val __obj = js.Dynamic.literal(reset = js.Any.fromFunction1(reset), resetForAllPlayers = js.Any.fromFunction1(resetForAllPlayers))
   
     __obj.asInstanceOf[TurnBasedMatchesResource]
   }

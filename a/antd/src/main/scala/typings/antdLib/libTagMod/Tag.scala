@@ -13,14 +13,14 @@ trait Tag
   def animationEnd(`_`: java.lang.String, existed: scala.Boolean): scala.Unit = js.native
   def getTagClassName(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): java.lang.String = js.native
   def getTagStyle(): antdLib.Anon_BackgroundColor | antdLib.Anon_Absolute = js.native
-  def handleIconClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.MouseEvent]): scala.Unit = js.native
+  def handleIconClick(e: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, stdLib.MouseEvent]): scala.Unit = js.native
   def isPresetColor(): scala.Boolean = js.native
   def isPresetColor(color: java.lang.String): scala.Boolean = js.native
   def renderCloseIcon(): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   def renderTag(configProps: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def setVisible(
     visible: scala.Boolean,
-    e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+    e: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]
   ): scala.Unit = js.native
 }
 

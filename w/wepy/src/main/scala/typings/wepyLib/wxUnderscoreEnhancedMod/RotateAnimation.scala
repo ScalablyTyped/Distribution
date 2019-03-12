@@ -16,13 +16,13 @@ trait RotateAnimation extends js.Object {
 object RotateAnimation {
   @scala.inline
   def apply(
-    rotate: js.Function1[scala.Double, Animation],
-    rotate3d: js.Function0[Animation],
-    rotateX: js.Function1[scala.Double, Animation],
-    rotateY: js.Function1[scala.Double, Animation],
-    rotateZ: js.Function1[scala.Double, Animation]
+    rotate: scala.Double => Animation,
+    rotate3d: () => Animation,
+    rotateX: scala.Double => Animation,
+    rotateY: scala.Double => Animation,
+    rotateZ: scala.Double => Animation
   ): RotateAnimation = {
-    val __obj = js.Dynamic.literal(rotate = rotate, rotate3d = rotate3d, rotateX = rotateX, rotateY = rotateY, rotateZ = rotateZ)
+    val __obj = js.Dynamic.literal(rotate = js.Any.fromFunction1(rotate), rotate3d = js.Any.fromFunction0(rotate3d), rotateX = js.Any.fromFunction1(rotateX), rotateY = js.Any.fromFunction1(rotateY), rotateZ = js.Any.fromFunction1(rotateZ))
   
     __obj.asInstanceOf[RotateAnimation]
   }

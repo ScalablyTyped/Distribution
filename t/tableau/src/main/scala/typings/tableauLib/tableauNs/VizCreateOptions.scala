@@ -59,8 +59,8 @@ object VizCreateOptions {
     hideTabs: js.UndefOr[scala.Boolean] = js.undefined,
     hideToolbar: js.UndefOr[scala.Boolean] = js.undefined,
     instanceIdToClone: java.lang.String = null,
-    onFirstInteractive: js.Function1[/* e */ TableauEvent, scala.Unit] = null,
-    onFirstVizSizeKnown: js.Function1[/* e */ VizResizeEvent, scala.Unit] = null,
+    onFirstInteractive: /* e */ TableauEvent => scala.Unit = null,
+    onFirstVizSizeKnown: /* e */ VizResizeEvent => scala.Unit = null,
     width: java.lang.String = null
   ): VizCreateOptions = {
     val __obj = js.Dynamic.literal()
@@ -70,8 +70,8 @@ object VizCreateOptions {
     if (!js.isUndefined(hideTabs)) __obj.updateDynamic("hideTabs")(hideTabs)
     if (!js.isUndefined(hideToolbar)) __obj.updateDynamic("hideToolbar")(hideToolbar)
     if (instanceIdToClone != null) __obj.updateDynamic("instanceIdToClone")(instanceIdToClone)
-    if (onFirstInteractive != null) __obj.updateDynamic("onFirstInteractive")(onFirstInteractive)
-    if (onFirstVizSizeKnown != null) __obj.updateDynamic("onFirstVizSizeKnown")(onFirstVizSizeKnown)
+    if (onFirstInteractive != null) __obj.updateDynamic("onFirstInteractive")(js.Any.fromFunction1(onFirstInteractive))
+    if (onFirstVizSizeKnown != null) __obj.updateDynamic("onFirstVizSizeKnown")(js.Any.fromFunction1(onFirstVizSizeKnown))
     if (width != null) __obj.updateDynamic("width")(width)
     __obj.asInstanceOf[VizCreateOptions]
   }

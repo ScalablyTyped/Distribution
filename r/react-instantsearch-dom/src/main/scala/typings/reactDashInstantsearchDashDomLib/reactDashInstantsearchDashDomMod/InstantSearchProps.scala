@@ -20,3 +20,33 @@ trait InstantSearchProps extends js.Object {
   var searchState: js.UndefOr[js.Any] = js.undefined
 }
 
+object InstantSearchProps {
+  @scala.inline
+  def apply(
+    apiKey: java.lang.String,
+    appId: java.lang.String,
+    indexName: java.lang.String,
+    algoliaClient: js.Any = null,
+    createURL: /* repeated */ js.Any => _ = null,
+    onSearchParameters: /* repeated */ js.Any => _ = null,
+    onSearchStateChange: /* repeated */ js.Any => _ = null,
+    refresh: js.UndefOr[scala.Boolean] = js.undefined,
+    resultsState: js.Any = null,
+    root: reactDashInstantsearchDashDomLib.Anon_Args = null,
+    searchClient: js.Any = null,
+    searchState: js.Any = null
+  ): InstantSearchProps = {
+    val __obj = js.Dynamic.literal(apiKey = apiKey, appId = appId, indexName = indexName)
+    if (algoliaClient != null) __obj.updateDynamic("algoliaClient")(algoliaClient)
+    if (createURL != null) __obj.updateDynamic("createURL")(js.Any.fromFunction1(createURL))
+    if (onSearchParameters != null) __obj.updateDynamic("onSearchParameters")(js.Any.fromFunction1(onSearchParameters))
+    if (onSearchStateChange != null) __obj.updateDynamic("onSearchStateChange")(js.Any.fromFunction1(onSearchStateChange))
+    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh)
+    if (resultsState != null) __obj.updateDynamic("resultsState")(resultsState)
+    if (root != null) __obj.updateDynamic("root")(root)
+    if (searchClient != null) __obj.updateDynamic("searchClient")(searchClient)
+    if (searchState != null) __obj.updateDynamic("searchState")(searchState)
+    __obj.asInstanceOf[InstantSearchProps]
+  }
+}
+

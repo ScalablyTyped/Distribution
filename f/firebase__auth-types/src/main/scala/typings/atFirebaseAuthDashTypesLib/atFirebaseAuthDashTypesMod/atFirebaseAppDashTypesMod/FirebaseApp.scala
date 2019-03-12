@@ -11,9 +11,9 @@ trait FirebaseApp extends js.Object {
 
 object FirebaseApp {
   @scala.inline
-  def apply(auth: js.Function0[atFirebaseAuthDashTypesLib.atFirebaseAuthDashTypesMod.FirebaseAuth] = null): FirebaseApp = {
+  def apply(auth: () => atFirebaseAuthDashTypesLib.atFirebaseAuthDashTypesMod.FirebaseAuth = null): FirebaseApp = {
     val __obj = js.Dynamic.literal()
-    if (auth != null) __obj.updateDynamic("auth")(auth)
+    if (auth != null) __obj.updateDynamic("auth")(js.Any.fromFunction0(auth))
     __obj.asInstanceOf[FirebaseApp]
   }
 }

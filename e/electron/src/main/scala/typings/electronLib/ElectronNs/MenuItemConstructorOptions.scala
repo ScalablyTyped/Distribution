@@ -96,12 +96,7 @@ object MenuItemConstructorOptions {
     before: js.Array[java.lang.String] = null,
     beforeGroupContaining: js.Array[java.lang.String] = null,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
-    click: js.Function3[
-      /* menuItem */ MenuItem, 
-      /* browserWindow */ BrowserWindow, 
-      /* event */ Event, 
-      scala.Unit
-    ] = null,
+    click: (/* menuItem */ MenuItem, /* browserWindow */ BrowserWindow, /* event */ Event) => scala.Unit = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     icon: NativeImage | java.lang.String = null,
     id: java.lang.String = null,
@@ -120,7 +115,7 @@ object MenuItemConstructorOptions {
     if (before != null) __obj.updateDynamic("before")(before)
     if (beforeGroupContaining != null) __obj.updateDynamic("beforeGroupContaining")(beforeGroupContaining)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (click != null) __obj.updateDynamic("click")(click)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction3(click))
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)

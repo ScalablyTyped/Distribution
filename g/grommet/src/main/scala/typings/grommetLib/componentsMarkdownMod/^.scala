@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Markdown: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsMarkdownMod.MarkdownProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    MarkdownProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
       reactLib.HTMLDivElement
     ]), 

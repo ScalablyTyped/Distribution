@@ -13,10 +13,10 @@ trait IActionSheetService extends js.Object {
 object IActionSheetService {
   @scala.inline
   def apply(
-    hide: js.Function0[angularLib.angularMod.angularNs.IPromise[scala.Unit]],
-    show: js.Function1[ShowOptions, angularLib.angularMod.angularNs.IPromise[scala.Double]]
+    hide: () => angularLib.angularMod.angularNs.IPromise[scala.Unit],
+    show: ShowOptions => angularLib.angularMod.angularNs.IPromise[scala.Double]
   ): IActionSheetService = {
-    val __obj = js.Dynamic.literal(hide = hide, show = show)
+    val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction1(show))
   
     __obj.asInstanceOf[IActionSheetService]
   }

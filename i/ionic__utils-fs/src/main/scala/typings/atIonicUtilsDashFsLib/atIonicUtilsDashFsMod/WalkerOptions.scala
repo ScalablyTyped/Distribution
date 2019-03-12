@@ -23,9 +23,9 @@ trait WalkerOptions extends js.Object {
 
 object WalkerOptions {
   @scala.inline
-  def apply(pathFilter: js.Function1[/* p */ java.lang.String, scala.Boolean] = null): WalkerOptions = {
+  def apply(pathFilter: /* p */ java.lang.String => scala.Boolean = null): WalkerOptions = {
     val __obj = js.Dynamic.literal()
-    if (pathFilter != null) __obj.updateDynamic("pathFilter")(pathFilter)
+    if (pathFilter != null) __obj.updateDynamic("pathFilter")(js.Any.fromFunction1(pathFilter))
     __obj.asInstanceOf[WalkerOptions]
   }
 }

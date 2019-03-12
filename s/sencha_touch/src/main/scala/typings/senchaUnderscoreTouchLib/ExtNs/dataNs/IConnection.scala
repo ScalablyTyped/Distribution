@@ -214,317 +214,195 @@ trait IConnection
 object IConnection {
   @scala.inline
   def apply(
-    abort: js.Function1[/* request */ js.UndefOr[js.Any], scala.Unit] = null,
-    abortAll: js.Function0[scala.Unit] = null,
-    addAfterListener: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    addBeforeListener: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    addEvents: js.Function1[/* eventNames */ js.UndefOr[js.Any], scala.Unit] = null,
-    addListener: js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    addManagedListener: js.Function5[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
+    abort: /* request */ js.UndefOr[js.Any] => scala.Unit = null,
+    abortAll: () => scala.Unit = null,
+    addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    addEvents: /* eventNames */ js.UndefOr[js.Any] => scala.Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
     bubbleEvents: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    clearListeners: js.Function0[scala.Unit] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
+    clearListeners: () => scala.Unit = null,
     config: js.Any = null,
     defaultHeaders: js.Any = null,
     defaultXhrHeader: java.lang.String = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     disableCaching: js.UndefOr[scala.Boolean] = js.undefined,
     disableCachingParam: java.lang.String = null,
-    enableBubble: js.Function1[/* events */ js.UndefOr[js.Any], scala.Unit] = null,
+    enableBubble: /* events */ js.UndefOr[js.Any] => scala.Unit = null,
     extend: java.lang.String = null,
     extraParams: js.Any = null,
-    fireAction: js.Function4[
-      /* eventName */ js.UndefOr[java.lang.String], 
-      /* args */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      _
-    ] = null,
-    fireEvent: js.Function2[/* eventName */ java.lang.String, /* repeated */ js.Any, scala.Boolean] = null,
-    getAsync: js.Function0[scala.Boolean] = null,
-    getAutoAbort: js.Function0[scala.Boolean] = null,
-    getBubbleEvents: js.Function0[_] = null,
-    getDefaultHeaders: js.Function0[_] = null,
-    getDefaultPostHeader: js.Function0[java.lang.String] = null,
-    getDefaultXhrHeader: js.Function0[java.lang.String] = null,
-    getDisableCaching: js.Function0[scala.Boolean] = null,
-    getDisableCachingParam: js.Function0[java.lang.String] = null,
-    getExtraParams: js.Function0[_] = null,
-    getId: js.Function0[_] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getListeners: js.Function0[_] = null,
-    getMethod: js.Function0[java.lang.String] = null,
-    getPassword: js.Function0[java.lang.String] = null,
-    getTimeout: js.Function0[scala.Double] = null,
-    getUrl: js.Function0[java.lang.String] = null,
-    getUseDefaultHeader: js.Function0[scala.Boolean] = null,
-    getUseDefaultXhrHeader: js.Function0[scala.Boolean] = null,
-    getUsername: js.Function0[java.lang.String] = null,
-    hasListener: js.Function1[/* eventName */ js.UndefOr[java.lang.String], scala.Boolean] = null,
+    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => scala.Boolean = null,
+    getAsync: () => scala.Boolean = null,
+    getAutoAbort: () => scala.Boolean = null,
+    getBubbleEvents: () => _ = null,
+    getDefaultHeaders: () => _ = null,
+    getDefaultPostHeader: () => java.lang.String = null,
+    getDefaultXhrHeader: () => java.lang.String = null,
+    getDisableCaching: () => scala.Boolean = null,
+    getDisableCachingParam: () => java.lang.String = null,
+    getExtraParams: () => _ = null,
+    getId: () => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getListeners: () => _ = null,
+    getMethod: () => java.lang.String = null,
+    getPassword: () => java.lang.String = null,
+    getTimeout: () => scala.Double = null,
+    getUrl: () => java.lang.String = null,
+    getUseDefaultHeader: () => scala.Boolean = null,
+    getUseDefaultXhrHeader: () => scala.Boolean = null,
+    getUsername: () => java.lang.String = null,
+    hasListener: /* eventName */ js.UndefOr[java.lang.String] => scala.Boolean = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
-    isLoading: js.Function1[/* request */ js.UndefOr[js.Any], scala.Boolean] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
+    isLoading: /* request */ js.UndefOr[js.Any] => scala.Boolean = null,
     listeners: js.Any = null,
     method: java.lang.String = null,
     mixins: js.Any = null,
-    mon: js.Function5[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    mun: js.Function4[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    on: js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    onAfter: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    onBefore: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    parseStatus: js.Function2[
-      /* status */ js.UndefOr[scala.Double], 
-      /* xhr */ js.UndefOr[stdLib.XMLHttpRequest], 
-      _
-    ] = null,
+    mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    parseStatus: (/* status */ js.UndefOr[scala.Double], /* xhr */ js.UndefOr[stdLib.XMLHttpRequest]) => _ = null,
     platformConfig: js.Any = null,
-    relayEvents: js.Function2[
-      /* object */ js.UndefOr[js.Any], 
-      /* events */ js.UndefOr[js.Any], 
-      senchaUnderscoreTouchLib.ExtNs.mixinNs.IObservable
-    ] = null,
-    removeAfterListener: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    removeBeforeListener: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    removeListener: js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    removeManagedListener: js.Function4[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    request: js.Function1[/* options */ js.UndefOr[js.Any], _] = null,
-    resumeEvents: js.Function1[/* discardQueuedEvents */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => senchaUnderscoreTouchLib.ExtNs.mixinNs.IObservable = null,
+    removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    request: /* options */ js.UndefOr[js.Any] => _ = null,
+    resumeEvents: /* discardQueuedEvents */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setAsync: js.Function1[/* async */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setAutoAbort: js.Function1[/* autoAbort */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setBubbleEvents: js.Function1[/* bubbleEvents */ js.UndefOr[js.Any], scala.Unit] = null,
-    setDefaultHeaders: js.Function1[/* defaultHeaders */ js.UndefOr[js.Any], scala.Unit] = null,
-    setDefaultPostHeader: js.Function1[/* defaultPostHeader */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setDefaultXhrHeader: js.Function1[/* defaultXhrHeader */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setDisableCaching: js.Function1[/* disableCaching */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setDisableCachingParam: js.Function1[/* disableCachingParam */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setExtraParams: js.Function1[/* extraParams */ js.UndefOr[js.Any], scala.Unit] = null,
-    setListeners: js.Function1[/* listeners */ js.UndefOr[js.Any], scala.Unit] = null,
-    setMethod: js.Function1[/* method */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setOptions: js.Function2[/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], _] = null,
-    setPassword: js.Function1[/* password */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setTimeout: js.Function1[/* timeout */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setUrl: js.Function1[/* url */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setUseDefaultHeader: js.Function1[/* useDefaultHeader */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setUseDefaultXhrHeader: js.Function1[/* useDefaultXhrHeader */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setUsername: js.Function1[/* username */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setAsync: /* async */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setAutoAbort: /* autoAbort */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => scala.Unit = null,
+    setDefaultHeaders: /* defaultHeaders */ js.UndefOr[js.Any] => scala.Unit = null,
+    setDefaultPostHeader: /* defaultPostHeader */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setDefaultXhrHeader: /* defaultXhrHeader */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setDisableCaching: /* disableCaching */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setDisableCachingParam: /* disableCachingParam */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setExtraParams: /* extraParams */ js.UndefOr[js.Any] => scala.Unit = null,
+    setListeners: /* listeners */ js.UndefOr[js.Any] => scala.Unit = null,
+    setMethod: /* method */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setOptions: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    setPassword: /* password */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setTimeout: /* timeout */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setUrl: /* url */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setUseDefaultHeader: /* useDefaultHeader */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setUseDefaultXhrHeader: /* useDefaultXhrHeader */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setUsername: /* username */ js.UndefOr[java.lang.String] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
-    suspendEvents: js.Function0[scala.Unit] = null,
+    suspendEvents: () => scala.Unit = null,
     timeout: scala.Int | scala.Double = null,
-    un: js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    unAfter: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    unBefore: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    upload: js.Function4[
-      /* form */ js.UndefOr[js.Any], 
-      /* url */ js.UndefOr[java.lang.String], 
-      /* params */ js.UndefOr[java.lang.String], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    upload: (/* form */ js.UndefOr[js.Any], /* url */ js.UndefOr[java.lang.String], /* params */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     url: java.lang.String = null,
     useDefaultXhrHeader: js.UndefOr[scala.Boolean] = js.undefined,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null
   ): IConnection = {
     val __obj = js.Dynamic.literal()
-    if (abort != null) __obj.updateDynamic("abort")(abort)
-    if (abortAll != null) __obj.updateDynamic("abortAll")(abortAll)
-    if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(addAfterListener)
-    if (addBeforeListener != null) __obj.updateDynamic("addBeforeListener")(addBeforeListener)
-    if (addEvents != null) __obj.updateDynamic("addEvents")(addEvents)
-    if (addListener != null) __obj.updateDynamic("addListener")(addListener)
-    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(addManagedListener)
+    if (abort != null) __obj.updateDynamic("abort")(js.Any.fromFunction1(abort))
+    if (abortAll != null) __obj.updateDynamic("abortAll")(js.Any.fromFunction0(abortAll))
+    if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4(addAfterListener))
+    if (addBeforeListener != null) __obj.updateDynamic("addBeforeListener")(js.Any.fromFunction4(addBeforeListener))
+    if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
+    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction5(addListener))
+    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
     if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
-    if (clearListeners != null) __obj.updateDynamic("clearListeners")(clearListeners)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
+    if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
     if (config != null) __obj.updateDynamic("config")(config)
     if (defaultHeaders != null) __obj.updateDynamic("defaultHeaders")(defaultHeaders)
     if (defaultXhrHeader != null) __obj.updateDynamic("defaultXhrHeader")(defaultXhrHeader)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (!js.isUndefined(disableCaching)) __obj.updateDynamic("disableCaching")(disableCaching)
     if (disableCachingParam != null) __obj.updateDynamic("disableCachingParam")(disableCachingParam)
-    if (enableBubble != null) __obj.updateDynamic("enableBubble")(enableBubble)
+    if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
     if (extend != null) __obj.updateDynamic("extend")(extend)
     if (extraParams != null) __obj.updateDynamic("extraParams")(extraParams)
-    if (fireAction != null) __obj.updateDynamic("fireAction")(fireAction)
-    if (fireEvent != null) __obj.updateDynamic("fireEvent")(fireEvent)
-    if (getAsync != null) __obj.updateDynamic("getAsync")(getAsync)
-    if (getAutoAbort != null) __obj.updateDynamic("getAutoAbort")(getAutoAbort)
-    if (getBubbleEvents != null) __obj.updateDynamic("getBubbleEvents")(getBubbleEvents)
-    if (getDefaultHeaders != null) __obj.updateDynamic("getDefaultHeaders")(getDefaultHeaders)
-    if (getDefaultPostHeader != null) __obj.updateDynamic("getDefaultPostHeader")(getDefaultPostHeader)
-    if (getDefaultXhrHeader != null) __obj.updateDynamic("getDefaultXhrHeader")(getDefaultXhrHeader)
-    if (getDisableCaching != null) __obj.updateDynamic("getDisableCaching")(getDisableCaching)
-    if (getDisableCachingParam != null) __obj.updateDynamic("getDisableCachingParam")(getDisableCachingParam)
-    if (getExtraParams != null) __obj.updateDynamic("getExtraParams")(getExtraParams)
-    if (getId != null) __obj.updateDynamic("getId")(getId)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getListeners != null) __obj.updateDynamic("getListeners")(getListeners)
-    if (getMethod != null) __obj.updateDynamic("getMethod")(getMethod)
-    if (getPassword != null) __obj.updateDynamic("getPassword")(getPassword)
-    if (getTimeout != null) __obj.updateDynamic("getTimeout")(getTimeout)
-    if (getUrl != null) __obj.updateDynamic("getUrl")(getUrl)
-    if (getUseDefaultHeader != null) __obj.updateDynamic("getUseDefaultHeader")(getUseDefaultHeader)
-    if (getUseDefaultXhrHeader != null) __obj.updateDynamic("getUseDefaultXhrHeader")(getUseDefaultXhrHeader)
-    if (getUsername != null) __obj.updateDynamic("getUsername")(getUsername)
-    if (hasListener != null) __obj.updateDynamic("hasListener")(hasListener)
+    if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
+    if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
+    if (getAsync != null) __obj.updateDynamic("getAsync")(js.Any.fromFunction0(getAsync))
+    if (getAutoAbort != null) __obj.updateDynamic("getAutoAbort")(js.Any.fromFunction0(getAutoAbort))
+    if (getBubbleEvents != null) __obj.updateDynamic("getBubbleEvents")(js.Any.fromFunction0(getBubbleEvents))
+    if (getDefaultHeaders != null) __obj.updateDynamic("getDefaultHeaders")(js.Any.fromFunction0(getDefaultHeaders))
+    if (getDefaultPostHeader != null) __obj.updateDynamic("getDefaultPostHeader")(js.Any.fromFunction0(getDefaultPostHeader))
+    if (getDefaultXhrHeader != null) __obj.updateDynamic("getDefaultXhrHeader")(js.Any.fromFunction0(getDefaultXhrHeader))
+    if (getDisableCaching != null) __obj.updateDynamic("getDisableCaching")(js.Any.fromFunction0(getDisableCaching))
+    if (getDisableCachingParam != null) __obj.updateDynamic("getDisableCachingParam")(js.Any.fromFunction0(getDisableCachingParam))
+    if (getExtraParams != null) __obj.updateDynamic("getExtraParams")(js.Any.fromFunction0(getExtraParams))
+    if (getId != null) __obj.updateDynamic("getId")(js.Any.fromFunction0(getId))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getListeners != null) __obj.updateDynamic("getListeners")(js.Any.fromFunction0(getListeners))
+    if (getMethod != null) __obj.updateDynamic("getMethod")(js.Any.fromFunction0(getMethod))
+    if (getPassword != null) __obj.updateDynamic("getPassword")(js.Any.fromFunction0(getPassword))
+    if (getTimeout != null) __obj.updateDynamic("getTimeout")(js.Any.fromFunction0(getTimeout))
+    if (getUrl != null) __obj.updateDynamic("getUrl")(js.Any.fromFunction0(getUrl))
+    if (getUseDefaultHeader != null) __obj.updateDynamic("getUseDefaultHeader")(js.Any.fromFunction0(getUseDefaultHeader))
+    if (getUseDefaultXhrHeader != null) __obj.updateDynamic("getUseDefaultXhrHeader")(js.Any.fromFunction0(getUseDefaultXhrHeader))
+    if (getUsername != null) __obj.updateDynamic("getUsername")(js.Any.fromFunction0(getUsername))
+    if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
-    if (isLoading != null) __obj.updateDynamic("isLoading")(isLoading)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (isLoading != null) __obj.updateDynamic("isLoading")(js.Any.fromFunction1(isLoading))
     if (listeners != null) __obj.updateDynamic("listeners")(listeners)
     if (method != null) __obj.updateDynamic("method")(method)
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (mon != null) __obj.updateDynamic("mon")(mon)
-    if (mun != null) __obj.updateDynamic("mun")(mun)
-    if (on != null) __obj.updateDynamic("on")(on)
-    if (onAfter != null) __obj.updateDynamic("onAfter")(onAfter)
-    if (onBefore != null) __obj.updateDynamic("onBefore")(onBefore)
-    if (parseStatus != null) __obj.updateDynamic("parseStatus")(parseStatus)
+    if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
+    if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
+    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
+    if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
+    if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
+    if (parseStatus != null) __obj.updateDynamic("parseStatus")(js.Any.fromFunction2(parseStatus))
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
-    if (relayEvents != null) __obj.updateDynamic("relayEvents")(relayEvents)
-    if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(removeAfterListener)
-    if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(removeBeforeListener)
-    if (removeListener != null) __obj.updateDynamic("removeListener")(removeListener)
-    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(removeManagedListener)
-    if (request != null) __obj.updateDynamic("request")(request)
-    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(resumeEvents)
+    if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
+    if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4(removeAfterListener))
+    if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(js.Any.fromFunction4(removeBeforeListener))
+    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction5(removeListener))
+    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
+    if (request != null) __obj.updateDynamic("request")(js.Any.fromFunction1(request))
+    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1(resumeEvents))
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setAsync != null) __obj.updateDynamic("setAsync")(setAsync)
-    if (setAutoAbort != null) __obj.updateDynamic("setAutoAbort")(setAutoAbort)
-    if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(setBubbleEvents)
-    if (setDefaultHeaders != null) __obj.updateDynamic("setDefaultHeaders")(setDefaultHeaders)
-    if (setDefaultPostHeader != null) __obj.updateDynamic("setDefaultPostHeader")(setDefaultPostHeader)
-    if (setDefaultXhrHeader != null) __obj.updateDynamic("setDefaultXhrHeader")(setDefaultXhrHeader)
-    if (setDisableCaching != null) __obj.updateDynamic("setDisableCaching")(setDisableCaching)
-    if (setDisableCachingParam != null) __obj.updateDynamic("setDisableCachingParam")(setDisableCachingParam)
-    if (setExtraParams != null) __obj.updateDynamic("setExtraParams")(setExtraParams)
-    if (setListeners != null) __obj.updateDynamic("setListeners")(setListeners)
-    if (setMethod != null) __obj.updateDynamic("setMethod")(setMethod)
-    if (setOptions != null) __obj.updateDynamic("setOptions")(setOptions)
-    if (setPassword != null) __obj.updateDynamic("setPassword")(setPassword)
-    if (setTimeout != null) __obj.updateDynamic("setTimeout")(setTimeout)
-    if (setUrl != null) __obj.updateDynamic("setUrl")(setUrl)
-    if (setUseDefaultHeader != null) __obj.updateDynamic("setUseDefaultHeader")(setUseDefaultHeader)
-    if (setUseDefaultXhrHeader != null) __obj.updateDynamic("setUseDefaultXhrHeader")(setUseDefaultXhrHeader)
-    if (setUsername != null) __obj.updateDynamic("setUsername")(setUsername)
+    if (setAsync != null) __obj.updateDynamic("setAsync")(js.Any.fromFunction1(setAsync))
+    if (setAutoAbort != null) __obj.updateDynamic("setAutoAbort")(js.Any.fromFunction1(setAutoAbort))
+    if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
+    if (setDefaultHeaders != null) __obj.updateDynamic("setDefaultHeaders")(js.Any.fromFunction1(setDefaultHeaders))
+    if (setDefaultPostHeader != null) __obj.updateDynamic("setDefaultPostHeader")(js.Any.fromFunction1(setDefaultPostHeader))
+    if (setDefaultXhrHeader != null) __obj.updateDynamic("setDefaultXhrHeader")(js.Any.fromFunction1(setDefaultXhrHeader))
+    if (setDisableCaching != null) __obj.updateDynamic("setDisableCaching")(js.Any.fromFunction1(setDisableCaching))
+    if (setDisableCachingParam != null) __obj.updateDynamic("setDisableCachingParam")(js.Any.fromFunction1(setDisableCachingParam))
+    if (setExtraParams != null) __obj.updateDynamic("setExtraParams")(js.Any.fromFunction1(setExtraParams))
+    if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
+    if (setMethod != null) __obj.updateDynamic("setMethod")(js.Any.fromFunction1(setMethod))
+    if (setOptions != null) __obj.updateDynamic("setOptions")(js.Any.fromFunction2(setOptions))
+    if (setPassword != null) __obj.updateDynamic("setPassword")(js.Any.fromFunction1(setPassword))
+    if (setTimeout != null) __obj.updateDynamic("setTimeout")(js.Any.fromFunction1(setTimeout))
+    if (setUrl != null) __obj.updateDynamic("setUrl")(js.Any.fromFunction1(setUrl))
+    if (setUseDefaultHeader != null) __obj.updateDynamic("setUseDefaultHeader")(js.Any.fromFunction1(setUseDefaultHeader))
+    if (setUseDefaultXhrHeader != null) __obj.updateDynamic("setUseDefaultXhrHeader")(js.Any.fromFunction1(setUseDefaultXhrHeader))
+    if (setUsername != null) __obj.updateDynamic("setUsername")(js.Any.fromFunction1(setUsername))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
-    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(suspendEvents)
+    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (un != null) __obj.updateDynamic("un")(un)
-    if (unAfter != null) __obj.updateDynamic("unAfter")(unAfter)
-    if (unBefore != null) __obj.updateDynamic("unBefore")(unBefore)
-    if (upload != null) __obj.updateDynamic("upload")(upload)
+    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
+    if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
+    if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
+    if (upload != null) __obj.updateDynamic("upload")(js.Any.fromFunction4(upload))
     if (url != null) __obj.updateDynamic("url")(url)
     if (!js.isUndefined(useDefaultXhrHeader)) __obj.updateDynamic("useDefaultXhrHeader")(useDefaultXhrHeader)
     if (uses != null) __obj.updateDynamic("uses")(uses)

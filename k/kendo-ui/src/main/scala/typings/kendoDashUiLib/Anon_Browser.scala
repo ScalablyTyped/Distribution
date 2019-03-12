@@ -28,11 +28,11 @@ object Anon_Browser {
     mobileOS: Anon_AppMode,
     placeholder: scala.Boolean,
     pointers: scala.Boolean,
-    scrollbar: js.Function0[scala.Double],
+    scrollbar: () => scala.Double,
     touch: scala.Boolean,
     zoomLevel: scala.Double
   ): Anon_Browser = {
-    val __obj = js.Dynamic.literal(browser = browser, devicePixelRatio = devicePixelRatio, hasHW3D = hasHW3D, hasNativeScrolling = hasNativeScrolling, mobileOS = mobileOS, placeholder = placeholder, pointers = pointers, scrollbar = scrollbar, touch = touch, zoomLevel = zoomLevel)
+    val __obj = js.Dynamic.literal(browser = browser, devicePixelRatio = devicePixelRatio, hasHW3D = hasHW3D, hasNativeScrolling = hasNativeScrolling, mobileOS = mobileOS, placeholder = placeholder, pointers = pointers, scrollbar = js.Any.fromFunction0(scrollbar), touch = touch, zoomLevel = zoomLevel)
   
     __obj.asInstanceOf[Anon_Browser]
   }

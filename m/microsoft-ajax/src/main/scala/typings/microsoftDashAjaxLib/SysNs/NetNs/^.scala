@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Sys.Net")
 @js.native
 object ^ extends js.Object {
-  var WebRequestManager: microsoftDashAjaxLib.SysNs.NetNs.IWebRequestManager = js.native
+  var WebRequestManager: IWebRequestManager = js.native
 }
 

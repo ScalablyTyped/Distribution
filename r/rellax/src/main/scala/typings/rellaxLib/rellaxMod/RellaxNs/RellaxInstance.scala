@@ -27,12 +27,12 @@ trait RellaxInstance extends js.Object {
 object RellaxInstance {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     elms: stdLib.NodeListOf[stdLib.Element] | js.Array[stdLib.Element],
     options: RellaxOptions,
-    refresh: js.Function0[scala.Unit]
+    refresh: () => scala.Unit
   ): RellaxInstance = {
-    val __obj = js.Dynamic.literal(destroy = destroy, elms = elms.asInstanceOf[js.Any], options = options, refresh = refresh)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), elms = elms.asInstanceOf[js.Any], options = options, refresh = js.Any.fromFunction0(refresh))
   
     __obj.asInstanceOf[RellaxInstance]
   }

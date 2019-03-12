@@ -32,16 +32,16 @@ object TooltipOptions {
     autoHide: js.UndefOr[scala.Boolean] = js.undefined,
     callout: js.UndefOr[scala.Boolean] = js.undefined,
     content: java.lang.String | js.Function | TooltipContent = null,
-    contentLoad: js.Function1[/* e */ TooltipEvent, scala.Unit] = null,
-    error: js.Function1[/* e */ TooltipErrorEvent, scala.Unit] = null,
+    contentLoad: /* e */ TooltipEvent => scala.Unit = null,
+    error: /* e */ TooltipErrorEvent => scala.Unit = null,
     filter: java.lang.String = null,
     height: scala.Int | scala.Double = null,
-    hide: js.Function1[/* e */ TooltipEvent, scala.Unit] = null,
+    hide: /* e */ TooltipEvent => scala.Unit = null,
     iframe: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
     position: java.lang.String = null,
-    requestStart: js.Function1[/* e */ TooltipRequestStartEvent, scala.Unit] = null,
-    show: js.Function1[/* e */ TooltipEvent, scala.Unit] = null,
+    requestStart: /* e */ TooltipRequestStartEvent => scala.Unit = null,
+    show: /* e */ TooltipEvent => scala.Unit = null,
     showAfter: scala.Int | scala.Double = null,
     showOn: java.lang.String = null,
     width: scala.Int | scala.Double = null
@@ -51,16 +51,16 @@ object TooltipOptions {
     if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide)
     if (!js.isUndefined(callout)) __obj.updateDynamic("callout")(callout)
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (contentLoad != null) __obj.updateDynamic("contentLoad")(contentLoad)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (contentLoad != null) __obj.updateDynamic("contentLoad")(js.Any.fromFunction1(contentLoad))
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (filter != null) __obj.updateDynamic("filter")(filter)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
     if (!js.isUndefined(iframe)) __obj.updateDynamic("iframe")(iframe)
     if (name != null) __obj.updateDynamic("name")(name)
     if (position != null) __obj.updateDynamic("position")(position)
-    if (requestStart != null) __obj.updateDynamic("requestStart")(requestStart)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (requestStart != null) __obj.updateDynamic("requestStart")(js.Any.fromFunction1(requestStart))
+    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
     if (showAfter != null) __obj.updateDynamic("showAfter")(showAfter.asInstanceOf[js.Any])
     if (showOn != null) __obj.updateDynamic("showOn")(showOn)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

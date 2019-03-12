@@ -26,17 +26,17 @@ object IDateLocaleProvider {
     dates: js.Array[java.lang.String],
     days: js.Array[java.lang.String],
     firstDayOfWeek: scala.Double,
-    formatDate: js.Function1[stdLib.Date, java.lang.String],
-    monthHeaderFormatter: js.Function1[stdLib.Date, java.lang.String],
+    formatDate: stdLib.Date => java.lang.String,
+    monthHeaderFormatter: stdLib.Date => java.lang.String,
     months: js.Array[java.lang.String],
     msgCalendar: java.lang.String,
     msgOpenCalendar: java.lang.String,
-    parseDate: js.Function1[java.lang.String, stdLib.Date],
+    parseDate: java.lang.String => stdLib.Date,
     shortDays: js.Array[java.lang.String],
     shortMonths: js.Array[java.lang.String],
-    weekNumberFormatter: js.Function1[scala.Double, java.lang.String]
+    weekNumberFormatter: scala.Double => java.lang.String
   ): IDateLocaleProvider = {
-    val __obj = js.Dynamic.literal(dates = dates, days = days, firstDayOfWeek = firstDayOfWeek, formatDate = formatDate, monthHeaderFormatter = monthHeaderFormatter, months = months, msgCalendar = msgCalendar, msgOpenCalendar = msgOpenCalendar, parseDate = parseDate, shortDays = shortDays, shortMonths = shortMonths, weekNumberFormatter = weekNumberFormatter)
+    val __obj = js.Dynamic.literal(dates = dates, days = days, firstDayOfWeek = firstDayOfWeek, formatDate = js.Any.fromFunction1(formatDate), monthHeaderFormatter = js.Any.fromFunction1(monthHeaderFormatter), months = months, msgCalendar = msgCalendar, msgOpenCalendar = msgOpenCalendar, parseDate = js.Any.fromFunction1(parseDate), shortDays = shortDays, shortMonths = shortMonths, weekNumberFormatter = js.Any.fromFunction1(weekNumberFormatter))
   
     __obj.asInstanceOf[IDateLocaleProvider]
   }

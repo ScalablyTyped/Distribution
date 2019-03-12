@@ -31,9 +31,7 @@ trait AbstractSelectProps extends js.Object {
       _
     ])
   ] = js.undefined
-  var getPopupContainer: js.UndefOr[
-    js.Function1[/* triggerNode */ js.UndefOr[reactLib.Element], reactLib.HTMLElement]
-  ] = js.undefined
+  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ js.UndefOr[stdLib.Element], stdLib.HTMLElement]] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var loading: js.UndefOr[scala.Boolean] = js.undefined
   var notFoundContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | scala.Null] = js.undefined
@@ -66,23 +64,19 @@ object AbstractSelectProps {
     dropdownClassName: java.lang.String = null,
     dropdownMatchSelectWidth: js.UndefOr[scala.Boolean] = js.undefined,
     dropdownMenuStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    dropdownRender: js.Function2[
-      /* menu */ js.UndefOr[reactLib.reactMod.ReactNs.ReactNode], 
-      /* props */ js.UndefOr[SelectProps[SelectValue]], 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    dropdownRender: (/* menu */ js.UndefOr[reactLib.reactMod.ReactNs.ReactNode], /* props */ js.UndefOr[SelectProps[SelectValue]]) => reactLib.reactMod.ReactNs.ReactNode = null,
     dropdownStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     filterOption: scala.Boolean | (js.Function2[
       /* inputValue */ java.lang.String, 
       /* option */ reactLib.reactMod.ReactNs.ReactElement[OptionProps], 
       _
     ]) = null,
-    getPopupContainer: js.Function1[/* triggerNode */ js.UndefOr[reactLib.Element], reactLib.HTMLElement] = null,
+    getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.Element] => stdLib.HTMLElement = null,
     id: java.lang.String = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     notFoundContent: reactLib.reactMod.ReactNs.ReactNode = null,
-    onDropdownVisibleChange: js.Function1[/* open */ scala.Boolean, scala.Unit] = null,
-    onSearch: js.Function1[/* value */ java.lang.String, _] = null,
+    onDropdownVisibleChange: /* open */ scala.Boolean => scala.Unit = null,
+    onSearch: /* value */ java.lang.String => _ = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     placeholder: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
     prefixCls: java.lang.String = null,
@@ -105,15 +99,15 @@ object AbstractSelectProps {
     if (dropdownClassName != null) __obj.updateDynamic("dropdownClassName")(dropdownClassName)
     if (!js.isUndefined(dropdownMatchSelectWidth)) __obj.updateDynamic("dropdownMatchSelectWidth")(dropdownMatchSelectWidth)
     if (dropdownMenuStyle != null) __obj.updateDynamic("dropdownMenuStyle")(dropdownMenuStyle)
-    if (dropdownRender != null) __obj.updateDynamic("dropdownRender")(dropdownRender)
+    if (dropdownRender != null) __obj.updateDynamic("dropdownRender")(js.Any.fromFunction2(dropdownRender))
     if (dropdownStyle != null) __obj.updateDynamic("dropdownStyle")(dropdownStyle)
     if (filterOption != null) __obj.updateDynamic("filterOption")(filterOption.asInstanceOf[js.Any])
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer)
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
     if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.asInstanceOf[js.Any])
-    if (onDropdownVisibleChange != null) __obj.updateDynamic("onDropdownVisibleChange")(onDropdownVisibleChange)
-    if (onSearch != null) __obj.updateDynamic("onSearch")(onSearch)
+    if (onDropdownVisibleChange != null) __obj.updateDynamic("onDropdownVisibleChange")(js.Any.fromFunction1(onDropdownVisibleChange))
+    if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction1(onSearch))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)

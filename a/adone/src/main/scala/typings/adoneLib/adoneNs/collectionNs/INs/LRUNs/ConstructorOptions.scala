@@ -38,7 +38,7 @@ trait ConstructorOptions[K, V] extends js.Object {
 object ConstructorOptions {
   @scala.inline
   def apply[K, V](
-    dispose: js.Function2[/* key */ K, /* value */ V, scala.Unit] = null,
+    dispose: (/* key */ K, /* value */ V) => scala.Unit = null,
     length: LengthCalculator[K, V] = null,
     maxAge: scala.Int | scala.Double = null,
     maxSize: scala.Int | scala.Double = null,
@@ -46,7 +46,7 @@ object ConstructorOptions {
     stale: js.UndefOr[scala.Boolean] = js.undefined
   ): ConstructorOptions[K, V] = {
     val __obj = js.Dynamic.literal()
-    if (dispose != null) __obj.updateDynamic("dispose")(dispose)
+    if (dispose != null) __obj.updateDynamic("dispose")(js.Any.fromFunction2(dispose))
     if (length != null) __obj.updateDynamic("length")(length)
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])

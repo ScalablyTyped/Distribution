@@ -23,12 +23,12 @@ object Constraint {
     bodyB: Body,
     collideConnected: scala.Boolean,
     equeations: js.Array[Equation],
-    setRelaxation: js.Function1[scala.Double, scala.Unit],
-    setStiffness: js.Function1[scala.Double, scala.Unit],
+    setRelaxation: scala.Double => scala.Unit,
+    setStiffness: scala.Double => scala.Unit,
     `type`: scala.Double,
-    update: js.Function0[scala.Unit]
+    update: () => scala.Unit
   ): Constraint = {
-    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, collideConnected = collideConnected, equeations = equeations, setRelaxation = setRelaxation, setStiffness = setStiffness, update = update)
+    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, collideConnected = collideConnected, equeations = equeations, setRelaxation = js.Any.fromFunction1(setRelaxation), setStiffness = js.Any.fromFunction1(setStiffness), update = js.Any.fromFunction0(update))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Constraint]
   }

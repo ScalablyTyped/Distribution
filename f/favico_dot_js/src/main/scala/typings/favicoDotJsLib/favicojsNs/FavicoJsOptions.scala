@@ -23,7 +23,7 @@ object FavicoJsOptions {
   def apply(
     animation: java.lang.String = null,
     bgColor: java.lang.String = null,
-    dataUrl: js.Function1[/* url */ java.lang.String, _] = null,
+    dataUrl: /* url */ java.lang.String => _ = null,
     element: stdLib.HTMLElement = null,
     elementId: java.lang.String = null,
     fontFamily: java.lang.String = null,
@@ -35,7 +35,7 @@ object FavicoJsOptions {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor)
-    if (dataUrl != null) __obj.updateDynamic("dataUrl")(dataUrl)
+    if (dataUrl != null) __obj.updateDynamic("dataUrl")(js.Any.fromFunction1(dataUrl))
     if (element != null) __obj.updateDynamic("element")(element)
     if (elementId != null) __obj.updateDynamic("elementId")(elementId)
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)

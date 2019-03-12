@@ -232,7 +232,7 @@ trait Auth extends js.Object {
     * <dd>Thrown if the email address is not valid.</dd>
     * </dl>
     */
-  def fetchProvidersForEmail(email: java.lang.String): js.Promise[coreDashJsLib.Array[java.lang.String]] = js.native
+  def fetchProvidersForEmail(email: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   /**
     * Gets the list of possible sign in methods for the given email address. This
     * is useful to differentiate methods of sign-in for the same provider,
@@ -245,7 +245,7 @@ trait Auth extends js.Object {
     * <dd>Thrown if the email address is not valid.</dd>
     * </dl>
     */
-  def fetchSignInMethodsForEmail(email: java.lang.String): js.Promise[coreDashJsLib.Array[java.lang.String]] = js.native
+  def fetchSignInMethodsForEmail(email: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   /**
     * Returns a UserCredential from the redirect-based sign-in flow.
     *
@@ -377,13 +377,13 @@ trait Auth extends js.Object {
     * });
     * ```
     */
-  def onAuthStateChanged(nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error]): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
+  def onAuthStateChanged(nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error]): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
   def onAuthStateChanged(
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error],
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error],
     error: js.Function1[/* a */ Error, _]
   ): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
   def onAuthStateChanged(
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error],
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error],
     error: js.Function1[/* a */ Error, _],
     completed: firebaseLib.firebaseMod.firebaseNs.Unsubscribe
   ): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
@@ -417,13 +417,13 @@ trait Auth extends js.Object {
     * @param {firebase.CompleteFn=} completed Optional A function triggered when the
     *     observer is removed.
     */
-  def onIdTokenChanged(nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error]): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
+  def onIdTokenChanged(nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error]): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
   def onIdTokenChanged(
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error],
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error],
     error: js.Function1[/* a */ Error, _]
   ): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
   def onIdTokenChanged(
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error],
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error],
     error: js.Function1[/* a */ Error, _],
     completed: firebaseLib.firebaseMod.firebaseNs.Unsubscribe
   ): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native

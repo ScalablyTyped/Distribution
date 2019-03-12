@@ -13,10 +13,10 @@ trait IMessageDialogFactory extends js.Object {
 object IMessageDialogFactory {
   @scala.inline
   def apply(
-    create: js.Function1[java.lang.String, MessageDialog],
-    createWithTitle: js.Function2[java.lang.String, java.lang.String, MessageDialog]
+    create: java.lang.String => MessageDialog,
+    createWithTitle: (java.lang.String, java.lang.String) => MessageDialog
   ): IMessageDialogFactory = {
-    val __obj = js.Dynamic.literal(create = create, createWithTitle = createWithTitle)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), createWithTitle = js.Any.fromFunction2(createWithTitle))
   
     __obj.asInstanceOf[IMessageDialogFactory]
   }

@@ -15,16 +15,16 @@ trait Observer[T] extends js.Object {
 object Observer {
   @scala.inline
   def apply[T](
-    complete: js.Function0[scala.Unit] = null,
-    error: js.Function1[/* errorValue */ js.Any, scala.Unit] = null,
-    next: js.Function1[/* value */ T, scala.Unit] = null,
-    start: js.Function1[/* subscription */ Subscription, _] = null
+    complete: () => scala.Unit = null,
+    error: /* errorValue */ js.Any => scala.Unit = null,
+    next: /* value */ T => scala.Unit = null,
+    start: /* subscription */ Subscription => _ = null
   ): Observer[T] = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
+    if (next != null) __obj.updateDynamic("next")(js.Any.fromFunction1(next))
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
     __obj.asInstanceOf[Observer[T]]
   }
 }

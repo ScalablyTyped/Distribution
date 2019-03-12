@@ -11,8 +11,8 @@ trait DataStudioApp extends js.Object {
 
 object DataStudioApp {
   @scala.inline
-  def apply(createCommunityConnector: js.Function0[CommunityConnector]): DataStudioApp = {
-    val __obj = js.Dynamic.literal(createCommunityConnector = createCommunityConnector)
+  def apply(createCommunityConnector: () => CommunityConnector): DataStudioApp = {
+    val __obj = js.Dynamic.literal(createCommunityConnector = js.Any.fromFunction0(createCommunityConnector))
   
     __obj.asInstanceOf[DataStudioApp]
   }

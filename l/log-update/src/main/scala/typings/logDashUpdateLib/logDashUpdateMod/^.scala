@@ -13,6 +13,6 @@ object ^ extends js.Object {
     *
     * @param text - The text to log to `stdout`.
     */
-  val default: logDashUpdateLib.logDashUpdateMod.LogUpdate with logDashUpdateLib.Anon_Create = js.native
+  val default: LogUpdate with logDashUpdateLib.Anon_Create = js.native
 }
 

@@ -11,8 +11,8 @@ trait DefineCommandResult extends js.Object {
 
 object DefineCommandResult {
   @scala.inline
-  def apply(defineEventStreamsToLoad: js.Function1[defineEventStreamsToLoadHandler, scala.Unit]): DefineCommandResult = {
-    val __obj = js.Dynamic.literal(defineEventStreamsToLoad = defineEventStreamsToLoad)
+  def apply(defineEventStreamsToLoad: defineEventStreamsToLoadHandler => scala.Unit): DefineCommandResult = {
+    val __obj = js.Dynamic.literal(defineEventStreamsToLoad = js.Any.fromFunction1(defineEventStreamsToLoad))
   
     __obj.asInstanceOf[DefineCommandResult]
   }

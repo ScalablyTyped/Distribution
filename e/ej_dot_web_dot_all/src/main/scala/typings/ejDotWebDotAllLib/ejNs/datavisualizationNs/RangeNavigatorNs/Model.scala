@@ -138,35 +138,35 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    Click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
+    Click: /* e */ ClickEventArgs => scala.Unit = null,
     allowNextValue: js.UndefOr[scala.Boolean] = js.undefined,
     allowSnapping: js.UndefOr[scala.Boolean] = js.undefined,
     border: Border = null,
     dataSource: js.Any = null,
-    doubleClick: js.Function1[/* e */ DoubleClickEventArgs, scala.Unit] = null,
+    doubleClick: /* e */ DoubleClickEventArgs => scala.Unit = null,
     enableAutoResizing: js.UndefOr[scala.Boolean] = js.undefined,
     enableDeferredUpdate: js.UndefOr[scala.Boolean] = js.undefined,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
     enableScrollbar: js.UndefOr[scala.Boolean] = js.undefined,
     isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
     labelSettings: LabelSettings = null,
-    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
-    loaded: js.Function1[/* e */ LoadedEventArgs, scala.Unit] = null,
+    load: /* e */ LoadEventArgs => scala.Unit = null,
+    loaded: /* e */ LoadedEventArgs => scala.Unit = null,
     locale: java.lang.String = null,
     navigatorStyleSettings: NavigatorStyleSettings = null,
     padding: java.lang.String = null,
-    rangeChanged: js.Function1[/* e */ RangeChangedEventArgs, scala.Unit] = null,
+    rangeChanged: /* e */ RangeChangedEventArgs => scala.Unit = null,
     rangePadding: RangePadding | java.lang.String = null,
     rangeSettings: RangeSettings = null,
-    rightClick: js.Function1[/* e */ RightClickEventArgs, scala.Unit] = null,
-    scrollChanged: js.Function1[/* e */ ScrollChangedEventArgs, scala.Unit] = null,
-    scrollEnd: js.Function1[/* e */ ScrollEndEventArgs, scala.Unit] = null,
+    rightClick: /* e */ RightClickEventArgs => scala.Unit = null,
+    scrollChanged: /* e */ ScrollChangedEventArgs => scala.Unit = null,
+    scrollEnd: /* e */ ScrollEndEventArgs => scala.Unit = null,
     scrollRangeSettings: ScrollRangeSettings = null,
-    scrollStart: js.Function1[/* e */ ScrollStartEventArgs, scala.Unit] = null,
+    scrollStart: /* e */ ScrollStartEventArgs => scala.Unit = null,
     selectedData: js.Any = null,
-    selectedRangeEnd: js.Function1[/* e */ SelectedRangeEndEventArgs, scala.Unit] = null,
+    selectedRangeEnd: /* e */ SelectedRangeEndEventArgs => scala.Unit = null,
     selectedRangeSettings: SelectedRangeSettings = null,
-    selectedRangeStart: js.Function1[/* e */ SelectedRangeStartEventArgs, scala.Unit] = null,
+    selectedRangeStart: /* e */ SelectedRangeStartEventArgs => scala.Unit = null,
     series: js.Array[Series] = null,
     seriesSettings: js.Array[SeriesSetting] = null,
     sizeSettings: SizeSettings = null,
@@ -178,35 +178,35 @@ object Model {
     yName: js.Any = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (Click != null) __obj.updateDynamic("Click")(Click)
+    if (Click != null) __obj.updateDynamic("Click")(js.Any.fromFunction1(Click))
     if (!js.isUndefined(allowNextValue)) __obj.updateDynamic("allowNextValue")(allowNextValue)
     if (!js.isUndefined(allowSnapping)) __obj.updateDynamic("allowSnapping")(allowSnapping)
     if (border != null) __obj.updateDynamic("border")(border)
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (doubleClick != null) __obj.updateDynamic("doubleClick")(doubleClick)
+    if (doubleClick != null) __obj.updateDynamic("doubleClick")(js.Any.fromFunction1(doubleClick))
     if (!js.isUndefined(enableAutoResizing)) __obj.updateDynamic("enableAutoResizing")(enableAutoResizing)
     if (!js.isUndefined(enableDeferredUpdate)) __obj.updateDynamic("enableDeferredUpdate")(enableDeferredUpdate)
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
     if (!js.isUndefined(enableScrollbar)) __obj.updateDynamic("enableScrollbar")(enableScrollbar)
     if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
     if (labelSettings != null) __obj.updateDynamic("labelSettings")(labelSettings)
-    if (load != null) __obj.updateDynamic("load")(load)
-    if (loaded != null) __obj.updateDynamic("loaded")(loaded)
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
+    if (loaded != null) __obj.updateDynamic("loaded")(js.Any.fromFunction1(loaded))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (navigatorStyleSettings != null) __obj.updateDynamic("navigatorStyleSettings")(navigatorStyleSettings)
     if (padding != null) __obj.updateDynamic("padding")(padding)
-    if (rangeChanged != null) __obj.updateDynamic("rangeChanged")(rangeChanged)
+    if (rangeChanged != null) __obj.updateDynamic("rangeChanged")(js.Any.fromFunction1(rangeChanged))
     if (rangePadding != null) __obj.updateDynamic("rangePadding")(rangePadding.asInstanceOf[js.Any])
     if (rangeSettings != null) __obj.updateDynamic("rangeSettings")(rangeSettings)
-    if (rightClick != null) __obj.updateDynamic("rightClick")(rightClick)
-    if (scrollChanged != null) __obj.updateDynamic("scrollChanged")(scrollChanged)
-    if (scrollEnd != null) __obj.updateDynamic("scrollEnd")(scrollEnd)
+    if (rightClick != null) __obj.updateDynamic("rightClick")(js.Any.fromFunction1(rightClick))
+    if (scrollChanged != null) __obj.updateDynamic("scrollChanged")(js.Any.fromFunction1(scrollChanged))
+    if (scrollEnd != null) __obj.updateDynamic("scrollEnd")(js.Any.fromFunction1(scrollEnd))
     if (scrollRangeSettings != null) __obj.updateDynamic("scrollRangeSettings")(scrollRangeSettings)
-    if (scrollStart != null) __obj.updateDynamic("scrollStart")(scrollStart)
+    if (scrollStart != null) __obj.updateDynamic("scrollStart")(js.Any.fromFunction1(scrollStart))
     if (selectedData != null) __obj.updateDynamic("selectedData")(selectedData)
-    if (selectedRangeEnd != null) __obj.updateDynamic("selectedRangeEnd")(selectedRangeEnd)
+    if (selectedRangeEnd != null) __obj.updateDynamic("selectedRangeEnd")(js.Any.fromFunction1(selectedRangeEnd))
     if (selectedRangeSettings != null) __obj.updateDynamic("selectedRangeSettings")(selectedRangeSettings)
-    if (selectedRangeStart != null) __obj.updateDynamic("selectedRangeStart")(selectedRangeStart)
+    if (selectedRangeStart != null) __obj.updateDynamic("selectedRangeStart")(js.Any.fromFunction1(selectedRangeStart))
     if (series != null) __obj.updateDynamic("series")(series)
     if (seriesSettings != null) __obj.updateDynamic("seriesSettings")(seriesSettings)
     if (sizeSettings != null) __obj.updateDynamic("sizeSettings")(sizeSettings)

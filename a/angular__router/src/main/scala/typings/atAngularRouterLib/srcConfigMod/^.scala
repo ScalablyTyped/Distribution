@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/router/src/config", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def standardizeConfig(r: atAngularRouterLib.srcConfigMod.Route): atAngularRouterLib.srcConfigMod.Route = js.native
-  def validateConfig(config: atAngularRouterLib.srcConfigMod.Routes): scala.Unit = js.native
-  def validateConfig(config: atAngularRouterLib.srcConfigMod.Routes, parentPath: java.lang.String): scala.Unit = js.native
+  def standardizeConfig(r: Route): Route = js.native
+  def validateConfig(config: Routes): scala.Unit = js.native
+  def validateConfig(config: Routes, parentPath: java.lang.String): scala.Unit = js.native
 }
 

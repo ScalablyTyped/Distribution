@@ -11,8 +11,8 @@ trait Interpolator extends js.Object {
 
 object Interpolator {
   @scala.inline
-  def apply(getInterpolation: js.Function1[scala.Double, scala.Double]): Interpolator = {
-    val __obj = js.Dynamic.literal(getInterpolation = getInterpolation)
+  def apply(getInterpolation: scala.Double => scala.Double): Interpolator = {
+    val __obj = js.Dynamic.literal(getInterpolation = js.Any.fromFunction1(getInterpolation))
   
     __obj.asInstanceOf[Interpolator]
   }

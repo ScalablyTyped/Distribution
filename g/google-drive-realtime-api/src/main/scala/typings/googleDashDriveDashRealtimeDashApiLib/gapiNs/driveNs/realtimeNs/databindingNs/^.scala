@@ -11,6 +11,6 @@ object ^ extends js.Object {
   def bindString(
     s: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.CollaborativeString,
     textinput: stdLib.HTMLInputElement
-  ): googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.databindingNs.Binding = js.native
+  ): Binding = js.native
 }
 

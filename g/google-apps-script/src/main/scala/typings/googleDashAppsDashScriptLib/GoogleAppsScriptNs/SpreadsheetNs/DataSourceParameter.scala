@@ -14,11 +14,11 @@ trait DataSourceParameter extends js.Object {
 object DataSourceParameter {
   @scala.inline
   def apply(
-    getName: js.Function0[java.lang.String],
-    getSourceCell: js.Function0[java.lang.String],
-    getType: js.Function0[DataSourceParameterType]
+    getName: () => java.lang.String,
+    getSourceCell: () => java.lang.String,
+    getType: () => DataSourceParameterType
   ): DataSourceParameter = {
-    val __obj = js.Dynamic.literal(getName = getName, getSourceCell = getSourceCell, getType = getType)
+    val __obj = js.Dynamic.literal(getName = js.Any.fromFunction0(getName), getSourceCell = js.Any.fromFunction0(getSourceCell), getType = js.Any.fromFunction0(getType))
   
     __obj.asInstanceOf[DataSourceParameter]
   }

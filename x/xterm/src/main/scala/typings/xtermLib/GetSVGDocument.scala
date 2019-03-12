@@ -11,8 +11,8 @@ trait GetSVGDocument extends js.Object {
 
 object GetSVGDocument {
   @scala.inline
-  def apply(getSVGDocument: js.Function0[Document]): GetSVGDocument = {
-    val __obj = js.Dynamic.literal(getSVGDocument = getSVGDocument)
+  def apply(getSVGDocument: () => Document): GetSVGDocument = {
+    val __obj = js.Dynamic.literal(getSVGDocument = js.Any.fromFunction0(getSVGDocument))
   
     __obj.asInstanceOf[GetSVGDocument]
   }

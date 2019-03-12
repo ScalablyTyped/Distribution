@@ -56,56 +56,39 @@ trait Image extends js.Object {
 object Image {
   @scala.inline
   def apply(
-    addClickHandler: js.Function1[Handler, Image],
-    addErrorHandler: js.Function1[Handler, Image],
-    addLoadHandler: js.Function1[Handler, Image],
-    addMouseDownHandler: js.Function1[Handler, Image],
-    addMouseMoveHandler: js.Function1[Handler, Image],
-    addMouseOutHandler: js.Function1[Handler, Image],
-    addMouseOverHandler: js.Function1[Handler, Image],
-    addMouseUpHandler: js.Function1[Handler, Image],
-    addMouseWheelHandler: js.Function1[Handler, Image],
-    addStyleDependentName: js.Function1[java.lang.String, Image],
-    addStyleName: js.Function1[java.lang.String, Image],
-    getId: js.Function0[java.lang.String],
-    getTag: js.Function0[java.lang.String],
-    getType: js.Function0[java.lang.String],
-    setHeight: js.Function1[java.lang.String, Image],
-    setId: js.Function1[java.lang.String, Image],
-    setLayoutData: js.Function1[js.Object, Image],
-    setPixelSize: js.Function2[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      Image
-    ],
-    setResource: js.Function1[Component, Image],
-    setSize: js.Function2[java.lang.String, java.lang.String, Image],
-    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, Image],
-    setStyleAttributes: js.Function1[js.Object, Image],
-    setStyleName: js.Function1[java.lang.String, Image],
-    setStylePrimaryName: js.Function1[java.lang.String, Image],
-    setTag: js.Function1[java.lang.String, Image],
-    setTitle: js.Function1[java.lang.String, Image],
-    setUrl: js.Function1[java.lang.String, Image],
-    setUrlAndVisibleRect: js.Function5[
-      java.lang.String, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      Image
-    ],
-    setVisible: js.Function1[scala.Boolean, Image],
-    setVisibleRect: js.Function4[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      Image
-    ],
-    setWidth: js.Function1[java.lang.String, Image]
+    addClickHandler: Handler => Image,
+    addErrorHandler: Handler => Image,
+    addLoadHandler: Handler => Image,
+    addMouseDownHandler: Handler => Image,
+    addMouseMoveHandler: Handler => Image,
+    addMouseOutHandler: Handler => Image,
+    addMouseOverHandler: Handler => Image,
+    addMouseUpHandler: Handler => Image,
+    addMouseWheelHandler: Handler => Image,
+    addStyleDependentName: java.lang.String => Image,
+    addStyleName: java.lang.String => Image,
+    getId: () => java.lang.String,
+    getTag: () => java.lang.String,
+    getType: () => java.lang.String,
+    setHeight: java.lang.String => Image,
+    setId: java.lang.String => Image,
+    setLayoutData: js.Object => Image,
+    setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => Image,
+    setResource: Component => Image,
+    setSize: (java.lang.String, java.lang.String) => Image,
+    setStyleAttribute: (java.lang.String, java.lang.String) => Image,
+    setStyleAttributes: js.Object => Image,
+    setStyleName: java.lang.String => Image,
+    setStylePrimaryName: java.lang.String => Image,
+    setTag: java.lang.String => Image,
+    setTitle: java.lang.String => Image,
+    setUrl: java.lang.String => Image,
+    setUrlAndVisibleRect: (java.lang.String, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => Image,
+    setVisible: scala.Boolean => Image,
+    setVisibleRect: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => Image,
+    setWidth: java.lang.String => Image
   ): Image = {
-    val __obj = js.Dynamic.literal(addClickHandler = addClickHandler, addErrorHandler = addErrorHandler, addLoadHandler = addLoadHandler, addMouseDownHandler = addMouseDownHandler, addMouseMoveHandler = addMouseMoveHandler, addMouseOutHandler = addMouseOutHandler, addMouseOverHandler = addMouseOverHandler, addMouseUpHandler = addMouseUpHandler, addMouseWheelHandler = addMouseWheelHandler, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, getId = getId, getTag = getTag, getType = getType, setHeight = setHeight, setId = setId, setLayoutData = setLayoutData, setPixelSize = setPixelSize, setResource = setResource, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setTitle = setTitle, setUrl = setUrl, setUrlAndVisibleRect = setUrlAndVisibleRect, setVisible = setVisible, setVisibleRect = setVisibleRect, setWidth = setWidth)
+    val __obj = js.Dynamic.literal(addClickHandler = js.Any.fromFunction1(addClickHandler), addErrorHandler = js.Any.fromFunction1(addErrorHandler), addLoadHandler = js.Any.fromFunction1(addLoadHandler), addMouseDownHandler = js.Any.fromFunction1(addMouseDownHandler), addMouseMoveHandler = js.Any.fromFunction1(addMouseMoveHandler), addMouseOutHandler = js.Any.fromFunction1(addMouseOutHandler), addMouseOverHandler = js.Any.fromFunction1(addMouseOverHandler), addMouseUpHandler = js.Any.fromFunction1(addMouseUpHandler), addMouseWheelHandler = js.Any.fromFunction1(addMouseWheelHandler), addStyleDependentName = js.Any.fromFunction1(addStyleDependentName), addStyleName = js.Any.fromFunction1(addStyleName), getId = js.Any.fromFunction0(getId), getTag = js.Any.fromFunction0(getTag), getType = js.Any.fromFunction0(getType), setHeight = js.Any.fromFunction1(setHeight), setId = js.Any.fromFunction1(setId), setLayoutData = js.Any.fromFunction1(setLayoutData), setPixelSize = js.Any.fromFunction2(setPixelSize), setResource = js.Any.fromFunction1(setResource), setSize = js.Any.fromFunction2(setSize), setStyleAttribute = js.Any.fromFunction2(setStyleAttribute), setStyleAttributes = js.Any.fromFunction1(setStyleAttributes), setStyleName = js.Any.fromFunction1(setStyleName), setStylePrimaryName = js.Any.fromFunction1(setStylePrimaryName), setTag = js.Any.fromFunction1(setTag), setTitle = js.Any.fromFunction1(setTitle), setUrl = js.Any.fromFunction1(setUrl), setUrlAndVisibleRect = js.Any.fromFunction5(setUrlAndVisibleRect), setVisible = js.Any.fromFunction1(setVisible), setVisibleRect = js.Any.fromFunction4(setVisibleRect), setWidth = js.Any.fromFunction1(setWidth))
   
     __obj.asInstanceOf[Image]
   }

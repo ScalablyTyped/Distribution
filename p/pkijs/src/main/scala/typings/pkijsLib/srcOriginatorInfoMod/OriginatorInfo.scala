@@ -18,11 +18,11 @@ object OriginatorInfo {
   def apply(
     certs: pkijsLib.srcCertificateSetMod.default,
     crls: pkijsLib.srcRevocationInfoChoicesMod.default,
-    fromSchema: js.Function1[js.Any, scala.Unit],
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    fromSchema: js.Any => scala.Unit,
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): OriginatorInfo = {
-    val __obj = js.Dynamic.literal(certs = certs, crls = crls, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(certs = certs, crls = crls, fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[OriginatorInfo]
   }

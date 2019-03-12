@@ -15,9 +15,6 @@ object ^ extends js.Object {
     * @param imageData The image data to be copied.
     * @param imageType The type of imageData.
     */
-  def setImageData(
-    imageData: firefoxDashWebextDashBrowserLib.browserNs.clipboardNs.ArrayBuffer,
-    imageType: firefoxDashWebextDashBrowserLib.browserNs.clipboardNs._SetImageData
-  ): js.Promise[scala.Unit] = js.native
+  def setImageData(imageData: ArrayBuffer, imageType: _SetImageData): js.Promise[scala.Unit] = js.native
 }
 

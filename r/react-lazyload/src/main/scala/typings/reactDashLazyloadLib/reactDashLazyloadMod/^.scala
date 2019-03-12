@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def forceCheck(): scala.Unit = js.native
-  def lazyload(option: js.Object): reactDashLazyloadLib.reactDashLazyloadMod.LazyLoad = js.native
+  def lazyload(option: js.Object): LazyLoad = js.native
 }
 

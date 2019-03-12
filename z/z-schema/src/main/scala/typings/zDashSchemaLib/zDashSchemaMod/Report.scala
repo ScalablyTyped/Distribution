@@ -29,16 +29,9 @@ trait Report extends js.Object {
 object Report {
   @scala.inline
   def apply(
-    addCustomError: js.Function5[
-      java.lang.String, 
-      java.lang.String, 
-      js.Array[java.lang.String], 
-      java.lang.String, 
-      java.lang.String, 
-      scala.Unit
-    ]
+    addCustomError: (java.lang.String, java.lang.String, js.Array[java.lang.String], java.lang.String, java.lang.String) => scala.Unit
   ): Report = {
-    val __obj = js.Dynamic.literal(addCustomError = addCustomError)
+    val __obj = js.Dynamic.literal(addCustomError = js.Any.fromFunction5(addCustomError))
   
     __obj.asInstanceOf[Report]
   }

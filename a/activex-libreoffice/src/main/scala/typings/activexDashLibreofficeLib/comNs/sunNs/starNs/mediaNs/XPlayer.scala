@@ -102,23 +102,23 @@ object XPlayer {
     MediaTime: scala.Double,
     PreferredPlayerWindowSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
     VolumeDB: scala.Double,
-    createFrameGrabber: js.Function0[XFrameGrabber],
-    createPlayerWindow: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], XPlayerWindow],
-    getDuration: js.Function0[scala.Double],
-    getMediaTime: js.Function0[scala.Double],
-    getPreferredPlayerWindowSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
-    getVolumeDB: js.Function0[scala.Double],
-    isMute: js.Function0[scala.Boolean],
-    isPlaybackLoop: js.Function0[scala.Boolean],
-    isPlaying: js.Function0[scala.Boolean],
-    setMediaTime: js.Function1[scala.Double, scala.Unit],
-    setMute: js.Function1[scala.Boolean, scala.Unit],
-    setPlaybackLoop: js.Function1[scala.Boolean, scala.Unit],
-    setVolumeDB: js.Function1[scala.Double, scala.Unit],
-    start: js.Function0[scala.Unit],
-    stop: js.Function0[scala.Unit]
+    createFrameGrabber: () => XFrameGrabber,
+    createPlayerWindow: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => XPlayerWindow,
+    getDuration: () => scala.Double,
+    getMediaTime: () => scala.Double,
+    getPreferredPlayerWindowSize: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    getVolumeDB: () => scala.Double,
+    isMute: () => scala.Boolean,
+    isPlaybackLoop: () => scala.Boolean,
+    isPlaying: () => scala.Boolean,
+    setMediaTime: scala.Double => scala.Unit,
+    setMute: scala.Boolean => scala.Unit,
+    setPlaybackLoop: scala.Boolean => scala.Unit,
+    setVolumeDB: scala.Double => scala.Unit,
+    start: () => scala.Unit,
+    stop: () => scala.Unit
   ): XPlayer = {
-    val __obj = js.Dynamic.literal(Duration = Duration, MediaTime = MediaTime, PreferredPlayerWindowSize = PreferredPlayerWindowSize, VolumeDB = VolumeDB, createFrameGrabber = createFrameGrabber, createPlayerWindow = createPlayerWindow, getDuration = getDuration, getMediaTime = getMediaTime, getPreferredPlayerWindowSize = getPreferredPlayerWindowSize, getVolumeDB = getVolumeDB, isMute = isMute, isPlaybackLoop = isPlaybackLoop, isPlaying = isPlaying, setMediaTime = setMediaTime, setMute = setMute, setPlaybackLoop = setPlaybackLoop, setVolumeDB = setVolumeDB, start = start, stop = stop)
+    val __obj = js.Dynamic.literal(Duration = Duration, MediaTime = MediaTime, PreferredPlayerWindowSize = PreferredPlayerWindowSize, VolumeDB = VolumeDB, createFrameGrabber = js.Any.fromFunction0(createFrameGrabber), createPlayerWindow = js.Any.fromFunction1(createPlayerWindow), getDuration = js.Any.fromFunction0(getDuration), getMediaTime = js.Any.fromFunction0(getMediaTime), getPreferredPlayerWindowSize = js.Any.fromFunction0(getPreferredPlayerWindowSize), getVolumeDB = js.Any.fromFunction0(getVolumeDB), isMute = js.Any.fromFunction0(isMute), isPlaybackLoop = js.Any.fromFunction0(isPlaybackLoop), isPlaying = js.Any.fromFunction0(isPlaying), setMediaTime = js.Any.fromFunction1(setMediaTime), setMute = js.Any.fromFunction1(setMute), setPlaybackLoop = js.Any.fromFunction1(setPlaybackLoop), setVolumeDB = js.Any.fromFunction1(setVolumeDB), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[XPlayer]
   }

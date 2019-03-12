@@ -21,7 +21,7 @@ class Client protected () extends js.Object {
   @JSName("on")
   def on_error(
     event: promiseDashPgLib.promiseDashPgLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): Client = js.native
   @JSName("on")
   def on_notice(

@@ -30,7 +30,7 @@ trait Socket
     length: scala.Double,
     port: scala.Double,
     address: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* bytes */ scala.Double, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* bytes */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
   def setBroadcast(flag: scala.Boolean): scala.Unit = js.native
   def setMulticastLoopback(flag: scala.Boolean): scala.Unit = js.native

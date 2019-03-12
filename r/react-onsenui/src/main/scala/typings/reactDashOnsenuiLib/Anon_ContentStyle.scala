@@ -22,24 +22,24 @@ object Anon_ContentStyle {
   def apply(
     contentStyle: js.Any = null,
     modifier: java.lang.String = null,
-    onHide: js.Function0[scala.Unit] = null,
-    onInit: js.Function0[scala.Unit] = null,
-    onShow: js.Function0[scala.Unit] = null,
-    renderBottomToolbar: js.Function0[scala.Unit] = null,
-    renderFixed: js.Function0[scala.Unit] = null,
-    renderModal: js.Function0[scala.Unit] = null,
-    renderToolbar: js.Function0[scala.Unit] = null
+    onHide: () => scala.Unit = null,
+    onInit: () => scala.Unit = null,
+    onShow: () => scala.Unit = null,
+    renderBottomToolbar: () => scala.Unit = null,
+    renderFixed: () => scala.Unit = null,
+    renderModal: () => scala.Unit = null,
+    renderToolbar: () => scala.Unit = null
   ): Anon_ContentStyle = {
     val __obj = js.Dynamic.literal()
     if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle)
     if (modifier != null) __obj.updateDynamic("modifier")(modifier)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onInit != null) __obj.updateDynamic("onInit")(onInit)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
-    if (renderBottomToolbar != null) __obj.updateDynamic("renderBottomToolbar")(renderBottomToolbar)
-    if (renderFixed != null) __obj.updateDynamic("renderFixed")(renderFixed)
-    if (renderModal != null) __obj.updateDynamic("renderModal")(renderModal)
-    if (renderToolbar != null) __obj.updateDynamic("renderToolbar")(renderToolbar)
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))
+    if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction0(onInit))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
+    if (renderBottomToolbar != null) __obj.updateDynamic("renderBottomToolbar")(js.Any.fromFunction0(renderBottomToolbar))
+    if (renderFixed != null) __obj.updateDynamic("renderFixed")(js.Any.fromFunction0(renderFixed))
+    if (renderModal != null) __obj.updateDynamic("renderModal")(js.Any.fromFunction0(renderModal))
+    if (renderToolbar != null) __obj.updateDynamic("renderToolbar")(js.Any.fromFunction0(renderToolbar))
     __obj.asInstanceOf[Anon_ContentStyle]
   }
 }

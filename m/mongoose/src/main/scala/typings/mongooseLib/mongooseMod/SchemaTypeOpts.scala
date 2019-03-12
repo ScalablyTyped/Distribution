@@ -128,7 +128,7 @@ object SchemaTypeOpts {
     default: mongooseLib.mongooseMod.SchemaTypeOptsNs.DefaultFn[T] | T = null,
     enum: js.Array[T] | mongooseLib.mongooseMod.SchemaTypeOptsNs.EnumOpts[T] | js.Any = null,
     expires: scala.Double | java.lang.String | js.Any = null,
-    get: js.Function2[/* value */ T, /* schematype */ js.UndefOr[SchemaTypeOpts[T]], T | _] = null,
+    get: (/* value */ T, /* schematype */ js.UndefOr[SchemaTypeOpts[T]]) => T | _ = null,
     index: mongooseLib.mongooseMod.SchemaTypeOptsNs.IndexOpts | scala.Boolean | java.lang.String = null,
     lowercase: scala.Boolean | js.Any = null,
     `match`: stdLib.RegExp | (js.Tuple2[stdLib.RegExp, java.lang.String]) | js.Any = null,
@@ -138,7 +138,7 @@ object SchemaTypeOpts {
     minlength: scala.Double | (js.Tuple2[scala.Double, java.lang.String]) | js.Any = null,
     required: mongooseLib.mongooseMod.SchemaTypeOptsNs.RequiredFn[T] | scala.Boolean | (js.Tuple2[scala.Boolean, java.lang.String]) | java.lang.String | (js.Tuple2[java.lang.String, java.lang.String]) | js.Any = null,
     select: scala.Boolean | js.Any = null,
-    set: js.Function2[/* value */ T, /* schematype */ js.UndefOr[SchemaTypeOpts[T]], T | _] = null,
+    set: (/* value */ T, /* schematype */ js.UndefOr[SchemaTypeOpts[T]]) => T | _ = null,
     sparse: scala.Boolean | js.Any = null,
     text: scala.Boolean | js.Any = null,
     trim: scala.Boolean | js.Any = null,
@@ -156,7 +156,7 @@ object SchemaTypeOpts {
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (get != null) __obj.updateDynamic("get")(get)
+    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction2(get))
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (lowercase != null) __obj.updateDynamic("lowercase")(lowercase.asInstanceOf[js.Any])
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
@@ -166,7 +166,7 @@ object SchemaTypeOpts {
     if (minlength != null) __obj.updateDynamic("minlength")(minlength.asInstanceOf[js.Any])
     if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
-    if (set != null) __obj.updateDynamic("set")(set)
+    if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction2(set))
     if (sparse != null) __obj.updateDynamic("sparse")(sparse.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (trim != null) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])

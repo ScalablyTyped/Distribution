@@ -99,11 +99,11 @@ object ^ extends js.Object {
   /**
   		 * Creates a temporary directory and returns a [File](Titanium.Filesystem.File) object representing the new directory.
   		 */
-  def createTempDirectory(): titaniumLib.TitaniumNs.FilesystemNs.File = js.native
+  def createTempDirectory(): File = js.native
   /**
   		 * Creates a temporary file and returns a [File](Titanium.Filesystem.File) object representing the new file.
   		 */
-  def createTempFile(): titaniumLib.TitaniumNs.FilesystemNs.File = js.native
+  def createTempFile(): File = js.native
   /**
   		 * Returns the path to the container directory associated with the specified security application group ID.
   		 */
@@ -147,7 +147,7 @@ object ^ extends js.Object {
   /**
   		 * Returns a `File` object representing the file identified by the path arguments.
   		 */
-  def getFile(paths: java.lang.String*): titaniumLib.TitaniumNs.FilesystemNs.File = js.native
+  def getFile(paths: java.lang.String*): File = js.native
   /**
   		 * Gets the value of the <Titanium.Filesystem.lifecycleContainer> property.
   		 */
@@ -183,7 +183,7 @@ object ^ extends js.Object {
   /**
   		 * Opens file using the <Titanium.IOStream> interface.
   		 */
-  def openStream(mode: scala.Double, path: java.lang.String): titaniumLib.TitaniumNs.FilesystemNs.FileStream = js.native
+  def openStream(mode: scala.Double, path: java.lang.String): FileStream = js.native
   /**
   		 * Removes the specified callback as an event listener for the named event.
   		 */

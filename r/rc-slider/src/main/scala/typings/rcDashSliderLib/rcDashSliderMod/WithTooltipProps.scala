@@ -13,11 +13,11 @@ trait WithTooltipProps extends js.Object {
 object WithTooltipProps {
   @scala.inline
   def apply(
-    tipFormatter: js.Function1[/* value */ scala.Double, reactLib.reactMod.ReactNs.ReactNode] = null,
+    tipFormatter: /* value */ scala.Double => reactLib.reactMod.ReactNs.ReactNode = null,
     tipProps: stdLib.Partial[rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Props] = null
   ): WithTooltipProps = {
     val __obj = js.Dynamic.literal()
-    if (tipFormatter != null) __obj.updateDynamic("tipFormatter")(tipFormatter)
+    if (tipFormatter != null) __obj.updateDynamic("tipFormatter")(js.Any.fromFunction1(tipFormatter))
     if (tipProps != null) __obj.updateDynamic("tipProps")(tipProps)
     __obj.asInstanceOf[WithTooltipProps]
   }

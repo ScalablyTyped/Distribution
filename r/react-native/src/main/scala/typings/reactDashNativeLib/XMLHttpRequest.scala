@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait XMLHttpRequest
-  extends reactLib.EventTarget
+  extends stdLib.EventTarget
      with XMLHttpRequestEventTarget {
   val DONE: scala.Double = js.native
   val HEADERS_RECEIVED: scala.Double = js.native
@@ -15,13 +15,13 @@ trait XMLHttpRequest
   val OPENED: scala.Double = js.native
   val UNSENT: scala.Double = js.native
   //  msCaching: string;
-  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ reactLib.Event, _]) | scala.Null = js.native
+  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]) | scala.Null = js.native
   val readyState: scala.Double = js.native
   val response: js.Any = js.native
   val responseText: java.lang.String = js.native
   var responseType: XMLHttpRequestResponseType = js.native
   val responseURL: java.lang.String = js.native
-  val responseXML: reactLib.Document | scala.Null = js.native
+  val responseXML: stdLib.Document | scala.Null = js.native
   val status: scala.Double = js.native
   val statusText: java.lang.String = js.native
   var timeout: scala.Double = js.native
@@ -31,7 +31,7 @@ trait XMLHttpRequest
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: reactDashNativeLib.reactDashNativeLibStrings.readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ reactLib.Event, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]
   ): scala.Unit = js.native
   def getAllResponseHeaders(): java.lang.String = js.native
   def getResponseHeader(header: java.lang.String): java.lang.String | scala.Null = js.native
@@ -58,7 +58,7 @@ trait XMLHttpRequest
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: reactDashNativeLib.reactDashNativeLibStrings.readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ reactLib.Event, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]
   ): scala.Unit = js.native
   def send(): scala.Unit = js.native
   def send(data: js.Any): scala.Unit = js.native

@@ -35,6 +35,10 @@ trait ICoupon
   var max_redemptions: scala.Double
   var metadata: stripeLib.stripeMod.StripeNs.IMetadata
   /**
+    * Name of the coupon displayed to customers on for instance invoices or receipts.
+    */
+  var name: java.lang.String
+  /**
     * Value is 'coupon'
     */
   @JSName("object")
@@ -70,13 +74,14 @@ object ICoupon {
     livemode: scala.Boolean,
     max_redemptions: scala.Double,
     metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    name: java.lang.String,
     `object`: stripeLib.stripeLibStrings.coupon,
     percent_off: scala.Double,
     redeem_by: scala.Double,
     times_redeemed: scala.Double,
     valid: scala.Boolean
   ): ICoupon = {
-    val __obj = js.Dynamic.literal(amount_off = amount_off, created = created, currency = currency, duration = duration.asInstanceOf[js.Any], duration_in_months = duration_in_months, id = id, livemode = livemode, max_redemptions = max_redemptions, metadata = metadata, percent_off = percent_off, redeem_by = redeem_by, times_redeemed = times_redeemed, valid = valid)
+    val __obj = js.Dynamic.literal(amount_off = amount_off, created = created, currency = currency, duration = duration.asInstanceOf[js.Any], duration_in_months = duration_in_months, id = id, livemode = livemode, max_redemptions = max_redemptions, metadata = metadata, name = name, percent_off = percent_off, redeem_by = redeem_by, times_redeemed = times_redeemed, valid = valid)
     __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[ICoupon]
   }

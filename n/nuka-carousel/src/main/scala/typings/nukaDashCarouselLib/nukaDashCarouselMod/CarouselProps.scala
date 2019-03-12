@@ -196,11 +196,11 @@ trait CarouselProps extends js.Object {
 object CarouselProps {
   @scala.inline
   def apply(
-    afterSlide: js.Function1[/* prevSlide */ scala.Double, scala.Unit] = null,
+    afterSlide: /* prevSlide */ scala.Double => scala.Unit = null,
     autoplay: js.UndefOr[scala.Boolean] = js.undefined,
     autoplayInterval: scala.Int | scala.Double = null,
     autoplayReverse: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeSlide: js.Function2[/* currentSlide */ scala.Double, /* endSlide */ scala.Double, scala.Unit] = null,
+    beforeSlide: (/* currentSlide */ scala.Double, /* endSlide */ scala.Double) => scala.Unit = null,
     cellAlign: CarouselCellAlignProp = null,
     cellSpacing: scala.Int | scala.Double = null,
     className: java.lang.String = null,
@@ -213,7 +213,7 @@ object CarouselProps {
     heightMode: CarouselHeightModeProp = null,
     initialSlideHeight: scala.Int | scala.Double = null,
     initialSlideWidth: scala.Int | scala.Double = null,
-    onResize: js.Function0[scala.Unit] = null,
+    onResize: () => scala.Unit = null,
     pauseOnHover: js.UndefOr[scala.Boolean] = js.undefined,
     renderBottomCenterControls: CarouselRenderControl = null,
     renderBottomLeftControls: CarouselRenderControl = null,
@@ -238,11 +238,11 @@ object CarouselProps {
     wrapAround: js.UndefOr[scala.Boolean] = js.undefined
   ): CarouselProps = {
     val __obj = js.Dynamic.literal()
-    if (afterSlide != null) __obj.updateDynamic("afterSlide")(afterSlide)
+    if (afterSlide != null) __obj.updateDynamic("afterSlide")(js.Any.fromFunction1(afterSlide))
     if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
     if (autoplayInterval != null) __obj.updateDynamic("autoplayInterval")(autoplayInterval.asInstanceOf[js.Any])
     if (!js.isUndefined(autoplayReverse)) __obj.updateDynamic("autoplayReverse")(autoplayReverse)
-    if (beforeSlide != null) __obj.updateDynamic("beforeSlide")(beforeSlide)
+    if (beforeSlide != null) __obj.updateDynamic("beforeSlide")(js.Any.fromFunction2(beforeSlide))
     if (cellAlign != null) __obj.updateDynamic("cellAlign")(cellAlign)
     if (cellSpacing != null) __obj.updateDynamic("cellSpacing")(cellSpacing.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
@@ -255,7 +255,7 @@ object CarouselProps {
     if (heightMode != null) __obj.updateDynamic("heightMode")(heightMode)
     if (initialSlideHeight != null) __obj.updateDynamic("initialSlideHeight")(initialSlideHeight.asInstanceOf[js.Any])
     if (initialSlideWidth != null) __obj.updateDynamic("initialSlideWidth")(initialSlideWidth.asInstanceOf[js.Any])
-    if (onResize != null) __obj.updateDynamic("onResize")(onResize)
+    if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction0(onResize))
     if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover)
     if (renderBottomCenterControls != null) __obj.updateDynamic("renderBottomCenterControls")(renderBottomCenterControls)
     if (renderBottomLeftControls != null) __obj.updateDynamic("renderBottomLeftControls")(renderBottomLeftControls)

@@ -44,21 +44,12 @@ trait PresentationsResource extends js.Object {
 object PresentationsResource {
   @scala.inline
   def apply(
-    batchUpdate: js.Function1[
-      gapiDotClientDotSlidesLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdatePresentationResponse]
-    ],
-    create: js.Function1[
-      gapiDotClientDotSlidesLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Presentation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotSlidesLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Presentation]
-    ],
+    batchUpdate: gapiDotClientDotSlidesLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdatePresentationResponse],
+    create: gapiDotClientDotSlidesLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[Presentation],
+    get: gapiDotClientDotSlidesLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[Presentation],
     pages: PagesResource
   ): PresentationsResource = {
-    val __obj = js.Dynamic.literal(batchUpdate = batchUpdate, create = create, get = get, pages = pages)
+    val __obj = js.Dynamic.literal(batchUpdate = js.Any.fromFunction1(batchUpdate), create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), pages = pages)
   
     __obj.asInstanceOf[PresentationsResource]
   }

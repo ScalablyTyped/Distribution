@@ -23,12 +23,12 @@ trait XStatusIndicatorFactory
 object XStatusIndicatorFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createStatusIndicator: js.Function0[XStatusIndicator],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createStatusIndicator: () => XStatusIndicator,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XStatusIndicatorFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createStatusIndicator = createStatusIndicator, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createStatusIndicator = js.Any.fromFunction0(createStatusIndicator), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XStatusIndicatorFactory]
   }

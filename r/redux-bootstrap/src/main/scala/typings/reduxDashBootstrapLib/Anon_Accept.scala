@@ -11,8 +11,8 @@ trait Anon_Accept extends js.Object {
 
 object Anon_Accept {
   @scala.inline
-  def apply(accept: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit]): Anon_Accept = {
-    val __obj = js.Dynamic.literal(accept = accept)
+  def apply(accept: (java.lang.String, js.Function0[scala.Unit]) => scala.Unit): Anon_Accept = {
+    val __obj = js.Dynamic.literal(accept = js.Any.fromFunction2(accept))
   
     __obj.asInstanceOf[Anon_Accept]
   }

@@ -17,14 +17,14 @@ trait Anon_Abbreviation extends js.Object {
 object Anon_Abbreviation {
   @scala.inline
   def apply(
-    abbreviation: js.Function0[java.lang.String],
-    adjective: js.Function0[java.lang.String],
-    ingverb: js.Function0[java.lang.String],
-    noun: js.Function0[java.lang.String],
-    phrase: js.Function0[java.lang.String],
-    verb: js.Function0[java.lang.String]
+    abbreviation: () => java.lang.String,
+    adjective: () => java.lang.String,
+    ingverb: () => java.lang.String,
+    noun: () => java.lang.String,
+    phrase: () => java.lang.String,
+    verb: () => java.lang.String
   ): Anon_Abbreviation = {
-    val __obj = js.Dynamic.literal(abbreviation = abbreviation, adjective = adjective, ingverb = ingverb, noun = noun, phrase = phrase, verb = verb)
+    val __obj = js.Dynamic.literal(abbreviation = js.Any.fromFunction0(abbreviation), adjective = js.Any.fromFunction0(adjective), ingverb = js.Any.fromFunction0(ingverb), noun = js.Any.fromFunction0(noun), phrase = js.Any.fromFunction0(phrase), verb = js.Any.fromFunction0(verb))
   
     __obj.asInstanceOf[Anon_Abbreviation]
   }

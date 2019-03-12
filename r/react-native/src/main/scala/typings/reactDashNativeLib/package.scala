@@ -13,7 +13,7 @@ package object reactDashNativeLib {
   type ErrorHandlerCallback = js.Function2[/* error */ js.Any, /* isFatal */ js.UndefOr[scala.Boolean], scala.Unit]
   type Falsy = js.UndefOr[scala.Null | reactDashNativeLib.reactDashNativeLibNumbers.`false`]
   type HeadersInit_ = Headers | js.Array[js.Array[java.lang.String]] | org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  type KeyboardEventListener = js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit]
+  type KeyboardEventListener = js.Function1[/* event */ stdLib.KeyboardEvent, scala.Unit]
   type NodeHandle = scala.Double
   /**
     * Receive events from native-code

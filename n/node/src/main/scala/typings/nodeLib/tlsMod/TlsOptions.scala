@@ -31,11 +31,7 @@ object TlsOptions {
   def apply(
     ALPNProtocols: js.Array[java.lang.String] | js.Array[nodeLib.Buffer] | js.Array[stdLib.Uint8Array] | nodeLib.Buffer | stdLib.Uint8Array = null,
     NPNProtocols: js.Array[java.lang.String] | js.Array[nodeLib.Buffer] | js.Array[stdLib.Uint8Array] | nodeLib.Buffer | stdLib.Uint8Array = null,
-    SNICallback: js.Function2[
-      /* servername */ java.lang.String, 
-      /* cb */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* ctx */ SecureContext, scala.Unit], 
-      scala.Unit
-    ] = null,
+    SNICallback: (/* servername */ java.lang.String, /* cb */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* ctx */ SecureContext, scala.Unit]) => scala.Unit = null,
     ca: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
     cert: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
     ciphers: java.lang.String = null,
@@ -61,7 +57,7 @@ object TlsOptions {
     val __obj = js.Dynamic.literal()
     if (ALPNProtocols != null) __obj.updateDynamic("ALPNProtocols")(ALPNProtocols.asInstanceOf[js.Any])
     if (NPNProtocols != null) __obj.updateDynamic("NPNProtocols")(NPNProtocols.asInstanceOf[js.Any])
-    if (SNICallback != null) __obj.updateDynamic("SNICallback")(SNICallback)
+    if (SNICallback != null) __obj.updateDynamic("SNICallback")(js.Any.fromFunction2(SNICallback))
     if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
     if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)

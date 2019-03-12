@@ -11,11 +11,8 @@ trait VideoBuilder[Media] extends AdWordsBuilder[Media] {
 
 object VideoBuilder {
   @scala.inline
-  def apply[Media](
-    build: js.Function0[AdWordsOperation[Media]],
-    withYouTubeVideoId: js.Function1[java.lang.String, VideoBuilder[Media]]
-  ): VideoBuilder[Media] = {
-    val __obj = js.Dynamic.literal(build = build, withYouTubeVideoId = withYouTubeVideoId)
+  def apply[Media](build: () => AdWordsOperation[Media], withYouTubeVideoId: java.lang.String => VideoBuilder[Media]): VideoBuilder[Media] = {
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), withYouTubeVideoId = js.Any.fromFunction1(withYouTubeVideoId))
   
     __obj.asInstanceOf[VideoBuilder[Media]]
   }

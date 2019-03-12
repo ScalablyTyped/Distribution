@@ -23,7 +23,7 @@ object SessionOptions {
   def apply(
     secret: java.lang.String | js.Array[java.lang.String],
     cookie: expressLib.expressMod.eNs.CookieOptions = null,
-    genid: js.Function1[/* req */ expressLib.expressMod.eNs.Request, java.lang.String] = null,
+    genid: /* req */ expressLib.expressMod.eNs.Request => java.lang.String = null,
     name: java.lang.String = null,
     proxy: js.UndefOr[scala.Boolean] = js.undefined,
     resave: js.UndefOr[scala.Boolean] = js.undefined,
@@ -34,7 +34,7 @@ object SessionOptions {
   ): SessionOptions = {
     val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
     if (cookie != null) __obj.updateDynamic("cookie")(cookie)
-    if (genid != null) __obj.updateDynamic("genid")(genid)
+    if (genid != null) __obj.updateDynamic("genid")(js.Any.fromFunction1(genid))
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(proxy)) __obj.updateDynamic("proxy")(proxy)
     if (!js.isUndefined(resave)) __obj.updateDynamic("resave")(resave)

@@ -11,8 +11,8 @@ trait _ChainSingle[T] extends js.Object {
 
 object _ChainSingle {
   @scala.inline
-  def apply[T](value: js.Function0[T]): _ChainSingle[T] = {
-    val __obj = js.Dynamic.literal(value = value)
+  def apply[T](value: () => T): _ChainSingle[T] = {
+    val __obj = js.Dynamic.literal(value = js.Any.fromFunction0(value))
   
     __obj.asInstanceOf[_ChainSingle[T]]
   }

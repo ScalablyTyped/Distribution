@@ -1,0 +1,20 @@
+package typings
+package reactDashMonacoDashEditorLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashMonacoDashEditorLibComponents {
+  @scala.inline
+  def MonacoDiffEditor: reactLib.reactMod.ReactNs.ComponentType[reactDashMonacoDashEditorLib.reactDashMonacoDashEditorMod.MonacoDiffEditorProps] = js.constructorOf[reactDashMonacoDashEditorLib.reactDashMonacoDashEditorMod.MonacoDiffEditor].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMonacoDashEditorLib.reactDashMonacoDashEditorMod.MonacoDiffEditorProps]]
+  @scala.inline
+  def ReactDashMonacoDashEditor: reactLib.reactMod.ReactNs.ComponentType[reactDashMonacoDashEditorLib.reactDashMonacoDashEditorMod.MonacoEditorProps] = js.constructorOf[reactDashMonacoDashEditorLib.reactDashMonacoDashEditorMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMonacoDashEditorLib.reactDashMonacoDashEditorMod.MonacoEditorProps]]
+  @scala.inline
+  def MonacoDiffEditorProps: reactDashMonacoDashEditorLib.reactDashMonacoDashEditorMod.MonacoDiffEditorProps.type = reactDashMonacoDashEditorLib.reactDashMonacoDashEditorMod.MonacoDiffEditorProps
+  type MonacoDiffEditorProps = reactDashMonacoDashEditorLib.reactDashMonacoDashEditorMod.MonacoDiffEditorProps
+  @scala.inline
+  def MonacoEditorProps: reactDashMonacoDashEditorLib.reactDashMonacoDashEditorMod.MonacoEditorProps.type = reactDashMonacoDashEditorLib.reactDashMonacoDashEditorMod.MonacoEditorProps
+  type MonacoEditorProps = reactDashMonacoDashEditorLib.reactDashMonacoDashEditorMod.MonacoEditorProps
+}
+

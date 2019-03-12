@@ -21,8 +21,8 @@ object PropsType {
     clearIcon: reactLib.reactMod.ReactNs.ReactNode = null,
     closeIcon: reactLib.reactMod.ReactNs.ReactNode = null,
     locale: rmcDashCalendarLib.libDateDataTypesMod.ModelsNs.Locale = null,
-    onCancel: js.Function0[scala.Unit] = null,
-    onClear: js.Function0[scala.Unit] = null,
+    onCancel: () => scala.Unit = null,
+    onClear: () => scala.Unit = null,
     showClear: js.UndefOr[scala.Boolean] = js.undefined,
     title: java.lang.String = null
   ): PropsType = {
@@ -30,8 +30,8 @@ object PropsType {
     if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
     if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel)
-    if (onClear != null) __obj.updateDynamic("onClear")(onClear)
+    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction0(onCancel))
+    if (onClear != null) __obj.updateDynamic("onClear")(js.Any.fromFunction0(onClear))
     if (!js.isUndefined(showClear)) __obj.updateDynamic("showClear")(showClear)
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[PropsType]

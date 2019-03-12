@@ -59,15 +59,15 @@ object GeometryServiceToGeoCoordinateStringParams {
     constructor: js.Function,
     conversionType: java.lang.String,
     coordinates: js.Array[js.Array[scala.Double]],
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     sr: SpatialReference | java.lang.String | scala.Double,
     addSpaces: js.UndefOr[scala.Boolean] = js.undefined,
     conversionMode: java.lang.String = null,
     numOfDigits: scala.Int | scala.Double = null,
     rounding: js.UndefOr[scala.Boolean] = js.undefined
   ): GeometryServiceToGeoCoordinateStringParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, conversionType = conversionType, coordinates = coordinates, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, sr = sr.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor, conversionType = conversionType, coordinates = coordinates, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sr = sr.asInstanceOf[js.Any])
     if (!js.isUndefined(addSpaces)) __obj.updateDynamic("addSpaces")(addSpaces)
     if (conversionMode != null) __obj.updateDynamic("conversionMode")(conversionMode)
     if (numOfDigits != null) __obj.updateDynamic("numOfDigits")(numOfDigits.asInstanceOf[js.Any])

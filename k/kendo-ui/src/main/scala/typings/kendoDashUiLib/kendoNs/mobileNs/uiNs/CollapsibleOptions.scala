@@ -20,9 +20,9 @@ object CollapsibleOptions {
   @scala.inline
   def apply(
     animation: js.UndefOr[scala.Boolean] = js.undefined,
-    collapse: js.Function1[/* e */ CollapsibleEvent, scala.Unit] = null,
+    collapse: /* e */ CollapsibleEvent => scala.Unit = null,
     collapsed: js.UndefOr[scala.Boolean] = js.undefined,
-    expand: js.Function1[/* e */ CollapsibleEvent, scala.Unit] = null,
+    expand: /* e */ CollapsibleEvent => scala.Unit = null,
     expandIcon: java.lang.String = null,
     iconPosition: java.lang.String = null,
     inset: js.UndefOr[scala.Boolean] = js.undefined,
@@ -30,9 +30,9 @@ object CollapsibleOptions {
   ): CollapsibleOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
-    if (collapse != null) __obj.updateDynamic("collapse")(collapse)
+    if (collapse != null) __obj.updateDynamic("collapse")(js.Any.fromFunction1(collapse))
     if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (expand != null) __obj.updateDynamic("expand")(js.Any.fromFunction1(expand))
     if (expandIcon != null) __obj.updateDynamic("expandIcon")(expandIcon)
     if (iconPosition != null) __obj.updateDynamic("iconPosition")(iconPosition)
     if (!js.isUndefined(inset)) __obj.updateDynamic("inset")(inset)

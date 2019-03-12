@@ -20,15 +20,11 @@ object FormatOptions {
   @scala.inline
   def apply(
     `type`: Format,
-    options: js.Function2[
-      /* options */ js.Object, 
-      /* transformPropName */ js.UndefOr[js.Function1[/* name */ java.lang.String, java.lang.String]], 
-      scala.Unit
-    ] = null
+    options: (/* options */ js.Object, /* transformPropName */ js.UndefOr[js.Function1[/* name */ java.lang.String, java.lang.String]]) => scala.Unit = null
   ): FormatOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(js.Any.fromFunction2(options))
     __obj.asInstanceOf[FormatOptions]
   }
 }

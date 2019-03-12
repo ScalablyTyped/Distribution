@@ -22,13 +22,13 @@ trait XClipboardNotifier
 object XClipboardNotifier {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addClipboardListener: js.Function1[XClipboardListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeClipboardListener: js.Function1[XClipboardListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addClipboardListener: XClipboardListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeClipboardListener: XClipboardListener => scala.Unit
   ): XClipboardNotifier = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addClipboardListener = addClipboardListener, queryInterface = queryInterface, release = release, removeClipboardListener = removeClipboardListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addClipboardListener = js.Any.fromFunction1(addClipboardListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeClipboardListener = js.Any.fromFunction1(removeClipboardListener))
   
     __obj.asInstanceOf[XClipboardNotifier]
   }

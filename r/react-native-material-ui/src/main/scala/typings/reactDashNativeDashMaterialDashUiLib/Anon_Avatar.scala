@@ -12,10 +12,10 @@ trait Anon_Avatar extends js.Object {
 
 object Anon_Avatar {
   @scala.inline
-  def apply(avatar: reactLib.reactMod.Global.JSXNs.Element = null, onPress: js.Function0[scala.Unit] = null): Anon_Avatar = {
+  def apply(avatar: reactLib.reactMod.Global.JSXNs.Element = null, onPress: () => scala.Unit = null): Anon_Avatar = {
     val __obj = js.Dynamic.literal()
     if (avatar != null) __obj.updateDynamic("avatar")(avatar)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     __obj.asInstanceOf[Anon_Avatar]
   }
 }

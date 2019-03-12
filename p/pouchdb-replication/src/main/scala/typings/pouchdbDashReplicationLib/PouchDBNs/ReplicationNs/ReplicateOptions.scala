@@ -82,7 +82,7 @@ trait ReplicateOptions extends js.Object {
 object ReplicateOptions {
   @scala.inline
   def apply(
-    back_off_function: js.Function1[/* delay */ scala.Double, scala.Double] = null,
+    back_off_function: /* delay */ scala.Double => scala.Double = null,
     batch_size: scala.Int | scala.Double = null,
     batches_limit: scala.Int | scala.Double = null,
     checkpoint: scala.Boolean | pouchdbDashReplicationLib.pouchdbDashReplicationLibStrings.target | pouchdbDashReplicationLib.pouchdbDashReplicationLibStrings.source = null,
@@ -98,7 +98,7 @@ object ReplicateOptions {
     view: java.lang.String = null
   ): ReplicateOptions = {
     val __obj = js.Dynamic.literal()
-    if (back_off_function != null) __obj.updateDynamic("back_off_function")(back_off_function)
+    if (back_off_function != null) __obj.updateDynamic("back_off_function")(js.Any.fromFunction1(back_off_function))
     if (batch_size != null) __obj.updateDynamic("batch_size")(batch_size.asInstanceOf[js.Any])
     if (batches_limit != null) __obj.updateDynamic("batches_limit")(batches_limit.asInstanceOf[js.Any])
     if (checkpoint != null) __obj.updateDynamic("checkpoint")(checkpoint.asInstanceOf[js.Any])

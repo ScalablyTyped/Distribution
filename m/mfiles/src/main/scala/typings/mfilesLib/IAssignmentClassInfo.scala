@@ -17,10 +17,10 @@ object IAssignmentClassInfo {
   def apply(
     ApprovalAssignmentClassInfo: IApprovalAssignmentClassInfo,
     AssignmentType: mfilesLib.MFilesNs.MFAssignmentType,
-    Clone: js.Function0[IAssignmentClassInfo],
+    Clone: () => IAssignmentClassInfo,
     TaskAssignmentClassInfo: ITaskAssignmentClassInfo
   ): IAssignmentClassInfo = {
-    val __obj = js.Dynamic.literal(ApprovalAssignmentClassInfo = ApprovalAssignmentClassInfo, AssignmentType = AssignmentType, Clone = Clone, TaskAssignmentClassInfo = TaskAssignmentClassInfo)
+    val __obj = js.Dynamic.literal(ApprovalAssignmentClassInfo = ApprovalAssignmentClassInfo, AssignmentType = AssignmentType, Clone = js.Any.fromFunction0(Clone), TaskAssignmentClassInfo = TaskAssignmentClassInfo)
   
     __obj.asInstanceOf[IAssignmentClassInfo]
   }

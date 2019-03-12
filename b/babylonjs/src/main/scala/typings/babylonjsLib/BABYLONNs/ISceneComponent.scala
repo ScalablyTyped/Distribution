@@ -38,13 +38,13 @@ trait ISceneComponent extends js.Object {
 object ISceneComponent {
   @scala.inline
   def apply(
-    dispose: js.Function0[scala.Unit],
+    dispose: () => scala.Unit,
     name: java.lang.String,
-    rebuild: js.Function0[scala.Unit],
-    register: js.Function0[scala.Unit],
+    rebuild: () => scala.Unit,
+    register: () => scala.Unit,
     scene: Scene
   ): ISceneComponent = {
-    val __obj = js.Dynamic.literal(dispose = dispose, name = name, rebuild = rebuild, register = register, scene = scene)
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), name = name, rebuild = js.Any.fromFunction0(rebuild), register = js.Any.fromFunction0(register), scene = scene)
   
     __obj.asInstanceOf[ISceneComponent]
   }

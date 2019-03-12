@@ -13,12 +13,9 @@ trait ViolatingSitesResource extends js.Object {
 object ViolatingSitesResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotAdexperiencereportLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ViolatingSitesResponse]
-    ]
+    list: gapiDotClientDotAdexperiencereportLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[ViolatingSitesResponse]
   ): ViolatingSitesResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ViolatingSitesResource]
   }

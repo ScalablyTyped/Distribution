@@ -24,12 +24,12 @@ trait XContentProviderFactory
 object XContentProviderFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createContentProvider: js.Function1[java.lang.String, XContentProvider],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createContentProvider: java.lang.String => XContentProvider,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XContentProviderFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createContentProvider = createContentProvider, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createContentProvider = js.Any.fromFunction1(createContentProvider), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XContentProviderFactory]
   }

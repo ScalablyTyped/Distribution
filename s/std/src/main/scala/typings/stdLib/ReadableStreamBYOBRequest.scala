@@ -14,11 +14,11 @@ trait ReadableStreamBYOBRequest extends js.Object {
 object ReadableStreamBYOBRequest {
   @scala.inline
   def apply(
-    respond: js.Function1[scala.Double, scala.Unit],
-    respondWithNewView: js.Function1[ArrayBufferView, scala.Unit],
+    respond: scala.Double => scala.Unit,
+    respondWithNewView: ArrayBufferView => scala.Unit,
     view: ArrayBufferView
   ): ReadableStreamBYOBRequest = {
-    val __obj = js.Dynamic.literal(respond = respond, respondWithNewView = respondWithNewView, view = view)
+    val __obj = js.Dynamic.literal(respond = js.Any.fromFunction1(respond), respondWithNewView = js.Any.fromFunction1(respondWithNewView), view = view)
   
     __obj.asInstanceOf[ReadableStreamBYOBRequest]
   }

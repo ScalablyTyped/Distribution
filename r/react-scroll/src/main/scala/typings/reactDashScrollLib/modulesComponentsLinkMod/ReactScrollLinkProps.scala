@@ -36,9 +36,9 @@ object ReactScrollLinkProps {
     ignoreCancelEvents: js.UndefOr[scala.Boolean] = js.undefined,
     isDynamic: js.UndefOr[scala.Boolean] = js.undefined,
     offset: scala.Int | scala.Double = null,
-    onClick: js.Function0[scala.Unit] = null,
-    onSetActive: js.Function1[/* to */ java.lang.String, scala.Unit] = null,
-    onSetInactive: js.Function0[scala.Unit] = null,
+    onClick: () => scala.Unit = null,
+    onSetActive: /* to */ java.lang.String => scala.Unit = null,
+    onSetInactive: () => scala.Unit = null,
     smooth: scala.Boolean | java.lang.String = null,
     spy: js.UndefOr[scala.Boolean] = js.undefined
   ): ReactScrollLinkProps = {
@@ -52,9 +52,9 @@ object ReactScrollLinkProps {
     if (!js.isUndefined(ignoreCancelEvents)) __obj.updateDynamic("ignoreCancelEvents")(ignoreCancelEvents)
     if (!js.isUndefined(isDynamic)) __obj.updateDynamic("isDynamic")(isDynamic)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onSetActive != null) __obj.updateDynamic("onSetActive")(onSetActive)
-    if (onSetInactive != null) __obj.updateDynamic("onSetInactive")(onSetInactive)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
+    if (onSetActive != null) __obj.updateDynamic("onSetActive")(js.Any.fromFunction1(onSetActive))
+    if (onSetInactive != null) __obj.updateDynamic("onSetInactive")(js.Any.fromFunction0(onSetInactive))
     if (smooth != null) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
     if (!js.isUndefined(spy)) __obj.updateDynamic("spy")(spy)
     __obj.asInstanceOf[ReactScrollLinkProps]

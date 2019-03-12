@@ -56,25 +56,17 @@ object XDispatchProviderInterceptor {
   def apply(
     MasterDispatchProvider: XDispatchProvider,
     SlaveDispatchProvider: XDispatchProvider,
-    acquire: js.Function0[scala.Unit],
-    getMasterDispatchProvider: js.Function0[XDispatchProvider],
-    getSlaveDispatchProvider: js.Function0[XDispatchProvider],
-    queryDispatch: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
-      java.lang.String, 
-      scala.Double, 
-      XDispatch
-    ],
-    queryDispatches: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DispatchDescriptor], 
-      activexDashInteropLib.SafeArray[XDispatch]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setMasterDispatchProvider: js.Function1[XDispatchProvider, scala.Unit],
-    setSlaveDispatchProvider: js.Function1[XDispatchProvider, scala.Unit]
+    acquire: () => scala.Unit,
+    getMasterDispatchProvider: () => XDispatchProvider,
+    getSlaveDispatchProvider: () => XDispatchProvider,
+    queryDispatch: (activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, java.lang.String, scala.Double) => XDispatch,
+    queryDispatches: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DispatchDescriptor] => stdLib.SafeArray[XDispatch],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setMasterDispatchProvider: XDispatchProvider => scala.Unit,
+    setSlaveDispatchProvider: XDispatchProvider => scala.Unit
   ): XDispatchProviderInterceptor = {
-    val __obj = js.Dynamic.literal(MasterDispatchProvider = MasterDispatchProvider, SlaveDispatchProvider = SlaveDispatchProvider, acquire = acquire, getMasterDispatchProvider = getMasterDispatchProvider, getSlaveDispatchProvider = getSlaveDispatchProvider, queryDispatch = queryDispatch, queryDispatches = queryDispatches, queryInterface = queryInterface, release = release, setMasterDispatchProvider = setMasterDispatchProvider, setSlaveDispatchProvider = setSlaveDispatchProvider)
+    val __obj = js.Dynamic.literal(MasterDispatchProvider = MasterDispatchProvider, SlaveDispatchProvider = SlaveDispatchProvider, acquire = js.Any.fromFunction0(acquire), getMasterDispatchProvider = js.Any.fromFunction0(getMasterDispatchProvider), getSlaveDispatchProvider = js.Any.fromFunction0(getSlaveDispatchProvider), queryDispatch = js.Any.fromFunction3(queryDispatch), queryDispatches = js.Any.fromFunction1(queryDispatches), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setMasterDispatchProvider = js.Any.fromFunction1(setMasterDispatchProvider), setSlaveDispatchProvider = js.Any.fromFunction1(setSlaveDispatchProvider))
   
     __obj.asInstanceOf[XDispatchProviderInterceptor]
   }

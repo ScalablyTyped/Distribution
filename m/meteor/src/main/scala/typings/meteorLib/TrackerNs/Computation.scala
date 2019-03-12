@@ -19,14 +19,14 @@ object Computation {
   @scala.inline
   def apply(
     firstRun: scala.Boolean,
-    invalidate: js.Function0[scala.Unit],
+    invalidate: () => scala.Unit,
     invalidated: scala.Boolean,
-    onInvalidate: js.Function1[js.Function, scala.Unit],
-    onStop: js.Function1[js.Function, scala.Unit],
-    stop: js.Function0[scala.Unit],
+    onInvalidate: js.Function => scala.Unit,
+    onStop: js.Function => scala.Unit,
+    stop: () => scala.Unit,
     stopped: scala.Boolean
   ): Computation = {
-    val __obj = js.Dynamic.literal(firstRun = firstRun, invalidate = invalidate, invalidated = invalidated, onInvalidate = onInvalidate, onStop = onStop, stop = stop, stopped = stopped)
+    val __obj = js.Dynamic.literal(firstRun = firstRun, invalidate = js.Any.fromFunction0(invalidate), invalidated = invalidated, onInvalidate = js.Any.fromFunction1(onInvalidate), onStop = js.Any.fromFunction1(onStop), stop = js.Any.fromFunction0(stop), stopped = stopped)
   
     __obj.asInstanceOf[Computation]
   }

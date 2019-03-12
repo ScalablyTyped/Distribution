@@ -10,6 +10,7 @@
 //                 Sean Kelley <https://github.com/seansfkelley>
 //                 Justin Grant <https://github.com/justingrant>
 //                 Jake Boone <https://github.com/jakeboone02>
+//                 Roman Nuritdinov <https://github.com/Ky6uk>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

@@ -29,28 +29,28 @@ trait Object extends Node {
 object Object {
   @scala.inline
   def apply(
-    clone: js.Function0[Node],
-    coerce: js.Function1[Node, Node],
+    clone: () => Node,
+    coerce: Node => Node,
     column: scala.Double,
-    eval: js.Function0[Node],
+    eval: () => Node,
     filename: java.lang.String,
     first: Node,
-    get: js.Function1[java.lang.String, Node],
-    has: js.Function1[java.lang.String, scala.Boolean],
+    get: java.lang.String => Node,
+    has: java.lang.String => scala.Boolean,
     hash: java.lang.String,
     length: scala.Double,
     lineno: scala.Double,
     nodeName: java.lang.String,
-    operate: js.Function2[java.lang.String, Node, Node],
-    set: js.Function2[java.lang.String, Node, Object],
-    shouldCoerce: js.Function1[java.lang.String, scala.Boolean],
-    toBlock: js.Function0[java.lang.String],
-    toBoolean: js.Function0[Boolean],
-    toExpression: js.Function0[Expression],
-    toJSON: js.Function0[stylusLib.Anon_ColumnFilenameLinenoTypeVals],
+    operate: (java.lang.String, Node) => Node,
+    set: (java.lang.String, Node) => Object,
+    shouldCoerce: java.lang.String => scala.Boolean,
+    toBlock: () => java.lang.String,
+    toBoolean: () => Boolean,
+    toExpression: () => Expression,
+    toJSON: () => stylusLib.Anon_ColumnFilenameLinenoTypeVals,
     vals: stylusLib.stylusMod.StylusNs.Dictionary[Node]
   ): Object = {
-    val __obj = js.Dynamic.literal(clone = clone, coerce = coerce, column = column, eval = eval, filename = filename, first = first, get = get, has = has, hash = hash, length = length, lineno = lineno, nodeName = nodeName, operate = operate, set = set, shouldCoerce = shouldCoerce, toBlock = toBlock, toBoolean = toBoolean, toExpression = toExpression, toJSON = toJSON, vals = vals)
+    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), coerce = js.Any.fromFunction1(coerce), column = column, eval = js.Any.fromFunction0(eval), filename = filename, first = first, get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), hash = hash, length = length, lineno = lineno, nodeName = nodeName, operate = js.Any.fromFunction2(operate), set = js.Any.fromFunction2(set), shouldCoerce = js.Any.fromFunction1(shouldCoerce), toBlock = js.Any.fromFunction0(toBlock), toBoolean = js.Any.fromFunction0(toBoolean), toExpression = js.Any.fromFunction0(toExpression), toJSON = js.Any.fromFunction0(toJSON), vals = vals)
   
     __obj.asInstanceOf[Object]
   }

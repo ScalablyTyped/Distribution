@@ -41,13 +41,13 @@ trait FieldOptions extends js.Object {
 object FieldOptions {
   @scala.inline
   def apply(
-    addValidator: js.Function1[BaseValidator, scala.Unit],
-    getFriendlyName: js.Function0[java.lang.String],
-    getValidators: js.Function0[js.Array[BaseValidator]],
-    setFriendlyName: js.Function1[java.lang.String, scala.Unit],
-    validateValue: js.Function2[js.Any, js.Any, js.Array[java.lang.String]]
+    addValidator: BaseValidator => scala.Unit,
+    getFriendlyName: () => java.lang.String,
+    getValidators: () => js.Array[BaseValidator],
+    setFriendlyName: java.lang.String => scala.Unit,
+    validateValue: (js.Any, js.Any) => js.Array[java.lang.String]
   ): FieldOptions = {
-    val __obj = js.Dynamic.literal(addValidator = addValidator, getFriendlyName = getFriendlyName, getValidators = getValidators, setFriendlyName = setFriendlyName, validateValue = validateValue)
+    val __obj = js.Dynamic.literal(addValidator = js.Any.fromFunction1(addValidator), getFriendlyName = js.Any.fromFunction0(getFriendlyName), getValidators = js.Any.fromFunction0(getValidators), setFriendlyName = js.Any.fromFunction1(setFriendlyName), validateValue = js.Any.fromFunction2(validateValue))
   
     __obj.asInstanceOf[FieldOptions]
   }

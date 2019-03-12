@@ -22,8 +22,8 @@ trait ChangeTableCellPreferredWidthCommand extends CommandBase {
 
 object ChangeTableCellPreferredWidthCommand {
   @scala.inline
-  def apply(execute: js.Function1[TableWidthUnit, scala.Boolean], getState: js.Function0[js.Any]): ChangeTableCellPreferredWidthCommand = {
-    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  def apply(execute: TableWidthUnit => scala.Boolean, getState: () => js.Any): ChangeTableCellPreferredWidthCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
   
     __obj.asInstanceOf[ChangeTableCellPreferredWidthCommand]
   }

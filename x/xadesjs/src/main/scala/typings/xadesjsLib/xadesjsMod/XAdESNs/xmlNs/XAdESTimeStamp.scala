@@ -11,7 +11,7 @@ trait XAdESTimeStamp
   var CanonicalizationMethod: xmldsigjsLib.xmldsigjsMod.CanonicalizationMethod = js.native
   var EncapsulatedTimeStamp: EncapsulatedTimeStampCollection = js.native
   var Id: java.lang.String = js.native
-  var Include: Include = js.native
+  var Include: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.Include = js.native
   var XMLTimeStamp: XMLTimeStampCollection = js.native
 }
 

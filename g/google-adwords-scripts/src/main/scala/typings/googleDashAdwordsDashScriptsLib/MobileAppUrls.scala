@@ -17,18 +17,18 @@ trait MobileAppUrls
 object MobileAppUrls {
   @scala.inline
   def apply(
-    clearMobileFinalUrl: js.Function0[scala.Unit],
-    clearTrackingTemplate: js.Function0[scala.Unit],
-    getCustomParameters: js.Function0[js.Object],
-    getFinalUrl: js.Function0[java.lang.String],
-    getMobileFinalUrl: js.Function0[java.lang.String],
-    getTrackingTemplate: js.Function0[java.lang.String],
-    setCustomParameters: js.Function1[js.Object, scala.Unit],
-    setFinalUrl: js.Function1[java.lang.String, scala.Unit],
-    setMobileFinalUrl: js.Function1[java.lang.String, scala.Unit],
-    setTrackingTemplate: js.Function1[java.lang.String, scala.Unit]
+    clearMobileFinalUrl: () => scala.Unit,
+    clearTrackingTemplate: () => scala.Unit,
+    getCustomParameters: () => js.Object,
+    getFinalUrl: () => java.lang.String,
+    getMobileFinalUrl: () => java.lang.String,
+    getTrackingTemplate: () => java.lang.String,
+    setCustomParameters: js.Object => scala.Unit,
+    setFinalUrl: java.lang.String => scala.Unit,
+    setMobileFinalUrl: java.lang.String => scala.Unit,
+    setTrackingTemplate: java.lang.String => scala.Unit
   ): MobileAppUrls = {
-    val __obj = js.Dynamic.literal(clearMobileFinalUrl = clearMobileFinalUrl, clearTrackingTemplate = clearTrackingTemplate, getCustomParameters = getCustomParameters, getFinalUrl = getFinalUrl, getMobileFinalUrl = getMobileFinalUrl, getTrackingTemplate = getTrackingTemplate, setCustomParameters = setCustomParameters, setFinalUrl = setFinalUrl, setMobileFinalUrl = setMobileFinalUrl, setTrackingTemplate = setTrackingTemplate)
+    val __obj = js.Dynamic.literal(clearMobileFinalUrl = js.Any.fromFunction0(clearMobileFinalUrl), clearTrackingTemplate = js.Any.fromFunction0(clearTrackingTemplate), getCustomParameters = js.Any.fromFunction0(getCustomParameters), getFinalUrl = js.Any.fromFunction0(getFinalUrl), getMobileFinalUrl = js.Any.fromFunction0(getMobileFinalUrl), getTrackingTemplate = js.Any.fromFunction0(getTrackingTemplate), setCustomParameters = js.Any.fromFunction1(setCustomParameters), setFinalUrl = js.Any.fromFunction1(setFinalUrl), setMobileFinalUrl = js.Any.fromFunction1(setMobileFinalUrl), setTrackingTemplate = js.Any.fromFunction1(setTrackingTemplate))
   
     __obj.asInstanceOf[MobileAppUrls]
   }

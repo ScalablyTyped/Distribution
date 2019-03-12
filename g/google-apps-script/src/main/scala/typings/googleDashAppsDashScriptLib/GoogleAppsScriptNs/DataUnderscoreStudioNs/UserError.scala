@@ -15,12 +15,12 @@ trait UserError extends js.Object {
 object UserError {
   @scala.inline
   def apply(
-    printJson: js.Function0[java.lang.String],
-    setDebugText: js.Function1[java.lang.String, UserError],
-    setText: js.Function1[java.lang.String, UserError],
-    throwException: js.Function0[scala.Unit]
+    printJson: () => java.lang.String,
+    setDebugText: java.lang.String => UserError,
+    setText: java.lang.String => UserError,
+    throwException: () => scala.Unit
   ): UserError = {
-    val __obj = js.Dynamic.literal(printJson = printJson, setDebugText = setDebugText, setText = setText, throwException = throwException)
+    val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson), setDebugText = js.Any.fromFunction1(setDebugText), setText = js.Any.fromFunction1(setText), throwException = js.Any.fromFunction0(throwException))
   
     __obj.asInstanceOf[UserError]
   }

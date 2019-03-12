@@ -13,12 +13,9 @@ trait ResourceRecordSetsResource extends js.Object {
 object ResourceRecordSetsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotDnsLib.Anon_AltFieldsKeyManagedZone, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ResourceRecordSetsListResponse]
-    ]
+    list: gapiDotClientDotDnsLib.Anon_AltFieldsKeyManagedZone => gapiDotClientLib.gapiNs.clientNs.Request[ResourceRecordSetsListResponse]
   ): ResourceRecordSetsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ResourceRecordSetsResource]
   }

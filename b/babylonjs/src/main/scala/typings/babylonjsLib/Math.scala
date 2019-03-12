@@ -12,11 +12,8 @@ trait Math extends js.Object {
 
 object Math {
   @scala.inline
-  def apply(
-    fround: js.Function1[scala.Double, scala.Double],
-    imul: js.Function2[scala.Double, scala.Double, scala.Double]
-  ): Math = {
-    val __obj = js.Dynamic.literal(fround = fround, imul = imul)
+  def apply(fround: scala.Double => scala.Double, imul: (scala.Double, scala.Double) => scala.Double): Math = {
+    val __obj = js.Dynamic.literal(fround = js.Any.fromFunction1(fround), imul = js.Any.fromFunction2(imul))
   
     __obj.asInstanceOf[Math]
   }

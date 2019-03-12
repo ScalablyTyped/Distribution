@@ -19,15 +19,10 @@ object LintOptions {
     async: scala.Boolean,
     getAnnotations: Linter | AsyncLinter,
     hasGutters: scala.Boolean,
-    onUpdateLinting: js.Function3[
-      /* annotationsNotSorted */ js.Array[Annotation], 
-      /* annotations */ js.Array[Annotation], 
-      /* codeMirror */ Editor, 
-      scala.Unit
-    ] = null
+    onUpdateLinting: (/* annotationsNotSorted */ js.Array[Annotation], /* annotations */ js.Array[Annotation], /* codeMirror */ Editor) => scala.Unit = null
   ): LintOptions = {
     val __obj = js.Dynamic.literal(async = async, getAnnotations = getAnnotations.asInstanceOf[js.Any], hasGutters = hasGutters)
-    if (onUpdateLinting != null) __obj.updateDynamic("onUpdateLinting")(onUpdateLinting)
+    if (onUpdateLinting != null) __obj.updateDynamic("onUpdateLinting")(js.Any.fromFunction3(onUpdateLinting))
     __obj.asInstanceOf[LintOptions]
   }
 }

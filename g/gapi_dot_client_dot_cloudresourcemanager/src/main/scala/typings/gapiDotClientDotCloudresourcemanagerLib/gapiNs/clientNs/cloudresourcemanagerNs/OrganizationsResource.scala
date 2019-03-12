@@ -78,52 +78,19 @@ trait OrganizationsResource extends js.Object {
 object OrganizationsResource {
   @scala.inline
   def apply(
-    clearOrgPolicy: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Organization]
-    ],
-    getEffectiveOrgPolicy: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
-    ],
-    getIamPolicy: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    getOrgPolicy: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
-    ],
-    listAvailableOrgPolicyConstraints: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListAvailableOrgPolicyConstraintsResponse]
-    ],
-    listOrgPolicies: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListOrgPoliciesResponse]
-    ],
-    search: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SearchOrganizationsResponse]
-    ],
-    setIamPolicy: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    setOrgPolicy: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
-    ],
-    testIamPermissions: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
-    ]
+    clearOrgPolicy: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[Organization],
+    getEffectiveOrgPolicy: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy],
+    getIamPolicy: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    getOrgPolicy: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy],
+    listAvailableOrgPolicyConstraints: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[ListAvailableOrgPolicyConstraintsResponse],
+    listOrgPolicies: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[ListOrgPoliciesResponse],
+    search: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[SearchOrganizationsResponse],
+    setIamPolicy: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    setOrgPolicy: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy],
+    testIamPermissions: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
   ): OrganizationsResource = {
-    val __obj = js.Dynamic.literal(clearOrgPolicy = clearOrgPolicy, get = get, getEffectiveOrgPolicy = getEffectiveOrgPolicy, getIamPolicy = getIamPolicy, getOrgPolicy = getOrgPolicy, listAvailableOrgPolicyConstraints = listAvailableOrgPolicyConstraints, listOrgPolicies = listOrgPolicies, search = search, setIamPolicy = setIamPolicy, setOrgPolicy = setOrgPolicy, testIamPermissions = testIamPermissions)
+    val __obj = js.Dynamic.literal(clearOrgPolicy = js.Any.fromFunction1(clearOrgPolicy), get = js.Any.fromFunction1(get), getEffectiveOrgPolicy = js.Any.fromFunction1(getEffectiveOrgPolicy), getIamPolicy = js.Any.fromFunction1(getIamPolicy), getOrgPolicy = js.Any.fromFunction1(getOrgPolicy), listAvailableOrgPolicyConstraints = js.Any.fromFunction1(listAvailableOrgPolicyConstraints), listOrgPolicies = js.Any.fromFunction1(listOrgPolicies), search = js.Any.fromFunction1(search), setIamPolicy = js.Any.fromFunction1(setIamPolicy), setOrgPolicy = js.Any.fromFunction1(setOrgPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions))
   
     __obj.asInstanceOf[OrganizationsResource]
   }

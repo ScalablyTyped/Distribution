@@ -130,7 +130,7 @@ trait Board
     data: js.Array[scala.Double],
     numBytesToRead: scala.Double,
     callback: js.Function2[
-      /* error */ js.UndefOr[nodeLib.Error], 
+      /* error */ js.UndefOr[stdLib.Error], 
       /* data */ js.UndefOr[scala.Double], 
       scala.Unit
     ]
@@ -142,7 +142,7 @@ trait Board
     data: scala.Double,
     numBytesToRead: scala.Double,
     callback: js.Function2[
-      /* error */ js.UndefOr[nodeLib.Error], 
+      /* error */ js.UndefOr[stdLib.Error], 
       /* data */ js.UndefOr[scala.Double], 
       scala.Unit
     ]

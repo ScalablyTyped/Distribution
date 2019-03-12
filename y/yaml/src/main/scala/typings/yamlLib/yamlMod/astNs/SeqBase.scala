@@ -17,7 +17,7 @@ object SeqBase {
   @scala.inline
   def apply(
     items: js.Array[AstNode | Pair | scala.Null],
-    toJSON: js.Function0[js.Any],
+    toJSON: () => js.Any,
     comment: java.lang.String = null,
     commentBefore: java.lang.String = null,
     cstNode: yamlLib.yamlMod.cstNs.Node = null,
@@ -25,7 +25,7 @@ object SeqBase {
     tag: java.lang.String = null,
     `type`: yamlLib.yamlLibStrings.FLOW_SEQ | yamlLib.yamlLibStrings.SEQ = null
   ): SeqBase = {
-    val __obj = js.Dynamic.literal(items = items, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(items = items, toJSON = js.Any.fromFunction0(toJSON))
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore)
     if (cstNode != null) __obj.updateDynamic("cstNode")(cstNode)

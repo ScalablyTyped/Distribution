@@ -292,7 +292,7 @@ object ProgressMeterTextProps {
   @scala.inline
   def apply(
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLParagraphElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLParagraphElement] = null,
     children: java.lang.String = null
   ): ProgressMeterTextProps = {
     val __obj = js.Dynamic.literal()

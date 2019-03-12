@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.Parameter")
 @js.native
 class Parameter protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Creator: XlCreator = js.native
   var DataType: XlParameterDataType = js.native
   var `Excel.Parameter_typekey`: Parameter = js.native

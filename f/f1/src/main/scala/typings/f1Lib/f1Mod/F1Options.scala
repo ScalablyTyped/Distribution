@@ -23,12 +23,12 @@ object F1Options {
     states: js.Any,
     targets: js.Any,
     transitions: js.Array[_],
-    onState: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    onUpdate: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+    onState: /* repeated */ js.Any => scala.Unit = null,
+    onUpdate: /* repeated */ js.Any => scala.Unit = null
   ): F1Options = {
     val __obj = js.Dynamic.literal(name = name, parsers = parsers, states = states, targets = targets, transitions = transitions)
-    if (onState != null) __obj.updateDynamic("onState")(onState)
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (onState != null) __obj.updateDynamic("onState")(js.Any.fromFunction1(onState))
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
     __obj.asInstanceOf[F1Options]
   }
 }

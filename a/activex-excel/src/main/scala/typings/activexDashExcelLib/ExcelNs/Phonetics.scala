@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Phonetics extends js.Object {
   var Alignment: scala.Double = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var CharacterType: scala.Double = js.native
   val Count: scala.Double = js.native
   val Creator: XlCreator = js.native
-  val Font: Font = js.native
+  val Font: activexDashExcelLib.ExcelNs.Font = js.native
   val Length: scala.Double = js.native
   val Parent: js.Any = js.native
   val Start: scala.Double = js.native

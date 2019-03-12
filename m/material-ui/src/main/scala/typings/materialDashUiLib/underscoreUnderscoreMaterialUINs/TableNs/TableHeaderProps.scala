@@ -24,7 +24,7 @@ object TableHeaderProps {
     className: java.lang.String = null,
     displaySelectAll: js.UndefOr[scala.Boolean] = js.undefined,
     enableSelectAll: js.UndefOr[scala.Boolean] = js.undefined,
-    onSelectAll: js.Function1[/* checked */ scala.Boolean, scala.Unit] = null,
+    onSelectAll: /* checked */ scala.Boolean => scala.Unit = null,
     selectAllSelected: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): TableHeaderProps = {
@@ -33,7 +33,7 @@ object TableHeaderProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(displaySelectAll)) __obj.updateDynamic("displaySelectAll")(displaySelectAll)
     if (!js.isUndefined(enableSelectAll)) __obj.updateDynamic("enableSelectAll")(enableSelectAll)
-    if (onSelectAll != null) __obj.updateDynamic("onSelectAll")(onSelectAll)
+    if (onSelectAll != null) __obj.updateDynamic("onSelectAll")(js.Any.fromFunction1(onSelectAll))
     if (!js.isUndefined(selectAllSelected)) __obj.updateDynamic("selectAllSelected")(selectAllSelected)
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[TableHeaderProps]

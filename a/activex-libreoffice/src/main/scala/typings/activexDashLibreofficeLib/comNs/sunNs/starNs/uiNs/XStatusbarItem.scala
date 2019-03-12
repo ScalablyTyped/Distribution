@@ -66,9 +66,9 @@ object XStatusbarItem {
     Text: java.lang.String,
     Visible: scala.Boolean,
     Width: scala.Double,
-    repaint: js.Function0[scala.Unit]
+    repaint: () => scala.Unit
   ): XStatusbarItem = {
-    val __obj = js.Dynamic.literal(AccessibleName = AccessibleName, Command = Command, HelpText = HelpText, ItemId = ItemId, ItemRect = ItemRect, Offset = Offset, QuickHelpText = QuickHelpText, Style = Style, Text = Text, Visible = Visible, Width = Width, repaint = repaint)
+    val __obj = js.Dynamic.literal(AccessibleName = AccessibleName, Command = Command, HelpText = HelpText, ItemId = ItemId, ItemRect = ItemRect, Offset = Offset, QuickHelpText = QuickHelpText, Style = Style, Text = Text, Visible = Visible, Width = Width, repaint = js.Any.fromFunction0(repaint))
   
     __obj.asInstanceOf[XStatusbarItem]
   }

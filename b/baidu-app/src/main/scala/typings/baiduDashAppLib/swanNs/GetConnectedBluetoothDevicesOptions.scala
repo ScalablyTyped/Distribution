@@ -16,13 +16,13 @@ object GetConnectedBluetoothDevicesOptions {
   @scala.inline
   def apply(
     services: js.Array[java.lang.String],
-    success: js.Function1[baiduDashAppLib.Anon_Devices with ErrMsgResponse, scala.Unit],
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
-    fail: js.Function1[js.Any, scala.Unit] = null
+    success: baiduDashAppLib.Anon_Devices with ErrMsgResponse => scala.Unit,
+    complete: /* res */ js.Any => scala.Unit = null,
+    fail: js.Any => scala.Unit = null
   ): GetConnectedBluetoothDevicesOptions = {
-    val __obj = js.Dynamic.literal(services = services, success = success)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    val __obj = js.Dynamic.literal(services = services, success = js.Any.fromFunction1(success))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[GetConnectedBluetoothDevicesOptions]
   }
 }

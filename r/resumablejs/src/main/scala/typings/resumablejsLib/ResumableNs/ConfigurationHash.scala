@@ -167,21 +167,21 @@ object ConfigurationHash {
     fileNameParameterName: java.lang.String = null,
     fileParameterName: java.lang.String = null,
     fileType: js.Array[java.lang.String] = null,
-    fileTypeErrorCallback: js.Function2[/* file */ ResumableFile, /* errorCount */ scala.Double, scala.Unit] = null,
+    fileTypeErrorCallback: (/* file */ ResumableFile, /* errorCount */ scala.Double) => scala.Unit = null,
     forceChunkSize: js.UndefOr[scala.Boolean] = js.undefined,
-    generateUniqueIdentifier: js.Function0[java.lang.String] = null,
+    generateUniqueIdentifier: () => java.lang.String = null,
     headers: js.Object | (js.Function1[/* file */ ResumableFile, js.Object]) = null,
     identifierParameterName: java.lang.String = null,
     maxChunkRetries: scala.Int | scala.Double = null,
     maxFileSize: js.UndefOr[scala.Boolean] = js.undefined,
-    maxFileSizeErrorCallback: js.Function2[/* file */ ResumableFile, /* errorCount */ scala.Double, scala.Unit] = null,
+    maxFileSizeErrorCallback: (/* file */ ResumableFile, /* errorCount */ scala.Double) => scala.Unit = null,
     maxFiles: scala.Int | scala.Double = null,
-    maxFilesErrorCallback: js.Function2[/* files */ ResumableFile, /* errorCount */ scala.Double, scala.Unit] = null,
+    maxFilesErrorCallback: (/* files */ ResumableFile, /* errorCount */ scala.Double) => scala.Unit = null,
     method: java.lang.String = null,
     minFileSize: js.UndefOr[scala.Boolean] = js.undefined,
-    minFileSizeErrorCallback: js.Function2[/* file */ ResumableFile, /* errorCount */ scala.Double, scala.Unit] = null,
+    minFileSizeErrorCallback: (/* file */ ResumableFile, /* errorCount */ scala.Double) => scala.Unit = null,
     parameterNamespace: java.lang.String = null,
-    preprocess: js.Function1[/* chunk */ ResumableChunk, ResumableChunk] = null,
+    preprocess: /* chunk */ ResumableChunk => ResumableChunk = null,
     prioritizeFirstAndLastChunk: js.UndefOr[scala.Boolean] = js.undefined,
     query: js.Object = null,
     relativePathParameterName: java.lang.String = null,
@@ -204,21 +204,21 @@ object ConfigurationHash {
     if (fileNameParameterName != null) __obj.updateDynamic("fileNameParameterName")(fileNameParameterName)
     if (fileParameterName != null) __obj.updateDynamic("fileParameterName")(fileParameterName)
     if (fileType != null) __obj.updateDynamic("fileType")(fileType)
-    if (fileTypeErrorCallback != null) __obj.updateDynamic("fileTypeErrorCallback")(fileTypeErrorCallback)
+    if (fileTypeErrorCallback != null) __obj.updateDynamic("fileTypeErrorCallback")(js.Any.fromFunction2(fileTypeErrorCallback))
     if (!js.isUndefined(forceChunkSize)) __obj.updateDynamic("forceChunkSize")(forceChunkSize)
-    if (generateUniqueIdentifier != null) __obj.updateDynamic("generateUniqueIdentifier")(generateUniqueIdentifier)
+    if (generateUniqueIdentifier != null) __obj.updateDynamic("generateUniqueIdentifier")(js.Any.fromFunction0(generateUniqueIdentifier))
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (identifierParameterName != null) __obj.updateDynamic("identifierParameterName")(identifierParameterName)
     if (maxChunkRetries != null) __obj.updateDynamic("maxChunkRetries")(maxChunkRetries.asInstanceOf[js.Any])
     if (!js.isUndefined(maxFileSize)) __obj.updateDynamic("maxFileSize")(maxFileSize)
-    if (maxFileSizeErrorCallback != null) __obj.updateDynamic("maxFileSizeErrorCallback")(maxFileSizeErrorCallback)
+    if (maxFileSizeErrorCallback != null) __obj.updateDynamic("maxFileSizeErrorCallback")(js.Any.fromFunction2(maxFileSizeErrorCallback))
     if (maxFiles != null) __obj.updateDynamic("maxFiles")(maxFiles.asInstanceOf[js.Any])
-    if (maxFilesErrorCallback != null) __obj.updateDynamic("maxFilesErrorCallback")(maxFilesErrorCallback)
+    if (maxFilesErrorCallback != null) __obj.updateDynamic("maxFilesErrorCallback")(js.Any.fromFunction2(maxFilesErrorCallback))
     if (method != null) __obj.updateDynamic("method")(method)
     if (!js.isUndefined(minFileSize)) __obj.updateDynamic("minFileSize")(minFileSize)
-    if (minFileSizeErrorCallback != null) __obj.updateDynamic("minFileSizeErrorCallback")(minFileSizeErrorCallback)
+    if (minFileSizeErrorCallback != null) __obj.updateDynamic("minFileSizeErrorCallback")(js.Any.fromFunction2(minFileSizeErrorCallback))
     if (parameterNamespace != null) __obj.updateDynamic("parameterNamespace")(parameterNamespace)
-    if (preprocess != null) __obj.updateDynamic("preprocess")(preprocess)
+    if (preprocess != null) __obj.updateDynamic("preprocess")(js.Any.fromFunction1(preprocess))
     if (!js.isUndefined(prioritizeFirstAndLastChunk)) __obj.updateDynamic("prioritizeFirstAndLastChunk")(prioritizeFirstAndLastChunk)
     if (query != null) __obj.updateDynamic("query")(query)
     if (relativePathParameterName != null) __obj.updateDynamic("relativePathParameterName")(relativePathParameterName)

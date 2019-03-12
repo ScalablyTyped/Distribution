@@ -72,11 +72,11 @@ object ^ extends js.Object {
   def `final`(
     logger: pinoLib.pinoMod.PNs.Logger,
     handler: js.Function3[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* finalLogger */ pinoLib.pinoMod.PNs.Logger, 
       /* repeated */ js.Any, 
       scala.Unit
     ]
-  ): js.Function2[/* error */ nodeLib.Error | scala.Null, /* repeated */ js.Any, scala.Unit] = js.native
+  ): js.Function2[/* error */ stdLib.Error | scala.Null, /* repeated */ js.Any, scala.Unit] = js.native
 }
 

@@ -14,18 +14,10 @@ object FunctorWithIndex4 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS4 */, I](
     URI: F,
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any]
-    ],
-    mapWithIndex: js.Function2[
-      fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any], 
-      js.Function2[/* i */ I, js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any]
-    ]
+    map: (fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any],
+    mapWithIndex: (fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any], js.Function2[/* i */ I, js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any]
   ): FunctorWithIndex4[F, I] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], map = map, mapWithIndex = mapWithIndex)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], map = js.Any.fromFunction2(map), mapWithIndex = js.Any.fromFunction2(mapWithIndex))
   
     __obj.asInstanceOf[FunctorWithIndex4[F, I]]
   }

@@ -28,7 +28,7 @@ class Cookies () extends EventEmitter {
     */
   def get(
     filter: Filter,
-    callback: js.Function2[/* error */ nodeLib.Error, /* cookies */ js.Array[Cookie], scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* cookies */ js.Array[Cookie], scala.Unit]
   ): scala.Unit = js.native
   // Docs: http://electronjs.org/docs/api/cookies
   /**
@@ -74,6 +74,6 @@ class Cookies () extends EventEmitter {
     * Sets a cookie with details, callback will be called with callback(error) on
     * complete.
     */
-  def set(details: Details, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def set(details: Details, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
 }
 

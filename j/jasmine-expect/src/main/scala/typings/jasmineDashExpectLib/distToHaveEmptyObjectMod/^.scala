@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jasmine-expect/dist/toHaveEmptyObject", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val toHaveEmptyObject: jasmineDashExpectLib.distToHaveEmptyObjectMod.ToHaveEmptyObject = js.native
+  val toHaveEmptyObject: ToHaveEmptyObject = js.native
 }
 

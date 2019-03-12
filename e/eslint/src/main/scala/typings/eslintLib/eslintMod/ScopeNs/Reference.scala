@@ -24,15 +24,15 @@ object Reference {
     from: Scope,
     identifier: estreeLib.estreeMod.Identifier,
     init: scala.Boolean,
-    isRead: js.Function0[scala.Boolean],
-    isReadOnly: js.Function0[scala.Boolean],
-    isReadWrite: js.Function0[scala.Boolean],
-    isWrite: js.Function0[scala.Boolean],
-    isWriteOnly: js.Function0[scala.Boolean],
+    isRead: () => scala.Boolean,
+    isReadOnly: () => scala.Boolean,
+    isReadWrite: () => scala.Boolean,
+    isWrite: () => scala.Boolean,
+    isWriteOnly: () => scala.Boolean,
     resolved: Variable = null,
     writeExpr: estreeLib.estreeMod.Node = null
   ): Reference = {
-    val __obj = js.Dynamic.literal(from = from, identifier = identifier, init = init, isRead = isRead, isReadOnly = isReadOnly, isReadWrite = isReadWrite, isWrite = isWrite, isWriteOnly = isWriteOnly)
+    val __obj = js.Dynamic.literal(from = from, identifier = identifier, init = init, isRead = js.Any.fromFunction0(isRead), isReadOnly = js.Any.fromFunction0(isReadOnly), isReadWrite = js.Any.fromFunction0(isReadWrite), isWrite = js.Any.fromFunction0(isWrite), isWriteOnly = js.Any.fromFunction0(isWriteOnly))
     if (resolved != null) __obj.updateDynamic("resolved")(resolved)
     if (writeExpr != null) __obj.updateDynamic("writeExpr")(writeExpr.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]

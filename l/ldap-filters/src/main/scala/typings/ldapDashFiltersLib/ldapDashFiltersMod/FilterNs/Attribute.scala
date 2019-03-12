@@ -23,20 +23,20 @@ trait Attribute extends js.Object {
 object Attribute {
   @scala.inline
   def apply(
-    approx: js.Function1[java.lang.String, ldapDashFiltersLib.ldapDashFiltersMod.Filter],
-    contains: js.Function1[java.lang.String, ldapDashFiltersLib.ldapDashFiltersMod.Filter],
-    endsWith: js.Function1[java.lang.String, ldapDashFiltersLib.ldapDashFiltersMod.Filter],
-    equalTo: js.Function1[java.lang.String, ldapDashFiltersLib.ldapDashFiltersMod.Filter],
-    escape: js.Function1[java.lang.String, java.lang.String],
+    approx: java.lang.String => ldapDashFiltersLib.ldapDashFiltersMod.Filter,
+    contains: java.lang.String => ldapDashFiltersLib.ldapDashFiltersMod.Filter,
+    endsWith: java.lang.String => ldapDashFiltersLib.ldapDashFiltersMod.Filter,
+    equalTo: java.lang.String => ldapDashFiltersLib.ldapDashFiltersMod.Filter,
+    escape: java.lang.String => java.lang.String,
     escapeChars: js.Array[java.lang.String],
-    gte: js.Function1[java.lang.String, ldapDashFiltersLib.ldapDashFiltersMod.Filter],
-    lte: js.Function1[java.lang.String, ldapDashFiltersLib.ldapDashFiltersMod.Filter],
+    gte: java.lang.String => ldapDashFiltersLib.ldapDashFiltersMod.Filter,
+    lte: java.lang.String => ldapDashFiltersLib.ldapDashFiltersMod.Filter,
     name: java.lang.String,
-    present: js.Function0[ldapDashFiltersLib.ldapDashFiltersMod.Filter],
-    raw: js.Function1[java.lang.String, ldapDashFiltersLib.ldapDashFiltersMod.Filter],
-    startsWith: js.Function1[java.lang.String, ldapDashFiltersLib.ldapDashFiltersMod.Filter]
+    present: () => ldapDashFiltersLib.ldapDashFiltersMod.Filter,
+    raw: java.lang.String => ldapDashFiltersLib.ldapDashFiltersMod.Filter,
+    startsWith: java.lang.String => ldapDashFiltersLib.ldapDashFiltersMod.Filter
   ): Attribute = {
-    val __obj = js.Dynamic.literal(approx = approx, contains = contains, endsWith = endsWith, equalTo = equalTo, escape = escape, escapeChars = escapeChars, gte = gte, lte = lte, name = name, present = present, raw = raw, startsWith = startsWith)
+    val __obj = js.Dynamic.literal(approx = js.Any.fromFunction1(approx), contains = js.Any.fromFunction1(contains), endsWith = js.Any.fromFunction1(endsWith), equalTo = js.Any.fromFunction1(equalTo), escape = js.Any.fromFunction1(escape), escapeChars = escapeChars, gte = js.Any.fromFunction1(gte), lte = js.Any.fromFunction1(lte), name = name, present = js.Any.fromFunction0(present), raw = js.Any.fromFunction1(raw), startsWith = js.Any.fromFunction1(startsWith))
   
     __obj.asInstanceOf[Attribute]
   }

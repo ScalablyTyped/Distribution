@@ -19,24 +19,12 @@ trait CustomersResource extends js.Object {
 object CustomersResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotResellerLib.Anon_AltCustomerId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Customer]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotResellerLib.Anon_AltCustomerAuthToken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Customer]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotResellerLib.Anon_AltCustomerId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Customer]
-    ],
-    update: js.Function1[
-      gapiDotClientDotResellerLib.Anon_AltCustomerId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Customer]
-    ]
+    get: gapiDotClientDotResellerLib.Anon_AltCustomerId => gapiDotClientLib.gapiNs.clientNs.Request[Customer],
+    insert: gapiDotClientDotResellerLib.Anon_AltCustomerAuthToken => gapiDotClientLib.gapiNs.clientNs.Request[Customer],
+    patch: gapiDotClientDotResellerLib.Anon_AltCustomerId => gapiDotClientLib.gapiNs.clientNs.Request[Customer],
+    update: gapiDotClientDotResellerLib.Anon_AltCustomerId => gapiDotClientLib.gapiNs.clientNs.Request[Customer]
   ): CustomersResource = {
-    val __obj = js.Dynamic.literal(get = get, insert = insert, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[CustomersResource]
   }

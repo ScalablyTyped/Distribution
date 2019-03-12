@@ -62,11 +62,11 @@ object CarouselOptions {
     indicators: scala.Boolean,
     noWrap: scala.Boolean,
     numVisible: scala.Double,
-    onCycleTo: js.Function3[Carousel, stdLib.Element, scala.Boolean, scala.Unit],
+    onCycleTo: (Carousel, stdLib.Element, scala.Boolean) => scala.Unit,
     padding: scala.Double,
     shift: scala.Double
   ): CarouselOptions = {
-    val __obj = js.Dynamic.literal(dist = dist, duration = duration, fullWidth = fullWidth, indicators = indicators, noWrap = noWrap, numVisible = numVisible, onCycleTo = onCycleTo, padding = padding, shift = shift)
+    val __obj = js.Dynamic.literal(dist = dist, duration = duration, fullWidth = fullWidth, indicators = indicators, noWrap = noWrap, numVisible = numVisible, onCycleTo = js.Any.fromFunction3(onCycleTo), padding = padding, shift = shift)
   
     __obj.asInstanceOf[CarouselOptions]
   }

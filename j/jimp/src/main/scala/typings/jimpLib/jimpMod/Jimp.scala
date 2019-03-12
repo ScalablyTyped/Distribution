@@ -100,13 +100,13 @@ org.scalablytyped.runtime.Instantiable1[
   // Properties
   var bitmap: Bitmap = js.native
   // Functions
-  def appendConstructorOption[T /* <: coreDashJsLib.Array[_] */](
+  def appendConstructorOption[T /* <: js.Array[_] */](
     name: java.lang.String,
     test: js.Function1[/* repeated */ T, scala.Boolean],
     run: js.ThisFunction3[
       /* this */ this.type, 
       /* resolve */ js.Function1[/* jimp */ this.type, _], 
-      /* reject */ js.Function1[/* reason */ nodeLib.Error, _], 
+      /* reject */ js.Function1[/* reason */ stdLib.Error, _], 
       /* repeated */ T, 
       _
     ]
@@ -154,14 +154,14 @@ org.scalablytyped.runtime.Instantiable1[
   def clone(cb: jimpLib.ImageCallback[_]): this.type = js.native
   def cloneQuiet(): this.type = js.native
   def cloneQuiet(cb: jimpLib.ImageCallback[_]): this.type = js.native
-  def color(actions: coreDashJsLib.Array[jimpLib.ColorAction]): this.type = js.native
-  def color(actions: coreDashJsLib.Array[jimpLib.ColorAction], cb: jimpLib.ImageCallback[_]): this.type = js.native
+  def color(actions: js.Array[jimpLib.ColorAction]): this.type = js.native
+  def color(actions: js.Array[jimpLib.ColorAction], cb: jimpLib.ImageCallback[_]): this.type = js.native
   def colorDiff(rgba1: RGBA, rgba2: RGBA): scala.Double = js.native
   def colorDiff(rgba1: RGB, rgba2: RGB): scala.Double = js.native
   def colorType(s: scala.Double): this.type = js.native
   def colorType(s: scala.Double, cb: jimpLib.ImageCallback[_]): this.type = js.native
-  def colour(actions: coreDashJsLib.Array[jimpLib.ColorAction]): this.type = js.native
-  def colour(actions: coreDashJsLib.Array[jimpLib.ColorAction], cb: jimpLib.ImageCallback[_]): this.type = js.native
+  def colour(actions: js.Array[jimpLib.ColorAction]): this.type = js.native
+  def colour(actions: js.Array[jimpLib.ColorAction], cb: jimpLib.ImageCallback[_]): this.type = js.native
   def compareHashes(hash1: java.lang.String, hash2: java.lang.String): scala.Double = js.native
   def composite(src: Jimp, x: scala.Double, y: scala.Double): this.type = js.native
   def composite(src: Jimp, x: scala.Double, y: scala.Double, options: jimpLib.BlendMode): this.type = js.native
@@ -188,28 +188,28 @@ org.scalablytyped.runtime.Instantiable1[
   def contain(w: scala.Double, h: scala.Double, mode: java.lang.String, cb: jimpLib.ImageCallback[_]): this.type = js.native
   def contrast(`val`: scala.Double): this.type = js.native
   def contrast(`val`: scala.Double, cb: jimpLib.ImageCallback[_]): this.type = js.native
-  def convolute(kernel: coreDashJsLib.Array[coreDashJsLib.Array[scala.Double]]): this.type = js.native
-  def convolute(kernel: coreDashJsLib.Array[coreDashJsLib.Array[scala.Double]], cb: jimpLib.ImageCallback[_]): this.type = js.native
+  def convolute(kernel: js.Array[js.Array[scala.Double]]): this.type = js.native
+  def convolute(kernel: js.Array[js.Array[scala.Double]], cb: jimpLib.ImageCallback[_]): this.type = js.native
   def convolute(
-    kernel: coreDashJsLib.Array[coreDashJsLib.Array[scala.Double]],
+    kernel: js.Array[js.Array[scala.Double]],
     x: scala.Double,
     y: scala.Double,
     w: scala.Double,
     h: scala.Double
   ): this.type = js.native
   def convolute(
-    kernel: coreDashJsLib.Array[coreDashJsLib.Array[scala.Double]],
+    kernel: js.Array[js.Array[scala.Double]],
     x: scala.Double,
     y: scala.Double,
     w: scala.Double,
     h: scala.Double,
     cb: jimpLib.ImageCallback[_]
   ): this.type = js.native
-  def convolution(kernel: coreDashJsLib.Array[coreDashJsLib.Array[scala.Double]]): this.type = js.native
-  def convolution(kernel: coreDashJsLib.Array[coreDashJsLib.Array[scala.Double]], cb: jimpLib.ImageCallback[_]): this.type = js.native
-  def convolution[T](kernel: coreDashJsLib.Array[coreDashJsLib.Array[scala.Double]], edgeHandling: java.lang.String): this.type = js.native
+  def convolution(kernel: js.Array[js.Array[scala.Double]]): this.type = js.native
+  def convolution(kernel: js.Array[js.Array[scala.Double]], cb: jimpLib.ImageCallback[_]): this.type = js.native
+  def convolution[T](kernel: js.Array[js.Array[scala.Double]], edgeHandling: java.lang.String): this.type = js.native
   def convolution[T](
-    kernel: coreDashJsLib.Array[coreDashJsLib.Array[scala.Double]],
+    kernel: js.Array[js.Array[scala.Double]],
     edgeHandling: java.lang.String,
     cb: jimpLib.ImageCallback[_]
   ): this.type = js.native

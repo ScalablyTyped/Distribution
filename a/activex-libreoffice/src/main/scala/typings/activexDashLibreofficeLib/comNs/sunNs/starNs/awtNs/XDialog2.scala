@@ -20,17 +20,17 @@ object XDialog2 {
   @scala.inline
   def apply(
     Title: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    endDialog: js.Function1[scala.Double, scala.Unit],
-    endExecute: js.Function0[scala.Unit],
-    execute: js.Function0[scala.Double],
-    getTitle: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setHelpId: js.Function1[java.lang.String, scala.Unit],
-    setTitle: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    endDialog: scala.Double => scala.Unit,
+    endExecute: () => scala.Unit,
+    execute: () => scala.Double,
+    getTitle: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setHelpId: java.lang.String => scala.Unit,
+    setTitle: java.lang.String => scala.Unit
   ): XDialog2 = {
-    val __obj = js.Dynamic.literal(Title = Title, acquire = acquire, endDialog = endDialog, endExecute = endExecute, execute = execute, getTitle = getTitle, queryInterface = queryInterface, release = release, setHelpId = setHelpId, setTitle = setTitle)
+    val __obj = js.Dynamic.literal(Title = Title, acquire = js.Any.fromFunction0(acquire), endDialog = js.Any.fromFunction1(endDialog), endExecute = js.Any.fromFunction0(endExecute), execute = js.Any.fromFunction0(execute), getTitle = js.Any.fromFunction0(getTitle), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setHelpId = js.Any.fromFunction1(setHelpId), setTitle = js.Any.fromFunction1(setTitle))
   
     __obj.asInstanceOf[XDialog2]
   }

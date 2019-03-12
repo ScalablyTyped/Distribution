@@ -27,36 +27,15 @@ trait DatafeedsResource extends js.Object {
 object DatafeedsResource {
   @scala.inline
   def apply(
-    custombatch: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltDryRun, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DatafeedsCustomBatchResponse]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltDatafeedId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltDatafeedIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Datafeed]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltDryRunFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Datafeed]
-    ],
-    list: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DatafeedsListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltDatafeedId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Datafeed]
-    ],
-    update: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltDatafeedId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Datafeed]
-    ]
+    custombatch: gapiDotClientDotContentLib.Anon_AltDryRun => gapiDotClientLib.gapiNs.clientNs.Request[DatafeedsCustomBatchResponse],
+    delete: gapiDotClientDotContentLib.Anon_AltDatafeedId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotContentLib.Anon_AltDatafeedIdFields => gapiDotClientLib.gapiNs.clientNs.Request[Datafeed],
+    insert: gapiDotClientDotContentLib.Anon_AltDryRunFields => gapiDotClientLib.gapiNs.clientNs.Request[Datafeed],
+    list: gapiDotClientDotContentLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[DatafeedsListResponse],
+    patch: gapiDotClientDotContentLib.Anon_AltDatafeedId => gapiDotClientLib.gapiNs.clientNs.Request[Datafeed],
+    update: gapiDotClientDotContentLib.Anon_AltDatafeedId => gapiDotClientLib.gapiNs.clientNs.Request[Datafeed]
   ): DatafeedsResource = {
-    val __obj = js.Dynamic.literal(custombatch = custombatch, delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(custombatch = js.Any.fromFunction1(custombatch), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[DatafeedsResource]
   }

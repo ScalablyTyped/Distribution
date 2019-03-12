@@ -14,13 +14,8 @@ trait Spinner extends js.Object {
 
 object Spinner {
   @scala.inline
-  def apply(
-    int: java.lang.String,
-    start: js.Function0[scala.Unit],
-    started: scala.Boolean,
-    stop: js.Function0[scala.Unit]
-  ): Spinner = {
-    val __obj = js.Dynamic.literal(int = int, start = start, started = started, stop = stop)
+  def apply(int: java.lang.String, start: () => scala.Unit, started: scala.Boolean, stop: () => scala.Unit): Spinner = {
+    val __obj = js.Dynamic.literal(int = int, start = js.Any.fromFunction0(start), started = started, stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[Spinner]
   }

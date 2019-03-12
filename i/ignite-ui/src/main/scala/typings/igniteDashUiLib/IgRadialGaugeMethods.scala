@@ -101,25 +101,25 @@ trait IgRadialGaugeMethods extends js.Object {
 object IgRadialGaugeMethods {
   @scala.inline
   def apply(
-    addRange: js.Function1[js.Object, scala.Unit],
-    changeGlobalLanguage: js.Function0[scala.Unit],
-    changeGlobalRegional: js.Function0[scala.Unit],
-    changeLocale: js.Function1[js.Object, scala.Unit],
-    clearRanges: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    exportVisualData: js.Function0[scala.Unit],
-    flush: js.Function0[scala.Unit],
-    getPointForValue: js.Function2[js.Object, js.Object, scala.Unit],
-    getRangeNames: js.Function0[java.lang.String],
-    getValueForPoint: js.Function2[js.Object, js.Object, scala.Double],
-    needleContainsPoint: js.Function2[js.Object, js.Object, scala.Unit],
-    removeRange: js.Function1[js.Object, scala.Unit],
-    scaleValue: js.Function1[js.Object, scala.Unit],
-    styleUpdated: js.Function0[scala.Unit],
-    unscaleValue: js.Function1[js.Object, scala.Unit],
-    updateRange: js.Function1[js.Object, scala.Unit]
+    addRange: js.Object => scala.Unit,
+    changeGlobalLanguage: () => scala.Unit,
+    changeGlobalRegional: () => scala.Unit,
+    changeLocale: js.Object => scala.Unit,
+    clearRanges: () => scala.Unit,
+    destroy: () => scala.Unit,
+    exportVisualData: () => scala.Unit,
+    flush: () => scala.Unit,
+    getPointForValue: (js.Object, js.Object) => scala.Unit,
+    getRangeNames: () => java.lang.String,
+    getValueForPoint: (js.Object, js.Object) => scala.Double,
+    needleContainsPoint: (js.Object, js.Object) => scala.Unit,
+    removeRange: js.Object => scala.Unit,
+    scaleValue: js.Object => scala.Unit,
+    styleUpdated: () => scala.Unit,
+    unscaleValue: js.Object => scala.Unit,
+    updateRange: js.Object => scala.Unit
   ): IgRadialGaugeMethods = {
-    val __obj = js.Dynamic.literal(addRange = addRange, changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, clearRanges = clearRanges, destroy = destroy, exportVisualData = exportVisualData, flush = flush, getPointForValue = getPointForValue, getRangeNames = getRangeNames, getValueForPoint = getValueForPoint, needleContainsPoint = needleContainsPoint, removeRange = removeRange, scaleValue = scaleValue, styleUpdated = styleUpdated, unscaleValue = unscaleValue, updateRange = updateRange)
+    val __obj = js.Dynamic.literal(addRange = js.Any.fromFunction1(addRange), changeGlobalLanguage = js.Any.fromFunction0(changeGlobalLanguage), changeGlobalRegional = js.Any.fromFunction0(changeGlobalRegional), changeLocale = js.Any.fromFunction1(changeLocale), clearRanges = js.Any.fromFunction0(clearRanges), destroy = js.Any.fromFunction0(destroy), exportVisualData = js.Any.fromFunction0(exportVisualData), flush = js.Any.fromFunction0(flush), getPointForValue = js.Any.fromFunction2(getPointForValue), getRangeNames = js.Any.fromFunction0(getRangeNames), getValueForPoint = js.Any.fromFunction2(getValueForPoint), needleContainsPoint = js.Any.fromFunction2(needleContainsPoint), removeRange = js.Any.fromFunction1(removeRange), scaleValue = js.Any.fromFunction1(scaleValue), styleUpdated = js.Any.fromFunction0(styleUpdated), unscaleValue = js.Any.fromFunction1(unscaleValue), updateRange = js.Any.fromFunction1(updateRange))
   
     __obj.asInstanceOf[IgRadialGaugeMethods]
   }

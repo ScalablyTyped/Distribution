@@ -13,28 +13,12 @@ object ^ extends js.Object {
   def base64Encode(data: stdLib.Uint8Array): java.lang.String = js.native
   def codeToString(data: js.Array[scala.Double]): java.lang.String = js.native
   def codeToString(data: stdLib.Uint8Array): java.lang.String = js.native
-  def convert(
-    data: encodingDashJapaneseLib.RawType,
-    options: encodingDashJapaneseLib.encodingDashJapaneseMod.ConvertOptions
-  ): java.lang.String | stdLib.ArrayBuffer | js.Array[scala.Double] = js.native
-  def convert(
-    data: encodingDashJapaneseLib.RawType,
-    to: encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding
-  ): js.Array[scala.Double] = js.native
-  def convert(
-    data: encodingDashJapaneseLib.RawType,
-    to: encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding,
-    from: encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding
-  ): js.Array[scala.Double] = js.native
-  def detect(data: encodingDashJapaneseLib.RawType): encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding = js.native
-  def detect(
-    data: encodingDashJapaneseLib.RawType,
-    encodings: encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding
-  ): encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding = js.native
-  def detect(
-    data: encodingDashJapaneseLib.RawType,
-    encodings: js.Array[encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding]
-  ): encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding = js.native
+  def convert(data: encodingDashJapaneseLib.RawType, options: ConvertOptions): java.lang.String | stdLib.ArrayBuffer | js.Array[scala.Double] = js.native
+  def convert(data: encodingDashJapaneseLib.RawType, to: Encoding): js.Array[scala.Double] = js.native
+  def convert(data: encodingDashJapaneseLib.RawType, to: Encoding, from: Encoding): js.Array[scala.Double] = js.native
+  def detect(data: encodingDashJapaneseLib.RawType): Encoding = js.native
+  def detect(data: encodingDashJapaneseLib.RawType, encodings: Encoding): Encoding = js.native
+  def detect(data: encodingDashJapaneseLib.RawType, encodings: js.Array[Encoding]): Encoding = js.native
   def stringToCode(data: java.lang.String): js.Array[scala.Double] = js.native
   def toHankakuCase(data: java.lang.String): java.lang.String = js.native
   def toHankakuCase(data: js.Array[scala.Double]): js.Array[scala.Double] = js.native

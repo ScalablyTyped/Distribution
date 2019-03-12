@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   */
 trait XTextTable extends XTextContent {
   /** @returns the names of all cells of this text table. */
-  val CellNames: activexDashInteropLib.SafeArray[java.lang.String]
+  val CellNames: stdLib.SafeArray[java.lang.String]
   /**
     * @returns the access object for the text table columns.
     * @see com.sun.star.table.XTableColumns
@@ -38,7 +38,7 @@ trait XTextTable extends XTextContent {
     */
   def getCellByName(aCellName: java.lang.String): activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCell
   /** @returns the names of all cells of this text table. */
-  def getCellNames(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getCellNames(): stdLib.SafeArray[java.lang.String]
   /**
     * @returns the access object for the text table columns.
     * @see com.sun.star.table.XTableColumns
@@ -61,25 +61,25 @@ object XTextTable {
   @scala.inline
   def apply(
     Anchor: XTextRange,
-    CellNames: activexDashInteropLib.SafeArray[java.lang.String],
+    CellNames: stdLib.SafeArray[java.lang.String],
     Columns: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableColumns,
     Rows: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableRows,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    attach: js.Function1[XTextRange, scala.Unit],
-    createCursorByCellName: js.Function1[java.lang.String, XTextTableCursor],
-    dispose: js.Function0[scala.Unit],
-    getAnchor: js.Function0[XTextRange],
-    getCellByName: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCell],
-    getCellNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getColumns: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableColumns],
-    getRows: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableRows],
-    initialize: js.Function2[scala.Double, scala.Double, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    attach: XTextRange => scala.Unit,
+    createCursorByCellName: java.lang.String => XTextTableCursor,
+    dispose: () => scala.Unit,
+    getAnchor: () => XTextRange,
+    getCellByName: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCell,
+    getCellNames: () => stdLib.SafeArray[java.lang.String],
+    getColumns: () => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableColumns,
+    getRows: () => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableRows,
+    initialize: (scala.Double, scala.Double) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit
   ): XTextTable = {
-    val __obj = js.Dynamic.literal(Anchor = Anchor, CellNames = CellNames, Columns = Columns, Rows = Rows, acquire = acquire, addEventListener = addEventListener, attach = attach, createCursorByCellName = createCursorByCellName, dispose = dispose, getAnchor = getAnchor, getCellByName = getCellByName, getCellNames = getCellNames, getColumns = getColumns, getRows = getRows, initialize = initialize, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(Anchor = Anchor, CellNames = CellNames, Columns = Columns, Rows = Rows, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), attach = js.Any.fromFunction1(attach), createCursorByCellName = js.Any.fromFunction1(createCursorByCellName), dispose = js.Any.fromFunction0(dispose), getAnchor = js.Any.fromFunction0(getAnchor), getCellByName = js.Any.fromFunction1(getCellByName), getCellNames = js.Any.fromFunction0(getCellNames), getColumns = js.Any.fromFunction0(getColumns), getRows = js.Any.fromFunction0(getRows), initialize = js.Any.fromFunction2(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener))
   
     __obj.asInstanceOf[XTextTable]
   }

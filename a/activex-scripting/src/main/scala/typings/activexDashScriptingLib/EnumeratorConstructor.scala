@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait EnumeratorConstructor
   extends org.scalablytyped.runtime.Instantiable1[
       /* dict */ activexDashScriptingLib.ScriptingNs.Dictionary[js.Object, js.Any], 
-      activexDashInteropLib.Enumerator[js.Object]
+      stdLib.Enumerator[js.Object]
     ]
 

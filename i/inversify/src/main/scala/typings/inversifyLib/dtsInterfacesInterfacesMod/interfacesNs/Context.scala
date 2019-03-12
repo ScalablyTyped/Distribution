@@ -17,14 +17,14 @@ trait Context extends js.Object {
 object Context {
   @scala.inline
   def apply(
-    addPlan: js.Function1[Plan, scala.Unit],
+    addPlan: Plan => scala.Unit,
     container: Container,
     currentRequest: Request,
     id: scala.Double,
     plan: Plan,
-    setCurrentRequest: js.Function1[Request, scala.Unit]
+    setCurrentRequest: Request => scala.Unit
   ): Context = {
-    val __obj = js.Dynamic.literal(addPlan = addPlan, container = container, currentRequest = currentRequest, id = id, plan = plan, setCurrentRequest = setCurrentRequest)
+    val __obj = js.Dynamic.literal(addPlan = js.Any.fromFunction1(addPlan), container = container, currentRequest = currentRequest, id = id, plan = plan, setCurrentRequest = js.Any.fromFunction1(setCurrentRequest))
   
     __obj.asInstanceOf[Context]
   }

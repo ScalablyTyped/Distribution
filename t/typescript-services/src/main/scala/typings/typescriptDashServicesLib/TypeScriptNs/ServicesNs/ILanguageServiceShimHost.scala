@@ -24,26 +24,26 @@ trait ILanguageServiceShimHost
 object ILanguageServiceShimHost {
   @scala.inline
   def apply(
-    debug: js.Function0[scala.Boolean],
-    directoryExists: js.Function1[java.lang.String, scala.Boolean],
-    error: js.Function0[scala.Boolean],
-    fatal: js.Function0[scala.Boolean],
-    fileExists: js.Function1[java.lang.String, scala.Boolean],
-    getCompilationSettings: js.Function0[java.lang.String],
-    getDiagnosticsObject: js.Function0[ILanguageServicesDiagnostics],
-    getLocalizedDiagnosticMessages: js.Function0[java.lang.String],
-    getParentDirectory: js.Function1[java.lang.String, java.lang.String],
-    getScriptByteOrderMark: js.Function1[java.lang.String, scala.Double],
-    getScriptFileNames: js.Function0[java.lang.String],
-    getScriptIsOpen: js.Function1[java.lang.String, scala.Boolean],
-    getScriptSnapshot: js.Function1[java.lang.String, IScriptSnapshotShim],
-    getScriptVersion: js.Function1[java.lang.String, scala.Double],
-    information: js.Function0[scala.Boolean],
-    log: js.Function1[java.lang.String, scala.Unit],
-    resolveRelativePath: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    warning: js.Function0[scala.Boolean]
+    debug: () => scala.Boolean,
+    directoryExists: java.lang.String => scala.Boolean,
+    error: () => scala.Boolean,
+    fatal: () => scala.Boolean,
+    fileExists: java.lang.String => scala.Boolean,
+    getCompilationSettings: () => java.lang.String,
+    getDiagnosticsObject: () => ILanguageServicesDiagnostics,
+    getLocalizedDiagnosticMessages: () => java.lang.String,
+    getParentDirectory: java.lang.String => java.lang.String,
+    getScriptByteOrderMark: java.lang.String => scala.Double,
+    getScriptFileNames: () => java.lang.String,
+    getScriptIsOpen: java.lang.String => scala.Boolean,
+    getScriptSnapshot: java.lang.String => IScriptSnapshotShim,
+    getScriptVersion: java.lang.String => scala.Double,
+    information: () => scala.Boolean,
+    log: java.lang.String => scala.Unit,
+    resolveRelativePath: (java.lang.String, java.lang.String) => java.lang.String,
+    warning: () => scala.Boolean
   ): ILanguageServiceShimHost = {
-    val __obj = js.Dynamic.literal(debug = debug, directoryExists = directoryExists, error = error, fatal = fatal, fileExists = fileExists, getCompilationSettings = getCompilationSettings, getDiagnosticsObject = getDiagnosticsObject, getLocalizedDiagnosticMessages = getLocalizedDiagnosticMessages, getParentDirectory = getParentDirectory, getScriptByteOrderMark = getScriptByteOrderMark, getScriptFileNames = getScriptFileNames, getScriptIsOpen = getScriptIsOpen, getScriptSnapshot = getScriptSnapshot, getScriptVersion = getScriptVersion, information = information, log = log, resolveRelativePath = resolveRelativePath, warning = warning)
+    val __obj = js.Dynamic.literal(debug = js.Any.fromFunction0(debug), directoryExists = js.Any.fromFunction1(directoryExists), error = js.Any.fromFunction0(error), fatal = js.Any.fromFunction0(fatal), fileExists = js.Any.fromFunction1(fileExists), getCompilationSettings = js.Any.fromFunction0(getCompilationSettings), getDiagnosticsObject = js.Any.fromFunction0(getDiagnosticsObject), getLocalizedDiagnosticMessages = js.Any.fromFunction0(getLocalizedDiagnosticMessages), getParentDirectory = js.Any.fromFunction1(getParentDirectory), getScriptByteOrderMark = js.Any.fromFunction1(getScriptByteOrderMark), getScriptFileNames = js.Any.fromFunction0(getScriptFileNames), getScriptIsOpen = js.Any.fromFunction1(getScriptIsOpen), getScriptSnapshot = js.Any.fromFunction1(getScriptSnapshot), getScriptVersion = js.Any.fromFunction1(getScriptVersion), information = js.Any.fromFunction0(information), log = js.Any.fromFunction1(log), resolveRelativePath = js.Any.fromFunction2(resolveRelativePath), warning = js.Any.fromFunction0(warning))
   
     __obj.asInstanceOf[ILanguageServiceShimHost]
   }

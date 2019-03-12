@@ -12,9 +12,9 @@ trait CopyConfig extends js.Object {
 
 object CopyConfig {
   @scala.inline
-  def apply(onCopy: js.Function0[scala.Unit] = null, text: java.lang.String = null): CopyConfig = {
+  def apply(onCopy: () => scala.Unit = null, text: java.lang.String = null): CopyConfig = {
     val __obj = js.Dynamic.literal()
-    if (onCopy != null) __obj.updateDynamic("onCopy")(onCopy)
+    if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction0(onCopy))
     if (text != null) __obj.updateDynamic("text")(text)
     __obj.asInstanceOf[CopyConfig]
   }

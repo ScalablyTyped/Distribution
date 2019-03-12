@@ -21,12 +21,12 @@ trait XInteractionHandlerSupplier
 object XInteractionHandlerSupplier {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    hasInteractionHandler: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    hasInteractionHandler: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XInteractionHandlerSupplier = {
-    val __obj = js.Dynamic.literal(acquire = acquire, hasInteractionHandler = hasInteractionHandler, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), hasInteractionHandler = js.Any.fromFunction0(hasInteractionHandler), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XInteractionHandlerSupplier]
   }

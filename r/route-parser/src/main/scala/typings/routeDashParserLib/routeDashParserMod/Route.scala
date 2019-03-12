@@ -30,17 +30,11 @@ trait Route extends js.Object {
 object Route {
   @scala.inline
   def apply(
-    `match`: js.Function1[
-      java.lang.String, 
-      org.scalablytyped.runtime.StringDictionary[java.lang.String] | routeDashParserLib.routeDashParserLibNumbers.`false`
-    ],
-    reverse: js.Function1[
-      org.scalablytyped.runtime.StringDictionary[js.Any], 
-      java.lang.String | routeDashParserLib.routeDashParserLibNumbers.`false`
-    ]
+    `match`: java.lang.String => org.scalablytyped.runtime.StringDictionary[java.lang.String] | routeDashParserLib.routeDashParserLibNumbers.`false`,
+    reverse: org.scalablytyped.runtime.StringDictionary[js.Any] => java.lang.String | routeDashParserLib.routeDashParserLibNumbers.`false`
   ): Route = {
-    val __obj = js.Dynamic.literal(reverse = reverse)
-    __obj.updateDynamic("match")(`match`)
+    val __obj = js.Dynamic.literal(reverse = js.Any.fromFunction1(reverse))
+    __obj.updateDynamic("match")(js.Any.fromFunction1(`match`))
     __obj.asInstanceOf[Route]
   }
 }

@@ -13,10 +13,10 @@ trait Registry extends js.Object {
 object Registry {
   @scala.inline
   def apply(
-    lookup: js.Function1[java.lang.String, whenLib.WhenNs.Promise[MIMEConverter]],
-    register: js.Function2[java.lang.String, MIMEConverter, scala.Unit]
+    lookup: java.lang.String => whenLib.WhenNs.Promise[MIMEConverter],
+    register: (java.lang.String, MIMEConverter) => scala.Unit
   ): Registry = {
-    val __obj = js.Dynamic.literal(lookup = lookup, register = register)
+    val __obj = js.Dynamic.literal(lookup = js.Any.fromFunction1(lookup), register = js.Any.fromFunction2(register))
   
     __obj.asInstanceOf[Registry]
   }

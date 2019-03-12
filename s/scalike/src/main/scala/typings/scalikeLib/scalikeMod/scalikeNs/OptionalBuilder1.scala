@@ -15,12 +15,12 @@ trait OptionalBuilder1[A, B] extends js.Object {
 object OptionalBuilder1 {
   @scala.inline
   def apply[A, B](
-    chain: js.Function1[Optional[js.Any], OptionalBuilder2[A, B, js.Any]],
+    chain: Optional[js.Any] => OptionalBuilder2[A, B, js.Any],
     oa: js.Any,
     ob: js.Any,
-    run: js.Function1[js.Function2[/* a */ A, /* b */ B, js.Any], Optional[js.Any]]
+    run: js.Function2[/* a */ A, /* b */ B, js.Any] => Optional[js.Any]
   ): OptionalBuilder1[A, B] = {
-    val __obj = js.Dynamic.literal(chain = chain, oa = oa, ob = ob, run = run)
+    val __obj = js.Dynamic.literal(chain = js.Any.fromFunction1(chain), oa = oa, ob = ob, run = js.Any.fromFunction1(run))
   
     __obj.asInstanceOf[OptionalBuilder1[A, B]]
   }

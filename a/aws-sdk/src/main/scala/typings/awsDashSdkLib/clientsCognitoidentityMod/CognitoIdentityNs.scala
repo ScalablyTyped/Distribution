@@ -46,7 +46,7 @@ object CognitoIdentityNs extends js.Object {
     /**
       * A string that you provide.
       */
-    var IdentityPoolName: IdentityPoolName
+    var IdentityPoolName: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityPoolName
     /**
       * A list of OpendID Connect provider ARNs.
       */
@@ -98,21 +98,21 @@ object CognitoIdentityNs extends js.Object {
     /**
       * An identity pool ID in the format REGION:GUID.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityPoolId
   }
   
   trait DescribeIdentityInput extends js.Object {
     /**
       * A unique identifier in the format REGION:GUID.
       */
-    var IdentityId: IdentityId
+    var IdentityId: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityId
   }
   
   trait DescribeIdentityPoolInput extends js.Object {
     /**
       * An identity pool ID in the format REGION:GUID.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityPoolId
   }
   
   trait GetCredentialsForIdentityInput
@@ -124,7 +124,7 @@ object CognitoIdentityNs extends js.Object {
     /**
       * A unique identifier in the format REGION:GUID.
       */
-    var IdentityId: IdentityId
+    var IdentityId: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityId
     /**
       * A set of optional name-value pairs that map provider names to provider tokens.
       */
@@ -151,7 +151,7 @@ object CognitoIdentityNs extends js.Object {
     /**
       * An identity pool ID in the format REGION:GUID.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityPoolId
     /**
       * A set of optional name-value pairs that map provider names to provider tokens. The available provider names for Logins are as follows:   Facebook: graph.facebook.com    Amazon Cognito Identity Provider: cognito-idp.us-east-1.amazonaws.com/us-east-1_123456789    Google: accounts.google.com    Amazon: www.amazon.com    Twitter: api.twitter.com    Digits: www.digits.com   
       */
@@ -169,7 +169,7 @@ object CognitoIdentityNs extends js.Object {
     /**
       * An identity pool ID in the format REGION:GUID.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityPoolId
   }
   
   trait GetIdentityPoolRolesResponse extends js.Object {
@@ -195,7 +195,7 @@ object CognitoIdentityNs extends js.Object {
     /**
       * An identity pool ID in the format REGION:GUID.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityPoolId
     /**
       * A set of optional name-value pairs that map provider names to provider tokens. Each name-value pair represents a user from a public provider or developer provider. If the user is from a developer provider, the name-value pair will follow the syntax "developer_provider_name": "developer_user_identifier". The developer provider is the "domain" by which Cognito will refer to your users; you provided this domain while creating/updating the identity pool. The developer user identifier is an identifier from your backend that uniquely identifies a user. When you create an identity pool, you can specify the supported logins.
       */
@@ -222,7 +222,7 @@ object CognitoIdentityNs extends js.Object {
     /**
       * A unique identifier in the format REGION:GUID.
       */
-    var IdentityId: IdentityId
+    var IdentityId: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityId
     /**
       * A set of optional name-value pairs that map provider names to provider tokens. When using graph.facebook.com and www.amazon.com, supply the access_token returned from the provider's authflow. For accounts.google.com, an Amazon Cognito Identity Provider, or any other OpenId Connect provider, always include the id_token.
       */
@@ -275,11 +275,11 @@ object CognitoIdentityNs extends js.Object {
     /**
       * An identity pool ID in the format REGION:GUID.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityPoolId
     /**
       * A string that you provide.
       */
-    var IdentityPoolName: IdentityPoolName
+    var IdentityPoolName: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityPoolName
     /**
       * A list of OpendID Connect provider ARNs.
       */
@@ -316,7 +316,7 @@ object CognitoIdentityNs extends js.Object {
     /**
       * An identity pool ID in the format REGION:GUID.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityPoolId
     /**
       * The maximum number of identities to return.
       */
@@ -379,7 +379,7 @@ object CognitoIdentityNs extends js.Object {
     /**
       * An identity pool ID in the format REGION:GUID.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityPoolId
     /**
       * The maximum number of identities to return.
       */
@@ -432,11 +432,11 @@ object CognitoIdentityNs extends js.Object {
     /**
       * The "domain" by which Cognito will refer to your users. This is a (pseudo) domain name that you provide while creating an identity pool. This name acts as a placeholder that allows your backend and the Cognito service to communicate about the developer provider. For the DeveloperProviderName, you can use letters as well as period (.), underscore (_), and dash (-).
       */
-    var DeveloperProviderName: DeveloperProviderName
+    var DeveloperProviderName: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.DeveloperProviderName
     /**
       * An identity pool ID in the format REGION:GUID.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityPoolId
     /**
       * User identifier for the source user. The value should be a DeveloperUserIdentifier.
       */
@@ -482,7 +482,7 @@ object CognitoIdentityNs extends js.Object {
     /**
       * An identity pool ID in the format REGION:GUID.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityPoolId
     /**
       * How users for a specific identity provider are to mapped to roles. This is a string to RoleMapping object map. The string identifies the identity provider, for example, "graph.facebook.com" or "cognito-idp-east-1.amazonaws.com/us-east-1_abcdefghi:app_client_id". Up to 25 rules can be specified per identity provider.
       */
@@ -854,26 +854,26 @@ object CognitoIdentityNs extends js.Object {
     /**
       * The "domain" by which Cognito will refer to your users.
       */
-    var DeveloperProviderName: DeveloperProviderName
+    var DeveloperProviderName: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.DeveloperProviderName
     /**
       * A unique ID used by your backend authentication process to identify a user.
       */
-    var DeveloperUserIdentifier: DeveloperUserIdentifier
+    var DeveloperUserIdentifier: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.DeveloperUserIdentifier
     /**
       * A unique identifier in the format REGION:GUID.
       */
-    var IdentityId: IdentityId
+    var IdentityId: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityId
     /**
       * An identity pool ID in the format REGION:GUID.
       */
-    var IdentityPoolId: IdentityPoolId
+    var IdentityPoolId: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityPoolId
   }
   
   trait UnlinkIdentityInput extends js.Object {
     /**
       * A unique identifier in the format REGION:GUID.
       */
-    var IdentityId: IdentityId
+    var IdentityId: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityId
     /**
       * A set of optional name-value pairs that map provider names to provider tokens.
       */

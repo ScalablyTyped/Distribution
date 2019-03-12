@@ -24,11 +24,11 @@ object ^ extends js.Object {
   ] = js.native
   def appendFile(path: java.lang.String, data: js.Any): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def appendFile(path: java.lang.String, data: js.Any, callback: js.Function1[/* err */ js.Any, scala.Unit]): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def appendFile(path: java.lang.String, data: js.Any, options: hexoDashFsLib.hexoDashFsMod.AppendFileOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def appendFile(path: java.lang.String, data: js.Any, options: AppendFileOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def appendFile(
     path: java.lang.String,
     data: js.Any,
-    options: hexoDashFsLib.hexoDashFsMod.AppendFileOptions,
+    options: AppendFileOptions,
     callback: js.Function1[/* err */ js.Any, scala.Unit]
   ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def appendFile(path: java.lang.String, data: js.Any, options: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
@@ -39,7 +39,7 @@ object ^ extends js.Object {
     callback: js.Function1[/* err */ js.Any, scala.Unit]
   ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def appendFileSync(path: java.lang.String, data: js.Any): scala.Unit = js.native
-  def appendFileSync(path: java.lang.String, data: js.Any, options: hexoDashFsLib.hexoDashFsMod.AppendFileOptions): scala.Unit = js.native
+  def appendFileSync(path: java.lang.String, data: js.Any, options: AppendFileOptions): scala.Unit = js.native
   def appendFileSync(path: java.lang.String, data: js.Any, options: java.lang.String): scala.Unit = js.native
   def chmod(path: nodeLib.fsMod.PathLike, mode: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def chmod(path: nodeLib.fsMod.PathLike, mode: scala.Double): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
@@ -68,15 +68,11 @@ object ^ extends js.Object {
     dest: java.lang.String,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[js.Array[java.lang.String]], scala.Unit]
   ): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]] = js.native
+  def copyDir(src: java.lang.String, dest: java.lang.String, options: DirectoryOptions): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]] = js.native
   def copyDir(
     src: java.lang.String,
     dest: java.lang.String,
-    options: hexoDashFsLib.hexoDashFsMod.DirectoryOptions
-  ): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]] = js.native
-  def copyDir(
-    src: java.lang.String,
-    dest: java.lang.String,
-    options: hexoDashFsLib.hexoDashFsMod.DirectoryOptions,
+    options: DirectoryOptions,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[js.Array[java.lang.String]], scala.Unit]
   ): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]] = js.native
   def copyFile(src: nodeLib.fsMod.PathLike, dest: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
@@ -110,13 +106,10 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): bluebirdLib.bluebirdMod.namespaced[java.lang.String | js.Array[java.lang.String]] = js.native
+  def emptyDir(path: java.lang.String, options: DirectoryOptions with hexoDashFsLib.Anon_Exclude): bluebirdLib.bluebirdMod.namespaced[java.lang.String | js.Array[java.lang.String]] = js.native
   def emptyDir(
     path: java.lang.String,
-    options: hexoDashFsLib.hexoDashFsMod.DirectoryOptions with hexoDashFsLib.Anon_Exclude
-  ): bluebirdLib.bluebirdMod.namespaced[java.lang.String | js.Array[java.lang.String]] = js.native
-  def emptyDir(
-    path: java.lang.String,
-    options: hexoDashFsLib.hexoDashFsMod.DirectoryOptions with hexoDashFsLib.Anon_Exclude,
+    options: DirectoryOptions with hexoDashFsLib.Anon_Exclude,
     callback: js.Function2[
       /* err */ js.Any, 
       /* value */ js.UndefOr[java.lang.String | js.Array[java.lang.String]], 
@@ -124,13 +117,10 @@ object ^ extends js.Object {
     ]
   ): bluebirdLib.bluebirdMod.namespaced[java.lang.String | js.Array[java.lang.String]] = js.native
   def emptyDirSync(path: java.lang.String): java.lang.String | js.Array[java.lang.String] = js.native
+  def emptyDirSync(path: java.lang.String, options: DirectoryOptions with hexoDashFsLib.Anon_Exclude): java.lang.String | js.Array[java.lang.String] = js.native
   def emptyDirSync(
     path: java.lang.String,
-    options: hexoDashFsLib.hexoDashFsMod.DirectoryOptions with hexoDashFsLib.Anon_Exclude
-  ): java.lang.String | js.Array[java.lang.String] = js.native
-  def emptyDirSync(
-    path: java.lang.String,
-    options: hexoDashFsLib.hexoDashFsMod.DirectoryOptions with hexoDashFsLib.Anon_Exclude,
+    options: DirectoryOptions with hexoDashFsLib.Anon_Exclude,
     parent: java.lang.String
   ): java.lang.String | js.Array[java.lang.String] = js.native
   def ensurePath(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
@@ -263,19 +253,15 @@ object ^ extends js.Object {
     path: java.lang.String,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[js.Array[java.lang.String]], scala.Unit]
   ): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]] = js.native
-  def listDir(path: java.lang.String, options: hexoDashFsLib.hexoDashFsMod.DirectoryOptions): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]] = js.native
+  def listDir(path: java.lang.String, options: DirectoryOptions): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]] = js.native
   def listDir(
     path: java.lang.String,
-    options: hexoDashFsLib.hexoDashFsMod.DirectoryOptions,
+    options: DirectoryOptions,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[js.Array[java.lang.String]], scala.Unit]
   ): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]] = js.native
   def listDirSync(path: java.lang.String): java.lang.String | js.Array[java.lang.String] = js.native
-  def listDirSync(path: java.lang.String, options: hexoDashFsLib.hexoDashFsMod.DirectoryOptions): java.lang.String | js.Array[java.lang.String] = js.native
-  def listDirSync(
-    path: java.lang.String,
-    options: hexoDashFsLib.hexoDashFsMod.DirectoryOptions,
-    parent: java.lang.String
-  ): java.lang.String | js.Array[java.lang.String] = js.native
+  def listDirSync(path: java.lang.String, options: DirectoryOptions): java.lang.String | js.Array[java.lang.String] = js.native
+  def listDirSync(path: java.lang.String, options: DirectoryOptions, parent: java.lang.String): java.lang.String | js.Array[java.lang.String] = js.native
   def lstat(path: nodeLib.fsMod.PathLike): bluebirdLib.bluebirdMod.namespaced[gracefulDashFsLib.gracefulDashFsMod.Stats] = js.native
   /**
     * Synchronous lstat(2) - Get file status. Does not dereference symbolic links.

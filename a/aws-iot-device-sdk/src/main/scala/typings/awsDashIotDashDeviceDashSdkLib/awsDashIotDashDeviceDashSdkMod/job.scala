@@ -35,7 +35,7 @@ trait job extends js.Object {
     */
   def failed(): scala.Unit = js.native
   def failed(statusDetails: statusDetails): scala.Unit = js.native
-  def failed(statusDetails: statusDetails, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def failed(statusDetails: statusDetails, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /**
     * Update the status of the job execution to be IN_PROGRESS for the thing associated with the job.
     *
@@ -44,7 +44,7 @@ trait job extends js.Object {
     */
   def inProgress(): scala.Unit = js.native
   def inProgress(statusDetails: statusDetails): scala.Unit = js.native
-  def inProgress(statusDetails: statusDetails, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def inProgress(statusDetails: statusDetails, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /**
     * Update the status of the job execution to be SUCCESS for the thing associated with the job.
     *
@@ -53,6 +53,6 @@ trait job extends js.Object {
     */
   def succeeded(): scala.Unit = js.native
   def succeeded(statusDetails: statusDetails): scala.Unit = js.native
-  def succeeded(statusDetails: statusDetails, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def succeeded(statusDetails: statusDetails, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
 }
 

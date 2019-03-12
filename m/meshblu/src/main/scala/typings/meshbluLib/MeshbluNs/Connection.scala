@@ -64,7 +64,7 @@ trait Connection extends js.Object {
   		 */
   def getPublicKey(
     uuid: java.lang.String,
-    fn: js.Function2[/* err */ nodeLib.Error, /* publicKey */ js.Any, scala.Unit]
+    fn: js.Function2[/* err */ stdLib.Error, /* publicKey */ js.Any, scala.Unit]
   ): scala.Unit
   /**
   		 * Get a meshblu data for a device.
@@ -165,57 +165,47 @@ trait Connection extends js.Object {
 object Connection {
   @scala.inline
   def apply(
-    authenticate: js.Function2[js.Any, js.Function1[/* result */ js.Any, scala.Unit], Connection],
-    bufferedSocketEmit: js.Function0[scala.Unit],
-    claimdevice: js.Function2[Device, js.Function1[/* result */ Device, scala.Unit], Connection],
-    close: js.Function1[js.Function1[/* result */ js.Any, scala.Unit], Connection],
-    connect: js.Function0[scala.Unit],
-    data: js.Function2[DataInput, js.Function1[/* result */ js.Any, scala.Unit], Connection],
-    device: js.Function2[Device, js.Function1[/* result */ DeviceResponse, scala.Unit], Connection],
-    devices: js.Function2[Color, js.Function1[/* result */ js.Array[DeviceResponse], scala.Unit], Connection],
-    directText: js.Function1[js.Any, Connection],
-    encryptMessage: js.Function4[
-      java.lang.String, 
-      js.Any, 
-      ConnectionOptions, 
-      js.Function1[/* result */ js.Any, scala.Unit], 
-      Connection
-    ],
-    events: js.Function2[js.Any, js.Function1[/* result */ js.Any, scala.Unit], Connection],
-    generateAndStoreToken: js.Function2[Device, js.Function1[/* result */ ConnectionOptions, scala.Unit], scala.Unit],
-    generateKeyPair: js.Function0[KeyPair],
-    getPublicKey: js.Function2[
-      java.lang.String, 
-      js.Function2[/* err */ nodeLib.Error, /* publicKey */ js.Any, scala.Unit], 
-      scala.Unit
-    ],
-    getdata: js.Function2[GetDataInput, js.Function1[/* result */ js.Any, scala.Unit], Connection],
-    identify: js.Function0[Connection],
-    localdevices: js.Function1[js.Function1[/* result */ js.Any, scala.Unit], Connection],
-    message: js.Function2[MessagePayload, js.Function1[/* result */ js.Any, scala.Unit], Connection],
-    mydevices: js.Function2[js.Any, js.Function1[/* result */ js.Any, scala.Unit], Connection],
-    parseUrl: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    reconnect: js.Function0[scala.Unit],
-    register: js.Function2[RegisterData, js.Function1[/* result */ RegisterResponse, scala.Unit], Connection],
-    resetToken: js.Function2[js.Any, js.Function1[/* result */ js.Any, scala.Unit], scala.Unit],
-    revokeToken: js.Function2[ConnectionOptions, js.Function1[/* result */ Device, scala.Unit], scala.Unit],
-    send: js.Function1[java.lang.String, Connection],
-    setPrivateKey: js.Function1[java.lang.String, scala.Unit],
-    setup: js.Function0[Connection],
-    sign: js.Function1[js.Any, java.lang.String],
-    status: js.Function1[js.Any, Connection],
-    subscribe: js.Function2[SubscribeData, js.Function1[/* result */ js.Any, scala.Unit], Connection],
-    subscribeText: js.Function2[js.Any, js.Function1[/* result */ js.Any, scala.Unit], Connection],
-    textBroadcast: js.Function1[js.Any, Connection],
-    unclaimeddevices: js.Function2[js.Any, js.Function1[/* result */ js.Any, scala.Unit], Connection],
-    unregister: js.Function2[Device, js.Function1[/* result */ Device, scala.Unit], Connection],
-    unsubscribe: js.Function2[UnsubscribeData, js.Function1[/* result */ js.Any, scala.Unit], Connection],
-    unsubscribeText: js.Function2[js.Any, js.Function1[/* result */ js.Any, scala.Unit], Connection],
-    update: js.Function2[UpdateData, js.Function1[/* result */ UpdateSuccess, scala.Unit], Connection],
-    verify: js.Function2[js.Any, js.Any, js.Any],
-    whoami: js.Function2[js.Any, js.Function1[/* result */ DeviceResponse, scala.Unit], Connection]
+    authenticate: (js.Any, js.Function1[/* result */ js.Any, scala.Unit]) => Connection,
+    bufferedSocketEmit: () => scala.Unit,
+    claimdevice: (Device, js.Function1[/* result */ Device, scala.Unit]) => Connection,
+    close: js.Function1[/* result */ js.Any, scala.Unit] => Connection,
+    connect: () => scala.Unit,
+    data: (DataInput, js.Function1[/* result */ js.Any, scala.Unit]) => Connection,
+    device: (Device, js.Function1[/* result */ DeviceResponse, scala.Unit]) => Connection,
+    devices: (Color, js.Function1[/* result */ js.Array[DeviceResponse], scala.Unit]) => Connection,
+    directText: js.Any => Connection,
+    encryptMessage: (java.lang.String, js.Any, ConnectionOptions, js.Function1[/* result */ js.Any, scala.Unit]) => Connection,
+    events: (js.Any, js.Function1[/* result */ js.Any, scala.Unit]) => Connection,
+    generateAndStoreToken: (Device, js.Function1[/* result */ ConnectionOptions, scala.Unit]) => scala.Unit,
+    generateKeyPair: () => KeyPair,
+    getPublicKey: (java.lang.String, js.Function2[/* err */ stdLib.Error, /* publicKey */ js.Any, scala.Unit]) => scala.Unit,
+    getdata: (GetDataInput, js.Function1[/* result */ js.Any, scala.Unit]) => Connection,
+    identify: () => Connection,
+    localdevices: js.Function1[/* result */ js.Any, scala.Unit] => Connection,
+    message: (MessagePayload, js.Function1[/* result */ js.Any, scala.Unit]) => Connection,
+    mydevices: (js.Any, js.Function1[/* result */ js.Any, scala.Unit]) => Connection,
+    parseUrl: (java.lang.String, java.lang.String) => java.lang.String,
+    reconnect: () => scala.Unit,
+    register: (RegisterData, js.Function1[/* result */ RegisterResponse, scala.Unit]) => Connection,
+    resetToken: (js.Any, js.Function1[/* result */ js.Any, scala.Unit]) => scala.Unit,
+    revokeToken: (ConnectionOptions, js.Function1[/* result */ Device, scala.Unit]) => scala.Unit,
+    send: java.lang.String => Connection,
+    setPrivateKey: java.lang.String => scala.Unit,
+    setup: () => Connection,
+    sign: js.Any => java.lang.String,
+    status: js.Any => Connection,
+    subscribe: (SubscribeData, js.Function1[/* result */ js.Any, scala.Unit]) => Connection,
+    subscribeText: (js.Any, js.Function1[/* result */ js.Any, scala.Unit]) => Connection,
+    textBroadcast: js.Any => Connection,
+    unclaimeddevices: (js.Any, js.Function1[/* result */ js.Any, scala.Unit]) => Connection,
+    unregister: (Device, js.Function1[/* result */ Device, scala.Unit]) => Connection,
+    unsubscribe: (UnsubscribeData, js.Function1[/* result */ js.Any, scala.Unit]) => Connection,
+    unsubscribeText: (js.Any, js.Function1[/* result */ js.Any, scala.Unit]) => Connection,
+    update: (UpdateData, js.Function1[/* result */ UpdateSuccess, scala.Unit]) => Connection,
+    verify: (js.Any, js.Any) => js.Any,
+    whoami: (js.Any, js.Function1[/* result */ DeviceResponse, scala.Unit]) => Connection
   ): Connection = {
-    val __obj = js.Dynamic.literal(authenticate = authenticate, bufferedSocketEmit = bufferedSocketEmit, claimdevice = claimdevice, close = close, connect = connect, data = data, device = device, devices = devices, directText = directText, encryptMessage = encryptMessage, events = events, generateAndStoreToken = generateAndStoreToken, generateKeyPair = generateKeyPair, getPublicKey = getPublicKey, getdata = getdata, identify = identify, localdevices = localdevices, message = message, mydevices = mydevices, parseUrl = parseUrl, reconnect = reconnect, register = register, resetToken = resetToken, revokeToken = revokeToken, send = send, setPrivateKey = setPrivateKey, setup = setup, sign = sign, status = status, subscribe = subscribe, subscribeText = subscribeText, textBroadcast = textBroadcast, unclaimeddevices = unclaimeddevices, unregister = unregister, unsubscribe = unsubscribe, unsubscribeText = unsubscribeText, update = update, verify = verify, whoami = whoami)
+    val __obj = js.Dynamic.literal(authenticate = js.Any.fromFunction2(authenticate), bufferedSocketEmit = js.Any.fromFunction0(bufferedSocketEmit), claimdevice = js.Any.fromFunction2(claimdevice), close = js.Any.fromFunction1(close), connect = js.Any.fromFunction0(connect), data = js.Any.fromFunction2(data), device = js.Any.fromFunction2(device), devices = js.Any.fromFunction2(devices), directText = js.Any.fromFunction1(directText), encryptMessage = js.Any.fromFunction4(encryptMessage), events = js.Any.fromFunction2(events), generateAndStoreToken = js.Any.fromFunction2(generateAndStoreToken), generateKeyPair = js.Any.fromFunction0(generateKeyPair), getPublicKey = js.Any.fromFunction2(getPublicKey), getdata = js.Any.fromFunction2(getdata), identify = js.Any.fromFunction0(identify), localdevices = js.Any.fromFunction1(localdevices), message = js.Any.fromFunction2(message), mydevices = js.Any.fromFunction2(mydevices), parseUrl = js.Any.fromFunction2(parseUrl), reconnect = js.Any.fromFunction0(reconnect), register = js.Any.fromFunction2(register), resetToken = js.Any.fromFunction2(resetToken), revokeToken = js.Any.fromFunction2(revokeToken), send = js.Any.fromFunction1(send), setPrivateKey = js.Any.fromFunction1(setPrivateKey), setup = js.Any.fromFunction0(setup), sign = js.Any.fromFunction1(sign), status = js.Any.fromFunction1(status), subscribe = js.Any.fromFunction2(subscribe), subscribeText = js.Any.fromFunction2(subscribeText), textBroadcast = js.Any.fromFunction1(textBroadcast), unclaimeddevices = js.Any.fromFunction2(unclaimeddevices), unregister = js.Any.fromFunction2(unregister), unsubscribe = js.Any.fromFunction2(unsubscribe), unsubscribeText = js.Any.fromFunction2(unsubscribeText), update = js.Any.fromFunction2(update), verify = js.Any.fromFunction2(verify), whoami = js.Any.fromFunction2(whoami))
   
     __obj.asInstanceOf[Connection]
   }

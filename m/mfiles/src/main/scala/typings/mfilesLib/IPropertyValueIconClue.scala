@@ -14,11 +14,11 @@ trait IPropertyValueIconClue extends js.Object {
 object IPropertyValueIconClue {
   @scala.inline
   def apply(
-    Clone: js.Function0[IPropertyValueIconClue],
+    Clone: () => IPropertyValueIconClue,
     PropertyDef: mfilesLib.MFilesNs.MFBuiltInPropertyDef | scala.Double,
     ValueListItem: scala.Double
   ): IPropertyValueIconClue = {
-    val __obj = js.Dynamic.literal(Clone = Clone, PropertyDef = PropertyDef.asInstanceOf[js.Any], ValueListItem = ValueListItem)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), PropertyDef = PropertyDef.asInstanceOf[js.Any], ValueListItem = ValueListItem)
   
     __obj.asInstanceOf[IPropertyValueIconClue]
   }

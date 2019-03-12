@@ -48,87 +48,81 @@ trait IPoint extends IRegion {
 object IPoint {
   @scala.inline
   def apply(
-    adjust: js.Function4[
-      /* top */ js.UndefOr[scala.Double], 
-      /* right */ js.UndefOr[scala.Double], 
-      /* bottom */ js.UndefOr[scala.Double], 
-      /* left */ js.UndefOr[scala.Double], 
-      IPoint
-    ] = null,
+    adjust: (/* top */ js.UndefOr[scala.Double], /* right */ js.UndefOr[scala.Double], /* bottom */ js.UndefOr[scala.Double], /* left */ js.UndefOr[scala.Double]) => IPoint = null,
     alias: extjsLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    constrainTo: js.Function1[/* targetRegion */ js.UndefOr[IPoint], IPoint] = null,
-    contains: js.Function1[/* region */ js.UndefOr[IPoint], scala.Boolean] = null,
-    copy: js.Function0[IPoint] = null,
-    copyFrom: js.Function1[/* p */ js.UndefOr[IPoint], IPoint] = null,
-    equals: js.Function1[/* p */ js.UndefOr[js.Any], scala.Boolean] = null,
+    constrainTo: /* targetRegion */ js.UndefOr[IPoint] => IPoint = null,
+    contains: /* region */ js.UndefOr[IPoint] => scala.Boolean = null,
+    copy: () => IPoint = null,
+    copyFrom: /* p */ js.UndefOr[IPoint] => IPoint = null,
+    equals: /* p */ js.UndefOr[js.Any] => scala.Boolean = null,
     extend: java.lang.String = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getOutOfBoundOffset: js.Function2[/* axis */ js.UndefOr[java.lang.String], /* p */ js.UndefOr[IPoint], IOffset] = null,
-    getOutOfBoundOffsetX: js.Function1[/* p */ js.UndefOr[scala.Double], scala.Double] = null,
-    getOutOfBoundOffsetY: js.Function1[/* p */ js.UndefOr[scala.Double], scala.Double] = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getOutOfBoundOffset: (/* axis */ js.UndefOr[java.lang.String], /* p */ js.UndefOr[IPoint]) => IOffset = null,
+    getOutOfBoundOffsetX: /* p */ js.UndefOr[scala.Double] => scala.Double = null,
+    getOutOfBoundOffsetY: /* p */ js.UndefOr[scala.Double] => scala.Double = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IPoint] = null,
-    intersect: js.Function1[/* region */ js.UndefOr[IPoint], _] = null,
-    isContainedBy: js.Function1[/* region */ js.UndefOr[js.Any], scala.Boolean] = null,
-    isOutOfBound: js.Function2[/* axis */ js.UndefOr[java.lang.String], /* p */ js.UndefOr[js.Any], scala.Boolean] = null,
-    isOutOfBoundX: js.Function1[/* p */ js.UndefOr[scala.Double], scala.Boolean] = null,
-    isOutOfBoundY: js.Function1[/* p */ js.UndefOr[scala.Double], scala.Boolean] = null,
-    isWithin: js.Function2[/* p */ js.UndefOr[js.Any], /* threshold */ js.UndefOr[js.Any], scala.Boolean] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IPoint = null,
+    intersect: /* region */ js.UndefOr[IPoint] => _ = null,
+    isContainedBy: /* region */ js.UndefOr[js.Any] => scala.Boolean = null,
+    isOutOfBound: (/* axis */ js.UndefOr[java.lang.String], /* p */ js.UndefOr[js.Any]) => scala.Boolean = null,
+    isOutOfBoundX: /* p */ js.UndefOr[scala.Double] => scala.Boolean = null,
+    isOutOfBoundY: /* p */ js.UndefOr[scala.Double] => scala.Boolean = null,
+    isWithin: (/* p */ js.UndefOr[js.Any], /* threshold */ js.UndefOr[js.Any]) => scala.Boolean = null,
     mixins: js.Any = null,
     requires: extjsLib.ExtNs.Array = null,
-    round: js.Function0[IPoint] = null,
-    roundedEquals: js.Function1[/* p */ js.UndefOr[js.Any], scala.Boolean] = null,
+    round: () => IPoint = null,
+    roundedEquals: /* p */ js.UndefOr[js.Any] => scala.Boolean = null,
     self: extjsLib.ExtNs.IClass = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
-    toString: js.Function0[java.lang.String] = null,
-    translate: js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[scala.Double], IRegion] = null,
-    translateBy: js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[scala.Double], IPoint] = null,
-    union: js.Function1[/* region */ js.UndefOr[IPoint], IPoint] = null,
+    toString: () => java.lang.String = null,
+    translate: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[scala.Double]) => IRegion = null,
+    translateBy: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[scala.Double]) => IPoint = null,
+    union: /* region */ js.UndefOr[IPoint] => IPoint = null,
     uses: extjsLib.ExtNs.Array = null
   ): IPoint = {
     val __obj = js.Dynamic.literal()
-    if (adjust != null) __obj.updateDynamic("adjust")(adjust)
+    if (adjust != null) __obj.updateDynamic("adjust")(js.Any.fromFunction4(adjust))
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (constrainTo != null) __obj.updateDynamic("constrainTo")(constrainTo)
-    if (contains != null) __obj.updateDynamic("contains")(contains)
-    if (copy != null) __obj.updateDynamic("copy")(copy)
-    if (copyFrom != null) __obj.updateDynamic("copyFrom")(copyFrom)
-    if (equals != null) __obj.updateDynamic("equals")(equals)
+    if (constrainTo != null) __obj.updateDynamic("constrainTo")(js.Any.fromFunction1(constrainTo))
+    if (contains != null) __obj.updateDynamic("contains")(js.Any.fromFunction1(contains))
+    if (copy != null) __obj.updateDynamic("copy")(js.Any.fromFunction0(copy))
+    if (copyFrom != null) __obj.updateDynamic("copyFrom")(js.Any.fromFunction1(copyFrom))
+    if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction1(equals))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getOutOfBoundOffset != null) __obj.updateDynamic("getOutOfBoundOffset")(getOutOfBoundOffset)
-    if (getOutOfBoundOffsetX != null) __obj.updateDynamic("getOutOfBoundOffsetX")(getOutOfBoundOffsetX)
-    if (getOutOfBoundOffsetY != null) __obj.updateDynamic("getOutOfBoundOffsetY")(getOutOfBoundOffsetY)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getOutOfBoundOffset != null) __obj.updateDynamic("getOutOfBoundOffset")(js.Any.fromFunction2(getOutOfBoundOffset))
+    if (getOutOfBoundOffsetX != null) __obj.updateDynamic("getOutOfBoundOffsetX")(js.Any.fromFunction1(getOutOfBoundOffsetX))
+    if (getOutOfBoundOffsetY != null) __obj.updateDynamic("getOutOfBoundOffsetY")(js.Any.fromFunction1(getOutOfBoundOffsetY))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
-    if (intersect != null) __obj.updateDynamic("intersect")(intersect)
-    if (isContainedBy != null) __obj.updateDynamic("isContainedBy")(isContainedBy)
-    if (isOutOfBound != null) __obj.updateDynamic("isOutOfBound")(isOutOfBound)
-    if (isOutOfBoundX != null) __obj.updateDynamic("isOutOfBoundX")(isOutOfBoundX)
-    if (isOutOfBoundY != null) __obj.updateDynamic("isOutOfBoundY")(isOutOfBoundY)
-    if (isWithin != null) __obj.updateDynamic("isWithin")(isWithin)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (intersect != null) __obj.updateDynamic("intersect")(js.Any.fromFunction1(intersect))
+    if (isContainedBy != null) __obj.updateDynamic("isContainedBy")(js.Any.fromFunction1(isContainedBy))
+    if (isOutOfBound != null) __obj.updateDynamic("isOutOfBound")(js.Any.fromFunction2(isOutOfBound))
+    if (isOutOfBoundX != null) __obj.updateDynamic("isOutOfBoundX")(js.Any.fromFunction1(isOutOfBoundX))
+    if (isOutOfBoundY != null) __obj.updateDynamic("isOutOfBoundY")(js.Any.fromFunction1(isOutOfBoundY))
+    if (isWithin != null) __obj.updateDynamic("isWithin")(js.Any.fromFunction2(isWithin))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (requires != null) __obj.updateDynamic("requires")(requires)
-    if (round != null) __obj.updateDynamic("round")(round)
-    if (roundedEquals != null) __obj.updateDynamic("roundedEquals")(roundedEquals)
+    if (round != null) __obj.updateDynamic("round")(js.Any.fromFunction0(round))
+    if (roundedEquals != null) __obj.updateDynamic("roundedEquals")(js.Any.fromFunction1(roundedEquals))
     if (self != null) __obj.updateDynamic("self")(self)
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
-    if (toString != null) __obj.updateDynamic("toString")(toString)
-    if (translate != null) __obj.updateDynamic("translate")(translate)
-    if (translateBy != null) __obj.updateDynamic("translateBy")(translateBy)
-    if (union != null) __obj.updateDynamic("union")(union)
+    if (toString != null) __obj.updateDynamic("toString")(js.Any.fromFunction0(toString))
+    if (translate != null) __obj.updateDynamic("translate")(js.Any.fromFunction2(translate))
+    if (translateBy != null) __obj.updateDynamic("translateBy")(js.Any.fromFunction2(translateBy))
+    if (union != null) __obj.updateDynamic("union")(js.Any.fromFunction1(union))
     if (uses != null) __obj.updateDynamic("uses")(uses)
     __obj.asInstanceOf[IPoint]
   }

@@ -12,11 +12,8 @@ trait ChangeEmitterOf4[T1, T2, T3, T4] extends js.Object {
 
 object ChangeEmitterOf4 {
   @scala.inline
-  def apply[T1, T2, T3, T4](
-    emit: js.Function4[T1, T2, T3, T4, scala.Unit],
-    listen: js.Function1[ListenerOf4[T1, T2, T3, T4], Unlisten]
-  ): ChangeEmitterOf4[T1, T2, T3, T4] = {
-    val __obj = js.Dynamic.literal(emit = emit, listen = listen)
+  def apply[T1, T2, T3, T4](emit: (T1, T2, T3, T4) => scala.Unit, listen: ListenerOf4[T1, T2, T3, T4] => Unlisten): ChangeEmitterOf4[T1, T2, T3, T4] = {
+    val __obj = js.Dynamic.literal(emit = js.Any.fromFunction4(emit), listen = js.Any.fromFunction1(listen))
   
     __obj.asInstanceOf[ChangeEmitterOf4[T1, T2, T3, T4]]
   }

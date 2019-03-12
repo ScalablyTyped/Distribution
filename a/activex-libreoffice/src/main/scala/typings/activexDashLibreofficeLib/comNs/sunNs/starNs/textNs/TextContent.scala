@@ -25,7 +25,7 @@ trait TextContent extends XTextContent {
     * contains the anchor type of the text content.
     * @see com.sun.star.text.TextContentAnchorType
     */
-  var AnchorTypes: activexDashInteropLib.SafeArray[TextContentAnchorType]
+  var AnchorTypes: stdLib.SafeArray[TextContentAnchorType]
   /** specifies if the text content is a shape and how the text is wrapped around the shape. */
   var TextWrap: WrapTextMode
 }
@@ -35,18 +35,18 @@ object TextContent {
   def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
-    AnchorTypes: activexDashInteropLib.SafeArray[TextContentAnchorType],
+    AnchorTypes: stdLib.SafeArray[TextContentAnchorType],
     TextWrap: WrapTextMode,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    attach: js.Function1[XTextRange, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    getAnchor: js.Function0[XTextRange],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    attach: XTextRange => scala.Unit,
+    dispose: () => scala.Unit,
+    getAnchor: () => XTextRange,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit
   ): TextContent = {
-    val __obj = js.Dynamic.literal(Anchor = Anchor, AnchorType = AnchorType, AnchorTypes = AnchorTypes, TextWrap = TextWrap, acquire = acquire, addEventListener = addEventListener, attach = attach, dispose = dispose, getAnchor = getAnchor, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(Anchor = Anchor, AnchorType = AnchorType, AnchorTypes = AnchorTypes, TextWrap = TextWrap, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), attach = js.Any.fromFunction1(attach), dispose = js.Any.fromFunction0(dispose), getAnchor = js.Any.fromFunction0(getAnchor), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener))
   
     __obj.asInstanceOf[TextContent]
   }

@@ -27,7 +27,7 @@ class DiagramWidget protected ()
     */
   def getMouseElement(event: js.Any): stormDashReactDashDiagramsLib.Anon_Element = js.native
   def onKeyUp(event: js.Any): scala.Unit = js.native
-  def onKeyUpPointer(`this`: stdLib.Window, ev: reactLib.KeyboardEvent): scala.Unit = js.native
+  def onKeyUpPointer(`this`: stdLib.Window, ev: stdLib.KeyboardEvent): scala.Unit = js.native
   def onMouseMove(event: js.Any): scala.Unit = js.native
   def onMouseUp(event: js.Any): scala.Unit = js.native
   def startFiringAction(action: stormDashReactDashDiagramsLib.distSrcActionsBaseActionMod.BaseAction): scala.Unit = js.native

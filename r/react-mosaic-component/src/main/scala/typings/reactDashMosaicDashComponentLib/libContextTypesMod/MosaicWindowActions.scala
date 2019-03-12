@@ -35,16 +35,13 @@ trait MosaicWindowActions extends js.Object {
 object MosaicWindowActions {
   @scala.inline
   def apply(
-    connectDragSource: js.Function1[
-      reactLib.reactMod.ReactNs.ReactElement[_], 
-      reactLib.reactMod.ReactNs.ReactElement[_]
-    ],
-    getPath: js.Function0[reactDashMosaicDashComponentLib.libTypesMod.MosaicPath],
-    replaceWithNew: js.Function1[/* repeated */ js.Any, js.Promise[scala.Unit]],
-    setAdditionalControlsOpen: js.Function1[scala.Boolean, scala.Unit],
-    split: js.Function1[/* repeated */ js.Any, js.Promise[scala.Unit]]
+    connectDragSource: reactLib.reactMod.ReactNs.ReactElement[_] => reactLib.reactMod.ReactNs.ReactElement[_],
+    getPath: () => reactDashMosaicDashComponentLib.libTypesMod.MosaicPath,
+    replaceWithNew: /* repeated */ js.Any => js.Promise[scala.Unit],
+    setAdditionalControlsOpen: scala.Boolean => scala.Unit,
+    split: /* repeated */ js.Any => js.Promise[scala.Unit]
   ): MosaicWindowActions = {
-    val __obj = js.Dynamic.literal(connectDragSource = connectDragSource, getPath = getPath, replaceWithNew = replaceWithNew, setAdditionalControlsOpen = setAdditionalControlsOpen, split = split)
+    val __obj = js.Dynamic.literal(connectDragSource = js.Any.fromFunction1(connectDragSource), getPath = js.Any.fromFunction0(getPath), replaceWithNew = js.Any.fromFunction1(replaceWithNew), setAdditionalControlsOpen = js.Any.fromFunction1(setAdditionalControlsOpen), split = js.Any.fromFunction1(split))
   
     __obj.asInstanceOf[MosaicWindowActions]
   }

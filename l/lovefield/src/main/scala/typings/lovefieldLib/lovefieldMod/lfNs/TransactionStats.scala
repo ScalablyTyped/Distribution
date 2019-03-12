@@ -16,13 +16,13 @@ trait TransactionStats extends js.Object {
 object TransactionStats {
   @scala.inline
   def apply(
-    changedTableCount: js.Function0[scala.Double],
-    deletedRowCount: js.Function0[scala.Double],
-    insertedRowCount: js.Function0[scala.Double],
-    success: js.Function0[scala.Boolean],
-    updatedRowCount: js.Function0[scala.Double]
+    changedTableCount: () => scala.Double,
+    deletedRowCount: () => scala.Double,
+    insertedRowCount: () => scala.Double,
+    success: () => scala.Boolean,
+    updatedRowCount: () => scala.Double
   ): TransactionStats = {
-    val __obj = js.Dynamic.literal(changedTableCount = changedTableCount, deletedRowCount = deletedRowCount, insertedRowCount = insertedRowCount, success = success, updatedRowCount = updatedRowCount)
+    val __obj = js.Dynamic.literal(changedTableCount = js.Any.fromFunction0(changedTableCount), deletedRowCount = js.Any.fromFunction0(deletedRowCount), insertedRowCount = js.Any.fromFunction0(insertedRowCount), success = js.Any.fromFunction0(success), updatedRowCount = js.Any.fromFunction0(updatedRowCount))
   
     __obj.asInstanceOf[TransactionStats]
   }

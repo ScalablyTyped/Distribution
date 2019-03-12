@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   // tslint:disable-next-line strict-export-declare-modifiers
-  val default: reactLib.reactMod.ReactNs.SFC[emojiDashMartLib.distDashEsComponentsEmojiNimbleDashEmojiMod.NimbleEmojiProps] = js.native
+  val default: reactLib.reactMod.ReactNs.SFC[NimbleEmojiProps] = js.native
 }
 

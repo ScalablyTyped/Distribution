@@ -45,16 +45,16 @@ trait NestedQuery extends Query {
 object NestedQuery {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    boost: js.Function1[scala.Double, NestedQuery],
-    filter: js.Function1[js.Object, NestedQuery],
-    path: js.Function1[java.lang.String, NestedQuery],
-    query: js.Function1[js.Object, NestedQuery],
-    scope: js.Function1[java.lang.String, NestedQuery],
-    scoreMode: js.Function1[java.lang.String, NestedQuery],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    boost: scala.Double => NestedQuery,
+    filter: js.Object => NestedQuery,
+    path: java.lang.String => NestedQuery,
+    query: js.Object => NestedQuery,
+    scope: java.lang.String => NestedQuery,
+    scoreMode: java.lang.String => NestedQuery,
+    toJSON: () => js.Any
   ): NestedQuery = {
-    val __obj = js.Dynamic.literal(_type = _type, boost = boost, filter = filter, path = path, query = query, scope = scope, scoreMode = scoreMode, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), boost = js.Any.fromFunction1(boost), filter = js.Any.fromFunction1(filter), path = js.Any.fromFunction1(path), query = js.Any.fromFunction1(query), scope = js.Any.fromFunction1(scope), scoreMode = js.Any.fromFunction1(scoreMode), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[NestedQuery]
   }

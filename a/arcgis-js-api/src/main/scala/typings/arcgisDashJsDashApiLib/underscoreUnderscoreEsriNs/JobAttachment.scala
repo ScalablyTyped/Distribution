@@ -39,12 +39,12 @@ object JobAttachment {
     constructor: js.Function,
     filename: java.lang.String,
     folder: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     id: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     storageType: java.lang.String
   ): JobAttachment = {
-    val __obj = js.Dynamic.literal(constructor = constructor, filename = filename, folder = folder, hasOwnProperty = hasOwnProperty, id = id, propertyIsEnumerable = propertyIsEnumerable, storageType = storageType)
+    val __obj = js.Dynamic.literal(constructor = constructor, filename = filename, folder = folder, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), storageType = storageType)
   
     __obj.asInstanceOf[JobAttachment]
   }

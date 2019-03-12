@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class OLEObject protected () extends js.Object {
   var AltHTML: java.lang.String = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var AutoLoad: scala.Boolean = js.native
   var AutoUpdate: scala.Boolean = js.native
-  val Border: Border = js.native
+  val Border: activexDashExcelLib.ExcelNs.Border = js.native
   @JSName("BottomRightCell")
   val BottomRightCell_Original: Range = js.native
   val Creator: XlCreator = js.native
@@ -20,7 +20,7 @@ class OLEObject protected () extends js.Object {
   var `Excel.OLEObject_typekey`: OLEObject = js.native
   var Height: scala.Double = js.native
   val Index: scala.Double = js.native
-  val Interior: Interior = js.native
+  val Interior: activexDashExcelLib.ExcelNs.Interior = js.native
   var Left: scala.Double = js.native
   var LinkedCell: java.lang.String = js.native
   var ListFillRange: java.lang.String = js.native

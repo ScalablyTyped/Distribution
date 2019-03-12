@@ -69,22 +69,22 @@ trait Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEv
 object Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiName {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     bubbleParent: scala.Boolean,
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getApiName: js.Function0[java.lang.String],
-    getBubbleParent: js.Function0[scala.Boolean],
-    getDeliveredNotifications: js.Function1[js.Function1[/* param0 */ UserNotificationCallbackResponse, _], scala.Unit],
-    getPendingNotifications: js.Function1[js.Function1[/* param0 */ UserNotificationCallbackResponse, _], scala.Unit],
-    removeDeliveredNotifications: js.Function0[scala.Unit],
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    removePendingNotifications: js.Function1[js.Array[titaniumLib.TitaniumNs.AppNs.iOSNs.LocalNotification], scala.Unit],
-    requestUserNotificationSettings: js.Function1[js.Function1[/* param0 */ GetUserNotificationSettings, _], scala.Unit],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit]
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
+    getApiName: () => java.lang.String,
+    getBubbleParent: () => scala.Boolean,
+    getDeliveredNotifications: js.Function1[/* param0 */ UserNotificationCallbackResponse, _] => scala.Unit,
+    getPendingNotifications: js.Function1[/* param0 */ UserNotificationCallbackResponse, _] => scala.Unit,
+    removeDeliveredNotifications: () => scala.Unit,
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    removePendingNotifications: js.Array[titaniumLib.TitaniumNs.AppNs.iOSNs.LocalNotification] => scala.Unit,
+    requestUserNotificationSettings: js.Function1[/* param0 */ GetUserNotificationSettings, _] => scala.Unit,
+    setBubbleParent: scala.Boolean => scala.Unit
   ): Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiName = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, getDeliveredNotifications = getDeliveredNotifications, getPendingNotifications = getPendingNotifications, removeDeliveredNotifications = removeDeliveredNotifications, removeEventListener = removeEventListener, removePendingNotifications = removePendingNotifications, requestUserNotificationSettings = requestUserNotificationSettings, setBubbleParent = setBubbleParent)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getDeliveredNotifications = js.Any.fromFunction1(getDeliveredNotifications), getPendingNotifications = js.Any.fromFunction1(getPendingNotifications), removeDeliveredNotifications = js.Any.fromFunction0(removeDeliveredNotifications), removeEventListener = js.Any.fromFunction2(removeEventListener), removePendingNotifications = js.Any.fromFunction1(removePendingNotifications), requestUserNotificationSettings = js.Any.fromFunction1(requestUserNotificationSettings), setBubbleParent = js.Any.fromFunction1(setBubbleParent))
   
     __obj.asInstanceOf[Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiName]
   }

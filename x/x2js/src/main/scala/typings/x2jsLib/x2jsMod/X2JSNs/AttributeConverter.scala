@@ -31,10 +31,10 @@ trait AttributeConverter extends js.Object {
 object AttributeConverter {
   @scala.inline
   def apply(
-    convert: js.Function2[java.lang.String, js.Any, java.lang.String],
-    test: js.Function2[java.lang.String, js.Any, scala.Boolean]
+    convert: (java.lang.String, js.Any) => java.lang.String,
+    test: (java.lang.String, js.Any) => scala.Boolean
   ): AttributeConverter = {
-    val __obj = js.Dynamic.literal(convert = convert, test = test)
+    val __obj = js.Dynamic.literal(convert = js.Any.fromFunction2(convert), test = js.Any.fromFunction2(test))
   
     __obj.asInstanceOf[AttributeConverter]
   }

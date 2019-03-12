@@ -41,8 +41,8 @@ trait Props extends js.Object {
 object Props {
   @scala.inline
   def apply(
-    afterHide: js.Function0[scala.Unit] = null,
-    afterShow: js.Function0[scala.Unit] = null,
+    afterHide: () => scala.Unit = null,
+    afterShow: () => scala.Unit = null,
     border: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     `class`: java.lang.String = null,
@@ -71,8 +71,8 @@ object Props {
     wrapper: reactDashTooltipLib.reactDashTooltipLibStrings.div | reactDashTooltipLib.reactDashTooltipLibStrings.span = null
   ): Props = {
     val __obj = js.Dynamic.literal()
-    if (afterHide != null) __obj.updateDynamic("afterHide")(afterHide)
-    if (afterShow != null) __obj.updateDynamic("afterShow")(afterShow)
+    if (afterHide != null) __obj.updateDynamic("afterHide")(js.Any.fromFunction0(afterHide))
+    if (afterShow != null) __obj.updateDynamic("afterShow")(js.Any.fromFunction0(afterShow))
     if (!js.isUndefined(border)) __obj.updateDynamic("border")(border)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (`class` != null) __obj.updateDynamic("class")(`class`)

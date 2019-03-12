@@ -9,10 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def default(document: typedDashGraphqlLib.graphqlMod.Document): js.Function1[/* WrappedComponent */ js.Any, _] = js.native
-  def default(
-    document: typedDashGraphqlLib.graphqlMod.Document,
-    operationOptions: apolloDashReactLib.libGraphqlMod.OperationOption
-  ): js.Function1[/* WrappedComponent */ js.Any, _] = js.native
+  def default(document: typedDashGraphqlLib.graphqlMod.Document, operationOptions: OperationOption): js.Function1[/* WrappedComponent */ js.Any, _] = js.native
   def withApollo(WrappedComponent: js.Any): js.Any = js.native
 }
 

@@ -25,12 +25,12 @@ trait RadiumConfig extends js.Object {
 object RadiumConfig {
   @scala.inline
   def apply(
-    matchMedia: js.Function1[/* mediaQuery */ java.lang.String, stdLib.MediaQueryList] = null,
+    matchMedia: /* mediaQuery */ java.lang.String => stdLib.MediaQueryList = null,
     plugins: js.Array[_] = null,
     userAgent: java.lang.String = null
   ): RadiumConfig = {
     val __obj = js.Dynamic.literal()
-    if (matchMedia != null) __obj.updateDynamic("matchMedia")(matchMedia)
+    if (matchMedia != null) __obj.updateDynamic("matchMedia")(js.Any.fromFunction1(matchMedia))
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)
     if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
     __obj.asInstanceOf[RadiumConfig]

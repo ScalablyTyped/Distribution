@@ -12,13 +12,9 @@ trait OnTouchListener extends js.Object {
 object OnTouchListener {
   @scala.inline
   def apply(
-    onTouch: js.Function2[
-      androiduixLib.androidNs.viewNs.View, 
-      androiduixLib.androidNs.viewNs.MotionEvent, 
-      scala.Unit
-    ]
+    onTouch: (androiduixLib.androidNs.viewNs.View, androiduixLib.androidNs.viewNs.MotionEvent) => scala.Unit
   ): OnTouchListener = {
-    val __obj = js.Dynamic.literal(onTouch = onTouch)
+    val __obj = js.Dynamic.literal(onTouch = js.Any.fromFunction2(onTouch))
   
     __obj.asInstanceOf[OnTouchListener]
   }

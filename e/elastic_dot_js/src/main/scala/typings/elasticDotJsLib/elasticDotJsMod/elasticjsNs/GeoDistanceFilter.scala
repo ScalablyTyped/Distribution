@@ -70,20 +70,20 @@ trait GeoDistanceFilter extends Filter {
 object GeoDistanceFilter {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cache: js.Function1[scala.Boolean, GeoDistanceFilter],
-    cacheKey: js.Function1[java.lang.String, GeoDistanceFilter],
-    distance: js.Function1[stdLib.Number, GeoDistanceFilter],
-    distanceType: js.Function1[java.lang.String, GeoDistanceFilter],
-    field: js.Function1[java.lang.String, GeoDistanceFilter],
-    name: js.Function1[java.lang.String, GeoDistanceFilter],
-    normalize: js.Function1[java.lang.String, GeoDistanceFilter],
-    optimizeBbox: js.Function1[java.lang.String, GeoDistanceFilter],
-    point: js.Function1[GeoPoint, GeoDistanceFilter],
-    toJSON: js.Function0[GeoDistanceFilter],
-    unit: js.Function1[java.lang.String, GeoDistanceFilter]
+    _type: () => java.lang.String,
+    cache: scala.Boolean => GeoDistanceFilter,
+    cacheKey: java.lang.String => GeoDistanceFilter,
+    distance: stdLib.Number => GeoDistanceFilter,
+    distanceType: java.lang.String => GeoDistanceFilter,
+    field: java.lang.String => GeoDistanceFilter,
+    name: java.lang.String => GeoDistanceFilter,
+    normalize: java.lang.String => GeoDistanceFilter,
+    optimizeBbox: java.lang.String => GeoDistanceFilter,
+    point: GeoPoint => GeoDistanceFilter,
+    toJSON: () => GeoDistanceFilter,
+    unit: java.lang.String => GeoDistanceFilter
   ): GeoDistanceFilter = {
-    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, distance = distance, distanceType = distanceType, field = field, name = name, normalize = normalize, optimizeBbox = optimizeBbox, point = point, toJSON = toJSON, unit = unit)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), distance = js.Any.fromFunction1(distance), distanceType = js.Any.fromFunction1(distanceType), field = js.Any.fromFunction1(field), name = js.Any.fromFunction1(name), normalize = js.Any.fromFunction1(normalize), optimizeBbox = js.Any.fromFunction1(optimizeBbox), point = js.Any.fromFunction1(point), toJSON = js.Any.fromFunction0(toJSON), unit = js.Any.fromFunction1(unit))
   
     __obj.asInstanceOf[GeoDistanceFilter]
   }

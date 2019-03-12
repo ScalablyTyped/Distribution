@@ -16,13 +16,13 @@ trait IRectangle extends js.Object {
 object IRectangle {
   @scala.inline
   def apply(
-    contains: js.Function1[IPoint, scala.Boolean],
+    contains: IPoint => scala.Boolean,
     height: scala.Double,
     width: scala.Double,
     x: scala.Double,
     y: scala.Double
   ): IRectangle = {
-    val __obj = js.Dynamic.literal(contains = contains, height = height, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), height = height, width = width, x = x, y = y)
   
     __obj.asInstanceOf[IRectangle]
   }

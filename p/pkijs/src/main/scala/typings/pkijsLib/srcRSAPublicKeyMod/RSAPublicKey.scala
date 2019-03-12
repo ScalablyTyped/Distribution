@@ -21,14 +21,14 @@ trait RSAPublicKey extends js.Object {
 object RSAPublicKey {
   @scala.inline
   def apply(
-    fromJSON: js.Function1[stdLib.JsonWebKey, scala.Unit],
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromJSON: stdLib.JsonWebKey => scala.Unit,
+    fromSchema: js.Any => scala.Unit,
     modulus: asn1jsLib.asn1jsMod.Integer,
     publicExponent: asn1jsLib.asn1jsMod.Integer,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): RSAPublicKey = {
-    val __obj = js.Dynamic.literal(fromJSON = fromJSON, fromSchema = fromSchema, modulus = modulus, publicExponent = publicExponent, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(fromJSON = js.Any.fromFunction1(fromJSON), fromSchema = js.Any.fromFunction1(fromSchema), modulus = modulus, publicExponent = publicExponent, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[RSAPublicKey]
   }

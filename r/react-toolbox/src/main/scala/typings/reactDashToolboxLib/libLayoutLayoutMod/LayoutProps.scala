@@ -11,7 +11,7 @@ trait LayoutProps
     * Children to pass through the component.
     */
   var children: js.UndefOr[
-    reactLib.reactMod.Global.JSXNs.Element | coreDashJsLib.Array[reactLib.reactMod.Global.JSXNs.Element]
+    reactLib.reactMod.Global.JSXNs.Element | js.Array[reactLib.reactMod.Global.JSXNs.Element]
   ] = js.undefined
   /**
     * Classnames object defining the component style.
@@ -22,31 +22,31 @@ trait LayoutProps
 object LayoutProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.Global.JSXNs.Element | coreDashJsLib.Array[reactLib.reactMod.Global.JSXNs.Element] = null,
+    children: reactLib.reactMod.Global.JSXNs.Element | js.Array[reactLib.reactMod.Global.JSXNs.Element] = null,
     className: java.lang.String = null,
     key: reactLib.reactMod.ReactNs.Key = null,
-    onClick: coreDashJsLib.Function = null,
-    onContextMenu: coreDashJsLib.Function = null,
-    onDoubleClick: coreDashJsLib.Function = null,
-    onDrag: coreDashJsLib.Function = null,
-    onDragEnd: coreDashJsLib.Function = null,
-    onDragEnter: coreDashJsLib.Function = null,
-    onDragExit: coreDashJsLib.Function = null,
-    onDragLeave: coreDashJsLib.Function = null,
-    onDragOver: coreDashJsLib.Function = null,
-    onDragStart: coreDashJsLib.Function = null,
-    onDrop: coreDashJsLib.Function = null,
-    onMouseDown: coreDashJsLib.Function = null,
-    onMouseEnter: coreDashJsLib.Function = null,
-    onMouseLeave: coreDashJsLib.Function = null,
-    onMouseMove: coreDashJsLib.Function = null,
-    onMouseOut: coreDashJsLib.Function = null,
-    onMouseOver: coreDashJsLib.Function = null,
-    onMouseUp: coreDashJsLib.Function = null,
-    onTouchCancel: coreDashJsLib.Function = null,
-    onTouchEnd: coreDashJsLib.Function = null,
-    onTouchMove: coreDashJsLib.Function = null,
-    onTouchStart: coreDashJsLib.Function = null,
+    onClick: js.Function = null,
+    onContextMenu: js.Function = null,
+    onDoubleClick: js.Function = null,
+    onDrag: js.Function = null,
+    onDragEnd: js.Function = null,
+    onDragEnter: js.Function = null,
+    onDragExit: js.Function = null,
+    onDragLeave: js.Function = null,
+    onDragOver: js.Function = null,
+    onDragStart: js.Function = null,
+    onDrop: js.Function = null,
+    onMouseDown: js.Function = null,
+    onMouseEnter: js.Function = null,
+    onMouseLeave: js.Function = null,
+    onMouseMove: js.Function = null,
+    onMouseOut: js.Function = null,
+    onMouseOver: js.Function = null,
+    onMouseUp: js.Function = null,
+    onTouchCancel: js.Function = null,
+    onTouchEnd: js.Function = null,
+    onTouchMove: js.Function = null,
+    onTouchStart: js.Function = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     theme: LayoutTheme = null
   ): LayoutProps = {

@@ -70,20 +70,20 @@ trait ASPxClientTimeInterval extends js.Object {
 object ASPxClientTimeInterval {
   @scala.inline
   def apply(
-    Contains: js.Function1[ASPxClientTimeInterval, scala.Boolean],
-    Equals: js.Function1[ASPxClientTimeInterval, scala.Boolean],
-    GetAllDay: js.Function0[scala.Boolean],
-    GetDuration: js.Function0[scala.Double],
-    GetEnd: js.Function0[stdLib.Date],
-    GetStart: js.Function0[stdLib.Date],
-    IntersectsWith: js.Function1[ASPxClientTimeInterval, scala.Boolean],
-    IntersectsWithExcludingBounds: js.Function1[ASPxClientTimeInterval, scala.Boolean],
-    SetAllDay: js.Function1[scala.Boolean, scala.Unit],
-    SetDuration: js.Function1[js.Any, scala.Unit],
-    SetEnd: js.Function1[stdLib.Date, scala.Unit],
-    SetStart: js.Function1[stdLib.Date, scala.Unit]
+    Contains: ASPxClientTimeInterval => scala.Boolean,
+    Equals: ASPxClientTimeInterval => scala.Boolean,
+    GetAllDay: () => scala.Boolean,
+    GetDuration: () => scala.Double,
+    GetEnd: () => stdLib.Date,
+    GetStart: () => stdLib.Date,
+    IntersectsWith: ASPxClientTimeInterval => scala.Boolean,
+    IntersectsWithExcludingBounds: ASPxClientTimeInterval => scala.Boolean,
+    SetAllDay: scala.Boolean => scala.Unit,
+    SetDuration: js.Any => scala.Unit,
+    SetEnd: stdLib.Date => scala.Unit,
+    SetStart: stdLib.Date => scala.Unit
   ): ASPxClientTimeInterval = {
-    val __obj = js.Dynamic.literal(Contains = Contains, Equals = Equals, GetAllDay = GetAllDay, GetDuration = GetDuration, GetEnd = GetEnd, GetStart = GetStart, IntersectsWith = IntersectsWith, IntersectsWithExcludingBounds = IntersectsWithExcludingBounds, SetAllDay = SetAllDay, SetDuration = SetDuration, SetEnd = SetEnd, SetStart = SetStart)
+    val __obj = js.Dynamic.literal(Contains = js.Any.fromFunction1(Contains), Equals = js.Any.fromFunction1(Equals), GetAllDay = js.Any.fromFunction0(GetAllDay), GetDuration = js.Any.fromFunction0(GetDuration), GetEnd = js.Any.fromFunction0(GetEnd), GetStart = js.Any.fromFunction0(GetStart), IntersectsWith = js.Any.fromFunction1(IntersectsWith), IntersectsWithExcludingBounds = js.Any.fromFunction1(IntersectsWithExcludingBounds), SetAllDay = js.Any.fromFunction1(SetAllDay), SetDuration = js.Any.fromFunction1(SetDuration), SetEnd = js.Any.fromFunction1(SetEnd), SetStart = js.Any.fromFunction1(SetStart))
   
     __obj.asInstanceOf[ASPxClientTimeInterval]
   }

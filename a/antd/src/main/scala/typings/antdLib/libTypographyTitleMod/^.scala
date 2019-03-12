@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/typography/Title", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.SFC[antdLib.libTypographyTitleMod.TitleProps] = js.native
+  val default: reactLib.reactMod.ReactNs.SFC[TitleProps] = js.native
 }
 

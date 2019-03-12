@@ -49,8 +49,8 @@ object RealWorldSize {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     `type`: java.lang.String,
     valueUnit: java.lang.String,
     field: java.lang.String = null,
@@ -58,7 +58,7 @@ object RealWorldSize {
     valueExpression: java.lang.String = null,
     valueRepresentation: java.lang.String = null
   ): RealWorldSize = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, valueUnit = valueUnit)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), valueUnit = valueUnit)
     __obj.updateDynamic("type")(`type`)
     if (field != null) __obj.updateDynamic("field")(field)
     if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)

@@ -22,11 +22,8 @@ trait CallCredentials extends js.Object {
 
 object CallCredentials {
   @scala.inline
-  def apply(
-    compose: js.Function1[CallCredentials, CallCredentials],
-    generateMetadata: js.Function1[js.Object, js.Promise[Metadata]]
-  ): CallCredentials = {
-    val __obj = js.Dynamic.literal(compose = compose, generateMetadata = generateMetadata)
+  def apply(compose: CallCredentials => CallCredentials, generateMetadata: js.Object => js.Promise[Metadata]): CallCredentials = {
+    val __obj = js.Dynamic.literal(compose = js.Any.fromFunction1(compose), generateMetadata = js.Any.fromFunction1(generateMetadata))
   
     __obj.asInstanceOf[CallCredentials]
   }

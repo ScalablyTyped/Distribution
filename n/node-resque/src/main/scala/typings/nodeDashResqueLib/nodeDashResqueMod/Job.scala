@@ -14,11 +14,11 @@ trait Job[TResult] extends js.Object {
 object Job {
   @scala.inline
   def apply[TResult](
-    perform: js.Function1[/* repeated */ js.Any, js.Promise[TResult]],
+    perform: /* repeated */ js.Any => js.Promise[TResult],
     pluginOptions: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     plugins: js.Array[java.lang.String] = null
   ): Job[TResult] = {
-    val __obj = js.Dynamic.literal(perform = perform)
+    val __obj = js.Dynamic.literal(perform = js.Any.fromFunction1(perform))
     if (pluginOptions != null) __obj.updateDynamic("pluginOptions")(pluginOptions)
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)
     __obj.asInstanceOf[Job[TResult]]

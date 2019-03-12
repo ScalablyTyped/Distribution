@@ -20,48 +20,22 @@ object FoldableWithIndex1 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS */, I](
     URI: F,
-    foldMap: js.Function1[
-      fpDashTsLib.libMonoidMod.Monoid[js.Any], 
-      js.Function2[
-        /* fa */ fpDashTsLib.libHKTMod.Type[F, _], 
-        /* f */ js.Function1[/* a */ js.Any, js.Any], 
-        js.Any
-      ]
-    ],
-    foldMapWithIndex: js.Function1[
-      fpDashTsLib.libMonoidMod.Monoid[js.Any], 
-      js.Function2[
-        /* fa */ fpDashTsLib.libHKTMod.Type[F, _], 
-        /* f */ js.Function2[/* i */ I, /* a */ js.Any, js.Any], 
-        js.Any
-      ]
-    ],
-    foldr: js.Function3[
-      fpDashTsLib.libHKTMod.Type[F, js.Any], 
-      js.Any, 
-      js.Function2[js.Any, js.Any, js.Any], 
+    foldMap: fpDashTsLib.libMonoidMod.Monoid[js.Any] => js.Function2[
+      /* fa */ fpDashTsLib.libHKTMod.Type[F, _], 
+      /* f */ js.Function1[/* a */ js.Any, js.Any], 
       js.Any
     ],
-    foldrWithIndex: js.Function3[
-      fpDashTsLib.libHKTMod.Type[F, js.Any], 
-      js.Any, 
-      js.Function3[/* i */ I, js.Any, js.Any, js.Any], 
+    foldMapWithIndex: fpDashTsLib.libMonoidMod.Monoid[js.Any] => js.Function2[
+      /* fa */ fpDashTsLib.libHKTMod.Type[F, _], 
+      /* f */ js.Function2[/* i */ I, /* a */ js.Any, js.Any], 
       js.Any
     ],
-    reduce: js.Function3[
-      fpDashTsLib.libHKTMod.Type[F, js.Any], 
-      js.Any, 
-      js.Function2[js.Any, js.Any, js.Any], 
-      js.Any
-    ],
-    reduceWithIndex: js.Function3[
-      fpDashTsLib.libHKTMod.Type[F, js.Any], 
-      js.Any, 
-      js.Function3[/* i */ I, js.Any, js.Any, js.Any], 
-      js.Any
-    ]
+    foldr: (fpDashTsLib.libHKTMod.Type[F, js.Any], js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any,
+    foldrWithIndex: (fpDashTsLib.libHKTMod.Type[F, js.Any], js.Any, js.Function3[/* i */ I, js.Any, js.Any, js.Any]) => js.Any,
+    reduce: (fpDashTsLib.libHKTMod.Type[F, js.Any], js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any,
+    reduceWithIndex: (fpDashTsLib.libHKTMod.Type[F, js.Any], js.Any, js.Function3[/* i */ I, js.Any, js.Any, js.Any]) => js.Any
   ): FoldableWithIndex1[F, I] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], foldMap = foldMap, foldMapWithIndex = foldMapWithIndex, foldr = foldr, foldrWithIndex = foldrWithIndex, reduce = reduce, reduceWithIndex = reduceWithIndex)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], foldMap = js.Any.fromFunction1(foldMap), foldMapWithIndex = js.Any.fromFunction1(foldMapWithIndex), foldr = js.Any.fromFunction3(foldr), foldrWithIndex = js.Any.fromFunction3(foldrWithIndex), reduce = js.Any.fromFunction3(reduce), reduceWithIndex = js.Any.fromFunction3(reduceWithIndex))
   
     __obj.asInstanceOf[FoldableWithIndex1[F, I]]
   }

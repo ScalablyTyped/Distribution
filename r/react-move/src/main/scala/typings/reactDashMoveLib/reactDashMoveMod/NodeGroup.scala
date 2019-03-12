@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-move", "NodeGroup")
 @js.native
 class NodeGroup ()
-  extends reactDashMoveLib.nodegroupMod.default
+  extends reactDashMoveLib.nodeGroupMod.default
 

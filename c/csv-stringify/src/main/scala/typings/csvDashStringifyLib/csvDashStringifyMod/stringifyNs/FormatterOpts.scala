@@ -14,14 +14,14 @@ trait FormatterOpts extends js.Object {
 object FormatterOpts {
   @scala.inline
   def apply(
-    bool: js.Function1[/* value */ scala.Boolean, java.lang.String] = null,
-    date: js.Function1[/* value */ stdLib.Date, java.lang.String] = null,
-    `object`: js.Function1[/* value */ js.Any, java.lang.String] = null
+    bool: /* value */ scala.Boolean => java.lang.String = null,
+    date: /* value */ stdLib.Date => java.lang.String = null,
+    `object`: /* value */ js.Any => java.lang.String = null
   ): FormatterOpts = {
     val __obj = js.Dynamic.literal()
-    if (bool != null) __obj.updateDynamic("bool")(bool)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (bool != null) __obj.updateDynamic("bool")(js.Any.fromFunction1(bool))
+    if (date != null) __obj.updateDynamic("date")(js.Any.fromFunction1(date))
+    if (`object` != null) __obj.updateDynamic("object")(js.Any.fromFunction1(`object`))
     __obj.asInstanceOf[FormatterOpts]
   }
 }

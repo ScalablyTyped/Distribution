@@ -17,14 +17,14 @@ trait ILogger extends js.Object {
 object ILogger {
   @scala.inline
   def apply(
-    debug: js.Function0[scala.Boolean],
-    error: js.Function0[scala.Boolean],
-    fatal: js.Function0[scala.Boolean],
-    information: js.Function0[scala.Boolean],
-    log: js.Function1[java.lang.String, scala.Unit],
-    warning: js.Function0[scala.Boolean]
+    debug: () => scala.Boolean,
+    error: () => scala.Boolean,
+    fatal: () => scala.Boolean,
+    information: () => scala.Boolean,
+    log: java.lang.String => scala.Unit,
+    warning: () => scala.Boolean
   ): ILogger = {
-    val __obj = js.Dynamic.literal(debug = debug, error = error, fatal = fatal, information = information, log = log, warning = warning)
+    val __obj = js.Dynamic.literal(debug = js.Any.fromFunction0(debug), error = js.Any.fromFunction0(error), fatal = js.Any.fromFunction0(fatal), information = js.Any.fromFunction0(information), log = js.Any.fromFunction1(log), warning = js.Any.fromFunction0(warning))
   
     __obj.asInstanceOf[ILogger]
   }

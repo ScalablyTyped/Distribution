@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FieldProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement]
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement]
      with /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var autofocus: scala.Boolean
   var disabled: scala.Boolean
@@ -34,16 +34,16 @@ object FieldProps {
     formData: js.Any,
     idSchema: IdSchema,
     name: java.lang.String,
-    onChange: js.Function1[js.Any, scala.Unit],
+    onChange: js.Any => scala.Unit,
     readonly: scala.Boolean,
     registry: reactDashJsonschemaDashFormLib.Anon_Definitions,
     required: scala.Boolean,
     schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6,
     uiSchema: UiSchema,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] = null,
     StringDictionary: /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): FieldProps = {
-    val __obj = js.Dynamic.literal(autofocus = autofocus, disabled = disabled, errorSchema = errorSchema, formContext = formContext, formData = formData, idSchema = idSchema, name = name, onChange = onChange, readonly = readonly, registry = registry, required = required, schema = schema, uiSchema = uiSchema)
+    val __obj = js.Dynamic.literal(autofocus = autofocus, disabled = disabled, errorSchema = errorSchema, formContext = formContext, formData = formData, idSchema = idSchema, name = name, onChange = js.Any.fromFunction1(onChange), readonly = readonly, registry = registry, required = required, schema = schema, uiSchema = uiSchema)
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[FieldProps]

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Table protected () extends js.Object {
   var AllowAutoFit: scala.Boolean = js.native
   var AllowPageBreaks: scala.Boolean = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var ApplyStyleColumnBands: scala.Boolean = js.native
   var ApplyStyleFirstColumn: scala.Boolean = js.native
   var ApplyStyleHeadingRows: scala.Boolean = js.native
@@ -18,9 +18,9 @@ class Table protected () extends js.Object {
   var ApplyStyleLastRow: scala.Boolean = js.native
   var ApplyStyleRowBands: scala.Boolean = js.native
   val AutoFormatType: scala.Double = js.native
-  var Borders: Borders = js.native
+  var Borders: activexDashWordLib.WordNs.Borders = js.native
   var BottomPadding: scala.Double = js.native
-  val Columns: Columns = js.native
+  val Columns: activexDashWordLib.WordNs.Columns = js.native
   val Creator: scala.Double = js.native
   var Descr: java.lang.String = js.native
   var ID: java.lang.String = js.native
@@ -29,14 +29,14 @@ class Table protected () extends js.Object {
   val Parent: js.Any = js.native
   var PreferredWidth: scala.Double = js.native
   var PreferredWidthType: WdPreferredWidthType = js.native
-  val Range: Range = js.native
+  val Range: activexDashWordLib.WordNs.Range = js.native
   var RightPadding: scala.Double = js.native
-  val Rows: Rows = js.native
-  val Shading: Shading = js.native
+  val Rows: activexDashWordLib.WordNs.Rows = js.native
+  val Shading: activexDashWordLib.WordNs.Shading = js.native
   var Spacing: scala.Double = js.native
   var Style: js.Any = js.native
   var TableDirection: WdTableDirection = js.native
-  val Tables: Tables = js.native
+  val Tables: activexDashWordLib.WordNs.Tables = js.native
   var Title: java.lang.String = js.native
   var TopPadding: scala.Double = js.native
   val Uniform: scala.Boolean = js.native
@@ -55,7 +55,7 @@ class Table protected () extends js.Object {
     ApplyLastColumn: js.UndefOr[js.Any],
     AutoFit: js.UndefOr[js.Any]
   ): scala.Unit = js.native
-  def Cell(Row: scala.Double, Column: scala.Double): Cell = js.native
+  def Cell(Row: scala.Double, Column: scala.Double): activexDashWordLib.WordNs.Cell = js.native
   def ConvertToText(): Range = js.native
   def ConvertToText(Separator: js.Any): Range = js.native
   def ConvertToText(Separator: js.Any, NestedTables: js.Any): Range = js.native

@@ -31,17 +31,17 @@ object Props {
     background: reactLib.reactMod.ReactNs.ReactType[_] = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    getNextHandlePosition: js.Function2[/* handleIdx */ scala.Double, /* percentPosition */ scala.Double, scala.Double] = null,
+    getNextHandlePosition: (/* handleIdx */ scala.Double, /* percentPosition */ scala.Double) => scala.Double = null,
     handle: reactLib.reactMod.ReactNs.ReactType[_] = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
-    onChange: js.Function1[/* publicState */ PublicState, _] = null,
-    onClick: js.Function0[_] = null,
-    onKeyPress: js.Function0[_] = null,
-    onSliderDragEnd: js.Function0[_] = null,
-    onSliderDragMove: js.Function0[_] = null,
-    onSliderDragStart: js.Function0[_] = null,
-    onValuesUpdated: js.Function1[/* publicState */ PublicState, _] = null,
+    onChange: /* publicState */ PublicState => _ = null,
+    onClick: () => _ = null,
+    onKeyPress: () => _ = null,
+    onSliderDragEnd: () => _ = null,
+    onSliderDragMove: () => _ = null,
+    onSliderDragStart: () => _ = null,
+    onValuesUpdated: /* publicState */ PublicState => _ = null,
     orientation: Orientation = null,
     pitComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
     pitPoints: js.Array[scala.Double] = null,
@@ -56,17 +56,17 @@ object Props {
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (getNextHandlePosition != null) __obj.updateDynamic("getNextHandlePosition")(getNextHandlePosition)
+    if (getNextHandlePosition != null) __obj.updateDynamic("getNextHandlePosition")(js.Any.fromFunction2(getNextHandlePosition))
     if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
-    if (onSliderDragEnd != null) __obj.updateDynamic("onSliderDragEnd")(onSliderDragEnd)
-    if (onSliderDragMove != null) __obj.updateDynamic("onSliderDragMove")(onSliderDragMove)
-    if (onSliderDragStart != null) __obj.updateDynamic("onSliderDragStart")(onSliderDragStart)
-    if (onValuesUpdated != null) __obj.updateDynamic("onValuesUpdated")(onValuesUpdated)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction0(onKeyPress))
+    if (onSliderDragEnd != null) __obj.updateDynamic("onSliderDragEnd")(js.Any.fromFunction0(onSliderDragEnd))
+    if (onSliderDragMove != null) __obj.updateDynamic("onSliderDragMove")(js.Any.fromFunction0(onSliderDragMove))
+    if (onSliderDragStart != null) __obj.updateDynamic("onSliderDragStart")(js.Any.fromFunction0(onSliderDragStart))
+    if (onValuesUpdated != null) __obj.updateDynamic("onValuesUpdated")(js.Any.fromFunction1(onValuesUpdated))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation)
     if (pitComponent != null) __obj.updateDynamic("pitComponent")(pitComponent.asInstanceOf[js.Any])
     if (pitPoints != null) __obj.updateDynamic("pitPoints")(pitPoints)

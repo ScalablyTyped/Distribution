@@ -33,13 +33,13 @@ object IdentityManagerGetCredentialOptions {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     error: Error = null,
     oAuthPopupConfirmation: js.UndefOr[scala.Boolean] = js.undefined,
     token: java.lang.String = null
   ): IdentityManagerGetCredentialOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (error != null) __obj.updateDynamic("error")(error)
     if (!js.isUndefined(oAuthPopupConfirmation)) __obj.updateDynamic("oAuthPopupConfirmation")(oAuthPopupConfirmation)
     if (token != null) __obj.updateDynamic("token")(token)

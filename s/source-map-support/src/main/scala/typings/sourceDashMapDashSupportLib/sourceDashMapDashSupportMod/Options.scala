@@ -27,8 +27,8 @@ object Options {
     hookRequire: js.UndefOr[scala.Boolean] = js.undefined,
     overrideRetrieveFile: js.UndefOr[scala.Boolean] = js.undefined,
     overrideRetrieveSourceMap: js.UndefOr[scala.Boolean] = js.undefined,
-    retrieveFile: js.Function1[/* path */ java.lang.String, java.lang.String] = null,
-    retrieveSourceMap: js.Function1[/* source */ java.lang.String, UrlAndMap | scala.Null] = null
+    retrieveFile: /* path */ java.lang.String => java.lang.String = null,
+    retrieveSourceMap: /* source */ java.lang.String => UrlAndMap | scala.Null = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(emptyCacheBetweenOperations)) __obj.updateDynamic("emptyCacheBetweenOperations")(emptyCacheBetweenOperations)
@@ -37,8 +37,8 @@ object Options {
     if (!js.isUndefined(hookRequire)) __obj.updateDynamic("hookRequire")(hookRequire)
     if (!js.isUndefined(overrideRetrieveFile)) __obj.updateDynamic("overrideRetrieveFile")(overrideRetrieveFile)
     if (!js.isUndefined(overrideRetrieveSourceMap)) __obj.updateDynamic("overrideRetrieveSourceMap")(overrideRetrieveSourceMap)
-    if (retrieveFile != null) __obj.updateDynamic("retrieveFile")(retrieveFile)
-    if (retrieveSourceMap != null) __obj.updateDynamic("retrieveSourceMap")(retrieveSourceMap)
+    if (retrieveFile != null) __obj.updateDynamic("retrieveFile")(js.Any.fromFunction1(retrieveFile))
+    if (retrieveSourceMap != null) __obj.updateDynamic("retrieveSourceMap")(js.Any.fromFunction1(retrieveSourceMap))
     __obj.asInstanceOf[Options]
   }
 }

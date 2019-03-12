@@ -111,7 +111,7 @@ object XChartDocument {
   @scala.inline
   def apply(
     Area: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
-    Args: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    Args: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     CurrentController: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController,
     CurrentSelection: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     Data: XChartData,
@@ -120,39 +120,33 @@ object XChartDocument {
     SubTitle: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape,
     Title: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape,
     URL: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    attachData: js.Function1[XChartData, scala.Unit],
-    attachResource: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Boolean
-    ],
-    connectController: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, scala.Unit],
-    disconnectController: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    getArea: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    getArgs: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    getCurrentController: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController],
-    getCurrentSelection: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    getData: js.Function0[XChartData],
-    getDiagram: js.Function0[XDiagram],
-    getLegend: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape],
-    getSubTitle: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape],
-    getTitle: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape],
-    getURL: js.Function0[java.lang.String],
-    hasControllersLocked: js.Function0[scala.Boolean],
-    lockControllers: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    setCurrentController: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, scala.Unit],
-    setDiagram: js.Function1[XDiagram, scala.Unit],
-    unlockControllers: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    attachData: XChartData => scala.Unit,
+    attachResource: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Boolean,
+    connectController: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController => scala.Unit,
+    disconnectController: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController => scala.Unit,
+    dispose: () => scala.Unit,
+    getArea: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    getArgs: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    getCurrentController: () => activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController,
+    getCurrentSelection: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getData: () => XChartData,
+    getDiagram: () => XDiagram,
+    getLegend: () => activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape,
+    getSubTitle: () => activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape,
+    getTitle: () => activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape,
+    getURL: () => java.lang.String,
+    hasControllersLocked: () => scala.Boolean,
+    lockControllers: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    setCurrentController: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController => scala.Unit,
+    setDiagram: XDiagram => scala.Unit,
+    unlockControllers: () => scala.Unit
   ): XChartDocument = {
-    val __obj = js.Dynamic.literal(Area = Area, Args = Args, CurrentController = CurrentController, CurrentSelection = CurrentSelection, Data = Data, Diagram = Diagram, Legend = Legend, SubTitle = SubTitle, Title = Title, URL = URL, acquire = acquire, addEventListener = addEventListener, attachData = attachData, attachResource = attachResource, connectController = connectController, disconnectController = disconnectController, dispose = dispose, getArea = getArea, getArgs = getArgs, getCurrentController = getCurrentController, getCurrentSelection = getCurrentSelection, getData = getData, getDiagram = getDiagram, getLegend = getLegend, getSubTitle = getSubTitle, getTitle = getTitle, getURL = getURL, hasControllersLocked = hasControllersLocked, lockControllers = lockControllers, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setCurrentController = setCurrentController, setDiagram = setDiagram, unlockControllers = unlockControllers)
+    val __obj = js.Dynamic.literal(Area = Area, Args = Args, CurrentController = CurrentController, CurrentSelection = CurrentSelection, Data = Data, Diagram = Diagram, Legend = Legend, SubTitle = SubTitle, Title = Title, URL = URL, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), attachData = js.Any.fromFunction1(attachData), attachResource = js.Any.fromFunction2(attachResource), connectController = js.Any.fromFunction1(connectController), disconnectController = js.Any.fromFunction1(disconnectController), dispose = js.Any.fromFunction0(dispose), getArea = js.Any.fromFunction0(getArea), getArgs = js.Any.fromFunction0(getArgs), getCurrentController = js.Any.fromFunction0(getCurrentController), getCurrentSelection = js.Any.fromFunction0(getCurrentSelection), getData = js.Any.fromFunction0(getData), getDiagram = js.Any.fromFunction0(getDiagram), getLegend = js.Any.fromFunction0(getLegend), getSubTitle = js.Any.fromFunction0(getSubTitle), getTitle = js.Any.fromFunction0(getTitle), getURL = js.Any.fromFunction0(getURL), hasControllersLocked = js.Any.fromFunction0(hasControllersLocked), lockControllers = js.Any.fromFunction0(lockControllers), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), setCurrentController = js.Any.fromFunction1(setCurrentController), setDiagram = js.Any.fromFunction1(setDiagram), unlockControllers = js.Any.fromFunction0(unlockControllers))
   
     __obj.asInstanceOf[XChartDocument]
   }

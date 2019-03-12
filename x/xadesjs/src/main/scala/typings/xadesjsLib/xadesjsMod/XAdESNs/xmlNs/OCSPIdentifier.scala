@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait OCSPIdentifier
   extends xmlDashCoreLib.xmlDashCoreMod.XmlObject {
   var ProducedAt: XadesDateTime = js.native
-  var ResponderID: ResponderID = js.native
+  var ResponderID: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.ResponderID = js.native
   var URI: java.lang.String = js.native
 }
 

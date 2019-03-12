@@ -16,6 +16,6 @@ class Logger ()
 @JSImport("@ionic/cli-framework/lib", "Logger")
 @js.native
 object Logger extends js.Object {
-  def cloneHandlers(handlers: nodeLib.ReadonlySet[atIonicCliDashFrameworkLib.libLoggerMod.LoggerHandler]): nodeLib.Set[atIonicCliDashFrameworkLib.libLoggerMod.LoggerHandler] = js.native
+  def cloneHandlers(handlers: stdLib.ReadonlySet[atIonicCliDashFrameworkLib.libLoggerMod.LoggerHandler]): stdLib.Set[atIonicCliDashFrameworkLib.libLoggerMod.LoggerHandler] = js.native
 }
 

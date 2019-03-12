@@ -17,7 +17,7 @@ object ^ extends js.Object {
   def loadFont(fontName: java.lang.String, sizeMulti: scala.Double, fontFile: java.lang.String): scala.Unit = js.native
   def toBuffer(
     opts: bwipDashJsLib.bwipDashJsMod.BwipJsNs.ToBufferOptions,
-    callback: js.Function2[/* err */ java.lang.String | nodeLib.Error, /* png */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* err */ java.lang.String | stdLib.Error, /* png */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
 }
 

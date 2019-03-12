@@ -16,14 +16,10 @@ trait DebugPromiseLike extends js.Object {
 object DebugPromiseLike {
   @scala.inline
   def apply(
-    `then`: js.Function2[
-      js.Function1[/* value */ scala.Nothing, scala.Nothing], 
-      js.Function1[/* reason */ scala.Nothing, scala.Nothing], 
-      scala.Nothing
-    ]
+    `then`: (js.Function1[/* value */ scala.Nothing, scala.Nothing], js.Function1[/* reason */ scala.Nothing, scala.Nothing]) => scala.Nothing
   ): DebugPromiseLike = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("then")(`then`)
+    __obj.updateDynamic("then")(js.Any.fromFunction2(`then`))
     __obj.asInstanceOf[DebugPromiseLike]
   }
 }

@@ -11,8 +11,8 @@ trait Anon_AttachedParam0 extends js.Object {
 
 object Anon_AttachedParam0 {
   @scala.inline
-  def apply(attached: js.Function1[js.Object, scala.Unit]): Anon_AttachedParam0 = {
-    val __obj = js.Dynamic.literal(attached = attached)
+  def apply(attached: js.Object => scala.Unit): Anon_AttachedParam0 = {
+    val __obj = js.Dynamic.literal(attached = js.Any.fromFunction1(attached))
   
     __obj.asInstanceOf[Anon_AttachedParam0]
   }

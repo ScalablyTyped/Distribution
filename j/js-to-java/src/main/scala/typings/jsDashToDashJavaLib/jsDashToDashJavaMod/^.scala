@@ -16,7 +16,7 @@ object ^ extends js.Object {
   def Class(className: java.lang.String): js.Object = js.native
   def Currency(): js.Object = js.native
   def Currency(value: java.lang.String): js.Object = js.native
-  def Currency(value: jsDashToDashJavaLib.jsDashToDashJavaMod.Currency): js.Object = js.native
+  def Currency(value: Currency): js.Object = js.native
   def Dictionary(value: js.Object): js.Object = js.native
   def Double(value: scala.Double): js.Object = js.native
   def Enumeration(value: js.Object): js.Object = js.native

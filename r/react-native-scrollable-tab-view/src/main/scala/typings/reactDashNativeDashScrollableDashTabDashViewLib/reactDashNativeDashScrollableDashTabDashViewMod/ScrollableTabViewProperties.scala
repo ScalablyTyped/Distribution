@@ -103,8 +103,8 @@ object ScrollableTabViewProperties {
     initialPage: scala.Int | scala.Double = null,
     key: reactLib.reactMod.ReactNs.Key = null,
     locked: js.UndefOr[scala.Boolean] = js.undefined,
-    onChangeTab: js.Function1[/* value */ ChangeTabProperties, scala.Unit] = null,
-    onScroll: js.Function1[/* value */ scala.Double, scala.Unit] = null,
+    onChangeTab: /* value */ ChangeTabProperties => scala.Unit = null,
+    onScroll: /* value */ scala.Double => scala.Unit = null,
     page: scala.Int | scala.Double = null,
     prerenderingSiblingsNumber: scala.Int | scala.Double = null,
     ref: reactLib.reactMod.ReactNs.LegacyRef[ScrollableTabView] = null,
@@ -124,8 +124,8 @@ object ScrollableTabViewProperties {
     if (initialPage != null) __obj.updateDynamic("initialPage")(initialPage.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked)
-    if (onChangeTab != null) __obj.updateDynamic("onChangeTab")(onChangeTab)
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
+    if (onChangeTab != null) __obj.updateDynamic("onChangeTab")(js.Any.fromFunction1(onChangeTab))
+    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (prerenderingSiblingsNumber != null) __obj.updateDynamic("prerenderingSiblingsNumber")(prerenderingSiblingsNumber.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])

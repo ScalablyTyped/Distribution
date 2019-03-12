@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("leaflet")
 @js.native
 object ^ extends js.Object {
-  var Editable: leafletDashEditableLib.leafletMod.EditableStatic = js.native
+  var Editable: EditableStatic = js.native
 }
 

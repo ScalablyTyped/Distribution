@@ -83,19 +83,15 @@ trait InteractionHandler extends XInteractionHandler2 {
 object InteractionHandler {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createWithParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, scala.Unit],
-    createWithParentAndContext: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
-      java.lang.String, 
-      scala.Unit
-    ],
-    handle: js.Function1[XInteractionRequest, scala.Unit],
-    handleInteractionRequest: js.Function1[XInteractionRequest, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createWithParent: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow => scala.Unit,
+    createWithParentAndContext: (activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, java.lang.String) => scala.Unit,
+    handle: XInteractionRequest => scala.Unit,
+    handleInteractionRequest: XInteractionRequest => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): InteractionHandler = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createWithParent = createWithParent, createWithParentAndContext = createWithParentAndContext, handle = handle, handleInteractionRequest = handleInteractionRequest, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createWithParent = js.Any.fromFunction1(createWithParent), createWithParentAndContext = js.Any.fromFunction2(createWithParentAndContext), handle = js.Any.fromFunction1(handle), handleInteractionRequest = js.Any.fromFunction1(handleInteractionRequest), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[InteractionHandler]
   }

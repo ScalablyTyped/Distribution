@@ -54,32 +54,32 @@ trait ASPxClientSpellChecker extends ASPxClientControl {
 object ASPxClientSpellChecker {
   @scala.inline
   def apply(
-    AdjustControl: js.Function0[scala.Unit],
+    AdjustControl: () => scala.Unit,
     AfterCheck: ASPxClientEvent[ASPxClientAfterCheckEventHandler[ASPxClientSpellChecker]],
     BeforeCheck: ASPxClientEvent[ASPxClientBeforeCheckEventHandler[ASPxClientSpellChecker]],
-    Check: js.Function0[scala.Unit],
+    Check: () => scala.Unit,
     CheckCompleteFormShowing: ASPxClientEvent[ASPxClientCancelEventHandler[ASPxClientSpellChecker]],
-    CheckElement: js.Function1[js.Object, scala.Unit],
-    CheckElementById: js.Function1[java.lang.String, scala.Unit],
-    CheckElementsInContainer: js.Function1[js.Object, scala.Unit],
-    CheckElementsInContainerById: js.Function1[java.lang.String, scala.Unit],
-    GetClientVisible: js.Function0[scala.Boolean],
-    GetHeight: js.Function0[scala.Double],
-    GetMainElement: js.Function0[js.Object],
-    GetParentControl: js.Function0[js.Object],
-    GetVisible: js.Function0[scala.Boolean],
-    GetWidth: js.Function0[scala.Double],
-    InCallback: js.Function0[scala.Boolean],
+    CheckElement: js.Object => scala.Unit,
+    CheckElementById: java.lang.String => scala.Unit,
+    CheckElementsInContainer: js.Object => scala.Unit,
+    CheckElementsInContainerById: java.lang.String => scala.Unit,
+    GetClientVisible: () => scala.Boolean,
+    GetHeight: () => scala.Double,
+    GetMainElement: () => js.Object,
+    GetParentControl: () => js.Object,
+    GetVisible: () => scala.Boolean,
+    GetWidth: () => scala.Double,
+    InCallback: () => scala.Boolean,
     Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
-    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
-    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetHeight: js.Function1[scala.Double, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetWidth: js.Function1[scala.Double, scala.Unit],
+    SendMessageToAssistiveTechnology: java.lang.String => scala.Unit,
+    SetClientVisible: scala.Boolean => scala.Unit,
+    SetHeight: scala.Double => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
+    SetWidth: scala.Double => scala.Unit,
     WordChanged: ASPxClientEvent[ASPxClientWordChangedEventHandler[ASPxClientSpellChecker]],
     name: java.lang.String
   ): ASPxClientSpellChecker = {
-    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, AfterCheck = AfterCheck, BeforeCheck = BeforeCheck, Check = Check, CheckCompleteFormShowing = CheckCompleteFormShowing, CheckElement = CheckElement, CheckElementById = CheckElementById, CheckElementsInContainer = CheckElementsInContainer, CheckElementsInContainerById = CheckElementsInContainerById, GetClientVisible = GetClientVisible, GetHeight = GetHeight, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetVisible = SetVisible, SetWidth = SetWidth, WordChanged = WordChanged, name = name)
+    val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), AfterCheck = AfterCheck, BeforeCheck = BeforeCheck, Check = js.Any.fromFunction0(Check), CheckCompleteFormShowing = CheckCompleteFormShowing, CheckElement = js.Any.fromFunction1(CheckElement), CheckElementById = js.Any.fromFunction1(CheckElementById), CheckElementsInContainer = js.Any.fromFunction1(CheckElementsInContainer), CheckElementsInContainerById = js.Any.fromFunction1(CheckElementsInContainerById), GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetHeight = js.Any.fromFunction0(GetHeight), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), InCallback = js.Any.fromFunction0(InCallback), Init = Init, SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetHeight = js.Any.fromFunction1(SetHeight), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), WordChanged = WordChanged, name = name)
   
     __obj.asInstanceOf[ASPxClientSpellChecker]
   }

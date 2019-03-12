@@ -28,15 +28,15 @@ trait XDatabaseRegistrationsListener
 object XDatabaseRegistrationsListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    changedDatabaseLocation: js.Function1[DatabaseRegistrationEvent, scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registeredDatabaseLocation: js.Function1[DatabaseRegistrationEvent, scala.Unit],
-    release: js.Function0[scala.Unit],
-    revokedDatabaseLocation: js.Function1[DatabaseRegistrationEvent, scala.Unit]
+    acquire: () => scala.Unit,
+    changedDatabaseLocation: DatabaseRegistrationEvent => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registeredDatabaseLocation: DatabaseRegistrationEvent => scala.Unit,
+    release: () => scala.Unit,
+    revokedDatabaseLocation: DatabaseRegistrationEvent => scala.Unit
   ): XDatabaseRegistrationsListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, changedDatabaseLocation = changedDatabaseLocation, disposing = disposing, queryInterface = queryInterface, registeredDatabaseLocation = registeredDatabaseLocation, release = release, revokedDatabaseLocation = revokedDatabaseLocation)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), changedDatabaseLocation = js.Any.fromFunction1(changedDatabaseLocation), disposing = js.Any.fromFunction1(disposing), queryInterface = js.Any.fromFunction1(queryInterface), registeredDatabaseLocation = js.Any.fromFunction1(registeredDatabaseLocation), release = js.Any.fromFunction0(release), revokedDatabaseLocation = js.Any.fromFunction1(revokedDatabaseLocation))
   
     __obj.asInstanceOf[XDatabaseRegistrationsListener]
   }

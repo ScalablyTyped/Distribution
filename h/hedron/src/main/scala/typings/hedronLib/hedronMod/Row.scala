@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Row ()
   extends reactLib.reactMod.Component[
-      RowProps with reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLElement], 
+      RowProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement], 
       js.Object, 
       js.Any
     ]

@@ -26,21 +26,21 @@ object IQuickTip {
   @scala.inline
   def apply(
     IToolTip: IToolTip = null,
-    cancelShow: js.Function1[/* el */ js.UndefOr[js.Any], scala.Unit] = null,
+    cancelShow: /* el */ js.UndefOr[js.Any] => scala.Unit = null,
     interceptTitles: js.UndefOr[scala.Boolean] = js.undefined,
-    register: js.Function1[/* config */ js.UndefOr[js.Any], scala.Unit] = null,
+    register: /* config */ js.UndefOr[js.Any] => scala.Unit = null,
     target: js.Any = null,
     title: java.lang.String = null,
-    unregister: js.Function1[/* el */ js.UndefOr[js.Any], scala.Unit] = null
+    unregister: /* el */ js.UndefOr[js.Any] => scala.Unit = null
   ): IQuickTip = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IToolTip)
-    if (cancelShow != null) __obj.updateDynamic("cancelShow")(cancelShow)
+    if (cancelShow != null) __obj.updateDynamic("cancelShow")(js.Any.fromFunction1(cancelShow))
     if (!js.isUndefined(interceptTitles)) __obj.updateDynamic("interceptTitles")(interceptTitles)
-    if (register != null) __obj.updateDynamic("register")(register)
+    if (register != null) __obj.updateDynamic("register")(js.Any.fromFunction1(register))
     if (target != null) __obj.updateDynamic("target")(target)
     if (title != null) __obj.updateDynamic("title")(title)
-    if (unregister != null) __obj.updateDynamic("unregister")(unregister)
+    if (unregister != null) __obj.updateDynamic("unregister")(js.Any.fromFunction1(unregister))
     __obj.asInstanceOf[IQuickTip]
   }
 }

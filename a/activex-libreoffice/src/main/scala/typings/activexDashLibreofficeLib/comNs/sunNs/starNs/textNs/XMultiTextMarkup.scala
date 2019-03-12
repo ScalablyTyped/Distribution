@@ -26,9 +26,9 @@ trait XMultiTextMarkup extends js.Object {
 object XMultiTextMarkup {
   @scala.inline
   def apply(
-    commitMultiTextMarkup: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TextMarkupDescriptor], scala.Unit]
+    commitMultiTextMarkup: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TextMarkupDescriptor] => scala.Unit
   ): XMultiTextMarkup = {
-    val __obj = js.Dynamic.literal(commitMultiTextMarkup = commitMultiTextMarkup)
+    val __obj = js.Dynamic.literal(commitMultiTextMarkup = js.Any.fromFunction1(commitMultiTextMarkup))
   
     __obj.asInstanceOf[XMultiTextMarkup]
   }

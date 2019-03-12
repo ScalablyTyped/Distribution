@@ -18,13 +18,13 @@ object ISharedFileInfo {
   @scala.inline
   def apply(
     ChangeTimeUtc: stdLib.Date,
-    Clone: js.Function0[ISharedFileInfo],
+    Clone: () => ISharedFileInfo,
     Extension: java.lang.String,
     LogicalSize: scala.Double,
     LogicalSize_32bit: scala.Double,
     Title: java.lang.String
   ): ISharedFileInfo = {
-    val __obj = js.Dynamic.literal(ChangeTimeUtc = ChangeTimeUtc, Clone = Clone, Extension = Extension, LogicalSize = LogicalSize, LogicalSize_32bit = LogicalSize_32bit, Title = Title)
+    val __obj = js.Dynamic.literal(ChangeTimeUtc = ChangeTimeUtc, Clone = js.Any.fromFunction0(Clone), Extension = Extension, LogicalSize = LogicalSize, LogicalSize_32bit = LogicalSize_32bit, Title = Title)
   
     __obj.asInstanceOf[ISharedFileInfo]
   }

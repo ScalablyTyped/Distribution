@@ -31,23 +31,23 @@ object AccessibleContext {
     AccessibleRole: scala.Double,
     AccessibleStateSet: XAccessibleStateSet,
     Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
-    acquire: js.Function0[scala.Unit],
-    addAccessibleEventListener: js.Function1[XAccessibleEventListener, scala.Unit],
-    getAccessibleChild: js.Function1[scala.Double, XAccessible],
-    getAccessibleChildCount: js.Function0[scala.Double],
-    getAccessibleDescription: js.Function0[java.lang.String],
-    getAccessibleIndexInParent: js.Function0[scala.Double],
-    getAccessibleName: js.Function0[java.lang.String],
-    getAccessibleParent: js.Function0[XAccessible],
-    getAccessibleRelationSet: js.Function0[XAccessibleRelationSet],
-    getAccessibleRole: js.Function0[scala.Double],
-    getAccessibleStateSet: js.Function0[XAccessibleStateSet],
-    getLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeAccessibleEventListener: js.Function1[XAccessibleEventListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addAccessibleEventListener: XAccessibleEventListener => scala.Unit,
+    getAccessibleChild: scala.Double => XAccessible,
+    getAccessibleChildCount: () => scala.Double,
+    getAccessibleDescription: () => java.lang.String,
+    getAccessibleIndexInParent: () => scala.Double,
+    getAccessibleName: () => java.lang.String,
+    getAccessibleParent: () => XAccessible,
+    getAccessibleRelationSet: () => XAccessibleRelationSet,
+    getAccessibleRole: () => scala.Double,
+    getAccessibleStateSet: () => XAccessibleStateSet,
+    getLocale: () => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeAccessibleEventListener: XAccessibleEventListener => scala.Unit
   ): AccessibleContext = {
-    val __obj = js.Dynamic.literal(AccessibleChildCount = AccessibleChildCount, AccessibleDescription = AccessibleDescription, AccessibleIndexInParent = AccessibleIndexInParent, AccessibleName = AccessibleName, AccessibleParent = AccessibleParent, AccessibleRelationSet = AccessibleRelationSet, AccessibleRole = AccessibleRole, AccessibleStateSet = AccessibleStateSet, Locale = Locale, acquire = acquire, addAccessibleEventListener = addAccessibleEventListener, getAccessibleChild = getAccessibleChild, getAccessibleChildCount = getAccessibleChildCount, getAccessibleDescription = getAccessibleDescription, getAccessibleIndexInParent = getAccessibleIndexInParent, getAccessibleName = getAccessibleName, getAccessibleParent = getAccessibleParent, getAccessibleRelationSet = getAccessibleRelationSet, getAccessibleRole = getAccessibleRole, getAccessibleStateSet = getAccessibleStateSet, getLocale = getLocale, queryInterface = queryInterface, release = release, removeAccessibleEventListener = removeAccessibleEventListener)
+    val __obj = js.Dynamic.literal(AccessibleChildCount = AccessibleChildCount, AccessibleDescription = AccessibleDescription, AccessibleIndexInParent = AccessibleIndexInParent, AccessibleName = AccessibleName, AccessibleParent = AccessibleParent, AccessibleRelationSet = AccessibleRelationSet, AccessibleRole = AccessibleRole, AccessibleStateSet = AccessibleStateSet, Locale = Locale, acquire = js.Any.fromFunction0(acquire), addAccessibleEventListener = js.Any.fromFunction1(addAccessibleEventListener), getAccessibleChild = js.Any.fromFunction1(getAccessibleChild), getAccessibleChildCount = js.Any.fromFunction0(getAccessibleChildCount), getAccessibleDescription = js.Any.fromFunction0(getAccessibleDescription), getAccessibleIndexInParent = js.Any.fromFunction0(getAccessibleIndexInParent), getAccessibleName = js.Any.fromFunction0(getAccessibleName), getAccessibleParent = js.Any.fromFunction0(getAccessibleParent), getAccessibleRelationSet = js.Any.fromFunction0(getAccessibleRelationSet), getAccessibleRole = js.Any.fromFunction0(getAccessibleRole), getAccessibleStateSet = js.Any.fromFunction0(getAccessibleStateSet), getLocale = js.Any.fromFunction0(getLocale), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeAccessibleEventListener = js.Any.fromFunction1(removeAccessibleEventListener))
   
     __obj.asInstanceOf[AccessibleContext]
   }

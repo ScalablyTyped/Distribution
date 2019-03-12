@@ -32,7 +32,7 @@ trait MultiViewCalendarOptions extends js.Object {
 object MultiViewCalendarOptions {
   @scala.inline
   def apply(
-    change: js.Function1[/* e */ MultiViewCalendarEvent, scala.Unit] = null,
+    change: /* e */ MultiViewCalendarEvent => scala.Unit = null,
     culture: java.lang.String = null,
     dates: js.Any = null,
     depth: java.lang.String = null,
@@ -44,7 +44,7 @@ object MultiViewCalendarOptions {
     min: stdLib.Date = null,
     month: MultiViewCalendarMonth = null,
     name: java.lang.String = null,
-    navigate: js.Function1[/* e */ MultiViewCalendarEvent, scala.Unit] = null,
+    navigate: /* e */ MultiViewCalendarEvent => scala.Unit = null,
     range: MultiViewCalendarRange = null,
     selectDates: js.Any = null,
     selectable: java.lang.String = null,
@@ -55,7 +55,7 @@ object MultiViewCalendarOptions {
     weekNumber: js.UndefOr[scala.Boolean] = js.undefined
   ): MultiViewCalendarOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (culture != null) __obj.updateDynamic("culture")(culture)
     if (dates != null) __obj.updateDynamic("dates")(dates)
     if (depth != null) __obj.updateDynamic("depth")(depth)
@@ -67,7 +67,7 @@ object MultiViewCalendarOptions {
     if (min != null) __obj.updateDynamic("min")(min)
     if (month != null) __obj.updateDynamic("month")(month)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (navigate != null) __obj.updateDynamic("navigate")(navigate)
+    if (navigate != null) __obj.updateDynamic("navigate")(js.Any.fromFunction1(navigate))
     if (range != null) __obj.updateDynamic("range")(range)
     if (selectDates != null) __obj.updateDynamic("selectDates")(selectDates)
     if (selectable != null) __obj.updateDynamic("selectable")(selectable)

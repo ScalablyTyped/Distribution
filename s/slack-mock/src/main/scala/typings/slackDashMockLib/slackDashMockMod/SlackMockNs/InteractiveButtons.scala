@@ -15,12 +15,12 @@ trait InteractiveButtons[T] extends js.Object {
 object InteractiveButtons {
   @scala.inline
   def apply[T](
-    addResponse: js.Function1[InteractiveButtonOptions[T], scala.Unit],
+    addResponse: InteractiveButtonOptions[T] => scala.Unit,
     calls: js.Array[InteractiveButtonCall[T]],
-    reset: js.Function0[scala.Unit],
-    send: js.Function2[InteractiveButtonUrl, T, js.Promise[scala.Unit]]
+    reset: () => scala.Unit,
+    send: (InteractiveButtonUrl, T) => js.Promise[scala.Unit]
   ): InteractiveButtons[T] = {
-    val __obj = js.Dynamic.literal(addResponse = addResponse, calls = calls, reset = reset, send = send)
+    val __obj = js.Dynamic.literal(addResponse = js.Any.fromFunction1(addResponse), calls = calls, reset = js.Any.fromFunction0(reset), send = js.Any.fromFunction2(send))
   
     __obj.asInstanceOf[InteractiveButtons[T]]
   }

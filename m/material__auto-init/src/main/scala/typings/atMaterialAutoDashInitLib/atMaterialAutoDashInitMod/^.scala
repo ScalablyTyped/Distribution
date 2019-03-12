@@ -12,6 +12,6 @@ object ^ extends js.Object {
     * Auto-initializes all mdc components on a page.
     */
   // tslint:disable-next-line:strict-export-declare-modifiers
-  val default: atMaterialAutoDashInitLib.atMaterialAutoDashInitMod.MDCAutoInit = js.native
+  val default: MDCAutoInit = js.native
 }
 

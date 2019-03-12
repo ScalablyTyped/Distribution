@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 trait XControlContainer
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** returns all controls. */
-  val Controls: activexDashInteropLib.SafeArray[XControl]
+  val Controls: stdLib.SafeArray[XControl]
   /** adds the given control with the specified name to the container. */
   def addControl(Name: java.lang.String, Control: XControl): scala.Unit
   /** returns the control with the specified name. */
   def getControl(aName: java.lang.String): XControl
   /** returns all controls. */
-  def getControls(): activexDashInteropLib.SafeArray[XControl]
+  def getControls(): stdLib.SafeArray[XControl]
   /** removes the given control from the container. */
   def removeControl(Control: XControl): scala.Unit
   /** sets the status text in the status bar of the container. */
@@ -25,17 +25,17 @@ trait XControlContainer
 object XControlContainer {
   @scala.inline
   def apply(
-    Controls: activexDashInteropLib.SafeArray[XControl],
-    acquire: js.Function0[scala.Unit],
-    addControl: js.Function2[java.lang.String, XControl, scala.Unit],
-    getControl: js.Function1[java.lang.String, XControl],
-    getControls: js.Function0[activexDashInteropLib.SafeArray[XControl]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeControl: js.Function1[XControl, scala.Unit],
-    setStatusText: js.Function1[java.lang.String, scala.Unit]
+    Controls: stdLib.SafeArray[XControl],
+    acquire: () => scala.Unit,
+    addControl: (java.lang.String, XControl) => scala.Unit,
+    getControl: java.lang.String => XControl,
+    getControls: () => stdLib.SafeArray[XControl],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeControl: XControl => scala.Unit,
+    setStatusText: java.lang.String => scala.Unit
   ): XControlContainer = {
-    val __obj = js.Dynamic.literal(Controls = Controls, acquire = acquire, addControl = addControl, getControl = getControl, getControls = getControls, queryInterface = queryInterface, release = release, removeControl = removeControl, setStatusText = setStatusText)
+    val __obj = js.Dynamic.literal(Controls = Controls, acquire = js.Any.fromFunction0(acquire), addControl = js.Any.fromFunction2(addControl), getControl = js.Any.fromFunction1(getControl), getControls = js.Any.fromFunction0(getControls), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeControl = js.Any.fromFunction1(removeControl), setStatusText = js.Any.fromFunction1(setStatusText))
   
     __obj.asInstanceOf[XControlContainer]
   }

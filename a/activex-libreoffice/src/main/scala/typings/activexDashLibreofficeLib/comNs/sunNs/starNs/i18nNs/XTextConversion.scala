@@ -68,35 +68,14 @@ trait XTextConversion
 object XTextConversion {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getConversion: js.Function6[
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      scala.Double, 
-      java.lang.String
-    ],
-    getConversions: js.Function6[
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      scala.Double, 
-      TextConversionResult
-    ],
-    interactiveConversion: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      scala.Double, 
-      scala.Boolean
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getConversion: (java.lang.String, scala.Double, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double, scala.Double) => java.lang.String,
+    getConversions: (java.lang.String, scala.Double, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double, scala.Double) => TextConversionResult,
+    interactiveConversion: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double, scala.Double) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTextConversion = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getConversion = getConversion, getConversions = getConversions, interactiveConversion = interactiveConversion, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getConversion = js.Any.fromFunction6(getConversion), getConversions = js.Any.fromFunction6(getConversions), interactiveConversion = js.Any.fromFunction3(interactiveConversion), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTextConversion]
   }

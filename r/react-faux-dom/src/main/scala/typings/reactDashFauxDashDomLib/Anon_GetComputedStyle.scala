@@ -11,10 +11,8 @@ trait Anon_GetComputedStyle extends js.Object {
 
 object Anon_GetComputedStyle {
   @scala.inline
-  def apply(
-    getComputedStyle: js.Function1[reactDashFauxDashDomLib.reactDashFauxDashDomMod.Element, Anon_GetPropertyValue]
-  ): Anon_GetComputedStyle = {
-    val __obj = js.Dynamic.literal(getComputedStyle = getComputedStyle)
+  def apply(getComputedStyle: reactDashFauxDashDomLib.reactDashFauxDashDomMod.Element => Anon_GetPropertyValue): Anon_GetComputedStyle = {
+    val __obj = js.Dynamic.literal(getComputedStyle = js.Any.fromFunction1(getComputedStyle))
   
     __obj.asInstanceOf[Anon_GetComputedStyle]
   }

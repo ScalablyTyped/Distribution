@@ -16,11 +16,11 @@ trait ElementStylesheetStyle extends StylesheetStyle {
 object ElementStylesheetStyle {
   @scala.inline
   def apply(
-    json: js.Function0[js.Any],
+    json: () => js.Any,
     selector: java.lang.String,
     style: cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.Node | cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.Edge
   ): ElementStylesheetStyle = {
-    val __obj = js.Dynamic.literal(json = json, selector = selector, style = style.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(json = js.Any.fromFunction0(json), selector = selector, style = style.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ElementStylesheetStyle]
   }

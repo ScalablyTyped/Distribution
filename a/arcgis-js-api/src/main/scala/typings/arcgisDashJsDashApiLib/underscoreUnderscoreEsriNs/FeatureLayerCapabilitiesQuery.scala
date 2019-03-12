@@ -103,8 +103,8 @@ object FeatureLayerCapabilitiesQuery {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     supportsCentroid: scala.Boolean,
     supportsDistance: scala.Boolean,
     supportsDistinct: scala.Boolean,
@@ -121,7 +121,7 @@ object FeatureLayerCapabilitiesQuery {
     supportsStandardizedQueriesOnly: scala.Boolean,
     supportsStatistics: scala.Boolean
   ): FeatureLayerCapabilitiesQuery = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, supportsCentroid = supportsCentroid, supportsDistance = supportsDistance, supportsDistinct = supportsDistinct, supportsExtent = supportsExtent, supportsGeometryProperties = supportsGeometryProperties, supportsHavingClause = supportsHavingClause, supportsHistoricMoment = supportsHistoricMoment, supportsOrderBy = supportsOrderBy, supportsPagination = supportsPagination, supportsQuantization = supportsQuantization, supportsQuantizationEditMode = supportsQuantizationEditMode, supportsResultType = supportsResultType, supportsSqlExpression = supportsSqlExpression, supportsStandardizedQueriesOnly = supportsStandardizedQueriesOnly, supportsStatistics = supportsStatistics)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsCentroid = supportsCentroid, supportsDistance = supportsDistance, supportsDistinct = supportsDistinct, supportsExtent = supportsExtent, supportsGeometryProperties = supportsGeometryProperties, supportsHavingClause = supportsHavingClause, supportsHistoricMoment = supportsHistoricMoment, supportsOrderBy = supportsOrderBy, supportsPagination = supportsPagination, supportsQuantization = supportsQuantization, supportsQuantizationEditMode = supportsQuantizationEditMode, supportsResultType = supportsResultType, supportsSqlExpression = supportsSqlExpression, supportsStandardizedQueriesOnly = supportsStandardizedQueriesOnly, supportsStatistics = supportsStatistics)
   
     __obj.asInstanceOf[FeatureLayerCapabilitiesQuery]
   }

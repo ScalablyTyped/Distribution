@@ -39,14 +39,11 @@ object FooterData {
     columnIndex: scala.Double,
     label: java.lang.String,
     align: DataAlignType = null,
-    formatter: js.Function1[
-      /* tableData */ js.Array[_], 
-      java.lang.String | scala.Double | reactLib.reactMod.ReactNs.ReactElement[_]
-    ] = null
+    formatter: /* tableData */ js.Array[_] => java.lang.String | scala.Double | reactLib.reactMod.ReactNs.ReactElement[_] = null
   ): FooterData = {
     val __obj = js.Dynamic.literal(columnIndex = columnIndex, label = label)
     if (align != null) __obj.updateDynamic("align")(align)
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
     __obj.asInstanceOf[FooterData]
   }
 }

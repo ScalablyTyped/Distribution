@@ -12,11 +12,8 @@ trait layout extends js.Object {
 
 object layout {
   @scala.inline
-  def apply(
-    fromEn: js.Function1[java.lang.String, java.lang.String],
-    toEn: js.Function1[java.lang.String, java.lang.String]
-  ): layout = {
-    val __obj = js.Dynamic.literal(fromEn = fromEn, toEn = toEn)
+  def apply(fromEn: java.lang.String => java.lang.String, toEn: java.lang.String => java.lang.String): layout = {
+    val __obj = js.Dynamic.literal(fromEn = js.Any.fromFunction1(fromEn), toEn = js.Any.fromFunction1(toEn))
   
     __obj.asInstanceOf[layout]
   }

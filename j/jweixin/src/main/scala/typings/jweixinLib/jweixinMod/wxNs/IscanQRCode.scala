@@ -20,13 +20,13 @@ object IscanQRCode {
   def apply(
     needResult: jweixinLib.jweixinLibNumbers.`0` | jweixinLib.jweixinLibNumbers.`1`,
     scanType: js.Array[scanType],
-    success: js.Function1[jweixinLib.Anon_ResultStr, scala.Unit],
-    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+    success: jweixinLib.Anon_ResultStr => scala.Unit,
+    complete: /* repeated */ js.Any => scala.Unit = null,
+    fail: /* repeated */ js.Any => scala.Unit = null
   ): IscanQRCode = {
-    val __obj = js.Dynamic.literal(needResult = needResult.asInstanceOf[js.Any], scanType = scanType, success = success)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    val __obj = js.Dynamic.literal(needResult = needResult.asInstanceOf[js.Any], scanType = scanType, success = js.Any.fromFunction1(success))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[IscanQRCode]
   }
 }

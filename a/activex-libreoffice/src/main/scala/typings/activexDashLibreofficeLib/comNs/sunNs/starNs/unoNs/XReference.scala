@@ -22,12 +22,12 @@ trait XReference extends XInterface {
 object XReference {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    dispose: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XReference = {
-    val __obj = js.Dynamic.literal(acquire = acquire, dispose = dispose, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), dispose = js.Any.fromFunction0(dispose), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XReference]
   }

@@ -13,11 +13,11 @@ trait SessionsMiddleware extends DelegateMiddleware {
 object SessionsMiddleware {
   @scala.inline
   def apply(
-    register: js.Function1[Endpoint, SimpleMiddleware],
+    register: Endpoint => SimpleMiddleware,
     storage: SessionStorage,
     transport: js.Array[SessionTransport]
   ): SessionsMiddleware = {
-    val __obj = js.Dynamic.literal(register = register, storage = storage, transport = transport)
+    val __obj = js.Dynamic.literal(register = js.Any.fromFunction1(register), storage = storage, transport = transport)
   
     __obj.asInstanceOf[SessionsMiddleware]
   }

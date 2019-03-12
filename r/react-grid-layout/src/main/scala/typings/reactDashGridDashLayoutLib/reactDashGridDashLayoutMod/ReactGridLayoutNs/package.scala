@@ -11,8 +11,8 @@ package object ReactGridLayoutNs {
     /* oldItem */ Layout, 
     /* newItem */ Layout, 
     /* placeholder */ Layout, 
-    /* event */ reactLib.MouseEvent, 
-    /* element */ reactLib.HTMLElement, 
+    /* event */ stdLib.MouseEvent, 
+    /* element */ stdLib.HTMLElement, 
     scala.Unit
   ]
   type Responsive = reactLib.reactMod.Component[ResponsiveProps, js.Object, js.Any]

@@ -41,7 +41,7 @@ object ^ extends js.Object {
     *  sockets.udp, sockets.tcp and sockets.tcpServer APIs.
     * @since Chrome 23
     */
-  val serial: chromeDashAppsLib.chromeNs.deprecated = js.native
+  val serial: deprecated = js.native
   // #endregion
   // #region methods
   /////////////
@@ -59,6 +59,6 @@ object ^ extends js.Object {
     * @see[Use this instead]{@link https://www.w3.org/TR/navigation-timing-2/}
     * @see[Deprecation article]{@link https://developers.google.com/web/updates/2017/12/chrome-loadtimes-deprecated}
     */
-  def loadTimes(): chromeDashAppsLib.chromeNs.deprecatedButUsable = js.native
+  def loadTimes(): deprecatedButUsable = js.native
 }
 

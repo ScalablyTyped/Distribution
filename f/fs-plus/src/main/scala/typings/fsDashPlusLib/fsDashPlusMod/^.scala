@@ -478,12 +478,12 @@ object ^ extends js.Object {
   def linkSync(existingPath: nodeLib.fsMod.PathLike, newPath: nodeLib.fsMod.PathLike): scala.Unit = js.native
   def list(
     rootPath: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* result */ js.Array[java.lang.String], scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* result */ js.Array[java.lang.String], scala.Unit]
   ): scala.Unit = js.native
   def list(
     rootPath: java.lang.String,
     extensions: js.Array[java.lang.String],
-    callback: js.Function2[/* err */ nodeLib.Error, /* result */ js.Array[java.lang.String], scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* result */ js.Array[java.lang.String], scala.Unit]
   ): scala.Unit = js.native
   def listSync(rootPath: java.lang.String): js.Array[java.lang.String] = js.native
   def listSync(rootPath: java.lang.String, extensions: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
@@ -665,7 +665,7 @@ object ^ extends js.Object {
   def move(
     source: java.lang.String,
     target: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def moveSync(source: java.lang.String, target: java.lang.String): scala.Unit = js.native
   def normalize(pathToNormalize: java.lang.String): java.lang.String = js.native
@@ -1361,7 +1361,7 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def remove(pathToRemove: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def remove(pathToRemove: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def removeSync(pathToRemove: java.lang.String): scala.Unit = js.native
   /**
     * Asynchronous rename(2) - Change the name or location of a file or directory.

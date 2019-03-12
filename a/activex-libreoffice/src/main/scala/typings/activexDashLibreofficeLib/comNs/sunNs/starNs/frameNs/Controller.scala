@@ -28,58 +28,35 @@ object Controller {
     Selection: js.Any,
     Transferable: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable,
     ViewData: js.Any,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    addKeyHandler: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XKeyHandler, scala.Unit],
-    addMouseClickHandler: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XMouseClickHandler, scala.Unit],
-    addSelectionChangeListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.viewNs.XSelectionChangeListener, 
-      scala.Unit
-    ],
-    attachFrame: js.Function1[XFrame, scala.Unit],
-    attachModel: js.Function1[XModel, scala.Boolean],
-    dispose: js.Function0[scala.Unit],
-    getFrame: js.Function0[XFrame],
-    getModel: js.Function0[XModel],
-    getSelection: js.Function0[js.Any],
-    getTransferable: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable],
-    getViewData: js.Function0[js.Any],
-    insertTransferable: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable, 
-      scala.Unit
-    ],
-    queryDispatch: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
-      java.lang.String, 
-      scala.Double, 
-      XDispatch
-    ],
-    queryDispatches: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DispatchDescriptor], 
-      activexDashInteropLib.SafeArray[XDispatch]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerContextMenuInterceptor: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XContextMenuInterceptor, 
-      scala.Unit
-    ],
-    release: js.Function0[scala.Unit],
-    releaseContextMenuInterceptor: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XContextMenuInterceptor, 
-      scala.Unit
-    ],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    removeKeyHandler: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XKeyHandler, scala.Unit],
-    removeMouseClickHandler: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XMouseClickHandler, scala.Unit],
-    removeSelectionChangeListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.viewNs.XSelectionChangeListener, 
-      scala.Unit
-    ],
-    restoreViewData: js.Function1[js.Any, scala.Unit],
-    select: js.Function1[js.Any, scala.Boolean],
-    suspend: js.Function1[scala.Boolean, scala.Boolean]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    addKeyHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XKeyHandler => scala.Unit,
+    addMouseClickHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XMouseClickHandler => scala.Unit,
+    addSelectionChangeListener: activexDashLibreofficeLib.comNs.sunNs.starNs.viewNs.XSelectionChangeListener => scala.Unit,
+    attachFrame: XFrame => scala.Unit,
+    attachModel: XModel => scala.Boolean,
+    dispose: () => scala.Unit,
+    getFrame: () => XFrame,
+    getModel: () => XModel,
+    getSelection: () => js.Any,
+    getTransferable: () => activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable,
+    getViewData: () => js.Any,
+    insertTransferable: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable => scala.Unit,
+    queryDispatch: (activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, java.lang.String, scala.Double) => XDispatch,
+    queryDispatches: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DispatchDescriptor] => stdLib.SafeArray[XDispatch],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerContextMenuInterceptor: activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XContextMenuInterceptor => scala.Unit,
+    release: () => scala.Unit,
+    releaseContextMenuInterceptor: activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XContextMenuInterceptor => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    removeKeyHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XKeyHandler => scala.Unit,
+    removeMouseClickHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XMouseClickHandler => scala.Unit,
+    removeSelectionChangeListener: activexDashLibreofficeLib.comNs.sunNs.starNs.viewNs.XSelectionChangeListener => scala.Unit,
+    restoreViewData: js.Any => scala.Unit,
+    select: js.Any => scala.Boolean,
+    suspend: scala.Boolean => scala.Boolean
   ): Controller = {
-    val __obj = js.Dynamic.literal(Frame = Frame, Model = Model, Selection = Selection, Transferable = Transferable, ViewData = ViewData, acquire = acquire, addEventListener = addEventListener, addKeyHandler = addKeyHandler, addMouseClickHandler = addMouseClickHandler, addSelectionChangeListener = addSelectionChangeListener, attachFrame = attachFrame, attachModel = attachModel, dispose = dispose, getFrame = getFrame, getModel = getModel, getSelection = getSelection, getTransferable = getTransferable, getViewData = getViewData, insertTransferable = insertTransferable, queryDispatch = queryDispatch, queryDispatches = queryDispatches, queryInterface = queryInterface, registerContextMenuInterceptor = registerContextMenuInterceptor, release = release, releaseContextMenuInterceptor = releaseContextMenuInterceptor, removeEventListener = removeEventListener, removeKeyHandler = removeKeyHandler, removeMouseClickHandler = removeMouseClickHandler, removeSelectionChangeListener = removeSelectionChangeListener, restoreViewData = restoreViewData, select = select, suspend = suspend)
+    val __obj = js.Dynamic.literal(Frame = Frame, Model = Model, Selection = Selection, Transferable = Transferable, ViewData = ViewData, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addKeyHandler = js.Any.fromFunction1(addKeyHandler), addMouseClickHandler = js.Any.fromFunction1(addMouseClickHandler), addSelectionChangeListener = js.Any.fromFunction1(addSelectionChangeListener), attachFrame = js.Any.fromFunction1(attachFrame), attachModel = js.Any.fromFunction1(attachModel), dispose = js.Any.fromFunction0(dispose), getFrame = js.Any.fromFunction0(getFrame), getModel = js.Any.fromFunction0(getModel), getSelection = js.Any.fromFunction0(getSelection), getTransferable = js.Any.fromFunction0(getTransferable), getViewData = js.Any.fromFunction0(getViewData), insertTransferable = js.Any.fromFunction1(insertTransferable), queryDispatch = js.Any.fromFunction3(queryDispatch), queryDispatches = js.Any.fromFunction1(queryDispatches), queryInterface = js.Any.fromFunction1(queryInterface), registerContextMenuInterceptor = js.Any.fromFunction1(registerContextMenuInterceptor), release = js.Any.fromFunction0(release), releaseContextMenuInterceptor = js.Any.fromFunction1(releaseContextMenuInterceptor), removeEventListener = js.Any.fromFunction1(removeEventListener), removeKeyHandler = js.Any.fromFunction1(removeKeyHandler), removeMouseClickHandler = js.Any.fromFunction1(removeMouseClickHandler), removeSelectionChangeListener = js.Any.fromFunction1(removeSelectionChangeListener), restoreViewData = js.Any.fromFunction1(restoreViewData), select = js.Any.fromFunction1(select), suspend = js.Any.fromFunction1(suspend))
   
     __obj.asInstanceOf[Controller]
   }

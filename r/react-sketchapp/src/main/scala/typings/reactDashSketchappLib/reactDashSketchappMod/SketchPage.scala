@@ -11,8 +11,8 @@ trait SketchPage extends js.Object {
 
 object SketchPage {
   @scala.inline
-  def apply(name: js.Function0[js.Any]): SketchPage = {
-    val __obj = js.Dynamic.literal(name = name)
+  def apply(name: () => js.Any): SketchPage = {
+    val __obj = js.Dynamic.literal(name = js.Any.fromFunction0(name))
   
     __obj.asInstanceOf[SketchPage]
   }

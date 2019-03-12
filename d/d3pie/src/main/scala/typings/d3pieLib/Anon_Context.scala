@@ -19,7 +19,7 @@ trait Anon_Context extends js.Object {
 object Anon_Context {
   @scala.inline
   def apply(
-    formatter: js.Function1[/* context */ Anon_Inner, java.lang.String] = null,
+    formatter: /* context */ Anon_Inner => java.lang.String = null,
     inner: d3pieLib.d3pieNs.ID3PieLabelsOptions = null,
     lines: Anon_ColorCurved = null,
     mainLabel: d3pieLib.d3pieNs.ID3PieStyleOptions = null,
@@ -29,7 +29,7 @@ object Anon_Context {
     value: d3pieLib.d3pieNs.ID3PieStyleOptions = null
   ): Anon_Context = {
     val __obj = js.Dynamic.literal()
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
     if (inner != null) __obj.updateDynamic("inner")(inner)
     if (lines != null) __obj.updateDynamic("lines")(lines)
     if (mainLabel != null) __obj.updateDynamic("mainLabel")(mainLabel)

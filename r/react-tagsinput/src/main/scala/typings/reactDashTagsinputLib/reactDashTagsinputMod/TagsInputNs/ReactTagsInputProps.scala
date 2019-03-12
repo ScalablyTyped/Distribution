@@ -46,12 +46,7 @@ trait ReactTagsInputProps
 object ReactTagsInputProps {
   @scala.inline
   def apply(
-    onChange: js.Function3[
-      js.Array[reactDashTagsinputLib.Tag], 
-      js.Array[reactDashTagsinputLib.Tag], 
-      js.Array[scala.Double], 
-      scala.Unit
-    ],
+    onChange: (js.Array[reactDashTagsinputLib.Tag], js.Array[reactDashTagsinputLib.Tag], js.Array[scala.Double]) => scala.Unit,
     value: js.Array[reactDashTagsinputLib.Tag],
     addKeys: js.Array[scala.Double] = null,
     addOnBlur: js.UndefOr[scala.Boolean] = js.undefined,
@@ -65,25 +60,21 @@ object ReactTagsInputProps {
     inputValue: java.lang.String = null,
     key: reactLib.reactMod.ReactNs.Key = null,
     maxTags: scala.Int | scala.Double = null,
-    onChangeInput: js.Function1[/* value */ java.lang.String, scala.Unit] = null,
-    onValidationReject: js.Function1[/* tags */ js.Array[java.lang.String], scala.Unit] = null,
+    onChangeInput: /* value */ java.lang.String => scala.Unit = null,
+    onValidationReject: /* tags */ js.Array[java.lang.String] => scala.Unit = null,
     onlyUnique: js.UndefOr[scala.Boolean] = js.undefined,
-    pasteSplit: js.Function1[/* data */ java.lang.String, js.Array[java.lang.String]] = null,
+    pasteSplit: /* data */ java.lang.String => js.Array[java.lang.String] = null,
     preventSubmit: js.UndefOr[scala.Boolean] = js.undefined,
     ref: reactLib.reactMod.ReactNs.LegacyRef[reactDashTagsinputLib.reactDashTagsinputMod.TagsInput] = null,
     removeKeys: js.Array[scala.Double] = null,
-    renderInput: js.Function1[/* props */ RenderInputProps, reactLib.reactMod.ReactNs.ReactNode] = null,
-    renderLayout: js.Function2[
-      /* tagComponents */ js.Array[reactLib.reactMod.Component[js.Object, js.Object, _]], 
-      /* inputComponent */ reactLib.reactMod.Component[js.Object, js.Object, _], 
-      reactLib.reactMod.ReactNs.ReactChild
-    ] = null,
-    renderTag: js.Function1[/* props */ RenderTagProps, reactLib.reactMod.ReactNs.ReactNode] = null,
+    renderInput: /* props */ RenderInputProps => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderLayout: (/* tagComponents */ js.Array[reactLib.reactMod.Component[js.Object, js.Object, _]], /* inputComponent */ reactLib.reactMod.Component[js.Object, js.Object, _]) => reactLib.reactMod.ReactNs.ReactChild = null,
+    renderTag: /* props */ RenderTagProps => reactLib.reactMod.ReactNs.ReactNode = null,
     tagDisplayProp: java.lang.String = null,
     tagProps: TagProps = null,
     validationRegex: stdLib.RegExp = null
   ): ReactTagsInputProps = {
-    val __obj = js.Dynamic.literal(onChange = onChange, value = value)
+    val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction3(onChange), value = value)
     if (addKeys != null) __obj.updateDynamic("addKeys")(addKeys)
     if (!js.isUndefined(addOnBlur)) __obj.updateDynamic("addOnBlur")(addOnBlur)
     if (!js.isUndefined(addOnPaste)) __obj.updateDynamic("addOnPaste")(addOnPaste)
@@ -96,16 +87,16 @@ object ReactTagsInputProps {
     if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (maxTags != null) __obj.updateDynamic("maxTags")(maxTags.asInstanceOf[js.Any])
-    if (onChangeInput != null) __obj.updateDynamic("onChangeInput")(onChangeInput)
-    if (onValidationReject != null) __obj.updateDynamic("onValidationReject")(onValidationReject)
+    if (onChangeInput != null) __obj.updateDynamic("onChangeInput")(js.Any.fromFunction1(onChangeInput))
+    if (onValidationReject != null) __obj.updateDynamic("onValidationReject")(js.Any.fromFunction1(onValidationReject))
     if (!js.isUndefined(onlyUnique)) __obj.updateDynamic("onlyUnique")(onlyUnique)
-    if (pasteSplit != null) __obj.updateDynamic("pasteSplit")(pasteSplit)
+    if (pasteSplit != null) __obj.updateDynamic("pasteSplit")(js.Any.fromFunction1(pasteSplit))
     if (!js.isUndefined(preventSubmit)) __obj.updateDynamic("preventSubmit")(preventSubmit)
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (removeKeys != null) __obj.updateDynamic("removeKeys")(removeKeys)
-    if (renderInput != null) __obj.updateDynamic("renderInput")(renderInput)
-    if (renderLayout != null) __obj.updateDynamic("renderLayout")(renderLayout)
-    if (renderTag != null) __obj.updateDynamic("renderTag")(renderTag)
+    if (renderInput != null) __obj.updateDynamic("renderInput")(js.Any.fromFunction1(renderInput))
+    if (renderLayout != null) __obj.updateDynamic("renderLayout")(js.Any.fromFunction2(renderLayout))
+    if (renderTag != null) __obj.updateDynamic("renderTag")(js.Any.fromFunction1(renderTag))
     if (tagDisplayProp != null) __obj.updateDynamic("tagDisplayProp")(tagDisplayProp)
     if (tagProps != null) __obj.updateDynamic("tagProps")(tagProps)
     if (validationRegex != null) __obj.updateDynamic("validationRegex")(validationRegex)

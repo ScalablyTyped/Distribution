@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class SignalingOutgoingMessageInvalidError () extends TwilioError {
   @JSName("code")
   var code_SignalingOutgoingMessageInvalidError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53004` = js.native
-  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Client sent an invalid signaling message` = js.native
+  @JSName("message")
+  var message_SignalingOutgoingMessageInvalidError: twilioDashVideoLib.twilioDashVideoLibStrings.`Client sent an invalid signaling message` = js.native
 }
 

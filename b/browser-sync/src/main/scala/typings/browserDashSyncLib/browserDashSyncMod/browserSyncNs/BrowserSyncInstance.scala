@@ -42,7 +42,7 @@ trait BrowserSyncInstance extends js.Object {
     */
   def init(): BrowserSyncInstance = js.native
   def init(config: Options): BrowserSyncInstance = js.native
-  def init(config: Options, callback: js.Function2[/* err */ nodeLib.Error, /* bs */ js.Object, _]): BrowserSyncInstance = js.native
+  def init(config: Options, callback: js.Function2[/* err */ stdLib.Error, /* bs */ js.Object, _]): BrowserSyncInstance = js.native
   /**
     * Helper method for browser notifications
     * @param message Can be a simple message such as 'Connected' or HTML

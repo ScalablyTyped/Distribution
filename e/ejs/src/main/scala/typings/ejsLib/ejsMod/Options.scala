@@ -60,7 +60,7 @@ object Options {
     context: js.Any = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     delimiter: java.lang.String = null,
-    escape: js.Function1[/* str */ java.lang.String, java.lang.String] = null,
+    escape: /* str */ java.lang.String => java.lang.String = null,
     filename: java.lang.String = null,
     localsName: java.lang.String = null,
     rmWhitespace: js.UndefOr[scala.Boolean] = js.undefined,
@@ -76,7 +76,7 @@ object Options {
     if (context != null) __obj.updateDynamic("context")(context)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
-    if (escape != null) __obj.updateDynamic("escape")(escape)
+    if (escape != null) __obj.updateDynamic("escape")(js.Any.fromFunction1(escape))
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (localsName != null) __obj.updateDynamic("localsName")(localsName)
     if (!js.isUndefined(rmWhitespace)) __obj.updateDynamic("rmWhitespace")(rmWhitespace)

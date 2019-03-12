@@ -12,9 +12,9 @@ trait JSONFormatterOptions extends js.Object {
 
 object JSONFormatterOptions {
   @scala.inline
-  def apply(change: js.Function0[scala.Unit] = null, indentation: scala.Int | scala.Double = null): JSONFormatterOptions = {
+  def apply(change: () => scala.Unit = null, indentation: scala.Int | scala.Double = null): JSONFormatterOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction0(change))
     if (indentation != null) __obj.updateDynamic("indentation")(indentation.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONFormatterOptions]
   }

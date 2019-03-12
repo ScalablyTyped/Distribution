@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  val engine: storeLib.StoreJsEngine = js.native
-  val storage: storeLib.StoreJsStorage = js.native
-  val store: storeLib.StoreJsAPI = js.native
+  val engine: StoreJsEngine = js.native
+  val storage: StoreJsStorage = js.native
+  val store: StoreJsAPI = js.native
 }
 

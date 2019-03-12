@@ -23,12 +23,12 @@ trait XMacroExpander
 object XMacroExpander {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    expandMacros: js.Function1[java.lang.String, java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    expandMacros: java.lang.String => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XMacroExpander = {
-    val __obj = js.Dynamic.literal(acquire = acquire, expandMacros = expandMacros, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), expandMacros = js.Any.fromFunction1(expandMacros), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XMacroExpander]
   }

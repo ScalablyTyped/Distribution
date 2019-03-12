@@ -79,7 +79,7 @@ object WaitMeOptions {
     effect: waitmeLib.waitmeLibStrings.none | waitmeLib.waitmeLibStrings.bounce | waitmeLib.waitmeLibStrings.rotateplane | waitmeLib.waitmeLibStrings.stretch | waitmeLib.waitmeLibStrings.orbit | waitmeLib.waitmeLibStrings.roundBounce | waitmeLib.waitmeLibStrings.win8 | waitmeLib.waitmeLibStrings.win8_linear | waitmeLib.waitmeLibStrings.ios | waitmeLib.waitmeLibStrings.facebook | waitmeLib.waitmeLibStrings.rotation | waitmeLib.waitmeLibStrings.timer | waitmeLib.waitmeLibStrings.pulse | waitmeLib.waitmeLibStrings.progressBar | waitmeLib.waitmeLibStrings.bouncePulse | waitmeLib.waitmeLibStrings.img = null,
     fontSize: java.lang.String = null,
     maxSize: scala.Double | java.lang.String = null,
-    onClose: js.Function0[scala.Unit] = null,
+    onClose: () => scala.Unit = null,
     source: java.lang.String = null,
     text: java.lang.String = null,
     textPos: waitmeLib.waitmeLibStrings.vertical | waitmeLib.waitmeLibStrings.horizontal = null
@@ -90,7 +90,7 @@ object WaitMeOptions {
     if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize)
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     if (source != null) __obj.updateDynamic("source")(source)
     if (text != null) __obj.updateDynamic("text")(text)
     if (textPos != null) __obj.updateDynamic("textPos")(textPos.asInstanceOf[js.Any])

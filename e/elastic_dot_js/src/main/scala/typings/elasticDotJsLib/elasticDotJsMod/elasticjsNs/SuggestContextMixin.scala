@@ -28,12 +28,12 @@ trait SuggestContextMixin extends js.Object {
 object SuggestContextMixin {
   @scala.inline
   def apply(
-    analyzer: js.Function1[java.lang.String, SuggestContextMixin],
-    field: js.Function1[java.lang.String, SuggestContextMixin],
-    shardSize: js.Function1[scala.Double, SuggestContextMixin],
-    size: js.Function1[scala.Double, SuggestContextMixin]
+    analyzer: java.lang.String => SuggestContextMixin,
+    field: java.lang.String => SuggestContextMixin,
+    shardSize: scala.Double => SuggestContextMixin,
+    size: scala.Double => SuggestContextMixin
   ): SuggestContextMixin = {
-    val __obj = js.Dynamic.literal(analyzer = analyzer, field = field, shardSize = shardSize, size = size)
+    val __obj = js.Dynamic.literal(analyzer = js.Any.fromFunction1(analyzer), field = js.Any.fromFunction1(field), shardSize = js.Any.fromFunction1(shardSize), size = js.Any.fromFunction1(size))
   
     __obj.asInstanceOf[SuggestContextMixin]
   }

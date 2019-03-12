@@ -32,13 +32,13 @@ trait TermQuery extends Query {
 object TermQuery {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    boost: js.Function1[stdLib.Number, TermQuery],
-    field: js.Function1[java.lang.String, TermQuery],
-    term: js.Function1[java.lang.String, TermQuery],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    boost: stdLib.Number => TermQuery,
+    field: java.lang.String => TermQuery,
+    term: java.lang.String => TermQuery,
+    toJSON: () => js.Any
   ): TermQuery = {
-    val __obj = js.Dynamic.literal(_type = _type, boost = boost, field = field, term = term, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), boost = js.Any.fromFunction1(boost), field = js.Any.fromFunction1(field), term = js.Any.fromFunction1(term), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[TermQuery]
   }

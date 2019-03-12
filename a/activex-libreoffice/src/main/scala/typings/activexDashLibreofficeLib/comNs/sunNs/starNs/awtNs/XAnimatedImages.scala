@@ -39,7 +39,7 @@ trait XAnimatedImages
     * @param iIndex the index of the set those image URLs are to be retrieved. Must be greater than or equal to `0` , and smaller than the value returned by {
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the `iIndex` is not a valid index.
     */
-  def getImageSet(iIndex: scala.Double): activexDashInteropLib.SafeArray[java.lang.String]
+  def getImageSet(iIndex: scala.Double): stdLib.SafeArray[java.lang.String]
   /** returns the number of images sets maintained by the component. */
   def getImageSetCount(): scala.Double
   /**
@@ -77,32 +77,18 @@ object XAnimatedImages {
     ImageSetCount: scala.Double,
     ScaleMode: scala.Double,
     StepTime: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addContainerListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
-      scala.Unit
-    ],
-    getImageSet: js.Function1[scala.Double, activexDashInteropLib.SafeArray[java.lang.String]],
-    getImageSetCount: js.Function0[scala.Double],
-    insertImageSet: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeContainerListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
-      scala.Unit
-    ],
-    removeImageSet: js.Function1[scala.Double, scala.Unit],
-    replaceImageSet: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    addContainerListener: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener => scala.Unit,
+    getImageSet: scala.Double => stdLib.SafeArray[java.lang.String],
+    getImageSetCount: () => scala.Double,
+    insertImageSet: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeContainerListener: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener => scala.Unit,
+    removeImageSet: scala.Double => scala.Unit,
+    replaceImageSet: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]) => scala.Unit
   ): XAnimatedImages = {
-    val __obj = js.Dynamic.literal(AutoRepeat = AutoRepeat, ImageSetCount = ImageSetCount, ScaleMode = ScaleMode, StepTime = StepTime, acquire = acquire, addContainerListener = addContainerListener, getImageSet = getImageSet, getImageSetCount = getImageSetCount, insertImageSet = insertImageSet, queryInterface = queryInterface, release = release, removeContainerListener = removeContainerListener, removeImageSet = removeImageSet, replaceImageSet = replaceImageSet)
+    val __obj = js.Dynamic.literal(AutoRepeat = AutoRepeat, ImageSetCount = ImageSetCount, ScaleMode = ScaleMode, StepTime = StepTime, acquire = js.Any.fromFunction0(acquire), addContainerListener = js.Any.fromFunction1(addContainerListener), getImageSet = js.Any.fromFunction1(getImageSet), getImageSetCount = js.Any.fromFunction0(getImageSetCount), insertImageSet = js.Any.fromFunction2(insertImageSet), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeContainerListener = js.Any.fromFunction1(removeContainerListener), removeImageSet = js.Any.fromFunction1(removeImageSet), replaceImageSet = js.Any.fromFunction2(replaceImageSet))
   
     __obj.asInstanceOf[XAnimatedImages]
   }

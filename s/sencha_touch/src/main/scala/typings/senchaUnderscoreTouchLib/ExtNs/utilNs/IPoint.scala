@@ -64,57 +64,57 @@ object IPoint {
   def apply(
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    clone: js.Function0[IPoint] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
+    clone: () => IPoint = null,
     config: js.Any = null,
-    copy: js.Function0[IPoint] = null,
-    copyFrom: js.Function1[/* point */ js.UndefOr[js.Any], IPoint] = null,
-    destroy: js.Function0[scala.Unit] = null,
-    equals: js.Function1[/* point */ js.UndefOr[js.Any], scala.Boolean] = null,
+    copy: () => IPoint = null,
+    copyFrom: /* point */ js.UndefOr[js.Any] => IPoint = null,
+    destroy: () => scala.Unit = null,
+    equals: /* point */ js.UndefOr[js.Any] => scala.Boolean = null,
     extend: java.lang.String = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
-    isCloseTo: js.Function2[/* point */ js.UndefOr[js.Any], /* threshold */ js.UndefOr[js.Any], scala.Boolean] = null,
-    isWithin: js.Function0[scala.Boolean] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
+    isCloseTo: (/* point */ js.UndefOr[js.Any], /* threshold */ js.UndefOr[js.Any]) => scala.Boolean = null,
+    isWithin: () => scala.Boolean = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
-    roundedEquals: js.Function1[/* point */ js.UndefOr[js.Any], scala.Boolean] = null,
+    roundedEquals: /* point */ js.UndefOr[js.Any] => scala.Boolean = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
-    toString: js.Function0[java.lang.String] = null,
-    translate: js.Function2[/* x */ js.UndefOr[scala.Double], /* y */ js.UndefOr[scala.Double], scala.Boolean] = null,
+    toString: () => java.lang.String = null,
+    translate: (/* x */ js.UndefOr[scala.Double], /* y */ js.UndefOr[scala.Double]) => scala.Boolean = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null
   ): IPoint = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
-    if (clone != null) __obj.updateDynamic("clone")(clone)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
+    if (clone != null) __obj.updateDynamic("clone")(js.Any.fromFunction0(clone))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (copy != null) __obj.updateDynamic("copy")(copy)
-    if (copyFrom != null) __obj.updateDynamic("copyFrom")(copyFrom)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (equals != null) __obj.updateDynamic("equals")(equals)
+    if (copy != null) __obj.updateDynamic("copy")(js.Any.fromFunction0(copy))
+    if (copyFrom != null) __obj.updateDynamic("copyFrom")(js.Any.fromFunction1(copyFrom))
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
+    if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction1(equals))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
-    if (isCloseTo != null) __obj.updateDynamic("isCloseTo")(isCloseTo)
-    if (isWithin != null) __obj.updateDynamic("isWithin")(isWithin)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (isCloseTo != null) __obj.updateDynamic("isCloseTo")(js.Any.fromFunction2(isCloseTo))
+    if (isWithin != null) __obj.updateDynamic("isWithin")(js.Any.fromFunction0(isWithin))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
-    if (roundedEquals != null) __obj.updateDynamic("roundedEquals")(roundedEquals)
+    if (roundedEquals != null) __obj.updateDynamic("roundedEquals")(js.Any.fromFunction1(roundedEquals))
     if (self != null) __obj.updateDynamic("self")(self)
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
-    if (toString != null) __obj.updateDynamic("toString")(toString)
-    if (translate != null) __obj.updateDynamic("translate")(translate)
+    if (toString != null) __obj.updateDynamic("toString")(js.Any.fromFunction0(toString))
+    if (translate != null) __obj.updateDynamic("translate")(js.Any.fromFunction2(translate))
     if (uses != null) __obj.updateDynamic("uses")(uses)
     __obj.asInstanceOf[IPoint]
   }

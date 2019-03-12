@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RevocationValues
   extends xmlDashCoreLib.xmlDashCoreMod.XmlObject {
-  var CRLValues: CRLValues = js.native
+  var CRLValues: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.CRLValues = js.native
   var Id: java.lang.String = js.native
-  var OCSPValues: OCSPValues = js.native
-  var OtherValues: OtherValues = js.native
+  var OCSPValues: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.OCSPValues = js.native
+  var OtherValues: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.OtherValues = js.native
 }
 

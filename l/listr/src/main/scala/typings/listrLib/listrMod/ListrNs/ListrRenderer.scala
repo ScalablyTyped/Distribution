@@ -13,8 +13,8 @@ trait ListrRenderer extends js.Object {
 
 object ListrRenderer {
   @scala.inline
-  def apply(end: js.Function0[scala.Unit], nonTTY: scala.Boolean, render: js.Function0[scala.Unit]): ListrRenderer = {
-    val __obj = js.Dynamic.literal(end = end, nonTTY = nonTTY, render = render)
+  def apply(end: () => scala.Unit, nonTTY: scala.Boolean, render: () => scala.Unit): ListrRenderer = {
+    val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), nonTTY = nonTTY, render = js.Any.fromFunction0(render))
   
     __obj.asInstanceOf[ListrRenderer]
   }

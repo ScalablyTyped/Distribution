@@ -40,11 +40,7 @@ object VectorTileOptions {
     opacity: scala.Int | scala.Double = null,
     renderBuffer: scala.Int | scala.Double = null,
     renderMode: openlayersLib.openlayersMod.layerNs.VectorTileRenderType | java.lang.String = null,
-    renderOrder: js.Function2[
-      /* feature1 */ openlayersLib.openlayersMod.Feature, 
-      /* feature2 */ openlayersLib.openlayersMod.Feature, 
-      scala.Double
-    ] = null,
+    renderOrder: (/* feature1 */ openlayersLib.openlayersMod.Feature, /* feature2 */ openlayersLib.openlayersMod.Feature) => scala.Double = null,
     source: openlayersLib.openlayersMod.sourceNs.VectorTile = null,
     style: openlayersLib.openlayersMod.styleNs.Style | js.Array[openlayersLib.openlayersMod.styleNs.Style] | openlayersLib.openlayersMod.StyleFunction = null,
     updateWhileAnimating: js.UndefOr[scala.Boolean] = js.undefined,
@@ -60,7 +56,7 @@ object VectorTileOptions {
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (renderBuffer != null) __obj.updateDynamic("renderBuffer")(renderBuffer.asInstanceOf[js.Any])
     if (renderMode != null) __obj.updateDynamic("renderMode")(renderMode.asInstanceOf[js.Any])
-    if (renderOrder != null) __obj.updateDynamic("renderOrder")(renderOrder)
+    if (renderOrder != null) __obj.updateDynamic("renderOrder")(js.Any.fromFunction2(renderOrder))
     if (source != null) __obj.updateDynamic("source")(source)
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (!js.isUndefined(updateWhileAnimating)) __obj.updateDynamic("updateWhileAnimating")(updateWhileAnimating)

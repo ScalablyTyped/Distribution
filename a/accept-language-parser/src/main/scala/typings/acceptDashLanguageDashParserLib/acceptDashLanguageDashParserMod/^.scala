@@ -8,21 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("accept-language-parser", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def parse(acceptLanguage: java.lang.String): js.Array[acceptDashLanguageDashParserLib.acceptDashLanguageDashParserMod.Language] = js.native
+  def parse(acceptLanguage: java.lang.String): js.Array[Language] = js.native
   def pick[T /* <: java.lang.String */](supportedLanguages: js.Array[T], acceptLanguage: java.lang.String): T | scala.Null = js.native
-  def pick[T /* <: java.lang.String */](
-    supportedLanguages: js.Array[T],
-    acceptLanguage: java.lang.String,
-    options: acceptDashLanguageDashParserLib.acceptDashLanguageDashParserMod.PickOptions
-  ): T | scala.Null = js.native
-  def pick[T /* <: java.lang.String */](
-    supportedLanguages: js.Array[T],
-    acceptLanguage: js.Array[acceptDashLanguageDashParserLib.acceptDashLanguageDashParserMod.Language]
-  ): T | scala.Null = js.native
-  def pick[T /* <: java.lang.String */](
-    supportedLanguages: js.Array[T],
-    acceptLanguage: js.Array[acceptDashLanguageDashParserLib.acceptDashLanguageDashParserMod.Language],
-    options: acceptDashLanguageDashParserLib.acceptDashLanguageDashParserMod.PickOptions
-  ): T | scala.Null = js.native
+  def pick[T /* <: java.lang.String */](supportedLanguages: js.Array[T], acceptLanguage: java.lang.String, options: PickOptions): T | scala.Null = js.native
+  def pick[T /* <: java.lang.String */](supportedLanguages: js.Array[T], acceptLanguage: js.Array[Language]): T | scala.Null = js.native
+  def pick[T /* <: java.lang.String */](supportedLanguages: js.Array[T], acceptLanguage: js.Array[Language], options: PickOptions): T | scala.Null = js.native
 }
 

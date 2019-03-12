@@ -14,11 +14,11 @@ trait ITable extends js.Object {
 object ITable {
   @scala.inline
   def apply(
-    as: js.Function1[java.lang.String, Table],
-    createRow: js.Function1[js.Object, lovefieldLib.lovefieldMod.lfNs.Row],
-    getName: js.Function0[java.lang.String]
+    as: java.lang.String => Table,
+    createRow: js.Object => lovefieldLib.lovefieldMod.lfNs.Row,
+    getName: () => java.lang.String
   ): ITable = {
-    val __obj = js.Dynamic.literal(as = as, createRow = createRow, getName = getName)
+    val __obj = js.Dynamic.literal(as = js.Any.fromFunction1(as), createRow = js.Any.fromFunction1(createRow), getName = js.Any.fromFunction0(getName))
   
     __obj.asInstanceOf[ITable]
   }

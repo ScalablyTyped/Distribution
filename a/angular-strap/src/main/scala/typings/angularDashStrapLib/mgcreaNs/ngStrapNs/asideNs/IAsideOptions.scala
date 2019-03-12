@@ -39,10 +39,10 @@ object IAsideOptions {
     controllerAs: java.lang.String = null,
     html: js.UndefOr[scala.Boolean] = js.undefined,
     keyboard: js.UndefOr[scala.Boolean] = js.undefined,
-    onBeforeHide: js.Function1[/* aside */ IAside, scala.Unit] = null,
-    onBeforeShow: js.Function1[/* aside */ IAside, scala.Unit] = null,
-    onHide: js.Function1[/* aside */ IAside, scala.Unit] = null,
-    onShow: js.Function1[/* aside */ IAside, scala.Unit] = null,
+    onBeforeHide: /* aside */ IAside => scala.Unit = null,
+    onBeforeShow: /* aside */ IAside => scala.Unit = null,
+    onHide: /* aside */ IAside => scala.Unit = null,
+    onShow: /* aside */ IAside => scala.Unit = null,
     placement: java.lang.String = null,
     scope: angularLib.angularMod.angularNs.IScope = null,
     show: js.UndefOr[scala.Boolean] = js.undefined,
@@ -60,10 +60,10 @@ object IAsideOptions {
     if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs)
     if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
-    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(onBeforeHide)
-    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(onBeforeShow)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(js.Any.fromFunction1(onBeforeHide))
+    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(js.Any.fromFunction1(onBeforeShow))
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction1(onHide))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (placement != null) __obj.updateDynamic("placement")(placement)
     if (scope != null) __obj.updateDynamic("scope")(scope)
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)

@@ -19,12 +19,12 @@ object IDate {
   @scala.inline
   def apply(
     IColumn: IColumn = null,
-    defaultRenderer: js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit] = null,
+    defaultRenderer: /* value */ js.UndefOr[js.Any] => scala.Unit = null,
     format: java.lang.String = null
   ): IDate = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IColumn)
-    if (defaultRenderer != null) __obj.updateDynamic("defaultRenderer")(defaultRenderer)
+    if (defaultRenderer != null) __obj.updateDynamic("defaultRenderer")(js.Any.fromFunction1(defaultRenderer))
     if (format != null) __obj.updateDynamic("format")(format)
     __obj.asInstanceOf[IDate]
   }

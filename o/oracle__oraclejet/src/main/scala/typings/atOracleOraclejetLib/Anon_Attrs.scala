@@ -37,19 +37,9 @@ object Anon_Attrs {
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     attrs: js.Object = null,
     contentType: java.lang.String = null,
-    error: js.Function3[
-      /* model */ atOracleOraclejetLib.ojmodelMod.Model, 
-      /* xhr */ js.Any, 
-      /* options */ js.Object, 
-      scala.Unit
-    ] = null,
+    error: (/* model */ atOracleOraclejetLib.ojmodelMod.Model, /* xhr */ js.Any, /* options */ js.Object) => scala.Unit = null,
     patch: js.UndefOr[scala.Boolean] = js.undefined,
-    success: js.Function3[
-      /* model */ atOracleOraclejetLib.ojmodelMod.Model, 
-      /* response */ js.Any, 
-      /* options */ js.Object, 
-      scala.Unit
-    ] = null,
+    success: (/* model */ atOracleOraclejetLib.ojmodelMod.Model, /* response */ js.Any, /* options */ js.Object) => scala.Unit = null,
     valdiate: js.UndefOr[scala.Boolean] = js.undefined,
     wait: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Attrs = {
@@ -57,9 +47,9 @@ object Anon_Attrs {
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction3(error))
     if (!js.isUndefined(patch)) __obj.updateDynamic("patch")(patch)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction3(success))
     if (!js.isUndefined(valdiate)) __obj.updateDynamic("valdiate")(valdiate)
     if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait)
     __obj.asInstanceOf[Anon_Attrs]

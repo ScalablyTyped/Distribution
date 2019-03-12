@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.ChartTitle")
 @js.native
 class ChartTitle protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   var AutoScaleFont: js.Any = js.native
   val Border: ChartBorder = js.native
   var Caption: java.lang.String = js.native
@@ -23,7 +23,7 @@ class ChartTitle protected () extends js.Object {
   val Height: scala.Double = js.native
   var HorizontalAlignment: js.Any = js.native
   var IncludeInLayout: scala.Boolean = js.native
-  val Interior: Interior = js.native
+  val Interior: activexDashPowerpointLib.PowerPointNs.Interior = js.native
   var Left: scala.Double = js.native
   val Name: java.lang.String = js.native
   var Orientation: js.Any = js.native

@@ -47,17 +47,17 @@ object AxiosRequestConfig {
     maxContentLength: scala.Int | scala.Double = null,
     maxRedirects: scala.Int | scala.Double = null,
     method: java.lang.String = null,
-    onDownloadProgress: js.Function1[/* progressEvent */ js.Any, scala.Unit] = null,
-    onUploadProgress: js.Function1[/* progressEvent */ js.Any, scala.Unit] = null,
+    onDownloadProgress: /* progressEvent */ js.Any => scala.Unit = null,
+    onUploadProgress: /* progressEvent */ js.Any => scala.Unit = null,
     params: js.Any = null,
-    paramsSerializer: js.Function1[/* params */ js.Any, java.lang.String] = null,
+    paramsSerializer: /* params */ js.Any => java.lang.String = null,
     proxy: AxiosProxyConfig | axiosLib.axiosLibNumbers.`false` = null,
     responseType: java.lang.String = null,
     timeout: scala.Int | scala.Double = null,
     transformRequest: AxiosTransformer | js.Array[AxiosTransformer] = null,
     transformResponse: AxiosTransformer | js.Array[AxiosTransformer] = null,
     url: java.lang.String = null,
-    validateStatus: js.Function1[/* status */ scala.Double, scala.Boolean] = null,
+    validateStatus: /* status */ scala.Double => scala.Boolean = null,
     withCredentials: js.UndefOr[scala.Boolean] = js.undefined,
     xsrfCookieName: java.lang.String = null,
     xsrfHeaderName: java.lang.String = null
@@ -74,17 +74,17 @@ object AxiosRequestConfig {
     if (maxContentLength != null) __obj.updateDynamic("maxContentLength")(maxContentLength.asInstanceOf[js.Any])
     if (maxRedirects != null) __obj.updateDynamic("maxRedirects")(maxRedirects.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method)
-    if (onDownloadProgress != null) __obj.updateDynamic("onDownloadProgress")(onDownloadProgress)
-    if (onUploadProgress != null) __obj.updateDynamic("onUploadProgress")(onUploadProgress)
+    if (onDownloadProgress != null) __obj.updateDynamic("onDownloadProgress")(js.Any.fromFunction1(onDownloadProgress))
+    if (onUploadProgress != null) __obj.updateDynamic("onUploadProgress")(js.Any.fromFunction1(onUploadProgress))
     if (params != null) __obj.updateDynamic("params")(params)
-    if (paramsSerializer != null) __obj.updateDynamic("paramsSerializer")(paramsSerializer)
+    if (paramsSerializer != null) __obj.updateDynamic("paramsSerializer")(js.Any.fromFunction1(paramsSerializer))
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     if (responseType != null) __obj.updateDynamic("responseType")(responseType)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (transformRequest != null) __obj.updateDynamic("transformRequest")(transformRequest.asInstanceOf[js.Any])
     if (transformResponse != null) __obj.updateDynamic("transformResponse")(transformResponse.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url)
-    if (validateStatus != null) __obj.updateDynamic("validateStatus")(validateStatus)
+    if (validateStatus != null) __obj.updateDynamic("validateStatus")(js.Any.fromFunction1(validateStatus))
     if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
     if (xsrfCookieName != null) __obj.updateDynamic("xsrfCookieName")(xsrfCookieName)
     if (xsrfHeaderName != null) __obj.updateDynamic("xsrfHeaderName")(xsrfHeaderName)

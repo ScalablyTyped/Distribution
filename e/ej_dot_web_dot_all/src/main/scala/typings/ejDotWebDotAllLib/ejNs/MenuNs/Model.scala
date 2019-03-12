@@ -140,14 +140,14 @@ object Model {
   @scala.inline
   def apply(
     animationType: ejDotWebDotAllLib.ejNs.AnimationType | java.lang.String = null,
-    beforeOpen: js.Function1[/* e */ BeforeOpenEventArgs, scala.Unit] = null,
-    click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
-    close: js.Function1[/* e */ CloseEventArgs, scala.Unit] = null,
+    beforeOpen: /* e */ BeforeOpenEventArgs => scala.Unit = null,
+    click: /* e */ ClickEventArgs => scala.Unit = null,
+    close: /* e */ CloseEventArgs => scala.Unit = null,
     container: java.lang.String = null,
     contextMenuTarget: java.lang.String = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
     enableCenterAlign: js.UndefOr[scala.Boolean] = js.undefined,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
@@ -158,16 +158,16 @@ object Model {
     height: java.lang.String | scala.Double = null,
     htmlAttributes: js.Any = null,
     isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
-    keydown: js.Function1[/* e */ KeydownEventArgs, scala.Unit] = null,
+    keydown: /* e */ KeydownEventArgs => scala.Unit = null,
     menuType: java.lang.String | ejDotWebDotAllLib.ejNs.MenuType = null,
-    mouseout: js.Function1[/* e */ MouseoutEventArgs, scala.Unit] = null,
-    mouseover: js.Function1[/* e */ MouseoverEventArgs, scala.Unit] = null,
-    open: js.Function1[/* e */ OpenEventArgs, scala.Unit] = null,
+    mouseout: /* e */ MouseoutEventArgs => scala.Unit = null,
+    mouseover: /* e */ MouseoverEventArgs => scala.Unit = null,
+    open: /* e */ OpenEventArgs => scala.Unit = null,
     openOnClick: js.UndefOr[scala.Boolean] = js.undefined,
     orientation: ejDotWebDotAllLib.ejNs.Orientation | java.lang.String = null,
-    overflowClose: js.Function1[/* e */ OverflowCloseEventArgs, scala.Unit] = null,
+    overflowClose: /* e */ OverflowCloseEventArgs => scala.Unit = null,
     overflowHeight: java.lang.String | scala.Double = null,
-    overflowOpen: js.Function1[/* e */ OverflowOpenEventArgs, scala.Unit] = null,
+    overflowOpen: /* e */ OverflowOpenEventArgs => scala.Unit = null,
     overflowWidth: java.lang.String | scala.Double = null,
     showRootLevelArrows: js.UndefOr[scala.Boolean] = js.undefined,
     showSubLevelArrows: js.UndefOr[scala.Boolean] = js.undefined,
@@ -177,14 +177,14 @@ object Model {
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (animationType != null) __obj.updateDynamic("animationType")(animationType.asInstanceOf[js.Any])
-    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen)
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(js.Any.fromFunction1(beforeOpen))
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (container != null) __obj.updateDynamic("container")(container)
     if (contextMenuTarget != null) __obj.updateDynamic("contextMenuTarget")(contextMenuTarget)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
     if (!js.isUndefined(enableCenterAlign)) __obj.updateDynamic("enableCenterAlign")(enableCenterAlign)
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
@@ -195,16 +195,16 @@ object Model {
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
     if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
-    if (keydown != null) __obj.updateDynamic("keydown")(keydown)
+    if (keydown != null) __obj.updateDynamic("keydown")(js.Any.fromFunction1(keydown))
     if (menuType != null) __obj.updateDynamic("menuType")(menuType.asInstanceOf[js.Any])
-    if (mouseout != null) __obj.updateDynamic("mouseout")(mouseout)
-    if (mouseover != null) __obj.updateDynamic("mouseover")(mouseover)
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (mouseout != null) __obj.updateDynamic("mouseout")(js.Any.fromFunction1(mouseout))
+    if (mouseover != null) __obj.updateDynamic("mouseover")(js.Any.fromFunction1(mouseover))
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (!js.isUndefined(openOnClick)) __obj.updateDynamic("openOnClick")(openOnClick)
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (overflowClose != null) __obj.updateDynamic("overflowClose")(overflowClose)
+    if (overflowClose != null) __obj.updateDynamic("overflowClose")(js.Any.fromFunction1(overflowClose))
     if (overflowHeight != null) __obj.updateDynamic("overflowHeight")(overflowHeight.asInstanceOf[js.Any])
-    if (overflowOpen != null) __obj.updateDynamic("overflowOpen")(overflowOpen)
+    if (overflowOpen != null) __obj.updateDynamic("overflowOpen")(js.Any.fromFunction1(overflowOpen))
     if (overflowWidth != null) __obj.updateDynamic("overflowWidth")(overflowWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(showRootLevelArrows)) __obj.updateDynamic("showRootLevelArrows")(showRootLevelArrows)
     if (!js.isUndefined(showSubLevelArrows)) __obj.updateDynamic("showSubLevelArrows")(showSubLevelArrows)

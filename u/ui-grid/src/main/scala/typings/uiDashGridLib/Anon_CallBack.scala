@@ -91,48 +91,16 @@ trait Anon_CallBack[TEntity] extends js.Object {
 object Anon_CallBack {
   @scala.inline
   def apply[TEntity](
-    canvasHeightChanged: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      uiDashGridLib.uiDashGridMod.uiGridNs.canvasHeightChangedHandler, 
-      scala.Unit
-    ],
-    columnVisibilityChanged: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      uiDashGridLib.uiDashGridMod.uiGridNs.columnVisibilityChangedHandler[TEntity], 
-      scala.Unit
-    ],
-    filterChanged: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      uiDashGridLib.uiDashGridMod.uiGridNs.filterChangedHandler[TEntity], 
-      scala.Unit
-    ],
-    rowsRendered: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      uiDashGridLib.uiDashGridMod.uiGridNs.rowsRenderedHandler[TEntity], 
-      scala.Unit
-    ],
-    rowsVisibleChanged: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      uiDashGridLib.uiDashGridMod.uiGridNs.rowsVisibleChangedHandler[TEntity], 
-      scala.Unit
-    ],
-    scrollBegin: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      uiDashGridLib.uiDashGridMod.uiGridNs.scrollBeginHandler, 
-      scala.Unit
-    ],
-    scrollEnd: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      uiDashGridLib.uiDashGridMod.uiGridNs.scrollEndHandler, 
-      scala.Unit
-    ],
-    sortChanged: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      uiDashGridLib.uiDashGridMod.uiGridNs.sortChangedHandler[TEntity], 
-      scala.Unit
-    ]
+    canvasHeightChanged: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.canvasHeightChangedHandler) => scala.Unit,
+    columnVisibilityChanged: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.columnVisibilityChangedHandler[TEntity]) => scala.Unit,
+    filterChanged: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.filterChangedHandler[TEntity]) => scala.Unit,
+    rowsRendered: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.rowsRenderedHandler[TEntity]) => scala.Unit,
+    rowsVisibleChanged: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.rowsVisibleChangedHandler[TEntity]) => scala.Unit,
+    scrollBegin: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.scrollBeginHandler) => scala.Unit,
+    scrollEnd: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.scrollEndHandler) => scala.Unit,
+    sortChanged: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.sortChangedHandler[TEntity]) => scala.Unit
   ): Anon_CallBack[TEntity] = {
-    val __obj = js.Dynamic.literal(canvasHeightChanged = canvasHeightChanged, columnVisibilityChanged = columnVisibilityChanged, filterChanged = filterChanged, rowsRendered = rowsRendered, rowsVisibleChanged = rowsVisibleChanged, scrollBegin = scrollBegin, scrollEnd = scrollEnd, sortChanged = sortChanged)
+    val __obj = js.Dynamic.literal(canvasHeightChanged = js.Any.fromFunction2(canvasHeightChanged), columnVisibilityChanged = js.Any.fromFunction2(columnVisibilityChanged), filterChanged = js.Any.fromFunction2(filterChanged), rowsRendered = js.Any.fromFunction2(rowsRendered), rowsVisibleChanged = js.Any.fromFunction2(rowsVisibleChanged), scrollBegin = js.Any.fromFunction2(scrollBegin), scrollEnd = js.Any.fromFunction2(scrollEnd), sortChanged = js.Any.fromFunction2(sortChanged))
   
     __obj.asInstanceOf[Anon_CallBack[TEntity]]
   }

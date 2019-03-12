@@ -13,10 +13,10 @@ trait Anon_Password extends js.Object {
 object Anon_Password {
   @scala.inline
   def apply(
-    reset: js.Function1[java.lang.String, js.Promise[scala.Unit]],
-    set: js.Function2[java.lang.String, java.lang.String, js.Promise[scala.Unit]]
+    reset: java.lang.String => js.Promise[scala.Unit],
+    set: (java.lang.String, java.lang.String) => js.Promise[scala.Unit]
   ): Anon_Password = {
-    val __obj = js.Dynamic.literal(reset = reset, set = set)
+    val __obj = js.Dynamic.literal(reset = js.Any.fromFunction1(reset), set = js.Any.fromFunction2(set))
   
     __obj.asInstanceOf[Anon_Password]
   }

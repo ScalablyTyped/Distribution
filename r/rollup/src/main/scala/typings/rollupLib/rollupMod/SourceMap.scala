@@ -23,11 +23,11 @@ object SourceMap {
     names: js.Array[java.lang.String],
     sources: js.Array[java.lang.String],
     sourcesContent: js.Array[java.lang.String],
-    toString: js.Function0[java.lang.String],
-    toUrl: js.Function0[java.lang.String],
+    toString: () => java.lang.String,
+    toUrl: () => java.lang.String,
     version: java.lang.String
   ): SourceMap = {
-    val __obj = js.Dynamic.literal(file = file, mappings = mappings, names = names, sources = sources, sourcesContent = sourcesContent, toString = toString, toUrl = toUrl, version = version)
+    val __obj = js.Dynamic.literal(file = file, mappings = mappings, names = names, sources = sources, sourcesContent = sourcesContent, toString = js.Any.fromFunction0(toString), toUrl = js.Any.fromFunction0(toUrl), version = version)
   
     __obj.asInstanceOf[SourceMap]
   }

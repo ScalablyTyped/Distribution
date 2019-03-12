@@ -142,7 +142,7 @@ trait XTextLayout
     * @returns a sequence of rectangles in font coordinate space, specifying the bounds, one for every glyph.
     * @see XTextLayout.queryMeasures()
     */
-  def queryInkMeasures(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D]
+  def queryInkMeasures(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D]
   /**
     * Query the advancements for every character in the input string.
     *
@@ -153,7 +153,7 @@ trait XTextLayout
     * @returns a sequence of double specifying the advancements per character in font coordinate space.
     * @see XTextLayout.applyLogicalAdvancements()
     */
-  def queryLogicalAdvancements(): activexDashInteropLib.SafeArray[scala.Double]
+  def queryLogicalAdvancements(): stdLib.SafeArray[scala.Double]
   /**
     * This method generates a highlight polygon.
     *
@@ -173,7 +173,7 @@ trait XTextLayout
     * @returns a sequence of rectangles specifying the bounds in font coordinate space, one for every glyph.
     * @see XTextLayout.queryInkMeasures()
     */
-  def queryMeasures(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D]
+  def queryMeasures(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D]
   /**
     * Query the overall bounding box of the text.
     *
@@ -187,7 +187,7 @@ trait XTextLayout
     * Each glyph is represented by a separate {@link XPolyPolygon2D} in the returned sequence.
     * @returns a sequence of {@link XPolyPolygon2D} in font coordinate space, one for every glyph.
     */
-  def queryTextShapes(): activexDashInteropLib.SafeArray[XPolyPolygon2D]
+  def queryTextShapes(): stdLib.SafeArray[XPolyPolygon2D]
   /**
     * This method generates a highlight polygon.
     *
@@ -208,36 +208,28 @@ object XTextLayout {
     Font: XCanvasFont,
     MainTextDirection: scala.Double,
     Text: StringContext,
-    acquire: js.Function0[scala.Unit],
-    applyLogicalAdvancements: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
-    combinedJustify: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XTextLayout], 
-      scala.Double, 
-      scala.Double
-    ],
-    getBaselineOffset: js.Function0[scala.Double],
-    getCaret: js.Function2[scala.Double, scala.Boolean, Caret],
-    getFont: js.Function0[XCanvasFont],
-    getMainTextDirection: js.Function0[scala.Double],
-    getNextInsertionIndex: js.Function3[scala.Double, scala.Double, scala.Boolean, scala.Double],
-    getText: js.Function0[StringContext],
-    getTextHit: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, TextHit],
-    justify: js.Function1[scala.Double, scala.Double],
-    queryInkMeasures: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    queryLogicalAdvancements: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    queryLogicalHighlighting: js.Function2[scala.Double, scala.Double, XPolyPolygon2D],
-    queryMeasures: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D]
-    ],
-    queryTextBounds: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D],
-    queryTextShapes: js.Function0[activexDashInteropLib.SafeArray[XPolyPolygon2D]],
-    queryVisualHighlighting: js.Function2[scala.Double, scala.Double, XPolyPolygon2D],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    applyLogicalAdvancements: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => scala.Unit,
+    combinedJustify: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XTextLayout], scala.Double) => scala.Double,
+    getBaselineOffset: () => scala.Double,
+    getCaret: (scala.Double, scala.Boolean) => Caret,
+    getFont: () => XCanvasFont,
+    getMainTextDirection: () => scala.Double,
+    getNextInsertionIndex: (scala.Double, scala.Double, scala.Boolean) => scala.Double,
+    getText: () => StringContext,
+    getTextHit: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D => TextHit,
+    justify: scala.Double => scala.Double,
+    queryInkMeasures: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    queryLogicalAdvancements: () => stdLib.SafeArray[scala.Double],
+    queryLogicalHighlighting: (scala.Double, scala.Double) => XPolyPolygon2D,
+    queryMeasures: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D],
+    queryTextBounds: () => activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D,
+    queryTextShapes: () => stdLib.SafeArray[XPolyPolygon2D],
+    queryVisualHighlighting: (scala.Double, scala.Double) => XPolyPolygon2D,
+    release: () => scala.Unit
   ): XTextLayout = {
-    val __obj = js.Dynamic.literal(BaselineOffset = BaselineOffset, Font = Font, MainTextDirection = MainTextDirection, Text = Text, acquire = acquire, applyLogicalAdvancements = applyLogicalAdvancements, combinedJustify = combinedJustify, getBaselineOffset = getBaselineOffset, getCaret = getCaret, getFont = getFont, getMainTextDirection = getMainTextDirection, getNextInsertionIndex = getNextInsertionIndex, getText = getText, getTextHit = getTextHit, justify = justify, queryInkMeasures = queryInkMeasures, queryInterface = queryInterface, queryLogicalAdvancements = queryLogicalAdvancements, queryLogicalHighlighting = queryLogicalHighlighting, queryMeasures = queryMeasures, queryTextBounds = queryTextBounds, queryTextShapes = queryTextShapes, queryVisualHighlighting = queryVisualHighlighting, release = release)
+    val __obj = js.Dynamic.literal(BaselineOffset = BaselineOffset, Font = Font, MainTextDirection = MainTextDirection, Text = Text, acquire = js.Any.fromFunction0(acquire), applyLogicalAdvancements = js.Any.fromFunction1(applyLogicalAdvancements), combinedJustify = js.Any.fromFunction2(combinedJustify), getBaselineOffset = js.Any.fromFunction0(getBaselineOffset), getCaret = js.Any.fromFunction2(getCaret), getFont = js.Any.fromFunction0(getFont), getMainTextDirection = js.Any.fromFunction0(getMainTextDirection), getNextInsertionIndex = js.Any.fromFunction3(getNextInsertionIndex), getText = js.Any.fromFunction0(getText), getTextHit = js.Any.fromFunction1(getTextHit), justify = js.Any.fromFunction1(justify), queryInkMeasures = js.Any.fromFunction0(queryInkMeasures), queryInterface = js.Any.fromFunction1(queryInterface), queryLogicalAdvancements = js.Any.fromFunction0(queryLogicalAdvancements), queryLogicalHighlighting = js.Any.fromFunction2(queryLogicalHighlighting), queryMeasures = js.Any.fromFunction0(queryMeasures), queryTextBounds = js.Any.fromFunction0(queryTextBounds), queryTextShapes = js.Any.fromFunction0(queryTextShapes), queryVisualHighlighting = js.Any.fromFunction2(queryVisualHighlighting), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTextLayout]
   }

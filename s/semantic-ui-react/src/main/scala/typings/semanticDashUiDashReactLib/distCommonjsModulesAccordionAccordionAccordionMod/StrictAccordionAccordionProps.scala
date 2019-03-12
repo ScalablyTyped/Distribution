@@ -26,7 +26,7 @@ trait StrictAccordionAccordionProps extends js.Object {
     */
   var onTitleClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       /* data */ semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionTitleMod.AccordionTitleProps, 
       scala.Unit
     ]
@@ -48,11 +48,7 @@ object StrictAccordionAccordionProps {
     className: java.lang.String = null,
     defaultActiveIndex: scala.Double | js.Array[scala.Double] = null,
     exclusive: js.UndefOr[scala.Boolean] = js.undefined,
-    onTitleClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionTitleMod.AccordionTitleProps, 
-      scala.Unit
-    ] = null,
+    onTitleClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionTitleMod.AccordionTitleProps) => scala.Unit = null,
     panels: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandCollection[
       semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionPanelMod.AccordionPanelProps
     ] = null
@@ -64,7 +60,7 @@ object StrictAccordionAccordionProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (defaultActiveIndex != null) __obj.updateDynamic("defaultActiveIndex")(defaultActiveIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
-    if (onTitleClick != null) __obj.updateDynamic("onTitleClick")(onTitleClick)
+    if (onTitleClick != null) __obj.updateDynamic("onTitleClick")(js.Any.fromFunction2(onTitleClick))
     if (panels != null) __obj.updateDynamic("panels")(panels)
     __obj.asInstanceOf[StrictAccordionAccordionProps]
   }

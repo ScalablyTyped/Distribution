@@ -13,6 +13,6 @@ object ^ extends js.Object {
     *
     * Pass in an options object to generate an uninitialized MotorHat object.
     */
-  def default(options: motorDashHatLib.motorDashHatMod.MotorHatOptions): motorDashHatLib.motorDashHatMod.MotorHat = js.native
+  def default(options: MotorHatOptions): MotorHat = js.native
 }
 

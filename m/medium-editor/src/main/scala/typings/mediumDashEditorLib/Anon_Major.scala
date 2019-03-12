@@ -19,9 +19,9 @@ object Anon_Major {
     minor: scala.Double,
     preRelease: java.lang.String,
     revision: scala.Double,
-    toString: js.Function0[java.lang.String]
+    toString: () => java.lang.String
   ): Anon_Major = {
-    val __obj = js.Dynamic.literal(major = major, minor = minor, preRelease = preRelease, revision = revision, toString = toString)
+    val __obj = js.Dynamic.literal(major = major, minor = minor, preRelease = preRelease, revision = revision, toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[Anon_Major]
   }

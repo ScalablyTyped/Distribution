@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def isTimeZone(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/timezone.TimeZone */ scala.Boolean = js.native
-  def local(): timezonecompleteLib.distLibTimezoneMod.TimeZone = js.native
-  def utc(): timezonecompleteLib.distLibTimezoneMod.TimeZone = js.native
-  def zone(name: java.lang.String): timezonecompleteLib.distLibTimezoneMod.TimeZone = js.native
-  def zone(name: java.lang.String, dst: scala.Boolean): timezonecompleteLib.distLibTimezoneMod.TimeZone = js.native
-  def zone(offset: scala.Double): timezonecompleteLib.distLibTimezoneMod.TimeZone = js.native
+  def local(): TimeZone = js.native
+  def utc(): TimeZone = js.native
+  def zone(name: java.lang.String): TimeZone = js.native
+  def zone(name: java.lang.String, dst: scala.Boolean): TimeZone = js.native
+  def zone(offset: scala.Double): TimeZone = js.native
 }
 

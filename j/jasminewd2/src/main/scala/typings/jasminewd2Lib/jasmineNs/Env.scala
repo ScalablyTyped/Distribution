@@ -11,8 +11,8 @@ trait Env extends js.Object {
 
 object Env {
   @scala.inline
-  def apply(addMatchers: js.Function1[AsyncCustomMatcherFactories, scala.Unit]): Env = {
-    val __obj = js.Dynamic.literal(addMatchers = addMatchers)
+  def apply(addMatchers: AsyncCustomMatcherFactories => scala.Unit): Env = {
+    val __obj = js.Dynamic.literal(addMatchers = js.Any.fromFunction1(addMatchers))
   
     __obj.asInstanceOf[Env]
   }

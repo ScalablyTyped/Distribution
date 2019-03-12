@@ -85,7 +85,7 @@ object InputEvent {
     buttons: scala.Double,
     clickCount: scala.Double,
     control: scala.Boolean,
-    copy: js.Function0[InputEvent],
+    copy: () => InputEvent,
     delta: scala.Double,
     diagram: Diagram,
     documentPoint: Point,
@@ -108,7 +108,7 @@ object InputEvent {
     up: scala.Boolean,
     viewPoint: Point
   ): InputEvent = {
-    val __obj = js.Dynamic.literal(alt = alt, bubbles = bubbles, button = button, buttons = buttons, clickCount = clickCount, control = control, copy = copy, delta = delta, diagram = diagram, documentPoint = documentPoint, down = down, event = event, handled = handled, isMac = isMac, isMultiTouch = isMultiTouch, isTouchEvent = isTouchEvent, key = key, left = left, meta = meta, middle = middle, modifiers = modifiers, right = right, shift = shift, targetDiagram = targetDiagram, targetObject = targetObject, timestamp = timestamp, up = up, viewPoint = viewPoint)
+    val __obj = js.Dynamic.literal(alt = alt, bubbles = bubbles, button = button, buttons = buttons, clickCount = clickCount, control = control, copy = js.Any.fromFunction0(copy), delta = delta, diagram = diagram, documentPoint = documentPoint, down = down, event = event, handled = handled, isMac = isMac, isMultiTouch = isMultiTouch, isTouchEvent = isTouchEvent, key = key, left = left, meta = meta, middle = middle, modifiers = modifiers, right = right, shift = shift, targetDiagram = targetDiagram, targetObject = targetObject, timestamp = timestamp, up = up, viewPoint = viewPoint)
   
     __obj.asInstanceOf[InputEvent]
   }

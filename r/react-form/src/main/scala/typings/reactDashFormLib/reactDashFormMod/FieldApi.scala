@@ -22,19 +22,19 @@ trait FieldApi extends js.Object {
 object FieldApi {
   @scala.inline
   def apply(
-    getError: js.Function0[FormError],
-    getFieldName: js.Function0[java.lang.String],
-    getSuccess: js.Function0[FormError],
-    getTouched: js.Function0[scala.Boolean],
-    getValue: js.Function0[FormValue],
-    getWarning: js.Function0[FormError],
-    setError: js.Function1[FormError, scala.Unit],
-    setSuccess: js.Function1[FormError, scala.Unit],
-    setTouched: js.Function1[scala.Boolean, scala.Unit],
-    setValue: js.Function1[FormValue, scala.Unit],
-    setWarning: js.Function1[FormError, scala.Unit]
+    getError: () => FormError,
+    getFieldName: () => java.lang.String,
+    getSuccess: () => FormError,
+    getTouched: () => scala.Boolean,
+    getValue: () => FormValue,
+    getWarning: () => FormError,
+    setError: FormError => scala.Unit,
+    setSuccess: FormError => scala.Unit,
+    setTouched: scala.Boolean => scala.Unit,
+    setValue: FormValue => scala.Unit,
+    setWarning: FormError => scala.Unit
   ): FieldApi = {
-    val __obj = js.Dynamic.literal(getError = getError, getFieldName = getFieldName, getSuccess = getSuccess, getTouched = getTouched, getValue = getValue, getWarning = getWarning, setError = setError, setSuccess = setSuccess, setTouched = setTouched, setValue = setValue, setWarning = setWarning)
+    val __obj = js.Dynamic.literal(getError = js.Any.fromFunction0(getError), getFieldName = js.Any.fromFunction0(getFieldName), getSuccess = js.Any.fromFunction0(getSuccess), getTouched = js.Any.fromFunction0(getTouched), getValue = js.Any.fromFunction0(getValue), getWarning = js.Any.fromFunction0(getWarning), setError = js.Any.fromFunction1(setError), setSuccess = js.Any.fromFunction1(setSuccess), setTouched = js.Any.fromFunction1(setTouched), setValue = js.Any.fromFunction1(setValue), setWarning = js.Any.fromFunction1(setWarning))
   
     __obj.asInstanceOf[FieldApi]
   }

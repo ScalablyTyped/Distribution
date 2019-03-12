@@ -13,10 +13,10 @@ trait Anon_Base extends js.Object {
 object Anon_Base {
   @scala.inline
   def apply(
-    isComputingView: js.Function0[scala.Boolean],
-    quickDiff: js.Function2[js.Array[js.Any], js.Array[js.Any], js.Tuple2[js.Array[js.Any], js.Array[js.Any]]]
+    isComputingView: () => scala.Boolean,
+    quickDiff: (js.Array[js.Any], js.Array[js.Any]) => js.Tuple2[js.Array[js.Any], js.Array[js.Any]]
   ): Anon_Base = {
-    val __obj = js.Dynamic.literal(isComputingView = isComputingView, quickDiff = quickDiff)
+    val __obj = js.Dynamic.literal(isComputingView = js.Any.fromFunction0(isComputingView), quickDiff = js.Any.fromFunction2(quickDiff))
   
     __obj.asInstanceOf[Anon_Base]
   }

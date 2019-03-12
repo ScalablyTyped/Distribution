@@ -37,20 +37,11 @@ trait LiensResource extends js.Object {
 object LiensResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Lien]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    list: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListLiensResponse]
-    ]
+    create: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[Lien],
+    delete: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    list: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[ListLiensResponse]
   ): LiensResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, list = list)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[LiensResource]
   }

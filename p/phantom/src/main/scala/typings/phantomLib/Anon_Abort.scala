@@ -14,11 +14,11 @@ trait Anon_Abort extends js.Object {
 object Anon_Abort {
   @scala.inline
   def apply(
-    abort: js.Function0[scala.Unit],
-    changeUrl: js.Function1[java.lang.String, scala.Unit],
-    setHeader: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    abort: () => scala.Unit,
+    changeUrl: java.lang.String => scala.Unit,
+    setHeader: (java.lang.String, java.lang.String) => scala.Unit
   ): Anon_Abort = {
-    val __obj = js.Dynamic.literal(abort = abort, changeUrl = changeUrl, setHeader = setHeader)
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), changeUrl = js.Any.fromFunction1(changeUrl), setHeader = js.Any.fromFunction2(setHeader))
   
     __obj.asInstanceOf[Anon_Abort]
   }

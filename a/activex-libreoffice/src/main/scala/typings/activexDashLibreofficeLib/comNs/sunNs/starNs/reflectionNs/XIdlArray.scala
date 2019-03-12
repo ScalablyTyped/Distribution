@@ -46,15 +46,15 @@ trait XIdlArray
 object XIdlArray {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    get: js.Function2[js.Any, scala.Double, js.Any],
-    getLen: js.Function1[js.Any, scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    realloc: js.Function2[js.Array[_], scala.Double, scala.Unit],
-    release: js.Function0[scala.Unit],
-    set: js.Function3[js.Array[_], scala.Double, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    get: (js.Any, scala.Double) => js.Any,
+    getLen: js.Any => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    realloc: (js.Array[_], scala.Double) => scala.Unit,
+    release: () => scala.Unit,
+    set: (js.Array[_], scala.Double, js.Any) => scala.Unit
   ): XIdlArray = {
-    val __obj = js.Dynamic.literal(acquire = acquire, get = get, getLen = getLen, queryInterface = queryInterface, realloc = realloc, release = release, set = set)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), get = js.Any.fromFunction2(get), getLen = js.Any.fromFunction1(getLen), queryInterface = js.Any.fromFunction1(queryInterface), realloc = js.Any.fromFunction2(realloc), release = js.Any.fromFunction0(release), set = js.Any.fromFunction3(set))
   
     __obj.asInstanceOf[XIdlArray]
   }

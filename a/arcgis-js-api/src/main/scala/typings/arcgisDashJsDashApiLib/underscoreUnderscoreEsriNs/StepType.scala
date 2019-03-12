@@ -82,18 +82,18 @@ object StepType {
     constructor: js.Function,
     description: java.lang.String,
     executionType: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     id: scala.Double,
     name: java.lang.String,
     program: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     stepDescriptionLink: java.lang.String,
     stepDescriptionType: java.lang.String,
     stepIndicatorType: java.lang.String,
     supportedPlatform: java.lang.String,
     visible: scala.Boolean
   ): StepType = {
-    val __obj = js.Dynamic.literal(arguments = arguments, constructor = constructor, description = description, executionType = executionType, hasOwnProperty = hasOwnProperty, id = id, name = name, program = program, propertyIsEnumerable = propertyIsEnumerable, stepDescriptionLink = stepDescriptionLink, stepDescriptionType = stepDescriptionType, stepIndicatorType = stepIndicatorType, supportedPlatform = supportedPlatform, visible = visible)
+    val __obj = js.Dynamic.literal(arguments = arguments, constructor = constructor, description = description, executionType = executionType, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, name = name, program = program, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stepDescriptionLink = stepDescriptionLink, stepDescriptionType = stepDescriptionType, stepIndicatorType = stepIndicatorType, supportedPlatform = supportedPlatform, visible = visible)
   
     __obj.asInstanceOf[StepType]
   }

@@ -10,19 +10,9 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def createMinimizingNodePredicate[T](
     point: plottableLib.buildSrcCoreInterfacesMod.Point,
-    nearFn: plottableLib.buildSrcUtilsRTreeMod.IDistanceFunction,
-    farFn: plottableLib.buildSrcUtilsRTreeMod.IDistanceFunction
-  ): js.Function1[
-    /* node */ plottableLib.buildSrcUtilsRTreeMod.RTreeNode[T], 
-    plottableLib.buildSrcUtilsRTreeMod.QueryPredicateResult
-  ] = js.native
-  def createNodeSort[T](
-    point: plottableLib.buildSrcCoreInterfacesMod.Point,
-    distanceFn: plottableLib.buildSrcUtilsRTreeMod.IDistanceFunction
-  ): js.Function2[
-    /* a */ plottableLib.buildSrcUtilsRTreeMod.RTreeNode[T], 
-    /* b */ plottableLib.buildSrcUtilsRTreeMod.RTreeNode[T], 
-    scala.Double
-  ] = js.native
+    nearFn: IDistanceFunction,
+    farFn: IDistanceFunction
+  ): js.Function1[/* node */ RTreeNode[T], QueryPredicateResult] = js.native
+  def createNodeSort[T](point: plottableLib.buildSrcCoreInterfacesMod.Point, distanceFn: IDistanceFunction): js.Function2[/* a */ RTreeNode[T], /* b */ RTreeNode[T], scala.Double] = js.native
 }
 

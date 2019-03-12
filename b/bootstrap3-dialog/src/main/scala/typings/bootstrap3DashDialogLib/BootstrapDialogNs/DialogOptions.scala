@@ -92,7 +92,7 @@ object DialogOptions {
     btnOKLabel: java.lang.String = null,
     buttonLabel: java.lang.String = null,
     buttons: js.Array[DialogButton] = null,
-    callback: js.Function1[/* result */ scala.Boolean, scala.Unit] = null,
+    callback: /* result */ scala.Boolean => scala.Unit = null,
     closable: js.UndefOr[scala.Boolean] = js.undefined,
     closeByBackdrop: js.UndefOr[scala.Boolean] = js.undefined,
     closeByKeyboard: js.UndefOr[scala.Boolean] = js.undefined,
@@ -105,10 +105,10 @@ object DialogOptions {
       java.lang.String | jqueryLib.JQuery[stdLib.HTMLElement]
     ]) = null,
     nl2br: js.UndefOr[scala.Boolean] = js.undefined,
-    onhidden: js.Function1[/* dialog */ js.UndefOr[DialogContext], scala.Unit] = null,
-    onhide: js.Function1[/* dialog */ js.UndefOr[DialogContext], _] = null,
-    onshow: js.Function1[/* dialog */ js.UndefOr[DialogContext], scala.Unit] = null,
-    onshown: js.Function1[/* dialog */ js.UndefOr[DialogContext], scala.Unit] = null,
+    onhidden: /* dialog */ js.UndefOr[DialogContext] => scala.Unit = null,
+    onhide: /* dialog */ js.UndefOr[DialogContext] => _ = null,
+    onshow: /* dialog */ js.UndefOr[DialogContext] => scala.Unit = null,
+    onshown: /* dialog */ js.UndefOr[DialogContext] => scala.Unit = null,
     size: java.lang.String = null,
     spinicon: java.lang.String = null,
     title: java.lang.String | jqueryLib.JQuery[stdLib.HTMLElement] = null,
@@ -122,7 +122,7 @@ object DialogOptions {
     if (btnOKLabel != null) __obj.updateDynamic("btnOKLabel")(btnOKLabel)
     if (buttonLabel != null) __obj.updateDynamic("buttonLabel")(buttonLabel)
     if (buttons != null) __obj.updateDynamic("buttons")(buttons)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)
     if (!js.isUndefined(closeByBackdrop)) __obj.updateDynamic("closeByBackdrop")(closeByBackdrop)
     if (!js.isUndefined(closeByKeyboard)) __obj.updateDynamic("closeByKeyboard")(closeByKeyboard)
@@ -132,10 +132,10 @@ object DialogOptions {
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (!js.isUndefined(nl2br)) __obj.updateDynamic("nl2br")(nl2br)
-    if (onhidden != null) __obj.updateDynamic("onhidden")(onhidden)
-    if (onhide != null) __obj.updateDynamic("onhide")(onhide)
-    if (onshow != null) __obj.updateDynamic("onshow")(onshow)
-    if (onshown != null) __obj.updateDynamic("onshown")(onshown)
+    if (onhidden != null) __obj.updateDynamic("onhidden")(js.Any.fromFunction1(onhidden))
+    if (onhide != null) __obj.updateDynamic("onhide")(js.Any.fromFunction1(onhide))
+    if (onshow != null) __obj.updateDynamic("onshow")(js.Any.fromFunction1(onshow))
+    if (onshown != null) __obj.updateDynamic("onshown")(js.Any.fromFunction1(onshown))
     if (size != null) __obj.updateDynamic("size")(size)
     if (spinicon != null) __obj.updateDynamic("spinicon")(spinicon)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

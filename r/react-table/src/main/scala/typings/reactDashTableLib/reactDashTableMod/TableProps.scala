@@ -5,14 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof react-table.react-table.TextProps ]:? react-table.react-table.TextProps[P]}
-- Dropped {[ P in keyof react-table.react-table.ComponentDecoratorProps ]:? react-table.react-table.ComponentDecoratorProps[P]}
-- Dropped {[ P in keyof react-table.react-table.ControlledStateCallbackProps ]:? react-table.react-table.ControlledStateCallbackProps[P]}
-- Dropped {[ P in keyof react-table.react-table.PivotingProps ]:? react-table.react-table.PivotingProps[P]}
-- Dropped {[ P in keyof react-table.react-table.ControlledStateOverrideProps ]:? react-table.react-table.ControlledStateOverrideProps[P]}
-- Dropped {[ P in keyof react-table.react-table.ComponentProps ]:? react-table.react-table.ComponentProps[P]} */ @js.native
-trait TableProps[D, ResolvedData] extends js.Object {
+@js.native
+trait TableProps[D, ResolvedData]
+  extends TextProps
+     with ComponentDecoratorProps
+     with ControlledStateCallbackProps
+     with PivotingProps
+     with ControlledStateOverrideProps
+     with ComponentProps {
   /**
     * Default: string
     * Adding a -striped className to ReactTable will slightly color odd numbered rows for legibility

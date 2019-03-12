@@ -16,13 +16,13 @@ trait IClipboardStatics extends js.Object {
 object IClipboardStatics {
   @scala.inline
   def apply(
-    clear: js.Function0[scala.Unit],
-    flush: js.Function0[scala.Unit],
-    getContent: js.Function0[DataPackageView],
+    clear: () => scala.Unit,
+    flush: () => scala.Unit,
+    getContent: () => DataPackageView,
     oncontentchanged: js.Any,
-    setContent: js.Function1[DataPackage, scala.Unit]
+    setContent: DataPackage => scala.Unit
   ): IClipboardStatics = {
-    val __obj = js.Dynamic.literal(clear = clear, flush = flush, getContent = getContent, oncontentchanged = oncontentchanged, setContent = setContent)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), flush = js.Any.fromFunction0(flush), getContent = js.Any.fromFunction0(getContent), oncontentchanged = oncontentchanged, setContent = js.Any.fromFunction1(setContent))
   
     __obj.asInstanceOf[IClipboardStatics]
   }

@@ -27,17 +27,13 @@ trait XShapeEventListener
 object XShapeEventListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    click: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.MouseEvent, 
-      scala.Unit
-    ],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    click: (activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.MouseEvent) => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XShapeEventListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, click = click, disposing = disposing, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), click = js.Any.fromFunction2(click), disposing = js.Any.fromFunction1(disposing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XShapeEventListener]
   }

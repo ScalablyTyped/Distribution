@@ -16,12 +16,12 @@ trait XDDELinkResults
     * returns the DDE link results.
     * @returns the DDE link results. The outer sequence contains the value rows. The inner sequences contain the result values for one row.
     */
-  val Results: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]
+  val Results: stdLib.SafeArray[stdLib.SafeArray[_]]
   /**
     * returns the DDE link results.
     * @returns the DDE link results. The outer sequence contains the value rows. The inner sequences contain the result values for one row.
     */
-  def getResults(): activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]
+  def getResults(): stdLib.SafeArray[stdLib.SafeArray[_]]
   /**
     * sets the DDE link results.
     * @param aResults the DDE link results. The outer sequence contains the value rows. The inner sequences contain the result values for one row. If the oute
@@ -34,17 +34,14 @@ trait XDDELinkResults
 object XDDELinkResults {
   @scala.inline
   def apply(
-    Results: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]],
-    acquire: js.Function0[scala.Unit],
-    getResults: js.Function0[activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setResults: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]], 
-      scala.Unit
-    ]
+    Results: stdLib.SafeArray[stdLib.SafeArray[_]],
+    acquire: () => scala.Unit,
+    getResults: () => stdLib.SafeArray[stdLib.SafeArray[_]],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setResults: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]] => scala.Unit
   ): XDDELinkResults = {
-    val __obj = js.Dynamic.literal(Results = Results, acquire = acquire, getResults = getResults, queryInterface = queryInterface, release = release, setResults = setResults)
+    val __obj = js.Dynamic.literal(Results = Results, acquire = js.Any.fromFunction0(acquire), getResults = js.Any.fromFunction0(getResults), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setResults = js.Any.fromFunction1(setResults))
   
     __obj.asInstanceOf[XDDELinkResults]
   }

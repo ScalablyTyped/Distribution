@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react/dist/commonjs/modules/Transition/TransitionGroup", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: semanticDashUiDashReactLib.distCommonjsModulesTransitionTransitionGroupMod.TransitionGroupComponent = js.native
+  val default: TransitionGroupComponent = js.native
 }
 

@@ -28,7 +28,7 @@ object ImageMapTypeOptions {
     name: java.lang.String,
     projection: Projection,
     darktheme: js.UndefOr[scala.Boolean] = js.undefined,
-    getTileUrl: js.Function0[_] = null,
+    getTileUrl: () => _ = null,
     provider: js.Array[MapDataProvider] = null,
     repeatX: js.UndefOr[scala.Boolean] = js.undefined,
     tileSet: java.lang.String | js.Array[java.lang.String] = null,
@@ -38,7 +38,7 @@ object ImageMapTypeOptions {
   ): ImageMapTypeOptions = {
     val __obj = js.Dynamic.literal(maxZoom = maxZoom, minZoom = minZoom, name = name, projection = projection)
     if (!js.isUndefined(darktheme)) __obj.updateDynamic("darktheme")(darktheme)
-    if (getTileUrl != null) __obj.updateDynamic("getTileUrl")(getTileUrl)
+    if (getTileUrl != null) __obj.updateDynamic("getTileUrl")(js.Any.fromFunction0(getTileUrl))
     if (provider != null) __obj.updateDynamic("provider")(provider)
     if (!js.isUndefined(repeatX)) __obj.updateDynamic("repeatX")(repeatX)
     if (tileSet != null) __obj.updateDynamic("tileSet")(tileSet.asInstanceOf[js.Any])

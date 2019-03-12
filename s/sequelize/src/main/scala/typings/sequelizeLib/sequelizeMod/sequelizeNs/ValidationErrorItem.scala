@@ -24,8 +24,6 @@ org.scalablytyped.runtime.Instantiable4[
       /* value */ java.lang.String, 
       ValidationErrorItem
     ] {
-  /** An error message */
-  var message: java.lang.String = js.native
   /** The field that triggered the validation error */
   var path: java.lang.String = js.native
   /** The type of the validation error */

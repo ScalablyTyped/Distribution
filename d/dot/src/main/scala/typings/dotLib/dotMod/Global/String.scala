@@ -11,8 +11,8 @@ trait String extends js.Object {
 
 object String {
   @scala.inline
-  def apply(encodeHTML: js.Function0[java.lang.String]): String = {
-    val __obj = js.Dynamic.literal(encodeHTML = encodeHTML)
+  def apply(encodeHTML: () => java.lang.String): String = {
+    val __obj = js.Dynamic.literal(encodeHTML = js.Any.fromFunction0(encodeHTML))
   
     __obj.asInstanceOf[String]
   }

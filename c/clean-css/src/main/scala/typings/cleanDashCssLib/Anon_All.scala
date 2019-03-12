@@ -140,12 +140,7 @@ object Anon_All {
     tidyAtRules: js.UndefOr[scala.Boolean] = js.undefined,
     tidyBlockScopes: js.UndefOr[scala.Boolean] = js.undefined,
     tidySelectors: js.UndefOr[scala.Boolean] = js.undefined,
-    transform: js.Function3[
-      /* propertyName */ java.lang.String, 
-      /* propertyValue */ java.lang.String, 
-      /* selector */ js.UndefOr[java.lang.String], 
-      java.lang.String
-    ] = null
+    transform: (/* propertyName */ java.lang.String, /* propertyValue */ java.lang.String, /* selector */ js.UndefOr[java.lang.String]) => java.lang.String = null
   ): Anon_All = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(all)) __obj.updateDynamic("all")(all)
@@ -171,7 +166,7 @@ object Anon_All {
     if (!js.isUndefined(tidyAtRules)) __obj.updateDynamic("tidyAtRules")(tidyAtRules)
     if (!js.isUndefined(tidyBlockScopes)) __obj.updateDynamic("tidyBlockScopes")(tidyBlockScopes)
     if (!js.isUndefined(tidySelectors)) __obj.updateDynamic("tidySelectors")(tidySelectors)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction3(transform))
     __obj.asInstanceOf[Anon_All]
   }
 }

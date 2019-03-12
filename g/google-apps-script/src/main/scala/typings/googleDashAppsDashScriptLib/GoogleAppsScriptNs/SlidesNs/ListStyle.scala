@@ -17,14 +17,14 @@ trait ListStyle extends js.Object {
 object ListStyle {
   @scala.inline
   def apply(
-    applyListPreset: js.Function1[ListPreset, ListStyle],
-    getGlyph: js.Function0[java.lang.String],
-    getList: js.Function0[List],
-    getNestingLevel: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    isInList: js.Function0[scala.Boolean],
-    removeFromList: js.Function0[ListStyle]
+    applyListPreset: ListPreset => ListStyle,
+    getGlyph: () => java.lang.String,
+    getList: () => List,
+    getNestingLevel: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    isInList: () => scala.Boolean,
+    removeFromList: () => ListStyle
   ): ListStyle = {
-    val __obj = js.Dynamic.literal(applyListPreset = applyListPreset, getGlyph = getGlyph, getList = getList, getNestingLevel = getNestingLevel, isInList = isInList, removeFromList = removeFromList)
+    val __obj = js.Dynamic.literal(applyListPreset = js.Any.fromFunction1(applyListPreset), getGlyph = js.Any.fromFunction0(getGlyph), getList = js.Any.fromFunction0(getList), getNestingLevel = js.Any.fromFunction0(getNestingLevel), isInList = js.Any.fromFunction0(isInList), removeFromList = js.Any.fromFunction0(removeFromList))
   
     __obj.asInstanceOf[ListStyle]
   }

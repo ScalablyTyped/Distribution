@@ -40,32 +40,14 @@ trait FoldersResource extends js.Object {
 object FoldersResource {
   @scala.inline
   def apply(
-    clearOrgPolicy: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    getEffectiveOrgPolicy: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
-    ],
-    getOrgPolicy: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
-    ],
-    listAvailableOrgPolicyConstraints: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListAvailableOrgPolicyConstraintsResponse]
-    ],
-    listOrgPolicies: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListOrgPoliciesResponse]
-    ],
-    setOrgPolicy: js.Function1[
-      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
-    ]
+    clearOrgPolicy: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    getEffectiveOrgPolicy: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy],
+    getOrgPolicy: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy],
+    listAvailableOrgPolicyConstraints: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[ListAvailableOrgPolicyConstraintsResponse],
+    listOrgPolicies: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[ListOrgPoliciesResponse],
+    setOrgPolicy: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
   ): FoldersResource = {
-    val __obj = js.Dynamic.literal(clearOrgPolicy = clearOrgPolicy, getEffectiveOrgPolicy = getEffectiveOrgPolicy, getOrgPolicy = getOrgPolicy, listAvailableOrgPolicyConstraints = listAvailableOrgPolicyConstraints, listOrgPolicies = listOrgPolicies, setOrgPolicy = setOrgPolicy)
+    val __obj = js.Dynamic.literal(clearOrgPolicy = js.Any.fromFunction1(clearOrgPolicy), getEffectiveOrgPolicy = js.Any.fromFunction1(getEffectiveOrgPolicy), getOrgPolicy = js.Any.fromFunction1(getOrgPolicy), listAvailableOrgPolicyConstraints = js.Any.fromFunction1(listAvailableOrgPolicyConstraints), listOrgPolicies = js.Any.fromFunction1(listOrgPolicies), setOrgPolicy = js.Any.fromFunction1(setOrgPolicy))
   
     __obj.asInstanceOf[FoldersResource]
   }

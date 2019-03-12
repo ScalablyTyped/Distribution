@@ -12,7 +12,7 @@ package object shipitDashCliMod {
     /* options */ js.UndefOr[nodeLib.childUnderscoreProcessMod.ExecOptions], 
     /* callback */ js.UndefOr[
       js.Function3[
-        /* error */ nodeLib.Error, 
+        /* error */ stdLib.Error, 
         /* stdout */ java.lang.String, 
         /* stderr */ java.lang.String, 
         scala.Unit

@@ -42,27 +42,15 @@ object MKSwitchProperties {
     hitSlop: reactDashNativeLib.reactDashNativeMod.Insets = null,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
     offColor: java.lang.String = null,
-    onAccessibilityTap: js.Function0[scala.Unit] = null,
-    onCheckedChange: js.Function1[/* checked */ scala.Boolean, scala.Unit] = null,
+    onAccessibilityTap: () => scala.Unit = null,
+    onCheckedChange: /* checked */ scala.Boolean => scala.Unit = null,
     onColor: java.lang.String = null,
-    onLayout: js.Function1[/* event */ reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent, scala.Unit] = null,
-    onLongPress: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onMagicTap: js.Function0[scala.Unit] = null,
-    onPress: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onPressIn: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
-    onPressOut: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Unit
-    ] = null,
+    onLayout: /* event */ reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent => scala.Unit = null,
+    onLongPress: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onMagicTap: () => scala.Unit = null,
+    onPress: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onPressIn: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onPressOut: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
     pressRetentionOffset: reactDashNativeLib.reactDashNativeMod.Insets = null,
     rippleAniDuration: scala.Int | scala.Double = null,
     rippleColor: java.lang.String = null,
@@ -94,15 +82,15 @@ object MKSwitchProperties {
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
     if (offColor != null) __obj.updateDynamic("offColor")(offColor)
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(onAccessibilityTap)
-    if (onCheckedChange != null) __obj.updateDynamic("onCheckedChange")(onCheckedChange)
+    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
+    if (onCheckedChange != null) __obj.updateDynamic("onCheckedChange")(js.Any.fromFunction1(onCheckedChange))
     if (onColor != null) __obj.updateDynamic("onColor")(onColor)
-    if (onLayout != null) __obj.updateDynamic("onLayout")(onLayout)
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(onMagicTap)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
-    if (onPressIn != null) __obj.updateDynamic("onPressIn")(onPressIn)
-    if (onPressOut != null) __obj.updateDynamic("onPressOut")(onPressOut)
+    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
+    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
+    if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction1(onPressIn))
+    if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction1(onPressOut))
     if (pressRetentionOffset != null) __obj.updateDynamic("pressRetentionOffset")(pressRetentionOffset)
     if (rippleAniDuration != null) __obj.updateDynamic("rippleAniDuration")(rippleAniDuration.asInstanceOf[js.Any])
     if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor)

@@ -13,7 +13,7 @@ object LayerConfig {
   @scala.inline
   def apply(
     clearBeforeDraw: js.UndefOr[scala.Boolean] = js.undefined,
-    dragBoundFunc: js.Function1[/* pos */ Vector2d, Vector2d] = null,
+    dragBoundFunc: /* pos */ Vector2d => Vector2d = null,
     dragBounds: js.Any = null,
     dragConstraint: java.lang.String = null,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -33,7 +33,7 @@ object LayerConfig {
   ): LayerConfig = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(clearBeforeDraw)) __obj.updateDynamic("clearBeforeDraw")(clearBeforeDraw)
-    if (dragBoundFunc != null) __obj.updateDynamic("dragBoundFunc")(dragBoundFunc)
+    if (dragBoundFunc != null) __obj.updateDynamic("dragBoundFunc")(js.Any.fromFunction1(dragBoundFunc))
     if (dragBounds != null) __obj.updateDynamic("dragBounds")(dragBounds)
     if (dragConstraint != null) __obj.updateDynamic("dragConstraint")(dragConstraint)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)

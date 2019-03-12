@@ -26,26 +26,24 @@ trait Compatibility extends js.Object {
 object Compatibility {
   @scala.inline
   def apply(
-    bind: js.Function3[js.Function1[/* repeated */ js.Any, _], js.Any, /* repeated */ js.Any, js.Any],
-    cAF: js.Function0[js.Function1[/* requestID */ scala.Double, scala.Unit]],
-    inA: js.Function2[js.Any, js.Array[js.Any], scala.Double],
-    isA: js.Function1[js.Any, scala.Boolean],
-    mBtn: js.Function1[stdLib.MouseEvent, scala.Double],
-    mO: js.Function0[js.Any],
-    now: js.Function0[scala.Double],
-    page: js.Function1[stdLib.MouseEvent, overlayscrollbarsLib.Anon_XYNumber],
-    prvD: js.Function1[stdLib.Event, scala.Unit],
-    rAF: js.Function0[
-      js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, _], scala.Double]
-    ],
-    rO: js.Function0[js.Any],
-    stpP: js.Function1[stdLib.Event, scala.Unit],
-    `type`: js.Function1[js.Any, java.lang.String],
-    wH: js.Function0[scala.Double],
-    wW: js.Function0[scala.Double]
+    bind: (js.Function1[/* repeated */ js.Any, _], js.Any, /* repeated */ js.Any) => js.Any,
+    cAF: () => js.Function1[/* requestID */ scala.Double, scala.Unit],
+    inA: (js.Any, js.Array[js.Any]) => scala.Double,
+    isA: js.Any => scala.Boolean,
+    mBtn: stdLib.MouseEvent => scala.Double,
+    mO: () => js.Any,
+    now: () => scala.Double,
+    page: stdLib.MouseEvent => overlayscrollbarsLib.Anon_XYNumber,
+    prvD: stdLib.Event => scala.Unit,
+    rAF: () => js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, _], scala.Double],
+    rO: () => js.Any,
+    stpP: stdLib.Event => scala.Unit,
+    `type`: js.Any => java.lang.String,
+    wH: () => scala.Double,
+    wW: () => scala.Double
   ): Compatibility = {
-    val __obj = js.Dynamic.literal(bind = bind, cAF = cAF, inA = inA, isA = isA, mBtn = mBtn, mO = mO, now = now, page = page, prvD = prvD, rAF = rAF, rO = rO, stpP = stpP, wH = wH, wW = wW)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(bind = js.Any.fromFunction3(bind), cAF = js.Any.fromFunction0(cAF), inA = js.Any.fromFunction2(inA), isA = js.Any.fromFunction1(isA), mBtn = js.Any.fromFunction1(mBtn), mO = js.Any.fromFunction0(mO), now = js.Any.fromFunction0(now), page = js.Any.fromFunction1(page), prvD = js.Any.fromFunction1(prvD), rAF = js.Any.fromFunction0(rAF), rO = js.Any.fromFunction0(rO), stpP = js.Any.fromFunction1(stpP), wH = js.Any.fromFunction0(wH), wW = js.Any.fromFunction0(wW))
+    __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
     __obj.asInstanceOf[Compatibility]
   }
 }

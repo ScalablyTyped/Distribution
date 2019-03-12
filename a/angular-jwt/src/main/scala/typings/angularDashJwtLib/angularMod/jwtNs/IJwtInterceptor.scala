@@ -11,8 +11,8 @@ trait IJwtInterceptor extends js.Object {
 
 object IJwtInterceptor {
   @scala.inline
-  def apply(tokenGetter: js.Function1[/* repeated */ js.Any, java.lang.String]): IJwtInterceptor = {
-    val __obj = js.Dynamic.literal(tokenGetter = tokenGetter)
+  def apply(tokenGetter: /* repeated */ js.Any => java.lang.String): IJwtInterceptor = {
+    val __obj = js.Dynamic.literal(tokenGetter = js.Any.fromFunction1(tokenGetter))
   
     __obj.asInstanceOf[IJwtInterceptor]
   }

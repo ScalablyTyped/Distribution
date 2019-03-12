@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def replace(): scala.Unit = js.native
-  def replace(options: featherDashIconsLib.featherDashIconsMod.FeatherAttributes): scala.Unit = js.native
+  def replace(options: FeatherAttributes): scala.Unit = js.native
 }
 

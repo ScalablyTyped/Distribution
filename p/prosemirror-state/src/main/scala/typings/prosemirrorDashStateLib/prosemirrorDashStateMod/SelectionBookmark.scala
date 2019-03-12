@@ -22,13 +22,10 @@ trait SelectionBookmark[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.
 object SelectionBookmark {
   @scala.inline
   def apply[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
-    map: js.Function1[
-      prosemirrorDashTransformLib.prosemirrorDashTransformMod.Mapping, 
-      SelectionBookmark[S]
-    ],
-    resolve: js.Function1[prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S], Selection[S]]
+    map: prosemirrorDashTransformLib.prosemirrorDashTransformMod.Mapping => SelectionBookmark[S],
+    resolve: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S] => Selection[S]
   ): SelectionBookmark[S] = {
-    val __obj = js.Dynamic.literal(map = map, resolve = resolve)
+    val __obj = js.Dynamic.literal(map = js.Any.fromFunction1(map), resolve = js.Any.fromFunction1(resolve))
   
     __obj.asInstanceOf[SelectionBookmark[S]]
   }

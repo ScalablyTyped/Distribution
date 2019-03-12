@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def default(data: js.Any): java.lang.String = js.native
-  def default(data: js.Any, opts: formDashUrlencodedLib.formDashUrlencodedMod.FormEncodedOptions): java.lang.String = js.native
+  def default(data: js.Any, opts: FormEncodedOptions): java.lang.String = js.native
 }
 

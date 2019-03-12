@@ -20,7 +20,7 @@ object OnErrorOptions {
     debounce: (scala.Double | adoneLib.adoneNs.utilNs.INs.DebounceOptions) with adoneLib.Anon_Timeout = null,
     emitError: js.UndefOr[scala.Boolean] = js.undefined,
     endStream: js.UndefOr[scala.Boolean] = js.undefined,
-    filter: js.Function1[T, scala.Boolean] = null,
+    filter: T => scala.Boolean = null,
     gui: js.UndefOr[scala.Boolean] = js.undefined,
     host: java.lang.String = null,
     message: java.lang.String | (js.Function1[T, java.lang.String]) = null,
@@ -38,7 +38,7 @@ object OnErrorOptions {
     if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
     if (!js.isUndefined(emitError)) __obj.updateDynamic("emitError")(emitError)
     if (!js.isUndefined(endStream)) __obj.updateDynamic("endStream")(endStream)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (!js.isUndefined(gui)) __obj.updateDynamic("gui")(gui)
     if (host != null) __obj.updateDynamic("host")(host)
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])

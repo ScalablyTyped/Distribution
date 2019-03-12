@@ -21,12 +21,12 @@ object Update {
     expirationTime: ExpirationTime,
     payload: js.Any,
     tag: reactDashReconcilerLib.reactDashReconcilerLibNumbers.`0` | reactDashReconcilerLib.reactDashReconcilerLibNumbers.`1` | reactDashReconcilerLib.reactDashReconcilerLibNumbers.`2` | reactDashReconcilerLib.reactDashReconcilerLibNumbers.`3`,
-    callback: js.Function0[_] = null,
+    callback: () => _ = null,
     next: Update[State] = null,
     nextEffect: Update[State] = null
   ): Update[State] = {
     val __obj = js.Dynamic.literal(expirationTime = expirationTime, payload = payload, tag = tag.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (next != null) __obj.updateDynamic("next")(next)
     if (nextEffect != null) __obj.updateDynamic("nextEffect")(nextEffect)
     __obj.asInstanceOf[Update[State]]

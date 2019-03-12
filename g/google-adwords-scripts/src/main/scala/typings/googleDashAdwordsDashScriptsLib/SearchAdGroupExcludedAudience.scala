@@ -15,14 +15,14 @@ trait SearchAdGroupExcludedAudience extends isAdGroupChild {
 object SearchAdGroupExcludedAudience {
   @scala.inline
   def apply(
-    getAdGroup: js.Function0[AdGroup],
-    getAudienceId: js.Function0[scala.Double],
-    getCampaign: js.Function0[Campaign],
-    getId: js.Function0[scala.Double],
-    getName: js.Function0[java.lang.String],
-    remove: js.Function0[scala.Unit]
+    getAdGroup: () => AdGroup,
+    getAudienceId: () => scala.Double,
+    getCampaign: () => Campaign,
+    getId: () => scala.Double,
+    getName: () => java.lang.String,
+    remove: () => scala.Unit
   ): SearchAdGroupExcludedAudience = {
-    val __obj = js.Dynamic.literal(getAdGroup = getAdGroup, getAudienceId = getAudienceId, getCampaign = getCampaign, getId = getId, getName = getName, remove = remove)
+    val __obj = js.Dynamic.literal(getAdGroup = js.Any.fromFunction0(getAdGroup), getAudienceId = js.Any.fromFunction0(getAudienceId), getCampaign = js.Any.fromFunction0(getCampaign), getId = js.Any.fromFunction0(getId), getName = js.Any.fromFunction0(getName), remove = js.Any.fromFunction0(remove))
   
     __obj.asInstanceOf[SearchAdGroupExcludedAudience]
   }

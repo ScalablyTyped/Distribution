@@ -1,0 +1,13 @@
+package typings
+package atMaterialDashUiIconsLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@material-ui/icons/CenterFocusStrongOutlined", JSImport.Namespace)
+@js.native
+object centerFocusStrongOutlinedMod extends js.Object {
+  val default: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps] = js.native
+}
+

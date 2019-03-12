@@ -22,12 +22,12 @@ trait CloudPushNotificationConfig extends js.Object {
 object CloudPushNotificationConfig {
   @scala.inline
   def apply(
-    error: js.Function1[/* param0 */ CloudPushNotificationErrorArg, _] = null,
-    success: js.Function1[/* param0 */ CloudPushNotificationSuccessArg, _] = null
+    error: /* param0 */ CloudPushNotificationErrorArg => _ = null,
+    success: /* param0 */ CloudPushNotificationSuccessArg => _ = null
   ): CloudPushNotificationConfig = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[CloudPushNotificationConfig]
   }
 }

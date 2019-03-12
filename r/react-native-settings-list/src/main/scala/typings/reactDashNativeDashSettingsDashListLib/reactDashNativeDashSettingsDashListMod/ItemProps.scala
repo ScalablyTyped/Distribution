@@ -129,13 +129,13 @@ object ItemProps {
     icon: reactLib.reactMod.ReactNs.ReactNode = null,
     isAuth: js.UndefOr[scala.Boolean] = js.undefined,
     itemBoxStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
-    itemRef: js.Function0[scala.Unit] = null,
+    itemRef: () => scala.Unit = null,
     itemWidth: scala.Int | scala.Double = null,
-    onLongPress: js.Function0[scala.Unit] = null,
-    onPress: js.Function0[scala.Unit] = null,
+    onLongPress: () => scala.Unit = null,
+    onPress: () => scala.Unit = null,
     rightSideContent: reactLib.reactMod.ReactNs.ReactNode = null,
     rightSideStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
-    switchOnValueChange: js.Function0[scala.Unit] = null,
+    switchOnValueChange: () => scala.Unit = null,
     switchProps: js.Object = null,
     switchState: js.UndefOr[scala.Boolean] = js.undefined,
     title: java.lang.String = null,
@@ -159,13 +159,13 @@ object ItemProps {
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (!js.isUndefined(isAuth)) __obj.updateDynamic("isAuth")(isAuth)
     if (itemBoxStyle != null) __obj.updateDynamic("itemBoxStyle")(itemBoxStyle.asInstanceOf[js.Any])
-    if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef)
+    if (itemRef != null) __obj.updateDynamic("itemRef")(js.Any.fromFunction0(itemRef))
     if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction0(onLongPress))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (rightSideContent != null) __obj.updateDynamic("rightSideContent")(rightSideContent.asInstanceOf[js.Any])
     if (rightSideStyle != null) __obj.updateDynamic("rightSideStyle")(rightSideStyle.asInstanceOf[js.Any])
-    if (switchOnValueChange != null) __obj.updateDynamic("switchOnValueChange")(switchOnValueChange)
+    if (switchOnValueChange != null) __obj.updateDynamic("switchOnValueChange")(js.Any.fromFunction0(switchOnValueChange))
     if (switchProps != null) __obj.updateDynamic("switchProps")(switchProps)
     if (!js.isUndefined(switchState)) __obj.updateDynamic("switchState")(switchState)
     if (title != null) __obj.updateDynamic("title")(title)

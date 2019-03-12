@@ -32,7 +32,7 @@ trait TestReportParticipant extends BackboneElement {
   /**
     * The uri of the participant. An absolute URL is preferred
     */
-  var uri: uri
+  var uri: fhirLib.fhirNs.uri
 }
 
 object TestReportParticipant {

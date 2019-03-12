@@ -34,10 +34,10 @@ trait Authenticator extends js.Object {
 object Authenticator {
   @scala.inline
   def apply(
-    establishCredentials: js.Function0[bluebirdLib.bluebirdMod.namespaced[scala.Unit]],
-    refreshCredentials: js.Function0[bluebirdLib.bluebirdMod.namespaced[scala.Boolean]]
+    establishCredentials: () => bluebirdLib.bluebirdMod.namespaced[scala.Unit],
+    refreshCredentials: () => bluebirdLib.bluebirdMod.namespaced[scala.Boolean]
   ): Authenticator = {
-    val __obj = js.Dynamic.literal(establishCredentials = establishCredentials, refreshCredentials = refreshCredentials)
+    val __obj = js.Dynamic.literal(establishCredentials = js.Any.fromFunction0(establishCredentials), refreshCredentials = js.Any.fromFunction0(refreshCredentials))
   
     __obj.asInstanceOf[Authenticator]
   }

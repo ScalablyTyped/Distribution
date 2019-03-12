@@ -34,16 +34,16 @@ object JQueryContextMenuOptions {
     animation: Anon_Duration = null,
     appendTo: java.lang.String = null,
     autoHide: js.UndefOr[scala.Boolean] = js.undefined,
-    build: js.Function2[/* triggerElement */ JQuery, /* e */ stdLib.Event, _] = null,
-    callback: js.Function2[/* key */ js.Any, /* options */ js.Any, _] = null,
+    build: (/* triggerElement */ JQuery, /* e */ stdLib.Event) => _ = null,
+    callback: (/* key */ js.Any, /* options */ js.Any) => _ = null,
     className: java.lang.String = null,
     delay: scala.Int | scala.Double = null,
-    determinePosition: js.Function1[/* menu */ JQuery, scala.Unit] = null,
+    determinePosition: /* menu */ JQuery => scala.Unit = null,
     events: Anon_Hide = null,
     itemClickEvent: java.lang.String = null,
     items: js.Any = null,
-    position: js.Function3[/* opt */ JQuery, /* x */ scala.Double, /* y */ scala.Double, scala.Unit] = null,
-    positionSubmenu: js.Function1[/* menu */ JQuery, scala.Unit] = null,
+    position: (/* opt */ JQuery, /* x */ scala.Double, /* y */ scala.Double) => scala.Unit = null,
+    positionSubmenu: /* menu */ JQuery => scala.Unit = null,
     reposition: js.UndefOr[scala.Boolean] = js.undefined,
     trigger: java.lang.String = null,
     zIndex: scala.Int | scala.Double = null
@@ -52,16 +52,16 @@ object JQueryContextMenuOptions {
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
     if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide)
-    if (build != null) __obj.updateDynamic("build")(build)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (build != null) __obj.updateDynamic("build")(js.Any.fromFunction2(build))
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
     if (className != null) __obj.updateDynamic("className")(className)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (determinePosition != null) __obj.updateDynamic("determinePosition")(determinePosition)
+    if (determinePosition != null) __obj.updateDynamic("determinePosition")(js.Any.fromFunction1(determinePosition))
     if (events != null) __obj.updateDynamic("events")(events)
     if (itemClickEvent != null) __obj.updateDynamic("itemClickEvent")(itemClickEvent)
     if (items != null) __obj.updateDynamic("items")(items)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (positionSubmenu != null) __obj.updateDynamic("positionSubmenu")(positionSubmenu)
+    if (position != null) __obj.updateDynamic("position")(js.Any.fromFunction3(position))
+    if (positionSubmenu != null) __obj.updateDynamic("positionSubmenu")(js.Any.fromFunction1(positionSubmenu))
     if (!js.isUndefined(reposition)) __obj.updateDynamic("reposition")(reposition)
     if (trigger != null) __obj.updateDynamic("trigger")(trigger)
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])

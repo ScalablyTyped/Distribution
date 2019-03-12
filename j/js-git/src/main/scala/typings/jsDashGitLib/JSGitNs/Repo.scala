@@ -119,55 +119,22 @@ trait Repo extends js.Object {
 object Repo {
   @scala.inline
   def apply(
-    fetch: js.Function3[Remote, js.Object, js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
-    getHead: js.Function1[
-      js.Function2[/* err */ js.Any, /* ref_name */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ],
-    load: js.Function2[
-      java.lang.String, 
-      js.Function2[/* err */ js.Any, /* git_object */ GitObject, scala.Unit], 
-      scala.Unit
-    ],
-    loadAs: js.Function3[
-      java.lang.String, 
-      java.lang.String, 
-      js.Function2[/* err */ js.Any, /* body */ js.Any, scala.Unit], 
-      scala.Unit
-    ],
-    logWalk: js.Function2[
-      java.lang.String, 
-      js.Function2[/* err */ js.Any, /* log_stream */ js.Any, scala.Unit], 
-      scala.Unit
-    ],
-    remove: js.Function2[java.lang.String, js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
-    resolveHashish: js.Function2[
-      java.lang.String, 
-      js.Function2[/* err */ js.Any, /* hash */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ],
-    save: js.Function2[
-      GitObject, 
-      js.Function2[/* err */ js.Any, /* hash */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ],
-    saveAs: js.Function3[
-      java.lang.String, 
-      js.Any, 
-      js.Function2[/* err */ js.Any, /* hash */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ],
-    setHead: js.Function2[java.lang.String, js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
-    treeWalk: js.Function2[
-      java.lang.String, 
-      js.Function2[/* err */ js.Any, /* file_stream */ js.Any, scala.Unit], 
-      scala.Unit
-    ],
-    unpack: js.Function3[js.Any, js.Object, js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
-    updateHead: js.Function2[java.lang.String, js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
-    walk: js.Function4[js.Any, js.Any, js.Any, js.Any, js.Any]
+    fetch: (Remote, js.Object, js.Function1[/* err */ js.Any, scala.Unit]) => scala.Unit,
+    getHead: js.Function2[/* err */ js.Any, /* ref_name */ java.lang.String, scala.Unit] => scala.Unit,
+    load: (java.lang.String, js.Function2[/* err */ js.Any, /* git_object */ GitObject, scala.Unit]) => scala.Unit,
+    loadAs: (java.lang.String, java.lang.String, js.Function2[/* err */ js.Any, /* body */ js.Any, scala.Unit]) => scala.Unit,
+    logWalk: (java.lang.String, js.Function2[/* err */ js.Any, /* log_stream */ js.Any, scala.Unit]) => scala.Unit,
+    remove: (java.lang.String, js.Function1[/* err */ js.Any, scala.Unit]) => scala.Unit,
+    resolveHashish: (java.lang.String, js.Function2[/* err */ js.Any, /* hash */ java.lang.String, scala.Unit]) => scala.Unit,
+    save: (GitObject, js.Function2[/* err */ js.Any, /* hash */ java.lang.String, scala.Unit]) => scala.Unit,
+    saveAs: (java.lang.String, js.Any, js.Function2[/* err */ js.Any, /* hash */ java.lang.String, scala.Unit]) => scala.Unit,
+    setHead: (java.lang.String, js.Function1[/* err */ js.Any, scala.Unit]) => scala.Unit,
+    treeWalk: (java.lang.String, js.Function2[/* err */ js.Any, /* file_stream */ js.Any, scala.Unit]) => scala.Unit,
+    unpack: (js.Any, js.Object, js.Function1[/* err */ js.Any, scala.Unit]) => scala.Unit,
+    updateHead: (java.lang.String, js.Function1[/* err */ js.Any, scala.Unit]) => scala.Unit,
+    walk: (js.Any, js.Any, js.Any, js.Any) => js.Any
   ): Repo = {
-    val __obj = js.Dynamic.literal(fetch = fetch, getHead = getHead, load = load, loadAs = loadAs, logWalk = logWalk, remove = remove, resolveHashish = resolveHashish, save = save, saveAs = saveAs, setHead = setHead, treeWalk = treeWalk, unpack = unpack, updateHead = updateHead, walk = walk)
+    val __obj = js.Dynamic.literal(fetch = js.Any.fromFunction3(fetch), getHead = js.Any.fromFunction1(getHead), load = js.Any.fromFunction2(load), loadAs = js.Any.fromFunction3(loadAs), logWalk = js.Any.fromFunction2(logWalk), remove = js.Any.fromFunction2(remove), resolveHashish = js.Any.fromFunction2(resolveHashish), save = js.Any.fromFunction2(save), saveAs = js.Any.fromFunction3(saveAs), setHead = js.Any.fromFunction2(setHead), treeWalk = js.Any.fromFunction2(treeWalk), unpack = js.Any.fromFunction3(unpack), updateHead = js.Any.fromFunction2(updateHead), walk = js.Any.fromFunction4(walk))
   
     __obj.asInstanceOf[Repo]
   }

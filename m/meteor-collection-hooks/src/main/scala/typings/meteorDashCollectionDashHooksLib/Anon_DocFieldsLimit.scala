@@ -22,7 +22,7 @@ object Anon_DocFieldsLimit {
     reactive: js.UndefOr[scala.Boolean] = js.undefined,
     skip: scala.Int | scala.Double = null,
     sort: meteorDashTypingsLib.MongoNs.SortSpecifier = null,
-    transform: js.Function1[/* doc */ js.Any, scala.Unit] = null
+    transform: /* doc */ js.Any => scala.Unit = null
   ): Anon_DocFieldsLimit = {
     val __obj = js.Dynamic.literal()
     if (fields != null) __obj.updateDynamic("fields")(fields)
@@ -30,7 +30,7 @@ object Anon_DocFieldsLimit {
     if (!js.isUndefined(reactive)) __obj.updateDynamic("reactive")(reactive)
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     __obj.asInstanceOf[Anon_DocFieldsLimit]
   }
 }

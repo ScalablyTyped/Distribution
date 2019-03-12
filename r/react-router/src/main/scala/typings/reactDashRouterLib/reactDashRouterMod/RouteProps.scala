@@ -39,10 +39,7 @@ object RouteProps {
     exact: js.UndefOr[scala.Boolean] = js.undefined,
     location: historyLib.historyMod.Location[historyLib.historyMod.LocationState] = null,
     path: java.lang.String | js.Array[java.lang.String] = null,
-    render: js.Function1[
-      /* props */ RouteComponentProps[_, StaticContext, historyLib.historyMod.LocationState], 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    render: /* props */ RouteComponentProps[_, StaticContext, historyLib.historyMod.LocationState] => reactLib.reactMod.ReactNs.ReactNode = null,
     sensitive: js.UndefOr[scala.Boolean] = js.undefined,
     strict: js.UndefOr[scala.Boolean] = js.undefined
   ): RouteProps = {
@@ -52,7 +49,7 @@ object RouteProps {
     if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
     if (location != null) __obj.updateDynamic("location")(location)
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive)
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
     __obj.asInstanceOf[RouteProps]

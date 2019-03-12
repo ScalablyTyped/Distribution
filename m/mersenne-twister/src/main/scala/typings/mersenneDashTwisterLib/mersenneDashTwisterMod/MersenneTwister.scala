@@ -39,15 +39,15 @@ trait MersenneTwister extends js.Object {
 object MersenneTwister {
   @scala.inline
   def apply(
-    init_seed: js.Function1[scala.Double, scala.Unit],
-    random: js.Function0[scala.Double],
-    random_excl: js.Function0[scala.Double],
-    random_incl: js.Function0[scala.Double],
-    random_int: js.Function0[scala.Double],
-    random_int31: js.Function0[scala.Double],
-    random_long: js.Function0[scala.Double]
+    init_seed: scala.Double => scala.Unit,
+    random: () => scala.Double,
+    random_excl: () => scala.Double,
+    random_incl: () => scala.Double,
+    random_int: () => scala.Double,
+    random_int31: () => scala.Double,
+    random_long: () => scala.Double
   ): MersenneTwister = {
-    val __obj = js.Dynamic.literal(init_seed = init_seed, random = random, random_excl = random_excl, random_incl = random_incl, random_int = random_int, random_int31 = random_int31, random_long = random_long)
+    val __obj = js.Dynamic.literal(init_seed = js.Any.fromFunction1(init_seed), random = js.Any.fromFunction0(random), random_excl = js.Any.fromFunction0(random_excl), random_incl = js.Any.fromFunction0(random_incl), random_int = js.Any.fromFunction0(random_int), random_int31 = js.Any.fromFunction0(random_int31), random_long = js.Any.fromFunction0(random_long))
   
     __obj.asInstanceOf[MersenneTwister]
   }

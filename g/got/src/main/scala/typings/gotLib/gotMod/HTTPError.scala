@@ -10,7 +10,8 @@ trait HTTPError
      with gotLib.gotMod.gotNs.GotError {
   var body: nodeLib.Buffer | java.lang.String | js.Object
   var headers: nodeLib.httpMod.IncomingHttpHeaders
-  var name: gotLib.gotLibStrings.HTTPError
+  @JSName("name")
+  var name_HTTPError: gotLib.gotLibStrings.HTTPError
   var statusCode: scala.Double
   var statusMessage: java.lang.String
 }
@@ -20,6 +21,7 @@ object HTTPError {
   def apply(
     body: nodeLib.Buffer | java.lang.String | js.Object,
     headers: nodeLib.httpMod.IncomingHttpHeaders,
+    message: java.lang.String,
     name: gotLib.gotLibStrings.HTTPError,
     statusCode: scala.Double,
     statusMessage: java.lang.String,
@@ -33,7 +35,7 @@ object HTTPError {
     stack: java.lang.String = null,
     url: java.lang.String = null
   ): HTTPError = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers, name = name, statusCode = statusCode, statusMessage = statusMessage)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers, message = message, name = name, statusCode = statusCode, statusMessage = statusMessage)
     if (code != null) __obj.updateDynamic("code")(code)
     if (host != null) __obj.updateDynamic("host")(host)
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)

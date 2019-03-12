@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.UniqueValues")
 @js.native
 class UniqueValues protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   @JSName("AppliesTo")
   val AppliesTo_Original: Range = js.native
   @JSName("Borders")
@@ -16,8 +16,8 @@ class UniqueValues protected () extends js.Object {
   val Creator: XlCreator = js.native
   var DupeUnique: XlDupeUnique = js.native
   var `Excel.UniqueValues_typekey`: UniqueValues = js.native
-  val Font: Font = js.native
-  val Interior: Interior = js.native
+  val Font: activexDashExcelLib.ExcelNs.Font = js.native
+  val Interior: activexDashExcelLib.ExcelNs.Interior = js.native
   var NumberFormat: java.lang.String = js.native
   val PTCondition: scala.Boolean = js.native
   val Parent: js.Any = js.native

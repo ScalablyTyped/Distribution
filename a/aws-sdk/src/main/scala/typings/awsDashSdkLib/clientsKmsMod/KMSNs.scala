@@ -506,7 +506,7 @@ object KMSNs extends js.Object {
     /**
       * The type of wrapping key (public key) to return in the response. Only 2048-bit RSA public keys are supported.
       */
-    var WrappingKeySpec: WrappingKeySpec
+    var WrappingKeySpec: awsDashSdkLib.clientsKmsMod.KMSNs.WrappingKeySpec
   }
   
   trait GetParametersForImportResponse extends js.Object {

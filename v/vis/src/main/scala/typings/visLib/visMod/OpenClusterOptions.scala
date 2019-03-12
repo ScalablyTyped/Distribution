@@ -27,13 +27,9 @@ trait OpenClusterOptions extends js.Object {
 object OpenClusterOptions {
   @scala.inline
   def apply(
-    releaseFunction: js.Function2[
-      Position, 
-      org.scalablytyped.runtime.StringDictionary[Position], 
-      org.scalablytyped.runtime.StringDictionary[Position]
-    ]
+    releaseFunction: (Position, org.scalablytyped.runtime.StringDictionary[Position]) => org.scalablytyped.runtime.StringDictionary[Position]
   ): OpenClusterOptions = {
-    val __obj = js.Dynamic.literal(releaseFunction = releaseFunction)
+    val __obj = js.Dynamic.literal(releaseFunction = js.Any.fromFunction2(releaseFunction))
   
     __obj.asInstanceOf[OpenClusterOptions]
   }

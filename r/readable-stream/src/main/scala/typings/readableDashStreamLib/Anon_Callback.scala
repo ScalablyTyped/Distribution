@@ -9,8 +9,8 @@ trait Anon_Callback extends js.Object {
   var destroy: js.UndefOr[
     js.ThisFunction2[
       /* this */ readableDashStreamLib.readableDashStreamMod._Readable, 
-      /* error */ nodeLib.Error | scala.Null, 
-      /* callback */ js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit], 
+      /* error */ stdLib.Error | scala.Null, 
+      /* callback */ js.Function1[/* error */ stdLib.Error | scala.Null, scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -28,8 +28,8 @@ object Anon_Callback {
   def apply(
     destroy: js.ThisFunction2[
       /* this */ readableDashStreamLib.readableDashStreamMod._Readable, 
-      /* error */ nodeLib.Error | scala.Null, 
-      /* callback */ js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit], 
+      /* error */ stdLib.Error | scala.Null, 
+      /* callback */ js.Function1[/* error */ stdLib.Error | scala.Null, scala.Unit], 
       scala.Unit
     ] = null,
     read: js.ThisFunction1[

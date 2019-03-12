@@ -30,7 +30,7 @@ object NodeProps {
     clear: glDashReactLib.Anon_Color = null,
     height: scala.Int | scala.Double = null,
     ignoreUnusedUniforms: js.Array[java.lang.String] | scala.Boolean = null,
-    onDraw: js.Function0[scala.Unit] = null,
+    onDraw: () => scala.Unit = null,
     sync: js.UndefOr[scala.Boolean] = js.undefined,
     uniforms: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     uniformsOptions: js.Any = null,
@@ -43,7 +43,7 @@ object NodeProps {
     if (clear != null) __obj.updateDynamic("clear")(clear)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (ignoreUnusedUniforms != null) __obj.updateDynamic("ignoreUnusedUniforms")(ignoreUnusedUniforms.asInstanceOf[js.Any])
-    if (onDraw != null) __obj.updateDynamic("onDraw")(onDraw)
+    if (onDraw != null) __obj.updateDynamic("onDraw")(js.Any.fromFunction0(onDraw))
     if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
     if (uniforms != null) __obj.updateDynamic("uniforms")(uniforms)
     if (uniformsOptions != null) __obj.updateDynamic("uniformsOptions")(uniformsOptions)

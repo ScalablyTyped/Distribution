@@ -11,8 +11,8 @@ trait KeysNavigation extends js.Object {
 
 object KeysNavigation {
   @scala.inline
-  def apply(moveSelection: js.Function1[java.lang.String, scala.Unit]): KeysNavigation = {
-    val __obj = js.Dynamic.literal(moveSelection = moveSelection)
+  def apply(moveSelection: java.lang.String => scala.Unit): KeysNavigation = {
+    val __obj = js.Dynamic.literal(moveSelection = js.Any.fromFunction1(moveSelection))
   
     __obj.asInstanceOf[KeysNavigation]
   }

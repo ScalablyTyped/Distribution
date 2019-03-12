@@ -63,28 +63,23 @@ trait TransformationContext extends js.Object {
 object TransformationContext {
   @scala.inline
   def apply(
-    enableEmitNotification: js.Function1[SyntaxKind, scala.Unit],
-    enableSubstitution: js.Function1[SyntaxKind, scala.Unit],
-    endLexicalEnvironment: js.Function0[js.UndefOr[js.Array[Statement]]],
-    getCompilerOptions: js.Function0[CompilerOptions],
-    hoistFunctionDeclaration: js.Function1[FunctionDeclaration, scala.Unit],
-    hoistVariableDeclaration: js.Function1[Identifier, scala.Unit],
-    isEmitNotificationEnabled: js.Function1[Node, scala.Boolean],
-    isSubstitutionEnabled: js.Function1[Node, scala.Boolean],
-    onEmitNode: js.Function3[
-      EmitHint, 
-      Node, 
-      js.Function2[/* hint */ EmitHint, /* node */ Node, scala.Unit], 
-      scala.Unit
-    ],
-    onSubstituteNode: js.Function2[EmitHint, Node, Node],
-    readEmitHelpers: js.Function0[js.UndefOr[js.Array[EmitHelper]]],
-    requestEmitHelper: js.Function1[EmitHelper, scala.Unit],
-    resumeLexicalEnvironment: js.Function0[scala.Unit],
-    startLexicalEnvironment: js.Function0[scala.Unit],
-    suspendLexicalEnvironment: js.Function0[scala.Unit]
+    enableEmitNotification: SyntaxKind => scala.Unit,
+    enableSubstitution: SyntaxKind => scala.Unit,
+    endLexicalEnvironment: () => js.UndefOr[js.Array[Statement]],
+    getCompilerOptions: () => CompilerOptions,
+    hoistFunctionDeclaration: FunctionDeclaration => scala.Unit,
+    hoistVariableDeclaration: Identifier => scala.Unit,
+    isEmitNotificationEnabled: Node => scala.Boolean,
+    isSubstitutionEnabled: Node => scala.Boolean,
+    onEmitNode: (EmitHint, Node, js.Function2[/* hint */ EmitHint, /* node */ Node, scala.Unit]) => scala.Unit,
+    onSubstituteNode: (EmitHint, Node) => Node,
+    readEmitHelpers: () => js.UndefOr[js.Array[EmitHelper]],
+    requestEmitHelper: EmitHelper => scala.Unit,
+    resumeLexicalEnvironment: () => scala.Unit,
+    startLexicalEnvironment: () => scala.Unit,
+    suspendLexicalEnvironment: () => scala.Unit
   ): TransformationContext = {
-    val __obj = js.Dynamic.literal(enableEmitNotification = enableEmitNotification, enableSubstitution = enableSubstitution, endLexicalEnvironment = endLexicalEnvironment, getCompilerOptions = getCompilerOptions, hoistFunctionDeclaration = hoistFunctionDeclaration, hoistVariableDeclaration = hoistVariableDeclaration, isEmitNotificationEnabled = isEmitNotificationEnabled, isSubstitutionEnabled = isSubstitutionEnabled, onEmitNode = onEmitNode, onSubstituteNode = onSubstituteNode, readEmitHelpers = readEmitHelpers, requestEmitHelper = requestEmitHelper, resumeLexicalEnvironment = resumeLexicalEnvironment, startLexicalEnvironment = startLexicalEnvironment, suspendLexicalEnvironment = suspendLexicalEnvironment)
+    val __obj = js.Dynamic.literal(enableEmitNotification = js.Any.fromFunction1(enableEmitNotification), enableSubstitution = js.Any.fromFunction1(enableSubstitution), endLexicalEnvironment = js.Any.fromFunction0(endLexicalEnvironment), getCompilerOptions = js.Any.fromFunction0(getCompilerOptions), hoistFunctionDeclaration = js.Any.fromFunction1(hoistFunctionDeclaration), hoistVariableDeclaration = js.Any.fromFunction1(hoistVariableDeclaration), isEmitNotificationEnabled = js.Any.fromFunction1(isEmitNotificationEnabled), isSubstitutionEnabled = js.Any.fromFunction1(isSubstitutionEnabled), onEmitNode = js.Any.fromFunction3(onEmitNode), onSubstituteNode = js.Any.fromFunction2(onSubstituteNode), readEmitHelpers = js.Any.fromFunction0(readEmitHelpers), requestEmitHelper = js.Any.fromFunction1(requestEmitHelper), resumeLexicalEnvironment = js.Any.fromFunction0(resumeLexicalEnvironment), startLexicalEnvironment = js.Any.fromFunction0(startLexicalEnvironment), suspendLexicalEnvironment = js.Any.fromFunction0(suspendLexicalEnvironment))
   
     __obj.asInstanceOf[TransformationContext]
   }

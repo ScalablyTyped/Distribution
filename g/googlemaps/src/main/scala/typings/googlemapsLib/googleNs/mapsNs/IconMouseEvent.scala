@@ -16,8 +16,8 @@ trait IconMouseEvent extends MouseEvent {
 
 object IconMouseEvent {
   @scala.inline
-  def apply(latLng: LatLng, placeId: java.lang.String, stop: js.Function0[scala.Unit]): IconMouseEvent = {
-    val __obj = js.Dynamic.literal(latLng = latLng, placeId = placeId, stop = stop)
+  def apply(latLng: LatLng, placeId: java.lang.String, stop: () => scala.Unit): IconMouseEvent = {
+    val __obj = js.Dynamic.literal(latLng = latLng, placeId = placeId, stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[IconMouseEvent]
   }

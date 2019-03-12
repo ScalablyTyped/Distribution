@@ -12,14 +12,14 @@ trait SlideIn extends Effect {
 object SlideIn {
   @scala.inline
   def apply(
-    add: js.Function1[Effect, SlideIn],
-    direction: js.Function1[java.lang.String, SlideIn],
-    duration: js.Function1[scala.Double, SlideIn],
-    play: js.Function0[kendoDashUiLib.JQueryPromise[_]],
-    reverse: js.Function0[kendoDashUiLib.JQueryPromise[_]],
-    stop: js.Function0[SlideIn]
+    add: Effect => SlideIn,
+    direction: java.lang.String => SlideIn,
+    duration: scala.Double => SlideIn,
+    play: () => kendoDashUiLib.JQueryPromise[_],
+    reverse: () => kendoDashUiLib.JQueryPromise[_],
+    stop: () => SlideIn
   ): SlideIn = {
-    val __obj = js.Dynamic.literal(add = add, direction = direction, duration = duration, play = play, reverse = reverse, stop = stop)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), direction = js.Any.fromFunction1(direction), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[SlideIn]
   }

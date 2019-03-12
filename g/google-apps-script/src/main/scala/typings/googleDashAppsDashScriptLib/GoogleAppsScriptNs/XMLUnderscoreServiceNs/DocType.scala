@@ -22,19 +22,19 @@ trait DocType extends js.Object {
 object DocType {
   @scala.inline
   def apply(
-    detach: js.Function0[Content],
-    getElementName: js.Function0[java.lang.String],
-    getInternalSubset: js.Function0[java.lang.String],
-    getParentElement: js.Function0[Element],
-    getPublicId: js.Function0[java.lang.String],
-    getSystemId: js.Function0[java.lang.String],
-    getValue: js.Function0[java.lang.String],
-    setElementName: js.Function1[java.lang.String, DocType],
-    setInternalSubset: js.Function1[java.lang.String, DocType],
-    setPublicId: js.Function1[java.lang.String, DocType],
-    setSystemId: js.Function1[java.lang.String, DocType]
+    detach: () => Content,
+    getElementName: () => java.lang.String,
+    getInternalSubset: () => java.lang.String,
+    getParentElement: () => Element,
+    getPublicId: () => java.lang.String,
+    getSystemId: () => java.lang.String,
+    getValue: () => java.lang.String,
+    setElementName: java.lang.String => DocType,
+    setInternalSubset: java.lang.String => DocType,
+    setPublicId: java.lang.String => DocType,
+    setSystemId: java.lang.String => DocType
   ): DocType = {
-    val __obj = js.Dynamic.literal(detach = detach, getElementName = getElementName, getInternalSubset = getInternalSubset, getParentElement = getParentElement, getPublicId = getPublicId, getSystemId = getSystemId, getValue = getValue, setElementName = setElementName, setInternalSubset = setInternalSubset, setPublicId = setPublicId, setSystemId = setSystemId)
+    val __obj = js.Dynamic.literal(detach = js.Any.fromFunction0(detach), getElementName = js.Any.fromFunction0(getElementName), getInternalSubset = js.Any.fromFunction0(getInternalSubset), getParentElement = js.Any.fromFunction0(getParentElement), getPublicId = js.Any.fromFunction0(getPublicId), getSystemId = js.Any.fromFunction0(getSystemId), getValue = js.Any.fromFunction0(getValue), setElementName = js.Any.fromFunction1(setElementName), setInternalSubset = js.Any.fromFunction1(setInternalSubset), setPublicId = js.Any.fromFunction1(setPublicId), setSystemId = js.Any.fromFunction1(setSystemId))
   
     __obj.asInstanceOf[DocType]
   }

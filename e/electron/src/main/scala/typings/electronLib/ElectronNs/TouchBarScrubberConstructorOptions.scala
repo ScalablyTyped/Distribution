@@ -44,15 +44,15 @@ object TouchBarScrubberConstructorOptions {
   @scala.inline
   def apply(
     continuous: scala.Boolean,
-    highlight: js.Function1[scala.Double, scala.Unit],
+    highlight: scala.Double => scala.Unit,
     items: js.Array[ScrubberItem],
     mode: java.lang.String,
     overlayStyle: java.lang.String,
-    select: js.Function1[scala.Double, scala.Unit],
+    select: scala.Double => scala.Unit,
     selectedStyle: java.lang.String,
     showArrowButtons: scala.Boolean
   ): TouchBarScrubberConstructorOptions = {
-    val __obj = js.Dynamic.literal(continuous = continuous, highlight = highlight, items = items, mode = mode, overlayStyle = overlayStyle, select = select, selectedStyle = selectedStyle, showArrowButtons = showArrowButtons)
+    val __obj = js.Dynamic.literal(continuous = continuous, highlight = js.Any.fromFunction1(highlight), items = items, mode = mode, overlayStyle = overlayStyle, select = js.Any.fromFunction1(select), selectedStyle = selectedStyle, showArrowButtons = showArrowButtons)
   
     __obj.asInstanceOf[TouchBarScrubberConstructorOptions]
   }

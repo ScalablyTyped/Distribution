@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/render3/r3_factory", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def compileFactoryFunction(meta: atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3FactoryMetadata): atAngularCompilerLib.Anon_Factory = js.native
+  def compileFactoryFunction(meta: R3FactoryMetadata): atAngularCompilerLib.Anon_Factory = js.native
   def dependenciesFromGlobalMetadata(
     `type`: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileTypeMetadata,
     outputCtx: atAngularCompilerLib.srcUtilMod.OutputContext,
     reflector: atAngularCompilerLib.srcCompileUnderscoreReflectorMod.CompileReflector
-  ): js.Array[atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3DependencyMetadata] = js.native
+  ): js.Array[R3DependencyMetadata] = js.native
 }
 

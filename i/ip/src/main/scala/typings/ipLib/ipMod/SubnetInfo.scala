@@ -21,7 +21,7 @@ object SubnetInfo {
   @scala.inline
   def apply(
     broadcastAddress: java.lang.String,
-    contains: js.Function1[java.lang.String, scala.Boolean],
+    contains: java.lang.String => scala.Boolean,
     firstAddress: java.lang.String,
     lastAddress: java.lang.String,
     length: scala.Double,
@@ -30,7 +30,7 @@ object SubnetInfo {
     subnetMask: java.lang.String,
     subnetMaskLength: scala.Double
   ): SubnetInfo = {
-    val __obj = js.Dynamic.literal(broadcastAddress = broadcastAddress, contains = contains, firstAddress = firstAddress, lastAddress = lastAddress, length = length, networkAddress = networkAddress, numHosts = numHosts, subnetMask = subnetMask, subnetMaskLength = subnetMaskLength)
+    val __obj = js.Dynamic.literal(broadcastAddress = broadcastAddress, contains = js.Any.fromFunction1(contains), firstAddress = firstAddress, lastAddress = lastAddress, length = length, networkAddress = networkAddress, numHosts = numHosts, subnetMask = subnetMask, subnetMaskLength = subnetMaskLength)
   
     __obj.asInstanceOf[SubnetInfo]
   }

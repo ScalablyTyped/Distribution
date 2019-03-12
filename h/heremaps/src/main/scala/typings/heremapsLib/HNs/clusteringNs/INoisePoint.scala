@@ -39,13 +39,13 @@ trait INoisePoint extends js.Object {
 object INoisePoint {
   @scala.inline
   def apply(
-    getData: js.Function0[js.Any],
-    getMinZoom: js.Function0[scala.Double],
-    getPosition: js.Function0[heremapsLib.HNs.geoNs.Point],
-    getWeight: js.Function0[scala.Double],
-    isCluster: js.Function0[scala.Boolean]
+    getData: () => js.Any,
+    getMinZoom: () => scala.Double,
+    getPosition: () => heremapsLib.HNs.geoNs.Point,
+    getWeight: () => scala.Double,
+    isCluster: () => scala.Boolean
   ): INoisePoint = {
-    val __obj = js.Dynamic.literal(getData = getData, getMinZoom = getMinZoom, getPosition = getPosition, getWeight = getWeight, isCluster = isCluster)
+    val __obj = js.Dynamic.literal(getData = js.Any.fromFunction0(getData), getMinZoom = js.Any.fromFunction0(getMinZoom), getPosition = js.Any.fromFunction0(getPosition), getWeight = js.Any.fromFunction0(getWeight), isCluster = js.Any.fromFunction0(isCluster))
   
     __obj.asInstanceOf[INoisePoint]
   }

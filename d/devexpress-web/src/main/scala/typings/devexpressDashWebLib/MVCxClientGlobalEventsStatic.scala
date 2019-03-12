@@ -31,12 +31,12 @@ trait MVCxClientGlobalEventsStatic extends js.Object {
 object MVCxClientGlobalEventsStatic {
   @scala.inline
   def apply(
-    AddBeginCallbackEventHandler: js.Function1[MVCxClientBeginCallbackEventHandler[_], scala.Unit],
-    AddCallbackErrorHandler: js.Function1[ASPxClientCallbackErrorEventHandler[_], scala.Unit],
-    AddControlsInitializedEventHandler: js.Function1[ASPxClientControlsInitializedEventHandler[_], scala.Unit],
-    AddEndCallbackEventHandler: js.Function1[ASPxClientEndCallbackEventHandler[_], scala.Unit]
+    AddBeginCallbackEventHandler: MVCxClientBeginCallbackEventHandler[_] => scala.Unit,
+    AddCallbackErrorHandler: ASPxClientCallbackErrorEventHandler[_] => scala.Unit,
+    AddControlsInitializedEventHandler: ASPxClientControlsInitializedEventHandler[_] => scala.Unit,
+    AddEndCallbackEventHandler: ASPxClientEndCallbackEventHandler[_] => scala.Unit
   ): MVCxClientGlobalEventsStatic = {
-    val __obj = js.Dynamic.literal(AddBeginCallbackEventHandler = AddBeginCallbackEventHandler, AddCallbackErrorHandler = AddCallbackErrorHandler, AddControlsInitializedEventHandler = AddControlsInitializedEventHandler, AddEndCallbackEventHandler = AddEndCallbackEventHandler)
+    val __obj = js.Dynamic.literal(AddBeginCallbackEventHandler = js.Any.fromFunction1(AddBeginCallbackEventHandler), AddCallbackErrorHandler = js.Any.fromFunction1(AddCallbackErrorHandler), AddControlsInitializedEventHandler = js.Any.fromFunction1(AddControlsInitializedEventHandler), AddEndCallbackEventHandler = js.Any.fromFunction1(AddEndCallbackEventHandler))
   
     __obj.asInstanceOf[MVCxClientGlobalEventsStatic]
   }

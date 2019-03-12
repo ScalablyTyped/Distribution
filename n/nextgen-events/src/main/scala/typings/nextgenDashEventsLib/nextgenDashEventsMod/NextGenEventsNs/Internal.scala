@@ -22,7 +22,7 @@ object Internal {
   def apply(
     contexts: org.scalablytyped.runtime.StringDictionary[Context],
     depth: scala.Double,
-    desync: js.Function2[js.Function1[/* repeated */ js.Any, scala.Unit], /* repeated */ js.Any, scala.Unit],
+    desync: (js.Function1[/* repeated */ js.Any, scala.Unit], /* repeated */ js.Any) => scala.Unit,
     interruptible: scala.Boolean,
     listeners: Listeners,
     maxListeners: scala.Double,
@@ -30,7 +30,7 @@ object Internal {
     stateGroups: org.scalablytyped.runtime.StringDictionary[js.Any],
     states: States
   ): Internal = {
-    val __obj = js.Dynamic.literal(contexts = contexts, depth = depth, desync = desync, interruptible = interruptible, listeners = listeners, maxListeners = maxListeners, nice = nice, stateGroups = stateGroups, states = states)
+    val __obj = js.Dynamic.literal(contexts = contexts, depth = depth, desync = js.Any.fromFunction2(desync), interruptible = interruptible, listeners = listeners, maxListeners = maxListeners, nice = nice, stateGroups = stateGroups, states = states)
   
     __obj.asInstanceOf[Internal]
   }

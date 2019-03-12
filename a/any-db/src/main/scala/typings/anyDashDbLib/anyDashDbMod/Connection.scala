@@ -12,6 +12,6 @@ trait Connection extends Queryable {
     * will be called after the connection has closed.
     */
   def end(): scala.Unit = js.native
-  def end(callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def end(callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
 }
 

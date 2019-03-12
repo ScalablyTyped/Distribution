@@ -18,15 +18,15 @@ trait IMetadataCardSelectionList extends js.Object {
 object IMetadataCardSelectionList {
   @scala.inline
   def apply(
-    AutoSelect: js.Function1[java.lang.String, scala.Unit],
+    AutoSelect: java.lang.String => scala.Unit,
     Events: IEvents,
     Filter: java.lang.String,
     FilteringValue: java.lang.String,
     Items: js.Any,
     MoreResults: scala.Boolean,
-    SetFilter: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit]
+    SetFilter: (java.lang.String, scala.Double, scala.Double) => scala.Unit
   ): IMetadataCardSelectionList = {
-    val __obj = js.Dynamic.literal(AutoSelect = AutoSelect, Events = Events, Filter = Filter, FilteringValue = FilteringValue, Items = Items, MoreResults = MoreResults, SetFilter = SetFilter)
+    val __obj = js.Dynamic.literal(AutoSelect = js.Any.fromFunction1(AutoSelect), Events = Events, Filter = Filter, FilteringValue = FilteringValue, Items = Items, MoreResults = MoreResults, SetFilter = js.Any.fromFunction3(SetFilter))
   
     __obj.asInstanceOf[IMetadataCardSelectionList]
   }

@@ -26,32 +26,14 @@ trait RegionAutoscalersResource extends js.Object {
 object RegionAutoscalersResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltAutoscalerFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltAutoscalerFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Autoscaler]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RegionAutoscalerList]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltAutoscalerFieldsKeyOauthtokenPrettyPrintProject, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    update: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltAutoscalerFieldsKeyOauthtokenPrettyPrintProject, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    delete: gapiDotClientDotComputeLib.Anon_AltAutoscalerFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotComputeLib.Anon_AltAutoscalerFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Autoscaler],
+    insert: gapiDotClientDotComputeLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotComputeLib.Anon_AltFieldsFilter => gapiDotClientLib.gapiNs.clientNs.Request[RegionAutoscalerList],
+    patch: gapiDotClientDotComputeLib.Anon_AltAutoscalerFieldsKeyOauthtokenPrettyPrintProject => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    update: gapiDotClientDotComputeLib.Anon_AltAutoscalerFieldsKeyOauthtokenPrettyPrintProject => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): RegionAutoscalersResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[RegionAutoscalersResource]
   }

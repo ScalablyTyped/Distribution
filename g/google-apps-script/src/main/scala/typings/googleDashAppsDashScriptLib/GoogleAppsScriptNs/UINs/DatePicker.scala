@@ -36,34 +36,30 @@ trait DatePicker extends js.Object {
 object DatePicker {
   @scala.inline
   def apply(
-    addStyleDependentName: js.Function1[java.lang.String, DatePicker],
-    addStyleName: js.Function1[java.lang.String, DatePicker],
-    addValueChangeHandler: js.Function1[Handler, DatePicker],
-    getId: js.Function0[java.lang.String],
-    getTag: js.Function0[java.lang.String],
-    getType: js.Function0[java.lang.String],
-    setCurrentMonth: js.Function1[stdLib.Date, DatePicker],
-    setHeight: js.Function1[java.lang.String, DatePicker],
-    setId: js.Function1[java.lang.String, DatePicker],
-    setLayoutData: js.Function1[js.Object, DatePicker],
-    setName: js.Function1[java.lang.String, DatePicker],
-    setPixelSize: js.Function2[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      DatePicker
-    ],
-    setSize: js.Function2[java.lang.String, java.lang.String, DatePicker],
-    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, DatePicker],
-    setStyleAttributes: js.Function1[js.Object, DatePicker],
-    setStyleName: js.Function1[java.lang.String, DatePicker],
-    setStylePrimaryName: js.Function1[java.lang.String, DatePicker],
-    setTag: js.Function1[java.lang.String, DatePicker],
-    setTitle: js.Function1[java.lang.String, DatePicker],
-    setValue: js.Function1[stdLib.Date, DatePicker],
-    setVisible: js.Function1[scala.Boolean, DatePicker],
-    setWidth: js.Function1[java.lang.String, DatePicker]
+    addStyleDependentName: java.lang.String => DatePicker,
+    addStyleName: java.lang.String => DatePicker,
+    addValueChangeHandler: Handler => DatePicker,
+    getId: () => java.lang.String,
+    getTag: () => java.lang.String,
+    getType: () => java.lang.String,
+    setCurrentMonth: stdLib.Date => DatePicker,
+    setHeight: java.lang.String => DatePicker,
+    setId: java.lang.String => DatePicker,
+    setLayoutData: js.Object => DatePicker,
+    setName: java.lang.String => DatePicker,
+    setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => DatePicker,
+    setSize: (java.lang.String, java.lang.String) => DatePicker,
+    setStyleAttribute: (java.lang.String, java.lang.String) => DatePicker,
+    setStyleAttributes: js.Object => DatePicker,
+    setStyleName: java.lang.String => DatePicker,
+    setStylePrimaryName: java.lang.String => DatePicker,
+    setTag: java.lang.String => DatePicker,
+    setTitle: java.lang.String => DatePicker,
+    setValue: stdLib.Date => DatePicker,
+    setVisible: scala.Boolean => DatePicker,
+    setWidth: java.lang.String => DatePicker
   ): DatePicker = {
-    val __obj = js.Dynamic.literal(addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, addValueChangeHandler = addValueChangeHandler, getId = getId, getTag = getTag, getType = getType, setCurrentMonth = setCurrentMonth, setHeight = setHeight, setId = setId, setLayoutData = setLayoutData, setName = setName, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setTitle = setTitle, setValue = setValue, setVisible = setVisible, setWidth = setWidth)
+    val __obj = js.Dynamic.literal(addStyleDependentName = js.Any.fromFunction1(addStyleDependentName), addStyleName = js.Any.fromFunction1(addStyleName), addValueChangeHandler = js.Any.fromFunction1(addValueChangeHandler), getId = js.Any.fromFunction0(getId), getTag = js.Any.fromFunction0(getTag), getType = js.Any.fromFunction0(getType), setCurrentMonth = js.Any.fromFunction1(setCurrentMonth), setHeight = js.Any.fromFunction1(setHeight), setId = js.Any.fromFunction1(setId), setLayoutData = js.Any.fromFunction1(setLayoutData), setName = js.Any.fromFunction1(setName), setPixelSize = js.Any.fromFunction2(setPixelSize), setSize = js.Any.fromFunction2(setSize), setStyleAttribute = js.Any.fromFunction2(setStyleAttribute), setStyleAttributes = js.Any.fromFunction1(setStyleAttributes), setStyleName = js.Any.fromFunction1(setStyleName), setStylePrimaryName = js.Any.fromFunction1(setStylePrimaryName), setTag = js.Any.fromFunction1(setTag), setTitle = js.Any.fromFunction1(setTitle), setValue = js.Any.fromFunction1(setValue), setVisible = js.Any.fromFunction1(setVisible), setWidth = js.Any.fromFunction1(setWidth))
   
     __obj.asInstanceOf[DatePicker]
   }

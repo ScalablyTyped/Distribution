@@ -13,10 +13,10 @@ trait ISearchIndex extends js.Object {
 object ISearchIndex {
   @scala.inline
   def apply(
-    indexDocument: js.Function3[java.lang.String, java.lang.String, js.Object, scala.Unit],
-    search: js.Function2[js.Array[java.lang.String], js.Array[js.Object], js.Array[js.Object]]
+    indexDocument: (java.lang.String, java.lang.String, js.Object) => scala.Unit,
+    search: (js.Array[java.lang.String], js.Array[js.Object]) => js.Array[js.Object]
   ): ISearchIndex = {
-    val __obj = js.Dynamic.literal(indexDocument = indexDocument, search = search)
+    val __obj = js.Dynamic.literal(indexDocument = js.Any.fromFunction3(indexDocument), search = js.Any.fromFunction2(search))
   
     __obj.asInstanceOf[ISearchIndex]
   }

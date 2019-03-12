@@ -30,33 +30,33 @@ trait IEditControl extends js.Object {
 object IEditControl {
   @scala.inline
   def apply(
-    BindToCell: js.Function1[IEditControlCellContext, scala.Unit],
-    Dispose: js.Function0[scala.Unit],
-    OnBeginEdit: js.Function1[microsoftDashAjaxLib.SysNs.UINs.DomEvent, scala.Unit],
-    OnEndEdit: js.Function0[scala.Unit],
-    Unbind: js.Function0[scala.Unit],
-    Focus: js.Function1[/* eventInfo */ microsoftDashAjaxLib.SysNs.UINs.DomEvent, scala.Unit] = null,
-    GetCellContext: js.Function0[IEditControlCellContext] = null,
-    GetInputElement: js.Function0[stdLib.HTMLElement] = null,
-    GetOriginalValue: js.Function0[IValue] = null,
-    IsCurrentlyUsingGridTextInputElement: js.Function0[scala.Boolean] = null,
-    OnCellMove: js.Function0[scala.Unit] = null,
-    OnValueChanged: js.Function1[/* newValue */ IValue, scala.Unit] = null,
-    SetSize: js.Function2[/* width */ scala.Double, /* height */ scala.Double, scala.Unit] = null,
-    SetValue: js.Function1[/* value */ IValue, scala.Unit] = null,
+    BindToCell: IEditControlCellContext => scala.Unit,
+    Dispose: () => scala.Unit,
+    OnBeginEdit: microsoftDashAjaxLib.SysNs.UINs.DomEvent => scala.Unit,
+    OnEndEdit: () => scala.Unit,
+    Unbind: () => scala.Unit,
+    Focus: /* eventInfo */ microsoftDashAjaxLib.SysNs.UINs.DomEvent => scala.Unit = null,
+    GetCellContext: () => IEditControlCellContext = null,
+    GetInputElement: () => stdLib.HTMLElement = null,
+    GetOriginalValue: () => IValue = null,
+    IsCurrentlyUsingGridTextInputElement: () => scala.Boolean = null,
+    OnCellMove: () => scala.Unit = null,
+    OnValueChanged: /* newValue */ IValue => scala.Unit = null,
+    SetSize: (/* width */ scala.Double, /* height */ scala.Double) => scala.Unit = null,
+    SetValue: /* value */ IValue => scala.Unit = null,
     SupportedReadMode: EditActorReadType = null,
     SupportedWriteMode: EditActorWriteType = null
   ): IEditControl = {
-    val __obj = js.Dynamic.literal(BindToCell = BindToCell, Dispose = Dispose, OnBeginEdit = OnBeginEdit, OnEndEdit = OnEndEdit, Unbind = Unbind)
-    if (Focus != null) __obj.updateDynamic("Focus")(Focus)
-    if (GetCellContext != null) __obj.updateDynamic("GetCellContext")(GetCellContext)
-    if (GetInputElement != null) __obj.updateDynamic("GetInputElement")(GetInputElement)
-    if (GetOriginalValue != null) __obj.updateDynamic("GetOriginalValue")(GetOriginalValue)
-    if (IsCurrentlyUsingGridTextInputElement != null) __obj.updateDynamic("IsCurrentlyUsingGridTextInputElement")(IsCurrentlyUsingGridTextInputElement)
-    if (OnCellMove != null) __obj.updateDynamic("OnCellMove")(OnCellMove)
-    if (OnValueChanged != null) __obj.updateDynamic("OnValueChanged")(OnValueChanged)
-    if (SetSize != null) __obj.updateDynamic("SetSize")(SetSize)
-    if (SetValue != null) __obj.updateDynamic("SetValue")(SetValue)
+    val __obj = js.Dynamic.literal(BindToCell = js.Any.fromFunction1(BindToCell), Dispose = js.Any.fromFunction0(Dispose), OnBeginEdit = js.Any.fromFunction1(OnBeginEdit), OnEndEdit = js.Any.fromFunction0(OnEndEdit), Unbind = js.Any.fromFunction0(Unbind))
+    if (Focus != null) __obj.updateDynamic("Focus")(js.Any.fromFunction1(Focus))
+    if (GetCellContext != null) __obj.updateDynamic("GetCellContext")(js.Any.fromFunction0(GetCellContext))
+    if (GetInputElement != null) __obj.updateDynamic("GetInputElement")(js.Any.fromFunction0(GetInputElement))
+    if (GetOriginalValue != null) __obj.updateDynamic("GetOriginalValue")(js.Any.fromFunction0(GetOriginalValue))
+    if (IsCurrentlyUsingGridTextInputElement != null) __obj.updateDynamic("IsCurrentlyUsingGridTextInputElement")(js.Any.fromFunction0(IsCurrentlyUsingGridTextInputElement))
+    if (OnCellMove != null) __obj.updateDynamic("OnCellMove")(js.Any.fromFunction0(OnCellMove))
+    if (OnValueChanged != null) __obj.updateDynamic("OnValueChanged")(js.Any.fromFunction1(OnValueChanged))
+    if (SetSize != null) __obj.updateDynamic("SetSize")(js.Any.fromFunction2(SetSize))
+    if (SetValue != null) __obj.updateDynamic("SetValue")(js.Any.fromFunction1(SetValue))
     if (SupportedReadMode != null) __obj.updateDynamic("SupportedReadMode")(SupportedReadMode)
     if (SupportedWriteMode != null) __obj.updateDynamic("SupportedWriteMode")(SupportedWriteMode)
     __obj.asInstanceOf[IEditControl]

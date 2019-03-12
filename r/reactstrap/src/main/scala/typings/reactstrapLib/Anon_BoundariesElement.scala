@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_BoundariesElement extends js.Object {
-  var boundariesElement: js.UndefOr[popperDotJsLib.popperDotJsMod.Boundary | reactLib.Element] = js.undefined
+  var boundariesElement: js.UndefOr[popperDotJsLib.popperDotJsMod.Boundary | stdLib.Element] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var container: js.UndefOr[java.lang.String | reactLib.HTMLElement] = js.undefined
+  var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
   var delay: js.UndefOr[scala.Double | Anon_Hide] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -18,17 +18,17 @@ trait Anon_BoundariesElement extends js.Object {
   var modifiers: js.UndefOr[popperDotJsLib.popperDotJsMod.Modifiers] = js.undefined
   var placement: js.UndefOr[popperDotJsLib.popperDotJsMod.Placement] = js.undefined
   var placementPrefix: js.UndefOr[java.lang.String] = js.undefined
-  var target: java.lang.String | reactLib.HTMLElement
+  var target: java.lang.String | stdLib.HTMLElement
   var toggle: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
 object Anon_BoundariesElement {
   @scala.inline
   def apply(
-    target: java.lang.String | reactLib.HTMLElement,
-    boundariesElement: popperDotJsLib.popperDotJsMod.Boundary | reactLib.Element = null,
+    target: java.lang.String | stdLib.HTMLElement,
+    boundariesElement: popperDotJsLib.popperDotJsMod.Boundary | stdLib.Element = null,
     className: java.lang.String = null,
-    container: java.lang.String | reactLib.HTMLElement = null,
+    container: java.lang.String | stdLib.HTMLElement = null,
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
     delay: scala.Double | Anon_Hide = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -38,7 +38,7 @@ object Anon_BoundariesElement {
     modifiers: popperDotJsLib.popperDotJsMod.Modifiers = null,
     placement: popperDotJsLib.popperDotJsMod.Placement = null,
     placementPrefix: java.lang.String = null,
-    toggle: js.Function0[scala.Unit] = null
+    toggle: () => scala.Unit = null
   ): Anon_BoundariesElement = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     if (boundariesElement != null) __obj.updateDynamic("boundariesElement")(boundariesElement.asInstanceOf[js.Any])
@@ -53,7 +53,7 @@ object Anon_BoundariesElement {
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
     if (placement != null) __obj.updateDynamic("placement")(placement)
     if (placementPrefix != null) __obj.updateDynamic("placementPrefix")(placementPrefix)
-    if (toggle != null) __obj.updateDynamic("toggle")(toggle)
+    if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction0(toggle))
     __obj.asInstanceOf[Anon_BoundariesElement]
   }
 }

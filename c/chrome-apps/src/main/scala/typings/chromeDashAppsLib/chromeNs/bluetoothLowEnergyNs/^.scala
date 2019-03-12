@@ -17,12 +17,7 @@ object ^ extends js.Object {
     * The peripheral permission may not be available to all apps.
     * @since Chrome 52.
     */
-  val onCharacteristicReadRequest: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[
-      /* characteristic */ chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Characteristic, 
-      scala.Unit
-    ]
-  ] = js.native
+  val onCharacteristicReadRequest: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* characteristic */ Characteristic, scala.Unit]] = js.native
   /**
     * Fired when the value of a remote GATT characteristic changes,
     *   either as a result of a read request,
@@ -30,12 +25,7 @@ object ^ extends js.Object {
     * This event will only be sent if the app has enabled notifications
     *   by calling startCharacteristicNotifications.
     */
-  val onCharacteristicValueChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[
-      /* characteristic */ chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Characteristic, 
-      scala.Unit
-    ]
-  ] = js.native
+  val onCharacteristicValueChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* characteristic */ Characteristic, scala.Unit]] = js.native
   /**
     * Fired when a connected central device requests to write the value of
     *   a characteristic registered on the local GATT server.
@@ -45,12 +35,7 @@ object ^ extends js.Object {
     * The peripheral permission may not be available to all apps.
     * @since Chrome 52.
     */
-  val onCharacteristicWriteRequest: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[
-      /* characteristic */ chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Characteristic, 
-      scala.Unit
-    ]
-  ] = js.native
+  val onCharacteristicWriteRequest: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* characteristic */ Characteristic, scala.Unit]] = js.native
   /**
     * Fired when a connected central device requests to read the value of
     *   a descriptor registered on the local GATT server.
@@ -60,24 +45,14 @@ object ^ extends js.Object {
     * The peripheral permission may not be available to all apps.
     * @since Chrome 52.
     */
-  val onDescriptorReadRequest: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[
-      /* descriptor */ chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Descriptor, 
-      scala.Unit
-    ]
-  ] = js.native
+  val onDescriptorReadRequest: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* descriptor */ Descriptor, scala.Unit]] = js.native
   /**
     * Fired when the value of a remote GATT characteristic descriptor changes,
     *   usually as a result of a read request.
     * This event exists mostly for convenience and will always be sent after
     *   a successful call to readDescriptorValue.
     */
-  val onDescriptorValueChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[
-      /* descriptor */ chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Descriptor, 
-      scala.Unit
-    ]
-  ] = js.native
+  val onDescriptorValueChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* descriptor */ Descriptor, scala.Unit]] = js.native
   /**
     * Fired when a connected central device requests to write the value of
     *   a descriptor registered on the local GATT server.
@@ -86,29 +61,18 @@ object ^ extends js.Object {
     *   and the bluetooth:peripheral permissions set to true.
     * The peripheral permission may not be available to all apps.
     */
-  val onDescriptorWriteRequest: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[
-      /* descriptor */ chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Descriptor, 
-      scala.Unit
-    ]
-  ] = js.native
+  val onDescriptorWriteRequest: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* descriptor */ Descriptor, scala.Unit]] = js.native
   /** Fired whan a new GATT service has been discovered on a remote device. */
-  val onServiceAdded: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[/* service */ chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Service, scala.Unit]
-  ] = js.native
+  val onServiceAdded: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* service */ Service, scala.Unit]] = js.native
   /**
     * Fired when the state of a remote GATT service changes.
     * This involves any characteristics and/or descriptors
     *   that get added or removed from the service, as well as
     *   'ServiceChanged' notifications from the remote device.
     */
-  val onServiceChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[/* service */ chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Service, scala.Unit]
-  ] = js.native
+  val onServiceChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* service */ Service, scala.Unit]] = js.native
   /** Fired when a GATT service that was previously discovered on a remote device has been removed. */
-  val onServiceRemoved: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[/* service */ chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Service, scala.Unit]
-  ] = js.native
+  val onServiceRemoved: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* service */ Service, scala.Unit]] = js.native
   /**
     * Establishes a connection between the application and the device with the given address. A device may be already connected and its GATT services available without calling connect, however, an app that wants to access GATT services of a device should call this function to make sure that a connection to the device is maintained. If the device is not connected, all GATT services of the device will be discovered after a successful call to connect.
     * @param deviceAddress The Bluetooth address of the remote device to which a GATT connection should be opened.
@@ -121,11 +85,7 @@ object ^ extends js.Object {
     * @param properties Connection properties (optional).
     * @param callback Called when the connect request has completed.
     */
-  def connect(
-    deviceAddress: java.lang.String,
-    properties: chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.IProperties,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
+  def connect(deviceAddress: java.lang.String, properties: IProperties, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
     * Create a locally hosted GATT characteristic. This characteristic must be hosted under a valid service. If the service ID is not valid, the lastError will be set. This function is only available if the app has both the bluetooth:low_energy and the bluetooth:peripheral permissions set to true. The peripheral permission may not be available to all apps.
     * @since Chrome 52.
@@ -134,7 +94,7 @@ object ^ extends js.Object {
     * @param callback Called with the created characteristic's unique ID.
     */
   def createCharacteristic(
-    characteristic: chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Characteristic,
+    characteristic: Characteristic,
     serviceId: java.lang.String,
     callback: js.Function1[/* characteristicId */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
@@ -146,7 +106,7 @@ object ^ extends js.Object {
     * @param callback Called with the created desciptor's unique ID.
     */
   def createDescriptor(
-    descriptor: chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Descriptor,
+    descriptor: Descriptor,
     characteristicId: java.lang.String,
     callback: js.Function1[/* descriptorId */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
@@ -156,10 +116,7 @@ object ^ extends js.Object {
     * @param service The service to create.
     * @param callback Called with the created services's unique ID.
     */
-  def createService(
-    service: chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Service,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
+  def createService(service: Service, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
     * Closes the app's connection to the device with the given address. Note that this will not always destroy the physical link itself, since there may be other apps with open connections.
     * @param deviceAddress The Bluetooth address of the remote device.
@@ -174,10 +131,7 @@ object ^ extends js.Object {
     */
   def getCharacteristic(
     characteristicId: java.lang.String,
-    callback: js.Function1[
-      /* result */ chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Characteristic, 
-      scala.Unit
-    ]
+    callback: js.Function1[/* result */ Characteristic, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Get a list of all discovered GATT characteristics that belong to the given service.
@@ -186,23 +140,14 @@ object ^ extends js.Object {
     */
   def getCharacteristics(
     serviceId: java.lang.String,
-    callback: js.Function1[
-      /* result */ js.Array[chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Characteristic], 
-      scala.Unit
-    ]
+    callback: js.Function1[/* result */ js.Array[Characteristic], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Get the GATT characteristic descriptor with the given instance ID.
     * @param descriptorId The instance ID of the requested GATT characteristic descriptor.
     * @param callback Called with the requested Descriptor object.
     */
-  def getDescriptor(
-    descriptorId: java.lang.String,
-    callback: js.Function1[
-      /* result */ chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Descriptor, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def getDescriptor(descriptorId: java.lang.String, callback: js.Function1[/* result */ Descriptor, scala.Unit]): scala.Unit = js.native
   /**
     * Get a list of GATT characteristic descriptors that belong to the given characteristic.
     * @param characteristicId The instance ID of the GATT characteristic whose descriptors should be returned.
@@ -210,32 +155,20 @@ object ^ extends js.Object {
     */
   def getDescriptors(
     characteristicId: java.lang.String,
-    callback: js.Function1[
-      /* result */ js.Array[chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Descriptor], 
-      scala.Unit
-    ]
+    callback: js.Function1[/* result */ js.Array[Descriptor], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Get a list of GATT services that are included by the given service.
     * @param serviceId The instance ID of the GATT service whose included services should be returned.
     * @param callback Called with the list of GATT services included from the given service.
     */
-  def getIncludedServices(
-    serviceId: java.lang.String,
-    callback: js.Function1[
-      /* result */ js.Array[chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Service], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def getIncludedServices(serviceId: java.lang.String, callback: js.Function1[/* result */ js.Array[Service], scala.Unit]): scala.Unit = js.native
   /**
     * Get the GATT service with the given instance ID.
     * @param serviceId The instance ID of the requested GATT service.
     * @param callback Called with the requested Service object.
     */
-  def getService(
-    serviceId: java.lang.String,
-    callback: js.Function1[/* result */ chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Service, scala.Unit]
-  ): scala.Unit = js.native
+  def getService(serviceId: java.lang.String, callback: js.Function1[/* result */ Service, scala.Unit]): scala.Unit = js.native
   /**
     * Get all the GATT services that were discovered on the remote device with the given device address.
     * Note: If service discovery is not yet complete on the device, this API will return a subset (possibly empty) of services. A work around is to add a time based delay and/or call repeatedly until the expected number of services is returned.
@@ -244,10 +177,7 @@ object ^ extends js.Object {
     */
   def getServices(
     deviceAddress: java.lang.String,
-    callback: js.Function1[
-      /* result */ js.Array[chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Service], 
-      scala.Unit
-    ]
+    callback: js.Function1[/* result */ js.Array[Service], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Notify a remote device of a new value for a characteristic.
@@ -262,7 +192,7 @@ object ^ extends js.Object {
     */
   def notifyCharacteristicValueChanged(
     characteristicId: java.lang.String,
-    notification: chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.INotification,
+    notification: INotification,
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -272,23 +202,14 @@ object ^ extends js.Object {
     */
   def readCharacteristicValue(
     characteristicId: java.lang.String,
-    callback: js.Function1[
-      /* result */ chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Characteristic, 
-      scala.Unit
-    ]
+    callback: js.Function1[/* result */ Characteristic, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Retrieve the value of a specified characteristic descriptor from a remote peripheral.
     * @param descriptorId The instance ID of the GATT characteristic descriptor whose value should be read from the remote device.
     * @param callback Called with the Descriptor object whose value was requested. The value field of the returned Descriptor object contains the result of the read request.
     */
-  def readDescriptorValue(
-    descriptorId: java.lang.String,
-    callback: js.Function1[
-      /* result */ chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Descriptor, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def readDescriptorValue(descriptorId: java.lang.String, callback: js.Function1[/* result */ Descriptor, scala.Unit]): scala.Unit = js.native
   /**
     * Create an advertisement and register it for advertising.
     * To call this function, the app must have
@@ -308,7 +229,7 @@ object ^ extends js.Object {
     * @param callback Called once the registeration is done and we've started advertising. Returns the id of the created advertisement.
     */
   def registerAdvertisement(
-    advertisement: chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.Advertisement,
+    advertisement: Advertisement,
     callback: js.Function1[/* advertisementId */ chromeDashAppsLib.chromeNs.integer, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -345,7 +266,7 @@ object ^ extends js.Object {
     * @since Chrome 52.
     * @param response The response to the request.
     */
-  def sendRequestResponse(response: chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.IResponse): scala.Unit = js.native
+  def sendRequestResponse(response: IResponse): scala.Unit = js.native
   /**
     * Set's the interval betweeen two consecutive advertisements.
     * Note: This is a best effort.
@@ -376,11 +297,7 @@ object ^ extends js.Object {
     * @param properties Notification session properties (optional).
     * @param callback Called when the request has completed.
     */
-  def startCharacteristicNotifications(
-    characteristicId: java.lang.String,
-    properties: chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.IProperties,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
+  def startCharacteristicNotifications(characteristicId: java.lang.String, properties: IProperties, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
     * Disable value notifications/indications from the specified characteristic. After a successful call, the application will stop receiving notifications/indications from this characteristic.
     * @param characteristicId The instance ID of the GATT characteristic on which this app's notification session should be stopped.

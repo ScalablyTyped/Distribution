@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var less: lessLib.LessStatic = js.native
+  var less: LessStatic = js.native
 }
 

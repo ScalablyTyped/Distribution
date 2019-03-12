@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/typography", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: antdLib.libTypographyMod.TypographyProps = js.native
+  val default: TypographyProps = js.native
 }
 

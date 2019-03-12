@@ -22,29 +22,14 @@ trait GroupsResource extends js.Object {
 object GroupsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotMonitoringLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Group]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotMonitoringLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotMonitoringLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Group]
-    ],
-    list: js.Function1[
-      gapiDotClientDotMonitoringLib.Anon_AccesstokenAltAncestorsOfGroup, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListGroupsResponse]
-    ],
+    create: gapiDotClientDotMonitoringLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[Group],
+    delete: gapiDotClientDotMonitoringLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotMonitoringLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Group],
+    list: gapiDotClientDotMonitoringLib.Anon_AccesstokenAltAncestorsOfGroup => gapiDotClientLib.gapiNs.clientNs.Request[ListGroupsResponse],
     members: MembersResource,
-    update: js.Function1[
-      gapiDotClientDotMonitoringLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Group]
-    ]
+    update: gapiDotClientDotMonitoringLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[Group]
   ): GroupsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, members = members, update = update)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), members = members, update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[GroupsResource]
   }

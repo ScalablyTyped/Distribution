@@ -14,10 +14,10 @@ trait NodeCompatibleEventEmitter
 object NodeCompatibleEventEmitter {
   @scala.inline
   def apply(
-    addListener: js.Function2[java.lang.String, NodeEventHandler, scala.Unit | js.Object],
-    removeListener: js.Function2[java.lang.String, NodeEventHandler, scala.Unit | js.Object]
+    addListener: (java.lang.String, NodeEventHandler) => scala.Unit | js.Object,
+    removeListener: (java.lang.String, NodeEventHandler) => scala.Unit | js.Object
   ): NodeCompatibleEventEmitter = {
-    val __obj = js.Dynamic.literal(addListener = addListener, removeListener = removeListener)
+    val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), removeListener = js.Any.fromFunction2(removeListener))
   
     __obj.asInstanceOf[NodeCompatibleEventEmitter]
   }

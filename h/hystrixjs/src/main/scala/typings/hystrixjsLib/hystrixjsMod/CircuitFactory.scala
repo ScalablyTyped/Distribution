@@ -14,11 +14,11 @@ trait CircuitFactory extends js.Object {
 object CircuitFactory {
   @scala.inline
   def apply(
-    getCache: js.Function0[js.Array[CircuitBreaker]],
-    getOrCreate: js.Function1[CirctuiBreakerConfig, CircuitBreaker],
-    resetCache: js.Function0[scala.Unit]
+    getCache: () => js.Array[CircuitBreaker],
+    getOrCreate: CirctuiBreakerConfig => CircuitBreaker,
+    resetCache: () => scala.Unit
   ): CircuitFactory = {
-    val __obj = js.Dynamic.literal(getCache = getCache, getOrCreate = getOrCreate, resetCache = resetCache)
+    val __obj = js.Dynamic.literal(getCache = js.Any.fromFunction0(getCache), getOrCreate = js.Any.fromFunction1(getOrCreate), resetCache = js.Any.fromFunction0(resetCache))
   
     __obj.asInstanceOf[CircuitFactory]
   }

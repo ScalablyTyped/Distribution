@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_EventHTMLDivElement extends js.Object {
   var event: reactLib.reactMod.ReactNs.SyntheticEvent[
-    reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+    reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
     reactLib.Event
   ]
 }
@@ -16,7 +16,7 @@ object Anon_EventHTMLDivElement {
   @scala.inline
   def apply(
     event: reactLib.reactMod.ReactNs.SyntheticEvent[
-      reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       reactLib.Event
     ]
   ): Anon_EventHTMLDivElement = {

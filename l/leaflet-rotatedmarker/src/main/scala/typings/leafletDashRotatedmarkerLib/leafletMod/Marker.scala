@@ -18,11 +18,8 @@ trait Marker extends js.Object {
 
 object Marker {
   @scala.inline
-  def apply(
-    setRotationAngle: js.Function1[scala.Double, Marker],
-    setRotationOrigin: js.Function1[java.lang.String, Marker]
-  ): Marker = {
-    val __obj = js.Dynamic.literal(setRotationAngle = setRotationAngle, setRotationOrigin = setRotationOrigin)
+  def apply(setRotationAngle: scala.Double => Marker, setRotationOrigin: java.lang.String => Marker): Marker = {
+    val __obj = js.Dynamic.literal(setRotationAngle = js.Any.fromFunction1(setRotationAngle), setRotationOrigin = js.Any.fromFunction1(setRotationOrigin))
   
     __obj.asInstanceOf[Marker]
   }

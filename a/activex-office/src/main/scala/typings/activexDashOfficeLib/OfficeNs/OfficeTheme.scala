@@ -14,8 +14,8 @@ class OfficeTheme protected () extends js.Object {
   val Parent: js.Any = js.native
   @JSName("ThemeColorScheme")
   val ThemeColorScheme_Original: ThemeColorScheme = js.native
-  val ThemeEffectScheme: ThemeEffectScheme = js.native
-  val ThemeFontScheme: ThemeFontScheme = js.native
+  val ThemeEffectScheme: activexDashOfficeLib.OfficeNs.ThemeEffectScheme = js.native
+  val ThemeFontScheme: activexDashOfficeLib.OfficeNs.ThemeFontScheme = js.native
   def ThemeColorScheme(Index: MsoThemeColorSchemeIndex): ThemeColor = js.native
 }
 

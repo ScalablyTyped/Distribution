@@ -33,10 +33,7 @@ object Anon_ActiveClassName {
     divider: js.UndefOr[scala.Boolean] = js.undefined,
     header: js.UndefOr[scala.Boolean] = js.undefined,
     href: java.lang.String = null,
-    onClick: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
+    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent] => scala.Unit = null,
     tag: reactLib.reactMod.ReactNs.ReactType[_] = null,
     toggle: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ActiveClassName = {
@@ -48,7 +45,7 @@ object Anon_ActiveClassName {
     if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider)
     if (!js.isUndefined(header)) __obj.updateDynamic("header")(header)
     if (href != null) __obj.updateDynamic("href")(href)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     if (!js.isUndefined(toggle)) __obj.updateDynamic("toggle")(toggle)
     __obj.asInstanceOf[Anon_ActiveClassName]

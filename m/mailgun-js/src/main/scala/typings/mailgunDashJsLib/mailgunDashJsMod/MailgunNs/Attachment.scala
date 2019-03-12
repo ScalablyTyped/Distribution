@@ -17,12 +17,12 @@ object Attachment {
   @scala.inline
   def apply(
     data: java.lang.String | nodeLib.Buffer | nodeLib.NodeJSNs.ReadWriteStream,
-    getType: js.Function0[java.lang.String],
+    getType: () => java.lang.String,
     contentType: java.lang.String = null,
     filename: java.lang.String = null,
     knownLength: scala.Int | scala.Double = null
   ): Attachment = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], getType = getType)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], getType = js.Any.fromFunction0(getType))
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (knownLength != null) __obj.updateDynamic("knownLength")(knownLength.asInstanceOf[js.Any])

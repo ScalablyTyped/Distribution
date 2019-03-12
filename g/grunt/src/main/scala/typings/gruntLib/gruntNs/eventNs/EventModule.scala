@@ -70,21 +70,21 @@ trait EventModule extends js.Object {
 object EventModule {
   @scala.inline
   def apply(
-    addListener: js.Function2[java.lang.String, js.Function, EventModule],
-    emit: js.Function2[java.lang.String, /* repeated */ js.Any, js.Any],
-    listeners: js.Function1[java.lang.String, js.Array[js.Function]],
-    listenersAny: js.Function0[js.Array[js.Function]],
-    many: js.Function3[java.lang.String, scala.Double, js.Function, EventModule],
-    off: js.Function2[java.lang.String, js.Function, EventModule],
-    offAny: js.Function1[js.Function, EventModule],
-    on: js.Function2[java.lang.String, js.Function, EventModule],
-    onAny: js.Function1[js.Function, EventModule],
-    once: js.Function2[java.lang.String, js.Function, EventModule],
-    removeAllListeners: js.Function1[java.lang.String, EventModule],
-    removeListener: js.Function2[java.lang.String, js.Function, EventModule],
-    setMaxListener: js.Function1[scala.Double, scala.Unit]
+    addListener: (java.lang.String, js.Function) => EventModule,
+    emit: (java.lang.String, /* repeated */ js.Any) => js.Any,
+    listeners: java.lang.String => js.Array[js.Function],
+    listenersAny: () => js.Array[js.Function],
+    many: (java.lang.String, scala.Double, js.Function) => EventModule,
+    off: (java.lang.String, js.Function) => EventModule,
+    offAny: js.Function => EventModule,
+    on: (java.lang.String, js.Function) => EventModule,
+    onAny: js.Function => EventModule,
+    once: (java.lang.String, js.Function) => EventModule,
+    removeAllListeners: java.lang.String => EventModule,
+    removeListener: (java.lang.String, js.Function) => EventModule,
+    setMaxListener: scala.Double => scala.Unit
   ): EventModule = {
-    val __obj = js.Dynamic.literal(addListener = addListener, emit = emit, listeners = listeners, listenersAny = listenersAny, many = many, off = off, offAny = offAny, on = on, onAny = onAny, once = once, removeAllListeners = removeAllListeners, removeListener = removeListener, setMaxListener = setMaxListener)
+    val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), emit = js.Any.fromFunction2(emit), listeners = js.Any.fromFunction1(listeners), listenersAny = js.Any.fromFunction0(listenersAny), many = js.Any.fromFunction3(many), off = js.Any.fromFunction2(off), offAny = js.Any.fromFunction1(offAny), on = js.Any.fromFunction2(on), onAny = js.Any.fromFunction1(onAny), once = js.Any.fromFunction2(once), removeAllListeners = js.Any.fromFunction1(removeAllListeners), removeListener = js.Any.fromFunction2(removeListener), setMaxListener = js.Any.fromFunction1(setMaxListener))
   
     __obj.asInstanceOf[EventModule]
   }

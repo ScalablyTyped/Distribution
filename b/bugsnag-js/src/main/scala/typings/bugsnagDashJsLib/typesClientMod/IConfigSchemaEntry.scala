@@ -13,12 +13,8 @@ trait IConfigSchemaEntry extends js.Object {
 
 object IConfigSchemaEntry {
   @scala.inline
-  def apply(
-    defaultValue: js.Function0[js.Any],
-    message: java.lang.String,
-    validate: js.Function1[js.Any, scala.Boolean]
-  ): IConfigSchemaEntry = {
-    val __obj = js.Dynamic.literal(defaultValue = defaultValue, message = message, validate = validate)
+  def apply(defaultValue: () => js.Any, message: java.lang.String, validate: js.Any => scala.Boolean): IConfigSchemaEntry = {
+    val __obj = js.Dynamic.literal(defaultValue = js.Any.fromFunction0(defaultValue), message = message, validate = js.Any.fromFunction1(validate))
   
     __obj.asInstanceOf[IConfigSchemaEntry]
   }

@@ -17,22 +17,22 @@ trait IShellUIEvents extends IEvents {
 object IShellUIEvents {
   @scala.inline
   def apply(
-    Register: js.Function2[mfilesLib.MFilesNs.Event, js.Function, scala.Double],
-    Unregister: js.Function1[scala.Double, scala.Unit],
-    OnNewCommonDialogShellFrame: js.Function1[/* shellFrame */ IShellFrame, scala.Unit | IShellFrameEvents] = null,
-    OnNewEmbeddedShellFrame: js.Function1[/* shellFrame */ IShellFrame, scala.Unit | IShellFrameEvents] = null,
-    OnNewNormalShellFrame: js.Function1[/* shellFrame */ IShellFrame, scala.Unit | IShellFrameEvents] = null,
-    OnNewShellFrame: js.Function1[/* shellFrame */ IShellFrame, scala.Unit | IShellFrameEvents] = null,
-    OnStarted: js.Function0[scala.Unit] = null,
-    OnStop: js.Function0[scala.Unit] = null
+    Register: (mfilesLib.MFilesNs.Event, js.Function) => scala.Double,
+    Unregister: scala.Double => scala.Unit,
+    OnNewCommonDialogShellFrame: /* shellFrame */ IShellFrame => scala.Unit | IShellFrameEvents = null,
+    OnNewEmbeddedShellFrame: /* shellFrame */ IShellFrame => scala.Unit | IShellFrameEvents = null,
+    OnNewNormalShellFrame: /* shellFrame */ IShellFrame => scala.Unit | IShellFrameEvents = null,
+    OnNewShellFrame: /* shellFrame */ IShellFrame => scala.Unit | IShellFrameEvents = null,
+    OnStarted: () => scala.Unit = null,
+    OnStop: () => scala.Unit = null
   ): IShellUIEvents = {
-    val __obj = js.Dynamic.literal(Register = Register, Unregister = Unregister)
-    if (OnNewCommonDialogShellFrame != null) __obj.updateDynamic("OnNewCommonDialogShellFrame")(OnNewCommonDialogShellFrame)
-    if (OnNewEmbeddedShellFrame != null) __obj.updateDynamic("OnNewEmbeddedShellFrame")(OnNewEmbeddedShellFrame)
-    if (OnNewNormalShellFrame != null) __obj.updateDynamic("OnNewNormalShellFrame")(OnNewNormalShellFrame)
-    if (OnNewShellFrame != null) __obj.updateDynamic("OnNewShellFrame")(OnNewShellFrame)
-    if (OnStarted != null) __obj.updateDynamic("OnStarted")(OnStarted)
-    if (OnStop != null) __obj.updateDynamic("OnStop")(OnStop)
+    val __obj = js.Dynamic.literal(Register = js.Any.fromFunction2(Register), Unregister = js.Any.fromFunction1(Unregister))
+    if (OnNewCommonDialogShellFrame != null) __obj.updateDynamic("OnNewCommonDialogShellFrame")(js.Any.fromFunction1(OnNewCommonDialogShellFrame))
+    if (OnNewEmbeddedShellFrame != null) __obj.updateDynamic("OnNewEmbeddedShellFrame")(js.Any.fromFunction1(OnNewEmbeddedShellFrame))
+    if (OnNewNormalShellFrame != null) __obj.updateDynamic("OnNewNormalShellFrame")(js.Any.fromFunction1(OnNewNormalShellFrame))
+    if (OnNewShellFrame != null) __obj.updateDynamic("OnNewShellFrame")(js.Any.fromFunction1(OnNewShellFrame))
+    if (OnStarted != null) __obj.updateDynamic("OnStarted")(js.Any.fromFunction0(OnStarted))
+    if (OnStop != null) __obj.updateDynamic("OnStop")(js.Any.fromFunction0(OnStop))
     __obj.asInstanceOf[IShellUIEvents]
   }
 }

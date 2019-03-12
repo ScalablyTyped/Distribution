@@ -33,27 +33,18 @@ object ILoginAccount {
   def apply(
     AccountName: java.lang.String,
     AccountType: mfilesLib.MFilesNs.MFLoginAccountType,
-    Clone: js.Function0[ILoginAccount],
-    CloneFrom: js.Function1[ILoginAccount, scala.Unit],
+    Clone: () => ILoginAccount,
+    CloneFrom: ILoginAccount => scala.Unit,
     DomainName: java.lang.String,
     EmailAddress: java.lang.String,
     Enabled: scala.Boolean,
     FullName: java.lang.String,
     LicenseType: mfilesLib.MFilesNs.MFLicenseType,
     ServerRoles: mfilesLib.MFilesNs.MFLoginServerRole,
-    Set: js.Function7[
-      mfilesLib.MFilesNs.MFLoginAccountType, 
-      java.lang.String, 
-      java.lang.String, 
-      mfilesLib.MFilesNs.MFLoginServerRole, 
-      java.lang.String, 
-      java.lang.String, 
-      mfilesLib.MFilesNs.MFLicenseType, 
-      scala.Unit
-    ],
+    Set: (mfilesLib.MFilesNs.MFLoginAccountType, java.lang.String, java.lang.String, mfilesLib.MFilesNs.MFLoginServerRole, java.lang.String, java.lang.String, mfilesLib.MFilesNs.MFLicenseType) => scala.Unit,
     UserName: java.lang.String
   ): ILoginAccount = {
-    val __obj = js.Dynamic.literal(AccountName = AccountName, AccountType = AccountType, Clone = Clone, CloneFrom = CloneFrom, DomainName = DomainName, EmailAddress = EmailAddress, Enabled = Enabled, FullName = FullName, LicenseType = LicenseType, ServerRoles = ServerRoles, Set = Set, UserName = UserName)
+    val __obj = js.Dynamic.literal(AccountName = AccountName, AccountType = AccountType, Clone = js.Any.fromFunction0(Clone), CloneFrom = js.Any.fromFunction1(CloneFrom), DomainName = DomainName, EmailAddress = EmailAddress, Enabled = Enabled, FullName = FullName, LicenseType = LicenseType, ServerRoles = ServerRoles, Set = js.Any.fromFunction7(Set), UserName = UserName)
   
     __obj.asInstanceOf[ILoginAccount]
   }

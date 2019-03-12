@@ -29,7 +29,7 @@ trait XClipboardManager
     * Get a list of a managed clipboards.
     * @returns A sequence of the names of all available clipboards.
     */
-  def listClipboardNames(): activexDashInteropLib.SafeArray[java.lang.String]
+  def listClipboardNames(): stdLib.SafeArray[java.lang.String]
   /**
     * Removes the clipboard with the specified name from the list.
     * @param aName The name of the clipboard to remove.
@@ -40,15 +40,15 @@ trait XClipboardManager
 object XClipboardManager {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addClipboard: js.Function1[XClipboard, scala.Unit],
-    getClipboard: js.Function1[java.lang.String, XClipboard],
-    listClipboardNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeClipboard: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    addClipboard: XClipboard => scala.Unit,
+    getClipboard: java.lang.String => XClipboard,
+    listClipboardNames: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeClipboard: java.lang.String => scala.Unit
   ): XClipboardManager = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addClipboard = addClipboard, getClipboard = getClipboard, listClipboardNames = listClipboardNames, queryInterface = queryInterface, release = release, removeClipboard = removeClipboard)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addClipboard = js.Any.fromFunction1(addClipboard), getClipboard = js.Any.fromFunction1(getClipboard), listClipboardNames = js.Any.fromFunction0(listClipboardNames), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeClipboard = js.Any.fromFunction1(removeClipboard))
   
     __obj.asInstanceOf[XClipboardManager]
   }

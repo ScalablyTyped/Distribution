@@ -21,7 +21,7 @@ object ButtonGroupOptions {
     index: scala.Int | scala.Double = null,
     items: js.Array[ButtonGroupItem] = null,
     name: java.lang.String = null,
-    select: js.Function1[/* e */ ButtonGroupSelectEvent, scala.Unit] = null,
+    select: /* e */ ButtonGroupSelectEvent => scala.Unit = null,
     selection: java.lang.String = null
   ): ButtonGroupOptions = {
     val __obj = js.Dynamic.literal()
@@ -29,7 +29,7 @@ object ButtonGroupOptions {
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (selection != null) __obj.updateDynamic("selection")(selection)
     __obj.asInstanceOf[ButtonGroupOptions]
   }

@@ -22,12 +22,12 @@ trait DeferredActionQueues
 object DeferredActionQueues {
   @scala.inline
   def apply(
-    flush: js.Function1[scala.Boolean, js.Any],
+    flush: scala.Boolean => js.Any,
     queues: js.Object,
-    schedule: js.Function6[java.lang.String, js.Any, js.Any, js.Any, scala.Boolean, js.Any, js.Any],
+    schedule: (java.lang.String, js.Any, js.Any, js.Any, scala.Boolean, js.Any) => js.Any,
     StringDictionary: /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): DeferredActionQueues = {
-    val __obj = js.Dynamic.literal(flush = flush, queues = queues, schedule = schedule)
+    val __obj = js.Dynamic.literal(flush = js.Any.fromFunction1(flush), queues = queues, schedule = js.Any.fromFunction6(schedule))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[DeferredActionQueues]
   }

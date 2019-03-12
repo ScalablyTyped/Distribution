@@ -12,7 +12,7 @@ trait AntTreeNodeExpandedEvent extends AntTreeNodeBaseEvent {
 object AntTreeNodeExpandedEvent {
   @scala.inline
   def apply(
-    nativeEvent: reactLib.MouseEvent,
+    nativeEvent: stdLib.MouseEvent,
     node: AntTreeNode,
     expanded: js.UndefOr[scala.Boolean] = js.undefined
   ): AntTreeNodeExpandedEvent = {

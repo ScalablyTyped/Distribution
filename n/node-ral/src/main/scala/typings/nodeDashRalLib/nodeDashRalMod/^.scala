@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Config: nodeDashRalLib.nodeDashRalMod.Config = js.native
-  val Logger: nodeDashRalLib.nodeDashRalMod.LoggerFactory = js.native
+  val Logger: LoggerFactory = js.native
   def Middleware(): js.Function3[
     /* req */ expressLib.expressMod.eNs.Request, 
     /* resp */ expressLib.expressMod.eNs.Response, 
     /* next */ expressLib.expressMod.eNs.NextFunction, 
     scala.Unit
   ] = js.native
-  def Middleware(options: nodeDashRalLib.nodeDashRalMod.Service): js.Function3[
+  def Middleware(options: Service): js.Function3[
     /* req */ expressLib.expressMod.eNs.Request, 
     /* resp */ expressLib.expressMod.eNs.Response, 
     /* next */ expressLib.expressMod.eNs.NextFunction, 

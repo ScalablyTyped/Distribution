@@ -17,6 +17,6 @@ class EventDateProfile protected ()
 @js.native
 object EventDateProfile extends js.Object {
   def isStandardProp(propName: js.Any): scala.Boolean = js.native
-  def parse(rawProps: js.Any, source: js.Any): fullcalendarLib.fullcalendarLibNumbers.`false` | fullcalendarLib.eventdateprofileMod.Default = js.native
+  def parse(rawProps: js.Any, source: js.Any): fullcalendarLib.fullcalendarLibNumbers.`false` | fullcalendarLib.eventDateProfileMod.Default = js.native
 }
 

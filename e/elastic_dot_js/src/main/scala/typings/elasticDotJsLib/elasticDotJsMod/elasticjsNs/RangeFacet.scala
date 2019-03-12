@@ -91,26 +91,26 @@ trait RangeFacet extends Facet {
 object RangeFacet {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    addRange: js.Function2[stdLib.Number, stdLib.Number, RangeFacet],
-    addUnboundedFrom: js.Function1[stdLib.Number, RangeFacet],
-    addUnboundedTo: js.Function1[stdLib.Number, RangeFacet],
-    cacheFilter: js.Function1[scala.Boolean, RangeFacet],
-    facetFilter: js.Function1[js.Object, RangeFacet],
-    field: js.Function1[java.lang.String, RangeFacet],
-    global: js.Function1[scala.Boolean, RangeFacet],
-    keyField: js.Function1[java.lang.String, RangeFacet],
-    keyScript: js.Function1[java.lang.String, RangeFacet],
-    lang: js.Function1[java.lang.String, RangeFacet],
-    mode: js.Function1[java.lang.String, RangeFacet],
-    nested: js.Function1[java.lang.String, RangeFacet],
-    params: js.Function1[js.Object, RangeFacet],
-    scope: js.Function1[java.lang.String, RangeFacet],
-    toJSON: js.Function0[js.Any],
-    valueField: js.Function1[java.lang.String, RangeFacet],
-    valueScript: js.Function1[java.lang.String, RangeFacet]
+    _type: () => java.lang.String,
+    addRange: (stdLib.Number, stdLib.Number) => RangeFacet,
+    addUnboundedFrom: stdLib.Number => RangeFacet,
+    addUnboundedTo: stdLib.Number => RangeFacet,
+    cacheFilter: scala.Boolean => RangeFacet,
+    facetFilter: js.Object => RangeFacet,
+    field: java.lang.String => RangeFacet,
+    global: scala.Boolean => RangeFacet,
+    keyField: java.lang.String => RangeFacet,
+    keyScript: java.lang.String => RangeFacet,
+    lang: java.lang.String => RangeFacet,
+    mode: java.lang.String => RangeFacet,
+    nested: java.lang.String => RangeFacet,
+    params: js.Object => RangeFacet,
+    scope: java.lang.String => RangeFacet,
+    toJSON: () => js.Any,
+    valueField: java.lang.String => RangeFacet,
+    valueScript: java.lang.String => RangeFacet
   ): RangeFacet = {
-    val __obj = js.Dynamic.literal(_type = _type, addRange = addRange, addUnboundedFrom = addUnboundedFrom, addUnboundedTo = addUnboundedTo, cacheFilter = cacheFilter, facetFilter = facetFilter, field = field, global = global, keyField = keyField, keyScript = keyScript, lang = lang, mode = mode, nested = nested, params = params, scope = scope, toJSON = toJSON, valueField = valueField, valueScript = valueScript)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), addRange = js.Any.fromFunction2(addRange), addUnboundedFrom = js.Any.fromFunction1(addUnboundedFrom), addUnboundedTo = js.Any.fromFunction1(addUnboundedTo), cacheFilter = js.Any.fromFunction1(cacheFilter), facetFilter = js.Any.fromFunction1(facetFilter), field = js.Any.fromFunction1(field), global = js.Any.fromFunction1(global), keyField = js.Any.fromFunction1(keyField), keyScript = js.Any.fromFunction1(keyScript), lang = js.Any.fromFunction1(lang), mode = js.Any.fromFunction1(mode), nested = js.Any.fromFunction1(nested), params = js.Any.fromFunction1(params), scope = js.Any.fromFunction1(scope), toJSON = js.Any.fromFunction0(toJSON), valueField = js.Any.fromFunction1(valueField), valueScript = js.Any.fromFunction1(valueScript))
   
     __obj.asInstanceOf[RangeFacet]
   }

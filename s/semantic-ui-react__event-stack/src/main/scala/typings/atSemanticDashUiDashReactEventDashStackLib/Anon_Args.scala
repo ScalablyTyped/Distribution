@@ -16,9 +16,11 @@ trait Anon_Args extends js.Object {
     (js.Function1[/* repeated */ _, _]) | (js.Array[(js.Function1[/* repeated */ _, _]) | scala.Null])
   ] = js.native
   /** A name of pool. */
-  var pool: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
+  @JSName("pool")
+  var pool_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
   /** A DOM element on which we will subscribe. */
-  var target: propDashTypesLib.propDashTypesMod.Requireable[js.Object] = js.native
+  @JSName("target")
+  var target_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Object] = js.native
   /** An event name on which we will subscribe. */
   def name(
     props: js.Object,
@@ -29,6 +31,22 @@ trait Anon_Args extends js.Object {
   ): stdLib.Error | scala.Null = js.native
   /** An event handler or array of event handlers. */
   def on(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  /** A name of pool. */
+  def pool(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  /** A DOM element on which we will subscribe. */
+  def target(
     props: js.Object,
     propName: java.lang.String,
     componentName: java.lang.String,

@@ -15,12 +15,12 @@ trait IFileInformation extends js.Object {
 object IFileInformation {
   @scala.inline
   def apply(
-    Clear: js.Function0[scala.Unit],
+    Clear: () => scala.Unit,
     EmailMessage: IEmailMessageInformation,
-    ExtractFromFile: js.Function1[java.lang.String, scala.Unit],
+    ExtractFromFile: java.lang.String => scala.Unit,
     FileType: mfilesLib.MFilesNs.MFFileInformationType
   ): IFileInformation = {
-    val __obj = js.Dynamic.literal(Clear = Clear, EmailMessage = EmailMessage, ExtractFromFile = ExtractFromFile, FileType = FileType)
+    val __obj = js.Dynamic.literal(Clear = js.Any.fromFunction0(Clear), EmailMessage = EmailMessage, ExtractFromFile = js.Any.fromFunction1(ExtractFromFile), FileType = FileType)
   
     __obj.asInstanceOf[IFileInformation]
   }

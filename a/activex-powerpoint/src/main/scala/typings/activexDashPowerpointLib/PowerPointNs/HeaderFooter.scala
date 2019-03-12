@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.HeaderFooter")
 @js.native
 class HeaderFooter protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   var Format: PpDateTimeFormat = js.native
   val Parent: js.Any = js.native
   var `PowerPoint.HeaderFooter_typekey`: HeaderFooter = js.native

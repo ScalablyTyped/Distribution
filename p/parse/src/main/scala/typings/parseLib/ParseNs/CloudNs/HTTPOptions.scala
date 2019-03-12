@@ -44,21 +44,21 @@ object HTTPOptions {
   def apply(
     url: java.lang.String,
     body: java.lang.String | nodeLib.Buffer | parseLib.ParseNs.Object = null,
-    error: js.Function1[/* response */ js.Any, scala.Unit] = null,
+    error: /* response */ js.Any => scala.Unit = null,
     followRedirects: js.UndefOr[scala.Boolean] = js.undefined,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean] = null,
     method: java.lang.String = null,
     params: js.Any = null,
-    success: js.Function1[/* response */ js.Any, scala.Unit] = null
+    success: /* response */ js.Any => scala.Unit = null
   ): HTTPOptions = {
     val __obj = js.Dynamic.literal(url = url)
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (!js.isUndefined(followRedirects)) __obj.updateDynamic("followRedirects")(followRedirects)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (method != null) __obj.updateDynamic("method")(method)
     if (params != null) __obj.updateDynamic("params")(params)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[HTTPOptions]
   }
 }

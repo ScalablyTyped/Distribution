@@ -37,14 +37,14 @@ object JobTaskDeleteLinkedRecordParams {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     jobId: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     recordId: scala.Double,
     tableName: java.lang.String,
     user: java.lang.String
   ): JobTaskDeleteLinkedRecordParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, recordId = recordId, tableName = tableName, user = user)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobId = jobId, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), recordId = recordId, tableName = tableName, user = user)
   
     __obj.asInstanceOf[JobTaskDeleteLinkedRecordParams]
   }

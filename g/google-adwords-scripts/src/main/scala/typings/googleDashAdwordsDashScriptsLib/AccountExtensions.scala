@@ -18,14 +18,14 @@ trait AccountExtensions extends js.Object {
 object AccountExtensions {
   @scala.inline
   def apply(
-    callouts: js.Function0[AdWordsSelector[Callout]],
-    message: js.Function0[AdWordsSelector[Message]],
-    mobileApps: js.Function0[AdWordsSelector[MobileApp]],
-    reviews: js.Function0[AdWordsSelector[Review]],
-    sitelinks: js.Function0[AdWordsSelector[Sitelink]],
-    snippets: js.Function0[AdWordsSelector[Snippet]]
+    callouts: () => AdWordsSelector[Callout],
+    message: () => AdWordsSelector[Message],
+    mobileApps: () => AdWordsSelector[MobileApp],
+    reviews: () => AdWordsSelector[Review],
+    sitelinks: () => AdWordsSelector[Sitelink],
+    snippets: () => AdWordsSelector[Snippet]
   ): AccountExtensions = {
-    val __obj = js.Dynamic.literal(callouts = callouts, message = message, mobileApps = mobileApps, reviews = reviews, sitelinks = sitelinks, snippets = snippets)
+    val __obj = js.Dynamic.literal(callouts = js.Any.fromFunction0(callouts), message = js.Any.fromFunction0(message), mobileApps = js.Any.fromFunction0(mobileApps), reviews = js.Any.fromFunction0(reviews), sitelinks = js.Any.fromFunction0(sitelinks), snippets = js.Any.fromFunction0(snippets))
   
     __obj.asInstanceOf[AccountExtensions]
   }

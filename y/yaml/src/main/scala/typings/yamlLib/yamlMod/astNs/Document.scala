@@ -78,13 +78,13 @@ object Document {
   def apply(
     anchors: Anchors,
     errors: js.Array[yamlLib.yamlMod.YAMLError],
-    listNonDefaultTags: js.Function0[js.Array[java.lang.String]],
-    parse: js.Function1[yamlLib.yamlMod.cstNs.Document, Document],
+    listNonDefaultTags: () => js.Array[java.lang.String],
+    parse: yamlLib.yamlMod.cstNs.Document => Document,
     schema: Schema,
-    setTagPrefix: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    setTagPrefix: (java.lang.String, java.lang.String) => scala.Unit,
     tagPrefixes: js.Array[Prefix],
-    toJSON: js.Function0[js.Any],
-    toString: js.Function0[java.lang.String],
+    toJSON: () => js.Any,
+    toString: () => java.lang.String,
     `type`: yamlLib.yamlLibStrings.DOCUMENT,
     warnings: js.Array[yamlLib.yamlMod.YAMLWarning],
     comment: java.lang.String = null,
@@ -94,7 +94,7 @@ object Document {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     version: java.lang.String = null
   ): Document = {
-    val __obj = js.Dynamic.literal(anchors = anchors, errors = errors, listNonDefaultTags = listNonDefaultTags, parse = parse, schema = schema, setTagPrefix = setTagPrefix, tagPrefixes = tagPrefixes, toJSON = toJSON, toString = toString, warnings = warnings)
+    val __obj = js.Dynamic.literal(anchors = anchors, errors = errors, listNonDefaultTags = js.Any.fromFunction0(listNonDefaultTags), parse = js.Any.fromFunction1(parse), schema = schema, setTagPrefix = js.Any.fromFunction2(setTagPrefix), tagPrefixes = tagPrefixes, toJSON = js.Any.fromFunction0(toJSON), toString = js.Any.fromFunction0(toString), warnings = warnings)
     __obj.updateDynamic("type")(`type`)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore)

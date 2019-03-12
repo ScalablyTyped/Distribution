@@ -14,11 +14,11 @@ trait FileCallback extends js.Object {
 object FileCallback {
   @scala.inline
   def apply(
-    fn: js.Function2[java.lang.String, java.lang.String, js.Any],
+    fn: (java.lang.String, java.lang.String) => js.Any,
     `match`: java.lang.String | js.Array[java.lang.String] = null,
     options: chokidarLib.chokidarMod.WatchOptions = null
   ): FileCallback = {
-    val __obj = js.Dynamic.literal(fn = fn)
+    val __obj = js.Dynamic.literal(fn = js.Any.fromFunction2(fn))
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[FileCallback]

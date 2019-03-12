@@ -88,7 +88,7 @@ trait SCServer
     ]
   ): scala.Unit = js.native
   def close(): scala.Unit = js.native
-  def close(cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]): scala.Unit = js.native
+  def close(cb: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]): scala.Unit = js.native
   def generateId(): java.lang.String = js.native
   def getPath(): java.lang.String = js.native
   def isAuthTokenExpired(token: socketclusterDashServerLib.scserverMod.SCServerNs.AuthToken): scala.Boolean = js.native
@@ -120,7 +120,7 @@ trait SCServer
   @JSName("on")
   def on_error(
     event: socketclusterDashServerLib.socketclusterDashServerLibStrings.error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_handshake(
@@ -145,7 +145,7 @@ trait SCServer
   @JSName("on")
   def on_warning(
     event: socketclusterDashServerLib.socketclusterDashServerLibStrings.warning,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("removeMiddleware")
   def removeMiddleware_authenticate(
@@ -221,7 +221,7 @@ trait SCServer
     eventName: java.lang.String,
     eventData: js.Any,
     cb: js.Function3[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* eventData */ js.Any, 
       /* ackData */ js.UndefOr[js.Any], 
       scala.Unit
@@ -232,14 +232,14 @@ trait SCServer
     eventName: java.lang.String,
     eventData: js.Any,
     options: js.Object,
-    cb: js.Function2[/* err */ nodeLib.Error | scala.Null, /* eventData */ js.Any, scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error | scala.Null, /* eventData */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def verifyOutboundEvent(
     socket: socketclusterDashServerLib.scserversocketMod.namespaced,
     eventName: java.lang.String,
     eventData: js.Any,
     options: scala.Null,
-    cb: js.Function2[/* err */ nodeLib.Error | scala.Null, /* eventData */ js.Any, scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error | scala.Null, /* eventData */ js.Any, scala.Unit]
   ): scala.Unit = js.native
 }
 

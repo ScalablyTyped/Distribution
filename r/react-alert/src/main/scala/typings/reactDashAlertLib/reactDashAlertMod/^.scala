@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-alert", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Alert: reactLib.reactMod.ReactNs.Consumer[reactDashAlertLib.reactDashAlertMod.InjectedAlertProp] = js.native
+  val Alert: reactLib.reactMod.ReactNs.Consumer[InjectedAlertProp] = js.native
   def withAlert[P /* <: reactDashAlertLib.Anon_Alert */](c: reactLib.reactMod.ReactNs.ComponentType[P]): reactLib.reactMod.ReactNs.ComponentType[
     stdLib.Pick[
       P, 

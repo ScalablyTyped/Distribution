@@ -83,7 +83,7 @@ object S3Ns extends js.Object {
     /**
       * If present, it indicates that data related to access patterns will be collected and made available to analyze the tradeoffs between different storage classes.
       */
-    var StorageClassAnalysis: StorageClassAnalysis
+    var StorageClassAnalysis: awsDashSdkLib.clientsS3Mod.S3Ns.StorageClassAnalysis
   }
   
   trait AnalyticsExportDestination extends js.Object {
@@ -153,7 +153,7 @@ object S3Ns extends js.Object {
     /**
       * 
       */
-    var CORSRules: CORSRules
+    var CORSRules: awsDashSdkLib.clientsS3Mod.S3Ns.CORSRules
   }
   
   trait CORSRule extends js.Object {
@@ -164,11 +164,11 @@ object S3Ns extends js.Object {
     /**
       * Identifies HTTP methods that the domain/origin specified in the rule is allowed to execute.
       */
-    var AllowedMethods: AllowedMethods
+    var AllowedMethods: awsDashSdkLib.clientsS3Mod.S3Ns.AllowedMethods
     /**
       * One or more origins you want customers to be able to access the bucket from.
       */
-    var AllowedOrigins: AllowedOrigins
+    var AllowedOrigins: awsDashSdkLib.clientsS3Mod.S3Ns.AllowedOrigins
     /**
       * One or more headers in the response that you want customers to be able to access from their applications (for example, from a JavaScript XMLHttpRequest object).
       */
@@ -419,7 +419,7 @@ object S3Ns extends js.Object {
     /**
       * The name of the source bucket and key name of the source object, separated by a slash (/). Must be URL-encoded.
       */
-    var CopySource: CopySource
+    var CopySource: awsDashSdkLib.clientsS3Mod.S3Ns.CopySource
     /**
       * Copies the object if its entity tag (ETag) matches the specified tag.
       */
@@ -977,7 +977,7 @@ object S3Ns extends js.Object {
     /**
       * 
       */
-    var Delete: Delete
+    var Delete: awsDashSdkLib.clientsS3Mod.S3Ns.Delete
     /**
       * The concatenation of the authentication device's serial number, a space, and the value that is displayed on your authentication device.
       */
@@ -1323,7 +1323,7 @@ object S3Ns extends js.Object {
     /**
       * 
       */
-    var TagSet: TagSet
+    var TagSet: awsDashSdkLib.clientsS3Mod.S3Ns.TagSet
   }
   
   trait GetBucketTaggingRequest extends js.Object {
@@ -1669,7 +1669,7 @@ object S3Ns extends js.Object {
     /**
       * 
       */
-    var TagSet: TagSet
+    var TagSet: awsDashSdkLib.clientsS3Mod.S3Ns.TagSet
     /**
       * 
       */
@@ -1729,7 +1729,7 @@ object S3Ns extends js.Object {
     /**
       * Glacier retrieval tier at which the restore will be processed.
       */
-    var Tier: Tier
+    var Tier: awsDashSdkLib.clientsS3Mod.S3Ns.Tier
   }
   
   trait Grant extends js.Object {
@@ -1759,7 +1759,7 @@ object S3Ns extends js.Object {
     /**
       * Type of grantee
       */
-    var Type: Type
+    var Type: awsDashSdkLib.clientsS3Mod.S3Ns.Type
     /**
       * URI of the grantee group.
       */
@@ -1941,7 +1941,7 @@ object S3Ns extends js.Object {
     /**
       * A suffix that is appended to a request that is for a directory on the website endpoint (e.g. if the suffix is index.html and you make a request to samplebucket/images/ the data that is returned will be for the object with the key name images/index.html) The suffix must not be empty and must not include a slash character.
       */
-    var Suffix: Suffix
+    var Suffix: awsDashSdkLib.clientsS3Mod.S3Ns.Suffix
   }
   
   trait Initiator extends js.Object {
@@ -1994,7 +1994,7 @@ object S3Ns extends js.Object {
     /**
       * Specifies whether the inventory is enabled or disabled.
       */
-    var IsEnabled: IsEnabled
+    var IsEnabled: awsDashSdkLib.clientsS3Mod.S3Ns.IsEnabled
     /**
       * Contains the optional fields that are included in the inventory results.
       */
@@ -2027,7 +2027,7 @@ object S3Ns extends js.Object {
     /**
       * The prefix that an object must have to be included in the inventory results.
       */
-    var Prefix: Prefix
+    var Prefix: awsDashSdkLib.clientsS3Mod.S3Ns.Prefix
   }
   
   trait InventoryS3BucketDestination extends js.Object {
@@ -2084,14 +2084,14 @@ object S3Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the Lambda cloud function that Amazon S3 can invoke when it detects events of the specified type.
       */
-    var LambdaFunctionArn: LambdaFunctionArn
+    var LambdaFunctionArn: awsDashSdkLib.clientsS3Mod.S3Ns.LambdaFunctionArn
   }
   
   trait LifecycleConfiguration extends js.Object {
     /**
       * 
       */
-    var Rules: Rules
+    var Rules: awsDashSdkLib.clientsS3Mod.S3Ns.Rules
   }
   
   trait LifecycleExpiration extends js.Object {
@@ -2670,7 +2670,7 @@ object S3Ns extends js.Object {
     /**
       * Specifies the bucket where you want Amazon S3 to store server access logs. You can have your logs delivered to any bucket that you own, including the same bucket that is being logged. You can also configure multiple buckets to deliver their logs to the same target bucket. In this case you should choose a different TargetPrefix for each source bucket so that the delivered log files can be distinguished by key.
       */
-    var TargetBucket: TargetBucket
+    var TargetBucket: awsDashSdkLib.clientsS3Mod.S3Ns.TargetBucket
     /**
       * 
       */
@@ -2678,7 +2678,7 @@ object S3Ns extends js.Object {
     /**
       * This element lets you specify a prefix for the keys that the log files will be stored under.
       */
-    var TargetPrefix: TargetPrefix
+    var TargetPrefix: awsDashSdkLib.clientsS3Mod.S3Ns.TargetPrefix
   }
   
   @js.native
@@ -3075,7 +3075,7 @@ object S3Ns extends js.Object {
     /**
       * Specifies the Accelerate Configuration you want to set for the bucket.
       */
-    var AccelerateConfiguration: AccelerateConfiguration
+    var AccelerateConfiguration: awsDashSdkLib.clientsS3Mod.S3Ns.AccelerateConfiguration
     /**
       * Name of the bucket for which the accelerate configuration is set.
       */
@@ -3125,7 +3125,7 @@ object S3Ns extends js.Object {
     /**
       * The configuration and any analyses for the analytics filter.
       */
-    var AnalyticsConfiguration: AnalyticsConfiguration
+    var AnalyticsConfiguration: awsDashSdkLib.clientsS3Mod.S3Ns.AnalyticsConfiguration
     /**
       * The name of the bucket to which an analytics configuration is stored.
       */
@@ -3144,7 +3144,7 @@ object S3Ns extends js.Object {
     /**
       * 
       */
-    var CORSConfiguration: CORSConfiguration
+    var CORSConfiguration: awsDashSdkLib.clientsS3Mod.S3Ns.CORSConfiguration
     /**
       * 
       */
@@ -3160,7 +3160,7 @@ object S3Ns extends js.Object {
       * The base64-encoded 128-bit MD5 digest of the server-side encryption configuration. This parameter is auto-populated when using the command from the CLI
       */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
-    var ServerSideEncryptionConfiguration: ServerSideEncryptionConfiguration
+    var ServerSideEncryptionConfiguration: awsDashSdkLib.clientsS3Mod.S3Ns.ServerSideEncryptionConfiguration
   }
   
   trait PutBucketInventoryConfigurationRequest extends js.Object {
@@ -3175,7 +3175,7 @@ object S3Ns extends js.Object {
     /**
       * Specifies the inventory configuration.
       */
-    var InventoryConfiguration: InventoryConfiguration
+    var InventoryConfiguration: awsDashSdkLib.clientsS3Mod.S3Ns.InventoryConfiguration
   }
   
   trait PutBucketLifecycleConfigurationRequest extends js.Object {
@@ -3212,7 +3212,7 @@ object S3Ns extends js.Object {
     /**
       * 
       */
-    var BucketLoggingStatus: BucketLoggingStatus
+    var BucketLoggingStatus: awsDashSdkLib.clientsS3Mod.S3Ns.BucketLoggingStatus
     /**
       * 
       */
@@ -3231,7 +3231,7 @@ object S3Ns extends js.Object {
     /**
       * Specifies the metrics configuration.
       */
-    var MetricsConfiguration: MetricsConfiguration
+    var MetricsConfiguration: awsDashSdkLib.clientsS3Mod.S3Ns.MetricsConfiguration
   }
   
   trait PutBucketNotificationConfigurationRequest extends js.Object {
@@ -3239,7 +3239,7 @@ object S3Ns extends js.Object {
       * 
       */
     var Bucket: BucketName
-    var NotificationConfiguration: NotificationConfiguration
+    var NotificationConfiguration: awsDashSdkLib.clientsS3Mod.S3Ns.NotificationConfiguration
   }
   
   trait PutBucketNotificationRequest extends js.Object {
@@ -3273,7 +3273,7 @@ object S3Ns extends js.Object {
     /**
       * The bucket policy as a JSON document.
       */
-    var Policy: Policy
+    var Policy: awsDashSdkLib.clientsS3Mod.S3Ns.Policy
   }
   
   trait PutBucketReplicationRequest extends js.Object {
@@ -3285,7 +3285,7 @@ object S3Ns extends js.Object {
       * 
       */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
-    var ReplicationConfiguration: ReplicationConfiguration
+    var ReplicationConfiguration: awsDashSdkLib.clientsS3Mod.S3Ns.ReplicationConfiguration
   }
   
   trait PutBucketRequestPaymentRequest extends js.Object {
@@ -3300,7 +3300,7 @@ object S3Ns extends js.Object {
     /**
       * 
       */
-    var RequestPaymentConfiguration: RequestPaymentConfiguration
+    var RequestPaymentConfiguration: awsDashSdkLib.clientsS3Mod.S3Ns.RequestPaymentConfiguration
   }
   
   trait PutBucketTaggingRequest extends js.Object {
@@ -3315,7 +3315,7 @@ object S3Ns extends js.Object {
     /**
       * 
       */
-    var Tagging: Tagging
+    var Tagging: awsDashSdkLib.clientsS3Mod.S3Ns.Tagging
   }
   
   trait PutBucketVersioningRequest extends js.Object {
@@ -3334,7 +3334,7 @@ object S3Ns extends js.Object {
     /**
       * 
       */
-    var VersioningConfiguration: VersioningConfiguration
+    var VersioningConfiguration: awsDashSdkLib.clientsS3Mod.S3Ns.VersioningConfiguration
   }
   
   trait PutBucketWebsiteRequest extends js.Object {
@@ -3349,7 +3349,7 @@ object S3Ns extends js.Object {
     /**
       * 
       */
-    var WebsiteConfiguration: WebsiteConfiguration
+    var WebsiteConfiguration: awsDashSdkLib.clientsS3Mod.S3Ns.WebsiteConfiguration
   }
   
   trait PutObjectAclOutput extends js.Object {
@@ -3659,7 +3659,7 @@ object S3Ns extends js.Object {
     /**
       * 
       */
-    var Tagging: Tagging
+    var Tagging: awsDashSdkLib.clientsS3Mod.S3Ns.Tagging
     /**
       * 
       */
@@ -3678,7 +3678,7 @@ object S3Ns extends js.Object {
     /**
       * The PublicAccessBlock configuration that you want to apply to this Amazon S3 bucket. You can enable the configuration options in any combination. For more information about when Amazon S3 considers a bucket or object public, see The Meaning of "Public" in the Amazon Simple Storage Service Developer Guide.
       */
-    var PublicAccessBlockConfiguration: PublicAccessBlockConfiguration
+    var PublicAccessBlockConfiguration: awsDashSdkLib.clientsS3Mod.S3Ns.PublicAccessBlockConfiguration
   }
   
   trait QueueConfiguration extends js.Object {
@@ -3691,7 +3691,7 @@ object S3Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the Amazon SQS queue to which Amazon S3 will publish a message when it detects events of the specified type.
       */
-    var QueueArn: QueueArn
+    var QueueArn: awsDashSdkLib.clientsS3Mod.S3Ns.QueueArn
   }
   
   trait QueueConfigurationDeprecated extends js.Object {
@@ -3741,7 +3741,7 @@ object S3Ns extends js.Object {
     /**
       * Name of the host where requests will be redirected.
       */
-    var HostName: HostName
+    var HostName: awsDashSdkLib.clientsS3Mod.S3Ns.HostName
     /**
       * Protocol to use (http, https) when redirecting requests. The default is the protocol that is used in the original request.
       */
@@ -3752,7 +3752,7 @@ object S3Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that Amazon S3 can assume when replicating the objects.
       */
-    var Role: Role
+    var Role: awsDashSdkLib.clientsS3Mod.S3Ns.Role
     /**
       * A container for one or more replication rules. A replication configuration must have at least one rule and can contain a maximum of 1,000 rules. 
       */
@@ -3764,7 +3764,7 @@ object S3Ns extends js.Object {
     /**
       * A container for information about the replication destination.
       */
-    var Destination: Destination
+    var Destination: awsDashSdkLib.clientsS3Mod.S3Ns.Destination
     var Filter: js.UndefOr[ReplicationRuleFilter] = js.undefined
     /**
       * A unique identifier for the rule. The maximum value is 255 characters.
@@ -3818,7 +3818,7 @@ object S3Ns extends js.Object {
     /**
       * Specifies who pays for the download and request fees.
       */
-    var Payer: Payer
+    var Payer: awsDashSdkLib.clientsS3Mod.S3Ns.Payer
   }
   
   trait RequestProgress extends js.Object {
@@ -3892,7 +3892,7 @@ object S3Ns extends js.Object {
     /**
       * Container for redirect information. You can redirect requests to another host, to another page, or with another protocol. In the event of an error, you can specify a different error code to return.
       */
-    var Redirect: Redirect
+    var Redirect: awsDashSdkLib.clientsS3Mod.S3Ns.Redirect
   }
   
   trait Rule extends js.Object {
@@ -3910,7 +3910,7 @@ object S3Ns extends js.Object {
     /**
       * Prefix identifying one or more objects to which the rule applies.
       */
-    var Prefix: Prefix
+    var Prefix: awsDashSdkLib.clientsS3Mod.S3Ns.Prefix
     /**
       * If 'Enabled', the rule is currently being applied. If 'Disabled', the rule is not currently being applied.
       */
@@ -3933,7 +3933,7 @@ object S3Ns extends js.Object {
     /**
       * The name of the bucket where the restore results will be placed.
       */
-    var BucketName: BucketName
+    var BucketName: awsDashSdkLib.clientsS3Mod.S3Ns.BucketName
     /**
       * The canned ACL to apply to the restore results.
       */
@@ -3981,15 +3981,15 @@ object S3Ns extends js.Object {
     /**
       * The expression that is used to query the object.
       */
-    var Expression: Expression
+    var Expression: awsDashSdkLib.clientsS3Mod.S3Ns.Expression
     /**
       * The type of the provided expression (for example., SQL).
       */
-    var ExpressionType: ExpressionType
+    var ExpressionType: awsDashSdkLib.clientsS3Mod.S3Ns.ExpressionType
     /**
       * Describes the format of the data in the object that is being queried.
       */
-    var InputSerialization: InputSerialization
+    var InputSerialization: awsDashSdkLib.clientsS3Mod.S3Ns.InputSerialization
     /**
       * The object key.
       */
@@ -3997,7 +3997,7 @@ object S3Ns extends js.Object {
     /**
       * Describes the format of the data that you want Amazon S3 to return in response.
       */
-    var OutputSerialization: OutputSerialization
+    var OutputSerialization: awsDashSdkLib.clientsS3Mod.S3Ns.OutputSerialization
     /**
       * Specifies if periodic request progress information should be enabled.
       */
@@ -4020,19 +4020,19 @@ object S3Ns extends js.Object {
     /**
       * The expression that is used to query the object.
       */
-    var Expression: Expression
+    var Expression: awsDashSdkLib.clientsS3Mod.S3Ns.Expression
     /**
       * The type of the provided expression (e.g., SQL).
       */
-    var ExpressionType: ExpressionType
+    var ExpressionType: awsDashSdkLib.clientsS3Mod.S3Ns.ExpressionType
     /**
       * Describes the serialization format of the object.
       */
-    var InputSerialization: InputSerialization
+    var InputSerialization: awsDashSdkLib.clientsS3Mod.S3Ns.InputSerialization
     /**
       * Describes how the results of the Select job are serialized.
       */
-    var OutputSerialization: OutputSerialization
+    var OutputSerialization: awsDashSdkLib.clientsS3Mod.S3Ns.OutputSerialization
   }
   
   trait ServerSideEncryptionByDefault extends js.Object {
@@ -4122,14 +4122,14 @@ object S3Ns extends js.Object {
     /**
       * Value of the tag.
       */
-    var Value: Value
+    var Value: awsDashSdkLib.clientsS3Mod.S3Ns.Value
   }
   
   trait Tagging extends js.Object {
     /**
       * 
       */
-    var TagSet: TagSet
+    var TagSet: awsDashSdkLib.clientsS3Mod.S3Ns.TagSet
   }
   
   trait TargetGrant extends js.Object {
@@ -4153,7 +4153,7 @@ object S3Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the Amazon SNS topic to which Amazon S3 will publish a message when it detects events of the specified type.
       */
-    var TopicArn: TopicArn
+    var TopicArn: awsDashSdkLib.clientsS3Mod.S3Ns.TopicArn
   }
   
   trait TopicConfigurationDeprecated extends js.Object {
@@ -6074,7 +6074,7 @@ object S3Ns extends js.Object {
     /**
       * The name of the source bucket and key name of the source object, separated by a slash (/). Must be URL-encoded.
       */
-    var CopySource: CopySource
+    var CopySource: awsDashSdkLib.clientsS3Mod.S3Ns.CopySource
     /**
       * Copies the object if its entity tag (ETag) matches the specified tag.
       */
@@ -6114,7 +6114,7 @@ object S3Ns extends js.Object {
     /**
       * Part number of part being copied. This is a positive integer between 1 and 10,000.
       */
-    var PartNumber: PartNumber
+    var PartNumber: awsDashSdkLib.clientsS3Mod.S3Ns.PartNumber
     var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
     /**
       * Specifies the algorithm to use to when encrypting the object (e.g., AES256).
@@ -6182,7 +6182,7 @@ object S3Ns extends js.Object {
     /**
       * Part number of part being uploaded. This is a positive integer between 1 and 10,000.
       */
-    var PartNumber: PartNumber
+    var PartNumber: awsDashSdkLib.clientsS3Mod.S3Ns.PartNumber
     var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
     /**
       * Specifies the algorithm to use to when encrypting the object (e.g., AES256).

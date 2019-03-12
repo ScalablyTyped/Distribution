@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("readline", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def createInterface(options: easyDashXapiDashSupertestLib.readlineMod.ReadLineOptions): easyDashXapiDashSupertestLib.readlineMod.ReadLine = js.native
+  def createInterface(options: ReadLineOptions): ReadLine = js.native
 }
 

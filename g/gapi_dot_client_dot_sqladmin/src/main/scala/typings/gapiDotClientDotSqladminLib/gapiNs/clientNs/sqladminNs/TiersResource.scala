@@ -13,12 +13,9 @@ trait TiersResource extends js.Object {
 object TiersResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TiersListResponse]
-    ]
+    list: gapiDotClientDotSqladminLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[TiersListResponse]
   ): TiersResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[TiersResource]
   }

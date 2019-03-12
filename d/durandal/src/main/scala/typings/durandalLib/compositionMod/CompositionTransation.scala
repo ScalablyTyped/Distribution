@@ -15,8 +15,8 @@ trait CompositionTransation extends js.Object {
 
 object CompositionTransation {
   @scala.inline
-  def apply(complete: js.Function1[js.Function, scala.Unit]): CompositionTransation = {
-    val __obj = js.Dynamic.literal(complete = complete)
+  def apply(complete: js.Function => scala.Unit): CompositionTransation = {
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete))
   
     __obj.asInstanceOf[CompositionTransation]
   }

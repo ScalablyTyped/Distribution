@@ -14,11 +14,9 @@ object ConflictResult {
   @scala.inline
   def apply(
     apiController: js.Any,
-    executeAsync: js.Function0[
-      js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
-    ]
+    executeAsync: () => js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
   ): ConflictResult = {
-    val __obj = js.Dynamic.literal(apiController = apiController, executeAsync = executeAsync)
+    val __obj = js.Dynamic.literal(apiController = apiController, executeAsync = js.Any.fromFunction0(executeAsync))
   
     __obj.asInstanceOf[ConflictResult]
   }

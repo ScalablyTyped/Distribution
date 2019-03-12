@@ -15,10 +15,16 @@ class TrackerStream ()
   def this(name: java.lang.String, size: scala.Double, options: nodeLib.streamMod.internalNs.TransformOptions) = this()
   /* InferMemberOverrides */
   /* InferMemberOverrides */
-  override def _destroy(error: nodeLib.Error, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
+  override def _destroy(
+    error: nodeLib.Error,
+    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+  ): scala.Unit = js.native
   /* InferMemberOverrides */
   /* InferMemberOverrides */
-  override def _destroy(error: scala.Null, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
+  override def _destroy(
+    error: scala.Null,
+    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+  ): scala.Unit = js.native
   @JSName("addListener")
   def addListener_change(
     event: areDashWeDashThereDashYetLib.areDashWeDashThereDashYetLibStrings.change,
@@ -56,7 +62,7 @@ class TrackerStream ()
   @JSName("addListener")
   def addListener_error(
     event: areDashWeDashThereDashYetLib.areDashWeDashThereDashYetLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /* InferMemberOverrides */
   /* InferMemberOverrides */
@@ -110,7 +116,7 @@ class TrackerStream ()
   @JSName("on")
   def on_error(
     event: areDashWeDashThereDashYetLib.areDashWeDashThereDashYetLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /* InferMemberOverrides */
   /* InferMemberOverrides */
@@ -148,7 +154,7 @@ class TrackerStream ()
   @JSName("once")
   def once_error(
     event: areDashWeDashThereDashYetLib.areDashWeDashThereDashYetLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /* InferMemberOverrides */
   /* InferMemberOverrides */
@@ -192,7 +198,7 @@ class TrackerStream ()
   @JSName("prependListener")
   def prependListener_error(
     event: areDashWeDashThereDashYetLib.areDashWeDashThereDashYetLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /* InferMemberOverrides */
   /* InferMemberOverrides */
@@ -230,7 +236,7 @@ class TrackerStream ()
   @JSName("prependOnceListener")
   def prependOnceListener_error(
     event: areDashWeDashThereDashYetLib.areDashWeDashThereDashYetLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /* InferMemberOverrides */
   /* InferMemberOverrides */
@@ -268,7 +274,7 @@ class TrackerStream ()
   @JSName("removeListener")
   def removeListener_error(
     event: areDashWeDashThereDashYetLib.areDashWeDashThereDashYetLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /* InferMemberOverrides */
   /* InferMemberOverrides */

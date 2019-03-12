@@ -12,11 +12,8 @@ trait AjvConfig extends js.Object {
 
 object AjvConfig {
   @scala.inline
-  def apply(
-    onCreateAjv: js.Function1[ajvLib.ajvMod.ajvNs.Ajv, scala.Unit],
-    options: ajvLib.ajvMod.ajvNs.Options = null
-  ): AjvConfig = {
-    val __obj = js.Dynamic.literal(onCreateAjv = onCreateAjv)
+  def apply(onCreateAjv: ajvLib.ajvMod.ajvNs.Ajv => scala.Unit, options: ajvLib.ajvMod.ajvNs.Options = null): AjvConfig = {
+    val __obj = js.Dynamic.literal(onCreateAjv = js.Any.fromFunction1(onCreateAjv))
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[AjvConfig]
   }

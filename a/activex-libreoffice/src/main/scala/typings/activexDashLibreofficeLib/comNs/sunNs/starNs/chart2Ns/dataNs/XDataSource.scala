@@ -19,24 +19,24 @@ trait XDataSource
     * returns data sequences.
     * @returns a sequence of objects that support at least the service {@link DataSequence} .  If the data stored consist only of floating point numbers (double
     */
-  val DataSequences: activexDashInteropLib.SafeArray[XLabeledDataSequence]
+  val DataSequences: stdLib.SafeArray[XLabeledDataSequence]
   /**
     * returns data sequences.
     * @returns a sequence of objects that support at least the service {@link DataSequence} .  If the data stored consist only of floating point numbers (double
     */
-  def getDataSequences(): activexDashInteropLib.SafeArray[XLabeledDataSequence]
+  def getDataSequences(): stdLib.SafeArray[XLabeledDataSequence]
 }
 
 object XDataSource {
   @scala.inline
   def apply(
-    DataSequences: activexDashInteropLib.SafeArray[XLabeledDataSequence],
-    acquire: js.Function0[scala.Unit],
-    getDataSequences: js.Function0[activexDashInteropLib.SafeArray[XLabeledDataSequence]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    DataSequences: stdLib.SafeArray[XLabeledDataSequence],
+    acquire: () => scala.Unit,
+    getDataSequences: () => stdLib.SafeArray[XLabeledDataSequence],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDataSource = {
-    val __obj = js.Dynamic.literal(DataSequences = DataSequences, acquire = acquire, getDataSequences = getDataSequences, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(DataSequences = DataSequences, acquire = js.Any.fromFunction0(acquire), getDataSequences = js.Any.fromFunction0(getDataSequences), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDataSource]
   }

@@ -30,7 +30,7 @@ object UglifyJsPluginOptions {
     sourceMap: js.UndefOr[scala.Boolean] = js.undefined,
     test: stdLib.RegExp | js.Array[stdLib.RegExp] = null,
     uglifyOptions: UglifyJsOptions = null,
-    warningsFilter: js.Function1[/* source */ java.lang.String, scala.Boolean] = null
+    warningsFilter: /* source */ java.lang.String => scala.Boolean = null
   ): UglifyJsPluginOptions = {
     val __obj = js.Dynamic.literal()
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
@@ -41,7 +41,7 @@ object UglifyJsPluginOptions {
     if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap)
     if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
     if (uglifyOptions != null) __obj.updateDynamic("uglifyOptions")(uglifyOptions)
-    if (warningsFilter != null) __obj.updateDynamic("warningsFilter")(warningsFilter)
+    if (warningsFilter != null) __obj.updateDynamic("warningsFilter")(js.Any.fromFunction1(warningsFilter))
     __obj.asInstanceOf[UglifyJsPluginOptions]
   }
 }

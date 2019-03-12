@@ -12,11 +12,8 @@ trait Tracing extends js.Object {
 
 object Tracing {
   @scala.inline
-  def apply(
-    start: js.Function1[TracingStartOptions, js.Promise[scala.Unit]],
-    stop: js.Function0[js.Promise[nodeLib.Buffer]]
-  ): Tracing = {
-    val __obj = js.Dynamic.literal(start = start, stop = stop)
+  def apply(start: TracingStartOptions => js.Promise[scala.Unit], stop: () => js.Promise[nodeLib.Buffer]): Tracing = {
+    val __obj = js.Dynamic.literal(start = js.Any.fromFunction1(start), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[Tracing]
   }

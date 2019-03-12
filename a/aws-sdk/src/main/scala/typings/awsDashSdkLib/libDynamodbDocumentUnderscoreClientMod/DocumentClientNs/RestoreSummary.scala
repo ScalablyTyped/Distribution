@@ -13,7 +13,7 @@ trait RestoreSummary extends js.Object {
   /**
     * Indicates if a restore is in progress or not.
     */
-  var RestoreInProgress: RestoreInProgress
+  var RestoreInProgress: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.RestoreInProgress
   /**
     * ARN of the backup from which the table was restored.
     */

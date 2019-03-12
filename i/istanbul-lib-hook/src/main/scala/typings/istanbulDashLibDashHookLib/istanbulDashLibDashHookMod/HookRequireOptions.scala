@@ -14,10 +14,10 @@ object HookRequireOptions {
   @scala.inline
   def apply(
     extensions: js.Array[java.lang.String],
-    postLoadHook: js.Function1[java.lang.String, scala.Unit],
+    postLoadHook: java.lang.String => scala.Unit,
     verbose: scala.Boolean
   ): HookRequireOptions = {
-    val __obj = js.Dynamic.literal(extensions = extensions, postLoadHook = postLoadHook, verbose = verbose)
+    val __obj = js.Dynamic.literal(extensions = extensions, postLoadHook = js.Any.fromFunction1(postLoadHook), verbose = verbose)
   
     __obj.asInstanceOf[HookRequireOptions]
   }

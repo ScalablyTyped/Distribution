@@ -11,8 +11,8 @@ trait Utils extends js.Object {
 
 object Utils {
   @scala.inline
-  def apply(invokeStmt: js.Function2[js.Any, java.lang.String, java.lang.String]): Utils = {
-    val __obj = js.Dynamic.literal(invokeStmt = invokeStmt)
+  def apply(invokeStmt: (js.Any, java.lang.String) => java.lang.String): Utils = {
+    val __obj = js.Dynamic.literal(invokeStmt = js.Any.fromFunction2(invokeStmt))
   
     __obj.asInstanceOf[Utils]
   }

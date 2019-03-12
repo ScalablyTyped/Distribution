@@ -15,16 +15,10 @@ trait VolumeAnnotationsResource extends js.Object {
 object VolumeAnnotationsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltAnnotationId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Volumeannotation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltContentVersion, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Volumeannotations]
-    ]
+    get: gapiDotClientDotBooksLib.Anon_AltAnnotationId => gapiDotClientLib.gapiNs.clientNs.Request[Volumeannotation],
+    list: gapiDotClientDotBooksLib.Anon_AltContentVersion => gapiDotClientLib.gapiNs.clientNs.Request[Volumeannotations]
   ): VolumeAnnotationsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[VolumeAnnotationsResource]
   }

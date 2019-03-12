@@ -34,10 +34,10 @@ object SunLight {
     constructor: js.Function,
     diffuse: ColorAndIntensity,
     direction: stdLib.ArrayLike[scala.Double],
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): SunLight = {
-    val __obj = js.Dynamic.literal(ambient = ambient, constructor = constructor, diffuse = diffuse, direction = direction, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(ambient = ambient, constructor = constructor, diffuse = diffuse, direction = direction, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[SunLight]
   }

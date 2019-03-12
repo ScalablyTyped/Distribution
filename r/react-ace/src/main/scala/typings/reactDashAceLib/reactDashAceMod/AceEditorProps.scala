@@ -80,18 +80,18 @@ object AceEditorProps {
     minLines: scala.Int | scala.Double = null,
     mode: java.lang.String = null,
     name: java.lang.String = null,
-    onBeforeLoad: js.Function1[/* ace */ js.Any, scala.Unit] = null,
-    onBlur: js.Function1[/* event */ js.Any, scala.Unit] = null,
-    onChange: js.Function2[/* value */ java.lang.String, /* event */ js.UndefOr[js.Any], scala.Unit] = null,
-    onCopy: js.Function1[/* value */ java.lang.String, scala.Unit] = null,
-    onCursorChange: js.Function1[/* selection */ Selection, scala.Unit] = null,
-    onFocus: js.Function1[/* event */ js.Any, scala.Unit] = null,
-    onInput: js.Function2[/* value */ java.lang.String, /* event */ js.UndefOr[js.Any], scala.Unit] = null,
-    onLoad: js.Function1[/* editor */ EditorProps, scala.Unit] = null,
-    onPaste: js.Function1[/* value */ java.lang.String, scala.Unit] = null,
-    onScroll: js.Function1[/* editor */ EditorProps, scala.Unit] = null,
-    onSelectionChange: js.Function2[/* selectedText */ java.lang.String, /* event */ js.UndefOr[js.Any], scala.Unit] = null,
-    onValidate: js.Function1[/* annotations */ js.Array[Annotation], scala.Unit] = null,
+    onBeforeLoad: /* ace */ js.Any => scala.Unit = null,
+    onBlur: /* event */ js.Any => scala.Unit = null,
+    onChange: (/* value */ java.lang.String, /* event */ js.UndefOr[js.Any]) => scala.Unit = null,
+    onCopy: /* value */ java.lang.String => scala.Unit = null,
+    onCursorChange: /* selection */ Selection => scala.Unit = null,
+    onFocus: /* event */ js.Any => scala.Unit = null,
+    onInput: (/* value */ java.lang.String, /* event */ js.UndefOr[js.Any]) => scala.Unit = null,
+    onLoad: /* editor */ EditorProps => scala.Unit = null,
+    onPaste: /* value */ java.lang.String => scala.Unit = null,
+    onScroll: /* editor */ EditorProps => scala.Unit = null,
+    onSelectionChange: (/* selectedText */ java.lang.String, /* event */ js.UndefOr[js.Any]) => scala.Unit = null,
+    onValidate: /* annotations */ js.Array[Annotation] => scala.Unit = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     scrollMargin: js.Array[scala.Double] = null,
     setOptions: AceOptions = null,
@@ -124,18 +124,18 @@ object AceEditorProps {
     if (minLines != null) __obj.updateDynamic("minLines")(minLines.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onBeforeLoad != null) __obj.updateDynamic("onBeforeLoad")(onBeforeLoad)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onCopy != null) __obj.updateDynamic("onCopy")(onCopy)
-    if (onCursorChange != null) __obj.updateDynamic("onCursorChange")(onCursorChange)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onInput != null) __obj.updateDynamic("onInput")(onInput)
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
-    if (onPaste != null) __obj.updateDynamic("onPaste")(onPaste)
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
-    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(onSelectionChange)
-    if (onValidate != null) __obj.updateDynamic("onValidate")(onValidate)
+    if (onBeforeLoad != null) __obj.updateDynamic("onBeforeLoad")(js.Any.fromFunction1(onBeforeLoad))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction1(onCopy))
+    if (onCursorChange != null) __obj.updateDynamic("onCursorChange")(js.Any.fromFunction1(onCursorChange))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction2(onInput))
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
+    if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1(onPaste))
+    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
+    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(js.Any.fromFunction2(onSelectionChange))
+    if (onValidate != null) __obj.updateDynamic("onValidate")(js.Any.fromFunction1(onValidate))
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (scrollMargin != null) __obj.updateDynamic("scrollMargin")(scrollMargin)
     if (setOptions != null) __obj.updateDynamic("setOptions")(setOptions)

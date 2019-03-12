@@ -17,15 +17,9 @@ trait OnItemClickListener extends js.Object {
 object OnItemClickListener {
   @scala.inline
   def apply(
-    onItemClick: js.Function4[
-      androiduixLib.androidNs.widgetNs.AdapterView[_], 
-      androiduixLib.androidNs.viewNs.View, 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ]
+    onItemClick: (androiduixLib.androidNs.widgetNs.AdapterView[_], androiduixLib.androidNs.viewNs.View, scala.Double, scala.Double) => scala.Unit
   ): OnItemClickListener = {
-    val __obj = js.Dynamic.literal(onItemClick = onItemClick)
+    val __obj = js.Dynamic.literal(onItemClick = js.Any.fromFunction4(onItemClick))
   
     __obj.asInstanceOf[OnItemClickListener]
   }

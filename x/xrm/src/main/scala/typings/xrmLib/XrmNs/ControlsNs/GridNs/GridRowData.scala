@@ -20,8 +20,8 @@ trait GridRowData extends js.Object {
 
 object GridRowData {
   @scala.inline
-  def apply(getEntity: js.Function0[GridEntity]): GridRowData = {
-    val __obj = js.Dynamic.literal(getEntity = getEntity)
+  def apply(getEntity: () => GridEntity): GridRowData = {
+    val __obj = js.Dynamic.literal(getEntity = js.Any.fromFunction0(getEntity))
   
     __obj.asInstanceOf[GridRowData]
   }

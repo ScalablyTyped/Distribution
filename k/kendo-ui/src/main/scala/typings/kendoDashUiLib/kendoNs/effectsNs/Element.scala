@@ -37,34 +37,34 @@ trait Element extends js.Object {
 object Element {
   @scala.inline
   def apply(
-    expand: js.Function1[java.lang.String, Expand],
-    expandHorizontal: js.Function0[Expand],
-    expandVertical: js.Function0[Expand],
-    fade: js.Function1[java.lang.String, Fade],
-    fadeIn: js.Function0[Fade],
-    fadeOut: js.Function0[Fade],
-    flip: js.Function3[java.lang.String, kendoDashUiLib.JQuery, kendoDashUiLib.JQuery, Flip],
-    flipHorizontal: js.Function2[kendoDashUiLib.JQuery, kendoDashUiLib.JQuery, Flip],
-    flipVertical: js.Function2[kendoDashUiLib.JQuery, kendoDashUiLib.JQuery, Flip],
-    pageturn: js.Function3[java.lang.String, kendoDashUiLib.JQuery, kendoDashUiLib.JQuery, PageTurn],
-    pageturnHorizontal: js.Function2[kendoDashUiLib.JQuery, kendoDashUiLib.JQuery, PageTurn],
-    pageturnVertical: js.Function2[kendoDashUiLib.JQuery, kendoDashUiLib.JQuery, PageTurn],
-    slideIn: js.Function1[java.lang.String, SlideIn],
-    slideInDown: js.Function0[SlideIn],
-    slideInLeft: js.Function0[SlideIn],
-    slideInRight: js.Function0[SlideIn],
-    slideInUp: js.Function0[SlideIn],
-    tile: js.Function2[java.lang.String, kendoDashUiLib.JQuery, Tile],
-    tileDown: js.Function1[kendoDashUiLib.JQuery, Tile],
-    tileLeft: js.Function1[kendoDashUiLib.JQuery, Tile],
-    tileRight: js.Function1[kendoDashUiLib.JQuery, Tile],
-    tileUp: js.Function1[kendoDashUiLib.JQuery, Tile],
-    transfer: js.Function1[kendoDashUiLib.JQuery, Transfer],
-    zoom: js.Function1[java.lang.String, Zoom],
-    zoomIn: js.Function0[Zoom],
-    zoomOut: js.Function0[Zoom]
+    expand: java.lang.String => Expand,
+    expandHorizontal: () => Expand,
+    expandVertical: () => Expand,
+    fade: java.lang.String => Fade,
+    fadeIn: () => Fade,
+    fadeOut: () => Fade,
+    flip: (java.lang.String, kendoDashUiLib.JQuery, kendoDashUiLib.JQuery) => Flip,
+    flipHorizontal: (kendoDashUiLib.JQuery, kendoDashUiLib.JQuery) => Flip,
+    flipVertical: (kendoDashUiLib.JQuery, kendoDashUiLib.JQuery) => Flip,
+    pageturn: (java.lang.String, kendoDashUiLib.JQuery, kendoDashUiLib.JQuery) => PageTurn,
+    pageturnHorizontal: (kendoDashUiLib.JQuery, kendoDashUiLib.JQuery) => PageTurn,
+    pageturnVertical: (kendoDashUiLib.JQuery, kendoDashUiLib.JQuery) => PageTurn,
+    slideIn: java.lang.String => SlideIn,
+    slideInDown: () => SlideIn,
+    slideInLeft: () => SlideIn,
+    slideInRight: () => SlideIn,
+    slideInUp: () => SlideIn,
+    tile: (java.lang.String, kendoDashUiLib.JQuery) => Tile,
+    tileDown: kendoDashUiLib.JQuery => Tile,
+    tileLeft: kendoDashUiLib.JQuery => Tile,
+    tileRight: kendoDashUiLib.JQuery => Tile,
+    tileUp: kendoDashUiLib.JQuery => Tile,
+    transfer: kendoDashUiLib.JQuery => Transfer,
+    zoom: java.lang.String => Zoom,
+    zoomIn: () => Zoom,
+    zoomOut: () => Zoom
   ): Element = {
-    val __obj = js.Dynamic.literal(expand = expand, expandHorizontal = expandHorizontal, expandVertical = expandVertical, fade = fade, fadeIn = fadeIn, fadeOut = fadeOut, flip = flip, flipHorizontal = flipHorizontal, flipVertical = flipVertical, pageturn = pageturn, pageturnHorizontal = pageturnHorizontal, pageturnVertical = pageturnVertical, slideIn = slideIn, slideInDown = slideInDown, slideInLeft = slideInLeft, slideInRight = slideInRight, slideInUp = slideInUp, tile = tile, tileDown = tileDown, tileLeft = tileLeft, tileRight = tileRight, tileUp = tileUp, transfer = transfer, zoom = zoom, zoomIn = zoomIn, zoomOut = zoomOut)
+    val __obj = js.Dynamic.literal(expand = js.Any.fromFunction1(expand), expandHorizontal = js.Any.fromFunction0(expandHorizontal), expandVertical = js.Any.fromFunction0(expandVertical), fade = js.Any.fromFunction1(fade), fadeIn = js.Any.fromFunction0(fadeIn), fadeOut = js.Any.fromFunction0(fadeOut), flip = js.Any.fromFunction3(flip), flipHorizontal = js.Any.fromFunction2(flipHorizontal), flipVertical = js.Any.fromFunction2(flipVertical), pageturn = js.Any.fromFunction3(pageturn), pageturnHorizontal = js.Any.fromFunction2(pageturnHorizontal), pageturnVertical = js.Any.fromFunction2(pageturnVertical), slideIn = js.Any.fromFunction1(slideIn), slideInDown = js.Any.fromFunction0(slideInDown), slideInLeft = js.Any.fromFunction0(slideInLeft), slideInRight = js.Any.fromFunction0(slideInRight), slideInUp = js.Any.fromFunction0(slideInUp), tile = js.Any.fromFunction2(tile), tileDown = js.Any.fromFunction1(tileDown), tileLeft = js.Any.fromFunction1(tileLeft), tileRight = js.Any.fromFunction1(tileRight), tileUp = js.Any.fromFunction1(tileUp), transfer = js.Any.fromFunction1(transfer), zoom = js.Any.fromFunction1(zoom), zoomIn = js.Any.fromFunction0(zoomIn), zoomOut = js.Any.fromFunction0(zoomOut))
   
     __obj.asInstanceOf[Element]
   }

@@ -25,11 +25,11 @@ object LocalBaseBlock {
   def apply(
     blockLength: scala.Double,
     error: java.lang.String,
-    toJSON: js.Function0[JsonLocalBaseBlock],
+    toJSON: () => JsonLocalBaseBlock,
     valueBeforeDecode: stdLib.ArrayBuffer,
     warnings: js.Array[java.lang.String]
   ): LocalBaseBlock = {
-    val __obj = js.Dynamic.literal(blockLength = blockLength, error = error, toJSON = toJSON, valueBeforeDecode = valueBeforeDecode, warnings = warnings)
+    val __obj = js.Dynamic.literal(blockLength = blockLength, error = error, toJSON = js.Any.fromFunction0(toJSON), valueBeforeDecode = valueBeforeDecode, warnings = warnings)
   
     __obj.asInstanceOf[LocalBaseBlock]
   }

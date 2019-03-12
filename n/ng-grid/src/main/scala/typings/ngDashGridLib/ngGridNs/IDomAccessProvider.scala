@@ -16,13 +16,13 @@ trait IDomAccessProvider extends js.Object {
 object IDomAccessProvider {
   @scala.inline
   def apply(
-    changeUserSelect: js.Function2[angularLib.angularMod.angularNs.IAugmentedJQuery, java.lang.String, scala.Unit],
-    focusCellElement: js.Function2[IGridScope, scala.Double, scala.Unit],
+    changeUserSelect: (angularLib.angularMod.angularNs.IAugmentedJQuery, java.lang.String) => scala.Unit,
+    focusCellElement: (IGridScope, scala.Double) => scala.Unit,
     grid: IGridInstance,
     previousColumn: IColumn,
-    selectionHandlers: js.Function2[IGridScope, angularLib.angularMod.angularNs.IAugmentedJQuery, scala.Unit]
+    selectionHandlers: (IGridScope, angularLib.angularMod.angularNs.IAugmentedJQuery) => scala.Unit
   ): IDomAccessProvider = {
-    val __obj = js.Dynamic.literal(changeUserSelect = changeUserSelect, focusCellElement = focusCellElement, grid = grid, previousColumn = previousColumn, selectionHandlers = selectionHandlers)
+    val __obj = js.Dynamic.literal(changeUserSelect = js.Any.fromFunction2(changeUserSelect), focusCellElement = js.Any.fromFunction2(focusCellElement), grid = grid, previousColumn = previousColumn, selectionHandlers = js.Any.fromFunction2(selectionHandlers))
   
     __obj.asInstanceOf[IDomAccessProvider]
   }

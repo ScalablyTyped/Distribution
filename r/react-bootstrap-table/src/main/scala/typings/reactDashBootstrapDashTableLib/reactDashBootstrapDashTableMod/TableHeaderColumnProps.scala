@@ -319,11 +319,7 @@ object TableHeaderColumnProps {
   @scala.inline
   def apply(
     autoValue: scala.Boolean | js.Function0[_] = null,
-    caretRender: js.Function2[
-      /* direction */ SortOrder | scala.Null, 
-      /* fieldName */ java.lang.String, 
-      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
-    ] = null,
+    caretRender: (/* direction */ SortOrder | scala.Null, /* fieldName */ java.lang.String) => java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     className: java.lang.String | (js.Function4[
       /* cell */ js.Any, 
@@ -348,20 +344,14 @@ object TableHeaderColumnProps {
       java.lang.String
     ]) = null,
     csvFieldType: CSVFieldType = null,
-    csvFormat: js.Function2[/* cell */ js.Any, /* row */ js.Any, java.lang.String] = null,
+    csvFormat: (/* cell */ js.Any, /* row */ js.Any) => java.lang.String = null,
     csvFormatExtraData: js.Any = null,
     csvHeader: java.lang.String = null,
     customEditor: CustomEditor[_, _] = null,
     customInsertEditor: reactDashBootstrapDashTableLib.Anon_Attr = null,
     dataAlign: DataAlignType = null,
     dataField: java.lang.String = null,
-    dataFormat: js.Function4[
-      /* cell */ js.Any, 
-      /* row */ js.Any, 
-      /* formatExtraData */ js.Any, 
-      /* rowIndex */ scala.Double, 
-      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
-    ] = null,
+    dataFormat: (/* cell */ js.Any, /* row */ js.Any, /* formatExtraData */ js.Any, /* rowIndex */ scala.Double) => java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
     dataSort: js.UndefOr[scala.Boolean] = js.undefined,
     defaultASC: js.UndefOr[scala.Boolean] = js.undefined,
     editColumnClassName: java.lang.String | (js.Function2[/* cell */ js.Any, /* row */ js.Any, java.lang.String]) = null,
@@ -377,7 +367,7 @@ object TableHeaderColumnProps {
     export: js.UndefOr[scala.Boolean] = js.undefined,
     filter: Filter = null,
     filterFormatted: js.UndefOr[scala.Boolean] = js.undefined,
-    filterValue: js.Function2[/* cell */ js.Any, /* row */ js.Any, _] = null,
+    filterValue: (/* cell */ js.Any, /* row */ js.Any) => _ = null,
     formatExtraData: js.Any = null,
     headerAlign: DataAlignType = null,
     headerText: java.lang.String = null,
@@ -391,14 +381,7 @@ object TableHeaderColumnProps {
     row: scala.Int | scala.Double = null,
     rowSpan: scala.Int | scala.Double = null,
     searchable: js.UndefOr[scala.Boolean] = js.undefined,
-    sortFunc: js.Function5[
-      /* a */ js.Object, 
-      /* b */ js.Object, 
-      /* order */ SortOrder, 
-      /* sortField */ java.lang.String, 
-      /* extraData */ js.Any, 
-      scala.Double
-    ] = null,
+    sortFunc: (/* a */ js.Object, /* b */ js.Object, /* order */ SortOrder, /* sortField */ java.lang.String, /* extraData */ js.Any) => scala.Double = null,
     sortFuncExtraData: js.Any = null,
     sortHeaderColumnClassName: java.lang.String | (js.Function2[/* order */ SortOrder, /* dataField */ java.lang.String, java.lang.String]) = null,
     tdAttr: CustomAttrs = null,
@@ -414,21 +397,21 @@ object TableHeaderColumnProps {
   ): TableHeaderColumnProps = {
     val __obj = js.Dynamic.literal()
     if (autoValue != null) __obj.updateDynamic("autoValue")(autoValue.asInstanceOf[js.Any])
-    if (caretRender != null) __obj.updateDynamic("caretRender")(caretRender)
+    if (caretRender != null) __obj.updateDynamic("caretRender")(js.Any.fromFunction2(caretRender))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
     if (columnClassName != null) __obj.updateDynamic("columnClassName")(columnClassName.asInstanceOf[js.Any])
     if (columnTitle != null) __obj.updateDynamic("columnTitle")(columnTitle.asInstanceOf[js.Any])
     if (csvFieldType != null) __obj.updateDynamic("csvFieldType")(csvFieldType)
-    if (csvFormat != null) __obj.updateDynamic("csvFormat")(csvFormat)
+    if (csvFormat != null) __obj.updateDynamic("csvFormat")(js.Any.fromFunction2(csvFormat))
     if (csvFormatExtraData != null) __obj.updateDynamic("csvFormatExtraData")(csvFormatExtraData)
     if (csvHeader != null) __obj.updateDynamic("csvHeader")(csvHeader)
     if (customEditor != null) __obj.updateDynamic("customEditor")(customEditor)
     if (customInsertEditor != null) __obj.updateDynamic("customInsertEditor")(customInsertEditor)
     if (dataAlign != null) __obj.updateDynamic("dataAlign")(dataAlign)
     if (dataField != null) __obj.updateDynamic("dataField")(dataField)
-    if (dataFormat != null) __obj.updateDynamic("dataFormat")(dataFormat)
+    if (dataFormat != null) __obj.updateDynamic("dataFormat")(js.Any.fromFunction4(dataFormat))
     if (!js.isUndefined(dataSort)) __obj.updateDynamic("dataSort")(dataSort)
     if (!js.isUndefined(defaultASC)) __obj.updateDynamic("defaultASC")(defaultASC)
     if (editColumnClassName != null) __obj.updateDynamic("editColumnClassName")(editColumnClassName.asInstanceOf[js.Any])
@@ -438,7 +421,7 @@ object TableHeaderColumnProps {
     if (!js.isUndefined(export)) __obj.updateDynamic("export")(export)
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (!js.isUndefined(filterFormatted)) __obj.updateDynamic("filterFormatted")(filterFormatted)
-    if (filterValue != null) __obj.updateDynamic("filterValue")(filterValue)
+    if (filterValue != null) __obj.updateDynamic("filterValue")(js.Any.fromFunction2(filterValue))
     if (formatExtraData != null) __obj.updateDynamic("formatExtraData")(formatExtraData)
     if (headerAlign != null) __obj.updateDynamic("headerAlign")(headerAlign)
     if (headerText != null) __obj.updateDynamic("headerText")(headerText)
@@ -452,7 +435,7 @@ object TableHeaderColumnProps {
     if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
     if (!js.isUndefined(searchable)) __obj.updateDynamic("searchable")(searchable)
-    if (sortFunc != null) __obj.updateDynamic("sortFunc")(sortFunc)
+    if (sortFunc != null) __obj.updateDynamic("sortFunc")(js.Any.fromFunction5(sortFunc))
     if (sortFuncExtraData != null) __obj.updateDynamic("sortFuncExtraData")(sortFuncExtraData)
     if (sortHeaderColumnClassName != null) __obj.updateDynamic("sortHeaderColumnClassName")(sortHeaderColumnClassName.asInstanceOf[js.Any])
     if (tdAttr != null) __obj.updateDynamic("tdAttr")(tdAttr)

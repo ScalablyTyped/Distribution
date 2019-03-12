@@ -24,28 +24,13 @@ trait InstallsResource extends js.Object {
 object InstallsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Install]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InstallsListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Install]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Install]
-    ]
+    delete: gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceId => gapiDotClientLib.gapiNs.clientNs.Request[Install],
+    list: gapiDotClientDotAndroidenterpriseLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[InstallsListResponse],
+    patch: gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceId => gapiDotClientLib.gapiNs.clientNs.Request[Install],
+    update: gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceId => gapiDotClientLib.gapiNs.clientNs.Request[Install]
   ): InstallsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[InstallsResource]
   }

@@ -21,7 +21,7 @@ trait Socket extends js.Object {
   @JSName("on")
   def on_close(
     ev: engineDotIoDashClientLib.engineDotIoDashClientLibStrings.close,
-    cb: js.Function2[/* mes */ java.lang.String, /* detail */ js.UndefOr[nodeLib.Error], scala.Unit]
+    cb: js.Function2[/* mes */ java.lang.String, /* detail */ js.UndefOr[stdLib.Error], scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_drain(ev: engineDotIoDashClientLib.engineDotIoDashClientLibStrings.drain, cb: js.Function0[scala.Unit]): this.type = js.native
@@ -31,7 +31,7 @@ trait Socket extends js.Object {
   @JSName("on")
   def on_error(
     ev: engineDotIoDashClientLib.engineDotIoDashClientLibStrings.error,
-    cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    cb: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_flush(ev: engineDotIoDashClientLib.engineDotIoDashClientLibStrings.flush, cb: js.Function0[scala.Unit]): this.type = js.native

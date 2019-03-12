@@ -14,11 +14,11 @@ trait PhononNotifComponent extends js.Object {
 object PhononNotifComponent {
   @scala.inline
   def apply(
-    hide: js.Function0[PhononNotifComponent],
-    setColor: js.Function1[PhononColor, PhononNotifComponent],
-    show: js.Function0[PhononNotifComponent]
+    hide: () => PhononNotifComponent,
+    setColor: PhononColor => PhononNotifComponent,
+    show: () => PhononNotifComponent
   ): PhononNotifComponent = {
-    val __obj = js.Dynamic.literal(hide = hide, setColor = setColor, show = show)
+    val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), setColor = js.Any.fromFunction1(setColor), show = js.Any.fromFunction0(show))
   
     __obj.asInstanceOf[PhononNotifComponent]
   }

@@ -15,15 +15,12 @@ trait ConversationsInstance extends js.Object {
 object ConversationsInstance {
   @scala.inline
   def apply(
-    registerFileAttachmentCardViewHandler: js.Function1[
-      js.Function1[/* attachmentCardView */ AttachmentCardView, scala.Unit], 
-      js.Function0[scala.Unit]
-    ],
-    registerMessageViewHandler: js.Function1[js.Function1[/* messageView */ MessageView, scala.Unit], js.Function0[scala.Unit]],
-    registerMessageViewHandlerAll: js.Function1[js.Function1[/* messageView */ MessageView, scala.Unit], js.Function0[scala.Unit]],
-    registerThreadViewHandler: js.Function1[js.Function1[/* threadView */ ThreadView, scala.Unit], js.Function0[scala.Unit]]
+    registerFileAttachmentCardViewHandler: js.Function1[/* attachmentCardView */ AttachmentCardView, scala.Unit] => js.Function0[scala.Unit],
+    registerMessageViewHandler: js.Function1[/* messageView */ MessageView, scala.Unit] => js.Function0[scala.Unit],
+    registerMessageViewHandlerAll: js.Function1[/* messageView */ MessageView, scala.Unit] => js.Function0[scala.Unit],
+    registerThreadViewHandler: js.Function1[/* threadView */ ThreadView, scala.Unit] => js.Function0[scala.Unit]
   ): ConversationsInstance = {
-    val __obj = js.Dynamic.literal(registerFileAttachmentCardViewHandler = registerFileAttachmentCardViewHandler, registerMessageViewHandler = registerMessageViewHandler, registerMessageViewHandlerAll = registerMessageViewHandlerAll, registerThreadViewHandler = registerThreadViewHandler)
+    val __obj = js.Dynamic.literal(registerFileAttachmentCardViewHandler = js.Any.fromFunction1(registerFileAttachmentCardViewHandler), registerMessageViewHandler = js.Any.fromFunction1(registerMessageViewHandler), registerMessageViewHandlerAll = js.Any.fromFunction1(registerMessageViewHandlerAll), registerThreadViewHandler = js.Any.fromFunction1(registerThreadViewHandler))
   
     __obj.asInstanceOf[ConversationsInstance]
   }

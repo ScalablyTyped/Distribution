@@ -109,7 +109,7 @@ object VictoryBrushContainerProps {
     handleComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
     handleStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     height: scala.Int | scala.Double = null,
-    onBrushDomainChange: js.Function2[/* domain */ DomainPropType, /* props */ VictoryBrushContainerProps, scala.Unit] = null,
+    onBrushDomainChange: (/* domain */ DomainPropType, /* props */ VictoryBrushContainerProps) => scala.Unit = null,
     responsive: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     title: java.lang.String = null,
@@ -129,7 +129,7 @@ object VictoryBrushContainerProps {
     if (handleComponent != null) __obj.updateDynamic("handleComponent")(handleComponent)
     if (handleStyle != null) __obj.updateDynamic("handleStyle")(handleStyle)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (onBrushDomainChange != null) __obj.updateDynamic("onBrushDomainChange")(onBrushDomainChange)
+    if (onBrushDomainChange != null) __obj.updateDynamic("onBrushDomainChange")(js.Any.fromFunction2(onBrushDomainChange))
     if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
     if (style != null) __obj.updateDynamic("style")(style)
     if (title != null) __obj.updateDynamic("title")(title)

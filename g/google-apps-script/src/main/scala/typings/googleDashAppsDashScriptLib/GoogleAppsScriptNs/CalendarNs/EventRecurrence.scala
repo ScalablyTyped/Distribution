@@ -22,19 +22,19 @@ trait EventRecurrence extends js.Object {
 object EventRecurrence {
   @scala.inline
   def apply(
-    addDailyExclusion: js.Function0[RecurrenceRule],
-    addDailyRule: js.Function0[RecurrenceRule],
-    addDate: js.Function1[stdLib.Date, EventRecurrence],
-    addDateExclusion: js.Function1[stdLib.Date, EventRecurrence],
-    addMonthlyExclusion: js.Function0[RecurrenceRule],
-    addMonthlyRule: js.Function0[RecurrenceRule],
-    addWeeklyExclusion: js.Function0[RecurrenceRule],
-    addWeeklyRule: js.Function0[RecurrenceRule],
-    addYearlyExclusion: js.Function0[RecurrenceRule],
-    addYearlyRule: js.Function0[RecurrenceRule],
-    setTimeZone: js.Function1[java.lang.String, EventRecurrence]
+    addDailyExclusion: () => RecurrenceRule,
+    addDailyRule: () => RecurrenceRule,
+    addDate: stdLib.Date => EventRecurrence,
+    addDateExclusion: stdLib.Date => EventRecurrence,
+    addMonthlyExclusion: () => RecurrenceRule,
+    addMonthlyRule: () => RecurrenceRule,
+    addWeeklyExclusion: () => RecurrenceRule,
+    addWeeklyRule: () => RecurrenceRule,
+    addYearlyExclusion: () => RecurrenceRule,
+    addYearlyRule: () => RecurrenceRule,
+    setTimeZone: java.lang.String => EventRecurrence
   ): EventRecurrence = {
-    val __obj = js.Dynamic.literal(addDailyExclusion = addDailyExclusion, addDailyRule = addDailyRule, addDate = addDate, addDateExclusion = addDateExclusion, addMonthlyExclusion = addMonthlyExclusion, addMonthlyRule = addMonthlyRule, addWeeklyExclusion = addWeeklyExclusion, addWeeklyRule = addWeeklyRule, addYearlyExclusion = addYearlyExclusion, addYearlyRule = addYearlyRule, setTimeZone = setTimeZone)
+    val __obj = js.Dynamic.literal(addDailyExclusion = js.Any.fromFunction0(addDailyExclusion), addDailyRule = js.Any.fromFunction0(addDailyRule), addDate = js.Any.fromFunction1(addDate), addDateExclusion = js.Any.fromFunction1(addDateExclusion), addMonthlyExclusion = js.Any.fromFunction0(addMonthlyExclusion), addMonthlyRule = js.Any.fromFunction0(addMonthlyRule), addWeeklyExclusion = js.Any.fromFunction0(addWeeklyExclusion), addWeeklyRule = js.Any.fromFunction0(addWeeklyRule), addYearlyExclusion = js.Any.fromFunction0(addYearlyExclusion), addYearlyRule = js.Any.fromFunction0(addYearlyRule), setTimeZone = js.Any.fromFunction1(setTimeZone))
   
     __obj.asInstanceOf[EventRecurrence]
   }

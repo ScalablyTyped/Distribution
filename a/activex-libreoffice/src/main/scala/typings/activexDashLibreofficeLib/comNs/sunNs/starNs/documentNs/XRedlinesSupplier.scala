@@ -18,12 +18,12 @@ object XRedlinesSupplier {
   @scala.inline
   def apply(
     Redlines: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess,
-    acquire: js.Function0[scala.Unit],
-    getRedlines: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getRedlines: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XRedlinesSupplier = {
-    val __obj = js.Dynamic.literal(Redlines = Redlines, acquire = acquire, getRedlines = getRedlines, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Redlines = Redlines, acquire = js.Any.fromFunction0(acquire), getRedlines = js.Any.fromFunction0(getRedlines), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XRedlinesSupplier]
   }

@@ -17,14 +17,14 @@ object LockConstraint {
     bodyB: Body,
     collideConnected: scala.Boolean,
     equeations: js.Array[Equation],
-    getMaxForce: js.Function0[scala.Double],
-    setMaxForce: js.Function1[scala.Double, scala.Unit],
-    setRelaxation: js.Function1[scala.Double, scala.Unit],
-    setStiffness: js.Function1[scala.Double, scala.Unit],
+    getMaxForce: () => scala.Double,
+    setMaxForce: scala.Double => scala.Unit,
+    setRelaxation: scala.Double => scala.Unit,
+    setStiffness: scala.Double => scala.Unit,
     `type`: scala.Double,
-    update: js.Function0[scala.Unit]
+    update: () => scala.Unit
   ): LockConstraint = {
-    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, collideConnected = collideConnected, equeations = equeations, getMaxForce = getMaxForce, setMaxForce = setMaxForce, setRelaxation = setRelaxation, setStiffness = setStiffness, update = update)
+    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, collideConnected = collideConnected, equeations = equeations, getMaxForce = js.Any.fromFunction0(getMaxForce), setMaxForce = js.Any.fromFunction1(setMaxForce), setRelaxation = js.Any.fromFunction1(setRelaxation), setStiffness = js.Any.fromFunction1(setStiffness), update = js.Any.fromFunction0(update))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LockConstraint]
   }

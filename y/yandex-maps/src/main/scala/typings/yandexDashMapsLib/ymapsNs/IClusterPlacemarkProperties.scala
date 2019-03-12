@@ -14,9 +14,9 @@ object IClusterPlacemarkProperties {
   def apply(
     events: IEventManager,
     geoObjects: js.Array[IGeoObject],
-    get: js.Function2[java.lang.String, js.Object, js.Object]
+    get: (java.lang.String, js.Object) => js.Object
   ): IClusterPlacemarkProperties = {
-    val __obj = js.Dynamic.literal(events = events, geoObjects = geoObjects, get = get)
+    val __obj = js.Dynamic.literal(events = events, geoObjects = geoObjects, get = js.Any.fromFunction2(get))
   
     __obj.asInstanceOf[IClusterPlacemarkProperties]
   }

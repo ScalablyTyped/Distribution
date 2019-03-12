@@ -13,26 +13,19 @@ object ^ extends js.Object {
   def bindingBehavior(name: java.lang.String): js.Any = js.native
   def camelCase(name: java.lang.String): java.lang.String = js.native
   def computedFrom(propertyNames: java.lang.String*): js.Any = js.native
-  def connectBindingToSignal(binding: aureliaDashBindingLib.aureliaDashBindingMod.Binding, name: java.lang.String): scala.Unit = js.native
+  def connectBindingToSignal(binding: Binding, name: java.lang.String): scala.Unit = js.native
   def connectable(): scala.Unit = js.native
-  def createOverrideContext(bindingContext: js.Any): aureliaDashBindingLib.aureliaDashBindingMod.OverrideContext = js.native
-  def createOverrideContext(
-    bindingContext: js.Any,
-    parentOverrideContext: aureliaDashBindingLib.aureliaDashBindingMod.OverrideContext
-  ): aureliaDashBindingLib.aureliaDashBindingMod.OverrideContext = js.native
-  def createScopeForTest(bindingContext: js.Any): aureliaDashBindingLib.aureliaDashBindingMod.Scope = js.native
-  def createScopeForTest(bindingContext: js.Any, parentBindingContext: js.Any): aureliaDashBindingLib.aureliaDashBindingMod.Scope = js.native
+  def createOverrideContext(bindingContext: js.Any): OverrideContext = js.native
+  def createOverrideContext(bindingContext: js.Any, parentOverrideContext: OverrideContext): OverrideContext = js.native
+  def createScopeForTest(bindingContext: js.Any): Scope = js.native
+  def createScopeForTest(bindingContext: js.Any, parentBindingContext: js.Any): Scope = js.native
   def declarePropertyDependencies(ctor: js.Any, propertyName: java.lang.String, dependencies: js.Array[java.lang.String]): scala.Unit = js.native
   def disableConnectQueue(): scala.Unit = js.native
   def enableConnectQueue(): scala.Unit = js.native
-  def enqueueBindingConnect(binding: aureliaDashBindingLib.aureliaDashBindingMod.Binding): scala.Unit = js.native
+  def enqueueBindingConnect(binding: Binding): scala.Unit = js.native
   def getChangeRecords(): js.Any = js.native
-  def getContextFor(name: java.lang.String, scope: aureliaDashBindingLib.aureliaDashBindingMod.Scope): js.Any = js.native
-  def getContextFor(
-    name: java.lang.String,
-    scope: aureliaDashBindingLib.aureliaDashBindingMod.Scope,
-    ancestor: scala.Double
-  ): js.Any = js.native
+  def getContextFor(name: java.lang.String, scope: Scope): js.Any = js.native
+  def getContextFor(name: java.lang.String, scope: Scope, ancestor: scala.Double): js.Any = js.native
   def hasDeclaredDependencies(descriptor: stdLib.PropertyDescriptor): scala.Boolean = js.native
   def mergeSplice(splices: js.Any, index: scala.Double, removed: js.Any, addedCount: scala.Double): js.Any = js.native
   def observable(): js.Any = js.native

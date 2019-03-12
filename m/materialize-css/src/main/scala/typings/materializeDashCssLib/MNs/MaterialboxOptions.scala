@@ -42,13 +42,13 @@ object MaterialboxOptions {
   @scala.inline
   def apply(
     inDuration: scala.Double,
-    onCloseEnd: js.Function2[Materialbox, stdLib.Element, scala.Unit],
-    onCloseStart: js.Function2[Materialbox, stdLib.Element, scala.Unit],
-    onOpenEnd: js.Function2[Materialbox, stdLib.Element, scala.Unit],
-    onOpenStart: js.Function2[Materialbox, stdLib.Element, scala.Unit],
+    onCloseEnd: (Materialbox, stdLib.Element) => scala.Unit,
+    onCloseStart: (Materialbox, stdLib.Element) => scala.Unit,
+    onOpenEnd: (Materialbox, stdLib.Element) => scala.Unit,
+    onOpenStart: (Materialbox, stdLib.Element) => scala.Unit,
     outDuration: scala.Double
   ): MaterialboxOptions = {
-    val __obj = js.Dynamic.literal(inDuration = inDuration, onCloseEnd = onCloseEnd, onCloseStart = onCloseStart, onOpenEnd = onOpenEnd, onOpenStart = onOpenStart, outDuration = outDuration)
+    val __obj = js.Dynamic.literal(inDuration = inDuration, onCloseEnd = js.Any.fromFunction2(onCloseEnd), onCloseStart = js.Any.fromFunction2(onCloseStart), onOpenEnd = js.Any.fromFunction2(onOpenEnd), onOpenStart = js.Any.fromFunction2(onOpenStart), outDuration = outDuration)
   
     __obj.asInstanceOf[MaterialboxOptions]
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait WriteResult extends js.Object {
   var deleted: scala.Double
   var errors: scala.Double
-  var first_error: nodeLib.Error
+  var first_error: stdLib.Error
   var generated_keys: js.Array[java.lang.String]
   var inserted: scala.Double
   var replaced: scala.Double
@@ -21,7 +21,7 @@ object WriteResult {
   def apply(
     deleted: scala.Double,
     errors: scala.Double,
-    first_error: nodeLib.Error,
+    first_error: stdLib.Error,
     generated_keys: js.Array[java.lang.String],
     inserted: scala.Double,
     replaced: scala.Double,

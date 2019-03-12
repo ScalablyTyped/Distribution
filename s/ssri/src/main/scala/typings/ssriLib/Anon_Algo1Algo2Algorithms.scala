@@ -23,7 +23,7 @@ object Anon_Algo1Algo2Algorithms {
     algorithms: js.Array[java.lang.String] = null,
     integrity: java.lang.String | ssriLib.ssriMod.IntegrityLike | ssriLib.ssriMod.HashLike = null,
     options: js.Array[java.lang.String] = null,
-    pickAlgorithm: js.Function2[/* algo1 */ java.lang.String, /* algo2 */ java.lang.String, java.lang.String] = null,
+    pickAlgorithm: (/* algo1 */ java.lang.String, /* algo2 */ java.lang.String) => java.lang.String = null,
     single: js.UndefOr[scala.Boolean] = js.undefined,
     size: scala.Int | scala.Double = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined
@@ -32,7 +32,7 @@ object Anon_Algo1Algo2Algorithms {
     if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms)
     if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options)
-    if (pickAlgorithm != null) __obj.updateDynamic("pickAlgorithm")(pickAlgorithm)
+    if (pickAlgorithm != null) __obj.updateDynamic("pickAlgorithm")(js.Any.fromFunction2(pickAlgorithm))
     if (!js.isUndefined(single)) __obj.updateDynamic("single")(single)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)

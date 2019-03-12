@@ -34,30 +34,30 @@ object IBar {
   @scala.inline
   def apply(
     IHeader: extjsLib.ExtNs.panelNs.IHeader = null,
-    afterComponentLayout: js.Function1[/* width */ js.UndefOr[js.Any], scala.Unit] = null,
-    afterLayout: js.Function0[scala.Unit] = null,
-    afterRender: js.Function0[scala.Unit] = null,
+    afterComponentLayout: /* width */ js.UndefOr[js.Any] => scala.Unit = null,
+    afterLayout: () => scala.Unit = null,
+    afterRender: () => scala.Unit = null,
     baseCls: java.lang.String = null,
-    getLayout: js.Function0[extjsLib.ExtNs.layoutNs.containerNs.IContainer] = null,
+    getLayout: () => extjsLib.ExtNs.layoutNs.containerNs.IContainer = null,
     isTabBar: js.UndefOr[scala.Boolean] = js.undefined,
     maxTabWidth: scala.Int | scala.Double = null,
     minTabWidth: scala.Int | scala.Double = null,
-    onRemove: js.Function1[/* tab */ js.UndefOr[js.Any], scala.Unit] = null,
-    onRender: js.Function0[scala.Unit] = null,
+    onRemove: /* tab */ js.UndefOr[js.Any] => scala.Unit = null,
+    onRender: () => scala.Unit = null,
     plain: js.UndefOr[scala.Boolean] = js.undefined
   ): IBar = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IHeader)
-    if (afterComponentLayout != null) __obj.updateDynamic("afterComponentLayout")(afterComponentLayout)
-    if (afterLayout != null) __obj.updateDynamic("afterLayout")(afterLayout)
-    if (afterRender != null) __obj.updateDynamic("afterRender")(afterRender)
+    if (afterComponentLayout != null) __obj.updateDynamic("afterComponentLayout")(js.Any.fromFunction1(afterComponentLayout))
+    if (afterLayout != null) __obj.updateDynamic("afterLayout")(js.Any.fromFunction0(afterLayout))
+    if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction0(afterRender))
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (getLayout != null) __obj.updateDynamic("getLayout")(getLayout)
+    if (getLayout != null) __obj.updateDynamic("getLayout")(js.Any.fromFunction0(getLayout))
     if (!js.isUndefined(isTabBar)) __obj.updateDynamic("isTabBar")(isTabBar)
     if (maxTabWidth != null) __obj.updateDynamic("maxTabWidth")(maxTabWidth.asInstanceOf[js.Any])
     if (minTabWidth != null) __obj.updateDynamic("minTabWidth")(minTabWidth.asInstanceOf[js.Any])
-    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
-    if (onRender != null) __obj.updateDynamic("onRender")(onRender)
+    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
+    if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction0(onRender))
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
     __obj.asInstanceOf[IBar]
   }

@@ -15,7 +15,7 @@ object ^ extends js.Object {
   def deregisterSubstitute(name: java.lang.String): scala.Unit = js.native
   def disable(): scala.Unit = js.native
   def enable(): scala.Unit = js.native
-  def enable(args: mockeryLib.mockeryMod.MockeryEnableArgs): scala.Unit = js.native
+  def enable(args: MockeryEnableArgs): scala.Unit = js.native
   def registerAllowable(name: java.lang.String): scala.Unit = js.native
   def registerAllowable(name: java.lang.String, unhook: scala.Boolean): scala.Unit = js.native
   def registerAllowables(names: js.Array[java.lang.String]): scala.Unit = js.native

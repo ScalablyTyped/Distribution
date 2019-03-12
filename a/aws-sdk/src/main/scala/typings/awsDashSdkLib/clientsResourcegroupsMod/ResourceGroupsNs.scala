@@ -27,7 +27,7 @@ object ResourceGroupsNs extends js.Object {
     /**
       * The resource query that determines which AWS resources are members of this group.
       */
-    var ResourceQuery: ResourceQuery
+    var ResourceQuery: awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.ResourceQuery
     /**
       * The tags to add to the group. A tag is a string-to-string map of key-value pairs. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
       */
@@ -53,7 +53,7 @@ object ResourceGroupsNs extends js.Object {
     /**
       * The name of the resource group to delete.
       */
-    var GroupName: GroupName
+    var GroupName: awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.GroupName
   }
   
   trait DeleteGroupOutput extends js.Object {
@@ -67,7 +67,7 @@ object ResourceGroupsNs extends js.Object {
     /**
       * The name of the resource group.
       */
-    var GroupName: GroupName
+    var GroupName: awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.GroupName
   }
   
   trait GetGroupOutput extends js.Object {
@@ -81,7 +81,7 @@ object ResourceGroupsNs extends js.Object {
     /**
       * The name of the resource group.
       */
-    var GroupName: GroupName
+    var GroupName: awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.GroupName
   }
   
   trait GetGroupQueryOutput extends js.Object {
@@ -117,7 +117,7 @@ object ResourceGroupsNs extends js.Object {
     /**
       * The ARN of a resource group.
       */
-    var GroupArn: GroupArn
+    var GroupArn: awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.GroupArn
     /**
       * The name of a resource group.
       */
@@ -150,11 +150,11 @@ object ResourceGroupsNs extends js.Object {
     /**
       * The name of a resource group that is associated with a specific resource query.
       */
-    var GroupName: GroupName
+    var GroupName: awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.GroupName
     /**
       * The resource query which determines which AWS resources are members of the associated resource group.
       */
-    var ResourceQuery: ResourceQuery
+    var ResourceQuery: awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.ResourceQuery
   }
   
   trait ListGroupResourcesInput extends js.Object {
@@ -165,7 +165,7 @@ object ResourceGroupsNs extends js.Object {
     /**
       * The name of the resource group.
       */
-    var GroupName: GroupName
+    var GroupName: awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.GroupName
     /**
       * The maximum number of group member ARNs that are returned in a single call by ListGroupResources, in paginated output. By default, this number is 50.
       */
@@ -258,7 +258,7 @@ object ResourceGroupsNs extends js.Object {
     /**
       * The query that defines a group or a search.
       */
-    var Query: Query
+    var Query: awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.Query
     /**
       * The type of the query. The valid values in this release are TAG_FILTERS_1_0 and CLOUDFORMATION_STACK_1_0.   TAG_FILTERS_1_0:  A JSON syntax that lets you specify a collection of simple tag filters for resource types and tags, as supported by the AWS Tagging API GetResources operation. If you specify more than one tag key, only resources that match all tag keys, and at least one value of each specified tag key, are returned in your query. If you specify more than one value for a tag key, a resource matches the filter if it has a tag key value that matches any of the specified values. For example, consider the following sample query for resources that have two tags, Stage and Version, with two values each. ([{"Key":"Stage","Values":["Test","Deploy"]},{"Key":"Version","Values":["1","2"]}]) The results of this query might include the following.   An EC2 instance that has the following two tags: {"Key":"Stage","Values":["Deploy"]}, and {"Key":"Version","Values":["2"]}    An S3 bucket that has the following two tags: {"Key":"Stage","Values":["Test","Deploy"]}, and {"Key":"Version","Values":["1"]}   The query would not return the following results, however. The following EC2 instance does not have all tag keys specified in the filter, so it is rejected. The RDS database has all of the tag keys, but no values that match at least one of the specified tag key values in the filter.   An EC2 instance that has only the following tag: {"Key":"Stage","Values":["Deploy"]}.   An RDS database that has the following two tags: {"Key":"Stage","Values":["Archived"]}, and {"Key":"Version","Values":["4"]}      CLOUDFORMATION_STACK_1_0:  A JSON syntax that lets you specify a CloudFormation stack ARN.
       */
@@ -277,7 +277,7 @@ object ResourceGroupsNs extends js.Object {
     /**
       * The search query, using the same formats that are supported for resource group definition.
       */
-    var ResourceQuery: ResourceQuery
+    var ResourceQuery: awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.ResourceQuery
   }
   
   trait SearchResourcesOutput extends js.Object {
@@ -303,7 +303,7 @@ object ResourceGroupsNs extends js.Object {
     /**
       * The tags to add to the specified resource. A tag is a string-to-string map of key-value pairs. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
       */
-    var Tags: Tags
+    var Tags: awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.Tags
   }
   
   trait TagOutput extends js.Object {
@@ -601,7 +601,7 @@ object ResourceGroupsNs extends js.Object {
     /**
       * The name of the resource group for which you want to update its description.
       */
-    var GroupName: GroupName
+    var GroupName: awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.GroupName
   }
   
   trait UpdateGroupOutput extends js.Object {
@@ -615,11 +615,11 @@ object ResourceGroupsNs extends js.Object {
     /**
       * The name of the resource group for which you want to edit the query.
       */
-    var GroupName: GroupName
+    var GroupName: awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.GroupName
     /**
       * The resource query that determines which AWS resources are members of the resource group.
       */
-    var ResourceQuery: ResourceQuery
+    var ResourceQuery: awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.ResourceQuery
   }
   
   trait UpdateGroupQueryOutput extends js.Object {

@@ -17,13 +17,13 @@ trait XUniqueIDAccess
 object XUniqueIDAccess {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getByUniqueID: js.Function1[java.lang.String, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeByUniqueID: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getByUniqueID: java.lang.String => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeByUniqueID: java.lang.String => scala.Unit
   ): XUniqueIDAccess = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getByUniqueID = getByUniqueID, queryInterface = queryInterface, release = release, removeByUniqueID = removeByUniqueID)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getByUniqueID = js.Any.fromFunction1(getByUniqueID), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByUniqueID = js.Any.fromFunction1(removeByUniqueID))
   
     __obj.asInstanceOf[XUniqueIDAccess]
   }

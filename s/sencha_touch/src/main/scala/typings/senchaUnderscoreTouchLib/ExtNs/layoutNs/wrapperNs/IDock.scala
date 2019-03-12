@@ -62,30 +62,30 @@ object IDock {
   def apply(
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     extend: java.lang.String = null,
-    getBodyElement: js.Function0[_] = null,
-    getContainer: js.Function0[_] = null,
-    getDirection: js.Function0[java.lang.String] = null,
-    getElement: js.Function0[_] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getInnerWrapper: js.Function0[_] = null,
-    getSizeState: js.Function0[scala.Boolean] = null,
+    getBodyElement: () => _ = null,
+    getContainer: () => _ = null,
+    getDirection: () => java.lang.String = null,
+    getElement: () => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInnerWrapper: () => _ = null,
+    getSizeState: () => scala.Boolean = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setBodyElement: js.Function1[/* bodyElement */ js.UndefOr[js.Any], scala.Unit] = null,
-    setContainer: js.Function1[/* container */ js.UndefOr[js.Any], scala.Unit] = null,
-    setDirection: js.Function1[/* direction */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setElement: js.Function1[/* element */ js.UndefOr[js.Any], scala.Unit] = null,
-    setInnerWrapper: js.Function1[/* innerWrapper */ js.UndefOr[js.Any], scala.Unit] = null,
-    setSizeState: js.Function1[/* sizeState */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setBodyElement: /* bodyElement */ js.UndefOr[js.Any] => scala.Unit = null,
+    setContainer: /* container */ js.UndefOr[js.Any] => scala.Unit = null,
+    setDirection: /* direction */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setElement: /* element */ js.UndefOr[js.Any] => scala.Unit = null,
+    setInnerWrapper: /* innerWrapper */ js.UndefOr[js.Any] => scala.Unit = null,
+    setSizeState: /* sizeState */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null
@@ -93,30 +93,30 @@ object IDock {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getBodyElement != null) __obj.updateDynamic("getBodyElement")(getBodyElement)
-    if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer)
-    if (getDirection != null) __obj.updateDynamic("getDirection")(getDirection)
-    if (getElement != null) __obj.updateDynamic("getElement")(getElement)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getInnerWrapper != null) __obj.updateDynamic("getInnerWrapper")(getInnerWrapper)
-    if (getSizeState != null) __obj.updateDynamic("getSizeState")(getSizeState)
+    if (getBodyElement != null) __obj.updateDynamic("getBodyElement")(js.Any.fromFunction0(getBodyElement))
+    if (getContainer != null) __obj.updateDynamic("getContainer")(js.Any.fromFunction0(getContainer))
+    if (getDirection != null) __obj.updateDynamic("getDirection")(js.Any.fromFunction0(getDirection))
+    if (getElement != null) __obj.updateDynamic("getElement")(js.Any.fromFunction0(getElement))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getInnerWrapper != null) __obj.updateDynamic("getInnerWrapper")(js.Any.fromFunction0(getInnerWrapper))
+    if (getSizeState != null) __obj.updateDynamic("getSizeState")(js.Any.fromFunction0(getSizeState))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setBodyElement != null) __obj.updateDynamic("setBodyElement")(setBodyElement)
-    if (setContainer != null) __obj.updateDynamic("setContainer")(setContainer)
-    if (setDirection != null) __obj.updateDynamic("setDirection")(setDirection)
-    if (setElement != null) __obj.updateDynamic("setElement")(setElement)
-    if (setInnerWrapper != null) __obj.updateDynamic("setInnerWrapper")(setInnerWrapper)
-    if (setSizeState != null) __obj.updateDynamic("setSizeState")(setSizeState)
+    if (setBodyElement != null) __obj.updateDynamic("setBodyElement")(js.Any.fromFunction1(setBodyElement))
+    if (setContainer != null) __obj.updateDynamic("setContainer")(js.Any.fromFunction1(setContainer))
+    if (setDirection != null) __obj.updateDynamic("setDirection")(js.Any.fromFunction1(setDirection))
+    if (setElement != null) __obj.updateDynamic("setElement")(js.Any.fromFunction1(setElement))
+    if (setInnerWrapper != null) __obj.updateDynamic("setInnerWrapper")(js.Any.fromFunction1(setInnerWrapper))
+    if (setSizeState != null) __obj.updateDynamic("setSizeState")(js.Any.fromFunction1(setSizeState))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (uses != null) __obj.updateDynamic("uses")(uses)

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object libFormTextMod {
   type FormText[T] = reactLib.reactMod.Component[FormTextProps[T], js.Object, js.Any]
-  type FormTextProps[T] = reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] with reactstrapLib.Anon_ClassNameColorCssModule with T
+  type FormTextProps[T] = reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] with reactstrapLib.Anon_ClassNameColorCssModule with T
 }

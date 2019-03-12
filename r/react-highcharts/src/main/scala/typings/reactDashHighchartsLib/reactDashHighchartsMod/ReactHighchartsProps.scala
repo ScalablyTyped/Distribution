@@ -26,10 +26,10 @@ object ReactHighchartsProps {
   @scala.inline
   def apply(
     config: highchartsLib.highchartsMod.HighchartsNs.Options,
-    callback: js.Function1[/* chart */ highchartsLib.highchartsMod.HighchartsNs.ChartObject, scala.Unit] = null
+    callback: /* chart */ highchartsLib.highchartsMod.HighchartsNs.ChartObject => scala.Unit = null
   ): ReactHighchartsProps = {
     val __obj = js.Dynamic.literal(config = config)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     __obj.asInstanceOf[ReactHighchartsProps]
   }
 }

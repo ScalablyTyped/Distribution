@@ -15,12 +15,12 @@ trait session extends js.Object {
 object session {
   @scala.inline
   def apply(
-    clear: js.Function0[scala.Unit],
-    get: js.Function1[java.lang.String, js.Any],
-    put: js.Function2[java.lang.String, js.Any, scala.Unit],
-    remove: js.Function1[java.lang.String, scala.Unit]
+    clear: () => scala.Unit,
+    get: java.lang.String => js.Any,
+    put: (java.lang.String, js.Any) => scala.Unit,
+    remove: java.lang.String => scala.Unit
   ): session = {
-    val __obj = js.Dynamic.literal(clear = clear, get = get, put = put, remove = remove)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), get = js.Any.fromFunction1(get), put = js.Any.fromFunction2(put), remove = js.Any.fromFunction1(remove))
   
     __obj.asInstanceOf[session]
   }

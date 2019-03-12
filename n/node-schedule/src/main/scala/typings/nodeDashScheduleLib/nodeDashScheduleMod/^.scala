@@ -9,64 +9,26 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def cancelJob(job: java.lang.String): scala.Boolean = js.native
-  def cancelJob(job: nodeDashScheduleLib.nodeDashScheduleMod.Job): scala.Boolean = js.native
-  def rescheduleJob(job: java.lang.String, spec: java.lang.String): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
-  def rescheduleJob(job: java.lang.String, spec: nodeDashScheduleLib.nodeDashScheduleMod.RecurrenceRule): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
-  def rescheduleJob(job: java.lang.String, spec: nodeDashScheduleLib.nodeDashScheduleMod.RecurrenceSpecDateRange): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
-  def rescheduleJob(job: java.lang.String, spec: nodeDashScheduleLib.nodeDashScheduleMod.RecurrenceSpecObjLit): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
-  def rescheduleJob(job: java.lang.String, spec: stdLib.Date): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
-  def rescheduleJob(job: nodeDashScheduleLib.nodeDashScheduleMod.Job, spec: java.lang.String): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
-  def rescheduleJob(
-    job: nodeDashScheduleLib.nodeDashScheduleMod.Job,
-    spec: nodeDashScheduleLib.nodeDashScheduleMod.RecurrenceRule
-  ): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
-  def rescheduleJob(
-    job: nodeDashScheduleLib.nodeDashScheduleMod.Job,
-    spec: nodeDashScheduleLib.nodeDashScheduleMod.RecurrenceSpecDateRange
-  ): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
-  def rescheduleJob(
-    job: nodeDashScheduleLib.nodeDashScheduleMod.Job,
-    spec: nodeDashScheduleLib.nodeDashScheduleMod.RecurrenceSpecObjLit
-  ): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
-  def rescheduleJob(job: nodeDashScheduleLib.nodeDashScheduleMod.Job, spec: stdLib.Date): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
-  def scheduleJob(
-    name: java.lang.String,
-    rule: java.lang.String,
-    callback: nodeDashScheduleLib.nodeDashScheduleMod.JobCallback
-  ): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
-  def scheduleJob(
-    name: java.lang.String,
-    rule: nodeDashScheduleLib.nodeDashScheduleMod.RecurrenceRule,
-    callback: nodeDashScheduleLib.nodeDashScheduleMod.JobCallback
-  ): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
-  def scheduleJob(
-    name: java.lang.String,
-    rule: nodeDashScheduleLib.nodeDashScheduleMod.RecurrenceSpecDateRange,
-    callback: nodeDashScheduleLib.nodeDashScheduleMod.JobCallback
-  ): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
-  def scheduleJob(
-    name: java.lang.String,
-    rule: nodeDashScheduleLib.nodeDashScheduleMod.RecurrenceSpecObjLit,
-    callback: nodeDashScheduleLib.nodeDashScheduleMod.JobCallback
-  ): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
-  def scheduleJob(
-    name: java.lang.String,
-    rule: stdLib.Date,
-    callback: nodeDashScheduleLib.nodeDashScheduleMod.JobCallback
-  ): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
-  def scheduleJob(rule: java.lang.String, callback: nodeDashScheduleLib.nodeDashScheduleMod.JobCallback): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
-  def scheduleJob(
-    rule: nodeDashScheduleLib.nodeDashScheduleMod.RecurrenceRule,
-    callback: nodeDashScheduleLib.nodeDashScheduleMod.JobCallback
-  ): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
-  def scheduleJob(
-    rule: nodeDashScheduleLib.nodeDashScheduleMod.RecurrenceSpecDateRange,
-    callback: nodeDashScheduleLib.nodeDashScheduleMod.JobCallback
-  ): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
-  def scheduleJob(
-    rule: nodeDashScheduleLib.nodeDashScheduleMod.RecurrenceSpecObjLit,
-    callback: nodeDashScheduleLib.nodeDashScheduleMod.JobCallback
-  ): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
-  def scheduleJob(rule: stdLib.Date, callback: nodeDashScheduleLib.nodeDashScheduleMod.JobCallback): nodeDashScheduleLib.nodeDashScheduleMod.Job = js.native
+  def cancelJob(job: Job): scala.Boolean = js.native
+  def rescheduleJob(job: java.lang.String, spec: java.lang.String): Job = js.native
+  def rescheduleJob(job: java.lang.String, spec: RecurrenceRule): Job = js.native
+  def rescheduleJob(job: java.lang.String, spec: RecurrenceSpecDateRange): Job = js.native
+  def rescheduleJob(job: java.lang.String, spec: RecurrenceSpecObjLit): Job = js.native
+  def rescheduleJob(job: java.lang.String, spec: stdLib.Date): Job = js.native
+  def rescheduleJob(job: Job, spec: java.lang.String): Job = js.native
+  def rescheduleJob(job: Job, spec: RecurrenceRule): Job = js.native
+  def rescheduleJob(job: Job, spec: RecurrenceSpecDateRange): Job = js.native
+  def rescheduleJob(job: Job, spec: RecurrenceSpecObjLit): Job = js.native
+  def rescheduleJob(job: Job, spec: stdLib.Date): Job = js.native
+  def scheduleJob(name: java.lang.String, rule: java.lang.String, callback: JobCallback): Job = js.native
+  def scheduleJob(name: java.lang.String, rule: RecurrenceRule, callback: JobCallback): Job = js.native
+  def scheduleJob(name: java.lang.String, rule: RecurrenceSpecDateRange, callback: JobCallback): Job = js.native
+  def scheduleJob(name: java.lang.String, rule: RecurrenceSpecObjLit, callback: JobCallback): Job = js.native
+  def scheduleJob(name: java.lang.String, rule: stdLib.Date, callback: JobCallback): Job = js.native
+  def scheduleJob(rule: java.lang.String, callback: JobCallback): Job = js.native
+  def scheduleJob(rule: RecurrenceRule, callback: JobCallback): Job = js.native
+  def scheduleJob(rule: RecurrenceSpecDateRange, callback: JobCallback): Job = js.native
+  def scheduleJob(rule: RecurrenceSpecObjLit, callback: JobCallback): Job = js.native
+  def scheduleJob(rule: stdLib.Date, callback: JobCallback): Job = js.native
 }
 

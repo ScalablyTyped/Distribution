@@ -18,11 +18,11 @@ object DigestInfo {
   def apply(
     digest: asn1jsLib.asn1jsMod.OctetString,
     digestAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
-    fromSchema: js.Function1[js.Any, scala.Unit],
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    fromSchema: js.Any => scala.Unit,
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): DigestInfo = {
-    val __obj = js.Dynamic.literal(digest = digest, digestAlgorithm = digestAlgorithm, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(digest = digest, digestAlgorithm = digestAlgorithm, fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[DigestInfo]
   }

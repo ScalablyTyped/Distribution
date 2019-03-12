@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/internal/SwitchBase", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.internalSwitchBaseMod.SwitchBaseProps] = js.native
+  val default: reactLib.reactMod.ReactNs.ComponentType[SwitchBaseProps] = js.native
 }
 

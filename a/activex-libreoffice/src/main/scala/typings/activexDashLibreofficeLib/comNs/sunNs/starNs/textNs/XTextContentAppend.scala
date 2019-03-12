@@ -38,22 +38,13 @@ trait XTextContentAppend
 object XTextContentAppend {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    appendTextContent: js.Function2[
-      XTextContent, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
-      XTextRange
-    ],
-    insertTextContentWithProperties: js.Function3[
-      XTextContent, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
-      XTextRange, 
-      XTextRange
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    appendTextContent: (XTextContent, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues) => XTextRange,
+    insertTextContentWithProperties: (XTextContent, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, XTextRange) => XTextRange,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTextContentAppend = {
-    val __obj = js.Dynamic.literal(acquire = acquire, appendTextContent = appendTextContent, insertTextContentWithProperties = insertTextContentWithProperties, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), appendTextContent = js.Any.fromFunction2(appendTextContent), insertTextContentWithProperties = js.Any.fromFunction3(insertTextContentWithProperties), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTextContentAppend]
   }

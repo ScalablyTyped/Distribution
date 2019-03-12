@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.ChartObject")
 @js.native
 class ChartObject protected () extends js.Object {
-  val Application: Application = js.native
-  val Border: Border = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
+  val Border: activexDashExcelLib.ExcelNs.Border = js.native
   @JSName("BottomRightCell")
   val BottomRightCell_Original: Range = js.native
-  val Chart: Chart = js.native
+  val Chart: activexDashExcelLib.ExcelNs.Chart = js.native
   val Creator: XlCreator = js.native
   var Enabled: scala.Boolean = js.native
   var `Excel.ChartObject_typekey`: ChartObject = js.native
   var Height: scala.Double = js.native
   val Index: scala.Double = js.native
-  val Interior: Interior = js.native
+  val Interior: activexDashExcelLib.ExcelNs.Interior = js.native
   var Left: scala.Double = js.native
   var Locked: scala.Boolean = js.native
   var Name: java.lang.String = js.native

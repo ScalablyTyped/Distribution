@@ -50,38 +50,34 @@ object IColor {
   def apply(
     IComponent: extjsLib.ExtNs.IComponent = null,
     allowReselect: js.UndefOr[scala.Boolean] = js.undefined,
-    clear: js.Function0[scala.Unit] = null,
+    clear: () => scala.Unit = null,
     clickEvent: java.lang.String = null,
     colors: extjsLib.ExtNs.Array = null,
     componentCls: java.lang.String = null,
-    getValue: js.Function0[java.lang.String] = null,
+    getValue: () => java.lang.String = null,
     handler: js.Any = null,
     itemCls: java.lang.String = null,
-    onRender: js.Function0[scala.Unit] = null,
+    onRender: () => scala.Unit = null,
     renderTpl: js.Any = null,
     scope: js.Any = null,
-    select: js.Function2[
-      /* color */ js.UndefOr[java.lang.String], 
-      /* suppressEvent */ js.UndefOr[scala.Boolean], 
-      scala.Unit
-    ] = null,
+    select: (/* color */ js.UndefOr[java.lang.String], /* suppressEvent */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
     selectedCls: java.lang.String = null,
     value: java.lang.String = null
   ): IColor = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IComponent)
     if (!js.isUndefined(allowReselect)) __obj.updateDynamic("allowReselect")(allowReselect)
-    if (clear != null) __obj.updateDynamic("clear")(clear)
+    if (clear != null) __obj.updateDynamic("clear")(js.Any.fromFunction0(clear))
     if (clickEvent != null) __obj.updateDynamic("clickEvent")(clickEvent)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (componentCls != null) __obj.updateDynamic("componentCls")(componentCls)
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
     if (handler != null) __obj.updateDynamic("handler")(handler)
     if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls)
-    if (onRender != null) __obj.updateDynamic("onRender")(onRender)
+    if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction0(onRender))
     if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
     if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction2(select))
     if (selectedCls != null) __obj.updateDynamic("selectedCls")(selectedCls)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[IColor]

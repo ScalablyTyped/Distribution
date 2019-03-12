@@ -59,7 +59,7 @@ trait XConversionDictionaryList
     nConversionDictionaryType: scala.Double,
     eDirection: ConversionDirection,
     nTextConversionOptions: scala.Double
-  ): activexDashInteropLib.SafeArray[java.lang.String]
+  ): stdLib.SafeArray[java.lang.String]
   /**
     * returns the maximum number of characters used as left or right text in entries.
     *
@@ -82,34 +82,15 @@ object XConversionDictionaryList {
   @scala.inline
   def apply(
     DictionaryContainer: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
-    acquire: js.Function0[scala.Unit],
-    addNewDictionary: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      XConversionDictionary
-    ],
-    getDictionaryContainer: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer],
-    queryConversions: js.Function7[
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      ConversionDirection, 
-      scala.Double, 
-      activexDashInteropLib.SafeArray[java.lang.String]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    queryMaxCharCount: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      ConversionDirection, 
-      scala.Double
-    ],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addNewDictionary: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double) => XConversionDictionary,
+    getDictionaryContainer: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    queryConversions: (java.lang.String, scala.Double, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double, ConversionDirection, scala.Double) => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    queryMaxCharCount: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double, ConversionDirection) => scala.Double,
+    release: () => scala.Unit
   ): XConversionDictionaryList = {
-    val __obj = js.Dynamic.literal(DictionaryContainer = DictionaryContainer, acquire = acquire, addNewDictionary = addNewDictionary, getDictionaryContainer = getDictionaryContainer, queryConversions = queryConversions, queryInterface = queryInterface, queryMaxCharCount = queryMaxCharCount, release = release)
+    val __obj = js.Dynamic.literal(DictionaryContainer = DictionaryContainer, acquire = js.Any.fromFunction0(acquire), addNewDictionary = js.Any.fromFunction3(addNewDictionary), getDictionaryContainer = js.Any.fromFunction0(getDictionaryContainer), queryConversions = js.Any.fromFunction7(queryConversions), queryInterface = js.Any.fromFunction1(queryInterface), queryMaxCharCount = js.Any.fromFunction3(queryMaxCharCount), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XConversionDictionaryList]
   }

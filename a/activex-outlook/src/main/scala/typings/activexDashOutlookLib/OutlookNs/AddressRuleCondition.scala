@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class AddressRuleCondition protected () extends js.Object {
   var Address: js.Any = js.native
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   val ConditionType: OlRuleConditionType = js.native
   var Enabled: scala.Boolean = js.native

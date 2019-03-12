@@ -18,15 +18,15 @@ trait KeyBinding extends js.Object {
 object KeyBinding {
   @scala.inline
   def apply(
-    addKeyboardHandler: js.Function2[js.Any, js.Any, scala.Unit],
-    getKeyboardHandler: js.Function0[js.Any],
-    onCommandKey: js.Function3[js.Any, js.Any, js.Any, scala.Unit],
-    onTextInput: js.Function1[js.Any, scala.Unit],
-    removeKeyboardHandler: js.Function1[js.Any, scala.Boolean],
-    setDefaultHandler: js.Function1[js.Any, scala.Unit],
-    setKeyboardHandler: js.Function1[js.Any, scala.Unit]
+    addKeyboardHandler: (js.Any, js.Any) => scala.Unit,
+    getKeyboardHandler: () => js.Any,
+    onCommandKey: (js.Any, js.Any, js.Any) => scala.Unit,
+    onTextInput: js.Any => scala.Unit,
+    removeKeyboardHandler: js.Any => scala.Boolean,
+    setDefaultHandler: js.Any => scala.Unit,
+    setKeyboardHandler: js.Any => scala.Unit
   ): KeyBinding = {
-    val __obj = js.Dynamic.literal(addKeyboardHandler = addKeyboardHandler, getKeyboardHandler = getKeyboardHandler, onCommandKey = onCommandKey, onTextInput = onTextInput, removeKeyboardHandler = removeKeyboardHandler, setDefaultHandler = setDefaultHandler, setKeyboardHandler = setKeyboardHandler)
+    val __obj = js.Dynamic.literal(addKeyboardHandler = js.Any.fromFunction2(addKeyboardHandler), getKeyboardHandler = js.Any.fromFunction0(getKeyboardHandler), onCommandKey = js.Any.fromFunction3(onCommandKey), onTextInput = js.Any.fromFunction1(onTextInput), removeKeyboardHandler = js.Any.fromFunction1(removeKeyboardHandler), setDefaultHandler = js.Any.fromFunction1(setDefaultHandler), setKeyboardHandler = js.Any.fromFunction1(setKeyboardHandler))
   
     __obj.asInstanceOf[KeyBinding]
   }

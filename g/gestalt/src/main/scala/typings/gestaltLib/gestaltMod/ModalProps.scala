@@ -24,13 +24,13 @@ object ModalProps {
     accessibilityCloseLabel: java.lang.String,
     accessibilityModalLabel: java.lang.String,
     heading: java.lang.String,
-    onDismiss: js.Function0[scala.Unit],
+    onDismiss: () => scala.Unit,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     footer: reactLib.reactMod.ReactNs.ReactNode = null,
     role: gestaltLib.gestaltLibStrings.alertdialog | gestaltLib.gestaltLibStrings.dialog = null,
     size: gestaltLib.gestaltLibStrings.sm | gestaltLib.gestaltLibStrings.md | gestaltLib.gestaltLibStrings.lg = null
   ): ModalProps = {
-    val __obj = js.Dynamic.literal(accessibilityCloseLabel = accessibilityCloseLabel, accessibilityModalLabel = accessibilityModalLabel, heading = heading, onDismiss = onDismiss)
+    val __obj = js.Dynamic.literal(accessibilityCloseLabel = accessibilityCloseLabel, accessibilityModalLabel = accessibilityModalLabel, heading = heading, onDismiss = js.Any.fromFunction0(onDismiss))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])

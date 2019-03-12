@@ -20,13 +20,9 @@ object ^ extends js.Object {
     */
   val onBrowserUpdateAvailable: js.UndefOr[firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function0[scala.Unit]]] = js.native
   /** Fired when a connection is made from either an extension process or a content script. */
-  val onConnect: firefoxDashWebextDashBrowserLib.WebExtEvent[
-    js.Function1[/* port */ firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.Port, scala.Unit]
-  ] = js.native
+  val onConnect: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* port */ Port, scala.Unit]] = js.native
   /** Fired when a connection is made from another extension. */
-  val onConnectExternal: firefoxDashWebextDashBrowserLib.WebExtEvent[
-    js.Function1[/* port */ firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.Port, scala.Unit]
-  ] = js.native
+  val onConnectExternal: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* port */ Port, scala.Unit]] = js.native
   /**
     * Fired when the extension is first installed, when the extension is updated to a new version, and when the
     * browser is updated to a new version.
@@ -50,7 +46,7 @@ object ^ extends js.Object {
   val onMessage: firefoxDashWebextDashBrowserLib.WebExtEvent[
     js.Function3[
       /* message */ js.Any, 
-      /* sender */ firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.MessageSender, 
+      /* sender */ MessageSender, 
       /* sendResponse */ js.Function1[/* response */ js.UndefOr[js.Any], scala.Unit], 
       scala.Boolean | js.Promise[js.Any] | scala.Unit
     ]
@@ -69,7 +65,7 @@ object ^ extends js.Object {
   val onMessageExternal: firefoxDashWebextDashBrowserLib.WebExtEvent[
     js.Function3[
       /* message */ js.Any, 
-      /* sender */ firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.MessageSender, 
+      /* sender */ MessageSender, 
       /* sendResponse */ js.Function1[/* response */ js.UndefOr[js.Any], scala.Unit], 
       scala.Boolean | js.Promise[js.Any] | scala.Unit
     ]
@@ -82,12 +78,7 @@ object ^ extends js.Object {
     * @deprecated Unsupported on Firefox at this time.
     */
   val onRestartRequired: js.UndefOr[
-    firefoxDashWebextDashBrowserLib.WebExtEvent[
-      js.Function1[
-        /* reason */ firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.OnRestartRequiredReason, 
-        scala.Unit
-      ]
-    ]
+    firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* reason */ OnRestartRequiredReason, scala.Unit]]
   ] = js.native
   /* runtime events */
   /**
@@ -131,18 +122,18 @@ object ^ extends js.Object {
     * @returns Port through which messages can be sent and received. The port's `runtime.Port onDisconnect` event is
     *     fired if the extension/app does not exist.
     */
-  def connect(): firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.Port = js.native
-  def connect(extensionId: java.lang.String): firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.Port = js.native
+  def connect(): Port = js.native
+  def connect(extensionId: java.lang.String): Port = js.native
   def connect(
     extensionId: java.lang.String,
     connectInfo: firefoxDashWebextDashBrowserLib.Anon_IncludeTlsChannelId
-  ): firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.Port = js.native
+  ): Port = js.native
   /**
     * Connects to a native application in the host machine.
     * @param application The name of the registered application to connect to.
     * @returns Port through which messages can be sent and received with the application
     */
-  def connectNative(application: java.lang.String): firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.Port = js.native
+  def connectNative(application: java.lang.String): Port = js.native
   /* runtime functions */
   /**
     * Retrieves the JavaScript 'window' object for the background page running inside the current extension/app. If
@@ -151,7 +142,7 @@ object ^ extends js.Object {
     */
   def getBackgroundPage(): js.Promise[firefoxDashWebextDashBrowserLib.Window] = js.native
   /** Returns information about the current browser. */
-  def getBrowserInfo(): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.BrowserInfo] = js.native
+  def getBrowserInfo(): js.Promise[BrowserInfo] = js.native
   /**
     * Returns details about the app or extension from the manifest. The object returned is a serialization of the full
     * manifest file.
@@ -163,7 +154,7 @@ object ^ extends js.Object {
     */
   def getPackageDirectoryEntry(): js.Promise[js.Object] = js.native
   /** Returns information about the current platform. */
-  def getPlatformInfo(): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.PlatformInfo] = js.native
+  def getPlatformInfo(): js.Promise[PlatformInfo] = js.native
   /**
     * Converts a relative path within an app/extension install directory to a fully-qualified URL.
     * @param path A path to a resource within an app/extension expressed relative to its install directory.

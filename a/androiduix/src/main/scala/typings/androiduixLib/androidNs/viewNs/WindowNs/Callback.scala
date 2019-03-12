@@ -19,16 +19,16 @@ trait Callback extends js.Object {
 object Callback {
   @scala.inline
   def apply(
-    dispatchGenericMotionEvent: js.Function1[androiduixLib.androidNs.viewNs.MotionEvent, scala.Boolean],
-    dispatchKeyEvent: js.Function1[androiduixLib.androidNs.viewNs.KeyEvent, scala.Boolean],
-    dispatchTouchEvent: js.Function1[androiduixLib.androidNs.viewNs.MotionEvent, scala.Boolean],
-    onAttachedToWindow: js.Function0[scala.Unit],
-    onContentChanged: js.Function0[scala.Unit],
-    onDetachedFromWindow: js.Function0[scala.Unit],
-    onWindowAttributesChanged: js.Function1[androiduixLib.androidNs.viewNs.WindowManagerNs.LayoutParams, scala.Unit],
-    onWindowFocusChanged: js.Function1[scala.Boolean, scala.Unit]
+    dispatchGenericMotionEvent: androiduixLib.androidNs.viewNs.MotionEvent => scala.Boolean,
+    dispatchKeyEvent: androiduixLib.androidNs.viewNs.KeyEvent => scala.Boolean,
+    dispatchTouchEvent: androiduixLib.androidNs.viewNs.MotionEvent => scala.Boolean,
+    onAttachedToWindow: () => scala.Unit,
+    onContentChanged: () => scala.Unit,
+    onDetachedFromWindow: () => scala.Unit,
+    onWindowAttributesChanged: androiduixLib.androidNs.viewNs.WindowManagerNs.LayoutParams => scala.Unit,
+    onWindowFocusChanged: scala.Boolean => scala.Unit
   ): Callback = {
-    val __obj = js.Dynamic.literal(dispatchGenericMotionEvent = dispatchGenericMotionEvent, dispatchKeyEvent = dispatchKeyEvent, dispatchTouchEvent = dispatchTouchEvent, onAttachedToWindow = onAttachedToWindow, onContentChanged = onContentChanged, onDetachedFromWindow = onDetachedFromWindow, onWindowAttributesChanged = onWindowAttributesChanged, onWindowFocusChanged = onWindowFocusChanged)
+    val __obj = js.Dynamic.literal(dispatchGenericMotionEvent = js.Any.fromFunction1(dispatchGenericMotionEvent), dispatchKeyEvent = js.Any.fromFunction1(dispatchKeyEvent), dispatchTouchEvent = js.Any.fromFunction1(dispatchTouchEvent), onAttachedToWindow = js.Any.fromFunction0(onAttachedToWindow), onContentChanged = js.Any.fromFunction0(onContentChanged), onDetachedFromWindow = js.Any.fromFunction0(onDetachedFromWindow), onWindowAttributesChanged = js.Any.fromFunction1(onWindowAttributesChanged), onWindowFocusChanged = js.Any.fromFunction1(onWindowFocusChanged))
   
     __obj.asInstanceOf[Callback]
   }

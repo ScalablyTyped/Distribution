@@ -28,13 +28,13 @@ trait XRelativeTextContentInsert
 object XRelativeTextContentInsert {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    insertTextContentAfter: js.Function2[XTextContent, XTextContent, scala.Unit],
-    insertTextContentBefore: js.Function2[XTextContent, XTextContent, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    insertTextContentAfter: (XTextContent, XTextContent) => scala.Unit,
+    insertTextContentBefore: (XTextContent, XTextContent) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XRelativeTextContentInsert = {
-    val __obj = js.Dynamic.literal(acquire = acquire, insertTextContentAfter = insertTextContentAfter, insertTextContentBefore = insertTextContentBefore, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), insertTextContentAfter = js.Any.fromFunction2(insertTextContentAfter), insertTextContentBefore = js.Any.fromFunction2(insertTextContentBefore), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XRelativeTextContentInsert]
   }

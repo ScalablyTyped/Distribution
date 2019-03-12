@@ -17,14 +17,14 @@ trait PKIStatusInfo extends js.Object {
 object PKIStatusInfo {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     status: scala.Double,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     failInfo: asn1jsLib.asn1jsMod.BitString = null,
     statusStrings: asn1jsLib.asn1jsMod.Utf8String = null
   ): PKIStatusInfo = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, status = status, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), status = status, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
     if (failInfo != null) __obj.updateDynamic("failInfo")(failInfo)
     if (statusStrings != null) __obj.updateDynamic("statusStrings")(statusStrings)
     __obj.asInstanceOf[PKIStatusInfo]

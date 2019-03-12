@@ -155,26 +155,26 @@ trait XSchemaHandler
 object XSchemaHandler {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addInstance: js.Function2[java.lang.String, TemplateIdentifier, scala.Unit],
-    addItemType: js.Function1[TemplateIdentifier, scala.Unit],
-    addProperty: js.Function3[java.lang.String, scala.Double, activexDashLibreofficeLib.`type`, scala.Unit],
-    addPropertyWithDefault: js.Function3[java.lang.String, scala.Double, js.Any, scala.Unit],
-    endComponent: js.Function0[scala.Unit],
-    endNode: js.Function0[scala.Unit],
-    endSchema: js.Function0[scala.Unit],
-    endTemplate: js.Function0[scala.Unit],
-    importComponent: js.Function1[java.lang.String, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    startComponent: js.Function1[java.lang.String, scala.Unit],
-    startGroup: js.Function2[java.lang.String, scala.Double, scala.Unit],
-    startGroupTemplate: js.Function2[TemplateIdentifier, scala.Double, scala.Unit],
-    startSchema: js.Function0[scala.Unit],
-    startSet: js.Function3[java.lang.String, scala.Double, TemplateIdentifier, scala.Unit],
-    startSetTemplate: js.Function3[TemplateIdentifier, scala.Double, TemplateIdentifier, scala.Unit]
+    acquire: () => scala.Unit,
+    addInstance: (java.lang.String, TemplateIdentifier) => scala.Unit,
+    addItemType: TemplateIdentifier => scala.Unit,
+    addProperty: (java.lang.String, scala.Double, activexDashLibreofficeLib.`type`) => scala.Unit,
+    addPropertyWithDefault: (java.lang.String, scala.Double, js.Any) => scala.Unit,
+    endComponent: () => scala.Unit,
+    endNode: () => scala.Unit,
+    endSchema: () => scala.Unit,
+    endTemplate: () => scala.Unit,
+    importComponent: java.lang.String => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    startComponent: java.lang.String => scala.Unit,
+    startGroup: (java.lang.String, scala.Double) => scala.Unit,
+    startGroupTemplate: (TemplateIdentifier, scala.Double) => scala.Unit,
+    startSchema: () => scala.Unit,
+    startSet: (java.lang.String, scala.Double, TemplateIdentifier) => scala.Unit,
+    startSetTemplate: (TemplateIdentifier, scala.Double, TemplateIdentifier) => scala.Unit
   ): XSchemaHandler = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addInstance = addInstance, addItemType = addItemType, addProperty = addProperty, addPropertyWithDefault = addPropertyWithDefault, endComponent = endComponent, endNode = endNode, endSchema = endSchema, endTemplate = endTemplate, importComponent = importComponent, queryInterface = queryInterface, release = release, startComponent = startComponent, startGroup = startGroup, startGroupTemplate = startGroupTemplate, startSchema = startSchema, startSet = startSet, startSetTemplate = startSetTemplate)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addInstance = js.Any.fromFunction2(addInstance), addItemType = js.Any.fromFunction1(addItemType), addProperty = js.Any.fromFunction3(addProperty), addPropertyWithDefault = js.Any.fromFunction3(addPropertyWithDefault), endComponent = js.Any.fromFunction0(endComponent), endNode = js.Any.fromFunction0(endNode), endSchema = js.Any.fromFunction0(endSchema), endTemplate = js.Any.fromFunction0(endTemplate), importComponent = js.Any.fromFunction1(importComponent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), startComponent = js.Any.fromFunction1(startComponent), startGroup = js.Any.fromFunction2(startGroup), startGroupTemplate = js.Any.fromFunction2(startGroupTemplate), startSchema = js.Any.fromFunction0(startSchema), startSet = js.Any.fromFunction3(startSet), startSetTemplate = js.Any.fromFunction3(startSetTemplate))
   
     __obj.asInstanceOf[XSchemaHandler]
   }

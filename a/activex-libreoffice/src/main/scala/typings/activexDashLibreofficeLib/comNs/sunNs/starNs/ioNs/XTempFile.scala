@@ -27,16 +27,16 @@ object XTempFile {
     RemoveFile: scala.Boolean,
     ResourceName: java.lang.String,
     Uri: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getInputStream: js.Function0[XInputStream],
-    getLength: js.Function0[scala.Double],
-    getOutputStream: js.Function0[XOutputStream],
-    getPosition: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    seek: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    getInputStream: () => XInputStream,
+    getLength: () => scala.Double,
+    getOutputStream: () => XOutputStream,
+    getPosition: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    seek: scala.Double => scala.Unit
   ): XTempFile = {
-    val __obj = js.Dynamic.literal(InputStream = InputStream, Length = Length, OutputStream = OutputStream, Position = Position, RemoveFile = RemoveFile, ResourceName = ResourceName, Uri = Uri, acquire = acquire, getInputStream = getInputStream, getLength = getLength, getOutputStream = getOutputStream, getPosition = getPosition, queryInterface = queryInterface, release = release, seek = seek)
+    val __obj = js.Dynamic.literal(InputStream = InputStream, Length = Length, OutputStream = OutputStream, Position = Position, RemoveFile = RemoveFile, ResourceName = ResourceName, Uri = Uri, acquire = js.Any.fromFunction0(acquire), getInputStream = js.Any.fromFunction0(getInputStream), getLength = js.Any.fromFunction0(getLength), getOutputStream = js.Any.fromFunction0(getOutputStream), getPosition = js.Any.fromFunction0(getPosition), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), seek = js.Any.fromFunction1(seek))
   
     __obj.asInstanceOf[XTempFile]
   }

@@ -15,16 +15,10 @@ trait ResourcesResource extends js.Object {
 object ResourcesResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotDeploymentmanagerLib.Anon_AltDeploymentFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Resource]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDeploymentmanagerLib.Anon_AltDeploymentFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ResourcesListResponse]
-    ]
+    get: gapiDotClientDotDeploymentmanagerLib.Anon_AltDeploymentFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Resource],
+    list: gapiDotClientDotDeploymentmanagerLib.Anon_AltDeploymentFields => gapiDotClientLib.gapiNs.clientNs.Request[ResourcesListResponse]
   ): ResourcesResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ResourcesResource]
   }

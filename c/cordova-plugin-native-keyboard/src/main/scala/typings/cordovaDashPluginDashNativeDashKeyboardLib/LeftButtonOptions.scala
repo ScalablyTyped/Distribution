@@ -18,13 +18,13 @@ object LeftButtonOptions {
   @scala.inline
   def apply(
     color: java.lang.String,
-    onPress: js.Function0[scala.Unit],
+    onPress: () => scala.Unit,
     disabledWhenTextEntered: js.UndefOr[scala.Boolean] = js.undefined,
     textStyle: java.lang.String = null,
     `type`: java.lang.String = null,
     value: java.lang.String = null
   ): LeftButtonOptions = {
-    val __obj = js.Dynamic.literal(color = color, onPress = onPress)
+    val __obj = js.Dynamic.literal(color = color, onPress = js.Any.fromFunction0(onPress))
     if (!js.isUndefined(disabledWhenTextEntered)) __obj.updateDynamic("disabledWhenTextEntered")(disabledWhenTextEntered)
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

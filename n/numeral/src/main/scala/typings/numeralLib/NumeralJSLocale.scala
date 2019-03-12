@@ -18,9 +18,9 @@ object NumeralJSLocale {
     abbreviations: Anon_Billion,
     currency: Anon_Symbol,
     delimiters: Anon_Decimal,
-    ordinal: js.Function1[scala.Double, java.lang.String]
+    ordinal: scala.Double => java.lang.String
   ): NumeralJSLocale = {
-    val __obj = js.Dynamic.literal(abbreviations = abbreviations, currency = currency, delimiters = delimiters, ordinal = ordinal)
+    val __obj = js.Dynamic.literal(abbreviations = abbreviations, currency = currency, delimiters = delimiters, ordinal = js.Any.fromFunction1(ordinal))
   
     __obj.asInstanceOf[NumeralJSLocale]
   }

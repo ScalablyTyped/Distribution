@@ -19,11 +19,11 @@ object MapEventListener {
   @scala.inline
   def apply(
     eventName: java.lang.String,
-    listener: js.Function1[js.Any, js.Any],
+    listener: js.Any => js.Any,
     listenerId: java.lang.String,
     target: js.Any
   ): MapEventListener = {
-    val __obj = js.Dynamic.literal(eventName = eventName, listener = listener, listenerId = listenerId, target = target)
+    val __obj = js.Dynamic.literal(eventName = eventName, listener = js.Any.fromFunction1(listener), listenerId = listenerId, target = target)
   
     __obj.asInstanceOf[MapEventListener]
   }

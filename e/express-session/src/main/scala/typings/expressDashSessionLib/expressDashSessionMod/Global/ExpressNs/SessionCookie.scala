@@ -16,13 +16,13 @@ object SessionCookie {
     httpOnly: scala.Boolean,
     originalMaxAge: scala.Double,
     path: java.lang.String,
-    serialize: js.Function2[java.lang.String, java.lang.String, java.lang.String],
+    serialize: (java.lang.String, java.lang.String) => java.lang.String,
     domain: java.lang.String = null,
     maxAge: scala.Int | scala.Double = null,
     sameSite: scala.Boolean | java.lang.String = null,
     secure: js.UndefOr[scala.Boolean] = js.undefined
   ): SessionCookie = {
-    val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], httpOnly = httpOnly, originalMaxAge = originalMaxAge, path = path, serialize = serialize)
+    val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], httpOnly = httpOnly, originalMaxAge = originalMaxAge, path = path, serialize = js.Any.fromFunction2(serialize))
     if (domain != null) __obj.updateDynamic("domain")(domain)
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (sameSite != null) __obj.updateDynamic("sameSite")(sameSite.asInstanceOf[js.Any])

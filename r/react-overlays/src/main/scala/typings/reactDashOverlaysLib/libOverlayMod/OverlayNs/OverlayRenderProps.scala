@@ -20,11 +20,11 @@ object OverlayRenderProps {
     arrowProps: reactDashOverlaysLib.Anon_Element,
     placement: Placements,
     props: reactDashOverlaysLib.Anon_Arialabelledby,
-    scheduleUpdate: js.Function0[scala.Unit],
+    scheduleUpdate: () => scala.Unit,
     show: scala.Boolean,
     outOfBoundaries: js.UndefOr[scala.Boolean] = js.undefined
   ): OverlayRenderProps = {
-    val __obj = js.Dynamic.literal(arrowProps = arrowProps, placement = placement, props = props, scheduleUpdate = scheduleUpdate, show = show)
+    val __obj = js.Dynamic.literal(arrowProps = arrowProps, placement = placement, props = props, scheduleUpdate = js.Any.fromFunction0(scheduleUpdate), show = show)
     if (!js.isUndefined(outOfBoundaries)) __obj.updateDynamic("outOfBoundaries")(outOfBoundaries)
     __obj.asInstanceOf[OverlayRenderProps]
   }

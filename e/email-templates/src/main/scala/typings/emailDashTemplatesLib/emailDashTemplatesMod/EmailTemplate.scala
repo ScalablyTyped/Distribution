@@ -26,11 +26,11 @@ trait EmailTemplate extends js.Object {
 object EmailTemplate {
   @scala.inline
   def apply(
-    juiceResources: js.Function1[java.lang.String, js.Promise[java.lang.String]],
-    render: js.Function2[java.lang.String, js.Any, js.Promise[java.lang.String]],
-    send: js.Function1[EmailOptions, js.Any]
+    juiceResources: java.lang.String => js.Promise[java.lang.String],
+    render: (java.lang.String, js.Any) => js.Promise[java.lang.String],
+    send: EmailOptions => js.Any
   ): EmailTemplate = {
-    val __obj = js.Dynamic.literal(juiceResources = juiceResources, render = render, send = send)
+    val __obj = js.Dynamic.literal(juiceResources = js.Any.fromFunction1(juiceResources), render = js.Any.fromFunction2(render), send = js.Any.fromFunction1(send))
   
     __obj.asInstanceOf[EmailTemplate]
   }

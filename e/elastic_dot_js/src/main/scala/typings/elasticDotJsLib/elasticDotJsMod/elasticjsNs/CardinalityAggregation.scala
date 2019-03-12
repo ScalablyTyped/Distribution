@@ -51,16 +51,16 @@ trait CardinalityAggregation extends Aggregation {
 object CardinalityAggregation {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    field: js.Function1[java.lang.String, CardinalityAggregation],
-    lang: js.Function1[java.lang.String, CardinalityAggregation],
-    params: js.Function1[js.Object, CardinalityAggregation],
-    precisionThreshold: js.Function1[scala.Double, CardinalityAggregation],
-    rehash: js.Function1[scala.Boolean, CardinalityAggregation],
-    script: js.Function1[java.lang.String, CardinalityAggregation],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    field: java.lang.String => CardinalityAggregation,
+    lang: java.lang.String => CardinalityAggregation,
+    params: js.Object => CardinalityAggregation,
+    precisionThreshold: scala.Double => CardinalityAggregation,
+    rehash: scala.Boolean => CardinalityAggregation,
+    script: java.lang.String => CardinalityAggregation,
+    toJSON: () => js.Any
   ): CardinalityAggregation = {
-    val __obj = js.Dynamic.literal(_type = _type, field = field, lang = lang, params = params, precisionThreshold = precisionThreshold, rehash = rehash, script = script, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), field = js.Any.fromFunction1(field), lang = js.Any.fromFunction1(lang), params = js.Any.fromFunction1(params), precisionThreshold = js.Any.fromFunction1(precisionThreshold), rehash = js.Any.fromFunction1(rehash), script = js.Any.fromFunction1(script), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[CardinalityAggregation]
   }

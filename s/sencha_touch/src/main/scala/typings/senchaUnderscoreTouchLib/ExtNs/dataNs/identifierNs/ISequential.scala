@@ -25,24 +25,24 @@ object ISequential {
   def apply(
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     extend: java.lang.String = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getPrefix: js.Function0[java.lang.String] = null,
-    getSeed: js.Function0[scala.Double] = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getPrefix: () => java.lang.String = null,
+    getSeed: () => scala.Double = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     prefix: java.lang.String = null,
     seed: scala.Int | scala.Double = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setPrefix: js.Function1[/* prefix */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setSeed: js.Function1[/* seed */ js.UndefOr[scala.Double], scala.Unit] = null,
+    setPrefix: /* prefix */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setSeed: /* seed */ js.UndefOr[scala.Double] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null
@@ -50,24 +50,24 @@ object ISequential {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getPrefix != null) __obj.updateDynamic("getPrefix")(getPrefix)
-    if (getSeed != null) __obj.updateDynamic("getSeed")(getSeed)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getPrefix != null) __obj.updateDynamic("getPrefix")(js.Any.fromFunction0(getPrefix))
+    if (getSeed != null) __obj.updateDynamic("getSeed")(js.Any.fromFunction0(getSeed))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setPrefix != null) __obj.updateDynamic("setPrefix")(setPrefix)
-    if (setSeed != null) __obj.updateDynamic("setSeed")(setSeed)
+    if (setPrefix != null) __obj.updateDynamic("setPrefix")(js.Any.fromFunction1(setPrefix))
+    if (setSeed != null) __obj.updateDynamic("setSeed")(js.Any.fromFunction1(setSeed))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (uses != null) __obj.updateDynamic("uses")(uses)

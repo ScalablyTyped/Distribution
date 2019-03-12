@@ -16,11 +16,11 @@ object IPathHistory {
   @scala.inline
   def apply(
     initial: js.Any,
-    listen: js.Function1[js.Any, scala.Unit],
-    popState: js.Function1[js.Any, scala.Unit],
-    pushState: js.Function3[js.Any, java.lang.String, java.lang.String, scala.Unit]
+    listen: js.Any => scala.Unit,
+    popState: js.Any => scala.Unit,
+    pushState: (js.Any, java.lang.String, java.lang.String) => scala.Unit
   ): IPathHistory = {
-    val __obj = js.Dynamic.literal(initial = initial, listen = listen, popState = popState, pushState = pushState)
+    val __obj = js.Dynamic.literal(initial = initial, listen = js.Any.fromFunction1(listen), popState = js.Any.fromFunction1(popState), pushState = js.Any.fromFunction3(pushState))
   
     __obj.asInstanceOf[IPathHistory]
   }

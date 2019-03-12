@@ -25,7 +25,7 @@ trait ScrollSyncProps
 object ScrollSyncProps {
   @scala.inline
   def apply(
-    children: js.Function1[ScrollSyncChildProps, reactLib.reactMod.ReactNs.ReactNode],
+    children: ScrollSyncChildProps => reactLib.reactMod.ReactNs.ReactNode,
     StringDictionary: /**
     * PLEASE NOTE
     * The [key: string]: any; line is here on purpose
@@ -35,7 +35,7 @@ object ScrollSyncProps {
     */
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): ScrollSyncProps = {
-    val __obj = js.Dynamic.literal(children = children)
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ScrollSyncProps]
   }

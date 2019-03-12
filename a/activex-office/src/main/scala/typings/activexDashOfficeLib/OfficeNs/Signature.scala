@@ -13,7 +13,7 @@ class Signature protected () extends js.Object {
   val CanSetup: scala.Boolean = js.native
   val Creator: scala.Double = js.native
   val Details: SignatureInfo = js.native
-  val ExpireDate: activexDashInteropLib.VarDate = js.native
+  val ExpireDate: stdLib.VarDate = js.native
   val IsCertificateExpired: scala.Boolean = js.native
   val IsCertificateRevoked: scala.Boolean = js.native
   val IsSignatureLine: scala.Boolean = js.native
@@ -23,7 +23,7 @@ class Signature protected () extends js.Object {
   var `Office.Signature_typekey`: Signature = js.native
   val Parent: js.Any = js.native
   val Setup: SignatureSetup = js.native
-  val SignDate: activexDashInteropLib.VarDate = js.native
+  val SignDate: stdLib.VarDate = js.native
   val SignatureLineShape: Shape = js.native
   val Signer: java.lang.String = js.native
   val SortHint: scala.Double = js.native

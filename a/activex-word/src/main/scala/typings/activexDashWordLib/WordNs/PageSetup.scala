@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.PageSetup")
 @js.native
 class PageSetup protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var BookFoldPrinting: scala.Boolean = js.native
   var BookFoldPrintingSheets: scala.Double = js.native
   var BookFoldRevPrinting: scala.Boolean = js.native
@@ -25,7 +25,7 @@ class PageSetup protected () extends js.Object {
   var HeaderDistance: scala.Double = js.native
   var LayoutMode: WdLayoutMode = js.native
   var LeftMargin: scala.Double = js.native
-  var LineNumbering: LineNumbering = js.native
+  var LineNumbering: activexDashWordLib.WordNs.LineNumbering = js.native
   var LinesPage: scala.Double = js.native
   var MirrorMargins: scala.Double = js.native
   var OddAndEvenPagesHeaderFooter: scala.Double = js.native
@@ -40,7 +40,7 @@ class PageSetup protected () extends js.Object {
   var SectionStart: WdSectionStart = js.native
   var ShowGrid: scala.Boolean = js.native
   var SuppressEndnotes: scala.Double = js.native
-  var TextColumns: TextColumns = js.native
+  var TextColumns: activexDashWordLib.WordNs.TextColumns = js.native
   var TopMargin: scala.Double = js.native
   var TwoPagesOnOne: scala.Boolean = js.native
   var VerticalAlignment: WdVerticalAlignment = js.native

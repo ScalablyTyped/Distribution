@@ -26,8 +26,8 @@ trait IVexOptions extends js.Object {
 object IVexOptions {
   @scala.inline
   def apply(
-    afterClose: js.Function0[scala.Unit] = null,
-    afterOpen: js.Function1[/* vexContent */ jqueryLib.JQuery[stdLib.HTMLElement], scala.Unit] = null,
+    afterClose: () => scala.Unit = null,
+    afterOpen: /* vexContent */ jqueryLib.JQuery[stdLib.HTMLElement] => scala.Unit = null,
     appendLocation: stdLib.HTMLElement | jqueryLib.JQuery[stdLib.HTMLElement] | java.lang.String = null,
     className: java.lang.String = null,
     closeCSS: ICSSAttributes = null,
@@ -43,8 +43,8 @@ object IVexOptions {
     showCloseButton: js.UndefOr[scala.Boolean] = js.undefined
   ): IVexOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose)
-    if (afterOpen != null) __obj.updateDynamic("afterOpen")(afterOpen)
+    if (afterClose != null) __obj.updateDynamic("afterClose")(js.Any.fromFunction0(afterClose))
+    if (afterOpen != null) __obj.updateDynamic("afterOpen")(js.Any.fromFunction1(afterOpen))
     if (appendLocation != null) __obj.updateDynamic("appendLocation")(appendLocation.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (closeCSS != null) __obj.updateDynamic("closeCSS")(closeCSS)

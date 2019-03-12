@@ -15,16 +15,10 @@ trait ChangeLogsResource extends js.Object {
 object ChangeLogsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ChangeLog]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_Action, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ChangeLogsListResponse]
-    ]
+    get: gapiDotClientDotDfareportingLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[ChangeLog],
+    list: gapiDotClientDotDfareportingLib.Anon_Action => gapiDotClientLib.gapiNs.clientNs.Request[ChangeLogsListResponse]
   ): ChangeLogsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ChangeLogsResource]
   }

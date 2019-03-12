@@ -22,7 +22,7 @@ trait Pair extends Node {
 object Pair {
   @scala.inline
   def apply(
-    toJSON: js.Function0[js.Any],
+    toJSON: () => js.Any,
     `type`: yamlLib.yamlLibStrings.PAIR,
     comment: java.lang.String = null,
     commentBefore: java.lang.String = null,
@@ -32,7 +32,7 @@ object Pair {
     tag: java.lang.String = null,
     value: AstNode = null
   ): Pair = {
-    val __obj = js.Dynamic.literal(toJSON = toJSON)
+    val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON))
     __obj.updateDynamic("type")(`type`)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore)

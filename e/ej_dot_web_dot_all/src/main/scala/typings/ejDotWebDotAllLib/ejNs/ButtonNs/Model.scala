@@ -85,11 +85,11 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
+    click: /* e */ ClickEventArgs => scala.Unit = null,
     contentType: ejDotWebDotAllLib.ejNs.ContentType | java.lang.String = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     height: scala.Int | scala.Double = null,
@@ -106,11 +106,11 @@ object Model {
     width: java.lang.String | scala.Double = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

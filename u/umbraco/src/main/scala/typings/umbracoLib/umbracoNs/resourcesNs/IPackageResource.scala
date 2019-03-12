@@ -64,14 +64,14 @@ trait IPackageResource extends js.Object {
 object IPackageResource {
   @scala.inline
   def apply(
-    cleanUp: js.Function1[java.lang.String, scala.Unit],
-    fetch: js.Function1[java.lang.String, java.lang.String],
-    `import`: js.Function1[java.lang.String, scala.Double],
-    installData: js.Function1[java.lang.String, scala.Unit],
-    installFiles: js.Function1[java.lang.String, scala.Unit]
+    cleanUp: java.lang.String => scala.Unit,
+    fetch: java.lang.String => java.lang.String,
+    `import`: java.lang.String => scala.Double,
+    installData: java.lang.String => scala.Unit,
+    installFiles: java.lang.String => scala.Unit
   ): IPackageResource = {
-    val __obj = js.Dynamic.literal(cleanUp = cleanUp, fetch = fetch, installData = installData, installFiles = installFiles)
-    __obj.updateDynamic("import")(`import`)
+    val __obj = js.Dynamic.literal(cleanUp = js.Any.fromFunction1(cleanUp), fetch = js.Any.fromFunction1(fetch), installData = js.Any.fromFunction1(installData), installFiles = js.Any.fromFunction1(installFiles))
+    __obj.updateDynamic("import")(js.Any.fromFunction1(`import`))
     __obj.asInstanceOf[IPackageResource]
   }
 }

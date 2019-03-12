@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait XListEntrySource
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** provides access to the entirety of all list entries */
-  val AllListEntries: activexDashInteropLib.SafeArray[java.lang.String]
+  val AllListEntries: stdLib.SafeArray[java.lang.String]
   /** retrieves the number of entries in the list */
   val ListEntryCount: scala.Double
   /**
@@ -24,7 +24,7 @@ trait XListEntrySource
     */
   def addListEntryListener(Listener: XListEntryListener): scala.Unit
   /** provides access to the entirety of all list entries */
-  def getAllListEntries(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getAllListEntries(): stdLib.SafeArray[java.lang.String]
   /**
     * provides access to a single list entry
     * @see getListEntryCount
@@ -43,18 +43,18 @@ trait XListEntrySource
 object XListEntrySource {
   @scala.inline
   def apply(
-    AllListEntries: activexDashInteropLib.SafeArray[java.lang.String],
+    AllListEntries: stdLib.SafeArray[java.lang.String],
     ListEntryCount: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addListEntryListener: js.Function1[XListEntryListener, scala.Unit],
-    getAllListEntries: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getListEntry: js.Function1[scala.Double, java.lang.String],
-    getListEntryCount: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeListEntryListener: js.Function1[XListEntryListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addListEntryListener: XListEntryListener => scala.Unit,
+    getAllListEntries: () => stdLib.SafeArray[java.lang.String],
+    getListEntry: scala.Double => java.lang.String,
+    getListEntryCount: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeListEntryListener: XListEntryListener => scala.Unit
   ): XListEntrySource = {
-    val __obj = js.Dynamic.literal(AllListEntries = AllListEntries, ListEntryCount = ListEntryCount, acquire = acquire, addListEntryListener = addListEntryListener, getAllListEntries = getAllListEntries, getListEntry = getListEntry, getListEntryCount = getListEntryCount, queryInterface = queryInterface, release = release, removeListEntryListener = removeListEntryListener)
+    val __obj = js.Dynamic.literal(AllListEntries = AllListEntries, ListEntryCount = ListEntryCount, acquire = js.Any.fromFunction0(acquire), addListEntryListener = js.Any.fromFunction1(addListEntryListener), getAllListEntries = js.Any.fromFunction0(getAllListEntries), getListEntry = js.Any.fromFunction1(getListEntry), getListEntryCount = js.Any.fromFunction0(getListEntryCount), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeListEntryListener = js.Any.fromFunction1(removeListEntryListener))
   
     __obj.asInstanceOf[XListEntrySource]
   }

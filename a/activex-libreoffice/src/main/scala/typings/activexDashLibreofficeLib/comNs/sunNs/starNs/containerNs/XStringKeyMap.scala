@@ -53,13 +53,13 @@ object XStringKeyMap {
   @scala.inline
   def apply(
     Count: scala.Double,
-    getKeyByIndex: js.Function1[scala.Double, java.lang.String],
-    getValue: js.Function1[java.lang.String, js.Any],
-    getValueByIndex: js.Function1[scala.Double, js.Any],
-    hasValue: js.Function1[java.lang.String, scala.Boolean],
-    insertValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+    getKeyByIndex: scala.Double => java.lang.String,
+    getValue: java.lang.String => js.Any,
+    getValueByIndex: scala.Double => js.Any,
+    hasValue: java.lang.String => scala.Boolean,
+    insertValue: (java.lang.String, js.Any) => scala.Unit
   ): XStringKeyMap = {
-    val __obj = js.Dynamic.literal(Count = Count, getKeyByIndex = getKeyByIndex, getValue = getValue, getValueByIndex = getValueByIndex, hasValue = hasValue, insertValue = insertValue)
+    val __obj = js.Dynamic.literal(Count = Count, getKeyByIndex = js.Any.fromFunction1(getKeyByIndex), getValue = js.Any.fromFunction1(getValue), getValueByIndex = js.Any.fromFunction1(getValueByIndex), hasValue = js.Any.fromFunction1(hasValue), insertValue = js.Any.fromFunction2(insertValue))
   
     __obj.asInstanceOf[XStringKeyMap]
   }

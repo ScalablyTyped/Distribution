@@ -24,7 +24,7 @@ trait PartStream
   @JSName("addListener")
   def addListener_end(event: dicerLib.dicerLibStrings.end, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def addListener_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_header(event: dicerLib.dicerLibStrings.header, listener: js.Function1[/* header */ js.Object, scala.Unit]): this.type = js.native
   @JSName("addListener")
@@ -39,7 +39,7 @@ trait PartStream
   @JSName("on")
   def on_end(event: dicerLib.dicerLibStrings.end, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def on_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_header(event: dicerLib.dicerLibStrings.header, listener: js.Function1[/* header */ js.Object, scala.Unit]): this.type = js.native
   @JSName("on")
@@ -54,7 +54,7 @@ trait PartStream
   @JSName("once")
   def once_end(event: dicerLib.dicerLibStrings.end, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def once_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("once")
   def once_header(event: dicerLib.dicerLibStrings.header, listener: js.Function1[/* header */ js.Object, scala.Unit]): this.type = js.native
   @JSName("once")
@@ -69,7 +69,7 @@ trait PartStream
   @JSName("prependListener")
   def prependListener_end(event: dicerLib.dicerLibStrings.end, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def prependListener_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_header(event: dicerLib.dicerLibStrings.header, listener: js.Function1[/* header */ js.Object, scala.Unit]): this.type = js.native
   @JSName("prependListener")
@@ -84,7 +84,7 @@ trait PartStream
   @JSName("prependOnceListener")
   def prependOnceListener_end(event: dicerLib.dicerLibStrings.end, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def prependOnceListener_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_header(event: dicerLib.dicerLibStrings.header, listener: js.Function1[/* header */ js.Object, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -99,7 +99,7 @@ trait PartStream
   @JSName("removeListener")
   def removeListener_end(event: dicerLib.dicerLibStrings.end, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def removeListener_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_header(event: dicerLib.dicerLibStrings.header, listener: js.Function1[/* header */ js.Object, scala.Unit]): this.type = js.native
   @JSName("removeListener")

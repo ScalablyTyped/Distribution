@@ -41,8 +41,8 @@ object MeteorNs extends js.Object {
   /** Login **/
   /** Event **/
   trait Event extends js.Object {
-    var currentTarget: reactLib.HTMLElement
-    var target: reactLib.HTMLElement
+    var currentTarget: stdLib.HTMLElement
+    var target: stdLib.HTMLElement
     var `type`: java.lang.String
     var which: scala.Double
     def isDefaultPrevented(): scala.Boolean

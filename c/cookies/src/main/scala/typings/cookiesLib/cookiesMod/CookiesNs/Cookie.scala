@@ -36,11 +36,11 @@ object Cookie {
     path: java.lang.String,
     sameSite: scala.Boolean,
     secure: scala.Boolean,
-    toHeader: js.Function0[java.lang.String],
-    toString: js.Function0[java.lang.String],
+    toHeader: () => java.lang.String,
+    toString: () => java.lang.String,
     value: java.lang.String
   ): Cookie = {
-    val __obj = js.Dynamic.literal(domain = domain, expires = expires, httpOnly = httpOnly, maxAge = maxAge, maxage = maxage, name = name, overwrite = overwrite, path = path, sameSite = sameSite, secure = secure, toHeader = toHeader, toString = toString, value = value)
+    val __obj = js.Dynamic.literal(domain = domain, expires = expires, httpOnly = httpOnly, maxAge = maxAge, maxage = maxage, name = name, overwrite = overwrite, path = path, sameSite = sameSite, secure = secure, toHeader = js.Any.fromFunction0(toHeader), toString = js.Any.fromFunction0(toString), value = value)
   
     __obj.asInstanceOf[Cookie]
   }

@@ -11,8 +11,8 @@ trait INgProgressFactory extends js.Object {
 
 object INgProgressFactory {
   @scala.inline
-  def apply(createInstance: js.Function0[INgProgress]): INgProgressFactory = {
-    val __obj = js.Dynamic.literal(createInstance = createInstance)
+  def apply(createInstance: () => INgProgress): INgProgressFactory = {
+    val __obj = js.Dynamic.literal(createInstance = js.Any.fromFunction0(createInstance))
   
     __obj.asInstanceOf[INgProgressFactory]
   }

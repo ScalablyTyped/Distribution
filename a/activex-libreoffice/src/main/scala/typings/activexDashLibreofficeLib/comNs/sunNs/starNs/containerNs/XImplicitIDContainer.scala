@@ -19,14 +19,14 @@ trait XImplicitIDContainer extends XImplicitIDReplace {
 object XImplicitIDContainer {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addWithImplicitID: js.Function1[js.Any, java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeByImplicitID: js.Function1[java.lang.String, scala.Unit],
-    replaceByUniqueID: js.Function2[java.lang.String, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    addWithImplicitID: js.Any => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeByImplicitID: java.lang.String => scala.Unit,
+    replaceByUniqueID: (java.lang.String, js.Any) => scala.Unit
   ): XImplicitIDContainer = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addWithImplicitID = addWithImplicitID, queryInterface = queryInterface, release = release, removeByImplicitID = removeByImplicitID, replaceByUniqueID = replaceByUniqueID)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addWithImplicitID = js.Any.fromFunction1(addWithImplicitID), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByImplicitID = js.Any.fromFunction1(removeByImplicitID), replaceByUniqueID = js.Any.fromFunction2(replaceByUniqueID))
   
     __obj.asInstanceOf[XImplicitIDContainer]
   }

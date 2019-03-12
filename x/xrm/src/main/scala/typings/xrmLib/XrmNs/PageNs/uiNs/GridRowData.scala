@@ -15,8 +15,8 @@ trait GridRowData
 
 object GridRowData {
   @scala.inline
-  def apply(getEntity: js.Function0[xrmLib.XrmNs.ControlsNs.GridNs.GridEntity]): GridRowData = {
-    val __obj = js.Dynamic.literal(getEntity = getEntity)
+  def apply(getEntity: () => xrmLib.XrmNs.ControlsNs.GridNs.GridEntity): GridRowData = {
+    val __obj = js.Dynamic.literal(getEntity = js.Any.fromFunction0(getEntity))
   
     __obj.asInstanceOf[GridRowData]
   }

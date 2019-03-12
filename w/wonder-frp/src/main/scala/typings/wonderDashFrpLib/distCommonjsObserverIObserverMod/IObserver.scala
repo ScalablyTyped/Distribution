@@ -15,12 +15,12 @@ trait IObserver
 object IObserver {
   @scala.inline
   def apply(
-    completed: js.Function0[js.Any],
-    dispose: js.Function0[scala.Unit],
-    error: js.Function1[js.Any, js.Any],
-    next: js.Function1[js.Any, js.Any]
+    completed: () => js.Any,
+    dispose: () => scala.Unit,
+    error: js.Any => js.Any,
+    next: js.Any => js.Any
   ): IObserver = {
-    val __obj = js.Dynamic.literal(completed = completed, dispose = dispose, error = error, next = next)
+    val __obj = js.Dynamic.literal(completed = js.Any.fromFunction0(completed), dispose = js.Any.fromFunction0(dispose), error = js.Any.fromFunction1(error), next = js.Any.fromFunction1(next))
   
     __obj.asInstanceOf[IObserver]
   }

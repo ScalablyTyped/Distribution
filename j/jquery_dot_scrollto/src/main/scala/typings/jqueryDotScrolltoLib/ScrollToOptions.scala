@@ -55,8 +55,8 @@ object ScrollToOptions {
     easing: java.lang.String = null,
     margin: js.UndefOr[scala.Boolean] = js.undefined,
     offset: js.Any = null,
-    onAfter: js.Function0[scala.Unit] = null,
-    onAfterFirst: js.Function0[scala.Unit] = null,
+    onAfter: () => scala.Unit = null,
+    onAfterFirst: () => scala.Unit = null,
     over: js.Any = null,
     queue: js.UndefOr[scala.Boolean] = js.undefined
   ): ScrollToOptions = {
@@ -66,8 +66,8 @@ object ScrollToOptions {
     if (easing != null) __obj.updateDynamic("easing")(easing)
     if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin)
     if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (onAfter != null) __obj.updateDynamic("onAfter")(onAfter)
-    if (onAfterFirst != null) __obj.updateDynamic("onAfterFirst")(onAfterFirst)
+    if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction0(onAfter))
+    if (onAfterFirst != null) __obj.updateDynamic("onAfterFirst")(js.Any.fromFunction0(onAfterFirst))
     if (over != null) __obj.updateDynamic("over")(over)
     if (!js.isUndefined(queue)) __obj.updateDynamic("queue")(queue)
     __obj.asInstanceOf[ScrollToOptions]

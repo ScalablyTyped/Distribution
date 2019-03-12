@@ -20,13 +20,13 @@ object InteractionEvent {
   def apply(
     currentTarget: pixiDotJsLib.PIXINs.DisplayObject,
     data: InteractionData,
-    reset: js.Function0[scala.Unit],
-    stopPropagation: js.Function0[scala.Unit],
+    reset: () => scala.Unit,
+    stopPropagation: () => scala.Unit,
     stopped: scala.Boolean,
     target: pixiDotJsLib.PIXINs.DisplayObject,
     `type`: java.lang.String
   ): InteractionEvent = {
-    val __obj = js.Dynamic.literal(currentTarget = currentTarget, data = data, reset = reset, stopPropagation = stopPropagation, stopped = stopped, target = target)
+    val __obj = js.Dynamic.literal(currentTarget = currentTarget, data = data, reset = js.Any.fromFunction0(reset), stopPropagation = js.Any.fromFunction0(stopPropagation), stopped = stopped, target = target)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[InteractionEvent]
   }

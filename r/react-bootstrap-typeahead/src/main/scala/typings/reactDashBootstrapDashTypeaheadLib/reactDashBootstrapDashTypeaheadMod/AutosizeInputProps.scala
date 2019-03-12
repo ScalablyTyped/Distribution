@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in 'className' | 'style' ]: react.react.InputHTMLAttributes<'input'>[P]} */ trait AutosizeInputProps extends js.Object {
   var inputClassName: js.UndefOr[java.lang.String] = js.undefined
-  var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.LegacyRef[reactLib.HTMLInputElement]] = js.undefined
+  var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.LegacyRef[stdLib.HTMLInputElement]] = js.undefined
   var inputStyle: js.UndefOr[
     stdLib.Pick[
       reactLib.reactMod.ReactNs.CSSProperties, 
@@ -23,7 +23,7 @@ object AutosizeInputProps {
   def apply(
     style: reactLib.reactMod.ReactNs.CSSProperties,
     inputClassName: java.lang.String = null,
-    inputRef: reactLib.reactMod.ReactNs.LegacyRef[reactLib.HTMLInputElement] = null,
+    inputRef: reactLib.reactMod.ReactNs.LegacyRef[stdLib.HTMLInputElement] = null,
     inputStyle: stdLib.Pick[
       reactLib.reactMod.ReactNs.CSSProperties, 
       reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.boxSizing | reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.width

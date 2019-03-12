@@ -16,14 +16,14 @@ trait DataFilter
 object DataFilter {
   @scala.inline
   def apply(
-    DataSequences: activexDashInteropLib.SafeArray[XLabeledDataSequence],
-    acquire: js.Function0[scala.Unit],
-    getDataSequences: js.Function0[activexDashInteropLib.SafeArray[XLabeledDataSequence]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setData: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XLabeledDataSequence], scala.Unit]
+    DataSequences: stdLib.SafeArray[XLabeledDataSequence],
+    acquire: () => scala.Unit,
+    getDataSequences: () => stdLib.SafeArray[XLabeledDataSequence],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setData: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XLabeledDataSequence] => scala.Unit
   ): DataFilter = {
-    val __obj = js.Dynamic.literal(DataSequences = DataSequences, acquire = acquire, getDataSequences = getDataSequences, queryInterface = queryInterface, release = release, setData = setData)
+    val __obj = js.Dynamic.literal(DataSequences = DataSequences, acquire = js.Any.fromFunction0(acquire), getDataSequences = js.Any.fromFunction0(getDataSequences), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setData = js.Any.fromFunction1(setData))
   
     __obj.asInstanceOf[DataFilter]
   }

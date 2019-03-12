@@ -8,12 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("tracking")
 @js.native
 object ^ extends js.Object {
-  def track(element: java.lang.String, tracker: trackingLib.trackingNs.Tracker): trackingLib.trackingNs.TrackerTask = js.native
-  def track(
-    element: java.lang.String,
-    tracker: trackingLib.trackingNs.Tracker,
-    options: trackingLib.Anon_Audio
-  ): trackingLib.trackingNs.TrackerTask = js.native
+  def track(element: java.lang.String, tracker: Tracker): TrackerTask = js.native
+  def track(element: java.lang.String, tracker: Tracker, options: trackingLib.Anon_Audio): TrackerTask = js.native
   /**
     * Tracks a canvas, image or video element based on the specified `tracker`
     * instance. This method extract the pixel information of the input element
@@ -25,11 +21,7 @@ object ^ extends js.Object {
     * @param tracker Tracker instance used to track the element.
     * @param options Optional tracker configuration.
     */
-  def track(element: stdLib.HTMLElement, tracker: trackingLib.trackingNs.Tracker): trackingLib.trackingNs.TrackerTask = js.native
-  def track(
-    element: stdLib.HTMLElement,
-    tracker: trackingLib.trackingNs.Tracker,
-    options: trackingLib.Anon_Audio
-  ): trackingLib.trackingNs.TrackerTask = js.native
+  def track(element: stdLib.HTMLElement, tracker: Tracker): TrackerTask = js.native
+  def track(element: stdLib.HTMLElement, tracker: Tracker, options: trackingLib.Anon_Audio): TrackerTask = js.native
 }
 

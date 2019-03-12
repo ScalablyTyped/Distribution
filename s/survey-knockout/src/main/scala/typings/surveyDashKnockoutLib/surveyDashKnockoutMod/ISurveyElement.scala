@@ -21,18 +21,18 @@ trait ISurveyElement extends js.Object {
 object ISurveyElement {
   @scala.inline
   def apply(
-    getType: js.Function0[java.lang.String],
+    getType: () => java.lang.String,
     isPage: scala.Boolean,
     isReadOnly: scala.Boolean,
     isVisible: scala.Boolean,
-    locStrsChanged: js.Function0[js.Any],
+    locStrsChanged: () => js.Any,
     name: java.lang.String,
-    onFirstRendering: js.Function0[js.Any],
-    onSurveyLoad: js.Function0[js.Any],
-    setSurveyImpl: js.Function1[ISurveyImpl, js.Any],
-    setVisibleIndex: js.Function1[scala.Double, scala.Double]
+    onFirstRendering: () => js.Any,
+    onSurveyLoad: () => js.Any,
+    setSurveyImpl: ISurveyImpl => js.Any,
+    setVisibleIndex: scala.Double => scala.Double
   ): ISurveyElement = {
-    val __obj = js.Dynamic.literal(getType = getType, isPage = isPage, isReadOnly = isReadOnly, isVisible = isVisible, locStrsChanged = locStrsChanged, name = name, onFirstRendering = onFirstRendering, onSurveyLoad = onSurveyLoad, setSurveyImpl = setSurveyImpl, setVisibleIndex = setVisibleIndex)
+    val __obj = js.Dynamic.literal(getType = js.Any.fromFunction0(getType), isPage = isPage, isReadOnly = isReadOnly, isVisible = isVisible, locStrsChanged = js.Any.fromFunction0(locStrsChanged), name = name, onFirstRendering = js.Any.fromFunction0(onFirstRendering), onSurveyLoad = js.Any.fromFunction0(onSurveyLoad), setSurveyImpl = js.Any.fromFunction1(setSurveyImpl), setVisibleIndex = js.Any.fromFunction1(setVisibleIndex))
   
     __obj.asInstanceOf[ISurveyElement]
   }

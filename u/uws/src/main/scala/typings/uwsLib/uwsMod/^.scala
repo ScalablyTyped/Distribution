@@ -17,7 +17,7 @@ object ^ extends js.Object {
   def createServer(options: uwsLib.uwsMod.WebSocketNs.IServerOptions): uwsLib.uwsMod.WebSocketNs.Server = js.native
   def createServer(
     options: uwsLib.uwsMod.WebSocketNs.IServerOptions,
-    connectionListener: js.Function1[/* client */ uwsLib.uwsMod.WebSocket, scala.Unit]
+    connectionListener: js.Function1[/* client */ WebSocket, scala.Unit]
   ): uwsLib.uwsMod.WebSocketNs.Server = js.native
 }
 

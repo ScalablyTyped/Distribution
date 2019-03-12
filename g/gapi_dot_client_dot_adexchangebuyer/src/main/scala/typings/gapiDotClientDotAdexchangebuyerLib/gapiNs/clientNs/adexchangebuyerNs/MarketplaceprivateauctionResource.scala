@@ -13,12 +13,9 @@ trait MarketplaceprivateauctionResource extends js.Object {
 object MarketplaceprivateauctionResource {
   @scala.inline
   def apply(
-    updateproposal: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ]
+    updateproposal: gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   ): MarketplaceprivateauctionResource = {
-    val __obj = js.Dynamic.literal(updateproposal = updateproposal)
+    val __obj = js.Dynamic.literal(updateproposal = js.Any.fromFunction1(updateproposal))
   
     __obj.asInstanceOf[MarketplaceprivateauctionResource]
   }

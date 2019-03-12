@@ -18,24 +18,24 @@ import scala.scalajs.js.annotation._
 object IPanel {
   @scala.inline
   def apply(
-    addElement: js.Function2[IElement, scala.Double, js.Any],
-    elementWidthChanged: js.Function1[IElement, js.Any],
-    getChildrenLayoutType: js.Function0[java.lang.String],
-    getQuestionTitleLocation: js.Function0[java.lang.String],
-    getType: js.Function0[java.lang.String],
+    addElement: (IElement, scala.Double) => js.Any,
+    elementWidthChanged: IElement => js.Any,
+    getChildrenLayoutType: () => java.lang.String,
+    getQuestionTitleLocation: () => java.lang.String,
+    getType: () => java.lang.String,
     isPage: scala.Boolean,
     isReadOnly: scala.Boolean,
     isVisible: scala.Boolean,
-    locStrsChanged: js.Function0[js.Any],
+    locStrsChanged: () => js.Any,
     name: java.lang.String,
-    onFirstRendering: js.Function0[js.Any],
-    onSurveyLoad: js.Function0[js.Any],
+    onFirstRendering: () => js.Any,
+    onSurveyLoad: () => js.Any,
     parent: IPanel,
-    removeElement: js.Function1[IElement, scala.Boolean],
-    setSurveyImpl: js.Function1[ISurveyImpl, js.Any],
-    setVisibleIndex: js.Function1[scala.Double, scala.Double]
+    removeElement: IElement => scala.Boolean,
+    setSurveyImpl: ISurveyImpl => js.Any,
+    setVisibleIndex: scala.Double => scala.Double
   ): IPanel = {
-    val __obj = js.Dynamic.literal(addElement = addElement, elementWidthChanged = elementWidthChanged, getChildrenLayoutType = getChildrenLayoutType, getQuestionTitleLocation = getQuestionTitleLocation, getType = getType, isPage = isPage, isReadOnly = isReadOnly, isVisible = isVisible, locStrsChanged = locStrsChanged, name = name, onFirstRendering = onFirstRendering, onSurveyLoad = onSurveyLoad, parent = parent, removeElement = removeElement, setSurveyImpl = setSurveyImpl, setVisibleIndex = setVisibleIndex)
+    val __obj = js.Dynamic.literal(addElement = js.Any.fromFunction2(addElement), elementWidthChanged = js.Any.fromFunction1(elementWidthChanged), getChildrenLayoutType = js.Any.fromFunction0(getChildrenLayoutType), getQuestionTitleLocation = js.Any.fromFunction0(getQuestionTitleLocation), getType = js.Any.fromFunction0(getType), isPage = isPage, isReadOnly = isReadOnly, isVisible = isVisible, locStrsChanged = js.Any.fromFunction0(locStrsChanged), name = name, onFirstRendering = js.Any.fromFunction0(onFirstRendering), onSurveyLoad = js.Any.fromFunction0(onSurveyLoad), parent = parent, removeElement = js.Any.fromFunction1(removeElement), setSurveyImpl = js.Any.fromFunction1(setSurveyImpl), setVisibleIndex = js.Any.fromFunction1(setVisibleIndex))
   
     __obj.asInstanceOf[IPanel]
   }

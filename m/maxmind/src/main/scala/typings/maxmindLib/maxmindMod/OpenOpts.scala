@@ -17,13 +17,13 @@ object OpenOpts {
   def apply(
     cache: maxmindLib.Anon_Max = null,
     watchForUpdates: js.UndefOr[scala.Boolean] = js.undefined,
-    watchForUpdatesHook: js.Function0[scala.Unit] = null,
+    watchForUpdatesHook: () => scala.Unit = null,
     watchForUpdatesNonPersistent: js.UndefOr[scala.Boolean] = js.undefined
   ): OpenOpts = {
     val __obj = js.Dynamic.literal()
     if (cache != null) __obj.updateDynamic("cache")(cache)
     if (!js.isUndefined(watchForUpdates)) __obj.updateDynamic("watchForUpdates")(watchForUpdates)
-    if (watchForUpdatesHook != null) __obj.updateDynamic("watchForUpdatesHook")(watchForUpdatesHook)
+    if (watchForUpdatesHook != null) __obj.updateDynamic("watchForUpdatesHook")(js.Any.fromFunction0(watchForUpdatesHook))
     if (!js.isUndefined(watchForUpdatesNonPersistent)) __obj.updateDynamic("watchForUpdatesNonPersistent")(watchForUpdatesNonPersistent)
     __obj.asInstanceOf[OpenOpts]
   }

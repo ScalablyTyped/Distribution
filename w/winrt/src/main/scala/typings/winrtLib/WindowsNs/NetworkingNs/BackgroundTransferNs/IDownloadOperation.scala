@@ -17,25 +17,21 @@ trait IDownloadOperation extends IBackgroundTransferOperation {
 object IDownloadOperation {
   @scala.inline
   def apply(
-    attachAsync: js.Function0[
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[DownloadOperation, DownloadOperation]
-    ],
+    attachAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[DownloadOperation, DownloadOperation],
     costPolicy: BackgroundTransferCostPolicy,
-    getResponseInformation: js.Function0[ResponseInformation],
-    getResultStreamAt: js.Function1[scala.Double, winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream],
+    getResponseInformation: () => ResponseInformation,
+    getResultStreamAt: scala.Double => winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream,
     group: java.lang.String,
     guid: java.lang.String,
     method: java.lang.String,
-    pause: js.Function0[scala.Unit],
+    pause: () => scala.Unit,
     progress: BackgroundDownloadProgress,
     requestedUri: winrtLib.WindowsNs.FoundationNs.Uri,
     resultFile: winrtLib.WindowsNs.StorageNs.IStorageFile,
-    resume: js.Function0[scala.Unit],
-    startAsync: js.Function0[
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[DownloadOperation, DownloadOperation]
-    ]
+    resume: () => scala.Unit,
+    startAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[DownloadOperation, DownloadOperation]
   ): IDownloadOperation = {
-    val __obj = js.Dynamic.literal(attachAsync = attachAsync, costPolicy = costPolicy, getResponseInformation = getResponseInformation, getResultStreamAt = getResultStreamAt, group = group, guid = guid, method = method, pause = pause, progress = progress, requestedUri = requestedUri, resultFile = resultFile, resume = resume, startAsync = startAsync)
+    val __obj = js.Dynamic.literal(attachAsync = js.Any.fromFunction0(attachAsync), costPolicy = costPolicy, getResponseInformation = js.Any.fromFunction0(getResponseInformation), getResultStreamAt = js.Any.fromFunction1(getResultStreamAt), group = group, guid = guid, method = method, pause = js.Any.fromFunction0(pause), progress = progress, requestedUri = requestedUri, resultFile = resultFile, resume = js.Any.fromFunction0(resume), startAsync = js.Any.fromFunction0(startAsync))
   
     __obj.asInstanceOf[IDownloadOperation]
   }

@@ -17,13 +17,13 @@ object Anon_Africa {
   def apply(
     name: grommetLib.grommetLibStrings.Africa | grommetLib.grommetLibStrings.Asia | grommetLib.grommetLibStrings.Australia | grommetLib.grommetLibStrings.Europe | (grommetLib.grommetLibStrings.`North America`) | (grommetLib.grommetLibStrings.`South America`),
     color: java.lang.String | Anon_Dark = null,
-    onClick: js.Function1[/* repeated */ js.Any, _] = null,
-    onHover: js.Function1[/* repeated */ js.Any, _] = null
+    onClick: /* repeated */ js.Any => _ = null,
+    onHover: /* repeated */ js.Any => _ = null
   ): Anon_Africa = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onHover != null) __obj.updateDynamic("onHover")(onHover)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction1(onHover))
     __obj.asInstanceOf[Anon_Africa]
   }
 }

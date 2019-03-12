@@ -33,12 +33,12 @@ trait GlobalAggregation extends Aggregation {
 object GlobalAggregation {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    agg: js.Function1[Aggregation, GlobalAggregation],
-    aggregation: js.Function1[Aggregation, GlobalAggregation],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    agg: Aggregation => GlobalAggregation,
+    aggregation: Aggregation => GlobalAggregation,
+    toJSON: () => js.Any
   ): GlobalAggregation = {
-    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), agg = js.Any.fromFunction1(agg), aggregation = js.Any.fromFunction1(aggregation), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[GlobalAggregation]
   }

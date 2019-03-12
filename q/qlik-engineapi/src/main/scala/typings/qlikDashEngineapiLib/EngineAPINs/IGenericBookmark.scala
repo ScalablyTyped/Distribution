@@ -84,22 +84,17 @@ trait IGenericBookmark extends js.Object {
 object IGenericBookmark {
   @scala.inline
   def apply(
-    apply: js.Function0[js.Promise[scala.Boolean]],
-    applyPatches: js.Function1[js.Array[INxPatch], js.Promise[scala.Unit]],
-    getFieldValues: js.Function3[
-      java.lang.String, 
-      scala.Boolean, 
-      qlikDashEngineapiLib.Anon_QEndIndex, 
-      js.Promise[qlikDashEngineapiLib.Anon_QFieldValues]
-    ],
-    getInfo: js.Function0[js.Promise[INxInfo]],
-    getLayout: js.Function0[js.Promise[IGenericBookmarkLayout]],
-    getProperties: js.Function0[js.Promise[IGenericBookmarkProperties]],
-    publish: js.Function0[js.Promise[scala.Unit]],
-    setProperties: js.Function1[IGenericBookmarkProperties, js.Promise[scala.Unit]],
-    unPublish: js.Function0[js.Promise[scala.Unit]]
+    apply: () => js.Promise[scala.Boolean],
+    applyPatches: js.Array[INxPatch] => js.Promise[scala.Unit],
+    getFieldValues: (java.lang.String, scala.Boolean, qlikDashEngineapiLib.Anon_QEndIndex) => js.Promise[qlikDashEngineapiLib.Anon_QFieldValues],
+    getInfo: () => js.Promise[INxInfo],
+    getLayout: () => js.Promise[IGenericBookmarkLayout],
+    getProperties: () => js.Promise[IGenericBookmarkProperties],
+    publish: () => js.Promise[scala.Unit],
+    setProperties: IGenericBookmarkProperties => js.Promise[scala.Unit],
+    unPublish: () => js.Promise[scala.Unit]
   ): IGenericBookmark = {
-    val __obj = js.Dynamic.literal(apply = apply, applyPatches = applyPatches, getFieldValues = getFieldValues, getInfo = getInfo, getLayout = getLayout, getProperties = getProperties, publish = publish, setProperties = setProperties, unPublish = unPublish)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction0(apply), applyPatches = js.Any.fromFunction1(applyPatches), getFieldValues = js.Any.fromFunction3(getFieldValues), getInfo = js.Any.fromFunction0(getInfo), getLayout = js.Any.fromFunction0(getLayout), getProperties = js.Any.fromFunction0(getProperties), publish = js.Any.fromFunction0(publish), setProperties = js.Any.fromFunction1(setProperties), unPublish = js.Any.fromFunction0(unPublish))
   
     __obj.asInstanceOf[IGenericBookmark]
   }

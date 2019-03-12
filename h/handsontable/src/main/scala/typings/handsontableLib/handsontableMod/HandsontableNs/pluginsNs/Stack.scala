@@ -17,14 +17,14 @@ trait Stack extends js.Object {
 object Stack {
   @scala.inline
   def apply(
-    isEmpty: js.Function0[scala.Boolean],
+    isEmpty: () => scala.Boolean,
     items: js.Array[_],
-    peek: js.Function0[js.Any],
-    pop: js.Function0[js.Any],
-    push: js.Function1[js.Any, scala.Unit],
-    size: js.Function0[scala.Double]
+    peek: () => js.Any,
+    pop: () => js.Any,
+    push: js.Any => scala.Unit,
+    size: () => scala.Double
   ): Stack = {
-    val __obj = js.Dynamic.literal(isEmpty = isEmpty, items = items, peek = peek, pop = pop, push = push, size = size)
+    val __obj = js.Dynamic.literal(isEmpty = js.Any.fromFunction0(isEmpty), items = items, peek = js.Any.fromFunction0(peek), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), size = js.Any.fromFunction0(size))
   
     __obj.asInstanceOf[Stack]
   }

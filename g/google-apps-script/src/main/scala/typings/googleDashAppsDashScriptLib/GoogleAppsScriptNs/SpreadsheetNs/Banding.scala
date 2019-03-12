@@ -31,28 +31,28 @@ trait Banding extends js.Object {
 object Banding {
   @scala.inline
   def apply(
-    copyTo: js.Function1[Range, Banding],
-    getFirstColumnColor: js.Function0[java.lang.String],
-    getFirstRowColor: js.Function0[java.lang.String],
-    getFooterColumnColor: js.Function0[java.lang.String],
-    getFooterRowColor: js.Function0[java.lang.String],
-    getHeaderColumnColor: js.Function0[java.lang.String],
-    getHeaderRowColor: js.Function0[java.lang.String],
-    getRange: js.Function0[Range],
-    getSecondColumnColor: js.Function0[java.lang.String],
-    getSecondRowColor: js.Function0[java.lang.String],
-    remove: js.Function0[scala.Unit],
-    setFirstColumnColor: js.Function1[java.lang.String, Banding],
-    setFirstRowColor: js.Function1[java.lang.String, Banding],
-    setFooterColumnColor: js.Function1[java.lang.String, Banding],
-    setFooterRowColor: js.Function1[java.lang.String, Banding],
-    setHeaderColumnColor: js.Function1[java.lang.String, Banding],
-    setHeaderRowColor: js.Function1[java.lang.String, Banding],
-    setRange: js.Function1[Range, Banding],
-    setSecondColumnColor: js.Function1[java.lang.String, Banding],
-    setSecondRowColor: js.Function1[java.lang.String, Banding]
+    copyTo: Range => Banding,
+    getFirstColumnColor: () => java.lang.String,
+    getFirstRowColor: () => java.lang.String,
+    getFooterColumnColor: () => java.lang.String,
+    getFooterRowColor: () => java.lang.String,
+    getHeaderColumnColor: () => java.lang.String,
+    getHeaderRowColor: () => java.lang.String,
+    getRange: () => Range,
+    getSecondColumnColor: () => java.lang.String,
+    getSecondRowColor: () => java.lang.String,
+    remove: () => scala.Unit,
+    setFirstColumnColor: java.lang.String => Banding,
+    setFirstRowColor: java.lang.String => Banding,
+    setFooterColumnColor: java.lang.String => Banding,
+    setFooterRowColor: java.lang.String => Banding,
+    setHeaderColumnColor: java.lang.String => Banding,
+    setHeaderRowColor: java.lang.String => Banding,
+    setRange: Range => Banding,
+    setSecondColumnColor: java.lang.String => Banding,
+    setSecondRowColor: java.lang.String => Banding
   ): Banding = {
-    val __obj = js.Dynamic.literal(copyTo = copyTo, getFirstColumnColor = getFirstColumnColor, getFirstRowColor = getFirstRowColor, getFooterColumnColor = getFooterColumnColor, getFooterRowColor = getFooterRowColor, getHeaderColumnColor = getHeaderColumnColor, getHeaderRowColor = getHeaderRowColor, getRange = getRange, getSecondColumnColor = getSecondColumnColor, getSecondRowColor = getSecondRowColor, remove = remove, setFirstColumnColor = setFirstColumnColor, setFirstRowColor = setFirstRowColor, setFooterColumnColor = setFooterColumnColor, setFooterRowColor = setFooterRowColor, setHeaderColumnColor = setHeaderColumnColor, setHeaderRowColor = setHeaderRowColor, setRange = setRange, setSecondColumnColor = setSecondColumnColor, setSecondRowColor = setSecondRowColor)
+    val __obj = js.Dynamic.literal(copyTo = js.Any.fromFunction1(copyTo), getFirstColumnColor = js.Any.fromFunction0(getFirstColumnColor), getFirstRowColor = js.Any.fromFunction0(getFirstRowColor), getFooterColumnColor = js.Any.fromFunction0(getFooterColumnColor), getFooterRowColor = js.Any.fromFunction0(getFooterRowColor), getHeaderColumnColor = js.Any.fromFunction0(getHeaderColumnColor), getHeaderRowColor = js.Any.fromFunction0(getHeaderRowColor), getRange = js.Any.fromFunction0(getRange), getSecondColumnColor = js.Any.fromFunction0(getSecondColumnColor), getSecondRowColor = js.Any.fromFunction0(getSecondRowColor), remove = js.Any.fromFunction0(remove), setFirstColumnColor = js.Any.fromFunction1(setFirstColumnColor), setFirstRowColor = js.Any.fromFunction1(setFirstRowColor), setFooterColumnColor = js.Any.fromFunction1(setFooterColumnColor), setFooterRowColor = js.Any.fromFunction1(setFooterRowColor), setHeaderColumnColor = js.Any.fromFunction1(setHeaderColumnColor), setHeaderRowColor = js.Any.fromFunction1(setHeaderRowColor), setRange = js.Any.fromFunction1(setRange), setSecondColumnColor = js.Any.fromFunction1(setSecondColumnColor), setSecondRowColor = js.Any.fromFunction1(setSecondRowColor))
   
     __obj.asInstanceOf[Banding]
   }

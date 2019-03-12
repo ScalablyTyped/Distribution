@@ -22,7 +22,7 @@ trait ErrorBar
 object ErrorBar {
   @scala.inline
   def apply(
-    DataSequences: activexDashInteropLib.SafeArray[
+    DataSequences: stdLib.SafeArray[
       activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XLabeledDataSequence
     ],
     ErrorBarStyle: scala.Double,
@@ -47,22 +47,17 @@ object ErrorBar {
     ShowNegativeError: scala.Boolean,
     ShowPositiveError: scala.Boolean,
     Weight: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getDataSequences: js.Function0[
-      activexDashInteropLib.SafeArray[
-        activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XLabeledDataSequence
-      ]
+    acquire: () => scala.Unit,
+    getDataSequences: () => stdLib.SafeArray[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XLabeledDataSequence
     ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setData: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
-        activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XLabeledDataSequence
-      ], 
-      scala.Unit
-    ]
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setData: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XLabeledDataSequence
+    ] => scala.Unit
   ): ErrorBar = {
-    val __obj = js.Dynamic.literal(DataSequences = DataSequences, ErrorBarStyle = ErrorBarStyle, LineCap = LineCap, LineColor = LineColor, LineDash = LineDash, LineDashName = LineDashName, LineEnd = LineEnd, LineEndCenter = LineEndCenter, LineEndName = LineEndName, LineEndWidth = LineEndWidth, LineJoint = LineJoint, LineStart = LineStart, LineStartCenter = LineStartCenter, LineStartName = LineStartName, LineStartWidth = LineStartWidth, LineStyle = LineStyle, LineTransparence = LineTransparence, LineWidth = LineWidth, NegativeError = NegativeError, PositiveError = PositiveError, ShowNegativeError = ShowNegativeError, ShowPositiveError = ShowPositiveError, Weight = Weight, acquire = acquire, getDataSequences = getDataSequences, queryInterface = queryInterface, release = release, setData = setData)
+    val __obj = js.Dynamic.literal(DataSequences = DataSequences, ErrorBarStyle = ErrorBarStyle, LineCap = LineCap, LineColor = LineColor, LineDash = LineDash, LineDashName = LineDashName, LineEnd = LineEnd, LineEndCenter = LineEndCenter, LineEndName = LineEndName, LineEndWidth = LineEndWidth, LineJoint = LineJoint, LineStart = LineStart, LineStartCenter = LineStartCenter, LineStartName = LineStartName, LineStartWidth = LineStartWidth, LineStyle = LineStyle, LineTransparence = LineTransparence, LineWidth = LineWidth, NegativeError = NegativeError, PositiveError = PositiveError, ShowNegativeError = ShowNegativeError, ShowPositiveError = ShowPositiveError, Weight = Weight, acquire = js.Any.fromFunction0(acquire), getDataSequences = js.Any.fromFunction0(getDataSequences), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setData = js.Any.fromFunction1(setData))
   
     __obj.asInstanceOf[ErrorBar]
   }

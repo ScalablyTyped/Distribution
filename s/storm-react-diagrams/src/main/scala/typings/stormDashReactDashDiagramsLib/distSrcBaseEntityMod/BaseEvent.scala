@@ -18,9 +18,9 @@ object BaseEvent {
     entity: BaseEntity[BaseListener[_]],
     firing: scala.Boolean,
     id: java.lang.String,
-    stopPropagation: js.Function0[js.Any]
+    stopPropagation: () => js.Any
   ): BaseEvent[T] = {
-    val __obj = js.Dynamic.literal(entity = entity, firing = firing, id = id, stopPropagation = stopPropagation)
+    val __obj = js.Dynamic.literal(entity = entity, firing = firing, id = id, stopPropagation = js.Any.fromFunction0(stopPropagation))
   
     __obj.asInstanceOf[BaseEvent[T]]
   }

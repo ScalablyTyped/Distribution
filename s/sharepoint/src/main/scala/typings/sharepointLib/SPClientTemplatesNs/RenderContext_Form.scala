@@ -34,14 +34,14 @@ object RenderContext_Form {
     ListTemplateType: scala.Int | scala.Double = null,
     OnPostRender: RenderCallback | js.Array[RenderCallback] = null,
     OnPreRender: RenderCallback | js.Array[RenderCallback] = null,
-    RenderBody: js.Function1[RenderContext_Form, java.lang.String] = null,
-    RenderFieldByName: js.Function2[RenderContext_Form, /* fieldName */ java.lang.String, java.lang.String] = null,
-    RenderFields: js.Function1[RenderContext_Form, java.lang.String] = null,
-    RenderFooter: js.Function1[RenderContext_Form, java.lang.String] = null,
-    RenderGroups: js.Function1[RenderContext_Form, java.lang.String] = null,
-    RenderHeader: js.Function1[RenderContext_Form, java.lang.String] = null,
-    RenderItems: js.Function1[RenderContext_Form, java.lang.String] = null,
-    RenderView: js.Function1[RenderContext_Form, java.lang.String] = null,
+    RenderBody: RenderContext_Form => java.lang.String = null,
+    RenderFieldByName: (RenderContext_Form, /* fieldName */ java.lang.String) => java.lang.String = null,
+    RenderFields: RenderContext_Form => java.lang.String = null,
+    RenderFooter: RenderContext_Form => java.lang.String = null,
+    RenderGroups: RenderContext_Form => java.lang.String = null,
+    RenderHeader: RenderContext_Form => java.lang.String = null,
+    RenderItems: RenderContext_Form => java.lang.String = null,
+    RenderView: RenderContext_Form => java.lang.String = null,
     SiteClientTag: java.lang.String = null,
     Templates: Templates = null,
     onRefreshFailed: js.Any = null
@@ -57,14 +57,14 @@ object RenderContext_Form {
     if (ListTemplateType != null) __obj.updateDynamic("ListTemplateType")(ListTemplateType.asInstanceOf[js.Any])
     if (OnPostRender != null) __obj.updateDynamic("OnPostRender")(OnPostRender.asInstanceOf[js.Any])
     if (OnPreRender != null) __obj.updateDynamic("OnPreRender")(OnPreRender.asInstanceOf[js.Any])
-    if (RenderBody != null) __obj.updateDynamic("RenderBody")(RenderBody)
-    if (RenderFieldByName != null) __obj.updateDynamic("RenderFieldByName")(RenderFieldByName)
-    if (RenderFields != null) __obj.updateDynamic("RenderFields")(RenderFields)
-    if (RenderFooter != null) __obj.updateDynamic("RenderFooter")(RenderFooter)
-    if (RenderGroups != null) __obj.updateDynamic("RenderGroups")(RenderGroups)
-    if (RenderHeader != null) __obj.updateDynamic("RenderHeader")(RenderHeader)
-    if (RenderItems != null) __obj.updateDynamic("RenderItems")(RenderItems)
-    if (RenderView != null) __obj.updateDynamic("RenderView")(RenderView)
+    if (RenderBody != null) __obj.updateDynamic("RenderBody")(js.Any.fromFunction1(RenderBody))
+    if (RenderFieldByName != null) __obj.updateDynamic("RenderFieldByName")(js.Any.fromFunction2(RenderFieldByName))
+    if (RenderFields != null) __obj.updateDynamic("RenderFields")(js.Any.fromFunction1(RenderFields))
+    if (RenderFooter != null) __obj.updateDynamic("RenderFooter")(js.Any.fromFunction1(RenderFooter))
+    if (RenderGroups != null) __obj.updateDynamic("RenderGroups")(js.Any.fromFunction1(RenderGroups))
+    if (RenderHeader != null) __obj.updateDynamic("RenderHeader")(js.Any.fromFunction1(RenderHeader))
+    if (RenderItems != null) __obj.updateDynamic("RenderItems")(js.Any.fromFunction1(RenderItems))
+    if (RenderView != null) __obj.updateDynamic("RenderView")(js.Any.fromFunction1(RenderView))
     if (SiteClientTag != null) __obj.updateDynamic("SiteClientTag")(SiteClientTag)
     if (Templates != null) __obj.updateDynamic("Templates")(Templates)
     if (onRefreshFailed != null) __obj.updateDynamic("onRefreshFailed")(onRefreshFailed)

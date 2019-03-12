@@ -17,7 +17,7 @@ trait SortablePaneProps extends js.Object {
   var margin: js.UndefOr[scala.Double] = js.undefined
   var onDragStart: js.UndefOr[
     js.Function3[
-      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLElement], 
+      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], 
       /* id */ PaneId, 
       /* panes */ js.Array[PaneProperty], 
       scala.Unit
@@ -25,7 +25,7 @@ trait SortablePaneProps extends js.Object {
   ] = js.undefined
   var onDragStop: js.UndefOr[
     js.Function3[
-      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLElement], 
+      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], 
       /* id */ PaneId, 
       /* panes */ js.Array[PaneProperty], 
       scala.Unit
@@ -40,7 +40,7 @@ trait SortablePaneProps extends js.Object {
   ] = js.undefined
   var onResize: js.UndefOr[
     js.Function4[
-      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLElement], 
+      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], 
       /* id */ PaneId, 
       /* panes */ js.Array[PaneProperty], 
       /* data */ PaneResizeData, 
@@ -49,7 +49,7 @@ trait SortablePaneProps extends js.Object {
   ] = js.undefined
   var onResizeStart: js.UndefOr[
     js.Function3[
-      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLElement], 
+      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], 
       /* id */ PaneId, 
       /* panes */ js.Array[PaneProperty], 
       scala.Unit
@@ -57,14 +57,14 @@ trait SortablePaneProps extends js.Object {
   ] = js.undefined
   var onResizeStop: js.UndefOr[
     js.Function4[
-      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLElement], 
+      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], 
       /* id */ PaneId, 
       /* panes */ js.Array[PaneProperty], 
       /* data */ PaneResizeData, 
       scala.Unit
     ]
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement]] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement]] = js.undefined
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
@@ -78,44 +78,13 @@ object SortablePaneProps {
     grid: js.Tuple2[scala.Double, scala.Double] = null,
     isSortable: js.UndefOr[scala.Boolean] = js.undefined,
     margin: scala.Int | scala.Double = null,
-    onDragStart: js.Function3[
-      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLElement], 
-      /* id */ PaneId, 
-      /* panes */ js.Array[PaneProperty], 
-      scala.Unit
-    ] = null,
-    onDragStop: js.Function3[
-      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLElement], 
-      /* id */ PaneId, 
-      /* panes */ js.Array[PaneProperty], 
-      scala.Unit
-    ] = null,
-    onOrderChange: js.Function2[
-      /* oldPanes */ js.Array[PaneProperty], 
-      /* newPanes */ js.Array[PaneProperty], 
-      scala.Unit
-    ] = null,
-    onResize: js.Function4[
-      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLElement], 
-      /* id */ PaneId, 
-      /* panes */ js.Array[PaneProperty], 
-      /* data */ PaneResizeData, 
-      scala.Unit
-    ] = null,
-    onResizeStart: js.Function3[
-      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLElement], 
-      /* id */ PaneId, 
-      /* panes */ js.Array[PaneProperty], 
-      scala.Unit
-    ] = null,
-    onResizeStop: js.Function4[
-      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLElement], 
-      /* id */ PaneId, 
-      /* panes */ js.Array[PaneProperty], 
-      /* data */ PaneResizeData, 
-      scala.Unit
-    ] = null,
-    style: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] = null,
+    onDragStart: (/* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], /* id */ PaneId, /* panes */ js.Array[PaneProperty]) => scala.Unit = null,
+    onDragStop: (/* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], /* id */ PaneId, /* panes */ js.Array[PaneProperty]) => scala.Unit = null,
+    onOrderChange: (/* oldPanes */ js.Array[PaneProperty], /* newPanes */ js.Array[PaneProperty]) => scala.Unit = null,
+    onResize: (/* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], /* id */ PaneId, /* panes */ js.Array[PaneProperty], /* data */ PaneResizeData) => scala.Unit = null,
+    onResizeStart: (/* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], /* id */ PaneId, /* panes */ js.Array[PaneProperty]) => scala.Unit = null,
+    onResizeStop: (/* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], /* id */ PaneId, /* panes */ js.Array[PaneProperty], /* data */ PaneResizeData) => scala.Unit = null,
+    style: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] = null,
     zIndex: scala.Int | scala.Double = null
   ): SortablePaneProps = {
     val __obj = js.Dynamic.literal()
@@ -126,12 +95,12 @@ object SortablePaneProps {
     if (grid != null) __obj.updateDynamic("grid")(grid)
     if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable)
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
-    if (onDragStop != null) __obj.updateDynamic("onDragStop")(onDragStop)
-    if (onOrderChange != null) __obj.updateDynamic("onOrderChange")(onOrderChange)
-    if (onResize != null) __obj.updateDynamic("onResize")(onResize)
-    if (onResizeStart != null) __obj.updateDynamic("onResizeStart")(onResizeStart)
-    if (onResizeStop != null) __obj.updateDynamic("onResizeStop")(onResizeStop)
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction3(onDragStart))
+    if (onDragStop != null) __obj.updateDynamic("onDragStop")(js.Any.fromFunction3(onDragStop))
+    if (onOrderChange != null) __obj.updateDynamic("onOrderChange")(js.Any.fromFunction2(onOrderChange))
+    if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction4(onResize))
+    if (onResizeStart != null) __obj.updateDynamic("onResizeStart")(js.Any.fromFunction3(onResizeStart))
+    if (onResizeStop != null) __obj.updateDynamic("onResizeStop")(js.Any.fromFunction4(onResizeStop))
     if (style != null) __obj.updateDynamic("style")(style)
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortablePaneProps]

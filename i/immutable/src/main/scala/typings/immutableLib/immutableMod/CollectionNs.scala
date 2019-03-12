@@ -320,10 +320,10 @@ object CollectionNs extends js.Object {
     ): Set[F] = js.native
   }
   
-  def Indexed[T](collection: stdLib.Iterable[T]): Indexed[T] = js.native
-  def Keyed[V](obj: org.scalablytyped.runtime.StringDictionary[V]): Keyed[java.lang.String, V] = js.native
-  def Keyed[K, V](collection: stdLib.Iterable[js.Tuple2[K, V]]): Keyed[K, V] = js.native
-  def Set[T](collection: stdLib.Iterable[T]): Set[T] = js.native
+  def Indexed[T](collection: stdLib.Iterable[T]): immutableLib.immutableMod.CollectionNs.Indexed[T] = js.native
+  def Keyed[V](obj: org.scalablytyped.runtime.StringDictionary[V]): immutableLib.immutableMod.CollectionNs.Keyed[java.lang.String, V] = js.native
+  def Keyed[K, V](collection: stdLib.Iterable[js.Tuple2[K, V]]): immutableLib.immutableMod.CollectionNs.Keyed[K, V] = js.native
+  def Set[T](collection: stdLib.Iterable[T]): immutableLib.immutableMod.CollectionNs.Set[T] = js.native
   /**
     * @deprecated use `const { isAssociative } = require('immutable')`
     */

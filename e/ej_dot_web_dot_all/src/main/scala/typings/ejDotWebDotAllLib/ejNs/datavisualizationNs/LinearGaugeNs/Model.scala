@@ -162,14 +162,14 @@ object Model {
     animationSpeed: scala.Int | scala.Double = null,
     backgroundColor: java.lang.String = null,
     borderColor: java.lang.String = null,
-    doubleClick: js.Function1[/* e */ DoubleClickEventArgs, scala.Unit] = null,
-    drawBarPointers: js.Function1[/* e */ DrawBarPointersEventArgs, scala.Unit] = null,
-    drawCustomLabel: js.Function1[/* e */ DrawCustomLabelEventArgs, scala.Unit] = null,
-    drawIndicators: js.Function1[/* e */ DrawIndicatorsEventArgs, scala.Unit] = null,
-    drawLabels: js.Function1[/* e */ DrawLabelsEventArgs, scala.Unit] = null,
-    drawMarkerPointers: js.Function1[/* e */ DrawMarkerPointersEventArgs, scala.Unit] = null,
-    drawRange: js.Function1[/* e */ DrawRangeEventArgs, scala.Unit] = null,
-    drawTicks: js.Function1[/* e */ DrawTicksEventArgs, scala.Unit] = null,
+    doubleClick: /* e */ DoubleClickEventArgs => scala.Unit = null,
+    drawBarPointers: /* e */ DrawBarPointersEventArgs => scala.Unit = null,
+    drawCustomLabel: /* e */ DrawCustomLabelEventArgs => scala.Unit = null,
+    drawIndicators: /* e */ DrawIndicatorsEventArgs => scala.Unit = null,
+    drawLabels: /* e */ DrawLabelsEventArgs => scala.Unit = null,
+    drawMarkerPointers: /* e */ DrawMarkerPointersEventArgs => scala.Unit = null,
+    drawRange: /* e */ DrawRangeEventArgs => scala.Unit = null,
+    drawTicks: /* e */ DrawTicksEventArgs => scala.Unit = null,
     enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
     enableGroupSeparator: js.UndefOr[scala.Boolean] = js.undefined,
     enableMarkerPointerAnimation: js.UndefOr[scala.Boolean] = js.undefined,
@@ -177,23 +177,23 @@ object Model {
     exportSettings: ExportSettings = null,
     frame: Frame = null,
     height: scala.Int | scala.Double = null,
-    init: js.Function1[/* e */ InitEventArgs, scala.Unit] = null,
+    init: /* e */ InitEventArgs => scala.Unit = null,
     isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
     labelColor: java.lang.String = null,
-    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    load: /* e */ LoadEventArgs => scala.Unit = null,
     locale: java.lang.String = null,
     maximum: scala.Int | scala.Double = null,
     minimum: scala.Int | scala.Double = null,
-    mouseClick: js.Function1[/* e */ MouseClickEventArgs, scala.Unit] = null,
-    mouseClickMove: js.Function1[/* e */ MouseClickMoveEventArgs, scala.Unit] = null,
-    mouseClickUp: js.Function1[/* e */ MouseClickUpEventArgs, scala.Unit] = null,
+    mouseClick: /* e */ MouseClickEventArgs => scala.Unit = null,
+    mouseClickMove: /* e */ MouseClickMoveEventArgs => scala.Unit = null,
+    mouseClickUp: /* e */ MouseClickUpEventArgs => scala.Unit = null,
     orientation: java.lang.String = null,
     outerCustomLabelPosition: OuterCustomLabelPosition | java.lang.String = null,
     pointerGradient1: js.Any = null,
     pointerGradient2: js.Any = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
-    renderComplete: js.Function1[/* e */ RenderCompleteEventArgs, scala.Unit] = null,
-    rightClick: js.Function1[/* e */ RightClickEventArgs, scala.Unit] = null,
+    renderComplete: /* e */ RenderCompleteEventArgs => scala.Unit = null,
+    rightClick: /* e */ RightClickEventArgs => scala.Unit = null,
     scales: js.Array[Scale] = null,
     theme: Themes | java.lang.String = null,
     tickColor: java.lang.String = null,
@@ -205,14 +205,14 @@ object Model {
     if (animationSpeed != null) __obj.updateDynamic("animationSpeed")(animationSpeed.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (doubleClick != null) __obj.updateDynamic("doubleClick")(doubleClick)
-    if (drawBarPointers != null) __obj.updateDynamic("drawBarPointers")(drawBarPointers)
-    if (drawCustomLabel != null) __obj.updateDynamic("drawCustomLabel")(drawCustomLabel)
-    if (drawIndicators != null) __obj.updateDynamic("drawIndicators")(drawIndicators)
-    if (drawLabels != null) __obj.updateDynamic("drawLabels")(drawLabels)
-    if (drawMarkerPointers != null) __obj.updateDynamic("drawMarkerPointers")(drawMarkerPointers)
-    if (drawRange != null) __obj.updateDynamic("drawRange")(drawRange)
-    if (drawTicks != null) __obj.updateDynamic("drawTicks")(drawTicks)
+    if (doubleClick != null) __obj.updateDynamic("doubleClick")(js.Any.fromFunction1(doubleClick))
+    if (drawBarPointers != null) __obj.updateDynamic("drawBarPointers")(js.Any.fromFunction1(drawBarPointers))
+    if (drawCustomLabel != null) __obj.updateDynamic("drawCustomLabel")(js.Any.fromFunction1(drawCustomLabel))
+    if (drawIndicators != null) __obj.updateDynamic("drawIndicators")(js.Any.fromFunction1(drawIndicators))
+    if (drawLabels != null) __obj.updateDynamic("drawLabels")(js.Any.fromFunction1(drawLabels))
+    if (drawMarkerPointers != null) __obj.updateDynamic("drawMarkerPointers")(js.Any.fromFunction1(drawMarkerPointers))
+    if (drawRange != null) __obj.updateDynamic("drawRange")(js.Any.fromFunction1(drawRange))
+    if (drawTicks != null) __obj.updateDynamic("drawTicks")(js.Any.fromFunction1(drawTicks))
     if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
     if (!js.isUndefined(enableGroupSeparator)) __obj.updateDynamic("enableGroupSeparator")(enableGroupSeparator)
     if (!js.isUndefined(enableMarkerPointerAnimation)) __obj.updateDynamic("enableMarkerPointerAnimation")(enableMarkerPointerAnimation)
@@ -220,23 +220,23 @@ object Model {
     if (exportSettings != null) __obj.updateDynamic("exportSettings")(exportSettings)
     if (frame != null) __obj.updateDynamic("frame")(frame)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (init != null) __obj.updateDynamic("init")(init)
+    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
     if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor)
-    if (load != null) __obj.updateDynamic("load")(load)
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
     if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
-    if (mouseClick != null) __obj.updateDynamic("mouseClick")(mouseClick)
-    if (mouseClickMove != null) __obj.updateDynamic("mouseClickMove")(mouseClickMove)
-    if (mouseClickUp != null) __obj.updateDynamic("mouseClickUp")(mouseClickUp)
+    if (mouseClick != null) __obj.updateDynamic("mouseClick")(js.Any.fromFunction1(mouseClick))
+    if (mouseClickMove != null) __obj.updateDynamic("mouseClickMove")(js.Any.fromFunction1(mouseClickMove))
+    if (mouseClickUp != null) __obj.updateDynamic("mouseClickUp")(js.Any.fromFunction1(mouseClickUp))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation)
     if (outerCustomLabelPosition != null) __obj.updateDynamic("outerCustomLabelPosition")(outerCustomLabelPosition.asInstanceOf[js.Any])
     if (pointerGradient1 != null) __obj.updateDynamic("pointerGradient1")(pointerGradient1)
     if (pointerGradient2 != null) __obj.updateDynamic("pointerGradient2")(pointerGradient2)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (renderComplete != null) __obj.updateDynamic("renderComplete")(renderComplete)
-    if (rightClick != null) __obj.updateDynamic("rightClick")(rightClick)
+    if (renderComplete != null) __obj.updateDynamic("renderComplete")(js.Any.fromFunction1(renderComplete))
+    if (rightClick != null) __obj.updateDynamic("rightClick")(js.Any.fromFunction1(rightClick))
     if (scales != null) __obj.updateDynamic("scales")(scales)
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor)

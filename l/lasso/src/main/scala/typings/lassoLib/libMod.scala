@@ -43,7 +43,7 @@ object libMod extends js.Object {
     def createTransformer(
       unfilteredTransforms: js.Array[_],
       lassoContext: lassoLib.libLassoContextMod.default,
-      callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* result */ js.UndefOr[js.Any], _]
+      callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* result */ js.UndefOr[js.Any], _]
     ): scala.Unit = js.native
   }
   

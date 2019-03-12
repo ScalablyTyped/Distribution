@@ -25,18 +25,18 @@ object Code {
   def apply(
     URI: java.lang.String,
     callTimeout: scala.Double,
-    create: js.Function3[java.lang.String, java.lang.String, CbCallback, scala.Unit],
-    delete: js.Function2[java.lang.String, CbCallback, scala.Unit],
-    execute: js.Function3[java.lang.String, js.Object, CbCallback, scala.Unit],
-    getAllServices: js.Function1[CbCallback, scala.Unit],
-    getCompletedServices: js.Function1[CbCallback, scala.Unit],
-    getFailedServices: js.Function1[CbCallback, scala.Unit],
+    create: (java.lang.String, java.lang.String, CbCallback) => scala.Unit,
+    delete: (java.lang.String, CbCallback) => scala.Unit,
+    execute: (java.lang.String, js.Object, CbCallback) => scala.Unit,
+    getAllServices: CbCallback => scala.Unit,
+    getCompletedServices: CbCallback => scala.Unit,
+    getFailedServices: CbCallback => scala.Unit,
     systemKey: java.lang.String,
     systemSecret: java.lang.String,
-    update: js.Function3[java.lang.String, java.lang.String, CbCallback, scala.Unit],
+    update: (java.lang.String, java.lang.String, CbCallback) => scala.Unit,
     user: APIUser
   ): Code = {
-    val __obj = js.Dynamic.literal(URI = URI, callTimeout = callTimeout, create = create, delete = delete, execute = execute, getAllServices = getAllServices, getCompletedServices = getCompletedServices, getFailedServices = getFailedServices, systemKey = systemKey, systemSecret = systemSecret, update = update, user = user)
+    val __obj = js.Dynamic.literal(URI = URI, callTimeout = callTimeout, create = js.Any.fromFunction3(create), delete = js.Any.fromFunction2(delete), execute = js.Any.fromFunction3(execute), getAllServices = js.Any.fromFunction1(getAllServices), getCompletedServices = js.Any.fromFunction1(getCompletedServices), getFailedServices = js.Any.fromFunction1(getFailedServices), systemKey = systemKey, systemSecret = systemSecret, update = js.Any.fromFunction3(update), user = user)
   
     __obj.asInstanceOf[Code]
   }

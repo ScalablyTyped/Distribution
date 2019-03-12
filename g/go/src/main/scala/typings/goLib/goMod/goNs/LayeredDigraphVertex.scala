@@ -22,17 +22,17 @@ trait LayeredDigraphVertex extends LayoutVertex {
 object LayeredDigraphVertex {
   @scala.inline
   def apply(
-    addDestinationEdge: js.Function1[LayoutEdge, scala.Unit],
-    addSourceEdge: js.Function1[LayoutEdge, scala.Unit],
+    addDestinationEdge: LayoutEdge => scala.Unit,
+    addSourceEdge: LayoutEdge => scala.Unit,
     bounds: Rect,
     centerX: scala.Double,
     centerY: scala.Double,
     column: scala.Double,
-    commit: js.Function0[scala.Unit],
+    commit: () => scala.Unit,
     component: scala.Double,
     data: js.Any,
-    deleteDestinationEdge: js.Function1[LayoutEdge, scala.Unit],
-    deleteSourceEdge: js.Function1[LayoutEdge, scala.Unit],
+    deleteDestinationEdge: LayoutEdge => scala.Unit,
+    deleteSourceEdge: LayoutEdge => scala.Unit,
     destinationEdges: Iterator[LayoutEdge],
     destinationVertexes: Iterator[LayoutVertex],
     edges: Iterator[LayoutEdge],
@@ -53,7 +53,7 @@ object LayeredDigraphVertex {
     x: scala.Double,
     y: scala.Double
   ): LayeredDigraphVertex = {
-    val __obj = js.Dynamic.literal(addDestinationEdge = addDestinationEdge, addSourceEdge = addSourceEdge, bounds = bounds, centerX = centerX, centerY = centerY, column = column, commit = commit, component = component, data = data, deleteDestinationEdge = deleteDestinationEdge, deleteSourceEdge = deleteSourceEdge, destinationEdges = destinationEdges, destinationVertexes = destinationVertexes, edges = edges, edgesCount = edgesCount, focus = focus, focusX = focusX, focusY = focusY, height = height, index = index, layer = layer, near = near, network = network, node = node, sourceEdges = sourceEdges, sourceVertexes = sourceVertexes, vertexes = vertexes, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(addDestinationEdge = js.Any.fromFunction1(addDestinationEdge), addSourceEdge = js.Any.fromFunction1(addSourceEdge), bounds = bounds, centerX = centerX, centerY = centerY, column = column, commit = js.Any.fromFunction0(commit), component = component, data = data, deleteDestinationEdge = js.Any.fromFunction1(deleteDestinationEdge), deleteSourceEdge = js.Any.fromFunction1(deleteSourceEdge), destinationEdges = destinationEdges, destinationVertexes = destinationVertexes, edges = edges, edgesCount = edgesCount, focus = focus, focusX = focusX, focusY = focusY, height = height, index = index, layer = layer, near = near, network = network, node = node, sourceEdges = sourceEdges, sourceVertexes = sourceVertexes, vertexes = vertexes, width = width, x = x, y = y)
   
     __obj.asInstanceOf[LayeredDigraphVertex]
   }

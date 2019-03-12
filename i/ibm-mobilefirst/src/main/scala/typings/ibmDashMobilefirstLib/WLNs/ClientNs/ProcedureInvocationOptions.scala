@@ -15,14 +15,14 @@ trait ProcedureInvocationOptions
 object ProcedureInvocationOptions {
   @scala.inline
   def apply(
-    onSuccess: js.Function1[ProcedureResponse, scala.Unit],
+    onSuccess: ProcedureResponse => scala.Unit,
     timeout: scala.Double,
     invocationContext: js.Any = null,
-    onFailure: js.Function1[/* response */ ibmDashMobilefirstLib.WLNs.IResponse, scala.Unit] = null
+    onFailure: /* response */ ibmDashMobilefirstLib.WLNs.IResponse => scala.Unit = null
   ): ProcedureInvocationOptions = {
-    val __obj = js.Dynamic.literal(onSuccess = onSuccess, timeout = timeout)
+    val __obj = js.Dynamic.literal(onSuccess = js.Any.fromFunction1(onSuccess), timeout = timeout)
     if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext)
-    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
+    if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction1(onFailure))
     __obj.asInstanceOf[ProcedureInvocationOptions]
   }
 }

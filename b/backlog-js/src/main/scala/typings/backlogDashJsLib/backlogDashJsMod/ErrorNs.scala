@@ -22,7 +22,7 @@ object ErrorNs extends js.Object {
   
   @js.native
   class BacklogError protected ()
-    extends nodeLib.ErrorConstructor {
+    extends stdLib.ErrorConstructor {
     def this(name: BacklogErrorNameType, response: stdLib.Response) = this()
     def this(name: BacklogErrorNameType, response: stdLib.Response, body: backlogDashJsLib.Anon_Errors) = this()
     var _body: js.Any = js.native

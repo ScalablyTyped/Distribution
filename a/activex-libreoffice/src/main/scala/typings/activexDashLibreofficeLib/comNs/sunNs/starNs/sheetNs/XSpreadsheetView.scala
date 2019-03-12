@@ -20,13 +20,13 @@ object XSpreadsheetView {
   @scala.inline
   def apply(
     ActiveSheet: XSpreadsheet,
-    acquire: js.Function0[scala.Unit],
-    getActiveSheet: js.Function0[XSpreadsheet],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setActiveSheet: js.Function1[XSpreadsheet, scala.Unit]
+    acquire: () => scala.Unit,
+    getActiveSheet: () => XSpreadsheet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setActiveSheet: XSpreadsheet => scala.Unit
   ): XSpreadsheetView = {
-    val __obj = js.Dynamic.literal(ActiveSheet = ActiveSheet, acquire = acquire, getActiveSheet = getActiveSheet, queryInterface = queryInterface, release = release, setActiveSheet = setActiveSheet)
+    val __obj = js.Dynamic.literal(ActiveSheet = ActiveSheet, acquire = js.Any.fromFunction0(acquire), getActiveSheet = js.Any.fromFunction0(getActiveSheet), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setActiveSheet = js.Any.fromFunction1(setActiveSheet))
   
     __obj.asInstanceOf[XSpreadsheetView]
   }

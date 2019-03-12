@@ -37,10 +37,10 @@ trait XLSearch extends js.Object {
 object XLSearch {
   @scala.inline
   def apply(
-    replaceAllByBook: js.Function4[java.lang.String, java.lang.String, scala.Boolean, scala.Boolean, scala.Unit],
-    replaceAllBySheet: js.Function4[java.lang.String, java.lang.String, scala.Boolean, scala.Boolean, scala.Unit]
+    replaceAllByBook: (java.lang.String, java.lang.String, scala.Boolean, scala.Boolean) => scala.Unit,
+    replaceAllBySheet: (java.lang.String, java.lang.String, scala.Boolean, scala.Boolean) => scala.Unit
   ): XLSearch = {
-    val __obj = js.Dynamic.literal(replaceAllByBook = replaceAllByBook, replaceAllBySheet = replaceAllBySheet)
+    val __obj = js.Dynamic.literal(replaceAllByBook = js.Any.fromFunction4(replaceAllByBook), replaceAllBySheet = js.Any.fromFunction4(replaceAllBySheet))
   
     __obj.asInstanceOf[XLSearch]
   }

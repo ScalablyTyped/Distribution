@@ -11,8 +11,8 @@ trait EllipsizeCallback extends js.Object {
 
 object EllipsizeCallback {
   @scala.inline
-  def apply(ellipsized: js.Function2[scala.Double, scala.Double, scala.Unit]): EllipsizeCallback = {
-    val __obj = js.Dynamic.literal(ellipsized = ellipsized)
+  def apply(ellipsized: (scala.Double, scala.Double) => scala.Unit): EllipsizeCallback = {
+    val __obj = js.Dynamic.literal(ellipsized = js.Any.fromFunction2(ellipsized))
   
     __obj.asInstanceOf[EllipsizeCallback]
   }

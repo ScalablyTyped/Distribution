@@ -122,12 +122,12 @@ object ApplePay {
   @scala.inline
   def apply(
     VERSION: java.lang.String,
-    create: js.Function2[braintreeDashWebLib.Anon_Client, callback, scala.Unit],
-    createPaymentRequest: js.Function1[ApplePayPaymentRequest, ApplePayPaymentRequest],
-    performValidation: js.Function2[braintreeDashWebLib.Anon_DisplayName, callback, scala.Unit],
-    tokenize: js.Function2[braintreeDashWebLib.Anon_Token, callback, scala.Unit]
+    create: (braintreeDashWebLib.Anon_Client, callback) => scala.Unit,
+    createPaymentRequest: ApplePayPaymentRequest => ApplePayPaymentRequest,
+    performValidation: (braintreeDashWebLib.Anon_DisplayName, callback) => scala.Unit,
+    tokenize: (braintreeDashWebLib.Anon_Token, callback) => scala.Unit
   ): ApplePay = {
-    val __obj = js.Dynamic.literal(VERSION = VERSION, create = create, createPaymentRequest = createPaymentRequest, performValidation = performValidation, tokenize = tokenize)
+    val __obj = js.Dynamic.literal(VERSION = VERSION, create = js.Any.fromFunction2(create), createPaymentRequest = js.Any.fromFunction1(createPaymentRequest), performValidation = js.Any.fromFunction2(performValidation), tokenize = js.Any.fromFunction2(tokenize))
   
     __obj.asInstanceOf[ApplePay]
   }

@@ -12,7 +12,7 @@ trait SignedInfo
     * Gets or sets the canonicalization algorithm that is used before signing
     * for the current SignedInfo object.
     */
-  var CanonicalizationMethod: CanonicalizationMethod = js.native
+  var CanonicalizationMethod: xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.CanonicalizationMethod = js.native
   /**
     * Gets or sets the ID of the current SignedInfo object.
     *
@@ -20,11 +20,11 @@ trait SignedInfo
     * @memberOf SignedInfo
     */
   var Id: java.lang.String = js.native
-  var References: References = js.native
+  var References: xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.References = js.native
   /**
     * Gets or sets the name of the algorithm used for signature generation
     * and validation for the current SignedInfo object.
     */
-  var SignatureMethod: SignatureMethod = js.native
+  var SignatureMethod: xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.SignatureMethod = js.native
 }
 

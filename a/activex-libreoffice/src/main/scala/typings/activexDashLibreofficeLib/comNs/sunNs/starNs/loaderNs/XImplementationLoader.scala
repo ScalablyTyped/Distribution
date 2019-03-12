@@ -44,24 +44,13 @@ trait XImplementationLoader
 object XImplementationLoader {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    activate: js.Function4[
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.registryNs.XRegistryKey, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    writeRegistryInfo: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.registryNs.XRegistryKey, 
-      java.lang.String, 
-      java.lang.String, 
-      scala.Boolean
-    ]
+    acquire: () => scala.Unit,
+    activate: (java.lang.String, java.lang.String, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.registryNs.XRegistryKey) => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    writeRegistryInfo: (activexDashLibreofficeLib.comNs.sunNs.starNs.registryNs.XRegistryKey, java.lang.String, java.lang.String) => scala.Boolean
   ): XImplementationLoader = {
-    val __obj = js.Dynamic.literal(acquire = acquire, activate = activate, queryInterface = queryInterface, release = release, writeRegistryInfo = writeRegistryInfo)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), activate = js.Any.fromFunction4(activate), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), writeRegistryInfo = js.Any.fromFunction3(writeRegistryInfo))
   
     __obj.asInstanceOf[XImplementationLoader]
   }

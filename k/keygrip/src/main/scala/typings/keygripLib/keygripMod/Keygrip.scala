@@ -14,11 +14,11 @@ trait Keygrip extends js.Object {
 object Keygrip {
   @scala.inline
   def apply(
-    index: js.Function2[js.Any, java.lang.String, scala.Double],
-    sign: js.Function1[js.Any, java.lang.String],
-    verify: js.Function2[js.Any, java.lang.String, scala.Boolean]
+    index: (js.Any, java.lang.String) => scala.Double,
+    sign: js.Any => java.lang.String,
+    verify: (js.Any, java.lang.String) => scala.Boolean
   ): Keygrip = {
-    val __obj = js.Dynamic.literal(index = index, sign = sign, verify = verify)
+    val __obj = js.Dynamic.literal(index = js.Any.fromFunction2(index), sign = js.Any.fromFunction1(sign), verify = js.Any.fromFunction2(verify))
   
     __obj.asInstanceOf[Keygrip]
   }

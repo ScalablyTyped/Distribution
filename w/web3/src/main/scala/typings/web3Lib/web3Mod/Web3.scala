@@ -27,15 +27,15 @@ object Web3 {
     bzz: web3Lib.typesMod.Bzz,
     currentProvider: web3Lib.providersMod.Provider,
     eth: web3Lib.ethMod.Eth,
-    extend: js.Function1[js.Any, js.Any],
+    extend: js.Any => js.Any,
     givenProvider: web3Lib.providersMod.Provider,
     providers: web3Lib.providersMod.Providers,
-    setProvider: js.Function1[web3Lib.providersMod.Provider, scala.Unit],
+    setProvider: web3Lib.providersMod.Provider => scala.Unit,
     shh: web3Lib.typesMod.Shh,
     utils: web3Lib.utilsMod.Utils,
     version: java.lang.String
   ): Web3 = {
-    val __obj = js.Dynamic.literal(BatchRequest = BatchRequest, bzz = bzz, currentProvider = currentProvider, eth = eth, extend = extend, givenProvider = givenProvider, providers = providers, setProvider = setProvider, shh = shh, utils = utils, version = version)
+    val __obj = js.Dynamic.literal(BatchRequest = BatchRequest, bzz = bzz, currentProvider = currentProvider, eth = eth, extend = js.Any.fromFunction1(extend), givenProvider = givenProvider, providers = providers, setProvider = js.Any.fromFunction1(setProvider), shh = shh, utils = utils, version = version)
   
     __obj.asInstanceOf[Web3]
   }

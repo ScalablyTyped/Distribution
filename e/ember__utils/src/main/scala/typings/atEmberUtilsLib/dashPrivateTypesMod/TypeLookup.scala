@@ -27,14 +27,14 @@ object TypeLookup {
     date: stdLib.Date,
     error: stdLib.Error,
     filelist: stdLib.FileList,
-    function: js.Function1[/* repeated */ js.Any, js.Any],
+    function: /* repeated */ js.Any => js.Any,
     `null`: scala.Null,
     number: scala.Double,
     regexp: stdLib.RegExp,
     string: java.lang.String,
     undefined: js.UndefOr[scala.Nothing] = js.undefined
   ): TypeLookup = {
-    val __obj = js.Dynamic.literal(array = array, boolean = boolean, date = date, error = error, filelist = filelist, function = function, number = number, regexp = regexp, string = string)
+    val __obj = js.Dynamic.literal(array = array, boolean = boolean, date = date, error = error, filelist = filelist, function = js.Any.fromFunction1(function), number = number, regexp = regexp, string = string)
     __obj.updateDynamic("null")(`null`)
     if (!js.isUndefined(undefined)) __obj.updateDynamic("undefined")(undefined)
     __obj.asInstanceOf[TypeLookup]

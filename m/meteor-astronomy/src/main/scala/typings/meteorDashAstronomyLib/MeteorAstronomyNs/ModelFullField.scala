@@ -20,21 +20,21 @@ object ModelFullField {
   @scala.inline
   def apply[Field, Doc](
     `type`: TypeOptions,
-    default: js.Function0[Field] = null,
+    default: () => Field = null,
     immutable: js.UndefOr[scala.Boolean] = js.undefined,
     index: java.lang.String | scala.Double = null,
     optional: js.UndefOr[scala.Boolean] = js.undefined,
-    resolve: js.Function1[/* doc */ Doc, Field] = null,
+    resolve: /* doc */ Doc => Field = null,
     transient: js.UndefOr[scala.Boolean] = js.undefined,
     validators: js.Array[Validator] = null
   ): ModelFullField[Field, Doc] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(js.Any.fromFunction0(default))
     if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
+    if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction1(resolve))
     if (!js.isUndefined(transient)) __obj.updateDynamic("transient")(transient)
     if (validators != null) __obj.updateDynamic("validators")(validators)
     __obj.asInstanceOf[ModelFullField[Field, Doc]]

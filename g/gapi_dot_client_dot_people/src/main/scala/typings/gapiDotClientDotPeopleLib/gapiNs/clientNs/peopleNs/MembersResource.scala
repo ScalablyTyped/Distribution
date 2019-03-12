@@ -13,12 +13,9 @@ trait MembersResource extends js.Object {
 object MembersResource {
   @scala.inline
   def apply(
-    modify: js.Function1[
-      gapiDotClientDotPeopleLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ModifyContactGroupMembersResponse]
-    ]
+    modify: gapiDotClientDotPeopleLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[ModifyContactGroupMembersResponse]
   ): MembersResource = {
-    val __obj = js.Dynamic.literal(modify = modify)
+    val __obj = js.Dynamic.literal(modify = js.Any.fromFunction1(modify))
   
     __obj.asInstanceOf[MembersResource]
   }

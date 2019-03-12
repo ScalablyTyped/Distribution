@@ -15,36 +15,36 @@ trait IArrowFunctionExpressionSyntax extends IUnaryExpressionSyntax {
 object IArrowFunctionExpressionSyntax {
   @scala.inline
   def apply(
-    accept: js.Function1[ISyntaxVisitor, js.Any],
+    accept: ISyntaxVisitor => js.Any,
     block: BlockSyntax,
-    childAt: js.Function1[scala.Double, ISyntaxElement],
-    childCount: js.Function0[scala.Double],
-    collectTextElements: js.Function1[js.Array[java.lang.String], scala.Unit],
+    childAt: scala.Double => ISyntaxElement,
+    childCount: () => scala.Double,
+    collectTextElements: js.Array[java.lang.String] => scala.Unit,
     equalsGreaterThanToken: ISyntaxToken,
     expression: IExpressionSyntax,
-    firstToken: js.Function0[ISyntaxToken],
-    fullText: js.Function0[java.lang.String],
-    fullWidth: js.Function0[scala.Double],
-    isArrowFunctionExpression: js.Function0[scala.Boolean],
-    isExpression: js.Function0[scala.Boolean],
-    isIncrementallyUnusable: js.Function0[scala.Boolean],
-    isList: js.Function0[scala.Boolean],
-    isNode: js.Function0[scala.Boolean],
-    isSeparatedList: js.Function0[scala.Boolean],
-    isToken: js.Function0[scala.Boolean],
-    isTypeScriptSpecific: js.Function0[scala.Boolean],
-    isUnaryExpression: js.Function0[scala.Boolean],
-    kind: js.Function0[SyntaxKind],
-    lastToken: js.Function0[ISyntaxToken],
-    leadingTrivia: js.Function0[ISyntaxTriviaList],
-    leadingTriviaWidth: js.Function0[scala.Double],
-    trailingTrivia: js.Function0[ISyntaxTriviaList],
-    trailingTriviaWidth: js.Function0[scala.Double],
-    width: js.Function0[scala.Double],
-    withLeadingTrivia: js.Function1[ISyntaxTriviaList, IExpressionSyntax],
-    withTrailingTrivia: js.Function1[ISyntaxTriviaList, IExpressionSyntax]
+    firstToken: () => ISyntaxToken,
+    fullText: () => java.lang.String,
+    fullWidth: () => scala.Double,
+    isArrowFunctionExpression: () => scala.Boolean,
+    isExpression: () => scala.Boolean,
+    isIncrementallyUnusable: () => scala.Boolean,
+    isList: () => scala.Boolean,
+    isNode: () => scala.Boolean,
+    isSeparatedList: () => scala.Boolean,
+    isToken: () => scala.Boolean,
+    isTypeScriptSpecific: () => scala.Boolean,
+    isUnaryExpression: () => scala.Boolean,
+    kind: () => SyntaxKind,
+    lastToken: () => ISyntaxToken,
+    leadingTrivia: () => ISyntaxTriviaList,
+    leadingTriviaWidth: () => scala.Double,
+    trailingTrivia: () => ISyntaxTriviaList,
+    trailingTriviaWidth: () => scala.Double,
+    width: () => scala.Double,
+    withLeadingTrivia: ISyntaxTriviaList => IExpressionSyntax,
+    withTrailingTrivia: ISyntaxTriviaList => IExpressionSyntax
   ): IArrowFunctionExpressionSyntax = {
-    val __obj = js.Dynamic.literal(accept = accept, block = block, childAt = childAt, childCount = childCount, collectTextElements = collectTextElements, equalsGreaterThanToken = equalsGreaterThanToken, expression = expression, firstToken = firstToken, fullText = fullText, fullWidth = fullWidth, isArrowFunctionExpression = isArrowFunctionExpression, isExpression = isExpression, isIncrementallyUnusable = isIncrementallyUnusable, isList = isList, isNode = isNode, isSeparatedList = isSeparatedList, isToken = isToken, isTypeScriptSpecific = isTypeScriptSpecific, isUnaryExpression = isUnaryExpression, kind = kind, lastToken = lastToken, leadingTrivia = leadingTrivia, leadingTriviaWidth = leadingTriviaWidth, trailingTrivia = trailingTrivia, trailingTriviaWidth = trailingTriviaWidth, width = width, withLeadingTrivia = withLeadingTrivia, withTrailingTrivia = withTrailingTrivia)
+    val __obj = js.Dynamic.literal(accept = js.Any.fromFunction1(accept), block = block, childAt = js.Any.fromFunction1(childAt), childCount = js.Any.fromFunction0(childCount), collectTextElements = js.Any.fromFunction1(collectTextElements), equalsGreaterThanToken = equalsGreaterThanToken, expression = expression, firstToken = js.Any.fromFunction0(firstToken), fullText = js.Any.fromFunction0(fullText), fullWidth = js.Any.fromFunction0(fullWidth), isArrowFunctionExpression = js.Any.fromFunction0(isArrowFunctionExpression), isExpression = js.Any.fromFunction0(isExpression), isIncrementallyUnusable = js.Any.fromFunction0(isIncrementallyUnusable), isList = js.Any.fromFunction0(isList), isNode = js.Any.fromFunction0(isNode), isSeparatedList = js.Any.fromFunction0(isSeparatedList), isToken = js.Any.fromFunction0(isToken), isTypeScriptSpecific = js.Any.fromFunction0(isTypeScriptSpecific), isUnaryExpression = js.Any.fromFunction0(isUnaryExpression), kind = js.Any.fromFunction0(kind), lastToken = js.Any.fromFunction0(lastToken), leadingTrivia = js.Any.fromFunction0(leadingTrivia), leadingTriviaWidth = js.Any.fromFunction0(leadingTriviaWidth), trailingTrivia = js.Any.fromFunction0(trailingTrivia), trailingTriviaWidth = js.Any.fromFunction0(trailingTriviaWidth), width = js.Any.fromFunction0(width), withLeadingTrivia = js.Any.fromFunction1(withLeadingTrivia), withTrailingTrivia = js.Any.fromFunction1(withTrailingTrivia))
   
     __obj.asInstanceOf[IArrowFunctionExpressionSyntax]
   }

@@ -31,7 +31,7 @@ object IShepherdTourStepOptions {
     classes: java.lang.String = null,
     scrollTo: js.UndefOr[scala.Boolean] = js.undefined,
     showCancelLink: js.UndefOr[scala.Boolean] = js.undefined,
-    showOn: js.Function0[scala.Boolean] = null,
+    showOn: () => scala.Boolean = null,
     tetherOptions: js.Any = null,
     text: js.Any = null,
     title: java.lang.String = null,
@@ -45,7 +45,7 @@ object IShepherdTourStepOptions {
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (!js.isUndefined(scrollTo)) __obj.updateDynamic("scrollTo")(scrollTo)
     if (!js.isUndefined(showCancelLink)) __obj.updateDynamic("showCancelLink")(showCancelLink)
-    if (showOn != null) __obj.updateDynamic("showOn")(showOn)
+    if (showOn != null) __obj.updateDynamic("showOn")(js.Any.fromFunction0(showOn))
     if (tetherOptions != null) __obj.updateDynamic("tetherOptions")(tetherOptions)
     if (text != null) __obj.updateDynamic("text")(text)
     if (title != null) __obj.updateDynamic("title")(title)

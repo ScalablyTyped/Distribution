@@ -22,10 +22,7 @@ object Selectors {
   def apply(
     attrHandle: sizzleLib.sizzleMod.SizzleNs.SelectorsNs.AttrHandleFunctions,
     cacheLength: scala.Double,
-    createPseudo: js.Function1[
-      sizzleLib.sizzleMod.SizzleNs.SelectorsNs.CreatePseudoFunction, 
-      sizzleLib.sizzleMod.SizzleNs.SelectorsNs.PseudoFunction
-    ],
+    createPseudo: sizzleLib.sizzleMod.SizzleNs.SelectorsNs.CreatePseudoFunction => sizzleLib.sizzleMod.SizzleNs.SelectorsNs.PseudoFunction,
     filter: sizzleLib.sizzleMod.SizzleNs.SelectorsNs.FilterFunctions,
     find: sizzleLib.sizzleMod.SizzleNs.SelectorsNs.FindFunctions,
     `match`: sizzleLib.sizzleMod.SizzleNs.SelectorsNs.Matches,
@@ -33,7 +30,7 @@ object Selectors {
     pseudos: sizzleLib.sizzleMod.SizzleNs.SelectorsNs.PseudoFunctions,
     setFilters: sizzleLib.sizzleMod.SizzleNs.SelectorsNs.SetFilterFunctions
   ): Selectors = {
-    val __obj = js.Dynamic.literal(attrHandle = attrHandle, cacheLength = cacheLength, createPseudo = createPseudo, filter = filter, find = find, preFilter = preFilter, pseudos = pseudos, setFilters = setFilters)
+    val __obj = js.Dynamic.literal(attrHandle = attrHandle, cacheLength = cacheLength, createPseudo = js.Any.fromFunction1(createPseudo), filter = filter, find = find, preFilter = preFilter, pseudos = pseudos, setFilters = setFilters)
     __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[Selectors]
   }

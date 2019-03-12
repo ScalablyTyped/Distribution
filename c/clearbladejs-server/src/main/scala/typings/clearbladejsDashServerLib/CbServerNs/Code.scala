@@ -16,13 +16,13 @@ trait Code extends js.Object {
 object Code {
   @scala.inline
   def apply(
-    execute: js.Function4[java.lang.String, js.Object, scala.Boolean, CbCallback, scala.Unit],
-    getAllServices: js.Function1[CbCallback, scala.Unit],
+    execute: (java.lang.String, js.Object, scala.Boolean, CbCallback) => scala.Unit,
+    getAllServices: CbCallback => scala.Unit,
     systemKey: java.lang.String,
     systemSecret: java.lang.String,
     user: APIUser
   ): Code = {
-    val __obj = js.Dynamic.literal(execute = execute, getAllServices = getAllServices, systemKey = systemKey, systemSecret = systemSecret, user = user)
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction4(execute), getAllServices = js.Any.fromFunction1(getAllServices), systemKey = systemKey, systemSecret = systemSecret, user = user)
   
     __obj.asInstanceOf[Code]
   }

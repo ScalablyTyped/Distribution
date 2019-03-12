@@ -36,12 +36,7 @@ object ^ extends js.Object {
     * @deprecated Unsupported on Firefox at this time.
     */
   val onPermissionLevelChanged: js.UndefOr[
-    firefoxDashWebextDashBrowserLib.WebExtEvent[
-      js.Function1[
-        /* level */ firefoxDashWebextDashBrowserLib.browserNs.notificationsNs.PermissionLevel, 
-        scala.Unit
-      ]
-    ]
+    firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* level */ PermissionLevel, scala.Unit]]
   ] = js.native
   /**
     * Fired when the user clicked on a link for the app's notification settings.
@@ -65,34 +60,26 @@ object ^ extends js.Object {
     *     operation.
     * @param options Contents of the notification.
     */
-  def create(
-    notificationId: java.lang.String,
-    options: firefoxDashWebextDashBrowserLib.browserNs.notificationsNs.CreateNotificationOptions
-  ): js.Promise[js.UndefOr[java.lang.String]] = js.native
+  def create(notificationId: java.lang.String, options: CreateNotificationOptions): js.Promise[js.UndefOr[java.lang.String]] = js.native
   /* notifications functions */
   /**
     * Creates and displays a notification.
     * @param options Contents of the notification.
     */
-  def create(options: firefoxDashWebextDashBrowserLib.browserNs.notificationsNs.CreateNotificationOptions): js.Promise[js.UndefOr[java.lang.String]] = js.native
+  def create(options: CreateNotificationOptions): js.Promise[js.UndefOr[java.lang.String]] = js.native
   /** Retrieves all the notifications. */
-  def getAll(): js.Promise[
-    firefoxDashWebextDashBrowserLib.browserNs.notificationsNs.CreateNotificationOptions
-  ] = js.native
+  def getAll(): js.Promise[CreateNotificationOptions] = js.native
   /**
     * Retrieves whether the user has enabled notifications from this app or extension.
     * @deprecated Unsupported on Firefox at this time.
     */
-  def getPermissionLevel(): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.notificationsNs.PermissionLevel] = js.native
+  def getPermissionLevel(): js.Promise[PermissionLevel] = js.native
   /**
     * Updates an existing notification.
     * @param notificationId The id of the notification to be updated.
     * @param options Contents of the notification to update to.
     * @deprecated Unsupported on Firefox at this time.
     */
-  def update(
-    notificationId: java.lang.String,
-    options: firefoxDashWebextDashBrowserLib.browserNs.notificationsNs.UpdateNotificationOptions
-  ): js.Promise[js.UndefOr[scala.Boolean]] = js.native
+  def update(notificationId: java.lang.String, options: UpdateNotificationOptions): js.Promise[js.UndefOr[scala.Boolean]] = js.native
 }
 

@@ -112,70 +112,62 @@ object IDefault {
   def apply(
     IContainer: senchaUnderscoreTouchLib.ExtNs.IContainer = null,
     autoMaximize: js.UndefOr[scala.Boolean] = js.undefined,
-    getAutoMaximize: js.Function0[scala.Boolean] = null,
-    getLayout: js.Function0[_] = null,
-    getOrientation: js.Function0[java.lang.String] = null,
-    getPreventPanning: js.Function0[scala.Boolean] = null,
-    getPreventZooming: js.Function0[scala.Boolean] = null,
-    getSize: js.Function0[_] = null,
-    getUseBodyElement: js.Function0[scala.Boolean] = null,
-    getWindowHeight: js.Function0[scala.Double] = null,
-    getWindowWidth: js.Function0[scala.Double] = null,
-    hideAllMenus: js.Function1[/* animation */ js.UndefOr[js.Any], scala.Unit] = null,
-    hideMenu: js.Function1[/* side */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    hideOtherMenus: js.Function2[
-      /* side */ js.UndefOr[java.lang.String], 
-      /* animation */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
+    getAutoMaximize: () => scala.Boolean = null,
+    getLayout: () => _ = null,
+    getOrientation: () => java.lang.String = null,
+    getPreventPanning: () => scala.Boolean = null,
+    getPreventZooming: () => scala.Boolean = null,
+    getSize: () => _ = null,
+    getUseBodyElement: () => scala.Boolean = null,
+    getWindowHeight: () => scala.Double = null,
+    getWindowWidth: () => scala.Double = null,
+    hideAllMenus: /* animation */ js.UndefOr[js.Any] => scala.Unit = null,
+    hideMenu: /* side */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    hideOtherMenus: (/* side */ js.UndefOr[java.lang.String], /* animation */ js.UndefOr[java.lang.String]) => scala.Unit = null,
     id: java.lang.String = null,
     isReady: js.UndefOr[scala.Boolean] = js.undefined,
     layout: js.Any = null,
     preventPanning: js.UndefOr[scala.Boolean] = js.undefined,
     preventZooming: js.UndefOr[scala.Boolean] = js.undefined,
-    removeMenu: js.Function1[/* side */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setAutoMaximize: js.Function1[/* autoMaximize */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setLayout: js.Function1[/* layout */ js.UndefOr[js.Any], scala.Unit] = null,
-    setMenu: js.Function2[
-      /* menu */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.IMenu], 
-      /* config */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    setPreventPanning: js.Function1[/* preventPanning */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setPreventZooming: js.Function1[/* preventZooming */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setUseBodyElement: js.Function1[/* useBodyElement */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    showMenu: js.Function1[/* side */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    toggleMenu: js.Function1[/* side */ js.UndefOr[java.lang.String], scala.Unit] = null
+    removeMenu: /* side */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setAutoMaximize: /* autoMaximize */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setLayout: /* layout */ js.UndefOr[js.Any] => scala.Unit = null,
+    setMenu: (/* menu */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.IMenu], /* config */ js.UndefOr[js.Any]) => scala.Unit = null,
+    setPreventPanning: /* preventPanning */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setPreventZooming: /* preventZooming */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setUseBodyElement: /* useBodyElement */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    showMenu: /* side */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    toggleMenu: /* side */ js.UndefOr[java.lang.String] => scala.Unit = null
   ): IDefault = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IContainer)
     if (!js.isUndefined(autoMaximize)) __obj.updateDynamic("autoMaximize")(autoMaximize)
-    if (getAutoMaximize != null) __obj.updateDynamic("getAutoMaximize")(getAutoMaximize)
-    if (getLayout != null) __obj.updateDynamic("getLayout")(getLayout)
-    if (getOrientation != null) __obj.updateDynamic("getOrientation")(getOrientation)
-    if (getPreventPanning != null) __obj.updateDynamic("getPreventPanning")(getPreventPanning)
-    if (getPreventZooming != null) __obj.updateDynamic("getPreventZooming")(getPreventZooming)
-    if (getSize != null) __obj.updateDynamic("getSize")(getSize)
-    if (getUseBodyElement != null) __obj.updateDynamic("getUseBodyElement")(getUseBodyElement)
-    if (getWindowHeight != null) __obj.updateDynamic("getWindowHeight")(getWindowHeight)
-    if (getWindowWidth != null) __obj.updateDynamic("getWindowWidth")(getWindowWidth)
-    if (hideAllMenus != null) __obj.updateDynamic("hideAllMenus")(hideAllMenus)
-    if (hideMenu != null) __obj.updateDynamic("hideMenu")(hideMenu)
-    if (hideOtherMenus != null) __obj.updateDynamic("hideOtherMenus")(hideOtherMenus)
+    if (getAutoMaximize != null) __obj.updateDynamic("getAutoMaximize")(js.Any.fromFunction0(getAutoMaximize))
+    if (getLayout != null) __obj.updateDynamic("getLayout")(js.Any.fromFunction0(getLayout))
+    if (getOrientation != null) __obj.updateDynamic("getOrientation")(js.Any.fromFunction0(getOrientation))
+    if (getPreventPanning != null) __obj.updateDynamic("getPreventPanning")(js.Any.fromFunction0(getPreventPanning))
+    if (getPreventZooming != null) __obj.updateDynamic("getPreventZooming")(js.Any.fromFunction0(getPreventZooming))
+    if (getSize != null) __obj.updateDynamic("getSize")(js.Any.fromFunction0(getSize))
+    if (getUseBodyElement != null) __obj.updateDynamic("getUseBodyElement")(js.Any.fromFunction0(getUseBodyElement))
+    if (getWindowHeight != null) __obj.updateDynamic("getWindowHeight")(js.Any.fromFunction0(getWindowHeight))
+    if (getWindowWidth != null) __obj.updateDynamic("getWindowWidth")(js.Any.fromFunction0(getWindowWidth))
+    if (hideAllMenus != null) __obj.updateDynamic("hideAllMenus")(js.Any.fromFunction1(hideAllMenus))
+    if (hideMenu != null) __obj.updateDynamic("hideMenu")(js.Any.fromFunction1(hideMenu))
+    if (hideOtherMenus != null) __obj.updateDynamic("hideOtherMenus")(js.Any.fromFunction2(hideOtherMenus))
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(isReady)) __obj.updateDynamic("isReady")(isReady)
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (!js.isUndefined(preventPanning)) __obj.updateDynamic("preventPanning")(preventPanning)
     if (!js.isUndefined(preventZooming)) __obj.updateDynamic("preventZooming")(preventZooming)
-    if (removeMenu != null) __obj.updateDynamic("removeMenu")(removeMenu)
-    if (setAutoMaximize != null) __obj.updateDynamic("setAutoMaximize")(setAutoMaximize)
-    if (setLayout != null) __obj.updateDynamic("setLayout")(setLayout)
-    if (setMenu != null) __obj.updateDynamic("setMenu")(setMenu)
-    if (setPreventPanning != null) __obj.updateDynamic("setPreventPanning")(setPreventPanning)
-    if (setPreventZooming != null) __obj.updateDynamic("setPreventZooming")(setPreventZooming)
-    if (setUseBodyElement != null) __obj.updateDynamic("setUseBodyElement")(setUseBodyElement)
-    if (showMenu != null) __obj.updateDynamic("showMenu")(showMenu)
-    if (toggleMenu != null) __obj.updateDynamic("toggleMenu")(toggleMenu)
+    if (removeMenu != null) __obj.updateDynamic("removeMenu")(js.Any.fromFunction1(removeMenu))
+    if (setAutoMaximize != null) __obj.updateDynamic("setAutoMaximize")(js.Any.fromFunction1(setAutoMaximize))
+    if (setLayout != null) __obj.updateDynamic("setLayout")(js.Any.fromFunction1(setLayout))
+    if (setMenu != null) __obj.updateDynamic("setMenu")(js.Any.fromFunction2(setMenu))
+    if (setPreventPanning != null) __obj.updateDynamic("setPreventPanning")(js.Any.fromFunction1(setPreventPanning))
+    if (setPreventZooming != null) __obj.updateDynamic("setPreventZooming")(js.Any.fromFunction1(setPreventZooming))
+    if (setUseBodyElement != null) __obj.updateDynamic("setUseBodyElement")(js.Any.fromFunction1(setUseBodyElement))
+    if (showMenu != null) __obj.updateDynamic("showMenu")(js.Any.fromFunction1(showMenu))
+    if (toggleMenu != null) __obj.updateDynamic("toggleMenu")(js.Any.fromFunction1(toggleMenu))
     __obj.asInstanceOf[IDefault]
   }
 }

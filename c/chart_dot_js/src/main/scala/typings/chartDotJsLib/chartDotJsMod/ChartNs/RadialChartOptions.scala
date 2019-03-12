@@ -22,13 +22,9 @@ object RadialChartOptions {
     hover: ChartHoverOptions = null,
     layout: ChartLayoutOptions = null,
     legend: ChartLegendOptions = null,
-    legendCallback: js.Function1[/* chart */ chartDotJsLib.chartDotJsMod.Chart, java.lang.String] = null,
+    legendCallback: /* chart */ chartDotJsLib.chartDotJsMod.Chart => java.lang.String = null,
     maintainAspectRatio: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: js.Function2[
-      /* event */ js.UndefOr[stdLib.MouseEvent], 
-      /* activeElements */ js.UndefOr[js.Array[js.Object]], 
-      _
-    ] = null,
+    onClick: (/* event */ js.UndefOr[stdLib.MouseEvent], /* activeElements */ js.UndefOr[js.Array[js.Object]]) => _ = null,
     onHover: js.ThisFunction2[
       /* this */ chartDotJsLib.chartDotJsMod.Chart, 
       /* event */ stdLib.MouseEvent, 
@@ -58,9 +54,9 @@ object RadialChartOptions {
     if (hover != null) __obj.updateDynamic("hover")(hover)
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (legend != null) __obj.updateDynamic("legend")(legend)
-    if (legendCallback != null) __obj.updateDynamic("legendCallback")(legendCallback)
+    if (legendCallback != null) __obj.updateDynamic("legendCallback")(js.Any.fromFunction1(legendCallback))
     if (!js.isUndefined(maintainAspectRatio)) __obj.updateDynamic("maintainAspectRatio")(maintainAspectRatio)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (onHover != null) __obj.updateDynamic("onHover")(onHover)
     if (onResize != null) __obj.updateDynamic("onResize")(onResize)
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)

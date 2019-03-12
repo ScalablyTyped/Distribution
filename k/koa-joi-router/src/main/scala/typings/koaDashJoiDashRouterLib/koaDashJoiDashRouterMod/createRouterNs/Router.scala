@@ -15,7 +15,8 @@ trait Router extends js.Object {
   var head_Original: Method = js.native
   @JSName("options")
   var options_Original: Method = js.native
-  var param: js.Function2[
+  @JSName("param")
+  var param_Original: js.Function2[
     /* param */ java.lang.String, 
     /* middleware */ koaDashRouterLib.koaDashRouterMod.RouterNs.IParamMiddleware, 
     koaDashRouterLib.koaDashRouterMod.Router[_, js.Object]
@@ -24,7 +25,8 @@ trait Router extends js.Object {
   var patch_Original: Method = js.native
   @JSName("post")
   var post_Original: Method = js.native
-  var prefix: js.Function1[
+  @JSName("prefix")
+  var prefix_Original: js.Function1[
     /* prefix */ java.lang.String, 
     koaDashRouterLib.koaDashRouterMod.Router[_, js.Object]
   ] = js.native
@@ -64,6 +66,7 @@ trait Router extends js.Object {
   def options(path: java.lang.String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
   def options(path: stdLib.RegExp, handlerOrConfig: js.Object, handlers: Handler*): Router = js.native
   def options(path: stdLib.RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
+  def param(param: java.lang.String, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IParamMiddleware): koaDashRouterLib.koaDashRouterMod.Router[_, js.Object] = js.native
   def patch(path: java.lang.String, handlerOrConfig: js.Object, handlers: Handler*): Router = js.native
   def patch(path: java.lang.String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
   def patch(path: stdLib.RegExp, handlerOrConfig: js.Object, handlers: Handler*): Router = js.native
@@ -72,6 +75,7 @@ trait Router extends js.Object {
   def post(path: java.lang.String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
   def post(path: stdLib.RegExp, handlerOrConfig: js.Object, handlers: Handler*): Router = js.native
   def post(path: stdLib.RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
+  def prefix(prefix: java.lang.String): koaDashRouterLib.koaDashRouterMod.Router[_, js.Object] = js.native
   def put(path: java.lang.String, handlerOrConfig: js.Object, handlers: Handler*): Router = js.native
   def put(path: java.lang.String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
   def put(path: stdLib.RegExp, handlerOrConfig: js.Object, handlers: Handler*): Router = js.native

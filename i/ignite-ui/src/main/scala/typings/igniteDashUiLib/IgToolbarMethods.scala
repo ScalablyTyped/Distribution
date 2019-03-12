@@ -64,19 +64,19 @@ trait IgToolbarMethods extends js.Object {
 object IgToolbarMethods {
   @scala.inline
   def apply(
-    activateItem: js.Function2[js.Object, js.Object, scala.Unit],
-    addItem: js.Function1[js.Object, scala.Unit],
-    changeGlobalLanguage: js.Function0[scala.Unit],
-    changeGlobalRegional: js.Function0[scala.Unit],
-    changeLocale: js.Function0[scala.Unit],
-    deactivateAll: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    disableItem: js.Function2[js.Object, js.Object, scala.Unit],
-    getItem: js.Function1[js.Object, js.Object],
-    removeItem: js.Function1[js.Object, js.Object],
-    widget: js.Function0[scala.Unit]
+    activateItem: (js.Object, js.Object) => scala.Unit,
+    addItem: js.Object => scala.Unit,
+    changeGlobalLanguage: () => scala.Unit,
+    changeGlobalRegional: () => scala.Unit,
+    changeLocale: () => scala.Unit,
+    deactivateAll: () => scala.Unit,
+    destroy: () => scala.Unit,
+    disableItem: (js.Object, js.Object) => scala.Unit,
+    getItem: js.Object => js.Object,
+    removeItem: js.Object => js.Object,
+    widget: () => scala.Unit
   ): IgToolbarMethods = {
-    val __obj = js.Dynamic.literal(activateItem = activateItem, addItem = addItem, changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, deactivateAll = deactivateAll, destroy = destroy, disableItem = disableItem, getItem = getItem, removeItem = removeItem, widget = widget)
+    val __obj = js.Dynamic.literal(activateItem = js.Any.fromFunction2(activateItem), addItem = js.Any.fromFunction1(addItem), changeGlobalLanguage = js.Any.fromFunction0(changeGlobalLanguage), changeGlobalRegional = js.Any.fromFunction0(changeGlobalRegional), changeLocale = js.Any.fromFunction0(changeLocale), deactivateAll = js.Any.fromFunction0(deactivateAll), destroy = js.Any.fromFunction0(destroy), disableItem = js.Any.fromFunction2(disableItem), getItem = js.Any.fromFunction1(getItem), removeItem = js.Any.fromFunction1(removeItem), widget = js.Any.fromFunction0(widget))
   
     __obj.asInstanceOf[IgToolbarMethods]
   }

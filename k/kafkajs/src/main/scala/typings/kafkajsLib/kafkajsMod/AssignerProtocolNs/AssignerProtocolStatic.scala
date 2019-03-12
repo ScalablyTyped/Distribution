@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AssignerProtocolStatic extends js.Object {
-  var MemberAssignment: MemberAssignment
-  var MemberMetadata: MemberMetadata
+  var MemberAssignment: kafkajsLib.kafkajsMod.AssignerProtocolNs.MemberAssignment
+  var MemberMetadata: kafkajsLib.kafkajsMod.AssignerProtocolNs.MemberMetadata
 }
 
 object AssignerProtocolStatic {

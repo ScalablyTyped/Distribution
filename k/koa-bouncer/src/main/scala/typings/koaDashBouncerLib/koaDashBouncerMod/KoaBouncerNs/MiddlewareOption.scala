@@ -14,14 +14,14 @@ trait MiddlewareOption extends js.Object {
 object MiddlewareOption {
   @scala.inline
   def apply(
-    getBody: js.Function1[/* ctx */ koaLib.koaMod.ApplicationNs.Context, _] = null,
-    getParams: js.Function1[/* ctx */ koaLib.koaMod.ApplicationNs.Context, _] = null,
-    getQuery: js.Function1[/* ctx */ koaLib.koaMod.ApplicationNs.Context, _] = null
+    getBody: /* ctx */ koaLib.koaMod.ApplicationNs.Context => _ = null,
+    getParams: /* ctx */ koaLib.koaMod.ApplicationNs.Context => _ = null,
+    getQuery: /* ctx */ koaLib.koaMod.ApplicationNs.Context => _ = null
   ): MiddlewareOption = {
     val __obj = js.Dynamic.literal()
-    if (getBody != null) __obj.updateDynamic("getBody")(getBody)
-    if (getParams != null) __obj.updateDynamic("getParams")(getParams)
-    if (getQuery != null) __obj.updateDynamic("getQuery")(getQuery)
+    if (getBody != null) __obj.updateDynamic("getBody")(js.Any.fromFunction1(getBody))
+    if (getParams != null) __obj.updateDynamic("getParams")(js.Any.fromFunction1(getParams))
+    if (getQuery != null) __obj.updateDynamic("getQuery")(js.Any.fromFunction1(getQuery))
     __obj.asInstanceOf[MiddlewareOption]
   }
 }

@@ -12,12 +12,12 @@ trait DiagramMouseLeaveEvent extends DiagramEvent {
 object DiagramMouseLeaveEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Diagram,
     item: js.Any = null
   ): DiagramMouseLeaveEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (item != null) __obj.updateDynamic("item")(item)
     __obj.asInstanceOf[DiagramMouseLeaveEvent]
   }

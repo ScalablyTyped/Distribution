@@ -23,13 +23,13 @@ object RTCRtpTransceiver {
     direction: stdLib.RTCRtpTransceiverDirection,
     receiver: RTCRtpReceiver,
     sender: RTCRtpSender,
-    setCodecPreferences: js.Function1[js.Array[RTCRtpCodecCapability], scala.Unit],
-    setDirection: js.Function1[stdLib.RTCRtpTransceiverDirection, scala.Unit],
-    stop: js.Function0[scala.Unit],
+    setCodecPreferences: js.Array[RTCRtpCodecCapability] => scala.Unit,
+    setDirection: stdLib.RTCRtpTransceiverDirection => scala.Unit,
+    stop: () => scala.Unit,
     stopped: scala.Boolean,
     mid: java.lang.String = null
   ): RTCRtpTransceiver = {
-    val __obj = js.Dynamic.literal(direction = direction, receiver = receiver, sender = sender, setCodecPreferences = setCodecPreferences, setDirection = setDirection, stop = stop, stopped = stopped)
+    val __obj = js.Dynamic.literal(direction = direction, receiver = receiver, sender = sender, setCodecPreferences = js.Any.fromFunction1(setCodecPreferences), setDirection = js.Any.fromFunction1(setDirection), stop = js.Any.fromFunction0(stop), stopped = stopped)
     if (mid != null) __obj.updateDynamic("mid")(mid)
     __obj.asInstanceOf[RTCRtpTransceiver]
   }

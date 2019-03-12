@@ -10,12 +10,14 @@ import scala.scalajs.js.annotation._
 object ServiceSettingsNs extends js.Object {
   @js.native
   class NoMatchError ()
-    extends nodeLib.Error {
+    extends stdLib.Error {
     def this(message: java.lang.String) = this()
     def this(message: java.lang.String, constr: js.Any) = this()
     var constr: js.Any = js.native
-    var message: java.lang.String = js.native
-    var name: java.lang.String = js.native
+    /* CompleteClass */
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
   }
   
   var DEFAULT_PROTOCOL: java.lang.String = js.native

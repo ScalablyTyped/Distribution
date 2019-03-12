@@ -17,18 +17,10 @@ object Apply1 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS */](
     URI: F,
-    ap: js.Function2[
-      fpDashTsLib.libHKTMod.Type[F, js.Function1[js.Any, js.Any]], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any]
-    ],
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.Type[F, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any]
-    ]
+    ap: (fpDashTsLib.libHKTMod.Type[F, js.Function1[js.Any, js.Any]], fpDashTsLib.libHKTMod.Type[F, js.Any]) => fpDashTsLib.libHKTMod.Type[F, js.Any],
+    map: (fpDashTsLib.libHKTMod.Type[F, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type[F, js.Any]
   ): Apply1[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ap = ap, map = map)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ap = js.Any.fromFunction2(ap), map = js.Any.fromFunction2(map))
   
     __obj.asInstanceOf[Apply1[F]]
   }

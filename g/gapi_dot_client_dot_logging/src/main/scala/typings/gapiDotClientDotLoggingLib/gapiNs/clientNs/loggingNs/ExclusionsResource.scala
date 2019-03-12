@@ -24,28 +24,13 @@ trait ExclusionsResource extends js.Object {
 object ExclusionsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotLoggingLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LogExclusion]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotLoggingLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotLoggingLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LogExclusion]
-    ],
-    list: js.Function1[
-      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListExclusionsResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LogExclusion]
-    ]
+    create: gapiDotClientDotLoggingLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[LogExclusion],
+    delete: gapiDotClientDotLoggingLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotLoggingLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[LogExclusion],
+    list: gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ListExclusionsResponse],
+    patch: gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[LogExclusion]
   ): ExclusionsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, patch = patch)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch))
   
     __obj.asInstanceOf[ExclusionsResource]
   }

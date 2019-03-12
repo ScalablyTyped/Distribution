@@ -34,31 +34,22 @@ trait ICollisionCoordinator extends js.Object {
 object ICollisionCoordinator {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
-    getNewPosition: js.Function7[
-      Vector3, 
-      Vector3, 
-      Collider, 
-      scala.Double, 
-      Nullable[AbstractMesh], 
-      js.Function3[
-        /* collisionIndex */ scala.Double, 
-        /* newPosition */ Vector3, 
-        /* collidedMesh */ Nullable[AbstractMesh], 
-        scala.Unit
-      ], 
-      scala.Double, 
+    destroy: () => scala.Unit,
+    getNewPosition: (Vector3, Vector3, Collider, scala.Double, Nullable[AbstractMesh], js.Function3[
+      /* collisionIndex */ scala.Double, 
+      /* newPosition */ Vector3, 
+      /* collidedMesh */ Nullable[AbstractMesh], 
       scala.Unit
-    ],
-    init: js.Function1[Scene, scala.Unit],
-    onGeometryAdded: js.Function1[Geometry, scala.Unit],
-    onGeometryDeleted: js.Function1[Geometry, scala.Unit],
-    onGeometryUpdated: js.Function1[Geometry, scala.Unit],
-    onMeshAdded: js.Function1[AbstractMesh, scala.Unit],
-    onMeshRemoved: js.Function1[AbstractMesh, scala.Unit],
-    onMeshUpdated: js.Function1[AbstractMesh, scala.Unit]
+    ], scala.Double) => scala.Unit,
+    init: Scene => scala.Unit,
+    onGeometryAdded: Geometry => scala.Unit,
+    onGeometryDeleted: Geometry => scala.Unit,
+    onGeometryUpdated: Geometry => scala.Unit,
+    onMeshAdded: AbstractMesh => scala.Unit,
+    onMeshRemoved: AbstractMesh => scala.Unit,
+    onMeshUpdated: AbstractMesh => scala.Unit
   ): ICollisionCoordinator = {
-    val __obj = js.Dynamic.literal(destroy = destroy, getNewPosition = getNewPosition, init = init, onGeometryAdded = onGeometryAdded, onGeometryDeleted = onGeometryDeleted, onGeometryUpdated = onGeometryUpdated, onMeshAdded = onMeshAdded, onMeshRemoved = onMeshRemoved, onMeshUpdated = onMeshUpdated)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getNewPosition = js.Any.fromFunction7(getNewPosition), init = js.Any.fromFunction1(init), onGeometryAdded = js.Any.fromFunction1(onGeometryAdded), onGeometryDeleted = js.Any.fromFunction1(onGeometryDeleted), onGeometryUpdated = js.Any.fromFunction1(onGeometryUpdated), onMeshAdded = js.Any.fromFunction1(onMeshAdded), onMeshRemoved = js.Any.fromFunction1(onMeshRemoved), onMeshUpdated = js.Any.fromFunction1(onMeshUpdated))
   
     __obj.asInstanceOf[ICollisionCoordinator]
   }

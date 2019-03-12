@@ -13,12 +13,9 @@ trait ServiceAccountResource extends js.Object {
 object ServiceAccountResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccount]
-    ]
+    get: gapiDotClientDotStorageLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccount]
   ): ServiceAccountResource = {
-    val __obj = js.Dynamic.literal(get = get)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[ServiceAccountResource]
   }

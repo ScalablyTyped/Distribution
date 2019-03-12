@@ -46,16 +46,16 @@ trait Queries extends js.Object {
 object Queries {
   @scala.inline
   def apply(
-    add: js.Function2[java.lang.String, js.Any, Dynatable],
+    add: (java.lang.String, js.Any) => Dynatable,
     functions: QueriesFunctions,
-    init: js.Function0[scala.Unit],
-    initOnLoad: js.Function0[scala.Boolean],
-    remove: js.Function1[java.lang.String, Dynatable],
-    run: js.Function0[js.Any],
-    runSearch: js.Function1[js.Any, scala.Unit],
-    setupInputs: js.Function0[scala.Unit]
+    init: () => scala.Unit,
+    initOnLoad: () => scala.Boolean,
+    remove: java.lang.String => Dynatable,
+    run: () => js.Any,
+    runSearch: js.Any => scala.Unit,
+    setupInputs: () => scala.Unit
   ): Queries = {
-    val __obj = js.Dynamic.literal(add = add, functions = functions, init = init, initOnLoad = initOnLoad, remove = remove, run = run, runSearch = runSearch, setupInputs = setupInputs)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), functions = functions, init = js.Any.fromFunction0(init), initOnLoad = js.Any.fromFunction0(initOnLoad), remove = js.Any.fromFunction1(remove), run = js.Any.fromFunction0(run), runSearch = js.Any.fromFunction1(runSearch), setupInputs = js.Any.fromFunction0(setupInputs))
   
     __obj.asInstanceOf[Queries]
   }

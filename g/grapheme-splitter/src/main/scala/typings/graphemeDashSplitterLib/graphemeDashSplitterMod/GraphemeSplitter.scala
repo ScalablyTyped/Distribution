@@ -17,11 +17,11 @@ trait GraphemeSplitter extends js.Object {
 object GraphemeSplitter {
   @scala.inline
   def apply(
-    countGraphemes: js.Function1[java.lang.String, scala.Double],
-    iterateGraphemes: js.Function1[java.lang.String, stdLib.IterableIterator[java.lang.String]],
-    splitGraphemes: js.Function1[java.lang.String, js.Array[java.lang.String]]
+    countGraphemes: java.lang.String => scala.Double,
+    iterateGraphemes: java.lang.String => stdLib.IterableIterator[java.lang.String],
+    splitGraphemes: java.lang.String => js.Array[java.lang.String]
   ): GraphemeSplitter = {
-    val __obj = js.Dynamic.literal(countGraphemes = countGraphemes, iterateGraphemes = iterateGraphemes, splitGraphemes = splitGraphemes)
+    val __obj = js.Dynamic.literal(countGraphemes = js.Any.fromFunction1(countGraphemes), iterateGraphemes = js.Any.fromFunction1(iterateGraphemes), splitGraphemes = js.Any.fromFunction1(splitGraphemes))
   
     __obj.asInstanceOf[GraphemeSplitter]
   }

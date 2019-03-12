@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TextEffectFormat protected () extends js.Object {
   var Alignment: activexDashOfficeLib.OfficeNs.MsoTextEffectAlignment = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
   var FontBold: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   var FontItalic: activexDashOfficeLib.OfficeNs.MsoTriState = js.native

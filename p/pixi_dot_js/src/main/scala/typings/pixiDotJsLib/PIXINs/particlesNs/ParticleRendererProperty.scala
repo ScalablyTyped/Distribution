@@ -27,17 +27,9 @@ object ParticleRendererProperty {
     offset: scala.Double,
     size: scala.Double,
     unsignedByte: js.Any,
-    uploadFunction: js.Function6[
-      js.Array[pixiDotJsLib.PIXINs.DisplayObject], 
-      scala.Double, 
-      scala.Double, 
-      js.Array[scala.Double], 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ]
+    uploadFunction: (js.Array[pixiDotJsLib.PIXINs.DisplayObject], scala.Double, scala.Double, js.Array[scala.Double], scala.Double, scala.Double) => scala.Unit
   ): ParticleRendererProperty = {
-    val __obj = js.Dynamic.literal(attribute = attribute, offset = offset, size = size, unsignedByte = unsignedByte, uploadFunction = uploadFunction)
+    val __obj = js.Dynamic.literal(attribute = attribute, offset = offset, size = size, unsignedByte = unsignedByte, uploadFunction = js.Any.fromFunction6(uploadFunction))
   
     __obj.asInstanceOf[ParticleRendererProperty]
   }

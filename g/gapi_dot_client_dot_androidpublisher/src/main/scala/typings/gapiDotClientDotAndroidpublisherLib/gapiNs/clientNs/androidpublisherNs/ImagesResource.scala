@@ -19,24 +19,12 @@ trait ImagesResource extends js.Object {
 object ImagesResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    deleteall: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsImageType, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ImagesDeleteAllResponse]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsImageType, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ImagesListResponse]
-    ],
-    upload: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsImageType, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ImagesUploadResponse]
-    ]
+    delete: gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    deleteall: gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsImageType => gapiDotClientLib.gapiNs.clientNs.Request[ImagesDeleteAllResponse],
+    list: gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsImageType => gapiDotClientLib.gapiNs.clientNs.Request[ImagesListResponse],
+    upload: gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsImageType => gapiDotClientLib.gapiNs.clientNs.Request[ImagesUploadResponse]
   ): ImagesResource = {
-    val __obj = js.Dynamic.literal(delete = delete, deleteall = deleteall, list = list, upload = upload)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), deleteall = js.Any.fromFunction1(deleteall), list = js.Any.fromFunction1(list), upload = js.Any.fromFunction1(upload))
   
     __obj.asInstanceOf[ImagesResource]
   }

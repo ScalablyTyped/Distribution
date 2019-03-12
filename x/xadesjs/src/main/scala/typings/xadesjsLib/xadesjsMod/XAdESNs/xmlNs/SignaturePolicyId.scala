@@ -10,7 +10,7 @@ trait SignaturePolicyId
   extends xmlDashCoreLib.xmlDashCoreMod.XmlObject {
   var SigPolicyHash: DigestAlgAndValueType = js.native
   var SigPolicyId: ObjectIdentifier = js.native
-  var SigPolicyQualifiers: SigPolicyQualifiers = js.native
+  var SigPolicyQualifiers: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.SigPolicyQualifiers = js.native
   var Transforms: xmldsigjsLib.xmldsigjsMod.Transforms = js.native
 }
 

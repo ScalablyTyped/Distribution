@@ -10,7 +10,7 @@ trait DataBar extends XConditionEntry {
   /** See {@link com.sun.star.sheet.DataBarAxis} for possible values */
   var AxisPosition: scala.Double
   var Color: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color
-  var DataBarEntries: activexDashInteropLib.SafeArray[XDataBarEntry]
+  var DataBarEntries: stdLib.SafeArray[XDataBarEntry]
   /**
     * Maximum databar length in percent of cell width.
     *
@@ -35,7 +35,7 @@ object DataBar {
     AxisColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
     AxisPosition: scala.Double,
     Color: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
-    DataBarEntries: activexDashInteropLib.SafeArray[XDataBarEntry],
+    DataBarEntries: stdLib.SafeArray[XDataBarEntry],
     MaximumLength: scala.Double,
     MinimumLength: scala.Double,
     NegativeColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
@@ -43,12 +43,12 @@ object DataBar {
     Type: scala.Double,
     UseGradient: scala.Boolean,
     UseNegativeColor: scala.Boolean,
-    acquire: js.Function0[scala.Unit],
-    getType: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getType: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): DataBar = {
-    val __obj = js.Dynamic.literal(AxisColor = AxisColor, AxisPosition = AxisPosition, Color = Color, DataBarEntries = DataBarEntries, MaximumLength = MaximumLength, MinimumLength = MinimumLength, NegativeColor = NegativeColor, ShowValue = ShowValue, Type = Type, UseGradient = UseGradient, UseNegativeColor = UseNegativeColor, acquire = acquire, getType = getType, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(AxisColor = AxisColor, AxisPosition = AxisPosition, Color = Color, DataBarEntries = DataBarEntries, MaximumLength = MaximumLength, MinimumLength = MinimumLength, NegativeColor = NegativeColor, ShowValue = ShowValue, Type = Type, UseGradient = UseGradient, UseNegativeColor = UseNegativeColor, acquire = js.Any.fromFunction0(acquire), getType = js.Any.fromFunction0(getType), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[DataBar]
   }

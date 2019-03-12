@@ -10,7 +10,7 @@ trait DropDownProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var forceRender: js.UndefOr[scala.Boolean] = js.undefined
-  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ reactLib.Element, reactLib.HTMLElement]] = js.undefined
+  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.Element, stdLib.HTMLElement]] = js.undefined
   var mouseEnterDelay: js.UndefOr[scala.Double] = js.undefined
   var mouseLeaveDelay: js.UndefOr[scala.Double] = js.undefined
   var onVisibleChange: js.UndefOr[js.Function1[/* visible */ scala.Boolean, scala.Unit]] = js.undefined
@@ -37,10 +37,10 @@ object DropDownProps {
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     forceRender: js.UndefOr[scala.Boolean] = js.undefined,
-    getPopupContainer: js.Function1[/* triggerNode */ reactLib.Element, reactLib.HTMLElement] = null,
+    getPopupContainer: /* triggerNode */ stdLib.Element => stdLib.HTMLElement = null,
     mouseEnterDelay: scala.Int | scala.Double = null,
     mouseLeaveDelay: scala.Int | scala.Double = null,
-    onVisibleChange: js.Function1[/* visible */ scala.Boolean, scala.Unit] = null,
+    onVisibleChange: /* visible */ scala.Boolean => scala.Unit = null,
     openClassName: java.lang.String = null,
     overlayClassName: java.lang.String = null,
     overlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -57,10 +57,10 @@ object DropDownProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender)
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer)
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (mouseEnterDelay != null) __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay.asInstanceOf[js.Any])
     if (mouseLeaveDelay != null) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.asInstanceOf[js.Any])
-    if (onVisibleChange != null) __obj.updateDynamic("onVisibleChange")(onVisibleChange)
+    if (onVisibleChange != null) __obj.updateDynamic("onVisibleChange")(js.Any.fromFunction1(onVisibleChange))
     if (openClassName != null) __obj.updateDynamic("openClassName")(openClassName)
     if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName)
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle)

@@ -27,49 +27,38 @@ object DocumentScriptLibraryContainer {
   @scala.inline
   def apply(
     ContainerLocationName: java.lang.String,
-    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementNames: stdLib.SafeArray[java.lang.String],
     ElementType: activexDashLibreofficeLib.`type`,
     RootLocation: js.Any,
     RootStorage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage,
-    acquire: js.Function0[scala.Unit],
-    addModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
-    create: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XStorageBasedDocument, 
-      scala.Unit
-    ],
-    createLibrary: js.Function1[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer
-    ],
-    createLibraryLink: js.Function3[
-      java.lang.String, 
-      java.lang.String, 
-      scala.Boolean, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
-    ],
-    createWithURL: js.Function1[java.lang.String, scala.Unit],
-    getByName: js.Function1[java.lang.String, js.Any],
-    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    getLibraryLinkURL: js.Function1[java.lang.String, java.lang.String],
-    hasByName: js.Function1[java.lang.String, scala.Boolean],
-    hasElements: js.Function0[scala.Boolean],
-    isLibraryLink: js.Function1[java.lang.String, scala.Boolean],
-    isLibraryLoaded: js.Function1[java.lang.String, scala.Boolean],
-    isLibraryReadOnly: js.Function1[java.lang.String, scala.Boolean],
-    isModified: js.Function0[scala.Boolean],
-    loadLibrary: js.Function1[java.lang.String, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeLibrary: js.Function1[java.lang.String, scala.Unit],
-    removeModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
-    renameLibrary: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    setLibraryReadOnly: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
-    setModified: js.Function1[scala.Boolean, scala.Unit],
-    storeLibraries: js.Function0[scala.Unit],
-    storeLibrariesToStorage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, scala.Unit]
+    acquire: () => scala.Unit,
+    addModifyListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener => scala.Unit,
+    create: activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XStorageBasedDocument => scala.Unit,
+    createLibrary: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    createLibraryLink: (java.lang.String, java.lang.String, scala.Boolean) => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    createWithURL: java.lang.String => scala.Unit,
+    getByName: java.lang.String => js.Any,
+    getElementNames: () => stdLib.SafeArray[java.lang.String],
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    getLibraryLinkURL: java.lang.String => java.lang.String,
+    hasByName: java.lang.String => scala.Boolean,
+    hasElements: () => scala.Boolean,
+    isLibraryLink: java.lang.String => scala.Boolean,
+    isLibraryLoaded: java.lang.String => scala.Boolean,
+    isLibraryReadOnly: java.lang.String => scala.Boolean,
+    isModified: () => scala.Boolean,
+    loadLibrary: java.lang.String => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeLibrary: java.lang.String => scala.Unit,
+    removeModifyListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener => scala.Unit,
+    renameLibrary: (java.lang.String, java.lang.String) => scala.Unit,
+    setLibraryReadOnly: (java.lang.String, scala.Boolean) => scala.Unit,
+    setModified: scala.Boolean => scala.Unit,
+    storeLibraries: () => scala.Unit,
+    storeLibrariesToStorage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage => scala.Unit
   ): DocumentScriptLibraryContainer = {
-    val __obj = js.Dynamic.literal(ContainerLocationName = ContainerLocationName, ElementNames = ElementNames, ElementType = ElementType, RootLocation = RootLocation, RootStorage = RootStorage, acquire = acquire, addModifyListener = addModifyListener, create = create, createLibrary = createLibrary, createLibraryLink = createLibraryLink, createWithURL = createWithURL, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, getLibraryLinkURL = getLibraryLinkURL, hasByName = hasByName, hasElements = hasElements, isLibraryLink = isLibraryLink, isLibraryLoaded = isLibraryLoaded, isLibraryReadOnly = isLibraryReadOnly, isModified = isModified, loadLibrary = loadLibrary, queryInterface = queryInterface, release = release, removeLibrary = removeLibrary, removeModifyListener = removeModifyListener, renameLibrary = renameLibrary, setLibraryReadOnly = setLibraryReadOnly, setModified = setModified, storeLibraries = storeLibraries, storeLibrariesToStorage = storeLibrariesToStorage)
+    val __obj = js.Dynamic.literal(ContainerLocationName = ContainerLocationName, ElementNames = ElementNames, ElementType = ElementType, RootLocation = RootLocation, RootStorage = RootStorage, acquire = js.Any.fromFunction0(acquire), addModifyListener = js.Any.fromFunction1(addModifyListener), create = js.Any.fromFunction1(create), createLibrary = js.Any.fromFunction1(createLibrary), createLibraryLink = js.Any.fromFunction3(createLibraryLink), createWithURL = js.Any.fromFunction1(createWithURL), getByName = js.Any.fromFunction1(getByName), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), getLibraryLinkURL = js.Any.fromFunction1(getLibraryLinkURL), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), isLibraryLink = js.Any.fromFunction1(isLibraryLink), isLibraryLoaded = js.Any.fromFunction1(isLibraryLoaded), isLibraryReadOnly = js.Any.fromFunction1(isLibraryReadOnly), isModified = js.Any.fromFunction0(isModified), loadLibrary = js.Any.fromFunction1(loadLibrary), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeLibrary = js.Any.fromFunction1(removeLibrary), removeModifyListener = js.Any.fromFunction1(removeModifyListener), renameLibrary = js.Any.fromFunction2(renameLibrary), setLibraryReadOnly = js.Any.fromFunction2(setLibraryReadOnly), setModified = js.Any.fromFunction1(setModified), storeLibraries = js.Any.fromFunction0(storeLibraries), storeLibrariesToStorage = js.Any.fromFunction1(storeLibrariesToStorage))
   
     __obj.asInstanceOf[DocumentScriptLibraryContainer]
   }

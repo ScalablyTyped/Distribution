@@ -46,37 +46,22 @@ trait Anon_Drag extends js.Object {
 object Anon_Drag {
   @scala.inline
   def apply(
-    drag: js.Function3[
-      /* event */ angularLib.angularMod.angularNs.IAngularEvent, 
-      /* $element */ angularLib.angularMod.angularNs.IAugmentedJQuery, 
-      /* options */ js.Any, 
-      scala.Unit
-    ] = null,
+    drag: (/* event */ angularLib.angularMod.angularNs.IAngularEvent, /* $element */ angularLib.angularMod.angularNs.IAugmentedJQuery, /* options */ js.Any) => scala.Unit = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     handle: java.lang.String = null,
     scrollSensitivity: scala.Int | scala.Double = null,
     scrollSpeed: scala.Int | scala.Double = null,
-    start: js.Function3[
-      /* event */ angularLib.angularMod.angularNs.IAngularEvent, 
-      /* $element */ angularLib.angularMod.angularNs.IAugmentedJQuery, 
-      /* options */ js.Any, 
-      scala.Unit
-    ] = null,
-    stop: js.Function3[
-      /* event */ angularLib.angularMod.angularNs.IAngularEvent, 
-      /* $element */ angularLib.angularMod.angularNs.IAugmentedJQuery, 
-      /* options */ js.Any, 
-      scala.Unit
-    ] = null
+    start: (/* event */ angularLib.angularMod.angularNs.IAngularEvent, /* $element */ angularLib.angularMod.angularNs.IAugmentedJQuery, /* options */ js.Any) => scala.Unit = null,
+    stop: (/* event */ angularLib.angularMod.angularNs.IAngularEvent, /* $element */ angularLib.angularMod.angularNs.IAugmentedJQuery, /* options */ js.Any) => scala.Unit = null
   ): Anon_Drag = {
     val __obj = js.Dynamic.literal()
-    if (drag != null) __obj.updateDynamic("drag")(drag)
+    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction3(drag))
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (handle != null) __obj.updateDynamic("handle")(handle)
     if (scrollSensitivity != null) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.asInstanceOf[js.Any])
     if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction3(start))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction3(stop))
     __obj.asInstanceOf[Anon_Drag]
   }
 }

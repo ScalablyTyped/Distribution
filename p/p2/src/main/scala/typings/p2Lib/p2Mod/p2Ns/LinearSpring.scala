@@ -18,20 +18,20 @@ trait LinearSpring extends Spring {
 object LinearSpring {
   @scala.inline
   def apply(
-    applyForce: js.Function0[scala.Unit],
+    applyForce: () => scala.Unit,
     bodyA: Body,
     bodyB: Body,
     damping: scala.Double,
-    getWorldAnchorA: js.Function1[js.Tuple2[scala.Double, scala.Double], js.Tuple2[scala.Double, scala.Double]],
-    getWorldAnchorB: js.Function1[js.Tuple2[scala.Double, scala.Double], js.Tuple2[scala.Double, scala.Double]],
+    getWorldAnchorA: js.Tuple2[scala.Double, scala.Double] => js.Tuple2[scala.Double, scala.Double],
+    getWorldAnchorB: js.Tuple2[scala.Double, scala.Double] => js.Tuple2[scala.Double, scala.Double],
     localAnchorA: js.Tuple2[scala.Double, scala.Double],
     localAnchorB: js.Tuple2[scala.Double, scala.Double],
     restLength: scala.Double,
-    setWorldAnchorA: js.Function1[js.Tuple2[scala.Double, scala.Double], scala.Unit],
-    setWorldAnchorB: js.Function1[js.Tuple2[scala.Double, scala.Double], scala.Unit],
+    setWorldAnchorA: js.Tuple2[scala.Double, scala.Double] => scala.Unit,
+    setWorldAnchorB: js.Tuple2[scala.Double, scala.Double] => scala.Unit,
     stiffness: scala.Double
   ): LinearSpring = {
-    val __obj = js.Dynamic.literal(applyForce = applyForce, bodyA = bodyA, bodyB = bodyB, damping = damping, getWorldAnchorA = getWorldAnchorA, getWorldAnchorB = getWorldAnchorB, localAnchorA = localAnchorA, localAnchorB = localAnchorB, restLength = restLength, setWorldAnchorA = setWorldAnchorA, setWorldAnchorB = setWorldAnchorB, stiffness = stiffness)
+    val __obj = js.Dynamic.literal(applyForce = js.Any.fromFunction0(applyForce), bodyA = bodyA, bodyB = bodyB, damping = damping, getWorldAnchorA = js.Any.fromFunction1(getWorldAnchorA), getWorldAnchorB = js.Any.fromFunction1(getWorldAnchorB), localAnchorA = localAnchorA, localAnchorB = localAnchorB, restLength = restLength, setWorldAnchorA = js.Any.fromFunction1(setWorldAnchorA), setWorldAnchorB = js.Any.fromFunction1(setWorldAnchorB), stiffness = stiffness)
   
     __obj.asInstanceOf[LinearSpring]
   }

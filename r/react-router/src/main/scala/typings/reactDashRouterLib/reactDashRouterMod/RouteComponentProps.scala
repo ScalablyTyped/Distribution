@@ -10,7 +10,7 @@ trait RouteComponentProps[Params /* <: /* import warning: ImportType.apply c Uns
   */ reactDashRouterLib.reactDashRouterLibStrings.RouteComponentProps with js.Any */, C /* <: StaticContext */, S] extends js.Object {
   var history: historyLib.historyMod.History[historyLib.historyMod.LocationState]
   var location: historyLib.historyMod.Location[S]
-  var `match`: `match`[Params]
+  var `match`: reactDashRouterLib.reactDashRouterMod.`match`[Params]
   var staticContext: js.UndefOr[C] = js.undefined
 }
 

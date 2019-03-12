@@ -41,29 +41,29 @@ trait ASPxClientRecurrenceRangeControl extends ASPxClientControl {
 object ASPxClientRecurrenceRangeControl {
   @scala.inline
   def apply(
-    AdjustControl: js.Function0[scala.Unit],
-    GetClientVisible: js.Function0[scala.Boolean],
-    GetEndDate: js.Function0[stdLib.Date],
-    GetHeight: js.Function0[scala.Double],
-    GetMainElement: js.Function0[js.Object],
-    GetOccurrenceCount: js.Function0[scala.Double],
-    GetParentControl: js.Function0[js.Object],
-    GetRange: js.Function0[ASPxClientRecurrenceRange],
-    GetVisible: js.Function0[scala.Boolean],
-    GetWidth: js.Function0[scala.Double],
-    InCallback: js.Function0[scala.Boolean],
+    AdjustControl: () => scala.Unit,
+    GetClientVisible: () => scala.Boolean,
+    GetEndDate: () => stdLib.Date,
+    GetHeight: () => scala.Double,
+    GetMainElement: () => js.Object,
+    GetOccurrenceCount: () => scala.Double,
+    GetParentControl: () => js.Object,
+    GetRange: () => ASPxClientRecurrenceRange,
+    GetVisible: () => scala.Boolean,
+    GetWidth: () => scala.Double,
+    InCallback: () => scala.Boolean,
     Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
-    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
-    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetEndDate: js.Function1[stdLib.Date, scala.Unit],
-    SetHeight: js.Function1[scala.Double, scala.Unit],
-    SetOccurrenceCount: js.Function1[scala.Double, scala.Unit],
-    SetRange: js.Function1[ASPxClientRecurrenceRange, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetWidth: js.Function1[scala.Double, scala.Unit],
+    SendMessageToAssistiveTechnology: java.lang.String => scala.Unit,
+    SetClientVisible: scala.Boolean => scala.Unit,
+    SetEndDate: stdLib.Date => scala.Unit,
+    SetHeight: scala.Double => scala.Unit,
+    SetOccurrenceCount: scala.Double => scala.Unit,
+    SetRange: ASPxClientRecurrenceRange => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
+    SetWidth: scala.Double => scala.Unit,
     name: java.lang.String
   ): ASPxClientRecurrenceRangeControl = {
-    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, GetClientVisible = GetClientVisible, GetEndDate = GetEndDate, GetHeight = GetHeight, GetMainElement = GetMainElement, GetOccurrenceCount = GetOccurrenceCount, GetParentControl = GetParentControl, GetRange = GetRange, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetEndDate = SetEndDate, SetHeight = SetHeight, SetOccurrenceCount = SetOccurrenceCount, SetRange = SetRange, SetVisible = SetVisible, SetWidth = SetWidth, name = name)
+    val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetEndDate = js.Any.fromFunction0(GetEndDate), GetHeight = js.Any.fromFunction0(GetHeight), GetMainElement = js.Any.fromFunction0(GetMainElement), GetOccurrenceCount = js.Any.fromFunction0(GetOccurrenceCount), GetParentControl = js.Any.fromFunction0(GetParentControl), GetRange = js.Any.fromFunction0(GetRange), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), InCallback = js.Any.fromFunction0(InCallback), Init = Init, SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetEndDate = js.Any.fromFunction1(SetEndDate), SetHeight = js.Any.fromFunction1(SetHeight), SetOccurrenceCount = js.Any.fromFunction1(SetOccurrenceCount), SetRange = js.Any.fromFunction1(SetRange), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), name = name)
   
     __obj.asInstanceOf[ASPxClientRecurrenceRangeControl]
   }

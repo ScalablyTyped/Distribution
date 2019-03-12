@@ -17,20 +17,11 @@ trait DirectorySitesResource extends js.Object {
 object DirectorySitesResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DirectorySite]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DirectorySite]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AcceptsInStreamVideoPlacements, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DirectorySitesListResponse]
-    ]
+    get: gapiDotClientDotDfareportingLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[DirectorySite],
+    insert: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[DirectorySite],
+    list: gapiDotClientDotDfareportingLib.Anon_AcceptsInStreamVideoPlacements => gapiDotClientLib.gapiNs.clientNs.Request[DirectorySitesListResponse]
   ): DirectorySitesResource = {
-    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[DirectorySitesResource]
   }

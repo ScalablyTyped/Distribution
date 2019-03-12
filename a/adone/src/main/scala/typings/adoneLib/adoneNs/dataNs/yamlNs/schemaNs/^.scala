@@ -11,38 +11,26 @@ object ^ extends js.Object {
   /**
     * same as JSON
     */
-  val CORE: adoneLib.adoneNs.dataNs.yamlNs.schemaNs.Schema = js.native
+  val CORE: Schema = js.native
   /**
     * all supported YAML types
     */
-  val DEFAULT_FULL: adoneLib.adoneNs.dataNs.yamlNs.schemaNs.Schema = js.native
+  val DEFAULT_FULL: Schema = js.native
   /**
     * all supported YAML types, without unsafe ones: !!js/undefined, !!js/regexp and !!js/function
     */
-  val DEFAULT_SAFE: adoneLib.adoneNs.dataNs.yamlNs.schemaNs.Schema = js.native
+  val DEFAULT_SAFE: Schema = js.native
   /**
     * only strings, arrays and plain objects
     */
-  val FAILSAFE: adoneLib.adoneNs.dataNs.yamlNs.schemaNs.Schema = js.native
+  val FAILSAFE: Schema = js.native
   /**
     * all JSON-supported types
     */
-  val JSON: adoneLib.adoneNs.dataNs.yamlNs.schemaNs.Schema = js.native
-  def create(
-    schemas: adoneLib.adoneNs.dataNs.yamlNs.schemaNs.Schema,
-    types: adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]
-  ): adoneLib.adoneNs.dataNs.yamlNs.schemaNs.Schema = js.native
-  def create(
-    schemas: adoneLib.adoneNs.dataNs.yamlNs.schemaNs.Schema,
-    types: js.Array[adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]]
-  ): adoneLib.adoneNs.dataNs.yamlNs.schemaNs.Schema = js.native
-  def create(
-    schemas: js.Array[adoneLib.adoneNs.dataNs.yamlNs.schemaNs.Schema],
-    types: adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]
-  ): adoneLib.adoneNs.dataNs.yamlNs.schemaNs.Schema = js.native
-  def create(
-    schemas: js.Array[adoneLib.adoneNs.dataNs.yamlNs.schemaNs.Schema],
-    types: js.Array[adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]]
-  ): adoneLib.adoneNs.dataNs.yamlNs.schemaNs.Schema = js.native
+  val JSON: Schema = js.native
+  def create(schemas: Schema, types: adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]): Schema = js.native
+  def create(schemas: Schema, types: js.Array[adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]]): Schema = js.native
+  def create(schemas: js.Array[Schema], types: adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]): Schema = js.native
+  def create(schemas: js.Array[Schema], types: js.Array[adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]]): Schema = js.native
 }
 

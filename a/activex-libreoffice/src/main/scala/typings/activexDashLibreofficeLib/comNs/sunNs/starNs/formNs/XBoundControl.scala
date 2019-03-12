@@ -29,13 +29,13 @@ object XBoundControl {
   @scala.inline
   def apply(
     Lock: scala.Boolean,
-    acquire: js.Function0[scala.Unit],
-    getLock: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setLock: js.Function1[scala.Boolean, scala.Unit]
+    acquire: () => scala.Unit,
+    getLock: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setLock: scala.Boolean => scala.Unit
   ): XBoundControl = {
-    val __obj = js.Dynamic.literal(Lock = Lock, acquire = acquire, getLock = getLock, queryInterface = queryInterface, release = release, setLock = setLock)
+    val __obj = js.Dynamic.literal(Lock = Lock, acquire = js.Any.fromFunction0(acquire), getLock = js.Any.fromFunction0(getLock), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setLock = js.Any.fromFunction1(setLock))
   
     __obj.asInstanceOf[XBoundControl]
   }

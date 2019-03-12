@@ -20,15 +20,15 @@ object AppLoadingProps {
   @scala.inline
   def apply(
     autoHideSplash: js.UndefOr[scala.Boolean] = js.undefined,
-    onError: js.Function1[/* error */ stdLib.Error, scala.Unit] = null,
-    onFinish: js.Function0[scala.Unit] = null,
-    startAsync: js.Function0[js.Promise[scala.Unit]] = null
+    onError: /* error */ stdLib.Error => scala.Unit = null,
+    onFinish: () => scala.Unit = null,
+    startAsync: () => js.Promise[scala.Unit] = null
   ): AppLoadingProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoHideSplash)) __obj.updateDynamic("autoHideSplash")(autoHideSplash)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onFinish != null) __obj.updateDynamic("onFinish")(onFinish)
-    if (startAsync != null) __obj.updateDynamic("startAsync")(startAsync)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onFinish != null) __obj.updateDynamic("onFinish")(js.Any.fromFunction0(onFinish))
+    if (startAsync != null) __obj.updateDynamic("startAsync")(js.Any.fromFunction0(startAsync))
     __obj.asInstanceOf[AppLoadingProps]
   }
 }

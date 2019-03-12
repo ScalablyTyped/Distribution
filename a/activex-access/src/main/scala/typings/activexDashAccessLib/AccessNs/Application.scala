@@ -11,29 +11,29 @@ class Application protected () extends js.Object {
   val ADOConnectString: java.lang.String = js.native
   var `Access.Application_typekey`: Application = js.native
   val AnswerWizard: activexDashOfficeLib.OfficeNs.AnswerWizard = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   val Assistance: activexDashOfficeLib.OfficeNs.IAssistance = js.native
   val Assistant: activexDashOfficeLib.OfficeNs.Assistant = js.native
-  val AutoCorrect: AutoCorrect = js.native
+  val AutoCorrect: activexDashAccessLib.AccessNs.AutoCorrect = js.native
   var AutomationSecurity: activexDashOfficeLib.OfficeNs.MsoAutomationSecurity = js.native
   val BrokenReference: scala.Boolean = js.native
   val Build: scala.Double = js.native
   @JSName("COMAddIns")
   val COMAddIns_Original: activexDashOfficeLib.OfficeNs.COMAddIns = js.native
   val CodeContextObject: js.Any = js.native
-  val CodeData: CodeData = js.native
-  val CodeProject: CodeProject = js.native
+  val CodeData: activexDashAccessLib.AccessNs.CodeData = js.native
+  val CodeProject: activexDashAccessLib.AccessNs.CodeProject = js.native
   @JSName("CommandBars")
   val CommandBars_Original: activexDashOfficeLib.OfficeNs.CommandBars = js.native
-  val CurrentData: CurrentData = js.native
+  val CurrentData: activexDashAccessLib.AccessNs.CurrentData = js.native
   val CurrentObjectName: java.lang.String = js.native
   val CurrentObjectType: AcObjectType = js.native
-  val CurrentProject: CurrentProject = js.native
+  val CurrentProject: activexDashAccessLib.AccessNs.CurrentProject = js.native
   val DBEngine: activexDashDaoLib.DAONs.DBEngine = js.native
   @JSName("DataAccessPages")
   val DataAccessPages_Original: DataAccessPages = js.native
-  val DefaultWebOptions: DefaultWebOptions = js.native
-  val DoCmd: DoCmd = js.native
+  val DefaultWebOptions: activexDashAccessLib.AccessNs.DefaultWebOptions = js.native
+  val DoCmd: activexDashAccessLib.AccessNs.DoCmd = js.native
   var FeatureInstall: activexDashOfficeLib.OfficeNs.MsoFeatureInstall = js.native
   val FileSearch: activexDashOfficeLib.OfficeNs.FileSearch = js.native
   @JSName("Forms")
@@ -42,7 +42,7 @@ class Application protected () extends js.Object {
   val LanguageSettings: activexDashOfficeLib.OfficeNs.LanguageSettings = js.native
   @JSName("LocalVars")
   val LocalVars_Original: LocalVars = js.native
-  val MacroError: MacroError = js.native
+  val MacroError: activexDashAccessLib.AccessNs.MacroError = js.native
   var MenuBar: java.lang.String = js.native
   @JSName("Modules")
   val Modules_Original: Modules = js.native
@@ -50,7 +50,7 @@ class Application protected () extends js.Object {
   val Name: java.lang.String = js.native
   val NewFileTaskPane: activexDashOfficeLib.OfficeNs.NewFile = js.native
   val Parent: js.Any = js.native
-  var Printer: Printer = js.native
+  var Printer: activexDashAccessLib.AccessNs.Printer = js.native
   @JSName("Printers")
   val Printers_Original: Printers = js.native
   val ProductCode: java.lang.String = js.native
@@ -60,7 +60,7 @@ class Application protected () extends js.Object {
   val Reports_Original: Reports = js.native
   @JSName("ReturnVars")
   val ReturnVars_Original: ReturnVars = js.native
-  val Screen: Screen = js.native
+  val Screen: activexDashAccessLib.AccessNs.Screen = js.native
   var ShortcutMenuBar: java.lang.String = js.native
   @JSName("TempVars")
   val TempVars_Original: TempVars = js.native
@@ -71,7 +71,7 @@ class Application protected () extends js.Object {
   var Visible: scala.Boolean = js.native
   @JSName("WebServices")
   val WebServices_Original: WebServices = js.native
-  val WizHook: WizHook = js.native
+  val WizHook: activexDashAccessLib.AccessNs.WizHook = js.native
   def AccessError(ErrorNumber: scala.Double): java.lang.String = js.native
   def AddAutoCorrect(ChangeFrom: java.lang.String, ChangeTo: java.lang.String): scala.Unit = js.native
   def AddToFavorites(): scala.Unit = js.native

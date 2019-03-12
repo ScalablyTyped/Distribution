@@ -19,24 +19,12 @@ trait SitemapsResource extends js.Object {
 object SitemapsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotWebmastersLib.Anon_AltFeedpath, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotWebmastersLib.Anon_AltFeedpath, 
-      gapiDotClientLib.gapiNs.clientNs.Request[WmxSitemap]
-    ],
-    list: js.Function1[
-      gapiDotClientDotWebmastersLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SitemapsListResponse]
-    ],
-    submit: js.Function1[
-      gapiDotClientDotWebmastersLib.Anon_AltFeedpath, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ]
+    delete: gapiDotClientDotWebmastersLib.Anon_AltFeedpath => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotWebmastersLib.Anon_AltFeedpath => gapiDotClientLib.gapiNs.clientNs.Request[WmxSitemap],
+    list: gapiDotClientDotWebmastersLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[SitemapsListResponse],
+    submit: gapiDotClientDotWebmastersLib.Anon_AltFeedpath => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   ): SitemapsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list, submit = submit)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), submit = js.Any.fromFunction1(submit))
   
     __obj.asInstanceOf[SitemapsResource]
   }

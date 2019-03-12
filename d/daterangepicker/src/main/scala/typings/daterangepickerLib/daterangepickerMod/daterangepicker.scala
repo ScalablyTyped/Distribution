@@ -19,12 +19,12 @@ object daterangepicker {
   def apply(
     container: daterangepickerLib.daterangepickerMod.Global.JQuery,
     endDate: momentLib.momentMod.momentNs.Moment,
-    remove: js.Function0[scala.Unit],
-    setEndDate: js.Function1[daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString, scala.Unit],
-    setStartDate: js.Function1[daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString, scala.Unit],
+    remove: () => scala.Unit,
+    setEndDate: daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString => scala.Unit,
+    setStartDate: daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString => scala.Unit,
     startDate: momentLib.momentMod.momentNs.Moment
   ): daterangepicker = {
-    val __obj = js.Dynamic.literal(container = container, endDate = endDate, remove = remove, setEndDate = setEndDate, setStartDate = setStartDate, startDate = startDate)
+    val __obj = js.Dynamic.literal(container = container, endDate = endDate, remove = js.Any.fromFunction0(remove), setEndDate = js.Any.fromFunction1(setEndDate), setStartDate = js.Any.fromFunction1(setStartDate), startDate = startDate)
   
     __obj.asInstanceOf[daterangepicker]
   }

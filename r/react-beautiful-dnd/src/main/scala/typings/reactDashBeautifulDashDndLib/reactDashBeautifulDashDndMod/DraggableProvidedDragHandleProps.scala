@@ -24,7 +24,7 @@ trait DraggableProvidedDragHandleProps extends js.Object {
   var tabIndex: scala.Double = js.native
   def onDragStart(event: reactLib.reactMod.ReactNs.DragEvent[_]): scala.Unit = js.native
   def onKeyDown(event: reactLib.reactMod.ReactNs.KeyboardEvent[_]): scala.Unit = js.native
-  def onMouseDown(event: reactLib.reactMod.ReactNs.MouseEvent[_]): scala.Unit = js.native
+  def onMouseDown(event: reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]): scala.Unit = js.native
   def onTouchMove(event: reactLib.reactMod.ReactNs.TouchEvent[_]): scala.Unit = js.native
   def onTouchStart(event: reactLib.reactMod.ReactNs.TouchEvent[_]): scala.Unit = js.native
 }

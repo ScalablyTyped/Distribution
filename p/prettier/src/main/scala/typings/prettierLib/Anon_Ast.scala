@@ -41,35 +41,14 @@ trait Anon_Ast extends js.Object {
 object Anon_Ast {
   @scala.inline
   def apply(
-    endOfLine: js.Function5[
-      /* commentNode */ js.Any, 
-      /* text */ java.lang.String, 
-      /* options */ prettierLib.prettierMod.ParserOptions, 
-      /* ast */ js.Any, 
-      /* isLastComment */ scala.Boolean, 
-      scala.Boolean
-    ] = null,
-    ownLine: js.Function5[
-      /* commentNode */ js.Any, 
-      /* text */ java.lang.String, 
-      /* options */ prettierLib.prettierMod.ParserOptions, 
-      /* ast */ js.Any, 
-      /* isLastComment */ scala.Boolean, 
-      scala.Boolean
-    ] = null,
-    remaining: js.Function5[
-      /* commentNode */ js.Any, 
-      /* text */ java.lang.String, 
-      /* options */ prettierLib.prettierMod.ParserOptions, 
-      /* ast */ js.Any, 
-      /* isLastComment */ scala.Boolean, 
-      scala.Boolean
-    ] = null
+    endOfLine: (/* commentNode */ js.Any, /* text */ java.lang.String, /* options */ prettierLib.prettierMod.ParserOptions, /* ast */ js.Any, /* isLastComment */ scala.Boolean) => scala.Boolean = null,
+    ownLine: (/* commentNode */ js.Any, /* text */ java.lang.String, /* options */ prettierLib.prettierMod.ParserOptions, /* ast */ js.Any, /* isLastComment */ scala.Boolean) => scala.Boolean = null,
+    remaining: (/* commentNode */ js.Any, /* text */ java.lang.String, /* options */ prettierLib.prettierMod.ParserOptions, /* ast */ js.Any, /* isLastComment */ scala.Boolean) => scala.Boolean = null
   ): Anon_Ast = {
     val __obj = js.Dynamic.literal()
-    if (endOfLine != null) __obj.updateDynamic("endOfLine")(endOfLine)
-    if (ownLine != null) __obj.updateDynamic("ownLine")(ownLine)
-    if (remaining != null) __obj.updateDynamic("remaining")(remaining)
+    if (endOfLine != null) __obj.updateDynamic("endOfLine")(js.Any.fromFunction5(endOfLine))
+    if (ownLine != null) __obj.updateDynamic("ownLine")(js.Any.fromFunction5(ownLine))
+    if (remaining != null) __obj.updateDynamic("remaining")(js.Any.fromFunction5(remaining))
     __obj.asInstanceOf[Anon_Ast]
   }
 }

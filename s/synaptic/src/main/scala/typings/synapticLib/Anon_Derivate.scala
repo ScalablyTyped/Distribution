@@ -16,13 +16,13 @@ trait Anon_Derivate extends js.Object {
 object Anon_Derivate {
   @scala.inline
   def apply(
-    HLIM: js.Function2[scala.Double, scala.Boolean, scala.Double],
-    IDENTITY: js.Function2[scala.Double, scala.Boolean, scala.Double],
-    LOGISTIC: js.Function2[scala.Double, scala.Boolean, scala.Double],
-    ReLU: js.Function2[scala.Double, scala.Boolean, scala.Double],
-    TANH: js.Function2[scala.Double, scala.Boolean, scala.Double]
+    HLIM: (scala.Double, scala.Boolean) => scala.Double,
+    IDENTITY: (scala.Double, scala.Boolean) => scala.Double,
+    LOGISTIC: (scala.Double, scala.Boolean) => scala.Double,
+    ReLU: (scala.Double, scala.Boolean) => scala.Double,
+    TANH: (scala.Double, scala.Boolean) => scala.Double
   ): Anon_Derivate = {
-    val __obj = js.Dynamic.literal(HLIM = HLIM, IDENTITY = IDENTITY, LOGISTIC = LOGISTIC, ReLU = ReLU, TANH = TANH)
+    val __obj = js.Dynamic.literal(HLIM = js.Any.fromFunction2(HLIM), IDENTITY = js.Any.fromFunction2(IDENTITY), LOGISTIC = js.Any.fromFunction2(LOGISTIC), ReLU = js.Any.fromFunction2(ReLU), TANH = js.Any.fromFunction2(TANH))
   
     __obj.asInstanceOf[Anon_Derivate]
   }

@@ -98,12 +98,12 @@ trait LoryOptions extends js.Object {
 object LoryOptions {
   @scala.inline
   def apply(
-    afterInit: js.Function0[_] = null,
-    beforeInit: js.Function0[_] = null,
-    beforeNext: js.Function0[_] = null,
-    beforePrev: js.Function0[_] = null,
-    beforeResize: js.Function0[_] = null,
-    beforeTouch: js.Function0[_] = null,
+    afterInit: () => _ = null,
+    beforeInit: () => _ = null,
+    beforeNext: () => _ = null,
+    beforePrev: () => _ = null,
+    beforeResize: () => _ = null,
+    beforeTouch: () => _ = null,
     classNameFrame: java.lang.String = null,
     classNameNextCtrl: java.lang.String = null,
     classNamePrevCtrl: java.lang.String = null,
@@ -119,12 +119,12 @@ object LoryOptions {
     snapBackSpeed: scala.Int | scala.Double = null
   ): LoryOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterInit != null) __obj.updateDynamic("afterInit")(afterInit)
-    if (beforeInit != null) __obj.updateDynamic("beforeInit")(beforeInit)
-    if (beforeNext != null) __obj.updateDynamic("beforeNext")(beforeNext)
-    if (beforePrev != null) __obj.updateDynamic("beforePrev")(beforePrev)
-    if (beforeResize != null) __obj.updateDynamic("beforeResize")(beforeResize)
-    if (beforeTouch != null) __obj.updateDynamic("beforeTouch")(beforeTouch)
+    if (afterInit != null) __obj.updateDynamic("afterInit")(js.Any.fromFunction0(afterInit))
+    if (beforeInit != null) __obj.updateDynamic("beforeInit")(js.Any.fromFunction0(beforeInit))
+    if (beforeNext != null) __obj.updateDynamic("beforeNext")(js.Any.fromFunction0(beforeNext))
+    if (beforePrev != null) __obj.updateDynamic("beforePrev")(js.Any.fromFunction0(beforePrev))
+    if (beforeResize != null) __obj.updateDynamic("beforeResize")(js.Any.fromFunction0(beforeResize))
+    if (beforeTouch != null) __obj.updateDynamic("beforeTouch")(js.Any.fromFunction0(beforeTouch))
     if (classNameFrame != null) __obj.updateDynamic("classNameFrame")(classNameFrame)
     if (classNameNextCtrl != null) __obj.updateDynamic("classNameNextCtrl")(classNameNextCtrl)
     if (classNamePrevCtrl != null) __obj.updateDynamic("classNamePrevCtrl")(classNamePrevCtrl)

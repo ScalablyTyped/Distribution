@@ -15,16 +15,16 @@ trait EPub
   var toc: js.Array[TocElement] = js.native
   def getChapter(
     chapterId: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* text */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* text */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def getChapterRaw(
     chapterId: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* text */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* text */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def getFile(
     id: java.lang.String,
     callback: js.Function3[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* data */ nodeLib.Buffer, 
       /* mimeType */ java.lang.String, 
       scala.Unit
@@ -33,7 +33,7 @@ trait EPub
   def getImage(
     id: java.lang.String,
     callback: js.Function3[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* data */ nodeLib.Buffer, 
       /* mimeType */ java.lang.String, 
       scala.Unit

@@ -11,8 +11,8 @@ trait ISessionDelegate extends js.Object {
 
 object ISessionDelegate {
   @scala.inline
-  def apply(startSession: js.Function1[Client, Client]): ISessionDelegate = {
-    val __obj = js.Dynamic.literal(startSession = startSession)
+  def apply(startSession: Client => Client): ISessionDelegate = {
+    val __obj = js.Dynamic.literal(startSession = js.Any.fromFunction1(startSession))
   
     __obj.asInstanceOf[ISessionDelegate]
   }

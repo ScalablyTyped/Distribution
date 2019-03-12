@@ -5,26 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StubbedStorageArea extends js.Object {
-  var clear: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub
-  var get: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub
-  var getBytesInUse: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub
-  var remove: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub
-  var set: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub
-}
-
-object StubbedStorageArea {
-  @scala.inline
-  def apply(
-    clear: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub,
-    get: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub,
-    getBytesInUse: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub,
-    remove: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub,
-    set: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub
-  ): StubbedStorageArea = {
-    val __obj = js.Dynamic.literal(clear = clear, get = get, getBytesInUse = getBytesInUse, remove = remove, set = set)
-  
-    __obj.asInstanceOf[StubbedStorageArea]
-  }
+  @JSName("clear")
+  var clear_Original: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
+  @JSName("getBytesInUse")
+  var getBytesInUse_Original: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
+  @JSName("get")
+  var get_Original: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
+  @JSName("remove")
+  var remove_Original: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
+  @JSName("set")
+  var set_Original: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
+  // Methods
+  def clear(args: js.Any*): js.Any = js.native
+  // Methods
+  def get(args: js.Any*): js.Any = js.native
+  // Methods
+  def getBytesInUse(args: js.Any*): js.Any = js.native
+  // Methods
+  def remove(args: js.Any*): js.Any = js.native
+  // Methods
+  def set(args: js.Any*): js.Any = js.native
 }
 

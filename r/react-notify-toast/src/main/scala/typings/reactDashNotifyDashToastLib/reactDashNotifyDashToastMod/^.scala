@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   @JSName("notify")
-  val `notify_F^`: reactDashNotifyDashToastLib.reactDashNotifyDashToastMod.reactNotifyToast = js.native
+  val `notify_F^`: reactNotifyToast = js.native
 }
 

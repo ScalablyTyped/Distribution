@@ -21,19 +21,19 @@ object Pump {
   def apply(
     InputStream: XInputStream,
     OutputStream: XOutputStream,
-    acquire: js.Function0[scala.Unit],
-    addListener: js.Function1[XStreamListener, scala.Unit],
-    getInputStream: js.Function0[XInputStream],
-    getOutputStream: js.Function0[XOutputStream],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeListener: js.Function1[XStreamListener, scala.Unit],
-    setInputStream: js.Function1[XInputStream, scala.Unit],
-    setOutputStream: js.Function1[XOutputStream, scala.Unit],
-    start: js.Function0[scala.Unit],
-    terminate: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addListener: XStreamListener => scala.Unit,
+    getInputStream: () => XInputStream,
+    getOutputStream: () => XOutputStream,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeListener: XStreamListener => scala.Unit,
+    setInputStream: XInputStream => scala.Unit,
+    setOutputStream: XOutputStream => scala.Unit,
+    start: () => scala.Unit,
+    terminate: () => scala.Unit
   ): Pump = {
-    val __obj = js.Dynamic.literal(InputStream = InputStream, OutputStream = OutputStream, acquire = acquire, addListener = addListener, getInputStream = getInputStream, getOutputStream = getOutputStream, queryInterface = queryInterface, release = release, removeListener = removeListener, setInputStream = setInputStream, setOutputStream = setOutputStream, start = start, terminate = terminate)
+    val __obj = js.Dynamic.literal(InputStream = InputStream, OutputStream = OutputStream, acquire = js.Any.fromFunction0(acquire), addListener = js.Any.fromFunction1(addListener), getInputStream = js.Any.fromFunction0(getInputStream), getOutputStream = js.Any.fromFunction0(getOutputStream), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeListener = js.Any.fromFunction1(removeListener), setInputStream = js.Any.fromFunction1(setInputStream), setOutputStream = js.Any.fromFunction1(setOutputStream), start = js.Any.fromFunction0(start), terminate = js.Any.fromFunction0(terminate))
   
     __obj.asInstanceOf[Pump]
   }

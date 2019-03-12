@@ -31,12 +31,6 @@ trait SignalR extends js.Object {
   def apply(url: java.lang.String, queryString: js.Object): signalrLib.SignalRNs.Connection = js.native
   def apply(url: java.lang.String, queryString: js.Object, logging: scala.Boolean): signalrLib.SignalRNs.Connection = js.native
   def changeState(connection: signalrLib.SignalRNs.Connection, expectedState: scala.Double, newState: scala.Double): scala.Unit = js.native
-  /**
-    * Creates a new hub connection.
-    *
-    * @param url [Optional] The hub route url, defaults to "/signalr".
-    * @param options [Optional] Settings to use when creating the hubConnection.
-    */
   def hubConnection(): signalrLib.SignalRNs.HubNs.Connection = js.native
   def hubConnection(url: java.lang.String): signalrLib.SignalRNs.HubNs.Connection = js.native
   def hubConnection(url: java.lang.String, options: signalrLib.SignalRNs.HubNs.Options): signalrLib.SignalRNs.HubNs.Connection = js.native

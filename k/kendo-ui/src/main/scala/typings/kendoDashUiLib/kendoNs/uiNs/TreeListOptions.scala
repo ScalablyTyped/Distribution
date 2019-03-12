@@ -59,35 +59,35 @@ object TreeListOptions {
   @scala.inline
   def apply(
     autoBind: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeEdit: js.Function1[/* e */ TreeListBeforeEditEvent, scala.Unit] = null,
-    cancel: js.Function1[/* e */ TreeListCancelEvent, scala.Unit] = null,
-    cellClose: js.Function1[/* e */ TreeListCellCloseEvent, scala.Unit] = null,
-    change: js.Function1[/* e */ TreeListChangeEvent, scala.Unit] = null,
-    collapse: js.Function1[/* e */ TreeListCollapseEvent, scala.Unit] = null,
-    columnHide: js.Function1[/* e */ TreeListColumnHideEvent, scala.Unit] = null,
-    columnLock: js.Function1[/* e */ TreeListColumnLockEvent, scala.Unit] = null,
+    beforeEdit: /* e */ TreeListBeforeEditEvent => scala.Unit = null,
+    cancel: /* e */ TreeListCancelEvent => scala.Unit = null,
+    cellClose: /* e */ TreeListCellCloseEvent => scala.Unit = null,
+    change: /* e */ TreeListChangeEvent => scala.Unit = null,
+    collapse: /* e */ TreeListCollapseEvent => scala.Unit = null,
+    columnHide: /* e */ TreeListColumnHideEvent => scala.Unit = null,
+    columnLock: /* e */ TreeListColumnLockEvent => scala.Unit = null,
     columnMenu: scala.Boolean | TreeListColumnMenu = null,
-    columnMenuInit: js.Function1[/* e */ TreeListColumnMenuInitEvent, scala.Unit] = null,
-    columnMenuOpen: js.Function1[/* e */ TreeListColumnMenuOpenEvent, scala.Unit] = null,
-    columnReorder: js.Function1[/* e */ TreeListColumnReorderEvent, scala.Unit] = null,
-    columnResize: js.Function1[/* e */ TreeListColumnResizeEvent, scala.Unit] = null,
-    columnShow: js.Function1[/* e */ TreeListColumnShowEvent, scala.Unit] = null,
-    columnUnlock: js.Function1[/* e */ TreeListColumnUnlockEvent, scala.Unit] = null,
+    columnMenuInit: /* e */ TreeListColumnMenuInitEvent => scala.Unit = null,
+    columnMenuOpen: /* e */ TreeListColumnMenuOpenEvent => scala.Unit = null,
+    columnReorder: /* e */ TreeListColumnReorderEvent => scala.Unit = null,
+    columnResize: /* e */ TreeListColumnResizeEvent => scala.Unit = null,
+    columnShow: /* e */ TreeListColumnShowEvent => scala.Unit = null,
+    columnUnlock: /* e */ TreeListColumnUnlockEvent => scala.Unit = null,
     columns: js.Array[TreeListColumn] = null,
-    dataBinding: js.Function1[/* e */ TreeListDataBindingEvent, scala.Unit] = null,
-    dataBound: js.Function1[/* e */ TreeListDataBoundEvent, scala.Unit] = null,
+    dataBinding: /* e */ TreeListDataBindingEvent => scala.Unit = null,
+    dataBound: /* e */ TreeListDataBoundEvent => scala.Unit = null,
     dataSource: js.Any | kendoDashUiLib.kendoNs.dataNs.TreeListDataSource = null,
-    drag: js.Function1[/* e */ TreeListDragEvent, scala.Unit] = null,
-    dragend: js.Function1[/* e */ TreeListDragendEvent, scala.Unit] = null,
-    dragstart: js.Function1[/* e */ TreeListDragstartEvent, scala.Unit] = null,
-    drop: js.Function1[/* e */ TreeListDropEvent, scala.Unit] = null,
-    edit: js.Function1[/* e */ TreeListEditEvent, scala.Unit] = null,
+    drag: /* e */ TreeListDragEvent => scala.Unit = null,
+    dragend: /* e */ TreeListDragendEvent => scala.Unit = null,
+    dragstart: /* e */ TreeListDragstartEvent => scala.Unit = null,
+    drop: /* e */ TreeListDropEvent => scala.Unit = null,
+    edit: /* e */ TreeListEditEvent => scala.Unit = null,
     editable: scala.Boolean | TreeListEditable = null,
     excel: TreeListExcel = null,
-    excelExport: js.Function1[/* e */ TreeListExcelExportEvent, scala.Unit] = null,
-    expand: js.Function1[/* e */ TreeListExpandEvent, scala.Unit] = null,
-    filterMenuInit: js.Function1[/* e */ TreeListFilterMenuInitEvent, scala.Unit] = null,
-    filterMenuOpen: js.Function1[/* e */ TreeListFilterMenuOpenEvent, scala.Unit] = null,
+    excelExport: /* e */ TreeListExcelExportEvent => scala.Unit = null,
+    expand: /* e */ TreeListExpandEvent => scala.Unit = null,
+    filterMenuInit: /* e */ TreeListFilterMenuInitEvent => scala.Unit = null,
+    filterMenuOpen: /* e */ TreeListFilterMenuOpenEvent => scala.Unit = null,
     filterable: scala.Boolean | TreeListFilterable = null,
     height: scala.Double | java.lang.String = null,
     messages: TreeListMessages = null,
@@ -95,12 +95,12 @@ object TreeListOptions {
     navigatable: js.UndefOr[scala.Boolean] = js.undefined,
     pageable: scala.Boolean | TreeListPageable = null,
     pdf: TreeListPdf = null,
-    pdfExport: js.Function1[/* e */ TreeListPdfExportEvent, scala.Unit] = null,
-    remove: js.Function1[/* e */ TreeListRemoveEvent, scala.Unit] = null,
+    pdfExport: /* e */ TreeListPdfExportEvent => scala.Unit = null,
+    remove: /* e */ TreeListRemoveEvent => scala.Unit = null,
     reorderable: js.UndefOr[scala.Boolean] = js.undefined,
     resizable: js.UndefOr[scala.Boolean] = js.undefined,
-    save: js.Function1[/* e */ TreeListSaveEvent, scala.Unit] = null,
-    saveChanges: js.Function1[/* e */ TreeListSaveChangesEvent, scala.Unit] = null,
+    save: /* e */ TreeListSaveEvent => scala.Unit = null,
+    saveChanges: /* e */ TreeListSaveChangesEvent => scala.Unit = null,
     scrollable: scala.Boolean | js.Any = null,
     selectable: scala.Boolean | java.lang.String = null,
     sortable: scala.Boolean | TreeListSortable = null,
@@ -108,35 +108,35 @@ object TreeListOptions {
   ): TreeListOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind)
-    if (beforeEdit != null) __obj.updateDynamic("beforeEdit")(beforeEdit)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (cellClose != null) __obj.updateDynamic("cellClose")(cellClose)
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (collapse != null) __obj.updateDynamic("collapse")(collapse)
-    if (columnHide != null) __obj.updateDynamic("columnHide")(columnHide)
-    if (columnLock != null) __obj.updateDynamic("columnLock")(columnLock)
+    if (beforeEdit != null) __obj.updateDynamic("beforeEdit")(js.Any.fromFunction1(beforeEdit))
+    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
+    if (cellClose != null) __obj.updateDynamic("cellClose")(js.Any.fromFunction1(cellClose))
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (collapse != null) __obj.updateDynamic("collapse")(js.Any.fromFunction1(collapse))
+    if (columnHide != null) __obj.updateDynamic("columnHide")(js.Any.fromFunction1(columnHide))
+    if (columnLock != null) __obj.updateDynamic("columnLock")(js.Any.fromFunction1(columnLock))
     if (columnMenu != null) __obj.updateDynamic("columnMenu")(columnMenu.asInstanceOf[js.Any])
-    if (columnMenuInit != null) __obj.updateDynamic("columnMenuInit")(columnMenuInit)
-    if (columnMenuOpen != null) __obj.updateDynamic("columnMenuOpen")(columnMenuOpen)
-    if (columnReorder != null) __obj.updateDynamic("columnReorder")(columnReorder)
-    if (columnResize != null) __obj.updateDynamic("columnResize")(columnResize)
-    if (columnShow != null) __obj.updateDynamic("columnShow")(columnShow)
-    if (columnUnlock != null) __obj.updateDynamic("columnUnlock")(columnUnlock)
+    if (columnMenuInit != null) __obj.updateDynamic("columnMenuInit")(js.Any.fromFunction1(columnMenuInit))
+    if (columnMenuOpen != null) __obj.updateDynamic("columnMenuOpen")(js.Any.fromFunction1(columnMenuOpen))
+    if (columnReorder != null) __obj.updateDynamic("columnReorder")(js.Any.fromFunction1(columnReorder))
+    if (columnResize != null) __obj.updateDynamic("columnResize")(js.Any.fromFunction1(columnResize))
+    if (columnShow != null) __obj.updateDynamic("columnShow")(js.Any.fromFunction1(columnShow))
+    if (columnUnlock != null) __obj.updateDynamic("columnUnlock")(js.Any.fromFunction1(columnUnlock))
     if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1(dataBinding))
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (drag != null) __obj.updateDynamic("drag")(drag)
-    if (dragend != null) __obj.updateDynamic("dragend")(dragend)
-    if (dragstart != null) __obj.updateDynamic("dragstart")(dragstart)
-    if (drop != null) __obj.updateDynamic("drop")(drop)
-    if (edit != null) __obj.updateDynamic("edit")(edit)
+    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1(drag))
+    if (dragend != null) __obj.updateDynamic("dragend")(js.Any.fromFunction1(dragend))
+    if (dragstart != null) __obj.updateDynamic("dragstart")(js.Any.fromFunction1(dragstart))
+    if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction1(drop))
+    if (edit != null) __obj.updateDynamic("edit")(js.Any.fromFunction1(edit))
     if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
     if (excel != null) __obj.updateDynamic("excel")(excel)
-    if (excelExport != null) __obj.updateDynamic("excelExport")(excelExport)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (filterMenuInit != null) __obj.updateDynamic("filterMenuInit")(filterMenuInit)
-    if (filterMenuOpen != null) __obj.updateDynamic("filterMenuOpen")(filterMenuOpen)
+    if (excelExport != null) __obj.updateDynamic("excelExport")(js.Any.fromFunction1(excelExport))
+    if (expand != null) __obj.updateDynamic("expand")(js.Any.fromFunction1(expand))
+    if (filterMenuInit != null) __obj.updateDynamic("filterMenuInit")(js.Any.fromFunction1(filterMenuInit))
+    if (filterMenuOpen != null) __obj.updateDynamic("filterMenuOpen")(js.Any.fromFunction1(filterMenuOpen))
     if (filterable != null) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages)
@@ -144,12 +144,12 @@ object TreeListOptions {
     if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable)
     if (pageable != null) __obj.updateDynamic("pageable")(pageable.asInstanceOf[js.Any])
     if (pdf != null) __obj.updateDynamic("pdf")(pdf)
-    if (pdfExport != null) __obj.updateDynamic("pdfExport")(pdfExport)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (pdfExport != null) __obj.updateDynamic("pdfExport")(js.Any.fromFunction1(pdfExport))
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
     if (!js.isUndefined(reorderable)) __obj.updateDynamic("reorderable")(reorderable)
     if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
-    if (save != null) __obj.updateDynamic("save")(save)
-    if (saveChanges != null) __obj.updateDynamic("saveChanges")(saveChanges)
+    if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction1(save))
+    if (saveChanges != null) __obj.updateDynamic("saveChanges")(js.Any.fromFunction1(saveChanges))
     if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
     if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
     if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])

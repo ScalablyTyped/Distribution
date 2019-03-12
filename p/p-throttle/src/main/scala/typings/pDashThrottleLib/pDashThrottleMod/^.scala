@@ -12,6 +12,6 @@ object ^ extends js.Object {
     fn: js.Function1[/* arguments */ Arguments, js.Thenable[Return] | Return],
     limit: scala.Double,
     interval: scala.Double
-  ): pDashThrottleLib.pDashThrottleMod.ThrottledFunction[Arguments, Return] = js.native
+  ): ThrottledFunction[Arguments, Return] = js.native
 }
 

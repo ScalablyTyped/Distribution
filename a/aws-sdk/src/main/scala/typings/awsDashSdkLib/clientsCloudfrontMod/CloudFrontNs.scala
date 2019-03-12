@@ -63,7 +63,7 @@ object CloudFrontNs extends js.Object {
     /**
       * A complex type that specifies how CloudFront handles query strings and cookies.
       */
-    var ForwardedValues: ForwardedValues
+    var ForwardedValues: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.ForwardedValues
     /**
       * A complex type that contains zero or more Lambda function associations for a cache behavior.
       */
@@ -91,11 +91,11 @@ object CloudFrontNs extends js.Object {
     /**
       * A complex type that specifies the AWS accounts, if any, that you want to allow to create signed URLs for private content. If you want to require signed URLs in requests for objects in the target origin that match the PathPattern for this cache behavior, specify true for Enabled, and specify the applicable values for Quantity and Items. For more information, see Serving Private Content through CloudFront in the Amazon Amazon CloudFront Developer Guide. If you don't want to require signed URLs in requests for objects that match PathPattern, specify false for Enabled and 0 for Quantity. Omit Items. To add, change, or remove one or more trusted signers, change Enabled to true (if it's currently false), change Quantity as applicable, and specify all of the trusted signers that you want to include in the updated distribution.
       */
-    var TrustedSigners: TrustedSigners
+    var TrustedSigners: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.TrustedSigners
     /**
       * The protocol that viewers can use to access the files in the origin specified by TargetOriginId when a request matches the path pattern in PathPattern. You can specify the following options:    allow-all: Viewers can use HTTP or HTTPS.    redirect-to-https: If a viewer submits an HTTP request, CloudFront returns an HTTP status code of 301 (Moved Permanently) to the viewer along with the HTTPS URL. The viewer then resubmits the request using the new URL.     https-only: If a viewer sends an HTTP request, CloudFront returns an HTTP status code of 403 (Forbidden).    For more information about requiring the HTTPS protocol, see Using an HTTPS Connection to Access Your Objects in the Amazon CloudFront Developer Guide.  The only way to guarantee that viewers retrieve an object that was fetched from the origin using HTTPS is never to use any other protocol to fetch the object. If you have recently changed from HTTP to HTTPS, we recommend that you clear your objects' cache because cached objects are protocol agnostic. That means that an edge location will return an object from the cache regardless of whether the current request protocol matches the protocol used previously. For more information, see Specifying How Long Objects and Errors Stay in a CloudFront Edge Cache (Expiration) in the Amazon CloudFront Developer Guide. 
       */
-    var ViewerProtocolPolicy: ViewerProtocolPolicy
+    var ViewerProtocolPolicy: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.ViewerProtocolPolicy
   }
   
   trait CacheBehaviors extends js.Object {
@@ -203,7 +203,7 @@ object CloudFrontNs extends js.Object {
     /**
       * The format for a field-level encryption content type-profile mapping. 
       */
-    var Format: Format
+    var Format: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.Format
     /**
       * The profile ID for a field-level encryption content type-profile mapping. 
       */
@@ -258,7 +258,7 @@ object CloudFrontNs extends js.Object {
     /**
       * The current configuration information for the identity.
       */
-    var CloudFrontOriginAccessIdentityConfig: CloudFrontOriginAccessIdentityConfig
+    var CloudFrontOriginAccessIdentityConfig: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.CloudFrontOriginAccessIdentityConfig
   }
   
   trait CreateCloudFrontOriginAccessIdentityResult extends js.Object {
@@ -280,7 +280,7 @@ object CloudFrontNs extends js.Object {
     /**
       * The distribution's configuration information.
       */
-    var DistributionConfig: DistributionConfig
+    var DistributionConfig: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.DistributionConfig
   }
   
   trait CreateDistributionResult extends js.Object {
@@ -302,7 +302,7 @@ object CloudFrontNs extends js.Object {
     /**
       * The distribution's configuration information. 
       */
-    var DistributionConfigWithTags: DistributionConfigWithTags
+    var DistributionConfigWithTags: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.DistributionConfigWithTags
   }
   
   trait CreateDistributionWithTagsResult extends js.Object {
@@ -324,7 +324,7 @@ object CloudFrontNs extends js.Object {
     /**
       * The request to create a new field-level encryption configuration.
       */
-    var FieldLevelEncryptionConfig: FieldLevelEncryptionConfig
+    var FieldLevelEncryptionConfig: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.FieldLevelEncryptionConfig
   }
   
   trait CreateFieldLevelEncryptionConfigResult extends js.Object {
@@ -346,7 +346,7 @@ object CloudFrontNs extends js.Object {
     /**
       * The request to create a field-level encryption profile.
       */
-    var FieldLevelEncryptionProfileConfig: FieldLevelEncryptionProfileConfig
+    var FieldLevelEncryptionProfileConfig: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.FieldLevelEncryptionProfileConfig
   }
   
   trait CreateFieldLevelEncryptionProfileResult extends js.Object {
@@ -372,7 +372,7 @@ object CloudFrontNs extends js.Object {
     /**
       * The batch information for the invalidation.
       */
-    var InvalidationBatch: InvalidationBatch
+    var InvalidationBatch: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.InvalidationBatch
   }
   
   trait CreateInvalidationResult extends js.Object {
@@ -390,7 +390,7 @@ object CloudFrontNs extends js.Object {
     /**
       * The request to add a public key to CloudFront.
       */
-    var PublicKeyConfig: PublicKeyConfig
+    var PublicKeyConfig: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.PublicKeyConfig
   }
   
   trait CreatePublicKeyResult extends js.Object {
@@ -412,7 +412,7 @@ object CloudFrontNs extends js.Object {
     /**
       * The streaming distribution's configuration information.
       */
-    var StreamingDistributionConfig: StreamingDistributionConfig
+    var StreamingDistributionConfig: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.StreamingDistributionConfig
   }
   
   trait CreateStreamingDistributionResult extends js.Object {
@@ -434,7 +434,7 @@ object CloudFrontNs extends js.Object {
     /**
       *  The streaming distribution's configuration information. 
       */
-    var StreamingDistributionConfigWithTags: StreamingDistributionConfigWithTags
+    var StreamingDistributionConfigWithTags: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.StreamingDistributionConfigWithTags
   }
   
   trait CreateStreamingDistributionWithTagsResult extends js.Object {
@@ -509,7 +509,7 @@ object CloudFrontNs extends js.Object {
     /**
       * The origin protocol policy to apply to your origin.
       */
-    var OriginProtocolPolicy: OriginProtocolPolicy
+    var OriginProtocolPolicy: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.OriginProtocolPolicy
     /**
       * You can create a custom origin read timeout. All timeout units are in seconds. The default origin read timeout is 30 seconds, but you can configure custom timeout lengths using the CloudFront API. The minimum timeout length is 4 seconds; the maximum is 60 seconds. If you need to increase the maximum time limit, contact the AWS Support Center.
       */
@@ -537,7 +537,7 @@ object CloudFrontNs extends js.Object {
     /**
       * A complex type that specifies how CloudFront handles query strings and cookies.
       */
-    var ForwardedValues: ForwardedValues
+    var ForwardedValues: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.ForwardedValues
     /**
       * A complex type that contains zero or more Lambda function associations for a cache behavior.
       */
@@ -558,11 +558,11 @@ object CloudFrontNs extends js.Object {
     /**
       * A complex type that specifies the AWS accounts, if any, that you want to allow to create signed URLs for private content. If you want to require signed URLs in requests for objects in the target origin that match the PathPattern for this cache behavior, specify true for Enabled, and specify the applicable values for Quantity and Items. For more information, see Serving Private Content through CloudFront in the Amazon Amazon CloudFront Developer Guide. If you don't want to require signed URLs in requests for objects that match PathPattern, specify false for Enabled and 0 for Quantity. Omit Items. To add, change, or remove one or more trusted signers, change Enabled to true (if it's currently false), change Quantity as applicable, and specify all of the trusted signers that you want to include in the updated distribution.
       */
-    var TrustedSigners: TrustedSigners
+    var TrustedSigners: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.TrustedSigners
     /**
       * The protocol that viewers can use to access the files in the origin specified by TargetOriginId when a request matches the path pattern in PathPattern. You can specify the following options:    allow-all: Viewers can use HTTP or HTTPS.    redirect-to-https: If a viewer submits an HTTP request, CloudFront returns an HTTP status code of 301 (Moved Permanently) to the viewer along with the HTTPS URL. The viewer then resubmits the request using the new URL.    https-only: If a viewer sends an HTTP request, CloudFront returns an HTTP status code of 403 (Forbidden).   For more information about requiring the HTTPS protocol, see Using an HTTPS Connection to Access Your Objects in the Amazon CloudFront Developer Guide.  The only way to guarantee that viewers retrieve an object that was fetched from the origin using HTTPS is never to use any other protocol to fetch the object. If you have recently changed from HTTP to HTTPS, we recommend that you clear your objects' cache because cached objects are protocol agnostic. That means that an edge location will return an object from the cache regardless of whether the current request protocol matches the protocol used previously. For more information, see Specifying How Long Objects and Errors Stay in a CloudFront Edge Cache (Expiration) in the Amazon CloudFront Developer Guide. 
       */
-    var ViewerProtocolPolicy: ViewerProtocolPolicy
+    var ViewerProtocolPolicy: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.ViewerProtocolPolicy
   }
   
   trait DeleteCloudFrontOriginAccessIdentityRequest extends js.Object {
@@ -639,11 +639,11 @@ object CloudFrontNs extends js.Object {
     /**
       * CloudFront automatically adds this element to the response only if you've set up the distribution to serve private content with signed URLs. The element lists the key pair IDs that CloudFront is aware of for each trusted signer. The Signer child element lists the AWS account number of the trusted signer (or an empty Self element if the signer is you). The Signer element also includes the IDs of any active key pairs associated with the trusted signer's AWS account. If no KeyPairId element appears for a Signer, that signer can't create working signed URLs.
       */
-    var ActiveTrustedSigners: ActiveTrustedSigners
+    var ActiveTrustedSigners: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.ActiveTrustedSigners
     /**
       * The current configuration information for the distribution. Send a GET request to the /CloudFront API version/distribution ID/config resource.
       */
-    var DistributionConfig: DistributionConfig
+    var DistributionConfig: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.DistributionConfig
     /**
       * The domain name corresponding to the distribution, for example, d111111abcdef8.cloudfront.net. 
       */
@@ -690,7 +690,7 @@ object CloudFrontNs extends js.Object {
     /**
       * A complex type that describes the default cache behavior if you don't specify a CacheBehavior element or if files don't match any of the values of PathPattern in CacheBehavior elements. You must create exactly one default cache behavior.
       */
-    var DefaultCacheBehavior: DefaultCacheBehavior
+    var DefaultCacheBehavior: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.DefaultCacheBehavior
     /**
       * The object that you want CloudFront to request from your origin (for example, index.html) when a viewer requests the root URL for your distribution (http://www.example.com) instead of an object in your distribution (http://www.example.com/product-description.html). Specifying a default root object avoids exposing the contents of your distribution. Specify only the object name, for example, index.html. Don't add a / before the object name. If you don't want to specify a default root object when you create a distribution, include an empty DefaultRootObject element. To delete the default root object from an existing distribution, update the distribution configuration and include an empty DefaultRootObject element. To replace the default root object, update the distribution configuration and specify the new object. For more information about the default root object, see Creating a Default Root Object in the Amazon CloudFront Developer Guide.
       */
@@ -718,7 +718,7 @@ object CloudFrontNs extends js.Object {
     /**
       * A complex type that contains information about origins for this distribution. 
       */
-    var Origins: Origins
+    var Origins: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.Origins
     /**
       * The price class that corresponds with the maximum price that you want to pay for CloudFront service. If you specify PriceClass_All, CloudFront responds to requests for your objects from all CloudFront edge locations. If you specify a price class other than PriceClass_All, CloudFront serves your objects from the CloudFront edge location that has the lowest latency among the edge locations in your price class. Viewers who are in or near regions that are excluded from your specified price class may encounter slower performance. For more information about price classes, see Choosing the Price Class for a CloudFront Distribution in the Amazon CloudFront Developer Guide. For information about CloudFront pricing, including how price classes (such as Price Class 100) map to CloudFront regions, see Amazon CloudFront Pricing. For price class information, scroll down to see the table at the bottom of the page.
       */
@@ -741,11 +741,11 @@ object CloudFrontNs extends js.Object {
     /**
       * A distribution configuration.
       */
-    var DistributionConfig: DistributionConfig
+    var DistributionConfig: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.DistributionConfig
     /**
       * A complex type that contains zero or more Tag elements.
       */
-    var Tags: Tags
+    var Tags: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.Tags
   }
   
   trait DistributionList extends js.Object {
@@ -783,11 +783,11 @@ object CloudFrontNs extends js.Object {
     /**
       * A complex type that contains information about CNAMEs (alternate domain names), if any, for this distribution.
       */
-    var Aliases: Aliases
+    var Aliases: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.Aliases
     /**
       * A complex type that contains zero or more CacheBehavior elements.
       */
-    var CacheBehaviors: CacheBehaviors
+    var CacheBehaviors: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.CacheBehaviors
     /**
       * The comment originally specified when this distribution was created.
       */
@@ -795,11 +795,11 @@ object CloudFrontNs extends js.Object {
     /**
       * A complex type that contains zero or more CustomErrorResponses elements.
       */
-    var CustomErrorResponses: CustomErrorResponses
+    var CustomErrorResponses: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.CustomErrorResponses
     /**
       * A complex type that describes the default cache behavior if you don't specify a CacheBehavior element or if files don't match any of the values of PathPattern in CacheBehavior elements. You must create exactly one default cache behavior.
       */
-    var DefaultCacheBehavior: DefaultCacheBehavior
+    var DefaultCacheBehavior: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.DefaultCacheBehavior
     /**
       * The domain name that corresponds to the distribution, for example, d111111abcdef8.cloudfront.net.
       */
@@ -811,7 +811,7 @@ object CloudFrontNs extends js.Object {
     /**
       *  Specify the maximum HTTP version that you want viewers to use to communicate with CloudFront. The default value for new web distributions is http2. Viewers that don't support HTTP/2 will automatically use an earlier version.
       */
-    var HttpVersion: HttpVersion
+    var HttpVersion: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.HttpVersion
     /**
       * The identifier for the distribution. For example: EDFDVBD632BHDS5.
       */
@@ -831,15 +831,15 @@ object CloudFrontNs extends js.Object {
     /**
       * A complex type that contains information about origins for this distribution.
       */
-    var Origins: Origins
+    var Origins: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.Origins
     /**
       * A complex type that contains information about price class for this streaming distribution. 
       */
-    var PriceClass: PriceClass
+    var PriceClass: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.PriceClass
     /**
       * 
       */
-    var Restrictions: Restrictions
+    var Restrictions: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.Restrictions
     /**
       * The current status of the distribution. When the status is Deployed, the distribution's information is propagated to all CloudFront edge locations.
       */
@@ -847,7 +847,7 @@ object CloudFrontNs extends js.Object {
     /**
       * 
       */
-    var ViewerCertificate: ViewerCertificate
+    var ViewerCertificate: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.ViewerCertificate
     /**
       * The Web ACL Id (if any) associated with the distribution.
       */
@@ -869,7 +869,7 @@ object CloudFrontNs extends js.Object {
     /**
       * Field patterns in a field-level encryption content type profile specify the fields that you want to be encrypted. You can provide the full field name, or any beginning characters followed by a wildcard (*). You can't overlap field patterns. For example, you can't have both ABC* and AB*. Note that field patterns are case-sensitive. 
       */
-    var FieldPatterns: FieldPatterns
+    var FieldPatterns: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.FieldPatterns
     /**
       * The provider associated with the public key being used for encryption. This value must also be provided with the private key for applications to be able to decrypt data.
       */
@@ -884,7 +884,7 @@ object CloudFrontNs extends js.Object {
     /**
       * A complex data type that includes the profile configurations specified for field-level encryption. 
       */
-    var FieldLevelEncryptionConfig: FieldLevelEncryptionConfig
+    var FieldLevelEncryptionConfig: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.FieldLevelEncryptionConfig
     /**
       * The configuration ID for a field-level encryption configuration which includes a set of profiles that specify certain selected data fields to be encrypted by specific public keys.
       */
@@ -937,7 +937,7 @@ object CloudFrontNs extends js.Object {
     /**
       * A complex data type that includes the profile name and the encryption entities for the field-level encryption profile.
       */
-    var FieldLevelEncryptionProfileConfig: FieldLevelEncryptionProfileConfig
+    var FieldLevelEncryptionProfileConfig: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.FieldLevelEncryptionProfileConfig
     /**
       * The ID for a field-level encryption profile configuration which includes a set of profiles that specify certain selected data fields to be encrypted by specific public keys.
       */
@@ -960,7 +960,7 @@ object CloudFrontNs extends js.Object {
     /**
       * A complex data type of encryption entities for the field-level encryption profile that include the public key ID, provider, and field patterns for specifying which fields to encrypt with this key.
       */
-    var EncryptionEntities: EncryptionEntities
+    var EncryptionEntities: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.EncryptionEntities
     /**
       * Profile name for the field-level encryption profile.
       */
@@ -994,7 +994,7 @@ object CloudFrontNs extends js.Object {
     /**
       * A complex data type of encryption entities for the field-level encryption profile that include the public key ID, provider, and field patterns for specifying which fields to encrypt with this key.
       */
-    var EncryptionEntities: EncryptionEntities
+    var EncryptionEntities: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.EncryptionEntities
     /**
       * ID for the field-level encryption profile summary.
       */
@@ -1334,7 +1334,7 @@ object CloudFrontNs extends js.Object {
     /**
       * The current invalidation information for the batch request. 
       */
-    var InvalidationBatch: InvalidationBatch
+    var InvalidationBatch: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.InvalidationBatch
     /**
       * The status of the invalidation request. When the invalidation batch is finished, the status is Completed.
       */
@@ -1349,7 +1349,7 @@ object CloudFrontNs extends js.Object {
     /**
       * A complex type that contains information about the objects that you want to invalidate. For more information, see Specifying the Objects to Invalidate in the Amazon CloudFront Developer Guide. 
       */
-    var Paths: Paths
+    var Paths: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.Paths
   }
   
   trait InvalidationList extends js.Object {
@@ -1409,7 +1409,7 @@ object CloudFrontNs extends js.Object {
     /**
       * Specifies the event type that triggers a Lambda function invocation. You can specify the following values:    viewer-request: The function executes when CloudFront receives a request from a viewer and before it checks to see whether the requested object is in the edge cache.     origin-request: The function executes only when CloudFront forwards a request to your origin. When the requested object is in the edge cache, the function doesn't execute.    origin-response: The function executes after CloudFront receives a response from the origin and before it caches the object in the response. When the requested object is in the edge cache, the function doesn't execute.    viewer-response: The function executes before CloudFront returns the requested object to the viewer. The function executes regardless of whether the object was already in the edge cache. If the origin returns an HTTP status code other than HTTP 200 (OK), the function doesn't execute.  
       */
-    var EventType: EventType
+    var EventType: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.EventType
     /**
       * A flag that allows a Lambda function to have read access to the body content. For more information, see Accessing the Request Body by Choosing the Include Body Option in the Amazon CloudFront Developer Guide.
       */
@@ -1417,7 +1417,7 @@ object CloudFrontNs extends js.Object {
     /**
       * The ARN of the Lambda function. You must specify the ARN of a function version; you can't specify a Lambda alias or $LATEST.
       */
-    var LambdaFunctionARN: LambdaFunctionARN
+    var LambdaFunctionARN: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.LambdaFunctionARN
   }
   
   trait LambdaFunctionAssociations extends js.Object {
@@ -1594,7 +1594,7 @@ object CloudFrontNs extends js.Object {
     /**
       *  A complex type that contains zero or more Tag elements.
       */
-    var Tags: Tags
+    var Tags: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.Tags
   }
   
   trait LoggingConfig extends js.Object {
@@ -1673,7 +1673,7 @@ object CloudFrontNs extends js.Object {
     /**
       * The status codes that, when returned from the primary origin, will trigger CloudFront to failover to the second origin.
       */
-    var StatusCodes: StatusCodes
+    var StatusCodes: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.StatusCodes
   }
   
   trait OriginGroupMember extends js.Object {
@@ -1750,7 +1750,7 @@ object CloudFrontNs extends js.Object {
     /**
       * A complex data type for a public key you add to CloudFront to use with features like field-level encryption.
       */
-    var PublicKeyConfig: PublicKeyConfig
+    var PublicKeyConfig: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.PublicKeyConfig
   }
   
   trait PublicKeyConfig extends js.Object {
@@ -1859,7 +1859,7 @@ object CloudFrontNs extends js.Object {
   }
   
   trait Restrictions extends js.Object {
-    var GeoRestriction: GeoRestriction
+    var GeoRestriction: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.GeoRestriction
   }
   
   trait S3Origin extends js.Object {
@@ -1899,7 +1899,7 @@ object CloudFrontNs extends js.Object {
     def getSignedCookie(
       options: awsDashSdkLib.libCloudfrontSignerMod.SignerNs.SignerOptionsWithPolicy,
       callback: js.Function2[
-          /* err */ nodeLib.Error, 
+          /* err */ stdLib.Error, 
           /* cookie */ awsDashSdkLib.libCloudfrontSignerMod.SignerNs.CustomPolicy, 
           scala.Unit
         ]
@@ -1914,7 +1914,7 @@ object CloudFrontNs extends js.Object {
     def getSignedCookie(
       options: awsDashSdkLib.libCloudfrontSignerMod.SignerNs.SignerOptionsWithoutPolicy,
       callback: js.Function2[
-          /* err */ nodeLib.Error, 
+          /* err */ stdLib.Error, 
           /* cookie */ awsDashSdkLib.libCloudfrontSignerMod.SignerNs.CannedPolicy, 
           scala.Unit
         ]
@@ -1930,12 +1930,12 @@ object CloudFrontNs extends js.Object {
       */
     def getSignedUrl(
       options: awsDashSdkLib.libCloudfrontSignerMod.SignerNs.SignerOptionsWithPolicy,
-      callback: js.Function2[/* err */ nodeLib.Error, /* url */ java.lang.String, scala.Unit]
+      callback: js.Function2[/* err */ stdLib.Error, /* url */ java.lang.String, scala.Unit]
     ): scala.Unit = js.native
     def getSignedUrl(options: awsDashSdkLib.libCloudfrontSignerMod.SignerNs.SignerOptionsWithoutPolicy): java.lang.String = js.native
     def getSignedUrl(
       options: awsDashSdkLib.libCloudfrontSignerMod.SignerNs.SignerOptionsWithoutPolicy,
-      callback: js.Function2[/* err */ nodeLib.Error, /* url */ java.lang.String, scala.Unit]
+      callback: js.Function2[/* err */ stdLib.Error, /* url */ java.lang.String, scala.Unit]
     ): scala.Unit = js.native
   }
   
@@ -1958,7 +1958,7 @@ object CloudFrontNs extends js.Object {
     /**
       * A complex type that lists the AWS accounts, if any, that you included in the TrustedSigners complex type for this distribution. These are the accounts that you want to allow to create signed URLs for private content. The Signer complex type lists the AWS account number of the trusted signer or self if the signer is the AWS account that created the distribution. The Signer element also includes the IDs of any active CloudFront key pairs that are associated with the trusted signer's AWS account. If no KeyPairId element appears for a Signer, that signer can't create signed URLs. For more information, see Serving Private Content through CloudFront in the Amazon CloudFront Developer Guide. 
       */
-    var ActiveTrustedSigners: ActiveTrustedSigners
+    var ActiveTrustedSigners: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.ActiveTrustedSigners
     /**
       * The domain name that corresponds to the streaming distribution, for example, s5c39gqb8ow64r.cloudfront.net. 
       */
@@ -1978,7 +1978,7 @@ object CloudFrontNs extends js.Object {
     /**
       * The current configuration information for the RTMP distribution.
       */
-    var StreamingDistributionConfig: StreamingDistributionConfig
+    var StreamingDistributionConfig: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.StreamingDistributionConfig
   }
   
   trait StreamingDistributionConfig extends js.Object {
@@ -2009,22 +2009,22 @@ object CloudFrontNs extends js.Object {
     /**
       * A complex type that contains information about the Amazon S3 bucket from which you want CloudFront to get your media files for distribution. 
       */
-    var S3Origin: S3Origin
+    var S3Origin: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.S3Origin
     /**
       * A complex type that specifies any AWS accounts that you want to permit to create signed URLs for private content. If you want the distribution to use signed URLs, include this element; if you want the distribution to use public URLs, remove this element. For more information, see Serving Private Content through CloudFront in the Amazon CloudFront Developer Guide. 
       */
-    var TrustedSigners: TrustedSigners
+    var TrustedSigners: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.TrustedSigners
   }
   
   trait StreamingDistributionConfigWithTags extends js.Object {
     /**
       * A streaming distribution Configuration.
       */
-    var StreamingDistributionConfig: StreamingDistributionConfig
+    var StreamingDistributionConfig: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.StreamingDistributionConfig
     /**
       * A complex type that contains zero or more Tag elements.
       */
-    var Tags: Tags
+    var Tags: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.Tags
   }
   
   trait StreamingDistributionList extends js.Object {
@@ -2062,7 +2062,7 @@ object CloudFrontNs extends js.Object {
     /**
       * A complex type that contains information about CNAMEs (alternate domain names), if any, for this streaming distribution.
       */
-    var Aliases: Aliases
+    var Aliases: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.Aliases
     /**
       * The comment originally specified when this distribution was created.
       */
@@ -2086,11 +2086,11 @@ object CloudFrontNs extends js.Object {
     /**
       * 
       */
-    var PriceClass: PriceClass
+    var PriceClass: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.PriceClass
     /**
       * A complex type that contains information about the Amazon S3 bucket from which you want CloudFront to get your media files for distribution.
       */
-    var S3Origin: S3Origin
+    var S3Origin: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.S3Origin
     /**
       *  Indicates the current status of the distribution. When the status is Deployed, the distribution's information is fully propagated throughout the Amazon CloudFront system.
       */
@@ -2098,7 +2098,7 @@ object CloudFrontNs extends js.Object {
     /**
       * A complex type that specifies the AWS accounts, if any, that you want to allow to create signed URLs for private content. If you want to require signed URLs in requests for objects in the target origin that match the PathPattern for this cache behavior, specify true for Enabled, and specify the applicable values for Quantity and Items.If you don't want to require signed URLs in requests for objects that match PathPattern, specify false for Enabled and 0 for Quantity. Omit Items. To add, change, or remove one or more trusted signers, change Enabled to true (if it's currently false), change Quantity as applicable, and specify all of the trusted signers that you want to include in the updated distribution.
       */
-    var TrustedSigners: TrustedSigners
+    var TrustedSigners: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.TrustedSigners
   }
   
   trait StreamingLoggingConfig extends js.Object {
@@ -2142,7 +2142,7 @@ object CloudFrontNs extends js.Object {
     /**
       *  A complex type that contains zero or more Tag elements.
       */
-    var Tags: Tags
+    var Tags: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.Tags
   }
   
   trait Tags extends js.Object {
@@ -3249,14 +3249,14 @@ object CloudFrontNs extends js.Object {
     /**
       *  A complex type that contains zero or more Tag key elements.
       */
-    var TagKeys: TagKeys
+    var TagKeys: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.TagKeys
   }
   
   trait UpdateCloudFrontOriginAccessIdentityRequest extends js.Object {
     /**
       * The identity's configuration information.
       */
-    var CloudFrontOriginAccessIdentityConfig: CloudFrontOriginAccessIdentityConfig
+    var CloudFrontOriginAccessIdentityConfig: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.CloudFrontOriginAccessIdentityConfig
     /**
       * The identity's id.
       */
@@ -3282,7 +3282,7 @@ object CloudFrontNs extends js.Object {
     /**
       * The distribution's configuration information.
       */
-    var DistributionConfig: DistributionConfig
+    var DistributionConfig: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.DistributionConfig
     /**
       * The distribution's id.
       */
@@ -3308,7 +3308,7 @@ object CloudFrontNs extends js.Object {
     /**
       * Request to update a field-level encryption configuration. 
       */
-    var FieldLevelEncryptionConfig: FieldLevelEncryptionConfig
+    var FieldLevelEncryptionConfig: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.FieldLevelEncryptionConfig
     /**
       * The ID of the configuration you want to update.
       */
@@ -3334,7 +3334,7 @@ object CloudFrontNs extends js.Object {
     /**
       * Request to update a field-level encryption profile. 
       */
-    var FieldLevelEncryptionProfileConfig: FieldLevelEncryptionProfileConfig
+    var FieldLevelEncryptionProfileConfig: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.FieldLevelEncryptionProfileConfig
     /**
       * The ID of the field-level encryption profile request. 
       */
@@ -3368,7 +3368,7 @@ object CloudFrontNs extends js.Object {
     /**
       * Request to update public key information.
       */
-    var PublicKeyConfig: PublicKeyConfig
+    var PublicKeyConfig: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.PublicKeyConfig
   }
   
   trait UpdatePublicKeyResult extends js.Object {
@@ -3394,7 +3394,7 @@ object CloudFrontNs extends js.Object {
     /**
       * The streaming distribution's configuration information.
       */
-    var StreamingDistributionConfig: StreamingDistributionConfig
+    var StreamingDistributionConfig: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.StreamingDistributionConfig
   }
   
   trait UpdateStreamingDistributionResult extends js.Object {

@@ -35,28 +35,13 @@ trait DocumentsResource extends js.Object {
 object DocumentsResource {
   @scala.inline
   def apply(
-    analyzeEntities: js.Function1[
-      gapiDotClientDotLanguageLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AnalyzeEntitiesResponse]
-    ],
-    analyzeEntitySentiment: js.Function1[
-      gapiDotClientDotLanguageLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AnalyzeEntitySentimentResponse]
-    ],
-    analyzeSentiment: js.Function1[
-      gapiDotClientDotLanguageLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AnalyzeSentimentResponse]
-    ],
-    analyzeSyntax: js.Function1[
-      gapiDotClientDotLanguageLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AnalyzeSyntaxResponse]
-    ],
-    annotateText: js.Function1[
-      gapiDotClientDotLanguageLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AnnotateTextResponse]
-    ]
+    analyzeEntities: gapiDotClientDotLanguageLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[AnalyzeEntitiesResponse],
+    analyzeEntitySentiment: gapiDotClientDotLanguageLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[AnalyzeEntitySentimentResponse],
+    analyzeSentiment: gapiDotClientDotLanguageLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[AnalyzeSentimentResponse],
+    analyzeSyntax: gapiDotClientDotLanguageLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[AnalyzeSyntaxResponse],
+    annotateText: gapiDotClientDotLanguageLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[AnnotateTextResponse]
   ): DocumentsResource = {
-    val __obj = js.Dynamic.literal(analyzeEntities = analyzeEntities, analyzeEntitySentiment = analyzeEntitySentiment, analyzeSentiment = analyzeSentiment, analyzeSyntax = analyzeSyntax, annotateText = annotateText)
+    val __obj = js.Dynamic.literal(analyzeEntities = js.Any.fromFunction1(analyzeEntities), analyzeEntitySentiment = js.Any.fromFunction1(analyzeEntitySentiment), analyzeSentiment = js.Any.fromFunction1(analyzeSentiment), analyzeSyntax = js.Any.fromFunction1(analyzeSyntax), annotateText = js.Any.fromFunction1(annotateText))
   
     __obj.asInstanceOf[DocumentsResource]
   }

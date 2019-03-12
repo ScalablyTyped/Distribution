@@ -28,7 +28,7 @@ trait Anchor
   def handleScroll(): scala.Unit = js.native
   def handleScrollTo(link: java.lang.String): scala.Unit = js.native
   def renderAnchor(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def saveInkNode(node: reactLib.HTMLSpanElement): scala.Unit = js.native
+  def saveInkNode(node: stdLib.HTMLSpanElement): scala.Unit = js.native
   def updateInk(): scala.Unit = js.native
 }
 

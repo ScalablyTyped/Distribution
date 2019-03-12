@@ -24,8 +24,8 @@ object InitOptions {
     encoding: java.lang.String = null,
     interval: nodeDashPersistLib.milliseconds | scala.Boolean = null,
     logging: scala.Boolean | js.Function = null,
-    parse: js.Function1[/* serialized */ java.lang.String, _] = null,
-    stringify: js.Function1[/* toSerialize */ js.Any, java.lang.String] = null,
+    parse: /* serialized */ java.lang.String => _ = null,
+    stringify: /* toSerialize */ js.Any => java.lang.String = null,
     ttl: nodeDashPersistLib.milliseconds | scala.Boolean = null
   ): InitOptions = {
     val __obj = js.Dynamic.literal()
@@ -34,8 +34,8 @@ object InitOptions {
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (parse != null) __obj.updateDynamic("parse")(parse)
-    if (stringify != null) __obj.updateDynamic("stringify")(stringify)
+    if (parse != null) __obj.updateDynamic("parse")(js.Any.fromFunction1(parse))
+    if (stringify != null) __obj.updateDynamic("stringify")(js.Any.fromFunction1(stringify))
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]
   }

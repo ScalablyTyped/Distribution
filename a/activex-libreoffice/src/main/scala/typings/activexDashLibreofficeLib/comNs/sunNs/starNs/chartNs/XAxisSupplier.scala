@@ -26,13 +26,13 @@ trait XAxisSupplier
 object XAxisSupplier {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getAxis: js.Function1[scala.Double, XAxis],
-    getSecondaryAxis: js.Function1[scala.Double, XAxis],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getAxis: scala.Double => XAxis,
+    getSecondaryAxis: scala.Double => XAxis,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAxisSupplier = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getAxis = getAxis, getSecondaryAxis = getSecondaryAxis, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getAxis = js.Any.fromFunction1(getAxis), getSecondaryAxis = js.Any.fromFunction1(getSecondaryAxis), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAxisSupplier]
   }

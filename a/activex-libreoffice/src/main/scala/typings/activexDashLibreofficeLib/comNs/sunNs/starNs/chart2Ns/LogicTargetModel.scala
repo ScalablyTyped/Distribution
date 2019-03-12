@@ -14,7 +14,7 @@ trait LogicTargetModel extends js.Object {
     * not BOUND nor CONSTRAINED in terms of Listener notifications, each element in the sequence must implement the service {@link
     * com.sun.star.chart2.CoordinateSystem}
     */
-  var CoordinateSystems: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet]
+  var CoordinateSystems: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet]
   /** identifies an instance of this service within one chart document. */
   var ID: java.lang.String
   /**
@@ -26,16 +26,16 @@ trait LogicTargetModel extends js.Object {
     * MAYBEVOID, not BOUND nor CONSTRAINED in terms of Listener notifications, each element in the sequence must implement the service {@link
     * com.sun.star.chart2.LogicTargetModel}
     */
-  var LogicTargetModels: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet]
+  var LogicTargetModels: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet]
 }
 
 object LogicTargetModel {
   @scala.inline
   def apply(
-    CoordinateSystems: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    CoordinateSystems: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
     ID: java.lang.String,
     LegendID: java.lang.String,
-    LogicTargetModels: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet]
+    LogicTargetModels: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet]
   ): LogicTargetModel = {
     val __obj = js.Dynamic.literal(CoordinateSystems = CoordinateSystems, ID = ID, LegendID = LegendID, LogicTargetModels = LogicTargetModels)
   

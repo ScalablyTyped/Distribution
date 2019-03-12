@@ -14,16 +14,16 @@ trait ContentProvider
 object ContentProvider {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    compareContentIds: js.Function2[XContentIdentifier, XContentIdentifier, scala.Double],
-    createContentIdentifier: js.Function1[java.lang.String, XContentIdentifier],
-    deregisterInstance: js.Function2[java.lang.String, java.lang.String, XContentProvider],
-    queryContent: js.Function1[XContentIdentifier, XContent],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerInstance: js.Function3[java.lang.String, java.lang.String, scala.Boolean, XContentProvider],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    compareContentIds: (XContentIdentifier, XContentIdentifier) => scala.Double,
+    createContentIdentifier: java.lang.String => XContentIdentifier,
+    deregisterInstance: (java.lang.String, java.lang.String) => XContentProvider,
+    queryContent: XContentIdentifier => XContent,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerInstance: (java.lang.String, java.lang.String, scala.Boolean) => XContentProvider,
+    release: () => scala.Unit
   ): ContentProvider = {
-    val __obj = js.Dynamic.literal(acquire = acquire, compareContentIds = compareContentIds, createContentIdentifier = createContentIdentifier, deregisterInstance = deregisterInstance, queryContent = queryContent, queryInterface = queryInterface, registerInstance = registerInstance, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), compareContentIds = js.Any.fromFunction2(compareContentIds), createContentIdentifier = js.Any.fromFunction1(createContentIdentifier), deregisterInstance = js.Any.fromFunction2(deregisterInstance), queryContent = js.Any.fromFunction1(queryContent), queryInterface = js.Any.fromFunction1(queryInterface), registerInstance = js.Any.fromFunction3(registerInstance), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[ContentProvider]
   }

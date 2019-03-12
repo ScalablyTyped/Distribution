@@ -57,16 +57,16 @@ object SizeSchemeForPolyline {
   def apply(
     color: Color,
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     maxWidth: scala.Double,
     minWidth: scala.Double,
     noDataColor: Color,
     noDataWidth: scala.Double,
     opacity: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     width: scala.Double
   ): SizeSchemeForPolyline = {
-    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, maxWidth = maxWidth, minWidth = minWidth, noDataColor = noDataColor, noDataWidth = noDataWidth, opacity = opacity, propertyIsEnumerable = propertyIsEnumerable, width = width)
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxWidth = maxWidth, minWidth = minWidth, noDataColor = noDataColor, noDataWidth = noDataWidth, opacity = opacity, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), width = width)
   
     __obj.asInstanceOf[SizeSchemeForPolyline]
   }

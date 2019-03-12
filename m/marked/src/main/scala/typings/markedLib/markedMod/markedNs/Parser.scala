@@ -16,13 +16,13 @@ trait Parser extends js.Object {
 object Parser {
   @scala.inline
   def apply(
-    next: js.Function0[Token],
-    parse: js.Function1[TokensList, java.lang.String],
-    parseText: js.Function0[java.lang.String],
-    peek: js.Function0[Token | scala.Double],
-    tok: js.Function0[java.lang.String]
+    next: () => Token,
+    parse: TokensList => java.lang.String,
+    parseText: () => java.lang.String,
+    peek: () => Token | scala.Double,
+    tok: () => java.lang.String
   ): Parser = {
-    val __obj = js.Dynamic.literal(next = next, parse = parse, parseText = parseText, peek = peek, tok = tok)
+    val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next), parse = js.Any.fromFunction1(parse), parseText = js.Any.fromFunction0(parseText), peek = js.Any.fromFunction0(peek), tok = js.Any.fromFunction0(tok))
   
     __obj.asInstanceOf[Parser]
   }

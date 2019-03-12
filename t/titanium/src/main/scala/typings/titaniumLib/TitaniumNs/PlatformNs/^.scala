@@ -60,7 +60,7 @@ object ^ extends js.Object {
   /**
   		 * Returns the DisplayCaps object.
   		 */
-  val displayCaps: titaniumLib.TitaniumNs.PlatformNs.DisplayCaps = js.native
+  val displayCaps: DisplayCaps = js.native
   /**
   		 * Applications's globally-unique ID (UUID).
   		 */
@@ -188,7 +188,7 @@ object ^ extends js.Object {
   /**
   		 * Gets the value of the <Titanium.Platform.displayCaps> property.
   		 */
-  def getDisplayCaps(): titaniumLib.TitaniumNs.PlatformNs.DisplayCaps = js.native
+  def getDisplayCaps(): DisplayCaps = js.native
   /**
   		 * Gets the value of the <Titanium.Platform.id> property.
   		 */

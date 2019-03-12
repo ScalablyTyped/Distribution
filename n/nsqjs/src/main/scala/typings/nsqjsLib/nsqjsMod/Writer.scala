@@ -18,11 +18,11 @@ class Writer protected ()
   @JSName("on")
   def on_closed(event: nsqjsLib.nsqjsLibStrings.closed, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_error(event: nsqjsLib.nsqjsLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def on_error(event: nsqjsLib.nsqjsLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_ready(event: nsqjsLib.nsqjsLibStrings.ready, listener: js.Function0[scala.Unit]): this.type = js.native
   def publish(topic: java.lang.String, msgs: js.Any): js.Any = js.native
-  def publish(topic: java.lang.String, msgs: js.Any, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): js.Any = js.native
+  def publish(topic: java.lang.String, msgs: js.Any, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): js.Any = js.native
 }
 
 /* static members */

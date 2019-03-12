@@ -17,13 +17,13 @@ trait DetoxJestAdapter extends js.Object {
 object DetoxJestAdapter {
   @scala.inline
   def apply(
-    afterAll: js.Function0[js.Promise[scala.Unit]],
-    beforeEach: js.Function0[js.Promise[scala.Unit]],
+    afterAll: () => js.Promise[scala.Unit],
+    beforeEach: () => js.Promise[scala.Unit],
     detox: detoxLib.detoxMod.Global.DetoxNs.Detox,
-    specDone: js.Function0[scala.Unit],
-    specStarted: js.Function0[scala.Unit]
+    specDone: () => scala.Unit,
+    specStarted: () => scala.Unit
   ): DetoxJestAdapter = {
-    val __obj = js.Dynamic.literal(afterAll = afterAll, beforeEach = beforeEach, detox = detox, specDone = specDone, specStarted = specStarted)
+    val __obj = js.Dynamic.literal(afterAll = js.Any.fromFunction0(afterAll), beforeEach = js.Any.fromFunction0(beforeEach), detox = detox, specDone = js.Any.fromFunction0(specDone), specStarted = js.Any.fromFunction0(specStarted))
   
     __obj.asInstanceOf[DetoxJestAdapter]
   }

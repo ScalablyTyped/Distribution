@@ -77,13 +77,10 @@ trait `type` extends js.Object {
 object `type` {
   @scala.inline
   def apply(
-    createPCClassRenderer: js.Function1[
-      typeCreatePCClassRendererParams, 
-      arcgisDashJsDashApiLib.IPromise[PCClassRendererResult]
-    ],
-    createRenderer: js.Function1[typeCreateRendererParams, arcgisDashJsDashApiLib.IPromise[typeRendererResult]]
+    createPCClassRenderer: typeCreatePCClassRendererParams => arcgisDashJsDashApiLib.IPromise[PCClassRendererResult],
+    createRenderer: typeCreateRendererParams => arcgisDashJsDashApiLib.IPromise[typeRendererResult]
   ): `type` = {
-    val __obj = js.Dynamic.literal(createPCClassRenderer = createPCClassRenderer, createRenderer = createRenderer)
+    val __obj = js.Dynamic.literal(createPCClassRenderer = js.Any.fromFunction1(createPCClassRenderer), createRenderer = js.Any.fromFunction1(createRenderer))
   
     __obj.asInstanceOf[`type`]
   }

@@ -13,10 +13,10 @@ trait XCodeNameQuery extends js.Object {
 object XCodeNameQuery {
   @scala.inline
   def apply(
-    getCodeNameForContainer: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, java.lang.String],
-    getCodeNameForObject: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, java.lang.String]
+    getCodeNameForContainer: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => java.lang.String,
+    getCodeNameForObject: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => java.lang.String
   ): XCodeNameQuery = {
-    val __obj = js.Dynamic.literal(getCodeNameForContainer = getCodeNameForContainer, getCodeNameForObject = getCodeNameForObject)
+    val __obj = js.Dynamic.literal(getCodeNameForContainer = js.Any.fromFunction1(getCodeNameForContainer), getCodeNameForObject = js.Any.fromFunction1(getCodeNameForObject))
   
     __obj.asInstanceOf[XCodeNameQuery]
   }

@@ -22,19 +22,19 @@ trait IControlChannelTrigger
 object IControlChannelTrigger {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
+    close: () => scala.Unit,
     controlChannelTriggerId: java.lang.String,
     currentKeepAliveIntervalInMinutes: scala.Double,
-    decreaseNetworkKeepAliveInterval: js.Function0[scala.Unit],
-    flushTransport: js.Function0[scala.Unit],
+    decreaseNetworkKeepAliveInterval: () => scala.Unit,
+    flushTransport: () => scala.Unit,
     keepAliveTrigger: winrtLib.WindowsNs.ApplicationModelNs.BackgroundNs.IBackgroundTrigger,
     pushNotificationTrigger: winrtLib.WindowsNs.ApplicationModelNs.BackgroundNs.IBackgroundTrigger,
     serverKeepAliveIntervalInMinutes: scala.Double,
     transportObject: js.Any,
-    usingTransport: js.Function1[js.Any, scala.Unit],
-    waitForPushEnabled: js.Function0[ControlChannelTriggerStatus]
+    usingTransport: js.Any => scala.Unit,
+    waitForPushEnabled: () => ControlChannelTriggerStatus
   ): IControlChannelTrigger = {
-    val __obj = js.Dynamic.literal(close = close, controlChannelTriggerId = controlChannelTriggerId, currentKeepAliveIntervalInMinutes = currentKeepAliveIntervalInMinutes, decreaseNetworkKeepAliveInterval = decreaseNetworkKeepAliveInterval, flushTransport = flushTransport, keepAliveTrigger = keepAliveTrigger, pushNotificationTrigger = pushNotificationTrigger, serverKeepAliveIntervalInMinutes = serverKeepAliveIntervalInMinutes, transportObject = transportObject, usingTransport = usingTransport, waitForPushEnabled = waitForPushEnabled)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), controlChannelTriggerId = controlChannelTriggerId, currentKeepAliveIntervalInMinutes = currentKeepAliveIntervalInMinutes, decreaseNetworkKeepAliveInterval = js.Any.fromFunction0(decreaseNetworkKeepAliveInterval), flushTransport = js.Any.fromFunction0(flushTransport), keepAliveTrigger = keepAliveTrigger, pushNotificationTrigger = pushNotificationTrigger, serverKeepAliveIntervalInMinutes = serverKeepAliveIntervalInMinutes, transportObject = transportObject, usingTransport = js.Any.fromFunction1(usingTransport), waitForPushEnabled = js.Any.fromFunction0(waitForPushEnabled))
   
     __obj.asInstanceOf[IControlChannelTrigger]
   }

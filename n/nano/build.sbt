@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "nano"
-version := "8.0.0-2b4265"
+version := "8.0.0-32aaa5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-197130",
-  "org.scalablytyped" %%% "debug" % "4.1-dt-20190214Z-cd6676",
-  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-e66f03",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190227Z-56553a",
-  "org.scalablytyped" %%% "lodash_dot_isempty" % "4.4-dt-20190214Z-e42092",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190307Z-7720a8",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-21f55d",
-  "org.scalablytyped" %%% "std" % "3.3-05be79",
-  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-3a715e")
+  "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-768261",
+  "org.scalablytyped" %%% "debug" % "4.1-dt-20190214Z-4b79e1",
+  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-696f06",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-601106",
+  "org.scalablytyped" %%% "lodash_dot_isempty" % "4.4-dt-20190214Z-e10c6f",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190311Z-8b4969",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-1a0420",
+  "org.scalablytyped" %%% "std" % "3.3-ec2942",
+  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-0cc572")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -38,10 +38,10 @@ object i18nextNodeFsBackEndOptions {
     addPath: java.lang.String,
     jsonIndent: scala.Double,
     loadPath: java.lang.String,
-    parse: js.Function1[/* data */ js.Any, _] = null
+    parse: /* data */ js.Any => _ = null
   ): i18nextNodeFsBackEndOptions = {
     val __obj = js.Dynamic.literal(addPath = addPath, jsonIndent = jsonIndent, loadPath = loadPath)
-    if (parse != null) __obj.updateDynamic("parse")(parse)
+    if (parse != null) __obj.updateDynamic("parse")(js.Any.fromFunction1(parse))
     __obj.asInstanceOf[i18nextNodeFsBackEndOptions]
   }
 }

@@ -48,8 +48,8 @@ trait IShellListing extends js.Object {
 object IShellListing {
   @scala.inline
   def apply(
-    ActivateListing: js.Function0[scala.Unit],
-    ActivateSelected: js.Function0[scala.Unit],
+    ActivateListing: () => scala.Unit,
+    ActivateSelected: () => scala.Unit,
     AutoFitAllColumns: scala.Boolean,
     AutoFitFirstColumn: scala.Boolean,
     ColumnHeadersVisible: scala.Boolean,
@@ -60,29 +60,29 @@ object IShellListing {
     GroupViewsAndFolders: scala.Boolean,
     IsActive: scala.Boolean,
     Items: IShellItems,
-    RefreshListing: js.Function3[scala.Boolean, scala.Boolean, scala.Boolean, scala.Unit],
-    RefreshListingAsync: js.Function0[scala.Unit],
-    RefreshObject: js.Function3[IObjID, scala.Boolean, scala.Boolean, scala.Unit],
-    RefreshSelectedObjects: js.Function2[scala.Boolean, scala.Boolean, scala.Unit],
-    SelectFolder: js.Function1[IFolderDef, scala.Unit],
-    SelectNextFolder: js.Function1[mfilesLib.MFilesNs.MFFolderDefType, scala.Boolean],
-    SelectNextObject: js.Function0[scala.Boolean],
-    SelectNextObjectFile: js.Function1[scala.Boolean, scala.Boolean],
-    SelectObjectFile: js.Function2[IObjVer, IFileVer, scala.Unit],
-    SelectObjectOrObjectFileVersion: js.Function1[IObjOrFileVer, scala.Unit],
-    SelectObjectVersion: js.Function1[IObjVer, scala.Unit],
-    SelectPrevFolder: js.Function1[mfilesLib.MFilesNs.MFFolderDefType, scala.Boolean],
-    SelectPrevObject: js.Function0[scala.Boolean],
-    SelectPrevObjectFile: js.Function1[scala.Boolean, scala.Boolean],
-    SetFolderSelectionStates: js.Function2[IFolderDefs, scala.Boolean, scala.Unit],
-    SetObjectOrObjectFileVersionSelectionStates: js.Function2[IObjOrFileVers, scala.Boolean, scala.Unit],
-    SetObjectVersionSelectionStates: js.Function2[IObjVers, scala.Boolean, scala.Unit],
-    SetTheme: js.Function1[ITheme, scala.Unit],
-    SetVirtualSelection: js.Function1[IObjOrFileVers, scala.Unit],
+    RefreshListing: (scala.Boolean, scala.Boolean, scala.Boolean) => scala.Unit,
+    RefreshListingAsync: () => scala.Unit,
+    RefreshObject: (IObjID, scala.Boolean, scala.Boolean) => scala.Unit,
+    RefreshSelectedObjects: (scala.Boolean, scala.Boolean) => scala.Unit,
+    SelectFolder: IFolderDef => scala.Unit,
+    SelectNextFolder: mfilesLib.MFilesNs.MFFolderDefType => scala.Boolean,
+    SelectNextObject: () => scala.Boolean,
+    SelectNextObjectFile: scala.Boolean => scala.Boolean,
+    SelectObjectFile: (IObjVer, IFileVer) => scala.Unit,
+    SelectObjectOrObjectFileVersion: IObjOrFileVer => scala.Unit,
+    SelectObjectVersion: IObjVer => scala.Unit,
+    SelectPrevFolder: mfilesLib.MFilesNs.MFFolderDefType => scala.Boolean,
+    SelectPrevObject: () => scala.Boolean,
+    SelectPrevObjectFile: scala.Boolean => scala.Boolean,
+    SetFolderSelectionStates: (IFolderDefs, scala.Boolean) => scala.Unit,
+    SetObjectOrObjectFileVersionSelectionStates: (IObjOrFileVers, scala.Boolean) => scala.Unit,
+    SetObjectVersionSelectionStates: (IObjVers, scala.Boolean) => scala.Unit,
+    SetTheme: ITheme => scala.Unit,
+    SetVirtualSelection: IObjOrFileVers => scala.Unit,
     SumOfResultCounts: scala.Double,
-    UnselectAll: js.Function0[scala.Unit]
+    UnselectAll: () => scala.Unit
   ): IShellListing = {
-    val __obj = js.Dynamic.literal(ActivateListing = ActivateListing, ActivateSelected = ActivateSelected, AutoFitAllColumns = AutoFitAllColumns, AutoFitFirstColumn = AutoFitFirstColumn, ColumnHeadersVisible = ColumnHeadersVisible, CurrentPath = CurrentPath, CurrentSelection = CurrentSelection, Events = Events, GroupObjectsByObjectType = GroupObjectsByObjectType, GroupViewsAndFolders = GroupViewsAndFolders, IsActive = IsActive, Items = Items, RefreshListing = RefreshListing, RefreshListingAsync = RefreshListingAsync, RefreshObject = RefreshObject, RefreshSelectedObjects = RefreshSelectedObjects, SelectFolder = SelectFolder, SelectNextFolder = SelectNextFolder, SelectNextObject = SelectNextObject, SelectNextObjectFile = SelectNextObjectFile, SelectObjectFile = SelectObjectFile, SelectObjectOrObjectFileVersion = SelectObjectOrObjectFileVersion, SelectObjectVersion = SelectObjectVersion, SelectPrevFolder = SelectPrevFolder, SelectPrevObject = SelectPrevObject, SelectPrevObjectFile = SelectPrevObjectFile, SetFolderSelectionStates = SetFolderSelectionStates, SetObjectOrObjectFileVersionSelectionStates = SetObjectOrObjectFileVersionSelectionStates, SetObjectVersionSelectionStates = SetObjectVersionSelectionStates, SetTheme = SetTheme, SetVirtualSelection = SetVirtualSelection, SumOfResultCounts = SumOfResultCounts, UnselectAll = UnselectAll)
+    val __obj = js.Dynamic.literal(ActivateListing = js.Any.fromFunction0(ActivateListing), ActivateSelected = js.Any.fromFunction0(ActivateSelected), AutoFitAllColumns = AutoFitAllColumns, AutoFitFirstColumn = AutoFitFirstColumn, ColumnHeadersVisible = ColumnHeadersVisible, CurrentPath = CurrentPath, CurrentSelection = CurrentSelection, Events = Events, GroupObjectsByObjectType = GroupObjectsByObjectType, GroupViewsAndFolders = GroupViewsAndFolders, IsActive = IsActive, Items = Items, RefreshListing = js.Any.fromFunction3(RefreshListing), RefreshListingAsync = js.Any.fromFunction0(RefreshListingAsync), RefreshObject = js.Any.fromFunction3(RefreshObject), RefreshSelectedObjects = js.Any.fromFunction2(RefreshSelectedObjects), SelectFolder = js.Any.fromFunction1(SelectFolder), SelectNextFolder = js.Any.fromFunction1(SelectNextFolder), SelectNextObject = js.Any.fromFunction0(SelectNextObject), SelectNextObjectFile = js.Any.fromFunction1(SelectNextObjectFile), SelectObjectFile = js.Any.fromFunction2(SelectObjectFile), SelectObjectOrObjectFileVersion = js.Any.fromFunction1(SelectObjectOrObjectFileVersion), SelectObjectVersion = js.Any.fromFunction1(SelectObjectVersion), SelectPrevFolder = js.Any.fromFunction1(SelectPrevFolder), SelectPrevObject = js.Any.fromFunction0(SelectPrevObject), SelectPrevObjectFile = js.Any.fromFunction1(SelectPrevObjectFile), SetFolderSelectionStates = js.Any.fromFunction2(SetFolderSelectionStates), SetObjectOrObjectFileVersionSelectionStates = js.Any.fromFunction2(SetObjectOrObjectFileVersionSelectionStates), SetObjectVersionSelectionStates = js.Any.fromFunction2(SetObjectVersionSelectionStates), SetTheme = js.Any.fromFunction1(SetTheme), SetVirtualSelection = js.Any.fromFunction1(SetVirtualSelection), SumOfResultCounts = SumOfResultCounts, UnselectAll = js.Any.fromFunction0(UnselectAll))
   
     __obj.asInstanceOf[IShellListing]
   }

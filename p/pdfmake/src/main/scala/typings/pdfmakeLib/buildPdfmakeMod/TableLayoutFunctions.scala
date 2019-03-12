@@ -20,26 +20,26 @@ trait TableLayoutFunctions extends js.Object {
 object TableLayoutFunctions {
   @scala.inline
   def apply(
-    fillColor: js.Function2[/* i */ scala.Double, /* node */ js.Any, java.lang.String] = null,
-    hLineColor: js.Function2[/* i */ scala.Double, /* node */ js.Any, java.lang.String] = null,
-    hLineWidth: js.Function2[/* i */ scala.Double, /* node */ js.Any, scala.Double] = null,
-    paddingBottom: js.Function2[/* i */ scala.Double, /* node */ js.Any, scala.Double] = null,
-    paddingLeft: js.Function2[/* i */ scala.Double, /* node */ js.Any, scala.Double] = null,
-    paddingRight: js.Function2[/* i */ scala.Double, /* node */ js.Any, scala.Double] = null,
-    paddingTop: js.Function2[/* i */ scala.Double, /* node */ js.Any, scala.Double] = null,
-    vLineColor: js.Function2[/* i */ scala.Double, /* node */ js.Any, java.lang.String] = null,
-    vLineWidth: js.Function2[/* i */ scala.Double, /* node */ js.Any, scala.Double] = null
+    fillColor: (/* i */ scala.Double, /* node */ js.Any) => java.lang.String = null,
+    hLineColor: (/* i */ scala.Double, /* node */ js.Any) => java.lang.String = null,
+    hLineWidth: (/* i */ scala.Double, /* node */ js.Any) => scala.Double = null,
+    paddingBottom: (/* i */ scala.Double, /* node */ js.Any) => scala.Double = null,
+    paddingLeft: (/* i */ scala.Double, /* node */ js.Any) => scala.Double = null,
+    paddingRight: (/* i */ scala.Double, /* node */ js.Any) => scala.Double = null,
+    paddingTop: (/* i */ scala.Double, /* node */ js.Any) => scala.Double = null,
+    vLineColor: (/* i */ scala.Double, /* node */ js.Any) => java.lang.String = null,
+    vLineWidth: (/* i */ scala.Double, /* node */ js.Any) => scala.Double = null
   ): TableLayoutFunctions = {
     val __obj = js.Dynamic.literal()
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
-    if (hLineColor != null) __obj.updateDynamic("hLineColor")(hLineColor)
-    if (hLineWidth != null) __obj.updateDynamic("hLineWidth")(hLineWidth)
-    if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom)
-    if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft)
-    if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight)
-    if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop)
-    if (vLineColor != null) __obj.updateDynamic("vLineColor")(vLineColor)
-    if (vLineWidth != null) __obj.updateDynamic("vLineWidth")(vLineWidth)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(js.Any.fromFunction2(fillColor))
+    if (hLineColor != null) __obj.updateDynamic("hLineColor")(js.Any.fromFunction2(hLineColor))
+    if (hLineWidth != null) __obj.updateDynamic("hLineWidth")(js.Any.fromFunction2(hLineWidth))
+    if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(js.Any.fromFunction2(paddingBottom))
+    if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(js.Any.fromFunction2(paddingLeft))
+    if (paddingRight != null) __obj.updateDynamic("paddingRight")(js.Any.fromFunction2(paddingRight))
+    if (paddingTop != null) __obj.updateDynamic("paddingTop")(js.Any.fromFunction2(paddingTop))
+    if (vLineColor != null) __obj.updateDynamic("vLineColor")(js.Any.fromFunction2(vLineColor))
+    if (vLineWidth != null) __obj.updateDynamic("vLineWidth")(js.Any.fromFunction2(vLineWidth))
     __obj.asInstanceOf[TableLayoutFunctions]
   }
 }

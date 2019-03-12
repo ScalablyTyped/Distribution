@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.Frame")
 @js.native
 class Frame protected () extends js.Object {
-  val Application: Application = js.native
-  var Borders: Borders = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
+  var Borders: activexDashWordLib.WordNs.Borders = js.native
   val Creator: scala.Double = js.native
   var Height: scala.Double = js.native
   var HeightRule: WdFrameSizeRule = js.native
@@ -17,10 +17,10 @@ class Frame protected () extends js.Object {
   var HorizontalPosition: scala.Double = js.native
   var LockAnchor: scala.Boolean = js.native
   val Parent: js.Any = js.native
-  val Range: Range = js.native
+  val Range: activexDashWordLib.WordNs.Range = js.native
   var RelativeHorizontalPosition: WdRelativeHorizontalPosition = js.native
   var RelativeVerticalPosition: WdRelativeVerticalPosition = js.native
-  val Shading: Shading = js.native
+  val Shading: activexDashWordLib.WordNs.Shading = js.native
   var TextWrap: scala.Boolean = js.native
   var VerticalDistanceFromText: scala.Double = js.native
   var VerticalPosition: scala.Double = js.native

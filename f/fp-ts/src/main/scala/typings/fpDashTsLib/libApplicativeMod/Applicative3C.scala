@@ -16,19 +16,11 @@ object Applicative3C {
     URI: F,
     _L: L,
     _U: U,
-    ap: js.Function2[
-      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Function1[js.Any, js.Any]], 
-      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
-    ],
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
-    ],
-    of: js.Function1[js.Any, fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]]
+    ap: (fpDashTsLib.libHKTMod.Type3[F, U, L, js.Function1[js.Any, js.Any]], fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]) => fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any],
+    map: (fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any],
+    of: js.Any => fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
   ): Applicative3C[F, U, L] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], ap = ap, map = map, of = of)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], ap = js.Any.fromFunction2(ap), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of))
   
     __obj.asInstanceOf[Applicative3C[F, U, L]]
   }

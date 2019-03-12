@@ -24,12 +24,12 @@ object XGroupsSupplier {
   @scala.inline
   def apply(
     Groups: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
-    acquire: js.Function0[scala.Unit],
-    getGroups: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getGroups: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XGroupsSupplier = {
-    val __obj = js.Dynamic.literal(Groups = Groups, acquire = acquire, getGroups = getGroups, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Groups = Groups, acquire = js.Any.fromFunction0(acquire), getGroups = js.Any.fromFunction0(getGroups), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XGroupsSupplier]
   }

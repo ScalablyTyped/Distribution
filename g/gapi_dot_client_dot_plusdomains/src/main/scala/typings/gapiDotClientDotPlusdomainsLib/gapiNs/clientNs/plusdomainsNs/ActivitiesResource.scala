@@ -17,20 +17,11 @@ trait ActivitiesResource extends js.Object {
 object ActivitiesResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotPlusdomainsLib.Anon_ActivityId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Activity]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotPlusdomainsLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Activity]
-    ],
-    list: js.Function1[
-      gapiDotClientDotPlusdomainsLib.Anon_AltCollection, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ActivityFeed]
-    ]
+    get: gapiDotClientDotPlusdomainsLib.Anon_ActivityId => gapiDotClientLib.gapiNs.clientNs.Request[Activity],
+    insert: gapiDotClientDotPlusdomainsLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Activity],
+    list: gapiDotClientDotPlusdomainsLib.Anon_AltCollection => gapiDotClientLib.gapiNs.clientNs.Request[ActivityFeed]
   ): ActivitiesResource = {
-    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ActivitiesResource]
   }

@@ -12,107 +12,40 @@ object ^ extends js.Object {
   val EventType: googleDashDriveDashRealtimeDashApiLib.Anon_ATTRIBUTECHANGED = js.native
   def debug(): scala.Unit = js.native
   def load(fileId: java.lang.String): scala.Unit = js.native
+  def load(fileId: java.lang.String, onLoaded: js.Function1[/* d */ Document, scala.Unit]): scala.Unit = js.native
   def load(
     fileId: java.lang.String,
-    onLoaded: js.Function1[
-      /* d */ googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Document, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def load(
-    fileId: java.lang.String,
-    onLoaded: js.Function1[
-      /* d */ googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Document, 
-      scala.Unit
-    ],
-    opt_initializerFn: js.Function1[
-      /* m */ googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Model, 
-      scala.Unit
-    ]
+    onLoaded: js.Function1[/* d */ Document, scala.Unit],
+    opt_initializerFn: js.Function1[/* m */ Model, scala.Unit]
   ): scala.Unit = js.native
   def load(
     fileId: java.lang.String,
-    onLoaded: js.Function1[
-      /* d */ googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Document, 
-      scala.Unit
-    ],
-    opt_initializerFn: js.Function1[
-      /* m */ googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Model, 
-      scala.Unit
-    ],
-    opt_errorFn: js.Function1[
-      /* e */ googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Error, 
-      scala.Unit
-    ]
+    onLoaded: js.Function1[/* d */ Document, scala.Unit],
+    opt_initializerFn: js.Function1[/* m */ Model, scala.Unit],
+    opt_errorFn: js.Function1[/* e */ Error, scala.Unit]
+  ): scala.Unit = js.native
+  def loadAppDataDocument(onLoaded: js.Function1[/* x */ Document, scala.Unit]): scala.Unit = js.native
+  def loadAppDataDocument(
+    onLoaded: js.Function1[/* x */ Document, scala.Unit],
+    opt_initializerFn: js.Function1[/* x */ Model, scala.Unit]
   ): scala.Unit = js.native
   def loadAppDataDocument(
-    onLoaded: js.Function1[
-      /* x */ googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Document, 
-      scala.Unit
-    ]
+    onLoaded: js.Function1[/* x */ Document, scala.Unit],
+    opt_initializerFn: js.Function1[/* x */ Model, scala.Unit],
+    opt_errorFn: js.Function1[/* e */ Error, scala.Unit]
   ): scala.Unit = js.native
-  def loadAppDataDocument(
-    onLoaded: js.Function1[
-      /* x */ googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Document, 
-      scala.Unit
-    ],
-    opt_initializerFn: js.Function1[
-      /* x */ googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Model, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def loadAppDataDocument(
-    onLoaded: js.Function1[
-      /* x */ googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Document, 
-      scala.Unit
-    ],
-    opt_initializerFn: js.Function1[
-      /* x */ googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Model, 
-      scala.Unit
-    ],
-    opt_errorFn: js.Function1[
-      /* e */ googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Error, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def loadFromJson(json: java.lang.String): googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Document = js.native
-  def loadFromJson(
-    json: java.lang.String,
-    opt_errorFn: js.Function1[
-      /* e */ googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Error, 
-      scala.Unit
-    ]
-  ): googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Document = js.native
-  def newInMemoryDocument(): googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Document = js.native
+  def loadFromJson(json: java.lang.String): Document = js.native
+  def loadFromJson(json: java.lang.String, opt_errorFn: js.Function1[/* e */ Error, scala.Unit]): Document = js.native
+  def newInMemoryDocument(): Document = js.native
+  def newInMemoryDocument(opt_onLoaded: js.Function1[/* d */ Document, scala.Unit]): Document = js.native
   def newInMemoryDocument(
-    opt_onLoaded: js.Function1[
-      /* d */ googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Document, 
-      scala.Unit
-    ]
-  ): googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Document = js.native
+    opt_onLoaded: js.Function1[/* d */ Document, scala.Unit],
+    opt_initializerFn: js.Function1[/* m */ Model, scala.Unit]
+  ): Document = js.native
   def newInMemoryDocument(
-    opt_onLoaded: js.Function1[
-      /* d */ googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Document, 
-      scala.Unit
-    ],
-    opt_initializerFn: js.Function1[
-      /* m */ googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Model, 
-      scala.Unit
-    ]
-  ): googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Document = js.native
-  def newInMemoryDocument(
-    opt_onLoaded: js.Function1[
-      /* d */ googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Document, 
-      scala.Unit
-    ],
-    opt_initializerFn: js.Function1[
-      /* m */ googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Model, 
-      scala.Unit
-    ],
-    opt_errorFn: js.Function1[
-      /* e */ googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Error, 
-      scala.Unit
-    ]
-  ): googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Document = js.native
+    opt_onLoaded: js.Function1[/* d */ Document, scala.Unit],
+    opt_initializerFn: js.Function1[/* m */ Model, scala.Unit],
+    opt_errorFn: js.Function1[/* e */ Error, scala.Unit]
+  ): Document = js.native
 }
 

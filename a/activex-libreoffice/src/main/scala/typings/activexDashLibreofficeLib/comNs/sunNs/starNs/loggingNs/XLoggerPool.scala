@@ -37,10 +37,10 @@ object XLoggerPool {
   @scala.inline
   def apply(
     DefaultLogger: XLogger,
-    getDefaultLogger: js.Function0[XLogger],
-    getNamedLogger: js.Function1[java.lang.String, XLogger]
+    getDefaultLogger: () => XLogger,
+    getNamedLogger: java.lang.String => XLogger
   ): XLoggerPool = {
-    val __obj = js.Dynamic.literal(DefaultLogger = DefaultLogger, getDefaultLogger = getDefaultLogger, getNamedLogger = getNamedLogger)
+    val __obj = js.Dynamic.literal(DefaultLogger = DefaultLogger, getDefaultLogger = js.Any.fromFunction0(getDefaultLogger), getNamedLogger = js.Any.fromFunction1(getNamedLogger))
   
     __obj.asInstanceOf[XLoggerPool]
   }

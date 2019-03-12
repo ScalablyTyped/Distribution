@@ -16,13 +16,13 @@ trait EventGuest extends js.Object {
 object EventGuest {
   @scala.inline
   def apply(
-    getAdditionalGuests: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getEmail: js.Function0[java.lang.String],
-    getGuestStatus: js.Function0[GuestStatus],
-    getName: js.Function0[java.lang.String],
-    getStatus: js.Function0[java.lang.String]
+    getAdditionalGuests: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getEmail: () => java.lang.String,
+    getGuestStatus: () => GuestStatus,
+    getName: () => java.lang.String,
+    getStatus: () => java.lang.String
   ): EventGuest = {
-    val __obj = js.Dynamic.literal(getAdditionalGuests = getAdditionalGuests, getEmail = getEmail, getGuestStatus = getGuestStatus, getName = getName, getStatus = getStatus)
+    val __obj = js.Dynamic.literal(getAdditionalGuests = js.Any.fromFunction0(getAdditionalGuests), getEmail = js.Any.fromFunction0(getEmail), getGuestStatus = js.Any.fromFunction0(getGuestStatus), getName = js.Any.fromFunction0(getName), getStatus = js.Any.fromFunction0(getStatus))
   
     __obj.asInstanceOf[EventGuest]
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WrapFormat protected () extends js.Object {
   var AllowOverlap: scala.Double = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
   var DistanceBottom: scala.Double = js.native
   var DistanceLeft: scala.Double = js.native

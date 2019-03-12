@@ -18,8 +18,8 @@ trait Registration extends js.Object {
 
 object Registration {
   @scala.inline
-  def apply(registerResolver: js.Function3[Container, js.Any, js.Function, Resolver]): Registration = {
-    val __obj = js.Dynamic.literal(registerResolver = registerResolver)
+  def apply(registerResolver: (Container, js.Any, js.Function) => Resolver): Registration = {
+    val __obj = js.Dynamic.literal(registerResolver = js.Any.fromFunction3(registerResolver))
   
     __obj.asInstanceOf[Registration]
   }

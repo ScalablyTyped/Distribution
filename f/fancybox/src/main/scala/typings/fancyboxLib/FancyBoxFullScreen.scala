@@ -16,13 +16,13 @@ trait FancyBoxFullScreen extends js.Object {
 object FancyBoxFullScreen {
   @scala.inline
   def apply(
-    enabled: js.Function0[scala.Boolean],
-    exit: js.Function0[scala.Unit],
-    isFullscreen: js.Function0[scala.Boolean],
-    request: js.Function1[stdLib.HTMLElement, scala.Unit],
-    toggle: js.Function1[stdLib.HTMLElement, scala.Unit]
+    enabled: () => scala.Boolean,
+    exit: () => scala.Unit,
+    isFullscreen: () => scala.Boolean,
+    request: stdLib.HTMLElement => scala.Unit,
+    toggle: stdLib.HTMLElement => scala.Unit
   ): FancyBoxFullScreen = {
-    val __obj = js.Dynamic.literal(enabled = enabled, exit = exit, isFullscreen = isFullscreen, request = request, toggle = toggle)
+    val __obj = js.Dynamic.literal(enabled = js.Any.fromFunction0(enabled), exit = js.Any.fromFunction0(exit), isFullscreen = js.Any.fromFunction0(isFullscreen), request = js.Any.fromFunction1(request), toggle = js.Any.fromFunction1(toggle))
   
     __obj.asInstanceOf[FancyBoxFullScreen]
   }

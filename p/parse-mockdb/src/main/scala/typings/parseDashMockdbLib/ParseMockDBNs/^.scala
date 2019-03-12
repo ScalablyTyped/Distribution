@@ -15,7 +15,7 @@ object ^ extends js.Object {
   ): T = js.native
   def registerHook(
     className: java.lang.String,
-    hookType: parseDashMockdbLib.ParseMockDBNs.HookType,
+    hookType: HookType,
     hookFn: js.Function1[
       /* request */ parseLib.ParseNs.CloudNs.BeforeSaveRequest, 
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Parse.IPromise<any> */ _

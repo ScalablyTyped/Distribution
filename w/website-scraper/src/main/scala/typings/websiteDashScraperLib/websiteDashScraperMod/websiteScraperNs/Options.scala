@@ -34,7 +34,7 @@ object Options {
     request: RequestOptions = null,
     sources: js.Array[Source] = null,
     subdirectories: js.Array[SubDirectory] = null,
-    urlFilter: js.Function1[/* url */ java.lang.String, scala.Boolean] = null
+    urlFilter: /* url */ java.lang.String => scala.Boolean = null
   ): Options = {
     val __obj = js.Dynamic.literal(directory = directory, urls = urls)
     if (defaultFilename != null) __obj.updateDynamic("defaultFilename")(defaultFilename)
@@ -46,7 +46,7 @@ object Options {
     if (request != null) __obj.updateDynamic("request")(request)
     if (sources != null) __obj.updateDynamic("sources")(sources)
     if (subdirectories != null) __obj.updateDynamic("subdirectories")(subdirectories)
-    if (urlFilter != null) __obj.updateDynamic("urlFilter")(urlFilter)
+    if (urlFilter != null) __obj.updateDynamic("urlFilter")(js.Any.fromFunction1(urlFilter))
     __obj.asInstanceOf[Options]
   }
 }

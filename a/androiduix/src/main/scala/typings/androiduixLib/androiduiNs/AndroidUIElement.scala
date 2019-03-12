@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class AndroidUIElement ()
   extends stdLib.HTMLDivElement {
-  var AndroidUI: AndroidUI = js.native
+  var AndroidUI: androiduixLib.androiduiNs.AndroidUI = js.native
   /* CompleteClass */
   override val assignedSlot: stdLib.HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */

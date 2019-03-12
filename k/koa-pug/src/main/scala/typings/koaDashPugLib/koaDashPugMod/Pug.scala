@@ -15,9 +15,9 @@ object Pug {
   @scala.inline
   def apply(
     locals: org.scalablytyped.runtime.StringDictionary[js.Any],
-    use: js.Function1[koaLib.koaMod.namespaced[_, js.Object], scala.Unit]
+    use: koaLib.koaMod.namespaced[_, js.Object] => scala.Unit
   ): Pug = {
-    val __obj = js.Dynamic.literal(locals = locals, use = use)
+    val __obj = js.Dynamic.literal(locals = locals, use = js.Any.fromFunction1(use))
   
     __obj.asInstanceOf[Pug]
   }

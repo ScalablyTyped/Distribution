@@ -26,13 +26,13 @@ object Members {
   @scala.inline
   def apply[T](
     count: scala.Double,
-    each: js.Function1[js.Function1[/* member */ Member[T], scala.Unit], scala.Unit],
-    get: js.Function1[java.lang.String, scala.Null | T],
+    each: js.Function1[/* member */ Member[T], scala.Unit] => scala.Unit,
+    get: java.lang.String => scala.Null | T,
     me: Member[T],
     members: org.scalablytyped.runtime.StringDictionary[Member[T]],
     myID: java.lang.String
   ): Members[T] = {
-    val __obj = js.Dynamic.literal(count = count, each = each, get = get, me = me, members = members, myID = myID)
+    val __obj = js.Dynamic.literal(count = count, each = js.Any.fromFunction1(each), get = js.Any.fromFunction1(get), me = me, members = members, myID = myID)
   
     __obj.asInstanceOf[Members[T]]
   }

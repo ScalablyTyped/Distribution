@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /** Fired when an alarm has elapsed. Useful for event pages. */
-  val onAlarm: chromeDashAppsLib.chromeNs.alarmsNs.AlarmEvent = js.native
+  val onAlarm: AlarmEvent = js.native
   /**
     * Clears the alarm with the given name.
     * @param name The name of the alarm to clear. Defaults to the empty string.
@@ -40,7 +40,7 @@ object ^ extends js.Object {
     * To help you debug your app, when you've loaded it unpacked, there's no limit to how often the alarm can fire.
     * @param alarmInfo Describes when the alarm should fire. The initial time must be specified by either when or delayInMinutes (but not both). If periodInMinutes is set, the alarm will repeat every periodInMinutes minutes after the initial event. If neither when or delayInMinutes is set for a repeating alarm, periodInMinutes is used as the default for delayInMinutes.
     */
-  def create(alarmInfo: chromeDashAppsLib.chromeNs.alarmsNs.AlarmCreateInfo): scala.Unit = js.native
+  def create(alarmInfo: AlarmCreateInfo): scala.Unit = js.native
   /**
     * Creates an alarm. Near the time(s) specified by alarmInfo, the onAlarm event is fired.
     * If there is another alarm with the same name (or no name if none is specified), it will be cancelled and replaced by this alarm.
@@ -51,30 +51,25 @@ object ^ extends js.Object {
     * @param name Optional name to identify this alarm. Defaults to the empty string.
     * @param alarmInfo Describes when the alarm should fire. The initial time must be specified by either when or delayInMinutes (but not both). If periodInMinutes is set, the alarm will repeat every periodInMinutes minutes after the initial event. If neither when or delayInMinutes is set for a repeating alarm, periodInMinutes is used as the default for delayInMinutes.
     */
-  def create(name: java.lang.String, alarmInfo: chromeDashAppsLib.chromeNs.alarmsNs.AlarmCreateInfo): scala.Unit = js.native
+  def create(name: java.lang.String, alarmInfo: AlarmCreateInfo): scala.Unit = js.native
   /**
     * Retrieves details about the specified alarm.
     * @param callback The callback parameter should be a function that looks like this:
     * @example function( Alarm alarm) {...};
     */
-  def get(callback: js.Function1[/* alarm */ chromeDashAppsLib.chromeNs.alarmsNs.Alarm, scala.Unit]): scala.Unit = js.native
+  def get(callback: js.Function1[/* alarm */ Alarm, scala.Unit]): scala.Unit = js.native
   /**
     * Retrieves details about the specified alarm.
     * @param name The name of the alarm to get. Defaults to the empty string.
     * @param callback The callback parameter should be a function that looks like this:
     * @example function( Alarm alarm) {...};
     */
-  def get(
-    name: java.lang.String,
-    callback: js.Function1[/* alarm */ chromeDashAppsLib.chromeNs.alarmsNs.Alarm, scala.Unit]
-  ): scala.Unit = js.native
+  def get(name: java.lang.String, callback: js.Function1[/* alarm */ Alarm, scala.Unit]): scala.Unit = js.native
   /**
     * Gets an array of all the alarms.
     * @param callback The callback parameter should be a function that looks like this:
     * @example function(array of Alarm alarms) {...};
     */
-  def getAll(
-    callback: js.Function1[/* alarms */ js.Array[chromeDashAppsLib.chromeNs.alarmsNs.Alarm], scala.Unit]
-  ): scala.Unit = js.native
+  def getAll(callback: js.Function1[/* alarms */ js.Array[Alarm], scala.Unit]): scala.Unit = js.native
 }
 

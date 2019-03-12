@@ -16,7 +16,7 @@ class OneWire ()
     deviceID: js.Array[scala.Double],
     numBytesToRead: scala.Double,
     cb: js.Function2[
-      /* err */ js.UndefOr[java.lang.String | nodeLib.Error], 
+      /* err */ js.UndefOr[java.lang.String | stdLib.Error], 
       /* data */ js.UndefOr[nodeLib.Buffer], 
       scala.Unit
     ]
@@ -24,14 +24,14 @@ class OneWire ()
   def readAllAvailable(
     deviceID: js.Array[scala.Double],
     cb: js.Function2[
-      /* err */ js.UndefOr[java.lang.String | nodeLib.Error], 
+      /* err */ js.UndefOr[java.lang.String | stdLib.Error], 
       /* data */ js.UndefOr[nodeLib.Buffer], 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def searchForDevices(
     cb: js.Function2[
-      /* readErr */ js.UndefOr[java.lang.String | nodeLib.Error], 
+      /* readErr */ js.UndefOr[java.lang.String | stdLib.Error], 
       /* devices */ js.UndefOr[js.Array[js.Array[scala.Double]]], 
       scala.Unit
     ]

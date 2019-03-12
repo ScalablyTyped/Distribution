@@ -19,16 +19,16 @@ trait IndieDelegate extends js.Object {
 object IndieDelegate {
   @scala.inline
   def apply(
-    clearMessages: js.Function0[scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    getMessages: js.Function0[js.Array[Message]],
+    clearMessages: () => scala.Unit,
+    dispose: () => scala.Unit,
+    getMessages: () => js.Array[Message],
     name: java.lang.String,
-    onDidDestroy: js.Function1[js.Function0[scala.Unit], atomLib.atomMod.Disposable],
-    onDidUpdate: js.Function1[js.Function0[scala.Unit], atomLib.atomMod.Disposable],
-    setAllMessages: js.Function1[js.Array[Message], scala.Unit],
-    setMessages: js.Function2[java.lang.String, js.Array[Message], scala.Unit]
+    onDidDestroy: js.Function0[scala.Unit] => atomLib.atomMod.Disposable,
+    onDidUpdate: js.Function0[scala.Unit] => atomLib.atomMod.Disposable,
+    setAllMessages: js.Array[Message] => scala.Unit,
+    setMessages: (java.lang.String, js.Array[Message]) => scala.Unit
   ): IndieDelegate = {
-    val __obj = js.Dynamic.literal(clearMessages = clearMessages, dispose = dispose, getMessages = getMessages, name = name, onDidDestroy = onDidDestroy, onDidUpdate = onDidUpdate, setAllMessages = setAllMessages, setMessages = setMessages)
+    val __obj = js.Dynamic.literal(clearMessages = js.Any.fromFunction0(clearMessages), dispose = js.Any.fromFunction0(dispose), getMessages = js.Any.fromFunction0(getMessages), name = name, onDidDestroy = js.Any.fromFunction1(onDidDestroy), onDidUpdate = js.Any.fromFunction1(onDidUpdate), setAllMessages = js.Any.fromFunction1(setAllMessages), setMessages = js.Any.fromFunction2(setMessages))
   
     __obj.asInstanceOf[IndieDelegate]
   }

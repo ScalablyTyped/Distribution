@@ -62,33 +62,33 @@ trait ASPxClientHiddenField extends ASPxClientControl {
 object ASPxClientHiddenField {
   @scala.inline
   def apply(
-    Add: js.Function2[java.lang.String, js.Object, scala.Unit],
-    AdjustControl: js.Function0[scala.Unit],
+    Add: (java.lang.String, js.Object) => scala.Unit,
+    AdjustControl: () => scala.Unit,
     BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientHiddenField]],
     CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientHiddenField]],
-    Clear: js.Function0[scala.Unit],
-    Contains: js.Function1[java.lang.String, scala.Boolean],
+    Clear: () => scala.Unit,
+    Contains: java.lang.String => scala.Boolean,
     EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientHiddenField]],
-    Get: js.Function1[java.lang.String, js.Object],
-    GetClientVisible: js.Function0[scala.Boolean],
-    GetHeight: js.Function0[scala.Double],
-    GetMainElement: js.Function0[js.Object],
-    GetParentControl: js.Function0[js.Object],
-    GetVisible: js.Function0[scala.Boolean],
-    GetWidth: js.Function0[scala.Double],
-    InCallback: js.Function0[scala.Boolean],
+    Get: java.lang.String => js.Object,
+    GetClientVisible: () => scala.Boolean,
+    GetHeight: () => scala.Double,
+    GetMainElement: () => js.Object,
+    GetParentControl: () => js.Object,
+    GetVisible: () => scala.Boolean,
+    GetWidth: () => scala.Double,
+    InCallback: () => scala.Boolean,
     Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
-    PerformCallback: js.Function1[java.lang.String, scala.Unit],
-    Remove: js.Function1[java.lang.String, scala.Unit],
-    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
-    Set: js.Function2[java.lang.String, js.Object, scala.Unit],
-    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetHeight: js.Function1[scala.Double, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetWidth: js.Function1[scala.Double, scala.Unit],
+    PerformCallback: java.lang.String => scala.Unit,
+    Remove: java.lang.String => scala.Unit,
+    SendMessageToAssistiveTechnology: java.lang.String => scala.Unit,
+    Set: (java.lang.String, js.Object) => scala.Unit,
+    SetClientVisible: scala.Boolean => scala.Unit,
+    SetHeight: scala.Double => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
+    SetWidth: scala.Double => scala.Unit,
     name: java.lang.String
   ): ASPxClientHiddenField = {
-    val __obj = js.Dynamic.literal(Add = Add, AdjustControl = AdjustControl, BeginCallback = BeginCallback, CallbackError = CallbackError, Clear = Clear, Contains = Contains, EndCallback = EndCallback, Get = Get, GetClientVisible = GetClientVisible, GetHeight = GetHeight, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, PerformCallback = PerformCallback, Remove = Remove, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, Set = Set, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetVisible = SetVisible, SetWidth = SetWidth, name = name)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), AdjustControl = js.Any.fromFunction0(AdjustControl), BeginCallback = BeginCallback, CallbackError = CallbackError, Clear = js.Any.fromFunction0(Clear), Contains = js.Any.fromFunction1(Contains), EndCallback = EndCallback, Get = js.Any.fromFunction1(Get), GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetHeight = js.Any.fromFunction0(GetHeight), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), InCallback = js.Any.fromFunction0(InCallback), Init = Init, PerformCallback = js.Any.fromFunction1(PerformCallback), Remove = js.Any.fromFunction1(Remove), SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), Set = js.Any.fromFunction2(Set), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetHeight = js.Any.fromFunction1(SetHeight), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), name = name)
   
     __obj.asInstanceOf[ASPxClientHiddenField]
   }

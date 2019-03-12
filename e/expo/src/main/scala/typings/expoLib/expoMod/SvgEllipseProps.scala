@@ -27,10 +27,10 @@ object SvgEllipseProps {
     fillOpacity: scala.Double | java.lang.String = null,
     fillRule: expoLib.expoLibStrings.nonzero | expoLib.expoLibStrings.evenodd = null,
     id: java.lang.String = null,
-    onLongPress: js.Function0[_] = null,
-    onPress: js.Function0[_] = null,
-    onPressIn: js.Function0[_] = null,
-    onPressOut: js.Function0[_] = null,
+    onLongPress: () => _ = null,
+    onPress: () => _ = null,
+    onPressIn: () => _ = null,
+    onPressOut: () => _ = null,
     opacity: scala.Double | java.lang.String = null,
     origin: scala.Double | java.lang.String = null,
     originX: scala.Double | java.lang.String = null,
@@ -58,10 +58,10 @@ object SvgEllipseProps {
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
-    if (onPressIn != null) __obj.updateDynamic("onPressIn")(onPressIn)
-    if (onPressOut != null) __obj.updateDynamic("onPressOut")(onPressOut)
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction0(onLongPress))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
+    if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction0(onPressIn))
+    if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction0(onPressOut))
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (originX != null) __obj.updateDynamic("originX")(originX.asInstanceOf[js.Any])

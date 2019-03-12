@@ -16,13 +16,13 @@ trait NavigationDescriptor[Params] extends js.Object {
 object NavigationDescriptor {
   @scala.inline
   def apply[Params](
-    getComponent: js.Function0[reactLib.reactMod.ReactNs.ComponentType[js.Object]],
+    getComponent: () => reactLib.reactMod.ReactNs.ComponentType[js.Object],
     key: java.lang.String,
     navigation: NavigationScreenProp[_, NavigationParams],
     options: NavigationScreenOptions,
     state: NavigationLeafRoute[Params] | NavigationStateRoute[Params]
   ): NavigationDescriptor[Params] = {
-    val __obj = js.Dynamic.literal(getComponent = getComponent, key = key, navigation = navigation, options = options, state = state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getComponent = js.Any.fromFunction0(getComponent), key = key, navigation = navigation, options = options, state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NavigationDescriptor[Params]]
   }

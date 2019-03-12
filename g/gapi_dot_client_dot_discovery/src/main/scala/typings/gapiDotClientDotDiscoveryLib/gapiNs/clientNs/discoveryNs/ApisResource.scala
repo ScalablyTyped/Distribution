@@ -15,16 +15,10 @@ trait ApisResource extends js.Object {
 object ApisResource {
   @scala.inline
   def apply(
-    getRest: js.Function1[
-      gapiDotClientDotDiscoveryLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RestDescription]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDiscoveryLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DirectoryList]
-    ]
+    getRest: gapiDotClientDotDiscoveryLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[RestDescription],
+    list: gapiDotClientDotDiscoveryLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[DirectoryList]
   ): ApisResource = {
-    val __obj = js.Dynamic.literal(getRest = getRest, list = list)
+    val __obj = js.Dynamic.literal(getRest = js.Any.fromFunction1(getRest), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ApisResource]
   }

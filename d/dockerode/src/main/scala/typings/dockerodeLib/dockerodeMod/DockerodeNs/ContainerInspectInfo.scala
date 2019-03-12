@@ -13,7 +13,7 @@ trait ContainerInspectInfo extends js.Object {
   var Driver: java.lang.String
   var ExecIDs: js.UndefOr[js.Any] = js.undefined
   var GraphDriver: dockerodeLib.Anon_Data
-  var HostConfig: HostConfig
+  var HostConfig: dockerodeLib.dockerodeMod.DockerodeNs.HostConfig
   var HostnamePath: java.lang.String
   var HostsPath: java.lang.String
   var Id: java.lang.String

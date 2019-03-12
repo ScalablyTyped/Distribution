@@ -18,17 +18,14 @@ object IWorkspace {
     baseUri: winrtLib.WindowsNs.FoundationNs.Uri,
     collections: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ResourceCollection],
     elementExtensions: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[winrtLib.WindowsNs.WebNs.SyndicationNs.ISyndicationNode],
-    getXmlDocument: js.Function1[
-      winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationFormat, 
-      winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument
-    ],
+    getXmlDocument: winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationFormat => winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument,
     language: java.lang.String,
     nodeName: java.lang.String,
     nodeNamespace: java.lang.String,
     nodeValue: java.lang.String,
     title: winrtLib.WindowsNs.WebNs.SyndicationNs.ISyndicationText
   ): IWorkspace = {
-    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions, baseUri = baseUri, collections = collections, elementExtensions = elementExtensions, getXmlDocument = getXmlDocument, language = language, nodeName = nodeName, nodeNamespace = nodeNamespace, nodeValue = nodeValue, title = title)
+    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions, baseUri = baseUri, collections = collections, elementExtensions = elementExtensions, getXmlDocument = js.Any.fromFunction1(getXmlDocument), language = language, nodeName = nodeName, nodeNamespace = nodeNamespace, nodeValue = nodeValue, title = title)
   
     __obj.asInstanceOf[IWorkspace]
   }

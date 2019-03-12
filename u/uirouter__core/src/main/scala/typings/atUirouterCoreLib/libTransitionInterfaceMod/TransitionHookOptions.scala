@@ -19,7 +19,7 @@ object TransitionHookOptions {
   @scala.inline
   def apply(
     bind: js.Any = null,
-    current: js.Function0[atUirouterCoreLib.libTransitionTransitionMod.Transition] = null,
+    current: () => atUirouterCoreLib.libTransitionTransitionMod.Transition = null,
     hookType: java.lang.String = null,
     stateHook: js.UndefOr[scala.Boolean] = js.undefined,
     target: js.Any = null,
@@ -28,7 +28,7 @@ object TransitionHookOptions {
   ): TransitionHookOptions = {
     val __obj = js.Dynamic.literal()
     if (bind != null) __obj.updateDynamic("bind")(bind)
-    if (current != null) __obj.updateDynamic("current")(current)
+    if (current != null) __obj.updateDynamic("current")(js.Any.fromFunction0(current))
     if (hookType != null) __obj.updateDynamic("hookType")(hookType)
     if (!js.isUndefined(stateHook)) __obj.updateDynamic("stateHook")(stateHook)
     if (target != null) __obj.updateDynamic("target")(target)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Waterline extends js.Object {
   var collections: js.Any
-  def initialize(config: Config, cb: js.Function2[/* err */ nodeLib.Error, /* ontology */ Ontology, _]): js.Any
+  def initialize(config: Config, cb: js.Function2[/* err */ stdLib.Error, /* ontology */ Ontology, _]): js.Any
   def loadCollection(collection: CollectionClass): scala.Unit
 }
 
@@ -15,10 +15,10 @@ object Waterline {
   @scala.inline
   def apply(
     collections: js.Any,
-    initialize: js.Function2[Config, js.Function2[/* err */ nodeLib.Error, /* ontology */ Ontology, _], js.Any],
-    loadCollection: js.Function1[CollectionClass, scala.Unit]
+    initialize: (Config, js.Function2[/* err */ stdLib.Error, /* ontology */ Ontology, _]) => js.Any,
+    loadCollection: CollectionClass => scala.Unit
   ): Waterline = {
-    val __obj = js.Dynamic.literal(collections = collections, initialize = initialize, loadCollection = loadCollection)
+    val __obj = js.Dynamic.literal(collections = collections, initialize = js.Any.fromFunction2(initialize), loadCollection = js.Any.fromFunction1(loadCollection))
   
     __obj.asInstanceOf[Waterline]
   }

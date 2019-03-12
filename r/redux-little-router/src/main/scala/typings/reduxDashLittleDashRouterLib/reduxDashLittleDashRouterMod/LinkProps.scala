@@ -10,7 +10,7 @@ trait LinkProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var href: Href
   var location: js.UndefOr[Location] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* event */ reactLib.Event, _]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* event */ stdLib.Event, _]] = js.undefined
   var persistQuery: js.UndefOr[scala.Boolean] = js.undefined
   var push: js.UndefOr[
     js.Function2[
@@ -38,18 +38,10 @@ object LinkProps {
     activeProps: ObjectLiteral[_] = null,
     className: java.lang.String = null,
     location: Location = null,
-    onClick: js.Function1[/* event */ reactLib.Event, _] = null,
+    onClick: /* event */ stdLib.Event => _ = null,
     persistQuery: js.UndefOr[scala.Boolean] = js.undefined,
-    push: js.Function2[
-      /* href */ Href, 
-      /* options */ LocationOptions, 
-      reduxDashLittleDashRouterLib.Anon_Payload
-    ] = null,
-    replace: js.Function2[
-      /* href */ Href, 
-      /* options */ LocationOptions, 
-      reduxDashLittleDashRouterLib.Anon_Payload
-    ] = null,
+    push: (/* href */ Href, /* options */ LocationOptions) => reduxDashLittleDashRouterLib.Anon_Payload = null,
+    replace: (/* href */ Href, /* options */ LocationOptions) => reduxDashLittleDashRouterLib.Anon_Payload = null,
     replaceState: js.UndefOr[scala.Boolean] = js.undefined,
     style: ObjectLiteral[_] = null,
     target: java.lang.String = null
@@ -58,10 +50,10 @@ object LinkProps {
     if (activeProps != null) __obj.updateDynamic("activeProps")(activeProps)
     if (className != null) __obj.updateDynamic("className")(className)
     if (location != null) __obj.updateDynamic("location")(location)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (!js.isUndefined(persistQuery)) __obj.updateDynamic("persistQuery")(persistQuery)
-    if (push != null) __obj.updateDynamic("push")(push)
-    if (replace != null) __obj.updateDynamic("replace")(replace)
+    if (push != null) __obj.updateDynamic("push")(js.Any.fromFunction2(push))
+    if (replace != null) __obj.updateDynamic("replace")(js.Any.fromFunction2(replace))
     if (!js.isUndefined(replaceState)) __obj.updateDynamic("replaceState")(replaceState)
     if (style != null) __obj.updateDynamic("style")(style)
     if (target != null) __obj.updateDynamic("target")(target)

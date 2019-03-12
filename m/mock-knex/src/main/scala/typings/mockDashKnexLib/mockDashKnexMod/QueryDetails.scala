@@ -15,7 +15,7 @@ trait QueryDetails
     *
     * @param error The Error, string or instance of Error, which represents why the result was rejected
     */
-  def reject(error: nodeLib.Error): scala.Unit = js.native
+  def reject(error: stdLib.Error): scala.Unit = js.native
   /**
     * Function that needs to be called to mock database query result for knex.
     *

@@ -15,7 +15,7 @@ trait XCsvLogFormatter extends XLogFormatter {
     * Defines the names of the additional columns this defaults to only one row titled "message". if this is set to more than one column, the messages need
     * to be preformatted using `formatMultiColumn`
     */
-  var Columnnames: activexDashInteropLib.SafeArray[java.lang.String]
+  var Columnnames: stdLib.SafeArray[java.lang.String]
   /** Defines if the EventNo should be logged */
   var LogEventNo: scala.Boolean
   /** Defines if the Source should be logged */
@@ -36,22 +36,19 @@ trait XCsvLogFormatter extends XLogFormatter {
 object XCsvLogFormatter {
   @scala.inline
   def apply(
-    Columnnames: activexDashInteropLib.SafeArray[java.lang.String],
+    Columnnames: stdLib.SafeArray[java.lang.String],
     Head: java.lang.String,
     LogEventNo: scala.Boolean,
     LogSource: scala.Boolean,
     LogThread: scala.Boolean,
     LogTimestamp: scala.Boolean,
     Tail: java.lang.String,
-    format: js.Function1[LogRecord, java.lang.String],
-    formatMultiColumn: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      java.lang.String
-    ],
-    getHead: js.Function0[java.lang.String],
-    getTail: js.Function0[java.lang.String]
+    format: LogRecord => java.lang.String,
+    formatMultiColumn: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => java.lang.String,
+    getHead: () => java.lang.String,
+    getTail: () => java.lang.String
   ): XCsvLogFormatter = {
-    val __obj = js.Dynamic.literal(Columnnames = Columnnames, Head = Head, LogEventNo = LogEventNo, LogSource = LogSource, LogThread = LogThread, LogTimestamp = LogTimestamp, Tail = Tail, format = format, formatMultiColumn = formatMultiColumn, getHead = getHead, getTail = getTail)
+    val __obj = js.Dynamic.literal(Columnnames = Columnnames, Head = Head, LogEventNo = LogEventNo, LogSource = LogSource, LogThread = LogThread, LogTimestamp = LogTimestamp, Tail = Tail, format = js.Any.fromFunction1(format), formatMultiColumn = js.Any.fromFunction1(formatMultiColumn), getHead = js.Any.fromFunction0(getHead), getTail = js.Any.fromFunction0(getTail))
   
     __obj.asInstanceOf[XCsvLogFormatter]
   }

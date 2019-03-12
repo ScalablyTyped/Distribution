@@ -72,8 +72,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    beforePan: js.Function2[/* oldPan */ Point, /* newPan */ Point, scala.Unit | scala.Boolean | PointModifier] = null,
-    beforeZoom: js.Function2[/* oldScale */ scala.Double, /* newScale */ scala.Double, scala.Unit | scala.Boolean] = null,
+    beforePan: (/* oldPan */ Point, /* newPan */ Point) => scala.Unit | scala.Boolean | PointModifier = null,
+    beforeZoom: (/* oldScale */ scala.Double, /* newScale */ scala.Double) => scala.Unit | scala.Boolean = null,
     center: js.UndefOr[scala.Boolean] = js.undefined,
     contain: js.UndefOr[scala.Boolean] = js.undefined,
     controlIconsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -84,9 +84,9 @@ object Options {
     maxZoom: scala.Int | scala.Double = null,
     minZoom: scala.Int | scala.Double = null,
     mouseWheelZoomEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    onPan: js.Function1[/* newPan */ Point, scala.Unit] = null,
-    onUpdatedCTM: js.Function1[/* newCTM */ stdLib.SVGMatrix, scala.Unit] = null,
-    onZoom: js.Function1[/* newScale */ scala.Double, scala.Unit] = null,
+    onPan: /* newPan */ Point => scala.Unit = null,
+    onUpdatedCTM: /* newCTM */ stdLib.SVGMatrix => scala.Unit = null,
+    onZoom: /* newScale */ scala.Double => scala.Unit = null,
     panEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     preventMouseEventsDefault: js.UndefOr[scala.Boolean] = js.undefined,
     refreshRate: scala.Double | svgDashPanDashZoomLib.svgDashPanDashZoomLibStrings.auto = null,
@@ -95,8 +95,8 @@ object Options {
     zoomScaleSensitivity: scala.Int | scala.Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (beforePan != null) __obj.updateDynamic("beforePan")(beforePan)
-    if (beforeZoom != null) __obj.updateDynamic("beforeZoom")(beforeZoom)
+    if (beforePan != null) __obj.updateDynamic("beforePan")(js.Any.fromFunction2(beforePan))
+    if (beforeZoom != null) __obj.updateDynamic("beforeZoom")(js.Any.fromFunction2(beforeZoom))
     if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
     if (!js.isUndefined(contain)) __obj.updateDynamic("contain")(contain)
     if (!js.isUndefined(controlIconsEnabled)) __obj.updateDynamic("controlIconsEnabled")(controlIconsEnabled)
@@ -107,9 +107,9 @@ object Options {
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (!js.isUndefined(mouseWheelZoomEnabled)) __obj.updateDynamic("mouseWheelZoomEnabled")(mouseWheelZoomEnabled)
-    if (onPan != null) __obj.updateDynamic("onPan")(onPan)
-    if (onUpdatedCTM != null) __obj.updateDynamic("onUpdatedCTM")(onUpdatedCTM)
-    if (onZoom != null) __obj.updateDynamic("onZoom")(onZoom)
+    if (onPan != null) __obj.updateDynamic("onPan")(js.Any.fromFunction1(onPan))
+    if (onUpdatedCTM != null) __obj.updateDynamic("onUpdatedCTM")(js.Any.fromFunction1(onUpdatedCTM))
+    if (onZoom != null) __obj.updateDynamic("onZoom")(js.Any.fromFunction1(onZoom))
     if (!js.isUndefined(panEnabled)) __obj.updateDynamic("panEnabled")(panEnabled)
     if (!js.isUndefined(preventMouseEventsDefault)) __obj.updateDynamic("preventMouseEventsDefault")(preventMouseEventsDefault)
     if (refreshRate != null) __obj.updateDynamic("refreshRate")(refreshRate.asInstanceOf[js.Any])

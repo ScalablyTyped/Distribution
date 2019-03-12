@@ -12,7 +12,7 @@ trait Configuration extends js.Object {
   var level: js.UndefOr[java.lang.String] = js.undefined
   var maxBatchingTime: js.UndefOr[scala.Double] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var onError: js.UndefOr[js.Function1[/* e */ nodeLib.Error, scala.Unit]] = js.undefined
+  var onError: js.UndefOr[js.Function1[/* e */ stdLib.Error, scala.Unit]] = js.undefined
   var reemitErrorEvents: js.UndefOr[scala.Boolean] = js.undefined
   var serverUrl: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -26,7 +26,7 @@ object Configuration {
     level: java.lang.String = null,
     maxBatchingTime: scala.Int | scala.Double = null,
     name: java.lang.String = null,
-    onError: js.Function1[/* e */ nodeLib.Error, scala.Unit] = null,
+    onError: /* e */ stdLib.Error => scala.Unit = null,
     reemitErrorEvents: js.UndefOr[scala.Boolean] = js.undefined,
     serverUrl: java.lang.String = null
   ): Configuration = {
@@ -37,7 +37,7 @@ object Configuration {
     if (level != null) __obj.updateDynamic("level")(level)
     if (maxBatchingTime != null) __obj.updateDynamic("maxBatchingTime")(maxBatchingTime.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (!js.isUndefined(reemitErrorEvents)) __obj.updateDynamic("reemitErrorEvents")(reemitErrorEvents)
     if (serverUrl != null) __obj.updateDynamic("serverUrl")(serverUrl)
     __obj.asInstanceOf[Configuration]

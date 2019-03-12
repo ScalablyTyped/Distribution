@@ -18,15 +18,15 @@ trait StackFrame extends js.Object {
 object StackFrame {
   @scala.inline
   def apply(
-    getColumnNumber: js.Function0[scala.Double],
-    getFileName: js.Function0[java.lang.String],
-    getFunctionName: js.Function0[java.lang.String],
-    getLineNumber: js.Function0[scala.Double],
-    getMethodName: js.Function0[java.lang.String],
-    getTypeName: js.Function0[java.lang.String],
-    isNative: js.Function0[scala.Boolean]
+    getColumnNumber: () => scala.Double,
+    getFileName: () => java.lang.String,
+    getFunctionName: () => java.lang.String,
+    getLineNumber: () => scala.Double,
+    getMethodName: () => java.lang.String,
+    getTypeName: () => java.lang.String,
+    isNative: () => scala.Boolean
   ): StackFrame = {
-    val __obj = js.Dynamic.literal(getColumnNumber = getColumnNumber, getFileName = getFileName, getFunctionName = getFunctionName, getLineNumber = getLineNumber, getMethodName = getMethodName, getTypeName = getTypeName, isNative = isNative)
+    val __obj = js.Dynamic.literal(getColumnNumber = js.Any.fromFunction0(getColumnNumber), getFileName = js.Any.fromFunction0(getFileName), getFunctionName = js.Any.fromFunction0(getFunctionName), getLineNumber = js.Any.fromFunction0(getLineNumber), getMethodName = js.Any.fromFunction0(getMethodName), getTypeName = js.Any.fromFunction0(getTypeName), isNative = js.Any.fromFunction0(isNative))
   
     __obj.asInstanceOf[StackFrame]
   }

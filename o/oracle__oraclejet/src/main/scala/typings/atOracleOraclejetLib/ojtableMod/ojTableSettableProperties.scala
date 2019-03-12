@@ -63,16 +63,13 @@ object ojTableSettableProperties {
     columns: js.Array[atOracleOraclejetLib.Anon_AutoClassName[K, D]] = null,
     currentRow: atOracleOraclejetLib.ojtableMod.ojTableNs.CurrentRow[K] = null,
     data: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null,
-    rowRenderer: js.Function1[
-      /* context */ atOracleOraclejetLib.ojtableMod.ojTableNs.RowRendererContext[K, D], 
-      java.lang.String | stdLib.HTMLElement | scala.Unit
-    ] = null
+    rowRenderer: /* context */ atOracleOraclejetLib.ojtableMod.ojTableNs.RowRendererContext[K, D] => java.lang.String | stdLib.HTMLElement | scala.Unit = null
   ): ojTableSettableProperties[K, D] = {
     val __obj = js.Dynamic.literal(accessibility = accessibility, as = as, columnsDefault = columnsDefault, display = display.asInstanceOf[js.Any], dnd = dnd, editMode = editMode.asInstanceOf[js.Any], firstSelectedRow = firstSelectedRow, horizontalGridVisible = horizontalGridVisible.asInstanceOf[js.Any], scrollPolicy = scrollPolicy.asInstanceOf[js.Any], scrollPolicyOptions = scrollPolicyOptions, scrollPosition = scrollPosition, selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode, selectionRequired = selectionRequired, translations = translations, verticalGridVisible = verticalGridVisible.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns)
     if (currentRow != null) __obj.updateDynamic("currentRow")(currentRow)
     if (data != null) __obj.updateDynamic("data")(data)
-    if (rowRenderer != null) __obj.updateDynamic("rowRenderer")(rowRenderer)
+    if (rowRenderer != null) __obj.updateDynamic("rowRenderer")(js.Any.fromFunction1(rowRenderer))
     __obj.asInstanceOf[ojTableSettableProperties[K, D]]
   }
 }

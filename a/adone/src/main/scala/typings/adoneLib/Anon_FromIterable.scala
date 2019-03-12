@@ -15,9 +15,9 @@ trait Anon_FromIterable
   /**
     * Creates a queue object from the given iterable
     */
-  def from[T](iterable: nodeLib.Iterable[T]): adoneLib.adoneNs.collectionNs.PriorityQueue[T] = js.native
+  def from[T](iterable: stdLib.Iterable[T]): adoneLib.adoneNs.collectionNs.PriorityQueue[T] = js.native
   def from[T](
-    iterable: nodeLib.Iterable[T],
+    iterable: stdLib.Iterable[T],
     options: adoneLib.adoneNs.collectionNs.INs.PriorityQueueNs.ConstructorOptions[T]
   ): adoneLib.adoneNs.collectionNs.PriorityQueue[T] = js.native
 }

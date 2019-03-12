@@ -17,17 +17,14 @@ trait Transaction extends js.Object {
 object Transaction {
   @scala.inline
   def apply(
-    attach: js.Function1[lovefieldLib.lovefieldMod.lfNs.queryNs.Builder, js.Promise[js.Array[js.Object]]],
-    begin: js.Function1[js.Array[lovefieldLib.lovefieldMod.lfNs.schemaNs.Table], js.Promise[scala.Unit]],
-    commit: js.Function0[js.Promise[scala.Unit]],
-    exec: js.Function1[
-      js.Array[lovefieldLib.lovefieldMod.lfNs.queryNs.Builder], 
-      js.Promise[js.Array[js.Array[js.Object]]]
-    ],
-    rollback: js.Function0[js.Promise[scala.Unit]],
-    stats: js.Function0[TransactionStats]
+    attach: lovefieldLib.lovefieldMod.lfNs.queryNs.Builder => js.Promise[js.Array[js.Object]],
+    begin: js.Array[lovefieldLib.lovefieldMod.lfNs.schemaNs.Table] => js.Promise[scala.Unit],
+    commit: () => js.Promise[scala.Unit],
+    exec: js.Array[lovefieldLib.lovefieldMod.lfNs.queryNs.Builder] => js.Promise[js.Array[js.Array[js.Object]]],
+    rollback: () => js.Promise[scala.Unit],
+    stats: () => TransactionStats
   ): Transaction = {
-    val __obj = js.Dynamic.literal(attach = attach, begin = begin, commit = commit, exec = exec, rollback = rollback, stats = stats)
+    val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach), begin = js.Any.fromFunction1(begin), commit = js.Any.fromFunction0(commit), exec = js.Any.fromFunction1(exec), rollback = js.Any.fromFunction0(rollback), stats = js.Any.fromFunction0(stats))
   
     __obj.asInstanceOf[Transaction]
   }

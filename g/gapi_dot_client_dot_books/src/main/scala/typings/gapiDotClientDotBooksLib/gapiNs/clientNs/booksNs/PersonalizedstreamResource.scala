@@ -13,12 +13,9 @@ trait PersonalizedstreamResource extends js.Object {
 object PersonalizedstreamResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltFieldsKeyLocaleMaxAllowedMaturityRating, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Discoveryclusters]
-    ]
+    get: gapiDotClientDotBooksLib.Anon_AltFieldsKeyLocaleMaxAllowedMaturityRating => gapiDotClientLib.gapiNs.clientNs.Request[Discoveryclusters]
   ): PersonalizedstreamResource = {
-    val __obj = js.Dynamic.literal(get = get)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[PersonalizedstreamResource]
   }

@@ -33,21 +33,18 @@ object ^ extends js.Object {
     stepBuffer: plottableLib.buildSrcDrawersCanvasBufferMod.CanvasBuffer
   ): plottableLib.buildSrcDrawersCanvasDrawerMod.CanvasDrawStep = js.native
   def renderArea(
-    context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D,
+    context: stdLib.CanvasRenderingContext2D,
     d3Area: d3DashShapeLib.d3DashShapeMod.Area[_],
     data: js.Array[_],
     style: plottableLib.buildSrcDrawersCanvasDrawerMod.IFillStyle with plottableLib.buildSrcDrawersCanvasDrawerMod.IStrokeStyle
   ): scala.Unit = js.native
   def renderLine(
-    context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D,
+    context: stdLib.CanvasRenderingContext2D,
     d3Line: d3DashShapeLib.d3DashShapeMod.Line[_],
     data: js.Array[_],
     style: plottableLib.buildSrcDrawersCanvasDrawerMod.IStrokeStyle
   ): scala.Unit = js.native
-  def renderPathWithStyle(
-    context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D,
-    style: stdLib.Record[java.lang.String, _]
-  ): scala.Unit = js.native
+  def renderPathWithStyle(context: stdLib.CanvasRenderingContext2D, style: stdLib.Record[java.lang.String, _]): scala.Unit = js.native
   def resolveAttributes(
     projector: plottableLib.buildSrcCoreInterfacesMod.AttributeToAppliedProjector,
     attrKeys: js.Array[java.lang.String],

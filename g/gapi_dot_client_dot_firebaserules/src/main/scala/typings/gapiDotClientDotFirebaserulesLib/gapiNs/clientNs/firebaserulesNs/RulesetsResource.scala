@@ -36,24 +36,12 @@ trait RulesetsResource extends js.Object {
 object RulesetsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotFirebaserulesLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Ruleset]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotFirebaserulesLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotFirebaserulesLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Ruleset]
-    ],
-    list: js.Function1[
-      gapiDotClientDotFirebaserulesLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListRulesetsResponse]
-    ]
+    create: gapiDotClientDotFirebaserulesLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Ruleset],
+    delete: gapiDotClientDotFirebaserulesLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotFirebaserulesLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Ruleset],
+    list: gapiDotClientDotFirebaserulesLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ListRulesetsResponse]
   ): RulesetsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[RulesetsResource]
   }

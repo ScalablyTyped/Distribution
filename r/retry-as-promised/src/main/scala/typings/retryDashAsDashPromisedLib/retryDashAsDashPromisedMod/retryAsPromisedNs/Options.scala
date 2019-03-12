@@ -33,12 +33,7 @@ object Options {
     `match`: js.Array[MatchOption] | MatchOption = null,
     max: scala.Int | scala.Double = null,
     name: java.lang.String = null,
-    report: js.Function3[
-      /* message */ java.lang.String, 
-      /* obj */ Options, 
-      /* err */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
+    report: (/* message */ java.lang.String, /* obj */ Options, /* err */ js.UndefOr[js.Any]) => scala.Unit = null,
     timeout: scala.Int | scala.Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
@@ -48,7 +43,7 @@ object Options {
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (report != null) __obj.updateDynamic("report")(report)
+    if (report != null) __obj.updateDynamic("report")(js.Any.fromFunction3(report))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

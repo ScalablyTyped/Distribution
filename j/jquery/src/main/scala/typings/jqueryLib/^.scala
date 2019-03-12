@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   @JSName("$")
-  val $: jqueryLib.JQueryStatic = js.native
-  val jQuery: jqueryLib.JQueryStatic = js.native
+  val $: JQueryStatic = js.native
+  val jQuery: JQueryStatic = js.native
 }
 

@@ -11,8 +11,8 @@ trait Anon_AllowIncomplete extends js.Object {
 
 object Anon_AllowIncomplete {
   @scala.inline
-  def apply(check: js.Function2[nodeLib.Buffer, scala.Boolean, scala.Boolean]): Anon_AllowIncomplete = {
-    val __obj = js.Dynamic.literal(check = check)
+  def apply(check: (nodeLib.Buffer, scala.Boolean) => scala.Boolean): Anon_AllowIncomplete = {
+    val __obj = js.Dynamic.literal(check = js.Any.fromFunction2(check))
   
     __obj.asInstanceOf[Anon_AllowIncomplete]
   }

@@ -11,7 +11,7 @@ class RPCProcess () extends js.Object {
   def this(hasNameTimeout: RPCProcessOptions) = this()
   val name: java.lang.String = js.native
   var proc: js.UndefOr[nodeLib.childUnderscoreProcessMod.ChildProcess] = js.native
-  var responseProcedures: nodeLib.Map[java.lang.String, js.Function1[/* args */ js.Array[_], js.Promise[_]]] = js.native
+  var responseProcedures: stdLib.Map[java.lang.String, js.Function1[/* args */ js.Array[_], js.Promise[_]]] = js.native
   val timeout: scala.Double = js.native
   def call[R /* <: RPCResponse[_, js.Object] */](
     procedure: /* import warning: ImportType.apply Failed type conversion: R['procedure'] */ js.Any,

@@ -27,12 +27,12 @@ trait Matchers[T] extends js.Object {
 object Matchers {
   @scala.inline
   def apply[T](
-    toBeRejected: js.Function0[scala.Boolean],
-    toBeRejectedWith: js.Function1[js.Any, scala.Boolean],
-    toBeResolved: js.Function0[scala.Boolean],
-    toBeResolvedWith: js.Function1[js.Any, scala.Boolean]
+    toBeRejected: () => scala.Boolean,
+    toBeRejectedWith: js.Any => scala.Boolean,
+    toBeResolved: () => scala.Boolean,
+    toBeResolvedWith: js.Any => scala.Boolean
   ): Matchers[T] = {
-    val __obj = js.Dynamic.literal(toBeRejected = toBeRejected, toBeRejectedWith = toBeRejectedWith, toBeResolved = toBeResolved, toBeResolvedWith = toBeResolvedWith)
+    val __obj = js.Dynamic.literal(toBeRejected = js.Any.fromFunction0(toBeRejected), toBeRejectedWith = js.Any.fromFunction1(toBeRejectedWith), toBeResolved = js.Any.fromFunction0(toBeResolved), toBeResolvedWith = js.Any.fromFunction1(toBeResolvedWith))
   
     __obj.asInstanceOf[Matchers[T]]
   }

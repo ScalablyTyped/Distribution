@@ -13,11 +13,11 @@ trait BodyScrollOptions extends js.Object {
 object BodyScrollOptions {
   @scala.inline
   def apply(
-    allowTouchMove: js.Function1[/* el */ stdLib.HTMLElement, scala.Unit] = null,
+    allowTouchMove: /* el */ stdLib.HTMLElement => scala.Unit = null,
     reserveScrollBarGap: js.UndefOr[scala.Boolean] = js.undefined
   ): BodyScrollOptions = {
     val __obj = js.Dynamic.literal()
-    if (allowTouchMove != null) __obj.updateDynamic("allowTouchMove")(allowTouchMove)
+    if (allowTouchMove != null) __obj.updateDynamic("allowTouchMove")(js.Any.fromFunction1(allowTouchMove))
     if (!js.isUndefined(reserveScrollBarGap)) __obj.updateDynamic("reserveScrollBarGap")(reserveScrollBarGap)
     __obj.asInstanceOf[BodyScrollOptions]
   }

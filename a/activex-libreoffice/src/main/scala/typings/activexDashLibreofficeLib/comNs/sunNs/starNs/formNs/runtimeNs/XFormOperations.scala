@@ -127,26 +127,22 @@ object XFormOperations {
     Cursor: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRowSet,
     FeatureInvalidation: XFeatureInvalidation,
     UpdateCursor: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSetUpdate,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    commitCurrentControl: js.Function0[scala.Boolean],
-    commitCurrentRecord: js.Function1[js.Array[scala.Boolean], scala.Boolean],
-    dispose: js.Function0[scala.Unit],
-    execute: js.Function1[scala.Double, scala.Unit],
-    executeWithArguments: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
-      scala.Unit
-    ],
-    getState: js.Function1[scala.Double, FeatureState],
-    isEnabled: js.Function1[scala.Double, scala.Boolean],
-    isInsertionRow: js.Function0[scala.Boolean],
-    isModifiedRow: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    commitCurrentControl: () => scala.Boolean,
+    commitCurrentRecord: js.Array[scala.Boolean] => scala.Boolean,
+    dispose: () => scala.Unit,
+    execute: scala.Double => scala.Unit,
+    executeWithArguments: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]) => scala.Unit,
+    getState: scala.Double => FeatureState,
+    isEnabled: scala.Double => scala.Boolean,
+    isInsertionRow: () => scala.Boolean,
+    isModifiedRow: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit
   ): XFormOperations = {
-    val __obj = js.Dynamic.literal(Controller = Controller, Cursor = Cursor, FeatureInvalidation = FeatureInvalidation, UpdateCursor = UpdateCursor, acquire = acquire, addEventListener = addEventListener, commitCurrentControl = commitCurrentControl, commitCurrentRecord = commitCurrentRecord, dispose = dispose, execute = execute, executeWithArguments = executeWithArguments, getState = getState, isEnabled = isEnabled, isInsertionRow = isInsertionRow, isModifiedRow = isModifiedRow, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(Controller = Controller, Cursor = Cursor, FeatureInvalidation = FeatureInvalidation, UpdateCursor = UpdateCursor, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), commitCurrentControl = js.Any.fromFunction0(commitCurrentControl), commitCurrentRecord = js.Any.fromFunction1(commitCurrentRecord), dispose = js.Any.fromFunction0(dispose), execute = js.Any.fromFunction1(execute), executeWithArguments = js.Any.fromFunction2(executeWithArguments), getState = js.Any.fromFunction1(getState), isEnabled = js.Any.fromFunction1(isEnabled), isInsertionRow = js.Any.fromFunction0(isInsertionRow), isModifiedRow = js.Any.fromFunction0(isModifiedRow), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener))
   
     __obj.asInstanceOf[XFormOperations]
   }

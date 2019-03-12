@@ -12,8 +12,8 @@ trait PhononSidePanelComponent extends js.Object {
 
 object PhononSidePanelComponent {
   @scala.inline
-  def apply(close: js.Function0[scala.Unit], open: js.Function0[scala.Unit]): PhononSidePanelComponent = {
-    val __obj = js.Dynamic.literal(close = close, open = open)
+  def apply(close: () => scala.Unit, open: () => scala.Unit): PhononSidePanelComponent = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), open = js.Any.fromFunction0(open))
   
     __obj.asInstanceOf[PhononSidePanelComponent]
   }

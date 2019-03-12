@@ -25,18 +25,18 @@ object FancyBoxSlideShow {
   @scala.inline
   def apply(
     $progress: JQuery,
-    clear: js.Function0[scala.Unit],
-    init: js.Function0[scala.Unit],
+    clear: () => scala.Unit,
+    init: () => scala.Unit,
     instance: FancyBoxInstance,
     isActive: scala.Boolean,
-    set: js.Function1[scala.Boolean, scala.Unit],
-    start: js.Function0[scala.Unit],
-    stop: js.Function0[scala.Unit],
-    toggle: js.Function0[scala.Unit],
+    set: scala.Boolean => scala.Unit,
+    start: () => scala.Unit,
+    stop: () => scala.Unit,
+    toggle: () => scala.Unit,
     $button: JQuery = null,
     timer: scala.Int | scala.Double = null
   ): FancyBoxSlideShow = {
-    val __obj = js.Dynamic.literal($progress = $progress, clear = clear, init = init, instance = instance, isActive = isActive, set = set, start = start, stop = stop, toggle = toggle)
+    val __obj = js.Dynamic.literal($progress = $progress, clear = js.Any.fromFunction0(clear), init = js.Any.fromFunction0(init), instance = instance, isActive = isActive, set = js.Any.fromFunction1(set), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), toggle = js.Any.fromFunction0(toggle))
     if ($button != null) __obj.updateDynamic("$button")($button)
     if (timer != null) __obj.updateDynamic("timer")(timer.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyBoxSlideShow]

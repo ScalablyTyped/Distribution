@@ -26,16 +26,13 @@ trait InteractionHandler
 object InteractionHandler {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    handle: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionRequest, 
-      scala.Unit
-    ],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    handle: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionRequest => scala.Unit,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): InteractionHandler = {
-    val __obj = js.Dynamic.literal(acquire = acquire, handle = handle, initialize = initialize, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), handle = js.Any.fromFunction1(handle), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[InteractionHandler]
   }

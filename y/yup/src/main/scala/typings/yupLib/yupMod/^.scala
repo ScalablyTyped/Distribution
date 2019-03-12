@@ -8,26 +8,26 @@ import scala.scalajs.js.annotation._
 @JSImport("yup", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val array: yupLib.yupMod.ArraySchemaConstructor = js.native
-  val bool: yupLib.yupMod.BooleanSchemaConstructor = js.native
-  val boolean: yupLib.yupMod.BooleanSchemaConstructor = js.native
-  val date: yupLib.yupMod.DateSchemaConstructor = js.native
-  val mixed: yupLib.yupMod.MixedSchemaConstructor = js.native
-  val number: yupLib.yupMod.NumberSchemaConstructor = js.native
-  val `object`: yupLib.yupMod.ObjectSchemaConstructor = js.native
-  val string: yupLib.yupMod.StringSchemaConstructor = js.native
-  def addMethod[T /* <: yupLib.yupMod.Schema[_] */](
-    schemaCtor: yupLib.yupMod.AnySchemaConstructor,
+  val array: ArraySchemaConstructor = js.native
+  val bool: BooleanSchemaConstructor = js.native
+  val boolean: BooleanSchemaConstructor = js.native
+  val date: DateSchemaConstructor = js.native
+  val mixed: MixedSchemaConstructor = js.native
+  val number: NumberSchemaConstructor = js.native
+  val `object`: ObjectSchemaConstructor = js.native
+  val string: StringSchemaConstructor = js.native
+  def addMethod[T /* <: Schema[_] */](
+    schemaCtor: AnySchemaConstructor,
     name: java.lang.String,
     method: js.ThisFunction1[/* this */ T, /* repeated */ js.Any, T]
   ): scala.Unit = js.native
   def isSchema(obj: js.Any): /* is yup.yup.Schema<any> */ scala.Boolean = js.native
-  def `lazy`[T](fn: js.Function1[/* value */ T, yupLib.yupMod.Schema[T]]): yupLib.yupMod.Lazy = js.native
-  def reach[T](schema: yupLib.yupMod.Schema[T], path: java.lang.String): yupLib.yupMod.Schema[T] = js.native
-  def reach[T](schema: yupLib.yupMod.Schema[T], path: java.lang.String, value: js.Any): yupLib.yupMod.Schema[T] = js.native
-  def reach[T](schema: yupLib.yupMod.Schema[T], path: java.lang.String, value: js.Any, context: js.Any): yupLib.yupMod.Schema[T] = js.native
-  def ref(path: java.lang.String): yupLib.yupMod.Ref = js.native
-  def ref(path: java.lang.String, options: yupLib.Anon_ContextPrefix): yupLib.yupMod.Ref = js.native
-  def setLocale(customLocale: yupLib.yupMod.LocaleObject): scala.Unit = js.native
+  def `lazy`[T](fn: js.Function1[/* value */ T, Schema[T]]): Lazy = js.native
+  def reach[T](schema: Schema[T], path: java.lang.String): Schema[T] = js.native
+  def reach[T](schema: Schema[T], path: java.lang.String, value: js.Any): Schema[T] = js.native
+  def reach[T](schema: Schema[T], path: java.lang.String, value: js.Any, context: js.Any): Schema[T] = js.native
+  def ref(path: java.lang.String): Ref = js.native
+  def ref(path: java.lang.String, options: yupLib.Anon_ContextPrefix): Ref = js.native
+  def setLocale(customLocale: LocaleObject): scala.Unit = js.native
 }
 

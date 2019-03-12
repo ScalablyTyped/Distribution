@@ -25,12 +25,12 @@ trait DataProvider[T /* <: SlickData */] extends js.Object {
 object DataProvider {
   @scala.inline
   def apply[T /* <: SlickData */](
-    getItem: js.Function1[scala.Double, T],
-    getLength: js.Function0[scala.Double],
-    getItemMetadata: js.Function1[/* index */ scala.Double, RowMetadata[T]] = null
+    getItem: scala.Double => T,
+    getLength: () => scala.Double,
+    getItemMetadata: /* index */ scala.Double => RowMetadata[T] = null
   ): DataProvider[T] = {
-    val __obj = js.Dynamic.literal(getItem = getItem, getLength = getLength)
-    if (getItemMetadata != null) __obj.updateDynamic("getItemMetadata")(getItemMetadata)
+    val __obj = js.Dynamic.literal(getItem = js.Any.fromFunction1(getItem), getLength = js.Any.fromFunction0(getLength))
+    if (getItemMetadata != null) __obj.updateDynamic("getItemMetadata")(js.Any.fromFunction1(getItemMetadata))
     __obj.asInstanceOf[DataProvider[T]]
   }
 }

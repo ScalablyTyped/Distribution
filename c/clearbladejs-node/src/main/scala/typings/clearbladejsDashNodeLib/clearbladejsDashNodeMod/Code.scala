@@ -21,12 +21,12 @@ object Code {
     URI: java.lang.String,
     URIPrefix: java.lang.String,
     callTimeout: scala.Double,
-    execute: js.Function3[java.lang.String, js.Object, CbCallback, scala.Unit],
+    execute: (java.lang.String, js.Object, CbCallback) => scala.Unit,
     systemKey: java.lang.String,
     systemSecret: java.lang.String,
     user: APIUser
   ): Code = {
-    val __obj = js.Dynamic.literal(URI = URI, URIPrefix = URIPrefix, callTimeout = callTimeout, execute = execute, systemKey = systemKey, systemSecret = systemSecret, user = user)
+    val __obj = js.Dynamic.literal(URI = URI, URIPrefix = URIPrefix, callTimeout = callTimeout, execute = js.Any.fromFunction3(execute), systemKey = systemKey, systemSecret = systemSecret, user = user)
   
     __obj.asInstanceOf[Code]
   }

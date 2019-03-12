@@ -65,21 +65,18 @@ trait XCellRangesQuery
 object XCellRangesQuery {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryColumnDifferences: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, XSheetCellRanges],
-    queryContentCells: js.Function1[scala.Double, XSheetCellRanges],
-    queryEmptyCells: js.Function0[XSheetCellRanges],
-    queryFormulaCells: js.Function1[scala.Double, XSheetCellRanges],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    queryIntersection: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, 
-      XSheetCellRanges
-    ],
-    queryRowDifferences: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, XSheetCellRanges],
-    queryVisibleCells: js.Function0[XSheetCellRanges],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    queryColumnDifferences: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress => XSheetCellRanges,
+    queryContentCells: scala.Double => XSheetCellRanges,
+    queryEmptyCells: () => XSheetCellRanges,
+    queryFormulaCells: scala.Double => XSheetCellRanges,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    queryIntersection: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress => XSheetCellRanges,
+    queryRowDifferences: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress => XSheetCellRanges,
+    queryVisibleCells: () => XSheetCellRanges,
+    release: () => scala.Unit
   ): XCellRangesQuery = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryColumnDifferences = queryColumnDifferences, queryContentCells = queryContentCells, queryEmptyCells = queryEmptyCells, queryFormulaCells = queryFormulaCells, queryInterface = queryInterface, queryIntersection = queryIntersection, queryRowDifferences = queryRowDifferences, queryVisibleCells = queryVisibleCells, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryColumnDifferences = js.Any.fromFunction1(queryColumnDifferences), queryContentCells = js.Any.fromFunction1(queryContentCells), queryEmptyCells = js.Any.fromFunction0(queryEmptyCells), queryFormulaCells = js.Any.fromFunction1(queryFormulaCells), queryInterface = js.Any.fromFunction1(queryInterface), queryIntersection = js.Any.fromFunction1(queryIntersection), queryRowDifferences = js.Any.fromFunction1(queryRowDifferences), queryVisibleCells = js.Any.fromFunction0(queryVisibleCells), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCellRangesQuery]
   }

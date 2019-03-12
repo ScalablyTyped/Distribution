@@ -25,19 +25,19 @@ trait Channel extends js.Object {
 object Channel {
   @scala.inline
   def apply(
-    addListener: js.Function2[atStorybookChannelsLib.EventName, atStorybookChannelsLib.Listener, scala.Unit],
-    addPeerListener: js.Function2[atStorybookChannelsLib.EventName, atStorybookChannelsLib.Listener, scala.Unit],
-    emit: js.Function2[atStorybookChannelsLib.EventName, js.Any, scala.Unit],
-    eventNames: js.Function0[js.Array[atStorybookChannelsLib.EventName]],
-    listenerCount: js.Function1[atStorybookChannelsLib.EventName, scala.Double],
-    listeners: js.Function1[atStorybookChannelsLib.EventName, js.Array[atStorybookChannelsLib.Listener]],
-    on: js.Function2[atStorybookChannelsLib.EventName, atStorybookChannelsLib.Listener, scala.Unit],
-    once: js.Function2[atStorybookChannelsLib.EventName, atStorybookChannelsLib.Listener, scala.Unit],
-    prependListener: js.Function2[atStorybookChannelsLib.EventName, atStorybookChannelsLib.Listener, scala.Unit],
-    removeAllListeners: js.Function1[atStorybookChannelsLib.EventName, scala.Unit],
-    removeListener: js.Function2[atStorybookChannelsLib.EventName, atStorybookChannelsLib.Listener, scala.Unit]
+    addListener: (atStorybookChannelsLib.EventName, atStorybookChannelsLib.Listener) => scala.Unit,
+    addPeerListener: (atStorybookChannelsLib.EventName, atStorybookChannelsLib.Listener) => scala.Unit,
+    emit: (atStorybookChannelsLib.EventName, js.Any) => scala.Unit,
+    eventNames: () => js.Array[atStorybookChannelsLib.EventName],
+    listenerCount: atStorybookChannelsLib.EventName => scala.Double,
+    listeners: atStorybookChannelsLib.EventName => js.Array[atStorybookChannelsLib.Listener],
+    on: (atStorybookChannelsLib.EventName, atStorybookChannelsLib.Listener) => scala.Unit,
+    once: (atStorybookChannelsLib.EventName, atStorybookChannelsLib.Listener) => scala.Unit,
+    prependListener: (atStorybookChannelsLib.EventName, atStorybookChannelsLib.Listener) => scala.Unit,
+    removeAllListeners: atStorybookChannelsLib.EventName => scala.Unit,
+    removeListener: (atStorybookChannelsLib.EventName, atStorybookChannelsLib.Listener) => scala.Unit
   ): Channel = {
-    val __obj = js.Dynamic.literal(addListener = addListener, addPeerListener = addPeerListener, emit = emit, eventNames = eventNames, listenerCount = listenerCount, listeners = listeners, on = on, once = once, prependListener = prependListener, removeAllListeners = removeAllListeners, removeListener = removeListener)
+    val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), addPeerListener = js.Any.fromFunction2(addPeerListener), emit = js.Any.fromFunction2(emit), eventNames = js.Any.fromFunction0(eventNames), listenerCount = js.Any.fromFunction1(listenerCount), listeners = js.Any.fromFunction1(listeners), on = js.Any.fromFunction2(on), once = js.Any.fromFunction2(once), prependListener = js.Any.fromFunction2(prependListener), removeAllListeners = js.Any.fromFunction1(removeAllListeners), removeListener = js.Any.fromFunction2(removeListener))
   
     __obj.asInstanceOf[Channel]
   }

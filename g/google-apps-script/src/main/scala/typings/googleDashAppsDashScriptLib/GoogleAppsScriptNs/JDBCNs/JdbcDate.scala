@@ -21,18 +21,18 @@ trait JdbcDate extends js.Object {
 object JdbcDate {
   @scala.inline
   def apply(
-    after: js.Function1[JdbcDate, scala.Boolean],
-    before: js.Function1[JdbcDate, scala.Boolean],
-    getDate: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getMonth: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getTime: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getYear: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    setDate: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit],
-    setMonth: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit],
-    setTime: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit],
-    setYear: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit]
+    after: JdbcDate => scala.Boolean,
+    before: JdbcDate => scala.Boolean,
+    getDate: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getMonth: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getTime: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getYear: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    setDate: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => scala.Unit,
+    setMonth: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => scala.Unit,
+    setTime: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => scala.Unit,
+    setYear: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => scala.Unit
   ): JdbcDate = {
-    val __obj = js.Dynamic.literal(after = after, before = before, getDate = getDate, getMonth = getMonth, getTime = getTime, getYear = getYear, setDate = setDate, setMonth = setMonth, setTime = setTime, setYear = setYear)
+    val __obj = js.Dynamic.literal(after = js.Any.fromFunction1(after), before = js.Any.fromFunction1(before), getDate = js.Any.fromFunction0(getDate), getMonth = js.Any.fromFunction0(getMonth), getTime = js.Any.fromFunction0(getTime), getYear = js.Any.fromFunction0(getYear), setDate = js.Any.fromFunction1(setDate), setMonth = js.Any.fromFunction1(setMonth), setTime = js.Any.fromFunction1(setTime), setYear = js.Any.fromFunction1(setYear))
   
     __obj.asInstanceOf[JdbcDate]
   }

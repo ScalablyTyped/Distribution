@@ -62,21 +62,21 @@ object XXPathObject {
     ObjectType: XPathObjectType,
     Short: scala.Double,
     String: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getBoolean: js.Function0[scala.Boolean],
-    getByte: js.Function0[scala.Double],
-    getDouble: js.Function0[scala.Double],
-    getFloat: js.Function0[scala.Double],
-    getHyper: js.Function0[scala.Double],
-    getLong: js.Function0[scala.Double],
-    getNodeList: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNodeList],
-    getObjectType: js.Function0[XPathObjectType],
-    getShort: js.Function0[scala.Double],
-    getString: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getBoolean: () => scala.Boolean,
+    getByte: () => scala.Double,
+    getDouble: () => scala.Double,
+    getFloat: () => scala.Double,
+    getHyper: () => scala.Double,
+    getLong: () => scala.Double,
+    getNodeList: () => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNodeList,
+    getObjectType: () => XPathObjectType,
+    getShort: () => scala.Double,
+    getString: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XXPathObject = {
-    val __obj = js.Dynamic.literal(Boolean = Boolean, Byte = Byte, Double = Double, Float = Float, Hyper = Hyper, Long = Long, NodeList = NodeList, ObjectType = ObjectType, Short = Short, String = String, acquire = acquire, getBoolean = getBoolean, getByte = getByte, getDouble = getDouble, getFloat = getFloat, getHyper = getHyper, getLong = getLong, getNodeList = getNodeList, getObjectType = getObjectType, getShort = getShort, getString = getString, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Boolean = Boolean, Byte = Byte, Double = Double, Float = Float, Hyper = Hyper, Long = Long, NodeList = NodeList, ObjectType = ObjectType, Short = Short, String = String, acquire = js.Any.fromFunction0(acquire), getBoolean = js.Any.fromFunction0(getBoolean), getByte = js.Any.fromFunction0(getByte), getDouble = js.Any.fromFunction0(getDouble), getFloat = js.Any.fromFunction0(getFloat), getHyper = js.Any.fromFunction0(getHyper), getLong = js.Any.fromFunction0(getLong), getNodeList = js.Any.fromFunction0(getNodeList), getObjectType = js.Any.fromFunction0(getObjectType), getShort = js.Any.fromFunction0(getShort), getString = js.Any.fromFunction0(getString), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XXPathObject]
   }

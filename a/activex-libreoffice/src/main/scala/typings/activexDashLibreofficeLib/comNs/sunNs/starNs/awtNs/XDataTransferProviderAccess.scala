@@ -37,27 +37,15 @@ trait XDataTransferProviderAccess
 object XDataTransferProviderAccess {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getClipboard: js.Function1[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.clipboardNs.XClipboard
-    ],
-    getDragGestureRecognizer: js.Function1[
-      XWindow, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.dndNs.XDragGestureRecognizer
-    ],
-    getDragSource: js.Function1[
-      XWindow, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.dndNs.XDragSource
-    ],
-    getDropTarget: js.Function1[
-      XWindow, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.dndNs.XDropTarget
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getClipboard: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.clipboardNs.XClipboard,
+    getDragGestureRecognizer: XWindow => activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.dndNs.XDragGestureRecognizer,
+    getDragSource: XWindow => activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.dndNs.XDragSource,
+    getDropTarget: XWindow => activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.dndNs.XDropTarget,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDataTransferProviderAccess = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getClipboard = getClipboard, getDragGestureRecognizer = getDragGestureRecognizer, getDragSource = getDragSource, getDropTarget = getDropTarget, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getClipboard = js.Any.fromFunction1(getClipboard), getDragGestureRecognizer = js.Any.fromFunction1(getDragGestureRecognizer), getDragSource = js.Any.fromFunction1(getDragSource), getDropTarget = js.Any.fromFunction1(getDropTarget), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDataTransferProviderAccess]
   }

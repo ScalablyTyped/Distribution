@@ -17,11 +17,11 @@ object LineContentProps {
   def apply(
     data: js.Array[reactDashLazylogLib.Anon_Text],
     number: scala.Double,
-    formatPart: js.Function1[/* text */ java.lang.String, reactLib.reactMod.ReactNs.ReactNode] = null,
+    formatPart: /* text */ java.lang.String => reactLib.reactMod.ReactNs.ReactNode = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): LineContentProps = {
     val __obj = js.Dynamic.literal(data = data, number = number)
-    if (formatPart != null) __obj.updateDynamic("formatPart")(formatPart)
+    if (formatPart != null) __obj.updateDynamic("formatPart")(js.Any.fromFunction1(formatPart))
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[LineContentProps]
   }

@@ -31,7 +31,7 @@ trait ListItemLayoutProps
   /**
     * A list of elements that are placed on the left side of the item and after the avatar attribute.
     */
-  var leftActions: js.UndefOr[coreDashJsLib.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var leftActions: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
   /**
     * A string key of a font icon or element to display an icon in the left side of the item.
     */
@@ -43,7 +43,7 @@ trait ListItemLayoutProps
   /**
     * A list of elements that are placed on the right side of the item and after the rightIcon attribute.
     */
-  var rightActions: js.UndefOr[coreDashJsLib.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var rightActions: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
   /**
     * The same as the leftIcon but in this case the icon is displayed in the right side.
     */
@@ -75,32 +75,32 @@ object ListItemLayoutProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     itemContent: reactLib.reactMod.ReactNs.ReactChild = null,
     key: reactLib.reactMod.ReactNs.Key = null,
-    leftActions: coreDashJsLib.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
+    leftActions: js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
     leftIcon: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
     legend: java.lang.String = null,
-    onClick: coreDashJsLib.Function = null,
-    onContextMenu: coreDashJsLib.Function = null,
-    onDoubleClick: coreDashJsLib.Function = null,
-    onDrag: coreDashJsLib.Function = null,
-    onDragEnd: coreDashJsLib.Function = null,
-    onDragEnter: coreDashJsLib.Function = null,
-    onDragExit: coreDashJsLib.Function = null,
-    onDragLeave: coreDashJsLib.Function = null,
-    onDragOver: coreDashJsLib.Function = null,
-    onDragStart: coreDashJsLib.Function = null,
-    onDrop: coreDashJsLib.Function = null,
-    onMouseDown: coreDashJsLib.Function = null,
-    onMouseEnter: coreDashJsLib.Function = null,
-    onMouseLeave: coreDashJsLib.Function = null,
-    onMouseMove: coreDashJsLib.Function = null,
-    onMouseOut: coreDashJsLib.Function = null,
-    onMouseOver: coreDashJsLib.Function = null,
-    onMouseUp: coreDashJsLib.Function = null,
-    onTouchCancel: coreDashJsLib.Function = null,
-    onTouchEnd: coreDashJsLib.Function = null,
-    onTouchMove: coreDashJsLib.Function = null,
-    onTouchStart: coreDashJsLib.Function = null,
-    rightActions: coreDashJsLib.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
+    onClick: js.Function = null,
+    onContextMenu: js.Function = null,
+    onDoubleClick: js.Function = null,
+    onDrag: js.Function = null,
+    onDragEnd: js.Function = null,
+    onDragEnter: js.Function = null,
+    onDragExit: js.Function = null,
+    onDragLeave: js.Function = null,
+    onDragOver: js.Function = null,
+    onDragStart: js.Function = null,
+    onDrop: js.Function = null,
+    onMouseDown: js.Function = null,
+    onMouseEnter: js.Function = null,
+    onMouseLeave: js.Function = null,
+    onMouseMove: js.Function = null,
+    onMouseOut: js.Function = null,
+    onMouseOver: js.Function = null,
+    onMouseUp: js.Function = null,
+    onTouchCancel: js.Function = null,
+    onTouchEnd: js.Function = null,
+    onTouchMove: js.Function = null,
+    onTouchStart: js.Function = null,
+    rightActions: js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
     rightIcon: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,

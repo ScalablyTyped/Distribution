@@ -11,8 +11,8 @@ trait IBufferFactory extends js.Object {
 
 object IBufferFactory {
   @scala.inline
-  def apply(create: js.Function1[scala.Double, Buffer]): IBufferFactory = {
-    val __obj = js.Dynamic.literal(create = create)
+  def apply(create: scala.Double => Buffer): IBufferFactory = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
   
     __obj.asInstanceOf[IBufferFactory]
   }

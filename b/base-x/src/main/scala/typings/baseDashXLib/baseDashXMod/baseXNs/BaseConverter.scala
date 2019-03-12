@@ -14,11 +14,11 @@ trait BaseConverter extends js.Object {
 object BaseConverter {
   @scala.inline
   def apply(
-    decode: js.Function1[java.lang.String, bufferLib.bufferMod.Buffer],
-    decodeUnsafe: js.Function1[java.lang.String, js.UndefOr[bufferLib.bufferMod.Buffer]],
-    encode: js.Function1[bufferLib.bufferMod.Buffer, java.lang.String]
+    decode: java.lang.String => bufferLib.bufferMod.Buffer,
+    decodeUnsafe: java.lang.String => js.UndefOr[bufferLib.bufferMod.Buffer],
+    encode: bufferLib.bufferMod.Buffer => java.lang.String
   ): BaseConverter = {
-    val __obj = js.Dynamic.literal(decode = decode, decodeUnsafe = decodeUnsafe, encode = encode)
+    val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), decodeUnsafe = js.Any.fromFunction1(decodeUnsafe), encode = js.Any.fromFunction1(encode))
   
     __obj.asInstanceOf[BaseConverter]
   }

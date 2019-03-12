@@ -15,7 +15,7 @@ package object superagentLib {
   type MultipartValueSingle = stdLib.Blob | nodeLib.Buffer | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify fs.ReadStream */ js.Any) | java.lang.String | scala.Boolean | scala.Double
   type NodeParser = js.Function2[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify request.Response */ /* res */ js.Any, 
-    /* callback */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* body */ js.Any, scala.Unit], 
+    /* callback */ js.Function2[/* err */ stdLib.Error | scala.Null, /* body */ js.Any, scala.Unit], 
     scala.Unit
   ]
   type Parser = BrowserParser | NodeParser

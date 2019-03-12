@@ -12,12 +12,9 @@ trait EncodedUpdatesResource extends js.Object {
 object EncodedUpdatesResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotSafebrowsingLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FetchThreatListUpdatesResponse]
-    ]
+    get: gapiDotClientDotSafebrowsingLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[FetchThreatListUpdatesResponse]
   ): EncodedUpdatesResource = {
-    val __obj = js.Dynamic.literal(get = get)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[EncodedUpdatesResource]
   }

@@ -16,7 +16,7 @@ object CloudHSMNs extends js.Object {
     /**
       * One or more tags.
       */
-    var TagList: TagList
+    var TagList: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.TagList
   }
   
   trait AddTagsToResourceResponse extends js.Object {
@@ -37,7 +37,7 @@ object CloudHSMNs extends js.Object {
     /**
       * The label of the new high-availability partition group.
       */
-    var Label: Label
+    var Label: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.Label
   }
   
   trait CreateHapgResponse extends js.Object {
@@ -63,16 +63,16 @@ object CloudHSMNs extends js.Object {
     /**
       * The ARN of an IAM role to enable the AWS CloudHSM service to allocate an ENI on your behalf.
       */
-    var IamRoleArn: IamRoleArn
+    var IamRoleArn: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.IamRoleArn
     /**
       * The SSH public key to install on the HSM.
       */
-    var SshKey: SshKey
+    var SshKey: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.SshKey
     /**
       * The identifier of the subnet in your VPC in which to place the HSM.
       */
-    var SubnetId: SubnetId
-    var SubscriptionType: SubscriptionType
+    var SubnetId: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.SubnetId
+    var SubscriptionType: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.SubscriptionType
     /**
       * The IP address for the syslog monitoring server. The AWS CloudHSM service only supports one syslog monitoring server.
       */
@@ -90,7 +90,7 @@ object CloudHSMNs extends js.Object {
     /**
       * The contents of a Base64-Encoded X.509 v3 certificate to be installed on the HSMs used by this client.
       */
-    var Certificate: Certificate
+    var Certificate: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.Certificate
     /**
       * The label for the client.
       */
@@ -108,7 +108,7 @@ object CloudHSMNs extends js.Object {
     /**
       * The ARN of the high-availability partition group to delete.
       */
-    var HapgArn: HapgArn
+    var HapgArn: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.HapgArn
   }
   
   trait DeleteHapgResponse extends js.Object {
@@ -122,7 +122,7 @@ object CloudHSMNs extends js.Object {
     /**
       * The ARN of the HSM to delete.
       */
-    var HsmArn: HsmArn
+    var HsmArn: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.HsmArn
   }
   
   trait DeleteHsmResponse extends js.Object {
@@ -136,7 +136,7 @@ object CloudHSMNs extends js.Object {
     /**
       * The ARN of the client to delete.
       */
-    var ClientArn: ClientArn
+    var ClientArn: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.ClientArn
   }
   
   trait DeleteLunaClientResponse extends js.Object {
@@ -150,7 +150,7 @@ object CloudHSMNs extends js.Object {
     /**
       * The ARN of the high-availability partition group to describe.
       */
-    var HapgArn: HapgArn
+    var HapgArn: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.HapgArn
   }
   
   trait DescribeHapgResponse extends js.Object {
@@ -325,15 +325,15 @@ object CloudHSMNs extends js.Object {
     /**
       * The ARN of the client.
       */
-    var ClientArn: ClientArn
+    var ClientArn: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.ClientArn
     /**
       * The client version.
       */
-    var ClientVersion: ClientVersion
+    var ClientVersion: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.ClientVersion
     /**
       * A list of ARNs that identify the high-availability partition groups that are associated with the client.
       */
-    var HapgList: HapgList
+    var HapgList: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.HapgList
   }
   
   trait GetConfigResponse extends js.Object {
@@ -371,7 +371,7 @@ object CloudHSMNs extends js.Object {
     /**
       * The list of high-availability partition groups.
       */
-    var HapgList: HapgList
+    var HapgList: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.HapgList
     /**
       * If not null, more results are available. Pass this value to ListHapgs to retrieve the next set of items.
       */
@@ -407,7 +407,7 @@ object CloudHSMNs extends js.Object {
     /**
       * The list of clients.
       */
-    var ClientList: ClientList
+    var ClientList: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.ClientList
     /**
       * If not null, more results are available. Pass this to ListLunaClients to retrieve the next set of items.
       */
@@ -425,14 +425,14 @@ object CloudHSMNs extends js.Object {
     /**
       * One or more tags.
       */
-    var TagList: TagList
+    var TagList: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.TagList
   }
   
   trait ModifyHapgRequest extends js.Object {
     /**
       * The ARN of the high-availability partition group to modify.
       */
-    var HapgArn: HapgArn
+    var HapgArn: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.HapgArn
     /**
       * The new label for the high-availability partition group.
       */
@@ -462,7 +462,7 @@ object CloudHSMNs extends js.Object {
     /**
       * The ARN of the HSM to modify.
       */
-    var HsmArn: HsmArn
+    var HsmArn: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.HsmArn
     /**
       * The new IAM role ARN.
       */
@@ -488,11 +488,11 @@ object CloudHSMNs extends js.Object {
     /**
       * The new certificate for the client.
       */
-    var Certificate: Certificate
+    var Certificate: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.Certificate
     /**
       * The ARN of the client.
       */
-    var ClientArn: ClientArn
+    var ClientArn: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.ClientArn
   }
   
   trait ModifyLunaClientResponse extends js.Object {
@@ -510,7 +510,7 @@ object CloudHSMNs extends js.Object {
     /**
       * The tag key or keys to remove. Specify only the tag key to remove (not the value). To overwrite the value for an existing tag, use AddTagsToResource.
       */
-    var TagKeyList: TagKeyList
+    var TagKeyList: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.TagKeyList
   }
   
   trait RemoveTagsFromResourceResponse extends js.Object {

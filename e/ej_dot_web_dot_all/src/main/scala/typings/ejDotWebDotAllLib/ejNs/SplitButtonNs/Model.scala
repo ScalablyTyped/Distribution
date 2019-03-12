@@ -101,23 +101,23 @@ object Model {
   @scala.inline
   def apply(
     arrowPosition: java.lang.String | ejDotWebDotAllLib.ejNs.ArrowPosition = null,
-    beforeOpen: js.Function1[/* e */ BeforeOpenEventArgs, scala.Unit] = null,
+    beforeOpen: /* e */ BeforeOpenEventArgs => scala.Unit = null,
     buttonMode: java.lang.String | ejDotWebDotAllLib.ejNs.ButtonMode = null,
-    click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
-    close: js.Function1[/* e */ CloseEventArgs, scala.Unit] = null,
+    click: /* e */ ClickEventArgs => scala.Unit = null,
+    close: /* e */ CloseEventArgs => scala.Unit = null,
     contentType: java.lang.String | ejDotWebDotAllLib.ejNs.ContentType = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     height: java.lang.String | scala.Double = null,
     htmlAttributes: js.Any = null,
     imagePosition: java.lang.String | ejDotWebDotAllLib.ejNs.ImagePosition = null,
-    itemMouseOut: js.Function1[/* e */ ItemMouseOutEventArgs, scala.Unit] = null,
-    itemMouseOver: js.Function1[/* e */ ItemMouseOverEventArgs, scala.Unit] = null,
-    itemSelected: js.Function1[/* e */ ItemSelectedEventArgs, scala.Unit] = null,
-    open: js.Function1[/* e */ OpenEventArgs, scala.Unit] = null,
+    itemMouseOut: /* e */ ItemMouseOutEventArgs => scala.Unit = null,
+    itemMouseOver: /* e */ ItemMouseOverEventArgs => scala.Unit = null,
+    itemSelected: /* e */ ItemSelectedEventArgs => scala.Unit = null,
+    open: /* e */ OpenEventArgs => scala.Unit = null,
     prefixIcon: java.lang.String = null,
     showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
     size: java.lang.String | ejDotWebDotAllLib.ejNs.ButtonSize = null,
@@ -129,23 +129,23 @@ object Model {
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (arrowPosition != null) __obj.updateDynamic("arrowPosition")(arrowPosition.asInstanceOf[js.Any])
-    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen)
+    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(js.Any.fromFunction1(beforeOpen))
     if (buttonMode != null) __obj.updateDynamic("buttonMode")(buttonMode.asInstanceOf[js.Any])
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
     if (imagePosition != null) __obj.updateDynamic("imagePosition")(imagePosition.asInstanceOf[js.Any])
-    if (itemMouseOut != null) __obj.updateDynamic("itemMouseOut")(itemMouseOut)
-    if (itemMouseOver != null) __obj.updateDynamic("itemMouseOver")(itemMouseOver)
-    if (itemSelected != null) __obj.updateDynamic("itemSelected")(itemSelected)
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (itemMouseOut != null) __obj.updateDynamic("itemMouseOut")(js.Any.fromFunction1(itemMouseOut))
+    if (itemMouseOver != null) __obj.updateDynamic("itemMouseOver")(js.Any.fromFunction1(itemMouseOver))
+    if (itemSelected != null) __obj.updateDynamic("itemSelected")(js.Any.fromFunction1(itemSelected))
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (prefixIcon != null) __obj.updateDynamic("prefixIcon")(prefixIcon)
     if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

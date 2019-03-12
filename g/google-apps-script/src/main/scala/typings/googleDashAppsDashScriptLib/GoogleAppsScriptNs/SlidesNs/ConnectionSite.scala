@@ -13,10 +13,10 @@ trait ConnectionSite extends js.Object {
 object ConnectionSite {
   @scala.inline
   def apply(
-    getIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getPageElement: js.Function0[PageElement]
+    getIndex: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getPageElement: () => PageElement
   ): ConnectionSite = {
-    val __obj = js.Dynamic.literal(getIndex = getIndex, getPageElement = getPageElement)
+    val __obj = js.Dynamic.literal(getIndex = js.Any.fromFunction0(getIndex), getPageElement = js.Any.fromFunction0(getPageElement))
   
     __obj.asInstanceOf[ConnectionSite]
   }

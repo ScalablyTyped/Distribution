@@ -17,10 +17,10 @@ object Anon_ActionElement {
   def apply(
     action: java.lang.String,
     element: stdLib.Element,
-    endCallback: js.Function0[scala.Unit],
+    endCallback: () => scala.Unit,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_ActionElement = {
-    val __obj = js.Dynamic.literal(action = action, element = element, endCallback = endCallback)
+    val __obj = js.Dynamic.literal(action = action, element = element, endCallback = js.Any.fromFunction0(endCallback))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_ActionElement]
   }

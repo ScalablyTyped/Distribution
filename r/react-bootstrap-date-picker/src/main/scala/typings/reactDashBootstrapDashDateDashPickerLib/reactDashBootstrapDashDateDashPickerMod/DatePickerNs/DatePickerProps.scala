@@ -56,7 +56,7 @@ object DatePickerProps {
     nextButtonElement: reactLib.reactMod.ReactNs.ReactNode = null,
     onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[_] = null,
     onChange: ChangeCallback = null,
-    onClear: js.Function0[scala.Unit] = null,
+    onClear: () => scala.Unit = null,
     onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[_] = null,
     previousButtonElement: reactLib.reactMod.ReactNs.ReactNode = null,
     showClearButton: js.UndefOr[scala.Boolean] = js.undefined,
@@ -84,7 +84,7 @@ object DatePickerProps {
     if (nextButtonElement != null) __obj.updateDynamic("nextButtonElement")(nextButtonElement.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onClear != null) __obj.updateDynamic("onClear")(onClear)
+    if (onClear != null) __obj.updateDynamic("onClear")(js.Any.fromFunction0(onClear))
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
     if (previousButtonElement != null) __obj.updateDynamic("previousButtonElement")(previousButtonElement.asInstanceOf[js.Any])
     if (!js.isUndefined(showClearButton)) __obj.updateDynamic("showClearButton")(showClearButton)

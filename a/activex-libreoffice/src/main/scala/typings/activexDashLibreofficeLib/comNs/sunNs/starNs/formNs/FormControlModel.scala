@@ -39,6 +39,6 @@ trait FormControlModel
     * No semantics is given for this property, it will usually be used by the creator of a document containing form controls.
     */
   var Tag: java.lang.String = js.native
-  def getPropertyValues(aPropertyNames: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): activexDashInteropLib.SafeArray[_] = js.native
+  def getPropertyValues(aPropertyNames: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): stdLib.SafeArray[_] = js.native
 }
 

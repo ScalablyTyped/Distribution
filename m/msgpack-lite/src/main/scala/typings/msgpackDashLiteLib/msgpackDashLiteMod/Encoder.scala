@@ -27,22 +27,22 @@ object Encoder {
   @scala.inline
   def apply(
     bufferish: js.Any,
-    encode: js.Function1[js.Any, scala.Unit],
-    end: js.Function1[js.Any, scala.Unit],
-    fetch: js.Function0[scala.Unit],
-    flush: js.Function0[scala.Unit],
+    encode: js.Any => scala.Unit,
+    end: js.Any => scala.Unit,
+    fetch: () => scala.Unit,
+    flush: () => scala.Unit,
     maxBufferSize: scala.Double,
     minBufferSize: scala.Double,
     offset: scala.Double,
-    pull: js.Function0[scala.Double],
-    push: js.Function1[js.Any, scala.Unit],
-    read: js.Function0[scala.Double],
-    reserve: js.Function1[scala.Double, scala.Double],
-    send: js.Function1[nodeLib.Buffer, scala.Unit],
+    pull: () => scala.Double,
+    push: js.Any => scala.Unit,
+    read: () => scala.Double,
+    reserve: scala.Double => scala.Double,
+    send: nodeLib.Buffer => scala.Unit,
     start: scala.Double,
-    write: js.Function1[js.Any, scala.Unit]
+    write: js.Any => scala.Unit
   ): Encoder = {
-    val __obj = js.Dynamic.literal(bufferish = bufferish, encode = encode, end = end, fetch = fetch, flush = flush, maxBufferSize = maxBufferSize, minBufferSize = minBufferSize, offset = offset, pull = pull, push = push, read = read, reserve = reserve, send = send, start = start, write = write)
+    val __obj = js.Dynamic.literal(bufferish = bufferish, encode = js.Any.fromFunction1(encode), end = js.Any.fromFunction1(end), fetch = js.Any.fromFunction0(fetch), flush = js.Any.fromFunction0(flush), maxBufferSize = maxBufferSize, minBufferSize = minBufferSize, offset = offset, pull = js.Any.fromFunction0(pull), push = js.Any.fromFunction1(push), read = js.Any.fromFunction0(read), reserve = js.Any.fromFunction1(reserve), send = js.Any.fromFunction1(send), start = start, write = js.Any.fromFunction1(write))
   
     __obj.asInstanceOf[Encoder]
   }

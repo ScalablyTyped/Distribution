@@ -36,20 +36,17 @@ object Anon_Level {
   @scala.inline
   def apply(
     Level: Anon_DISPLAY,
-    releaseKeepAwake: js.Function0[scala.Unit],
-    requestKeepAwake: js.Function1[
-      chromeDashAppsLib.chromeNs.ToStringLiteral[
-        /* import warning: ImportType.apply Failed type conversion: typeof Level */ js.Any, 
+    releaseKeepAwake: () => scala.Unit,
+    requestKeepAwake: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      /* import warning: ImportType.apply Failed type conversion: typeof Level */ js.Any, 
+      java.lang.String, 
+      stdLib.Exclude[
         java.lang.String, 
-        stdLib.Exclude[
-          java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: typeof Level[keyof typeof Level] */ js.Any
-        ]
-      ], 
-      scala.Unit
-    ]
+        /* import warning: ImportType.apply Failed type conversion: typeof Level[keyof typeof Level] */ js.Any
+      ]
+    ] => scala.Unit
   ): Anon_Level = {
-    val __obj = js.Dynamic.literal(Level = Level, releaseKeepAwake = releaseKeepAwake, requestKeepAwake = requestKeepAwake)
+    val __obj = js.Dynamic.literal(Level = Level, releaseKeepAwake = js.Any.fromFunction0(releaseKeepAwake), requestKeepAwake = js.Any.fromFunction1(requestKeepAwake))
   
     __obj.asInstanceOf[Anon_Level]
   }

@@ -48,10 +48,7 @@ object ojNBoxSettableProperties {
     cellContent: atOracleOraclejetLib.atOracleOraclejetLibStrings.counts | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
     cellMaximize: atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.on,
     columnsTitle: java.lang.String,
-    countLabel: js.Function1[
-      atOracleOraclejetLib.ojnboxMod.ojNBoxNs.CountLabelContext, 
-      java.lang.String | scala.Null
-    ],
+    countLabel: atOracleOraclejetLib.ojnboxMod.ojNBoxNs.CountLabelContext => java.lang.String | scala.Null,
     groupAttributes: atOracleOraclejetLib.atOracleOraclejetLibStrings.color | atOracleOraclejetLib.atOracleOraclejetLibStrings.indicatorColor | atOracleOraclejetLib.atOracleOraclejetLibStrings.indicatorIconColor | atOracleOraclejetLib.atOracleOraclejetLibStrings.indicatorIconPattern | atOracleOraclejetLib.atOracleOraclejetLibStrings.indicatorIconShape,
     groupBehavior: atOracleOraclejetLib.atOracleOraclejetLibStrings.acrossCells | atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.withinCell,
     hiddenCategories: js.Array[java.lang.String],
@@ -76,7 +73,7 @@ object ojNBoxSettableProperties {
     data: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null,
     rows: js.Array[atOracleOraclejetLib.ojnboxMod.ojNBoxNs.Row] | js.Promise[js.Array[atOracleOraclejetLib.ojnboxMod.ojNBoxNs.Row]] = null
   ): ojNBoxSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal(animationOnDataChange = animationOnDataChange.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], as = as, cellContent = cellContent.asInstanceOf[js.Any], cellMaximize = cellMaximize.asInstanceOf[js.Any], columnsTitle = columnsTitle, countLabel = countLabel, groupAttributes = groupAttributes.asInstanceOf[js.Any], groupBehavior = groupBehavior.asInstanceOf[js.Any], hiddenCategories = hiddenCategories, highlightMatch = highlightMatch.asInstanceOf[js.Any], highlightedCategories = highlightedCategories, hoverBehavior = hoverBehavior.asInstanceOf[js.Any], labelTruncation = labelTruncation.asInstanceOf[js.Any], maximizedColumn = maximizedColumn, maximizedRow = maximizedRow, otherColor = otherColor, otherThreshold = otherThreshold, rowsTitle = rowsTitle, selection = selection, selectionMode = selectionMode.asInstanceOf[js.Any], styleDefaults = styleDefaults, tooltip = tooltip, touchResponse = touchResponse.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations)
+    val __obj = js.Dynamic.literal(animationOnDataChange = animationOnDataChange.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], as = as, cellContent = cellContent.asInstanceOf[js.Any], cellMaximize = cellMaximize.asInstanceOf[js.Any], columnsTitle = columnsTitle, countLabel = js.Any.fromFunction1(countLabel), groupAttributes = groupAttributes.asInstanceOf[js.Any], groupBehavior = groupBehavior.asInstanceOf[js.Any], hiddenCategories = hiddenCategories, highlightMatch = highlightMatch.asInstanceOf[js.Any], highlightedCategories = highlightedCategories, hoverBehavior = hoverBehavior.asInstanceOf[js.Any], labelTruncation = labelTruncation.asInstanceOf[js.Any], maximizedColumn = maximizedColumn, maximizedRow = maximizedRow, otherColor = otherColor, otherThreshold = otherThreshold, rowsTitle = rowsTitle, selection = selection, selectionMode = selectionMode.asInstanceOf[js.Any], styleDefaults = styleDefaults, tooltip = tooltip, touchResponse = touchResponse.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations)
     if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)

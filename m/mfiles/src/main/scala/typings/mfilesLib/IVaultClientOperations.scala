@@ -17,14 +17,14 @@ trait IVaultClientOperations extends js.Object {
 object IVaultClientOperations {
   @scala.inline
   def apply(
-    DisableCheckInReminderForCallingProcess: js.Function0[scala.Unit],
-    EnableCheckInReminderForCallingProcess: js.Function0[scala.Unit],
-    IsOffline: js.Function0[scala.Boolean],
-    IsOnline: js.Function0[scala.Boolean],
-    SetVaultToOffline: js.Function1[scala.Double, mfilesLib.MFilesNs.MFOfflineTransitionResultFlags],
-    SetVaultToOnline: js.Function1[scala.Double, mfilesLib.MFilesNs.MFOnlineTransitionResultFlags]
+    DisableCheckInReminderForCallingProcess: () => scala.Unit,
+    EnableCheckInReminderForCallingProcess: () => scala.Unit,
+    IsOffline: () => scala.Boolean,
+    IsOnline: () => scala.Boolean,
+    SetVaultToOffline: scala.Double => mfilesLib.MFilesNs.MFOfflineTransitionResultFlags,
+    SetVaultToOnline: scala.Double => mfilesLib.MFilesNs.MFOnlineTransitionResultFlags
   ): IVaultClientOperations = {
-    val __obj = js.Dynamic.literal(DisableCheckInReminderForCallingProcess = DisableCheckInReminderForCallingProcess, EnableCheckInReminderForCallingProcess = EnableCheckInReminderForCallingProcess, IsOffline = IsOffline, IsOnline = IsOnline, SetVaultToOffline = SetVaultToOffline, SetVaultToOnline = SetVaultToOnline)
+    val __obj = js.Dynamic.literal(DisableCheckInReminderForCallingProcess = js.Any.fromFunction0(DisableCheckInReminderForCallingProcess), EnableCheckInReminderForCallingProcess = js.Any.fromFunction0(EnableCheckInReminderForCallingProcess), IsOffline = js.Any.fromFunction0(IsOffline), IsOnline = js.Any.fromFunction0(IsOnline), SetVaultToOffline = js.Any.fromFunction1(SetVaultToOffline), SetVaultToOnline = js.Any.fromFunction1(SetVaultToOnline))
   
     __obj.asInstanceOf[IVaultClientOperations]
   }

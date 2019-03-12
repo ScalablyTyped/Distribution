@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def build(input_file: java.lang.String, output_file: java.lang.String): js.Any = js.native
-  def build(input_file: java.lang.String, output_file: java.lang.String, options: roadsLib.roadsMod.Options): js.Any = js.native
+  def build(input_file: java.lang.String, output_file: java.lang.String, options: Options): js.Any = js.native
 }
 

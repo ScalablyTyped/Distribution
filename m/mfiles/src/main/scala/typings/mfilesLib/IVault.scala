@@ -68,7 +68,7 @@ object IVault {
   @scala.inline
   def apply(
     Async: IVaultAsync,
-    ChangePassword: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    ChangePassword: (java.lang.String, java.lang.String) => scala.Unit,
     ClassGroupOperations: IVaultClassGroupOperations,
     ClassOperations: IVaultClassOperations,
     ClientOperations: IVaultClientOperations,
@@ -79,20 +79,15 @@ object IVault {
     EventLogOperations: IVaultEventLogOperations,
     ExtensionMethodOperations: IVaultExtensionMethodOperations,
     ExternalObjectOperations: IVaultExternalObjectOperations,
-    GetAllTranslations: js.Function0[java.lang.String],
-    GetGUID: js.Function0[java.lang.String],
-    GetMFilesURLForVaultRoot: js.Function0[java.lang.String],
-    GetMetadataStructureItemIDByAlias: js.Function3[
-      mfilesLib.MFilesNs.MFMetadataStructureItem, 
-      java.lang.String, 
-      scala.Boolean, 
-      scala.Double
-    ],
-    GetMetadataStructureVersionID: js.Function0[scala.Double],
-    GetServerLicenseStatus: js.Function0[ILicenseStatus],
-    GetServerVersionOfVault: js.Function0[IMFilesVersion],
-    LogOutSilent: js.Function0[scala.Unit],
-    LogOutWithDialogs: js.Function1[scala.Double, scala.Boolean],
+    GetAllTranslations: () => java.lang.String,
+    GetGUID: () => java.lang.String,
+    GetMFilesURLForVaultRoot: () => java.lang.String,
+    GetMetadataStructureItemIDByAlias: (mfilesLib.MFilesNs.MFMetadataStructureItem, java.lang.String, scala.Boolean) => scala.Double,
+    GetMetadataStructureVersionID: () => scala.Double,
+    GetServerLicenseStatus: () => ILicenseStatus,
+    GetServerVersionOfVault: () => IMFilesVersion,
+    LogOutSilent: () => scala.Unit,
+    LogOutWithDialogs: scala.Double => scala.Boolean,
     LoggedIn: scala.Boolean,
     LoginAccountOperations: IVaultLoginAccountOperations,
     LoginSessionID: java.lang.String,
@@ -112,9 +107,9 @@ object IVault {
     ServerDataPushOperations: IVaultServerDataPushOperations,
     SessionInfo: ISessionInfo,
     SharedLinkOperations: IVaultSharedLinkOperations,
-    TestConnectionToServer: js.Function0[scala.Unit],
-    TestConnectionToVault: js.Function0[scala.Unit],
-    TestConnectionToVaultWithTimeout: js.Function1[scala.Double, scala.Unit],
+    TestConnectionToServer: () => scala.Unit,
+    TestConnectionToVault: () => scala.Unit,
+    TestConnectionToVaultWithTimeout: scala.Double => scala.Unit,
     TraditionalFolderOperations: IVaultTraditionalFolderOperations,
     UserGroupOperations: IVaultUserGroupOperations,
     UserOperations: IVaultUserOperations,
@@ -125,7 +120,7 @@ object IVault {
     ViewOperations: IVaultViewOperations,
     WorkflowOperations: IVaultWorkflowOperations
   ): IVault = {
-    val __obj = js.Dynamic.literal(Async = Async, ChangePassword = ChangePassword, ClassGroupOperations = ClassGroupOperations, ClassOperations = ClassOperations, ClientOperations = ClientOperations, CurrentLoggedInUserID = CurrentLoggedInUserID, CustomApplicationManagementOperations = CustomApplicationManagementOperations, DataSetOperations = DataSetOperations, ElectronicSignatureOperations = ElectronicSignatureOperations, EventLogOperations = EventLogOperations, ExtensionMethodOperations = ExtensionMethodOperations, ExternalObjectOperations = ExternalObjectOperations, GetAllTranslations = GetAllTranslations, GetGUID = GetGUID, GetMFilesURLForVaultRoot = GetMFilesURLForVaultRoot, GetMetadataStructureItemIDByAlias = GetMetadataStructureItemIDByAlias, GetMetadataStructureVersionID = GetMetadataStructureVersionID, GetServerLicenseStatus = GetServerLicenseStatus, GetServerVersionOfVault = GetServerVersionOfVault, LogOutSilent = LogOutSilent, LogOutWithDialogs = LogOutWithDialogs, LoggedIn = LoggedIn, LoginAccountOperations = LoginAccountOperations, LoginSessionID = LoginSessionID, ManagementOperations = ManagementOperations, Name = Name, NamedACLOperations = NamedACLOperations, NamedValueStorageOperations = NamedValueStorageOperations, NotificationOperations = NotificationOperations, ObjectFileOperations = ObjectFileOperations, ObjectOperations = ObjectOperations, ObjectPropertyOperations = ObjectPropertyOperations, ObjectSearchOperations = ObjectSearchOperations, ObjectTypeOperations = ObjectTypeOperations, PropertyDefOperations = PropertyDefOperations, ReadOnlyAccess = ReadOnlyAccess, ScheduledJobManagementOperations = ScheduledJobManagementOperations, ServerDataPushOperations = ServerDataPushOperations, SessionInfo = SessionInfo, SharedLinkOperations = SharedLinkOperations, TestConnectionToServer = TestConnectionToServer, TestConnectionToVault = TestConnectionToVault, TestConnectionToVaultWithTimeout = TestConnectionToVaultWithTimeout, TraditionalFolderOperations = TraditionalFolderOperations, UserGroupOperations = UserGroupOperations, UserOperations = UserOperations, UserSettingOperations = UserSettingOperations, ValueListItemOperations = ValueListItemOperations, ValueListOperations = ValueListOperations, VaultLanguages = VaultLanguages, ViewOperations = ViewOperations, WorkflowOperations = WorkflowOperations)
+    val __obj = js.Dynamic.literal(Async = Async, ChangePassword = js.Any.fromFunction2(ChangePassword), ClassGroupOperations = ClassGroupOperations, ClassOperations = ClassOperations, ClientOperations = ClientOperations, CurrentLoggedInUserID = CurrentLoggedInUserID, CustomApplicationManagementOperations = CustomApplicationManagementOperations, DataSetOperations = DataSetOperations, ElectronicSignatureOperations = ElectronicSignatureOperations, EventLogOperations = EventLogOperations, ExtensionMethodOperations = ExtensionMethodOperations, ExternalObjectOperations = ExternalObjectOperations, GetAllTranslations = js.Any.fromFunction0(GetAllTranslations), GetGUID = js.Any.fromFunction0(GetGUID), GetMFilesURLForVaultRoot = js.Any.fromFunction0(GetMFilesURLForVaultRoot), GetMetadataStructureItemIDByAlias = js.Any.fromFunction3(GetMetadataStructureItemIDByAlias), GetMetadataStructureVersionID = js.Any.fromFunction0(GetMetadataStructureVersionID), GetServerLicenseStatus = js.Any.fromFunction0(GetServerLicenseStatus), GetServerVersionOfVault = js.Any.fromFunction0(GetServerVersionOfVault), LogOutSilent = js.Any.fromFunction0(LogOutSilent), LogOutWithDialogs = js.Any.fromFunction1(LogOutWithDialogs), LoggedIn = LoggedIn, LoginAccountOperations = LoginAccountOperations, LoginSessionID = LoginSessionID, ManagementOperations = ManagementOperations, Name = Name, NamedACLOperations = NamedACLOperations, NamedValueStorageOperations = NamedValueStorageOperations, NotificationOperations = NotificationOperations, ObjectFileOperations = ObjectFileOperations, ObjectOperations = ObjectOperations, ObjectPropertyOperations = ObjectPropertyOperations, ObjectSearchOperations = ObjectSearchOperations, ObjectTypeOperations = ObjectTypeOperations, PropertyDefOperations = PropertyDefOperations, ReadOnlyAccess = ReadOnlyAccess, ScheduledJobManagementOperations = ScheduledJobManagementOperations, ServerDataPushOperations = ServerDataPushOperations, SessionInfo = SessionInfo, SharedLinkOperations = SharedLinkOperations, TestConnectionToServer = js.Any.fromFunction0(TestConnectionToServer), TestConnectionToVault = js.Any.fromFunction0(TestConnectionToVault), TestConnectionToVaultWithTimeout = js.Any.fromFunction1(TestConnectionToVaultWithTimeout), TraditionalFolderOperations = TraditionalFolderOperations, UserGroupOperations = UserGroupOperations, UserOperations = UserOperations, UserSettingOperations = UserSettingOperations, ValueListItemOperations = ValueListItemOperations, ValueListOperations = ValueListOperations, VaultLanguages = VaultLanguages, ViewOperations = ViewOperations, WorkflowOperations = WorkflowOperations)
   
     __obj.asInstanceOf[IVault]
   }

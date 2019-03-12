@@ -27,7 +27,7 @@ trait FBBlob extends js.Object {
   def _read(
     buffer: nodeLib.Buffer,
     callback: js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* buffer */ nodeLib.Buffer, 
       /* len */ scala.Double, 
       scala.Unit
@@ -44,7 +44,7 @@ trait FBBlob extends js.Object {
   def _readAll(): scala.Unit = js.native
   def _readAll(
     callback: js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* buffer */ nodeLib.Buffer, 
       /* len */ scala.Double, 
       scala.Unit
@@ -54,7 +54,7 @@ trait FBBlob extends js.Object {
   def _readAll(
     initialSize: scala.Double,
     callback: js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* buffer */ nodeLib.Buffer, 
       /* len */ scala.Double, 
       scala.Unit
@@ -65,7 +65,7 @@ trait FBBlob extends js.Object {
     initialSize: scala.Double,
     chunkSize: scala.Double,
     callback: js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* buffer */ nodeLib.Buffer, 
       /* len */ scala.Double, 
       scala.Unit
@@ -90,7 +90,7 @@ trait FBBlob extends js.Object {
   def _write(
     buffer: nodeLib.Buffer,
     len: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Synchronously writes BLOB segment (chunk) from buffer.

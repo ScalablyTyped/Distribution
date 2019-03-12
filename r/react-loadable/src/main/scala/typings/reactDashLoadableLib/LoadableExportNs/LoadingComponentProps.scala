@@ -19,10 +19,10 @@ object LoadingComponentProps {
     error: js.Any,
     isLoading: scala.Boolean,
     pastDelay: scala.Boolean,
-    retry: js.Function0[scala.Unit],
+    retry: () => scala.Unit,
     timedOut: scala.Boolean
   ): LoadingComponentProps = {
-    val __obj = js.Dynamic.literal(error = error, isLoading = isLoading, pastDelay = pastDelay, retry = retry, timedOut = timedOut)
+    val __obj = js.Dynamic.literal(error = error, isLoading = isLoading, pastDelay = pastDelay, retry = js.Any.fromFunction0(retry), timedOut = timedOut)
   
     __obj.asInstanceOf[LoadingComponentProps]
   }

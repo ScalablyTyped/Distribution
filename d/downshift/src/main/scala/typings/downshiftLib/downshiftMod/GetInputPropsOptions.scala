@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetInputPropsOptions
-  extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLInputElement]
+  extends reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLInputElement]
 
 object GetInputPropsOptions {
   @scala.inline
   def apply(
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLInputElement] = null,
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLInputElement] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined
   ): GetInputPropsOptions = {
     val __obj = js.Dynamic.literal()

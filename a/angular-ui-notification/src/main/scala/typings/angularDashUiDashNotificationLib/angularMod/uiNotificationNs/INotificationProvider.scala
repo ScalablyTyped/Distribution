@@ -11,8 +11,8 @@ trait INotificationProvider extends js.Object {
 
 object INotificationProvider {
   @scala.inline
-  def apply(setOptions: js.Function1[IGlobalMessageOptions, scala.Unit]): INotificationProvider = {
-    val __obj = js.Dynamic.literal(setOptions = setOptions)
+  def apply(setOptions: IGlobalMessageOptions => scala.Unit): INotificationProvider = {
+    val __obj = js.Dynamic.literal(setOptions = js.Any.fromFunction1(setOptions))
   
     __obj.asInstanceOf[INotificationProvider]
   }

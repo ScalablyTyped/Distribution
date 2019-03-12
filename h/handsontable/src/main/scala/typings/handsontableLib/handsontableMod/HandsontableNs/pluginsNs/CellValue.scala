@@ -28,32 +28,32 @@ trait CellValue extends BaseCell {
 object CellValue {
   @scala.inline
   def apply(
-    addPrecedent: js.Function1[CellReference, scala.Unit],
-    clearPrecedents: js.Function0[scala.Unit],
+    addPrecedent: CellReference => scala.Unit,
+    clearPrecedents: () => scala.Unit,
     columnAbsolute: scala.Boolean,
     columnOffset: scala.Double,
     error: java.lang.String | scala.Unit,
-    getError: js.Function0[java.lang.String | scala.Unit],
-    getPrecedents: js.Function0[js.Array[_]],
-    getValue: js.Function0[js.Any],
-    hasError: js.Function0[scala.Boolean],
-    hasPrecedent: js.Function1[CellReference, scala.Boolean],
-    hasPrecedents: js.Function0[scala.Boolean],
-    isEqual: js.Function1[BaseCell, scala.Boolean],
-    isState: js.Function1[scala.Double, scala.Boolean],
+    getError: () => java.lang.String | scala.Unit,
+    getPrecedents: () => js.Array[_],
+    getValue: () => js.Any,
+    hasError: () => scala.Boolean,
+    hasPrecedent: CellReference => scala.Boolean,
+    hasPrecedents: () => scala.Boolean,
+    isEqual: BaseCell => scala.Boolean,
+    isState: scala.Double => scala.Boolean,
     precedents: js.Array[_],
-    removePrecedent: js.Function1[CellReference, scala.Unit],
+    removePrecedent: CellReference => scala.Unit,
     rowAbsolute: scala.Boolean,
     rowOffset: scala.Double,
-    setError: js.Function1[java.lang.String, scala.Unit],
-    setState: js.Function1[scala.Double, scala.Unit],
-    setValue: js.Function1[js.Any, scala.Unit],
+    setError: java.lang.String => scala.Unit,
+    setState: scala.Double => scala.Unit,
+    setValue: js.Any => scala.Unit,
     state: java.lang.String,
-    toString: js.Function0[java.lang.String],
-    translateTo: js.Function2[scala.Double, scala.Double, scala.Unit],
+    toString: () => java.lang.String,
+    translateTo: (scala.Double, scala.Double) => scala.Unit,
     value: js.Any
   ): CellValue = {
-    val __obj = js.Dynamic.literal(addPrecedent = addPrecedent, clearPrecedents = clearPrecedents, columnAbsolute = columnAbsolute, columnOffset = columnOffset, error = error.asInstanceOf[js.Any], getError = getError, getPrecedents = getPrecedents, getValue = getValue, hasError = hasError, hasPrecedent = hasPrecedent, hasPrecedents = hasPrecedents, isEqual = isEqual, isState = isState, precedents = precedents, removePrecedent = removePrecedent, rowAbsolute = rowAbsolute, rowOffset = rowOffset, setError = setError, setState = setState, setValue = setValue, state = state, toString = toString, translateTo = translateTo, value = value)
+    val __obj = js.Dynamic.literal(addPrecedent = js.Any.fromFunction1(addPrecedent), clearPrecedents = js.Any.fromFunction0(clearPrecedents), columnAbsolute = columnAbsolute, columnOffset = columnOffset, error = error.asInstanceOf[js.Any], getError = js.Any.fromFunction0(getError), getPrecedents = js.Any.fromFunction0(getPrecedents), getValue = js.Any.fromFunction0(getValue), hasError = js.Any.fromFunction0(hasError), hasPrecedent = js.Any.fromFunction1(hasPrecedent), hasPrecedents = js.Any.fromFunction0(hasPrecedents), isEqual = js.Any.fromFunction1(isEqual), isState = js.Any.fromFunction1(isState), precedents = precedents, removePrecedent = js.Any.fromFunction1(removePrecedent), rowAbsolute = rowAbsolute, rowOffset = rowOffset, setError = js.Any.fromFunction1(setError), setState = js.Any.fromFunction1(setState), setValue = js.Any.fromFunction1(setValue), state = state, toString = js.Any.fromFunction0(toString), translateTo = js.Any.fromFunction2(translateTo), value = value)
   
     __obj.asInstanceOf[CellValue]
   }

@@ -24,7 +24,7 @@ trait DeckProps extends js.Object {
    // Needs a type, see https://github.com/ReactTraining/history
   var showFullscreenControl: js.UndefOr[scala.Boolean] = js.undefined
   var theme: js.UndefOr[Theme] = js.undefined
-  var transition: js.UndefOr[coreDashJsLib.Array[transitionType]] = js.undefined
+  var transition: js.UndefOr[js.Array[transitionType]] = js.undefined
   var transitionDuration: js.UndefOr[scala.Double] = js.undefined
 }
 
@@ -38,15 +38,11 @@ object DeckProps {
     controls: js.UndefOr[scala.Boolean] = js.undefined,
     globalStyles: js.UndefOr[scala.Boolean] = js.undefined,
     history: js.Any = null,
-    onStateChange: js.Function2[
-      /* previousState */ js.UndefOr[java.lang.String], 
-      /* nextState */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
+    onStateChange: (/* previousState */ js.UndefOr[java.lang.String], /* nextState */ js.UndefOr[java.lang.String]) => scala.Unit = null,
     progress: progressType = null,
     showFullscreenControl: js.UndefOr[scala.Boolean] = js.undefined,
     theme: Theme = null,
-    transition: coreDashJsLib.Array[transitionType] = null,
+    transition: js.Array[transitionType] = null,
     transitionDuration: scala.Int | scala.Double = null
   ): DeckProps = {
     val __obj = js.Dynamic.literal()
@@ -57,7 +53,7 @@ object DeckProps {
     if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls)
     if (!js.isUndefined(globalStyles)) __obj.updateDynamic("globalStyles")(globalStyles)
     if (history != null) __obj.updateDynamic("history")(history)
-    if (onStateChange != null) __obj.updateDynamic("onStateChange")(onStateChange)
+    if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction2(onStateChange))
     if (progress != null) __obj.updateDynamic("progress")(progress)
     if (!js.isUndefined(showFullscreenControl)) __obj.updateDynamic("showFullscreenControl")(showFullscreenControl)
     if (theme != null) __obj.updateDynamic("theme")(theme)

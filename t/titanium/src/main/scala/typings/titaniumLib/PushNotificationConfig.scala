@@ -31,15 +31,15 @@ trait PushNotificationConfig extends js.Object {
 object PushNotificationConfig {
   @scala.inline
   def apply(
-    callback: js.Function1[/* param0 */ PushNotificationData, _] = null,
-    error: js.Function1[/* param0 */ PushNotificationErrorArg, _] = null,
-    success: js.Function1[/* param0 */ PushNotificationSuccessArg, _] = null,
+    callback: /* param0 */ PushNotificationData => _ = null,
+    error: /* param0 */ PushNotificationErrorArg => _ = null,
+    success: /* param0 */ PushNotificationSuccessArg => _ = null,
     types: js.Array[scala.Double] = null
   ): PushNotificationConfig = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     if (types != null) __obj.updateDynamic("types")(types)
     __obj.asInstanceOf[PushNotificationConfig]
   }

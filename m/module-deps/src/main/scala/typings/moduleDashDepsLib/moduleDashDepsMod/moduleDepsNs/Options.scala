@@ -90,7 +90,7 @@ trait Options
       /* id */ java.lang.String, 
       /* opts */ browserDashResolveLib.browserDashResolveMod.browserResolveNs.SyncOpts, 
       /* cb */ js.Function4[
-        /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+        /* err */ js.UndefOr[stdLib.Error | scala.Null], 
         /* file */ js.UndefOr[java.lang.String], 
         /* pkg */ js.UndefOr[PackageObject], 
         /* fakePath */ js.UndefOr[js.Any], 
@@ -116,44 +116,27 @@ object Options {
     StringDictionary: /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     basedir: java.lang.String = null,
     cache: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    detect: js.Function1[/* source */ java.lang.String, js.Array[java.lang.String]] = null,
+    detect: /* source */ java.lang.String => js.Array[java.lang.String] = null,
     expose: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     extensions: js.Array[java.lang.String] = null,
     fileCache: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    filter: js.Function1[/* id */ java.lang.String, scala.Boolean] = null,
+    filter: /* id */ java.lang.String => scala.Boolean = null,
     globalTransform: js.Array[_] = null,
     ignoreMissing: js.UndefOr[scala.Boolean] = js.undefined,
     modules: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     noParse: scala.Boolean | js.Array[java.lang.String] = null,
     packageCache: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    packageFilter: js.Function2[/* pkg */ PackageObject, /* dir */ java.lang.String, PackageObject] = null,
+    packageFilter: (/* pkg */ PackageObject, /* dir */ java.lang.String) => PackageObject = null,
     paths: js.Array[java.lang.String] = null,
-    persistentCache: js.Function5[
-      /* file */ java.lang.String, 
-      /* id */ java.lang.String, 
-      /* pkg */ PackageObject, 
-      /* fallback */ js.Function2[/* dataAsString */ java.lang.String, /* cb */ CacheCallback, scala.Unit], 
-      /* cb */ CacheCallback, 
+    persistentCache: (/* file */ java.lang.String, /* id */ java.lang.String, /* pkg */ PackageObject, /* fallback */ js.Function2[/* dataAsString */ java.lang.String, /* cb */ CacheCallback, scala.Unit], /* cb */ CacheCallback) => scala.Unit = null,
+    postFilter: (/* id */ java.lang.String, /* file */ java.lang.String, /* pkg */ PackageObject) => scala.Unit | scala.Boolean = null,
+    resolve: (/* id */ java.lang.String, /* opts */ browserDashResolveLib.browserDashResolveMod.browserResolveNs.SyncOpts, /* cb */ js.Function4[
+      /* err */ js.UndefOr[stdLib.Error | scala.Null], 
+      /* file */ js.UndefOr[java.lang.String], 
+      /* pkg */ js.UndefOr[PackageObject], 
+      /* fakePath */ js.UndefOr[js.Any], 
       scala.Unit
-    ] = null,
-    postFilter: js.Function3[
-      /* id */ java.lang.String, 
-      /* file */ java.lang.String, 
-      /* pkg */ PackageObject, 
-      scala.Unit | scala.Boolean
-    ] = null,
-    resolve: js.Function3[
-      /* id */ java.lang.String, 
-      /* opts */ browserDashResolveLib.browserDashResolveMod.browserResolveNs.SyncOpts, 
-      /* cb */ js.Function4[
-        /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-        /* file */ js.UndefOr[java.lang.String], 
-        /* pkg */ js.UndefOr[PackageObject], 
-        /* fakePath */ js.UndefOr[js.Any], 
-        scala.Unit
-      ], 
-      scala.Unit
-    ] = null,
+    ]) => scala.Unit = null,
     transform: java.lang.String | js.Array[java.lang.String] = null,
     transformKey: js.Array[java.lang.String] = null
   ): Options = {
@@ -161,21 +144,21 @@ object Options {
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (basedir != null) __obj.updateDynamic("basedir")(basedir)
     if (cache != null) __obj.updateDynamic("cache")(cache)
-    if (detect != null) __obj.updateDynamic("detect")(detect)
+    if (detect != null) __obj.updateDynamic("detect")(js.Any.fromFunction1(detect))
     if (expose != null) __obj.updateDynamic("expose")(expose)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (fileCache != null) __obj.updateDynamic("fileCache")(fileCache)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (globalTransform != null) __obj.updateDynamic("globalTransform")(globalTransform)
     if (!js.isUndefined(ignoreMissing)) __obj.updateDynamic("ignoreMissing")(ignoreMissing)
     if (modules != null) __obj.updateDynamic("modules")(modules)
     if (noParse != null) __obj.updateDynamic("noParse")(noParse.asInstanceOf[js.Any])
     if (packageCache != null) __obj.updateDynamic("packageCache")(packageCache)
-    if (packageFilter != null) __obj.updateDynamic("packageFilter")(packageFilter)
+    if (packageFilter != null) __obj.updateDynamic("packageFilter")(js.Any.fromFunction2(packageFilter))
     if (paths != null) __obj.updateDynamic("paths")(paths)
-    if (persistentCache != null) __obj.updateDynamic("persistentCache")(persistentCache)
-    if (postFilter != null) __obj.updateDynamic("postFilter")(postFilter)
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
+    if (persistentCache != null) __obj.updateDynamic("persistentCache")(js.Any.fromFunction5(persistentCache))
+    if (postFilter != null) __obj.updateDynamic("postFilter")(js.Any.fromFunction3(postFilter))
+    if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction3(resolve))
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     if (transformKey != null) __obj.updateDynamic("transformKey")(transformKey)
     __obj.asInstanceOf[Options]

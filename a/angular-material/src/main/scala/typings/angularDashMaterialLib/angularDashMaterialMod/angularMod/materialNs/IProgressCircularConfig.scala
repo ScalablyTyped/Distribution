@@ -37,20 +37,8 @@ object IProgressCircularConfig {
   def apply(
     duration: scala.Int | scala.Double = null,
     durationIndeterminate: scala.Int | scala.Double = null,
-    easeFn: js.Function4[
-      /* t */ scala.Double, 
-      /* b */ scala.Double, 
-      /* c */ scala.Double, 
-      /* d */ scala.Double, 
-      scala.Double
-    ] = null,
-    easeFnIndeterminate: js.Function4[
-      /* t */ scala.Double, 
-      /* b */ scala.Double, 
-      /* c */ scala.Double, 
-      /* d */ scala.Double, 
-      scala.Double
-    ] = null,
+    easeFn: (/* t */ scala.Double, /* b */ scala.Double, /* c */ scala.Double, /* d */ scala.Double) => scala.Double = null,
+    easeFnIndeterminate: (/* t */ scala.Double, /* b */ scala.Double, /* c */ scala.Double, /* d */ scala.Double) => scala.Double = null,
     endIndeterminate: scala.Int | scala.Double = null,
     progressSize: scala.Int | scala.Double = null,
     startIndeterminate: scala.Int | scala.Double = null,
@@ -59,8 +47,8 @@ object IProgressCircularConfig {
     val __obj = js.Dynamic.literal()
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (durationIndeterminate != null) __obj.updateDynamic("durationIndeterminate")(durationIndeterminate.asInstanceOf[js.Any])
-    if (easeFn != null) __obj.updateDynamic("easeFn")(easeFn)
-    if (easeFnIndeterminate != null) __obj.updateDynamic("easeFnIndeterminate")(easeFnIndeterminate)
+    if (easeFn != null) __obj.updateDynamic("easeFn")(js.Any.fromFunction4(easeFn))
+    if (easeFnIndeterminate != null) __obj.updateDynamic("easeFnIndeterminate")(js.Any.fromFunction4(easeFnIndeterminate))
     if (endIndeterminate != null) __obj.updateDynamic("endIndeterminate")(endIndeterminate.asInstanceOf[js.Any])
     if (progressSize != null) __obj.updateDynamic("progressSize")(progressSize.asInstanceOf[js.Any])
     if (startIndeterminate != null) __obj.updateDynamic("startIndeterminate")(startIndeterminate.asInstanceOf[js.Any])

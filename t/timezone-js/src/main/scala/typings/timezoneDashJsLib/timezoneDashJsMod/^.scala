@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("timezone-js", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var timezone: timezoneDashJsLib.timezoneDashJsMod.TimezoneJs = js.native
+  var timezone: TimezoneJs = js.native
 }
 

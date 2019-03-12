@@ -19,11 +19,8 @@ trait NewShippingAddress extends js.Object {
 
 object NewShippingAddress {
   @scala.inline
-  def apply(
-    shippingAddress: stripejsLib.shippingMod.ShippingAddress,
-    updateWith: js.Function1[UpdateOptions, scala.Unit]
-  ): NewShippingAddress = {
-    val __obj = js.Dynamic.literal(shippingAddress = shippingAddress, updateWith = updateWith)
+  def apply(shippingAddress: stripejsLib.shippingMod.ShippingAddress, updateWith: UpdateOptions => scala.Unit): NewShippingAddress = {
+    val __obj = js.Dynamic.literal(shippingAddress = shippingAddress, updateWith = js.Any.fromFunction1(updateWith))
   
     __obj.asInstanceOf[NewShippingAddress]
   }

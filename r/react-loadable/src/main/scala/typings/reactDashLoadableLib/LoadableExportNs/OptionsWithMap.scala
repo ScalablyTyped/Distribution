@@ -37,17 +37,17 @@ object OptionsWithMap {
   {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
     */ reactDashLoadableLib.reactDashLoadableLibStrings.OptionsWithMap with Exports,
     loading: reactLib.reactMod.ReactNs.ComponentType[LoadingComponentProps] | js.Function0[scala.Null],
-    render: js.Function2[Exports, Props, reactLib.reactMod.ReactNs.ReactNode],
+    render: (Exports, Props) => reactLib.reactMod.ReactNs.ReactNode,
     delay: scala.Double | reactDashLoadableLib.reactDashLoadableLibNumbers.`false` = null,
     modules: js.Array[java.lang.String] = null,
     timeout: scala.Double | reactDashLoadableLib.reactDashLoadableLibNumbers.`false` = null,
-    webpack: js.Function0[js.Array[scala.Double]] = null
+    webpack: () => js.Array[scala.Double] = null
   ): OptionsWithMap[Props, Exports] = {
-    val __obj = js.Dynamic.literal(loader = loader, loading = loading.asInstanceOf[js.Any], render = render)
+    val __obj = js.Dynamic.literal(loader = loader, loading = loading.asInstanceOf[js.Any], render = js.Any.fromFunction2(render))
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (modules != null) __obj.updateDynamic("modules")(modules)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (webpack != null) __obj.updateDynamic("webpack")(webpack)
+    if (webpack != null) __obj.updateDynamic("webpack")(js.Any.fromFunction0(webpack))
     __obj.asInstanceOf[OptionsWithMap[Props, Exports]]
   }
 }

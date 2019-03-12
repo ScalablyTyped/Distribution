@@ -91,7 +91,7 @@ object utilNs extends js.Object {
   /** Error subclass indicating a protocol specifc error. */
   @js.native
   class ProtocolError[T /* <: protobufjsLib.protobufjsMod.Message[T] */] protected ()
-    extends nodeLib.Error {
+    extends stdLib.Error {
     /**
       * Constructs a new protocol error.
       * @param message Error message
@@ -101,6 +101,10 @@ object utilNs extends js.Object {
     def this(message: java.lang.String, properties: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     /** So far decoded message instance. */
     var instance: protobufjsLib.protobufjsMod.Message[T] = js.native
+    /* CompleteClass */
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
   }
   
   /** Array implementation used in the browser. `Uint8Array` if supported, otherwise `Array`. */
@@ -309,7 +313,7 @@ object utilNs extends js.Object {
     * @param name Error name
     * @returns Custom error constructor
     */
-  def newError(name: java.lang.String): protobufjsLib.protobufjsMod.Constructor[nodeLib.Error] = js.native
+  def newError(name: java.lang.String): protobufjsLib.protobufjsMod.Constructor[stdLib.Error] = js.native
   /**
     * Builds a getter for a oneof's present field name.
     * @param fieldNames Field names

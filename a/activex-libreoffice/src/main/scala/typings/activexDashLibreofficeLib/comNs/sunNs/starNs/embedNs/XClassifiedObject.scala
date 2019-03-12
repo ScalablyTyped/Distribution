@@ -12,7 +12,7 @@ trait XClassifiedObject
     * retrieves class ID of the object.
     * @returns unique class ID of the object
     */
-  val ClassID: activexDashInteropLib.SafeArray[scala.Double]
+  val ClassID: stdLib.SafeArray[scala.Double]
   /**
     * retrieves symbolic name for the object type to be used in UI.
     * @returns the symbolic name for the object
@@ -22,7 +22,7 @@ trait XClassifiedObject
     * retrieves class ID of the object.
     * @returns unique class ID of the object
     */
-  def getClassID(): activexDashInteropLib.SafeArray[scala.Double]
+  def getClassID(): stdLib.SafeArray[scala.Double]
   /**
     * retrieves symbolic name for the object type to be used in UI.
     * @returns the symbolic name for the object
@@ -43,20 +43,16 @@ trait XClassifiedObject
 object XClassifiedObject {
   @scala.inline
   def apply(
-    ClassID: activexDashInteropLib.SafeArray[scala.Double],
+    ClassID: stdLib.SafeArray[scala.Double],
     ClassName: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getClassID: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    getClassName: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setClassInfo: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      java.lang.String, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    getClassID: () => stdLib.SafeArray[scala.Double],
+    getClassName: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setClassInfo: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], java.lang.String) => scala.Unit
   ): XClassifiedObject = {
-    val __obj = js.Dynamic.literal(ClassID = ClassID, ClassName = ClassName, acquire = acquire, getClassID = getClassID, getClassName = getClassName, queryInterface = queryInterface, release = release, setClassInfo = setClassInfo)
+    val __obj = js.Dynamic.literal(ClassID = ClassID, ClassName = ClassName, acquire = js.Any.fromFunction0(acquire), getClassID = js.Any.fromFunction0(getClassID), getClassName = js.Any.fromFunction0(getClassName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setClassInfo = js.Any.fromFunction2(setClassInfo))
   
     __obj.asInstanceOf[XClassifiedObject]
   }

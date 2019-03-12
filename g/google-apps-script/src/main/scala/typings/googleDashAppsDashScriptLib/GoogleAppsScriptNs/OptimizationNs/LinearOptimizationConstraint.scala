@@ -11,8 +11,8 @@ trait LinearOptimizationConstraint extends js.Object {
 
 object LinearOptimizationConstraint {
   @scala.inline
-  def apply(setCoefficient: js.Function2[java.lang.String, stdLib.Number, LinearOptimizationConstraint]): LinearOptimizationConstraint = {
-    val __obj = js.Dynamic.literal(setCoefficient = setCoefficient)
+  def apply(setCoefficient: (java.lang.String, stdLib.Number) => LinearOptimizationConstraint): LinearOptimizationConstraint = {
+    val __obj = js.Dynamic.literal(setCoefficient = js.Any.fromFunction2(setCoefficient))
   
     __obj.asInstanceOf[LinearOptimizationConstraint]
   }

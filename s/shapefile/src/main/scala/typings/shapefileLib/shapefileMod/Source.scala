@@ -15,10 +15,10 @@ object Source {
   @scala.inline
   def apply[RecordType](
     bbox: js.Array[scala.Double],
-    cancel: js.Function0[js.Promise[scala.Unit]],
-    read: js.Function0[js.Promise[shapefileLib.Anon_Done[RecordType]]]
+    cancel: () => js.Promise[scala.Unit],
+    read: () => js.Promise[shapefileLib.Anon_Done[RecordType]]
   ): Source[RecordType] = {
-    val __obj = js.Dynamic.literal(bbox = bbox, cancel = cancel, read = read)
+    val __obj = js.Dynamic.literal(bbox = bbox, cancel = js.Any.fromFunction0(cancel), read = js.Any.fromFunction0(read))
   
     __obj.asInstanceOf[Source[RecordType]]
   }

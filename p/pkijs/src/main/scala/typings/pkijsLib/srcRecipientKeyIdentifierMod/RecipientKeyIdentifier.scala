@@ -17,14 +17,14 @@ trait RecipientKeyIdentifier extends js.Object {
 object RecipientKeyIdentifier {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     subjectKeyIdentifier: asn1jsLib.asn1jsMod.OctetString,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     date: asn1jsLib.asn1jsMod.GeneralizedTime = null,
     other: pkijsLib.srcOtherKeyAttributeMod.default = null
   ): RecipientKeyIdentifier = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, subjectKeyIdentifier = subjectKeyIdentifier, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), subjectKeyIdentifier = subjectKeyIdentifier, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
     if (date != null) __obj.updateDynamic("date")(date)
     if (other != null) __obj.updateDynamic("other")(other)
     __obj.asInstanceOf[RecipientKeyIdentifier]

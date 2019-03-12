@@ -23,17 +23,17 @@ trait IExtJSCore extends js.Object {
 object IExtJSCore {
   @scala.inline
   def apply(
-    Ext: js.Function0[js.Any],
-    clickCQ: js.Function3[java.lang.String, js.Any, js.Function, js.Any],
-    clickComponentQuery: js.Function3[java.lang.String, js.Any, js.Function, js.Any],
-    compositeQuery: js.Function3[java.lang.String, js.Any, scala.Boolean, js.Array[stdLib.HTMLElement]],
-    cq: js.Function1[java.lang.String, js.Any],
-    cq1: js.Function1[java.lang.String, js.Any],
-    getExt: js.Function0[js.Any],
-    knownBugIn: js.Function3[java.lang.String, js.Function, java.lang.String, js.Any],
-    requireOk: js.Function1[/* repeated */ js.Any, scala.Unit]
+    Ext: () => js.Any,
+    clickCQ: (java.lang.String, js.Any, js.Function) => js.Any,
+    clickComponentQuery: (java.lang.String, js.Any, js.Function) => js.Any,
+    compositeQuery: (java.lang.String, js.Any, scala.Boolean) => js.Array[stdLib.HTMLElement],
+    cq: java.lang.String => js.Any,
+    cq1: java.lang.String => js.Any,
+    getExt: () => js.Any,
+    knownBugIn: (java.lang.String, js.Function, java.lang.String) => js.Any,
+    requireOk: /* repeated */ js.Any => scala.Unit
   ): IExtJSCore = {
-    val __obj = js.Dynamic.literal(Ext = Ext, clickCQ = clickCQ, clickComponentQuery = clickComponentQuery, compositeQuery = compositeQuery, cq = cq, cq1 = cq1, getExt = getExt, knownBugIn = knownBugIn, requireOk = requireOk)
+    val __obj = js.Dynamic.literal(Ext = js.Any.fromFunction0(Ext), clickCQ = js.Any.fromFunction3(clickCQ), clickComponentQuery = js.Any.fromFunction3(clickComponentQuery), compositeQuery = js.Any.fromFunction3(compositeQuery), cq = js.Any.fromFunction1(cq), cq1 = js.Any.fromFunction1(cq1), getExt = js.Any.fromFunction0(getExt), knownBugIn = js.Any.fromFunction3(knownBugIn), requireOk = js.Any.fromFunction1(requireOk))
   
     __obj.asInstanceOf[IExtJSCore]
   }

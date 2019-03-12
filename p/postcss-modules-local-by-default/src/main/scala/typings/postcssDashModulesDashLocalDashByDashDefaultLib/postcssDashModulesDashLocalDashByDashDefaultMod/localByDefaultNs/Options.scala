@@ -18,11 +18,11 @@ object Options {
   @scala.inline
   def apply(
     mode: postcssDashModulesDashLocalDashByDashDefaultLib.postcssDashModulesDashLocalDashByDashDefaultLibStrings.global | postcssDashModulesDashLocalDashByDashDefaultLib.postcssDashModulesDashLocalDashByDashDefaultLibStrings.local | postcssDashModulesDashLocalDashByDashDefaultLib.postcssDashModulesDashLocalDashByDashDefaultLibStrings.pure = null,
-    rewriteUrl: js.Function2[/* global */ scala.Boolean, /* url */ java.lang.String, java.lang.String] = null
+    rewriteUrl: (/* global */ scala.Boolean, /* url */ java.lang.String) => java.lang.String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (rewriteUrl != null) __obj.updateDynamic("rewriteUrl")(rewriteUrl)
+    if (rewriteUrl != null) __obj.updateDynamic("rewriteUrl")(js.Any.fromFunction2(rewriteUrl))
     __obj.asInstanceOf[Options]
   }
 }

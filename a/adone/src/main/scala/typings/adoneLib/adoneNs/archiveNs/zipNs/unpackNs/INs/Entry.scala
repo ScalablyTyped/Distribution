@@ -56,10 +56,10 @@ object Entry {
     fileName: StringType,
     fileNameLength: scala.Double,
     generalPurposeBitFlag: scala.Double,
-    getLastModDate: js.Function0[adoneLib.adoneNs.INs.datetimeNs.Datetime],
+    getLastModDate: () => adoneLib.adoneNs.INs.datetimeNs.Datetime,
     internalFileAttributes: scala.Double,
-    isCompressed: js.Function0[scala.Boolean],
-    isEncrypted: js.Function0[scala.Boolean],
+    isCompressed: () => scala.Boolean,
+    isEncrypted: () => scala.Boolean,
     lastModFileDate: scala.Double,
     lastModFileTime: scala.Double,
     relativeOffsetOfLocalHeader: scala.Double,
@@ -67,7 +67,7 @@ object Entry {
     versionMadeBy: scala.Double,
     versionNeededToExtract: scala.Double
   ): Entry[StringType] = {
-    val __obj = js.Dynamic.literal(compressedSize = compressedSize, compressionMethod = compressionMethod, crc32 = crc32, externalFileAttributes = externalFileAttributes, extraFieldLength = extraFieldLength, extraFields = extraFields, fileComment = fileComment.asInstanceOf[js.Any], fileCommentLength = fileCommentLength, fileName = fileName.asInstanceOf[js.Any], fileNameLength = fileNameLength, generalPurposeBitFlag = generalPurposeBitFlag, getLastModDate = getLastModDate, internalFileAttributes = internalFileAttributes, isCompressed = isCompressed, isEncrypted = isEncrypted, lastModFileDate = lastModFileDate, lastModFileTime = lastModFileTime, relativeOffsetOfLocalHeader = relativeOffsetOfLocalHeader, uncompressedSize = uncompressedSize, versionMadeBy = versionMadeBy, versionNeededToExtract = versionNeededToExtract)
+    val __obj = js.Dynamic.literal(compressedSize = compressedSize, compressionMethod = compressionMethod, crc32 = crc32, externalFileAttributes = externalFileAttributes, extraFieldLength = extraFieldLength, extraFields = extraFields, fileComment = fileComment.asInstanceOf[js.Any], fileCommentLength = fileCommentLength, fileName = fileName.asInstanceOf[js.Any], fileNameLength = fileNameLength, generalPurposeBitFlag = generalPurposeBitFlag, getLastModDate = js.Any.fromFunction0(getLastModDate), internalFileAttributes = internalFileAttributes, isCompressed = js.Any.fromFunction0(isCompressed), isEncrypted = js.Any.fromFunction0(isEncrypted), lastModFileDate = lastModFileDate, lastModFileTime = lastModFileTime, relativeOffsetOfLocalHeader = relativeOffsetOfLocalHeader, uncompressedSize = uncompressedSize, versionMadeBy = versionMadeBy, versionNeededToExtract = versionNeededToExtract)
   
     __obj.asInstanceOf[Entry[StringType]]
   }

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  val Zone: zoneDotJsLib.ZoneType = js.native
+  val Zone: ZoneType = js.native
 }
 

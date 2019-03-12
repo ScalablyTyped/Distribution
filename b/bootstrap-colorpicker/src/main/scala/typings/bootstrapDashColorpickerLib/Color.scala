@@ -56,18 +56,18 @@ object Color {
     fallbackValue: java.lang.String,
     hexNumberSignPrefix: scala.Boolean,
     origFormat: java.lang.String,
-    setAlpha: js.Function1[scala.Double, scala.Unit],
-    setBrightness: js.Function1[scala.Double, scala.Unit],
-    setColor: js.Function1[java.lang.String, scala.Unit],
-    setHue: js.Function1[scala.Double, scala.Unit],
-    setSaturation: js.Function1[scala.Double, scala.Unit],
-    toHSL: js.Function0[java.lang.String],
-    toHex: js.Function0[java.lang.String],
-    toRGB: js.Function0[java.lang.String],
-    toString: js.Function1[ColorFormat, java.lang.String],
+    setAlpha: scala.Double => scala.Unit,
+    setBrightness: scala.Double => scala.Unit,
+    setColor: java.lang.String => scala.Unit,
+    setHue: scala.Double => scala.Unit,
+    setSaturation: scala.Double => scala.Unit,
+    toHSL: () => java.lang.String,
+    toHex: () => java.lang.String,
+    toRGB: () => java.lang.String,
+    toString: ColorFormat => java.lang.String,
     value: Anon_A
   ): Color = {
-    val __obj = js.Dynamic.literal(fallbackFormat = fallbackFormat, fallbackValue = fallbackValue, hexNumberSignPrefix = hexNumberSignPrefix, origFormat = origFormat, setAlpha = setAlpha, setBrightness = setBrightness, setColor = setColor, setHue = setHue, setSaturation = setSaturation, toHSL = toHSL, toHex = toHex, toRGB = toRGB, toString = toString, value = value)
+    val __obj = js.Dynamic.literal(fallbackFormat = fallbackFormat, fallbackValue = fallbackValue, hexNumberSignPrefix = hexNumberSignPrefix, origFormat = origFormat, setAlpha = js.Any.fromFunction1(setAlpha), setBrightness = js.Any.fromFunction1(setBrightness), setColor = js.Any.fromFunction1(setColor), setHue = js.Any.fromFunction1(setHue), setSaturation = js.Any.fromFunction1(setSaturation), toHSL = js.Any.fromFunction0(toHSL), toHex = js.Any.fromFunction0(toHex), toRGB = js.Any.fromFunction0(toRGB), toString = js.Any.fromFunction1(toString), value = value)
   
     __obj.asInstanceOf[Color]
   }

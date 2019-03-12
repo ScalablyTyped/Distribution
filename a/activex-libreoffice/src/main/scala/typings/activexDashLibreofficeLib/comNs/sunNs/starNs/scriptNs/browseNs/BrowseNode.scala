@@ -17,31 +17,25 @@ trait BrowseNode
 object BrowseNode {
   @scala.inline
   def apply(
-    ChildNodes: activexDashInteropLib.SafeArray[XBrowseNode],
+    ChildNodes: stdLib.SafeArray[XBrowseNode],
     Introspection: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XIntrospectionAccess,
     Name: java.lang.String,
     Type: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getChildNodes: js.Function0[activexDashInteropLib.SafeArray[XBrowseNode]],
-    getIntrospection: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XIntrospectionAccess],
-    getName: js.Function0[java.lang.String],
-    getType: js.Function0[scala.Double],
-    getValue: js.Function1[java.lang.String, js.Any],
-    hasChildNodes: js.Function0[scala.Boolean],
-    hasMethod: js.Function1[java.lang.String, scala.Boolean],
-    hasProperty: js.Function1[java.lang.String, scala.Boolean],
-    invoke: js.Function4[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]], 
-      js.Any
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    getChildNodes: () => stdLib.SafeArray[XBrowseNode],
+    getIntrospection: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XIntrospectionAccess,
+    getName: () => java.lang.String,
+    getType: () => scala.Double,
+    getValue: java.lang.String => js.Any,
+    hasChildNodes: () => scala.Boolean,
+    hasMethod: java.lang.String => scala.Boolean,
+    hasProperty: java.lang.String => scala.Boolean,
+    invoke: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]]) => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setValue: (java.lang.String, js.Any) => scala.Unit
   ): BrowseNode = {
-    val __obj = js.Dynamic.literal(ChildNodes = ChildNodes, Introspection = Introspection, Name = Name, Type = Type, acquire = acquire, getChildNodes = getChildNodes, getIntrospection = getIntrospection, getName = getName, getType = getType, getValue = getValue, hasChildNodes = hasChildNodes, hasMethod = hasMethod, hasProperty = hasProperty, invoke = invoke, queryInterface = queryInterface, release = release, setValue = setValue)
+    val __obj = js.Dynamic.literal(ChildNodes = ChildNodes, Introspection = Introspection, Name = Name, Type = Type, acquire = js.Any.fromFunction0(acquire), getChildNodes = js.Any.fromFunction0(getChildNodes), getIntrospection = js.Any.fromFunction0(getIntrospection), getName = js.Any.fromFunction0(getName), getType = js.Any.fromFunction0(getType), getValue = js.Any.fromFunction1(getValue), hasChildNodes = js.Any.fromFunction0(hasChildNodes), hasMethod = js.Any.fromFunction1(hasMethod), hasProperty = js.Any.fromFunction1(hasProperty), invoke = js.Any.fromFunction4(invoke), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setValue = js.Any.fromFunction2(setValue))
   
     __obj.asInstanceOf[BrowseNode]
   }

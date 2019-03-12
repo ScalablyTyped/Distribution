@@ -77,6 +77,6 @@ trait Client extends js.Object {
     watch_callback: zookeeperLib.watch_callback,
     callback: zookeeperLib.child2_callback
   ): scala.Unit = js.native
-  def mkdirp(path: java.lang.String, callback: js.Function1[/* e */ js.UndefOr[nodeLib.Error], scala.Unit]): scala.Unit = js.native
+  def mkdirp(path: java.lang.String, callback: js.Function1[/* e */ js.UndefOr[stdLib.Error], scala.Unit]): scala.Unit = js.native
 }
 

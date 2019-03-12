@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/View", "Default")
 @js.native
 abstract class Default protected ()
-  extends fullcalendarLib.interactivedatecomponentMod.default {
+  extends fullcalendarLib.interactiveDateComponentMod.default {
   def this(calendar: js.Any, viewSpec: js.Any) = this()
   var batchRenderDepth: scala.Double = js.native
   var calendar: fullcalendarLib.calendarMod.default = js.native
@@ -28,8 +28,8 @@ abstract class Default protected ()
   var nowIndicatorTimeoutID: js.Any = js.native
   var options: js.Any = js.native
   var queuedScroll: js.Object = js.native
-  var renderQueue: fullcalendarLib.renderqueueMod.default = js.native
-  var selectedEventInstance: fullcalendarLib.eventinstanceMod.default = js.native
+  var renderQueue: fullcalendarLib.renderQueueMod.default = js.native
+  var selectedEventInstance: fullcalendarLib.eventInstanceMod.default = js.native
   var start: momentLib.momentMod.momentNs.Moment = js.native
   var title: java.lang.String = js.native
   var `type`: java.lang.String = js.native
@@ -45,7 +45,7 @@ abstract class Default protected ()
   def computeTitle(dateProfile: js.Any): js.Any = js.native
   def computeTitleFormat(dateProfile: js.Any): js.Any = js.native
   def fetchInitialEvents(dateProfile: js.Any): js.Any = js.native
-  def getUnzonedRangeOption(name: js.Any): fullcalendarLib.unzonedrangeMod.default = js.native
+  def getUnzonedRangeOption(name: js.Any): fullcalendarLib.unzonedRangeMod.default = js.native
   def handleDocumentMousedown(ev: js.Any): scala.Unit = js.native
   def initHiddenDays(): scala.Unit = js.native
   def initRenderQueue(): scala.Unit = js.native
@@ -95,7 +95,7 @@ abstract class Default protected ()
   def triggerSelect(footprint: js.Any, ev: js.Any): scala.Unit = js.native
   def triggerViewDestroy(): scala.Unit = js.native
   def triggerViewRender(): scala.Unit = js.native
-  def trimHiddenDays(inputUnzonedRange: js.Any): fullcalendarLib.unzonedrangeMod.default = js.native
+  def trimHiddenDays(inputUnzonedRange: js.Any): fullcalendarLib.unzonedRangeMod.default = js.native
   def unbindEventChanges(): scala.Unit = js.native
   def unselect(): scala.Unit = js.native
   def unselect(ev: js.Any): scala.Unit = js.native

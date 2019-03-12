@@ -44,14 +44,14 @@ trait XUIControllerRegistration
 object XUIControllerRegistration {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    deregisterController: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    hasController: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerController: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Unit],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    deregisterController: (java.lang.String, java.lang.String) => scala.Unit,
+    hasController: (java.lang.String, java.lang.String) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerController: (java.lang.String, java.lang.String, java.lang.String) => scala.Unit,
+    release: () => scala.Unit
   ): XUIControllerRegistration = {
-    val __obj = js.Dynamic.literal(acquire = acquire, deregisterController = deregisterController, hasController = hasController, queryInterface = queryInterface, registerController = registerController, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), deregisterController = js.Any.fromFunction2(deregisterController), hasController = js.Any.fromFunction2(hasController), queryInterface = js.Any.fromFunction1(queryInterface), registerController = js.Any.fromFunction3(registerController), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XUIControllerRegistration]
   }

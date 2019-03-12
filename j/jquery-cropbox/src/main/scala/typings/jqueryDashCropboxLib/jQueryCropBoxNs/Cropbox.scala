@@ -51,18 +51,18 @@ trait Cropbox extends js.Object {
 object Cropbox {
   @scala.inline
   def apply(
-    drag: js.Function1[CropboxDragOptions, scala.Unit],
-    getBlob: js.Function0[js.Any],
-    getDataURL: js.Function0[java.lang.String],
-    on: js.Function2[java.lang.String, EventCallback, scala.Unit],
-    remove: js.Function0[scala.Unit],
-    setCrop: js.Function1[CropboxSetCropOptions, scala.Unit],
-    update: js.Function0[scala.Unit],
-    zoom: js.Function1[scala.Double, scala.Unit],
-    zoomIn: js.Function0[scala.Unit],
-    zoomOut: js.Function0[scala.Unit]
+    drag: CropboxDragOptions => scala.Unit,
+    getBlob: () => js.Any,
+    getDataURL: () => java.lang.String,
+    on: (java.lang.String, EventCallback) => scala.Unit,
+    remove: () => scala.Unit,
+    setCrop: CropboxSetCropOptions => scala.Unit,
+    update: () => scala.Unit,
+    zoom: scala.Double => scala.Unit,
+    zoomIn: () => scala.Unit,
+    zoomOut: () => scala.Unit
   ): Cropbox = {
-    val __obj = js.Dynamic.literal(drag = drag, getBlob = getBlob, getDataURL = getDataURL, on = on, remove = remove, setCrop = setCrop, update = update, zoom = zoom, zoomIn = zoomIn, zoomOut = zoomOut)
+    val __obj = js.Dynamic.literal(drag = js.Any.fromFunction1(drag), getBlob = js.Any.fromFunction0(getBlob), getDataURL = js.Any.fromFunction0(getDataURL), on = js.Any.fromFunction2(on), remove = js.Any.fromFunction0(remove), setCrop = js.Any.fromFunction1(setCrop), update = js.Any.fromFunction0(update), zoom = js.Any.fromFunction1(zoom), zoomIn = js.Any.fromFunction0(zoomIn), zoomOut = js.Any.fromFunction0(zoomOut))
   
     __obj.asInstanceOf[Cropbox]
   }

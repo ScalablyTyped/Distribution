@@ -14,7 +14,7 @@ class TextBox protected () extends js.Object {
   var AfterUpdateMacro: java.lang.String = js.native
   var AllowAutoCorrect: scala.Boolean = js.native
   var AllowedText: scala.Double = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   var AsianLineBreak: scala.Boolean = js.native
   var AutoLabel: scala.Boolean = js.native
   var AutoTab: scala.Boolean = js.native
@@ -86,7 +86,7 @@ class TextBox protected () extends js.Object {
   var HelpContextId: scala.Double = js.native
   var HideDuplicates: scala.Boolean = js.native
   var HorizontalAnchor: AcHorizontalAnchor = js.native
-  val Hyperlink: Hyperlink = js.native
+  val Hyperlink: activexDashAccessLib.AccessNs.Hyperlink = js.native
   var IMEHold: scala.Boolean = js.native
   var IMEMode: AcImeMode = js.native
   var IMESentenceMode: AcImeSentenceMode = js.native

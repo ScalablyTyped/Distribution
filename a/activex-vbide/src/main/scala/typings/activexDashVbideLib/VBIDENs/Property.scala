@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("VBIDE.Property")
 @js.native
 class Property protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashVbideLib.VBIDENs.Application = js.native
   @JSName("Collection")
   val Collection_Original: Properties = js.native
   val Name: java.lang.String = js.native
@@ -16,7 +16,7 @@ class Property protected () extends js.Object {
   var Object: js.Any = js.native
   @JSName("Parent")
   val Parent_Original: Properties = js.native
-  val VBE: VBE = js.native
+  val VBE: activexDashVbideLib.VBIDENs.VBE = js.native
   var `VBIDE.Property_typekey`: Property = js.native
   var Value: js.Any = js.native
   def Collection(index: js.Any): Property = js.native

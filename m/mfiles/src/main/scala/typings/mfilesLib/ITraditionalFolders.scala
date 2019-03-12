@@ -12,8 +12,8 @@ trait ITraditionalFolders extends js.Object {
 
 object ITraditionalFolders {
   @scala.inline
-  def apply(Count: scala.Double, Item: js.Function1[scala.Double, ITraditionalFolder]): ITraditionalFolders = {
-    val __obj = js.Dynamic.literal(Count = Count, Item = Item)
+  def apply(Count: scala.Double, Item: scala.Double => ITraditionalFolder): ITraditionalFolders = {
+    val __obj = js.Dynamic.literal(Count = Count, Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[ITraditionalFolders]
   }

@@ -35,20 +35,13 @@ trait Anon_Clear extends js.Object {
 object Anon_Clear {
   @scala.inline
   def apply(
-    clear: js.Function0[scala.Unit],
-    create: js.Function2[
-      Anon_ClearExistingStyles, 
-      org.scalablytyped.runtime.StringDictionary[reactDashSketchappLib.reactDashSketchappMod.TextStyle], 
-      js.Any
-    ],
-    get: js.Function1[
-      java.lang.String, 
-      js.UndefOr[reactDashSketchappLib.reactDashSketchappMod.TextStyle]
-    ],
-    resolve: js.Function1[reactDashSketchappLib.reactDashSketchappMod.TextStyle, js.Any],
+    clear: () => scala.Unit,
+    create: (Anon_ClearExistingStyles, org.scalablytyped.runtime.StringDictionary[reactDashSketchappLib.reactDashSketchappMod.TextStyle]) => js.Any,
+    get: java.lang.String => js.UndefOr[reactDashSketchappLib.reactDashSketchappMod.TextStyle],
+    resolve: reactDashSketchappLib.reactDashSketchappMod.TextStyle => js.Any,
     styles: org.scalablytyped.runtime.StringDictionary[js.UndefOr[reactDashSketchappLib.reactDashSketchappMod.TextStyle]]
   ): Anon_Clear = {
-    val __obj = js.Dynamic.literal(clear = clear, create = create, get = get, resolve = resolve, styles = styles)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), create = js.Any.fromFunction2(create), get = js.Any.fromFunction1(get), resolve = js.Any.fromFunction1(resolve), styles = styles)
   
     __obj.asInstanceOf[Anon_Clear]
   }

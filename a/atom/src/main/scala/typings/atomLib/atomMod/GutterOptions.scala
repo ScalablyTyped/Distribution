@@ -51,18 +51,18 @@ object GutterOptions {
   def apply(
     name: java.lang.String,
     `class`: java.lang.String = null,
-    labelFn: js.Function1[/* lineData */ LineDataExtended, java.lang.String] = null,
-    onMouseDown: js.Function1[/* lineData */ LineData, scala.Unit] = null,
-    onMouseMove: js.Function1[/* lineData */ LineData, scala.Unit] = null,
+    labelFn: /* lineData */ LineDataExtended => java.lang.String = null,
+    onMouseDown: /* lineData */ LineData => scala.Unit = null,
+    onMouseMove: /* lineData */ LineData => scala.Unit = null,
     priority: scala.Int | scala.Double = null,
     `type`: atomLib.atomLibStrings.decorated | atomLib.atomLibStrings.`line-number` = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): GutterOptions = {
     val __obj = js.Dynamic.literal(name = name)
     if (`class` != null) __obj.updateDynamic("class")(`class`)
-    if (labelFn != null) __obj.updateDynamic("labelFn")(labelFn)
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
+    if (labelFn != null) __obj.updateDynamic("labelFn")(js.Any.fromFunction1(labelFn))
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)

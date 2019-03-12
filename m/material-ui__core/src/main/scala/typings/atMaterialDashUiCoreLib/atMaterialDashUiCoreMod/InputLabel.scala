@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core", "InputLabel")
 @js.native
 class InputLabel ()
-  extends atMaterialDashUiCoreLib.inputlabelMod.default
+  extends atMaterialDashUiCoreLib.inputLabelMod.default
 

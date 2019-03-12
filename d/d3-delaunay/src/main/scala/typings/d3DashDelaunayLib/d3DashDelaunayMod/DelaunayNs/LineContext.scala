@@ -17,8 +17,8 @@ trait LineContext extends js.Object {
 
 object LineContext {
   @scala.inline
-  def apply(lineTo: js.Function2[scala.Double, scala.Double, scala.Unit]): LineContext = {
-    val __obj = js.Dynamic.literal(lineTo = lineTo)
+  def apply(lineTo: (scala.Double, scala.Double) => scala.Unit): LineContext = {
+    val __obj = js.Dynamic.literal(lineTo = js.Any.fromFunction2(lineTo))
   
     __obj.asInstanceOf[LineContext]
   }

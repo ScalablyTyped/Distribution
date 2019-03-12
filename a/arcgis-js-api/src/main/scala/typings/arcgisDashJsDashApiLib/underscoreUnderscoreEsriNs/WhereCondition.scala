@@ -33,11 +33,11 @@ object WhereCondition {
     compareValue: js.Any,
     constructor: js.Function,
     field: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     operator: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): WhereCondition = {
-    val __obj = js.Dynamic.literal(compareValue = compareValue, constructor = constructor, field = field, hasOwnProperty = hasOwnProperty, operator = operator, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(compareValue = compareValue, constructor = constructor, field = field, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operator = operator, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[WhereCondition]
   }

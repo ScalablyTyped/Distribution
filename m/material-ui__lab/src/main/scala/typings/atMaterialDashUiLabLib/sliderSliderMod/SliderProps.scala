@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<react.HTMLDivElement>, 'classes' | 'onChange'> ]: react.react.HTMLAttributes<react.HTMLDivElement>[P]} */ trait SliderProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | 'onChange'> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]} */ trait SliderProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SliderClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -41,13 +41,9 @@ object SliderProps {
     innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
-    onChange: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], 
-      /* value */ scala.Double, 
-      scala.Unit
-    ] = null,
-    onDragEnd: js.Function1[/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], scala.Unit] = null,
-    onDragStart: js.Function1[/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], scala.Unit] = null,
+    onChange: (/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], /* value */ scala.Double) => scala.Unit = null,
+    onDragEnd: /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object] => scala.Unit = null,
+    onDragStart: /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object] => scala.Unit = null,
     step: scala.Int | scala.Double = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     thumb: reactLib.reactMod.ReactNs.ReactElement[_] = null,
@@ -62,9 +58,9 @@ object SliderProps {
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd)
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (thumb != null) __obj.updateDynamic("thumb")(thumb)

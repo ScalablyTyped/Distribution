@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PageNumber protected () extends js.Object {
   var Alignment: WdPageNumberAlignment = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
   val Index: scala.Double = js.native
   val Parent: js.Any = js.native

@@ -31,18 +31,14 @@ object ASyncConstructorOptions {
   @scala.inline
   def apply(
     async: ternLib.ternLibNumbers.`true`,
-    getFile: js.Function2[
-      /* filename */ java.lang.String, 
-      /* callback */ js.Function2[
-        /* error */ js.UndefOr[stdLib.Error], 
-        /* content */ js.UndefOr[java.lang.String], 
-        scala.Unit
-      ], 
+    getFile: (/* filename */ java.lang.String, /* callback */ js.Function2[
+      /* error */ js.UndefOr[stdLib.Error], 
+      /* content */ js.UndefOr[java.lang.String], 
       scala.Unit
-    ] = null
+    ]) => scala.Unit = null
   ): ASyncConstructorOptions = {
     val __obj = js.Dynamic.literal(async = async)
-    if (getFile != null) __obj.updateDynamic("getFile")(getFile)
+    if (getFile != null) __obj.updateDynamic("getFile")(js.Any.fromFunction2(getFile))
     __obj.asInstanceOf[ASyncConstructorOptions]
   }
 }

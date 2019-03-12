@@ -34,8 +34,8 @@ object ReactImageGalleryItem {
     originalAlt: java.lang.String = null,
     originalClass: java.lang.String = null,
     originalTitle: java.lang.String = null,
-    renderItem: js.Function1[/* item */ js.UndefOr[ReactImageGalleryItem], reactLib.reactMod.ReactNs.ReactNode] = null,
-    renderThumbInner: js.Function1[/* item */ js.UndefOr[ReactImageGalleryItem], reactLib.reactMod.ReactNs.ReactNode] = null,
+    renderItem: /* item */ js.UndefOr[ReactImageGalleryItem] => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderThumbInner: /* item */ js.UndefOr[ReactImageGalleryItem] => reactLib.reactMod.ReactNs.ReactNode = null,
     sizes: java.lang.String = null,
     srcSet: java.lang.String = null,
     thumbnail: java.lang.String = null,
@@ -50,8 +50,8 @@ object ReactImageGalleryItem {
     if (originalAlt != null) __obj.updateDynamic("originalAlt")(originalAlt)
     if (originalClass != null) __obj.updateDynamic("originalClass")(originalClass)
     if (originalTitle != null) __obj.updateDynamic("originalTitle")(originalTitle)
-    if (renderItem != null) __obj.updateDynamic("renderItem")(renderItem)
-    if (renderThumbInner != null) __obj.updateDynamic("renderThumbInner")(renderThumbInner)
+    if (renderItem != null) __obj.updateDynamic("renderItem")(js.Any.fromFunction1(renderItem))
+    if (renderThumbInner != null) __obj.updateDynamic("renderThumbInner")(js.Any.fromFunction1(renderThumbInner))
     if (sizes != null) __obj.updateDynamic("sizes")(sizes)
     if (srcSet != null) __obj.updateDynamic("srcSet")(srcSet)
     if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail)

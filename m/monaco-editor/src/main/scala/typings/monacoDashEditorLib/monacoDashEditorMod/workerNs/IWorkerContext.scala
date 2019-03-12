@@ -14,8 +14,8 @@ trait IWorkerContext extends js.Object {
 
 object IWorkerContext {
   @scala.inline
-  def apply(getMirrorModels: js.Function0[js.Array[IMirrorModel]]): IWorkerContext = {
-    val __obj = js.Dynamic.literal(getMirrorModels = getMirrorModels)
+  def apply(getMirrorModels: () => js.Array[IMirrorModel]): IWorkerContext = {
+    val __obj = js.Dynamic.literal(getMirrorModels = js.Any.fromFunction0(getMirrorModels))
   
     __obj.asInstanceOf[IWorkerContext]
   }

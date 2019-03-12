@@ -13,12 +13,9 @@ trait SponsorsResource extends js.Object {
 object SponsorsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFieldsFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SponsorListResponse]
-    ]
+    list: gapiDotClientDotYoutubeLib.Anon_AltFieldsFilter => gapiDotClientLib.gapiNs.clientNs.Request[SponsorListResponse]
   ): SponsorsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[SponsorsResource]
   }

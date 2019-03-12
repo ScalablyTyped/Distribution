@@ -21,11 +21,11 @@ trait IEditControlCellContext extends IEditActorCellContext {
 object IEditControlCellContext {
   @scala.inline
   def apply(
-    Hide: js.Function1[stdLib.HTMLElement, scala.Unit],
-    NotifyEditComplete: js.Function0[scala.Unit],
-    NotifyExpandControl: js.Function0[scala.Unit],
-    SetCurrentValue: js.Function1[js.Any, scala.Unit],
-    Show: js.Function1[stdLib.HTMLElement, scala.Unit],
+    Hide: stdLib.HTMLElement => scala.Unit,
+    NotifyEditComplete: () => scala.Unit,
+    NotifyExpandControl: () => scala.Unit,
+    SetCurrentValue: js.Any => scala.Unit,
+    Show: stdLib.HTMLElement => scala.Unit,
     cellExpandSpace: sharepointLib.Anon_Bottom,
     cellHeight: scala.Double,
     cellRect: js.Any,
@@ -38,7 +38,7 @@ object IEditControlCellContext {
     propType: IPropertyType,
     record: IRecord
   ): IEditControlCellContext = {
-    val __obj = js.Dynamic.literal(Hide = Hide, NotifyEditComplete = NotifyEditComplete, NotifyExpandControl = NotifyExpandControl, SetCurrentValue = SetCurrentValue, Show = Show, cellExpandSpace = cellExpandSpace, cellHeight = cellHeight, cellRect = cellRect, cellStyle = cellStyle, cellWidth = cellWidth, column = column, field = field, fieldKey = fieldKey, originalValue = originalValue, propType = propType, record = record)
+    val __obj = js.Dynamic.literal(Hide = js.Any.fromFunction1(Hide), NotifyEditComplete = js.Any.fromFunction0(NotifyEditComplete), NotifyExpandControl = js.Any.fromFunction0(NotifyExpandControl), SetCurrentValue = js.Any.fromFunction1(SetCurrentValue), Show = js.Any.fromFunction1(Show), cellExpandSpace = cellExpandSpace, cellHeight = cellHeight, cellRect = cellRect, cellStyle = cellStyle, cellWidth = cellWidth, column = column, field = field, fieldKey = fieldKey, originalValue = originalValue, propType = propType, record = record)
   
     __obj.asInstanceOf[IEditControlCellContext]
   }

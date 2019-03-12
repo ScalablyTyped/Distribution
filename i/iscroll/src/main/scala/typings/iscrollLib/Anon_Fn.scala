@@ -12,8 +12,8 @@ trait Anon_Fn extends js.Object {
 
 object Anon_Fn {
   @scala.inline
-  def apply(fn: js.Function1[js.Any, js.Any], style: java.lang.String): Anon_Fn = {
-    val __obj = js.Dynamic.literal(fn = fn, style = style)
+  def apply(fn: js.Any => js.Any, style: java.lang.String): Anon_Fn = {
+    val __obj = js.Dynamic.literal(fn = js.Any.fromFunction1(fn), style = style)
   
     __obj.asInstanceOf[Anon_Fn]
   }

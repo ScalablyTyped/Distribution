@@ -17,11 +17,11 @@ object RadioButtonGroupProps {
   def apply(
     name: java.lang.String,
     options: js.Array[java.lang.String | grommetLib.Anon_Disabled],
-    onChange: js.Function1[/* repeated */ js.Any, _] = null,
+    onChange: /* repeated */ js.Any => _ = null,
     value: java.lang.String = null
   ): RadioButtonGroupProps = {
     val __obj = js.Dynamic.literal(name = name, options = options)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[RadioButtonGroupProps]
   }

@@ -14,11 +14,11 @@ trait ModuleElementAnimation extends js.Object {
 object ModuleElementAnimation {
   @scala.inline
   def apply(
-    animate: js.Function1[atOracleOraclejetLib.Anon_InsertNewView, js.Promise[_]],
-    canAnimate: js.Function1[atOracleOraclejetLib.Anon_IsInitial, scala.Boolean],
-    prepareAnimation: js.Function1[atOracleOraclejetLib.Anon_IsInitial, js.Object]
+    animate: atOracleOraclejetLib.Anon_InsertNewView => js.Promise[_],
+    canAnimate: atOracleOraclejetLib.Anon_IsInitial => scala.Boolean,
+    prepareAnimation: atOracleOraclejetLib.Anon_IsInitial => js.Object
   ): ModuleElementAnimation = {
-    val __obj = js.Dynamic.literal(animate = animate, canAnimate = canAnimate, prepareAnimation = prepareAnimation)
+    val __obj = js.Dynamic.literal(animate = js.Any.fromFunction1(animate), canAnimate = js.Any.fromFunction1(canAnimate), prepareAnimation = js.Any.fromFunction1(prepareAnimation))
   
     __obj.asInstanceOf[ModuleElementAnimation]
   }

@@ -23,20 +23,11 @@ trait InvitationsResource extends js.Object {
 object InvitationsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotAdexchangebuyer2Lib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ClientUserInvitation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ClientUserInvitation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListClientUserInvitationsResponse]
-    ]
+    create: gapiDotClientDotAdexchangebuyer2Lib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[ClientUserInvitation],
+    get: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountId => gapiDotClientLib.gapiNs.clientNs.Request[ClientUserInvitation],
+    list: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAlt => gapiDotClientLib.gapiNs.clientNs.Request[ListClientUserInvitationsResponse]
   ): InvitationsResource = {
-    val __obj = js.Dynamic.literal(create = create, get = get, list = list)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[InvitationsResource]
   }

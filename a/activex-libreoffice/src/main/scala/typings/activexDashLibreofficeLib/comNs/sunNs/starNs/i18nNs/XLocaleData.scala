@@ -15,19 +15,19 @@ import scala.scalajs.js.annotation._
 trait XLocaleData
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** returns all available locales. */
-  val AllInstalledLocaleNames: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+  val AllInstalledLocaleNames: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
   /** returns all LC_CALENDAR calendars for a locale. */
-  def getAllCalendars(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): activexDashInteropLib.SafeArray[Calendar]
+  def getAllCalendars(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): stdLib.SafeArray[Calendar]
   /** returns all LC_CURRENCY currencies for a locale. */
-  def getAllCurrencies(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): activexDashInteropLib.SafeArray[Currency]
+  def getAllCurrencies(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): stdLib.SafeArray[Currency]
   /** returns all LC_FORMAT format elements for a locale. */
-  def getAllFormats(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): activexDashInteropLib.SafeArray[FormatElement]
+  def getAllFormats(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): stdLib.SafeArray[FormatElement]
   /** returns all available locales. */
-  def getAllInstalledLocaleNames(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+  def getAllInstalledLocaleNames(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
   /** returns all LC_COLLATION collation options for a locale. */
-  def getCollationOptions(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): activexDashInteropLib.SafeArray[java.lang.String]
+  def getCollationOptions(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): stdLib.SafeArray[java.lang.String]
   /** returns all LC_COLLATION collators for a locale. */
-  def getCollatorImplementations(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): activexDashInteropLib.SafeArray[Implementation]
+  def getCollatorImplementations(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): stdLib.SafeArray[Implementation]
   /** returns all LC_MISC forbidden characters for a locale. */
   def getForbiddenCharacters(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): ForbiddenCharacters
   /** returns the LC_INFO locale information. */
@@ -38,60 +38,34 @@ trait XLocaleData
     * returns all LC_MISC reserved words for a locale.
     * @see reservedWords
     */
-  def getReservedWord(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): activexDashInteropLib.SafeArray[java.lang.String]
+  def getReservedWord(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): stdLib.SafeArray[java.lang.String]
   /** returns all LC_SEARCH search options for a locale. */
-  def getSearchOptions(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): activexDashInteropLib.SafeArray[java.lang.String]
+  def getSearchOptions(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): stdLib.SafeArray[java.lang.String]
   /** returns all LC_TRANSLITERATION transliterations for a locale. */
-  def getTransliterations(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): activexDashInteropLib.SafeArray[java.lang.String]
+  def getTransliterations(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): stdLib.SafeArray[java.lang.String]
 }
 
 object XLocaleData {
   @scala.inline
   def apply(
-    AllInstalledLocaleNames: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
-    acquire: js.Function0[scala.Unit],
-    getAllCalendars: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashInteropLib.SafeArray[Calendar]
-    ],
-    getAllCurrencies: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashInteropLib.SafeArray[Currency]
-    ],
-    getAllFormats: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashInteropLib.SafeArray[FormatElement]
-    ],
-    getAllInstalledLocaleNames: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
-    ],
-    getCollationOptions: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashInteropLib.SafeArray[java.lang.String]
-    ],
-    getCollatorImplementations: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashInteropLib.SafeArray[Implementation]
-    ],
-    getForbiddenCharacters: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, ForbiddenCharacters],
-    getLanguageCountryInfo: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, LanguageCountryInfo],
-    getLocaleItem: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, LocaleDataItem],
-    getReservedWord: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashInteropLib.SafeArray[java.lang.String]
-    ],
-    getSearchOptions: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashInteropLib.SafeArray[java.lang.String]
-    ],
-    getTransliterations: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashInteropLib.SafeArray[java.lang.String]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    AllInstalledLocaleNames: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    acquire: () => scala.Unit,
+    getAllCalendars: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => stdLib.SafeArray[Calendar],
+    getAllCurrencies: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => stdLib.SafeArray[Currency],
+    getAllFormats: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => stdLib.SafeArray[FormatElement],
+    getAllInstalledLocaleNames: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getCollationOptions: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => stdLib.SafeArray[java.lang.String],
+    getCollatorImplementations: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => stdLib.SafeArray[Implementation],
+    getForbiddenCharacters: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => ForbiddenCharacters,
+    getLanguageCountryInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => LanguageCountryInfo,
+    getLocaleItem: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => LocaleDataItem,
+    getReservedWord: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => stdLib.SafeArray[java.lang.String],
+    getSearchOptions: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => stdLib.SafeArray[java.lang.String],
+    getTransliterations: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XLocaleData = {
-    val __obj = js.Dynamic.literal(AllInstalledLocaleNames = AllInstalledLocaleNames, acquire = acquire, getAllCalendars = getAllCalendars, getAllCurrencies = getAllCurrencies, getAllFormats = getAllFormats, getAllInstalledLocaleNames = getAllInstalledLocaleNames, getCollationOptions = getCollationOptions, getCollatorImplementations = getCollatorImplementations, getForbiddenCharacters = getForbiddenCharacters, getLanguageCountryInfo = getLanguageCountryInfo, getLocaleItem = getLocaleItem, getReservedWord = getReservedWord, getSearchOptions = getSearchOptions, getTransliterations = getTransliterations, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(AllInstalledLocaleNames = AllInstalledLocaleNames, acquire = js.Any.fromFunction0(acquire), getAllCalendars = js.Any.fromFunction1(getAllCalendars), getAllCurrencies = js.Any.fromFunction1(getAllCurrencies), getAllFormats = js.Any.fromFunction1(getAllFormats), getAllInstalledLocaleNames = js.Any.fromFunction0(getAllInstalledLocaleNames), getCollationOptions = js.Any.fromFunction1(getCollationOptions), getCollatorImplementations = js.Any.fromFunction1(getCollatorImplementations), getForbiddenCharacters = js.Any.fromFunction1(getForbiddenCharacters), getLanguageCountryInfo = js.Any.fromFunction1(getLanguageCountryInfo), getLocaleItem = js.Any.fromFunction1(getLocaleItem), getReservedWord = js.Any.fromFunction1(getReservedWord), getSearchOptions = js.Any.fromFunction1(getSearchOptions), getTransliterations = js.Any.fromFunction1(getTransliterations), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XLocaleData]
   }

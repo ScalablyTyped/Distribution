@@ -14,9 +14,9 @@ object Anon_Dom {
   @scala.inline
   def apply[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     dom: stdLib.Node,
-    update: js.Function1[prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], scala.Boolean]
+    update: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S] => scala.Boolean
   ): Anon_Dom[S] = {
-    val __obj = js.Dynamic.literal(dom = dom, update = update)
+    val __obj = js.Dynamic.literal(dom = dom, update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[Anon_Dom[S]]
   }

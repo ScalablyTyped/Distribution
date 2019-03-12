@@ -37,8 +37,8 @@ object DataTableProps {
     gridArea: java.lang.String = null,
     groupBy: java.lang.String = null,
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null,
-    onMore: js.Function1[/* repeated */ js.Any, _] = null,
-    onSearch: js.Function1[/* repeated */ js.Any, _] = null,
+    onMore: /* repeated */ js.Any => _ = null,
+    onSearch: /* repeated */ js.Any => _ = null,
     primaryKey: java.lang.String = null,
     resizeable: js.UndefOr[scala.Boolean] = js.undefined,
     size: grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String = null,
@@ -52,8 +52,8 @@ object DataTableProps {
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
     if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy)
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (onMore != null) __obj.updateDynamic("onMore")(onMore)
-    if (onSearch != null) __obj.updateDynamic("onSearch")(onSearch)
+    if (onMore != null) __obj.updateDynamic("onMore")(js.Any.fromFunction1(onMore))
+    if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction1(onSearch))
     if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
     if (!js.isUndefined(resizeable)) __obj.updateDynamic("resizeable")(resizeable)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

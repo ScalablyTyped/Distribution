@@ -59,21 +59,21 @@ object XPanel {
     Id: java.lang.String,
     OrderIndex: scala.Double,
     Title: java.lang.String,
-    collapse: js.Function0[scala.Unit],
-    expand: js.Function1[scala.Boolean, scala.Unit],
-    getDialog: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow],
-    getId: js.Function0[java.lang.String],
-    getOrderIndex: js.Function0[scala.Double],
-    getTitle: js.Function0[java.lang.String],
-    isExpanded: js.Function0[scala.Boolean],
-    moveDown: js.Function0[scala.Unit],
-    moveFirst: js.Function0[scala.Unit],
-    moveLast: js.Function0[scala.Unit],
-    moveUp: js.Function0[scala.Unit],
-    setOrderIndex: js.Function1[scala.Double, scala.Unit],
-    setTitle: js.Function1[java.lang.String, scala.Unit]
+    collapse: () => scala.Unit,
+    expand: scala.Boolean => scala.Unit,
+    getDialog: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    getId: () => java.lang.String,
+    getOrderIndex: () => scala.Double,
+    getTitle: () => java.lang.String,
+    isExpanded: () => scala.Boolean,
+    moveDown: () => scala.Unit,
+    moveFirst: () => scala.Unit,
+    moveLast: () => scala.Unit,
+    moveUp: () => scala.Unit,
+    setOrderIndex: scala.Double => scala.Unit,
+    setTitle: java.lang.String => scala.Unit
   ): XPanel = {
-    val __obj = js.Dynamic.literal(Dialog = Dialog, Id = Id, OrderIndex = OrderIndex, Title = Title, collapse = collapse, expand = expand, getDialog = getDialog, getId = getId, getOrderIndex = getOrderIndex, getTitle = getTitle, isExpanded = isExpanded, moveDown = moveDown, moveFirst = moveFirst, moveLast = moveLast, moveUp = moveUp, setOrderIndex = setOrderIndex, setTitle = setTitle)
+    val __obj = js.Dynamic.literal(Dialog = Dialog, Id = Id, OrderIndex = OrderIndex, Title = Title, collapse = js.Any.fromFunction0(collapse), expand = js.Any.fromFunction1(expand), getDialog = js.Any.fromFunction0(getDialog), getId = js.Any.fromFunction0(getId), getOrderIndex = js.Any.fromFunction0(getOrderIndex), getTitle = js.Any.fromFunction0(getTitle), isExpanded = js.Any.fromFunction0(isExpanded), moveDown = js.Any.fromFunction0(moveDown), moveFirst = js.Any.fromFunction0(moveFirst), moveLast = js.Any.fromFunction0(moveLast), moveUp = js.Any.fromFunction0(moveUp), setOrderIndex = js.Any.fromFunction1(setOrderIndex), setTitle = js.Any.fromFunction1(setTitle))
   
     __obj.asInstanceOf[XPanel]
   }

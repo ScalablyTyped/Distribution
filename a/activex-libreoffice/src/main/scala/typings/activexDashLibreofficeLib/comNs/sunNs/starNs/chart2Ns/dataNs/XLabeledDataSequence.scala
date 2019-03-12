@@ -31,15 +31,15 @@ object XLabeledDataSequence {
   def apply(
     Label: XDataSequence,
     Values: XDataSequence,
-    acquire: js.Function0[scala.Unit],
-    getLabel: js.Function0[XDataSequence],
-    getValues: js.Function0[XDataSequence],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setLabel: js.Function1[XDataSequence, scala.Unit],
-    setValues: js.Function1[XDataSequence, scala.Unit]
+    acquire: () => scala.Unit,
+    getLabel: () => XDataSequence,
+    getValues: () => XDataSequence,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setLabel: XDataSequence => scala.Unit,
+    setValues: XDataSequence => scala.Unit
   ): XLabeledDataSequence = {
-    val __obj = js.Dynamic.literal(Label = Label, Values = Values, acquire = acquire, getLabel = getLabel, getValues = getValues, queryInterface = queryInterface, release = release, setLabel = setLabel, setValues = setValues)
+    val __obj = js.Dynamic.literal(Label = Label, Values = Values, acquire = js.Any.fromFunction0(acquire), getLabel = js.Any.fromFunction0(getLabel), getValues = js.Any.fromFunction0(getValues), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setLabel = js.Any.fromFunction1(setLabel), setValues = js.Any.fromFunction1(setValues))
   
     __obj.asInstanceOf[XLabeledDataSequence]
   }

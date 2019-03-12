@@ -14,11 +14,11 @@ trait IMFResourceManager extends js.Object {
 object IMFResourceManager {
   @scala.inline
   def apply(
-    GetLocaleSpecificDateFormat: js.Function0[java.lang.String],
-    GetUICultures: js.Function0[IStrings],
-    LoadResourceString: js.Function2[scala.Double, scala.Double, java.lang.String]
+    GetLocaleSpecificDateFormat: () => java.lang.String,
+    GetUICultures: () => IStrings,
+    LoadResourceString: (scala.Double, scala.Double) => java.lang.String
   ): IMFResourceManager = {
-    val __obj = js.Dynamic.literal(GetLocaleSpecificDateFormat = GetLocaleSpecificDateFormat, GetUICultures = GetUICultures, LoadResourceString = LoadResourceString)
+    val __obj = js.Dynamic.literal(GetLocaleSpecificDateFormat = js.Any.fromFunction0(GetLocaleSpecificDateFormat), GetUICultures = js.Any.fromFunction0(GetUICultures), LoadResourceString = js.Any.fromFunction2(LoadResourceString))
   
     __obj.asInstanceOf[IMFResourceManager]
   }

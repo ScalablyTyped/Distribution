@@ -31,13 +31,13 @@ trait ColReorderSettings extends js.Object {
 object ColReorderSettings {
   @scala.inline
   def apply(
-    reorderCallback: js.Function0[scala.Unit],
+    reorderCallback: () => scala.Unit,
     fixedColumnsLeft: scala.Int | scala.Double = null,
     fixedColumnsRight: scala.Int | scala.Double = null,
     order: js.Array[scala.Double] = null,
     realtime: js.UndefOr[scala.Boolean] = js.undefined
   ): ColReorderSettings = {
-    val __obj = js.Dynamic.literal(reorderCallback = reorderCallback)
+    val __obj = js.Dynamic.literal(reorderCallback = js.Any.fromFunction0(reorderCallback))
     if (fixedColumnsLeft != null) __obj.updateDynamic("fixedColumnsLeft")(fixedColumnsLeft.asInstanceOf[js.Any])
     if (fixedColumnsRight != null) __obj.updateDynamic("fixedColumnsRight")(fixedColumnsRight.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order)

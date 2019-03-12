@@ -34,26 +34,15 @@ object ISetPropertiesParams {
     AccessControlListEnforcingMode: mfilesLib.MFilesNs.MFACLEnforcingMode,
     AccessControlListProvidedForEnforcing: IAccessControlList,
     AllowModifyingCheckedInObject: scala.Boolean,
-    Clone: js.Function0[ISetPropertiesParams],
+    Clone: () => ISetPropertiesParams,
     FailIfNotLatestCheckedInVersion: scala.Boolean,
     FullSet: scala.Boolean,
     ObjVer: IObjVer,
     PropertyValuesToRemove: IIDs,
     PropertyValuesToSet: IPropertyValues,
-    SetWithPermissions: js.Function9[
-      IObjVer, 
-      scala.Boolean, 
-      scala.Boolean, 
-      IPropertyValues, 
-      scala.Boolean, 
-      IIDs, 
-      mfilesLib.MFilesNs.MFObjectOperationFlags, 
-      mfilesLib.MFilesNs.MFACLEnforcingMode, 
-      IAccessControlList, 
-      scala.Unit
-    ]
+    SetWithPermissions: (IObjVer, scala.Boolean, scala.Boolean, IPropertyValues, scala.Boolean, IIDs, mfilesLib.MFilesNs.MFObjectOperationFlags, mfilesLib.MFilesNs.MFACLEnforcingMode, IAccessControlList) => scala.Unit
   ): ISetPropertiesParams = {
-    val __obj = js.Dynamic.literal(AccessControlListEnforcingMode = AccessControlListEnforcingMode, AccessControlListProvidedForEnforcing = AccessControlListProvidedForEnforcing, AllowModifyingCheckedInObject = AllowModifyingCheckedInObject, Clone = Clone, FailIfNotLatestCheckedInVersion = FailIfNotLatestCheckedInVersion, FullSet = FullSet, ObjVer = ObjVer, PropertyValuesToRemove = PropertyValuesToRemove, PropertyValuesToSet = PropertyValuesToSet, SetWithPermissions = SetWithPermissions)
+    val __obj = js.Dynamic.literal(AccessControlListEnforcingMode = AccessControlListEnforcingMode, AccessControlListProvidedForEnforcing = AccessControlListProvidedForEnforcing, AllowModifyingCheckedInObject = AllowModifyingCheckedInObject, Clone = js.Any.fromFunction0(Clone), FailIfNotLatestCheckedInVersion = FailIfNotLatestCheckedInVersion, FullSet = FullSet, ObjVer = ObjVer, PropertyValuesToRemove = PropertyValuesToRemove, PropertyValuesToSet = PropertyValuesToSet, SetWithPermissions = js.Any.fromFunction9(SetWithPermissions))
   
     __obj.asInstanceOf[ISetPropertiesParams]
   }

@@ -127,26 +127,26 @@ object DynatreeOptions {
     keyboard: js.UndefOr[scala.Boolean] = js.undefined,
     minExpandLevel: scala.Int | scala.Double = null,
     noLink: js.UndefOr[scala.Boolean] = js.undefined,
-    onActivate: js.Function1[/* dtnode */ DynaTreeNode, scala.Unit] = null,
-    onBlur: js.Function2[/* dtnode */ DynaTreeNode, /* event */ stdLib.Event, scala.Boolean] = null,
-    onClick: js.Function2[/* dtnode */ DynaTreeNode, /* event */ stdLib.Event, scala.Boolean] = null,
-    onCreate: js.Function2[/* dtnode */ DynaTreeNode, /* nodeSpan */ js.Any, scala.Unit] = null,
-    onCustomRender: js.Function1[/* dtnode */ DynaTreeNode, scala.Unit] = null,
-    onDblClick: js.Function2[/* dtnode */ DynaTreeNode, /* event */ stdLib.Event, scala.Boolean] = null,
-    onDeactivate: js.Function1[/* dtnode */ DynaTreeNode, scala.Unit] = null,
-    onExpand: js.Function2[/* flag */ java.lang.String, /* dtnode */ DynaTreeNode, scala.Unit] = null,
-    onFocus: js.Function2[/* dtnode */ DynaTreeNode, /* event */ stdLib.Event, scala.Boolean] = null,
-    onKeydown: js.Function2[/* dtnode */ DynaTreeNode, /* event */ stdLib.Event, scala.Boolean] = null,
-    onKeypress: js.Function2[/* dtnode */ DynaTreeNode, /* event */ stdLib.Event, scala.Boolean] = null,
-    onLazyRead: js.Function1[/* dtnode */ DynaTreeNode, scala.Unit] = null,
-    onPostInit: js.Function2[/* isReloading */ scala.Boolean, /* isError */ scala.Boolean, scala.Unit] = null,
-    onQueryActivate: js.Function2[/* flag */ java.lang.String, /* dtnode */ DynaTreeNode, scala.Unit] = null,
-    onQueryExpand: js.Function2[/* flag */ java.lang.String, /* dtnode */ DynaTreeNode, scala.Unit] = null,
-    onQuerySelect: js.Function2[/* flag */ java.lang.String, /* dtnode */ DynaTreeNode, scala.Unit] = null,
-    onRender: js.Function2[/* dtnode */ DynaTreeNode, /* nodeSpan */ js.Any, scala.Unit] = null,
-    onSelect: js.Function2[/* flag */ java.lang.String, /* dtnode */ DynaTreeNode, scala.Unit] = null,
+    onActivate: /* dtnode */ DynaTreeNode => scala.Unit = null,
+    onBlur: (/* dtnode */ DynaTreeNode, /* event */ stdLib.Event) => scala.Boolean = null,
+    onClick: (/* dtnode */ DynaTreeNode, /* event */ stdLib.Event) => scala.Boolean = null,
+    onCreate: (/* dtnode */ DynaTreeNode, /* nodeSpan */ js.Any) => scala.Unit = null,
+    onCustomRender: /* dtnode */ DynaTreeNode => scala.Unit = null,
+    onDblClick: (/* dtnode */ DynaTreeNode, /* event */ stdLib.Event) => scala.Boolean = null,
+    onDeactivate: /* dtnode */ DynaTreeNode => scala.Unit = null,
+    onExpand: (/* flag */ java.lang.String, /* dtnode */ DynaTreeNode) => scala.Unit = null,
+    onFocus: (/* dtnode */ DynaTreeNode, /* event */ stdLib.Event) => scala.Boolean = null,
+    onKeydown: (/* dtnode */ DynaTreeNode, /* event */ stdLib.Event) => scala.Boolean = null,
+    onKeypress: (/* dtnode */ DynaTreeNode, /* event */ stdLib.Event) => scala.Boolean = null,
+    onLazyRead: /* dtnode */ DynaTreeNode => scala.Unit = null,
+    onPostInit: (/* isReloading */ scala.Boolean, /* isError */ scala.Boolean) => scala.Unit = null,
+    onQueryActivate: (/* flag */ java.lang.String, /* dtnode */ DynaTreeNode) => scala.Unit = null,
+    onQueryExpand: (/* flag */ java.lang.String, /* dtnode */ DynaTreeNode) => scala.Unit = null,
+    onQuerySelect: (/* flag */ java.lang.String, /* dtnode */ DynaTreeNode) => scala.Unit = null,
+    onRender: (/* dtnode */ DynaTreeNode, /* nodeSpan */ js.Any) => scala.Unit = null,
+    onSelect: (/* flag */ java.lang.String, /* dtnode */ DynaTreeNode) => scala.Unit = null,
     persist: js.UndefOr[scala.Boolean] = js.undefined,
-    postProcess: js.Function2[/* data */ js.Any, /* dataType */ js.Any, scala.Unit] = null,
+    postProcess: (/* data */ js.Any, /* dataType */ js.Any) => scala.Unit = null,
     selectMode: scala.Int | scala.Double = null,
     strings: DynaTreeStringsOptions = null,
     title: java.lang.String = null
@@ -174,26 +174,26 @@ object DynatreeOptions {
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
     if (minExpandLevel != null) __obj.updateDynamic("minExpandLevel")(minExpandLevel.asInstanceOf[js.Any])
     if (!js.isUndefined(noLink)) __obj.updateDynamic("noLink")(noLink)
-    if (onActivate != null) __obj.updateDynamic("onActivate")(onActivate)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onCreate != null) __obj.updateDynamic("onCreate")(onCreate)
-    if (onCustomRender != null) __obj.updateDynamic("onCustomRender")(onCustomRender)
-    if (onDblClick != null) __obj.updateDynamic("onDblClick")(onDblClick)
-    if (onDeactivate != null) __obj.updateDynamic("onDeactivate")(onDeactivate)
-    if (onExpand != null) __obj.updateDynamic("onExpand")(onExpand)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onKeydown != null) __obj.updateDynamic("onKeydown")(onKeydown)
-    if (onKeypress != null) __obj.updateDynamic("onKeypress")(onKeypress)
-    if (onLazyRead != null) __obj.updateDynamic("onLazyRead")(onLazyRead)
-    if (onPostInit != null) __obj.updateDynamic("onPostInit")(onPostInit)
-    if (onQueryActivate != null) __obj.updateDynamic("onQueryActivate")(onQueryActivate)
-    if (onQueryExpand != null) __obj.updateDynamic("onQueryExpand")(onQueryExpand)
-    if (onQuerySelect != null) __obj.updateDynamic("onQuerySelect")(onQuerySelect)
-    if (onRender != null) __obj.updateDynamic("onRender")(onRender)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onActivate != null) __obj.updateDynamic("onActivate")(js.Any.fromFunction1(onActivate))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2(onBlur))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
+    if (onCreate != null) __obj.updateDynamic("onCreate")(js.Any.fromFunction2(onCreate))
+    if (onCustomRender != null) __obj.updateDynamic("onCustomRender")(js.Any.fromFunction1(onCustomRender))
+    if (onDblClick != null) __obj.updateDynamic("onDblClick")(js.Any.fromFunction2(onDblClick))
+    if (onDeactivate != null) __obj.updateDynamic("onDeactivate")(js.Any.fromFunction1(onDeactivate))
+    if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction2(onExpand))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction2(onFocus))
+    if (onKeydown != null) __obj.updateDynamic("onKeydown")(js.Any.fromFunction2(onKeydown))
+    if (onKeypress != null) __obj.updateDynamic("onKeypress")(js.Any.fromFunction2(onKeypress))
+    if (onLazyRead != null) __obj.updateDynamic("onLazyRead")(js.Any.fromFunction1(onLazyRead))
+    if (onPostInit != null) __obj.updateDynamic("onPostInit")(js.Any.fromFunction2(onPostInit))
+    if (onQueryActivate != null) __obj.updateDynamic("onQueryActivate")(js.Any.fromFunction2(onQueryActivate))
+    if (onQueryExpand != null) __obj.updateDynamic("onQueryExpand")(js.Any.fromFunction2(onQueryExpand))
+    if (onQuerySelect != null) __obj.updateDynamic("onQuerySelect")(js.Any.fromFunction2(onQuerySelect))
+    if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction2(onRender))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
     if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist)
-    if (postProcess != null) __obj.updateDynamic("postProcess")(postProcess)
+    if (postProcess != null) __obj.updateDynamic("postProcess")(js.Any.fromFunction2(postProcess))
     if (selectMode != null) __obj.updateDynamic("selectMode")(selectMode.asInstanceOf[js.Any])
     if (strings != null) __obj.updateDynamic("strings")(strings)
     if (title != null) __obj.updateDynamic("title")(title)

@@ -14,12 +14,12 @@ trait Term extends js.Object {
 object Term {
   @scala.inline
   def apply(
-    coefficient: js.Function0[algebraDotJsLib.algebraDotJsMod.algebraNs.jsNs.Fraction],
+    coefficient: () => algebraDotJsLib.algebraDotJsMod.algebraNs.jsNs.Fraction,
     coefficients: js.Array[algebraDotJsLib.algebraDotJsMod.algebraNs.jsNs.Fraction],
-    toString: js.Function0[java.lang.String],
+    toString: () => java.lang.String,
     variables: js.Array[Variable]
   ): Term = {
-    val __obj = js.Dynamic.literal(coefficient = coefficient, coefficients = coefficients, toString = toString, variables = variables)
+    val __obj = js.Dynamic.literal(coefficient = js.Any.fromFunction0(coefficient), coefficients = coefficients, toString = js.Any.fromFunction0(toString), variables = variables)
   
     __obj.asInstanceOf[Term]
   }

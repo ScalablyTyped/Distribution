@@ -21,12 +21,12 @@ object OptionsLocale {
   def apply(
     langs: js.Any = null,
     locale: scala.Boolean | java.lang.String = null,
-    localized: js.Function2[/* locale */ java.lang.String, /* lang */ js.Any, scala.Unit] = null
+    localized: (/* locale */ java.lang.String, /* lang */ js.Any) => scala.Unit = null
   ): OptionsLocale = {
     val __obj = js.Dynamic.literal()
     if (langs != null) __obj.updateDynamic("langs")(langs)
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (localized != null) __obj.updateDynamic("localized")(localized)
+    if (localized != null) __obj.updateDynamic("localized")(js.Any.fromFunction2(localized))
     __obj.asInstanceOf[OptionsLocale]
   }
 }

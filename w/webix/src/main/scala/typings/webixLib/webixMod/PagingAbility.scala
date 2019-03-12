@@ -13,12 +13,8 @@ trait PagingAbility extends js.Object {
 
 object PagingAbility {
   @scala.inline
-  def apply(
-    getPage: js.Function0[scala.Double],
-    getPager: js.Function0[js.Any],
-    setPage: js.Function1[scala.Double, scala.Unit]
-  ): PagingAbility = {
-    val __obj = js.Dynamic.literal(getPage = getPage, getPager = getPager, setPage = setPage)
+  def apply(getPage: () => scala.Double, getPager: () => js.Any, setPage: scala.Double => scala.Unit): PagingAbility = {
+    val __obj = js.Dynamic.literal(getPage = js.Any.fromFunction0(getPage), getPager = js.Any.fromFunction0(getPager), setPage = js.Any.fromFunction1(setPage))
   
     __obj.asInstanceOf[PagingAbility]
   }

@@ -21,7 +21,7 @@ trait XPrimitiveFactory2D
   def createPrimitivesFromXDrawPage(
     xDrawPage: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage,
     aParms: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-  ): activexDashInteropLib.SafeArray[XPrimitive2D]
+  ): stdLib.SafeArray[XPrimitive2D]
   /**
     * Create primitives from {@link com.sun.star.drawing.XShape}
     * @param xShape The XShape, for which the primitives are to be generated. Specifying an invalid or empty shape here will result in an empty return value.
@@ -31,27 +31,19 @@ trait XPrimitiveFactory2D
   def createPrimitivesFromXShape(
     xShape: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape,
     aParms: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-  ): activexDashInteropLib.SafeArray[XPrimitive2D]
+  ): stdLib.SafeArray[XPrimitive2D]
 }
 
 object XPrimitiveFactory2D {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createPrimitivesFromXDrawPage: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      activexDashInteropLib.SafeArray[XPrimitive2D]
-    ],
-    createPrimitivesFromXShape: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      activexDashInteropLib.SafeArray[XPrimitive2D]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createPrimitivesFromXDrawPage: (activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => stdLib.SafeArray[XPrimitive2D],
+    createPrimitivesFromXShape: (activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => stdLib.SafeArray[XPrimitive2D],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XPrimitiveFactory2D = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createPrimitivesFromXDrawPage = createPrimitivesFromXDrawPage, createPrimitivesFromXShape = createPrimitivesFromXShape, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createPrimitivesFromXDrawPage = js.Any.fromFunction2(createPrimitivesFromXDrawPage), createPrimitivesFromXShape = js.Any.fromFunction2(createPrimitivesFromXShape), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XPrimitiveFactory2D]
   }

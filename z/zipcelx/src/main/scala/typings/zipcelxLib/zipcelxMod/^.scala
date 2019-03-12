@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("zipcelx", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def default(config: zipcelxLib.zipcelxMod.ZipCelXConfig): js.Promise[stdLib.Blob] = js.native
+  def default(config: ZipCelXConfig): js.Promise[stdLib.Blob] = js.native
 }
 

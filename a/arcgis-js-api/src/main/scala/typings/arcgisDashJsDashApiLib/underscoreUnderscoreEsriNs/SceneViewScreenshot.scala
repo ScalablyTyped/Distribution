@@ -27,10 +27,10 @@ object SceneViewScreenshot {
     constructor: js.Function,
     data: stdLib.ImageData,
     dataUrl: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): SceneViewScreenshot = {
-    val __obj = js.Dynamic.literal(constructor = constructor, data = data, dataUrl = dataUrl, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, data = data, dataUrl = dataUrl, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[SceneViewScreenshot]
   }

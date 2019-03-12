@@ -31,13 +31,13 @@ object UniqueValueRendererUniqueValueInfos {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     symbol: Symbol,
     value: java.lang.String | scala.Double,
     label: java.lang.String = null
   ): UniqueValueRendererUniqueValueInfos = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, symbol = symbol, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), symbol = symbol, value = value.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label)
     __obj.asInstanceOf[UniqueValueRendererUniqueValueInfos]
   }

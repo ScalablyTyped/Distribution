@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JackRabbit
   extends nodeLib.NodeJSNs.EventEmitter {
-  def close(callback: js.Function1[/* e */ nodeLib.Error, _]): scala.Unit = js.native
+  def close(callback: js.Function1[/* e */ stdLib.Error, _]): scala.Unit = js.native
   def default(): Exchange = js.native
   def direct(): Exchange = js.native
   def direct(name: java.lang.String): Exchange = js.native

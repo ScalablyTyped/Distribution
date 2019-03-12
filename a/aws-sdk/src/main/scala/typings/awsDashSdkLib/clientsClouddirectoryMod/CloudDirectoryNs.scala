@@ -20,11 +20,11 @@ object CloudDirectoryNs extends js.Object {
     /**
       * A reference to the object you are adding the specified facet to.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
     /**
       * Identifiers for the facet that you are adding to the object. See SchemaFacet for details.
       */
-    var SchemaFacet: SchemaFacet
+    var SchemaFacet: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.SchemaFacet
   }
   
   trait AddFacetToObjectResponse extends js.Object
@@ -63,7 +63,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The link name with which the child object is attached to the parent.
       */
-    var LinkName: LinkName
+    var LinkName: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.LinkName
     /**
       * The parent object reference.
       */
@@ -85,7 +85,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The reference that identifies the object to which the policy will be attached.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
     /**
       * The reference that is associated with the policy object.
       */
@@ -150,7 +150,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The name of the facet that the attribute exists within.
       */
-    var FacetName: FacetName
+    var FacetName: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.FacetName
     /**
       * The name of the attribute.
       */
@@ -176,7 +176,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The attribute name of the typed link.
       */
-    var AttributeName: AttributeName
+    var AttributeName: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.AttributeName
     /**
       * The value for the typed link.
       */
@@ -191,11 +191,11 @@ object CloudDirectoryNs extends js.Object {
     /**
       * A reference to the object being mutated.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
     /**
       * Represents the facet being added to the object.
       */
-    var SchemaFacet: SchemaFacet
+    var SchemaFacet: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.SchemaFacet
   }
   
   trait BatchAddFacetToObjectResponse extends js.Object
@@ -208,7 +208,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The name of the link.
       */
-    var LinkName: LinkName
+    var LinkName: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.LinkName
     /**
       * The parent object reference.
       */
@@ -226,7 +226,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The reference that identifies the object to which the policy will be attached.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
     /**
       * The reference that is associated with the policy object.
       */
@@ -343,7 +343,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The reference that identifies the object.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait BatchDeleteObjectResponse extends js.Object
@@ -374,7 +374,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The name of the link.
       */
-    var LinkName: LinkName
+    var LinkName: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.LinkName
     /**
       * Parent reference from which the object with the specified link name is detached.
       */
@@ -392,7 +392,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * Reference that identifies the object whose policy object will be detached.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
     /**
       * Reference that identifies the policy object.
       */
@@ -405,7 +405,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * Used to accept a typed link specifier as input.
       */
-    var TypedLinkSpecifier: TypedLinkSpecifier
+    var TypedLinkSpecifier: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.TypedLinkSpecifier
   }
   
   trait BatchDetachTypedLinkResponse extends js.Object
@@ -418,7 +418,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * Allows a typed link specifier to be accepted as input.
       */
-    var TypedLinkSpecifier: TypedLinkSpecifier
+    var TypedLinkSpecifier: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.TypedLinkSpecifier
   }
   
   trait BatchGetLinkAttributesResponse extends js.Object {
@@ -436,11 +436,11 @@ object CloudDirectoryNs extends js.Object {
     /**
       * Reference that identifies the object whose attributes will be retrieved.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
     /**
       * Identifier for the facet whose attributes will be retrieved. See SchemaFacet for details.
       */
-    var SchemaFacet: SchemaFacet
+    var SchemaFacet: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.SchemaFacet
   }
   
   trait BatchGetObjectAttributesResponse extends js.Object {
@@ -454,7 +454,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * A reference to the object.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait BatchGetObjectInformationResponse extends js.Object {
@@ -514,7 +514,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The reference that identifies the object whose attributes will be listed.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait BatchListIncomingTypedLinksResponse extends js.Object {
@@ -574,7 +574,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * Reference of the object whose attributes need to be listed.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait BatchListObjectAttributesResponse extends js.Object {
@@ -600,7 +600,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * Reference of the object for which child objects are being listed.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait BatchListObjectChildrenResponse extends js.Object {
@@ -626,7 +626,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The reference that identifies the object whose attributes will be listed.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait BatchListObjectParentPathsResponse extends js.Object {
@@ -643,7 +643,7 @@ object CloudDirectoryNs extends js.Object {
   trait BatchListObjectParents extends js.Object {
     var MaxResults: js.UndefOr[NumberResults] = js.undefined
     var NextToken: js.UndefOr[NextToken] = js.undefined
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait BatchListObjectParentsResponse extends js.Object {
@@ -663,7 +663,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The reference that identifies the object whose attributes will be listed.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait BatchListObjectPoliciesResponse extends js.Object {
@@ -697,7 +697,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The reference that identifies the object whose attributes will be listed.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait BatchListOutgoingTypedLinksResponse extends js.Object {
@@ -749,7 +749,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * Reference that identifies the object whose policies will be looked up.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait BatchLookupPolicyResponse extends js.Object {
@@ -923,11 +923,11 @@ object CloudDirectoryNs extends js.Object {
     /**
       * A reference to the object whose facet will be removed.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
     /**
       * The facet to remove from the object.
       */
-    var SchemaFacet: SchemaFacet
+    var SchemaFacet: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.SchemaFacet
   }
   
   trait BatchRemoveFacetFromObjectResponse extends js.Object
@@ -940,7 +940,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * Allows a typed link specifier to be accepted as input.
       */
-    var TypedLinkSpecifier: TypedLinkSpecifier
+    var TypedLinkSpecifier: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.TypedLinkSpecifier
   }
   
   trait BatchUpdateLinkAttributesResponse extends js.Object
@@ -953,7 +953,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * Reference that identifies the object.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait BatchUpdateObjectAttributesResponse extends js.Object {
@@ -1133,7 +1133,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The ARN that is associated with the Directory. For more information, see arns.
       */
-    var DirectoryArn: DirectoryArn
+    var DirectoryArn: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.DirectoryArn
     /**
       * The name of the Directory.
       */
@@ -1141,7 +1141,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The root object node of the created directory.
       */
-    var ObjectIdentifier: ObjectIdentifier
+    var ObjectIdentifier: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectIdentifier
   }
   
   trait CreateFacetRequest extends js.Object {
@@ -1291,7 +1291,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * A reference that identifies the object.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait DeleteObjectResponse extends js.Object
@@ -1353,7 +1353,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The link name associated with the object that needs to be detached.
       */
-    var LinkName: LinkName
+    var LinkName: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.LinkName
     /**
       * The parent reference from which the object with the specified link name is detached.
       */
@@ -1375,7 +1375,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * Reference that identifies the object whose policy object will be detached.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
     /**
       * Reference that identifies the policy object.
       */
@@ -1392,7 +1392,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * Used to accept a typed link specifier as input.
       */
-    var TypedLinkSpecifier: TypedLinkSpecifier
+    var TypedLinkSpecifier: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.TypedLinkSpecifier
   }
   
   trait Directory extends js.Object {
@@ -1535,14 +1535,14 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The ARN of the directory.
       */
-    var DirectoryArn: DirectoryArn
+    var DirectoryArn: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.DirectoryArn
   }
   
   trait GetDirectoryResponse extends js.Object {
     /**
       * Metadata about the directory.
       */
-    var Directory: Directory
+    var Directory: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.Directory
   }
   
   trait GetFacetRequest extends js.Object {
@@ -1579,7 +1579,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * Allows a typed link specifier to be accepted as input.
       */
-    var TypedLinkSpecifier: TypedLinkSpecifier
+    var TypedLinkSpecifier: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.TypedLinkSpecifier
   }
   
   trait GetLinkAttributesResponse extends js.Object {
@@ -1605,11 +1605,11 @@ object CloudDirectoryNs extends js.Object {
     /**
       * Reference that identifies the object whose attributes will be retrieved.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
     /**
       * Identifier for the facet whose attributes will be retrieved. See SchemaFacet for details.
       */
-    var SchemaFacet: SchemaFacet
+    var SchemaFacet: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.SchemaFacet
   }
   
   trait GetObjectAttributesResponse extends js.Object {
@@ -1631,7 +1631,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * A reference to the object.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait GetObjectInformationResponse extends js.Object {
@@ -1913,7 +1913,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * Reference that identifies the object whose attributes will be listed.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait ListIncomingTypedLinksResponse extends js.Object {
@@ -2015,7 +2015,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The reference that identifies the object whose attributes will be listed.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait ListObjectAttributesResponse extends js.Object {
@@ -2049,7 +2049,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The reference that identifies the object for which child objects are being listed.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait ListObjectChildrenResponse extends js.Object {
@@ -2079,7 +2079,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The reference that identifies the object whose parent paths are listed.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait ListObjectParentPathsResponse extends js.Object {
@@ -2117,7 +2117,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The reference that identifies the object for which parent objects are being listed.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait ListObjectParentsResponse extends js.Object {
@@ -2155,7 +2155,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * Reference that identifies the object for which policies will be listed.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait ListObjectPoliciesResponse extends js.Object {
@@ -2197,7 +2197,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * A reference that identifies the object whose attributes will be listed.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait ListOutgoingTypedLinksResponse extends js.Object {
@@ -2369,7 +2369,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * Reference that identifies the object whose policies will be looked up.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait LookupPolicyResponse extends js.Object {
@@ -2490,7 +2490,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The major version under which the schema will be published. Schemas have both a major and minor version associated with them.
       */
-    var Version: Version
+    var Version: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.Version
   }
   
   trait PublishSchemaResponse extends js.Object {
@@ -2526,11 +2526,11 @@ object CloudDirectoryNs extends js.Object {
     /**
       * A reference to the object to remove the facet from.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
     /**
       * The facet to remove. See SchemaFacet for details.
       */
-    var SchemaFacet: SchemaFacet
+    var SchemaFacet: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.SchemaFacet
   }
   
   trait RemoveFacetFromObjectResponse extends js.Object
@@ -2701,7 +2701,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The unique name of the typed link facet.
       */
-    var TypedLinkName: TypedLinkName
+    var TypedLinkName: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.TypedLinkName
   }
   
   trait TypedLinkSpecifier extends js.Object {
@@ -4286,7 +4286,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * Allows a typed link specifier to be accepted as input.
       */
-    var TypedLinkSpecifier: TypedLinkSpecifier
+    var TypedLinkSpecifier: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.TypedLinkSpecifier
   }
   
   trait UpdateLinkAttributesResponse extends js.Object
@@ -4303,7 +4303,7 @@ object CloudDirectoryNs extends js.Object {
     /**
       * The reference that identifies the object.
       */
-    var ObjectReference: ObjectReference
+    var ObjectReference: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ObjectReference
   }
   
   trait UpdateObjectAttributesResponse extends js.Object {

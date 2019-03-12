@@ -17,14 +17,14 @@ trait Danmaku extends js.Object {
 object Danmaku {
   @scala.inline
   def apply(
-    clear: js.Function0[scala.Unit],
-    draw: js.Function1[DPlayerDanmakuItem, scala.Unit],
-    hide: js.Function0[scala.Unit],
-    opacity: js.Function1[scala.Double, scala.Unit],
-    send: js.Function2[DPlayerDanmakuItem, js.Function0[scala.Unit], scala.Unit],
-    show: js.Function0[scala.Unit]
+    clear: () => scala.Unit,
+    draw: DPlayerDanmakuItem => scala.Unit,
+    hide: () => scala.Unit,
+    opacity: scala.Double => scala.Unit,
+    send: (DPlayerDanmakuItem, js.Function0[scala.Unit]) => scala.Unit,
+    show: () => scala.Unit
   ): Danmaku = {
-    val __obj = js.Dynamic.literal(clear = clear, draw = draw, hide = hide, opacity = opacity, send = send, show = show)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), draw = js.Any.fromFunction1(draw), hide = js.Any.fromFunction0(hide), opacity = js.Any.fromFunction1(opacity), send = js.Any.fromFunction2(send), show = js.Any.fromFunction0(show))
   
     __obj.asInstanceOf[Danmaku]
   }

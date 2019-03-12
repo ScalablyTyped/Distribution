@@ -15,10 +15,10 @@ object IStringData {
   @scala.inline
   def apply(
     AsString: java.lang.String,
-    Clone: js.Function0[IStringData],
+    Clone: () => IStringData,
     StringDataType: mfilesLib.MFilesNs.MFStringDataType
   ): IStringData = {
-    val __obj = js.Dynamic.literal(AsString = AsString, Clone = Clone, StringDataType = StringDataType)
+    val __obj = js.Dynamic.literal(AsString = AsString, Clone = js.Any.fromFunction0(Clone), StringDataType = StringDataType)
   
     __obj.asInstanceOf[IStringData]
   }

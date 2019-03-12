@@ -17,12 +17,12 @@ object IMediaDeviceControl {
   @scala.inline
   def apply(
     capabilities: MediaDeviceControlCapabilities,
-    tryGetAuto: js.Function0[winrtLib.Anon_SucceededValueBoolean],
-    tryGetValue: js.Function0[winrtLib.Anon_SucceededValue],
-    trySetAuto: js.Function1[scala.Boolean, scala.Boolean],
-    trySetValue: js.Function1[scala.Double, scala.Boolean]
+    tryGetAuto: () => winrtLib.Anon_SucceededValueBoolean,
+    tryGetValue: () => winrtLib.Anon_SucceededValue,
+    trySetAuto: scala.Boolean => scala.Boolean,
+    trySetValue: scala.Double => scala.Boolean
   ): IMediaDeviceControl = {
-    val __obj = js.Dynamic.literal(capabilities = capabilities, tryGetAuto = tryGetAuto, tryGetValue = tryGetValue, trySetAuto = trySetAuto, trySetValue = trySetValue)
+    val __obj = js.Dynamic.literal(capabilities = capabilities, tryGetAuto = js.Any.fromFunction0(tryGetAuto), tryGetValue = js.Any.fromFunction0(tryGetValue), trySetAuto = js.Any.fromFunction1(trySetAuto), trySetValue = js.Any.fromFunction1(trySetValue))
   
     __obj.asInstanceOf[IMediaDeviceControl]
   }

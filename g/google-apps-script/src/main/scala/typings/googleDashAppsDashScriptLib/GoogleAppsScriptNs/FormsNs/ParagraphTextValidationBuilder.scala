@@ -17,20 +17,14 @@ trait ParagraphTextValidationBuilder extends js.Object {
 object ParagraphTextValidationBuilder {
   @scala.inline
   def apply(
-    requireTextContainsPattern: js.Function1[java.lang.String, ParagraphTextValidationBuilder],
-    requireTextDoesNotContainPattern: js.Function1[java.lang.String, ParagraphTextValidationBuilder],
-    requireTextDoesNotMatchPattern: js.Function1[java.lang.String, ParagraphTextValidationBuilder],
-    requireTextLengthGreaterThanOrEqualTo: js.Function1[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      ParagraphTextValidationBuilder
-    ],
-    requireTextLengthLessThanOrEqualTo: js.Function1[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      ParagraphTextValidationBuilder
-    ],
-    requireTextMatchesPattern: js.Function1[java.lang.String, ParagraphTextValidationBuilder]
+    requireTextContainsPattern: java.lang.String => ParagraphTextValidationBuilder,
+    requireTextDoesNotContainPattern: java.lang.String => ParagraphTextValidationBuilder,
+    requireTextDoesNotMatchPattern: java.lang.String => ParagraphTextValidationBuilder,
+    requireTextLengthGreaterThanOrEqualTo: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => ParagraphTextValidationBuilder,
+    requireTextLengthLessThanOrEqualTo: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => ParagraphTextValidationBuilder,
+    requireTextMatchesPattern: java.lang.String => ParagraphTextValidationBuilder
   ): ParagraphTextValidationBuilder = {
-    val __obj = js.Dynamic.literal(requireTextContainsPattern = requireTextContainsPattern, requireTextDoesNotContainPattern = requireTextDoesNotContainPattern, requireTextDoesNotMatchPattern = requireTextDoesNotMatchPattern, requireTextLengthGreaterThanOrEqualTo = requireTextLengthGreaterThanOrEqualTo, requireTextLengthLessThanOrEqualTo = requireTextLengthLessThanOrEqualTo, requireTextMatchesPattern = requireTextMatchesPattern)
+    val __obj = js.Dynamic.literal(requireTextContainsPattern = js.Any.fromFunction1(requireTextContainsPattern), requireTextDoesNotContainPattern = js.Any.fromFunction1(requireTextDoesNotContainPattern), requireTextDoesNotMatchPattern = js.Any.fromFunction1(requireTextDoesNotMatchPattern), requireTextLengthGreaterThanOrEqualTo = js.Any.fromFunction1(requireTextLengthGreaterThanOrEqualTo), requireTextLengthLessThanOrEqualTo = js.Any.fromFunction1(requireTextLengthLessThanOrEqualTo), requireTextMatchesPattern = js.Any.fromFunction1(requireTextMatchesPattern))
   
     __obj.asInstanceOf[ParagraphTextValidationBuilder]
   }

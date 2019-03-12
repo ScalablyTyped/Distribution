@@ -33,33 +33,25 @@ trait XDataInputStream extends XInputStream {
 object XDataInputStream {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    available: js.Function0[scala.Double],
-    closeInput: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    readBoolean: js.Function0[scala.Double],
-    readByte: js.Function0[scala.Double],
-    readBytes: js.Function2[
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      scala.Double, 
-      scala.Double
-    ],
-    readChar: js.Function0[java.lang.String],
-    readDouble: js.Function0[scala.Double],
-    readFloat: js.Function0[scala.Double],
-    readHyper: js.Function0[scala.Double],
-    readLong: js.Function0[scala.Double],
-    readShort: js.Function0[scala.Double],
-    readSomeBytes: js.Function2[
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      scala.Double, 
-      scala.Double
-    ],
-    readUTF: js.Function0[java.lang.String],
-    release: js.Function0[scala.Unit],
-    skipBytes: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    available: () => scala.Double,
+    closeInput: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    readBoolean: () => scala.Double,
+    readByte: () => scala.Double,
+    readBytes: (js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], scala.Double) => scala.Double,
+    readChar: () => java.lang.String,
+    readDouble: () => scala.Double,
+    readFloat: () => scala.Double,
+    readHyper: () => scala.Double,
+    readLong: () => scala.Double,
+    readShort: () => scala.Double,
+    readSomeBytes: (js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], scala.Double) => scala.Double,
+    readUTF: () => java.lang.String,
+    release: () => scala.Unit,
+    skipBytes: scala.Double => scala.Unit
   ): XDataInputStream = {
-    val __obj = js.Dynamic.literal(acquire = acquire, available = available, closeInput = closeInput, queryInterface = queryInterface, readBoolean = readBoolean, readByte = readByte, readBytes = readBytes, readChar = readChar, readDouble = readDouble, readFloat = readFloat, readHyper = readHyper, readLong = readLong, readShort = readShort, readSomeBytes = readSomeBytes, readUTF = readUTF, release = release, skipBytes = skipBytes)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), available = js.Any.fromFunction0(available), closeInput = js.Any.fromFunction0(closeInput), queryInterface = js.Any.fromFunction1(queryInterface), readBoolean = js.Any.fromFunction0(readBoolean), readByte = js.Any.fromFunction0(readByte), readBytes = js.Any.fromFunction2(readBytes), readChar = js.Any.fromFunction0(readChar), readDouble = js.Any.fromFunction0(readDouble), readFloat = js.Any.fromFunction0(readFloat), readHyper = js.Any.fromFunction0(readHyper), readLong = js.Any.fromFunction0(readLong), readShort = js.Any.fromFunction0(readShort), readSomeBytes = js.Any.fromFunction2(readSomeBytes), readUTF = js.Any.fromFunction0(readUTF), release = js.Any.fromFunction0(release), skipBytes = js.Any.fromFunction1(skipBytes))
   
     __obj.asInstanceOf[XDataInputStream]
   }

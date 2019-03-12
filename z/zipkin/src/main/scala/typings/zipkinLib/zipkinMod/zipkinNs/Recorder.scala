@@ -12,8 +12,8 @@ trait Recorder extends js.Object {
 
 object Recorder {
   @scala.inline
-  def apply(record: js.Function1[Record, scala.Unit]): Recorder = {
-    val __obj = js.Dynamic.literal(record = record)
+  def apply(record: Record => scala.Unit): Recorder = {
+    val __obj = js.Dynamic.literal(record = js.Any.fromFunction1(record))
   
     __obj.asInstanceOf[Recorder]
   }

@@ -141,9 +141,9 @@ object SliderProps {
     maximumValue: scala.Int | scala.Double = null,
     minimumTrackTintColor: java.lang.String = null,
     minimumValue: scala.Int | scala.Double = null,
-    onSlidingComplete: js.Function1[/* value */ scala.Double, scala.Unit] = null,
-    onSlidingStart: js.Function1[/* value */ scala.Double, scala.Unit] = null,
-    onValueChange: js.Function1[/* value */ scala.Double, scala.Unit] = null,
+    onSlidingComplete: /* value */ scala.Double => scala.Unit = null,
+    onSlidingStart: /* value */ scala.Double => scala.Unit = null,
+    onValueChange: /* value */ scala.Double => scala.Unit = null,
     orientation: reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.horizontal | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.vertical = null,
     step: scala.Int | scala.Double = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
@@ -163,9 +163,9 @@ object SliderProps {
     if (maximumValue != null) __obj.updateDynamic("maximumValue")(maximumValue.asInstanceOf[js.Any])
     if (minimumTrackTintColor != null) __obj.updateDynamic("minimumTrackTintColor")(minimumTrackTintColor)
     if (minimumValue != null) __obj.updateDynamic("minimumValue")(minimumValue.asInstanceOf[js.Any])
-    if (onSlidingComplete != null) __obj.updateDynamic("onSlidingComplete")(onSlidingComplete)
-    if (onSlidingStart != null) __obj.updateDynamic("onSlidingStart")(onSlidingStart)
-    if (onValueChange != null) __obj.updateDynamic("onValueChange")(onValueChange)
+    if (onSlidingComplete != null) __obj.updateDynamic("onSlidingComplete")(js.Any.fromFunction1(onSlidingComplete))
+    if (onSlidingStart != null) __obj.updateDynamic("onSlidingStart")(js.Any.fromFunction1(onSlidingStart))
+    if (onValueChange != null) __obj.updateDynamic("onValueChange")(js.Any.fromFunction1(onValueChange))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

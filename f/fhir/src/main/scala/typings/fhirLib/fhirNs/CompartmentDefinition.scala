@@ -57,7 +57,7 @@ import scala.scalajs.js.annotation._
   /**
     * Patient | Encounter | RelatedPerson | Practitioner | Device
     */
-  var code: code
+  var code: fhirLib.fhirNs.code
   /**
     * Contact details for the publisher
     */

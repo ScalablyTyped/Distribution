@@ -18,11 +18,11 @@ object SelectInputComponentProps {
   def apply(
     checked: scala.Boolean,
     id: java.lang.String,
-    onClick: js.Function3[java.lang.String, scala.Boolean, js.Any, js.Any],
+    onClick: (java.lang.String, scala.Boolean, js.Any) => js.Any,
     row: js.Any,
     selectType: SelectType
   ): SelectInputComponentProps = {
-    val __obj = js.Dynamic.literal(checked = checked, id = id, onClick = onClick, row = row, selectType = selectType)
+    val __obj = js.Dynamic.literal(checked = checked, id = id, onClick = js.Any.fromFunction3(onClick), row = row, selectType = selectType)
   
     __obj.asInstanceOf[SelectInputComponentProps]
   }

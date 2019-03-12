@@ -12,11 +12,11 @@ trait LinkLengthAccessor[Link] extends LinkAccessor[Link] {
 object LinkLengthAccessor {
   @scala.inline
   def apply[Link](
-    getSourceIndex: js.Function1[Link, scala.Double],
-    getTargetIndex: js.Function1[Link, scala.Double],
-    setLength: js.Function2[Link, scala.Double, scala.Unit]
+    getSourceIndex: Link => scala.Double,
+    getTargetIndex: Link => scala.Double,
+    setLength: (Link, scala.Double) => scala.Unit
   ): LinkLengthAccessor[Link] = {
-    val __obj = js.Dynamic.literal(getSourceIndex = getSourceIndex, getTargetIndex = getTargetIndex, setLength = setLength)
+    val __obj = js.Dynamic.literal(getSourceIndex = js.Any.fromFunction1(getSourceIndex), getTargetIndex = js.Any.fromFunction1(getTargetIndex), setLength = js.Any.fromFunction2(setLength))
   
     __obj.asInstanceOf[LinkLengthAccessor[Link]]
   }

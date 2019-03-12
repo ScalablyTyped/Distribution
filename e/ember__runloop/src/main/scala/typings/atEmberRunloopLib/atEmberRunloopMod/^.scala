@@ -17,7 +17,7 @@ object ^ extends js.Object {
   val later: atEmberRunloopLib.Anon_Arg0Arg1 = js.native
   val next: atEmberRunloopLib.Anon_ArgsMethodTarget = js.native
   val once: atEmberRunloopLib.Anon_ArgsMethodTarget = js.native
-  val run: atEmberRunloopLib.atEmberRunloopMod.RunNamespace = js.native
+  val run: RunNamespace = js.native
   val schedule: atEmberRunloopLib.Anon_ArgsMethodQueue = js.native
   val scheduleOnce: atEmberRunloopLib.Anon_ArgsMethodQueueTarget = js.native
   val throttle: atEmberRunloopLib.Anon_Arg0 = js.native

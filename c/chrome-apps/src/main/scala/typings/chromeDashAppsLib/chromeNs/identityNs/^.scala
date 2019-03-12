@@ -13,11 +13,7 @@ object ^ extends js.Object {
     * @since Chrome 33.
     */
   val onSignInChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function2[
-      /* account */ chromeDashAppsLib.chromeNs.identityNs.AccountInfo, 
-      /* signedIn */ scala.Boolean, 
-      scala.Unit
-    ]
+    js.Function2[/* account */ AccountInfo, /* signedIn */ scala.Boolean, scala.Unit]
   ] = js.native
   /**
     * @requires(dev) **Dev channel only.**
@@ -25,12 +21,7 @@ object ^ extends js.Object {
     * Retrieves a list of AccountInfo objects describing the accounts present on the profile.
     * getAccounts is only supported on dev channel.
     */
-  def getAccounts(
-    callback: js.Function1[
-      /* accounts */ js.Array[chromeDashAppsLib.chromeNs.identityNs.AccountInfo], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def getAccounts(callback: js.Function1[/* accounts */ js.Array[AccountInfo], scala.Unit]): scala.Unit = js.native
   /**
     * Gets an OAuth2 access token using the client ID and
     * scopes specified in the oauth2 section of manifest.json.
@@ -49,18 +40,15 @@ object ^ extends js.Object {
     * @param [callback] Called with an OAuth2 access token as specified by the manifest,
     *                   or undefined if there was an error.
     */
-  def getAuthToken(details: chromeDashAppsLib.chromeNs.identityNs.TokenDetails): scala.Unit = js.native
-  def getAuthToken(
-    details: chromeDashAppsLib.chromeNs.identityNs.TokenDetails,
-    callback: js.Function1[/* token */ java.lang.String, scala.Unit]
-  ): scala.Unit = js.native
+  def getAuthToken(details: TokenDetails): scala.Unit = js.native
+  def getAuthToken(details: TokenDetails, callback: js.Function1[/* token */ java.lang.String, scala.Unit]): scala.Unit = js.native
   /**
     * Retrieves email address and obfuscated gaia id of the user signed into a profile.
     * This API is different from identity.getAccounts in two ways.
     * The information returned is available offline, and it only applies to the primary account for the profile.
     * @since Chrome 37.
     */
-  def getProfileUserInfo(callback: js.Function1[/* userInfo */ chromeDashAppsLib.chromeNs.identityNs.UserInfo, scala.Unit]): scala.Unit = js.native
+  def getProfileUserInfo(callback: js.Function1[/* userInfo */ UserInfo, scala.Unit]): scala.Unit = js.native
   /**
     * Generates a redirect URL to be used in launchWebAuthFlow.
     * The generated URLs match the pattern https://<app-id>.chromiumapp.org/ *.
@@ -85,7 +73,7 @@ object ^ extends js.Object {
     * function(string responseUrl) {...};
     */
   def launchWebAuthFlow(
-    details: chromeDashAppsLib.chromeNs.identityNs.WebAuthFlowOptions,
+    details: WebAuthFlowOptions,
     callback: js.Function1[/* responseUrl */ js.UndefOr[java.lang.String], scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -96,10 +84,7 @@ object ^ extends js.Object {
     * @param details Token information.
     * @param callback Called when the token has been removed from the cache.
     */
-  def removeCachedAuthToken(details: chromeDashAppsLib.chromeNs.identityNs.TokenInformation): scala.Unit = js.native
-  def removeCachedAuthToken(
-    details: chromeDashAppsLib.chromeNs.identityNs.TokenInformation,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
+  def removeCachedAuthToken(details: TokenInformation): scala.Unit = js.native
+  def removeCachedAuthToken(details: TokenInformation, callback: js.Function0[scala.Unit]): scala.Unit = js.native
 }
 

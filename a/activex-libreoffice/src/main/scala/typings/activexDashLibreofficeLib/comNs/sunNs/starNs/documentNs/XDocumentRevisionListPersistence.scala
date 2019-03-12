@@ -13,7 +13,7 @@ trait XDocumentRevisionListPersistence
     *
     * This method does not load any revision itself
     */
-  def load(Storage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.RevisionTag]
+  def load(Storage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.RevisionTag]
   /**
     * Stores a list of available revisions to a storage
     *
@@ -28,20 +28,13 @@ trait XDocumentRevisionListPersistence
 object XDocumentRevisionListPersistence {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    load: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.RevisionTag]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    store: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.RevisionTag], 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    load: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.RevisionTag],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    store: (activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.RevisionTag]) => scala.Unit
   ): XDocumentRevisionListPersistence = {
-    val __obj = js.Dynamic.literal(acquire = acquire, load = load, queryInterface = queryInterface, release = release, store = store)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), load = js.Any.fromFunction1(load), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), store = js.Any.fromFunction2(store))
   
     __obj.asInstanceOf[XDocumentRevisionListPersistence]
   }

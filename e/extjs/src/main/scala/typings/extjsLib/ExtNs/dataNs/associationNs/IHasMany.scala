@@ -29,17 +29,17 @@ object IHasMany {
     associatedName: java.lang.String = null,
     associationKey: java.lang.String = null,
     autoLoad: js.UndefOr[scala.Boolean] = js.undefined,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     extend: java.lang.String = null,
     filterProperty: java.lang.String = null,
     foreignKey: java.lang.String = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getReader: js.Function0[extjsLib.ExtNs.dataNs.readerNs.IReader] = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getReader: () => extjsLib.ExtNs.dataNs.readerNs.IReader = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IHasMany] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IHasMany = null,
     mixins: js.Any = null,
     model: java.lang.String = null,
     name: java.lang.String = null,
@@ -62,17 +62,17 @@ object IHasMany {
     if (associatedName != null) __obj.updateDynamic("associatedName")(associatedName)
     if (associationKey != null) __obj.updateDynamic("associationKey")(associationKey)
     if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
     if (extend != null) __obj.updateDynamic("extend")(extend)
     if (filterProperty != null) __obj.updateDynamic("filterProperty")(filterProperty)
     if (foreignKey != null) __obj.updateDynamic("foreignKey")(foreignKey)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getReader != null) __obj.updateDynamic("getReader")(getReader)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getReader != null) __obj.updateDynamic("getReader")(js.Any.fromFunction0(getReader))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (model != null) __obj.updateDynamic("model")(model)
     if (name != null) __obj.updateDynamic("name")(name)

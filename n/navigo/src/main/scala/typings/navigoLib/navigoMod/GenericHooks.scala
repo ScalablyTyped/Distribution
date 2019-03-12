@@ -19,16 +19,12 @@ trait GenericHooks extends js.Object {
 object GenericHooks {
   @scala.inline
   def apply(
-    after: js.Function1[/* params */ js.UndefOr[navigoLib.Params], scala.Unit] = null,
-    before: js.Function2[
-      /* done */ js.Function1[/* suppress */ js.UndefOr[scala.Boolean], scala.Unit], 
-      /* params */ js.UndefOr[navigoLib.Params], 
-      scala.Unit
-    ] = null
+    after: /* params */ js.UndefOr[navigoLib.Params] => scala.Unit = null,
+    before: (/* done */ js.Function1[/* suppress */ js.UndefOr[scala.Boolean], scala.Unit], /* params */ js.UndefOr[navigoLib.Params]) => scala.Unit = null
   ): GenericHooks = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after)
-    if (before != null) __obj.updateDynamic("before")(before)
+    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction1(after))
+    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction2(before))
     __obj.asInstanceOf[GenericHooks]
   }
 }

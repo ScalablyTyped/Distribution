@@ -1,27 +1,27 @@
 organization := "org.scalablytyped"
 name := "rx-jquery"
-version := "0.0-unknown-dt-20180214Z-692a8d"
+version := "0.0-unknown-dt-20180214Z-dbae87"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-f5a31c",
-  "org.scalablytyped" %%% "rx" % "4.1-dt-20180214Z-fcf653",
-  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20180214Z-0ff5f4",
-  "org.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20180214Z-073684",
-  "org.scalablytyped" %%% "rx-lite" % "4.0-dt-20181017Z-c6a1ff",
-  "org.scalablytyped" %%% "rx-lite-aggregates" % "4.0-dt-20180214Z-d750b1",
-  "org.scalablytyped" %%% "rx-lite-async" % "4.0-dt-20181116Z-4bc33d",
-  "org.scalablytyped" %%% "rx-lite-backpressure" % "4.0-dt-20180214Z-155534",
-  "org.scalablytyped" %%% "rx-lite-coincidence" % "4.0-dt-20180214Z-a185ef",
-  "org.scalablytyped" %%% "rx-lite-experimental" % "4.0-dt-20180214Z-3fdeaa",
-  "org.scalablytyped" %%% "rx-lite-joinpatterns" % "4.0-dt-20180214Z-11fa32",
-  "org.scalablytyped" %%% "rx-lite-testing" % "4.0-dt-20180214Z-ffacfd",
-  "org.scalablytyped" %%% "rx-lite-time" % "4.0-dt-20180214Z-31722d",
-  "org.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20180214Z-ec8b23",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-b709fe",
-  "org.scalablytyped" %%% "std" % "3.3-05be79")
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-8061ce",
+  "org.scalablytyped" %%% "rx" % "4.1-dt-20180214Z-afef54",
+  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20180214Z-d2f95e",
+  "org.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20180214Z-2a1bd5",
+  "org.scalablytyped" %%% "rx-lite" % "4.0-dt-20181017Z-ecbab5",
+  "org.scalablytyped" %%% "rx-lite-aggregates" % "4.0-dt-20180214Z-794432",
+  "org.scalablytyped" %%% "rx-lite-async" % "4.0-dt-20181116Z-e79331",
+  "org.scalablytyped" %%% "rx-lite-backpressure" % "4.0-dt-20180214Z-44ae75",
+  "org.scalablytyped" %%% "rx-lite-coincidence" % "4.0-dt-20180214Z-32f9e9",
+  "org.scalablytyped" %%% "rx-lite-experimental" % "4.0-dt-20180214Z-74c9e9",
+  "org.scalablytyped" %%% "rx-lite-joinpatterns" % "4.0-dt-20180214Z-5dae72",
+  "org.scalablytyped" %%% "rx-lite-testing" % "4.0-dt-20180214Z-ef0eac",
+  "org.scalablytyped" %%% "rx-lite-time" % "4.0-dt-20180214Z-bd0f41",
+  "org.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20180214Z-0ec9a6",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-a5e2be",
+  "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

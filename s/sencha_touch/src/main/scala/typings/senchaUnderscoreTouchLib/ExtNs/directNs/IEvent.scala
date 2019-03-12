@@ -82,36 +82,36 @@ object IEvent {
   def apply(
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     data: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     extend: java.lang.String = null,
-    getCode: js.Function0[_] = null,
-    getData: js.Function0[_] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getMessage: js.Function0[java.lang.String] = null,
-    getName: js.Function0[java.lang.String] = null,
-    getResult: js.Function0[_] = null,
-    getStatus: js.Function0[scala.Boolean] = null,
-    getTransaction: js.Function0[_] = null,
-    getXhr: js.Function0[_] = null,
+    getCode: () => _ = null,
+    getData: () => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getMessage: () => java.lang.String = null,
+    getName: () => java.lang.String = null,
+    getResult: () => _ = null,
+    getStatus: () => scala.Boolean = null,
+    getTransaction: () => _ = null,
+    getXhr: () => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     name: java.lang.String = null,
     platformConfig: js.Any = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setCode: js.Function1[/* code */ js.UndefOr[js.Any], scala.Unit] = null,
-    setData: js.Function1[/* data */ js.UndefOr[js.Any], scala.Unit] = null,
-    setMessage: js.Function1[/* message */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setName: js.Function1[/* name */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setResult: js.Function1[/* result */ js.UndefOr[js.Any], scala.Unit] = null,
-    setStatus: js.Function1[/* status */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setTransaction: js.Function1[/* transaction */ js.UndefOr[js.Any], scala.Unit] = null,
-    setXhr: js.Function1[/* xhr */ js.UndefOr[js.Any], scala.Unit] = null,
+    setCode: /* code */ js.UndefOr[js.Any] => scala.Unit = null,
+    setData: /* data */ js.UndefOr[js.Any] => scala.Unit = null,
+    setMessage: /* message */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setName: /* name */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setResult: /* result */ js.UndefOr[js.Any] => scala.Unit = null,
+    setStatus: /* status */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setTransaction: /* transaction */ js.UndefOr[js.Any] => scala.Unit = null,
+    setXhr: /* xhr */ js.UndefOr[js.Any] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null
@@ -119,36 +119,36 @@ object IEvent {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
     if (data != null) __obj.updateDynamic("data")(data)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getCode != null) __obj.updateDynamic("getCode")(getCode)
-    if (getData != null) __obj.updateDynamic("getData")(getData)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getMessage != null) __obj.updateDynamic("getMessage")(getMessage)
-    if (getName != null) __obj.updateDynamic("getName")(getName)
-    if (getResult != null) __obj.updateDynamic("getResult")(getResult)
-    if (getStatus != null) __obj.updateDynamic("getStatus")(getStatus)
-    if (getTransaction != null) __obj.updateDynamic("getTransaction")(getTransaction)
-    if (getXhr != null) __obj.updateDynamic("getXhr")(getXhr)
+    if (getCode != null) __obj.updateDynamic("getCode")(js.Any.fromFunction0(getCode))
+    if (getData != null) __obj.updateDynamic("getData")(js.Any.fromFunction0(getData))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getMessage != null) __obj.updateDynamic("getMessage")(js.Any.fromFunction0(getMessage))
+    if (getName != null) __obj.updateDynamic("getName")(js.Any.fromFunction0(getName))
+    if (getResult != null) __obj.updateDynamic("getResult")(js.Any.fromFunction0(getResult))
+    if (getStatus != null) __obj.updateDynamic("getStatus")(js.Any.fromFunction0(getStatus))
+    if (getTransaction != null) __obj.updateDynamic("getTransaction")(js.Any.fromFunction0(getTransaction))
+    if (getXhr != null) __obj.updateDynamic("getXhr")(js.Any.fromFunction0(getXhr))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (name != null) __obj.updateDynamic("name")(name)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setCode != null) __obj.updateDynamic("setCode")(setCode)
-    if (setData != null) __obj.updateDynamic("setData")(setData)
-    if (setMessage != null) __obj.updateDynamic("setMessage")(setMessage)
-    if (setName != null) __obj.updateDynamic("setName")(setName)
-    if (setResult != null) __obj.updateDynamic("setResult")(setResult)
-    if (setStatus != null) __obj.updateDynamic("setStatus")(setStatus)
-    if (setTransaction != null) __obj.updateDynamic("setTransaction")(setTransaction)
-    if (setXhr != null) __obj.updateDynamic("setXhr")(setXhr)
+    if (setCode != null) __obj.updateDynamic("setCode")(js.Any.fromFunction1(setCode))
+    if (setData != null) __obj.updateDynamic("setData")(js.Any.fromFunction1(setData))
+    if (setMessage != null) __obj.updateDynamic("setMessage")(js.Any.fromFunction1(setMessage))
+    if (setName != null) __obj.updateDynamic("setName")(js.Any.fromFunction1(setName))
+    if (setResult != null) __obj.updateDynamic("setResult")(js.Any.fromFunction1(setResult))
+    if (setStatus != null) __obj.updateDynamic("setStatus")(js.Any.fromFunction1(setStatus))
+    if (setTransaction != null) __obj.updateDynamic("setTransaction")(js.Any.fromFunction1(setTransaction))
+    if (setXhr != null) __obj.updateDynamic("setXhr")(js.Any.fromFunction1(setXhr))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (uses != null) __obj.updateDynamic("uses")(uses)

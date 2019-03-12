@@ -295,7 +295,7 @@ object TransformOptions {
     filename: java.lang.String = null,
     filenameRelative: java.lang.String = null,
     generatorOpts: atBabelGeneratorLib.atBabelGeneratorMod.GeneratorOptions = null,
-    getModuleId: js.Function1[/* moduleName */ java.lang.String, js.UndefOr[java.lang.String | scala.Null]] = null,
+    getModuleId: /* moduleName */ java.lang.String => js.UndefOr[java.lang.String | scala.Null] = null,
     highlightCode: js.UndefOr[scala.Boolean] = js.undefined,
     ignore: js.Array[java.lang.String] = null,
     inputSourceMap: js.Object = null,
@@ -310,24 +310,19 @@ object TransformOptions {
     retainLines: js.UndefOr[scala.Boolean] = js.undefined,
     root: java.lang.String = null,
     rootMode: atBabelCoreLib.atBabelCoreLibStrings.root | atBabelCoreLib.atBabelCoreLibStrings.upward | atBabelCoreLib.atBabelCoreLibStrings.`upward-optional` = null,
-    shouldPrintComment: js.Function1[/* commentContents */ java.lang.String, scala.Boolean] = null,
+    shouldPrintComment: /* commentContents */ java.lang.String => scala.Boolean = null,
     sourceFileName: java.lang.String = null,
     sourceMaps: scala.Boolean | atBabelCoreLib.atBabelCoreLibStrings.`inline` | atBabelCoreLib.atBabelCoreLibStrings.both = null,
     sourceRoot: java.lang.String = null,
     sourceType: atBabelCoreLib.atBabelCoreLibStrings.script | atBabelCoreLib.atBabelCoreLibStrings.module | atBabelCoreLib.atBabelCoreLibStrings.unambiguous = null,
-    wrapPluginVisitorMethod: js.Function3[
-      /* pluginAlias */ java.lang.String, 
-      /* visitorType */ atBabelCoreLib.atBabelCoreLibStrings.enter | atBabelCoreLib.atBabelCoreLibStrings.exit, 
-      /* callback */ js.Function2[
-        /* path */ atBabelTraverseLib.atBabelTraverseMod.NodePath[atBabelTraverseLib.atBabelTraverseMod.Node], 
-        /* state */ js.Any, 
-        scala.Unit
-      ], 
-      js.Function2[
-        /* path */ atBabelTraverseLib.atBabelTraverseMod.NodePath[atBabelTraverseLib.atBabelTraverseMod.Node], 
-        /* state */ _, 
-        scala.Unit
-      ]
+    wrapPluginVisitorMethod: (/* pluginAlias */ java.lang.String, /* visitorType */ atBabelCoreLib.atBabelCoreLibStrings.enter | atBabelCoreLib.atBabelCoreLibStrings.exit, /* callback */ js.Function2[
+      /* path */ atBabelTraverseLib.atBabelTraverseMod.NodePath[atBabelTraverseLib.atBabelTraverseMod.Node], 
+      /* state */ js.Any, 
+      scala.Unit
+    ]) => js.Function2[
+      /* path */ atBabelTraverseLib.atBabelTraverseMod.NodePath[atBabelTraverseLib.atBabelTraverseMod.Node], 
+      /* state */ _, 
+      scala.Unit
     ] = null
   ): TransformOptions = {
     val __obj = js.Dynamic.literal()
@@ -348,7 +343,7 @@ object TransformOptions {
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (filenameRelative != null) __obj.updateDynamic("filenameRelative")(filenameRelative)
     if (generatorOpts != null) __obj.updateDynamic("generatorOpts")(generatorOpts)
-    if (getModuleId != null) __obj.updateDynamic("getModuleId")(getModuleId)
+    if (getModuleId != null) __obj.updateDynamic("getModuleId")(js.Any.fromFunction1(getModuleId))
     if (!js.isUndefined(highlightCode)) __obj.updateDynamic("highlightCode")(highlightCode)
     if (ignore != null) __obj.updateDynamic("ignore")(ignore)
     if (inputSourceMap != null) __obj.updateDynamic("inputSourceMap")(inputSourceMap)
@@ -363,12 +358,12 @@ object TransformOptions {
     if (!js.isUndefined(retainLines)) __obj.updateDynamic("retainLines")(retainLines)
     if (root != null) __obj.updateDynamic("root")(root)
     if (rootMode != null) __obj.updateDynamic("rootMode")(rootMode.asInstanceOf[js.Any])
-    if (shouldPrintComment != null) __obj.updateDynamic("shouldPrintComment")(shouldPrintComment)
+    if (shouldPrintComment != null) __obj.updateDynamic("shouldPrintComment")(js.Any.fromFunction1(shouldPrintComment))
     if (sourceFileName != null) __obj.updateDynamic("sourceFileName")(sourceFileName)
     if (sourceMaps != null) __obj.updateDynamic("sourceMaps")(sourceMaps.asInstanceOf[js.Any])
     if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot)
     if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
-    if (wrapPluginVisitorMethod != null) __obj.updateDynamic("wrapPluginVisitorMethod")(wrapPluginVisitorMethod)
+    if (wrapPluginVisitorMethod != null) __obj.updateDynamic("wrapPluginVisitorMethod")(js.Any.fromFunction3(wrapPluginVisitorMethod))
     __obj.asInstanceOf[TransformOptions]
   }
 }

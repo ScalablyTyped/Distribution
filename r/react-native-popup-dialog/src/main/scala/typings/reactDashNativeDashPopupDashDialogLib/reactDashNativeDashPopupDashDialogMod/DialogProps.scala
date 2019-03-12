@@ -42,10 +42,10 @@ object DialogProps {
     footer: js.Any = null,
     hasOverlay: js.UndefOr[scala.Boolean] = js.undefined,
     height: scala.Int | scala.Double = null,
-    onDismiss: js.Function0[scala.Unit] = null,
-    onHardwareBackPress: js.Function0[scala.Boolean] = null,
-    onShow: js.Function0[scala.Unit] = null,
-    onTouchOutside: js.Function0[scala.Unit] = null,
+    onDismiss: () => scala.Unit = null,
+    onHardwareBackPress: () => scala.Boolean = null,
+    onShow: () => scala.Unit = null,
+    onTouchOutside: () => scala.Unit = null,
     overlayBackgroundColor: java.lang.String = null,
     overlayOpacity: scala.Int | scala.Double = null,
     overlayPointerEvents: OverlayPointerEventTypes = null,
@@ -63,10 +63,10 @@ object DialogProps {
     if (footer != null) __obj.updateDynamic("footer")(footer)
     if (!js.isUndefined(hasOverlay)) __obj.updateDynamic("hasOverlay")(hasOverlay)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss)
-    if (onHardwareBackPress != null) __obj.updateDynamic("onHardwareBackPress")(onHardwareBackPress)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
-    if (onTouchOutside != null) __obj.updateDynamic("onTouchOutside")(onTouchOutside)
+    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
+    if (onHardwareBackPress != null) __obj.updateDynamic("onHardwareBackPress")(js.Any.fromFunction0(onHardwareBackPress))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
+    if (onTouchOutside != null) __obj.updateDynamic("onTouchOutside")(js.Any.fromFunction0(onTouchOutside))
     if (overlayBackgroundColor != null) __obj.updateDynamic("overlayBackgroundColor")(overlayBackgroundColor)
     if (overlayOpacity != null) __obj.updateDynamic("overlayOpacity")(overlayOpacity.asInstanceOf[js.Any])
     if (overlayPointerEvents != null) __obj.updateDynamic("overlayPointerEvents")(overlayPointerEvents)

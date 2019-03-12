@@ -35,18 +35,10 @@ trait XTableUIProvider extends js.Object {
 object XTableUIProvider {
   @scala.inline
   def apply(
-    getTableEditor: js.Function2[
-      XDatabaseDocumentUI, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
-    ],
-    getTableIcon: js.Function2[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic
-    ]
+    getTableEditor: (XDatabaseDocumentUI, java.lang.String) => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getTableIcon: (java.lang.String, scala.Double) => activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic
   ): XTableUIProvider = {
-    val __obj = js.Dynamic.literal(getTableEditor = getTableEditor, getTableIcon = getTableIcon)
+    val __obj = js.Dynamic.literal(getTableEditor = js.Any.fromFunction2(getTableEditor), getTableIcon = js.Any.fromFunction2(getTableIcon))
   
     __obj.asInstanceOf[XTableUIProvider]
   }

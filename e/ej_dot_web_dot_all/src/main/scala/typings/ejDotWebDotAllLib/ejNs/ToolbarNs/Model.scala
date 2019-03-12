@@ -106,27 +106,27 @@ object Model {
   @scala.inline
   def apply(
     Items: Items = null,
-    click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    click: /* e */ ClickEventArgs => scala.Unit = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
     dataSource: js.Any = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     disabledItemIndices: js.Array[_] = null,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
     enableSeparator: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     enabledItemIndices: js.Array[_] = null,
     fields: java.lang.String = null,
-    focusOut: js.Function1[/* e */ FocusOutEventArgs, scala.Unit] = null,
+    focusOut: /* e */ FocusOutEventArgs => scala.Unit = null,
     height: scala.Double | java.lang.String = null,
     hide: js.UndefOr[scala.Boolean] = js.undefined,
     htmlAttributes: js.Any = null,
     isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
-    itemHover: js.Function1[/* e */ ItemHoverEventArgs, scala.Unit] = null,
-    itemLeave: js.Function1[/* e */ ItemLeaveEventArgs, scala.Unit] = null,
+    itemHover: /* e */ ItemHoverEventArgs => scala.Unit = null,
+    itemLeave: /* e */ ItemLeaveEventArgs => scala.Unit = null,
     orientation: ejDotWebDotAllLib.ejNs.Orientation | java.lang.String = null,
-    overflowClose: js.Function1[/* e */ OverflowCloseEventArgs, scala.Unit] = null,
-    overflowOpen: js.Function1[/* e */ OverflowOpenEventArgs, scala.Unit] = null,
+    overflowClose: /* e */ OverflowCloseEventArgs => scala.Unit = null,
+    overflowOpen: /* e */ OverflowOpenEventArgs => scala.Unit = null,
     query: js.Any = null,
     responsiveType: ResponsiveType | java.lang.String = null,
     showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
@@ -134,27 +134,27 @@ object Model {
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (Items != null) __obj.updateDynamic("Items")(Items)
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (disabledItemIndices != null) __obj.updateDynamic("disabledItemIndices")(disabledItemIndices)
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
     if (!js.isUndefined(enableSeparator)) __obj.updateDynamic("enableSeparator")(enableSeparator)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (enabledItemIndices != null) __obj.updateDynamic("enabledItemIndices")(enabledItemIndices)
     if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (focusOut != null) __obj.updateDynamic("focusOut")(focusOut)
+    if (focusOut != null) __obj.updateDynamic("focusOut")(js.Any.fromFunction1(focusOut))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide)
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
     if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
-    if (itemHover != null) __obj.updateDynamic("itemHover")(itemHover)
-    if (itemLeave != null) __obj.updateDynamic("itemLeave")(itemLeave)
+    if (itemHover != null) __obj.updateDynamic("itemHover")(js.Any.fromFunction1(itemHover))
+    if (itemLeave != null) __obj.updateDynamic("itemLeave")(js.Any.fromFunction1(itemLeave))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (overflowClose != null) __obj.updateDynamic("overflowClose")(overflowClose)
-    if (overflowOpen != null) __obj.updateDynamic("overflowOpen")(overflowOpen)
+    if (overflowClose != null) __obj.updateDynamic("overflowClose")(js.Any.fromFunction1(overflowClose))
+    if (overflowOpen != null) __obj.updateDynamic("overflowOpen")(js.Any.fromFunction1(overflowOpen))
     if (query != null) __obj.updateDynamic("query")(query)
     if (responsiveType != null) __obj.updateDynamic("responsiveType")(responsiveType.asInstanceOf[js.Any])
     if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)

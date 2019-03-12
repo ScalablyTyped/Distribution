@@ -12,11 +12,11 @@ trait LinkSepAccessor[Link] extends LinkAccessor[Link] {
 object LinkSepAccessor {
   @scala.inline
   def apply[Link](
-    getMinSeparation: js.Function1[Link, scala.Double],
-    getSourceIndex: js.Function1[Link, scala.Double],
-    getTargetIndex: js.Function1[Link, scala.Double]
+    getMinSeparation: Link => scala.Double,
+    getSourceIndex: Link => scala.Double,
+    getTargetIndex: Link => scala.Double
   ): LinkSepAccessor[Link] = {
-    val __obj = js.Dynamic.literal(getMinSeparation = getMinSeparation, getSourceIndex = getSourceIndex, getTargetIndex = getTargetIndex)
+    val __obj = js.Dynamic.literal(getMinSeparation = js.Any.fromFunction1(getMinSeparation), getSourceIndex = js.Any.fromFunction1(getSourceIndex), getTargetIndex = js.Any.fromFunction1(getTargetIndex))
   
     __obj.asInstanceOf[LinkSepAccessor[Link]]
   }

@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 package object websequencediagramsMod {
   type diagramCallback = js.Function3[
-    /* error */ nodeLib.Error | scala.Null, 
+    /* error */ stdLib.Error | scala.Null, 
     /* buffer */ js.UndefOr[nodeLib.Buffer], 
     /* mimeType */ js.UndefOr[java.lang.String], 
     scala.Unit
   ]
   type diagramUrlCallback = js.Function2[
-    /* error */ nodeLib.Error | scala.Null, 
+    /* error */ stdLib.Error | scala.Null, 
     /* url */ js.UndefOr[java.lang.String], 
     scala.Unit
   ]

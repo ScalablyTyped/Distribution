@@ -16,14 +16,11 @@ object I18nextSprintfPostProcessor {
   @scala.inline
   def apply(
     name: java.lang.String,
-    overloadTranslationOptionHandler: js.Function1[
-      js.Array[java.lang.String], 
-      i18nextDashSprintfDashPostprocessorLib.Anon_PostProcess
-    ],
-    process: js.Function3[js.Any, java.lang.String, js.Any, js.Any],
+    overloadTranslationOptionHandler: js.Array[java.lang.String] => i18nextDashSprintfDashPostprocessorLib.Anon_PostProcess,
+    process: (js.Any, java.lang.String, js.Any) => js.Any,
     `type`: java.lang.String
   ): I18nextSprintfPostProcessor = {
-    val __obj = js.Dynamic.literal(name = name, overloadTranslationOptionHandler = overloadTranslationOptionHandler, process = process)
+    val __obj = js.Dynamic.literal(name = name, overloadTranslationOptionHandler = js.Any.fromFunction1(overloadTranslationOptionHandler), process = js.Any.fromFunction3(process))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[I18nextSprintfPostProcessor]
   }

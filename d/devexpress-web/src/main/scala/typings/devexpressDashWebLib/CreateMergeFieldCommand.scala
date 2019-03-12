@@ -18,8 +18,8 @@ trait CreateMergeFieldCommand extends CommandWithSimpleStateBase {
 
 object CreateMergeFieldCommand {
   @scala.inline
-  def apply(execute: js.Function1[java.lang.String, scala.Boolean], getState: js.Function0[SimpleCommandState]): CreateMergeFieldCommand = {
-    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  def apply(execute: java.lang.String => scala.Boolean, getState: () => SimpleCommandState): CreateMergeFieldCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
   
     __obj.asInstanceOf[CreateMergeFieldCommand]
   }

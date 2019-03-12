@@ -42,13 +42,13 @@ object SliderProps {
     marks: SliderMarks = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
-    onAfterChange: js.Function1[/* value */ SliderValue, scala.Unit] = null,
-    onChange: js.Function1[/* value */ SliderValue, scala.Unit] = null,
+    onAfterChange: /* value */ SliderValue => scala.Unit = null,
+    onChange: /* value */ SliderValue => scala.Unit = null,
     prefixCls: java.lang.String = null,
     range: js.UndefOr[scala.Boolean] = js.undefined,
     step: scala.Int | scala.Double = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    tipFormatter: js.Function1[/* value */ scala.Double, reactLib.reactMod.ReactNs.ReactNode] = null,
+    tipFormatter: /* value */ scala.Double => reactLib.reactMod.ReactNs.ReactNode = null,
     tooltipPrefixCls: java.lang.String = null,
     tooltipVisible: js.UndefOr[scala.Boolean] = js.undefined,
     value: SliderValue = null,
@@ -64,13 +64,13 @@ object SliderProps {
     if (marks != null) __obj.updateDynamic("marks")(marks)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (onAfterChange != null) __obj.updateDynamic("onAfterChange")(onAfterChange)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onAfterChange != null) __obj.updateDynamic("onAfterChange")(js.Any.fromFunction1(onAfterChange))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (!js.isUndefined(range)) __obj.updateDynamic("range")(range)
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
-    if (tipFormatter != null) __obj.updateDynamic("tipFormatter")(tipFormatter)
+    if (tipFormatter != null) __obj.updateDynamic("tipFormatter")(js.Any.fromFunction1(tipFormatter))
     if (tooltipPrefixCls != null) __obj.updateDynamic("tooltipPrefixCls")(tooltipPrefixCls)
     if (!js.isUndefined(tooltipVisible)) __obj.updateDynamic("tooltipVisible")(tooltipVisible)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

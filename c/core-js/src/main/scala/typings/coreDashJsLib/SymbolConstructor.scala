@@ -18,8 +18,8 @@ trait SymbolConstructor extends js.Object {
 
 object SymbolConstructor {
   @scala.inline
-  def apply(useSimple: js.Function0[scala.Unit], userSetter: js.Function0[scala.Unit]): SymbolConstructor = {
-    val __obj = js.Dynamic.literal(useSimple = useSimple, userSetter = userSetter)
+  def apply(useSimple: () => scala.Unit, userSetter: () => scala.Unit): SymbolConstructor = {
+    val __obj = js.Dynamic.literal(useSimple = js.Any.fromFunction0(useSimple), userSetter = js.Any.fromFunction0(userSetter))
   
     __obj.asInstanceOf[SymbolConstructor]
   }

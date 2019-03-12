@@ -33,13 +33,13 @@ object CarouselEventHandler {
     delegateTarget: TElement,
     direction: bootstrapLib.bootstrapLibStrings.left | bootstrapLib.bootstrapLibStrings.right,
     from: scala.Double,
-    isDefaultPrevented: js.Function0[scala.Boolean],
-    isImmediatePropagationStopped: js.Function0[scala.Boolean],
-    isPropagationStopped: js.Function0[scala.Boolean],
-    preventDefault: js.Function0[scala.Unit],
+    isDefaultPrevented: () => scala.Boolean,
+    isImmediatePropagationStopped: () => scala.Boolean,
+    isPropagationStopped: () => scala.Boolean,
+    preventDefault: () => scala.Unit,
     relatedTarget: stdLib.HTMLElement,
-    stopImmediatePropagation: js.Function0[scala.Unit],
-    stopPropagation: js.Function0[scala.Unit],
+    stopImmediatePropagation: () => scala.Unit,
+    stopPropagation: () => scala.Unit,
     target: stdLib.HTMLElement,
     timeStamp: scala.Double,
     to: scala.Double,
@@ -79,7 +79,7 @@ object CarouselEventHandler {
     view: stdLib.Window = null,
     which: scala.Int | scala.Double = null
   ): CarouselEventHandler[TElement] = {
-    val __obj = js.Dynamic.literal(currentTarget = currentTarget, delegateTarget = delegateTarget.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], from = from, isDefaultPrevented = isDefaultPrevented, isImmediatePropagationStopped = isImmediatePropagationStopped, isPropagationStopped = isPropagationStopped, preventDefault = preventDefault, relatedTarget = relatedTarget, stopImmediatePropagation = stopImmediatePropagation, stopPropagation = stopPropagation, target = target, timeStamp = timeStamp, to = to)
+    val __obj = js.Dynamic.literal(currentTarget = currentTarget, delegateTarget = delegateTarget.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], from = from, isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget, stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target, timeStamp = timeStamp, to = to)
     __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey)
     if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)

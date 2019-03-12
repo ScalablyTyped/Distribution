@@ -12,7 +12,7 @@ object WorkLinkNs extends js.Object {
     /**
       * The root certificate of the CA.
       */
-    var Certificate: Certificate
+    var Certificate: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.Certificate
     /**
       * The certificate name to display.
       */
@@ -20,7 +20,7 @@ object WorkLinkNs extends js.Object {
     /**
       * The ARN of the fleet.
       */
-    var FleetArn: FleetArn
+    var FleetArn: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.FleetArn
   }
   
   trait AssociateWebsiteCertificateAuthorityResponse extends js.Object {
@@ -45,7 +45,7 @@ object WorkLinkNs extends js.Object {
     /**
       * A unique name for the fleet.
       */
-    var FleetName: FleetName
+    var FleetName: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.FleetName
     /**
       * The option to optimize for better performance by routing traffic through the closest AWS Region to users, which may be outside of your home Region.
       */
@@ -63,7 +63,7 @@ object WorkLinkNs extends js.Object {
     /**
       * The ARN of the fleet.
       */
-    var FleetArn: FleetArn
+    var FleetArn: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.FleetArn
   }
   
   trait DeleteFleetResponse extends js.Object
@@ -72,7 +72,7 @@ object WorkLinkNs extends js.Object {
     /**
       * The ARN of the fleet.
       */
-    var FleetArn: FleetArn
+    var FleetArn: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.FleetArn
   }
   
   trait DescribeAuditStreamConfigurationResponse extends js.Object {
@@ -86,7 +86,7 @@ object WorkLinkNs extends js.Object {
     /**
       * The ARN of the fleet.
       */
-    var FleetArn: FleetArn
+    var FleetArn: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.FleetArn
   }
   
   trait DescribeCompanyNetworkConfigurationResponse extends js.Object {
@@ -108,7 +108,7 @@ object WorkLinkNs extends js.Object {
     /**
       * The ARN of the fleet.
       */
-    var FleetArn: FleetArn
+    var FleetArn: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.FleetArn
   }
   
   trait DescribeDevicePolicyConfigurationResponse extends js.Object {
@@ -126,7 +126,7 @@ object WorkLinkNs extends js.Object {
     /**
       * The ARN of the fleet.
       */
-    var FleetArn: FleetArn
+    var FleetArn: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.FleetArn
   }
   
   trait DescribeDeviceResponse extends js.Object {
@@ -172,7 +172,7 @@ object WorkLinkNs extends js.Object {
     /**
       * The ARN of the fleet.
       */
-    var FleetArn: FleetArn
+    var FleetArn: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.FleetArn
   }
   
   trait DescribeFleetMetadataResponse extends js.Object {
@@ -210,7 +210,7 @@ object WorkLinkNs extends js.Object {
     /**
       * The ARN of the fleet.
       */
-    var FleetArn: FleetArn
+    var FleetArn: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.FleetArn
   }
   
   trait DescribeIdentityProviderConfigurationResponse extends js.Object {
@@ -232,7 +232,7 @@ object WorkLinkNs extends js.Object {
     /**
       * The ARN of the fleet.
       */
-    var FleetArn: FleetArn
+    var FleetArn: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.FleetArn
     /**
       * A unique identifier for the certificate authority.
       */
@@ -269,7 +269,7 @@ object WorkLinkNs extends js.Object {
     /**
       * The ARN of the fleet.
       */
-    var FleetArn: FleetArn
+    var FleetArn: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.FleetArn
     /**
       * A unique identifier for the CA.
       */
@@ -313,7 +313,7 @@ object WorkLinkNs extends js.Object {
     /**
       * The ARN of the fleet.
       */
-    var FleetArn: FleetArn
+    var FleetArn: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.FleetArn
     /**
       * The maximum number of results to be included in the next page.
       */
@@ -361,7 +361,7 @@ object WorkLinkNs extends js.Object {
     /**
       * The ARN of the fleet.
       */
-    var FleetArn: FleetArn
+    var FleetArn: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.FleetArn
     /**
       * The maximum number of results to be included in the next page.
       */
@@ -387,11 +387,11 @@ object WorkLinkNs extends js.Object {
     /**
       * The ARN of the fleet.
       */
-    var FleetArn: FleetArn
+    var FleetArn: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.FleetArn
     /**
       * The name of the user.
       */
-    var Username: Username
+    var Username: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.Username
   }
   
   trait SignOutUserResponse extends js.Object
@@ -883,7 +883,7 @@ object WorkLinkNs extends js.Object {
     /**
       * The ARN of the fleet.
       */
-    var FleetArn: FleetArn
+    var FleetArn: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.FleetArn
   }
   
   trait UpdateAuditStreamConfigurationResponse extends js.Object
@@ -892,19 +892,19 @@ object WorkLinkNs extends js.Object {
     /**
       * The ARN of the fleet.
       */
-    var FleetArn: FleetArn
+    var FleetArn: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.FleetArn
     /**
       * The security groups associated with access to the provided subnets.
       */
-    var SecurityGroupIds: SecurityGroupIds
+    var SecurityGroupIds: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.SecurityGroupIds
     /**
       * The subnets used for X-ENI connections from Amazon WorkLink rendering containers.
       */
-    var SubnetIds: SubnetIds
+    var SubnetIds: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.SubnetIds
     /**
       * The VPC with connectivity to associated websites.
       */
-    var VpcId: VpcId
+    var VpcId: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.VpcId
   }
   
   trait UpdateCompanyNetworkConfigurationResponse extends js.Object
@@ -917,7 +917,7 @@ object WorkLinkNs extends js.Object {
     /**
       * The ARN of the fleet.
       */
-    var FleetArn: FleetArn
+    var FleetArn: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.FleetArn
   }
   
   trait UpdateDevicePolicyConfigurationResponse extends js.Object
@@ -930,7 +930,7 @@ object WorkLinkNs extends js.Object {
     /**
       * The ARN of the fleet.
       */
-    var FleetArn: FleetArn
+    var FleetArn: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.FleetArn
     /**
       * The option to optimize for better performance by routing traffic through the closest AWS Region to users, which may be outside of your home Region.
       */
@@ -943,7 +943,7 @@ object WorkLinkNs extends js.Object {
     /**
       * The ARN of the fleet.
       */
-    var FleetArn: FleetArn
+    var FleetArn: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.FleetArn
     /**
       * The SAML metadata document provided by the customer’s identity provider. The existing IdentityProviderSamlMetadata is unset if null is passed.
       */
@@ -951,7 +951,7 @@ object WorkLinkNs extends js.Object {
     /**
       * The type of identity provider.
       */
-    var IdentityProviderType: IdentityProviderType
+    var IdentityProviderType: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.IdentityProviderType
   }
   
   trait UpdateIdentityProviderConfigurationResponse extends js.Object

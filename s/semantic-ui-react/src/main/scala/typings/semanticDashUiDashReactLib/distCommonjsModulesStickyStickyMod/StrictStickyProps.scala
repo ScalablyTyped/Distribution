@@ -28,7 +28,7 @@ trait StrictStickyProps extends js.Object {
     */
   var onBottom: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ StickyProps, 
       scala.Unit
     ]
@@ -41,7 +41,7 @@ trait StrictStickyProps extends js.Object {
     */
   var onStick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ StickyProps, 
       scala.Unit
     ]
@@ -54,7 +54,7 @@ trait StrictStickyProps extends js.Object {
     */
   var onTop: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ StickyProps, 
       scala.Unit
     ]
@@ -67,7 +67,7 @@ trait StrictStickyProps extends js.Object {
     */
   var onUnstick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ StickyProps, 
       scala.Unit
     ]
@@ -90,26 +90,10 @@ object StrictStickyProps {
     className: java.lang.String = null,
     context: js.Object = null,
     offset: scala.Int | scala.Double = null,
-    onBottom: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ StickyProps, 
-      scala.Unit
-    ] = null,
-    onStick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ StickyProps, 
-      scala.Unit
-    ] = null,
-    onTop: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ StickyProps, 
-      scala.Unit
-    ] = null,
-    onUnstick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ StickyProps, 
-      scala.Unit
-    ] = null,
+    onBottom: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
+    onStick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
+    onTop: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
+    onUnstick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
     pushing: js.UndefOr[scala.Boolean] = js.undefined,
     scrollContext: js.Object = null,
     styleElement: js.Object = null
@@ -122,10 +106,10 @@ object StrictStickyProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (context != null) __obj.updateDynamic("context")(context)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (onBottom != null) __obj.updateDynamic("onBottom")(onBottom)
-    if (onStick != null) __obj.updateDynamic("onStick")(onStick)
-    if (onTop != null) __obj.updateDynamic("onTop")(onTop)
-    if (onUnstick != null) __obj.updateDynamic("onUnstick")(onUnstick)
+    if (onBottom != null) __obj.updateDynamic("onBottom")(js.Any.fromFunction2(onBottom))
+    if (onStick != null) __obj.updateDynamic("onStick")(js.Any.fromFunction2(onStick))
+    if (onTop != null) __obj.updateDynamic("onTop")(js.Any.fromFunction2(onTop))
+    if (onUnstick != null) __obj.updateDynamic("onUnstick")(js.Any.fromFunction2(onUnstick))
     if (!js.isUndefined(pushing)) __obj.updateDynamic("pushing")(pushing)
     if (scrollContext != null) __obj.updateDynamic("scrollContext")(scrollContext)
     if (styleElement != null) __obj.updateDynamic("styleElement")(styleElement)

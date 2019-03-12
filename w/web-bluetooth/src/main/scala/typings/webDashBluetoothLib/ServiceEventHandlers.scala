@@ -14,11 +14,11 @@ trait ServiceEventHandlers extends js.Object {
 object ServiceEventHandlers {
   @scala.inline
   def apply(
-    onserviceadded: js.Function2[ServiceEventHandlers, stdLib.Event, js.Any],
-    onservicechanged: js.Function2[ServiceEventHandlers, stdLib.Event, js.Any],
-    onserviceremoved: js.Function2[ServiceEventHandlers, stdLib.Event, js.Any]
+    onserviceadded: (ServiceEventHandlers, stdLib.Event) => js.Any,
+    onservicechanged: (ServiceEventHandlers, stdLib.Event) => js.Any,
+    onserviceremoved: (ServiceEventHandlers, stdLib.Event) => js.Any
   ): ServiceEventHandlers = {
-    val __obj = js.Dynamic.literal(onserviceadded = onserviceadded, onservicechanged = onservicechanged, onserviceremoved = onserviceremoved)
+    val __obj = js.Dynamic.literal(onserviceadded = js.Any.fromFunction2(onserviceadded), onservicechanged = js.Any.fromFunction2(onservicechanged), onserviceremoved = js.Any.fromFunction2(onserviceremoved))
   
     __obj.asInstanceOf[ServiceEventHandlers]
   }

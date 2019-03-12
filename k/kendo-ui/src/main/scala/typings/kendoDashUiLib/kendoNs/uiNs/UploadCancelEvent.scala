@@ -12,12 +12,12 @@ trait UploadCancelEvent extends UploadEvent {
 object UploadCancelEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Upload,
     files: js.Array[_] = null
   ): UploadCancelEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (files != null) __obj.updateDynamic("files")(files)
     __obj.asInstanceOf[UploadCancelEvent]
   }

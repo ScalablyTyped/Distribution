@@ -11,8 +11,8 @@ trait UniversalActionResponse extends js.Object {
 
 object UniversalActionResponse {
   @scala.inline
-  def apply(printJson: js.Function0[java.lang.String]): UniversalActionResponse = {
-    val __obj = js.Dynamic.literal(printJson = printJson)
+  def apply(printJson: () => java.lang.String): UniversalActionResponse = {
+    val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson))
   
     __obj.asInstanceOf[UniversalActionResponse]
   }

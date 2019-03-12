@@ -12,34 +12,34 @@ trait IMemberExpressionSyntax extends IPostfixExpressionSyntax {
 object IMemberExpressionSyntax {
   @scala.inline
   def apply(
-    accept: js.Function1[ISyntaxVisitor, js.Any],
-    childAt: js.Function1[scala.Double, ISyntaxElement],
-    childCount: js.Function0[scala.Double],
-    collectTextElements: js.Function1[js.Array[java.lang.String], scala.Unit],
-    firstToken: js.Function0[ISyntaxToken],
-    fullText: js.Function0[java.lang.String],
-    fullWidth: js.Function0[scala.Double],
-    isExpression: js.Function0[scala.Boolean],
-    isIncrementallyUnusable: js.Function0[scala.Boolean],
-    isList: js.Function0[scala.Boolean],
-    isMemberExpression: js.Function0[scala.Boolean],
-    isNode: js.Function0[scala.Boolean],
-    isPostfixExpression: js.Function0[scala.Boolean],
-    isSeparatedList: js.Function0[scala.Boolean],
-    isToken: js.Function0[scala.Boolean],
-    isTypeScriptSpecific: js.Function0[scala.Boolean],
-    isUnaryExpression: js.Function0[scala.Boolean],
-    kind: js.Function0[SyntaxKind],
-    lastToken: js.Function0[ISyntaxToken],
-    leadingTrivia: js.Function0[ISyntaxTriviaList],
-    leadingTriviaWidth: js.Function0[scala.Double],
-    trailingTrivia: js.Function0[ISyntaxTriviaList],
-    trailingTriviaWidth: js.Function0[scala.Double],
-    width: js.Function0[scala.Double],
-    withLeadingTrivia: js.Function1[ISyntaxTriviaList, IExpressionSyntax],
-    withTrailingTrivia: js.Function1[ISyntaxTriviaList, IExpressionSyntax]
+    accept: ISyntaxVisitor => js.Any,
+    childAt: scala.Double => ISyntaxElement,
+    childCount: () => scala.Double,
+    collectTextElements: js.Array[java.lang.String] => scala.Unit,
+    firstToken: () => ISyntaxToken,
+    fullText: () => java.lang.String,
+    fullWidth: () => scala.Double,
+    isExpression: () => scala.Boolean,
+    isIncrementallyUnusable: () => scala.Boolean,
+    isList: () => scala.Boolean,
+    isMemberExpression: () => scala.Boolean,
+    isNode: () => scala.Boolean,
+    isPostfixExpression: () => scala.Boolean,
+    isSeparatedList: () => scala.Boolean,
+    isToken: () => scala.Boolean,
+    isTypeScriptSpecific: () => scala.Boolean,
+    isUnaryExpression: () => scala.Boolean,
+    kind: () => SyntaxKind,
+    lastToken: () => ISyntaxToken,
+    leadingTrivia: () => ISyntaxTriviaList,
+    leadingTriviaWidth: () => scala.Double,
+    trailingTrivia: () => ISyntaxTriviaList,
+    trailingTriviaWidth: () => scala.Double,
+    width: () => scala.Double,
+    withLeadingTrivia: ISyntaxTriviaList => IExpressionSyntax,
+    withTrailingTrivia: ISyntaxTriviaList => IExpressionSyntax
   ): IMemberExpressionSyntax = {
-    val __obj = js.Dynamic.literal(accept = accept, childAt = childAt, childCount = childCount, collectTextElements = collectTextElements, firstToken = firstToken, fullText = fullText, fullWidth = fullWidth, isExpression = isExpression, isIncrementallyUnusable = isIncrementallyUnusable, isList = isList, isMemberExpression = isMemberExpression, isNode = isNode, isPostfixExpression = isPostfixExpression, isSeparatedList = isSeparatedList, isToken = isToken, isTypeScriptSpecific = isTypeScriptSpecific, isUnaryExpression = isUnaryExpression, kind = kind, lastToken = lastToken, leadingTrivia = leadingTrivia, leadingTriviaWidth = leadingTriviaWidth, trailingTrivia = trailingTrivia, trailingTriviaWidth = trailingTriviaWidth, width = width, withLeadingTrivia = withLeadingTrivia, withTrailingTrivia = withTrailingTrivia)
+    val __obj = js.Dynamic.literal(accept = js.Any.fromFunction1(accept), childAt = js.Any.fromFunction1(childAt), childCount = js.Any.fromFunction0(childCount), collectTextElements = js.Any.fromFunction1(collectTextElements), firstToken = js.Any.fromFunction0(firstToken), fullText = js.Any.fromFunction0(fullText), fullWidth = js.Any.fromFunction0(fullWidth), isExpression = js.Any.fromFunction0(isExpression), isIncrementallyUnusable = js.Any.fromFunction0(isIncrementallyUnusable), isList = js.Any.fromFunction0(isList), isMemberExpression = js.Any.fromFunction0(isMemberExpression), isNode = js.Any.fromFunction0(isNode), isPostfixExpression = js.Any.fromFunction0(isPostfixExpression), isSeparatedList = js.Any.fromFunction0(isSeparatedList), isToken = js.Any.fromFunction0(isToken), isTypeScriptSpecific = js.Any.fromFunction0(isTypeScriptSpecific), isUnaryExpression = js.Any.fromFunction0(isUnaryExpression), kind = js.Any.fromFunction0(kind), lastToken = js.Any.fromFunction0(lastToken), leadingTrivia = js.Any.fromFunction0(leadingTrivia), leadingTriviaWidth = js.Any.fromFunction0(leadingTriviaWidth), trailingTrivia = js.Any.fromFunction0(trailingTrivia), trailingTriviaWidth = js.Any.fromFunction0(trailingTriviaWidth), width = js.Any.fromFunction0(width), withLeadingTrivia = js.Any.fromFunction1(withLeadingTrivia), withTrailingTrivia = js.Any.fromFunction1(withTrailingTrivia))
   
     __obj.asInstanceOf[IMemberExpressionSyntax]
   }

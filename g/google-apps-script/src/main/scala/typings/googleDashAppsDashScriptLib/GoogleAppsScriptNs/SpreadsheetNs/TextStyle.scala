@@ -19,16 +19,16 @@ trait TextStyle extends js.Object {
 object TextStyle {
   @scala.inline
   def apply(
-    copy: js.Function0[TextStyleBuilder],
-    getFontFamily: js.Function0[java.lang.String],
-    getFontSize: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getForegroundColor: js.Function0[java.lang.String],
-    isBold: js.Function0[scala.Boolean],
-    isItalic: js.Function0[scala.Boolean],
-    isStrikethrough: js.Function0[scala.Boolean],
-    isUnderline: js.Function0[scala.Boolean]
+    copy: () => TextStyleBuilder,
+    getFontFamily: () => java.lang.String,
+    getFontSize: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getForegroundColor: () => java.lang.String,
+    isBold: () => scala.Boolean,
+    isItalic: () => scala.Boolean,
+    isStrikethrough: () => scala.Boolean,
+    isUnderline: () => scala.Boolean
   ): TextStyle = {
-    val __obj = js.Dynamic.literal(copy = copy, getFontFamily = getFontFamily, getFontSize = getFontSize, getForegroundColor = getForegroundColor, isBold = isBold, isItalic = isItalic, isStrikethrough = isStrikethrough, isUnderline = isUnderline)
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), getFontFamily = js.Any.fromFunction0(getFontFamily), getFontSize = js.Any.fromFunction0(getFontSize), getForegroundColor = js.Any.fromFunction0(getForegroundColor), isBold = js.Any.fromFunction0(isBold), isItalic = js.Any.fromFunction0(isItalic), isStrikethrough = js.Any.fromFunction0(isStrikethrough), isUnderline = js.Any.fromFunction0(isUnderline))
   
     __obj.asInstanceOf[TextStyle]
   }

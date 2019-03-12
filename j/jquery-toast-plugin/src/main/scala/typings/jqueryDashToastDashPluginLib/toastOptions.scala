@@ -41,11 +41,11 @@ object toastOptions {
   @scala.inline
   def apply(
     text: java.lang.String,
-    afterHidden: js.Function0[_] = null,
-    afterShown: js.Function0[_] = null,
+    afterHidden: () => _ = null,
+    afterShown: () => _ = null,
     allowToastClose: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeHide: js.Function0[_] = null,
-    beforeShow: js.Function0[_] = null,
+    beforeHide: () => _ = null,
+    beforeShow: () => _ = null,
     bgColor: java.lang.String = null,
     heading: java.lang.String = null,
     hideAfter: scala.Double | jqueryDashToastDashPluginLib.jqueryDashToastDashPluginLibNumbers.`false` = null,
@@ -59,11 +59,11 @@ object toastOptions {
     textColor: java.lang.String = null
   ): toastOptions = {
     val __obj = js.Dynamic.literal(text = text)
-    if (afterHidden != null) __obj.updateDynamic("afterHidden")(afterHidden)
-    if (afterShown != null) __obj.updateDynamic("afterShown")(afterShown)
+    if (afterHidden != null) __obj.updateDynamic("afterHidden")(js.Any.fromFunction0(afterHidden))
+    if (afterShown != null) __obj.updateDynamic("afterShown")(js.Any.fromFunction0(afterShown))
     if (!js.isUndefined(allowToastClose)) __obj.updateDynamic("allowToastClose")(allowToastClose)
-    if (beforeHide != null) __obj.updateDynamic("beforeHide")(beforeHide)
-    if (beforeShow != null) __obj.updateDynamic("beforeShow")(beforeShow)
+    if (beforeHide != null) __obj.updateDynamic("beforeHide")(js.Any.fromFunction0(beforeHide))
+    if (beforeShow != null) __obj.updateDynamic("beforeShow")(js.Any.fromFunction0(beforeShow))
     if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor)
     if (heading != null) __obj.updateDynamic("heading")(heading)
     if (hideAfter != null) __obj.updateDynamic("hideAfter")(hideAfter.asInstanceOf[js.Any])

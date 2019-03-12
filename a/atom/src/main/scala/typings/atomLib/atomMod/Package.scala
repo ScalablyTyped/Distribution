@@ -31,14 +31,14 @@ trait Package extends js.Object {
 object Package {
   @scala.inline
   def apply(
-    getBuildFailureOutput: js.Function0[java.lang.String | scala.Null],
-    isCompatible: js.Function0[scala.Boolean],
+    getBuildFailureOutput: () => java.lang.String | scala.Null,
+    isCompatible: () => scala.Boolean,
     name: java.lang.String,
-    onDidDeactivate: js.Function1[js.Function0[scala.Unit], Disposable],
+    onDidDeactivate: js.Function0[scala.Unit] => Disposable,
     path: java.lang.String,
-    rebuild: js.Function0[js.Promise[atomLib.Anon_Code]]
+    rebuild: () => js.Promise[atomLib.Anon_Code]
   ): Package = {
-    val __obj = js.Dynamic.literal(getBuildFailureOutput = getBuildFailureOutput, isCompatible = isCompatible, name = name, onDidDeactivate = onDidDeactivate, path = path, rebuild = rebuild)
+    val __obj = js.Dynamic.literal(getBuildFailureOutput = js.Any.fromFunction0(getBuildFailureOutput), isCompatible = js.Any.fromFunction0(isCompatible), name = name, onDidDeactivate = js.Any.fromFunction1(onDidDeactivate), path = path, rebuild = js.Any.fromFunction0(rebuild))
   
     __obj.asInstanceOf[Package]
   }

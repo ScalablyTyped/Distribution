@@ -26,8 +26,8 @@ trait XShapes2 extends js.Object {
 
 object XShapes2 {
   @scala.inline
-  def apply(addBottom: js.Function1[XShape, scala.Unit], addTop: js.Function1[XShape, scala.Unit]): XShapes2 = {
-    val __obj = js.Dynamic.literal(addBottom = addBottom, addTop = addTop)
+  def apply(addBottom: XShape => scala.Unit, addTop: XShape => scala.Unit): XShapes2 = {
+    val __obj = js.Dynamic.literal(addBottom = js.Any.fromFunction1(addBottom), addTop = js.Any.fromFunction1(addTop))
   
     __obj.asInstanceOf[XShapes2]
   }

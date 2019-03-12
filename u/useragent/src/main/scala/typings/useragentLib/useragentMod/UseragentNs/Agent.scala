@@ -37,12 +37,12 @@ object Agent {
     os: OperatingSystem,
     patch: java.lang.String,
     source: java.lang.String,
-    toAgent: js.Function0[java.lang.String],
-    toJSON: js.Function0[useragentLib.Anon_DeviceFamily],
-    toString: js.Function0[java.lang.String],
-    toVersion: js.Function0[java.lang.String]
+    toAgent: () => java.lang.String,
+    toJSON: () => useragentLib.Anon_DeviceFamily,
+    toString: () => java.lang.String,
+    toVersion: () => java.lang.String
   ): Agent = {
-    val __obj = js.Dynamic.literal(device = device, family = family, major = major, minor = minor, os = os, patch = patch, source = source, toAgent = toAgent, toJSON = toJSON, toString = toString, toVersion = toVersion)
+    val __obj = js.Dynamic.literal(device = device, family = family, major = major, minor = minor, os = os, patch = patch, source = source, toAgent = js.Any.fromFunction0(toAgent), toJSON = js.Any.fromFunction0(toJSON), toString = js.Any.fromFunction0(toString), toVersion = js.Any.fromFunction0(toVersion))
   
     __obj.asInstanceOf[Agent]
   }

@@ -72,16 +72,16 @@ object ColorSchemeForPoint {
     colors: js.Array[Color],
     colorsForClassBreaks: js.Array[ColorSchemeForPointColorsForClassBreaks],
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     id: java.lang.String,
     noDataColor: Color,
     opacity: scala.Double,
     outline: ColorSchemeForPointOutline,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     size: scala.Double,
     theme: java.lang.String
   ): ColorSchemeForPoint = {
-    val __obj = js.Dynamic.literal(colors = colors, colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = hasOwnProperty, id = id, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = propertyIsEnumerable, size = size, theme = theme)
+    val __obj = js.Dynamic.literal(colors = colors, colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size, theme = theme)
   
     __obj.asInstanceOf[ColorSchemeForPoint]
   }

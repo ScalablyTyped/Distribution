@@ -35,16 +35,16 @@ trait XListEntryListener
 object XListEntryListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    allEntriesChanged: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    entryChanged: js.Function1[ListEntryEvent, scala.Unit],
-    entryRangeInserted: js.Function1[ListEntryEvent, scala.Unit],
-    entryRangeRemoved: js.Function1[ListEntryEvent, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    allEntriesChanged: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    entryChanged: ListEntryEvent => scala.Unit,
+    entryRangeInserted: ListEntryEvent => scala.Unit,
+    entryRangeRemoved: ListEntryEvent => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XListEntryListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, allEntriesChanged = allEntriesChanged, disposing = disposing, entryChanged = entryChanged, entryRangeInserted = entryRangeInserted, entryRangeRemoved = entryRangeRemoved, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), allEntriesChanged = js.Any.fromFunction1(allEntriesChanged), disposing = js.Any.fromFunction1(disposing), entryChanged = js.Any.fromFunction1(entryChanged), entryRangeInserted = js.Any.fromFunction1(entryRangeInserted), entryRangeRemoved = js.Any.fromFunction1(entryRangeRemoved), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XListEntryListener]
   }

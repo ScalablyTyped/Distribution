@@ -200,7 +200,7 @@ object JQueryJqGridOptions {
     data: js.Array[_] = null,
     datatype: jqgridLib.jqgridLibStrings.xml | jqgridLib.jqgridLibStrings.xmlstring | jqgridLib.jqgridLibStrings.json | jqgridLib.jqgridLibStrings.jsonstring | jqgridLib.jqgridLibStrings.local | jqgridLib.jqgridLibStrings.javascript | js.Function | jqgridLib.jqgridLibStrings.clientSide = null,
     forceFit: js.UndefOr[scala.Boolean] = js.undefined,
-    gridComplete: js.Function0[scala.Unit] = null,
+    gridComplete: () => scala.Unit = null,
     gridview: js.UndefOr[scala.Boolean] = js.undefined,
     height: scala.Double | java.lang.String | jqgridLib.jqgridLibStrings.auto = null,
     jsonReader: IJqGridJsonReader = null,
@@ -208,14 +208,8 @@ object JQueryJqGridOptions {
     mtype: jqgridLib.jqgridLibStrings.GET | jqgridLib.jqgridLibStrings.POST = null,
     multiboxonly: js.UndefOr[scala.Boolean] = js.undefined,
     multiselect: js.UndefOr[scala.Boolean] = js.undefined,
-    onRightClickRow: js.Function4[
-      /* rowid */ js.Any, 
-      /* iRow */ scala.Double, 
-      /* iCol */ scala.Double, 
-      /* e */ stdLib.Event, 
-      scala.Unit
-    ] = null,
-    onSelectRow: js.Function3[/* id */ java.lang.String, /* status */ js.Any, /* e */ stdLib.Event, scala.Unit] = null,
+    onRightClickRow: (/* rowid */ js.Any, /* iRow */ scala.Double, /* iCol */ scala.Double, /* e */ stdLib.Event) => scala.Unit = null,
+    onSelectRow: (/* id */ java.lang.String, /* status */ js.Any, /* e */ stdLib.Event) => scala.Unit = null,
     pager: java.lang.String = null,
     rowList: js.Array[scala.Double] = null,
     rowNum: scala.Int | scala.Double = null,
@@ -235,7 +229,7 @@ object JQueryJqGridOptions {
     if (data != null) __obj.updateDynamic("data")(data)
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (!js.isUndefined(forceFit)) __obj.updateDynamic("forceFit")(forceFit)
-    if (gridComplete != null) __obj.updateDynamic("gridComplete")(gridComplete)
+    if (gridComplete != null) __obj.updateDynamic("gridComplete")(js.Any.fromFunction0(gridComplete))
     if (!js.isUndefined(gridview)) __obj.updateDynamic("gridview")(gridview)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (jsonReader != null) __obj.updateDynamic("jsonReader")(jsonReader)
@@ -243,8 +237,8 @@ object JQueryJqGridOptions {
     if (mtype != null) __obj.updateDynamic("mtype")(mtype.asInstanceOf[js.Any])
     if (!js.isUndefined(multiboxonly)) __obj.updateDynamic("multiboxonly")(multiboxonly)
     if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect)
-    if (onRightClickRow != null) __obj.updateDynamic("onRightClickRow")(onRightClickRow)
-    if (onSelectRow != null) __obj.updateDynamic("onSelectRow")(onSelectRow)
+    if (onRightClickRow != null) __obj.updateDynamic("onRightClickRow")(js.Any.fromFunction4(onRightClickRow))
+    if (onSelectRow != null) __obj.updateDynamic("onSelectRow")(js.Any.fromFunction3(onSelectRow))
     if (pager != null) __obj.updateDynamic("pager")(pager)
     if (rowList != null) __obj.updateDynamic("rowList")(rowList)
     if (rowNum != null) __obj.updateDynamic("rowNum")(rowNum.asInstanceOf[js.Any])

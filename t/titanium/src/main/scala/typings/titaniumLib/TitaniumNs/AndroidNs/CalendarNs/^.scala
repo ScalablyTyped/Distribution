@@ -67,11 +67,11 @@ object ^ extends js.Object {
   /**
   			 * All alerts in selected calendars.
   			 */
-  val allAlerts: js.Array[titaniumLib.TitaniumNs.AndroidNs.CalendarNs.Alert] = js.native
+  val allAlerts: js.Array[Alert] = js.native
   /**
   			 * All calendars known to the native calendar app.
   			 */
-  val allCalendars: js.Array[titaniumLib.TitaniumNs.AndroidNs.CalendarNs.Calendar] = js.native
+  val allCalendars: js.Array[Calendar] = js.native
   /**
   			 * The name of the API that this proxy corresponds to.
   			 */
@@ -87,7 +87,7 @@ object ^ extends js.Object {
   /**
   			 * All calendars selected within the native calendar app, which may be a subset of `allCalendars`.
   			 */
-  val selectableCalendars: js.Array[titaniumLib.TitaniumNs.AndroidNs.CalendarNs.Calendar] = js.native
+  val selectableCalendars: js.Array[Calendar] = js.native
   /**
   			 * Adds the specified callback as an event listener for the named event.
   			 */
@@ -103,11 +103,11 @@ object ^ extends js.Object {
   /**
   			 * Gets the value of the <Titanium.Android.Calendar.allAlerts> property.
   			 */
-  def getAllAlerts(): js.Array[titaniumLib.TitaniumNs.AndroidNs.CalendarNs.Alert] = js.native
+  def getAllAlerts(): js.Array[Alert] = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Calendar.allCalendars> property.
   			 */
-  def getAllCalendars(): js.Array[titaniumLib.TitaniumNs.AndroidNs.CalendarNs.Calendar] = js.native
+  def getAllCalendars(): js.Array[Calendar] = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Calendar.apiName> property.
   			 */
@@ -119,7 +119,7 @@ object ^ extends js.Object {
   /**
   			 * Gets the calendar with the specified identifier.
   			 */
-  def getCalendarById(id: scala.Double): titaniumLib.TitaniumNs.AndroidNs.CalendarNs.Calendar = js.native
+  def getCalendarById(id: scala.Double): Calendar = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Calendar.lifecycleContainer> property.
   			 */
@@ -127,7 +127,7 @@ object ^ extends js.Object {
   /**
   			 * Gets the value of the <Titanium.Android.Calendar.selectableCalendars> property.
   			 */
-  def getSelectableCalendars(): js.Array[titaniumLib.TitaniumNs.AndroidNs.CalendarNs.Calendar] = js.native
+  def getSelectableCalendars(): js.Array[Calendar] = js.native
   /**
   			 * Removes the specified callback as an event listener for the named event.
   			 */

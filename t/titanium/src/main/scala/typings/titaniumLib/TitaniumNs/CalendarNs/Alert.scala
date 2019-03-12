@@ -97,40 +97,40 @@ object Alert {
   @scala.inline
   def apply(
     absoluteDate: stdLib.Date,
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
     alarmTime: stdLib.Date,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     begin: stdLib.Date,
     bubbleParent: scala.Boolean,
     end: stdLib.Date,
     eventId: scala.Double,
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getAbsoluteDate: js.Function0[stdLib.Date],
-    getAlarmTime: js.Function0[stdLib.Date],
-    getApiName: js.Function0[java.lang.String],
-    getBegin: js.Function0[stdLib.Date],
-    getBubbleParent: js.Function0[scala.Boolean],
-    getEnd: js.Function0[stdLib.Date],
-    getEventId: js.Function0[scala.Double],
-    getId: js.Function0[java.lang.String],
-    getMinutes: js.Function0[scala.Double],
-    getRelativeOffset: js.Function0[scala.Double],
-    getState: js.Function0[scala.Double],
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
+    getAbsoluteDate: () => stdLib.Date,
+    getAlarmTime: () => stdLib.Date,
+    getApiName: () => java.lang.String,
+    getBegin: () => stdLib.Date,
+    getBubbleParent: () => scala.Boolean,
+    getEnd: () => stdLib.Date,
+    getEventId: () => scala.Double,
+    getId: () => java.lang.String,
+    getMinutes: () => scala.Double,
+    getRelativeOffset: () => scala.Double,
+    getState: () => scala.Double,
     id: java.lang.String,
     minutes: scala.Double,
     relativeOffset: scala.Double,
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    setAbsoluteDate: js.Function1[stdLib.Date, scala.Unit],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
-    setRelativeOffset: js.Function1[scala.Double, scala.Unit],
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    setAbsoluteDate: stdLib.Date => scala.Unit,
+    setBubbleParent: scala.Boolean => scala.Unit,
+    setRelativeOffset: scala.Double => scala.Unit,
     state: scala.Double,
-    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    getLifecycleContainer: () => titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
   ): Alert = {
-    val __obj = js.Dynamic.literal(absoluteDate = absoluteDate, addEventListener = addEventListener, alarmTime = alarmTime, apiName = apiName, applyProperties = applyProperties, begin = begin, bubbleParent = bubbleParent, end = end, eventId = eventId, fireEvent = fireEvent, getAbsoluteDate = getAbsoluteDate, getAlarmTime = getAlarmTime, getApiName = getApiName, getBegin = getBegin, getBubbleParent = getBubbleParent, getEnd = getEnd, getEventId = getEventId, getId = getId, getMinutes = getMinutes, getRelativeOffset = getRelativeOffset, getState = getState, id = id, minutes = minutes, relativeOffset = relativeOffset, removeEventListener = removeEventListener, setAbsoluteDate = setAbsoluteDate, setBubbleParent = setBubbleParent, setRelativeOffset = setRelativeOffset, state = state)
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    val __obj = js.Dynamic.literal(absoluteDate = absoluteDate, addEventListener = js.Any.fromFunction2(addEventListener), alarmTime = alarmTime, apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), begin = begin, bubbleParent = bubbleParent, end = end, eventId = eventId, fireEvent = js.Any.fromFunction2(fireEvent), getAbsoluteDate = js.Any.fromFunction0(getAbsoluteDate), getAlarmTime = js.Any.fromFunction0(getAlarmTime), getApiName = js.Any.fromFunction0(getApiName), getBegin = js.Any.fromFunction0(getBegin), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getEnd = js.Any.fromFunction0(getEnd), getEventId = js.Any.fromFunction0(getEventId), getId = js.Any.fromFunction0(getId), getMinutes = js.Any.fromFunction0(getMinutes), getRelativeOffset = js.Any.fromFunction0(getRelativeOffset), getState = js.Any.fromFunction0(getState), id = id, minutes = minutes, relativeOffset = relativeOffset, removeEventListener = js.Any.fromFunction2(removeEventListener), setAbsoluteDate = js.Any.fromFunction1(setAbsoluteDate), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setRelativeOffset = js.Any.fromFunction1(setRelativeOffset), state = state)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
     __obj.asInstanceOf[Alert]

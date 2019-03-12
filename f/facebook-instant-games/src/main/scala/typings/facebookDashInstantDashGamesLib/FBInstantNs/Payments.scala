@@ -60,13 +60,13 @@ trait Payments extends js.Object {
 object Payments {
   @scala.inline
   def apply(
-    consumePurchaseAsync: js.Function1[java.lang.String, js.Promise[scala.Unit]],
-    getCatalogAsync: js.Function0[js.Promise[js.Array[Product]]],
-    getPurchasesAsync: js.Function0[js.Promise[js.Array[Purchase]]],
-    onReady: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    purchaseAsync: js.Function1[PurchaseConfig, js.Promise[Purchase]]
+    consumePurchaseAsync: java.lang.String => js.Promise[scala.Unit],
+    getCatalogAsync: () => js.Promise[js.Array[Product]],
+    getPurchasesAsync: () => js.Promise[js.Array[Purchase]],
+    onReady: js.Function0[scala.Unit] => scala.Unit,
+    purchaseAsync: PurchaseConfig => js.Promise[Purchase]
   ): Payments = {
-    val __obj = js.Dynamic.literal(consumePurchaseAsync = consumePurchaseAsync, getCatalogAsync = getCatalogAsync, getPurchasesAsync = getPurchasesAsync, onReady = onReady, purchaseAsync = purchaseAsync)
+    val __obj = js.Dynamic.literal(consumePurchaseAsync = js.Any.fromFunction1(consumePurchaseAsync), getCatalogAsync = js.Any.fromFunction0(getCatalogAsync), getPurchasesAsync = js.Any.fromFunction0(getPurchasesAsync), onReady = js.Any.fromFunction1(onReady), purchaseAsync = js.Any.fromFunction1(purchaseAsync))
   
     __obj.asInstanceOf[Payments]
   }

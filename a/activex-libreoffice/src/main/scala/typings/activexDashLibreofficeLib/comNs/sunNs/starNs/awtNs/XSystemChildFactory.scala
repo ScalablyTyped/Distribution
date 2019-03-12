@@ -25,17 +25,12 @@ trait XSystemChildFactory
 object XSystemChildFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createSystemChild: js.Function3[
-      js.Any, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      scala.Double, 
-      XWindowPeer
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createSystemChild: (js.Any, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Double) => XWindowPeer,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSystemChildFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createSystemChild = createSystemChild, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createSystemChild = js.Any.fromFunction3(createSystemChild), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSystemChildFactory]
   }

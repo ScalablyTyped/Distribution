@@ -74,16 +74,12 @@ class Connection protected () extends js.Object {
     * @param Restrictions A SafeArray of query constraints; depends on the [type of the schema query](https://msdn.microsoft.com/en-us/library/jj249359.aspx)
     */
   def OpenSchema(Schema: SchemaEnum): Recordset = js.native
-  def OpenSchema(Schema: SchemaEnum, Restrictions: activexDashInteropLib.SafeArray[java.lang.String]): Recordset = js.native
+  def OpenSchema(Schema: SchemaEnum, Restrictions: stdLib.SafeArray[java.lang.String]): Recordset = js.native
   /**
     * Returns a Recordset object that contains schema information, for a provider-specific schema query type
     * @param SchemaID The GUID for a provider-schema query not defined by the OLE DB specification.
     */
-  def OpenSchema(
-    Schema: SchemaEnum,
-    Restrictions: activexDashInteropLib.SafeArray[java.lang.String],
-    SchemaID: java.lang.String
-  ): Recordset = js.native
+  def OpenSchema(Schema: SchemaEnum, Restrictions: stdLib.SafeArray[java.lang.String], SchemaID: java.lang.String): Recordset = js.native
   def Properties(Index: java.lang.String): Property = js.native
   def Properties(Index: scala.Double): Property = js.native
   def RollbackTrans(): scala.Unit = js.native

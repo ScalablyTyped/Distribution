@@ -12,11 +12,8 @@ trait WindowBase64 extends js.Object {
 
 object WindowBase64 {
   @scala.inline
-  def apply(
-    atob: js.Function1[java.lang.String, java.lang.String],
-    btoa: js.Function1[java.lang.String, java.lang.String]
-  ): WindowBase64 = {
-    val __obj = js.Dynamic.literal(atob = atob, btoa = btoa)
+  def apply(atob: java.lang.String => java.lang.String, btoa: java.lang.String => java.lang.String): WindowBase64 = {
+    val __obj = js.Dynamic.literal(atob = js.Any.fromFunction1(atob), btoa = js.Any.fromFunction1(btoa))
   
     __obj.asInstanceOf[WindowBase64]
   }

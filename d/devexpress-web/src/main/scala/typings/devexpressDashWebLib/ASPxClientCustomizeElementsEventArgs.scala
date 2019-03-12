@@ -25,9 +25,9 @@ object ASPxClientCustomizeElementsEventArgs {
   @scala.inline
   def apply(
     Elements: js.Array[ASPxReportUIElement],
-    GetById: js.Function1[java.lang.String, js.Array[ASPxReportUIElement]]
+    GetById: java.lang.String => js.Array[ASPxReportUIElement]
   ): ASPxClientCustomizeElementsEventArgs = {
-    val __obj = js.Dynamic.literal(Elements = Elements, GetById = GetById)
+    val __obj = js.Dynamic.literal(Elements = Elements, GetById = js.Any.fromFunction1(GetById))
   
     __obj.asInstanceOf[ASPxClientCustomizeElementsEventArgs]
   }

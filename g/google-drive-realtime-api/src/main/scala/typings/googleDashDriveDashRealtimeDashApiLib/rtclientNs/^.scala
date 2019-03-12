@@ -8,14 +8,11 @@ import scala.scalajs.js.annotation._
 @JSGlobal("rtclient")
 @js.native
 object ^ extends js.Object {
-  var RealtimeLoader: googleDashDriveDashRealtimeDashApiLib.rtclientNs.RealtimeLoaderFactory = js.native
+  var RealtimeLoader: RealtimeLoaderFactory = js.native
   def createRealtimeFile(
     title: java.lang.String,
     mimeType: java.lang.String,
-    callback: js.Function1[
-      /* file */ googleDashDriveDashRealtimeDashApiLib.rtclientNs.DriveAPIFileResource, 
-      scala.Unit
-    ]
+    callback: js.Function1[/* file */ DriveAPIFileResource, scala.Unit]
   ): scala.Unit = js.native
 }
 

@@ -17,14 +17,14 @@ trait IValueListItemSearchResults extends js.Object {
 object IValueListItemSearchResults {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IValueListItem, scala.Unit],
-    Clone: js.Function0[IValueListItemSearchResults],
+    Add: (scala.Double, IValueListItem) => scala.Unit,
+    Clone: () => IValueListItemSearchResults,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IValueListItem],
+    Item: scala.Double => IValueListItem,
     MoreResults: scala.Boolean,
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Remove: scala.Double => scala.Unit
   ): IValueListItemSearchResults = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, Item = Item, MoreResults = MoreResults, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count, Item = js.Any.fromFunction1(Item), MoreResults = MoreResults, Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IValueListItemSearchResults]
   }

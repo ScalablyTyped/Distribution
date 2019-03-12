@@ -85,16 +85,16 @@ object TimepickerOptions {
     duration: scala.Double,
     fromNow: scala.Double,
     i18n: stdLib.Partial[InternationalizationOptions],
-    onCloseEnd: js.Function2[Modal, stdLib.Element, scala.Unit],
-    onCloseStart: js.Function2[Modal, stdLib.Element, scala.Unit],
-    onOpenEnd: js.Function2[Modal, stdLib.Element, scala.Unit],
-    onOpenStart: js.Function2[Modal, stdLib.Element, scala.Unit],
-    onSelect: js.Function3[Modal, scala.Double, scala.Double, scala.Unit],
+    onCloseEnd: (Modal, stdLib.Element) => scala.Unit,
+    onCloseStart: (Modal, stdLib.Element) => scala.Unit,
+    onOpenEnd: (Modal, stdLib.Element) => scala.Unit,
+    onOpenStart: (Modal, stdLib.Element) => scala.Unit,
+    onSelect: (Modal, scala.Double, scala.Double) => scala.Unit,
     showClearBtn: scala.Boolean,
     twelveHour: scala.Boolean,
     vibrate: scala.Boolean
   ): TimepickerOptions = {
-    val __obj = js.Dynamic.literal(autoClose = autoClose, container = container, defaultTime = defaultTime, duration = duration, fromNow = fromNow, i18n = i18n, onCloseEnd = onCloseEnd, onCloseStart = onCloseStart, onOpenEnd = onOpenEnd, onOpenStart = onOpenStart, onSelect = onSelect, showClearBtn = showClearBtn, twelveHour = twelveHour, vibrate = vibrate)
+    val __obj = js.Dynamic.literal(autoClose = autoClose, container = container, defaultTime = defaultTime, duration = duration, fromNow = fromNow, i18n = i18n, onCloseEnd = js.Any.fromFunction2(onCloseEnd), onCloseStart = js.Any.fromFunction2(onCloseStart), onOpenEnd = js.Any.fromFunction2(onOpenEnd), onOpenStart = js.Any.fromFunction2(onOpenStart), onSelect = js.Any.fromFunction3(onSelect), showClearBtn = showClearBtn, twelveHour = twelveHour, vibrate = vibrate)
   
     __obj.asInstanceOf[TimepickerOptions]
   }

@@ -24,12 +24,12 @@ object XScenariosSupplier {
   @scala.inline
   def apply(
     Scenarios: XScenarios,
-    acquire: js.Function0[scala.Unit],
-    getScenarios: js.Function0[XScenarios],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getScenarios: () => XScenarios,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XScenariosSupplier = {
-    val __obj = js.Dynamic.literal(Scenarios = Scenarios, acquire = acquire, getScenarios = getScenarios, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Scenarios = Scenarios, acquire = js.Any.fromFunction0(acquire), getScenarios = js.Any.fromFunction0(getScenarios), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XScenariosSupplier]
   }

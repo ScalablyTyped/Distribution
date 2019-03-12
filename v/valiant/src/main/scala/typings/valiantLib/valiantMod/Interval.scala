@@ -26,21 +26,21 @@ object Interval {
   @scala.inline
   def apply[T](
     constructor: IntervalConstructor[scala.Double],
-    contains: js.Function1[T, scala.Boolean],
-    contiguousWith: js.Function1[Interval[T], scala.Boolean],
+    contains: T => scala.Boolean,
+    contiguousWith: Interval[T] => scala.Boolean,
     empty: scala.Boolean,
-    equalTo: js.Function1[Interval[T], scala.Boolean],
+    equalTo: Interval[T] => scala.Boolean,
     from: Endpoint[T],
-    fromComparator: js.Function2[Endpoint[T], Endpoint[T], scala.Double],
-    hull: js.Function1[Interval[T], Interval[T]],
-    intersection: js.Function1[Interval[T], scala.Boolean],
-    isEmpty: js.Function0[scala.Boolean],
-    isSubsetOf: js.Function1[Interval[T], scala.Boolean],
+    fromComparator: (Endpoint[T], Endpoint[T]) => scala.Double,
+    hull: Interval[T] => Interval[T],
+    intersection: Interval[T] => scala.Boolean,
+    isEmpty: () => scala.Boolean,
+    isSubsetOf: Interval[T] => scala.Boolean,
     to: Endpoint[T],
-    toComparator: js.Function2[Endpoint[T], Endpoint[T], scala.Double],
-    unify: js.Function1[Interval[T], Interval[T]]
+    toComparator: (Endpoint[T], Endpoint[T]) => scala.Double,
+    unify: Interval[T] => Interval[T]
   ): Interval[T] = {
-    val __obj = js.Dynamic.literal(constructor = constructor, contains = contains, contiguousWith = contiguousWith, empty = empty, equalTo = equalTo, from = from, fromComparator = fromComparator, hull = hull, intersection = intersection, isEmpty = isEmpty, isSubsetOf = isSubsetOf, to = to, toComparator = toComparator, unify = unify)
+    val __obj = js.Dynamic.literal(constructor = constructor, contains = js.Any.fromFunction1(contains), contiguousWith = js.Any.fromFunction1(contiguousWith), empty = empty, equalTo = js.Any.fromFunction1(equalTo), from = from, fromComparator = js.Any.fromFunction2(fromComparator), hull = js.Any.fromFunction1(hull), intersection = js.Any.fromFunction1(intersection), isEmpty = js.Any.fromFunction0(isEmpty), isSubsetOf = js.Any.fromFunction1(isSubsetOf), to = to, toComparator = js.Any.fromFunction2(toComparator), unify = js.Any.fromFunction1(unify))
   
     __obj.asInstanceOf[Interval[T]]
   }

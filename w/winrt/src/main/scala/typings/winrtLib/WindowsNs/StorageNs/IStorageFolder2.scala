@@ -11,10 +11,8 @@ trait IStorageFolder2 extends js.Object {
 
 object IStorageFolder2 {
   @scala.inline
-  def apply(
-    tryGetItemAsync: js.Function1[java.lang.String, winrtLib.WindowsNs.FoundationNs.IAsyncOperation[IStorageItem]]
-  ): IStorageFolder2 = {
-    val __obj = js.Dynamic.literal(tryGetItemAsync = tryGetItemAsync)
+  def apply(tryGetItemAsync: java.lang.String => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[IStorageItem]): IStorageFolder2 = {
+    val __obj = js.Dynamic.literal(tryGetItemAsync = js.Any.fromFunction1(tryGetItemAsync))
   
     __obj.asInstanceOf[IStorageFolder2]
   }

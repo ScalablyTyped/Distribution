@@ -19,29 +19,25 @@ object XSAXDocumentBuilder2 {
     Document: XDocument,
     DocumentFragment: XDocumentFragment,
     State: SAXDocumentBuilderState,
-    acquire: js.Function0[scala.Unit],
-    characters: js.Function1[java.lang.String, scala.Unit],
-    endDocument: js.Function0[scala.Unit],
-    endDocumentFragment: js.Function0[scala.Unit],
-    endElement: js.Function1[java.lang.String, scala.Unit],
-    getDocument: js.Function0[XDocument],
-    getDocumentFragment: js.Function0[XDocumentFragment],
-    getState: js.Function0[SAXDocumentBuilderState],
-    ignorableWhitespace: js.Function1[java.lang.String, scala.Unit],
-    processingInstruction: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    reset: js.Function0[scala.Unit],
-    setDocumentLocator: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XLocator, scala.Unit],
-    startDocument: js.Function0[scala.Unit],
-    startDocumentFragment: js.Function1[XDocument, scala.Unit],
-    startElement: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XAttributeList, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    characters: java.lang.String => scala.Unit,
+    endDocument: () => scala.Unit,
+    endDocumentFragment: () => scala.Unit,
+    endElement: java.lang.String => scala.Unit,
+    getDocument: () => XDocument,
+    getDocumentFragment: () => XDocumentFragment,
+    getState: () => SAXDocumentBuilderState,
+    ignorableWhitespace: java.lang.String => scala.Unit,
+    processingInstruction: (java.lang.String, java.lang.String) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    reset: () => scala.Unit,
+    setDocumentLocator: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XLocator => scala.Unit,
+    startDocument: () => scala.Unit,
+    startDocumentFragment: XDocument => scala.Unit,
+    startElement: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XAttributeList) => scala.Unit
   ): XSAXDocumentBuilder2 = {
-    val __obj = js.Dynamic.literal(Document = Document, DocumentFragment = DocumentFragment, State = State, acquire = acquire, characters = characters, endDocument = endDocument, endDocumentFragment = endDocumentFragment, endElement = endElement, getDocument = getDocument, getDocumentFragment = getDocumentFragment, getState = getState, ignorableWhitespace = ignorableWhitespace, processingInstruction = processingInstruction, queryInterface = queryInterface, release = release, reset = reset, setDocumentLocator = setDocumentLocator, startDocument = startDocument, startDocumentFragment = startDocumentFragment, startElement = startElement)
+    val __obj = js.Dynamic.literal(Document = Document, DocumentFragment = DocumentFragment, State = State, acquire = js.Any.fromFunction0(acquire), characters = js.Any.fromFunction1(characters), endDocument = js.Any.fromFunction0(endDocument), endDocumentFragment = js.Any.fromFunction0(endDocumentFragment), endElement = js.Any.fromFunction1(endElement), getDocument = js.Any.fromFunction0(getDocument), getDocumentFragment = js.Any.fromFunction0(getDocumentFragment), getState = js.Any.fromFunction0(getState), ignorableWhitespace = js.Any.fromFunction1(ignorableWhitespace), processingInstruction = js.Any.fromFunction2(processingInstruction), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), reset = js.Any.fromFunction0(reset), setDocumentLocator = js.Any.fromFunction1(setDocumentLocator), startDocument = js.Any.fromFunction0(startDocument), startDocumentFragment = js.Any.fromFunction1(startDocumentFragment), startElement = js.Any.fromFunction2(startElement))
   
     __obj.asInstanceOf[XSAXDocumentBuilder2]
   }

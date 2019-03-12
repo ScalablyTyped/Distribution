@@ -20,9 +20,9 @@ trait XDataAccessDescriptorFactory extends js.Object {
 object XDataAccessDescriptorFactory {
   @scala.inline
   def apply(
-    createDataAccessDescriptor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet]
+    createDataAccessDescriptor: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
   ): XDataAccessDescriptorFactory = {
-    val __obj = js.Dynamic.literal(createDataAccessDescriptor = createDataAccessDescriptor)
+    val __obj = js.Dynamic.literal(createDataAccessDescriptor = js.Any.fromFunction0(createDataAccessDescriptor))
   
     __obj.asInstanceOf[XDataAccessDescriptorFactory]
   }

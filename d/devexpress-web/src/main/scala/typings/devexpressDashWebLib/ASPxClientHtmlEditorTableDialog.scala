@@ -74,27 +74,27 @@ trait ASPxClientHtmlEditorTableDialog extends ASPxClientHtmlEditorTableDialogBas
 object ASPxClientHtmlEditorTableDialog {
   @scala.inline
   def apply(
-    GetAccessibilityCheckBox: js.Function0[ASPxClientCheckBox],
-    GetAlignmentComboBox: js.Function0[ASPxClientComboBox],
-    GetBackgroundColorColorEdit: js.Function0[ASPxClientColorEdit],
-    GetBorderColorColorEdit: js.Function0[ASPxClientColorEdit],
-    GetBorderWidthSpinEdit: js.Function0[ASPxClientSpinEdit],
-    GetCancelButton: js.Function0[ASPxClientButton],
-    GetCaptionTextBox: js.Function0[ASPxClientTextBox],
-    GetCellPaddingSpinEdit: js.Function0[ASPxClientSpinEdit],
-    GetCellSpacingSpinEdit: js.Function0[ASPxClientSpinEdit],
-    GetFormLayout: js.Function0[ASPxClientFormLayout],
-    GetHeadersComboBox: js.Function0[ASPxClientComboBox],
-    GetHeightTypeComboBox: js.Function0[ASPxClientComboBox],
-    GetHeightValueSpinEdit: js.Function0[ASPxClientSpinEdit],
-    GetHeightValueTypeComboBox: js.Function0[ASPxClientComboBox],
-    GetOkButton: js.Function0[ASPxClientButton],
-    GetSummaryTextBox: js.Function0[ASPxClientTextBox],
-    GetWidthTypeComboBox: js.Function0[ASPxClientComboBox],
-    GetWidthValueSpinEdit: js.Function0[ASPxClientSpinEdit],
-    GetWidthValueTypeComboBox: js.Function0[ASPxClientComboBox]
+    GetAccessibilityCheckBox: () => ASPxClientCheckBox,
+    GetAlignmentComboBox: () => ASPxClientComboBox,
+    GetBackgroundColorColorEdit: () => ASPxClientColorEdit,
+    GetBorderColorColorEdit: () => ASPxClientColorEdit,
+    GetBorderWidthSpinEdit: () => ASPxClientSpinEdit,
+    GetCancelButton: () => ASPxClientButton,
+    GetCaptionTextBox: () => ASPxClientTextBox,
+    GetCellPaddingSpinEdit: () => ASPxClientSpinEdit,
+    GetCellSpacingSpinEdit: () => ASPxClientSpinEdit,
+    GetFormLayout: () => ASPxClientFormLayout,
+    GetHeadersComboBox: () => ASPxClientComboBox,
+    GetHeightTypeComboBox: () => ASPxClientComboBox,
+    GetHeightValueSpinEdit: () => ASPxClientSpinEdit,
+    GetHeightValueTypeComboBox: () => ASPxClientComboBox,
+    GetOkButton: () => ASPxClientButton,
+    GetSummaryTextBox: () => ASPxClientTextBox,
+    GetWidthTypeComboBox: () => ASPxClientComboBox,
+    GetWidthValueSpinEdit: () => ASPxClientSpinEdit,
+    GetWidthValueTypeComboBox: () => ASPxClientComboBox
   ): ASPxClientHtmlEditorTableDialog = {
-    val __obj = js.Dynamic.literal(GetAccessibilityCheckBox = GetAccessibilityCheckBox, GetAlignmentComboBox = GetAlignmentComboBox, GetBackgroundColorColorEdit = GetBackgroundColorColorEdit, GetBorderColorColorEdit = GetBorderColorColorEdit, GetBorderWidthSpinEdit = GetBorderWidthSpinEdit, GetCancelButton = GetCancelButton, GetCaptionTextBox = GetCaptionTextBox, GetCellPaddingSpinEdit = GetCellPaddingSpinEdit, GetCellSpacingSpinEdit = GetCellSpacingSpinEdit, GetFormLayout = GetFormLayout, GetHeadersComboBox = GetHeadersComboBox, GetHeightTypeComboBox = GetHeightTypeComboBox, GetHeightValueSpinEdit = GetHeightValueSpinEdit, GetHeightValueTypeComboBox = GetHeightValueTypeComboBox, GetOkButton = GetOkButton, GetSummaryTextBox = GetSummaryTextBox, GetWidthTypeComboBox = GetWidthTypeComboBox, GetWidthValueSpinEdit = GetWidthValueSpinEdit, GetWidthValueTypeComboBox = GetWidthValueTypeComboBox)
+    val __obj = js.Dynamic.literal(GetAccessibilityCheckBox = js.Any.fromFunction0(GetAccessibilityCheckBox), GetAlignmentComboBox = js.Any.fromFunction0(GetAlignmentComboBox), GetBackgroundColorColorEdit = js.Any.fromFunction0(GetBackgroundColorColorEdit), GetBorderColorColorEdit = js.Any.fromFunction0(GetBorderColorColorEdit), GetBorderWidthSpinEdit = js.Any.fromFunction0(GetBorderWidthSpinEdit), GetCancelButton = js.Any.fromFunction0(GetCancelButton), GetCaptionTextBox = js.Any.fromFunction0(GetCaptionTextBox), GetCellPaddingSpinEdit = js.Any.fromFunction0(GetCellPaddingSpinEdit), GetCellSpacingSpinEdit = js.Any.fromFunction0(GetCellSpacingSpinEdit), GetFormLayout = js.Any.fromFunction0(GetFormLayout), GetHeadersComboBox = js.Any.fromFunction0(GetHeadersComboBox), GetHeightTypeComboBox = js.Any.fromFunction0(GetHeightTypeComboBox), GetHeightValueSpinEdit = js.Any.fromFunction0(GetHeightValueSpinEdit), GetHeightValueTypeComboBox = js.Any.fromFunction0(GetHeightValueTypeComboBox), GetOkButton = js.Any.fromFunction0(GetOkButton), GetSummaryTextBox = js.Any.fromFunction0(GetSummaryTextBox), GetWidthTypeComboBox = js.Any.fromFunction0(GetWidthTypeComboBox), GetWidthValueSpinEdit = js.Any.fromFunction0(GetWidthValueSpinEdit), GetWidthValueTypeComboBox = js.Any.fromFunction0(GetWidthValueTypeComboBox))
   
     __obj.asInstanceOf[ASPxClientHtmlEditorTableDialog]
   }

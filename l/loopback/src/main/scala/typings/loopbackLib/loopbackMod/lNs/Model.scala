@@ -108,30 +108,22 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    afterRemote: js.Function2[
-      java.lang.String, 
-      js.Function3[
-        /* ctx */ Context, 
-        /* modelInstanceOrNext */ Model | expressLib.expressMod.eNs.NextFunction, 
-        /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
-        scala.Unit
-      ], 
+    afterRemote: (java.lang.String, js.Function3[
+      /* ctx */ Context, 
+      /* modelInstanceOrNext */ Model | expressLib.expressMod.eNs.NextFunction, 
+      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
       scala.Unit
-    ],
-    afterRemoteError: js.Function2[java.lang.String, expressLib.expressMod.eNs.NextFunction, scala.Unit],
-    beforeRemote: js.Function2[
-      java.lang.String, 
-      js.Function3[
-        /* ctx */ Context, 
-        /* modelInstanceOrNext */ Model | expressLib.expressMod.eNs.NextFunction, 
-        /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
-        scala.Unit
-      ], 
+    ]) => scala.Unit,
+    afterRemoteError: (java.lang.String, expressLib.expressMod.eNs.NextFunction) => scala.Unit,
+    beforeRemote: (java.lang.String, js.Function3[
+      /* ctx */ Context, 
+      /* modelInstanceOrNext */ Model | expressLib.expressMod.eNs.NextFunction, 
+      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
       scala.Unit
-    ],
+    ]) => scala.Unit,
     settings: Settings
   ): Model = {
-    val __obj = js.Dynamic.literal(afterRemote = afterRemote, afterRemoteError = afterRemoteError, beforeRemote = beforeRemote, settings = settings)
+    val __obj = js.Dynamic.literal(afterRemote = js.Any.fromFunction2(afterRemote), afterRemoteError = js.Any.fromFunction2(afterRemoteError), beforeRemote = js.Any.fromFunction2(beforeRemote), settings = settings)
   
     __obj.asInstanceOf[Model]
   }

@@ -28,7 +28,7 @@ trait CodeSystemFilter extends BackboneElement {
   /**
     * Code that identifies the filter
     */
-  var code: code
+  var code: fhirLib.fhirNs.code
   /**
     * How or why the filter is used
     */

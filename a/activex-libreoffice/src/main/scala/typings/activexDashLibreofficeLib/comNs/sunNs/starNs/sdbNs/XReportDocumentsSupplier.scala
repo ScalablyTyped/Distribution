@@ -29,12 +29,12 @@ object XReportDocumentsSupplier {
   @scala.inline
   def apply(
     ReportDocuments: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
-    acquire: js.Function0[scala.Unit],
-    getReportDocuments: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getReportDocuments: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XReportDocumentsSupplier = {
-    val __obj = js.Dynamic.literal(ReportDocuments = ReportDocuments, acquire = acquire, getReportDocuments = getReportDocuments, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ReportDocuments = ReportDocuments, acquire = js.Any.fromFunction0(acquire), getReportDocuments = js.Any.fromFunction0(getReportDocuments), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XReportDocumentsSupplier]
   }

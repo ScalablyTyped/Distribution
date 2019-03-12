@@ -17,10 +17,10 @@ object Anon_ConfigurableEnumerableGetSet {
   def apply(
     configurable: scala.Boolean,
     enumerable: scala.Boolean,
-    get: js.Function0[js.UndefOr[scala.Nothing]],
-    set: js.Function1[js.Any, scala.Unit]
+    get: () => js.UndefOr[scala.Nothing],
+    set: js.Any => scala.Unit
   ): Anon_ConfigurableEnumerableGetSet = {
-    val __obj = js.Dynamic.literal(configurable = configurable, enumerable = enumerable, get = get, set = set)
+    val __obj = js.Dynamic.literal(configurable = configurable, enumerable = enumerable, get = js.Any.fromFunction0(get), set = js.Any.fromFunction1(set))
   
     __obj.asInstanceOf[Anon_ConfigurableEnumerableGetSet]
   }

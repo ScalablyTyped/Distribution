@@ -23,17 +23,17 @@ object SocketCloseParams {
   @scala.inline
   def apply(
     code: scala.Int | scala.Double = null,
-    complete: js.Function0[scala.Unit] = null,
-    fail: js.Function0[scala.Unit] = null,
+    complete: () => scala.Unit = null,
+    fail: () => scala.Unit = null,
     reason: java.lang.String = null,
-    success: js.Function0[scala.Unit] = null
+    success: () => scala.Unit = null
   ): SocketCloseParams = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[SocketCloseParams]
   }
 }

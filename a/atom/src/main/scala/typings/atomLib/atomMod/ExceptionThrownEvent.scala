@@ -9,7 +9,7 @@ trait ExceptionThrownEvent extends js.Object {
   var column: scala.Double
   var line: scala.Double
   var message: java.lang.String
-  var originalError: nodeLib.Error
+  var originalError: stdLib.Error
   var url: java.lang.String
 }
 
@@ -19,7 +19,7 @@ object ExceptionThrownEvent {
     column: scala.Double,
     line: scala.Double,
     message: java.lang.String,
-    originalError: nodeLib.Error,
+    originalError: stdLib.Error,
     url: java.lang.String
   ): ExceptionThrownEvent = {
     val __obj = js.Dynamic.literal(column = column, line = line, message = message, originalError = originalError, url = url)

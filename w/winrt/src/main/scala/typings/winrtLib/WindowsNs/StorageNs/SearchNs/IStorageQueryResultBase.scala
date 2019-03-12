@@ -18,15 +18,15 @@ trait IStorageQueryResultBase extends js.Object {
 object IStorageQueryResultBase {
   @scala.inline
   def apply(
-    applyNewQueryOptions: js.Function1[QueryOptions, scala.Unit],
-    findStartIndexAsync: js.Function1[js.Any, winrtLib.WindowsNs.FoundationNs.IAsyncOperation[scala.Double]],
+    applyNewQueryOptions: QueryOptions => scala.Unit,
+    findStartIndexAsync: js.Any => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[scala.Double],
     folder: winrtLib.WindowsNs.StorageNs.StorageFolder,
-    getCurrentQueryOptions: js.Function0[QueryOptions],
-    getItemCountAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[scala.Double]],
+    getCurrentQueryOptions: () => QueryOptions,
+    getItemCountAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[scala.Double],
     oncontentschanged: js.Any,
     onoptionschanged: js.Any
   ): IStorageQueryResultBase = {
-    val __obj = js.Dynamic.literal(applyNewQueryOptions = applyNewQueryOptions, findStartIndexAsync = findStartIndexAsync, folder = folder, getCurrentQueryOptions = getCurrentQueryOptions, getItemCountAsync = getItemCountAsync, oncontentschanged = oncontentschanged, onoptionschanged = onoptionschanged)
+    val __obj = js.Dynamic.literal(applyNewQueryOptions = js.Any.fromFunction1(applyNewQueryOptions), findStartIndexAsync = js.Any.fromFunction1(findStartIndexAsync), folder = folder, getCurrentQueryOptions = js.Any.fromFunction0(getCurrentQueryOptions), getItemCountAsync = js.Any.fromFunction0(getItemCountAsync), oncontentschanged = oncontentschanged, onoptionschanged = onoptionschanged)
   
     __obj.asInstanceOf[IStorageQueryResultBase]
   }

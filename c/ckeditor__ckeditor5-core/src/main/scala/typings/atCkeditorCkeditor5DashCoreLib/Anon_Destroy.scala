@@ -11,8 +11,8 @@ trait Anon_Destroy extends js.Object {
 
 object Anon_Destroy {
   @scala.inline
-  def apply(destroy: js.Function0[scala.Unit | scala.Null | js.Promise[_]]): Anon_Destroy = {
-    val __obj = js.Dynamic.literal(destroy = destroy)
+  def apply(destroy: () => scala.Unit | scala.Null | js.Promise[_]): Anon_Destroy = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
   
     __obj.asInstanceOf[Anon_Destroy]
   }

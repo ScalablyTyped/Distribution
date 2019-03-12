@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebOptions protected () extends js.Object {
   var AllowPNG: scala.Boolean = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Creator: XlCreator = js.native
   var DownloadComponents: scala.Boolean = js.native
   var Encoding: activexDashOfficeLib.OfficeNs.MsoEncoding = js.native

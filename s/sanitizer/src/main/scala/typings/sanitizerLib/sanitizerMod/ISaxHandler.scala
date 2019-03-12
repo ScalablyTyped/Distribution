@@ -19,16 +19,16 @@ trait ISaxHandler extends js.Object {
 object ISaxHandler {
   @scala.inline
   def apply(
-    cdata: js.Function2[java.lang.String, js.Any, scala.Unit],
-    comment: js.Function2[java.lang.String, js.Any, scala.Unit],
-    endDoc: js.Function1[js.Any, scala.Unit],
-    endTag: js.Function2[java.lang.String, js.Any, scala.Unit],
-    pcdata: js.Function2[java.lang.String, js.Any, scala.Unit],
-    rcdata: js.Function2[java.lang.String, js.Any, scala.Unit],
-    startDoc: js.Function1[js.Any, scala.Unit],
-    startTag: js.Function3[java.lang.String, js.Array[java.lang.String], js.Any, scala.Unit]
+    cdata: (java.lang.String, js.Any) => scala.Unit,
+    comment: (java.lang.String, js.Any) => scala.Unit,
+    endDoc: js.Any => scala.Unit,
+    endTag: (java.lang.String, js.Any) => scala.Unit,
+    pcdata: (java.lang.String, js.Any) => scala.Unit,
+    rcdata: (java.lang.String, js.Any) => scala.Unit,
+    startDoc: js.Any => scala.Unit,
+    startTag: (java.lang.String, js.Array[java.lang.String], js.Any) => scala.Unit
   ): ISaxHandler = {
-    val __obj = js.Dynamic.literal(cdata = cdata, comment = comment, endDoc = endDoc, endTag = endTag, pcdata = pcdata, rcdata = rcdata, startDoc = startDoc, startTag = startTag)
+    val __obj = js.Dynamic.literal(cdata = js.Any.fromFunction2(cdata), comment = js.Any.fromFunction2(comment), endDoc = js.Any.fromFunction1(endDoc), endTag = js.Any.fromFunction2(endTag), pcdata = js.Any.fromFunction2(pcdata), rcdata = js.Any.fromFunction2(rcdata), startDoc = js.Any.fromFunction1(startDoc), startTag = js.Any.fromFunction3(startTag))
   
     __obj.asInstanceOf[ISaxHandler]
   }

@@ -16,12 +16,12 @@ trait Anon_DataDelay extends js.Object {
 object Anon_DataDelay {
   @scala.inline
   def apply(
-    dest: js.Function3[/* index */ scala.Double, /* data */ js.Any, /* delay */ scala.Double, _] = null,
+    dest: (/* index */ scala.Double, /* data */ js.Any, /* delay */ scala.Double) => _ = null,
     limit: scala.Int | scala.Double = null,
     track: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_DataDelay = {
     val __obj = js.Dynamic.literal()
-    if (dest != null) __obj.updateDynamic("dest")(dest)
+    if (dest != null) __obj.updateDynamic("dest")(js.Any.fromFunction3(dest))
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (!js.isUndefined(track)) __obj.updateDynamic("track")(track)
     __obj.asInstanceOf[Anon_DataDelay]

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val canStoreURLs: scala.Boolean = js.native
-  val defaultOptions: tusDashJsDashClientLib.tusDashJsDashClientMod.UploadOptions = js.native
+  val defaultOptions: UploadOptions = js.native
   val isSupported: scala.Boolean = js.native
 }
 

@@ -52,14 +52,14 @@ trait XJavaVM
 object XJavaVM {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getJavaVM: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], js.Any],
-    isVMEnabled: js.Function0[scala.Boolean],
-    isVMStarted: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getJavaVM: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => js.Any,
+    isVMEnabled: () => scala.Boolean,
+    isVMStarted: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XJavaVM = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getJavaVM = getJavaVM, isVMEnabled = isVMEnabled, isVMStarted = isVMStarted, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getJavaVM = js.Any.fromFunction1(getJavaVM), isVMEnabled = js.Any.fromFunction0(isVMEnabled), isVMStarted = js.Any.fromFunction0(isVMStarted), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XJavaVM]
   }

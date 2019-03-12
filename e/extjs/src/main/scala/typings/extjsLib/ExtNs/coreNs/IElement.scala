@@ -825,394 +825,384 @@ trait IElement
 object IElement {
   @scala.inline
   def apply(
-    IAbstractElement: extjsLib.ExtNs.domNs.IAbstractElement = null,
-    addClsOnClick: js.Function3[
-      /* className */ js.UndefOr[java.lang.String], 
-      /* testFn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      IElement
-    ] = null,
-    addClsOnFocus: js.Function3[
-      /* className */ js.UndefOr[java.lang.String], 
-      /* testFn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      IElement
-    ] = null,
-    addClsOnOver: js.Function3[
-      /* className */ js.UndefOr[java.lang.String], 
-      /* testFn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      IElement
-    ] = null,
-    addKeyListener: js.Function3[
-      /* key */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      extjsLib.ExtNs.utilNs.IKeyMap
-    ] = null,
-    addKeyMap: js.Function1[/* config */ js.UndefOr[js.Any], extjsLib.ExtNs.utilNs.IKeyMap] = null,
-    addListener: js.Function4[
-      /* eventName */ js.UndefOr[java.lang.String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      IElement
-    ] = null,
-    animate: js.Function1[/* config */ js.UndefOr[js.Any], IElement] = null,
+    ASCLASS: scala.Int | scala.Double = null,
+    DISPLAY: scala.Int | scala.Double = null,
+    OFFSETS: scala.Int | scala.Double = null,
+    VISIBILITY: scala.Int | scala.Double = null,
+    addCls: /* className */ js.UndefOr[js.Any] => extjsLib.ExtNs.domNs.IElement = null,
+    addClsOnClick: (/* className */ js.UndefOr[java.lang.String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IElement = null,
+    addClsOnFocus: (/* className */ js.UndefOr[java.lang.String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IElement = null,
+    addClsOnOver: (/* className */ js.UndefOr[java.lang.String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IElement = null,
+    addKeyListener: (/* key */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => extjsLib.ExtNs.utilNs.IKeyMap = null,
+    addKeyMap: /* config */ js.UndefOr[js.Any] => extjsLib.ExtNs.utilNs.IKeyMap = null,
+    addListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => IElement = null,
+    alias: extjsLib.ExtNs.Array = null,
+    alternateClassName: js.Any = null,
+    animate: /* config */ js.UndefOr[js.Any] => IElement = null,
+    appendChild: (/* el */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[scala.Boolean]) => IElement = null,
+    appendTo: /* el */ js.UndefOr[js.Any] => IElement = null,
+    applyStyles: /* styles */ js.UndefOr[js.Any] => extjsLib.ExtNs.domNs.IElement = null,
     autoBoxAdjust: js.UndefOr[scala.Boolean] = js.undefined,
-    blur: js.Function0[IElement] = null,
-    boxWrap: js.Function1[/* clazz */ js.UndefOr[java.lang.String], IElement] = null,
-    cacheScrollValues: js.Function0[_] = null,
-    center: js.Function1[/* centerIn */ js.UndefOr[js.Any], scala.Unit] = null,
-    clean: js.Function1[/* forceReclean */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    clearListeners: js.Function0[IElement] = null,
-    clearOpacity: js.Function0[IElement] = null,
-    clearPositioning: js.Function1[/* value */ js.UndefOr[java.lang.String], IElement] = null,
-    clip: js.Function0[IElement] = null,
-    createProxy: js.Function3[
-      /* config */ js.UndefOr[js.Any], 
-      /* renderTo */ js.UndefOr[js.Any], 
-      /* matchBox */ js.UndefOr[scala.Boolean], 
-      IElement
-    ] = null,
-    createShim: js.Function0[IElement] = null,
-    enableDisplayMode: js.Function1[/* display */ js.UndefOr[java.lang.String], IElement] = null,
-    fadeIn: js.Function1[/* options */ js.UndefOr[js.Any], IElement] = null,
-    fadeOut: js.Function1[/* options */ js.UndefOr[js.Any], IElement] = null,
-    focus: js.Function1[/* defer */ js.UndefOr[scala.Double], IElement] = null,
-    focusable: js.Function0[scala.Boolean] = null,
-    frame: js.Function3[
-      /* color */ js.UndefOr[java.lang.String], 
-      /* count */ js.UndefOr[scala.Double], 
-      /* options */ js.UndefOr[js.Any], 
-      IElement
-    ] = null,
-    getAttributeNS: js.Function2[
-      /* namespace */ js.UndefOr[java.lang.String], 
-      /* name */ js.UndefOr[java.lang.String], 
-      java.lang.String
-    ] = null,
-    getBottom: js.Function1[/* local */ js.UndefOr[scala.Boolean], scala.Double] = null,
-    getCenterXY: js.Function0[extjsLib.ExtNs.Array] = null,
-    getColor: js.Function3[
-      /* attr */ js.UndefOr[java.lang.String], 
-      /* defaultValue */ js.UndefOr[java.lang.String], 
-      /* prefix */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    getComputedHeight: js.Function0[scala.Double] = null,
-    getComputedWidth: js.Function0[scala.Double] = null,
-    getFrameWidth: js.Function1[/* sides */ js.UndefOr[java.lang.String], scala.Double] = null,
-    getLeft: js.Function1[/* local */ js.UndefOr[scala.Boolean], scala.Double] = null,
-    getLoader: js.Function0[extjsLib.ExtNs.IElementLoader] = null,
-    getLocalX: js.Function0[scala.Double] = null,
-    getLocalXY: js.Function0[extjsLib.ExtNs.Array] = null,
-    getLocalY: js.Function0[scala.Double] = null,
-    getPageBox: js.Function1[/* asRegion */ js.UndefOr[scala.Boolean], _] = null,
-    getPositioning: js.Function1[/* autoPx */ js.UndefOr[scala.Boolean], _] = null,
-    getRight: js.Function1[/* local */ js.UndefOr[scala.Boolean], scala.Double] = null,
-    getScroll: js.Function0[_] = null,
-    getScrollLeft: js.Function0[scala.Double] = null,
-    getScrollTop: js.Function0[scala.Double] = null,
-    getStyleSize: js.Function0[_] = null,
-    getTextWidth: js.Function3[
-      /* text */ js.UndefOr[java.lang.String], 
-      /* min */ js.UndefOr[scala.Double], 
-      /* max */ js.UndefOr[scala.Double], 
-      scala.Double
-    ] = null,
-    getTop: js.Function1[/* local */ js.UndefOr[scala.Boolean], scala.Double] = null,
-    getX: js.Function0[scala.Double] = null,
-    getXY: js.Function0[extjsLib.ExtNs.Array] = null,
-    getY: js.Function0[scala.Double] = null,
-    ghost: js.Function2[
-      /* anchor */ js.UndefOr[java.lang.String], 
-      /* options */ js.UndefOr[js.Any], 
-      IElement
-    ] = null,
-    hide: js.Function1[/* animate */ js.UndefOr[js.Any], IElement] = null,
-    highlight: js.Function2[/* color */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any], IElement] = null,
-    hover: js.Function4[
-      /* overFn */ js.UndefOr[js.Any], 
-      /* outFn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      IElement
-    ] = null,
-    initDD: js.Function3[
-      /* group */ js.UndefOr[java.lang.String], 
-      /* config */ js.UndefOr[js.Any], 
-      /* overrides */ js.UndefOr[js.Any], 
-      extjsLib.ExtNs.ddNs.IDD
-    ] = null,
-    initDDProxy: js.Function3[
-      /* group */ js.UndefOr[java.lang.String], 
-      /* config */ js.UndefOr[js.Any], 
-      /* overrides */ js.UndefOr[js.Any], 
-      extjsLib.ExtNs.ddNs.IDDProxy
-    ] = null,
-    initDDTarget: js.Function3[
-      /* group */ js.UndefOr[java.lang.String], 
-      /* config */ js.UndefOr[js.Any], 
-      /* overrides */ js.UndefOr[js.Any], 
-      extjsLib.ExtNs.ddNs.IDDTarget
-    ] = null,
-    isBorderBox: js.Function0[scala.Boolean] = null,
-    isDisplayed: js.Function0[scala.Boolean] = null,
-    isFocusable: js.Function1[/* asFocusEl */ js.UndefOr[js.Any], scala.Boolean] = null,
-    isMasked: js.Function0[scala.Boolean] = null,
-    isScrollable: js.Function0[scala.Boolean] = null,
-    isVisible: js.Function1[/* deep */ js.UndefOr[scala.Boolean], scala.Boolean] = null,
-    load: js.Function1[/* options */ js.UndefOr[js.Any], IElement] = null,
-    mask: js.Function2[
-      /* msg */ js.UndefOr[java.lang.String], 
-      /* msgCls */ js.UndefOr[java.lang.String], 
-      IElement
-    ] = null,
-    monitorMouseLeave: js.Function3[
-      /* delay */ js.UndefOr[scala.Double], 
-      /* handler */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      _
-    ] = null,
-    moveTo: js.Function3[
-      /* x */ js.UndefOr[scala.Double], 
-      /* y */ js.UndefOr[scala.Double], 
-      /* animate */ js.UndefOr[js.Any], 
-      IElement
-    ] = null,
-    needsTabIndex: js.Function0[scala.Unit] = null,
-    on: js.Function4[
-      /* eventName */ js.UndefOr[java.lang.String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      IElement
-    ] = null,
+    blur: () => IElement = null,
+    boxWrap: /* clazz */ js.UndefOr[java.lang.String] => IElement = null,
+    cacheScrollValues: () => _ = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
+    center: /* centerIn */ js.UndefOr[js.Any] => scala.Unit = null,
+    child: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => _ = null,
+    clean: /* forceReclean */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    clearListeners: () => IElement = null,
+    clearOpacity: () => IElement = null,
+    clearPositioning: /* value */ js.UndefOr[java.lang.String] => IElement = null,
+    clip: () => IElement = null,
+    config: js.Any = null,
+    contains: /* el */ js.UndefOr[js.Any] => scala.Boolean = null,
+    createChild: (/* config */ js.UndefOr[js.Any], /* insertBefore */ js.UndefOr[stdLib.HTMLElement], /* returnDom */ js.UndefOr[scala.Boolean]) => IElement = null,
+    createProxy: (/* config */ js.UndefOr[js.Any], /* renderTo */ js.UndefOr[js.Any], /* matchBox */ js.UndefOr[scala.Boolean]) => IElement = null,
+    createShim: () => IElement = null,
+    defaultUnit: java.lang.String = null,
+    destroy: () => scala.Unit = null,
+    dom: stdLib.HTMLElement = null,
+    down: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => _ = null,
+    enableDisplayMode: /* display */ js.UndefOr[java.lang.String] => IElement = null,
+    extend: java.lang.String = null,
+    fadeIn: /* options */ js.UndefOr[js.Any] => IElement = null,
+    fadeOut: /* options */ js.UndefOr[js.Any] => IElement = null,
+    findParent: (/* selector */ js.UndefOr[java.lang.String], /* limit */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[scala.Boolean]) => stdLib.HTMLElement = null,
+    findParentNode: (/* selector */ js.UndefOr[java.lang.String], /* limit */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[scala.Boolean]) => stdLib.HTMLElement = null,
+    first: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => _ = null,
+    focus: /* defer */ js.UndefOr[scala.Double] => IElement = null,
+    focusable: () => scala.Boolean = null,
+    frame: (/* color */ js.UndefOr[java.lang.String], /* count */ js.UndefOr[scala.Double], /* options */ js.UndefOr[js.Any]) => IElement = null,
+    getActiveElement: () => stdLib.HTMLElement = null,
+    getAttribute: (/* name */ js.UndefOr[java.lang.String], /* namespace */ js.UndefOr[java.lang.String]) => java.lang.String = null,
+    getAttributeNS: (/* namespace */ js.UndefOr[java.lang.String], /* name */ js.UndefOr[java.lang.String]) => java.lang.String = null,
+    getBorderWidth: /* side */ js.UndefOr[java.lang.String] => scala.Double = null,
+    getBottom: /* local */ js.UndefOr[scala.Boolean] => scala.Double = null,
+    getById: (/* id */ js.UndefOr[java.lang.String], /* asDom */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
+    getCenterXY: () => extjsLib.ExtNs.Array = null,
+    getColor: (/* attr */ js.UndefOr[java.lang.String], /* defaultValue */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    getComputedHeight: () => scala.Double = null,
+    getComputedWidth: () => scala.Double = null,
+    getFrameWidth: /* sides */ js.UndefOr[java.lang.String] => scala.Double = null,
+    getHTML: () => scala.Unit = null,
+    getHeight: /* contentHeight */ js.UndefOr[scala.Boolean] => scala.Double = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getLeft: /* local */ js.UndefOr[scala.Boolean] => scala.Double = null,
+    getLoader: () => extjsLib.ExtNs.IElementLoader = null,
+    getLocalX: () => scala.Double = null,
+    getLocalXY: () => extjsLib.ExtNs.Array = null,
+    getLocalY: () => scala.Double = null,
+    getMargin: /* sides */ js.UndefOr[java.lang.String] => _ = null,
+    getPadding: /* side */ js.UndefOr[java.lang.String] => scala.Double = null,
+    getPageBox: /* asRegion */ js.UndefOr[scala.Boolean] => _ = null,
+    getPositioning: /* autoPx */ js.UndefOr[scala.Boolean] => _ = null,
+    getRight: /* local */ js.UndefOr[scala.Boolean] => scala.Double = null,
+    getScroll: () => _ = null,
+    getScrollLeft: () => scala.Double = null,
+    getScrollTop: () => scala.Double = null,
+    getSize: /* contentSize */ js.UndefOr[scala.Boolean] => _ = null,
+    getStyle: (/* property */ js.UndefOr[js.Any], /* inline */ js.UndefOr[scala.Boolean]) => _ = null,
+    getStyleSize: () => _ = null,
+    getTextWidth: (/* text */ js.UndefOr[java.lang.String], /* min */ js.UndefOr[scala.Double], /* max */ js.UndefOr[scala.Double]) => scala.Double = null,
+    getTop: /* local */ js.UndefOr[scala.Boolean] => scala.Double = null,
+    getValue: /* asNumber */ js.UndefOr[scala.Boolean] => _ = null,
+    getViewSize: () => _ = null,
+    getWidth: /* contentWidth */ js.UndefOr[scala.Boolean] => scala.Double = null,
+    getX: () => scala.Double = null,
+    getXY: () => extjsLib.ExtNs.Array = null,
+    getY: () => scala.Double = null,
+    ghost: (/* anchor */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any]) => IElement = null,
+    hasCls: /* className */ js.UndefOr[java.lang.String] => scala.Boolean = null,
+    hide: /* animate */ js.UndefOr[js.Any] => IElement = null,
+    highlight: (/* color */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any]) => IElement = null,
+    hover: (/* overFn */ js.UndefOr[js.Any], /* outFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => IElement = null,
+    id: java.lang.String = null,
+    inheritableStatics: js.Any = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IElement = null,
+    initDD: (/* group */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any], /* overrides */ js.UndefOr[js.Any]) => extjsLib.ExtNs.ddNs.IDD = null,
+    initDDProxy: (/* group */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any], /* overrides */ js.UndefOr[js.Any]) => extjsLib.ExtNs.ddNs.IDDProxy = null,
+    initDDTarget: (/* group */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any], /* overrides */ js.UndefOr[js.Any]) => extjsLib.ExtNs.ddNs.IDDTarget = null,
+    insertAfter: /* el */ js.UndefOr[js.Any] => IElement = null,
+    insertBefore: /* el */ js.UndefOr[js.Any] => IElement = null,
+    insertFirst: /* el */ js.UndefOr[js.Any] => IElement = null,
+    insertHtml: (/* where */ js.UndefOr[java.lang.String], /* html */ js.UndefOr[java.lang.String], /* returnEl */ js.UndefOr[scala.Boolean]) => _ = null,
+    insertSibling: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => IElement = null,
+    is: /* selector */ js.UndefOr[java.lang.String] => scala.Boolean = null,
+    isBorderBox: () => scala.Boolean = null,
+    isDisplayed: () => scala.Boolean = null,
+    isFocusable: /* asFocusEl */ js.UndefOr[js.Any] => scala.Boolean = null,
+    isMasked: () => scala.Boolean = null,
+    isScrollable: () => scala.Boolean = null,
+    isStyle: (/* style */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[java.lang.String]) => scala.Boolean = null,
+    isTransparent: /* prop */ js.UndefOr[java.lang.String] => scala.Boolean = null,
+    isVisible: /* deep */ js.UndefOr[scala.Boolean] => scala.Boolean = null,
+    last: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => _ = null,
+    load: /* options */ js.UndefOr[js.Any] => IElement = null,
+    mask: (/* msg */ js.UndefOr[java.lang.String], /* msgCls */ js.UndefOr[java.lang.String]) => IElement = null,
+    mixins: js.Any = null,
+    monitorMouseLeave: (/* delay */ js.UndefOr[scala.Double], /* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    moveTo: (/* x */ js.UndefOr[scala.Double], /* y */ js.UndefOr[scala.Double], /* animate */ js.UndefOr[js.Any]) => IElement = null,
+    needsTabIndex: () => scala.Unit = null,
+    next: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => _ = null,
+    on: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => IElement = null,
     originalDisplay: java.lang.String = null,
-    pause: js.Function1[/* seconds */ js.UndefOr[scala.Double], IElement] = null,
-    position: js.Function4[
-      /* pos */ js.UndefOr[java.lang.String], 
-      /* zIndex */ js.UndefOr[scala.Double], 
-      /* x */ js.UndefOr[scala.Double], 
-      /* y */ js.UndefOr[scala.Double], 
-      scala.Unit
-    ] = null,
-    puff: js.Function1[/* options */ js.UndefOr[js.Any], IElement] = null,
-    purgeAllListeners: js.Function0[IElement] = null,
-    relayEvent: js.Function2[
-      /* eventName */ js.UndefOr[java.lang.String], 
-      /* observable */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    removeAllListeners: js.Function0[IElement] = null,
-    removeListener: js.Function3[
-      /* eventName */ js.UndefOr[java.lang.String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      IElement
-    ] = null,
-    scale: js.Function3[
-      /* width */ js.UndefOr[scala.Double], 
-      /* height */ js.UndefOr[scala.Double], 
-      /* options */ js.UndefOr[js.Any], 
-      IElement
-    ] = null,
-    scroll: js.Function3[
-      /* direction */ js.UndefOr[java.lang.String], 
-      /* distance */ js.UndefOr[scala.Double], 
-      /* animate */ js.UndefOr[js.Any], 
-      scala.Boolean
-    ] = null,
-    scrollBy: js.Function3[
-      /* deltaX */ js.UndefOr[js.Any], 
-      /* deltaY */ js.UndefOr[js.Any], 
-      /* animate */ js.UndefOr[js.Any], 
-      IElement
-    ] = null,
-    scrollIntoView: js.Function4[
-      /* container */ js.UndefOr[js.Any], 
-      /* hscroll */ js.UndefOr[scala.Boolean], 
-      /* animate */ js.UndefOr[js.Any], 
-      /* highlight */ js.UndefOr[scala.Boolean], 
-      IElement
-    ] = null,
-    scrollTo: js.Function3[
-      /* side */ js.UndefOr[java.lang.String], 
-      /* value */ js.UndefOr[scala.Double], 
-      /* animate */ js.UndefOr[js.Any], 
-      IElement
-    ] = null,
-    selectable: js.Function0[IElement] = null,
-    setBottom: js.Function1[/* bottom */ js.UndefOr[js.Any], IElement] = null,
-    setBounds: js.Function5[
-      /* x */ js.UndefOr[scala.Double], 
-      /* y */ js.UndefOr[scala.Double], 
-      /* width */ js.UndefOr[js.Any], 
-      /* height */ js.UndefOr[js.Any], 
-      /* animate */ js.UndefOr[js.Any], 
-      IElement
-    ] = null,
-    setDisplayed: js.Function1[/* value */ js.UndefOr[js.Any], IElement] = null,
-    setLeft: js.Function1[/* left */ js.UndefOr[js.Any], IElement] = null,
-    setLeftTop: js.Function2[/* left */ js.UndefOr[js.Any], /* top */ js.UndefOr[js.Any], IElement] = null,
-    setLocation: js.Function3[
-      /* x */ js.UndefOr[scala.Double], 
-      /* y */ js.UndefOr[scala.Double], 
-      /* animate */ js.UndefOr[js.Any], 
-      IElement
-    ] = null,
-    setOpacity: js.Function2[/* opacity */ js.UndefOr[scala.Double], /* animate */ js.UndefOr[js.Any], IElement] = null,
-    setPositioning: js.Function1[/* posCfg */ js.UndefOr[js.Any], IElement] = null,
-    setRight: js.Function1[/* right */ js.UndefOr[js.Any], IElement] = null,
-    setScrollLeft: js.Function1[/* left */ js.UndefOr[scala.Double], IElement] = null,
-    setScrollTop: js.Function1[/* top */ js.UndefOr[scala.Double], IElement] = null,
-    setTop: js.Function1[/* top */ js.UndefOr[js.Any], IElement] = null,
-    setVisible: js.Function2[/* visible */ js.UndefOr[scala.Boolean], /* animate */ js.UndefOr[js.Any], IElement] = null,
-    shift: js.Function1[/* options */ js.UndefOr[js.Any], IElement] = null,
-    show: js.Function1[/* animate */ js.UndefOr[js.Any], IElement] = null,
-    slideIn: js.Function2[
-      /* anchor */ js.UndefOr[java.lang.String], 
-      /* options */ js.UndefOr[js.Any], 
-      IElement
-    ] = null,
-    slideOut: js.Function2[
-      /* anchor */ js.UndefOr[java.lang.String], 
-      /* options */ js.UndefOr[js.Any], 
-      IElement
-    ] = null,
-    swallowEvent: js.Function2[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* preventDefault */ js.UndefOr[scala.Boolean], 
-      IElement
-    ] = null,
-    switchOff: js.Function1[/* options */ js.UndefOr[js.Any], IElement] = null,
-    toggle: js.Function1[/* animate */ js.UndefOr[js.Any], IElement] = null,
-    un: js.Function3[
-      /* eventName */ js.UndefOr[java.lang.String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      IElement
-    ] = null,
-    unclip: js.Function0[IElement] = null,
-    unmask: js.Function0[scala.Unit] = null,
-    unselectable: js.Function0[IElement] = null,
-    update: js.Function3[
-      /* html */ js.UndefOr[java.lang.String], 
-      /* loadScripts */ js.UndefOr[scala.Boolean], 
-      /* callback */ js.UndefOr[js.Any], 
-      IElement
-    ] = null
+    parent: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => _ = null,
+    pause: /* seconds */ js.UndefOr[scala.Double] => IElement = null,
+    position: (/* pos */ js.UndefOr[java.lang.String], /* zIndex */ js.UndefOr[scala.Double], /* x */ js.UndefOr[scala.Double], /* y */ js.UndefOr[scala.Double]) => scala.Unit = null,
+    prev: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => _ = null,
+    puff: /* options */ js.UndefOr[js.Any] => IElement = null,
+    purgeAllListeners: () => IElement = null,
+    query: /* selector */ js.UndefOr[java.lang.String] => extjsLib.ExtNs.Array = null,
+    radioCls: /* className */ js.UndefOr[js.Any] => extjsLib.ExtNs.domNs.IElement = null,
+    relayEvent: (/* eventName */ js.UndefOr[java.lang.String], /* observable */ js.UndefOr[js.Any]) => scala.Unit = null,
+    remove: () => scala.Unit = null,
+    removeAllListeners: () => IElement = null,
+    removeCls: /* className */ js.UndefOr[js.Any] => extjsLib.ExtNs.domNs.IElement = null,
+    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IElement = null,
+    repaint: () => extjsLib.ExtNs.domNs.IElement = null,
+    replace: /* el */ js.UndefOr[js.Any] => IElement = null,
+    replaceCls: (/* oldClassName */ js.UndefOr[java.lang.String], /* newClassName */ js.UndefOr[java.lang.String]) => extjsLib.ExtNs.domNs.IElement = null,
+    replaceWith: /* el */ js.UndefOr[js.Any] => IElement = null,
+    requires: extjsLib.ExtNs.Array = null,
+    scale: (/* width */ js.UndefOr[scala.Double], /* height */ js.UndefOr[scala.Double], /* options */ js.UndefOr[js.Any]) => IElement = null,
+    scroll: (/* direction */ js.UndefOr[java.lang.String], /* distance */ js.UndefOr[scala.Double], /* animate */ js.UndefOr[js.Any]) => scala.Boolean = null,
+    scrollBy: (/* deltaX */ js.UndefOr[js.Any], /* deltaY */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any]) => IElement = null,
+    scrollIntoView: (/* container */ js.UndefOr[js.Any], /* hscroll */ js.UndefOr[scala.Boolean], /* animate */ js.UndefOr[js.Any], /* highlight */ js.UndefOr[scala.Boolean]) => IElement = null,
+    scrollTo: (/* side */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[scala.Double], /* animate */ js.UndefOr[js.Any]) => IElement = null,
+    select: (/* selector */ js.UndefOr[java.lang.String], /* unique */ js.UndefOr[scala.Boolean]) => extjsLib.ExtNs.ICompositeElement = null,
+    selectable: () => IElement = null,
+    self: extjsLib.ExtNs.IClass = null,
+    serializeForm: /* form */ js.UndefOr[js.Any] => java.lang.String = null,
+    set: (/* o */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[scala.Boolean]) => extjsLib.ExtNs.domNs.IElement = null,
+    setBottom: /* bottom */ js.UndefOr[js.Any] => IElement = null,
+    setBounds: (/* x */ js.UndefOr[scala.Double], /* y */ js.UndefOr[scala.Double], /* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any]) => IElement = null,
+    setDisplayed: /* value */ js.UndefOr[js.Any] => IElement = null,
+    setHTML: /* html */ js.UndefOr[java.lang.String] => extjsLib.ExtNs.IElement = null,
+    setHeight: /* height */ js.UndefOr[js.Any] => extjsLib.ExtNs.domNs.IElement = null,
+    setLeft: /* left */ js.UndefOr[js.Any] => IElement = null,
+    setLeftTop: (/* left */ js.UndefOr[js.Any], /* top */ js.UndefOr[js.Any]) => IElement = null,
+    setLocation: (/* x */ js.UndefOr[scala.Double], /* y */ js.UndefOr[scala.Double], /* animate */ js.UndefOr[js.Any]) => IElement = null,
+    setOpacity: (/* opacity */ js.UndefOr[scala.Double], /* animate */ js.UndefOr[js.Any]) => IElement = null,
+    setPositioning: /* posCfg */ js.UndefOr[js.Any] => IElement = null,
+    setRight: /* right */ js.UndefOr[js.Any] => IElement = null,
+    setScrollLeft: /* left */ js.UndefOr[scala.Double] => IElement = null,
+    setScrollTop: /* top */ js.UndefOr[scala.Double] => IElement = null,
+    setSize: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any]) => extjsLib.ExtNs.domNs.IElement = null,
+    setStyle: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => extjsLib.ExtNs.domNs.IElement = null,
+    setTop: /* top */ js.UndefOr[js.Any] => IElement = null,
+    setVisibilityMode: /* mode */ js.UndefOr[js.Any] => IElement = null,
+    setVisible: (/* visible */ js.UndefOr[scala.Boolean], /* animate */ js.UndefOr[js.Any]) => IElement = null,
+    setWidth: /* width */ js.UndefOr[js.Any] => extjsLib.ExtNs.domNs.IElement = null,
+    shift: /* options */ js.UndefOr[js.Any] => IElement = null,
+    show: /* animate */ js.UndefOr[js.Any] => IElement = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    slideIn: (/* anchor */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any]) => IElement = null,
+    slideOut: (/* anchor */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any]) => IElement = null,
+    statics: js.Any = null,
+    swallowEvent: (/* eventName */ js.UndefOr[js.Any], /* preventDefault */ js.UndefOr[scala.Boolean]) => IElement = null,
+    switchOff: /* options */ js.UndefOr[js.Any] => IElement = null,
+    toggle: /* animate */ js.UndefOr[js.Any] => IElement = null,
+    toggleCls: /* className */ js.UndefOr[java.lang.String] => extjsLib.ExtNs.domNs.IElement = null,
+    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IElement = null,
+    unclip: () => IElement = null,
+    unmask: () => scala.Unit = null,
+    unselectable: () => IElement = null,
+    up: (/* selector */ js.UndefOr[java.lang.String], /* limit */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[scala.Boolean]) => extjsLib.ExtNs.IElement = null,
+    update: (/* html */ js.UndefOr[java.lang.String], /* loadScripts */ js.UndefOr[scala.Boolean], /* callback */ js.UndefOr[js.Any]) => IElement = null,
+    uses: extjsLib.ExtNs.Array = null,
+    wrap: (/* config */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[scala.Boolean], /* selector */ js.UndefOr[java.lang.String]) => _ = null
   ): IElement = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IAbstractElement)
-    if (addClsOnClick != null) __obj.updateDynamic("addClsOnClick")(addClsOnClick)
-    if (addClsOnFocus != null) __obj.updateDynamic("addClsOnFocus")(addClsOnFocus)
-    if (addClsOnOver != null) __obj.updateDynamic("addClsOnOver")(addClsOnOver)
-    if (addKeyListener != null) __obj.updateDynamic("addKeyListener")(addKeyListener)
-    if (addKeyMap != null) __obj.updateDynamic("addKeyMap")(addKeyMap)
-    if (addListener != null) __obj.updateDynamic("addListener")(addListener)
-    if (animate != null) __obj.updateDynamic("animate")(animate)
+    if (ASCLASS != null) __obj.updateDynamic("ASCLASS")(ASCLASS.asInstanceOf[js.Any])
+    if (DISPLAY != null) __obj.updateDynamic("DISPLAY")(DISPLAY.asInstanceOf[js.Any])
+    if (OFFSETS != null) __obj.updateDynamic("OFFSETS")(OFFSETS.asInstanceOf[js.Any])
+    if (VISIBILITY != null) __obj.updateDynamic("VISIBILITY")(VISIBILITY.asInstanceOf[js.Any])
+    if (addCls != null) __obj.updateDynamic("addCls")(js.Any.fromFunction1(addCls))
+    if (addClsOnClick != null) __obj.updateDynamic("addClsOnClick")(js.Any.fromFunction3(addClsOnClick))
+    if (addClsOnFocus != null) __obj.updateDynamic("addClsOnFocus")(js.Any.fromFunction3(addClsOnFocus))
+    if (addClsOnOver != null) __obj.updateDynamic("addClsOnOver")(js.Any.fromFunction3(addClsOnOver))
+    if (addKeyListener != null) __obj.updateDynamic("addKeyListener")(js.Any.fromFunction3(addKeyListener))
+    if (addKeyMap != null) __obj.updateDynamic("addKeyMap")(js.Any.fromFunction1(addKeyMap))
+    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction4(addListener))
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (animate != null) __obj.updateDynamic("animate")(js.Any.fromFunction1(animate))
+    if (appendChild != null) __obj.updateDynamic("appendChild")(js.Any.fromFunction2(appendChild))
+    if (appendTo != null) __obj.updateDynamic("appendTo")(js.Any.fromFunction1(appendTo))
+    if (applyStyles != null) __obj.updateDynamic("applyStyles")(js.Any.fromFunction1(applyStyles))
     if (!js.isUndefined(autoBoxAdjust)) __obj.updateDynamic("autoBoxAdjust")(autoBoxAdjust)
-    if (blur != null) __obj.updateDynamic("blur")(blur)
-    if (boxWrap != null) __obj.updateDynamic("boxWrap")(boxWrap)
-    if (cacheScrollValues != null) __obj.updateDynamic("cacheScrollValues")(cacheScrollValues)
-    if (center != null) __obj.updateDynamic("center")(center)
-    if (clean != null) __obj.updateDynamic("clean")(clean)
-    if (clearListeners != null) __obj.updateDynamic("clearListeners")(clearListeners)
-    if (clearOpacity != null) __obj.updateDynamic("clearOpacity")(clearOpacity)
-    if (clearPositioning != null) __obj.updateDynamic("clearPositioning")(clearPositioning)
-    if (clip != null) __obj.updateDynamic("clip")(clip)
-    if (createProxy != null) __obj.updateDynamic("createProxy")(createProxy)
-    if (createShim != null) __obj.updateDynamic("createShim")(createShim)
-    if (enableDisplayMode != null) __obj.updateDynamic("enableDisplayMode")(enableDisplayMode)
-    if (fadeIn != null) __obj.updateDynamic("fadeIn")(fadeIn)
-    if (fadeOut != null) __obj.updateDynamic("fadeOut")(fadeOut)
-    if (focus != null) __obj.updateDynamic("focus")(focus)
-    if (focusable != null) __obj.updateDynamic("focusable")(focusable)
-    if (frame != null) __obj.updateDynamic("frame")(frame)
-    if (getAttributeNS != null) __obj.updateDynamic("getAttributeNS")(getAttributeNS)
-    if (getBottom != null) __obj.updateDynamic("getBottom")(getBottom)
-    if (getCenterXY != null) __obj.updateDynamic("getCenterXY")(getCenterXY)
-    if (getColor != null) __obj.updateDynamic("getColor")(getColor)
-    if (getComputedHeight != null) __obj.updateDynamic("getComputedHeight")(getComputedHeight)
-    if (getComputedWidth != null) __obj.updateDynamic("getComputedWidth")(getComputedWidth)
-    if (getFrameWidth != null) __obj.updateDynamic("getFrameWidth")(getFrameWidth)
-    if (getLeft != null) __obj.updateDynamic("getLeft")(getLeft)
-    if (getLoader != null) __obj.updateDynamic("getLoader")(getLoader)
-    if (getLocalX != null) __obj.updateDynamic("getLocalX")(getLocalX)
-    if (getLocalXY != null) __obj.updateDynamic("getLocalXY")(getLocalXY)
-    if (getLocalY != null) __obj.updateDynamic("getLocalY")(getLocalY)
-    if (getPageBox != null) __obj.updateDynamic("getPageBox")(getPageBox)
-    if (getPositioning != null) __obj.updateDynamic("getPositioning")(getPositioning)
-    if (getRight != null) __obj.updateDynamic("getRight")(getRight)
-    if (getScroll != null) __obj.updateDynamic("getScroll")(getScroll)
-    if (getScrollLeft != null) __obj.updateDynamic("getScrollLeft")(getScrollLeft)
-    if (getScrollTop != null) __obj.updateDynamic("getScrollTop")(getScrollTop)
-    if (getStyleSize != null) __obj.updateDynamic("getStyleSize")(getStyleSize)
-    if (getTextWidth != null) __obj.updateDynamic("getTextWidth")(getTextWidth)
-    if (getTop != null) __obj.updateDynamic("getTop")(getTop)
-    if (getX != null) __obj.updateDynamic("getX")(getX)
-    if (getXY != null) __obj.updateDynamic("getXY")(getXY)
-    if (getY != null) __obj.updateDynamic("getY")(getY)
-    if (ghost != null) __obj.updateDynamic("ghost")(ghost)
-    if (hide != null) __obj.updateDynamic("hide")(hide)
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight)
-    if (hover != null) __obj.updateDynamic("hover")(hover)
-    if (initDD != null) __obj.updateDynamic("initDD")(initDD)
-    if (initDDProxy != null) __obj.updateDynamic("initDDProxy")(initDDProxy)
-    if (initDDTarget != null) __obj.updateDynamic("initDDTarget")(initDDTarget)
-    if (isBorderBox != null) __obj.updateDynamic("isBorderBox")(isBorderBox)
-    if (isDisplayed != null) __obj.updateDynamic("isDisplayed")(isDisplayed)
-    if (isFocusable != null) __obj.updateDynamic("isFocusable")(isFocusable)
-    if (isMasked != null) __obj.updateDynamic("isMasked")(isMasked)
-    if (isScrollable != null) __obj.updateDynamic("isScrollable")(isScrollable)
-    if (isVisible != null) __obj.updateDynamic("isVisible")(isVisible)
-    if (load != null) __obj.updateDynamic("load")(load)
-    if (mask != null) __obj.updateDynamic("mask")(mask)
-    if (monitorMouseLeave != null) __obj.updateDynamic("monitorMouseLeave")(monitorMouseLeave)
-    if (moveTo != null) __obj.updateDynamic("moveTo")(moveTo)
-    if (needsTabIndex != null) __obj.updateDynamic("needsTabIndex")(needsTabIndex)
-    if (on != null) __obj.updateDynamic("on")(on)
+    if (blur != null) __obj.updateDynamic("blur")(js.Any.fromFunction0(blur))
+    if (boxWrap != null) __obj.updateDynamic("boxWrap")(js.Any.fromFunction1(boxWrap))
+    if (cacheScrollValues != null) __obj.updateDynamic("cacheScrollValues")(js.Any.fromFunction0(cacheScrollValues))
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
+    if (center != null) __obj.updateDynamic("center")(js.Any.fromFunction1(center))
+    if (child != null) __obj.updateDynamic("child")(js.Any.fromFunction2(child))
+    if (clean != null) __obj.updateDynamic("clean")(js.Any.fromFunction1(clean))
+    if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
+    if (clearOpacity != null) __obj.updateDynamic("clearOpacity")(js.Any.fromFunction0(clearOpacity))
+    if (clearPositioning != null) __obj.updateDynamic("clearPositioning")(js.Any.fromFunction1(clearPositioning))
+    if (clip != null) __obj.updateDynamic("clip")(js.Any.fromFunction0(clip))
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (contains != null) __obj.updateDynamic("contains")(js.Any.fromFunction1(contains))
+    if (createChild != null) __obj.updateDynamic("createChild")(js.Any.fromFunction3(createChild))
+    if (createProxy != null) __obj.updateDynamic("createProxy")(js.Any.fromFunction3(createProxy))
+    if (createShim != null) __obj.updateDynamic("createShim")(js.Any.fromFunction0(createShim))
+    if (defaultUnit != null) __obj.updateDynamic("defaultUnit")(defaultUnit)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
+    if (dom != null) __obj.updateDynamic("dom")(dom)
+    if (down != null) __obj.updateDynamic("down")(js.Any.fromFunction2(down))
+    if (enableDisplayMode != null) __obj.updateDynamic("enableDisplayMode")(js.Any.fromFunction1(enableDisplayMode))
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (fadeIn != null) __obj.updateDynamic("fadeIn")(js.Any.fromFunction1(fadeIn))
+    if (fadeOut != null) __obj.updateDynamic("fadeOut")(js.Any.fromFunction1(fadeOut))
+    if (findParent != null) __obj.updateDynamic("findParent")(js.Any.fromFunction3(findParent))
+    if (findParentNode != null) __obj.updateDynamic("findParentNode")(js.Any.fromFunction3(findParentNode))
+    if (first != null) __obj.updateDynamic("first")(js.Any.fromFunction2(first))
+    if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction1(focus))
+    if (focusable != null) __obj.updateDynamic("focusable")(js.Any.fromFunction0(focusable))
+    if (frame != null) __obj.updateDynamic("frame")(js.Any.fromFunction3(frame))
+    if (getActiveElement != null) __obj.updateDynamic("getActiveElement")(js.Any.fromFunction0(getActiveElement))
+    if (getAttribute != null) __obj.updateDynamic("getAttribute")(js.Any.fromFunction2(getAttribute))
+    if (getAttributeNS != null) __obj.updateDynamic("getAttributeNS")(js.Any.fromFunction2(getAttributeNS))
+    if (getBorderWidth != null) __obj.updateDynamic("getBorderWidth")(js.Any.fromFunction1(getBorderWidth))
+    if (getBottom != null) __obj.updateDynamic("getBottom")(js.Any.fromFunction1(getBottom))
+    if (getById != null) __obj.updateDynamic("getById")(js.Any.fromFunction2(getById))
+    if (getCenterXY != null) __obj.updateDynamic("getCenterXY")(js.Any.fromFunction0(getCenterXY))
+    if (getColor != null) __obj.updateDynamic("getColor")(js.Any.fromFunction3(getColor))
+    if (getComputedHeight != null) __obj.updateDynamic("getComputedHeight")(js.Any.fromFunction0(getComputedHeight))
+    if (getComputedWidth != null) __obj.updateDynamic("getComputedWidth")(js.Any.fromFunction0(getComputedWidth))
+    if (getFrameWidth != null) __obj.updateDynamic("getFrameWidth")(js.Any.fromFunction1(getFrameWidth))
+    if (getHTML != null) __obj.updateDynamic("getHTML")(js.Any.fromFunction0(getHTML))
+    if (getHeight != null) __obj.updateDynamic("getHeight")(js.Any.fromFunction1(getHeight))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getLeft != null) __obj.updateDynamic("getLeft")(js.Any.fromFunction1(getLeft))
+    if (getLoader != null) __obj.updateDynamic("getLoader")(js.Any.fromFunction0(getLoader))
+    if (getLocalX != null) __obj.updateDynamic("getLocalX")(js.Any.fromFunction0(getLocalX))
+    if (getLocalXY != null) __obj.updateDynamic("getLocalXY")(js.Any.fromFunction0(getLocalXY))
+    if (getLocalY != null) __obj.updateDynamic("getLocalY")(js.Any.fromFunction0(getLocalY))
+    if (getMargin != null) __obj.updateDynamic("getMargin")(js.Any.fromFunction1(getMargin))
+    if (getPadding != null) __obj.updateDynamic("getPadding")(js.Any.fromFunction1(getPadding))
+    if (getPageBox != null) __obj.updateDynamic("getPageBox")(js.Any.fromFunction1(getPageBox))
+    if (getPositioning != null) __obj.updateDynamic("getPositioning")(js.Any.fromFunction1(getPositioning))
+    if (getRight != null) __obj.updateDynamic("getRight")(js.Any.fromFunction1(getRight))
+    if (getScroll != null) __obj.updateDynamic("getScroll")(js.Any.fromFunction0(getScroll))
+    if (getScrollLeft != null) __obj.updateDynamic("getScrollLeft")(js.Any.fromFunction0(getScrollLeft))
+    if (getScrollTop != null) __obj.updateDynamic("getScrollTop")(js.Any.fromFunction0(getScrollTop))
+    if (getSize != null) __obj.updateDynamic("getSize")(js.Any.fromFunction1(getSize))
+    if (getStyle != null) __obj.updateDynamic("getStyle")(js.Any.fromFunction2(getStyle))
+    if (getStyleSize != null) __obj.updateDynamic("getStyleSize")(js.Any.fromFunction0(getStyleSize))
+    if (getTextWidth != null) __obj.updateDynamic("getTextWidth")(js.Any.fromFunction3(getTextWidth))
+    if (getTop != null) __obj.updateDynamic("getTop")(js.Any.fromFunction1(getTop))
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction1(getValue))
+    if (getViewSize != null) __obj.updateDynamic("getViewSize")(js.Any.fromFunction0(getViewSize))
+    if (getWidth != null) __obj.updateDynamic("getWidth")(js.Any.fromFunction1(getWidth))
+    if (getX != null) __obj.updateDynamic("getX")(js.Any.fromFunction0(getX))
+    if (getXY != null) __obj.updateDynamic("getXY")(js.Any.fromFunction0(getXY))
+    if (getY != null) __obj.updateDynamic("getY")(js.Any.fromFunction0(getY))
+    if (ghost != null) __obj.updateDynamic("ghost")(js.Any.fromFunction2(ghost))
+    if (hasCls != null) __obj.updateDynamic("hasCls")(js.Any.fromFunction1(hasCls))
+    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
+    if (highlight != null) __obj.updateDynamic("highlight")(js.Any.fromFunction2(highlight))
+    if (hover != null) __obj.updateDynamic("hover")(js.Any.fromFunction4(hover))
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (initDD != null) __obj.updateDynamic("initDD")(js.Any.fromFunction3(initDD))
+    if (initDDProxy != null) __obj.updateDynamic("initDDProxy")(js.Any.fromFunction3(initDDProxy))
+    if (initDDTarget != null) __obj.updateDynamic("initDDTarget")(js.Any.fromFunction3(initDDTarget))
+    if (insertAfter != null) __obj.updateDynamic("insertAfter")(js.Any.fromFunction1(insertAfter))
+    if (insertBefore != null) __obj.updateDynamic("insertBefore")(js.Any.fromFunction1(insertBefore))
+    if (insertFirst != null) __obj.updateDynamic("insertFirst")(js.Any.fromFunction1(insertFirst))
+    if (insertHtml != null) __obj.updateDynamic("insertHtml")(js.Any.fromFunction3(insertHtml))
+    if (insertSibling != null) __obj.updateDynamic("insertSibling")(js.Any.fromFunction3(insertSibling))
+    if (is != null) __obj.updateDynamic("is")(js.Any.fromFunction1(is))
+    if (isBorderBox != null) __obj.updateDynamic("isBorderBox")(js.Any.fromFunction0(isBorderBox))
+    if (isDisplayed != null) __obj.updateDynamic("isDisplayed")(js.Any.fromFunction0(isDisplayed))
+    if (isFocusable != null) __obj.updateDynamic("isFocusable")(js.Any.fromFunction1(isFocusable))
+    if (isMasked != null) __obj.updateDynamic("isMasked")(js.Any.fromFunction0(isMasked))
+    if (isScrollable != null) __obj.updateDynamic("isScrollable")(js.Any.fromFunction0(isScrollable))
+    if (isStyle != null) __obj.updateDynamic("isStyle")(js.Any.fromFunction2(isStyle))
+    if (isTransparent != null) __obj.updateDynamic("isTransparent")(js.Any.fromFunction1(isTransparent))
+    if (isVisible != null) __obj.updateDynamic("isVisible")(js.Any.fromFunction1(isVisible))
+    if (last != null) __obj.updateDynamic("last")(js.Any.fromFunction2(last))
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
+    if (mask != null) __obj.updateDynamic("mask")(js.Any.fromFunction2(mask))
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (monitorMouseLeave != null) __obj.updateDynamic("monitorMouseLeave")(js.Any.fromFunction3(monitorMouseLeave))
+    if (moveTo != null) __obj.updateDynamic("moveTo")(js.Any.fromFunction3(moveTo))
+    if (needsTabIndex != null) __obj.updateDynamic("needsTabIndex")(js.Any.fromFunction0(needsTabIndex))
+    if (next != null) __obj.updateDynamic("next")(js.Any.fromFunction2(next))
+    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction4(on))
     if (originalDisplay != null) __obj.updateDynamic("originalDisplay")(originalDisplay)
-    if (pause != null) __obj.updateDynamic("pause")(pause)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (puff != null) __obj.updateDynamic("puff")(puff)
-    if (purgeAllListeners != null) __obj.updateDynamic("purgeAllListeners")(purgeAllListeners)
-    if (relayEvent != null) __obj.updateDynamic("relayEvent")(relayEvent)
-    if (removeAllListeners != null) __obj.updateDynamic("removeAllListeners")(removeAllListeners)
-    if (removeListener != null) __obj.updateDynamic("removeListener")(removeListener)
-    if (scale != null) __obj.updateDynamic("scale")(scale)
-    if (scroll != null) __obj.updateDynamic("scroll")(scroll)
-    if (scrollBy != null) __obj.updateDynamic("scrollBy")(scrollBy)
-    if (scrollIntoView != null) __obj.updateDynamic("scrollIntoView")(scrollIntoView)
-    if (scrollTo != null) __obj.updateDynamic("scrollTo")(scrollTo)
-    if (selectable != null) __obj.updateDynamic("selectable")(selectable)
-    if (setBottom != null) __obj.updateDynamic("setBottom")(setBottom)
-    if (setBounds != null) __obj.updateDynamic("setBounds")(setBounds)
-    if (setDisplayed != null) __obj.updateDynamic("setDisplayed")(setDisplayed)
-    if (setLeft != null) __obj.updateDynamic("setLeft")(setLeft)
-    if (setLeftTop != null) __obj.updateDynamic("setLeftTop")(setLeftTop)
-    if (setLocation != null) __obj.updateDynamic("setLocation")(setLocation)
-    if (setOpacity != null) __obj.updateDynamic("setOpacity")(setOpacity)
-    if (setPositioning != null) __obj.updateDynamic("setPositioning")(setPositioning)
-    if (setRight != null) __obj.updateDynamic("setRight")(setRight)
-    if (setScrollLeft != null) __obj.updateDynamic("setScrollLeft")(setScrollLeft)
-    if (setScrollTop != null) __obj.updateDynamic("setScrollTop")(setScrollTop)
-    if (setTop != null) __obj.updateDynamic("setTop")(setTop)
-    if (setVisible != null) __obj.updateDynamic("setVisible")(setVisible)
-    if (shift != null) __obj.updateDynamic("shift")(shift)
-    if (show != null) __obj.updateDynamic("show")(show)
-    if (slideIn != null) __obj.updateDynamic("slideIn")(slideIn)
-    if (slideOut != null) __obj.updateDynamic("slideOut")(slideOut)
-    if (swallowEvent != null) __obj.updateDynamic("swallowEvent")(swallowEvent)
-    if (switchOff != null) __obj.updateDynamic("switchOff")(switchOff)
-    if (toggle != null) __obj.updateDynamic("toggle")(toggle)
-    if (un != null) __obj.updateDynamic("un")(un)
-    if (unclip != null) __obj.updateDynamic("unclip")(unclip)
-    if (unmask != null) __obj.updateDynamic("unmask")(unmask)
-    if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (parent != null) __obj.updateDynamic("parent")(js.Any.fromFunction2(parent))
+    if (pause != null) __obj.updateDynamic("pause")(js.Any.fromFunction1(pause))
+    if (position != null) __obj.updateDynamic("position")(js.Any.fromFunction4(position))
+    if (prev != null) __obj.updateDynamic("prev")(js.Any.fromFunction2(prev))
+    if (puff != null) __obj.updateDynamic("puff")(js.Any.fromFunction1(puff))
+    if (purgeAllListeners != null) __obj.updateDynamic("purgeAllListeners")(js.Any.fromFunction0(purgeAllListeners))
+    if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction1(query))
+    if (radioCls != null) __obj.updateDynamic("radioCls")(js.Any.fromFunction1(radioCls))
+    if (relayEvent != null) __obj.updateDynamic("relayEvent")(js.Any.fromFunction2(relayEvent))
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction0(remove))
+    if (removeAllListeners != null) __obj.updateDynamic("removeAllListeners")(js.Any.fromFunction0(removeAllListeners))
+    if (removeCls != null) __obj.updateDynamic("removeCls")(js.Any.fromFunction1(removeCls))
+    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction3(removeListener))
+    if (repaint != null) __obj.updateDynamic("repaint")(js.Any.fromFunction0(repaint))
+    if (replace != null) __obj.updateDynamic("replace")(js.Any.fromFunction1(replace))
+    if (replaceCls != null) __obj.updateDynamic("replaceCls")(js.Any.fromFunction2(replaceCls))
+    if (replaceWith != null) __obj.updateDynamic("replaceWith")(js.Any.fromFunction1(replaceWith))
+    if (requires != null) __obj.updateDynamic("requires")(requires)
+    if (scale != null) __obj.updateDynamic("scale")(js.Any.fromFunction3(scale))
+    if (scroll != null) __obj.updateDynamic("scroll")(js.Any.fromFunction3(scroll))
+    if (scrollBy != null) __obj.updateDynamic("scrollBy")(js.Any.fromFunction3(scrollBy))
+    if (scrollIntoView != null) __obj.updateDynamic("scrollIntoView")(js.Any.fromFunction4(scrollIntoView))
+    if (scrollTo != null) __obj.updateDynamic("scrollTo")(js.Any.fromFunction3(scrollTo))
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction2(select))
+    if (selectable != null) __obj.updateDynamic("selectable")(js.Any.fromFunction0(selectable))
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (serializeForm != null) __obj.updateDynamic("serializeForm")(js.Any.fromFunction1(serializeForm))
+    if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction2(set))
+    if (setBottom != null) __obj.updateDynamic("setBottom")(js.Any.fromFunction1(setBottom))
+    if (setBounds != null) __obj.updateDynamic("setBounds")(js.Any.fromFunction5(setBounds))
+    if (setDisplayed != null) __obj.updateDynamic("setDisplayed")(js.Any.fromFunction1(setDisplayed))
+    if (setHTML != null) __obj.updateDynamic("setHTML")(js.Any.fromFunction1(setHTML))
+    if (setHeight != null) __obj.updateDynamic("setHeight")(js.Any.fromFunction1(setHeight))
+    if (setLeft != null) __obj.updateDynamic("setLeft")(js.Any.fromFunction1(setLeft))
+    if (setLeftTop != null) __obj.updateDynamic("setLeftTop")(js.Any.fromFunction2(setLeftTop))
+    if (setLocation != null) __obj.updateDynamic("setLocation")(js.Any.fromFunction3(setLocation))
+    if (setOpacity != null) __obj.updateDynamic("setOpacity")(js.Any.fromFunction2(setOpacity))
+    if (setPositioning != null) __obj.updateDynamic("setPositioning")(js.Any.fromFunction1(setPositioning))
+    if (setRight != null) __obj.updateDynamic("setRight")(js.Any.fromFunction1(setRight))
+    if (setScrollLeft != null) __obj.updateDynamic("setScrollLeft")(js.Any.fromFunction1(setScrollLeft))
+    if (setScrollTop != null) __obj.updateDynamic("setScrollTop")(js.Any.fromFunction1(setScrollTop))
+    if (setSize != null) __obj.updateDynamic("setSize")(js.Any.fromFunction2(setSize))
+    if (setStyle != null) __obj.updateDynamic("setStyle")(js.Any.fromFunction2(setStyle))
+    if (setTop != null) __obj.updateDynamic("setTop")(js.Any.fromFunction1(setTop))
+    if (setVisibilityMode != null) __obj.updateDynamic("setVisibilityMode")(js.Any.fromFunction1(setVisibilityMode))
+    if (setVisible != null) __obj.updateDynamic("setVisible")(js.Any.fromFunction2(setVisible))
+    if (setWidth != null) __obj.updateDynamic("setWidth")(js.Any.fromFunction1(setWidth))
+    if (shift != null) __obj.updateDynamic("shift")(js.Any.fromFunction1(shift))
+    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (slideIn != null) __obj.updateDynamic("slideIn")(js.Any.fromFunction2(slideIn))
+    if (slideOut != null) __obj.updateDynamic("slideOut")(js.Any.fromFunction2(slideOut))
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (swallowEvent != null) __obj.updateDynamic("swallowEvent")(js.Any.fromFunction2(swallowEvent))
+    if (switchOff != null) __obj.updateDynamic("switchOff")(js.Any.fromFunction1(switchOff))
+    if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction1(toggle))
+    if (toggleCls != null) __obj.updateDynamic("toggleCls")(js.Any.fromFunction1(toggleCls))
+    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction3(un))
+    if (unclip != null) __obj.updateDynamic("unclip")(js.Any.fromFunction0(unclip))
+    if (unmask != null) __obj.updateDynamic("unmask")(js.Any.fromFunction0(unmask))
+    if (unselectable != null) __obj.updateDynamic("unselectable")(js.Any.fromFunction0(unselectable))
+    if (up != null) __obj.updateDynamic("up")(js.Any.fromFunction3(up))
+    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction3(update))
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    if (wrap != null) __obj.updateDynamic("wrap")(js.Any.fromFunction3(wrap))
     __obj.asInstanceOf[IElement]
   }
 }

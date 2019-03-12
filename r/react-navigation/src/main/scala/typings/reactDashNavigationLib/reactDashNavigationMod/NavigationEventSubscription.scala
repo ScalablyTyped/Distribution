@@ -11,8 +11,8 @@ trait NavigationEventSubscription extends js.Object {
 
 object NavigationEventSubscription {
   @scala.inline
-  def apply(remove: js.Function0[scala.Unit]): NavigationEventSubscription = {
-    val __obj = js.Dynamic.literal(remove = remove)
+  def apply(remove: () => scala.Unit): NavigationEventSubscription = {
+    val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove))
   
     __obj.asInstanceOf[NavigationEventSubscription]
   }

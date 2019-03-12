@@ -16,10 +16,10 @@ trait HookRuntimeContext
 object HookRuntimeContext {
   @scala.inline
   def apply(
-    timeout: js.Function1[scala.Double, scala.Unit],
+    timeout: scala.Double => scala.Unit,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): HookRuntimeContext = {
-    val __obj = js.Dynamic.literal(timeout = timeout)
+    val __obj = js.Dynamic.literal(timeout = js.Any.fromFunction1(timeout))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[HookRuntimeContext]
   }

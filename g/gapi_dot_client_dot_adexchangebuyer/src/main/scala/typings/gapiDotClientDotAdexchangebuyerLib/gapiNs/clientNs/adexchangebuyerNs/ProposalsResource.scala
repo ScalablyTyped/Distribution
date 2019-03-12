@@ -23,32 +23,14 @@ trait ProposalsResource extends js.Object {
 object ProposalsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Proposal]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CreateOrdersResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProposalId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Proposal]
-    ],
-    search: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtokenPqlQuery, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GetOrdersResponse]
-    ],
-    setupcomplete: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProposalId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Proposal]
-    ]
+    get: gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Proposal],
+    insert: gapiDotClientDotAdexchangebuyerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[CreateOrdersResponse],
+    patch: gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProposalId => gapiDotClientLib.gapiNs.clientNs.Request[Proposal],
+    search: gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtokenPqlQuery => gapiDotClientLib.gapiNs.clientNs.Request[GetOrdersResponse],
+    setupcomplete: gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    update: gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProposalId => gapiDotClientLib.gapiNs.clientNs.Request[Proposal]
   ): ProposalsResource = {
-    val __obj = js.Dynamic.literal(get = get, insert = insert, patch = patch, search = search, setupcomplete = setupcomplete, update = update)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), patch = js.Any.fromFunction1(patch), search = js.Any.fromFunction1(search), setupcomplete = js.Any.fromFunction1(setupcomplete), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[ProposalsResource]
   }

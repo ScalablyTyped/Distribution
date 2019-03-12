@@ -51,15 +51,15 @@ object BreakpointsOwnerBreakpoints {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     large: scala.Int | scala.Double = null,
     medium: scala.Int | scala.Double = null,
     small: scala.Int | scala.Double = null,
     xlarge: scala.Int | scala.Double = null,
     xsmall: scala.Int | scala.Double = null
   ): BreakpointsOwnerBreakpoints = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
     if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
     if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])

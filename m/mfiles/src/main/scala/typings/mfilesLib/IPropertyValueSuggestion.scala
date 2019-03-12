@@ -15,12 +15,12 @@ trait IPropertyValueSuggestion extends js.Object {
 object IPropertyValueSuggestion {
   @scala.inline
   def apply(
-    Clone: js.Function0[IPropertyValueSuggestion],
+    Clone: () => IPropertyValueSuggestion,
     IsFact: scala.Boolean,
     Quality: scala.Double,
     TypedValue: ITypedValue
   ): IPropertyValueSuggestion = {
-    val __obj = js.Dynamic.literal(Clone = Clone, IsFact = IsFact, Quality = Quality, TypedValue = TypedValue)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), IsFact = IsFact, Quality = Quality, TypedValue = TypedValue)
   
     __obj.asInstanceOf[IPropertyValueSuggestion]
   }

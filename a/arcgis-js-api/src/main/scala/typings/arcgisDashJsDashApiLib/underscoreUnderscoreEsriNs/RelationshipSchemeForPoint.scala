@@ -51,15 +51,15 @@ object RelationshipSchemeForPoint {
   def apply(
     colorsForClassBreaks: js.Array[RelationshipSchemeForPointColorsForClassBreaks],
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     id: java.lang.String,
     noDataColor: Color,
     opacity: scala.Double,
     outline: RelationshipSchemeForPointOutline,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     size: scala.Double
   ): RelationshipSchemeForPoint = {
-    val __obj = js.Dynamic.literal(colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = hasOwnProperty, id = id, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = propertyIsEnumerable, size = size)
+    val __obj = js.Dynamic.literal(colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size)
   
     __obj.asInstanceOf[RelationshipSchemeForPoint]
   }

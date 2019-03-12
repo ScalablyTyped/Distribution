@@ -15,13 +15,9 @@ trait Resolve[T] extends js.Object {
 object Resolve {
   @scala.inline
   def apply[T](
-    resolve: js.Function2[
-      atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot, 
-      atAngularRouterLib.srcRouterUnderscoreStateMod.RouterStateSnapshot, 
-      rxjsLib.rxjsMod.Observable[T] | js.Promise[T] | T
-    ]
+    resolve: (atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot, atAngularRouterLib.srcRouterUnderscoreStateMod.RouterStateSnapshot) => rxjsLib.rxjsMod.Observable[T] | js.Promise[T] | T
   ): Resolve[T] = {
-    val __obj = js.Dynamic.literal(resolve = resolve)
+    val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction2(resolve))
   
     __obj.asInstanceOf[Resolve[T]]
   }

@@ -49,35 +49,14 @@ trait XEventAttacher
 object XEventAttacher {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    attachListener: js.Function5[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      XAllListener, 
-      js.Any, 
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener
-    ],
-    attachSingleEventListener: js.Function6[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      XAllListener, 
-      js.Any, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeListener: js.Function4[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    attachListener: (activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, XAllListener, js.Any, java.lang.String, java.lang.String) => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener,
+    attachSingleEventListener: (activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, XAllListener, js.Any, java.lang.String, java.lang.String, java.lang.String) => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeListener: (activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, java.lang.String, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener) => scala.Unit
   ): XEventAttacher = {
-    val __obj = js.Dynamic.literal(acquire = acquire, attachListener = attachListener, attachSingleEventListener = attachSingleEventListener, queryInterface = queryInterface, release = release, removeListener = removeListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), attachListener = js.Any.fromFunction5(attachListener), attachSingleEventListener = js.Any.fromFunction6(attachSingleEventListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeListener = js.Any.fromFunction4(removeListener))
   
     __obj.asInstanceOf[XEventAttacher]
   }

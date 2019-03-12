@@ -162,7 +162,7 @@ object ScrollViewPropsIOS {
     indicatorStyle: reactDashNativeLib.reactDashNativeLibStrings.default | reactDashNativeLib.reactDashNativeLibStrings.black | reactDashNativeLib.reactDashNativeLibStrings.white = null,
     maximumZoomScale: scala.Int | scala.Double = null,
     minimumZoomScale: scala.Int | scala.Double = null,
-    onScrollAnimationEnd: js.Function0[scala.Unit] = null,
+    onScrollAnimationEnd: () => scala.Unit = null,
     pinchGestureEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     scrollEventThrottle: scala.Int | scala.Double = null,
     scrollIndicatorInsets: Insets = null,
@@ -186,7 +186,7 @@ object ScrollViewPropsIOS {
     if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
     if (maximumZoomScale != null) __obj.updateDynamic("maximumZoomScale")(maximumZoomScale.asInstanceOf[js.Any])
     if (minimumZoomScale != null) __obj.updateDynamic("minimumZoomScale")(minimumZoomScale.asInstanceOf[js.Any])
-    if (onScrollAnimationEnd != null) __obj.updateDynamic("onScrollAnimationEnd")(onScrollAnimationEnd)
+    if (onScrollAnimationEnd != null) __obj.updateDynamic("onScrollAnimationEnd")(js.Any.fromFunction0(onScrollAnimationEnd))
     if (!js.isUndefined(pinchGestureEnabled)) __obj.updateDynamic("pinchGestureEnabled")(pinchGestureEnabled)
     if (scrollEventThrottle != null) __obj.updateDynamic("scrollEventThrottle")(scrollEventThrottle.asInstanceOf[js.Any])
     if (scrollIndicatorInsets != null) __obj.updateDynamic("scrollIndicatorInsets")(scrollIndicatorInsets)

@@ -33,7 +33,7 @@ trait Snapshot extends js.Object {
     * callback(error, data) receives serialized snapshot as second argument. (Serialization is not equal to JSON.stringify result).
     * If callback will not be passed, export returns transform stream.
     */
-  def export(callback: js.Function2[/* error */ nodeLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
+  def export(callback: js.Function2[/* error */ stdLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
   /**
     * provides short information about snapshot.
     */

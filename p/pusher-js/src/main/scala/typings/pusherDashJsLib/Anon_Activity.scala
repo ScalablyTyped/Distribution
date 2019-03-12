@@ -16,13 +16,13 @@ trait Anon_Activity extends js.Object {
 object Anon_Activity {
   @scala.inline
   def apply(
-    activity: js.Function0[scala.Unit],
-    closed: js.Function0[scala.Unit],
-    error: js.Function1[js.Any, scala.Unit],
-    message: js.Function1[java.lang.String, scala.Unit],
-    ping: js.Function0[scala.Unit]
+    activity: () => scala.Unit,
+    closed: () => scala.Unit,
+    error: js.Any => scala.Unit,
+    message: java.lang.String => scala.Unit,
+    ping: () => scala.Unit
   ): Anon_Activity = {
-    val __obj = js.Dynamic.literal(activity = activity, closed = closed, error = error, message = message, ping = ping)
+    val __obj = js.Dynamic.literal(activity = js.Any.fromFunction0(activity), closed = js.Any.fromFunction0(closed), error = js.Any.fromFunction1(error), message = js.Any.fromFunction1(message), ping = js.Any.fromFunction0(ping))
   
     __obj.asInstanceOf[Anon_Activity]
   }

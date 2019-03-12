@@ -14,37 +14,23 @@ object XMLDocumentWrapper {
   @scala.inline
   def apply(
     CurrentElement: XXMLElementWrapper,
-    acquire: js.Function0[scala.Unit],
-    clearUselessData: js.Function3[
-      XXMLElementWrapper, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XXMLElementWrapper], 
-      XXMLElementWrapper, 
-      scala.Unit
-    ],
-    collapse: js.Function1[XXMLElementWrapper, scala.Unit],
-    generateSAXEvents: js.Function4[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler, 
-      XXMLElementWrapper, 
-      XXMLElementWrapper, 
-      scala.Unit
-    ],
-    getCurrentElement: js.Function0[XXMLElementWrapper],
-    getNodeName: js.Function1[XXMLElementWrapper, java.lang.String],
-    getTree: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler, 
-      scala.Unit
-    ],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    isCurrent: js.Function1[XXMLElementWrapper, scala.Boolean],
-    isCurrentElementEmpty: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    rebuildIDLink: js.Function1[XXMLElementWrapper, scala.Unit],
-    release: js.Function0[scala.Unit],
-    removeCurrentElement: js.Function0[scala.Unit],
-    setCurrentElement: js.Function1[XXMLElementWrapper, scala.Unit]
+    acquire: () => scala.Unit,
+    clearUselessData: (XXMLElementWrapper, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XXMLElementWrapper], XXMLElementWrapper) => scala.Unit,
+    collapse: XXMLElementWrapper => scala.Unit,
+    generateSAXEvents: (activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler, activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler, XXMLElementWrapper, XXMLElementWrapper) => scala.Unit,
+    getCurrentElement: () => XXMLElementWrapper,
+    getNodeName: XXMLElementWrapper => java.lang.String,
+    getTree: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler => scala.Unit,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    isCurrent: XXMLElementWrapper => scala.Boolean,
+    isCurrentElementEmpty: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    rebuildIDLink: XXMLElementWrapper => scala.Unit,
+    release: () => scala.Unit,
+    removeCurrentElement: () => scala.Unit,
+    setCurrentElement: XXMLElementWrapper => scala.Unit
   ): XMLDocumentWrapper = {
-    val __obj = js.Dynamic.literal(CurrentElement = CurrentElement, acquire = acquire, clearUselessData = clearUselessData, collapse = collapse, generateSAXEvents = generateSAXEvents, getCurrentElement = getCurrentElement, getNodeName = getNodeName, getTree = getTree, initialize = initialize, isCurrent = isCurrent, isCurrentElementEmpty = isCurrentElementEmpty, queryInterface = queryInterface, rebuildIDLink = rebuildIDLink, release = release, removeCurrentElement = removeCurrentElement, setCurrentElement = setCurrentElement)
+    val __obj = js.Dynamic.literal(CurrentElement = CurrentElement, acquire = js.Any.fromFunction0(acquire), clearUselessData = js.Any.fromFunction3(clearUselessData), collapse = js.Any.fromFunction1(collapse), generateSAXEvents = js.Any.fromFunction4(generateSAXEvents), getCurrentElement = js.Any.fromFunction0(getCurrentElement), getNodeName = js.Any.fromFunction1(getNodeName), getTree = js.Any.fromFunction1(getTree), initialize = js.Any.fromFunction1(initialize), isCurrent = js.Any.fromFunction1(isCurrent), isCurrentElementEmpty = js.Any.fromFunction0(isCurrentElementEmpty), queryInterface = js.Any.fromFunction1(queryInterface), rebuildIDLink = js.Any.fromFunction1(rebuildIDLink), release = js.Any.fromFunction0(release), removeCurrentElement = js.Any.fromFunction0(removeCurrentElement), setCurrentElement = js.Any.fromFunction1(setCurrentElement))
   
     __obj.asInstanceOf[XMLDocumentWrapper]
   }

@@ -41,9 +41,9 @@ object UploadProps {
   def apply(
     accept: java.lang.String = null,
     action: java.lang.String | (js.Function1[/* file */ UploadFile, js.Thenable[_]]) = null,
-    beforeUpload: js.Function2[/* file */ RcFile, /* FileList */ js.Array[RcFile], scala.Boolean | js.Thenable[_]] = null,
+    beforeUpload: (/* file */ RcFile, /* FileList */ js.Array[RcFile]) => scala.Boolean | js.Thenable[_] = null,
     className: java.lang.String = null,
-    customRequest: js.Function1[/* option */ js.Any, scala.Unit] = null,
+    customRequest: /* option */ js.Any => scala.Unit = null,
     data: js.Object | (js.Function1[/* file */ UploadFile, _]) = null,
     defaultFileList: js.Array[UploadFile] = null,
     directory: js.UndefOr[scala.Boolean] = js.undefined,
@@ -55,9 +55,9 @@ object UploadProps {
     locale: UploadLocale = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
-    onChange: js.Function1[/* info */ UploadChangeParam, scala.Unit] = null,
-    onPreview: js.Function1[/* file */ UploadFile, scala.Unit] = null,
-    onRemove: js.Function1[/* file */ UploadFile, scala.Unit | scala.Boolean] = null,
+    onChange: /* info */ UploadChangeParam => scala.Unit = null,
+    onPreview: /* file */ UploadFile => scala.Unit = null,
+    onRemove: /* file */ UploadFile => scala.Unit | scala.Boolean = null,
     openFileDialogOnClick: js.UndefOr[scala.Boolean] = js.undefined,
     prefixCls: java.lang.String = null,
     showUploadList: scala.Boolean | ShowUploadListInterface = null,
@@ -69,9 +69,9 @@ object UploadProps {
     val __obj = js.Dynamic.literal()
     if (accept != null) __obj.updateDynamic("accept")(accept)
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (beforeUpload != null) __obj.updateDynamic("beforeUpload")(beforeUpload)
+    if (beforeUpload != null) __obj.updateDynamic("beforeUpload")(js.Any.fromFunction2(beforeUpload))
     if (className != null) __obj.updateDynamic("className")(className)
-    if (customRequest != null) __obj.updateDynamic("customRequest")(customRequest)
+    if (customRequest != null) __obj.updateDynamic("customRequest")(js.Any.fromFunction1(customRequest))
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (defaultFileList != null) __obj.updateDynamic("defaultFileList")(defaultFileList)
     if (!js.isUndefined(directory)) __obj.updateDynamic("directory")(directory)
@@ -83,9 +83,9 @@ object UploadProps {
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onPreview != null) __obj.updateDynamic("onPreview")(onPreview)
-    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onPreview != null) __obj.updateDynamic("onPreview")(js.Any.fromFunction1(onPreview))
+    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
     if (!js.isUndefined(openFileDialogOnClick)) __obj.updateDynamic("openFileDialogOnClick")(openFileDialogOnClick)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (showUploadList != null) __obj.updateDynamic("showUploadList")(showUploadList.asInstanceOf[js.Any])

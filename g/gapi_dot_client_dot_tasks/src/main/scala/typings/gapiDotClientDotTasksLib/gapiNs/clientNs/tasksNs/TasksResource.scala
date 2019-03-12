@@ -33,40 +33,16 @@ trait TasksResource extends js.Object {
 object TasksResource {
   @scala.inline
   def apply(
-    clear: js.Function1[
-      gapiDotClientDotTasksLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotTasksLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotTasksLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Task]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotTasksLib.Anon_AltFieldsKeyOauthtokenParent, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Task]
-    ],
-    list: js.Function1[
-      gapiDotClientDotTasksLib.Anon_AltCompletedMax, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Tasks]
-    ],
-    move: js.Function1[
-      gapiDotClientDotTasksLib.Anon_AltFieldsKeyOauthtokenParentPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Task]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotTasksLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Task]
-    ],
-    update: js.Function1[
-      gapiDotClientDotTasksLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Task]
-    ]
+    clear: gapiDotClientDotTasksLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    delete: gapiDotClientDotTasksLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotTasksLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Task],
+    insert: gapiDotClientDotTasksLib.Anon_AltFieldsKeyOauthtokenParent => gapiDotClientLib.gapiNs.clientNs.Request[Task],
+    list: gapiDotClientDotTasksLib.Anon_AltCompletedMax => gapiDotClientLib.gapiNs.clientNs.Request[Tasks],
+    move: gapiDotClientDotTasksLib.Anon_AltFieldsKeyOauthtokenParentPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Task],
+    patch: gapiDotClientDotTasksLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Task],
+    update: gapiDotClientDotTasksLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Task]
   ): TasksResource = {
-    val __obj = js.Dynamic.literal(clear = clear, delete = delete, get = get, insert = insert, list = list, move = move, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), move = js.Any.fromFunction1(move), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[TasksResource]
   }

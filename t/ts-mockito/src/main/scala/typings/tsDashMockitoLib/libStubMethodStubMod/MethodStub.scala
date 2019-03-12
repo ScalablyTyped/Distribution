@@ -15,12 +15,12 @@ trait MethodStub extends js.Object {
 object MethodStub {
   @scala.inline
   def apply(
-    execute: js.Function1[js.Array[_], scala.Unit],
-    getGroupIndex: js.Function0[scala.Double],
-    getValue: js.Function0[js.Any],
-    isApplicable: js.Function1[js.Array[_], scala.Boolean]
+    execute: js.Array[_] => scala.Unit,
+    getGroupIndex: () => scala.Double,
+    getValue: () => js.Any,
+    isApplicable: js.Array[_] => scala.Boolean
   ): MethodStub = {
-    val __obj = js.Dynamic.literal(execute = execute, getGroupIndex = getGroupIndex, getValue = getValue, isApplicable = isApplicable)
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getGroupIndex = js.Any.fromFunction0(getGroupIndex), getValue = js.Any.fromFunction0(getValue), isApplicable = js.Any.fromFunction1(isApplicable))
   
     __obj.asInstanceOf[MethodStub]
   }

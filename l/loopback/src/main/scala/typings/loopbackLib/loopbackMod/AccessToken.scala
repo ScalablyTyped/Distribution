@@ -66,7 +66,7 @@ object AccessToken extends js.Object {
     * @param {Error} err
     * @param {string} toke
     */
-  def createAccessTokenId(callback: js.Function2[/* err */ nodeLib.Error, /* token */ java.lang.String, scala.Unit]): scala.Unit = js.native
+  def createAccessTokenId(callback: js.Function2[/* err */ stdLib.Error, /* token */ java.lang.String, scala.Unit]): scala.Unit = js.native
   /**
     * Find a token for the given `any`
     * @param {any} req
@@ -80,7 +80,7 @@ object AccessToken extends js.Object {
   def findForRequest(
     req: js.Any,
     options: js.Any,
-    callback: js.Function2[/* err */ nodeLib.Error, /* token */ this.type, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* token */ this.type, scala.Unit]
   ): scala.Unit = js.native
 }
 

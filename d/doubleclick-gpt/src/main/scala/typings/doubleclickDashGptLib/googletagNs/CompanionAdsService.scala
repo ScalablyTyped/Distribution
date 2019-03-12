@@ -13,19 +13,15 @@ trait CompanionAdsService extends Service {
 object CompanionAdsService {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[
-      java.lang.String, 
-      js.Function1[
-        /* event */ doubleclickDashGptLib.googletagNs.eventsNs.ImpressionViewableEvent | doubleclickDashGptLib.googletagNs.eventsNs.SlotOnloadEvent | doubleclickDashGptLib.googletagNs.eventsNs.SlotRenderEndedEvent | doubleclickDashGptLib.googletagNs.eventsNs.slotVisibilityChangedEvent, 
-        scala.Unit
-      ], 
+    addEventListener: (java.lang.String, js.Function1[
+      /* event */ doubleclickDashGptLib.googletagNs.eventsNs.ImpressionViewableEvent | doubleclickDashGptLib.googletagNs.eventsNs.SlotOnloadEvent | doubleclickDashGptLib.googletagNs.eventsNs.SlotRenderEndedEvent | doubleclickDashGptLib.googletagNs.eventsNs.slotVisibilityChangedEvent, 
       scala.Unit
-    ],
-    enableSyncLoading: js.Function0[scala.Unit],
-    getSlots: js.Function0[js.Array[Slot]],
-    setRefreshUnfilledSlots: js.Function1[scala.Boolean, scala.Unit]
+    ]) => scala.Unit,
+    enableSyncLoading: () => scala.Unit,
+    getSlots: () => js.Array[Slot],
+    setRefreshUnfilledSlots: scala.Boolean => scala.Unit
   ): CompanionAdsService = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, enableSyncLoading = enableSyncLoading, getSlots = getSlots, setRefreshUnfilledSlots = setRefreshUnfilledSlots)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), enableSyncLoading = js.Any.fromFunction0(enableSyncLoading), getSlots = js.Any.fromFunction0(getSlots), setRefreshUnfilledSlots = js.Any.fromFunction1(setRefreshUnfilledSlots))
   
     __obj.asInstanceOf[CompanionAdsService]
   }

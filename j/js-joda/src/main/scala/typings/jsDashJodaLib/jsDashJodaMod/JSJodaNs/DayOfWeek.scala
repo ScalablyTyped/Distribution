@@ -21,22 +21,22 @@ trait DayOfWeek extends TemporalAccessor {
 object DayOfWeek {
   @scala.inline
   def apply(
-    adjustInto: js.Function1[TemporalAdjuster, DayOfWeek],
-    equals: js.Function1[js.Any, scala.Boolean],
-    get: js.Function1[TemporalField, scala.Double],
-    getDisplayName: js.Function2[TextStyle, Locale, java.lang.String],
-    getLong: js.Function1[TemporalField, scala.Double],
-    isSupported: js.Function1[TemporalField, scala.Boolean],
-    minus: js.Function1[scala.Double, DayOfWeek],
-    name: js.Function0[java.lang.String],
-    ordinal: js.Function0[scala.Double],
-    plus: js.Function1[scala.Double, DayOfWeek],
-    query: js.Function1[TemporalQuery, js.Any],
-    range: js.Function1[TemporalField, ValueRange],
-    toString: js.Function0[java.lang.String],
-    value: js.Function0[scala.Double]
+    adjustInto: TemporalAdjuster => DayOfWeek,
+    equals: js.Any => scala.Boolean,
+    get: TemporalField => scala.Double,
+    getDisplayName: (TextStyle, Locale) => java.lang.String,
+    getLong: TemporalField => scala.Double,
+    isSupported: TemporalField => scala.Boolean,
+    minus: scala.Double => DayOfWeek,
+    name: () => java.lang.String,
+    ordinal: () => scala.Double,
+    plus: scala.Double => DayOfWeek,
+    query: TemporalQuery => js.Any,
+    range: TemporalField => ValueRange,
+    toString: () => java.lang.String,
+    value: () => scala.Double
   ): DayOfWeek = {
-    val __obj = js.Dynamic.literal(adjustInto = adjustInto, equals = equals, get = get, getDisplayName = getDisplayName, getLong = getLong, isSupported = isSupported, minus = minus, name = name, ordinal = ordinal, plus = plus, query = query, range = range, toString = toString, value = value)
+    val __obj = js.Dynamic.literal(adjustInto = js.Any.fromFunction1(adjustInto), equals = js.Any.fromFunction1(equals), get = js.Any.fromFunction1(get), getDisplayName = js.Any.fromFunction2(getDisplayName), getLong = js.Any.fromFunction1(getLong), isSupported = js.Any.fromFunction1(isSupported), minus = js.Any.fromFunction1(minus), name = js.Any.fromFunction0(name), ordinal = js.Any.fromFunction0(ordinal), plus = js.Any.fromFunction1(plus), query = js.Any.fromFunction1(query), range = js.Any.fromFunction1(range), toString = js.Any.fromFunction0(toString), value = js.Any.fromFunction0(value))
   
     __obj.asInstanceOf[DayOfWeek]
   }

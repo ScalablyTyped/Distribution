@@ -5,24 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateRetWithRet extends js.Object {
-  var in: js.Function1[/* collection */ js.Any, UpdateExpression]
-  var in_ : js.Function1[/* collection */ js.Any, UpdateExpression]
-  def into(collection: js.Any): UpdateExpression
-  def `with`(collection: js.Any): UpdateRetWithRet
-}
-
-object UpdateRetWithRet {
-  @scala.inline
-  def apply(
-    in: js.Function1[/* collection */ js.Any, UpdateExpression],
-    in_ : js.Function1[/* collection */ js.Any, UpdateExpression],
-    into: js.Function1[js.Any, UpdateExpression],
-    `with`: js.Function1[js.Any, UpdateRetWithRet]
-  ): UpdateRetWithRet = {
-    val __obj = js.Dynamic.literal(in = in, in_ = in_, into = into)
-    __obj.updateDynamic("with")(`with`)
-    __obj.asInstanceOf[UpdateRetWithRet]
-  }
+  @JSName("in")
+  var in_Original: js.Function1[/* collection */ js.Any, UpdateExpression] = js.native
+  @JSName("in_")
+  var in__Original: js.Function1[/* collection */ js.Any, UpdateExpression] = js.native
+  def in(collection: js.Any): UpdateExpression = js.native
+  def in_(collection: js.Any): UpdateExpression = js.native
+  def into(collection: js.Any): UpdateExpression = js.native
+  def `with`(collection: js.Any): UpdateRetWithRet = js.native
 }
 

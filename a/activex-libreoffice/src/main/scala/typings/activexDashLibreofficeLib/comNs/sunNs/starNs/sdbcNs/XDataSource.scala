@@ -52,14 +52,14 @@ object XDataSource {
   @scala.inline
   def apply(
     LoginTimeout: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getConnection: js.Function2[java.lang.String, java.lang.String, XConnection],
-    getLoginTimeout: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setLoginTimeout: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    getConnection: (java.lang.String, java.lang.String) => XConnection,
+    getLoginTimeout: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setLoginTimeout: scala.Double => scala.Unit
   ): XDataSource = {
-    val __obj = js.Dynamic.literal(LoginTimeout = LoginTimeout, acquire = acquire, getConnection = getConnection, getLoginTimeout = getLoginTimeout, queryInterface = queryInterface, release = release, setLoginTimeout = setLoginTimeout)
+    val __obj = js.Dynamic.literal(LoginTimeout = LoginTimeout, acquire = js.Any.fromFunction0(acquire), getConnection = js.Any.fromFunction2(getConnection), getLoginTimeout = js.Any.fromFunction0(getLoginTimeout), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setLoginTimeout = js.Any.fromFunction1(setLoginTimeout))
   
     __obj.asInstanceOf[XDataSource]
   }

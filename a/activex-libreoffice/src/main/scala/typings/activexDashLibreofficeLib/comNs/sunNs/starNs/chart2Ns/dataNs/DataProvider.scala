@@ -17,29 +17,20 @@ object DataProvider {
   def apply(
     IncludeHiddenCells: scala.Boolean,
     RangeSelection: activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.XRangeSelection,
-    acquire: js.Function0[scala.Unit],
-    convertRangeFromXML: js.Function1[java.lang.String, java.lang.String],
-    convertRangeToXML: js.Function1[java.lang.String, java.lang.String],
-    createDataSequenceByRangeRepresentation: js.Function1[java.lang.String, XDataSequence],
-    createDataSequenceByRangeRepresentationPossible: js.Function1[java.lang.String, scala.Boolean],
-    createDataSequenceByValueArray: js.Function2[java.lang.String, java.lang.String, XDataSequence],
-    createDataSource: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      XDataSource
-    ],
-    createDataSourcePossible: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Boolean
-    ],
-    detectArguments: js.Function1[
-      XDataSource, 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    getRangeSelection: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.XRangeSelection],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    convertRangeFromXML: java.lang.String => java.lang.String,
+    convertRangeToXML: java.lang.String => java.lang.String,
+    createDataSequenceByRangeRepresentation: java.lang.String => XDataSequence,
+    createDataSequenceByRangeRepresentationPossible: java.lang.String => scala.Boolean,
+    createDataSequenceByValueArray: (java.lang.String, java.lang.String) => XDataSequence,
+    createDataSource: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] => XDataSource,
+    createDataSourcePossible: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] => scala.Boolean,
+    detectArguments: XDataSource => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    getRangeSelection: () => activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.XRangeSelection,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): DataProvider = {
-    val __obj = js.Dynamic.literal(IncludeHiddenCells = IncludeHiddenCells, RangeSelection = RangeSelection, acquire = acquire, convertRangeFromXML = convertRangeFromXML, convertRangeToXML = convertRangeToXML, createDataSequenceByRangeRepresentation = createDataSequenceByRangeRepresentation, createDataSequenceByRangeRepresentationPossible = createDataSequenceByRangeRepresentationPossible, createDataSequenceByValueArray = createDataSequenceByValueArray, createDataSource = createDataSource, createDataSourcePossible = createDataSourcePossible, detectArguments = detectArguments, getRangeSelection = getRangeSelection, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(IncludeHiddenCells = IncludeHiddenCells, RangeSelection = RangeSelection, acquire = js.Any.fromFunction0(acquire), convertRangeFromXML = js.Any.fromFunction1(convertRangeFromXML), convertRangeToXML = js.Any.fromFunction1(convertRangeToXML), createDataSequenceByRangeRepresentation = js.Any.fromFunction1(createDataSequenceByRangeRepresentation), createDataSequenceByRangeRepresentationPossible = js.Any.fromFunction1(createDataSequenceByRangeRepresentationPossible), createDataSequenceByValueArray = js.Any.fromFunction2(createDataSequenceByValueArray), createDataSource = js.Any.fromFunction1(createDataSource), createDataSourcePossible = js.Any.fromFunction1(createDataSourcePossible), detectArguments = js.Any.fromFunction1(detectArguments), getRangeSelection = js.Any.fromFunction0(getRangeSelection), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[DataProvider]
   }

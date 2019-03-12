@@ -16,13 +16,13 @@ trait Anon_AnimationEnd extends js.Object {
 object Anon_AnimationEnd {
   @scala.inline
   def apply(
-    animationEnd: js.Function0[scala.Unit],
+    animationEnd: () => scala.Unit,
     autoRotate: scala.Boolean,
     destination: wepyLib.wxUnderscoreEnhancedMod.LagLng,
     duration: scala.Double,
     markerId: scala.Double
   ): Anon_AnimationEnd = {
-    val __obj = js.Dynamic.literal(animationEnd = animationEnd, autoRotate = autoRotate, destination = destination, duration = duration, markerId = markerId)
+    val __obj = js.Dynamic.literal(animationEnd = js.Any.fromFunction0(animationEnd), autoRotate = autoRotate, destination = destination, duration = duration, markerId = markerId)
   
     __obj.asInstanceOf[Anon_AnimationEnd]
   }

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val CANCEL_KEY: /* cancel */ java.lang.String = js.native
   val CONFIRM_KEY: /* confirm */ java.lang.String = js.native
-  val defaultButtonList: sweetalertLib.typingsModulesOptionsButtonsMod.ButtonList = js.native
-  def getButtonListOpts(opts: java.lang.String): sweetalertLib.typingsModulesOptionsButtonsMod.ButtonList = js.native
-  def getButtonListOpts(opts: js.Object): sweetalertLib.typingsModulesOptionsButtonsMod.ButtonList = js.native
-  def getButtonListOpts(opts: scala.Boolean): sweetalertLib.typingsModulesOptionsButtonsMod.ButtonList = js.native
+  val defaultButtonList: ButtonList = js.native
+  def getButtonListOpts(opts: java.lang.String): ButtonList = js.native
+  def getButtonListOpts(opts: js.Object): ButtonList = js.native
+  def getButtonListOpts(opts: scala.Boolean): ButtonList = js.native
 }
 

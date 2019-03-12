@@ -130,19 +130,13 @@ object ReactCalendarTimelineProps {
     defaultTimeEnd: js.Any = null,
     defaultTimeStart: js.Any = null,
     dragSnap: scala.Int | scala.Double = null,
-    groupRenderer: js.Function1[
-      /* props */ reactDashCalendarDashTimelineLib.Anon_Group, 
-      reactLib.reactMod.ReactNs.ReactElement[js.Object]
-    ] = null,
+    groupRenderer: /* props */ reactDashCalendarDashTimelineLib.Anon_Group => reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
     headerLabelFormats: TimelineHeaderLabelFormat = null,
     headerLabelGroupHeight: scala.Int | scala.Double = null,
     headerLabelHeight: scala.Int | scala.Double = null,
     headerRef: js.Any = null,
     itemHeightRatio: scala.Int | scala.Double = null,
-    itemRenderer: js.Function1[
-      /* props */ reactDashCalendarDashTimelineLib.Anon_Context, 
-      reactLib.reactMod.ReactNs.ReactElement[js.Object]
-    ] = null,
+    itemRenderer: /* props */ reactDashCalendarDashTimelineLib.Anon_Context => reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
     itemTouchSendsClick: js.UndefOr[scala.Boolean] = js.undefined,
     keys: reactDashCalendarDashTimelineLib.Anon_GroupIdKey = null,
     lineHeight: scala.Int | scala.Double = null,
@@ -150,40 +144,19 @@ object ReactCalendarTimelineProps {
     minResizeWidth: scala.Int | scala.Double = null,
     minZoom: scala.Int | scala.Double = null,
     minimumWidthForItemContentVisibility: scala.Int | scala.Double = null,
-    moveResizeValidator: js.Function4[
-      /* action */ reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineLibStrings.move | reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineLibStrings.resize, 
-      /* itemId */ scala.Double, 
-      /* time */ scala.Double, 
-      /* resizeEdge */ reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineLibStrings.left | reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineLibStrings.right, 
-      _
-    ] = null,
-    onBoundsChange: js.Function2[/* canvasTimeStart */ scala.Double, /* canvasTimeEnd */ scala.Double, _] = null,
-    onCanvasClick: js.Function3[/* groupId */ scala.Double, /* time */ scala.Double, /* e */ js.Any, _] = null,
-    onCanvasContextMenu: js.Function3[/* group */ TimelineGroup, /* time */ scala.Double, /* e */ js.Any, _] = null,
-    onCanvasDoubleClick: js.Function3[/* group */ TimelineGroup, /* time */ scala.Double, /* e */ js.Any, _] = null,
-    onItemClick: js.Function3[/* itemId */ scala.Double, /* e */ js.Any, /* time */ scala.Double, _] = null,
-    onItemDoubleClick: js.Function3[/* itemId */ scala.Double, /* e */ js.Any, /* time */ scala.Double, _] = null,
-    onItemMove: js.Function3[
-      /* itemId */ scala.Double, 
-      /* dragTime */ scala.Double, 
-      /* newGroupOrder */ scala.Double, 
-      _
-    ] = null,
-    onItemResize: js.Function3[
-      /* itemId */ scala.Double, 
-      /* newResizeEnd */ scala.Double, 
-      /* edge */ reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineLibStrings.left | reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineLibStrings.right, 
-      _
-    ] = null,
-    onItemSelect: js.Function3[/* itemId */ scala.Double, /* e */ js.Any, /* time */ scala.Double, _] = null,
-    onTimeChange: js.Function3[
-      /* visibleTimeStart */ scala.Double, 
-      /* visibleTimeEnd */ scala.Double, 
-      /* updateScrollCanvas */ js.Function2[/* start */ scala.Double, /* end */ scala.Double, scala.Unit], 
-      _
-    ] = null,
-    onTimeInit: js.Function2[/* canvasTimeStart */ scala.Double, /* canvasTimeEnd */ scala.Double, _] = null,
-    onZoom: js.Function1[/* timelineContext */ TimelineContext, _] = null,
+    moveResizeValidator: (/* action */ reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineLibStrings.move | reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineLibStrings.resize, /* itemId */ scala.Double, /* time */ scala.Double, /* resizeEdge */ reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineLibStrings.left | reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineLibStrings.right) => _ = null,
+    onBoundsChange: (/* canvasTimeStart */ scala.Double, /* canvasTimeEnd */ scala.Double) => _ = null,
+    onCanvasClick: (/* groupId */ scala.Double, /* time */ scala.Double, /* e */ js.Any) => _ = null,
+    onCanvasContextMenu: (/* group */ TimelineGroup, /* time */ scala.Double, /* e */ js.Any) => _ = null,
+    onCanvasDoubleClick: (/* group */ TimelineGroup, /* time */ scala.Double, /* e */ js.Any) => _ = null,
+    onItemClick: (/* itemId */ scala.Double, /* e */ js.Any, /* time */ scala.Double) => _ = null,
+    onItemDoubleClick: (/* itemId */ scala.Double, /* e */ js.Any, /* time */ scala.Double) => _ = null,
+    onItemMove: (/* itemId */ scala.Double, /* dragTime */ scala.Double, /* newGroupOrder */ scala.Double) => _ = null,
+    onItemResize: (/* itemId */ scala.Double, /* newResizeEnd */ scala.Double, /* edge */ reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineLibStrings.left | reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineLibStrings.right) => _ = null,
+    onItemSelect: (/* itemId */ scala.Double, /* e */ js.Any, /* time */ scala.Double) => _ = null,
+    onTimeChange: (/* visibleTimeStart */ scala.Double, /* visibleTimeEnd */ scala.Double, /* updateScrollCanvas */ js.Function2[/* start */ scala.Double, /* end */ scala.Double, scala.Unit]) => _ = null,
+    onTimeInit: (/* canvasTimeStart */ scala.Double, /* canvasTimeEnd */ scala.Double) => _ = null,
+    onZoom: /* timelineContext */ TimelineContext => _ = null,
     rightSidebarContent: reactLib.reactMod.ReactNs.ReactNode = null,
     rightSidebarWidth: scala.Int | scala.Double = null,
     selected: js.Array[scala.Double] = null,
@@ -209,13 +182,13 @@ object ReactCalendarTimelineProps {
     if (defaultTimeEnd != null) __obj.updateDynamic("defaultTimeEnd")(defaultTimeEnd)
     if (defaultTimeStart != null) __obj.updateDynamic("defaultTimeStart")(defaultTimeStart)
     if (dragSnap != null) __obj.updateDynamic("dragSnap")(dragSnap.asInstanceOf[js.Any])
-    if (groupRenderer != null) __obj.updateDynamic("groupRenderer")(groupRenderer)
+    if (groupRenderer != null) __obj.updateDynamic("groupRenderer")(js.Any.fromFunction1(groupRenderer))
     if (headerLabelFormats != null) __obj.updateDynamic("headerLabelFormats")(headerLabelFormats)
     if (headerLabelGroupHeight != null) __obj.updateDynamic("headerLabelGroupHeight")(headerLabelGroupHeight.asInstanceOf[js.Any])
     if (headerLabelHeight != null) __obj.updateDynamic("headerLabelHeight")(headerLabelHeight.asInstanceOf[js.Any])
     if (headerRef != null) __obj.updateDynamic("headerRef")(headerRef)
     if (itemHeightRatio != null) __obj.updateDynamic("itemHeightRatio")(itemHeightRatio.asInstanceOf[js.Any])
-    if (itemRenderer != null) __obj.updateDynamic("itemRenderer")(itemRenderer)
+    if (itemRenderer != null) __obj.updateDynamic("itemRenderer")(js.Any.fromFunction1(itemRenderer))
     if (!js.isUndefined(itemTouchSendsClick)) __obj.updateDynamic("itemTouchSendsClick")(itemTouchSendsClick)
     if (keys != null) __obj.updateDynamic("keys")(keys)
     if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
@@ -223,19 +196,19 @@ object ReactCalendarTimelineProps {
     if (minResizeWidth != null) __obj.updateDynamic("minResizeWidth")(minResizeWidth.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (minimumWidthForItemContentVisibility != null) __obj.updateDynamic("minimumWidthForItemContentVisibility")(minimumWidthForItemContentVisibility.asInstanceOf[js.Any])
-    if (moveResizeValidator != null) __obj.updateDynamic("moveResizeValidator")(moveResizeValidator)
-    if (onBoundsChange != null) __obj.updateDynamic("onBoundsChange")(onBoundsChange)
-    if (onCanvasClick != null) __obj.updateDynamic("onCanvasClick")(onCanvasClick)
-    if (onCanvasContextMenu != null) __obj.updateDynamic("onCanvasContextMenu")(onCanvasContextMenu)
-    if (onCanvasDoubleClick != null) __obj.updateDynamic("onCanvasDoubleClick")(onCanvasDoubleClick)
-    if (onItemClick != null) __obj.updateDynamic("onItemClick")(onItemClick)
-    if (onItemDoubleClick != null) __obj.updateDynamic("onItemDoubleClick")(onItemDoubleClick)
-    if (onItemMove != null) __obj.updateDynamic("onItemMove")(onItemMove)
-    if (onItemResize != null) __obj.updateDynamic("onItemResize")(onItemResize)
-    if (onItemSelect != null) __obj.updateDynamic("onItemSelect")(onItemSelect)
-    if (onTimeChange != null) __obj.updateDynamic("onTimeChange")(onTimeChange)
-    if (onTimeInit != null) __obj.updateDynamic("onTimeInit")(onTimeInit)
-    if (onZoom != null) __obj.updateDynamic("onZoom")(onZoom)
+    if (moveResizeValidator != null) __obj.updateDynamic("moveResizeValidator")(js.Any.fromFunction4(moveResizeValidator))
+    if (onBoundsChange != null) __obj.updateDynamic("onBoundsChange")(js.Any.fromFunction2(onBoundsChange))
+    if (onCanvasClick != null) __obj.updateDynamic("onCanvasClick")(js.Any.fromFunction3(onCanvasClick))
+    if (onCanvasContextMenu != null) __obj.updateDynamic("onCanvasContextMenu")(js.Any.fromFunction3(onCanvasContextMenu))
+    if (onCanvasDoubleClick != null) __obj.updateDynamic("onCanvasDoubleClick")(js.Any.fromFunction3(onCanvasDoubleClick))
+    if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction3(onItemClick))
+    if (onItemDoubleClick != null) __obj.updateDynamic("onItemDoubleClick")(js.Any.fromFunction3(onItemDoubleClick))
+    if (onItemMove != null) __obj.updateDynamic("onItemMove")(js.Any.fromFunction3(onItemMove))
+    if (onItemResize != null) __obj.updateDynamic("onItemResize")(js.Any.fromFunction3(onItemResize))
+    if (onItemSelect != null) __obj.updateDynamic("onItemSelect")(js.Any.fromFunction3(onItemSelect))
+    if (onTimeChange != null) __obj.updateDynamic("onTimeChange")(js.Any.fromFunction3(onTimeChange))
+    if (onTimeInit != null) __obj.updateDynamic("onTimeInit")(js.Any.fromFunction2(onTimeInit))
+    if (onZoom != null) __obj.updateDynamic("onZoom")(js.Any.fromFunction1(onZoom))
     if (rightSidebarContent != null) __obj.updateDynamic("rightSidebarContent")(rightSidebarContent.asInstanceOf[js.Any])
     if (rightSidebarWidth != null) __obj.updateDynamic("rightSidebarWidth")(rightSidebarWidth.asInstanceOf[js.Any])
     if (selected != null) __obj.updateDynamic("selected")(selected)

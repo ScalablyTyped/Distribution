@@ -20,14 +20,14 @@ trait ButtonProps extends js.Object {
 object ButtonProps {
   @scala.inline
   def apply(
-    onPress: js.Function1[NativeSyntheticEvent[NativeTouchEvent], scala.Unit],
+    onPress: NativeSyntheticEvent[NativeTouchEvent] => scala.Unit,
     title: java.lang.String,
     accessibilityLabel: java.lang.String = null,
     color: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     testID: java.lang.String = null
   ): ButtonProps = {
-    val __obj = js.Dynamic.literal(onPress = onPress, title = title)
+    val __obj = js.Dynamic.literal(onPress = js.Any.fromFunction1(onPress), title = title)
     if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel)
     if (color != null) __obj.updateDynamic("color")(color)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

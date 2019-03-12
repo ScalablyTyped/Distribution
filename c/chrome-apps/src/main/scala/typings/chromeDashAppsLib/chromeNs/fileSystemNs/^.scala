@@ -36,49 +36,47 @@ object ^ extends js.Object {
     * Called when a list of available volumes is changed.
     * @since Chrome 44.
     */
-  val onVolumeListChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[/* object */ js.Array[chromeDashAppsLib.chromeNs.fileSystemNs.Volume], scala.Unit]
-  ] = js.native
+  val onVolumeListChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* object */ js.Array[Volume], scala.Unit]] = js.native
   /** Ask the user to choose a file or directory. */
   def chooseEntry(
-    callback: chromeDashAppsLib.chromeNs.fileSystemNs.FileEntryCallback[
-      chromeDashAppsLib.chromeNs.fileSystemNs.ChooseFileEntryOptions, 
+    callback: FileEntryCallback[
+      ChooseFileEntryOptions, 
       filesystemLib.FileEntry | filesystemLib.DirectoryEntry | js.Array[filesystemLib.FileEntry]
     ]
   ): scala.Unit = js.native
   def chooseEntry(
-    options: chromeDashAppsLib.chromeNs.fileSystemNs.ChooseDirectoryEntryOptions,
-    callback: chromeDashAppsLib.chromeNs.fileSystemNs.FileEntryCallback[
-      chromeDashAppsLib.chromeNs.fileSystemNs.ChooseDirectoryEntryOptions, 
+    options: ChooseDirectoryEntryOptions,
+    callback: FileEntryCallback[
+      ChooseDirectoryEntryOptions, 
       filesystemLib.FileEntry | filesystemLib.DirectoryEntry | js.Array[filesystemLib.FileEntry]
     ]
   ): scala.Unit = js.native
   /** Ask the user to choose a file or directory. */
   def chooseEntry(
-    options: chromeDashAppsLib.chromeNs.fileSystemNs.ChooseEntryOptionsBase,
-    callback: chromeDashAppsLib.chromeNs.fileSystemNs.FileEntryCallback[
-      chromeDashAppsLib.chromeNs.fileSystemNs.ChooseEntryOptionsBase, 
+    options: ChooseEntryOptionsBase,
+    callback: FileEntryCallback[
+      ChooseEntryOptionsBase, 
       filesystemLib.FileEntry | filesystemLib.DirectoryEntry | js.Array[filesystemLib.FileEntry]
     ]
   ): scala.Unit = js.native
   def chooseEntry(
-    options: chromeDashAppsLib.chromeNs.fileSystemNs.ChooseFileEntryOptions,
-    callback: chromeDashAppsLib.chromeNs.fileSystemNs.FileEntryCallback[
-      chromeDashAppsLib.chromeNs.fileSystemNs.ChooseFileEntryOptions, 
+    options: ChooseFileEntryOptions,
+    callback: FileEntryCallback[
+      ChooseFileEntryOptions, 
       filesystemLib.FileEntry | filesystemLib.DirectoryEntry | js.Array[filesystemLib.FileEntry]
     ]
   ): scala.Unit = js.native
   def chooseEntry(
-    options: chromeDashAppsLib.chromeNs.fileSystemNs.ChooseMultipleFilesEntryOptions,
-    callback: chromeDashAppsLib.chromeNs.fileSystemNs.FileEntryCallback[
-      chromeDashAppsLib.chromeNs.fileSystemNs.ChooseMultipleFilesEntryOptions, 
+    options: ChooseMultipleFilesEntryOptions,
+    callback: FileEntryCallback[
+      ChooseMultipleFilesEntryOptions, 
       filesystemLib.FileEntry | filesystemLib.DirectoryEntry | js.Array[filesystemLib.FileEntry]
     ]
   ): scala.Unit = js.native
   def chooseEntry(
-    options: chromeDashAppsLib.chromeNs.fileSystemNs.ChooseSaveFileEntryOptions,
-    callback: chromeDashAppsLib.chromeNs.fileSystemNs.FileEntryCallback[
-      chromeDashAppsLib.chromeNs.fileSystemNs.ChooseSaveFileEntryOptions, 
+    options: ChooseSaveFileEntryOptions,
+    callback: FileEntryCallback[
+      ChooseSaveFileEntryOptions, 
       filesystemLib.FileEntry | filesystemLib.DirectoryEntry | js.Array[filesystemLib.FileEntry]
     ]
   ): scala.Unit = js.native
@@ -102,9 +100,7 @@ object ^ extends js.Object {
     * In case of an error, volumes will be undefined, and chrome.runtime.lastError will be set.
     * @since Chrome 44.
     */
-  def getVolumeList(
-    callback: js.Function1[/* volumes */ js.Array[chromeDashAppsLib.chromeNs.fileSystemNs.Volume], scala.Unit]
-  ): scala.Unit = js.native
+  def getVolumeList(callback: js.Function1[/* volumes */ js.Array[Volume], scala.Unit]): scala.Unit = js.native
   /**
     * Get a writable Entry from another Entry. This call will fail with a runtime error if the application does not have the 'write' permission under 'fileSystem'.
     * If entry is a DirectoryEntry, this call will fail if the application does not have the 'directory' permission under 'fileSystem'.
@@ -131,10 +127,7 @@ object ^ extends js.Object {
     * In case of an error, fileSystem will be undefined, and chrome.runtime.lastError will be set.
     * @since Chrome 44.
     */
-  def requestFileSystem(
-    options: chromeDashAppsLib.chromeNs.fileSystemNs.Volume,
-    callback: js.Function1[/* fileSystem */ filesystemLib.FileSystem, scala.Unit]
-  ): scala.Unit = js.native
+  def requestFileSystem(options: Volume, callback: js.Function1[/* fileSystem */ filesystemLib.FileSystem, scala.Unit]): scala.Unit = js.native
   /** Returns the file entry with the given id if it can be restored. This call will fail with a runtime error otherwise. */
   def restoreEntry(id: java.lang.String, callback: js.Function1[/* entry */ filesystemLib.FileEntry, scala.Unit]): scala.Unit = js.native
   def retainEntry(entry: filesystemLib.DirectoryEntry): java.lang.String = js.native

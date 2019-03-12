@@ -44,17 +44,12 @@ object Config {
     dialect: java.lang.String = null,
     migrations: MigratorConfig = null,
     pool: PoolConfig = null,
-    postProcessResponse: js.Function2[/* result */ js.Any, /* queryContext */ js.Any, _] = null,
+    postProcessResponse: (/* result */ js.Any, /* queryContext */ js.Any) => _ = null,
     searchPath: java.lang.String | js.Array[java.lang.String] = null,
     seeds: SeedsConfig = null,
     useNullAsDefault: js.UndefOr[scala.Boolean] = js.undefined,
     version: java.lang.String = null,
-    wrapIdentifier: js.Function3[
-      /* value */ java.lang.String, 
-      /* origImpl */ js.Function1[/* value */ java.lang.String, java.lang.String], 
-      /* queryContext */ js.Any, 
-      java.lang.String
-    ] = null
+    wrapIdentifier: (/* value */ java.lang.String, /* origImpl */ js.Function1[/* value */ java.lang.String, java.lang.String], /* queryContext */ js.Any) => java.lang.String = null
   ): Config = {
     val __obj = js.Dynamic.literal()
     if (acquireConnectionTimeout != null) __obj.updateDynamic("acquireConnectionTimeout")(acquireConnectionTimeout.asInstanceOf[js.Any])
@@ -65,12 +60,12 @@ object Config {
     if (dialect != null) __obj.updateDynamic("dialect")(dialect)
     if (migrations != null) __obj.updateDynamic("migrations")(migrations)
     if (pool != null) __obj.updateDynamic("pool")(pool)
-    if (postProcessResponse != null) __obj.updateDynamic("postProcessResponse")(postProcessResponse)
+    if (postProcessResponse != null) __obj.updateDynamic("postProcessResponse")(js.Any.fromFunction2(postProcessResponse))
     if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath.asInstanceOf[js.Any])
     if (seeds != null) __obj.updateDynamic("seeds")(seeds)
     if (!js.isUndefined(useNullAsDefault)) __obj.updateDynamic("useNullAsDefault")(useNullAsDefault)
     if (version != null) __obj.updateDynamic("version")(version)
-    if (wrapIdentifier != null) __obj.updateDynamic("wrapIdentifier")(wrapIdentifier)
+    if (wrapIdentifier != null) __obj.updateDynamic("wrapIdentifier")(js.Any.fromFunction3(wrapIdentifier))
     __obj.asInstanceOf[Config]
   }
 }

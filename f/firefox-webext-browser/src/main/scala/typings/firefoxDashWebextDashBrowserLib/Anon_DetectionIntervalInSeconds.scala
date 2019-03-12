@@ -42,13 +42,10 @@ object Anon_DetectionIntervalInSeconds {
         scala.Unit
       ]
     ],
-    queryState: js.Function1[
-      scala.Double, 
-      js.Promise[firefoxDashWebextDashBrowserLib.browserNs.idleNs.IdleState]
-    ],
-    setDetectionInterval: js.Function1[scala.Double, scala.Unit]
+    queryState: scala.Double => js.Promise[firefoxDashWebextDashBrowserLib.browserNs.idleNs.IdleState],
+    setDetectionInterval: scala.Double => scala.Unit
   ): Anon_DetectionIntervalInSeconds = {
-    val __obj = js.Dynamic.literal(onStateChanged = onStateChanged, queryState = queryState, setDetectionInterval = setDetectionInterval)
+    val __obj = js.Dynamic.literal(onStateChanged = onStateChanged, queryState = js.Any.fromFunction1(queryState), setDetectionInterval = js.Any.fromFunction1(setDetectionInterval))
   
     __obj.asInstanceOf[Anon_DetectionIntervalInSeconds]
   }

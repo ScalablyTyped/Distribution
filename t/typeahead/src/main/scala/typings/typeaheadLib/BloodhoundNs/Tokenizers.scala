@@ -26,11 +26,11 @@ trait Tokenizers extends js.Object {
 object Tokenizers {
   @scala.inline
   def apply(
-    nonword: js.Function1[java.lang.String, js.Array[java.lang.String]],
+    nonword: java.lang.String => js.Array[java.lang.String],
     obj: ObjTokenizer,
-    whitespace: js.Function1[java.lang.String, js.Array[java.lang.String]]
+    whitespace: java.lang.String => js.Array[java.lang.String]
   ): Tokenizers = {
-    val __obj = js.Dynamic.literal(nonword = nonword, obj = obj, whitespace = whitespace)
+    val __obj = js.Dynamic.literal(nonword = js.Any.fromFunction1(nonword), obj = obj, whitespace = js.Any.fromFunction1(whitespace))
   
     __obj.asInstanceOf[Tokenizers]
   }

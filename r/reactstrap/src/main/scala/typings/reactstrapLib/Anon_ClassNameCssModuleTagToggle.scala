@@ -19,14 +19,14 @@ object Anon_ClassNameCssModuleTagToggle {
     className: java.lang.String = null,
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
     tag: reactLib.reactMod.ReactNs.ReactType[_] = null,
-    toggle: js.Function0[scala.Unit] = null,
+    toggle: () => scala.Unit = null,
     wrapTag: reactLib.reactMod.ReactNs.ReactType[_] = null
   ): Anon_ClassNameCssModuleTagToggle = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (toggle != null) __obj.updateDynamic("toggle")(toggle)
+    if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction0(toggle))
     if (wrapTag != null) __obj.updateDynamic("wrapTag")(wrapTag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClassNameCssModuleTagToggle]
   }

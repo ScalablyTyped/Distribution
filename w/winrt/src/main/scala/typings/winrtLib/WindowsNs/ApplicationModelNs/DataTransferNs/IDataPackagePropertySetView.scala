@@ -22,19 +22,17 @@ object IDataPackagePropertySetView {
     applicationName: java.lang.String,
     description: java.lang.String,
     fileTypes: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String],
-    first: js.Function0[
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterator[
-        winrtLib.WindowsNs.FoundationNs.CollectionsNs.IKeyValuePair[java.lang.String, js.Any]
-      ]
+    first: () => winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterator[
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IKeyValuePair[java.lang.String, js.Any]
     ],
-    hasKey: js.Function1[java.lang.String, scala.Boolean],
-    lookup: js.Function1[java.lang.String, js.Any],
+    hasKey: java.lang.String => scala.Boolean,
+    lookup: java.lang.String => js.Any,
     size: scala.Double,
-    split: js.Function0[winrtLib.Anon_First[java.lang.String, js.Any]],
+    split: () => winrtLib.Anon_First[java.lang.String, js.Any],
     thumbnail: winrtLib.WindowsNs.StorageNs.StreamsNs.RandomAccessStreamReference,
     title: java.lang.String
   ): IDataPackagePropertySetView = {
-    val __obj = js.Dynamic.literal(applicationListingUri = applicationListingUri, applicationName = applicationName, description = description, fileTypes = fileTypes, first = first, hasKey = hasKey, lookup = lookup, size = size, split = split, thumbnail = thumbnail, title = title)
+    val __obj = js.Dynamic.literal(applicationListingUri = applicationListingUri, applicationName = applicationName, description = description, fileTypes = fileTypes, first = js.Any.fromFunction0(first), hasKey = js.Any.fromFunction1(hasKey), lookup = js.Any.fromFunction1(lookup), size = size, split = js.Any.fromFunction0(split), thumbnail = thumbnail, title = title)
   
     __obj.asInstanceOf[IDataPackagePropertySetView]
   }

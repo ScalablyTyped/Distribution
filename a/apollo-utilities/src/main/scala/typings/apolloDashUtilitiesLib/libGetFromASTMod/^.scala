@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def checkDocument(doc: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode = js.native
-  def createFragmentMap(): apolloDashUtilitiesLib.libGetFromASTMod.FragmentMap = js.native
-  def createFragmentMap(fragments: js.Array[graphqlLib.languageAstMod.FragmentDefinitionNode]): apolloDashUtilitiesLib.libGetFromASTMod.FragmentMap = js.native
+  def createFragmentMap(): FragmentMap = js.native
+  def createFragmentMap(fragments: js.Array[graphqlLib.languageAstMod.FragmentDefinitionNode]): FragmentMap = js.native
   def getDefaultValues(): org.scalablytyped.runtime.StringDictionary[apolloDashUtilitiesLib.libStoreUtilsMod.JsonValue] = js.native
   def getDefaultValues(definition: graphqlLib.languageAstMod.OperationDefinitionNode): org.scalablytyped.runtime.StringDictionary[apolloDashUtilitiesLib.libStoreUtilsMod.JsonValue] = js.native
   def getFragmentDefinition(doc: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.FragmentDefinitionNode = js.native

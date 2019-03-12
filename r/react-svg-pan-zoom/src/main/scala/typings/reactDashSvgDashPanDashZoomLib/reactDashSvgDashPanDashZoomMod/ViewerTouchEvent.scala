@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ViewerTouchEvent[T] extends js.Object {
-  var SVGViewer: reactLib.SVGSVGElement
+  var SVGViewer: stdLib.SVGSVGElement
   var changedPoints: js.Array[Point]
   var originalEvent: reactLib.reactMod.ReactNs.TouchEvent[T]
   var points: js.Array[Point]
@@ -20,17 +20,17 @@ trait ViewerTouchEvent[T] extends js.Object {
 object ViewerTouchEvent {
   @scala.inline
   def apply[T](
-    SVGViewer: reactLib.SVGSVGElement,
+    SVGViewer: stdLib.SVGSVGElement,
     changedPoints: js.Array[Point],
     originalEvent: reactLib.reactMod.ReactNs.TouchEvent[T],
     points: js.Array[Point],
-    preventDefault: js.Function0[scala.Unit],
+    preventDefault: () => scala.Unit,
     scaleFactor: scala.Double,
-    stopPropagation: js.Function0[scala.Unit],
+    stopPropagation: () => scala.Unit,
     translationX: scala.Double,
     translationY: scala.Double
   ): ViewerTouchEvent[T] = {
-    val __obj = js.Dynamic.literal(SVGViewer = SVGViewer, changedPoints = changedPoints, originalEvent = originalEvent, points = points, preventDefault = preventDefault, scaleFactor = scaleFactor, stopPropagation = stopPropagation, translationX = translationX, translationY = translationY)
+    val __obj = js.Dynamic.literal(SVGViewer = SVGViewer, changedPoints = changedPoints, originalEvent = originalEvent, points = points, preventDefault = js.Any.fromFunction0(preventDefault), scaleFactor = scaleFactor, stopPropagation = js.Any.fromFunction0(stopPropagation), translationX = translationX, translationY = translationY)
   
     __obj.asInstanceOf[ViewerTouchEvent[T]]
   }

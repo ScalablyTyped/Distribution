@@ -25,7 +25,7 @@ object IParseOptions {
     allowDots: js.UndefOr[scala.Boolean] = js.undefined,
     allowPrototypes: js.UndefOr[scala.Boolean] = js.undefined,
     arrayLimit: scala.Int | scala.Double = null,
-    decoder: js.Function1[/* str */ java.lang.String, _] = null,
+    decoder: /* str */ java.lang.String => _ = null,
     delimiter: java.lang.String | stdLib.RegExp = null,
     depth: scala.Int | scala.Double = null,
     ignoreQueryPrefix: js.UndefOr[scala.Boolean] = js.undefined,
@@ -38,7 +38,7 @@ object IParseOptions {
     if (!js.isUndefined(allowDots)) __obj.updateDynamic("allowDots")(allowDots)
     if (!js.isUndefined(allowPrototypes)) __obj.updateDynamic("allowPrototypes")(allowPrototypes)
     if (arrayLimit != null) __obj.updateDynamic("arrayLimit")(arrayLimit.asInstanceOf[js.Any])
-    if (decoder != null) __obj.updateDynamic("decoder")(decoder)
+    if (decoder != null) __obj.updateDynamic("decoder")(js.Any.fromFunction1(decoder))
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreQueryPrefix)) __obj.updateDynamic("ignoreQueryPrefix")(ignoreQueryPrefix)

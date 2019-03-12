@@ -12,9 +12,9 @@ trait Options[T] extends js.Object {
 
 object Options {
   @scala.inline
-  def apply[T](count: scala.Double, filter: js.Function1[/* value */ T, scala.Boolean] = null): Options[T] = {
+  def apply[T](count: scala.Double, filter: /* value */ T => scala.Boolean = null): Options[T] = {
     val __obj = js.Dynamic.literal(count = count)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     __obj.asInstanceOf[Options[T]]
   }
 }

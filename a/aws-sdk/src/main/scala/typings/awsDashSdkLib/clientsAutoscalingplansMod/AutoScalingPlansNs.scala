@@ -30,22 +30,22 @@ object AutoScalingPlansNs extends js.Object {
     /**
       * A CloudFormation stack or set of tags. You can create one scaling plan per application source.
       */
-    var ApplicationSource: ApplicationSource
+    var ApplicationSource: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ApplicationSource
     /**
       * The scaling instructions.
       */
-    var ScalingInstructions: ScalingInstructions
+    var ScalingInstructions: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalingInstructions
     /**
       * The name of the scaling plan. Names cannot contain vertical bars, colons, or forward slashes.
       */
-    var ScalingPlanName: ScalingPlanName
+    var ScalingPlanName: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalingPlanName
   }
   
   trait CreateScalingPlanResponse extends js.Object {
     /**
       * The version number of the scaling plan. This value is always 1. Currently, you cannot specify multiple scaling plan versions.
       */
-    var ScalingPlanVersion: ScalingPlanVersion
+    var ScalingPlanVersion: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalingPlanVersion
   }
   
   trait CustomizedLoadMetricSpecification extends js.Object {
@@ -56,7 +56,7 @@ object AutoScalingPlansNs extends js.Object {
     /**
       * The name of the metric.
       */
-    var MetricName: MetricName
+    var MetricName: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.MetricName
     /**
       * The namespace of the metric.
       */
@@ -79,7 +79,7 @@ object AutoScalingPlansNs extends js.Object {
     /**
       * The name of the metric.
       */
-    var MetricName: MetricName
+    var MetricName: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.MetricName
     /**
       * The namespace of the metric.
       */
@@ -109,11 +109,11 @@ object AutoScalingPlansNs extends js.Object {
     /**
       * The name of the scaling plan.
       */
-    var ScalingPlanName: ScalingPlanName
+    var ScalingPlanName: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalingPlanName
     /**
       * The version number of the scaling plan.
       */
-    var ScalingPlanVersion: ScalingPlanVersion
+    var ScalingPlanVersion: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalingPlanVersion
   }
   
   trait DeleteScalingPlanResponse extends js.Object
@@ -130,11 +130,11 @@ object AutoScalingPlansNs extends js.Object {
     /**
       * The name of the scaling plan.
       */
-    var ScalingPlanName: ScalingPlanName
+    var ScalingPlanName: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalingPlanName
     /**
       * The version number of the scaling plan.
       */
-    var ScalingPlanVersion: ScalingPlanVersion
+    var ScalingPlanVersion: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalingPlanVersion
   }
   
   trait DescribeScalingPlanResourcesResponse extends js.Object {
@@ -190,7 +190,7 @@ object AutoScalingPlansNs extends js.Object {
     /**
       * The type of forecast data to get.    LoadForecast: The load metric forecast.     CapacityForecast: The capacity forecast.     ScheduledActionMinCapacity: The minimum capacity for each scheduled scaling action. This data is calculated as the larger of two values: the capacity forecast or the minimum capacity in the scaling instruction.    ScheduledActionMaxCapacity: The maximum capacity for each scheduled scaling action. The calculation used is determined by the predictive scaling maximum capacity behavior setting in the scaling instruction.  
       */
-    var ForecastDataType: ForecastDataType
+    var ForecastDataType: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ForecastDataType
     /**
       * The ID of the resource. This string consists of the resource type and unique identifier.    Auto Scaling group - The resource type is autoScalingGroup and the unique identifier is the name of the Auto Scaling group. Example: autoScalingGroup/my-asg.   ECS service - The resource type is service and the unique identifier is the cluster name and service name. Example: service/default/sample-webapp.   Spot Fleet request - The resource type is spot-fleet-request and the unique identifier is the Spot Fleet request ID. Example: spot-fleet-request/sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE.   DynamoDB table - The resource type is table and the unique identifier is the resource ID. Example: table/my-table.   DynamoDB global secondary index - The resource type is index and the unique identifier is the resource ID. Example: table/my-table/index/my-table-index.   Aurora DB cluster - The resource type is cluster and the unique identifier is the cluster name. Example: cluster:my-db-cluster.  
       */
@@ -198,19 +198,19 @@ object AutoScalingPlansNs extends js.Object {
     /**
       * The scalable dimension for the resource.
       */
-    var ScalableDimension: ScalableDimension
+    var ScalableDimension: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalableDimension
     /**
       * The name of the scaling plan.
       */
-    var ScalingPlanName: ScalingPlanName
+    var ScalingPlanName: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalingPlanName
     /**
       * The version number of the scaling plan.
       */
-    var ScalingPlanVersion: ScalingPlanVersion
+    var ScalingPlanVersion: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalingPlanVersion
     /**
       * The namespace of the AWS service.
       */
-    var ServiceNamespace: ServiceNamespace
+    var ServiceNamespace: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ServiceNamespace
     /**
       * The inclusive start time of the time range for the forecast data to get. The date and time can be at most 56 days before the current date and time. 
       */
@@ -221,7 +221,7 @@ object AutoScalingPlansNs extends js.Object {
     /**
       * The data points to return.
       */
-    var Datapoints: Datapoints
+    var Datapoints: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.Datapoints
   }
   
   trait MetricDimension extends js.Object {
@@ -297,7 +297,7 @@ object AutoScalingPlansNs extends js.Object {
     /**
       * The scalable dimension associated with the resource.    autoscaling:autoScalingGroup:DesiredCapacity - The desired capacity of an Auto Scaling group.    ecs:service:DesiredCount - The desired task count of an ECS service.    ec2:spot-fleet-request:TargetCapacity - The target capacity of a Spot Fleet request.    dynamodb:table:ReadCapacityUnits - The provisioned read capacity for a DynamoDB table.    dynamodb:table:WriteCapacityUnits - The provisioned write capacity for a DynamoDB table.    dynamodb:index:ReadCapacityUnits - The provisioned read capacity for a DynamoDB global secondary index.    dynamodb:index:WriteCapacityUnits - The provisioned write capacity for a DynamoDB global secondary index.    rds:cluster:ReadReplicaCount - The count of Aurora Replicas in an Aurora DB cluster. Available for Aurora MySQL-compatible edition and Aurora PostgreSQL-compatible edition.  
       */
-    var ScalableDimension: ScalableDimension
+    var ScalableDimension: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalableDimension
     /**
       * Controls whether a resource's externally created scaling policies are kept or replaced.  The default value is KeepExternalPolicies. If the parameter is set to ReplaceExternalPolicies, any scaling policies that are external to AWS Auto Scaling are deleted and new target tracking scaling policies created.  Only valid when configuring dynamic scaling.  Condition: The number of existing policies to be replaced must be less than or equal to 50. If there are more than 50 policies to be replaced, AWS Auto Scaling keeps all existing policies and does not create new ones.
       */
@@ -309,18 +309,18 @@ object AutoScalingPlansNs extends js.Object {
     /**
       * The namespace of the AWS service.
       */
-    var ServiceNamespace: ServiceNamespace
+    var ServiceNamespace: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ServiceNamespace
     /**
       * The structure that defines new target tracking configurations (up to 10). Each of these structures includes a specific scaling metric and a target value for the metric, along with various parameters to use with dynamic scaling.  With predictive scaling and dynamic scaling, the resource scales based on the target tracking configuration that provides the largest capacity for both scale in and scale out.  Condition: The scaling metric must be unique across target tracking configurations.
       */
-    var TargetTrackingConfigurations: TargetTrackingConfigurations
+    var TargetTrackingConfigurations: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.TargetTrackingConfigurations
   }
   
   trait ScalingPlan extends js.Object {
     /**
       * The application source.
       */
-    var ApplicationSource: ApplicationSource
+    var ApplicationSource: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ApplicationSource
     /**
       * The Unix time stamp when the scaling plan was created.
       */
@@ -328,15 +328,15 @@ object AutoScalingPlansNs extends js.Object {
     /**
       * The scaling instructions.
       */
-    var ScalingInstructions: ScalingInstructions
+    var ScalingInstructions: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalingInstructions
     /**
       * The name of the scaling plan.
       */
-    var ScalingPlanName: ScalingPlanName
+    var ScalingPlanName: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalingPlanName
     /**
       * The version number of the scaling plan.
       */
-    var ScalingPlanVersion: ScalingPlanVersion
+    var ScalingPlanVersion: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalingPlanVersion
     /**
       * The status of the scaling plan.    Active - The scaling plan is active.    ActiveWithProblems - The scaling plan is active, but the scaling configuration for one or more resources could not be applied.    CreationInProgress - The scaling plan is being created.    CreationFailed - The scaling plan could not be created.    DeletionInProgress - The scaling plan is being deleted.    DeletionFailed - The scaling plan could not be deleted.    UpdateInProgress - The scaling plan is being updated.    UpdateFailed - The scaling plan could not be updated.  
       */
@@ -359,15 +359,15 @@ object AutoScalingPlansNs extends js.Object {
     /**
       * The scalable dimension for the resource.    autoscaling:autoScalingGroup:DesiredCapacity - The desired capacity of an Auto Scaling group.    ecs:service:DesiredCount - The desired task count of an ECS service.    ec2:spot-fleet-request:TargetCapacity - The target capacity of a Spot Fleet request.    dynamodb:table:ReadCapacityUnits - The provisioned read capacity for a DynamoDB table.    dynamodb:table:WriteCapacityUnits - The provisioned write capacity for a DynamoDB table.    dynamodb:index:ReadCapacityUnits - The provisioned read capacity for a DynamoDB global secondary index.    dynamodb:index:WriteCapacityUnits - The provisioned write capacity for a DynamoDB global secondary index.    rds:cluster:ReadReplicaCount - The count of Aurora Replicas in an Aurora DB cluster. Available for Aurora MySQL-compatible edition and Aurora PostgreSQL-compatible edition.  
       */
-    var ScalableDimension: ScalableDimension
+    var ScalableDimension: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalableDimension
     /**
       * The name of the scaling plan.
       */
-    var ScalingPlanName: ScalingPlanName
+    var ScalingPlanName: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalingPlanName
     /**
       * The version number of the scaling plan.
       */
-    var ScalingPlanVersion: ScalingPlanVersion
+    var ScalingPlanVersion: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalingPlanVersion
     /**
       * The scaling policies.
       */
@@ -375,7 +375,7 @@ object AutoScalingPlansNs extends js.Object {
     /**
       * The scaling status of the resource.    Active - The scaling configuration is active.    Inactive - The scaling configuration is not active because the scaling plan is being created or the scaling configuration could not be applied. Check the status message for more information.    PartiallyActive - The scaling configuration is partially active because the scaling plan is being created or deleted or the scaling configuration could not be fully applied. Check the status message for more information.  
       */
-    var ScalingStatusCode: ScalingStatusCode
+    var ScalingStatusCode: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalingStatusCode
     /**
       * A simple message about the current scaling status of the resource.
       */
@@ -383,18 +383,18 @@ object AutoScalingPlansNs extends js.Object {
     /**
       * The namespace of the AWS service.
       */
-    var ServiceNamespace: ServiceNamespace
+    var ServiceNamespace: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ServiceNamespace
   }
   
   trait ScalingPolicy extends js.Object {
     /**
       * The name of the scaling policy.
       */
-    var PolicyName: PolicyName
+    var PolicyName: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.PolicyName
     /**
       * The type of scaling policy.
       */
-    var PolicyType: PolicyType
+    var PolicyType: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.PolicyType
     /**
       * The target tracking scaling policy. Includes support for predefined or customized metrics.
       */
@@ -600,11 +600,11 @@ object AutoScalingPlansNs extends js.Object {
     /**
       * The name of the scaling plan.
       */
-    var ScalingPlanName: ScalingPlanName
+    var ScalingPlanName: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalingPlanName
     /**
       * The version number of the scaling plan.
       */
-    var ScalingPlanVersion: ScalingPlanVersion
+    var ScalingPlanVersion: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ScalingPlanVersion
   }
   
   trait UpdateScalingPlanResponse extends js.Object

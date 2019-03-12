@@ -21,13 +21,13 @@ trait XDirectInvocation
 object XDirectInvocation {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    directInvoke: js.Function2[java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], js.Any],
-    hasMember: js.Function1[java.lang.String, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    directInvoke: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]) => js.Any,
+    hasMember: java.lang.String => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDirectInvocation = {
-    val __obj = js.Dynamic.literal(acquire = acquire, directInvoke = directInvoke, hasMember = hasMember, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), directInvoke = js.Any.fromFunction2(directInvoke), hasMember = js.Any.fromFunction1(hasMember), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDirectInvocation]
   }

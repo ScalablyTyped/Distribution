@@ -646,6 +646,12 @@ trait Router[StateT, CustomT] extends js.Object {
     middleware: koaLib.koaMod.ApplicationNs.Middleware[T, U],
     routeHandler: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT with T, CustomT with U]
   ): Router[StateT with T, CustomT with U] = js.native
+  def url(name: java.lang.String, params: js.Any): stdLib.Error = js.native
+  def url(
+    name: java.lang.String,
+    params: js.Any,
+    options: koaDashRouterLib.koaDashRouterMod.RouterNs.IUrlOptionsQuery
+  ): stdLib.Error = js.native
   /**
     * Generate URL for route. Takes either map of named `params` or series of
     * arguments (for regular expression routes)
@@ -665,20 +671,14 @@ trait Router[StateT, CustomT] extends js.Object {
     * // => "/users/3?limit=1"
     *
     */
-  def url(name: java.lang.String, params: js.Any): java.lang.String = js.native
-  def url(
+  @JSName("url")
+  def url_String(name: java.lang.String, params: js.Any): java.lang.String = js.native
+  @JSName("url")
+  def url_String(
     name: java.lang.String,
     params: js.Any,
     options: koaDashRouterLib.koaDashRouterMod.RouterNs.IUrlOptionsQuery
   ): java.lang.String = js.native
-  @JSName("url")
-  def url_Error(name: java.lang.String, params: js.Any): nodeLib.Error = js.native
-  @JSName("url")
-  def url_Error(
-    name: java.lang.String,
-    params: js.Any,
-    options: koaDashRouterLib.koaDashRouterMod.RouterNs.IUrlOptionsQuery
-  ): nodeLib.Error = js.native
   /**
     * Use given middleware.
     *

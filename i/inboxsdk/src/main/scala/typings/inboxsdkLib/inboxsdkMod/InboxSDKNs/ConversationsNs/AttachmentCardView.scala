@@ -22,16 +22,16 @@ trait AttachmentCardView extends js.Object {
 object AttachmentCardView {
   @scala.inline
   def apply(
-    addButton: js.Function1[CustomButtonDescriptor, scala.Unit],
+    addButton: CustomButtonDescriptor => scala.Unit,
     destroyed: scala.Boolean,
-    getAttachmentType: js.Function0[java.lang.String],
-    getDownloadURL: js.Function0[js.Promise[java.lang.String]],
-    getMessageView: js.Function0[MessageView | scala.Null],
-    getTitle: js.Function0[java.lang.String],
-    on_destroy: js.Function2[inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit], scala.Unit]
+    getAttachmentType: () => java.lang.String,
+    getDownloadURL: () => js.Promise[java.lang.String],
+    getMessageView: () => MessageView | scala.Null,
+    getTitle: () => java.lang.String,
+    on_destroy: (inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit]) => scala.Unit
   ): AttachmentCardView = {
-    val __obj = js.Dynamic.literal(addButton = addButton, destroyed = destroyed, getAttachmentType = getAttachmentType, getDownloadURL = getDownloadURL, getMessageView = getMessageView, getTitle = getTitle)
-    __obj.updateDynamic("on")(on_destroy)
+    val __obj = js.Dynamic.literal(addButton = js.Any.fromFunction1(addButton), destroyed = destroyed, getAttachmentType = js.Any.fromFunction0(getAttachmentType), getDownloadURL = js.Any.fromFunction0(getDownloadURL), getMessageView = js.Any.fromFunction0(getMessageView), getTitle = js.Any.fromFunction0(getTitle))
+    __obj.updateDynamic("on")(js.Any.fromFunction2(on_destroy))
     __obj.asInstanceOf[AttachmentCardView]
   }
 }

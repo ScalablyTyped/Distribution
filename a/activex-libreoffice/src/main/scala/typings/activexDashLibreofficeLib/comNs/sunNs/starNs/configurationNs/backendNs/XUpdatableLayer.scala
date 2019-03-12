@@ -26,13 +26,13 @@ trait XUpdatableLayer extends XLayer {
 object XUpdatableLayer {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    readData: js.Function1[XLayerHandler, scala.Unit],
-    release: js.Function0[scala.Unit],
-    replaceWith: js.Function1[XLayer, scala.Unit]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    readData: XLayerHandler => scala.Unit,
+    release: () => scala.Unit,
+    replaceWith: XLayer => scala.Unit
   ): XUpdatableLayer = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, readData = readData, release = release, replaceWith = replaceWith)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), readData = js.Any.fromFunction1(readData), release = js.Any.fromFunction0(release), replaceWith = js.Any.fromFunction1(replaceWith))
   
     __obj.asInstanceOf[XUpdatableLayer]
   }

@@ -29,13 +29,13 @@ object XDrawView {
   @scala.inline
   def apply(
     CurrentPage: XDrawPage,
-    acquire: js.Function0[scala.Unit],
-    getCurrentPage: js.Function0[XDrawPage],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setCurrentPage: js.Function1[XDrawPage, scala.Unit]
+    acquire: () => scala.Unit,
+    getCurrentPage: () => XDrawPage,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setCurrentPage: XDrawPage => scala.Unit
   ): XDrawView = {
-    val __obj = js.Dynamic.literal(CurrentPage = CurrentPage, acquire = acquire, getCurrentPage = getCurrentPage, queryInterface = queryInterface, release = release, setCurrentPage = setCurrentPage)
+    val __obj = js.Dynamic.literal(CurrentPage = CurrentPage, acquire = js.Any.fromFunction0(acquire), getCurrentPage = js.Any.fromFunction0(getCurrentPage), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setCurrentPage = js.Any.fromFunction1(setCurrentPage))
   
     __obj.asInstanceOf[XDrawView]
   }

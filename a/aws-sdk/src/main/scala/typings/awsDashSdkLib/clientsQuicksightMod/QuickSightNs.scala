@@ -19,11 +19,11 @@ object QuickSightNs extends js.Object {
     /**
       * The ID for the AWS account that the group is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
       */
-    var AwsAccountId: AwsAccountId
+    var AwsAccountId: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.AwsAccountId
     /**
       * The name of the group that you want to add the user to.
       */
-    var GroupName: GroupName
+    var GroupName: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.GroupName
     /**
       * The name of the user that you want to add to the group membership.
       */
@@ -31,7 +31,7 @@ object QuickSightNs extends js.Object {
     /**
       * The namespace. Currently, you should set this to default.
       */
-    var Namespace: Namespace
+    var Namespace: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.Namespace
   }
   
   trait CreateGroupMembershipResponse extends js.Object {
@@ -53,7 +53,7 @@ object QuickSightNs extends js.Object {
     /**
       * The ID for the AWS account that the group is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
       */
-    var AwsAccountId: AwsAccountId
+    var AwsAccountId: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.AwsAccountId
     /**
       * A description for the group that you want to create.
       */
@@ -61,11 +61,11 @@ object QuickSightNs extends js.Object {
     /**
       * A name for the group that you want to create.
       */
-    var GroupName: GroupName
+    var GroupName: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.GroupName
     /**
       * The namespace. Currently, you should set this to default.
       */
-    var Namespace: Namespace
+    var Namespace: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.Namespace
   }
   
   trait CreateGroupResponse extends js.Object {
@@ -87,11 +87,11 @@ object QuickSightNs extends js.Object {
     /**
       * The ID for the AWS account that the group is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
       */
-    var AwsAccountId: AwsAccountId
+    var AwsAccountId: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.AwsAccountId
     /**
       * The name of the group that you want to delete the user from.
       */
-    var GroupName: GroupName
+    var GroupName: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.GroupName
     /**
       * The name of the user that you want to delete from the group membership.
       */
@@ -99,7 +99,7 @@ object QuickSightNs extends js.Object {
     /**
       * The namespace. Currently, you should set this to default.
       */
-    var Namespace: Namespace
+    var Namespace: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.Namespace
   }
   
   trait DeleteGroupMembershipResponse extends js.Object {
@@ -117,18 +117,44 @@ object QuickSightNs extends js.Object {
     /**
       * The ID for the AWS account that the group is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
       */
-    var AwsAccountId: AwsAccountId
+    var AwsAccountId: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.AwsAccountId
     /**
       * The name of the group that you want to delete.
       */
-    var GroupName: GroupName
+    var GroupName: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.GroupName
     /**
       * The namespace. Currently, you should set this to default.
       */
-    var Namespace: Namespace
+    var Namespace: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.Namespace
   }
   
   trait DeleteGroupResponse extends js.Object {
+    /**
+      * The AWS request ID for this operation.
+      */
+    var RequestId: js.UndefOr[String] = js.undefined
+    /**
+      * The http status of the request.
+      */
+    var Status: js.UndefOr[StatusCode] = js.undefined
+  }
+  
+  trait DeleteUserByPrincipalIdRequest extends js.Object {
+    /**
+      * The ID for the AWS account that the user is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
+      */
+    var AwsAccountId: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.AwsAccountId
+    /**
+      * The namespace. Currently, you should set this to default.
+      */
+    var Namespace: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.Namespace
+    /**
+      * The principal ID of the user.
+      */
+    var PrincipalId: String
+  }
+  
+  trait DeleteUserByPrincipalIdResponse extends js.Object {
     /**
       * The AWS request ID for this operation.
       */
@@ -143,15 +169,15 @@ object QuickSightNs extends js.Object {
     /**
       * The ID for the AWS account that the user is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
       */
-    var AwsAccountId: AwsAccountId
+    var AwsAccountId: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.AwsAccountId
     /**
       * The namespace. Currently, you should set this to default.
       */
-    var Namespace: Namespace
+    var Namespace: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.Namespace
     /**
       * The name of the user that you want to delete.
       */
-    var UserName: UserName
+    var UserName: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.UserName
   }
   
   trait DeleteUserResponse extends js.Object {
@@ -169,15 +195,15 @@ object QuickSightNs extends js.Object {
     /**
       * The ID for the AWS account that the group is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
       */
-    var AwsAccountId: AwsAccountId
+    var AwsAccountId: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.AwsAccountId
     /**
       * The name of the group that you want to describe.
       */
-    var GroupName: GroupName
+    var GroupName: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.GroupName
     /**
       * The namespace. Currently, you should set this to default.
       */
-    var Namespace: Namespace
+    var Namespace: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.Namespace
   }
   
   trait DescribeGroupResponse extends js.Object {
@@ -199,15 +225,15 @@ object QuickSightNs extends js.Object {
     /**
       * The ID for the AWS account that the user is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
       */
-    var AwsAccountId: AwsAccountId
+    var AwsAccountId: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.AwsAccountId
     /**
       * The namespace. Currently, you should set this to default.
       */
-    var Namespace: Namespace
+    var Namespace: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.Namespace
     /**
       * The name of the user that you want to describe.
       */
-    var UserName: UserName
+    var UserName: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.UserName
   }
   
   trait DescribeUserResponse extends js.Object {
@@ -229,7 +255,7 @@ object QuickSightNs extends js.Object {
     /**
       * AWS account ID that contains the dashboard you are embedding.
       */
-    var AwsAccountId: AwsAccountId
+    var AwsAccountId: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.AwsAccountId
     /**
       * The ID for the dashboard, also added to IAM policy
       */
@@ -237,7 +263,7 @@ object QuickSightNs extends js.Object {
     /**
       * The authentication method the user uses to sign in (IAM only).
       */
-    var IdentityType: IdentityType
+    var IdentityType: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.IdentityType
     /**
       * Remove the reset button on embedded dashboard. The default is FALSE, which allows the reset button.
       */
@@ -280,6 +306,10 @@ object QuickSightNs extends js.Object {
       * The name of the group.
       */
     var GroupName: js.UndefOr[GroupName] = js.undefined
+    /**
+      * The principal ID of the group.
+      */
+    var PrincipalId: js.UndefOr[String] = js.undefined
   }
   
   trait GroupMember extends js.Object {
@@ -297,11 +327,11 @@ object QuickSightNs extends js.Object {
     /**
       * The ID for the AWS account that the group is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
       */
-    var AwsAccountId: AwsAccountId
+    var AwsAccountId: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.AwsAccountId
     /**
       * The name of the group that you want to see a membership list of.
       */
-    var GroupName: GroupName
+    var GroupName: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.GroupName
     /**
       * The maximum number of results to return from this request.
       */
@@ -309,7 +339,7 @@ object QuickSightNs extends js.Object {
     /**
       * The namespace. Currently, you should set this to default.
       */
-    var Namespace: Namespace
+    var Namespace: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.Namespace
     /**
       * A pagination token that can be used in a subsequent request.
       */
@@ -339,7 +369,7 @@ object QuickSightNs extends js.Object {
     /**
       * The ID for the AWS account that the group is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
       */
-    var AwsAccountId: AwsAccountId
+    var AwsAccountId: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.AwsAccountId
     /**
       * The maximum number of results to return.
       */
@@ -347,7 +377,7 @@ object QuickSightNs extends js.Object {
     /**
       * The namespace. Currently, you should set this to default.
       */
-    var Namespace: Namespace
+    var Namespace: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.Namespace
     /**
       * A pagination token that can be used in a subsequent request.
       */
@@ -377,7 +407,7 @@ object QuickSightNs extends js.Object {
     /**
       * The AWS Account ID that the user is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
       */
-    var AwsAccountId: AwsAccountId
+    var AwsAccountId: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.AwsAccountId
     /**
       * The maximum number of results to return from this request.
       */
@@ -385,7 +415,7 @@ object QuickSightNs extends js.Object {
     /**
       * The namespace. Currently, you should set this to default.
       */
-    var Namespace: Namespace
+    var Namespace: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.Namespace
     /**
       * A pagination token that can be used in a subsequent request.
       */
@@ -393,7 +423,7 @@ object QuickSightNs extends js.Object {
     /**
       * The Amazon QuickSight user name that you want to list group memberships for.
       */
-    var UserName: UserName
+    var UserName: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.UserName
   }
   
   trait ListUserGroupsResponse extends js.Object {
@@ -419,7 +449,7 @@ object QuickSightNs extends js.Object {
     /**
       * The ID for the AWS account that the user is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
       */
-    var AwsAccountId: AwsAccountId
+    var AwsAccountId: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.AwsAccountId
     /**
       * The maximum number of results to return from this request.
       */
@@ -427,7 +457,7 @@ object QuickSightNs extends js.Object {
     /**
       * The namespace. Currently, you should set this to default.
       */
-    var Namespace: Namespace
+    var Namespace: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.Namespace
     /**
       * A pagination token that can be used in a subsequent request.
       */
@@ -457,7 +487,7 @@ object QuickSightNs extends js.Object {
     /**
       * The ID for the AWS account that the user is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
       */
-    var AwsAccountId: AwsAccountId
+    var AwsAccountId: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.AwsAccountId
     /**
       * The email address of the user that you want to register.
       */
@@ -469,15 +499,15 @@ object QuickSightNs extends js.Object {
     /**
       * Amazon QuickSight supports several ways of managing the identity of users. This parameter accepts two values:    IAM: A user whose identity maps to an existing IAM user or role.     QUICKSIGHT: A user whose identity is owned and managed internally by Amazon QuickSight.   
       */
-    var IdentityType: IdentityType
+    var IdentityType: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.IdentityType
     /**
       * The namespace. Currently, you should set this to default.
       */
-    var Namespace: Namespace
+    var Namespace: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.Namespace
     /**
       * The name of the session with the assumed IAM role. By using this parameter, you can register multiple users with the same IAM role, provided that each has a different session name. For more information on assuming IAM roles, see  assume-role  in the AWS CLI Reference. 
       */
-    var SessionName: js.UndefOr[String] = js.undefined
+    var SessionName: js.UndefOr[RoleSessionName] = js.undefined
     /**
       * The Amazon QuickSight user name that you want to create for the user you are registering.
       */
@@ -485,7 +515,7 @@ object QuickSightNs extends js.Object {
     /**
       * The Amazon QuickSight role of the user. The user role can be one of the following:    READER: A user who has read-only access to dashboards.    AUTHOR: A user who can create data sources, data sets, analyses, and dashboards.    ADMIN: A user who is an author, who can also manage Amazon QuickSight settings.  
       */
-    var UserRole: UserRole
+    var UserRole: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.UserRole
   }
   
   trait RegisterUserResponse extends js.Object {
@@ -627,6 +657,29 @@ object QuickSightNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes a user after locating the user by its principal ID.
+      */
+    def deleteUserByPrincipalId(): awsDashSdkLib.libRequestMod.Request[DeleteUserByPrincipalIdResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deleteUserByPrincipalId(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteUserByPrincipalIdResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteUserByPrincipalIdResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes a user after locating the user by its principal ID.
+      */
+    def deleteUserByPrincipalId(params: DeleteUserByPrincipalIdRequest): awsDashSdkLib.libRequestMod.Request[DeleteUserByPrincipalIdResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deleteUserByPrincipalId(
+      params: DeleteUserByPrincipalIdRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteUserByPrincipalIdResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteUserByPrincipalIdResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Returns an Amazon QuickSight group's description and Amazon Resource Name (ARN).  The permissions resource is arn:aws:quicksight:us-east-1:&lt;relevant-aws-account-id&gt;:group/default/&lt;group-name&gt; . The response is the group object.   CLI Sample:   aws quicksight describe-group -\-aws-account-id=11112222333 -\-namespace=default -\-group-name=Sales  
       */
@@ -863,7 +916,7 @@ object QuickSightNs extends js.Object {
     /**
       * The ID for the AWS account that the group is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
       */
-    var AwsAccountId: AwsAccountId
+    var AwsAccountId: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.AwsAccountId
     /**
       * The description for the group that you want to update.
       */
@@ -871,11 +924,11 @@ object QuickSightNs extends js.Object {
     /**
       * The name of the group that you want to update.
       */
-    var GroupName: GroupName
+    var GroupName: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.GroupName
     /**
       * The namespace. Currently, you should set this to default.
       */
-    var Namespace: Namespace
+    var Namespace: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.Namespace
   }
   
   trait UpdateGroupResponse extends js.Object {
@@ -897,7 +950,7 @@ object QuickSightNs extends js.Object {
     /**
       * The ID for the AWS account that the user is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
       */
-    var AwsAccountId: AwsAccountId
+    var AwsAccountId: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.AwsAccountId
     /**
       * The email address of the user that you want to update.
       */
@@ -905,7 +958,7 @@ object QuickSightNs extends js.Object {
     /**
       * The namespace. Currently, you should set this to default.
       */
-    var Namespace: Namespace
+    var Namespace: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.Namespace
     /**
       * The Amazon QuickSight role of the user. The user role can be one of the following:    READER: A user who has read-only access to dashboards.    AUTHOR: A user who can create data sources, data sets, analyses, and dashboards.    ADMIN: A user who is an author, who can also manage Amazon QuickSight settings.  
       */
@@ -913,7 +966,7 @@ object QuickSightNs extends js.Object {
     /**
       * The Amazon QuickSight user name that you want to update.
       */
-    var UserName: UserName
+    var UserName: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.UserName
   }
   
   trait UpdateUserResponse extends js.Object {
@@ -949,6 +1002,10 @@ object QuickSightNs extends js.Object {
       */
     var IdentityType: js.UndefOr[IdentityType] = js.undefined
     /**
+      * The principal ID of the user.
+      */
+    var PrincipalId: js.UndefOr[String] = js.undefined
+    /**
       * The Amazon QuickSight role for the user.
       */
     var Role: js.UndefOr[UserRole] = js.undefined
@@ -978,6 +1035,7 @@ object QuickSightNs extends js.Object {
   type IdentityType = _IdentityType | java.lang.String
   type MaxResults = scala.Double
   type Namespace = java.lang.String
+  type RoleSessionName = java.lang.String
   type SessionLifetimeInMinutes = scala.Double
   type StatusCode = scala.Double
   type String = java.lang.String

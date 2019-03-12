@@ -20,9 +20,9 @@ object TemplateAst {
   @scala.inline
   def apply(
     sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan,
-    visit: js.Function2[TemplateAstVisitor, js.Any, js.Any]
+    visit: (TemplateAstVisitor, js.Any) => js.Any
   ): TemplateAst = {
-    val __obj = js.Dynamic.literal(sourceSpan = sourceSpan, visit = visit)
+    val __obj = js.Dynamic.literal(sourceSpan = sourceSpan, visit = js.Any.fromFunction2(visit))
   
     __obj.asInstanceOf[TemplateAst]
   }

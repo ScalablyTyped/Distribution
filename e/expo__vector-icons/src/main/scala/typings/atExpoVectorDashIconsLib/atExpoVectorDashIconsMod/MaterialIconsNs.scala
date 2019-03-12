@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation._
 object MaterialIconsNs extends js.Object {
   @js.native
   class Button ()
-    extends reactDashNativeDashVectorDashIconsLib.materialiconsMod.defaultNs.Button
+    extends reactDashNativeDashVectorDashIconsLib.materialIconsMod.defaultNs.Button
   
   @js.native
   class TabBarItem ()
-    extends reactDashNativeDashVectorDashIconsLib.materialiconsMod.defaultNs.TabBarItem
+    extends reactDashNativeDashVectorDashIconsLib.materialIconsMod.defaultNs.TabBarItem
   
   @js.native
   class TabBarItemIOS ()
-    extends reactDashNativeDashVectorDashIconsLib.materialiconsMod.defaultNs.TabBarItemIOS
+    extends reactDashNativeDashVectorDashIconsLib.materialIconsMod.defaultNs.TabBarItemIOS
   
   @js.native
   class ToolbarAndroid ()
-    extends reactDashNativeDashVectorDashIconsLib.materialiconsMod.defaultNs.ToolbarAndroid
+    extends reactDashNativeDashVectorDashIconsLib.materialIconsMod.defaultNs.ToolbarAndroid
   
 }
 

@@ -12,6 +12,6 @@ object ^ extends js.Object {
   val MEDIUM: scala.Double = js.native
   val SMALL: scala.Double = js.native
   def default[C /* <: js.Function */](): js.Function1[/* component */ C, C] = js.native
-  def default[C /* <: js.Function */](options: materialDashUiLib.utilsWithWidthMod.Options): js.Function1[/* component */ C, C] = js.native
+  def default[C /* <: js.Function */](options: Options): js.Function1[/* component */ C, C] = js.native
 }
 

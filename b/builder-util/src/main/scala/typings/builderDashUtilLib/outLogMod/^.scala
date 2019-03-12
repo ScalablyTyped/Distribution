@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val PADDING: /* 2 */ scala.Double = js.native
-  val debug: debugLib.debugMod.debugNs.IDebugger = js.native
-  val log: builderDashUtilLib.outLogMod.Logger = js.native
+  val debug: debugLib.debugMod.debugNs.Debugger = js.native
+  val log: Logger = js.native
   def setPrinter(): scala.Unit = js.native
   def setPrinter(value: js.Function1[/* message */ java.lang.String, scala.Unit]): scala.Unit = js.native
 }

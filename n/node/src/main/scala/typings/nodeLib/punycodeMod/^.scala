@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val ucs2: nodeLib.punycodeMod.ucs2 = js.native
-  val version: js.Any = js.native
+  val version: java.lang.String = js.native
   def decode(string: java.lang.String): java.lang.String = js.native
   def encode(string: java.lang.String): java.lang.String = js.native
   def toASCII(domain: java.lang.String): java.lang.String = js.native

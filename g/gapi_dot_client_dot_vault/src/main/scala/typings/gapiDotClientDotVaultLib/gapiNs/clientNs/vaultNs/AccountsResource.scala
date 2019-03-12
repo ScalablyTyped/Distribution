@@ -29,20 +29,11 @@ trait AccountsResource extends js.Object {
 object AccountsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotVaultLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[HeldAccount]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotVaultLib.Anon_AccesstokenAccountId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    list: js.Function1[
-      gapiDotClientDotVaultLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListHeldAccountsResponse]
-    ]
+    create: gapiDotClientDotVaultLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[HeldAccount],
+    delete: gapiDotClientDotVaultLib.Anon_AccesstokenAccountId => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    list: gapiDotClientDotVaultLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[ListHeldAccountsResponse]
   ): AccountsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, list = list)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[AccountsResource]
   }

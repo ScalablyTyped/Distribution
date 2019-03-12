@@ -185,8 +185,6 @@ trait Request
     * third argument.
     */
   def app(req: Request, res: Response): js.Any = js.native
-  // tslint:disable-next-line callable-types (This is extended from and can't extend from a type alias in ts<2.2
-  def app(req: Request, res: Response, next: NextFunction): js.Any = js.native
   def app(req: Request, res: nodeLib.httpMod.ServerResponse): js.Any = js.native
   def app(req: nodeLib.httpMod.IncomingMessage, res: Response): js.Any = js.native
   def app(req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse): js.Any = js.native

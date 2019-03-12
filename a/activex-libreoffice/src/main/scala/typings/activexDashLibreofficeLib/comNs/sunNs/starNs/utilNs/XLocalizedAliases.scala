@@ -19,7 +19,7 @@ trait XLocalizedAliases
     * @param locale specifies the locale scope.
     * @returns a sequence of registered pair of alias and programmatic name.
     */
-  def listAliases(locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): activexDashInteropLib.SafeArray[AliasProgrammaticPair]
+  def listAliases(locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): stdLib.SafeArray[AliasProgrammaticPair]
   /** retrieves a registered programmatic name identified by an alias. */
   def lookupAlias(locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, Alias: java.lang.String): java.lang.String
   /** retrieves a given alias for a programmatic name. */
@@ -41,44 +41,19 @@ trait XLocalizedAliases
 object XLocalizedAliases {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    bindAlias: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String, 
-      scala.Unit
-    ],
-    listAliases: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashInteropLib.SafeArray[AliasProgrammaticPair]
-    ],
-    lookupAlias: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String, 
-      java.lang.String
-    ],
-    lookupProgrammatic: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String, 
-      java.lang.String
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    rebindAliases: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    release: js.Function0[scala.Unit],
-    renameAlias: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String, 
-      java.lang.String, 
-      scala.Unit
-    ],
-    unbindAlias: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String, 
-      scala.Unit
-    ],
-    unbindAliases: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    bindAlias: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String) => scala.Unit,
+    listAliases: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => stdLib.SafeArray[AliasProgrammaticPair],
+    lookupAlias: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String) => java.lang.String,
+    lookupProgrammatic: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String) => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    rebindAliases: (java.lang.String, java.lang.String) => scala.Unit,
+    release: () => scala.Unit,
+    renameAlias: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String, java.lang.String) => scala.Unit,
+    unbindAlias: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String) => scala.Unit,
+    unbindAliases: java.lang.String => scala.Unit
   ): XLocalizedAliases = {
-    val __obj = js.Dynamic.literal(acquire = acquire, bindAlias = bindAlias, listAliases = listAliases, lookupAlias = lookupAlias, lookupProgrammatic = lookupProgrammatic, queryInterface = queryInterface, rebindAliases = rebindAliases, release = release, renameAlias = renameAlias, unbindAlias = unbindAlias, unbindAliases = unbindAliases)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), bindAlias = js.Any.fromFunction3(bindAlias), listAliases = js.Any.fromFunction1(listAliases), lookupAlias = js.Any.fromFunction2(lookupAlias), lookupProgrammatic = js.Any.fromFunction2(lookupProgrammatic), queryInterface = js.Any.fromFunction1(queryInterface), rebindAliases = js.Any.fromFunction2(rebindAliases), release = js.Any.fromFunction0(release), renameAlias = js.Any.fromFunction3(renameAlias), unbindAlias = js.Any.fromFunction2(unbindAlias), unbindAliases = js.Any.fromFunction1(unbindAliases))
   
     __obj.asInstanceOf[XLocalizedAliases]
   }

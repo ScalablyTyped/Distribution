@@ -23,12 +23,12 @@ object XProperty {
   @scala.inline
   def apply(
     AsProperty: Property,
-    acquire: js.Function0[scala.Unit],
-    getAsProperty: js.Function0[Property],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getAsProperty: () => Property,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XProperty = {
-    val __obj = js.Dynamic.literal(AsProperty = AsProperty, acquire = acquire, getAsProperty = getAsProperty, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(AsProperty = AsProperty, acquire = js.Any.fromFunction0(acquire), getAsProperty = js.Any.fromFunction0(getAsProperty), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XProperty]
   }

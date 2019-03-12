@@ -24,7 +24,7 @@ object Anon_ClassNameCssModuleInNavbar {
     isOpen: js.UndefOr[scala.Boolean] = js.undefined,
     nav: js.UndefOr[scala.Boolean] = js.undefined,
     setActiveFromChild: js.UndefOr[scala.Boolean] = js.undefined,
-    toggle: js.Function0[scala.Unit] = null
+    toggle: () => scala.Unit = null
   ): Anon_ClassNameCssModuleInNavbar = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
@@ -33,7 +33,7 @@ object Anon_ClassNameCssModuleInNavbar {
     if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
     if (!js.isUndefined(nav)) __obj.updateDynamic("nav")(nav)
     if (!js.isUndefined(setActiveFromChild)) __obj.updateDynamic("setActiveFromChild")(setActiveFromChild)
-    if (toggle != null) __obj.updateDynamic("toggle")(toggle)
+    if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction0(toggle))
     __obj.asInstanceOf[Anon_ClassNameCssModuleInNavbar]
   }
 }

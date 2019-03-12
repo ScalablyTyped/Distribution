@@ -25,8 +25,8 @@ object ChartLegendOptions {
     display: js.UndefOr[scala.Boolean] = js.undefined,
     fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
     labels: ChartLegendLabelOptions = null,
-    onClick: js.Function2[/* event */ stdLib.MouseEvent, /* legendItem */ ChartLegendLabelItem, scala.Unit] = null,
-    onHover: js.Function2[/* event */ stdLib.MouseEvent, /* legendItem */ ChartLegendLabelItem, scala.Unit] = null,
+    onClick: (/* event */ stdLib.MouseEvent, /* legendItem */ ChartLegendLabelItem) => scala.Unit = null,
+    onHover: (/* event */ stdLib.MouseEvent, /* legendItem */ ChartLegendLabelItem) => scala.Unit = null,
     position: PositionType = null,
     reverse: js.UndefOr[scala.Boolean] = js.undefined
   ): ChartLegendOptions = {
@@ -34,8 +34,8 @@ object ChartLegendOptions {
     if (!js.isUndefined(display)) __obj.updateDynamic("display")(display)
     if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth)
     if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onHover != null) __obj.updateDynamic("onHover")(onHover)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
+    if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction2(onHover))
     if (position != null) __obj.updateDynamic("position")(position)
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
     __obj.asInstanceOf[ChartLegendOptions]

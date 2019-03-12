@@ -14,8 +14,8 @@ trait MDCFoundation[A] extends js.Object {
 
 object MDCFoundation {
   @scala.inline
-  def apply[A](destroy: js.Function0[scala.Unit], init: js.Function0[scala.Unit]): MDCFoundation[A] = {
-    val __obj = js.Dynamic.literal(destroy = destroy, init = init)
+  def apply[A](destroy: () => scala.Unit, init: () => scala.Unit): MDCFoundation[A] = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), init = js.Any.fromFunction0(init))
   
     __obj.asInstanceOf[MDCFoundation[A]]
   }

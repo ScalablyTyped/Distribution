@@ -14,12 +14,7 @@ object ^ extends js.Object {
     * @deprecated Unsupported on Firefox at this time.
     */
   val onResourceAdded: js.UndefOr[
-    firefoxDashWebextDashBrowserLib.WebExtEvent[
-      js.Function1[
-        /* resource */ firefoxDashWebextDashBrowserLib.browserNs.devtoolsNs.inspectedWindowNs.Resource, 
-        scala.Unit
-      ]
-    ]
+    firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* resource */ Resource, scala.Unit]]
   ] = js.native
   /**
     * Fired when a new revision of the resource is committed (e.g. user saves an edited version of the resource in the
@@ -29,11 +24,7 @@ object ^ extends js.Object {
     */
   val onResourceContentCommitted: js.UndefOr[
     firefoxDashWebextDashBrowserLib.WebExtEvent[
-      js.Function2[
-        /* resource */ firefoxDashWebextDashBrowserLib.browserNs.devtoolsNs.inspectedWindowNs.Resource, 
-        /* content */ java.lang.String, 
-        scala.Unit
-      ]
+      js.Function2[/* resource */ Resource, /* content */ java.lang.String, scala.Unit]
     ]
   ] = js.native
   /* devtools.inspectedWindow properties */
@@ -56,9 +47,7 @@ object ^ extends js.Object {
     * Retrieves the list of resources from the inspected page.
     * @deprecated Unsupported on Firefox at this time.
     */
-  def getResources(): js.Promise[
-    js.Array[firefoxDashWebextDashBrowserLib.browserNs.devtoolsNs.inspectedWindowNs.Resource]
-  ] = js.native
+  def getResources(): js.Promise[js.Array[Resource]] = js.native
   /** Reloads the inspected page. */
   def reload(): scala.Unit = js.native
   def reload(reloadOptions: firefoxDashWebextDashBrowserLib.Anon_IgnoreCache): scala.Unit = js.native

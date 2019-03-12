@@ -13,13 +13,13 @@ trait IMatrixCellsOwner extends ILocalizableOwner {
 object IMatrixCellsOwner {
   @scala.inline
   def apply(
-    getColumns: js.Function0[js.Array[_]],
-    getLocale: js.Function0[java.lang.String],
-    getMarkdownHtml: js.Function1[java.lang.String, java.lang.String],
-    getProcessedText: js.Function1[java.lang.String, java.lang.String],
-    getRows: js.Function0[js.Array[_]]
+    getColumns: () => js.Array[_],
+    getLocale: () => java.lang.String,
+    getMarkdownHtml: java.lang.String => java.lang.String,
+    getProcessedText: java.lang.String => java.lang.String,
+    getRows: () => js.Array[_]
   ): IMatrixCellsOwner = {
-    val __obj = js.Dynamic.literal(getColumns = getColumns, getLocale = getLocale, getMarkdownHtml = getMarkdownHtml, getProcessedText = getProcessedText, getRows = getRows)
+    val __obj = js.Dynamic.literal(getColumns = js.Any.fromFunction0(getColumns), getLocale = js.Any.fromFunction0(getLocale), getMarkdownHtml = js.Any.fromFunction1(getMarkdownHtml), getProcessedText = js.Any.fromFunction1(getProcessedText), getRows = js.Any.fromFunction0(getRows))
   
     __obj.asInstanceOf[IMatrixCellsOwner]
   }

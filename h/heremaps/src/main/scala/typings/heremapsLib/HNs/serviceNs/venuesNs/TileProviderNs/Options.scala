@@ -21,12 +21,12 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    onSpaceCreated: js.Function1[/* space */ heremapsLib.HNs.serviceNs.venuesNs.Space, scala.Unit] = null,
+    onSpaceCreated: /* space */ heremapsLib.HNs.serviceNs.venuesNs.Space => scala.Unit = null,
     pixelRatio: scala.Int | scala.Double = null,
     tileCacheSize: scala.Int | scala.Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (onSpaceCreated != null) __obj.updateDynamic("onSpaceCreated")(onSpaceCreated)
+    if (onSpaceCreated != null) __obj.updateDynamic("onSpaceCreated")(js.Any.fromFunction1(onSpaceCreated))
     if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
     if (tileCacheSize != null) __obj.updateDynamic("tileCacheSize")(tileCacheSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

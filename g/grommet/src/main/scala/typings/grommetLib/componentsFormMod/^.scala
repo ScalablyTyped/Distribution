@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Form: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsFormMod.FormProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    FormProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.FormHTMLAttributes[reactLib.HTMLFormElement], 
       reactLib.HTMLFormElement
     ]), 

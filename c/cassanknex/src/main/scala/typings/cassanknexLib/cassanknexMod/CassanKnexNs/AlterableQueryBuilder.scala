@@ -14,11 +14,11 @@ trait AlterableQueryBuilder[T] extends js.Object {
 object AlterableQueryBuilder {
   @scala.inline
   def apply[T](
-    alter: js.Function2[js.Any, java.lang.String, AlterableQueryBuilder[T]],
-    drop: js.Function1[/* repeated */ js.Any, AlterableQueryBuilder[T]],
-    rename: js.Function2[js.Any, js.Any, AlterableQueryBuilder[T]]
+    alter: (js.Any, java.lang.String) => AlterableQueryBuilder[T],
+    drop: /* repeated */ js.Any => AlterableQueryBuilder[T],
+    rename: (js.Any, js.Any) => AlterableQueryBuilder[T]
   ): AlterableQueryBuilder[T] = {
-    val __obj = js.Dynamic.literal(alter = alter, drop = drop, rename = rename)
+    val __obj = js.Dynamic.literal(alter = js.Any.fromFunction2(alter), drop = js.Any.fromFunction1(drop), rename = js.Any.fromFunction2(rename))
   
     __obj.asInstanceOf[AlterableQueryBuilder[T]]
   }

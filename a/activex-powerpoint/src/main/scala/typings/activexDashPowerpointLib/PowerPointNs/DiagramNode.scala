@@ -11,12 +11,12 @@ class DiagramNode protected () extends js.Object {
   val Application: js.Any = js.native
   val Children: DiagramNodeChildren = js.native
   val Creator: scala.Double = js.native
-  val Diagram: Diagram = js.native
+  val Diagram: activexDashPowerpointLib.PowerPointNs.Diagram = js.native
   var Layout: activexDashOfficeLib.OfficeNs.MsoOrgChartLayoutType = js.native
   val Parent: js.Any = js.native
   var `PowerPoint.DiagramNode_typekey`: DiagramNode = js.native
   val Root: DiagramNode = js.native
-  val Shape: Shape = js.native
+  val Shape: activexDashPowerpointLib.PowerPointNs.Shape = js.native
   val TextShape: Shape = js.native
   /**
     * @param Office.MsoRelativeNodePosition [Pos=2]

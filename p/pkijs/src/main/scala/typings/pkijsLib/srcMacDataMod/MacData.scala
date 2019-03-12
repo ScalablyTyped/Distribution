@@ -17,14 +17,14 @@ trait MacData extends js.Object {
 object MacData {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     mac: pkijsLib.srcDigestInfoMod.default,
     macSalt: asn1jsLib.asn1jsMod.OctetString,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     iterations: scala.Int | scala.Double = null
   ): MacData = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, mac = mac, macSalt = macSalt, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), mac = mac, macSalt = macSalt, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
     if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
     __obj.asInstanceOf[MacData]
   }

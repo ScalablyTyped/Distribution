@@ -99,9 +99,9 @@ object Props {
     maxHeight: scala.Int | scala.Double = null,
     name: java.lang.String = null,
     noMatchesFound: java.lang.String = null,
-    onFilterChange: js.Function1[/* filter */ java.lang.String, scala.Unit] = null,
-    onOpenChange: js.Function1[/* change */ atAtlaskitSingleDashSelectLib.Anon_Event, scala.Unit] = null,
-    onSelected: js.Function1[/* item */ ItemType, scala.Unit] = null,
+    onFilterChange: /* filter */ java.lang.String => scala.Unit = null,
+    onOpenChange: /* change */ atAtlaskitSingleDashSelectLib.Anon_Event => scala.Unit = null,
+    onSelected: /* item */ ItemType => scala.Unit = null,
     placeholder: java.lang.String = null,
     position: java.lang.String = null,
     shouldFitContainer: js.UndefOr[scala.Boolean] = js.undefined,
@@ -125,9 +125,9 @@ object Props {
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (noMatchesFound != null) __obj.updateDynamic("noMatchesFound")(noMatchesFound)
-    if (onFilterChange != null) __obj.updateDynamic("onFilterChange")(onFilterChange)
-    if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(onOpenChange)
-    if (onSelected != null) __obj.updateDynamic("onSelected")(onSelected)
+    if (onFilterChange != null) __obj.updateDynamic("onFilterChange")(js.Any.fromFunction1(onFilterChange))
+    if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1(onOpenChange))
+    if (onSelected != null) __obj.updateDynamic("onSelected")(js.Any.fromFunction1(onSelected))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (position != null) __obj.updateDynamic("position")(position)
     if (!js.isUndefined(shouldFitContainer)) __obj.updateDynamic("shouldFitContainer")(shouldFitContainer)

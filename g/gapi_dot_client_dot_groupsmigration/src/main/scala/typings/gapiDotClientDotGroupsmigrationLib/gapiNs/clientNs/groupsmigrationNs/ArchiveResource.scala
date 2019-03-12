@@ -13,12 +13,9 @@ trait ArchiveResource extends js.Object {
 object ArchiveResource {
   @scala.inline
   def apply(
-    insert: js.Function1[
-      gapiDotClientDotGroupsmigrationLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Groups]
-    ]
+    insert: gapiDotClientDotGroupsmigrationLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Groups]
   ): ArchiveResource = {
-    val __obj = js.Dynamic.literal(insert = insert)
+    val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert))
   
     __obj.asInstanceOf[ArchiveResource]
   }

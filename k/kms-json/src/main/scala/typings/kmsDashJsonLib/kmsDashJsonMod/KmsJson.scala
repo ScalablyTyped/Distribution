@@ -12,11 +12,8 @@ trait KmsJson extends js.Object {
 
 object KmsJson {
   @scala.inline
-  def apply(
-    decrypt: js.Function1[java.lang.String, js.Object],
-    encrypt: js.Function1[js.Object, java.lang.String]
-  ): KmsJson = {
-    val __obj = js.Dynamic.literal(decrypt = decrypt, encrypt = encrypt)
+  def apply(decrypt: java.lang.String => js.Object, encrypt: js.Object => java.lang.String): KmsJson = {
+    val __obj = js.Dynamic.literal(decrypt = js.Any.fromFunction1(decrypt), encrypt = js.Any.fromFunction1(encrypt))
   
     __obj.asInstanceOf[KmsJson]
   }

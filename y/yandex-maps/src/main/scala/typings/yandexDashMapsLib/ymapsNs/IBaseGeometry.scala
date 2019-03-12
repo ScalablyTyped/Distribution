@@ -14,10 +14,10 @@ object IBaseGeometry {
   @scala.inline
   def apply(
     events: IEventManager,
-    getBounds: js.Function0[js.Array[js.Array[scala.Double]] | scala.Null],
-    getType: js.Function0[java.lang.String]
+    getBounds: () => js.Array[js.Array[scala.Double]] | scala.Null,
+    getType: () => java.lang.String
   ): IBaseGeometry = {
-    val __obj = js.Dynamic.literal(events = events, getBounds = getBounds, getType = getType)
+    val __obj = js.Dynamic.literal(events = events, getBounds = js.Any.fromFunction0(getBounds), getType = js.Any.fromFunction0(getType))
   
     __obj.asInstanceOf[IBaseGeometry]
   }

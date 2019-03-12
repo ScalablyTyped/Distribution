@@ -29,15 +29,15 @@ object Layer {
   def apply(
     Timestamp: java.lang.String,
     URL: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getTimestamp: js.Function0[java.lang.String],
-    listSubLayerIds: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    readData: js.Function1[XLayerHandler, scala.Unit],
-    readSubLayerData: js.Function2[XLayerHandler, java.lang.String, scala.Unit],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getTimestamp: () => java.lang.String,
+    listSubLayerIds: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    readData: XLayerHandler => scala.Unit,
+    readSubLayerData: (XLayerHandler, java.lang.String) => scala.Unit,
+    release: () => scala.Unit
   ): Layer = {
-    val __obj = js.Dynamic.literal(Timestamp = Timestamp, URL = URL, acquire = acquire, getTimestamp = getTimestamp, listSubLayerIds = listSubLayerIds, queryInterface = queryInterface, readData = readData, readSubLayerData = readSubLayerData, release = release)
+    val __obj = js.Dynamic.literal(Timestamp = Timestamp, URL = URL, acquire = js.Any.fromFunction0(acquire), getTimestamp = js.Any.fromFunction0(getTimestamp), listSubLayerIds = js.Any.fromFunction0(listSubLayerIds), queryInterface = js.Any.fromFunction1(queryInterface), readData = js.Any.fromFunction1(readData), readSubLayerData = js.Any.fromFunction2(readSubLayerData), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[Layer]
   }

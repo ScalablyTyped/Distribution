@@ -52,7 +52,7 @@ trait OnDisconnect extends js.Object {
     *   is complete.
     */
   def cancel(): js.Promise[_] = js.native
-  def cancel(onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]): js.Promise[_] = js.native
+  def cancel(onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]): js.Promise[_] = js.native
   /**
     * Ensures the data at this location is deleted when the client is disconnected
     * (due to closing the browser, navigating to a new page, or network issues).
@@ -65,7 +65,7 @@ trait OnDisconnect extends js.Object {
     *   is complete.
     */
   def remove(): js.Promise[_] = js.native
-  def remove(onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]): js.Promise[_] = js.native
+  def remove(onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]): js.Promise[_] = js.native
   /**
     * Ensures the data at this location is set to the specified value when the
     * client is disconnected (due to closing the browser, navigating to a new page,
@@ -98,13 +98,13 @@ trait OnDisconnect extends js.Object {
     *   Database is complete.
     */
   def set(value: js.Any): js.Promise[_] = js.native
-  def set(value: js.Any, onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]): js.Promise[_] = js.native
+  def set(value: js.Any, onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]): js.Promise[_] = js.native
   def setWithPriority(value: js.Any): js.Promise[_] = js.native
   def setWithPriority(value: js.Any, priority: java.lang.String): js.Promise[_] = js.native
   def setWithPriority(
     value: js.Any,
     priority: java.lang.String,
-    onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]
+    onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]
   ): js.Promise[_] = js.native
   /**
     * Ensures the data at this location is set to the specified value and priority
@@ -115,12 +115,12 @@ trait OnDisconnect extends js.Object {
   def setWithPriority(
     value: js.Any,
     priority: scala.Double,
-    onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]
+    onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]
   ): js.Promise[_] = js.native
   def setWithPriority(
     value: js.Any,
     priority: scala.Null,
-    onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]
+    onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]
   ): js.Promise[_] = js.native
   /**
     * Writes multiple values at this location when the client is disconnected (due
@@ -159,7 +159,7 @@ trait OnDisconnect extends js.Object {
     * @return {!firebase.Promise<void>} Resolves when synchronization to the
     *   Database is complete.
     */
-  def update(values: coreDashJsLib.Object): js.Promise[_] = js.native
-  def update(values: coreDashJsLib.Object, onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]): js.Promise[_] = js.native
+  def update(values: js.Object): js.Promise[_] = js.native
+  def update(values: js.Object, onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]): js.Promise[_] = js.native
 }
 

@@ -18,11 +18,8 @@ trait KeyValueDifferFactory extends js.Object {
 
 object KeyValueDifferFactory {
   @scala.inline
-  def apply(
-    create: js.Function0[KeyValueDiffer[js.Any, js.Any]],
-    supports: js.Function1[js.Any, scala.Boolean]
-  ): KeyValueDifferFactory = {
-    val __obj = js.Dynamic.literal(create = create, supports = supports)
+  def apply(create: () => KeyValueDiffer[js.Any, js.Any], supports: js.Any => scala.Boolean): KeyValueDifferFactory = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), supports = js.Any.fromFunction1(supports))
   
     __obj.asInstanceOf[KeyValueDifferFactory]
   }

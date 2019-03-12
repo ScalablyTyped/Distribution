@@ -255,12 +255,12 @@ object ^ extends js.Object {
     fd: scala.Double,
     cmd: java.lang.String,
     arg: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.Error, /* result */ scala.Double, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* result */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
   def fcntl(
     fd: scala.Double,
     cmd: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* result */ scala.Double, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* result */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
   def fcntlSync(fd: scala.Double, cmd: java.lang.String): scala.Double = js.native
   def fcntlSync(fd: scala.Double, cmd: java.lang.String, arg: scala.Double): scala.Double = js.native
@@ -277,7 +277,7 @@ object ^ extends js.Object {
   def flock(
     fd: scala.Double,
     flags: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def flockSync(fd: scala.Double, flags: java.lang.String): scala.Unit = js.native
   /**
@@ -1367,7 +1367,7 @@ object ^ extends js.Object {
     fd: scala.Double,
     offset: scala.Double,
     whence: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.Error, /* currFilePos */ scala.Double, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* currFilePos */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
   def seekSync(fd: scala.Double, offset: scala.Double, whence: scala.Double): scala.Double = js.native
   /**
@@ -1494,7 +1494,7 @@ object ^ extends js.Object {
     path: java.lang.String,
     atime: scala.Double,
     mtime: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def utimeSync(path: java.lang.String, atime: scala.Double, mtime: scala.Double): scala.Unit = js.native
   /**

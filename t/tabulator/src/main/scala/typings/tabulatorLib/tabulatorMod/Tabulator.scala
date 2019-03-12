@@ -17,10 +17,10 @@ object Tabulator {
   @scala.inline
   def apply(
     defaultShowAttribute: java.lang.String,
-    toHtmlTable: js.Function1[js.Object, js.Any],
-    toMatrix: js.Function1[js.Object, js.Object]
+    toHtmlTable: js.Object => js.Any,
+    toMatrix: js.Object => js.Object
   ): Tabulator = {
-    val __obj = js.Dynamic.literal(defaultShowAttribute = defaultShowAttribute, toHtmlTable = toHtmlTable, toMatrix = toMatrix)
+    val __obj = js.Dynamic.literal(defaultShowAttribute = defaultShowAttribute, toHtmlTable = js.Any.fromFunction1(toHtmlTable), toMatrix = js.Any.fromFunction1(toMatrix))
   
     __obj.asInstanceOf[Tabulator]
   }

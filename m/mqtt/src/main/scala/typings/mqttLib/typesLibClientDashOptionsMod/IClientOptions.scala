@@ -107,12 +107,7 @@ object IClientOptions {
     reschedulePings: js.UndefOr[scala.Boolean] = js.undefined,
     resubscribe: js.UndefOr[scala.Boolean] = js.undefined,
     servers: js.Array[mqttLib.Anon_Host] = null,
-    transformWsUrl: js.Function3[
-      /* url */ java.lang.String, 
-      /* options */ IClientOptions, 
-      /* client */ mqttLib.typesLibClientMod.MqttClient, 
-      java.lang.String
-    ] = null,
+    transformWsUrl: (/* url */ java.lang.String, /* options */ IClientOptions, /* client */ mqttLib.typesLibClientMod.MqttClient) => java.lang.String = null,
     username: java.lang.String = null,
     will: mqttLib.Anon_Payload = null,
     wsOptions: org.scalablytyped.runtime.StringDictionary[js.Any] = null
@@ -141,7 +136,7 @@ object IClientOptions {
     if (!js.isUndefined(reschedulePings)) __obj.updateDynamic("reschedulePings")(reschedulePings)
     if (!js.isUndefined(resubscribe)) __obj.updateDynamic("resubscribe")(resubscribe)
     if (servers != null) __obj.updateDynamic("servers")(servers)
-    if (transformWsUrl != null) __obj.updateDynamic("transformWsUrl")(transformWsUrl)
+    if (transformWsUrl != null) __obj.updateDynamic("transformWsUrl")(js.Any.fromFunction3(transformWsUrl))
     if (username != null) __obj.updateDynamic("username")(username)
     if (will != null) __obj.updateDynamic("will")(will)
     if (wsOptions != null) __obj.updateDynamic("wsOptions")(wsOptions)

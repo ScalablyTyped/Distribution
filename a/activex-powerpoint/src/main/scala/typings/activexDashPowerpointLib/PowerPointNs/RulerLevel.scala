@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.RulerLevel")
 @js.native
 class RulerLevel protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   var FirstMargin: scala.Double = js.native
   var LeftMargin: scala.Double = js.native
   val Parent: js.Any = js.native

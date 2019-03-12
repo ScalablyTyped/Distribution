@@ -14,7 +14,7 @@ class iterator protected () extends js.Object {
   var enlargeBr: scala.Boolean = js.native
   val filter: ckeditorLib.CKEDITORNs.filter = js.native
   var forceBrBreak: scala.Boolean = js.native
-  val range: range = js.native
+  val range: ckeditorLib.CKEDITORNs.domNs.range = js.native
   def getNextParagraph(): element = js.native
   def getNextParagraph(blockTag: java.lang.String): element = js.native
 }

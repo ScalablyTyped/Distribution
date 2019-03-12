@@ -22,13 +22,13 @@ trait XChangesNotifier
 object XChangesNotifier {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addChangesListener: js.Function1[XChangesListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeChangesListener: js.Function1[XChangesListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addChangesListener: XChangesListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeChangesListener: XChangesListener => scala.Unit
   ): XChangesNotifier = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addChangesListener = addChangesListener, queryInterface = queryInterface, release = release, removeChangesListener = removeChangesListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addChangesListener = js.Any.fromFunction1(addChangesListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeChangesListener = js.Any.fromFunction1(removeChangesListener))
   
     __obj.asInstanceOf[XChangesNotifier]
   }

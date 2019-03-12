@@ -82,10 +82,7 @@ object IMenuItemProps {
     labelClassName: java.lang.String = null,
     labelElement: reactLib.reactMod.ReactNs.ReactNode = null,
     multiline: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
+    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
     popoverProps: stdLib.Partial[atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverMod.IPopoverProps] = null,
     shouldDismissPopover: js.UndefOr[scala.Boolean] = js.undefined,
     tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null,
@@ -104,7 +101,7 @@ object IMenuItemProps {
     if (labelClassName != null) __obj.updateDynamic("labelClassName")(labelClassName)
     if (labelElement != null) __obj.updateDynamic("labelElement")(labelElement.asInstanceOf[js.Any])
     if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps)
     if (!js.isUndefined(shouldDismissPopover)) __obj.updateDynamic("shouldDismissPopover")(shouldDismissPopover)
     if (tagName != null) __obj.updateDynamic("tagName")(tagName)

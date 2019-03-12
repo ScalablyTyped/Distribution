@@ -13,10 +13,10 @@ trait ReducerTestkit extends js.Object {
 object ReducerTestkit {
   @scala.inline
   def apply(
-    execute: js.Function1[reduxLib.reduxMod.Action[_], js.Any],
-    expect: js.Function1[reduxLib.reduxMod.Action[_], reduxDashTestkitLib.Anon_Expected]
+    execute: reduxLib.reduxMod.Action[_] => js.Any,
+    expect: reduxLib.reduxMod.Action[_] => reduxDashTestkitLib.Anon_Expected
   ): ReducerTestkit = {
-    val __obj = js.Dynamic.literal(execute = execute, expect = expect)
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), expect = js.Any.fromFunction1(expect))
   
     __obj.asInstanceOf[ReducerTestkit]
   }

@@ -35,18 +35,18 @@ object EquationNumbers {
   @scala.inline
   def apply(
     autoNumber: java.lang.String = null,
-    formatID: js.Function0[java.lang.String] = null,
-    formatNumber: js.Function1[/* n */ scala.Double, java.lang.String] = null,
-    formatTag: js.Function1[/* n */ scala.Double, java.lang.String] = null,
-    formatURL: js.Function1[/* id */ java.lang.String, java.lang.String] = null,
+    formatID: () => java.lang.String = null,
+    formatNumber: /* n */ scala.Double => java.lang.String = null,
+    formatTag: /* n */ scala.Double => java.lang.String = null,
+    formatURL: /* id */ java.lang.String => java.lang.String = null,
     useLabelIds: js.UndefOr[scala.Boolean] = js.undefined
   ): EquationNumbers = {
     val __obj = js.Dynamic.literal()
     if (autoNumber != null) __obj.updateDynamic("autoNumber")(autoNumber)
-    if (formatID != null) __obj.updateDynamic("formatID")(formatID)
-    if (formatNumber != null) __obj.updateDynamic("formatNumber")(formatNumber)
-    if (formatTag != null) __obj.updateDynamic("formatTag")(formatTag)
-    if (formatURL != null) __obj.updateDynamic("formatURL")(formatURL)
+    if (formatID != null) __obj.updateDynamic("formatID")(js.Any.fromFunction0(formatID))
+    if (formatNumber != null) __obj.updateDynamic("formatNumber")(js.Any.fromFunction1(formatNumber))
+    if (formatTag != null) __obj.updateDynamic("formatTag")(js.Any.fromFunction1(formatTag))
+    if (formatURL != null) __obj.updateDynamic("formatURL")(js.Any.fromFunction1(formatURL))
     if (!js.isUndefined(useLabelIds)) __obj.updateDynamic("useLabelIds")(useLabelIds)
     __obj.asInstanceOf[EquationNumbers]
   }

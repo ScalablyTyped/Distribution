@@ -20,6 +20,6 @@ object namespaced extends js.Object {
     * and other assistive technologies while the modal is open.
     */
   def setAppElement(appElement: java.lang.String): scala.Unit = js.native
-  def setAppElement(appElement: reactLib.HTMLElement): scala.Unit = js.native
+  def setAppElement(appElement: stdLib.HTMLElement): scala.Unit = js.native
 }
 

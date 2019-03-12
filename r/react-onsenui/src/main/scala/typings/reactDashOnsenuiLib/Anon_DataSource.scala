@@ -24,20 +24,16 @@ object Anon_DataSource {
   def apply(
     dataSource: js.Array[_] = null,
     modifier: java.lang.String = null,
-    renderFooter: js.Function0[js.UndefOr[reactLib.reactMod.Global.JSXNs.Element]] = null,
-    renderHeader: js.Function0[js.UndefOr[reactLib.reactMod.Global.JSXNs.Element]] = null,
-    renderRow: js.Function2[
-      /* row */ js.Any, 
-      /* index */ js.UndefOr[scala.Double], 
-      js.UndefOr[reactLib.reactMod.Global.JSXNs.Element]
-    ] = null
+    renderFooter: () => js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = null,
+    renderHeader: () => js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = null,
+    renderRow: (/* row */ js.Any, /* index */ js.UndefOr[scala.Double]) => js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = null
   ): Anon_DataSource = {
     val __obj = js.Dynamic.literal()
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
     if (modifier != null) __obj.updateDynamic("modifier")(modifier)
-    if (renderFooter != null) __obj.updateDynamic("renderFooter")(renderFooter)
-    if (renderHeader != null) __obj.updateDynamic("renderHeader")(renderHeader)
-    if (renderRow != null) __obj.updateDynamic("renderRow")(renderRow)
+    if (renderFooter != null) __obj.updateDynamic("renderFooter")(js.Any.fromFunction0(renderFooter))
+    if (renderHeader != null) __obj.updateDynamic("renderHeader")(js.Any.fromFunction0(renderHeader))
+    if (renderRow != null) __obj.updateDynamic("renderRow")(js.Any.fromFunction2(renderRow))
     __obj.asInstanceOf[Anon_DataSource]
   }
 }

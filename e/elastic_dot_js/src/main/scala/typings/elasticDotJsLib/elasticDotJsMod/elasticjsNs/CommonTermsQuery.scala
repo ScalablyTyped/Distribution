@@ -71,21 +71,21 @@ trait CommonTermsQuery extends Query {
 object CommonTermsQuery {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    analyzer: js.Function1[java.lang.String, CommonTermsQuery],
-    boost: js.Function1[stdLib.Number, CommonTermsQuery],
-    cutoffFrequency: js.Function1[stdLib.Number, CommonTermsQuery],
-    disableCoord: js.Function1[java.lang.String, CommonTermsQuery],
-    field: js.Function1[java.lang.String, CommonTermsQuery],
-    highFreqOperator: js.Function1[java.lang.String, CommonTermsQuery],
-    lowFreqOperator: js.Function1[java.lang.String, CommonTermsQuery],
-    minimumShouldMatch: js.Function1[scala.Double, CommonTermsQuery],
-    minimumShouldMatchHighFreq: js.Function1[scala.Double, CommonTermsQuery],
-    minimumShouldMatchLowFreq: js.Function1[scala.Double, CommonTermsQuery],
-    query: js.Function1[java.lang.String, CommonTermsQuery],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    analyzer: java.lang.String => CommonTermsQuery,
+    boost: stdLib.Number => CommonTermsQuery,
+    cutoffFrequency: stdLib.Number => CommonTermsQuery,
+    disableCoord: java.lang.String => CommonTermsQuery,
+    field: java.lang.String => CommonTermsQuery,
+    highFreqOperator: java.lang.String => CommonTermsQuery,
+    lowFreqOperator: java.lang.String => CommonTermsQuery,
+    minimumShouldMatch: scala.Double => CommonTermsQuery,
+    minimumShouldMatchHighFreq: scala.Double => CommonTermsQuery,
+    minimumShouldMatchLowFreq: scala.Double => CommonTermsQuery,
+    query: java.lang.String => CommonTermsQuery,
+    toJSON: () => js.Any
   ): CommonTermsQuery = {
-    val __obj = js.Dynamic.literal(_type = _type, analyzer = analyzer, boost = boost, cutoffFrequency = cutoffFrequency, disableCoord = disableCoord, field = field, highFreqOperator = highFreqOperator, lowFreqOperator = lowFreqOperator, minimumShouldMatch = minimumShouldMatch, minimumShouldMatchHighFreq = minimumShouldMatchHighFreq, minimumShouldMatchLowFreq = minimumShouldMatchLowFreq, query = query, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), analyzer = js.Any.fromFunction1(analyzer), boost = js.Any.fromFunction1(boost), cutoffFrequency = js.Any.fromFunction1(cutoffFrequency), disableCoord = js.Any.fromFunction1(disableCoord), field = js.Any.fromFunction1(field), highFreqOperator = js.Any.fromFunction1(highFreqOperator), lowFreqOperator = js.Any.fromFunction1(lowFreqOperator), minimumShouldMatch = js.Any.fromFunction1(minimumShouldMatch), minimumShouldMatchHighFreq = js.Any.fromFunction1(minimumShouldMatchHighFreq), minimumShouldMatchLowFreq = js.Any.fromFunction1(minimumShouldMatchLowFreq), query = js.Any.fromFunction1(query), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[CommonTermsQuery]
   }

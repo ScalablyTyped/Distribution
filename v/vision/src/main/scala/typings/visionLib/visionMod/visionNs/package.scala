@@ -38,12 +38,12 @@ package object visionNs {
     scala.Unit
   ]
   type ServerViewCompileNext = js.Function2[
-    /* err */ nodeLib.Error | scala.Null, 
+    /* err */ stdLib.Error | scala.Null, 
     /* compiled */ js.Function3[
       /* context */ js.Any, 
       /* options */ js.Any, 
       /* callback */ js.Function2[
-        /* err */ scala.Null | nodeLib.Error, 
+        /* err */ scala.Null | stdLib.Error, 
         /* rendered */ java.lang.String | scala.Null, 
         scala.Unit
       ], 

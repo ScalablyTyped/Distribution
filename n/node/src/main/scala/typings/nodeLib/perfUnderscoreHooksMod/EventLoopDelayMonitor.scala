@@ -52,18 +52,18 @@ trait EventLoopDelayMonitor extends js.Object {
 object EventLoopDelayMonitor {
   @scala.inline
   def apply(
-    disable: js.Function0[scala.Boolean],
-    enable: js.Function0[scala.Boolean],
+    disable: () => scala.Boolean,
+    enable: () => scala.Boolean,
     exceeds: scala.Double,
     max: scala.Double,
     mean: scala.Double,
     min: scala.Double,
-    percentile: js.Function1[scala.Double, scala.Double],
+    percentile: scala.Double => scala.Double,
     percentiles: nodeLib.Map[scala.Double, scala.Double],
-    reset: js.Function0[scala.Unit],
+    reset: () => scala.Unit,
     stddev: scala.Double
   ): EventLoopDelayMonitor = {
-    val __obj = js.Dynamic.literal(disable = disable, enable = enable, exceeds = exceeds, max = max, mean = mean, min = min, percentile = percentile, percentiles = percentiles, reset = reset, stddev = stddev)
+    val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), exceeds = exceeds, max = max, mean = mean, min = min, percentile = js.Any.fromFunction1(percentile), percentiles = percentiles, reset = js.Any.fromFunction0(reset), stddev = stddev)
   
     __obj.asInstanceOf[EventLoopDelayMonitor]
   }

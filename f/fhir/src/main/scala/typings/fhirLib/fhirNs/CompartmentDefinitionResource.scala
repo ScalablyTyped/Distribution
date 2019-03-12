@@ -24,7 +24,7 @@ trait CompartmentDefinitionResource extends BackboneElement {
   /**
     * Name of resource type
     */
-  var code: code
+  var code: fhirLib.fhirNs.code
   /**
     * Additional documentation about the resource and compartment
     */

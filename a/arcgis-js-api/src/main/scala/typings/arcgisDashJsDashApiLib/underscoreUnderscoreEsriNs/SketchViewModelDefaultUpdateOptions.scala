@@ -51,15 +51,15 @@ object SketchViewModelDefaultUpdateOptions {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     enableRotation: js.UndefOr[scala.Boolean] = js.undefined,
     enableScaling: js.UndefOr[scala.Boolean] = js.undefined,
     preserveAspectRatio: js.UndefOr[scala.Boolean] = js.undefined,
     toggleToolOnClick: js.UndefOr[scala.Boolean] = js.undefined,
     tool: java.lang.String = null
   ): SketchViewModelDefaultUpdateOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (!js.isUndefined(enableRotation)) __obj.updateDynamic("enableRotation")(enableRotation)
     if (!js.isUndefined(enableScaling)) __obj.updateDynamic("enableScaling")(enableScaling)
     if (!js.isUndefined(preserveAspectRatio)) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio)

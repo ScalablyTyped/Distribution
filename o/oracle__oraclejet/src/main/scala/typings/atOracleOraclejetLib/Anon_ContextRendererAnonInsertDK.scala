@@ -11,13 +11,8 @@ trait Anon_ContextRendererAnonInsertDK[K, D] extends js.Object {
 
 object Anon_ContextRendererAnonInsertDK {
   @scala.inline
-  def apply[K, D](
-    renderer: js.Function1[
-      atOracleOraclejetLib.ojtreemapMod.ojTreemapNs.NodeContentContext[K, D], 
-      Anon_Insert
-    ]
-  ): Anon_ContextRendererAnonInsertDK[K, D] = {
-    val __obj = js.Dynamic.literal(renderer = renderer)
+  def apply[K, D](renderer: atOracleOraclejetLib.ojtreemapMod.ojTreemapNs.NodeContentContext[K, D] => Anon_Insert): Anon_ContextRendererAnonInsertDK[K, D] = {
+    val __obj = js.Dynamic.literal(renderer = js.Any.fromFunction1(renderer))
   
     __obj.asInstanceOf[Anon_ContextRendererAnonInsertDK[K, D]]
   }

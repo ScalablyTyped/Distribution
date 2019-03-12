@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def getEffectiveOptions(
-    options: appDashBuilderDashLibLib.outOptionsCommonWindowsInstallerConfigurationMod.CommonWindowsInstallerConfiguration,
+    options: CommonWindowsInstallerConfiguration,
     packager: appDashBuilderDashLibLib.outWinPackagerMod.WinPackager
-  ): appDashBuilderDashLibLib.outOptionsCommonWindowsInstallerConfigurationMod.FinalCommonWindowsInstallerOptions = js.native
+  ): FinalCommonWindowsInstallerOptions = js.native
 }
 

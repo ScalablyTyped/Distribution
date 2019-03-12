@@ -73,10 +73,7 @@ object graphql {
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     service: java.lang.String = null,
     signature: js.UndefOr[scala.Boolean] = js.undefined,
-    variables: js.Function1[
-      /* variables */ org.scalablytyped.runtime.StringDictionary[js.Any], 
-      org.scalablytyped.runtime.StringDictionary[_]
-    ] = null
+    variables: /* variables */ org.scalablytyped.runtime.StringDictionary[js.Any] => org.scalablytyped.runtime.StringDictionary[_] = null
   ): graphql = {
     val __obj = js.Dynamic.literal()
     if (analytics != null) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
@@ -85,7 +82,7 @@ object graphql {
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (service != null) __obj.updateDynamic("service")(service)
     if (!js.isUndefined(signature)) __obj.updateDynamic("signature")(signature)
-    if (variables != null) __obj.updateDynamic("variables")(variables)
+    if (variables != null) __obj.updateDynamic("variables")(js.Any.fromFunction1(variables))
     __obj.asInstanceOf[graphql]
   }
 }

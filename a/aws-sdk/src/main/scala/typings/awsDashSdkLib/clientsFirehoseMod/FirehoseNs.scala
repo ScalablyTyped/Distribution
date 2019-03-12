@@ -56,14 +56,14 @@ object FirehoseNs extends js.Object {
     /**
       * The name of the target table. The table must already exist in the database.
       */
-    var DataTableName: DataTableName
+    var DataTableName: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.DataTableName
   }
   
   trait CreateDeliveryStreamInput extends js.Object {
     /**
       * The name of the delivery stream. This name must be unique per AWS account in the same AWS Region. If the delivery streams are in different accounts or different Regions, you can have multiple delivery streams with the same name.
       */
-    var DeliveryStreamName: DeliveryStreamName
+    var DeliveryStreamName: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.DeliveryStreamName
     /**
       * The delivery stream type. This parameter can be one of the following values:    DirectPut: Provider applications access the delivery stream directly.    KinesisStreamAsSource: The delivery stream uses a Kinesis data stream as a source.  
       */
@@ -128,7 +128,7 @@ object FirehoseNs extends js.Object {
     /**
       * The name of the delivery stream.
       */
-    var DeliveryStreamName: DeliveryStreamName
+    var DeliveryStreamName: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.DeliveryStreamName
   }
   
   trait DeleteDeliveryStreamOutput extends js.Object
@@ -141,7 +141,7 @@ object FirehoseNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the delivery stream. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
       */
-    var DeliveryStreamARN: DeliveryStreamARN
+    var DeliveryStreamARN: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.DeliveryStreamARN
     /**
       * Indicates the server-side encryption (SSE) status for the delivery stream.
       */
@@ -149,15 +149,15 @@ object FirehoseNs extends js.Object {
     /**
       * The name of the delivery stream.
       */
-    var DeliveryStreamName: DeliveryStreamName
+    var DeliveryStreamName: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.DeliveryStreamName
     /**
       * The status of the delivery stream.
       */
-    var DeliveryStreamStatus: DeliveryStreamStatus
+    var DeliveryStreamStatus: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.DeliveryStreamStatus
     /**
       * The delivery stream type. This can be one of the following values:    DirectPut: Provider applications access the delivery stream directly.    KinesisStreamAsSource: The delivery stream uses a Kinesis data stream as a source.  
       */
-    var DeliveryStreamType: DeliveryStreamType
+    var DeliveryStreamType: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.DeliveryStreamType
     /**
       * The destinations.
       */
@@ -191,7 +191,7 @@ object FirehoseNs extends js.Object {
     /**
       * The name of the delivery stream.
       */
-    var DeliveryStreamName: DeliveryStreamName
+    var DeliveryStreamName: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.DeliveryStreamName
     /**
       * The ID of the destination to start returning the destination information. Kinesis Data Firehose supports one destination per delivery stream.
       */
@@ -206,7 +206,7 @@ object FirehoseNs extends js.Object {
     /**
       * Information about the delivery stream.
       */
-    var DeliveryStreamDescription: DeliveryStreamDescription
+    var DeliveryStreamDescription: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.DeliveryStreamDescription
   }
   
   trait Deserializer extends js.Object {
@@ -224,7 +224,7 @@ object FirehoseNs extends js.Object {
     /**
       * The ID of the destination.
       */
-    var DestinationId: DestinationId
+    var DestinationId: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.DestinationId
     /**
       * The destination in Amazon ES.
       */
@@ -290,7 +290,7 @@ object FirehoseNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the IAM role to be assumed by Kinesis Data Firehose for calling the Amazon ES Configuration API and for indexing documents. For more information, see Grant Kinesis Data Firehose Access to an Amazon S3 Destination and Amazon Resource Names (ARNs) and AWS Service Namespaces.
       */
-    var RoleARN: RoleARN
+    var RoleARN: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.RoleARN
     /**
       * Defines how documents should be delivered to Amazon S3. When it is set to FailedDocumentsOnly, Kinesis Data Firehose writes any documents that could not be indexed to the configured Amazon S3 destination, with elasticsearch-failed/ appended to the key prefix. When set to AllDocuments, Kinesis Data Firehose delivers all incoming records to Amazon S3, and also writes failed documents with elasticsearch-failed/ appended to the prefix. For more information, see Amazon S3 Backup for the Amazon ES Destination. Default value is FailedDocumentsOnly.
       */
@@ -417,7 +417,7 @@ object FirehoseNs extends js.Object {
     /**
       * The ARN of the S3 bucket. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
       */
-    var BucketARN: BucketARN
+    var BucketARN: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.BucketARN
     /**
       * The buffering option.
       */
@@ -453,7 +453,7 @@ object FirehoseNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the AWS credentials. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
       */
-    var RoleARN: RoleARN
+    var RoleARN: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.RoleARN
     /**
       * The configuration for backup in Amazon S3.
       */
@@ -468,11 +468,11 @@ object FirehoseNs extends js.Object {
     /**
       * The ARN of the S3 bucket. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
       */
-    var BucketARN: BucketARN
+    var BucketARN: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.BucketARN
     /**
       * The buffering option.
       */
-    var BufferingHints: BufferingHints
+    var BufferingHints: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.BufferingHints
     /**
       * The Amazon CloudWatch logging options for your delivery stream.
       */
@@ -480,7 +480,7 @@ object FirehoseNs extends js.Object {
     /**
       * The compression format. If no value is specified, the default is UNCOMPRESSED.
       */
-    var CompressionFormat: CompressionFormat
+    var CompressionFormat: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.CompressionFormat
     /**
       * The serializer, deserializer, and schema for converting data from the JSON format to the Parquet or ORC format before writing it to Amazon S3.
       */
@@ -488,7 +488,7 @@ object FirehoseNs extends js.Object {
     /**
       * The encryption configuration. If no value is specified, the default is no encryption.
       */
-    var EncryptionConfiguration: EncryptionConfiguration
+    var EncryptionConfiguration: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.EncryptionConfiguration
     /**
       * A prefix that Kinesis Data Firehose evaluates and adds to failed records before writing them to S3. This prefix appears immediately following the bucket name.
       */
@@ -504,7 +504,7 @@ object FirehoseNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the AWS credentials. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
       */
-    var RoleARN: RoleARN
+    var RoleARN: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.RoleARN
     /**
       * The configuration for backup in Amazon S3.
       */
@@ -584,18 +584,18 @@ object FirehoseNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the encryption key. Must belong to the same AWS Region as the destination Amazon S3 bucket. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
       */
-    var AWSKMSKeyARN: AWSKMSKeyARN
+    var AWSKMSKeyARN: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.AWSKMSKeyARN
   }
   
   trait KinesisStreamSourceConfiguration extends js.Object {
     /**
       * The ARN of the source Kinesis data stream. For more information, see Amazon Kinesis Data Streams ARN Format.
       */
-    var KinesisStreamARN: KinesisStreamARN
+    var KinesisStreamARN: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.KinesisStreamARN
     /**
       * The ARN of the role that provides access to the source Kinesis data stream. For more information, see AWS Identity and Access Management (IAM) ARN Format.
       */
-    var RoleARN: RoleARN
+    var RoleARN: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.RoleARN
   }
   
   trait KinesisStreamSourceDescription extends js.Object {
@@ -643,7 +643,7 @@ object FirehoseNs extends js.Object {
     /**
       * The name of the delivery stream whose tags you want to list.
       */
-    var DeliveryStreamName: DeliveryStreamName
+    var DeliveryStreamName: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.DeliveryStreamName
     /**
       * The key to use as the starting point for the list of tags. If you set this parameter, ListTagsForDeliveryStream gets all tags that occur after ExclusiveStartTagKey.
       */
@@ -794,7 +794,7 @@ object FirehoseNs extends js.Object {
     /**
       * The name of the delivery stream.
       */
-    var DeliveryStreamName: DeliveryStreamName
+    var DeliveryStreamName: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.DeliveryStreamName
     /**
       * One or more records.
       */
@@ -835,11 +835,11 @@ object FirehoseNs extends js.Object {
     /**
       * The name of the delivery stream.
       */
-    var DeliveryStreamName: DeliveryStreamName
+    var DeliveryStreamName: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.DeliveryStreamName
     /**
       * The record.
       */
-    var Record: Record
+    var Record: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.Record
   }
   
   trait PutRecordOutput extends js.Object {
@@ -857,7 +857,7 @@ object FirehoseNs extends js.Object {
     /**
       * The data blob, which is base64-encoded when the blob is serialized. The maximum size of the data blob, before base64-encoding, is 1,000 KiB.
       */
-    var Data: Data
+    var Data: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.Data
   }
   
   trait RedshiftDestinationConfiguration extends js.Object {
@@ -868,15 +868,15 @@ object FirehoseNs extends js.Object {
     /**
       * The database connection string.
       */
-    var ClusterJDBCURL: ClusterJDBCURL
+    var ClusterJDBCURL: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.ClusterJDBCURL
     /**
       * The COPY command.
       */
-    var CopyCommand: CopyCommand
+    var CopyCommand: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.CopyCommand
     /**
       * The user password.
       */
-    var Password: Password
+    var Password: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.Password
     /**
       * The data processing configuration.
       */
@@ -888,7 +888,7 @@ object FirehoseNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the AWS credentials. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
       */
-    var RoleARN: RoleARN
+    var RoleARN: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.RoleARN
     /**
       * The configuration for backup in Amazon S3.
       */
@@ -904,7 +904,7 @@ object FirehoseNs extends js.Object {
     /**
       * The name of the user.
       */
-    var Username: Username
+    var Username: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.Username
   }
   
   trait RedshiftDestinationDescription extends js.Object {
@@ -915,11 +915,11 @@ object FirehoseNs extends js.Object {
     /**
       * The database connection string.
       */
-    var ClusterJDBCURL: ClusterJDBCURL
+    var ClusterJDBCURL: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.ClusterJDBCURL
     /**
       * The COPY command.
       */
-    var CopyCommand: CopyCommand
+    var CopyCommand: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.CopyCommand
     /**
       * The data processing configuration.
       */
@@ -931,7 +931,7 @@ object FirehoseNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the AWS credentials. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
       */
-    var RoleARN: RoleARN
+    var RoleARN: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.RoleARN
     /**
       * The configuration for backup in Amazon S3.
       */
@@ -943,11 +943,11 @@ object FirehoseNs extends js.Object {
     /**
       * The Amazon S3 destination.
       */
-    var S3DestinationDescription: S3DestinationDescription
+    var S3DestinationDescription: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.S3DestinationDescription
     /**
       * The name of the user.
       */
-    var Username: Username
+    var Username: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.Username
   }
   
   trait RedshiftDestinationUpdate extends js.Object {
@@ -1008,7 +1008,7 @@ object FirehoseNs extends js.Object {
     /**
       * The ARN of the S3 bucket. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
       */
-    var BucketARN: BucketARN
+    var BucketARN: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.BucketARN
     /**
       * The buffering option. If no value is specified, BufferingHints object default values are used.
       */
@@ -1036,18 +1036,18 @@ object FirehoseNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the AWS credentials. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
       */
-    var RoleARN: RoleARN
+    var RoleARN: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.RoleARN
   }
   
   trait S3DestinationDescription extends js.Object {
     /**
       * The ARN of the S3 bucket. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
       */
-    var BucketARN: BucketARN
+    var BucketARN: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.BucketARN
     /**
       * The buffering option. If no value is specified, BufferingHints object default values are used.
       */
-    var BufferingHints: BufferingHints
+    var BufferingHints: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.BufferingHints
     /**
       * The Amazon CloudWatch logging options for your delivery stream.
       */
@@ -1055,11 +1055,11 @@ object FirehoseNs extends js.Object {
     /**
       * The compression format. If no value is specified, the default is UNCOMPRESSED.
       */
-    var CompressionFormat: CompressionFormat
+    var CompressionFormat: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.CompressionFormat
     /**
       * The encryption configuration. If no value is specified, the default is no encryption.
       */
-    var EncryptionConfiguration: EncryptionConfiguration
+    var EncryptionConfiguration: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.EncryptionConfiguration
     /**
       * A prefix that Kinesis Data Firehose evaluates and adds to failed records before writing them to S3. This prefix appears immediately following the bucket name.
       */
@@ -1071,7 +1071,7 @@ object FirehoseNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the AWS credentials. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
       */
-    var RoleARN: RoleARN
+    var RoleARN: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.RoleARN
   }
   
   trait S3DestinationUpdate extends js.Object {
@@ -1166,15 +1166,15 @@ object FirehoseNs extends js.Object {
     /**
       * The HTTP Event Collector (HEC) endpoint to which Kinesis Data Firehose sends your data.
       */
-    var HECEndpoint: HECEndpoint
+    var HECEndpoint: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.HECEndpoint
     /**
       * This type can be either "Raw" or "Event."
       */
-    var HECEndpointType: HECEndpointType
+    var HECEndpointType: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.HECEndpointType
     /**
       * This is a GUID that you obtain from your Splunk cluster when you create a new HEC endpoint.
       */
-    var HECToken: HECToken
+    var HECToken: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.HECToken
     /**
       * The data processing configuration.
       */
@@ -1282,7 +1282,7 @@ object FirehoseNs extends js.Object {
     /**
       * The name of the delivery stream for which you want to enable server-side encryption (SSE).
       */
-    var DeliveryStreamName: DeliveryStreamName
+    var DeliveryStreamName: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.DeliveryStreamName
   }
   
   trait StartDeliveryStreamEncryptionOutput extends js.Object
@@ -1291,7 +1291,7 @@ object FirehoseNs extends js.Object {
     /**
       * The name of the delivery stream for which you want to disable server-side encryption (SSE).
       */
-    var DeliveryStreamName: DeliveryStreamName
+    var DeliveryStreamName: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.DeliveryStreamName
   }
   
   trait StopDeliveryStreamEncryptionOutput extends js.Object
@@ -1311,7 +1311,7 @@ object FirehoseNs extends js.Object {
     /**
       * The name of the delivery stream to which you want to add the tags.
       */
-    var DeliveryStreamName: DeliveryStreamName
+    var DeliveryStreamName: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.DeliveryStreamName
     /**
       * A set of key-value pairs to use to create the tags.
       */
@@ -1599,7 +1599,7 @@ object FirehoseNs extends js.Object {
     /**
       * The name of the delivery stream.
       */
-    var DeliveryStreamName: DeliveryStreamName
+    var DeliveryStreamName: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.DeliveryStreamName
     /**
       * A list of tag keys. Each corresponding tag is removed from the delivery stream.
       */
@@ -1616,11 +1616,11 @@ object FirehoseNs extends js.Object {
     /**
       * The name of the delivery stream.
       */
-    var DeliveryStreamName: DeliveryStreamName
+    var DeliveryStreamName: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.DeliveryStreamName
     /**
       * The ID of the destination.
       */
-    var DestinationId: DestinationId
+    var DestinationId: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.DestinationId
     /**
       * Describes an update for a destination in Amazon ES.
       */

@@ -151,13 +151,13 @@ object ChartLegendOptions {
     fontWeight: java.lang.String = null,
     horizontalAlign: java.lang.String = null,
     itemMaxWidth: scala.Int | scala.Double = null,
-    itemTextFormatter: js.Function1[/* e */ js.UndefOr[canvasjsLib.Anon_Chart], java.lang.String] = null,
+    itemTextFormatter: /* e */ js.UndefOr[canvasjsLib.Anon_Chart] => java.lang.String = null,
     itemWidth: scala.Int | scala.Double = null,
     itemWrap: js.UndefOr[scala.Boolean] = js.undefined,
-    itemclick: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
-    itemmousemove: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
-    itemmouseout: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
-    itemmouseover: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
+    itemclick: /* event */ ChartEvent => scala.Unit = null,
+    itemmousemove: /* event */ ChartEvent => scala.Unit = null,
+    itemmouseout: /* event */ ChartEvent => scala.Unit = null,
+    itemmouseover: /* event */ ChartEvent => scala.Unit = null,
     markerMargin: scala.Int | scala.Double = null,
     maxHeight: scala.Int | scala.Double = null,
     maxWidth: scala.Int | scala.Double = null,
@@ -174,13 +174,13 @@ object ChartLegendOptions {
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
     if (horizontalAlign != null) __obj.updateDynamic("horizontalAlign")(horizontalAlign)
     if (itemMaxWidth != null) __obj.updateDynamic("itemMaxWidth")(itemMaxWidth.asInstanceOf[js.Any])
-    if (itemTextFormatter != null) __obj.updateDynamic("itemTextFormatter")(itemTextFormatter)
+    if (itemTextFormatter != null) __obj.updateDynamic("itemTextFormatter")(js.Any.fromFunction1(itemTextFormatter))
     if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(itemWrap)) __obj.updateDynamic("itemWrap")(itemWrap)
-    if (itemclick != null) __obj.updateDynamic("itemclick")(itemclick)
-    if (itemmousemove != null) __obj.updateDynamic("itemmousemove")(itemmousemove)
-    if (itemmouseout != null) __obj.updateDynamic("itemmouseout")(itemmouseout)
-    if (itemmouseover != null) __obj.updateDynamic("itemmouseover")(itemmouseover)
+    if (itemclick != null) __obj.updateDynamic("itemclick")(js.Any.fromFunction1(itemclick))
+    if (itemmousemove != null) __obj.updateDynamic("itemmousemove")(js.Any.fromFunction1(itemmousemove))
+    if (itemmouseout != null) __obj.updateDynamic("itemmouseout")(js.Any.fromFunction1(itemmouseout))
+    if (itemmouseover != null) __obj.updateDynamic("itemmouseover")(js.Any.fromFunction1(itemmouseover))
     if (markerMargin != null) __obj.updateDynamic("markerMargin")(markerMargin.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])

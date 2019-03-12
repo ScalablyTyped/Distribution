@@ -22,13 +22,10 @@ object ReactMotionLoopProps {
   def apply(
     styleFrom: reactDashMotionLib.reactDashMotionMod.Style,
     styleTo: reactDashMotionLib.reactDashMotionMod.Style,
-    children: js.Function1[
-      /* interpolatedStyle */ reactDashMotionLib.reactDashMotionMod.PlainStyle, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
-    ] = null
+    children: /* interpolatedStyle */ reactDashMotionLib.reactDashMotionMod.PlainStyle => reactLib.reactMod.ReactNs.ReactElement[_] = null
   ): ReactMotionLoopProps = {
     val __obj = js.Dynamic.literal(styleFrom = styleFrom, styleTo = styleTo)
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     __obj.asInstanceOf[ReactMotionLoopProps]
   }
 }

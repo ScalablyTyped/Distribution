@@ -30,27 +30,27 @@ trait Renderer extends js.Object {
 object Renderer {
   @scala.inline
   def apply(
-    blockquote: js.Function1[java.lang.String, java.lang.String],
-    br: js.Function0[java.lang.String],
-    code: js.Function3[java.lang.String, java.lang.String, scala.Boolean, java.lang.String],
-    codespan: js.Function1[java.lang.String, java.lang.String],
-    del: js.Function1[java.lang.String, java.lang.String],
-    em: js.Function1[java.lang.String, java.lang.String],
-    heading: js.Function4[java.lang.String, scala.Double, java.lang.String, Slugger, java.lang.String],
-    hr: js.Function0[java.lang.String],
-    html: js.Function1[java.lang.String, java.lang.String],
-    image: js.Function3[java.lang.String, java.lang.String, java.lang.String, java.lang.String],
-    link: js.Function3[java.lang.String, java.lang.String, java.lang.String, java.lang.String],
-    list: js.Function3[java.lang.String, scala.Boolean, scala.Double, java.lang.String],
-    listitem: js.Function1[java.lang.String, java.lang.String],
-    paragraph: js.Function1[java.lang.String, java.lang.String],
-    strong: js.Function1[java.lang.String, java.lang.String],
-    table: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    tablecell: js.Function2[java.lang.String, markedLib.Anon_Align, java.lang.String],
-    tablerow: js.Function1[java.lang.String, java.lang.String],
-    text: js.Function1[java.lang.String, java.lang.String]
+    blockquote: java.lang.String => java.lang.String,
+    br: () => java.lang.String,
+    code: (java.lang.String, java.lang.String, scala.Boolean) => java.lang.String,
+    codespan: java.lang.String => java.lang.String,
+    del: java.lang.String => java.lang.String,
+    em: java.lang.String => java.lang.String,
+    heading: (java.lang.String, scala.Double, java.lang.String, Slugger) => java.lang.String,
+    hr: () => java.lang.String,
+    html: java.lang.String => java.lang.String,
+    image: (java.lang.String, java.lang.String, java.lang.String) => java.lang.String,
+    link: (java.lang.String, java.lang.String, java.lang.String) => java.lang.String,
+    list: (java.lang.String, scala.Boolean, scala.Double) => java.lang.String,
+    listitem: java.lang.String => java.lang.String,
+    paragraph: java.lang.String => java.lang.String,
+    strong: java.lang.String => java.lang.String,
+    table: (java.lang.String, java.lang.String) => java.lang.String,
+    tablecell: (java.lang.String, markedLib.Anon_Align) => java.lang.String,
+    tablerow: java.lang.String => java.lang.String,
+    text: java.lang.String => java.lang.String
   ): Renderer = {
-    val __obj = js.Dynamic.literal(blockquote = blockquote, br = br, code = code, codespan = codespan, del = del, em = em, heading = heading, hr = hr, html = html, image = image, link = link, list = list, listitem = listitem, paragraph = paragraph, strong = strong, table = table, tablecell = tablecell, tablerow = tablerow, text = text)
+    val __obj = js.Dynamic.literal(blockquote = js.Any.fromFunction1(blockquote), br = js.Any.fromFunction0(br), code = js.Any.fromFunction3(code), codespan = js.Any.fromFunction1(codespan), del = js.Any.fromFunction1(del), em = js.Any.fromFunction1(em), heading = js.Any.fromFunction4(heading), hr = js.Any.fromFunction0(hr), html = js.Any.fromFunction1(html), image = js.Any.fromFunction3(image), link = js.Any.fromFunction3(link), list = js.Any.fromFunction3(list), listitem = js.Any.fromFunction1(listitem), paragraph = js.Any.fromFunction1(paragraph), strong = js.Any.fromFunction1(strong), table = js.Any.fromFunction2(table), tablecell = js.Any.fromFunction2(tablecell), tablerow = js.Any.fromFunction1(tablerow), text = js.Any.fromFunction1(text))
   
     __obj.asInstanceOf[Renderer]
   }

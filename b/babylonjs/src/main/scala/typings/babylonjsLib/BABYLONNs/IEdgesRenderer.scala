@@ -27,12 +27,12 @@ trait IEdgesRenderer extends IDisposable {
 object IEdgesRenderer {
   @scala.inline
   def apply(
-    dispose: js.Function0[scala.Unit],
+    dispose: () => scala.Unit,
     isEnabled: scala.Boolean,
-    isReady: js.Function0[scala.Boolean],
-    render: js.Function0[scala.Unit]
+    isReady: () => scala.Boolean,
+    render: () => scala.Unit
   ): IEdgesRenderer = {
-    val __obj = js.Dynamic.literal(dispose = dispose, isEnabled = isEnabled, isReady = isReady, render = render)
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), isEnabled = isEnabled, isReady = js.Any.fromFunction0(isReady), render = js.Any.fromFunction0(render))
   
     __obj.asInstanceOf[IEdgesRenderer]
   }

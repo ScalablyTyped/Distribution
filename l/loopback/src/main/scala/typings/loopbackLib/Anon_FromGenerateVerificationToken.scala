@@ -20,7 +20,7 @@ object Anon_FromGenerateVerificationToken {
   @scala.inline
   def apply(
     from: java.lang.String,
-    generateVerificationToken: js.Function0[scala.Unit],
+    generateVerificationToken: () => scala.Unit,
     redirect: java.lang.String,
     subject: java.lang.String,
     template: java.lang.String,
@@ -28,7 +28,7 @@ object Anon_FromGenerateVerificationToken {
     to: java.lang.String,
     `type`: java.lang.String
   ): Anon_FromGenerateVerificationToken = {
-    val __obj = js.Dynamic.literal(from = from, generateVerificationToken = generateVerificationToken, redirect = redirect, subject = subject, template = template, text = text, to = to)
+    val __obj = js.Dynamic.literal(from = from, generateVerificationToken = js.Any.fromFunction0(generateVerificationToken), redirect = redirect, subject = subject, template = template, text = text, to = to)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_FromGenerateVerificationToken]
   }

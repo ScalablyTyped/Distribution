@@ -95,8 +95,8 @@ object ListItemProps {
     leftAvatar: stdLib.Partial[AvatarProps] | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
     leftElement: reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
     leftIcon: stdLib.Partial[IconProps] | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
-    onLongPress: js.Function0[scala.Unit] = null,
-    onPress: js.Function0[scala.Unit] = null,
+    onLongPress: () => scala.Unit = null,
+    onPress: () => scala.Unit = null,
     pad: scala.Int | scala.Double = null,
     rightAvatar: stdLib.Partial[AvatarProps] | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
     rightContentContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
@@ -135,8 +135,8 @@ object ListItemProps {
     if (leftAvatar != null) __obj.updateDynamic("leftAvatar")(leftAvatar.asInstanceOf[js.Any])
     if (leftElement != null) __obj.updateDynamic("leftElement")(leftElement)
     if (leftIcon != null) __obj.updateDynamic("leftIcon")(leftIcon.asInstanceOf[js.Any])
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction0(onLongPress))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
     if (rightAvatar != null) __obj.updateDynamic("rightAvatar")(rightAvatar.asInstanceOf[js.Any])
     if (rightContentContainerStyle != null) __obj.updateDynamic("rightContentContainerStyle")(rightContentContainerStyle.asInstanceOf[js.Any])

@@ -28,16 +28,16 @@ object Dim3DDiagram {
     RotationHorizontal: scala.Double,
     RotationVertical: scala.Double,
     Wall: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
-    acquire: js.Function0[scala.Unit],
-    getFloor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    getWall: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    set3DSettingsToDefault: js.Function0[scala.Unit],
-    setDefaultIllumination: js.Function0[scala.Unit],
-    setDefaultRotation: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getFloor: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    getWall: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    set3DSettingsToDefault: () => scala.Unit,
+    setDefaultIllumination: () => scala.Unit,
+    setDefaultRotation: () => scala.Unit
   ): Dim3DDiagram = {
-    val __obj = js.Dynamic.literal(Dim3D = Dim3D, Floor = Floor, Perspective = Perspective, RotationHorizontal = RotationHorizontal, RotationVertical = RotationVertical, Wall = Wall, acquire = acquire, getFloor = getFloor, getWall = getWall, queryInterface = queryInterface, release = release, set3DSettingsToDefault = set3DSettingsToDefault, setDefaultIllumination = setDefaultIllumination, setDefaultRotation = setDefaultRotation)
+    val __obj = js.Dynamic.literal(Dim3D = Dim3D, Floor = Floor, Perspective = Perspective, RotationHorizontal = RotationHorizontal, RotationVertical = RotationVertical, Wall = Wall, acquire = js.Any.fromFunction0(acquire), getFloor = js.Any.fromFunction0(getFloor), getWall = js.Any.fromFunction0(getWall), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), set3DSettingsToDefault = js.Any.fromFunction0(set3DSettingsToDefault), setDefaultIllumination = js.Any.fromFunction0(setDefaultIllumination), setDefaultRotation = js.Any.fromFunction0(setDefaultRotation))
   
     __obj.asInstanceOf[Dim3DDiagram]
   }

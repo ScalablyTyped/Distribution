@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Arialabel extends js.Object {
-  var `aria-label`: reactLib.reactMod.ReactNs.Requireable[java.lang.String] = js.native
+  @JSName("aria-label")
+  var `aria-label_Original`: reactLib.reactMod.ReactNs.Requireable[java.lang.String] = js.native
   @JSName("cellCount")
   var cellCount_Original: reactLib.reactMod.ReactNs.Validator[scala.Double] = js.native
   @JSName("cellGroupRenderer")
@@ -16,7 +17,15 @@ trait Anon_Arialabel extends js.Object {
   var cellRenderer_Original: reactLib.reactMod.ReactNs.Validator[reactDashVirtualizedLib.distEsCollectionMod.CollectionCellRenderer] = js.native
   @JSName("cellSizeAndPositionGetter")
   var cellSizeAndPositionGetter_Original: reactLib.reactMod.ReactNs.Validator[reactDashVirtualizedLib.distEsCollectionMod.CollectionCellSizeAndPositionGetter] = js.native
-  var sectionSize: reactLib.reactMod.ReactNs.Requireable[scala.Double] = js.native
+  @JSName("sectionSize")
+  var sectionSize_Original: reactLib.reactMod.ReactNs.Requireable[scala.Double] = js.native
+  def `aria-label`(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
   def cellCount(
     props: js.Object,
     propName: java.lang.String,
@@ -39,6 +48,13 @@ trait Anon_Arialabel extends js.Object {
     propFullName: java.lang.String
   ): stdLib.Error | scala.Null = js.native
   def cellSizeAndPositionGetter(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def sectionSize(
     props: js.Object,
     propName: java.lang.String,
     componentName: java.lang.String,

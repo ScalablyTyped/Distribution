@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ImportExportSpecification protected () extends js.Object {
   var `Access.ImportExportSpecification_typekey`: ImportExportSpecification = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   var Description: java.lang.String = js.native
   var Name: java.lang.String = js.native
   val Parent: js.Any = js.native

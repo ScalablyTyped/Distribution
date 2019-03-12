@@ -17,20 +17,11 @@ trait TaskResource extends js.Object {
 object TaskResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserTableId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserTableId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Task]
-    ],
-    list: js.Function1[
-      gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyMaxResultsOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TaskList]
-    ]
+    delete: gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserTableId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserTableId => gapiDotClientLib.gapiNs.clientNs.Request[Task],
+    list: gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyMaxResultsOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[TaskList]
   ): TaskResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[TaskResource]
   }

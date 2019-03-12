@@ -17,8 +17,8 @@ trait PDFRenderTask extends PDFLoadingTask[PDFPageProxy] {
 
 object PDFRenderTask {
   @scala.inline
-  def apply(cancel: js.Function0[scala.Unit], promise: PDFPromise[PDFPageProxy]): PDFRenderTask = {
-    val __obj = js.Dynamic.literal(cancel = cancel, promise = promise)
+  def apply(cancel: () => scala.Unit, promise: PDFPromise[PDFPageProxy]): PDFRenderTask = {
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), promise = promise)
   
     __obj.asInstanceOf[PDFRenderTask]
   }

@@ -241,7 +241,7 @@ trait Nightmare extends js.Object {
     cb: js.Function1[/* targetUrl */ java.lang.String, scala.Unit]
   ): Nightmare = js.native
   def path(): java.lang.String = js.native
-  def pdf(cb: js.Function2[/* err */ nodeLib.Error, /* data */ nodeLib.Buffer, scala.Unit]): Nightmare = js.native
+  def pdf(cb: js.Function2[/* err */ stdLib.Error, /* data */ nodeLib.Buffer, scala.Unit]): Nightmare = js.native
   def pdf(path: java.lang.String): Nightmare = js.native
   def pdf(path: java.lang.String, options: js.Object): Nightmare = js.native
   def refresh(): Nightmare = js.native

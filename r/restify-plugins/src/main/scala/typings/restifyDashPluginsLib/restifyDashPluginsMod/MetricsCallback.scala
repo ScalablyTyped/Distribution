@@ -9,7 +9,7 @@ trait MetricsCallback extends js.Object {
   /**
     *  An error if the request had an error
     */
-  var err: nodeLib.Error
+  var err: stdLib.Error
   var metrics: MetricsCallbackOptions
   var req: restifyLib.restifyMod.Request
   var res: restifyLib.restifyMod.Response
@@ -22,7 +22,7 @@ trait MetricsCallback extends js.Object {
 object MetricsCallback {
   @scala.inline
   def apply(
-    err: nodeLib.Error,
+    err: stdLib.Error,
     metrics: MetricsCallbackOptions,
     req: restifyLib.restifyMod.Request,
     res: restifyLib.restifyMod.Response,

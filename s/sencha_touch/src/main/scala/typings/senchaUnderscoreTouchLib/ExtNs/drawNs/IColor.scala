@@ -69,65 +69,57 @@ object IColor {
   def apply(
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    createDarker: js.Function1[/* factor */ js.UndefOr[scala.Double], IColor] = null,
-    createLighter: js.Function1[/* factor */ js.UndefOr[scala.Double], IColor] = null,
-    destroy: js.Function0[scala.Unit] = null,
+    createDarker: /* factor */ js.UndefOr[scala.Double] => IColor = null,
+    createLighter: /* factor */ js.UndefOr[scala.Double] => IColor = null,
+    destroy: () => scala.Unit = null,
     extend: java.lang.String = null,
-    getGrayscale: js.Function0[scala.Double] = null,
-    getHSL: js.Function1[
-      /* target */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
-      senchaUnderscoreTouchLib.ExtNs.Array
-    ] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getGrayscale: () => scala.Double = null,
+    getHSL: /* target */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     lightnessFactor: scala.Int | scala.Double = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setFromString: js.Function1[/* str */ js.UndefOr[java.lang.String], _] = null,
-    setHSL: js.Function3[
-      /* h */ js.UndefOr[scala.Double], 
-      /* s */ js.UndefOr[scala.Double], 
-      /* l */ js.UndefOr[scala.Double], 
-      _
-    ] = null,
+    setFromString: /* str */ js.UndefOr[java.lang.String] => _ = null,
+    setHSL: (/* h */ js.UndefOr[scala.Double], /* s */ js.UndefOr[scala.Double], /* l */ js.UndefOr[scala.Double]) => _ = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
-    toHex: js.Function1[/* color */ js.UndefOr[js.Any], java.lang.String] = null,
-    toString: js.Function0[java.lang.String] = null,
+    toHex: /* color */ js.UndefOr[js.Any] => java.lang.String = null,
+    toString: () => java.lang.String = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null
   ): IColor = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (createDarker != null) __obj.updateDynamic("createDarker")(createDarker)
-    if (createLighter != null) __obj.updateDynamic("createLighter")(createLighter)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (createDarker != null) __obj.updateDynamic("createDarker")(js.Any.fromFunction1(createDarker))
+    if (createLighter != null) __obj.updateDynamic("createLighter")(js.Any.fromFunction1(createLighter))
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getGrayscale != null) __obj.updateDynamic("getGrayscale")(getGrayscale)
-    if (getHSL != null) __obj.updateDynamic("getHSL")(getHSL)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getGrayscale != null) __obj.updateDynamic("getGrayscale")(js.Any.fromFunction0(getGrayscale))
+    if (getHSL != null) __obj.updateDynamic("getHSL")(js.Any.fromFunction1(getHSL))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (lightnessFactor != null) __obj.updateDynamic("lightnessFactor")(lightnessFactor.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setFromString != null) __obj.updateDynamic("setFromString")(setFromString)
-    if (setHSL != null) __obj.updateDynamic("setHSL")(setHSL)
+    if (setFromString != null) __obj.updateDynamic("setFromString")(js.Any.fromFunction1(setFromString))
+    if (setHSL != null) __obj.updateDynamic("setHSL")(js.Any.fromFunction3(setHSL))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
-    if (toHex != null) __obj.updateDynamic("toHex")(toHex)
-    if (toString != null) __obj.updateDynamic("toString")(toString)
+    if (toHex != null) __obj.updateDynamic("toHex")(js.Any.fromFunction1(toHex))
+    if (toString != null) __obj.updateDynamic("toString")(js.Any.fromFunction0(toString))
     if (uses != null) __obj.updateDynamic("uses")(uses)
     __obj.asInstanceOf[IColor]
   }

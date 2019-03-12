@@ -11,9 +11,9 @@ trait RangeSelectorButtonEvent extends js.Object {
 
 object RangeSelectorButtonEvent {
   @scala.inline
-  def apply(click: js.Function1[/* event */ stdLib.Event, scala.Unit] = null): RangeSelectorButtonEvent = {
+  def apply(click: /* event */ stdLib.Event => scala.Unit = null): RangeSelectorButtonEvent = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
     __obj.asInstanceOf[RangeSelectorButtonEvent]
   }
 }

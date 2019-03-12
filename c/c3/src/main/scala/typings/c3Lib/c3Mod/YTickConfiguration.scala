@@ -30,13 +30,13 @@ object YTickConfiguration {
   @scala.inline
   def apply(
     count: scala.Int | scala.Double = null,
-    format: js.Function1[/* x */ scala.Double, java.lang.String] = null,
+    format: /* x */ scala.Double => java.lang.String = null,
     outer: js.UndefOr[scala.Boolean] = js.undefined,
     values: js.Array[scala.Double] = null
   ): YTickConfiguration = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction1(format))
     if (!js.isUndefined(outer)) __obj.updateDynamic("outer")(outer)
     if (values != null) __obj.updateDynamic("values")(values)
     __obj.asInstanceOf[YTickConfiguration]

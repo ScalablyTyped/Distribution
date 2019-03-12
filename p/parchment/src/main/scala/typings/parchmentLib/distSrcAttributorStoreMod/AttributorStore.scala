@@ -18,15 +18,15 @@ trait AttributorStore extends js.Object {
 object AttributorStore {
   @scala.inline
   def apply(
-    attribute: js.Function2[parchmentLib.distSrcAttributorAttributorMod.default, js.Any, scala.Unit],
+    attribute: (parchmentLib.distSrcAttributorAttributorMod.default, js.Any) => scala.Unit,
     attributes: js.Any,
-    build: js.Function0[scala.Unit],
-    copy: js.Function1[parchmentLib.distSrcBlotAbstractBlotMod.Formattable, scala.Unit],
+    build: () => scala.Unit,
+    copy: parchmentLib.distSrcBlotAbstractBlotMod.Formattable => scala.Unit,
     domNode: js.Any,
-    move: js.Function1[parchmentLib.distSrcBlotAbstractBlotMod.Formattable, scala.Unit],
-    values: js.Function0[org.scalablytyped.runtime.StringDictionary[js.Any]]
+    move: parchmentLib.distSrcBlotAbstractBlotMod.Formattable => scala.Unit,
+    values: () => org.scalablytyped.runtime.StringDictionary[js.Any]
   ): AttributorStore = {
-    val __obj = js.Dynamic.literal(attribute = attribute, attributes = attributes, build = build, copy = copy, domNode = domNode, move = move, values = values)
+    val __obj = js.Dynamic.literal(attribute = js.Any.fromFunction2(attribute), attributes = attributes, build = js.Any.fromFunction0(build), copy = js.Any.fromFunction1(copy), domNode = domNode, move = js.Any.fromFunction1(move), values = js.Any.fromFunction0(values))
   
     __obj.asInstanceOf[AttributorStore]
   }

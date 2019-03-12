@@ -198,11 +198,11 @@ object Anon_Any {
     ],
     VideotexString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.VideotexString],
     VisibleString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.VisibleString],
-    compareSchema: js.Function3[js.Any, js.Any, js.Any, Anon_Result],
-    fromBER: js.Function1[stdLib.ArrayBuffer, Anon_Offset],
-    verifySchema: js.Function2[stdLib.ArrayBuffer, js.Any, Anon_Result]
+    compareSchema: (js.Any, js.Any, js.Any) => Anon_Result,
+    fromBER: stdLib.ArrayBuffer => Anon_Offset,
+    verifySchema: (stdLib.ArrayBuffer, js.Any) => Anon_Result
   ): Anon_Any = {
-    val __obj = js.Dynamic.literal(Any = Any, BaseBlock = BaseBlock, BitString = BitString, BmpString = BmpString, Boolean = Boolean, CharacterString = CharacterString, Choice = Choice, Constructed = Constructed, DATE = DATE, DateTime = DateTime, Duration = Duration, EndOfContent = EndOfContent, Enumerated = Enumerated, GeneralString = GeneralString, GeneralizedTime = GeneralizedTime, GraphicString = GraphicString, IA5String = IA5String, INs = INs, Integer = Integer, Null = Null, NumericString = NumericString, ObjectIdentifier = ObjectIdentifier, OctetString = OctetString, Primitive = Primitive, PrintableString = PrintableString, RawData = RawData, Repeated = Repeated, Sequence = Sequence, Set = Set, TIME = TIME, TeletexString = TeletexString, TimeOfDay = TimeOfDay, UTCTime = UTCTime, UniversalString = UniversalString, Utf8String = Utf8String, VideotexString = VideotexString, VisibleString = VisibleString, compareSchema = compareSchema, fromBER = fromBER, verifySchema = verifySchema)
+    val __obj = js.Dynamic.literal(Any = Any, BaseBlock = BaseBlock, BitString = BitString, BmpString = BmpString, Boolean = Boolean, CharacterString = CharacterString, Choice = Choice, Constructed = Constructed, DATE = DATE, DateTime = DateTime, Duration = Duration, EndOfContent = EndOfContent, Enumerated = Enumerated, GeneralString = GeneralString, GeneralizedTime = GeneralizedTime, GraphicString = GraphicString, IA5String = IA5String, INs = INs, Integer = Integer, Null = Null, NumericString = NumericString, ObjectIdentifier = ObjectIdentifier, OctetString = OctetString, Primitive = Primitive, PrintableString = PrintableString, RawData = RawData, Repeated = Repeated, Sequence = Sequence, Set = Set, TIME = TIME, TeletexString = TeletexString, TimeOfDay = TimeOfDay, UTCTime = UTCTime, UniversalString = UniversalString, Utf8String = Utf8String, VideotexString = VideotexString, VisibleString = VisibleString, compareSchema = js.Any.fromFunction3(compareSchema), fromBER = js.Any.fromFunction1(fromBER), verifySchema = js.Any.fromFunction2(verifySchema))
   
     __obj.asInstanceOf[Anon_Any]
   }

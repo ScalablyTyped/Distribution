@@ -15,13 +15,9 @@ trait TypeAdapterFactory extends js.Object {
 object TypeAdapterFactory {
   @scala.inline
   def apply(
-    create: js.Function2[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Tyson */ js.Any, 
-      atHyperlorisTysonLib.distTypesReflectTypeTokenMod.TypeToken[js.Any], 
-      js.UndefOr[atHyperlorisTysonLib.distTypesTypeAdapterMod.TypeAdapter[js.Any]]
-    ]
+    create: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Tyson */ js.Any, atHyperlorisTysonLib.distTypesReflectTypeTokenMod.TypeToken[js.Any]) => js.UndefOr[atHyperlorisTysonLib.distTypesTypeAdapterMod.TypeAdapter[js.Any]]
   ): TypeAdapterFactory = {
-    val __obj = js.Dynamic.literal(create = create)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create))
   
     __obj.asInstanceOf[TypeAdapterFactory]
   }

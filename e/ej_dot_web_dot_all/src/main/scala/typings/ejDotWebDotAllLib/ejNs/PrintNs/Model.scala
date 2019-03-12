@@ -59,7 +59,7 @@ object Model {
   @scala.inline
   def apply(
     append: java.lang.String = null,
-    beforeStart: js.Function1[/* e */ BeforeStartEventArgs, scala.Unit] = null,
+    beforeStart: /* e */ BeforeStartEventArgs => scala.Unit = null,
     docType: java.lang.String = null,
     excludeSelector: java.lang.String = null,
     externalStyles: java.lang.String = null,
@@ -73,7 +73,7 @@ object Model {
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (append != null) __obj.updateDynamic("append")(append)
-    if (beforeStart != null) __obj.updateDynamic("beforeStart")(beforeStart)
+    if (beforeStart != null) __obj.updateDynamic("beforeStart")(js.Any.fromFunction1(beforeStart))
     if (docType != null) __obj.updateDynamic("docType")(docType)
     if (excludeSelector != null) __obj.updateDynamic("excludeSelector")(excludeSelector)
     if (externalStyles != null) __obj.updateDynamic("externalStyles")(externalStyles)

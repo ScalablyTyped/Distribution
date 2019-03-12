@@ -15,12 +15,12 @@ trait AutoCompleteCommand
 object AutoCompleteCommand {
   @scala.inline
   def apply(
-    action: js.Function0[scala.Unit],
+    action: () => scala.Unit,
     id: java.lang.String,
     label: java.lang.String,
     icon: java.lang.String = null
   ): AutoCompleteCommand = {
-    val __obj = js.Dynamic.literal(action = action, id = id, label = label)
+    val __obj = js.Dynamic.literal(action = js.Any.fromFunction0(action), id = id, label = label)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     __obj.asInstanceOf[AutoCompleteCommand]
   }

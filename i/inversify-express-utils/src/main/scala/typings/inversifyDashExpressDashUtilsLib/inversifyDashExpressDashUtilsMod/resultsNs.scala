@@ -36,7 +36,7 @@ object resultsNs extends js.Object {
   @js.native
   class ExceptionResult protected ()
     extends inversifyDashExpressDashUtilsLib.dtsResultsMod.ExceptionResult {
-    def this(error: nodeLib.Error, apiController: inversifyDashExpressDashUtilsLib.dtsBaseUnderscoreHttpUnderscoreControllerMod.BaseHttpController) = this()
+    def this(error: stdLib.Error, apiController: inversifyDashExpressDashUtilsLib.dtsBaseUnderscoreHttpUnderscoreControllerMod.BaseHttpController) = this()
   }
   
   @js.native

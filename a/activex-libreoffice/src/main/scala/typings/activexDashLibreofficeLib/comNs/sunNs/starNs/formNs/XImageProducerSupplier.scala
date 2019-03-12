@@ -27,12 +27,12 @@ object XImageProducerSupplier {
   @scala.inline
   def apply(
     ImageProducer: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XImageProducer,
-    acquire: js.Function0[scala.Unit],
-    getImageProducer: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XImageProducer],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getImageProducer: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XImageProducer,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XImageProducerSupplier = {
-    val __obj = js.Dynamic.literal(ImageProducer = ImageProducer, acquire = acquire, getImageProducer = getImageProducer, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ImageProducer = ImageProducer, acquire = js.Any.fromFunction0(acquire), getImageProducer = js.Any.fromFunction0(getImageProducer), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XImageProducerSupplier]
   }

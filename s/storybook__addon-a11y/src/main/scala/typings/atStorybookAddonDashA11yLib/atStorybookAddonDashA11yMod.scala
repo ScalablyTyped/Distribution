@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object atStorybookAddonDashA11yMod extends js.Object {
   val checkA11y: atStorybookReactLib.atStorybookReactMod.StoryDecorator = js.native
+  val withA11y: atStorybookReactLib.atStorybookReactMod.StoryDecorator = js.native
 }
 

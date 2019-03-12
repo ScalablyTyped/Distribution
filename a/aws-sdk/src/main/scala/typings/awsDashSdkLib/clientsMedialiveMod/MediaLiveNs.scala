@@ -1418,7 +1418,7 @@ object MediaLiveNs extends js.Object {
     /**
       * Contains settings used to acquire and adjust timecode information from inputs.
       */
-    var TimecodeConfig: TimecodeConfig
+    var TimecodeConfig: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.TimecodeConfig
     var VideoDescriptions: __listOfVideoDescription
   }
   
@@ -1448,7 +1448,7 @@ object MediaLiveNs extends js.Object {
     /**
       * Identifies whether this action starts relative to the start or relative to the end of the reference action.
       */
-    var FollowPoint: FollowPoint
+    var FollowPoint: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.FollowPoint
     /**
       * The action name of another action that this one refers to.
       */
@@ -1928,7 +1928,7 @@ object MediaLiveNs extends js.Object {
     /**
       * Settings regarding the underlying stream. These settings are different for audio-only outputs.
       */
-    var HlsSettings: HlsSettings
+    var HlsSettings: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.HlsSettings
     /**
       * String concatenated to the end of the destination filename. Accepts \"Format Identifiers\":#formatIdentifierParameters.
       */
@@ -2875,7 +2875,7 @@ object MediaLiveNs extends js.Object {
     /**
       * Output type-specific settings.
       */
-    var OutputSettings: OutputSettings
+    var OutputSettings: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.OutputSettings
     /**
       * The name of the VideoDescription used as the source for this output.
       */
@@ -2924,7 +2924,7 @@ object MediaLiveNs extends js.Object {
     /**
       * Settings associated with the output group.
       */
-    var OutputGroupSettings: OutputGroupSettings
+    var OutputGroupSettings: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.OutputGroupSettings
     var Outputs: __listOfOutput
   }
   
@@ -2962,7 +2962,7 @@ object MediaLiveNs extends js.Object {
     /**
       * Pipeline ID to pause ("PIPELINE_0" or "PIPELINE_1").
       */
-    var PipelineId: PipelineId
+    var PipelineId: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.PipelineId
   }
   
   trait PurchaseOfferingRequest extends js.Object {
@@ -3168,11 +3168,11 @@ object MediaLiveNs extends js.Object {
     /**
       * Settings for this schedule action.
       */
-    var ScheduleActionSettings: ScheduleActionSettings
+    var ScheduleActionSettings: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ScheduleActionSettings
     /**
       * The time for the action to start in the channel.
       */
-    var ScheduleActionStartSettings: ScheduleActionStartSettings
+    var ScheduleActionStartSettings: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ScheduleActionStartSettings
   }
   
   trait ScheduleActionSettings extends js.Object {
@@ -3270,7 +3270,7 @@ object MediaLiveNs extends js.Object {
     /**
       * SCTE-35 Descriptor Settings.
       */
-    var Scte35DescriptorSettings: Scte35DescriptorSettings
+    var Scte35DescriptorSettings: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.Scte35DescriptorSettings
   }
   
   trait Scte35DescriptorSettings extends js.Object {
@@ -3389,7 +3389,7 @@ object MediaLiveNs extends js.Object {
       * List all the audio groups that are used with the video output stream. Input all the audio GROUP-IDs that are associated to the video, separate by ','.
       */
     var AudioRenditionSets: js.UndefOr[__string] = js.undefined
-    var M3u8Settings: M3u8Settings
+    var M3u8Settings: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.M3u8Settings
   }
   
   trait StartChannelRequest extends js.Object {

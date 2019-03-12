@@ -24,7 +24,7 @@ trait UnoControlDialogModel
   /** determines whether a dialog is enabled or disabled. */
   var Enabled: scala.Boolean = js.native
   /** specifies the font attributes of the text in the caption bar of the dialog. */
-  var FontDescriptor: FontDescriptor = js.native
+  var FontDescriptor: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.FontDescriptor = js.native
   /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the caption bar of the dialog. */
   var FontEmphasisMark: scala.Double = js.native
   /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the caption bar of the dialog. */

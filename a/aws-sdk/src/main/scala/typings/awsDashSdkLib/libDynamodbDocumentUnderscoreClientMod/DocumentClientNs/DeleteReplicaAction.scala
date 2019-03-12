@@ -9,7 +9,7 @@ trait DeleteReplicaAction extends js.Object {
   /**
     * The region of the replica to be removed.
     */
-  var RegionName: RegionName
+  var RegionName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.RegionName
 }
 
 object DeleteReplicaAction {

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ActionCable")
 @js.native
 object ^ extends js.Object {
-  def createConsumer(): actioncableLib.ActionCableNs.Cable = js.native
-  def createConsumer(url: java.lang.String): actioncableLib.ActionCableNs.Cable = js.native
+  def createConsumer(): Cable = js.native
+  def createConsumer(url: java.lang.String): Cable = js.native
 }
 

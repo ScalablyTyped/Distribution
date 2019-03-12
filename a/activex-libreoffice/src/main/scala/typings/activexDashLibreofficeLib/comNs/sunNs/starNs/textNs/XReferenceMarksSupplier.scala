@@ -22,12 +22,12 @@ object XReferenceMarksSupplier {
   @scala.inline
   def apply(
     ReferenceMarks: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
-    acquire: js.Function0[scala.Unit],
-    getReferenceMarks: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getReferenceMarks: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XReferenceMarksSupplier = {
-    val __obj = js.Dynamic.literal(ReferenceMarks = ReferenceMarks, acquire = acquire, getReferenceMarks = getReferenceMarks, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ReferenceMarks = ReferenceMarks, acquire = js.Any.fromFunction0(acquire), getReferenceMarks = js.Any.fromFunction0(getReferenceMarks), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XReferenceMarksSupplier]
   }

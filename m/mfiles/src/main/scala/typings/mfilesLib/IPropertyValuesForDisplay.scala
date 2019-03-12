@@ -12,8 +12,8 @@ trait IPropertyValuesForDisplay extends js.Object {
 
 object IPropertyValuesForDisplay {
   @scala.inline
-  def apply(Count: scala.Double, Item: js.Function1[scala.Double, IPropertyValueForDisplay]): IPropertyValuesForDisplay = {
-    val __obj = js.Dynamic.literal(Count = Count, Item = Item)
+  def apply(Count: scala.Double, Item: scala.Double => IPropertyValueForDisplay): IPropertyValuesForDisplay = {
+    val __obj = js.Dynamic.literal(Count = Count, Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[IPropertyValuesForDisplay]
   }

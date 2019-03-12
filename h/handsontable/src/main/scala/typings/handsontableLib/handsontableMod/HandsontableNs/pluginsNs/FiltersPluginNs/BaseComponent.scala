@@ -18,15 +18,15 @@ trait BaseComponent extends js.Object {
 object BaseComponent {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Boolean],
+    destroy: () => scala.Boolean,
     elements: js.Array[_],
     hidden: scala.Boolean,
-    hide: js.Function0[scala.Unit],
-    isHidden: js.Function0[scala.Boolean],
-    reset: js.Function0[scala.Unit],
-    show: js.Function0[scala.Unit]
+    hide: () => scala.Unit,
+    isHidden: () => scala.Boolean,
+    reset: () => scala.Unit,
+    show: () => scala.Unit
   ): BaseComponent = {
-    val __obj = js.Dynamic.literal(destroy = destroy, elements = elements, hidden = hidden, hide = hide, isHidden = isHidden, reset = reset, show = show)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), elements = elements, hidden = hidden, hide = js.Any.fromFunction0(hide), isHidden = js.Any.fromFunction0(isHidden), reset = js.Any.fromFunction0(reset), show = js.Any.fromFunction0(show))
   
     __obj.asInstanceOf[BaseComponent]
   }

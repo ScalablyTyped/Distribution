@@ -25,12 +25,12 @@ trait DefaultHelpProvider
 object DefaultHelpProvider {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    create: js.Function1[XObjectInspectorUI, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    create: XObjectInspectorUI => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): DefaultHelpProvider = {
-    val __obj = js.Dynamic.literal(acquire = acquire, create = create, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), create = js.Any.fromFunction1(create), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[DefaultHelpProvider]
   }

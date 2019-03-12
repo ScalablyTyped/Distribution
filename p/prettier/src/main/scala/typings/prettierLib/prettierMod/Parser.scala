@@ -24,20 +24,15 @@ object Parser {
   @scala.inline
   def apply(
     astFormat: java.lang.String,
-    locEnd: js.Function1[js.Any, scala.Double],
-    locStart: js.Function1[js.Any, scala.Double],
-    parse: js.Function3[
-      java.lang.String, 
-      org.scalablytyped.runtime.StringDictionary[Parser], 
-      ParserOptions, 
-      AST
-    ],
-    hasPragma: js.Function1[/* text */ java.lang.String, scala.Boolean] = null,
-    preprocess: js.Function2[/* text */ java.lang.String, /* options */ ParserOptions, java.lang.String] = null
+    locEnd: js.Any => scala.Double,
+    locStart: js.Any => scala.Double,
+    parse: (java.lang.String, org.scalablytyped.runtime.StringDictionary[Parser], ParserOptions) => AST,
+    hasPragma: /* text */ java.lang.String => scala.Boolean = null,
+    preprocess: (/* text */ java.lang.String, /* options */ ParserOptions) => java.lang.String = null
   ): Parser = {
-    val __obj = js.Dynamic.literal(astFormat = astFormat, locEnd = locEnd, locStart = locStart, parse = parse)
-    if (hasPragma != null) __obj.updateDynamic("hasPragma")(hasPragma)
-    if (preprocess != null) __obj.updateDynamic("preprocess")(preprocess)
+    val __obj = js.Dynamic.literal(astFormat = astFormat, locEnd = js.Any.fromFunction1(locEnd), locStart = js.Any.fromFunction1(locStart), parse = js.Any.fromFunction3(parse))
+    if (hasPragma != null) __obj.updateDynamic("hasPragma")(js.Any.fromFunction1(hasPragma))
+    if (preprocess != null) __obj.updateDynamic("preprocess")(js.Any.fromFunction2(preprocess))
     __obj.asInstanceOf[Parser]
   }
 }

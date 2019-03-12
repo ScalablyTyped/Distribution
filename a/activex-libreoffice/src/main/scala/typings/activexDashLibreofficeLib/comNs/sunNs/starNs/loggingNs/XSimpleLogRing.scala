@@ -18,13 +18,13 @@ trait XSimpleLogRing extends js.Object {
     *
     * It is up to logger implementation to provide only the limited number of last messages.
     */
-  val CollectedLog: activexDashInteropLib.SafeArray[java.lang.String]
+  val CollectedLog: stdLib.SafeArray[java.lang.String]
   /**
     * allows to get the collected messages from the logger
     *
     * It is up to logger implementation to provide only the limited number of last messages.
     */
-  def getCollectedLog(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getCollectedLog(): stdLib.SafeArray[java.lang.String]
   /** allows to add a message to the logger */
   def logString(aMessage: java.lang.String): scala.Unit
 }
@@ -32,11 +32,11 @@ trait XSimpleLogRing extends js.Object {
 object XSimpleLogRing {
   @scala.inline
   def apply(
-    CollectedLog: activexDashInteropLib.SafeArray[java.lang.String],
-    getCollectedLog: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    logString: js.Function1[java.lang.String, scala.Unit]
+    CollectedLog: stdLib.SafeArray[java.lang.String],
+    getCollectedLog: () => stdLib.SafeArray[java.lang.String],
+    logString: java.lang.String => scala.Unit
   ): XSimpleLogRing = {
-    val __obj = js.Dynamic.literal(CollectedLog = CollectedLog, getCollectedLog = getCollectedLog, logString = logString)
+    val __obj = js.Dynamic.literal(CollectedLog = CollectedLog, getCollectedLog = js.Any.fromFunction0(getCollectedLog), logString = js.Any.fromFunction1(logString))
   
     __obj.asInstanceOf[XSimpleLogRing]
   }

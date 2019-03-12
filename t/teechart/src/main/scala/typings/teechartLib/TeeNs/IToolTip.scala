@@ -20,31 +20,31 @@ object IToolTip {
   @scala.inline
   def apply(
     active: scala.Boolean,
-    add: js.Function1[java.lang.String, IAnnotation],
+    add: java.lang.String => IAnnotation,
     animated: scala.Double,
     autoHide: scala.Boolean,
     autoRedraw: scala.Boolean,
     bounds: IRectangle,
     chart: IChart,
-    clicked: js.Function1[IPoint, scala.Boolean],
+    clicked: IPoint => scala.Boolean,
     currentIndex: scala.Double,
     currentSeries: ISeries,
     delay: scala.Double,
-    draw: js.Function0[scala.Unit],
+    draw: () => scala.Unit,
     format: IFormat,
-    hide: js.Function0[scala.Unit],
+    hide: () => scala.Unit,
     items: js.Array[IAnnotation],
     margins: IMargins,
-    mousedown: js.Function1[js.Any, scala.Boolean],
-    mousemove: js.Function1[js.Any, scala.Boolean],
+    mousedown: js.Any => scala.Boolean,
+    mousemove: js.Any => scala.Boolean,
     position: IPoint,
-    refresh: js.Function2[ISeries, scala.Double, scala.Unit],
-    resize: js.Function0[scala.Unit],
+    refresh: (ISeries, scala.Double) => scala.Unit,
+    resize: () => scala.Unit,
     text: java.lang.String,
     transparent: scala.Boolean,
     visible: scala.Boolean
   ): IToolTip = {
-    val __obj = js.Dynamic.literal(active = active, add = add, animated = animated, autoHide = autoHide, autoRedraw = autoRedraw, bounds = bounds, chart = chart, clicked = clicked, currentIndex = currentIndex, currentSeries = currentSeries, delay = delay, draw = draw, format = format, hide = hide, items = items, margins = margins, mousedown = mousedown, mousemove = mousemove, position = position, refresh = refresh, resize = resize, text = text, transparent = transparent, visible = visible)
+    val __obj = js.Dynamic.literal(active = active, add = js.Any.fromFunction1(add), animated = animated, autoHide = autoHide, autoRedraw = autoRedraw, bounds = bounds, chart = chart, clicked = js.Any.fromFunction1(clicked), currentIndex = currentIndex, currentSeries = currentSeries, delay = delay, draw = js.Any.fromFunction0(draw), format = format, hide = js.Any.fromFunction0(hide), items = items, margins = margins, mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), position = position, refresh = js.Any.fromFunction2(refresh), resize = js.Any.fromFunction0(resize), text = text, transparent = transparent, visible = visible)
   
     __obj.asInstanceOf[IToolTip]
   }

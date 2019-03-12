@@ -11,8 +11,8 @@ trait MouseWrapperMethods extends js.Object {
 
 object MouseWrapperMethods {
   @scala.inline
-  def apply(destroy: js.Function0[scala.Unit]): MouseWrapperMethods = {
-    val __obj = js.Dynamic.literal(destroy = destroy)
+  def apply(destroy: () => scala.Unit): MouseWrapperMethods = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
   
     __obj.asInstanceOf[MouseWrapperMethods]
   }

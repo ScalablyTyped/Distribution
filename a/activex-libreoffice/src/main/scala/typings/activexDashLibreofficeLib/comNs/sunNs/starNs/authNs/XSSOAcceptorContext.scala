@@ -20,7 +20,7 @@ trait XSSOAcceptorContext extends XSSOContext {
     * @param Token the SSO token sent by the initiator.
     * @returns the sequence of bytes to be sent back to the initiator to allow authentication of the acceptor side, if mutual authentication is supported by the
     */
-  def accept(Token: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]): activexDashInteropLib.SafeArray[scala.Double]
+  def accept(Token: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]): stdLib.SafeArray[scala.Double]
 }
 
 object XSSOAcceptorContext {
@@ -30,19 +30,16 @@ object XSSOAcceptorContext {
     Mutual: scala.Boolean,
     Source: java.lang.String,
     Target: java.lang.String,
-    accept: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      activexDashInteropLib.SafeArray[scala.Double]
-    ],
-    acquire: js.Function0[scala.Unit],
-    getMechanism: js.Function0[java.lang.String],
-    getMutual: js.Function0[scala.Boolean],
-    getSource: js.Function0[java.lang.String],
-    getTarget: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    accept: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => stdLib.SafeArray[scala.Double],
+    acquire: () => scala.Unit,
+    getMechanism: () => java.lang.String,
+    getMutual: () => scala.Boolean,
+    getSource: () => java.lang.String,
+    getTarget: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSSOAcceptorContext = {
-    val __obj = js.Dynamic.literal(Mechanism = Mechanism, Mutual = Mutual, Source = Source, Target = Target, accept = accept, acquire = acquire, getMechanism = getMechanism, getMutual = getMutual, getSource = getSource, getTarget = getTarget, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Mechanism = Mechanism, Mutual = Mutual, Source = Source, Target = Target, accept = js.Any.fromFunction1(accept), acquire = js.Any.fromFunction0(acquire), getMechanism = js.Any.fromFunction0(getMechanism), getMutual = js.Any.fromFunction0(getMutual), getSource = js.Any.fromFunction0(getSource), getTarget = js.Any.fromFunction0(getTarget), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSSOAcceptorContext]
   }

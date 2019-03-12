@@ -64,11 +64,7 @@ object RaisedButtonProps {
     onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
     onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
     onKeyUp: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
-    onKeyboardFocus: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], 
-      /* isKeyboardFocused */ scala.Boolean, 
-      scala.Unit
-    ] = null,
+    onKeyboardFocus: (/* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], /* isKeyboardFocused */ scala.Boolean) => scala.Unit = null,
     onMouseDown: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
     onMouseEnter: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
     onMouseLeave: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
@@ -114,7 +110,7 @@ object RaisedButtonProps {
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
     if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
-    if (onKeyboardFocus != null) __obj.updateDynamic("onKeyboardFocus")(onKeyboardFocus)
+    if (onKeyboardFocus != null) __obj.updateDynamic("onKeyboardFocus")(js.Any.fromFunction2(onKeyboardFocus))
     if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)

@@ -83,7 +83,7 @@ object PeerOpts {
     initiator: js.UndefOr[scala.Boolean] = js.undefined,
     objectMode: js.UndefOr[scala.Boolean] = js.undefined,
     offerConstraints: js.Object = null,
-    sdpTransfrom: js.Function1[/* sdp */ js.Any, _] = null,
+    sdpTransfrom: /* sdp */ js.Any => _ = null,
     stream: js.UndefOr[scala.Boolean] = js.undefined,
     streams: js.Array[stdLib.MediaStream] = null,
     trickle: js.UndefOr[scala.Boolean] = js.undefined,
@@ -98,7 +98,7 @@ object PeerOpts {
     if (!js.isUndefined(initiator)) __obj.updateDynamic("initiator")(initiator)
     if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode)
     if (offerConstraints != null) __obj.updateDynamic("offerConstraints")(offerConstraints)
-    if (sdpTransfrom != null) __obj.updateDynamic("sdpTransfrom")(sdpTransfrom)
+    if (sdpTransfrom != null) __obj.updateDynamic("sdpTransfrom")(js.Any.fromFunction1(sdpTransfrom))
     if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream)
     if (streams != null) __obj.updateDynamic("streams")(streams)
     if (!js.isUndefined(trickle)) __obj.updateDynamic("trickle")(trickle)

@@ -13,14 +13,10 @@ trait LocationHelper[Props] extends js.Object {
 object LocationHelper {
   @scala.inline
   def apply[Props](
-    createRedirectLoc: js.Function2[
-      Props, 
-      java.lang.String, 
-      historyLib.historyMod.LocationDescriptorObject[historyLib.historyMod.LocationState]
-    ],
-    getRedirectQueryParam: js.Function1[Props, java.lang.String]
+    createRedirectLoc: (Props, java.lang.String) => historyLib.historyMod.LocationDescriptorObject[historyLib.historyMod.LocationState],
+    getRedirectQueryParam: Props => java.lang.String
   ): LocationHelper[Props] = {
-    val __obj = js.Dynamic.literal(createRedirectLoc = createRedirectLoc, getRedirectQueryParam = getRedirectQueryParam)
+    val __obj = js.Dynamic.literal(createRedirectLoc = js.Any.fromFunction2(createRedirectLoc), getRedirectQueryParam = js.Any.fromFunction1(getRedirectQueryParam))
   
     __obj.asInstanceOf[LocationHelper[Props]]
   }

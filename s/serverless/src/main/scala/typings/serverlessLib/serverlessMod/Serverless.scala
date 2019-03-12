@@ -26,23 +26,19 @@ object Serverless {
   def apply(
     cli: serverlessLib.Anon_Log,
     config: serverlessLib.serverlessMod.ServerlessNs.Config,
-    getProvider: js.Function1[java.lang.String, serverlessLib.pluginsAwsProviderAwsProviderMod.namespaced],
-    getVersion: js.Function0[java.lang.String],
-    init: js.Function0[js.Promise[_]],
+    getProvider: java.lang.String => serverlessLib.pluginsAwsProviderAwsProviderMod.namespaced,
+    getVersion: () => java.lang.String,
+    init: () => js.Promise[_],
     pluginManager: serverlessLib.classesPluginManagerMod.namespaced,
-    run: js.Function0[js.Promise[_]],
+    run: () => js.Promise[_],
     serverlessDirPath: java.lang.String,
     service: serverlessLib.classesServiceMod.namespaced,
-    setProvider: js.Function2[
-      java.lang.String, 
-      serverlessLib.pluginsAwsProviderAwsProviderMod.namespaced, 
-      scala.Null
-    ],
+    setProvider: (java.lang.String, serverlessLib.pluginsAwsProviderAwsProviderMod.namespaced) => scala.Null,
     utils: serverlessLib.classesUtilsMod.namespaced,
     version: java.lang.String,
     yamlParser: serverlessLib.classesYamlParserMod.namespaced
   ): Serverless = {
-    val __obj = js.Dynamic.literal(cli = cli, config = config, getProvider = getProvider, getVersion = getVersion, init = init, pluginManager = pluginManager, run = run, serverlessDirPath = serverlessDirPath, service = service, setProvider = setProvider, utils = utils, version = version, yamlParser = yamlParser)
+    val __obj = js.Dynamic.literal(cli = cli, config = config, getProvider = js.Any.fromFunction1(getProvider), getVersion = js.Any.fromFunction0(getVersion), init = js.Any.fromFunction0(init), pluginManager = pluginManager, run = js.Any.fromFunction0(run), serverlessDirPath = serverlessDirPath, service = service, setProvider = js.Any.fromFunction2(setProvider), utils = utils, version = version, yamlParser = yamlParser)
   
     __obj.asInstanceOf[Serverless]
   }

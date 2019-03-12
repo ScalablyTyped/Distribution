@@ -13,12 +13,8 @@ trait SessionIdStore extends js.Object {
 
 object SessionIdStore {
   @scala.inline
-  def apply(
-    get: js.Function0[js.Any],
-    reset: js.Function0[scala.Unit],
-    set: js.Function2[java.lang.String, Session, scala.Unit]
-  ): SessionIdStore = {
-    val __obj = js.Dynamic.literal(get = get, reset = reset, set = set)
+  def apply(get: () => js.Any, reset: () => scala.Unit, set: (java.lang.String, Session) => scala.Unit): SessionIdStore = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), reset = js.Any.fromFunction0(reset), set = js.Any.fromFunction2(set))
   
     __obj.asInstanceOf[SessionIdStore]
   }

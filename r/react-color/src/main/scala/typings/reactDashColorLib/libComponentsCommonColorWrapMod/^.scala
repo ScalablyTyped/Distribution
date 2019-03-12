@@ -9,19 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def default[A](
-    component: reactLib.reactMod.ReactNs.ComponentClass[
-      A with reactDashColorLib.libComponentsCommonColorWrapMod.InjectedColorProps, 
-      reactLib.reactMod.ReactNs.ComponentState
-    ]
-  ): reactLib.reactMod.ReactNs.ComponentClass[
-    A with reactDashColorLib.libComponentsCommonColorWrapMod.ExportedColorProps, 
-    reactLib.reactMod.ReactNs.ComponentState
-  ] = js.native
-  def default[A](
-    component: reactLib.reactMod.ReactNs.StatelessComponent[A with reactDashColorLib.libComponentsCommonColorWrapMod.InjectedColorProps]
-  ): reactLib.reactMod.ReactNs.ComponentClass[
-    A with reactDashColorLib.libComponentsCommonColorWrapMod.ExportedColorProps, 
-    reactLib.reactMod.ReactNs.ComponentState
-  ] = js.native
+    component: reactLib.reactMod.ReactNs.ComponentClass[A with InjectedColorProps, reactLib.reactMod.ReactNs.ComponentState]
+  ): reactLib.reactMod.ReactNs.ComponentClass[A with ExportedColorProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  def default[A](component: reactLib.reactMod.ReactNs.StatelessComponent[A with InjectedColorProps]): reactLib.reactMod.ReactNs.ComponentClass[A with ExportedColorProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
 }
 

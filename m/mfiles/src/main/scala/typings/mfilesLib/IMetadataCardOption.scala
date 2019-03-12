@@ -19,14 +19,14 @@ object IMetadataCardOption {
   @scala.inline
   def apply(
     Events: IEvents,
-    GetExplanation: js.Function0[java.lang.String],
-    GetName: js.Function0[java.lang.String],
-    GetOptionValue: js.Function0[js.Any],
-    IsEnabled: js.Function0[scala.Boolean],
-    IsVisible: js.Function0[scala.Boolean],
-    SetOptionValue: js.Function1[js.Any, scala.Unit]
+    GetExplanation: () => java.lang.String,
+    GetName: () => java.lang.String,
+    GetOptionValue: () => js.Any,
+    IsEnabled: () => scala.Boolean,
+    IsVisible: () => scala.Boolean,
+    SetOptionValue: js.Any => scala.Unit
   ): IMetadataCardOption = {
-    val __obj = js.Dynamic.literal(Events = Events, GetExplanation = GetExplanation, GetName = GetName, GetOptionValue = GetOptionValue, IsEnabled = IsEnabled, IsVisible = IsVisible, SetOptionValue = SetOptionValue)
+    val __obj = js.Dynamic.literal(Events = Events, GetExplanation = js.Any.fromFunction0(GetExplanation), GetName = js.Any.fromFunction0(GetName), GetOptionValue = js.Any.fromFunction0(GetOptionValue), IsEnabled = js.Any.fromFunction0(IsEnabled), IsVisible = js.Any.fromFunction0(IsVisible), SetOptionValue = js.Any.fromFunction1(SetOptionValue))
   
     __obj.asInstanceOf[IMetadataCardOption]
   }

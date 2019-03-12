@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class SendRuleAction protected () extends js.Object {
   val ActionType: OlRuleActionType = js.native
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   var Enabled: scala.Boolean = js.native
   var `Outlook.SendRuleAction_typekey`: SendRuleAction = js.native
   val Parent: js.Any = js.native
-  val Recipients: Recipients = js.native
+  val Recipients: activexDashOutlookLib.OutlookNs.Recipients = js.native
   val Session: NameSpace = js.native
 }
 

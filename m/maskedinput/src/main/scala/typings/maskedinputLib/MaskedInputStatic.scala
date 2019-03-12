@@ -15,10 +15,10 @@ object MaskedInputStatic {
   @scala.inline
   def apply(
     defaults: MaskedInputDefaults,
-    format: js.Function2[java.lang.String, MaskedInputStaticDefaults, scala.Boolean],
-    isValid: js.Function2[java.lang.String, MaskedInputStaticDefaults, scala.Boolean]
+    format: (java.lang.String, MaskedInputStaticDefaults) => scala.Boolean,
+    isValid: (java.lang.String, MaskedInputStaticDefaults) => scala.Boolean
   ): MaskedInputStatic = {
-    val __obj = js.Dynamic.literal(defaults = defaults, format = format, isValid = isValid)
+    val __obj = js.Dynamic.literal(defaults = defaults, format = js.Any.fromFunction2(format), isValid = js.Any.fromFunction2(isValid))
   
     __obj.asInstanceOf[MaskedInputStatic]
   }

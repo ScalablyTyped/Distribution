@@ -28,9 +28,9 @@ object ToolbarProps {
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
     isSearchActive: js.UndefOr[scala.Boolean] = js.undefined,
     leftElement: reactLib.reactMod.Global.JSXNs.Element | java.lang.String = null,
-    onLeftElementPress: js.Function0[scala.Unit] = null,
-    onPress: js.Function0[scala.Unit] = null,
-    onRightElementPress: js.Function1[/* e */ RightElementPressEvent, scala.Unit] = null,
+    onLeftElementPress: () => scala.Unit = null,
+    onPress: () => scala.Unit = null,
+    onRightElementPress: /* e */ RightElementPressEvent => scala.Unit = null,
     rightElement: reactLib.reactMod.Global.JSXNs.Element | java.lang.String | js.Array[java.lang.String] | ToolBarRightElement = null,
     searchable: Searchable = null,
     size: scala.Int | scala.Double = null,
@@ -41,9 +41,9 @@ object ToolbarProps {
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (!js.isUndefined(isSearchActive)) __obj.updateDynamic("isSearchActive")(isSearchActive)
     if (leftElement != null) __obj.updateDynamic("leftElement")(leftElement.asInstanceOf[js.Any])
-    if (onLeftElementPress != null) __obj.updateDynamic("onLeftElementPress")(onLeftElementPress)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
-    if (onRightElementPress != null) __obj.updateDynamic("onRightElementPress")(onRightElementPress)
+    if (onLeftElementPress != null) __obj.updateDynamic("onLeftElementPress")(js.Any.fromFunction0(onLeftElementPress))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
+    if (onRightElementPress != null) __obj.updateDynamic("onRightElementPress")(js.Any.fromFunction1(onRightElementPress))
     if (rightElement != null) __obj.updateDynamic("rightElement")(rightElement.asInstanceOf[js.Any])
     if (searchable != null) __obj.updateDynamic("searchable")(searchable)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

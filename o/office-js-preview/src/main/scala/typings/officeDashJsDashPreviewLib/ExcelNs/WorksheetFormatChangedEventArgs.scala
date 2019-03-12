@@ -65,13 +65,13 @@ object WorksheetFormatChangedEventArgs {
   @scala.inline
   def apply(
     address: java.lang.String,
-    getRange: js.Function1[RequestContext, Range],
-    getRangeOrNullObject: js.Function1[RequestContext, Range],
+    getRange: RequestContext => Range,
+    getRangeOrNullObject: RequestContext => Range,
     source: EventSource | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Local | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Remote,
     `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.WorksheetFormatChanged,
     worksheetId: java.lang.String
   ): WorksheetFormatChangedEventArgs = {
-    val __obj = js.Dynamic.literal(address = address, getRange = getRange, getRangeOrNullObject = getRangeOrNullObject, source = source.asInstanceOf[js.Any], worksheetId = worksheetId)
+    val __obj = js.Dynamic.literal(address = address, getRange = js.Any.fromFunction1(getRange), getRangeOrNullObject = js.Any.fromFunction1(getRangeOrNullObject), source = source.asInstanceOf[js.Any], worksheetId = worksheetId)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WorksheetFormatChangedEventArgs]
   }

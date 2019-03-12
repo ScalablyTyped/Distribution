@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.ErrorCheckingOptions")
 @js.native
 class ErrorCheckingOptions protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var BackgroundChecking: scala.Boolean = js.native
   val Creator: XlCreator = js.native
   var EmptyCellReferences: scala.Boolean = js.native

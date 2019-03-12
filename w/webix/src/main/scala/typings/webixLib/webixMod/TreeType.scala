@@ -15,12 +15,12 @@ trait TreeType extends js.Object {
 object TreeType {
   @scala.inline
   def apply(
-    checkbox: js.Function2[js.Any, js.Any, java.lang.String],
-    folder: js.Function2[js.Any, js.Any, java.lang.String],
-    icon: js.Function2[js.Any, js.Any, java.lang.String],
-    space: js.Function2[js.Any, js.Any, java.lang.String]
+    checkbox: (js.Any, js.Any) => java.lang.String,
+    folder: (js.Any, js.Any) => java.lang.String,
+    icon: (js.Any, js.Any) => java.lang.String,
+    space: (js.Any, js.Any) => java.lang.String
   ): TreeType = {
-    val __obj = js.Dynamic.literal(checkbox = checkbox, folder = folder, icon = icon, space = space)
+    val __obj = js.Dynamic.literal(checkbox = js.Any.fromFunction2(checkbox), folder = js.Any.fromFunction2(folder), icon = js.Any.fromFunction2(icon), space = js.Any.fromFunction2(space))
   
     __obj.asInstanceOf[TreeType]
   }

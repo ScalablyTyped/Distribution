@@ -73,25 +73,18 @@ object XSheetLinkable {
     LinkMode: SheetLinkMode,
     LinkSheetName: java.lang.String,
     LinkUrl: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getLinkMode: js.Function0[SheetLinkMode],
-    getLinkSheetName: js.Function0[java.lang.String],
-    getLinkUrl: js.Function0[java.lang.String],
-    link: js.Function5[
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      SheetLinkMode, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setLinkMode: js.Function1[SheetLinkMode, scala.Unit],
-    setLinkSheetName: js.Function1[java.lang.String, scala.Unit],
-    setLinkUrl: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getLinkMode: () => SheetLinkMode,
+    getLinkSheetName: () => java.lang.String,
+    getLinkUrl: () => java.lang.String,
+    link: (java.lang.String, java.lang.String, java.lang.String, java.lang.String, SheetLinkMode) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setLinkMode: SheetLinkMode => scala.Unit,
+    setLinkSheetName: java.lang.String => scala.Unit,
+    setLinkUrl: java.lang.String => scala.Unit
   ): XSheetLinkable = {
-    val __obj = js.Dynamic.literal(LinkMode = LinkMode, LinkSheetName = LinkSheetName, LinkUrl = LinkUrl, acquire = acquire, getLinkMode = getLinkMode, getLinkSheetName = getLinkSheetName, getLinkUrl = getLinkUrl, link = link, queryInterface = queryInterface, release = release, setLinkMode = setLinkMode, setLinkSheetName = setLinkSheetName, setLinkUrl = setLinkUrl)
+    val __obj = js.Dynamic.literal(LinkMode = LinkMode, LinkSheetName = LinkSheetName, LinkUrl = LinkUrl, acquire = js.Any.fromFunction0(acquire), getLinkMode = js.Any.fromFunction0(getLinkMode), getLinkSheetName = js.Any.fromFunction0(getLinkSheetName), getLinkUrl = js.Any.fromFunction0(getLinkUrl), link = js.Any.fromFunction5(link), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setLinkMode = js.Any.fromFunction1(setLinkMode), setLinkSheetName = js.Any.fromFunction1(setLinkSheetName), setLinkUrl = js.Any.fromFunction1(setLinkUrl))
   
     __obj.asInstanceOf[XSheetLinkable]
   }

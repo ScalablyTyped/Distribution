@@ -38,13 +38,13 @@ object DirectLineMeasurement3DViewModelMeasurement {
   def apply(
     constructor: js.Function,
     directDistance: DirectLineMeasurement3DViewModelMeasurementValue,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     horizontalDistance: DirectLineMeasurement3DViewModelMeasurementValue,
     measurementMode: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     verticalDistance: DirectLineMeasurement3DViewModelMeasurementValue
   ): DirectLineMeasurement3DViewModelMeasurement = {
-    val __obj = js.Dynamic.literal(constructor = constructor, directDistance = directDistance, hasOwnProperty = hasOwnProperty, horizontalDistance = horizontalDistance, measurementMode = measurementMode, propertyIsEnumerable = propertyIsEnumerable, verticalDistance = verticalDistance)
+    val __obj = js.Dynamic.literal(constructor = constructor, directDistance = directDistance, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), horizontalDistance = horizontalDistance, measurementMode = measurementMode, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), verticalDistance = verticalDistance)
   
     __obj.asInstanceOf[DirectLineMeasurement3DViewModelMeasurement]
   }

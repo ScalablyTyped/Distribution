@@ -38,13 +38,13 @@ trait XConversionPropertyType
 object XConversionPropertyType {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getPropertyType: js.Function2[java.lang.String, java.lang.String, scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setPropertyType: js.Function3[java.lang.String, java.lang.String, scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    getPropertyType: (java.lang.String, java.lang.String) => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setPropertyType: (java.lang.String, java.lang.String, scala.Double) => scala.Unit
   ): XConversionPropertyType = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getPropertyType = getPropertyType, queryInterface = queryInterface, release = release, setPropertyType = setPropertyType)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getPropertyType = js.Any.fromFunction2(getPropertyType), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setPropertyType = js.Any.fromFunction3(setPropertyType))
   
     __obj.asInstanceOf[XConversionPropertyType]
   }

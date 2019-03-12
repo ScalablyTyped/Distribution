@@ -26,14 +26,14 @@ trait XFormulaOpCodeMapper extends js.Object {
     * @param Groups Group of mappings to be returned, a bit mask of {@link FormulaMapGroup} constants.
     * @returns Sequence of {@link FormulaOpCodeMapEntry} .  Each element of the formula language in parameter Language is mapped to a {@link FormulaToken} conta
     */
-  def getAvailableMappings(Language: scala.Double, Groups: scala.Double): activexDashInteropLib.SafeArray[FormulaOpCodeMapEntry]
+  def getAvailableMappings(Language: scala.Double, Groups: scala.Double): stdLib.SafeArray[FormulaOpCodeMapEntry]
   /**
     * returns a sequence of tokens matching the input sequence of strings in order.
     * @param Names Sequence of names to be mapped. These can be function names, operators, separators and other symbols the formula compiler knows.
     * @param Language Formula language to be used, one of {@link FormulaLanguage} constants. If a constant unknown to the implementation is passed, {@link com
     * @returns a sequence of {@link FormulaToken} matching the input sequence in order.  Each string element in parameter Names according to the formula languag
     */
-  def getMappings(Names: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], Language: scala.Double): activexDashInteropLib.SafeArray[FormulaToken]
+  def getMappings(Names: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], Language: scala.Double): stdLib.SafeArray[FormulaToken]
 }
 
 object XFormulaOpCodeMapper {
@@ -41,14 +41,10 @@ object XFormulaOpCodeMapper {
   def apply(
     OpCodeExternal: scala.Double,
     OpCodeUnknown: scala.Double,
-    getAvailableMappings: js.Function2[scala.Double, scala.Double, activexDashInteropLib.SafeArray[FormulaOpCodeMapEntry]],
-    getMappings: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      scala.Double, 
-      activexDashInteropLib.SafeArray[FormulaToken]
-    ]
+    getAvailableMappings: (scala.Double, scala.Double) => stdLib.SafeArray[FormulaOpCodeMapEntry],
+    getMappings: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Double) => stdLib.SafeArray[FormulaToken]
   ): XFormulaOpCodeMapper = {
-    val __obj = js.Dynamic.literal(OpCodeExternal = OpCodeExternal, OpCodeUnknown = OpCodeUnknown, getAvailableMappings = getAvailableMappings, getMappings = getMappings)
+    val __obj = js.Dynamic.literal(OpCodeExternal = OpCodeExternal, OpCodeUnknown = OpCodeUnknown, getAvailableMappings = js.Any.fromFunction2(getAvailableMappings), getMappings = js.Any.fromFunction2(getMappings))
   
     __obj.asInstanceOf[XFormulaOpCodeMapper]
   }

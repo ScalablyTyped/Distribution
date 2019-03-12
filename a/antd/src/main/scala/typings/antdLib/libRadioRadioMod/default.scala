@@ -13,9 +13,9 @@ class default () extends Radio
 @JSImport("antd/lib/radio/radio", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Button: antdLib.Anon_ContextTypesAnonRadioGroup = js.native
+  var Button: antdLib.Anon_ContextTypesAnonComponentNameLocation = js.native
   var Group: antdLib.Anon_ChildContextTypesDefaultProps = js.native
-  var contextTypes: antdLib.Anon_RadioGroup = js.native
+  var contextTypes: antdLib.Anon_ComponentNameLocation = js.native
   var defaultProps: antdLib.Anon_Type = js.native
 }
 

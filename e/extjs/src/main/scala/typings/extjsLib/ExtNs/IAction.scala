@@ -77,38 +77,38 @@ object IAction {
   def apply(
     alias: Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    disable: js.Function0[scala.Unit] = null,
+    disable: () => scala.Unit = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    each: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], scala.Unit] = null,
-    enable: js.Function0[scala.Unit] = null,
-    execute: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    each: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    enable: () => scala.Unit = null,
+    execute: /* repeated */ js.Any => scala.Unit = null,
     extend: java.lang.String = null,
-    getIconCls: js.Function0[scala.Unit] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getText: js.Function0[scala.Unit] = null,
+    getIconCls: () => scala.Unit = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getText: () => scala.Unit = null,
     handler: js.Any = null,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
-    hide: js.Function0[scala.Unit] = null,
+    hide: () => scala.Unit = null,
     iconCls: java.lang.String = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IAction] = null,
-    isDisabled: js.Function0[scala.Unit] = null,
-    isHidden: js.Function0[scala.Unit] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IAction = null,
+    isDisabled: () => scala.Unit = null,
+    isHidden: () => scala.Unit = null,
     itemId: java.lang.String = null,
     mixins: js.Any = null,
     requires: Array = null,
     scope: js.Any = null,
     self: IClass = null,
-    setDisabled: js.Function1[/* disabled */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setHandler: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], scala.Unit] = null,
-    setHidden: js.Function1[/* hidden */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setIconCls: js.Function1[/* cls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setText: js.Function1[/* text */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    show: js.Function0[scala.Unit] = null,
+    setDisabled: /* disabled */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setHandler: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    setHidden: /* hidden */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setIconCls: /* cls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setText: /* text */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    show: () => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     text: java.lang.String = null,
@@ -117,38 +117,38 @@ object IAction {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (disable != null) __obj.updateDynamic("disable")(disable)
+    if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction0(disable))
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (each != null) __obj.updateDynamic("each")(each)
-    if (enable != null) __obj.updateDynamic("enable")(enable)
-    if (execute != null) __obj.updateDynamic("execute")(execute)
+    if (each != null) __obj.updateDynamic("each")(js.Any.fromFunction2(each))
+    if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction0(enable))
+    if (execute != null) __obj.updateDynamic("execute")(js.Any.fromFunction1(execute))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getIconCls != null) __obj.updateDynamic("getIconCls")(getIconCls)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getText != null) __obj.updateDynamic("getText")(getText)
+    if (getIconCls != null) __obj.updateDynamic("getIconCls")(js.Any.fromFunction0(getIconCls))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getText != null) __obj.updateDynamic("getText")(js.Any.fromFunction0(getText))
     if (handler != null) __obj.updateDynamic("handler")(handler)
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction0(hide))
     if (iconCls != null) __obj.updateDynamic("iconCls")(iconCls)
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
-    if (isDisabled != null) __obj.updateDynamic("isDisabled")(isDisabled)
-    if (isHidden != null) __obj.updateDynamic("isHidden")(isHidden)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (isDisabled != null) __obj.updateDynamic("isDisabled")(js.Any.fromFunction0(isDisabled))
+    if (isHidden != null) __obj.updateDynamic("isHidden")(js.Any.fromFunction0(isHidden))
     if (itemId != null) __obj.updateDynamic("itemId")(itemId)
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (requires != null) __obj.updateDynamic("requires")(requires)
     if (scope != null) __obj.updateDynamic("scope")(scope)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setDisabled != null) __obj.updateDynamic("setDisabled")(setDisabled)
-    if (setHandler != null) __obj.updateDynamic("setHandler")(setHandler)
-    if (setHidden != null) __obj.updateDynamic("setHidden")(setHidden)
-    if (setIconCls != null) __obj.updateDynamic("setIconCls")(setIconCls)
-    if (setText != null) __obj.updateDynamic("setText")(setText)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (setDisabled != null) __obj.updateDynamic("setDisabled")(js.Any.fromFunction1(setDisabled))
+    if (setHandler != null) __obj.updateDynamic("setHandler")(js.Any.fromFunction2(setHandler))
+    if (setHidden != null) __obj.updateDynamic("setHidden")(js.Any.fromFunction1(setHidden))
+    if (setIconCls != null) __obj.updateDynamic("setIconCls")(js.Any.fromFunction1(setIconCls))
+    if (setText != null) __obj.updateDynamic("setText")(js.Any.fromFunction1(setText))
+    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction0(show))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (text != null) __obj.updateDynamic("text")(text)

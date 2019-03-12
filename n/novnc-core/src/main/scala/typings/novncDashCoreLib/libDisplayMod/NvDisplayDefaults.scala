@@ -26,7 +26,7 @@ object NvDisplayDefaults {
     cursor_uri: js.Any = null,
     height: scala.Int | scala.Double = null,
     logo: NvLogo = null,
-    onFlush: js.Function0[scala.Unit] = null,
+    onFlush: () => scala.Unit = null,
     prefer_js: java.lang.String = null,
     render_mode: java.lang.String = null,
     scale: scala.Int | scala.Double = null,
@@ -39,7 +39,7 @@ object NvDisplayDefaults {
     if (cursor_uri != null) __obj.updateDynamic("cursor_uri")(cursor_uri)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (logo != null) __obj.updateDynamic("logo")(logo)
-    if (onFlush != null) __obj.updateDynamic("onFlush")(onFlush)
+    if (onFlush != null) __obj.updateDynamic("onFlush")(js.Any.fromFunction0(onFlush))
     if (prefer_js != null) __obj.updateDynamic("prefer_js")(prefer_js)
     if (render_mode != null) __obj.updateDynamic("render_mode")(render_mode)
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])

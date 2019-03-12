@@ -15,14 +15,14 @@ trait InsertedObjectInfo extends js.Object {
     * A dialog related to embedded object creation usually allows user to make some choices that can be container related. This information can be provided
     * by this member.
     */
-  var Options: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
+  var Options: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
 }
 
 object InsertedObjectInfo {
   @scala.inline
   def apply(
     Object: XEmbeddedObject,
-    Options: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
+    Options: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
   ): InsertedObjectInfo = {
     val __obj = js.Dynamic.literal(Object = Object, Options = Options)
   

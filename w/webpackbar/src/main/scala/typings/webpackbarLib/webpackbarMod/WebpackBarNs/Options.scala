@@ -33,11 +33,7 @@ object Options {
   def apply(
     color: java.lang.String = null,
     compiledIn: js.UndefOr[scala.Boolean] = js.undefined,
-    done: js.Function2[
-      /* sharedState */ SharedState, 
-      /* ctx */ webpackbarLib.webpackbarMod.WebpackBar, 
-      scala.Unit
-    ] = null,
+    done: (/* sharedState */ SharedState, /* ctx */ webpackbarLib.webpackbarMod.WebpackBar) => scala.Unit = null,
     minimal: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
     profile: js.UndefOr[scala.Boolean] = js.undefined,
@@ -46,7 +42,7 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color)
     if (!js.isUndefined(compiledIn)) __obj.updateDynamic("compiledIn")(compiledIn)
-    if (done != null) __obj.updateDynamic("done")(done)
+    if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction2(done))
     if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal)
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(profile)) __obj.updateDynamic("profile")(profile)

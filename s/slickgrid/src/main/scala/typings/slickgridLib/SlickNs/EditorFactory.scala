@@ -11,8 +11,8 @@ trait EditorFactory extends js.Object {
 
 object EditorFactory {
   @scala.inline
-  def apply(getEditor: js.Function1[Column[js.Any], slickgridLib.SlickNs.EditorsNs.Editor[js.Any]]): EditorFactory = {
-    val __obj = js.Dynamic.literal(getEditor = getEditor)
+  def apply(getEditor: Column[js.Any] => slickgridLib.SlickNs.EditorsNs.Editor[js.Any]): EditorFactory = {
+    val __obj = js.Dynamic.literal(getEditor = js.Any.fromFunction1(getEditor))
   
     __obj.asInstanceOf[EditorFactory]
   }

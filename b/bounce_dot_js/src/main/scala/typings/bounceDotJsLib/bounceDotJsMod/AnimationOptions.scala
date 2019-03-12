@@ -15,12 +15,12 @@ object AnimationOptions {
   @scala.inline
   def apply(
     loop: js.UndefOr[scala.Boolean] = js.undefined,
-    onComplete: js.Function0[scala.Unit] = null,
+    onComplete: () => scala.Unit = null,
     remove: js.UndefOr[scala.Boolean] = js.undefined
   ): AnimationOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
-    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction0(onComplete))
     if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove)
     __obj.asInstanceOf[AnimationOptions]
   }

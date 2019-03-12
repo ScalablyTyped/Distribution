@@ -34,12 +34,7 @@ object OptionsCells {
     cellMouseOver: CellEventCallback = null,
     cellTap: CellEventCallback = null,
     cellTapHold: CellEventCallback = null,
-    validationFailed: js.Function3[
-      /* cell */ CellComponent, 
-      /* value */ js.Any, 
-      /* validators */ js.Array[Validator] | js.Array[StandardValidatorType], 
-      scala.Unit
-    ] = null
+    validationFailed: (/* cell */ CellComponent, /* value */ js.Any, /* validators */ js.Array[Validator] | js.Array[StandardValidatorType]) => scala.Unit = null
   ): OptionsCells = {
     val __obj = js.Dynamic.literal()
     if (cellClick != null) __obj.updateDynamic("cellClick")(cellClick)
@@ -56,7 +51,7 @@ object OptionsCells {
     if (cellMouseOver != null) __obj.updateDynamic("cellMouseOver")(cellMouseOver)
     if (cellTap != null) __obj.updateDynamic("cellTap")(cellTap)
     if (cellTapHold != null) __obj.updateDynamic("cellTapHold")(cellTapHold)
-    if (validationFailed != null) __obj.updateDynamic("validationFailed")(validationFailed)
+    if (validationFailed != null) __obj.updateDynamic("validationFailed")(js.Any.fromFunction3(validationFailed))
     __obj.asInstanceOf[OptionsCells]
   }
 }

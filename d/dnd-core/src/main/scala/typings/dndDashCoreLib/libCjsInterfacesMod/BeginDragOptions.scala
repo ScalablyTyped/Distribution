@@ -15,12 +15,12 @@ object BeginDragOptions {
   @scala.inline
   def apply(
     clientOffset: XYCoord = null,
-    getSourceClientOffset: js.Function1[/* sourceId */ Identifier, XYCoord] = null,
+    getSourceClientOffset: /* sourceId */ Identifier => XYCoord = null,
     publishSource: js.UndefOr[scala.Boolean] = js.undefined
   ): BeginDragOptions = {
     val __obj = js.Dynamic.literal()
     if (clientOffset != null) __obj.updateDynamic("clientOffset")(clientOffset)
-    if (getSourceClientOffset != null) __obj.updateDynamic("getSourceClientOffset")(getSourceClientOffset)
+    if (getSourceClientOffset != null) __obj.updateDynamic("getSourceClientOffset")(js.Any.fromFunction1(getSourceClientOffset))
     if (!js.isUndefined(publishSource)) __obj.updateDynamic("publishSource")(publishSource)
     __obj.asInstanceOf[BeginDragOptions]
   }

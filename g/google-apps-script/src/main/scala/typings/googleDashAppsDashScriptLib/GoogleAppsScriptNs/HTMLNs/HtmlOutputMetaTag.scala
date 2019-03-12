@@ -12,8 +12,8 @@ trait HtmlOutputMetaTag extends js.Object {
 
 object HtmlOutputMetaTag {
   @scala.inline
-  def apply(getContent: js.Function0[java.lang.String], getName: js.Function0[java.lang.String]): HtmlOutputMetaTag = {
-    val __obj = js.Dynamic.literal(getContent = getContent, getName = getName)
+  def apply(getContent: () => java.lang.String, getName: () => java.lang.String): HtmlOutputMetaTag = {
+    val __obj = js.Dynamic.literal(getContent = js.Any.fromFunction0(getContent), getName = js.Any.fromFunction0(getName))
   
     __obj.asInstanceOf[HtmlOutputMetaTag]
   }

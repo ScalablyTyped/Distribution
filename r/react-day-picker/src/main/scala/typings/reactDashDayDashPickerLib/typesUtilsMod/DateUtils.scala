@@ -23,24 +23,20 @@ trait DateUtils extends js.Object {
 object DateUtils {
   @scala.inline
   def apply(
-    addDayToRange: js.Function2[
-      stdLib.Date, 
-      reactDashDayDashPickerLib.typesCommonMod.RangeModifier, 
-      reactDashDayDashPickerLib.typesCommonMod.RangeModifier
-    ],
-    addMonths: js.Function2[stdLib.Date, scala.Double, stdLib.Date],
-    clone: js.Function1[stdLib.Date, stdLib.Date],
-    isDate: js.Function1[stdLib.Date, scala.Boolean],
-    isDayAfter: js.Function2[stdLib.Date, stdLib.Date, scala.Boolean],
-    isDayBefore: js.Function2[stdLib.Date, stdLib.Date, scala.Boolean],
-    isDayBetween: js.Function3[stdLib.Date, stdLib.Date, stdLib.Date, scala.Boolean],
-    isDayInRange: js.Function2[stdLib.Date, reactDashDayDashPickerLib.typesCommonMod.RangeModifier, scala.Boolean],
-    isFutureDay: js.Function1[stdLib.Date, scala.Boolean],
-    isPastDay: js.Function1[stdLib.Date, scala.Boolean],
-    isSameDay: js.Function2[stdLib.Date, stdLib.Date, scala.Boolean],
-    isSameMonth: js.Function2[stdLib.Date, stdLib.Date, scala.Boolean]
+    addDayToRange: (stdLib.Date, reactDashDayDashPickerLib.typesCommonMod.RangeModifier) => reactDashDayDashPickerLib.typesCommonMod.RangeModifier,
+    addMonths: (stdLib.Date, scala.Double) => stdLib.Date,
+    clone: stdLib.Date => stdLib.Date,
+    isDate: stdLib.Date => scala.Boolean,
+    isDayAfter: (stdLib.Date, stdLib.Date) => scala.Boolean,
+    isDayBefore: (stdLib.Date, stdLib.Date) => scala.Boolean,
+    isDayBetween: (stdLib.Date, stdLib.Date, stdLib.Date) => scala.Boolean,
+    isDayInRange: (stdLib.Date, reactDashDayDashPickerLib.typesCommonMod.RangeModifier) => scala.Boolean,
+    isFutureDay: stdLib.Date => scala.Boolean,
+    isPastDay: stdLib.Date => scala.Boolean,
+    isSameDay: (stdLib.Date, stdLib.Date) => scala.Boolean,
+    isSameMonth: (stdLib.Date, stdLib.Date) => scala.Boolean
   ): DateUtils = {
-    val __obj = js.Dynamic.literal(addDayToRange = addDayToRange, addMonths = addMonths, clone = clone, isDate = isDate, isDayAfter = isDayAfter, isDayBefore = isDayBefore, isDayBetween = isDayBetween, isDayInRange = isDayInRange, isFutureDay = isFutureDay, isPastDay = isPastDay, isSameDay = isSameDay, isSameMonth = isSameMonth)
+    val __obj = js.Dynamic.literal(addDayToRange = js.Any.fromFunction2(addDayToRange), addMonths = js.Any.fromFunction2(addMonths), clone = js.Any.fromFunction1(clone), isDate = js.Any.fromFunction1(isDate), isDayAfter = js.Any.fromFunction2(isDayAfter), isDayBefore = js.Any.fromFunction2(isDayBefore), isDayBetween = js.Any.fromFunction3(isDayBetween), isDayInRange = js.Any.fromFunction2(isDayInRange), isFutureDay = js.Any.fromFunction1(isFutureDay), isPastDay = js.Any.fromFunction1(isPastDay), isSameDay = js.Any.fromFunction2(isSameDay), isSameMonth = js.Any.fromFunction2(isSameMonth))
   
     __obj.asInstanceOf[DateUtils]
   }

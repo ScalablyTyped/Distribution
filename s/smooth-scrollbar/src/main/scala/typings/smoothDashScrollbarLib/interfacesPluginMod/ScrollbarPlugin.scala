@@ -20,19 +20,15 @@ object ScrollbarPlugin {
   @scala.inline
   def apply(
     name: java.lang.String,
-    onDestory: js.Function0[scala.Unit],
-    onInit: js.Function0[scala.Unit],
-    onRender: js.Function1[smoothDashScrollbarLib.interfacesDataDash2dMod.Data2d, scala.Unit],
-    onUpdate: js.Function0[scala.Unit],
+    onDestory: () => scala.Unit,
+    onInit: () => scala.Unit,
+    onRender: smoothDashScrollbarLib.interfacesDataDash2dMod.Data2d => scala.Unit,
+    onUpdate: () => scala.Unit,
     options: js.Any,
     scrollbar: smoothDashScrollbarLib.interfacesScrollbarMod.Scrollbar,
-    transformDelta: js.Function2[
-      smoothDashScrollbarLib.interfacesDataDash2dMod.Data2d, 
-      js.Any, 
-      smoothDashScrollbarLib.interfacesDataDash2dMod.Data2d
-    ]
+    transformDelta: (smoothDashScrollbarLib.interfacesDataDash2dMod.Data2d, js.Any) => smoothDashScrollbarLib.interfacesDataDash2dMod.Data2d
   ): ScrollbarPlugin = {
-    val __obj = js.Dynamic.literal(name = name, onDestory = onDestory, onInit = onInit, onRender = onRender, onUpdate = onUpdate, options = options, scrollbar = scrollbar, transformDelta = transformDelta)
+    val __obj = js.Dynamic.literal(name = name, onDestory = js.Any.fromFunction0(onDestory), onInit = js.Any.fromFunction0(onInit), onRender = js.Any.fromFunction1(onRender), onUpdate = js.Any.fromFunction0(onUpdate), options = options, scrollbar = scrollbar, transformDelta = js.Any.fromFunction2(transformDelta))
   
     __obj.asInstanceOf[ScrollbarPlugin]
   }

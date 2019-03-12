@@ -17,13 +17,13 @@ trait Debugging extends js.Object {
 object Debugging {
   @scala.inline
   def apply(
-    getAllGuides: js.Function0[js.Array[Guide]],
-    getAutoGuides: js.Function0[pendoDashIoDashBrowserLib.Anon_Auto],
-    getBadgeGuides: js.Function0[js.Array[Guide]],
-    getEventCache: js.Function0[js.Array[_]],
-    getLauncherGuides: js.Function0[js.Array[Guide]]
+    getAllGuides: () => js.Array[Guide],
+    getAutoGuides: () => pendoDashIoDashBrowserLib.Anon_Auto,
+    getBadgeGuides: () => js.Array[Guide],
+    getEventCache: () => js.Array[_],
+    getLauncherGuides: () => js.Array[Guide]
   ): Debugging = {
-    val __obj = js.Dynamic.literal(getAllGuides = getAllGuides, getAutoGuides = getAutoGuides, getBadgeGuides = getBadgeGuides, getEventCache = getEventCache, getLauncherGuides = getLauncherGuides)
+    val __obj = js.Dynamic.literal(getAllGuides = js.Any.fromFunction0(getAllGuides), getAutoGuides = js.Any.fromFunction0(getAutoGuides), getBadgeGuides = js.Any.fromFunction0(getBadgeGuides), getEventCache = js.Any.fromFunction0(getEventCache), getLauncherGuides = js.Any.fromFunction0(getLauncherGuides))
   
     __obj.asInstanceOf[Debugging]
   }

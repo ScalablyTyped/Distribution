@@ -15,7 +15,7 @@ trait TouchGesturestartEvent extends TouchEvent {
 object TouchGesturestartEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Touch,
     center: kendoDashUiLib.kendoNs.mobileNs.uiNs.Point = null,
@@ -23,7 +23,7 @@ object TouchGesturestartEvent {
     event: kendoDashUiLib.JQueryEventObject = null,
     touches: js.Any = null
   ): TouchGesturestartEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (center != null) __obj.updateDynamic("center")(center)
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event)

@@ -956,7 +956,7 @@ object SdkNs extends js.Object {
     trait AssociatedMenuConfiguration extends js.Object {
       var Behavior: AssociatedMenuBehavior
       var Group: AssociatedMenuGroup
-      var Label: Label
+      var Label: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.Label
       var Order: scala.Double
     }
     
@@ -1147,7 +1147,7 @@ object SdkNs extends js.Object {
       var IsManaged: scala.Boolean
       var IsValidForAdvancedFind: scala.Boolean
       var MetadataId: java.lang.String
-      var RelationshipType: RelationshipType
+      var RelationshipType: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.RelationshipType
       var SchemaName: java.lang.String
       var SecurityTypes: SecurityType
     }
@@ -1196,8 +1196,8 @@ object SdkNs extends js.Object {
     }
     
     trait OneToManyRelationshipMetadata extends js.Object {
-      var AssociatedMenuConfiguration: AssociatedMenuConfiguration
-      var CascadeConfiguration: CascadeConfiguration
+      var AssociatedMenuConfiguration: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.AssociatedMenuConfiguration
+      var CascadeConfiguration: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.CascadeConfiguration
       var HasChanged: js.Any
       var IntroducedVersion: js.Any
       var IsCustomRelationship: scala.Boolean

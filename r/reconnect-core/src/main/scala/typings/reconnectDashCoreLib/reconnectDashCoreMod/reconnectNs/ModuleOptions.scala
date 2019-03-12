@@ -23,7 +23,7 @@ object ModuleOptions {
     immediate: js.UndefOr[scala.Boolean] = js.undefined,
     initialDelay: scala.Int | scala.Double = null,
     maxDelay: scala.Int | scala.Double = null,
-    onConnect: js.Function1[/* con */ ConnectionType, scala.Unit] = null,
+    onConnect: /* con */ ConnectionType => scala.Unit = null,
     randomisationFactor: scala.Int | scala.Double = null,
     strategy: reconnectDashCoreLib.reconnectDashCoreLibStrings.fibonacci | reconnectDashCoreLib.reconnectDashCoreLibStrings.exponential | backoffLib.backoffMod.Backoff = null
   ): ModuleOptions[ConnectionType] = {
@@ -33,7 +33,7 @@ object ModuleOptions {
     if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
     if (initialDelay != null) __obj.updateDynamic("initialDelay")(initialDelay.asInstanceOf[js.Any])
     if (maxDelay != null) __obj.updateDynamic("maxDelay")(maxDelay.asInstanceOf[js.Any])
-    if (onConnect != null) __obj.updateDynamic("onConnect")(onConnect)
+    if (onConnect != null) __obj.updateDynamic("onConnect")(js.Any.fromFunction1(onConnect))
     if (randomisationFactor != null) __obj.updateDynamic("randomisationFactor")(randomisationFactor.asInstanceOf[js.Any])
     if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleOptions[ConnectionType]]

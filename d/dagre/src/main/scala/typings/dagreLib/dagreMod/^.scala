@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def layout(graph: dagreLib.dagreMod.graphlibNs.Graph): scala.Unit = js.native
-  def layout(
-    graph: dagreLib.dagreMod.graphlibNs.Graph,
-    layout: dagreLib.dagreMod.GraphLabel with dagreLib.dagreMod.NodeConfig with dagreLib.dagreMod.EdgeConfig
-  ): scala.Unit = js.native
+  def layout(graph: dagreLib.dagreMod.graphlibNs.Graph, layout: GraphLabel with NodeConfig with EdgeConfig): scala.Unit = js.native
 }
 

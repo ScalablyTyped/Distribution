@@ -5,38 +5,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MockReq extends js.Object {
-  var accepts: sinonLib.sinonMod.SinonNs.SinonStub
-  var acceptsCharsets: sinonLib.sinonMod.SinonNs.SinonStub
-  var acceptsEncodings: sinonLib.sinonMod.SinonNs.SinonStub
-  var acceptsLanguages: sinonLib.sinonMod.SinonNs.SinonStub
-  var body: js.Object
-  var flash: sinonLib.sinonMod.SinonNs.SinonStub
-  var get: sinonLib.sinonMod.SinonNs.SinonStub
-  var is: sinonLib.sinonMod.SinonNs.SinonStub
-  var params: js.Object
-  var query: js.Object
-  var session: js.Object
-}
-
-object MockReq {
-  @scala.inline
-  def apply(
-    accepts: sinonLib.sinonMod.SinonNs.SinonStub,
-    acceptsCharsets: sinonLib.sinonMod.SinonNs.SinonStub,
-    acceptsEncodings: sinonLib.sinonMod.SinonNs.SinonStub,
-    acceptsLanguages: sinonLib.sinonMod.SinonNs.SinonStub,
-    body: js.Object,
-    flash: sinonLib.sinonMod.SinonNs.SinonStub,
-    get: sinonLib.sinonMod.SinonNs.SinonStub,
-    is: sinonLib.sinonMod.SinonNs.SinonStub,
-    params: js.Object,
-    query: js.Object,
-    session: js.Object
-  ): MockReq = {
-    val __obj = js.Dynamic.literal(accepts = accepts, acceptsCharsets = acceptsCharsets, acceptsEncodings = acceptsEncodings, acceptsLanguages = acceptsLanguages, body = body, flash = flash, get = get, is = is, params = params, query = query, session = session)
-  
-    __obj.asInstanceOf[MockReq]
-  }
+  @JSName("acceptsCharsets")
+  var acceptsCharsets_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  @JSName("acceptsEncodings")
+  var acceptsEncodings_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  @JSName("acceptsLanguages")
+  var acceptsLanguages_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  @JSName("accepts")
+  var accepts_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var body: js.Object = js.native
+  @JSName("flash")
+  var flash_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  @JSName("get")
+  var get_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  @JSName("is")
+  var is_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var params: js.Object = js.native
+  var query: js.Object = js.native
+  var session: js.Object = js.native
+  // Methods
+  def accepts(args: js.Any*): js.Any = js.native
+  // Methods
+  def acceptsCharsets(args: js.Any*): js.Any = js.native
+  // Methods
+  def acceptsEncodings(args: js.Any*): js.Any = js.native
+  // Methods
+  def acceptsLanguages(args: js.Any*): js.Any = js.native
+  // Methods
+  def flash(args: js.Any*): js.Any = js.native
+  // Methods
+  def get(args: js.Any*): js.Any = js.native
+  // Methods
+  def is(args: js.Any*): js.Any = js.native
 }
 

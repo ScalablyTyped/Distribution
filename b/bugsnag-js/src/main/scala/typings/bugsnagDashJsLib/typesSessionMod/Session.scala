@@ -18,9 +18,9 @@ object Session {
     events: bugsnagDashJsLib.Anon_Handled,
     id: java.lang.String,
     startedAt: java.lang.String,
-    trackError: js.Function1[bugsnagDashJsLib.typesReportMod.default, scala.Unit]
+    trackError: bugsnagDashJsLib.typesReportMod.default => scala.Unit
   ): Session = {
-    val __obj = js.Dynamic.literal(events = events, id = id, startedAt = startedAt, trackError = trackError)
+    val __obj = js.Dynamic.literal(events = events, id = id, startedAt = startedAt, trackError = js.Any.fromFunction1(trackError))
   
     __obj.asInstanceOf[Session]
   }

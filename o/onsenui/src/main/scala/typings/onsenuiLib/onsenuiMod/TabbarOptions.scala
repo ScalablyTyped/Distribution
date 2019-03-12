@@ -17,7 +17,7 @@ trait TabbarOptions extends js.Object {
   /**
     *
     */
-  var callback: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var callback: js.UndefOr[js.Function] = js.undefined
   /**
     * @description If true the page will not be changed.
     */
@@ -29,7 +29,7 @@ object TabbarOptions {
   def apply(
     animation: java.lang.String = null,
     animationOptions: java.lang.String = null,
-    callback: coreDashJsLib.Function = null,
+    callback: js.Function = null,
     keepPage: js.UndefOr[scala.Boolean] = js.undefined
   ): TabbarOptions = {
     val __obj = js.Dynamic.literal()

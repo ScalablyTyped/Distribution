@@ -36,26 +36,26 @@ trait Anon_Click extends js.Object {
 object Anon_Click {
   @scala.inline
   def apply(
-    click: js.Function1[/* event */ paperLib.paperNs.MouseEvent, scala.Unit | scala.Boolean] = null,
-    doubleclick: js.Function1[/* event */ paperLib.paperNs.MouseEvent, scala.Unit | scala.Boolean] = null,
-    frame: js.Function1[/* event */ paperLib.paperNs.IFrameEvent, scala.Unit] = null,
-    mousedown: js.Function1[/* event */ paperLib.paperNs.MouseEvent, scala.Unit | scala.Boolean] = null,
-    mousedrag: js.Function1[/* event */ paperLib.paperNs.MouseEvent, scala.Unit | scala.Boolean] = null,
-    mouseenter: js.Function1[/* event */ paperLib.paperNs.MouseEvent, scala.Unit | scala.Boolean] = null,
-    mouseleave: js.Function1[/* event */ paperLib.paperNs.MouseEvent, scala.Unit | scala.Boolean] = null,
-    mousemove: js.Function1[/* event */ paperLib.paperNs.MouseEvent, scala.Unit | scala.Boolean] = null,
-    mouseup: js.Function1[/* event */ paperLib.paperNs.MouseEvent, scala.Unit | scala.Boolean] = null
+    click: /* event */ paperLib.paperNs.MouseEvent => scala.Unit | scala.Boolean = null,
+    doubleclick: /* event */ paperLib.paperNs.MouseEvent => scala.Unit | scala.Boolean = null,
+    frame: /* event */ paperLib.paperNs.IFrameEvent => scala.Unit = null,
+    mousedown: /* event */ paperLib.paperNs.MouseEvent => scala.Unit | scala.Boolean = null,
+    mousedrag: /* event */ paperLib.paperNs.MouseEvent => scala.Unit | scala.Boolean = null,
+    mouseenter: /* event */ paperLib.paperNs.MouseEvent => scala.Unit | scala.Boolean = null,
+    mouseleave: /* event */ paperLib.paperNs.MouseEvent => scala.Unit | scala.Boolean = null,
+    mousemove: /* event */ paperLib.paperNs.MouseEvent => scala.Unit | scala.Boolean = null,
+    mouseup: /* event */ paperLib.paperNs.MouseEvent => scala.Unit | scala.Boolean = null
   ): Anon_Click = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (doubleclick != null) __obj.updateDynamic("doubleclick")(doubleclick)
-    if (frame != null) __obj.updateDynamic("frame")(frame)
-    if (mousedown != null) __obj.updateDynamic("mousedown")(mousedown)
-    if (mousedrag != null) __obj.updateDynamic("mousedrag")(mousedrag)
-    if (mouseenter != null) __obj.updateDynamic("mouseenter")(mouseenter)
-    if (mouseleave != null) __obj.updateDynamic("mouseleave")(mouseleave)
-    if (mousemove != null) __obj.updateDynamic("mousemove")(mousemove)
-    if (mouseup != null) __obj.updateDynamic("mouseup")(mouseup)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
+    if (doubleclick != null) __obj.updateDynamic("doubleclick")(js.Any.fromFunction1(doubleclick))
+    if (frame != null) __obj.updateDynamic("frame")(js.Any.fromFunction1(frame))
+    if (mousedown != null) __obj.updateDynamic("mousedown")(js.Any.fromFunction1(mousedown))
+    if (mousedrag != null) __obj.updateDynamic("mousedrag")(js.Any.fromFunction1(mousedrag))
+    if (mouseenter != null) __obj.updateDynamic("mouseenter")(js.Any.fromFunction1(mouseenter))
+    if (mouseleave != null) __obj.updateDynamic("mouseleave")(js.Any.fromFunction1(mouseleave))
+    if (mousemove != null) __obj.updateDynamic("mousemove")(js.Any.fromFunction1(mousemove))
+    if (mouseup != null) __obj.updateDynamic("mouseup")(js.Any.fromFunction1(mouseup))
     __obj.asInstanceOf[Anon_Click]
   }
 }

@@ -36,7 +36,7 @@ object ILegend {
   @scala.inline
   def apply(
     align: scala.Double,
-    availRows: js.Function0[scala.Double],
+    availRows: () => scala.Double,
     bounds: IRectangle,
     chart: IChart,
     dividing: IStroke,
@@ -44,23 +44,23 @@ object ILegend {
     format: IFormat,
     innerOff: scala.Double,
     inverted: scala.Boolean,
-    isVertical: js.Function0[scala.Boolean],
+    isVertical: () => scala.Boolean,
     itemHeight: scala.Double,
-    itemText: js.Function2[ISeries, scala.Double, java.lang.String],
-    itemsCount: js.Function0[scala.Double],
+    itemText: (ISeries, scala.Double) => java.lang.String,
+    itemsCount: () => scala.Double,
     legendStyle: java.lang.String,
     over: scala.Double,
     padding: scala.Double,
     position: java.lang.String,
-    showValues: js.Function0[scala.Boolean],
+    showValues: () => scala.Boolean,
     symbol: ISymbol,
     textStyle: java.lang.String,
     title: IAnnotation,
-    totalWidth: js.Function0[scala.Double],
+    totalWidth: () => scala.Double,
     transparent: scala.Boolean,
     visible: scala.Boolean
   ): ILegend = {
-    val __obj = js.Dynamic.literal(align = align, availRows = availRows, bounds = bounds, chart = chart, dividing = dividing, fontColor = fontColor, format = format, innerOff = innerOff, inverted = inverted, isVertical = isVertical, itemHeight = itemHeight, itemText = itemText, itemsCount = itemsCount, legendStyle = legendStyle, over = over, padding = padding, position = position, showValues = showValues, symbol = symbol, textStyle = textStyle, title = title, totalWidth = totalWidth, transparent = transparent, visible = visible)
+    val __obj = js.Dynamic.literal(align = align, availRows = js.Any.fromFunction0(availRows), bounds = bounds, chart = chart, dividing = dividing, fontColor = fontColor, format = format, innerOff = innerOff, inverted = inverted, isVertical = js.Any.fromFunction0(isVertical), itemHeight = itemHeight, itemText = js.Any.fromFunction2(itemText), itemsCount = js.Any.fromFunction0(itemsCount), legendStyle = legendStyle, over = over, padding = padding, position = position, showValues = js.Any.fromFunction0(showValues), symbol = symbol, textStyle = textStyle, title = title, totalWidth = js.Any.fromFunction0(totalWidth), transparent = transparent, visible = visible)
   
     __obj.asInstanceOf[ILegend]
   }

@@ -11,20 +11,20 @@ import scala.scalajs.js.annotation._
   */
 trait XIdlClassProvider
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
-  val IdlClasses: activexDashInteropLib.SafeArray[XIdlClass[_]]
-  def getIdlClasses(): activexDashInteropLib.SafeArray[XIdlClass[_]]
+  val IdlClasses: stdLib.SafeArray[XIdlClass[_]]
+  def getIdlClasses(): stdLib.SafeArray[XIdlClass[_]]
 }
 
 object XIdlClassProvider {
   @scala.inline
   def apply(
-    IdlClasses: activexDashInteropLib.SafeArray[XIdlClass[_]],
-    acquire: js.Function0[scala.Unit],
-    getIdlClasses: js.Function0[activexDashInteropLib.SafeArray[XIdlClass[_]]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    IdlClasses: stdLib.SafeArray[XIdlClass[_]],
+    acquire: () => scala.Unit,
+    getIdlClasses: () => stdLib.SafeArray[XIdlClass[_]],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XIdlClassProvider = {
-    val __obj = js.Dynamic.literal(IdlClasses = IdlClasses, acquire = acquire, getIdlClasses = getIdlClasses, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(IdlClasses = IdlClasses, acquire = js.Any.fromFunction0(acquire), getIdlClasses = js.Any.fromFunction0(getIdlClasses), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XIdlClassProvider]
   }

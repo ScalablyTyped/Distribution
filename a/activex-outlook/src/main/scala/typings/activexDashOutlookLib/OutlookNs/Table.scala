@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.Table")
 @js.native
 class Table protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
-  val Columns: Columns = js.native
+  val Columns: activexDashOutlookLib.OutlookNs.Columns = js.native
   val EndOfTable: scala.Boolean = js.native
   var `Outlook.Table_typekey`: Table = js.native
   val Parent: js.Any = js.native

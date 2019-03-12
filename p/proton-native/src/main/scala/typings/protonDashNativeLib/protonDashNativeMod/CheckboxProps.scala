@@ -41,7 +41,7 @@ object CheckboxProps {
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     expand: protonDashNativeLib.Anon_H = null,
     label: java.lang.String = null,
-    onToggle: js.Function1[/* checked */ scala.Boolean, scala.Unit] = null,
+    onToggle: /* checked */ scala.Boolean => scala.Unit = null,
     row: scala.Int | scala.Double = null,
     span: protonDashNativeLib.Anon_X = null,
     stretchy: js.UndefOr[scala.Boolean] = js.undefined,
@@ -55,7 +55,7 @@ object CheckboxProps {
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (label != null) __obj.updateDynamic("label")(label)
-    if (onToggle != null) __obj.updateDynamic("onToggle")(onToggle)
+    if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction1(onToggle))
     if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     if (span != null) __obj.updateDynamic("span")(span)
     if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy)

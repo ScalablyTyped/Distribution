@@ -49,26 +49,26 @@ trait DialogContext extends js.Object {
 object DialogContext {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
-    enableButtons: js.Function1[scala.Boolean, scala.Unit],
-    getButton: js.Function1[java.lang.String, jqueryLib.JQuery[stdLib.HTMLElement]],
-    getData: js.Function1[java.lang.String, js.Any],
-    getModal: js.Function0[jqueryLib.JQuery[stdLib.HTMLElement]],
-    getModalBody: js.Function0[jqueryLib.JQuery[stdLib.HTMLElement]],
-    getModalContent: js.Function0[jqueryLib.JQuery[stdLib.HTMLElement]],
-    getModalDialog: js.Function0[jqueryLib.JQuery[stdLib.HTMLElement]],
-    getModalFooter: js.Function0[jqueryLib.JQuery[stdLib.HTMLElement]],
-    getModalHeader: js.Function0[jqueryLib.JQuery[stdLib.HTMLElement]],
-    getTitle: js.Function0[java.lang.String],
-    open: js.Function0[scala.Unit],
-    realize: js.Function0[scala.Unit],
-    setClosable: js.Function1[scala.Boolean, scala.Unit],
-    setData: js.Function2[java.lang.String, js.Any, scala.Unit],
-    setMessage: js.Function1[java.lang.String, scala.Unit],
-    setTitle: js.Function1[java.lang.String, scala.Unit],
-    setType: js.Function1[java.lang.String, scala.Unit]
+    close: () => scala.Unit,
+    enableButtons: scala.Boolean => scala.Unit,
+    getButton: java.lang.String => jqueryLib.JQuery[stdLib.HTMLElement],
+    getData: java.lang.String => js.Any,
+    getModal: () => jqueryLib.JQuery[stdLib.HTMLElement],
+    getModalBody: () => jqueryLib.JQuery[stdLib.HTMLElement],
+    getModalContent: () => jqueryLib.JQuery[stdLib.HTMLElement],
+    getModalDialog: () => jqueryLib.JQuery[stdLib.HTMLElement],
+    getModalFooter: () => jqueryLib.JQuery[stdLib.HTMLElement],
+    getModalHeader: () => jqueryLib.JQuery[stdLib.HTMLElement],
+    getTitle: () => java.lang.String,
+    open: () => scala.Unit,
+    realize: () => scala.Unit,
+    setClosable: scala.Boolean => scala.Unit,
+    setData: (java.lang.String, js.Any) => scala.Unit,
+    setMessage: java.lang.String => scala.Unit,
+    setTitle: java.lang.String => scala.Unit,
+    setType: java.lang.String => scala.Unit
   ): DialogContext = {
-    val __obj = js.Dynamic.literal(close = close, enableButtons = enableButtons, getButton = getButton, getData = getData, getModal = getModal, getModalBody = getModalBody, getModalContent = getModalContent, getModalDialog = getModalDialog, getModalFooter = getModalFooter, getModalHeader = getModalHeader, getTitle = getTitle, open = open, realize = realize, setClosable = setClosable, setData = setData, setMessage = setMessage, setTitle = setTitle, setType = setType)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), enableButtons = js.Any.fromFunction1(enableButtons), getButton = js.Any.fromFunction1(getButton), getData = js.Any.fromFunction1(getData), getModal = js.Any.fromFunction0(getModal), getModalBody = js.Any.fromFunction0(getModalBody), getModalContent = js.Any.fromFunction0(getModalContent), getModalDialog = js.Any.fromFunction0(getModalDialog), getModalFooter = js.Any.fromFunction0(getModalFooter), getModalHeader = js.Any.fromFunction0(getModalHeader), getTitle = js.Any.fromFunction0(getTitle), open = js.Any.fromFunction0(open), realize = js.Any.fromFunction0(realize), setClosable = js.Any.fromFunction1(setClosable), setData = js.Any.fromFunction2(setData), setMessage = js.Any.fromFunction1(setMessage), setTitle = js.Any.fromFunction1(setTitle), setType = js.Any.fromFunction1(setType))
   
     __obj.asInstanceOf[DialogContext]
   }

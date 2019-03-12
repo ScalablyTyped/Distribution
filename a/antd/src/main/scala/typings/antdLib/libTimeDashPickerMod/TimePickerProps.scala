@@ -28,7 +28,7 @@ trait TimePickerProps extends js.Object {
   ] = js.undefined
   var focusOnOpen: js.UndefOr[scala.Boolean] = js.undefined
   var format: js.UndefOr[java.lang.String] = js.undefined
-  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ reactLib.Element, reactLib.HTMLElement]] = js.undefined
+  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.Element, stdLib.HTMLElement]] = js.undefined
   var hideDisabledOptions: js.UndefOr[scala.Boolean] = js.undefined
   var hourStep: js.UndefOr[scala.Double] = js.undefined
   var inputReadOnly: js.UndefOr[scala.Boolean] = js.undefined
@@ -71,27 +71,19 @@ object TimePickerProps {
     defaultOpenValue: momentLib.momentMod.momentNs.Moment = null,
     defaultValue: momentLib.momentMod.momentNs.Moment | js.Array[momentLib.momentMod.momentNs.Moment] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    disabledHours: js.Function0[js.Array[scala.Double]] = null,
-    disabledMinutes: js.Function1[/* selectedHour */ scala.Double, js.Array[scala.Double]] = null,
-    disabledSeconds: js.Function2[
-      /* selectedHour */ scala.Double, 
-      /* selectedMinute */ scala.Double, 
-      js.Array[scala.Double]
-    ] = null,
+    disabledHours: () => js.Array[scala.Double] = null,
+    disabledMinutes: /* selectedHour */ scala.Double => js.Array[scala.Double] = null,
+    disabledSeconds: (/* selectedHour */ scala.Double, /* selectedMinute */ scala.Double) => js.Array[scala.Double] = null,
     focusOnOpen: js.UndefOr[scala.Boolean] = js.undefined,
     format: java.lang.String = null,
-    getPopupContainer: js.Function1[/* triggerNode */ reactLib.Element, reactLib.HTMLElement] = null,
+    getPopupContainer: /* triggerNode */ stdLib.Element => stdLib.HTMLElement = null,
     hideDisabledOptions: js.UndefOr[scala.Boolean] = js.undefined,
     hourStep: scala.Int | scala.Double = null,
     inputReadOnly: js.UndefOr[scala.Boolean] = js.undefined,
     minuteStep: scala.Int | scala.Double = null,
-    onAmPmChange: js.Function1[/* ampm */ antdLib.antdLibStrings.AM | antdLib.antdLibStrings.PM, scala.Unit] = null,
-    onChange: js.Function2[
-      /* time */ momentLib.momentMod.momentNs.Moment, 
-      /* timeString */ java.lang.String, 
-      scala.Unit
-    ] = null,
-    onOpenChange: js.Function1[/* open */ scala.Boolean, scala.Unit] = null,
+    onAmPmChange: /* ampm */ antdLib.antdLibStrings.AM | antdLib.antdLibStrings.PM => scala.Unit = null,
+    onChange: (/* time */ momentLib.momentMod.momentNs.Moment, /* timeString */ java.lang.String) => scala.Unit = null,
+    onOpenChange: /* open */ scala.Boolean => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     placeholder: java.lang.String = null,
     popupClassName: java.lang.String = null,
@@ -114,19 +106,19 @@ object TimePickerProps {
     if (defaultOpenValue != null) __obj.updateDynamic("defaultOpenValue")(defaultOpenValue)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (disabledHours != null) __obj.updateDynamic("disabledHours")(disabledHours)
-    if (disabledMinutes != null) __obj.updateDynamic("disabledMinutes")(disabledMinutes)
-    if (disabledSeconds != null) __obj.updateDynamic("disabledSeconds")(disabledSeconds)
+    if (disabledHours != null) __obj.updateDynamic("disabledHours")(js.Any.fromFunction0(disabledHours))
+    if (disabledMinutes != null) __obj.updateDynamic("disabledMinutes")(js.Any.fromFunction1(disabledMinutes))
+    if (disabledSeconds != null) __obj.updateDynamic("disabledSeconds")(js.Any.fromFunction2(disabledSeconds))
     if (!js.isUndefined(focusOnOpen)) __obj.updateDynamic("focusOnOpen")(focusOnOpen)
     if (format != null) __obj.updateDynamic("format")(format)
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer)
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (!js.isUndefined(hideDisabledOptions)) __obj.updateDynamic("hideDisabledOptions")(hideDisabledOptions)
     if (hourStep != null) __obj.updateDynamic("hourStep")(hourStep.asInstanceOf[js.Any])
     if (!js.isUndefined(inputReadOnly)) __obj.updateDynamic("inputReadOnly")(inputReadOnly)
     if (minuteStep != null) __obj.updateDynamic("minuteStep")(minuteStep.asInstanceOf[js.Any])
-    if (onAmPmChange != null) __obj.updateDynamic("onAmPmChange")(onAmPmChange)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(onOpenChange)
+    if (onAmPmChange != null) __obj.updateDynamic("onAmPmChange")(js.Any.fromFunction1(onAmPmChange))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1(onOpenChange))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (popupClassName != null) __obj.updateDynamic("popupClassName")(popupClassName)

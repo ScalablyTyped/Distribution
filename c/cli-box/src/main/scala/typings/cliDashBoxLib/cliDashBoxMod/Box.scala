@@ -16,9 +16,9 @@ object Box {
   def apply(
     options: cliDashBoxLib.Anon_Fullscreen,
     settings: cliDashBoxLib.Anon_Height,
-    stringify: js.Function0[java.lang.String]
+    stringify: () => java.lang.String
   ): Box = {
-    val __obj = js.Dynamic.literal(options = options, settings = settings, stringify = stringify)
+    val __obj = js.Dynamic.literal(options = options, settings = settings, stringify = js.Any.fromFunction0(stringify))
   
     __obj.asInstanceOf[Box]
   }

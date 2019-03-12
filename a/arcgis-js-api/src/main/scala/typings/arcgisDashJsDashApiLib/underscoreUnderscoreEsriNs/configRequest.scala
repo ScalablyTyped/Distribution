@@ -104,8 +104,8 @@ object configRequest {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     httpsDomains: js.Array[java.lang.String] = null,
     interceptors: js.Array[RequestInterceptor] = null,
     maxUrlLength: scala.Int | scala.Double = null,
@@ -115,7 +115,7 @@ object configRequest {
     trustedServers: js.Array[java.lang.String] = null,
     useIdentity: js.UndefOr[scala.Boolean] = js.undefined
   ): configRequest = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (httpsDomains != null) __obj.updateDynamic("httpsDomains")(httpsDomains)
     if (interceptors != null) __obj.updateDynamic("interceptors")(interceptors)
     if (maxUrlLength != null) __obj.updateDynamic("maxUrlLength")(maxUrlLength.asInstanceOf[js.Any])

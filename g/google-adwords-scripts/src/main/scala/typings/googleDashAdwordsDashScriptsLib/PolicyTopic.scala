@@ -13,12 +13,8 @@ trait PolicyTopic extends js.Object {
 
 object PolicyTopic {
   @scala.inline
-  def apply(
-    getId: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getType: js.Function0[java.lang.String]
-  ): PolicyTopic = {
-    val __obj = js.Dynamic.literal(getId = getId, getName = getName, getType = getType)
+  def apply(getId: () => java.lang.String, getName: () => java.lang.String, getType: () => java.lang.String): PolicyTopic = {
+    val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId), getName = js.Any.fromFunction0(getName), getType = js.Any.fromFunction0(getType))
   
     __obj.asInstanceOf[PolicyTopic]
   }

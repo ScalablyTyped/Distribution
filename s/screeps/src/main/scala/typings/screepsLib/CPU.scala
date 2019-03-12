@@ -53,15 +53,15 @@ object CPU {
   @scala.inline
   def apply(
     bucket: scala.Double,
-    getUsed: js.Function0[scala.Double],
+    getUsed: () => scala.Double,
     limit: scala.Double,
-    setShardLimits: js.Function1[CPUShardLimits, OK | ERR_BUSY | ERR_INVALID_ARGS],
+    setShardLimits: CPUShardLimits => OK | ERR_BUSY | ERR_INVALID_ARGS,
     shardLimits: CPUShardLimits,
     tickLimit: scala.Double,
-    getHeapStatistics: js.Function0[HeapStatistics] = null
+    getHeapStatistics: () => HeapStatistics = null
   ): CPU = {
-    val __obj = js.Dynamic.literal(bucket = bucket, getUsed = getUsed, limit = limit, setShardLimits = setShardLimits, shardLimits = shardLimits, tickLimit = tickLimit)
-    if (getHeapStatistics != null) __obj.updateDynamic("getHeapStatistics")(getHeapStatistics)
+    val __obj = js.Dynamic.literal(bucket = bucket, getUsed = js.Any.fromFunction0(getUsed), limit = limit, setShardLimits = js.Any.fromFunction1(setShardLimits), shardLimits = shardLimits, tickLimit = tickLimit)
+    if (getHeapStatistics != null) __obj.updateDynamic("getHeapStatistics")(js.Any.fromFunction0(getHeapStatistics))
     __obj.asInstanceOf[CPU]
   }
 }

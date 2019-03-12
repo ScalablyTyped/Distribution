@@ -15,16 +15,10 @@ trait PushtokensResource extends js.Object {
 object PushtokensResource {
   @scala.inline
   def apply(
-    remove: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    update: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ]
+    remove: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    update: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   ): PushtokensResource = {
-    val __obj = js.Dynamic.literal(remove = remove, update = update)
+    val __obj = js.Dynamic.literal(remove = js.Any.fromFunction1(remove), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[PushtokensResource]
   }

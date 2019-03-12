@@ -27,19 +27,13 @@ trait ProjectsResource extends js.Object {
 object ProjectsResource {
   @scala.inline
   def apply(
-    getConfig: js.Function1[
-      gapiDotClientDotMlLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__GetConfigResponse]
-    ],
+    getConfig: gapiDotClientDotMlLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__GetConfigResponse],
     jobs: JobsResource,
     models: ModelsResource,
     operations: OperationsResource,
-    predict: js.Function1[
-      gapiDotClientDotMlLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GoogleApi__HttpBody]
-    ]
+    predict: gapiDotClientDotMlLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[GoogleApi__HttpBody]
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal(getConfig = getConfig, jobs = jobs, models = models, operations = operations, predict = predict)
+    val __obj = js.Dynamic.literal(getConfig = js.Any.fromFunction1(getConfig), jobs = jobs, models = models, operations = operations, predict = js.Any.fromFunction1(predict))
   
     __obj.asInstanceOf[ProjectsResource]
   }

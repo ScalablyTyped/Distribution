@@ -19,18 +19,11 @@ trait Anon_CallbackCapture extends js.Object {
 object Anon_CallbackCapture {
   @scala.inline
   def apply(
-    capture: js.Function2[
-      chromeLib.chromeNs.tabCaptureNs.CaptureOptions, 
-      js.Function1[/* stream */ stdLib.MediaStream | scala.Null, scala.Unit], 
-      scala.Unit
-    ],
-    getCapturedTabs: js.Function1[
-      js.Function1[/* result */ js.Array[chromeLib.chromeNs.tabCaptureNs.CaptureInfo], scala.Unit], 
-      scala.Unit
-    ],
+    capture: (chromeLib.chromeNs.tabCaptureNs.CaptureOptions, js.Function1[/* stream */ stdLib.MediaStream | scala.Null, scala.Unit]) => scala.Unit,
+    getCapturedTabs: js.Function1[/* result */ js.Array[chromeLib.chromeNs.tabCaptureNs.CaptureInfo], scala.Unit] => scala.Unit,
     onStatusChanged: chromeLib.chromeNs.tabCaptureNs.CaptureStatusChangedEvent
   ): Anon_CallbackCapture = {
-    val __obj = js.Dynamic.literal(capture = capture, getCapturedTabs = getCapturedTabs, onStatusChanged = onStatusChanged)
+    val __obj = js.Dynamic.literal(capture = js.Any.fromFunction2(capture), getCapturedTabs = js.Any.fromFunction1(getCapturedTabs), onStatusChanged = onStatusChanged)
   
     __obj.asInstanceOf[Anon_CallbackCapture]
   }

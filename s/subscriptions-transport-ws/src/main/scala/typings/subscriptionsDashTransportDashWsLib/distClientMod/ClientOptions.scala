@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ClientOptions extends js.Object {
   var connectionCallback: js.UndefOr[
-    js.Function2[/* error */ js.Array[nodeLib.Error], /* result */ js.UndefOr[js.Any], scala.Unit]
+    js.Function2[/* error */ js.Array[stdLib.Error], /* result */ js.UndefOr[js.Any], scala.Unit]
   ] = js.undefined
   var connectionParams: js.UndefOr[ConnectionParamsOptions] = js.undefined
   var inactivityTimeout: js.UndefOr[scala.Double] = js.undefined
@@ -20,7 +20,7 @@ trait ClientOptions extends js.Object {
 object ClientOptions {
   @scala.inline
   def apply(
-    connectionCallback: js.Function2[/* error */ js.Array[nodeLib.Error], /* result */ js.UndefOr[js.Any], scala.Unit] = null,
+    connectionCallback: (/* error */ js.Array[stdLib.Error], /* result */ js.UndefOr[js.Any]) => scala.Unit = null,
     connectionParams: ConnectionParamsOptions = null,
     inactivityTimeout: scala.Int | scala.Double = null,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
@@ -29,7 +29,7 @@ object ClientOptions {
     timeout: scala.Int | scala.Double = null
   ): ClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (connectionCallback != null) __obj.updateDynamic("connectionCallback")(connectionCallback)
+    if (connectionCallback != null) __obj.updateDynamic("connectionCallback")(js.Any.fromFunction2(connectionCallback))
     if (connectionParams != null) __obj.updateDynamic("connectionParams")(connectionParams.asInstanceOf[js.Any])
     if (inactivityTimeout != null) __obj.updateDynamic("inactivityTimeout")(inactivityTimeout.asInstanceOf[js.Any])
     if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)

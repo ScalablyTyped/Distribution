@@ -14,8 +14,8 @@ trait _IClear extends js.Object {
 
 object _IClear {
   @scala.inline
-  def apply(clear: js.Function0[scala.Unit]): _IClear = {
-    val __obj = js.Dynamic.literal(clear = clear)
+  def apply(clear: () => scala.Unit): _IClear = {
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear))
   
     __obj.asInstanceOf[_IClear]
   }

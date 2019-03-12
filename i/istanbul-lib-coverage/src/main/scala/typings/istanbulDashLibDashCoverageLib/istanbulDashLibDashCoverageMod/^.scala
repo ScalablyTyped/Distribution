@@ -9,12 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val classes: istanbulDashLibDashCoverageLib.Anon_FileCoverage = js.native
-  def createCoverageMap(): istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageMap = js.native
-  def createCoverageMap(data: istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageMap): istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageMap = js.native
-  def createCoverageMap(data: istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageMapData): istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageMap = js.native
-  def createCoverageSummary(): istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageSummary = js.native
-  def createCoverageSummary(obj: istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageSummary): istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageSummary = js.native
-  def createFileCoverage(pathOrObject: istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.FileCoverageData): istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.FileCoverage = js.native
-  def createFileCoverage(pathOrObject: java.lang.String): istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.FileCoverage = js.native
+  def createCoverageMap(): CoverageMap = js.native
+  def createCoverageMap(data: CoverageMap): CoverageMap = js.native
+  def createCoverageMap(data: CoverageMapData): CoverageMap = js.native
+  def createCoverageSummary(): CoverageSummary = js.native
+  def createCoverageSummary(obj: CoverageSummary): CoverageSummary = js.native
+  def createCoverageSummary(obj: CoverageSummaryData): CoverageSummary = js.native
+  def createFileCoverage(pathOrObject: FileCoverage): FileCoverage = js.native
+  def createFileCoverage(pathOrObject: FileCoverageData): FileCoverage = js.native
+  def createFileCoverage(pathOrObject: java.lang.String): FileCoverage = js.native
 }
 

@@ -1,0 +1,18 @@
+package typings
+package reactDashNativeDashDraggableDashFlatlistLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashNativeDashDraggableDashFlatlistLibComponents {
+  @scala.inline
+  def ReactDashNativeDashDraggableDashFlatlist[Item]: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashNativeDashDraggableDashFlatlistLib.reactDashNativeDashDraggableDashFlatlistMod.DraggableFlatListProps[Item]
+  ] = js.constructorOf[reactDashNativeDashDraggableDashFlatlistLib.reactDashNativeDashDraggableDashFlatlistMod.default[Item]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashNativeDashDraggableDashFlatlistLib.reactDashNativeDashDraggableDashFlatlistMod.DraggableFlatListProps[Item]]]
+  @scala.inline
+  def DraggableFlatListProps: reactDashNativeDashDraggableDashFlatlistLib.reactDashNativeDashDraggableDashFlatlistMod.DraggableFlatListProps.type = reactDashNativeDashDraggableDashFlatlistLib.reactDashNativeDashDraggableDashFlatlistMod.DraggableFlatListProps
+  type DraggableFlatListProps[Item] = reactDashNativeDashDraggableDashFlatlistLib.reactDashNativeDashDraggableDashFlatlistMod.DraggableFlatListProps[Item]
+}
+

@@ -23,9 +23,9 @@ trait ProjectionPickerViewModel extends js.Object {
 object ProjectionPickerViewModel {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     dropDownVisible: scala.Boolean,
-    isDestroyed: js.Function0[scala.Boolean],
+    isDestroyed: () => scala.Boolean,
     isOrthographicProjection: Command,
     scene: Scene,
     sceneMode: SceneMode,
@@ -36,7 +36,7 @@ object ProjectionPickerViewModel {
     tooltipOrthographic: java.lang.String,
     tooltipPerspective: java.lang.String
   ): ProjectionPickerViewModel = {
-    val __obj = js.Dynamic.literal(destroy = destroy, dropDownVisible = dropDownVisible, isDestroyed = isDestroyed, isOrthographicProjection = isOrthographicProjection, scene = scene, sceneMode = sceneMode, selectedTooltip = selectedTooltip, switchToOrthographic = switchToOrthographic, switchToPerspective = switchToPerspective, toggleDropdown = toggleDropdown, tooltipOrthographic = tooltipOrthographic, tooltipPerspective = tooltipPerspective)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), dropDownVisible = dropDownVisible, isDestroyed = js.Any.fromFunction0(isDestroyed), isOrthographicProjection = isOrthographicProjection, scene = scene, sceneMode = sceneMode, selectedTooltip = selectedTooltip, switchToOrthographic = switchToOrthographic, switchToPerspective = switchToPerspective, toggleDropdown = toggleDropdown, tooltipOrthographic = tooltipOrthographic, tooltipPerspective = tooltipPerspective)
   
     __obj.asInstanceOf[ProjectionPickerViewModel]
   }

@@ -19,10 +19,10 @@ object Batch {
   def apply(
     _defer: scala.Boolean,
     _expirationTime: ExpirationTime,
-    _onComplete: js.Function0[js.Any],
+    _onComplete: () => js.Any,
     _next: Batch = null
   ): Batch = {
-    val __obj = js.Dynamic.literal(_defer = _defer, _expirationTime = _expirationTime, _onComplete = _onComplete)
+    val __obj = js.Dynamic.literal(_defer = _defer, _expirationTime = _expirationTime, _onComplete = js.Any.fromFunction0(_onComplete))
     if (_next != null) __obj.updateDynamic("_next")(_next)
     __obj.asInstanceOf[Batch]
   }

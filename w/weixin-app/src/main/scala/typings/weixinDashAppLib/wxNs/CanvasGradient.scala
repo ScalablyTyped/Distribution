@@ -11,8 +11,8 @@ trait CanvasGradient extends js.Object {
 
 object CanvasGradient {
   @scala.inline
-  def apply(addColorStop: js.Function2[scala.Double, java.lang.String, scala.Unit]): CanvasGradient = {
-    val __obj = js.Dynamic.literal(addColorStop = addColorStop)
+  def apply(addColorStop: (scala.Double, java.lang.String) => scala.Unit): CanvasGradient = {
+    val __obj = js.Dynamic.literal(addColorStop = js.Any.fromFunction2(addColorStop))
   
     __obj.asInstanceOf[CanvasGradient]
   }

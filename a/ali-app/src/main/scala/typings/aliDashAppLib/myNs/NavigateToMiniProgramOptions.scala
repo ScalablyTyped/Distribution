@@ -33,20 +33,20 @@ object NavigateToMiniProgramOptions {
   @scala.inline
   def apply(
     appId: java.lang.String,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    complete: /* res */ js.Any => scala.Unit = null,
     envVersion: aliDashAppLib.aliDashAppLibStrings.develop | aliDashAppLib.aliDashAppLibStrings.trial | aliDashAppLib.aliDashAppLibStrings.release | java.lang.String = null,
     extraData: js.Any = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
+    fail: js.Any => scala.Unit = null,
     path: java.lang.String = null,
-    success: js.Function1[js.Any, scala.Unit] = null
+    success: js.Any => scala.Unit = null
   ): NavigateToMiniProgramOptions = {
     val __obj = js.Dynamic.literal(appId = appId)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (envVersion != null) __obj.updateDynamic("envVersion")(envVersion.asInstanceOf[js.Any])
     if (extraData != null) __obj.updateDynamic("extraData")(extraData)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (path != null) __obj.updateDynamic("path")(path)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[NavigateToMiniProgramOptions]
   }
 }

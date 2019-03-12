@@ -19,12 +19,12 @@ object IShellItems {
   def apply(
     Count: scala.Double,
     Folders: IFolderDefs,
-    GetObjectVersionsCount: js.Function0[scala.Double],
+    GetObjectVersionsCount: () => scala.Double,
     ObjectFiles: IObjectFileAndObjVerOfMultipleFiles,
     ObjectVersions: IObjectVersions,
     ObjectVersionsAndProperties: IObjectVersionAndPropertiesOfMultipleObjects
   ): IShellItems = {
-    val __obj = js.Dynamic.literal(Count = Count, Folders = Folders, GetObjectVersionsCount = GetObjectVersionsCount, ObjectFiles = ObjectFiles, ObjectVersions = ObjectVersions, ObjectVersionsAndProperties = ObjectVersionsAndProperties)
+    val __obj = js.Dynamic.literal(Count = Count, Folders = Folders, GetObjectVersionsCount = js.Any.fromFunction0(GetObjectVersionsCount), ObjectFiles = ObjectFiles, ObjectVersions = ObjectVersions, ObjectVersionsAndProperties = ObjectVersionsAndProperties)
   
     __obj.asInstanceOf[IShellItems]
   }

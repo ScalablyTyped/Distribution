@@ -23,12 +23,9 @@ trait ScriptsResource extends js.Object {
 object ScriptsResource {
   @scala.inline
   def apply(
-    run: js.Function1[
-      gapiDotClientDotScriptLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    run: gapiDotClientDotScriptLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): ScriptsResource = {
-    val __obj = js.Dynamic.literal(run = run)
+    val __obj = js.Dynamic.literal(run = js.Any.fromFunction1(run))
   
     __obj.asInstanceOf[ScriptsResource]
   }

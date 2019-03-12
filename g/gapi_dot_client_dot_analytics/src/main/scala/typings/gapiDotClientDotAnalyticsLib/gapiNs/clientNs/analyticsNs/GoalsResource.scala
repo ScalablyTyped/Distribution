@@ -21,28 +21,13 @@ trait GoalsResource extends js.Object {
 object GoalsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsGoalId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Goal]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Goal]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresultsOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Goals]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsGoalId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Goal]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsGoalId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Goal]
-    ]
+    get: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsGoalId => gapiDotClientLib.gapiNs.clientNs.Request[Goal],
+    insert: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Goal],
+    list: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresultsOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Goals],
+    patch: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsGoalId => gapiDotClientLib.gapiNs.clientNs.Request[Goal],
+    update: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsGoalId => gapiDotClientLib.gapiNs.clientNs.Request[Goal]
   ): GoalsResource = {
-    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[GoalsResource]
   }

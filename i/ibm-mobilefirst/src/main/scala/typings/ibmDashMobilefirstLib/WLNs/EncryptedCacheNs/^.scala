@@ -23,35 +23,21 @@ object ^ extends js.Object {
   var ERROR_UNKNOWN: scala.Double = js.native
   var ERROR_UNSAFE_CREDENTIALS: scala.Double = js.native
   var OK: scala.Double = js.native
-  def close(
-    successHandler: ibmDashMobilefirstLib.WLNs.EncryptedCacheNs.StatusHandler,
-    failureHandler: ibmDashMobilefirstLib.WLNs.EncryptedCacheNs.StatusHandler
-  ): scala.Unit = js.native
-  def destroy(
-    successHandler: ibmDashMobilefirstLib.WLNs.EncryptedCacheNs.StatusHandler,
-    failureHandler: ibmDashMobilefirstLib.WLNs.EncryptedCacheNs.StatusHandler
-  ): scala.Unit = js.native
+  def close(successHandler: StatusHandler, failureHandler: StatusHandler): scala.Unit = js.native
+  def destroy(successHandler: StatusHandler, failureHandler: StatusHandler): scala.Unit = js.native
   def open(
     credentials: java.lang.String,
     createIfNone: scala.Boolean,
-    successHandler: ibmDashMobilefirstLib.WLNs.EncryptedCacheNs.StatusHandler,
-    failureHandler: ibmDashMobilefirstLib.WLNs.EncryptedCacheNs.StatusHandler
+    successHandler: StatusHandler,
+    failureHandler: StatusHandler
   ): scala.Unit = js.native
-  def read(
-    key: java.lang.String,
-    successHandler: ibmDashMobilefirstLib.WLNs.EncryptedCacheNs.StatusHandler,
-    failureHandler: ibmDashMobilefirstLib.WLNs.EncryptedCacheNs.StatusHandler
-  ): scala.Unit = js.native
-  def remove(
-    key: java.lang.String,
-    successHandler: ibmDashMobilefirstLib.WLNs.EncryptedCacheNs.StatusHandler,
-    failureHandler: ibmDashMobilefirstLib.WLNs.EncryptedCacheNs.StatusHandler
-  ): scala.Unit = js.native
+  def read(key: java.lang.String, successHandler: StatusHandler, failureHandler: StatusHandler): scala.Unit = js.native
+  def remove(key: java.lang.String, successHandler: StatusHandler, failureHandler: StatusHandler): scala.Unit = js.native
   def write(
     key: java.lang.String,
     value: java.lang.String,
-    successHandler: ibmDashMobilefirstLib.WLNs.EncryptedCacheNs.StatusHandler,
-    failureHandler: ibmDashMobilefirstLib.WLNs.EncryptedCacheNs.StatusHandler
+    successHandler: StatusHandler,
+    failureHandler: StatusHandler
   ): scala.Unit = js.native
 }
 

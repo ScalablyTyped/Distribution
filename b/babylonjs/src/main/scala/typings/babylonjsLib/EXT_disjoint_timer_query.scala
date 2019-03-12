@@ -29,14 +29,14 @@ object EXT_disjoint_timer_query {
     QUERY_RESULT_EXT: scala.Double,
     TIMESTAMP_EXT: scala.Double,
     TIME_ELAPSED_EXT: scala.Double,
-    beginQueryEXT: js.Function2[scala.Double, WebGLQuery, scala.Unit],
-    createQueryEXT: js.Function0[WebGLQuery],
-    deleteQueryEXT: js.Function1[WebGLQuery, scala.Unit],
-    endQueryEXT: js.Function1[scala.Double, scala.Unit],
-    getQueryObjectEXT: js.Function2[WebGLQuery, scala.Double, js.Any],
-    queryCounterEXT: js.Function2[WebGLQuery, scala.Double, scala.Unit]
+    beginQueryEXT: (scala.Double, WebGLQuery) => scala.Unit,
+    createQueryEXT: () => WebGLQuery,
+    deleteQueryEXT: WebGLQuery => scala.Unit,
+    endQueryEXT: scala.Double => scala.Unit,
+    getQueryObjectEXT: (WebGLQuery, scala.Double) => js.Any,
+    queryCounterEXT: (WebGLQuery, scala.Double) => scala.Unit
   ): EXT_disjoint_timer_query = {
-    val __obj = js.Dynamic.literal(GPU_DISJOINT_EXT = GPU_DISJOINT_EXT, QUERY_COUNTER_BITS_EXT = QUERY_COUNTER_BITS_EXT, QUERY_RESULT_AVAILABLE_EXT = QUERY_RESULT_AVAILABLE_EXT, QUERY_RESULT_EXT = QUERY_RESULT_EXT, TIMESTAMP_EXT = TIMESTAMP_EXT, TIME_ELAPSED_EXT = TIME_ELAPSED_EXT, beginQueryEXT = beginQueryEXT, createQueryEXT = createQueryEXT, deleteQueryEXT = deleteQueryEXT, endQueryEXT = endQueryEXT, getQueryObjectEXT = getQueryObjectEXT, queryCounterEXT = queryCounterEXT)
+    val __obj = js.Dynamic.literal(GPU_DISJOINT_EXT = GPU_DISJOINT_EXT, QUERY_COUNTER_BITS_EXT = QUERY_COUNTER_BITS_EXT, QUERY_RESULT_AVAILABLE_EXT = QUERY_RESULT_AVAILABLE_EXT, QUERY_RESULT_EXT = QUERY_RESULT_EXT, TIMESTAMP_EXT = TIMESTAMP_EXT, TIME_ELAPSED_EXT = TIME_ELAPSED_EXT, beginQueryEXT = js.Any.fromFunction2(beginQueryEXT), createQueryEXT = js.Any.fromFunction0(createQueryEXT), deleteQueryEXT = js.Any.fromFunction1(deleteQueryEXT), endQueryEXT = js.Any.fromFunction1(endQueryEXT), getQueryObjectEXT = js.Any.fromFunction2(getQueryObjectEXT), queryCounterEXT = js.Any.fromFunction2(queryCounterEXT))
   
     __obj.asInstanceOf[EXT_disjoint_timer_query]
   }

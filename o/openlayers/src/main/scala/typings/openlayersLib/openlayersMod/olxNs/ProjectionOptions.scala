@@ -31,11 +31,7 @@ object ProjectionOptions {
     code: java.lang.String,
     axisOrientation: java.lang.String = null,
     extent: openlayersLib.openlayersMod.Extent = null,
-    getPointResolution: js.Function2[
-      /* resolution */ scala.Double, 
-      /* coords */ openlayersLib.openlayersMod.Coordinate, 
-      scala.Double
-    ] = null,
+    getPointResolution: (/* resolution */ scala.Double, /* coords */ openlayersLib.openlayersMod.Coordinate) => scala.Double = null,
     global: js.UndefOr[scala.Boolean] = js.undefined,
     metersPerUnit: scala.Int | scala.Double = null,
     units: openlayersLib.openlayersMod.projNs.Units | java.lang.String = null,
@@ -44,7 +40,7 @@ object ProjectionOptions {
     val __obj = js.Dynamic.literal(code = code)
     if (axisOrientation != null) __obj.updateDynamic("axisOrientation")(axisOrientation)
     if (extent != null) __obj.updateDynamic("extent")(extent)
-    if (getPointResolution != null) __obj.updateDynamic("getPointResolution")(getPointResolution)
+    if (getPointResolution != null) __obj.updateDynamic("getPointResolution")(js.Any.fromFunction2(getPointResolution))
     if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
     if (metersPerUnit != null) __obj.updateDynamic("metersPerUnit")(metersPerUnit.asInstanceOf[js.Any])
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])

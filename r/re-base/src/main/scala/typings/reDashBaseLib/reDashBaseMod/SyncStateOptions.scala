@@ -58,17 +58,17 @@ object SyncStateOptions {
     asArray: js.UndefOr[scala.Boolean] = js.undefined,
     defaultValue: java.lang.String | scala.Boolean | scala.Double | js.Object = null,
     keepKeys: js.UndefOr[scala.Boolean] = js.undefined,
-    onFailure: js.Function0[scala.Unit] = null,
+    onFailure: () => scala.Unit = null,
     queries: js.Object = null,
-    `then`: js.Function0[scala.Unit] = null
+    `then`: () => scala.Unit = null
   ): SyncStateOptions = {
     val __obj = js.Dynamic.literal(context = context, state = state)
     if (!js.isUndefined(asArray)) __obj.updateDynamic("asArray")(asArray)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (!js.isUndefined(keepKeys)) __obj.updateDynamic("keepKeys")(keepKeys)
-    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
+    if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction0(onFailure))
     if (queries != null) __obj.updateDynamic("queries")(queries)
-    if (`then` != null) __obj.updateDynamic("then")(`then`)
+    if (`then` != null) __obj.updateDynamic("then")(js.Any.fromFunction0(`then`))
     __obj.asInstanceOf[SyncStateOptions]
   }
 }

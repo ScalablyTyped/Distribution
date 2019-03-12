@@ -29,26 +29,26 @@ trait ParagraphStyle extends js.Object {
 object ParagraphStyle {
   @scala.inline
   def apply(
-    getIndentEnd: js.Function0[stdLib.Number],
-    getIndentFirstLine: js.Function0[stdLib.Number],
-    getIndentStart: js.Function0[stdLib.Number],
-    getLineSpacing: js.Function0[stdLib.Number],
-    getParagraphAlignment: js.Function0[ParagraphAlignment],
-    getSpaceAbove: js.Function0[stdLib.Number],
-    getSpaceBelow: js.Function0[stdLib.Number],
-    getSpacingMode: js.Function0[SpacingMode],
-    getTextDirection: js.Function0[TextDirection],
-    setIndentEnd: js.Function1[stdLib.Number, ParagraphStyle],
-    setIndentFirstLine: js.Function1[stdLib.Number, ParagraphStyle],
-    setIndentStart: js.Function1[stdLib.Number, ParagraphStyle],
-    setLineSpacing: js.Function1[stdLib.Number, ParagraphStyle],
-    setParagraphAlignment: js.Function1[ParagraphAlignment, ParagraphStyle],
-    setSpaceAbove: js.Function1[stdLib.Number, ParagraphStyle],
-    setSpaceBelow: js.Function1[stdLib.Number, ParagraphStyle],
-    setSpacingMode: js.Function1[SpacingMode, ParagraphStyle],
-    setTextDirection: js.Function1[TextDirection, ParagraphStyle]
+    getIndentEnd: () => stdLib.Number,
+    getIndentFirstLine: () => stdLib.Number,
+    getIndentStart: () => stdLib.Number,
+    getLineSpacing: () => stdLib.Number,
+    getParagraphAlignment: () => ParagraphAlignment,
+    getSpaceAbove: () => stdLib.Number,
+    getSpaceBelow: () => stdLib.Number,
+    getSpacingMode: () => SpacingMode,
+    getTextDirection: () => TextDirection,
+    setIndentEnd: stdLib.Number => ParagraphStyle,
+    setIndentFirstLine: stdLib.Number => ParagraphStyle,
+    setIndentStart: stdLib.Number => ParagraphStyle,
+    setLineSpacing: stdLib.Number => ParagraphStyle,
+    setParagraphAlignment: ParagraphAlignment => ParagraphStyle,
+    setSpaceAbove: stdLib.Number => ParagraphStyle,
+    setSpaceBelow: stdLib.Number => ParagraphStyle,
+    setSpacingMode: SpacingMode => ParagraphStyle,
+    setTextDirection: TextDirection => ParagraphStyle
   ): ParagraphStyle = {
-    val __obj = js.Dynamic.literal(getIndentEnd = getIndentEnd, getIndentFirstLine = getIndentFirstLine, getIndentStart = getIndentStart, getLineSpacing = getLineSpacing, getParagraphAlignment = getParagraphAlignment, getSpaceAbove = getSpaceAbove, getSpaceBelow = getSpaceBelow, getSpacingMode = getSpacingMode, getTextDirection = getTextDirection, setIndentEnd = setIndentEnd, setIndentFirstLine = setIndentFirstLine, setIndentStart = setIndentStart, setLineSpacing = setLineSpacing, setParagraphAlignment = setParagraphAlignment, setSpaceAbove = setSpaceAbove, setSpaceBelow = setSpaceBelow, setSpacingMode = setSpacingMode, setTextDirection = setTextDirection)
+    val __obj = js.Dynamic.literal(getIndentEnd = js.Any.fromFunction0(getIndentEnd), getIndentFirstLine = js.Any.fromFunction0(getIndentFirstLine), getIndentStart = js.Any.fromFunction0(getIndentStart), getLineSpacing = js.Any.fromFunction0(getLineSpacing), getParagraphAlignment = js.Any.fromFunction0(getParagraphAlignment), getSpaceAbove = js.Any.fromFunction0(getSpaceAbove), getSpaceBelow = js.Any.fromFunction0(getSpaceBelow), getSpacingMode = js.Any.fromFunction0(getSpacingMode), getTextDirection = js.Any.fromFunction0(getTextDirection), setIndentEnd = js.Any.fromFunction1(setIndentEnd), setIndentFirstLine = js.Any.fromFunction1(setIndentFirstLine), setIndentStart = js.Any.fromFunction1(setIndentStart), setLineSpacing = js.Any.fromFunction1(setLineSpacing), setParagraphAlignment = js.Any.fromFunction1(setParagraphAlignment), setSpaceAbove = js.Any.fromFunction1(setSpaceAbove), setSpaceBelow = js.Any.fromFunction1(setSpaceBelow), setSpacingMode = js.Any.fromFunction1(setSpacingMode), setTextDirection = js.Any.fromFunction1(setTextDirection))
   
     __obj.asInstanceOf[ParagraphStyle]
   }

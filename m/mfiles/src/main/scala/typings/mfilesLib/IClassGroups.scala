@@ -13,12 +13,8 @@ trait IClassGroups extends js.Object {
 
 object IClassGroups {
   @scala.inline
-  def apply(
-    Clone: js.Function0[IClassGroups],
-    Count: scala.Double,
-    Item: js.Function1[scala.Double, IClassGroup]
-  ): IClassGroups = {
-    val __obj = js.Dynamic.literal(Clone = Clone, Count = Count, Item = Item)
+  def apply(Clone: () => IClassGroups, Count: scala.Double, Item: scala.Double => IClassGroup): IClassGroups = {
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Count = Count, Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[IClassGroups]
   }

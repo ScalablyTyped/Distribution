@@ -13,12 +13,9 @@ trait McfResource extends js.Object {
 object McfResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AltDimensions, 
-      gapiDotClientLib.gapiNs.clientNs.Request[McfData]
-    ]
+    get: gapiDotClientDotAnalyticsLib.Anon_AltDimensions => gapiDotClientLib.gapiNs.clientNs.Request[McfData]
   ): McfResource = {
-    val __obj = js.Dynamic.literal(get = get)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[McfResource]
   }

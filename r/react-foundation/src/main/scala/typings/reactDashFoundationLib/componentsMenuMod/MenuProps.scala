@@ -299,7 +299,7 @@ object MenuProps {
   @scala.inline
   def apply(
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLUListElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLUListElement] = null,
     alignment: reactDashFoundationLib.enumsMod.MenuAlignments = null,
     horizontalOnMedium: js.UndefOr[scala.Boolean] = js.undefined,
     iconsOnTop: js.UndefOr[scala.Boolean] = js.undefined,

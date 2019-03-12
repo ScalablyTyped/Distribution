@@ -16,13 +16,13 @@ trait FilterCriteria extends js.Object {
 object FilterCriteria {
   @scala.inline
   def apply(
-    copy: js.Function0[FilterCriteriaBuilder],
-    getCriteriaType: js.Function0[BooleanCriteria],
-    getCriteriaValues: js.Function0[js.Array[js.Object]],
-    getHiddenValues: js.Function0[js.Array[java.lang.String]],
-    getVisibleValues: js.Function0[js.Array[java.lang.String]]
+    copy: () => FilterCriteriaBuilder,
+    getCriteriaType: () => BooleanCriteria,
+    getCriteriaValues: () => js.Array[js.Object],
+    getHiddenValues: () => js.Array[java.lang.String],
+    getVisibleValues: () => js.Array[java.lang.String]
   ): FilterCriteria = {
-    val __obj = js.Dynamic.literal(copy = copy, getCriteriaType = getCriteriaType, getCriteriaValues = getCriteriaValues, getHiddenValues = getHiddenValues, getVisibleValues = getVisibleValues)
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), getCriteriaType = js.Any.fromFunction0(getCriteriaType), getCriteriaValues = js.Any.fromFunction0(getCriteriaValues), getHiddenValues = js.Any.fromFunction0(getHiddenValues), getVisibleValues = js.Any.fromFunction0(getVisibleValues))
   
     __obj.asInstanceOf[FilterCriteria]
   }

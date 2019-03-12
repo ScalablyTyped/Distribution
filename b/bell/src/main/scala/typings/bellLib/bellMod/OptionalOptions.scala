@@ -122,7 +122,7 @@ object OptionalOptions {
     location: java.lang.String | (js.Function1[/* req */ hapiLib.hapiMod.Request, java.lang.String]) = null,
     profileParams: StringLikeMap = null,
     providerParams: StringLikeMap | (js.Function1[/* request */ hapiLib.hapiMod.Request, StringLikeMap]) = null,
-    runtimeStateCallback: js.Function1[/* req */ hapiLib.hapiMod.Request, java.lang.String] = null,
+    runtimeStateCallback: /* req */ hapiLib.hapiMod.Request => java.lang.String = null,
     scope: js.Array[java.lang.String] | (js.Function1[/* request */ hapiLib.hapiMod.Request, js.Array[java.lang.String]]) = null,
     skipProfile: js.UndefOr[scala.Boolean] = js.undefined,
     ttl: scala.Int | scala.Double = null
@@ -138,7 +138,7 @@ object OptionalOptions {
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (profileParams != null) __obj.updateDynamic("profileParams")(profileParams)
     if (providerParams != null) __obj.updateDynamic("providerParams")(providerParams.asInstanceOf[js.Any])
-    if (runtimeStateCallback != null) __obj.updateDynamic("runtimeStateCallback")(runtimeStateCallback)
+    if (runtimeStateCallback != null) __obj.updateDynamic("runtimeStateCallback")(js.Any.fromFunction1(runtimeStateCallback))
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (!js.isUndefined(skipProfile)) __obj.updateDynamic("skipProfile")(skipProfile)
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])

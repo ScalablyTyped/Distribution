@@ -17,11 +17,11 @@ trait IgBrowseButtonMethods extends js.Object {
 object IgBrowseButtonMethods {
   @scala.inline
   def apply(
-    attachFilePicker: js.Function2[js.Object, js.Object, scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    getFilePicker: js.Function0[scala.Unit]
+    attachFilePicker: (js.Object, js.Object) => scala.Unit,
+    destroy: () => scala.Unit,
+    getFilePicker: () => scala.Unit
   ): IgBrowseButtonMethods = {
-    val __obj = js.Dynamic.literal(attachFilePicker = attachFilePicker, destroy = destroy, getFilePicker = getFilePicker)
+    val __obj = js.Dynamic.literal(attachFilePicker = js.Any.fromFunction2(attachFilePicker), destroy = js.Any.fromFunction0(destroy), getFilePicker = js.Any.fromFunction0(getFilePicker))
   
     __obj.asInstanceOf[IgBrowseButtonMethods]
   }

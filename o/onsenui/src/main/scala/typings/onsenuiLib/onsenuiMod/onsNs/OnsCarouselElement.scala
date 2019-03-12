@@ -36,7 +36,7 @@ trait OnsCarouselElement
     * @param {Object} animationOptions Object containing duration and timing.
     * @description Hook called whenever the user slides the carousel.
     **/
-  var onSwipe: js.UndefOr[coreDashJsLib.Function] = js.native
+  var onSwipe: js.UndefOr[js.Function] = js.native
   /**
     * @description Whether the carousel is overscrollable or not.
     **/

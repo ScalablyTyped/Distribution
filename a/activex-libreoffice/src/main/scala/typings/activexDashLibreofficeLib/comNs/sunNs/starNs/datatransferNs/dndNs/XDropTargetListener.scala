@@ -47,17 +47,17 @@ trait XDropTargetListener
 object XDropTargetListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    dragEnter: js.Function1[DropTargetDragEnterEvent, scala.Unit],
-    dragExit: js.Function1[DropTargetEvent, scala.Unit],
-    dragOver: js.Function1[DropTargetDragEvent, scala.Unit],
-    drop: js.Function1[DropTargetDropEvent, scala.Unit],
-    dropActionChanged: js.Function1[DropTargetDragEvent, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    dragEnter: DropTargetDragEnterEvent => scala.Unit,
+    dragExit: DropTargetEvent => scala.Unit,
+    dragOver: DropTargetDragEvent => scala.Unit,
+    drop: DropTargetDropEvent => scala.Unit,
+    dropActionChanged: DropTargetDragEvent => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDropTargetListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, dragEnter = dragEnter, dragExit = dragExit, dragOver = dragOver, drop = drop, dropActionChanged = dropActionChanged, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), dragEnter = js.Any.fromFunction1(dragEnter), dragExit = js.Any.fromFunction1(dragExit), dragOver = js.Any.fromFunction1(dragOver), drop = js.Any.fromFunction1(drop), dropActionChanged = js.Any.fromFunction1(dropActionChanged), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDropTargetListener]
   }

@@ -27,11 +27,11 @@ trait ASPxClientSideParametersModel extends js.Object {
 object ASPxClientSideParametersModel {
   @scala.inline
   def apply(
-    serializeParameters: js.Function0[scala.Unit],
-    submit: js.Function0[scala.Unit],
+    serializeParameters: () => scala.Unit,
+    submit: () => scala.Unit,
     tabInfo: ASPxClientDocumentPreviewTab
   ): ASPxClientSideParametersModel = {
-    val __obj = js.Dynamic.literal(serializeParameters = serializeParameters, submit = submit, tabInfo = tabInfo)
+    val __obj = js.Dynamic.literal(serializeParameters = js.Any.fromFunction0(serializeParameters), submit = js.Any.fromFunction0(submit), tabInfo = tabInfo)
   
     __obj.asInstanceOf[ASPxClientSideParametersModel]
   }

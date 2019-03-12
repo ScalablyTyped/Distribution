@@ -13,15 +13,10 @@ trait Anon_Classic extends js.Object {
 object Anon_Classic {
   @scala.inline
   def apply(
-    classic: js.Function1[
-      relayDashRuntimeLib.relayDashRuntimeMod.RelayQL, 
-      relayDashRuntimeLib.relayDashRuntimeMod.ConcreteFragmentDefinition | relayDashRuntimeLib.relayDashRuntimeMod.ConcreteOperationDefinition
-    ],
-    modern: js.Function0[
-      relayDashRuntimeLib.relayDashRuntimeMod.ConcreteFragment | relayDashRuntimeLib.relayDashRuntimeMod.RequestNode
-    ]
+    classic: relayDashRuntimeLib.relayDashRuntimeMod.RelayQL => relayDashRuntimeLib.relayDashRuntimeMod.ConcreteFragmentDefinition | relayDashRuntimeLib.relayDashRuntimeMod.ConcreteOperationDefinition,
+    modern: () => relayDashRuntimeLib.relayDashRuntimeMod.ConcreteFragment | relayDashRuntimeLib.relayDashRuntimeMod.RequestNode
   ): Anon_Classic = {
-    val __obj = js.Dynamic.literal(classic = classic, modern = modern)
+    val __obj = js.Dynamic.literal(classic = js.Any.fromFunction1(classic), modern = js.Any.fromFunction0(modern))
   
     __obj.asInstanceOf[Anon_Classic]
   }

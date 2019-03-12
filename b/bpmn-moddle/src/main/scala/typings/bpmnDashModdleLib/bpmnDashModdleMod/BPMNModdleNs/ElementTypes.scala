@@ -323,7 +323,20 @@ object ElementTypes {
     `dc:Font`: Font,
     `dc:Point`: Point,
     `dc:Real`: js.Any,
-    `dc:boolean`: scala.Boolean
+    `dc:boolean`: scala.Boolean,
+    `dc:number`: scala.Double,
+    `dc:string`: java.lang.String,
+    `di:Diagram`: Diagram,
+    `di:DiagramElement`: DiagramElement,
+    `di:Edge`: Edge,
+    `di:Extension`: Extension,
+    `di:Label`: Label,
+    `di:LabeledEdge`: LabeledEdge,
+    `di:LabeledShape`: LabeledShape,
+    `di:Node`: Node,
+    `di:Plane`: Plane,
+    `di:Shape`: Shape,
+    `di:Style`: Style
   ): ElementTypes = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("bioc:ColoredEdge")(`bioc:ColoredEdge`)
@@ -476,6 +489,19 @@ object ElementTypes {
     __obj.updateDynamic("dc:Point")(`dc:Point`)
     __obj.updateDynamic("dc:Real")(`dc:Real`)
     __obj.updateDynamic("dc:boolean")(`dc:boolean`)
+    __obj.updateDynamic("dc:number")(`dc:number`)
+    __obj.updateDynamic("dc:string")(`dc:string`)
+    __obj.updateDynamic("di:Diagram")(`di:Diagram`)
+    __obj.updateDynamic("di:DiagramElement")(`di:DiagramElement`)
+    __obj.updateDynamic("di:Edge")(`di:Edge`)
+    __obj.updateDynamic("di:Extension")(`di:Extension`)
+    __obj.updateDynamic("di:Label")(`di:Label`)
+    __obj.updateDynamic("di:LabeledEdge")(`di:LabeledEdge`)
+    __obj.updateDynamic("di:LabeledShape")(`di:LabeledShape`)
+    __obj.updateDynamic("di:Node")(`di:Node`)
+    __obj.updateDynamic("di:Plane")(`di:Plane`)
+    __obj.updateDynamic("di:Shape")(`di:Shape`)
+    __obj.updateDynamic("di:Style")(`di:Style`)
     __obj.asInstanceOf[ElementTypes]
   }
 }

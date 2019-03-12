@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FormatInformation () extends js.Object {
   val DataMask: scala.Double = js.native
-  val ErrorCorrectionLevel: ErrorCorrectionLevel = js.native
+  val ErrorCorrectionLevel: jsqrcodeLib.ErrorCorrectionLevel = js.native
   var dataMask: scala.Double = js.native
   var errorCorrectionLevel: ErrorCorrectionLevel = js.native
   def Equals(other: FormatInformation): scala.Boolean = js.native

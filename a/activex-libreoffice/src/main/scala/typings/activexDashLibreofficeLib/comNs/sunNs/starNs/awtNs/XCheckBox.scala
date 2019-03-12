@@ -37,17 +37,17 @@ object XCheckBox {
   @scala.inline
   def apply(
     State: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addItemListener: js.Function1[XItemListener, scala.Unit],
-    enableTriState: js.Function1[scala.Boolean, scala.Unit],
-    getState: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeItemListener: js.Function1[XItemListener, scala.Unit],
-    setLabel: js.Function1[java.lang.String, scala.Unit],
-    setState: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    addItemListener: XItemListener => scala.Unit,
+    enableTriState: scala.Boolean => scala.Unit,
+    getState: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeItemListener: XItemListener => scala.Unit,
+    setLabel: java.lang.String => scala.Unit,
+    setState: scala.Double => scala.Unit
   ): XCheckBox = {
-    val __obj = js.Dynamic.literal(State = State, acquire = acquire, addItemListener = addItemListener, enableTriState = enableTriState, getState = getState, queryInterface = queryInterface, release = release, removeItemListener = removeItemListener, setLabel = setLabel, setState = setState)
+    val __obj = js.Dynamic.literal(State = State, acquire = js.Any.fromFunction0(acquire), addItemListener = js.Any.fromFunction1(addItemListener), enableTriState = js.Any.fromFunction1(enableTriState), getState = js.Any.fromFunction0(getState), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeItemListener = js.Any.fromFunction1(removeItemListener), setLabel = js.Any.fromFunction1(setLabel), setState = js.Any.fromFunction1(setState))
   
     __obj.asInstanceOf[XCheckBox]
   }

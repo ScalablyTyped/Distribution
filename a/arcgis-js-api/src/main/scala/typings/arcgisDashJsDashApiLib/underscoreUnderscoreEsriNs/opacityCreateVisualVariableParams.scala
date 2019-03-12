@@ -85,9 +85,9 @@ object opacityCreateVisualVariableParams {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     layer: FeatureLayer | SceneLayer | CSVLayer,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     field: java.lang.String = null,
     legendOptions: opacityCreateVisualVariableParamsLegendOptions = null,
     maxValue: scala.Int | scala.Double = null,
@@ -100,7 +100,7 @@ object opacityCreateVisualVariableParams {
     valueExpressionTitle: java.lang.String = null,
     view: View = null
   ): opacityCreateVisualVariableParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (field != null) __obj.updateDynamic("field")(field)
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])

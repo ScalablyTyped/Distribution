@@ -12,8 +12,8 @@ trait Anon_ConfigurableGet[T /* <: js.Function */] extends js.Object {
 
 object Anon_ConfigurableGet {
   @scala.inline
-  def apply[T /* <: js.Function */](configurable: scala.Boolean, get: js.Function0[T]): Anon_ConfigurableGet[T] = {
-    val __obj = js.Dynamic.literal(configurable = configurable, get = get)
+  def apply[T /* <: js.Function */](configurable: scala.Boolean, get: () => T): Anon_ConfigurableGet[T] = {
+    val __obj = js.Dynamic.literal(configurable = configurable, get = js.Any.fromFunction0(get))
   
     __obj.asInstanceOf[Anon_ConfigurableGet[T]]
   }

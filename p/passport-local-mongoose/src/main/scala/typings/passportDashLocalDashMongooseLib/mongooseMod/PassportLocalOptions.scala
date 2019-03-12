@@ -51,11 +51,7 @@ object PassportLocalOptions {
     limitAttempts: js.UndefOr[scala.Boolean] = js.undefined,
     maxAttempts: scala.Int | scala.Double = null,
     maxInterval: scala.Int | scala.Double = null,
-    passwordValidator: js.Function2[
-      /* password */ java.lang.String, 
-      /* cb */ js.Function1[/* err */ js.Any, scala.Unit], 
-      scala.Unit
-    ] = null,
+    passwordValidator: (/* password */ java.lang.String, /* cb */ js.Function1[/* err */ js.Any, scala.Unit]) => scala.Unit = null,
     populateFields: java.lang.String = null,
     saltField: java.lang.String = null,
     saltlen: scala.Int | scala.Double = null,
@@ -77,7 +73,7 @@ object PassportLocalOptions {
     if (!js.isUndefined(limitAttempts)) __obj.updateDynamic("limitAttempts")(limitAttempts)
     if (maxAttempts != null) __obj.updateDynamic("maxAttempts")(maxAttempts.asInstanceOf[js.Any])
     if (maxInterval != null) __obj.updateDynamic("maxInterval")(maxInterval.asInstanceOf[js.Any])
-    if (passwordValidator != null) __obj.updateDynamic("passwordValidator")(passwordValidator)
+    if (passwordValidator != null) __obj.updateDynamic("passwordValidator")(js.Any.fromFunction2(passwordValidator))
     if (populateFields != null) __obj.updateDynamic("populateFields")(populateFields)
     if (saltField != null) __obj.updateDynamic("saltField")(saltField)
     if (saltlen != null) __obj.updateDynamic("saltlen")(saltlen.asInstanceOf[js.Any])

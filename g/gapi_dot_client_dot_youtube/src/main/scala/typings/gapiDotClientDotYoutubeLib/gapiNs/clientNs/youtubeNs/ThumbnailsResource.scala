@@ -13,12 +13,9 @@ trait ThumbnailsResource extends js.Object {
 object ThumbnailsResource {
   @scala.inline
   def apply(
-    set: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtokenOnBehalfOfContentOwnerPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ThumbnailSetResponse]
-    ]
+    set: gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtokenOnBehalfOfContentOwnerPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[ThumbnailSetResponse]
   ): ThumbnailsResource = {
-    val __obj = js.Dynamic.literal(set = set)
+    val __obj = js.Dynamic.literal(set = js.Any.fromFunction1(set))
   
     __obj.asInstanceOf[ThumbnailsResource]
   }

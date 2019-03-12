@@ -27,18 +27,18 @@ trait XSpinField
 object XSpinField {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addSpinListener: js.Function1[XSpinListener, scala.Unit],
-    down: js.Function0[scala.Unit],
-    enableRepeat: js.Function1[scala.Boolean, scala.Unit],
-    first: js.Function0[scala.Unit],
-    last: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeSpinListener: js.Function1[XSpinListener, scala.Unit],
-    up: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addSpinListener: XSpinListener => scala.Unit,
+    down: () => scala.Unit,
+    enableRepeat: scala.Boolean => scala.Unit,
+    first: () => scala.Unit,
+    last: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeSpinListener: XSpinListener => scala.Unit,
+    up: () => scala.Unit
   ): XSpinField = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addSpinListener = addSpinListener, down = down, enableRepeat = enableRepeat, first = first, last = last, queryInterface = queryInterface, release = release, removeSpinListener = removeSpinListener, up = up)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addSpinListener = js.Any.fromFunction1(addSpinListener), down = js.Any.fromFunction0(down), enableRepeat = js.Any.fromFunction1(enableRepeat), first = js.Any.fromFunction0(first), last = js.Any.fromFunction0(last), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeSpinListener = js.Any.fromFunction1(removeSpinListener), up = js.Any.fromFunction0(up))
   
     __obj.asInstanceOf[XSpinField]
   }

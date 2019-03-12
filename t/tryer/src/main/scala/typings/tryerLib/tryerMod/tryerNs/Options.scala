@@ -58,21 +58,21 @@ object Options {
   @scala.inline
   def apply(
     action: js.Function0[js.Promise[_]] | (js.Function1[/* done */ js.Function0[scala.Unit], _]) = null,
-    fail: js.Function1[/* err */ stdLib.Error, scala.Unit] = null,
+    fail: /* err */ stdLib.Error => scala.Unit = null,
     interval: scala.Int | scala.Double = null,
     limit: scala.Int | scala.Double = null,
-    pass: js.Function0[scala.Unit] = null,
-    until: js.Function0[scala.Boolean] = null,
-    when: js.Function0[scala.Boolean] = null
+    pass: () => scala.Unit = null,
+    until: () => scala.Boolean = null,
+    when: () => scala.Boolean = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (pass != null) __obj.updateDynamic("pass")(pass)
-    if (until != null) __obj.updateDynamic("until")(until)
-    if (when != null) __obj.updateDynamic("when")(when)
+    if (pass != null) __obj.updateDynamic("pass")(js.Any.fromFunction0(pass))
+    if (until != null) __obj.updateDynamic("until")(js.Any.fromFunction0(until))
+    if (when != null) __obj.updateDynamic("when")(js.Any.fromFunction0(when))
     __obj.asInstanceOf[Options]
   }
 }

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("TL")
 @js.native
 object ^ extends js.Object {
-  var Timeline: timelinejs3Lib.TLNs.ITimeline = js.native
+  var Timeline: ITimeline = js.native
 }
 

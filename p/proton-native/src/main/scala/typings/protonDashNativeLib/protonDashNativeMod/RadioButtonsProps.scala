@@ -35,7 +35,7 @@ object RadioButtonsProps {
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     expand: protonDashNativeLib.Anon_H = null,
     label: java.lang.String = null,
-    onSelect: js.Function1[/* selected */ scala.Double, scala.Unit] = null,
+    onSelect: /* selected */ scala.Double => scala.Unit = null,
     row: scala.Int | scala.Double = null,
     selected: scala.Int | scala.Double = null,
     span: protonDashNativeLib.Anon_X = null,
@@ -48,7 +48,7 @@ object RadioButtonsProps {
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (label != null) __obj.updateDynamic("label")(label)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (span != null) __obj.updateDynamic("span")(span)

@@ -22,23 +22,13 @@ trait ISearchSuggestionCollection extends js.Object {
 object ISearchSuggestionCollection {
   @scala.inline
   def apply(
-    appendQuerySuggestion: js.Function1[java.lang.String, scala.Unit],
-    appendQuerySuggestions: js.Function1[
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], 
-      scala.Unit
-    ],
-    appendResultSuggestion: js.Function5[
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStreamReference, 
-      java.lang.String, 
-      scala.Unit
-    ],
-    appendSearchSeparator: js.Function1[java.lang.String, scala.Unit],
+    appendQuerySuggestion: java.lang.String => scala.Unit,
+    appendQuerySuggestions: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String] => scala.Unit,
+    appendResultSuggestion: (java.lang.String, java.lang.String, java.lang.String, winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStreamReference, java.lang.String) => scala.Unit,
+    appendSearchSeparator: java.lang.String => scala.Unit,
     size: scala.Double
   ): ISearchSuggestionCollection = {
-    val __obj = js.Dynamic.literal(appendQuerySuggestion = appendQuerySuggestion, appendQuerySuggestions = appendQuerySuggestions, appendResultSuggestion = appendResultSuggestion, appendSearchSeparator = appendSearchSeparator, size = size)
+    val __obj = js.Dynamic.literal(appendQuerySuggestion = js.Any.fromFunction1(appendQuerySuggestion), appendQuerySuggestions = js.Any.fromFunction1(appendQuerySuggestions), appendResultSuggestion = js.Any.fromFunction5(appendResultSuggestion), appendSearchSeparator = js.Any.fromFunction1(appendSearchSeparator), size = size)
   
     __obj.asInstanceOf[ISearchSuggestionCollection]
   }

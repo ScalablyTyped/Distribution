@@ -218,39 +218,39 @@ object IRequest {
     action: java.lang.String = null,
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     callbackKey: java.lang.String = null,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     disableCaching: js.UndefOr[scala.Boolean] = js.undefined,
     extend: java.lang.String = null,
-    getAction: js.Function0[java.lang.String] = null,
-    getArgs: js.Function0[_] = null,
-    getCallback: js.Function0[_] = null,
-    getCallbackKey: js.Function0[java.lang.String] = null,
-    getDirectFn: js.Function0[_] = null,
-    getDisableCaching: js.Function0[scala.Boolean] = null,
-    getHeaders: js.Function0[_] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getJsonData: js.Function0[_] = null,
-    getMethod: js.Function0[java.lang.String] = null,
-    getOperation: js.Function0[IOperation] = null,
-    getParams: js.Function0[_] = null,
-    getPassword: js.Function0[java.lang.String] = null,
-    getProxy: js.Function0[senchaUnderscoreTouchLib.ExtNs.dataNs.proxyNs.IProxy] = null,
-    getRecords: js.Function0[_] = null,
-    getScope: js.Function0[_] = null,
-    getTimeout: js.Function0[scala.Double] = null,
-    getUrl: js.Function0[java.lang.String] = null,
-    getUseDefaultXhrHeader: js.Function0[_] = null,
-    getUsername: js.Function0[java.lang.String] = null,
-    getWithCredentials: js.Function0[scala.Boolean] = null,
-    getXmlData: js.Function0[_] = null,
+    getAction: () => java.lang.String = null,
+    getArgs: () => _ = null,
+    getCallback: () => _ = null,
+    getCallbackKey: () => java.lang.String = null,
+    getDirectFn: () => _ = null,
+    getDisableCaching: () => scala.Boolean = null,
+    getHeaders: () => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getJsonData: () => _ = null,
+    getMethod: () => java.lang.String = null,
+    getOperation: () => IOperation = null,
+    getParams: () => _ = null,
+    getPassword: () => java.lang.String = null,
+    getProxy: () => senchaUnderscoreTouchLib.ExtNs.dataNs.proxyNs.IProxy = null,
+    getRecords: () => _ = null,
+    getScope: () => _ = null,
+    getTimeout: () => scala.Double = null,
+    getUrl: () => java.lang.String = null,
+    getUseDefaultXhrHeader: () => _ = null,
+    getUsername: () => java.lang.String = null,
+    getWithCredentials: () => scala.Boolean = null,
+    getXmlData: () => _ = null,
     headers: js.Any = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     jsonData: js.Any = null,
     jsonp: IJsonP = null,
     method: java.lang.String = null,
@@ -261,30 +261,27 @@ object IRequest {
     platformConfig: js.Any = null,
     proxy: senchaUnderscoreTouchLib.ExtNs.dataNs.proxyNs.IProxy = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setAction: js.Function1[/* action */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setArgs: js.Function1[/* args */ js.UndefOr[js.Any], scala.Unit] = null,
-    setCallback: js.Function1[/* callback */ js.UndefOr[js.Any], scala.Unit] = null,
-    setCallbackKey: js.Function1[/* callbackKey */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setDirectFn: js.Function1[/* directFn */ js.UndefOr[js.Any], scala.Unit] = null,
-    setDisableCaching: js.Function1[/* disableCaching */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setHeaders: js.Function1[/* headers */ js.UndefOr[js.Any], scala.Unit] = null,
-    setJsonData: js.Function1[/* jsonData */ js.UndefOr[js.Any], scala.Unit] = null,
-    setMethod: js.Function1[/* method */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setOperation: js.Function1[/* operation */ js.UndefOr[IOperation], scala.Unit] = null,
-    setParams: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
-    setPassword: js.Function1[/* password */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setProxy: js.Function1[
-      /* proxy */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.proxyNs.IProxy], 
-      scala.Unit
-    ] = null,
-    setRecords: js.Function1[/* records */ js.UndefOr[js.Any], scala.Unit] = null,
-    setScope: js.Function1[/* scope */ js.UndefOr[js.Any], scala.Unit] = null,
-    setTimeout: js.Function1[/* timeout */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setUrl: js.Function1[/* url */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setUseDefaultXhrHeader: js.Function1[/* useDefaultXhrHeader */ js.UndefOr[js.Any], scala.Unit] = null,
-    setUsername: js.Function1[/* username */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setWithCredentials: js.Function1[/* withCredentials */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setXmlData: js.Function1[/* xmlData */ js.UndefOr[js.Any], scala.Unit] = null,
+    setAction: /* action */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setArgs: /* args */ js.UndefOr[js.Any] => scala.Unit = null,
+    setCallback: /* callback */ js.UndefOr[js.Any] => scala.Unit = null,
+    setCallbackKey: /* callbackKey */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setDirectFn: /* directFn */ js.UndefOr[js.Any] => scala.Unit = null,
+    setDisableCaching: /* disableCaching */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setHeaders: /* headers */ js.UndefOr[js.Any] => scala.Unit = null,
+    setJsonData: /* jsonData */ js.UndefOr[js.Any] => scala.Unit = null,
+    setMethod: /* method */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setOperation: /* operation */ js.UndefOr[IOperation] => scala.Unit = null,
+    setParams: /* params */ js.UndefOr[js.Any] => scala.Unit = null,
+    setPassword: /* password */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setProxy: /* proxy */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.proxyNs.IProxy] => scala.Unit = null,
+    setRecords: /* records */ js.UndefOr[js.Any] => scala.Unit = null,
+    setScope: /* scope */ js.UndefOr[js.Any] => scala.Unit = null,
+    setTimeout: /* timeout */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setUrl: /* url */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setUseDefaultXhrHeader: /* useDefaultXhrHeader */ js.UndefOr[js.Any] => scala.Unit = null,
+    setUsername: /* username */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setWithCredentials: /* withCredentials */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setXmlData: /* xmlData */ js.UndefOr[js.Any] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     url: java.lang.String = null,
@@ -297,39 +294,39 @@ object IRequest {
     if (action != null) __obj.updateDynamic("action")(action)
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (callbackKey != null) __obj.updateDynamic("callbackKey")(callbackKey)
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (!js.isUndefined(disableCaching)) __obj.updateDynamic("disableCaching")(disableCaching)
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getAction != null) __obj.updateDynamic("getAction")(getAction)
-    if (getArgs != null) __obj.updateDynamic("getArgs")(getArgs)
-    if (getCallback != null) __obj.updateDynamic("getCallback")(getCallback)
-    if (getCallbackKey != null) __obj.updateDynamic("getCallbackKey")(getCallbackKey)
-    if (getDirectFn != null) __obj.updateDynamic("getDirectFn")(getDirectFn)
-    if (getDisableCaching != null) __obj.updateDynamic("getDisableCaching")(getDisableCaching)
-    if (getHeaders != null) __obj.updateDynamic("getHeaders")(getHeaders)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getJsonData != null) __obj.updateDynamic("getJsonData")(getJsonData)
-    if (getMethod != null) __obj.updateDynamic("getMethod")(getMethod)
-    if (getOperation != null) __obj.updateDynamic("getOperation")(getOperation)
-    if (getParams != null) __obj.updateDynamic("getParams")(getParams)
-    if (getPassword != null) __obj.updateDynamic("getPassword")(getPassword)
-    if (getProxy != null) __obj.updateDynamic("getProxy")(getProxy)
-    if (getRecords != null) __obj.updateDynamic("getRecords")(getRecords)
-    if (getScope != null) __obj.updateDynamic("getScope")(getScope)
-    if (getTimeout != null) __obj.updateDynamic("getTimeout")(getTimeout)
-    if (getUrl != null) __obj.updateDynamic("getUrl")(getUrl)
-    if (getUseDefaultXhrHeader != null) __obj.updateDynamic("getUseDefaultXhrHeader")(getUseDefaultXhrHeader)
-    if (getUsername != null) __obj.updateDynamic("getUsername")(getUsername)
-    if (getWithCredentials != null) __obj.updateDynamic("getWithCredentials")(getWithCredentials)
-    if (getXmlData != null) __obj.updateDynamic("getXmlData")(getXmlData)
+    if (getAction != null) __obj.updateDynamic("getAction")(js.Any.fromFunction0(getAction))
+    if (getArgs != null) __obj.updateDynamic("getArgs")(js.Any.fromFunction0(getArgs))
+    if (getCallback != null) __obj.updateDynamic("getCallback")(js.Any.fromFunction0(getCallback))
+    if (getCallbackKey != null) __obj.updateDynamic("getCallbackKey")(js.Any.fromFunction0(getCallbackKey))
+    if (getDirectFn != null) __obj.updateDynamic("getDirectFn")(js.Any.fromFunction0(getDirectFn))
+    if (getDisableCaching != null) __obj.updateDynamic("getDisableCaching")(js.Any.fromFunction0(getDisableCaching))
+    if (getHeaders != null) __obj.updateDynamic("getHeaders")(js.Any.fromFunction0(getHeaders))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getJsonData != null) __obj.updateDynamic("getJsonData")(js.Any.fromFunction0(getJsonData))
+    if (getMethod != null) __obj.updateDynamic("getMethod")(js.Any.fromFunction0(getMethod))
+    if (getOperation != null) __obj.updateDynamic("getOperation")(js.Any.fromFunction0(getOperation))
+    if (getParams != null) __obj.updateDynamic("getParams")(js.Any.fromFunction0(getParams))
+    if (getPassword != null) __obj.updateDynamic("getPassword")(js.Any.fromFunction0(getPassword))
+    if (getProxy != null) __obj.updateDynamic("getProxy")(js.Any.fromFunction0(getProxy))
+    if (getRecords != null) __obj.updateDynamic("getRecords")(js.Any.fromFunction0(getRecords))
+    if (getScope != null) __obj.updateDynamic("getScope")(js.Any.fromFunction0(getScope))
+    if (getTimeout != null) __obj.updateDynamic("getTimeout")(js.Any.fromFunction0(getTimeout))
+    if (getUrl != null) __obj.updateDynamic("getUrl")(js.Any.fromFunction0(getUrl))
+    if (getUseDefaultXhrHeader != null) __obj.updateDynamic("getUseDefaultXhrHeader")(js.Any.fromFunction0(getUseDefaultXhrHeader))
+    if (getUsername != null) __obj.updateDynamic("getUsername")(js.Any.fromFunction0(getUsername))
+    if (getWithCredentials != null) __obj.updateDynamic("getWithCredentials")(js.Any.fromFunction0(getWithCredentials))
+    if (getXmlData != null) __obj.updateDynamic("getXmlData")(js.Any.fromFunction0(getXmlData))
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (jsonData != null) __obj.updateDynamic("jsonData")(jsonData)
     if (jsonp != null) __obj.updateDynamic("jsonp")(jsonp)
     if (method != null) __obj.updateDynamic("method")(method)
@@ -340,27 +337,27 @@ object IRequest {
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
     if (proxy != null) __obj.updateDynamic("proxy")(proxy)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setAction != null) __obj.updateDynamic("setAction")(setAction)
-    if (setArgs != null) __obj.updateDynamic("setArgs")(setArgs)
-    if (setCallback != null) __obj.updateDynamic("setCallback")(setCallback)
-    if (setCallbackKey != null) __obj.updateDynamic("setCallbackKey")(setCallbackKey)
-    if (setDirectFn != null) __obj.updateDynamic("setDirectFn")(setDirectFn)
-    if (setDisableCaching != null) __obj.updateDynamic("setDisableCaching")(setDisableCaching)
-    if (setHeaders != null) __obj.updateDynamic("setHeaders")(setHeaders)
-    if (setJsonData != null) __obj.updateDynamic("setJsonData")(setJsonData)
-    if (setMethod != null) __obj.updateDynamic("setMethod")(setMethod)
-    if (setOperation != null) __obj.updateDynamic("setOperation")(setOperation)
-    if (setParams != null) __obj.updateDynamic("setParams")(setParams)
-    if (setPassword != null) __obj.updateDynamic("setPassword")(setPassword)
-    if (setProxy != null) __obj.updateDynamic("setProxy")(setProxy)
-    if (setRecords != null) __obj.updateDynamic("setRecords")(setRecords)
-    if (setScope != null) __obj.updateDynamic("setScope")(setScope)
-    if (setTimeout != null) __obj.updateDynamic("setTimeout")(setTimeout)
-    if (setUrl != null) __obj.updateDynamic("setUrl")(setUrl)
-    if (setUseDefaultXhrHeader != null) __obj.updateDynamic("setUseDefaultXhrHeader")(setUseDefaultXhrHeader)
-    if (setUsername != null) __obj.updateDynamic("setUsername")(setUsername)
-    if (setWithCredentials != null) __obj.updateDynamic("setWithCredentials")(setWithCredentials)
-    if (setXmlData != null) __obj.updateDynamic("setXmlData")(setXmlData)
+    if (setAction != null) __obj.updateDynamic("setAction")(js.Any.fromFunction1(setAction))
+    if (setArgs != null) __obj.updateDynamic("setArgs")(js.Any.fromFunction1(setArgs))
+    if (setCallback != null) __obj.updateDynamic("setCallback")(js.Any.fromFunction1(setCallback))
+    if (setCallbackKey != null) __obj.updateDynamic("setCallbackKey")(js.Any.fromFunction1(setCallbackKey))
+    if (setDirectFn != null) __obj.updateDynamic("setDirectFn")(js.Any.fromFunction1(setDirectFn))
+    if (setDisableCaching != null) __obj.updateDynamic("setDisableCaching")(js.Any.fromFunction1(setDisableCaching))
+    if (setHeaders != null) __obj.updateDynamic("setHeaders")(js.Any.fromFunction1(setHeaders))
+    if (setJsonData != null) __obj.updateDynamic("setJsonData")(js.Any.fromFunction1(setJsonData))
+    if (setMethod != null) __obj.updateDynamic("setMethod")(js.Any.fromFunction1(setMethod))
+    if (setOperation != null) __obj.updateDynamic("setOperation")(js.Any.fromFunction1(setOperation))
+    if (setParams != null) __obj.updateDynamic("setParams")(js.Any.fromFunction1(setParams))
+    if (setPassword != null) __obj.updateDynamic("setPassword")(js.Any.fromFunction1(setPassword))
+    if (setProxy != null) __obj.updateDynamic("setProxy")(js.Any.fromFunction1(setProxy))
+    if (setRecords != null) __obj.updateDynamic("setRecords")(js.Any.fromFunction1(setRecords))
+    if (setScope != null) __obj.updateDynamic("setScope")(js.Any.fromFunction1(setScope))
+    if (setTimeout != null) __obj.updateDynamic("setTimeout")(js.Any.fromFunction1(setTimeout))
+    if (setUrl != null) __obj.updateDynamic("setUrl")(js.Any.fromFunction1(setUrl))
+    if (setUseDefaultXhrHeader != null) __obj.updateDynamic("setUseDefaultXhrHeader")(js.Any.fromFunction1(setUseDefaultXhrHeader))
+    if (setUsername != null) __obj.updateDynamic("setUsername")(js.Any.fromFunction1(setUsername))
+    if (setWithCredentials != null) __obj.updateDynamic("setWithCredentials")(js.Any.fromFunction1(setWithCredentials))
+    if (setXmlData != null) __obj.updateDynamic("setXmlData")(js.Any.fromFunction1(setXmlData))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (url != null) __obj.updateDynamic("url")(url)

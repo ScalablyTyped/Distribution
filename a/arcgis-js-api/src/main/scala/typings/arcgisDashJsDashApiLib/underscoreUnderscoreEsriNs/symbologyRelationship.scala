@@ -34,10 +34,10 @@ trait symbologyRelationship extends js.Object {
 object symbologyRelationship {
   @scala.inline
   def apply(
-    cloneScheme: js.Function1[RelationshipScheme, RelationshipScheme],
-    getSchemes: js.Function1[relationshipGetSchemesParams, RelationshipSchemes]
+    cloneScheme: RelationshipScheme => RelationshipScheme,
+    getSchemes: relationshipGetSchemesParams => RelationshipSchemes
   ): symbologyRelationship = {
-    val __obj = js.Dynamic.literal(cloneScheme = cloneScheme, getSchemes = getSchemes)
+    val __obj = js.Dynamic.literal(cloneScheme = js.Any.fromFunction1(cloneScheme), getSchemes = js.Any.fromFunction1(getSchemes))
   
     __obj.asInstanceOf[symbologyRelationship]
   }

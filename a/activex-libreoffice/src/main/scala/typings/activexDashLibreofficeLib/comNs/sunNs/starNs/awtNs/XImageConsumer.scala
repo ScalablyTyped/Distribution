@@ -69,42 +69,16 @@ trait XImageConsumer
 object XImageConsumer {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    complete: js.Function2[scala.Double, XImageProducer, scala.Unit],
-    init: js.Function2[scala.Double, scala.Double, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setColorModel: js.Function6[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ],
-    setPixelsByBytes: js.Function7[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ],
-    setPixelsByLongs: js.Function7[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    complete: (scala.Double, XImageProducer) => scala.Unit,
+    init: (scala.Double, scala.Double) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setColorModel: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    setPixelsByBytes: (scala.Double, scala.Double, scala.Double, scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Double, scala.Double) => scala.Unit,
+    setPixelsByLongs: (scala.Double, scala.Double, scala.Double, scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Double, scala.Double) => scala.Unit
   ): XImageConsumer = {
-    val __obj = js.Dynamic.literal(acquire = acquire, complete = complete, init = init, queryInterface = queryInterface, release = release, setColorModel = setColorModel, setPixelsByBytes = setPixelsByBytes, setPixelsByLongs = setPixelsByLongs)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), complete = js.Any.fromFunction2(complete), init = js.Any.fromFunction2(init), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setColorModel = js.Any.fromFunction6(setColorModel), setPixelsByBytes = js.Any.fromFunction7(setPixelsByBytes), setPixelsByLongs = js.Any.fromFunction7(setPixelsByLongs))
   
     __obj.asInstanceOf[XImageConsumer]
   }

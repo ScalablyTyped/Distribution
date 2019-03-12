@@ -33,22 +33,16 @@ object Props {
     autocompletionRequest: googlemapsLib.googleNs.mapsNs.placesNs.AutocompletionRequest,
     googleMaps: reactDashGoogleDashPlacesDashSuggestLib.Anon_Adsense,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
-    customContainerRender: js.Function1[
-      /* predictions */ js.Array[Prediction], 
-      reactLib.reactMod.Global.JSXNs.Element | java.lang.String
-    ] = null,
-    customRender: js.Function1[
-      /* prediction */ js.UndefOr[Prediction], 
-      reactLib.reactMod.Global.JSXNs.Element | java.lang.String
-    ] = null,
-    onSelectSuggest: js.Function2[/* geocodedPrediction */ GeocodedPrediction, /* originalPrediction */ Prediction, _] = null,
+    customContainerRender: /* predictions */ js.Array[Prediction] => reactLib.reactMod.Global.JSXNs.Element | java.lang.String = null,
+    customRender: /* prediction */ js.UndefOr[Prediction] => reactLib.reactMod.Global.JSXNs.Element | java.lang.String = null,
+    onSelectSuggest: (/* geocodedPrediction */ GeocodedPrediction, /* originalPrediction */ Prediction) => _ = null,
     textNoResults: java.lang.String = null
   ): Props = {
     val __obj = js.Dynamic.literal(autocompletionRequest = autocompletionRequest, googleMaps = googleMaps)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (customContainerRender != null) __obj.updateDynamic("customContainerRender")(customContainerRender)
-    if (customRender != null) __obj.updateDynamic("customRender")(customRender)
-    if (onSelectSuggest != null) __obj.updateDynamic("onSelectSuggest")(onSelectSuggest)
+    if (customContainerRender != null) __obj.updateDynamic("customContainerRender")(js.Any.fromFunction1(customContainerRender))
+    if (customRender != null) __obj.updateDynamic("customRender")(js.Any.fromFunction1(customRender))
+    if (onSelectSuggest != null) __obj.updateDynamic("onSelectSuggest")(js.Any.fromFunction2(onSelectSuggest))
     if (textNoResults != null) __obj.updateDynamic("textNoResults")(textNoResults)
     __obj.asInstanceOf[Props]
   }

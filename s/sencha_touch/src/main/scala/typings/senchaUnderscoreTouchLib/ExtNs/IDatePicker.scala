@@ -110,34 +110,30 @@ object IDatePicker {
     IPicker: senchaUnderscoreTouchLib.ExtNs.pickerNs.IPicker = null,
     dayText: java.lang.String = null,
     doneButton: js.Any = null,
-    getDayText: js.Function0[java.lang.String] = null,
-    getDoneButton: js.Function0[_] = null,
-    getMonthText: js.Function0[java.lang.String] = null,
-    getSlotOrder: js.Function0[Array] = null,
-    getValue: js.Function1[/* useDom */ js.UndefOr[js.Any], _] = null,
-    getYearFrom: js.Function0[scala.Double] = null,
-    getYearText: js.Function0[java.lang.String] = null,
-    getYearTo: js.Function0[scala.Double] = null,
-    initialize: js.Function0[scala.Unit] = null,
+    getDayText: () => java.lang.String = null,
+    getDoneButton: () => _ = null,
+    getMonthText: () => java.lang.String = null,
+    getSlotOrder: () => Array = null,
+    getValue: /* useDom */ js.UndefOr[js.Any] => _ = null,
+    getYearFrom: () => scala.Double = null,
+    getYearText: () => java.lang.String = null,
+    getYearTo: () => scala.Double = null,
+    initialize: () => scala.Unit = null,
     monthText: java.lang.String = null,
-    setDayText: js.Function1[/* dayText */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setDoneButton: js.Function1[/* doneButton */ js.UndefOr[js.Any], scala.Unit] = null,
-    setMonthText: js.Function1[/* monthText */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setSlotOrder: js.Function1[/* slotOrder */ js.UndefOr[Array], scala.Unit] = null,
-    setValue: js.Function2[/* value */ js.UndefOr[js.Any], /* animated */ js.UndefOr[js.Any], IPicker] = null,
-    setYearFrom: js.Function1[/* yearFrom */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setYearText: js.Function1[/* yearText */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setYearTo: js.Function1[/* yearTo */ js.UndefOr[scala.Double], scala.Unit] = null,
+    setDayText: /* dayText */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setDoneButton: /* doneButton */ js.UndefOr[js.Any] => scala.Unit = null,
+    setMonthText: /* monthText */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setSlotOrder: /* slotOrder */ js.UndefOr[Array] => scala.Unit = null,
+    setValue: (/* value */ js.UndefOr[js.Any], /* animated */ js.UndefOr[js.Any]) => IPicker = null,
+    setYearFrom: /* yearFrom */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setYearText: /* yearText */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setYearTo: /* yearTo */ js.UndefOr[scala.Double] => scala.Unit = null,
     slotOrder: Array = null,
-    updateDayText: js.Function2[/* newDayText */ js.UndefOr[js.Any], /* oldDayText */ js.UndefOr[js.Any], scala.Unit] = null,
-    updateMonthText: js.Function2[
-      /* newMonthText */ js.UndefOr[js.Any], 
-      /* oldMonthText */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    updateYearFrom: js.Function0[scala.Unit] = null,
-    updateYearText: js.Function1[/* yearText */ js.UndefOr[js.Any], scala.Unit] = null,
-    updateYearTo: js.Function0[scala.Unit] = null,
+    updateDayText: (/* newDayText */ js.UndefOr[js.Any], /* oldDayText */ js.UndefOr[js.Any]) => scala.Unit = null,
+    updateMonthText: (/* newMonthText */ js.UndefOr[js.Any], /* oldMonthText */ js.UndefOr[js.Any]) => scala.Unit = null,
+    updateYearFrom: () => scala.Unit = null,
+    updateYearText: /* yearText */ js.UndefOr[js.Any] => scala.Unit = null,
+    updateYearTo: () => scala.Unit = null,
     value: js.Any = null,
     yearFrom: scala.Int | scala.Double = null,
     yearText: java.lang.String = null,
@@ -147,30 +143,30 @@ object IDatePicker {
     js.Dynamic.global.Object.assign(__obj, IPicker)
     if (dayText != null) __obj.updateDynamic("dayText")(dayText)
     if (doneButton != null) __obj.updateDynamic("doneButton")(doneButton)
-    if (getDayText != null) __obj.updateDynamic("getDayText")(getDayText)
-    if (getDoneButton != null) __obj.updateDynamic("getDoneButton")(getDoneButton)
-    if (getMonthText != null) __obj.updateDynamic("getMonthText")(getMonthText)
-    if (getSlotOrder != null) __obj.updateDynamic("getSlotOrder")(getSlotOrder)
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
-    if (getYearFrom != null) __obj.updateDynamic("getYearFrom")(getYearFrom)
-    if (getYearText != null) __obj.updateDynamic("getYearText")(getYearText)
-    if (getYearTo != null) __obj.updateDynamic("getYearTo")(getYearTo)
-    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
+    if (getDayText != null) __obj.updateDynamic("getDayText")(js.Any.fromFunction0(getDayText))
+    if (getDoneButton != null) __obj.updateDynamic("getDoneButton")(js.Any.fromFunction0(getDoneButton))
+    if (getMonthText != null) __obj.updateDynamic("getMonthText")(js.Any.fromFunction0(getMonthText))
+    if (getSlotOrder != null) __obj.updateDynamic("getSlotOrder")(js.Any.fromFunction0(getSlotOrder))
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction1(getValue))
+    if (getYearFrom != null) __obj.updateDynamic("getYearFrom")(js.Any.fromFunction0(getYearFrom))
+    if (getYearText != null) __obj.updateDynamic("getYearText")(js.Any.fromFunction0(getYearText))
+    if (getYearTo != null) __obj.updateDynamic("getYearTo")(js.Any.fromFunction0(getYearTo))
+    if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction0(initialize))
     if (monthText != null) __obj.updateDynamic("monthText")(monthText)
-    if (setDayText != null) __obj.updateDynamic("setDayText")(setDayText)
-    if (setDoneButton != null) __obj.updateDynamic("setDoneButton")(setDoneButton)
-    if (setMonthText != null) __obj.updateDynamic("setMonthText")(setMonthText)
-    if (setSlotOrder != null) __obj.updateDynamic("setSlotOrder")(setSlotOrder)
-    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
-    if (setYearFrom != null) __obj.updateDynamic("setYearFrom")(setYearFrom)
-    if (setYearText != null) __obj.updateDynamic("setYearText")(setYearText)
-    if (setYearTo != null) __obj.updateDynamic("setYearTo")(setYearTo)
+    if (setDayText != null) __obj.updateDynamic("setDayText")(js.Any.fromFunction1(setDayText))
+    if (setDoneButton != null) __obj.updateDynamic("setDoneButton")(js.Any.fromFunction1(setDoneButton))
+    if (setMonthText != null) __obj.updateDynamic("setMonthText")(js.Any.fromFunction1(setMonthText))
+    if (setSlotOrder != null) __obj.updateDynamic("setSlotOrder")(js.Any.fromFunction1(setSlotOrder))
+    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction2(setValue))
+    if (setYearFrom != null) __obj.updateDynamic("setYearFrom")(js.Any.fromFunction1(setYearFrom))
+    if (setYearText != null) __obj.updateDynamic("setYearText")(js.Any.fromFunction1(setYearText))
+    if (setYearTo != null) __obj.updateDynamic("setYearTo")(js.Any.fromFunction1(setYearTo))
     if (slotOrder != null) __obj.updateDynamic("slotOrder")(slotOrder)
-    if (updateDayText != null) __obj.updateDynamic("updateDayText")(updateDayText)
-    if (updateMonthText != null) __obj.updateDynamic("updateMonthText")(updateMonthText)
-    if (updateYearFrom != null) __obj.updateDynamic("updateYearFrom")(updateYearFrom)
-    if (updateYearText != null) __obj.updateDynamic("updateYearText")(updateYearText)
-    if (updateYearTo != null) __obj.updateDynamic("updateYearTo")(updateYearTo)
+    if (updateDayText != null) __obj.updateDynamic("updateDayText")(js.Any.fromFunction2(updateDayText))
+    if (updateMonthText != null) __obj.updateDynamic("updateMonthText")(js.Any.fromFunction2(updateMonthText))
+    if (updateYearFrom != null) __obj.updateDynamic("updateYearFrom")(js.Any.fromFunction0(updateYearFrom))
+    if (updateYearText != null) __obj.updateDynamic("updateYearText")(js.Any.fromFunction1(updateYearText))
+    if (updateYearTo != null) __obj.updateDynamic("updateYearTo")(js.Any.fromFunction0(updateYearTo))
     if (value != null) __obj.updateDynamic("value")(value)
     if (yearFrom != null) __obj.updateDynamic("yearFrom")(yearFrom.asInstanceOf[js.Any])
     if (yearText != null) __obj.updateDynamic("yearText")(yearText)

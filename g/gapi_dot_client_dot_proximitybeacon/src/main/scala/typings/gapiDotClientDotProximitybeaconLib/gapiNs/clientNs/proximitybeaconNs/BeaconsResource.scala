@@ -103,42 +103,18 @@ trait BeaconsResource extends js.Object {
 object BeaconsResource {
   @scala.inline
   def apply(
-    activate: js.Function1[
-      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
+    activate: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
     attachments: AttachmentsResource,
-    deactivate: js.Function1[
-      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    decommission: js.Function1[
-      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
+    deactivate: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    decommission: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    delete: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
     diagnostics: DiagnosticsResource,
-    get: js.Function1[
-      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Beacon]
-    ],
-    list: js.Function1[
-      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListBeaconsResponse]
-    ],
-    register: js.Function1[
-      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Beacon]
-    ],
-    update: js.Function1[
-      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Beacon]
-    ]
+    get: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName => gapiDotClientLib.gapiNs.clientNs.Request[Beacon],
+    list: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ListBeaconsResponse],
+    register: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[Beacon],
+    update: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName => gapiDotClientLib.gapiNs.clientNs.Request[Beacon]
   ): BeaconsResource = {
-    val __obj = js.Dynamic.literal(activate = activate, attachments = attachments, deactivate = deactivate, decommission = decommission, delete = delete, diagnostics = diagnostics, get = get, list = list, register = register, update = update)
+    val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate), attachments = attachments, deactivate = js.Any.fromFunction1(deactivate), decommission = js.Any.fromFunction1(decommission), delete = js.Any.fromFunction1(delete), diagnostics = diagnostics, get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), register = js.Any.fromFunction1(register), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[BeaconsResource]
   }

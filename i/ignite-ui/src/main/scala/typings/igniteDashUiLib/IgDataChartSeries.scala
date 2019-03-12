@@ -1050,7 +1050,15 @@ object IgDataChartSeries {
     yAxis: java.lang.String = null,
     yAxisAnnoationFormatLabel: js.Any = null,
     yAxisAnnotationBackground: java.lang.String = null,
-    yAxisAnnotationInterpolatedValuePrecision: scala.Int | scala.Double = null
+    yAxisAnnotationInterpolatedValuePrecision: scala.Int | scala.Double = null,
+    yAxisAnnotationOutline: java.lang.String = null,
+    yAxisAnnotationPaddingBottom: scala.Int | scala.Double = null,
+    yAxisAnnotationPaddingLeft: scala.Int | scala.Double = null,
+    yAxisAnnotationPaddingRight: scala.Int | scala.Double = null,
+    yAxisAnnotationPaddingTop: scala.Int | scala.Double = null,
+    yAxisAnnotationStrokeThickness: scala.Int | scala.Double = null,
+    yAxisAnnotationTextColor: java.lang.String = null,
+    yMemberPath: java.lang.String = null
   ): IgDataChartSeries = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -1203,6 +1211,14 @@ object IgDataChartSeries {
     if (yAxisAnnoationFormatLabel != null) __obj.updateDynamic("yAxisAnnoationFormatLabel")(yAxisAnnoationFormatLabel)
     if (yAxisAnnotationBackground != null) __obj.updateDynamic("yAxisAnnotationBackground")(yAxisAnnotationBackground)
     if (yAxisAnnotationInterpolatedValuePrecision != null) __obj.updateDynamic("yAxisAnnotationInterpolatedValuePrecision")(yAxisAnnotationInterpolatedValuePrecision.asInstanceOf[js.Any])
+    if (yAxisAnnotationOutline != null) __obj.updateDynamic("yAxisAnnotationOutline")(yAxisAnnotationOutline)
+    if (yAxisAnnotationPaddingBottom != null) __obj.updateDynamic("yAxisAnnotationPaddingBottom")(yAxisAnnotationPaddingBottom.asInstanceOf[js.Any])
+    if (yAxisAnnotationPaddingLeft != null) __obj.updateDynamic("yAxisAnnotationPaddingLeft")(yAxisAnnotationPaddingLeft.asInstanceOf[js.Any])
+    if (yAxisAnnotationPaddingRight != null) __obj.updateDynamic("yAxisAnnotationPaddingRight")(yAxisAnnotationPaddingRight.asInstanceOf[js.Any])
+    if (yAxisAnnotationPaddingTop != null) __obj.updateDynamic("yAxisAnnotationPaddingTop")(yAxisAnnotationPaddingTop.asInstanceOf[js.Any])
+    if (yAxisAnnotationStrokeThickness != null) __obj.updateDynamic("yAxisAnnotationStrokeThickness")(yAxisAnnotationStrokeThickness.asInstanceOf[js.Any])
+    if (yAxisAnnotationTextColor != null) __obj.updateDynamic("yAxisAnnotationTextColor")(yAxisAnnotationTextColor)
+    if (yMemberPath != null) __obj.updateDynamic("yMemberPath")(yMemberPath)
     __obj.asInstanceOf[IgDataChartSeries]
   }
 }

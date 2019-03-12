@@ -20,17 +20,17 @@ object ConsumerRunOptions {
     autoCommit: js.UndefOr[scala.Boolean] = js.undefined,
     autoCommitInterval: scala.Int | scala.Double = null,
     autoCommitThreshold: scala.Int | scala.Double = null,
-    eachBatch: js.Function1[/* payload */ ConsumerEachBatchPayload, js.Promise[scala.Unit]] = null,
+    eachBatch: /* payload */ ConsumerEachBatchPayload => js.Promise[scala.Unit] = null,
     eachBatchAutoResolve: js.UndefOr[scala.Boolean] = js.undefined,
-    eachMessage: js.Function1[/* payload */ ConsumerEachMessagePayload, js.Promise[scala.Unit]] = null
+    eachMessage: /* payload */ ConsumerEachMessagePayload => js.Promise[scala.Unit] = null
   ): ConsumerRunOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit)
     if (autoCommitInterval != null) __obj.updateDynamic("autoCommitInterval")(autoCommitInterval.asInstanceOf[js.Any])
     if (autoCommitThreshold != null) __obj.updateDynamic("autoCommitThreshold")(autoCommitThreshold.asInstanceOf[js.Any])
-    if (eachBatch != null) __obj.updateDynamic("eachBatch")(eachBatch)
+    if (eachBatch != null) __obj.updateDynamic("eachBatch")(js.Any.fromFunction1(eachBatch))
     if (!js.isUndefined(eachBatchAutoResolve)) __obj.updateDynamic("eachBatchAutoResolve")(eachBatchAutoResolve)
-    if (eachMessage != null) __obj.updateDynamic("eachMessage")(eachMessage)
+    if (eachMessage != null) __obj.updateDynamic("eachMessage")(js.Any.fromFunction1(eachMessage))
     __obj.asInstanceOf[ConsumerRunOptions]
   }
 }

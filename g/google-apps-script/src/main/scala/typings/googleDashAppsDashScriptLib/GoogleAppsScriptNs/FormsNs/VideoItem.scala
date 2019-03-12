@@ -24,21 +24,21 @@ trait VideoItem extends js.Object {
 object VideoItem {
   @scala.inline
   def apply(
-    duplicate: js.Function0[VideoItem],
-    getAlignment: js.Function0[Alignment],
-    getHelpText: js.Function0[java.lang.String],
-    getId: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getTitle: js.Function0[java.lang.String],
-    getType: js.Function0[ItemType],
-    getWidth: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    setAlignment: js.Function1[Alignment, VideoItem],
-    setHelpText: js.Function1[java.lang.String, VideoItem],
-    setTitle: js.Function1[java.lang.String, VideoItem],
-    setVideoUrl: js.Function1[java.lang.String, VideoItem],
-    setWidth: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, VideoItem]
+    duplicate: () => VideoItem,
+    getAlignment: () => Alignment,
+    getHelpText: () => java.lang.String,
+    getId: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getIndex: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getTitle: () => java.lang.String,
+    getType: () => ItemType,
+    getWidth: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    setAlignment: Alignment => VideoItem,
+    setHelpText: java.lang.String => VideoItem,
+    setTitle: java.lang.String => VideoItem,
+    setVideoUrl: java.lang.String => VideoItem,
+    setWidth: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => VideoItem
   ): VideoItem = {
-    val __obj = js.Dynamic.literal(duplicate = duplicate, getAlignment = getAlignment, getHelpText = getHelpText, getId = getId, getIndex = getIndex, getTitle = getTitle, getType = getType, getWidth = getWidth, setAlignment = setAlignment, setHelpText = setHelpText, setTitle = setTitle, setVideoUrl = setVideoUrl, setWidth = setWidth)
+    val __obj = js.Dynamic.literal(duplicate = js.Any.fromFunction0(duplicate), getAlignment = js.Any.fromFunction0(getAlignment), getHelpText = js.Any.fromFunction0(getHelpText), getId = js.Any.fromFunction0(getId), getIndex = js.Any.fromFunction0(getIndex), getTitle = js.Any.fromFunction0(getTitle), getType = js.Any.fromFunction0(getType), getWidth = js.Any.fromFunction0(getWidth), setAlignment = js.Any.fromFunction1(setAlignment), setHelpText = js.Any.fromFunction1(setHelpText), setTitle = js.Any.fromFunction1(setTitle), setVideoUrl = js.Any.fromFunction1(setVideoUrl), setWidth = js.Any.fromFunction1(setWidth))
   
     __obj.asInstanceOf[VideoItem]
   }

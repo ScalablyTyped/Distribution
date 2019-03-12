@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("antlr4", "ParserRuleContext")
 @js.native
 class ParserRuleContext protected ()
-  extends antlr4Lib.parserrulecontextMod.ParserRuleContext {
+  extends antlr4Lib.parserRuleContextMod.ParserRuleContext {
   def this(parent: js.Any, invokingState: scala.Double) = this()
 }
 
@@ -16,6 +16,6 @@ class ParserRuleContext protected ()
 @JSImport("antlr4", "ParserRuleContext")
 @js.native
 object ParserRuleContext extends js.Object {
-  val EMPTY: antlr4Lib.parserrulecontextMod.ParserRuleContext = js.native
+  val EMPTY: antlr4Lib.parserRuleContextMod.ParserRuleContext = js.native
 }
 

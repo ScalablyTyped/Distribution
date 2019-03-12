@@ -1,37 +1,37 @@
 organization := "org.scalablytyped"
 name := "apollo-react"
-version := "0.7.1-054424"
+version := "0.7.1-b4c738"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-cache" % "1.2.1-d0ddff",
-  "org.scalablytyped" %%% "apollo-client" % "2.5.1-09bddf",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.9-141f49",
-  "org.scalablytyped" %%% "apollo-link-dedup" % "1.0.16-9076e1",
-  "org.scalablytyped" %%% "apollo-utilities" % "1.2.1-4444e9",
-  "org.scalablytyped" %%% "csstype" % "2.6.3-60f3ea",
-  "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-0e5462",
-  "org.scalablytyped" %%% "graphql" % "14.0-dt-20190212Z-a00511",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190304Z-421c03",
-  "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-ecc25b",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190227Z-56553a",
-  "org.scalablytyped" %%% "lodash_dot_flatten" % "4.4-dt-20190214Z-a347bf",
-  "org.scalablytyped" %%% "lodash_dot_isequal" % "4.5-dt-20190214Z-c84b8f",
-  "org.scalablytyped" %%% "lodash_dot_isobject" % "3.0-dt-20190214Z-eb2fa0",
-  "org.scalablytyped" %%% "lodash_dot_pick" % "4.4-dt-20190214Z-f3e21b",
-  "org.scalablytyped" %%% "object-assign" % "4.0.1-dt-20180214Z-cda594",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-0b0b5e",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190306Z-d5c6e1",
-  "org.scalablytyped" %%% "redux" % "4.0.1-03a2e6",
-  "org.scalablytyped" %%% "std" % "3.3-05be79",
-  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-bfac6c",
-  "org.scalablytyped" %%% "ts-invariant" % "0.3.2-ca9939",
-  "org.scalablytyped" %%% "tslib" % "1.9.3-d28c21",
-  "org.scalablytyped" %%% "typed-graphql" % "1.0.2-aefcef",
-  "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-fb19a7",
-  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.16-b7d126")
+  "org.scalablytyped" %%% "apollo-cache" % "1.2.1-2e1d16",
+  "org.scalablytyped" %%% "apollo-client" % "2.5.1-e16db1",
+  "org.scalablytyped" %%% "apollo-link" % "1.2.9-c82628",
+  "org.scalablytyped" %%% "apollo-link-dedup" % "1.0.16-c86351",
+  "org.scalablytyped" %%% "apollo-utilities" % "1.2.1-da0a30",
+  "org.scalablytyped" %%% "csstype" % "2.6.3-9f8404",
+  "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-ccd0c9",
+  "org.scalablytyped" %%% "graphql" % "14.0-dt-20190212Z-aa9287",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190304Z-7f8230",
+  "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-662401",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-601106",
+  "org.scalablytyped" %%% "lodash_dot_flatten" % "4.4-dt-20190214Z-e05308",
+  "org.scalablytyped" %%% "lodash_dot_isequal" % "4.5-dt-20190214Z-06616f",
+  "org.scalablytyped" %%% "lodash_dot_isobject" % "3.0-dt-20190214Z-739da4",
+  "org.scalablytyped" %%% "lodash_dot_pick" % "4.4-dt-20190214Z-c28106",
+  "org.scalablytyped" %%% "object-assign" % "4.0.1-dt-20180214Z-5fa551",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190306Z-24375e",
+  "org.scalablytyped" %%% "redux" % "4.0.1-18f3a8",
+  "org.scalablytyped" %%% "std" % "3.3-ec2942",
+  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-5b665c",
+  "org.scalablytyped" %%% "ts-invariant" % "0.3.2-6c21c8",
+  "org.scalablytyped" %%% "tslib" % "1.9.3-28a6ab",
+  "org.scalablytyped" %%% "typed-graphql" % "1.0.2-3eff9b",
+  "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-4a9f67",
+  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.16-3d5d0d")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -27,7 +27,7 @@ trait Table[T]
   ): scala.Unit = js.native
   def findColumn(myKey: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def findColumn(myKey: scala.Double): js.UndefOr[scala.Nothing] = js.native
-  def generatePopupContainerFunc(): js.UndefOr[js.Function0[reactLib.HTMLElement]] = js.native
+  def generatePopupContainerFunc(): js.UndefOr[js.Function0[stdLib.HTMLElement]] = js.native
   def getCheckboxPropsByItem(item: T, index: scala.Double): js.Any = js.native
   def getColumnKey(column: antdLib.libTableInterfaceMod.ColumnProps[T]): js.UndefOr[java.lang.String | scala.Double] = js.native
   def getColumnKey(column: antdLib.libTableInterfaceMod.ColumnProps[T], index: scala.Double): js.UndefOr[java.lang.String | scala.Double] = js.native
@@ -48,7 +48,7 @@ trait Table[T]
   def getLocalData(state: antdLib.libTableInterfaceMod.TableState[T], filter: scala.Boolean): js.Array[T] = js.native
   def getLocalData(state: scala.Null, filter: scala.Boolean): js.Array[T] = js.native
   def getMaxCurrent(total: scala.Double): js.UndefOr[scala.Double] = js.native
-  def getPopupContainer(): reactLib.HTMLElement = js.native
+  def getPopupContainer(): stdLib.HTMLElement = js.native
   def getRecordKey(record: T, index: scala.Double): js.Any = js.native
   def getSortOrderColumns(): js.Any = js.native
   def getSortOrderColumns(columns: js.Array[antdLib.libTableInterfaceMod.ColumnProps[T]]): js.Any = js.native

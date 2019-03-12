@@ -18,8 +18,8 @@ trait JQuery extends js.Object {
 
 object JQuery {
   @scala.inline
-  def apply(serializeJSON: js.Function0[java.lang.String], serializeObject: js.Function0[js.Object]): JQuery = {
-    val __obj = js.Dynamic.literal(serializeJSON = serializeJSON, serializeObject = serializeObject)
+  def apply(serializeJSON: () => java.lang.String, serializeObject: () => js.Object): JQuery = {
+    val __obj = js.Dynamic.literal(serializeJSON = js.Any.fromFunction0(serializeJSON), serializeObject = js.Any.fromFunction0(serializeObject))
   
     __obj.asInstanceOf[JQuery]
   }

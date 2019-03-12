@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DescribeBudgetPerformanceHistoryRequest extends js.Object {
-  var AccountId: AccountId
-  var BudgetName: BudgetName
+  var AccountId: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.AccountId
+  var BudgetName: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.BudgetName
   var MaxResults: js.UndefOr[MaxResults] = js.undefined
   var NextToken: js.UndefOr[GenericString] = js.undefined
   /**

@@ -16,7 +16,7 @@ object ^ extends js.Object {
   val noop: gulpDashUtilLib.Anon_Ctor = js.native
   def beep(): scala.Unit = js.native
   def buffer(): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  def buffer(cb: js.Function2[/* err */ nodeLib.Error, /* data */ js.Array[_], scala.Unit]): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def buffer(cb: js.Function2[/* err */ stdLib.Error, /* data */ js.Array[_], scala.Unit]): nodeLib.NodeJSNs.ReadWriteStream = js.native
   def combine(streams: nodeLib.NodeJSNs.ReadWriteStream*): js.Function0[nodeLib.NodeJSNs.ReadWriteStream] = js.native
   def combine(streams: js.Array[nodeLib.NodeJSNs.ReadWriteStream]): js.Function0[nodeLib.NodeJSNs.ReadWriteStream] = js.native
   def isBuffer(obj: js.Any): scala.Boolean = js.native

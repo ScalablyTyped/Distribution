@@ -16,13 +16,13 @@ trait IAdditionalFolders extends js.Object {
 object IAdditionalFolders {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IAdditionalFolder, scala.Unit],
-    Clone: js.Function0[IAdditionalFolders],
+    Add: (scala.Double, IAdditionalFolder) => scala.Unit,
+    Clone: () => IAdditionalFolders,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IAdditionalFolder],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => IAdditionalFolder,
+    Remove: scala.Double => scala.Unit
   ): IAdditionalFolders = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IAdditionalFolders]
   }

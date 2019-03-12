@@ -32,12 +32,12 @@ object UIAddComponent {
   def apply(
     component: Widget | stdLib.HTMLElement | java.lang.String,
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     index: scala.Int | scala.Double = null,
     position: java.lang.String = null
   ): UIAddComponent = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position)
     __obj.asInstanceOf[UIAddComponent]

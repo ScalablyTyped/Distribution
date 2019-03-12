@@ -34,7 +34,7 @@ object AccordionProps {
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null,
     messages: grommetLib.Anon_TabContents = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
-    onActive: js.Function1[/* repeated */ js.Any, _] = null
+    onActive: /* repeated */ js.Any => _ = null
   ): AccordionProps = {
     val __obj = js.Dynamic.literal()
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
@@ -46,7 +46,7 @@ object AccordionProps {
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (onActive != null) __obj.updateDynamic("onActive")(onActive)
+    if (onActive != null) __obj.updateDynamic("onActive")(js.Any.fromFunction1(onActive))
     __obj.asInstanceOf[AccordionProps]
   }
 }

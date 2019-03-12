@@ -25,25 +25,15 @@ trait XStyleLoader2 extends XStyleLoader {
 object XStyleLoader2 {
   @scala.inline
   def apply(
-    StyleLoaderOptions: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
-    acquire: js.Function0[scala.Unit],
-    getStyleLoaderOptions: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    loadStylesFromDocument: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    loadStylesFromURL: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    StyleLoaderOptions: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    acquire: () => scala.Unit,
+    getStyleLoaderOptions: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    loadStylesFromDocument: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    loadStylesFromURL: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XStyleLoader2 = {
-    val __obj = js.Dynamic.literal(StyleLoaderOptions = StyleLoaderOptions, acquire = acquire, getStyleLoaderOptions = getStyleLoaderOptions, loadStylesFromDocument = loadStylesFromDocument, loadStylesFromURL = loadStylesFromURL, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(StyleLoaderOptions = StyleLoaderOptions, acquire = js.Any.fromFunction0(acquire), getStyleLoaderOptions = js.Any.fromFunction0(getStyleLoaderOptions), loadStylesFromDocument = js.Any.fromFunction2(loadStylesFromDocument), loadStylesFromURL = js.Any.fromFunction2(loadStylesFromURL), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XStyleLoader2]
   }

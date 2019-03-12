@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait LoggingCallbackWrapper extends LoggingCallbackTools {
   def apply(): js.Any = js.native
   def apply(args: js.Any*): js.Any = js.native
-  def apply(err: nodeLib.Error, args: js.Any*): js.Any = js.native
+  def apply(err: stdLib.Error, args: js.Any*): js.Any = js.native
 }
 

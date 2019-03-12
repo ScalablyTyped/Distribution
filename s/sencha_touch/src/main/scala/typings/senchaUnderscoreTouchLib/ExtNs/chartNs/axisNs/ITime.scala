@@ -69,103 +69,71 @@ trait ITime extends INumeric {
 object ITime {
   @scala.inline
   def apply(
-    addAfterListener: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    addBeforeListener: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    addEvents: js.Function1[/* eventNames */ js.UndefOr[js.Any], scala.Unit] = null,
-    addListener: js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    addManagedListener: js.Function5[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
+    addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    addEvents: /* eventNames */ js.UndefOr[js.Any] => scala.Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
     background: js.Any = null,
     bubbleEvents: js.Any = null,
     calculateByLabelSize: js.UndefOr[scala.Boolean] = js.undefined,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     chart: senchaUnderscoreTouchLib.ExtNs.chartNs.IAbstractChart = null,
-    clearListeners: js.Function0[scala.Unit] = null,
+    clearListeners: () => scala.Unit = null,
     config: js.Any = null,
     dateFormat: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
-    enableBubble: js.Function1[/* events */ js.UndefOr[js.Any], scala.Unit] = null,
+    destroy: () => scala.Unit = null,
+    enableBubble: /* events */ js.UndefOr[js.Any] => scala.Unit = null,
     extend: java.lang.String = null,
     fields: senchaUnderscoreTouchLib.ExtNs.Array = null,
-    fireAction: js.Function4[
-      /* eventName */ js.UndefOr[java.lang.String], 
-      /* args */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      _
-    ] = null,
-    fireEvent: js.Function2[/* eventName */ java.lang.String, /* repeated */ js.Any, scala.Boolean] = null,
+    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => scala.Boolean = null,
     fromDate: js.Any = null,
-    getAggregator: js.Function0[java.lang.String] = null,
-    getBackground: js.Function0[_] = null,
-    getBubbleEvents: js.Function0[_] = null,
-    getCalculateByLabelSize: js.Function0[scala.Boolean] = null,
-    getChart: js.Function0[senchaUnderscoreTouchLib.ExtNs.chartNs.IAbstractChart] = null,
-    getCoordFor: js.Function1[/* value */ js.UndefOr[js.Any], scala.Double] = null,
-    getDateFormat: js.Function0[_] = null,
-    getFields: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getFromDate: js.Function0[_] = null,
-    getGrid: js.Function0[_] = null,
-    getHidden: js.Function0[scala.Boolean] = null,
-    getId: js.Function0[_] = null,
-    getIncrement: js.Function0[scala.Double] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getLabel: js.Function0[_] = null,
-    getLabelInSpan: js.Function0[scala.Boolean] = null,
-    getLayout: js.Function0[java.lang.String] = null,
-    getListeners: js.Function0[_] = null,
-    getMajorTickSteps: js.Function0[scala.Double] = null,
-    getMaxZoom: js.Function0[scala.Double] = null,
-    getMaximum: js.Function0[scala.Double] = null,
-    getMinZoom: js.Function0[scala.Double] = null,
-    getMinimum: js.Function0[scala.Double] = null,
-    getMinorTickSteps: js.Function0[scala.Double] = null,
-    getNeedHighPrecision: js.Function0[scala.Boolean] = null,
-    getPosition: js.Function0[java.lang.String] = null,
-    getRange: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getRenderer: js.Function0[_] = null,
-    getSegmenter: js.Function0[java.lang.String] = null,
-    getStep: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getStyle: js.Function0[_] = null,
-    getTitle: js.Function0[_] = null,
-    getTitleMargin: js.Function0[scala.Double] = null,
-    getToDate: js.Function0[_] = null,
-    getVisibleRange: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
+    getAggregator: () => java.lang.String = null,
+    getBackground: () => _ = null,
+    getBubbleEvents: () => _ = null,
+    getCalculateByLabelSize: () => scala.Boolean = null,
+    getChart: () => senchaUnderscoreTouchLib.ExtNs.chartNs.IAbstractChart = null,
+    getCoordFor: /* value */ js.UndefOr[js.Any] => scala.Double = null,
+    getDateFormat: () => _ = null,
+    getFields: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getFromDate: () => _ = null,
+    getGrid: () => _ = null,
+    getHidden: () => scala.Boolean = null,
+    getId: () => _ = null,
+    getIncrement: () => scala.Double = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getLabel: () => _ = null,
+    getLabelInSpan: () => scala.Boolean = null,
+    getLayout: () => java.lang.String = null,
+    getListeners: () => _ = null,
+    getMajorTickSteps: () => scala.Double = null,
+    getMaxZoom: () => scala.Double = null,
+    getMaximum: () => scala.Double = null,
+    getMinZoom: () => scala.Double = null,
+    getMinimum: () => scala.Double = null,
+    getMinorTickSteps: () => scala.Double = null,
+    getNeedHighPrecision: () => scala.Boolean = null,
+    getPosition: () => java.lang.String = null,
+    getRange: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getRenderer: () => _ = null,
+    getSegmenter: () => java.lang.String = null,
+    getStep: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getStyle: () => _ = null,
+    getTitle: () => _ = null,
+    getTitleMargin: () => scala.Double = null,
+    getToDate: () => _ = null,
+    getVisibleRange: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
     grid: js.Any = null,
-    hasListener: js.Function1[/* eventName */ js.UndefOr[java.lang.String], scala.Boolean] = null,
+    hasListener: /* eventName */ js.UndefOr[java.lang.String] => scala.Boolean = null,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
     increment: scala.Int | scala.Double = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     label: js.Any = null,
     labelInSpan: js.UndefOr[scala.Boolean] = js.undefined,
     layout: js.Any = null,
@@ -177,219 +145,136 @@ object ITime {
     minimum: scala.Int | scala.Double = null,
     minorTickSteps: scala.Int | scala.Double = null,
     mixins: js.Any = null,
-    mon: js.Function5[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    mun: js.Function4[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
+    mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
     needHighPrecision: js.UndefOr[scala.Boolean] = js.undefined,
-    on: js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    onAfter: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    onBefore: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     platformConfig: js.Any = null,
     position: java.lang.String = null,
-    processData: js.Function0[scala.Unit] = null,
-    relayEvents: js.Function2[
-      /* object */ js.UndefOr[js.Any], 
-      /* events */ js.UndefOr[js.Any], 
-      senchaUnderscoreTouchLib.ExtNs.mixinNs.IObservable
-    ] = null,
-    removeAfterListener: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    removeBeforeListener: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    removeListener: js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    removeManagedListener: js.Function4[
-      /* object */ js.UndefOr[js.Any], 
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    renderFrame: js.Function0[scala.Unit] = null,
+    processData: () => scala.Unit = null,
+    relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => senchaUnderscoreTouchLib.ExtNs.mixinNs.IObservable = null,
+    removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    renderFrame: () => scala.Unit = null,
     renderer: js.Any = null,
-    resumeEvents: js.Function1[/* discardQueuedEvents */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    resumeEvents: /* discardQueuedEvents */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     segmenter: js.Any = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setAggregator: js.Function1[/* aggregator */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setBackground: js.Function1[/* background */ js.UndefOr[js.Any], scala.Unit] = null,
-    setBubbleEvents: js.Function1[/* bubbleEvents */ js.UndefOr[js.Any], scala.Unit] = null,
-    setCalculateByLabelSize: js.Function1[/* calculateByLabelSize */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setChart: js.Function1[
-      /* chart */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.chartNs.IAbstractChart], 
-      scala.Unit
-    ] = null,
-    setDateFormat: js.Function1[/* dateFormat */ js.UndefOr[js.Any], scala.Unit] = null,
-    setFields: js.Function1[/* fields */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
-    setFromDate: js.Function1[/* fromDate */ js.UndefOr[js.Any], scala.Unit] = null,
-    setGrid: js.Function1[/* grid */ js.UndefOr[js.Any], scala.Unit] = null,
-    setHidden: js.Function1[/* hidden */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setIncrement: js.Function1[/* increment */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setLabel: js.Function1[/* label */ js.UndefOr[js.Any], scala.Unit] = null,
-    setLabelInSpan: js.Function1[/* labelInSpan */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setLayout: js.Function1[/* layout */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setListeners: js.Function1[/* listeners */ js.UndefOr[js.Any], scala.Unit] = null,
-    setMajorTickSteps: js.Function1[/* majorTickSteps */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setMaxZoom: js.Function1[/* maxZoom */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setMaximum: js.Function1[/* maximum */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setMinZoom: js.Function1[/* minZoom */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setMinimum: js.Function1[/* minimum */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setMinorTickSteps: js.Function1[/* minorTickSteps */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setNeedHighPrecision: js.Function1[/* needHighPrecision */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setPosition: js.Function1[/* position */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setRenderer: js.Function1[/* renderer */ js.UndefOr[js.Any], java.lang.String] = null,
-    setSegmenter: js.Function1[/* segmenter */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setStep: js.Function1[/* step */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
-    setStyle: js.Function1[/* style */ js.UndefOr[js.Any], scala.Unit] = null,
-    setTitle: js.Function1[/* title */ js.UndefOr[js.Any], scala.Unit] = null,
-    setTitleMargin: js.Function1[/* titleMargin */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setToDate: js.Function1[/* toDate */ js.UndefOr[js.Any], scala.Unit] = null,
-    setVisibleRange: js.Function1[/* visibleRange */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
+    setAggregator: /* aggregator */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setBackground: /* background */ js.UndefOr[js.Any] => scala.Unit = null,
+    setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => scala.Unit = null,
+    setCalculateByLabelSize: /* calculateByLabelSize */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setChart: /* chart */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.chartNs.IAbstractChart] => scala.Unit = null,
+    setDateFormat: /* dateFormat */ js.UndefOr[js.Any] => scala.Unit = null,
+    setFields: /* fields */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
+    setFromDate: /* fromDate */ js.UndefOr[js.Any] => scala.Unit = null,
+    setGrid: /* grid */ js.UndefOr[js.Any] => scala.Unit = null,
+    setHidden: /* hidden */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setIncrement: /* increment */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setLabel: /* label */ js.UndefOr[js.Any] => scala.Unit = null,
+    setLabelInSpan: /* labelInSpan */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setLayout: /* layout */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setListeners: /* listeners */ js.UndefOr[js.Any] => scala.Unit = null,
+    setMajorTickSteps: /* majorTickSteps */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setMaxZoom: /* maxZoom */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setMaximum: /* maximum */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setMinZoom: /* minZoom */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setMinimum: /* minimum */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setMinorTickSteps: /* minorTickSteps */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setNeedHighPrecision: /* needHighPrecision */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setPosition: /* position */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setRenderer: /* renderer */ js.UndefOr[js.Any] => java.lang.String = null,
+    setSegmenter: /* segmenter */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setStep: /* step */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
+    setStyle: /* style */ js.UndefOr[js.Any] => scala.Unit = null,
+    setTitle: /* title */ js.UndefOr[js.Any] => scala.Unit = null,
+    setTitleMargin: /* titleMargin */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setToDate: /* toDate */ js.UndefOr[js.Any] => scala.Unit = null,
+    setVisibleRange: /* visibleRange */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     step: senchaUnderscoreTouchLib.ExtNs.Array = null,
     style: js.Any = null,
-    suspendEvents: js.Function0[scala.Unit] = null,
+    suspendEvents: () => scala.Unit = null,
     title: js.Any = null,
     titleMargin: scala.Int | scala.Double = null,
     toDate: js.Any = null,
-    un: js.Function5[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ] = null,
-    unAfter: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    unBefore: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null,
     visibleRange: senchaUnderscoreTouchLib.ExtNs.Array = null
   ): ITime = {
     val __obj = js.Dynamic.literal()
-    if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(addAfterListener)
-    if (addBeforeListener != null) __obj.updateDynamic("addBeforeListener")(addBeforeListener)
-    if (addEvents != null) __obj.updateDynamic("addEvents")(addEvents)
-    if (addListener != null) __obj.updateDynamic("addListener")(addListener)
-    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(addManagedListener)
+    if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4(addAfterListener))
+    if (addBeforeListener != null) __obj.updateDynamic("addBeforeListener")(js.Any.fromFunction4(addBeforeListener))
+    if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
+    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction5(addListener))
+    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
     if (background != null) __obj.updateDynamic("background")(background)
     if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents)
     if (!js.isUndefined(calculateByLabelSize)) __obj.updateDynamic("calculateByLabelSize")(calculateByLabelSize)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (chart != null) __obj.updateDynamic("chart")(chart)
-    if (clearListeners != null) __obj.updateDynamic("clearListeners")(clearListeners)
+    if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
     if (config != null) __obj.updateDynamic("config")(config)
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (enableBubble != null) __obj.updateDynamic("enableBubble")(enableBubble)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
+    if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
     if (extend != null) __obj.updateDynamic("extend")(extend)
     if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (fireAction != null) __obj.updateDynamic("fireAction")(fireAction)
-    if (fireEvent != null) __obj.updateDynamic("fireEvent")(fireEvent)
+    if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
+    if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
     if (fromDate != null) __obj.updateDynamic("fromDate")(fromDate)
-    if (getAggregator != null) __obj.updateDynamic("getAggregator")(getAggregator)
-    if (getBackground != null) __obj.updateDynamic("getBackground")(getBackground)
-    if (getBubbleEvents != null) __obj.updateDynamic("getBubbleEvents")(getBubbleEvents)
-    if (getCalculateByLabelSize != null) __obj.updateDynamic("getCalculateByLabelSize")(getCalculateByLabelSize)
-    if (getChart != null) __obj.updateDynamic("getChart")(getChart)
-    if (getCoordFor != null) __obj.updateDynamic("getCoordFor")(getCoordFor)
-    if (getDateFormat != null) __obj.updateDynamic("getDateFormat")(getDateFormat)
-    if (getFields != null) __obj.updateDynamic("getFields")(getFields)
-    if (getFromDate != null) __obj.updateDynamic("getFromDate")(getFromDate)
-    if (getGrid != null) __obj.updateDynamic("getGrid")(getGrid)
-    if (getHidden != null) __obj.updateDynamic("getHidden")(getHidden)
-    if (getId != null) __obj.updateDynamic("getId")(getId)
-    if (getIncrement != null) __obj.updateDynamic("getIncrement")(getIncrement)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getLabel != null) __obj.updateDynamic("getLabel")(getLabel)
-    if (getLabelInSpan != null) __obj.updateDynamic("getLabelInSpan")(getLabelInSpan)
-    if (getLayout != null) __obj.updateDynamic("getLayout")(getLayout)
-    if (getListeners != null) __obj.updateDynamic("getListeners")(getListeners)
-    if (getMajorTickSteps != null) __obj.updateDynamic("getMajorTickSteps")(getMajorTickSteps)
-    if (getMaxZoom != null) __obj.updateDynamic("getMaxZoom")(getMaxZoom)
-    if (getMaximum != null) __obj.updateDynamic("getMaximum")(getMaximum)
-    if (getMinZoom != null) __obj.updateDynamic("getMinZoom")(getMinZoom)
-    if (getMinimum != null) __obj.updateDynamic("getMinimum")(getMinimum)
-    if (getMinorTickSteps != null) __obj.updateDynamic("getMinorTickSteps")(getMinorTickSteps)
-    if (getNeedHighPrecision != null) __obj.updateDynamic("getNeedHighPrecision")(getNeedHighPrecision)
-    if (getPosition != null) __obj.updateDynamic("getPosition")(getPosition)
-    if (getRange != null) __obj.updateDynamic("getRange")(getRange)
-    if (getRenderer != null) __obj.updateDynamic("getRenderer")(getRenderer)
-    if (getSegmenter != null) __obj.updateDynamic("getSegmenter")(getSegmenter)
-    if (getStep != null) __obj.updateDynamic("getStep")(getStep)
-    if (getStyle != null) __obj.updateDynamic("getStyle")(getStyle)
-    if (getTitle != null) __obj.updateDynamic("getTitle")(getTitle)
-    if (getTitleMargin != null) __obj.updateDynamic("getTitleMargin")(getTitleMargin)
-    if (getToDate != null) __obj.updateDynamic("getToDate")(getToDate)
-    if (getVisibleRange != null) __obj.updateDynamic("getVisibleRange")(getVisibleRange)
+    if (getAggregator != null) __obj.updateDynamic("getAggregator")(js.Any.fromFunction0(getAggregator))
+    if (getBackground != null) __obj.updateDynamic("getBackground")(js.Any.fromFunction0(getBackground))
+    if (getBubbleEvents != null) __obj.updateDynamic("getBubbleEvents")(js.Any.fromFunction0(getBubbleEvents))
+    if (getCalculateByLabelSize != null) __obj.updateDynamic("getCalculateByLabelSize")(js.Any.fromFunction0(getCalculateByLabelSize))
+    if (getChart != null) __obj.updateDynamic("getChart")(js.Any.fromFunction0(getChart))
+    if (getCoordFor != null) __obj.updateDynamic("getCoordFor")(js.Any.fromFunction1(getCoordFor))
+    if (getDateFormat != null) __obj.updateDynamic("getDateFormat")(js.Any.fromFunction0(getDateFormat))
+    if (getFields != null) __obj.updateDynamic("getFields")(js.Any.fromFunction0(getFields))
+    if (getFromDate != null) __obj.updateDynamic("getFromDate")(js.Any.fromFunction0(getFromDate))
+    if (getGrid != null) __obj.updateDynamic("getGrid")(js.Any.fromFunction0(getGrid))
+    if (getHidden != null) __obj.updateDynamic("getHidden")(js.Any.fromFunction0(getHidden))
+    if (getId != null) __obj.updateDynamic("getId")(js.Any.fromFunction0(getId))
+    if (getIncrement != null) __obj.updateDynamic("getIncrement")(js.Any.fromFunction0(getIncrement))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getLabel != null) __obj.updateDynamic("getLabel")(js.Any.fromFunction0(getLabel))
+    if (getLabelInSpan != null) __obj.updateDynamic("getLabelInSpan")(js.Any.fromFunction0(getLabelInSpan))
+    if (getLayout != null) __obj.updateDynamic("getLayout")(js.Any.fromFunction0(getLayout))
+    if (getListeners != null) __obj.updateDynamic("getListeners")(js.Any.fromFunction0(getListeners))
+    if (getMajorTickSteps != null) __obj.updateDynamic("getMajorTickSteps")(js.Any.fromFunction0(getMajorTickSteps))
+    if (getMaxZoom != null) __obj.updateDynamic("getMaxZoom")(js.Any.fromFunction0(getMaxZoom))
+    if (getMaximum != null) __obj.updateDynamic("getMaximum")(js.Any.fromFunction0(getMaximum))
+    if (getMinZoom != null) __obj.updateDynamic("getMinZoom")(js.Any.fromFunction0(getMinZoom))
+    if (getMinimum != null) __obj.updateDynamic("getMinimum")(js.Any.fromFunction0(getMinimum))
+    if (getMinorTickSteps != null) __obj.updateDynamic("getMinorTickSteps")(js.Any.fromFunction0(getMinorTickSteps))
+    if (getNeedHighPrecision != null) __obj.updateDynamic("getNeedHighPrecision")(js.Any.fromFunction0(getNeedHighPrecision))
+    if (getPosition != null) __obj.updateDynamic("getPosition")(js.Any.fromFunction0(getPosition))
+    if (getRange != null) __obj.updateDynamic("getRange")(js.Any.fromFunction0(getRange))
+    if (getRenderer != null) __obj.updateDynamic("getRenderer")(js.Any.fromFunction0(getRenderer))
+    if (getSegmenter != null) __obj.updateDynamic("getSegmenter")(js.Any.fromFunction0(getSegmenter))
+    if (getStep != null) __obj.updateDynamic("getStep")(js.Any.fromFunction0(getStep))
+    if (getStyle != null) __obj.updateDynamic("getStyle")(js.Any.fromFunction0(getStyle))
+    if (getTitle != null) __obj.updateDynamic("getTitle")(js.Any.fromFunction0(getTitle))
+    if (getTitleMargin != null) __obj.updateDynamic("getTitleMargin")(js.Any.fromFunction0(getTitleMargin))
+    if (getToDate != null) __obj.updateDynamic("getToDate")(js.Any.fromFunction0(getToDate))
+    if (getVisibleRange != null) __obj.updateDynamic("getVisibleRange")(js.Any.fromFunction0(getVisibleRange))
     if (grid != null) __obj.updateDynamic("grid")(grid)
-    if (hasListener != null) __obj.updateDynamic("hasListener")(hasListener)
+    if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (label != null) __obj.updateDynamic("label")(label)
     if (!js.isUndefined(labelInSpan)) __obj.updateDynamic("labelInSpan")(labelInSpan)
     if (layout != null) __obj.updateDynamic("layout")(layout)
@@ -401,67 +286,67 @@ object ITime {
     if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
     if (minorTickSteps != null) __obj.updateDynamic("minorTickSteps")(minorTickSteps.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (mon != null) __obj.updateDynamic("mon")(mon)
-    if (mun != null) __obj.updateDynamic("mun")(mun)
+    if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
+    if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
     if (!js.isUndefined(needHighPrecision)) __obj.updateDynamic("needHighPrecision")(needHighPrecision)
-    if (on != null) __obj.updateDynamic("on")(on)
-    if (onAfter != null) __obj.updateDynamic("onAfter")(onAfter)
-    if (onBefore != null) __obj.updateDynamic("onBefore")(onBefore)
+    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
+    if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
+    if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
     if (position != null) __obj.updateDynamic("position")(position)
-    if (processData != null) __obj.updateDynamic("processData")(processData)
-    if (relayEvents != null) __obj.updateDynamic("relayEvents")(relayEvents)
-    if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(removeAfterListener)
-    if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(removeBeforeListener)
-    if (removeListener != null) __obj.updateDynamic("removeListener")(removeListener)
-    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(removeManagedListener)
-    if (renderFrame != null) __obj.updateDynamic("renderFrame")(renderFrame)
+    if (processData != null) __obj.updateDynamic("processData")(js.Any.fromFunction0(processData))
+    if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
+    if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4(removeAfterListener))
+    if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(js.Any.fromFunction4(removeBeforeListener))
+    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction5(removeListener))
+    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
+    if (renderFrame != null) __obj.updateDynamic("renderFrame")(js.Any.fromFunction0(renderFrame))
     if (renderer != null) __obj.updateDynamic("renderer")(renderer)
-    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(resumeEvents)
+    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1(resumeEvents))
     if (segmenter != null) __obj.updateDynamic("segmenter")(segmenter)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setAggregator != null) __obj.updateDynamic("setAggregator")(setAggregator)
-    if (setBackground != null) __obj.updateDynamic("setBackground")(setBackground)
-    if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(setBubbleEvents)
-    if (setCalculateByLabelSize != null) __obj.updateDynamic("setCalculateByLabelSize")(setCalculateByLabelSize)
-    if (setChart != null) __obj.updateDynamic("setChart")(setChart)
-    if (setDateFormat != null) __obj.updateDynamic("setDateFormat")(setDateFormat)
-    if (setFields != null) __obj.updateDynamic("setFields")(setFields)
-    if (setFromDate != null) __obj.updateDynamic("setFromDate")(setFromDate)
-    if (setGrid != null) __obj.updateDynamic("setGrid")(setGrid)
-    if (setHidden != null) __obj.updateDynamic("setHidden")(setHidden)
-    if (setIncrement != null) __obj.updateDynamic("setIncrement")(setIncrement)
-    if (setLabel != null) __obj.updateDynamic("setLabel")(setLabel)
-    if (setLabelInSpan != null) __obj.updateDynamic("setLabelInSpan")(setLabelInSpan)
-    if (setLayout != null) __obj.updateDynamic("setLayout")(setLayout)
-    if (setListeners != null) __obj.updateDynamic("setListeners")(setListeners)
-    if (setMajorTickSteps != null) __obj.updateDynamic("setMajorTickSteps")(setMajorTickSteps)
-    if (setMaxZoom != null) __obj.updateDynamic("setMaxZoom")(setMaxZoom)
-    if (setMaximum != null) __obj.updateDynamic("setMaximum")(setMaximum)
-    if (setMinZoom != null) __obj.updateDynamic("setMinZoom")(setMinZoom)
-    if (setMinimum != null) __obj.updateDynamic("setMinimum")(setMinimum)
-    if (setMinorTickSteps != null) __obj.updateDynamic("setMinorTickSteps")(setMinorTickSteps)
-    if (setNeedHighPrecision != null) __obj.updateDynamic("setNeedHighPrecision")(setNeedHighPrecision)
-    if (setPosition != null) __obj.updateDynamic("setPosition")(setPosition)
-    if (setRenderer != null) __obj.updateDynamic("setRenderer")(setRenderer)
-    if (setSegmenter != null) __obj.updateDynamic("setSegmenter")(setSegmenter)
-    if (setStep != null) __obj.updateDynamic("setStep")(setStep)
-    if (setStyle != null) __obj.updateDynamic("setStyle")(setStyle)
-    if (setTitle != null) __obj.updateDynamic("setTitle")(setTitle)
-    if (setTitleMargin != null) __obj.updateDynamic("setTitleMargin")(setTitleMargin)
-    if (setToDate != null) __obj.updateDynamic("setToDate")(setToDate)
-    if (setVisibleRange != null) __obj.updateDynamic("setVisibleRange")(setVisibleRange)
+    if (setAggregator != null) __obj.updateDynamic("setAggregator")(js.Any.fromFunction1(setAggregator))
+    if (setBackground != null) __obj.updateDynamic("setBackground")(js.Any.fromFunction1(setBackground))
+    if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
+    if (setCalculateByLabelSize != null) __obj.updateDynamic("setCalculateByLabelSize")(js.Any.fromFunction1(setCalculateByLabelSize))
+    if (setChart != null) __obj.updateDynamic("setChart")(js.Any.fromFunction1(setChart))
+    if (setDateFormat != null) __obj.updateDynamic("setDateFormat")(js.Any.fromFunction1(setDateFormat))
+    if (setFields != null) __obj.updateDynamic("setFields")(js.Any.fromFunction1(setFields))
+    if (setFromDate != null) __obj.updateDynamic("setFromDate")(js.Any.fromFunction1(setFromDate))
+    if (setGrid != null) __obj.updateDynamic("setGrid")(js.Any.fromFunction1(setGrid))
+    if (setHidden != null) __obj.updateDynamic("setHidden")(js.Any.fromFunction1(setHidden))
+    if (setIncrement != null) __obj.updateDynamic("setIncrement")(js.Any.fromFunction1(setIncrement))
+    if (setLabel != null) __obj.updateDynamic("setLabel")(js.Any.fromFunction1(setLabel))
+    if (setLabelInSpan != null) __obj.updateDynamic("setLabelInSpan")(js.Any.fromFunction1(setLabelInSpan))
+    if (setLayout != null) __obj.updateDynamic("setLayout")(js.Any.fromFunction1(setLayout))
+    if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
+    if (setMajorTickSteps != null) __obj.updateDynamic("setMajorTickSteps")(js.Any.fromFunction1(setMajorTickSteps))
+    if (setMaxZoom != null) __obj.updateDynamic("setMaxZoom")(js.Any.fromFunction1(setMaxZoom))
+    if (setMaximum != null) __obj.updateDynamic("setMaximum")(js.Any.fromFunction1(setMaximum))
+    if (setMinZoom != null) __obj.updateDynamic("setMinZoom")(js.Any.fromFunction1(setMinZoom))
+    if (setMinimum != null) __obj.updateDynamic("setMinimum")(js.Any.fromFunction1(setMinimum))
+    if (setMinorTickSteps != null) __obj.updateDynamic("setMinorTickSteps")(js.Any.fromFunction1(setMinorTickSteps))
+    if (setNeedHighPrecision != null) __obj.updateDynamic("setNeedHighPrecision")(js.Any.fromFunction1(setNeedHighPrecision))
+    if (setPosition != null) __obj.updateDynamic("setPosition")(js.Any.fromFunction1(setPosition))
+    if (setRenderer != null) __obj.updateDynamic("setRenderer")(js.Any.fromFunction1(setRenderer))
+    if (setSegmenter != null) __obj.updateDynamic("setSegmenter")(js.Any.fromFunction1(setSegmenter))
+    if (setStep != null) __obj.updateDynamic("setStep")(js.Any.fromFunction1(setStep))
+    if (setStyle != null) __obj.updateDynamic("setStyle")(js.Any.fromFunction1(setStyle))
+    if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction1(setTitle))
+    if (setTitleMargin != null) __obj.updateDynamic("setTitleMargin")(js.Any.fromFunction1(setTitleMargin))
+    if (setToDate != null) __obj.updateDynamic("setToDate")(js.Any.fromFunction1(setToDate))
+    if (setVisibleRange != null) __obj.updateDynamic("setVisibleRange")(js.Any.fromFunction1(setVisibleRange))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (step != null) __obj.updateDynamic("step")(step)
     if (style != null) __obj.updateDynamic("style")(style)
-    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(suspendEvents)
+    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (title != null) __obj.updateDynamic("title")(title)
     if (titleMargin != null) __obj.updateDynamic("titleMargin")(titleMargin.asInstanceOf[js.Any])
     if (toDate != null) __obj.updateDynamic("toDate")(toDate)
-    if (un != null) __obj.updateDynamic("un")(un)
-    if (unAfter != null) __obj.updateDynamic("unAfter")(unAfter)
-    if (unBefore != null) __obj.updateDynamic("unBefore")(unBefore)
+    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
+    if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
+    if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
     if (uses != null) __obj.updateDynamic("uses")(uses)
     if (visibleRange != null) __obj.updateDynamic("visibleRange")(visibleRange)
     __obj.asInstanceOf[ITime]

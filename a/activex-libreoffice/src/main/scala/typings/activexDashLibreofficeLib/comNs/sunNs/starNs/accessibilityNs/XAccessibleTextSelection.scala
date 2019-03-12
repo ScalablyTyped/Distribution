@@ -20,21 +20,17 @@ object XAccessibleTextSelection {
   @scala.inline
   def apply(
     SelectedPortionCount: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addSelection: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double],
-    getSelectedPortionCount: js.Function0[scala.Double],
-    getSeletedPositionEnd: js.Function1[scala.Double, scala.Double],
-    getSeletedPositionStart: js.Function1[scala.Double, scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeSelection: js.Function1[scala.Double, scala.Boolean],
-    scrollToPosition: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, 
-      scala.Boolean, 
-      scala.Boolean
-    ]
+    acquire: () => scala.Unit,
+    addSelection: (scala.Double, scala.Double, scala.Double) => scala.Double,
+    getSelectedPortionCount: () => scala.Double,
+    getSeletedPositionEnd: scala.Double => scala.Double,
+    getSeletedPositionStart: scala.Double => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeSelection: scala.Double => scala.Boolean,
+    scrollToPosition: (activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Boolean) => scala.Boolean
   ): XAccessibleTextSelection = {
-    val __obj = js.Dynamic.literal(SelectedPortionCount = SelectedPortionCount, acquire = acquire, addSelection = addSelection, getSelectedPortionCount = getSelectedPortionCount, getSeletedPositionEnd = getSeletedPositionEnd, getSeletedPositionStart = getSeletedPositionStart, queryInterface = queryInterface, release = release, removeSelection = removeSelection, scrollToPosition = scrollToPosition)
+    val __obj = js.Dynamic.literal(SelectedPortionCount = SelectedPortionCount, acquire = js.Any.fromFunction0(acquire), addSelection = js.Any.fromFunction3(addSelection), getSelectedPortionCount = js.Any.fromFunction0(getSelectedPortionCount), getSeletedPositionEnd = js.Any.fromFunction1(getSeletedPositionEnd), getSeletedPositionStart = js.Any.fromFunction1(getSeletedPositionStart), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeSelection = js.Any.fromFunction1(removeSelection), scrollToPosition = js.Any.fromFunction2(scrollToPosition))
   
     __obj.asInstanceOf[XAccessibleTextSelection]
   }

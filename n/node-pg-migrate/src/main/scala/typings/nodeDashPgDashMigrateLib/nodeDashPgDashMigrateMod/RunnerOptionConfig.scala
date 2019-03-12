@@ -39,7 +39,7 @@ object RunnerOptionConfig {
     dryRun: js.UndefOr[scala.Boolean] = js.undefined,
     fake: js.UndefOr[scala.Boolean] = js.undefined,
     file: java.lang.String = null,
-    log: js.Function1[/* msg */ java.lang.String, scala.Unit] = null,
+    log: /* msg */ java.lang.String => scala.Unit = null,
     migrationsSchema: java.lang.String = null,
     noLock: js.UndefOr[scala.Boolean] = js.undefined,
     schema: java.lang.String = null,
@@ -53,7 +53,7 @@ object RunnerOptionConfig {
     if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun)
     if (!js.isUndefined(fake)) __obj.updateDynamic("fake")(fake)
     if (file != null) __obj.updateDynamic("file")(file)
-    if (log != null) __obj.updateDynamic("log")(log)
+    if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction1(log))
     if (migrationsSchema != null) __obj.updateDynamic("migrationsSchema")(migrationsSchema)
     if (!js.isUndefined(noLock)) __obj.updateDynamic("noLock")(noLock)
     if (schema != null) __obj.updateDynamic("schema")(schema)

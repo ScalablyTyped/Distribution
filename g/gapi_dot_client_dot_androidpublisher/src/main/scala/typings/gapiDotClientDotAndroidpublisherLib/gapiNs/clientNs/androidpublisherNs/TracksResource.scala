@@ -25,24 +25,12 @@ trait TracksResource extends js.Object {
 object TracksResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Track]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TracksListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Track]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Track]
-    ]
+    get: gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Track],
+    list: gapiDotClientDotAndroidpublisherLib.Anon_AltEditId => gapiDotClientLib.gapiNs.clientNs.Request[TracksListResponse],
+    patch: gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Track],
+    update: gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Track]
   ): TracksResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[TracksResource]
   }

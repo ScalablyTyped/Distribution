@@ -12,8 +12,8 @@ trait IBooleanValue extends js.Object {
 
 object IBooleanValue {
   @scala.inline
-  def apply(Clone: js.Function0[IBooleanValue], Value: scala.Boolean): IBooleanValue = {
-    val __obj = js.Dynamic.literal(Clone = Clone, Value = Value)
+  def apply(Clone: () => IBooleanValue, Value: scala.Boolean): IBooleanValue = {
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Value = Value)
   
     __obj.asInstanceOf[IBooleanValue]
   }

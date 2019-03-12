@@ -54,19 +54,14 @@ object ZeptoAjaxSettings {
   @scala.inline
   def apply(
     async: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeSend: js.Function2[/* xhr */ stdLib.XMLHttpRequest, /* settings */ ZeptoAjaxSettings, scala.Boolean] = null,
+    beforeSend: (/* xhr */ stdLib.XMLHttpRequest, /* settings */ ZeptoAjaxSettings) => scala.Boolean = null,
     cache: js.UndefOr[scala.Boolean] = js.undefined,
-    complete: js.Function2[/* xhr */ stdLib.XMLHttpRequest, /* status */ java.lang.String, scala.Unit] = null,
+    complete: (/* xhr */ stdLib.XMLHttpRequest, /* status */ java.lang.String) => scala.Unit = null,
     contentType: java.lang.String = null,
     context: js.Any = null,
     data: js.Any = null,
     dataType: java.lang.String = null,
-    error: js.Function3[
-      /* xhr */ stdLib.XMLHttpRequest, 
-      /* errorType */ java.lang.String, 
-      /* error */ stdLib.Error, 
-      scala.Unit
-    ] = null,
+    error: (/* xhr */ stdLib.XMLHttpRequest, /* errorType */ java.lang.String, /* error */ stdLib.Error) => scala.Unit = null,
     global: js.UndefOr[scala.Boolean] = js.undefined,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     jsonp: java.lang.String = null,
@@ -74,12 +69,7 @@ object ZeptoAjaxSettings {
     mimeType: java.lang.String = null,
     password: java.lang.String = null,
     processData: js.UndefOr[scala.Boolean] = js.undefined,
-    success: js.Function3[
-      /* data */ js.Any, 
-      /* status */ java.lang.String, 
-      /* xhr */ stdLib.XMLHttpRequest, 
-      scala.Unit
-    ] = null,
+    success: (/* data */ js.Any, /* status */ java.lang.String, /* xhr */ stdLib.XMLHttpRequest) => scala.Unit = null,
     timeout: scala.Int | scala.Double = null,
     traditional: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: java.lang.String = null,
@@ -89,14 +79,14 @@ object ZeptoAjaxSettings {
   ): ZeptoAjaxSettings = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)
+    if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction2(beforeSend))
     if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction2(complete))
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
     if (context != null) __obj.updateDynamic("context")(context)
     if (data != null) __obj.updateDynamic("data")(data)
     if (dataType != null) __obj.updateDynamic("dataType")(dataType)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction3(error))
     if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (jsonp != null) __obj.updateDynamic("jsonp")(jsonp)
@@ -104,7 +94,7 @@ object ZeptoAjaxSettings {
     if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
     if (password != null) __obj.updateDynamic("password")(password)
     if (!js.isUndefined(processData)) __obj.updateDynamic("processData")(processData)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction3(success))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (!js.isUndefined(traditional)) __obj.updateDynamic("traditional")(traditional)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

@@ -83,18 +83,18 @@ object Props {
     loadSprite: js.UndefOr[scala.Boolean] = js.undefined,
     loop: reactDashPlyrLib.Anon_Active = null,
     muted: js.UndefOr[scala.Boolean] = js.undefined,
-    onCaptionsDisabled: js.Function0[scala.Unit] = null,
-    onCaptionsEnabled: js.Function0[scala.Unit] = null,
-    onEnd: js.Function0[scala.Unit] = null,
-    onEnterFullscreen: js.Function0[scala.Unit] = null,
-    onExitFullscreen: js.Function0[scala.Unit] = null,
-    onLoadedData: js.Function0[scala.Unit] = null,
-    onPause: js.Function0[scala.Unit] = null,
-    onPlay: js.Function0[scala.Unit] = null,
-    onReady: js.Function1[/* player */ js.UndefOr[js.Any], scala.Unit] = null,
-    onSeeked: js.Function1[/* time */ js.UndefOr[scala.Double], scala.Unit] = null,
-    onTimeUpdate: js.Function1[/* time */ js.UndefOr[scala.Double], scala.Unit] = null,
-    onVolumeChange: js.Function1[/* params */ OnVolumeChangeParam, scala.Unit] = null,
+    onCaptionsDisabled: () => scala.Unit = null,
+    onCaptionsEnabled: () => scala.Unit = null,
+    onEnd: () => scala.Unit = null,
+    onEnterFullscreen: () => scala.Unit = null,
+    onExitFullscreen: () => scala.Unit = null,
+    onLoadedData: () => scala.Unit = null,
+    onPause: () => scala.Unit = null,
+    onPlay: () => scala.Unit = null,
+    onReady: /* player */ js.UndefOr[js.Any] => scala.Unit = null,
+    onSeeked: /* time */ js.UndefOr[scala.Double] => scala.Unit = null,
+    onTimeUpdate: /* time */ js.UndefOr[scala.Double] => scala.Unit = null,
+    onVolumeChange: /* params */ OnVolumeChangeParam => scala.Unit = null,
     poster: java.lang.String = null,
     quality: reactDashPlyrLib.Anon_Default = null,
     ratio: java.lang.String = null,
@@ -134,18 +134,18 @@ object Props {
     if (!js.isUndefined(loadSprite)) __obj.updateDynamic("loadSprite")(loadSprite)
     if (loop != null) __obj.updateDynamic("loop")(loop)
     if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
-    if (onCaptionsDisabled != null) __obj.updateDynamic("onCaptionsDisabled")(onCaptionsDisabled)
-    if (onCaptionsEnabled != null) __obj.updateDynamic("onCaptionsEnabled")(onCaptionsEnabled)
-    if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd)
-    if (onEnterFullscreen != null) __obj.updateDynamic("onEnterFullscreen")(onEnterFullscreen)
-    if (onExitFullscreen != null) __obj.updateDynamic("onExitFullscreen")(onExitFullscreen)
-    if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(onLoadedData)
-    if (onPause != null) __obj.updateDynamic("onPause")(onPause)
-    if (onPlay != null) __obj.updateDynamic("onPlay")(onPlay)
-    if (onReady != null) __obj.updateDynamic("onReady")(onReady)
-    if (onSeeked != null) __obj.updateDynamic("onSeeked")(onSeeked)
-    if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(onTimeUpdate)
-    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(onVolumeChange)
+    if (onCaptionsDisabled != null) __obj.updateDynamic("onCaptionsDisabled")(js.Any.fromFunction0(onCaptionsDisabled))
+    if (onCaptionsEnabled != null) __obj.updateDynamic("onCaptionsEnabled")(js.Any.fromFunction0(onCaptionsEnabled))
+    if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction0(onEnd))
+    if (onEnterFullscreen != null) __obj.updateDynamic("onEnterFullscreen")(js.Any.fromFunction0(onEnterFullscreen))
+    if (onExitFullscreen != null) __obj.updateDynamic("onExitFullscreen")(js.Any.fromFunction0(onExitFullscreen))
+    if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(js.Any.fromFunction0(onLoadedData))
+    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction0(onPause))
+    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction0(onPlay))
+    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction1(onReady))
+    if (onSeeked != null) __obj.updateDynamic("onSeeked")(js.Any.fromFunction1(onSeeked))
+    if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(js.Any.fromFunction1(onTimeUpdate))
+    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
     if (poster != null) __obj.updateDynamic("poster")(poster)
     if (quality != null) __obj.updateDynamic("quality")(quality)
     if (ratio != null) __obj.updateDynamic("ratio")(ratio)

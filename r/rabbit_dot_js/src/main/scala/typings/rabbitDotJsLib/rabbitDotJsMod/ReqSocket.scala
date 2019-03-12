@@ -13,10 +13,16 @@ class ReqSocket protected ()
   def this(channel: java.lang.String, opts: SocketOptions) = this()
   /* InferMemberOverrides */
   /* InferMemberOverrides */
-  override def _destroy(error: nodeLib.Error, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
+  override def _destroy(
+    error: nodeLib.Error,
+    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+  ): scala.Unit = js.native
   /* InferMemberOverrides */
   /* InferMemberOverrides */
-  override def _destroy(error: scala.Null, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
+  override def _destroy(
+    error: scala.Null,
+    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Event emitter
     * The defined events on documents including:

@@ -14,20 +14,11 @@ trait TestersResource extends js.Object {
 object TestersResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Testers]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Testers]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Testers]
-    ]
+    get: gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Testers],
+    patch: gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Testers],
+    update: gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Testers]
   ): TestersResource = {
-    val __obj = js.Dynamic.literal(get = get, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[TestersResource]
   }

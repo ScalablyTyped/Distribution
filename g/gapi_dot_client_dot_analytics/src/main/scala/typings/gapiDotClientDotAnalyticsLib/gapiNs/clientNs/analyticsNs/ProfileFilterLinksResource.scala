@@ -23,32 +23,14 @@ trait ProfileFilterLinksResource extends js.Object {
 object ProfileFilterLinksResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyLinkId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyLinkId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ProfileFilterLink]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ProfileFilterLink]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresultsOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ProfileFilterLinks]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyLinkId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ProfileFilterLink]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyLinkId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ProfileFilterLink]
-    ]
+    delete: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyLinkId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyLinkId => gapiDotClientLib.gapiNs.clientNs.Request[ProfileFilterLink],
+    insert: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[ProfileFilterLink],
+    list: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresultsOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[ProfileFilterLinks],
+    patch: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyLinkId => gapiDotClientLib.gapiNs.clientNs.Request[ProfileFilterLink],
+    update: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyLinkId => gapiDotClientLib.gapiNs.clientNs.Request[ProfileFilterLink]
   ): ProfileFilterLinksResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[ProfileFilterLinksResource]
   }

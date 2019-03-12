@@ -35,17 +35,17 @@ trait NumericHelper extends js.Object {
 object NumericHelper {
   @scala.inline
   def apply(
-    addThousandsSeparator: js.Function1[java.lang.String, java.lang.String],
-    format: js.Function2[scala.Double, java.lang.String, java.lang.String],
-    init: js.Function4[java.lang.String, java.lang.String, java.lang.String, scala.Double, NumericHelper],
-    isCurrencyMajor: js.Function1[java.lang.String, scala.Boolean],
-    isCurrencyMajorMinor: js.Function1[java.lang.String, scala.Boolean],
-    isFloat: js.Function1[java.lang.String, scala.Boolean],
-    isInteger: js.Function1[java.lang.String, scala.Boolean],
-    parse: js.Function1[java.lang.String, scala.Double],
-    unformat: js.Function1[java.lang.String, java.lang.String]
+    addThousandsSeparator: java.lang.String => java.lang.String,
+    format: (scala.Double, java.lang.String) => java.lang.String,
+    init: (java.lang.String, java.lang.String, java.lang.String, scala.Double) => NumericHelper,
+    isCurrencyMajor: java.lang.String => scala.Boolean,
+    isCurrencyMajorMinor: java.lang.String => scala.Boolean,
+    isFloat: java.lang.String => scala.Boolean,
+    isInteger: java.lang.String => scala.Boolean,
+    parse: java.lang.String => scala.Double,
+    unformat: java.lang.String => java.lang.String
   ): NumericHelper = {
-    val __obj = js.Dynamic.literal(addThousandsSeparator = addThousandsSeparator, format = format, init = init, isCurrencyMajor = isCurrencyMajor, isCurrencyMajorMinor = isCurrencyMajorMinor, isFloat = isFloat, isInteger = isInteger, parse = parse, unformat = unformat)
+    val __obj = js.Dynamic.literal(addThousandsSeparator = js.Any.fromFunction1(addThousandsSeparator), format = js.Any.fromFunction2(format), init = js.Any.fromFunction4(init), isCurrencyMajor = js.Any.fromFunction1(isCurrencyMajor), isCurrencyMajorMinor = js.Any.fromFunction1(isCurrencyMajorMinor), isFloat = js.Any.fromFunction1(isFloat), isInteger = js.Any.fromFunction1(isInteger), parse = js.Any.fromFunction1(parse), unformat = js.Any.fromFunction1(unformat))
   
     __obj.asInstanceOf[NumericHelper]
   }

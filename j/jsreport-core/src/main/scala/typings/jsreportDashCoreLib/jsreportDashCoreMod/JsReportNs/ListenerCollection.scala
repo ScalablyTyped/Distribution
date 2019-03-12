@@ -20,18 +20,14 @@ trait ListenerCollection extends js.Object {
 object ListenerCollection {
   @scala.inline
   def apply(
-    add: js.Function2[
-      java.lang.String, 
-      js.Function3[
-        /* req */ Request, 
-        /* res */ Response, 
-        /* err */ js.UndefOr[js.Any], 
-        js.Promise[_] | scala.Unit
-      ], 
-      scala.Unit
-    ]
+    add: (java.lang.String, js.Function3[
+      /* req */ Request, 
+      /* res */ Response, 
+      /* err */ js.UndefOr[js.Any], 
+      js.Promise[_] | scala.Unit
+    ]) => scala.Unit
   ): ListenerCollection = {
-    val __obj = js.Dynamic.literal(add = add)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add))
   
     __obj.asInstanceOf[ListenerCollection]
   }

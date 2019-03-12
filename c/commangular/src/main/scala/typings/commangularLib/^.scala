@@ -15,6 +15,6 @@ object ^ extends js.Object {
   * @param callback The function that will be called upon the completion of the command
   * 		function should expecte an ICommandInfo parameter.
   */
-  def dispatch(ec: commangularLib.commangularNs.ICommandCall, callback: angularLib.angularMod.Global.Function): scala.Unit = js.native
+  def dispatch(ec: commangularLib.commangularNs.ICommandCall, callback: js.Function): scala.Unit = js.native
 }
 

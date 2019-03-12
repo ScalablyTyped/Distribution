@@ -13,14 +13,11 @@ trait MediaBundleBuilder[Media] extends AdWordsBuilder[Media] {
 object MediaBundleBuilder {
   @scala.inline
   def apply[Media](
-    build: js.Function0[AdWordsOperation[Media]],
-    withData: js.Function1[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob, 
-      MediaBundleBuilder[Media]
-    ],
-    withName: js.Function1[java.lang.String, MediaBundleBuilder[Media]]
+    build: () => AdWordsOperation[Media],
+    withData: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob => MediaBundleBuilder[Media],
+    withName: java.lang.String => MediaBundleBuilder[Media]
   ): MediaBundleBuilder[Media] = {
-    val __obj = js.Dynamic.literal(build = build, withData = withData, withName = withName)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), withData = js.Any.fromFunction1(withData), withName = js.Any.fromFunction1(withName))
   
     __obj.asInstanceOf[MediaBundleBuilder[Media]]
   }

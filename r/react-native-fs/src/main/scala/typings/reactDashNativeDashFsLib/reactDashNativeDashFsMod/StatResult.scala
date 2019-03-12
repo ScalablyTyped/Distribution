@@ -28,15 +28,15 @@ object StatResult {
   @scala.inline
   def apply(
     ctime: scala.Double,
-    isDirectory: js.Function0[scala.Boolean],
-    isFile: js.Function0[scala.Boolean],
+    isDirectory: () => scala.Boolean,
+    isFile: () => scala.Boolean,
     mode: scala.Double,
     mtime: scala.Double,
     name: java.lang.String,
     path: java.lang.String,
     size: java.lang.String
   ): StatResult = {
-    val __obj = js.Dynamic.literal(ctime = ctime, isDirectory = isDirectory, isFile = isFile, mode = mode, mtime = mtime, name = name, path = path, size = size)
+    val __obj = js.Dynamic.literal(ctime = ctime, isDirectory = js.Any.fromFunction0(isDirectory), isFile = js.Any.fromFunction0(isFile), mode = mode, mtime = mtime, name = name, path = path, size = size)
   
     __obj.asInstanceOf[StatResult]
   }

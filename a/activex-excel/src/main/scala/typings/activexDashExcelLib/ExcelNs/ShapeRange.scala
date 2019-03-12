@@ -10,22 +10,22 @@ trait ShapeRange extends js.Object {
   @JSName("Adjustments")
   val Adjustments_Original: Adjustments = js.native
   var AlternativeText: java.lang.String = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var AutoShapeType: activexDashOfficeLib.OfficeNs.MsoAutoShapeType = js.native
   var BackgroundStyle: activexDashOfficeLib.OfficeNs.MsoBackgroundStyleIndex = js.native
   var BlackWhiteMode: activexDashOfficeLib.OfficeNs.MsoBlackWhiteMode = js.native
   val Callout: CalloutFormat = js.native
   @JSName("CanvasItems")
   val CanvasItems_Original: activexDashOfficeLib.OfficeNs.CanvasShapes = js.native
-  val Chart: Chart = js.native
+  val Chart: activexDashExcelLib.ExcelNs.Chart = js.native
   val Child: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   val ConnectionSiteCount: scala.Double = js.native
   val Connector: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
-  val ConnectorFormat: ConnectorFormat = js.native
+  val ConnectorFormat: activexDashExcelLib.ExcelNs.ConnectorFormat = js.native
   val Count: scala.Double = js.native
   val Creator: XlCreator = js.native
-  val Diagram: Diagram = js.native
-  val DiagramNode: DiagramNode = js.native
+  val Diagram: activexDashExcelLib.ExcelNs.Diagram = js.native
+  val DiagramNode: activexDashExcelLib.ExcelNs.DiagramNode = js.native
   val Fill: FillFormat = js.native
   val Glow: activexDashOfficeLib.OfficeNs.GlowFormat = js.native
   @JSName("GroupItems")
@@ -44,21 +44,21 @@ trait ShapeRange extends js.Object {
   val Nodes_Original: ShapeNodes = js.native
   val Parent: js.Any = js.native
   val ParentGroup: Shape = js.native
-  val PictureFormat: PictureFormat = js.native
+  val PictureFormat: activexDashExcelLib.ExcelNs.PictureFormat = js.native
   val Reflection: activexDashOfficeLib.OfficeNs.ReflectionFormat = js.native
   var Rotation: scala.Double = js.native
   val Shadow: ShadowFormat = js.native
   var ShapeStyle: activexDashOfficeLib.OfficeNs.MsoShapeStyleIndex = js.native
   val SoftEdge: activexDashOfficeLib.OfficeNs.SoftEdgeFormat = js.native
   val TextEffect: TextEffectFormat = js.native
-  val TextFrame: TextFrame = js.native
-  val TextFrame2: TextFrame2 = js.native
+  val TextFrame: activexDashExcelLib.ExcelNs.TextFrame = js.native
+  val TextFrame2: activexDashExcelLib.ExcelNs.TextFrame2 = js.native
   val ThreeD: ThreeDFormat = js.native
   var Title: java.lang.String = js.native
   var Top: scala.Double = js.native
   val Type: activexDashOfficeLib.OfficeNs.MsoShapeType = js.native
   val VerticalFlip: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
-  val Vertices: activexDashInteropLib.SafeArray[scala.Double] = js.native
+  val Vertices: stdLib.SafeArray[scala.Double] = js.native
   var Visible: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   var Width: scala.Double = js.native
   val ZOrderPosition: scala.Double = js.native

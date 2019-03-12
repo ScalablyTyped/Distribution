@@ -24,12 +24,12 @@ trait MultiServiceFactory
     * @returns sequence of all service names
     */
   /* InferMemberOverrides */
-  override val AvailableServiceNames: activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  override val AvailableServiceNames: stdLib.SafeArray[java.lang.String] = js.native
   /**
     * Provides the available names of the factory to be used to create instances.
     * @returns sequence of all names
     */
   /* InferMemberOverrides */
-  override def getAvailableServiceNames(): activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  override def getAvailableServiceNames(): stdLib.SafeArray[java.lang.String] = js.native
 }
 

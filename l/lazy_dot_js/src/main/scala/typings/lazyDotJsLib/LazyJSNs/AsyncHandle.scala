@@ -13,12 +13,8 @@ trait AsyncHandle[T] extends js.Object {
 
 object AsyncHandle {
   @scala.inline
-  def apply[T](
-    cancel: js.Function0[scala.Unit],
-    onComplete: js.Function1[Callback, scala.Unit],
-    onError: js.Function1[ErrorCallback, scala.Unit]
-  ): AsyncHandle[T] = {
-    val __obj = js.Dynamic.literal(cancel = cancel, onComplete = onComplete, onError = onError)
+  def apply[T](cancel: () => scala.Unit, onComplete: Callback => scala.Unit, onError: ErrorCallback => scala.Unit): AsyncHandle[T] = {
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), onComplete = js.Any.fromFunction1(onComplete), onError = js.Any.fromFunction1(onError))
   
     __obj.asInstanceOf[AsyncHandle[T]]
   }

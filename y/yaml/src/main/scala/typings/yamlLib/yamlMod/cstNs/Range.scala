@@ -17,12 +17,12 @@ object Range {
   @scala.inline
   def apply(
     end: scala.Double,
-    isEmpty: js.Function0[scala.Boolean],
+    isEmpty: () => scala.Boolean,
     start: scala.Double,
     origEnd: scala.Int | scala.Double = null,
     origStart: scala.Int | scala.Double = null
   ): Range = {
-    val __obj = js.Dynamic.literal(end = end, isEmpty = isEmpty, start = start)
+    val __obj = js.Dynamic.literal(end = end, isEmpty = js.Any.fromFunction0(isEmpty), start = start)
     if (origEnd != null) __obj.updateDynamic("origEnd")(origEnd.asInstanceOf[js.Any])
     if (origStart != null) __obj.updateDynamic("origStart")(origStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[Range]

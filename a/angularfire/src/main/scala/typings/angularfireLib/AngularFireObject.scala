@@ -98,8 +98,8 @@ trait AngularFireObject extends AngularFireSimpleObject {
   	 * @returns {Function} invoke to stop observing events
   	 */
   @JSName("$watch")
-  def $watch(callback: angularLib.angularMod.Global.Function): angularLib.angularMod.Global.Function = js.native
+  def $watch(callback: js.Function): js.Function = js.native
   @JSName("$watch")
-  def $watch(callback: angularLib.angularMod.Global.Function, context: js.Any): angularLib.angularMod.Global.Function = js.native
+  def $watch(callback: js.Function, context: js.Any): js.Function = js.native
 }
 

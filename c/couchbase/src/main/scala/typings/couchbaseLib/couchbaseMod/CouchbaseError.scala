@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * The virtual class thrown for all Couchnode errors.
   */
 trait CouchbaseError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   /**
     * The error code for this error.
     */
@@ -27,12 +27,14 @@ trait CouchbaseError
 object CouchbaseError {
   @scala.inline
   def apply(
+    message: java.lang.String,
+    name: java.lang.String,
     code: errors = null,
     innerError: CouchbaseError = null,
     responseBody: js.Any = null,
     stack: java.lang.String = null
   ): CouchbaseError = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(message = message, name = name)
     if (code != null) __obj.updateDynamic("code")(code)
     if (innerError != null) __obj.updateDynamic("innerError")(innerError)
     if (responseBody != null) __obj.updateDynamic("responseBody")(responseBody)

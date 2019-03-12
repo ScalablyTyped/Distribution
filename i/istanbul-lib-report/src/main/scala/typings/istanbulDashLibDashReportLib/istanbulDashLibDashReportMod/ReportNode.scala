@@ -17,26 +17,23 @@ trait ReportNode extends Node {
 object ReportNode {
   @scala.inline
   def apply(
-    addChild: js.Function1[ReportNode, scala.Unit],
-    asRelative: js.Function1[java.lang.String, java.lang.String],
+    addChild: ReportNode => scala.Unit,
+    asRelative: java.lang.String => java.lang.String,
     children: js.Array[ReportNode],
     fileCoverage: istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.FileCoverage,
-    getChildren: js.Function0[js.Array[Node]],
-    getCoverageSummary: js.Function1[
-      scala.Boolean, 
-      istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageSummary
-    ],
-    getFileCoverage: js.Function0[istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.FileCoverage],
-    getParent: js.Function0[Node],
-    getQualifiedName: js.Function0[java.lang.String],
-    getRelativeName: js.Function0[java.lang.String],
-    isRoot: js.Function0[scala.Boolean],
-    isSummary: js.Function0[scala.Boolean],
+    getChildren: () => js.Array[Node],
+    getCoverageSummary: scala.Boolean => istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageSummary,
+    getFileCoverage: () => istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.FileCoverage,
+    getParent: () => Node,
+    getQualifiedName: () => java.lang.String,
+    getRelativeName: () => java.lang.String,
+    isRoot: () => scala.Boolean,
+    isSummary: () => scala.Boolean,
     path: java.lang.String,
-    visit: js.Function2[Visitor[ReportNode], js.Any, scala.Unit],
+    visit: (Visitor[ReportNode], js.Any) => scala.Unit,
     parent: ReportNode = null
   ): ReportNode = {
-    val __obj = js.Dynamic.literal(addChild = addChild, asRelative = asRelative, children = children, fileCoverage = fileCoverage, getChildren = getChildren, getCoverageSummary = getCoverageSummary, getFileCoverage = getFileCoverage, getParent = getParent, getQualifiedName = getQualifiedName, getRelativeName = getRelativeName, isRoot = isRoot, isSummary = isSummary, path = path, visit = visit)
+    val __obj = js.Dynamic.literal(addChild = js.Any.fromFunction1(addChild), asRelative = js.Any.fromFunction1(asRelative), children = children, fileCoverage = fileCoverage, getChildren = js.Any.fromFunction0(getChildren), getCoverageSummary = js.Any.fromFunction1(getCoverageSummary), getFileCoverage = js.Any.fromFunction0(getFileCoverage), getParent = js.Any.fromFunction0(getParent), getQualifiedName = js.Any.fromFunction0(getQualifiedName), getRelativeName = js.Any.fromFunction0(getRelativeName), isRoot = js.Any.fromFunction0(isRoot), isSummary = js.Any.fromFunction0(isSummary), path = path, visit = js.Any.fromFunction2(visit))
     if (parent != null) __obj.updateDynamic("parent")(parent)
     __obj.asInstanceOf[ReportNode]
   }

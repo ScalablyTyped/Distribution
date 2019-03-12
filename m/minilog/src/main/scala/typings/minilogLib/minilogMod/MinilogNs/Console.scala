@@ -34,12 +34,12 @@ object Console {
     formatWithStack: Transform,
     formatters: js.Array[java.lang.String],
     minilog: Transform,
-    mixin: js.Function1[js.Any, scala.Unit],
-    pipe: js.Function1[js.Any, js.Any],
-    unpipe: js.Function1[js.Any, Transform],
-    write: js.Function3[js.Any, js.Any, js.Any, scala.Unit]
+    mixin: js.Any => scala.Unit,
+    pipe: js.Any => js.Any,
+    unpipe: js.Any => Transform,
+    write: (js.Any, js.Any, js.Any) => scala.Unit
   ): Console = {
-    val __obj = js.Dynamic.literal(color = color, formatClean = formatClean, formatColor = formatColor, formatLearnboost = formatLearnboost, formatMinilog = formatMinilog, formatNpm = formatNpm, formatWithStack = formatWithStack, formatters = formatters, minilog = minilog, mixin = mixin, pipe = pipe, unpipe = unpipe, write = write)
+    val __obj = js.Dynamic.literal(color = color, formatClean = formatClean, formatColor = formatColor, formatLearnboost = formatLearnboost, formatMinilog = formatMinilog, formatNpm = formatNpm, formatWithStack = formatWithStack, formatters = formatters, minilog = minilog, mixin = js.Any.fromFunction1(mixin), pipe = js.Any.fromFunction1(pipe), unpipe = js.Any.fromFunction1(unpipe), write = js.Any.fromFunction3(write))
   
     __obj.asInstanceOf[Console]
   }

@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
   /**
     * Date and time the nutrition order was requested
     */
-  var dateTime: dateTime
+  var dateTime: fhirLib.fhirNs.dateTime
   /**
     * The encounter associated with this nutrition order
     */

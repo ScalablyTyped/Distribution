@@ -27,29 +27,29 @@ trait MonthDay extends TemporalAccessor {
 object MonthDay {
   @scala.inline
   def apply(
-    adjustInto: js.Function1[Temporal, Temporal],
-    atYear: js.Function1[scala.Double, LocalDate],
-    compareTo: js.Function1[MonthDay, scala.Double],
-    dayOfMonth: js.Function0[scala.Double],
-    equals: js.Function1[js.Any, scala.Boolean],
-    format: js.Function1[DateTimeFormatter, java.lang.String],
-    get: js.Function1[TemporalField, scala.Double],
-    getLong: js.Function1[TemporalField, scala.Double],
-    isAfter: js.Function1[MonthDay, scala.Boolean],
-    isBefore: js.Function1[MonthDay, scala.Boolean],
-    isSupported: js.Function1[TemporalField, scala.Boolean],
-    isValidYear: js.Function1[scala.Double, scala.Boolean],
-    month: js.Function0[Month],
-    monthValue: js.Function0[scala.Double],
-    query: js.Function1[TemporalQuery, js.Any],
-    range: js.Function1[TemporalField, ValueRange],
-    toString: js.Function0[java.lang.String],
-    `with`: js.Function1[Month, MonthDay],
-    withDayOfMonth: js.Function1[scala.Double, MonthDay],
-    withMonth: js.Function1[scala.Double, MonthDay]
+    adjustInto: Temporal => Temporal,
+    atYear: scala.Double => LocalDate,
+    compareTo: MonthDay => scala.Double,
+    dayOfMonth: () => scala.Double,
+    equals: js.Any => scala.Boolean,
+    format: DateTimeFormatter => java.lang.String,
+    get: TemporalField => scala.Double,
+    getLong: TemporalField => scala.Double,
+    isAfter: MonthDay => scala.Boolean,
+    isBefore: MonthDay => scala.Boolean,
+    isSupported: TemporalField => scala.Boolean,
+    isValidYear: scala.Double => scala.Boolean,
+    month: () => Month,
+    monthValue: () => scala.Double,
+    query: TemporalQuery => js.Any,
+    range: TemporalField => ValueRange,
+    toString: () => java.lang.String,
+    `with`: Month => MonthDay,
+    withDayOfMonth: scala.Double => MonthDay,
+    withMonth: scala.Double => MonthDay
   ): MonthDay = {
-    val __obj = js.Dynamic.literal(adjustInto = adjustInto, atYear = atYear, compareTo = compareTo, dayOfMonth = dayOfMonth, equals = equals, format = format, get = get, getLong = getLong, isAfter = isAfter, isBefore = isBefore, isSupported = isSupported, isValidYear = isValidYear, month = month, monthValue = monthValue, query = query, range = range, toString = toString, withDayOfMonth = withDayOfMonth, withMonth = withMonth)
-    __obj.updateDynamic("with")(`with`)
+    val __obj = js.Dynamic.literal(adjustInto = js.Any.fromFunction1(adjustInto), atYear = js.Any.fromFunction1(atYear), compareTo = js.Any.fromFunction1(compareTo), dayOfMonth = js.Any.fromFunction0(dayOfMonth), equals = js.Any.fromFunction1(equals), format = js.Any.fromFunction1(format), get = js.Any.fromFunction1(get), getLong = js.Any.fromFunction1(getLong), isAfter = js.Any.fromFunction1(isAfter), isBefore = js.Any.fromFunction1(isBefore), isSupported = js.Any.fromFunction1(isSupported), isValidYear = js.Any.fromFunction1(isValidYear), month = js.Any.fromFunction0(month), monthValue = js.Any.fromFunction0(monthValue), query = js.Any.fromFunction1(query), range = js.Any.fromFunction1(range), toString = js.Any.fromFunction0(toString), withDayOfMonth = js.Any.fromFunction1(withDayOfMonth), withMonth = js.Any.fromFunction1(withMonth))
+    __obj.updateDynamic("with")(js.Any.fromFunction1(`with`))
     __obj.asInstanceOf[MonthDay]
   }
 }

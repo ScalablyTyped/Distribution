@@ -27,13 +27,13 @@ trait XRemoteContentProviderChangeNotifier
 object XRemoteContentProviderChangeNotifier {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addRemoteContentProviderChangeListener: js.Function1[XRemoteContentProviderChangeListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeRemoteContentProviderChangeListener: js.Function1[XRemoteContentProviderChangeListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addRemoteContentProviderChangeListener: XRemoteContentProviderChangeListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeRemoteContentProviderChangeListener: XRemoteContentProviderChangeListener => scala.Unit
   ): XRemoteContentProviderChangeNotifier = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addRemoteContentProviderChangeListener = addRemoteContentProviderChangeListener, queryInterface = queryInterface, release = release, removeRemoteContentProviderChangeListener = removeRemoteContentProviderChangeListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addRemoteContentProviderChangeListener = js.Any.fromFunction1(addRemoteContentProviderChangeListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeRemoteContentProviderChangeListener = js.Any.fromFunction1(removeRemoteContentProviderChangeListener))
   
     __obj.asInstanceOf[XRemoteContentProviderChangeNotifier]
   }

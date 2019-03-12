@@ -18,15 +18,15 @@ trait Group extends js.Object {
 object Group {
   @scala.inline
   def apply(
-    collapse: js.Function0[Group],
-    expand: js.Function0[Group],
-    getControlIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getDepth: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getRange: js.Function0[Range],
-    isCollapsed: js.Function0[scala.Boolean],
-    remove: js.Function0[scala.Unit]
+    collapse: () => Group,
+    expand: () => Group,
+    getControlIndex: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getDepth: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getRange: () => Range,
+    isCollapsed: () => scala.Boolean,
+    remove: () => scala.Unit
   ): Group = {
-    val __obj = js.Dynamic.literal(collapse = collapse, expand = expand, getControlIndex = getControlIndex, getDepth = getDepth, getRange = getRange, isCollapsed = isCollapsed, remove = remove)
+    val __obj = js.Dynamic.literal(collapse = js.Any.fromFunction0(collapse), expand = js.Any.fromFunction0(expand), getControlIndex = js.Any.fromFunction0(getControlIndex), getDepth = js.Any.fromFunction0(getDepth), getRange = js.Any.fromFunction0(getRange), isCollapsed = js.Any.fromFunction0(isCollapsed), remove = js.Any.fromFunction0(remove))
   
     __obj.asInstanceOf[Group]
   }

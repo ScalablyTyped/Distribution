@@ -17,8 +17,8 @@ trait IMemberTypeResource extends js.Object {
 
 object IMemberTypeResource {
   @scala.inline
-  def apply(getTypes: js.Function0[js.Any]): IMemberTypeResource = {
-    val __obj = js.Dynamic.literal(getTypes = getTypes)
+  def apply(getTypes: () => js.Any): IMemberTypeResource = {
+    val __obj = js.Dynamic.literal(getTypes = js.Any.fromFunction0(getTypes))
   
     __obj.asInstanceOf[IMemberTypeResource]
   }

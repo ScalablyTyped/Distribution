@@ -42,29 +42,17 @@ object AppsResource {
   def apply(
     authorizedCertificates: AuthorizedCertificatesResource,
     authorizedDomains: AuthorizedDomainsResource,
-    create: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
+    create: gapiDotClientDotAppengineLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
     domainMappings: DomainMappingsResource,
     firewall: FirewallResource,
-    get: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Application]
-    ],
+    get: gapiDotClientDotAppengineLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Application],
     locations: LocationsResource,
     operations: OperationsResource,
-    patch: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUpdateMask, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    repair: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
+    patch: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUpdateMask => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    repair: gapiDotClientDotAppengineLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
     services: ServicesResource
   ): AppsResource = {
-    val __obj = js.Dynamic.literal(authorizedCertificates = authorizedCertificates, authorizedDomains = authorizedDomains, create = create, domainMappings = domainMappings, firewall = firewall, get = get, locations = locations, operations = operations, patch = patch, repair = repair, services = services)
+    val __obj = js.Dynamic.literal(authorizedCertificates = authorizedCertificates, authorizedDomains = authorizedDomains, create = js.Any.fromFunction1(create), domainMappings = domainMappings, firewall = firewall, get = js.Any.fromFunction1(get), locations = locations, operations = operations, patch = js.Any.fromFunction1(patch), repair = js.Any.fromFunction1(repair), services = services)
   
     __obj.asInstanceOf[AppsResource]
   }

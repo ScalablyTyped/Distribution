@@ -13,9 +13,9 @@ trait DataAxisSideOption extends js.Object {
 
 object DataAxisSideOption {
   @scala.inline
-  def apply(format: js.Function0[java.lang.String] = null, range: RangeType = null, title: TitleOption = null): DataAxisSideOption = {
+  def apply(format: () => java.lang.String = null, range: RangeType = null, title: TitleOption = null): DataAxisSideOption = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction0(format))
     if (range != null) __obj.updateDynamic("range")(range)
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[DataAxisSideOption]

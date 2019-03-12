@@ -45,20 +45,20 @@ trait Callbacks extends js.Object {
 object Callbacks {
   @scala.inline
   def apply(
-    afterClose: js.Function0[scala.Boolean | scala.Unit] = null,
-    afterOpen: js.Function0[scala.Boolean | scala.Unit] = null,
-    beforeClose: js.Function0[scala.Boolean | scala.Unit] = null,
-    beforeOpen: js.Function0[scala.Boolean | scala.Unit] = null,
-    close: js.Function0[scala.Boolean | scala.Unit] = null,
-    open: js.Function0[scala.Boolean | scala.Unit] = null
+    afterClose: () => scala.Boolean | scala.Unit = null,
+    afterOpen: () => scala.Boolean | scala.Unit = null,
+    beforeClose: () => scala.Boolean | scala.Unit = null,
+    beforeOpen: () => scala.Boolean | scala.Unit = null,
+    close: () => scala.Boolean | scala.Unit = null,
+    open: () => scala.Boolean | scala.Unit = null
   ): Callbacks = {
     val __obj = js.Dynamic.literal()
-    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose)
-    if (afterOpen != null) __obj.updateDynamic("afterOpen")(afterOpen)
-    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
-    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen)
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (afterClose != null) __obj.updateDynamic("afterClose")(js.Any.fromFunction0(afterClose))
+    if (afterOpen != null) __obj.updateDynamic("afterOpen")(js.Any.fromFunction0(afterOpen))
+    if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction0(beforeClose))
+    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(js.Any.fromFunction0(beforeOpen))
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction0(close))
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction0(open))
     __obj.asInstanceOf[Callbacks]
   }
 }

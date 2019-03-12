@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def eventContext(): expressLib.expressMod.eNs.RequestHandler = js.native
-  def eventContext(options: awsDashServerlessDashExpressLib.middlewareMod.Options): expressLib.expressMod.eNs.RequestHandler = js.native
+  def eventContext(options: Options): expressLib.expressMod.eNs.RequestHandler = js.native
 }
 

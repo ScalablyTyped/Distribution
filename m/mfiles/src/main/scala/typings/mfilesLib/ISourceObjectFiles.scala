@@ -17,14 +17,14 @@ trait ISourceObjectFiles extends js.Object {
 object ISourceObjectFiles {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, ISourceObjectFile, scala.Unit],
-    AddEmptyFile: js.Function2[java.lang.String, java.lang.String, ISourceObjectFile],
-    AddFile: js.Function3[java.lang.String, java.lang.String, java.lang.String, ISourceObjectFile],
+    Add: (scala.Double, ISourceObjectFile) => scala.Unit,
+    AddEmptyFile: (java.lang.String, java.lang.String) => ISourceObjectFile,
+    AddFile: (java.lang.String, java.lang.String, java.lang.String) => ISourceObjectFile,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, ISourceObjectFile],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => ISourceObjectFile,
+    Remove: scala.Double => scala.Unit
   ): ISourceObjectFiles = {
-    val __obj = js.Dynamic.literal(Add = Add, AddEmptyFile = AddEmptyFile, AddFile = AddFile, Count = Count, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), AddEmptyFile = js.Any.fromFunction2(AddEmptyFile), AddFile = js.Any.fromFunction3(AddFile), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[ISourceObjectFiles]
   }

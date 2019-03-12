@@ -73,61 +73,56 @@ object IAbstractManager {
     alias: Array = null,
     all: extjsLib.ExtNs.utilNs.IHashMap = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    create: js.Function2[/* config */ js.UndefOr[js.Any], /* defaultType */ js.UndefOr[java.lang.String], _] = null,
-    each: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], scala.Unit] = null,
+    create: (/* config */ js.UndefOr[js.Any], /* defaultType */ js.UndefOr[java.lang.String]) => _ = null,
+    each: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
     extend: java.lang.String = null,
-    get: js.Function1[/* id */ js.UndefOr[java.lang.String], _] = null,
-    getCount: js.Function0[scala.Double] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    get: /* id */ js.UndefOr[java.lang.String] => _ = null,
+    getCount: () => scala.Double = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IAbstractManager] = null,
-    isRegistered: js.Function1[/* type */ js.UndefOr[java.lang.String], scala.Boolean] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IAbstractManager = null,
+    isRegistered: /* type */ js.UndefOr[java.lang.String] => scala.Boolean = null,
     mixins: js.Any = null,
-    onAvailable: js.Function3[
-      /* id */ js.UndefOr[java.lang.String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    register: js.Function1[/* item */ js.UndefOr[js.Any], scala.Unit] = null,
-    registerType: js.Function2[/* type */ js.UndefOr[java.lang.String], /* cls */ js.UndefOr[js.Any], scala.Unit] = null,
+    onAvailable: (/* id */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    register: /* item */ js.UndefOr[js.Any] => scala.Unit = null,
+    registerType: (/* type */ js.UndefOr[java.lang.String], /* cls */ js.UndefOr[js.Any]) => scala.Unit = null,
     requires: Array = null,
     self: IClass = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
-    unregister: js.Function1[/* item */ js.UndefOr[js.Any], scala.Unit] = null,
+    unregister: /* item */ js.UndefOr[js.Any] => scala.Unit = null,
     uses: Array = null
   ): IAbstractManager = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (all != null) __obj.updateDynamic("all")(all)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (each != null) __obj.updateDynamic("each")(each)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
+    if (each != null) __obj.updateDynamic("each")(js.Any.fromFunction2(each))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (get != null) __obj.updateDynamic("get")(get)
-    if (getCount != null) __obj.updateDynamic("getCount")(getCount)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
+    if (getCount != null) __obj.updateDynamic("getCount")(js.Any.fromFunction0(getCount))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
-    if (isRegistered != null) __obj.updateDynamic("isRegistered")(isRegistered)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (isRegistered != null) __obj.updateDynamic("isRegistered")(js.Any.fromFunction1(isRegistered))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (onAvailable != null) __obj.updateDynamic("onAvailable")(onAvailable)
-    if (register != null) __obj.updateDynamic("register")(register)
-    if (registerType != null) __obj.updateDynamic("registerType")(registerType)
+    if (onAvailable != null) __obj.updateDynamic("onAvailable")(js.Any.fromFunction3(onAvailable))
+    if (register != null) __obj.updateDynamic("register")(js.Any.fromFunction1(register))
+    if (registerType != null) __obj.updateDynamic("registerType")(js.Any.fromFunction2(registerType))
     if (requires != null) __obj.updateDynamic("requires")(requires)
     if (self != null) __obj.updateDynamic("self")(self)
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
-    if (unregister != null) __obj.updateDynamic("unregister")(unregister)
+    if (unregister != null) __obj.updateDynamic("unregister")(js.Any.fromFunction1(unregister))
     if (uses != null) __obj.updateDynamic("uses")(uses)
     __obj.asInstanceOf[IAbstractManager]
   }

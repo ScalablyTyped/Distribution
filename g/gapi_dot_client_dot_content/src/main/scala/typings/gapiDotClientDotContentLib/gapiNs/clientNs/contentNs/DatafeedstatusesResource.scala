@@ -16,20 +16,11 @@ trait DatafeedstatusesResource extends js.Object {
 object DatafeedstatusesResource {
   @scala.inline
   def apply(
-    custombatch: js.Function1[
-      gapiDotClientDotContentLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DatafeedstatusesCustomBatchResponse]
-    ],
-    get: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltCountry, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DatafeedStatus]
-    ],
-    list: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DatafeedstatusesListResponse]
-    ]
+    custombatch: gapiDotClientDotContentLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[DatafeedstatusesCustomBatchResponse],
+    get: gapiDotClientDotContentLib.Anon_AltCountry => gapiDotClientLib.gapiNs.clientNs.Request[DatafeedStatus],
+    list: gapiDotClientDotContentLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[DatafeedstatusesListResponse]
   ): DatafeedstatusesResource = {
-    val __obj = js.Dynamic.literal(custombatch = custombatch, get = get, list = list)
+    val __obj = js.Dynamic.literal(custombatch = js.Any.fromFunction1(custombatch), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[DatafeedstatusesResource]
   }

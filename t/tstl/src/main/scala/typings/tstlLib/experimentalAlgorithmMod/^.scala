@@ -19,7 +19,7 @@ object ^ extends js.Object {
     `val`: tstlLib.baseDisposableIListAlgorithmMod.underscoreIListAlgorithmNs.ValueType[Container]
   ): scala.Unit = js.native
   @JSName("erase")
-  def erase_ContainerIContainerIteratorReadonly[Container /* <: tstlLib.experimentalAlgorithmMod.IContainer[Iterator] */, Iterator /* <: stdLib.Readonly[
+  def erase_ContainerIContainerIteratorReadonly[Container /* <: IContainer[Iterator] */, Iterator /* <: stdLib.Readonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[Iterator], Iterator]
   ] */](container: Container, `val`: tstlLib.functionalIPointerMod.IPointerNs.ValueType[Iterator]): scala.Unit = js.native
   def erase_if[Container /* <: stdLib.Pick[
@@ -36,7 +36,7 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   @JSName("erase_if")
-  def erase_if_ContainerIContainerIteratorReadonly[Container /* <: tstlLib.experimentalAlgorithmMod.IContainer[Iterator] */, Iterator /* <: stdLib.Readonly[
+  def erase_if_ContainerIContainerIteratorReadonly[Container /* <: IContainer[Iterator] */, Iterator /* <: stdLib.Readonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[Iterator], Iterator]
   ] */](
     container: Container,

@@ -37,18 +37,18 @@ object Anon_Complete {
     filePath: java.lang.String,
     name: java.lang.String,
     url: java.lang.String,
-    complete: js.Function0[scala.Unit] = null,
-    fail: js.Function0[scala.Unit] = null,
+    complete: () => scala.Unit = null,
+    fail: () => scala.Unit = null,
     formData: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     header: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    success: js.Function1[/* res */ Anon_DataStatusCode, scala.Unit] = null
+    success: /* res */ Anon_DataStatusCode => scala.Unit = null
   ): Anon_Complete = {
     val __obj = js.Dynamic.literal(filePath = filePath, name = name, url = url)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (formData != null) __obj.updateDynamic("formData")(formData)
     if (header != null) __obj.updateDynamic("header")(header)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[Anon_Complete]
   }
 }

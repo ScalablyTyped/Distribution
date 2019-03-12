@@ -26,7 +26,7 @@ class Socket ()
   def bind(): scala.Unit = js.native
   def bind(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def bind(options: BindOptions): scala.Unit = js.native
-  def bind(options: BindOptions, callback: js.Function): scala.Unit = js.native
+  def bind(options: BindOptions, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def bind(port: scala.Double): scala.Unit = js.native
   def bind(port: scala.Double, address: java.lang.String): scala.Unit = js.native
   def bind(port: scala.Double, address: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native

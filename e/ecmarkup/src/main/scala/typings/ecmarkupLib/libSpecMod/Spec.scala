@@ -18,15 +18,15 @@ trait Spec extends js.Object {
 object Spec {
   @scala.inline
   def apply(
-    exportBiblio: js.Function0[js.Any],
+    exportBiblio: () => js.Any,
     namespace: java.lang.String,
     opts: ecmarkupLib.libEcmarkupMod.Options,
     rootDir: java.lang.String,
     rootPath: java.lang.String,
     spec: Spec,
-    toHTML: js.Function0[java.lang.String]
+    toHTML: () => java.lang.String
   ): Spec = {
-    val __obj = js.Dynamic.literal(exportBiblio = exportBiblio, namespace = namespace, opts = opts, rootDir = rootDir, rootPath = rootPath, spec = spec, toHTML = toHTML)
+    val __obj = js.Dynamic.literal(exportBiblio = js.Any.fromFunction0(exportBiblio), namespace = namespace, opts = opts, rootDir = rootDir, rootPath = rootPath, spec = spec, toHTML = js.Any.fromFunction0(toHTML))
   
     __obj.asInstanceOf[Spec]
   }

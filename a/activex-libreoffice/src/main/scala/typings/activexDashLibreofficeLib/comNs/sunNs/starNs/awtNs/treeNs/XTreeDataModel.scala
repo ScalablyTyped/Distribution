@@ -45,17 +45,17 @@ object XTreeDataModel {
   @scala.inline
   def apply(
     Root: XTreeNode,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    addTreeDataModelListener: js.Function1[XTreeDataModelListener, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    getRoot: js.Function0[XTreeNode],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    removeTreeDataModelListener: js.Function1[XTreeDataModelListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    addTreeDataModelListener: XTreeDataModelListener => scala.Unit,
+    dispose: () => scala.Unit,
+    getRoot: () => XTreeNode,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    removeTreeDataModelListener: XTreeDataModelListener => scala.Unit
   ): XTreeDataModel = {
-    val __obj = js.Dynamic.literal(Root = Root, acquire = acquire, addEventListener = addEventListener, addTreeDataModelListener = addTreeDataModelListener, dispose = dispose, getRoot = getRoot, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeTreeDataModelListener = removeTreeDataModelListener)
+    val __obj = js.Dynamic.literal(Root = Root, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addTreeDataModelListener = js.Any.fromFunction1(addTreeDataModelListener), dispose = js.Any.fromFunction0(dispose), getRoot = js.Any.fromFunction0(getRoot), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removeTreeDataModelListener = js.Any.fromFunction1(removeTreeDataModelListener))
   
     __obj.asInstanceOf[XTreeDataModel]
   }

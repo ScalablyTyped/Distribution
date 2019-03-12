@@ -9,7 +9,7 @@ trait Anon_CallbackErr extends js.Object {
   def remove(
     uuid: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* res */ uploadcareLib.uploadcareMod.UploadcareNs.File, 
       scala.Unit
     ]
@@ -17,7 +17,7 @@ trait Anon_CallbackErr extends js.Object {
   def store(
     uuid: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* res */ uploadcareLib.uploadcareMod.UploadcareNs.File, 
       scala.Unit
     ]
@@ -27,26 +27,18 @@ trait Anon_CallbackErr extends js.Object {
 object Anon_CallbackErr {
   @scala.inline
   def apply(
-    remove: js.Function2[
-      java.lang.String, 
-      js.Function2[
-        /* err */ nodeLib.Error, 
-        /* res */ uploadcareLib.uploadcareMod.UploadcareNs.File, 
-        scala.Unit
-      ], 
+    remove: (java.lang.String, js.Function2[
+      /* err */ stdLib.Error, 
+      /* res */ uploadcareLib.uploadcareMod.UploadcareNs.File, 
       scala.Unit
-    ],
-    store: js.Function2[
-      java.lang.String, 
-      js.Function2[
-        /* err */ nodeLib.Error, 
-        /* res */ uploadcareLib.uploadcareMod.UploadcareNs.File, 
-        scala.Unit
-      ], 
+    ]) => scala.Unit,
+    store: (java.lang.String, js.Function2[
+      /* err */ stdLib.Error, 
+      /* res */ uploadcareLib.uploadcareMod.UploadcareNs.File, 
       scala.Unit
-    ]
+    ]) => scala.Unit
   ): Anon_CallbackErr = {
-    val __obj = js.Dynamic.literal(remove = remove, store = store)
+    val __obj = js.Dynamic.literal(remove = js.Any.fromFunction2(remove), store = js.Any.fromFunction2(store))
   
     __obj.asInstanceOf[Anon_CallbackErr]
   }

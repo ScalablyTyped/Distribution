@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   var DEBUG: scala.Boolean = js.native
   var backListener: js.Function0[scala.Boolean] = js.native
-  var currentStack: androiduixLib.PageStackNs.StateStack = js.native
+  var currentStack: StateStack = js.native
   var pageCloseHandler: js.Function2[/* pageId */ java.lang.String, /* pageExtra */ js.UndefOr[js.Any], js.Any] = js.native
   var pageOpenHandler: js.Function3[
     /* pageId */ java.lang.String, 

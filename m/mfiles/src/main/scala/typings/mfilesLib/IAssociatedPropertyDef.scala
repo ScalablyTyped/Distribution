@@ -14,11 +14,11 @@ trait IAssociatedPropertyDef extends js.Object {
 object IAssociatedPropertyDef {
   @scala.inline
   def apply(
-    Clone: js.Function0[IAssociatedPropertyDef],
+    Clone: () => IAssociatedPropertyDef,
     PropertyDef: mfilesLib.MFilesNs.MFBuiltInPropertyDef | scala.Double,
     Required: scala.Boolean
   ): IAssociatedPropertyDef = {
-    val __obj = js.Dynamic.literal(Clone = Clone, PropertyDef = PropertyDef.asInstanceOf[js.Any], Required = Required)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), PropertyDef = PropertyDef.asInstanceOf[js.Any], Required = Required)
   
     __obj.asInstanceOf[IAssociatedPropertyDef]
   }

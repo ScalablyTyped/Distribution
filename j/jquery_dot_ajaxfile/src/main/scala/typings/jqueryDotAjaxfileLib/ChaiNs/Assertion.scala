@@ -10,18 +10,21 @@ trait Assertion
   extends LanguageChains
      with NumericComparison
      with TypeComparison {
-  var Arguments: Assertion = js.native
+  @JSName("Arguments")
+  var Arguments_Original: Assertion = js.native
   @JSName("Throw")
   var Throw_Original: Throw = js.native
   @JSName("a")
   var a_Original: TypeComparison = js.native
   @JSName("an")
   var an_Original: TypeComparison = js.native
-  var arguments: Assertion = js.native
+  @JSName("arguments")
+  var arguments_Original: Assertion = js.native
   @JSName("contain")
   var contain_Original: Include = js.native
   var deep: Deep = js.native
-  var empty: Assertion = js.native
+  @JSName("empty")
+  var empty_Original: Assertion = js.native
   @JSName("eq")
   var eq_Original: Equal = js.native
   @JSName("eql")
@@ -32,13 +35,16 @@ trait Assertion
   var equal_Original: Equal = js.native
   @JSName("equals")
   var equals_Original: Equal = js.native
-  var exist: Assertion = js.native
-  var `false`: Assertion = js.native
+  @JSName("exist")
+  var exist_Original: Assertion = js.native
+  @JSName("false")
+  var false_Original: Assertion = js.native
   @JSName("haveOwnProperty")
   var haveOwnProperty_Original: OwnProperty = js.native
   @JSName("include")
   var include_Original: Include = js.native
-  var itself: Assertion = js.native
+  @JSName("itself")
+  var itself_Original: Assertion = js.native
   @JSName("keys")
   var keys_Original: Keys = js.native
   @JSName("lengthOf")
@@ -47,9 +53,12 @@ trait Assertion
   var length_Original: Length = js.native
   @JSName("members")
   var members_Original: Members = js.native
-  var not: Assertion = js.native
-  var `null`: Assertion = js.native
-  var ok: Assertion = js.native
+  @JSName("not")
+  var not_Original: Assertion = js.native
+  @JSName("null")
+  var null_Original: Assertion = js.native
+  @JSName("ok")
+  var ok_Original: Assertion = js.native
   @JSName("ownProperty")
   var ownProperty_Original: OwnProperty = js.native
   @JSName("property")
@@ -58,8 +67,12 @@ trait Assertion
   var throw_Original: Throw = js.native
   @JSName("throws")
   var throws_Original: Throw = js.native
-  var `true`: Assertion = js.native
-  var undefined: Assertion = js.native
+  @JSName("true")
+  var true_Original: Assertion = js.native
+  @JSName("undefined")
+  var undefined_Original: Assertion = js.native
+  def Arguments(`type`: java.lang.String): Assertion = js.native
+  def Arguments(`type`: java.lang.String, message: java.lang.String): Assertion = js.native
   def Throw(): Assertion = js.native
   def Throw(constructor: js.Function): Assertion = js.native
   def Throw(constructor: js.Function, expected: java.lang.String): Assertion = js.native
@@ -79,6 +92,8 @@ trait Assertion
   def a(`type`: java.lang.String, message: java.lang.String): Assertion = js.native
   def an(`type`: java.lang.String): Assertion = js.native
   def an(`type`: java.lang.String, message: java.lang.String): Assertion = js.native
+  def arguments(`type`: java.lang.String): Assertion = js.native
+  def arguments(`type`: java.lang.String, message: java.lang.String): Assertion = js.native
   def closeTo(expected: scala.Double, delta: scala.Double): Assertion = js.native
   def closeTo(expected: scala.Double, delta: scala.Double, message: java.lang.String): Assertion = js.native
   def contain(value: java.lang.String): Assertion = js.native
@@ -87,6 +102,8 @@ trait Assertion
   def contain(value: jqueryDotAjaxfileLib.Object, message: java.lang.String): Assertion = js.native
   def contain(value: scala.Double): Assertion = js.native
   def contain(value: scala.Double, message: java.lang.String): Assertion = js.native
+  def empty(`type`: java.lang.String): Assertion = js.native
+  def empty(`type`: java.lang.String, message: java.lang.String): Assertion = js.native
   def eq(value: js.Any): Assertion = js.native
   def eq(value: js.Any, message: java.lang.String): Assertion = js.native
   def eql(value: js.Any): Assertion = js.native
@@ -97,6 +114,10 @@ trait Assertion
   def equal(value: js.Any, message: java.lang.String): Assertion = js.native
   def equals(value: js.Any): Assertion = js.native
   def equals(value: js.Any, message: java.lang.String): Assertion = js.native
+  def exist(`type`: java.lang.String): Assertion = js.native
+  def exist(`type`: java.lang.String, message: java.lang.String): Assertion = js.native
+  def `false`(`type`: java.lang.String): Assertion = js.native
+  def `false`(`type`: java.lang.String, message: java.lang.String): Assertion = js.native
   def haveOwnProperty(name: java.lang.String): Assertion = js.native
   def haveOwnProperty(name: java.lang.String, message: java.lang.String): Assertion = js.native
   def include(value: java.lang.String): Assertion = js.native
@@ -105,6 +126,8 @@ trait Assertion
   def include(value: jqueryDotAjaxfileLib.Object, message: java.lang.String): Assertion = js.native
   def include(value: scala.Double): Assertion = js.native
   def include(value: scala.Double, message: java.lang.String): Assertion = js.native
+  def itself(`type`: java.lang.String): Assertion = js.native
+  def itself(`type`: java.lang.String, message: java.lang.String): Assertion = js.native
   def key(string: java.lang.String): Assertion = js.native
   def keys(keys: java.lang.String*): Assertion = js.native
   def keys(keys: js.Array[_]): Assertion = js.native
@@ -118,6 +141,12 @@ trait Assertion
   def `match`(regexp: stdLib.RegExp, message: java.lang.String): Assertion = js.native
   def members(set: js.Array[_]): Assertion = js.native
   def members(set: js.Array[_], message: java.lang.String): Assertion = js.native
+  def not(`type`: java.lang.String): Assertion = js.native
+  def not(`type`: java.lang.String, message: java.lang.String): Assertion = js.native
+  def `null`(`type`: java.lang.String): Assertion = js.native
+  def `null`(`type`: java.lang.String, message: java.lang.String): Assertion = js.native
+  def ok(`type`: java.lang.String): Assertion = js.native
+  def ok(`type`: java.lang.String, message: java.lang.String): Assertion = js.native
   def ownProperty(name: java.lang.String): Assertion = js.native
   def ownProperty(name: java.lang.String, message: java.lang.String): Assertion = js.native
   def property(name: java.lang.String): Assertion = js.native
@@ -159,5 +188,9 @@ trait Assertion
   def throws(expected: java.lang.String, message: java.lang.String): Assertion = js.native
   def throws(expected: stdLib.RegExp): Assertion = js.native
   def throws(expected: stdLib.RegExp, message: java.lang.String): Assertion = js.native
+  def `true`(`type`: java.lang.String): Assertion = js.native
+  def `true`(`type`: java.lang.String, message: java.lang.String): Assertion = js.native
+  def undefined(`type`: java.lang.String): Assertion = js.native
+  def undefined(`type`: java.lang.String, message: java.lang.String): Assertion = js.native
 }
 

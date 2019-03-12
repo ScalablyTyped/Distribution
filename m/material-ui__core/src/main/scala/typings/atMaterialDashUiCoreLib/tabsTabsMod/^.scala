@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/Tabs/Tabs", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tabsTabsMod.TabsProps] = js.native
+  val default: reactLib.reactMod.ReactNs.ComponentType[TabsProps] = js.native
 }
 

@@ -19,12 +19,12 @@ trait UserRequest extends js.Object {
 object UserRequest {
   @scala.inline
   def apply(
-    failureCallback: js.Function1[/* reason */ java.lang.String, scala.Unit] = null,
-    successCallback: js.Function1[/* user */ UserProfile, scala.Unit] = null
+    failureCallback: /* reason */ java.lang.String => scala.Unit = null,
+    successCallback: /* user */ UserProfile => scala.Unit = null
   ): UserRequest = {
     val __obj = js.Dynamic.literal()
-    if (failureCallback != null) __obj.updateDynamic("failureCallback")(failureCallback)
-    if (successCallback != null) __obj.updateDynamic("successCallback")(successCallback)
+    if (failureCallback != null) __obj.updateDynamic("failureCallback")(js.Any.fromFunction1(failureCallback))
+    if (successCallback != null) __obj.updateDynamic("successCallback")(js.Any.fromFunction1(successCallback))
     __obj.asInstanceOf[UserRequest]
   }
 }

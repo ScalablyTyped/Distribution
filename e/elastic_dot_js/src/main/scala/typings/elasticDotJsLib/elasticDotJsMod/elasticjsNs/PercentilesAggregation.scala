@@ -64,19 +64,19 @@ trait PercentilesAggregation extends Aggregation {
 object PercentilesAggregation {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    compression: js.Function1[scala.Double, PercentilesAggregation],
-    field: js.Function1[java.lang.String, PercentilesAggregation],
-    keyed: js.Function1[scala.Boolean, PercentilesAggregation],
-    lang: js.Function1[java.lang.String, PercentilesAggregation],
-    params: js.Function1[js.Object, PercentilesAggregation],
-    percent: js.Function1[scala.Double, PercentilesAggregation],
-    percents: js.Function1[js.Array[scala.Double], PercentilesAggregation],
-    script: js.Function1[java.lang.String, PercentilesAggregation],
-    scriptValuesSorted: js.Function1[scala.Boolean, PercentilesAggregation],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    compression: scala.Double => PercentilesAggregation,
+    field: java.lang.String => PercentilesAggregation,
+    keyed: scala.Boolean => PercentilesAggregation,
+    lang: java.lang.String => PercentilesAggregation,
+    params: js.Object => PercentilesAggregation,
+    percent: scala.Double => PercentilesAggregation,
+    percents: js.Array[scala.Double] => PercentilesAggregation,
+    script: java.lang.String => PercentilesAggregation,
+    scriptValuesSorted: scala.Boolean => PercentilesAggregation,
+    toJSON: () => js.Any
   ): PercentilesAggregation = {
-    val __obj = js.Dynamic.literal(_type = _type, compression = compression, field = field, keyed = keyed, lang = lang, params = params, percent = percent, percents = percents, script = script, scriptValuesSorted = scriptValuesSorted, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), compression = js.Any.fromFunction1(compression), field = js.Any.fromFunction1(field), keyed = js.Any.fromFunction1(keyed), lang = js.Any.fromFunction1(lang), params = js.Any.fromFunction1(params), percent = js.Any.fromFunction1(percent), percents = js.Any.fromFunction1(percents), script = js.Any.fromFunction1(script), scriptValuesSorted = js.Any.fromFunction1(scriptValuesSorted), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[PercentilesAggregation]
   }

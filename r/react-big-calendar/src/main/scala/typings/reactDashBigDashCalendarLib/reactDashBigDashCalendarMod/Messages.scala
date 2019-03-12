@@ -34,7 +34,7 @@ object Messages {
     month: java.lang.String = null,
     next: java.lang.String = null,
     previous: java.lang.String = null,
-    showMore: js.Function1[/* count */ scala.Double, java.lang.String] = null,
+    showMore: /* count */ scala.Double => java.lang.String = null,
     time: java.lang.String = null,
     today: java.lang.String = null,
     tomorrow: java.lang.String = null,
@@ -51,7 +51,7 @@ object Messages {
     if (month != null) __obj.updateDynamic("month")(month)
     if (next != null) __obj.updateDynamic("next")(next)
     if (previous != null) __obj.updateDynamic("previous")(previous)
-    if (showMore != null) __obj.updateDynamic("showMore")(showMore)
+    if (showMore != null) __obj.updateDynamic("showMore")(js.Any.fromFunction1(showMore))
     if (time != null) __obj.updateDynamic("time")(time)
     if (today != null) __obj.updateDynamic("today")(today)
     if (tomorrow != null) __obj.updateDynamic("tomorrow")(tomorrow)

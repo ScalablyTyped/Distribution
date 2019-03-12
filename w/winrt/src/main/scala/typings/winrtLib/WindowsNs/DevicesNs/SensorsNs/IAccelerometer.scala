@@ -16,13 +16,13 @@ trait IAccelerometer extends js.Object {
 object IAccelerometer {
   @scala.inline
   def apply(
-    getCurrentReading: js.Function0[AccelerometerReading],
+    getCurrentReading: () => AccelerometerReading,
     minimumReportInterval: scala.Double,
     onreadingchanged: js.Any,
     onshaken: js.Any,
     reportInterval: scala.Double
   ): IAccelerometer = {
-    val __obj = js.Dynamic.literal(getCurrentReading = getCurrentReading, minimumReportInterval = minimumReportInterval, onreadingchanged = onreadingchanged, onshaken = onshaken, reportInterval = reportInterval)
+    val __obj = js.Dynamic.literal(getCurrentReading = js.Any.fromFunction0(getCurrentReading), minimumReportInterval = minimumReportInterval, onreadingchanged = onreadingchanged, onshaken = onshaken, reportInterval = reportInterval)
   
     __obj.asInstanceOf[IAccelerometer]
   }

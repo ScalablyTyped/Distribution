@@ -10,13 +10,9 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def AnimatedPlaceholder[OptionType](
     WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsPlaceholderMod.PlaceholderProps[OptionType]]
-  ): reactLib.reactMod.ReactNs.ComponentType[
-    reactDashSelectLib.libAnimatedPlaceholderMod.AnimatedPlaceholderProps[OptionType]
-  ] = js.native
+  ): reactLib.reactMod.ReactNs.ComponentType[AnimatedPlaceholderProps[OptionType]] = js.native
   def default[OptionType](
     WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsPlaceholderMod.PlaceholderProps[OptionType]]
-  ): reactLib.reactMod.ReactNs.ComponentType[
-    reactDashSelectLib.libAnimatedPlaceholderMod.AnimatedPlaceholderProps[OptionType]
-  ] = js.native
+  ): reactLib.reactMod.ReactNs.ComponentType[AnimatedPlaceholderProps[OptionType]] = js.native
 }
 

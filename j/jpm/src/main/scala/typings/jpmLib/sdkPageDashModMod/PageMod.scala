@@ -13,10 +13,10 @@ trait PageMod extends js.Object {
 object PageMod {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     include: java.lang.String | js.Array[java.lang.String] | stdLib.RegExp | js.Array[stdLib.RegExp]
   ): PageMod = {
-    val __obj = js.Dynamic.literal(destroy = destroy, include = include.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), include = include.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PageMod]
   }

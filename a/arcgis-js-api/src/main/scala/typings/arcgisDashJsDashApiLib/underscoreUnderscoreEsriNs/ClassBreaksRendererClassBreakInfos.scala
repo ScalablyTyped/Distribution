@@ -37,14 +37,14 @@ object ClassBreaksRendererClassBreakInfos {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     maxValue: scala.Double,
     minValue: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     symbol: Symbol,
     label: java.lang.String = null
   ): ClassBreaksRendererClassBreakInfos = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, maxValue = maxValue, minValue = minValue, propertyIsEnumerable = propertyIsEnumerable, symbol = symbol)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxValue = maxValue, minValue = minValue, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), symbol = symbol)
     if (label != null) __obj.updateDynamic("label")(label)
     __obj.asInstanceOf[ClassBreaksRendererClassBreakInfos]
   }

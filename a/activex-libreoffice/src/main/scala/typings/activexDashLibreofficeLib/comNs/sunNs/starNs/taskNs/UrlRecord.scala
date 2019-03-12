@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait UrlRecord extends js.Object {
   var Url: java.lang.String
-  var UserList: activexDashInteropLib.SafeArray[UserRecord]
+  var UserList: stdLib.SafeArray[UserRecord]
 }
 
 object UrlRecord {
   @scala.inline
-  def apply(Url: java.lang.String, UserList: activexDashInteropLib.SafeArray[UserRecord]): UrlRecord = {
+  def apply(Url: java.lang.String, UserList: stdLib.SafeArray[UserRecord]): UrlRecord = {
     val __obj = js.Dynamic.literal(Url = Url, UserList = UserList)
   
     __obj.asInstanceOf[UrlRecord]

@@ -9,19 +9,19 @@ trait DeleteSubscriberRequest extends js.Object {
   /**
     * The accountId that is associated with the budget whose subscriber you want to delete.
     */
-  var AccountId: AccountId
+  var AccountId: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.AccountId
   /**
     * The name of the budget whose subscriber you want to delete.
     */
-  var BudgetName: BudgetName
+  var BudgetName: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.BudgetName
   /**
     * The notification whose subscriber you want to delete.
     */
-  var Notification: Notification
+  var Notification: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.Notification
   /**
     * The subscriber that you want to delete.
     */
-  var Subscriber: Subscriber
+  var Subscriber: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.Subscriber
 }
 
 object DeleteSubscriberRequest {

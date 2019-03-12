@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var Reveal: revealLib.RevealStatic = js.native
+  var Reveal: RevealStatic = js.native
 }
 

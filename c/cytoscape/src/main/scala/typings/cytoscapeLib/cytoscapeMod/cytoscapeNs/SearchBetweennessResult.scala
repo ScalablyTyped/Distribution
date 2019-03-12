@@ -19,11 +19,11 @@ trait SearchBetweennessResult extends js.Object {
 object SearchBetweennessResult {
   @scala.inline
   def apply(
-    betweenness: js.Function1[NodeSingular, scala.Double],
-    betweennessNormalised: js.Function1[NodeSingular, scala.Double],
-    betweennessNormalized: js.Function1[NodeSingular, scala.Double]
+    betweenness: NodeSingular => scala.Double,
+    betweennessNormalised: NodeSingular => scala.Double,
+    betweennessNormalized: NodeSingular => scala.Double
   ): SearchBetweennessResult = {
-    val __obj = js.Dynamic.literal(betweenness = betweenness, betweennessNormalised = betweennessNormalised, betweennessNormalized = betweennessNormalized)
+    val __obj = js.Dynamic.literal(betweenness = js.Any.fromFunction1(betweenness), betweennessNormalised = js.Any.fromFunction1(betweennessNormalised), betweennessNormalized = js.Any.fromFunction1(betweennessNormalized))
   
     __obj.asInstanceOf[SearchBetweennessResult]
   }

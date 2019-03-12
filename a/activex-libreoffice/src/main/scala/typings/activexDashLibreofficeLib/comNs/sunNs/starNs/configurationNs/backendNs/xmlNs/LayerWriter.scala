@@ -21,38 +21,27 @@ object LayerWriter {
   @scala.inline
   def apply(
     OutputStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream,
-    acquire: js.Function0[scala.Unit],
-    addOrReplaceNode: js.Function2[java.lang.String, scala.Double, scala.Unit],
-    addOrReplaceNodeFromTemplate: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.backendNs.TemplateIdentifier, 
-      scala.Double, 
-      scala.Unit
-    ],
-    addProperty: js.Function3[java.lang.String, scala.Double, activexDashLibreofficeLib.`type`, scala.Unit],
-    addPropertyWithValue: js.Function3[java.lang.String, scala.Double, js.Any, scala.Unit],
-    dropNode: js.Function1[java.lang.String, scala.Unit],
-    endLayer: js.Function0[scala.Unit],
-    endNode: js.Function0[scala.Unit],
-    endProperty: js.Function0[scala.Unit],
-    getOutputStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    overrideNode: js.Function3[java.lang.String, scala.Double, scala.Boolean, scala.Unit],
-    overrideProperty: js.Function4[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.`type`, 
-      scala.Boolean, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setOutputStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream, scala.Unit],
-    setPropertyValue: js.Function1[js.Any, scala.Unit],
-    setPropertyValueForLocale: js.Function2[js.Any, java.lang.String, scala.Unit],
-    startLayer: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addOrReplaceNode: (java.lang.String, scala.Double) => scala.Unit,
+    addOrReplaceNodeFromTemplate: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.backendNs.TemplateIdentifier, scala.Double) => scala.Unit,
+    addProperty: (java.lang.String, scala.Double, activexDashLibreofficeLib.`type`) => scala.Unit,
+    addPropertyWithValue: (java.lang.String, scala.Double, js.Any) => scala.Unit,
+    dropNode: java.lang.String => scala.Unit,
+    endLayer: () => scala.Unit,
+    endNode: () => scala.Unit,
+    endProperty: () => scala.Unit,
+    getOutputStream: () => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    overrideNode: (java.lang.String, scala.Double, scala.Boolean) => scala.Unit,
+    overrideProperty: (java.lang.String, scala.Double, activexDashLibreofficeLib.`type`, scala.Boolean) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setOutputStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream => scala.Unit,
+    setPropertyValue: js.Any => scala.Unit,
+    setPropertyValueForLocale: (js.Any, java.lang.String) => scala.Unit,
+    startLayer: () => scala.Unit
   ): LayerWriter = {
-    val __obj = js.Dynamic.literal(OutputStream = OutputStream, acquire = acquire, addOrReplaceNode = addOrReplaceNode, addOrReplaceNodeFromTemplate = addOrReplaceNodeFromTemplate, addProperty = addProperty, addPropertyWithValue = addPropertyWithValue, dropNode = dropNode, endLayer = endLayer, endNode = endNode, endProperty = endProperty, getOutputStream = getOutputStream, initialize = initialize, overrideNode = overrideNode, overrideProperty = overrideProperty, queryInterface = queryInterface, release = release, setOutputStream = setOutputStream, setPropertyValue = setPropertyValue, setPropertyValueForLocale = setPropertyValueForLocale, startLayer = startLayer)
+    val __obj = js.Dynamic.literal(OutputStream = OutputStream, acquire = js.Any.fromFunction0(acquire), addOrReplaceNode = js.Any.fromFunction2(addOrReplaceNode), addOrReplaceNodeFromTemplate = js.Any.fromFunction3(addOrReplaceNodeFromTemplate), addProperty = js.Any.fromFunction3(addProperty), addPropertyWithValue = js.Any.fromFunction3(addPropertyWithValue), dropNode = js.Any.fromFunction1(dropNode), endLayer = js.Any.fromFunction0(endLayer), endNode = js.Any.fromFunction0(endNode), endProperty = js.Any.fromFunction0(endProperty), getOutputStream = js.Any.fromFunction0(getOutputStream), initialize = js.Any.fromFunction1(initialize), overrideNode = js.Any.fromFunction3(overrideNode), overrideProperty = js.Any.fromFunction4(overrideProperty), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setOutputStream = js.Any.fromFunction1(setOutputStream), setPropertyValue = js.Any.fromFunction1(setPropertyValue), setPropertyValueForLocale = js.Any.fromFunction2(setPropertyValueForLocale), startLayer = js.Any.fromFunction0(startLayer))
   
     __obj.asInstanceOf[LayerWriter]
   }

@@ -23,10 +23,10 @@ trait ASPxClientDashboardItemSelectionChangedEventArgs extends ASPxClientEventAr
 object ASPxClientDashboardItemSelectionChangedEventArgs {
   @scala.inline
   def apply(
-    GetCurrentSelection: js.Function0[js.Array[ASPxClientDashboardItemDataAxisPointTuple]],
+    GetCurrentSelection: () => js.Array[ASPxClientDashboardItemDataAxisPointTuple],
     ItemName: java.lang.String
   ): ASPxClientDashboardItemSelectionChangedEventArgs = {
-    val __obj = js.Dynamic.literal(GetCurrentSelection = GetCurrentSelection, ItemName = ItemName)
+    val __obj = js.Dynamic.literal(GetCurrentSelection = js.Any.fromFunction0(GetCurrentSelection), ItemName = ItemName)
   
     __obj.asInstanceOf[ASPxClientDashboardItemSelectionChangedEventArgs]
   }

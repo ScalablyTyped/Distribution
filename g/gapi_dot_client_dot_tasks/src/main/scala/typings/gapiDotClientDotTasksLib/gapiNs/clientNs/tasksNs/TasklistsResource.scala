@@ -23,32 +23,14 @@ trait TasklistsResource extends js.Object {
 object TasklistsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotTasksLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotTasksLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TaskList]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotTasksLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TaskList]
-    ],
-    list: js.Function1[
-      gapiDotClientDotTasksLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TaskLists]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotTasksLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TaskList]
-    ],
-    update: js.Function1[
-      gapiDotClientDotTasksLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TaskList]
-    ]
+    delete: gapiDotClientDotTasksLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotTasksLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[TaskList],
+    insert: gapiDotClientDotTasksLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[TaskList],
+    list: gapiDotClientDotTasksLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[TaskLists],
+    patch: gapiDotClientDotTasksLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[TaskList],
+    update: gapiDotClientDotTasksLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[TaskList]
   ): TasklistsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[TasklistsResource]
   }

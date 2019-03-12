@@ -27,11 +27,7 @@ object EmbedProps {
     icon: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconProps] = null,
     id: java.lang.String = null,
     iframe: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsGenericMod.HtmlIframeProps] = null,
-    onClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
-      /* data */ EmbedProps, 
-      scala.Unit
-    ] = null,
+    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ EmbedProps) => scala.Unit = null,
     placeholder: java.lang.String = null,
     source: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.youtube | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.vimeo = null,
     url: java.lang.String = null
@@ -52,7 +48,7 @@ object EmbedProps {
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (iframe != null) __obj.updateDynamic("iframe")(iframe.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url)

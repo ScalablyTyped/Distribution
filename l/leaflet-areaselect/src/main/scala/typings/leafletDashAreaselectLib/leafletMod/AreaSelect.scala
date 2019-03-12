@@ -15,12 +15,12 @@ trait AreaSelect extends js.Object {
 object AreaSelect {
   @scala.inline
   def apply(
-    addTo: js.Function1[leafletLib.leafletMod.Map, leafletLib.leafletMod.Map],
-    getBounds: js.Function0[leafletLib.leafletMod.LatLngBounds],
-    remove: js.Function0[scala.Unit],
-    setDimensions: js.Function1[Dimension, scala.Unit]
+    addTo: leafletLib.leafletMod.Map => leafletLib.leafletMod.Map,
+    getBounds: () => leafletLib.leafletMod.LatLngBounds,
+    remove: () => scala.Unit,
+    setDimensions: Dimension => scala.Unit
   ): AreaSelect = {
-    val __obj = js.Dynamic.literal(addTo = addTo, getBounds = getBounds, remove = remove, setDimensions = setDimensions)
+    val __obj = js.Dynamic.literal(addTo = js.Any.fromFunction1(addTo), getBounds = js.Any.fromFunction0(getBounds), remove = js.Any.fromFunction0(remove), setDimensions = js.Any.fromFunction1(setDimensions))
   
     __obj.asInstanceOf[AreaSelect]
   }

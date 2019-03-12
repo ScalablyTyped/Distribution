@@ -55,29 +55,29 @@ object XMetricField {
   def apply(
     DecimalDigits: scala.Double,
     SpinSize: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getCorrectedValue: js.Function1[scala.Double, scala.Double],
-    getDecimalDigits: js.Function0[scala.Double],
-    getFirst: js.Function1[scala.Double, scala.Double],
-    getLast: js.Function1[scala.Double, scala.Double],
-    getMax: js.Function1[scala.Double, scala.Double],
-    getMin: js.Function1[scala.Double, scala.Double],
-    getSpinSize: js.Function0[scala.Double],
-    getValue: js.Function1[scala.Double, scala.Double],
-    isStrictFormat: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setDecimalDigits: js.Function1[scala.Double, scala.Unit],
-    setFirst: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setLast: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setMax: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setMin: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setSpinSize: js.Function1[scala.Double, scala.Unit],
-    setStrictFormat: js.Function1[scala.Boolean, scala.Unit],
-    setUserValue: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setValue: js.Function2[scala.Double, scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    getCorrectedValue: scala.Double => scala.Double,
+    getDecimalDigits: () => scala.Double,
+    getFirst: scala.Double => scala.Double,
+    getLast: scala.Double => scala.Double,
+    getMax: scala.Double => scala.Double,
+    getMin: scala.Double => scala.Double,
+    getSpinSize: () => scala.Double,
+    getValue: scala.Double => scala.Double,
+    isStrictFormat: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setDecimalDigits: scala.Double => scala.Unit,
+    setFirst: (scala.Double, scala.Double) => scala.Unit,
+    setLast: (scala.Double, scala.Double) => scala.Unit,
+    setMax: (scala.Double, scala.Double) => scala.Unit,
+    setMin: (scala.Double, scala.Double) => scala.Unit,
+    setSpinSize: scala.Double => scala.Unit,
+    setStrictFormat: scala.Boolean => scala.Unit,
+    setUserValue: (scala.Double, scala.Double) => scala.Unit,
+    setValue: (scala.Double, scala.Double) => scala.Unit
   ): XMetricField = {
-    val __obj = js.Dynamic.literal(DecimalDigits = DecimalDigits, SpinSize = SpinSize, acquire = acquire, getCorrectedValue = getCorrectedValue, getDecimalDigits = getDecimalDigits, getFirst = getFirst, getLast = getLast, getMax = getMax, getMin = getMin, getSpinSize = getSpinSize, getValue = getValue, isStrictFormat = isStrictFormat, queryInterface = queryInterface, release = release, setDecimalDigits = setDecimalDigits, setFirst = setFirst, setLast = setLast, setMax = setMax, setMin = setMin, setSpinSize = setSpinSize, setStrictFormat = setStrictFormat, setUserValue = setUserValue, setValue = setValue)
+    val __obj = js.Dynamic.literal(DecimalDigits = DecimalDigits, SpinSize = SpinSize, acquire = js.Any.fromFunction0(acquire), getCorrectedValue = js.Any.fromFunction1(getCorrectedValue), getDecimalDigits = js.Any.fromFunction0(getDecimalDigits), getFirst = js.Any.fromFunction1(getFirst), getLast = js.Any.fromFunction1(getLast), getMax = js.Any.fromFunction1(getMax), getMin = js.Any.fromFunction1(getMin), getSpinSize = js.Any.fromFunction0(getSpinSize), getValue = js.Any.fromFunction1(getValue), isStrictFormat = js.Any.fromFunction0(isStrictFormat), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDecimalDigits = js.Any.fromFunction1(setDecimalDigits), setFirst = js.Any.fromFunction2(setFirst), setLast = js.Any.fromFunction2(setLast), setMax = js.Any.fromFunction2(setMax), setMin = js.Any.fromFunction2(setMin), setSpinSize = js.Any.fromFunction1(setSpinSize), setStrictFormat = js.Any.fromFunction1(setStrictFormat), setUserValue = js.Any.fromFunction2(setUserValue), setValue = js.Any.fromFunction2(setValue))
   
     __obj.asInstanceOf[XMetricField]
   }

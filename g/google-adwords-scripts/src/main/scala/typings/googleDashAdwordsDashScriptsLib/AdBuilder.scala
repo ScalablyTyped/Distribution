@@ -13,13 +13,13 @@ trait AdBuilder[T]
 object AdBuilder {
   @scala.inline
   def apply[T](
-    build: js.Function0[AdWordsOperation[T]],
-    withCustomParameters: js.Function1[js.Object, T],
-    withFinalUrl: js.Function1[java.lang.String, T],
-    withMobileFinalUrl: js.Function1[java.lang.String, T],
-    withTrackingTemplate: js.Function1[java.lang.String, T]
+    build: () => AdWordsOperation[T],
+    withCustomParameters: js.Object => T,
+    withFinalUrl: java.lang.String => T,
+    withMobileFinalUrl: java.lang.String => T,
+    withTrackingTemplate: java.lang.String => T
   ): AdBuilder[T] = {
-    val __obj = js.Dynamic.literal(build = build, withCustomParameters = withCustomParameters, withFinalUrl = withFinalUrl, withMobileFinalUrl = withMobileFinalUrl, withTrackingTemplate = withTrackingTemplate)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), withCustomParameters = js.Any.fromFunction1(withCustomParameters), withFinalUrl = js.Any.fromFunction1(withFinalUrl), withMobileFinalUrl = js.Any.fromFunction1(withMobileFinalUrl), withTrackingTemplate = js.Any.fromFunction1(withTrackingTemplate))
   
     __obj.asInstanceOf[AdBuilder[T]]
   }

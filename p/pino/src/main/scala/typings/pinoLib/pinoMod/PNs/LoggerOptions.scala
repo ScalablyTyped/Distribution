@@ -109,7 +109,7 @@ object LoggerOptions {
     levelVal: scala.Int | scala.Double = null,
     messageKey: java.lang.String = null,
     name: java.lang.String = null,
-    onTerminated: js.Function2[/* eventName */ java.lang.String, /* err */ js.Any, scala.Unit] = null,
+    onTerminated: (/* eventName */ java.lang.String, /* err */ js.Any) => scala.Unit = null,
     prettyPrint: scala.Boolean | PrettyOptions = null,
     redact: js.Array[java.lang.String] | redactOptions = null,
     safe: js.UndefOr[scala.Boolean] = js.undefined,
@@ -128,7 +128,7 @@ object LoggerOptions {
     if (levelVal != null) __obj.updateDynamic("levelVal")(levelVal.asInstanceOf[js.Any])
     if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onTerminated != null) __obj.updateDynamic("onTerminated")(onTerminated)
+    if (onTerminated != null) __obj.updateDynamic("onTerminated")(js.Any.fromFunction2(onTerminated))
     if (prettyPrint != null) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
     if (redact != null) __obj.updateDynamic("redact")(redact.asInstanceOf[js.Any])
     if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe)

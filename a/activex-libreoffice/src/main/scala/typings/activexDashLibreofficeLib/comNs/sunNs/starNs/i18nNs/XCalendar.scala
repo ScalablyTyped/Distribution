@@ -14,14 +14,14 @@ trait XCalendar
     */
   var DateTime: scala.Double
   /** returns a sequence of {@link CalendarItem} describing the day names. */
-  val Days: activexDashInteropLib.SafeArray[CalendarItem]
+  val Days: stdLib.SafeArray[CalendarItem]
   /** returns the first day of a week, one of {@link Weekdays} values. */
   var FirstDayOfWeek: scala.Double
   val LoadedCalendar: Calendar
   /** returns how many days of a week must reside in the first week of a year. */
   var MinimumNumberOfDaysForFirstWeek: scala.Double
   /** returns a sequence of {@link CalendarItem} describing the month names. */
-  val Months: activexDashInteropLib.SafeArray[CalendarItem]
+  val Months: stdLib.SafeArray[CalendarItem]
   val NumberOfDaysInWeek: scala.Double
   val NumberOfMonthsInYear: scala.Double
   /** Returns the ID string of the loaded calendar, for example, **"Gregorian"** */
@@ -32,14 +32,14 @@ trait XCalendar
     * @param nAmount The amount to add.
     */
   def addValue(nCalendarFieldIndex: scala.Double, nAmount: scala.Double): scala.Unit
-  def getAllCalendars(rLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): activexDashInteropLib.SafeArray[java.lang.String]
+  def getAllCalendars(rLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): stdLib.SafeArray[java.lang.String]
   /**
     * Get the UTC date/time as an offset to the start of the calendar at 1-Jan-1970 00:00. The integer part represents the number of days passed since start
     * date. The fractional part represents fractions of a day, thus 0.5 means 12 hours.
     */
   def getDateTime(): scala.Double
   /** returns a sequence of {@link CalendarItem} describing the day names. */
-  def getDays(): activexDashInteropLib.SafeArray[CalendarItem]
+  def getDays(): stdLib.SafeArray[CalendarItem]
   /**
     * Returns a string (name to display) matching the given parameters.
     * @param nCalendarDisplayIndex One of {@link CalendarDisplayIndex} values
@@ -54,7 +54,7 @@ trait XCalendar
   /** returns how many days of a week must reside in the first week of a year. */
   def getMinimumNumberOfDaysForFirstWeek(): scala.Double
   /** returns a sequence of {@link CalendarItem} describing the month names. */
-  def getMonths(): activexDashInteropLib.SafeArray[CalendarItem]
+  def getMonths(): stdLib.SafeArray[CalendarItem]
   def getNumberOfDaysInWeek(): scala.Double
   def getNumberOfMonthsInYear(): scala.Double
   /** Returns the ID string of the loaded calendar, for example, **"Gregorian"** */
@@ -92,46 +92,39 @@ object XCalendar {
   @scala.inline
   def apply(
     DateTime: scala.Double,
-    Days: activexDashInteropLib.SafeArray[CalendarItem],
+    Days: stdLib.SafeArray[CalendarItem],
     FirstDayOfWeek: scala.Double,
     LoadedCalendar: Calendar,
     MinimumNumberOfDaysForFirstWeek: scala.Double,
-    Months: activexDashInteropLib.SafeArray[CalendarItem],
+    Months: stdLib.SafeArray[CalendarItem],
     NumberOfDaysInWeek: scala.Double,
     NumberOfMonthsInYear: scala.Double,
     UniqueID: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    addValue: js.Function2[scala.Double, scala.Double, scala.Unit],
-    getAllCalendars: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashInteropLib.SafeArray[java.lang.String]
-    ],
-    getDateTime: js.Function0[scala.Double],
-    getDays: js.Function0[activexDashInteropLib.SafeArray[CalendarItem]],
-    getDisplayName: js.Function3[scala.Double, scala.Double, scala.Double, java.lang.String],
-    getFirstDayOfWeek: js.Function0[scala.Double],
-    getLoadedCalendar: js.Function0[Calendar],
-    getMinimumNumberOfDaysForFirstWeek: js.Function0[scala.Double],
-    getMonths: js.Function0[activexDashInteropLib.SafeArray[CalendarItem]],
-    getNumberOfDaysInWeek: js.Function0[scala.Double],
-    getNumberOfMonthsInYear: js.Function0[scala.Double],
-    getUniqueID: js.Function0[java.lang.String],
-    getValue: js.Function1[scala.Double, scala.Double],
-    isValid: js.Function0[scala.Boolean],
-    loadCalendar: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Unit
-    ],
-    loadDefaultCalendar: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setDateTime: js.Function1[scala.Double, scala.Unit],
-    setFirstDayOfWeek: js.Function1[scala.Double, scala.Unit],
-    setMinimumNumberOfDaysForFirstWeek: js.Function1[scala.Double, scala.Unit],
-    setValue: js.Function2[scala.Double, scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    addValue: (scala.Double, scala.Double) => scala.Unit,
+    getAllCalendars: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => stdLib.SafeArray[java.lang.String],
+    getDateTime: () => scala.Double,
+    getDays: () => stdLib.SafeArray[CalendarItem],
+    getDisplayName: (scala.Double, scala.Double, scala.Double) => java.lang.String,
+    getFirstDayOfWeek: () => scala.Double,
+    getLoadedCalendar: () => Calendar,
+    getMinimumNumberOfDaysForFirstWeek: () => scala.Double,
+    getMonths: () => stdLib.SafeArray[CalendarItem],
+    getNumberOfDaysInWeek: () => scala.Double,
+    getNumberOfMonthsInYear: () => scala.Double,
+    getUniqueID: () => java.lang.String,
+    getValue: scala.Double => scala.Double,
+    isValid: () => scala.Boolean,
+    loadCalendar: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => scala.Unit,
+    loadDefaultCalendar: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setDateTime: scala.Double => scala.Unit,
+    setFirstDayOfWeek: scala.Double => scala.Unit,
+    setMinimumNumberOfDaysForFirstWeek: scala.Double => scala.Unit,
+    setValue: (scala.Double, scala.Double) => scala.Unit
   ): XCalendar = {
-    val __obj = js.Dynamic.literal(DateTime = DateTime, Days = Days, FirstDayOfWeek = FirstDayOfWeek, LoadedCalendar = LoadedCalendar, MinimumNumberOfDaysForFirstWeek = MinimumNumberOfDaysForFirstWeek, Months = Months, NumberOfDaysInWeek = NumberOfDaysInWeek, NumberOfMonthsInYear = NumberOfMonthsInYear, UniqueID = UniqueID, acquire = acquire, addValue = addValue, getAllCalendars = getAllCalendars, getDateTime = getDateTime, getDays = getDays, getDisplayName = getDisplayName, getFirstDayOfWeek = getFirstDayOfWeek, getLoadedCalendar = getLoadedCalendar, getMinimumNumberOfDaysForFirstWeek = getMinimumNumberOfDaysForFirstWeek, getMonths = getMonths, getNumberOfDaysInWeek = getNumberOfDaysInWeek, getNumberOfMonthsInYear = getNumberOfMonthsInYear, getUniqueID = getUniqueID, getValue = getValue, isValid = isValid, loadCalendar = loadCalendar, loadDefaultCalendar = loadDefaultCalendar, queryInterface = queryInterface, release = release, setDateTime = setDateTime, setFirstDayOfWeek = setFirstDayOfWeek, setMinimumNumberOfDaysForFirstWeek = setMinimumNumberOfDaysForFirstWeek, setValue = setValue)
+    val __obj = js.Dynamic.literal(DateTime = DateTime, Days = Days, FirstDayOfWeek = FirstDayOfWeek, LoadedCalendar = LoadedCalendar, MinimumNumberOfDaysForFirstWeek = MinimumNumberOfDaysForFirstWeek, Months = Months, NumberOfDaysInWeek = NumberOfDaysInWeek, NumberOfMonthsInYear = NumberOfMonthsInYear, UniqueID = UniqueID, acquire = js.Any.fromFunction0(acquire), addValue = js.Any.fromFunction2(addValue), getAllCalendars = js.Any.fromFunction1(getAllCalendars), getDateTime = js.Any.fromFunction0(getDateTime), getDays = js.Any.fromFunction0(getDays), getDisplayName = js.Any.fromFunction3(getDisplayName), getFirstDayOfWeek = js.Any.fromFunction0(getFirstDayOfWeek), getLoadedCalendar = js.Any.fromFunction0(getLoadedCalendar), getMinimumNumberOfDaysForFirstWeek = js.Any.fromFunction0(getMinimumNumberOfDaysForFirstWeek), getMonths = js.Any.fromFunction0(getMonths), getNumberOfDaysInWeek = js.Any.fromFunction0(getNumberOfDaysInWeek), getNumberOfMonthsInYear = js.Any.fromFunction0(getNumberOfMonthsInYear), getUniqueID = js.Any.fromFunction0(getUniqueID), getValue = js.Any.fromFunction1(getValue), isValid = js.Any.fromFunction0(isValid), loadCalendar = js.Any.fromFunction2(loadCalendar), loadDefaultCalendar = js.Any.fromFunction1(loadDefaultCalendar), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDateTime = js.Any.fromFunction1(setDateTime), setFirstDayOfWeek = js.Any.fromFunction1(setFirstDayOfWeek), setMinimumNumberOfDaysForFirstWeek = js.Any.fromFunction1(setMinimumNumberOfDaysForFirstWeek), setValue = js.Any.fromFunction2(setValue))
   
     __obj.asInstanceOf[XCalendar]
   }

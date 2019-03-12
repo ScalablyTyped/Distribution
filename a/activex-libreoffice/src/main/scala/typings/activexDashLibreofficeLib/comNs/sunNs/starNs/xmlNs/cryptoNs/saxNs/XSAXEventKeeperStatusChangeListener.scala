@@ -32,14 +32,14 @@ trait XSAXEventKeeperStatusChangeListener
 object XSAXEventKeeperStatusChangeListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    blockingStatusChanged: js.Function1[scala.Boolean, scala.Unit],
-    bufferStatusChanged: js.Function1[scala.Boolean, scala.Unit],
-    collectionStatusChanged: js.Function1[scala.Boolean, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    blockingStatusChanged: scala.Boolean => scala.Unit,
+    bufferStatusChanged: scala.Boolean => scala.Unit,
+    collectionStatusChanged: scala.Boolean => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSAXEventKeeperStatusChangeListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, blockingStatusChanged = blockingStatusChanged, bufferStatusChanged = bufferStatusChanged, collectionStatusChanged = collectionStatusChanged, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), blockingStatusChanged = js.Any.fromFunction1(blockingStatusChanged), bufferStatusChanged = js.Any.fromFunction1(bufferStatusChanged), collectionStatusChanged = js.Any.fromFunction1(collectionStatusChanged), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSAXEventKeeperStatusChangeListener]
   }

@@ -31,14 +31,14 @@ trait XEmbeddedObject
     * @throws com::sun::star::embed::NeedsRunnignStateException means that the object is in loaded state now and can be switched to running state, other possib
     * @throws com::sun::star::embed::WrongStateException in case object is in invalid state
     */
-  val ReachableStates: activexDashInteropLib.SafeArray[scala.Double]
+  val ReachableStates: stdLib.SafeArray[scala.Double]
   /**
     * returns supported verbs for the object.
     * @returns the sequence of verbs the object supports
     * @throws com::sun::star::embed::NeedsRunnignStateException means that the object is in loaded state now and can be switched to running state, acceptable v
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state to call the function
     */
-  val SupportedVerbs: activexDashInteropLib.SafeArray[VerbDescriptor]
+  val SupportedVerbs: stdLib.SafeArray[VerbDescriptor]
   /**
     * changes the state of the object to the requested one.
     * @param nNewState specifies the new state, can take values from the constant set {@link com.sun.star.embed.EmbedStates}
@@ -74,7 +74,7 @@ trait XEmbeddedObject
     * @throws com::sun::star::embed::NeedsRunnignStateException means that the object is in loaded state now and can be switched to running state, other possib
     * @throws com::sun::star::embed::WrongStateException in case object is in invalid state
     */
-  def getReachableStates(): activexDashInteropLib.SafeArray[scala.Double]
+  def getReachableStates(): stdLib.SafeArray[scala.Double]
   /**
     * retrieves the status of the object.
     * @param nAspect the aspect specifying the form of object representation
@@ -88,7 +88,7 @@ trait XEmbeddedObject
     * @throws com::sun::star::embed::NeedsRunnignStateException means that the object is in loaded state now and can be switched to running state, acceptable v
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state to call the function
     */
-  def getSupportedVerbs(): activexDashInteropLib.SafeArray[VerbDescriptor]
+  def getSupportedVerbs(): stdLib.SafeArray[VerbDescriptor]
   /**
     * sets a connection to the container's client.
     * @param xClient provides a reference to a client implementation
@@ -117,48 +117,44 @@ trait XEmbeddedObject
 object XEmbeddedObject {
   @scala.inline
   def apply(
-    ClassID: activexDashInteropLib.SafeArray[scala.Double],
+    ClassID: stdLib.SafeArray[scala.Double],
     ClassName: java.lang.String,
     ClientSite: XEmbeddedClient,
     Component: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseable,
     CurrentState: scala.Double,
-    ReachableStates: activexDashInteropLib.SafeArray[scala.Double],
-    SupportedVerbs: activexDashInteropLib.SafeArray[VerbDescriptor],
-    acquire: js.Function0[scala.Unit],
-    addCloseListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseListener, scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener, scala.Unit],
-    addStateChangeListener: js.Function1[XStateChangeListener, scala.Unit],
-    changeState: js.Function1[scala.Double, scala.Unit],
-    close: js.Function1[scala.Boolean, scala.Unit],
-    doVerb: js.Function1[scala.Double, scala.Unit],
-    getClassID: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    getClassName: js.Function0[java.lang.String],
-    getClientSite: js.Function0[XEmbeddedClient],
-    getComponent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseable],
-    getCurrentState: js.Function0[scala.Double],
-    getMapUnit: js.Function1[scala.Double, scala.Double],
-    getPreferredVisualRepresentation: js.Function1[scala.Double, VisualRepresentation],
-    getReachableStates: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    getStatus: js.Function1[scala.Double, scala.Double],
-    getSupportedVerbs: js.Function0[activexDashInteropLib.SafeArray[VerbDescriptor]],
-    getVisualAreaSize: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeCloseListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseListener, scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener, scala.Unit],
-    removeStateChangeListener: js.Function1[XStateChangeListener, scala.Unit],
-    setClassInfo: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      java.lang.String, 
-      scala.Unit
-    ],
-    setClientSite: js.Function1[XEmbeddedClient, scala.Unit],
-    setContainerName: js.Function1[java.lang.String, scala.Unit],
-    setUpdateMode: js.Function1[scala.Double, scala.Unit],
-    setVisualAreaSize: js.Function2[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit],
-    update: js.Function0[scala.Unit]
+    ReachableStates: stdLib.SafeArray[scala.Double],
+    SupportedVerbs: stdLib.SafeArray[VerbDescriptor],
+    acquire: () => scala.Unit,
+    addCloseListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseListener => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener => scala.Unit,
+    addStateChangeListener: XStateChangeListener => scala.Unit,
+    changeState: scala.Double => scala.Unit,
+    close: scala.Boolean => scala.Unit,
+    doVerb: scala.Double => scala.Unit,
+    getClassID: () => stdLib.SafeArray[scala.Double],
+    getClassName: () => java.lang.String,
+    getClientSite: () => XEmbeddedClient,
+    getComponent: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseable,
+    getCurrentState: () => scala.Double,
+    getMapUnit: scala.Double => scala.Double,
+    getPreferredVisualRepresentation: scala.Double => VisualRepresentation,
+    getReachableStates: () => stdLib.SafeArray[scala.Double],
+    getStatus: scala.Double => scala.Double,
+    getSupportedVerbs: () => stdLib.SafeArray[VerbDescriptor],
+    getVisualAreaSize: scala.Double => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeCloseListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseListener => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener => scala.Unit,
+    removeStateChangeListener: XStateChangeListener => scala.Unit,
+    setClassInfo: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], java.lang.String) => scala.Unit,
+    setClientSite: XEmbeddedClient => scala.Unit,
+    setContainerName: java.lang.String => scala.Unit,
+    setUpdateMode: scala.Double => scala.Unit,
+    setVisualAreaSize: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size) => scala.Unit,
+    update: () => scala.Unit
   ): XEmbeddedObject = {
-    val __obj = js.Dynamic.literal(ClassID = ClassID, ClassName = ClassName, ClientSite = ClientSite, Component = Component, CurrentState = CurrentState, ReachableStates = ReachableStates, SupportedVerbs = SupportedVerbs, acquire = acquire, addCloseListener = addCloseListener, addEventListener = addEventListener, addStateChangeListener = addStateChangeListener, changeState = changeState, close = close, doVerb = doVerb, getClassID = getClassID, getClassName = getClassName, getClientSite = getClientSite, getComponent = getComponent, getCurrentState = getCurrentState, getMapUnit = getMapUnit, getPreferredVisualRepresentation = getPreferredVisualRepresentation, getReachableStates = getReachableStates, getStatus = getStatus, getSupportedVerbs = getSupportedVerbs, getVisualAreaSize = getVisualAreaSize, queryInterface = queryInterface, release = release, removeCloseListener = removeCloseListener, removeEventListener = removeEventListener, removeStateChangeListener = removeStateChangeListener, setClassInfo = setClassInfo, setClientSite = setClientSite, setContainerName = setContainerName, setUpdateMode = setUpdateMode, setVisualAreaSize = setVisualAreaSize, update = update)
+    val __obj = js.Dynamic.literal(ClassID = ClassID, ClassName = ClassName, ClientSite = ClientSite, Component = Component, CurrentState = CurrentState, ReachableStates = ReachableStates, SupportedVerbs = SupportedVerbs, acquire = js.Any.fromFunction0(acquire), addCloseListener = js.Any.fromFunction1(addCloseListener), addEventListener = js.Any.fromFunction1(addEventListener), addStateChangeListener = js.Any.fromFunction1(addStateChangeListener), changeState = js.Any.fromFunction1(changeState), close = js.Any.fromFunction1(close), doVerb = js.Any.fromFunction1(doVerb), getClassID = js.Any.fromFunction0(getClassID), getClassName = js.Any.fromFunction0(getClassName), getClientSite = js.Any.fromFunction0(getClientSite), getComponent = js.Any.fromFunction0(getComponent), getCurrentState = js.Any.fromFunction0(getCurrentState), getMapUnit = js.Any.fromFunction1(getMapUnit), getPreferredVisualRepresentation = js.Any.fromFunction1(getPreferredVisualRepresentation), getReachableStates = js.Any.fromFunction0(getReachableStates), getStatus = js.Any.fromFunction1(getStatus), getSupportedVerbs = js.Any.fromFunction0(getSupportedVerbs), getVisualAreaSize = js.Any.fromFunction1(getVisualAreaSize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeCloseListener = js.Any.fromFunction1(removeCloseListener), removeEventListener = js.Any.fromFunction1(removeEventListener), removeStateChangeListener = js.Any.fromFunction1(removeStateChangeListener), setClassInfo = js.Any.fromFunction2(setClassInfo), setClientSite = js.Any.fromFunction1(setClientSite), setContainerName = js.Any.fromFunction1(setContainerName), setUpdateMode = js.Any.fromFunction1(setUpdateMode), setVisualAreaSize = js.Any.fromFunction2(setVisualAreaSize), update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[XEmbeddedObject]
   }

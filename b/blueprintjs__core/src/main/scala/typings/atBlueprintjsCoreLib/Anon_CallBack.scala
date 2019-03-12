@@ -21,7 +21,7 @@ trait Anon_CallBack extends js.Object {
   ] = js.native
   var componentDidCatch: js.UndefOr[
     js.Function2[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* errorInfo */ reactLib.reactMod.ReactNs.ErrorInfo, 
       scala.Unit
     ]
@@ -71,7 +71,7 @@ trait Anon_CallBack extends js.Object {
   def forceUpdate(): scala.Unit = js.native
   def forceUpdate(callBack: js.Function0[scala.Unit]): scala.Unit = js.native
   def render(): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
-  def renderContextMenu(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderContextMenu(e: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]): reactLib.reactMod.Global.JSXNs.Element = js.native
   def setState[K /* <: scala.Nothing */](
     state: js.Function2[
       /* prevState */ stdLib.Readonly[js.Object], 

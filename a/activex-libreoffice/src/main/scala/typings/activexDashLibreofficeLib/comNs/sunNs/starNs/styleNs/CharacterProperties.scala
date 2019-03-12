@@ -133,7 +133,7 @@ trait CharacterProperties extends js.Object {
     * Grab bag of character properties, used as a string-any map for interim interop purposes.
     * @since LibreOffice 4.3  This property is intentionally not handled by the ODF filter. Any member that should be handled there should be first moved out
     */
-  var CharInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  var CharInteropGrabBag: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * This optional property marks a range of characters to prevent it from being broken into two lines.
     *
@@ -219,7 +219,7 @@ trait CharacterProperties extends js.Object {
     * It is not guaranteed that the order in the sequence reflects the order of the evaluation of the character style attributes.
     * @since OOo 1.1.2
     */
-  var CharStyleNames: activexDashInteropLib.SafeArray[java.lang.String]
+  var CharStyleNames: stdLib.SafeArray[java.lang.String]
   /**
     * This property contains the top border of the object.
     * @since LibreOffice 4.2
@@ -309,7 +309,7 @@ object CharacterProperties {
     CharHeight: scala.Double,
     CharHidden: scala.Boolean,
     CharHighlight: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
-    CharInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    CharInteropGrabBag: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     CharKeepTogether: scala.Boolean,
     CharKerning: scala.Double,
     CharLeftBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine2,
@@ -329,7 +329,7 @@ object CharacterProperties {
     CharShadowed: scala.Boolean,
     CharStrikeout: scala.Double,
     CharStyleName: java.lang.String,
-    CharStyleNames: activexDashInteropLib.SafeArray[java.lang.String],
+    CharStyleNames: stdLib.SafeArray[java.lang.String],
     CharTopBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine2,
     CharTopBorderDistance: scala.Double,
     CharUnderline: scala.Double,

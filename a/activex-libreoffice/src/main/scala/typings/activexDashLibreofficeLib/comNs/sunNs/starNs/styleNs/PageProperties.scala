@@ -194,7 +194,7 @@ trait PageProperties extends js.Object {
   /** determines the default numbering type for this page. */
   var NumberingType: scala.Double
   /** determines the layout of the page. */
-  var PageStyleLayout: PageStyleLayout
+  var PageStyleLayout: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.PageStyleLayout
   /** contains the name of a paper tray of the selected printer. */
   var PrinterPaperTray: java.lang.String
   /** determines if the register mode is active on that page. */

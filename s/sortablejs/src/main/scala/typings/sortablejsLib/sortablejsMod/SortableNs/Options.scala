@@ -187,17 +187,17 @@ object Options {
     group: java.lang.String | GroupOptions = null,
     handle: java.lang.String = null,
     ignore: java.lang.String = null,
-    onAdd: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
-    onChoose: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
-    onClone: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
-    onEnd: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
-    onFilter: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
-    onMove: js.Function1[/* event */ MoveEvent, scala.Boolean] = null,
-    onRemove: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
-    onSort: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
-    onStart: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
-    onUnchoose: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
-    onUpdate: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
+    onAdd: /* event */ SortableEvent => scala.Unit = null,
+    onChoose: /* event */ SortableEvent => scala.Unit = null,
+    onClone: /* event */ SortableEvent => scala.Unit = null,
+    onEnd: /* event */ SortableEvent => scala.Unit = null,
+    onFilter: /* event */ SortableEvent => scala.Unit = null,
+    onMove: /* event */ MoveEvent => scala.Boolean = null,
+    onRemove: /* event */ SortableEvent => scala.Unit = null,
+    onSort: /* event */ SortableEvent => scala.Unit = null,
+    onStart: /* event */ SortableEvent => scala.Unit = null,
+    onUnchoose: /* event */ SortableEvent => scala.Unit = null,
+    onUpdate: /* event */ SortableEvent => scala.Unit = null,
     preventOnFilter: js.UndefOr[scala.Boolean] = js.undefined,
     scroll: js.UndefOr[scala.Boolean] = js.undefined,
     scrollFn: js.ThisFunction3[
@@ -209,11 +209,7 @@ object Options {
     ] = null,
     scrollSensitivity: scala.Int | scala.Double = null,
     scrollSpeed: scala.Int | scala.Double = null,
-    setData: js.Function2[
-      /* dataTransfer */ stdLib.DataTransfer, 
-      /* draggedElement */ stdLib.HTMLElement, 
-      scala.Unit
-    ] = null,
+    setData: (/* dataTransfer */ stdLib.DataTransfer, /* draggedElement */ stdLib.HTMLElement) => scala.Unit = null,
     sort: js.UndefOr[scala.Boolean] = js.undefined,
     store: sortablejsLib.Anon_Get = null
   ): Options = {
@@ -237,23 +233,23 @@ object Options {
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (handle != null) __obj.updateDynamic("handle")(handle)
     if (ignore != null) __obj.updateDynamic("ignore")(ignore)
-    if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd)
-    if (onChoose != null) __obj.updateDynamic("onChoose")(onChoose)
-    if (onClone != null) __obj.updateDynamic("onClone")(onClone)
-    if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd)
-    if (onFilter != null) __obj.updateDynamic("onFilter")(onFilter)
-    if (onMove != null) __obj.updateDynamic("onMove")(onMove)
-    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
-    if (onSort != null) __obj.updateDynamic("onSort")(onSort)
-    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
-    if (onUnchoose != null) __obj.updateDynamic("onUnchoose")(onUnchoose)
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction1(onAdd))
+    if (onChoose != null) __obj.updateDynamic("onChoose")(js.Any.fromFunction1(onChoose))
+    if (onClone != null) __obj.updateDynamic("onClone")(js.Any.fromFunction1(onClone))
+    if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction1(onEnd))
+    if (onFilter != null) __obj.updateDynamic("onFilter")(js.Any.fromFunction1(onFilter))
+    if (onMove != null) __obj.updateDynamic("onMove")(js.Any.fromFunction1(onMove))
+    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
+    if (onSort != null) __obj.updateDynamic("onSort")(js.Any.fromFunction1(onSort))
+    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction1(onStart))
+    if (onUnchoose != null) __obj.updateDynamic("onUnchoose")(js.Any.fromFunction1(onUnchoose))
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
     if (!js.isUndefined(preventOnFilter)) __obj.updateDynamic("preventOnFilter")(preventOnFilter)
     if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
     if (scrollFn != null) __obj.updateDynamic("scrollFn")(scrollFn)
     if (scrollSensitivity != null) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.asInstanceOf[js.Any])
     if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
-    if (setData != null) __obj.updateDynamic("setData")(setData)
+    if (setData != null) __obj.updateDynamic("setData")(js.Any.fromFunction2(setData))
     if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort)
     if (store != null) __obj.updateDynamic("store")(store)
     __obj.asInstanceOf[Options]

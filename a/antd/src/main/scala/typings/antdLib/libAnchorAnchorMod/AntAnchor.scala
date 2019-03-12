@@ -9,7 +9,7 @@ trait AntAnchor extends js.Object {
   var activeLink: java.lang.String | scala.Null
   var onClick: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* link */ antdLib.Anon_Href, 
       scala.Unit
     ]
@@ -22,19 +22,15 @@ trait AntAnchor extends js.Object {
 object AntAnchor {
   @scala.inline
   def apply(
-    registerLink: js.Function1[java.lang.String, scala.Unit],
-    scrollTo: js.Function1[java.lang.String, scala.Unit],
-    unregisterLink: js.Function1[java.lang.String, scala.Unit],
+    registerLink: java.lang.String => scala.Unit,
+    scrollTo: java.lang.String => scala.Unit,
+    unregisterLink: java.lang.String => scala.Unit,
     activeLink: java.lang.String = null,
-    onClick: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* link */ antdLib.Anon_Href, 
-      scala.Unit
-    ] = null
+    onClick: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* link */ antdLib.Anon_Href) => scala.Unit = null
   ): AntAnchor = {
-    val __obj = js.Dynamic.literal(registerLink = registerLink, scrollTo = scrollTo, unregisterLink = unregisterLink)
+    val __obj = js.Dynamic.literal(registerLink = js.Any.fromFunction1(registerLink), scrollTo = js.Any.fromFunction1(scrollTo), unregisterLink = js.Any.fromFunction1(unregisterLink))
     if (activeLink != null) __obj.updateDynamic("activeLink")(activeLink)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     __obj.asInstanceOf[AntAnchor]
   }
 }

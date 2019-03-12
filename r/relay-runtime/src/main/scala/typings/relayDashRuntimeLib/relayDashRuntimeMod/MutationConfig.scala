@@ -39,12 +39,8 @@ object MutationConfig {
     mutation: GraphQLTaggedNode,
     variables: /* import warning: ImportType.apply Failed type conversion: T['variables'] */ js.Any,
     configs: js.Array[RelayMutationConfig] = null,
-    onCompleted: js.Function2[
-      /* import warning: ImportType.apply Failed type conversion: T['response'] */ /* response */ js.Any, 
-      /* errors */ js.UndefOr[js.Array[PayloadError] | scala.Null], 
-      scala.Unit
-    ] = null,
-    onError: js.Function1[/* error */ js.UndefOr[stdLib.Error], scala.Unit] = null,
+    onCompleted: (/* import warning: ImportType.apply Failed type conversion: T['response'] */ /* response */ js.Any, /* errors */ js.UndefOr[js.Array[PayloadError] | scala.Null]) => scala.Unit = null,
+    onError: /* error */ js.UndefOr[stdLib.Error] => scala.Unit = null,
     optimisticResponse: /* import warning: ImportType.apply Failed type conversion: T['response'] */ js.Any = null,
     optimisticUpdater: SelectorStoreUpdater[
       /* import warning: ImportType.apply Failed type conversion: T['response'] */ js.Any
@@ -56,8 +52,8 @@ object MutationConfig {
   ): MutationConfig[T] = {
     val __obj = js.Dynamic.literal(mutation = mutation.asInstanceOf[js.Any], variables = variables)
     if (configs != null) __obj.updateDynamic("configs")(configs)
-    if (onCompleted != null) __obj.updateDynamic("onCompleted")(onCompleted)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onCompleted != null) __obj.updateDynamic("onCompleted")(js.Any.fromFunction2(onCompleted))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse)
     if (optimisticUpdater != null) __obj.updateDynamic("optimisticUpdater")(optimisticUpdater)
     if (updater != null) __obj.updateDynamic("updater")(updater)

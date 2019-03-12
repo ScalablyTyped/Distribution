@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<react.HTMLDivElement>, 'classes' | never> ]: react.react.HTMLAttributes<react.HTMLDivElement>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLDivElement>, @material-ui/core.@material-ui/core/Avatar/Avatar.AvatarClassKey, never>) */ trait AvatarProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement>, @material-ui/core.@material-ui/core/Avatar/Avatar.AvatarClassKey, never>) */ trait AvatarProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[AvatarClassKey] {
   var alt: js.UndefOr[java.lang.String] = js.undefined
   var childrenClassName: js.UndefOr[java.lang.String] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[AvatarProps]] = js.undefined
-  var imgProps: js.UndefOr[reactLib.reactMod.ReactNs.HtmlHTMLAttributes[reactLib.HTMLImageElement]] = js.undefined
+  var imgProps: js.UndefOr[reactLib.reactMod.ReactNs.HtmlHTMLAttributes[stdLib.HTMLImageElement]] = js.undefined
   var sizes: js.UndefOr[java.lang.String] = js.undefined
   var src: js.UndefOr[java.lang.String] = js.undefined
   var srcSet: js.UndefOr[java.lang.String] = js.undefined
@@ -28,7 +28,7 @@ object AvatarProps {
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[AvatarClassKey]] = null,
     component: reactLib.reactMod.ReactNs.ReactType[AvatarProps] = null,
-    imgProps: reactLib.reactMod.ReactNs.HtmlHTMLAttributes[reactLib.HTMLImageElement] = null,
+    imgProps: reactLib.reactMod.ReactNs.HtmlHTMLAttributes[stdLib.HTMLImageElement] = null,
     innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
     sizes: java.lang.String = null,
     src: java.lang.String = null,

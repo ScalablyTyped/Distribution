@@ -74,15 +74,15 @@ object XScriptContext {
     Desktop: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XDesktop,
     Document: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel,
     InvocationContext: activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XScriptInvocationContext,
-    acquire: js.Function0[scala.Unit],
-    getComponentContext: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XComponentContext],
-    getDesktop: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XDesktop],
-    getDocument: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel],
-    getInvocationContext: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XScriptInvocationContext],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getComponentContext: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XComponentContext,
+    getDesktop: () => activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XDesktop,
+    getDocument: () => activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel,
+    getInvocationContext: () => activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XScriptInvocationContext,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XScriptContext = {
-    val __obj = js.Dynamic.literal(ComponentContext = ComponentContext, Desktop = Desktop, Document = Document, InvocationContext = InvocationContext, acquire = acquire, getComponentContext = getComponentContext, getDesktop = getDesktop, getDocument = getDocument, getInvocationContext = getInvocationContext, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ComponentContext = ComponentContext, Desktop = Desktop, Document = Document, InvocationContext = InvocationContext, acquire = js.Any.fromFunction0(acquire), getComponentContext = js.Any.fromFunction0(getComponentContext), getDesktop = js.Any.fromFunction0(getDesktop), getDocument = js.Any.fromFunction0(getDocument), getInvocationContext = js.Any.fromFunction0(getInvocationContext), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XScriptContext]
   }

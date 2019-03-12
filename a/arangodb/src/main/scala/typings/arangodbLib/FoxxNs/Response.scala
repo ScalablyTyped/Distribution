@@ -35,20 +35,20 @@ trait Response extends js.Object {
   def status(status: arangodbLib.ArangoDBNs.HttpStatus): this.type = js.native
   def status(status: scala.Double): this.type = js.native
   def `throw`(status: arangodbLib.ArangoDBNs.HttpStatus): scala.Nothing = js.native
-  def `throw`(status: arangodbLib.ArangoDBNs.HttpStatus, error: nodeLib.Error): scala.Nothing = js.native
+  def `throw`(status: arangodbLib.ArangoDBNs.HttpStatus, error: stdLib.Error): scala.Nothing = js.native
   def `throw`(status: arangodbLib.ArangoDBNs.HttpStatus, options: arangodbLib.Anon_Cause): scala.Nothing = js.native
   def `throw`(status: arangodbLib.ArangoDBNs.HttpStatus, reason: java.lang.String): scala.Nothing = js.native
-  def `throw`(status: arangodbLib.ArangoDBNs.HttpStatus, reason: java.lang.String, error: nodeLib.Error): scala.Nothing = js.native
+  def `throw`(status: arangodbLib.ArangoDBNs.HttpStatus, reason: java.lang.String, error: stdLib.Error): scala.Nothing = js.native
   def `throw`(
     status: arangodbLib.ArangoDBNs.HttpStatus,
     reason: java.lang.String,
     options: arangodbLib.Anon_Cause
   ): scala.Nothing = js.native
   def `throw`(status: scala.Double): scala.Nothing = js.native
-  def `throw`(status: scala.Double, error: nodeLib.Error): scala.Nothing = js.native
+  def `throw`(status: scala.Double, error: stdLib.Error): scala.Nothing = js.native
   def `throw`(status: scala.Double, options: arangodbLib.Anon_Cause): scala.Nothing = js.native
   def `throw`(status: scala.Double, reason: java.lang.String): scala.Nothing = js.native
-  def `throw`(status: scala.Double, reason: java.lang.String, error: nodeLib.Error): scala.Nothing = js.native
+  def `throw`(status: scala.Double, reason: java.lang.String, error: stdLib.Error): scala.Nothing = js.native
   def `throw`(status: scala.Double, reason: java.lang.String, options: arangodbLib.Anon_Cause): scala.Nothing = js.native
   def `type`(): java.lang.String = js.native
   def `type`(`type`: java.lang.String): java.lang.String = js.native

@@ -18,23 +18,23 @@ trait HeaderProps extends NavigationTransitionProps {
 object HeaderProps {
   @scala.inline
   def apply(
-    getScreenDetails: js.Function1[NavigationScene, NavigationScreenDetails[NavigationStackScreenOptions]],
+    getScreenDetails: NavigationScene => NavigationScreenDetails[NavigationStackScreenOptions],
     index: scala.Double,
     layout: NavigationLayout,
-    leftInterpolator: js.Function1[NavigationSceneRendererProps, js.Object],
+    leftInterpolator: NavigationSceneRendererProps => js.Object,
     mode: HeaderMode,
     navigation: NavigationScreenProp[NavigationState, NavigationParams],
     position: AnimatedValue,
     progress: AnimatedValue,
-    rightInterpolator: js.Function1[NavigationSceneRendererProps, js.Object],
+    rightInterpolator: NavigationSceneRendererProps => js.Object,
     router: NavigationRouter[NavigationState, NavigationStackScreenOptions],
     scene: NavigationScene,
     scenes: js.Array[NavigationScene],
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle],
-    titleInterpolator: js.Function1[NavigationSceneRendererProps, js.Object],
+    titleInterpolator: NavigationSceneRendererProps => js.Object,
     screenProps: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): HeaderProps = {
-    val __obj = js.Dynamic.literal(getScreenDetails = getScreenDetails, index = index, layout = layout, leftInterpolator = leftInterpolator, mode = mode, navigation = navigation, position = position, progress = progress, rightInterpolator = rightInterpolator, router = router, scene = scene, scenes = scenes, style = style.asInstanceOf[js.Any], titleInterpolator = titleInterpolator)
+    val __obj = js.Dynamic.literal(getScreenDetails = js.Any.fromFunction1(getScreenDetails), index = index, layout = layout, leftInterpolator = js.Any.fromFunction1(leftInterpolator), mode = mode, navigation = navigation, position = position, progress = progress, rightInterpolator = js.Any.fromFunction1(rightInterpolator), router = router, scene = scene, scenes = scenes, style = style.asInstanceOf[js.Any], titleInterpolator = js.Any.fromFunction1(titleInterpolator))
     if (screenProps != null) __obj.updateDynamic("screenProps")(screenProps)
     __obj.asInstanceOf[HeaderProps]
   }

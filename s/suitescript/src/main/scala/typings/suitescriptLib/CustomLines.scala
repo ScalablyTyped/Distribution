@@ -13,12 +13,8 @@ trait CustomLines extends js.Object {
 
 object CustomLines {
   @scala.inline
-  def apply(
-    addNewLine: js.Function0[CustomLine],
-    getCount: js.Function0[scala.Double],
-    getLine: js.Function1[scala.Double, CustomLine]
-  ): CustomLines = {
-    val __obj = js.Dynamic.literal(addNewLine = addNewLine, getCount = getCount, getLine = getLine)
+  def apply(addNewLine: () => CustomLine, getCount: () => scala.Double, getLine: scala.Double => CustomLine): CustomLines = {
+    val __obj = js.Dynamic.literal(addNewLine = js.Any.fromFunction0(addNewLine), getCount = js.Any.fromFunction0(getCount), getLine = js.Any.fromFunction1(getLine))
   
     __obj.asInstanceOf[CustomLines]
   }

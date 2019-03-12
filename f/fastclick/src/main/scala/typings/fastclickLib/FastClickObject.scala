@@ -27,15 +27,15 @@ trait FastClickObject extends js.Object {
 object FastClickObject {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
-    determineEventType: js.Function1[js.Any, java.lang.String],
-    findControl: js.Function1[js.Any, js.Any],
-    focus: js.Function1[js.Any, scala.Unit],
-    getTargetElementFromEventTarget: js.Function1[stdLib.EventTarget, js.Any],
+    destroy: () => scala.Unit,
+    determineEventType: js.Any => java.lang.String,
+    findControl: js.Any => js.Any,
+    focus: js.Any => scala.Unit,
+    getTargetElementFromEventTarget: stdLib.EventTarget => js.Any,
     lastTouchIdentifier: scala.Double,
     layer: stdLib.Element,
-    needsClick: js.Function1[js.Any, scala.Boolean],
-    needsFocus: js.Function1[js.Any, scala.Boolean],
+    needsClick: js.Any => scala.Boolean,
+    needsFocus: js.Any => scala.Boolean,
     tapDelay: scala.Double,
     targetElement: js.Any,
     touchBoundary: scala.Double,
@@ -44,7 +44,7 @@ object FastClickObject {
     trackingClick: scala.Boolean,
     trackingClickStart: scala.Double
   ): FastClickObject = {
-    val __obj = js.Dynamic.literal(destroy = destroy, determineEventType = determineEventType, findControl = findControl, focus = focus, getTargetElementFromEventTarget = getTargetElementFromEventTarget, lastTouchIdentifier = lastTouchIdentifier, layer = layer, needsClick = needsClick, needsFocus = needsFocus, tapDelay = tapDelay, targetElement = targetElement, touchBoundary = touchBoundary, touchStartX = touchStartX, touchStartY = touchStartY, trackingClick = trackingClick, trackingClickStart = trackingClickStart)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), determineEventType = js.Any.fromFunction1(determineEventType), findControl = js.Any.fromFunction1(findControl), focus = js.Any.fromFunction1(focus), getTargetElementFromEventTarget = js.Any.fromFunction1(getTargetElementFromEventTarget), lastTouchIdentifier = lastTouchIdentifier, layer = layer, needsClick = js.Any.fromFunction1(needsClick), needsFocus = js.Any.fromFunction1(needsFocus), tapDelay = tapDelay, targetElement = targetElement, touchBoundary = touchBoundary, touchStartX = touchStartX, touchStartY = touchStartY, trackingClick = trackingClick, trackingClickStart = trackingClickStart)
   
     __obj.asInstanceOf[FastClickObject]
   }

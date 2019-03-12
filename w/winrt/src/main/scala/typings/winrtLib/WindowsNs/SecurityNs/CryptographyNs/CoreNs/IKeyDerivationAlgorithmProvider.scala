@@ -14,9 +14,9 @@ object IKeyDerivationAlgorithmProvider {
   @scala.inline
   def apply(
     algorithmName: java.lang.String,
-    createKey: js.Function1[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, CryptographicKey]
+    createKey: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer => CryptographicKey
   ): IKeyDerivationAlgorithmProvider = {
-    val __obj = js.Dynamic.literal(algorithmName = algorithmName, createKey = createKey)
+    val __obj = js.Dynamic.literal(algorithmName = algorithmName, createKey = js.Any.fromFunction1(createKey))
   
     __obj.asInstanceOf[IKeyDerivationAlgorithmProvider]
   }

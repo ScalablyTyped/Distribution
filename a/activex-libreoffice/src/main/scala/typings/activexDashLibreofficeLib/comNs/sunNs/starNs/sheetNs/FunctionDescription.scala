@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   */
 trait FunctionDescription extends js.Object {
   /** returns a sequence of localized descriptions of the function's arguments (in the order specified by the function). */
-  var Arguments: activexDashInteropLib.SafeArray[FunctionArgument]
+  var Arguments: stdLib.SafeArray[FunctionArgument]
   /**
     * returns the function's category.
     * @see com.sun.star.sheet.FunctionCategory
@@ -31,7 +31,7 @@ trait FunctionDescription extends js.Object {
 object FunctionDescription {
   @scala.inline
   def apply(
-    Arguments: activexDashInteropLib.SafeArray[FunctionArgument],
+    Arguments: stdLib.SafeArray[FunctionArgument],
     Category: scala.Double,
     Description: java.lang.String,
     Id: scala.Double,

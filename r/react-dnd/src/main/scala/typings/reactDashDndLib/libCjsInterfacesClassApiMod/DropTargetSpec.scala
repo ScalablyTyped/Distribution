@@ -55,28 +55,14 @@ trait DropTargetSpec[Props] extends js.Object {
 object DropTargetSpec {
   @scala.inline
   def apply[Props](
-    canDrop: js.Function2[
-      /* props */ Props, 
-      /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DropTargetMonitor, 
-      scala.Boolean
-    ] = null,
-    drop: js.Function3[
-      /* props */ Props, 
-      /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DropTargetMonitor, 
-      /* component */ js.Any, 
-      _
-    ] = null,
-    hover: js.Function3[
-      /* props */ Props, 
-      /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DropTargetMonitor, 
-      /* component */ js.Any, 
-      scala.Unit
-    ] = null
+    canDrop: (/* props */ Props, /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DropTargetMonitor) => scala.Boolean = null,
+    drop: (/* props */ Props, /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DropTargetMonitor, /* component */ js.Any) => _ = null,
+    hover: (/* props */ Props, /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DropTargetMonitor, /* component */ js.Any) => scala.Unit = null
   ): DropTargetSpec[Props] = {
     val __obj = js.Dynamic.literal()
-    if (canDrop != null) __obj.updateDynamic("canDrop")(canDrop)
-    if (drop != null) __obj.updateDynamic("drop")(drop)
-    if (hover != null) __obj.updateDynamic("hover")(hover)
+    if (canDrop != null) __obj.updateDynamic("canDrop")(js.Any.fromFunction2(canDrop))
+    if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction3(drop))
+    if (hover != null) __obj.updateDynamic("hover")(js.Any.fromFunction3(hover))
     __obj.asInstanceOf[DropTargetSpec[Props]]
   }
 }

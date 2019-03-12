@@ -49,16 +49,16 @@ object TextStreamReader {
   def apply(
     AtEndOfLine: scala.Boolean,
     AtEndOfStream: scala.Boolean,
-    Close: js.Function0[scala.Unit],
+    Close: () => scala.Unit,
     Column: scala.Double,
     Line: scala.Double,
-    Read: js.Function1[scala.Double, java.lang.String],
-    ReadAll: js.Function0[java.lang.String],
-    ReadLine: js.Function0[java.lang.String],
-    Skip: js.Function1[scala.Double, scala.Unit],
-    SkipLine: js.Function0[scala.Unit]
+    Read: scala.Double => java.lang.String,
+    ReadAll: () => java.lang.String,
+    ReadLine: () => java.lang.String,
+    Skip: scala.Double => scala.Unit,
+    SkipLine: () => scala.Unit
   ): TextStreamReader = {
-    val __obj = js.Dynamic.literal(AtEndOfLine = AtEndOfLine, AtEndOfStream = AtEndOfStream, Close = Close, Column = Column, Line = Line, Read = Read, ReadAll = ReadAll, ReadLine = ReadLine, Skip = Skip, SkipLine = SkipLine)
+    val __obj = js.Dynamic.literal(AtEndOfLine = AtEndOfLine, AtEndOfStream = AtEndOfStream, Close = js.Any.fromFunction0(Close), Column = Column, Line = Line, Read = js.Any.fromFunction1(Read), ReadAll = js.Any.fromFunction0(ReadAll), ReadLine = js.Any.fromFunction0(ReadLine), Skip = js.Any.fromFunction1(Skip), SkipLine = js.Any.fromFunction0(SkipLine))
   
     __obj.asInstanceOf[TextStreamReader]
   }

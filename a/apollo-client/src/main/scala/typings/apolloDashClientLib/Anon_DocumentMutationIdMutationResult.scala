@@ -28,14 +28,10 @@ object Anon_DocumentMutationIdMutationResult {
     result: graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault],
     updateQueries: org.scalablytyped.runtime.StringDictionary[apolloDashClientLib.dataStoreMod.QueryWithUpdater],
     variables: js.Any,
-    update: js.Function2[
-      /* proxy */ apolloDashCacheLib.libTypesDataProxyMod.DataProxy, 
-      /* mutationResult */ js.Object, 
-      scala.Unit
-    ] = null
+    update: (/* proxy */ apolloDashCacheLib.libTypesDataProxyMod.DataProxy, /* mutationResult */ js.Object) => scala.Unit = null
   ): Anon_DocumentMutationIdMutationResult = {
     val __obj = js.Dynamic.literal(document = document, mutationId = mutationId, result = result, updateQueries = updateQueries, variables = variables)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction2(update))
     __obj.asInstanceOf[Anon_DocumentMutationIdMutationResult]
   }
 }

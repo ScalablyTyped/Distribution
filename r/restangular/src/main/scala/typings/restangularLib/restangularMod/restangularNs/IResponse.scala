@@ -17,10 +17,10 @@ object IResponse {
   def apply(
     config: restangularLib.Anon_Method,
     data: js.Any,
-    headers: js.Function1[java.lang.String, java.lang.String],
+    headers: java.lang.String => java.lang.String,
     status: scala.Double
   ): IResponse = {
-    val __obj = js.Dynamic.literal(config = config, data = data, headers = headers, status = status)
+    val __obj = js.Dynamic.literal(config = config, data = data, headers = js.Any.fromFunction1(headers), status = status)
   
     __obj.asInstanceOf[IResponse]
   }

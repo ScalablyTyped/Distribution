@@ -124,23 +124,14 @@ trait IDataTypeResource extends js.Object {
 object IDataTypeResource {
   @scala.inline
   def apply(
-    deleteById: js.Function1[scala.Double, angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
-    getAll: js.Function0[js.Any],
-    getById: js.Function1[scala.Double, angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
-    getPreValues: js.Function2[
-      java.lang.String, 
-      scala.Double, 
-      angularLib.angularMod.angularNs.IPromise[IResourcePromise]
-    ],
-    getScaffold: js.Function0[angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
-    save: js.Function3[
-      js.Object, 
-      js.Array[_], 
-      scala.Boolean, 
-      angularLib.angularMod.angularNs.IPromise[IResourcePromise]
-    ]
+    deleteById: scala.Double => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
+    getAll: () => js.Any,
+    getById: scala.Double => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
+    getPreValues: (java.lang.String, scala.Double) => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
+    getScaffold: () => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
+    save: (js.Object, js.Array[_], scala.Boolean) => angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   ): IDataTypeResource = {
-    val __obj = js.Dynamic.literal(deleteById = deleteById, getAll = getAll, getById = getById, getPreValues = getPreValues, getScaffold = getScaffold, save = save)
+    val __obj = js.Dynamic.literal(deleteById = js.Any.fromFunction1(deleteById), getAll = js.Any.fromFunction0(getAll), getById = js.Any.fromFunction1(getById), getPreValues = js.Any.fromFunction2(getPreValues), getScaffold = js.Any.fromFunction0(getScaffold), save = js.Any.fromFunction3(save))
   
     __obj.asInstanceOf[IDataTypeResource]
   }

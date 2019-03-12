@@ -24,21 +24,21 @@ trait FrameRateMonitor extends js.Object {
 object FrameRateMonitor {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
-    isDestroyed: js.Function0[scala.Boolean],
+    destroy: () => scala.Unit,
+    isDestroyed: () => scala.Boolean,
     lastFramesPerSecond: scala.Double,
     lowFrameRate: Event,
     minimumFrameRateAfterWarmup: scala.Double,
     minimumFrameRateDuringWarmup: scala.Double,
     nominalFrameRate: Event,
-    pause: js.Function0[scala.Unit],
+    pause: () => scala.Unit,
     quietPeriod: scala.Double,
     samplingWindow: scala.Double,
     scene: Scene,
-    unpause: js.Function0[scala.Unit],
+    unpause: () => scala.Unit,
     warmupPeriod: scala.Double
   ): FrameRateMonitor = {
-    val __obj = js.Dynamic.literal(destroy = destroy, isDestroyed = isDestroyed, lastFramesPerSecond = lastFramesPerSecond, lowFrameRate = lowFrameRate, minimumFrameRateAfterWarmup = minimumFrameRateAfterWarmup, minimumFrameRateDuringWarmup = minimumFrameRateDuringWarmup, nominalFrameRate = nominalFrameRate, pause = pause, quietPeriod = quietPeriod, samplingWindow = samplingWindow, scene = scene, unpause = unpause, warmupPeriod = warmupPeriod)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), isDestroyed = js.Any.fromFunction0(isDestroyed), lastFramesPerSecond = lastFramesPerSecond, lowFrameRate = lowFrameRate, minimumFrameRateAfterWarmup = minimumFrameRateAfterWarmup, minimumFrameRateDuringWarmup = minimumFrameRateDuringWarmup, nominalFrameRate = nominalFrameRate, pause = js.Any.fromFunction0(pause), quietPeriod = quietPeriod, samplingWindow = samplingWindow, scene = scene, unpause = js.Any.fromFunction0(unpause), warmupPeriod = warmupPeriod)
   
     __obj.asInstanceOf[FrameRateMonitor]
   }

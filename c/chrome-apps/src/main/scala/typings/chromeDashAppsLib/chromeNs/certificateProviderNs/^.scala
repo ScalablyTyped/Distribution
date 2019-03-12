@@ -25,7 +25,7 @@ object ^ extends js.Object {
     */
   val onCertificatesRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function2[
-      /* certificates */ js.Array[chromeDashAppsLib.chromeNs.certificateProviderNs.CertificateInfo], 
+      /* certificates */ js.Array[CertificateInfo], 
       /* callback */ js.Function1[/* rejectedCertificates */ js.Array[stdLib.ArrayBuffer], scala.Unit], 
       js.Any
     ]
@@ -42,7 +42,7 @@ object ^ extends js.Object {
     */
   val onSignDigestRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function2[
-      /* signRequest */ chromeDashAppsLib.chromeNs.certificateProviderNs.SignRequest, 
+      /* signRequest */ SignRequest, 
       /* signCallback */ js.Function1[/* signature */ js.UndefOr[stdLib.ArrayBuffer], scala.Unit], 
       js.Any
     ]
@@ -58,11 +58,8 @@ object ^ extends js.Object {
     * canceled by the user or was not allowed to be shown).
     */
   def requestPin(
-    details: chromeDashAppsLib.chromeNs.certificateProviderNs.RequestPinDetails,
-    callback: js.Function1[
-      /* details */ js.UndefOr[chromeDashAppsLib.chromeNs.certificateProviderNs.PinResponseDetails], 
-      scala.Unit
-    ]
+    details: RequestPinDetails,
+    callback: js.Function1[/* details */ js.UndefOr[PinResponseDetails], scala.Unit]
   ): scala.Unit = js.native
   /**
     * @description Stops the pin request started by the *requestPin* function.
@@ -70,9 +67,6 @@ object ^ extends js.Object {
     * @param callback To be used by Chrome to send to the app the status from
     * their request to close PIN dialog for user.
     */
-  def stopPinRequest(
-    details: chromeDashAppsLib.chromeNs.certificateProviderNs.StopRequestPinDetails,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
+  def stopPinRequest(details: StopRequestPinDetails, callback: js.Function0[scala.Unit]): scala.Unit = js.native
 }
 

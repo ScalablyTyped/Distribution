@@ -19,8 +19,8 @@ trait ViewSelectorItem extends js.Object {
 
 object ViewSelectorItem {
   @scala.inline
-  def apply(getEntityReference: js.Function0[xrmLib.XrmNs.LookupValue]): ViewSelectorItem = {
-    val __obj = js.Dynamic.literal(getEntityReference = getEntityReference)
+  def apply(getEntityReference: () => xrmLib.XrmNs.LookupValue): ViewSelectorItem = {
+    val __obj = js.Dynamic.literal(getEntityReference = js.Any.fromFunction0(getEntityReference))
   
     __obj.asInstanceOf[ViewSelectorItem]
   }

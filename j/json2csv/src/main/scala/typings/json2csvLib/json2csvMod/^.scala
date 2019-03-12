@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def parse[T](data: js.Array[T]): java.lang.String = js.native
-  def parse[T](data: js.Array[T], opts: json2csvLib.json2csvbaseMod.json2csvNs.Options[T]): java.lang.String = js.native
+  def parse[T](data: js.Array[T], opts: json2csvLib.jSON2CSVBaseMod.json2csvNs.Options[T]): java.lang.String = js.native
   def parse[T](data: stdLib.Readonly[T]): java.lang.String = js.native
-  def parse[T](data: stdLib.Readonly[T], opts: json2csvLib.json2csvbaseMod.json2csvNs.Options[T]): java.lang.String = js.native
+  def parse[T](data: stdLib.Readonly[T], opts: json2csvLib.jSON2CSVBaseMod.json2csvNs.Options[T]): java.lang.String = js.native
 }
 

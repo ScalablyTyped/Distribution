@@ -22,7 +22,7 @@ object ^ extends js.Object {
     *     // etc.
     *   }
     */
-  def apply(config: wiredepLib.wiredepMod.WiredepParams): wiredepLib.wiredepMod.PathFiles = js.native
-  def stream(config: wiredepLib.wiredepMod.WiredepParams): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def apply(config: WiredepParams): PathFiles = js.native
+  def stream(config: WiredepParams): nodeLib.NodeJSNs.ReadWriteStream = js.native
 }
 

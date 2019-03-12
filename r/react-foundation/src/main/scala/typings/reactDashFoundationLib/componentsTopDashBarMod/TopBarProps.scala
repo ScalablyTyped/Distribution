@@ -291,7 +291,7 @@ object TopBarProps {
   @scala.inline
   def apply(
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null
   ): TopBarProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)

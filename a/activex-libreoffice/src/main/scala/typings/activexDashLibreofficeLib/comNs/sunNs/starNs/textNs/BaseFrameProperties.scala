@@ -72,7 +72,7 @@ trait BaseFrameProperties
     * Grab bag of frame properties, used as a string-any map for interim interop purposes.
     * @since LibreOffice 4.2  This property is intentionally not handled by the ODF filter. Any member that should be handled there should be first moved out
     */
-  var FrameInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  var FrameInteropGrabBag: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * contains the height of the object (1/100 mm).
     *
@@ -260,7 +260,7 @@ object BaseFrameProperties {
     FillGradient: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Gradient,
     FillGradientName: java.lang.String,
     FillStyle: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.FillStyle,
-    FrameInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    FrameInteropGrabBag: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     Height: scala.Double,
     HoriOrient: scala.Double,
     HoriOrientPosition: scala.Double,

@@ -13,7 +13,7 @@ class PictureFormat protected () extends js.Object {
   var ColorType: MsoPictureColorType = js.native
   var Contrast: scala.Double = js.native
   val Creator: scala.Double = js.native
-  val Crop: Crop = js.native
+  val Crop: activexDashOfficeLib.OfficeNs.Crop = js.native
   var CropBottom: scala.Double = js.native
   var CropLeft: scala.Double = js.native
   var CropRight: scala.Double = js.native

@@ -9,12 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def parse(json: java.lang.String): js.Any = js.native
-  def parse(json: java.lang.String, reviver: commentDashJsonLib.commentDashJsonMod.Reviver): js.Any = js.native
-  def parse(
-    json: java.lang.String,
-    reviver: commentDashJsonLib.commentDashJsonMod.Reviver,
-    removes_comments: scala.Boolean
-  ): js.Any = js.native
+  def parse(json: java.lang.String, reviver: Reviver): js.Any = js.native
+  def parse(json: java.lang.String, reviver: Reviver, removes_comments: scala.Boolean): js.Any = js.native
   def stringify(value: js.Any): java.lang.String = js.native
   def stringify(value: js.Any, replacer: js.Array[scala.Double | java.lang.String]): java.lang.String = js.native
   def stringify(value: js.Any, replacer: js.Array[scala.Double | java.lang.String], space: java.lang.String): java.lang.String = js.native

@@ -14,11 +14,11 @@ trait AnimationTimeline extends js.Object {
 object AnimationTimeline {
   @scala.inline
   def apply(
-    getAnimations: js.Function0[js.Array[Animation]],
-    play: js.Function1[stdLib.KeyframeEffect, Animation],
+    getAnimations: () => js.Array[Animation],
+    play: stdLib.KeyframeEffect => Animation,
     currentTime: scala.Int | scala.Double = null
   ): AnimationTimeline = {
-    val __obj = js.Dynamic.literal(getAnimations = getAnimations, play = play)
+    val __obj = js.Dynamic.literal(getAnimations = js.Any.fromFunction0(getAnimations), play = js.Any.fromFunction1(play))
     if (currentTime != null) __obj.updateDynamic("currentTime")(currentTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationTimeline]
   }

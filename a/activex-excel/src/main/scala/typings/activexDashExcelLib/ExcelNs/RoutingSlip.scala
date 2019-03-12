@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.RoutingSlip")
 @js.native
 class RoutingSlip protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Creator: XlCreator = js.native
   var Delivery: XlRoutingSlipDelivery = js.native
   var `Excel.RoutingSlip_typekey`: RoutingSlip = js.native

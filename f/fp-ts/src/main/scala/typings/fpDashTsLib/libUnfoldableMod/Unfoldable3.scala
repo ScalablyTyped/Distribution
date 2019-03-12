@@ -14,13 +14,9 @@ object Unfoldable3 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS3 */](
     URI: F,
-    unfoldr: js.Function2[
-      js.Any, 
-      js.Function1[js.Any, fpDashTsLib.libOptionMod.Option[js.Tuple2[js.Any, js.Any]]], 
-      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
-    ]
+    unfoldr: (js.Any, js.Function1[js.Any, fpDashTsLib.libOptionMod.Option[js.Tuple2[js.Any, js.Any]]]) => fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
   ): Unfoldable3[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], unfoldr = unfoldr)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], unfoldr = js.Any.fromFunction2(unfoldr))
   
     __obj.asInstanceOf[Unfoldable3[F]]
   }

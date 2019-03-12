@@ -23,32 +23,14 @@ trait CalendarsResource extends js.Object {
 object CalendarsResource {
   @scala.inline
   def apply(
-    clear: js.Function1[
-      gapiDotClientDotCalendarLib.Anon_AltCalendarId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotCalendarLib.Anon_AltCalendarId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotCalendarLib.Anon_AltCalendarId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Calendar]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotCalendarLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Calendar]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotCalendarLib.Anon_AltCalendarId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Calendar]
-    ],
-    update: js.Function1[
-      gapiDotClientDotCalendarLib.Anon_AltCalendarId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Calendar]
-    ]
+    clear: gapiDotClientDotCalendarLib.Anon_AltCalendarId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    delete: gapiDotClientDotCalendarLib.Anon_AltCalendarId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotCalendarLib.Anon_AltCalendarId => gapiDotClientLib.gapiNs.clientNs.Request[Calendar],
+    insert: gapiDotClientDotCalendarLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Calendar],
+    patch: gapiDotClientDotCalendarLib.Anon_AltCalendarId => gapiDotClientLib.gapiNs.clientNs.Request[Calendar],
+    update: gapiDotClientDotCalendarLib.Anon_AltCalendarId => gapiDotClientLib.gapiNs.clientNs.Request[Calendar]
   ): CalendarsResource = {
-    val __obj = js.Dynamic.literal(clear = clear, delete = delete, get = get, insert = insert, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[CalendarsResource]
   }

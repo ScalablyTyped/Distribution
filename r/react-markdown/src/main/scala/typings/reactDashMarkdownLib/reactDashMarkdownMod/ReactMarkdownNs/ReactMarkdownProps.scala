@@ -52,12 +52,7 @@ trait ReactMarkdownProps extends js.Object {
 object ReactMarkdownProps {
   @scala.inline
   def apply(
-    allowNode: js.Function3[
-      /* node */ MarkdownAbstractSyntaxTree, 
-      /* index */ scala.Double, 
-      /* parent */ NodeType, 
-      scala.Boolean
-    ] = null,
+    allowNode: (/* node */ MarkdownAbstractSyntaxTree, /* index */ scala.Double, /* parent */ NodeType) => scala.Boolean = null,
     allowedTypes: js.Array[NodeType] = null,
     astPlugins: js.Array[MdastPlugin] = null,
     className: java.lang.String = null,
@@ -71,23 +66,12 @@ object ReactMarkdownProps {
     skipHtml: js.UndefOr[scala.Boolean] = js.undefined,
     source: java.lang.String = null,
     sourcePos: js.UndefOr[scala.Boolean] = js.undefined,
-    transformImageUri: js.Function4[
-      /* uri */ java.lang.String, 
-      /* children */ js.UndefOr[reactLib.reactMod.ReactNs.ReactNode], 
-      /* title */ js.UndefOr[java.lang.String], 
-      /* alt */ js.UndefOr[java.lang.String], 
-      java.lang.String
-    ] = null,
-    transformLinkUri: js.Function3[
-      /* uri */ java.lang.String, 
-      /* children */ js.UndefOr[reactLib.reactMod.ReactNs.ReactNode], 
-      /* title */ js.UndefOr[java.lang.String], 
-      java.lang.String
-    ] = null,
+    transformImageUri: (/* uri */ java.lang.String, /* children */ js.UndefOr[reactLib.reactMod.ReactNs.ReactNode], /* title */ js.UndefOr[java.lang.String], /* alt */ js.UndefOr[java.lang.String]) => java.lang.String = null,
+    transformLinkUri: (/* uri */ java.lang.String, /* children */ js.UndefOr[reactLib.reactMod.ReactNs.ReactNode], /* title */ js.UndefOr[java.lang.String]) => java.lang.String = null,
     unwrapDisallowed: js.UndefOr[scala.Boolean] = js.undefined
   ): ReactMarkdownProps = {
     val __obj = js.Dynamic.literal()
-    if (allowNode != null) __obj.updateDynamic("allowNode")(allowNode)
+    if (allowNode != null) __obj.updateDynamic("allowNode")(js.Any.fromFunction3(allowNode))
     if (allowedTypes != null) __obj.updateDynamic("allowedTypes")(allowedTypes)
     if (astPlugins != null) __obj.updateDynamic("astPlugins")(astPlugins)
     if (className != null) __obj.updateDynamic("className")(className)
@@ -101,8 +85,8 @@ object ReactMarkdownProps {
     if (!js.isUndefined(skipHtml)) __obj.updateDynamic("skipHtml")(skipHtml)
     if (source != null) __obj.updateDynamic("source")(source)
     if (!js.isUndefined(sourcePos)) __obj.updateDynamic("sourcePos")(sourcePos)
-    if (transformImageUri != null) __obj.updateDynamic("transformImageUri")(transformImageUri)
-    if (transformLinkUri != null) __obj.updateDynamic("transformLinkUri")(transformLinkUri)
+    if (transformImageUri != null) __obj.updateDynamic("transformImageUri")(js.Any.fromFunction4(transformImageUri))
+    if (transformLinkUri != null) __obj.updateDynamic("transformLinkUri")(js.Any.fromFunction3(transformLinkUri))
     if (!js.isUndefined(unwrapDisallowed)) __obj.updateDynamic("unwrapDisallowed")(unwrapDisallowed)
     __obj.asInstanceOf[ReactMarkdownProps]
   }

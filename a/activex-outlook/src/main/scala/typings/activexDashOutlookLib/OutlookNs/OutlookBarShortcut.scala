@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.OutlookBarShortcut")
 @js.native
 class OutlookBarShortcut protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   var Name: java.lang.String = js.native
   var `Outlook.OutlookBarShortcut_typekey`: OutlookBarShortcut = js.native

@@ -28,12 +28,12 @@ object XComponentSupplier {
   @scala.inline
   def apply(
     Component: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseable,
-    acquire: js.Function0[scala.Unit],
-    getComponent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseable],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getComponent: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseable,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XComponentSupplier = {
-    val __obj = js.Dynamic.literal(Component = Component, acquire = acquire, getComponent = getComponent, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Component = Component, acquire = js.Any.fromFunction0(acquire), getComponent = js.Any.fromFunction0(getComponent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XComponentSupplier]
   }

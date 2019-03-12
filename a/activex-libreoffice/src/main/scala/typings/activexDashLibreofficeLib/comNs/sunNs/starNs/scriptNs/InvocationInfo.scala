@@ -21,9 +21,9 @@ trait InvocationInfo extends js.Object {
   /** Name of the method or property. */
   var aName: java.lang.String
   /** Mode of method parameters (IN, OUT, INOUT), for properties this sequence is empty. */
-  var aParamModes: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.reflectionNs.ParamMode]
+  var aParamModes: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.reflectionNs.ParamMode]
   /** Types method parameters, for properties this sequence is empty */
-  var aParamTypes: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`]
+  var aParamTypes: stdLib.SafeArray[activexDashLibreofficeLib.`type`]
   /** Type of the member, for methods the return type */
   var aType: activexDashLibreofficeLib.`type`
   /** Kind of the member (method or property). */
@@ -35,8 +35,8 @@ object InvocationInfo {
   def apply(
     PropertyAttribute: scala.Double,
     aName: java.lang.String,
-    aParamModes: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.reflectionNs.ParamMode],
-    aParamTypes: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`],
+    aParamModes: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.reflectionNs.ParamMode],
+    aParamTypes: stdLib.SafeArray[activexDashLibreofficeLib.`type`],
     aType: activexDashLibreofficeLib.`type`,
     eMemberType: MemberType
   ): InvocationInfo = {

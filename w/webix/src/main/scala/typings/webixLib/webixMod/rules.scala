@@ -15,12 +15,12 @@ trait rules extends js.Object {
 object rules {
   @scala.inline
   def apply(
-    isChecked: js.Function0[scala.Boolean],
-    isEmail: js.Function0[scala.Boolean],
-    isNotEmpty: js.Function0[scala.Boolean],
-    isNumber: js.Function0[scala.Boolean]
+    isChecked: () => scala.Boolean,
+    isEmail: () => scala.Boolean,
+    isNotEmpty: () => scala.Boolean,
+    isNumber: () => scala.Boolean
   ): rules = {
-    val __obj = js.Dynamic.literal(isChecked = isChecked, isEmail = isEmail, isNotEmpty = isNotEmpty, isNumber = isNumber)
+    val __obj = js.Dynamic.literal(isChecked = js.Any.fromFunction0(isChecked), isEmail = js.Any.fromFunction0(isEmail), isNotEmpty = js.Any.fromFunction0(isNotEmpty), isNumber = js.Any.fromFunction0(isNumber))
   
     __obj.asInstanceOf[rules]
   }

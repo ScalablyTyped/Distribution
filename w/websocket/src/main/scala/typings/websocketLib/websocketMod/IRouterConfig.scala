@@ -9,7 +9,7 @@ trait IRouterConfig extends js.Object {
   /*
     * The WebSocketServer instance to attach to.
     */
-  var server: server
+  var server: websocketLib.websocketMod.server
 }
 
 object IRouterConfig {

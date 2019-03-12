@@ -1,0 +1,37 @@
+package typings
+package reactDashNativeDashScrollableDashTabDashViewLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashNativeDashScrollableDashTabDashViewLibComponents {
+  @scala.inline
+  def DefaultTabBar: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.TabBarProps[
+      reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.DefaultTabBarProps
+    ]
+  ] = js.constructorOf[reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.DefaultTabBar].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.TabBarProps[
+    reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.DefaultTabBarProps
+  ]]]
+  @scala.inline
+  def ReactDashNativeDashScrollableDashTabDashView: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.ScrollableTabViewProperties
+  ] = js.constructorOf[reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.ScrollableTabViewProperties]]
+  @scala.inline
+  def ScrollableTabBar: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.TabBarProps[
+      reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.ScrollableTabBarProps
+    ]
+  ] = js.constructorOf[reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.ScrollableTabBar].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.TabBarProps[
+    reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.ScrollableTabBarProps
+  ]]]
+  @scala.inline
+  def ScrollableTabViewProperties: reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.ScrollableTabViewProperties.type = reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.ScrollableTabViewProperties
+  type ScrollableTabViewProperties = reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.ScrollableTabViewProperties
+  type TabBarProps[T] = reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.TabBarProps[T]
+}
+

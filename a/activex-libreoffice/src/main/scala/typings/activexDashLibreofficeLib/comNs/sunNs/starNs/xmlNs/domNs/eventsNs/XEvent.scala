@@ -36,21 +36,21 @@ object XEvent {
     Target: XEventTarget,
     TimeStamp: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
     Type: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getBubbles: js.Function0[scala.Boolean],
-    getCancelable: js.Function0[scala.Boolean],
-    getCurrentTarget: js.Function0[XEventTarget],
-    getEventPhase: js.Function0[PhaseType],
-    getTarget: js.Function0[XEventTarget],
-    getTimeStamp: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time],
-    getType: js.Function0[java.lang.String],
-    initEvent: js.Function3[java.lang.String, scala.Boolean, scala.Boolean, scala.Unit],
-    preventDefault: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    stopPropagation: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getBubbles: () => scala.Boolean,
+    getCancelable: () => scala.Boolean,
+    getCurrentTarget: () => XEventTarget,
+    getEventPhase: () => PhaseType,
+    getTarget: () => XEventTarget,
+    getTimeStamp: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
+    getType: () => java.lang.String,
+    initEvent: (java.lang.String, scala.Boolean, scala.Boolean) => scala.Unit,
+    preventDefault: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    stopPropagation: () => scala.Unit
   ): XEvent = {
-    val __obj = js.Dynamic.literal(Bubbles = Bubbles, Cancelable = Cancelable, CurrentTarget = CurrentTarget, EventPhase = EventPhase, Target = Target, TimeStamp = TimeStamp, Type = Type, acquire = acquire, getBubbles = getBubbles, getCancelable = getCancelable, getCurrentTarget = getCurrentTarget, getEventPhase = getEventPhase, getTarget = getTarget, getTimeStamp = getTimeStamp, getType = getType, initEvent = initEvent, preventDefault = preventDefault, queryInterface = queryInterface, release = release, stopPropagation = stopPropagation)
+    val __obj = js.Dynamic.literal(Bubbles = Bubbles, Cancelable = Cancelable, CurrentTarget = CurrentTarget, EventPhase = EventPhase, Target = Target, TimeStamp = TimeStamp, Type = Type, acquire = js.Any.fromFunction0(acquire), getBubbles = js.Any.fromFunction0(getBubbles), getCancelable = js.Any.fromFunction0(getCancelable), getCurrentTarget = js.Any.fromFunction0(getCurrentTarget), getEventPhase = js.Any.fromFunction0(getEventPhase), getTarget = js.Any.fromFunction0(getTarget), getTimeStamp = js.Any.fromFunction0(getTimeStamp), getType = js.Any.fromFunction0(getType), initEvent = js.Any.fromFunction3(initEvent), preventDefault = js.Any.fromFunction0(preventDefault), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), stopPropagation = js.Any.fromFunction0(stopPropagation))
   
     __obj.asInstanceOf[XEvent]
   }

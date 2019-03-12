@@ -42,15 +42,15 @@ trait BaseBrowserFlow extends Flow {
 object BaseBrowserFlow {
   @scala.inline
   def apply(
-    asanaBaseUrl: js.Function0[java.lang.String],
-    authorizeUrl: js.Function0[java.lang.String],
-    finishAuthorization: js.Function1[java.lang.String, scala.Unit],
-    getStateParam: js.Function0[java.lang.String],
-    receiverUrl: js.Function0[java.lang.String],
-    run: js.Function0[scala.Unit],
-    startAuthorization: js.Function2[java.lang.String, java.lang.String, js.Any]
+    asanaBaseUrl: () => java.lang.String,
+    authorizeUrl: () => java.lang.String,
+    finishAuthorization: java.lang.String => scala.Unit,
+    getStateParam: () => java.lang.String,
+    receiverUrl: () => java.lang.String,
+    run: () => scala.Unit,
+    startAuthorization: (java.lang.String, java.lang.String) => js.Any
   ): BaseBrowserFlow = {
-    val __obj = js.Dynamic.literal(asanaBaseUrl = asanaBaseUrl, authorizeUrl = authorizeUrl, finishAuthorization = finishAuthorization, getStateParam = getStateParam, receiverUrl = receiverUrl, run = run, startAuthorization = startAuthorization)
+    val __obj = js.Dynamic.literal(asanaBaseUrl = js.Any.fromFunction0(asanaBaseUrl), authorizeUrl = js.Any.fromFunction0(authorizeUrl), finishAuthorization = js.Any.fromFunction1(finishAuthorization), getStateParam = js.Any.fromFunction0(getStateParam), receiverUrl = js.Any.fromFunction0(receiverUrl), run = js.Any.fromFunction0(run), startAuthorization = js.Any.fromFunction2(startAuthorization))
   
     __obj.asInstanceOf[BaseBrowserFlow]
   }

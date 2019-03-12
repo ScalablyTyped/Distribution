@@ -52,7 +52,7 @@ object MappingOptions {
     prefixBase: js.UndefOr[scala.Boolean] = js.undefined,
     realpath: js.UndefOr[scala.Boolean] = js.undefined,
     realpathCache: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    rename: js.Function1[/* p */ java.lang.String, java.lang.String] = null,
+    rename: /* p */ java.lang.String => java.lang.String = null,
     root: java.lang.String = null,
     silent: js.UndefOr[scala.Boolean] = js.undefined,
     src: java.lang.String = null,
@@ -94,7 +94,7 @@ object MappingOptions {
     if (!js.isUndefined(prefixBase)) __obj.updateDynamic("prefixBase")(prefixBase)
     if (!js.isUndefined(realpath)) __obj.updateDynamic("realpath")(realpath)
     if (realpathCache != null) __obj.updateDynamic("realpathCache")(realpathCache)
-    if (rename != null) __obj.updateDynamic("rename")(rename)
+    if (rename != null) __obj.updateDynamic("rename")(js.Any.fromFunction1(rename))
     if (root != null) __obj.updateDynamic("root")(root)
     if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
     if (src != null) __obj.updateDynamic("src")(src)

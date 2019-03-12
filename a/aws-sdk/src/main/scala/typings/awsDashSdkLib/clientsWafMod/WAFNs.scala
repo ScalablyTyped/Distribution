@@ -43,7 +43,7 @@ object WAFNs extends js.Object {
     /**
       * Specifies the bytes (typically a string that corresponds with ASCII characters) that you want AWS WAF to search for in web requests, the location in requests that you want AWS WAF to search, and other settings.
       */
-    var ByteMatchTuples: ByteMatchTuples
+    var ByteMatchTuples: awsDashSdkLib.clientsWafMod.WAFNs.ByteMatchTuples
     /**
       * A friendly name or description of the ByteMatchSet. You can't change Name after you create a ByteMatchSet.
       */
@@ -69,18 +69,18 @@ object WAFNs extends js.Object {
     /**
       * Information about the part of a web request that you want AWS WAF to inspect and the value that you want AWS WAF to search for. If you specify DELETE for the value of Action, the ByteMatchTuple values must exactly match the values in the ByteMatchTuple that you want to delete from the ByteMatchSet.
       */
-    var ByteMatchTuple: ByteMatchTuple
+    var ByteMatchTuple: awsDashSdkLib.clientsWafMod.WAFNs.ByteMatchTuple
   }
   
   trait ByteMatchTuple extends js.Object {
     /**
       * The part of a web request that you want AWS WAF to search, such as a specified header or a query string. For more information, see FieldToMatch.
       */
-    var FieldToMatch: FieldToMatch
+    var FieldToMatch: awsDashSdkLib.clientsWafMod.WAFNs.FieldToMatch
     /**
       * Within the portion of a web request that you want to search (for example, in the query string, if any), specify where you want AWS WAF to search. Valid values include the following:  CONTAINS  The specified part of the web request must include the value of TargetString, but the location doesn't matter.  CONTAINS_WORD  The specified part of the web request must include the value of TargetString, and TargetString must contain only alphanumeric characters or underscore (A-Z, a-z, 0-9, or _). In addition, TargetString must be a word, which means one of the following:    TargetString exactly matches the value of the specified part of the web request, such as the value of a header.    TargetString is at the beginning of the specified part of the web request and is followed by a character other than an alphanumeric character or underscore (_), for example, BadBot;.    TargetString is at the end of the specified part of the web request and is preceded by a character other than an alphanumeric character or underscore (_), for example, ;BadBot.    TargetString is in the middle of the specified part of the web request and is preceded and followed by characters other than alphanumeric characters or underscore (_), for example, -BadBot;.    EXACTLY  The value of the specified part of the web request must exactly match the value of TargetString.  STARTS_WITH  The value of TargetString must appear at the beginning of the specified part of the web request.  ENDS_WITH  The value of TargetString must appear at the end of the specified part of the web request.
       */
-    var PositionalConstraint: PositionalConstraint
+    var PositionalConstraint: awsDashSdkLib.clientsWafMod.WAFNs.PositionalConstraint
     /**
       * The value that you want AWS WAF to search for. AWS WAF searches for the specified string in the part of web requests that you specified in FieldToMatch. The maximum length of the value is 50 bytes. Valid values depend on the values that you specified for FieldToMatch:    HEADER: The value that you want AWS WAF to search for in the request header that you specified in FieldToMatch, for example, the value of the User-Agent or Referer header.    METHOD: The HTTP method, which indicates the type of operation specified in the request. CloudFront supports the following methods: DELETE, GET, HEAD, OPTIONS, PATCH, POST, and PUT.    QUERY_STRING: The value that you want AWS WAF to search for in the query string, which is the part of a URL that appears after a ? character.    URI: The value that you want AWS WAF to search for in the part of a URL that identifies a resource, for example, /images/daily-ad.jpg.    BODY: The part of a request that contains any additional data that you want to send to your web server as the HTTP request body, such as data from a form. The request body immediately follows the request headers. Note that only the first 8192 bytes of the request body are forwarded to AWS WAF for inspection. To allow or block requests based on the length of the body, you can create a size constraint set. For more information, see CreateSizeConstraintSet.     SINGLE_QUERY_ARG: The parameter in the query string that you will inspect, such as UserName or SalesRegion. The maximum length for SINGLE_QUERY_ARG is 30 characters.    ALL_QUERY_ARGS: Similar to SINGLE_QUERY_ARG, but instead of inspecting a single parameter, AWS WAF inspects all parameters within the query string for the value or regex pattern that you specify in TargetString.   If TargetString includes alphabetic characters A-Z and a-z, note that the value is case sensitive.  If you're using the AWS WAF API  Specify a base64-encoded version of the value. The maximum length of the value before you base64-encode it is 50 bytes. For example, suppose the value of Type is HEADER and the value of Data is User-Agent. If you want to search the User-Agent header for the value BadBot, you base64-encode BadBot using MIME base64-encoding and include the resulting value, QmFkQm90, in the value of TargetString.  If you're using the AWS CLI or one of the AWS SDKs  The value that you want AWS WAF to search for. The SDK automatically base64 encodes the value.
       */
@@ -88,7 +88,7 @@ object WAFNs extends js.Object {
     /**
       * Text transformations eliminate some of the unusual formatting that attackers use in web requests in an effort to bypass AWS WAF. If you specify a transformation, AWS WAF performs the transformation on TargetString before inspecting a request for a match. You can only specify a single type of TextTransformation.  CMD_LINE  When you're concerned that attackers are injecting an operating system command line command and using unusual formatting to disguise some or all of the command, use this option to perform the following transformations:   Delete the following characters: \ " ' ^   Delete spaces before the following characters: / (   Replace the following characters with a space: , ;   Replace multiple spaces with one space   Convert uppercase letters (A-Z) to lowercase (a-z)    COMPRESS_WHITE_SPACE  Use this option to replace the following characters with a space character (decimal 32):   \f, formfeed, decimal 12   \t, tab, decimal 9   \n, newline, decimal 10   \r, carriage return, decimal 13   \v, vertical tab, decimal 11   non-breaking space, decimal 160    COMPRESS_WHITE_SPACE also replaces multiple spaces with one space.  HTML_ENTITY_DECODE  Use this option to replace HTML-encoded characters with unencoded characters. HTML_ENTITY_DECODE performs the following operations:   Replaces (ampersand)quot; with "    Replaces (ampersand)nbsp; with a non-breaking space, decimal 160   Replaces (ampersand)lt; with a "less than" symbol   Replaces (ampersand)gt; with &gt;    Replaces characters that are represented in hexadecimal format, (ampersand)#xhhhh;, with the corresponding characters   Replaces characters that are represented in decimal format, (ampersand)#nnnn;, with the corresponding characters    LOWERCASE  Use this option to convert uppercase letters (A-Z) to lowercase (a-z).  URL_DECODE  Use this option to decode a URL-encoded value.  NONE  Specify NONE if you don't want to perform any text transformations.
       */
-    var TextTransformation: TextTransformation
+    var TextTransformation: awsDashSdkLib.clientsWafMod.WAFNs.TextTransformation
   }
   
   trait ClientApiVersions extends js.Object {
@@ -102,7 +102,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * A friendly name or description of the ByteMatchSet. You can't change Name after you create a ByteMatchSet.
       */
@@ -124,7 +124,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * A friendly name or description of the GeoMatchSet. You can't change Name after you create the GeoMatchSet.
       */
@@ -146,7 +146,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * A friendly name or description of the IPSet. You can't change Name after you create the IPSet.
       */
@@ -168,11 +168,11 @@ object WAFNs extends js.Object {
     /**
       * The ChangeToken that you used to submit the CreateRateBasedRule request. You can also use this value to query the status of the request. For more information, see GetChangeTokenStatus.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * A friendly name or description for the metrics for this RateBasedRule. The name can contain only alphanumeric characters (A-Z, a-z, 0-9); the name can't contain whitespace. You can't change the name of the metric after you create the RateBasedRule.
       */
-    var MetricName: MetricName
+    var MetricName: awsDashSdkLib.clientsWafMod.WAFNs.MetricName
     /**
       * A friendly name or description of the RateBasedRule. You can't change the name of a RateBasedRule after you create it.
       */
@@ -180,11 +180,11 @@ object WAFNs extends js.Object {
     /**
       * The field that AWS WAF uses to determine if requests are likely arriving from a single source and thus subject to rate monitoring. The only valid value for RateKey is IP. IP indicates that requests that arrive from the same IP address are subject to the RateLimit that is specified in the RateBasedRule.
       */
-    var RateKey: RateKey
+    var RateKey: awsDashSdkLib.clientsWafMod.WAFNs.RateKey
     /**
       * The maximum number of requests, which have an identical value in the field that is specified by RateKey, allowed in a five-minute period. If the number of requests exceeds the RateLimit and the other predicates specified in the rule are also met, AWS WAF triggers the action that is specified for this rule.
       */
-    var RateLimit: RateLimit
+    var RateLimit: awsDashSdkLib.clientsWafMod.WAFNs.RateLimit
   }
   
   trait CreateRateBasedRuleResponse extends js.Object {
@@ -202,7 +202,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * A friendly name or description of the RegexMatchSet. You can't change Name after you create a RegexMatchSet.
       */
@@ -224,7 +224,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * A friendly name or description of the RegexPatternSet. You can't change Name after you create a RegexPatternSet.
       */
@@ -246,11 +246,11 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * A friendly name or description for the metrics for this RuleGroup. The name can contain only alphanumeric characters (A-Z, a-z, 0-9); the name can't contain whitespace. You can't change the name of the metric after you create the RuleGroup.
       */
-    var MetricName: MetricName
+    var MetricName: awsDashSdkLib.clientsWafMod.WAFNs.MetricName
     /**
       * A friendly name or description of the RuleGroup. You can't change Name after you create a RuleGroup.
       */
@@ -272,11 +272,11 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * A friendly name or description for the metrics for this Rule. The name can contain only alphanumeric characters (A-Z, a-z, 0-9); the name can't contain white space. You can't change the name of the metric after you create the Rule.
       */
-    var MetricName: MetricName
+    var MetricName: awsDashSdkLib.clientsWafMod.WAFNs.MetricName
     /**
       * A friendly name or description of the Rule. You can't change the name of a Rule after you create it.
       */
@@ -298,7 +298,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * A friendly name or description of the SizeConstraintSet. You can't change Name after you create a SizeConstraintSet.
       */
@@ -320,7 +320,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * A friendly name or description for the SqlInjectionMatchSet that you're creating. You can't change Name after you create the SqlInjectionMatchSet.
       */
@@ -342,7 +342,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The action that you want AWS WAF to take when a request doesn't match the criteria specified in any of the Rule objects that are associated with the WebACL.
       */
@@ -350,7 +350,7 @@ object WAFNs extends js.Object {
     /**
       * A friendly name or description for the metrics for this WebACL. The name can contain only alphanumeric characters (A-Z, a-z, 0-9); the name can't contain white space. You can't change MetricName after you create the WebACL.
       */
-    var MetricName: MetricName
+    var MetricName: awsDashSdkLib.clientsWafMod.WAFNs.MetricName
     /**
       * A friendly name or description of the WebACL. You can't change Name after you create the WebACL.
       */
@@ -372,7 +372,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * A friendly name or description for the XssMatchSet that you're creating. You can't change Name after you create the XssMatchSet.
       */
@@ -398,7 +398,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
   }
   
   trait DeleteByteMatchSetResponse extends js.Object {
@@ -412,7 +412,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The GeoMatchSetID of the GeoMatchSet that you want to delete. GeoMatchSetId is returned by CreateGeoMatchSet and by ListGeoMatchSets.
       */
@@ -430,7 +430,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The IPSetId of the IPSet that you want to delete. IPSetId is returned by CreateIPSet and by ListIPSets.
       */
@@ -448,7 +448,7 @@ object WAFNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the web ACL from which you want to delete the LoggingConfiguration.
       */
-    var ResourceArn: ResourceArn
+    var ResourceArn: awsDashSdkLib.clientsWafMod.WAFNs.ResourceArn
   }
   
   trait DeleteLoggingConfigurationResponse extends js.Object
@@ -457,7 +457,7 @@ object WAFNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the RuleGroup from which you want to delete the policy. The user making the request must be the owner of the RuleGroup.
       */
-    var ResourceArn: ResourceArn
+    var ResourceArn: awsDashSdkLib.clientsWafMod.WAFNs.ResourceArn
   }
   
   trait DeletePermissionPolicyResponse extends js.Object
@@ -466,7 +466,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The RuleId of the RateBasedRule that you want to delete. RuleId is returned by CreateRateBasedRule and by ListRateBasedRules.
       */
@@ -484,7 +484,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The RegexMatchSetId of the RegexMatchSet that you want to delete. RegexMatchSetId is returned by CreateRegexMatchSet and by ListRegexMatchSets.
       */
@@ -502,7 +502,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The RegexPatternSetId of the RegexPatternSet that you want to delete. RegexPatternSetId is returned by CreateRegexPatternSet and by ListRegexPatternSets.
       */
@@ -520,7 +520,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The RuleGroupId of the RuleGroup that you want to delete. RuleGroupId is returned by CreateRuleGroup and by ListRuleGroups.
       */
@@ -538,7 +538,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The RuleId of the Rule that you want to delete. RuleId is returned by CreateRule and by ListRules.
       */
@@ -556,7 +556,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The SizeConstraintSetId of the SizeConstraintSet that you want to delete. SizeConstraintSetId is returned by CreateSizeConstraintSet and by ListSizeConstraintSets.
       */
@@ -574,7 +574,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The SqlInjectionMatchSetId of the SqlInjectionMatchSet that you want to delete. SqlInjectionMatchSetId is returned by CreateSqlInjectionMatchSet and by ListSqlInjectionMatchSets.
       */
@@ -592,7 +592,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The WebACLId of the WebACL that you want to delete. WebACLId is returned by CreateWebACL and by ListWebACLs.
       */
@@ -610,7 +610,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The XssMatchSetId of the XssMatchSet that you want to delete. XssMatchSetId is returned by CreateXssMatchSet and by ListXssMatchSets.
       */
@@ -657,7 +657,7 @@ object WAFNs extends js.Object {
     /**
       * An array of GeoMatchConstraint objects, which contain the country that you want AWS WAF to search for.
       */
-    var GeoMatchConstraints: GeoMatchConstraints
+    var GeoMatchConstraints: awsDashSdkLib.clientsWafMod.WAFNs.GeoMatchConstraints
     /**
       * The GeoMatchSetId for an GeoMatchSet. You use GeoMatchSetId to get information about a GeoMatchSet (see GeoMatchSet), update a GeoMatchSet (see UpdateGeoMatchSet), insert a GeoMatchSet into a Rule or delete one from a Rule (see UpdateRule), and delete a GeoMatchSet from AWS WAF (see DeleteGeoMatchSet).  GeoMatchSetId is returned by CreateGeoMatchSet and by ListGeoMatchSets.
       */
@@ -687,7 +687,7 @@ object WAFNs extends js.Object {
     /**
       * The country from which web requests originate that you want AWS WAF to search for.
       */
-    var GeoMatchConstraint: GeoMatchConstraint
+    var GeoMatchConstraint: awsDashSdkLib.clientsWafMod.WAFNs.GeoMatchConstraint
   }
   
   trait GetByteMatchSetRequest extends js.Object {
@@ -717,7 +717,7 @@ object WAFNs extends js.Object {
     /**
       * The change token for which you want to get the status. This change token was previously returned in the GetChangeToken response.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
   }
   
   trait GetChangeTokenStatusResponse extends js.Object {
@@ -759,7 +759,7 @@ object WAFNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the web ACL for which you want to get the LoggingConfiguration.
       */
-    var ResourceArn: ResourceArn
+    var ResourceArn: awsDashSdkLib.clientsWafMod.WAFNs.ResourceArn
   }
   
   trait GetLoggingConfigurationResponse extends js.Object {
@@ -773,7 +773,7 @@ object WAFNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the RuleGroup for which you want to get the policy.
       */
-    var ResourceArn: ResourceArn
+    var ResourceArn: awsDashSdkLib.clientsWafMod.WAFNs.ResourceArn
   }
   
   trait GetPermissionPolicyResponse extends js.Object {
@@ -887,7 +887,7 @@ object WAFNs extends js.Object {
     /**
       * The start date and time and the end date and time of the range for which you want GetSampledRequests to return a sample of requests. Specify the date and time in the following format: "2016-09-27T14:50Z". You can specify any time range in the previous three hours.
       */
-    var TimeWindow: TimeWindow
+    var TimeWindow: awsDashSdkLib.clientsWafMod.WAFNs.TimeWindow
     /**
       * The WebACLId of the WebACL for which you want GetSampledRequests to return a sample of requests.
       */
@@ -1007,7 +1007,7 @@ object WAFNs extends js.Object {
     /**
       * The IP address type (IPV4 or IPV6) and the IP address range (in CIDR notation) that web requests originate from. If the WebACL is associated with a CloudFront distribution and the viewer did not use an HTTP proxy or a load balancer to send the request, this is the value of the c-ip field in the CloudFront access logs.
       */
-    var IPSetDescriptors: IPSetDescriptors
+    var IPSetDescriptors: awsDashSdkLib.clientsWafMod.WAFNs.IPSetDescriptors
     /**
       * The IPSetId for an IPSet. You use IPSetId to get information about an IPSet (see GetIPSet), update an IPSet (see UpdateIPSet), insert an IPSet into a Rule or delete one from a Rule (see UpdateRule), and delete an IPSet from AWS WAF (see DeleteIPSet).  IPSetId is returned by CreateIPSet and by ListIPSets.
       */
@@ -1048,7 +1048,7 @@ object WAFNs extends js.Object {
     /**
       * The IP address type (IPV4 or IPV6) and the IP address range (in CIDR notation) that web requests originate from.
       */
-    var IPSetDescriptor: IPSetDescriptor
+    var IPSetDescriptor: awsDashSdkLib.clientsWafMod.WAFNs.IPSetDescriptor
   }
   
   trait ListActivatedRulesInRuleGroupRequest extends js.Object {
@@ -1389,7 +1389,7 @@ object WAFNs extends js.Object {
     /**
       * An array of Amazon Kinesis Data Firehose ARNs.
       */
-    var LogDestinationConfigs: LogDestinationConfigs
+    var LogDestinationConfigs: awsDashSdkLib.clientsWafMod.WAFNs.LogDestinationConfigs
     /**
       * The parts of the request that you want redacted from the logs. For example, if you redact the cookie field, the cookie field in the firehose will be xxx. 
       */
@@ -1397,7 +1397,7 @@ object WAFNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the web ACL that you want to associate with LogDestinationConfigs.
       */
-    var ResourceArn: ResourceArn
+    var ResourceArn: awsDashSdkLib.clientsWafMod.WAFNs.ResourceArn
   }
   
   trait Predicate extends js.Object {
@@ -1408,7 +1408,7 @@ object WAFNs extends js.Object {
     /**
       * Set Negated to False if you want AWS WAF to allow, block, or count requests based on the settings in the specified ByteMatchSet, IPSet, SqlInjectionMatchSet, XssMatchSet, RegexMatchSet, GeoMatchSet, or SizeConstraintSet. For example, if an IPSet includes the IP address 192.0.2.44, AWS WAF will allow or block requests based on that IP address. Set Negated to True if you want AWS WAF to allow or block a request based on the negation of the settings in the ByteMatchSet, IPSet, SqlInjectionMatchSet, XssMatchSet, RegexMatchSet, GeoMatchSet, or SizeConstraintSet. For example, if an IPSet includes the IP address 192.0.2.44, AWS WAF will allow, block, or count requests based on all IP addresses except 192.0.2.44.
       */
-    var Negated: Negated
+    var Negated: awsDashSdkLib.clientsWafMod.WAFNs.Negated
     /**
       * The type of predicate in a Rule, such as ByteMatch or IPSet.
       */
@@ -1419,7 +1419,7 @@ object WAFNs extends js.Object {
     /**
       * The Amazon Kinesis Data Firehose that contains the inspected traffic information, the redacted fields details, and the Amazon Resource Name (ARN) of the web ACL to monitor.
       */
-    var LoggingConfiguration: LoggingConfiguration
+    var LoggingConfiguration: awsDashSdkLib.clientsWafMod.WAFNs.LoggingConfiguration
   }
   
   trait PutLoggingConfigurationResponse extends js.Object {
@@ -1437,7 +1437,7 @@ object WAFNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the RuleGroup to which you want to attach the policy.
       */
-    var ResourceArn: ResourceArn
+    var ResourceArn: awsDashSdkLib.clientsWafMod.WAFNs.ResourceArn
   }
   
   trait PutPermissionPolicyResponse extends js.Object
@@ -1458,11 +1458,11 @@ object WAFNs extends js.Object {
     /**
       * The field that AWS WAF uses to determine if requests are likely arriving from single source and thus subject to rate monitoring. The only valid value for RateKey is IP. IP indicates that requests arriving from the same IP address are subject to the RateLimit that is specified in the RateBasedRule.
       */
-    var RateKey: RateKey
+    var RateKey: awsDashSdkLib.clientsWafMod.WAFNs.RateKey
     /**
       * The maximum number of requests, which have an identical value in the field specified by the RateKey, allowed in a five-minute period. If the number of requests exceeds the RateLimit and the other predicates specified in the rule are also met, AWS WAF triggers the action that is specified for this rule.
       */
-    var RateLimit: RateLimit
+    var RateLimit: awsDashSdkLib.clientsWafMod.WAFNs.RateLimit
     /**
       * A unique identifier for a RateBasedRule. You use RuleId to get more information about a RateBasedRule (see GetRateBasedRule), update a RateBasedRule (see UpdateRateBasedRule), insert a RateBasedRule into a WebACL or delete one from a WebACL (see UpdateWebACL), or delete a RateBasedRule from AWS WAF (see DeleteRateBasedRule).
       */
@@ -1503,14 +1503,14 @@ object WAFNs extends js.Object {
     /**
       * Information about the part of a web request that you want AWS WAF to inspect and the identifier of the regular expression (regex) pattern that you want AWS WAF to search for. If you specify DELETE for the value of Action, the RegexMatchTuple values must exactly match the values in the RegexMatchTuple that you want to delete from the RegexMatchSet.
       */
-    var RegexMatchTuple: RegexMatchTuple
+    var RegexMatchTuple: awsDashSdkLib.clientsWafMod.WAFNs.RegexMatchTuple
   }
   
   trait RegexMatchTuple extends js.Object {
     /**
       * Specifies where in a web request to look for the RegexPatternSet.
       */
-    var FieldToMatch: FieldToMatch
+    var FieldToMatch: awsDashSdkLib.clientsWafMod.WAFNs.FieldToMatch
     /**
       * The RegexPatternSetId for a RegexPatternSet. You use RegexPatternSetId to get information about a RegexPatternSet (see GetRegexPatternSet), update a RegexPatternSet (see UpdateRegexPatternSet), insert a RegexPatternSet into a RegexMatchSet or delete one from a RegexMatchSet (see UpdateRegexMatchSet), and delete an RegexPatternSet from AWS WAF (see DeleteRegexPatternSet).  RegexPatternSetId is returned by CreateRegexPatternSet and by ListRegexPatternSets.
       */
@@ -1518,7 +1518,7 @@ object WAFNs extends js.Object {
     /**
       * Text transformations eliminate some of the unusual formatting that attackers use in web requests in an effort to bypass AWS WAF. If you specify a transformation, AWS WAF performs the transformation on RegexPatternSet before inspecting a request for a match. You can only specify a single type of TextTransformation.  CMD_LINE  When you're concerned that attackers are injecting an operating system commandline command and using unusual formatting to disguise some or all of the command, use this option to perform the following transformations:   Delete the following characters: \ " ' ^   Delete spaces before the following characters: / (   Replace the following characters with a space: , ;   Replace multiple spaces with one space   Convert uppercase letters (A-Z) to lowercase (a-z)    COMPRESS_WHITE_SPACE  Use this option to replace the following characters with a space character (decimal 32):   \f, formfeed, decimal 12   \t, tab, decimal 9   \n, newline, decimal 10   \r, carriage return, decimal 13   \v, vertical tab, decimal 11   non-breaking space, decimal 160    COMPRESS_WHITE_SPACE also replaces multiple spaces with one space.  HTML_ENTITY_DECODE  Use this option to replace HTML-encoded characters with unencoded characters. HTML_ENTITY_DECODE performs the following operations:   Replaces (ampersand)quot; with "    Replaces (ampersand)nbsp; with a non-breaking space, decimal 160   Replaces (ampersand)lt; with a "less than" symbol   Replaces (ampersand)gt; with &gt;    Replaces characters that are represented in hexadecimal format, (ampersand)#xhhhh;, with the corresponding characters   Replaces characters that are represented in decimal format, (ampersand)#nnnn;, with the corresponding characters    LOWERCASE  Use this option to convert uppercase letters (A-Z) to lowercase (a-z).  URL_DECODE  Use this option to decode a URL-encoded value.  NONE  Specify NONE if you don't want to perform any text transformations.
       */
-    var TextTransformation: TextTransformation
+    var TextTransformation: awsDashSdkLib.clientsWafMod.WAFNs.TextTransformation
   }
   
   trait RegexPatternSet extends js.Object {
@@ -1533,7 +1533,7 @@ object WAFNs extends js.Object {
     /**
       * Specifies the regular expression (regex) patterns that you want AWS WAF to search for, such as B[a@]dB[o0]t.
       */
-    var RegexPatternStrings: RegexPatternStrings
+    var RegexPatternStrings: awsDashSdkLib.clientsWafMod.WAFNs.RegexPatternStrings
   }
   
   trait RegexPatternSetSummary extends js.Object {
@@ -1555,7 +1555,7 @@ object WAFNs extends js.Object {
     /**
       * Specifies the regular expression (regex) pattern that you want AWS WAF to search for, such as B[a@]dB[o0]t.
       */
-    var RegexPatternString: RegexPatternString
+    var RegexPatternString: awsDashSdkLib.clientsWafMod.WAFNs.RegexPatternString
   }
   
   trait Rule extends js.Object {
@@ -1570,7 +1570,7 @@ object WAFNs extends js.Object {
     /**
       * The Predicates object contains one Predicate element for each ByteMatchSet, IPSet, or SqlInjectionMatchSet object that you want to include in a Rule.
       */
-    var Predicates: Predicates
+    var Predicates: awsDashSdkLib.clientsWafMod.WAFNs.Predicates
     /**
       * A unique identifier for a Rule. You use RuleId to get more information about a Rule (see GetRule), update a Rule (see UpdateRule), insert a Rule into a WebACL or delete a one from a WebACL (see UpdateWebACL), or delete a Rule from AWS WAF (see DeleteRule).  RuleId is returned by CreateRule and by ListRules.
       */
@@ -1611,7 +1611,7 @@ object WAFNs extends js.Object {
     /**
       * The ActivatedRule object specifies a Rule that you want to insert or delete, the priority of the Rule in the WebACL, and the action that you want AWS WAF to take when a web request matches the Rule (ALLOW, BLOCK, or COUNT).
       */
-    var ActivatedRule: ActivatedRule
+    var ActivatedRule: awsDashSdkLib.clientsWafMod.WAFNs.ActivatedRule
   }
   
   trait RuleSummary extends js.Object {
@@ -1633,7 +1633,7 @@ object WAFNs extends js.Object {
     /**
       * The ID of the Predicate (such as an IPSet) that you want to add to a Rule.
       */
-    var Predicate: Predicate
+    var Predicate: awsDashSdkLib.clientsWafMod.WAFNs.Predicate
   }
   
   trait SampledHTTPRequest extends js.Object {
@@ -1663,19 +1663,19 @@ object WAFNs extends js.Object {
     /**
       * The type of comparison you want AWS WAF to perform. AWS WAF uses this in combination with the provided Size and FieldToMatch to build an expression in the form of "Size ComparisonOperator size in bytes of FieldToMatch". If that expression is true, the SizeConstraint is considered to match.  EQ: Used to test if the Size is equal to the size of the FieldToMatch   NE: Used to test if the Size is not equal to the size of the FieldToMatch   LE: Used to test if the Size is less than or equal to the size of the FieldToMatch   LT: Used to test if the Size is strictly less than the size of the FieldToMatch   GE: Used to test if the Size is greater than or equal to the size of the FieldToMatch   GT: Used to test if the Size is strictly greater than the size of the FieldToMatch 
       */
-    var ComparisonOperator: ComparisonOperator
+    var ComparisonOperator: awsDashSdkLib.clientsWafMod.WAFNs.ComparisonOperator
     /**
       * Specifies where in a web request to look for the size constraint.
       */
-    var FieldToMatch: FieldToMatch
+    var FieldToMatch: awsDashSdkLib.clientsWafMod.WAFNs.FieldToMatch
     /**
       * The size in bytes that you want AWS WAF to compare against the size of the specified FieldToMatch. AWS WAF uses this in combination with ComparisonOperator and FieldToMatch to build an expression in the form of "Size ComparisonOperator size in bytes of FieldToMatch". If that expression is true, the SizeConstraint is considered to match. Valid values for size are 0 - 21474836480 bytes (0 - 20 GB). If you specify URI for the value of Type, the / in the URI counts as one character. For example, the URI /logo.jpg is nine characters long.
       */
-    var Size: Size
+    var Size: awsDashSdkLib.clientsWafMod.WAFNs.Size
     /**
       * Text transformations eliminate some of the unusual formatting that attackers use in web requests in an effort to bypass AWS WAF. If you specify a transformation, AWS WAF performs the transformation on FieldToMatch before inspecting a request for a match. You can only specify a single type of TextTransformation. Note that if you choose BODY for the value of Type, you must choose NONE for TextTransformation because CloudFront forwards only the first 8192 bytes for inspection.   NONE  Specify NONE if you don't want to perform any text transformations.  CMD_LINE  When you're concerned that attackers are injecting an operating system command line command and using unusual formatting to disguise some or all of the command, use this option to perform the following transformations:   Delete the following characters: \ " ' ^   Delete spaces before the following characters: / (   Replace the following characters with a space: , ;   Replace multiple spaces with one space   Convert uppercase letters (A-Z) to lowercase (a-z)    COMPRESS_WHITE_SPACE  Use this option to replace the following characters with a space character (decimal 32):   \f, formfeed, decimal 12   \t, tab, decimal 9   \n, newline, decimal 10   \r, carriage return, decimal 13   \v, vertical tab, decimal 11   non-breaking space, decimal 160    COMPRESS_WHITE_SPACE also replaces multiple spaces with one space.  HTML_ENTITY_DECODE  Use this option to replace HTML-encoded characters with unencoded characters. HTML_ENTITY_DECODE performs the following operations:   Replaces (ampersand)quot; with "    Replaces (ampersand)nbsp; with a non-breaking space, decimal 160   Replaces (ampersand)lt; with a "less than" symbol   Replaces (ampersand)gt; with &gt;    Replaces characters that are represented in hexadecimal format, (ampersand)#xhhhh;, with the corresponding characters   Replaces characters that are represented in decimal format, (ampersand)#nnnn;, with the corresponding characters    LOWERCASE  Use this option to convert uppercase letters (A-Z) to lowercase (a-z).  URL_DECODE  Use this option to decode a URL-encoded value.
       */
-    var TextTransformation: TextTransformation
+    var TextTransformation: awsDashSdkLib.clientsWafMod.WAFNs.TextTransformation
   }
   
   trait SizeConstraintSet extends js.Object {
@@ -1690,7 +1690,7 @@ object WAFNs extends js.Object {
     /**
       * Specifies the parts of web requests that you want to inspect the size of.
       */
-    var SizeConstraints: SizeConstraints
+    var SizeConstraints: awsDashSdkLib.clientsWafMod.WAFNs.SizeConstraints
   }
   
   trait SizeConstraintSetSummary extends js.Object {
@@ -1712,7 +1712,7 @@ object WAFNs extends js.Object {
     /**
       * Specifies a constraint on the size of a part of the web request. AWS WAF uses the Size, ComparisonOperator, and FieldToMatch to build an expression in the form of "Size ComparisonOperator size in bytes of FieldToMatch". If that expression is true, the SizeConstraint is considered to match.
       */
-    var SizeConstraint: SizeConstraint
+    var SizeConstraint: awsDashSdkLib.clientsWafMod.WAFNs.SizeConstraint
   }
   
   trait SqlInjectionMatchSet extends js.Object {
@@ -1727,7 +1727,7 @@ object WAFNs extends js.Object {
     /**
       * Specifies the parts of web requests that you want to inspect for snippets of malicious SQL code.
       */
-    var SqlInjectionMatchTuples: SqlInjectionMatchTuples
+    var SqlInjectionMatchTuples: awsDashSdkLib.clientsWafMod.WAFNs.SqlInjectionMatchTuples
   }
   
   trait SqlInjectionMatchSetSummary extends js.Object {
@@ -1749,25 +1749,25 @@ object WAFNs extends js.Object {
     /**
       * Specifies the part of a web request that you want AWS WAF to inspect for snippets of malicious SQL code and, if you want AWS WAF to inspect a header, the name of the header.
       */
-    var SqlInjectionMatchTuple: SqlInjectionMatchTuple
+    var SqlInjectionMatchTuple: awsDashSdkLib.clientsWafMod.WAFNs.SqlInjectionMatchTuple
   }
   
   trait SqlInjectionMatchTuple extends js.Object {
     /**
       * Specifies where in a web request to look for snippets of malicious SQL code.
       */
-    var FieldToMatch: FieldToMatch
+    var FieldToMatch: awsDashSdkLib.clientsWafMod.WAFNs.FieldToMatch
     /**
       * Text transformations eliminate some of the unusual formatting that attackers use in web requests in an effort to bypass AWS WAF. If you specify a transformation, AWS WAF performs the transformation on FieldToMatch before inspecting a request for a match. You can only specify a single type of TextTransformation.  CMD_LINE  When you're concerned that attackers are injecting an operating system command line command and using unusual formatting to disguise some or all of the command, use this option to perform the following transformations:   Delete the following characters: \ " ' ^   Delete spaces before the following characters: / (   Replace the following characters with a space: , ;   Replace multiple spaces with one space   Convert uppercase letters (A-Z) to lowercase (a-z)    COMPRESS_WHITE_SPACE  Use this option to replace the following characters with a space character (decimal 32):   \f, formfeed, decimal 12   \t, tab, decimal 9   \n, newline, decimal 10   \r, carriage return, decimal 13   \v, vertical tab, decimal 11   non-breaking space, decimal 160    COMPRESS_WHITE_SPACE also replaces multiple spaces with one space.  HTML_ENTITY_DECODE  Use this option to replace HTML-encoded characters with unencoded characters. HTML_ENTITY_DECODE performs the following operations:   Replaces (ampersand)quot; with "    Replaces (ampersand)nbsp; with a non-breaking space, decimal 160   Replaces (ampersand)lt; with a "less than" symbol   Replaces (ampersand)gt; with &gt;    Replaces characters that are represented in hexadecimal format, (ampersand)#xhhhh;, with the corresponding characters   Replaces characters that are represented in decimal format, (ampersand)#nnnn;, with the corresponding characters    LOWERCASE  Use this option to convert uppercase letters (A-Z) to lowercase (a-z).  URL_DECODE  Use this option to decode a URL-encoded value.  NONE  Specify NONE if you don't want to perform any text transformations.
       */
-    var TextTransformation: TextTransformation
+    var TextTransformation: awsDashSdkLib.clientsWafMod.WAFNs.TextTransformation
   }
   
   trait SubscribedRuleGroupSummary extends js.Object {
     /**
       * A friendly name or description for the metrics for this RuleGroup. The name can contain only alphanumeric characters (A-Z, a-z, 0-9); the name can't contain whitespace. You can't change the name of the metric after you create the RuleGroup.
       */
-    var MetricName: MetricName
+    var MetricName: awsDashSdkLib.clientsWafMod.WAFNs.MetricName
     /**
       * A friendly name or description of the RuleGroup. You can't change the name of a RuleGroup after you create it.
       */
@@ -3475,7 +3475,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * An array of ByteMatchSetUpdate objects that you want to insert into or delete from a ByteMatchSet. For more information, see the applicable data types:    ByteMatchSetUpdate: Contains Action and ByteMatchTuple     ByteMatchTuple: Contains FieldToMatch, PositionalConstraint, TargetString, and TextTransformation     FieldToMatch: Contains Data and Type   
       */
@@ -3493,7 +3493,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The GeoMatchSetId of the GeoMatchSet that you want to update. GeoMatchSetId is returned by CreateGeoMatchSet and by ListGeoMatchSets.
       */
@@ -3515,7 +3515,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The IPSetId of the IPSet that you want to update. IPSetId is returned by CreateIPSet and by ListIPSets.
       */
@@ -3537,11 +3537,11 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The maximum number of requests, which have an identical value in the field specified by the RateKey, allowed in a five-minute period. If the number of requests exceeds the RateLimit and the other predicates specified in the rule are also met, AWS WAF triggers the action that is specified for this rule.
       */
-    var RateLimit: RateLimit
+    var RateLimit: awsDashSdkLib.clientsWafMod.WAFNs.RateLimit
     /**
       * The RuleId of the RateBasedRule that you want to update. RuleId is returned by CreateRateBasedRule and by ListRateBasedRules.
       */
@@ -3563,7 +3563,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The RegexMatchSetId of the RegexMatchSet that you want to update. RegexMatchSetId is returned by CreateRegexMatchSet and by ListRegexMatchSets.
       */
@@ -3585,7 +3585,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The RegexPatternSetId of the RegexPatternSet that you want to update. RegexPatternSetId is returned by CreateRegexPatternSet and by ListRegexPatternSets.
       */
@@ -3607,7 +3607,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The RuleGroupId of the RuleGroup that you want to update. RuleGroupId is returned by CreateRuleGroup and by ListRuleGroups.
       */
@@ -3629,7 +3629,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The RuleId of the Rule that you want to update. RuleId is returned by CreateRule and by ListRules.
       */
@@ -3651,7 +3651,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The SizeConstraintSetId of the SizeConstraintSet that you want to update. SizeConstraintSetId is returned by CreateSizeConstraintSet and by ListSizeConstraintSets.
       */
@@ -3673,7 +3673,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * The SqlInjectionMatchSetId of the SqlInjectionMatchSet that you want to update. SqlInjectionMatchSetId is returned by CreateSqlInjectionMatchSet and by ListSqlInjectionMatchSets.
       */
@@ -3695,7 +3695,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * A default action for the web ACL, either ALLOW or BLOCK. AWS WAF performs the default action if a request doesn't match the criteria in any of the rules in a web ACL.
       */
@@ -3721,7 +3721,7 @@ object WAFNs extends js.Object {
     /**
       * The value returned by the most recent call to GetChangeToken.
       */
-    var ChangeToken: ChangeToken
+    var ChangeToken: awsDashSdkLib.clientsWafMod.WAFNs.ChangeToken
     /**
       * An array of XssMatchSetUpdate objects that you want to insert into or delete from an XssMatchSet. For more information, see the applicable data types:    XssMatchSetUpdate: Contains Action and XssMatchTuple     XssMatchTuple: Contains FieldToMatch and TextTransformation     FieldToMatch: Contains Data and Type   
       */
@@ -3799,7 +3799,7 @@ object WAFNs extends js.Object {
     /**
       * The ActivatedRule object in an UpdateWebACL request specifies a Rule that you want to insert or delete, the priority of the Rule in the WebACL, and the action that you want AWS WAF to take when a web request matches the Rule (ALLOW, BLOCK, or COUNT).
       */
-    var ActivatedRule: ActivatedRule
+    var ActivatedRule: awsDashSdkLib.clientsWafMod.WAFNs.ActivatedRule
   }
   
   trait XssMatchSet extends js.Object {
@@ -3814,7 +3814,7 @@ object WAFNs extends js.Object {
     /**
       * Specifies the parts of web requests that you want to inspect for cross-site scripting attacks.
       */
-    var XssMatchTuples: XssMatchTuples
+    var XssMatchTuples: awsDashSdkLib.clientsWafMod.WAFNs.XssMatchTuples
   }
   
   trait XssMatchSetSummary extends js.Object {
@@ -3836,18 +3836,18 @@ object WAFNs extends js.Object {
     /**
       * Specifies the part of a web request that you want AWS WAF to inspect for cross-site scripting attacks and, if you want AWS WAF to inspect a header, the name of the header.
       */
-    var XssMatchTuple: XssMatchTuple
+    var XssMatchTuple: awsDashSdkLib.clientsWafMod.WAFNs.XssMatchTuple
   }
   
   trait XssMatchTuple extends js.Object {
     /**
       * Specifies where in a web request to look for cross-site scripting attacks.
       */
-    var FieldToMatch: FieldToMatch
+    var FieldToMatch: awsDashSdkLib.clientsWafMod.WAFNs.FieldToMatch
     /**
       * Text transformations eliminate some of the unusual formatting that attackers use in web requests in an effort to bypass AWS WAF. If you specify a transformation, AWS WAF performs the transformation on FieldToMatch before inspecting a request for a match. You can only specify a single type of TextTransformation.  CMD_LINE  When you're concerned that attackers are injecting an operating system command line command and using unusual formatting to disguise some or all of the command, use this option to perform the following transformations:   Delete the following characters: \ " ' ^   Delete spaces before the following characters: / (   Replace the following characters with a space: , ;   Replace multiple spaces with one space   Convert uppercase letters (A-Z) to lowercase (a-z)    COMPRESS_WHITE_SPACE  Use this option to replace the following characters with a space character (decimal 32):   \f, formfeed, decimal 12   \t, tab, decimal 9   \n, newline, decimal 10   \r, carriage return, decimal 13   \v, vertical tab, decimal 11   non-breaking space, decimal 160    COMPRESS_WHITE_SPACE also replaces multiple spaces with one space.  HTML_ENTITY_DECODE  Use this option to replace HTML-encoded characters with unencoded characters. HTML_ENTITY_DECODE performs the following operations:   Replaces (ampersand)quot; with "    Replaces (ampersand)nbsp; with a non-breaking space, decimal 160   Replaces (ampersand)lt; with a "less than" symbol   Replaces (ampersand)gt; with &gt;    Replaces characters that are represented in hexadecimal format, (ampersand)#xhhhh;, with the corresponding characters   Replaces characters that are represented in decimal format, (ampersand)#nnnn;, with the corresponding characters    LOWERCASE  Use this option to convert uppercase letters (A-Z) to lowercase (a-z).  URL_DECODE  Use this option to decode a URL-encoded value.  NONE  Specify NONE if you don't want to perform any text transformations.
       */
-    var TextTransformation: TextTransformation
+    var TextTransformation: awsDashSdkLib.clientsWafMod.WAFNs.TextTransformation
   }
   
   trait _ChangeAction extends js.Object

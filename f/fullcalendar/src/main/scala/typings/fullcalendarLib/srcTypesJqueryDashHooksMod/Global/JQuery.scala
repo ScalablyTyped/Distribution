@@ -37,9 +37,9 @@ trait JQuery extends js.Object {
   @JSName("fullCalendar")
   def fullCalendar_getDate(method: fullcalendarLib.fullcalendarLibStrings.getDate): momentLib.momentMod.momentNs.Moment = js.native
   @JSName("fullCalendar")
-  def fullCalendar_getEventSourceById(method: fullcalendarLib.fullcalendarLibStrings.getEventSourceById, id: js.Any): fullcalendarLib.eventsourceMod.default = js.native
+  def fullCalendar_getEventSourceById(method: fullcalendarLib.fullcalendarLibStrings.getEventSourceById, id: js.Any): fullcalendarLib.eventSourceMod.default = js.native
   @JSName("fullCalendar")
-  def fullCalendar_getEventSources(method: fullcalendarLib.fullcalendarLibStrings.getEventSources): fullcalendarLib.eventsourceMod.default = js.native
+  def fullCalendar_getEventSources(method: fullcalendarLib.fullcalendarLibStrings.getEventSources): fullcalendarLib.eventSourceMod.default = js.native
   @JSName("fullCalendar")
   def fullCalendar_getNow(method: fullcalendarLib.fullcalendarLibStrings.getNow): momentLib.momentMod.momentNs.Moment = js.native
   @JSName("fullCalendar")

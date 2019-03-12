@@ -13,8 +13,8 @@ trait Timer extends js.Object {
 
 object Timer {
   @scala.inline
-  def apply(ref: js.Function0[scala.Unit], refresh: js.Function0[scala.Unit], unref: js.Function0[scala.Unit]): Timer = {
-    val __obj = js.Dynamic.literal(ref = ref, refresh = refresh, unref = unref)
+  def apply(ref: () => scala.Unit, refresh: () => scala.Unit, unref: () => scala.Unit): Timer = {
+    val __obj = js.Dynamic.literal(ref = js.Any.fromFunction0(ref), refresh = js.Any.fromFunction0(refresh), unref = js.Any.fromFunction0(unref))
   
     __obj.asInstanceOf[Timer]
   }

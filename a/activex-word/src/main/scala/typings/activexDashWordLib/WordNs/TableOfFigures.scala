@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.TableOfFigures")
 @js.native
 class TableOfFigures protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var Caption: java.lang.String = js.native
   val Creator: scala.Double = js.native
-  val HeadingStyles: HeadingStyles = js.native
+  val HeadingStyles: activexDashWordLib.WordNs.HeadingStyles = js.native
   var HidePageNumbersInWeb: scala.Boolean = js.native
   var IncludeLabel: scala.Boolean = js.native
   var IncludePageNumbers: scala.Boolean = js.native
   var LowerHeadingLevel: scala.Double = js.native
   val Parent: js.Any = js.native
-  val Range: Range = js.native
+  val Range: activexDashWordLib.WordNs.Range = js.native
   var RightAlignPageNumbers: scala.Boolean = js.native
   var TabLeader: WdTabLeader = js.native
   var TableID: java.lang.String = js.native

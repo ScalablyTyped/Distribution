@@ -114,7 +114,7 @@ object AthenaNs extends js.Object {
     /**
       * The contents of the query with all query statements.
       */
-    var QueryString: QueryString
+    var QueryString: awsDashSdkLib.clientsAthenaMod.AthenaNs.QueryString
     /**
       * The name of the workgroup in which the named query is being created.
       */
@@ -160,7 +160,7 @@ object AthenaNs extends js.Object {
     /**
       * The unique ID of the query to delete.
       */
-    var NamedQueryId: NamedQueryId
+    var NamedQueryId: awsDashSdkLib.clientsAthenaMod.AthenaNs.NamedQueryId
   }
   
   trait DeleteNamedQueryOutput extends js.Object
@@ -182,7 +182,7 @@ object AthenaNs extends js.Object {
     /**
       * Indicates whether Amazon S3 server-side encryption with Amazon S3-managed keys (SSE-S3), server-side encryption with KMS-managed keys (SSE-KMS), or client-side encryption with KMS-managed keys (CSE-KMS) is used. If a query runs in a workgroup and the workgroup overrides client-side settings, then the workgroup's setting for encryption is used. It specifies whether query results must be encrypted, for all queries that run in this workgroup. 
       */
-    var EncryptionOption: EncryptionOption
+    var EncryptionOption: awsDashSdkLib.clientsAthenaMod.AthenaNs.EncryptionOption
     /**
       * For SSE-KMS and CSE-KMS, this is the KMS key ARN or ID.
       */
@@ -193,7 +193,7 @@ object AthenaNs extends js.Object {
     /**
       * The unique ID of the query. Use ListNamedQueries to get query IDs.
       */
-    var NamedQueryId: NamedQueryId
+    var NamedQueryId: awsDashSdkLib.clientsAthenaMod.AthenaNs.NamedQueryId
   }
   
   trait GetNamedQueryOutput extends js.Object {
@@ -207,7 +207,7 @@ object AthenaNs extends js.Object {
     /**
       * The unique ID of the query execution.
       */
-    var QueryExecutionId: QueryExecutionId
+    var QueryExecutionId: awsDashSdkLib.clientsAthenaMod.AthenaNs.QueryExecutionId
   }
   
   trait GetQueryExecutionOutput extends js.Object {
@@ -229,7 +229,7 @@ object AthenaNs extends js.Object {
     /**
       * The unique ID of the query execution.
       */
-    var QueryExecutionId: QueryExecutionId
+    var QueryExecutionId: awsDashSdkLib.clientsAthenaMod.AthenaNs.QueryExecutionId
   }
   
   trait GetQueryResultsOutput extends js.Object {
@@ -381,7 +381,7 @@ object AthenaNs extends js.Object {
     /**
       * The SQL query statements that comprise the query.
       */
-    var QueryString: QueryString
+    var QueryString: awsDashSdkLib.clientsAthenaMod.AthenaNs.QueryString
     /**
       * The name of the workgroup that contains the named query.
       */
@@ -527,7 +527,7 @@ object AthenaNs extends js.Object {
     /**
       * The SQL query statements to be executed.
       */
-    var QueryString: QueryString
+    var QueryString: awsDashSdkLib.clientsAthenaMod.AthenaNs.QueryString
     /**
       * Specifies information about where and how to save the results of the query execution. If the query runs in a workgroup, then workgroup's settings may override query settings. This affects the query results location. The workgroup settings override is specified in EnforceWorkGroupConfiguration (true/false) in the WorkGroupConfiguration. See WorkGroupConfiguration$EnforceWorkGroupConfiguration.
       */
@@ -549,7 +549,7 @@ object AthenaNs extends js.Object {
     /**
       * The unique ID of the query execution to stop.
       */
-    var QueryExecutionId: QueryExecutionId
+    var QueryExecutionId: awsDashSdkLib.clientsAthenaMod.AthenaNs.QueryExecutionId
   }
   
   trait StopQueryExecutionOutput extends js.Object

@@ -153,7 +153,7 @@ object IStaticCanvasOptions {
     backgroundImage: Image | java.lang.String = null,
     backgroundVpt: js.UndefOr[scala.Boolean] = js.undefined,
     clipPath: Object = null,
-    clipTo: js.Function1[/* context */ stdLib.CanvasRenderingContext2D, scala.Unit] = null,
+    clipTo: /* context */ stdLib.CanvasRenderingContext2D => scala.Unit = null,
     controlsAboveOverlay: js.UndefOr[scala.Boolean] = js.undefined,
     enableRetinaScaling: js.UndefOr[scala.Boolean] = js.undefined,
     imageSmoothingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -174,7 +174,7 @@ object IStaticCanvasOptions {
     if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage.asInstanceOf[js.Any])
     if (!js.isUndefined(backgroundVpt)) __obj.updateDynamic("backgroundVpt")(backgroundVpt)
     if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath)
-    if (clipTo != null) __obj.updateDynamic("clipTo")(clipTo)
+    if (clipTo != null) __obj.updateDynamic("clipTo")(js.Any.fromFunction1(clipTo))
     if (!js.isUndefined(controlsAboveOverlay)) __obj.updateDynamic("controlsAboveOverlay")(controlsAboveOverlay)
     if (!js.isUndefined(enableRetinaScaling)) __obj.updateDynamic("enableRetinaScaling")(enableRetinaScaling)
     if (!js.isUndefined(imageSmoothingEnabled)) __obj.updateDynamic("imageSmoothingEnabled")(imageSmoothingEnabled)

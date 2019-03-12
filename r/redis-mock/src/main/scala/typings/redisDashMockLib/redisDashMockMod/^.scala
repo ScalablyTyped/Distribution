@@ -18,7 +18,7 @@ object ^ extends js.Object {
   def createClient(port: scala.Double, host: java.lang.String, options: redisLib.redisMod.ClientOpts): redisLib.redisMod.RedisClient = js.native
   def createClient(unix_socket: java.lang.String): redisLib.redisMod.RedisClient = js.native
   def createClient(unix_socket: java.lang.String, options: redisLib.redisMod.ClientOpts): redisLib.redisMod.RedisClient = js.native
-  def print(err: nodeLib.Error, reply: js.Any): scala.Unit = js.native
   def print(err: scala.Null, reply: js.Any): scala.Unit = js.native
+  def print(err: stdLib.Error, reply: js.Any): scala.Unit = js.native
 }
 

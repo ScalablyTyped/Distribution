@@ -84,10 +84,10 @@ object IEditableTextProps {
     minLines: scala.Int | scala.Double = null,
     minWidth: scala.Int | scala.Double = null,
     multiline: js.UndefOr[scala.Boolean] = js.undefined,
-    onCancel: js.Function1[/* value */ java.lang.String, scala.Unit] = null,
-    onChange: js.Function1[/* value */ java.lang.String, scala.Unit] = null,
-    onConfirm: js.Function1[/* value */ java.lang.String, scala.Unit] = null,
-    onEdit: js.Function1[/* value */ java.lang.String, scala.Unit] = null,
+    onCancel: /* value */ java.lang.String => scala.Unit = null,
+    onChange: /* value */ java.lang.String => scala.Unit = null,
+    onConfirm: /* value */ java.lang.String => scala.Unit = null,
+    onEdit: /* value */ java.lang.String => scala.Unit = null,
     placeholder: java.lang.String = null,
     selectAllOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: java.lang.String = null,
@@ -105,10 +105,10 @@ object IEditableTextProps {
     if (minLines != null) __obj.updateDynamic("minLines")(minLines.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
-    if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onConfirm != null) __obj.updateDynamic("onConfirm")(onConfirm)
-    if (onEdit != null) __obj.updateDynamic("onEdit")(onEdit)
+    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction1(onCancel))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onConfirm != null) __obj.updateDynamic("onConfirm")(js.Any.fromFunction1(onConfirm))
+    if (onEdit != null) __obj.updateDynamic("onEdit")(js.Any.fromFunction1(onEdit))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(selectAllOnFocus)) __obj.updateDynamic("selectAllOnFocus")(selectAllOnFocus)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

@@ -221,11 +221,11 @@ object WindowOptions {
   @scala.inline
   def apply(
     title: java.lang.String,
-    afterCascade: js.Function1[/* wnd */ Window, scala.Unit] = null,
-    afterDrag: js.Function1[/* wnd */ Window, scala.Unit] = null,
-    afterMaximize: js.Function1[/* wnd */ Window, scala.Unit] = null,
-    afterMinimize: js.Function1[/* wnd */ Window, scala.Unit] = null,
-    afterResize: js.Function1[/* wnd */ Window, scala.Unit] = null,
+    afterCascade: /* wnd */ Window => scala.Unit = null,
+    afterDrag: /* wnd */ Window => scala.Unit = null,
+    afterMaximize: /* wnd */ Window => scala.Unit = null,
+    afterMinimize: /* wnd */ Window => scala.Unit = null,
+    afterResize: /* wnd */ Window => scala.Unit = null,
     bookmarkable: js.UndefOr[scala.Boolean] = js.undefined,
     checkBoundary: js.UndefOr[scala.Boolean] = js.undefined,
     closable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -248,18 +248,18 @@ object WindowOptions {
     minWidth: scala.Int | scala.Double = null,
     minimizable: js.UndefOr[scala.Boolean] = js.undefined,
     modalOpacity: scala.Int | scala.Double = null,
-    onCascade: js.Function1[/* wnd */ Window, scala.Unit] = null,
-    onClose: js.Function1[/* wnd */ Window, scala.Unit] = null,
-    onDrag: js.Function1[/* wnd */ Window, scala.Unit] = null,
-    onIframeEnd: js.Function1[/* wnd */ Window, scala.Unit] = null,
-    onIframeStart: js.Function1[/* wnd */ Window, scala.Unit] = null,
-    onMaximize: js.Function1[/* wnd */ Window, scala.Unit] = null,
-    onMinimize: js.Function1[/* wnd */ Window, scala.Unit] = null,
-    onOpen: js.Function1[/* wnd */ Window, scala.Unit] = null,
-    onResize: js.Function1[/* wnd */ Window, scala.Unit] = null,
-    onSelect: js.Function1[/* wnd */ Window, scala.Unit] = null,
-    onShow: js.Function1[/* wnd */ Window, scala.Unit] = null,
-    onUnselect: js.Function1[/* wnd */ Window, scala.Unit] = null,
+    onCascade: /* wnd */ Window => scala.Unit = null,
+    onClose: /* wnd */ Window => scala.Unit = null,
+    onDrag: /* wnd */ Window => scala.Unit = null,
+    onIframeEnd: /* wnd */ Window => scala.Unit = null,
+    onIframeStart: /* wnd */ Window => scala.Unit = null,
+    onMaximize: /* wnd */ Window => scala.Unit = null,
+    onMinimize: /* wnd */ Window => scala.Unit = null,
+    onOpen: /* wnd */ Window => scala.Unit = null,
+    onResize: /* wnd */ Window => scala.Unit = null,
+    onSelect: /* wnd */ Window => scala.Unit = null,
+    onShow: /* wnd */ Window => scala.Unit = null,
+    onUnselect: /* wnd */ Window => scala.Unit = null,
     resizable: js.UndefOr[scala.Boolean] = js.undefined,
     scrollable: js.UndefOr[scala.Boolean] = js.undefined,
     selectedHeaderClass: java.lang.String = null,
@@ -274,11 +274,11 @@ object WindowOptions {
     z: scala.Int | scala.Double = null
   ): WindowOptions = {
     val __obj = js.Dynamic.literal(title = title)
-    if (afterCascade != null) __obj.updateDynamic("afterCascade")(afterCascade)
-    if (afterDrag != null) __obj.updateDynamic("afterDrag")(afterDrag)
-    if (afterMaximize != null) __obj.updateDynamic("afterMaximize")(afterMaximize)
-    if (afterMinimize != null) __obj.updateDynamic("afterMinimize")(afterMinimize)
-    if (afterResize != null) __obj.updateDynamic("afterResize")(afterResize)
+    if (afterCascade != null) __obj.updateDynamic("afterCascade")(js.Any.fromFunction1(afterCascade))
+    if (afterDrag != null) __obj.updateDynamic("afterDrag")(js.Any.fromFunction1(afterDrag))
+    if (afterMaximize != null) __obj.updateDynamic("afterMaximize")(js.Any.fromFunction1(afterMaximize))
+    if (afterMinimize != null) __obj.updateDynamic("afterMinimize")(js.Any.fromFunction1(afterMinimize))
+    if (afterResize != null) __obj.updateDynamic("afterResize")(js.Any.fromFunction1(afterResize))
     if (!js.isUndefined(bookmarkable)) __obj.updateDynamic("bookmarkable")(bookmarkable)
     if (!js.isUndefined(checkBoundary)) __obj.updateDynamic("checkBoundary")(checkBoundary)
     if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)
@@ -301,18 +301,18 @@ object WindowOptions {
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(minimizable)) __obj.updateDynamic("minimizable")(minimizable)
     if (modalOpacity != null) __obj.updateDynamic("modalOpacity")(modalOpacity.asInstanceOf[js.Any])
-    if (onCascade != null) __obj.updateDynamic("onCascade")(onCascade)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag)
-    if (onIframeEnd != null) __obj.updateDynamic("onIframeEnd")(onIframeEnd)
-    if (onIframeStart != null) __obj.updateDynamic("onIframeStart")(onIframeStart)
-    if (onMaximize != null) __obj.updateDynamic("onMaximize")(onMaximize)
-    if (onMinimize != null) __obj.updateDynamic("onMinimize")(onMinimize)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
-    if (onResize != null) __obj.updateDynamic("onResize")(onResize)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
-    if (onUnselect != null) __obj.updateDynamic("onUnselect")(onUnselect)
+    if (onCascade != null) __obj.updateDynamic("onCascade")(js.Any.fromFunction1(onCascade))
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
+    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
+    if (onIframeEnd != null) __obj.updateDynamic("onIframeEnd")(js.Any.fromFunction1(onIframeEnd))
+    if (onIframeStart != null) __obj.updateDynamic("onIframeStart")(js.Any.fromFunction1(onIframeStart))
+    if (onMaximize != null) __obj.updateDynamic("onMaximize")(js.Any.fromFunction1(onMaximize))
+    if (onMinimize != null) __obj.updateDynamic("onMinimize")(js.Any.fromFunction1(onMinimize))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
+    if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction1(onResize))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
+    if (onUnselect != null) __obj.updateDynamic("onUnselect")(js.Any.fromFunction1(onUnselect))
     if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
     if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable)
     if (selectedHeaderClass != null) __obj.updateDynamic("selectedHeaderClass")(selectedHeaderClass)

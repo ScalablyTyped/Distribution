@@ -16,18 +16,18 @@ trait Html5AdBuilder[Html5Ad] extends AdBuilder[Html5AdBuilder[Html5Ad]] {
 object Html5AdBuilder {
   @scala.inline
   def apply[Html5Ad](
-    build: js.Function0[AdWordsOperation[Html5AdBuilder[Html5Ad]]],
-    withCustomParameters: js.Function1[js.Object, Html5AdBuilder[Html5Ad]],
-    withDimensions: js.Function1[java.lang.String, Html5AdBuilder[Html5Ad]],
-    withDisplayUrl: js.Function1[java.lang.String, Html5AdBuilder[Html5Ad]],
-    withEntryPoint: js.Function1[java.lang.String, Html5AdBuilder[Html5Ad]],
-    withFinalUrl: js.Function1[java.lang.String, Html5AdBuilder[Html5Ad]],
-    withMediaBundle: js.Function1[Media, Html5AdBuilder[Html5Ad]],
-    withMobileFinalUrl: js.Function1[java.lang.String, Html5AdBuilder[Html5Ad]],
-    withName: js.Function1[java.lang.String, Html5AdBuilder[Html5Ad]],
-    withTrackingTemplate: js.Function1[java.lang.String, Html5AdBuilder[Html5Ad]]
+    build: () => AdWordsOperation[Html5AdBuilder[Html5Ad]],
+    withCustomParameters: js.Object => Html5AdBuilder[Html5Ad],
+    withDimensions: java.lang.String => Html5AdBuilder[Html5Ad],
+    withDisplayUrl: java.lang.String => Html5AdBuilder[Html5Ad],
+    withEntryPoint: java.lang.String => Html5AdBuilder[Html5Ad],
+    withFinalUrl: java.lang.String => Html5AdBuilder[Html5Ad],
+    withMediaBundle: Media => Html5AdBuilder[Html5Ad],
+    withMobileFinalUrl: java.lang.String => Html5AdBuilder[Html5Ad],
+    withName: java.lang.String => Html5AdBuilder[Html5Ad],
+    withTrackingTemplate: java.lang.String => Html5AdBuilder[Html5Ad]
   ): Html5AdBuilder[Html5Ad] = {
-    val __obj = js.Dynamic.literal(build = build, withCustomParameters = withCustomParameters, withDimensions = withDimensions, withDisplayUrl = withDisplayUrl, withEntryPoint = withEntryPoint, withFinalUrl = withFinalUrl, withMediaBundle = withMediaBundle, withMobileFinalUrl = withMobileFinalUrl, withName = withName, withTrackingTemplate = withTrackingTemplate)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), withCustomParameters = js.Any.fromFunction1(withCustomParameters), withDimensions = js.Any.fromFunction1(withDimensions), withDisplayUrl = js.Any.fromFunction1(withDisplayUrl), withEntryPoint = js.Any.fromFunction1(withEntryPoint), withFinalUrl = js.Any.fromFunction1(withFinalUrl), withMediaBundle = js.Any.fromFunction1(withMediaBundle), withMobileFinalUrl = js.Any.fromFunction1(withMobileFinalUrl), withName = js.Any.fromFunction1(withName), withTrackingTemplate = js.Any.fromFunction1(withTrackingTemplate))
   
     __obj.asInstanceOf[Html5AdBuilder[Html5Ad]]
   }

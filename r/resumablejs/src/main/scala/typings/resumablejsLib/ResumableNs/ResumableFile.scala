@@ -67,22 +67,22 @@ trait ResumableFile extends js.Object {
 object ResumableFile {
   @scala.inline
   def apply(
-    abort: js.Function0[scala.Unit],
-    bootstrap: js.Function0[scala.Unit],
-    cancel: js.Function0[scala.Unit],
+    abort: () => scala.Unit,
+    bootstrap: () => scala.Unit,
+    cancel: () => scala.Unit,
     chunks: js.Array[ResumableChunk],
     file: stdLib.File,
     fileName: java.lang.String,
-    isComplete: js.Function0[scala.Boolean],
-    isUploading: js.Function0[scala.Boolean],
-    progress: js.Function1[scala.Boolean, scala.Double],
+    isComplete: () => scala.Boolean,
+    isUploading: () => scala.Boolean,
+    progress: scala.Boolean => scala.Double,
     relativePath: java.lang.String,
     resumableObj: Resumable,
-    retry: js.Function0[scala.Unit],
+    retry: () => scala.Unit,
     size: scala.Double,
     uniqueIdentifier: java.lang.String
   ): ResumableFile = {
-    val __obj = js.Dynamic.literal(abort = abort, bootstrap = bootstrap, cancel = cancel, chunks = chunks, file = file, fileName = fileName, isComplete = isComplete, isUploading = isUploading, progress = progress, relativePath = relativePath, resumableObj = resumableObj, retry = retry, size = size, uniqueIdentifier = uniqueIdentifier)
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), bootstrap = js.Any.fromFunction0(bootstrap), cancel = js.Any.fromFunction0(cancel), chunks = chunks, file = file, fileName = fileName, isComplete = js.Any.fromFunction0(isComplete), isUploading = js.Any.fromFunction0(isUploading), progress = js.Any.fromFunction1(progress), relativePath = relativePath, resumableObj = resumableObj, retry = js.Any.fromFunction0(retry), size = size, uniqueIdentifier = uniqueIdentifier)
   
     __obj.asInstanceOf[ResumableFile]
   }

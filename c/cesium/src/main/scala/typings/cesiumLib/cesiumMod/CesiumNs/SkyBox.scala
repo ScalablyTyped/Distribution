@@ -16,13 +16,13 @@ trait SkyBox extends js.Object {
 object SkyBox {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
-    isDestroyed: js.Function0[scala.Boolean],
+    destroy: () => scala.Unit,
+    isDestroyed: () => scala.Boolean,
     show: scala.Boolean,
     sources: js.Any,
-    update: js.Function0[scala.Unit]
+    update: () => scala.Unit
   ): SkyBox = {
-    val __obj = js.Dynamic.literal(destroy = destroy, isDestroyed = isDestroyed, show = show, sources = sources, update = update)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), isDestroyed = js.Any.fromFunction0(isDestroyed), show = show, sources = sources, update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[SkyBox]
   }

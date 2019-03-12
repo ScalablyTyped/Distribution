@@ -23,16 +23,16 @@ object EllipsoidPrimitive {
   def apply(
     center: Cartesian3,
     debugShowBoundingVolume: scala.Boolean,
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     id: js.Any,
-    isDestroyed: js.Function0[scala.Boolean],
+    isDestroyed: () => scala.Boolean,
     material: Material,
     modelMatrix: Matrix4,
     radii: Cartesian3,
     show: scala.Boolean,
-    update: js.Function0[scala.Unit]
+    update: () => scala.Unit
   ): EllipsoidPrimitive = {
-    val __obj = js.Dynamic.literal(center = center, debugShowBoundingVolume = debugShowBoundingVolume, destroy = destroy, id = id, isDestroyed = isDestroyed, material = material, modelMatrix = modelMatrix, radii = radii, show = show, update = update)
+    val __obj = js.Dynamic.literal(center = center, debugShowBoundingVolume = debugShowBoundingVolume, destroy = js.Any.fromFunction0(destroy), id = id, isDestroyed = js.Any.fromFunction0(isDestroyed), material = material, modelMatrix = modelMatrix, radii = radii, show = show, update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[EllipsoidPrimitive]
   }

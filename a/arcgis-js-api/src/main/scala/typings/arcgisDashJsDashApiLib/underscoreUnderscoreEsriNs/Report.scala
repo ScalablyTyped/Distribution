@@ -44,14 +44,14 @@ object Report {
   def apply(
     constructor: js.Function,
     description: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     hierarchy: java.lang.String,
     id: scala.Double,
     name: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     title: java.lang.String
   ): Report = {
-    val __obj = js.Dynamic.literal(constructor = constructor, description = description, hasOwnProperty = hasOwnProperty, hierarchy = hierarchy, id = id, name = name, propertyIsEnumerable = propertyIsEnumerable, title = title)
+    val __obj = js.Dynamic.literal(constructor = constructor, description = description, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), hierarchy = hierarchy, id = id, name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), title = title)
   
     __obj.asInstanceOf[Report]
   }

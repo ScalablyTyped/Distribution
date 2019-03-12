@@ -24,9 +24,9 @@ object IZoom {
     enabled: scala.Boolean,
     format: IFormat,
     mouseButton: scala.Double,
-    reset: js.Function0[scala.Unit]
+    reset: () => scala.Unit
   ): IZoom = {
-    val __obj = js.Dynamic.literal(active = active, chart = chart, direction = direction, enabled = enabled, format = format, mouseButton = mouseButton, reset = reset)
+    val __obj = js.Dynamic.literal(active = active, chart = chart, direction = direction, enabled = enabled, format = format, mouseButton = mouseButton, reset = js.Any.fromFunction0(reset))
   
     __obj.asInstanceOf[IZoom]
   }

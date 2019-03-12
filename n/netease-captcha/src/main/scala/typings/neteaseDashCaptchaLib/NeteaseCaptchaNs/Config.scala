@@ -47,16 +47,16 @@ object Config {
     element: java.lang.String | stdLib.HTMLElement,
     lang: neteaseDashCaptchaLib.neteaseDashCaptchaLibStrings.`zh-CN` | neteaseDashCaptchaLib.neteaseDashCaptchaLibStrings.en = null,
     mode: neteaseDashCaptchaLib.neteaseDashCaptchaLibStrings.float | neteaseDashCaptchaLib.neteaseDashCaptchaLibStrings.embed | neteaseDashCaptchaLib.neteaseDashCaptchaLibStrings.popup = null,
-    onReady: js.Function1[/* instance */ Instance, scala.Unit] = null,
-    onVerify: js.Function2[/* error */ js.Any, /* data */ Data, scala.Unit] = null,
+    onReady: /* instance */ Instance => scala.Unit = null,
+    onVerify: (/* error */ js.Any, /* data */ Data) => scala.Unit = null,
     protocol: neteaseDashCaptchaLib.neteaseDashCaptchaLibStrings.http | neteaseDashCaptchaLib.neteaseDashCaptchaLibStrings.https = null,
     width: scala.Double | java.lang.String = null
   ): Config = {
     val __obj = js.Dynamic.literal(captchaId = captchaId, element = element.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (onReady != null) __obj.updateDynamic("onReady")(onReady)
-    if (onVerify != null) __obj.updateDynamic("onVerify")(onVerify)
+    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction1(onReady))
+    if (onVerify != null) __obj.updateDynamic("onVerify")(js.Any.fromFunction2(onVerify))
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]

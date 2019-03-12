@@ -316,42 +316,42 @@ object ^ extends js.Object {
   /**
   			 * Creates and returns an instance of <Titanium.App.iOS.SearchQuery>.
   			 */
-  def createSearchQuery(): titaniumLib.TitaniumNs.AppNs.iOSNs.SearchQuery = js.native
-  def createSearchQuery(parameters: js.Any): titaniumLib.TitaniumNs.AppNs.iOSNs.SearchQuery = js.native
+  def createSearchQuery(): SearchQuery = js.native
+  def createSearchQuery(parameters: js.Any): SearchQuery = js.native
   /**
   			 * Creates and returns an instance of <Titanium.App.iOS.SearchableIndex>.
   			 */
-  def createSearchableIndex(): titaniumLib.TitaniumNs.AppNs.iOSNs.SearchableIndex = js.native
-  def createSearchableIndex(parameters: js.Any): titaniumLib.TitaniumNs.AppNs.iOSNs.SearchableIndex = js.native
+  def createSearchableIndex(): SearchableIndex = js.native
+  def createSearchableIndex(parameters: js.Any): SearchableIndex = js.native
   /**
   			 * Creates and returns an instance of <Titanium.App.iOS.SearchableItem>.
   			 */
-  def createSearchableItem(): titaniumLib.TitaniumNs.AppNs.iOSNs.SearchableItem = js.native
-  def createSearchableItem(parameters: js.Any): titaniumLib.TitaniumNs.AppNs.iOSNs.SearchableItem = js.native
+  def createSearchableItem(): SearchableItem = js.native
+  def createSearchableItem(parameters: js.Any): SearchableItem = js.native
   /**
   			 * Creates and returns an instance of <Titanium.App.iOS.SearchableItemAttributeSet>.
   			 */
-  def createSearchableItemAttributeSet(): titaniumLib.TitaniumNs.AppNs.iOSNs.SearchableItemAttributeSet = js.native
-  def createSearchableItemAttributeSet(parameters: js.Any): titaniumLib.TitaniumNs.AppNs.iOSNs.SearchableItemAttributeSet = js.native
+  def createSearchableItemAttributeSet(): SearchableItemAttributeSet = js.native
+  def createSearchableItemAttributeSet(parameters: js.Any): SearchableItemAttributeSet = js.native
   /**
   			 * Creates and returns an instance of <Titanium.App.iOS.UserActivity>.
   			 */
-  def createUserActivity(): titaniumLib.TitaniumNs.AppNs.iOSNs.UserActivity = js.native
-  def createUserActivity(parameters: js.Any): titaniumLib.TitaniumNs.AppNs.iOSNs.UserActivity = js.native
+  def createUserActivity(): UserActivity = js.native
+  def createUserActivity(parameters: js.Any): UserActivity = js.native
   /**
   			 * Creates and returns an instance of Titanium.App.iOS.UserDefaults.
   			 */
-  def createUserDefaults(parameters: js.Any): titaniumLib.TitaniumNs.AppNs.iOSNs.UserDefaults = js.native
+  def createUserDefaults(parameters: js.Any): UserDefaults = js.native
   /**
   			 * Creates and returns an instance of <Titanium.App.iOS.UserNotificationAction>.
   			 */
-  def createUserNotificationAction(): titaniumLib.TitaniumNs.AppNs.iOSNs.UserNotificationAction = js.native
-  def createUserNotificationAction(parameters: js.Any): titaniumLib.TitaniumNs.AppNs.iOSNs.UserNotificationAction = js.native
+  def createUserNotificationAction(): UserNotificationAction = js.native
+  def createUserNotificationAction(parameters: js.Any): UserNotificationAction = js.native
   /**
   			 * Creates and returns an instance of <Titanium.App.iOS.UserNotificationCategory>.
   			 */
-  def createUserNotificationCategory(): titaniumLib.TitaniumNs.AppNs.iOSNs.UserNotificationCategory = js.native
-  def createUserNotificationCategory(parameters: js.Any): titaniumLib.TitaniumNs.AppNs.iOSNs.UserNotificationCategory = js.native
+  def createUserNotificationCategory(): UserNotificationCategory = js.native
+  def createUserNotificationCategory(parameters: js.Any): UserNotificationCategory = js.native
   /**
   			 * Marks the end of the app execution after initiating the download operation. Available only on iOS 7 and later.
   			 */
@@ -383,7 +383,7 @@ object ^ extends js.Object {
   /**
   			 * Registers a service to run when the application is placed in the background.
   			 */
-  def registerBackgroundService(params: js.Any): titaniumLib.TitaniumNs.AppNs.iOSNs.BackgroundService = js.native
+  def registerBackgroundService(params: js.Any): BackgroundService = js.native
   /**
   			 * Registers the application to use the requested notification types and categories.
   			 */
@@ -395,7 +395,7 @@ object ^ extends js.Object {
   /**
   			 * Schedule a local notification.
   			 */
-  def scheduleLocalNotification(params: titaniumLib.NotificationParams): titaniumLib.TitaniumNs.AppNs.iOSNs.LocalNotification = js.native
+  def scheduleLocalNotification(params: titaniumLib.NotificationParams): LocalNotification = js.native
   /**
   			 * Marks the end of an `openParentApplication:reply` execution by a WatchKit extension.
   			 */

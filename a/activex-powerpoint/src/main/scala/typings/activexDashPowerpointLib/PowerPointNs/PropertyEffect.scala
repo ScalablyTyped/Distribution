@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.PropertyEffect")
 @js.native
 class PropertyEffect protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   var From: js.Any = js.native
   val Parent: js.Any = js.native
   val Points: AnimationPoints = js.native

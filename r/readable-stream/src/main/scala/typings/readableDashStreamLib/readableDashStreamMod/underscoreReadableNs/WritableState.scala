@@ -29,12 +29,12 @@ trait WritableState extends js.Object {
   var pendingcb: scala.Double = js.native
   var prefinished: scala.Boolean = js.native
   var sync: scala.Boolean = js.native
-  var writecb: (js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]) | scala.Null = js.native
+  var writecb: (js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]) | scala.Null = js.native
   var writelen: scala.Double = js.native
   var writing: scala.Boolean = js.native
   // new (options: WritableStateOptions, stream: Writable): WritableState;
   def getBuffer(): js.Array[BufferRequest] = js.native
   def onwrite(): js.Any = js.native
-  def onwrite(er: nodeLib.Error): js.Any = js.native
+  def onwrite(er: stdLib.Error): js.Any = js.native
 }
 

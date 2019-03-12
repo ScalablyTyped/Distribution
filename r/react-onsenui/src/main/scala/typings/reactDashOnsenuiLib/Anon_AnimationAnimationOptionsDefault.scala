@@ -32,11 +32,11 @@ object Anon_AnimationAnimationOptionsDefault {
     isOpen: js.UndefOr[scala.Boolean] = js.undefined,
     maskColor: java.lang.String = null,
     modifier: java.lang.String = null,
-    onCancel: js.Function0[scala.Unit] = null,
-    onPostHide: js.Function0[scala.Unit] = null,
-    onPostShow: js.Function0[scala.Unit] = null,
-    onPreHide: js.Function0[scala.Unit] = null,
-    onPreShow: js.Function0[scala.Unit] = null
+    onCancel: () => scala.Unit = null,
+    onPostHide: () => scala.Unit = null,
+    onPostShow: () => scala.Unit = null,
+    onPreHide: () => scala.Unit = null,
+    onPreShow: () => scala.Unit = null
   ): Anon_AnimationAnimationOptionsDefault = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
@@ -46,11 +46,11 @@ object Anon_AnimationAnimationOptionsDefault {
     if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
     if (maskColor != null) __obj.updateDynamic("maskColor")(maskColor)
     if (modifier != null) __obj.updateDynamic("modifier")(modifier)
-    if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel)
-    if (onPostHide != null) __obj.updateDynamic("onPostHide")(onPostHide)
-    if (onPostShow != null) __obj.updateDynamic("onPostShow")(onPostShow)
-    if (onPreHide != null) __obj.updateDynamic("onPreHide")(onPreHide)
-    if (onPreShow != null) __obj.updateDynamic("onPreShow")(onPreShow)
+    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction0(onCancel))
+    if (onPostHide != null) __obj.updateDynamic("onPostHide")(js.Any.fromFunction0(onPostHide))
+    if (onPostShow != null) __obj.updateDynamic("onPostShow")(js.Any.fromFunction0(onPostShow))
+    if (onPreHide != null) __obj.updateDynamic("onPreHide")(js.Any.fromFunction0(onPreHide))
+    if (onPreShow != null) __obj.updateDynamic("onPreShow")(js.Any.fromFunction0(onPreShow))
     __obj.asInstanceOf[Anon_AnimationAnimationOptionsDefault]
   }
 }

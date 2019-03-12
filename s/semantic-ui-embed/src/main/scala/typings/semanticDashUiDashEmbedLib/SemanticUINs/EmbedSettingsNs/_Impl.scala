@@ -148,14 +148,10 @@ object _Impl {
     metadata: semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.MetadataSettings,
     name: java.lang.String,
     namespace: java.lang.String,
-    onCreate: js.Function2[semanticDashUiDashEmbedLib.JQuery, java.lang.String, scala.Unit],
-    onDisplay: js.Function1[semanticDashUiDashEmbedLib.JQuery, scala.Unit],
-    onEmbed: js.Function2[
-      semanticDashUiDashEmbedLib.JQuery, 
-      semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.ParametersSettings, 
-      semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.ParametersSettings
-    ],
-    onPlaceholderDisplay: js.Function1[semanticDashUiDashEmbedLib.JQuery, scala.Unit],
+    onCreate: (semanticDashUiDashEmbedLib.JQuery, java.lang.String) => scala.Unit,
+    onDisplay: semanticDashUiDashEmbedLib.JQuery => scala.Unit,
+    onEmbed: (semanticDashUiDashEmbedLib.JQuery, semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.ParametersSettings) => semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.ParametersSettings,
+    onPlaceholderDisplay: semanticDashUiDashEmbedLib.JQuery => scala.Unit,
     parameters: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibNumbers.`false` | semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.ParametersSettings,
     performance: scala.Boolean,
     selector: semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.SelectorSettings,
@@ -165,7 +161,7 @@ object _Impl {
     url: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibNumbers.`false` | java.lang.String,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(autoplay = autoplay.asInstanceOf[js.Any], brandedUI = brandedUI, className = className.asInstanceOf[js.Any], color = color, debug = debug, error = error.asInstanceOf[js.Any], hd = hd, icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name, namespace = namespace, onCreate = onCreate, onDisplay = onDisplay, onEmbed = onEmbed, onPlaceholderDisplay = onPlaceholderDisplay, parameters = parameters.asInstanceOf[js.Any], performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, source = source.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verbose = verbose)
+    val __obj = js.Dynamic.literal(autoplay = autoplay.asInstanceOf[js.Any], brandedUI = brandedUI, className = className.asInstanceOf[js.Any], color = color, debug = debug, error = error.asInstanceOf[js.Any], hd = hd, icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name, namespace = namespace, onCreate = js.Any.fromFunction2(onCreate), onDisplay = js.Any.fromFunction1(onDisplay), onEmbed = js.Any.fromFunction2(onEmbed), onPlaceholderDisplay = js.Any.fromFunction1(onPlaceholderDisplay), parameters = parameters.asInstanceOf[js.Any], performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, source = source.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verbose = verbose)
   
     __obj.asInstanceOf[_Impl]
   }

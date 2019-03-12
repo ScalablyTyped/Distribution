@@ -110,28 +110,28 @@ trait HistogramFacet extends Facet {
 object HistogramFacet {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cacheFilter: js.Function1[scala.Boolean, HistogramFacet],
-    facetFilter: js.Function1[js.Object, HistogramFacet],
-    field: js.Function1[java.lang.String, HistogramFacet],
-    from: js.Function1[stdLib.Number, HistogramFacet],
-    global: js.Function1[scala.Boolean, HistogramFacet],
-    interval: js.Function1[stdLib.Number, HistogramFacet],
-    keyField: js.Function1[java.lang.String, HistogramFacet],
-    keyScript: js.Function1[java.lang.String, HistogramFacet],
-    lang: js.Function1[java.lang.String, HistogramFacet],
-    mode: js.Function1[java.lang.String, HistogramFacet],
-    nested: js.Function1[java.lang.String, HistogramFacet],
-    order: js.Function1[java.lang.String, HistogramFacet],
-    params: js.Function1[js.Object, HistogramFacet],
-    scope: js.Function1[java.lang.String, HistogramFacet],
-    timeInterval: js.Function1[stdLib.Number, HistogramFacet],
-    to: js.Function1[stdLib.Number, HistogramFacet],
-    toJSON: js.Function0[js.Any],
-    valueField: js.Function1[java.lang.String, HistogramFacet],
-    valueScript: js.Function1[java.lang.String, HistogramFacet]
+    _type: () => java.lang.String,
+    cacheFilter: scala.Boolean => HistogramFacet,
+    facetFilter: js.Object => HistogramFacet,
+    field: java.lang.String => HistogramFacet,
+    from: stdLib.Number => HistogramFacet,
+    global: scala.Boolean => HistogramFacet,
+    interval: stdLib.Number => HistogramFacet,
+    keyField: java.lang.String => HistogramFacet,
+    keyScript: java.lang.String => HistogramFacet,
+    lang: java.lang.String => HistogramFacet,
+    mode: java.lang.String => HistogramFacet,
+    nested: java.lang.String => HistogramFacet,
+    order: java.lang.String => HistogramFacet,
+    params: js.Object => HistogramFacet,
+    scope: java.lang.String => HistogramFacet,
+    timeInterval: stdLib.Number => HistogramFacet,
+    to: stdLib.Number => HistogramFacet,
+    toJSON: () => js.Any,
+    valueField: java.lang.String => HistogramFacet,
+    valueScript: java.lang.String => HistogramFacet
   ): HistogramFacet = {
-    val __obj = js.Dynamic.literal(_type = _type, cacheFilter = cacheFilter, facetFilter = facetFilter, field = field, from = from, global = global, interval = interval, keyField = keyField, keyScript = keyScript, lang = lang, mode = mode, nested = nested, order = order, params = params, scope = scope, timeInterval = timeInterval, to = to, toJSON = toJSON, valueField = valueField, valueScript = valueScript)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cacheFilter = js.Any.fromFunction1(cacheFilter), facetFilter = js.Any.fromFunction1(facetFilter), field = js.Any.fromFunction1(field), from = js.Any.fromFunction1(from), global = js.Any.fromFunction1(global), interval = js.Any.fromFunction1(interval), keyField = js.Any.fromFunction1(keyField), keyScript = js.Any.fromFunction1(keyScript), lang = js.Any.fromFunction1(lang), mode = js.Any.fromFunction1(mode), nested = js.Any.fromFunction1(nested), order = js.Any.fromFunction1(order), params = js.Any.fromFunction1(params), scope = js.Any.fromFunction1(scope), timeInterval = js.Any.fromFunction1(timeInterval), to = js.Any.fromFunction1(to), toJSON = js.Any.fromFunction0(toJSON), valueField = js.Any.fromFunction1(valueField), valueScript = js.Any.fromFunction1(valueScript))
   
     __obj.asInstanceOf[HistogramFacet]
   }

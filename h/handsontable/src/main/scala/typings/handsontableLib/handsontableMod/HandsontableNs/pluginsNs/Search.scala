@@ -25,31 +25,31 @@ trait Search extends Base {
 object Search {
   @scala.inline
   def apply(
-    addHook: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit],
-    callOnPluginsReady: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    callback: js.Function0[scala.Unit],
-    clearHooks: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    disablePlugin: js.Function0[scala.Unit],
-    enablePlugin: js.Function0[scala.Unit],
+    addHook: (java.lang.String, js.Function0[scala.Unit]) => scala.Unit,
+    callOnPluginsReady: js.Function0[scala.Unit] => scala.Unit,
+    callback: () => scala.Unit,
+    clearHooks: () => scala.Unit,
+    destroy: () => scala.Unit,
+    disablePlugin: () => scala.Unit,
+    enablePlugin: () => scala.Unit,
     enabled: scala.Boolean,
-    getCallback: js.Function0[js.Function0[scala.Unit]],
-    getQueryMethod: js.Function0[js.Function0[scala.Unit]],
-    getSearchResultClass: js.Function0[java.lang.String],
-    init: js.Function0[scala.Unit],
+    getCallback: () => js.Function0[scala.Unit],
+    getQueryMethod: () => js.Function0[scala.Unit],
+    getSearchResultClass: () => java.lang.String,
+    init: () => scala.Unit,
     initialized: scala.Boolean,
     isPluginsReady: scala.Boolean,
     pluginName: java.lang.String,
     pluginsInitializedCallback: js.Array[_],
-    query: js.Function3[java.lang.String, js.Function0[scala.Unit], js.Function0[scala.Unit], js.Array[_]],
-    queryMethod: js.Function0[scala.Unit],
-    removeHook: js.Function1[java.lang.String, scala.Unit],
+    query: (java.lang.String, js.Function0[scala.Unit], js.Function0[scala.Unit]) => js.Array[_],
+    queryMethod: () => scala.Unit,
+    removeHook: java.lang.String => scala.Unit,
     searchResultClass: java.lang.String,
-    setCallback: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    setQueryMethod: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    setSearchResultClass: js.Function1[java.lang.String, scala.Unit]
+    setCallback: js.Function0[scala.Unit] => scala.Unit,
+    setQueryMethod: js.Function0[scala.Unit] => scala.Unit,
+    setSearchResultClass: java.lang.String => scala.Unit
   ): Search = {
-    val __obj = js.Dynamic.literal(addHook = addHook, callOnPluginsReady = callOnPluginsReady, callback = callback, clearHooks = clearHooks, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, getCallback = getCallback, getQueryMethod = getQueryMethod, getSearchResultClass = getSearchResultClass, init = init, initialized = initialized, isPluginsReady = isPluginsReady, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, query = query, queryMethod = queryMethod, removeHook = removeHook, searchResultClass = searchResultClass, setCallback = setCallback, setQueryMethod = setQueryMethod, setSearchResultClass = setSearchResultClass)
+    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), callback = js.Any.fromFunction0(callback), clearHooks = js.Any.fromFunction0(clearHooks), destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, getCallback = js.Any.fromFunction0(getCallback), getQueryMethod = js.Any.fromFunction0(getQueryMethod), getSearchResultClass = js.Any.fromFunction0(getSearchResultClass), init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, query = js.Any.fromFunction3(query), queryMethod = js.Any.fromFunction0(queryMethod), removeHook = js.Any.fromFunction1(removeHook), searchResultClass = searchResultClass, setCallback = js.Any.fromFunction1(setCallback), setQueryMethod = js.Any.fromFunction1(setQueryMethod), setSearchResultClass = js.Any.fromFunction1(setSearchResultClass))
   
     __obj.asInstanceOf[Search]
   }

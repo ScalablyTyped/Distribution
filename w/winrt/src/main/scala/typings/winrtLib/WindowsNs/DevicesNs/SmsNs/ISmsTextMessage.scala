@@ -30,12 +30,9 @@ object ISmsTextMessage {
     partReferenceId: scala.Double,
     timestamp: stdLib.Date,
     to: java.lang.String,
-    toBinaryMessages: js.Function1[
-      SmsDataFormat, 
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ISmsBinaryMessage]
-    ]
+    toBinaryMessages: SmsDataFormat => winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ISmsBinaryMessage]
   ): ISmsTextMessage = {
-    val __obj = js.Dynamic.literal(body = body, encoding = encoding, from = from, id = id, messageClass = messageClass, partCount = partCount, partNumber = partNumber, partReferenceId = partReferenceId, timestamp = timestamp, to = to, toBinaryMessages = toBinaryMessages)
+    val __obj = js.Dynamic.literal(body = body, encoding = encoding, from = from, id = id, messageClass = messageClass, partCount = partCount, partNumber = partNumber, partReferenceId = partReferenceId, timestamp = timestamp, to = to, toBinaryMessages = js.Any.fromFunction1(toBinaryMessages))
   
     __obj.asInstanceOf[ISmsTextMessage]
   }

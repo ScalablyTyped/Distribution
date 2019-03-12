@@ -30,28 +30,13 @@ trait SslCertsResource extends js.Object {
 object SslCertsResource {
   @scala.inline
   def apply(
-    createEphemeral: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SslCert]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFieldsInstanceKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFieldsInstanceKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SslCert]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SslCertsInsertResponse]
-    ],
-    list: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SslCertsListResponse]
-    ]
+    createEphemeral: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[SslCert],
+    delete: gapiDotClientDotSqladminLib.Anon_AltFieldsInstanceKey => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotSqladminLib.Anon_AltFieldsInstanceKey => gapiDotClientLib.gapiNs.clientNs.Request[SslCert],
+    insert: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[SslCertsInsertResponse],
+    list: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[SslCertsListResponse]
   ): SslCertsResource = {
-    val __obj = js.Dynamic.literal(createEphemeral = createEphemeral, delete = delete, get = get, insert = insert, list = list)
+    val __obj = js.Dynamic.literal(createEphemeral = js.Any.fromFunction1(createEphemeral), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[SslCertsResource]
   }

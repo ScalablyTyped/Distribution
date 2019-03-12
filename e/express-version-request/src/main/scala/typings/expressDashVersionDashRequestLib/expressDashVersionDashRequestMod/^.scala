@@ -12,16 +12,11 @@ object ^ extends js.Object {
   def formatVersion(version: js.Object): java.lang.String = js.native
   def setVersion(version: java.lang.String): expressLib.expressMod.eNs.Handler = js.native
   def setVersionByAcceptHeader(): expressLib.expressMod.eNs.Handler = js.native
-  def setVersionByAcceptHeader(
-    customParsingFunction: expressDashVersionDashRequestLib.expressDashVersionDashRequestMod.CustomParsingFunction
-  ): expressLib.expressMod.eNs.Handler = js.native
+  def setVersionByAcceptHeader(customParsingFunction: CustomParsingFunction): expressLib.expressMod.eNs.Handler = js.native
   def setVersionByHeader(): expressLib.expressMod.eNs.Handler = js.native
   def setVersionByHeader(headerName: java.lang.String): expressLib.expressMod.eNs.Handler = js.native
   def setVersionByQueryParam(): expressLib.expressMod.eNs.Handler = js.native
   def setVersionByQueryParam(queryParam: java.lang.String): expressLib.expressMod.eNs.Handler = js.native
-  def setVersionByQueryParam(
-    queryParam: java.lang.String,
-    options: expressDashVersionDashRequestLib.expressDashVersionDashRequestMod.SetVersionByQueryParamOptions
-  ): expressLib.expressMod.eNs.Handler = js.native
+  def setVersionByQueryParam(queryParam: java.lang.String, options: SetVersionByQueryParamOptions): expressLib.expressMod.eNs.Handler = js.native
 }
 

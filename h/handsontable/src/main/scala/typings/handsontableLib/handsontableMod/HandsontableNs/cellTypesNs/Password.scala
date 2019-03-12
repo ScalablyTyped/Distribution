@@ -5,22 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Password extends js.Object {
-  var copyable: scala.Boolean
-  var editor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Password]
-  var renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Password
-}
-
-object Password {
-  @scala.inline
-  def apply(
-    copyable: scala.Boolean,
-    editor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Password],
-    renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Password
-  ): Password = {
-    val __obj = js.Dynamic.literal(copyable = copyable, editor = editor, renderer = renderer)
-  
-    __obj.asInstanceOf[Password]
-  }
+  var copyable: scala.Boolean = js.native
+  var editor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Password] = js.native
+  @JSName("renderer")
+  var renderer_Original: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Password = js.native
+  def renderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: java.lang.String,
+    value: handsontableLib.handsontableMod.HandsontableNs.CellValue,
+    cellProperties: handsontableLib.handsontableMod.HandsontableNs.CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def renderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: scala.Double,
+    value: handsontableLib.handsontableMod.HandsontableNs.CellValue,
+    cellProperties: handsontableLib.handsontableMod.HandsontableNs.CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
 }
 

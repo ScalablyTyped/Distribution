@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "EventResizing")
 @js.native
 class EventResizing protected ()
-  extends fullcalendarLib.eventresizingMod.default {
+  extends fullcalendarLib.eventResizingMod.default {
   def this(component: js.Any, eventPointing: js.Any) = this()
 }
 

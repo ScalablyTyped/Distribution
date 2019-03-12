@@ -33,17 +33,13 @@ object TabProps {
     icon: reactLib.reactMod.ReactNs.ReactNode = null,
     keyboardFocused: js.UndefOr[scala.Boolean] = js.undefined,
     label: reactLib.reactMod.ReactNs.ReactNode = null,
-    onActive: js.Function1[/* tab */ Tab, scala.Unit] = null,
+    onActive: /* tab */ Tab => scala.Unit = null,
     onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
     onClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
     onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
     onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
     onKeyUp: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
-    onKeyboardFocus: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], 
-      /* isKeyboardFocused */ scala.Boolean, 
-      scala.Unit
-    ] = null,
+    onKeyboardFocus: (/* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], /* isKeyboardFocused */ scala.Boolean) => scala.Unit = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,
     target: java.lang.String = null,
@@ -67,13 +63,13 @@ object TabProps {
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (!js.isUndefined(keyboardFocused)) __obj.updateDynamic("keyboardFocused")(keyboardFocused)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onActive != null) __obj.updateDynamic("onActive")(onActive)
+    if (onActive != null) __obj.updateDynamic("onActive")(js.Any.fromFunction1(onActive))
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
     if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
-    if (onKeyboardFocus != null) __obj.updateDynamic("onKeyboardFocus")(onKeyboardFocus)
+    if (onKeyboardFocus != null) __obj.updateDynamic("onKeyboardFocus")(js.Any.fromFunction2(onKeyboardFocus))
     if (style != null) __obj.updateDynamic("style")(style)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target)

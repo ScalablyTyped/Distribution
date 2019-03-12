@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def reload(): js.Any = js.native
-  def server(): gulpDashConnectLib.gulpDashConnectMod.ConnectAppOptions = js.native
-  def server(options: gulpDashConnectLib.gulpDashConnectMod.ConnectAppOptions): gulpDashConnectLib.gulpDashConnectMod.ConnectAppOptions = js.native
+  def server(): ConnectAppOptions = js.native
+  def server(options: ConnectAppOptions): ConnectAppOptions = js.native
   def serverClose(): scala.Unit = js.native
 }
 

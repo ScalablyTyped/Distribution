@@ -11,7 +11,7 @@ object ^ extends js.Object {
   def launch(): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
   def launch(options: java.lang.String): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
   def launch(options: java.lang.String, port: scala.Double): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  def launch(options: localDashDynamoLib.localDashDynamoMod.Options): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  def launch(options: localDashDynamoLib.localDashDynamoMod.Options, port: scala.Double): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
+  def launch(options: Options): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
+  def launch(options: Options, port: scala.Double): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
 }
 

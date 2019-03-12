@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.ListGallery")
 @js.native
 class ListGallery protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
-  val ListTemplates: ListTemplates = js.native
+  val ListTemplates: activexDashWordLib.WordNs.ListTemplates = js.native
   val Parent: js.Any = js.native
   var `Word.ListGallery_typekey`: ListGallery = js.native
   def Modified(Index: scala.Double): scala.Boolean = js.native

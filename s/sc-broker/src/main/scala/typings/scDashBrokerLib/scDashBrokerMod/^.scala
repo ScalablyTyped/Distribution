@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("sc-broker", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def createClient(): scDashBrokerLib.scDashBrokerMod.SCBrokerClient = js.native
-  def createClient(options: scDashBrokerLib.scDashBrokerMod.SCBrokerClientOptions): scDashBrokerLib.scDashBrokerMod.SCBrokerClient = js.native
-  def createServer(): scDashBrokerLib.scDashBrokerMod.SCBrokerServer = js.native
-  def createServer(options: scDashBrokerLib.scDashBrokerMod.SCBrokerServerOptions): scDashBrokerLib.scDashBrokerMod.SCBrokerServer = js.native
+  def createClient(): SCBrokerClient = js.native
+  def createClient(options: SCBrokerClientOptions): SCBrokerClient = js.native
+  def createServer(): SCBrokerServer = js.native
+  def createServer(options: SCBrokerServerOptions): SCBrokerServer = js.native
 }
 

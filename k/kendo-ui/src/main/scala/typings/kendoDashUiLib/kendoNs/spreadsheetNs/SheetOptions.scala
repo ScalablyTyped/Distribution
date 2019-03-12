@@ -12,9 +12,9 @@ trait SheetOptions extends js.Object {
 
 object SheetOptions {
   @scala.inline
-  def apply(change: js.Function1[/* e */ SheetChangeEvent, scala.Unit] = null, name: java.lang.String = null): SheetOptions = {
+  def apply(change: /* e */ SheetChangeEvent => scala.Unit = null, name: java.lang.String = null): SheetOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[SheetOptions]
   }

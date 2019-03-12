@@ -58,7 +58,7 @@ object Cell {
   def apply(
     formula: java.lang.String,
     formulaType: FormulaType,
-    removeName: js.Function1[java.lang.String, scala.Unit],
+    removeName: java.lang.String => scala.Unit,
     result: scala.Double | java.lang.String | stdLib.Date,
     style: Style,
     `type`: ValueType,
@@ -73,7 +73,7 @@ object Cell {
     names: js.Array[java.lang.String] = null,
     numFmt: java.lang.String = null
   ): Cell = {
-    val __obj = js.Dynamic.literal(formula = formula, formulaType = formulaType, removeName = removeName, result = result.asInstanceOf[js.Any], style = style, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(formula = formula, formulaType = formulaType, removeName = js.Any.fromFunction1(removeName), result = result.asInstanceOf[js.Any], style = style, value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`)
     if (alignment != null) __obj.updateDynamic("alignment")(alignment)
     if (border != null) __obj.updateDynamic("border")(border)

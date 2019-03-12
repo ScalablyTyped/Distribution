@@ -28,6 +28,6 @@ object ^ extends js.Object {
     parseErrors: js.Array[atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseError]
   ): stdLib.Error = js.native
   def utf8Encode(str: java.lang.String): java.lang.String = js.native
-  def visitValue(value: js.Any, visitor: atAngularCompilerLib.srcUtilMod.ValueVisitor, context: js.Any): js.Any = js.native
+  def visitValue(value: js.Any, visitor: ValueVisitor, context: js.Any): js.Any = js.native
 }
 

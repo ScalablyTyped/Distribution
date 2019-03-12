@@ -20,17 +20,17 @@ trait GradientCondition extends js.Object {
 object GradientCondition {
   @scala.inline
   def apply(
-    getMaxColor: js.Function0[java.lang.String],
-    getMaxType: js.Function0[InterpolationType],
-    getMaxValue: js.Function0[java.lang.String],
-    getMidColor: js.Function0[java.lang.String],
-    getMidType: js.Function0[InterpolationType],
-    getMidValue: js.Function0[java.lang.String],
-    getMinColor: js.Function0[java.lang.String],
-    getMinType: js.Function0[InterpolationType],
-    getMinValue: js.Function0[java.lang.String]
+    getMaxColor: () => java.lang.String,
+    getMaxType: () => InterpolationType,
+    getMaxValue: () => java.lang.String,
+    getMidColor: () => java.lang.String,
+    getMidType: () => InterpolationType,
+    getMidValue: () => java.lang.String,
+    getMinColor: () => java.lang.String,
+    getMinType: () => InterpolationType,
+    getMinValue: () => java.lang.String
   ): GradientCondition = {
-    val __obj = js.Dynamic.literal(getMaxColor = getMaxColor, getMaxType = getMaxType, getMaxValue = getMaxValue, getMidColor = getMidColor, getMidType = getMidType, getMidValue = getMidValue, getMinColor = getMinColor, getMinType = getMinType, getMinValue = getMinValue)
+    val __obj = js.Dynamic.literal(getMaxColor = js.Any.fromFunction0(getMaxColor), getMaxType = js.Any.fromFunction0(getMaxType), getMaxValue = js.Any.fromFunction0(getMaxValue), getMidColor = js.Any.fromFunction0(getMidColor), getMidType = js.Any.fromFunction0(getMidType), getMidValue = js.Any.fromFunction0(getMidValue), getMinColor = js.Any.fromFunction0(getMinColor), getMinType = js.Any.fromFunction0(getMinType), getMinValue = js.Any.fromFunction0(getMinValue))
   
     __obj.asInstanceOf[GradientCondition]
   }

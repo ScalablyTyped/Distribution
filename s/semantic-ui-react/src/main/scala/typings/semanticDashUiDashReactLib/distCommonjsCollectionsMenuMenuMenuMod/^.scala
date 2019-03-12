@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react/dist/commonjs/collections/Menu/MenuMenu", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMenuMod.MenuMenuProps] = js.native
+  val default: reactLib.reactMod.ReactNs.StatelessComponent[MenuMenuProps] = js.native
 }
 

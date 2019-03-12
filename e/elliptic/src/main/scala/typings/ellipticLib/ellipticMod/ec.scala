@@ -42,23 +42,23 @@ class ec protected () extends js.Object {
     enc: java.lang.String
   ): scala.Double = js.native
   def getKeyRecoveryParam(
-    e: nodeLib.Error,
+    e: stdLib.Error,
     signature: ellipticLib.ellipticMod.ecNs.SignatureOptions,
     Q: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any
   ): scala.Double = js.native
   def getKeyRecoveryParam(
-    e: nodeLib.Error,
+    e: stdLib.Error,
     signature: ellipticLib.ellipticMod.ecNs.SignatureOptions,
     Q: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
     enc: java.lang.String
   ): scala.Double = js.native
   def getKeyRecoveryParam(
-    e: nodeLib.Error,
+    e: stdLib.Error,
     signature: ellipticLib.ellipticMod.ecNs.Signature,
     Q: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any
   ): scala.Double = js.native
   def getKeyRecoveryParam(
-    e: nodeLib.Error,
+    e: stdLib.Error,
     signature: ellipticLib.ellipticMod.ecNs.Signature,
     Q: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
     enc: java.lang.String

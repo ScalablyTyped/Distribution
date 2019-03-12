@@ -12,12 +12,8 @@ trait Enumerator[T] extends Disposable {
 
 object Enumerator {
   @scala.inline
-  def apply[T](
-    dispose: js.Function0[scala.Unit],
-    getCurrent: js.Function0[T],
-    moveNext: js.Function0[scala.Boolean]
-  ): Enumerator[T] = {
-    val __obj = js.Dynamic.literal(dispose = dispose, getCurrent = getCurrent, moveNext = moveNext)
+  def apply[T](dispose: () => scala.Unit, getCurrent: () => T, moveNext: () => scala.Boolean): Enumerator[T] = {
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), getCurrent = js.Any.fromFunction0(getCurrent), moveNext = js.Any.fromFunction0(moveNext))
   
     __obj.asInstanceOf[Enumerator[T]]
   }

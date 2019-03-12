@@ -26,23 +26,23 @@ trait Anon_ArrayReplaceAt extends js.Object {
 object Anon_ArrayReplaceAt {
   @scala.inline
   def apply(
-    arrayReplaceAt: js.Function3[js.Array[_], scala.Double, js.Array[_], js.Array[_]],
-    assign: js.Function1[js.Any, js.Any],
-    escapeHtml: js.Function1[java.lang.String, java.lang.String],
-    escapeRE: js.Function1[java.lang.String, java.lang.String],
-    fromCodePoint: js.Function1[java.lang.String, java.lang.String],
-    has: js.Function2[js.Any, java.lang.String, scala.Boolean],
-    isMdAsciiPunct: js.Function1[js.Any, scala.Boolean],
-    isPunctChar: js.Function1[js.Any, scala.Boolean],
-    isSpace: js.Function1[js.Any, scala.Boolean],
-    isString: js.Function1[js.Any, scala.Boolean],
-    isValidEntityCode: js.Function1[js.Any, scala.Boolean],
-    isWhiteSpace: js.Function1[js.Any, scala.Boolean],
-    normalizeReference: js.Function1[java.lang.String, java.lang.String],
-    unescapeAll: js.Function1[java.lang.String, java.lang.String],
-    unescapeMd: js.Function1[java.lang.String, java.lang.String]
+    arrayReplaceAt: (js.Array[_], scala.Double, js.Array[_]) => js.Array[_],
+    assign: js.Any => js.Any,
+    escapeHtml: java.lang.String => java.lang.String,
+    escapeRE: java.lang.String => java.lang.String,
+    fromCodePoint: java.lang.String => java.lang.String,
+    has: (js.Any, java.lang.String) => scala.Boolean,
+    isMdAsciiPunct: js.Any => scala.Boolean,
+    isPunctChar: js.Any => scala.Boolean,
+    isSpace: js.Any => scala.Boolean,
+    isString: js.Any => scala.Boolean,
+    isValidEntityCode: js.Any => scala.Boolean,
+    isWhiteSpace: js.Any => scala.Boolean,
+    normalizeReference: java.lang.String => java.lang.String,
+    unescapeAll: java.lang.String => java.lang.String,
+    unescapeMd: java.lang.String => java.lang.String
   ): Anon_ArrayReplaceAt = {
-    val __obj = js.Dynamic.literal(arrayReplaceAt = arrayReplaceAt, assign = assign, escapeHtml = escapeHtml, escapeRE = escapeRE, fromCodePoint = fromCodePoint, has = has, isMdAsciiPunct = isMdAsciiPunct, isPunctChar = isPunctChar, isSpace = isSpace, isString = isString, isValidEntityCode = isValidEntityCode, isWhiteSpace = isWhiteSpace, normalizeReference = normalizeReference, unescapeAll = unescapeAll, unescapeMd = unescapeMd)
+    val __obj = js.Dynamic.literal(arrayReplaceAt = js.Any.fromFunction3(arrayReplaceAt), assign = js.Any.fromFunction1(assign), escapeHtml = js.Any.fromFunction1(escapeHtml), escapeRE = js.Any.fromFunction1(escapeRE), fromCodePoint = js.Any.fromFunction1(fromCodePoint), has = js.Any.fromFunction2(has), isMdAsciiPunct = js.Any.fromFunction1(isMdAsciiPunct), isPunctChar = js.Any.fromFunction1(isPunctChar), isSpace = js.Any.fromFunction1(isSpace), isString = js.Any.fromFunction1(isString), isValidEntityCode = js.Any.fromFunction1(isValidEntityCode), isWhiteSpace = js.Any.fromFunction1(isWhiteSpace), normalizeReference = js.Any.fromFunction1(normalizeReference), unescapeAll = js.Any.fromFunction1(unescapeAll), unescapeMd = js.Any.fromFunction1(unescapeMd))
   
     __obj.asInstanceOf[Anon_ArrayReplaceAt]
   }

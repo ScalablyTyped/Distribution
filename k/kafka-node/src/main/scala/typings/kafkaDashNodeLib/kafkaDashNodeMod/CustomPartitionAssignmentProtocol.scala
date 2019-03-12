@@ -18,16 +18,11 @@ trait CustomPartitionAssignmentProtocol extends js.Object {
 object CustomPartitionAssignmentProtocol {
   @scala.inline
   def apply(
-    assign: js.Function3[
-      js.Any, 
-      js.Any, 
-      js.Function2[/* error */ js.Any, /* result */ js.Any, scala.Unit], 
-      scala.Unit
-    ],
+    assign: (js.Any, js.Any, js.Function2[/* error */ js.Any, /* result */ js.Any, scala.Unit]) => scala.Unit,
     name: java.lang.String,
     version: scala.Double
   ): CustomPartitionAssignmentProtocol = {
-    val __obj = js.Dynamic.literal(assign = assign, name = name, version = version)
+    val __obj = js.Dynamic.literal(assign = js.Any.fromFunction3(assign), name = name, version = version)
   
     __obj.asInstanceOf[CustomPartitionAssignmentProtocol]
   }

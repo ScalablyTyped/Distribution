@@ -23,14 +23,14 @@ trait Chain extends js.Object {
 object Chain {
   @scala.inline
   def apply(
-    add: js.Function1[RequestHandler, scala.Unit],
-    count: js.Function0[scala.Double],
-    getHandlers: js.Function0[js.Array[RequestHandler]],
+    add: RequestHandler => scala.Unit,
+    count: () => scala.Double,
+    getHandlers: () => js.Array[RequestHandler],
     onceNext: scala.Boolean,
-    run: js.Function3[Request, Response, js.Function0[_], scala.Unit],
+    run: (Request, Response, js.Function0[_]) => scala.Unit,
     strictNext: scala.Boolean
   ): Chain = {
-    val __obj = js.Dynamic.literal(add = add, count = count, getHandlers = getHandlers, onceNext = onceNext, run = run, strictNext = strictNext)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), count = js.Any.fromFunction0(count), getHandlers = js.Any.fromFunction0(getHandlers), onceNext = onceNext, run = js.Any.fromFunction3(run), strictNext = strictNext)
   
     __obj.asInstanceOf[Chain]
   }

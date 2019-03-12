@@ -96,13 +96,13 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
-    click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    change: /* e */ ChangeEventArgs => scala.Unit = null,
+    click: /* e */ ClickEventArgs => scala.Unit = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
     currentPage: scala.Int | scala.Double = null,
     customText: java.lang.String = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     enableExternalMessage: js.UndefOr[scala.Boolean] = js.undefined,
     enableQueryString: js.UndefOr[scala.Boolean] = js.undefined,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
@@ -114,20 +114,20 @@ object Model {
     pageSize: scala.Int | scala.Double = null,
     pageSizeList: js.Array[_] = null,
     pageSizeMessage: java.lang.String = null,
-    pageSizeSelected: js.Function1[/* e */ PageSizeSelectedEventArgs, scala.Unit] = null,
+    pageSizeSelected: /* e */ PageSizeSelectedEventArgs => scala.Unit = null,
     showPageInfo: js.UndefOr[scala.Boolean] = js.undefined,
     template: java.lang.String = null,
     totalPages: scala.Int | scala.Double = null,
     totalRecordsCount: scala.Int | scala.Double = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
     if (customText != null) __obj.updateDynamic("customText")(customText)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(enableExternalMessage)) __obj.updateDynamic("enableExternalMessage")(enableExternalMessage)
     if (!js.isUndefined(enableQueryString)) __obj.updateDynamic("enableQueryString")(enableQueryString)
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
@@ -139,7 +139,7 @@ object Model {
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     if (pageSizeList != null) __obj.updateDynamic("pageSizeList")(pageSizeList)
     if (pageSizeMessage != null) __obj.updateDynamic("pageSizeMessage")(pageSizeMessage)
-    if (pageSizeSelected != null) __obj.updateDynamic("pageSizeSelected")(pageSizeSelected)
+    if (pageSizeSelected != null) __obj.updateDynamic("pageSizeSelected")(js.Any.fromFunction1(pageSizeSelected))
     if (!js.isUndefined(showPageInfo)) __obj.updateDynamic("showPageInfo")(showPageInfo)
     if (template != null) __obj.updateDynamic("template")(template)
     if (totalPages != null) __obj.updateDynamic("totalPages")(totalPages.asInstanceOf[js.Any])

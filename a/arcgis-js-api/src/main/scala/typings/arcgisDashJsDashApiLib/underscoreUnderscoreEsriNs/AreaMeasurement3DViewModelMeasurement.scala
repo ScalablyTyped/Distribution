@@ -32,12 +32,12 @@ object AreaMeasurement3DViewModelMeasurement {
   def apply(
     area: MeasurementValue,
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     measurementMode: java.lang.String,
     perimeterLength: MeasurementValue,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): AreaMeasurement3DViewModelMeasurement = {
-    val __obj = js.Dynamic.literal(area = area, constructor = constructor, hasOwnProperty = hasOwnProperty, measurementMode = measurementMode, perimeterLength = perimeterLength, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(area = area, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), measurementMode = measurementMode, perimeterLength = perimeterLength, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[AreaMeasurement3DViewModelMeasurement]
   }

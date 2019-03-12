@@ -20,11 +20,11 @@ trait TestRuntimeContext
 object TestRuntimeContext {
   @scala.inline
   def apply(
-    skip: js.Function0[scala.Unit],
-    timeout: js.Function1[scala.Double, scala.Unit],
+    skip: () => scala.Unit,
+    timeout: scala.Double => scala.Unit,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): TestRuntimeContext = {
-    val __obj = js.Dynamic.literal(skip = skip, timeout = timeout)
+    val __obj = js.Dynamic.literal(skip = js.Any.fromFunction0(skip), timeout = js.Any.fromFunction1(timeout))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[TestRuntimeContext]
   }

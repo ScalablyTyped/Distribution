@@ -27,12 +27,12 @@ object XSpreadsheetDocument {
   @scala.inline
   def apply(
     Sheets: XSpreadsheets,
-    acquire: js.Function0[scala.Unit],
-    getSheets: js.Function0[XSpreadsheets],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getSheets: () => XSpreadsheets,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSpreadsheetDocument = {
-    val __obj = js.Dynamic.literal(Sheets = Sheets, acquire = acquire, getSheets = getSheets, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Sheets = Sheets, acquire = js.Any.fromFunction0(acquire), getSheets = js.Any.fromFunction0(getSheets), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSpreadsheetDocument]
   }

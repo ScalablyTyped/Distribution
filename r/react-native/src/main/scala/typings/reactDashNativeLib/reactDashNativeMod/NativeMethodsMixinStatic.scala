@@ -75,15 +75,15 @@ trait NativeMethodsMixinStatic extends js.Object {
 object NativeMethodsMixinStatic {
   @scala.inline
   def apply(
-    blur: js.Function0[scala.Unit],
-    focus: js.Function0[scala.Unit],
-    measure: js.Function1[MeasureOnSuccessCallback, scala.Unit],
-    measureInWindow: js.Function1[MeasureInWindowOnSuccessCallback, scala.Unit],
-    measureLayout: js.Function3[scala.Double, MeasureLayoutOnSuccessCallback, js.Function0[scala.Unit], scala.Unit],
+    blur: () => scala.Unit,
+    focus: () => scala.Unit,
+    measure: MeasureOnSuccessCallback => scala.Unit,
+    measureInWindow: MeasureInWindowOnSuccessCallback => scala.Unit,
+    measureLayout: (scala.Double, MeasureLayoutOnSuccessCallback, js.Function0[scala.Unit]) => scala.Unit,
     refs: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.Component[_, _, _]],
-    setNativeProps: js.Function1[js.Object, scala.Unit]
+    setNativeProps: js.Object => scala.Unit
   ): NativeMethodsMixinStatic = {
-    val __obj = js.Dynamic.literal(blur = blur, focus = focus, measure = measure, measureInWindow = measureInWindow, measureLayout = measureLayout, refs = refs, setNativeProps = setNativeProps)
+    val __obj = js.Dynamic.literal(blur = js.Any.fromFunction0(blur), focus = js.Any.fromFunction0(focus), measure = js.Any.fromFunction1(measure), measureInWindow = js.Any.fromFunction1(measureInWindow), measureLayout = js.Any.fromFunction3(measureLayout), refs = refs, setNativeProps = js.Any.fromFunction1(setNativeProps))
   
     __obj.asInstanceOf[NativeMethodsMixinStatic]
   }

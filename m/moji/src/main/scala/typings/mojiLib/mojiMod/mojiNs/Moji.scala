@@ -15,13 +15,13 @@ trait Moji extends js.Object {
 object Moji {
   @scala.inline
   def apply(
-    convert: js.Function2[Mojisyu, Mojisyu, Moji],
-    filter: js.Function1[Mojisyu, Moji],
-    reject: js.Function1[Mojisyu, Moji],
-    toString: js.Function0[java.lang.String],
-    trim: js.Function0[Moji]
+    convert: (Mojisyu, Mojisyu) => Moji,
+    filter: Mojisyu => Moji,
+    reject: Mojisyu => Moji,
+    toString: () => java.lang.String,
+    trim: () => Moji
   ): Moji = {
-    val __obj = js.Dynamic.literal(convert = convert, filter = filter, reject = reject, toString = toString, trim = trim)
+    val __obj = js.Dynamic.literal(convert = js.Any.fromFunction2(convert), filter = js.Any.fromFunction1(filter), reject = js.Any.fromFunction1(reject), toString = js.Any.fromFunction0(toString), trim = js.Any.fromFunction0(trim))
   
     __obj.asInstanceOf[Moji]
   }

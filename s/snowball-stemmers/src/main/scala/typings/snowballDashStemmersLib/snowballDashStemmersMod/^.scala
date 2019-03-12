@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def algorithms(): js.Array[java.lang.String] = js.native
-  def newStemmer(locale: java.lang.String): snowballDashStemmersLib.snowballDashStemmersMod.Stemmer = js.native
+  def newStemmer(locale: java.lang.String): Stemmer = js.native
 }
 

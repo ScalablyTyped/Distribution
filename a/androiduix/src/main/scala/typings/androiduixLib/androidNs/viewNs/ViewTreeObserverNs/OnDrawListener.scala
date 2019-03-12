@@ -11,8 +11,8 @@ trait OnDrawListener extends js.Object {
 
 object OnDrawListener {
   @scala.inline
-  def apply(onDraw: js.Function0[js.Any]): OnDrawListener = {
-    val __obj = js.Dynamic.literal(onDraw = onDraw)
+  def apply(onDraw: () => js.Any): OnDrawListener = {
+    val __obj = js.Dynamic.literal(onDraw = js.Any.fromFunction0(onDraw))
   
     __obj.asInstanceOf[OnDrawListener]
   }

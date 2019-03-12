@@ -13,8 +13,8 @@ trait IMemoryBufferReference extends IClosable {
 
 object IMemoryBufferReference {
   @scala.inline
-  def apply(capacity: scala.Double, close: js.Function0[scala.Unit]): IMemoryBufferReference = {
-    val __obj = js.Dynamic.literal(capacity = capacity, close = close)
+  def apply(capacity: scala.Double, close: () => scala.Unit): IMemoryBufferReference = {
+    val __obj = js.Dynamic.literal(capacity = capacity, close = js.Any.fromFunction0(close))
   
     __obj.asInstanceOf[IMemoryBufferReference]
   }

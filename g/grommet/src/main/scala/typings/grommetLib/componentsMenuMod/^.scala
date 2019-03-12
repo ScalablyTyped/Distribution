@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Menu: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsMenuMod.MenuProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    MenuProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
       reactLib.HTMLButtonElement
     ]), 

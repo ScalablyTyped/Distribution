@@ -1202,7 +1202,7 @@ trait Cypress extends js.Object {
   @JSName("off")
   def off_fail(
     action: cypressLib.cypressLibStrings.fail,
-    fn: js.Function2[/* error */ nodeLib.Error, /* mocha */ mochaLib.MochaNs.IRunnable, scala.Unit]
+    fn: js.Function2[/* error */ stdLib.Error, /* mocha */ mochaLib.MochaNs.IRunnable, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires whenever a command emits this event so it can be displayed in the Command Log. Useful to see how internal cypress commands utilize the {% url 'Cypress.log()' cypress-log %} API.
@@ -1303,7 +1303,7 @@ trait Cypress extends js.Object {
   def `off_uncaught:exception`(
     action: cypressLib.cypressLibStrings.`uncaught:exception`,
     fn: js.Function2[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* runnable */ mochaLib.MochaNs.IRunnable, 
       cypressLib.cypressLibNumbers.`false` | scala.Unit
     ]
@@ -1372,7 +1372,7 @@ trait Cypress extends js.Object {
   @JSName("off")
   def `off_window:before:load`(
     action: cypressLib.cypressLibStrings.`window:before:load`,
-    fn: js.Function1[/* win */ mochaLib.Window, scala.Unit]
+    fn: js.Function1[/* win */ stdLib.Window, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires when your application is about to navigate away. The real event object is provided to you. Your app may have set a `returnValue` on the event, which is useful to assert on.
@@ -1424,7 +1424,7 @@ trait Cypress extends js.Object {
   @JSName("off")
   def `off_window:load`(
     action: cypressLib.cypressLibStrings.`window:load`,
-    fn: js.Function1[/* win */ mochaLib.Window, scala.Unit]
+    fn: js.Function1[/* win */ stdLib.Window, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires when your application is has unloaded and is navigating away. The real event object is provided to you. This event is not cancelable.
@@ -1502,7 +1502,7 @@ trait Cypress extends js.Object {
   @JSName("on")
   def on_fail(
     action: cypressLib.cypressLibStrings.fail,
-    fn: js.Function2[/* error */ nodeLib.Error, /* mocha */ mochaLib.MochaNs.IRunnable, scala.Unit]
+    fn: js.Function2[/* error */ stdLib.Error, /* mocha */ mochaLib.MochaNs.IRunnable, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires whenever a command emits this event so it can be displayed in the Command Log. Useful to see how internal cypress commands utilize the {% url 'Cypress.log()' cypress-log %} API.
@@ -1603,7 +1603,7 @@ trait Cypress extends js.Object {
   def `on_uncaught:exception`(
     action: cypressLib.cypressLibStrings.`uncaught:exception`,
     fn: js.Function2[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* runnable */ mochaLib.MochaNs.IRunnable, 
       cypressLib.cypressLibNumbers.`false` | scala.Unit
     ]
@@ -1672,7 +1672,7 @@ trait Cypress extends js.Object {
   @JSName("on")
   def `on_window:before:load`(
     action: cypressLib.cypressLibStrings.`window:before:load`,
-    fn: js.Function1[/* win */ mochaLib.Window, scala.Unit]
+    fn: js.Function1[/* win */ stdLib.Window, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires when your application is about to navigate away. The real event object is provided to you. Your app may have set a `returnValue` on the event, which is useful to assert on.
@@ -1724,7 +1724,7 @@ trait Cypress extends js.Object {
   @JSName("on")
   def `on_window:load`(
     action: cypressLib.cypressLibStrings.`window:load`,
-    fn: js.Function1[/* win */ mochaLib.Window, scala.Unit]
+    fn: js.Function1[/* win */ stdLib.Window, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires when your application is has unloaded and is navigating away. The real event object is provided to you. This event is not cancelable.

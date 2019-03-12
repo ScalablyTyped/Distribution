@@ -37,14 +37,14 @@ object AuxRecordContainer {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     records: AuxRecord,
     relationshipType: java.lang.String,
     tableAlias: java.lang.String,
     tableName: java.lang.String
   ): AuxRecordContainer = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, records = records, relationshipType = relationshipType, tableAlias = tableAlias, tableName = tableName)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), records = records, relationshipType = relationshipType, tableAlias = tableAlias, tableName = tableName)
   
     __obj.asInstanceOf[AuxRecordContainer]
   }

@@ -26,12 +26,12 @@ object XTextTablesSupplier {
   @scala.inline
   def apply(
     TextTables: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
-    acquire: js.Function0[scala.Unit],
-    getTextTables: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getTextTables: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTextTablesSupplier = {
-    val __obj = js.Dynamic.literal(TextTables = TextTables, acquire = acquire, getTextTables = getTextTables, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(TextTables = TextTables, acquire = js.Any.fromFunction0(acquire), getTextTables = js.Any.fromFunction0(getTextTables), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTextTablesSupplier]
   }

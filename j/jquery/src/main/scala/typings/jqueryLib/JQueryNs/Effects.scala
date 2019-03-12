@@ -131,11 +131,11 @@ object Effects {
     interval: scala.Double,
     off: scala.Boolean,
     step: PlainObject[AnimationHook[Node]],
-    stop: js.Function0[scala.Unit],
-    tick: js.Function0[scala.Unit],
-    timer: js.Function1[TickFunction[_], scala.Unit]
+    stop: () => scala.Unit,
+    tick: () => scala.Unit,
+    timer: TickFunction[_] => scala.Unit
   ): Effects = {
-    val __obj = js.Dynamic.literal(interval = interval, off = off, step = step, stop = stop, tick = tick, timer = timer)
+    val __obj = js.Dynamic.literal(interval = interval, off = off, step = step, stop = js.Any.fromFunction0(stop), tick = js.Any.fromFunction0(tick), timer = js.Any.fromFunction1(timer))
   
     __obj.asInstanceOf[Effects]
   }

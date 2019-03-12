@@ -25,27 +25,27 @@ trait GmailSinglePromotionAdBuilder[GmailSinglePromotionAd] extends AdBuilder[Gm
 object GmailSinglePromotionAdBuilder {
   @scala.inline
   def apply[GmailSinglePromotionAd](
-    build: js.Function0[AdWordsOperation[GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]]],
-    withAdvertiser: js.Function1[java.lang.String, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
-    withCallToAction: js.Function1[java.lang.String, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
-    withCallToActionButtonColor: js.Function1[java.lang.String, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
-    withCallToActionTextColor: js.Function1[java.lang.String, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
-    withContent: js.Function1[java.lang.String, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
-    withCustomParameters: js.Function1[js.Object, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
-    withDescription: js.Function1[java.lang.String, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
-    withDisplayUrl: js.Function1[java.lang.String, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
-    withFinalUrl: js.Function1[java.lang.String, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
-    withHeader: js.Function1[Media, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
-    withHeadline: js.Function1[java.lang.String, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
-    withHeadlineColor: js.Function1[java.lang.String, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
-    withImage: js.Function1[Media, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
-    withLogo: js.Function1[Media, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
-    withMobileFinalUrl: js.Function1[java.lang.String, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
-    withName: js.Function1[java.lang.String, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
-    withSubject: js.Function1[java.lang.String, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
-    withTrackingTemplate: js.Function1[java.lang.String, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]]
+    build: () => AdWordsOperation[GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
+    withAdvertiser: java.lang.String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd],
+    withCallToAction: java.lang.String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd],
+    withCallToActionButtonColor: java.lang.String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd],
+    withCallToActionTextColor: java.lang.String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd],
+    withContent: java.lang.String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd],
+    withCustomParameters: js.Object => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd],
+    withDescription: java.lang.String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd],
+    withDisplayUrl: java.lang.String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd],
+    withFinalUrl: java.lang.String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd],
+    withHeader: Media => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd],
+    withHeadline: java.lang.String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd],
+    withHeadlineColor: java.lang.String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd],
+    withImage: Media => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd],
+    withLogo: Media => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd],
+    withMobileFinalUrl: java.lang.String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd],
+    withName: java.lang.String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd],
+    withSubject: java.lang.String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd],
+    withTrackingTemplate: java.lang.String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]
   ): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd] = {
-    val __obj = js.Dynamic.literal(build = build, withAdvertiser = withAdvertiser, withCallToAction = withCallToAction, withCallToActionButtonColor = withCallToActionButtonColor, withCallToActionTextColor = withCallToActionTextColor, withContent = withContent, withCustomParameters = withCustomParameters, withDescription = withDescription, withDisplayUrl = withDisplayUrl, withFinalUrl = withFinalUrl, withHeader = withHeader, withHeadline = withHeadline, withHeadlineColor = withHeadlineColor, withImage = withImage, withLogo = withLogo, withMobileFinalUrl = withMobileFinalUrl, withName = withName, withSubject = withSubject, withTrackingTemplate = withTrackingTemplate)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), withAdvertiser = js.Any.fromFunction1(withAdvertiser), withCallToAction = js.Any.fromFunction1(withCallToAction), withCallToActionButtonColor = js.Any.fromFunction1(withCallToActionButtonColor), withCallToActionTextColor = js.Any.fromFunction1(withCallToActionTextColor), withContent = js.Any.fromFunction1(withContent), withCustomParameters = js.Any.fromFunction1(withCustomParameters), withDescription = js.Any.fromFunction1(withDescription), withDisplayUrl = js.Any.fromFunction1(withDisplayUrl), withFinalUrl = js.Any.fromFunction1(withFinalUrl), withHeader = js.Any.fromFunction1(withHeader), withHeadline = js.Any.fromFunction1(withHeadline), withHeadlineColor = js.Any.fromFunction1(withHeadlineColor), withImage = js.Any.fromFunction1(withImage), withLogo = js.Any.fromFunction1(withLogo), withMobileFinalUrl = js.Any.fromFunction1(withMobileFinalUrl), withName = js.Any.fromFunction1(withName), withSubject = js.Any.fromFunction1(withSubject), withTrackingTemplate = js.Any.fromFunction1(withTrackingTemplate))
   
     __obj.asInstanceOf[GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]]
   }

@@ -145,20 +145,20 @@ object XAccessibleComponent {
     Location: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
     LocationOnScreen: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
     Size: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
-    acquire: js.Function0[scala.Unit],
-    containsPoint: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Boolean],
-    getAccessibleAtPoint: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, XAccessible],
-    getBackground: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color],
-    getBounds: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
-    getForeground: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color],
-    getLocation: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point],
-    getLocationOnScreen: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point],
-    getSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
-    grabFocus: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    containsPoint: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point => scala.Boolean,
+    getAccessibleAtPoint: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point => XAccessible,
+    getBackground: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    getBounds: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    getForeground: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    getLocation: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    getLocationOnScreen: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    getSize: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    grabFocus: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAccessibleComponent = {
-    val __obj = js.Dynamic.literal(Background = Background, Bounds = Bounds, Foreground = Foreground, Location = Location, LocationOnScreen = LocationOnScreen, Size = Size, acquire = acquire, containsPoint = containsPoint, getAccessibleAtPoint = getAccessibleAtPoint, getBackground = getBackground, getBounds = getBounds, getForeground = getForeground, getLocation = getLocation, getLocationOnScreen = getLocationOnScreen, getSize = getSize, grabFocus = grabFocus, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Background = Background, Bounds = Bounds, Foreground = Foreground, Location = Location, LocationOnScreen = LocationOnScreen, Size = Size, acquire = js.Any.fromFunction0(acquire), containsPoint = js.Any.fromFunction1(containsPoint), getAccessibleAtPoint = js.Any.fromFunction1(getAccessibleAtPoint), getBackground = js.Any.fromFunction0(getBackground), getBounds = js.Any.fromFunction0(getBounds), getForeground = js.Any.fromFunction0(getForeground), getLocation = js.Any.fromFunction0(getLocation), getLocationOnScreen = js.Any.fromFunction0(getLocationOnScreen), getSize = js.Any.fromFunction0(getSize), grabFocus = js.Any.fromFunction0(grabFocus), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAccessibleComponent]
   }

@@ -12,7 +12,7 @@ object ^ extends js.Object {
   /**
     * MediaRecoreder object available in some browsers.
     */
-  var MediaRecorder: babylonjsLib.MediaRecorderConstructor = js.native
+  var MediaRecorder: MediaRecorderConstructor = js.native
   var WebAssembly: js.Any = js.native
   val safePostMessage: js.Any = js.native
   def importScripts(urls: java.lang.String*): scala.Unit = js.native

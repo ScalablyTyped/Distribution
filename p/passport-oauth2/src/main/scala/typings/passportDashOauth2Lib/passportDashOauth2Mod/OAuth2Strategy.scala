@@ -19,12 +19,12 @@ trait OAuth2Strategy
   def authenticate(req: expressLib.expressMod.eNs.Request): scala.Unit = js.native
   def authenticate(req: expressLib.expressMod.eNs.Request, options: js.Any): scala.Unit = js.native
   def authorizationParams(options: js.Any): js.Object = js.native
-  def parseErrorResponse(body: js.Any, status: scala.Double): nodeLib.Error | scala.Null = js.native
+  def parseErrorResponse(body: js.Any, status: scala.Double): stdLib.Error | scala.Null = js.native
   def tokenParams(options: js.Any): js.Object = js.native
   def userProfile(
     accessToken: java.lang.String,
     done: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[stdLib.Error | scala.Null], 
       /* profile */ js.UndefOr[js.Any], 
       scala.Unit
     ]

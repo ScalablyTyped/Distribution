@@ -14,11 +14,11 @@ trait KeyspaceableQueryBuilder extends js.Object {
 object KeyspaceableQueryBuilder {
   @scala.inline
   def apply(
-    withDurableWrites: js.Function1[scala.Boolean, KeyspaceableQueryBuilder],
-    withNetworkTopologyStrategy: js.Function1[MappedDict[scala.Double], KeyspaceableQueryBuilder],
-    withSimpleStrategy: js.Function1[scala.Double, KeyspaceableQueryBuilder]
+    withDurableWrites: scala.Boolean => KeyspaceableQueryBuilder,
+    withNetworkTopologyStrategy: MappedDict[scala.Double] => KeyspaceableQueryBuilder,
+    withSimpleStrategy: scala.Double => KeyspaceableQueryBuilder
   ): KeyspaceableQueryBuilder = {
-    val __obj = js.Dynamic.literal(withDurableWrites = withDurableWrites, withNetworkTopologyStrategy = withNetworkTopologyStrategy, withSimpleStrategy = withSimpleStrategy)
+    val __obj = js.Dynamic.literal(withDurableWrites = js.Any.fromFunction1(withDurableWrites), withNetworkTopologyStrategy = js.Any.fromFunction1(withNetworkTopologyStrategy), withSimpleStrategy = js.Any.fromFunction1(withSimpleStrategy))
   
     __obj.asInstanceOf[KeyspaceableQueryBuilder]
   }

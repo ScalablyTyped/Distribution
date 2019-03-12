@@ -47,7 +47,7 @@ object SizePerPageDropDownProps {
     className: java.lang.String = null,
     currSizePerPage: java.lang.String = null,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: js.Function1[/* toggleDropDown */ js.Function0[scala.Unit], scala.Unit] = null,
+    onClick: /* toggleDropDown */ js.Function0[scala.Unit] => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     options: js.Array[scala.Double] | js.Array[reactDashBootstrapDashTableLib.Anon_Text] = null,
     variation: DropDirection = null
@@ -57,7 +57,7 @@ object SizePerPageDropDownProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (currSizePerPage != null) __obj.updateDynamic("currSizePerPage")(currSizePerPage)
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (variation != null) __obj.updateDynamic("variation")(variation)

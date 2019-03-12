@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.AccountRuleCondition")
 @js.native
 class AccountRuleCondition protected () extends js.Object {
-  var Account: Account = js.native
-  val Application: Application = js.native
+  var Account: activexDashOutlookLib.OutlookNs.Account = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   val ConditionType: OlRuleConditionType = js.native
   var Enabled: scala.Boolean = js.native

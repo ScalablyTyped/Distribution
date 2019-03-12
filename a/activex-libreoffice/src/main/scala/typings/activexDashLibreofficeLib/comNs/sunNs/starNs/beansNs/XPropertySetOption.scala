@@ -14,12 +14,12 @@ trait XPropertySetOption
 object XPropertySetOption {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    enableChangeListenerNotification: js.Function1[scala.Boolean, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    enableChangeListenerNotification: scala.Boolean => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XPropertySetOption = {
-    val __obj = js.Dynamic.literal(acquire = acquire, enableChangeListenerNotification = enableChangeListenerNotification, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), enableChangeListenerNotification = js.Any.fromFunction1(enableChangeListenerNotification), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XPropertySetOption]
   }

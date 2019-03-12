@@ -27,15 +27,15 @@ object GetLocationOptions {
   @scala.inline
   def apply(
     cacheTimeout: scala.Double,
-    success: js.Function1[LocationData, scala.Unit],
+    success: LocationData => scala.Unit,
     `type`: aliDashAppLib.aliDashAppLibNumbers.`0` | aliDashAppLib.aliDashAppLibNumbers.`1` | aliDashAppLib.aliDashAppLibNumbers.`2` | aliDashAppLib.aliDashAppLibNumbers.`3`,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
-    fail: js.Function1[js.Any, scala.Unit] = null
+    complete: /* res */ js.Any => scala.Unit = null,
+    fail: js.Any => scala.Unit = null
   ): GetLocationOptions = {
-    val __obj = js.Dynamic.literal(cacheTimeout = cacheTimeout, success = success)
+    val __obj = js.Dynamic.literal(cacheTimeout = cacheTimeout, success = js.Any.fromFunction1(success))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[GetLocationOptions]
   }
 }

@@ -42,19 +42,19 @@ trait Endpoint[Self] extends js.Object {
 object Endpoint {
   @scala.inline
   def apply[Self](
-    addFullRequestInterceptor: js.Function1[FullRequestInterceptor, Self],
-    addFullResponseInterceptor: js.Function1[ResponseInterceptor, Self],
-    addRequestInterceptor: js.Function1[RequestInterceptor, Self],
-    addResponseInterceptor: js.Function1[ResponseInterceptor, Self],
-    fullRequestInterceptors: js.Function0[js.Array[FullRequestInterceptor]],
-    fullResponseInterceptors: js.Function0[js.Array[ResponseInterceptor]],
-    header: js.Function2[java.lang.String, js.Any, Self],
-    headers: js.Function0[Headers],
-    requestInterceptors: js.Function0[js.Array[RequestInterceptor]],
-    responseInterceptors: js.Function0[js.Array[ResponseInterceptor]],
-    url: js.Function0[java.lang.String]
+    addFullRequestInterceptor: FullRequestInterceptor => Self,
+    addFullResponseInterceptor: ResponseInterceptor => Self,
+    addRequestInterceptor: RequestInterceptor => Self,
+    addResponseInterceptor: ResponseInterceptor => Self,
+    fullRequestInterceptors: () => js.Array[FullRequestInterceptor],
+    fullResponseInterceptors: () => js.Array[ResponseInterceptor],
+    header: (java.lang.String, js.Any) => Self,
+    headers: () => Headers,
+    requestInterceptors: () => js.Array[RequestInterceptor],
+    responseInterceptors: () => js.Array[ResponseInterceptor],
+    url: () => java.lang.String
   ): Endpoint[Self] = {
-    val __obj = js.Dynamic.literal(addFullRequestInterceptor = addFullRequestInterceptor, addFullResponseInterceptor = addFullResponseInterceptor, addRequestInterceptor = addRequestInterceptor, addResponseInterceptor = addResponseInterceptor, fullRequestInterceptors = fullRequestInterceptors, fullResponseInterceptors = fullResponseInterceptors, header = header, headers = headers, requestInterceptors = requestInterceptors, responseInterceptors = responseInterceptors, url = url)
+    val __obj = js.Dynamic.literal(addFullRequestInterceptor = js.Any.fromFunction1(addFullRequestInterceptor), addFullResponseInterceptor = js.Any.fromFunction1(addFullResponseInterceptor), addRequestInterceptor = js.Any.fromFunction1(addRequestInterceptor), addResponseInterceptor = js.Any.fromFunction1(addResponseInterceptor), fullRequestInterceptors = js.Any.fromFunction0(fullRequestInterceptors), fullResponseInterceptors = js.Any.fromFunction0(fullResponseInterceptors), header = js.Any.fromFunction2(header), headers = js.Any.fromFunction0(headers), requestInterceptors = js.Any.fromFunction0(requestInterceptors), responseInterceptors = js.Any.fromFunction0(responseInterceptors), url = js.Any.fromFunction0(url))
   
     __obj.asInstanceOf[Endpoint[Self]]
   }

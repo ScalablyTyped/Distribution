@@ -31,13 +31,13 @@ trait IGridExpandableApi[TEntity] extends js.Object {
 object IGridExpandableApi {
   @scala.inline
   def apply[TEntity](
-    collapseAllRows: js.Function0[scala.Unit],
-    expandAllRows: js.Function0[scala.Unit],
+    collapseAllRows: () => scala.Unit,
+    expandAllRows: () => scala.Unit,
     on: uiDashGridLib.Anon_HandlerRowExpandedStateChanged[TEntity],
-    toggleAllRows: js.Function0[scala.Unit],
-    toggleRowExpansion: js.Function1[TEntity, scala.Unit]
+    toggleAllRows: () => scala.Unit,
+    toggleRowExpansion: TEntity => scala.Unit
   ): IGridExpandableApi[TEntity] = {
-    val __obj = js.Dynamic.literal(collapseAllRows = collapseAllRows, expandAllRows = expandAllRows, on = on, toggleAllRows = toggleAllRows, toggleRowExpansion = toggleRowExpansion)
+    val __obj = js.Dynamic.literal(collapseAllRows = js.Any.fromFunction0(collapseAllRows), expandAllRows = js.Any.fromFunction0(expandAllRows), on = on, toggleAllRows = js.Any.fromFunction0(toggleAllRows), toggleRowExpansion = js.Any.fromFunction1(toggleRowExpansion))
   
     __obj.asInstanceOf[IGridExpandableApi[TEntity]]
   }

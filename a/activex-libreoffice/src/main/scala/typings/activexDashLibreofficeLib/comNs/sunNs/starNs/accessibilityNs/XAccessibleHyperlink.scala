@@ -78,20 +78,20 @@ object XAccessibleHyperlink {
     AccessibleActionCount: scala.Double,
     EndIndex: scala.Double,
     StartIndex: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    doAccessibleAction: js.Function1[scala.Double, scala.Boolean],
-    getAccessibleActionAnchor: js.Function1[scala.Double, js.Any],
-    getAccessibleActionCount: js.Function0[scala.Double],
-    getAccessibleActionDescription: js.Function1[scala.Double, java.lang.String],
-    getAccessibleActionKeyBinding: js.Function1[scala.Double, XAccessibleKeyBinding],
-    getAccessibleActionObject: js.Function1[scala.Double, js.Any],
-    getEndIndex: js.Function0[scala.Double],
-    getStartIndex: js.Function0[scala.Double],
-    isValid: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    doAccessibleAction: scala.Double => scala.Boolean,
+    getAccessibleActionAnchor: scala.Double => js.Any,
+    getAccessibleActionCount: () => scala.Double,
+    getAccessibleActionDescription: scala.Double => java.lang.String,
+    getAccessibleActionKeyBinding: scala.Double => XAccessibleKeyBinding,
+    getAccessibleActionObject: scala.Double => js.Any,
+    getEndIndex: () => scala.Double,
+    getStartIndex: () => scala.Double,
+    isValid: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAccessibleHyperlink = {
-    val __obj = js.Dynamic.literal(AccessibleActionCount = AccessibleActionCount, EndIndex = EndIndex, StartIndex = StartIndex, acquire = acquire, doAccessibleAction = doAccessibleAction, getAccessibleActionAnchor = getAccessibleActionAnchor, getAccessibleActionCount = getAccessibleActionCount, getAccessibleActionDescription = getAccessibleActionDescription, getAccessibleActionKeyBinding = getAccessibleActionKeyBinding, getAccessibleActionObject = getAccessibleActionObject, getEndIndex = getEndIndex, getStartIndex = getStartIndex, isValid = isValid, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(AccessibleActionCount = AccessibleActionCount, EndIndex = EndIndex, StartIndex = StartIndex, acquire = js.Any.fromFunction0(acquire), doAccessibleAction = js.Any.fromFunction1(doAccessibleAction), getAccessibleActionAnchor = js.Any.fromFunction1(getAccessibleActionAnchor), getAccessibleActionCount = js.Any.fromFunction0(getAccessibleActionCount), getAccessibleActionDescription = js.Any.fromFunction1(getAccessibleActionDescription), getAccessibleActionKeyBinding = js.Any.fromFunction1(getAccessibleActionKeyBinding), getAccessibleActionObject = js.Any.fromFunction1(getAccessibleActionObject), getEndIndex = js.Any.fromFunction0(getEndIndex), getStartIndex = js.Any.fromFunction0(getStartIndex), isValid = js.Any.fromFunction0(isValid), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAccessibleHyperlink]
   }

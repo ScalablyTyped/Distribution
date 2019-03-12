@@ -21,16 +21,16 @@ trait IssuingDistributionPoint extends js.Object {
 object IssuingDistributionPoint {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     indirectCRL: scala.Boolean,
     onlyContainsAttributeCerts: scala.Boolean,
     onlyContainsUserCerts: scala.Boolean,
     onlySomeReasons: scala.Double,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     distributionPoint: js.Array[pkijsLib.srcGeneralNameMod.default] | pkijsLib.srcRelativeDistinguishedNamesMod.default = null
   ): IssuingDistributionPoint = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, indirectCRL = indirectCRL, onlyContainsAttributeCerts = onlyContainsAttributeCerts, onlyContainsUserCerts = onlyContainsUserCerts, onlySomeReasons = onlySomeReasons, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), indirectCRL = indirectCRL, onlyContainsAttributeCerts = onlyContainsAttributeCerts, onlyContainsUserCerts = onlyContainsUserCerts, onlySomeReasons = onlySomeReasons, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
     if (distributionPoint != null) __obj.updateDynamic("distributionPoint")(distributionPoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuingDistributionPoint]
   }

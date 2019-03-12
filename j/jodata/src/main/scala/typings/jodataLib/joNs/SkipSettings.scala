@@ -15,11 +15,11 @@ object SkipSettings {
   def apply(
     DefaultSkip: scala.Double,
     Skip: scala.Double,
-    isSet: js.Function0[scala.Boolean],
-    reset: js.Function0[scala.Unit],
-    toString: js.Function0[java.lang.String]
+    isSet: () => scala.Boolean,
+    reset: () => scala.Unit,
+    toString: () => java.lang.String
   ): SkipSettings = {
-    val __obj = js.Dynamic.literal(DefaultSkip = DefaultSkip, Skip = Skip, isSet = isSet, reset = reset, toString = toString)
+    val __obj = js.Dynamic.literal(DefaultSkip = DefaultSkip, Skip = Skip, isSet = js.Any.fromFunction0(isSet), reset = js.Any.fromFunction0(reset), toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[SkipSettings]
   }

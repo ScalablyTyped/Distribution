@@ -51,22 +51,22 @@ object AcceptOptions {
     ignoreDeclined: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreErrored: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreUnaccepted: js.UndefOr[scala.Boolean] = js.undefined,
-    onAccepted: js.Function1[/* info */ HotNotifierInfo, scala.Unit] = null,
-    onDeclined: js.Function1[/* info */ HotNotifierInfo, scala.Unit] = null,
-    onDisposed: js.Function1[/* info */ HotNotifierInfo, scala.Unit] = null,
-    onErrored: js.Function1[/* info */ HotNotifierInfo, scala.Unit] = null,
-    onUnaccepted: js.Function1[/* info */ HotNotifierInfo, scala.Unit] = null
+    onAccepted: /* info */ HotNotifierInfo => scala.Unit = null,
+    onDeclined: /* info */ HotNotifierInfo => scala.Unit = null,
+    onDisposed: /* info */ HotNotifierInfo => scala.Unit = null,
+    onErrored: /* info */ HotNotifierInfo => scala.Unit = null,
+    onUnaccepted: /* info */ HotNotifierInfo => scala.Unit = null
   ): AcceptOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoApply)) __obj.updateDynamic("autoApply")(autoApply)
     if (!js.isUndefined(ignoreDeclined)) __obj.updateDynamic("ignoreDeclined")(ignoreDeclined)
     if (!js.isUndefined(ignoreErrored)) __obj.updateDynamic("ignoreErrored")(ignoreErrored)
     if (!js.isUndefined(ignoreUnaccepted)) __obj.updateDynamic("ignoreUnaccepted")(ignoreUnaccepted)
-    if (onAccepted != null) __obj.updateDynamic("onAccepted")(onAccepted)
-    if (onDeclined != null) __obj.updateDynamic("onDeclined")(onDeclined)
-    if (onDisposed != null) __obj.updateDynamic("onDisposed")(onDisposed)
-    if (onErrored != null) __obj.updateDynamic("onErrored")(onErrored)
-    if (onUnaccepted != null) __obj.updateDynamic("onUnaccepted")(onUnaccepted)
+    if (onAccepted != null) __obj.updateDynamic("onAccepted")(js.Any.fromFunction1(onAccepted))
+    if (onDeclined != null) __obj.updateDynamic("onDeclined")(js.Any.fromFunction1(onDeclined))
+    if (onDisposed != null) __obj.updateDynamic("onDisposed")(js.Any.fromFunction1(onDisposed))
+    if (onErrored != null) __obj.updateDynamic("onErrored")(js.Any.fromFunction1(onErrored))
+    if (onUnaccepted != null) __obj.updateDynamic("onUnaccepted")(js.Any.fromFunction1(onUnaccepted))
     __obj.asInstanceOf[AcceptOptions]
   }
 }

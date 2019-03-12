@@ -11,10 +11,8 @@ trait Anon_ContextRendererAnonInsertD[K, D] extends js.Object {
 
 object Anon_ContextRendererAnonInsertD {
   @scala.inline
-  def apply[K, D](
-    renderer: js.Function1[atOracleOraclejetLib.ojsunburstMod.ojSunburstNs.RootNodeContext[K, D], Anon_Insert]
-  ): Anon_ContextRendererAnonInsertD[K, D] = {
-    val __obj = js.Dynamic.literal(renderer = renderer)
+  def apply[K, D](renderer: atOracleOraclejetLib.ojsunburstMod.ojSunburstNs.RootNodeContext[K, D] => Anon_Insert): Anon_ContextRendererAnonInsertD[K, D] = {
+    val __obj = js.Dynamic.literal(renderer = js.Any.fromFunction1(renderer))
   
     __obj.asInstanceOf[Anon_ContextRendererAnonInsertD[K, D]]
   }

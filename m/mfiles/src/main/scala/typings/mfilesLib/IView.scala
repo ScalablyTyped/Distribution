@@ -31,8 +31,8 @@ object IView {
   @scala.inline
   def apply(
     AccessControlList: IAccessControlList,
-    Clone: js.Function0[IView],
-    CloneFrom: js.Function1[IView, scala.Unit],
+    Clone: () => IView,
+    CloneFrom: IView => scala.Unit,
     Common: scala.Boolean,
     GUID: java.lang.String,
     HasParent: scala.Boolean,
@@ -50,7 +50,7 @@ object IView {
     ViewType: mfilesLib.MFilesNs.MFViewType,
     Visible: scala.Boolean
   ): IView = {
-    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, Clone = Clone, CloneFrom = CloneFrom, Common = Common, GUID = GUID, HasParent = HasParent, ID = ID, Levels = Levels, LookInAllVersions = LookInAllVersions, Name = Name, Parent = Parent, ReturnLatestVisibleVersion = ReturnLatestVisibleVersion, SearchConditions = SearchConditions, SearchDef = SearchDef, SearchFlags = SearchFlags, ViewFlags = ViewFlags, ViewLocation = ViewLocation, ViewType = ViewType, Visible = Visible)
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, Clone = js.Any.fromFunction0(Clone), CloneFrom = js.Any.fromFunction1(CloneFrom), Common = Common, GUID = GUID, HasParent = HasParent, ID = ID, Levels = Levels, LookInAllVersions = LookInAllVersions, Name = Name, Parent = Parent, ReturnLatestVisibleVersion = ReturnLatestVisibleVersion, SearchConditions = SearchConditions, SearchDef = SearchDef, SearchFlags = SearchFlags, ViewFlags = ViewFlags, ViewLocation = ViewLocation, ViewType = ViewType, Visible = Visible)
   
     __obj.asInstanceOf[IView]
   }

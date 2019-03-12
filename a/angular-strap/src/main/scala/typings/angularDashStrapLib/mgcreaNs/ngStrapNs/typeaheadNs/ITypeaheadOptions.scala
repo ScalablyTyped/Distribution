@@ -39,11 +39,11 @@ object ITypeaheadOptions {
     id: java.lang.String = null,
     limit: scala.Int | scala.Double = null,
     minLength: scala.Int | scala.Double = null,
-    onBeforeHide: js.Function1[/* typeahead */ ITypeahead, scala.Unit] = null,
-    onBeforeShow: js.Function1[/* typeahead */ ITypeahead, scala.Unit] = null,
-    onHide: js.Function1[/* typeahead */ ITypeahead, scala.Unit] = null,
-    onSelect: js.Function1[/* typeahead */ ITypeahead, scala.Unit] = null,
-    onShow: js.Function1[/* typeahead */ ITypeahead, scala.Unit] = null,
+    onBeforeHide: /* typeahead */ ITypeahead => scala.Unit = null,
+    onBeforeShow: /* typeahead */ ITypeahead => scala.Unit = null,
+    onHide: /* typeahead */ ITypeahead => scala.Unit = null,
+    onSelect: /* typeahead */ ITypeahead => scala.Unit = null,
+    onShow: /* typeahead */ ITypeahead => scala.Unit = null,
     placement: java.lang.String = null,
     template: java.lang.String = null,
     trigger: java.lang.String = null,
@@ -60,11 +60,11 @@ object ITypeaheadOptions {
     if (id != null) __obj.updateDynamic("id")(id)
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(onBeforeHide)
-    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(onBeforeShow)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(js.Any.fromFunction1(onBeforeHide))
+    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(js.Any.fromFunction1(onBeforeShow))
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction1(onHide))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (placement != null) __obj.updateDynamic("placement")(placement)
     if (template != null) __obj.updateDynamic("template")(template)
     if (trigger != null) __obj.updateDynamic("trigger")(trigger)

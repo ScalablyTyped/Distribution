@@ -13,10 +13,10 @@ trait IUssdSession extends js.Object {
 object IUssdSession {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
-    sendMessageAndGetReplyAsync: js.Function1[UssdMessage, winrtLib.WindowsNs.FoundationNs.IAsyncOperation[UssdReply]]
+    close: () => scala.Unit,
+    sendMessageAndGetReplyAsync: UssdMessage => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[UssdReply]
   ): IUssdSession = {
-    val __obj = js.Dynamic.literal(close = close, sendMessageAndGetReplyAsync = sendMessageAndGetReplyAsync)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), sendMessageAndGetReplyAsync = js.Any.fromFunction1(sendMessageAndGetReplyAsync))
   
     __obj.asInstanceOf[IUssdSession]
   }

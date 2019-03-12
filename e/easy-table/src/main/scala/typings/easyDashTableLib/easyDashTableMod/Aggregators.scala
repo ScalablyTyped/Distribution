@@ -29,14 +29,10 @@ object Aggregators {
   @scala.inline
   def apply(
     avg: js.Any,
-    printer: js.Function2[
-      java.lang.String, 
-      easyDashTableLib.CellPrinter[js.Any], 
-      easyDashTableLib.CellPrinter[js.Any]
-    ],
+    printer: (java.lang.String, easyDashTableLib.CellPrinter[js.Any]) => easyDashTableLib.CellPrinter[js.Any],
     sum: js.Any
   ): Aggregators = {
-    val __obj = js.Dynamic.literal(avg = avg, printer = printer, sum = sum)
+    val __obj = js.Dynamic.literal(avg = avg, printer = js.Any.fromFunction2(printer), sum = sum)
   
     __obj.asInstanceOf[Aggregators]
   }

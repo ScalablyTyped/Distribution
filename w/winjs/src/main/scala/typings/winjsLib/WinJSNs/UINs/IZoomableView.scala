@@ -64,16 +64,16 @@ trait IZoomableView[T] extends js.Object {
 object IZoomableView {
   @scala.inline
   def apply[T](
-    beginZoom: js.Function0[scala.Unit],
-    configureForZoom: js.Function4[scala.Boolean, scala.Boolean, js.Function, scala.Double, scala.Unit],
-    endZoom: js.Function1[scala.Boolean, scala.Unit],
-    getCurrentItem: js.Function0[winjsLib.WinJSNs.Promise[winjsLib.Anon_Item[T]]],
-    getPanAxis: js.Function0[java.lang.String],
-    handlePointer: js.Function1[java.lang.String, scala.Unit],
-    positionItem: js.Function2[T, winjsLib.WinJSNs.UtilitiesNs.IPosition, scala.Unit],
-    setCurrentItem: js.Function2[scala.Double, scala.Double, scala.Unit]
+    beginZoom: () => scala.Unit,
+    configureForZoom: (scala.Boolean, scala.Boolean, js.Function, scala.Double) => scala.Unit,
+    endZoom: scala.Boolean => scala.Unit,
+    getCurrentItem: () => winjsLib.WinJSNs.Promise[winjsLib.Anon_Item[T]],
+    getPanAxis: () => java.lang.String,
+    handlePointer: java.lang.String => scala.Unit,
+    positionItem: (T, winjsLib.WinJSNs.UtilitiesNs.IPosition) => scala.Unit,
+    setCurrentItem: (scala.Double, scala.Double) => scala.Unit
   ): IZoomableView[T] = {
-    val __obj = js.Dynamic.literal(beginZoom = beginZoom, configureForZoom = configureForZoom, endZoom = endZoom, getCurrentItem = getCurrentItem, getPanAxis = getPanAxis, handlePointer = handlePointer, positionItem = positionItem, setCurrentItem = setCurrentItem)
+    val __obj = js.Dynamic.literal(beginZoom = js.Any.fromFunction0(beginZoom), configureForZoom = js.Any.fromFunction4(configureForZoom), endZoom = js.Any.fromFunction1(endZoom), getCurrentItem = js.Any.fromFunction0(getCurrentItem), getPanAxis = js.Any.fromFunction0(getPanAxis), handlePointer = js.Any.fromFunction1(handlePointer), positionItem = js.Any.fromFunction2(positionItem), setCurrentItem = js.Any.fromFunction2(setCurrentItem))
   
     __obj.asInstanceOf[IZoomableView[T]]
   }

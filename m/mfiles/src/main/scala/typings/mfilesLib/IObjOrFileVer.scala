@@ -14,13 +14,8 @@ trait IObjOrFileVer extends js.Object {
 
 object IObjOrFileVer {
   @scala.inline
-  def apply(
-    Clone: js.Function0[IObjOrFileVer],
-    FileVer: IFileVer,
-    IsFile: js.Function0[scala.Boolean],
-    ObjVer: IObjVer
-  ): IObjOrFileVer = {
-    val __obj = js.Dynamic.literal(Clone = Clone, FileVer = FileVer, IsFile = IsFile, ObjVer = ObjVer)
+  def apply(Clone: () => IObjOrFileVer, FileVer: IFileVer, IsFile: () => scala.Boolean, ObjVer: IObjVer): IObjOrFileVer = {
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), FileVer = FileVer, IsFile = js.Any.fromFunction0(IsFile), ObjVer = ObjVer)
   
     __obj.asInstanceOf[IObjOrFileVer]
   }

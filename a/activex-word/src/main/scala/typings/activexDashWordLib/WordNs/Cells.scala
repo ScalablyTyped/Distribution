@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.Cells")
 @js.native
 class Cells protected () extends js.Object {
-  val Application: Application = js.native
-  var Borders: Borders = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
+  var Borders: activexDashWordLib.WordNs.Borders = js.native
   val Count: scala.Double = js.native
   val Creator: scala.Double = js.native
   var Height: scala.Double = js.native
@@ -18,7 +18,7 @@ class Cells protected () extends js.Object {
   val Parent: js.Any = js.native
   var PreferredWidth: scala.Double = js.native
   var PreferredWidthType: WdPreferredWidthType = js.native
-  val Shading: Shading = js.native
+  val Shading: activexDashWordLib.WordNs.Shading = js.native
   var VerticalAlignment: WdCellVerticalAlignment = js.native
   var Width: scala.Double = js.native
   var `Word.Cells_typekey`: Cells = js.native

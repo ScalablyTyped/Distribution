@@ -29,7 +29,7 @@ trait Anon_BlTask extends js.Object {
     command: java.lang.String,
     options: nodeLib.childUnderscoreProcessMod.ExecOptions,
     callback: js.Function3[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       scala.Unit
@@ -44,7 +44,7 @@ trait Anon_BlTask extends js.Object {
     command: java.lang.String,
     options: nodeLib.childUnderscoreProcessMod.ExecOptions,
     callback: js.Function3[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       scala.Unit
@@ -61,7 +61,7 @@ trait Anon_BlTask extends js.Object {
     dest: java.lang.String,
     options: nodeLib.childUnderscoreProcessMod.ExecOptions,
     callback: js.Function3[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       scala.Unit

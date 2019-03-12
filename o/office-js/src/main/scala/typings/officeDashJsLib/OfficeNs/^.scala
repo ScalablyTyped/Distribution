@@ -11,7 +11,7 @@ object ^ extends js.Object {
   /** A Promise object. Promises can be chained via ".then", and errors can be caught via ".catch". 
     * When a browser-provided native Promise implementation is available, Office.Promise will switch to use the native Promise instead.
     */
-  var Promise: officeDashJsLib.OfficeNs.IPromiseConstructor = js.native
+  var Promise: IPromiseConstructor = js.native
   /**
     * Gets the Context object that represents the runtime environment of the add-in and provides access to the top-level objects of the API.
     * 
@@ -36,7 +36,7 @@ object ^ extends js.Object {
     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
     *  </table>
     */
-  var context: officeDashJsLib.OfficeNs.Context = js.native
+  var context: Context = js.native
   /**
     * Occurs when the runtime environment is loaded and the add-in is ready to start interacting with the application and hosted document. 
     * 
@@ -74,7 +74,7 @@ object ^ extends js.Object {
     * 
     * @param reason Indicates how the app was initialized.
     */
-  def initialize(reason: officeDashJsLib.OfficeNs.InitializationReason): scala.Unit = js.native
+  def initialize(reason: InitializationReason): scala.Unit = js.native
   /**
     * Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized yet, the callback or promise 
     * will wait until the Office host is ready to accept API calls. Note that though this API is intended to be used inside an Office add-in, it can 
@@ -111,11 +111,8 @@ object ^ extends js.Object {
     *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
     *  </table>
     */
-  def select(expression: java.lang.String): officeDashJsLib.OfficeNs.Binding = js.native
-  def select(
-    expression: java.lang.String,
-    callback: js.Function1[/* result */ officeDashJsLib.OfficeNs.AsyncResult[_], scala.Unit]
-  ): officeDashJsLib.OfficeNs.Binding = js.native
+  def select(expression: java.lang.String): Binding = js.native
+  def select(expression: java.lang.String, callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]): Binding = js.native
   /**
     * Toggles on and off the `Office` alias for the full `Microsoft.Office.WebExtension` namespace.
     * 

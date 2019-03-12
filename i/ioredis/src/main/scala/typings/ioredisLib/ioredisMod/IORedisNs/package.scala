@@ -6,6 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object IORedisNs {
+  type CallbackFunction[T] = js.Function2[
+    /* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException | scala.Null], 
+    /* result */ js.UndefOr[T], 
+    scala.Unit
+  ]
   type ClusterNode = java.lang.String | scala.Double | NodeConfiguration
   type DNSLookupFunction = js.Function2[
     /* hostname */ java.lang.String, 

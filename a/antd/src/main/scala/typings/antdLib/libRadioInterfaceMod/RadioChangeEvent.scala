@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RadioChangeEvent extends js.Object {
-  var nativeEvent: reactLib.MouseEvent
+  var nativeEvent: stdLib.MouseEvent
   var target: RadioChangeEventTarget
   def preventDefault(): scala.Unit
   def stopPropagation(): scala.Unit
@@ -15,12 +15,12 @@ trait RadioChangeEvent extends js.Object {
 object RadioChangeEvent {
   @scala.inline
   def apply(
-    nativeEvent: reactLib.MouseEvent,
-    preventDefault: js.Function0[scala.Unit],
-    stopPropagation: js.Function0[scala.Unit],
+    nativeEvent: stdLib.MouseEvent,
+    preventDefault: () => scala.Unit,
+    stopPropagation: () => scala.Unit,
     target: RadioChangeEventTarget
   ): RadioChangeEvent = {
-    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent, preventDefault = preventDefault, stopPropagation = stopPropagation, target = target)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent, preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target)
   
     __obj.asInstanceOf[RadioChangeEvent]
   }

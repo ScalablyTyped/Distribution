@@ -65,11 +65,11 @@ trait ILoadingBarProvider extends js.Object {
 object ILoadingBarProvider {
   @scala.inline
   def apply(
-    complete: js.Function0[scala.Unit],
-    inc: js.Function0[scala.Unit],
-    set: js.Function1[scala.Double, scala.Unit],
-    start: js.Function0[scala.Unit],
-    status: js.Function0[scala.Double],
+    complete: () => scala.Unit,
+    inc: () => scala.Unit,
+    set: scala.Double => scala.Unit,
+    start: () => scala.Unit,
+    status: () => scala.Double,
     autoIncrement: js.UndefOr[scala.Boolean] = js.undefined,
     includeBar: js.UndefOr[scala.Boolean] = js.undefined,
     includeSpinner: js.UndefOr[scala.Boolean] = js.undefined,
@@ -79,7 +79,7 @@ object ILoadingBarProvider {
     spinnerTemplate: java.lang.String = null,
     startSize: scala.Int | scala.Double = null
   ): ILoadingBarProvider = {
-    val __obj = js.Dynamic.literal(complete = complete, inc = inc, set = set, start = start, status = status)
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), inc = js.Any.fromFunction0(inc), set = js.Any.fromFunction1(set), start = js.Any.fromFunction0(start), status = js.Any.fromFunction0(status))
     if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement)
     if (!js.isUndefined(includeBar)) __obj.updateDynamic("includeBar")(includeBar)
     if (!js.isUndefined(includeSpinner)) __obj.updateDynamic("includeSpinner")(includeSpinner)

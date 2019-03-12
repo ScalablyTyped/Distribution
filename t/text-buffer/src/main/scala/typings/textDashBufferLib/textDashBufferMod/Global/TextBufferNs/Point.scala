@@ -67,23 +67,23 @@ object Point {
   @scala.inline
   def apply(
     column: scala.Double,
-    compare: js.Function1[PointCompatible, scala.Double],
-    copy: js.Function0[Point],
-    freeze: js.Function0[stdLib.Readonly[Point]],
-    isEqual: js.Function1[PointCompatible, scala.Boolean],
-    isGreaterThan: js.Function1[PointCompatible, scala.Boolean],
-    isGreaterThanOrEqual: js.Function1[PointCompatible, scala.Boolean],
-    isLessThan: js.Function1[PointCompatible, scala.Boolean],
-    isLessThanOrEqual: js.Function1[PointCompatible, scala.Boolean],
-    negate: js.Function0[Point],
+    compare: PointCompatible => scala.Double,
+    copy: () => Point,
+    freeze: () => stdLib.Readonly[Point],
+    isEqual: PointCompatible => scala.Boolean,
+    isGreaterThan: PointCompatible => scala.Boolean,
+    isGreaterThanOrEqual: PointCompatible => scala.Boolean,
+    isLessThan: PointCompatible => scala.Boolean,
+    isLessThanOrEqual: PointCompatible => scala.Boolean,
+    negate: () => Point,
     row: scala.Double,
-    serialize: js.Function0[js.Tuple2[scala.Double, scala.Double]],
-    toArray: js.Function0[js.Tuple2[scala.Double, scala.Double]],
-    toString: js.Function0[java.lang.String],
-    translate: js.Function1[PointCompatible, Point],
-    traverse: js.Function1[PointCompatible, Point]
+    serialize: () => js.Tuple2[scala.Double, scala.Double],
+    toArray: () => js.Tuple2[scala.Double, scala.Double],
+    toString: () => java.lang.String,
+    translate: PointCompatible => Point,
+    traverse: PointCompatible => Point
   ): Point = {
-    val __obj = js.Dynamic.literal(column = column, compare = compare, copy = copy, freeze = freeze, isEqual = isEqual, isGreaterThan = isGreaterThan, isGreaterThanOrEqual = isGreaterThanOrEqual, isLessThan = isLessThan, isLessThanOrEqual = isLessThanOrEqual, negate = negate, row = row, serialize = serialize, toArray = toArray, toString = toString, translate = translate, traverse = traverse)
+    val __obj = js.Dynamic.literal(column = column, compare = js.Any.fromFunction1(compare), copy = js.Any.fromFunction0(copy), freeze = js.Any.fromFunction0(freeze), isEqual = js.Any.fromFunction1(isEqual), isGreaterThan = js.Any.fromFunction1(isGreaterThan), isGreaterThanOrEqual = js.Any.fromFunction1(isGreaterThanOrEqual), isLessThan = js.Any.fromFunction1(isLessThan), isLessThanOrEqual = js.Any.fromFunction1(isLessThanOrEqual), negate = js.Any.fromFunction0(negate), row = row, serialize = js.Any.fromFunction0(serialize), toArray = js.Any.fromFunction0(toArray), toString = js.Any.fromFunction0(toString), translate = js.Any.fromFunction1(translate), traverse = js.Any.fromFunction1(traverse))
   
     __obj.asInstanceOf[Point]
   }

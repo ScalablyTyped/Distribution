@@ -63,24 +63,24 @@ object XSpinValue {
     Orientation: scala.Double,
     SpinIncrement: scala.Double,
     Value: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addAdjustmentListener: js.Function1[XAdjustmentListener, scala.Unit],
-    getMaximum: js.Function0[scala.Double],
-    getMinimum: js.Function0[scala.Double],
-    getOrientation: js.Function0[scala.Double],
-    getSpinIncrement: js.Function0[scala.Double],
-    getValue: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeAdjustmentListener: js.Function1[XAdjustmentListener, scala.Unit],
-    setMaximum: js.Function1[scala.Double, scala.Unit],
-    setMinimum: js.Function1[scala.Double, scala.Unit],
-    setOrientation: js.Function1[scala.Double, scala.Unit],
-    setSpinIncrement: js.Function1[scala.Double, scala.Unit],
-    setValue: js.Function1[scala.Double, scala.Unit],
-    setValues: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    addAdjustmentListener: XAdjustmentListener => scala.Unit,
+    getMaximum: () => scala.Double,
+    getMinimum: () => scala.Double,
+    getOrientation: () => scala.Double,
+    getSpinIncrement: () => scala.Double,
+    getValue: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeAdjustmentListener: XAdjustmentListener => scala.Unit,
+    setMaximum: scala.Double => scala.Unit,
+    setMinimum: scala.Double => scala.Unit,
+    setOrientation: scala.Double => scala.Unit,
+    setSpinIncrement: scala.Double => scala.Unit,
+    setValue: scala.Double => scala.Unit,
+    setValues: (scala.Double, scala.Double, scala.Double) => scala.Unit
   ): XSpinValue = {
-    val __obj = js.Dynamic.literal(Maximum = Maximum, Minimum = Minimum, Orientation = Orientation, SpinIncrement = SpinIncrement, Value = Value, acquire = acquire, addAdjustmentListener = addAdjustmentListener, getMaximum = getMaximum, getMinimum = getMinimum, getOrientation = getOrientation, getSpinIncrement = getSpinIncrement, getValue = getValue, queryInterface = queryInterface, release = release, removeAdjustmentListener = removeAdjustmentListener, setMaximum = setMaximum, setMinimum = setMinimum, setOrientation = setOrientation, setSpinIncrement = setSpinIncrement, setValue = setValue, setValues = setValues)
+    val __obj = js.Dynamic.literal(Maximum = Maximum, Minimum = Minimum, Orientation = Orientation, SpinIncrement = SpinIncrement, Value = Value, acquire = js.Any.fromFunction0(acquire), addAdjustmentListener = js.Any.fromFunction1(addAdjustmentListener), getMaximum = js.Any.fromFunction0(getMaximum), getMinimum = js.Any.fromFunction0(getMinimum), getOrientation = js.Any.fromFunction0(getOrientation), getSpinIncrement = js.Any.fromFunction0(getSpinIncrement), getValue = js.Any.fromFunction0(getValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeAdjustmentListener = js.Any.fromFunction1(removeAdjustmentListener), setMaximum = js.Any.fromFunction1(setMaximum), setMinimum = js.Any.fromFunction1(setMinimum), setOrientation = js.Any.fromFunction1(setOrientation), setSpinIncrement = js.Any.fromFunction1(setSpinIncrement), setValue = js.Any.fromFunction1(setValue), setValues = js.Any.fromFunction3(setValues))
   
     __obj.asInstanceOf[XSpinValue]
   }

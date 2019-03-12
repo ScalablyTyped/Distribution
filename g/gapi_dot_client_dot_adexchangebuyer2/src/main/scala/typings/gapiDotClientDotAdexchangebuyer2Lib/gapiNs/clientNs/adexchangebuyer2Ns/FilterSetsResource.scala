@@ -42,29 +42,17 @@ object FilterSetsResource {
     bidMetrics: BidMetricsResource,
     bidResponseErrors: BidResponseErrorsResource,
     bidResponsesWithoutBids: BidResponsesWithoutBidsResource,
-    create: js.Function1[
-      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsIsTransient, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FilterSet]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetIdKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
+    create: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsIsTransient => gapiDotClientLib.gapiNs.clientNs.Request[FilterSet],
+    delete: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetIdKey => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
     filteredBidRequests: FilteredBidRequestsResource,
     filteredBids: FilteredBidsResource,
-    get: js.Function1[
-      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetIdKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FilterSet]
-    ],
+    get: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetIdKey => gapiDotClientLib.gapiNs.clientNs.Request[FilterSet],
     impressionMetrics: ImpressionMetricsResource,
-    list: js.Function1[
-      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListFilterSetsResponse]
-    ],
+    list: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[ListFilterSetsResponse],
     losingBids: LosingBidsResource,
     nonBillableWinningBids: NonBillableWinningBidsResource
   ): FilterSetsResource = {
-    val __obj = js.Dynamic.literal(bidMetrics = bidMetrics, bidResponseErrors = bidResponseErrors, bidResponsesWithoutBids = bidResponsesWithoutBids, create = create, delete = delete, filteredBidRequests = filteredBidRequests, filteredBids = filteredBids, get = get, impressionMetrics = impressionMetrics, list = list, losingBids = losingBids, nonBillableWinningBids = nonBillableWinningBids)
+    val __obj = js.Dynamic.literal(bidMetrics = bidMetrics, bidResponseErrors = bidResponseErrors, bidResponsesWithoutBids = bidResponsesWithoutBids, create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), filteredBidRequests = filteredBidRequests, filteredBids = filteredBids, get = js.Any.fromFunction1(get), impressionMetrics = impressionMetrics, list = js.Any.fromFunction1(list), losingBids = losingBids, nonBillableWinningBids = nonBillableWinningBids)
   
     __obj.asInstanceOf[FilterSetsResource]
   }

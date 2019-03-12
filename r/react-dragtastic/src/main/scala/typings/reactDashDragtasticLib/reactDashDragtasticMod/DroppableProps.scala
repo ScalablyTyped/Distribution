@@ -33,23 +33,20 @@ trait DroppableProps extends js.Object {
 object DroppableProps {
   @scala.inline
   def apply(
-    children: js.Function1[
-      State with reactDashDragtasticLib.Anon_EventsIsOver, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ],
+    children: State with reactDashDragtasticLib.Anon_EventsIsOver => reactLib.reactMod.ReactNs.ReactNode,
     accepts: Accepts = null,
     id: Id = null,
-    onDragEnter: js.Function0[scala.Unit] = null,
-    onDragLeave: js.Function0[scala.Unit] = null,
-    onDrop: js.Function1[/* data */ js.Any, scala.Unit] = null,
+    onDragEnter: () => scala.Unit = null,
+    onDragLeave: () => scala.Unit = null,
+    onDrop: /* data */ js.Any => scala.Unit = null,
     subscribeTo: js.Array[java.lang.String] = null
   ): DroppableProps = {
-    val __obj = js.Dynamic.literal(children = children)
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     if (accepts != null) __obj.updateDynamic("accepts")(accepts.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(onDragEnter)
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(onDragLeave)
-    if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop)
+    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction0(onDragEnter))
+    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction0(onDragLeave))
+    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1(onDrop))
     if (subscribeTo != null) __obj.updateDynamic("subscribeTo")(subscribeTo)
     __obj.asInstanceOf[DroppableProps]
   }

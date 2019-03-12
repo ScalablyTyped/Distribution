@@ -23,8 +23,8 @@ object MaskedInputProps {
     id: java.lang.String = null,
     mask: js.Array[grommetLib.Anon_Fixed] = null,
     name: java.lang.String = null,
-    onBlur: js.Function1[/* repeated */ js.Any, _] = null,
-    onChange: js.Function1[/* repeated */ js.Any, _] = null,
+    onBlur: /* repeated */ js.Any => _ = null,
+    onChange: /* repeated */ js.Any => _ = null,
     size: grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String = null,
     value: java.lang.String = null
   ): MaskedInputProps = {
@@ -32,8 +32,8 @@ object MaskedInputProps {
     if (id != null) __obj.updateDynamic("id")(id)
     if (mask != null) __obj.updateDynamic("mask")(mask)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[MaskedInputProps]

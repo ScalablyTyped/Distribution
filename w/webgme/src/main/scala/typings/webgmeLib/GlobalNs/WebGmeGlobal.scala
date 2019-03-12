@@ -23,7 +23,7 @@ trait WebGmeGlobal extends js.Object {
 object WebGmeGlobal {
   @scala.inline
   def apply(
-    getConfig: js.Function0[webgmeLib.GmeConfigNs.GmeConfig],
+    getConfig: () => webgmeLib.GmeConfigNs.GmeConfig,
     gmeConfig: webgmeLib.GmeConfigNs.GmeConfig,
     GitHubVersion: java.lang.String = null,
     KeyboardManager: KeyboardManager = null,
@@ -36,7 +36,7 @@ object WebGmeGlobal {
     userInfo: UserInfo = null,
     version: java.lang.String = null
   ): WebGmeGlobal = {
-    val __obj = js.Dynamic.literal(getConfig = getConfig, gmeConfig = gmeConfig)
+    val __obj = js.Dynamic.literal(getConfig = js.Any.fromFunction0(getConfig), gmeConfig = gmeConfig)
     if (GitHubVersion != null) __obj.updateDynamic("GitHubVersion")(GitHubVersion)
     if (KeyboardManager != null) __obj.updateDynamic("KeyboardManager")(KeyboardManager)
     if (LayoutManager != null) __obj.updateDynamic("LayoutManager")(LayoutManager)

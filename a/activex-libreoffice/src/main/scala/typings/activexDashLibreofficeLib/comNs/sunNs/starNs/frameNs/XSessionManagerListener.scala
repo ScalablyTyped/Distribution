@@ -40,16 +40,16 @@ trait XSessionManagerListener
 object XSessionManagerListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    approveInteraction: js.Function1[scala.Boolean, scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    doRestore: js.Function0[scala.Boolean],
-    doSave: js.Function2[scala.Boolean, scala.Boolean, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    shutdownCanceled: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    approveInteraction: scala.Boolean => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    doRestore: () => scala.Boolean,
+    doSave: (scala.Boolean, scala.Boolean) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    shutdownCanceled: () => scala.Unit
   ): XSessionManagerListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, approveInteraction = approveInteraction, disposing = disposing, doRestore = doRestore, doSave = doSave, queryInterface = queryInterface, release = release, shutdownCanceled = shutdownCanceled)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), approveInteraction = js.Any.fromFunction1(approveInteraction), disposing = js.Any.fromFunction1(disposing), doRestore = js.Any.fromFunction0(doRestore), doSave = js.Any.fromFunction2(doSave), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), shutdownCanceled = js.Any.fromFunction0(shutdownCanceled))
   
     __obj.asInstanceOf[XSessionManagerListener]
   }

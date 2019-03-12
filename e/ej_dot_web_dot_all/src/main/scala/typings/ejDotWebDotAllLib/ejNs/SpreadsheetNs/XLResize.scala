@@ -43,14 +43,14 @@ trait XLResize extends js.Object {
 object XLResize {
   @scala.inline
   def apply(
-    fitHeight: js.Function1[js.Array[_], scala.Unit],
-    fitWidth: js.Function1[js.Array[_], scala.Unit],
-    getColWidth: js.Function1[scala.Double, scala.Double],
-    getRowHeight: js.Function1[scala.Double, scala.Double],
-    setColWidth: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setRowHeight: js.Function2[scala.Double, scala.Double, scala.Unit]
+    fitHeight: js.Array[_] => scala.Unit,
+    fitWidth: js.Array[_] => scala.Unit,
+    getColWidth: scala.Double => scala.Double,
+    getRowHeight: scala.Double => scala.Double,
+    setColWidth: (scala.Double, scala.Double) => scala.Unit,
+    setRowHeight: (scala.Double, scala.Double) => scala.Unit
   ): XLResize = {
-    val __obj = js.Dynamic.literal(fitHeight = fitHeight, fitWidth = fitWidth, getColWidth = getColWidth, getRowHeight = getRowHeight, setColWidth = setColWidth, setRowHeight = setRowHeight)
+    val __obj = js.Dynamic.literal(fitHeight = js.Any.fromFunction1(fitHeight), fitWidth = js.Any.fromFunction1(fitWidth), getColWidth = js.Any.fromFunction1(getColWidth), getRowHeight = js.Any.fromFunction1(getRowHeight), setColWidth = js.Any.fromFunction2(setColWidth), setRowHeight = js.Any.fromFunction2(setRowHeight))
   
     __obj.asInstanceOf[XLResize]
   }

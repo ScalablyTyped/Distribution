@@ -45,17 +45,17 @@ object XWizardPage {
   def apply(
     PageId: scala.Double,
     Window: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
-    acquire: js.Function0[scala.Unit],
-    activatePage: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    canAdvance: js.Function0[scala.Boolean],
-    commitPage: js.Function1[scala.Double, scala.Boolean],
-    dispose: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+    acquire: () => scala.Unit,
+    activatePage: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    canAdvance: () => scala.Boolean,
+    commitPage: scala.Double => scala.Boolean,
+    dispose: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit
   ): XWizardPage = {
-    val __obj = js.Dynamic.literal(PageId = PageId, Window = Window, acquire = acquire, activatePage = activatePage, addEventListener = addEventListener, canAdvance = canAdvance, commitPage = commitPage, dispose = dispose, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(PageId = PageId, Window = Window, acquire = js.Any.fromFunction0(acquire), activatePage = js.Any.fromFunction0(activatePage), addEventListener = js.Any.fromFunction1(addEventListener), canAdvance = js.Any.fromFunction0(canAdvance), commitPage = js.Any.fromFunction1(commitPage), dispose = js.Any.fromFunction0(dispose), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener))
   
     __obj.asInstanceOf[XWizardPage]
   }

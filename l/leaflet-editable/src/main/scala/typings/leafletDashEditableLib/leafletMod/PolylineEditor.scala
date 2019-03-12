@@ -22,13 +22,13 @@ trait PolylineEditor extends PathEditor {
 object PolylineEditor {
   @scala.inline
   def apply(
-    continueBackward: js.Function0[scala.Unit],
-    continueForward: js.Function0[scala.Unit],
-    disable: js.Function0[MarkerEditor | PolylineEditor | PolygonEditor],
-    enable: js.Function0[MarkerEditor | PolylineEditor | PolygonEditor],
-    reset: js.Function0[scala.Unit]
+    continueBackward: () => scala.Unit,
+    continueForward: () => scala.Unit,
+    disable: () => MarkerEditor | PolylineEditor | PolygonEditor,
+    enable: () => MarkerEditor | PolylineEditor | PolygonEditor,
+    reset: () => scala.Unit
   ): PolylineEditor = {
-    val __obj = js.Dynamic.literal(continueBackward = continueBackward, continueForward = continueForward, disable = disable, enable = enable, reset = reset)
+    val __obj = js.Dynamic.literal(continueBackward = js.Any.fromFunction0(continueBackward), continueForward = js.Any.fromFunction0(continueForward), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), reset = js.Any.fromFunction0(reset))
   
     __obj.asInstanceOf[PolylineEditor]
   }

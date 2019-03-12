@@ -48,15 +48,15 @@ object DashboardSpecialValuesStatic {
   @scala.inline
   def apply(
     ErrorValue: java.lang.String,
-    IsErrorValue: js.Function1[js.Object, scala.Boolean],
-    IsNullValue: js.Function1[js.Object, scala.Boolean],
-    IsOlapNullValue: js.Function1[js.Object, scala.Boolean],
-    IsOthersValue: js.Function1[js.Object, scala.Boolean],
+    IsErrorValue: js.Object => scala.Boolean,
+    IsNullValue: js.Object => scala.Boolean,
+    IsOlapNullValue: js.Object => scala.Boolean,
+    IsOthersValue: js.Object => scala.Boolean,
     NullValue: java.lang.String,
     OlapNullValue: java.lang.String,
     OthersValue: java.lang.String
   ): DashboardSpecialValuesStatic = {
-    val __obj = js.Dynamic.literal(ErrorValue = ErrorValue, IsErrorValue = IsErrorValue, IsNullValue = IsNullValue, IsOlapNullValue = IsOlapNullValue, IsOthersValue = IsOthersValue, NullValue = NullValue, OlapNullValue = OlapNullValue, OthersValue = OthersValue)
+    val __obj = js.Dynamic.literal(ErrorValue = ErrorValue, IsErrorValue = js.Any.fromFunction1(IsErrorValue), IsNullValue = js.Any.fromFunction1(IsNullValue), IsOlapNullValue = js.Any.fromFunction1(IsOlapNullValue), IsOthersValue = js.Any.fromFunction1(IsOthersValue), NullValue = NullValue, OlapNullValue = OlapNullValue, OthersValue = OthersValue)
   
     __obj.asInstanceOf[DashboardSpecialValuesStatic]
   }

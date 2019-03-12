@@ -11,14 +11,14 @@ trait UpdateableQueryBuilder[T] extends js.Object {
   def add[K /* <: java.lang.String */](
     key: K,
     value: js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
-  ): TypeMatchedValue[T, K, js.Array[_] | nodeLib.Set[_], this.type] = js.native
+  ): TypeMatchedValue[T, K, js.Array[_] | stdLib.Set[_], this.type] = js.native
   def add[K /* <: java.lang.String */](
     key: K,
     value: org.scalablytyped.runtime.StringDictionary[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
   ): TypeMatchedValue[
     T, 
     K, 
-    nodeLib.Map[
+    stdLib.Map[
       java.lang.String, 
       /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any
     ], 

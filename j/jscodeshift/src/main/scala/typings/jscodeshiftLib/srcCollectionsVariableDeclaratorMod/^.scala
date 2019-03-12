@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jscodeshift/src/collections/VariableDeclarator", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val filters: jscodeshiftLib.srcCollectionsVariableDeclaratorMod.FilterMethods = js.native
+  val filters: FilterMethods = js.native
   def register(): scala.Unit = js.native
 }
 

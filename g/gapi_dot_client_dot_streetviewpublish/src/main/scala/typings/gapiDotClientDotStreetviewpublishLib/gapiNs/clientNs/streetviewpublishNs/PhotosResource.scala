@@ -84,24 +84,12 @@ trait PhotosResource extends js.Object {
 object PhotosResource {
   @scala.inline
   def apply(
-    batchDelete: js.Function1[
-      gapiDotClientDotStreetviewpublishLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BatchDeletePhotosResponse]
-    ],
-    batchGet: js.Function1[
-      gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BatchGetPhotosResponse]
-    ],
-    batchUpdate: js.Function1[
-      gapiDotClientDotStreetviewpublishLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdatePhotosResponse]
-    ],
-    list: js.Function1[
-      gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListPhotosResponse]
-    ]
+    batchDelete: gapiDotClientDotStreetviewpublishLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[BatchDeletePhotosResponse],
+    batchGet: gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[BatchGetPhotosResponse],
+    batchUpdate: gapiDotClientDotStreetviewpublishLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdatePhotosResponse],
+    list: gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter => gapiDotClientLib.gapiNs.clientNs.Request[ListPhotosResponse]
   ): PhotosResource = {
-    val __obj = js.Dynamic.literal(batchDelete = batchDelete, batchGet = batchGet, batchUpdate = batchUpdate, list = list)
+    val __obj = js.Dynamic.literal(batchDelete = js.Any.fromFunction1(batchDelete), batchGet = js.Any.fromFunction1(batchGet), batchUpdate = js.Any.fromFunction1(batchUpdate), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[PhotosResource]
   }

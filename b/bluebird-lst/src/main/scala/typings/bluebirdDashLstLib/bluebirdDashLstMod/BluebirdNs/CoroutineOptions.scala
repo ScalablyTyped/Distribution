@@ -11,8 +11,8 @@ trait CoroutineOptions extends js.Object {
 
 object CoroutineOptions {
   @scala.inline
-  def apply(yieldHandler: js.Function1[js.Any, js.Any]): CoroutineOptions = {
-    val __obj = js.Dynamic.literal(yieldHandler = yieldHandler)
+  def apply(yieldHandler: js.Any => js.Any): CoroutineOptions = {
+    val __obj = js.Dynamic.literal(yieldHandler = js.Any.fromFunction1(yieldHandler))
   
     __obj.asInstanceOf[CoroutineOptions]
   }

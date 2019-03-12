@@ -17,13 +17,13 @@ trait XTextLayoutConstrains
 object XTextLayoutConstrains {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getColumnsAndLines: js.Function2[js.Array[scala.Double], js.Array[scala.Double], scala.Unit],
-    getMinimumSize: js.Function2[scala.Double, scala.Double, Size],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getColumnsAndLines: (js.Array[scala.Double], js.Array[scala.Double]) => scala.Unit,
+    getMinimumSize: (scala.Double, scala.Double) => Size,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTextLayoutConstrains = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getColumnsAndLines = getColumnsAndLines, getMinimumSize = getMinimumSize, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getColumnsAndLines = js.Any.fromFunction2(getColumnsAndLines), getMinimumSize = js.Any.fromFunction2(getMinimumSize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTextLayoutConstrains]
   }

@@ -18,12 +18,9 @@ trait VideosResource extends js.Object {
 object VideosResource {
   @scala.inline
   def apply(
-    annotate: js.Function1[
-      gapiDotClientDotVideointelligenceLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning_Operation]
-    ]
+    annotate: gapiDotClientDotVideointelligenceLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning_Operation]
   ): VideosResource = {
-    val __obj = js.Dynamic.literal(annotate = annotate)
+    val __obj = js.Dynamic.literal(annotate = js.Any.fromFunction1(annotate))
   
     __obj.asInstanceOf[VideosResource]
   }

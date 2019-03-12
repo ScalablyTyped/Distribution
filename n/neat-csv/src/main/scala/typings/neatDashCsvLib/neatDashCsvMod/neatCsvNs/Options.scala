@@ -27,8 +27,8 @@ object Options {
   def apply(
     escape: java.lang.String = null,
     headers: js.Array[java.lang.String] | scala.Boolean = null,
-    mapHeaders: js.Function1[/* args */ neatDashCsvLib.Anon_Header, java.lang.String | scala.Null] = null,
-    mapValues: js.Function1[/* args */ neatDashCsvLib.Anon_HeaderIndex, _] = null,
+    mapHeaders: /* args */ neatDashCsvLib.Anon_Header => java.lang.String | scala.Null = null,
+    mapValues: /* args */ neatDashCsvLib.Anon_HeaderIndex => _ = null,
     maxRowBytes: scala.Int | scala.Double = null,
     newline: java.lang.String = null,
     quote: java.lang.String = null,
@@ -40,8 +40,8 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (escape != null) __obj.updateDynamic("escape")(escape)
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (mapHeaders != null) __obj.updateDynamic("mapHeaders")(mapHeaders)
-    if (mapValues != null) __obj.updateDynamic("mapValues")(mapValues)
+    if (mapHeaders != null) __obj.updateDynamic("mapHeaders")(js.Any.fromFunction1(mapHeaders))
+    if (mapValues != null) __obj.updateDynamic("mapValues")(js.Any.fromFunction1(mapValues))
     if (maxRowBytes != null) __obj.updateDynamic("maxRowBytes")(maxRowBytes.asInstanceOf[js.Any])
     if (newline != null) __obj.updateDynamic("newline")(newline)
     if (quote != null) __obj.updateDynamic("quote")(quote)

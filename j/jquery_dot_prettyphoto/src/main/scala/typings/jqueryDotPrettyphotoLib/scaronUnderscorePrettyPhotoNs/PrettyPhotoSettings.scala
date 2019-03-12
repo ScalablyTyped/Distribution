@@ -177,14 +177,14 @@ trait PrettyPhotoSettings extends js.Object {
 object PrettyPhotoSettings {
   @scala.inline
   def apply(
-    ajaxcallback: js.Function0[scala.Unit] = null,
+    ajaxcallback: () => scala.Unit = null,
     allow_expand: js.UndefOr[scala.Boolean] = js.undefined,
     allow_resize: js.UndefOr[scala.Boolean] = js.undefined,
     animation_speed: java.lang.String = null,
     autoplay: js.UndefOr[scala.Boolean] = js.undefined,
     autoplay_slideshow: js.UndefOr[scala.Boolean] = js.undefined,
-    callback: js.Function0[scala.Unit] = null,
-    changepicturecallback: js.Function0[scala.Unit] = null,
+    callback: () => scala.Unit = null,
+    changepicturecallback: () => scala.Unit = null,
     counter_separator_label: java.lang.String = null,
     custom_markup: java.lang.String = null,
     deeplinking: js.UndefOr[scala.Boolean] = js.undefined,
@@ -213,14 +213,14 @@ object PrettyPhotoSettings {
     wmode: java.lang.String = null
   ): PrettyPhotoSettings = {
     val __obj = js.Dynamic.literal()
-    if (ajaxcallback != null) __obj.updateDynamic("ajaxcallback")(ajaxcallback)
+    if (ajaxcallback != null) __obj.updateDynamic("ajaxcallback")(js.Any.fromFunction0(ajaxcallback))
     if (!js.isUndefined(allow_expand)) __obj.updateDynamic("allow_expand")(allow_expand)
     if (!js.isUndefined(allow_resize)) __obj.updateDynamic("allow_resize")(allow_resize)
     if (animation_speed != null) __obj.updateDynamic("animation_speed")(animation_speed)
     if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
     if (!js.isUndefined(autoplay_slideshow)) __obj.updateDynamic("autoplay_slideshow")(autoplay_slideshow)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (changepicturecallback != null) __obj.updateDynamic("changepicturecallback")(changepicturecallback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
+    if (changepicturecallback != null) __obj.updateDynamic("changepicturecallback")(js.Any.fromFunction0(changepicturecallback))
     if (counter_separator_label != null) __obj.updateDynamic("counter_separator_label")(counter_separator_label)
     if (custom_markup != null) __obj.updateDynamic("custom_markup")(custom_markup)
     if (!js.isUndefined(deeplinking)) __obj.updateDynamic("deeplinking")(deeplinking)

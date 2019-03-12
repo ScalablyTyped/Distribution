@@ -39,14 +39,14 @@ object GeometryServiceFromGeoCoordinateStringParams {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     sr: SpatialReference | java.lang.String | scala.Double,
     strings: js.Array[java.lang.String],
     conversionMode: java.lang.String = null,
     conversionType: java.lang.String = null
   ): GeometryServiceFromGeoCoordinateStringParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, sr = sr.asInstanceOf[js.Any], strings = strings)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sr = sr.asInstanceOf[js.Any], strings = strings)
     if (conversionMode != null) __obj.updateDynamic("conversionMode")(conversionMode)
     if (conversionType != null) __obj.updateDynamic("conversionType")(conversionType)
     __obj.asInstanceOf[GeometryServiceFromGeoCoordinateStringParams]

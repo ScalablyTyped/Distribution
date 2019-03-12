@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.AutoCaption")
 @js.native
 class AutoCaption protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var AutoInsert: scala.Boolean = js.native
   var CaptionLabel: js.Any = js.native
   val Creator: scala.Double = js.native

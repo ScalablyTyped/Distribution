@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("ns-api", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(conf: nsDashApiLib.nsDashApiMod.nsApiNs.Configuration): nsDashApiLib.nsDashApiMod.nsApi = js.native
+  def apply(conf: nsDashApiLib.nsDashApiMod.nsApiNs.Configuration): nsApi = js.native
 }
 

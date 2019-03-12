@@ -87,27 +87,15 @@ trait SpreadsheetsResource extends js.Object {
 object SpreadsheetsResource {
   @scala.inline
   def apply(
-    batchUpdate: js.Function1[
-      gapiDotClientDotSheetsLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdateSpreadsheetResponse]
-    ],
-    create: js.Function1[
-      gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Spreadsheet]
-    ],
+    batchUpdate: gapiDotClientDotSheetsLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdateSpreadsheetResponse],
+    create: gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Spreadsheet],
     developerMetadata: DeveloperMetadataResource,
-    get: js.Function1[
-      gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackFieldsIncludeGridData, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Spreadsheet]
-    ],
-    getByDataFilter: js.Function1[
-      gapiDotClientDotSheetsLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Spreadsheet]
-    ],
+    get: gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackFieldsIncludeGridData => gapiDotClientLib.gapiNs.clientNs.Request[Spreadsheet],
+    getByDataFilter: gapiDotClientDotSheetsLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[Spreadsheet],
     sheets: SheetsResource,
     values: ValuesResource
   ): SpreadsheetsResource = {
-    val __obj = js.Dynamic.literal(batchUpdate = batchUpdate, create = create, developerMetadata = developerMetadata, get = get, getByDataFilter = getByDataFilter, sheets = sheets, values = values)
+    val __obj = js.Dynamic.literal(batchUpdate = js.Any.fromFunction1(batchUpdate), create = js.Any.fromFunction1(create), developerMetadata = developerMetadata, get = js.Any.fromFunction1(get), getByDataFilter = js.Any.fromFunction1(getByDataFilter), sheets = sheets, values = values)
   
     __obj.asInstanceOf[SpreadsheetsResource]
   }

@@ -11,15 +11,15 @@ object ^ extends js.Object {
   def arrayify[T](): js.Array[T] = js.native
   def arrayify[T](arg: T): js.Array[T] = js.native
   def arrayify[T](arg: js.Array[T]): js.Array[T] = js.native
-  def arraysAreEqual[T](a: js.Array[T], b: js.Array[T], eq: tslintLib.libUtilsMod.Equal[T]): scala.Boolean = js.native
-  def arraysAreEqual[T](a: js.Array[T], b: js.UndefOr[scala.Nothing], eq: tslintLib.libUtilsMod.Equal[T]): scala.Boolean = js.native
-  def arraysAreEqual[T](a: js.UndefOr[scala.Nothing], b: js.Array[T], eq: tslintLib.libUtilsMod.Equal[T]): scala.Boolean = js.native
-  def arraysAreEqual[T](a: js.UndefOr[scala.Nothing], b: js.UndefOr[scala.Nothing], eq: tslintLib.libUtilsMod.Equal[T]): scala.Boolean = js.native
+  def arraysAreEqual[T](a: js.Array[T], b: js.Array[T], eq: Equal[T]): scala.Boolean = js.native
+  def arraysAreEqual[T](a: js.Array[T], b: js.UndefOr[scala.Nothing], eq: Equal[T]): scala.Boolean = js.native
+  def arraysAreEqual[T](a: js.UndefOr[scala.Nothing], b: js.Array[T], eq: Equal[T]): scala.Boolean = js.native
+  def arraysAreEqual[T](a: js.UndefOr[scala.Nothing], b: js.UndefOr[scala.Nothing], eq: Equal[T]): scala.Boolean = js.native
   def camelize(stringWithHyphens: java.lang.String): java.lang.String = js.native
   def dedent(strings: stdLib.TemplateStringsArray, values: js.Any*): java.lang.String = js.native
   def denormalizeWinPath(path: java.lang.String): java.lang.String = js.native
-  def detectBufferEncoding(buffer: nodeLib.Buffer): tslintLib.libUtilsMod.Encoding = js.native
-  def detectBufferEncoding(buffer: nodeLib.Buffer, length: scala.Double): tslintLib.libUtilsMod.Encoding = js.native
+  def detectBufferEncoding(buffer: nodeLib.Buffer): Encoding = js.native
+  def detectBufferEncoding(buffer: nodeLib.Buffer, length: scala.Double): Encoding = js.native
   def escapeRegExp(re: java.lang.String): java.lang.String = js.native
   def find[T, U](inputs: js.Array[T], getResult: js.Function1[/* t */ T, js.UndefOr[U]]): js.UndefOr[U] = js.native
   def flatMap[T, U](

@@ -21,22 +21,11 @@ trait ICertificateEnrollmentManagerStatics extends js.Object {
 object ICertificateEnrollmentManagerStatics {
   @scala.inline
   def apply(
-    createRequestAsync: js.Function1[
-      CertificateRequestProperties, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[java.lang.String]
-    ],
-    importPfxDataAsync: js.Function6[
-      java.lang.String, 
-      java.lang.String, 
-      ExportOption, 
-      KeyProtectionLevel, 
-      InstallOptions, 
-      java.lang.String, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncAction
-    ],
-    installCertificateAsync: js.Function2[java.lang.String, InstallOptions, winrtLib.WindowsNs.FoundationNs.IAsyncAction]
+    createRequestAsync: CertificateRequestProperties => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[java.lang.String],
+    importPfxDataAsync: (java.lang.String, java.lang.String, ExportOption, KeyProtectionLevel, InstallOptions, java.lang.String) => winrtLib.WindowsNs.FoundationNs.IAsyncAction,
+    installCertificateAsync: (java.lang.String, InstallOptions) => winrtLib.WindowsNs.FoundationNs.IAsyncAction
   ): ICertificateEnrollmentManagerStatics = {
-    val __obj = js.Dynamic.literal(createRequestAsync = createRequestAsync, importPfxDataAsync = importPfxDataAsync, installCertificateAsync = installCertificateAsync)
+    val __obj = js.Dynamic.literal(createRequestAsync = js.Any.fromFunction1(createRequestAsync), importPfxDataAsync = js.Any.fromFunction6(importPfxDataAsync), installCertificateAsync = js.Any.fromFunction2(installCertificateAsync))
   
     __obj.asInstanceOf[ICertificateEnrollmentManagerStatics]
   }

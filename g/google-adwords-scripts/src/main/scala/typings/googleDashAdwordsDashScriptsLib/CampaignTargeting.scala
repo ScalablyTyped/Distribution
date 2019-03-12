@@ -21,20 +21,20 @@ trait CampaignTargeting[SearchCampaignAudience, SearchCampaignExcludedAudience] 
 object CampaignTargeting {
   @scala.inline
   def apply[SearchCampaignAudience, SearchCampaignExcludedAudience](
-    adSchedules: js.Function0[AdWordsSelector[AdSchedule]],
-    audiences: js.Function0[AdWordsSelector[AdWordsEntity]],
-    excludedContentLabels: js.Function0[AdWordsSelector[ExcludedContentLabel]],
-    excludedLocations: js.Function0[AdWordsSelector[ExcludedLocation]],
-    exculdedAudiences: js.Function0[AdWordsSelector[AdWordsEntity]],
-    getTargetingSetting: js.Function1[CriterionTypeGroup, TargetingSetting],
-    languages: js.Function0[AdWordsSelector[Language]],
-    newUserListBuilder: js.Function0[SearchCampaignAudienceBuilder[SearchCampaignAudience]],
-    platforms: js.Function0[AdWordsSelector[Platform]],
-    setTargetingSetting: js.Function2[CriterionTypeGroup, TargetingSetting, scala.Unit],
-    targetedLocations: js.Function0[AdWordsSelector[TargetedLocation]],
-    targetedProximities: js.Function0[AdWordsSelector[TargetedProximity]]
+    adSchedules: () => AdWordsSelector[AdSchedule],
+    audiences: () => AdWordsSelector[AdWordsEntity],
+    excludedContentLabels: () => AdWordsSelector[ExcludedContentLabel],
+    excludedLocations: () => AdWordsSelector[ExcludedLocation],
+    exculdedAudiences: () => AdWordsSelector[AdWordsEntity],
+    getTargetingSetting: CriterionTypeGroup => TargetingSetting,
+    languages: () => AdWordsSelector[Language],
+    newUserListBuilder: () => SearchCampaignAudienceBuilder[SearchCampaignAudience],
+    platforms: () => AdWordsSelector[Platform],
+    setTargetingSetting: (CriterionTypeGroup, TargetingSetting) => scala.Unit,
+    targetedLocations: () => AdWordsSelector[TargetedLocation],
+    targetedProximities: () => AdWordsSelector[TargetedProximity]
   ): CampaignTargeting[SearchCampaignAudience, SearchCampaignExcludedAudience] = {
-    val __obj = js.Dynamic.literal(adSchedules = adSchedules, audiences = audiences, excludedContentLabels = excludedContentLabels, excludedLocations = excludedLocations, exculdedAudiences = exculdedAudiences, getTargetingSetting = getTargetingSetting, languages = languages, newUserListBuilder = newUserListBuilder, platforms = platforms, setTargetingSetting = setTargetingSetting, targetedLocations = targetedLocations, targetedProximities = targetedProximities)
+    val __obj = js.Dynamic.literal(adSchedules = js.Any.fromFunction0(adSchedules), audiences = js.Any.fromFunction0(audiences), excludedContentLabels = js.Any.fromFunction0(excludedContentLabels), excludedLocations = js.Any.fromFunction0(excludedLocations), exculdedAudiences = js.Any.fromFunction0(exculdedAudiences), getTargetingSetting = js.Any.fromFunction1(getTargetingSetting), languages = js.Any.fromFunction0(languages), newUserListBuilder = js.Any.fromFunction0(newUserListBuilder), platforms = js.Any.fromFunction0(platforms), setTargetingSetting = js.Any.fromFunction2(setTargetingSetting), targetedLocations = js.Any.fromFunction0(targetedLocations), targetedProximities = js.Any.fromFunction0(targetedProximities))
   
     __obj.asInstanceOf[CampaignTargeting[SearchCampaignAudience, SearchCampaignExcludedAudience]]
   }

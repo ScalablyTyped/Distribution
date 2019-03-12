@@ -20,7 +20,7 @@ object ^ extends js.Object {
   def accidentalCodes(acc: java.lang.String): vexflowLib.Anon_CodeGracenotewidth = js.native
   def articulationCodes(artic: java.lang.String): vexflowLib.Anon_Betweenlines = js.native
   def clefProperties(clef: java.lang.String): vexflowLib.Anon_Lineshift = js.native
-  def durationToFraction(duration: java.lang.String): vexflowLib.VexNs.FlowNs.Fraction = js.native
+  def durationToFraction(duration: java.lang.String): Fraction = js.native
   def durationToGlyph(duration: java.lang.String, `type`: java.lang.String): vexflowLib.Anon_Codehead = js.native
   def durationToNumber(duration: java.lang.String): scala.Double = js.native
   def durationToTicks(duration: java.lang.String): scala.Double = js.native

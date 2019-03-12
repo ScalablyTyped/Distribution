@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Domain ()
   extends easyDashXDashHeadersLib.eventsMod.EventEmitter {
   def add(emitter: easyDashXDashHeadersLib.eventsMod.EventEmitter): scala.Unit = js.native
-  def bind(cb: js.Function2[/* err */ nodeLib.Error, /* data */ js.Any, _]): js.Any = js.native
+  def bind(cb: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, _]): js.Any = js.native
   def dispose(): scala.Unit = js.native
   def intercept(cb: js.Function1[/* data */ js.Any, _]): js.Any = js.native
   def remove(emitter: easyDashXDashHeadersLib.eventsMod.EventEmitter): scala.Unit = js.native

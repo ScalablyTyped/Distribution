@@ -24,16 +24,13 @@ object AdditionalVirtualizedSelectProps {
   def apply[TValue](
     maxHeight: scala.Int | scala.Double = null,
     optionHeight: scala.Int | scala.Double = null,
-    optionRenderer: js.Function1[
-      /* options */ VirtualizedOptionRenderOptions[TValue], 
-      reactLib.reactMod.Global.JSXNs.Element
-    ] = null,
+    optionRenderer: /* options */ VirtualizedOptionRenderOptions[TValue] => reactLib.reactMod.Global.JSXNs.Element = null,
     selectComponent: (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_] = null
   ): AdditionalVirtualizedSelectProps[TValue] = {
     val __obj = js.Dynamic.literal()
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (optionHeight != null) __obj.updateDynamic("optionHeight")(optionHeight.asInstanceOf[js.Any])
-    if (optionRenderer != null) __obj.updateDynamic("optionRenderer")(optionRenderer)
+    if (optionRenderer != null) __obj.updateDynamic("optionRenderer")(js.Any.fromFunction1(optionRenderer))
     if (selectComponent != null) __obj.updateDynamic("selectComponent")(selectComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdditionalVirtualizedSelectProps[TValue]]
   }

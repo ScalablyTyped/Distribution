@@ -19,14 +19,14 @@ object CompilerFacade {
   @scala.inline
   def apply(
     R3ResolvedDependencyType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof R3ResolvedDependencyType */ js.Any,
-    compileComponent: js.Function3[CoreEnvironment, java.lang.String, R3ComponentMetadataFacade, js.Any],
-    compileDirective: js.Function3[CoreEnvironment, java.lang.String, R3DirectiveMetadataFacade, js.Any],
-    compileInjectable: js.Function3[CoreEnvironment, java.lang.String, R3InjectableMetadataFacade, js.Any],
-    compileInjector: js.Function3[CoreEnvironment, java.lang.String, R3InjectorMetadataFacade, js.Any],
-    compileNgModule: js.Function3[CoreEnvironment, java.lang.String, R3NgModuleMetadataFacade, js.Any],
-    compilePipe: js.Function3[CoreEnvironment, java.lang.String, R3PipeMetadataFacade, js.Any]
+    compileComponent: (CoreEnvironment, java.lang.String, R3ComponentMetadataFacade) => js.Any,
+    compileDirective: (CoreEnvironment, java.lang.String, R3DirectiveMetadataFacade) => js.Any,
+    compileInjectable: (CoreEnvironment, java.lang.String, R3InjectableMetadataFacade) => js.Any,
+    compileInjector: (CoreEnvironment, java.lang.String, R3InjectorMetadataFacade) => js.Any,
+    compileNgModule: (CoreEnvironment, java.lang.String, R3NgModuleMetadataFacade) => js.Any,
+    compilePipe: (CoreEnvironment, java.lang.String, R3PipeMetadataFacade) => js.Any
   ): CompilerFacade = {
-    val __obj = js.Dynamic.literal(R3ResolvedDependencyType = R3ResolvedDependencyType, compileComponent = compileComponent, compileDirective = compileDirective, compileInjectable = compileInjectable, compileInjector = compileInjector, compileNgModule = compileNgModule, compilePipe = compilePipe)
+    val __obj = js.Dynamic.literal(R3ResolvedDependencyType = R3ResolvedDependencyType, compileComponent = js.Any.fromFunction3(compileComponent), compileDirective = js.Any.fromFunction3(compileDirective), compileInjectable = js.Any.fromFunction3(compileInjectable), compileInjector = js.Any.fromFunction3(compileInjector), compileNgModule = js.Any.fromFunction3(compileNgModule), compilePipe = js.Any.fromFunction3(compilePipe))
   
     __obj.asInstanceOf[CompilerFacade]
   }

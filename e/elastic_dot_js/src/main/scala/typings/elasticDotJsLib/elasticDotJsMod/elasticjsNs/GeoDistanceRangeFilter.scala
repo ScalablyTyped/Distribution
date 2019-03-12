@@ -101,27 +101,27 @@ trait GeoDistanceRangeFilter extends Filter {
 object GeoDistanceRangeFilter {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cache: js.Function1[scala.Boolean, GeoDistanceRangeFilter],
-    cacheKey: js.Function1[java.lang.String, GeoDistanceRangeFilter],
-    distanceType: js.Function1[java.lang.String, GeoDistanceRangeFilter],
-    field: js.Function1[java.lang.String, GeoDistanceRangeFilter],
-    from: js.Function1[stdLib.Number, GeoDistanceRangeFilter],
-    gt: js.Function1[stdLib.Number, GeoDistanceRangeFilter],
-    gte: js.Function1[stdLib.Number, GeoDistanceRangeFilter],
-    includeLower: js.Function1[scala.Boolean, GeoDistanceRangeFilter],
-    includeUpper: js.Function1[scala.Boolean, GeoDistanceRangeFilter],
-    lt: js.Function1[stdLib.Number, GeoDistanceRangeFilter],
-    lte: js.Function1[stdLib.Number, GeoDistanceRangeFilter],
-    name: js.Function1[java.lang.String, GeoDistanceRangeFilter],
-    normalize: js.Function1[java.lang.String, GeoDistanceRangeFilter],
-    optimizeBbox: js.Function1[java.lang.String, GeoDistanceRangeFilter],
-    point: js.Function1[GeoPoint, GeoDistanceRangeFilter],
-    to: js.Function1[stdLib.Number, GeoDistanceRangeFilter],
-    toJSON: js.Function0[GeoDistanceRangeFilter],
-    unit: js.Function1[java.lang.String, GeoDistanceRangeFilter]
+    _type: () => java.lang.String,
+    cache: scala.Boolean => GeoDistanceRangeFilter,
+    cacheKey: java.lang.String => GeoDistanceRangeFilter,
+    distanceType: java.lang.String => GeoDistanceRangeFilter,
+    field: java.lang.String => GeoDistanceRangeFilter,
+    from: stdLib.Number => GeoDistanceRangeFilter,
+    gt: stdLib.Number => GeoDistanceRangeFilter,
+    gte: stdLib.Number => GeoDistanceRangeFilter,
+    includeLower: scala.Boolean => GeoDistanceRangeFilter,
+    includeUpper: scala.Boolean => GeoDistanceRangeFilter,
+    lt: stdLib.Number => GeoDistanceRangeFilter,
+    lte: stdLib.Number => GeoDistanceRangeFilter,
+    name: java.lang.String => GeoDistanceRangeFilter,
+    normalize: java.lang.String => GeoDistanceRangeFilter,
+    optimizeBbox: java.lang.String => GeoDistanceRangeFilter,
+    point: GeoPoint => GeoDistanceRangeFilter,
+    to: stdLib.Number => GeoDistanceRangeFilter,
+    toJSON: () => GeoDistanceRangeFilter,
+    unit: java.lang.String => GeoDistanceRangeFilter
   ): GeoDistanceRangeFilter = {
-    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, distanceType = distanceType, field = field, from = from, gt = gt, gte = gte, includeLower = includeLower, includeUpper = includeUpper, lt = lt, lte = lte, name = name, normalize = normalize, optimizeBbox = optimizeBbox, point = point, to = to, toJSON = toJSON, unit = unit)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), distanceType = js.Any.fromFunction1(distanceType), field = js.Any.fromFunction1(field), from = js.Any.fromFunction1(from), gt = js.Any.fromFunction1(gt), gte = js.Any.fromFunction1(gte), includeLower = js.Any.fromFunction1(includeLower), includeUpper = js.Any.fromFunction1(includeUpper), lt = js.Any.fromFunction1(lt), lte = js.Any.fromFunction1(lte), name = js.Any.fromFunction1(name), normalize = js.Any.fromFunction1(normalize), optimizeBbox = js.Any.fromFunction1(optimizeBbox), point = js.Any.fromFunction1(point), to = js.Any.fromFunction1(to), toJSON = js.Any.fromFunction0(toJSON), unit = js.Any.fromFunction1(unit))
   
     __obj.asInstanceOf[GeoDistanceRangeFilter]
   }

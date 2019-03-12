@@ -29,24 +29,24 @@ object Expect {
   @scala.inline
   def apply(
     not: Expect,
-    toBe: js.Function1[js.Any, scala.Unit],
-    toBeDefined: js.Function0[scala.Unit],
-    toBeFalsy: js.Function0[scala.Unit],
-    toBeGreaterThan: js.Function1[scala.Double, scala.Unit],
-    toBeLessThan: js.Function1[scala.Double, scala.Unit],
-    toBeNull: js.Function0[scala.Unit],
-    toBeTruthy: js.Function0[scala.Unit],
-    toBeUndefined: js.Function0[scala.Unit],
-    toContain: js.Function1[js.Any, scala.Unit],
-    toEqual: js.Function1[js.Any, scala.Unit],
-    toHaveBeenCalled: js.Function0[scala.Unit],
-    toHaveBeenCalledTimes: js.Function1[scala.Double, scala.Unit],
-    toHaveBeenCalledWith: js.Function1[/* repeated */ js.Any, scala.Unit],
-    toMatch: js.Function1[js.Any, scala.Unit],
-    toThrow: js.Function0[scala.Unit],
-    toThrowError: js.Function1[js.Any, scala.Unit]
+    toBe: js.Any => scala.Unit,
+    toBeDefined: () => scala.Unit,
+    toBeFalsy: () => scala.Unit,
+    toBeGreaterThan: scala.Double => scala.Unit,
+    toBeLessThan: scala.Double => scala.Unit,
+    toBeNull: () => scala.Unit,
+    toBeTruthy: () => scala.Unit,
+    toBeUndefined: () => scala.Unit,
+    toContain: js.Any => scala.Unit,
+    toEqual: js.Any => scala.Unit,
+    toHaveBeenCalled: () => scala.Unit,
+    toHaveBeenCalledTimes: scala.Double => scala.Unit,
+    toHaveBeenCalledWith: /* repeated */ js.Any => scala.Unit,
+    toMatch: js.Any => scala.Unit,
+    toThrow: () => scala.Unit,
+    toThrowError: js.Any => scala.Unit
   ): Expect = {
-    val __obj = js.Dynamic.literal(not = not, toBe = toBe, toBeDefined = toBeDefined, toBeFalsy = toBeFalsy, toBeGreaterThan = toBeGreaterThan, toBeLessThan = toBeLessThan, toBeNull = toBeNull, toBeTruthy = toBeTruthy, toBeUndefined = toBeUndefined, toContain = toContain, toEqual = toEqual, toHaveBeenCalled = toHaveBeenCalled, toHaveBeenCalledTimes = toHaveBeenCalledTimes, toHaveBeenCalledWith = toHaveBeenCalledWith, toMatch = toMatch, toThrow = toThrow, toThrowError = toThrowError)
+    val __obj = js.Dynamic.literal(not = not, toBe = js.Any.fromFunction1(toBe), toBeDefined = js.Any.fromFunction0(toBeDefined), toBeFalsy = js.Any.fromFunction0(toBeFalsy), toBeGreaterThan = js.Any.fromFunction1(toBeGreaterThan), toBeLessThan = js.Any.fromFunction1(toBeLessThan), toBeNull = js.Any.fromFunction0(toBeNull), toBeTruthy = js.Any.fromFunction0(toBeTruthy), toBeUndefined = js.Any.fromFunction0(toBeUndefined), toContain = js.Any.fromFunction1(toContain), toEqual = js.Any.fromFunction1(toEqual), toHaveBeenCalled = js.Any.fromFunction0(toHaveBeenCalled), toHaveBeenCalledTimes = js.Any.fromFunction1(toHaveBeenCalledTimes), toHaveBeenCalledWith = js.Any.fromFunction1(toHaveBeenCalledWith), toMatch = js.Any.fromFunction1(toMatch), toThrow = js.Any.fromFunction0(toThrow), toThrowError = js.Any.fromFunction1(toThrowError))
   
     __obj.asInstanceOf[Expect]
   }

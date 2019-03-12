@@ -14,7 +14,7 @@ trait OptionMetadata extends js.Object {
   var ExternalValue: js.Any
   var HasChanged: scala.Boolean
   var IsManaged: scala.Boolean
-  var Label: Label
+  var Label: xrmLib.XrmNs.MetadataNs.Label
   var MetadataId: java.lang.String
   var State: scala.Double
   var TransitionData: js.Any

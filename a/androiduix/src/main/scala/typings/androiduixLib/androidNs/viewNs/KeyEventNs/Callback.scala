@@ -14,11 +14,11 @@ trait Callback extends js.Object {
 object Callback {
   @scala.inline
   def apply(
-    onKeyDown: js.Function2[scala.Double, androiduixLib.androidNs.viewNs.KeyEvent, scala.Boolean],
-    onKeyLongPress: js.Function2[scala.Double, androiduixLib.androidNs.viewNs.KeyEvent, scala.Boolean],
-    onKeyUp: js.Function2[scala.Double, androiduixLib.androidNs.viewNs.KeyEvent, scala.Boolean]
+    onKeyDown: (scala.Double, androiduixLib.androidNs.viewNs.KeyEvent) => scala.Boolean,
+    onKeyLongPress: (scala.Double, androiduixLib.androidNs.viewNs.KeyEvent) => scala.Boolean,
+    onKeyUp: (scala.Double, androiduixLib.androidNs.viewNs.KeyEvent) => scala.Boolean
   ): Callback = {
-    val __obj = js.Dynamic.literal(onKeyDown = onKeyDown, onKeyLongPress = onKeyLongPress, onKeyUp = onKeyUp)
+    val __obj = js.Dynamic.literal(onKeyDown = js.Any.fromFunction2(onKeyDown), onKeyLongPress = js.Any.fromFunction2(onKeyLongPress), onKeyUp = js.Any.fromFunction2(onKeyUp))
   
     __obj.asInstanceOf[Callback]
   }

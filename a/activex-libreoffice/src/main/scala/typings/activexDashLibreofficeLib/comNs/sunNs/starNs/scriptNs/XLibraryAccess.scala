@@ -15,13 +15,13 @@ import scala.scalajs.js.annotation._
 trait XLibraryAccess
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** Return all module names which contain code. e.g., { "UtilLibrary.ModuleDate", "UtilLibrary.Output", ... } */
-  val ModuleNames: activexDashInteropLib.SafeArray[java.lang.String]
+  val ModuleNames: stdLib.SafeArray[java.lang.String]
   /**
     * Get the compiled code of a function.
     * @param FunctionName the full qualified name of a function. (e.g., "UtilLibrary.ModuleDate.Function.CurrentDate")
     * @returns an empty sequence, if this function is not found.
     */
-  def getFunctionCode(FunctionName: java.lang.String): activexDashInteropLib.SafeArray[scala.Double]
+  def getFunctionCode(FunctionName: java.lang.String): stdLib.SafeArray[scala.Double]
   /** get the source code of a function. */
   def getFunctionSource(aFunctionName: java.lang.String): java.lang.String
   /**
@@ -29,9 +29,9 @@ trait XLibraryAccess
     * @param aModuleName the full qualified name of a module. (e.g., "UtilLibrary.ModuleDate")
     * @returns an empty sequence, if this module is not found or the code is not compiled.
     */
-  def getModuleCode(aModuleName: java.lang.String): activexDashInteropLib.SafeArray[scala.Double]
+  def getModuleCode(aModuleName: java.lang.String): stdLib.SafeArray[scala.Double]
   /** Return all module names which contain code. e.g., { "UtilLibrary.ModuleDate", "UtilLibrary.Output", ... } */
-  def getModuleNames(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getModuleNames(): stdLib.SafeArray[java.lang.String]
   /** get the source code of a module. */
   def getModuleSource(aModulName: java.lang.String): java.lang.String
   /**
@@ -49,19 +49,19 @@ trait XLibraryAccess
 object XLibraryAccess {
   @scala.inline
   def apply(
-    ModuleNames: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    getFunctionCode: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[scala.Double]],
-    getFunctionSource: js.Function1[java.lang.String, java.lang.String],
-    getModuleCode: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[scala.Double]],
-    getModuleNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getModuleSource: js.Function1[java.lang.String, java.lang.String],
-    isFunction: js.Function1[java.lang.String, scala.Boolean],
-    isValidPath: js.Function1[java.lang.String, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    ModuleNames: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    getFunctionCode: java.lang.String => stdLib.SafeArray[scala.Double],
+    getFunctionSource: java.lang.String => java.lang.String,
+    getModuleCode: java.lang.String => stdLib.SafeArray[scala.Double],
+    getModuleNames: () => stdLib.SafeArray[java.lang.String],
+    getModuleSource: java.lang.String => java.lang.String,
+    isFunction: java.lang.String => scala.Boolean,
+    isValidPath: java.lang.String => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XLibraryAccess = {
-    val __obj = js.Dynamic.literal(ModuleNames = ModuleNames, acquire = acquire, getFunctionCode = getFunctionCode, getFunctionSource = getFunctionSource, getModuleCode = getModuleCode, getModuleNames = getModuleNames, getModuleSource = getModuleSource, isFunction = isFunction, isValidPath = isValidPath, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ModuleNames = ModuleNames, acquire = js.Any.fromFunction0(acquire), getFunctionCode = js.Any.fromFunction1(getFunctionCode), getFunctionSource = js.Any.fromFunction1(getFunctionSource), getModuleCode = js.Any.fromFunction1(getModuleCode), getModuleNames = js.Any.fromFunction0(getModuleNames), getModuleSource = js.Any.fromFunction1(getModuleSource), isFunction = js.Any.fromFunction1(isFunction), isValidPath = js.Any.fromFunction1(isValidPath), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XLibraryAccess]
   }

@@ -17,7 +17,7 @@ trait MasonryProps extends js.Object {
   var loadItems: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var measurementStore: js.UndefOr[js.Any] = js.undefined
   var minCols: js.UndefOr[scala.Double] = js.undefined
-  var scrollContainer: js.UndefOr[js.Function0[reactLib.HTMLElement]] = js.undefined
+  var scrollContainer: js.UndefOr[js.Function0[stdLib.HTMLElement]] = js.undefined
   var virtualize: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -30,10 +30,10 @@ object MasonryProps {
     flexible: js.UndefOr[scala.Boolean] = js.undefined,
     gutterWidth: scala.Int | scala.Double = null,
     layout: gestaltLib.gestaltLibStrings.MasonryDefaultLayout | gestaltLib.gestaltLibStrings.MasonryUniformRowLayout = null,
-    loadItems: js.Function0[scala.Unit] = null,
+    loadItems: () => scala.Unit = null,
     measurementStore: js.Any = null,
     minCols: scala.Int | scala.Double = null,
-    scrollContainer: js.Function0[reactLib.HTMLElement] = null,
+    scrollContainer: () => stdLib.HTMLElement = null,
     virtualize: js.UndefOr[scala.Boolean] = js.undefined
   ): MasonryProps = {
     val __obj = js.Dynamic.literal(comp = comp.asInstanceOf[js.Any], items = items)
@@ -41,10 +41,10 @@ object MasonryProps {
     if (!js.isUndefined(flexible)) __obj.updateDynamic("flexible")(flexible)
     if (gutterWidth != null) __obj.updateDynamic("gutterWidth")(gutterWidth.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (loadItems != null) __obj.updateDynamic("loadItems")(loadItems)
+    if (loadItems != null) __obj.updateDynamic("loadItems")(js.Any.fromFunction0(loadItems))
     if (measurementStore != null) __obj.updateDynamic("measurementStore")(measurementStore)
     if (minCols != null) __obj.updateDynamic("minCols")(minCols.asInstanceOf[js.Any])
-    if (scrollContainer != null) __obj.updateDynamic("scrollContainer")(scrollContainer)
+    if (scrollContainer != null) __obj.updateDynamic("scrollContainer")(js.Any.fromFunction0(scrollContainer))
     if (!js.isUndefined(virtualize)) __obj.updateDynamic("virtualize")(virtualize)
     __obj.asInstanceOf[MasonryProps]
   }

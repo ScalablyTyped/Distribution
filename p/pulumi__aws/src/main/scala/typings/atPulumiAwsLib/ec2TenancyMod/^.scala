@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/tenancy", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val DedicatedTenancy: atPulumiAwsLib.ec2TenancyMod.Tenancy = js.native
-  val DefaultTenancy: atPulumiAwsLib.ec2TenancyMod.Tenancy = js.native
+  val DedicatedTenancy: Tenancy = js.native
+  val DefaultTenancy: Tenancy = js.native
 }
 

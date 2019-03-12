@@ -44,308 +44,205 @@ object ^ extends js.Object {
   val setImmediate: js.Function2[/* callback */ js.Function, /* repeated */ js.Any, scala.Unit] = js.native
   val someSeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
   @JSName("apply")
-  def apply[E](fn: js.Function, args: js.Any*): i2cDashBusLib.asyncMod.AsyncFunction[_, E] = js.native
+  def apply[E](fn: js.Function, args: js.Any*): AsyncFunction[_, E] = js.native
   def applyEach(fns: js.Array[js.Function], argsAndCallback: js.Any*): scala.Unit = js.native
   def applyEachSeries(fns: js.Array[js.Function], argsAndCallback: js.Any*): scala.Unit = js.native
   def asyncify(fn: js.Function): js.Function1[/* repeated */ js.Any, _] = js.native
-  def auto[R /* <: i2cDashBusLib.asyncMod.Dictionary[_] */, E](tasks: i2cDashBusLib.asyncMod.AsyncAutoTasks[R, E]): scala.Unit = js.native
-  def auto[R /* <: i2cDashBusLib.asyncMod.Dictionary[_] */, E](
-    tasks: i2cDashBusLib.asyncMod.AsyncAutoTasks[R, E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultCallback[R, E]
-  ): scala.Unit = js.native
-  def auto[R /* <: i2cDashBusLib.asyncMod.Dictionary[_] */, E](tasks: i2cDashBusLib.asyncMod.AsyncAutoTasks[R, E], concurrency: scala.Double): scala.Unit = js.native
-  def auto[R /* <: i2cDashBusLib.asyncMod.Dictionary[_] */, E](
-    tasks: i2cDashBusLib.asyncMod.AsyncAutoTasks[R, E],
-    concurrency: scala.Double,
-    callback: i2cDashBusLib.asyncMod.AsyncResultCallback[R, E]
-  ): scala.Unit = js.native
+  def auto[R /* <: Dictionary[_] */, E](tasks: AsyncAutoTasks[R, E]): scala.Unit = js.native
+  def auto[R /* <: Dictionary[_] */, E](tasks: AsyncAutoTasks[R, E], callback: AsyncResultCallback[R, E]): scala.Unit = js.native
+  def auto[R /* <: Dictionary[_] */, E](tasks: AsyncAutoTasks[R, E], concurrency: scala.Double): scala.Unit = js.native
+  def auto[R /* <: Dictionary[_] */, E](tasks: AsyncAutoTasks[R, E], concurrency: scala.Double, callback: AsyncResultCallback[R, E]): scala.Unit = js.native
   def autoInject[E](tasks: js.Any): scala.Unit = js.native
-  def autoInject[E](tasks: js.Any, callback: i2cDashBusLib.asyncMod.AsyncResultCallback[_, E]): scala.Unit = js.native
+  def autoInject[E](tasks: js.Any, callback: AsyncResultCallback[_, E]): scala.Unit = js.native
+  def cargo[E](worker: js.Function2[/* tasks */ js.Array[_], /* callback */ ErrorCallback[E], scala.Unit]): AsyncCargo = js.native
   def cargo[E](
-    worker: js.Function2[
-      /* tasks */ js.Array[_], 
-      /* callback */ i2cDashBusLib.asyncMod.ErrorCallback[E], 
-      scala.Unit
-    ]
-  ): i2cDashBusLib.asyncMod.AsyncCargo = js.native
-  def cargo[E](
-    worker: js.Function2[
-      /* tasks */ js.Array[_], 
-      /* callback */ i2cDashBusLib.asyncMod.ErrorCallback[E], 
-      scala.Unit
-    ],
+    worker: js.Function2[/* tasks */ js.Array[_], /* callback */ ErrorCallback[E], scala.Unit],
     payload: scala.Double
-  ): i2cDashBusLib.asyncMod.AsyncCargo = js.native
+  ): AsyncCargo = js.native
   def compose(fns: js.Function*): js.Function = js.native
+  def concat[T, R, E](arr: IterableCollection[T], iterator: AsyncResultIterator[T, js.Array[R], E]): scala.Unit = js.native
   def concat[T, R, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, js.Array[R], E]
+    arr: IterableCollection[T],
+    iterator: AsyncResultIterator[T, js.Array[R], E],
+    callback: AsyncResultArrayCallback[R, E]
   ): scala.Unit = js.native
-  def concat[T, R, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, js.Array[R], E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[R, E]
-  ): scala.Unit = js.native
+  def concatLimit[T, R, E](arr: IterableCollection[T], limit: scala.Double, iterator: AsyncResultIterator[T, js.Array[R], E]): scala.Unit = js.native
   def concatLimit[T, R, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
+    arr: IterableCollection[T],
     limit: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, js.Array[R], E]
-  ): scala.Unit = js.native
-  def concatLimit[T, R, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    limit: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, js.Array[R], E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[R, E]
+    iterator: AsyncResultIterator[T, js.Array[R], E],
+    callback: AsyncResultArrayCallback[R, E]
   ): scala.Unit = js.native
   def constant(values: js.Any*): js.Function = js.native
+  def detect[T, E](arr: IterableCollection[T], iterator: AsyncBooleanIterator[T, E]): scala.Unit = js.native
   def detect[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E]
+    arr: IterableCollection[T],
+    iterator: AsyncBooleanIterator[T, E],
+    callback: AsyncResultCallback[T, E]
   ): scala.Unit = js.native
-  def detect[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultCallback[T, E]
-  ): scala.Unit = js.native
+  def detectLimit[T, E](arr: IterableCollection[T], limit: scala.Double, iterator: AsyncBooleanIterator[T, E]): scala.Unit = js.native
   def detectLimit[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
+    arr: IterableCollection[T],
     limit: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E]
-  ): scala.Unit = js.native
-  def detectLimit[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    limit: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultCallback[T, E]
+    iterator: AsyncBooleanIterator[T, E],
+    callback: AsyncResultCallback[T, E]
   ): scala.Unit = js.native
   def dir(fn: js.Function, args: js.Any*): scala.Unit = js.native
   def doDuring[E](
-    fn: i2cDashBusLib.asyncMod.AsyncVoidFunction[E],
-    test: js.Function1[
-      /* testCallback */ i2cDashBusLib.asyncMod.AsyncBooleanResultCallback[E], 
-      scala.Unit
-    ],
-    callback: i2cDashBusLib.asyncMod.ErrorCallback[E]
+    fn: AsyncVoidFunction[E],
+    test: js.Function1[/* testCallback */ AsyncBooleanResultCallback[E], scala.Unit],
+    callback: ErrorCallback[E]
   ): scala.Unit = js.native
   def doUntil[T, E](
-    fn: i2cDashBusLib.asyncMod.AsyncFunctionEx[T, E],
+    fn: AsyncFunctionEx[T, E],
     test: js.Function1[/* repeated */ T, scala.Boolean],
-    callback: i2cDashBusLib.asyncMod.ErrorCallback[E]
+    callback: ErrorCallback[E]
   ): scala.Unit = js.native
   def doWhilst[T, E](
-    fn: i2cDashBusLib.asyncMod.AsyncFunctionEx[T, E],
+    fn: AsyncFunctionEx[T, E],
     test: js.Function1[/* repeated */ T, scala.Boolean],
-    callback: i2cDashBusLib.asyncMod.ErrorCallback[E]
+    callback: ErrorCallback[E]
   ): scala.Unit = js.native
   def during[E](
-    test: js.Function1[
-      /* testCallback */ i2cDashBusLib.asyncMod.AsyncBooleanResultCallback[E], 
-      scala.Unit
-    ],
-    fn: i2cDashBusLib.asyncMod.AsyncVoidFunction[E],
-    callback: i2cDashBusLib.asyncMod.ErrorCallback[E]
+    test: js.Function1[/* testCallback */ AsyncBooleanResultCallback[E], scala.Unit],
+    fn: AsyncVoidFunction[E],
+    callback: ErrorCallback[E]
   ): scala.Unit = js.native
-  def each[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncIterator[T, E]
-  ): scala.Unit = js.native
-  def each[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncIterator[T, E],
-    callback: i2cDashBusLib.asyncMod.ErrorCallback[E]
-  ): scala.Unit = js.native
+  def each[T, E](arr: IterableCollection[T], iterator: AsyncIterator[T, E]): scala.Unit = js.native
+  def each[T, E](arr: IterableCollection[T], iterator: AsyncIterator[T, E], callback: ErrorCallback[E]): scala.Unit = js.native
+  def eachLimit[T, E](arr: IterableCollection[T], limit: scala.Double, iterator: AsyncIterator[T, E]): scala.Unit = js.native
   def eachLimit[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
+    arr: IterableCollection[T],
     limit: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncIterator[T, E]
-  ): scala.Unit = js.native
-  def eachLimit[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    limit: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncIterator[T, E],
-    callback: i2cDashBusLib.asyncMod.ErrorCallback[E]
+    iterator: AsyncIterator[T, E],
+    callback: ErrorCallback[E]
   ): scala.Unit = js.native
   def ensureAsync(fn: js.Function1[/* repeated */ js.Any, scala.Unit]): js.Function = js.native
+  def every[T, E](arr: IterableCollection[T], iterator: AsyncBooleanIterator[T, E]): scala.Unit = js.native
   def every[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E]
+    arr: IterableCollection[T],
+    iterator: AsyncBooleanIterator[T, E],
+    callback: AsyncBooleanResultCallback[E]
   ): scala.Unit = js.native
-  def every[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E],
-    callback: i2cDashBusLib.asyncMod.AsyncBooleanResultCallback[E]
-  ): scala.Unit = js.native
+  def everyLimit[T, E](arr: IterableCollection[T], limit: scala.Double, iterator: AsyncBooleanIterator[T, E]): scala.Unit = js.native
   def everyLimit[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
+    arr: IterableCollection[T],
     limit: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E]
+    iterator: AsyncBooleanIterator[T, E],
+    callback: AsyncBooleanResultCallback[E]
   ): scala.Unit = js.native
-  def everyLimit[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    limit: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E],
-    callback: i2cDashBusLib.asyncMod.AsyncBooleanResultCallback[E]
-  ): scala.Unit = js.native
+  def filter[T, E](arr: IterableCollection[T], iterator: AsyncBooleanIterator[T, E]): scala.Unit = js.native
   def filter[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E]
+    arr: IterableCollection[T],
+    iterator: AsyncBooleanIterator[T, E],
+    callback: AsyncResultArrayCallback[T, E]
   ): scala.Unit = js.native
-  def filter[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[T, E]
-  ): scala.Unit = js.native
+  def filterLimit[T, E](arr: IterableCollection[T], limit: scala.Double, iterator: AsyncBooleanIterator[T, E]): scala.Unit = js.native
   def filterLimit[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
+    arr: IterableCollection[T],
     limit: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E]
+    iterator: AsyncBooleanIterator[T, E],
+    callback: AsyncResultArrayCallback[T, E]
   ): scala.Unit = js.native
-  def filterLimit[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    limit: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[T, E]
-  ): scala.Unit = js.native
-  def forEachOf[T, E](
-    obj: i2cDashBusLib.asyncMod.IterableCollection[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncForEachOfIterator[T, E]
-  ): scala.Unit = js.native
-  def forEachOf[T, E](
-    obj: i2cDashBusLib.asyncMod.IterableCollection[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncForEachOfIterator[T, E],
-    callback: i2cDashBusLib.asyncMod.ErrorCallback[E]
-  ): scala.Unit = js.native
+  def forEachOf[T, E](obj: IterableCollection[T], iterator: AsyncForEachOfIterator[T, E]): scala.Unit = js.native
+  def forEachOf[T, E](obj: IterableCollection[T], iterator: AsyncForEachOfIterator[T, E], callback: ErrorCallback[E]): scala.Unit = js.native
+  def forEachOfLimit[T, E](obj: IterableCollection[T], limit: scala.Double, iterator: AsyncForEachOfIterator[T, E]): scala.Unit = js.native
   def forEachOfLimit[T, E](
-    obj: i2cDashBusLib.asyncMod.IterableCollection[T],
+    obj: IterableCollection[T],
     limit: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncForEachOfIterator[T, E]
+    iterator: AsyncForEachOfIterator[T, E],
+    callback: ErrorCallback[E]
   ): scala.Unit = js.native
-  def forEachOfLimit[T, E](
-    obj: i2cDashBusLib.asyncMod.IterableCollection[T],
-    limit: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncForEachOfIterator[T, E],
-    callback: i2cDashBusLib.asyncMod.ErrorCallback[E]
-  ): scala.Unit = js.native
-  def forever[E](
-    next: js.Function1[/* next */ i2cDashBusLib.asyncMod.ErrorCallback[E], scala.Unit],
-    errBack: i2cDashBusLib.asyncMod.ErrorCallback[E]
-  ): scala.Unit = js.native
+  def forever[E](next: js.Function1[/* next */ ErrorCallback[E], scala.Unit], errBack: ErrorCallback[E]): scala.Unit = js.native
   def log(fn: js.Function, args: js.Any*): scala.Unit = js.native
+  def map[T, R, E](arr: Dictionary[T], iterator: AsyncResultIterator[T, R, E]): scala.Unit = js.native
   def map[T, R, E](
-    arr: i2cDashBusLib.asyncMod.Dictionary[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, R, E]
+    arr: Dictionary[T],
+    iterator: AsyncResultIterator[T, R, E],
+    callback: AsyncResultArrayCallback[R, E]
   ): scala.Unit = js.native
+  def map[T, R, E](arr: js.Array[T], iterator: AsyncResultIterator[T, R, E]): scala.Unit = js.native
+  def map[T, R, E](arr: js.Array[T], iterator: AsyncResultIterator[T, R, E], callback: AsyncResultArrayCallback[R, E]): scala.Unit = js.native
+  def map[T, R, E](arr: stdLib.IterableIterator[T], iterator: AsyncResultIterator[T, R, E]): scala.Unit = js.native
   def map[T, R, E](
-    arr: i2cDashBusLib.asyncMod.Dictionary[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, R, E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[R, E]
+    arr: stdLib.IterableIterator[T],
+    iterator: AsyncResultIterator[T, R, E],
+    callback: AsyncResultArrayCallback[R, E]
   ): scala.Unit = js.native
-  def map[T, R, E](arr: js.Array[T], iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, R, E]): scala.Unit = js.native
-  def map[T, R, E](
-    arr: js.Array[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, R, E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[R, E]
-  ): scala.Unit = js.native
-  def map[T, R, E](arr: nodeLib.IterableIterator[T], iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, R, E]): scala.Unit = js.native
-  def map[T, R, E](
-    arr: nodeLib.IterableIterator[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, R, E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[R, E]
-  ): scala.Unit = js.native
+  def mapLimit[T, R, E](arr: IterableCollection[T], limit: scala.Double, iterator: AsyncResultIterator[T, R, E]): scala.Unit = js.native
   def mapLimit[T, R, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
+    arr: IterableCollection[T],
     limit: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, R, E]
-  ): scala.Unit = js.native
-  def mapLimit[T, R, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    limit: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, R, E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[R, E]
+    iterator: AsyncResultIterator[T, R, E],
+    callback: AsyncResultArrayCallback[R, E]
   ): scala.Unit = js.native
   def mapValues[T, R, E](
-    obj: i2cDashBusLib.asyncMod.Dictionary[T],
+    obj: Dictionary[T],
     iteratee: js.Function3[
       /* value */ T, 
       /* key */ java.lang.String, 
-      /* callback */ i2cDashBusLib.asyncMod.AsyncResultCallback[R, E], 
+      /* callback */ AsyncResultCallback[R, E], 
       scala.Unit
     ],
-    callback: i2cDashBusLib.asyncMod.AsyncResultObjectCallback[R, E]
+    callback: AsyncResultObjectCallback[R, E]
   ): scala.Unit = js.native
   def mapValuesLimit[T, R, E](
-    obj: i2cDashBusLib.asyncMod.Dictionary[T],
+    obj: Dictionary[T],
     limit: scala.Double,
     iteratee: js.Function3[
       /* value */ T, 
       /* key */ java.lang.String, 
-      /* callback */ i2cDashBusLib.asyncMod.AsyncResultCallback[R, E], 
+      /* callback */ AsyncResultCallback[R, E], 
       scala.Unit
     ],
-    callback: i2cDashBusLib.asyncMod.AsyncResultObjectCallback[R, E]
+    callback: AsyncResultObjectCallback[R, E]
   ): scala.Unit = js.native
   def memoize(fn: js.Function): js.Function = js.native
   def memoize(fn: js.Function, hasher: js.Function): js.Function = js.native
   def nextTick(callback: js.Function, args: js.Any*): scala.Unit = js.native
-  def parallel[T, E](tasks: i2cDashBusLib.asyncMod.Dictionary[i2cDashBusLib.asyncMod.AsyncFunction[T, E]]): scala.Unit = js.native
-  def parallel[T, E](
-    tasks: i2cDashBusLib.asyncMod.Dictionary[i2cDashBusLib.asyncMod.AsyncFunction[T, E]],
-    callback: i2cDashBusLib.asyncMod.AsyncResultObjectCallback[T, E]
-  ): scala.Unit = js.native
-  def parallel[T, E](tasks: js.Array[i2cDashBusLib.asyncMod.AsyncFunction[T, E]]): scala.Unit = js.native
-  def parallel[T, E](
-    tasks: js.Array[i2cDashBusLib.asyncMod.AsyncFunction[T, E]],
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[T, E]
-  ): scala.Unit = js.native
+  def parallel[T, E](tasks: Dictionary[AsyncFunction[T, E]]): scala.Unit = js.native
+  def parallel[T, E](tasks: Dictionary[AsyncFunction[T, E]], callback: AsyncResultObjectCallback[T, E]): scala.Unit = js.native
+  def parallel[T, E](tasks: js.Array[AsyncFunction[T, E]]): scala.Unit = js.native
+  def parallel[T, E](tasks: js.Array[AsyncFunction[T, E]], callback: AsyncResultArrayCallback[T, E]): scala.Unit = js.native
+  def parallelLimit[T, E](tasks: Dictionary[AsyncFunction[T, E]], limit: scala.Double): scala.Unit = js.native
   def parallelLimit[T, E](
-    tasks: i2cDashBusLib.asyncMod.Dictionary[i2cDashBusLib.asyncMod.AsyncFunction[T, E]],
-    limit: scala.Double
-  ): scala.Unit = js.native
-  def parallelLimit[T, E](
-    tasks: i2cDashBusLib.asyncMod.Dictionary[i2cDashBusLib.asyncMod.AsyncFunction[T, E]],
+    tasks: Dictionary[AsyncFunction[T, E]],
     limit: scala.Double,
-    callback: i2cDashBusLib.asyncMod.AsyncResultObjectCallback[T, E]
+    callback: AsyncResultObjectCallback[T, E]
   ): scala.Unit = js.native
-  def parallelLimit[T, E](tasks: js.Array[i2cDashBusLib.asyncMod.AsyncFunction[T, E]], limit: scala.Double): scala.Unit = js.native
+  def parallelLimit[T, E](tasks: js.Array[AsyncFunction[T, E]], limit: scala.Double): scala.Unit = js.native
   def parallelLimit[T, E](
-    tasks: js.Array[i2cDashBusLib.asyncMod.AsyncFunction[T, E]],
+    tasks: js.Array[AsyncFunction[T, E]],
     limit: scala.Double,
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[T, E]
+    callback: AsyncResultArrayCallback[T, E]
   ): scala.Unit = js.native
-  def priorityQueue[T, E](worker: i2cDashBusLib.asyncMod.AsyncWorker[T, E], concurrency: scala.Double): i2cDashBusLib.asyncMod.AsyncPriorityQueue[T] = js.native
-  def queue[T, E](worker: i2cDashBusLib.asyncMod.AsyncWorker[T, E]): i2cDashBusLib.asyncMod.AsyncQueue[T] = js.native
-  def queue[T, E](worker: i2cDashBusLib.asyncMod.AsyncWorker[T, E], concurrency: scala.Double): i2cDashBusLib.asyncMod.AsyncQueue[T] = js.native
+  def priorityQueue[T, E](worker: AsyncWorker[T, E], concurrency: scala.Double): AsyncPriorityQueue[T] = js.native
+  def queue[T, E](worker: AsyncWorker[T, E]): AsyncQueue[T] = js.native
+  def queue[T, E](worker: AsyncWorker[T, E], concurrency: scala.Double): AsyncQueue[T] = js.native
   @JSName("queue")
-  def queue_TRE[T, R, E](worker: i2cDashBusLib.asyncMod.AsyncResultIterator[T, R, E]): i2cDashBusLib.asyncMod.AsyncQueue[T] = js.native
+  def queue_TRE[T, R, E](worker: AsyncResultIterator[T, R, E]): AsyncQueue[T] = js.native
   @JSName("queue")
-  def queue_TRE[T, R, E](worker: i2cDashBusLib.asyncMod.AsyncResultIterator[T, R, E], concurrency: scala.Double): i2cDashBusLib.asyncMod.AsyncQueue[T] = js.native
-  def race[T, E](
-    tasks: js.Array[i2cDashBusLib.asyncMod.AsyncFunction[T, E]],
-    callback: i2cDashBusLib.asyncMod.AsyncResultCallback[T, E]
-  ): scala.Unit = js.native
-  def reduce[T, R, E](arr: js.Array[T], memo: R, iterator: i2cDashBusLib.asyncMod.AsyncMemoIterator[T, R, E]): scala.Unit = js.native
+  def queue_TRE[T, R, E](worker: AsyncResultIterator[T, R, E], concurrency: scala.Double): AsyncQueue[T] = js.native
+  def race[T, E](tasks: js.Array[AsyncFunction[T, E]], callback: AsyncResultCallback[T, E]): scala.Unit = js.native
+  def reduce[T, R, E](arr: js.Array[T], memo: R, iterator: AsyncMemoIterator[T, R, E]): scala.Unit = js.native
   def reduce[T, R, E](
     arr: js.Array[T],
     memo: R,
-    iterator: i2cDashBusLib.asyncMod.AsyncMemoIterator[T, R, E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultCallback[R, E]
+    iterator: AsyncMemoIterator[T, R, E],
+    callback: AsyncResultCallback[R, E]
   ): scala.Unit = js.native
+  def reduce[T, R, E](arr: stdLib.IterableIterator[T], memo: R, iterator: AsyncMemoIterator[T, R, E]): scala.Unit = js.native
   def reduce[T, R, E](
-    arr: nodeLib.IterableIterator[T],
+    arr: stdLib.IterableIterator[T],
     memo: R,
-    iterator: i2cDashBusLib.asyncMod.AsyncMemoIterator[T, R, E]
+    iterator: AsyncMemoIterator[T, R, E],
+    callback: AsyncResultCallback[R, E]
   ): scala.Unit = js.native
-  def reduce[T, R, E](
-    arr: nodeLib.IterableIterator[T],
-    memo: R,
-    iterator: i2cDashBusLib.asyncMod.AsyncMemoIterator[T, R, E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultCallback[R, E]
-  ): scala.Unit = js.native
-  def reflect[T, E](fn: i2cDashBusLib.asyncMod.AsyncFunction[T, E]): js.Function1[
+  def reflect[T, E](fn: AsyncFunction[T, E]): js.Function1[
     /* callback */ js.Function2[/* err */ scala.Null, /* result */ i2cDashBusLib.Anon_Error[E, T], scala.Unit], 
     scala.Unit
   ] = js.native
-  def reflectAll[T, E](tasks: js.Array[i2cDashBusLib.asyncMod.AsyncFunction[T, E]]): js.Array[
+  def reflectAll[T, E](tasks: js.Array[AsyncFunction[T, E]]): js.Array[
     js.Function1[
       /* callback */ js.Function2[/* err */ scala.Null, /* result */ i2cDashBusLib.Anon_Error[E, T], scala.Unit], 
       scala.Unit
@@ -353,86 +250,61 @@ object ^ extends js.Object {
   ] = js.native
   def retry[T, E](
     opts: i2cDashBusLib.Anon_Interval,
-    task: js.Function2[
-      /* callback */ i2cDashBusLib.asyncMod.AsyncResultCallback[T, E], 
-      /* results */ js.Any, 
-      scala.Unit
-    ],
-    callback: i2cDashBusLib.asyncMod.AsyncResultCallback[_, E]
+    task: js.Function2[/* callback */ AsyncResultCallback[T, E], /* results */ js.Any, scala.Unit],
+    callback: AsyncResultCallback[_, E]
   ): scala.Unit = js.native
   def retry[T, E](
     opts: scala.Double,
-    task: js.Function2[
-      /* callback */ i2cDashBusLib.asyncMod.AsyncResultCallback[T, E], 
-      /* results */ js.Any, 
-      scala.Unit
-    ],
-    callback: i2cDashBusLib.asyncMod.AsyncResultCallback[_, E]
+    task: js.Function2[/* callback */ AsyncResultCallback[T, E], /* results */ js.Any, scala.Unit],
+    callback: AsyncResultCallback[_, E]
   ): scala.Unit = js.native
-  def retryable[T, E](opts: i2cDashBusLib.Anon_IntervalTimes, task: i2cDashBusLib.asyncMod.AsyncFunction[T, E]): i2cDashBusLib.asyncMod.AsyncFunction[T, E] = js.native
-  def retryable[T, E](opts: scala.Double, task: i2cDashBusLib.asyncMod.AsyncFunction[T, E]): i2cDashBusLib.asyncMod.AsyncFunction[T, E] = js.native
+  def retryable[T, E](opts: i2cDashBusLib.Anon_IntervalTimes, task: AsyncFunction[T, E]): AsyncFunction[T, E] = js.native
+  def retryable[T, E](opts: scala.Double, task: AsyncFunction[T, E]): AsyncFunction[T, E] = js.native
   def seq(fns: js.Function*): js.Function = js.native
-  def series[T, E](tasks: i2cDashBusLib.asyncMod.Dictionary[i2cDashBusLib.asyncMod.AsyncFunction[T, E]]): scala.Unit = js.native
-  def series[T, E](
-    tasks: i2cDashBusLib.asyncMod.Dictionary[i2cDashBusLib.asyncMod.AsyncFunction[T, E]],
-    callback: i2cDashBusLib.asyncMod.AsyncResultObjectCallback[T, E]
-  ): scala.Unit = js.native
-  def series[T, E](tasks: js.Array[i2cDashBusLib.asyncMod.AsyncFunction[T, E]]): scala.Unit = js.native
-  def series[T, E](
-    tasks: js.Array[i2cDashBusLib.asyncMod.AsyncFunction[T, E]],
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[T, E]
-  ): scala.Unit = js.native
+  def series[T, E](tasks: Dictionary[AsyncFunction[T, E]]): scala.Unit = js.native
+  def series[T, E](tasks: Dictionary[AsyncFunction[T, E]], callback: AsyncResultObjectCallback[T, E]): scala.Unit = js.native
+  def series[T, E](tasks: js.Array[AsyncFunction[T, E]]): scala.Unit = js.native
+  def series[T, E](tasks: js.Array[AsyncFunction[T, E]], callback: AsyncResultArrayCallback[T, E]): scala.Unit = js.native
+  def some[T, E](arr: IterableCollection[T], iterator: AsyncBooleanIterator[T, E]): scala.Unit = js.native
   def some[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E]
+    arr: IterableCollection[T],
+    iterator: AsyncBooleanIterator[T, E],
+    callback: AsyncBooleanResultCallback[E]
   ): scala.Unit = js.native
-  def some[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E],
-    callback: i2cDashBusLib.asyncMod.AsyncBooleanResultCallback[E]
-  ): scala.Unit = js.native
+  def someLimit[T, E](arr: IterableCollection[T], limit: scala.Double, iterator: AsyncBooleanIterator[T, E]): scala.Unit = js.native
   def someLimit[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
+    arr: IterableCollection[T],
     limit: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E]
+    iterator: AsyncBooleanIterator[T, E],
+    callback: AsyncBooleanResultCallback[E]
   ): scala.Unit = js.native
-  def someLimit[T, E](
-    arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    limit: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E],
-    callback: i2cDashBusLib.asyncMod.AsyncBooleanResultCallback[E]
-  ): scala.Unit = js.native
-  def sortBy[T, V, E](arr: js.Array[T], iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, V, E]): scala.Unit = js.native
+  def sortBy[T, V, E](arr: js.Array[T], iterator: AsyncResultIterator[T, V, E]): scala.Unit = js.native
+  def sortBy[T, V, E](arr: js.Array[T], iterator: AsyncResultIterator[T, V, E], callback: AsyncResultArrayCallback[T, E]): scala.Unit = js.native
+  def sortBy[T, V, E](arr: stdLib.IterableIterator[T], iterator: AsyncResultIterator[T, V, E]): scala.Unit = js.native
   def sortBy[T, V, E](
-    arr: js.Array[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, V, E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[T, E]
+    arr: stdLib.IterableIterator[T],
+    iterator: AsyncResultIterator[T, V, E],
+    callback: AsyncResultArrayCallback[T, E]
   ): scala.Unit = js.native
-  def sortBy[T, V, E](arr: nodeLib.IterableIterator[T], iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, V, E]): scala.Unit = js.native
-  def sortBy[T, V, E](
-    arr: nodeLib.IterableIterator[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, V, E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[T, E]
-  ): scala.Unit = js.native
-  def timeout[T, E](fn: i2cDashBusLib.asyncMod.AsyncFunction[T, E], milliseconds: scala.Double): i2cDashBusLib.asyncMod.AsyncFunction[T, E] = js.native
-  def timeout[T, E](fn: i2cDashBusLib.asyncMod.AsyncFunction[T, E], milliseconds: scala.Double, info: js.Any): i2cDashBusLib.asyncMod.AsyncFunction[T, E] = js.native
-  def timeout[T, R, E](fn: i2cDashBusLib.asyncMod.AsyncResultIterator[T, R, E], milliseconds: scala.Double): i2cDashBusLib.asyncMod.AsyncResultIterator[T, R, E] = js.native
-  def timeout[T, R, E](fn: i2cDashBusLib.asyncMod.AsyncResultIterator[T, R, E], milliseconds: scala.Double, info: js.Any): i2cDashBusLib.asyncMod.AsyncResultIterator[T, R, E] = js.native
+  def timeout[T, E](fn: AsyncFunction[T, E], milliseconds: scala.Double): AsyncFunction[T, E] = js.native
+  def timeout[T, E](fn: AsyncFunction[T, E], milliseconds: scala.Double, info: js.Any): AsyncFunction[T, E] = js.native
+  def timeout[T, R, E](fn: AsyncResultIterator[T, R, E], milliseconds: scala.Double): AsyncResultIterator[T, R, E] = js.native
+  def timeout[T, R, E](fn: AsyncResultIterator[T, R, E], milliseconds: scala.Double, info: js.Any): AsyncResultIterator[T, R, E] = js.native
   def times[T, E](
     n: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[scala.Double, T, E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[T, E]
+    iterator: AsyncResultIterator[scala.Double, T, E],
+    callback: AsyncResultArrayCallback[T, E]
   ): scala.Unit = js.native
   def timesLimit[T, E](
     n: scala.Double,
     limit: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[scala.Double, T, E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[T, E]
+    iterator: AsyncResultIterator[scala.Double, T, E],
+    callback: AsyncResultArrayCallback[T, E]
   ): scala.Unit = js.native
   def timesSeries[T, E](
     n: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[scala.Double, T, E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[T, E]
+    iterator: AsyncResultIterator[scala.Double, T, E],
+    callback: AsyncResultArrayCallback[T, E]
   ): scala.Unit = js.native
   def transform[T, R, E](
     arr: js.Array[T],
@@ -455,7 +327,7 @@ object ^ extends js.Object {
       /* callback */ js.Function1[/* error */ js.UndefOr[E], scala.Unit], 
       scala.Unit
     ],
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[T, E]
+    callback: AsyncResultArrayCallback[T, E]
   ): scala.Unit = js.native
   def transform[T, R, E](
     arr: js.Array[T],
@@ -476,7 +348,7 @@ object ^ extends js.Object {
       /* callback */ js.Function1[/* error */ js.UndefOr[E], scala.Unit], 
       scala.Unit
     ],
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[T, E]
+    callback: AsyncResultArrayCallback[T, E]
   ): scala.Unit = js.native
   def transform[T, R, E](
     arr: org.scalablytyped.runtime.StringDictionary[T],
@@ -499,7 +371,7 @@ object ^ extends js.Object {
       /* callback */ js.Function1[/* error */ js.UndefOr[E], scala.Unit], 
       scala.Unit
     ],
-    callback: i2cDashBusLib.asyncMod.AsyncResultObjectCallback[T, E]
+    callback: AsyncResultObjectCallback[T, E]
   ): scala.Unit = js.native
   def transform[T, R, E](
     arr: org.scalablytyped.runtime.StringDictionary[T],
@@ -520,21 +392,13 @@ object ^ extends js.Object {
       /* callback */ js.Function1[/* error */ js.UndefOr[E], scala.Unit], 
       scala.Unit
     ],
-    callback: i2cDashBusLib.asyncMod.AsyncResultObjectCallback[T, E]
+    callback: AsyncResultObjectCallback[T, E]
   ): scala.Unit = js.native
   def unmemoize(fn: js.Function): js.Function = js.native
-  def until[E](
-    test: js.Function0[scala.Boolean],
-    fn: i2cDashBusLib.asyncMod.AsyncVoidFunction[E],
-    callback: i2cDashBusLib.asyncMod.ErrorCallback[E]
-  ): scala.Unit = js.native
+  def until[E](test: js.Function0[scala.Boolean], fn: AsyncVoidFunction[E], callback: ErrorCallback[E]): scala.Unit = js.native
   def waterfall[T, E](tasks: js.Array[js.Function]): scala.Unit = js.native
-  def waterfall[T, E](tasks: js.Array[js.Function], callback: i2cDashBusLib.asyncMod.AsyncResultCallback[T, E]): scala.Unit = js.native
-  def whilst[E](
-    test: js.Function0[scala.Boolean],
-    fn: i2cDashBusLib.asyncMod.AsyncVoidFunction[E],
-    callback: i2cDashBusLib.asyncMod.ErrorCallback[E]
-  ): scala.Unit = js.native
+  def waterfall[T, E](tasks: js.Array[js.Function], callback: AsyncResultCallback[T, E]): scala.Unit = js.native
+  def whilst[E](test: js.Function0[scala.Boolean], fn: AsyncVoidFunction[E], callback: ErrorCallback[E]): scala.Unit = js.native
   def wrapSync(fn: js.Function): js.Function = js.native
 }
 

@@ -53,16 +53,16 @@ object IAxis {
     automatic: scala.Boolean,
     axisSize: scala.Double,
     bounds: IRectangle,
-    calc: js.Function1[scala.Double, scala.Double],
+    calc: scala.Double => scala.Double,
     chart: IChart,
     custom: scala.Boolean,
     end: scala.Double,
     endPos: scala.Double,
     format: IFormat,
-    fromPos: js.Function1[scala.Double, scala.Double],
-    fromSize: js.Function1[scala.Double, scala.Double],
+    fromPos: scala.Double => scala.Double,
+    fromSize: scala.Double => scala.Double,
     grid: IGrid,
-    hasAnySeries: js.Function0[scala.Boolean],
+    hasAnySeries: () => scala.Boolean,
     horizontal: scala.Boolean,
     increm: scala.Double,
     increment: scala.Double,
@@ -76,15 +76,15 @@ object IAxis {
     otherSize: scala.Boolean,
     position: scala.Double,
     scale: scala.Double,
-    scroll: js.Function1[scala.Double, scala.Unit],
-    setMinMax: js.Function2[scala.Double, scala.Double, scala.Unit],
+    scroll: scala.Double => scala.Unit,
+    setMinMax: (scala.Double, scala.Double) => scala.Unit,
     start: scala.Double,
     startPos: scala.Double,
     ticks: ITicks,
     title: IAxisTitle,
     visible: scala.Boolean
   ): IAxis = {
-    val __obj = js.Dynamic.literal(automatic = automatic, axisSize = axisSize, bounds = bounds, calc = calc, chart = chart, custom = custom, end = end, endPos = endPos, format = format, fromPos = fromPos, fromSize = fromSize, grid = grid, hasAnySeries = hasAnySeries, horizontal = horizontal, increm = increm, increment = increment, innerTicks = innerTicks, inverted = inverted, labels = labels, log = log, maximum = maximum, minimum = minimum, minorTicks = minorTicks, otherSize = otherSize, position = position, scale = scale, scroll = scroll, setMinMax = setMinMax, start = start, startPos = startPos, ticks = ticks, title = title, visible = visible)
+    val __obj = js.Dynamic.literal(automatic = automatic, axisSize = axisSize, bounds = bounds, calc = js.Any.fromFunction1(calc), chart = chart, custom = custom, end = end, endPos = endPos, format = format, fromPos = js.Any.fromFunction1(fromPos), fromSize = js.Any.fromFunction1(fromSize), grid = grid, hasAnySeries = js.Any.fromFunction0(hasAnySeries), horizontal = horizontal, increm = increm, increment = increment, innerTicks = innerTicks, inverted = inverted, labels = labels, log = log, maximum = maximum, minimum = minimum, minorTicks = minorTicks, otherSize = otherSize, position = position, scale = scale, scroll = js.Any.fromFunction1(scroll), setMinMax = js.Any.fromFunction2(setMinMax), start = start, startPos = startPos, ticks = ticks, title = title, visible = visible)
   
     __obj.asInstanceOf[IAxis]
   }

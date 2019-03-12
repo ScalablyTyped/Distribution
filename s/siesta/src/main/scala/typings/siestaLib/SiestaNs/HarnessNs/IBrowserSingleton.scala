@@ -21,7 +21,7 @@ object IBrowserSingleton {
     autoScrollElementsIntoView: scala.Boolean,
     breakOnFail: scala.Boolean,
     cachePreload: scala.Boolean,
-    configure: js.Function1[js.Any, scala.Unit],
+    configure: js.Any => scala.Unit,
     coverageUnit: java.lang.String,
     defaultTimeout: scala.Boolean,
     disableCaching: scala.Boolean,
@@ -45,7 +45,7 @@ object IBrowserSingleton {
     separateContext: scala.Boolean,
     simulateEventsWith: java.lang.String,
     speedRun: scala.Boolean,
-    start: js.Function1[/* repeated */ js.Any, scala.Unit],
+    start: /* repeated */ js.Any => scala.Unit,
     subTestTimeout: scala.Double,
     testClass: siestaLib.SiestaNs.ITest,
     title: java.lang.String,
@@ -56,7 +56,7 @@ object IBrowserSingleton {
     viewportWidth: scala.Double,
     waitForTimeout: scala.Double
   ): IBrowserSingleton = {
-    val __obj = js.Dynamic.literal(ExtJS = ExtJS, SenchaTouch = SenchaTouch, alsoPreload = alsoPreload, autoCheckGlobals = autoCheckGlobals, autoRun = autoRun, autoScrollElementsIntoView = autoScrollElementsIntoView, breakOnFail = breakOnFail, cachePreload = cachePreload, configure = configure, coverageUnit = coverageUnit, defaultTimeout = defaultTimeout, disableCaching = disableCaching, disableColoring = disableColoring, enableCodeCoverage = enableCodeCoverage, excludeCoverageUnits = excludeCoverageUnits, expectedGlobals = expectedGlobals, hostPageUrl = hostPageUrl, includeCoverageUnits = includeCoverageUnits, isReadyTimeout = isReadyTimeout, keepNLastResults = keepNLastResults, keepResults = keepResults, listenters = listenters, maintainViewportSize = maintainViewportSize, maxThreads = maxThreads, needDone = needDone, overrideSetTimeout = overrideSetTimeout, pauseBetweenTests = pauseBetweenTests, preload = preload, runCore = runCore, separateContext = separateContext, simulateEventsWith = simulateEventsWith, speedRun = speedRun, start = start, subTestTimeout = subTestTimeout, testClass = testClass, title = title, transparentEx = transparentEx, useStrictMode = useStrictMode, viewDOM = viewDOM, viewportHeight = viewportHeight, viewportWidth = viewportWidth, waitForTimeout = waitForTimeout)
+    val __obj = js.Dynamic.literal(ExtJS = ExtJS, SenchaTouch = SenchaTouch, alsoPreload = alsoPreload, autoCheckGlobals = autoCheckGlobals, autoRun = autoRun, autoScrollElementsIntoView = autoScrollElementsIntoView, breakOnFail = breakOnFail, cachePreload = cachePreload, configure = js.Any.fromFunction1(configure), coverageUnit = coverageUnit, defaultTimeout = defaultTimeout, disableCaching = disableCaching, disableColoring = disableColoring, enableCodeCoverage = enableCodeCoverage, excludeCoverageUnits = excludeCoverageUnits, expectedGlobals = expectedGlobals, hostPageUrl = hostPageUrl, includeCoverageUnits = includeCoverageUnits, isReadyTimeout = isReadyTimeout, keepNLastResults = keepNLastResults, keepResults = keepResults, listenters = listenters, maintainViewportSize = maintainViewportSize, maxThreads = maxThreads, needDone = needDone, overrideSetTimeout = overrideSetTimeout, pauseBetweenTests = pauseBetweenTests, preload = preload, runCore = runCore, separateContext = separateContext, simulateEventsWith = simulateEventsWith, speedRun = speedRun, start = js.Any.fromFunction1(start), subTestTimeout = subTestTimeout, testClass = testClass, title = title, transparentEx = transparentEx, useStrictMode = useStrictMode, viewDOM = viewDOM, viewportHeight = viewportHeight, viewportWidth = viewportWidth, waitForTimeout = waitForTimeout)
   
     __obj.asInstanceOf[IBrowserSingleton]
   }

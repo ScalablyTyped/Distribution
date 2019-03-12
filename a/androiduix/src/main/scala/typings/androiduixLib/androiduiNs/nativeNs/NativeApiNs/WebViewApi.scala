@@ -23,14 +23,14 @@ trait WebViewApi extends js.Object {
 object WebViewApi {
   @scala.inline
   def apply(
-    createWebView: js.Function1[scala.Double, scala.Unit],
-    destroyWebView: js.Function1[scala.Double, scala.Unit],
-    webViewBoundChange: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
-    webViewGoBack: js.Function1[scala.Double, scala.Unit],
-    webViewLoadUrl: js.Function2[scala.Double, java.lang.String, scala.Unit],
-    webViewReload: js.Function1[scala.Double, scala.Unit]
+    createWebView: scala.Double => scala.Unit,
+    destroyWebView: scala.Double => scala.Unit,
+    webViewBoundChange: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    webViewGoBack: scala.Double => scala.Unit,
+    webViewLoadUrl: (scala.Double, java.lang.String) => scala.Unit,
+    webViewReload: scala.Double => scala.Unit
   ): WebViewApi = {
-    val __obj = js.Dynamic.literal(createWebView = createWebView, destroyWebView = destroyWebView, webViewBoundChange = webViewBoundChange, webViewGoBack = webViewGoBack, webViewLoadUrl = webViewLoadUrl, webViewReload = webViewReload)
+    val __obj = js.Dynamic.literal(createWebView = js.Any.fromFunction1(createWebView), destroyWebView = js.Any.fromFunction1(destroyWebView), webViewBoundChange = js.Any.fromFunction5(webViewBoundChange), webViewGoBack = js.Any.fromFunction1(webViewGoBack), webViewLoadUrl = js.Any.fromFunction2(webViewLoadUrl), webViewReload = js.Any.fromFunction1(webViewReload))
   
     __obj.asInstanceOf[WebViewApi]
   }

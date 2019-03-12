@@ -49,22 +49,22 @@ trait MDCTopAppBarAdapter extends js.Object {
 object MDCTopAppBarAdapter {
   @scala.inline
   def apply(
-    addClass: js.Function1[java.lang.String, scala.Unit],
-    deregisterNavigationIconInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    deregisterResizeHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    deregisterScrollHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    getTopAppBarHeight: js.Function0[scala.Double],
-    getTotalActionItems: js.Function0[scala.Double],
-    getViewportScrollY: js.Function0[scala.Double],
-    hasClass: js.Function1[java.lang.String, scala.Boolean],
-    notifyNavigationIconClicked: js.Function0[scala.Unit],
-    registerNavigationIconInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    registerResizeHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    registerScrollHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    removeClass: js.Function1[java.lang.String, scala.Unit],
-    setStyle: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    addClass: java.lang.String => scala.Unit,
+    deregisterNavigationIconInteractionHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    deregisterResizeHandler: stdLib.EventListener => scala.Unit,
+    deregisterScrollHandler: stdLib.EventListener => scala.Unit,
+    getTopAppBarHeight: () => scala.Double,
+    getTotalActionItems: () => scala.Double,
+    getViewportScrollY: () => scala.Double,
+    hasClass: java.lang.String => scala.Boolean,
+    notifyNavigationIconClicked: () => scala.Unit,
+    registerNavigationIconInteractionHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    registerResizeHandler: stdLib.EventListener => scala.Unit,
+    registerScrollHandler: stdLib.EventListener => scala.Unit,
+    removeClass: java.lang.String => scala.Unit,
+    setStyle: (java.lang.String, java.lang.String) => scala.Unit
   ): MDCTopAppBarAdapter = {
-    val __obj = js.Dynamic.literal(addClass = addClass, deregisterNavigationIconInteractionHandler = deregisterNavigationIconInteractionHandler, deregisterResizeHandler = deregisterResizeHandler, deregisterScrollHandler = deregisterScrollHandler, getTopAppBarHeight = getTopAppBarHeight, getTotalActionItems = getTotalActionItems, getViewportScrollY = getViewportScrollY, hasClass = hasClass, notifyNavigationIconClicked = notifyNavigationIconClicked, registerNavigationIconInteractionHandler = registerNavigationIconInteractionHandler, registerResizeHandler = registerResizeHandler, registerScrollHandler = registerScrollHandler, removeClass = removeClass, setStyle = setStyle)
+    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), deregisterNavigationIconInteractionHandler = js.Any.fromFunction2(deregisterNavigationIconInteractionHandler), deregisterResizeHandler = js.Any.fromFunction1(deregisterResizeHandler), deregisterScrollHandler = js.Any.fromFunction1(deregisterScrollHandler), getTopAppBarHeight = js.Any.fromFunction0(getTopAppBarHeight), getTotalActionItems = js.Any.fromFunction0(getTotalActionItems), getViewportScrollY = js.Any.fromFunction0(getViewportScrollY), hasClass = js.Any.fromFunction1(hasClass), notifyNavigationIconClicked = js.Any.fromFunction0(notifyNavigationIconClicked), registerNavigationIconInteractionHandler = js.Any.fromFunction2(registerNavigationIconInteractionHandler), registerResizeHandler = js.Any.fromFunction1(registerResizeHandler), registerScrollHandler = js.Any.fromFunction1(registerScrollHandler), removeClass = js.Any.fromFunction1(removeClass), setStyle = js.Any.fromFunction2(setStyle))
   
     __obj.asInstanceOf[MDCTopAppBarAdapter]
   }

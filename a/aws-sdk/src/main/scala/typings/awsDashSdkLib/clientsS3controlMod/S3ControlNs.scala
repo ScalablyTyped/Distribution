@@ -19,7 +19,7 @@ object S3ControlNs extends js.Object {
     /**
       * The Account ID for the Amazon Web Services account whose Public Access Block configuration you want to remove.
       */
-    var AccountId: AccountId
+    var AccountId: awsDashSdkLib.clientsS3controlMod.S3ControlNs.AccountId
   }
   
   trait GetPublicAccessBlockOutput extends js.Object {
@@ -33,7 +33,7 @@ object S3ControlNs extends js.Object {
     /**
       * The Account ID for the Amazon Web Services account whose Public Access Block configuration you want to retrieve.
       */
-    var AccountId: AccountId
+    var AccountId: awsDashSdkLib.clientsS3controlMod.S3ControlNs.AccountId
   }
   
   trait PublicAccessBlockConfiguration extends js.Object {
@@ -59,11 +59,11 @@ object S3ControlNs extends js.Object {
     /**
       * The Account ID for the Amazon Web Services account whose Public Access Block configuration you want to set.
       */
-    var AccountId: AccountId
+    var AccountId: awsDashSdkLib.clientsS3controlMod.S3ControlNs.AccountId
     /**
       * The Public Access Block configuration that you want to apply to this Amazon Web Services account.
       */
-    var PublicAccessBlockConfiguration: PublicAccessBlockConfiguration
+    var PublicAccessBlockConfiguration: awsDashSdkLib.clientsS3controlMod.S3ControlNs.PublicAccessBlockConfiguration
   }
   
   @js.native

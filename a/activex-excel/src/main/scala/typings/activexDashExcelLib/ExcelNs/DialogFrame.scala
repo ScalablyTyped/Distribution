@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.DialogFrame")
 @js.native
 class DialogFrame protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var Caption: java.lang.String = js.native
   val Creator: XlCreator = js.native
   var `Excel.DialogFrame_typekey`: DialogFrame = js.native
@@ -24,9 +24,9 @@ class DialogFrame protected () extends js.Object {
   var Text: java.lang.String = js.native
   var Top: scala.Double = js.native
   var Width: scala.Double = js.native
-  def Characters(): Characters = js.native
-  def Characters(Start: js.Any): Characters = js.native
-  def Characters(Start: js.Any, Length: js.Any): Characters = js.native
+  def Characters(): activexDashExcelLib.ExcelNs.Characters = js.native
+  def Characters(Start: js.Any): activexDashExcelLib.ExcelNs.Characters = js.native
+  def Characters(Start: js.Any, Length: js.Any): activexDashExcelLib.ExcelNs.Characters = js.native
   def CheckSpelling(): js.Any = js.native
   def CheckSpelling(CustomDictionary: js.Any): js.Any = js.native
   def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: js.Any): js.Any = js.native

@@ -16,11 +16,11 @@ object Geocoder {
   @scala.inline
   def apply(
     container: stdLib.Element,
-    destroy: js.Function0[scala.Unit],
-    isDestroyed: js.Function0[scala.Boolean],
+    destroy: () => scala.Unit,
+    isDestroyed: () => scala.Boolean,
     viewModel: GeocoderViewModel
   ): Geocoder = {
-    val __obj = js.Dynamic.literal(container = container, destroy = destroy, isDestroyed = isDestroyed, viewModel = viewModel)
+    val __obj = js.Dynamic.literal(container = container, destroy = js.Any.fromFunction0(destroy), isDestroyed = js.Any.fromFunction0(isDestroyed), viewModel = viewModel)
   
     __obj.asInstanceOf[Geocoder]
   }

@@ -43,15 +43,12 @@ object TableProps {
     headerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     height: java.lang.String = null,
     multiSelectable: js.UndefOr[scala.Boolean] = js.undefined,
-    onCellClick: js.Function2[/* row */ scala.Double, /* column */ scala.Double, scala.Unit] = null,
-    onCellHover: js.Function2[/* row */ scala.Double, /* column */ scala.Double, scala.Unit] = null,
-    onCellHoverExit: js.Function2[/* row */ scala.Double, /* column */ scala.Double, scala.Unit] = null,
-    onRowHover: js.Function1[/* row */ scala.Double, scala.Unit] = null,
-    onRowHoverExit: js.Function1[/* row */ scala.Double, scala.Unit] = null,
-    onRowSelection: js.Function1[
-      /* selectedRows */ js.Array[scala.Double] | materialDashUiLib.materialDashUiLibStrings.all, 
-      scala.Unit
-    ] = null,
+    onCellClick: (/* row */ scala.Double, /* column */ scala.Double) => scala.Unit = null,
+    onCellHover: (/* row */ scala.Double, /* column */ scala.Double) => scala.Unit = null,
+    onCellHoverExit: (/* row */ scala.Double, /* column */ scala.Double) => scala.Unit = null,
+    onRowHover: /* row */ scala.Double => scala.Unit = null,
+    onRowHoverExit: /* row */ scala.Double => scala.Unit = null,
+    onRowSelection: /* selectedRows */ js.Array[scala.Double] | materialDashUiLib.materialDashUiLibStrings.all => scala.Unit = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     wrapperStyle: reactLib.reactMod.ReactNs.CSSProperties = null
@@ -66,12 +63,12 @@ object TableProps {
     if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle)
     if (height != null) __obj.updateDynamic("height")(height)
     if (!js.isUndefined(multiSelectable)) __obj.updateDynamic("multiSelectable")(multiSelectable)
-    if (onCellClick != null) __obj.updateDynamic("onCellClick")(onCellClick)
-    if (onCellHover != null) __obj.updateDynamic("onCellHover")(onCellHover)
-    if (onCellHoverExit != null) __obj.updateDynamic("onCellHoverExit")(onCellHoverExit)
-    if (onRowHover != null) __obj.updateDynamic("onRowHover")(onRowHover)
-    if (onRowHoverExit != null) __obj.updateDynamic("onRowHoverExit")(onRowHoverExit)
-    if (onRowSelection != null) __obj.updateDynamic("onRowSelection")(onRowSelection)
+    if (onCellClick != null) __obj.updateDynamic("onCellClick")(js.Any.fromFunction2(onCellClick))
+    if (onCellHover != null) __obj.updateDynamic("onCellHover")(js.Any.fromFunction2(onCellHover))
+    if (onCellHoverExit != null) __obj.updateDynamic("onCellHoverExit")(js.Any.fromFunction2(onCellHoverExit))
+    if (onRowHover != null) __obj.updateDynamic("onRowHover")(js.Any.fromFunction1(onRowHover))
+    if (onRowHoverExit != null) __obj.updateDynamic("onRowHoverExit")(js.Any.fromFunction1(onRowHoverExit))
+    if (onRowSelection != null) __obj.updateDynamic("onRowSelection")(js.Any.fromFunction1(onRowSelection))
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
     if (style != null) __obj.updateDynamic("style")(style)
     if (wrapperStyle != null) __obj.updateDynamic("wrapperStyle")(wrapperStyle)

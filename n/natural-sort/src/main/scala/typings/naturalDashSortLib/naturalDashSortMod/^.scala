@@ -13,7 +13,7 @@ object ^ extends js.Object {
     /* b */ java.lang.String | scala.Double, 
     scala.Double
   ] = js.native
-  def apply(options: naturalDashSortLib.naturalDashSortMod.Options): js.Function2[
+  def apply(options: Options): js.Function2[
     /* a */ java.lang.String | scala.Double, 
     /* b */ java.lang.String | scala.Double, 
     scala.Double

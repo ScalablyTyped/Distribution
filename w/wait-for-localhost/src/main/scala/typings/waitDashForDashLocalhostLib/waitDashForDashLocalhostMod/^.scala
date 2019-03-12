@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def default(): js.Promise[scala.Unit] = js.native
-  def default(options: waitDashForDashLocalhostLib.waitDashForDashLocalhostMod.Options): js.Promise[scala.Unit] = js.native
+  def default(options: Options): js.Promise[scala.Unit] = js.native
 }
 

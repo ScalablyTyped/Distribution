@@ -17,8 +17,8 @@ trait Static extends js.Object {
 
 object Static {
   @scala.inline
-  def apply(setDefaults: js.Function1[Options, scala.Unit]): Static = {
-    val __obj = js.Dynamic.literal(setDefaults = setDefaults)
+  def apply(setDefaults: Options => scala.Unit): Static = {
+    val __obj = js.Dynamic.literal(setDefaults = js.Any.fromFunction1(setDefaults))
   
     __obj.asInstanceOf[Static]
   }

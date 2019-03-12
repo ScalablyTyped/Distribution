@@ -13,8 +13,8 @@ trait ITransportFactory extends js.Object {
 
 object ITransportFactory {
   @scala.inline
-  def apply(create: js.Function0[ITransport], `type`: java.lang.String): ITransportFactory = {
-    val __obj = js.Dynamic.literal(create = create)
+  def apply(create: () => ITransport, `type`: java.lang.String): ITransportFactory = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ITransportFactory]
   }

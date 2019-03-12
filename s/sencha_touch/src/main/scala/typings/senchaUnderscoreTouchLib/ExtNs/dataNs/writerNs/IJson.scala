@@ -54,81 +54,78 @@ object IJson {
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     allowSingle: js.UndefOr[scala.Boolean] = js.undefined,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     encode: js.UndefOr[scala.Boolean] = js.undefined,
     extend: java.lang.String = null,
-    getAllowSingle: js.Function0[scala.Boolean] = null,
-    getEncode: js.Function0[scala.Boolean] = null,
-    getEncodeRequest: js.Function0[scala.Boolean] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getNameProperty: js.Function0[java.lang.String] = null,
-    getRecordData: js.Function1[/* record */ js.UndefOr[js.Any], _] = null,
-    getRootProperty: js.Function0[java.lang.String] = null,
-    getWriteAllFields: js.Function0[scala.Boolean] = null,
+    getAllowSingle: () => scala.Boolean = null,
+    getEncode: () => scala.Boolean = null,
+    getEncodeRequest: () => scala.Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getNameProperty: () => java.lang.String = null,
+    getRecordData: /* record */ js.UndefOr[js.Any] => _ = null,
+    getRootProperty: () => java.lang.String = null,
+    getWriteAllFields: () => scala.Boolean = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     nameProperty: java.lang.String = null,
     platformConfig: js.Any = null,
     root: java.lang.String = null,
     rootProperty: java.lang.String = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setAllowSingle: js.Function1[/* allowSingle */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setEncode: js.Function1[/* encode */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setEncodeRequest: js.Function1[/* encodeRequest */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setNameProperty: js.Function1[/* nameProperty */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setRootProperty: js.Function1[/* rootProperty */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setWriteAllFields: js.Function1[/* writeAllFields */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setAllowSingle: /* allowSingle */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setEncode: /* encode */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setEncodeRequest: /* encodeRequest */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setNameProperty: /* nameProperty */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setRootProperty: /* rootProperty */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setWriteAllFields: /* writeAllFields */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null,
-    write: js.Function1[
-      /* request */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IRequest], 
-      senchaUnderscoreTouchLib.ExtNs.dataNs.IRequest
-    ] = null,
+    write: /* request */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IRequest] => senchaUnderscoreTouchLib.ExtNs.dataNs.IRequest = null,
     writeAllFields: js.UndefOr[scala.Boolean] = js.undefined
   ): IJson = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (!js.isUndefined(allowSingle)) __obj.updateDynamic("allowSingle")(allowSingle)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (!js.isUndefined(encode)) __obj.updateDynamic("encode")(encode)
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getAllowSingle != null) __obj.updateDynamic("getAllowSingle")(getAllowSingle)
-    if (getEncode != null) __obj.updateDynamic("getEncode")(getEncode)
-    if (getEncodeRequest != null) __obj.updateDynamic("getEncodeRequest")(getEncodeRequest)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getNameProperty != null) __obj.updateDynamic("getNameProperty")(getNameProperty)
-    if (getRecordData != null) __obj.updateDynamic("getRecordData")(getRecordData)
-    if (getRootProperty != null) __obj.updateDynamic("getRootProperty")(getRootProperty)
-    if (getWriteAllFields != null) __obj.updateDynamic("getWriteAllFields")(getWriteAllFields)
+    if (getAllowSingle != null) __obj.updateDynamic("getAllowSingle")(js.Any.fromFunction0(getAllowSingle))
+    if (getEncode != null) __obj.updateDynamic("getEncode")(js.Any.fromFunction0(getEncode))
+    if (getEncodeRequest != null) __obj.updateDynamic("getEncodeRequest")(js.Any.fromFunction0(getEncodeRequest))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getNameProperty != null) __obj.updateDynamic("getNameProperty")(js.Any.fromFunction0(getNameProperty))
+    if (getRecordData != null) __obj.updateDynamic("getRecordData")(js.Any.fromFunction1(getRecordData))
+    if (getRootProperty != null) __obj.updateDynamic("getRootProperty")(js.Any.fromFunction0(getRootProperty))
+    if (getWriteAllFields != null) __obj.updateDynamic("getWriteAllFields")(js.Any.fromFunction0(getWriteAllFields))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (nameProperty != null) __obj.updateDynamic("nameProperty")(nameProperty)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
     if (root != null) __obj.updateDynamic("root")(root)
     if (rootProperty != null) __obj.updateDynamic("rootProperty")(rootProperty)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setAllowSingle != null) __obj.updateDynamic("setAllowSingle")(setAllowSingle)
-    if (setEncode != null) __obj.updateDynamic("setEncode")(setEncode)
-    if (setEncodeRequest != null) __obj.updateDynamic("setEncodeRequest")(setEncodeRequest)
-    if (setNameProperty != null) __obj.updateDynamic("setNameProperty")(setNameProperty)
-    if (setRootProperty != null) __obj.updateDynamic("setRootProperty")(setRootProperty)
-    if (setWriteAllFields != null) __obj.updateDynamic("setWriteAllFields")(setWriteAllFields)
+    if (setAllowSingle != null) __obj.updateDynamic("setAllowSingle")(js.Any.fromFunction1(setAllowSingle))
+    if (setEncode != null) __obj.updateDynamic("setEncode")(js.Any.fromFunction1(setEncode))
+    if (setEncodeRequest != null) __obj.updateDynamic("setEncodeRequest")(js.Any.fromFunction1(setEncodeRequest))
+    if (setNameProperty != null) __obj.updateDynamic("setNameProperty")(js.Any.fromFunction1(setNameProperty))
+    if (setRootProperty != null) __obj.updateDynamic("setRootProperty")(js.Any.fromFunction1(setRootProperty))
+    if (setWriteAllFields != null) __obj.updateDynamic("setWriteAllFields")(js.Any.fromFunction1(setWriteAllFields))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (uses != null) __obj.updateDynamic("uses")(uses)
-    if (write != null) __obj.updateDynamic("write")(write)
+    if (write != null) __obj.updateDynamic("write")(js.Any.fromFunction1(write))
     if (!js.isUndefined(writeAllFields)) __obj.updateDynamic("writeAllFields")(writeAllFields)
     __obj.asInstanceOf[IJson]
   }

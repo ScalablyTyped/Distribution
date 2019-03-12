@@ -31,22 +31,13 @@ trait XIndexEntrySupplier
 object XIndexEntrySupplier {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getIndexCharacter: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String, 
-      java.lang.String
-    ],
-    getIndexFollowPageWord: js.Function2[
-      scala.Boolean, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getIndexCharacter: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String) => java.lang.String,
+    getIndexFollowPageWord: (scala.Boolean, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XIndexEntrySupplier = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getIndexCharacter = getIndexCharacter, getIndexFollowPageWord = getIndexFollowPageWord, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getIndexCharacter = js.Any.fromFunction3(getIndexCharacter), getIndexFollowPageWord = js.Any.fromFunction2(getIndexFollowPageWord), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XIndexEntrySupplier]
   }

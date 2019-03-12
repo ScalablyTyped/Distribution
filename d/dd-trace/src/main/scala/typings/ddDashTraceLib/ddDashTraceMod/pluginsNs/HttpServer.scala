@@ -24,7 +24,7 @@ object HttpServer {
     headers: js.Array[java.lang.String] = null,
     hooks: ddDashTraceLib.Anon_Req = null,
     service: java.lang.String = null,
-    validateStatus: js.Function1[/* code */ scala.Double, scala.Boolean] = null,
+    validateStatus: /* code */ scala.Double => scala.Boolean = null,
     whitelist: java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean]) | (js.Array[
       java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean])
     ]) = null
@@ -36,7 +36,7 @@ object HttpServer {
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (hooks != null) __obj.updateDynamic("hooks")(hooks)
     if (service != null) __obj.updateDynamic("service")(service)
-    if (validateStatus != null) __obj.updateDynamic("validateStatus")(validateStatus)
+    if (validateStatus != null) __obj.updateDynamic("validateStatus")(js.Any.fromFunction1(validateStatus))
     if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpServer]
   }

@@ -12,8 +12,8 @@ trait IRule extends js.Object {
 
 object IRule {
   @scala.inline
-  def apply(defaultOptions: ValidationOptions, test: js.Function1[js.Any, ValidationResult]): IRule = {
-    val __obj = js.Dynamic.literal(defaultOptions = defaultOptions, test = test)
+  def apply(defaultOptions: ValidationOptions, test: js.Any => ValidationResult): IRule = {
+    val __obj = js.Dynamic.literal(defaultOptions = defaultOptions, test = js.Any.fromFunction1(test))
   
     __obj.asInstanceOf[IRule]
   }

@@ -23,12 +23,12 @@ object Instance {
     incomingWebhooks: IncomingWebhooks[_],
     interactiveButtons: InteractiveButtons[_],
     outgoingWebhooks: OutgoingWebhooks[_],
-    reset: js.Function0[scala.Unit],
+    reset: () => scala.Unit,
     rtm: Rtm[_],
     slashCommands: SlashCommands[_],
     web: Web[_]
   ): Instance = {
-    val __obj = js.Dynamic.literal(events = events, incomingWebhooks = incomingWebhooks, interactiveButtons = interactiveButtons, outgoingWebhooks = outgoingWebhooks, reset = reset, rtm = rtm, slashCommands = slashCommands, web = web)
+    val __obj = js.Dynamic.literal(events = events, incomingWebhooks = incomingWebhooks, interactiveButtons = interactiveButtons, outgoingWebhooks = outgoingWebhooks, reset = js.Any.fromFunction0(reset), rtm = rtm, slashCommands = slashCommands, web = web)
   
     __obj.asInstanceOf[Instance]
   }

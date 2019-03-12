@@ -27,20 +27,20 @@ object WheelConstraint {
     engineForce: scala.Double,
     equeations: js.Array[Equation],
     forwardEquation: FrictionEquation,
-    getSpeed: js.Function0[scala.Double],
+    getSpeed: () => scala.Double,
     localForwardVector: js.Tuple2[scala.Double, scala.Double],
     localPosition: js.Tuple2[scala.Double, scala.Double],
-    setBrakeForce: js.Function1[scala.Double, scala.Unit],
-    setRelaxation: js.Function1[scala.Double, scala.Unit],
-    setSideFriction: js.Function1[scala.Double, scala.Unit],
-    setStiffness: js.Function1[scala.Double, scala.Unit],
+    setBrakeForce: scala.Double => scala.Unit,
+    setRelaxation: scala.Double => scala.Unit,
+    setSideFriction: scala.Double => scala.Unit,
+    setStiffness: scala.Double => scala.Unit,
     sideEquation: FrictionEquation,
     steerValue: scala.Double,
     `type`: scala.Double,
-    update: js.Function0[scala.Unit],
+    update: () => scala.Unit,
     vehicle: TopDownVehicle
   ): WheelConstraint = {
-    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, collideConnected = collideConnected, engineForce = engineForce, equeations = equeations, forwardEquation = forwardEquation, getSpeed = getSpeed, localForwardVector = localForwardVector, localPosition = localPosition, setBrakeForce = setBrakeForce, setRelaxation = setRelaxation, setSideFriction = setSideFriction, setStiffness = setStiffness, sideEquation = sideEquation, steerValue = steerValue, update = update, vehicle = vehicle)
+    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, collideConnected = collideConnected, engineForce = engineForce, equeations = equeations, forwardEquation = forwardEquation, getSpeed = js.Any.fromFunction0(getSpeed), localForwardVector = localForwardVector, localPosition = localPosition, setBrakeForce = js.Any.fromFunction1(setBrakeForce), setRelaxation = js.Any.fromFunction1(setRelaxation), setSideFriction = js.Any.fromFunction1(setSideFriction), setStiffness = js.Any.fromFunction1(setStiffness), sideEquation = sideEquation, steerValue = steerValue, update = js.Any.fromFunction0(update), vehicle = vehicle)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WheelConstraint]
   }

@@ -19,25 +19,17 @@ trait ILookupPropertyType extends IPropertyType {
 object ILookupPropertyType {
   @scala.inline
   def apply(
-    BeginValidateNormalizeConvert: js.Function6[
-      scala.Double, 
-      java.lang.String, 
-      js.Any, 
-      scala.Boolean, 
-      js.Function1[/* args */ sharepointLib.Anon_DataValue, scala.Unit], 
-      js.Any, 
-      scala.Unit
-    ],
-    DataToLocalized: js.Function1[js.Any, java.lang.String],
-    GetImageSource: js.Function2[IRecord, js.Any, java.lang.String],
-    GetIsLimitedToList: js.Function0[scala.Boolean],
-    GetItems: js.Function1[js.Any, scala.Unit],
-    GetSerializableLookupPropType: js.Function0[sharepointLib.Anon_BLimitToList],
-    GetStyleId: js.Function1[js.Any, java.lang.String],
+    BeginValidateNormalizeConvert: (scala.Double, java.lang.String, js.Any, scala.Boolean, js.Function1[/* args */ sharepointLib.Anon_DataValue, scala.Unit], js.Any) => scala.Unit,
+    DataToLocalized: js.Any => java.lang.String,
+    GetImageSource: (IRecord, js.Any) => java.lang.String,
+    GetIsLimitedToList: () => scala.Boolean,
+    GetItems: js.Any => scala.Unit,
+    GetSerializableLookupPropType: () => sharepointLib.Anon_BLimitToList,
+    GetStyleId: js.Any => java.lang.String,
     ID: java.lang.String,
-    LocalizedToData: js.Function1[java.lang.String, js.Any]
+    LocalizedToData: java.lang.String => js.Any
   ): ILookupPropertyType = {
-    val __obj = js.Dynamic.literal(BeginValidateNormalizeConvert = BeginValidateNormalizeConvert, DataToLocalized = DataToLocalized, GetImageSource = GetImageSource, GetIsLimitedToList = GetIsLimitedToList, GetItems = GetItems, GetSerializableLookupPropType = GetSerializableLookupPropType, GetStyleId = GetStyleId, ID = ID, LocalizedToData = LocalizedToData)
+    val __obj = js.Dynamic.literal(BeginValidateNormalizeConvert = js.Any.fromFunction6(BeginValidateNormalizeConvert), DataToLocalized = js.Any.fromFunction1(DataToLocalized), GetImageSource = js.Any.fromFunction2(GetImageSource), GetIsLimitedToList = js.Any.fromFunction0(GetIsLimitedToList), GetItems = js.Any.fromFunction1(GetItems), GetSerializableLookupPropType = js.Any.fromFunction0(GetSerializableLookupPropType), GetStyleId = js.Any.fromFunction1(GetStyleId), ID = ID, LocalizedToData = js.Any.fromFunction1(LocalizedToData))
   
     __obj.asInstanceOf[ILookupPropertyType]
   }

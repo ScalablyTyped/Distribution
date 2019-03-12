@@ -14,11 +14,11 @@ trait DynatreeNamespace extends js.Object {
 object DynatreeNamespace {
   @scala.inline
   def apply(
-    getNode: js.Function1[stdLib.HTMLElement, DynaTreeNode],
-    getPersistData: js.Function2[java.lang.String, DynaTreeCookieOptions, js.Any],
+    getNode: stdLib.HTMLElement => DynaTreeNode,
+    getPersistData: (java.lang.String, DynaTreeCookieOptions) => js.Any,
     version: scala.Double
   ): DynatreeNamespace = {
-    val __obj = js.Dynamic.literal(getNode = getNode, getPersistData = getPersistData, version = version)
+    val __obj = js.Dynamic.literal(getNode = js.Any.fromFunction1(getNode), getPersistData = js.Any.fromFunction2(getPersistData), version = version)
   
     __obj.asInstanceOf[DynatreeNamespace]
   }

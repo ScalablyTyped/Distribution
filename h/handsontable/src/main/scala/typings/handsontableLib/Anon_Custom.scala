@@ -16,14 +16,10 @@ trait Anon_Custom extends js.Object {
 object Anon_Custom {
   @scala.inline
   def apply(
-    customFunction: js.Function2[
-      handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ColumnSummary, 
-      handsontableLib.handsontableMod.HandsontableNs.pluginsNs.Endpoint, 
-      scala.Double
-    ],
+    customFunction: (handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ColumnSummary, handsontableLib.handsontableMod.HandsontableNs.pluginsNs.Endpoint) => scala.Double,
     `type`: handsontableLib.handsontableLibStrings.custom
   ): Anon_Custom = {
-    val __obj = js.Dynamic.literal(customFunction = customFunction)
+    val __obj = js.Dynamic.literal(customFunction = js.Any.fromFunction2(customFunction))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Custom]
   }

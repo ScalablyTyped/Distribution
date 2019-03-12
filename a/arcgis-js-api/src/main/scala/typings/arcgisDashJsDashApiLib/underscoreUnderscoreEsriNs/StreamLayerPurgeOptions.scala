@@ -27,10 +27,10 @@ object StreamLayerPurgeOptions {
     age: scala.Double,
     constructor: js.Function,
     displayCount: scala.Double,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): StreamLayerPurgeOptions = {
-    val __obj = js.Dynamic.literal(age = age, constructor = constructor, displayCount = displayCount, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(age = age, constructor = constructor, displayCount = displayCount, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[StreamLayerPurgeOptions]
   }

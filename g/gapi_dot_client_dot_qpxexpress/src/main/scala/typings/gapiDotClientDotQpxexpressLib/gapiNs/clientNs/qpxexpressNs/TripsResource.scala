@@ -13,12 +13,9 @@ trait TripsResource extends js.Object {
 object TripsResource {
   @scala.inline
   def apply(
-    search: js.Function1[
-      gapiDotClientDotQpxexpressLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TripsSearchResponse]
-    ]
+    search: gapiDotClientDotQpxexpressLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[TripsSearchResponse]
   ): TripsResource = {
-    val __obj = js.Dynamic.literal(search = search)
+    val __obj = js.Dynamic.literal(search = js.Any.fromFunction1(search))
   
     __obj.asInstanceOf[TripsResource]
   }

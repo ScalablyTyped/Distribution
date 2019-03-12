@@ -14,7 +14,7 @@ object MountNodeProps {
   def apply(
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     className: java.lang.String = null,
-    node: reactLib.HTMLElement = null
+    node: stdLib.HTMLElement = null
   ): MountNodeProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

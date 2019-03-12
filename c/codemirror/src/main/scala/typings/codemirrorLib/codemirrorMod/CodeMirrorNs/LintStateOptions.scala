@@ -28,15 +28,10 @@ object LintStateOptions {
   def apply(
     async: scala.Boolean,
     hasGutters: scala.Boolean,
-    onUpdateLinting: js.Function3[
-      /* annotationsNotSorted */ js.Array[Annotation], 
-      /* annotations */ js.Array[Annotation], 
-      /* codeMirror */ Editor, 
-      scala.Unit
-    ] = null
+    onUpdateLinting: (/* annotationsNotSorted */ js.Array[Annotation], /* annotations */ js.Array[Annotation], /* codeMirror */ Editor) => scala.Unit = null
   ): LintStateOptions = {
     val __obj = js.Dynamic.literal(async = async, hasGutters = hasGutters)
-    if (onUpdateLinting != null) __obj.updateDynamic("onUpdateLinting")(onUpdateLinting)
+    if (onUpdateLinting != null) __obj.updateDynamic("onUpdateLinting")(js.Any.fromFunction3(onUpdateLinting))
     __obj.asInstanceOf[LintStateOptions]
   }
 }

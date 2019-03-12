@@ -14,7 +14,7 @@ object ^ extends js.Object {
   ] = js.native
   def create(): expressLib.expressMod.eNs.Application = js.native
   def defaults(): js.Array[expressLib.expressMod.eNs.RequestHandler] = js.native
-  def defaults(options: jsonDashServerLib.jsonDashServerMod.MiddlewaresOptions): js.Array[expressLib.expressMod.eNs.RequestHandler] = js.native
+  def defaults(options: MiddlewaresOptions): js.Array[expressLib.expressMod.eNs.RequestHandler] = js.native
   def rewriter(rules: org.scalablytyped.runtime.StringDictionary[java.lang.String]): expressLib.expressMod.eNs.Router = js.native
   def router(source: java.lang.String): expressLib.expressMod.eNs.Router = js.native
   def router(source: java.lang.String, options: jsonDashServerLib.Anon_ForeignKeySuffix): expressLib.expressMod.eNs.Router = js.native

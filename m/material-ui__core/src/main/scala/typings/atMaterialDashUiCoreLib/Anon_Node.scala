@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Node extends js.Object {
-  var node: reactLib.HTMLInputElement
+  var node: stdLib.HTMLInputElement
   var value: js.UndefOr[
     (js.Array[java.lang.String | scala.Double | scala.Boolean]) | java.lang.String | scala.Double | scala.Boolean
   ]
@@ -15,7 +15,7 @@ trait Anon_Node extends js.Object {
 object Anon_Node {
   @scala.inline
   def apply(
-    node: reactLib.HTMLInputElement,
+    node: stdLib.HTMLInputElement,
     value: (js.Array[java.lang.String | scala.Double | scala.Boolean]) | java.lang.String | scala.Double | scala.Boolean = null
   ): Anon_Node = {
     val __obj = js.Dynamic.literal(node = node)

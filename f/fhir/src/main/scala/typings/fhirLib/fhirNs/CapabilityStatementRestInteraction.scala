@@ -20,7 +20,7 @@ trait CapabilityStatementRestInteraction extends BackboneElement {
   /**
     * transaction | batch | search-system | history-system
     */
-  var code: code
+  var code: fhirLib.fhirNs.code
   /**
     * Anything special about operation behavior
     */

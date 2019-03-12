@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "EventPointing")
 @js.native
 class EventPointing ()
-  extends fullcalendarLib.eventpointingMod.default
+  extends fullcalendarLib.eventPointingMod.default
 

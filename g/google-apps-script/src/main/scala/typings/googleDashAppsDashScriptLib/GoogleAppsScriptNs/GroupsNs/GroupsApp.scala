@@ -15,10 +15,10 @@ object GroupsApp {
   @scala.inline
   def apply(
     Role: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Role */ js.Any,
-    getGroupByEmail: js.Function1[java.lang.String, Group],
-    getGroups: js.Function0[js.Array[Group]]
+    getGroupByEmail: java.lang.String => Group,
+    getGroups: () => js.Array[Group]
   ): GroupsApp = {
-    val __obj = js.Dynamic.literal(Role = Role, getGroupByEmail = getGroupByEmail, getGroups = getGroups)
+    val __obj = js.Dynamic.literal(Role = Role, getGroupByEmail = js.Any.fromFunction1(getGroupByEmail), getGroups = js.Any.fromFunction0(getGroups))
   
     __obj.asInstanceOf[GroupsApp]
   }

@@ -5,16 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Assertion extends js.Object {
-  var almost: chaiDashAlmostLib.chaiDashAlmostMod.Global.ChaiNs.ChaiAlmostNs.Almost
-}
-
-object Assertion {
-  @scala.inline
-  def apply(almost: chaiDashAlmostLib.chaiDashAlmostMod.Global.ChaiNs.ChaiAlmostNs.Almost): Assertion = {
-    val __obj = js.Dynamic.literal(almost = almost)
-  
-    __obj.asInstanceOf[Assertion]
-  }
+  @JSName("almost")
+  var almost_Original: chaiDashAlmostLib.chaiDashAlmostMod.Global.ChaiNs.ChaiAlmostNs.Almost = js.native
+  def almost(value: js.Any): Assertion = js.native
+  def almost(value: js.Any, toleranceOverride: scala.Double): Assertion = js.native
 }
 

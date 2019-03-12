@@ -15,16 +15,10 @@ trait AnnotationDataResource extends js.Object {
 object AnnotationDataResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AllowWebDefinitions, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Annotationdata]
-    ],
-    list: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltAnnotationDataId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Annotationsdata]
-    ]
+    get: gapiDotClientDotBooksLib.Anon_AllowWebDefinitions => gapiDotClientLib.gapiNs.clientNs.Request[Annotationdata],
+    list: gapiDotClientDotBooksLib.Anon_AltAnnotationDataId => gapiDotClientLib.gapiNs.clientNs.Request[Annotationsdata]
   ): AnnotationDataResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[AnnotationDataResource]
   }

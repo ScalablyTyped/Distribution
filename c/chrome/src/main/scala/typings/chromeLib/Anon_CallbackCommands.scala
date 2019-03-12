@@ -13,13 +13,10 @@ trait Anon_CallbackCommands extends js.Object {
 object Anon_CallbackCommands {
   @scala.inline
   def apply(
-    getAll: js.Function1[
-      js.Function1[/* commands */ js.Array[chromeLib.chromeNs.commandsNs.Command], scala.Unit], 
-      scala.Unit
-    ],
+    getAll: js.Function1[/* commands */ js.Array[chromeLib.chromeNs.commandsNs.Command], scala.Unit] => scala.Unit,
     onCommand: chromeLib.chromeNs.commandsNs.CommandEvent
   ): Anon_CallbackCommands = {
-    val __obj = js.Dynamic.literal(getAll = getAll, onCommand = onCommand)
+    val __obj = js.Dynamic.literal(getAll = js.Any.fromFunction1(getAll), onCommand = onCommand)
   
     __obj.asInstanceOf[Anon_CallbackCommands]
   }

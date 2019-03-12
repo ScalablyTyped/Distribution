@@ -162,20 +162,14 @@ object DataGridProps {
     liveFilter: js.UndefOr[scala.Boolean] = js.undefined,
     loadMaskOverHeader: js.UndefOr[scala.Boolean] = js.undefined,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
-    onColumnOrderChange: js.Function2[/* index */ scala.Double, /* dropIndex */ scala.Double, scala.Unit] = null,
-    onColumnResize: js.Function4[
-      /* firstCol */ Column, 
-      /* firstSize */ scala.Double, 
-      /* secondCol */ Column, 
-      /* secondSize */ scala.Double, 
-      scala.Unit
-    ] = null,
-    onColumnVisibilityChange: js.Function2[/* column */ Column, /* visibility */ scala.Boolean, scala.Unit] = null,
-    onFilter: js.Function3[/* column */ Column, /* value */ js.Any, /* allFilterValues */ js.Array[_], scala.Unit] = null,
-    onPageChange: js.Function1[/* page */ scala.Double, scala.Unit] = null,
-    onPageSizeChange: js.Function2[/* pageSize */ scala.Double, /* props */ DataGridProps, scala.Unit] = null,
-    onSelectionChange: js.Function2[/* newSelected */ js.Object, /* data */ js.Any, scala.Unit] = null,
-    onSortChange: js.Function1[/* sortInfo */ js.Array[SortInfo], scala.Unit] = null,
+    onColumnOrderChange: (/* index */ scala.Double, /* dropIndex */ scala.Double) => scala.Unit = null,
+    onColumnResize: (/* firstCol */ Column, /* firstSize */ scala.Double, /* secondCol */ Column, /* secondSize */ scala.Double) => scala.Unit = null,
+    onColumnVisibilityChange: (/* column */ Column, /* visibility */ scala.Boolean) => scala.Unit = null,
+    onFilter: (/* column */ Column, /* value */ js.Any, /* allFilterValues */ js.Array[_]) => scala.Unit = null,
+    onPageChange: /* page */ scala.Double => scala.Unit = null,
+    onPageSizeChange: (/* pageSize */ scala.Double, /* props */ DataGridProps) => scala.Unit = null,
+    onSelectionChange: (/* newSelected */ js.Object, /* data */ js.Any) => scala.Unit = null,
+    onSortChange: /* sortInfo */ js.Array[SortInfo] => scala.Unit = null,
     page: scala.Int | scala.Double = null,
     pageSize: scala.Int | scala.Double = null,
     pagination: js.UndefOr[scala.Boolean] = js.undefined,
@@ -200,14 +194,14 @@ object DataGridProps {
     if (!js.isUndefined(liveFilter)) __obj.updateDynamic("liveFilter")(liveFilter)
     if (!js.isUndefined(loadMaskOverHeader)) __obj.updateDynamic("loadMaskOverHeader")(loadMaskOverHeader)
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
-    if (onColumnOrderChange != null) __obj.updateDynamic("onColumnOrderChange")(onColumnOrderChange)
-    if (onColumnResize != null) __obj.updateDynamic("onColumnResize")(onColumnResize)
-    if (onColumnVisibilityChange != null) __obj.updateDynamic("onColumnVisibilityChange")(onColumnVisibilityChange)
-    if (onFilter != null) __obj.updateDynamic("onFilter")(onFilter)
-    if (onPageChange != null) __obj.updateDynamic("onPageChange")(onPageChange)
-    if (onPageSizeChange != null) __obj.updateDynamic("onPageSizeChange")(onPageSizeChange)
-    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(onSelectionChange)
-    if (onSortChange != null) __obj.updateDynamic("onSortChange")(onSortChange)
+    if (onColumnOrderChange != null) __obj.updateDynamic("onColumnOrderChange")(js.Any.fromFunction2(onColumnOrderChange))
+    if (onColumnResize != null) __obj.updateDynamic("onColumnResize")(js.Any.fromFunction4(onColumnResize))
+    if (onColumnVisibilityChange != null) __obj.updateDynamic("onColumnVisibilityChange")(js.Any.fromFunction2(onColumnVisibilityChange))
+    if (onFilter != null) __obj.updateDynamic("onFilter")(js.Any.fromFunction3(onFilter))
+    if (onPageChange != null) __obj.updateDynamic("onPageChange")(js.Any.fromFunction1(onPageChange))
+    if (onPageSizeChange != null) __obj.updateDynamic("onPageSizeChange")(js.Any.fromFunction2(onPageSizeChange))
+    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(js.Any.fromFunction2(onSelectionChange))
+    if (onSortChange != null) __obj.updateDynamic("onSortChange")(js.Any.fromFunction1(onSortChange))
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination)

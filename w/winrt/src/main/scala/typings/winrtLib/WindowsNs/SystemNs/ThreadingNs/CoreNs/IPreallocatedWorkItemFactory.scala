@@ -21,20 +21,11 @@ trait IPreallocatedWorkItemFactory extends js.Object {
 object IPreallocatedWorkItemFactory {
   @scala.inline
   def apply(
-    createWorkItem: js.Function1[winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemHandler, PreallocatedWorkItem],
-    createWorkItemWithPriority: js.Function2[
-      winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemHandler, 
-      winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemPriority, 
-      PreallocatedWorkItem
-    ],
-    createWorkItemWithPriorityAndOptions: js.Function3[
-      winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemHandler, 
-      winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemPriority, 
-      winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemOptions, 
-      PreallocatedWorkItem
-    ]
+    createWorkItem: winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemHandler => PreallocatedWorkItem,
+    createWorkItemWithPriority: (winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemHandler, winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemPriority) => PreallocatedWorkItem,
+    createWorkItemWithPriorityAndOptions: (winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemHandler, winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemPriority, winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemOptions) => PreallocatedWorkItem
   ): IPreallocatedWorkItemFactory = {
-    val __obj = js.Dynamic.literal(createWorkItem = createWorkItem, createWorkItemWithPriority = createWorkItemWithPriority, createWorkItemWithPriorityAndOptions = createWorkItemWithPriorityAndOptions)
+    val __obj = js.Dynamic.literal(createWorkItem = js.Any.fromFunction1(createWorkItem), createWorkItemWithPriority = js.Any.fromFunction2(createWorkItemWithPriority), createWorkItemWithPriorityAndOptions = js.Any.fromFunction3(createWorkItemWithPriorityAndOptions))
   
     __obj.asInstanceOf[IPreallocatedWorkItemFactory]
   }

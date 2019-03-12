@@ -32,28 +32,16 @@ import scala.scalajs.js.annotation._
 object WhenMock {
   @scala.inline
   def apply[T, Y /* <: js.Array[_] */](
-    calledWith: js.Function1[Y, WhenMock[T, Y]],
-    expectCalledWith: js.Function1[Y, WhenMock[T, Y]],
-    mockRejectedValue: js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify jest.RejectedValue<T> */ js.Any, 
-      WhenMock[T, Y]
-    ],
-    mockRejectedValueOnce: js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify jest.RejectedValue<T> */ js.Any, 
-      WhenMock[T, Y]
-    ],
-    mockResolvedValue: js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify jest.ResolvedValue<T> */ js.Any, 
-      WhenMock[T, Y]
-    ],
-    mockResolvedValueOnce: js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify jest.ResolvedValue<T> */ js.Any, 
-      WhenMock[T, Y]
-    ],
-    mockReturnValue: js.Function1[T, WhenMock[T, Y]],
-    mockReturnValueOnce: js.Function1[T, WhenMock[T, Y]]
+    calledWith: Y => WhenMock[T, Y],
+    expectCalledWith: Y => WhenMock[T, Y],
+    mockRejectedValue: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify jest.RejectedValue<T> */ js.Any => WhenMock[T, Y],
+    mockRejectedValueOnce: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify jest.RejectedValue<T> */ js.Any => WhenMock[T, Y],
+    mockResolvedValue: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify jest.ResolvedValue<T> */ js.Any => WhenMock[T, Y],
+    mockResolvedValueOnce: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify jest.ResolvedValue<T> */ js.Any => WhenMock[T, Y],
+    mockReturnValue: T => WhenMock[T, Y],
+    mockReturnValueOnce: T => WhenMock[T, Y]
   ): WhenMock[T, Y] = {
-    val __obj = js.Dynamic.literal(calledWith = calledWith, expectCalledWith = expectCalledWith, mockRejectedValue = mockRejectedValue, mockRejectedValueOnce = mockRejectedValueOnce, mockResolvedValue = mockResolvedValue, mockResolvedValueOnce = mockResolvedValueOnce, mockReturnValue = mockReturnValue, mockReturnValueOnce = mockReturnValueOnce)
+    val __obj = js.Dynamic.literal(calledWith = js.Any.fromFunction1(calledWith), expectCalledWith = js.Any.fromFunction1(expectCalledWith), mockRejectedValue = js.Any.fromFunction1(mockRejectedValue), mockRejectedValueOnce = js.Any.fromFunction1(mockRejectedValueOnce), mockResolvedValue = js.Any.fromFunction1(mockResolvedValue), mockResolvedValueOnce = js.Any.fromFunction1(mockResolvedValueOnce), mockReturnValue = js.Any.fromFunction1(mockReturnValue), mockReturnValueOnce = js.Any.fromFunction1(mockReturnValueOnce))
   
     __obj.asInstanceOf[WhenMock[T, Y]]
   }

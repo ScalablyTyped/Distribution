@@ -53,18 +53,8 @@ object TypographyOptions {
     headerFontFamily: js.Array[java.lang.String] = null,
     headerWeight: scala.Double | java.lang.String = null,
     includeNormalize: js.UndefOr[scala.Boolean] = js.undefined,
-    overrideStyles: js.Function3[
-      /* VerticalRhythm */ VerticalRhythm, 
-      /* options */ TypographyOptions, 
-      /* styles */ js.Any, 
-      js.Object
-    ] = null,
-    overrideThemeStyles: js.Function3[
-      /* VerticalRhythm */ VerticalRhythm, 
-      /* options */ TypographyOptions, 
-      /* styles */ js.Any, 
-      js.Object
-    ] = null,
+    overrideStyles: (/* VerticalRhythm */ VerticalRhythm, /* options */ TypographyOptions, /* styles */ js.Any) => js.Object = null,
+    overrideThemeStyles: (/* VerticalRhythm */ VerticalRhythm, /* options */ TypographyOptions, /* styles */ js.Any) => js.Object = null,
     plugins: js.Array[_] = null,
     scaleRatio: scala.Int | scala.Double = null
   ): TypographyOptions = {
@@ -81,8 +71,8 @@ object TypographyOptions {
     if (headerFontFamily != null) __obj.updateDynamic("headerFontFamily")(headerFontFamily)
     if (headerWeight != null) __obj.updateDynamic("headerWeight")(headerWeight.asInstanceOf[js.Any])
     if (!js.isUndefined(includeNormalize)) __obj.updateDynamic("includeNormalize")(includeNormalize)
-    if (overrideStyles != null) __obj.updateDynamic("overrideStyles")(overrideStyles)
-    if (overrideThemeStyles != null) __obj.updateDynamic("overrideThemeStyles")(overrideThemeStyles)
+    if (overrideStyles != null) __obj.updateDynamic("overrideStyles")(js.Any.fromFunction3(overrideStyles))
+    if (overrideThemeStyles != null) __obj.updateDynamic("overrideThemeStyles")(js.Any.fromFunction3(overrideThemeStyles))
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)
     if (scaleRatio != null) __obj.updateDynamic("scaleRatio")(scaleRatio.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypographyOptions]

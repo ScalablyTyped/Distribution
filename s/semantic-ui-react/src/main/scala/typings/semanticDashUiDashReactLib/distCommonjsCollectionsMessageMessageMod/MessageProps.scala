@@ -32,11 +32,7 @@ object MessageProps {
       semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageItemMod.MessageItemProps
     ] = null,
     negative: js.UndefOr[scala.Boolean] = js.undefined,
-    onDismiss: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ MessageProps, 
-      scala.Unit
-    ] = null,
+    onDismiss: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ MessageProps) => scala.Unit = null,
     positive: js.UndefOr[scala.Boolean] = js.undefined,
     size: MessageSizeProp = null,
     success: js.UndefOr[scala.Boolean] = js.undefined,
@@ -60,7 +56,7 @@ object MessageProps {
     if (!js.isUndefined(info)) __obj.updateDynamic("info")(info)
     if (list != null) __obj.updateDynamic("list")(list)
     if (!js.isUndefined(negative)) __obj.updateDynamic("negative")(negative)
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss)
+    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction2(onDismiss))
     if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive)
     if (size != null) __obj.updateDynamic("size")(size)
     if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)

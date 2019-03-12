@@ -25,15 +25,15 @@ trait ITextFieldExpression extends js.Object {
 object ITextFieldExpression {
   @scala.inline
   def apply(
-    BeginsWith: js.Function1[java.lang.String, IExpression],
-    Contains: js.Function1[java.lang.String, IExpression],
-    EqualTo: js.Function1[java.lang.String, IExpression],
-    In: js.Function1[js.Array[java.lang.String], IExpression],
-    IsNotNull: js.Function0[IExpression],
-    IsNull: js.Function0[IExpression],
-    NotEqualTo: js.Function1[java.lang.String, IExpression]
+    BeginsWith: java.lang.String => IExpression,
+    Contains: java.lang.String => IExpression,
+    EqualTo: java.lang.String => IExpression,
+    In: js.Array[java.lang.String] => IExpression,
+    IsNotNull: () => IExpression,
+    IsNull: () => IExpression,
+    NotEqualTo: java.lang.String => IExpression
   ): ITextFieldExpression = {
-    val __obj = js.Dynamic.literal(BeginsWith = BeginsWith, Contains = Contains, EqualTo = EqualTo, In = In, IsNotNull = IsNotNull, IsNull = IsNull, NotEqualTo = NotEqualTo)
+    val __obj = js.Dynamic.literal(BeginsWith = js.Any.fromFunction1(BeginsWith), Contains = js.Any.fromFunction1(Contains), EqualTo = js.Any.fromFunction1(EqualTo), In = js.Any.fromFunction1(In), IsNotNull = js.Any.fromFunction0(IsNotNull), IsNull = js.Any.fromFunction0(IsNull), NotEqualTo = js.Any.fromFunction1(NotEqualTo))
   
     __obj.asInstanceOf[ITextFieldExpression]
   }

@@ -168,9 +168,8 @@ object tlsNs extends js.Object {
   }
   
   trait TLSError
-    extends nodeLib.Error {
+    extends stdLib.Error {
     var alert: Alert
-    var message: java.lang.String
     var origin: nodeDashForgeLib.nodeDashForgeLibStrings.server | nodeDashForgeLib.nodeDashForgeLibStrings.client
     var send: scala.Boolean
   }

@@ -12,8 +12,8 @@ trait QuizFeedback extends js.Object {
 
 object QuizFeedback {
   @scala.inline
-  def apply(getLinkUrls: js.Function0[js.Array[java.lang.String]], getText: js.Function0[java.lang.String]): QuizFeedback = {
-    val __obj = js.Dynamic.literal(getLinkUrls = getLinkUrls, getText = getText)
+  def apply(getLinkUrls: () => js.Array[java.lang.String], getText: () => java.lang.String): QuizFeedback = {
+    val __obj = js.Dynamic.literal(getLinkUrls = js.Any.fromFunction0(getLinkUrls), getText = js.Any.fromFunction0(getText))
   
     __obj.asInstanceOf[QuizFeedback]
   }

@@ -12,7 +12,7 @@ object OrganizationsNs extends js.Object {
     /**
       * The unique identifier (ID) of the handshake that you want to accept. The regex pattern for handshake ID string requires "h-" followed by from 8 to 32 lower-case letters or digits.
       */
-    var HandshakeId: HandshakeId
+    var HandshakeId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.HandshakeId
   }
   
   trait AcceptHandshakeResponse extends js.Object {
@@ -57,7 +57,7 @@ object OrganizationsNs extends js.Object {
     /**
       * The unique identifier (ID) of the policy that you want to attach to the target. You can get the ID for the policy by calling the ListPolicies operation. The regex pattern for a policy ID string requires "p-" followed by from 8 to 128 lower-case letters or digits.
       */
-    var PolicyId: PolicyId
+    var PolicyId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.PolicyId
     /**
       * The unique identifier (ID) of the root, OU, or account that you want to attach the policy to. You can get the ID by calling the ListRoots, ListOrganizationalUnitsForParent, or ListAccounts operations. The regex pattern for a target ID string requires one of the following:   Root: a string that begins with "r-" followed by from 4 to 32 lower-case letters or digits.   Account: a string that consists of exactly 12 digits.   Organizational unit (OU): a string that begins with "ou-" followed by from 4 to 32 lower-case letters or digits (the ID of the root that the OU is in) followed by a second "-" dash and from 8 to 32 additional lower-case letters or digits.  
       */
@@ -68,7 +68,7 @@ object OrganizationsNs extends js.Object {
     /**
       * The unique identifier (ID) of the handshake that you want to cancel. You can get the ID from the ListHandshakesForOrganization operation. The regex pattern for handshake ID string requires "h-" followed by from 8 to 32 lower-case letters or digits.
       */
-    var HandshakeId: HandshakeId
+    var HandshakeId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.HandshakeId
   }
   
   trait CancelHandshakeResponse extends js.Object {
@@ -100,11 +100,11 @@ object OrganizationsNs extends js.Object {
     /**
       * The friendly name of the member account.
       */
-    var AccountName: AccountName
+    var AccountName: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.AccountName
     /**
       * The email address of the owner to assign to the new member account. This email address must not already be associated with another AWS account. You must use a valid email address to complete account creation. You can't access the root user of the account or remove an account that was created with an invalid email address.
       */
-    var Email: Email
+    var Email: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.Email
     /**
       * If set to ALLOW, the new account enables IAM users to access account billing information if they have the required permissions. If set to DENY, only the root user of the new account can access account billing information. For more information, see Activating Access to the Billing and Cost Management Console in the AWS Billing and Cost Management User Guide. If you don't specify this parameter, the value defaults to ALLOW, and IAM users and roles with the required permissions can access billing information for the new account.
       */
@@ -175,7 +175,7 @@ object OrganizationsNs extends js.Object {
     /**
       * The unique identifier (ID) of the parent root or OU in which you want to create the new OU. The regex pattern for a parent ID string requires one of the following:   Root: a string that begins with "r-" followed by from 4 to 32 lower-case letters or digits.   Organizational unit (OU): a string that begins with "ou-" followed by from 4 to 32 lower-case letters or digits (the ID of the root that the OU is in) followed by a second "-" dash and from 8 to 32 additional lower-case letters or digits.  
       */
-    var ParentId: ParentId
+    var ParentId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.ParentId
   }
   
   trait CreateOrganizationalUnitResponse extends js.Object {
@@ -215,7 +215,7 @@ object OrganizationsNs extends js.Object {
     /**
       * The unique identifier (ID) of the handshake that you want to decline. You can get the ID from the ListHandshakesForAccount operation. The regex pattern for handshake ID string requires "h-" followed by from 8 to 32 lower-case letters or digits.
       */
-    var HandshakeId: HandshakeId
+    var HandshakeId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.HandshakeId
   }
   
   trait DeclineHandshakeResponse extends js.Object {
@@ -229,21 +229,21 @@ object OrganizationsNs extends js.Object {
     /**
       * The unique identifier (ID) of the organizational unit that you want to delete. You can get the ID from the ListOrganizationalUnitsForParent operation. The regex pattern for an organizational unit ID string requires "ou-" followed by from 4 to 32 lower-case letters or digits (the ID of the root that contains the OU) followed by a second "-" dash and from 8 to 32 additional lower-case letters or digits.
       */
-    var OrganizationalUnitId: OrganizationalUnitId
+    var OrganizationalUnitId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.OrganizationalUnitId
   }
   
   trait DeletePolicyRequest extends js.Object {
     /**
       * The unique identifier (ID) of the policy that you want to delete. You can get the ID from the ListPolicies or ListPoliciesForTarget operations. The regex pattern for a policy ID string requires "p-" followed by from 8 to 128 lower-case letters or digits.
       */
-    var PolicyId: PolicyId
+    var PolicyId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.PolicyId
   }
   
   trait DescribeAccountRequest extends js.Object {
     /**
       * The unique identifier (ID) of the AWS account that you want information about. You can get the ID from the ListAccounts or ListAccountsForParent operations. The regex pattern for an account ID string requires exactly 12 digits.
       */
-    var AccountId: AccountId
+    var AccountId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.AccountId
   }
   
   trait DescribeAccountResponse extends js.Object {
@@ -257,7 +257,7 @@ object OrganizationsNs extends js.Object {
     /**
       * Specifies the operationId that uniquely identifies the request. You can get the ID from the response to an earlier CreateAccount request, or from the ListCreateAccountStatus operation. The regex pattern for an create account request ID string requires "car-" followed by from 8 to 32 lower-case letters or digits.
       */
-    var CreateAccountRequestId: CreateAccountRequestId
+    var CreateAccountRequestId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.CreateAccountRequestId
   }
   
   trait DescribeCreateAccountStatusResponse extends js.Object {
@@ -271,7 +271,7 @@ object OrganizationsNs extends js.Object {
     /**
       * The unique identifier (ID) of the handshake that you want information about. You can get the ID from the original call to InviteAccountToOrganization, or from a call to ListHandshakesForAccount or ListHandshakesForOrganization. The regex pattern for handshake ID string requires "h-" followed by from 8 to 32 lower-case letters or digits.
       */
-    var HandshakeId: HandshakeId
+    var HandshakeId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.HandshakeId
   }
   
   trait DescribeHandshakeResponse extends js.Object {
@@ -292,7 +292,7 @@ object OrganizationsNs extends js.Object {
     /**
       * The unique identifier (ID) of the organizational unit that you want details about. You can get the ID from the ListOrganizationalUnitsForParent operation. The regex pattern for an organizational unit ID string requires "ou-" followed by from 4 to 32 lower-case letters or digits (the ID of the root that contains the OU) followed by a second "-" dash and from 8 to 32 additional lower-case letters or digits.
       */
-    var OrganizationalUnitId: OrganizationalUnitId
+    var OrganizationalUnitId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.OrganizationalUnitId
   }
   
   trait DescribeOrganizationalUnitResponse extends js.Object {
@@ -306,7 +306,7 @@ object OrganizationsNs extends js.Object {
     /**
       * The unique identifier (ID) of the policy that you want details about. You can get the ID from the ListPolicies or ListPoliciesForTarget operations. The regex pattern for a policy ID string requires "p-" followed by from 8 to 128 lower-case letters or digits.
       */
-    var PolicyId: PolicyId
+    var PolicyId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.PolicyId
   }
   
   trait DescribePolicyResponse extends js.Object {
@@ -320,7 +320,7 @@ object OrganizationsNs extends js.Object {
     /**
       * The unique identifier (ID) of the policy you want to detach. You can get the ID from the ListPolicies or ListPoliciesForTarget operations. The regex pattern for a policy ID string requires "p-" followed by from 8 to 128 lower-case letters or digits.
       */
-    var PolicyId: PolicyId
+    var PolicyId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.PolicyId
     /**
       * The unique identifier (ID) of the root, OU, or account from which you want to detach the policy. You can get the ID from the ListRoots, ListOrganizationalUnitsForParent, or ListAccounts operations. The regex pattern for a target ID string requires one of the following:   Root: a string that begins with "r-" followed by from 4 to 32 lower-case letters or digits.   Account: a string that consists of exactly 12 digits.   Organizational unit (OU): a string that begins with "ou-" followed by from 4 to 32 lower-case letters or digits (the ID of the root that the OU is in) followed by a second "-" dash and from 8 to 32 additional lower-case letters or digits.  
       */
@@ -331,18 +331,18 @@ object OrganizationsNs extends js.Object {
     /**
       * The service principal name of the AWS service for which you want to disable integration with your organization. This is typically in the form of a URL, such as  service-abbreviation.amazonaws.com.
       */
-    var ServicePrincipal: ServicePrincipal
+    var ServicePrincipal: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.ServicePrincipal
   }
   
   trait DisablePolicyTypeRequest extends js.Object {
     /**
       * The policy type that you want to disable in this root.
       */
-    var PolicyType: PolicyType
+    var PolicyType: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.PolicyType
     /**
       * The unique identifier (ID) of the root in which you want to disable a policy type. You can get the ID from the ListRoots operation. The regex pattern for a root ID string requires "r-" followed by from 4 to 32 lower-case letters or digits.
       */
-    var RootId: RootId
+    var RootId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.RootId
   }
   
   trait DisablePolicyTypeResponse extends js.Object {
@@ -356,7 +356,7 @@ object OrganizationsNs extends js.Object {
     /**
       * The service principal name of the AWS service for which you want to enable integration with your organization. This is typically in the form of a URL, such as  service-abbreviation.amazonaws.com.
       */
-    var ServicePrincipal: ServicePrincipal
+    var ServicePrincipal: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.ServicePrincipal
   }
   
   trait EnableAllFeaturesRequest extends js.Object
@@ -372,11 +372,11 @@ object OrganizationsNs extends js.Object {
     /**
       * The policy type that you want to enable.
       */
-    var PolicyType: PolicyType
+    var PolicyType: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.PolicyType
     /**
       * The unique identifier (ID) of the root in which you want to enable a policy type. You can get the ID from the ListRoots operation. The regex pattern for a root ID string requires "r-" followed by from 4 to 32 lower-case letters or digits.
       */
-    var RootId: RootId
+    var RootId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.RootId
   }
   
   trait EnablePolicyTypeResponse extends js.Object {
@@ -521,7 +521,7 @@ object OrganizationsNs extends js.Object {
     /**
       * The unique identifier (ID) for the parent root or organization unit (OU) whose accounts you want to list.
       */
-    var ParentId: ParentId
+    var ParentId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.ParentId
   }
   
   trait ListAccountsForParentResponse extends js.Object {
@@ -561,7 +561,7 @@ object OrganizationsNs extends js.Object {
     /**
       * Filters the output to include only the specified child type.
       */
-    var ChildType: ChildType
+    var ChildType: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.ChildType
     /**
       * (Optional) Use this to limit the number of results you want included per page in the response. If you do not include this parameter, it defaults to a value that is specific to the operation. If additional items exist beyond the maximum you specify, the NextToken response element is present and has a value (is not null). Include that value as the NextToken request parameter in the next call to the operation to get the next part of the results. Note that Organizations might return fewer results than the maximum even when there are more results available. You should check NextToken after every operation to ensure that you receive all of the results.
       */
@@ -573,7 +573,7 @@ object OrganizationsNs extends js.Object {
     /**
       * The unique identifier (ID) for the parent root or OU whose children you want to list. The regex pattern for a parent ID string requires one of the following:   Root: a string that begins with "r-" followed by from 4 to 32 lower-case letters or digits.   Organizational unit (OU): a string that begins with "ou-" followed by from 4 to 32 lower-case letters or digits (the ID of the root that the OU is in) followed by a second "-" dash and from 8 to 32 additional lower-case letters or digits.  
       */
-    var ParentId: ParentId
+    var ParentId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.ParentId
   }
   
   trait ListChildrenResponse extends js.Object {
@@ -677,7 +677,7 @@ object OrganizationsNs extends js.Object {
     /**
       * The unique identifier (ID) of the root or OU whose child OUs you want to list. The regex pattern for a parent ID string requires one of the following:   Root: a string that begins with "r-" followed by from 4 to 32 lower-case letters or digits.   Organizational unit (OU): a string that begins with "ou-" followed by from 4 to 32 lower-case letters or digits (the ID of the root that the OU is in) followed by a second "-" dash and from 8 to 32 additional lower-case letters or digits.  
       */
-    var ParentId: ParentId
+    var ParentId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.ParentId
   }
   
   trait ListOrganizationalUnitsForParentResponse extends js.Object {
@@ -695,7 +695,7 @@ object OrganizationsNs extends js.Object {
     /**
       * The unique identifier (ID) of the OU or account whose parent containers you want to list. Do not specify a root. The regex pattern for a child ID string requires one of the following:   Account: a string that consists of exactly 12 digits.   Organizational unit (OU): a string that begins with "ou-" followed by from 4 to 32 lower-case letters or digits (the ID of the root that contains the OU) followed by a second "-" dash and from 8 to 32 additional lower-case letters or digits.  
       */
-    var ChildId: ChildId
+    var ChildId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.ChildId
     /**
       * (Optional) Use this to limit the number of results you want included per page in the response. If you do not include this parameter, it defaults to a value that is specific to the operation. If additional items exist beyond the maximum you specify, the NextToken response element is present and has a value (is not null). Include that value as the NextToken request parameter in the next call to the operation to get the next part of the results. Note that Organizations might return fewer results than the maximum even when there are more results available. You should check NextToken after every operation to ensure that you receive all of the results.
       */
@@ -807,7 +807,7 @@ object OrganizationsNs extends js.Object {
     /**
       * The unique identifier (ID) of the policy for which you want to know its attachments. The regex pattern for a policy ID string requires "p-" followed by from 8 to 128 lower-case letters or digits.
       */
-    var PolicyId: PolicyId
+    var PolicyId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.PolicyId
   }
   
   trait ListTargetsForPolicyResponse extends js.Object {
@@ -825,7 +825,7 @@ object OrganizationsNs extends js.Object {
     /**
       * The unique identifier (ID) of the account that you want to move. The regex pattern for an account ID string requires exactly 12 digits.
       */
-    var AccountId: AccountId
+    var AccountId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.AccountId
     /**
       * The unique identifier (ID) of the root or organizational unit that you want to move the account to. The regex pattern for a parent ID string requires one of the following:   Root: a string that begins with "r-" followed by from 4 to 32 lower-case letters or digits.   Organizational unit (OU): a string that begins with "ou-" followed by from 4 to 32 lower-case letters or digits (the ID of the root that the OU is in) followed by a second "-" dash and from 8 to 32 additional lower-case letters or digits.  
       */
@@ -965,7 +965,7 @@ object OrganizationsNs extends js.Object {
     /**
       * The unique identifier (ID) of the member account that you want to remove from the organization. The regex pattern for an account ID string requires exactly 12 digits.
       */
-    var AccountId: AccountId
+    var AccountId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.AccountId
   }
   
   trait Root extends js.Object {
@@ -1860,7 +1860,7 @@ object OrganizationsNs extends js.Object {
     /**
       * The unique identifier (ID) of the OU that you want to rename. You can get the ID from the ListOrganizationalUnitsForParent operation. The regex pattern for an organizational unit ID string requires "ou-" followed by from 4 to 32 lower-case letters or digits (the ID of the root that contains the OU) followed by a second "-" dash and from 8 to 32 additional lower-case letters or digits.
       */
-    var OrganizationalUnitId: OrganizationalUnitId
+    var OrganizationalUnitId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.OrganizationalUnitId
   }
   
   trait UpdateOrganizationalUnitResponse extends js.Object {
@@ -1886,7 +1886,7 @@ object OrganizationsNs extends js.Object {
     /**
       * The unique identifier (ID) of the policy that you want to update. The regex pattern for a policy ID string requires "p-" followed by from 8 to 128 lower-case letters or digits.
       */
-    var PolicyId: PolicyId
+    var PolicyId: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.PolicyId
   }
   
   trait UpdatePolicyResponse extends js.Object {

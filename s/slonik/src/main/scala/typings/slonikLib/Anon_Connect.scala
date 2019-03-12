@@ -13,10 +13,10 @@ trait Anon_Connect extends js.Object {
 object Anon_Connect {
   @scala.inline
   def apply(
-    connect: js.Function1[slonikLib.slonikMod.ConnectionRoutineType, js.Promise[_]],
-    transaction: js.Function1[slonikLib.slonikMod.TransactionFunctionType, js.Promise[_]]
+    connect: slonikLib.slonikMod.ConnectionRoutineType => js.Promise[_],
+    transaction: slonikLib.slonikMod.TransactionFunctionType => js.Promise[_]
   ): Anon_Connect = {
-    val __obj = js.Dynamic.literal(connect = connect, transaction = transaction)
+    val __obj = js.Dynamic.literal(connect = js.Any.fromFunction1(connect), transaction = js.Any.fromFunction1(transaction))
   
     __obj.asInstanceOf[Anon_Connect]
   }

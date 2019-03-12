@@ -16,13 +16,13 @@ trait TranslateAnimation extends js.Object {
 object TranslateAnimation {
   @scala.inline
   def apply(
-    translate: js.Function1[scala.Double, Animation],
-    translate3d: js.Function0[Animation],
-    translateX: js.Function1[scala.Double, Animation],
-    translateY: js.Function1[scala.Double, Animation],
-    translateZ: js.Function1[scala.Double, Animation]
+    translate: scala.Double => Animation,
+    translate3d: () => Animation,
+    translateX: scala.Double => Animation,
+    translateY: scala.Double => Animation,
+    translateZ: scala.Double => Animation
   ): TranslateAnimation = {
-    val __obj = js.Dynamic.literal(translate = translate, translate3d = translate3d, translateX = translateX, translateY = translateY, translateZ = translateZ)
+    val __obj = js.Dynamic.literal(translate = js.Any.fromFunction1(translate), translate3d = js.Any.fromFunction0(translate3d), translateX = js.Any.fromFunction1(translateX), translateY = js.Any.fromFunction1(translateY), translateZ = js.Any.fromFunction1(translateZ))
   
     __obj.asInstanceOf[TranslateAnimation]
   }

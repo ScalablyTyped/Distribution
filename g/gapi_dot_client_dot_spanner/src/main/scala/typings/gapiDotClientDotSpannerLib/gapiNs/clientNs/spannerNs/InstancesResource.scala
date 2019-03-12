@@ -136,42 +136,18 @@ trait InstancesResource extends js.Object {
 object InstancesResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
+    create: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
     databases: DatabasesResource,
-    delete: js.Function1[
-      gapiDotClientDotSpannerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotSpannerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Instance]
-    ],
-    getIamPolicy: js.Function1[
-      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    list: js.Function1[
-      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListInstancesResponse]
-    ],
+    delete: gapiDotClientDotSpannerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotSpannerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Instance],
+    getIamPolicy: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    list: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter => gapiDotClientLib.gapiNs.clientNs.Request[ListInstancesResponse],
     operations: OperationsResource,
-    patch: js.Function1[
-      gapiDotClientDotSpannerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    setIamPolicy: js.Function1[
-      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    testIamPermissions: js.Function1[
-      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
-    ]
+    patch: gapiDotClientDotSpannerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    setIamPolicy: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    testIamPermissions: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
   ): InstancesResource = {
-    val __obj = js.Dynamic.literal(create = create, databases = databases, delete = delete, get = get, getIamPolicy = getIamPolicy, list = list, operations = operations, patch = patch, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), databases = databases, delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), list = js.Any.fromFunction1(list), operations = operations, patch = js.Any.fromFunction1(patch), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions))
   
     __obj.asInstanceOf[InstancesResource]
   }

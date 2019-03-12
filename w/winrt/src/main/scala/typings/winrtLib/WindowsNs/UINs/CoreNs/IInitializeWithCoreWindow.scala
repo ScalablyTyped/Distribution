@@ -11,8 +11,8 @@ trait IInitializeWithCoreWindow extends js.Object {
 
 object IInitializeWithCoreWindow {
   @scala.inline
-  def apply(initialize: js.Function1[CoreWindow, scala.Unit]): IInitializeWithCoreWindow = {
-    val __obj = js.Dynamic.literal(initialize = initialize)
+  def apply(initialize: CoreWindow => scala.Unit): IInitializeWithCoreWindow = {
+    val __obj = js.Dynamic.literal(initialize = js.Any.fromFunction1(initialize))
   
     __obj.asInstanceOf[IInitializeWithCoreWindow]
   }

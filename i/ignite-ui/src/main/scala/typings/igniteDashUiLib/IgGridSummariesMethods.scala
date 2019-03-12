@@ -89,24 +89,24 @@ trait IgGridSummariesMethods extends js.Object {
 object IgGridSummariesMethods {
   @scala.inline
   def apply(
-    calculateSummaries: js.Function0[scala.Unit],
-    calculateSummaryColumn: js.Function4[java.lang.String, js.Array[_], js.Object, js.Object, scala.Unit],
-    changeGlobalLanguage: js.Function0[scala.Unit],
-    changeGlobalRegional: js.Function0[scala.Unit],
-    changeLocale: js.Function0[scala.Unit],
-    changeRegional: js.Function0[scala.Unit],
-    clearAllFooterIcons: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    isSummariesRowsHidden: js.Function0[scala.Unit],
-    selectCheckBox: js.Function2[js.Object, scala.Boolean, scala.Unit],
-    showHideDialog: js.Function1[js.Object, scala.Unit],
-    summariesFor: js.Function1[js.Object, scala.Unit],
-    summaryCollection: js.Function0[scala.Unit],
-    toggleCheckstate: js.Function1[js.Object, scala.Unit],
-    toggleDropDown: js.Function2[java.lang.String, js.Object, scala.Unit],
-    toggleSummariesRows: js.Function2[scala.Boolean, scala.Boolean, scala.Unit]
+    calculateSummaries: () => scala.Unit,
+    calculateSummaryColumn: (java.lang.String, js.Array[_], js.Object, js.Object) => scala.Unit,
+    changeGlobalLanguage: () => scala.Unit,
+    changeGlobalRegional: () => scala.Unit,
+    changeLocale: () => scala.Unit,
+    changeRegional: () => scala.Unit,
+    clearAllFooterIcons: () => scala.Unit,
+    destroy: () => scala.Unit,
+    isSummariesRowsHidden: () => scala.Unit,
+    selectCheckBox: (js.Object, scala.Boolean) => scala.Unit,
+    showHideDialog: js.Object => scala.Unit,
+    summariesFor: js.Object => scala.Unit,
+    summaryCollection: () => scala.Unit,
+    toggleCheckstate: js.Object => scala.Unit,
+    toggleDropDown: (java.lang.String, js.Object) => scala.Unit,
+    toggleSummariesRows: (scala.Boolean, scala.Boolean) => scala.Unit
   ): IgGridSummariesMethods = {
-    val __obj = js.Dynamic.literal(calculateSummaries = calculateSummaries, calculateSummaryColumn = calculateSummaryColumn, changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, changeRegional = changeRegional, clearAllFooterIcons = clearAllFooterIcons, destroy = destroy, isSummariesRowsHidden = isSummariesRowsHidden, selectCheckBox = selectCheckBox, showHideDialog = showHideDialog, summariesFor = summariesFor, summaryCollection = summaryCollection, toggleCheckstate = toggleCheckstate, toggleDropDown = toggleDropDown, toggleSummariesRows = toggleSummariesRows)
+    val __obj = js.Dynamic.literal(calculateSummaries = js.Any.fromFunction0(calculateSummaries), calculateSummaryColumn = js.Any.fromFunction4(calculateSummaryColumn), changeGlobalLanguage = js.Any.fromFunction0(changeGlobalLanguage), changeGlobalRegional = js.Any.fromFunction0(changeGlobalRegional), changeLocale = js.Any.fromFunction0(changeLocale), changeRegional = js.Any.fromFunction0(changeRegional), clearAllFooterIcons = js.Any.fromFunction0(clearAllFooterIcons), destroy = js.Any.fromFunction0(destroy), isSummariesRowsHidden = js.Any.fromFunction0(isSummariesRowsHidden), selectCheckBox = js.Any.fromFunction2(selectCheckBox), showHideDialog = js.Any.fromFunction1(showHideDialog), summariesFor = js.Any.fromFunction1(summariesFor), summaryCollection = js.Any.fromFunction0(summaryCollection), toggleCheckstate = js.Any.fromFunction1(toggleCheckstate), toggleDropDown = js.Any.fromFunction2(toggleDropDown), toggleSummariesRows = js.Any.fromFunction2(toggleSummariesRows))
   
     __obj.asInstanceOf[IgGridSummariesMethods]
   }

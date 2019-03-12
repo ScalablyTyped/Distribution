@@ -15,12 +15,12 @@ trait Anon_GetHeight extends js.Object {
 object Anon_GetHeight {
   @scala.inline
   def apply(
-    getHeight: js.Function0[scala.Double],
-    getWidth: js.Function0[scala.Double],
+    getHeight: () => scala.Double,
+    getWidth: () => scala.Double,
     height: scala.Double,
     width: scala.Double
   ): Anon_GetHeight = {
-    val __obj = js.Dynamic.literal(getHeight = getHeight, getWidth = getWidth, height = height, width = width)
+    val __obj = js.Dynamic.literal(getHeight = js.Any.fromFunction0(getHeight), getWidth = js.Any.fromFunction0(getWidth), height = height, width = width)
   
     __obj.asInstanceOf[Anon_GetHeight]
   }

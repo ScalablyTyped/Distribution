@@ -117,7 +117,7 @@ object ExtractOptions {
     C: java.lang.String = null,
     Directory: js.UndefOr[scala.Boolean] = js.undefined,
     cwd: java.lang.String = null,
-    filter: js.Function2[/* path */ java.lang.String, /* stat */ FileStat, scala.Boolean] = null,
+    filter: (/* path */ java.lang.String, /* stat */ FileStat) => scala.Boolean = null,
     gui: scala.Int | scala.Double = null,
     k: js.UndefOr[scala.Boolean] = js.undefined,
     keep: js.UndefOr[scala.Boolean] = js.undefined,
@@ -125,7 +125,7 @@ object ExtractOptions {
     `keep-newer`: js.UndefOr[scala.Boolean] = js.undefined,
     `keep-newer-files`: js.UndefOr[scala.Boolean] = js.undefined,
     newer: js.UndefOr[scala.Boolean] = js.undefined,
-    onwarn: js.Function2[/* message */ java.lang.String, /* data */ nodeLib.Buffer, scala.Unit] = null,
+    onwarn: (/* message */ java.lang.String, /* data */ nodeLib.Buffer) => scala.Unit = null,
     p: js.UndefOr[scala.Boolean] = js.undefined,
     path: java.lang.String = null,
     preserveOwner: js.UndefOr[scala.Boolean] = js.undefined,
@@ -141,7 +141,7 @@ object ExtractOptions {
     if (C != null) __obj.updateDynamic("C")(C)
     if (!js.isUndefined(Directory)) __obj.updateDynamic("Directory")(Directory)
     if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
     if (gui != null) __obj.updateDynamic("gui")(gui.asInstanceOf[js.Any])
     if (!js.isUndefined(k)) __obj.updateDynamic("k")(k)
     if (!js.isUndefined(keep)) __obj.updateDynamic("keep")(keep)
@@ -149,7 +149,7 @@ object ExtractOptions {
     if (!js.isUndefined(`keep-newer`)) __obj.updateDynamic("keep-newer")(`keep-newer`)
     if (!js.isUndefined(`keep-newer-files`)) __obj.updateDynamic("keep-newer-files")(`keep-newer-files`)
     if (!js.isUndefined(newer)) __obj.updateDynamic("newer")(newer)
-    if (onwarn != null) __obj.updateDynamic("onwarn")(onwarn)
+    if (onwarn != null) __obj.updateDynamic("onwarn")(js.Any.fromFunction2(onwarn))
     if (!js.isUndefined(p)) __obj.updateDynamic("p")(p)
     if (path != null) __obj.updateDynamic("path")(path)
     if (!js.isUndefined(preserveOwner)) __obj.updateDynamic("preserveOwner")(preserveOwner)

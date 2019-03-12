@@ -16,12 +16,12 @@ trait XUnloadingPreference extends XInterface {
 object XUnloadingPreference {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    releaseOnNotification: js.Function0[scala.Boolean]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    releaseOnNotification: () => scala.Boolean
   ): XUnloadingPreference = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, releaseOnNotification = releaseOnNotification)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), releaseOnNotification = js.Any.fromFunction0(releaseOnNotification))
   
     __obj.asInstanceOf[XUnloadingPreference]
   }

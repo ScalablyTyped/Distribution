@@ -56,24 +56,24 @@ object ISheet {
     centered: js.UndefOr[scala.Boolean] = js.undefined,
     enter: java.lang.String = null,
     exit: java.lang.String = null,
-    getBaseCls: js.Function0[java.lang.String] = null,
-    getCentered: js.Function0[scala.Boolean] = null,
-    getEnter: js.Function0[java.lang.String] = null,
-    getExit: js.Function0[java.lang.String] = null,
-    getModal: js.Function0[scala.Boolean] = null,
-    getStretchX: js.Function0[scala.Boolean] = null,
-    getStretchY: js.Function0[scala.Boolean] = null,
+    getBaseCls: () => java.lang.String = null,
+    getCentered: () => scala.Boolean = null,
+    getEnter: () => java.lang.String = null,
+    getExit: () => java.lang.String = null,
+    getModal: () => scala.Boolean = null,
+    getStretchX: () => scala.Boolean = null,
+    getStretchY: () => scala.Boolean = null,
     hideAnimation: js.Any = null,
     modal: js.UndefOr[scala.Boolean] = js.undefined,
-    setBaseCls: js.Function1[/* baseCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setCentered: js.Function1[/* centered */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setEnter: js.Function1[/* enter */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setExit: js.Function1[/* exit */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setHideAnimation: js.Function1[/* hideAnimation */ js.UndefOr[js.Any], scala.Unit] = null,
-    setModal: js.Function1[/* modal */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setShowAnimation: js.Function1[/* showAnimation */ js.UndefOr[js.Any], scala.Unit] = null,
-    setStretchX: js.Function1[/* stretchX */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setStretchY: js.Function1[/* stretchY */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setCentered: /* centered */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setEnter: /* enter */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setExit: /* exit */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setHideAnimation: /* hideAnimation */ js.UndefOr[js.Any] => scala.Unit = null,
+    setModal: /* modal */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setShowAnimation: /* showAnimation */ js.UndefOr[js.Any] => scala.Unit = null,
+    setStretchX: /* stretchX */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setStretchY: /* stretchY */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     showAnimation: js.Any = null,
     stretchX: js.UndefOr[scala.Boolean] = js.undefined,
     stretchY: js.UndefOr[scala.Boolean] = js.undefined
@@ -84,24 +84,24 @@ object ISheet {
     if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered)
     if (enter != null) __obj.updateDynamic("enter")(enter)
     if (exit != null) __obj.updateDynamic("exit")(exit)
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(getBaseCls)
-    if (getCentered != null) __obj.updateDynamic("getCentered")(getCentered)
-    if (getEnter != null) __obj.updateDynamic("getEnter")(getEnter)
-    if (getExit != null) __obj.updateDynamic("getExit")(getExit)
-    if (getModal != null) __obj.updateDynamic("getModal")(getModal)
-    if (getStretchX != null) __obj.updateDynamic("getStretchX")(getStretchX)
-    if (getStretchY != null) __obj.updateDynamic("getStretchY")(getStretchY)
+    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
+    if (getCentered != null) __obj.updateDynamic("getCentered")(js.Any.fromFunction0(getCentered))
+    if (getEnter != null) __obj.updateDynamic("getEnter")(js.Any.fromFunction0(getEnter))
+    if (getExit != null) __obj.updateDynamic("getExit")(js.Any.fromFunction0(getExit))
+    if (getModal != null) __obj.updateDynamic("getModal")(js.Any.fromFunction0(getModal))
+    if (getStretchX != null) __obj.updateDynamic("getStretchX")(js.Any.fromFunction0(getStretchX))
+    if (getStretchY != null) __obj.updateDynamic("getStretchY")(js.Any.fromFunction0(getStretchY))
     if (hideAnimation != null) __obj.updateDynamic("hideAnimation")(hideAnimation)
     if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(setBaseCls)
-    if (setCentered != null) __obj.updateDynamic("setCentered")(setCentered)
-    if (setEnter != null) __obj.updateDynamic("setEnter")(setEnter)
-    if (setExit != null) __obj.updateDynamic("setExit")(setExit)
-    if (setHideAnimation != null) __obj.updateDynamic("setHideAnimation")(setHideAnimation)
-    if (setModal != null) __obj.updateDynamic("setModal")(setModal)
-    if (setShowAnimation != null) __obj.updateDynamic("setShowAnimation")(setShowAnimation)
-    if (setStretchX != null) __obj.updateDynamic("setStretchX")(setStretchX)
-    if (setStretchY != null) __obj.updateDynamic("setStretchY")(setStretchY)
+    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
+    if (setCentered != null) __obj.updateDynamic("setCentered")(js.Any.fromFunction1(setCentered))
+    if (setEnter != null) __obj.updateDynamic("setEnter")(js.Any.fromFunction1(setEnter))
+    if (setExit != null) __obj.updateDynamic("setExit")(js.Any.fromFunction1(setExit))
+    if (setHideAnimation != null) __obj.updateDynamic("setHideAnimation")(js.Any.fromFunction1(setHideAnimation))
+    if (setModal != null) __obj.updateDynamic("setModal")(js.Any.fromFunction1(setModal))
+    if (setShowAnimation != null) __obj.updateDynamic("setShowAnimation")(js.Any.fromFunction1(setShowAnimation))
+    if (setStretchX != null) __obj.updateDynamic("setStretchX")(js.Any.fromFunction1(setStretchX))
+    if (setStretchY != null) __obj.updateDynamic("setStretchY")(js.Any.fromFunction1(setStretchY))
     if (showAnimation != null) __obj.updateDynamic("showAnimation")(showAnimation)
     if (!js.isUndefined(stretchX)) __obj.updateDynamic("stretchX")(stretchX)
     if (!js.isUndefined(stretchY)) __obj.updateDynamic("stretchY")(stretchY)

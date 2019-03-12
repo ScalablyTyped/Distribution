@@ -28,28 +28,13 @@ trait OperationsResource extends js.Object {
 object OperationsResource {
   @scala.inline
   def apply(
-    cancel: js.Function1[
-      gapiDotClientDotDlpLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    create: js.Function1[
-      gapiDotClientDotDlpLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunningOperation]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotDlpLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotDlpLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunningOperation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDlpLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunningListOperationsResponse]
-    ]
+    cancel: gapiDotClientDotDlpLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    create: gapiDotClientDotDlpLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunningOperation],
+    delete: gapiDotClientDotDlpLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotDlpLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunningOperation],
+    list: gapiDotClientDotDlpLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunningListOperationsResponse]
   ): OperationsResource = {
-    val __obj = js.Dynamic.literal(cancel = cancel, create = create, delete = delete, get = get, list = list)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[OperationsResource]
   }

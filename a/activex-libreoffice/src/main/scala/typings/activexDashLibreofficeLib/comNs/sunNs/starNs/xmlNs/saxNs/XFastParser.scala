@@ -86,20 +86,20 @@ trait XFastParser
 object XFastParser {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getNamespaceURL: js.Function1[java.lang.String, java.lang.String],
-    parseStream: js.Function1[InputSource, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerNamespace: js.Function2[java.lang.String, scala.Double, scala.Unit],
-    release: js.Function0[scala.Unit],
-    setEntityResolver: js.Function1[XEntityResolver, scala.Unit],
-    setErrorHandler: js.Function1[XErrorHandler, scala.Unit],
-    setFastDocumentHandler: js.Function1[XFastDocumentHandler, scala.Unit],
-    setLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit],
-    setNamespaceHandler: js.Function1[XFastNamespaceHandler, scala.Unit],
-    setTokenHandler: js.Function1[XFastTokenHandler, scala.Unit]
+    acquire: () => scala.Unit,
+    getNamespaceURL: java.lang.String => java.lang.String,
+    parseStream: InputSource => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerNamespace: (java.lang.String, scala.Double) => scala.Unit,
+    release: () => scala.Unit,
+    setEntityResolver: XEntityResolver => scala.Unit,
+    setErrorHandler: XErrorHandler => scala.Unit,
+    setFastDocumentHandler: XFastDocumentHandler => scala.Unit,
+    setLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => scala.Unit,
+    setNamespaceHandler: XFastNamespaceHandler => scala.Unit,
+    setTokenHandler: XFastTokenHandler => scala.Unit
   ): XFastParser = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getNamespaceURL = getNamespaceURL, parseStream = parseStream, queryInterface = queryInterface, registerNamespace = registerNamespace, release = release, setEntityResolver = setEntityResolver, setErrorHandler = setErrorHandler, setFastDocumentHandler = setFastDocumentHandler, setLocale = setLocale, setNamespaceHandler = setNamespaceHandler, setTokenHandler = setTokenHandler)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getNamespaceURL = js.Any.fromFunction1(getNamespaceURL), parseStream = js.Any.fromFunction1(parseStream), queryInterface = js.Any.fromFunction1(queryInterface), registerNamespace = js.Any.fromFunction2(registerNamespace), release = js.Any.fromFunction0(release), setEntityResolver = js.Any.fromFunction1(setEntityResolver), setErrorHandler = js.Any.fromFunction1(setErrorHandler), setFastDocumentHandler = js.Any.fromFunction1(setFastDocumentHandler), setLocale = js.Any.fromFunction1(setLocale), setNamespaceHandler = js.Any.fromFunction1(setNamespaceHandler), setTokenHandler = js.Any.fromFunction1(setTokenHandler))
   
     __obj.asInstanceOf[XFastParser]
   }

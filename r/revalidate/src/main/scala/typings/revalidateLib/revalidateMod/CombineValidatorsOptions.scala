@@ -11,9 +11,9 @@ trait CombineValidatorsOptions extends js.Object {
 
 object CombineValidatorsOptions {
   @scala.inline
-  def apply(serializeValues: js.Function1[/* values */ js.Any, _] = null): CombineValidatorsOptions = {
+  def apply(serializeValues: /* values */ js.Any => _ = null): CombineValidatorsOptions = {
     val __obj = js.Dynamic.literal()
-    if (serializeValues != null) __obj.updateDynamic("serializeValues")(serializeValues)
+    if (serializeValues != null) __obj.updateDynamic("serializeValues")(js.Any.fromFunction1(serializeValues))
     __obj.asInstanceOf[CombineValidatorsOptions]
   }
 }

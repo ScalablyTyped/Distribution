@@ -22,12 +22,12 @@ object XIconSetEntry {
   def apply(
     Formula: java.lang.String,
     Type: scala.Double,
-    getFormula: js.Function0[java.lang.String],
-    getType: js.Function0[scala.Double],
-    setFormula: js.Function1[java.lang.String, scala.Unit],
-    setType: js.Function1[scala.Double, scala.Unit]
+    getFormula: () => java.lang.String,
+    getType: () => scala.Double,
+    setFormula: java.lang.String => scala.Unit,
+    setType: scala.Double => scala.Unit
   ): XIconSetEntry = {
-    val __obj = js.Dynamic.literal(Formula = Formula, Type = Type, getFormula = getFormula, getType = getType, setFormula = setFormula, setType = setType)
+    val __obj = js.Dynamic.literal(Formula = Formula, Type = Type, getFormula = js.Any.fromFunction0(getFormula), getType = js.Any.fromFunction0(getType), setFormula = js.Any.fromFunction1(setFormula), setType = js.Any.fromFunction1(setType))
   
     __obj.asInstanceOf[XIconSetEntry]
   }

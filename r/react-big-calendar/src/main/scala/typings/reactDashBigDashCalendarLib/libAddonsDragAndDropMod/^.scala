@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def default(calendar: reactDashBigDashCalendarLib.Anon_GlobalizeInstance): org.scalablytyped.runtime.Instantiable0[
-    reactDashBigDashCalendarLib.libAddonsDragAndDropMod.DragAndDropCalendar[reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.Event, js.Object]
+    DragAndDropCalendar[reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.Event, js.Object]
   ] = js.native
 }
 

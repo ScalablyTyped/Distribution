@@ -31,8 +31,8 @@ object IPickerProps {
     indicatorStyle: js.Any = null,
     itemStyle: js.Any = null,
     noAnimate: js.UndefOr[scala.Boolean] = js.undefined,
-    onScrollChange: js.Function1[/* value */ js.Any, scala.Unit] = null,
-    onValueChange: js.Function1[/* value */ js.Any, scala.Unit] = null,
+    onScrollChange: /* value */ js.Any => scala.Unit = null,
+    onValueChange: /* value */ js.Any => scala.Unit = null,
     prefixCls: java.lang.String = null,
     selectedValue: js.Any = null,
     style: js.Any = null
@@ -45,8 +45,8 @@ object IPickerProps {
     if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle)
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
     if (!js.isUndefined(noAnimate)) __obj.updateDynamic("noAnimate")(noAnimate)
-    if (onScrollChange != null) __obj.updateDynamic("onScrollChange")(onScrollChange)
-    if (onValueChange != null) __obj.updateDynamic("onValueChange")(onValueChange)
+    if (onScrollChange != null) __obj.updateDynamic("onScrollChange")(js.Any.fromFunction1(onScrollChange))
+    if (onValueChange != null) __obj.updateDynamic("onValueChange")(js.Any.fromFunction1(onValueChange))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (selectedValue != null) __obj.updateDynamic("selectedValue")(selectedValue)
     if (style != null) __obj.updateDynamic("style")(style)

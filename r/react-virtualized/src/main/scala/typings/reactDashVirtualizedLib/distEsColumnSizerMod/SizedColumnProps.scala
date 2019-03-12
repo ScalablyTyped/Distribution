@@ -17,10 +17,10 @@ object SizedColumnProps {
   def apply(
     adjustedWidth: scala.Double,
     columnWidth: scala.Double,
-    getColumnWidth: js.Function0[scala.Double],
+    getColumnWidth: () => scala.Double,
     registerChild: js.Any
   ): SizedColumnProps = {
-    val __obj = js.Dynamic.literal(adjustedWidth = adjustedWidth, columnWidth = columnWidth, getColumnWidth = getColumnWidth, registerChild = registerChild)
+    val __obj = js.Dynamic.literal(adjustedWidth = adjustedWidth, columnWidth = columnWidth, getColumnWidth = js.Any.fromFunction0(getColumnWidth), registerChild = registerChild)
   
     __obj.asInstanceOf[SizedColumnProps]
   }

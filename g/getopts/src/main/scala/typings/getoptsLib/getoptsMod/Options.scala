@@ -20,13 +20,13 @@ object Options {
     alias: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]] = null,
     boolean: js.Array[java.lang.String] = null,
     default: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    unknown: js.Function1[/* optionName */ java.lang.String, scala.Boolean] = null
+    unknown: /* optionName */ java.lang.String => scala.Boolean = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (boolean != null) __obj.updateDynamic("boolean")(boolean)
     if (default != null) __obj.updateDynamic("default")(default)
-    if (unknown != null) __obj.updateDynamic("unknown")(unknown)
+    if (unknown != null) __obj.updateDynamic("unknown")(js.Any.fromFunction1(unknown))
     __obj.asInstanceOf[Options]
   }
 }

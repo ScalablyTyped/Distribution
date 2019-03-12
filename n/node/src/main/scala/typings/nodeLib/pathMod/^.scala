@@ -43,7 +43,7 @@ object ^ extends js.Object {
     *
     * @param pathString path to evaluate.
     */
-  def format(pathObject: nodeLib.pathMod.FormatInputPathObject): java.lang.String = js.native
+  def format(pathObject: FormatInputPathObject): java.lang.String = js.native
   /**
     * Determines whether {path} is an absolute path. An absolute path will always resolve to the same location, regardless of the working directory.
     *
@@ -69,7 +69,7 @@ object ^ extends js.Object {
     *
     * @param pathString path to evaluate.
     */
-  def parse(pathString: java.lang.String): nodeLib.pathMod.ParsedPath = js.native
+  def parse(pathString: java.lang.String): ParsedPath = js.native
   /**
     * Solve the relative path from {from} to {to}.
     * At times we have two absolute paths, and we need to derive the relative path from one to the other. This is actually the reverse transform of path.resolve.

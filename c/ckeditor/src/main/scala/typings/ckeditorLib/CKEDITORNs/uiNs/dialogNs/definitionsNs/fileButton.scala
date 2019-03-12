@@ -12,10 +12,10 @@ trait fileButton extends js.Object {
 
 object fileButton {
   @scala.inline
-  def apply(`for`: java.lang.String, validate: js.Function0[scala.Boolean] = null): fileButton = {
+  def apply(`for`: java.lang.String, validate: () => scala.Boolean = null): fileButton = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("for")(`for`)
-    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction0(validate))
     __obj.asInstanceOf[fileButton]
   }
 }

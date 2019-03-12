@@ -41,15 +41,15 @@ trait TermFilter extends Filter {
 object TermFilter {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cache: js.Function1[scala.Boolean, TermFilter],
-    cacheKey: js.Function1[java.lang.String, TermFilter],
-    field: js.Function1[java.lang.String, TermFilter],
-    name: js.Function1[java.lang.String, TermFilter],
-    term: js.Function0[TermFilter],
-    toJSON: js.Function0[TermFilter]
+    _type: () => java.lang.String,
+    cache: scala.Boolean => TermFilter,
+    cacheKey: java.lang.String => TermFilter,
+    field: java.lang.String => TermFilter,
+    name: java.lang.String => TermFilter,
+    term: () => TermFilter,
+    toJSON: () => TermFilter
   ): TermFilter = {
-    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, field = field, name = name, term = term, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), field = js.Any.fromFunction1(field), name = js.Any.fromFunction1(name), term = js.Any.fromFunction0(term), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[TermFilter]
   }

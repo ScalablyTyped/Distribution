@@ -19,12 +19,12 @@ trait XMultiPropertyStates
     * @throws UnknownPropertyException if one of the propertes does not exist.
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
-  def getPropertyDefaults(aPropertyNames: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): activexDashInteropLib.SafeArray[_]
+  def getPropertyDefaults(aPropertyNames: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): stdLib.SafeArray[_]
   /**
     * @param aPropertyName specifies the names of the properties. All names must be unique. This sequence must be alphabetically sorted.
     * @returns a sequence of the states of the properties which are specified by their names.  The order of the states is correlating to the order of the given
     */
-  def getPropertyStates(aPropertyName: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): activexDashInteropLib.SafeArray[PropertyState]
+  def getPropertyStates(aPropertyName: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): stdLib.SafeArray[PropertyState]
   /**
     * sets all properties to their default values.
     *
@@ -46,21 +46,15 @@ trait XMultiPropertyStates
 object XMultiPropertyStates {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getPropertyDefaults: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashInteropLib.SafeArray[_]
-    ],
-    getPropertyStates: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashInteropLib.SafeArray[PropertyState]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setAllPropertiesToDefault: js.Function0[scala.Unit],
-    setPropertiesToDefault: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit]
+    acquire: () => scala.Unit,
+    getPropertyDefaults: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => stdLib.SafeArray[_],
+    getPropertyStates: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => stdLib.SafeArray[PropertyState],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setAllPropertiesToDefault: () => scala.Unit,
+    setPropertiesToDefault: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => scala.Unit
   ): XMultiPropertyStates = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getPropertyDefaults = getPropertyDefaults, getPropertyStates = getPropertyStates, queryInterface = queryInterface, release = release, setAllPropertiesToDefault = setAllPropertiesToDefault, setPropertiesToDefault = setPropertiesToDefault)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getPropertyDefaults = js.Any.fromFunction1(getPropertyDefaults), getPropertyStates = js.Any.fromFunction1(getPropertyStates), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setAllPropertiesToDefault = js.Any.fromFunction0(setAllPropertiesToDefault), setPropertiesToDefault = js.Any.fromFunction1(setPropertiesToDefault))
   
     __obj.asInstanceOf[XMultiPropertyStates]
   }

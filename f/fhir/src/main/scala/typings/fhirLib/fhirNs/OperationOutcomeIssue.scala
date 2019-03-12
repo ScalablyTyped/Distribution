@@ -32,7 +32,7 @@ trait OperationOutcomeIssue extends BackboneElement {
   /**
     * Error or warning code
     */
-  var code: code
+  var code: fhirLib.fhirNs.code
   /**
     * Additional details about the error
     */

@@ -60,7 +60,7 @@ class Service protected () extends js.Object {
   def getProjectId(): js.Promise[java.lang.String] = js.native
   def getProjectId(
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* projectId */ js.UndefOr[java.lang.String], 
       scala.Unit
     ]

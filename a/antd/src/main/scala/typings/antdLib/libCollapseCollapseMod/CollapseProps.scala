@@ -30,8 +30,8 @@ object CollapseProps {
     className: java.lang.String = null,
     defaultActiveKey: js.Array[java.lang.String] = null,
     destroyInactivePanel: js.UndefOr[scala.Boolean] = js.undefined,
-    expandIcon: js.Function1[/* panelProps */ js.Any, reactLib.reactMod.ReactNs.ReactNode] = null,
-    onChange: js.Function1[/* key */ java.lang.String | js.Array[java.lang.String], scala.Unit] = null,
+    expandIcon: /* panelProps */ js.Any => reactLib.reactMod.ReactNs.ReactNode = null,
+    onChange: /* key */ java.lang.String | js.Array[java.lang.String] => scala.Unit = null,
     prefixCls: java.lang.String = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): CollapseProps = {
@@ -42,8 +42,8 @@ object CollapseProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (defaultActiveKey != null) __obj.updateDynamic("defaultActiveKey")(defaultActiveKey)
     if (!js.isUndefined(destroyInactivePanel)) __obj.updateDynamic("destroyInactivePanel")(destroyInactivePanel)
-    if (expandIcon != null) __obj.updateDynamic("expandIcon")(expandIcon)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (expandIcon != null) __obj.updateDynamic("expandIcon")(js.Any.fromFunction1(expandIcon))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[CollapseProps]

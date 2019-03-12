@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("memdown", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val MemDown: memdownLib.memdownMod.MemDownConstructor = js.native
-  val default: memdownLib.memdownMod.MemDownConstructor = js.native
+  val MemDown: MemDownConstructor = js.native
+  val default: MemDownConstructor = js.native
 }
 

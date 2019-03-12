@@ -65,31 +65,31 @@ object XWindow {
   @scala.inline
   def apply(
     PosSize: Rectangle,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    addFocusListener: js.Function1[XFocusListener, scala.Unit],
-    addKeyListener: js.Function1[XKeyListener, scala.Unit],
-    addMouseListener: js.Function1[XMouseListener, scala.Unit],
-    addMouseMotionListener: js.Function1[XMouseMotionListener, scala.Unit],
-    addPaintListener: js.Function1[XPaintListener, scala.Unit],
-    addWindowListener: js.Function1[XWindowListener, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    getPosSize: js.Function0[Rectangle],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    removeFocusListener: js.Function1[XFocusListener, scala.Unit],
-    removeKeyListener: js.Function1[XKeyListener, scala.Unit],
-    removeMouseListener: js.Function1[XMouseListener, scala.Unit],
-    removeMouseMotionListener: js.Function1[XMouseMotionListener, scala.Unit],
-    removePaintListener: js.Function1[XPaintListener, scala.Unit],
-    removeWindowListener: js.Function1[XWindowListener, scala.Unit],
-    setEnable: js.Function1[scala.Boolean, scala.Unit],
-    setFocus: js.Function0[scala.Unit],
-    setPosSize: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
-    setVisible: js.Function1[scala.Boolean, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    addFocusListener: XFocusListener => scala.Unit,
+    addKeyListener: XKeyListener => scala.Unit,
+    addMouseListener: XMouseListener => scala.Unit,
+    addMouseMotionListener: XMouseMotionListener => scala.Unit,
+    addPaintListener: XPaintListener => scala.Unit,
+    addWindowListener: XWindowListener => scala.Unit,
+    dispose: () => scala.Unit,
+    getPosSize: () => Rectangle,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    removeFocusListener: XFocusListener => scala.Unit,
+    removeKeyListener: XKeyListener => scala.Unit,
+    removeMouseListener: XMouseListener => scala.Unit,
+    removeMouseMotionListener: XMouseMotionListener => scala.Unit,
+    removePaintListener: XPaintListener => scala.Unit,
+    removeWindowListener: XWindowListener => scala.Unit,
+    setEnable: scala.Boolean => scala.Unit,
+    setFocus: () => scala.Unit,
+    setPosSize: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    setVisible: scala.Boolean => scala.Unit
   ): XWindow = {
-    val __obj = js.Dynamic.literal(PosSize = PosSize, acquire = acquire, addEventListener = addEventListener, addFocusListener = addFocusListener, addKeyListener = addKeyListener, addMouseListener = addMouseListener, addMouseMotionListener = addMouseMotionListener, addPaintListener = addPaintListener, addWindowListener = addWindowListener, dispose = dispose, getPosSize = getPosSize, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeFocusListener = removeFocusListener, removeKeyListener = removeKeyListener, removeMouseListener = removeMouseListener, removeMouseMotionListener = removeMouseMotionListener, removePaintListener = removePaintListener, removeWindowListener = removeWindowListener, setEnable = setEnable, setFocus = setFocus, setPosSize = setPosSize, setVisible = setVisible)
+    val __obj = js.Dynamic.literal(PosSize = PosSize, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addFocusListener = js.Any.fromFunction1(addFocusListener), addKeyListener = js.Any.fromFunction1(addKeyListener), addMouseListener = js.Any.fromFunction1(addMouseListener), addMouseMotionListener = js.Any.fromFunction1(addMouseMotionListener), addPaintListener = js.Any.fromFunction1(addPaintListener), addWindowListener = js.Any.fromFunction1(addWindowListener), dispose = js.Any.fromFunction0(dispose), getPosSize = js.Any.fromFunction0(getPosSize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removeFocusListener = js.Any.fromFunction1(removeFocusListener), removeKeyListener = js.Any.fromFunction1(removeKeyListener), removeMouseListener = js.Any.fromFunction1(removeMouseListener), removeMouseMotionListener = js.Any.fromFunction1(removeMouseMotionListener), removePaintListener = js.Any.fromFunction1(removePaintListener), removeWindowListener = js.Any.fromFunction1(removeWindowListener), setEnable = js.Any.fromFunction1(setEnable), setFocus = js.Any.fromFunction0(setFocus), setPosSize = js.Any.fromFunction5(setPosSize), setVisible = js.Any.fromFunction1(setVisible))
   
     __obj.asInstanceOf[XWindow]
   }

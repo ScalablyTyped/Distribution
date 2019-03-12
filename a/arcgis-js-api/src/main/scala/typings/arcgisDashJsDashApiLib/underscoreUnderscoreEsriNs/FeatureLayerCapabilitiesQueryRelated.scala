@@ -31,13 +31,13 @@ object FeatureLayerCapabilitiesQueryRelated {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     supportsCount: scala.Boolean,
     supportsOrderBy: scala.Boolean,
     supportsPagination: scala.Boolean
   ): FeatureLayerCapabilitiesQueryRelated = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, supportsCount = supportsCount, supportsOrderBy = supportsOrderBy, supportsPagination = supportsPagination)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsCount = supportsCount, supportsOrderBy = supportsOrderBy, supportsPagination = supportsPagination)
   
     __obj.asInstanceOf[FeatureLayerCapabilitiesQueryRelated]
   }

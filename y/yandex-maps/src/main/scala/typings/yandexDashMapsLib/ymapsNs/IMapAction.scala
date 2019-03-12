@@ -13,11 +13,11 @@ trait IMapAction extends IEventEmitter {
 object IMapAction {
   @scala.inline
   def apply(
-    begin: js.Function1[yandexDashMapsLib.ymapsNs.mapNs.actionNs.Manager, scala.Unit],
-    end: js.Function0[scala.Unit],
+    begin: yandexDashMapsLib.ymapsNs.mapNs.actionNs.Manager => scala.Unit,
+    end: () => scala.Unit,
     events: IEventManager
   ): IMapAction = {
-    val __obj = js.Dynamic.literal(begin = begin, end = end, events = events)
+    val __obj = js.Dynamic.literal(begin = js.Any.fromFunction1(begin), end = js.Any.fromFunction0(end), events = events)
   
     __obj.asInstanceOf[IMapAction]
   }

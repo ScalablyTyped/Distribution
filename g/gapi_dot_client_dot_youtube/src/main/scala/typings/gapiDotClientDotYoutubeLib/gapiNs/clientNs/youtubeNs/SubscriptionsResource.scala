@@ -17,20 +17,11 @@ trait SubscriptionsResource extends js.Object {
 object SubscriptionsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
-    ],
-    list: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltChannelIdFieldsForChannelId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SubscriptionListResponse]
-    ]
+    delete: gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    insert: gapiDotClientDotYoutubeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Subscription],
+    list: gapiDotClientDotYoutubeLib.Anon_AltChannelIdFieldsForChannelId => gapiDotClientLib.gapiNs.clientNs.Request[SubscriptionListResponse]
   ): SubscriptionsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[SubscriptionsResource]
   }

@@ -97,7 +97,7 @@ object InterpolationOptions {
   @scala.inline
   def apply(
     defaultVariables: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    escape: js.Function1[/* str */ java.lang.String, java.lang.String] = null,
+    escape: /* str */ java.lang.String => java.lang.String = null,
     escapeValue: js.UndefOr[scala.Boolean] = js.undefined,
     format: FormatFunction = null,
     formatSeparator: java.lang.String = null,
@@ -116,7 +116,7 @@ object InterpolationOptions {
   ): InterpolationOptions = {
     val __obj = js.Dynamic.literal()
     if (defaultVariables != null) __obj.updateDynamic("defaultVariables")(defaultVariables)
-    if (escape != null) __obj.updateDynamic("escape")(escape)
+    if (escape != null) __obj.updateDynamic("escape")(js.Any.fromFunction1(escape))
     if (!js.isUndefined(escapeValue)) __obj.updateDynamic("escapeValue")(escapeValue)
     if (format != null) __obj.updateDynamic("format")(format)
     if (formatSeparator != null) __obj.updateDynamic("formatSeparator")(formatSeparator)

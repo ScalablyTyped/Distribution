@@ -86,7 +86,7 @@ object IGridOptions {
     enableRowSelection: js.UndefOr[scala.Boolean] = js.undefined,
     enableSelectAll: js.UndefOr[scala.Boolean] = js.undefined,
     enableSelectionBatchEvent: js.UndefOr[scala.Boolean] = js.undefined,
-    isRowSelectable: js.Function1[/* row */ IGridRow, scala.Boolean] = null,
+    isRowSelectable: /* row */ IGridRow => scala.Boolean = null,
     modifierKeysToMultiSelect: js.UndefOr[scala.Boolean] = js.undefined,
     multiSelect: js.UndefOr[scala.Boolean] = js.undefined,
     noUnselect: js.UndefOr[scala.Boolean] = js.undefined,
@@ -99,7 +99,7 @@ object IGridOptions {
     if (!js.isUndefined(enableRowSelection)) __obj.updateDynamic("enableRowSelection")(enableRowSelection)
     if (!js.isUndefined(enableSelectAll)) __obj.updateDynamic("enableSelectAll")(enableSelectAll)
     if (!js.isUndefined(enableSelectionBatchEvent)) __obj.updateDynamic("enableSelectionBatchEvent")(enableSelectionBatchEvent)
-    if (isRowSelectable != null) __obj.updateDynamic("isRowSelectable")(isRowSelectable)
+    if (isRowSelectable != null) __obj.updateDynamic("isRowSelectable")(js.Any.fromFunction1(isRowSelectable))
     if (!js.isUndefined(modifierKeysToMultiSelect)) __obj.updateDynamic("modifierKeysToMultiSelect")(modifierKeysToMultiSelect)
     if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect)
     if (!js.isUndefined(noUnselect)) __obj.updateDynamic("noUnselect")(noUnselect)

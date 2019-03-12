@@ -157,9 +157,9 @@ object ILabelable {
     beforeLabelTpl: js.Any = null,
     beforeSubTpl: js.Any = null,
     bodyEl: extjsLib.ExtNs.IElement = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     clearCls: java.lang.String = null,
     config: js.Any = null,
     errorEl: extjsLib.ExtNs.IElement = null,
@@ -168,21 +168,21 @@ object ILabelable {
     fieldBodyCls: java.lang.String = null,
     fieldLabel: java.lang.String = null,
     formItemCls: java.lang.String = null,
-    getActiveError: js.Function0[java.lang.String] = null,
-    getActiveErrors: js.Function0[extjsLib.ExtNs.Array] = null,
-    getFieldLabel: js.Function0[java.lang.String] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getInputId: js.Function0[java.lang.String] = null,
-    getLabelWidth: js.Function0[scala.Double] = null,
-    getLabelableRenderData: js.Function0[_] = null,
-    getSubTplMarkup: js.Function0[java.lang.String] = null,
-    hasActiveError: js.Function0[scala.Boolean] = null,
-    hasVisibleLabel: js.Function0[scala.Boolean] = null,
+    getActiveError: () => java.lang.String = null,
+    getActiveErrors: () => extjsLib.ExtNs.Array = null,
+    getFieldLabel: () => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInputId: () => java.lang.String = null,
+    getLabelWidth: () => scala.Double = null,
+    getLabelableRenderData: () => _ = null,
+    getSubTplMarkup: () => java.lang.String = null,
+    hasActiveError: () => scala.Boolean = null,
+    hasVisibleLabel: () => scala.Boolean = null,
     hideEmptyLabel: js.UndefOr[scala.Boolean] = js.undefined,
     hideLabel: js.UndefOr[scala.Boolean] = js.undefined,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], ILabelable] = null,
-    initLabelable: js.Function0[scala.Unit] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => ILabelable = null,
+    initLabelable: () => scala.Unit = null,
     invalidCls: java.lang.String = null,
     isFieldLabelable: js.UndefOr[scala.Boolean] = js.undefined,
     labelAlign: java.lang.String = null,
@@ -200,14 +200,14 @@ object ILabelable {
     preventMark: js.UndefOr[scala.Boolean] = js.undefined,
     requires: extjsLib.ExtNs.Array = null,
     self: extjsLib.ExtNs.IClass = null,
-    setActiveError: js.Function1[/* msg */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setActiveErrors: js.Function1[/* errors */ js.UndefOr[extjsLib.ExtNs.Array], scala.Unit] = null,
-    setFieldDefaults: js.Function1[/* defaults */ js.UndefOr[js.Any], scala.Unit] = null,
-    setFieldLabel: js.Function1[/* label */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setActiveError: /* msg */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setActiveErrors: /* errors */ js.UndefOr[extjsLib.ExtNs.Array] => scala.Unit = null,
+    setFieldDefaults: /* defaults */ js.UndefOr[js.Any] => scala.Unit = null,
+    setFieldLabel: /* label */ js.UndefOr[java.lang.String] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
-    trimLabelSeparator: js.Function0[java.lang.String] = null,
-    unsetActiveError: js.Function0[scala.Unit] = null,
+    trimLabelSeparator: () => java.lang.String = null,
+    unsetActiveError: () => scala.Unit = null,
     uses: extjsLib.ExtNs.Array = null
   ): ILabelable = {
     val __obj = js.Dynamic.literal()
@@ -226,9 +226,9 @@ object ILabelable {
     if (beforeLabelTpl != null) __obj.updateDynamic("beforeLabelTpl")(beforeLabelTpl)
     if (beforeSubTpl != null) __obj.updateDynamic("beforeSubTpl")(beforeSubTpl)
     if (bodyEl != null) __obj.updateDynamic("bodyEl")(bodyEl)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (clearCls != null) __obj.updateDynamic("clearCls")(clearCls)
     if (config != null) __obj.updateDynamic("config")(config)
     if (errorEl != null) __obj.updateDynamic("errorEl")(errorEl)
@@ -237,21 +237,21 @@ object ILabelable {
     if (fieldBodyCls != null) __obj.updateDynamic("fieldBodyCls")(fieldBodyCls)
     if (fieldLabel != null) __obj.updateDynamic("fieldLabel")(fieldLabel)
     if (formItemCls != null) __obj.updateDynamic("formItemCls")(formItemCls)
-    if (getActiveError != null) __obj.updateDynamic("getActiveError")(getActiveError)
-    if (getActiveErrors != null) __obj.updateDynamic("getActiveErrors")(getActiveErrors)
-    if (getFieldLabel != null) __obj.updateDynamic("getFieldLabel")(getFieldLabel)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getInputId != null) __obj.updateDynamic("getInputId")(getInputId)
-    if (getLabelWidth != null) __obj.updateDynamic("getLabelWidth")(getLabelWidth)
-    if (getLabelableRenderData != null) __obj.updateDynamic("getLabelableRenderData")(getLabelableRenderData)
-    if (getSubTplMarkup != null) __obj.updateDynamic("getSubTplMarkup")(getSubTplMarkup)
-    if (hasActiveError != null) __obj.updateDynamic("hasActiveError")(hasActiveError)
-    if (hasVisibleLabel != null) __obj.updateDynamic("hasVisibleLabel")(hasVisibleLabel)
+    if (getActiveError != null) __obj.updateDynamic("getActiveError")(js.Any.fromFunction0(getActiveError))
+    if (getActiveErrors != null) __obj.updateDynamic("getActiveErrors")(js.Any.fromFunction0(getActiveErrors))
+    if (getFieldLabel != null) __obj.updateDynamic("getFieldLabel")(js.Any.fromFunction0(getFieldLabel))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getInputId != null) __obj.updateDynamic("getInputId")(js.Any.fromFunction0(getInputId))
+    if (getLabelWidth != null) __obj.updateDynamic("getLabelWidth")(js.Any.fromFunction0(getLabelWidth))
+    if (getLabelableRenderData != null) __obj.updateDynamic("getLabelableRenderData")(js.Any.fromFunction0(getLabelableRenderData))
+    if (getSubTplMarkup != null) __obj.updateDynamic("getSubTplMarkup")(js.Any.fromFunction0(getSubTplMarkup))
+    if (hasActiveError != null) __obj.updateDynamic("hasActiveError")(js.Any.fromFunction0(hasActiveError))
+    if (hasVisibleLabel != null) __obj.updateDynamic("hasVisibleLabel")(js.Any.fromFunction0(hasVisibleLabel))
     if (!js.isUndefined(hideEmptyLabel)) __obj.updateDynamic("hideEmptyLabel")(hideEmptyLabel)
     if (!js.isUndefined(hideLabel)) __obj.updateDynamic("hideLabel")(hideLabel)
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
-    if (initLabelable != null) __obj.updateDynamic("initLabelable")(initLabelable)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (initLabelable != null) __obj.updateDynamic("initLabelable")(js.Any.fromFunction0(initLabelable))
     if (invalidCls != null) __obj.updateDynamic("invalidCls")(invalidCls)
     if (!js.isUndefined(isFieldLabelable)) __obj.updateDynamic("isFieldLabelable")(isFieldLabelable)
     if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign)
@@ -269,14 +269,14 @@ object ILabelable {
     if (!js.isUndefined(preventMark)) __obj.updateDynamic("preventMark")(preventMark)
     if (requires != null) __obj.updateDynamic("requires")(requires)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setActiveError != null) __obj.updateDynamic("setActiveError")(setActiveError)
-    if (setActiveErrors != null) __obj.updateDynamic("setActiveErrors")(setActiveErrors)
-    if (setFieldDefaults != null) __obj.updateDynamic("setFieldDefaults")(setFieldDefaults)
-    if (setFieldLabel != null) __obj.updateDynamic("setFieldLabel")(setFieldLabel)
+    if (setActiveError != null) __obj.updateDynamic("setActiveError")(js.Any.fromFunction1(setActiveError))
+    if (setActiveErrors != null) __obj.updateDynamic("setActiveErrors")(js.Any.fromFunction1(setActiveErrors))
+    if (setFieldDefaults != null) __obj.updateDynamic("setFieldDefaults")(js.Any.fromFunction1(setFieldDefaults))
+    if (setFieldLabel != null) __obj.updateDynamic("setFieldLabel")(js.Any.fromFunction1(setFieldLabel))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
-    if (trimLabelSeparator != null) __obj.updateDynamic("trimLabelSeparator")(trimLabelSeparator)
-    if (unsetActiveError != null) __obj.updateDynamic("unsetActiveError")(unsetActiveError)
+    if (trimLabelSeparator != null) __obj.updateDynamic("trimLabelSeparator")(js.Any.fromFunction0(trimLabelSeparator))
+    if (unsetActiveError != null) __obj.updateDynamic("unsetActiveError")(js.Any.fromFunction0(unsetActiveError))
     if (uses != null) __obj.updateDynamic("uses")(uses)
     __obj.asInstanceOf[ILabelable]
   }

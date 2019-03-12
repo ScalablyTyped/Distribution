@@ -73,7 +73,7 @@ object XAxisOptions {
     tickLength: scala.Int | scala.Double = null,
     tickPixelInterval: scala.Int | scala.Double = null,
     tickPosition: java.lang.String = null,
-    tickPositioner: js.Function2[/* min */ scala.Double, /* max */ scala.Double, scala.Unit] = null,
+    tickPositioner: (/* min */ scala.Double, /* max */ scala.Double) => scala.Unit = null,
     tickPositions: js.Array[scala.Double] = null,
     tickWidth: scala.Int | scala.Double = null,
     tickmarkPlacement: java.lang.String = null,
@@ -143,7 +143,7 @@ object XAxisOptions {
     if (tickLength != null) __obj.updateDynamic("tickLength")(tickLength.asInstanceOf[js.Any])
     if (tickPixelInterval != null) __obj.updateDynamic("tickPixelInterval")(tickPixelInterval.asInstanceOf[js.Any])
     if (tickPosition != null) __obj.updateDynamic("tickPosition")(tickPosition)
-    if (tickPositioner != null) __obj.updateDynamic("tickPositioner")(tickPositioner)
+    if (tickPositioner != null) __obj.updateDynamic("tickPositioner")(js.Any.fromFunction2(tickPositioner))
     if (tickPositions != null) __obj.updateDynamic("tickPositions")(tickPositions)
     if (tickWidth != null) __obj.updateDynamic("tickWidth")(tickWidth.asInstanceOf[js.Any])
     if (tickmarkPlacement != null) __obj.updateDynamic("tickmarkPlacement")(tickmarkPlacement)

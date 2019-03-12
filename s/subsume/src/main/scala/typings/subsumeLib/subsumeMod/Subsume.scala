@@ -17,14 +17,14 @@ trait Subsume extends js.Object {
 object Subsume {
   @scala.inline
   def apply(
-    compose: js.Function1[java.lang.String, java.lang.String],
+    compose: java.lang.String => java.lang.String,
     id: java.lang.String,
-    parse: js.Function1[java.lang.String, subsumeLib.subsumeMod.SubsumeNs.ParseResult],
+    parse: java.lang.String => subsumeLib.subsumeMod.SubsumeNs.ParseResult,
     postfix: java.lang.String,
     prefix: java.lang.String,
     regex: stdLib.RegExp
   ): Subsume = {
-    val __obj = js.Dynamic.literal(compose = compose, id = id, parse = parse, postfix = postfix, prefix = prefix, regex = regex)
+    val __obj = js.Dynamic.literal(compose = js.Any.fromFunction1(compose), id = id, parse = js.Any.fromFunction1(parse), postfix = postfix, prefix = prefix, regex = regex)
   
     __obj.asInstanceOf[Subsume]
   }

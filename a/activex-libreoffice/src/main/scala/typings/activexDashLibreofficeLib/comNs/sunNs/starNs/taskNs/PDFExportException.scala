@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 trait PDFExportException
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Exception {
   /** contains a number of errors that occurred during PDFExport */
-  var ErrorCodes: activexDashInteropLib.SafeArray[scala.Double]
+  var ErrorCodes: stdLib.SafeArray[scala.Double]
 }
 
 object PDFExportException {
   @scala.inline
   def apply(
     Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
-    ErrorCodes: activexDashInteropLib.SafeArray[scala.Double],
+    ErrorCodes: stdLib.SafeArray[scala.Double],
     Message: java.lang.String
   ): PDFExportException = {
     val __obj = js.Dynamic.literal(Context = Context, ErrorCodes = ErrorCodes, Message = Message)

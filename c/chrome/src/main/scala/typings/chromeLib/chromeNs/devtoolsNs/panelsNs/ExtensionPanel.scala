@@ -24,12 +24,12 @@ trait ExtensionPanel extends js.Object {
 object ExtensionPanel {
   @scala.inline
   def apply(
-    createStatusBarButton: js.Function3[java.lang.String, java.lang.String, scala.Boolean, Button],
+    createStatusBarButton: (java.lang.String, java.lang.String, scala.Boolean) => Button,
     onHidden: PanelHiddenEvent,
     onSearch: PanelSearchEvent,
     onShown: PanelShownEvent
   ): ExtensionPanel = {
-    val __obj = js.Dynamic.literal(createStatusBarButton = createStatusBarButton, onHidden = onHidden, onSearch = onSearch, onShown = onShown)
+    val __obj = js.Dynamic.literal(createStatusBarButton = js.Any.fromFunction3(createStatusBarButton), onHidden = onHidden, onSearch = onSearch, onShown = onShown)
   
     __obj.asInstanceOf[ExtensionPanel]
   }

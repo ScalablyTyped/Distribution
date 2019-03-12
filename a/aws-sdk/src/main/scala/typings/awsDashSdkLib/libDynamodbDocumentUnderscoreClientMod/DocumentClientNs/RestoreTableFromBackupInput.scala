@@ -9,7 +9,7 @@ trait RestoreTableFromBackupInput extends js.Object {
   /**
     * The ARN associated with the backup.
     */
-  var BackupArn: BackupArn
+  var BackupArn: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.BackupArn
   /**
     * The name of the new table to which the backup must be restored.
     */

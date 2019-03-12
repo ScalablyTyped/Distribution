@@ -12,8 +12,8 @@ trait ICoreApplicationExit extends js.Object {
 
 object ICoreApplicationExit {
   @scala.inline
-  def apply(exit: js.Function0[scala.Unit], onexiting: js.Any): ICoreApplicationExit = {
-    val __obj = js.Dynamic.literal(exit = exit, onexiting = onexiting)
+  def apply(exit: () => scala.Unit, onexiting: js.Any): ICoreApplicationExit = {
+    val __obj = js.Dynamic.literal(exit = js.Any.fromFunction0(exit), onexiting = onexiting)
   
     __obj.asInstanceOf[ICoreApplicationExit]
   }

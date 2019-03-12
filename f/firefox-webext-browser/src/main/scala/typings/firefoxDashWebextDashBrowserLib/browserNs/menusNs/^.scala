@@ -23,7 +23,7 @@ object ^ extends js.Object {
     */
   val onClicked: firefoxDashWebextDashBrowserLib.WebExtEvent[
     js.Function2[
-      /* info */ firefoxDashWebextDashBrowserLib.browserNs.menusNs.OnClickData, 
+      /* info */ OnClickData, 
       /* tab */ js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab], 
       scala.Unit
     ]

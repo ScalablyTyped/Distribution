@@ -23,22 +23,12 @@ trait ImagePickerIOSStatic extends js.Object {
 object ImagePickerIOSStatic {
   @scala.inline
   def apply(
-    canRecordVideos: js.Function1[js.Function1[/* value */ scala.Boolean, scala.Unit], scala.Unit],
-    canUseCamera: js.Function1[js.Function1[/* value */ scala.Boolean, scala.Unit], scala.Unit],
-    openCameraDialog: js.Function3[
-      OpenCameraDialogOptions, 
-      js.Function1[/* args */ ImagePickerResult, scala.Unit], 
-      js.Function1[/* args */ js.Array[_], scala.Unit], 
-      scala.Unit
-    ],
-    openSelectDialog: js.Function3[
-      OpenSelectDialogOptions, 
-      js.Function1[/* args */ ImagePickerResult, scala.Unit], 
-      js.Function1[/* args */ js.Array[_], scala.Unit], 
-      scala.Unit
-    ]
+    canRecordVideos: js.Function1[/* value */ scala.Boolean, scala.Unit] => scala.Unit,
+    canUseCamera: js.Function1[/* value */ scala.Boolean, scala.Unit] => scala.Unit,
+    openCameraDialog: (OpenCameraDialogOptions, js.Function1[/* args */ ImagePickerResult, scala.Unit], js.Function1[/* args */ js.Array[_], scala.Unit]) => scala.Unit,
+    openSelectDialog: (OpenSelectDialogOptions, js.Function1[/* args */ ImagePickerResult, scala.Unit], js.Function1[/* args */ js.Array[_], scala.Unit]) => scala.Unit
   ): ImagePickerIOSStatic = {
-    val __obj = js.Dynamic.literal(canRecordVideos = canRecordVideos, canUseCamera = canUseCamera, openCameraDialog = openCameraDialog, openSelectDialog = openSelectDialog)
+    val __obj = js.Dynamic.literal(canRecordVideos = js.Any.fromFunction1(canRecordVideos), canUseCamera = js.Any.fromFunction1(canUseCamera), openCameraDialog = js.Any.fromFunction3(openCameraDialog), openSelectDialog = js.Any.fromFunction3(openSelectDialog))
   
     __obj.asInstanceOf[ImagePickerIOSStatic]
   }

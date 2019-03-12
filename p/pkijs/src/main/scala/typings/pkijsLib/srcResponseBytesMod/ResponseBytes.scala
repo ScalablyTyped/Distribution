@@ -16,13 +16,13 @@ trait ResponseBytes extends js.Object {
 object ResponseBytes {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     response: asn1jsLib.asn1jsMod.OctetString,
     responseType: java.lang.String,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): ResponseBytes = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, response = response, responseType = responseType, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), response = response, responseType = responseType, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[ResponseBytes]
   }

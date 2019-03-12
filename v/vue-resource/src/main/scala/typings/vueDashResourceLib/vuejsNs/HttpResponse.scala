@@ -19,16 +19,16 @@ trait HttpResponse extends js.Object {
 object HttpResponse {
   @scala.inline
   def apply(
-    blob: js.Function0[stdLib.Blob],
+    blob: () => stdLib.Blob,
     data: js.Object,
     headers: js.Function,
-    json: js.Function0[js.Any],
+    json: () => js.Any,
     ok: scala.Boolean,
     status: scala.Double,
     statusText: java.lang.String,
-    text: js.Function0[java.lang.String]
+    text: () => java.lang.String
   ): HttpResponse = {
-    val __obj = js.Dynamic.literal(blob = blob, data = data, headers = headers, json = json, ok = ok, status = status, statusText = statusText, text = text)
+    val __obj = js.Dynamic.literal(blob = js.Any.fromFunction0(blob), data = data, headers = headers, json = js.Any.fromFunction0(json), ok = ok, status = status, statusText = statusText, text = js.Any.fromFunction0(text))
   
     __obj.asInstanceOf[HttpResponse]
   }

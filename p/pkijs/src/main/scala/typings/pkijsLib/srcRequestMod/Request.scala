@@ -16,13 +16,13 @@ trait Request extends js.Object {
 object Request {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     reqCert: pkijsLib.srcCertIDMod.default,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     singleRequestExtensions: js.Array[pkijsLib.srcExtensionMod.default] = null
   ): Request = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, reqCert = reqCert, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), reqCert = reqCert, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
     if (singleRequestExtensions != null) __obj.updateDynamic("singleRequestExtensions")(singleRequestExtensions)
     __obj.asInstanceOf[Request]
   }

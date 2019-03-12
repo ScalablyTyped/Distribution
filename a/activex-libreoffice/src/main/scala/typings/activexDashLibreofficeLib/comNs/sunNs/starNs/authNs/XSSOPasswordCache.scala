@@ -41,14 +41,14 @@ trait XSSOPasswordCache
 object XSSOPasswordCache {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addPassword: js.Function3[java.lang.String, java.lang.String, scala.Boolean, scala.Unit],
-    getPassword: js.Function2[java.lang.String, js.Array[scala.Boolean], java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removePassword: js.Function2[java.lang.String, scala.Boolean, scala.Unit]
+    acquire: () => scala.Unit,
+    addPassword: (java.lang.String, java.lang.String, scala.Boolean) => scala.Unit,
+    getPassword: (java.lang.String, js.Array[scala.Boolean]) => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removePassword: (java.lang.String, scala.Boolean) => scala.Unit
   ): XSSOPasswordCache = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addPassword = addPassword, getPassword = getPassword, queryInterface = queryInterface, release = release, removePassword = removePassword)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addPassword = js.Any.fromFunction3(addPassword), getPassword = js.Any.fromFunction2(getPassword), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePassword = js.Any.fromFunction2(removePassword))
   
     __obj.asInstanceOf[XSSOPasswordCache]
   }

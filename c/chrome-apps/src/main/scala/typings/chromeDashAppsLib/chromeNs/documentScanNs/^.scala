@@ -14,11 +14,8 @@ object ^ extends js.Object {
     * @param callback Called with the result and data from the scan.
     */
   def scan(
-    options: chromeDashAppsLib.chromeNs.documentScanNs.DocumentScanOptions,
-    callback: js.Function1[
-      /* result */ chromeDashAppsLib.chromeNs.documentScanNs.DocumentScanCallbackArg, 
-      scala.Unit
-    ]
+    options: DocumentScanOptions,
+    callback: js.Function1[/* result */ DocumentScanCallbackArg, scala.Unit]
   ): scala.Unit = js.native
 }
 

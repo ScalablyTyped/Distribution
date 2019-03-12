@@ -78,17 +78,17 @@ object XRowLocate {
   @scala.inline
   def apply(
     Bookmark: js.Any,
-    acquire: js.Function0[scala.Unit],
-    compareBookmarks: js.Function2[js.Any, js.Any, scala.Double],
-    getBookmark: js.Function0[js.Any],
-    hasOrderedBookmarks: js.Function0[scala.Boolean],
-    hashBookmark: js.Function1[js.Any, scala.Double],
-    moveRelativeToBookmark: js.Function2[js.Any, scala.Double, scala.Boolean],
-    moveToBookmark: js.Function1[js.Any, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    compareBookmarks: (js.Any, js.Any) => scala.Double,
+    getBookmark: () => js.Any,
+    hasOrderedBookmarks: () => scala.Boolean,
+    hashBookmark: js.Any => scala.Double,
+    moveRelativeToBookmark: (js.Any, scala.Double) => scala.Boolean,
+    moveToBookmark: js.Any => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XRowLocate = {
-    val __obj = js.Dynamic.literal(Bookmark = Bookmark, acquire = acquire, compareBookmarks = compareBookmarks, getBookmark = getBookmark, hasOrderedBookmarks = hasOrderedBookmarks, hashBookmark = hashBookmark, moveRelativeToBookmark = moveRelativeToBookmark, moveToBookmark = moveToBookmark, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Bookmark = Bookmark, acquire = js.Any.fromFunction0(acquire), compareBookmarks = js.Any.fromFunction2(compareBookmarks), getBookmark = js.Any.fromFunction0(getBookmark), hasOrderedBookmarks = js.Any.fromFunction0(hasOrderedBookmarks), hashBookmark = js.Any.fromFunction1(hashBookmark), moveRelativeToBookmark = js.Any.fromFunction2(moveRelativeToBookmark), moveToBookmark = js.Any.fromFunction1(moveToBookmark), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XRowLocate]
   }

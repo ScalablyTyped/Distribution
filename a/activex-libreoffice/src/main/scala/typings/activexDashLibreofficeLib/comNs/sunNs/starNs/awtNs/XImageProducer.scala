@@ -34,14 +34,14 @@ trait XImageProducer
 object XImageProducer {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addConsumer: js.Function1[XImageConsumer, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeConsumer: js.Function1[XImageConsumer, scala.Unit],
-    startProduction: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addConsumer: XImageConsumer => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeConsumer: XImageConsumer => scala.Unit,
+    startProduction: () => scala.Unit
   ): XImageProducer = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addConsumer = addConsumer, queryInterface = queryInterface, release = release, removeConsumer = removeConsumer, startProduction = startProduction)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addConsumer = js.Any.fromFunction1(addConsumer), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeConsumer = js.Any.fromFunction1(removeConsumer), startProduction = js.Any.fromFunction0(startProduction))
   
     __obj.asInstanceOf[XImageProducer]
   }

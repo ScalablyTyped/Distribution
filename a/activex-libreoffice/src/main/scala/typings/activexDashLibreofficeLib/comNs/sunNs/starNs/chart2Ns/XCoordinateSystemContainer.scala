@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 trait XCoordinateSystemContainer
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** retrieve all coordinate systems */
-  var CoordinateSystems: activexDashInteropLib.SafeArray[XCoordinateSystem]
+  var CoordinateSystems: stdLib.SafeArray[XCoordinateSystem]
   /**
     * add an coordinate system to the coordinate system container
     * @throws IllegalArgumentException If the given coordinate system is already contained in the container.
     */
   def addCoordinateSystem(aCoordSys: XCoordinateSystem): scala.Unit
   /** retrieve all coordinate systems */
-  def getCoordinateSystems(): activexDashInteropLib.SafeArray[XCoordinateSystem]
+  def getCoordinateSystems(): stdLib.SafeArray[XCoordinateSystem]
   /** removes one coordinate system from the coordinate system container. */
   def removeCoordinateSystem(aCoordSys: XCoordinateSystem): scala.Unit
   /** set all coordinate systems */
@@ -25,16 +25,16 @@ trait XCoordinateSystemContainer
 object XCoordinateSystemContainer {
   @scala.inline
   def apply(
-    CoordinateSystems: activexDashInteropLib.SafeArray[XCoordinateSystem],
-    acquire: js.Function0[scala.Unit],
-    addCoordinateSystem: js.Function1[XCoordinateSystem, scala.Unit],
-    getCoordinateSystems: js.Function0[activexDashInteropLib.SafeArray[XCoordinateSystem]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeCoordinateSystem: js.Function1[XCoordinateSystem, scala.Unit],
-    setCoordinateSystems: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XCoordinateSystem], scala.Unit]
+    CoordinateSystems: stdLib.SafeArray[XCoordinateSystem],
+    acquire: () => scala.Unit,
+    addCoordinateSystem: XCoordinateSystem => scala.Unit,
+    getCoordinateSystems: () => stdLib.SafeArray[XCoordinateSystem],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeCoordinateSystem: XCoordinateSystem => scala.Unit,
+    setCoordinateSystems: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XCoordinateSystem] => scala.Unit
   ): XCoordinateSystemContainer = {
-    val __obj = js.Dynamic.literal(CoordinateSystems = CoordinateSystems, acquire = acquire, addCoordinateSystem = addCoordinateSystem, getCoordinateSystems = getCoordinateSystems, queryInterface = queryInterface, release = release, removeCoordinateSystem = removeCoordinateSystem, setCoordinateSystems = setCoordinateSystems)
+    val __obj = js.Dynamic.literal(CoordinateSystems = CoordinateSystems, acquire = js.Any.fromFunction0(acquire), addCoordinateSystem = js.Any.fromFunction1(addCoordinateSystem), getCoordinateSystems = js.Any.fromFunction0(getCoordinateSystems), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeCoordinateSystem = js.Any.fromFunction1(removeCoordinateSystem), setCoordinateSystems = js.Any.fromFunction1(setCoordinateSystems))
   
     __obj.asInstanceOf[XCoordinateSystemContainer]
   }

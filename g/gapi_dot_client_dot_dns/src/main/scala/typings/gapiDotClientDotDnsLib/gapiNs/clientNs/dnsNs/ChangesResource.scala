@@ -17,17 +17,11 @@ trait ChangesResource extends js.Object {
 object ChangesResource {
   @scala.inline
   def apply(
-    create: js.Function1[gapiDotClientDotDnsLib.Anon_Alt, gapiDotClientLib.gapiNs.clientNs.Request[Change]],
-    get: js.Function1[
-      gapiDotClientDotDnsLib.Anon_AltChangeId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Change]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDnsLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ChangesListResponse]
-    ]
+    create: gapiDotClientDotDnsLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Change],
+    get: gapiDotClientDotDnsLib.Anon_AltChangeId => gapiDotClientLib.gapiNs.clientNs.Request[Change],
+    list: gapiDotClientDotDnsLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[ChangesListResponse]
   ): ChangesResource = {
-    val __obj = js.Dynamic.literal(create = create, get = get, list = list)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ChangesResource]
   }

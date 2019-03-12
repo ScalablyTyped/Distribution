@@ -36,11 +36,11 @@ object IJobInfo {
   @scala.inline
   def apply(
     job: IJob,
-    setPromise: js.Function1[winjsLib.WinJSNs.Promise[_], scala.Unit],
-    setWork: js.Function1[js.Function, scala.Unit],
+    setPromise: winjsLib.WinJSNs.Promise[_] => scala.Unit,
+    setWork: js.Function => scala.Unit,
     shouldYield: scala.Boolean
   ): IJobInfo = {
-    val __obj = js.Dynamic.literal(job = job, setPromise = setPromise, setWork = setWork, shouldYield = shouldYield)
+    val __obj = js.Dynamic.literal(job = job, setPromise = js.Any.fromFunction1(setPromise), setWork = js.Any.fromFunction1(setWork), shouldYield = shouldYield)
   
     __obj.asInstanceOf[IJobInfo]
   }

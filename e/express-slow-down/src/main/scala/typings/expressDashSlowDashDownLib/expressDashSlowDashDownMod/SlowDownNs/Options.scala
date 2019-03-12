@@ -76,22 +76,9 @@ object Options {
   def apply(
     delayAfter: scala.Int | scala.Double = null,
     delayMs: scala.Int | scala.Double = null,
-    keyGenerator: js.Function2[
-      /* req */ expressLib.expressMod.eNs.Request, 
-      /* res */ expressLib.expressMod.eNs.Response, 
-      java.lang.String
-    ] = null,
-    onLimitReached: js.Function3[
-      /* req */ RequestWithSlowDown, 
-      /* res */ expressLib.expressMod.eNs.Response, 
-      Options, 
-      scala.Unit
-    ] = null,
-    skip: js.Function2[
-      /* req */ expressLib.expressMod.eNs.Request, 
-      /* res */ expressLib.expressMod.eNs.Response, 
-      scala.Boolean
-    ] = null,
+    keyGenerator: (/* req */ expressLib.expressMod.eNs.Request, /* res */ expressLib.expressMod.eNs.Response) => java.lang.String = null,
+    onLimitReached: (/* req */ RequestWithSlowDown, /* res */ expressLib.expressMod.eNs.Response, Options) => scala.Unit = null,
+    skip: (/* req */ expressLib.expressMod.eNs.Request, /* res */ expressLib.expressMod.eNs.Response) => scala.Boolean = null,
     skipFailedRequests: js.UndefOr[scala.Boolean] = js.undefined,
     skipSuccessfulRequests: js.UndefOr[scala.Boolean] = js.undefined,
     store: Store = null,
@@ -100,9 +87,9 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (delayAfter != null) __obj.updateDynamic("delayAfter")(delayAfter.asInstanceOf[js.Any])
     if (delayMs != null) __obj.updateDynamic("delayMs")(delayMs.asInstanceOf[js.Any])
-    if (keyGenerator != null) __obj.updateDynamic("keyGenerator")(keyGenerator)
-    if (onLimitReached != null) __obj.updateDynamic("onLimitReached")(onLimitReached)
-    if (skip != null) __obj.updateDynamic("skip")(skip)
+    if (keyGenerator != null) __obj.updateDynamic("keyGenerator")(js.Any.fromFunction2(keyGenerator))
+    if (onLimitReached != null) __obj.updateDynamic("onLimitReached")(js.Any.fromFunction3(onLimitReached))
+    if (skip != null) __obj.updateDynamic("skip")(js.Any.fromFunction2(skip))
     if (!js.isUndefined(skipFailedRequests)) __obj.updateDynamic("skipFailedRequests")(skipFailedRequests)
     if (!js.isUndefined(skipSuccessfulRequests)) __obj.updateDynamic("skipSuccessfulRequests")(skipSuccessfulRequests)
     if (store != null) __obj.updateDynamic("store")(store)

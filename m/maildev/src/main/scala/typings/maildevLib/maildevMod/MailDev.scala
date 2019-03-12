@@ -17,7 +17,7 @@ trait MailDev extends js.Object {
     * @param {Function} callback The error callback.
     */
   def deleteAllEmail(): scala.Unit = js.native
-  def deleteAllEmail(callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def deleteAllEmail(callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /**
     * Deletes a given email by identifier.
     *
@@ -26,7 +26,7 @@ trait MailDev extends js.Object {
     * @param {Function}  callback  The error callback.
     */
   def deleteEmail(id: java.lang.String): scala.Unit = js.native
-  def deleteEmail(id: java.lang.String, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def deleteEmail(id: java.lang.String, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /**
     * Stops the SMTP server.
     *
@@ -34,12 +34,12 @@ trait MailDev extends js.Object {
     * @param {Function} callback The error callback.
     */
   def end(): scala.Unit = js.native
-  def end(callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def end(callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /**
     * Returns array of all e-mail.
     * @public
     */
-  def getAllEmail(done: js.Function2[/* error */ nodeLib.Error, /* emails */ js.Array[js.Object], scala.Unit]): scala.Unit = js.native
+  def getAllEmail(done: js.Function2[/* error */ stdLib.Error, /* emails */ js.Array[js.Object], scala.Unit]): scala.Unit = js.native
   /**
     * Accepts e-mail identifier, returns email object.
     *
@@ -48,7 +48,7 @@ trait MailDev extends js.Object {
     * @param {Function}  callback  The error callback.
     */
   def getEmail(id: java.lang.String): scala.Unit = js.native
-  def getEmail(id: java.lang.String, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def getEmail(id: java.lang.String, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /**
     * Returns a readable stream of the raw e-mail.
     *
@@ -58,7 +58,7 @@ trait MailDev extends js.Object {
   def getRawEmail(id: java.lang.String): scala.Unit = js.native
   def getRawEmail(
     id: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* readStream */ nodeLib.fsMod.ReadStream, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* readStream */ nodeLib.fsMod.ReadStream, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Starts the SMTP server.
@@ -67,7 +67,7 @@ trait MailDev extends js.Object {
     * @param {Function} callback The error callback.
     */
   def listen(): scala.Unit = js.native
-  def listen(callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def listen(callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /**
     * Event called when a new e-mail is received. Callback receives single mail object.
     *
@@ -82,6 +82,6 @@ trait MailDev extends js.Object {
     * @param {string} idOrMailObject The identifier or mail object.
     * @param {Function} done The callback.
     */
-  def relayMail(idOrMailObject: java.lang.String, done: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def relayMail(idOrMailObject: java.lang.String, done: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
 }
 

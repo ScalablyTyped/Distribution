@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-elements", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val colors: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.Colors = js.native
-  def getIconType(`type`: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.IconType): js.Any = js.native
+  val colors: Colors = js.native
+  def getIconType(`type`: IconType): js.Any = js.native
   def normalize(size: scala.Double): scala.Double = js.native
   def registerCustomIconType(id: java.lang.String, font: js.Any): scala.Unit = js.native
   def withBadge(): js.Function1[
@@ -33,7 +33,7 @@ object ^ extends js.Object {
     /**
     * Options to configure the badge
     */
-  options: reactDashNativeDashElementsLib.Anon_Bottom with reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.BadgeProps
+  options: reactDashNativeDashElementsLib.Anon_Bottom with BadgeProps
   ): js.Function1[
     /* WrappedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
     reactLib.reactMod.ReactNs.ComponentType[_]
@@ -53,15 +53,11 @@ object ^ extends js.Object {
     /**
     * Options to configure the badge
     */
-  options: reactDashNativeDashElementsLib.Anon_Bottom with reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.BadgeProps
+  options: reactDashNativeDashElementsLib.Anon_Bottom with BadgeProps
   ): js.Function1[
     /* WrappedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
     reactLib.reactMod.ReactNs.ComponentType[_]
   ] = js.native
-  def withTheme[P, T](
-    component: reactLib.reactMod.ReactNs.ComponentType[
-      P with reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.ThemeProps[T]
-    ]
-  ): reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  def withTheme[P, T](component: reactLib.reactMod.ReactNs.ComponentType[P with ThemeProps[T]]): reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState] = js.native
 }
 

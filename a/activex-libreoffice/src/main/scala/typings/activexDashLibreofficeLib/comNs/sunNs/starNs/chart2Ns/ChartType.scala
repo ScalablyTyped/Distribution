@@ -15,50 +15,34 @@ object ChartType {
   @scala.inline
   def apply(
     ChartType: java.lang.String,
-    DataSeries: activexDashInteropLib.SafeArray[XDataSeries],
+    DataSeries: stdLib.SafeArray[XDataSeries],
     PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
     RoleOfSequenceForSeriesLabel: java.lang.String,
-    SupportedMandatoryRoles: activexDashInteropLib.SafeArray[java.lang.String],
-    SupportedOptionalRoles: activexDashInteropLib.SafeArray[java.lang.String],
-    SupportedPropertyRoles: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    addDataSeries: js.Function1[XDataSeries, scala.Unit],
-    addPropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    addVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    createCoordinateSystem: js.Function1[scala.Double, XCoordinateSystem],
-    getChartType: js.Function0[java.lang.String],
-    getDataSeries: js.Function0[activexDashInteropLib.SafeArray[XDataSeries]],
-    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
-    getPropertyValue: js.Function1[java.lang.String, js.Any],
-    getRoleOfSequenceForSeriesLabel: js.Function0[java.lang.String],
-    getSupportedMandatoryRoles: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getSupportedOptionalRoles: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getSupportedPropertyRoles: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeDataSeries: js.Function1[XDataSeries, scala.Unit],
-    removePropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    removeVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    setDataSeries: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XDataSeries], scala.Unit],
-    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+    SupportedMandatoryRoles: stdLib.SafeArray[java.lang.String],
+    SupportedOptionalRoles: stdLib.SafeArray[java.lang.String],
+    SupportedPropertyRoles: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    addDataSeries: XDataSeries => scala.Unit,
+    addPropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    addVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    createCoordinateSystem: scala.Double => XCoordinateSystem,
+    getChartType: () => java.lang.String,
+    getDataSeries: () => stdLib.SafeArray[XDataSeries],
+    getPropertySetInfo: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    getPropertyValue: java.lang.String => js.Any,
+    getRoleOfSequenceForSeriesLabel: () => java.lang.String,
+    getSupportedMandatoryRoles: () => stdLib.SafeArray[java.lang.String],
+    getSupportedOptionalRoles: () => stdLib.SafeArray[java.lang.String],
+    getSupportedPropertyRoles: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeDataSeries: XDataSeries => scala.Unit,
+    removePropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    removeVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    setDataSeries: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XDataSeries] => scala.Unit,
+    setPropertyValue: (java.lang.String, js.Any) => scala.Unit
   ): ChartType = {
-    val __obj = js.Dynamic.literal(ChartType = ChartType, DataSeries = DataSeries, PropertySetInfo = PropertySetInfo, RoleOfSequenceForSeriesLabel = RoleOfSequenceForSeriesLabel, SupportedMandatoryRoles = SupportedMandatoryRoles, SupportedOptionalRoles = SupportedOptionalRoles, SupportedPropertyRoles = SupportedPropertyRoles, acquire = acquire, addDataSeries = addDataSeries, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, createCoordinateSystem = createCoordinateSystem, getChartType = getChartType, getDataSeries = getDataSeries, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getRoleOfSequenceForSeriesLabel = getRoleOfSequenceForSeriesLabel, getSupportedMandatoryRoles = getSupportedMandatoryRoles, getSupportedOptionalRoles = getSupportedOptionalRoles, getSupportedPropertyRoles = getSupportedPropertyRoles, queryInterface = queryInterface, release = release, removeDataSeries = removeDataSeries, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setDataSeries = setDataSeries, setPropertyValue = setPropertyValue)
+    val __obj = js.Dynamic.literal(ChartType = ChartType, DataSeries = DataSeries, PropertySetInfo = PropertySetInfo, RoleOfSequenceForSeriesLabel = RoleOfSequenceForSeriesLabel, SupportedMandatoryRoles = SupportedMandatoryRoles, SupportedOptionalRoles = SupportedOptionalRoles, SupportedPropertyRoles = SupportedPropertyRoles, acquire = js.Any.fromFunction0(acquire), addDataSeries = js.Any.fromFunction1(addDataSeries), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createCoordinateSystem = js.Any.fromFunction1(createCoordinateSystem), getChartType = js.Any.fromFunction0(getChartType), getDataSeries = js.Any.fromFunction0(getDataSeries), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getRoleOfSequenceForSeriesLabel = js.Any.fromFunction0(getRoleOfSequenceForSeriesLabel), getSupportedMandatoryRoles = js.Any.fromFunction0(getSupportedMandatoryRoles), getSupportedOptionalRoles = js.Any.fromFunction0(getSupportedOptionalRoles), getSupportedPropertyRoles = js.Any.fromFunction0(getSupportedPropertyRoles), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeDataSeries = js.Any.fromFunction1(removeDataSeries), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setDataSeries = js.Any.fromFunction1(setDataSeries), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
   
     __obj.asInstanceOf[ChartType]
   }

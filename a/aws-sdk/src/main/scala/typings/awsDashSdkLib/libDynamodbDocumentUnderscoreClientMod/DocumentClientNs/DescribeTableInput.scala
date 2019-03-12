@@ -9,7 +9,7 @@ trait DescribeTableInput extends js.Object {
   /**
     * The name of the table to describe.
     */
-  var TableName: TableName
+  var TableName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TableName
 }
 
 object DescribeTableInput {

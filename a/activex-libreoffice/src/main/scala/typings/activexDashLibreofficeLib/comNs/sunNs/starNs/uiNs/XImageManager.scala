@@ -20,7 +20,7 @@ trait XImageManager
     * @param nImageType specifies the image type for this operation.
     * @returns all command URLs within the images manager that have an image associated.
     */
-  def getAllImageNames(nImageType: scala.Double): activexDashInteropLib.SafeArray[java.lang.String]
+  def getAllImageNames(nImageType: scala.Double): stdLib.SafeArray[java.lang.String]
   /**
     * retrieves the associated images of command URLs.
     * @param nImageType specifies the image type for this association operation.
@@ -30,7 +30,7 @@ trait XImageManager
   def getImages(
     nImageType: scala.Double,
     aCommandURLSequence: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]
-  ): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic]
+  ): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic]
   /**
     * determines if a command URL has an associated image.
     * @param nImageType specifies the image type for this operation.
@@ -80,47 +80,29 @@ trait XImageManager
 object XImageManager {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addConfigurationListener: js.Function1[XUIConfigurationListener, scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    getAllImageNames: js.Function1[scala.Double, activexDashInteropLib.SafeArray[java.lang.String]],
-    getImages: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic]
-    ],
-    hasImage: js.Function2[scala.Double, java.lang.String, scala.Boolean],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    insertImages: js.Function3[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic], 
-      scala.Unit
-    ],
-    isModified: js.Function0[scala.Boolean],
-    isReadOnly: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    reload: js.Function0[scala.Unit],
-    removeConfigurationListener: js.Function1[XUIConfigurationListener, scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    removeImages: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      scala.Unit
-    ],
-    replaceImages: js.Function3[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic], 
-      scala.Unit
-    ],
-    reset: js.Function0[scala.Unit],
-    store: js.Function0[scala.Unit],
-    storeToStorage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, scala.Unit]
+    acquire: () => scala.Unit,
+    addConfigurationListener: XUIConfigurationListener => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    dispose: () => scala.Unit,
+    getAllImageNames: scala.Double => stdLib.SafeArray[java.lang.String],
+    getImages: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]) => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic],
+    hasImage: (scala.Double, java.lang.String) => scala.Boolean,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    insertImages: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic]) => scala.Unit,
+    isModified: () => scala.Boolean,
+    isReadOnly: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    reload: () => scala.Unit,
+    removeConfigurationListener: XUIConfigurationListener => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    removeImages: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]) => scala.Unit,
+    replaceImages: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic]) => scala.Unit,
+    reset: () => scala.Unit,
+    store: () => scala.Unit,
+    storeToStorage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage => scala.Unit
   ): XImageManager = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addConfigurationListener = addConfigurationListener, addEventListener = addEventListener, dispose = dispose, getAllImageNames = getAllImageNames, getImages = getImages, hasImage = hasImage, initialize = initialize, insertImages = insertImages, isModified = isModified, isReadOnly = isReadOnly, queryInterface = queryInterface, release = release, reload = reload, removeConfigurationListener = removeConfigurationListener, removeEventListener = removeEventListener, removeImages = removeImages, replaceImages = replaceImages, reset = reset, store = store, storeToStorage = storeToStorage)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addConfigurationListener = js.Any.fromFunction1(addConfigurationListener), addEventListener = js.Any.fromFunction1(addEventListener), dispose = js.Any.fromFunction0(dispose), getAllImageNames = js.Any.fromFunction1(getAllImageNames), getImages = js.Any.fromFunction2(getImages), hasImage = js.Any.fromFunction2(hasImage), initialize = js.Any.fromFunction1(initialize), insertImages = js.Any.fromFunction3(insertImages), isModified = js.Any.fromFunction0(isModified), isReadOnly = js.Any.fromFunction0(isReadOnly), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), reload = js.Any.fromFunction0(reload), removeConfigurationListener = js.Any.fromFunction1(removeConfigurationListener), removeEventListener = js.Any.fromFunction1(removeEventListener), removeImages = js.Any.fromFunction2(removeImages), replaceImages = js.Any.fromFunction3(replaceImages), reset = js.Any.fromFunction0(reset), store = js.Any.fromFunction0(store), storeToStorage = js.Any.fromFunction1(storeToStorage))
   
     __obj.asInstanceOf[XImageManager]
   }

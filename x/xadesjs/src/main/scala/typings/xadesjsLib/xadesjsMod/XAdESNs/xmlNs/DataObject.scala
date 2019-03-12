@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DataObject
   extends xmldsigjsLib.xmldsigjsMod.DataObject {
-  var QualifyingProperties: QualifyingProperties = js.native
+  var QualifyingProperties: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.QualifyingProperties = js.native
 }
 

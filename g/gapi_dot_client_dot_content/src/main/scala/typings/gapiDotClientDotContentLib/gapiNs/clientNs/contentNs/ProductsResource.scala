@@ -24,28 +24,13 @@ trait ProductsResource extends js.Object {
 object ProductsResource {
   @scala.inline
   def apply(
-    custombatch: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltDryRun, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ProductsCustomBatchResponse]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltDryRunFieldsKeyMerchantId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFieldsKeyMerchantIdOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Product]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltDryRunFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Product]
-    ],
-    list: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFieldsIncludeInvalidInsertedItems, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ProductsListResponse]
-    ]
+    custombatch: gapiDotClientDotContentLib.Anon_AltDryRun => gapiDotClientLib.gapiNs.clientNs.Request[ProductsCustomBatchResponse],
+    delete: gapiDotClientDotContentLib.Anon_AltDryRunFieldsKeyMerchantId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotContentLib.Anon_AltFieldsKeyMerchantIdOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Product],
+    insert: gapiDotClientDotContentLib.Anon_AltDryRunFields => gapiDotClientLib.gapiNs.clientNs.Request[Product],
+    list: gapiDotClientDotContentLib.Anon_AltFieldsIncludeInvalidInsertedItems => gapiDotClientLib.gapiNs.clientNs.Request[ProductsListResponse]
   ): ProductsResource = {
-    val __obj = js.Dynamic.literal(custombatch = custombatch, delete = delete, get = get, insert = insert, list = list)
+    val __obj = js.Dynamic.literal(custombatch = js.Any.fromFunction1(custombatch), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ProductsResource]
   }

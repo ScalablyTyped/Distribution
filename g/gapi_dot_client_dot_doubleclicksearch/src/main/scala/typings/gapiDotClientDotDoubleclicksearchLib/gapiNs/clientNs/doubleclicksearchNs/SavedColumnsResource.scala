@@ -13,12 +13,9 @@ trait SavedColumnsResource extends js.Object {
 object SavedColumnsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotDoubleclicksearchLib.Anon_AdvertiserIdAgencyId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SavedColumnList]
-    ]
+    list: gapiDotClientDotDoubleclicksearchLib.Anon_AdvertiserIdAgencyId => gapiDotClientLib.gapiNs.clientNs.Request[SavedColumnList]
   ): SavedColumnsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[SavedColumnsResource]
   }

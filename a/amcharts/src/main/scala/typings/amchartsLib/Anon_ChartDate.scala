@@ -9,9 +9,9 @@ trait Anon_ChartDate extends js.Object {
   var chart: this.type
   var date: js.UndefOr[stdLib.Date] = js.undefined
   var endDate: js.UndefOr[stdLib.Date] = js.undefined
-  var eventObject: js.UndefOr[amchartsLib.stockeventMod.default] = js.undefined
-  var graph: js.UndefOr[amchartsLib.stockgraphMod.default] = js.undefined
-  var panel: js.UndefOr[amchartsLib.stockpanelMod.default] = js.undefined
+  var eventObject: js.UndefOr[amchartsLib.stockEventMod.default] = js.undefined
+  var graph: js.UndefOr[amchartsLib.stockGraphMod.default] = js.undefined
+  var panel: js.UndefOr[amchartsLib.stockPanelMod.default] = js.undefined
   var period: js.UndefOr[java.lang.String] = js.undefined
   var startDate: js.UndefOr[stdLib.Date] = js.undefined
   var `type`: java.lang.String
@@ -24,9 +24,9 @@ object Anon_ChartDate {
     `type`: java.lang.String,
     date: stdLib.Date = null,
     endDate: stdLib.Date = null,
-    eventObject: amchartsLib.stockeventMod.default = null,
-    graph: amchartsLib.stockgraphMod.default = null,
-    panel: amchartsLib.stockpanelMod.default = null,
+    eventObject: amchartsLib.stockEventMod.default = null,
+    graph: amchartsLib.stockGraphMod.default = null,
+    panel: amchartsLib.stockPanelMod.default = null,
     period: java.lang.String = null,
     startDate: stdLib.Date = null
   ): Anon_ChartDate = {

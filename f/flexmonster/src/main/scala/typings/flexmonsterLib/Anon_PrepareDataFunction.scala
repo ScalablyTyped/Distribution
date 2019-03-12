@@ -15,12 +15,12 @@ object Anon_PrepareDataFunction {
   @scala.inline
   def apply(
     `type`: java.lang.String,
-    prepareDataFunction: js.Function1[/* rawData */ js.Any, _] = null,
+    prepareDataFunction: /* rawData */ js.Any => _ = null,
     slice: flexmonsterLib.flexmonsterMod.FlexmonsterNs.Slice = null
   ): Anon_PrepareDataFunction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)
-    if (prepareDataFunction != null) __obj.updateDynamic("prepareDataFunction")(prepareDataFunction)
+    if (prepareDataFunction != null) __obj.updateDynamic("prepareDataFunction")(js.Any.fromFunction1(prepareDataFunction))
     if (slice != null) __obj.updateDynamic("slice")(slice)
     __obj.asInstanceOf[Anon_PrepareDataFunction]
   }

@@ -94,11 +94,11 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   def closeSync(fd: scala.Double): scala.Unit = js.native
-  def createReadStream(path: java.lang.String): easyDashXapiDashSupertestLib.fsMod.ReadStream = js.native
-  def createReadStream(path: java.lang.String, options: easyDashXapiDashSupertestLib.Anon_BufferSize): easyDashXapiDashSupertestLib.fsMod.ReadStream = js.native
-  def createReadStream(path: java.lang.String, options: easyDashXapiDashSupertestLib.Anon_BufferSizeEncoding): easyDashXapiDashSupertestLib.fsMod.ReadStream = js.native
-  def createWriteStream(path: java.lang.String): easyDashXapiDashSupertestLib.fsMod.WriteStream = js.native
-  def createWriteStream(path: java.lang.String, options: easyDashXapiDashSupertestLib.Anon_EncodingFlags): easyDashXapiDashSupertestLib.fsMod.WriteStream = js.native
+  def createReadStream(path: java.lang.String): ReadStream = js.native
+  def createReadStream(path: java.lang.String, options: easyDashXapiDashSupertestLib.Anon_BufferSize): ReadStream = js.native
+  def createReadStream(path: java.lang.String, options: easyDashXapiDashSupertestLib.Anon_BufferSizeEncoding): ReadStream = js.native
+  def createWriteStream(path: java.lang.String): WriteStream = js.native
+  def createWriteStream(path: java.lang.String, options: easyDashXapiDashSupertestLib.Anon_EncodingFlags): WriteStream = js.native
   def exists(path: java.lang.String): scala.Unit = js.native
   def exists(path: java.lang.String, callback: js.Function1[/* exists */ scala.Boolean, scala.Unit]): scala.Unit = js.native
   def existsSync(path: java.lang.String): scala.Boolean = js.native
@@ -136,13 +136,9 @@ object ^ extends js.Object {
   def fstat(fd: scala.Double): scala.Unit = js.native
   def fstat(
     fd: scala.Double,
-    callback: js.Function2[
-      /* err */ easyDashXapiDashSupertestLib.NodeJSNs.ErrnoException, 
-      /* stats */ easyDashXapiDashSupertestLib.fsMod.Stats, 
-      _
-    ]
+    callback: js.Function2[/* err */ easyDashXapiDashSupertestLib.NodeJSNs.ErrnoException, /* stats */ Stats, _]
   ): scala.Unit = js.native
-  def fstatSync(fd: scala.Double): easyDashXapiDashSupertestLib.fsMod.Stats = js.native
+  def fstatSync(fd: scala.Double): Stats = js.native
   def fsync(fd: scala.Double): scala.Unit = js.native
   def fsync(
     fd: scala.Double,
@@ -237,13 +233,9 @@ object ^ extends js.Object {
   def lstat(path: java.lang.String): scala.Unit = js.native
   def lstat(
     path: java.lang.String,
-    callback: js.Function2[
-      /* err */ easyDashXapiDashSupertestLib.NodeJSNs.ErrnoException, 
-      /* stats */ easyDashXapiDashSupertestLib.fsMod.Stats, 
-      _
-    ]
+    callback: js.Function2[/* err */ easyDashXapiDashSupertestLib.NodeJSNs.ErrnoException, /* stats */ Stats, _]
   ): scala.Unit = js.native
-  def lstatSync(path: java.lang.String): easyDashXapiDashSupertestLib.fsMod.Stats = js.native
+  def lstatSync(path: java.lang.String): Stats = js.native
   def mkdir(path: java.lang.String): scala.Unit = js.native
   def mkdir(
     path: java.lang.String,
@@ -436,13 +428,9 @@ object ^ extends js.Object {
   def stat(path: java.lang.String): scala.Unit = js.native
   def stat(
     path: java.lang.String,
-    callback: js.Function2[
-      /* err */ easyDashXapiDashSupertestLib.NodeJSNs.ErrnoException, 
-      /* stats */ easyDashXapiDashSupertestLib.fsMod.Stats, 
-      _
-    ]
+    callback: js.Function2[/* err */ easyDashXapiDashSupertestLib.NodeJSNs.ErrnoException, /* stats */ Stats, _]
   ): scala.Unit = js.native
-  def statSync(path: java.lang.String): easyDashXapiDashSupertestLib.fsMod.Stats = js.native
+  def statSync(path: java.lang.String): Stats = js.native
   def symlink(srcpath: java.lang.String, dstpath: java.lang.String): scala.Unit = js.native
   def symlink(srcpath: java.lang.String, dstpath: java.lang.String, `type`: java.lang.String): scala.Unit = js.native
   def symlink(
@@ -485,14 +473,7 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def unlinkSync(path: java.lang.String): scala.Unit = js.native
   def unwatchFile(filename: java.lang.String): scala.Unit = js.native
-  def unwatchFile(
-    filename: java.lang.String,
-    listener: js.Function2[
-      /* curr */ easyDashXapiDashSupertestLib.fsMod.Stats, 
-      /* prev */ easyDashXapiDashSupertestLib.fsMod.Stats, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def unwatchFile(filename: java.lang.String, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, scala.Unit]): scala.Unit = js.native
   def utimes(path: java.lang.String, atime: scala.Double, mtime: scala.Double): scala.Unit = js.native
   def utimes(
     path: java.lang.String,
@@ -515,33 +496,22 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def utimesSync(path: java.lang.String, atime: scala.Double, mtime: scala.Double): scala.Unit = js.native
   def utimesSync(path: java.lang.String, atime: stdLib.Date, mtime: stdLib.Date): scala.Unit = js.native
-  def watch(filename: java.lang.String): easyDashXapiDashSupertestLib.fsMod.FSWatcher = js.native
+  def watch(filename: java.lang.String): FSWatcher = js.native
   def watch(
     filename: java.lang.String,
     listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, _]
-  ): easyDashXapiDashSupertestLib.fsMod.FSWatcher = js.native
-  def watch(filename: java.lang.String, options: easyDashXapiDashSupertestLib.Anon_Persistent): easyDashXapiDashSupertestLib.fsMod.FSWatcher = js.native
+  ): FSWatcher = js.native
+  def watch(filename: java.lang.String, options: easyDashXapiDashSupertestLib.Anon_Persistent): FSWatcher = js.native
   def watch(
     filename: java.lang.String,
     options: easyDashXapiDashSupertestLib.Anon_Persistent,
     listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, _]
-  ): easyDashXapiDashSupertestLib.fsMod.FSWatcher = js.native
-  def watchFile(
-    filename: java.lang.String,
-    listener: js.Function2[
-      /* curr */ easyDashXapiDashSupertestLib.fsMod.Stats, 
-      /* prev */ easyDashXapiDashSupertestLib.fsMod.Stats, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  ): FSWatcher = js.native
+  def watchFile(filename: java.lang.String, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, scala.Unit]): scala.Unit = js.native
   def watchFile(
     filename: java.lang.String,
     options: easyDashXapiDashSupertestLib.Anon_Interval,
-    listener: js.Function2[
-      /* curr */ easyDashXapiDashSupertestLib.fsMod.Stats, 
-      /* prev */ easyDashXapiDashSupertestLib.fsMod.Stats, 
-      scala.Unit
-    ]
+    listener: js.Function2[/* curr */ Stats, /* prev */ Stats, scala.Unit]
   ): scala.Unit = js.native
   def write(
     fd: scala.Double,

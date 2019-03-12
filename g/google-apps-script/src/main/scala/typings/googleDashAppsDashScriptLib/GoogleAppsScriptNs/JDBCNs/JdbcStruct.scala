@@ -12,8 +12,8 @@ trait JdbcStruct extends js.Object {
 
 object JdbcStruct {
   @scala.inline
-  def apply(getAttributes: js.Function0[js.Array[js.Object]], getSQLTypeName: js.Function0[java.lang.String]): JdbcStruct = {
-    val __obj = js.Dynamic.literal(getAttributes = getAttributes, getSQLTypeName = getSQLTypeName)
+  def apply(getAttributes: () => js.Array[js.Object], getSQLTypeName: () => java.lang.String): JdbcStruct = {
+    val __obj = js.Dynamic.literal(getAttributes = js.Any.fromFunction0(getAttributes), getSQLTypeName = js.Any.fromFunction0(getSQLTypeName))
   
     __obj.asInstanceOf[JdbcStruct]
   }

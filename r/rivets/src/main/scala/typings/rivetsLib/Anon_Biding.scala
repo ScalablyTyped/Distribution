@@ -23,14 +23,14 @@ trait Anon_Biding extends js.Object {
 object Anon_Biding {
   @scala.inline
   def apply(
-    handler: js.Function3[/* context */ js.Any, /* ev */ stdLib.Event, /* biding */ js.Any, scala.Unit] = null,
+    handler: (/* context */ js.Any, /* ev */ stdLib.Event, /* biding */ js.Any) => scala.Unit = null,
     prefix: java.lang.String = null,
     preloadData: js.UndefOr[scala.Boolean] = js.undefined,
     rootInterface: java.lang.String = null,
     templateDelimiters: js.Array[java.lang.String] = null
   ): Anon_Biding = {
     val __obj = js.Dynamic.literal()
-    if (handler != null) __obj.updateDynamic("handler")(handler)
+    if (handler != null) __obj.updateDynamic("handler")(js.Any.fromFunction3(handler))
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (!js.isUndefined(preloadData)) __obj.updateDynamic("preloadData")(preloadData)
     if (rootInterface != null) __obj.updateDynamic("rootInterface")(rootInterface)

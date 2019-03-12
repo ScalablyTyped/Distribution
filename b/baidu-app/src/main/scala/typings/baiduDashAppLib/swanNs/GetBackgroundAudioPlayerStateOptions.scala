@@ -21,14 +21,14 @@ trait GetBackgroundAudioPlayerStateOptions
 object GetBackgroundAudioPlayerStateOptions {
   @scala.inline
   def apply(
-    complete: js.Function0[scala.Unit] = null,
-    fail: js.Function0[scala.Unit] = null,
-    success: js.Function1[/* state */ BackgroundAudioPlayerState, scala.Unit] = null
+    complete: () => scala.Unit = null,
+    fail: () => scala.Unit = null,
+    success: /* state */ BackgroundAudioPlayerState => scala.Unit = null
   ): GetBackgroundAudioPlayerStateOptions = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetBackgroundAudioPlayerStateOptions]
   }
 }

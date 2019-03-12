@@ -26,17 +26,12 @@ trait XScript
 object XScript {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    invoke: js.Function3[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]], 
-      js.Any
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    invoke: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]]) => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XScript = {
-    val __obj = js.Dynamic.literal(acquire = acquire, invoke = invoke, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), invoke = js.Any.fromFunction3(invoke), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XScript]
   }

@@ -38,7 +38,7 @@ trait IncrementData extends js.Object {
     * further sub tickmarks. Every following {@link SubIncrement} determines the positions of subsequent tickmarks in relation to their parent tickmarks
     * given by the preceding {@link SubIncrement} .
     */
-  var SubIncrements: activexDashInteropLib.SafeArray[SubIncrement]
+  var SubIncrements: stdLib.SafeArray[SubIncrement]
 }
 
 object IncrementData {
@@ -47,7 +47,7 @@ object IncrementData {
     BaseValue: js.Any,
     Distance: js.Any,
     PostEquidistant: js.Any,
-    SubIncrements: activexDashInteropLib.SafeArray[SubIncrement]
+    SubIncrements: stdLib.SafeArray[SubIncrement]
   ): IncrementData = {
     val __obj = js.Dynamic.literal(BaseValue = BaseValue, Distance = Distance, PostEquidistant = PostEquidistant, SubIncrements = SubIncrements)
   

@@ -25,7 +25,7 @@ trait DataPilotTableResultData extends js.Object {
     * This is a set of filter criteria that can be used to re-create those data rows that contribute to the value shown in the cell.
     * @see com.sun.star.sheet.DataPilotFieldFilter
     */
-  var FieldFilters: activexDashInteropLib.SafeArray[DataPilotFieldFilter]
+  var FieldFilters: stdLib.SafeArray[DataPilotFieldFilter]
   /**
     * more information about the result contained in the {@link DataResult} type.
     * @see com.sun.star.sheet.DataResult
@@ -37,7 +37,7 @@ object DataPilotTableResultData {
   @scala.inline
   def apply(
     DataFieldIndex: scala.Double,
-    FieldFilters: activexDashInteropLib.SafeArray[DataPilotFieldFilter],
+    FieldFilters: stdLib.SafeArray[DataPilotFieldFilter],
     Result: DataResult
   ): DataPilotTableResultData = {
     val __obj = js.Dynamic.literal(DataFieldIndex = DataFieldIndex, FieldFilters = FieldFilters, Result = Result)

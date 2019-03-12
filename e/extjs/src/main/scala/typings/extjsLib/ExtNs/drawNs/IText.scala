@@ -29,9 +29,9 @@ object IText {
     autoSize: js.UndefOr[scala.Boolean] = js.undefined,
     baseCls: java.lang.String = null,
     degrees: scala.Int | scala.Double = null,
-    initComponent: js.Function0[scala.Unit] = null,
-    setAngle: js.Function1[/* degrees */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setText: js.Function1[/* t */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    initComponent: () => scala.Unit = null,
+    setAngle: /* degrees */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setText: /* t */ js.UndefOr[java.lang.String] => scala.Unit = null,
     styleSelector: java.lang.String = null,
     text: java.lang.String = null,
     viewBox: js.UndefOr[scala.Boolean] = js.undefined
@@ -41,9 +41,9 @@ object IText {
     if (!js.isUndefined(autoSize)) __obj.updateDynamic("autoSize")(autoSize)
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
     if (degrees != null) __obj.updateDynamic("degrees")(degrees.asInstanceOf[js.Any])
-    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
-    if (setAngle != null) __obj.updateDynamic("setAngle")(setAngle)
-    if (setText != null) __obj.updateDynamic("setText")(setText)
+    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
+    if (setAngle != null) __obj.updateDynamic("setAngle")(js.Any.fromFunction1(setAngle))
+    if (setText != null) __obj.updateDynamic("setText")(js.Any.fromFunction1(setText))
     if (styleSelector != null) __obj.updateDynamic("styleSelector")(styleSelector)
     if (text != null) __obj.updateDynamic("text")(text)
     if (!js.isUndefined(viewBox)) __obj.updateDynamic("viewBox")(viewBox)

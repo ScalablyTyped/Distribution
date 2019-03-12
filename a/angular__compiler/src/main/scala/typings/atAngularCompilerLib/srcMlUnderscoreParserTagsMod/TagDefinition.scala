@@ -25,14 +25,14 @@ object TagDefinition {
     closedByParent: scala.Boolean,
     contentType: TagContentType,
     ignoreFirstLf: scala.Boolean,
-    isClosedByChild: js.Function1[java.lang.String, scala.Boolean],
+    isClosedByChild: java.lang.String => scala.Boolean,
     isVoid: scala.Boolean,
     parentToAdd: java.lang.String,
-    requireExtraParent: js.Function1[java.lang.String, scala.Boolean],
+    requireExtraParent: java.lang.String => scala.Boolean,
     requiredParents: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
     implicitNamespacePrefix: java.lang.String = null
   ): TagDefinition = {
-    val __obj = js.Dynamic.literal(canSelfClose = canSelfClose, closedByParent = closedByParent, contentType = contentType, ignoreFirstLf = ignoreFirstLf, isClosedByChild = isClosedByChild, isVoid = isVoid, parentToAdd = parentToAdd, requireExtraParent = requireExtraParent, requiredParents = requiredParents)
+    val __obj = js.Dynamic.literal(canSelfClose = canSelfClose, closedByParent = closedByParent, contentType = contentType, ignoreFirstLf = ignoreFirstLf, isClosedByChild = js.Any.fromFunction1(isClosedByChild), isVoid = isVoid, parentToAdd = parentToAdd, requireExtraParent = js.Any.fromFunction1(requireExtraParent), requiredParents = requiredParents)
     if (implicitNamespacePrefix != null) __obj.updateDynamic("implicitNamespacePrefix")(implicitNamespacePrefix)
     __obj.asInstanceOf[TagDefinition]
   }

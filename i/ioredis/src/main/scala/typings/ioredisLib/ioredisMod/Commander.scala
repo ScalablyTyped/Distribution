@@ -15,12 +15,12 @@ trait Commander extends js.Object {
 object Commander {
   @scala.inline
   def apply(
-    createBuiltinCommand: js.Function1[java.lang.String, js.Object],
-    defineCommand: js.Function2[java.lang.String, ioredisLib.Anon_Lua, js.Any],
-    getBuiltinCommands: js.Function0[js.Array[java.lang.String]],
-    sendCommand: js.Function0[scala.Unit]
+    createBuiltinCommand: java.lang.String => js.Object,
+    defineCommand: (java.lang.String, ioredisLib.Anon_Lua) => js.Any,
+    getBuiltinCommands: () => js.Array[java.lang.String],
+    sendCommand: () => scala.Unit
   ): Commander = {
-    val __obj = js.Dynamic.literal(createBuiltinCommand = createBuiltinCommand, defineCommand = defineCommand, getBuiltinCommands = getBuiltinCommands, sendCommand = sendCommand)
+    val __obj = js.Dynamic.literal(createBuiltinCommand = js.Any.fromFunction1(createBuiltinCommand), defineCommand = js.Any.fromFunction2(defineCommand), getBuiltinCommands = js.Any.fromFunction0(getBuiltinCommands), sendCommand = js.Any.fromFunction0(sendCommand))
   
     __obj.asInstanceOf[Commander]
   }

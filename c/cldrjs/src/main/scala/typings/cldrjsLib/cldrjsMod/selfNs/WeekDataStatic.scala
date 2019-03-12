@@ -12,8 +12,8 @@ trait WeekDataStatic extends js.Object {
 
 object WeekDataStatic {
   @scala.inline
-  def apply(firstDay: js.Function0[java.lang.String], minDays: js.Function0[scala.Double]): WeekDataStatic = {
-    val __obj = js.Dynamic.literal(firstDay = firstDay, minDays = minDays)
+  def apply(firstDay: () => java.lang.String, minDays: () => scala.Double): WeekDataStatic = {
+    val __obj = js.Dynamic.literal(firstDay = js.Any.fromFunction0(firstDay), minDays = js.Any.fromFunction0(minDays))
   
     __obj.asInstanceOf[WeekDataStatic]
   }

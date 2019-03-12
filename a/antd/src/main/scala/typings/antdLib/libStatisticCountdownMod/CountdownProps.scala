@@ -21,7 +21,7 @@ object CountdownProps {
     format: java.lang.String = null,
     formatter: antdLib.libStatisticUtilsMod.Formatter = null,
     groupSeparator: java.lang.String = null,
-    onFinish: js.Function0[scala.Unit] = null,
+    onFinish: () => scala.Unit = null,
     precision: scala.Int | scala.Double = null,
     prefix: reactLib.reactMod.ReactNs.ReactNode = null,
     prefixCls: java.lang.String = null,
@@ -29,10 +29,7 @@ object CountdownProps {
     suffix: reactLib.reactMod.ReactNs.ReactNode = null,
     title: reactLib.reactMod.ReactNs.ReactNode = null,
     value: antdLib.libStatisticUtilsMod.countdownValueType = null,
-    valueRender: js.Function1[
-      /* node */ reactLib.reactMod.ReactNs.ReactNode, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    valueRender: /* node */ reactLib.reactMod.ReactNs.ReactNode => reactLib.reactMod.ReactNs.ReactNode = null,
     valueStyle: reactLib.reactMod.ReactNs.CSSProperties = null
   ): CountdownProps = {
     val __obj = js.Dynamic.literal()
@@ -41,7 +38,7 @@ object CountdownProps {
     if (format != null) __obj.updateDynamic("format")(format)
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
     if (groupSeparator != null) __obj.updateDynamic("groupSeparator")(groupSeparator)
-    if (onFinish != null) __obj.updateDynamic("onFinish")(onFinish)
+    if (onFinish != null) __obj.updateDynamic("onFinish")(js.Any.fromFunction0(onFinish))
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
@@ -49,7 +46,7 @@ object CountdownProps {
     if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (valueRender != null) __obj.updateDynamic("valueRender")(valueRender)
+    if (valueRender != null) __obj.updateDynamic("valueRender")(js.Any.fromFunction1(valueRender))
     if (valueStyle != null) __obj.updateDynamic("valueStyle")(valueStyle)
     __obj.asInstanceOf[CountdownProps]
   }

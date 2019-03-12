@@ -32,9 +32,9 @@ object Anon_Checked {
     inputId: java.lang.String = null,
     modifier: java.lang.String = null,
     name: java.lang.String = null,
-    onBlur: js.Function1[/* e */ reactLib.reactMod.ReactNs.FocusEvent[_], scala.Unit] = null,
-    onChange: js.Function1[/* e */ reactLib.reactMod.ReactNs.ChangeEvent[_], scala.Unit] = null,
-    onFocus: js.Function1[/* e */ reactLib.reactMod.ReactNs.FocusEvent[_], scala.Unit] = null,
+    onBlur: /* e */ reactLib.reactMod.ReactNs.FocusEvent[_] => scala.Unit = null,
+    onChange: /* e */ reactLib.reactMod.ReactNs.ChangeEvent[_] => scala.Unit = null,
+    onFocus: /* e */ reactLib.reactMod.ReactNs.FocusEvent[_] => scala.Unit = null,
     placeholder: java.lang.String = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: java.lang.String = null,
@@ -48,9 +48,9 @@ object Anon_Checked {
     if (inputId != null) __obj.updateDynamic("inputId")(inputId)
     if (modifier != null) __obj.updateDynamic("modifier")(modifier)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

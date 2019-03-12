@@ -16,14 +16,9 @@ trait AuthProvider extends js.Object {
 object AuthProvider {
   @scala.inline
   def apply(
-    getUser: js.Function3[
-      expressLib.expressMod.eNs.Request, 
-      expressLib.expressMod.eNs.Response, 
-      expressLib.expressMod.eNs.NextFunction, 
-      js.Promise[Principal]
-    ]
+    getUser: (expressLib.expressMod.eNs.Request, expressLib.expressMod.eNs.Response, expressLib.expressMod.eNs.NextFunction) => js.Promise[Principal]
   ): AuthProvider = {
-    val __obj = js.Dynamic.literal(getUser = getUser)
+    val __obj = js.Dynamic.literal(getUser = js.Any.fromFunction3(getUser))
   
     __obj.asInstanceOf[AuthProvider]
   }

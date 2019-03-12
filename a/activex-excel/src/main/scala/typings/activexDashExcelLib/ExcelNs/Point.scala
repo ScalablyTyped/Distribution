@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.Point")
 @js.native
 class Point protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var ApplyPictToEnd: scala.Boolean = js.native
   var ApplyPictToFront: scala.Boolean = js.native
   var ApplyPictToSides: scala.Boolean = js.native
-  val Border: Border = js.native
+  val Border: activexDashExcelLib.ExcelNs.Border = js.native
   val Creator: XlCreator = js.native
-  val DataLabel: DataLabel = js.native
+  val DataLabel: activexDashExcelLib.ExcelNs.DataLabel = js.native
   var `Excel.Point_typekey`: Point = js.native
   var Explosion: scala.Double = js.native
   val Fill: ChartFillFormat = js.native
@@ -22,7 +22,7 @@ class Point protected () extends js.Object {
   var Has3DEffect: scala.Boolean = js.native
   var HasDataLabel: scala.Boolean = js.native
   val Height: scala.Double = js.native
-  val Interior: Interior = js.native
+  val Interior: activexDashExcelLib.ExcelNs.Interior = js.native
   var InvertIfNegative: scala.Boolean = js.native
   val Left: scala.Double = js.native
   var MarkerBackgroundColor: scala.Double = js.native

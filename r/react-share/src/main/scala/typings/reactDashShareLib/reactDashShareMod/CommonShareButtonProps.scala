@@ -9,7 +9,7 @@ trait CommonShareButtonProps extends js.Object {
   /**
     * An object to pass any additional properties, such as `aria-*` attributes.
     */
-  var additionalProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement]] = js.undefined
+  var additionalProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement]] = js.undefined
   /**
     *  Takes a function that returns a Promise to be fulfilled before calling
     * `onClick`. If you do not return promise, `onClick` is called immediately.
@@ -21,7 +21,7 @@ trait CommonShareButtonProps extends js.Object {
     * Style when button is disabled
     * @default { opacity: 0.6 }
     */
-  var disabledStyle: js.UndefOr[reactLib.reactMod.ReactNs.StyleHTMLAttributes[reactLib.HTMLDivElement]] = js.undefined
+  var disabledStyle: js.UndefOr[reactLib.reactMod.ReactNs.StyleHTMLAttributes[stdLib.HTMLDivElement]] = js.undefined
   /**
     * Takes a function to be called after closing share dialog.
     */
@@ -38,20 +38,20 @@ object CommonShareButtonProps {
   @scala.inline
   def apply(
     url: java.lang.String,
-    additionalProps: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
-    beforeOnClick: js.Function0[js.Promise[scala.Unit]] = null,
+    additionalProps: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
+    beforeOnClick: () => js.Promise[scala.Unit] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    disabledStyle: reactLib.reactMod.ReactNs.StyleHTMLAttributes[reactLib.HTMLDivElement] = null,
-    onShareWindowClose: js.Function0[scala.Unit] = null,
+    disabledStyle: reactLib.reactMod.ReactNs.StyleHTMLAttributes[stdLib.HTMLDivElement] = null,
+    onShareWindowClose: () => scala.Unit = null,
     windowHeight: scala.Int | scala.Double = null,
     windowWidth: scala.Int | scala.Double = null
   ): CommonShareButtonProps = {
     val __obj = js.Dynamic.literal(url = url)
     if (additionalProps != null) __obj.updateDynamic("additionalProps")(additionalProps)
-    if (beforeOnClick != null) __obj.updateDynamic("beforeOnClick")(beforeOnClick)
+    if (beforeOnClick != null) __obj.updateDynamic("beforeOnClick")(js.Any.fromFunction0(beforeOnClick))
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (disabledStyle != null) __obj.updateDynamic("disabledStyle")(disabledStyle)
-    if (onShareWindowClose != null) __obj.updateDynamic("onShareWindowClose")(onShareWindowClose)
+    if (onShareWindowClose != null) __obj.updateDynamic("onShareWindowClose")(js.Any.fromFunction0(onShareWindowClose))
     if (windowHeight != null) __obj.updateDynamic("windowHeight")(windowHeight.asInstanceOf[js.Any])
     if (windowWidth != null) __obj.updateDynamic("windowWidth")(windowWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonShareButtonProps]

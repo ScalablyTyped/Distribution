@@ -37,7 +37,7 @@ trait TransferProps extends js.Object {
   var onScroll: js.UndefOr[
     js.Function2[
       /* direction */ TransferDirection, 
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement, reactLib.Event], 
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLDivElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
@@ -47,7 +47,7 @@ trait TransferProps extends js.Object {
   var onSearchChange: js.UndefOr[
     js.Function2[
       /* direction */ TransferDirection, 
-      /* e */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement], 
+      /* e */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -75,48 +75,25 @@ object TransferProps {
   @scala.inline
   def apply(
     dataSource: js.Array[TransferItem],
-    body: js.Function1[
-      /* props */ antdLib.libTransferListMod.TransferListProps, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    body: /* props */ antdLib.libTransferListMod.TransferListProps => reactLib.reactMod.ReactNs.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    filterOption: js.Function2[/* inputValue */ js.Any, /* item */ js.Any, scala.Boolean] = null,
-    footer: js.Function1[
-      /* props */ antdLib.libTransferListMod.TransferListProps, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    filterOption: (/* inputValue */ js.Any, /* item */ js.Any) => scala.Boolean = null,
+    footer: /* props */ antdLib.libTransferListMod.TransferListProps => reactLib.reactMod.ReactNs.ReactNode = null,
     `lazy`: js.Object | scala.Boolean = null,
     listStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     locale: js.Object = null,
     notFoundContent: reactLib.reactMod.ReactNs.ReactNode = null,
-    onChange: js.Function3[
-      /* targetKeys */ js.Array[java.lang.String], 
-      /* direction */ java.lang.String, 
-      /* moveKeys */ js.Any, 
-      scala.Unit
-    ] = null,
-    onScroll: js.Function2[
-      /* direction */ TransferDirection, 
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement, reactLib.Event], 
-      scala.Unit
-    ] = null,
-    onSearch: js.Function2[/* direction */ TransferDirection, /* value */ java.lang.String, scala.Unit] = null,
-    onSearchChange: js.Function2[
-      /* direction */ TransferDirection, 
-      /* e */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement], 
-      scala.Unit
-    ] = null,
-    onSelectChange: js.Function2[
-      /* sourceSelectedKeys */ js.Array[java.lang.String], 
-      /* targetSelectedKeys */ js.Array[java.lang.String], 
-      scala.Unit
-    ] = null,
+    onChange: (/* targetKeys */ js.Array[java.lang.String], /* direction */ java.lang.String, /* moveKeys */ js.Any) => scala.Unit = null,
+    onScroll: (/* direction */ TransferDirection, /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLDivElement, reactLib.Event]) => scala.Unit = null,
+    onSearch: (/* direction */ TransferDirection, /* value */ java.lang.String) => scala.Unit = null,
+    onSearchChange: (/* direction */ TransferDirection, /* e */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement]) => scala.Unit = null,
+    onSelectChange: (/* sourceSelectedKeys */ js.Array[java.lang.String], /* targetSelectedKeys */ js.Array[java.lang.String]) => scala.Unit = null,
     operationStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     operations: js.Array[java.lang.String] = null,
     prefixCls: java.lang.String = null,
     render: TransferRender = null,
-    rowKey: js.Function1[/* record */ TransferItem, java.lang.String] = null,
+    rowKey: /* record */ TransferItem => java.lang.String = null,
     searchPlaceholder: java.lang.String = null,
     selectedKeys: js.Array[java.lang.String] = null,
     showSearch: js.UndefOr[scala.Boolean] = js.undefined,
@@ -125,25 +102,25 @@ object TransferProps {
     titles: js.Array[java.lang.String] = null
   ): TransferProps = {
     val __obj = js.Dynamic.literal(dataSource = dataSource)
-    if (body != null) __obj.updateDynamic("body")(body)
+    if (body != null) __obj.updateDynamic("body")(js.Any.fromFunction1(body))
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (filterOption != null) __obj.updateDynamic("filterOption")(filterOption)
-    if (footer != null) __obj.updateDynamic("footer")(footer)
+    if (filterOption != null) __obj.updateDynamic("filterOption")(js.Any.fromFunction2(filterOption))
+    if (footer != null) __obj.updateDynamic("footer")(js.Any.fromFunction1(footer))
     if (`lazy` != null) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
     if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
-    if (onSearch != null) __obj.updateDynamic("onSearch")(onSearch)
-    if (onSearchChange != null) __obj.updateDynamic("onSearchChange")(onSearchChange)
-    if (onSelectChange != null) __obj.updateDynamic("onSelectChange")(onSelectChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3(onChange))
+    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction2(onScroll))
+    if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction2(onSearch))
+    if (onSearchChange != null) __obj.updateDynamic("onSearchChange")(js.Any.fromFunction2(onSearchChange))
+    if (onSelectChange != null) __obj.updateDynamic("onSelectChange")(js.Any.fromFunction2(onSelectChange))
     if (operationStyle != null) __obj.updateDynamic("operationStyle")(operationStyle)
     if (operations != null) __obj.updateDynamic("operations")(operations)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (render != null) __obj.updateDynamic("render")(render)
-    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey)
+    if (rowKey != null) __obj.updateDynamic("rowKey")(js.Any.fromFunction1(rowKey))
     if (searchPlaceholder != null) __obj.updateDynamic("searchPlaceholder")(searchPlaceholder)
     if (selectedKeys != null) __obj.updateDynamic("selectedKeys")(selectedKeys)
     if (!js.isUndefined(showSearch)) __obj.updateDynamic("showSearch")(showSearch)

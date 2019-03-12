@@ -14,14 +14,9 @@ object Invariant {
   @scala.inline
   def apply[F](
     URI: F,
-    imap: js.Function3[
-      fpDashTsLib.libHKTMod.HKT[F, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.HKT[F, js.Any]
-    ]
+    imap: (fpDashTsLib.libHKTMod.HKT[F, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.HKT[F, js.Any]
   ): Invariant[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], imap = imap)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], imap = js.Any.fromFunction3(imap))
   
     __obj.asInstanceOf[Invariant[F]]
   }

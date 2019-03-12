@@ -19,12 +19,12 @@ trait XAutoFormattable
 object XAutoFormattable {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    autoFormat: js.Function1[java.lang.String, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    autoFormat: java.lang.String => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAutoFormattable = {
-    val __obj = js.Dynamic.literal(acquire = acquire, autoFormat = autoFormat, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), autoFormat = js.Any.fromFunction1(autoFormat), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAutoFormattable]
   }

@@ -18,17 +18,15 @@ trait IResourceCandidate extends js.Object {
 object IResourceCandidate {
   @scala.inline
   def apply(
-    getQualifierValue: js.Function1[java.lang.String, java.lang.String],
-    getValueAsFileAsync: js.Function0[
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StorageFile]
-    ],
+    getQualifierValue: java.lang.String => java.lang.String,
+    getValueAsFileAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StorageFile],
     isDefault: scala.Boolean,
     isMatch: scala.Boolean,
     isMatchAsDefault: scala.Boolean,
     qualifiers: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ResourceQualifier],
     valueAsString: java.lang.String
   ): IResourceCandidate = {
-    val __obj = js.Dynamic.literal(getQualifierValue = getQualifierValue, getValueAsFileAsync = getValueAsFileAsync, isDefault = isDefault, isMatch = isMatch, isMatchAsDefault = isMatchAsDefault, qualifiers = qualifiers, valueAsString = valueAsString)
+    val __obj = js.Dynamic.literal(getQualifierValue = js.Any.fromFunction1(getQualifierValue), getValueAsFileAsync = js.Any.fromFunction0(getValueAsFileAsync), isDefault = isDefault, isMatch = isMatch, isMatchAsDefault = isMatchAsDefault, qualifiers = qualifiers, valueAsString = valueAsString)
   
     __obj.asInstanceOf[IResourceCandidate]
   }

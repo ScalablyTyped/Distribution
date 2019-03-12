@@ -69,24 +69,16 @@ object XDispatchRecorder {
   @scala.inline
   def apply(
     RecordedMacro: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    endRecording: js.Function0[scala.Unit],
-    getRecordedMacro: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    recordDispatch: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    recordDispatchAsComment: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    release: js.Function0[scala.Unit],
-    startRecording: js.Function1[XFrame, scala.Unit]
+    acquire: () => scala.Unit,
+    endRecording: () => scala.Unit,
+    getRecordedMacro: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    recordDispatch: (activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    recordDispatchAsComment: (activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    release: () => scala.Unit,
+    startRecording: XFrame => scala.Unit
   ): XDispatchRecorder = {
-    val __obj = js.Dynamic.literal(RecordedMacro = RecordedMacro, acquire = acquire, endRecording = endRecording, getRecordedMacro = getRecordedMacro, queryInterface = queryInterface, recordDispatch = recordDispatch, recordDispatchAsComment = recordDispatchAsComment, release = release, startRecording = startRecording)
+    val __obj = js.Dynamic.literal(RecordedMacro = RecordedMacro, acquire = js.Any.fromFunction0(acquire), endRecording = js.Any.fromFunction0(endRecording), getRecordedMacro = js.Any.fromFunction0(getRecordedMacro), queryInterface = js.Any.fromFunction1(queryInterface), recordDispatch = js.Any.fromFunction2(recordDispatch), recordDispatchAsComment = js.Any.fromFunction2(recordDispatchAsComment), release = js.Any.fromFunction0(release), startRecording = js.Any.fromFunction1(startRecording))
   
     __obj.asInstanceOf[XDispatchRecorder]
   }

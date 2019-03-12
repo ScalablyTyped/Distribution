@@ -85,10 +85,10 @@ object Model {
     mapper: java.lang.String = null,
     maximumLength: scala.Int | scala.Double = null,
     minimumLength: scala.Int | scala.Double = null,
-    refreshBegin: js.Function1[/* e */ RefreshBeginEventArgs, scala.Unit] = null,
-    refreshComplete: js.Function1[/* e */ RefreshCompleteEventArgs, scala.Unit] = null,
-    refreshFailure: js.Function1[/* e */ RefreshFailureEventArgs, scala.Unit] = null,
-    refreshSuccess: js.Function1[/* e */ RefreshSuccessEventArgs, scala.Unit] = null,
+    refreshBegin: /* e */ RefreshBeginEventArgs => scala.Unit = null,
+    refreshComplete: /* e */ RefreshCompleteEventArgs => scala.Unit = null,
+    refreshFailure: /* e */ RefreshFailureEventArgs => scala.Unit = null,
+    refreshSuccess: /* e */ RefreshSuccessEventArgs => scala.Unit = null,
     requestMapper: java.lang.String = null,
     showAudioButton: js.UndefOr[scala.Boolean] = js.undefined,
     showRefreshButton: js.UndefOr[scala.Boolean] = js.undefined,
@@ -108,10 +108,10 @@ object Model {
     if (mapper != null) __obj.updateDynamic("mapper")(mapper)
     if (maximumLength != null) __obj.updateDynamic("maximumLength")(maximumLength.asInstanceOf[js.Any])
     if (minimumLength != null) __obj.updateDynamic("minimumLength")(minimumLength.asInstanceOf[js.Any])
-    if (refreshBegin != null) __obj.updateDynamic("refreshBegin")(refreshBegin)
-    if (refreshComplete != null) __obj.updateDynamic("refreshComplete")(refreshComplete)
-    if (refreshFailure != null) __obj.updateDynamic("refreshFailure")(refreshFailure)
-    if (refreshSuccess != null) __obj.updateDynamic("refreshSuccess")(refreshSuccess)
+    if (refreshBegin != null) __obj.updateDynamic("refreshBegin")(js.Any.fromFunction1(refreshBegin))
+    if (refreshComplete != null) __obj.updateDynamic("refreshComplete")(js.Any.fromFunction1(refreshComplete))
+    if (refreshFailure != null) __obj.updateDynamic("refreshFailure")(js.Any.fromFunction1(refreshFailure))
+    if (refreshSuccess != null) __obj.updateDynamic("refreshSuccess")(js.Any.fromFunction1(refreshSuccess))
     if (requestMapper != null) __obj.updateDynamic("requestMapper")(requestMapper)
     if (!js.isUndefined(showAudioButton)) __obj.updateDynamic("showAudioButton")(showAudioButton)
     if (!js.isUndefined(showRefreshButton)) __obj.updateDynamic("showRefreshButton")(showRefreshButton)

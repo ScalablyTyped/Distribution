@@ -15,7 +15,7 @@ trait MapShapeFeatureCreatedEvent extends MapEvent {
 object MapShapeFeatureCreatedEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Map,
     dataItem: js.Any = null,
@@ -23,7 +23,7 @@ object MapShapeFeatureCreatedEvent {
     layer: kendoDashUiLib.kendoNs.datavizNs.mapNs.layerNs.Shape = null,
     properties: js.Any = null
   ): MapShapeFeatureCreatedEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (dataItem != null) __obj.updateDynamic("dataItem")(dataItem)
     if (group != null) __obj.updateDynamic("group")(group)
     if (layer != null) __obj.updateDynamic("layer")(layer)

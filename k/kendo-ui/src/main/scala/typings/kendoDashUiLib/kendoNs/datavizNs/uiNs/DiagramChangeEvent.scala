@@ -13,13 +13,13 @@ trait DiagramChangeEvent extends DiagramEvent {
 object DiagramChangeEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Diagram,
     added: js.Any = null,
     removed: js.Any = null
   ): DiagramChangeEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (added != null) __obj.updateDynamic("added")(added)
     if (removed != null) __obj.updateDynamic("removed")(removed)
     __obj.asInstanceOf[DiagramChangeEvent]

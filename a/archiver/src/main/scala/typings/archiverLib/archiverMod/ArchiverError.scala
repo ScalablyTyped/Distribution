@@ -15,5 +15,9 @@ class ArchiverError protected ()
          // Since archiver format support is modular, we cannot enumerate all possible error codes, as the modules can throw arbitrary ones.
   /* CompleteClass */
   override var data: js.Any = js.native
+  /* CompleteClass */
+  override var message: java.lang.String = js.native
+  /* CompleteClass */
+  override var name: java.lang.String = js.native
 }
 

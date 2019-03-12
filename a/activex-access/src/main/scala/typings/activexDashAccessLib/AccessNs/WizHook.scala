@@ -124,7 +124,7 @@ class WizHook protected () extends js.Object {
   def SetDpBlockKeyInput(fBlockKeys: scala.Boolean): scala.Unit = js.native
   def SetVbaPassword(bstrDbName: java.lang.String, bstrConnect: java.lang.String, bstrPasswd: java.lang.String): scala.Boolean = js.native
   def SetWizGlob(lWhich: scala.Double, vValue: js.Any): scala.Unit = js.native
-  def SortStringArray(Array: activexDashInteropLib.SafeArray[java.lang.String]): scala.Unit = js.native
+  def SortStringArray(Array: stdLib.SafeArray[java.lang.String]): scala.Unit = js.native
   def SplitPath(
     Path: java.lang.String,
     Drive: java.lang.String,

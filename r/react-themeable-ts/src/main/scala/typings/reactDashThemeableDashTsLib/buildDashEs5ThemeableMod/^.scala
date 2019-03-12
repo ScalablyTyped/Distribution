@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-themeable-ts/build-es5/themeable", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val themeable: reactDashThemeableDashTsLib.buildDashEs5ThemeableMod.IStaticFn = js.native
+  val themeable: IStaticFn = js.native
 }
 

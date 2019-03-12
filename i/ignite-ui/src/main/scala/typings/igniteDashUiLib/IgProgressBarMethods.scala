@@ -13,12 +13,8 @@ trait IgProgressBarMethods extends js.Object {
 
 object IgProgressBarMethods {
   @scala.inline
-  def apply(
-    destroy: js.Function0[scala.Unit],
-    value: js.Function1[js.Object, scala.Unit],
-    widget: js.Function0[scala.Unit]
-  ): IgProgressBarMethods = {
-    val __obj = js.Dynamic.literal(destroy = destroy, value = value, widget = widget)
+  def apply(destroy: () => scala.Unit, value: js.Object => scala.Unit, widget: () => scala.Unit): IgProgressBarMethods = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), value = js.Any.fromFunction1(value), widget = js.Any.fromFunction0(widget))
   
     __obj.asInstanceOf[IgProgressBarMethods]
   }

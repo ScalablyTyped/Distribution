@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Acl extends js.Object {
-  var etag: etag
+  var etag: gapiDotCalendarLib.gapiNs.clientNs.calendarNs.etag
   var id: java.lang.String
   var kind: gapiDotCalendarLib.gapiDotCalendarLibStrings.`calendar#aclRule`
   var role: AccessRole

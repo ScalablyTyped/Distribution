@@ -18,7 +18,7 @@ object Alias {
   @scala.inline
   def apply(
     source: AstNode,
-    toJSON: js.Function0[js.Any],
+    toJSON: () => js.Any,
     `type`: yamlLib.yamlLibStrings.ALIAS,
     comment: java.lang.String = null,
     commentBefore: java.lang.String = null,
@@ -26,7 +26,7 @@ object Alias {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     tag: java.lang.String = null
   ): Alias = {
-    val __obj = js.Dynamic.literal(source = source, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(source = source, toJSON = js.Any.fromFunction0(toJSON))
     __obj.updateDynamic("type")(`type`)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore)

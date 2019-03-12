@@ -23,18 +23,18 @@ object IDataFunctionCall {
   @scala.inline
   def apply(
     DataFunction: mfilesLib.MFilesNs.MFDataFunction,
-    SetDataDate: js.Function0[scala.Unit],
-    SetDataDaysFrom: js.Function0[scala.Unit],
-    SetDataDaysTo: js.Function0[scala.Unit],
-    SetDataInitialCharGroup: js.Function1[scala.Double, scala.Unit],
-    SetDataIntegerSegment: js.Function1[scala.Double, scala.Unit],
-    SetDataLeftChars: js.Function1[scala.Double, scala.Unit],
-    SetDataMonth: js.Function0[scala.Unit],
-    SetDataNoOp: js.Function0[scala.Unit],
-    SetDataYear: js.Function0[scala.Unit],
-    SetDataYearAndMonth: js.Function0[scala.Unit]
+    SetDataDate: () => scala.Unit,
+    SetDataDaysFrom: () => scala.Unit,
+    SetDataDaysTo: () => scala.Unit,
+    SetDataInitialCharGroup: scala.Double => scala.Unit,
+    SetDataIntegerSegment: scala.Double => scala.Unit,
+    SetDataLeftChars: scala.Double => scala.Unit,
+    SetDataMonth: () => scala.Unit,
+    SetDataNoOp: () => scala.Unit,
+    SetDataYear: () => scala.Unit,
+    SetDataYearAndMonth: () => scala.Unit
   ): IDataFunctionCall = {
-    val __obj = js.Dynamic.literal(DataFunction = DataFunction, SetDataDate = SetDataDate, SetDataDaysFrom = SetDataDaysFrom, SetDataDaysTo = SetDataDaysTo, SetDataInitialCharGroup = SetDataInitialCharGroup, SetDataIntegerSegment = SetDataIntegerSegment, SetDataLeftChars = SetDataLeftChars, SetDataMonth = SetDataMonth, SetDataNoOp = SetDataNoOp, SetDataYear = SetDataYear, SetDataYearAndMonth = SetDataYearAndMonth)
+    val __obj = js.Dynamic.literal(DataFunction = DataFunction, SetDataDate = js.Any.fromFunction0(SetDataDate), SetDataDaysFrom = js.Any.fromFunction0(SetDataDaysFrom), SetDataDaysTo = js.Any.fromFunction0(SetDataDaysTo), SetDataInitialCharGroup = js.Any.fromFunction1(SetDataInitialCharGroup), SetDataIntegerSegment = js.Any.fromFunction1(SetDataIntegerSegment), SetDataLeftChars = js.Any.fromFunction1(SetDataLeftChars), SetDataMonth = js.Any.fromFunction0(SetDataMonth), SetDataNoOp = js.Any.fromFunction0(SetDataNoOp), SetDataYear = js.Any.fromFunction0(SetDataYear), SetDataYearAndMonth = js.Any.fromFunction0(SetDataYearAndMonth))
   
     __obj.asInstanceOf[IDataFunctionCall]
   }

@@ -22,10 +22,10 @@ trait GraticuleOptions extends js.Object {
 object GraticuleOptions {
   @scala.inline
   def apply(
-    latLabelFormatter: js.Function1[/* lat */ scala.Double, java.lang.String] = null,
+    latLabelFormatter: /* lat */ scala.Double => java.lang.String = null,
     latLabelPosition: scala.Int | scala.Double = null,
     latLabelStyle: openlayersLib.openlayersMod.styleNs.Text = null,
-    lonLabelFormatter: js.Function1[/* lon */ scala.Double, java.lang.String] = null,
+    lonLabelFormatter: /* lon */ scala.Double => java.lang.String = null,
     lonLabelPosition: scala.Int | scala.Double = null,
     lonLabelStyle: openlayersLib.openlayersMod.styleNs.Text = null,
     map: openlayersLib.openlayersMod.Map = null,
@@ -35,10 +35,10 @@ object GraticuleOptions {
     targetSize: scala.Int | scala.Double = null
   ): GraticuleOptions = {
     val __obj = js.Dynamic.literal()
-    if (latLabelFormatter != null) __obj.updateDynamic("latLabelFormatter")(latLabelFormatter)
+    if (latLabelFormatter != null) __obj.updateDynamic("latLabelFormatter")(js.Any.fromFunction1(latLabelFormatter))
     if (latLabelPosition != null) __obj.updateDynamic("latLabelPosition")(latLabelPosition.asInstanceOf[js.Any])
     if (latLabelStyle != null) __obj.updateDynamic("latLabelStyle")(latLabelStyle)
-    if (lonLabelFormatter != null) __obj.updateDynamic("lonLabelFormatter")(lonLabelFormatter)
+    if (lonLabelFormatter != null) __obj.updateDynamic("lonLabelFormatter")(js.Any.fromFunction1(lonLabelFormatter))
     if (lonLabelPosition != null) __obj.updateDynamic("lonLabelPosition")(lonLabelPosition.asInstanceOf[js.Any])
     if (lonLabelStyle != null) __obj.updateDynamic("lonLabelStyle")(lonLabelStyle)
     if (map != null) __obj.updateDynamic("map")(map)

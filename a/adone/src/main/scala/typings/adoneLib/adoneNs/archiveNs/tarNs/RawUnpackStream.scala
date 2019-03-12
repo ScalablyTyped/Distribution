@@ -27,7 +27,7 @@ class RawUnpackStream ()
     ]
   ): this.type = js.native
   @JSName("on")
-  def on_error(event: adoneLib.adoneLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def on_error(event: adoneLib.adoneLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_finish(event: adoneLib.adoneLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
@@ -55,7 +55,7 @@ class RawUnpackStream ()
     ]
   ): this.type = js.native
   @JSName("once")
-  def once_error(event: adoneLib.adoneLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def once_error(event: adoneLib.adoneLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("once")
   def once_finish(event: adoneLib.adoneLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("once")

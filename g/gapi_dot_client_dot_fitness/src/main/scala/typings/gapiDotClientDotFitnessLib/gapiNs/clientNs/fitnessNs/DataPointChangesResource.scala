@@ -13,12 +13,9 @@ trait DataPointChangesResource extends js.Object {
 object DataPointChangesResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotFitnessLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListDataPointChangesResponse]
-    ]
+    list: gapiDotClientDotFitnessLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ListDataPointChangesResponse]
   ): DataPointChangesResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[DataPointChangesResource]
   }

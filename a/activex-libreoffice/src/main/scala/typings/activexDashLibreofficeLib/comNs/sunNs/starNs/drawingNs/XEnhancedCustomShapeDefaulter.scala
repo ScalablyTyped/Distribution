@@ -429,12 +429,12 @@ trait XEnhancedCustomShapeDefaulter
 object XEnhancedCustomShapeDefaulter {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createCustomShapeDefaults: js.Function1[java.lang.String, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createCustomShapeDefaults: java.lang.String => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XEnhancedCustomShapeDefaulter = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createCustomShapeDefaults = createCustomShapeDefaults, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createCustomShapeDefaults = js.Any.fromFunction1(createCustomShapeDefaults), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XEnhancedCustomShapeDefaulter]
   }

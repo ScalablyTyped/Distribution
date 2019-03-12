@@ -12,12 +12,9 @@ trait Anon_Extend extends js.Object {
 object Anon_Extend {
   @scala.inline
   def apply(
-    extend: js.Function1[
-      waterlineLib.waterlineMod.WaterlineNs.CollectionDefinition, 
-      waterlineLib.waterlineMod.WaterlineNs.CollectionClass
-    ]
+    extend: waterlineLib.waterlineMod.WaterlineNs.CollectionDefinition => waterlineLib.waterlineMod.WaterlineNs.CollectionClass
   ): Anon_Extend = {
-    val __obj = js.Dynamic.literal(extend = extend)
+    val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend))
   
     __obj.asInstanceOf[Anon_Extend]
   }

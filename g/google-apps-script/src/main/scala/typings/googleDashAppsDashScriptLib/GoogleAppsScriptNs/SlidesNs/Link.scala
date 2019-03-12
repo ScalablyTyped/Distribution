@@ -17,14 +17,14 @@ trait Link extends js.Object {
 object Link {
   @scala.inline
   def apply(
-    getLinkType: js.Function0[LinkType],
-    getLinkedSlide: js.Function0[Slide],
-    getSlideId: js.Function0[java.lang.String],
-    getSlideIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getSlidePosition: js.Function0[SlidePosition],
-    getUrl: js.Function0[java.lang.String]
+    getLinkType: () => LinkType,
+    getLinkedSlide: () => Slide,
+    getSlideId: () => java.lang.String,
+    getSlideIndex: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getSlidePosition: () => SlidePosition,
+    getUrl: () => java.lang.String
   ): Link = {
-    val __obj = js.Dynamic.literal(getLinkType = getLinkType, getLinkedSlide = getLinkedSlide, getSlideId = getSlideId, getSlideIndex = getSlideIndex, getSlidePosition = getSlidePosition, getUrl = getUrl)
+    val __obj = js.Dynamic.literal(getLinkType = js.Any.fromFunction0(getLinkType), getLinkedSlide = js.Any.fromFunction0(getLinkedSlide), getSlideId = js.Any.fromFunction0(getSlideId), getSlideIndex = js.Any.fromFunction0(getSlideIndex), getSlidePosition = js.Any.fromFunction0(getSlidePosition), getUrl = js.Any.fromFunction0(getUrl))
   
     __obj.asInstanceOf[Link]
   }

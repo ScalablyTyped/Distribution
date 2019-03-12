@@ -15,7 +15,7 @@ object AntTreeNodeCheckedEvent {
   @scala.inline
   def apply(
     event: antdLib.antdLibStrings.check,
-    nativeEvent: reactLib.MouseEvent,
+    nativeEvent: stdLib.MouseEvent,
     node: AntTreeNode,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     checkedNodes: js.Array[AntTreeNode] = null

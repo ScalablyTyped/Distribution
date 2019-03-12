@@ -18,8 +18,8 @@ object ^ extends js.Object {
     /* runOnInit */ js.UndefOr[scala.Boolean], 
     /* utcOffset */ js.UndefOr[java.lang.String | scala.Double], 
     /* unrefTimeout */ js.UndefOr[scala.Boolean], 
-    cronLib.cronMod.CronJob
-  ]) | (js.Function1[/* options */ cronLib.cronMod.CronJobParameters, cronLib.cronMod.CronJob]) = js.native
+    CronJob
+  ]) | (js.Function1[/* options */ CronJobParameters, CronJob]) = js.native
   var sendAt: js.Function1[
     /* cronTime */ java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment, 
     momentLib.momentMod.momentNs.Moment
@@ -27,7 +27,7 @@ object ^ extends js.Object {
   var time: js.Function2[
     /* source */ java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment, 
     /* zone */ js.UndefOr[java.lang.String], 
-    cronLib.cronMod.CronTime
+    CronTime
   ] = js.native
   var timeout: js.Function1[
     /* cronTime */ java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment, 

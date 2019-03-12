@@ -14,6 +14,6 @@ object ^ extends js.Object {
     * @param options Options used to configure the end-user sync and update experience (e.g. when to check for updates?, show an prompt?, install the update immediately?).
     */
   def default(): js.Function = js.native
-  def default(options: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyOptions): js.Function = js.native
+  def default(options: GobyOptions): js.Function = js.native
 }
 

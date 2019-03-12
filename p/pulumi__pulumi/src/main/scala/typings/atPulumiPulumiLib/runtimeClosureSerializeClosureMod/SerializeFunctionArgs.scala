@@ -38,13 +38,13 @@ object SerializeFunctionArgs {
     exportName: java.lang.String = null,
     isFactoryFunction: js.UndefOr[scala.Boolean] = js.undefined,
     logResource: atPulumiPulumiLib.resourceMod.Resource = null,
-    serialize: js.Function1[/* o */ js.Any, scala.Boolean] = null
+    serialize: /* o */ js.Any => scala.Boolean = null
   ): SerializeFunctionArgs = {
     val __obj = js.Dynamic.literal()
     if (exportName != null) __obj.updateDynamic("exportName")(exportName)
     if (!js.isUndefined(isFactoryFunction)) __obj.updateDynamic("isFactoryFunction")(isFactoryFunction)
     if (logResource != null) __obj.updateDynamic("logResource")(logResource)
-    if (serialize != null) __obj.updateDynamic("serialize")(serialize)
+    if (serialize != null) __obj.updateDynamic("serialize")(js.Any.fromFunction1(serialize))
     __obj.asInstanceOf[SerializeFunctionArgs]
   }
 }

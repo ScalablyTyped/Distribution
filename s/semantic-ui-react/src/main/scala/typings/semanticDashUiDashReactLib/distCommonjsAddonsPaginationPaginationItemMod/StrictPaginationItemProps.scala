@@ -18,7 +18,7 @@ trait StrictPaginationItemProps extends js.Object {
     */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
       /* data */ PaginationItemProps, 
       scala.Unit
     ]
@@ -31,7 +31,7 @@ trait StrictPaginationItemProps extends js.Object {
     */
   var onKeyDown: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
       /* data */ PaginationItemProps, 
       scala.Unit
     ]
@@ -47,23 +47,15 @@ object StrictPaginationItemProps {
   def apply(
     active: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
-      /* data */ PaginationItemProps, 
-      scala.Unit
-    ] = null,
-    onKeyDown: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
-      /* data */ PaginationItemProps, 
-      scala.Unit
-    ] = null,
+    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ PaginationItemProps) => scala.Unit = null,
+    onKeyDown: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ PaginationItemProps) => scala.Unit = null,
     `type`: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ellipsisItem | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.firstItem | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.prevItem | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.pageItem | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.nextItem | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.lastItem = null
   ): StrictPaginationItemProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction2(onKeyDown))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictPaginationItemProps]
   }

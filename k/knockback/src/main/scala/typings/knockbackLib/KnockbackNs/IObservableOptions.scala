@@ -41,9 +41,9 @@ object IObservableOptions {
     localizer: LocalizedObservable = null,
     options: js.Any = null,
     path: java.lang.String = null,
-    read: js.Function0[_] = null,
+    read: () => _ = null,
     store: js.Any = null,
-    write: js.Function1[/* value */ js.Any, scala.Unit] = null
+    write: /* value */ js.Any => scala.Unit = null
   ): IObservableOptions = {
     val __obj = js.Dynamic.literal(key = key)
     if (args != null) __obj.updateDynamic("args")(args)
@@ -52,9 +52,9 @@ object IObservableOptions {
     if (localizer != null) __obj.updateDynamic("localizer")(localizer)
     if (options != null) __obj.updateDynamic("options")(options)
     if (path != null) __obj.updateDynamic("path")(path)
-    if (read != null) __obj.updateDynamic("read")(read)
+    if (read != null) __obj.updateDynamic("read")(js.Any.fromFunction0(read))
     if (store != null) __obj.updateDynamic("store")(store)
-    if (write != null) __obj.updateDynamic("write")(write)
+    if (write != null) __obj.updateDynamic("write")(js.Any.fromFunction1(write))
     __obj.asInstanceOf[IObservableOptions]
   }
 }

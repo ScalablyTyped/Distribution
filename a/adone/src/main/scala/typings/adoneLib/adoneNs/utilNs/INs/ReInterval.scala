@@ -13,12 +13,8 @@ trait ReInterval extends js.Object {
 
 object ReInterval {
   @scala.inline
-  def apply(
-    clear: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    reschedule: js.Function1[scala.Double, scala.Unit]
-  ): ReInterval = {
-    val __obj = js.Dynamic.literal(clear = clear, destroy = destroy, reschedule = reschedule)
+  def apply(clear: () => scala.Unit, destroy: () => scala.Unit, reschedule: scala.Double => scala.Unit): ReInterval = {
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), destroy = js.Any.fromFunction0(destroy), reschedule = js.Any.fromFunction1(reschedule))
   
     __obj.asInstanceOf[ReInterval]
   }

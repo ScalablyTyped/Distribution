@@ -9,11 +9,11 @@ trait UpdateNotificationRequest extends js.Object {
   /**
     * The accountId that is associated with the budget whose notification you want to update.
     */
-  var AccountId: AccountId
+  var AccountId: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.AccountId
   /**
     * The name of the budget whose notification you want to update.
     */
-  var BudgetName: BudgetName
+  var BudgetName: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.BudgetName
   /**
     * The updated notification to be associated with a budget.
     */

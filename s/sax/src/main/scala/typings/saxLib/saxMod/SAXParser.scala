@@ -13,7 +13,7 @@ class SAXParser protected () extends js.Object {
   var ENTITIES: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   var closed: scala.Boolean = js.native
   var column: scala.Double = js.native
-  var error: nodeLib.Error = js.native
+  var error: stdLib.Error = js.native
   // Members
   var line: scala.Double = js.native
   var opt: SAXOptions = js.native
@@ -34,7 +34,7 @@ class SAXParser protected () extends js.Object {
   def ondoctype(doctype: java.lang.String): scala.Unit = js.native
   def onend(): scala.Unit = js.native
   // Events
-  def onerror(e: nodeLib.Error): scala.Unit = js.native
+  def onerror(e: stdLib.Error): scala.Unit = js.native
   def onopencdata(): scala.Unit = js.native
   def onopennamespace(ns: saxLib.Anon_Prefix): scala.Unit = js.native
   def onopentag(tag: QualifiedTag): scala.Unit = js.native

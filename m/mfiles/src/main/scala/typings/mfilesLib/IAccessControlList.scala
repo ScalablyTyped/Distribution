@@ -22,15 +22,15 @@ object IAccessControlList {
   def apply(
     AutomaticComponents: IAccessControlListComponentContainer,
     CheckedOutToUserID: scala.Double,
-    Clone: js.Function0[IAccessControlList],
-    CloneFrom: js.Function1[IAccessControlList, scala.Unit],
+    Clone: () => IAccessControlList,
+    CloneFrom: IAccessControlList => scala.Unit,
     CustomComponent: IAccessControlListComponent,
-    EqualTo: js.Function1[IAccessControlList, scala.Boolean],
+    EqualTo: IAccessControlList => scala.Boolean,
     HasCheckedOutToUserID: scala.Boolean,
-    HasIdenticalPermissions: js.Function1[IAccessControlList, scala.Boolean],
+    HasIdenticalPermissions: IAccessControlList => scala.Boolean,
     IsFullyAuthoritative: scala.Boolean
   ): IAccessControlList = {
-    val __obj = js.Dynamic.literal(AutomaticComponents = AutomaticComponents, CheckedOutToUserID = CheckedOutToUserID, Clone = Clone, CloneFrom = CloneFrom, CustomComponent = CustomComponent, EqualTo = EqualTo, HasCheckedOutToUserID = HasCheckedOutToUserID, HasIdenticalPermissions = HasIdenticalPermissions, IsFullyAuthoritative = IsFullyAuthoritative)
+    val __obj = js.Dynamic.literal(AutomaticComponents = AutomaticComponents, CheckedOutToUserID = CheckedOutToUserID, Clone = js.Any.fromFunction0(Clone), CloneFrom = js.Any.fromFunction1(CloneFrom), CustomComponent = CustomComponent, EqualTo = js.Any.fromFunction1(EqualTo), HasCheckedOutToUserID = HasCheckedOutToUserID, HasIdenticalPermissions = js.Any.fromFunction1(HasIdenticalPermissions), IsFullyAuthoritative = IsFullyAuthoritative)
   
     __obj.asInstanceOf[IAccessControlList]
   }

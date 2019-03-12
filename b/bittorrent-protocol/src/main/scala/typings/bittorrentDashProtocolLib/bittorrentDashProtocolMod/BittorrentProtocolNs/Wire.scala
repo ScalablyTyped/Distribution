@@ -160,7 +160,7 @@ trait Wire
     index: scala.Double,
     offset: scala.Double,
     length: scala.Double,
-    cb: js.Function1[/* err */ nodeLib.Error, T]
+    cb: js.Function1[/* err */ stdLib.Error, T]
   ): T | scala.Unit = js.native
   def setKeepAlive(enable: scala.Boolean): scala.Unit = js.native
   def setTimeot(ms: scala.Double): scala.Unit = js.native

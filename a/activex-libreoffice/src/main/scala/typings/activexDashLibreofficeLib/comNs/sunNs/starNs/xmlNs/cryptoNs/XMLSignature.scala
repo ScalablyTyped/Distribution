@@ -13,14 +13,14 @@ trait XMLSignature
 object XMLSignature {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    generate: js.Function2[XXMLSignatureTemplate, XSecurityEnvironment, XXMLSignatureTemplate],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    validate: js.Function2[XXMLSignatureTemplate, XXMLSecurityContext, XXMLSignatureTemplate]
+    acquire: () => scala.Unit,
+    generate: (XXMLSignatureTemplate, XSecurityEnvironment) => XXMLSignatureTemplate,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    validate: (XXMLSignatureTemplate, XXMLSecurityContext) => XXMLSignatureTemplate
   ): XMLSignature = {
-    val __obj = js.Dynamic.literal(acquire = acquire, generate = generate, initialize = initialize, queryInterface = queryInterface, release = release, validate = validate)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), generate = js.Any.fromFunction2(generate), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), validate = js.Any.fromFunction2(validate))
   
     __obj.asInstanceOf[XMLSignature]
   }

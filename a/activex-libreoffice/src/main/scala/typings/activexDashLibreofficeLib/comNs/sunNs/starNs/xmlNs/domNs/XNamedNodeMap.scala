@@ -50,19 +50,19 @@ object XNamedNodeMap {
   @scala.inline
   def apply(
     Length: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getLength: js.Function0[scala.Double],
-    getNamedItem: js.Function1[java.lang.String, XNode],
-    getNamedItemNS: js.Function2[java.lang.String, java.lang.String, XNode],
-    item: js.Function1[scala.Double, XNode],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeNamedItem: js.Function1[java.lang.String, XNode],
-    removeNamedItemNS: js.Function2[java.lang.String, java.lang.String, XNode],
-    setNamedItem: js.Function1[XNode, XNode],
-    setNamedItemNS: js.Function1[XNode, XNode]
+    acquire: () => scala.Unit,
+    getLength: () => scala.Double,
+    getNamedItem: java.lang.String => XNode,
+    getNamedItemNS: (java.lang.String, java.lang.String) => XNode,
+    item: scala.Double => XNode,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeNamedItem: java.lang.String => XNode,
+    removeNamedItemNS: (java.lang.String, java.lang.String) => XNode,
+    setNamedItem: XNode => XNode,
+    setNamedItemNS: XNode => XNode
   ): XNamedNodeMap = {
-    val __obj = js.Dynamic.literal(Length = Length, acquire = acquire, getLength = getLength, getNamedItem = getNamedItem, getNamedItemNS = getNamedItemNS, item = item, queryInterface = queryInterface, release = release, removeNamedItem = removeNamedItem, removeNamedItemNS = removeNamedItemNS, setNamedItem = setNamedItem, setNamedItemNS = setNamedItemNS)
+    val __obj = js.Dynamic.literal(Length = Length, acquire = js.Any.fromFunction0(acquire), getLength = js.Any.fromFunction0(getLength), getNamedItem = js.Any.fromFunction1(getNamedItem), getNamedItemNS = js.Any.fromFunction2(getNamedItemNS), item = js.Any.fromFunction1(item), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeNamedItem = js.Any.fromFunction1(removeNamedItem), removeNamedItemNS = js.Any.fromFunction2(removeNamedItemNS), setNamedItem = js.Any.fromFunction1(setNamedItem), setNamedItemNS = js.Any.fromFunction1(setNamedItemNS))
   
     __obj.asInstanceOf[XNamedNodeMap]
   }

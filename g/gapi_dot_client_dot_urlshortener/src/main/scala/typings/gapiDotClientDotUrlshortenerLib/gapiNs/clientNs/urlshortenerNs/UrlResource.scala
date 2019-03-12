@@ -17,20 +17,11 @@ trait UrlResource extends js.Object {
 object UrlResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotUrlshortenerLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Url]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotUrlshortenerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Url]
-    ],
-    list: js.Function1[
-      gapiDotClientDotUrlshortenerLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UrlHistory]
-    ]
+    get: gapiDotClientDotUrlshortenerLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Url],
+    insert: gapiDotClientDotUrlshortenerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Url],
+    list: gapiDotClientDotUrlshortenerLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[UrlHistory]
   ): UrlResource = {
-    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[UrlResource]
   }

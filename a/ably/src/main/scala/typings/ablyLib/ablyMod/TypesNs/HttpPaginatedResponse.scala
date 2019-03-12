@@ -19,19 +19,19 @@ trait HttpPaginatedResponse
 object HttpPaginatedResponse {
   @scala.inline
   def apply(
-    current: js.Function1[paginatedResultCallback[js.Any], scala.Unit],
+    current: paginatedResultCallback[js.Any] => scala.Unit,
     errorCode: scala.Double,
     errorMessage: java.lang.String,
-    first: js.Function1[paginatedResultCallback[js.Any], scala.Unit],
-    hasNext: js.Function0[scala.Boolean],
+    first: paginatedResultCallback[js.Any] => scala.Unit,
+    hasNext: () => scala.Boolean,
     headers: js.Any,
-    isLast: js.Function0[scala.Boolean],
+    isLast: () => scala.Boolean,
     items: js.Array[java.lang.String],
-    next: js.Function1[paginatedResultCallback[js.Any], scala.Unit],
+    next: paginatedResultCallback[js.Any] => scala.Unit,
     statusCode: scala.Double,
     success: scala.Boolean
   ): HttpPaginatedResponse = {
-    val __obj = js.Dynamic.literal(current = current, errorCode = errorCode, errorMessage = errorMessage, first = first, hasNext = hasNext, headers = headers, isLast = isLast, items = items, next = next, statusCode = statusCode, success = success)
+    val __obj = js.Dynamic.literal(current = js.Any.fromFunction1(current), errorCode = errorCode, errorMessage = errorMessage, first = js.Any.fromFunction1(first), hasNext = js.Any.fromFunction0(hasNext), headers = headers, isLast = js.Any.fromFunction0(isLast), items = items, next = js.Any.fromFunction1(next), statusCode = statusCode, success = success)
   
     __obj.asInstanceOf[HttpPaginatedResponse]
   }

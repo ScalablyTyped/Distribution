@@ -88,19 +88,19 @@ object XMap {
     ElementType: activexDashLibreofficeLib.`type`,
     KeyType: activexDashLibreofficeLib.`type`,
     ValueType: activexDashLibreofficeLib.`type`,
-    acquire: js.Function0[scala.Unit],
-    clear: js.Function0[scala.Unit],
-    containsKey: js.Function1[js.Any, scala.Boolean],
-    containsValue: js.Function1[js.Any, scala.Boolean],
-    get: js.Function1[js.Any, js.Any],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    hasElements: js.Function0[scala.Boolean],
-    put: js.Function2[js.Any, js.Any, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    remove: js.Function1[js.Any, js.Any]
+    acquire: () => scala.Unit,
+    clear: () => scala.Unit,
+    containsKey: js.Any => scala.Boolean,
+    containsValue: js.Any => scala.Boolean,
+    get: js.Any => js.Any,
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    hasElements: () => scala.Boolean,
+    put: (js.Any, js.Any) => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    remove: js.Any => js.Any
   ): XMap = {
-    val __obj = js.Dynamic.literal(ElementType = ElementType, KeyType = KeyType, ValueType = ValueType, acquire = acquire, clear = clear, containsKey = containsKey, containsValue = containsValue, get = get, getElementType = getElementType, hasElements = hasElements, put = put, queryInterface = queryInterface, release = release, remove = remove)
+    val __obj = js.Dynamic.literal(ElementType = ElementType, KeyType = KeyType, ValueType = ValueType, acquire = js.Any.fromFunction0(acquire), clear = js.Any.fromFunction0(clear), containsKey = js.Any.fromFunction1(containsKey), containsValue = js.Any.fromFunction1(containsValue), get = js.Any.fromFunction1(get), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), put = js.Any.fromFunction2(put), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), remove = js.Any.fromFunction1(remove))
   
     __obj.asInstanceOf[XMap]
   }

@@ -23,12 +23,12 @@ trait XClipboardFactory
 object XClipboardFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createClipboard: js.Function1[java.lang.String, XClipboard],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createClipboard: java.lang.String => XClipboard,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XClipboardFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createClipboard = createClipboard, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createClipboard = js.Any.fromFunction1(createClipboard), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XClipboardFactory]
   }

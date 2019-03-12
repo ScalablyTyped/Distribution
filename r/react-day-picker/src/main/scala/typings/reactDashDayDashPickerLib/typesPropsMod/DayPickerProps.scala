@@ -14,8 +14,8 @@ trait DayPickerProps extends js.Object {
   var classNames: js.UndefOr[reactDashDayDashPickerLib.typesCommonMod.ClassNames] = js.undefined
   var containerProps: js.UndefOr[
     reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
+      reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement], 
+      stdLib.HTMLDivElement
     ]
   ] = js.undefined
   var dir: js.UndefOr[java.lang.String] = js.undefined
@@ -39,12 +39,12 @@ trait DayPickerProps extends js.Object {
   ] = js.undefined
   var numberOfMonths: js.UndefOr[scala.Double] = js.undefined
   var onBlur: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement], scala.Unit]
+    js.Function1[/* e */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLDivElement], scala.Unit]
   ] = js.undefined
   var onCaptionClick: js.UndefOr[
     js.Function2[
       /* month */ stdLib.Date, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -52,7 +52,7 @@ trait DayPickerProps extends js.Object {
     js.Function3[
       /* day */ stdLib.Date, 
       /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -60,7 +60,7 @@ trait DayPickerProps extends js.Object {
     js.Function3[
       /* day */ stdLib.Date, 
       /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLDivElement], 
+      /* e */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLDivElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -68,7 +68,7 @@ trait DayPickerProps extends js.Object {
     js.Function3[
       /* day */ stdLib.Date, 
       /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -76,7 +76,7 @@ trait DayPickerProps extends js.Object {
     js.Function3[
       /* day */ stdLib.Date, 
       /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -84,7 +84,7 @@ trait DayPickerProps extends js.Object {
     js.Function3[
       /* day */ stdLib.Date, 
       /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -92,7 +92,7 @@ trait DayPickerProps extends js.Object {
     js.Function3[
       /* day */ stdLib.Date, 
       /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -100,7 +100,7 @@ trait DayPickerProps extends js.Object {
     js.Function3[
       /* day */ stdLib.Date, 
       /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLDivElement], 
+      /* e */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLDivElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -108,25 +108,22 @@ trait DayPickerProps extends js.Object {
     js.Function3[
       /* day */ stdLib.Date, 
       /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLDivElement], 
+      /* e */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLDivElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onFocus: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement], scala.Unit]
+    js.Function1[/* e */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLDivElement], scala.Unit]
   ] = js.undefined
   var onKeyDown: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLDivElement], 
-      scala.Unit
-    ]
+    js.Function1[/* e */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLDivElement], scala.Unit]
   ] = js.undefined
   var onMonthChange: js.UndefOr[js.Function1[/* month */ stdLib.Date, scala.Unit]] = js.undefined
   var onTodayButtonClick: js.UndefOr[
     js.Function3[
       /* day */ stdLib.Date, 
       /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -134,7 +131,7 @@ trait DayPickerProps extends js.Object {
     js.Function3[
       /* weekNumber */ scala.Double, 
       /* days */ js.Array[stdLib.Date], 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -178,8 +175,8 @@ object DayPickerProps {
     className: java.lang.String = null,
     classNames: reactDashDayDashPickerLib.typesCommonMod.ClassNames = null,
     containerProps: reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
+      reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement], 
+      stdLib.HTMLDivElement
     ] = null,
     dir: java.lang.String = null,
     disabledDays: reactDashDayDashPickerLib.typesCommonMod.Modifier | js.Array[reactDashDayDashPickerLib.typesCommonMod.Modifier] = null,
@@ -197,90 +194,24 @@ object DayPickerProps {
     months: js.Array[java.lang.String] = null,
     navbarElement: reactLib.reactMod.ReactNs.ReactElement[stdLib.Partial[NavbarElementProps]] | (reactLib.reactMod.ReactNs.ComponentClass[NavbarElementProps, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.SFC[NavbarElementProps] = null,
     numberOfMonths: scala.Int | scala.Double = null,
-    onBlur: js.Function1[/* e */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement], scala.Unit] = null,
-    onCaptionClick: js.Function2[
-      /* month */ stdLib.Date, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
-    onDayClick: js.Function3[
-      /* day */ stdLib.Date, 
-      /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
-    onDayKeyDown: js.Function3[
-      /* day */ stdLib.Date, 
-      /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLDivElement], 
-      scala.Unit
-    ] = null,
-    onDayMouseDown: js.Function3[
-      /* day */ stdLib.Date, 
-      /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
-    onDayMouseEnter: js.Function3[
-      /* day */ stdLib.Date, 
-      /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
-    onDayMouseLeave: js.Function3[
-      /* day */ stdLib.Date, 
-      /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
-    onDayMouseUp: js.Function3[
-      /* day */ stdLib.Date, 
-      /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
-    onDayTouchEnd: js.Function3[
-      /* day */ stdLib.Date, 
-      /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLDivElement], 
-      scala.Unit
-    ] = null,
-    onDayTouchStart: js.Function3[
-      /* day */ stdLib.Date, 
-      /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLDivElement], 
-      scala.Unit
-    ] = null,
-    onFocus: js.Function1[/* e */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement], scala.Unit] = null,
-    onKeyDown: js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLDivElement], 
-      scala.Unit
-    ] = null,
-    onMonthChange: js.Function1[/* month */ stdLib.Date, scala.Unit] = null,
-    onTodayButtonClick: js.Function3[
-      /* day */ stdLib.Date, 
-      /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
-    onWeekClick: js.Function3[
-      /* weekNumber */ scala.Double, 
-      /* days */ js.Array[stdLib.Date], 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
+    onBlur: /* e */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLDivElement] => scala.Unit = null,
+    onCaptionClick: (/* month */ stdLib.Date, /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onDayClick: (/* day */ stdLib.Date, /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onDayKeyDown: (/* day */ stdLib.Date, /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, /* e */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLDivElement]) => scala.Unit = null,
+    onDayMouseDown: (/* day */ stdLib.Date, /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onDayMouseEnter: (/* day */ stdLib.Date, /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onDayMouseLeave: (/* day */ stdLib.Date, /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onDayMouseUp: (/* day */ stdLib.Date, /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onDayTouchEnd: (/* day */ stdLib.Date, /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, /* e */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLDivElement]) => scala.Unit = null,
+    onDayTouchStart: (/* day */ stdLib.Date, /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, /* e */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLDivElement]) => scala.Unit = null,
+    onFocus: /* e */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLDivElement] => scala.Unit = null,
+    onKeyDown: /* e */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLDivElement] => scala.Unit = null,
+    onMonthChange: /* month */ stdLib.Date => scala.Unit = null,
+    onTodayButtonClick: (/* day */ stdLib.Date, /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLButtonElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onWeekClick: (/* weekNumber */ scala.Double, /* days */ js.Array[stdLib.Date], /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
     pagedNavigation: js.UndefOr[scala.Boolean] = js.undefined,
-    renderDay: js.Function2[
-      /* date */ stdLib.Date, 
-      /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
-    renderWeek: js.Function3[
-      /* weekNumber */ scala.Double, 
-      /* week */ js.Array[stdLib.Date], 
-      /* month */ stdLib.Date, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    renderDay: (/* date */ stdLib.Date, /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers) => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderWeek: (/* weekNumber */ scala.Double, /* week */ js.Array[stdLib.Date], /* month */ stdLib.Date) => reactLib.reactMod.ReactNs.ReactNode = null,
     reverseMonths: js.UndefOr[scala.Boolean] = js.undefined,
     selectedDays: reactDashDayDashPickerLib.typesCommonMod.Modifier | js.Array[reactDashDayDashPickerLib.typesCommonMod.Modifier] = null,
     showOutsideDays: js.UndefOr[scala.Boolean] = js.undefined,
@@ -314,24 +245,24 @@ object DayPickerProps {
     if (months != null) __obj.updateDynamic("months")(months)
     if (navbarElement != null) __obj.updateDynamic("navbarElement")(navbarElement.asInstanceOf[js.Any])
     if (numberOfMonths != null) __obj.updateDynamic("numberOfMonths")(numberOfMonths.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onCaptionClick != null) __obj.updateDynamic("onCaptionClick")(onCaptionClick)
-    if (onDayClick != null) __obj.updateDynamic("onDayClick")(onDayClick)
-    if (onDayKeyDown != null) __obj.updateDynamic("onDayKeyDown")(onDayKeyDown)
-    if (onDayMouseDown != null) __obj.updateDynamic("onDayMouseDown")(onDayMouseDown)
-    if (onDayMouseEnter != null) __obj.updateDynamic("onDayMouseEnter")(onDayMouseEnter)
-    if (onDayMouseLeave != null) __obj.updateDynamic("onDayMouseLeave")(onDayMouseLeave)
-    if (onDayMouseUp != null) __obj.updateDynamic("onDayMouseUp")(onDayMouseUp)
-    if (onDayTouchEnd != null) __obj.updateDynamic("onDayTouchEnd")(onDayTouchEnd)
-    if (onDayTouchStart != null) __obj.updateDynamic("onDayTouchStart")(onDayTouchStart)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onMonthChange != null) __obj.updateDynamic("onMonthChange")(onMonthChange)
-    if (onTodayButtonClick != null) __obj.updateDynamic("onTodayButtonClick")(onTodayButtonClick)
-    if (onWeekClick != null) __obj.updateDynamic("onWeekClick")(onWeekClick)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onCaptionClick != null) __obj.updateDynamic("onCaptionClick")(js.Any.fromFunction2(onCaptionClick))
+    if (onDayClick != null) __obj.updateDynamic("onDayClick")(js.Any.fromFunction3(onDayClick))
+    if (onDayKeyDown != null) __obj.updateDynamic("onDayKeyDown")(js.Any.fromFunction3(onDayKeyDown))
+    if (onDayMouseDown != null) __obj.updateDynamic("onDayMouseDown")(js.Any.fromFunction3(onDayMouseDown))
+    if (onDayMouseEnter != null) __obj.updateDynamic("onDayMouseEnter")(js.Any.fromFunction3(onDayMouseEnter))
+    if (onDayMouseLeave != null) __obj.updateDynamic("onDayMouseLeave")(js.Any.fromFunction3(onDayMouseLeave))
+    if (onDayMouseUp != null) __obj.updateDynamic("onDayMouseUp")(js.Any.fromFunction3(onDayMouseUp))
+    if (onDayTouchEnd != null) __obj.updateDynamic("onDayTouchEnd")(js.Any.fromFunction3(onDayTouchEnd))
+    if (onDayTouchStart != null) __obj.updateDynamic("onDayTouchStart")(js.Any.fromFunction3(onDayTouchStart))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
+    if (onMonthChange != null) __obj.updateDynamic("onMonthChange")(js.Any.fromFunction1(onMonthChange))
+    if (onTodayButtonClick != null) __obj.updateDynamic("onTodayButtonClick")(js.Any.fromFunction3(onTodayButtonClick))
+    if (onWeekClick != null) __obj.updateDynamic("onWeekClick")(js.Any.fromFunction3(onWeekClick))
     if (!js.isUndefined(pagedNavigation)) __obj.updateDynamic("pagedNavigation")(pagedNavigation)
-    if (renderDay != null) __obj.updateDynamic("renderDay")(renderDay)
-    if (renderWeek != null) __obj.updateDynamic("renderWeek")(renderWeek)
+    if (renderDay != null) __obj.updateDynamic("renderDay")(js.Any.fromFunction2(renderDay))
+    if (renderWeek != null) __obj.updateDynamic("renderWeek")(js.Any.fromFunction3(renderWeek))
     if (!js.isUndefined(reverseMonths)) __obj.updateDynamic("reverseMonths")(reverseMonths)
     if (selectedDays != null) __obj.updateDynamic("selectedDays")(selectedDays.asInstanceOf[js.Any])
     if (!js.isUndefined(showOutsideDays)) __obj.updateDynamic("showOutsideDays")(showOutsideDays)

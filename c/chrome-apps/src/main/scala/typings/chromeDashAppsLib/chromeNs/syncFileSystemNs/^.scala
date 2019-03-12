@@ -36,12 +36,7 @@ object ^ extends js.Object {
   val SyncAction: chromeDashAppsLib.Anon_ADDED = js.native
   val SyncDirection: chromeDashAppsLib.Anon_LOCALTOREMOTE = js.native
   /** Fired when a file has been updated by the background sync service. */
-  val onFileStatusChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[
-      /* detail */ chromeDashAppsLib.chromeNs.syncFileSystemNs.FileStatusChangedDetail, 
-      scala.Unit
-    ]
-  ] = js.native
+  val onFileStatusChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* detail */ FileStatusChangedDetail, scala.Unit]] = js.native
   /**
     * Fired when an error or other status change has happened in the sync backend
     * (for example, when the sync is temporarily disabled due to network or authentication error).
@@ -88,10 +83,7 @@ object ^ extends js.Object {
   /** Returns each FileStatus for the given fileEntry array. Typically called with the result from dirReader.readEntries(). */
   def getFileStatuses(
     fileEntries: js.Array[filesystemLib.FileEntry],
-    callback: js.Function1[
-      /* status */ js.Array[chromeDashAppsLib.chromeNs.syncFileSystemNs.FileStatusInfo], 
-      scala.Unit
-    ]
+    callback: js.Function1[/* status */ js.Array[FileStatusInfo], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Returns the current sync backend status.

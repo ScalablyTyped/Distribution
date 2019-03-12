@@ -31,28 +31,28 @@ object Props {
     cacheGetRequests: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     className: java.lang.String = null,
-    onError: js.Function1[/* error */ RequestError | InlineSVGError, scala.Unit] = null,
-    onLoad: js.Function2[/* src */ stdLib.URL | java.lang.String, /* isCached */ scala.Boolean, scala.Unit] = null,
+    onError: /* error */ RequestError | InlineSVGError => scala.Unit = null,
+    onLoad: (/* src */ stdLib.URL | java.lang.String, /* isCached */ scala.Boolean) => scala.Unit = null,
     preloader: reactLib.reactMod.ReactNs.ReactNode = null,
     style: js.Object = null,
-    supportTest: js.Function0[scala.Unit] = null,
+    supportTest: () => scala.Unit = null,
     uniqueHash: java.lang.String = null,
     uniquifyIDs: js.UndefOr[scala.Boolean] = js.undefined,
-    wrapper: js.Function0[reactLib.reactMod.ReactNs.ReactNode] = null
+    wrapper: () => reactLib.reactMod.ReactNs.ReactNode = null
   ): Props = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL)
     if (!js.isUndefined(cacheGetRequests)) __obj.updateDynamic("cacheGetRequests")(cacheGetRequests)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction2(onLoad))
     if (preloader != null) __obj.updateDynamic("preloader")(preloader.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
-    if (supportTest != null) __obj.updateDynamic("supportTest")(supportTest)
+    if (supportTest != null) __obj.updateDynamic("supportTest")(js.Any.fromFunction0(supportTest))
     if (uniqueHash != null) __obj.updateDynamic("uniqueHash")(uniqueHash)
     if (!js.isUndefined(uniquifyIDs)) __obj.updateDynamic("uniquifyIDs")(uniquifyIDs)
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
+    if (wrapper != null) __obj.updateDynamic("wrapper")(js.Any.fromFunction0(wrapper))
     __obj.asInstanceOf[Props]
   }
 }

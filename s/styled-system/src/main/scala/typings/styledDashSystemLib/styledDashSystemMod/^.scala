@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val defaultBreakpoints: js.Array[java.lang.String] = js.native
-  val styles: styledDashSystemLib.styledDashSystemMod.StylesProps = js.native
+  val styles: StylesProps = js.native
   def alignContent(args: js.Any*): js.Any = js.native
   def alignItems(args: js.Any*): js.Any = js.native
   def alignSelf(args: js.Any*): js.Any = js.native
@@ -85,14 +85,14 @@ object ^ extends js.Object {
   def sizeHeight(args: js.Any*): js.Any = js.native
   def sizeWidth(args: js.Any*): js.Any = js.native
   def space(args: js.Any*): js.Any = js.native
-  def style(args: styledDashSystemLib.styledDashSystemMod.LowLevelStylefunctionArguments): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
+  def style(args: LowLevelStylefunctionArguments): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def textAlign(args: js.Any*): js.Any = js.native
   def textColor(args: js.Any*): js.Any = js.native
   def textStyle(args: js.Any*): js.Any = js.native
   def themeGet(keys: java.lang.String): js.Any = js.native
   def themeGet(keys: java.lang.String, fallback: java.lang.String): js.Any = js.native
   def top(args: js.Any*): js.Any = js.native
-  def variant(props: styledDashSystemLib.styledDashSystemMod.VariantArgs): js.Function1[/* repeated */ js.Any, _] = js.native
+  def variant(props: VariantArgs): js.Function1[/* repeated */ js.Any, _] = js.native
   def verticalAlign(args: js.Any*): js.Any = js.native
   def width(args: js.Any*): js.Any = js.native
   def zIndex(args: js.Any*): js.Any = js.native

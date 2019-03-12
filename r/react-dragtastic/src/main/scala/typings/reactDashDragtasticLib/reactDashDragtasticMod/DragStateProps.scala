@@ -17,10 +17,10 @@ trait DragStateProps extends js.Object {
 object DragStateProps {
   @scala.inline
   def apply(
-    children: js.Function1[State, reactLib.reactMod.ReactNs.ReactNode],
+    children: State => reactLib.reactMod.ReactNs.ReactNode,
     subscribeTo: js.Array[java.lang.String] = null
   ): DragStateProps = {
-    val __obj = js.Dynamic.literal(children = children)
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     if (subscribeTo != null) __obj.updateDynamic("subscribeTo")(subscribeTo)
     __obj.asInstanceOf[DragStateProps]
   }

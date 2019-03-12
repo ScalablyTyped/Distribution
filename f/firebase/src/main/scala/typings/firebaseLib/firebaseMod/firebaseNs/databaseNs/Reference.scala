@@ -159,7 +159,7 @@ trait Reference extends Query {
     */
   def push(): ThenableReference = js.native
   def push(value: js.Any): ThenableReference = js.native
-  def push(value: js.Any, onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]): ThenableReference = js.native
+  def push(value: js.Any, onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]): ThenableReference = js.native
   /**
     * Removes the data at this Database location.
     *
@@ -188,7 +188,7 @@ trait Reference extends Query {
     * @return {!firebase.Promise<void>} Resolves when remove on server is complete.
     */
   def remove(): js.Promise[_] = js.native
-  def remove(onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]): js.Promise[_] = js.native
+  def remove(onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]): js.Promise[_] = js.native
   /**
     * Writes data to this Database location.
     *
@@ -249,7 +249,7 @@ trait Reference extends Query {
     * @return {!firebase.Promise<void>} Resolves when write to server is complete.
     */
   def set(value: js.Any): js.Promise[_] = js.native
-  def set(value: js.Any, onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]): js.Promise[_] = js.native
+  def set(value: js.Any, onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]): js.Promise[_] = js.native
   /**
     * Sets a priority for the data at this Database location.
     *
@@ -259,9 +259,9 @@ trait Reference extends Query {
     *  https://firebase.google.com/docs/database/web/lists-of-data#sorting_and_filtering_data
     *  Sorting and filtering data}).
     */
-  def setPriority(priority: java.lang.String, onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]): js.Promise[_] = js.native
-  def setPriority(priority: scala.Double, onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]): js.Promise[_] = js.native
-  def setPriority(priority: scala.Null, onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]): js.Promise[_] = js.native
+  def setPriority(priority: java.lang.String, onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]): js.Promise[_] = js.native
+  def setPriority(priority: scala.Double, onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]): js.Promise[_] = js.native
+  def setPriority(priority: scala.Null, onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]): js.Promise[_] = js.native
   def setWithPriority(newVal: js.Any): js.Promise[_] = js.native
   /**
     * Writes data the Database location. Like `set()` but also specifies the
@@ -277,18 +277,18 @@ trait Reference extends Query {
   def setWithPriority(
     newVal: js.Any,
     newPriority: java.lang.String,
-    onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]
+    onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]
   ): js.Promise[_] = js.native
   def setWithPriority(newVal: js.Any, newPriority: scala.Double): js.Promise[_] = js.native
   def setWithPriority(
     newVal: js.Any,
     newPriority: scala.Double,
-    onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]
+    onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]
   ): js.Promise[_] = js.native
   def setWithPriority(
     newVal: js.Any,
     newPriority: scala.Null,
-    onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]
+    onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]
   ): js.Promise[_] = js.native
   /**
     * Atomically modifies the data at this location.
@@ -383,7 +383,7 @@ trait Reference extends Query {
   def transaction(
     transactionUpdate: js.Function1[/* a */ js.Any, _],
     onComplete: js.Function3[
-      /* a */ nodeLib.Error | scala.Null, 
+      /* a */ stdLib.Error | scala.Null, 
       /* b */ scala.Boolean, 
       /* c */ DataSnapshot | scala.Null, 
       _
@@ -392,7 +392,7 @@ trait Reference extends Query {
   def transaction(
     transactionUpdate: js.Function1[/* a */ js.Any, _],
     onComplete: js.Function3[
-      /* a */ nodeLib.Error | scala.Null, 
+      /* a */ stdLib.Error | scala.Null, 
       /* b */ scala.Boolean, 
       /* c */ DataSnapshot | scala.Null, 
       _
@@ -445,7 +445,7 @@ trait Reference extends Query {
     *   complete.
     * @return {!firebase.Promise<void>} Resolves when update on server is complete.
     */
-  def update(values: coreDashJsLib.Object): js.Promise[_] = js.native
-  def update(values: coreDashJsLib.Object, onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]): js.Promise[_] = js.native
+  def update(values: js.Object): js.Promise[_] = js.native
+  def update(values: js.Object, onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]): js.Promise[_] = js.native
 }
 

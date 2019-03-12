@@ -72,7 +72,7 @@ object PollyNs extends js.Object {
     /**
       * The Amazon Polly generated identifier for a speech synthesis task.
       */
-    var TaskId: TaskId
+    var TaskId: awsDashSdkLib.clientsPollyMod.PollyNs.TaskId
   }
   
   trait GetSpeechSynthesisTaskOutput extends js.Object {
@@ -228,11 +228,11 @@ object PollyNs extends js.Object {
     /**
       * The format in which the returned output will be encoded. For audio stream, this will be mp3, ogg_vorbis, or pcm. For speech marks, this will be json. 
       */
-    var OutputFormat: OutputFormat
+    var OutputFormat: awsDashSdkLib.clientsPollyMod.PollyNs.OutputFormat
     /**
       * Amazon S3 bucket name to which the output file will be saved.
       */
-    var OutputS3BucketName: OutputS3BucketName
+    var OutputS3BucketName: awsDashSdkLib.clientsPollyMod.PollyNs.OutputS3BucketName
     /**
       * The Amazon S3 key prefix for the output speech file.
       */
@@ -252,7 +252,7 @@ object PollyNs extends js.Object {
     /**
       * The input text to synthesize. If you specify ssml as the TextType, follow the SSML format for the input text. 
       */
-    var Text: Text
+    var Text: awsDashSdkLib.clientsPollyMod.PollyNs.Text
     /**
       * Specifies whether the input text is plain text or SSML. The default value is plain text. 
       */
@@ -260,7 +260,7 @@ object PollyNs extends js.Object {
     /**
       * Voice ID to use for the synthesis. 
       */
-    var VoiceId: VoiceId
+    var VoiceId: awsDashSdkLib.clientsPollyMod.PollyNs.VoiceId
   }
   
   trait StartSpeechSynthesisTaskOutput extends js.Object {
@@ -341,7 +341,7 @@ object PollyNs extends js.Object {
     /**
       *  The format in which the returned output will be encoded. For audio stream, this will be mp3, ogg_vorbis, or pcm. For speech marks, this will be json.  When pcm is used, the content returned is audio/pcm in a signed 16-bit, 1 channel (mono), little-endian format. 
       */
-    var OutputFormat: OutputFormat
+    var OutputFormat: awsDashSdkLib.clientsPollyMod.PollyNs.OutputFormat
     /**
       *  The audio frequency specified in Hz.  The valid values for mp3 and ogg_vorbis are "8000", "16000", and "22050". The default value is "22050".   Valid values for pcm are "8000" and "16000" The default value is "16000". 
       */
@@ -353,7 +353,7 @@ object PollyNs extends js.Object {
     /**
       *  Input text to synthesize. If you specify ssml as the TextType, follow the SSML format for the input text. 
       */
-    var Text: Text
+    var Text: awsDashSdkLib.clientsPollyMod.PollyNs.Text
     /**
       *  Specifies whether the input text is plain text or SSML. The default value is plain text. For more information, see Using SSML.
       */
@@ -361,7 +361,7 @@ object PollyNs extends js.Object {
     /**
       *  Voice ID to use for the synthesis. You can get a list of available voice IDs by calling the DescribeVoices operation. 
       */
-    var VoiceId: VoiceId
+    var VoiceId: awsDashSdkLib.clientsPollyMod.PollyNs.VoiceId
   }
   
   trait SynthesizeSpeechOutput extends js.Object {

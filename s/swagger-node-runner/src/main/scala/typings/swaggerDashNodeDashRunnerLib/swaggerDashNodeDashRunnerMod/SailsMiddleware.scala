@@ -18,17 +18,15 @@ trait SailsMiddleware extends Middleware {
 object SailsMiddleware {
   @scala.inline
   def apply(
-    chain: js.Function0[
-      js.Function3[
-        /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, 
-        /* res */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Response, 
-        /* next */ expressLib.expressMod.eNs.NextFunction, 
-        scala.Unit
-      ]
+    chain: () => js.Function3[
+      /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, 
+      /* res */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Response, 
+      /* next */ expressLib.expressMod.eNs.NextFunction, 
+      scala.Unit
     ],
     runner: Runner
   ): SailsMiddleware = {
-    val __obj = js.Dynamic.literal(chain = chain, runner = runner)
+    val __obj = js.Dynamic.literal(chain = js.Any.fromFunction0(chain), runner = runner)
   
     __obj.asInstanceOf[SailsMiddleware]
   }

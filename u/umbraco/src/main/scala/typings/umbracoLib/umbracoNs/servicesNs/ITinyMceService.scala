@@ -75,13 +75,13 @@ trait ITinyMceService extends js.Object {
 object ITinyMceService {
   @scala.inline
   def apply(
-    configuration: js.Function0[js.Array[ITinyMcePlugin]],
-    createInsertEmbeddedMedia: js.Function2[js.Object, angularLib.angularMod.angularNs.IScope, scala.Unit],
-    createInsertMacro: js.Function2[js.Object, angularLib.angularMod.angularNs.IScope, scala.Unit],
-    createMediaPicker: js.Function1[js.Object, scala.Unit],
-    defaultPrevalues: js.Function0[IConfiguration]
+    configuration: () => js.Array[ITinyMcePlugin],
+    createInsertEmbeddedMedia: (js.Object, angularLib.angularMod.angularNs.IScope) => scala.Unit,
+    createInsertMacro: (js.Object, angularLib.angularMod.angularNs.IScope) => scala.Unit,
+    createMediaPicker: js.Object => scala.Unit,
+    defaultPrevalues: () => IConfiguration
   ): ITinyMceService = {
-    val __obj = js.Dynamic.literal(configuration = configuration, createInsertEmbeddedMedia = createInsertEmbeddedMedia, createInsertMacro = createInsertMacro, createMediaPicker = createMediaPicker, defaultPrevalues = defaultPrevalues)
+    val __obj = js.Dynamic.literal(configuration = js.Any.fromFunction0(configuration), createInsertEmbeddedMedia = js.Any.fromFunction2(createInsertEmbeddedMedia), createInsertMacro = js.Any.fromFunction2(createInsertMacro), createMediaPicker = js.Any.fromFunction1(createMediaPicker), defaultPrevalues = js.Any.fromFunction0(defaultPrevalues))
   
     __obj.asInstanceOf[ITinyMceService]
   }

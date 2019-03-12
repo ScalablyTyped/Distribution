@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait Anon_Debug extends js.Object {
   def debug(message: java.lang.String): scala.Unit = js.native
   def error(err: java.lang.String): scala.Unit = js.native
-  def error(err: nodeLib.Error): scala.Unit = js.native
+  def error(err: stdLib.Error): scala.Unit = js.native
 }
 

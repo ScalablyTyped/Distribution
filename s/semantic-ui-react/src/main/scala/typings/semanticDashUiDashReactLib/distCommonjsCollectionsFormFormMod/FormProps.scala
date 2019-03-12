@@ -20,11 +20,7 @@ object FormProps {
     error: js.UndefOr[scala.Boolean] = js.undefined,
     inverted: js.UndefOr[scala.Boolean] = js.undefined,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
-    onSubmit: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLFormElement], 
-      /* data */ FormProps, 
-      scala.Unit
-    ] = null,
+    onSubmit: (/* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLFormElement], /* data */ FormProps) => scala.Unit = null,
     reply: js.UndefOr[scala.Boolean] = js.undefined,
     size: java.lang.String = null,
     success: js.UndefOr[scala.Boolean] = js.undefined,
@@ -41,7 +37,7 @@ object FormProps {
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
     if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted)
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(onSubmit)
+    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction2(onSubmit))
     if (!js.isUndefined(reply)) __obj.updateDynamic("reply")(reply)
     if (size != null) __obj.updateDynamic("size")(size)
     if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)

@@ -86,7 +86,7 @@ object srcRender3InstructionsMod extends js.Object {
     queries: scala.Null,
     injectorIndex: scala.Double
   ): atAngularCoreLib.srcRender3InterfacesViewMod.LView = js.native
-  def createError(text: java.lang.String, token: js.Any): nodeLib.Error = js.native
+  def createError(text: java.lang.String, token: js.Any): stdLib.Error = js.native
   def createLContainer(
     hostNative: atAngularCoreLib.srcRender3InterfacesRendererMod.RComment,
     hostTNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TContainerNode,
@@ -693,22 +693,6 @@ object srcRender3InstructionsMod extends js.Object {
     index: scala.Double,
     styleIndex: scala.Double,
     value: java.lang.String,
-    suffix: scala.Null,
-    directive: js.Object
-  ): scala.Unit = js.native
-  def elementStyleProp(index: scala.Double, styleIndex: scala.Double, value: nodeLib.String): scala.Unit = js.native
-  def elementStyleProp(index: scala.Double, styleIndex: scala.Double, value: nodeLib.String, suffix: java.lang.String): scala.Unit = js.native
-  def elementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: nodeLib.String,
-    suffix: java.lang.String,
-    directive: js.Object
-  ): scala.Unit = js.native
-  def elementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: nodeLib.String,
     suffix: scala.Null,
     directive: js.Object
   ): scala.Unit = js.native

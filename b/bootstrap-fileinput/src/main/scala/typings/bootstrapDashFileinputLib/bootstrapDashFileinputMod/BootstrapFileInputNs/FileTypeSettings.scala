@@ -19,17 +19,17 @@ trait FileTypeSettings extends js.Object {
 object FileTypeSettings {
   @scala.inline
   def apply(
-    audio: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    flash: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    html: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    image: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    `object`: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    other: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    text: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    video: js.Function2[java.lang.String, java.lang.String, scala.Boolean]
+    audio: (java.lang.String, java.lang.String) => scala.Boolean,
+    flash: (java.lang.String, java.lang.String) => scala.Boolean,
+    html: (java.lang.String, java.lang.String) => scala.Boolean,
+    image: (java.lang.String, java.lang.String) => scala.Boolean,
+    `object`: (java.lang.String, java.lang.String) => scala.Boolean,
+    other: (java.lang.String, java.lang.String) => scala.Boolean,
+    text: (java.lang.String, java.lang.String) => scala.Boolean,
+    video: (java.lang.String, java.lang.String) => scala.Boolean
   ): FileTypeSettings = {
-    val __obj = js.Dynamic.literal(audio = audio, flash = flash, html = html, image = image, other = other, text = text, video = video)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(audio = js.Any.fromFunction2(audio), flash = js.Any.fromFunction2(flash), html = js.Any.fromFunction2(html), image = js.Any.fromFunction2(image), other = js.Any.fromFunction2(other), text = js.Any.fromFunction2(text), video = js.Any.fromFunction2(video))
+    __obj.updateDynamic("object")(js.Any.fromFunction2(`object`))
     __obj.asInstanceOf[FileTypeSettings]
   }
 }

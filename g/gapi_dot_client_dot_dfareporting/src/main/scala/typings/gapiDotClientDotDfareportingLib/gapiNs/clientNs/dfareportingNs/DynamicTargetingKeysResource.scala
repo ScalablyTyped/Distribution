@@ -20,20 +20,11 @@ trait DynamicTargetingKeysResource extends js.Object {
 object DynamicTargetingKeysResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKeyName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DynamicTargetingKey]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AdvertiserIdAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DynamicTargetingKeysListResponse]
-    ]
+    delete: gapiDotClientDotDfareportingLib.Anon_AltFieldsKeyName => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    insert: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[DynamicTargetingKey],
+    list: gapiDotClientDotDfareportingLib.Anon_AdvertiserIdAlt => gapiDotClientLib.gapiNs.clientNs.Request[DynamicTargetingKeysListResponse]
   ): DynamicTargetingKeysResource = {
-    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[DynamicTargetingKeysResource]
   }

@@ -12,12 +12,9 @@ trait ResponseLike extends js.Object {
 object ResponseLike {
   @scala.inline
   def apply(
-    getHeader: js.Function1[
-      java.lang.String, 
-      js.UndefOr[scala.Double | java.lang.String | js.Array[java.lang.String]]
-    ]
+    getHeader: java.lang.String => js.UndefOr[scala.Double | java.lang.String | js.Array[java.lang.String]]
   ): ResponseLike = {
-    val __obj = js.Dynamic.literal(getHeader = getHeader)
+    val __obj = js.Dynamic.literal(getHeader = js.Any.fromFunction1(getHeader))
   
     __obj.asInstanceOf[ResponseLike]
   }

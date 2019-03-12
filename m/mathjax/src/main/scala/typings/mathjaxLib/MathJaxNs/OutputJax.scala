@@ -77,21 +77,21 @@ trait OutputJax extends js.Object {
 object OutputJax {
   @scala.inline
   def apply(
-    Register: js.Function1[java.lang.String, scala.Unit],
-    Remove: js.Function1[js.Any, scala.Unit],
-    Translate: js.Function2[js.Any, js.Any, ElementJax],
-    Zoom: js.Function5[js.Any, js.Any, js.Any, scala.Double, scala.Double, ZoomStruct],
+    Register: java.lang.String => scala.Unit,
+    Remove: js.Any => scala.Unit,
+    Translate: (js.Any, js.Any) => ElementJax,
+    Zoom: (js.Any, js.Any, js.Any, scala.Double, scala.Double) => ZoomStruct,
     directory: java.lang.String,
     fontDir: java.lang.String,
-    getJaxFromMath: js.Function1[js.Any, ElementJax],
+    getJaxFromMath: js.Any => ElementJax,
     id: java.lang.String,
     imageDir: java.lang.String,
-    postTranslate: js.Function1[js.Any, scala.Unit],
-    preProcess: js.Function1[js.Any, scala.Unit],
-    preTranslate: js.Function1[js.Any, scala.Unit],
+    postTranslate: js.Any => scala.Unit,
+    preProcess: js.Any => scala.Unit,
+    preTranslate: js.Any => scala.Unit,
     version: java.lang.String
   ): OutputJax = {
-    val __obj = js.Dynamic.literal(Register = Register, Remove = Remove, Translate = Translate, Zoom = Zoom, directory = directory, fontDir = fontDir, getJaxFromMath = getJaxFromMath, id = id, imageDir = imageDir, postTranslate = postTranslate, preProcess = preProcess, preTranslate = preTranslate, version = version)
+    val __obj = js.Dynamic.literal(Register = js.Any.fromFunction1(Register), Remove = js.Any.fromFunction1(Remove), Translate = js.Any.fromFunction2(Translate), Zoom = js.Any.fromFunction5(Zoom), directory = directory, fontDir = fontDir, getJaxFromMath = js.Any.fromFunction1(getJaxFromMath), id = id, imageDir = imageDir, postTranslate = js.Any.fromFunction1(postTranslate), preProcess = js.Any.fromFunction1(preProcess), preTranslate = js.Any.fromFunction1(preTranslate), version = version)
   
     __obj.asInstanceOf[OutputJax]
   }

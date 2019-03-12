@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("json2csv", "Parser")
 @js.native
 class Parser[T] ()
-  extends json2csvLib.json2csvparserMod.default[T]
+  extends json2csvLib.jSON2CSVParserMod.default[T]
 

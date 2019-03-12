@@ -15,11 +15,11 @@ object InlineCountSettings {
   def apply(
     DefaultInlineCount: java.lang.String,
     InlineCount: java.lang.String,
-    isSet: js.Function0[scala.Boolean],
-    reset: js.Function0[scala.Unit],
-    toString: js.Function0[java.lang.String]
+    isSet: () => scala.Boolean,
+    reset: () => scala.Unit,
+    toString: () => java.lang.String
   ): InlineCountSettings = {
-    val __obj = js.Dynamic.literal(DefaultInlineCount = DefaultInlineCount, InlineCount = InlineCount, isSet = isSet, reset = reset, toString = toString)
+    val __obj = js.Dynamic.literal(DefaultInlineCount = DefaultInlineCount, InlineCount = InlineCount, isSet = js.Any.fromFunction0(isSet), reset = js.Any.fromFunction0(reset), toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[InlineCountSettings]
   }

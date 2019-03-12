@@ -39,7 +39,7 @@ object WorkSpacesNs extends js.Object {
     /**
       * The identifier of the directory.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DirectoryId
     /**
       * The identifiers of one or more IP access control groups.
       */
@@ -423,7 +423,7 @@ object WorkSpacesNs extends js.Object {
     /**
       * The identifier of the directory.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DirectoryId
     /**
       * The identifiers of one or more IP access control groups.
       */
@@ -466,7 +466,7 @@ object WorkSpacesNs extends js.Object {
     /**
       * The identifier of the EC2 image.
       */
-    var Ec2ImageId: Ec2ImageId
+    var Ec2ImageId: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.Ec2ImageId
     /**
       * The description of the WorkSpace image.
       */
@@ -503,7 +503,7 @@ object WorkSpacesNs extends js.Object {
     /**
       * The IP address range to search. Specify an IP address range that is compatible with your network and in CIDR notation (that is, specify the range as an IPv4 CIDR block).
       */
-    var ManagementCidrRangeConstraint: ManagementCidrRangeConstraint
+    var ManagementCidrRangeConstraint: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ManagementCidrRangeConstraint
     /**
       * The maximum number of items to return.
       */
@@ -553,7 +553,7 @@ object WorkSpacesNs extends js.Object {
     /**
       * Information about the Amazon WorkSpaces client.
       */
-    var ClientProperties: ClientProperties
+    var ClientProperties: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ClientProperties
     /**
       * The resource identifiers, in the form of directory IDs.
       */
@@ -566,11 +566,11 @@ object WorkSpacesNs extends js.Object {
     /**
       * The identifier of the WorkSpace.
       */
-    var WorkspaceId: WorkspaceId
+    var WorkspaceId: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.WorkspaceId
     /**
       * The properties of the WorkSpace.
       */
-    var WorkspaceProperties: WorkspaceProperties
+    var WorkspaceProperties: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.WorkspaceProperties
   }
   
   trait ModifyWorkspacePropertiesResult extends js.Object
@@ -579,7 +579,7 @@ object WorkSpacesNs extends js.Object {
     /**
       * The identifier of the WorkSpace.
       */
-    var WorkspaceId: WorkspaceId
+    var WorkspaceId: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.WorkspaceId
     /**
       * The WorkSpace state.
       */
@@ -599,14 +599,14 @@ object WorkSpacesNs extends js.Object {
     /**
       * The identifier of the WorkSpace.
       */
-    var WorkspaceId: WorkspaceId
+    var WorkspaceId: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.WorkspaceId
   }
   
   trait RebootWorkspacesRequest extends js.Object {
     /**
       * The WorkSpaces to reboot. You can specify up to 25 WorkSpaces.
       */
-    var RebootWorkspaceRequests: RebootWorkspaceRequests
+    var RebootWorkspaceRequests: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.RebootWorkspaceRequests
   }
   
   trait RebootWorkspacesResult extends js.Object {
@@ -620,14 +620,14 @@ object WorkSpacesNs extends js.Object {
     /**
       * The identifier of the WorkSpace.
       */
-    var WorkspaceId: WorkspaceId
+    var WorkspaceId: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.WorkspaceId
   }
   
   trait RebuildWorkspacesRequest extends js.Object {
     /**
       * The WorkSpace to rebuild. You can specify a single WorkSpace.
       */
-    var RebuildWorkspaceRequests: RebuildWorkspaceRequests
+    var RebuildWorkspaceRequests: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.RebuildWorkspaceRequests
   }
   
   trait RebuildWorkspacesResult extends js.Object {
@@ -668,7 +668,7 @@ object WorkSpacesNs extends js.Object {
     /**
       * The WorkSpaces to start. You can specify up to 25 WorkSpaces.
       */
-    var StartWorkspaceRequests: StartWorkspaceRequests
+    var StartWorkspaceRequests: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.StartWorkspaceRequests
   }
   
   trait StartWorkspacesResult extends js.Object {
@@ -689,7 +689,7 @@ object WorkSpacesNs extends js.Object {
     /**
       * The WorkSpaces to stop. You can specify up to 25 WorkSpaces.
       */
-    var StopWorkspaceRequests: StopWorkspaceRequests
+    var StopWorkspaceRequests: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.StopWorkspaceRequests
   }
   
   trait StopWorkspacesResult extends js.Object {
@@ -714,14 +714,14 @@ object WorkSpacesNs extends js.Object {
     /**
       * The identifier of the WorkSpace.
       */
-    var WorkspaceId: WorkspaceId
+    var WorkspaceId: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.WorkspaceId
   }
   
   trait TerminateWorkspacesRequest extends js.Object {
     /**
       * The WorkSpaces to terminate. You can specify up to 25 WorkSpaces.
       */
-    var TerminateWorkspaceRequests: TerminateWorkspaceRequests
+    var TerminateWorkspaceRequests: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.TerminateWorkspaceRequests
   }
   
   trait TerminateWorkspacesResult extends js.Object {
@@ -1724,11 +1724,11 @@ object WorkSpacesNs extends js.Object {
     /**
       * The identifier of the bundle for the WorkSpace. You can use DescribeWorkspaceBundles to list the available bundles.
       */
-    var BundleId: BundleId
+    var BundleId: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.BundleId
     /**
       * The identifier of the AWS Directory Service directory for the WorkSpace. You can use DescribeWorkspaceDirectories to list the available directories.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DirectoryId
     /**
       * Indicates whether the data stored on the root volume is encrypted.
       */
@@ -1740,7 +1740,7 @@ object WorkSpacesNs extends js.Object {
     /**
       * The username of the user for the WorkSpace. This username must exist in the AWS Directory Service directory for the WorkSpace.
       */
-    var UserName: UserName
+    var UserName: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.UserName
     /**
       * Indicates whether the data stored on the user volume is encrypted.
       */

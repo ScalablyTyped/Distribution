@@ -12,8 +12,8 @@ trait DataState extends js.Object {
 
 object DataState {
   @scala.inline
-  def apply(getState: js.Function0[js.Any], setState: js.Function1[js.Any, scala.Unit]): DataState = {
-    val __obj = js.Dynamic.literal(getState = getState, setState = setState)
+  def apply(getState: () => js.Any, setState: js.Any => scala.Unit): DataState = {
+    val __obj = js.Dynamic.literal(getState = js.Any.fromFunction0(getState), setState = js.Any.fromFunction1(setState))
   
     __obj.asInstanceOf[DataState]
   }

@@ -23,20 +23,11 @@ trait V2Resource extends js.Object {
 object V2Resource {
   @scala.inline
   def apply(
-    getPartnersstatus: js.Function1[
-      gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GetPartnersStatusResponse]
-    ],
-    updateCompanies: js.Function1[
-      gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Company]
-    ],
-    updateLeads: js.Function1[
-      gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Lead]
-    ]
+    getPartnersstatus: gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[GetPartnersStatusResponse],
+    updateCompanies: gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp => gapiDotClientLib.gapiNs.clientNs.Request[Company],
+    updateLeads: gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp => gapiDotClientLib.gapiNs.clientNs.Request[Lead]
   ): V2Resource = {
-    val __obj = js.Dynamic.literal(getPartnersstatus = getPartnersstatus, updateCompanies = updateCompanies, updateLeads = updateLeads)
+    val __obj = js.Dynamic.literal(getPartnersstatus = js.Any.fromFunction1(getPartnersstatus), updateCompanies = js.Any.fromFunction1(updateCompanies), updateLeads = js.Any.fromFunction1(updateLeads))
   
     __obj.asInstanceOf[V2Resource]
   }

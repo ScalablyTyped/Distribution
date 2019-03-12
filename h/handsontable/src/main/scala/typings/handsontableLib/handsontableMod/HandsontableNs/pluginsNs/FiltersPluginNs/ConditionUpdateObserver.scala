@@ -22,17 +22,17 @@ object ConditionUpdateObserver {
   @scala.inline
   def apply(
     changes: js.Array[scala.Double],
-    columnDataFactory: js.Function1[scala.Double, js.Array[js.Object]],
+    columnDataFactory: scala.Double => js.Array[js.Object],
     conditionCollection: ConditionCollection,
-    destroy: js.Function0[scala.Unit],
-    flush: js.Function0[scala.Unit],
-    groupChanges: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
+    flush: () => scala.Unit,
+    groupChanges: () => scala.Unit,
     grouping: scala.Boolean,
     latestEditedColumnPosition: scala.Double,
     latestOrderStack: js.Array[scala.Double],
-    updateStatesAtColumn: js.Function2[scala.Double, js.Object, scala.Unit]
+    updateStatesAtColumn: (scala.Double, js.Object) => scala.Unit
   ): ConditionUpdateObserver = {
-    val __obj = js.Dynamic.literal(changes = changes, columnDataFactory = columnDataFactory, conditionCollection = conditionCollection, destroy = destroy, flush = flush, groupChanges = groupChanges, grouping = grouping, latestEditedColumnPosition = latestEditedColumnPosition, latestOrderStack = latestOrderStack, updateStatesAtColumn = updateStatesAtColumn)
+    val __obj = js.Dynamic.literal(changes = changes, columnDataFactory = js.Any.fromFunction1(columnDataFactory), conditionCollection = conditionCollection, destroy = js.Any.fromFunction0(destroy), flush = js.Any.fromFunction0(flush), groupChanges = js.Any.fromFunction0(groupChanges), grouping = grouping, latestEditedColumnPosition = latestEditedColumnPosition, latestOrderStack = latestOrderStack, updateStatesAtColumn = js.Any.fromFunction2(updateStatesAtColumn))
   
     __obj.asInstanceOf[ConditionUpdateObserver]
   }

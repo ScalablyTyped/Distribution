@@ -11,8 +11,8 @@ trait Anon_CreateWithTimers extends js.Object {
 
 object Anon_CreateWithTimers {
   @scala.inline
-  def apply(createWithTimers: js.Function1[Anon_ArgumentsClearTimeout, Delay]): Anon_CreateWithTimers = {
-    val __obj = js.Dynamic.literal(createWithTimers = createWithTimers)
+  def apply(createWithTimers: Anon_ArgumentsClearTimeout => Delay): Anon_CreateWithTimers = {
+    val __obj = js.Dynamic.literal(createWithTimers = js.Any.fromFunction1(createWithTimers))
   
     __obj.asInstanceOf[Anon_CreateWithTimers]
   }

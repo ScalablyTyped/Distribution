@@ -12,9 +12,9 @@ object ^ extends js.Object {
   var defaultBackend: js.Any = js.native
   var defaultFormatter: java.lang.String = js.native
   var suggest: minilogLib.minilogMod.MinilogNs.Filter = js.native
-  def apply(namespace: java.lang.String): minilogLib.minilogMod.Minilog = js.native
-  def disable(): minilogLib.minilogMod.Minilog = js.native
-  def enable(): minilogLib.minilogMod.Minilog = js.native
+  def apply(namespace: java.lang.String): Minilog = js.native
+  def disable(): Minilog = js.native
+  def enable(): Minilog = js.native
   def pipe(dest: js.Any): minilogLib.minilogMod.MinilogNs.Transform = js.native
 }
 

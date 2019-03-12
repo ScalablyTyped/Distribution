@@ -12,12 +12,12 @@ trait AdUrls
 object AdUrls {
   @scala.inline
   def apply(
-    getCustomParameters: js.Function0[js.Object],
-    getFinalUrl: js.Function0[java.lang.String],
-    getMobileFinalUrl: js.Function0[java.lang.String],
-    getTrackingTemplate: js.Function0[java.lang.String]
+    getCustomParameters: () => js.Object,
+    getFinalUrl: () => java.lang.String,
+    getMobileFinalUrl: () => java.lang.String,
+    getTrackingTemplate: () => java.lang.String
   ): AdUrls = {
-    val __obj = js.Dynamic.literal(getCustomParameters = getCustomParameters, getFinalUrl = getFinalUrl, getMobileFinalUrl = getMobileFinalUrl, getTrackingTemplate = getTrackingTemplate)
+    val __obj = js.Dynamic.literal(getCustomParameters = js.Any.fromFunction0(getCustomParameters), getFinalUrl = js.Any.fromFunction0(getFinalUrl), getMobileFinalUrl = js.Any.fromFunction0(getMobileFinalUrl), getTrackingTemplate = js.Any.fromFunction0(getTrackingTemplate))
   
     __obj.asInstanceOf[AdUrls]
   }

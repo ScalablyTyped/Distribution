@@ -17,7 +17,7 @@ trait SwitchOptions extends js.Object {
 object SwitchOptions {
   @scala.inline
   def apply(
-    change: js.Function1[/* e */ SwitchChangeEvent, scala.Unit] = null,
+    change: /* e */ SwitchChangeEvent => scala.Unit = null,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
@@ -25,7 +25,7 @@ object SwitchOptions {
     width: scala.Double | java.lang.String = null
   ): SwitchOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (name != null) __obj.updateDynamic("name")(name)

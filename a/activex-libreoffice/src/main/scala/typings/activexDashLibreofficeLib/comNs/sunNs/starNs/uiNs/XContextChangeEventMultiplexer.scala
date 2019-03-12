@@ -54,27 +54,15 @@ trait XContextChangeEventMultiplexer
 object XContextChangeEventMultiplexer {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addContextChangeEventListener: js.Function2[
-      XContextChangeEventListener, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      scala.Unit
-    ],
-    broadcastContextChangeEvent: js.Function2[
-      ContextChangeEventObject, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeAllContextChangeEventListeners: js.Function1[XContextChangeEventListener, scala.Unit],
-    removeContextChangeEventListener: js.Function2[
-      XContextChangeEventListener, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    addContextChangeEventListener: (XContextChangeEventListener, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface) => scala.Unit,
+    broadcastContextChangeEvent: (ContextChangeEventObject, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeAllContextChangeEventListeners: XContextChangeEventListener => scala.Unit,
+    removeContextChangeEventListener: (XContextChangeEventListener, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface) => scala.Unit
   ): XContextChangeEventMultiplexer = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addContextChangeEventListener = addContextChangeEventListener, broadcastContextChangeEvent = broadcastContextChangeEvent, queryInterface = queryInterface, release = release, removeAllContextChangeEventListeners = removeAllContextChangeEventListeners, removeContextChangeEventListener = removeContextChangeEventListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addContextChangeEventListener = js.Any.fromFunction2(addContextChangeEventListener), broadcastContextChangeEvent = js.Any.fromFunction2(broadcastContextChangeEvent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeAllContextChangeEventListeners = js.Any.fromFunction1(removeAllContextChangeEventListeners), removeContextChangeEventListener = js.Any.fromFunction2(removeContextChangeEventListener))
   
     __obj.asInstanceOf[XContextChangeEventMultiplexer]
   }

@@ -16,11 +16,11 @@ object IconButtonAccessoryDescriptor {
   @scala.inline
   def apply(
     iconUrl: java.lang.String,
-    onClick: js.Function0[scala.Unit],
+    onClick: () => scala.Unit,
     `type`: inboxsdkLib.inboxsdkLibStrings.ICON_BUTTON,
     iconClass: java.lang.String = null
   ): IconButtonAccessoryDescriptor = {
-    val __obj = js.Dynamic.literal(iconUrl = iconUrl, onClick = onClick)
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl, onClick = js.Any.fromFunction0(onClick))
     __obj.updateDynamic("type")(`type`)
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     __obj.asInstanceOf[IconButtonAccessoryDescriptor]

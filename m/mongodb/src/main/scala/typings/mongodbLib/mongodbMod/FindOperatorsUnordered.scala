@@ -19,14 +19,14 @@ object FindOperatorsUnordered {
   @scala.inline
   def apply(
     length: scala.Double,
-    remove: js.Function0[UnorderedBulkOperation],
-    removeOne: js.Function0[UnorderedBulkOperation],
-    replaceOne: js.Function1[js.Object, UnorderedBulkOperation],
-    update: js.Function1[js.Object, UnorderedBulkOperation],
-    updateOne: js.Function1[js.Object, UnorderedBulkOperation],
-    upsert: js.Function0[FindOperatorsUnordered]
+    remove: () => UnorderedBulkOperation,
+    removeOne: () => UnorderedBulkOperation,
+    replaceOne: js.Object => UnorderedBulkOperation,
+    update: js.Object => UnorderedBulkOperation,
+    updateOne: js.Object => UnorderedBulkOperation,
+    upsert: () => FindOperatorsUnordered
   ): FindOperatorsUnordered = {
-    val __obj = js.Dynamic.literal(length = length, remove = remove, removeOne = removeOne, replaceOne = replaceOne, update = update, updateOne = updateOne, upsert = upsert)
+    val __obj = js.Dynamic.literal(length = length, remove = js.Any.fromFunction0(remove), removeOne = js.Any.fromFunction0(removeOne), replaceOne = js.Any.fromFunction1(replaceOne), update = js.Any.fromFunction1(update), updateOne = js.Any.fromFunction1(updateOne), upsert = js.Any.fromFunction0(upsert))
   
     __obj.asInstanceOf[FindOperatorsUnordered]
   }

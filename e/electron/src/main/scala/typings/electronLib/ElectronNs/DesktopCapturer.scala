@@ -16,7 +16,7 @@ trait DesktopCapturer extends EventEmitter {
     */
   def getSources(
     options: SourcesOptions,
-    callback: js.Function2[/* error */ nodeLib.Error, /* sources */ js.Array[DesktopCapturerSource], scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* sources */ js.Array[DesktopCapturerSource], scala.Unit]
   ): scala.Unit = js.native
 }
 

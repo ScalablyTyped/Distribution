@@ -14,11 +14,11 @@ trait OnPageChangeListener extends js.Object {
 object OnPageChangeListener {
   @scala.inline
   def apply(
-    onPageScrollStateChanged: js.Function1[scala.Double, scala.Unit],
-    onPageScrolled: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
-    onPageSelected: js.Function1[scala.Double, scala.Unit]
+    onPageScrollStateChanged: scala.Double => scala.Unit,
+    onPageScrolled: (scala.Double, scala.Double, scala.Double) => scala.Unit,
+    onPageSelected: scala.Double => scala.Unit
   ): OnPageChangeListener = {
-    val __obj = js.Dynamic.literal(onPageScrollStateChanged = onPageScrollStateChanged, onPageScrolled = onPageScrolled, onPageSelected = onPageSelected)
+    val __obj = js.Dynamic.literal(onPageScrollStateChanged = js.Any.fromFunction1(onPageScrollStateChanged), onPageScrolled = js.Any.fromFunction3(onPageScrolled), onPageSelected = js.Any.fromFunction1(onPageSelected))
   
     __obj.asInstanceOf[OnPageChangeListener]
   }

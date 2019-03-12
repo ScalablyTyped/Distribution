@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var Raphael: raphaelLib.RaphaelStatic = js.native
+  var Raphael: RaphaelStatic = js.native
 }
 

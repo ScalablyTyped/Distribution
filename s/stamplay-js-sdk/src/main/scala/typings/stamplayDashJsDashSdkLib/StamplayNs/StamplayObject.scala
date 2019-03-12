@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait StamplayObject extends js.Object {
   var Collection: js.Any
-  var Model: Model
+  var Model: stamplayDashJsDashSdkLib.StamplayNs.Model
 }
 
 object StamplayObject {

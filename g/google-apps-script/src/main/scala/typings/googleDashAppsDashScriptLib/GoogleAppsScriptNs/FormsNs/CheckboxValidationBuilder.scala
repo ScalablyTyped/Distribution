@@ -14,11 +14,11 @@ trait CheckboxValidationBuilder extends js.Object {
 object CheckboxValidationBuilder {
   @scala.inline
   def apply(
-    requireSelectAtLeast: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, CheckboxValidationBuilder],
-    requireSelectAtMost: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, CheckboxValidationBuilder],
-    requireSelectExactly: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, CheckboxValidationBuilder]
+    requireSelectAtLeast: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => CheckboxValidationBuilder,
+    requireSelectAtMost: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => CheckboxValidationBuilder,
+    requireSelectExactly: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => CheckboxValidationBuilder
   ): CheckboxValidationBuilder = {
-    val __obj = js.Dynamic.literal(requireSelectAtLeast = requireSelectAtLeast, requireSelectAtMost = requireSelectAtMost, requireSelectExactly = requireSelectExactly)
+    val __obj = js.Dynamic.literal(requireSelectAtLeast = js.Any.fromFunction1(requireSelectAtLeast), requireSelectAtMost = js.Any.fromFunction1(requireSelectAtMost), requireSelectExactly = js.Any.fromFunction1(requireSelectExactly))
   
     __obj.asInstanceOf[CheckboxValidationBuilder]
   }

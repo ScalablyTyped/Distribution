@@ -12,7 +12,7 @@ object ^ extends js.Object {
     * Event raised when a connection has been established
     * for a given socket.
     */
-  val onAccept: chromeDashAppsLib.chromeNs.bluetoothSocketNs.OnAcceptEvent = js.native
+  val onAccept: OnAcceptEvent = js.native
   /**
     * Event raised when a network error occurred while the
     * runtime was waiting for new connections on the given
@@ -20,18 +20,18 @@ object ^ extends js.Object {
     * to paused and no more onAccept events are raised for
     * this socket.
     */
-  val onAcceptError: chromeDashAppsLib.chromeNs.bluetoothSocketNs.OnAcceptErrorEvent = js.native
+  val onAcceptError: OnAcceptErrorEvent = js.native
   /**
     * Event raised when data has been received for a given socket.
     */
-  val onReceive: chromeDashAppsLib.chromeNs.bluetoothSocketNs.OnReceiveEvent = js.native
+  val onReceive: OnReceiveEvent = js.native
   /**
     * Event raised when a network error occured while the runtime
     * was waiting for data on the socket. Once this event is raised,
     * the socket is set to paused and no more onReceive events are
     * raised for this socket.
     */
-  val onReceiveError: chromeDashAppsLib.chromeNs.bluetoothSocketNs.OnReceiveErrorEvent = js.native
+  val onReceiveError: OnReceiveErrorEvent = js.native
   /**
     * Disconnects and destroys the socket.
     * Each socket created should be closed after use.
@@ -68,24 +68,13 @@ object ^ extends js.Object {
     * Creates a Bluetooth socket.
     * @param callback Called when the socket has been created
     * */
-  def create(
-    callback: js.Function1[
-      /* createInfo */ chromeDashAppsLib.chromeNs.bluetoothSocketNs.CreateInfo, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def create(callback: js.Function1[/* createInfo */ CreateInfo, scala.Unit]): scala.Unit = js.native
   /**
     * Creates a Bluetooth socket.
     * @param properties The socket properties (optional)
     * @param callback Called when the socket has been created
     */
-  def create(
-    properties: chromeDashAppsLib.chromeNs.bluetoothSocketNs.SocketProperties,
-    callback: js.Function1[
-      /* createInfo */ chromeDashAppsLib.chromeNs.bluetoothSocketNs.CreateInfo, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def create(properties: SocketProperties, callback: js.Function1[/* createInfo */ CreateInfo, scala.Unit]): scala.Unit = js.native
   /**
     * Disconnects the socket. The socket identifier remains valid.
     * @param socketId The socket identifier.
@@ -101,22 +90,14 @@ object ^ extends js.Object {
     */
   def getInfo(
     socketId: chromeDashAppsLib.chromeNs.integer,
-    callback: js.Function1[
-      /* socketInfo */ chromeDashAppsLib.chromeNs.bluetoothSocketNs.SocketInfo, 
-      scala.Unit
-    ]
+    callback: js.Function1[/* socketInfo */ SocketInfo, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Retrieves the list of currently opened sockets owned by the application.
     * @param callback Called when the list of sockets is available.
     *                 Returns an array of socket info.
     */
-  def getSockets(
-    callback: js.Function1[
-      /* sockets */ js.Array[chromeDashAppsLib.chromeNs.bluetoothSocketNs.SocketInfo], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def getSockets(callback: js.Function1[/* sockets */ js.Array[SocketInfo], scala.Unit]): scala.Unit = js.native
   /**
     * Listen for connections using the L2CAP protocol.
     *
@@ -140,7 +121,7 @@ object ^ extends js.Object {
   def listenUsingL2cap(
     socketId: chromeDashAppsLib.chromeNs.integer,
     uuid: java.lang.String,
-    options: chromeDashAppsLib.chromeNs.bluetoothSocketNs.ListenOptions,
+    options: ListenOptions,
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -166,7 +147,7 @@ object ^ extends js.Object {
   def listenUsingRfcomm(
     socketId: chromeDashAppsLib.chromeNs.integer,
     uuid: java.lang.String,
-    options: chromeDashAppsLib.chromeNs.bluetoothSocketNs.ListenOptions,
+    options: ListenOptions,
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -216,13 +197,10 @@ object ^ extends js.Object {
     * @param properties  The properties to update.
     * @param [callback] Called when the properties are updated.
     */
+  def update(socketId: chromeDashAppsLib.chromeNs.integer, properties: SocketProperties): scala.Unit = js.native
   def update(
     socketId: chromeDashAppsLib.chromeNs.integer,
-    properties: chromeDashAppsLib.chromeNs.bluetoothSocketNs.SocketProperties
-  ): scala.Unit = js.native
-  def update(
-    socketId: chromeDashAppsLib.chromeNs.integer,
-    properties: chromeDashAppsLib.chromeNs.bluetoothSocketNs.SocketProperties,
+    properties: SocketProperties,
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
 }

@@ -17,23 +17,20 @@ trait DiagramEngineListener
 object DiagramEngineListener {
   @scala.inline
   def apply(
-    labelFactoriesUpdated: js.Function0[scala.Unit] = null,
-    linkFactoriesUpdated: js.Function0[scala.Unit] = null,
-    lockChanged: js.Function1[
-      /* event */ stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[js.Any] with stormDashReactDashDiagramsLib.Anon_Locked, 
-      scala.Unit
-    ] = null,
-    nodeFactoriesUpdated: js.Function0[scala.Unit] = null,
-    portFactoriesUpdated: js.Function0[scala.Unit] = null,
-    repaintCanvas: js.Function0[scala.Unit] = null
+    labelFactoriesUpdated: () => scala.Unit = null,
+    linkFactoriesUpdated: () => scala.Unit = null,
+    lockChanged: /* event */ stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[js.Any] with stormDashReactDashDiagramsLib.Anon_Locked => scala.Unit = null,
+    nodeFactoriesUpdated: () => scala.Unit = null,
+    portFactoriesUpdated: () => scala.Unit = null,
+    repaintCanvas: () => scala.Unit = null
   ): DiagramEngineListener = {
     val __obj = js.Dynamic.literal()
-    if (labelFactoriesUpdated != null) __obj.updateDynamic("labelFactoriesUpdated")(labelFactoriesUpdated)
-    if (linkFactoriesUpdated != null) __obj.updateDynamic("linkFactoriesUpdated")(linkFactoriesUpdated)
-    if (lockChanged != null) __obj.updateDynamic("lockChanged")(lockChanged)
-    if (nodeFactoriesUpdated != null) __obj.updateDynamic("nodeFactoriesUpdated")(nodeFactoriesUpdated)
-    if (portFactoriesUpdated != null) __obj.updateDynamic("portFactoriesUpdated")(portFactoriesUpdated)
-    if (repaintCanvas != null) __obj.updateDynamic("repaintCanvas")(repaintCanvas)
+    if (labelFactoriesUpdated != null) __obj.updateDynamic("labelFactoriesUpdated")(js.Any.fromFunction0(labelFactoriesUpdated))
+    if (linkFactoriesUpdated != null) __obj.updateDynamic("linkFactoriesUpdated")(js.Any.fromFunction0(linkFactoriesUpdated))
+    if (lockChanged != null) __obj.updateDynamic("lockChanged")(js.Any.fromFunction1(lockChanged))
+    if (nodeFactoriesUpdated != null) __obj.updateDynamic("nodeFactoriesUpdated")(js.Any.fromFunction0(nodeFactoriesUpdated))
+    if (portFactoriesUpdated != null) __obj.updateDynamic("portFactoriesUpdated")(js.Any.fromFunction0(portFactoriesUpdated))
+    if (repaintCanvas != null) __obj.updateDynamic("repaintCanvas")(js.Any.fromFunction0(repaintCanvas))
     __obj.asInstanceOf[DiagramEngineListener]
   }
 }

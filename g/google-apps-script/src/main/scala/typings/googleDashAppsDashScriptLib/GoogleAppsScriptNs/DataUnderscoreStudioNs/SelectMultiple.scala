@@ -16,13 +16,13 @@ trait SelectMultiple extends js.Object {
 object SelectMultiple {
   @scala.inline
   def apply(
-    addOption: js.Function1[OptionBuilder, SelectMultiple],
-    setAllowOverride: js.Function1[scala.Boolean, SelectMultiple],
-    setHelpText: js.Function1[java.lang.String, SelectMultiple],
-    setId: js.Function1[java.lang.String, SelectMultiple],
-    setName: js.Function1[java.lang.String, SelectMultiple]
+    addOption: OptionBuilder => SelectMultiple,
+    setAllowOverride: scala.Boolean => SelectMultiple,
+    setHelpText: java.lang.String => SelectMultiple,
+    setId: java.lang.String => SelectMultiple,
+    setName: java.lang.String => SelectMultiple
   ): SelectMultiple = {
-    val __obj = js.Dynamic.literal(addOption = addOption, setAllowOverride = setAllowOverride, setHelpText = setHelpText, setId = setId, setName = setName)
+    val __obj = js.Dynamic.literal(addOption = js.Any.fromFunction1(addOption), setAllowOverride = js.Any.fromFunction1(setAllowOverride), setHelpText = js.Any.fromFunction1(setHelpText), setId = js.Any.fromFunction1(setId), setName = js.Any.fromFunction1(setName))
   
     __obj.asInstanceOf[SelectMultiple]
   }

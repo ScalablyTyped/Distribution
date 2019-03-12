@@ -10,7 +10,7 @@ trait SingleValueStream extends js.Object {
   /* private */ def _transform(
     obj: AnyObject[_],
     encoding: java.lang.String,
-    cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    cb: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): scala.Unit
   /** Converts a single-key object into its value. */
   def singleValue(obj: AnyObject[_]): js.Any
@@ -19,15 +19,10 @@ trait SingleValueStream extends js.Object {
 object SingleValueStream {
   @scala.inline
   def apply(
-    _transform: js.Function3[
-      AnyObject[_], 
-      java.lang.String, 
-      js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
-      scala.Unit
-    ],
-    singleValue: js.Function1[AnyObject[_], js.Any]
+    _transform: (AnyObject[_], java.lang.String, js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) => scala.Unit,
+    singleValue: AnyObject[_] => js.Any
   ): SingleValueStream = {
-    val __obj = js.Dynamic.literal(_transform = _transform, singleValue = singleValue)
+    val __obj = js.Dynamic.literal(_transform = js.Any.fromFunction3(_transform), singleValue = js.Any.fromFunction1(singleValue))
   
     __obj.asInstanceOf[SingleValueStream]
   }

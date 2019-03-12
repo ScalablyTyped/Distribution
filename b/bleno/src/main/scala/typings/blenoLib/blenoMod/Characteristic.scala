@@ -41,29 +41,19 @@ object Characteristic {
     RESULT_SUCCESS: scala.Double,
     RESULT_UNLIKELY_ERROR: scala.Double,
     descriptors: js.Array[Descriptor],
-    onIndicate: js.Function0[scala.Unit],
-    onNotify: js.Function0[scala.Unit],
-    onReadRequest: js.Function2[
-      scala.Double, 
-      js.Function2[/* result */ scala.Double, /* data */ js.UndefOr[nodeLib.Buffer], scala.Unit], 
-      scala.Unit
-    ],
-    onSubscribe: js.Function2[scala.Double, js.Any, scala.Unit],
-    onUnsubscribe: js.Function0[scala.Unit],
-    onWriteRequest: js.Function4[
-      nodeLib.Buffer, 
-      scala.Double, 
-      scala.Boolean, 
-      js.Function1[/* result */ scala.Double, scala.Unit], 
-      scala.Unit
-    ],
+    onIndicate: () => scala.Unit,
+    onNotify: () => scala.Unit,
+    onReadRequest: (scala.Double, js.Function2[/* result */ scala.Double, /* data */ js.UndefOr[nodeLib.Buffer], scala.Unit]) => scala.Unit,
+    onSubscribe: (scala.Double, js.Any) => scala.Unit,
+    onUnsubscribe: () => scala.Unit,
+    onWriteRequest: (nodeLib.Buffer, scala.Double, scala.Boolean, js.Function1[/* result */ scala.Double, scala.Unit]) => scala.Unit,
     properties: js.Array[blenoLib.Property],
     secure: js.Array[blenoLib.Property],
-    toString: js.Function0[java.lang.String],
+    toString: () => java.lang.String,
     uuid: java.lang.String,
     value: nodeLib.Buffer = null
   ): Characteristic = {
-    val __obj = js.Dynamic.literal(RESULT_ATTR_NOT_LONG = RESULT_ATTR_NOT_LONG, RESULT_INVALID_ATTRIBUTE_LENGTH = RESULT_INVALID_ATTRIBUTE_LENGTH, RESULT_INVALID_OFFSET = RESULT_INVALID_OFFSET, RESULT_SUCCESS = RESULT_SUCCESS, RESULT_UNLIKELY_ERROR = RESULT_UNLIKELY_ERROR, descriptors = descriptors, onIndicate = onIndicate, onNotify = onNotify, onReadRequest = onReadRequest, onSubscribe = onSubscribe, onUnsubscribe = onUnsubscribe, onWriteRequest = onWriteRequest, properties = properties, secure = secure, toString = toString, uuid = uuid)
+    val __obj = js.Dynamic.literal(RESULT_ATTR_NOT_LONG = RESULT_ATTR_NOT_LONG, RESULT_INVALID_ATTRIBUTE_LENGTH = RESULT_INVALID_ATTRIBUTE_LENGTH, RESULT_INVALID_OFFSET = RESULT_INVALID_OFFSET, RESULT_SUCCESS = RESULT_SUCCESS, RESULT_UNLIKELY_ERROR = RESULT_UNLIKELY_ERROR, descriptors = descriptors, onIndicate = js.Any.fromFunction0(onIndicate), onNotify = js.Any.fromFunction0(onNotify), onReadRequest = js.Any.fromFunction2(onReadRequest), onSubscribe = js.Any.fromFunction2(onSubscribe), onUnsubscribe = js.Any.fromFunction0(onUnsubscribe), onWriteRequest = js.Any.fromFunction4(onWriteRequest), properties = properties, secure = secure, toString = js.Any.fromFunction0(toString), uuid = uuid)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[Characteristic]
   }

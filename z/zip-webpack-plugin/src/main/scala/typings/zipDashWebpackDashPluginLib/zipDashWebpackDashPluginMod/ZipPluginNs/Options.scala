@@ -60,7 +60,7 @@ object Options {
     filename: java.lang.String = null,
     include: java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp]) = null,
     path: java.lang.String = null,
-    pathMapper: js.Function1[/* assetPath */ java.lang.String, java.lang.String] = null,
+    pathMapper: /* assetPath */ java.lang.String => java.lang.String = null,
     pathPrefix: java.lang.String = null,
     zipOptions: zipOptions = null
   ): Options = {
@@ -71,7 +71,7 @@ object Options {
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path)
-    if (pathMapper != null) __obj.updateDynamic("pathMapper")(pathMapper)
+    if (pathMapper != null) __obj.updateDynamic("pathMapper")(js.Any.fromFunction1(pathMapper))
     if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix)
     if (zipOptions != null) __obj.updateDynamic("zipOptions")(zipOptions)
     __obj.asInstanceOf[Options]

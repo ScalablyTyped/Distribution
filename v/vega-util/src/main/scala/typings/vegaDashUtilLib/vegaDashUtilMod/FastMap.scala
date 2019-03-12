@@ -18,15 +18,15 @@ trait FastMap extends js.Object {
 object FastMap {
   @scala.inline
   def apply(
-    clean: js.Function0[scala.Unit],
-    delete: js.Function1[java.lang.String, scala.Unit],
+    clean: () => scala.Unit,
+    delete: java.lang.String => scala.Unit,
     empty: scala.Double,
-    get: js.Function1[java.lang.String, js.Any],
-    has: js.Function1[java.lang.String, scala.Boolean],
-    set: js.Function2[java.lang.String, js.Any, scala.Unit],
+    get: java.lang.String => js.Any,
+    has: java.lang.String => scala.Boolean,
+    set: (java.lang.String, js.Any) => scala.Unit,
     size: scala.Double
   ): FastMap = {
-    val __obj = js.Dynamic.literal(clean = clean, delete = delete, empty = empty, get = get, has = has, set = set, size = size)
+    val __obj = js.Dynamic.literal(clean = js.Any.fromFunction0(clean), delete = js.Any.fromFunction1(delete), empty = empty, get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), set = js.Any.fromFunction2(set), size = size)
   
     __obj.asInstanceOf[FastMap]
   }

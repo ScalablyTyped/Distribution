@@ -16,13 +16,13 @@ object IaddCard {
   @scala.inline
   def apply(
     cardList: js.Array[jweixinLib.Anon_CardExt],
-    success: js.Function1[jweixinLib.Anon_CardList, scala.Unit],
-    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+    success: jweixinLib.Anon_CardList => scala.Unit,
+    complete: /* repeated */ js.Any => scala.Unit = null,
+    fail: /* repeated */ js.Any => scala.Unit = null
   ): IaddCard = {
-    val __obj = js.Dynamic.literal(cardList = cardList, success = success)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    val __obj = js.Dynamic.literal(cardList = cardList, success = js.Any.fromFunction1(success))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[IaddCard]
   }
 }

@@ -19,16 +19,16 @@ trait DiffieHellman extends js.Object {
 object DiffieHellman {
   @scala.inline
   def apply(
-    computeSecret: js.Function1[PrivateKey, nodeLib.Buffer],
-    generateKey: js.Function0[PrivateKey],
-    generateKeys: js.Function0[PrivateKey],
-    getKey: js.Function0[PrivateKey],
-    getPrivateKey: js.Function0[PrivateKey],
-    getPublicKey: js.Function0[Key],
-    setKey: js.Function1[PrivateKey, scala.Unit],
-    setPrivateKey: js.Function1[PrivateKey, scala.Unit]
+    computeSecret: PrivateKey => nodeLib.Buffer,
+    generateKey: () => PrivateKey,
+    generateKeys: () => PrivateKey,
+    getKey: () => PrivateKey,
+    getPrivateKey: () => PrivateKey,
+    getPublicKey: () => Key,
+    setKey: PrivateKey => scala.Unit,
+    setPrivateKey: PrivateKey => scala.Unit
   ): DiffieHellman = {
-    val __obj = js.Dynamic.literal(computeSecret = computeSecret, generateKey = generateKey, generateKeys = generateKeys, getKey = getKey, getPrivateKey = getPrivateKey, getPublicKey = getPublicKey, setKey = setKey, setPrivateKey = setPrivateKey)
+    val __obj = js.Dynamic.literal(computeSecret = js.Any.fromFunction1(computeSecret), generateKey = js.Any.fromFunction0(generateKey), generateKeys = js.Any.fromFunction0(generateKeys), getKey = js.Any.fromFunction0(getKey), getPrivateKey = js.Any.fromFunction0(getPrivateKey), getPublicKey = js.Any.fromFunction0(getPublicKey), setKey = js.Any.fromFunction1(setKey), setPrivateKey = js.Any.fromFunction1(setPrivateKey))
   
     __obj.asInstanceOf[DiffieHellman]
   }

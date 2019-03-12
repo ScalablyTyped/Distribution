@@ -17,7 +17,7 @@ trait XFont
     *
     * The unit of measurement is pixels for the device.
     */
-  val FontDescriptor: FontDescriptor
+  val FontDescriptor: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.FontDescriptor
   /** returns additional information about the font. */
   val FontMetric: SimpleFontMetric
   /**
@@ -29,7 +29,7 @@ trait XFont
     * returns the widths of the specified characters.
     * @returns a sequence of the widths of subsequent characters for this font.
     */
-  def getCharWidths(nFirst: java.lang.String, nLast: java.lang.String): activexDashInteropLib.SafeArray[scala.Double]
+  def getCharWidths(nFirst: java.lang.String, nLast: java.lang.String): stdLib.SafeArray[scala.Double]
   /**
     * returns the description of the font.
     *
@@ -66,27 +66,18 @@ object XFont {
   def apply(
     FontDescriptor: FontDescriptor,
     FontMetric: SimpleFontMetric,
-    acquire: js.Function0[scala.Unit],
-    getCharWidth: js.Function1[java.lang.String, scala.Double],
-    getCharWidths: js.Function2[java.lang.String, java.lang.String, activexDashInteropLib.SafeArray[scala.Double]],
-    getFontDescriptor: js.Function0[FontDescriptor],
-    getFontMetric: js.Function0[SimpleFontMetric],
-    getKernPairs: js.Function3[
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]], 
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]], 
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      scala.Unit
-    ],
-    getStringWidth: js.Function1[java.lang.String, scala.Double],
-    getStringWidthArray: js.Function2[
-      java.lang.String, 
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      scala.Double
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getCharWidth: java.lang.String => scala.Double,
+    getCharWidths: (java.lang.String, java.lang.String) => stdLib.SafeArray[scala.Double],
+    getFontDescriptor: () => FontDescriptor,
+    getFontMetric: () => SimpleFontMetric,
+    getKernPairs: (js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]], js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]], js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]]) => scala.Unit,
+    getStringWidth: java.lang.String => scala.Double,
+    getStringWidthArray: (java.lang.String, js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]]) => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XFont = {
-    val __obj = js.Dynamic.literal(FontDescriptor = FontDescriptor, FontMetric = FontMetric, acquire = acquire, getCharWidth = getCharWidth, getCharWidths = getCharWidths, getFontDescriptor = getFontDescriptor, getFontMetric = getFontMetric, getKernPairs = getKernPairs, getStringWidth = getStringWidth, getStringWidthArray = getStringWidthArray, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(FontDescriptor = FontDescriptor, FontMetric = FontMetric, acquire = js.Any.fromFunction0(acquire), getCharWidth = js.Any.fromFunction1(getCharWidth), getCharWidths = js.Any.fromFunction2(getCharWidths), getFontDescriptor = js.Any.fromFunction0(getFontDescriptor), getFontMetric = js.Any.fromFunction0(getFontMetric), getKernPairs = js.Any.fromFunction3(getKernPairs), getStringWidth = js.Any.fromFunction1(getStringWidth), getStringWidthArray = js.Any.fromFunction2(getStringWidthArray), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XFont]
   }

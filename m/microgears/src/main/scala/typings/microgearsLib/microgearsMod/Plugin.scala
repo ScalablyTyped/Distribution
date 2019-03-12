@@ -14,11 +14,11 @@ trait Plugin extends js.Object {
 object Plugin {
   @scala.inline
   def apply(
-    afterChain: js.Function2[js.Any, js.Any, js.Any],
-    beforeChain: js.Function2[js.Array[_], js.Any, js.Array[_]],
+    afterChain: (js.Any, js.Any) => js.Any,
+    beforeChain: (js.Array[_], js.Any) => js.Array[_],
     name: java.lang.String
   ): Plugin = {
-    val __obj = js.Dynamic.literal(afterChain = afterChain, beforeChain = beforeChain, name = name)
+    val __obj = js.Dynamic.literal(afterChain = js.Any.fromFunction2(afterChain), beforeChain = js.Any.fromFunction2(beforeChain), name = name)
   
     __obj.asInstanceOf[Plugin]
   }

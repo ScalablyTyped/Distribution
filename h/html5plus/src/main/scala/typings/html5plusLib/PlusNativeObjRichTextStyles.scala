@@ -59,13 +59,13 @@ object PlusNativeObjRichTextStyles {
     align: html5plusLib.html5plusLibStrings.left | html5plusLib.html5plusLibStrings.center | html5plusLib.html5plusLibStrings.right = null,
     family: java.lang.String = null,
     fontSrc: java.lang.String = null,
-    onClick: js.Function1[/* result */ js.Any, scala.Unit] = null
+    onClick: /* result */ js.Any => scala.Unit = null
   ): PlusNativeObjRichTextStyles = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (family != null) __obj.updateDynamic("family")(family)
     if (fontSrc != null) __obj.updateDynamic("fontSrc")(fontSrc)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     __obj.asInstanceOf[PlusNativeObjRichTextStyles]
   }
 }

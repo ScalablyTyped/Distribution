@@ -38,23 +38,17 @@ trait Events extends js.Object {
 object Events {
   @scala.inline
   def apply(
-    afterLoad: js.Function1[File, scala.Unit],
-    beforeLoad: js.Function1[File, scala.Unit],
-    completion: js.Function2[File, Query, CompletionsQueryResult | scala.Unit],
-    postInfer: js.Function2[estreeLib.estreeMod.Program, ternLib.libInferMod.Scope, scala.Unit],
-    postParse: js.Function2[estreeLib.estreeMod.Program, java.lang.String, scala.Unit],
-    preInfer: js.Function2[estreeLib.estreeMod.Program, ternLib.libInferMod.Scope, scala.Unit],
-    preParse: js.Function2[java.lang.String, js.Object, java.lang.String | scala.Unit],
-    reset: js.Function0[scala.Unit],
-    typeAt: js.Function4[
-      File, 
-      Position, 
-      estreeLib.estreeMod.Node, 
-      ternLib.libInferMod.Type, 
-      ternLib.libInferMod.Type | scala.Unit
-    ]
+    afterLoad: File => scala.Unit,
+    beforeLoad: File => scala.Unit,
+    completion: (File, Query) => CompletionsQueryResult | scala.Unit,
+    postInfer: (estreeLib.estreeMod.Program, ternLib.libInferMod.Scope) => scala.Unit,
+    postParse: (estreeLib.estreeMod.Program, java.lang.String) => scala.Unit,
+    preInfer: (estreeLib.estreeMod.Program, ternLib.libInferMod.Scope) => scala.Unit,
+    preParse: (java.lang.String, js.Object) => java.lang.String | scala.Unit,
+    reset: () => scala.Unit,
+    typeAt: (File, Position, estreeLib.estreeMod.Node, ternLib.libInferMod.Type) => ternLib.libInferMod.Type | scala.Unit
   ): Events = {
-    val __obj = js.Dynamic.literal(afterLoad = afterLoad, beforeLoad = beforeLoad, completion = completion, postInfer = postInfer, postParse = postParse, preInfer = preInfer, preParse = preParse, reset = reset, typeAt = typeAt)
+    val __obj = js.Dynamic.literal(afterLoad = js.Any.fromFunction1(afterLoad), beforeLoad = js.Any.fromFunction1(beforeLoad), completion = js.Any.fromFunction2(completion), postInfer = js.Any.fromFunction2(postInfer), postParse = js.Any.fromFunction2(postParse), preInfer = js.Any.fromFunction2(preInfer), preParse = js.Any.fromFunction2(preParse), reset = js.Any.fromFunction0(reset), typeAt = js.Any.fromFunction4(typeAt))
   
     __obj.asInstanceOf[Events]
   }

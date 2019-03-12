@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.Source")
 @js.native
 class Source protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Cited: scala.Boolean = js.native
   val Creator: scala.Double = js.native
   val Parent: js.Any = js.native

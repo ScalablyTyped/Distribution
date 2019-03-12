@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Parser protected ()
   extends antlr4Lib.parserMod.Parser {
-  def this(input: antlr4Lib.commontokenstreamMod.CommonTokenStream) = this()
+  def this(input: antlr4Lib.commonTokenStreamMod.CommonTokenStream) = this()
 }
 

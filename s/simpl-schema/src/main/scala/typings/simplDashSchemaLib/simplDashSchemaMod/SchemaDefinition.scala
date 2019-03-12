@@ -44,7 +44,7 @@ object SchemaDefinition {
   def apply(
     `type`: js.Any,
     allowedValues: js.Array[_] | js.Function0[js.Array[_]] = null,
-    autoValue: js.Function0[_] = null,
+    autoValue: () => _ = null,
     blackbox: js.UndefOr[scala.Boolean] = js.undefined,
     custom: js.ThisFunction0[
       /* this */ CustomValidationContext, 
@@ -66,7 +66,7 @@ object SchemaDefinition {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)
     if (allowedValues != null) __obj.updateDynamic("allowedValues")(allowedValues.asInstanceOf[js.Any])
-    if (autoValue != null) __obj.updateDynamic("autoValue")(autoValue)
+    if (autoValue != null) __obj.updateDynamic("autoValue")(js.Any.fromFunction0(autoValue))
     if (!js.isUndefined(blackbox)) __obj.updateDynamic("blackbox")(blackbox)
     if (custom != null) __obj.updateDynamic("custom")(custom)
     if (!js.isUndefined(decimal)) __obj.updateDynamic("decimal")(decimal)

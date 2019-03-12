@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
   var TransitionProps: js.UndefOr[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = js.undefined
   var action: js.UndefOr[js.Function1[/* actions */ PopoverActions, scala.Unit]] = js.undefined
   var anchorEl: js.UndefOr[
-    scala.Null | reactLib.HTMLElement | (js.Function1[/* element */ reactLib.HTMLElement, reactLib.HTMLElement])
+    scala.Null | stdLib.HTMLElement | (js.Function1[/* element */ stdLib.HTMLElement, stdLib.HTMLElement])
   ] = js.undefined
   var anchorOrigin: js.UndefOr[PopoverOrigin] = js.undefined
   var anchorPosition: js.UndefOr[PopoverPosition] = js.undefined
@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation._
   var className: js.UndefOr[java.lang.String] = js.undefined
   var elevation: js.UndefOr[scala.Double] = js.undefined
   var getContentAnchorEl: js.UndefOr[
-    scala.Null | (js.Function1[/* element */ reactLib.HTMLElement, reactLib.HTMLElement])
+    scala.Null | (js.Function1[/* element */ stdLib.HTMLElement, stdLib.HTMLElement])
   ] = js.undefined
   var marginThreshold: js.UndefOr[scala.Double] = js.undefined
   var modal: js.UndefOr[scala.Boolean] = js.undefined
@@ -49,8 +49,8 @@ object PopoverProps {
     PaperProps: stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = null,
     TransitionComponent: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = null,
     TransitionProps: atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps = null,
-    action: js.Function1[/* actions */ PopoverActions, scala.Unit] = null,
-    anchorEl: reactLib.HTMLElement | (js.Function1[/* element */ reactLib.HTMLElement, reactLib.HTMLElement]) = null,
+    action: /* actions */ PopoverActions => scala.Unit = null,
+    anchorEl: stdLib.HTMLElement | (js.Function1[/* element */ stdLib.HTMLElement, stdLib.HTMLElement]) = null,
     anchorOrigin: PopoverOrigin = null,
     anchorPosition: PopoverPosition = null,
     anchorReference: PopoverReference = null,
@@ -58,7 +58,7 @@ object PopoverProps {
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[PopoverClassKey]] = null,
     elevation: scala.Int | scala.Double = null,
-    getContentAnchorEl: js.Function1[/* element */ reactLib.HTMLElement, reactLib.HTMLElement] = null,
+    getContentAnchorEl: /* element */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
     marginThreshold: scala.Int | scala.Double = null,
     modal: js.UndefOr[scala.Boolean] = js.undefined,
@@ -72,7 +72,7 @@ object PopoverProps {
     if (PaperProps != null) __obj.updateDynamic("PaperProps")(PaperProps)
     if (TransitionComponent != null) __obj.updateDynamic("TransitionComponent")(TransitionComponent.asInstanceOf[js.Any])
     if (TransitionProps != null) __obj.updateDynamic("TransitionProps")(TransitionProps)
-    if (action != null) __obj.updateDynamic("action")(action)
+    if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
     if (anchorEl != null) __obj.updateDynamic("anchorEl")(anchorEl.asInstanceOf[js.Any])
     if (anchorOrigin != null) __obj.updateDynamic("anchorOrigin")(anchorOrigin)
     if (anchorPosition != null) __obj.updateDynamic("anchorPosition")(anchorPosition)
@@ -81,7 +81,7 @@ object PopoverProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
-    if (getContentAnchorEl != null) __obj.updateDynamic("getContentAnchorEl")(getContentAnchorEl)
+    if (getContentAnchorEl != null) __obj.updateDynamic("getContentAnchorEl")(js.Any.fromFunction1(getContentAnchorEl))
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (marginThreshold != null) __obj.updateDynamic("marginThreshold")(marginThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)

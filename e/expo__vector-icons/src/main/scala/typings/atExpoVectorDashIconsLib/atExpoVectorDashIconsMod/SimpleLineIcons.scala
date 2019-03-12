@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@expo/vector-icons", "SimpleLineIcons")
 @js.native
 class SimpleLineIcons ()
-  extends reactDashNativeDashVectorDashIconsLib.simplelineiconsMod.default
+  extends reactDashNativeDashVectorDashIconsLib.simpleLineIconsMod.default
 
 /* static members */
 @JSImport("@expo/vector-icons", "SimpleLineIcons")

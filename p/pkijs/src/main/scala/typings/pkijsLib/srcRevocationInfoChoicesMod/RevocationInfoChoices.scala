@@ -17,12 +17,12 @@ object RevocationInfoChoices {
   @scala.inline
   def apply(
     crls: js.Array[pkijsLib.srcCertificateRevocationListMod.default],
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     otherRevocationInfos: js.Array[pkijsLib.srcOtherRevocationInfoFormatMod.default],
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): RevocationInfoChoices = {
-    val __obj = js.Dynamic.literal(crls = crls, fromSchema = fromSchema, otherRevocationInfos = otherRevocationInfos, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(crls = crls, fromSchema = js.Any.fromFunction1(fromSchema), otherRevocationInfos = otherRevocationInfos, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[RevocationInfoChoices]
   }

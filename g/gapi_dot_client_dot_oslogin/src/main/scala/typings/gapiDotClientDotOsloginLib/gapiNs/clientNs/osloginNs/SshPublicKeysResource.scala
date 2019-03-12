@@ -20,20 +20,11 @@ trait SshPublicKeysResource extends js.Object {
 object SshPublicKeysResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotOsloginLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotOsloginLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SshPublicKey]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotOsloginLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SshPublicKey]
-    ]
+    delete: gapiDotClientDotOsloginLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotOsloginLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[SshPublicKey],
+    patch: gapiDotClientDotOsloginLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[SshPublicKey]
   ): SshPublicKeysResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, patch = patch)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch))
   
     __obj.asInstanceOf[SshPublicKeysResource]
   }

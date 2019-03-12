@@ -38,13 +38,13 @@ object JobQueryContainer {
   def apply(
     constructor: js.Function,
     containers: js.Array[JobQueryContainer],
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     id: scala.Double,
     name: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     queries: js.Array[JobQuery]
   ): JobQueryContainer = {
-    val __obj = js.Dynamic.literal(constructor = constructor, containers = containers, hasOwnProperty = hasOwnProperty, id = id, name = name, propertyIsEnumerable = propertyIsEnumerable, queries = queries)
+    val __obj = js.Dynamic.literal(constructor = constructor, containers = containers, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), queries = queries)
   
     __obj.asInstanceOf[JobQueryContainer]
   }

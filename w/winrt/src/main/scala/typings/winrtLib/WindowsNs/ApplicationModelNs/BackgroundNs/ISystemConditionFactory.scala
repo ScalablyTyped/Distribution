@@ -11,8 +11,8 @@ trait ISystemConditionFactory extends js.Object {
 
 object ISystemConditionFactory {
   @scala.inline
-  def apply(create: js.Function1[SystemConditionType, SystemCondition]): ISystemConditionFactory = {
-    val __obj = js.Dynamic.literal(create = create)
+  def apply(create: SystemConditionType => SystemCondition): ISystemConditionFactory = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
   
     __obj.asInstanceOf[ISystemConditionFactory]
   }

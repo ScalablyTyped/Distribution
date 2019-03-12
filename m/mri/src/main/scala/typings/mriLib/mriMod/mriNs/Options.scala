@@ -23,14 +23,14 @@ object Options {
     boolean: ArrayOrString = null,
     default: DictionaryObject[_] = null,
     string: ArrayOrString = null,
-    unknown: js.Function1[/* flag */ java.lang.String, scala.Unit] = null
+    unknown: /* flag */ java.lang.String => scala.Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (boolean != null) __obj.updateDynamic("boolean")(boolean.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default)
     if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
-    if (unknown != null) __obj.updateDynamic("unknown")(unknown)
+    if (unknown != null) __obj.updateDynamic("unknown")(js.Any.fromFunction1(unknown))
     __obj.asInstanceOf[Options]
   }
 }

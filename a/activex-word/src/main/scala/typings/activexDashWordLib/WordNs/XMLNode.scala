@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.XMLNode")
 @js.native
 class XMLNode protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Attributes: XMLNodes = js.native
   val BaseName: java.lang.String = js.native
   val ChildNodeSuggestions: XMLChildNodeSuggestions = js.native
@@ -27,8 +27,8 @@ class XMLNode protected () extends js.Object {
   val ParentNode: XMLNode = js.native
   var PlaceholderText: java.lang.String = js.native
   val PreviousSibling: XMLNode = js.native
-  val Range: Range = js.native
-  val SmartTag: SmartTag = js.native
+  val Range: activexDashWordLib.WordNs.Range = js.native
+  val SmartTag: activexDashWordLib.WordNs.SmartTag = js.native
   var Text: java.lang.String = js.native
   val ValidationStatus: WdXMLValidationStatus = js.native
   var `Word.XMLNode_typekey`: XMLNode = js.native

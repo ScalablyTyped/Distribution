@@ -13,12 +13,8 @@ trait Anon_Force extends js.Object {
 
 object Anon_Force {
   @scala.inline
-  def apply(
-    id: scala.Double,
-    selector: js.Function1[js.Any, js.Object],
-    force: js.UndefOr[scala.Boolean] = js.undefined
-  ): Anon_Force = {
-    val __obj = js.Dynamic.literal(id = id, selector = selector)
+  def apply(id: scala.Double, selector: js.Any => js.Object, force: js.UndefOr[scala.Boolean] = js.undefined): Anon_Force = {
+    val __obj = js.Dynamic.literal(id = id, selector = js.Any.fromFunction1(selector))
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
     __obj.asInstanceOf[Anon_Force]
   }

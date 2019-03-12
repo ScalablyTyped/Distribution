@@ -53,12 +53,7 @@ object NestedTickOptions {
     backdropPaddingX: scala.Int | scala.Double = null,
     backdropPaddingY: scala.Int | scala.Double = null,
     beginAtZero: js.UndefOr[scala.Boolean] = js.undefined,
-    callback: js.Function3[
-      /* value */ js.Any, 
-      /* index */ js.Any, 
-      /* values */ js.Any, 
-      java.lang.String | scala.Double
-    ] = null,
+    callback: (/* value */ js.Any, /* index */ js.Any, /* values */ js.Any) => java.lang.String | scala.Double = null,
     display: js.UndefOr[scala.Boolean] = js.undefined,
     fontColor: ChartColor = null,
     fontFamily: java.lang.String = null,
@@ -87,7 +82,7 @@ object NestedTickOptions {
     if (backdropPaddingX != null) __obj.updateDynamic("backdropPaddingX")(backdropPaddingX.asInstanceOf[js.Any])
     if (backdropPaddingY != null) __obj.updateDynamic("backdropPaddingY")(backdropPaddingY.asInstanceOf[js.Any])
     if (!js.isUndefined(beginAtZero)) __obj.updateDynamic("beginAtZero")(beginAtZero)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction3(callback))
     if (!js.isUndefined(display)) __obj.updateDynamic("display")(display)
     if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)

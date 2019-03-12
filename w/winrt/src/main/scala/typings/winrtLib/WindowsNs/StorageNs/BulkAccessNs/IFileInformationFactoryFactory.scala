@@ -33,34 +33,12 @@ trait IFileInformationFactoryFactory extends js.Object {
 object IFileInformationFactoryFactory {
   @scala.inline
   def apply(
-    createWithMode: js.Function2[
-      winrtLib.WindowsNs.StorageNs.SearchNs.IStorageQueryResultBase, 
-      winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailMode, 
-      FileInformationFactory
-    ],
-    createWithModeAndSize: js.Function3[
-      winrtLib.WindowsNs.StorageNs.SearchNs.IStorageQueryResultBase, 
-      winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailMode, 
-      scala.Double, 
-      FileInformationFactory
-    ],
-    createWithModeAndSizeAndOptions: js.Function4[
-      winrtLib.WindowsNs.StorageNs.SearchNs.IStorageQueryResultBase, 
-      winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailMode, 
-      scala.Double, 
-      winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailOptions, 
-      FileInformationFactory
-    ],
-    createWithModeAndSizeAndOptionsAndFlags: js.Function5[
-      winrtLib.WindowsNs.StorageNs.SearchNs.IStorageQueryResultBase, 
-      winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailMode, 
-      scala.Double, 
-      winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailOptions, 
-      scala.Boolean, 
-      FileInformationFactory
-    ]
+    createWithMode: (winrtLib.WindowsNs.StorageNs.SearchNs.IStorageQueryResultBase, winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailMode) => FileInformationFactory,
+    createWithModeAndSize: (winrtLib.WindowsNs.StorageNs.SearchNs.IStorageQueryResultBase, winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailMode, scala.Double) => FileInformationFactory,
+    createWithModeAndSizeAndOptions: (winrtLib.WindowsNs.StorageNs.SearchNs.IStorageQueryResultBase, winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailMode, scala.Double, winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailOptions) => FileInformationFactory,
+    createWithModeAndSizeAndOptionsAndFlags: (winrtLib.WindowsNs.StorageNs.SearchNs.IStorageQueryResultBase, winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailMode, scala.Double, winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailOptions, scala.Boolean) => FileInformationFactory
   ): IFileInformationFactoryFactory = {
-    val __obj = js.Dynamic.literal(createWithMode = createWithMode, createWithModeAndSize = createWithModeAndSize, createWithModeAndSizeAndOptions = createWithModeAndSizeAndOptions, createWithModeAndSizeAndOptionsAndFlags = createWithModeAndSizeAndOptionsAndFlags)
+    val __obj = js.Dynamic.literal(createWithMode = js.Any.fromFunction2(createWithMode), createWithModeAndSize = js.Any.fromFunction3(createWithModeAndSize), createWithModeAndSizeAndOptions = js.Any.fromFunction4(createWithModeAndSizeAndOptions), createWithModeAndSizeAndOptionsAndFlags = js.Any.fromFunction5(createWithModeAndSizeAndOptionsAndFlags))
   
     __obj.asInstanceOf[IFileInformationFactoryFactory]
   }

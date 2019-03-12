@@ -28,12 +28,12 @@ trait EventCallbackInterface[TTarget, TEventKey] extends js.Object {
 object EventCallbackInterface {
   @scala.inline
   def apply[TTarget, TEventKey](
-    mutation: js.Function1[js.Any, js.Any],
+    mutation: js.Any => js.Any,
     childName: java.lang.String = null,
     eventKey: TEventKey = null,
     target: TTarget = null
   ): EventCallbackInterface[TTarget, TEventKey] = {
-    val __obj = js.Dynamic.literal(mutation = mutation)
+    val __obj = js.Dynamic.literal(mutation = js.Any.fromFunction1(mutation))
     if (childName != null) __obj.updateDynamic("childName")(childName)
     if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])

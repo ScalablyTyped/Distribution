@@ -14,7 +14,7 @@ class Window protected () extends js.Object {
   val ActivePane: Pane = js.native
   val ActiveSheet: Sheet | scala.Null = js.native
   val ActiveSheetView: SheetView | scala.Null = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var AutoFilterDateGrouping: scala.Boolean = js.native
   var Caption: java.lang.String = js.native
   val Creator: XlCreator = js.native
@@ -114,7 +114,7 @@ class Window protected () extends js.Object {
   ): scala.Unit = js.native
   def ScrollWorkbookTabs(Sheets: activexDashExcelLib.activexDashExcelLibNumbers.`0`, Position: Constants): js.Any = js.native
   def ScrollWorkbookTabs(Sheets: scala.Double): js.Any = js.native
-  def SelectedSheets(Indexes: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): Sheets[Sheet] = js.native
+  def SelectedSheets(Indexes: stdLib.SafeArray[java.lang.String | scala.Double]): Sheets[Sheet] = js.native
   def SelectedSheets(Index: java.lang.String): Sheet = js.native
   def SelectedSheets(Index: scala.Double): Sheet = js.native
   def SheetViews(Index: js.Any): SheetView = js.native

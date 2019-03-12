@@ -17,7 +17,7 @@ abstract class HttpPublisher protected () extends Publisher {
     dataLength: scala.Double,
     requestProcessor: js.Function2[
       /* request */ nodeLib.httpMod.ClientRequest, 
-      /* reject */ js.Function1[/* error */ nodeLib.Error, scala.Unit], 
+      /* reject */ js.Function1[/* error */ stdLib.Error, scala.Unit], 
       scala.Unit
     ]
   ): js.Promise[_] = js.native
@@ -27,7 +27,7 @@ abstract class HttpPublisher protected () extends Publisher {
     dataLength: scala.Double,
     requestProcessor: js.Function2[
       /* request */ nodeLib.httpMod.ClientRequest, 
-      /* reject */ js.Function1[/* error */ nodeLib.Error, scala.Unit], 
+      /* reject */ js.Function1[/* error */ stdLib.Error, scala.Unit], 
       scala.Unit
     ],
     file: java.lang.String

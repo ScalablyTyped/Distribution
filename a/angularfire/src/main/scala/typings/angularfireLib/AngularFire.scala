@@ -61,7 +61,7 @@ trait AngularFire extends js.Object {
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
   @JSName("$update")
-  def $update(key: java.lang.String, data: coreDashJsLib.Object): angularLib.angularMod.angularNs.IPromise[
+  def $update(key: java.lang.String, data: js.Object): angularLib.angularMod.angularNs.IPromise[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
 }

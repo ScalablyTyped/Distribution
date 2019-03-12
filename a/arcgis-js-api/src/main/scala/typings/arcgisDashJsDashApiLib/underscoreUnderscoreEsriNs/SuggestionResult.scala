@@ -31,13 +31,13 @@ object SuggestionResult {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     isCollection: scala.Boolean,
     magicKey: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     text: java.lang.String
   ): SuggestionResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, isCollection = isCollection, magicKey = magicKey, propertyIsEnumerable = propertyIsEnumerable, text = text)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), isCollection = isCollection, magicKey = magicKey, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), text = text)
   
     __obj.asInstanceOf[SuggestionResult]
   }

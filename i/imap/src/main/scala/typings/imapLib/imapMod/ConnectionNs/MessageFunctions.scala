@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation._
 
 trait MessageFunctions extends js.Object {
   /** Adds flag(s) to message(s). */
-  def addFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit
+  def addFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit
   /** Adds keyword(s) to message(s). keywords is either a single keyword or an array of keywords. */
-  def addKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit
+  def addKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit
   /** Copies message(s) in the currently open mailbox to another mailbox. */
   def copy(
     source: js.Any,
     mailboxName: java.lang.String,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit
   /** Removes flag(s) from message(s). */
-  def delFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit
+  def delFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit
   /** Removes keyword(s) from message(s). keywords is either a single keyword or an array of keywords. */
-  def delKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit
+  def delKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit
   /** Fetches message(s) in the currently open mailbox; source can be a single message identifier, a message identifier range (e.g. '2504:2507' or '*' or '2504:*'), an array of message identifiers, or an array of message identifier ranges. */
   def fetch(source: js.Any, options: FetchOptions): ImapFetch
   /** Moves message(s) in the currently open mailbox to another mailbox. Note: The message(s) in the destination mailbox will have a new message UID. */
   def move(
     source: js.Any,
     mailboxName: java.lang.String,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit
   /** Searches the currently open mailbox for messages using given criteria. criteria is a list describing what you want to find. For criteria types that require arguments, use an array instead of just the string criteria type name (e.g. ['FROM', 'foo@bar.com']). Prefix criteria types with an "!" to negate.
     The following message flags are valid types that do not have arguments:
@@ -69,46 +69,32 @@ trait MessageFunctions extends js.Object {
     */
   def search(
     criteria: js.Array[_],
-    callback: js.Function2[/* error */ nodeLib.Error, /* uids */ js.Array[scala.Double], scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* uids */ js.Array[scala.Double], scala.Unit]
   ): scala.Unit
   /** Checks if the server supports the specified capability. */
   def serverSupports(capability: java.lang.String): scala.Boolean
   /** Sets the flag(s) for message(s). */
-  def setFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit
+  def setFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit
   /** Sets keyword(s) for message(s). keywords is either a single keyword or an array of keywords. */
-  def setKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit
+  def setKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit
 }
 
 object MessageFunctions {
   @scala.inline
   def apply(
-    addFlags: js.Function3[js.Any, js.Any, js.Function1[/* error */ nodeLib.Error, scala.Unit], scala.Unit],
-    addKeywords: js.Function3[js.Any, js.Any, js.Function1[/* error */ nodeLib.Error, scala.Unit], scala.Unit],
-    copy: js.Function3[
-      js.Any, 
-      java.lang.String, 
-      js.Function1[/* error */ nodeLib.Error, scala.Unit], 
-      scala.Unit
-    ],
-    delFlags: js.Function3[js.Any, js.Any, js.Function1[/* error */ nodeLib.Error, scala.Unit], scala.Unit],
-    delKeywords: js.Function3[js.Any, js.Any, js.Function1[/* error */ nodeLib.Error, scala.Unit], scala.Unit],
-    fetch: js.Function2[js.Any, FetchOptions, ImapFetch],
-    move: js.Function3[
-      js.Any, 
-      java.lang.String, 
-      js.Function1[/* error */ nodeLib.Error, scala.Unit], 
-      scala.Unit
-    ],
-    search: js.Function2[
-      js.Array[_], 
-      js.Function2[/* error */ nodeLib.Error, /* uids */ js.Array[scala.Double], scala.Unit], 
-      scala.Unit
-    ],
-    serverSupports: js.Function1[java.lang.String, scala.Boolean],
-    setFlags: js.Function3[js.Any, js.Any, js.Function1[/* error */ nodeLib.Error, scala.Unit], scala.Unit],
-    setKeywords: js.Function3[js.Any, js.Any, js.Function1[/* error */ nodeLib.Error, scala.Unit], scala.Unit]
+    addFlags: (js.Any, js.Any, js.Function1[/* error */ stdLib.Error, scala.Unit]) => scala.Unit,
+    addKeywords: (js.Any, js.Any, js.Function1[/* error */ stdLib.Error, scala.Unit]) => scala.Unit,
+    copy: (js.Any, java.lang.String, js.Function1[/* error */ stdLib.Error, scala.Unit]) => scala.Unit,
+    delFlags: (js.Any, js.Any, js.Function1[/* error */ stdLib.Error, scala.Unit]) => scala.Unit,
+    delKeywords: (js.Any, js.Any, js.Function1[/* error */ stdLib.Error, scala.Unit]) => scala.Unit,
+    fetch: (js.Any, FetchOptions) => ImapFetch,
+    move: (js.Any, java.lang.String, js.Function1[/* error */ stdLib.Error, scala.Unit]) => scala.Unit,
+    search: (js.Array[_], js.Function2[/* error */ stdLib.Error, /* uids */ js.Array[scala.Double], scala.Unit]) => scala.Unit,
+    serverSupports: java.lang.String => scala.Boolean,
+    setFlags: (js.Any, js.Any, js.Function1[/* error */ stdLib.Error, scala.Unit]) => scala.Unit,
+    setKeywords: (js.Any, js.Any, js.Function1[/* error */ stdLib.Error, scala.Unit]) => scala.Unit
   ): MessageFunctions = {
-    val __obj = js.Dynamic.literal(addFlags = addFlags, addKeywords = addKeywords, copy = copy, delFlags = delFlags, delKeywords = delKeywords, fetch = fetch, move = move, search = search, serverSupports = serverSupports, setFlags = setFlags, setKeywords = setKeywords)
+    val __obj = js.Dynamic.literal(addFlags = js.Any.fromFunction3(addFlags), addKeywords = js.Any.fromFunction3(addKeywords), copy = js.Any.fromFunction3(copy), delFlags = js.Any.fromFunction3(delFlags), delKeywords = js.Any.fromFunction3(delKeywords), fetch = js.Any.fromFunction2(fetch), move = js.Any.fromFunction3(move), search = js.Any.fromFunction2(search), serverSupports = js.Any.fromFunction1(serverSupports), setFlags = js.Any.fromFunction3(setFlags), setKeywords = js.Any.fromFunction3(setKeywords))
   
     __obj.asInstanceOf[MessageFunctions]
   }

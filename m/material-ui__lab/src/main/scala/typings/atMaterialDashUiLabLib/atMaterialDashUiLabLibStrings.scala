@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 object atMaterialDashUiLabLibStrings {
   @js.native
   sealed trait actions
-    extends atMaterialDashUiLabLib.speeddialSpeedDialMod.SpeedDialClassKey
+    extends atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialClassKey
   
   @js.native
   sealed trait actionsClosed
-    extends atMaterialDashUiLabLib.speeddialSpeedDialMod.SpeedDialClassKey
+    extends atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialClassKey
   
   @js.native
   sealed trait activated
@@ -29,11 +29,11 @@ object atMaterialDashUiLabLibStrings {
   
   @js.native
   sealed trait button
-    extends atMaterialDashUiLabLib.speeddialactionSpeedDialActionMod.SpeedDialActionClassKey
+    extends atMaterialDashUiLabLib.speedDialActionSpeedDialActionMod.SpeedDialActionClassKey
   
   @js.native
   sealed trait buttonClosed
-    extends atMaterialDashUiLabLib.speeddialactionSpeedDialActionMod.SpeedDialActionClassKey
+    extends atMaterialDashUiLabLib.speedDialActionSpeedDialActionMod.SpeedDialActionClassKey
   
   @js.native
   sealed trait container
@@ -41,19 +41,19 @@ object atMaterialDashUiLabLibStrings {
   
   @js.native
   sealed trait directionDown
-    extends atMaterialDashUiLabLib.speeddialSpeedDialMod.SpeedDialClassKey
+    extends atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialClassKey
   
   @js.native
   sealed trait directionLeft
-    extends atMaterialDashUiLabLib.speeddialSpeedDialMod.SpeedDialClassKey
+    extends atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialClassKey
   
   @js.native
   sealed trait directionRight
-    extends atMaterialDashUiLabLib.speeddialSpeedDialMod.SpeedDialClassKey
+    extends atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialClassKey
   
   @js.native
   sealed trait directionUp
-    extends atMaterialDashUiLabLib.speeddialSpeedDialMod.SpeedDialClassKey
+    extends atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialClassKey
   
   @js.native
   sealed trait disabled
@@ -64,7 +64,7 @@ object atMaterialDashUiLabLibStrings {
   
   @js.native
   sealed trait fab
-    extends atMaterialDashUiLabLib.speeddialSpeedDialMod.SpeedDialClassKey
+    extends atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialClassKey
   
   @js.native
   sealed trait focused
@@ -72,15 +72,15 @@ object atMaterialDashUiLabLibStrings {
   
   @js.native
   sealed trait icon
-    extends atMaterialDashUiLabLib.speeddialiconSpeedDialIconMod.SpeedDialIconClassKey
+    extends atMaterialDashUiLabLib.speedDialIconSpeedDialIconMod.SpeedDialIconClassKey
   
   @js.native
   sealed trait iconOpen
-    extends atMaterialDashUiLabLib.speeddialiconSpeedDialIconMod.SpeedDialIconClassKey
+    extends atMaterialDashUiLabLib.speedDialIconSpeedDialIconMod.SpeedDialIconClassKey
   
   @js.native
   sealed trait iconWithOpenIconOpen
-    extends atMaterialDashUiLabLib.speeddialiconSpeedDialIconMod.SpeedDialIconClassKey
+    extends atMaterialDashUiLabLib.speedDialIconSpeedDialIconMod.SpeedDialIconClassKey
   
   @js.native
   sealed trait jumped
@@ -88,7 +88,7 @@ object atMaterialDashUiLabLibStrings {
   
   @js.native
   sealed trait label
-    extends atMaterialDashUiLabLib.togglebuttonToggleButtonMod._ToggleButtonClassKey
+    extends atMaterialDashUiLabLib.toggleButtonToggleButtonMod._ToggleButtonClassKey
   
   @js.native
   sealed trait left extends js.Object
@@ -105,11 +105,11 @@ object atMaterialDashUiLabLibStrings {
   
   @js.native
   sealed trait openIcon
-    extends atMaterialDashUiLabLib.speeddialiconSpeedDialIconMod.SpeedDialIconClassKey
+    extends atMaterialDashUiLabLib.speedDialIconSpeedDialIconMod.SpeedDialIconClassKey
   
   @js.native
   sealed trait openIconOpen
-    extends atMaterialDashUiLabLib.speeddialiconSpeedDialIconMod.SpeedDialIconClassKey
+    extends atMaterialDashUiLabLib.speedDialIconSpeedDialIconMod.SpeedDialIconClassKey
   
   @js.native
   sealed trait right extends js.Object
@@ -124,15 +124,15 @@ object atMaterialDashUiLabLibStrings {
   sealed trait root
     extends atMaterialDashUiLabLib.breadcrumbsBreadcrumbsMod.BreadcrumbsClassKey
        with atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
-       with atMaterialDashUiLabLib.speeddialactionSpeedDialActionMod.SpeedDialActionClassKey
-       with atMaterialDashUiLabLib.speeddialSpeedDialMod.SpeedDialClassKey
-       with atMaterialDashUiLabLib.speeddialiconSpeedDialIconMod.SpeedDialIconClassKey
-       with atMaterialDashUiLabLib.togglebuttongroupToggleButtonGroupMod.ToggleButtonGroupClassKey
+       with atMaterialDashUiLabLib.speedDialActionSpeedDialActionMod.SpeedDialActionClassKey
+       with atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialClassKey
+       with atMaterialDashUiLabLib.speedDialIconSpeedDialIconMod.SpeedDialIconClassKey
+       with atMaterialDashUiLabLib.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupClassKey
   
   @js.native
   sealed trait selected
-    extends atMaterialDashUiLabLib.togglebuttongroupToggleButtonGroupMod.ToggleButtonGroupClassKey
-       with atMaterialDashUiLabLib.togglebuttonToggleButtonMod._ToggleButtonClassKey
+    extends atMaterialDashUiLabLib.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupClassKey
+       with atMaterialDashUiLabLib.toggleButtonToggleButtonMod._ToggleButtonClassKey
   
   @js.native
   sealed trait separator

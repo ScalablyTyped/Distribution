@@ -15,12 +15,12 @@ trait HeterogeneousExpandableList extends js.Object {
 object HeterogeneousExpandableList {
   @scala.inline
   def apply(
-    getChildType: js.Function2[scala.Double, scala.Double, scala.Double],
-    getChildTypeCount: js.Function0[scala.Double],
-    getGroupType: js.Function1[scala.Double, scala.Double],
-    getGroupTypeCount: js.Function0[scala.Double]
+    getChildType: (scala.Double, scala.Double) => scala.Double,
+    getChildTypeCount: () => scala.Double,
+    getGroupType: scala.Double => scala.Double,
+    getGroupTypeCount: () => scala.Double
   ): HeterogeneousExpandableList = {
-    val __obj = js.Dynamic.literal(getChildType = getChildType, getChildTypeCount = getChildTypeCount, getGroupType = getGroupType, getGroupTypeCount = getGroupTypeCount)
+    val __obj = js.Dynamic.literal(getChildType = js.Any.fromFunction2(getChildType), getChildTypeCount = js.Any.fromFunction0(getChildTypeCount), getGroupType = js.Any.fromFunction1(getGroupType), getGroupTypeCount = js.Any.fromFunction0(getGroupTypeCount))
   
     __obj.asInstanceOf[HeterogeneousExpandableList]
   }

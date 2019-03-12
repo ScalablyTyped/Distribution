@@ -32,15 +32,15 @@ trait XDatabaseParameterBroadcaster2 extends XDatabaseParameterBroadcaster {
 object XDatabaseParameterBroadcaster2 {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addDatabaseParameterListener: js.Function1[XDatabaseParameterListener, scala.Unit],
-    addParameterListener: js.Function1[XDatabaseParameterListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeDatabaseParameterListener: js.Function1[XDatabaseParameterListener, scala.Unit],
-    removeParameterListener: js.Function1[XDatabaseParameterListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addDatabaseParameterListener: XDatabaseParameterListener => scala.Unit,
+    addParameterListener: XDatabaseParameterListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeDatabaseParameterListener: XDatabaseParameterListener => scala.Unit,
+    removeParameterListener: XDatabaseParameterListener => scala.Unit
   ): XDatabaseParameterBroadcaster2 = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addDatabaseParameterListener = addDatabaseParameterListener, addParameterListener = addParameterListener, queryInterface = queryInterface, release = release, removeDatabaseParameterListener = removeDatabaseParameterListener, removeParameterListener = removeParameterListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addDatabaseParameterListener = js.Any.fromFunction1(addDatabaseParameterListener), addParameterListener = js.Any.fromFunction1(addParameterListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeDatabaseParameterListener = js.Any.fromFunction1(removeDatabaseParameterListener), removeParameterListener = js.Any.fromFunction1(removeParameterListener))
   
     __obj.asInstanceOf[XDatabaseParameterBroadcaster2]
   }

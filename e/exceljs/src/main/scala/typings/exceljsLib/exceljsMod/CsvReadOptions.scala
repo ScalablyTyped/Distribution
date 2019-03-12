@@ -14,11 +14,11 @@ object CsvReadOptions {
   @scala.inline
   def apply(
     dateFormats: js.Array[java.lang.String] = null,
-    map: js.Function2[/* value */ js.Any, /* index */ scala.Double, _] = null
+    map: (/* value */ js.Any, /* index */ scala.Double) => _ = null
   ): CsvReadOptions = {
     val __obj = js.Dynamic.literal()
     if (dateFormats != null) __obj.updateDynamic("dateFormats")(dateFormats)
-    if (map != null) __obj.updateDynamic("map")(map)
+    if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction2(map))
     __obj.asInstanceOf[CsvReadOptions]
   }
 }

@@ -51,18 +51,18 @@ object ^ extends js.Object {
   /**
   			 * Creates and returns an instance of <Titanium.UI.iPad.DocumentViewer>.
   			 */
-  def createDocumentViewer(): titaniumLib.TitaniumNs.UINs.iPadNs.DocumentViewer = js.native
-  def createDocumentViewer(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iPadNs.DocumentViewer = js.native
+  def createDocumentViewer(): DocumentViewer = js.native
+  def createDocumentViewer(parameters: js.Any): DocumentViewer = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iPad.Popover>.
   			 */
-  def createPopover(): titaniumLib.TitaniumNs.UINs.iPadNs.Popover = js.native
-  def createPopover(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iPadNs.Popover = js.native
+  def createPopover(): Popover = js.native
+  def createPopover(parameters: js.Any): Popover = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iPad.SplitWindow>.
   			 */
-  def createSplitWindow(): titaniumLib.TitaniumNs.UINs.iPadNs.SplitWindow = js.native
-  def createSplitWindow(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iPadNs.SplitWindow = js.native
+  def createSplitWindow(): SplitWindow = js.native
+  def createSplitWindow(parameters: js.Any): SplitWindow = js.native
   /**
   			 * Fires a synthesized event to any registered listeners.
   			 */

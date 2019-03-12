@@ -14,11 +14,11 @@ trait NetworkLayer extends js.Object {
 object NetworkLayer {
   @scala.inline
   def apply(
-    sendMutation: js.Function1[RelayMutationRequest, js.Promise[_] | scala.Null],
-    sendQueries: js.Function1[js.Array[RelayQueryRequest], js.Promise[_] | scala.Null],
-    supports: js.Function1[/* repeated */ java.lang.String, scala.Boolean]
+    sendMutation: RelayMutationRequest => js.Promise[_] | scala.Null,
+    sendQueries: js.Array[RelayQueryRequest] => js.Promise[_] | scala.Null,
+    supports: /* repeated */ java.lang.String => scala.Boolean
   ): NetworkLayer = {
-    val __obj = js.Dynamic.literal(sendMutation = sendMutation, sendQueries = sendQueries, supports = supports)
+    val __obj = js.Dynamic.literal(sendMutation = js.Any.fromFunction1(sendMutation), sendQueries = js.Any.fromFunction1(sendQueries), supports = js.Any.fromFunction1(supports))
   
     __obj.asInstanceOf[NetworkLayer]
   }

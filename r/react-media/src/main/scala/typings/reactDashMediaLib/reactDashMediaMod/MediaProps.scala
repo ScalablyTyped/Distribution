@@ -22,15 +22,15 @@ object MediaProps {
     query: java.lang.String | MediaQueryObject | js.Array[MediaQueryObject],
     children: (js.Function1[/* matches */ scala.Boolean, reactLib.reactMod.ReactNs.ReactNode]) | reactLib.reactMod.ReactNs.ReactNode = null,
     defaultMatches: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function1[/* matches */ scala.Boolean, scala.Unit] = null,
-    render: js.Function0[reactLib.reactMod.ReactNs.ReactNode] = null,
+    onChange: /* matches */ scala.Boolean => scala.Unit = null,
+    render: () => reactLib.reactMod.ReactNs.ReactNode = null,
     targetWindow: stdLib.Window = null
   ): MediaProps = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultMatches)) __obj.updateDynamic("defaultMatches")(defaultMatches)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction0(render))
     if (targetWindow != null) __obj.updateDynamic("targetWindow")(targetWindow)
     __obj.asInstanceOf[MediaProps]
   }

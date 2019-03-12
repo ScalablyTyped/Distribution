@@ -21,11 +21,11 @@ object PopoverProps {
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     content: reactLib.reactMod.ReactNs.ReactNode = null,
     defaultVisible: js.UndefOr[scala.Boolean] = js.undefined,
-    getPopupContainer: js.Function1[/* triggerNode */ js.UndefOr[reactLib.HTMLElement], reactLib.HTMLElement] = null,
-    getTooltipContainer: js.Function1[/* triggerNode */ reactLib.Element, reactLib.HTMLElement] = null,
+    getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.HTMLElement] => stdLib.HTMLElement = null,
+    getTooltipContainer: /* triggerNode */ stdLib.Element => stdLib.HTMLElement = null,
     mouseEnterDelay: scala.Int | scala.Double = null,
     mouseLeaveDelay: scala.Int | scala.Double = null,
-    onVisibleChange: js.Function1[/* visible */ scala.Boolean, scala.Unit] = null,
+    onVisibleChange: /* visible */ scala.Boolean => scala.Unit = null,
     openClassName: java.lang.String = null,
     overlayClassName: java.lang.String = null,
     overlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -45,11 +45,11 @@ object PopoverProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultVisible)) __obj.updateDynamic("defaultVisible")(defaultVisible)
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer)
-    if (getTooltipContainer != null) __obj.updateDynamic("getTooltipContainer")(getTooltipContainer)
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
+    if (getTooltipContainer != null) __obj.updateDynamic("getTooltipContainer")(js.Any.fromFunction1(getTooltipContainer))
     if (mouseEnterDelay != null) __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay.asInstanceOf[js.Any])
     if (mouseLeaveDelay != null) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.asInstanceOf[js.Any])
-    if (onVisibleChange != null) __obj.updateDynamic("onVisibleChange")(onVisibleChange)
+    if (onVisibleChange != null) __obj.updateDynamic("onVisibleChange")(js.Any.fromFunction1(onVisibleChange))
     if (openClassName != null) __obj.updateDynamic("openClassName")(openClassName)
     if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName)
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle)

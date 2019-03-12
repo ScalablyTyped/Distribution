@@ -120,8 +120,8 @@ object NodeSpec {
     marks: java.lang.String = null,
     parseDOM: js.Array[ParseRule] = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
-    toDOM: js.Function1[/* node */ ProsemirrorNode[_], DOMOutputSpec] = null,
-    toDebugString: js.Function1[/* node */ ProsemirrorNode[_], java.lang.String] = null
+    toDOM: /* node */ ProsemirrorNode[_] => DOMOutputSpec = null,
+    toDebugString: /* node */ ProsemirrorNode[_] => java.lang.String = null
   ): NodeSpec = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(atom)) __obj.updateDynamic("atom")(atom)
@@ -136,8 +136,8 @@ object NodeSpec {
     if (marks != null) __obj.updateDynamic("marks")(marks)
     if (parseDOM != null) __obj.updateDynamic("parseDOM")(parseDOM)
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
-    if (toDOM != null) __obj.updateDynamic("toDOM")(toDOM)
-    if (toDebugString != null) __obj.updateDynamic("toDebugString")(toDebugString)
+    if (toDOM != null) __obj.updateDynamic("toDOM")(js.Any.fromFunction1(toDOM))
+    if (toDebugString != null) __obj.updateDynamic("toDebugString")(js.Any.fromFunction1(toDebugString))
     __obj.asInstanceOf[NodeSpec]
   }
 }

@@ -220,52 +220,34 @@ trait XParameters
 object XParameters {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    clearParameters: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setArray: js.Function2[scala.Double, XArray, scala.Unit],
-    setBinaryStream: js.Function3[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      scala.Double, 
-      scala.Unit
-    ],
-    setBlob: js.Function2[scala.Double, XBlob, scala.Unit],
-    setBoolean: js.Function2[scala.Double, scala.Boolean, scala.Unit],
-    setByte: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setBytes: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      scala.Unit
-    ],
-    setCharacterStream: js.Function3[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      scala.Double, 
-      scala.Unit
-    ],
-    setClob: js.Function2[scala.Double, XClob, scala.Unit],
-    setDate: js.Function2[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date, scala.Unit],
-    setDouble: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setFloat: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setInt: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setLong: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setNull: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setObject: js.Function2[scala.Double, js.Any, scala.Unit],
-    setObjectNull: js.Function3[scala.Double, scala.Double, java.lang.String, scala.Unit],
-    setObjectWithInfo: js.Function4[scala.Double, js.Any, scala.Double, scala.Double, scala.Unit],
-    setRef: js.Function2[scala.Double, XRef, scala.Unit],
-    setShort: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setString: js.Function2[scala.Double, java.lang.String, scala.Unit],
-    setTime: js.Function2[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit],
-    setTimestamp: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    clearParameters: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setArray: (scala.Double, XArray) => scala.Unit,
+    setBinaryStream: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Double) => scala.Unit,
+    setBlob: (scala.Double, XBlob) => scala.Unit,
+    setBoolean: (scala.Double, scala.Boolean) => scala.Unit,
+    setByte: (scala.Double, scala.Double) => scala.Unit,
+    setBytes: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]) => scala.Unit,
+    setCharacterStream: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Double) => scala.Unit,
+    setClob: (scala.Double, XClob) => scala.Unit,
+    setDate: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date) => scala.Unit,
+    setDouble: (scala.Double, scala.Double) => scala.Unit,
+    setFloat: (scala.Double, scala.Double) => scala.Unit,
+    setInt: (scala.Double, scala.Double) => scala.Unit,
+    setLong: (scala.Double, scala.Double) => scala.Unit,
+    setNull: (scala.Double, scala.Double) => scala.Unit,
+    setObject: (scala.Double, js.Any) => scala.Unit,
+    setObjectNull: (scala.Double, scala.Double, java.lang.String) => scala.Unit,
+    setObjectWithInfo: (scala.Double, js.Any, scala.Double, scala.Double) => scala.Unit,
+    setRef: (scala.Double, XRef) => scala.Unit,
+    setShort: (scala.Double, scala.Double) => scala.Unit,
+    setString: (scala.Double, java.lang.String) => scala.Unit,
+    setTime: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time) => scala.Unit,
+    setTimestamp: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime) => scala.Unit
   ): XParameters = {
-    val __obj = js.Dynamic.literal(acquire = acquire, clearParameters = clearParameters, queryInterface = queryInterface, release = release, setArray = setArray, setBinaryStream = setBinaryStream, setBlob = setBlob, setBoolean = setBoolean, setByte = setByte, setBytes = setBytes, setCharacterStream = setCharacterStream, setClob = setClob, setDate = setDate, setDouble = setDouble, setFloat = setFloat, setInt = setInt, setLong = setLong, setNull = setNull, setObject = setObject, setObjectNull = setObjectNull, setObjectWithInfo = setObjectWithInfo, setRef = setRef, setShort = setShort, setString = setString, setTime = setTime, setTimestamp = setTimestamp)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), clearParameters = js.Any.fromFunction0(clearParameters), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setArray = js.Any.fromFunction2(setArray), setBinaryStream = js.Any.fromFunction3(setBinaryStream), setBlob = js.Any.fromFunction2(setBlob), setBoolean = js.Any.fromFunction2(setBoolean), setByte = js.Any.fromFunction2(setByte), setBytes = js.Any.fromFunction2(setBytes), setCharacterStream = js.Any.fromFunction3(setCharacterStream), setClob = js.Any.fromFunction2(setClob), setDate = js.Any.fromFunction2(setDate), setDouble = js.Any.fromFunction2(setDouble), setFloat = js.Any.fromFunction2(setFloat), setInt = js.Any.fromFunction2(setInt), setLong = js.Any.fromFunction2(setLong), setNull = js.Any.fromFunction2(setNull), setObject = js.Any.fromFunction2(setObject), setObjectNull = js.Any.fromFunction3(setObjectNull), setObjectWithInfo = js.Any.fromFunction4(setObjectWithInfo), setRef = js.Any.fromFunction2(setRef), setShort = js.Any.fromFunction2(setShort), setString = js.Any.fromFunction2(setString), setTime = js.Any.fromFunction2(setTime), setTimestamp = js.Any.fromFunction2(setTimestamp))
   
     __obj.asInstanceOf[XParameters]
   }

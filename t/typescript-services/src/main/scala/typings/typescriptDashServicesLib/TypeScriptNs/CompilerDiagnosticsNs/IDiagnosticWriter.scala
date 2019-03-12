@@ -11,8 +11,8 @@ trait IDiagnosticWriter extends js.Object {
 
 object IDiagnosticWriter {
   @scala.inline
-  def apply(Alert: js.Function1[java.lang.String, scala.Unit]): IDiagnosticWriter = {
-    val __obj = js.Dynamic.literal(Alert = Alert)
+  def apply(Alert: java.lang.String => scala.Unit): IDiagnosticWriter = {
+    val __obj = js.Dynamic.literal(Alert = js.Any.fromFunction1(Alert))
   
     __obj.asInstanceOf[IDiagnosticWriter]
   }

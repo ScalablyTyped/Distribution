@@ -14,6 +14,6 @@ object ^ extends js.Object {
     * @private
     */
   val _State: chromeDashAppsLib.Anon_FULLSCREEN = js.native
-  val window: chromeDashAppsLib.chromeNs.appNs.ChromeAppWindow = js.native
+  val window: ChromeAppWindow = js.native
 }
 

@@ -19,15 +19,15 @@ trait ReadonlyUnderscoreEscapedMap[T] extends js.Object {
 object ReadonlyUnderscoreEscapedMap {
   @scala.inline
   def apply[T](
-    entries: js.Function0[Iterator[js.Tuple2[__String, T]]],
-    forEach: js.Function1[js.Function2[/* value */ T, /* key */ __String, scala.Unit], scala.Unit],
-    get: js.Function1[__String, js.UndefOr[T]],
-    has: js.Function1[__String, scala.Boolean],
-    keys: js.Function0[Iterator[__String]],
+    entries: () => Iterator[js.Tuple2[__String, T]],
+    forEach: js.Function2[/* value */ T, /* key */ __String, scala.Unit] => scala.Unit,
+    get: __String => js.UndefOr[T],
+    has: __String => scala.Boolean,
+    keys: () => Iterator[__String],
     size: scala.Double,
-    values: js.Function0[Iterator[T]]
+    values: () => Iterator[T]
   ): ReadonlyUnderscoreEscapedMap[T] = {
-    val __obj = js.Dynamic.literal(entries = entries, forEach = forEach, get = get, has = has, keys = keys, size = size, values = values)
+    val __obj = js.Dynamic.literal(entries = js.Any.fromFunction0(entries), forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), keys = js.Any.fromFunction0(keys), size = size, values = js.Any.fromFunction0(values))
   
     __obj.asInstanceOf[ReadonlyUnderscoreEscapedMap[T]]
   }

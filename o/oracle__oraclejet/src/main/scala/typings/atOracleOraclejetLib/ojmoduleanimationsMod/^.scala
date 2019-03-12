@@ -62,11 +62,6 @@ object ^ extends js.Object {
     newViewOnTop: scala.Boolean
   ): atOracleOraclejetLib.ojmoduleDashElementMod.ModuleElementAnimation = js.native
   def createAnimation(oldViewEffect: scala.Null, newViewEffect: scala.Null, newViewOnTop: scala.Boolean): atOracleOraclejetLib.ojmoduleDashElementMod.ModuleElementAnimation = js.native
-  def switcher(
-    callback: js.Function1[
-      /* param0 */ atOracleOraclejetLib.ojmoduleanimationsMod.SwitcherCallBackParam, 
-      atOracleOraclejetLib.ojmoduleanimationsMod.Animations
-    ]
-  ): atOracleOraclejetLib.ojmoduleDashElementMod.ModuleElementAnimation = js.native
+  def switcher(callback: js.Function1[/* param0 */ SwitcherCallBackParam, Animations]): atOracleOraclejetLib.ojmoduleDashElementMod.ModuleElementAnimation = js.native
 }
 

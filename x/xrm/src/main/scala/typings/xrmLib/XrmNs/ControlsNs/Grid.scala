@@ -32,11 +32,11 @@ trait Grid extends js.Object {
 object Grid {
   @scala.inline
   def apply(
-    getRows: js.Function0[xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.GridNs.GridRow]],
-    getSelectedRows: js.Function0[xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.GridNs.GridRow]],
-    getTotalRecordCount: js.Function0[scala.Double]
+    getRows: () => xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.GridNs.GridRow],
+    getSelectedRows: () => xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.GridNs.GridRow],
+    getTotalRecordCount: () => scala.Double
   ): Grid = {
-    val __obj = js.Dynamic.literal(getRows = getRows, getSelectedRows = getSelectedRows, getTotalRecordCount = getTotalRecordCount)
+    val __obj = js.Dynamic.literal(getRows = js.Any.fromFunction0(getRows), getSelectedRows = js.Any.fromFunction0(getSelectedRows), getTotalRecordCount = js.Any.fromFunction0(getTotalRecordCount))
   
     __obj.asInstanceOf[Grid]
   }

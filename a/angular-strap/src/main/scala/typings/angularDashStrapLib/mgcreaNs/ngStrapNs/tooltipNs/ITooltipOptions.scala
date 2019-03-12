@@ -36,10 +36,10 @@ object ITooltipOptions {
     delay: scala.Double | angularDashStrapLib.Anon_Hide = null,
     html: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
-    onBeforeHide: js.Function1[/* tooltip */ ITooltip, scala.Unit] = null,
-    onBeforeShow: js.Function1[/* tooltip */ ITooltip, scala.Unit] = null,
-    onHide: js.Function1[/* tooltip */ ITooltip, scala.Unit] = null,
-    onShow: js.Function1[/* tooltip */ ITooltip, scala.Unit] = null,
+    onBeforeHide: /* tooltip */ ITooltip => scala.Unit = null,
+    onBeforeShow: /* tooltip */ ITooltip => scala.Unit = null,
+    onHide: /* tooltip */ ITooltip => scala.Unit = null,
+    onShow: /* tooltip */ ITooltip => scala.Unit = null,
     placement: java.lang.String = null,
     prefixEvent: java.lang.String = null,
     target: java.lang.String | angularLib.angularMod.angularNs.IAugmentedJQuery | scala.Boolean = null,
@@ -56,10 +56,10 @@ object ITooltipOptions {
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
     if (id != null) __obj.updateDynamic("id")(id)
-    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(onBeforeHide)
-    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(onBeforeShow)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(js.Any.fromFunction1(onBeforeHide))
+    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(js.Any.fromFunction1(onBeforeShow))
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction1(onHide))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (placement != null) __obj.updateDynamic("placement")(placement)
     if (prefixEvent != null) __obj.updateDynamic("prefixEvent")(prefixEvent)
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])

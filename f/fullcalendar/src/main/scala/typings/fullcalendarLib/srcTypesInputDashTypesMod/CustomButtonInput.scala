@@ -17,14 +17,14 @@ trait CustomButtonInput extends js.Object {
 object CustomButtonInput {
   @scala.inline
   def apply(
-    click: js.Function1[fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery, scala.Unit],
+    click: fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery => scala.Unit,
     text: java.lang.String,
     bootstrapFontAwesome: java.lang.String = null,
     bootstrapGlyphicon: java.lang.String = null,
     icon: java.lang.String = null,
     themeIcon: java.lang.String = null
   ): CustomButtonInput = {
-    val __obj = js.Dynamic.literal(click = click, text = text)
+    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), text = text)
     if (bootstrapFontAwesome != null) __obj.updateDynamic("bootstrapFontAwesome")(bootstrapFontAwesome)
     if (bootstrapGlyphicon != null) __obj.updateDynamic("bootstrapGlyphicon")(bootstrapGlyphicon)
     if (icon != null) __obj.updateDynamic("icon")(icon)

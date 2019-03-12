@@ -12,9 +12,9 @@ object ^ extends js.Object {
   def visitSchema(
     schema: graphqlLib.graphqlMod.GraphQLSchema,
     visitorSelector: js.Function2[
-      /* type */ graphqlDashToolsLib.distSchemaVisitorMod.VisitableSchemaType, 
+      /* type */ VisitableSchemaType, 
       /* methodName */ java.lang.String, 
-      js.Array[graphqlDashToolsLib.distSchemaVisitorMod.SchemaVisitor]
+      js.Array[SchemaVisitor]
     ]
   ): graphqlLib.graphqlMod.GraphQLSchema = js.native
 }

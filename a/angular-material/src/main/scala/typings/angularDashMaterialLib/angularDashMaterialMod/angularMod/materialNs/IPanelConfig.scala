@@ -62,11 +62,11 @@ object IPanelConfig {
     hasBackdrop: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
     locals: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    onCloseSuccess: js.Function2[/* panel */ IPanelRef, /* closeReason */ java.lang.String, _] = null,
-    onDomAdded: js.Function1[/* repeated */ js.Any, js.Thenable[scala.Unit] | scala.Unit] = null,
-    onDomRemoved: js.Function1[/* repeated */ js.Any, js.Thenable[scala.Unit] | scala.Unit] = null,
-    onOpenComplete: js.Function1[/* repeated */ js.Any, js.Thenable[scala.Unit] | scala.Unit] = null,
-    onRemoving: js.Function1[/* repeated */ js.Any, js.Thenable[scala.Unit] | scala.Unit] = null,
+    onCloseSuccess: (/* panel */ IPanelRef, /* closeReason */ java.lang.String) => _ = null,
+    onDomAdded: /* repeated */ js.Any => js.Thenable[scala.Unit] | scala.Unit = null,
+    onDomRemoved: /* repeated */ js.Any => js.Thenable[scala.Unit] | scala.Unit = null,
+    onOpenComplete: /* repeated */ js.Any => js.Thenable[scala.Unit] | scala.Unit = null,
+    onRemoving: /* repeated */ js.Any => js.Thenable[scala.Unit] | scala.Unit = null,
     origin: java.lang.String | angularLib.JQuery | stdLib.Element = null,
     panelClass: java.lang.String = null,
     position: IPanelPosition = null,
@@ -91,11 +91,11 @@ object IPanelConfig {
     if (!js.isUndefined(hasBackdrop)) __obj.updateDynamic("hasBackdrop")(hasBackdrop)
     if (id != null) __obj.updateDynamic("id")(id)
     if (locals != null) __obj.updateDynamic("locals")(locals)
-    if (onCloseSuccess != null) __obj.updateDynamic("onCloseSuccess")(onCloseSuccess)
-    if (onDomAdded != null) __obj.updateDynamic("onDomAdded")(onDomAdded)
-    if (onDomRemoved != null) __obj.updateDynamic("onDomRemoved")(onDomRemoved)
-    if (onOpenComplete != null) __obj.updateDynamic("onOpenComplete")(onOpenComplete)
-    if (onRemoving != null) __obj.updateDynamic("onRemoving")(onRemoving)
+    if (onCloseSuccess != null) __obj.updateDynamic("onCloseSuccess")(js.Any.fromFunction2(onCloseSuccess))
+    if (onDomAdded != null) __obj.updateDynamic("onDomAdded")(js.Any.fromFunction1(onDomAdded))
+    if (onDomRemoved != null) __obj.updateDynamic("onDomRemoved")(js.Any.fromFunction1(onDomRemoved))
+    if (onOpenComplete != null) __obj.updateDynamic("onOpenComplete")(js.Any.fromFunction1(onOpenComplete))
+    if (onRemoving != null) __obj.updateDynamic("onRemoving")(js.Any.fromFunction1(onRemoving))
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (panelClass != null) __obj.updateDynamic("panelClass")(panelClass)
     if (position != null) __obj.updateDynamic("position")(position)

@@ -42,11 +42,11 @@ object DrawerItemsProps {
   @scala.inline
   def apply(
     drawerPosition: reactDashNavigationLib.reactDashNavigationLibStrings.left | reactDashNavigationLib.reactDashNavigationLibStrings.right,
-    getLabel: js.Function1[DrawerScene, reactLib.reactMod.ReactNs.ReactNode | java.lang.String],
+    getLabel: DrawerScene => reactLib.reactMod.ReactNs.ReactNode | java.lang.String,
     items: js.Array[NavigationRoute[NavigationParams]],
     navigation: NavigationScreenProp[DrawerNavigationState, NavigationParams],
-    onItemPress: js.Function1[DrawerItem, scala.Unit],
-    renderIcon: js.Function1[DrawerScene, reactLib.reactMod.ReactNs.ReactNode],
+    onItemPress: DrawerItem => scala.Unit,
+    renderIcon: DrawerScene => reactLib.reactMod.ReactNs.ReactNode,
     activeBackgroundColor: java.lang.String = null,
     activeItemKey: java.lang.String = null,
     activeLabelStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
@@ -60,7 +60,7 @@ object DrawerItemsProps {
     labelStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     screenProps: js.Any = null
   ): DrawerItemsProps = {
-    val __obj = js.Dynamic.literal(drawerPosition = drawerPosition.asInstanceOf[js.Any], getLabel = getLabel, items = items, navigation = navigation, onItemPress = onItemPress, renderIcon = renderIcon)
+    val __obj = js.Dynamic.literal(drawerPosition = drawerPosition.asInstanceOf[js.Any], getLabel = js.Any.fromFunction1(getLabel), items = items, navigation = navigation, onItemPress = js.Any.fromFunction1(onItemPress), renderIcon = js.Any.fromFunction1(renderIcon))
     if (activeBackgroundColor != null) __obj.updateDynamic("activeBackgroundColor")(activeBackgroundColor)
     if (activeItemKey != null) __obj.updateDynamic("activeItemKey")(activeItemKey)
     if (activeLabelStyle != null) __obj.updateDynamic("activeLabelStyle")(activeLabelStyle.asInstanceOf[js.Any])

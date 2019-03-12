@@ -17,13 +17,13 @@ object XDiagramProvider {
   @scala.inline
   def apply(
     Diagram: XDiagram,
-    acquire: js.Function0[scala.Unit],
-    getDiagram: js.Function0[XDiagram],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setDiagram: js.Function1[XDiagram, scala.Unit]
+    acquire: () => scala.Unit,
+    getDiagram: () => XDiagram,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setDiagram: XDiagram => scala.Unit
   ): XDiagramProvider = {
-    val __obj = js.Dynamic.literal(Diagram = Diagram, acquire = acquire, getDiagram = getDiagram, queryInterface = queryInterface, release = release, setDiagram = setDiagram)
+    val __obj = js.Dynamic.literal(Diagram = Diagram, acquire = js.Any.fromFunction0(acquire), getDiagram = js.Any.fromFunction0(getDiagram), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDiagram = js.Any.fromFunction1(setDiagram))
   
     __obj.asInstanceOf[XDiagramProvider]
   }

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class RoomConnectFailedError () extends TwilioError {
   @JSName("code")
   var code_RoomConnectFailedError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53104` = js.native
-  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Unable to connect to Room` = js.native
+  @JSName("message")
+  var message_RoomConnectFailedError: twilioDashVideoLib.twilioDashVideoLibStrings.`Unable to connect to Room` = js.native
 }
 

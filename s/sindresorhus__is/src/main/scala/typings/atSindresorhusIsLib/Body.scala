@@ -18,15 +18,15 @@ trait Body extends js.Object {
 object Body {
   @scala.inline
   def apply(
-    arrayBuffer: js.Function0[Promise[ArrayBuffer]],
-    blob: js.Function0[Promise[Blob]],
+    arrayBuffer: () => Promise[ArrayBuffer],
+    blob: () => Promise[Blob],
     bodyUsed: scala.Boolean,
-    formData: js.Function0[Promise[FormData]],
-    json: js.Function0[Promise[_]],
-    text: js.Function0[Promise[java.lang.String]],
+    formData: () => Promise[FormData],
+    json: () => Promise[_],
+    text: () => Promise[java.lang.String],
     body: ReadableStream[Uint8Array] = null
   ): Body = {
-    val __obj = js.Dynamic.literal(arrayBuffer = arrayBuffer, blob = blob, bodyUsed = bodyUsed, formData = formData, json = json, text = text)
+    val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed, formData = js.Any.fromFunction0(formData), json = js.Any.fromFunction0(json), text = js.Any.fromFunction0(text))
     if (body != null) __obj.updateDynamic("body")(body)
     __obj.asInstanceOf[Body]
   }

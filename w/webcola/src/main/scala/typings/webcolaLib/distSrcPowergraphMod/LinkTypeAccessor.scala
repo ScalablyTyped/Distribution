@@ -13,11 +13,11 @@ trait LinkTypeAccessor[Link]
 object LinkTypeAccessor {
   @scala.inline
   def apply[Link](
-    getSourceIndex: js.Function1[Link, scala.Double],
-    getTargetIndex: js.Function1[Link, scala.Double],
-    getType: js.Function1[Link, scala.Double]
+    getSourceIndex: Link => scala.Double,
+    getTargetIndex: Link => scala.Double,
+    getType: Link => scala.Double
   ): LinkTypeAccessor[Link] = {
-    val __obj = js.Dynamic.literal(getSourceIndex = getSourceIndex, getTargetIndex = getTargetIndex, getType = getType)
+    val __obj = js.Dynamic.literal(getSourceIndex = js.Any.fromFunction1(getSourceIndex), getTargetIndex = js.Any.fromFunction1(getTargetIndex), getType = js.Any.fromFunction1(getType))
   
     __obj.asInstanceOf[LinkTypeAccessor[Link]]
   }

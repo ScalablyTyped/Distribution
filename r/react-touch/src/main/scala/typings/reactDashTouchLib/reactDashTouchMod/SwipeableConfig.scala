@@ -15,12 +15,12 @@ trait SwipeableConfig extends js.Object {
 object SwipeableConfig {
   @scala.inline
   def apply(
-    onSwipeDown: js.Function3[scala.Double, scala.Double, js.Function0[scala.Unit], scala.Unit],
-    onSwipeLeft: js.Function3[scala.Double, scala.Double, js.Function0[scala.Unit], scala.Unit],
-    onSwipeRight: js.Function3[scala.Double, scala.Double, js.Function0[scala.Unit], scala.Unit],
-    onSwipeUp: js.Function3[scala.Double, scala.Double, js.Function0[scala.Unit], scala.Unit]
+    onSwipeDown: (scala.Double, scala.Double, js.Function0[scala.Unit]) => scala.Unit,
+    onSwipeLeft: (scala.Double, scala.Double, js.Function0[scala.Unit]) => scala.Unit,
+    onSwipeRight: (scala.Double, scala.Double, js.Function0[scala.Unit]) => scala.Unit,
+    onSwipeUp: (scala.Double, scala.Double, js.Function0[scala.Unit]) => scala.Unit
   ): SwipeableConfig = {
-    val __obj = js.Dynamic.literal(onSwipeDown = onSwipeDown, onSwipeLeft = onSwipeLeft, onSwipeRight = onSwipeRight, onSwipeUp = onSwipeUp)
+    val __obj = js.Dynamic.literal(onSwipeDown = js.Any.fromFunction3(onSwipeDown), onSwipeLeft = js.Any.fromFunction3(onSwipeLeft), onSwipeRight = js.Any.fromFunction3(onSwipeRight), onSwipeUp = js.Any.fromFunction3(onSwipeUp))
   
     __obj.asInstanceOf[SwipeableConfig]
   }

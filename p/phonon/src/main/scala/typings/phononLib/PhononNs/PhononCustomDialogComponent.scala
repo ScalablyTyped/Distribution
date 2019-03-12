@@ -13,15 +13,11 @@ trait PhononCustomDialogComponent extends PhononDialogComponent {
 object PhononCustomDialogComponent {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
-    on: js.Function2[
-      java.lang.String, 
-      js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit], 
-      PhononDialogComponent
-    ],
-    open: js.Function0[scala.Unit]
+    close: () => scala.Unit,
+    on: (java.lang.String, js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit]) => PhononDialogComponent,
+    open: () => scala.Unit
   ): PhononCustomDialogComponent = {
-    val __obj = js.Dynamic.literal(close = close, on = on, open = open)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), on = js.Any.fromFunction2(on), open = js.Any.fromFunction0(open))
   
     __obj.asInstanceOf[PhononCustomDialogComponent]
   }

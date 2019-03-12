@@ -38,17 +38,17 @@ object XXMLSecurityContext {
     DefaultSecurityEnvironmentIndex: scala.Double,
     SecurityEnvironment: XSecurityEnvironment,
     SecurityEnvironmentNumber: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addSecurityEnvironment: js.Function1[XSecurityEnvironment, scala.Double],
-    getDefaultSecurityEnvironmentIndex: js.Function0[scala.Double],
-    getSecurityEnvironment: js.Function0[XSecurityEnvironment],
-    getSecurityEnvironmentByIndex: js.Function1[scala.Double, XSecurityEnvironment],
-    getSecurityEnvironmentNumber: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setDefaultSecurityEnvironmentIndex: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    addSecurityEnvironment: XSecurityEnvironment => scala.Double,
+    getDefaultSecurityEnvironmentIndex: () => scala.Double,
+    getSecurityEnvironment: () => XSecurityEnvironment,
+    getSecurityEnvironmentByIndex: scala.Double => XSecurityEnvironment,
+    getSecurityEnvironmentNumber: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setDefaultSecurityEnvironmentIndex: scala.Double => scala.Unit
   ): XXMLSecurityContext = {
-    val __obj = js.Dynamic.literal(DefaultSecurityEnvironmentIndex = DefaultSecurityEnvironmentIndex, SecurityEnvironment = SecurityEnvironment, SecurityEnvironmentNumber = SecurityEnvironmentNumber, acquire = acquire, addSecurityEnvironment = addSecurityEnvironment, getDefaultSecurityEnvironmentIndex = getDefaultSecurityEnvironmentIndex, getSecurityEnvironment = getSecurityEnvironment, getSecurityEnvironmentByIndex = getSecurityEnvironmentByIndex, getSecurityEnvironmentNumber = getSecurityEnvironmentNumber, queryInterface = queryInterface, release = release, setDefaultSecurityEnvironmentIndex = setDefaultSecurityEnvironmentIndex)
+    val __obj = js.Dynamic.literal(DefaultSecurityEnvironmentIndex = DefaultSecurityEnvironmentIndex, SecurityEnvironment = SecurityEnvironment, SecurityEnvironmentNumber = SecurityEnvironmentNumber, acquire = js.Any.fromFunction0(acquire), addSecurityEnvironment = js.Any.fromFunction1(addSecurityEnvironment), getDefaultSecurityEnvironmentIndex = js.Any.fromFunction0(getDefaultSecurityEnvironmentIndex), getSecurityEnvironment = js.Any.fromFunction0(getSecurityEnvironment), getSecurityEnvironmentByIndex = js.Any.fromFunction1(getSecurityEnvironmentByIndex), getSecurityEnvironmentNumber = js.Any.fromFunction0(getSecurityEnvironmentNumber), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDefaultSecurityEnvironmentIndex = js.Any.fromFunction1(setDefaultSecurityEnvironmentIndex))
   
     __obj.asInstanceOf[XXMLSecurityContext]
   }

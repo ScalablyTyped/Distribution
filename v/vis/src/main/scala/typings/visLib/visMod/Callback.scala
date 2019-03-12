@@ -11,9 +11,9 @@ trait Callback extends js.Object {
 
 object Callback {
   @scala.inline
-  def apply(callback: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null): Callback = {
+  def apply(callback: /* params */ js.UndefOr[js.Any] => scala.Unit = null): Callback = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     __obj.asInstanceOf[Callback]
   }
 }

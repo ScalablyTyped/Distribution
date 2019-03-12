@@ -20,7 +20,7 @@ trait XUpdateInformationProvider extends js.Object {
   def getUpdateInformation(
     repositories: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String],
     extensionId: java.lang.String
-  ): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XElement]
+  ): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XElement]
   /**
     * get update information for a specific extension or all available information from a repository.
     * @param repositories a repository and its mirrors.
@@ -45,23 +45,12 @@ trait XUpdateInformationProvider extends js.Object {
 object XUpdateInformationProvider {
   @scala.inline
   def apply(
-    cancel: js.Function0[scala.Unit],
-    getUpdateInformation: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      java.lang.String, 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XElement]
-    ],
-    getUpdateInformationEnumeration: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration
-    ],
-    setInteractionHandler: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler, 
-      scala.Unit
-    ]
+    cancel: () => scala.Unit,
+    getUpdateInformation: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], java.lang.String) => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XElement],
+    getUpdateInformationEnumeration: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], java.lang.String) => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration,
+    setInteractionHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler => scala.Unit
   ): XUpdateInformationProvider = {
-    val __obj = js.Dynamic.literal(cancel = cancel, getUpdateInformation = getUpdateInformation, getUpdateInformationEnumeration = getUpdateInformationEnumeration, setInteractionHandler = setInteractionHandler)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), getUpdateInformation = js.Any.fromFunction2(getUpdateInformation), getUpdateInformationEnumeration = js.Any.fromFunction2(getUpdateInformationEnumeration), setInteractionHandler = js.Any.fromFunction1(setInteractionHandler))
   
     __obj.asInstanceOf[XUpdateInformationProvider]
   }

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var validation: knockoutDotValidationLib.KnockoutValidationStatic = js.native
+  var validation: KnockoutValidationStatic = js.native
 }
 

@@ -20,17 +20,17 @@ trait EntityRef extends js.Object {
 object EntityRef {
   @scala.inline
   def apply(
-    detach: js.Function0[Content],
-    getName: js.Function0[java.lang.String],
-    getParentElement: js.Function0[Element],
-    getPublicId: js.Function0[java.lang.String],
-    getSystemId: js.Function0[java.lang.String],
-    getValue: js.Function0[java.lang.String],
-    setName: js.Function1[java.lang.String, EntityRef],
-    setPublicId: js.Function1[java.lang.String, EntityRef],
-    setSystemId: js.Function1[java.lang.String, EntityRef]
+    detach: () => Content,
+    getName: () => java.lang.String,
+    getParentElement: () => Element,
+    getPublicId: () => java.lang.String,
+    getSystemId: () => java.lang.String,
+    getValue: () => java.lang.String,
+    setName: java.lang.String => EntityRef,
+    setPublicId: java.lang.String => EntityRef,
+    setSystemId: java.lang.String => EntityRef
   ): EntityRef = {
-    val __obj = js.Dynamic.literal(detach = detach, getName = getName, getParentElement = getParentElement, getPublicId = getPublicId, getSystemId = getSystemId, getValue = getValue, setName = setName, setPublicId = setPublicId, setSystemId = setSystemId)
+    val __obj = js.Dynamic.literal(detach = js.Any.fromFunction0(detach), getName = js.Any.fromFunction0(getName), getParentElement = js.Any.fromFunction0(getParentElement), getPublicId = js.Any.fromFunction0(getPublicId), getSystemId = js.Any.fromFunction0(getSystemId), getValue = js.Any.fromFunction0(getValue), setName = js.Any.fromFunction1(setName), setPublicId = js.Any.fromFunction1(setPublicId), setSystemId = js.Any.fromFunction1(setSystemId))
   
     __obj.asInstanceOf[EntityRef]
   }

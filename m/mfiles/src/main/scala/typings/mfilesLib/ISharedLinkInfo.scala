@@ -21,16 +21,16 @@ object ISharedLinkInfo {
   @scala.inline
   def apply(
     AccessKey: java.lang.String,
-    Clone: js.Function0[ISharedLinkInfo],
+    Clone: () => ISharedLinkInfo,
     CreatedByUser: scala.Double,
     CreationTime: ITimestamp,
     Description: java.lang.String,
     ExpirationTime: ITimestamp,
     FileVer: IFileVer,
     ObjVer: IObjVer,
-    Set: js.Function2[IObjVer, IFileVer, scala.Unit]
+    Set: (IObjVer, IFileVer) => scala.Unit
   ): ISharedLinkInfo = {
-    val __obj = js.Dynamic.literal(AccessKey = AccessKey, Clone = Clone, CreatedByUser = CreatedByUser, CreationTime = CreationTime, Description = Description, ExpirationTime = ExpirationTime, FileVer = FileVer, ObjVer = ObjVer, Set = Set)
+    val __obj = js.Dynamic.literal(AccessKey = AccessKey, Clone = js.Any.fromFunction0(Clone), CreatedByUser = CreatedByUser, CreationTime = CreationTime, Description = Description, ExpirationTime = ExpirationTime, FileVer = FileVer, ObjVer = ObjVer, Set = js.Any.fromFunction2(Set))
   
     __obj.asInstanceOf[ISharedLinkInfo]
   }

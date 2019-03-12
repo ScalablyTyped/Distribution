@@ -17,12 +17,12 @@ object IConfigstore {
   @scala.inline
   def apply(
     all: js.Any,
-    del: js.Function1[java.lang.String, scala.Unit],
-    get: js.Function1[java.lang.String, js.Any],
+    del: java.lang.String => scala.Unit,
+    get: java.lang.String => js.Any,
     path: java.lang.String,
-    set: js.Function2[java.lang.String, js.Any, scala.Unit]
+    set: (java.lang.String, js.Any) => scala.Unit
   ): IConfigstore = {
-    val __obj = js.Dynamic.literal(all = all, del = del, get = get, path = path, set = set)
+    val __obj = js.Dynamic.literal(all = all, del = js.Any.fromFunction1(del), get = js.Any.fromFunction1(get), path = path, set = js.Any.fromFunction2(set))
   
     __obj.asInstanceOf[IConfigstore]
   }

@@ -22,17 +22,17 @@ object IMatrixDropdownData {
   @scala.inline
   def apply(
     columns: js.Array[MatrixDropdownColumn],
-    createQuestion: js.Function2[MatrixDropdownRowModelBase, MatrixDropdownColumn, Question],
-    getLocale: js.Function0[java.lang.String],
-    getMarkdownHtml: js.Function1[java.lang.String, java.lang.String],
-    getProcessedText: js.Function1[java.lang.String, java.lang.String],
-    getRowIndex: js.Function1[MatrixDropdownRowModelBase, scala.Double],
-    getSurvey: js.Function0[ISurvey],
-    onRowChanged: js.Function3[MatrixDropdownRowModelBase, java.lang.String, js.Any, scala.Unit],
-    onRowChanging: js.Function3[MatrixDropdownRowModelBase, java.lang.String, js.Any, js.Any],
-    validateCell: js.Function3[MatrixDropdownRowModelBase, java.lang.String, js.Any, SurveyError]
+    createQuestion: (MatrixDropdownRowModelBase, MatrixDropdownColumn) => Question,
+    getLocale: () => java.lang.String,
+    getMarkdownHtml: java.lang.String => java.lang.String,
+    getProcessedText: java.lang.String => java.lang.String,
+    getRowIndex: MatrixDropdownRowModelBase => scala.Double,
+    getSurvey: () => ISurvey,
+    onRowChanged: (MatrixDropdownRowModelBase, java.lang.String, js.Any) => scala.Unit,
+    onRowChanging: (MatrixDropdownRowModelBase, java.lang.String, js.Any) => js.Any,
+    validateCell: (MatrixDropdownRowModelBase, java.lang.String, js.Any) => SurveyError
   ): IMatrixDropdownData = {
-    val __obj = js.Dynamic.literal(columns = columns, createQuestion = createQuestion, getLocale = getLocale, getMarkdownHtml = getMarkdownHtml, getProcessedText = getProcessedText, getRowIndex = getRowIndex, getSurvey = getSurvey, onRowChanged = onRowChanged, onRowChanging = onRowChanging, validateCell = validateCell)
+    val __obj = js.Dynamic.literal(columns = columns, createQuestion = js.Any.fromFunction2(createQuestion), getLocale = js.Any.fromFunction0(getLocale), getMarkdownHtml = js.Any.fromFunction1(getMarkdownHtml), getProcessedText = js.Any.fromFunction1(getProcessedText), getRowIndex = js.Any.fromFunction1(getRowIndex), getSurvey = js.Any.fromFunction0(getSurvey), onRowChanged = js.Any.fromFunction3(onRowChanged), onRowChanging = js.Any.fromFunction3(onRowChanging), validateCell = js.Any.fromFunction3(validateCell))
   
     __obj.asInstanceOf[IMatrixDropdownData]
   }

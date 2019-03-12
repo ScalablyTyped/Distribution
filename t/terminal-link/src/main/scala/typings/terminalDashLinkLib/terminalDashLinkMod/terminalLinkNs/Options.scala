@@ -13,11 +13,9 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(
-    fallback: js.Function2[/* text */ java.lang.String, /* url */ java.lang.String, java.lang.String] = null
-  ): Options = {
+  def apply(fallback: (/* text */ java.lang.String, /* url */ java.lang.String) => java.lang.String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (fallback != null) __obj.updateDynamic("fallback")(fallback)
+    if (fallback != null) __obj.updateDynamic("fallback")(js.Any.fromFunction2(fallback))
     __obj.asInstanceOf[Options]
   }
 }

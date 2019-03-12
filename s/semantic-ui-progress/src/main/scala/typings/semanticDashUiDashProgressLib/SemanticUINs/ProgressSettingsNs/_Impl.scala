@@ -149,17 +149,11 @@ object _Impl {
     metadata: semanticDashUiDashProgressLib.SemanticUINs.ProgressNs.MetadataSettings,
     name: java.lang.String,
     namespace: java.lang.String,
-    onActive: js.Function3[semanticDashUiDashProgressLib.JQuery, scala.Double, scala.Double, scala.Unit],
-    onChange: js.Function4[
-      semanticDashUiDashProgressLib.JQuery, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ],
-    onError: js.Function3[semanticDashUiDashProgressLib.JQuery, scala.Double, scala.Double, scala.Unit],
-    onSuccess: js.Function2[semanticDashUiDashProgressLib.JQuery, scala.Double, scala.Unit],
-    onWarning: js.Function3[semanticDashUiDashProgressLib.JQuery, scala.Double, scala.Double, scala.Unit],
+    onActive: (semanticDashUiDashProgressLib.JQuery, scala.Double, scala.Double) => scala.Unit,
+    onChange: (semanticDashUiDashProgressLib.JQuery, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    onError: (semanticDashUiDashProgressLib.JQuery, scala.Double, scala.Double) => scala.Unit,
+    onSuccess: (semanticDashUiDashProgressLib.JQuery, scala.Double) => scala.Unit,
+    onWarning: (semanticDashUiDashProgressLib.JQuery, scala.Double, scala.Double) => scala.Unit,
     performance: scala.Boolean,
     precision: scala.Double,
     random: semanticDashUiDashProgressLib.SemanticUINs.ProgressNs.RandomSettings,
@@ -172,7 +166,7 @@ object _Impl {
     value: semanticDashUiDashProgressLib.semanticDashUiDashProgressLibNumbers.`false` | scala.Double,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(autoSuccess = autoSuccess, className = className.asInstanceOf[js.Any], debug = debug, error = error.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], limitValues = limitValues, metadata = metadata.asInstanceOf[js.Any], name = name, namespace = namespace, onActive = onActive, onChange = onChange, onError = onError, onSuccess = onSuccess, onWarning = onWarning, performance = performance, precision = precision, random = random.asInstanceOf[js.Any], regExp = regExp, selector = selector.asInstanceOf[js.Any], showActivity = showActivity, silent = silent, text = text.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], verbose = verbose)
+    val __obj = js.Dynamic.literal(autoSuccess = autoSuccess, className = className.asInstanceOf[js.Any], debug = debug, error = error.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], limitValues = limitValues, metadata = metadata.asInstanceOf[js.Any], name = name, namespace = namespace, onActive = js.Any.fromFunction3(onActive), onChange = js.Any.fromFunction4(onChange), onError = js.Any.fromFunction3(onError), onSuccess = js.Any.fromFunction2(onSuccess), onWarning = js.Any.fromFunction3(onWarning), performance = performance, precision = precision, random = random.asInstanceOf[js.Any], regExp = regExp, selector = selector.asInstanceOf[js.Any], showActivity = showActivity, silent = silent, text = text.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], verbose = verbose)
   
     __obj.asInstanceOf[_Impl]
   }

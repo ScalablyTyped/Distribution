@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   */
 trait Storage extends js.Object {
   /** Gets list of executed migrations. */
-  def executed(): js.Promise[js.Array[nodeLib.String]]
+  def executed(): js.Promise[js.Array[java.lang.String]]
   /**
     * Logs migration to be considered as executed.
     *
@@ -30,11 +30,11 @@ trait Storage extends js.Object {
 object Storage {
   @scala.inline
   def apply(
-    executed: js.Function0[js.Promise[js.Array[nodeLib.String]]],
-    logMigration: js.Function1[java.lang.String, js.Promise[scala.Unit]],
-    unlogMigration: js.Function1[java.lang.String, js.Promise[scala.Unit]]
+    executed: () => js.Promise[js.Array[java.lang.String]],
+    logMigration: java.lang.String => js.Promise[scala.Unit],
+    unlogMigration: java.lang.String => js.Promise[scala.Unit]
   ): Storage = {
-    val __obj = js.Dynamic.literal(executed = executed, logMigration = logMigration, unlogMigration = unlogMigration)
+    val __obj = js.Dynamic.literal(executed = js.Any.fromFunction0(executed), logMigration = js.Any.fromFunction1(logMigration), unlogMigration = js.Any.fromFunction1(unlogMigration))
   
     __obj.asInstanceOf[Storage]
   }

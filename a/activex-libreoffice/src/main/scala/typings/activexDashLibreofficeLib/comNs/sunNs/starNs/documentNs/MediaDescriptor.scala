@@ -70,7 +70,7 @@ trait MediaDescriptor extends js.Object {
     *
     * The encryption data is generated based on the password.
     */
-  var EncryptionData: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
+  var EncryptionData: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
   /**
     * same as {@link MediaDescriptor.URL}
     *
@@ -194,7 +194,7 @@ trait MediaDescriptor extends js.Object {
     * Data to send to a location described by the media descriptor to get a result in return that will be loaded as a component (usually in webforms).
     * Default is: no PostData.
     */
-  var PostData: activexDashInteropLib.SafeArray[scala.Double]
+  var PostData: stdLib.SafeArray[scala.Double]
   /**
     * use {@link MediaDescriptor.PostData} instead of this
     *
@@ -336,7 +336,7 @@ object MediaDescriptor {
     ComponentData: js.Any,
     DocumentBaseURL: java.lang.String,
     DocumentTitle: java.lang.String,
-    EncryptionData: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    EncryptionData: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
     FileName: java.lang.String,
     FilterData: js.Any,
     FilterFlags: java.lang.String,
@@ -355,7 +355,7 @@ object MediaDescriptor {
     OutputStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream,
     Overwrite: scala.Boolean,
     Password: java.lang.String,
-    PostData: activexDashInteropLib.SafeArray[scala.Double],
+    PostData: stdLib.SafeArray[scala.Double],
     PostString: java.lang.String,
     Preview: scala.Boolean,
     ReadOnly: scala.Boolean,

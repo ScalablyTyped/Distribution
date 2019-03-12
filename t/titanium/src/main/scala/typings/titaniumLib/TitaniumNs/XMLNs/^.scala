@@ -47,7 +47,7 @@ object ^ extends js.Object {
   /**
   		 * Parses an XML string into a <Titanium.XML.Document> object.
   		 */
-  def parseString(xml: java.lang.String): titaniumLib.TitaniumNs.XMLNs.Document = js.native
+  def parseString(xml: java.lang.String): Document = js.native
   /**
   		 * Removes the specified callback as an event listener for the named event.
   		 */
@@ -55,7 +55,7 @@ object ^ extends js.Object {
   /**
   		 * Serializes a [Node](Titanium.XML.Node) object into a string.
   		 */
-  def serializeToString(node: titaniumLib.TitaniumNs.XMLNs.Node): java.lang.String = js.native
+  def serializeToString(node: Node): java.lang.String = js.native
   /**
   		 * Sets the value of the <Titanium.XML.bubbleParent> property.
   		 */

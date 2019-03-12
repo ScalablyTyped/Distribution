@@ -17,12 +17,12 @@ import scala.scalajs.js.annotation._
   var disableRipple: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var icon: reactLib.reactMod.ReactNs.ReactNode
-  var inputProps: js.UndefOr[reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement]] = js.undefined
+  var inputProps: js.UndefOr[reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement]] = js.undefined
   var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[_]] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement], 
+      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement], 
       /* checked */ scala.Boolean, 
       scala.Unit
     ]
@@ -47,14 +47,10 @@ object SwitchBaseProps {
     disableRipple: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    inputProps: reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] = null,
+    inputProps: reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement] = null,
     inputRef: reactLib.reactMod.ReactNs.Ref[_] = null,
     name: java.lang.String = null,
-    onChange: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement], 
-      /* checked */ scala.Boolean, 
-      scala.Unit
-    ] = null,
+    onChange: (/* event */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement], /* checked */ scala.Boolean) => scala.Unit = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     required: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -73,7 +69,7 @@ object SwitchBaseProps {
     if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
     if (style != null) __obj.updateDynamic("style")(style)

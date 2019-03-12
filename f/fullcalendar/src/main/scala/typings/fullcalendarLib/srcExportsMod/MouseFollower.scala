@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "MouseFollower")
 @js.native
 class MouseFollower protected ()
-  extends fullcalendarLib.mousefollowerMod.default {
+  extends fullcalendarLib.mouseFollowerMod.default {
   def this(sourceEl: js.Any, options: js.Any) = this()
 }
 

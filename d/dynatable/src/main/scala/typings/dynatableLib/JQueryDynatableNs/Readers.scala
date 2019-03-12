@@ -44,12 +44,12 @@ trait Readers extends js.Object {
 object Readers {
   @scala.inline
   def apply(
-    _attributeReader: js.Function2[/* cell */ stdLib.Element, /* record */ js.Any, _] = null,
-    _rowReader: js.Function3[/* index */ scala.Double, /* thisRef */ js.Any, /* record */ js.Any, _] = null
+    _attributeReader: (/* cell */ stdLib.Element, /* record */ js.Any) => _ = null,
+    _rowReader: (/* index */ scala.Double, /* thisRef */ js.Any, /* record */ js.Any) => _ = null
   ): Readers = {
     val __obj = js.Dynamic.literal()
-    if (_attributeReader != null) __obj.updateDynamic("_attributeReader")(_attributeReader)
-    if (_rowReader != null) __obj.updateDynamic("_rowReader")(_rowReader)
+    if (_attributeReader != null) __obj.updateDynamic("_attributeReader")(js.Any.fromFunction2(_attributeReader))
+    if (_rowReader != null) __obj.updateDynamic("_rowReader")(js.Any.fromFunction3(_rowReader))
     __obj.asInstanceOf[Readers]
   }
 }

@@ -32,7 +32,7 @@ object SortableContainerProps {
     axis: Axis = null,
     distance: scala.Int | scala.Double = null,
     getContainer: ContainerGetter = null,
-    getHelperDimensions: js.Function1[/* sort */ SortStart, Dimensions] = null,
+    getHelperDimensions: /* sort */ SortStart => Dimensions = null,
     helperClass: java.lang.String = null,
     hideSortableGhost: js.UndefOr[scala.Boolean] = js.undefined,
     lockAxis: Axis = null,
@@ -43,7 +43,7 @@ object SortableContainerProps {
     onSortStart: SortStartHandler = null,
     pressDelay: scala.Int | scala.Double = null,
     pressThreshold: scala.Int | scala.Double = null,
-    shouldCancelStart: js.Function1[/* event */ SortEvent | SortEventWithTag, scala.Boolean] = null,
+    shouldCancelStart: /* event */ SortEvent | SortEventWithTag => scala.Boolean = null,
     transitionDuration: scala.Int | scala.Double = null,
     useDragHandle: js.UndefOr[scala.Boolean] = js.undefined,
     useWindowAsScrollContainer: js.UndefOr[scala.Boolean] = js.undefined
@@ -52,7 +52,7 @@ object SortableContainerProps {
     if (axis != null) __obj.updateDynamic("axis")(axis)
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer)
-    if (getHelperDimensions != null) __obj.updateDynamic("getHelperDimensions")(getHelperDimensions)
+    if (getHelperDimensions != null) __obj.updateDynamic("getHelperDimensions")(js.Any.fromFunction1(getHelperDimensions))
     if (helperClass != null) __obj.updateDynamic("helperClass")(helperClass)
     if (!js.isUndefined(hideSortableGhost)) __obj.updateDynamic("hideSortableGhost")(hideSortableGhost)
     if (lockAxis != null) __obj.updateDynamic("lockAxis")(lockAxis)
@@ -63,7 +63,7 @@ object SortableContainerProps {
     if (onSortStart != null) __obj.updateDynamic("onSortStart")(onSortStart)
     if (pressDelay != null) __obj.updateDynamic("pressDelay")(pressDelay.asInstanceOf[js.Any])
     if (pressThreshold != null) __obj.updateDynamic("pressThreshold")(pressThreshold.asInstanceOf[js.Any])
-    if (shouldCancelStart != null) __obj.updateDynamic("shouldCancelStart")(shouldCancelStart)
+    if (shouldCancelStart != null) __obj.updateDynamic("shouldCancelStart")(js.Any.fromFunction1(shouldCancelStart))
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(useDragHandle)) __obj.updateDynamic("useDragHandle")(useDragHandle)
     if (!js.isUndefined(useWindowAsScrollContainer)) __obj.updateDynamic("useWindowAsScrollContainer")(useWindowAsScrollContainer)

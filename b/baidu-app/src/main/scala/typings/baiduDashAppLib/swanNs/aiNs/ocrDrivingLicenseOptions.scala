@@ -24,17 +24,17 @@ object ocrDrivingLicenseOptions {
   @scala.inline
   def apply(
     image: java.lang.String,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    complete: /* res */ js.Any => scala.Unit = null,
     detect_direction: js.UndefOr[scala.Boolean] = js.undefined,
-    fail: js.Function1[js.Any, scala.Unit] = null,
-    success: js.Function1[/* res */ ocrDrivingLicenseResponse, scala.Unit] = null,
+    fail: js.Any => scala.Unit = null,
+    success: /* res */ ocrDrivingLicenseResponse => scala.Unit = null,
     unified_valid_period: js.UndefOr[scala.Boolean] = js.undefined
   ): ocrDrivingLicenseOptions = {
     val __obj = js.Dynamic.literal(image = image)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     if (!js.isUndefined(unified_valid_period)) __obj.updateDynamic("unified_valid_period")(unified_valid_period)
     __obj.asInstanceOf[ocrDrivingLicenseOptions]
   }

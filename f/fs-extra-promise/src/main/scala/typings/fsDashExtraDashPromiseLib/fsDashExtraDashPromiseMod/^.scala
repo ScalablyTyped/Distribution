@@ -249,14 +249,14 @@ object ^ extends js.Object {
   def copy(
     src: java.lang.String,
     dest: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def copy(src: java.lang.String, dest: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.CopyOptions): js.Promise[scala.Unit] = js.native
   def copy(
     src: java.lang.String,
     dest: java.lang.String,
     options: fsDashExtraLib.fsDashExtraMod.CopyOptions,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def copyAsync(src: java.lang.String, dest: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def copyAsync(src: java.lang.String, dest: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.CopyOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
@@ -269,14 +269,14 @@ object ^ extends js.Object {
   def copyFile(
     src: java.lang.String,
     dest: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def copyFile(src: java.lang.String, dest: java.lang.String, flags: scala.Double): js.Promise[scala.Unit] = js.native
   def copyFile(
     src: java.lang.String,
     dest: java.lang.String,
     flags: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Asynchronously copies src to dest. By default, dest is overwritten if it already exists.
@@ -327,7 +327,7 @@ object ^ extends js.Object {
     options: fsDashExtraLib.fsDashExtraMod.CopyOptionsSync
   ): scala.Unit = js.native
   def createFile(file: java.lang.String): js.Promise[scala.Unit] = js.native
-  def createFile(file: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def createFile(file: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def createFileAsync(file: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def createFileSync(file: java.lang.String): scala.Unit = js.native
   /**
@@ -347,34 +347,34 @@ object ^ extends js.Object {
   def createWriteStream(path: nodeLib.fsMod.PathLike, options: java.lang.String): nodeLib.fsMod.WriteStream = js.native
   def createWriteStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_AutoCloseEncoding): nodeLib.fsMod.WriteStream = js.native
   def emptyDir(path: java.lang.String): js.Promise[scala.Unit] = js.native
-  def emptyDir(path: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def emptyDir(path: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def emptyDirSync(path: java.lang.String): scala.Unit = js.native
   def ensureDir(path: java.lang.String): js.Promise[scala.Unit] = js.native
-  def ensureDir(path: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def ensureDir(path: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def ensureDirAsync(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def ensureDirSync(path: java.lang.String): scala.Unit = js.native
   def ensureFile(path: java.lang.String): js.Promise[scala.Unit] = js.native
-  def ensureFile(path: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def ensureFile(path: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def ensureFileSync(path: java.lang.String): scala.Unit = js.native
   def ensureLink(src: java.lang.String, dest: java.lang.String): js.Promise[scala.Unit] = js.native
   def ensureLink(
     src: java.lang.String,
     dest: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def ensureLinkSync(src: java.lang.String, dest: java.lang.String): scala.Unit = js.native
   def ensureSymlink(src: java.lang.String, dest: java.lang.String): js.Promise[scala.Unit] = js.native
   def ensureSymlink(
     src: java.lang.String,
     dest: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def ensureSymlink(src: java.lang.String, dest: java.lang.String, `type`: fsDashExtraLib.fsDashExtraMod.SymlinkType): js.Promise[scala.Unit] = js.native
   def ensureSymlink(
     src: java.lang.String,
     dest: java.lang.String,
     `type`: fsDashExtraLib.fsDashExtraMod.SymlinkType,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def ensureSymlinkSync(src: java.lang.String, dest: java.lang.String): scala.Unit = js.native
   def ensureSymlinkSync(src: java.lang.String, dest: java.lang.String, `type`: fsDashExtraLib.fsDashExtraMod.SymlinkType): scala.Unit = js.native
@@ -593,7 +593,7 @@ object ^ extends js.Object {
   def isDirectory(path: java.lang.String): scala.Unit = js.native
   def isDirectory(
     path: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* isDirectory */ scala.Boolean, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* isDirectory */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   def isDirectoryAsync(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Boolean] = js.native
   def isDirectorySync(path: java.lang.String): scala.Boolean = js.native
@@ -803,14 +803,14 @@ object ^ extends js.Object {
   def mkdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.fsMod.MakeDirectoryOptions): scala.Unit = js.native
   def mkdirSync(path: nodeLib.fsMod.PathLike, options: scala.Double): scala.Unit = js.native
   def mkdirp(dir: java.lang.String): js.Promise[scala.Unit] = js.native
-  def mkdirp(dir: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def mkdirp(dir: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def mkdirpAsync(dir: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def mkdirpAsync(dir: java.lang.String, options: fsDashExtraDashPromiseLib.fsDashExtraDashPromiseMod.MkdirOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def mkdirpAsync(dir: java.lang.String, options: MkdirOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def mkdirpSync(dir: java.lang.String): scala.Unit = js.native
   def mkdirs(dir: java.lang.String): js.Promise[scala.Unit] = js.native
-  def mkdirs(dir: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def mkdirs(dir: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def mkdirsAsync(dir: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def mkdirsAsync(dir: java.lang.String, options: fsDashExtraDashPromiseLib.fsDashExtraDashPromiseMod.MkdirOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def mkdirsAsync(dir: java.lang.String, options: MkdirOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def mkdirsSync(dir: java.lang.String): scala.Unit = js.native
   def mkdtemp(prefix: java.lang.String): js.Promise[java.lang.String] = js.native
   /**
@@ -925,14 +925,14 @@ object ^ extends js.Object {
   def move(
     src: java.lang.String,
     dest: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def move(src: java.lang.String, dest: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.MoveOptions): js.Promise[scala.Unit] = js.native
   def move(
     src: java.lang.String,
     dest: java.lang.String,
     options: fsDashExtraLib.fsDashExtraMod.MoveOptions,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def moveAsync(src: java.lang.String, dest: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def moveAsync(src: java.lang.String, dest: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.MoveOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
@@ -1071,45 +1071,45 @@ object ^ extends js.Object {
   def openSync(path: nodeLib.fsMod.PathLike, flags: scala.Double, mode: java.lang.String): scala.Double = js.native
   def openSync(path: nodeLib.fsMod.PathLike, flags: scala.Double, mode: scala.Double): scala.Double = js.native
   def outputFile(file: java.lang.String, data: js.Any): js.Promise[scala.Unit] = js.native
-  def outputFile(file: java.lang.String, data: js.Any, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def outputFile(file: java.lang.String, data: js.Any, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def outputFile(file: java.lang.String, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
   def outputFile(
     file: java.lang.String,
     data: js.Any,
     options: fsDashExtraLib.fsDashExtraMod.WriteFileOptions,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def outputFile(file: java.lang.String, data: js.Any, options: java.lang.String): js.Promise[scala.Unit] = js.native
   def outputFile(
     file: java.lang.String,
     data: js.Any,
     options: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def outputFileAsync(file: java.lang.String, data: js.Any): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def outputFileSync(file: java.lang.String, data: js.Any): scala.Unit = js.native
   def outputFileSync(file: java.lang.String, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteFileOptions): scala.Unit = js.native
   def outputFileSync(file: java.lang.String, data: js.Any, options: java.lang.String): scala.Unit = js.native
   def outputJSON(file: java.lang.String, data: js.Any): js.Promise[scala.Unit] = js.native
-  def outputJSON(file: java.lang.String, data: js.Any, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def outputJSON(file: java.lang.String, data: js.Any, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def outputJSON(file: java.lang.String, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): js.Promise[scala.Unit] = js.native
   def outputJSON(
     file: java.lang.String,
     data: js.Any,
     options: fsDashExtraLib.fsDashExtraMod.WriteOptions,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def outputJSONAsync(file: java.lang.String, data: js.Any): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def outputJSONSync(file: java.lang.String, data: js.Any): scala.Unit = js.native
   def outputJSONSync(file: java.lang.String, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): scala.Unit = js.native
   def outputJson(file: java.lang.String, data: js.Any): js.Promise[scala.Unit] = js.native
-  def outputJson(file: java.lang.String, data: js.Any, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def outputJson(file: java.lang.String, data: js.Any, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def outputJson(file: java.lang.String, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): js.Promise[scala.Unit] = js.native
   def outputJson(
     file: java.lang.String,
     data: js.Any,
     options: fsDashExtraLib.fsDashExtraMod.WriteOptions,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def outputJsonAsync(file: java.lang.String, data: js.Any): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def outputJsonSync(file: java.lang.String, data: js.Any): scala.Unit = js.native
@@ -1117,7 +1117,7 @@ object ^ extends js.Object {
   def pathExists(path: java.lang.String): js.Promise[scala.Boolean] = js.native
   def pathExists(
     path: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* exists */ scala.Boolean, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* exists */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   def pathExistsSync(path: java.lang.String): scala.Boolean = js.native
   def read(fd: scala.Double, buffer: nodeLib.Buffer, offset: scala.Double, length: scala.Double): js.Promise[fsDashExtraLib.fsDashExtraMod.ReadResult] = js.native
@@ -1430,13 +1430,13 @@ object ^ extends js.Object {
   def readJSON(file: java.lang.String): js.Promise[_] = js.native
   def readJSON(
     file: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* jsonObject */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* jsonObject */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def readJSON(file: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.ReadOptions): js.Promise[_] = js.native
   def readJSON(
     file: java.lang.String,
     options: fsDashExtraLib.fsDashExtraMod.ReadOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* jsonObject */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* jsonObject */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def readJSONAsync(file: java.lang.String): bluebirdLib.bluebirdMod.namespaced[_] = js.native
   def readJSONAsync(file: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.ReadOptions): bluebirdLib.bluebirdMod.namespaced[_] = js.native
@@ -1445,13 +1445,13 @@ object ^ extends js.Object {
   def readJson(file: java.lang.String): js.Promise[_] = js.native
   def readJson(
     file: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* jsonObject */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* jsonObject */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def readJson(file: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.ReadOptions): js.Promise[_] = js.native
   def readJson(
     file: java.lang.String,
     options: fsDashExtraLib.fsDashExtraMod.ReadOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* jsonObject */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* jsonObject */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def readJsonAsync(file: java.lang.String): bluebirdLib.bluebirdMod.namespaced[_] = js.native
   def readJsonAsync(file: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.ReadOptions): bluebirdLib.bluebirdMod.namespaced[_] = js.native
@@ -1932,7 +1932,7 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   def remove(dir: java.lang.String): js.Promise[scala.Unit] = js.native
-  def remove(dir: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def remove(dir: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def removeAsync(dir: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def removeSync(dir: java.lang.String): scala.Unit = js.native
   def rename(oldPath: java.lang.String, newPath: java.lang.String): js.Promise[scala.Unit] = js.native
@@ -2995,14 +2995,14 @@ object ^ extends js.Object {
   def writeJSON(
     file: java.lang.String,
     `object`: js.Any,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def writeJSON(file: java.lang.String, `object`: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): js.Promise[scala.Unit] = js.native
   def writeJSON(
     file: java.lang.String,
     `object`: js.Any,
     options: fsDashExtraLib.fsDashExtraMod.WriteOptions,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def writeJSONAsync(file: java.lang.String, `object`: js.Any): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def writeJSONAsync(file: java.lang.String, `object`: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
@@ -3012,14 +3012,14 @@ object ^ extends js.Object {
   def writeJson(
     file: java.lang.String,
     `object`: js.Any,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def writeJson(file: java.lang.String, `object`: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): js.Promise[scala.Unit] = js.native
   def writeJson(
     file: java.lang.String,
     `object`: js.Any,
     options: fsDashExtraLib.fsDashExtraMod.WriteOptions,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def writeJsonAsync(file: java.lang.String, `object`: js.Any): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def writeJsonAsync(file: java.lang.String, `object`: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native

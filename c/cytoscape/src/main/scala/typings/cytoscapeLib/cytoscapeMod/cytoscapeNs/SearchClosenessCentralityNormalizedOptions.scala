@@ -32,12 +32,12 @@ object SearchClosenessCentralityNormalizedOptions {
   def apply(
     directed: js.UndefOr[scala.Boolean] = js.undefined,
     harmonic: js.UndefOr[scala.Boolean] = js.undefined,
-    weight: js.Function1[/* edge */ EdgeSingular, scala.Double] = null
+    weight: /* edge */ EdgeSingular => scala.Double = null
   ): SearchClosenessCentralityNormalizedOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed)
     if (!js.isUndefined(harmonic)) __obj.updateDynamic("harmonic")(harmonic)
-    if (weight != null) __obj.updateDynamic("weight")(weight)
+    if (weight != null) __obj.updateDynamic("weight")(js.Any.fromFunction1(weight))
     __obj.asInstanceOf[SearchClosenessCentralityNormalizedOptions]
   }
 }

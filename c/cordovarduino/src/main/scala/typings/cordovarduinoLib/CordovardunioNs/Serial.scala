@@ -55,14 +55,14 @@ trait Serial extends js.Object {
 object Serial {
   @scala.inline
   def apply(
-    close: js.Function2[js.Function, js.Function, scala.Unit],
-    open: js.Function3[SerialOptions, js.Function, js.Function, scala.Unit],
-    read: js.Function2[js.Function, js.Function, scala.Unit],
-    registerReadCallback: js.Function2[js.Function, js.Function, scala.Unit],
-    requestPermission: js.Function2[js.Function, js.Function, scala.Unit],
-    write: js.Function3[java.lang.String, js.Function, js.Function, scala.Unit]
+    close: (js.Function, js.Function) => scala.Unit,
+    open: (SerialOptions, js.Function, js.Function) => scala.Unit,
+    read: (js.Function, js.Function) => scala.Unit,
+    registerReadCallback: (js.Function, js.Function) => scala.Unit,
+    requestPermission: (js.Function, js.Function) => scala.Unit,
+    write: (java.lang.String, js.Function, js.Function) => scala.Unit
   ): Serial = {
-    val __obj = js.Dynamic.literal(close = close, open = open, read = read, registerReadCallback = registerReadCallback, requestPermission = requestPermission, write = write)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction2(close), open = js.Any.fromFunction3(open), read = js.Any.fromFunction2(read), registerReadCallback = js.Any.fromFunction2(registerReadCallback), requestPermission = js.Any.fromFunction2(requestPermission), write = js.Any.fromFunction3(write))
   
     __obj.asInstanceOf[Serial]
   }

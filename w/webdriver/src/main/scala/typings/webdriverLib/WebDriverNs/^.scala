@@ -8,16 +8,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WebDriver")
 @js.native
 object ^ extends js.Object {
-  def newSession(): js.Promise[webdriverLib.WebDriverNs.Client] = js.native
-  def newSession(options: webdriverLib.WebDriverNs.Options): js.Promise[webdriverLib.WebDriverNs.Client] = js.native
-  def newSession(options: webdriverLib.WebDriverNs.Options, modifier: js.Function1[/* repeated */ js.Any, _]): js.Promise[webdriverLib.WebDriverNs.Client] = js.native
+  def newSession(): js.Promise[Client] = js.native
+  def newSession(options: Options): js.Promise[Client] = js.native
+  def newSession(options: Options, modifier: js.Function1[/* repeated */ js.Any, _]): js.Promise[Client] = js.native
+  def newSession(options: Options, modifier: js.Function1[/* repeated */ js.Any, _], proto: js.Object): js.Promise[Client] = js.native
   def newSession(
-    options: webdriverLib.WebDriverNs.Options,
-    modifier: js.Function1[/* repeated */ js.Any, _],
-    proto: js.Object
-  ): js.Promise[webdriverLib.WebDriverNs.Client] = js.native
-  def newSession(
-    options: webdriverLib.WebDriverNs.Options,
+    options: Options,
     modifier: js.Function1[/* repeated */ js.Any, _],
     proto: js.Object,
     commandWrapper: js.Function2[
@@ -25,6 +21,6 @@ object ^ extends js.Object {
       /* fn */ js.Function1[/* repeated */ js.Any, _], 
       _
     ]
-  ): js.Promise[webdriverLib.WebDriverNs.Client] = js.native
+  ): js.Promise[Client] = js.native
 }
 

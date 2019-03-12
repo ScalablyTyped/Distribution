@@ -72,11 +72,11 @@ object AmericanExpress {
   @scala.inline
   def apply(
     VERSION: java.lang.String,
-    create: js.Function2[braintreeDashWebLib.Anon_Client, callback, scala.Unit],
-    getExpressCheckoutProfile: js.Function2[braintreeDashWebLib.Anon_Nonce, callback, scala.Unit],
-    getRewardsBalance: js.Function2[braintreeDashWebLib.Anon_Nonce, callback, scala.Unit]
+    create: (braintreeDashWebLib.Anon_Client, callback) => scala.Unit,
+    getExpressCheckoutProfile: (braintreeDashWebLib.Anon_Nonce, callback) => scala.Unit,
+    getRewardsBalance: (braintreeDashWebLib.Anon_Nonce, callback) => scala.Unit
   ): AmericanExpress = {
-    val __obj = js.Dynamic.literal(VERSION = VERSION, create = create, getExpressCheckoutProfile = getExpressCheckoutProfile, getRewardsBalance = getRewardsBalance)
+    val __obj = js.Dynamic.literal(VERSION = VERSION, create = js.Any.fromFunction2(create), getExpressCheckoutProfile = js.Any.fromFunction2(getExpressCheckoutProfile), getRewardsBalance = js.Any.fromFunction2(getRewardsBalance))
   
     __obj.asInstanceOf[AmericanExpress]
   }

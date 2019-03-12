@@ -63,11 +63,11 @@ object ^ extends js.Object {
   /**
   		 * Installs an SQLite database to device's internal storage.
   		 */
-  def install(path: java.lang.String, dbName: java.lang.String): titaniumLib.TitaniumNs.DatabaseNs.DB = js.native
+  def install(path: java.lang.String, dbName: java.lang.String): DB = js.native
   /**
   		 * Opens an SQLite database.
   		 */
-  def open(dbName: java.lang.String): titaniumLib.TitaniumNs.DatabaseNs.DB = js.native
+  def open(dbName: java.lang.String): DB = js.native
   /**
   		 * Removes the specified callback as an event listener for the named event.
   		 */

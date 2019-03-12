@@ -85,7 +85,7 @@ import scala.scalajs.js.annotation._
   /**
     * Name used to invoke the operation
     */
-  var code: code
+  var code: fhirLib.fhirNs.code
   /**
     * Additional information about use
     */

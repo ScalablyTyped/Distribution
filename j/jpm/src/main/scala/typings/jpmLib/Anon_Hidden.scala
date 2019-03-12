@@ -21,17 +21,17 @@ object Anon_Hidden {
     items: js.Array[jpmLib.sdkUiToolbarMod.ToolbarItem],
     title: java.lang.String,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
-    onAttach: js.Function1[/* toolbar */ jpmLib.sdkUiToolbarMod.Toolbar, _] = null,
-    onDetach: js.Function1[/* toolbar */ jpmLib.sdkUiToolbarMod.Toolbar, _] = null,
-    onHide: js.Function1[/* toolbar */ jpmLib.sdkUiToolbarMod.Toolbar, _] = null,
-    onShow: js.Function1[/* toolbar */ jpmLib.sdkUiToolbarMod.Toolbar, _] = null
+    onAttach: /* toolbar */ jpmLib.sdkUiToolbarMod.Toolbar => _ = null,
+    onDetach: /* toolbar */ jpmLib.sdkUiToolbarMod.Toolbar => _ = null,
+    onHide: /* toolbar */ jpmLib.sdkUiToolbarMod.Toolbar => _ = null,
+    onShow: /* toolbar */ jpmLib.sdkUiToolbarMod.Toolbar => _ = null
   ): Anon_Hidden = {
     val __obj = js.Dynamic.literal(items = items, title = title)
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (onAttach != null) __obj.updateDynamic("onAttach")(onAttach)
-    if (onDetach != null) __obj.updateDynamic("onDetach")(onDetach)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onAttach != null) __obj.updateDynamic("onAttach")(js.Any.fromFunction1(onAttach))
+    if (onDetach != null) __obj.updateDynamic("onDetach")(js.Any.fromFunction1(onDetach))
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction1(onHide))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     __obj.asInstanceOf[Anon_Hidden]
   }
 }

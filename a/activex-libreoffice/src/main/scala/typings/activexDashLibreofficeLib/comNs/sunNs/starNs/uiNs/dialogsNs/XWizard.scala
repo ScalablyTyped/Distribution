@@ -141,23 +141,23 @@ object XWizard {
     CurrentPage: XWizardPage,
     DialogWindow: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
     HelpURL: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    activatePath: js.Function2[scala.Double, scala.Boolean, scala.Unit],
-    advanceTo: js.Function1[scala.Double, scala.Boolean],
-    enableButton: js.Function2[scala.Double, scala.Boolean, scala.Unit],
-    enablePage: js.Function2[scala.Double, scala.Boolean, scala.Unit],
-    execute: js.Function0[scala.Double],
-    getCurrentPage: js.Function0[XWizardPage],
-    goBackTo: js.Function1[scala.Double, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setDefaultButton: js.Function1[scala.Double, scala.Unit],
-    setTitle: js.Function1[java.lang.String, scala.Unit],
-    travelNext: js.Function0[scala.Boolean],
-    travelPrevious: js.Function0[scala.Boolean],
-    updateTravelUI: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    activatePath: (scala.Double, scala.Boolean) => scala.Unit,
+    advanceTo: scala.Double => scala.Boolean,
+    enableButton: (scala.Double, scala.Boolean) => scala.Unit,
+    enablePage: (scala.Double, scala.Boolean) => scala.Unit,
+    execute: () => scala.Double,
+    getCurrentPage: () => XWizardPage,
+    goBackTo: scala.Double => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setDefaultButton: scala.Double => scala.Unit,
+    setTitle: java.lang.String => scala.Unit,
+    travelNext: () => scala.Boolean,
+    travelPrevious: () => scala.Boolean,
+    updateTravelUI: () => scala.Unit
   ): XWizard = {
-    val __obj = js.Dynamic.literal(CurrentPage = CurrentPage, DialogWindow = DialogWindow, HelpURL = HelpURL, acquire = acquire, activatePath = activatePath, advanceTo = advanceTo, enableButton = enableButton, enablePage = enablePage, execute = execute, getCurrentPage = getCurrentPage, goBackTo = goBackTo, queryInterface = queryInterface, release = release, setDefaultButton = setDefaultButton, setTitle = setTitle, travelNext = travelNext, travelPrevious = travelPrevious, updateTravelUI = updateTravelUI)
+    val __obj = js.Dynamic.literal(CurrentPage = CurrentPage, DialogWindow = DialogWindow, HelpURL = HelpURL, acquire = js.Any.fromFunction0(acquire), activatePath = js.Any.fromFunction2(activatePath), advanceTo = js.Any.fromFunction1(advanceTo), enableButton = js.Any.fromFunction2(enableButton), enablePage = js.Any.fromFunction2(enablePage), execute = js.Any.fromFunction0(execute), getCurrentPage = js.Any.fromFunction0(getCurrentPage), goBackTo = js.Any.fromFunction1(goBackTo), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDefaultButton = js.Any.fromFunction1(setDefaultButton), setTitle = js.Any.fromFunction1(setTitle), travelNext = js.Any.fromFunction0(travelNext), travelPrevious = js.Any.fromFunction0(travelPrevious), updateTravelUI = js.Any.fromFunction0(updateTravelUI))
   
     __obj.asInstanceOf[XWizard]
   }

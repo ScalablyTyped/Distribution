@@ -19,20 +19,11 @@ trait AccountstatusesResource extends js.Object {
 object AccountstatusesResource {
   @scala.inline
   def apply(
-    custombatch: js.Function1[
-      gapiDotClientDotContentLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AccountstatusesCustomBatchResponse]
-    ],
-    get: js.Function1[
-      gapiDotClientDotContentLib.Anon_AccountIdAltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AccountStatus]
-    ],
-    list: js.Function1[
-      gapiDotClientDotContentLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AccountstatusesListResponse]
-    ]
+    custombatch: gapiDotClientDotContentLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[AccountstatusesCustomBatchResponse],
+    get: gapiDotClientDotContentLib.Anon_AccountIdAltFields => gapiDotClientLib.gapiNs.clientNs.Request[AccountStatus],
+    list: gapiDotClientDotContentLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[AccountstatusesListResponse]
   ): AccountstatusesResource = {
-    val __obj = js.Dynamic.literal(custombatch = custombatch, get = get, list = list)
+    val __obj = js.Dynamic.literal(custombatch = js.Any.fromFunction1(custombatch), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[AccountstatusesResource]
   }

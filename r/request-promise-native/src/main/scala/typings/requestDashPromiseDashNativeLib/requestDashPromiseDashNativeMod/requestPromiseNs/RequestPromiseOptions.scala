@@ -48,8 +48,8 @@ object RequestPromiseOptions {
     host: java.lang.String = null,
     jar: requestLib.requestMod.requestNs.CookieJar | scala.Boolean = null,
     json: js.Any = null,
-    jsonReplacer: js.Function2[/* key */ java.lang.String, /* value */ js.Any, _] = null,
-    jsonReviver: js.Function2[/* key */ java.lang.String, /* value */ js.Any, _] = null,
+    jsonReplacer: (/* key */ java.lang.String, /* value */ js.Any) => _ = null,
+    jsonReviver: (/* key */ java.lang.String, /* value */ js.Any) => _ = null,
     key: nodeLib.Buffer = null,
     localAddress: java.lang.String = null,
     maxRedirects: scala.Int | scala.Double = null,
@@ -72,12 +72,7 @@ object RequestPromiseOptions {
     strictSSL: js.UndefOr[scala.Boolean] = js.undefined,
     time: js.UndefOr[scala.Boolean] = js.undefined,
     timeout: scala.Int | scala.Double = null,
-    transform: js.Function3[
-      /* body */ js.Any, 
-      /* response */ requestLib.requestMod.requestNs.Response, 
-      /* resolveWithFullResponse */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
+    transform: (/* body */ js.Any, /* response */ requestLib.requestMod.requestNs.Response, /* resolveWithFullResponse */ js.UndefOr[scala.Boolean]) => _ = null,
     transform2xxOnly: js.UndefOr[scala.Boolean] = js.undefined,
     tunnel: js.UndefOr[scala.Boolean] = js.undefined,
     useQuerystring: js.UndefOr[scala.Boolean] = js.undefined,
@@ -109,8 +104,8 @@ object RequestPromiseOptions {
     if (host != null) __obj.updateDynamic("host")(host)
     if (jar != null) __obj.updateDynamic("jar")(jar.asInstanceOf[js.Any])
     if (json != null) __obj.updateDynamic("json")(json)
-    if (jsonReplacer != null) __obj.updateDynamic("jsonReplacer")(jsonReplacer)
-    if (jsonReviver != null) __obj.updateDynamic("jsonReviver")(jsonReviver)
+    if (jsonReplacer != null) __obj.updateDynamic("jsonReplacer")(js.Any.fromFunction2(jsonReplacer))
+    if (jsonReviver != null) __obj.updateDynamic("jsonReviver")(js.Any.fromFunction2(jsonReviver))
     if (key != null) __obj.updateDynamic("key")(key)
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
     if (maxRedirects != null) __obj.updateDynamic("maxRedirects")(maxRedirects.asInstanceOf[js.Any])
@@ -133,7 +128,7 @@ object RequestPromiseOptions {
     if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL)
     if (!js.isUndefined(time)) __obj.updateDynamic("time")(time)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction3(transform))
     if (!js.isUndefined(transform2xxOnly)) __obj.updateDynamic("transform2xxOnly")(transform2xxOnly)
     if (!js.isUndefined(tunnel)) __obj.updateDynamic("tunnel")(tunnel)
     if (!js.isUndefined(useQuerystring)) __obj.updateDynamic("useQuerystring")(useQuerystring)

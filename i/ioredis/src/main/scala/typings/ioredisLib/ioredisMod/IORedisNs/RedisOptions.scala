@@ -89,7 +89,7 @@ trait RedisOptions extends js.Object {
     */
   var reconnectOnError: js.UndefOr[
     js.Function1[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       scala.Boolean | ioredisLib.ioredisLibNumbers.`1` | ioredisLib.ioredisLibNumbers.`2`
     ]
   ] = js.undefined
@@ -130,11 +130,8 @@ object RedisOptions {
     path: java.lang.String = null,
     port: scala.Int | scala.Double = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
-    reconnectOnError: js.Function1[
-      /* error */ nodeLib.Error, 
-      scala.Boolean | ioredisLib.ioredisLibNumbers.`1` | ioredisLib.ioredisLibNumbers.`2`
-    ] = null,
-    retryStrategy: js.Function1[/* times */ scala.Double, scala.Double | ioredisLib.ioredisLibNumbers.`false`] = null,
+    reconnectOnError: /* error */ stdLib.Error => scala.Boolean | ioredisLib.ioredisLibNumbers.`1` | ioredisLib.ioredisLibNumbers.`2` = null,
+    retryStrategy: /* times */ scala.Double => scala.Double | ioredisLib.ioredisLibNumbers.`false` = null,
     sentinels: js.Array[ioredisLib.Anon_Host] = null,
     showFriendlyErrorStack: js.UndefOr[scala.Boolean] = js.undefined,
     tls: nodeLib.tlsMod.ConnectionOptions = null
@@ -159,8 +156,8 @@ object RedisOptions {
     if (path != null) __obj.updateDynamic("path")(path)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (reconnectOnError != null) __obj.updateDynamic("reconnectOnError")(reconnectOnError)
-    if (retryStrategy != null) __obj.updateDynamic("retryStrategy")(retryStrategy)
+    if (reconnectOnError != null) __obj.updateDynamic("reconnectOnError")(js.Any.fromFunction1(reconnectOnError))
+    if (retryStrategy != null) __obj.updateDynamic("retryStrategy")(js.Any.fromFunction1(retryStrategy))
     if (sentinels != null) __obj.updateDynamic("sentinels")(sentinels)
     if (!js.isUndefined(showFriendlyErrorStack)) __obj.updateDynamic("showFriendlyErrorStack")(showFriendlyErrorStack)
     if (tls != null) __obj.updateDynamic("tls")(tls)

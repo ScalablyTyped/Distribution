@@ -52,7 +52,7 @@ object ComprehendNs extends js.Object {
     /**
       * The language of the input documents. You can specify English ("en") or Spanish ("es"). All documents must be in the same language.
       */
-    var LanguageCode: LanguageCode
+    var LanguageCode: awsDashSdkLib.clientsComprehendMod.ComprehendNs.LanguageCode
     /**
       * A list containing the text of the input documents. The list can contain a maximum of 25 documents. Each document must contain fewer than 5,000 bytes of UTF-8 encoded characters.
       */
@@ -85,7 +85,7 @@ object ComprehendNs extends js.Object {
     /**
       * The language of the input documents. You can specify English ("en") or Spanish ("es"). All documents must be in the same language.
       */
-    var LanguageCode: LanguageCode
+    var LanguageCode: awsDashSdkLib.clientsComprehendMod.ComprehendNs.LanguageCode
     /**
       * A list containing the text of the input documents. The list can contain a maximum of 25 documents. Each document must contain fewer that 5,000 bytes of UTF-8 encoded characters.
       */
@@ -122,7 +122,7 @@ object ComprehendNs extends js.Object {
     /**
       * The language of the input documents. You can specify English ("en") or Spanish ("es"). All documents must be in the same language.
       */
-    var LanguageCode: LanguageCode
+    var LanguageCode: awsDashSdkLib.clientsComprehendMod.ComprehendNs.LanguageCode
     /**
       * A list containing the text of the input documents. The list can contain a maximum of 25 documents. Each document must contain fewer that 5,000 bytes of UTF-8 encoded characters.
       */
@@ -253,7 +253,7 @@ object ComprehendNs extends js.Object {
     /**
       * The language of the input documents. You can specify English ("en") or Spanish ("es"). All documents must be in the same language.
       */
-    var LanguageCode: LanguageCode
+    var LanguageCode: awsDashSdkLib.clientsComprehendMod.ComprehendNs.LanguageCode
   }
   
   trait CreateDocumentClassifierResponse extends js.Object {
@@ -279,7 +279,7 @@ object ComprehendNs extends js.Object {
     /**
       *  The language of the input documents. All documents must be in the same language. Only English ("en") is currently supported. 
       */
-    var LanguageCode: LanguageCode
+    var LanguageCode: awsDashSdkLib.clientsComprehendMod.ComprehendNs.LanguageCode
     /**
       * The name given to the newly created recognizer. Recognizer names can be a maximum of 256 characters. Alphanumeric characters, hyphens (-) and underscores (_) are allowed. The name must be unique in the account/region.
       */
@@ -297,7 +297,7 @@ object ComprehendNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) that identifies the document classifier. 
       */
-    var DocumentClassifierArn: DocumentClassifierArn
+    var DocumentClassifierArn: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DocumentClassifierArn
   }
   
   trait DeleteDocumentClassifierResponse extends js.Object
@@ -306,7 +306,7 @@ object ComprehendNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) that identifies the entity recognizer.
       */
-    var EntityRecognizerArn: EntityRecognizerArn
+    var EntityRecognizerArn: awsDashSdkLib.clientsComprehendMod.ComprehendNs.EntityRecognizerArn
   }
   
   trait DeleteEntityRecognizerResponse extends js.Object
@@ -315,7 +315,7 @@ object ComprehendNs extends js.Object {
     /**
       * The identifier that Amazon Comprehend generated for the job. The operation returns this identifier in its response.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsComprehendMod.ComprehendNs.JobId
   }
   
   trait DescribeDocumentClassificationJobResponse extends js.Object {
@@ -329,7 +329,7 @@ object ComprehendNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) that identifies the document classifier. The operation returns this identifier in its response.
       */
-    var DocumentClassifierArn: DocumentClassifierArn
+    var DocumentClassifierArn: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DocumentClassifierArn
   }
   
   trait DescribeDocumentClassifierResponse extends js.Object {
@@ -343,7 +343,7 @@ object ComprehendNs extends js.Object {
     /**
       * The identifier that Amazon Comprehend generated for the job. The operation returns this identifier in its response.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsComprehendMod.ComprehendNs.JobId
   }
   
   trait DescribeDominantLanguageDetectionJobResponse extends js.Object {
@@ -357,7 +357,7 @@ object ComprehendNs extends js.Object {
     /**
       * The identifier that Amazon Comprehend generated for the job. The operation returns this identifier in its response.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsComprehendMod.ComprehendNs.JobId
   }
   
   trait DescribeEntitiesDetectionJobResponse extends js.Object {
@@ -371,7 +371,7 @@ object ComprehendNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) that identifies the entity recognizer.
       */
-    var EntityRecognizerArn: EntityRecognizerArn
+    var EntityRecognizerArn: awsDashSdkLib.clientsComprehendMod.ComprehendNs.EntityRecognizerArn
   }
   
   trait DescribeEntityRecognizerResponse extends js.Object {
@@ -385,7 +385,7 @@ object ComprehendNs extends js.Object {
     /**
       * The identifier that Amazon Comprehend generated for the job. The operation returns this identifier in its response.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsComprehendMod.ComprehendNs.JobId
   }
   
   trait DescribeKeyPhrasesDetectionJobResponse extends js.Object {
@@ -399,7 +399,7 @@ object ComprehendNs extends js.Object {
     /**
       * The identifier that Amazon Comprehend generated for the job. The operation returns this identifier in its response.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsComprehendMod.ComprehendNs.JobId
   }
   
   trait DescribeSentimentDetectionJobResponse extends js.Object {
@@ -413,7 +413,7 @@ object ComprehendNs extends js.Object {
     /**
       * The identifier assigned by the user to the detection job.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsComprehendMod.ComprehendNs.JobId
   }
   
   trait DescribeTopicsDetectionJobResponse extends js.Object {
@@ -441,7 +441,7 @@ object ComprehendNs extends js.Object {
     /**
       * The language of the input documents. You can specify English ("en") or Spanish ("es"). All documents must be in the same language.
       */
-    var LanguageCode: LanguageCode
+    var LanguageCode: awsDashSdkLib.clientsComprehendMod.ComprehendNs.LanguageCode
     /**
       * A UTF-8 text string. Each string must contain fewer that 5,000 bytes of UTF-8 encoded characters.
       */
@@ -459,7 +459,7 @@ object ComprehendNs extends js.Object {
     /**
       * The language of the input documents. You can specify English ("en") or Spanish ("es"). All documents must be in the same language.
       */
-    var LanguageCode: LanguageCode
+    var LanguageCode: awsDashSdkLib.clientsComprehendMod.ComprehendNs.LanguageCode
     /**
       * A UTF-8 text string. Each string must contain fewer that 5,000 bytes of UTF-8 encoded characters.
       */
@@ -477,7 +477,7 @@ object ComprehendNs extends js.Object {
     /**
       * The language of the input documents. You can specify English ("en") or Spanish ("es"). All documents must be in the same language.
       */
-    var LanguageCode: LanguageCode
+    var LanguageCode: awsDashSdkLib.clientsComprehendMod.ComprehendNs.LanguageCode
     /**
       * A UTF-8 text string. Each string must contain fewer that 5,000 bytes of UTF-8 encoded characters.
       */
@@ -594,7 +594,7 @@ object ComprehendNs extends js.Object {
     /**
       * The Amazon S3 URI for the input data. The S3 bucket must be in the same region as the API endpoint that you are calling. The URI can point to a single input file or it can provide the prefix for a collection of input files. For example, if you use the URI S3://bucketName/prefix, if the prefix is a single file, Amazon Comprehend uses that file as input. If more than one file begins with the prefix, Amazon Comprehend uses all of them as input.
       */
-    var S3Uri: S3Uri
+    var S3Uri: awsDashSdkLib.clientsComprehendMod.ComprehendNs.S3Uri
   }
   
   trait DocumentClassifierProperties extends js.Object {
@@ -806,21 +806,21 @@ object ComprehendNs extends js.Object {
     /**
       *  Specifies the Amazon S3 location where the annotations for an entity recognizer are located. The URI must be in the same region as the API endpoint that you are calling.
       */
-    var S3Uri: S3Uri
+    var S3Uri: awsDashSdkLib.clientsComprehendMod.ComprehendNs.S3Uri
   }
   
   trait EntityRecognizerDocuments extends js.Object {
     /**
       *  Specifies the Amazon S3 location where the training documents for an entity recognizer are located. The URI must be in the same region as the API endpoint that you are calling.
       */
-    var S3Uri: S3Uri
+    var S3Uri: awsDashSdkLib.clientsComprehendMod.ComprehendNs.S3Uri
   }
   
   trait EntityRecognizerEntityList extends js.Object {
     /**
       * Specifies the Amazon S3 location where the entity list is located. The URI must be in the same region as the API endpoint that you are calling.
       */
-    var S3Uri: S3Uri
+    var S3Uri: awsDashSdkLib.clientsComprehendMod.ComprehendNs.S3Uri
   }
   
   trait EntityRecognizerEvaluationMetrics extends js.Object {
@@ -960,7 +960,7 @@ object ComprehendNs extends js.Object {
     /**
       * The Amazon S3 URI for the input data. The URI must be in same region as the API endpoint that you are calling. The URI can point to a single input file or it can provide the prefix for a collection of data files.  For example, if you use the URI S3://bucketName/prefix, if the prefix is a single file, Amazon Comprehend uses that file as input. If more than one file begins with the prefix, Amazon Comprehend uses all of them as input.
       */
-    var S3Uri: S3Uri
+    var S3Uri: awsDashSdkLib.clientsComprehendMod.ComprehendNs.S3Uri
   }
   
   trait KeyPhrase extends js.Object {
@@ -1256,7 +1256,7 @@ object ComprehendNs extends js.Object {
     /**
       * When you use the OutputDataConfig object with asynchronous operations, you specify the Amazon S3 location where you want to write the output data. The URI must be in the same region as the API endpoint that you are calling. The location is used as the prefix for the actual location of the output file. When the topic detection job is finished, the service creates an output file in a directory specific to the job. The S3Uri field contains the location of the output file, called output.tar.gz. It is a compressed archive that contains the ouput of the operation.
       */
-    var S3Uri: S3Uri
+    var S3Uri: awsDashSdkLib.clientsComprehendMod.ComprehendNs.S3Uri
   }
   
   trait PartOfSpeechTag extends js.Object {
@@ -1363,11 +1363,11 @@ object ComprehendNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the document classifier to use to process the job.
       */
-    var DocumentClassifierArn: DocumentClassifierArn
+    var DocumentClassifierArn: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DocumentClassifierArn
     /**
       * Specifies the format and location of the input data for the job.
       */
-    var InputDataConfig: InputDataConfig
+    var InputDataConfig: awsDashSdkLib.clientsComprehendMod.ComprehendNs.InputDataConfig
     /**
       * The identifier of the job.
       */
@@ -1375,7 +1375,7 @@ object ComprehendNs extends js.Object {
     /**
       * Specifies where to send the output files.
       */
-    var OutputDataConfig: OutputDataConfig
+    var OutputDataConfig: awsDashSdkLib.clientsComprehendMod.ComprehendNs.OutputDataConfig
   }
   
   trait StartDocumentClassificationJobResponse extends js.Object {
@@ -1401,7 +1401,7 @@ object ComprehendNs extends js.Object {
     /**
       * Specifies the format and location of the input data for the job.
       */
-    var InputDataConfig: InputDataConfig
+    var InputDataConfig: awsDashSdkLib.clientsComprehendMod.ComprehendNs.InputDataConfig
     /**
       * An identifier for the job.
       */
@@ -1409,7 +1409,7 @@ object ComprehendNs extends js.Object {
     /**
       * Specifies where to send the output files.
       */
-    var OutputDataConfig: OutputDataConfig
+    var OutputDataConfig: awsDashSdkLib.clientsComprehendMod.ComprehendNs.OutputDataConfig
   }
   
   trait StartDominantLanguageDetectionJobResponse extends js.Object {
@@ -1439,7 +1439,7 @@ object ComprehendNs extends js.Object {
     /**
       * Specifies the format and location of the input data for the job.
       */
-    var InputDataConfig: InputDataConfig
+    var InputDataConfig: awsDashSdkLib.clientsComprehendMod.ComprehendNs.InputDataConfig
     /**
       * The identifier of the job.
       */
@@ -1447,11 +1447,11 @@ object ComprehendNs extends js.Object {
     /**
       * The language of the input documents. All documents must be in the same language. You can specify any of the languages supported by Amazon Comprehend: English ("en"), Spanish ("es"), French ("fr"), German ("de"), Italian ("it"), or Portuguese ("pt"). If custom entities recognition is used, this parameter is ignored and the language used for training the model is used instead.
       */
-    var LanguageCode: LanguageCode
+    var LanguageCode: awsDashSdkLib.clientsComprehendMod.ComprehendNs.LanguageCode
     /**
       * Specifies where to send the output files.
       */
-    var OutputDataConfig: OutputDataConfig
+    var OutputDataConfig: awsDashSdkLib.clientsComprehendMod.ComprehendNs.OutputDataConfig
   }
   
   trait StartEntitiesDetectionJobResponse extends js.Object {
@@ -1477,7 +1477,7 @@ object ComprehendNs extends js.Object {
     /**
       * Specifies the format and location of the input data for the job.
       */
-    var InputDataConfig: InputDataConfig
+    var InputDataConfig: awsDashSdkLib.clientsComprehendMod.ComprehendNs.InputDataConfig
     /**
       * The identifier of the job.
       */
@@ -1485,11 +1485,11 @@ object ComprehendNs extends js.Object {
     /**
       * The language of the input documents. You can specify English ("en") or Spanish ("es"). All documents must be in the same language.
       */
-    var LanguageCode: LanguageCode
+    var LanguageCode: awsDashSdkLib.clientsComprehendMod.ComprehendNs.LanguageCode
     /**
       * Specifies where to send the output files.
       */
-    var OutputDataConfig: OutputDataConfig
+    var OutputDataConfig: awsDashSdkLib.clientsComprehendMod.ComprehendNs.OutputDataConfig
   }
   
   trait StartKeyPhrasesDetectionJobResponse extends js.Object {
@@ -1515,7 +1515,7 @@ object ComprehendNs extends js.Object {
     /**
       * Specifies the format and location of the input data for the job.
       */
-    var InputDataConfig: InputDataConfig
+    var InputDataConfig: awsDashSdkLib.clientsComprehendMod.ComprehendNs.InputDataConfig
     /**
       * The identifier of the job.
       */
@@ -1523,11 +1523,11 @@ object ComprehendNs extends js.Object {
     /**
       * The language of the input documents. You can specify English ("en") or Spanish ("es"). All documents must be in the same language.
       */
-    var LanguageCode: LanguageCode
+    var LanguageCode: awsDashSdkLib.clientsComprehendMod.ComprehendNs.LanguageCode
     /**
       * Specifies where to send the output files. 
       */
-    var OutputDataConfig: OutputDataConfig
+    var OutputDataConfig: awsDashSdkLib.clientsComprehendMod.ComprehendNs.OutputDataConfig
   }
   
   trait StartSentimentDetectionJobResponse extends js.Object {
@@ -1553,7 +1553,7 @@ object ComprehendNs extends js.Object {
     /**
       * Specifies the format and location of the input data for the job.
       */
-    var InputDataConfig: InputDataConfig
+    var InputDataConfig: awsDashSdkLib.clientsComprehendMod.ComprehendNs.InputDataConfig
     /**
       * The identifier of the job.
       */
@@ -1565,7 +1565,7 @@ object ComprehendNs extends js.Object {
     /**
       * Specifies where to send the output files. The output is a compressed archive with two files, topic-terms.csv that lists the terms associated with each topic, and doc-topics.csv that lists the documents associated with each topic
       */
-    var OutputDataConfig: OutputDataConfig
+    var OutputDataConfig: awsDashSdkLib.clientsComprehendMod.ComprehendNs.OutputDataConfig
   }
   
   trait StartTopicsDetectionJobResponse extends js.Object {
@@ -1583,7 +1583,7 @@ object ComprehendNs extends js.Object {
     /**
       * The identifier of the dominant language detection job to stop.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsComprehendMod.ComprehendNs.JobId
   }
   
   trait StopDominantLanguageDetectionJobResponse extends js.Object {
@@ -1601,7 +1601,7 @@ object ComprehendNs extends js.Object {
     /**
       * The identifier of the entities detection job to stop.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsComprehendMod.ComprehendNs.JobId
   }
   
   trait StopEntitiesDetectionJobResponse extends js.Object {
@@ -1619,7 +1619,7 @@ object ComprehendNs extends js.Object {
     /**
       * The identifier of the key phrases detection job to stop.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsComprehendMod.ComprehendNs.JobId
   }
   
   trait StopKeyPhrasesDetectionJobResponse extends js.Object {
@@ -1637,7 +1637,7 @@ object ComprehendNs extends js.Object {
     /**
       * The identifier of the sentiment detection job to stop.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsComprehendMod.ComprehendNs.JobId
   }
   
   trait StopSentimentDetectionJobResponse extends js.Object {
@@ -1655,7 +1655,7 @@ object ComprehendNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) that identifies the document classifier currently being trained.
       */
-    var DocumentClassifierArn: DocumentClassifierArn
+    var DocumentClassifierArn: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DocumentClassifierArn
   }
   
   trait StopTrainingDocumentClassifierResponse extends js.Object
@@ -1664,7 +1664,7 @@ object ComprehendNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) that identifies the entity recognizer currently being trained.
       */
-    var EntityRecognizerArn: EntityRecognizerArn
+    var EntityRecognizerArn: awsDashSdkLib.clientsComprehendMod.ComprehendNs.EntityRecognizerArn
   }
   
   trait StopTrainingEntityRecognizerResponse extends js.Object

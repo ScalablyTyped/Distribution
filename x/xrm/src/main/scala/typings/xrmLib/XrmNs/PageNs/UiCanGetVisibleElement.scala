@@ -14,8 +14,8 @@ trait UiCanGetVisibleElement
 
 object UiCanGetVisibleElement {
   @scala.inline
-  def apply(getVisible: js.Function0[scala.Boolean]): UiCanGetVisibleElement = {
-    val __obj = js.Dynamic.literal(getVisible = getVisible)
+  def apply(getVisible: () => scala.Boolean): UiCanGetVisibleElement = {
+    val __obj = js.Dynamic.literal(getVisible = js.Any.fromFunction0(getVisible))
   
     __obj.asInstanceOf[UiCanGetVisibleElement]
   }

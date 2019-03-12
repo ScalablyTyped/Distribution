@@ -18,7 +18,7 @@ trait GetFileTreeOptions[RE, DE] extends js.Object {
     *
     * If excluded, the function will throw an error when first encountered.
     */
-  val onError: js.UndefOr[js.Function1[/* err */ nodeLib.Error, scala.Unit]] = js.undefined
+  val onError: js.UndefOr[js.Function1[/* err */ stdLib.Error, scala.Unit]] = js.undefined
   /**
     * Called whenever a file node is added to the tree.
     *
@@ -32,15 +32,15 @@ trait GetFileTreeOptions[RE, DE] extends js.Object {
 object GetFileTreeOptions {
   @scala.inline
   def apply[RE, DE](
-    onDirectoryNode: js.Function1[/* node */ DirectoryNode, DirectoryNode with DE] = null,
-    onError: js.Function1[/* err */ nodeLib.Error, scala.Unit] = null,
-    onFileNode: js.Function1[/* node */ RegularFileNode, RegularFileNode with RE] = null,
+    onDirectoryNode: /* node */ DirectoryNode => DirectoryNode with DE = null,
+    onError: /* err */ stdLib.Error => scala.Unit = null,
+    onFileNode: /* node */ RegularFileNode => RegularFileNode with RE = null,
     walkerOptions: WalkerOptions = null
   ): GetFileTreeOptions[RE, DE] = {
     val __obj = js.Dynamic.literal()
-    if (onDirectoryNode != null) __obj.updateDynamic("onDirectoryNode")(onDirectoryNode)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onFileNode != null) __obj.updateDynamic("onFileNode")(onFileNode)
+    if (onDirectoryNode != null) __obj.updateDynamic("onDirectoryNode")(js.Any.fromFunction1(onDirectoryNode))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onFileNode != null) __obj.updateDynamic("onFileNode")(js.Any.fromFunction1(onFileNode))
     if (walkerOptions != null) __obj.updateDynamic("walkerOptions")(walkerOptions)
     __obj.asInstanceOf[GetFileTreeOptions[RE, DE]]
   }

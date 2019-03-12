@@ -38,15 +38,15 @@ trait IndexedShape extends Geo {
 object IndexedShape {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    id: js.Function1[java.lang.String, IndexedShape],
-    index: js.Function1[java.lang.String, IndexedShape],
-    shapeFieldName: js.Function1[java.lang.String, IndexedShape],
-    toJSON: js.Function0[js.Any],
-    `type`: js.Function1[java.lang.String, IndexedShape]
+    _type: () => java.lang.String,
+    id: java.lang.String => IndexedShape,
+    index: java.lang.String => IndexedShape,
+    shapeFieldName: java.lang.String => IndexedShape,
+    toJSON: () => js.Any,
+    `type`: java.lang.String => IndexedShape
   ): IndexedShape = {
-    val __obj = js.Dynamic.literal(_type = _type, id = id, index = index, shapeFieldName = shapeFieldName, toJSON = toJSON)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), id = js.Any.fromFunction1(id), index = js.Any.fromFunction1(index), shapeFieldName = js.Any.fromFunction1(shapeFieldName), toJSON = js.Any.fromFunction0(toJSON))
+    __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
     __obj.asInstanceOf[IndexedShape]
   }
 }

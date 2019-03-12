@@ -18,15 +18,15 @@ trait Utils extends js.Object {
 object Utils {
   @scala.inline
   def apply(
-    equals: js.Function2[js.Any, js.Any, scala.Boolean],
-    fromJson: js.Function1[java.lang.String, js.Any],
-    isFunction: js.Function1[js.Any, scala.Boolean],
-    isNumber: js.Function1[js.Any, scala.Boolean],
-    isObject: js.Function1[js.Any, scala.Boolean],
-    isString: js.Function1[js.Any, scala.Boolean],
+    equals: (js.Any, js.Any) => scala.Boolean,
+    fromJson: java.lang.String => js.Any,
+    isFunction: js.Any => scala.Boolean,
+    isNumber: js.Any => scala.Boolean,
+    isObject: js.Any => scala.Boolean,
+    isString: js.Any => scala.Boolean,
     Promise: stdLib.PromiseConstructor = null
   ): Utils = {
-    val __obj = js.Dynamic.literal(equals = equals, fromJson = fromJson, isFunction = isFunction, isNumber = isNumber, isObject = isObject, isString = isString)
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction2(equals), fromJson = js.Any.fromFunction1(fromJson), isFunction = js.Any.fromFunction1(isFunction), isNumber = js.Any.fromFunction1(isNumber), isObject = js.Any.fromFunction1(isObject), isString = js.Any.fromFunction1(isString))
     if (Promise != null) __obj.updateDynamic("Promise")(Promise)
     __obj.asInstanceOf[Utils]
   }

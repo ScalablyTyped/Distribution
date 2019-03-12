@@ -14,11 +14,11 @@ trait ILightBoxProvider extends js.Object {
 object ILightBoxProvider {
   @scala.inline
   def apply(
-    calculateImageDimensionLimits: js.Function1[IImageDimensionParameter, IImageDimensionLimits],
-    calculateModalDimensions: js.Function1[IModalDimensionsParameter, IModalDimensions],
+    calculateImageDimensionLimits: IImageDimensionParameter => IImageDimensionLimits,
+    calculateModalDimensions: IModalDimensionsParameter => IModalDimensions,
     templateUrl: java.lang.String
   ): ILightBoxProvider = {
-    val __obj = js.Dynamic.literal(calculateImageDimensionLimits = calculateImageDimensionLimits, calculateModalDimensions = calculateModalDimensions, templateUrl = templateUrl)
+    val __obj = js.Dynamic.literal(calculateImageDimensionLimits = js.Any.fromFunction1(calculateImageDimensionLimits), calculateModalDimensions = js.Any.fromFunction1(calculateModalDimensions), templateUrl = templateUrl)
   
     __obj.asInstanceOf[ILightBoxProvider]
   }

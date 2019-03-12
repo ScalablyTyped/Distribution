@@ -18,14 +18,14 @@ object Anon_ActiveTab {
   def apply(
     activeTab: scala.Int | scala.Double = null,
     containerWidth: scala.Int | scala.Double = null,
-    goToPage: js.Function1[/* pageNumber */ scala.Double, scala.Unit] = null,
+    goToPage: /* pageNumber */ scala.Double => scala.Unit = null,
     scrollValue: reactDashNativeLib.reactDashNativeMod.AnimatedNs.Value = null,
     tabs: js.Array[reactLib.reactMod.Global.JSXNs.Element] = null
   ): Anon_ActiveTab = {
     val __obj = js.Dynamic.literal()
     if (activeTab != null) __obj.updateDynamic("activeTab")(activeTab.asInstanceOf[js.Any])
     if (containerWidth != null) __obj.updateDynamic("containerWidth")(containerWidth.asInstanceOf[js.Any])
-    if (goToPage != null) __obj.updateDynamic("goToPage")(goToPage)
+    if (goToPage != null) __obj.updateDynamic("goToPage")(js.Any.fromFunction1(goToPage))
     if (scrollValue != null) __obj.updateDynamic("scrollValue")(scrollValue)
     if (tabs != null) __obj.updateDynamic("tabs")(tabs)
     __obj.asInstanceOf[Anon_ActiveTab]

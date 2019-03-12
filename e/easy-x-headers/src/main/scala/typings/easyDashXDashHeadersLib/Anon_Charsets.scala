@@ -17,12 +17,12 @@ object Anon_Charsets {
   @scala.inline
   def apply(
     charsets: easyDashXDashHeadersLib.mimeMod.Charsets,
-    define: js.Function1[js.Object, scala.Unit],
-    extension: js.Function1[java.lang.String, java.lang.String],
-    load: js.Function1[java.lang.String, scala.Unit],
-    lookup: js.Function1[java.lang.String, java.lang.String]
+    define: js.Object => scala.Unit,
+    extension: java.lang.String => java.lang.String,
+    load: java.lang.String => scala.Unit,
+    lookup: java.lang.String => java.lang.String
   ): Anon_Charsets = {
-    val __obj = js.Dynamic.literal(charsets = charsets, define = define, extension = extension, load = load, lookup = lookup)
+    val __obj = js.Dynamic.literal(charsets = charsets, define = js.Any.fromFunction1(define), extension = js.Any.fromFunction1(extension), load = js.Any.fromFunction1(load), lookup = js.Any.fromFunction1(lookup))
   
     __obj.asInstanceOf[Anon_Charsets]
   }

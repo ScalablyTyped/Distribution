@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   /* devtools.panels properties */
   /** Elements panel. */
-  val elements: firefoxDashWebextDashBrowserLib.browserNs.devtoolsNs.panelsNs.ElementsPanel = js.native
+  val elements: ElementsPanel = js.native
   /* devtools.panels events */
   /**
     * Fired when the devtools theme changes.
@@ -18,16 +18,14 @@ object ^ extends js.Object {
     */
   val onThemeChanged: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* themeName */ java.lang.String, scala.Unit]] = js.native
   /** Sources panel. */
-  val sources: firefoxDashWebextDashBrowserLib.browserNs.devtoolsNs.panelsNs.SourcesPanel = js.native
+  val sources: SourcesPanel = js.native
   /** The name of the current devtools theme. */
   val themeName: java.lang.String = js.native
   def create(
     title: java.lang.String,
-    iconPath: firefoxDashWebextDashBrowserLib.browserNs.devtoolsNs.panelsNs._Create,
+    iconPath: _Create,
     pagePath: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionURL
-  ): js.Promise[
-    js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.devtoolsNs.panelsNs.ExtensionPanel]
-  ] = js.native
+  ): js.Promise[js.UndefOr[ExtensionPanel]] = js.native
   /* devtools.panels functions */
   /**
     * Creates an extension panel.
@@ -40,9 +38,7 @@ object ^ extends js.Object {
     title: java.lang.String,
     iconPath: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionURL,
     pagePath: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionURL
-  ): js.Promise[
-    js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.devtoolsNs.panelsNs.ExtensionPanel]
-  ] = js.native
+  ): js.Promise[js.UndefOr[ExtensionPanel]] = js.native
   /**
     * Requests DevTools to open a URL in a Developer Tools panel.
     * @param url The URL of the resource to open.

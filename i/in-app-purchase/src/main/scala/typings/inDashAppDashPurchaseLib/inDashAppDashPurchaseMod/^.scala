@@ -14,59 +14,40 @@ object ^ extends js.Object {
   val ROKU: /* roku */ java.lang.String = js.native
   val UNITY: /* unity */ java.lang.String = js.native
   val WINDOWS: /* windows */ java.lang.String = js.native
-  def config(params: inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.Config): scala.Unit = js.native
-  def getPurchaseData(): js.Array[inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.PurchasedItem] | scala.Null = js.native
-  def getPurchaseData(purchaseData: inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.ValidationResponse): js.Array[inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.PurchasedItem] | scala.Null = js.native
-  def getPurchaseData(
-    purchaseData: inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.ValidationResponse,
-    options: inDashAppDashPurchaseLib.Anon_IgnoreCanceled
-  ): js.Array[inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.PurchasedItem] | scala.Null = js.native
-  def getService(receipt: inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.Receipt): inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.Service = js.native
-  def isCanceled(item: inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.PurchasedItem): scala.Boolean = js.native
-  def isExpired(item: inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.PurchasedItem): scala.Boolean = js.native
-  def isValidated(response: inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.ValidationResponse): scala.Boolean = js.native
+  def config(params: Config): scala.Unit = js.native
+  def getPurchaseData(): js.Array[PurchasedItem] | scala.Null = js.native
+  def getPurchaseData(purchaseData: ValidationResponse): js.Array[PurchasedItem] | scala.Null = js.native
+  def getPurchaseData(purchaseData: ValidationResponse, options: inDashAppDashPurchaseLib.Anon_IgnoreCanceled): js.Array[PurchasedItem] | scala.Null = js.native
+  def getService(receipt: Receipt): Service = js.native
+  def isCanceled(item: PurchasedItem): scala.Boolean = js.native
+  def isExpired(item: PurchasedItem): scala.Boolean = js.native
+  def isValidated(response: ValidationResponse): scala.Boolean = js.native
   def refreshGoogleToken(): js.Promise[scala.Unit] = js.native
   def refreshGoogleToken(callback: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit = js.native
   def reset(): scala.Unit = js.native
   def setup(): js.Promise[scala.Unit] = js.native
   def setup(callback: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit = js.native
-  def validate(receipt: inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.Receipt): js.Promise[inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.ValidationResponse] = js.native
+  def validate(receipt: Receipt): js.Promise[ValidationResponse] = js.native
   def validate(
-    receipt: inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.Receipt,
-    callback: js.Function2[
-      /* err */ js.Any, 
-      /* res */ inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.ValidationResponse, 
-      scala.Unit
-    ]
+    receipt: Receipt,
+    callback: js.Function2[/* err */ js.Any, /* res */ ValidationResponse, scala.Unit]
   ): scala.Unit = js.native
   def validate(
-    service: inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.Service,
-    receipt: inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.Receipt,
-    callback: js.Function2[
-      /* err */ js.Any, 
-      /* res */ inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.ValidationResponse, 
-      scala.Unit
-    ]
+    service: Service,
+    receipt: Receipt,
+    callback: js.Function2[/* err */ js.Any, /* res */ ValidationResponse, scala.Unit]
   ): scala.Unit = js.native
-  def validateOnce(receipt: inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.Receipt, secretOrPubKey: js.Any): js.Promise[inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.ValidationResponse] = js.native
+  def validateOnce(receipt: Receipt, secretOrPubKey: js.Any): js.Promise[ValidationResponse] = js.native
   def validateOnce(
-    receipt: inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.Receipt,
+    receipt: Receipt,
     secretOrPubKey: js.Any,
-    callback: js.Function2[
-      /* err */ js.Any, 
-      /* res */ inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.ValidationResponse, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* err */ js.Any, /* res */ ValidationResponse, scala.Unit]
   ): scala.Unit = js.native
   def validateOnce(
-    service: inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.Service,
+    service: Service,
     secretOrPubKey: js.Any,
-    receipt: inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.Receipt,
-    callback: js.Function2[
-      /* err */ js.Any, 
-      /* res */ inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.ValidationResponse, 
-      scala.Unit
-    ]
+    receipt: Receipt,
+    callback: js.Function2[/* err */ js.Any, /* res */ ValidationResponse, scala.Unit]
   ): scala.Unit = js.native
 }
 

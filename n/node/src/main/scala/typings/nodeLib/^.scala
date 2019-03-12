@@ -10,18 +10,18 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   var __dirname: java.lang.String = js.native
   var __filename: java.lang.String = js.native
-  var console: nodeLib.Console = js.native
+  var console: Console = js.native
   // Same as module.exports
   var exports: js.Any = js.native
   var global: nodeLib.NodeJSNs.Global = js.native
-  var module: nodeLib.NodeModule = js.native
+  var module: NodeModule = js.native
   /*-----------------------------------------------*
     *                                               *
     *                   GLOBAL                      *
     *                                               *
     ------------------------------------------------*/
   var process: nodeLib.NodeJSNs.Process = js.native
-  var require: nodeLib.NodeRequire = js.native
+  var require: NodeRequire = js.native
   def clearImmediate(immediateId: nodeLib.NodeJSNs.Immediate): scala.Unit = js.native
   def clearInterval(intervalId: nodeLib.NodeJSNs.Timeout): scala.Unit = js.native
   def clearTimeout(timeoutId: nodeLib.NodeJSNs.Timeout): scala.Unit = js.native

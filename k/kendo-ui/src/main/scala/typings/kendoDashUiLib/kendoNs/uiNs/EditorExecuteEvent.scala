@@ -13,13 +13,13 @@ trait EditorExecuteEvent extends EditorEvent {
 object EditorExecuteEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Editor,
     command: js.Any = null,
     name: java.lang.String = null
   ): EditorExecuteEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (command != null) __obj.updateDynamic("command")(command)
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[EditorExecuteEvent]

@@ -12,8 +12,8 @@ trait IXmlNodeSerializer extends js.Object {
 
 object IXmlNodeSerializer {
   @scala.inline
-  def apply(getXml: js.Function0[java.lang.String], innerText: java.lang.String): IXmlNodeSerializer = {
-    val __obj = js.Dynamic.literal(getXml = getXml, innerText = innerText)
+  def apply(getXml: () => java.lang.String, innerText: java.lang.String): IXmlNodeSerializer = {
+    val __obj = js.Dynamic.literal(getXml = js.Any.fromFunction0(getXml), innerText = innerText)
   
     __obj.asInstanceOf[IXmlNodeSerializer]
   }

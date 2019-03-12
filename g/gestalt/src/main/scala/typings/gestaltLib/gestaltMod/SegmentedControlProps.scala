@@ -16,11 +16,11 @@ object SegmentedControlProps {
   @scala.inline
   def apply(
     items: js.Array[reactLib.reactMod.ReactNs.ReactNode],
-    onChange: js.Function1[gestaltLib.Anon_ActiveIndex, scala.Unit],
+    onChange: gestaltLib.Anon_ActiveIndex => scala.Unit,
     selectedItemIndex: scala.Double,
     size: gestaltLib.gestaltLibStrings.md | gestaltLib.gestaltLibStrings.lg = null
   ): SegmentedControlProps = {
-    val __obj = js.Dynamic.literal(items = items, onChange = onChange, selectedItemIndex = selectedItemIndex)
+    val __obj = js.Dynamic.literal(items = items, onChange = js.Any.fromFunction1(onChange), selectedItemIndex = selectedItemIndex)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentedControlProps]
   }

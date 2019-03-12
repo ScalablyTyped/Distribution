@@ -13,8 +13,8 @@ trait WebCLSampler extends js.Object {
 
 object WebCLSampler {
   @scala.inline
-  def apply(getInfo: js.Function1[SamplerInfo, js.Any], release: js.Function0[scala.Unit]): WebCLSampler = {
-    val __obj = js.Dynamic.literal(getInfo = getInfo, release = release)
+  def apply(getInfo: SamplerInfo => js.Any, release: () => scala.Unit): WebCLSampler = {
+    val __obj = js.Dynamic.literal(getInfo = js.Any.fromFunction1(getInfo), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[WebCLSampler]
   }

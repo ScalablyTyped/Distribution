@@ -13,12 +13,8 @@ trait Encoding extends js.Object {
 
 object Encoding {
   @scala.inline
-  def apply(
-    charToGlyphIndex: js.Function1[java.lang.String, scala.Double],
-    charset: java.lang.String,
-    font: Font
-  ): Encoding = {
-    val __obj = js.Dynamic.literal(charToGlyphIndex = charToGlyphIndex, charset = charset, font = font)
+  def apply(charToGlyphIndex: java.lang.String => scala.Double, charset: java.lang.String, font: Font): Encoding = {
+    val __obj = js.Dynamic.literal(charToGlyphIndex = js.Any.fromFunction1(charToGlyphIndex), charset = charset, font = font)
   
     __obj.asInstanceOf[Encoding]
   }

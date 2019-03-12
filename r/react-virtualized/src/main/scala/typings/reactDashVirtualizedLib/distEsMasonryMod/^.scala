@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val DEFAULT_SCROLLING_RESET_TIME_INTERVAL: /* 150 */ scala.Double = js.native
-  def createCellPositioner(params: reactDashVirtualizedLib.distEsMasonryMod.createCellPositionerParams): reactDashVirtualizedLib.distEsMasonryMod.Positioner = js.native
+  def createCellPositioner(params: createCellPositionerParams): Positioner = js.native
 }
 

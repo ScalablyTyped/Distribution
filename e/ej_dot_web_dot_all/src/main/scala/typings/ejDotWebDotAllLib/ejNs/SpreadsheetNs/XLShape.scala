@@ -28,17 +28,9 @@ trait XLShape extends js.Object {
 object XLShape {
   @scala.inline
   def apply(
-    setPicture: js.Function6[
-      java.lang.String, 
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      java.lang.String
-    ]
+    setPicture: (java.lang.String, java.lang.String, scala.Double, scala.Double, scala.Double, scala.Double) => java.lang.String
   ): XLShape = {
-    val __obj = js.Dynamic.literal(setPicture = setPicture)
+    val __obj = js.Dynamic.literal(setPicture = js.Any.fromFunction6(setPicture))
   
     __obj.asInstanceOf[XLShape]
   }

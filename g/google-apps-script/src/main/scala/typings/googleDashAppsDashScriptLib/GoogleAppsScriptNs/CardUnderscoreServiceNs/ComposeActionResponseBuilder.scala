@@ -13,13 +13,10 @@ trait ComposeActionResponseBuilder extends js.Object {
 object ComposeActionResponseBuilder {
   @scala.inline
   def apply(
-    build: js.Function0[ComposeActionResponse],
-    setGmailDraft: js.Function1[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.GmailNs.GmailDraft, 
-      ComposeActionResponseBuilder
-    ]
+    build: () => ComposeActionResponse,
+    setGmailDraft: googleDashAppsDashScriptLib.GoogleAppsScriptNs.GmailNs.GmailDraft => ComposeActionResponseBuilder
   ): ComposeActionResponseBuilder = {
-    val __obj = js.Dynamic.literal(build = build, setGmailDraft = setGmailDraft)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setGmailDraft = js.Any.fromFunction1(setGmailDraft))
   
     __obj.asInstanceOf[ComposeActionResponseBuilder]
   }

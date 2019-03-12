@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("node-snap7", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var S7Client: nodeDashSnap7Lib.nodeDashSnap7Mod.S7Client_Static = js.native
+  var S7Client: S7Client_Static = js.native
 }
 

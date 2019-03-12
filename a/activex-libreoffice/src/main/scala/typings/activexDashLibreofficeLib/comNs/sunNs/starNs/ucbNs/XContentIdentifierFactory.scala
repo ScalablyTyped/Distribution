@@ -24,12 +24,12 @@ trait XContentIdentifierFactory
 object XContentIdentifierFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createContentIdentifier: js.Function1[java.lang.String, XContentIdentifier],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createContentIdentifier: java.lang.String => XContentIdentifier,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XContentIdentifierFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createContentIdentifier = createContentIdentifier, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createContentIdentifier = js.Any.fromFunction1(createContentIdentifier), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XContentIdentifierFactory]
   }

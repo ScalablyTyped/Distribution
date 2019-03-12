@@ -29,13 +29,13 @@ object XValidatable {
   @scala.inline
   def apply(
     Validator: XValidator,
-    acquire: js.Function0[scala.Unit],
-    getValidator: js.Function0[XValidator],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setValidator: js.Function1[XValidator, scala.Unit]
+    acquire: () => scala.Unit,
+    getValidator: () => XValidator,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setValidator: XValidator => scala.Unit
   ): XValidatable = {
-    val __obj = js.Dynamic.literal(Validator = Validator, acquire = acquire, getValidator = getValidator, queryInterface = queryInterface, release = release, setValidator = setValidator)
+    val __obj = js.Dynamic.literal(Validator = Validator, acquire = js.Any.fromFunction0(acquire), getValidator = js.Any.fromFunction0(getValidator), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setValidator = js.Any.fromFunction1(setValidator))
   
     __obj.asInstanceOf[XValidatable]
   }

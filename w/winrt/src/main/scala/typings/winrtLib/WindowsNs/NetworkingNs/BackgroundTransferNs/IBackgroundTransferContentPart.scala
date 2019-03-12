@@ -14,11 +14,11 @@ trait IBackgroundTransferContentPart extends js.Object {
 object IBackgroundTransferContentPart {
   @scala.inline
   def apply(
-    setFile: js.Function1[winrtLib.WindowsNs.StorageNs.IStorageFile, scala.Unit],
-    setHeader: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    setText: js.Function1[java.lang.String, scala.Unit]
+    setFile: winrtLib.WindowsNs.StorageNs.IStorageFile => scala.Unit,
+    setHeader: (java.lang.String, java.lang.String) => scala.Unit,
+    setText: java.lang.String => scala.Unit
   ): IBackgroundTransferContentPart = {
-    val __obj = js.Dynamic.literal(setFile = setFile, setHeader = setHeader, setText = setText)
+    val __obj = js.Dynamic.literal(setFile = js.Any.fromFunction1(setFile), setHeader = js.Any.fromFunction2(setHeader), setText = js.Any.fromFunction1(setText))
   
     __obj.asInstanceOf[IBackgroundTransferContentPart]
   }

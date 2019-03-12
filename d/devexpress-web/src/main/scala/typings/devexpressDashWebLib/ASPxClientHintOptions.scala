@@ -123,20 +123,10 @@ trait ASPxClientHintOptions extends js.Object {
     */
   var y: scala.Double = js.native
   /**
-    * A method that will handle the Hiding event.
-    * @param sender The event source.
-    * @param e A ASPxClientHintHidingEventArgs object that contains the required data.
-    */
-  /**
     * A handler for the Hiding event.
     * Value: An <see cref="ASPxClientHintHidingEventHandler" /> delegate method allowing you to implement custom processing.
     */
   def onHiding(sender: ASPxClientHintWindow, e: ASPxClientHintHidingEventArgs): scala.Unit = js.native
-  /**
-    * A method that will handle the Showing event.
-    * @param sender The event source.
-    * @param e A ASPxClientHintShowingEventArgs object that contains the required data.
-    */
   /**
     * A handler for the Showing event.
     * Value: An <see cref="ASPxClientHintShowingEventHandler" /> delegate method allowing you to implement custom processing.

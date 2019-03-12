@@ -15,10 +15,10 @@ object StatusBarItem {
   @scala.inline
   def apply(
     className: java.lang.String,
-    defaultValue: js.Function1[stdLib.HTMLElement, scala.Unit],
-    onUpdate: js.Function1[stdLib.HTMLElement, scala.Unit]
+    defaultValue: stdLib.HTMLElement => scala.Unit,
+    onUpdate: stdLib.HTMLElement => scala.Unit
   ): StatusBarItem = {
-    val __obj = js.Dynamic.literal(className = className, defaultValue = defaultValue, onUpdate = onUpdate)
+    val __obj = js.Dynamic.literal(className = className, defaultValue = js.Any.fromFunction1(defaultValue), onUpdate = js.Any.fromFunction1(onUpdate))
   
     __obj.asInstanceOf[StatusBarItem]
   }

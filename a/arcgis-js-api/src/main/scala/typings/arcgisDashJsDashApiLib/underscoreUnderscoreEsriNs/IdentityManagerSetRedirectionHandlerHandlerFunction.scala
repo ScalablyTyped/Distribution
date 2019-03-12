@@ -37,14 +37,14 @@ object IdentityManagerSetRedirectionHandlerHandlerFunction {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     resourceUrl: java.lang.String,
     returnUrlParamName: java.lang.String,
     serverInfo: ServerInfo,
     signInPage: java.lang.String
   ): IdentityManagerSetRedirectionHandlerHandlerFunction = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, resourceUrl = resourceUrl, returnUrlParamName = returnUrlParamName, serverInfo = serverInfo, signInPage = signInPage)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), resourceUrl = resourceUrl, returnUrlParamName = returnUrlParamName, serverInfo = serverInfo, signInPage = signInPage)
   
     __obj.asInstanceOf[IdentityManagerSetRedirectionHandlerHandlerFunction]
   }

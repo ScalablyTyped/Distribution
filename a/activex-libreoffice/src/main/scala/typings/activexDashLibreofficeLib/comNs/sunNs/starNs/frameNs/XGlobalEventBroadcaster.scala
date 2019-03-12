@@ -21,31 +21,25 @@ object XGlobalEventBroadcaster {
   def apply(
     ElementType: activexDashLibreofficeLib.`type`,
     Events: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameReplace,
-    acquire: js.Function0[scala.Unit],
-    addDocumentEventListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XDocumentEventListener, 
-      scala.Unit
-    ],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener, scala.Unit],
-    createEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    documentEventOccured: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.DocumentEvent, scala.Unit],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    getEvents: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameReplace],
-    has: js.Function1[js.Any, scala.Boolean],
-    hasElements: js.Function0[scala.Boolean],
-    insert: js.Function1[js.Any, scala.Unit],
-    notifyDocumentEvent: js.Function3[java.lang.String, XController2, js.Any, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    remove: js.Function1[js.Any, scala.Unit],
-    removeDocumentEventListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XDocumentEventListener, 
-      scala.Unit
-    ],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addDocumentEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XDocumentEventListener => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener => scala.Unit,
+    createEnumeration: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    documentEventOccured: activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.DocumentEvent => scala.Unit,
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    getEvents: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameReplace,
+    has: js.Any => scala.Boolean,
+    hasElements: () => scala.Boolean,
+    insert: js.Any => scala.Unit,
+    notifyDocumentEvent: (java.lang.String, XController2, js.Any) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    remove: js.Any => scala.Unit,
+    removeDocumentEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XDocumentEventListener => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener => scala.Unit
   ): XGlobalEventBroadcaster = {
-    val __obj = js.Dynamic.literal(ElementType = ElementType, Events = Events, acquire = acquire, addDocumentEventListener = addDocumentEventListener, addEventListener = addEventListener, createEnumeration = createEnumeration, disposing = disposing, documentEventOccured = documentEventOccured, getElementType = getElementType, getEvents = getEvents, has = has, hasElements = hasElements, insert = insert, notifyDocumentEvent = notifyDocumentEvent, queryInterface = queryInterface, release = release, remove = remove, removeDocumentEventListener = removeDocumentEventListener, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(ElementType = ElementType, Events = Events, acquire = js.Any.fromFunction0(acquire), addDocumentEventListener = js.Any.fromFunction1(addDocumentEventListener), addEventListener = js.Any.fromFunction1(addEventListener), createEnumeration = js.Any.fromFunction0(createEnumeration), disposing = js.Any.fromFunction1(disposing), documentEventOccured = js.Any.fromFunction1(documentEventOccured), getElementType = js.Any.fromFunction0(getElementType), getEvents = js.Any.fromFunction0(getEvents), has = js.Any.fromFunction1(has), hasElements = js.Any.fromFunction0(hasElements), insert = js.Any.fromFunction1(insert), notifyDocumentEvent = js.Any.fromFunction3(notifyDocumentEvent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), remove = js.Any.fromFunction1(remove), removeDocumentEventListener = js.Any.fromFunction1(removeDocumentEventListener), removeEventListener = js.Any.fromFunction1(removeEventListener))
   
     __obj.asInstanceOf[XGlobalEventBroadcaster]
   }

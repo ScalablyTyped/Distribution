@@ -32,18 +32,14 @@ trait StripeCard extends js.Object {
 object StripeCard {
   @scala.inline
   def apply(
-    createToken: js.Function2[
-      StripeCardTokenData, 
-      js.Function2[/* status */ scala.Double, /* response */ StripeCardTokenResponse, scala.Unit], 
-      scala.Unit
-    ],
+    createToken: (StripeCardTokenData, js.Function2[/* status */ scala.Double, /* response */ StripeCardTokenResponse, scala.Unit]) => scala.Unit,
     exp_month: scala.Double,
     exp_year: scala.Double,
     last4: java.lang.String,
     `object`: java.lang.String,
-    validateCVC: js.Function1[java.lang.String, scala.Boolean],
-    validateCardNumber: js.Function1[java.lang.String, scala.Boolean],
-    validateExpiry: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    validateCVC: java.lang.String => scala.Boolean,
+    validateCardNumber: java.lang.String => scala.Boolean,
+    validateExpiry: (java.lang.String, java.lang.String) => scala.Boolean,
     address_city: java.lang.String = null,
     address_country: java.lang.String = null,
     address_line1: java.lang.String = null,
@@ -55,7 +51,7 @@ object StripeCard {
     funding: StripeCardDataFunding = null,
     name: java.lang.String = null
   ): StripeCard = {
-    val __obj = js.Dynamic.literal(createToken = createToken, exp_month = exp_month, exp_year = exp_year, last4 = last4, validateCVC = validateCVC, validateCardNumber = validateCardNumber, validateExpiry = validateExpiry)
+    val __obj = js.Dynamic.literal(createToken = js.Any.fromFunction2(createToken), exp_month = exp_month, exp_year = exp_year, last4 = last4, validateCVC = js.Any.fromFunction1(validateCVC), validateCardNumber = js.Any.fromFunction1(validateCardNumber), validateExpiry = js.Any.fromFunction2(validateExpiry))
     __obj.updateDynamic("object")(`object`)
     if (address_city != null) __obj.updateDynamic("address_city")(address_city)
     if (address_country != null) __obj.updateDynamic("address_country")(address_country)

@@ -12,12 +12,12 @@ trait AggregateError
 object AggregateError {
   @scala.inline
   def apply(
-    iterator: js.Function0[stdLib.Iterator[stdLib.Error]],
+    iterator: () => stdLib.Iterator[stdLib.Error],
     message: java.lang.String,
     name: java.lang.String,
     stack: java.lang.String = null
   ): AggregateError = {
-    val __obj = js.Dynamic.literal(iterator = iterator, message = message, name = name)
+    val __obj = js.Dynamic.literal(iterator = js.Any.fromFunction0(iterator), message = message, name = name)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[AggregateError]
   }

@@ -17,7 +17,7 @@ trait Chart extends js.Object {
   def generateLegend(): js.Object = js.native
   def getDatasetAtEvent(e: js.Any): js.Array[js.Object] = js.native
   def getDatasetMeta(index: scala.Double): Meta = js.native
-  def getElementAtEvent(e: js.Any): js.Object = js.native
+  def getElementAtEvent(e: js.Any): js.Array[js.Object] = js.native
   def getElementsAtEvent(e: js.Any): js.Array[js.Object] = js.native
   def render(): js.Object = js.native
   def render(duration: js.Any): js.Object = js.native

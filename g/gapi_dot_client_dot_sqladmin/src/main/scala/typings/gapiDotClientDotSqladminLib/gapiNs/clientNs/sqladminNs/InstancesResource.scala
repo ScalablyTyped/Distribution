@@ -54,77 +54,26 @@ trait InstancesResource extends js.Object {
 object InstancesResource {
   @scala.inline
   def apply(
-    clone: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    export: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    failover: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DatabaseInstance]
-    ],
-    `import`: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFieldsFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InstancesListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    promoteReplica: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    resetSslConfig: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    restart: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    restoreBackup: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    startReplica: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    stopReplica: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    truncateLog: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    update: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    clone: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    delete: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    export: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    failover: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[DatabaseInstance],
+    `import`: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    insert: gapiDotClientDotSqladminLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotSqladminLib.Anon_AltFieldsFilter => gapiDotClientLib.gapiNs.clientNs.Request[InstancesListResponse],
+    patch: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    promoteReplica: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    resetSslConfig: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    restart: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    restoreBackup: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    startReplica: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    stopReplica: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    truncateLog: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    update: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): InstancesResource = {
-    val __obj = js.Dynamic.literal(clone = clone, delete = delete, export = export, failover = failover, get = get, insert = insert, list = list, patch = patch, promoteReplica = promoteReplica, resetSslConfig = resetSslConfig, restart = restart, restoreBackup = restoreBackup, startReplica = startReplica, stopReplica = stopReplica, truncateLog = truncateLog, update = update)
-    __obj.updateDynamic("import")(`import`)
+    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction1(clone), delete = js.Any.fromFunction1(delete), export = js.Any.fromFunction1(export), failover = js.Any.fromFunction1(failover), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), promoteReplica = js.Any.fromFunction1(promoteReplica), resetSslConfig = js.Any.fromFunction1(resetSslConfig), restart = js.Any.fromFunction1(restart), restoreBackup = js.Any.fromFunction1(restoreBackup), startReplica = js.Any.fromFunction1(startReplica), stopReplica = js.Any.fromFunction1(stopReplica), truncateLog = js.Any.fromFunction1(truncateLog), update = js.Any.fromFunction1(update))
+    __obj.updateDynamic("import")(js.Any.fromFunction1(`import`))
     __obj.asInstanceOf[InstancesResource]
   }
 }

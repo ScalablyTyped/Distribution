@@ -12,11 +12,8 @@ trait Anon_ErrorFailureSuccessTopic extends js.Object {
 
 object Anon_ErrorFailureSuccessTopic {
   @scala.inline
-  def apply(
-    failure: js.Function1[stdLib.Error, js.Any],
-    success: js.Function1[kiiDashCloudDashSdkLib.KiiCloudNs.KiiTopic, js.Any]
-  ): Anon_ErrorFailureSuccessTopic = {
-    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  def apply(failure: stdLib.Error => js.Any, success: kiiDashCloudDashSdkLib.KiiCloudNs.KiiTopic => js.Any): Anon_ErrorFailureSuccessTopic = {
+    val __obj = js.Dynamic.literal(failure = js.Any.fromFunction1(failure), success = js.Any.fromFunction1(success))
   
     __obj.asInstanceOf[Anon_ErrorFailureSuccessTopic]
   }

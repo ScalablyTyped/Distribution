@@ -27,10 +27,10 @@ trait IProtocol extends js.Object {
 object IProtocol {
   @scala.inline
   def apply(
-    replyData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit],
-    sendData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit]
+    replyData: samchonLib.protocolInvokeInvokeMod.Invoke => scala.Unit,
+    sendData: samchonLib.protocolInvokeInvokeMod.Invoke => scala.Unit
   ): IProtocol = {
-    val __obj = js.Dynamic.literal(replyData = replyData, sendData = sendData)
+    val __obj = js.Dynamic.literal(replyData = js.Any.fromFunction1(replyData), sendData = js.Any.fromFunction1(sendData))
   
     __obj.asInstanceOf[IProtocol]
   }

@@ -36,13 +36,13 @@ trait Recipients
 object Recipients {
   @scala.inline
   def apply(
-    create: js.Function0[scala.Unit],
-    del: js.Function1[java.lang.String, scala.Unit],
-    list: js.Function0[scala.Unit],
-    retrieve: js.Function1[java.lang.String, scala.Unit],
-    update: js.Function1[java.lang.String, scala.Unit]
+    create: () => scala.Unit,
+    del: java.lang.String => scala.Unit,
+    list: () => scala.Unit,
+    retrieve: java.lang.String => scala.Unit,
+    update: java.lang.String => scala.Unit
   ): Recipients = {
-    val __obj = js.Dynamic.literal(create = create, del = del, list = list, retrieve = retrieve, update = update)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), del = js.Any.fromFunction1(del), list = js.Any.fromFunction0(list), retrieve = js.Any.fromFunction1(retrieve), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[Recipients]
   }

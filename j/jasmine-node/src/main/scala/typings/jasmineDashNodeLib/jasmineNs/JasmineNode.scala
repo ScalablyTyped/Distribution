@@ -13,10 +13,10 @@ trait JasmineNode extends js.Object {
 object JasmineNode {
   @scala.inline
   def apply(
-    executeSpecsInFolder: js.Function1[ExecuteSpecsOptions, scala.Unit],
-    loadHelpersInFolder: js.Function2[java.lang.String, stdLib.RegExp, scala.Unit]
+    executeSpecsInFolder: ExecuteSpecsOptions => scala.Unit,
+    loadHelpersInFolder: (java.lang.String, stdLib.RegExp) => scala.Unit
   ): JasmineNode = {
-    val __obj = js.Dynamic.literal(executeSpecsInFolder = executeSpecsInFolder, loadHelpersInFolder = loadHelpersInFolder)
+    val __obj = js.Dynamic.literal(executeSpecsInFolder = js.Any.fromFunction1(executeSpecsInFolder), loadHelpersInFolder = js.Any.fromFunction2(loadHelpersInFolder))
   
     __obj.asInstanceOf[JasmineNode]
   }

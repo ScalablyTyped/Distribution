@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@egjs/axes/Axes", JSImport.Default)
 @js.native
 class default protected () extends Axes {
-  def this(axis: org.scalablytyped.runtime.StringDictionary[atEgjsAxesLib.axismanagerMod.AxisOption], options: AxesOption) = this()
-  def this(axis: org.scalablytyped.runtime.StringDictionary[atEgjsAxesLib.axismanagerMod.AxisOption], options: AxesOption, startPos: atEgjsAxesLib.axismanagerMod.Axis) = this()
+  def this(axis: org.scalablytyped.runtime.StringDictionary[atEgjsAxesLib.axisManagerMod.AxisOption], options: AxesOption) = this()
+  def this(axis: org.scalablytyped.runtime.StringDictionary[atEgjsAxesLib.axisManagerMod.AxisOption], options: AxesOption, startPos: atEgjsAxesLib.axisManagerMod.Axis) = this()
 }
 
 /* static members */

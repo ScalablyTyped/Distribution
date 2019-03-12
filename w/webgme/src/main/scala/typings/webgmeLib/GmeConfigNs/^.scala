@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("GmeConfig")
 @js.native
 object ^ extends js.Object {
-  var config: webgmeLib.GmeConfigNs.PluginConfig = js.native
+  var config: PluginConfig = js.native
 }
 

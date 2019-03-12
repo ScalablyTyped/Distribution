@@ -13,12 +13,9 @@ trait TransferLogsResource extends js.Object {
 object TransferLogsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotBigquerydatatransferLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListTransferLogsResponse]
-    ]
+    list: gapiDotClientDotBigquerydatatransferLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ListTransferLogsResponse]
   ): TransferLogsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[TransferLogsResource]
   }

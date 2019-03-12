@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("fscreen", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: fscreenLib.fscreenMod.Fscreen = js.native
+  val default: Fscreen = js.native
 }
 

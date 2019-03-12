@@ -11,8 +11,8 @@ trait XSuite extends js.Object {
 
 object XSuite {
   @scala.inline
-  def apply(execute: js.Function0[scala.Unit]): XSuite = {
-    val __obj = js.Dynamic.literal(execute = execute)
+  def apply(execute: () => scala.Unit): XSuite = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute))
   
     __obj.asInstanceOf[XSuite]
   }

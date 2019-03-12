@@ -18,7 +18,7 @@ object Options {
     maxRetryTime: scala.Int | scala.Double = null,
     maxTimeout: scala.Int | scala.Double = null,
     minTimeout: scala.Int | scala.Double = null,
-    onFailedAttempt: js.Function1[/* error */ FailedAttemptError, scala.Unit] = null,
+    onFailedAttempt: /* error */ FailedAttemptError => scala.Unit = null,
     randomize: js.UndefOr[scala.Boolean] = js.undefined,
     retries: scala.Int | scala.Double = null,
     unref: js.UndefOr[scala.Boolean] = js.undefined
@@ -29,7 +29,7 @@ object Options {
     if (maxRetryTime != null) __obj.updateDynamic("maxRetryTime")(maxRetryTime.asInstanceOf[js.Any])
     if (maxTimeout != null) __obj.updateDynamic("maxTimeout")(maxTimeout.asInstanceOf[js.Any])
     if (minTimeout != null) __obj.updateDynamic("minTimeout")(minTimeout.asInstanceOf[js.Any])
-    if (onFailedAttempt != null) __obj.updateDynamic("onFailedAttempt")(onFailedAttempt)
+    if (onFailedAttempt != null) __obj.updateDynamic("onFailedAttempt")(js.Any.fromFunction1(onFailedAttempt))
     if (!js.isUndefined(randomize)) __obj.updateDynamic("randomize")(randomize)
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
     if (!js.isUndefined(unref)) __obj.updateDynamic("unref")(unref)

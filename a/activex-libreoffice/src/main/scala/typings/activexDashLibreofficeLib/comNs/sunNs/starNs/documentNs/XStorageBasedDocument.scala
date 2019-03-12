@@ -34,25 +34,17 @@ object XStorageBasedDocument {
   @scala.inline
   def apply(
     DocumentStorage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage,
-    acquire: js.Function0[scala.Unit],
-    addStorageChangeListener: js.Function1[XStorageChangeListener, scala.Unit],
-    getDocumentStorage: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage],
-    loadFromStorage: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeStorageChangeListener: js.Function1[XStorageChangeListener, scala.Unit],
-    storeToStorage: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    switchToStorage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, scala.Unit]
+    acquire: () => scala.Unit,
+    addStorageChangeListener: XStorageChangeListener => scala.Unit,
+    getDocumentStorage: () => activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage,
+    loadFromStorage: (activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeStorageChangeListener: XStorageChangeListener => scala.Unit,
+    storeToStorage: (activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    switchToStorage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage => scala.Unit
   ): XStorageBasedDocument = {
-    val __obj = js.Dynamic.literal(DocumentStorage = DocumentStorage, acquire = acquire, addStorageChangeListener = addStorageChangeListener, getDocumentStorage = getDocumentStorage, loadFromStorage = loadFromStorage, queryInterface = queryInterface, release = release, removeStorageChangeListener = removeStorageChangeListener, storeToStorage = storeToStorage, switchToStorage = switchToStorage)
+    val __obj = js.Dynamic.literal(DocumentStorage = DocumentStorage, acquire = js.Any.fromFunction0(acquire), addStorageChangeListener = js.Any.fromFunction1(addStorageChangeListener), getDocumentStorage = js.Any.fromFunction0(getDocumentStorage), loadFromStorage = js.Any.fromFunction2(loadFromStorage), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeStorageChangeListener = js.Any.fromFunction1(removeStorageChangeListener), storeToStorage = js.Any.fromFunction2(storeToStorage), switchToStorage = js.Any.fromFunction1(switchToStorage))
   
     __obj.asInstanceOf[XStorageBasedDocument]
   }

@@ -26,13 +26,13 @@ trait XUIConfigurationStorage
 object XUIConfigurationStorage {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    hasStorage: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setStorage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, scala.Unit]
+    acquire: () => scala.Unit,
+    hasStorage: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setStorage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage => scala.Unit
   ): XUIConfigurationStorage = {
-    val __obj = js.Dynamic.literal(acquire = acquire, hasStorage = hasStorage, queryInterface = queryInterface, release = release, setStorage = setStorage)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), hasStorage = js.Any.fromFunction0(hasStorage), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setStorage = js.Any.fromFunction1(setStorage))
   
     __obj.asInstanceOf[XUIConfigurationStorage]
   }

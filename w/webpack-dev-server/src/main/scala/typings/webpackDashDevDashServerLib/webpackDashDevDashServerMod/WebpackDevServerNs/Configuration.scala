@@ -143,17 +143,9 @@ trait Configuration extends js.Object {
 object Configuration {
   @scala.inline
   def apply(
-    after: js.Function2[
-      /* app */ expressLib.expressMod.eNs.Application, 
-      /* server */ webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServer, 
-      scala.Unit
-    ] = null,
+    after: (/* app */ expressLib.expressMod.eNs.Application, /* server */ webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServer) => scala.Unit = null,
     allowedHosts: js.Array[java.lang.String] = null,
-    before: js.Function2[
-      /* app */ expressLib.expressMod.eNs.Application, 
-      /* server */ webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServer, 
-      scala.Unit
-    ] = null,
+    before: (/* app */ expressLib.expressMod.eNs.Application, /* server */ webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServer) => scala.Unit = null,
     bonjour: js.UndefOr[scala.Boolean] = js.undefined,
     clientLogLevel: webpackDashDevDashServerLib.webpackDashDevDashServerLibStrings.none | webpackDashDevDashServerLib.webpackDashDevDashServerLibStrings.error | webpackDashDevDashServerLib.webpackDashDevDashServerLibStrings.warning | webpackDashDevDashServerLib.webpackDashDevDashServerLibStrings.info = null,
     compress: js.UndefOr[scala.Boolean] = js.undefined,
@@ -180,11 +172,7 @@ object Configuration {
     public: java.lang.String = null,
     publicPath: java.lang.String = null,
     quiet: js.UndefOr[scala.Boolean] = js.undefined,
-    setup: js.Function2[
-      /* app */ expressLib.expressMod.eNs.Application, 
-      /* server */ webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServer, 
-      scala.Unit
-    ] = null,
+    setup: (/* app */ expressLib.expressMod.eNs.Application, /* server */ webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServer) => scala.Unit = null,
     socket: java.lang.String = null,
     staticOptions: serveDashStaticLib.serveDashStaticMod.serveStaticNs.ServeStaticOptions = null,
     stats: webpackLib.webpackMod.webpackNs.OptionsNs.Stats = null,
@@ -194,9 +182,9 @@ object Configuration {
     writeToDisk: scala.Boolean | (js.Function1[/* filePath */ java.lang.String, scala.Boolean]) = null
   ): Configuration = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after)
+    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction2(after))
     if (allowedHosts != null) __obj.updateDynamic("allowedHosts")(allowedHosts)
-    if (before != null) __obj.updateDynamic("before")(before)
+    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction2(before))
     if (!js.isUndefined(bonjour)) __obj.updateDynamic("bonjour")(bonjour)
     if (clientLogLevel != null) __obj.updateDynamic("clientLogLevel")(clientLogLevel.asInstanceOf[js.Any])
     if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
@@ -223,7 +211,7 @@ object Configuration {
     if (public != null) __obj.updateDynamic("public")(public)
     if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath)
     if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
-    if (setup != null) __obj.updateDynamic("setup")(setup)
+    if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction2(setup))
     if (socket != null) __obj.updateDynamic("socket")(socket)
     if (staticOptions != null) __obj.updateDynamic("staticOptions")(staticOptions)
     if (stats != null) __obj.updateDynamic("stats")(stats)

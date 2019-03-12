@@ -103,34 +103,34 @@ object ^ extends js.Object {
   def visitProjectedRenderNodes(
     view: atAngularCoreLib.srcViewTypesMod.ViewData,
     ngContentIndex: scala.Double,
-    action: atAngularCoreLib.srcViewUtilMod.RenderNodeAction,
+    action: RenderNodeAction,
     parentNode: js.Any,
     nextSibling: js.Any
   ): scala.Unit = js.native
   def visitProjectedRenderNodes(
     view: atAngularCoreLib.srcViewTypesMod.ViewData,
     ngContentIndex: scala.Double,
-    action: atAngularCoreLib.srcViewUtilMod.RenderNodeAction,
+    action: RenderNodeAction,
     parentNode: js.Any,
     nextSibling: js.Any,
     target: js.Array[_]
   ): scala.Unit = js.native
   def visitRootRenderNodes(
     view: atAngularCoreLib.srcViewTypesMod.ViewData,
-    action: atAngularCoreLib.srcViewUtilMod.RenderNodeAction,
+    action: RenderNodeAction,
     parentNode: js.Any,
     nextSibling: js.Any
   ): scala.Unit = js.native
   def visitRootRenderNodes(
     view: atAngularCoreLib.srcViewTypesMod.ViewData,
-    action: atAngularCoreLib.srcViewUtilMod.RenderNodeAction,
+    action: RenderNodeAction,
     parentNode: js.Any,
     nextSibling: js.Any,
     target: js.Array[_]
   ): scala.Unit = js.native
   def visitSiblingRenderNodes(
     view: atAngularCoreLib.srcViewTypesMod.ViewData,
-    action: atAngularCoreLib.srcViewUtilMod.RenderNodeAction,
+    action: RenderNodeAction,
     startIndex: scala.Double,
     endIndex: scala.Double,
     parentNode: js.Any,
@@ -138,7 +138,7 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def visitSiblingRenderNodes(
     view: atAngularCoreLib.srcViewTypesMod.ViewData,
-    action: atAngularCoreLib.srcViewUtilMod.RenderNodeAction,
+    action: RenderNodeAction,
     startIndex: scala.Double,
     endIndex: scala.Double,
     parentNode: js.Any,

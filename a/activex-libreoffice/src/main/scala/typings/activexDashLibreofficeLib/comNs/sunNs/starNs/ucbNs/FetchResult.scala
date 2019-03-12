@@ -28,7 +28,7 @@ trait FetchResult extends js.Object {
     *
     * One any contains the data of one whole row. Those methods which use this struct have to specify, what the any has to contain.
     */
-  var Rows: activexDashInteropLib.SafeArray[_]
+  var Rows: stdLib.SafeArray[_]
   /**
     * indicates the index of the first row contained in {@link FetchResult.Rows} in the original result set. So if {@link FetchResult.StartIndex} equals `3`
     * , the first element in the sequence {@link FetchResult.Rows} contains the data of the index `3` in the original result set.
@@ -43,7 +43,7 @@ object FetchResult {
   def apply(
     FetchError: scala.Double,
     Orientation: scala.Boolean,
-    Rows: activexDashInteropLib.SafeArray[_],
+    Rows: stdLib.SafeArray[_],
     StartIndex: scala.Double
   ): FetchResult = {
     val __obj = js.Dynamic.literal(FetchError = FetchError, Orientation = Orientation, Rows = Rows, StartIndex = StartIndex)

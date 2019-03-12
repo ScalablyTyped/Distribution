@@ -45,21 +45,21 @@ object XMultiSelectionSupplier {
   def apply(
     Selection: js.Any,
     SelectionCount: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addSelection: js.Function1[js.Any, scala.Boolean],
-    addSelectionChangeListener: js.Function1[XSelectionChangeListener, scala.Unit],
-    clearSelection: js.Function0[scala.Unit],
-    createReverseSelectionEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
-    createSelectionEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
-    getSelection: js.Function0[js.Any],
-    getSelectionCount: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeSelection: js.Function1[js.Any, scala.Unit],
-    removeSelectionChangeListener: js.Function1[XSelectionChangeListener, scala.Unit],
-    select: js.Function1[js.Any, scala.Boolean]
+    acquire: () => scala.Unit,
+    addSelection: js.Any => scala.Boolean,
+    addSelectionChangeListener: XSelectionChangeListener => scala.Unit,
+    clearSelection: () => scala.Unit,
+    createReverseSelectionEnumeration: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration,
+    createSelectionEnumeration: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration,
+    getSelection: () => js.Any,
+    getSelectionCount: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeSelection: js.Any => scala.Unit,
+    removeSelectionChangeListener: XSelectionChangeListener => scala.Unit,
+    select: js.Any => scala.Boolean
   ): XMultiSelectionSupplier = {
-    val __obj = js.Dynamic.literal(Selection = Selection, SelectionCount = SelectionCount, acquire = acquire, addSelection = addSelection, addSelectionChangeListener = addSelectionChangeListener, clearSelection = clearSelection, createReverseSelectionEnumeration = createReverseSelectionEnumeration, createSelectionEnumeration = createSelectionEnumeration, getSelection = getSelection, getSelectionCount = getSelectionCount, queryInterface = queryInterface, release = release, removeSelection = removeSelection, removeSelectionChangeListener = removeSelectionChangeListener, select = select)
+    val __obj = js.Dynamic.literal(Selection = Selection, SelectionCount = SelectionCount, acquire = js.Any.fromFunction0(acquire), addSelection = js.Any.fromFunction1(addSelection), addSelectionChangeListener = js.Any.fromFunction1(addSelectionChangeListener), clearSelection = js.Any.fromFunction0(clearSelection), createReverseSelectionEnumeration = js.Any.fromFunction0(createReverseSelectionEnumeration), createSelectionEnumeration = js.Any.fromFunction0(createSelectionEnumeration), getSelection = js.Any.fromFunction0(getSelection), getSelectionCount = js.Any.fromFunction0(getSelectionCount), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeSelection = js.Any.fromFunction1(removeSelection), removeSelectionChangeListener = js.Any.fromFunction1(removeSelectionChangeListener), select = js.Any.fromFunction1(select))
   
     __obj.asInstanceOf[XMultiSelectionSupplier]
   }

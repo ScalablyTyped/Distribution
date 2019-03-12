@@ -76,7 +76,7 @@ object MarketplaceEntitlementServiceNs extends js.Object {
     /**
       * Product code is used to uniquely identify a product in AWS Marketplace. The product code will be provided by AWS Marketplace when the product listing is created.
       */
-    var ProductCode: ProductCode
+    var ProductCode: awsDashSdkLib.clientsMarketplaceentitlementserviceMod.MarketplaceEntitlementServiceNs.ProductCode
   }
   
   trait GetEntitlementsResult extends js.Object {

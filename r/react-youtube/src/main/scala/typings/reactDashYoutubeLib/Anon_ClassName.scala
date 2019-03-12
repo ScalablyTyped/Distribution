@@ -27,14 +27,14 @@ object Anon_ClassName {
     className: java.lang.String = null,
     containerClassName: java.lang.String = null,
     id: java.lang.String = null,
-    onEnd: js.Function1[/* event */ Anon_Data, scala.Unit] = null,
-    onError: js.Function1[/* event */ Anon_Data, scala.Unit] = null,
-    onPause: js.Function1[/* event */ Anon_Data, scala.Unit] = null,
-    onPlay: js.Function1[/* event */ Anon_Data, scala.Unit] = null,
-    onPlaybackQualityChange: js.Function1[/* event */ Anon_DataTarget, scala.Unit] = null,
-    onPlaybackRateChange: js.Function1[/* event */ Anon_Data, scala.Unit] = null,
-    onReady: js.Function1[/* event */ Anon_Target, scala.Unit] = null,
-    onStateChange: js.Function1[/* event */ Anon_Data, scala.Unit] = null,
+    onEnd: /* event */ Anon_Data => scala.Unit = null,
+    onError: /* event */ Anon_Data => scala.Unit = null,
+    onPause: /* event */ Anon_Data => scala.Unit = null,
+    onPlay: /* event */ Anon_Data => scala.Unit = null,
+    onPlaybackQualityChange: /* event */ Anon_DataTarget => scala.Unit = null,
+    onPlaybackRateChange: /* event */ Anon_Data => scala.Unit = null,
+    onReady: /* event */ Anon_Target => scala.Unit = null,
+    onStateChange: /* event */ Anon_Data => scala.Unit = null,
     opts: reactDashYoutubeLib.reactDashYoutubeMod.Options = null,
     videoId: java.lang.String = null
   ): Anon_ClassName = {
@@ -42,14 +42,14 @@ object Anon_ClassName {
     if (className != null) __obj.updateDynamic("className")(className)
     if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName)
     if (id != null) __obj.updateDynamic("id")(id)
-    if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onPause != null) __obj.updateDynamic("onPause")(onPause)
-    if (onPlay != null) __obj.updateDynamic("onPlay")(onPlay)
-    if (onPlaybackQualityChange != null) __obj.updateDynamic("onPlaybackQualityChange")(onPlaybackQualityChange)
-    if (onPlaybackRateChange != null) __obj.updateDynamic("onPlaybackRateChange")(onPlaybackRateChange)
-    if (onReady != null) __obj.updateDynamic("onReady")(onReady)
-    if (onStateChange != null) __obj.updateDynamic("onStateChange")(onStateChange)
+    if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction1(onEnd))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction1(onPause))
+    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction1(onPlay))
+    if (onPlaybackQualityChange != null) __obj.updateDynamic("onPlaybackQualityChange")(js.Any.fromFunction1(onPlaybackQualityChange))
+    if (onPlaybackRateChange != null) __obj.updateDynamic("onPlaybackRateChange")(js.Any.fromFunction1(onPlaybackRateChange))
+    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction1(onReady))
+    if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1(onStateChange))
     if (opts != null) __obj.updateDynamic("opts")(opts)
     if (videoId != null) __obj.updateDynamic("videoId")(videoId)
     __obj.asInstanceOf[Anon_ClassName]

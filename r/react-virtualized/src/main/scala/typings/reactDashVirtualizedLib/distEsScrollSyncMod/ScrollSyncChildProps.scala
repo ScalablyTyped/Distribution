@@ -20,13 +20,13 @@ object ScrollSyncChildProps {
   def apply(
     clientHeight: scala.Double,
     clientWidth: scala.Double,
-    onScroll: js.Function1[OnScrollParams, scala.Unit],
+    onScroll: OnScrollParams => scala.Unit,
     scrollHeight: scala.Double,
     scrollLeft: scala.Double,
     scrollTop: scala.Double,
     scrollWidth: scala.Double
   ): ScrollSyncChildProps = {
-    val __obj = js.Dynamic.literal(clientHeight = clientHeight, clientWidth = clientWidth, onScroll = onScroll, scrollHeight = scrollHeight, scrollLeft = scrollLeft, scrollTop = scrollTop, scrollWidth = scrollWidth)
+    val __obj = js.Dynamic.literal(clientHeight = clientHeight, clientWidth = clientWidth, onScroll = js.Any.fromFunction1(onScroll), scrollHeight = scrollHeight, scrollLeft = scrollLeft, scrollTop = scrollTop, scrollWidth = scrollWidth)
   
     __obj.asInstanceOf[ScrollSyncChildProps]
   }

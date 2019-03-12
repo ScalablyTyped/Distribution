@@ -27,19 +27,19 @@ object IJsonWriter {
     alias: extjsLib.ExtNs.Array = null,
     allowSingle: js.UndefOr[scala.Boolean] = js.undefined,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     dateFormat: java.lang.String = null,
     encode: js.UndefOr[scala.Boolean] = js.undefined,
     expandData: js.UndefOr[scala.Boolean] = js.undefined,
     extend: java.lang.String = null,
-    getExpandedData: js.Function1[/* data */ js.UndefOr[js.Any], scala.Unit] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getRecordData: js.Function2[/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation], _] = null,
+    getExpandedData: /* data */ js.UndefOr[js.Any] => scala.Unit = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getRecordData: (/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation]) => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IJsonWriter] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IJsonWriter = null,
     mixins: js.Any = null,
     nameProperty: java.lang.String = null,
     requires: extjsLib.ExtNs.Array = null,
@@ -48,7 +48,7 @@ object IJsonWriter {
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     uses: extjsLib.ExtNs.Array = null,
-    write: js.Function1[/* request */ js.UndefOr[IRequest], IRequest] = null,
+    write: /* request */ js.UndefOr[IRequest] => IRequest = null,
     writeAllFields: js.UndefOr[scala.Boolean] = js.undefined,
     writeRecordId: js.UndefOr[scala.Boolean] = js.undefined
   ): IJsonWriter = {
@@ -56,19 +56,19 @@ object IJsonWriter {
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (!js.isUndefined(allowSingle)) __obj.updateDynamic("allowSingle")(allowSingle)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
     if (!js.isUndefined(encode)) __obj.updateDynamic("encode")(encode)
     if (!js.isUndefined(expandData)) __obj.updateDynamic("expandData")(expandData)
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getExpandedData != null) __obj.updateDynamic("getExpandedData")(getExpandedData)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getRecordData != null) __obj.updateDynamic("getRecordData")(getRecordData)
+    if (getExpandedData != null) __obj.updateDynamic("getExpandedData")(js.Any.fromFunction1(getExpandedData))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getRecordData != null) __obj.updateDynamic("getRecordData")(js.Any.fromFunction2(getRecordData))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (nameProperty != null) __obj.updateDynamic("nameProperty")(nameProperty)
     if (requires != null) __obj.updateDynamic("requires")(requires)
@@ -77,7 +77,7 @@ object IJsonWriter {
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (uses != null) __obj.updateDynamic("uses")(uses)
-    if (write != null) __obj.updateDynamic("write")(write)
+    if (write != null) __obj.updateDynamic("write")(js.Any.fromFunction1(write))
     if (!js.isUndefined(writeAllFields)) __obj.updateDynamic("writeAllFields")(writeAllFields)
     if (!js.isUndefined(writeRecordId)) __obj.updateDynamic("writeRecordId")(writeRecordId)
     __obj.asInstanceOf[IJsonWriter]

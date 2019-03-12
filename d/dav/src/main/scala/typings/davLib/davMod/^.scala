@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var version: java.lang.String = js.native
-  def createAccount(options: davLib.davMod.CreateAccountOptions): js.Promise[davLib.davMod.Account] = js.native
-  def createCalendarObject(calendar: davLib.davMod.Calendar, options: davLib.davMod.CreateCalendarObjectOptions): js.Promise[davLib.davMod.CalendarObject] = js.native
-  def createCard(addressBook: davLib.davMod.AddressBook, options: davLib.davMod.CreateCardOptions): js.Promise[davLib.davMod.AddressBook] = js.native
-  def createSandbox(): davLib.davMod.Sandbox = js.native
-  def deleteCalendarObject(calendarObject: davLib.davMod.CalendarObject, options: davLib.davMod.DeleteCalendarObjectOptions): js.Promise[davLib.davMod.CalendarObject] = js.native
-  def deleteCard(card: davLib.davMod.VCard, options: davLib.davMod.DeleteCardOptions): js.Promise[davLib.davMod.VCard] = js.native
-  def syncAddressBook(addressBook: davLib.davMod.AddressBook, options: davLib.davMod.SyncAddressBookOptions): js.Promise[davLib.davMod.AddressBook] = js.native
-  def syncCaldavAccount(account: davLib.davMod.Account, options: davLib.davMod.SyncCaldavAccountOptions): js.Promise[davLib.davMod.Account] = js.native
-  def syncCalendar(calendar: davLib.davMod.Calendar, options: davLib.davMod.SyncCalendarOptions): js.Promise[davLib.davMod.Calendar] = js.native
-  def syncCarddavAccount(account: davLib.davMod.Account, options: davLib.davMod.SyncCarddavAccountOptions): js.Promise[davLib.davMod.Account] = js.native
-  def updateCalendarObject(calendarObject: davLib.davMod.CalendarObject, options: davLib.davMod.UpdateCalendarObjectOptions): js.Promise[davLib.davMod.CalendarObject] = js.native
-  def updateCard(card: davLib.davMod.VCard, options: davLib.davMod.UpdateCardOptions): js.Promise[davLib.davMod.VCard] = js.native
+  def createAccount(options: CreateAccountOptions): js.Promise[Account] = js.native
+  def createCalendarObject(calendar: Calendar, options: CreateCalendarObjectOptions): js.Promise[CalendarObject] = js.native
+  def createCard(addressBook: AddressBook, options: CreateCardOptions): js.Promise[AddressBook] = js.native
+  def createSandbox(): Sandbox = js.native
+  def deleteCalendarObject(calendarObject: CalendarObject, options: DeleteCalendarObjectOptions): js.Promise[CalendarObject] = js.native
+  def deleteCard(card: VCard, options: DeleteCardOptions): js.Promise[VCard] = js.native
+  def syncAddressBook(addressBook: AddressBook, options: SyncAddressBookOptions): js.Promise[AddressBook] = js.native
+  def syncCaldavAccount(account: Account, options: SyncCaldavAccountOptions): js.Promise[Account] = js.native
+  def syncCalendar(calendar: Calendar, options: SyncCalendarOptions): js.Promise[Calendar] = js.native
+  def syncCarddavAccount(account: Account, options: SyncCarddavAccountOptions): js.Promise[Account] = js.native
+  def updateCalendarObject(calendarObject: CalendarObject, options: UpdateCalendarObjectOptions): js.Promise[CalendarObject] = js.native
+  def updateCard(card: VCard, options: UpdateCardOptions): js.Promise[VCard] = js.native
 }
 

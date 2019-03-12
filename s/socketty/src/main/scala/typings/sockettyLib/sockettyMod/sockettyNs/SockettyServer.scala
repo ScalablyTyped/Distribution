@@ -15,8 +15,8 @@ trait SockettyServer extends js.Object {
 
 object SockettyServer {
   @scala.inline
-  def apply(connection: js.Function1[js.Function1[/* socket */ SockettySocket, scala.Unit], scala.Unit]): SockettyServer = {
-    val __obj = js.Dynamic.literal(connection = connection)
+  def apply(connection: js.Function1[/* socket */ SockettySocket, scala.Unit] => scala.Unit): SockettyServer = {
+    val __obj = js.Dynamic.literal(connection = js.Any.fromFunction1(connection))
   
     __obj.asInstanceOf[SockettyServer]
   }

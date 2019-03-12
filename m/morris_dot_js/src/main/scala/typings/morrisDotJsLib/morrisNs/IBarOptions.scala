@@ -40,13 +40,7 @@ object IBarOptions {
     gridTextSize: scala.Int | scala.Double = null,
     gridTextWeight: java.lang.String = null,
     hideHover: scala.Boolean | AutoAlways = null,
-    hoverCallback: js.Function4[
-      /* index */ scala.Double, 
-      /* options */ IBarOptions, 
-      /* content */ java.lang.String, 
-      /* row */ js.Any, 
-      java.lang.String
-    ] = null,
+    hoverCallback: (/* index */ scala.Double, /* options */ IBarOptions, /* content */ java.lang.String, /* row */ js.Any) => java.lang.String = null,
     resize: js.UndefOr[scala.Boolean] = js.undefined,
     stacked: js.UndefOr[scala.Boolean] = js.undefined
   ): IBarOptions = {
@@ -61,7 +55,7 @@ object IBarOptions {
     if (gridTextSize != null) __obj.updateDynamic("gridTextSize")(gridTextSize.asInstanceOf[js.Any])
     if (gridTextWeight != null) __obj.updateDynamic("gridTextWeight")(gridTextWeight)
     if (hideHover != null) __obj.updateDynamic("hideHover")(hideHover.asInstanceOf[js.Any])
-    if (hoverCallback != null) __obj.updateDynamic("hoverCallback")(hoverCallback)
+    if (hoverCallback != null) __obj.updateDynamic("hoverCallback")(js.Any.fromFunction4(hoverCallback))
     if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
     if (!js.isUndefined(stacked)) __obj.updateDynamic("stacked")(stacked)
     __obj.asInstanceOf[IBarOptions]

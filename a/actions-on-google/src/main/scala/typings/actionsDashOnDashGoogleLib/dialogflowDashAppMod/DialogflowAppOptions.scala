@@ -23,10 +23,10 @@ object DialogflowAppOptions {
   def apply(
     request: expressLib.expressMod.eNs.Request,
     response: expressLib.expressMod.eNs.Response,
-    sessionStarted: js.Function0[_] = null
+    sessionStarted: () => _ = null
   ): DialogflowAppOptions = {
     val __obj = js.Dynamic.literal(request = request, response = response)
-    if (sessionStarted != null) __obj.updateDynamic("sessionStarted")(sessionStarted)
+    if (sessionStarted != null) __obj.updateDynamic("sessionStarted")(js.Any.fromFunction0(sessionStarted))
     __obj.asInstanceOf[DialogflowAppOptions]
   }
 }

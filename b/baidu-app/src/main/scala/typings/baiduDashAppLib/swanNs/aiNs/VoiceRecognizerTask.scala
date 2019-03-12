@@ -24,18 +24,15 @@ trait VoiceRecognizerTask extends js.Object {
 object VoiceRecognizerTask {
   @scala.inline
   def apply(
-    cancel: js.Function0[scala.Unit],
-    onError: js.Function1[js.Function1[/* res */ VoiceErrorResponse, scala.Unit], scala.Unit],
-    onFinish: js.Function1[
-      js.Function1[/* res */ baiduDashAppLib.swanNs.DataResponse, scala.Unit], 
-      scala.Unit
-    ],
-    onRecognize: js.Function1[js.Function1[/* res */ VoiceRecognizeResponse, scala.Unit], scala.Unit],
-    onStart: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    start: js.Function1[VoiceRecognizerStart, scala.Unit],
-    stop: js.Function0[scala.Unit]
+    cancel: () => scala.Unit,
+    onError: js.Function1[/* res */ VoiceErrorResponse, scala.Unit] => scala.Unit,
+    onFinish: js.Function1[/* res */ baiduDashAppLib.swanNs.DataResponse, scala.Unit] => scala.Unit,
+    onRecognize: js.Function1[/* res */ VoiceRecognizeResponse, scala.Unit] => scala.Unit,
+    onStart: js.Function0[scala.Unit] => scala.Unit,
+    start: VoiceRecognizerStart => scala.Unit,
+    stop: () => scala.Unit
   ): VoiceRecognizerTask = {
-    val __obj = js.Dynamic.literal(cancel = cancel, onError = onError, onFinish = onFinish, onRecognize = onRecognize, onStart = onStart, start = start, stop = stop)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), onError = js.Any.fromFunction1(onError), onFinish = js.Any.fromFunction1(onFinish), onRecognize = js.Any.fromFunction1(onRecognize), onStart = js.Any.fromFunction1(onStart), start = js.Any.fromFunction1(start), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[VoiceRecognizerTask]
   }

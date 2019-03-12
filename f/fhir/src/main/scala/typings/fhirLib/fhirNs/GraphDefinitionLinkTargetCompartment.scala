@@ -28,7 +28,7 @@ trait GraphDefinitionLinkTargetCompartment extends BackboneElement {
   /**
     * Identifies the compartment
     */
-  var code: code
+  var code: fhirLib.fhirNs.code
   /**
     * Documentation for FHIRPath expression
     */

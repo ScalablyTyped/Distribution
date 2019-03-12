@@ -22,17 +22,17 @@ trait Anon_CompleteFailMask extends js.Object {
 object Anon_CompleteFailMask {
   @scala.inline
   def apply(
-    complete: js.Function0[scala.Unit] = null,
-    fail: js.Function0[scala.Unit] = null,
+    complete: () => scala.Unit = null,
+    fail: () => scala.Unit = null,
     mask: js.UndefOr[scala.Boolean] = js.undefined,
-    success: js.Function0[scala.Unit] = null,
+    success: () => scala.Unit = null,
     title: java.lang.String = null
   ): Anon_CompleteFailMask = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[Anon_CompleteFailMask]
   }

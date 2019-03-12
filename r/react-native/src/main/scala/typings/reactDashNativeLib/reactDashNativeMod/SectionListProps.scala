@@ -111,13 +111,9 @@ object SectionListProps {
     disableVirtualization: js.UndefOr[scala.Boolean] = js.undefined,
     endFillColor: java.lang.String = null,
     extraData: js.Any = null,
-    getItem: js.Function2[/* data */ js.Any, /* index */ scala.Double, ItemT] = null,
-    getItemCount: js.Function1[/* data */ js.Any, scala.Double] = null,
-    getItemLayout: js.Function2[
-      /* data */ js.Array[SectionListData[ItemT]] | scala.Null, 
-      /* index */ scala.Double, 
-      reactDashNativeLib.Anon_Index
-    ] = null,
+    getItem: (/* data */ js.Any, /* index */ scala.Double) => ItemT = null,
+    getItemCount: /* data */ js.Any => scala.Double = null,
+    getItemLayout: (/* data */ js.Array[SectionListData[ItemT]] | scala.Null, /* index */ scala.Double) => reactDashNativeLib.Anon_Index = null,
     hitSlop: Insets = null,
     horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
@@ -126,7 +122,7 @@ object SectionListProps {
     initialScrollIndex: scala.Int | scala.Double = null,
     invertStickyHeaders: js.UndefOr[scala.Boolean] = js.undefined,
     inverted: js.UndefOr[scala.Boolean] = js.undefined,
-    keyExtractor: js.Function2[/* item */ ItemT, /* index */ scala.Double, java.lang.String] = null,
+    keyExtractor: (/* item */ ItemT, /* index */ scala.Double) => java.lang.String = null,
     keyboardDismissMode: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.interactive | reactDashNativeLib.reactDashNativeLibStrings.`on-drag` = null,
     keyboardShouldPersistTaps: scala.Boolean | reactDashNativeLib.reactDashNativeLibStrings.always | reactDashNativeLib.reactDashNativeLibStrings.never | reactDashNativeLib.reactDashNativeLibStrings.handled = null,
     legacyImplementation: js.UndefOr[scala.Boolean] = js.undefined,
@@ -137,39 +133,39 @@ object SectionListProps {
     nativeID: java.lang.String = null,
     needsOffscreenAlphaCompositing: js.UndefOr[scala.Boolean] = js.undefined,
     nestedScrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    onAccessibilityAction: js.Function0[scala.Unit] = null,
-    onAccessibilityTap: js.Function0[scala.Unit] = null,
-    onContentSizeChange: js.Function2[/* w */ scala.Double, /* h */ scala.Double, scala.Unit] = null,
-    onEndReached: js.Function1[/* info */ reactDashNativeLib.Anon_DistanceFromEnd, scala.Unit] = null,
+    onAccessibilityAction: () => scala.Unit = null,
+    onAccessibilityTap: () => scala.Unit = null,
+    onContentSizeChange: (/* w */ scala.Double, /* h */ scala.Double) => scala.Unit = null,
+    onEndReached: /* info */ reactDashNativeLib.Anon_DistanceFromEnd => scala.Unit = null,
     onEndReachedThreshold: scala.Int | scala.Double = null,
-    onLayout: js.Function1[/* event */ LayoutChangeEvent, scala.Unit] = null,
-    onMagicTap: js.Function0[scala.Unit] = null,
-    onMomentumScrollBegin: js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], scala.Unit] = null,
-    onMomentumScrollEnd: js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], scala.Unit] = null,
-    onMoveShouldSetResponder: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
-    onMoveShouldSetResponderCapture: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
-    onRefresh: js.Function0[scala.Unit] = null,
-    onResponderEnd: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderGrant: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderMove: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderReject: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderRelease: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderStart: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderTerminate: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderTerminationRequest: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
-    onScroll: js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], scala.Unit] = null,
-    onScrollAnimationEnd: js.Function0[scala.Unit] = null,
-    onScrollBeginDrag: js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], scala.Unit] = null,
-    onScrollEndDrag: js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], scala.Unit] = null,
-    onScrollToIndexFailed: js.Function1[/* info */ reactDashNativeLib.Anon_AverageItemLength, scala.Unit] = null,
-    onStartShouldSetResponder: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
-    onStartShouldSetResponderCapture: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
-    onTouchCancel: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onTouchEnd: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onTouchEndCapture: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onTouchMove: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onTouchStart: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onViewableItemsChanged: js.Function1[/* info */ reactDashNativeLib.Anon_Changed, scala.Unit] = null,
+    onLayout: /* event */ LayoutChangeEvent => scala.Unit = null,
+    onMagicTap: () => scala.Unit = null,
+    onMomentumScrollBegin: /* event */ NativeSyntheticEvent[NativeScrollEvent] => scala.Unit = null,
+    onMomentumScrollEnd: /* event */ NativeSyntheticEvent[NativeScrollEvent] => scala.Unit = null,
+    onMoveShouldSetResponder: /* event */ GestureResponderEvent => scala.Boolean = null,
+    onMoveShouldSetResponderCapture: /* event */ GestureResponderEvent => scala.Boolean = null,
+    onRefresh: () => scala.Unit = null,
+    onResponderEnd: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderGrant: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderMove: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderReject: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderRelease: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderStart: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderTerminate: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderTerminationRequest: /* event */ GestureResponderEvent => scala.Boolean = null,
+    onScroll: /* event */ NativeSyntheticEvent[NativeScrollEvent] => scala.Unit = null,
+    onScrollAnimationEnd: () => scala.Unit = null,
+    onScrollBeginDrag: /* event */ NativeSyntheticEvent[NativeScrollEvent] => scala.Unit = null,
+    onScrollEndDrag: /* event */ NativeSyntheticEvent[NativeScrollEvent] => scala.Unit = null,
+    onScrollToIndexFailed: /* info */ reactDashNativeLib.Anon_AverageItemLength => scala.Unit = null,
+    onStartShouldSetResponder: /* event */ GestureResponderEvent => scala.Boolean = null,
+    onStartShouldSetResponderCapture: /* event */ GestureResponderEvent => scala.Boolean = null,
+    onTouchCancel: /* event */ GestureResponderEvent => scala.Unit = null,
+    onTouchEnd: /* event */ GestureResponderEvent => scala.Unit = null,
+    onTouchEndCapture: /* event */ GestureResponderEvent => scala.Unit = null,
+    onTouchMove: /* event */ GestureResponderEvent => scala.Unit = null,
+    onTouchStart: /* event */ GestureResponderEvent => scala.Unit = null,
+    onViewableItemsChanged: /* info */ reactDashNativeLib.Anon_Changed => scala.Unit = null,
     overScrollMode: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.always | reactDashNativeLib.reactDashNativeLibStrings.never = null,
     pagingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     pinchGestureEnabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -179,18 +175,9 @@ object SectionListProps {
     refreshing: js.UndefOr[scala.Boolean] = js.undefined,
     removeClippedSubviews: js.UndefOr[scala.Boolean] = js.undefined,
     renderItem: SectionListRenderItem[ItemT] = null,
-    renderScrollComponent: js.Function1[
-      /* props */ ScrollViewProps, 
-      reactLib.reactMod.ReactNs.ReactElement[ScrollViewProps]
-    ] = null,
-    renderSectionFooter: js.Function1[
-      /* info */ reactDashNativeLib.Anon_Section[ItemT], 
-      reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
-    ] = null,
-    renderSectionHeader: js.Function1[
-      /* info */ reactDashNativeLib.Anon_Section[ItemT], 
-      reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
-    ] = null,
+    renderScrollComponent: /* props */ ScrollViewProps => reactLib.reactMod.ReactNs.ReactElement[ScrollViewProps] = null,
+    renderSectionFooter: /* info */ reactDashNativeLib.Anon_Section[ItemT] => reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = null,
+    renderSectionHeader: /* info */ reactDashNativeLib.Anon_Section[ItemT] => reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = null,
     renderToHardwareTextureAndroid: js.UndefOr[scala.Boolean] = js.undefined,
     scrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     scrollEventThrottle: scala.Int | scala.Double = null,
@@ -252,9 +239,9 @@ object SectionListProps {
     if (!js.isUndefined(disableVirtualization)) __obj.updateDynamic("disableVirtualization")(disableVirtualization)
     if (endFillColor != null) __obj.updateDynamic("endFillColor")(endFillColor)
     if (extraData != null) __obj.updateDynamic("extraData")(extraData)
-    if (getItem != null) __obj.updateDynamic("getItem")(getItem)
-    if (getItemCount != null) __obj.updateDynamic("getItemCount")(getItemCount)
-    if (getItemLayout != null) __obj.updateDynamic("getItemLayout")(getItemLayout)
+    if (getItem != null) __obj.updateDynamic("getItem")(js.Any.fromFunction2(getItem))
+    if (getItemCount != null) __obj.updateDynamic("getItemCount")(js.Any.fromFunction1(getItemCount))
+    if (getItemLayout != null) __obj.updateDynamic("getItemLayout")(js.Any.fromFunction2(getItemLayout))
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
@@ -263,7 +250,7 @@ object SectionListProps {
     if (initialScrollIndex != null) __obj.updateDynamic("initialScrollIndex")(initialScrollIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(invertStickyHeaders)) __obj.updateDynamic("invertStickyHeaders")(invertStickyHeaders)
     if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted)
-    if (keyExtractor != null) __obj.updateDynamic("keyExtractor")(keyExtractor)
+    if (keyExtractor != null) __obj.updateDynamic("keyExtractor")(js.Any.fromFunction2(keyExtractor))
     if (keyboardDismissMode != null) __obj.updateDynamic("keyboardDismissMode")(keyboardDismissMode.asInstanceOf[js.Any])
     if (keyboardShouldPersistTaps != null) __obj.updateDynamic("keyboardShouldPersistTaps")(keyboardShouldPersistTaps.asInstanceOf[js.Any])
     if (!js.isUndefined(legacyImplementation)) __obj.updateDynamic("legacyImplementation")(legacyImplementation)
@@ -274,39 +261,39 @@ object SectionListProps {
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
     if (!js.isUndefined(nestedScrollEnabled)) __obj.updateDynamic("nestedScrollEnabled")(nestedScrollEnabled)
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(onAccessibilityAction)
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(onAccessibilityTap)
-    if (onContentSizeChange != null) __obj.updateDynamic("onContentSizeChange")(onContentSizeChange)
-    if (onEndReached != null) __obj.updateDynamic("onEndReached")(onEndReached)
+    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction0(onAccessibilityAction))
+    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
+    if (onContentSizeChange != null) __obj.updateDynamic("onContentSizeChange")(js.Any.fromFunction2(onContentSizeChange))
+    if (onEndReached != null) __obj.updateDynamic("onEndReached")(js.Any.fromFunction1(onEndReached))
     if (onEndReachedThreshold != null) __obj.updateDynamic("onEndReachedThreshold")(onEndReachedThreshold.asInstanceOf[js.Any])
-    if (onLayout != null) __obj.updateDynamic("onLayout")(onLayout)
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(onMagicTap)
-    if (onMomentumScrollBegin != null) __obj.updateDynamic("onMomentumScrollBegin")(onMomentumScrollBegin)
-    if (onMomentumScrollEnd != null) __obj.updateDynamic("onMomentumScrollEnd")(onMomentumScrollEnd)
-    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(onMoveShouldSetResponder)
-    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(onMoveShouldSetResponderCapture)
-    if (onRefresh != null) __obj.updateDynamic("onRefresh")(onRefresh)
-    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(onResponderEnd)
-    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(onResponderGrant)
-    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(onResponderMove)
-    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(onResponderReject)
-    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(onResponderRelease)
-    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(onResponderStart)
-    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(onResponderTerminate)
-    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(onResponderTerminationRequest)
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
-    if (onScrollAnimationEnd != null) __obj.updateDynamic("onScrollAnimationEnd")(onScrollAnimationEnd)
-    if (onScrollBeginDrag != null) __obj.updateDynamic("onScrollBeginDrag")(onScrollBeginDrag)
-    if (onScrollEndDrag != null) __obj.updateDynamic("onScrollEndDrag")(onScrollEndDrag)
-    if (onScrollToIndexFailed != null) __obj.updateDynamic("onScrollToIndexFailed")(onScrollToIndexFailed)
-    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(onStartShouldSetResponder)
-    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(onStartShouldSetResponderCapture)
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel)
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
-    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(onTouchEndCapture)
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
-    if (onViewableItemsChanged != null) __obj.updateDynamic("onViewableItemsChanged")(onViewableItemsChanged)
+    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
+    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
+    if (onMomentumScrollBegin != null) __obj.updateDynamic("onMomentumScrollBegin")(js.Any.fromFunction1(onMomentumScrollBegin))
+    if (onMomentumScrollEnd != null) __obj.updateDynamic("onMomentumScrollEnd")(js.Any.fromFunction1(onMomentumScrollEnd))
+    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))
+    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(js.Any.fromFunction1(onMoveShouldSetResponderCapture))
+    if (onRefresh != null) __obj.updateDynamic("onRefresh")(js.Any.fromFunction0(onRefresh))
+    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(js.Any.fromFunction1(onResponderEnd))
+    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(js.Any.fromFunction1(onResponderGrant))
+    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(js.Any.fromFunction1(onResponderMove))
+    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(js.Any.fromFunction1(onResponderReject))
+    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(js.Any.fromFunction1(onResponderRelease))
+    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(js.Any.fromFunction1(onResponderStart))
+    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(js.Any.fromFunction1(onResponderTerminate))
+    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(js.Any.fromFunction1(onResponderTerminationRequest))
+    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
+    if (onScrollAnimationEnd != null) __obj.updateDynamic("onScrollAnimationEnd")(js.Any.fromFunction0(onScrollAnimationEnd))
+    if (onScrollBeginDrag != null) __obj.updateDynamic("onScrollBeginDrag")(js.Any.fromFunction1(onScrollBeginDrag))
+    if (onScrollEndDrag != null) __obj.updateDynamic("onScrollEndDrag")(js.Any.fromFunction1(onScrollEndDrag))
+    if (onScrollToIndexFailed != null) __obj.updateDynamic("onScrollToIndexFailed")(js.Any.fromFunction1(onScrollToIndexFailed))
+    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1(onStartShouldSetResponder))
+    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1(onStartShouldSetResponderCapture))
+    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
+    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(js.Any.fromFunction1(onTouchEndCapture))
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
+    if (onViewableItemsChanged != null) __obj.updateDynamic("onViewableItemsChanged")(js.Any.fromFunction1(onViewableItemsChanged))
     if (overScrollMode != null) __obj.updateDynamic("overScrollMode")(overScrollMode.asInstanceOf[js.Any])
     if (!js.isUndefined(pagingEnabled)) __obj.updateDynamic("pagingEnabled")(pagingEnabled)
     if (!js.isUndefined(pinchGestureEnabled)) __obj.updateDynamic("pinchGestureEnabled")(pinchGestureEnabled)
@@ -316,9 +303,9 @@ object SectionListProps {
     if (!js.isUndefined(refreshing)) __obj.updateDynamic("refreshing")(refreshing)
     if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews)
     if (renderItem != null) __obj.updateDynamic("renderItem")(renderItem)
-    if (renderScrollComponent != null) __obj.updateDynamic("renderScrollComponent")(renderScrollComponent)
-    if (renderSectionFooter != null) __obj.updateDynamic("renderSectionFooter")(renderSectionFooter)
-    if (renderSectionHeader != null) __obj.updateDynamic("renderSectionHeader")(renderSectionHeader)
+    if (renderScrollComponent != null) __obj.updateDynamic("renderScrollComponent")(js.Any.fromFunction1(renderScrollComponent))
+    if (renderSectionFooter != null) __obj.updateDynamic("renderSectionFooter")(js.Any.fromFunction1(renderSectionFooter))
+    if (renderSectionHeader != null) __obj.updateDynamic("renderSectionHeader")(js.Any.fromFunction1(renderSectionHeader))
     if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid)
     if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled)
     if (scrollEventThrottle != null) __obj.updateDynamic("scrollEventThrottle")(scrollEventThrottle.asInstanceOf[js.Any])

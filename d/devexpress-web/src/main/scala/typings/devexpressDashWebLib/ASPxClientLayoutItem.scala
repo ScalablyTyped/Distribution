@@ -52,16 +52,16 @@ trait ASPxClientLayoutItem extends js.Object {
 object ASPxClientLayoutItem {
   @scala.inline
   def apply(
-    GetCaption: js.Function0[java.lang.String],
-    GetItemByName: js.Function1[java.lang.String, ASPxClientLayoutItem],
-    GetVisible: js.Function0[scala.Boolean],
-    SetCaption: js.Function1[java.lang.String, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    GetCaption: () => java.lang.String,
+    GetItemByName: java.lang.String => ASPxClientLayoutItem,
+    GetVisible: () => scala.Boolean,
+    SetCaption: java.lang.String => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
     formLayout: ASPxClientFormLayout,
     name: java.lang.String,
     parent: ASPxClientLayoutItem
   ): ASPxClientLayoutItem = {
-    val __obj = js.Dynamic.literal(GetCaption = GetCaption, GetItemByName = GetItemByName, GetVisible = GetVisible, SetCaption = SetCaption, SetVisible = SetVisible, formLayout = formLayout, name = name, parent = parent)
+    val __obj = js.Dynamic.literal(GetCaption = js.Any.fromFunction0(GetCaption), GetItemByName = js.Any.fromFunction1(GetItemByName), GetVisible = js.Any.fromFunction0(GetVisible), SetCaption = js.Any.fromFunction1(SetCaption), SetVisible = js.Any.fromFunction1(SetVisible), formLayout = formLayout, name = name, parent = parent)
   
     __obj.asInstanceOf[ASPxClientLayoutItem]
   }

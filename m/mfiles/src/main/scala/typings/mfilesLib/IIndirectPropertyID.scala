@@ -18,15 +18,15 @@ trait IIndirectPropertyID extends js.Object {
 object IIndirectPropertyID {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IIndirectPropertyIDLevel, scala.Unit],
-    Clone: js.Function0[IIndirectPropertyID],
+    Add: (scala.Double, IIndirectPropertyIDLevel) => scala.Unit,
+    Clone: () => IIndirectPropertyID,
     Count: scala.Double,
-    EqualTo: js.Function1[IIndirectPropertyID, scala.Boolean],
-    Item: js.Function1[scala.Double, IIndirectPropertyIDLevel],
-    Remove: js.Function1[scala.Double, scala.Unit],
-    ToJSON: js.Function0[java.lang.String]
+    EqualTo: IIndirectPropertyID => scala.Boolean,
+    Item: scala.Double => IIndirectPropertyIDLevel,
+    Remove: scala.Double => scala.Unit,
+    ToJSON: () => java.lang.String
   ): IIndirectPropertyID = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, EqualTo = EqualTo, Item = Item, Remove = Remove, ToJSON = ToJSON)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count, EqualTo = js.Any.fromFunction1(EqualTo), Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove), ToJSON = js.Any.fromFunction0(ToJSON))
   
     __obj.asInstanceOf[IIndirectPropertyID]
   }

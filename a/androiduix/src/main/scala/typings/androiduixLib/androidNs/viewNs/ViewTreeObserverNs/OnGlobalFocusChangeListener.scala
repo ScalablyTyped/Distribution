@@ -12,9 +12,9 @@ trait OnGlobalFocusChangeListener extends js.Object {
 object OnGlobalFocusChangeListener {
   @scala.inline
   def apply(
-    onGlobalFocusChanged: js.Function2[androiduixLib.androidNs.viewNs.View, androiduixLib.androidNs.viewNs.View, js.Any]
+    onGlobalFocusChanged: (androiduixLib.androidNs.viewNs.View, androiduixLib.androidNs.viewNs.View) => js.Any
   ): OnGlobalFocusChangeListener = {
-    val __obj = js.Dynamic.literal(onGlobalFocusChanged = onGlobalFocusChanged)
+    val __obj = js.Dynamic.literal(onGlobalFocusChanged = js.Any.fromFunction2(onGlobalFocusChanged))
   
     __obj.asInstanceOf[OnGlobalFocusChangeListener]
   }

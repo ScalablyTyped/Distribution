@@ -61,34 +61,34 @@ trait Schema extends js.Object {
 object Schema {
   @scala.inline
   def apply(
-    addFieldType: js.Function1[AposType, scala.Unit],
-    addFilters: js.Function3[Schema, js.Any, js.Any, scala.Unit],
-    addJoinSlugFilter: js.Function3[js.Any, js.Any, js.Any, scala.Unit],
-    afterInit: js.Function0[scala.Unit],
-    compose: js.Function1[AposObject, scala.Unit],
-    convert: js.Function6[js.Any, Schema, js.Any, AposObject, js.Any, js.Function0[_], scala.Unit],
-    createRoutes: js.Function0[js.Array[_]],
-    cursorFilterInterested: js.Function2[js.Any, java.lang.String, scala.Unit],
-    empty: js.Function2[Schema, AposObject, scala.Unit],
-    export: js.Function6[js.Any, Schema, js.Any, AposObject, js.Any, js.Function0[_], scala.Unit],
-    getFieldType: js.Function1[java.lang.String, scala.Unit],
-    indexFields: js.Function3[Schema, AposObject, js.Any, scala.Unit],
-    isVisible: js.Function3[Schema, AposObject, java.lang.String, scala.Unit],
-    join: js.Function5[js.Any, Schema, js.Any, js.Any, js.Function0[_], scala.Unit],
-    joinDriver: js.Function9[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Function0[_], scala.Unit],
-    joinFilterChoices: js.Function3[js.Any, js.Any, js.Any, scala.Unit],
-    newInstance: js.Function1[Schema, js.Any],
-    pageServe: js.Function1[js.Any, scala.Unit],
-    pushAssets: js.Function0[scala.Unit],
-    pushCreateSingleton: js.Function0[scala.Unit],
-    refine: js.Function2[Schema, AposObject, scala.Unit],
-    sortedDistinct: js.Function3[js.Any, js.Any, js.Function0[_], scala.Unit],
-    subset: js.Function2[Schema, Fields, Schema],
-    subsetInstance: js.Function2[Schema, AposObject, js.Any],
-    toGroups: js.Function1[Fields, scala.Unit],
-    validate: js.Function2[Schema, js.Any, scala.Unit]
+    addFieldType: AposType => scala.Unit,
+    addFilters: (Schema, js.Any, js.Any) => scala.Unit,
+    addJoinSlugFilter: (js.Any, js.Any, js.Any) => scala.Unit,
+    afterInit: () => scala.Unit,
+    compose: AposObject => scala.Unit,
+    convert: (js.Any, Schema, js.Any, AposObject, js.Any, js.Function0[_]) => scala.Unit,
+    createRoutes: () => js.Array[_],
+    cursorFilterInterested: (js.Any, java.lang.String) => scala.Unit,
+    empty: (Schema, AposObject) => scala.Unit,
+    export: (js.Any, Schema, js.Any, AposObject, js.Any, js.Function0[_]) => scala.Unit,
+    getFieldType: java.lang.String => scala.Unit,
+    indexFields: (Schema, AposObject, js.Any) => scala.Unit,
+    isVisible: (Schema, AposObject, java.lang.String) => scala.Unit,
+    join: (js.Any, Schema, js.Any, js.Any, js.Function0[_]) => scala.Unit,
+    joinDriver: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Function0[_]) => scala.Unit,
+    joinFilterChoices: (js.Any, js.Any, js.Any) => scala.Unit,
+    newInstance: Schema => js.Any,
+    pageServe: js.Any => scala.Unit,
+    pushAssets: () => scala.Unit,
+    pushCreateSingleton: () => scala.Unit,
+    refine: (Schema, AposObject) => scala.Unit,
+    sortedDistinct: (js.Any, js.Any, js.Function0[_]) => scala.Unit,
+    subset: (Schema, Fields) => Schema,
+    subsetInstance: (Schema, AposObject) => js.Any,
+    toGroups: Fields => scala.Unit,
+    validate: (Schema, js.Any) => scala.Unit
   ): Schema = {
-    val __obj = js.Dynamic.literal(addFieldType = addFieldType, addFilters = addFilters, addJoinSlugFilter = addJoinSlugFilter, afterInit = afterInit, compose = compose, convert = convert, createRoutes = createRoutes, cursorFilterInterested = cursorFilterInterested, empty = empty, export = export, getFieldType = getFieldType, indexFields = indexFields, isVisible = isVisible, join = join, joinDriver = joinDriver, joinFilterChoices = joinFilterChoices, newInstance = newInstance, pageServe = pageServe, pushAssets = pushAssets, pushCreateSingleton = pushCreateSingleton, refine = refine, sortedDistinct = sortedDistinct, subset = subset, subsetInstance = subsetInstance, toGroups = toGroups, validate = validate)
+    val __obj = js.Dynamic.literal(addFieldType = js.Any.fromFunction1(addFieldType), addFilters = js.Any.fromFunction3(addFilters), addJoinSlugFilter = js.Any.fromFunction3(addJoinSlugFilter), afterInit = js.Any.fromFunction0(afterInit), compose = js.Any.fromFunction1(compose), convert = js.Any.fromFunction6(convert), createRoutes = js.Any.fromFunction0(createRoutes), cursorFilterInterested = js.Any.fromFunction2(cursorFilterInterested), empty = js.Any.fromFunction2(empty), export = js.Any.fromFunction6(export), getFieldType = js.Any.fromFunction1(getFieldType), indexFields = js.Any.fromFunction3(indexFields), isVisible = js.Any.fromFunction3(isVisible), join = js.Any.fromFunction5(join), joinDriver = js.Any.fromFunction9(joinDriver), joinFilterChoices = js.Any.fromFunction3(joinFilterChoices), newInstance = js.Any.fromFunction1(newInstance), pageServe = js.Any.fromFunction1(pageServe), pushAssets = js.Any.fromFunction0(pushAssets), pushCreateSingleton = js.Any.fromFunction0(pushCreateSingleton), refine = js.Any.fromFunction2(refine), sortedDistinct = js.Any.fromFunction3(sortedDistinct), subset = js.Any.fromFunction2(subset), subsetInstance = js.Any.fromFunction2(subsetInstance), toGroups = js.Any.fromFunction1(toGroups), validate = js.Any.fromFunction2(validate))
   
     __obj.asInstanceOf[Schema]
   }

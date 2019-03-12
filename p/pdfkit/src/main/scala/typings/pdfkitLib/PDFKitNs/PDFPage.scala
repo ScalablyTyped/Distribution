@@ -37,20 +37,20 @@ object PDFPage {
     content: PDFKitReference,
     dictionary: PDFKitReference,
     document: PDFDocument,
-    end: js.Function0[scala.Unit],
+    end: () => scala.Unit,
     ext_gstates: js.Any,
     fonts: js.Any,
     height: scala.Double,
     layout: java.lang.String,
     margins: pdfkitLib.Anon_Bottom,
-    maxY: js.Function0[scala.Double],
+    maxY: () => scala.Double,
     patterns: js.Any,
     size: java.lang.String,
     width: scala.Double,
-    write: js.Function1[js.Any, scala.Unit],
+    write: js.Any => scala.Unit,
     xobjects: js.Any
   ): PDFPage = {
-    val __obj = js.Dynamic.literal(annotations = annotations, content = content, dictionary = dictionary, document = document, end = end, ext_gstates = ext_gstates, fonts = fonts, height = height, layout = layout, margins = margins, maxY = maxY, patterns = patterns, size = size, width = width, write = write, xobjects = xobjects)
+    val __obj = js.Dynamic.literal(annotations = annotations, content = content, dictionary = dictionary, document = document, end = js.Any.fromFunction0(end), ext_gstates = ext_gstates, fonts = fonts, height = height, layout = layout, margins = margins, maxY = js.Any.fromFunction0(maxY), patterns = patterns, size = size, width = width, write = js.Any.fromFunction1(write), xobjects = xobjects)
   
     __obj.asInstanceOf[PDFPage]
   }

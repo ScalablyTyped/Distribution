@@ -19,17 +19,13 @@ trait ITableInputAttributes
 object ITableInputAttributes {
   @scala.inline
   def apply(
-    $addClass: js.Function1[java.lang.String, scala.Unit],
+    $addClass: java.lang.String => scala.Unit,
     $attr: js.Object,
-    $normalize: js.Function1[java.lang.String, java.lang.String],
-    $observe: js.Function2[
-      java.lang.String, 
-      js.Function1[/* value */ js.UndefOr[js.Any], _], 
-      angularLib.angularMod.Global.Function
-    ],
-    $removeClass: js.Function1[java.lang.String, scala.Unit],
-    $set: js.Function2[java.lang.String, js.Any, scala.Unit],
-    $updateClass: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    $normalize: java.lang.String => java.lang.String,
+    $observe: (java.lang.String, js.Function1[/* value */ js.UndefOr[js.Any], _]) => angularLib.angularMod.Global.Function,
+    $removeClass: java.lang.String => scala.Unit,
+    $set: (java.lang.String, js.Any) => scala.Unit,
+    $updateClass: (java.lang.String, java.lang.String) => scala.Unit,
     disableFilter: java.lang.String = null,
     ngTable: java.lang.String = null,
     ngTableDynamic: java.lang.String = null,
@@ -38,7 +34,7 @@ object ITableInputAttributes {
     templateHeader: java.lang.String = null,
     templatePagination: java.lang.String = null
   ): ITableInputAttributes = {
-    val __obj = js.Dynamic.literal($addClass = $addClass, $attr = $attr, $normalize = $normalize, $observe = $observe, $removeClass = $removeClass, $set = $set, $updateClass = $updateClass)
+    val __obj = js.Dynamic.literal($addClass = js.Any.fromFunction1($addClass), $attr = $attr, $normalize = js.Any.fromFunction1($normalize), $observe = js.Any.fromFunction2($observe), $removeClass = js.Any.fromFunction1($removeClass), $set = js.Any.fromFunction2($set), $updateClass = js.Any.fromFunction2($updateClass))
     if (disableFilter != null) __obj.updateDynamic("disableFilter")(disableFilter)
     if (ngTable != null) __obj.updateDynamic("ngTable")(ngTable)
     if (ngTableDynamic != null) __obj.updateDynamic("ngTableDynamic")(ngTableDynamic)

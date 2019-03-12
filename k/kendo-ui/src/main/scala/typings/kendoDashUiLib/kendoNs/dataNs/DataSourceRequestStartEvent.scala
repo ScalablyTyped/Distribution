@@ -12,12 +12,8 @@ trait DataSourceRequestStartEvent extends DataSourceEvent {
 
 object DataSourceRequestStartEvent {
   @scala.inline
-  def apply(
-    preventDefault: js.Function0[scala.Unit],
-    sender: DataSource = null,
-    `type`: java.lang.String = null
-  ): DataSourceRequestStartEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault)
+  def apply(preventDefault: () => scala.Unit, sender: DataSource = null, `type`: java.lang.String = null): DataSourceRequestStartEvent = {
+    val __obj = js.Dynamic.literal(preventDefault = js.Any.fromFunction0(preventDefault))
     if (sender != null) __obj.updateDynamic("sender")(sender)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DataSourceRequestStartEvent]

@@ -13,12 +13,8 @@ trait IPropertyDefs extends js.Object {
 
 object IPropertyDefs {
   @scala.inline
-  def apply(
-    Clone: js.Function0[IPropertyDefs],
-    Count: scala.Double,
-    Item: js.Function1[scala.Double, IPropertyDef]
-  ): IPropertyDefs = {
-    val __obj = js.Dynamic.literal(Clone = Clone, Count = Count, Item = Item)
+  def apply(Clone: () => IPropertyDefs, Count: scala.Double, Item: scala.Double => IPropertyDef): IPropertyDefs = {
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Count = Count, Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[IPropertyDefs]
   }

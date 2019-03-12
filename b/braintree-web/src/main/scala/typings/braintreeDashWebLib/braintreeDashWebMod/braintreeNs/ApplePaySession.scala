@@ -27,24 +27,24 @@ trait ApplePaySession extends js.Object {
 object ApplePaySession {
   @scala.inline
   def apply(
-    abort: js.Function0[scala.Unit],
-    begin: js.Function0[scala.Unit],
-    canMakePayments: js.Function0[scala.Boolean],
-    canMakePaymentsWithActiveCard: js.Function1[java.lang.String, scala.Boolean],
-    completeMerchantValidation: js.Function1[js.Any, scala.Unit],
-    completePayment: js.Function1[ApplePayStatusCodes, scala.Unit],
-    completePaymentMethodSelection: js.Function2[js.Any, js.Any, scala.Unit],
-    completeShippingContactSelection: js.Function4[ApplePayStatusCodes, js.Any, js.Any, js.Any, scala.Unit],
-    completeShippingMethodSelection: js.Function3[ApplePayStatusCodes, js.Any, js.Any, scala.Unit],
-    oncancel: js.Function1[js.Any, scala.Unit],
-    onpaymentauthorized: js.Function1[js.Any, scala.Unit],
-    onpaymentmethodselected: js.Function1[js.Any, scala.Unit],
-    onshippingcontactselected: js.Function1[js.Any, scala.Unit],
-    onshippingmethodselected: js.Function1[js.Any, scala.Unit],
-    onvalidatemerchant: js.Function1[js.Any, scala.Unit],
-    supportsVersion: js.Function1[scala.Double, scala.Boolean]
+    abort: () => scala.Unit,
+    begin: () => scala.Unit,
+    canMakePayments: () => scala.Boolean,
+    canMakePaymentsWithActiveCard: java.lang.String => scala.Boolean,
+    completeMerchantValidation: js.Any => scala.Unit,
+    completePayment: ApplePayStatusCodes => scala.Unit,
+    completePaymentMethodSelection: (js.Any, js.Any) => scala.Unit,
+    completeShippingContactSelection: (ApplePayStatusCodes, js.Any, js.Any, js.Any) => scala.Unit,
+    completeShippingMethodSelection: (ApplePayStatusCodes, js.Any, js.Any) => scala.Unit,
+    oncancel: js.Any => scala.Unit,
+    onpaymentauthorized: js.Any => scala.Unit,
+    onpaymentmethodselected: js.Any => scala.Unit,
+    onshippingcontactselected: js.Any => scala.Unit,
+    onshippingmethodselected: js.Any => scala.Unit,
+    onvalidatemerchant: js.Any => scala.Unit,
+    supportsVersion: scala.Double => scala.Boolean
   ): ApplePaySession = {
-    val __obj = js.Dynamic.literal(abort = abort, begin = begin, canMakePayments = canMakePayments, canMakePaymentsWithActiveCard = canMakePaymentsWithActiveCard, completeMerchantValidation = completeMerchantValidation, completePayment = completePayment, completePaymentMethodSelection = completePaymentMethodSelection, completeShippingContactSelection = completeShippingContactSelection, completeShippingMethodSelection = completeShippingMethodSelection, oncancel = oncancel, onpaymentauthorized = onpaymentauthorized, onpaymentmethodselected = onpaymentmethodselected, onshippingcontactselected = onshippingcontactselected, onshippingmethodselected = onshippingmethodselected, onvalidatemerchant = onvalidatemerchant, supportsVersion = supportsVersion)
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), begin = js.Any.fromFunction0(begin), canMakePayments = js.Any.fromFunction0(canMakePayments), canMakePaymentsWithActiveCard = js.Any.fromFunction1(canMakePaymentsWithActiveCard), completeMerchantValidation = js.Any.fromFunction1(completeMerchantValidation), completePayment = js.Any.fromFunction1(completePayment), completePaymentMethodSelection = js.Any.fromFunction2(completePaymentMethodSelection), completeShippingContactSelection = js.Any.fromFunction4(completeShippingContactSelection), completeShippingMethodSelection = js.Any.fromFunction3(completeShippingMethodSelection), oncancel = js.Any.fromFunction1(oncancel), onpaymentauthorized = js.Any.fromFunction1(onpaymentauthorized), onpaymentmethodselected = js.Any.fromFunction1(onpaymentmethodselected), onshippingcontactselected = js.Any.fromFunction1(onshippingcontactselected), onshippingmethodselected = js.Any.fromFunction1(onshippingmethodselected), onvalidatemerchant = js.Any.fromFunction1(onvalidatemerchant), supportsVersion = js.Any.fromFunction1(supportsVersion))
   
     __obj.asInstanceOf[ApplePaySession]
   }

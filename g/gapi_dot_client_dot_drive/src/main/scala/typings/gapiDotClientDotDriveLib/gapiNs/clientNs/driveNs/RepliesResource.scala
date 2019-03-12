@@ -21,28 +21,13 @@ trait RepliesResource extends js.Object {
 object RepliesResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltCommentId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Reply]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltCommentIdFieldsFileId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltCommentIdFieldsFileIdIncludeDeleted, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Reply]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltCommentIdFieldsFileIdIncludeDeletedKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ReplyList]
-    ],
-    update: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltCommentIdFieldsFileId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Reply]
-    ]
+    create: gapiDotClientDotDriveLib.Anon_AltCommentId => gapiDotClientLib.gapiNs.clientNs.Request[Reply],
+    delete: gapiDotClientDotDriveLib.Anon_AltCommentIdFieldsFileId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotDriveLib.Anon_AltCommentIdFieldsFileIdIncludeDeleted => gapiDotClientLib.gapiNs.clientNs.Request[Reply],
+    list: gapiDotClientDotDriveLib.Anon_AltCommentIdFieldsFileIdIncludeDeletedKey => gapiDotClientLib.gapiNs.clientNs.Request[ReplyList],
+    update: gapiDotClientDotDriveLib.Anon_AltCommentIdFieldsFileId => gapiDotClientLib.gapiNs.clientNs.Request[Reply]
   ): RepliesResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, update = update)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[RepliesResource]
   }

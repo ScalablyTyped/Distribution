@@ -48,7 +48,7 @@ trait XBackend
     * @throws com::sun::star::lang::IllegalArgumentException if the component identifier is invalid or if the entity doesn't exist.
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the data.
     */
-  def listLayers(aComponent: java.lang.String, aEntity: java.lang.String): activexDashInteropLib.SafeArray[XLayer]
+  def listLayers(aComponent: java.lang.String, aEntity: java.lang.String): stdLib.SafeArray[XLayer]
   /**
     * retrieves the layers associated to the owner entity for a component.
     * @param aComponent component whose data will be accessed
@@ -57,21 +57,21 @@ trait XBackend
     * @throws com::sun::star::lang::IllegalArgumentException if the component identifier is invalid
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the data.
     */
-  def listOwnLayers(aComponent: java.lang.String): activexDashInteropLib.SafeArray[XLayer]
+  def listOwnLayers(aComponent: java.lang.String): stdLib.SafeArray[XLayer]
 }
 
 object XBackend {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getOwnUpdateHandler: js.Function1[java.lang.String, XUpdateHandler],
-    getUpdateHandler: js.Function2[java.lang.String, java.lang.String, XUpdateHandler],
-    listLayers: js.Function2[java.lang.String, java.lang.String, activexDashInteropLib.SafeArray[XLayer]],
-    listOwnLayers: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[XLayer]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getOwnUpdateHandler: java.lang.String => XUpdateHandler,
+    getUpdateHandler: (java.lang.String, java.lang.String) => XUpdateHandler,
+    listLayers: (java.lang.String, java.lang.String) => stdLib.SafeArray[XLayer],
+    listOwnLayers: java.lang.String => stdLib.SafeArray[XLayer],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XBackend = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getOwnUpdateHandler = getOwnUpdateHandler, getUpdateHandler = getUpdateHandler, listLayers = listLayers, listOwnLayers = listOwnLayers, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getOwnUpdateHandler = js.Any.fromFunction1(getOwnUpdateHandler), getUpdateHandler = js.Any.fromFunction2(getUpdateHandler), listLayers = js.Any.fromFunction2(listLayers), listOwnLayers = js.Any.fromFunction1(listOwnLayers), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XBackend]
   }

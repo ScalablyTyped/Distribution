@@ -11,8 +11,8 @@ trait Search extends js.Object {
 
 object Search {
   @scala.inline
-  def apply(run: js.Function1[js.Function2[/* err */ js.Any, /* results */ SearchResults, scala.Unit], Search]): Search = {
-    val __obj = js.Dynamic.literal(run = run)
+  def apply(run: js.Function2[/* err */ js.Any, /* results */ SearchResults, scala.Unit] => Search): Search = {
+    val __obj = js.Dynamic.literal(run = js.Any.fromFunction1(run))
   
     __obj.asInstanceOf[Search]
   }

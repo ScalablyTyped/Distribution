@@ -21,12 +21,12 @@ object User {
   @scala.inline
   def apply(
     accessTokens: js.Any,
-    getIdentities: js.Function0[js.Any],
+    getIdentities: () => js.Any,
     level: java.lang.String,
     mobileServiceAuthenticationToken: java.lang.String,
     userId: java.lang.String
   ): User = {
-    val __obj = js.Dynamic.literal(accessTokens = accessTokens, getIdentities = getIdentities, level = level, mobileServiceAuthenticationToken = mobileServiceAuthenticationToken, userId = userId)
+    val __obj = js.Dynamic.literal(accessTokens = accessTokens, getIdentities = js.Any.fromFunction0(getIdentities), level = level, mobileServiceAuthenticationToken = mobileServiceAuthenticationToken, userId = userId)
   
     __obj.asInstanceOf[User]
   }

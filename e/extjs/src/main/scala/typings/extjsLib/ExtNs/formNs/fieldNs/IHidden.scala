@@ -40,33 +40,33 @@ object IHidden {
   @scala.inline
   def apply(
     IBase: IBase = null,
-    clearInvalid: js.Function0[scala.Unit] = null,
+    clearInvalid: () => scala.Unit = null,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
     hideLabel: js.UndefOr[scala.Boolean] = js.undefined,
-    initComponent: js.Function0[scala.Unit] = null,
-    initEvents: js.Function0[scala.Unit] = null,
+    initComponent: () => scala.Unit = null,
+    initEvents: () => scala.Unit = null,
     inputType: java.lang.String = null,
-    markInvalid: js.Function0[scala.Unit] = null,
-    setHeight: js.Function0[extjsLib.ExtNs.IComponent] = null,
-    setPagePosition: js.Function0[extjsLib.ExtNs.IComponent] = null,
-    setPosition: js.Function0[extjsLib.ExtNs.IComponent] = null,
-    setSize: js.Function0[extjsLib.ExtNs.IComponent] = null,
-    setWidth: js.Function0[extjsLib.ExtNs.IComponent] = null
+    markInvalid: () => scala.Unit = null,
+    setHeight: () => extjsLib.ExtNs.IComponent = null,
+    setPagePosition: () => extjsLib.ExtNs.IComponent = null,
+    setPosition: () => extjsLib.ExtNs.IComponent = null,
+    setSize: () => extjsLib.ExtNs.IComponent = null,
+    setWidth: () => extjsLib.ExtNs.IComponent = null
   ): IHidden = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IBase)
-    if (clearInvalid != null) __obj.updateDynamic("clearInvalid")(clearInvalid)
+    if (clearInvalid != null) __obj.updateDynamic("clearInvalid")(js.Any.fromFunction0(clearInvalid))
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (!js.isUndefined(hideLabel)) __obj.updateDynamic("hideLabel")(hideLabel)
-    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
-    if (initEvents != null) __obj.updateDynamic("initEvents")(initEvents)
+    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
+    if (initEvents != null) __obj.updateDynamic("initEvents")(js.Any.fromFunction0(initEvents))
     if (inputType != null) __obj.updateDynamic("inputType")(inputType)
-    if (markInvalid != null) __obj.updateDynamic("markInvalid")(markInvalid)
-    if (setHeight != null) __obj.updateDynamic("setHeight")(setHeight)
-    if (setPagePosition != null) __obj.updateDynamic("setPagePosition")(setPagePosition)
-    if (setPosition != null) __obj.updateDynamic("setPosition")(setPosition)
-    if (setSize != null) __obj.updateDynamic("setSize")(setSize)
-    if (setWidth != null) __obj.updateDynamic("setWidth")(setWidth)
+    if (markInvalid != null) __obj.updateDynamic("markInvalid")(js.Any.fromFunction0(markInvalid))
+    if (setHeight != null) __obj.updateDynamic("setHeight")(js.Any.fromFunction0(setHeight))
+    if (setPagePosition != null) __obj.updateDynamic("setPagePosition")(js.Any.fromFunction0(setPagePosition))
+    if (setPosition != null) __obj.updateDynamic("setPosition")(js.Any.fromFunction0(setPosition))
+    if (setSize != null) __obj.updateDynamic("setSize")(js.Any.fromFunction0(setSize))
+    if (setWidth != null) __obj.updateDynamic("setWidth")(js.Any.fromFunction0(setWidth))
     __obj.asInstanceOf[IHidden]
   }
 }

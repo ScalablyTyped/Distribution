@@ -21,7 +21,7 @@ trait NpmModule extends js.Object {
   var prepare: js.UndefOr[
     js.Function2[
       /* config */ EngineConfigurationObject, 
-      /* next */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
+      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -49,22 +49,14 @@ object NpmModule {
   @scala.inline
   def apply(
     compile: ServerViewCompile,
-    prepare: js.Function2[
-      /* config */ EngineConfigurationObject, 
-      /* next */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
-      scala.Unit
-    ] = null,
-    registerHelper: js.Function2[
-      /* name */ java.lang.String, 
-      /* helper */ js.Function1[/* repeated */ js.Any, _], 
-      scala.Unit
-    ] = null,
-    registerPartial: js.Function2[/* name */ java.lang.String, /* src */ java.lang.String, scala.Unit] = null
+    prepare: (/* config */ EngineConfigurationObject, /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) => scala.Unit = null,
+    registerHelper: (/* name */ java.lang.String, /* helper */ js.Function1[/* repeated */ js.Any, _]) => scala.Unit = null,
+    registerPartial: (/* name */ java.lang.String, /* src */ java.lang.String) => scala.Unit = null
   ): NpmModule = {
     val __obj = js.Dynamic.literal(compile = compile.asInstanceOf[js.Any])
-    if (prepare != null) __obj.updateDynamic("prepare")(prepare)
-    if (registerHelper != null) __obj.updateDynamic("registerHelper")(registerHelper)
-    if (registerPartial != null) __obj.updateDynamic("registerPartial")(registerPartial)
+    if (prepare != null) __obj.updateDynamic("prepare")(js.Any.fromFunction2(prepare))
+    if (registerHelper != null) __obj.updateDynamic("registerHelper")(js.Any.fromFunction2(registerHelper))
+    if (registerPartial != null) __obj.updateDynamic("registerPartial")(js.Any.fromFunction2(registerPartial))
     __obj.asInstanceOf[NpmModule]
   }
 }

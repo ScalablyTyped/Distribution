@@ -13,10 +13,10 @@ trait CollectionBindTo[T, K] extends js.Object {
 object CollectionBindTo {
   @scala.inline
   def apply[T, K](
-    as: js.Function1[atCkeditorCkeditor5DashUtilsLib.Anon_Item[T, K], scala.Unit],
-    using: js.Function1[java.lang.String, scala.Unit]
+    as: atCkeditorCkeditor5DashUtilsLib.Anon_Item[T, K] => scala.Unit,
+    using: java.lang.String => scala.Unit
   ): CollectionBindTo[T, K] = {
-    val __obj = js.Dynamic.literal(as = as, using = using)
+    val __obj = js.Dynamic.literal(as = js.Any.fromFunction1(as), using = js.Any.fromFunction1(using))
   
     __obj.asInstanceOf[CollectionBindTo[T, K]]
   }

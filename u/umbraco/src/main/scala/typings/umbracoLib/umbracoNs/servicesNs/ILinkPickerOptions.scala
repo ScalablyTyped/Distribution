@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
   */
 trait ILinkPickerOptions extends js.Object {
   /*callback function*/
-  var callback: angularLib.angularMod.Global.Function
+  var callback: js.Function
 }
 
 object ILinkPickerOptions {
   @scala.inline
-  def apply(callback: angularLib.angularMod.Global.Function): ILinkPickerOptions = {
+  def apply(callback: js.Function): ILinkPickerOptions = {
     val __obj = js.Dynamic.literal(callback = callback)
   
     __obj.asInstanceOf[ILinkPickerOptions]

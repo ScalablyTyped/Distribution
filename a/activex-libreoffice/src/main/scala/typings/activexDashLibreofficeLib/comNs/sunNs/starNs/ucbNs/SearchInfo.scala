@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /** information needed to (recursively) search an object. */
 trait SearchInfo extends js.Object {
   /** the search criteria. */
-  var Criteria: activexDashInteropLib.SafeArray[SearchCriterium]
+  var Criteria: stdLib.SafeArray[SearchCriterium]
   /** whether to follow indirections (link objects) and search through their respective targets also. */
   var FollowIndirections: scala.Boolean
   /** whether to include the object itself in the search or only (some of) its sub-objects. */
@@ -30,7 +30,7 @@ trait SearchInfo extends js.Object {
 object SearchInfo {
   @scala.inline
   def apply(
-    Criteria: activexDashInteropLib.SafeArray[SearchCriterium],
+    Criteria: stdLib.SafeArray[SearchCriterium],
     FollowIndirections: scala.Boolean,
     IncludeBase: scala.Boolean,
     Recursion: SearchRecursion,

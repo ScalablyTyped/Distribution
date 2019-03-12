@@ -13,12 +13,12 @@ trait MeasuredCellParent extends js.Object {
 object MeasuredCellParent {
   @scala.inline
   def apply(
-    invalidateCellSizeAfterRender: js.Function1[/* cell */ CellPosition, scala.Unit] = null,
-    recomputeGridSize: js.Function1[/* cell */ CellPosition, scala.Unit] = null
+    invalidateCellSizeAfterRender: /* cell */ CellPosition => scala.Unit = null,
+    recomputeGridSize: /* cell */ CellPosition => scala.Unit = null
   ): MeasuredCellParent = {
     val __obj = js.Dynamic.literal()
-    if (invalidateCellSizeAfterRender != null) __obj.updateDynamic("invalidateCellSizeAfterRender")(invalidateCellSizeAfterRender)
-    if (recomputeGridSize != null) __obj.updateDynamic("recomputeGridSize")(recomputeGridSize)
+    if (invalidateCellSizeAfterRender != null) __obj.updateDynamic("invalidateCellSizeAfterRender")(js.Any.fromFunction1(invalidateCellSizeAfterRender))
+    if (recomputeGridSize != null) __obj.updateDynamic("recomputeGridSize")(js.Any.fromFunction1(recomputeGridSize))
     __obj.asInstanceOf[MeasuredCellParent]
   }
 }

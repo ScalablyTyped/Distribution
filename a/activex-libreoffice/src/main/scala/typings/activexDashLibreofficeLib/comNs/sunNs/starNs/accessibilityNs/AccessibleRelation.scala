@@ -25,14 +25,14 @@ trait AccessibleRelation extends js.Object {
     *
     * The content of this set is undefined if the relation's type is INVALID. The set must not contain references to one object more than once.
     */
-  var TargetSet: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface]
+  var TargetSet: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface]
 }
 
 object AccessibleRelation {
   @scala.inline
   def apply(
     RelationType: scala.Double,
-    TargetSet: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface]
+    TargetSet: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface]
   ): AccessibleRelation = {
     val __obj = js.Dynamic.literal(RelationType = RelationType, TargetSet = TargetSet)
   

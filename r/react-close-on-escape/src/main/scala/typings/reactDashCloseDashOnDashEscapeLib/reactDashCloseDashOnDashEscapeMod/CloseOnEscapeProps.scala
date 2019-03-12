@@ -14,8 +14,8 @@ trait CloseOnEscapeProps extends js.Object {
 
 object CloseOnEscapeProps {
   @scala.inline
-  def apply(onEscape: js.Function0[scala.Unit]): CloseOnEscapeProps = {
-    val __obj = js.Dynamic.literal(onEscape = onEscape)
+  def apply(onEscape: () => scala.Unit): CloseOnEscapeProps = {
+    val __obj = js.Dynamic.literal(onEscape = js.Any.fromFunction0(onEscape))
   
     __obj.asInstanceOf[CloseOnEscapeProps]
   }

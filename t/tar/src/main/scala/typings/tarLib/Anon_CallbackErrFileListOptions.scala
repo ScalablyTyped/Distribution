@@ -12,12 +12,12 @@ trait Anon_CallbackErrFileListOptions extends js.Object {
   def apply(
     options: tarLib.tarMod.ReplaceOptions,
     fileList: js.Array[java.lang.String],
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): js.Promise[scala.Unit] = js.native
   def apply(
     options: tarLib.tarMod.ReplaceOptions,
     fileList: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): js.Promise[scala.Unit] = js.native
 }
 

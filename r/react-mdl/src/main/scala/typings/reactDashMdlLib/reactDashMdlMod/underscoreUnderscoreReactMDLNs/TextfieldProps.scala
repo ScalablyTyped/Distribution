@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait TextfieldProps
   extends MDLHTMLAttributes
-     with reactLib.reactMod.ReactNs.DOMAttributes[reactLib.HTMLInputElement] {
+     with reactLib.reactMod.ReactNs.DOMAttributes[stdLib.HTMLInputElement] {
   var error: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var expandable: js.UndefOr[scala.Boolean] = js.undefined
   var expandableIcon: js.UndefOr[java.lang.String] = js.undefined
@@ -25,7 +25,7 @@ object TextfieldProps {
   @scala.inline
   def apply(
     label: java.lang.String,
-    DOMAttributes: reactLib.reactMod.ReactNs.DOMAttributes[reactLib.HTMLInputElement] = null,
+    DOMAttributes: reactLib.reactMod.ReactNs.DOMAttributes[stdLib.HTMLInputElement] = null,
     MDLHTMLAttributes: MDLHTMLAttributes = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     error: reactLib.reactMod.ReactNs.ReactNode = null,
@@ -36,7 +36,7 @@ object TextfieldProps {
     inputClassName: java.lang.String = null,
     maxRows: scala.Int | scala.Double = null,
     name: java.lang.String = null,
-    onChange: reactLib.reactMod.ReactNs.FormEventHandler[reactLib.HTMLInputElement] = null,
+    onChange: reactLib.reactMod.ReactNs.FormEventHandler[stdLib.HTMLInputElement] = null,
     pattern: java.lang.String = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
     rows: scala.Int | scala.Double = null,

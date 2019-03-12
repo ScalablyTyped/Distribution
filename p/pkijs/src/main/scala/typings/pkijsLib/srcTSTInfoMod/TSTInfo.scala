@@ -25,14 +25,14 @@ trait TSTInfo extends js.Object {
 object TSTInfo {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     genTime: stdLib.Date,
     messageImprint: pkijsLib.srcMessageImprintMod.default,
     policy: java.lang.String,
     serialNumber: asn1jsLib.asn1jsMod.Integer,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
-    verify: js.Function1[VerifyParams, js.Thenable[scala.Boolean]],
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
+    verify: VerifyParams => js.Thenable[scala.Boolean],
     version: scala.Double,
     accuracy: pkijsLib.srcAccuracyMod.default = null,
     extensions: js.Array[pkijsLib.srcExtensionMod.default] = null,
@@ -40,7 +40,7 @@ object TSTInfo {
     ordering: js.UndefOr[scala.Boolean] = js.undefined,
     tsa: pkijsLib.srcGeneralNameMod.default = null
   ): TSTInfo = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, genTime = genTime, messageImprint = messageImprint, policy = policy, serialNumber = serialNumber, toJSON = toJSON, toSchema = toSchema, verify = verify, version = version)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), genTime = genTime, messageImprint = messageImprint, policy = policy, serialNumber = serialNumber, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), verify = js.Any.fromFunction1(verify), version = version)
     if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (nonce != null) __obj.updateDynamic("nonce")(nonce)

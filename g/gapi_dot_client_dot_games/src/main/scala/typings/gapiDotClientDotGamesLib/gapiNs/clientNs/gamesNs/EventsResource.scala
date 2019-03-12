@@ -17,20 +17,11 @@ trait EventsResource extends js.Object {
 object EventsResource {
   @scala.inline
   def apply(
-    listByPlayer: js.Function1[
-      gapiDotClientDotGamesLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PlayerEventListResponse]
-    ],
-    listDefinitions: js.Function1[
-      gapiDotClientDotGamesLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[EventDefinitionListResponse]
-    ],
-    record: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[EventUpdateResponse]
-    ]
+    listByPlayer: gapiDotClientDotGamesLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[PlayerEventListResponse],
+    listDefinitions: gapiDotClientDotGamesLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[EventDefinitionListResponse],
+    record: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[EventUpdateResponse]
   ): EventsResource = {
-    val __obj = js.Dynamic.literal(listByPlayer = listByPlayer, listDefinitions = listDefinitions, record = record)
+    val __obj = js.Dynamic.literal(listByPlayer = js.Any.fromFunction1(listByPlayer), listDefinitions = js.Any.fromFunction1(listDefinitions), record = js.Any.fromFunction1(record))
   
     __obj.asInstanceOf[EventsResource]
   }

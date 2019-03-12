@@ -16,10 +16,6 @@ object ^ extends js.Object {
     * @return the new sorted array
     */
   def apply[T](items: js.Array[T], value: java.lang.String): js.Array[T] = js.native
-  def apply[T](
-    items: js.Array[T],
-    value: java.lang.String,
-    options: matchDashSorterLib.matchDashSorterMod.Options[T]
-  ): js.Array[T] = js.native
+  def apply[T](items: js.Array[T], value: java.lang.String, options: Options[T]): js.Array[T] = js.native
 }
 

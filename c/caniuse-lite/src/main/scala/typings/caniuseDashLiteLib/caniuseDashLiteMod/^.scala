@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("caniuse-lite", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val agents: caniuseDashLiteLib.caniuseDashLiteMod.AgentsByID = js.native
-  def feature(packedFeature: caniuseDashLiteLib.caniuseDashLiteMod.PackedFeature): caniuseDashLiteLib.caniuseDashLiteMod.Feature = js.native
-  def region(packedRegion: caniuseDashLiteLib.caniuseDashLiteMod.PackedRegion): org.scalablytyped.runtime.StringDictionary[caniuseDashLiteLib.caniuseDashLiteMod.UsageByVersion] = js.native
+  val agents: AgentsByID = js.native
+  def feature(packedFeature: PackedFeature): Feature = js.native
+  def region(packedRegion: PackedRegion): org.scalablytyped.runtime.StringDictionary[UsageByVersion] = js.native
 }
 

@@ -43,7 +43,7 @@ object GlueNs extends js.Object {
     /**
       * A list of PartitionInput structures that define the partitions to be created.
       */
-    var PartitionInputList: PartitionInputList
+    var PartitionInputList: awsDashSdkLib.clientsGlueMod.GlueNs.PartitionInputList
     /**
       * The name of the metadata table in which the partition is to be created.
       */
@@ -175,7 +175,7 @@ object GlueNs extends js.Object {
     /**
       * The list of DevEndpoint names, which may be the names returned from the ListDevEndpoint operation.
       */
-    var DevEndpointNames: DevEndpointNames
+    var DevEndpointNames: awsDashSdkLib.clientsGlueMod.GlueNs.DevEndpointNames
   }
   
   trait BatchGetDevEndpointsResponse extends js.Object {
@@ -484,11 +484,11 @@ object GlueNs extends js.Object {
     /**
       * These key-value pairs define parameters for the connection.
       */
-    var ConnectionProperties: ConnectionProperties
+    var ConnectionProperties: awsDashSdkLib.clientsGlueMod.GlueNs.ConnectionProperties
     /**
       * The type of the connection. Currently, only JDBC is supported; SFTP is not supported.
       */
-    var ConnectionType: ConnectionType
+    var ConnectionType: awsDashSdkLib.clientsGlueMod.GlueNs.ConnectionType
     /**
       * The description of the connection.
       */
@@ -674,7 +674,7 @@ object GlueNs extends js.Object {
     /**
       * A ConnectionInput object defining the connection to create.
       */
-    var ConnectionInput: ConnectionInput
+    var ConnectionInput: awsDashSdkLib.clientsGlueMod.GlueNs.ConnectionInput
   }
   
   trait CreateConnectionResponse extends js.Object
@@ -695,7 +695,7 @@ object GlueNs extends js.Object {
     /**
       * The AWS Glue database where results are written, such as: arn:aws:daylight:us-east-1::database/sometable/ *.
       */
-    var DatabaseName: DatabaseName
+    var DatabaseName: awsDashSdkLib.clientsGlueMod.GlueNs.DatabaseName
     /**
       * A description of the new crawler.
       */
@@ -707,7 +707,7 @@ object GlueNs extends js.Object {
     /**
       * The IAM role (or ARN of an IAM role) used by the new crawler to access customer resources.
       */
-    var Role: Role
+    var Role: awsDashSdkLib.clientsGlueMod.GlueNs.Role
     /**
       * A cron expression used to specify the schedule (see Time-Based Schedules for Jobs and Crawlers. For example, to run something every day at 12:15 UTC, you would specify: cron(15 12 * * ? *).
       */
@@ -740,12 +740,16 @@ object GlueNs extends js.Object {
     /**
       * A DatabaseInput object defining the metadata database to create in the catalog.
       */
-    var DatabaseInput: DatabaseInput
+    var DatabaseInput: awsDashSdkLib.clientsGlueMod.GlueNs.DatabaseInput
   }
   
   trait CreateDatabaseResponse extends js.Object
   
   trait CreateDevEndpointRequest extends js.Object {
+    /**
+      * A map of arguments used to configure the DevEndpoint.
+      */
+    var Arguments: js.UndefOr[MapValue] = js.undefined
     /**
       * The name to be assigned to the new DevEndpoint.
       */
@@ -773,7 +777,7 @@ object GlueNs extends js.Object {
     /**
       * The IAM role for the DevEndpoint.
       */
-    var RoleArn: RoleArn
+    var RoleArn: awsDashSdkLib.clientsGlueMod.GlueNs.RoleArn
     /**
       * The name of the SecurityConfiguration structure to be used with this DevEndpoint.
       */
@@ -793,6 +797,10 @@ object GlueNs extends js.Object {
   }
   
   trait CreateDevEndpointResponse extends js.Object {
+    /**
+      * The map of arguments used to configure this DevEndpoint.
+      */
+    var Arguments: js.UndefOr[MapValue] = js.undefined
     /**
       * The AWS availability zone where this DevEndpoint is located.
       */
@@ -859,7 +867,7 @@ object GlueNs extends js.Object {
     /**
       * An identifier of the data format that the classifier matches, such as Twitter, JSON, Omniture logs, Amazon CloudWatch Logs, and so on.
       */
-    var Classification: Classification
+    var Classification: awsDashSdkLib.clientsGlueMod.GlueNs.Classification
     /**
       * Optional custom grok patterns used by this classifier.
       */
@@ -867,7 +875,7 @@ object GlueNs extends js.Object {
     /**
       * The grok pattern used by this classifier.
       */
-    var GrokPattern: GrokPattern
+    var GrokPattern: awsDashSdkLib.clientsGlueMod.GlueNs.GrokPattern
     /**
       * The name of the new classifier.
       */
@@ -948,7 +956,7 @@ object GlueNs extends js.Object {
     /**
       * A JsonPath string defining the JSON data for the classifier to classify. AWS Glue supports a subset of JsonPath, as described in Writing JsonPath Custom Classifiers.
       */
-    var JsonPath: JsonPath
+    var JsonPath: awsDashSdkLib.clientsGlueMod.GlueNs.JsonPath
     /**
       * The name of the classifier.
       */
@@ -967,7 +975,7 @@ object GlueNs extends js.Object {
     /**
       * A PartitionInput structure defining the partition to be created.
       */
-    var PartitionInput: PartitionInput
+    var PartitionInput: awsDashSdkLib.clientsGlueMod.GlueNs.PartitionInput
     /**
       * The name of the metadata table in which the partition is to be created.
       */
@@ -1006,7 +1014,7 @@ object GlueNs extends js.Object {
     /**
       * The encryption configuration for the new security configuration.
       */
-    var EncryptionConfiguration: EncryptionConfiguration
+    var EncryptionConfiguration: awsDashSdkLib.clientsGlueMod.GlueNs.EncryptionConfiguration
     /**
       * The name for the new security configuration.
       */
@@ -1036,7 +1044,7 @@ object GlueNs extends js.Object {
     /**
       * The TableInput object that defines the metadata table to create in the catalog.
       */
-    var TableInput: TableInput
+    var TableInput: awsDashSdkLib.clientsGlueMod.GlueNs.TableInput
   }
   
   trait CreateTableResponse extends js.Object
@@ -1104,7 +1112,7 @@ object GlueNs extends js.Object {
     /**
       * An identifier of the data format that the classifier matches.
       */
-    var Classification: Classification
+    var Classification: awsDashSdkLib.clientsGlueMod.GlueNs.Classification
     /**
       * The name of the classifier.
       */
@@ -1345,6 +1353,10 @@ object GlueNs extends js.Object {
   
   trait DevEndpoint extends js.Object {
     /**
+      * A map of arguments used to configure the DevEndpoint. Note that currently, we only support "--enable-glue-datacatalog": "" as a valid argument.
+      */
+    var Arguments: js.UndefOr[MapValue] = js.undefined
+    /**
       * The AWS availability zone where this DevEndpoint is located.
       */
     var AvailabilityZone: js.UndefOr[GenericString] = js.undefined
@@ -1452,7 +1464,7 @@ object GlueNs extends js.Object {
     /**
       * The encryption-at-rest mode for encrypting Data Catalog data.
       */
-    var CatalogEncryptionMode: CatalogEncryptionMode
+    var CatalogEncryptionMode: awsDashSdkLib.clientsGlueMod.GlueNs.CatalogEncryptionMode
     /**
       * The ID of the AWS KMS key to use for encryption at rest.
       */
@@ -1728,7 +1740,7 @@ object GlueNs extends js.Object {
     /**
       * A list of Database objects from the specified catalog.
       */
-    var DatabaseList: DatabaseList
+    var DatabaseList: awsDashSdkLib.clientsGlueMod.GlueNs.DatabaseList
     /**
       * A continuation token for paginating the returned list of tokens, returned if the current segment of the list is not the last.
       */
@@ -2284,7 +2296,7 @@ object GlueNs extends js.Object {
     /**
       * An identifier of the data format that the classifier matches, such as Twitter, JSON, Omniture logs, and so on.
       */
-    var Classification: Classification
+    var Classification: awsDashSdkLib.clientsGlueMod.GlueNs.Classification
     /**
       * The time this classifier was registered.
       */
@@ -2296,7 +2308,7 @@ object GlueNs extends js.Object {
     /**
       * The grok pattern applied to a data store by this classifier. For more information, see built-in patterns in Writing Custom Classifers.
       */
-    var GrokPattern: GrokPattern
+    var GrokPattern: awsDashSdkLib.clientsGlueMod.GlueNs.GrokPattern
     /**
       * The time this classifier was last updated.
       */
@@ -2589,7 +2601,7 @@ object GlueNs extends js.Object {
     /**
       * A JsonPath string defining the JSON data for the classifier to classify. AWS Glue supports a subset of JsonPath, as described in Writing JsonPath Custom Classifiers.
       */
-    var JsonPath: JsonPath
+    var JsonPath: awsDashSdkLib.clientsGlueMod.GlueNs.JsonPath
     /**
       * The time this classifier was last updated.
       */
@@ -2756,6 +2768,9 @@ object GlueNs extends js.Object {
   
   trait LocationMap
     extends /* key */ org.scalablytyped.runtime.StringDictionary[ColumnValuesString]
+  
+  trait MapValue
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[GenericString]
   
   trait MappingEntry extends js.Object {
     /**
@@ -2926,7 +2941,7 @@ object GlueNs extends js.Object {
     /**
       * The security configuration to set.
       */
-    var DataCatalogEncryptionSettings: DataCatalogEncryptionSettings
+    var DataCatalogEncryptionSettings: awsDashSdkLib.clientsGlueMod.GlueNs.DataCatalogEncryptionSettings
   }
   
   trait PutDataCatalogEncryptionSettingsResponse extends js.Object
@@ -2957,7 +2972,7 @@ object GlueNs extends js.Object {
     /**
       * The name of the job in question.
       */
-    var JobName: JobName
+    var JobName: awsDashSdkLib.clientsGlueMod.GlueNs.JobName
   }
   
   trait ResetJobBookmarkResponse extends js.Object {
@@ -5731,7 +5746,7 @@ object GlueNs extends js.Object {
     /**
       * A ConnectionInput object that redefines the connection in question.
       */
-    var ConnectionInput: ConnectionInput
+    var ConnectionInput: awsDashSdkLib.clientsGlueMod.GlueNs.ConnectionInput
     /**
       * The name of the connection definition to update.
       */
@@ -5810,7 +5825,7 @@ object GlueNs extends js.Object {
     /**
       * A DatabaseInput object specifying the new definition of the metadata database in the catalog.
       */
-    var DatabaseInput: DatabaseInput
+    var DatabaseInput: awsDashSdkLib.clientsGlueMod.GlueNs.DatabaseInput
     /**
       * The name of the database to update in the catalog. For Hive compatibility, this is folded to lowercase.
       */
@@ -5821,6 +5836,10 @@ object GlueNs extends js.Object {
   
   trait UpdateDevEndpointRequest extends js.Object {
     /**
+      * The map of arguments to add the map of arguments used to configure the DevEndpoint.
+      */
+    var AddArguments: js.UndefOr[MapValue] = js.undefined
+    /**
       * The list of public keys for the DevEndpoint to use.
       */
     var AddPublicKeys: js.UndefOr[PublicKeysList] = js.undefined
@@ -5828,6 +5847,10 @@ object GlueNs extends js.Object {
       * Custom Python or Java libraries to be loaded in the DevEndpoint.
       */
     var CustomLibraries: js.UndefOr[DevEndpointCustomLibraries] = js.undefined
+    /**
+      * The list of argument keys to be deleted from the map of arguments used to configure the DevEndpoint.
+      */
+    var DeleteArguments: js.UndefOr[StringList] = js.undefined
     /**
       * The list of public keys to be deleted from the DevEndpoint.
       */
@@ -5875,7 +5898,7 @@ object GlueNs extends js.Object {
     /**
       * Specifies the values with which to update the job definition.
       */
-    var JobUpdate: JobUpdate
+    var JobUpdate: awsDashSdkLib.clientsGlueMod.GlueNs.JobUpdate
   }
   
   trait UpdateJobResponse extends js.Object {
@@ -5908,7 +5931,7 @@ object GlueNs extends js.Object {
     /**
       * The new partition object to which to update the partition.
       */
-    var PartitionInput: PartitionInput
+    var PartitionInput: awsDashSdkLib.clientsGlueMod.GlueNs.PartitionInput
     /**
       * A list of the values defining the partition.
       */
@@ -5937,7 +5960,7 @@ object GlueNs extends js.Object {
     /**
       * An updated TableInput object to define the metadata table in the catalog.
       */
-    var TableInput: TableInput
+    var TableInput: awsDashSdkLib.clientsGlueMod.GlueNs.TableInput
   }
   
   trait UpdateTableResponse extends js.Object
@@ -5950,7 +5973,7 @@ object GlueNs extends js.Object {
     /**
       * The new values with which to update the trigger.
       */
-    var TriggerUpdate: TriggerUpdate
+    var TriggerUpdate: awsDashSdkLib.clientsGlueMod.GlueNs.TriggerUpdate
   }
   
   trait UpdateTriggerResponse extends js.Object {
@@ -6050,7 +6073,7 @@ object GlueNs extends js.Object {
     /**
       * An identifier of the data format that the classifier matches.
       */
-    var Classification: Classification
+    var Classification: awsDashSdkLib.clientsGlueMod.GlueNs.Classification
     /**
       * The time this classifier was registered.
       */

@@ -23,18 +23,18 @@ object ProcessEvent {
     format: java.lang.String,
     get: scala.Boolean,
     get_inner: scala.Boolean,
-    isDefaultPrevented: js.Function0[scala.Boolean],
-    isImmediatePropagationStopped: js.Function0[scala.Boolean],
-    isPropagationStopped: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
+    isImmediatePropagationStopped: () => scala.Boolean,
+    isPropagationStopped: () => scala.Boolean,
     node: stdLib.Node,
-    preventDefault: js.Function0[scala.Unit],
+    preventDefault: () => scala.Unit,
     selection: tinymceLib.tinymceLibNumbers.`true`,
-    stopImmediatePropagation: js.Function0[scala.Unit],
-    stopPropagation: js.Function0[scala.Unit],
+    stopImmediatePropagation: () => scala.Unit,
+    stopPropagation: () => scala.Unit,
     target: java.lang.String,
     `type`: java.lang.String
   ): ProcessEvent = {
-    val __obj = js.Dynamic.literal(content = content, forced_root_block = forced_root_block, format = format, get = get, get_inner = get_inner, isDefaultPrevented = isDefaultPrevented, isImmediatePropagationStopped = isImmediatePropagationStopped, isPropagationStopped = isPropagationStopped, node = node, preventDefault = preventDefault, selection = selection, stopImmediatePropagation = stopImmediatePropagation, stopPropagation = stopPropagation, target = target)
+    val __obj = js.Dynamic.literal(content = content, forced_root_block = forced_root_block, format = format, get = get, get_inner = get_inner, isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), node = node, preventDefault = js.Any.fromFunction0(preventDefault), selection = selection, stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ProcessEvent]
   }

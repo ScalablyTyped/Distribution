@@ -14,14 +14,14 @@ trait ScrollViewChangeEvent extends ScrollViewEvent {
 object ScrollViewChangeEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: ScrollView,
     data: js.Any = null,
     element: kendoDashUiLib.JQuery = null,
     page: scala.Int | scala.Double = null
   ): ScrollViewChangeEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (data != null) __obj.updateDynamic("data")(data)
     if (element != null) __obj.updateDynamic("element")(element)
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])

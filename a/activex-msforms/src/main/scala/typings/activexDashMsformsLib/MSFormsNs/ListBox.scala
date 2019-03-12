@@ -52,10 +52,10 @@ class ListBox protected () extends js.Object {
   def AddItem(pvargItem: js.Any): scala.Unit = js.native
   def AddItem(pvargItem: js.Any, pvargIndex: js.Any): scala.Unit = js.native
   def Clear(): scala.Unit = js.native
-  def Column(): activexDashInteropLib.SafeArray[_] = js.native
+  def Column(): stdLib.SafeArray[_] = js.native
   def Column(pvargColumn: scala.Double): js.Any = js.native
   def Column(pvargColumn: scala.Double, pvargIndex: scala.Double): js.Any = js.native
-  def List(): activexDashInteropLib.SafeArray[_] = js.native
+  def List(): stdLib.SafeArray[_] = js.native
   def List(pvargIndex: scala.Double): js.Any = js.native
   def List(pvargIndex: scala.Double, pvargColumn: scala.Double): js.Any = js.native
   def RemoveItem(pvargIndex: js.Any): scala.Unit = js.native

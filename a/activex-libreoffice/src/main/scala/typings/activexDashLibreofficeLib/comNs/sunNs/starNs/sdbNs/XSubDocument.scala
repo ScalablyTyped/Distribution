@@ -40,12 +40,12 @@ trait XSubDocument extends js.Object {
 object XSubDocument {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Boolean],
-    open: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent],
-    openDesign: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent],
-    store: js.Function0[scala.Unit]
+    close: () => scala.Boolean,
+    open: () => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent,
+    openDesign: () => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent,
+    store: () => scala.Unit
   ): XSubDocument = {
-    val __obj = js.Dynamic.literal(close = close, open = open, openDesign = openDesign, store = store)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), open = js.Any.fromFunction0(open), openDesign = js.Any.fromFunction0(openDesign), store = js.Any.fromFunction0(store))
   
     __obj.asInstanceOf[XSubDocument]
   }

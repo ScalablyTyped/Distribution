@@ -13,10 +13,10 @@ trait ITextProcessor extends js.Object {
 object ITextProcessor {
   @scala.inline
   def apply(
-    processText: js.Function2[java.lang.String, scala.Boolean, java.lang.String],
-    processTextEx: js.Function3[java.lang.String, scala.Boolean, scala.Boolean, js.Any]
+    processText: (java.lang.String, scala.Boolean) => java.lang.String,
+    processTextEx: (java.lang.String, scala.Boolean, scala.Boolean) => js.Any
   ): ITextProcessor = {
-    val __obj = js.Dynamic.literal(processText = processText, processTextEx = processTextEx)
+    val __obj = js.Dynamic.literal(processText = js.Any.fromFunction2(processText), processTextEx = js.Any.fromFunction3(processTextEx))
   
     __obj.asInstanceOf[ITextProcessor]
   }

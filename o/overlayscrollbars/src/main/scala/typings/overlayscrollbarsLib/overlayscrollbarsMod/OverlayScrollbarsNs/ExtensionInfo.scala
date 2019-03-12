@@ -19,17 +19,11 @@ trait ExtensionInfo extends js.Object {
 object ExtensionInfo {
   @scala.inline
   def apply(
-    extensionFactory: js.Function4[
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbars, 
-      js.Object, 
-      Compatibility, 
-      js.Any, 
-      Extension
-    ],
+    extensionFactory: (overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbars, js.Object, Compatibility, js.Any) => Extension,
     name: java.lang.String,
     defaultOptions: js.Object = null
   ): ExtensionInfo = {
-    val __obj = js.Dynamic.literal(extensionFactory = extensionFactory, name = name)
+    val __obj = js.Dynamic.literal(extensionFactory = js.Any.fromFunction4(extensionFactory), name = name)
     if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions)
     __obj.asInstanceOf[ExtensionInfo]
   }

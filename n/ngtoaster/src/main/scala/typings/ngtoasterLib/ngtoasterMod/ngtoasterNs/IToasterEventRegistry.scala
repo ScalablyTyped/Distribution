@@ -16,13 +16,13 @@ trait IToasterEventRegistry extends js.Object {
 object IToasterEventRegistry {
   @scala.inline
   def apply(
-    setup: js.Function0[scala.Unit],
-    subscribeToClearToastsEvent: js.Function1[IToastEventListener, scala.Unit],
-    subscribeToNewToastEvent: js.Function1[IToastEventListener, scala.Unit],
-    unsubscribeToClearToastsEvent: js.Function1[IToastEventListener, scala.Unit],
-    unsubscribeToNewToastEvent: js.Function1[IToastEventListener, scala.Unit]
+    setup: () => scala.Unit,
+    subscribeToClearToastsEvent: IToastEventListener => scala.Unit,
+    subscribeToNewToastEvent: IToastEventListener => scala.Unit,
+    unsubscribeToClearToastsEvent: IToastEventListener => scala.Unit,
+    unsubscribeToNewToastEvent: IToastEventListener => scala.Unit
   ): IToasterEventRegistry = {
-    val __obj = js.Dynamic.literal(setup = setup, subscribeToClearToastsEvent = subscribeToClearToastsEvent, subscribeToNewToastEvent = subscribeToNewToastEvent, unsubscribeToClearToastsEvent = unsubscribeToClearToastsEvent, unsubscribeToNewToastEvent = unsubscribeToNewToastEvent)
+    val __obj = js.Dynamic.literal(setup = js.Any.fromFunction0(setup), subscribeToClearToastsEvent = js.Any.fromFunction1(subscribeToClearToastsEvent), subscribeToNewToastEvent = js.Any.fromFunction1(subscribeToNewToastEvent), unsubscribeToClearToastsEvent = js.Any.fromFunction1(unsubscribeToClearToastsEvent), unsubscribeToNewToastEvent = js.Any.fromFunction1(unsubscribeToNewToastEvent))
   
     __obj.asInstanceOf[IToasterEventRegistry]
   }

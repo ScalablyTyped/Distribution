@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 - activexDashExcelLib.ExcelNs.AddSheetResult because Already inherited */ @JSGlobal("Excel.DialogSheet")
 @js.native
 class DialogSheet protected () extends Sheet {
-  val Application: Application = js.native
-  val AutoFilter: AutoFilter = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
+  val AutoFilter: activexDashExcelLib.ExcelNs.AutoFilter = js.native
   val CodeName: java.lang.String = js.native
   @JSName("Comments")
   val Comments_Original: Comments = js.native
@@ -18,7 +18,7 @@ class DialogSheet protected () extends Sheet {
   @JSName("CustomProperties")
   val CustomProperties_Original: CustomProperties = js.native
   var DefaultButton: js.Any = js.native
-  val DialogFrame: DialogFrame = js.native
+  val DialogFrame: activexDashExcelLib.ExcelNs.DialogFrame = js.native
   var DisplayAutomaticPageBreaks: scala.Boolean = js.native
   var DisplayPageBreaks: scala.Boolean = js.native
   var DisplayRightToLeft: scala.Boolean = js.native
@@ -43,14 +43,14 @@ class DialogSheet protected () extends Sheet {
   var OnDoubleClick: java.lang.String = js.native
   var OnSheetActivate: java.lang.String = js.native
   var OnSheetDeactivate: java.lang.String = js.native
-  val PageSetup: PageSetup = js.native
+  val PageSetup: activexDashExcelLib.ExcelNs.PageSetup = js.native
   val Parent: js.Any = js.native
   val Previous: js.Any = js.native
   val PrintedCommentPages: scala.Double = js.native
   val ProtectContents: scala.Boolean = js.native
   val ProtectDrawingObjects: scala.Boolean = js.native
   val ProtectScenarios: scala.Boolean = js.native
-  val Protection: Protection = js.native
+  val Protection: activexDashExcelLib.ExcelNs.Protection = js.native
   val ProtectionMode: scala.Boolean = js.native
   @JSName("QueryTables")
   val QueryTables_Original: QueryTables = js.native
@@ -61,8 +61,8 @@ class DialogSheet protected () extends Sheet {
   val Shapes_Original: Shapes = js.native
   @JSName("SmartTags")
   val SmartTags_Original: SmartTags = js.native
-  val Sort: Sort = js.native
-  val Tab: Tab = js.native
+  val Sort: activexDashExcelLib.ExcelNs.Sort = js.native
+  val Tab: activexDashExcelLib.ExcelNs.Tab = js.native
   @JSName("VPageBreaks")
   val VPageBreaks_Original: VPageBreaks = js.native
   var Visible: XlSheetVisibility = js.native

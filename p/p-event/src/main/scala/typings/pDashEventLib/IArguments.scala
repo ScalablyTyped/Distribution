@@ -18,11 +18,11 @@ object IArguments {
   @scala.inline
   def apply(
     callee: Function,
-    iterator: js.Function0[IterableIterator[_]],
+    iterator: () => IterableIterator[_],
     length: scala.Double,
     NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[js.Any] = null
   ): IArguments = {
-    val __obj = js.Dynamic.literal(callee = callee, iterator = iterator, length = length)
+    val __obj = js.Dynamic.literal(callee = callee, iterator = js.Any.fromFunction0(iterator), length = length)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[IArguments]
   }

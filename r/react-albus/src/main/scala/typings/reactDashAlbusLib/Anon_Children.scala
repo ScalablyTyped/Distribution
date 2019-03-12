@@ -11,13 +11,8 @@ trait Anon_Children extends js.Object {
 
 object Anon_Children {
   @scala.inline
-  def apply(
-    children: js.Function1[
-      reactDashAlbusLib.reactDashAlbusMod.WizardContext, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]
-  ): Anon_Children = {
-    val __obj = js.Dynamic.literal(children = children)
+  def apply(children: reactDashAlbusLib.reactDashAlbusMod.WizardContext => reactLib.reactMod.ReactNs.ReactNode): Anon_Children = {
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
   
     __obj.asInstanceOf[Anon_Children]
   }

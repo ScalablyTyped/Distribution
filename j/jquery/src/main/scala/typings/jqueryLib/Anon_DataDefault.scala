@@ -17,13 +17,9 @@ trait Anon_DataDefault[TTarget, TData]
 object Anon_DataDefault {
   @scala.inline
   def apply[TTarget, TData](
-    _default: js.Function2[
-      jqueryLib.JQueryNs.TriggeredEvent[TTarget, TData, _, _], 
-      TData, 
-      scala.Unit | jqueryLib.jqueryLibNumbers.`false`
-    ]
+    _default: (jqueryLib.JQueryNs.TriggeredEvent[TTarget, TData, _, _], TData) => scala.Unit | jqueryLib.jqueryLibNumbers.`false`
   ): Anon_DataDefault[TTarget, TData] = {
-    val __obj = js.Dynamic.literal(_default = _default)
+    val __obj = js.Dynamic.literal(_default = js.Any.fromFunction2(_default))
   
     __obj.asInstanceOf[Anon_DataDefault[TTarget, TData]]
   }

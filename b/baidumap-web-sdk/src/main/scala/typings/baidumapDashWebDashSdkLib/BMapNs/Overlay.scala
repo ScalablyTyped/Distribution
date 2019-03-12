@@ -16,18 +16,18 @@ trait Overlay extends js.Object {
 object Overlay {
   @scala.inline
   def apply(
-    draw: js.Function0[scala.Unit] = null,
-    hide: js.Function0[scala.Unit] = null,
-    initialize: js.Function1[/* map */ Map, stdLib.HTMLElement] = null,
-    isVisible: js.Function0[scala.Boolean] = null,
-    show: js.Function0[scala.Unit] = null
+    draw: () => scala.Unit = null,
+    hide: () => scala.Unit = null,
+    initialize: /* map */ Map => stdLib.HTMLElement = null,
+    isVisible: () => scala.Boolean = null,
+    show: () => scala.Unit = null
   ): Overlay = {
     val __obj = js.Dynamic.literal()
-    if (draw != null) __obj.updateDynamic("draw")(draw)
-    if (hide != null) __obj.updateDynamic("hide")(hide)
-    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
-    if (isVisible != null) __obj.updateDynamic("isVisible")(isVisible)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (draw != null) __obj.updateDynamic("draw")(js.Any.fromFunction0(draw))
+    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction0(hide))
+    if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction1(initialize))
+    if (isVisible != null) __obj.updateDynamic("isVisible")(js.Any.fromFunction0(isVisible))
+    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction0(show))
     __obj.asInstanceOf[Overlay]
   }
 }

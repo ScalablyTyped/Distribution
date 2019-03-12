@@ -31,10 +31,10 @@ trait TabStripOptions extends js.Object {
 object TabStripOptions {
   @scala.inline
   def apply(
-    activate: js.Function1[/* e */ TabStripActivateEvent, scala.Unit] = null,
+    activate: /* e */ TabStripActivateEvent => scala.Unit = null,
     animation: scala.Boolean | TabStripAnimation = null,
     collapsible: js.UndefOr[scala.Boolean] = js.undefined,
-    contentLoad: js.Function1[/* e */ TabStripContentLoadEvent, scala.Unit] = null,
+    contentLoad: /* e */ TabStripContentLoadEvent => scala.Unit = null,
     contentUrls: js.Any = null,
     dataContentField: java.lang.String = null,
     dataContentUrlField: java.lang.String = null,
@@ -43,20 +43,20 @@ object TabStripOptions {
     dataSpriteCssClass: java.lang.String = null,
     dataTextField: java.lang.String = null,
     dataUrlField: java.lang.String = null,
-    error: js.Function1[/* e */ TabStripErrorEvent, scala.Unit] = null,
+    error: /* e */ TabStripErrorEvent => scala.Unit = null,
     name: java.lang.String = null,
     navigatable: js.UndefOr[scala.Boolean] = js.undefined,
     scrollable: scala.Boolean | TabStripScrollable = null,
-    select: js.Function1[/* e */ TabStripSelectEvent, scala.Unit] = null,
-    show: js.Function1[/* e */ TabStripShowEvent, scala.Unit] = null,
+    select: /* e */ TabStripSelectEvent => scala.Unit = null,
+    show: /* e */ TabStripShowEvent => scala.Unit = null,
     tabPosition: java.lang.String = null,
     value: java.lang.String = null
   ): TabStripOptions = {
     val __obj = js.Dynamic.literal()
-    if (activate != null) __obj.updateDynamic("activate")(activate)
+    if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction1(activate))
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
-    if (contentLoad != null) __obj.updateDynamic("contentLoad")(contentLoad)
+    if (contentLoad != null) __obj.updateDynamic("contentLoad")(js.Any.fromFunction1(contentLoad))
     if (contentUrls != null) __obj.updateDynamic("contentUrls")(contentUrls)
     if (dataContentField != null) __obj.updateDynamic("dataContentField")(dataContentField)
     if (dataContentUrlField != null) __obj.updateDynamic("dataContentUrlField")(dataContentUrlField)
@@ -65,12 +65,12 @@ object TabStripOptions {
     if (dataSpriteCssClass != null) __obj.updateDynamic("dataSpriteCssClass")(dataSpriteCssClass)
     if (dataTextField != null) __obj.updateDynamic("dataTextField")(dataTextField)
     if (dataUrlField != null) __obj.updateDynamic("dataUrlField")(dataUrlField)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable)
     if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(select)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
+    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
     if (tabPosition != null) __obj.updateDynamic("tabPosition")(tabPosition)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[TabStripOptions]

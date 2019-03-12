@@ -17,7 +17,7 @@ trait HotNotifierInfo extends js.Object {
   /**
     * For errors: the thrown error
     */
-  var error: js.UndefOr[nodeLib.Error] = js.undefined
+  var error: js.UndefOr[stdLib.Error] = js.undefined
   /**
     * The module in question.
     */
@@ -26,7 +26,7 @@ trait HotNotifierInfo extends js.Object {
     * For self-accept-error-handler-errored: the error thrown by the module
     * before the error handler tried to handle it.
     */
-  var originalError: js.UndefOr[nodeLib.Error] = js.undefined
+  var originalError: js.UndefOr[stdLib.Error] = js.undefined
   /**
     * For accepted: The location of accept handlers that will handle the update
     */
@@ -49,8 +49,8 @@ object HotNotifierInfo {
     `type`: webpackDashEnvLib.webpackDashEnvLibStrings.`self-declined` | webpackDashEnvLib.webpackDashEnvLibStrings.declined | webpackDashEnvLib.webpackDashEnvLibStrings.unaccepted | webpackDashEnvLib.webpackDashEnvLibStrings.accepted | webpackDashEnvLib.webpackDashEnvLibStrings.disposed | webpackDashEnvLib.webpackDashEnvLibStrings.`accept-errored` | webpackDashEnvLib.webpackDashEnvLibStrings.`self-accept-errored` | webpackDashEnvLib.webpackDashEnvLibStrings.`self-accept-error-handler-errored`,
     chain: js.Array[scala.Double] = null,
     dependencyId: scala.Int | scala.Double = null,
-    error: nodeLib.Error = null,
-    originalError: nodeLib.Error = null,
+    error: stdLib.Error = null,
+    originalError: stdLib.Error = null,
     outdatedDependencies: org.scalablytyped.runtime.NumberDictionary[js.Array[scala.Double]] = null,
     outdatedModules: js.Array[scala.Double] = null,
     parentId: scala.Int | scala.Double = null

@@ -25,12 +25,12 @@ object SlideVisibleLayersProperties {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     id: java.lang.String = null,
     sublayerIds: js.Array[scala.Double] = null
   ): SlideVisibleLayersProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (id != null) __obj.updateDynamic("id")(id)
     if (sublayerIds != null) __obj.updateDynamic("sublayerIds")(sublayerIds)
     __obj.asInstanceOf[SlideVisibleLayersProperties]

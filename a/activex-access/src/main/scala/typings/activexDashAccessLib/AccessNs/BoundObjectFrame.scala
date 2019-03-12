@@ -13,7 +13,7 @@ class BoundObjectFrame protected () extends js.Object {
   var AddColon: scala.Boolean = js.native
   var AfterUpdate: java.lang.String = js.native
   var AfterUpdateMacro: java.lang.String = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   var AutoActivate: scala.Double = js.native
   var AutoLabel: scala.Boolean = js.native
   var BackColor: scala.Double = js.native

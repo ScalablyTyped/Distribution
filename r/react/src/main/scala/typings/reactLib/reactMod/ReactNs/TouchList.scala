@@ -15,12 +15,12 @@ trait TouchList
 object TouchList {
   @scala.inline
   def apply(
-    identifiedTouch: js.Function1[scala.Double, Touch],
-    item: js.Function1[scala.Double, Touch],
+    identifiedTouch: scala.Double => Touch,
+    item: scala.Double => Touch,
     length: scala.Double,
     NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Touch] = null
   ): TouchList = {
-    val __obj = js.Dynamic.literal(identifiedTouch = identifiedTouch, item = item, length = length)
+    val __obj = js.Dynamic.literal(identifiedTouch = js.Any.fromFunction1(identifiedTouch), item = js.Any.fromFunction1(item), length = length)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[TouchList]
   }

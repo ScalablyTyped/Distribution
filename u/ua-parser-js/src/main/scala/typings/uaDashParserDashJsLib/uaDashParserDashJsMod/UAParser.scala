@@ -43,16 +43,16 @@ trait UAParser extends js.Object {
 object UAParser {
   @scala.inline
   def apply(
-    getBrowser: js.Function0[uaDashParserDashJsLib.IUAParserNs.IBrowser],
-    getCPU: js.Function0[uaDashParserDashJsLib.IUAParserNs.ICPU],
-    getDevice: js.Function0[uaDashParserDashJsLib.IUAParserNs.IDevice],
-    getEngine: js.Function0[uaDashParserDashJsLib.IUAParserNs.IEngine],
-    getOS: js.Function0[uaDashParserDashJsLib.IUAParserNs.IOS],
-    getResult: js.Function0[uaDashParserDashJsLib.IUAParserNs.IResult],
-    getUA: js.Function0[java.lang.String],
-    setUA: js.Function1[java.lang.String, UAParser]
+    getBrowser: () => uaDashParserDashJsLib.IUAParserNs.IBrowser,
+    getCPU: () => uaDashParserDashJsLib.IUAParserNs.ICPU,
+    getDevice: () => uaDashParserDashJsLib.IUAParserNs.IDevice,
+    getEngine: () => uaDashParserDashJsLib.IUAParserNs.IEngine,
+    getOS: () => uaDashParserDashJsLib.IUAParserNs.IOS,
+    getResult: () => uaDashParserDashJsLib.IUAParserNs.IResult,
+    getUA: () => java.lang.String,
+    setUA: java.lang.String => UAParser
   ): UAParser = {
-    val __obj = js.Dynamic.literal(getBrowser = getBrowser, getCPU = getCPU, getDevice = getDevice, getEngine = getEngine, getOS = getOS, getResult = getResult, getUA = getUA, setUA = setUA)
+    val __obj = js.Dynamic.literal(getBrowser = js.Any.fromFunction0(getBrowser), getCPU = js.Any.fromFunction0(getCPU), getDevice = js.Any.fromFunction0(getDevice), getEngine = js.Any.fromFunction0(getEngine), getOS = js.Any.fromFunction0(getOS), getResult = js.Any.fromFunction0(getResult), getUA = js.Any.fromFunction0(getUA), setUA = js.Any.fromFunction1(setUA))
   
     __obj.asInstanceOf[UAParser]
   }

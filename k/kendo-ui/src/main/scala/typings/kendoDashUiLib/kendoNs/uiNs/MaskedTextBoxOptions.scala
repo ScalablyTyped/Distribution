@@ -20,7 +20,7 @@ trait MaskedTextBoxOptions extends js.Object {
 object MaskedTextBoxOptions {
   @scala.inline
   def apply(
-    change: js.Function1[/* e */ MaskedTextBoxChangeEvent, scala.Unit] = null,
+    change: /* e */ MaskedTextBoxChangeEvent => scala.Unit = null,
     clearPromptChar: js.UndefOr[scala.Boolean] = js.undefined,
     culture: java.lang.String = null,
     mask: java.lang.String = null,
@@ -31,7 +31,7 @@ object MaskedTextBoxOptions {
     value: java.lang.String = null
   ): MaskedTextBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (!js.isUndefined(clearPromptChar)) __obj.updateDynamic("clearPromptChar")(clearPromptChar)
     if (culture != null) __obj.updateDynamic("culture")(culture)
     if (mask != null) __obj.updateDynamic("mask")(mask)

@@ -18,13 +18,13 @@ object RevealDependency {
   def apply(
     src: java.lang.String,
     async: js.UndefOr[scala.Boolean] = js.undefined,
-    callback: js.Function0[scala.Unit] = null,
-    condition: js.Function0[scala.Boolean] = null
+    callback: () => scala.Unit = null,
+    condition: () => scala.Boolean = null
   ): RevealDependency = {
     val __obj = js.Dynamic.literal(src = src)
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
+    if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction0(condition))
     __obj.asInstanceOf[RevealDependency]
   }
 }

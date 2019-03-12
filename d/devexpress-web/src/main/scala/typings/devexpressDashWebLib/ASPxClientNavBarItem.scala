@@ -79,22 +79,22 @@ trait ASPxClientNavBarItem extends js.Object {
 object ASPxClientNavBarItem {
   @scala.inline
   def apply(
-    GetEnabled: js.Function0[scala.Boolean],
-    GetImageUrl: js.Function0[java.lang.String],
-    GetNavigateUrl: js.Function0[java.lang.String],
-    GetText: js.Function0[java.lang.String],
-    GetVisible: js.Function0[scala.Boolean],
-    SetEnabled: js.Function1[scala.Boolean, scala.Unit],
-    SetImageUrl: js.Function1[java.lang.String, scala.Unit],
-    SetNavigateUrl: js.Function1[java.lang.String, scala.Unit],
-    SetText: js.Function1[java.lang.String, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    GetEnabled: () => scala.Boolean,
+    GetImageUrl: () => java.lang.String,
+    GetNavigateUrl: () => java.lang.String,
+    GetText: () => java.lang.String,
+    GetVisible: () => scala.Boolean,
+    SetEnabled: scala.Boolean => scala.Unit,
+    SetImageUrl: java.lang.String => scala.Unit,
+    SetNavigateUrl: java.lang.String => scala.Unit,
+    SetText: java.lang.String => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
     group: ASPxClientNavBarGroup,
     index: scala.Double,
     name: java.lang.String,
     navBar: ASPxClientNavBar
   ): ASPxClientNavBarItem = {
-    val __obj = js.Dynamic.literal(GetEnabled = GetEnabled, GetImageUrl = GetImageUrl, GetNavigateUrl = GetNavigateUrl, GetText = GetText, GetVisible = GetVisible, SetEnabled = SetEnabled, SetImageUrl = SetImageUrl, SetNavigateUrl = SetNavigateUrl, SetText = SetText, SetVisible = SetVisible, group = group, index = index, name = name, navBar = navBar)
+    val __obj = js.Dynamic.literal(GetEnabled = js.Any.fromFunction0(GetEnabled), GetImageUrl = js.Any.fromFunction0(GetImageUrl), GetNavigateUrl = js.Any.fromFunction0(GetNavigateUrl), GetText = js.Any.fromFunction0(GetText), GetVisible = js.Any.fromFunction0(GetVisible), SetEnabled = js.Any.fromFunction1(SetEnabled), SetImageUrl = js.Any.fromFunction1(SetImageUrl), SetNavigateUrl = js.Any.fromFunction1(SetNavigateUrl), SetText = js.Any.fromFunction1(SetText), SetVisible = js.Any.fromFunction1(SetVisible), group = group, index = index, name = name, navBar = navBar)
   
     __obj.asInstanceOf[ASPxClientNavBarItem]
   }

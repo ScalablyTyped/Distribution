@@ -10,20 +10,20 @@ import scala.scalajs.js.annotation._
 class DocumentWindow protected () extends js.Object {
   val Active: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   val ActivePane: Pane = js.native
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   var BlackAndWhite: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   val Caption: java.lang.String = js.native
   var Height: scala.Double = js.native
   var Left: scala.Double = js.native
-  val Panes: Panes = js.native
+  val Panes: activexDashPowerpointLib.PowerPointNs.Panes = js.native
   val Parent: js.Any = js.native
   var `PowerPoint.DocumentWindow_typekey`: DocumentWindow = js.native
-  val Presentation: Presentation = js.native
-  val Selection: Selection = js.native
+  val Presentation: activexDashPowerpointLib.PowerPointNs.Presentation = js.native
+  val Selection: activexDashPowerpointLib.PowerPointNs.Selection = js.native
   var SplitHorizontal: scala.Double = js.native
   var SplitVertical: scala.Double = js.native
   var Top: scala.Double = js.native
-  val View: View = js.native
+  val View: activexDashPowerpointLib.PowerPointNs.View = js.native
   var ViewType: PpViewType = js.native
   var Width: scala.Double = js.native
   var WindowState: PpWindowState = js.native

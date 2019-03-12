@@ -70,12 +70,9 @@ trait predominance extends js.Object {
 object predominance {
   @scala.inline
   def apply(
-    createRenderer: js.Function1[
-      predominanceCreateRendererParams, 
-      arcgisDashJsDashApiLib.IPromise[predominanceRendererResult]
-    ]
+    createRenderer: predominanceCreateRendererParams => arcgisDashJsDashApiLib.IPromise[predominanceRendererResult]
   ): predominance = {
-    val __obj = js.Dynamic.literal(createRenderer = createRenderer)
+    val __obj = js.Dynamic.literal(createRenderer = js.Any.fromFunction1(createRenderer))
   
     __obj.asInstanceOf[predominance]
   }

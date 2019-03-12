@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.Shading")
 @js.native
 class Shading protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var BackgroundPatternColor: WdColor = js.native
   var BackgroundPatternColorIndex: WdColorIndex = js.native
   val Creator: scala.Double = js.native

@@ -135,29 +135,29 @@ trait IgDoughnutChartMethods extends js.Object {
 object IgDoughnutChartMethods {
   @scala.inline
   def apply(
-    addItem: js.Function1[js.Object, js.Object],
-    addSeries: js.Function1[js.Object, scala.Unit],
-    chart: js.Function0[js.Object],
-    dataBind: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    exportVisualData: js.Function0[js.Object],
-    findIndexOfItem: js.Function1[js.Object, scala.Double],
-    flush: js.Function0[scala.Unit],
-    getCenterCoordinates: js.Function0[js.Object],
-    getData: js.Function1[java.lang.String, js.Object],
-    getDataItem: js.Function1[js.Object, js.Object],
-    getHoleRadius: js.Function0[scala.Double],
-    insertItem: js.Function2[js.Object, scala.Double, js.Object],
-    notifyClearItems: js.Function1[js.Object, js.Object],
-    notifyInsertItem: js.Function3[js.Object, scala.Double, js.Object, js.Object],
-    notifyRemoveItem: js.Function3[js.Object, scala.Double, js.Object, js.Object],
-    notifySetItem: js.Function4[js.Object, scala.Double, js.Object, js.Object, js.Object],
-    removeItem: js.Function1[scala.Double, js.Object],
-    removeSeries: js.Function1[js.Object, scala.Unit],
-    setItem: js.Function2[scala.Double, js.Object, js.Object],
-    updateSeries: js.Function1[js.Object, scala.Unit]
+    addItem: js.Object => js.Object,
+    addSeries: js.Object => scala.Unit,
+    chart: () => js.Object,
+    dataBind: () => scala.Unit,
+    destroy: () => scala.Unit,
+    exportVisualData: () => js.Object,
+    findIndexOfItem: js.Object => scala.Double,
+    flush: () => scala.Unit,
+    getCenterCoordinates: () => js.Object,
+    getData: java.lang.String => js.Object,
+    getDataItem: js.Object => js.Object,
+    getHoleRadius: () => scala.Double,
+    insertItem: (js.Object, scala.Double) => js.Object,
+    notifyClearItems: js.Object => js.Object,
+    notifyInsertItem: (js.Object, scala.Double, js.Object) => js.Object,
+    notifyRemoveItem: (js.Object, scala.Double, js.Object) => js.Object,
+    notifySetItem: (js.Object, scala.Double, js.Object, js.Object) => js.Object,
+    removeItem: scala.Double => js.Object,
+    removeSeries: js.Object => scala.Unit,
+    setItem: (scala.Double, js.Object) => js.Object,
+    updateSeries: js.Object => scala.Unit
   ): IgDoughnutChartMethods = {
-    val __obj = js.Dynamic.literal(addItem = addItem, addSeries = addSeries, chart = chart, dataBind = dataBind, destroy = destroy, exportVisualData = exportVisualData, findIndexOfItem = findIndexOfItem, flush = flush, getCenterCoordinates = getCenterCoordinates, getData = getData, getDataItem = getDataItem, getHoleRadius = getHoleRadius, insertItem = insertItem, notifyClearItems = notifyClearItems, notifyInsertItem = notifyInsertItem, notifyRemoveItem = notifyRemoveItem, notifySetItem = notifySetItem, removeItem = removeItem, removeSeries = removeSeries, setItem = setItem, updateSeries = updateSeries)
+    val __obj = js.Dynamic.literal(addItem = js.Any.fromFunction1(addItem), addSeries = js.Any.fromFunction1(addSeries), chart = js.Any.fromFunction0(chart), dataBind = js.Any.fromFunction0(dataBind), destroy = js.Any.fromFunction0(destroy), exportVisualData = js.Any.fromFunction0(exportVisualData), findIndexOfItem = js.Any.fromFunction1(findIndexOfItem), flush = js.Any.fromFunction0(flush), getCenterCoordinates = js.Any.fromFunction0(getCenterCoordinates), getData = js.Any.fromFunction1(getData), getDataItem = js.Any.fromFunction1(getDataItem), getHoleRadius = js.Any.fromFunction0(getHoleRadius), insertItem = js.Any.fromFunction2(insertItem), notifyClearItems = js.Any.fromFunction1(notifyClearItems), notifyInsertItem = js.Any.fromFunction3(notifyInsertItem), notifyRemoveItem = js.Any.fromFunction3(notifyRemoveItem), notifySetItem = js.Any.fromFunction4(notifySetItem), removeItem = js.Any.fromFunction1(removeItem), removeSeries = js.Any.fromFunction1(removeSeries), setItem = js.Any.fromFunction2(setItem), updateSeries = js.Any.fromFunction1(updateSeries))
   
     __obj.asInstanceOf[IgDoughnutChartMethods]
   }

@@ -31,8 +31,8 @@ object RateProps {
     count: scala.Int | scala.Double = null,
     defaultValue: scala.Int | scala.Double = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function1[/* value */ scala.Double, _] = null,
-    onHoverChange: js.Function1[/* value */ scala.Double, _] = null,
+    onChange: /* value */ scala.Double => _ = null,
+    onHoverChange: /* value */ scala.Double => _ = null,
     prefixCls: java.lang.String = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     tooltips: js.Array[java.lang.String] = null,
@@ -46,8 +46,8 @@ object RateProps {
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onHoverChange != null) __obj.updateDynamic("onHoverChange")(onHoverChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onHoverChange != null) __obj.updateDynamic("onHoverChange")(js.Any.fromFunction1(onHoverChange))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (style != null) __obj.updateDynamic("style")(style)
     if (tooltips != null) __obj.updateDynamic("tooltips")(tooltips)

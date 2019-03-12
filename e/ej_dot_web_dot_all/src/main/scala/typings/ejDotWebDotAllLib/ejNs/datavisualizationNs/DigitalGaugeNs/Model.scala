@@ -73,40 +73,40 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    Click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
-    doubleClick: js.Function1[/* e */ DoubleClickEventArgs, scala.Unit] = null,
+    Click: /* e */ ClickEventArgs => scala.Unit = null,
+    doubleClick: /* e */ DoubleClickEventArgs => scala.Unit = null,
     enableResize: js.UndefOr[scala.Boolean] = js.undefined,
     exportSettings: ExportSettings = null,
     frame: Frame = null,
     height: scala.Int | scala.Double = null,
-    init: js.Function1[/* e */ InitEventArgs, scala.Unit] = null,
+    init: /* e */ InitEventArgs => scala.Unit = null,
     isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
-    itemRendering: js.Function1[/* e */ ItemRenderingEventArgs, scala.Unit] = null,
+    itemRendering: /* e */ ItemRenderingEventArgs => scala.Unit = null,
     items: js.Array[Item] = null,
-    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    load: /* e */ LoadEventArgs => scala.Unit = null,
     matrixSegmentData: js.Any = null,
-    renderComplete: js.Function1[/* e */ RenderCompleteEventArgs, scala.Unit] = null,
-    rightClick: js.Function1[/* e */ RightClickEventArgs, scala.Unit] = null,
+    renderComplete: /* e */ RenderCompleteEventArgs => scala.Unit = null,
+    rightClick: /* e */ RightClickEventArgs => scala.Unit = null,
     segmentData: js.Any = null,
     themes: java.lang.String = null,
     value: java.lang.String = null,
     width: scala.Int | scala.Double = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (Click != null) __obj.updateDynamic("Click")(Click)
-    if (doubleClick != null) __obj.updateDynamic("doubleClick")(doubleClick)
+    if (Click != null) __obj.updateDynamic("Click")(js.Any.fromFunction1(Click))
+    if (doubleClick != null) __obj.updateDynamic("doubleClick")(js.Any.fromFunction1(doubleClick))
     if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize)
     if (exportSettings != null) __obj.updateDynamic("exportSettings")(exportSettings)
     if (frame != null) __obj.updateDynamic("frame")(frame)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (init != null) __obj.updateDynamic("init")(init)
+    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
-    if (itemRendering != null) __obj.updateDynamic("itemRendering")(itemRendering)
+    if (itemRendering != null) __obj.updateDynamic("itemRendering")(js.Any.fromFunction1(itemRendering))
     if (items != null) __obj.updateDynamic("items")(items)
-    if (load != null) __obj.updateDynamic("load")(load)
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (matrixSegmentData != null) __obj.updateDynamic("matrixSegmentData")(matrixSegmentData)
-    if (renderComplete != null) __obj.updateDynamic("renderComplete")(renderComplete)
-    if (rightClick != null) __obj.updateDynamic("rightClick")(rightClick)
+    if (renderComplete != null) __obj.updateDynamic("renderComplete")(js.Any.fromFunction1(renderComplete))
+    if (rightClick != null) __obj.updateDynamic("rightClick")(js.Any.fromFunction1(rightClick))
     if (segmentData != null) __obj.updateDynamic("segmentData")(segmentData)
     if (themes != null) __obj.updateDynamic("themes")(themes)
     if (value != null) __obj.updateDynamic("value")(value)

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var FastClick: fastclickLib.FastClickStatic = js.native
+  var FastClick: FastClickStatic = js.native
 }
 

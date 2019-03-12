@@ -16,13 +16,13 @@ trait ISetPropertiesParamsOfMultipleObjects extends js.Object {
 object ISetPropertiesParamsOfMultipleObjects {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, ISetPropertiesParams, scala.Unit],
-    Clone: js.Function0[ISetPropertiesParamsOfMultipleObjects],
+    Add: (scala.Double, ISetPropertiesParams) => scala.Unit,
+    Clone: () => ISetPropertiesParamsOfMultipleObjects,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, ISetPropertiesParams],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => ISetPropertiesParams,
+    Remove: scala.Double => scala.Unit
   ): ISetPropertiesParamsOfMultipleObjects = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[ISetPropertiesParamsOfMultipleObjects]
   }

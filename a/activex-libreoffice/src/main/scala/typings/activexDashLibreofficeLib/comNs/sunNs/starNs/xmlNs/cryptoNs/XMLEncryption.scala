@@ -13,14 +13,14 @@ trait XMLEncryption
 object XMLEncryption {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    decrypt: js.Function2[XXMLEncryptionTemplate, XXMLSecurityContext, XXMLEncryptionTemplate],
-    encrypt: js.Function2[XXMLEncryptionTemplate, XSecurityEnvironment, XXMLEncryptionTemplate],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    decrypt: (XXMLEncryptionTemplate, XXMLSecurityContext) => XXMLEncryptionTemplate,
+    encrypt: (XXMLEncryptionTemplate, XSecurityEnvironment) => XXMLEncryptionTemplate,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XMLEncryption = {
-    val __obj = js.Dynamic.literal(acquire = acquire, decrypt = decrypt, encrypt = encrypt, initialize = initialize, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), decrypt = js.Any.fromFunction2(decrypt), encrypt = js.Any.fromFunction2(encrypt), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XMLEncryption]
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Page protected () extends js.Object {
   var `Access.Page_typekey`: Page = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   var Caption: java.lang.String = js.native
   var ControlName: java.lang.String = js.native
   var ControlTipText: java.lang.String = js.native

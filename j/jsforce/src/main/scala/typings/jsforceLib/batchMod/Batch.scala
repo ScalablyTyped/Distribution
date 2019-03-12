@@ -16,7 +16,7 @@ class Batch ()
   def execute(
     input: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* result */ js.Array[jsforceLib.recordDashResultMod.RecordResult] | js.Array[BatchResultInfo], 
       scala.Unit
     ]
@@ -25,7 +25,7 @@ class Batch ()
   def execute(
     input: js.Array[jsforceLib.recordMod.Record[_]],
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* result */ js.Array[jsforceLib.recordDashResultMod.RecordResult] | js.Array[BatchResultInfo], 
       scala.Unit
     ]
@@ -34,7 +34,7 @@ class Batch ()
   def execute(
     input: nodeLib.streamMod.Stream,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* result */ js.Array[jsforceLib.recordDashResultMod.RecordResult] | js.Array[BatchResultInfo], 
       scala.Unit
     ]

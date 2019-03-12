@@ -26,13 +26,10 @@ object IPointerPointTransform {
   @scala.inline
   def apply(
     inverse: IPointerPointTransform,
-    transformBounds: js.Function1[
-      winrtDashUwpLib.WindowsNs.FoundationNs.Rect, 
-      winrtDashUwpLib.WindowsNs.FoundationNs.Rect
-    ],
-    tryTransform: js.Function1[winrtDashUwpLib.WindowsNs.FoundationNs.Point, winrtDashUwpLib.Anon_OutPoint]
+    transformBounds: winrtDashUwpLib.WindowsNs.FoundationNs.Rect => winrtDashUwpLib.WindowsNs.FoundationNs.Rect,
+    tryTransform: winrtDashUwpLib.WindowsNs.FoundationNs.Point => winrtDashUwpLib.Anon_OutPoint
   ): IPointerPointTransform = {
-    val __obj = js.Dynamic.literal(inverse = inverse, transformBounds = transformBounds, tryTransform = tryTransform)
+    val __obj = js.Dynamic.literal(inverse = inverse, transformBounds = js.Any.fromFunction1(transformBounds), tryTransform = js.Any.fromFunction1(tryTransform))
   
     __obj.asInstanceOf[IPointerPointTransform]
   }

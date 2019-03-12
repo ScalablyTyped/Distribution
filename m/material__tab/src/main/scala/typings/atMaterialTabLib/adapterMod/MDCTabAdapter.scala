@@ -35,14 +35,14 @@ trait MDCTabAdapter extends js.Object {
 object MDCTabAdapter {
   @scala.inline
   def apply(
-    addClass: js.Function1[java.lang.String, scala.Unit],
-    deregisterEventHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    hasClass: js.Function1[java.lang.String, scala.Boolean],
-    registerEventHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    removeClass: js.Function1[java.lang.String, scala.Unit],
-    setAttr: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    addClass: java.lang.String => scala.Unit,
+    deregisterEventHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    hasClass: java.lang.String => scala.Boolean,
+    registerEventHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    removeClass: java.lang.String => scala.Unit,
+    setAttr: (java.lang.String, java.lang.String) => scala.Unit
   ): MDCTabAdapter = {
-    val __obj = js.Dynamic.literal(addClass = addClass, deregisterEventHandler = deregisterEventHandler, hasClass = hasClass, registerEventHandler = registerEventHandler, removeClass = removeClass, setAttr = setAttr)
+    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), deregisterEventHandler = js.Any.fromFunction2(deregisterEventHandler), hasClass = js.Any.fromFunction1(hasClass), registerEventHandler = js.Any.fromFunction2(registerEventHandler), removeClass = js.Any.fromFunction1(removeClass), setAttr = js.Any.fromFunction2(setAttr))
   
     __obj.asInstanceOf[MDCTabAdapter]
   }

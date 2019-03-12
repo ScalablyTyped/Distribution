@@ -20,12 +20,12 @@ object PortalProps {
     children: reactLib.reactMod.ReactNs.ReactElement[_],
     container: reactLib.reactMod.ReactNs.ReactInstance | js.Function0[reactLib.reactMod.ReactNs.ReactInstance] = null,
     disablePortal: js.UndefOr[scala.Boolean] = js.undefined,
-    onRendered: js.Function0[scala.Unit] = null
+    onRendered: () => scala.Unit = null
   ): PortalProps = {
     val __obj = js.Dynamic.literal(children = children)
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(disablePortal)) __obj.updateDynamic("disablePortal")(disablePortal)
-    if (onRendered != null) __obj.updateDynamic("onRendered")(onRendered)
+    if (onRendered != null) __obj.updateDynamic("onRendered")(js.Any.fromFunction0(onRendered))
     __obj.asInstanceOf[PortalProps]
   }
 }

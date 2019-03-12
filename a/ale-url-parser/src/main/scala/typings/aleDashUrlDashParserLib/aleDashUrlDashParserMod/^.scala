@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ale-url-parser", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def parse(url: java.lang.String): aleDashUrlDashParserLib.aleDashUrlDashParserMod.UrlObject = js.native
-  def stringify(urlObject: aleDashUrlDashParserLib.aleDashUrlDashParserMod.UrlObject): java.lang.String = js.native
+  def parse(url: java.lang.String): UrlObject = js.native
+  def stringify(urlObject: UrlObject): java.lang.String = js.native
 }
 

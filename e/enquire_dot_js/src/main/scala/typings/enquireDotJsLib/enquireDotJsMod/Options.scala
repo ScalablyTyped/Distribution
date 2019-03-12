@@ -32,17 +32,17 @@ object Options {
   @scala.inline
   def apply(
     deferSetup: js.UndefOr[scala.Boolean] = js.undefined,
-    destroy: js.Function0[scala.Unit] = null,
-    `match`: js.Function0[scala.Unit] = null,
-    setup: js.Function0[scala.Unit] = null,
-    unmatch: js.Function0[scala.Unit] = null
+    destroy: () => scala.Unit = null,
+    `match`: () => scala.Unit = null,
+    setup: () => scala.Unit = null,
+    unmatch: () => scala.Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(deferSetup)) __obj.updateDynamic("deferSetup")(deferSetup)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (`match` != null) __obj.updateDynamic("match")(`match`)
-    if (setup != null) __obj.updateDynamic("setup")(setup)
-    if (unmatch != null) __obj.updateDynamic("unmatch")(unmatch)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
+    if (`match` != null) __obj.updateDynamic("match")(js.Any.fromFunction0(`match`))
+    if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction0(setup))
+    if (unmatch != null) __obj.updateDynamic("unmatch")(js.Any.fromFunction0(unmatch))
     __obj.asInstanceOf[Options]
   }
 }

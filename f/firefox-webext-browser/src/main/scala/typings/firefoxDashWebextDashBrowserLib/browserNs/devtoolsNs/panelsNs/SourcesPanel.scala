@@ -26,10 +26,10 @@ object SourcesPanel {
   @scala.inline
   def apply(
     onSelectionChanged: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function0[scala.Unit]],
-    createSidebarPane: js.Function1[/* title */ java.lang.String, js.Promise[js.UndefOr[ExtensionSidebarPane]]] = null
+    createSidebarPane: /* title */ java.lang.String => js.Promise[js.UndefOr[ExtensionSidebarPane]] = null
   ): SourcesPanel = {
     val __obj = js.Dynamic.literal(onSelectionChanged = onSelectionChanged)
-    if (createSidebarPane != null) __obj.updateDynamic("createSidebarPane")(createSidebarPane)
+    if (createSidebarPane != null) __obj.updateDynamic("createSidebarPane")(js.Any.fromFunction1(createSidebarPane))
     __obj.asInstanceOf[SourcesPanel]
   }
 }

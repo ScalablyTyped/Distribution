@@ -20,7 +20,7 @@ class PreparedStatement ()
   def execute(
     values: js.Object,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       /* result */ js.UndefOr[IProcedureResult[_]], 
       scala.Unit
     ]
@@ -31,7 +31,7 @@ class PreparedStatement ()
   def execute_Entity[Entity](
     values: js.Object,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       /* result */ js.UndefOr[IProcedureResult[Entity]], 
       scala.Unit
     ]
@@ -44,13 +44,13 @@ class PreparedStatement ()
   def prepare(statement: java.lang.String): PreparedStatement = js.native
   def prepare(
     statement: java.lang.String,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): PreparedStatement = js.native
   @JSName("prepare")
   def prepare_Promise(): js.Promise[scala.Unit] = js.native
   @JSName("prepare")
   def prepare_Promise(statement: java.lang.String): js.Promise[scala.Unit] = js.native
   def unprepare(): js.Promise[scala.Unit] = js.native
-  def unprepare(callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]): PreparedStatement = js.native
+  def unprepare(callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]): PreparedStatement = js.native
 }
 

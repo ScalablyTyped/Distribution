@@ -13,10 +13,10 @@ trait Anon_Expected extends js.Object {
 object Anon_Expected {
   @scala.inline
   def apply(
-    SyntaxError: js.Function4[java.lang.String, java.lang.String, java.lang.String, js.Any, scala.Unit],
-    parse: js.Function1[java.lang.String, js.Any]
+    SyntaxError: (java.lang.String, java.lang.String, java.lang.String, js.Any) => scala.Unit,
+    parse: java.lang.String => js.Any
   ): Anon_Expected = {
-    val __obj = js.Dynamic.literal(SyntaxError = SyntaxError, parse = parse)
+    val __obj = js.Dynamic.literal(SyntaxError = js.Any.fromFunction4(SyntaxError), parse = js.Any.fromFunction1(parse))
   
     __obj.asInstanceOf[Anon_Expected]
   }

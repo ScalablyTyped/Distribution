@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react/dist/commonjs/views/Statistic/StatisticValue", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.StatelessComponent[
-    semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticValueMod.StatisticValueProps
-  ] = js.native
+  val default: reactLib.reactMod.ReactNs.StatelessComponent[StatisticValueProps] = js.native
 }
 

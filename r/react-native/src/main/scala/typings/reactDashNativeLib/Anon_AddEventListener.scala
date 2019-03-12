@@ -20,11 +20,11 @@ trait Anon_AddEventListener extends js.Object {
 object Anon_AddEventListener {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* result */ scala.Boolean, scala.Unit], scala.Unit],
-    fetch: js.Function0[js.Promise[scala.Boolean]],
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* result */ scala.Boolean, scala.Unit], scala.Unit]
+    addEventListener: (java.lang.String, js.Function1[/* result */ scala.Boolean, scala.Unit]) => scala.Unit,
+    fetch: () => js.Promise[scala.Boolean],
+    removeEventListener: (java.lang.String, js.Function1[/* result */ scala.Boolean, scala.Unit]) => scala.Unit
   ): Anon_AddEventListener = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, fetch = fetch, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), fetch = js.Any.fromFunction0(fetch), removeEventListener = js.Any.fromFunction2(removeEventListener))
   
     __obj.asInstanceOf[Anon_AddEventListener]
   }

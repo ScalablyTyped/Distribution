@@ -50,15 +50,15 @@ object XAccessibleRelationSet {
   @scala.inline
   def apply(
     RelationCount: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    containsRelation: js.Function1[scala.Double, scala.Boolean],
-    getRelation: js.Function1[scala.Double, AccessibleRelation],
-    getRelationByType: js.Function1[scala.Double, AccessibleRelation],
-    getRelationCount: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    containsRelation: scala.Double => scala.Boolean,
+    getRelation: scala.Double => AccessibleRelation,
+    getRelationByType: scala.Double => AccessibleRelation,
+    getRelationCount: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAccessibleRelationSet = {
-    val __obj = js.Dynamic.literal(RelationCount = RelationCount, acquire = acquire, containsRelation = containsRelation, getRelation = getRelation, getRelationByType = getRelationByType, getRelationCount = getRelationCount, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(RelationCount = RelationCount, acquire = js.Any.fromFunction0(acquire), containsRelation = js.Any.fromFunction1(containsRelation), getRelation = js.Any.fromFunction1(getRelation), getRelationByType = js.Any.fromFunction1(getRelationByType), getRelationCount = js.Any.fromFunction0(getRelationCount), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAccessibleRelationSet]
   }

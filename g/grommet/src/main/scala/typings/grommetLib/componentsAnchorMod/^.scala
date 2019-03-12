@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Anchor: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsAnchorMod.AnchorProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    AnchorProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement], 
       reactLib.HTMLAnchorElement
     ]), 

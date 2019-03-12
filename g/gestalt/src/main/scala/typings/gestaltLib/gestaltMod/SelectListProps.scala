@@ -23,7 +23,7 @@ object SelectListProps {
   @scala.inline
   def apply(
     id: java.lang.String,
-    onChange: js.Function1[gestaltLib.Anon_EventValue, scala.Unit],
+    onChange: gestaltLib.Anon_EventValue => scala.Unit,
     options: js.Array[gestaltLib.Anon_Label],
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     errorMessage: java.lang.String = null,
@@ -32,7 +32,7 @@ object SelectListProps {
     placeholder: java.lang.String = null,
     value: java.lang.String = null
   ): SelectListProps = {
-    val __obj = js.Dynamic.literal(id = id, onChange = onChange, options = options)
+    val __obj = js.Dynamic.literal(id = id, onChange = js.Any.fromFunction1(onChange), options = options)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
     if (idealErrorDirection != null) __obj.updateDynamic("idealErrorDirection")(idealErrorDirection.asInstanceOf[js.Any])

@@ -12,8 +12,8 @@ trait Anon_ErrorFailure extends js.Object {
 
 object Anon_ErrorFailure {
   @scala.inline
-  def apply(failure: js.Function1[stdLib.Error, js.Any], success: js.Function0[js.Any]): Anon_ErrorFailure = {
-    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  def apply(failure: stdLib.Error => js.Any, success: () => js.Any): Anon_ErrorFailure = {
+    val __obj = js.Dynamic.literal(failure = js.Any.fromFunction1(failure), success = js.Any.fromFunction0(success))
   
     __obj.asInstanceOf[Anon_ErrorFailure]
   }

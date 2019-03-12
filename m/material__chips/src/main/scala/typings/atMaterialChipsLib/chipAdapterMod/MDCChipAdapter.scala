@@ -58,23 +58,23 @@ trait MDCChipAdapter extends js.Object {
 object MDCChipAdapter {
   @scala.inline
   def apply(
-    addClass: js.Function1[java.lang.String, scala.Unit],
-    addClassToLeadingIcon: js.Function1[java.lang.String, scala.Unit],
-    deregisterEventHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    deregisterTrailingIconInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    eventTargetHasClass: js.Function2[stdLib.EventTarget, java.lang.String, scala.Boolean],
-    getComputedStyleValue: js.Function1[java.lang.String, java.lang.String],
-    hasClass: js.Function1[java.lang.String, scala.Boolean],
-    notifyInteraction: js.Function0[scala.Unit],
-    notifyRemoval: js.Function0[scala.Unit],
-    notifyTrailingIconInteraction: js.Function0[scala.Unit],
-    registerEventHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    registerTrailingIconInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    removeClass: js.Function1[java.lang.String, scala.Unit],
-    removeClassFromLeadingIcon: js.Function1[java.lang.String, scala.Unit],
-    setStyleProperty: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    addClass: java.lang.String => scala.Unit,
+    addClassToLeadingIcon: java.lang.String => scala.Unit,
+    deregisterEventHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    deregisterTrailingIconInteractionHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    eventTargetHasClass: (stdLib.EventTarget, java.lang.String) => scala.Boolean,
+    getComputedStyleValue: java.lang.String => java.lang.String,
+    hasClass: java.lang.String => scala.Boolean,
+    notifyInteraction: () => scala.Unit,
+    notifyRemoval: () => scala.Unit,
+    notifyTrailingIconInteraction: () => scala.Unit,
+    registerEventHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    registerTrailingIconInteractionHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    removeClass: java.lang.String => scala.Unit,
+    removeClassFromLeadingIcon: java.lang.String => scala.Unit,
+    setStyleProperty: (java.lang.String, java.lang.String) => scala.Unit
   ): MDCChipAdapter = {
-    val __obj = js.Dynamic.literal(addClass = addClass, addClassToLeadingIcon = addClassToLeadingIcon, deregisterEventHandler = deregisterEventHandler, deregisterTrailingIconInteractionHandler = deregisterTrailingIconInteractionHandler, eventTargetHasClass = eventTargetHasClass, getComputedStyleValue = getComputedStyleValue, hasClass = hasClass, notifyInteraction = notifyInteraction, notifyRemoval = notifyRemoval, notifyTrailingIconInteraction = notifyTrailingIconInteraction, registerEventHandler = registerEventHandler, registerTrailingIconInteractionHandler = registerTrailingIconInteractionHandler, removeClass = removeClass, removeClassFromLeadingIcon = removeClassFromLeadingIcon, setStyleProperty = setStyleProperty)
+    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), addClassToLeadingIcon = js.Any.fromFunction1(addClassToLeadingIcon), deregisterEventHandler = js.Any.fromFunction2(deregisterEventHandler), deregisterTrailingIconInteractionHandler = js.Any.fromFunction2(deregisterTrailingIconInteractionHandler), eventTargetHasClass = js.Any.fromFunction2(eventTargetHasClass), getComputedStyleValue = js.Any.fromFunction1(getComputedStyleValue), hasClass = js.Any.fromFunction1(hasClass), notifyInteraction = js.Any.fromFunction0(notifyInteraction), notifyRemoval = js.Any.fromFunction0(notifyRemoval), notifyTrailingIconInteraction = js.Any.fromFunction0(notifyTrailingIconInteraction), registerEventHandler = js.Any.fromFunction2(registerEventHandler), registerTrailingIconInteractionHandler = js.Any.fromFunction2(registerTrailingIconInteractionHandler), removeClass = js.Any.fromFunction1(removeClass), removeClassFromLeadingIcon = js.Any.fromFunction1(removeClassFromLeadingIcon), setStyleProperty = js.Any.fromFunction2(setStyleProperty))
   
     __obj.asInstanceOf[MDCChipAdapter]
   }

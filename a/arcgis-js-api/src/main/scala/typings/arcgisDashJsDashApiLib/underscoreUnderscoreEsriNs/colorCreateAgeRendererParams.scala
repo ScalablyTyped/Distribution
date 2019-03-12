@@ -122,9 +122,9 @@ object colorCreateAgeRendererParams {
   def apply(
     constructor: js.Function,
     endTime: stdLib.Date | java.lang.String | scala.Double,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     layer: FeatureLayer | SceneLayer | CSVLayer,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     startTime: stdLib.Date | java.lang.String | scala.Double,
     view: View,
     basemap: java.lang.String | Basemap = null,
@@ -137,7 +137,7 @@ object colorCreateAgeRendererParams {
     theme: java.lang.String = null,
     unit: java.lang.String = null
   ): colorCreateAgeRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, endTime = endTime.asInstanceOf[js.Any], hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable, startTime = startTime.asInstanceOf[js.Any], view = view)
+    val __obj = js.Dynamic.literal(constructor = constructor, endTime = endTime.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), startTime = startTime.asInstanceOf[js.Any], view = view)
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (colorMixMode != null) __obj.updateDynamic("colorMixMode")(colorMixMode)
     if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme)

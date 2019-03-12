@@ -28,17 +28,14 @@ trait Request extends js.Object {
 object Request {
   @scala.inline
   def apply(
-    get: js.Function1[java.lang.String, js.UndefOr[_]],
-    is: js.Function1[
-      js.Array[java.lang.String], 
-      java.lang.String | oauth2DashServerLib.oauth2DashServerLibNumbers.`false`
-    ],
+    get: java.lang.String => js.UndefOr[_],
+    is: js.Array[java.lang.String] => java.lang.String | oauth2DashServerLib.oauth2DashServerLibNumbers.`false`,
     body: js.Any = null,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     method: java.lang.String = null,
     query: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): Request = {
-    val __obj = js.Dynamic.literal(get = get, is = is)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), is = js.Any.fromFunction1(is))
     if (body != null) __obj.updateDynamic("body")(body)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (method != null) __obj.updateDynamic("method")(method)

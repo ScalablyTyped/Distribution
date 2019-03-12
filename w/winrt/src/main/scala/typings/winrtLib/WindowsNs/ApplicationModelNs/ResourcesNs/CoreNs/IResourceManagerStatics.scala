@@ -12,8 +12,8 @@ trait IResourceManagerStatics extends js.Object {
 
 object IResourceManagerStatics {
   @scala.inline
-  def apply(current: ResourceManager, isResourceReference: js.Function1[java.lang.String, scala.Boolean]): IResourceManagerStatics = {
-    val __obj = js.Dynamic.literal(current = current, isResourceReference = isResourceReference)
+  def apply(current: ResourceManager, isResourceReference: java.lang.String => scala.Boolean): IResourceManagerStatics = {
+    val __obj = js.Dynamic.literal(current = current, isResourceReference = js.Any.fromFunction1(isResourceReference))
   
     __obj.asInstanceOf[IResourceManagerStatics]
   }

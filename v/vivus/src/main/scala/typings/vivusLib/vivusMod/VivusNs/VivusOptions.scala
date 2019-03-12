@@ -92,7 +92,7 @@ object VivusOptions {
     duration: scala.Int | scala.Double = null,
     file: java.lang.String = null,
     forceRender: js.UndefOr[scala.Boolean] = js.undefined,
-    onReady: js.Function1[/* vivusInstance */ vivusLib.vivusMod.Vivus, scala.Unit] = null,
+    onReady: /* vivusInstance */ vivusLib.vivusMod.Vivus => scala.Unit = null,
     pathTimingFunction: TimingFunction = null,
     reverseStack: js.UndefOr[scala.Boolean] = js.undefined,
     selfDestroy: js.UndefOr[scala.Boolean] = js.undefined,
@@ -106,7 +106,7 @@ object VivusOptions {
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file)
     if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender)
-    if (onReady != null) __obj.updateDynamic("onReady")(onReady)
+    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction1(onReady))
     if (pathTimingFunction != null) __obj.updateDynamic("pathTimingFunction")(pathTimingFunction)
     if (!js.isUndefined(reverseStack)) __obj.updateDynamic("reverseStack")(reverseStack)
     if (!js.isUndefined(selfDestroy)) __obj.updateDynamic("selfDestroy")(selfDestroy)

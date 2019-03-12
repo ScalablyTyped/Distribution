@@ -22,19 +22,19 @@ trait ExpoMixpanelAnalytics extends js.Object {
 object ExpoMixpanelAnalytics {
   @scala.inline
   def apply(
-    identify: js.Function1[java.lang.String, scala.Unit],
-    people_append: js.Function1[Props[_], scala.Unit],
-    people_delete_user: js.Function0[scala.Unit],
-    people_increment: js.Function1[Props[scala.Double], scala.Unit],
-    people_set: js.Function1[Props[_], scala.Unit],
-    people_set_once: js.Function1[Props[_], scala.Unit],
-    people_union: js.Function1[Props[js.Array[java.lang.String]], scala.Unit],
-    people_unset: js.Function1[js.Array[java.lang.String], scala.Unit],
-    reset: js.Function0[scala.Unit],
+    identify: java.lang.String => scala.Unit,
+    people_append: Props[_] => scala.Unit,
+    people_delete_user: () => scala.Unit,
+    people_increment: Props[scala.Double] => scala.Unit,
+    people_set: Props[_] => scala.Unit,
+    people_set_once: Props[_] => scala.Unit,
+    people_union: Props[js.Array[java.lang.String]] => scala.Unit,
+    people_unset: js.Array[java.lang.String] => scala.Unit,
+    reset: () => scala.Unit,
     token: java.lang.String,
-    track: js.Function2[java.lang.String, Props[_], scala.Unit]
+    track: (java.lang.String, Props[_]) => scala.Unit
   ): ExpoMixpanelAnalytics = {
-    val __obj = js.Dynamic.literal(identify = identify, people_append = people_append, people_delete_user = people_delete_user, people_increment = people_increment, people_set = people_set, people_set_once = people_set_once, people_union = people_union, people_unset = people_unset, reset = reset, token = token, track = track)
+    val __obj = js.Dynamic.literal(identify = js.Any.fromFunction1(identify), people_append = js.Any.fromFunction1(people_append), people_delete_user = js.Any.fromFunction0(people_delete_user), people_increment = js.Any.fromFunction1(people_increment), people_set = js.Any.fromFunction1(people_set), people_set_once = js.Any.fromFunction1(people_set_once), people_union = js.Any.fromFunction1(people_union), people_unset = js.Any.fromFunction1(people_unset), reset = js.Any.fromFunction0(reset), token = token, track = js.Any.fromFunction2(track))
   
     __obj.asInstanceOf[ExpoMixpanelAnalytics]
   }

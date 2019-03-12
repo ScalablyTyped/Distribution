@@ -13,8 +13,8 @@ trait HOC extends js.Object {
 
 object HOC {
   @scala.inline
-  def apply(methods: js.Object, onLoad: js.Function0[scala.Unit], onUnload: js.Function0[scala.Unit]): HOC = {
-    val __obj = js.Dynamic.literal(methods = methods, onLoad = onLoad, onUnload = onUnload)
+  def apply(methods: js.Object, onLoad: () => scala.Unit, onUnload: () => scala.Unit): HOC = {
+    val __obj = js.Dynamic.literal(methods = methods, onLoad = js.Any.fromFunction0(onLoad), onUnload = js.Any.fromFunction0(onUnload))
   
     __obj.asInstanceOf[HOC]
   }

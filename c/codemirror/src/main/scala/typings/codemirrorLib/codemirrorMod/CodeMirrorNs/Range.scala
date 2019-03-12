@@ -14,8 +14,8 @@ trait Range extends js.Object {
 
 object Range {
   @scala.inline
-  def apply(anchor: Position, from: js.Function0[Position], head: Position, to: js.Function0[Position]): Range = {
-    val __obj = js.Dynamic.literal(anchor = anchor, from = from, head = head, to = to)
+  def apply(anchor: Position, from: () => Position, head: Position, to: () => Position): Range = {
+    val __obj = js.Dynamic.literal(anchor = anchor, from = js.Any.fromFunction0(from), head = head, to = js.Any.fromFunction0(to))
   
     __obj.asInstanceOf[Range]
   }

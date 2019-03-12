@@ -84,14 +84,14 @@ object ^ extends js.Object {
     /* fa */ fpDashTsLib.libReaderMod.Reader[_, _], 
     js.Function1[/* e */ _, fpDashTsLib.libHKTMod.Type3[F, _, _, _]]
   ] = js.native
-  def getReaderT[M](M: fpDashTsLib.libMonadMod.Monad[M]): fpDashTsLib.libReaderTMod.ReaderT[M] = js.native
-  def getReaderT[M /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libMonadMod.Monad1[M]): fpDashTsLib.libReaderTMod.ReaderT1[M] = js.native
-  def getReaderT[M /* <: fpDashTsLib.libHKTMod.URIS2 */](M: fpDashTsLib.libMonadMod.Monad2[M]): fpDashTsLib.libReaderTMod.ReaderT2[M] = js.native
-  def getReaderT[M /* <: fpDashTsLib.libHKTMod.URIS3 */](M: fpDashTsLib.libMonadMod.Monad3[M]): fpDashTsLib.libReaderTMod.ReaderT3[M] = js.native
-  def getReaderT2v[M](M: fpDashTsLib.libMonadMod.Monad[M]): fpDashTsLib.libReaderTMod.ReaderT2v[M] = js.native
-  def getReaderT2v[M /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libMonadMod.Monad1[M]): fpDashTsLib.libReaderTMod.ReaderT2v1[M] = js.native
-  def getReaderT2v[M /* <: fpDashTsLib.libHKTMod.URIS2 */](M: fpDashTsLib.libMonadMod.Monad2[M]): fpDashTsLib.libReaderTMod.ReaderT2v2[M] = js.native
-  def getReaderT2v[M /* <: fpDashTsLib.libHKTMod.URIS3 */](M: fpDashTsLib.libMonadMod.Monad3[M]): fpDashTsLib.libReaderTMod.ReaderT2v3[M] = js.native
+  def getReaderT[M](M: fpDashTsLib.libMonadMod.Monad[M]): ReaderT[M] = js.native
+  def getReaderT[M /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libMonadMod.Monad1[M]): ReaderT1[M] = js.native
+  def getReaderT[M /* <: fpDashTsLib.libHKTMod.URIS2 */](M: fpDashTsLib.libMonadMod.Monad2[M]): ReaderT2[M] = js.native
+  def getReaderT[M /* <: fpDashTsLib.libHKTMod.URIS3 */](M: fpDashTsLib.libMonadMod.Monad3[M]): ReaderT3[M] = js.native
+  def getReaderT2v[M](M: fpDashTsLib.libMonadMod.Monad[M]): ReaderT2v[M] = js.native
+  def getReaderT2v[M /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libMonadMod.Monad1[M]): ReaderT2v1[M] = js.native
+  def getReaderT2v[M /* <: fpDashTsLib.libHKTMod.URIS2 */](M: fpDashTsLib.libMonadMod.Monad2[M]): ReaderT2v2[M] = js.native
+  def getReaderT2v[M /* <: fpDashTsLib.libHKTMod.URIS3 */](M: fpDashTsLib.libMonadMod.Monad3[M]): ReaderT2v3[M] = js.native
   def map[F](F: fpDashTsLib.libFunctorMod.Functor[F]): js.Function2[
     /* f */ js.Function1[/* a */ js.Any, _], 
     /* fa */ js.Function1[/* e */ js.Any, fpDashTsLib.libHKTMod.HKT[F, _]], 

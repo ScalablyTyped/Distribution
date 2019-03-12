@@ -81,7 +81,7 @@ trait ComboBox
   /** specifies that the content of the control cannot be modified by the user. */
   var ReadOnly: scala.Boolean = js.native
   /** specifies the list of items. */
-  var StringItemList: activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  var StringItemList: stdLib.SafeArray[java.lang.String] = js.native
   /** specifies that the control can be reached with the TAB key. */
   var Tabstop: scala.Boolean = js.native
   /** specifies the text displayed in the control. */

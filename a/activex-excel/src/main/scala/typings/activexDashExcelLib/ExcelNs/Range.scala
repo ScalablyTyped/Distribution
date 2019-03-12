@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Range extends js.Object {
   var AddIndent: scala.Boolean = js.native
   val AllowEdit: scala.Boolean = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   @JSName("Areas")
   val Areas_Original: Areas = js.native
   @JSName("Borders")
@@ -20,7 +20,7 @@ trait Range extends js.Object {
   var ColumnWidth: scala.Double | scala.Null = js.native
   @JSName("Columns")
   val Columns_Original: Range = js.native
-  val Comment: Comment = js.native
+  val Comment: activexDashExcelLib.ExcelNs.Comment = js.native
   val Count: scala.Double = js.native
   val CountLarge: scala.Double = js.native
   val Creator: XlCreator = js.native
@@ -34,23 +34,23 @@ trait Range extends js.Object {
   val DirectDependents_Original: Range = js.native
   @JSName("DirectPrecedents")
   val DirectPrecedents_Original: Range = js.native
-  val DisplayFormat: DisplayFormat = js.native
+  val DisplayFormat: activexDashExcelLib.ExcelNs.DisplayFormat = js.native
   @JSName("EntireColumn")
   val EntireColumn_Original: Range = js.native
   @JSName("EntireRow")
   val EntireRow_Original: Range = js.native
   @JSName("Errors")
   val Errors_Original: Errors = js.native
-  val Font: Font = js.native
+  val Font: activexDashExcelLib.ExcelNs.Font = js.native
   @JSName("FormatConditions")
   val FormatConditions_Original: FormatConditions = js.native
-  var Formula: java.lang.String | activexDashInteropLib.SafeArray[java.lang.String] = js.native
-  var FormulaArray: java.lang.String | activexDashInteropLib.SafeArray[java.lang.String] | scala.Null = js.native
+  var Formula: java.lang.String | stdLib.SafeArray[java.lang.String] = js.native
+  var FormulaArray: java.lang.String | stdLib.SafeArray[java.lang.String] | scala.Null = js.native
   var FormulaHidden: scala.Boolean | scala.Null = js.native
   var FormulaLabel: XlFormulaLabel = js.native
-  var FormulaLocal: java.lang.String | activexDashInteropLib.SafeArray[java.lang.String] = js.native
-  var FormulaR1C1: java.lang.String | activexDashInteropLib.SafeArray[java.lang.String] = js.native
-  var FormulaR1C1Local: java.lang.String | activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  var FormulaLocal: java.lang.String | stdLib.SafeArray[java.lang.String] = js.native
+  var FormulaR1C1: java.lang.String | stdLib.SafeArray[java.lang.String] = js.native
+  var FormulaR1C1Local: java.lang.String | stdLib.SafeArray[java.lang.String] = js.native
   val HasArray: scala.Boolean = js.native
   val HasFormula: scala.Boolean | scala.Null = js.native
   var Height: scala.Double = js.native
@@ -60,10 +60,10 @@ trait Range extends js.Object {
   val Hyperlinks_Original: Hyperlinks = js.native
   var ID: java.lang.String = js.native
   var IndentLevel: activexDashExcelLib.activexDashExcelLibNumbers.`0` | activexDashExcelLib.activexDashExcelLibNumbers.`1` | activexDashExcelLib.activexDashExcelLibNumbers.`2` | activexDashExcelLib.activexDashExcelLibNumbers.`3` | activexDashExcelLib.activexDashExcelLibNumbers.`4` | activexDashExcelLib.activexDashExcelLibNumbers.`5` | activexDashExcelLib.activexDashExcelLibNumbers.`6` | activexDashExcelLib.activexDashExcelLibNumbers.`7` | activexDashExcelLib.activexDashExcelLibNumbers.`8` | activexDashExcelLib.activexDashExcelLibNumbers.`9` | activexDashExcelLib.activexDashExcelLibNumbers.`10` | activexDashExcelLib.activexDashExcelLibNumbers.`11` | activexDashExcelLib.activexDashExcelLibNumbers.`12` | activexDashExcelLib.activexDashExcelLibNumbers.`13` | activexDashExcelLib.activexDashExcelLibNumbers.`14` | activexDashExcelLib.activexDashExcelLibNumbers.`15` = js.native
-  val Interior: Interior = js.native
+  val Interior: activexDashExcelLib.ExcelNs.Interior = js.native
   val Left: scala.Double = js.native
   val ListHeaderRows: scala.Double = js.native
-  val ListObject: ListObject = js.native
+  val ListObject: activexDashExcelLib.ExcelNs.ListObject = js.native
   val LocationInTable: XlLocationInTable = js.native
   var Locked: scala.Boolean | scala.Null = js.native
   val MDX: java.lang.String = js.native
@@ -79,19 +79,19 @@ trait Range extends js.Object {
   var OutlineLevel: scala.Double = js.native
   var PageBreak: scala.Double = js.native
   val Parent: js.Any = js.native
-  val Phonetic: Phonetic = js.native
+  val Phonetic: activexDashExcelLib.ExcelNs.Phonetic = js.native
   @JSName("Phonetics")
   val Phonetics_Original: Phonetics = js.native
-  val PivotCell: PivotCell = js.native
-  val PivotField: PivotField = js.native
-  val PivotItem: PivotItem = js.native
-  val PivotTable: PivotTable = js.native
+  val PivotCell: activexDashExcelLib.ExcelNs.PivotCell = js.native
+  val PivotField: activexDashExcelLib.ExcelNs.PivotField = js.native
+  val PivotItem: activexDashExcelLib.ExcelNs.PivotItem = js.native
+  val PivotTable: activexDashExcelLib.ExcelNs.PivotTable = js.native
   @JSName("Precedents")
   val Precedents_Original: Range = js.native
   val PrefixCharacter: activexDashExcelLib.activexDashExcelLibStrings._quote | activexDashExcelLib.activexDashExcelLibStrings.BACKSLASH | activexDashExcelLib.activexDashExcelLibStrings.`_backtick^_backtick` | activexDashExcelLib.activexDashExcelLibStrings.BACKSLASHBACKSLASH | activexDashExcelLib.activexDashExcelLibStrings.Empty = js.native
   @JSName("Previous")
   val Previous_Original: Range = js.native
-  val QueryTable: QueryTable = js.native
+  val QueryTable: activexDashExcelLib.ExcelNs.QueryTable = js.native
   var ReadingOrder: scala.Double = js.native
   val Row: scala.Double = js.native
   var RowHeight: scala.Double | scala.Null = js.native
@@ -103,25 +103,25 @@ trait Range extends js.Object {
   var ShrinkToFit: scala.Boolean | scala.Null = js.native
   @JSName("SmartTags")
   val SmartTags_Original: SmartTags = js.native
-  val SoundNote: SoundNote = js.native
+  val SoundNote: activexDashExcelLib.ExcelNs.SoundNote = js.native
   @JSName("SparklineGroups")
   val SparklineGroups_Original: SparklineGroups = js.native
-  var Style: Style = js.native
+  var Style: activexDashExcelLib.ExcelNs.Style = js.native
   val Summary: scala.Boolean = js.native
   val Text: java.lang.String = js.native
   val Top: scala.Double = js.native
   var UseStandardHeight: scala.Boolean | scala.Null = js.native
   var UseStandardWidth: scala.Boolean | scala.Null = js.native
-  val Validation: Validation = js.native
+  val Validation: activexDashExcelLib.ExcelNs.Validation = js.native
   var Value2: js.Any = js.native
   // tslint:disable-next-line: ban-types
   @JSName("Value")
   var Value_Original: (stdLib.Exclude[_, js.Function]) with (js.Function1[/* RangeValueDataType */ js.UndefOr[XlRangeValueDataType], _]) = js.native
   var VerticalAlignment: VerticalAlignments = js.native
   val Width: scala.Double = js.native
-  val Worksheet: Worksheet = js.native
+  val Worksheet: activexDashExcelLib.ExcelNs.Worksheet = js.native
   var WrapText: scala.Boolean | scala.Null = js.native
-  val XPath: XPath = js.native
+  val XPath: activexDashExcelLib.ExcelNs.XPath = js.native
   def apply(Address: java.lang.String): Range = js.native
   def apply(RowIndex: scala.Double): Range = js.native
   def apply(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native
@@ -177,7 +177,7 @@ trait Range extends js.Object {
   def AllocateChanges(): scala.Unit = js.native
   /** @param Order [Order=1] */
   def ApplyNames(
-    Names: js.UndefOr[activexDashInteropLib.SafeArray[java.lang.String]],
+    Names: js.UndefOr[stdLib.SafeArray[java.lang.String]],
     IgnoreRelativeAbsolute: js.UndefOr[scala.Boolean],
     UseRowColumnNames: js.UndefOr[scala.Boolean],
     OmitColumn: js.UndefOr[scala.Boolean],
@@ -248,9 +248,9 @@ trait Range extends js.Object {
   def Cells(Address: java.lang.String): Range = js.native
   def Cells(RowIndex: scala.Double): Range = js.native
   def Cells(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native
-  def Characters(): Characters = js.native
-  def Characters(Start: scala.Double): Characters = js.native
-  def Characters(Start: scala.Double, Length: scala.Double): Characters = js.native
+  def Characters(): activexDashExcelLib.ExcelNs.Characters = js.native
+  def Characters(Start: scala.Double): activexDashExcelLib.ExcelNs.Characters = js.native
+  def Characters(Start: scala.Double, Length: scala.Double): activexDashExcelLib.ExcelNs.Characters = js.native
   def CheckSpelling(): js.Any = js.native
   def CheckSpelling(CustomDictionary: java.lang.String): js.Any = js.native
   def CheckSpelling(CustomDictionary: java.lang.String, IgnoreUppercase: scala.Boolean): js.Any = js.native
@@ -273,21 +273,21 @@ trait Range extends js.Object {
   def Columns(RowIndex: scala.Double): Range = js.native
   def Columns(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native
   def Consolidate(): js.Any = js.native
-  def Consolidate(Sources: activexDashInteropLib.SafeArray[java.lang.String]): js.Any = js.native
-  def Consolidate(Sources: activexDashInteropLib.SafeArray[java.lang.String], Function: XlConsolidationFunction): js.Any = js.native
+  def Consolidate(Sources: stdLib.SafeArray[java.lang.String]): js.Any = js.native
+  def Consolidate(Sources: stdLib.SafeArray[java.lang.String], Function: XlConsolidationFunction): js.Any = js.native
   def Consolidate(
-    Sources: activexDashInteropLib.SafeArray[java.lang.String],
+    Sources: stdLib.SafeArray[java.lang.String],
     Function: XlConsolidationFunction,
     TopRow: scala.Boolean
   ): js.Any = js.native
   def Consolidate(
-    Sources: activexDashInteropLib.SafeArray[java.lang.String],
+    Sources: stdLib.SafeArray[java.lang.String],
     Function: XlConsolidationFunction,
     TopRow: scala.Boolean,
     LeftColumn: scala.Boolean
   ): js.Any = js.native
   def Consolidate(
-    Sources: activexDashInteropLib.SafeArray[java.lang.String],
+    Sources: stdLib.SafeArray[java.lang.String],
     Function: XlConsolidationFunction,
     TopRow: scala.Boolean,
     LeftColumn: scala.Boolean,
@@ -456,12 +456,7 @@ trait Range extends js.Object {
   def Group(Start: js.Any): js.Any = js.native
   def Group(Start: js.Any, End: js.Any): js.Any = js.native
   def Group(Start: js.Any, End: js.Any, By: scala.Double): js.Any = js.native
-  def Group(
-    Start: js.Any,
-    End: js.Any,
-    By: scala.Double,
-    Periods: activexDashInteropLib.SafeArray[scala.Boolean]
-  ): js.Any = js.native
+  def Group(Start: js.Any, End: js.Any, By: scala.Double, Periods: stdLib.SafeArray[scala.Boolean]): js.Any = js.native
   def Hyperlinks(Index: java.lang.String): Hyperlink = js.native
   def Hyperlinks(Index: scala.Double): Hyperlink = js.native
   def Insert(): js.Any = js.native
@@ -528,15 +523,15 @@ trait Range extends js.Object {
   ): js.Any = js.native
   def PrintPreview(): js.Any = js.native
   def PrintPreview(EnableChanges: scala.Boolean): js.Any = js.native
-  def Range(Cell1: Range): Range = js.native
-  def Range(Cell1: Range, Cell2: Range): Range = js.native
-  def Range(Cell1: Range, Cell2: java.lang.String): Range = js.native
-  def Range(Cell1: java.lang.String): Range = js.native
-  def Range(Cell1: java.lang.String, Cell2: Range): Range = js.native
-  def Range(Cell1: java.lang.String, Cell2: java.lang.String): Range = js.native
+  def Range(Cell1: Range): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(Cell1: Range, Cell2: Range): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(Cell1: Range, Cell2: java.lang.String): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(Cell1: java.lang.String): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(Cell1: java.lang.String, Cell2: Range): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(Cell1: java.lang.String, Cell2: java.lang.String): activexDashExcelLib.ExcelNs.Range = js.native
   /** @param Header [Header=2] */
-  def RemoveDuplicates(Columns: activexDashInteropLib.SafeArray[scala.Double]): scala.Unit = js.native
-  def RemoveDuplicates(Columns: activexDashInteropLib.SafeArray[scala.Double], Header: XlYesNoGuess): scala.Unit = js.native
+  def RemoveDuplicates(Columns: stdLib.SafeArray[scala.Double]): scala.Unit = js.native
+  def RemoveDuplicates(Columns: stdLib.SafeArray[scala.Double], Header: XlYesNoGuess): scala.Unit = js.native
   def RemoveSubtotal(): js.Any = js.native
   def Replace(
     What: java.lang.String,
@@ -684,14 +679,14 @@ trait Range extends js.Object {
   def Subtotal(
     GroupBy: scala.Double,
     Function: XlConsolidationFunction,
-    TotalList: activexDashInteropLib.SafeArray[scala.Double],
+    TotalList: stdLib.SafeArray[scala.Double],
     Replace: scala.Boolean,
     PageBreaks: scala.Boolean
   ): js.Any = js.native
   def Subtotal(
     GroupBy: scala.Double,
     Function: XlConsolidationFunction,
-    TotalList: activexDashInteropLib.SafeArray[scala.Double],
+    TotalList: stdLib.SafeArray[scala.Double],
     Replace: scala.Boolean,
     PageBreaks: scala.Boolean,
     SummaryBelowData: XlSummaryRow
@@ -714,7 +709,7 @@ trait Range extends js.Object {
     Space: js.UndefOr[scala.Boolean],
     Other: js.UndefOr[scala.Boolean],
     OtherChar: js.UndefOr[java.lang.String],
-    FieldInfo: js.UndefOr[activexDashInteropLib.SafeArray[_]],
+    FieldInfo: js.UndefOr[stdLib.SafeArray[_]],
     DecimalSeparator: js.UndefOr[java.lang.String],
     ThousandsSeparator: js.UndefOr[java.lang.String],
     TrailingMinusNumbers: js.UndefOr[js.Any]

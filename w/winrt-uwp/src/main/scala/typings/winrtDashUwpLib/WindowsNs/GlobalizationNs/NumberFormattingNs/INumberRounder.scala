@@ -48,14 +48,14 @@ trait INumberRounder extends js.Object {
 object INumberRounder {
   @scala.inline
   def apply(
-    roundDouble: js.Function1[scala.Double, scala.Double],
-    roundInt32: js.Function1[scala.Double, scala.Double],
-    roundInt64: js.Function1[scala.Double, scala.Double],
-    roundSingle: js.Function1[scala.Double, scala.Double],
-    roundUInt32: js.Function1[scala.Double, scala.Double],
-    roundUInt64: js.Function1[scala.Double, scala.Double]
+    roundDouble: scala.Double => scala.Double,
+    roundInt32: scala.Double => scala.Double,
+    roundInt64: scala.Double => scala.Double,
+    roundSingle: scala.Double => scala.Double,
+    roundUInt32: scala.Double => scala.Double,
+    roundUInt64: scala.Double => scala.Double
   ): INumberRounder = {
-    val __obj = js.Dynamic.literal(roundDouble = roundDouble, roundInt32 = roundInt32, roundInt64 = roundInt64, roundSingle = roundSingle, roundUInt32 = roundUInt32, roundUInt64 = roundUInt64)
+    val __obj = js.Dynamic.literal(roundDouble = js.Any.fromFunction1(roundDouble), roundInt32 = js.Any.fromFunction1(roundInt32), roundInt64 = js.Any.fromFunction1(roundInt64), roundSingle = js.Any.fromFunction1(roundSingle), roundUInt32 = js.Any.fromFunction1(roundUInt32), roundUInt64 = js.Any.fromFunction1(roundUInt64))
   
     __obj.asInstanceOf[INumberRounder]
   }

@@ -20,13 +20,13 @@ object IdownloadImage {
   def apply(
     isShowProgressTips: scala.Double,
     serverId: java.lang.String,
-    success: js.Function1[Resouce, scala.Unit],
-    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+    success: Resouce => scala.Unit,
+    complete: /* repeated */ js.Any => scala.Unit = null,
+    fail: /* repeated */ js.Any => scala.Unit = null
   ): IdownloadImage = {
-    val __obj = js.Dynamic.literal(isShowProgressTips = isShowProgressTips, serverId = serverId, success = success)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    val __obj = js.Dynamic.literal(isShowProgressTips = isShowProgressTips, serverId = serverId, success = js.Any.fromFunction1(success))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[IdownloadImage]
   }
 }

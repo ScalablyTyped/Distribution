@@ -11,8 +11,8 @@ trait IXsltProcessorFactory extends js.Object {
 
 object IXsltProcessorFactory {
   @scala.inline
-  def apply(createInstance: js.Function1[winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument, XsltProcessor]): IXsltProcessorFactory = {
-    val __obj = js.Dynamic.literal(createInstance = createInstance)
+  def apply(createInstance: winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument => XsltProcessor): IXsltProcessorFactory = {
+    val __obj = js.Dynamic.literal(createInstance = js.Any.fromFunction1(createInstance))
   
     __obj.asInstanceOf[IXsltProcessorFactory]
   }

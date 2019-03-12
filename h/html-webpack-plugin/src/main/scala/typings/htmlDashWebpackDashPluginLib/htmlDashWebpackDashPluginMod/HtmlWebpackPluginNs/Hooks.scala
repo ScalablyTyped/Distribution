@@ -58,7 +58,7 @@ object Hooks {
       webpackLib.webpackMod.webpackNs.compilationNs.ChunkHash, 
       _
     ],
-    failedModule: tapableLib.tapableMod.SyncHook[webpackLib.webpackMod.webpackNs.compilationNs.Module, nodeLib.Error, _],
+    failedModule: tapableLib.tapableMod.SyncHook[webpackLib.webpackMod.webpackNs.compilationNs.Module, stdLib.Error, _],
     finishModules: tapableLib.tapableMod.SyncHook[js.Array[webpackLib.webpackMod.webpackNs.compilationNs.Module], _, _],
     finishRebuildingModule: tapableLib.tapableMod.SyncHook[webpackLib.webpackMod.webpackNs.compilationNs.Module, _, _],
     htmlWebpackPluginAfterEmit: tapableLib.tapableMod.AsyncSeriesWaterfallHook[htmlDashWebpackDashPluginLib.Anon_Html, _, _],

@@ -66,12 +66,7 @@ object KramedOptions {
   def apply(
     breaks: js.UndefOr[scala.Boolean] = js.undefined,
     gfm: js.UndefOr[scala.Boolean] = js.undefined,
-    highlight: js.Function3[
-      /* code */ java.lang.String, 
-      /* lang */ java.lang.String, 
-      /* callback */ js.UndefOr[js.Function0[scala.Unit]], 
-      java.lang.String
-    ] = null,
+    highlight: (/* code */ java.lang.String, /* lang */ java.lang.String, /* callback */ js.UndefOr[js.Function0[scala.Unit]]) => java.lang.String = null,
     langPrefix: java.lang.String = null,
     pedantic: js.UndefOr[scala.Boolean] = js.undefined,
     renderer: KramedRenderer = null,
@@ -84,7 +79,7 @@ object KramedOptions {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(breaks)) __obj.updateDynamic("breaks")(breaks)
     if (!js.isUndefined(gfm)) __obj.updateDynamic("gfm")(gfm)
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight)
+    if (highlight != null) __obj.updateDynamic("highlight")(js.Any.fromFunction3(highlight))
     if (langPrefix != null) __obj.updateDynamic("langPrefix")(langPrefix)
     if (!js.isUndefined(pedantic)) __obj.updateDynamic("pedantic")(pedantic)
     if (renderer != null) __obj.updateDynamic("renderer")(renderer)

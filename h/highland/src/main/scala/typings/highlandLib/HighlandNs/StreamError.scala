@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Highland.StreamError")
 @js.native
 class StreamError protected () extends js.Object {
-  def this(err: nodeLib.Error) = this()
-  var error: nodeLib.Error = js.native
+  def this(err: stdLib.Error) = this()
+  var error: stdLib.Error = js.native
 }
 

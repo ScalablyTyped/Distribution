@@ -15,13 +15,9 @@ trait FunctorComposition21[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDas
 object FunctorComposition21 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS */](
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type[G, js.Any]], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type[G, js.Any]]
-    ]
+    map: (fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type[G, js.Any]], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type[G, js.Any]]
   ): FunctorComposition21[F, G] = {
-    val __obj = js.Dynamic.literal(map = map)
+    val __obj = js.Dynamic.literal(map = js.Any.fromFunction2(map))
   
     __obj.asInstanceOf[FunctorComposition21[F, G]]
   }

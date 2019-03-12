@@ -17,14 +17,14 @@ trait IEventHandlers extends js.Object {
 object IEventHandlers {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IEventHandler, scala.Unit],
-    Clone: js.Function0[IEventHandlers],
+    Add: (scala.Double, IEventHandler) => scala.Unit,
+    Clone: () => IEventHandlers,
     Count: scala.Double,
-    GetIndexByGUID: js.Function1[java.lang.String, scala.Double],
-    Item: js.Function1[scala.Double, IEventHandler],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    GetIndexByGUID: java.lang.String => scala.Double,
+    Item: scala.Double => IEventHandler,
+    Remove: scala.Double => scala.Unit
   ): IEventHandlers = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, GetIndexByGUID = GetIndexByGUID, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count, GetIndexByGUID = js.Any.fromFunction1(GetIndexByGUID), Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IEventHandlers]
   }

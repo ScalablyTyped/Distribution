@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object openerLib {
   type Callback = js.Function3[
-    /* error */ nodeLib.Error, 
+    /* error */ stdLib.Error, 
     /* stdout */ java.lang.String, 
     /* stderr */ java.lang.String, 
     scala.Unit

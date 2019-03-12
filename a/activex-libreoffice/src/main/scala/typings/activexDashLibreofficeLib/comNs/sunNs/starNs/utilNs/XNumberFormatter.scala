@@ -47,20 +47,20 @@ object XNumberFormatter {
   @scala.inline
   def apply(
     NumberFormatsSupplier: XNumberFormatsSupplier,
-    acquire: js.Function0[scala.Unit],
-    attachNumberFormatsSupplier: js.Function1[XNumberFormatsSupplier, scala.Unit],
-    convertNumberToString: js.Function2[scala.Double, scala.Double, java.lang.String],
-    convertStringToNumber: js.Function2[scala.Double, java.lang.String, scala.Double],
-    detectNumberFormat: js.Function2[scala.Double, java.lang.String, scala.Double],
-    formatString: js.Function2[scala.Double, java.lang.String, java.lang.String],
-    getInputString: js.Function2[scala.Double, scala.Double, java.lang.String],
-    getNumberFormatsSupplier: js.Function0[XNumberFormatsSupplier],
-    queryColorForNumber: js.Function3[scala.Double, scala.Double, Color, Color],
-    queryColorForString: js.Function3[scala.Double, java.lang.String, Color, Color],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    attachNumberFormatsSupplier: XNumberFormatsSupplier => scala.Unit,
+    convertNumberToString: (scala.Double, scala.Double) => java.lang.String,
+    convertStringToNumber: (scala.Double, java.lang.String) => scala.Double,
+    detectNumberFormat: (scala.Double, java.lang.String) => scala.Double,
+    formatString: (scala.Double, java.lang.String) => java.lang.String,
+    getInputString: (scala.Double, scala.Double) => java.lang.String,
+    getNumberFormatsSupplier: () => XNumberFormatsSupplier,
+    queryColorForNumber: (scala.Double, scala.Double, Color) => Color,
+    queryColorForString: (scala.Double, java.lang.String, Color) => Color,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XNumberFormatter = {
-    val __obj = js.Dynamic.literal(NumberFormatsSupplier = NumberFormatsSupplier, acquire = acquire, attachNumberFormatsSupplier = attachNumberFormatsSupplier, convertNumberToString = convertNumberToString, convertStringToNumber = convertStringToNumber, detectNumberFormat = detectNumberFormat, formatString = formatString, getInputString = getInputString, getNumberFormatsSupplier = getNumberFormatsSupplier, queryColorForNumber = queryColorForNumber, queryColorForString = queryColorForString, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(NumberFormatsSupplier = NumberFormatsSupplier, acquire = js.Any.fromFunction0(acquire), attachNumberFormatsSupplier = js.Any.fromFunction1(attachNumberFormatsSupplier), convertNumberToString = js.Any.fromFunction2(convertNumberToString), convertStringToNumber = js.Any.fromFunction2(convertStringToNumber), detectNumberFormat = js.Any.fromFunction2(detectNumberFormat), formatString = js.Any.fromFunction2(formatString), getInputString = js.Any.fromFunction2(getInputString), getNumberFormatsSupplier = js.Any.fromFunction0(getNumberFormatsSupplier), queryColorForNumber = js.Any.fromFunction3(queryColorForNumber), queryColorForString = js.Any.fromFunction3(queryColorForString), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XNumberFormatter]
   }

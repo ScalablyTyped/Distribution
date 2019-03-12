@@ -16,18 +16,18 @@ object XLabeledDataSequence2 {
   def apply(
     Label: XDataSequence,
     Values: XDataSequence,
-    acquire: js.Function0[scala.Unit],
-    addModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
-    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
-    getLabel: js.Function0[XDataSequence],
-    getValues: js.Function0[XDataSequence],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
-    setLabel: js.Function1[XDataSequence, scala.Unit],
-    setValues: js.Function1[XDataSequence, scala.Unit]
+    acquire: () => scala.Unit,
+    addModifyListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener => scala.Unit,
+    createClone: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable,
+    getLabel: () => XDataSequence,
+    getValues: () => XDataSequence,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeModifyListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener => scala.Unit,
+    setLabel: XDataSequence => scala.Unit,
+    setValues: XDataSequence => scala.Unit
   ): XLabeledDataSequence2 = {
-    val __obj = js.Dynamic.literal(Label = Label, Values = Values, acquire = acquire, addModifyListener = addModifyListener, createClone = createClone, getLabel = getLabel, getValues = getValues, queryInterface = queryInterface, release = release, removeModifyListener = removeModifyListener, setLabel = setLabel, setValues = setValues)
+    val __obj = js.Dynamic.literal(Label = Label, Values = Values, acquire = js.Any.fromFunction0(acquire), addModifyListener = js.Any.fromFunction1(addModifyListener), createClone = js.Any.fromFunction0(createClone), getLabel = js.Any.fromFunction0(getLabel), getValues = js.Any.fromFunction0(getValues), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeModifyListener = js.Any.fromFunction1(removeModifyListener), setLabel = js.Any.fromFunction1(setLabel), setValues = js.Any.fromFunction1(setValues))
   
     __obj.asInstanceOf[XLabeledDataSequence2]
   }

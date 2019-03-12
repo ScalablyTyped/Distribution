@@ -19,16 +19,16 @@ trait IServerScheduledJobManagementOperations extends js.Object {
 object IServerScheduledJobManagementOperations {
   @scala.inline
   def apply(
-    AddScheduledJob: js.Function1[IScheduledJob, scala.Double],
-    CancelScheduledJob: js.Function1[scala.Double, scala.Unit],
-    GetScheduledJob: js.Function1[scala.Double, IScheduledJob],
-    GetScheduledJobRunInfo: js.Function1[scala.Double, IScheduledJobRunInfo],
-    GetScheduledJobs: js.Function0[IScheduledJobs],
-    ModifyScheduledJob: js.Function1[IScheduledJob, scala.Unit],
-    RemoveScheduledJob: js.Function1[scala.Double, scala.Unit],
-    StartScheduledJob: js.Function1[scala.Double, scala.Unit]
+    AddScheduledJob: IScheduledJob => scala.Double,
+    CancelScheduledJob: scala.Double => scala.Unit,
+    GetScheduledJob: scala.Double => IScheduledJob,
+    GetScheduledJobRunInfo: scala.Double => IScheduledJobRunInfo,
+    GetScheduledJobs: () => IScheduledJobs,
+    ModifyScheduledJob: IScheduledJob => scala.Unit,
+    RemoveScheduledJob: scala.Double => scala.Unit,
+    StartScheduledJob: scala.Double => scala.Unit
   ): IServerScheduledJobManagementOperations = {
-    val __obj = js.Dynamic.literal(AddScheduledJob = AddScheduledJob, CancelScheduledJob = CancelScheduledJob, GetScheduledJob = GetScheduledJob, GetScheduledJobRunInfo = GetScheduledJobRunInfo, GetScheduledJobs = GetScheduledJobs, ModifyScheduledJob = ModifyScheduledJob, RemoveScheduledJob = RemoveScheduledJob, StartScheduledJob = StartScheduledJob)
+    val __obj = js.Dynamic.literal(AddScheduledJob = js.Any.fromFunction1(AddScheduledJob), CancelScheduledJob = js.Any.fromFunction1(CancelScheduledJob), GetScheduledJob = js.Any.fromFunction1(GetScheduledJob), GetScheduledJobRunInfo = js.Any.fromFunction1(GetScheduledJobRunInfo), GetScheduledJobs = js.Any.fromFunction0(GetScheduledJobs), ModifyScheduledJob = js.Any.fromFunction1(ModifyScheduledJob), RemoveScheduledJob = js.Any.fromFunction1(RemoveScheduledJob), StartScheduledJob = js.Any.fromFunction1(StartScheduledJob))
   
     __obj.asInstanceOf[IServerScheduledJobManagementOperations]
   }

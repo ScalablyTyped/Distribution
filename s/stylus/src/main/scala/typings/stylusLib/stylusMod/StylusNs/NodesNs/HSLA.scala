@@ -34,13 +34,13 @@ object HSLA {
   @scala.inline
   def apply(
     a: scala.Double,
-    add: js.Function3[scala.Double, scala.Double, scala.Double, HSLA],
-    adjustHue: js.Function1[scala.Double, HSLA],
-    adjustLightness: js.Function1[scala.Double, HSLA],
-    clone: js.Function0[Node],
-    coerce: js.Function1[Node, Node],
+    add: (scala.Double, scala.Double, scala.Double) => HSLA,
+    adjustHue: scala.Double => HSLA,
+    adjustLightness: scala.Double => HSLA,
+    clone: () => Node,
+    coerce: Node => Node,
     column: scala.Double,
-    eval: js.Function0[Node],
+    eval: () => Node,
     filename: java.lang.String,
     first: Node,
     h: scala.Double,
@@ -49,16 +49,16 @@ object HSLA {
     l: scala.Double,
     lineno: scala.Double,
     nodeName: java.lang.String,
-    operate: js.Function2[java.lang.String, Node, Node],
+    operate: (java.lang.String, Node) => Node,
     rgba: RGBA,
     s: scala.Double,
-    shouldCoerce: js.Function1[java.lang.String, scala.Boolean],
-    substract: js.Function3[scala.Double, scala.Double, scala.Double, HSLA],
-    toBoolean: js.Function0[Boolean],
-    toExpression: js.Function0[Expression],
-    toJSON: js.Function0[stylusLib.Anon_AColumn]
+    shouldCoerce: java.lang.String => scala.Boolean,
+    substract: (scala.Double, scala.Double, scala.Double) => HSLA,
+    toBoolean: () => Boolean,
+    toExpression: () => Expression,
+    toJSON: () => stylusLib.Anon_AColumn
   ): HSLA = {
-    val __obj = js.Dynamic.literal(a = a, add = add, adjustHue = adjustHue, adjustLightness = adjustLightness, clone = clone, coerce = coerce, column = column, eval = eval, filename = filename, first = first, h = h, hash = hash, hsla = hsla, l = l, lineno = lineno, nodeName = nodeName, operate = operate, rgba = rgba, s = s, shouldCoerce = shouldCoerce, substract = substract, toBoolean = toBoolean, toExpression = toExpression, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(a = a, add = js.Any.fromFunction3(add), adjustHue = js.Any.fromFunction1(adjustHue), adjustLightness = js.Any.fromFunction1(adjustLightness), clone = js.Any.fromFunction0(clone), coerce = js.Any.fromFunction1(coerce), column = column, eval = js.Any.fromFunction0(eval), filename = filename, first = first, h = h, hash = hash, hsla = hsla, l = l, lineno = lineno, nodeName = nodeName, operate = js.Any.fromFunction2(operate), rgba = rgba, s = s, shouldCoerce = js.Any.fromFunction1(shouldCoerce), substract = js.Any.fromFunction3(substract), toBoolean = js.Any.fromFunction0(toBoolean), toExpression = js.Any.fromFunction0(toExpression), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[HSLA]
   }

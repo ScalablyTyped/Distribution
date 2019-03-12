@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var punches: knockoutDotPunchesLib.KnockoutPunchesStatic = js.native
+  var punches: KnockoutPunchesStatic = js.native
 }
 

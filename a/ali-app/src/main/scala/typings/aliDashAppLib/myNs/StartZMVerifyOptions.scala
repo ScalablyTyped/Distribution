@@ -19,14 +19,14 @@ object StartZMVerifyOptions {
   @scala.inline
   def apply(
     bizNo: java.lang.String,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
-    success: js.Function1[/* res */ aliDashAppLib.Anon_Passed, scala.Unit] = null
+    complete: /* res */ js.Any => scala.Unit = null,
+    fail: js.Any => scala.Unit = null,
+    success: /* res */ aliDashAppLib.Anon_Passed => scala.Unit = null
   ): StartZMVerifyOptions = {
     val __obj = js.Dynamic.literal(bizNo = bizNo)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[StartZMVerifyOptions]
   }
 }

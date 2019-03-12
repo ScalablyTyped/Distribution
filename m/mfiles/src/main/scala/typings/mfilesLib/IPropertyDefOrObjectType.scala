@@ -15,12 +15,12 @@ trait IPropertyDefOrObjectType extends js.Object {
 object IPropertyDefOrObjectType {
   @scala.inline
   def apply(
-    Clone: js.Function0[IPropertyDefOrObjectType],
-    GetAsExpression: js.Function0[IExpression],
+    Clone: () => IPropertyDefOrObjectType,
+    GetAsExpression: () => IExpression,
     ID: scala.Double,
     PropertyDef: scala.Boolean
   ): IPropertyDefOrObjectType = {
-    val __obj = js.Dynamic.literal(Clone = Clone, GetAsExpression = GetAsExpression, ID = ID, PropertyDef = PropertyDef)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), GetAsExpression = js.Any.fromFunction0(GetAsExpression), ID = ID, PropertyDef = PropertyDef)
   
     __obj.asInstanceOf[IPropertyDefOrObjectType]
   }

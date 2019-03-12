@@ -12,11 +12,8 @@ trait Anon_Csg extends js.Object {
 
 object Anon_Csg {
   @scala.inline
-  def apply(
-    fromCSG: js.Function2[CSG, js.Any, Anon_BoundLen],
-    getGeometryVertex: js.Function2[js.Any, js.Any, scala.Double]
-  ): Anon_Csg = {
-    val __obj = js.Dynamic.literal(fromCSG = fromCSG, getGeometryVertex = getGeometryVertex)
+  def apply(fromCSG: (CSG, js.Any) => Anon_BoundLen, getGeometryVertex: (js.Any, js.Any) => scala.Double): Anon_Csg = {
+    val __obj = js.Dynamic.literal(fromCSG = js.Any.fromFunction2(fromCSG), getGeometryVertex = js.Any.fromFunction2(getGeometryVertex))
   
     __obj.asInstanceOf[Anon_Csg]
   }

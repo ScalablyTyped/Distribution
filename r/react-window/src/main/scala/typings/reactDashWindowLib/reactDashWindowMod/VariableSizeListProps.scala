@@ -25,7 +25,7 @@ object VariableSizeListProps {
     children: reactLib.reactMod.ReactNs.ComponentType[ListChildComponentProps],
     height: scala.Double | java.lang.String,
     itemCount: scala.Double,
-    itemSize: js.Function1[scala.Double, scala.Double],
+    itemSize: scala.Double => scala.Double,
     width: scala.Double | java.lang.String,
     className: java.lang.String = null,
     direction: Direction = null,
@@ -36,8 +36,8 @@ object VariableSizeListProps {
     innerTagName: java.lang.String = null,
     itemData: js.Any = null,
     itemKey: ListItemKeySelector = null,
-    onItemsRendered: js.Function1[/* props */ ListOnItemsRenderedProps, _] = null,
-    onScroll: js.Function1[/* props */ ListOnScrollProps, _] = null,
+    onItemsRendered: /* props */ ListOnItemsRenderedProps => _ = null,
+    onScroll: /* props */ ListOnScrollProps => _ = null,
     outerElementType: ReactElementType = null,
     outerRef: reactLib.reactMod.ReactNs.Ref[_] = null,
     outerTagName: java.lang.String = null,
@@ -45,7 +45,7 @@ object VariableSizeListProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     useIsScrolling: js.UndefOr[scala.Boolean] = js.undefined
   ): VariableSizeListProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], itemCount = itemCount, itemSize = itemSize, width = width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], itemCount = itemCount, itemSize = js.Any.fromFunction1(itemSize), width = width.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (direction != null) __obj.updateDynamic("direction")(direction)
     if (estimatedItemSize != null) __obj.updateDynamic("estimatedItemSize")(estimatedItemSize.asInstanceOf[js.Any])
@@ -55,8 +55,8 @@ object VariableSizeListProps {
     if (innerTagName != null) __obj.updateDynamic("innerTagName")(innerTagName)
     if (itemData != null) __obj.updateDynamic("itemData")(itemData)
     if (itemKey != null) __obj.updateDynamic("itemKey")(itemKey)
-    if (onItemsRendered != null) __obj.updateDynamic("onItemsRendered")(onItemsRendered)
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
+    if (onItemsRendered != null) __obj.updateDynamic("onItemsRendered")(js.Any.fromFunction1(onItemsRendered))
+    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (outerElementType != null) __obj.updateDynamic("outerElementType")(outerElementType.asInstanceOf[js.Any])
     if (outerRef != null) __obj.updateDynamic("outerRef")(outerRef.asInstanceOf[js.Any])
     if (outerTagName != null) __obj.updateDynamic("outerTagName")(outerTagName)

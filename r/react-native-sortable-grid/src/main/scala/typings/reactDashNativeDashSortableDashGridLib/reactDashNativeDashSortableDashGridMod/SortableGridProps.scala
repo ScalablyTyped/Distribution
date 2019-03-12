@@ -86,9 +86,9 @@ object SortableGridProps {
     itemHeight: scala.Int | scala.Double = null,
     itemWidth: scala.Int | scala.Double = null,
     itemsPerRow: scala.Int | scala.Double = null,
-    onDeleteItem: js.Function1[/* deletedItem */ OrderedItem, scala.Unit] = null,
-    onDragRelease: js.Function1[/* itemOrder */ ItemOrder, scala.Unit] = null,
-    onDragStart: js.Function1[/* item */ OrderedItem, scala.Unit] = null,
+    onDeleteItem: /* deletedItem */ OrderedItem => scala.Unit = null,
+    onDragRelease: /* itemOrder */ ItemOrder => scala.Unit = null,
+    onDragStart: /* item */ OrderedItem => scala.Unit = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
   ): SortableGridProps = {
     val __obj = js.Dynamic.literal()
@@ -101,9 +101,9 @@ object SortableGridProps {
     if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight.asInstanceOf[js.Any])
     if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
     if (itemsPerRow != null) __obj.updateDynamic("itemsPerRow")(itemsPerRow.asInstanceOf[js.Any])
-    if (onDeleteItem != null) __obj.updateDynamic("onDeleteItem")(onDeleteItem)
-    if (onDragRelease != null) __obj.updateDynamic("onDragRelease")(onDragRelease)
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
+    if (onDeleteItem != null) __obj.updateDynamic("onDeleteItem")(js.Any.fromFunction1(onDeleteItem))
+    if (onDragRelease != null) __obj.updateDynamic("onDragRelease")(js.Any.fromFunction1(onDragRelease))
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortableGridProps]
   }

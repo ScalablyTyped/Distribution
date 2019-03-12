@@ -25,13 +25,13 @@ trait StructureStorage
 object StructureStorage {
   @scala.inline
   def apply(
-    destroy: js.Function0[ScreepsReturnCode],
+    destroy: () => ScreepsReturnCode,
     hits: scala.Double,
     hitsMax: scala.Double,
     id: java.lang.String,
-    isActive: js.Function0[scala.Boolean],
+    isActive: () => scala.Boolean,
     my: scala.Boolean,
-    notifyWhenAttacked: js.Function1[scala.Boolean, ScreepsReturnCode],
+    notifyWhenAttacked: scala.Boolean => ScreepsReturnCode,
     owner: Owner,
     pos: RoomPosition,
     room: Room,
@@ -39,7 +39,7 @@ object StructureStorage {
     storeCapacity: scala.Double,
     structureType: STRUCTURE_STORAGE
   ): StructureStorage = {
-    val __obj = js.Dynamic.literal(destroy = destroy, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, my = my, notifyWhenAttacked = notifyWhenAttacked, owner = owner, pos = pos, room = room, store = store, storeCapacity = storeCapacity, structureType = structureType)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, room = room, store = store, storeCapacity = storeCapacity, structureType = structureType)
   
     __obj.asInstanceOf[StructureStorage]
   }

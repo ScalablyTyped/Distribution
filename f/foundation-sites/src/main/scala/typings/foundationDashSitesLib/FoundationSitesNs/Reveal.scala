@@ -16,12 +16,12 @@ trait Reveal extends js.Object {
 object Reveal {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    open: js.Function0[scala.Unit],
-    toggle: js.Function0[scala.Unit]
+    close: () => scala.Unit,
+    destroy: () => scala.Unit,
+    open: () => scala.Unit,
+    toggle: () => scala.Unit
   ): Reveal = {
-    val __obj = js.Dynamic.literal(close = close, destroy = destroy, open = open, toggle = toggle)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), open = js.Any.fromFunction0(open), toggle = js.Any.fromFunction0(toggle))
   
     __obj.asInstanceOf[Reveal]
   }

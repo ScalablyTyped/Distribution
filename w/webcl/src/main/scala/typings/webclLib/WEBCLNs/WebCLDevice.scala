@@ -15,11 +15,11 @@ trait WebCLDevice extends js.Object {
 object WebCLDevice {
   @scala.inline
   def apply(
-    enableExtension: js.Function1[java.lang.String, scala.Boolean],
-    getInfo: js.Function1[DeviceInfo, js.Any],
-    getSupportedExtensions: js.Function0[js.Array[java.lang.String]]
+    enableExtension: java.lang.String => scala.Boolean,
+    getInfo: DeviceInfo => js.Any,
+    getSupportedExtensions: () => js.Array[java.lang.String]
   ): WebCLDevice = {
-    val __obj = js.Dynamic.literal(enableExtension = enableExtension, getInfo = getInfo, getSupportedExtensions = getSupportedExtensions)
+    val __obj = js.Dynamic.literal(enableExtension = js.Any.fromFunction1(enableExtension), getInfo = js.Any.fromFunction1(getInfo), getSupportedExtensions = js.Any.fromFunction0(getSupportedExtensions))
   
     __obj.asInstanceOf[WebCLDevice]
   }

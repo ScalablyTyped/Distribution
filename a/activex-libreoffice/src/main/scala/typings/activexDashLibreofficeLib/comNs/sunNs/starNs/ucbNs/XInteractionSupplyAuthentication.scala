@@ -25,13 +25,13 @@ trait XInteractionSupplyAuthentication
     * @param Default Returns the default mode (to be initially displayed to the user).
     * @returns A sequence of available modes to hand back. Each individual mode should appear at most once in the sequence. If the sequence is empty, a new mode
     */
-  def getRememberAccountModes(Default: js.Array[RememberAuthentication]): activexDashInteropLib.SafeArray[RememberAuthentication]
+  def getRememberAccountModes(Default: js.Array[RememberAuthentication]): stdLib.SafeArray[RememberAuthentication]
   /**
     * Specifies the available modes of how long to remember the password.
     * @param Default Returns the default mode (to be initially displayed to the user).
     * @returns A sequence of available modes to hand back. Each individual mode should appear at most once in the sequence. If the sequence is empty, a new mode
     */
-  def getRememberPasswordModes(Default: js.Array[RememberAuthentication]): activexDashInteropLib.SafeArray[RememberAuthentication]
+  def getRememberPasswordModes(Default: js.Array[RememberAuthentication]): stdLib.SafeArray[RememberAuthentication]
   /**
     * Set a new "account" value to hand back.
     *
@@ -81,30 +81,24 @@ trait XInteractionSupplyAuthentication
 object XInteractionSupplyAuthentication {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    canSetAccount: js.Function0[scala.Boolean],
-    canSetPassword: js.Function0[scala.Boolean],
-    canSetRealm: js.Function0[scala.Boolean],
-    canSetUserName: js.Function0[scala.Boolean],
-    getRememberAccountModes: js.Function1[
-      js.Array[RememberAuthentication], 
-      activexDashInteropLib.SafeArray[RememberAuthentication]
-    ],
-    getRememberPasswordModes: js.Function1[
-      js.Array[RememberAuthentication], 
-      activexDashInteropLib.SafeArray[RememberAuthentication]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    select: js.Function0[scala.Unit],
-    setAccount: js.Function1[java.lang.String, scala.Unit],
-    setPassword: js.Function1[java.lang.String, scala.Unit],
-    setRealm: js.Function1[java.lang.String, scala.Unit],
-    setRememberAccount: js.Function1[RememberAuthentication, scala.Unit],
-    setRememberPassword: js.Function1[RememberAuthentication, scala.Unit],
-    setUserName: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    canSetAccount: () => scala.Boolean,
+    canSetPassword: () => scala.Boolean,
+    canSetRealm: () => scala.Boolean,
+    canSetUserName: () => scala.Boolean,
+    getRememberAccountModes: js.Array[RememberAuthentication] => stdLib.SafeArray[RememberAuthentication],
+    getRememberPasswordModes: js.Array[RememberAuthentication] => stdLib.SafeArray[RememberAuthentication],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    select: () => scala.Unit,
+    setAccount: java.lang.String => scala.Unit,
+    setPassword: java.lang.String => scala.Unit,
+    setRealm: java.lang.String => scala.Unit,
+    setRememberAccount: RememberAuthentication => scala.Unit,
+    setRememberPassword: RememberAuthentication => scala.Unit,
+    setUserName: java.lang.String => scala.Unit
   ): XInteractionSupplyAuthentication = {
-    val __obj = js.Dynamic.literal(acquire = acquire, canSetAccount = canSetAccount, canSetPassword = canSetPassword, canSetRealm = canSetRealm, canSetUserName = canSetUserName, getRememberAccountModes = getRememberAccountModes, getRememberPasswordModes = getRememberPasswordModes, queryInterface = queryInterface, release = release, select = select, setAccount = setAccount, setPassword = setPassword, setRealm = setRealm, setRememberAccount = setRememberAccount, setRememberPassword = setRememberPassword, setUserName = setUserName)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), canSetAccount = js.Any.fromFunction0(canSetAccount), canSetPassword = js.Any.fromFunction0(canSetPassword), canSetRealm = js.Any.fromFunction0(canSetRealm), canSetUserName = js.Any.fromFunction0(canSetUserName), getRememberAccountModes = js.Any.fromFunction1(getRememberAccountModes), getRememberPasswordModes = js.Any.fromFunction1(getRememberPasswordModes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), select = js.Any.fromFunction0(select), setAccount = js.Any.fromFunction1(setAccount), setPassword = js.Any.fromFunction1(setPassword), setRealm = js.Any.fromFunction1(setRealm), setRememberAccount = js.Any.fromFunction1(setRememberAccount), setRememberPassword = js.Any.fromFunction1(setRememberPassword), setUserName = js.Any.fromFunction1(setUserName))
   
     __obj.asInstanceOf[XInteractionSupplyAuthentication]
   }

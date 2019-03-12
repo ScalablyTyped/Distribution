@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("jss", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: jssLib.jssMod.JSS = js.native
-  def create(): jssLib.jssMod.JSS = js.native
-  def create(options: stdLib.Partial[jssLib.jssMod.JSSOptions]): jssLib.jssMod.JSS = js.native
-  def createGenerateClassName(): jssLib.jssMod.GenerateClassName[_] = js.native
+  val default: JSS = js.native
+  def create(): JSS = js.native
+  def create(options: stdLib.Partial[JSSOptions]): JSS = js.native
+  def createGenerateClassName(): GenerateClassName[_] = js.native
 }
 

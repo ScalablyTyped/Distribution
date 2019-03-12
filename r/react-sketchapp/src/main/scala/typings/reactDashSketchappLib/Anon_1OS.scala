@@ -16,9 +16,9 @@ object Anon_1OS {
   def apply(
     OS: reactDashSketchappLib.reactDashSketchappLibStrings.sketch,
     Version: reactDashSketchappLib.reactDashSketchappLibNumbers.`1`,
-    select: js.Function1[js.Any, js.Any]
+    select: js.Any => js.Any
   ): Anon_1OS = {
-    val __obj = js.Dynamic.literal(OS = OS, Version = Version, select = select)
+    val __obj = js.Dynamic.literal(OS = OS, Version = Version, select = js.Any.fromFunction1(select))
   
     __obj.asInstanceOf[Anon_1OS]
   }

@@ -13,8 +13,8 @@ trait TextEvent extends js.Object {
 
 object TextEvent {
   @scala.inline
-  def apply(isDefaultPrevented: js.Function0[scala.Boolean], preventDefault: js.Function, sender: Text): TextEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+  def apply(isDefaultPrevented: () => scala.Boolean, preventDefault: js.Function, sender: Text): TextEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
   
     __obj.asInstanceOf[TextEvent]
   }

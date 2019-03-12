@@ -19,12 +19,12 @@ object CommandExecutor {
   def apply(
     commands: js.Object,
     commonCallback: js.Function0[scala.Unit] | scala.Unit,
-    execute: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Unit],
+    execute: (java.lang.String, /* repeated */ js.Any) => scala.Unit,
     hot: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
-    registerCommand: js.Function2[java.lang.String, js.Object, scala.Unit],
-    setCommonCallback: js.Function1[js.Function0[scala.Unit], scala.Unit]
+    registerCommand: (java.lang.String, js.Object) => scala.Unit,
+    setCommonCallback: js.Function0[scala.Unit] => scala.Unit
   ): CommandExecutor = {
-    val __obj = js.Dynamic.literal(commands = commands, commonCallback = commonCallback.asInstanceOf[js.Any], execute = execute, hot = hot, registerCommand = registerCommand, setCommonCallback = setCommonCallback)
+    val __obj = js.Dynamic.literal(commands = commands, commonCallback = commonCallback.asInstanceOf[js.Any], execute = js.Any.fromFunction2(execute), hot = hot, registerCommand = js.Any.fromFunction2(registerCommand), setCommonCallback = js.Any.fromFunction1(setCommonCallback))
   
     __obj.asInstanceOf[CommandExecutor]
   }

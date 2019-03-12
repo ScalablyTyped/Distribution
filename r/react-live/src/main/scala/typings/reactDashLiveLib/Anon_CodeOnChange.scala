@@ -11,9 +11,9 @@ trait Anon_CodeOnChange extends js.Object {
 
 object Anon_CodeOnChange {
   @scala.inline
-  def apply(onChange: js.Function1[/* code */ java.lang.String, scala.Unit] = null): Anon_CodeOnChange = {
+  def apply(onChange: /* code */ java.lang.String => scala.Unit = null): Anon_CodeOnChange = {
     val __obj = js.Dynamic.literal()
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[Anon_CodeOnChange]
   }
 }

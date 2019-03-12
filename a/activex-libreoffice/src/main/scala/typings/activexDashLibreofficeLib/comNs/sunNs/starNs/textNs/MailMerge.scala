@@ -41,14 +41,14 @@ trait MailMerge
     * This property is only evaluated for e-Mail output.
     * @since OOo 2.0
     */
-  var BlindCopiesTo: activexDashInteropLib.SafeArray[java.lang.String]
+  var BlindCopiesTo: stdLib.SafeArray[java.lang.String]
   /**
     * contains a list of e-Mail addresses to
     *
     * This property is only evaluated for e-Mail output.
     * @since OOo 2.0
     */
-  var CopiesTo: activexDashInteropLib.SafeArray[java.lang.String]
+  var CopiesTo: stdLib.SafeArray[java.lang.String]
   /**
     * contains the URL of a text document that is to be processed.
     *
@@ -119,7 +119,7 @@ trait MailMerge
     * This property is only evaluated for printer output.
     * @since OOo 2.0
     */
-  var PrintOptions: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  var PrintOptions: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * determines that the output of the mail merge is save in one single file.
     *
@@ -171,15 +171,15 @@ object MailMerge {
     AddressFromColumn: java.lang.String,
     AttachmentFilter: java.lang.String,
     AttachmentName: java.lang.String,
-    BlindCopiesTo: activexDashInteropLib.SafeArray[java.lang.String],
+    BlindCopiesTo: stdLib.SafeArray[java.lang.String],
     BookmarkSelection: scala.Boolean,
     Column: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
     ColumnName: java.lang.String,
     Command: java.lang.String,
     CommandType: scala.Double,
-    ConnectionInfo: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    ConnectionInfo: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     ConnectionResource: java.lang.String,
-    CopiesTo: activexDashInteropLib.SafeArray[java.lang.String],
+    CopiesTo: stdLib.SafeArray[java.lang.String],
     DataSourceName: java.lang.String,
     DatabaseLocation: java.lang.String,
     DocumentURL: java.lang.String,
@@ -196,51 +196,32 @@ object MailMerge {
     OutServerPassword: java.lang.String,
     OutputType: scala.Double,
     OutputURL: java.lang.String,
-    PrintOptions: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    PrintOptions: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
     ResultSet: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet,
     SaveAsSingleFile: scala.Boolean,
     SaveFilter: java.lang.String,
-    Selection: activexDashInteropLib.SafeArray[_],
+    Selection: stdLib.SafeArray[_],
     SendAsAttachment: scala.Boolean,
     SendAsHTML: scala.Boolean,
     SinglePrintJobs: scala.Boolean,
     Subject: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    addMailMergeEventListener: js.Function1[XMailMergeListener, scala.Unit],
-    addPropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    addVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    cancel: js.Function0[scala.Unit],
-    execute: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
-      js.Any
-    ],
-    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
-    getPropertyValue: js.Function1[java.lang.String, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeMailMergeEventListener: js.Function1[XMailMergeListener, scala.Unit],
-    removePropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    removeVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    addMailMergeEventListener: XMailMergeListener => scala.Unit,
+    addPropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    addVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    cancel: () => scala.Unit,
+    execute: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue] => js.Any,
+    getPropertySetInfo: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    getPropertyValue: java.lang.String => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeMailMergeEventListener: XMailMergeListener => scala.Unit,
+    removePropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    removeVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    setPropertyValue: (java.lang.String, js.Any) => scala.Unit
   ): MailMerge = {
-    val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection, AddressFromColumn = AddressFromColumn, AttachmentFilter = AttachmentFilter, AttachmentName = AttachmentName, BlindCopiesTo = BlindCopiesTo, BookmarkSelection = BookmarkSelection, Column = Column, ColumnName = ColumnName, Command = Command, CommandType = CommandType, ConnectionInfo = ConnectionInfo, ConnectionResource = ConnectionResource, CopiesTo = CopiesTo, DataSourceName = DataSourceName, DatabaseLocation = DatabaseLocation, DocumentURL = DocumentURL, EscapeProcessing = EscapeProcessing, FileNameFromColumn = FileNameFromColumn, FileNamePrefix = FileNamePrefix, Filter = Filter, GroupBy = GroupBy, HavingClause = HavingClause, InServerPassword = InServerPassword, MailBody = MailBody, Model = Model, Order = Order, OutServerPassword = OutServerPassword, OutputType = OutputType, OutputURL = OutputURL, PrintOptions = PrintOptions, PropertySetInfo = PropertySetInfo, ResultSet = ResultSet, SaveAsSingleFile = SaveAsSingleFile, SaveFilter = SaveFilter, Selection = Selection, SendAsAttachment = SendAsAttachment, SendAsHTML = SendAsHTML, SinglePrintJobs = SinglePrintJobs, Subject = Subject, acquire = acquire, addMailMergeEventListener = addMailMergeEventListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, cancel = cancel, execute = execute, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removeMailMergeEventListener = removeMailMergeEventListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+    val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection, AddressFromColumn = AddressFromColumn, AttachmentFilter = AttachmentFilter, AttachmentName = AttachmentName, BlindCopiesTo = BlindCopiesTo, BookmarkSelection = BookmarkSelection, Column = Column, ColumnName = ColumnName, Command = Command, CommandType = CommandType, ConnectionInfo = ConnectionInfo, ConnectionResource = ConnectionResource, CopiesTo = CopiesTo, DataSourceName = DataSourceName, DatabaseLocation = DatabaseLocation, DocumentURL = DocumentURL, EscapeProcessing = EscapeProcessing, FileNameFromColumn = FileNameFromColumn, FileNamePrefix = FileNamePrefix, Filter = Filter, GroupBy = GroupBy, HavingClause = HavingClause, InServerPassword = InServerPassword, MailBody = MailBody, Model = Model, Order = Order, OutServerPassword = OutServerPassword, OutputType = OutputType, OutputURL = OutputURL, PrintOptions = PrintOptions, PropertySetInfo = PropertySetInfo, ResultSet = ResultSet, SaveAsSingleFile = SaveAsSingleFile, SaveFilter = SaveFilter, Selection = Selection, SendAsAttachment = SendAsAttachment, SendAsHTML = SendAsHTML, SinglePrintJobs = SinglePrintJobs, Subject = Subject, acquire = js.Any.fromFunction0(acquire), addMailMergeEventListener = js.Any.fromFunction1(addMailMergeEventListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), cancel = js.Any.fromFunction0(cancel), execute = js.Any.fromFunction1(execute), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeMailMergeEventListener = js.Any.fromFunction1(removeMailMergeEventListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
   
     __obj.asInstanceOf[MailMerge]
   }

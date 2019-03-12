@@ -21,16 +21,12 @@ object HashHistoryBuildOptions {
   @scala.inline
   def apply(
     basename: java.lang.String = null,
-    getUserConfirmation: js.Function2[
-      /* message */ java.lang.String, 
-      /* callback */ js.Function1[/* result */ scala.Boolean, scala.Unit], 
-      scala.Unit
-    ] = null,
+    getUserConfirmation: (/* message */ java.lang.String, /* callback */ js.Function1[/* result */ scala.Boolean, scala.Unit]) => scala.Unit = null,
     hashType: HashType = null
   ): HashHistoryBuildOptions = {
     val __obj = js.Dynamic.literal()
     if (basename != null) __obj.updateDynamic("basename")(basename)
-    if (getUserConfirmation != null) __obj.updateDynamic("getUserConfirmation")(getUserConfirmation)
+    if (getUserConfirmation != null) __obj.updateDynamic("getUserConfirmation")(js.Any.fromFunction2(getUserConfirmation))
     if (hashType != null) __obj.updateDynamic("hashType")(hashType)
     __obj.asInstanceOf[HashHistoryBuildOptions]
   }

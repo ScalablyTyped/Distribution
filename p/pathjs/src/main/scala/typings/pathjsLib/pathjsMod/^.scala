@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("pathjs", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Path: pathjsLib.pathjsMod.IPath = js.native
+  var Path: IPath = js.native
 }
 

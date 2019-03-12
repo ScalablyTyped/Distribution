@@ -210,10 +210,10 @@ object _Impl {
     metadata: semanticDashUiDashTabLib.SemanticUINs.TabNs.MetadataSettings,
     name: java.lang.String,
     namespace: java.lang.String,
-    onFirstLoad: js.Function4[semanticDashUiDashTabLib.JQuery, java.lang.String, js.Array[_], js.Any, scala.Unit],
-    onLoad: js.Function4[semanticDashUiDashTabLib.JQuery, java.lang.String, js.Array[_], js.Any, scala.Unit],
-    onRequest: js.Function2[semanticDashUiDashTabLib.JQuery, java.lang.String, scala.Unit],
-    onVisible: js.Function2[semanticDashUiDashTabLib.JQuery, java.lang.String, scala.Unit],
+    onFirstLoad: (semanticDashUiDashTabLib.JQuery, java.lang.String, js.Array[_], js.Any) => scala.Unit,
+    onLoad: (semanticDashUiDashTabLib.JQuery, java.lang.String, js.Array[_], js.Any) => scala.Unit,
+    onRequest: (semanticDashUiDashTabLib.JQuery, java.lang.String) => scala.Unit,
+    onVisible: (semanticDashUiDashTabLib.JQuery, java.lang.String) => scala.Unit,
     path: semanticDashUiDashTabLib.semanticDashUiDashTabLibNumbers.`false` | java.lang.String,
     performance: scala.Boolean,
     selector: semanticDashUiDashTabLib.SemanticUINs.TabNs.SelectorSettings,
@@ -221,7 +221,7 @@ object _Impl {
     templates: semanticDashUiDashTabLib.SemanticUINs.TabNs.TemplatesSettings,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(alwaysRefresh = alwaysRefresh, apiSettings = apiSettings.asInstanceOf[js.Any], auto = auto, cache = cache, cacheType = cacheType.asInstanceOf[js.Any], childrenOnly = childrenOnly, className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], deactivate = deactivate.asInstanceOf[js.Any], debug = debug, error = error.asInstanceOf[js.Any], evaluateScripts = evaluateScripts.asInstanceOf[js.Any], history = history, historyType = historyType.asInstanceOf[js.Any], ignoreFirstLoad = ignoreFirstLoad, loadOnce = loadOnce, maxDepth = maxDepth, metadata = metadata.asInstanceOf[js.Any], name = name, namespace = namespace, onFirstLoad = onFirstLoad, onLoad = onLoad, onRequest = onRequest, onVisible = onVisible, path = path.asInstanceOf[js.Any], performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, templates = templates, verbose = verbose)
+    val __obj = js.Dynamic.literal(alwaysRefresh = alwaysRefresh, apiSettings = apiSettings.asInstanceOf[js.Any], auto = auto, cache = cache, cacheType = cacheType.asInstanceOf[js.Any], childrenOnly = childrenOnly, className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], deactivate = deactivate.asInstanceOf[js.Any], debug = debug, error = error.asInstanceOf[js.Any], evaluateScripts = evaluateScripts.asInstanceOf[js.Any], history = history, historyType = historyType.asInstanceOf[js.Any], ignoreFirstLoad = ignoreFirstLoad, loadOnce = loadOnce, maxDepth = maxDepth, metadata = metadata.asInstanceOf[js.Any], name = name, namespace = namespace, onFirstLoad = js.Any.fromFunction4(onFirstLoad), onLoad = js.Any.fromFunction4(onLoad), onRequest = js.Any.fromFunction2(onRequest), onVisible = js.Any.fromFunction2(onVisible), path = path.asInstanceOf[js.Any], performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, templates = templates, verbose = verbose)
   
     __obj.asInstanceOf[_Impl]
   }

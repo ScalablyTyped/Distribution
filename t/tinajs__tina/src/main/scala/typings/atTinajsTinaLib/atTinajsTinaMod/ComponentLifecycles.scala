@@ -16,13 +16,13 @@ trait ComponentLifecycles extends js.Object {
 object ComponentLifecycles {
   @scala.inline
   def apply(
-    attached: js.Function0[scala.Unit],
-    created: js.Function0[scala.Unit],
-    detached: js.Function0[scala.Unit],
-    moved: js.Function0[scala.Unit],
-    ready: js.Function0[scala.Unit]
+    attached: () => scala.Unit,
+    created: () => scala.Unit,
+    detached: () => scala.Unit,
+    moved: () => scala.Unit,
+    ready: () => scala.Unit
   ): ComponentLifecycles = {
-    val __obj = js.Dynamic.literal(attached = attached, created = created, detached = detached, moved = moved, ready = ready)
+    val __obj = js.Dynamic.literal(attached = js.Any.fromFunction0(attached), created = js.Any.fromFunction0(created), detached = js.Any.fromFunction0(detached), moved = js.Any.fromFunction0(moved), ready = js.Any.fromFunction0(ready))
   
     __obj.asInstanceOf[ComponentLifecycles]
   }

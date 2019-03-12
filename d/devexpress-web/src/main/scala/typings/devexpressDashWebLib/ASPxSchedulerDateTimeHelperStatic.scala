@@ -39,13 +39,13 @@ trait ASPxSchedulerDateTimeHelperStatic extends js.Object {
 object ASPxSchedulerDateTimeHelperStatic {
   @scala.inline
   def apply(
-    AddDays: js.Function2[stdLib.Date, scala.Double, stdLib.Date],
-    AddTimeSpan: js.Function2[stdLib.Date, js.Any, stdLib.Date],
-    CeilDateTime: js.Function2[stdLib.Date, js.Any, stdLib.Date],
-    ToDayTime: js.Function1[stdLib.Date, js.Any],
-    TruncToDate: js.Function1[stdLib.Date, stdLib.Date]
+    AddDays: (stdLib.Date, scala.Double) => stdLib.Date,
+    AddTimeSpan: (stdLib.Date, js.Any) => stdLib.Date,
+    CeilDateTime: (stdLib.Date, js.Any) => stdLib.Date,
+    ToDayTime: stdLib.Date => js.Any,
+    TruncToDate: stdLib.Date => stdLib.Date
   ): ASPxSchedulerDateTimeHelperStatic = {
-    val __obj = js.Dynamic.literal(AddDays = AddDays, AddTimeSpan = AddTimeSpan, CeilDateTime = CeilDateTime, ToDayTime = ToDayTime, TruncToDate = TruncToDate)
+    val __obj = js.Dynamic.literal(AddDays = js.Any.fromFunction2(AddDays), AddTimeSpan = js.Any.fromFunction2(AddTimeSpan), CeilDateTime = js.Any.fromFunction2(CeilDateTime), ToDayTime = js.Any.fromFunction1(ToDayTime), TruncToDate = js.Any.fromFunction1(TruncToDate))
   
     __obj.asInstanceOf[ASPxSchedulerDateTimeHelperStatic]
   }

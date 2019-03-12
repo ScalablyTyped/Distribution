@@ -120,12 +120,12 @@ object ReactPaginateProps {
     disabledClassName: java.lang.String = null,
     extraAriaContext: java.lang.String = null,
     forcePage: scala.Int | scala.Double = null,
-    hrefBuilder: js.Function1[/* pageIndex */ scala.Double, scala.Unit] = null,
+    hrefBuilder: /* pageIndex */ scala.Double => scala.Unit = null,
     initialPage: scala.Int | scala.Double = null,
     nextClassName: java.lang.String = null,
     nextLabel: reactLib.reactMod.ReactNs.ReactNode = null,
     nextLinkClassName: java.lang.String = null,
-    onPageChange: js.Function1[/* selectedItem */ reactDashPaginateLib.Anon_Selected, scala.Unit] = null,
+    onPageChange: /* selectedItem */ reactDashPaginateLib.Anon_Selected => scala.Unit = null,
     pageClassName: java.lang.String = null,
     pageLinkClassName: java.lang.String = null,
     previousClassName: java.lang.String = null,
@@ -143,12 +143,12 @@ object ReactPaginateProps {
     if (disabledClassName != null) __obj.updateDynamic("disabledClassName")(disabledClassName)
     if (extraAriaContext != null) __obj.updateDynamic("extraAriaContext")(extraAriaContext)
     if (forcePage != null) __obj.updateDynamic("forcePage")(forcePage.asInstanceOf[js.Any])
-    if (hrefBuilder != null) __obj.updateDynamic("hrefBuilder")(hrefBuilder)
+    if (hrefBuilder != null) __obj.updateDynamic("hrefBuilder")(js.Any.fromFunction1(hrefBuilder))
     if (initialPage != null) __obj.updateDynamic("initialPage")(initialPage.asInstanceOf[js.Any])
     if (nextClassName != null) __obj.updateDynamic("nextClassName")(nextClassName)
     if (nextLabel != null) __obj.updateDynamic("nextLabel")(nextLabel.asInstanceOf[js.Any])
     if (nextLinkClassName != null) __obj.updateDynamic("nextLinkClassName")(nextLinkClassName)
-    if (onPageChange != null) __obj.updateDynamic("onPageChange")(onPageChange)
+    if (onPageChange != null) __obj.updateDynamic("onPageChange")(js.Any.fromFunction1(onPageChange))
     if (pageClassName != null) __obj.updateDynamic("pageClassName")(pageClassName)
     if (pageLinkClassName != null) __obj.updateDynamic("pageLinkClassName")(pageLinkClassName)
     if (previousClassName != null) __obj.updateDynamic("previousClassName")(previousClassName)

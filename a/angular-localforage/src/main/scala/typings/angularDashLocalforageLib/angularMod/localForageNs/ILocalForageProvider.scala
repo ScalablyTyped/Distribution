@@ -12,11 +12,8 @@ trait ILocalForageProvider extends js.Object {
 
 object ILocalForageProvider {
   @scala.inline
-  def apply(
-    config: js.Function1[LocalForageConfig, scala.Unit],
-    setNotify: js.Function2[scala.Boolean, scala.Boolean, scala.Unit]
-  ): ILocalForageProvider = {
-    val __obj = js.Dynamic.literal(config = config, setNotify = setNotify)
+  def apply(config: LocalForageConfig => scala.Unit, setNotify: (scala.Boolean, scala.Boolean) => scala.Unit): ILocalForageProvider = {
+    val __obj = js.Dynamic.literal(config = js.Any.fromFunction1(config), setNotify = js.Any.fromFunction2(setNotify))
   
     __obj.asInstanceOf[ILocalForageProvider]
   }

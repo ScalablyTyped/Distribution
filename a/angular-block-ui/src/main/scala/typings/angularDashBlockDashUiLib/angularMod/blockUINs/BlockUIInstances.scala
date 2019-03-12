@@ -11,8 +11,8 @@ trait BlockUIInstances extends js.Object {
 
 object BlockUIInstances {
   @scala.inline
-  def apply(get: js.Function1[java.lang.String, BlockUIService]): BlockUIInstances = {
-    val __obj = js.Dynamic.literal(get = get)
+  def apply(get: java.lang.String => BlockUIService): BlockUIInstances = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[BlockUIInstances]
   }

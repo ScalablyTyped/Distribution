@@ -12,12 +12,12 @@ trait XValueBinding
     * determines the types which are supported by this binding for value exchange
     * @see supportsType
     */
-  val SupportedValueTypes: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`]
+  val SupportedValueTypes: stdLib.SafeArray[activexDashLibreofficeLib.`type`]
   /**
     * determines the types which are supported by this binding for value exchange
     * @see supportsType
     */
-  def getSupportedValueTypes(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`]
+  def getSupportedValueTypes(): stdLib.SafeArray[activexDashLibreofficeLib.`type`]
   /**
     * retrieves the current value
     * @see getSupportedValueTypes
@@ -47,16 +47,16 @@ trait XValueBinding
 object XValueBinding {
   @scala.inline
   def apply(
-    SupportedValueTypes: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`],
-    acquire: js.Function0[scala.Unit],
-    getSupportedValueTypes: js.Function0[activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`]],
-    getValue: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setValue: js.Function1[js.Any, scala.Unit],
-    supportsType: js.Function1[activexDashLibreofficeLib.`type`, scala.Boolean]
+    SupportedValueTypes: stdLib.SafeArray[activexDashLibreofficeLib.`type`],
+    acquire: () => scala.Unit,
+    getSupportedValueTypes: () => stdLib.SafeArray[activexDashLibreofficeLib.`type`],
+    getValue: activexDashLibreofficeLib.`type` => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setValue: js.Any => scala.Unit,
+    supportsType: activexDashLibreofficeLib.`type` => scala.Boolean
   ): XValueBinding = {
-    val __obj = js.Dynamic.literal(SupportedValueTypes = SupportedValueTypes, acquire = acquire, getSupportedValueTypes = getSupportedValueTypes, getValue = getValue, queryInterface = queryInterface, release = release, setValue = setValue, supportsType = supportsType)
+    val __obj = js.Dynamic.literal(SupportedValueTypes = SupportedValueTypes, acquire = js.Any.fromFunction0(acquire), getSupportedValueTypes = js.Any.fromFunction0(getSupportedValueTypes), getValue = js.Any.fromFunction1(getValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setValue = js.Any.fromFunction1(setValue), supportsType = js.Any.fromFunction1(supportsType))
   
     __obj.asInstanceOf[XValueBinding]
   }

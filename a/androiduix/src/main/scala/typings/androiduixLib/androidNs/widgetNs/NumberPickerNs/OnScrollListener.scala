@@ -11,10 +11,8 @@ trait OnScrollListener extends js.Object {
 
 object OnScrollListener {
   @scala.inline
-  def apply(
-    onScrollStateChange: js.Function2[androiduixLib.androidNs.widgetNs.NumberPicker, scala.Double, scala.Unit]
-  ): OnScrollListener = {
-    val __obj = js.Dynamic.literal(onScrollStateChange = onScrollStateChange)
+  def apply(onScrollStateChange: (androiduixLib.androidNs.widgetNs.NumberPicker, scala.Double) => scala.Unit): OnScrollListener = {
+    val __obj = js.Dynamic.literal(onScrollStateChange = js.Any.fromFunction2(onScrollStateChange))
   
     __obj.asInstanceOf[OnScrollListener]
   }

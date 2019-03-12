@@ -19,8 +19,8 @@ trait LoadableComponent extends js.Object {
 
 object LoadableComponent {
   @scala.inline
-  def apply(preload: js.Function0[scala.Unit]): LoadableComponent = {
-    val __obj = js.Dynamic.literal(preload = preload)
+  def apply(preload: () => scala.Unit): LoadableComponent = {
+    val __obj = js.Dynamic.literal(preload = js.Any.fromFunction0(preload))
   
     __obj.asInstanceOf[LoadableComponent]
   }

@@ -17,7 +17,7 @@ trait IDialogPropTypes extends js.Object {
   var destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined
   var footer: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var forceRender: js.UndefOr[scala.Boolean] = js.undefined
-  var getContainer: js.UndefOr[js.Function0[reactLib.HTMLElement]] = js.undefined
+  var getContainer: js.UndefOr[js.Function0[stdLib.HTMLElement]] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var keyboard: js.UndefOr[scala.Boolean] = js.undefined
   var mask: js.UndefOr[scala.Boolean] = js.undefined
@@ -29,7 +29,7 @@ trait IDialogPropTypes extends js.Object {
   var mousePosition: js.UndefOr[rcDashDialogLib.Anon_X] = js.undefined
   var onClose: js.UndefOr[
     js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement, reactLib.Event], 
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLDivElement, reactLib.Event], 
       _
     ]
   ] = js.undefined
@@ -48,7 +48,7 @@ trait IDialogPropTypes extends js.Object {
 object IDialogPropTypes {
   @scala.inline
   def apply(
-    afterClose: js.Function0[_] = null,
+    afterClose: () => _ = null,
     animation: js.Any = null,
     bodyProps: js.Any = null,
     bodyStyle: js.Object = null,
@@ -59,7 +59,7 @@ object IDialogPropTypes {
     destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined,
     footer: reactLib.reactMod.ReactNs.ReactNode = null,
     forceRender: js.UndefOr[scala.Boolean] = js.undefined,
-    getContainer: js.Function0[reactLib.HTMLElement] = null,
+    getContainer: () => stdLib.HTMLElement = null,
     height: scala.Int | scala.Double = null,
     keyboard: js.UndefOr[scala.Boolean] = js.undefined,
     mask: js.UndefOr[scala.Boolean] = js.undefined,
@@ -69,10 +69,7 @@ object IDialogPropTypes {
     maskStyle: js.Object = null,
     maskTransitionName: java.lang.String = null,
     mousePosition: rcDashDialogLib.Anon_X = null,
-    onClose: js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement, reactLib.Event], 
-      _
-    ] = null,
+    onClose: /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLDivElement, reactLib.Event] => _ = null,
     prefixCls: java.lang.String = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     title: reactLib.reactMod.ReactNs.ReactNode = null,
@@ -85,7 +82,7 @@ object IDialogPropTypes {
     zIndex: scala.Int | scala.Double = null
   ): IDialogPropTypes = {
     val __obj = js.Dynamic.literal()
-    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose)
+    if (afterClose != null) __obj.updateDynamic("afterClose")(js.Any.fromFunction0(afterClose))
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (bodyProps != null) __obj.updateDynamic("bodyProps")(bodyProps)
     if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle)
@@ -96,7 +93,7 @@ object IDialogPropTypes {
     if (!js.isUndefined(destroyOnClose)) __obj.updateDynamic("destroyOnClose")(destroyOnClose)
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender)
-    if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer)
+    if (getContainer != null) __obj.updateDynamic("getContainer")(js.Any.fromFunction0(getContainer))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
     if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
@@ -106,7 +103,7 @@ object IDialogPropTypes {
     if (maskStyle != null) __obj.updateDynamic("maskStyle")(maskStyle)
     if (maskTransitionName != null) __obj.updateDynamic("maskTransitionName")(maskTransitionName)
     if (mousePosition != null) __obj.updateDynamic("mousePosition")(mousePosition)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (style != null) __obj.updateDynamic("style")(style)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

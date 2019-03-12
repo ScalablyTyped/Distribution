@@ -11,8 +11,8 @@ trait Anon_Children[TInner] extends js.Object {
 
 object Anon_Children {
   @scala.inline
-  def apply[TInner](children: js.Function1[TInner, reactLib.reactMod.ReactNs.ReactElement[_]]): Anon_Children[TInner] = {
-    val __obj = js.Dynamic.literal(children = children)
+  def apply[TInner](children: TInner => reactLib.reactMod.ReactNs.ReactElement[_]): Anon_Children[TInner] = {
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
   
     __obj.asInstanceOf[Anon_Children[TInner]]
   }

@@ -48,7 +48,7 @@ object TabsProps {
     value: js.Any,
     ScrollButtonComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
     TabIndicatorProps: stdLib.Partial[atMaterialDashUiCoreLib.tabsTabIndicatorMod.TabIndicatorProps] = null,
-    action: js.Function1[/* actions */ TabsActions, scala.Unit] = null,
+    action: /* actions */ TabsActions => scala.Unit = null,
     centered: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     className: java.lang.String = null,
@@ -57,11 +57,7 @@ object TabsProps {
     fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
     indicatorColor: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.secondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.primary | java.lang.String = null,
     innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    onChange: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], 
-      /* value */ js.Any, 
-      scala.Unit
-    ] = null,
+    onChange: (/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], /* value */ js.Any) => scala.Unit = null,
     scrollButtons: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.on | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.off = null,
     scrollable: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -72,7 +68,7 @@ object TabsProps {
     val __obj = js.Dynamic.literal(value = value)
     if (ScrollButtonComponent != null) __obj.updateDynamic("ScrollButtonComponent")(ScrollButtonComponent.asInstanceOf[js.Any])
     if (TabIndicatorProps != null) __obj.updateDynamic("TabIndicatorProps")(TabIndicatorProps)
-    if (action != null) __obj.updateDynamic("action")(action)
+    if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
     if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
@@ -81,7 +77,7 @@ object TabsProps {
     if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth)
     if (indicatorColor != null) __obj.updateDynamic("indicatorColor")(indicatorColor.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (scrollButtons != null) __obj.updateDynamic("scrollButtons")(scrollButtons.asInstanceOf[js.Any])
     if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable)
     if (style != null) __obj.updateDynamic("style")(style)

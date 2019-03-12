@@ -16,7 +16,7 @@ class keystore () extends js.Object {
   def keyFromPassword(password: java.lang.String): stdLib.Uint8Array = js.native
   def keyFromPassword(
     password: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* pwDerivedKey */ stdLib.Uint8Array, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* pwDerivedKey */ stdLib.Uint8Array, scala.Unit]
   ): stdLib.Uint8Array = js.native
   def serialize(): java.lang.String = js.native
 }
@@ -28,7 +28,7 @@ object keystore extends js.Object {
   def createVault(options: js.Any): ethDashLightwalletLib.ethDashLightwalletMod.keystore = js.native
   def createVault(
     options: js.Any,
-    callback: js.Function2[/* error */ nodeLib.Error, /* keystore */ this.type, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* keystore */ this.type, scala.Unit]
   ): ethDashLightwalletLib.ethDashLightwalletMod.keystore = js.native
   def deserialize(keystore: java.lang.String): ethDashLightwalletLib.ethDashLightwalletMod.keystore = js.native
   def generateRandomSeed(): java.lang.String = js.native

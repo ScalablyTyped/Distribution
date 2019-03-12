@@ -20,17 +20,17 @@ trait Storage extends js.Object {
 object Storage {
   @scala.inline
   def apply(
-    clearSavedKeys: js.Function0[scala.Unit],
-    loadSavedKeys: js.Function0[scala.Unit],
-    loadValue: js.Function2[java.lang.String, js.Object, js.Any],
+    clearSavedKeys: () => scala.Unit,
+    loadSavedKeys: () => scala.Unit,
+    loadValue: (java.lang.String, js.Object) => js.Any,
     prefix: java.lang.String,
-    resetAll: js.Function0[scala.Unit],
+    resetAll: () => scala.Unit,
     rootWindow: stdLib.Window,
-    saveSavedKeys: js.Function0[scala.Unit],
-    saveValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    saveSavedKeys: () => scala.Unit,
+    saveValue: (java.lang.String, js.Any) => scala.Unit,
     savedKeys: js.Array[java.lang.String]
   ): Storage = {
-    val __obj = js.Dynamic.literal(clearSavedKeys = clearSavedKeys, loadSavedKeys = loadSavedKeys, loadValue = loadValue, prefix = prefix, resetAll = resetAll, rootWindow = rootWindow, saveSavedKeys = saveSavedKeys, saveValue = saveValue, savedKeys = savedKeys)
+    val __obj = js.Dynamic.literal(clearSavedKeys = js.Any.fromFunction0(clearSavedKeys), loadSavedKeys = js.Any.fromFunction0(loadSavedKeys), loadValue = js.Any.fromFunction2(loadValue), prefix = prefix, resetAll = js.Any.fromFunction0(resetAll), rootWindow = rootWindow, saveSavedKeys = js.Any.fromFunction0(saveSavedKeys), saveValue = js.Any.fromFunction2(saveValue), savedKeys = savedKeys)
   
     __obj.asInstanceOf[Storage]
   }

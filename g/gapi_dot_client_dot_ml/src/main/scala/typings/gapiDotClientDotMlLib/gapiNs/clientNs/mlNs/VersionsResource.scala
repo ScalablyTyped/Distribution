@@ -66,32 +66,14 @@ trait VersionsResource extends js.Object {
 object VersionsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotMlLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning__Operation]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotMlLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning__Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotMlLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__Version]
-    ],
-    list: js.Function1[
-      gapiDotClientDotMlLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__ListVersionsResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotMlLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning__Operation]
-    ],
-    setDefault: js.Function1[
-      gapiDotClientDotMlLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__Version]
-    ]
+    create: gapiDotClientDotMlLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning__Operation],
+    delete: gapiDotClientDotMlLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning__Operation],
+    get: gapiDotClientDotMlLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__Version],
+    list: gapiDotClientDotMlLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__ListVersionsResponse],
+    patch: gapiDotClientDotMlLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning__Operation],
+    setDefault: gapiDotClientDotMlLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__Version]
   ): VersionsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, patch = patch, setDefault = setDefault)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), setDefault = js.Any.fromFunction1(setDefault))
   
     __obj.asInstanceOf[VersionsResource]
   }

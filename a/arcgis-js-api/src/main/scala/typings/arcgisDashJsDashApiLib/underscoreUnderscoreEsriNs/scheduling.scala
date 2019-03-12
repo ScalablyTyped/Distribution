@@ -33,11 +33,8 @@ trait scheduling extends js.Object {
 
 object scheduling {
   @scala.inline
-  def apply(
-    addFrameTask: js.Function1[PhaseCallbacks, FrameTaskHandle],
-    schedule: js.Function1[js.Function, js.Any]
-  ): scheduling = {
-    val __obj = js.Dynamic.literal(addFrameTask = addFrameTask, schedule = schedule)
+  def apply(addFrameTask: PhaseCallbacks => FrameTaskHandle, schedule: js.Function => js.Any): scheduling = {
+    val __obj = js.Dynamic.literal(addFrameTask = js.Any.fromFunction1(addFrameTask), schedule = js.Any.fromFunction1(schedule))
   
     __obj.asInstanceOf[scheduling]
   }

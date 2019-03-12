@@ -57,17 +57,17 @@ trait BoolQuery extends Query {
 object BoolQuery {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    adjustPureNegative: js.Function1[java.lang.String, BoolQuery],
-    boost: js.Function1[scala.Double, BoolQuery],
-    disableCoord: js.Function1[java.lang.String, BoolQuery],
-    minimumNumberShouldMatch: js.Function1[scala.Double, BoolQuery],
-    must: js.Function1[js.Object, BoolQuery],
-    mustNot: js.Function1[js.Object, BoolQuery],
-    should: js.Function1[js.Object, BoolQuery],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    adjustPureNegative: java.lang.String => BoolQuery,
+    boost: scala.Double => BoolQuery,
+    disableCoord: java.lang.String => BoolQuery,
+    minimumNumberShouldMatch: scala.Double => BoolQuery,
+    must: js.Object => BoolQuery,
+    mustNot: js.Object => BoolQuery,
+    should: js.Object => BoolQuery,
+    toJSON: () => js.Any
   ): BoolQuery = {
-    val __obj = js.Dynamic.literal(_type = _type, adjustPureNegative = adjustPureNegative, boost = boost, disableCoord = disableCoord, minimumNumberShouldMatch = minimumNumberShouldMatch, must = must, mustNot = mustNot, should = should, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), adjustPureNegative = js.Any.fromFunction1(adjustPureNegative), boost = js.Any.fromFunction1(boost), disableCoord = js.Any.fromFunction1(disableCoord), minimumNumberShouldMatch = js.Any.fromFunction1(minimumNumberShouldMatch), must = js.Any.fromFunction1(must), mustNot = js.Any.fromFunction1(mustNot), should = js.Any.fromFunction1(should), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[BoolQuery]
   }

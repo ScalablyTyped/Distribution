@@ -16,11 +16,11 @@ object ThemeListener {
   @scala.inline
   def apply[C /* <: java.lang.String */](
     contextTypes: reactLib.reactMod.ReactNs.ValidationMap[C],
-    initial: js.Function1[ContextWithTheme[C], Theme],
-    subscribe: js.Function2[ContextWithTheme[C], js.Function1[/* theme */ Theme, scala.Unit], SubscriptionId],
-    unsubscribe: js.Function2[ContextWithTheme[C], SubscriptionId, scala.Unit]
+    initial: ContextWithTheme[C] => Theme,
+    subscribe: (ContextWithTheme[C], js.Function1[/* theme */ Theme, scala.Unit]) => SubscriptionId,
+    unsubscribe: (ContextWithTheme[C], SubscriptionId) => scala.Unit
   ): ThemeListener[C] = {
-    val __obj = js.Dynamic.literal(contextTypes = contextTypes, initial = initial, subscribe = subscribe, unsubscribe = unsubscribe)
+    val __obj = js.Dynamic.literal(contextTypes = contextTypes, initial = js.Any.fromFunction1(initial), subscribe = js.Any.fromFunction2(subscribe), unsubscribe = js.Any.fromFunction2(unsubscribe))
   
     __obj.asInstanceOf[ThemeListener[C]]
   }

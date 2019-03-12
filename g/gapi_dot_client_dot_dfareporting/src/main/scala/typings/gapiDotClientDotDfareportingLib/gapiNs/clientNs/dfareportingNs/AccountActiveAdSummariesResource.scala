@@ -13,12 +13,9 @@ trait AccountActiveAdSummariesResource extends js.Object {
 object AccountActiveAdSummariesResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AccountActiveAdSummary]
-    ]
+    get: gapiDotClientDotDfareportingLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[AccountActiveAdSummary]
   ): AccountActiveAdSummariesResource = {
-    val __obj = js.Dynamic.literal(get = get)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[AccountActiveAdSummariesResource]
   }

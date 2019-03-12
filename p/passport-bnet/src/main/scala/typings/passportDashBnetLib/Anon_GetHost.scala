@@ -11,8 +11,8 @@ trait Anon_GetHost extends js.Object {
 
 object Anon_GetHost {
   @scala.inline
-  def apply(getHost: js.Function1[java.lang.String, java.lang.String]): Anon_GetHost = {
-    val __obj = js.Dynamic.literal(getHost = getHost)
+  def apply(getHost: java.lang.String => java.lang.String): Anon_GetHost = {
+    val __obj = js.Dynamic.literal(getHost = js.Any.fromFunction1(getHost))
   
     __obj.asInstanceOf[Anon_GetHost]
   }

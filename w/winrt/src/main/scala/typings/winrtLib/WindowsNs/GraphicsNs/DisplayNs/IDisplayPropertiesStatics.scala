@@ -25,9 +25,7 @@ object IDisplayPropertiesStatics {
   def apply(
     autoRotationPreferences: DisplayOrientations,
     currentOrientation: DisplayOrientations,
-    getColorProfileAsync: js.Function0[
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream]
-    ],
+    getColorProfileAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream],
     logicalDpi: scala.Double,
     nativeOrientation: DisplayOrientations,
     oncolorprofilechanged: js.Any,
@@ -38,7 +36,7 @@ object IDisplayPropertiesStatics {
     resolutionScale: ResolutionScale,
     stereoEnabled: scala.Boolean
   ): IDisplayPropertiesStatics = {
-    val __obj = js.Dynamic.literal(autoRotationPreferences = autoRotationPreferences, currentOrientation = currentOrientation, getColorProfileAsync = getColorProfileAsync, logicalDpi = logicalDpi, nativeOrientation = nativeOrientation, oncolorprofilechanged = oncolorprofilechanged, ondisplaycontentsinvalidated = ondisplaycontentsinvalidated, onlogicaldpichanged = onlogicaldpichanged, onorientationchanged = onorientationchanged, onstereoenabledchanged = onstereoenabledchanged, resolutionScale = resolutionScale, stereoEnabled = stereoEnabled)
+    val __obj = js.Dynamic.literal(autoRotationPreferences = autoRotationPreferences, currentOrientation = currentOrientation, getColorProfileAsync = js.Any.fromFunction0(getColorProfileAsync), logicalDpi = logicalDpi, nativeOrientation = nativeOrientation, oncolorprofilechanged = oncolorprofilechanged, ondisplaycontentsinvalidated = ondisplaycontentsinvalidated, onlogicaldpichanged = onlogicaldpichanged, onorientationchanged = onorientationchanged, onstereoenabledchanged = onstereoenabledchanged, resolutionScale = resolutionScale, stereoEnabled = stereoEnabled)
   
     __obj.asInstanceOf[IDisplayPropertiesStatics]
   }

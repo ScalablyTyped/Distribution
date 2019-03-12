@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class RectangleCanvasDrawer protected ()
   extends plottableLib.buildSrcDrawersRectangleDrawerMod.RectangleCanvasDrawer {
-  def this(ctx: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D) = this()
+  def this(ctx: stdLib.CanvasRenderingContext2D) = this()
 }
 

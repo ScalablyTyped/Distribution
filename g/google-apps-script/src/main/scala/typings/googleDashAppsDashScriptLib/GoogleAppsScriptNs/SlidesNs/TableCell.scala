@@ -24,21 +24,21 @@ trait TableCell extends js.Object {
 object TableCell {
   @scala.inline
   def apply(
-    getColumnIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getColumnSpan: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getContentAlignment: js.Function0[ContentAlignment],
-    getFill: js.Function0[Fill],
-    getHeadCell: js.Function0[TableCell],
-    getMergeState: js.Function0[CellMergeState],
-    getParentColumn: js.Function0[TableColumn],
-    getParentRow: js.Function0[TableRow],
-    getParentTable: js.Function0[Table],
-    getRowIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getRowSpan: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getText: js.Function0[TextRange],
-    setContentAlignment: js.Function1[ContentAlignment, TableCell]
+    getColumnIndex: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getColumnSpan: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getContentAlignment: () => ContentAlignment,
+    getFill: () => Fill,
+    getHeadCell: () => TableCell,
+    getMergeState: () => CellMergeState,
+    getParentColumn: () => TableColumn,
+    getParentRow: () => TableRow,
+    getParentTable: () => Table,
+    getRowIndex: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getRowSpan: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getText: () => TextRange,
+    setContentAlignment: ContentAlignment => TableCell
   ): TableCell = {
-    val __obj = js.Dynamic.literal(getColumnIndex = getColumnIndex, getColumnSpan = getColumnSpan, getContentAlignment = getContentAlignment, getFill = getFill, getHeadCell = getHeadCell, getMergeState = getMergeState, getParentColumn = getParentColumn, getParentRow = getParentRow, getParentTable = getParentTable, getRowIndex = getRowIndex, getRowSpan = getRowSpan, getText = getText, setContentAlignment = setContentAlignment)
+    val __obj = js.Dynamic.literal(getColumnIndex = js.Any.fromFunction0(getColumnIndex), getColumnSpan = js.Any.fromFunction0(getColumnSpan), getContentAlignment = js.Any.fromFunction0(getContentAlignment), getFill = js.Any.fromFunction0(getFill), getHeadCell = js.Any.fromFunction0(getHeadCell), getMergeState = js.Any.fromFunction0(getMergeState), getParentColumn = js.Any.fromFunction0(getParentColumn), getParentRow = js.Any.fromFunction0(getParentRow), getParentTable = js.Any.fromFunction0(getParentTable), getRowIndex = js.Any.fromFunction0(getRowIndex), getRowSpan = js.Any.fromFunction0(getRowSpan), getText = js.Any.fromFunction0(getText), setContentAlignment = js.Any.fromFunction1(setContentAlignment))
   
     __obj.asInstanceOf[TableCell]
   }

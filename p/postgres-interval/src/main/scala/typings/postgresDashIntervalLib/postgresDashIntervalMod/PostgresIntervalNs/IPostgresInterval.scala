@@ -21,9 +21,9 @@ trait IPostgresInterval extends js.Object {
 object IPostgresInterval {
   @scala.inline
   def apply(
-    toISO: js.Function0[java.lang.String],
-    toISOString: js.Function0[java.lang.String],
-    toPostgres: js.Function0[java.lang.String],
+    toISO: () => java.lang.String,
+    toISOString: () => java.lang.String,
+    toPostgres: () => java.lang.String,
     days: scala.Int | scala.Double = null,
     hours: scala.Int | scala.Double = null,
     milliseconds: scala.Int | scala.Double = null,
@@ -32,7 +32,7 @@ object IPostgresInterval {
     seconds: scala.Int | scala.Double = null,
     years: scala.Int | scala.Double = null
   ): IPostgresInterval = {
-    val __obj = js.Dynamic.literal(toISO = toISO, toISOString = toISOString, toPostgres = toPostgres)
+    val __obj = js.Dynamic.literal(toISO = js.Any.fromFunction0(toISO), toISOString = js.Any.fromFunction0(toISOString), toPostgres = js.Any.fromFunction0(toPostgres))
     if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
     if (hours != null) __obj.updateDynamic("hours")(hours.asInstanceOf[js.Any])
     if (milliseconds != null) __obj.updateDynamic("milliseconds")(milliseconds.asInstanceOf[js.Any])

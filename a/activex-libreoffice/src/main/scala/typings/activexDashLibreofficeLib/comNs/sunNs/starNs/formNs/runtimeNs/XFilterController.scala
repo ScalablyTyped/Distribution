@@ -53,7 +53,7 @@ trait XFilterController extends js.Object {
     * Each element of the returned sequence is a **disjunctive term** , having exactly {@link FilterComponents} elements, which denote the single
     * **predicate expressions** of this term.
     */
-  val PredicateExpressions: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]]
+  val PredicateExpressions: stdLib.SafeArray[stdLib.SafeArray[java.lang.String]]
   /**
     * registers a listener to be notified of certain changes in the form based filter.
     *
@@ -79,7 +79,7 @@ trait XFilterController extends js.Object {
     * Each element of the returned sequence is a **disjunctive term** , having exactly {@link FilterComponents} elements, which denote the single
     * **predicate expressions** of this term.
     */
-  def getPredicateExpressions(): activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]]
+  def getPredicateExpressions(): stdLib.SafeArray[stdLib.SafeArray[java.lang.String]]
   /**
     * removes a given **disjunctive term**
     * @param Term the index of the term to remove. Must be greater than or equal to 0, and smaller than {@link DisjunctiveTerms} .
@@ -104,18 +104,16 @@ object XFilterController {
     ActiveTerm: scala.Double,
     DisjunctiveTerms: scala.Double,
     FilterComponents: scala.Double,
-    PredicateExpressions: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]],
-    addFilterControllerListener: js.Function1[XFilterControllerListener, scala.Unit],
-    appendEmptyDisjunctiveTerm: js.Function0[scala.Unit],
-    getFilterComponent: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl],
-    getPredicateExpressions: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]]
-    ],
-    removeDisjunctiveTerm: js.Function1[scala.Double, scala.Unit],
-    removeFilterControllerListener: js.Function1[XFilterControllerListener, scala.Unit],
-    setPredicateExpression: js.Function3[scala.Double, scala.Double, java.lang.String, scala.Unit]
+    PredicateExpressions: stdLib.SafeArray[stdLib.SafeArray[java.lang.String]],
+    addFilterControllerListener: XFilterControllerListener => scala.Unit,
+    appendEmptyDisjunctiveTerm: () => scala.Unit,
+    getFilterComponent: scala.Double => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl,
+    getPredicateExpressions: () => stdLib.SafeArray[stdLib.SafeArray[java.lang.String]],
+    removeDisjunctiveTerm: scala.Double => scala.Unit,
+    removeFilterControllerListener: XFilterControllerListener => scala.Unit,
+    setPredicateExpression: (scala.Double, scala.Double, java.lang.String) => scala.Unit
   ): XFilterController = {
-    val __obj = js.Dynamic.literal(ActiveTerm = ActiveTerm, DisjunctiveTerms = DisjunctiveTerms, FilterComponents = FilterComponents, PredicateExpressions = PredicateExpressions, addFilterControllerListener = addFilterControllerListener, appendEmptyDisjunctiveTerm = appendEmptyDisjunctiveTerm, getFilterComponent = getFilterComponent, getPredicateExpressions = getPredicateExpressions, removeDisjunctiveTerm = removeDisjunctiveTerm, removeFilterControllerListener = removeFilterControllerListener, setPredicateExpression = setPredicateExpression)
+    val __obj = js.Dynamic.literal(ActiveTerm = ActiveTerm, DisjunctiveTerms = DisjunctiveTerms, FilterComponents = FilterComponents, PredicateExpressions = PredicateExpressions, addFilterControllerListener = js.Any.fromFunction1(addFilterControllerListener), appendEmptyDisjunctiveTerm = js.Any.fromFunction0(appendEmptyDisjunctiveTerm), getFilterComponent = js.Any.fromFunction1(getFilterComponent), getPredicateExpressions = js.Any.fromFunction0(getPredicateExpressions), removeDisjunctiveTerm = js.Any.fromFunction1(removeDisjunctiveTerm), removeFilterControllerListener = js.Any.fromFunction1(removeFilterControllerListener), setPredicateExpression = js.Any.fromFunction3(setPredicateExpression))
   
     __obj.asInstanceOf[XFilterController]
   }

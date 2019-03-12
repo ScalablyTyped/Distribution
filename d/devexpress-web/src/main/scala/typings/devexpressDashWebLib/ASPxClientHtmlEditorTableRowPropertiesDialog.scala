@@ -26,17 +26,17 @@ trait ASPxClientHtmlEditorTableRowPropertiesDialog extends ASPxClientHtmlEditorT
 object ASPxClientHtmlEditorTableRowPropertiesDialog {
   @scala.inline
   def apply(
-    GetBackgroundColorColorEdit: js.Function0[ASPxClientColorEdit],
-    GetCancelButton: js.Function0[ASPxClientButton],
-    GetFormLayout: js.Function0[ASPxClientFormLayout],
-    GetHeightTypeComboBox: js.Function0[ASPxClientComboBox],
-    GetHeightValueSpinEdit: js.Function0[ASPxClientSpinEdit],
-    GetHeightValueTypeComboBox: js.Function0[ASPxClientComboBox],
-    GetHorizontalAlignmentComboBox: js.Function0[ASPxClientComboBox],
-    GetOkButton: js.Function0[ASPxClientButton],
-    GetVerticalAlignmentComboBox: js.Function0[ASPxClientComboBox]
+    GetBackgroundColorColorEdit: () => ASPxClientColorEdit,
+    GetCancelButton: () => ASPxClientButton,
+    GetFormLayout: () => ASPxClientFormLayout,
+    GetHeightTypeComboBox: () => ASPxClientComboBox,
+    GetHeightValueSpinEdit: () => ASPxClientSpinEdit,
+    GetHeightValueTypeComboBox: () => ASPxClientComboBox,
+    GetHorizontalAlignmentComboBox: () => ASPxClientComboBox,
+    GetOkButton: () => ASPxClientButton,
+    GetVerticalAlignmentComboBox: () => ASPxClientComboBox
   ): ASPxClientHtmlEditorTableRowPropertiesDialog = {
-    val __obj = js.Dynamic.literal(GetBackgroundColorColorEdit = GetBackgroundColorColorEdit, GetCancelButton = GetCancelButton, GetFormLayout = GetFormLayout, GetHeightTypeComboBox = GetHeightTypeComboBox, GetHeightValueSpinEdit = GetHeightValueSpinEdit, GetHeightValueTypeComboBox = GetHeightValueTypeComboBox, GetHorizontalAlignmentComboBox = GetHorizontalAlignmentComboBox, GetOkButton = GetOkButton, GetVerticalAlignmentComboBox = GetVerticalAlignmentComboBox)
+    val __obj = js.Dynamic.literal(GetBackgroundColorColorEdit = js.Any.fromFunction0(GetBackgroundColorColorEdit), GetCancelButton = js.Any.fromFunction0(GetCancelButton), GetFormLayout = js.Any.fromFunction0(GetFormLayout), GetHeightTypeComboBox = js.Any.fromFunction0(GetHeightTypeComboBox), GetHeightValueSpinEdit = js.Any.fromFunction0(GetHeightValueSpinEdit), GetHeightValueTypeComboBox = js.Any.fromFunction0(GetHeightValueTypeComboBox), GetHorizontalAlignmentComboBox = js.Any.fromFunction0(GetHorizontalAlignmentComboBox), GetOkButton = js.Any.fromFunction0(GetOkButton), GetVerticalAlignmentComboBox = js.Any.fromFunction0(GetVerticalAlignmentComboBox))
   
     __obj.asInstanceOf[ASPxClientHtmlEditorTableRowPropertiesDialog]
   }

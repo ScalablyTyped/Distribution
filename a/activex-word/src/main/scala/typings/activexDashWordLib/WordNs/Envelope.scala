@@ -12,7 +12,7 @@ class Envelope protected () extends js.Object {
   var AddressFromLeft: scala.Double = js.native
   var AddressFromTop: scala.Double = js.native
   val AddressStyle: Style = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
   var DefaultFaceUp: scala.Boolean = js.native
   var DefaultHeight: scala.Double = js.native

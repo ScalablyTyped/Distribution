@@ -94,22 +94,19 @@ object Options {
   @scala.inline
   def apply(
     addItem: js.Object = null,
-    afterSelect: js.Function1[/* item */ java.lang.String, scala.Unit] = null,
+    afterSelect: /* item */ java.lang.String => scala.Unit = null,
     appendTo: bootstrapDash3DashTypeaheadLib.JQuery = null,
     autoSelect: js.UndefOr[scala.Boolean] = js.undefined,
     delay: scala.Int | scala.Double = null,
-    displayText: js.Function1[
-      /* item */ java.lang.String | bootstrapDash3DashTypeaheadLib.Anon_Name, 
-      java.lang.String
-    ] = null,
+    displayText: /* item */ java.lang.String | bootstrapDash3DashTypeaheadLib.Anon_Name => java.lang.String = null,
     fitToElement: js.UndefOr[scala.Boolean] = js.undefined,
-    highlighter: js.Function1[/* item */ java.lang.String, java.lang.String] = null,
+    highlighter: /* item */ java.lang.String => java.lang.String = null,
     items: scala.Int | scala.Double = null,
-    matcher: js.Function1[/* item */ java.lang.String, scala.Boolean] = null,
+    matcher: /* item */ java.lang.String => scala.Boolean = null,
     minLength: scala.Int | scala.Double = null,
     scrollHeight: scala.Double | js.Function0[scala.Double] = null,
     showHintOnFocus: scala.Boolean | bootstrapDash3DashTypeaheadLib.bootstrapDash3DashTypeaheadLibStrings.all = null,
-    sorter: js.Function1[/* items */ js.Array[java.lang.String], js.Array[java.lang.String]] = null,
+    sorter: /* items */ js.Array[java.lang.String] => js.Array[java.lang.String] = null,
     source: js.Array[java.lang.String] | js.Array[js.Object] | (js.Function2[
       /* query */ js.UndefOr[java.lang.String], 
       /* process */ js.UndefOr[
@@ -120,25 +117,25 @@ object Options {
       ], 
       scala.Unit
     ]) = null,
-    updater: js.Function1[/* item */ java.lang.String, java.lang.String] = null
+    updater: /* item */ java.lang.String => java.lang.String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (addItem != null) __obj.updateDynamic("addItem")(addItem)
-    if (afterSelect != null) __obj.updateDynamic("afterSelect")(afterSelect)
+    if (afterSelect != null) __obj.updateDynamic("afterSelect")(js.Any.fromFunction1(afterSelect))
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
     if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (displayText != null) __obj.updateDynamic("displayText")(displayText)
+    if (displayText != null) __obj.updateDynamic("displayText")(js.Any.fromFunction1(displayText))
     if (!js.isUndefined(fitToElement)) __obj.updateDynamic("fitToElement")(fitToElement)
-    if (highlighter != null) __obj.updateDynamic("highlighter")(highlighter)
+    if (highlighter != null) __obj.updateDynamic("highlighter")(js.Any.fromFunction1(highlighter))
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (matcher != null) __obj.updateDynamic("matcher")(matcher)
+    if (matcher != null) __obj.updateDynamic("matcher")(js.Any.fromFunction1(matcher))
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
     if (scrollHeight != null) __obj.updateDynamic("scrollHeight")(scrollHeight.asInstanceOf[js.Any])
     if (showHintOnFocus != null) __obj.updateDynamic("showHintOnFocus")(showHintOnFocus.asInstanceOf[js.Any])
-    if (sorter != null) __obj.updateDynamic("sorter")(sorter)
+    if (sorter != null) __obj.updateDynamic("sorter")(js.Any.fromFunction1(sorter))
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (updater != null) __obj.updateDynamic("updater")(updater)
+    if (updater != null) __obj.updateDynamic("updater")(js.Any.fromFunction1(updater))
     __obj.asInstanceOf[Options]
   }
 }

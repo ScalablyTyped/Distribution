@@ -22,8 +22,8 @@ trait ChangeSectionColumnsCommand extends CommandBase {
 
 object ChangeSectionColumnsCommand {
   @scala.inline
-  def apply(execute: js.Function1[js.Array[SectionColumn], scala.Boolean], getState: js.Function0[js.Any]): ChangeSectionColumnsCommand = {
-    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  def apply(execute: js.Array[SectionColumn] => scala.Boolean, getState: () => js.Any): ChangeSectionColumnsCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
   
     __obj.asInstanceOf[ChangeSectionColumnsCommand]
   }

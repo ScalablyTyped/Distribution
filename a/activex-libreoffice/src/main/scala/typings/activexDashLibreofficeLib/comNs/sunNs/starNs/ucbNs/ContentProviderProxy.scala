@@ -22,16 +22,16 @@ object ContentProviderProxy {
   @scala.inline
   def apply(
     ContentProvider: XContentProvider,
-    acquire: js.Function0[scala.Unit],
-    compareContentIds: js.Function2[XContentIdentifier, XContentIdentifier, scala.Double],
-    deregisterInstance: js.Function2[java.lang.String, java.lang.String, XContentProvider],
-    getContentProvider: js.Function0[XContentProvider],
-    queryContent: js.Function1[XContentIdentifier, XContent],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerInstance: js.Function3[java.lang.String, java.lang.String, scala.Boolean, XContentProvider],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    compareContentIds: (XContentIdentifier, XContentIdentifier) => scala.Double,
+    deregisterInstance: (java.lang.String, java.lang.String) => XContentProvider,
+    getContentProvider: () => XContentProvider,
+    queryContent: XContentIdentifier => XContent,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerInstance: (java.lang.String, java.lang.String, scala.Boolean) => XContentProvider,
+    release: () => scala.Unit
   ): ContentProviderProxy = {
-    val __obj = js.Dynamic.literal(ContentProvider = ContentProvider, acquire = acquire, compareContentIds = compareContentIds, deregisterInstance = deregisterInstance, getContentProvider = getContentProvider, queryContent = queryContent, queryInterface = queryInterface, registerInstance = registerInstance, release = release)
+    val __obj = js.Dynamic.literal(ContentProvider = ContentProvider, acquire = js.Any.fromFunction0(acquire), compareContentIds = js.Any.fromFunction2(compareContentIds), deregisterInstance = js.Any.fromFunction2(deregisterInstance), getContentProvider = js.Any.fromFunction0(getContentProvider), queryContent = js.Any.fromFunction1(queryContent), queryInterface = js.Any.fromFunction1(queryInterface), registerInstance = js.Any.fromFunction3(registerInstance), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[ContentProviderProxy]
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val CheckBox: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsCheckBoxMod.CheckBoxProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    CheckBoxProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
       reactLib.HTMLInputElement
     ]), 

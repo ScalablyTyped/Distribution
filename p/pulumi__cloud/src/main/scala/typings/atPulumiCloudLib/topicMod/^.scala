@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/cloud/topic", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Topic: atPulumiCloudLib.topicMod.TopicConstructor = js.native
+  var Topic: TopicConstructor = js.native
 }
 

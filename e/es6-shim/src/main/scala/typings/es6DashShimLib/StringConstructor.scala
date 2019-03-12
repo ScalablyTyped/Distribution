@@ -24,10 +24,10 @@ trait StringConstructor extends js.Object {
 object StringConstructor {
   @scala.inline
   def apply(
-    fromCodePoint: js.Function1[/* repeated */ scala.Double, java.lang.String],
-    raw: js.Function2[stdLib.TemplateStringsArray, /* repeated */ js.Any, java.lang.String]
+    fromCodePoint: /* repeated */ scala.Double => java.lang.String,
+    raw: (stdLib.TemplateStringsArray, /* repeated */ js.Any) => java.lang.String
   ): StringConstructor = {
-    val __obj = js.Dynamic.literal(fromCodePoint = fromCodePoint, raw = raw)
+    val __obj = js.Dynamic.literal(fromCodePoint = js.Any.fromFunction1(fromCodePoint), raw = js.Any.fromFunction2(raw))
   
     __obj.asInstanceOf[StringConstructor]
   }

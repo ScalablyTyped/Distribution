@@ -29,7 +29,7 @@ object RouteProps {
     exact: js.UndefOr[scala.Boolean] = js.undefined,
     location: historyLib.historyMod.Location[historyLib.historyMod.LocationState] = null,
     path: java.lang.String = null,
-    render: js.Function1[/* props */ RouteComponentProps[_], reactLib.reactMod.ReactNs.ReactNode] = null,
+    render: /* props */ RouteComponentProps[_] => reactLib.reactMod.ReactNs.ReactNode = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined
   ): RouteProps = {
     val __obj = js.Dynamic.literal()
@@ -38,7 +38,7 @@ object RouteProps {
     if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
     if (location != null) __obj.updateDynamic("location")(location)
     if (path != null) __obj.updateDynamic("path")(path)
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
     __obj.asInstanceOf[RouteProps]
   }

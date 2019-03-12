@@ -73,25 +73,22 @@ object ModalProps {
     deviceWidth: scala.Int | scala.Double = null,
     hardwareAccelerated: js.UndefOr[scala.Boolean] = js.undefined,
     hideModalContentWhileAnimating: js.UndefOr[scala.Boolean] = js.undefined,
-    onBackButtonPress: js.Function0[scala.Unit] = null,
-    onBackdropPress: js.Function0[scala.Unit] = null,
-    onDismiss: js.Function0[scala.Unit] = null,
-    onModalHide: js.Function0[scala.Unit] = null,
-    onModalShow: js.Function0[scala.Unit] = null,
-    onOrientationChange: js.Function1[
-      /* orientation */ reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.portrait | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.landscape, 
-      scala.Unit
-    ] = null,
-    onShow: js.Function0[scala.Unit] = null,
-    onSwipeCancel: js.Function0[scala.Unit] = null,
-    onSwipeComplete: js.Function0[scala.Unit] = null,
-    onSwipeMove: js.Function1[/* percentageShown */ scala.Double, scala.Unit] = null,
-    onSwipeStart: js.Function0[scala.Unit] = null,
+    onBackButtonPress: () => scala.Unit = null,
+    onBackdropPress: () => scala.Unit = null,
+    onDismiss: () => scala.Unit = null,
+    onModalHide: () => scala.Unit = null,
+    onModalShow: () => scala.Unit = null,
+    onOrientationChange: /* orientation */ reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.portrait | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.landscape => scala.Unit = null,
+    onShow: () => scala.Unit = null,
+    onSwipeCancel: () => scala.Unit = null,
+    onSwipeComplete: () => scala.Unit = null,
+    onSwipeMove: /* percentageShown */ scala.Double => scala.Unit = null,
+    onSwipeStart: () => scala.Unit = null,
     presentationStyle: reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.fullScreen | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.pageSheet | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.formSheet | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.overFullScreen = null,
     propagateSwipe: js.UndefOr[scala.Boolean] = js.undefined,
     scrollOffset: scala.Int | scala.Double = null,
     scrollOffsetMax: scala.Int | scala.Double = null,
-    scrollTo: js.Function1[/* e */ js.Any, scala.Unit] = null,
+    scrollTo: /* e */ js.Any => scala.Unit = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     supportedOrientations: js.Array[Orientation] = null,
     swipeDirection: reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.up | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.down | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.left | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.right = null,
@@ -112,22 +109,22 @@ object ModalProps {
     if (deviceWidth != null) __obj.updateDynamic("deviceWidth")(deviceWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(hardwareAccelerated)) __obj.updateDynamic("hardwareAccelerated")(hardwareAccelerated)
     if (!js.isUndefined(hideModalContentWhileAnimating)) __obj.updateDynamic("hideModalContentWhileAnimating")(hideModalContentWhileAnimating)
-    if (onBackButtonPress != null) __obj.updateDynamic("onBackButtonPress")(onBackButtonPress)
-    if (onBackdropPress != null) __obj.updateDynamic("onBackdropPress")(onBackdropPress)
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss)
-    if (onModalHide != null) __obj.updateDynamic("onModalHide")(onModalHide)
-    if (onModalShow != null) __obj.updateDynamic("onModalShow")(onModalShow)
-    if (onOrientationChange != null) __obj.updateDynamic("onOrientationChange")(onOrientationChange)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
-    if (onSwipeCancel != null) __obj.updateDynamic("onSwipeCancel")(onSwipeCancel)
-    if (onSwipeComplete != null) __obj.updateDynamic("onSwipeComplete")(onSwipeComplete)
-    if (onSwipeMove != null) __obj.updateDynamic("onSwipeMove")(onSwipeMove)
-    if (onSwipeStart != null) __obj.updateDynamic("onSwipeStart")(onSwipeStart)
+    if (onBackButtonPress != null) __obj.updateDynamic("onBackButtonPress")(js.Any.fromFunction0(onBackButtonPress))
+    if (onBackdropPress != null) __obj.updateDynamic("onBackdropPress")(js.Any.fromFunction0(onBackdropPress))
+    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
+    if (onModalHide != null) __obj.updateDynamic("onModalHide")(js.Any.fromFunction0(onModalHide))
+    if (onModalShow != null) __obj.updateDynamic("onModalShow")(js.Any.fromFunction0(onModalShow))
+    if (onOrientationChange != null) __obj.updateDynamic("onOrientationChange")(js.Any.fromFunction1(onOrientationChange))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
+    if (onSwipeCancel != null) __obj.updateDynamic("onSwipeCancel")(js.Any.fromFunction0(onSwipeCancel))
+    if (onSwipeComplete != null) __obj.updateDynamic("onSwipeComplete")(js.Any.fromFunction0(onSwipeComplete))
+    if (onSwipeMove != null) __obj.updateDynamic("onSwipeMove")(js.Any.fromFunction1(onSwipeMove))
+    if (onSwipeStart != null) __obj.updateDynamic("onSwipeStart")(js.Any.fromFunction0(onSwipeStart))
     if (presentationStyle != null) __obj.updateDynamic("presentationStyle")(presentationStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(propagateSwipe)) __obj.updateDynamic("propagateSwipe")(propagateSwipe)
     if (scrollOffset != null) __obj.updateDynamic("scrollOffset")(scrollOffset.asInstanceOf[js.Any])
     if (scrollOffsetMax != null) __obj.updateDynamic("scrollOffsetMax")(scrollOffsetMax.asInstanceOf[js.Any])
-    if (scrollTo != null) __obj.updateDynamic("scrollTo")(scrollTo)
+    if (scrollTo != null) __obj.updateDynamic("scrollTo")(js.Any.fromFunction1(scrollTo))
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (supportedOrientations != null) __obj.updateDynamic("supportedOrientations")(supportedOrientations)
     if (swipeDirection != null) __obj.updateDynamic("swipeDirection")(swipeDirection.asInstanceOf[js.Any])

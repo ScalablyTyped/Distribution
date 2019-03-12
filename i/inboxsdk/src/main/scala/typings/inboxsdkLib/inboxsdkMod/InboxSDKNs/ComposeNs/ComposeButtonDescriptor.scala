@@ -21,7 +21,7 @@ trait ComposeButtonDescriptor extends js.Object {
 object ComposeButtonDescriptor {
   @scala.inline
   def apply(
-    onClick: js.Function1[ComposeButtonClickEvent, scala.Unit],
+    onClick: ComposeButtonClickEvent => scala.Unit,
     title: java.lang.String,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     hasDropdown: js.UndefOr[scala.Boolean] = js.undefined,
@@ -30,7 +30,7 @@ object ComposeButtonDescriptor {
     orderHint: scala.Int | scala.Double = null,
     `type`: inboxsdkLib.inboxsdkLibStrings.MODIFIER | inboxsdkLib.inboxsdkLibStrings.SEND_ACTION = null
   ): ComposeButtonDescriptor = {
-    val __obj = js.Dynamic.literal(onClick = onClick, title = title)
+    val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), title = title)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown)
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def default(): reactLib.reactMod.ReactNs.SFC[antdLib.libIconMod.IconProps] = js.native
-  def default(options: antdLib.libIconIconFontMod.CustomIconOptions): reactLib.reactMod.ReactNs.SFC[antdLib.libIconMod.IconProps] = js.native
+  def default(options: CustomIconOptions): reactLib.reactMod.ReactNs.SFC[antdLib.libIconMod.IconProps] = js.native
 }
 

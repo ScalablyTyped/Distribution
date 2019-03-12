@@ -31,7 +31,7 @@ trait ArrowKeyStepperProps
 object ArrowKeyStepperProps {
   @scala.inline
   def apply(
-    children: js.Function1[ChildProps, reactLib.reactMod.ReactNs.ReactNode],
+    children: ChildProps => reactLib.reactMod.ReactNs.ReactNode,
     columnCount: scala.Double,
     rowCount: scala.Double,
     StringDictionary: /**
@@ -46,17 +46,17 @@ object ArrowKeyStepperProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     isControlled: js.UndefOr[scala.Boolean] = js.undefined,
     mode: reactDashVirtualizedLib.reactDashVirtualizedLibStrings.edges | reactDashVirtualizedLib.reactDashVirtualizedLibStrings.cells = null,
-    onScrollToChange: js.Function1[/* params */ ScrollIndices, scala.Unit] = null,
+    onScrollToChange: /* params */ ScrollIndices => scala.Unit = null,
     scrollToColumn: scala.Int | scala.Double = null,
     scrollToRow: scala.Int | scala.Double = null
   ): ArrowKeyStepperProps = {
-    val __obj = js.Dynamic.literal(children = children, columnCount = columnCount, rowCount = rowCount)
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), columnCount = columnCount, rowCount = rowCount)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(isControlled)) __obj.updateDynamic("isControlled")(isControlled)
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (onScrollToChange != null) __obj.updateDynamic("onScrollToChange")(onScrollToChange)
+    if (onScrollToChange != null) __obj.updateDynamic("onScrollToChange")(js.Any.fromFunction1(onScrollToChange))
     if (scrollToColumn != null) __obj.updateDynamic("scrollToColumn")(scrollToColumn.asInstanceOf[js.Any])
     if (scrollToRow != null) __obj.updateDynamic("scrollToRow")(scrollToRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrowKeyStepperProps]

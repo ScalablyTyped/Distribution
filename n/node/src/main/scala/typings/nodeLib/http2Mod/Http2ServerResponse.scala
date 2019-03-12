@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("http2", "Http2ServerResponse")
 @js.native
 class Http2ServerResponse protected ()
-  extends nodeLib.eventsMod.EventEmitter {
+  extends nodeLib.streamMod.Stream {
   var connection: nodeLib.netMod.Socket | nodeLib.tlsMod.TLSSocket = js.native
   val finished: scala.Boolean = js.native
   val headersSent: scala.Boolean = js.native

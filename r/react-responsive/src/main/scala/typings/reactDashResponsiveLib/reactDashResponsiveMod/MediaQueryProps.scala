@@ -60,8 +60,8 @@ object MediaQueryProps {
     minResolution: scala.Double | java.lang.String = null,
     minWidth: scala.Double | java.lang.String = null,
     monochrome: js.UndefOr[scala.Boolean] = js.undefined,
-    onBeforeChange: js.Function1[/* matches */ scala.Boolean, scala.Unit] = null,
-    onChange: js.Function1[/* matches */ scala.Boolean, scala.Unit] = null,
+    onBeforeChange: /* matches */ scala.Boolean => scala.Unit = null,
+    onChange: /* matches */ scala.Boolean => scala.Unit = null,
     orientation: reactDashResponsiveLib.reactDashResponsiveLibStrings.portrait | reactDashResponsiveLib.reactDashResponsiveLibStrings.landscape = null,
     print: js.UndefOr[scala.Boolean] = js.undefined,
     projection: js.UndefOr[scala.Boolean] = js.undefined,
@@ -114,8 +114,8 @@ object MediaQueryProps {
     if (minResolution != null) __obj.updateDynamic("minResolution")(minResolution.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(monochrome)) __obj.updateDynamic("monochrome")(monochrome)
-    if (onBeforeChange != null) __obj.updateDynamic("onBeforeChange")(onBeforeChange)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onBeforeChange != null) __obj.updateDynamic("onBeforeChange")(js.Any.fromFunction1(onBeforeChange))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (!js.isUndefined(print)) __obj.updateDynamic("print")(print)
     if (!js.isUndefined(projection)) __obj.updateDynamic("projection")(projection)

@@ -24,16 +24,16 @@ trait Deployment extends js.Object {
 object Deployment {
   @scala.inline
   def apply(
-    create: js.Function4[java.lang.String, java.lang.String, DeploymentOptions, CbCallback, scala.Unit],
-    delete: js.Function2[java.lang.String, CbCallback, scala.Unit],
-    read: js.Function2[java.lang.String, CbCallback, scala.Unit],
-    readAll: js.Function2[QueryObj, CbCallback, scala.Unit],
+    create: (java.lang.String, java.lang.String, DeploymentOptions, CbCallback) => scala.Unit,
+    delete: (java.lang.String, CbCallback) => scala.Unit,
+    read: (java.lang.String, CbCallback) => scala.Unit,
+    readAll: (QueryObj, CbCallback) => scala.Unit,
     systemKey: java.lang.String,
     systemSecret: java.lang.String,
-    update: js.Function3[java.lang.String, DeploymentOptions, CbCallback, scala.Unit],
+    update: (java.lang.String, DeploymentOptions, CbCallback) => scala.Unit,
     user: APIUser
   ): Deployment = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, read = read, readAll = readAll, systemKey = systemKey, systemSecret = systemSecret, update = update, user = user)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction4(create), delete = js.Any.fromFunction2(delete), read = js.Any.fromFunction2(read), readAll = js.Any.fromFunction2(readAll), systemKey = systemKey, systemSecret = systemSecret, update = js.Any.fromFunction3(update), user = user)
   
     __obj.asInstanceOf[Deployment]
   }

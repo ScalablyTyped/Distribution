@@ -24,15 +24,12 @@ trait XRemoteContentProviderSupplier
 object XRemoteContentProviderSupplier {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    queryRemoteContentProvider: js.Function1[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XMultiServiceFactory
-    ],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    queryRemoteContentProvider: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XMultiServiceFactory,
+    release: () => scala.Unit
   ): XRemoteContentProviderSupplier = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, queryRemoteContentProvider = queryRemoteContentProvider, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), queryRemoteContentProvider = js.Any.fromFunction1(queryRemoteContentProvider), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XRemoteContentProviderSupplier]
   }

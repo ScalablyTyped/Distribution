@@ -19,12 +19,12 @@ object ITool {
   def apply(
     active: scala.Boolean,
     chart: IChart,
-    clicked: js.Function1[IPoint, scala.Boolean],
-    draw: js.Function0[scala.Unit],
-    mousedown: js.Function1[js.Any, scala.Boolean],
-    mousemove: js.Function1[js.Any, scala.Boolean]
+    clicked: IPoint => scala.Boolean,
+    draw: () => scala.Unit,
+    mousedown: js.Any => scala.Boolean,
+    mousemove: js.Any => scala.Boolean
   ): ITool = {
-    val __obj = js.Dynamic.literal(active = active, chart = chart, clicked = clicked, draw = draw, mousedown = mousedown, mousemove = mousemove)
+    val __obj = js.Dynamic.literal(active = active, chart = chart, clicked = js.Any.fromFunction1(clicked), draw = js.Any.fromFunction0(draw), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove))
   
     __obj.asInstanceOf[ITool]
   }

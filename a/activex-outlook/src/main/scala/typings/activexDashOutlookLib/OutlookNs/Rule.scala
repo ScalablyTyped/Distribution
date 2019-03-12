@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Rule protected () extends js.Object {
   val Actions: RuleActions = js.native
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   val Conditions: RuleConditions = js.native
   var Enabled: scala.Boolean = js.native

@@ -16,13 +16,13 @@ trait IValidatorOwner extends js.Object {
 object IValidatorOwner {
   @scala.inline
   def apply(
-    getDataFilteredProperties: js.Function0[js.Any],
-    getDataFilteredValues: js.Function0[js.Any],
-    getValidatorTitle: js.Function0[java.lang.String],
+    getDataFilteredProperties: () => js.Any,
+    getDataFilteredValues: () => js.Any,
+    getValidatorTitle: () => java.lang.String,
     validatedValue: js.Any,
     validators: js.Array[SurveyValidator]
   ): IValidatorOwner = {
-    val __obj = js.Dynamic.literal(getDataFilteredProperties = getDataFilteredProperties, getDataFilteredValues = getDataFilteredValues, getValidatorTitle = getValidatorTitle, validatedValue = validatedValue, validators = validators)
+    val __obj = js.Dynamic.literal(getDataFilteredProperties = js.Any.fromFunction0(getDataFilteredProperties), getDataFilteredValues = js.Any.fromFunction0(getDataFilteredValues), getValidatorTitle = js.Any.fromFunction0(getValidatorTitle), validatedValue = validatedValue, validators = validators)
   
     __obj.asInstanceOf[IValidatorOwner]
   }

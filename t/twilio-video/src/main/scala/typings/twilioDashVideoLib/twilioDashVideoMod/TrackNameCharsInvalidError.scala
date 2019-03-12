@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class TrackNameCharsInvalidError () extends TwilioError {
   @JSName("code")
   var code_TrackNameCharsInvalidError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53303` = js.native
-  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Track name contains invalid characters` = js.native
+  @JSName("message")
+  var message_TrackNameCharsInvalidError: twilioDashVideoLib.twilioDashVideoLibStrings.`Track name contains invalid characters` = js.native
 }
 

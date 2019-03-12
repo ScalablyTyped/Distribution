@@ -16,12 +16,12 @@ object Options {
   def apply(
     cwd: java.lang.String = null,
     internals: js.Array[stdLib.RegExp] = null,
-    wrapCallSite: js.Function1[/* callSite */ CallSite, CallSite] = null
+    wrapCallSite: /* callSite */ CallSite => CallSite = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (cwd != null) __obj.updateDynamic("cwd")(cwd)
     if (internals != null) __obj.updateDynamic("internals")(internals)
-    if (wrapCallSite != null) __obj.updateDynamic("wrapCallSite")(wrapCallSite)
+    if (wrapCallSite != null) __obj.updateDynamic("wrapCallSite")(js.Any.fromFunction1(wrapCallSite))
     __obj.asInstanceOf[Options]
   }
 }

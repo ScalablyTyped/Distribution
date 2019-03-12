@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DiagramEngine ()
   extends stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEntity[DiagramEngineListener] {
-  var canvas: reactLib.Element = js.native
+  var canvas: stdLib.Element = js.native
   var canvasMatrix: js.Array[js.Array[scala.Double]] = js.native
   var diagramModel: stormDashReactDashDiagramsLib.distSrcModelsDiagramModelMod.DiagramModel = js.native
   var hAdjustmentFactor: scala.Double = js.native
@@ -99,7 +99,7 @@ class DiagramEngine ()
     * It currently assumes nodes have a rectangular shape, can be overriden for customised shapes.
     */
   def getNodeDimensions(node: stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel): stormDashReactDashDiagramsLib.Anon_HeightWidth = js.native
-  def getNodeElement(node: stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel): reactLib.Element = js.native
+  def getNodeElement(node: stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel): stdLib.Element = js.native
   def getNodeFactories(): org.scalablytyped.runtime.StringDictionary[
     stormDashReactDashDiagramsLib.distSrcFactoriesAbstractNodeFactoryMod.AbstractNodeFactory[stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel]
   ] = js.native
@@ -163,7 +163,7 @@ class DiagramEngine ()
   ): scala.Unit = js.native
   def repaintCanvas(): scala.Unit = js.native
   def setCanvas(): scala.Unit = js.native
-  def setCanvas(canvas: reactLib.Element): scala.Unit = js.native
+  def setCanvas(canvas: stdLib.Element): scala.Unit = js.native
   def setDiagramModel(model: stormDashReactDashDiagramsLib.distSrcModelsDiagramModelMod.DiagramModel): scala.Unit = js.native
   def setMaxNumberPointsPerLink(max: scala.Double): scala.Unit = js.native
   def setSmartRoutingStatus(status: scala.Boolean): scala.Unit = js.native

@@ -28,8 +28,8 @@ object FixedSizeListProps {
     innerTagName: java.lang.String = null,
     itemData: js.Any = null,
     itemKey: ListItemKeySelector = null,
-    onItemsRendered: js.Function1[/* props */ ListOnItemsRenderedProps, _] = null,
-    onScroll: js.Function1[/* props */ ListOnScrollProps, _] = null,
+    onItemsRendered: /* props */ ListOnItemsRenderedProps => _ = null,
+    onScroll: /* props */ ListOnScrollProps => _ = null,
     outerElementType: ReactElementType = null,
     outerRef: reactLib.reactMod.ReactNs.Ref[_] = null,
     outerTagName: java.lang.String = null,
@@ -46,8 +46,8 @@ object FixedSizeListProps {
     if (innerTagName != null) __obj.updateDynamic("innerTagName")(innerTagName)
     if (itemData != null) __obj.updateDynamic("itemData")(itemData)
     if (itemKey != null) __obj.updateDynamic("itemKey")(itemKey)
-    if (onItemsRendered != null) __obj.updateDynamic("onItemsRendered")(onItemsRendered)
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
+    if (onItemsRendered != null) __obj.updateDynamic("onItemsRendered")(js.Any.fromFunction1(onItemsRendered))
+    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (outerElementType != null) __obj.updateDynamic("outerElementType")(outerElementType.asInstanceOf[js.Any])
     if (outerRef != null) __obj.updateDynamic("outerRef")(outerRef.asInstanceOf[js.Any])
     if (outerTagName != null) __obj.updateDynamic("outerTagName")(outerTagName)

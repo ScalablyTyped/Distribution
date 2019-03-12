@@ -15,14 +15,10 @@ object Category3C {
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS3 */, U](
     URI: F,
     _U: U,
-    compose: js.Function2[
-      fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any]
-    ],
-    id: js.Function0[fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any]]
+    compose: (fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any], fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any],
+    id: () => fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any]
   ): Category3C[F, U] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], compose = compose, id = id)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], compose = js.Any.fromFunction2(compose), id = js.Any.fromFunction0(id))
   
     __obj.asInstanceOf[Category3C[F, U]]
   }

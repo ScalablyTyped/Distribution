@@ -33,99 +33,47 @@ object DocumentDefinition {
     Name: java.lang.String,
     Parent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
-    abort: js.Function1[scala.Double, scala.Unit],
-    acquire: js.Function0[scala.Unit],
-    addCommandInfoChangeListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandInfoChangeListener, 
-      scala.Unit
-    ],
-    addContentEventListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XContentEventListener, 
-      scala.Unit
-    ],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    addPropertiesChangeListener: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
-      scala.Unit
-    ],
-    addProperty: js.Function3[java.lang.String, scala.Double, js.Any, scala.Unit],
-    addPropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    addPropertySetInfoChangeListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfoChangeListener, 
-      scala.Unit
-    ],
-    addVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    close: js.Function0[scala.Boolean],
-    composeHierarchicalName: js.Function1[java.lang.String, java.lang.String],
-    createCommandIdentifier: js.Function0[scala.Double],
-    createNewContent: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.ContentInfo, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XContent
-    ],
-    dispose: js.Function0[scala.Unit],
-    execute: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.Command, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
-      js.Any
-    ],
-    getContentType: js.Function0[java.lang.String],
-    getHierarchicalName: js.Function0[java.lang.String],
-    getIdentifier: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XContentIdentifier],
-    getParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
-    getPropertyValue: js.Function1[java.lang.String, js.Any],
-    open: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent],
-    openDesign: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent],
-    queryCreatableContentsInfo: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.ContentInfo]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    releaseCommandIdentifier: js.Function1[scala.Double, scala.Unit],
-    removeCommandInfoChangeListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandInfoChangeListener, 
-      scala.Unit
-    ],
-    removeContentEventListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XContentEventListener, 
-      scala.Unit
-    ],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    removePropertiesChangeListener: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
-      scala.Unit
-    ],
-    removeProperty: js.Function1[java.lang.String, scala.Unit],
-    removePropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    removePropertySetInfoChangeListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfoChangeListener, 
-      scala.Unit
-    ],
-    removeVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
-    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
-    store: js.Function0[scala.Unit]
+    abort: scala.Double => scala.Unit,
+    acquire: () => scala.Unit,
+    addCommandInfoChangeListener: activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandInfoChangeListener => scala.Unit,
+    addContentEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XContentEventListener => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    addPropertiesChangeListener: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener) => scala.Unit,
+    addProperty: (java.lang.String, scala.Double, js.Any) => scala.Unit,
+    addPropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    addPropertySetInfoChangeListener: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfoChangeListener => scala.Unit,
+    addVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    close: () => scala.Boolean,
+    composeHierarchicalName: java.lang.String => java.lang.String,
+    createCommandIdentifier: () => scala.Double,
+    createNewContent: activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.ContentInfo => activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XContent,
+    dispose: () => scala.Unit,
+    execute: (activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.Command, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment) => js.Any,
+    getContentType: () => java.lang.String,
+    getHierarchicalName: () => java.lang.String,
+    getIdentifier: () => activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XContentIdentifier,
+    getParent: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getPropertySetInfo: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    getPropertyValue: java.lang.String => js.Any,
+    open: () => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent,
+    openDesign: () => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent,
+    queryCreatableContentsInfo: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.ContentInfo],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    releaseCommandIdentifier: scala.Double => scala.Unit,
+    removeCommandInfoChangeListener: activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandInfoChangeListener => scala.Unit,
+    removeContentEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XContentEventListener => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    removePropertiesChangeListener: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener) => scala.Unit,
+    removeProperty: java.lang.String => scala.Unit,
+    removePropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    removePropertySetInfoChangeListener: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfoChangeListener => scala.Unit,
+    removeVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    setParent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => scala.Unit,
+    setPropertyValue: (java.lang.String, js.Any) => scala.Unit,
+    store: () => scala.Unit
   ): DocumentDefinition = {
-    val __obj = js.Dynamic.literal(AsTemplate = AsTemplate, ContentType = ContentType, HierarchicalName = HierarchicalName, Identifier = Identifier, Name = Name, Parent = Parent, PropertySetInfo = PropertySetInfo, abort = abort, acquire = acquire, addCommandInfoChangeListener = addCommandInfoChangeListener, addContentEventListener = addContentEventListener, addEventListener = addEventListener, addPropertiesChangeListener = addPropertiesChangeListener, addProperty = addProperty, addPropertyChangeListener = addPropertyChangeListener, addPropertySetInfoChangeListener = addPropertySetInfoChangeListener, addVetoableChangeListener = addVetoableChangeListener, close = close, composeHierarchicalName = composeHierarchicalName, createCommandIdentifier = createCommandIdentifier, createNewContent = createNewContent, dispose = dispose, execute = execute, getContentType = getContentType, getHierarchicalName = getHierarchicalName, getIdentifier = getIdentifier, getParent = getParent, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, open = open, openDesign = openDesign, queryCreatableContentsInfo = queryCreatableContentsInfo, queryInterface = queryInterface, release = release, releaseCommandIdentifier = releaseCommandIdentifier, removeCommandInfoChangeListener = removeCommandInfoChangeListener, removeContentEventListener = removeContentEventListener, removeEventListener = removeEventListener, removePropertiesChangeListener = removePropertiesChangeListener, removeProperty = removeProperty, removePropertyChangeListener = removePropertyChangeListener, removePropertySetInfoChangeListener = removePropertySetInfoChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setParent = setParent, setPropertyValue = setPropertyValue, store = store)
+    val __obj = js.Dynamic.literal(AsTemplate = AsTemplate, ContentType = ContentType, HierarchicalName = HierarchicalName, Identifier = Identifier, Name = Name, Parent = Parent, PropertySetInfo = PropertySetInfo, abort = js.Any.fromFunction1(abort), acquire = js.Any.fromFunction0(acquire), addCommandInfoChangeListener = js.Any.fromFunction1(addCommandInfoChangeListener), addContentEventListener = js.Any.fromFunction1(addContentEventListener), addEventListener = js.Any.fromFunction1(addEventListener), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addProperty = js.Any.fromFunction3(addProperty), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addPropertySetInfoChangeListener = js.Any.fromFunction1(addPropertySetInfoChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), close = js.Any.fromFunction0(close), composeHierarchicalName = js.Any.fromFunction1(composeHierarchicalName), createCommandIdentifier = js.Any.fromFunction0(createCommandIdentifier), createNewContent = js.Any.fromFunction1(createNewContent), dispose = js.Any.fromFunction0(dispose), execute = js.Any.fromFunction3(execute), getContentType = js.Any.fromFunction0(getContentType), getHierarchicalName = js.Any.fromFunction0(getHierarchicalName), getIdentifier = js.Any.fromFunction0(getIdentifier), getParent = js.Any.fromFunction0(getParent), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), open = js.Any.fromFunction0(open), openDesign = js.Any.fromFunction0(openDesign), queryCreatableContentsInfo = js.Any.fromFunction0(queryCreatableContentsInfo), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), releaseCommandIdentifier = js.Any.fromFunction1(releaseCommandIdentifier), removeCommandInfoChangeListener = js.Any.fromFunction1(removeCommandInfoChangeListener), removeContentEventListener = js.Any.fromFunction1(removeContentEventListener), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertiesChangeListener = js.Any.fromFunction2(removePropertiesChangeListener), removeProperty = js.Any.fromFunction1(removeProperty), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removePropertySetInfoChangeListener = js.Any.fromFunction1(removePropertySetInfoChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setParent = js.Any.fromFunction1(setParent), setPropertyValue = js.Any.fromFunction2(setPropertyValue), store = js.Any.fromFunction0(store))
   
     __obj.asInstanceOf[DocumentDefinition]
   }

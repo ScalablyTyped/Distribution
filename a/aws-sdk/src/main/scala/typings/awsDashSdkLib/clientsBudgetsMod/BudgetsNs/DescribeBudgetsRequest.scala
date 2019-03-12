@@ -9,7 +9,7 @@ trait DescribeBudgetsRequest extends js.Object {
   /**
     * The accountId that is associated with the budgets that you want descriptions of.
     */
-  var AccountId: AccountId
+  var AccountId: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.AccountId
   /**
     * An optional integer that represents how many entries a paginated response contains. The maximum is 100.
     */

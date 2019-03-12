@@ -19,17 +19,9 @@ trait IVaultNotificationOperations extends js.Object {
 object IVaultNotificationOperations {
   @scala.inline
   def apply(
-    SendCustomNotification: js.Function6[
-      IUserOrUserGroupIDs, 
-      scala.Boolean, 
-      IStrings, 
-      scala.Boolean, 
-      java.lang.String, 
-      java.lang.String, 
-      scala.Unit
-    ]
+    SendCustomNotification: (IUserOrUserGroupIDs, scala.Boolean, IStrings, scala.Boolean, java.lang.String, java.lang.String) => scala.Unit
   ): IVaultNotificationOperations = {
-    val __obj = js.Dynamic.literal(SendCustomNotification = SendCustomNotification)
+    val __obj = js.Dynamic.literal(SendCustomNotification = js.Any.fromFunction6(SendCustomNotification))
   
     __obj.asInstanceOf[IVaultNotificationOperations]
   }

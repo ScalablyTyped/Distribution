@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("inversify-devtools", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def default(container: java.lang.String): inversifyDashDevtoolsLib.inversifyDashDevtoolsMod.ConnectKernel = js.native
+  def default(container: java.lang.String): ConnectKernel = js.native
 }
 

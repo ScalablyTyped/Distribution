@@ -25,22 +25,18 @@ object CliOptions {
     armv7l: js.UndefOr[scala.Boolean] = js.undefined,
     config: appDashBuilderDashLibLib.outConfigurationMod.Configuration | java.lang.String = null,
     dir: js.UndefOr[scala.Boolean] = js.undefined,
-    effectiveOptionComputed: js.Function1[/* options */ js.Any, js.Promise[scala.Boolean]] = null,
+    effectiveOptionComputed: /* options */ js.Any => js.Promise[scala.Boolean] = null,
     ia32: js.UndefOr[scala.Boolean] = js.undefined,
     linux: js.Array[java.lang.String] = null,
     mac: js.Array[java.lang.String] = null,
     platform: java.lang.String = null,
-    platformPackagerFactory: js.Function2[
-      /* info */ appDashBuilderDashLibLib.outPackagerMod.Packager, 
-      /* platform */ appDashBuilderDashLibLib.outCoreMod.Platform, 
-      appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_]
-    ] = null,
+    platformPackagerFactory: (/* info */ appDashBuilderDashLibLib.outPackagerMod.Packager, /* platform */ appDashBuilderDashLibLib.outCoreMod.Platform) => appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_] = null,
     prepackaged: java.lang.String = null,
     projectDir: java.lang.String = null,
     publish: electronDashPublishLib.electronDashPublishMod.PublishPolicy = null,
-    targets: nodeLib.Map[
+    targets: stdLib.Map[
       appDashBuilderDashLibLib.outCoreMod.Platform, 
-      nodeLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
+      stdLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
     ] = null,
     win: js.Array[java.lang.String] = null,
     x64: js.UndefOr[scala.Boolean] = js.undefined
@@ -51,12 +47,12 @@ object CliOptions {
     if (!js.isUndefined(armv7l)) __obj.updateDynamic("armv7l")(armv7l)
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (!js.isUndefined(dir)) __obj.updateDynamic("dir")(dir)
-    if (effectiveOptionComputed != null) __obj.updateDynamic("effectiveOptionComputed")(effectiveOptionComputed)
+    if (effectiveOptionComputed != null) __obj.updateDynamic("effectiveOptionComputed")(js.Any.fromFunction1(effectiveOptionComputed))
     if (!js.isUndefined(ia32)) __obj.updateDynamic("ia32")(ia32)
     if (linux != null) __obj.updateDynamic("linux")(linux)
     if (mac != null) __obj.updateDynamic("mac")(mac)
     if (platform != null) __obj.updateDynamic("platform")(platform)
-    if (platformPackagerFactory != null) __obj.updateDynamic("platformPackagerFactory")(platformPackagerFactory)
+    if (platformPackagerFactory != null) __obj.updateDynamic("platformPackagerFactory")(js.Any.fromFunction2(platformPackagerFactory))
     if (prepackaged != null) __obj.updateDynamic("prepackaged")(prepackaged)
     if (projectDir != null) __obj.updateDynamic("projectDir")(projectDir)
     if (publish != null) __obj.updateDynamic("publish")(publish)

@@ -29,19 +29,12 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    requestData: js.Function5[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      js.Function1[/* markers */ js.Array[heremapsLib.HNs.mapNs.AbstractMarker], scala.Unit], 
-      js.Function0[scala.Unit], 
-      heremapsLib.HNs.utilNs.ICancelable
-    ],
+    requestData: (scala.Double, scala.Double, scala.Double, js.Function1[/* markers */ js.Array[heremapsLib.HNs.mapNs.AbstractMarker], scala.Unit], js.Function0[scala.Unit]) => heremapsLib.HNs.utilNs.ICancelable,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
     providesDomMarkers: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal(requestData = requestData)
+    val __obj = js.Dynamic.literal(requestData = js.Any.fromFunction5(requestData))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (!js.isUndefined(providesDomMarkers)) __obj.updateDynamic("providesDomMarkers")(providesDomMarkers)

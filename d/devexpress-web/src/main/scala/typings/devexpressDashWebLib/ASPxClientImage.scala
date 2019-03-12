@@ -23,33 +23,33 @@ trait ASPxClientImage extends ASPxClientImageBase {
 object ASPxClientImage {
   @scala.inline
   def apply(
-    AdjustControl: js.Function0[scala.Unit],
+    AdjustControl: () => scala.Unit,
     Click: ASPxClientEvent[ASPxClientEditEventHandler[ASPxClientStaticEdit]],
-    GetCaption: js.Function0[java.lang.String],
-    GetClientVisible: js.Function0[scala.Boolean],
-    GetEnabled: js.Function0[scala.Boolean],
-    GetHeight: js.Function0[scala.Double],
-    GetImageUrl: js.Function0[java.lang.String],
-    GetMainElement: js.Function0[js.Object],
-    GetParentControl: js.Function0[js.Object],
-    GetValue: js.Function0[js.Object],
-    GetVisible: js.Function0[scala.Boolean],
-    GetWidth: js.Function0[scala.Double],
-    InCallback: js.Function0[scala.Boolean],
+    GetCaption: () => java.lang.String,
+    GetClientVisible: () => scala.Boolean,
+    GetEnabled: () => scala.Boolean,
+    GetHeight: () => scala.Double,
+    GetImageUrl: () => java.lang.String,
+    GetMainElement: () => js.Object,
+    GetParentControl: () => js.Object,
+    GetValue: () => js.Object,
+    GetVisible: () => scala.Boolean,
+    GetWidth: () => scala.Double,
+    InCallback: () => scala.Boolean,
     Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
-    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
-    SetCaption: js.Function1[java.lang.String, scala.Unit],
-    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetEnabled: js.Function1[scala.Boolean, scala.Unit],
-    SetHeight: js.Function1[scala.Double, scala.Unit],
-    SetImageUrl: js.Function1[java.lang.String, scala.Unit],
-    SetSize: js.Function2[scala.Double, scala.Double, scala.Unit],
-    SetValue: js.Function1[js.Object, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetWidth: js.Function1[scala.Double, scala.Unit],
+    SendMessageToAssistiveTechnology: java.lang.String => scala.Unit,
+    SetCaption: java.lang.String => scala.Unit,
+    SetClientVisible: scala.Boolean => scala.Unit,
+    SetEnabled: scala.Boolean => scala.Unit,
+    SetHeight: scala.Double => scala.Unit,
+    SetImageUrl: java.lang.String => scala.Unit,
+    SetSize: (scala.Double, scala.Double) => scala.Unit,
+    SetValue: js.Object => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
+    SetWidth: scala.Double => scala.Unit,
     name: java.lang.String
   ): ASPxClientImage = {
-    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, Click = Click, GetCaption = GetCaption, GetClientVisible = GetClientVisible, GetEnabled = GetEnabled, GetHeight = GetHeight, GetImageUrl = GetImageUrl, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetValue = GetValue, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetCaption = SetCaption, SetClientVisible = SetClientVisible, SetEnabled = SetEnabled, SetHeight = SetHeight, SetImageUrl = SetImageUrl, SetSize = SetSize, SetValue = SetValue, SetVisible = SetVisible, SetWidth = SetWidth, name = name)
+    val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), Click = Click, GetCaption = js.Any.fromFunction0(GetCaption), GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetEnabled = js.Any.fromFunction0(GetEnabled), GetHeight = js.Any.fromFunction0(GetHeight), GetImageUrl = js.Any.fromFunction0(GetImageUrl), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetValue = js.Any.fromFunction0(GetValue), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), InCallback = js.Any.fromFunction0(InCallback), Init = Init, SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetCaption = js.Any.fromFunction1(SetCaption), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetEnabled = js.Any.fromFunction1(SetEnabled), SetHeight = js.Any.fromFunction1(SetHeight), SetImageUrl = js.Any.fromFunction1(SetImageUrl), SetSize = js.Any.fromFunction2(SetSize), SetValue = js.Any.fromFunction1(SetValue), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), name = name)
   
     __obj.asInstanceOf[ASPxClientImage]
   }

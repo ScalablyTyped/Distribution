@@ -26,11 +26,8 @@ trait StyleSheetTestUtilsStatic extends js.Object {
 
 object StyleSheetTestUtilsStatic {
   @scala.inline
-  def apply(
-    clearBufferAndResumeStyleInjection: js.Function0[scala.Unit],
-    suppressStyleInjection: js.Function0[scala.Unit]
-  ): StyleSheetTestUtilsStatic = {
-    val __obj = js.Dynamic.literal(clearBufferAndResumeStyleInjection = clearBufferAndResumeStyleInjection, suppressStyleInjection = suppressStyleInjection)
+  def apply(clearBufferAndResumeStyleInjection: () => scala.Unit, suppressStyleInjection: () => scala.Unit): StyleSheetTestUtilsStatic = {
+    val __obj = js.Dynamic.literal(clearBufferAndResumeStyleInjection = js.Any.fromFunction0(clearBufferAndResumeStyleInjection), suppressStyleInjection = js.Any.fromFunction0(suppressStyleInjection))
   
     __obj.asInstanceOf[StyleSheetTestUtilsStatic]
   }

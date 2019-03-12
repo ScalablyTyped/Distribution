@@ -19,14 +19,14 @@ object PluginObj {
   def apply[S](
     visitor: babelDashTraverseLib.babelDashTraverseMod.Visitor[S],
     inherits: js.Any = null,
-    manipulateOptions: js.Function2[/* opts */ js.Any, /* parserOpts */ js.Any, scala.Unit] = null,
+    manipulateOptions: (/* opts */ js.Any, /* parserOpts */ js.Any) => scala.Unit = null,
     name: java.lang.String = null,
     post: js.ThisFunction1[/* this */ S, /* state */ js.Any, scala.Unit] = null,
     pre: js.ThisFunction1[/* this */ S, /* state */ js.Any, scala.Unit] = null
   ): PluginObj[S] = {
     val __obj = js.Dynamic.literal(visitor = visitor)
     if (inherits != null) __obj.updateDynamic("inherits")(inherits)
-    if (manipulateOptions != null) __obj.updateDynamic("manipulateOptions")(manipulateOptions)
+    if (manipulateOptions != null) __obj.updateDynamic("manipulateOptions")(js.Any.fromFunction2(manipulateOptions))
     if (name != null) __obj.updateDynamic("name")(name)
     if (post != null) __obj.updateDynamic("post")(post)
     if (pre != null) __obj.updateDynamic("pre")(pre)

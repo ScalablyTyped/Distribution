@@ -89,17 +89,17 @@ object XTreeNode {
     ExpandedGraphicURL: java.lang.String,
     NodeGraphicURL: java.lang.String,
     Parent: XTreeNode,
-    getChildAt: js.Function1[scala.Double, XTreeNode],
-    getChildCount: js.Function0[scala.Double],
-    getCollapsedGraphicURL: js.Function0[java.lang.String],
-    getDisplayValue: js.Function0[js.Any],
-    getExpandedGraphicURL: js.Function0[java.lang.String],
-    getIndex: js.Function1[XTreeNode, scala.Double],
-    getNodeGraphicURL: js.Function0[java.lang.String],
-    getParent: js.Function0[XTreeNode],
-    hasChildrenOnDemand: js.Function0[scala.Boolean]
+    getChildAt: scala.Double => XTreeNode,
+    getChildCount: () => scala.Double,
+    getCollapsedGraphicURL: () => java.lang.String,
+    getDisplayValue: () => js.Any,
+    getExpandedGraphicURL: () => java.lang.String,
+    getIndex: XTreeNode => scala.Double,
+    getNodeGraphicURL: () => java.lang.String,
+    getParent: () => XTreeNode,
+    hasChildrenOnDemand: () => scala.Boolean
   ): XTreeNode = {
-    val __obj = js.Dynamic.literal(ChildCount = ChildCount, CollapsedGraphicURL = CollapsedGraphicURL, DisplayValue = DisplayValue, ExpandedGraphicURL = ExpandedGraphicURL, NodeGraphicURL = NodeGraphicURL, Parent = Parent, getChildAt = getChildAt, getChildCount = getChildCount, getCollapsedGraphicURL = getCollapsedGraphicURL, getDisplayValue = getDisplayValue, getExpandedGraphicURL = getExpandedGraphicURL, getIndex = getIndex, getNodeGraphicURL = getNodeGraphicURL, getParent = getParent, hasChildrenOnDemand = hasChildrenOnDemand)
+    val __obj = js.Dynamic.literal(ChildCount = ChildCount, CollapsedGraphicURL = CollapsedGraphicURL, DisplayValue = DisplayValue, ExpandedGraphicURL = ExpandedGraphicURL, NodeGraphicURL = NodeGraphicURL, Parent = Parent, getChildAt = js.Any.fromFunction1(getChildAt), getChildCount = js.Any.fromFunction0(getChildCount), getCollapsedGraphicURL = js.Any.fromFunction0(getCollapsedGraphicURL), getDisplayValue = js.Any.fromFunction0(getDisplayValue), getExpandedGraphicURL = js.Any.fromFunction0(getExpandedGraphicURL), getIndex = js.Any.fromFunction1(getIndex), getNodeGraphicURL = js.Any.fromFunction0(getNodeGraphicURL), getParent = js.Any.fromFunction0(getParent), hasChildrenOnDemand = js.Any.fromFunction0(hasChildrenOnDemand))
   
     __obj.asInstanceOf[XTreeNode]
   }

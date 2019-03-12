@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TreeProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] {
   var childrenClassName: js.UndefOr[java.lang.String] = js.undefined
   var collapsed: js.UndefOr[scala.Boolean] = js.undefined
   var defaultCollapsed: js.UndefOr[scala.Boolean] = js.undefined
@@ -19,7 +19,7 @@ object TreeProps {
   @scala.inline
   def apply(
     nodeLabel: reactLib.reactMod.ReactNs.ReactNode,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
     childrenClassName: java.lang.String = null,
     collapsed: js.UndefOr[scala.Boolean] = js.undefined,
     defaultCollapsed: js.UndefOr[scala.Boolean] = js.undefined,

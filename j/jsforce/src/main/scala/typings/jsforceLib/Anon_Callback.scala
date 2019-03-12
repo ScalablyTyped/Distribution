@@ -12,7 +12,7 @@ trait Anon_Callback extends js.Object {
   def apply(
     `type`: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* result */ jsforceLib.describeDashResultMod.DescribeSObjectResult, 
       scala.Unit
     ]

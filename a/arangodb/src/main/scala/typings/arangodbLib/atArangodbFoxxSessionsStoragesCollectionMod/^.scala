@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@arangodb/foxx/sessions/storages/collection", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(
-    options: arangodbLib.atArangodbFoxxSessionsStoragesCollectionMod.CollectionStorageOptions | java.lang.String | arangodbLib.ArangoDBNs.Collection[_]
-  ): arangodbLib.FoxxNs.CollectionSessionStorage = js.native
+  def apply(options: CollectionStorageOptions | java.lang.String | arangodbLib.ArangoDBNs.Collection[_]): arangodbLib.FoxxNs.CollectionSessionStorage = js.native
 }
 

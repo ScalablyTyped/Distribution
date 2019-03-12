@@ -18,15 +18,15 @@ trait Anon_IsBlockDevice extends js.Object {
 object Anon_IsBlockDevice {
   @scala.inline
   def apply(
-    isBlockDevice: js.Function0[scala.Boolean],
-    isCharacterDevice: js.Function0[scala.Boolean],
-    isDirectory: js.Function0[scala.Boolean],
-    isFIFO: js.Function0[scala.Boolean],
-    isFile: js.Function0[scala.Boolean],
-    isSocket: js.Function0[scala.Boolean],
-    isSymbolicLink: js.Function0[scala.Boolean]
+    isBlockDevice: () => scala.Boolean,
+    isCharacterDevice: () => scala.Boolean,
+    isDirectory: () => scala.Boolean,
+    isFIFO: () => scala.Boolean,
+    isFile: () => scala.Boolean,
+    isSocket: () => scala.Boolean,
+    isSymbolicLink: () => scala.Boolean
   ): Anon_IsBlockDevice = {
-    val __obj = js.Dynamic.literal(isBlockDevice = isBlockDevice, isCharacterDevice = isCharacterDevice, isDirectory = isDirectory, isFIFO = isFIFO, isFile = isFile, isSocket = isSocket, isSymbolicLink = isSymbolicLink)
+    val __obj = js.Dynamic.literal(isBlockDevice = js.Any.fromFunction0(isBlockDevice), isCharacterDevice = js.Any.fromFunction0(isCharacterDevice), isDirectory = js.Any.fromFunction0(isDirectory), isFIFO = js.Any.fromFunction0(isFIFO), isFile = js.Any.fromFunction0(isFile), isSocket = js.Any.fromFunction0(isSocket), isSymbolicLink = js.Any.fromFunction0(isSymbolicLink))
   
     __obj.asInstanceOf[Anon_IsBlockDevice]
   }

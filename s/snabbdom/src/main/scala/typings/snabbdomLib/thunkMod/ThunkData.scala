@@ -17,7 +17,7 @@ object ThunkData {
   @scala.inline
   def apply(
     args: js.Array[_],
-    fn: js.Function0[snabbdomLib.vnodeMod.VNode],
+    fn: () => snabbdomLib.vnodeMod.VNode,
     attachData: snabbdomLib.helpersAttachtoMod.AttachData = null,
     attrs: snabbdomLib.modulesAttributesMod.Attrs = null,
     `class`: snabbdomLib.modulesClassMod.Classes = null,
@@ -30,7 +30,7 @@ object ThunkData {
     props: snabbdomLib.modulesPropsMod.Props = null,
     style: snabbdomLib.modulesStyleMod.VNodeStyle = null
   ): ThunkData = {
-    val __obj = js.Dynamic.literal(args = args, fn = fn)
+    val __obj = js.Dynamic.literal(args = args, fn = js.Any.fromFunction0(fn))
     if (attachData != null) __obj.updateDynamic("attachData")(attachData)
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
     if (`class` != null) __obj.updateDynamic("class")(`class`)

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "jquery-mask-plugin"
-version := "1.14-dt-20180214Z-fca774"
+version := "1.14-dt-20180214Z-e6bd58"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-f5a31c",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-b709fe",
-  "org.scalablytyped" %%% "std" % "3.3-05be79")
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-8061ce",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-a5e2be",
+  "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

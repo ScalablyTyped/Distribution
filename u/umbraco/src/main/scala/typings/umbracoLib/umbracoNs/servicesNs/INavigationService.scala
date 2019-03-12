@@ -211,30 +211,30 @@ trait INavigationService extends js.Object {
 object INavigationService {
   @scala.inline
   def apply(
-    _setActiveTreeType: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
-    _syncPath: js.Function2[js.Array[java.lang.String], scala.Boolean, scala.Unit],
-    changeSection: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
-    executeMenuAction: js.Function3[js.Any, js.Any, js.Any, scala.Unit],
-    hideDialog: js.Function1[scala.Boolean, scala.Unit],
-    hideMenu: js.Function0[scala.Unit],
-    hideNavigation: js.Function0[scala.Unit],
-    hideSearch: js.Function0[scala.Unit],
-    hideTray: js.Function0[scala.Unit],
-    hideTree: js.Function0[scala.Unit],
-    loadLegacyIFrame: js.Function1[java.lang.String, scala.Unit],
-    reloadNode: js.Function1[js.Any, scala.Unit],
-    reloadSection: js.Function1[java.lang.String, scala.Unit],
-    setupTreeEvents: js.Function1[js.Any, scala.Unit],
-    showDialog: js.Function1[IShowDialogArgs, scala.Unit],
-    showHelpDialog: js.Function0[scala.Unit],
-    showMenu: js.Function2[stdLib.Event, /* repeated */ js.Any, scala.Unit],
-    showSearch: js.Function0[scala.Unit],
-    showTray: js.Function0[scala.Unit],
-    showTree: js.Function2[java.lang.String, ISyncTreeArgs, scala.Unit],
-    showUserDialog: js.Function0[scala.Unit],
-    syncTree: js.Function1[ISyncTreeArgs, js.Any]
+    _setActiveTreeType: (java.lang.String, scala.Boolean) => scala.Unit,
+    _syncPath: (js.Array[java.lang.String], scala.Boolean) => scala.Unit,
+    changeSection: (java.lang.String, scala.Boolean) => scala.Unit,
+    executeMenuAction: (js.Any, js.Any, js.Any) => scala.Unit,
+    hideDialog: scala.Boolean => scala.Unit,
+    hideMenu: () => scala.Unit,
+    hideNavigation: () => scala.Unit,
+    hideSearch: () => scala.Unit,
+    hideTray: () => scala.Unit,
+    hideTree: () => scala.Unit,
+    loadLegacyIFrame: java.lang.String => scala.Unit,
+    reloadNode: js.Any => scala.Unit,
+    reloadSection: java.lang.String => scala.Unit,
+    setupTreeEvents: js.Any => scala.Unit,
+    showDialog: IShowDialogArgs => scala.Unit,
+    showHelpDialog: () => scala.Unit,
+    showMenu: (stdLib.Event, /* repeated */ js.Any) => scala.Unit,
+    showSearch: () => scala.Unit,
+    showTray: () => scala.Unit,
+    showTree: (java.lang.String, ISyncTreeArgs) => scala.Unit,
+    showUserDialog: () => scala.Unit,
+    syncTree: ISyncTreeArgs => js.Any
   ): INavigationService = {
-    val __obj = js.Dynamic.literal(_setActiveTreeType = _setActiveTreeType, _syncPath = _syncPath, changeSection = changeSection, executeMenuAction = executeMenuAction, hideDialog = hideDialog, hideMenu = hideMenu, hideNavigation = hideNavigation, hideSearch = hideSearch, hideTray = hideTray, hideTree = hideTree, loadLegacyIFrame = loadLegacyIFrame, reloadNode = reloadNode, reloadSection = reloadSection, setupTreeEvents = setupTreeEvents, showDialog = showDialog, showHelpDialog = showHelpDialog, showMenu = showMenu, showSearch = showSearch, showTray = showTray, showTree = showTree, showUserDialog = showUserDialog, syncTree = syncTree)
+    val __obj = js.Dynamic.literal(_setActiveTreeType = js.Any.fromFunction2(_setActiveTreeType), _syncPath = js.Any.fromFunction2(_syncPath), changeSection = js.Any.fromFunction2(changeSection), executeMenuAction = js.Any.fromFunction3(executeMenuAction), hideDialog = js.Any.fromFunction1(hideDialog), hideMenu = js.Any.fromFunction0(hideMenu), hideNavigation = js.Any.fromFunction0(hideNavigation), hideSearch = js.Any.fromFunction0(hideSearch), hideTray = js.Any.fromFunction0(hideTray), hideTree = js.Any.fromFunction0(hideTree), loadLegacyIFrame = js.Any.fromFunction1(loadLegacyIFrame), reloadNode = js.Any.fromFunction1(reloadNode), reloadSection = js.Any.fromFunction1(reloadSection), setupTreeEvents = js.Any.fromFunction1(setupTreeEvents), showDialog = js.Any.fromFunction1(showDialog), showHelpDialog = js.Any.fromFunction0(showHelpDialog), showMenu = js.Any.fromFunction2(showMenu), showSearch = js.Any.fromFunction0(showSearch), showTray = js.Any.fromFunction0(showTray), showTree = js.Any.fromFunction2(showTree), showUserDialog = js.Any.fromFunction0(showUserDialog), syncTree = js.Any.fromFunction1(syncTree))
   
     __obj.asInstanceOf[INavigationService]
   }

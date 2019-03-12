@@ -15,9 +15,9 @@ trait Anon_ extends js.Object {
 
 object Anon_ {
   @scala.inline
-  def apply(`/*`: js.Function3[js.Any, js.Any, js.Function0[_], js.Any]): Anon_ = {
+  def apply(`/*`: (js.Any, js.Any, js.Function0[_]) => js.Any): Anon_ = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("/*")(`/*`)
+    __obj.updateDynamic("/*")(js.Any.fromFunction3(`/*`))
     __obj.asInstanceOf[Anon_]
   }
 }

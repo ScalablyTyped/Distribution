@@ -15,14 +15,12 @@ trait Anon_025 extends js.Object {
 object Anon_025 {
   @scala.inline
   def apply(
-    configureTransition: js.Function0[
-      reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.DefaultTransitionSpec
-    ],
+    configureTransition: () => reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.DefaultTransitionSpec,
     initialLayout: Anon_0,
     swipeDistanceThreshold: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibNumbers.`120`,
     swipeVelocityThreshold: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibNumbers.`0DOT25`
   ): Anon_025 = {
-    val __obj = js.Dynamic.literal(configureTransition = configureTransition, initialLayout = initialLayout, swipeDistanceThreshold = swipeDistanceThreshold, swipeVelocityThreshold = swipeVelocityThreshold)
+    val __obj = js.Dynamic.literal(configureTransition = js.Any.fromFunction0(configureTransition), initialLayout = initialLayout, swipeDistanceThreshold = swipeDistanceThreshold, swipeVelocityThreshold = swipeVelocityThreshold)
   
     __obj.asInstanceOf[Anon_025]
   }

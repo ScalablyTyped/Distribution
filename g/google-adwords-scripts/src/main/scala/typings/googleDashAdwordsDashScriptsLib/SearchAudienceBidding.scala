@@ -12,11 +12,11 @@ trait SearchAudienceBidding extends canSetBidModifier {
 object SearchAudienceBidding {
   @scala.inline
   def apply(
-    clearBidModifier: js.Function0[scala.Unit],
-    getBidModifier: js.Function0[scala.Double],
-    setBidModifier: js.Function1[scala.Double, scala.Unit]
+    clearBidModifier: () => scala.Unit,
+    getBidModifier: () => scala.Double,
+    setBidModifier: scala.Double => scala.Unit
   ): SearchAudienceBidding = {
-    val __obj = js.Dynamic.literal(clearBidModifier = clearBidModifier, getBidModifier = getBidModifier, setBidModifier = setBidModifier)
+    val __obj = js.Dynamic.literal(clearBidModifier = js.Any.fromFunction0(clearBidModifier), getBidModifier = js.Any.fromFunction0(getBidModifier), setBidModifier = js.Any.fromFunction1(setBidModifier))
   
     __obj.asInstanceOf[SearchAudienceBidding]
   }

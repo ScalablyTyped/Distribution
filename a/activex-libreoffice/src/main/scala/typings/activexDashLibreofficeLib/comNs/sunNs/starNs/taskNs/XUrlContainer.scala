@@ -28,7 +28,7 @@ trait XUrlContainer
     * @param OnlyPersistent Only URLs that are stored persistently shall be returned.
     * @returns List of URLs.
     */
-  def getUrls(OnlyPersistent: scala.Boolean): activexDashInteropLib.SafeArray[java.lang.String]
+  def getUrls(OnlyPersistent: scala.Boolean): stdLib.SafeArray[java.lang.String]
   /**
     * Remove a URL from the container.
     * @param Url URL to remove.
@@ -39,15 +39,15 @@ trait XUrlContainer
 object XUrlContainer {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addUrl: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
-    findUrl: js.Function1[java.lang.String, java.lang.String],
-    getUrls: js.Function1[scala.Boolean, activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeUrl: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    addUrl: (java.lang.String, scala.Boolean) => scala.Unit,
+    findUrl: java.lang.String => java.lang.String,
+    getUrls: scala.Boolean => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeUrl: java.lang.String => scala.Unit
   ): XUrlContainer = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addUrl = addUrl, findUrl = findUrl, getUrls = getUrls, queryInterface = queryInterface, release = release, removeUrl = removeUrl)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addUrl = js.Any.fromFunction2(addUrl), findUrl = js.Any.fromFunction1(findUrl), getUrls = js.Any.fromFunction1(getUrls), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeUrl = js.Any.fromFunction1(removeUrl))
   
     __obj.asInstanceOf[XUrlContainer]
   }

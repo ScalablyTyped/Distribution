@@ -14,11 +14,11 @@ object ^ extends js.Object {
   var _spBodyOnLoadFunctions: js.Array[js.Function0[scala.Unit]] = js.native
   var _spFriendlyUrlPageContextInfo: sharepointLib._spFriendlyUrlPageContextInfo = js.native
   var _spPageContextInfo: sharepointLib._spPageContextInfo = js.native
-  var ajaxNavigate: sharepointLib.AjaxNavigate = js.native
-  var browseris: sharepointLib.Browseris = js.native
+  var ajaxNavigate: AjaxNavigate = js.native
+  var browseris: Browseris = js.native
   @JSName("m$")
-  var m$: sharepointLib.MQuery = js.native
-  var spMgr: sharepointLib.SPMgr = js.native
+  var m$: MQuery = js.native
+  var spMgr: SPMgr = js.native
   /** (calls Srch.U.addRenderContextCallback) */
   @JSName("$addRenderContextCallback")
   def $addRenderContextCallback(renderCtx: js.Any, itemWrapperFunction: js.Any): scala.Unit = js.native
@@ -101,7 +101,7 @@ object ^ extends js.Object {
     renderCtx: sharepointLib.SPClientTemplatesNs.RenderContext_InView,
     listItem: sharepointLib.SPClientTemplatesNs.Item
   ): java.lang.String = js.native
-  def GetCurrentCtx(): sharepointLib.ContextInfo = js.native
+  def GetCurrentCtx(): ContextInfo = js.native
   /** Gets query string parameter */
   def GetUrlKeyValue(key: java.lang.String): java.lang.String = js.native
   def RefreshCommandUI(): scala.Unit = js.native

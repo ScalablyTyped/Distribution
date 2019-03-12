@@ -18,12 +18,12 @@ object XFootnotesSettingsSupplier {
   @scala.inline
   def apply(
     FootnotesSettings: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
-    acquire: js.Function0[scala.Unit],
-    getFootnotesSettings: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getFootnotesSettings: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XFootnotesSettingsSupplier = {
-    val __obj = js.Dynamic.literal(FootnotesSettings = FootnotesSettings, acquire = acquire, getFootnotesSettings = getFootnotesSettings, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(FootnotesSettings = FootnotesSettings, acquire = js.Any.fromFunction0(acquire), getFootnotesSettings = js.Any.fromFunction0(getFootnotesSettings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XFootnotesSettingsSupplier]
   }

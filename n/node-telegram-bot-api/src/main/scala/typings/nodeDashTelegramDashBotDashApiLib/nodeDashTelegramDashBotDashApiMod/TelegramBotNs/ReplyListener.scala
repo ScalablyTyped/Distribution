@@ -15,12 +15,12 @@ trait ReplyListener extends js.Object {
 object ReplyListener {
   @scala.inline
   def apply(
-    callback: js.Function1[Message, scala.Unit],
+    callback: Message => scala.Unit,
     chatId: scala.Double | java.lang.String,
     id: scala.Double,
     messageId: scala.Double | java.lang.String
   ): ReplyListener = {
-    val __obj = js.Dynamic.literal(callback = callback, chatId = chatId.asInstanceOf[js.Any], id = id, messageId = messageId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), chatId = chatId.asInstanceOf[js.Any], id = id, messageId = messageId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReplyListener]
   }

@@ -12,9 +12,9 @@ trait ParsedKey extends js.Object {
   def getPrivatePEM(): java.lang.String = js.native
   def getPublicPEM(): java.lang.String = js.native
   def getPublicSSH(): java.lang.String = js.native
-  def sign(data: java.lang.String): nodeLib.Buffer | nodeLib.Error = js.native
-  def sign(data: nodeLib.Buffer): nodeLib.Buffer | nodeLib.Error = js.native
-  def verify(data: java.lang.String, signature: nodeLib.Buffer): scala.Boolean | nodeLib.Error = js.native
-  def verify(data: nodeLib.Buffer, signature: nodeLib.Buffer): scala.Boolean | nodeLib.Error = js.native
+  def sign(data: java.lang.String): nodeLib.Buffer | stdLib.Error = js.native
+  def sign(data: nodeLib.Buffer): nodeLib.Buffer | stdLib.Error = js.native
+  def verify(data: java.lang.String, signature: nodeLib.Buffer): scala.Boolean | stdLib.Error = js.native
+  def verify(data: nodeLib.Buffer, signature: nodeLib.Buffer): scala.Boolean | stdLib.Error = js.native
 }
 

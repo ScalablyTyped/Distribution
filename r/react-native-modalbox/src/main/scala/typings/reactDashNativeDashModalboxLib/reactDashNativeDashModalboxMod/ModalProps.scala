@@ -174,9 +174,9 @@ object ModalProps {
     isDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     isOpen: js.UndefOr[scala.Boolean] = js.undefined,
     keyboardTopOffset: scala.Int | scala.Double = null,
-    onClosed: js.Function0[scala.Unit] = null,
-    onClosingState: js.Function1[/* state */ scala.Boolean, scala.Unit] = null,
-    onOpened: js.Function0[scala.Unit] = null,
+    onClosed: () => scala.Unit = null,
+    onClosingState: /* state */ scala.Boolean => scala.Unit = null,
+    onOpened: () => scala.Unit = null,
     position: reactDashNativeDashModalboxLib.reactDashNativeDashModalboxLibStrings.top | reactDashNativeDashModalboxLib.reactDashNativeDashModalboxLibStrings.center | reactDashNativeDashModalboxLib.reactDashNativeDashModalboxLibStrings.bottom | java.lang.String = null,
     startOpen: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
@@ -198,9 +198,9 @@ object ModalProps {
     if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled)
     if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
     if (keyboardTopOffset != null) __obj.updateDynamic("keyboardTopOffset")(keyboardTopOffset.asInstanceOf[js.Any])
-    if (onClosed != null) __obj.updateDynamic("onClosed")(onClosed)
-    if (onClosingState != null) __obj.updateDynamic("onClosingState")(onClosingState)
-    if (onOpened != null) __obj.updateDynamic("onOpened")(onOpened)
+    if (onClosed != null) __obj.updateDynamic("onClosed")(js.Any.fromFunction0(onClosed))
+    if (onClosingState != null) __obj.updateDynamic("onClosingState")(js.Any.fromFunction1(onClosingState))
+    if (onOpened != null) __obj.updateDynamic("onOpened")(js.Any.fromFunction0(onOpened))
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (!js.isUndefined(startOpen)) __obj.updateDynamic("startOpen")(startOpen)
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

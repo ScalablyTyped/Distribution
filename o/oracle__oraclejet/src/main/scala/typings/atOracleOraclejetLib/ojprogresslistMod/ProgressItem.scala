@@ -19,18 +19,10 @@ trait ProgressItem extends js.Object {
 object ProgressItem {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[
-      atOracleOraclejetLib.ojprogresslistMod.ProgressItemNs.EventType, 
-      stdLib.EventListener, 
-      scala.Unit
-    ],
-    removeEventListener: js.Function2[
-      atOracleOraclejetLib.ojprogresslistMod.ProgressItemNs.EventType, 
-      stdLib.EventListener, 
-      scala.Unit
-    ]
+    addEventListener: (atOracleOraclejetLib.ojprogresslistMod.ProgressItemNs.EventType, stdLib.EventListener) => scala.Unit,
+    removeEventListener: (atOracleOraclejetLib.ojprogresslistMod.ProgressItemNs.EventType, stdLib.EventListener) => scala.Unit
   ): ProgressItem = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), removeEventListener = js.Any.fromFunction2(removeEventListener))
   
     __obj.asInstanceOf[ProgressItem]
   }

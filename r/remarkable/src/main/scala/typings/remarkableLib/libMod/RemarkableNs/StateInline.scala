@@ -48,12 +48,12 @@ object StateInline {
     pendingLevel: scala.Double,
     pos: scala.Double,
     posMax: scala.Double,
-    push: js.Function1[ContentToken, scala.Unit],
-    pushPending: js.Function0[scala.Unit],
+    push: ContentToken => scala.Unit,
+    pushPending: () => scala.Unit,
     src: java.lang.String,
     tokens: js.Array[ContentToken]
   ): StateInline = {
-    val __obj = js.Dynamic.literal(env = env, isInLabel = isInLabel, labelUnmatchedScopes = labelUnmatchedScopes, level = level, linkContent = linkContent, linkLevel = linkLevel, parser = parser, pending = pending, pendingLevel = pendingLevel, pos = pos, posMax = posMax, push = push, pushPending = pushPending, src = src, tokens = tokens)
+    val __obj = js.Dynamic.literal(env = env, isInLabel = isInLabel, labelUnmatchedScopes = labelUnmatchedScopes, level = level, linkContent = linkContent, linkLevel = linkLevel, parser = parser, pending = pending, pendingLevel = pendingLevel, pos = pos, posMax = posMax, push = js.Any.fromFunction1(push), pushPending = js.Any.fromFunction0(pushPending), src = src, tokens = tokens)
   
     __obj.asInstanceOf[StateInline]
   }

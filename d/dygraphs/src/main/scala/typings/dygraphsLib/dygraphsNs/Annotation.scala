@@ -85,38 +85,14 @@ object Annotation {
   def apply(
     series: java.lang.String,
     attachAtBottom: js.UndefOr[scala.Boolean] = js.undefined,
-    clickHandler: js.Function4[
-      /* annotation */ Annotation, 
-      /* point */ Point, 
-      /* dygraph */ dygraphsLib.Dygraph, 
-      /* event */ stdLib.MouseEvent, 
-      _
-    ] = null,
+    clickHandler: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ dygraphsLib.Dygraph, /* event */ stdLib.MouseEvent) => _ = null,
     cssClass: java.lang.String = null,
-    dblClickHandler: js.Function4[
-      /* annotation */ Annotation, 
-      /* point */ Point, 
-      /* dygraph */ dygraphsLib.Dygraph, 
-      /* event */ stdLib.MouseEvent, 
-      _
-    ] = null,
+    dblClickHandler: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ dygraphsLib.Dygraph, /* event */ stdLib.MouseEvent) => _ = null,
     div: stdLib.HTMLDivElement = null,
     height: scala.Int | scala.Double = null,
     icon: java.lang.String = null,
-    mouseOutHandler: js.Function4[
-      /* annotation */ Annotation, 
-      /* point */ Point, 
-      /* dygraph */ dygraphsLib.Dygraph, 
-      /* event */ stdLib.MouseEvent, 
-      _
-    ] = null,
-    mouseOverHandler: js.Function4[
-      /* annotation */ Annotation, 
-      /* point */ Point, 
-      /* dygraph */ dygraphsLib.Dygraph, 
-      /* event */ stdLib.MouseEvent, 
-      _
-    ] = null,
+    mouseOutHandler: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ dygraphsLib.Dygraph, /* event */ stdLib.MouseEvent) => _ = null,
+    mouseOverHandler: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ dygraphsLib.Dygraph, /* event */ stdLib.MouseEvent) => _ = null,
     shortText: java.lang.String = null,
     text: java.lang.String = null,
     tickHeight: scala.Int | scala.Double = null,
@@ -126,14 +102,14 @@ object Annotation {
   ): Annotation = {
     val __obj = js.Dynamic.literal(series = series)
     if (!js.isUndefined(attachAtBottom)) __obj.updateDynamic("attachAtBottom")(attachAtBottom)
-    if (clickHandler != null) __obj.updateDynamic("clickHandler")(clickHandler)
+    if (clickHandler != null) __obj.updateDynamic("clickHandler")(js.Any.fromFunction4(clickHandler))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (dblClickHandler != null) __obj.updateDynamic("dblClickHandler")(dblClickHandler)
+    if (dblClickHandler != null) __obj.updateDynamic("dblClickHandler")(js.Any.fromFunction4(dblClickHandler))
     if (div != null) __obj.updateDynamic("div")(div)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (mouseOutHandler != null) __obj.updateDynamic("mouseOutHandler")(mouseOutHandler)
-    if (mouseOverHandler != null) __obj.updateDynamic("mouseOverHandler")(mouseOverHandler)
+    if (mouseOutHandler != null) __obj.updateDynamic("mouseOutHandler")(js.Any.fromFunction4(mouseOutHandler))
+    if (mouseOverHandler != null) __obj.updateDynamic("mouseOverHandler")(js.Any.fromFunction4(mouseOverHandler))
     if (shortText != null) __obj.updateDynamic("shortText")(shortText)
     if (text != null) __obj.updateDynamic("text")(text)
     if (tickHeight != null) __obj.updateDynamic("tickHeight")(tickHeight.asInstanceOf[js.Any])

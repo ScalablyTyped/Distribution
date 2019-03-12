@@ -28,16 +28,12 @@ trait XCommandPreparation
 object XCommandPreparation {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    prepareCommand: js.Function2[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XPreparedStatement
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    prepareCommand: (java.lang.String, scala.Double) => activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XPreparedStatement,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCommandPreparation = {
-    val __obj = js.Dynamic.literal(acquire = acquire, prepareCommand = prepareCommand, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), prepareCommand = js.Any.fromFunction2(prepareCommand), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCommandPreparation]
   }

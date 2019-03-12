@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("merge-stream", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply[T /* <: nodeLib.NodeJSNs.ReadableStream */](streams: (T | js.Array[T])*): mergeDashStreamLib.mergeDashStreamMod.MergedStream = js.native
+  def apply[T /* <: nodeLib.NodeJSNs.ReadableStream */](streams: (T | js.Array[T])*): MergedStream = js.native
 }
 

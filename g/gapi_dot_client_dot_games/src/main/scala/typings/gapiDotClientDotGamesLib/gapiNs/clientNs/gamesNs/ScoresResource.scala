@@ -25,28 +25,13 @@ trait ScoresResource extends js.Object {
 object ScoresResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsIncludeRankType, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PlayerLeaderboardScoreListResponse]
-    ],
-    list: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltCollectionConsistencyTokenFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LeaderboardScores]
-    ],
-    listWindow: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltCollectionConsistencyTokenFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LeaderboardScores]
-    ],
-    submit: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageLeaderboardId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PlayerScoreResponse]
-    ],
-    submitMultiple: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PlayerScoreListResponse]
-    ]
+    get: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsIncludeRankType => gapiDotClientLib.gapiNs.clientNs.Request[PlayerLeaderboardScoreListResponse],
+    list: gapiDotClientDotGamesLib.Anon_AltCollectionConsistencyTokenFields => gapiDotClientLib.gapiNs.clientNs.Request[LeaderboardScores],
+    listWindow: gapiDotClientDotGamesLib.Anon_AltCollectionConsistencyTokenFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[LeaderboardScores],
+    submit: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageLeaderboardId => gapiDotClientLib.gapiNs.clientNs.Request[PlayerScoreResponse],
+    submitMultiple: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[PlayerScoreListResponse]
   ): ScoresResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list, listWindow = listWindow, submit = submit, submitMultiple = submitMultiple)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), listWindow = js.Any.fromFunction1(listWindow), submit = js.Any.fromFunction1(submit), submitMultiple = js.Any.fromFunction1(submitMultiple))
   
     __obj.asInstanceOf[ScoresResource]
   }

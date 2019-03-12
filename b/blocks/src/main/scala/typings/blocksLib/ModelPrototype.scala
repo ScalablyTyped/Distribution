@@ -38,21 +38,21 @@ object ModelPrototype {
   @scala.inline
   def apply(
     StringDictionary: /* propertyName */ org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean | js.Object | Validator] = null,
-    dataItem: js.Function0[js.Object] = null,
+    dataItem: () => js.Object = null,
     init: js.Function = null,
-    isNew: js.Function0[scala.Boolean] = null,
+    isNew: () => scala.Boolean = null,
     options: Anon_BaseUrl = null,
-    reset: js.Function1[ModelPrototype, ModelPrototype] = null,
-    validate: js.Function0[scala.Boolean] = null
+    reset: ModelPrototype => ModelPrototype = null,
+    validate: () => scala.Boolean = null
   ): ModelPrototype = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (dataItem != null) __obj.updateDynamic("dataItem")(dataItem)
+    if (dataItem != null) __obj.updateDynamic("dataItem")(js.Any.fromFunction0(dataItem))
     if (init != null) __obj.updateDynamic("init")(init)
-    if (isNew != null) __obj.updateDynamic("isNew")(isNew)
+    if (isNew != null) __obj.updateDynamic("isNew")(js.Any.fromFunction0(isNew))
     if (options != null) __obj.updateDynamic("options")(options)
-    if (reset != null) __obj.updateDynamic("reset")(reset)
-    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction1(reset))
+    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction0(validate))
     __obj.asInstanceOf[ModelPrototype]
   }
 }

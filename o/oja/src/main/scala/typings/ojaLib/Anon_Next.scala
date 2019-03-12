@@ -11,8 +11,8 @@ trait Anon_Next extends js.Object {
 
 object Anon_Next {
   @scala.inline
-  def apply(next: js.Function0[js.Promise[_]]): Anon_Next = {
-    val __obj = js.Dynamic.literal(next = next)
+  def apply(next: () => js.Promise[_]): Anon_Next = {
+    val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
   
     __obj.asInstanceOf[Anon_Next]
   }

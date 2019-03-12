@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   @JSName("$create_DialogOptions")
-  def $create_DialogOptions(): sharepointLib.SPNs.UINs.DialogOptions = js.native
+  def $create_DialogOptions(): DialogOptions = js.native
 }
 

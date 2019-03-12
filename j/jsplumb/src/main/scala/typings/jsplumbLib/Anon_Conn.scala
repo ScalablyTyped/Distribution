@@ -12,12 +12,9 @@ trait Anon_Conn extends js.Object {
 object Anon_Conn {
   @scala.inline
   def apply(
-    each: js.Function1[
-      js.Function1[/* conn */ jsplumbLib.jsplumbMod.jsPlumbNs.Connection, scala.Unit], 
-      scala.Unit
-    ]
+    each: js.Function1[/* conn */ jsplumbLib.jsplumbMod.jsPlumbNs.Connection, scala.Unit] => scala.Unit
   ): Anon_Conn = {
-    val __obj = js.Dynamic.literal(each = each)
+    val __obj = js.Dynamic.literal(each = js.Any.fromFunction1(each))
   
     __obj.asInstanceOf[Anon_Conn]
   }

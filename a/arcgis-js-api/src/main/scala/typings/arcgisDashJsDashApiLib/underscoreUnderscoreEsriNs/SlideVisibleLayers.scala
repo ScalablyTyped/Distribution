@@ -24,23 +24,18 @@ object SlideVisibleLayers {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     id: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     sublayerIds: js.Array[scala.Double],
-    get: js.Function1[/* propertyName */ java.lang.String, _] = null,
+    get: /* propertyName */ java.lang.String => _ = null,
     set: (js.Function2[/* propertyName */ java.lang.String, /* value */ js.Any, SlideVisibleLayers]) with (js.Function1[/* props */ arcgisDashJsDashApiLib.HashMap[_], SlideVisibleLayers]) = null,
-    watch: js.Function3[
-      /* path */ java.lang.String | js.Array[java.lang.String], 
-      /* callback */ WatchCallback, 
-      /* sync */ js.UndefOr[scala.Boolean], 
-      WatchHandle
-    ] = null
+    watch: (/* path */ java.lang.String | js.Array[java.lang.String], /* callback */ WatchCallback, /* sync */ js.UndefOr[scala.Boolean]) => WatchHandle = null
   ): SlideVisibleLayers = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, id = id, propertyIsEnumerable = propertyIsEnumerable, sublayerIds = sublayerIds)
-    if (get != null) __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sublayerIds = sublayerIds)
+    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
     if (set != null) __obj.updateDynamic("set")(set)
-    if (watch != null) __obj.updateDynamic("watch")(watch)
+    if (watch != null) __obj.updateDynamic("watch")(js.Any.fromFunction3(watch))
     __obj.asInstanceOf[SlideVisibleLayers]
   }
 }

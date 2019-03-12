@@ -45,13 +45,13 @@ object XAutoscroll {
   @scala.inline
   def apply(
     AutoscrollRegion: js.Any,
-    acquire: js.Function0[scala.Unit],
-    autoscroll: js.Function2[scala.Double, scala.Double, scala.Unit],
-    getAutoscrollRegion: js.Function0[js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    autoscroll: (scala.Double, scala.Double) => scala.Unit,
+    getAutoscrollRegion: () => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAutoscroll = {
-    val __obj = js.Dynamic.literal(AutoscrollRegion = AutoscrollRegion, acquire = acquire, autoscroll = autoscroll, getAutoscrollRegion = getAutoscrollRegion, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(AutoscrollRegion = AutoscrollRegion, acquire = js.Any.fromFunction0(acquire), autoscroll = js.Any.fromFunction2(autoscroll), getAutoscrollRegion = js.Any.fromFunction0(getAutoscrollRegion), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAutoscroll]
   }

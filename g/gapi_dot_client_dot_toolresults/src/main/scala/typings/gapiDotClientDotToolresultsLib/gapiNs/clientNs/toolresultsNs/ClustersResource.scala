@@ -21,16 +21,10 @@ trait ClustersResource extends js.Object {
 object ClustersResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ScreenshotCluster]
-    ],
-    list: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_AltExecutionId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListScreenshotClustersResponse]
-    ]
+    get: gapiDotClientDotToolresultsLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ScreenshotCluster],
+    list: gapiDotClientDotToolresultsLib.Anon_AltExecutionId => gapiDotClientLib.gapiNs.clientNs.Request[ListScreenshotClustersResponse]
   ): ClustersResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ClustersResource]
   }

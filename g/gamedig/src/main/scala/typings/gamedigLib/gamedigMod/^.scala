@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("gamedig", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def query(options: gamedigLib.gamedigMod.QueryOptions): js.Promise[gamedigLib.gamedigMod.QueryResult] = js.native
+  def query(options: QueryOptions): js.Promise[QueryResult] = js.native
   def query(
-    options: gamedigLib.gamedigMod.QueryOptions,
-    callback: js.Function2[/* error */ js.Any, /* state */ gamedigLib.gamedigMod.QueryResult, scala.Unit]
+    options: QueryOptions,
+    callback: js.Function2[/* error */ js.Any, /* state */ QueryResult, scala.Unit]
   ): scala.Unit = js.native
 }
 

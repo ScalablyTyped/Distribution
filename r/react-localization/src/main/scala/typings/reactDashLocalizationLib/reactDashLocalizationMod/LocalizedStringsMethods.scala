@@ -48,19 +48,15 @@ trait LocalizedStringsMethods extends js.Object {
 object LocalizedStringsMethods {
   @scala.inline
   def apply(
-    formatString: js.Function2[
-      java.lang.String, 
-      /* repeated */ js.Any | FormatObject[js.Any], 
-      (js.Array[java.lang.String | js.Any]) | java.lang.String
-    ],
-    getAvailableLanguages: js.Function0[js.Array[java.lang.String]],
-    getInterfaceLanguage: js.Function0[java.lang.String],
-    getLanguage: js.Function0[java.lang.String],
-    getString: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    setContent: js.Function1[js.Any, scala.Unit],
-    setLanguage: js.Function1[java.lang.String, scala.Unit]
+    formatString: (java.lang.String, /* repeated */ js.Any | FormatObject[js.Any]) => (js.Array[java.lang.String | js.Any]) | java.lang.String,
+    getAvailableLanguages: () => js.Array[java.lang.String],
+    getInterfaceLanguage: () => java.lang.String,
+    getLanguage: () => java.lang.String,
+    getString: (java.lang.String, java.lang.String) => java.lang.String,
+    setContent: js.Any => scala.Unit,
+    setLanguage: java.lang.String => scala.Unit
   ): LocalizedStringsMethods = {
-    val __obj = js.Dynamic.literal(formatString = formatString, getAvailableLanguages = getAvailableLanguages, getInterfaceLanguage = getInterfaceLanguage, getLanguage = getLanguage, getString = getString, setContent = setContent, setLanguage = setLanguage)
+    val __obj = js.Dynamic.literal(formatString = js.Any.fromFunction2(formatString), getAvailableLanguages = js.Any.fromFunction0(getAvailableLanguages), getInterfaceLanguage = js.Any.fromFunction0(getInterfaceLanguage), getLanguage = js.Any.fromFunction0(getLanguage), getString = js.Any.fromFunction2(getString), setContent = js.Any.fromFunction1(setContent), setLanguage = js.Any.fromFunction1(setLanguage))
   
     __obj.asInstanceOf[LocalizedStringsMethods]
   }

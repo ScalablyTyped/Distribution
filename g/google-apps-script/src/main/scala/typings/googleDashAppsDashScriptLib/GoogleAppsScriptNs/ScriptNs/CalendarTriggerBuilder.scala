@@ -12,8 +12,8 @@ trait CalendarTriggerBuilder extends js.Object {
 
 object CalendarTriggerBuilder {
   @scala.inline
-  def apply(create: js.Function0[Trigger], onEventUpdated: js.Function0[CalendarTriggerBuilder]): CalendarTriggerBuilder = {
-    val __obj = js.Dynamic.literal(create = create, onEventUpdated = onEventUpdated)
+  def apply(create: () => Trigger, onEventUpdated: () => CalendarTriggerBuilder): CalendarTriggerBuilder = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), onEventUpdated = js.Any.fromFunction0(onEventUpdated))
   
     __obj.asInstanceOf[CalendarTriggerBuilder]
   }

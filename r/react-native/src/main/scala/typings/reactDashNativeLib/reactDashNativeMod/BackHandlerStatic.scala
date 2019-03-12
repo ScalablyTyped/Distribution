@@ -14,11 +14,11 @@ trait BackHandlerStatic extends js.Object {
 object BackHandlerStatic {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[BackPressEventName, js.Function0[scala.Unit], NativeEventSubscription],
-    exitApp: js.Function0[scala.Unit],
-    removeEventListener: js.Function2[BackPressEventName, js.Function0[scala.Unit], scala.Unit]
+    addEventListener: (BackPressEventName, js.Function0[scala.Unit]) => NativeEventSubscription,
+    exitApp: () => scala.Unit,
+    removeEventListener: (BackPressEventName, js.Function0[scala.Unit]) => scala.Unit
   ): BackHandlerStatic = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, exitApp = exitApp, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), exitApp = js.Any.fromFunction0(exitApp), removeEventListener = js.Any.fromFunction2(removeEventListener))
   
     __obj.asInstanceOf[BackHandlerStatic]
   }

@@ -16,8 +16,8 @@ trait AfterContentChecked extends js.Object {
 
 object AfterContentChecked {
   @scala.inline
-  def apply(ngAfterContentChecked: js.Function0[scala.Unit]): AfterContentChecked = {
-    val __obj = js.Dynamic.literal(ngAfterContentChecked = ngAfterContentChecked)
+  def apply(ngAfterContentChecked: () => scala.Unit): AfterContentChecked = {
+    val __obj = js.Dynamic.literal(ngAfterContentChecked = js.Any.fromFunction0(ngAfterContentChecked))
   
     __obj.asInstanceOf[AfterContentChecked]
   }

@@ -14,7 +14,7 @@ class Screen protected () extends js.Object {
   val ActiveDatasheet: Form = js.native
   val ActiveForm: Form = js.native
   val ActiveReport: Report = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   var MousePointer: scala.Double = js.native
   val Parent: js.Any = js.native
   val PreviousControl: Control = js.native

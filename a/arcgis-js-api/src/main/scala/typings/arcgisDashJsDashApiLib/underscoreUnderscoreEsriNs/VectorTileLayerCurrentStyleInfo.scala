@@ -50,15 +50,15 @@ object VectorTileLayerCurrentStyleInfo {
   def apply(
     constructor: js.Function,
     glyphsUrl: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     layerDefinition: js.Any,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     serviceUrl: java.lang.String,
     spriteUrl: java.lang.String,
     style: js.Any,
     styleUrl: java.lang.String
   ): VectorTileLayerCurrentStyleInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor, glyphsUrl = glyphsUrl, hasOwnProperty = hasOwnProperty, layerDefinition = layerDefinition, propertyIsEnumerable = propertyIsEnumerable, serviceUrl = serviceUrl, spriteUrl = spriteUrl, style = style, styleUrl = styleUrl)
+    val __obj = js.Dynamic.literal(constructor = constructor, glyphsUrl = glyphsUrl, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layerDefinition = layerDefinition, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), serviceUrl = serviceUrl, spriteUrl = spriteUrl, style = style, styleUrl = styleUrl)
   
     __obj.asInstanceOf[VectorTileLayerCurrentStyleInfo]
   }

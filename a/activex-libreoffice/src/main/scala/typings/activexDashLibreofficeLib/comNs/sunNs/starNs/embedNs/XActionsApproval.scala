@@ -24,12 +24,12 @@ trait XActionsApproval
 object XActionsApproval {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    approveAction: js.Function1[scala.Double, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    approveAction: scala.Double => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XActionsApproval = {
-    val __obj = js.Dynamic.literal(acquire = acquire, approveAction = approveAction, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), approveAction = js.Any.fromFunction1(approveAction), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XActionsApproval]
   }

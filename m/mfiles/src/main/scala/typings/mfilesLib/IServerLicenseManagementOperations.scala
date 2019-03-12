@@ -13,10 +13,10 @@ trait IServerLicenseManagementOperations extends js.Object {
 object IServerLicenseManagementOperations {
   @scala.inline
   def apply(
-    GetLicenseStatus: js.Function0[ILicenseStatus],
-    SetLicenseCodeAndSerialNumber: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    GetLicenseStatus: () => ILicenseStatus,
+    SetLicenseCodeAndSerialNumber: (java.lang.String, java.lang.String) => scala.Unit
   ): IServerLicenseManagementOperations = {
-    val __obj = js.Dynamic.literal(GetLicenseStatus = GetLicenseStatus, SetLicenseCodeAndSerialNumber = SetLicenseCodeAndSerialNumber)
+    val __obj = js.Dynamic.literal(GetLicenseStatus = js.Any.fromFunction0(GetLicenseStatus), SetLicenseCodeAndSerialNumber = js.Any.fromFunction2(SetLicenseCodeAndSerialNumber))
   
     __obj.asInstanceOf[IServerLicenseManagementOperations]
   }

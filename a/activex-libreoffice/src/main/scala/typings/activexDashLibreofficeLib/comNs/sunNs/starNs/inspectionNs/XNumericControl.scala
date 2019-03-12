@@ -48,10 +48,10 @@ object XNumericControl {
     Value: js.Any,
     ValueType: activexDashLibreofficeLib.`type`,
     ValueUnit: scala.Double,
-    isModified: js.Function0[scala.Boolean],
-    notifyModifiedValue: js.Function0[scala.Unit]
+    isModified: () => scala.Boolean,
+    notifyModifiedValue: () => scala.Unit
   ): XNumericControl = {
-    val __obj = js.Dynamic.literal(ControlContext = ControlContext, ControlType = ControlType, ControlWindow = ControlWindow, DecimalDigits = DecimalDigits, DisplayUnit = DisplayUnit, MaxValue = MaxValue, MinValue = MinValue, Value = Value, ValueType = ValueType, ValueUnit = ValueUnit, isModified = isModified, notifyModifiedValue = notifyModifiedValue)
+    val __obj = js.Dynamic.literal(ControlContext = ControlContext, ControlType = ControlType, ControlWindow = ControlWindow, DecimalDigits = DecimalDigits, DisplayUnit = DisplayUnit, MaxValue = MaxValue, MinValue = MinValue, Value = Value, ValueType = ValueType, ValueUnit = ValueUnit, isModified = js.Any.fromFunction0(isModified), notifyModifiedValue = js.Any.fromFunction0(notifyModifiedValue))
   
     __obj.asInstanceOf[XNumericControl]
   }

@@ -128,39 +128,39 @@ object WebViewProps {
     nativeConfig: WebViewNativeConfig = null,
     nativeID: java.lang.String = null,
     needsOffscreenAlphaCompositing: js.UndefOr[scala.Boolean] = js.undefined,
-    onAccessibilityAction: js.Function0[scala.Unit] = null,
-    onAccessibilityTap: js.Function0[scala.Unit] = null,
-    onError: js.Function1[/* event */ NavState, scala.Unit] = null,
-    onLayout: js.Function1[/* event */ LayoutChangeEvent, scala.Unit] = null,
-    onLoad: js.Function1[/* event */ NavState, scala.Unit] = null,
-    onLoadEnd: js.Function1[/* event */ NavState, scala.Unit] = null,
-    onLoadStart: js.Function1[/* event */ NavState, scala.Unit] = null,
-    onMagicTap: js.Function0[scala.Unit] = null,
-    onMessage: js.Function1[/* event */ NativeSyntheticEvent[WebViewMessageEventData], scala.Unit] = null,
-    onMoveShouldSetResponder: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
-    onMoveShouldSetResponderCapture: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
-    onNavigationStateChange: js.Function1[/* event */ NavState, scala.Unit] = null,
-    onResponderEnd: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderGrant: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderMove: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderReject: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderRelease: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderStart: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderTerminate: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderTerminationRequest: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
-    onShouldStartLoadWithRequest: js.Function1[/* event */ WebViewIOSLoadRequestEvent, scala.Boolean] = null,
-    onStartShouldSetResponder: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
-    onStartShouldSetResponderCapture: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
-    onTouchCancel: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onTouchEnd: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onTouchEndCapture: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onTouchMove: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onTouchStart: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
+    onAccessibilityAction: () => scala.Unit = null,
+    onAccessibilityTap: () => scala.Unit = null,
+    onError: /* event */ NavState => scala.Unit = null,
+    onLayout: /* event */ LayoutChangeEvent => scala.Unit = null,
+    onLoad: /* event */ NavState => scala.Unit = null,
+    onLoadEnd: /* event */ NavState => scala.Unit = null,
+    onLoadStart: /* event */ NavState => scala.Unit = null,
+    onMagicTap: () => scala.Unit = null,
+    onMessage: /* event */ NativeSyntheticEvent[WebViewMessageEventData] => scala.Unit = null,
+    onMoveShouldSetResponder: /* event */ GestureResponderEvent => scala.Boolean = null,
+    onMoveShouldSetResponderCapture: /* event */ GestureResponderEvent => scala.Boolean = null,
+    onNavigationStateChange: /* event */ NavState => scala.Unit = null,
+    onResponderEnd: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderGrant: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderMove: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderReject: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderRelease: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderStart: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderTerminate: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderTerminationRequest: /* event */ GestureResponderEvent => scala.Boolean = null,
+    onShouldStartLoadWithRequest: /* event */ WebViewIOSLoadRequestEvent => scala.Boolean = null,
+    onStartShouldSetResponder: /* event */ GestureResponderEvent => scala.Boolean = null,
+    onStartShouldSetResponderCapture: /* event */ GestureResponderEvent => scala.Boolean = null,
+    onTouchCancel: /* event */ GestureResponderEvent => scala.Unit = null,
+    onTouchEnd: /* event */ GestureResponderEvent => scala.Unit = null,
+    onTouchEndCapture: /* event */ GestureResponderEvent => scala.Unit = null,
+    onTouchMove: /* event */ GestureResponderEvent => scala.Unit = null,
+    onTouchStart: /* event */ GestureResponderEvent => scala.Unit = null,
     originWhitelist: js.Array[java.lang.String] = null,
     pointerEvents: reactDashNativeLib.reactDashNativeLibStrings.`box-none` | reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.`box-only` | reactDashNativeLib.reactDashNativeLibStrings.auto = null,
     removeClippedSubviews: js.UndefOr[scala.Boolean] = js.undefined,
-    renderError: js.Function0[reactLib.reactMod.ReactNs.ReactElement[ViewProps]] = null,
-    renderLoading: js.Function0[reactLib.reactMod.ReactNs.ReactElement[ViewProps]] = null,
+    renderError: () => reactLib.reactMod.ReactNs.ReactElement[ViewProps] = null,
+    renderLoading: () => reactLib.reactMod.ReactNs.ReactElement[ViewProps] = null,
     renderToHardwareTextureAndroid: js.UndefOr[scala.Boolean] = js.undefined,
     saveFormDataDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     scalesPageToFit: js.UndefOr[scala.Boolean] = js.undefined,
@@ -206,39 +206,39 @@ object WebViewProps {
     if (nativeConfig != null) __obj.updateDynamic("nativeConfig")(nativeConfig)
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(onAccessibilityAction)
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(onAccessibilityTap)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onLayout != null) __obj.updateDynamic("onLayout")(onLayout)
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
-    if (onLoadEnd != null) __obj.updateDynamic("onLoadEnd")(onLoadEnd)
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(onLoadStart)
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(onMagicTap)
-    if (onMessage != null) __obj.updateDynamic("onMessage")(onMessage)
-    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(onMoveShouldSetResponder)
-    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(onMoveShouldSetResponderCapture)
-    if (onNavigationStateChange != null) __obj.updateDynamic("onNavigationStateChange")(onNavigationStateChange)
-    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(onResponderEnd)
-    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(onResponderGrant)
-    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(onResponderMove)
-    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(onResponderReject)
-    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(onResponderRelease)
-    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(onResponderStart)
-    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(onResponderTerminate)
-    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(onResponderTerminationRequest)
-    if (onShouldStartLoadWithRequest != null) __obj.updateDynamic("onShouldStartLoadWithRequest")(onShouldStartLoadWithRequest)
-    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(onStartShouldSetResponder)
-    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(onStartShouldSetResponderCapture)
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel)
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
-    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(onTouchEndCapture)
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction0(onAccessibilityAction))
+    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
+    if (onLoadEnd != null) __obj.updateDynamic("onLoadEnd")(js.Any.fromFunction1(onLoadEnd))
+    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(js.Any.fromFunction1(onLoadStart))
+    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
+    if (onMessage != null) __obj.updateDynamic("onMessage")(js.Any.fromFunction1(onMessage))
+    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))
+    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(js.Any.fromFunction1(onMoveShouldSetResponderCapture))
+    if (onNavigationStateChange != null) __obj.updateDynamic("onNavigationStateChange")(js.Any.fromFunction1(onNavigationStateChange))
+    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(js.Any.fromFunction1(onResponderEnd))
+    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(js.Any.fromFunction1(onResponderGrant))
+    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(js.Any.fromFunction1(onResponderMove))
+    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(js.Any.fromFunction1(onResponderReject))
+    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(js.Any.fromFunction1(onResponderRelease))
+    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(js.Any.fromFunction1(onResponderStart))
+    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(js.Any.fromFunction1(onResponderTerminate))
+    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(js.Any.fromFunction1(onResponderTerminationRequest))
+    if (onShouldStartLoadWithRequest != null) __obj.updateDynamic("onShouldStartLoadWithRequest")(js.Any.fromFunction1(onShouldStartLoadWithRequest))
+    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1(onStartShouldSetResponder))
+    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1(onStartShouldSetResponderCapture))
+    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
+    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(js.Any.fromFunction1(onTouchEndCapture))
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
     if (originWhitelist != null) __obj.updateDynamic("originWhitelist")(originWhitelist)
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
     if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews)
-    if (renderError != null) __obj.updateDynamic("renderError")(renderError)
-    if (renderLoading != null) __obj.updateDynamic("renderLoading")(renderLoading)
+    if (renderError != null) __obj.updateDynamic("renderError")(js.Any.fromFunction0(renderError))
+    if (renderLoading != null) __obj.updateDynamic("renderLoading")(js.Any.fromFunction0(renderLoading))
     if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid)
     if (!js.isUndefined(saveFormDataDisabled)) __obj.updateDynamic("saveFormDataDisabled")(saveFormDataDisabled)
     if (!js.isUndefined(scalesPageToFit)) __obj.updateDynamic("scalesPageToFit")(scalesPageToFit)

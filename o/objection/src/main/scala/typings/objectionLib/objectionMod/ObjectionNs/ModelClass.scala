@@ -40,8 +40,8 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
   var virtualAttributes: js.Array[java.lang.String] = js.native
   def bindKnex(knex: knexLib.knexMod.Knex): this.type = js.native
   def bindTransaction(transaction: Transaction): this.type = js.native
-  def createNotFoundError(): nodeLib.Error = js.native
-  def createValidationError(args: CreateValidationErrorArgs): nodeLib.Error = js.native
+  def createNotFoundError(): stdLib.Error = js.native
+  def createValidationError(args: CreateValidationErrorArgs): stdLib.Error = js.native
   def createValidator(): Validator = js.native
   def fetchTableMetadata(): js.Promise[TableMetadata] = js.native
   def fetchTableMetadata(opt: FetchTableMetadataOptions): js.Promise[TableMetadata] = js.native

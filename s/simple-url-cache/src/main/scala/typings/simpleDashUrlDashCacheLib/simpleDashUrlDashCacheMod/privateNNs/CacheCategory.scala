@@ -15,12 +15,12 @@ trait CacheCategory extends js.Object {
 object CacheCategory {
   @scala.inline
   def apply(
-    getCacheCategory: js.Function0[java.lang.String],
-    getCategory: js.Function0[java.lang.String],
-    getCurrentUrl: js.Function0[java.lang.String],
-    getRegexTest: js.Function1[simpleDashUrlDashCacheLib.simpleDashUrlDashCacheMod.RegexRule, scala.Boolean]
+    getCacheCategory: () => java.lang.String,
+    getCategory: () => java.lang.String,
+    getCurrentUrl: () => java.lang.String,
+    getRegexTest: simpleDashUrlDashCacheLib.simpleDashUrlDashCacheMod.RegexRule => scala.Boolean
   ): CacheCategory = {
-    val __obj = js.Dynamic.literal(getCacheCategory = getCacheCategory, getCategory = getCategory, getCurrentUrl = getCurrentUrl, getRegexTest = getRegexTest)
+    val __obj = js.Dynamic.literal(getCacheCategory = js.Any.fromFunction0(getCacheCategory), getCategory = js.Any.fromFunction0(getCategory), getCurrentUrl = js.Any.fromFunction0(getCurrentUrl), getRegexTest = js.Any.fromFunction1(getRegexTest))
   
     __obj.asInstanceOf[CacheCategory]
   }

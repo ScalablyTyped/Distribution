@@ -25,17 +25,12 @@ trait XSortedDynamicResultSetFactory
 object XSortedDynamicResultSetFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createSortedDynamicResultSet: js.Function3[
-      XDynamicResultSet, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[NumberedSortingInfo], 
-      XAnyCompareFactory, 
-      XDynamicResultSet
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createSortedDynamicResultSet: (XDynamicResultSet, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[NumberedSortingInfo], XAnyCompareFactory) => XDynamicResultSet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSortedDynamicResultSetFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createSortedDynamicResultSet = createSortedDynamicResultSet, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createSortedDynamicResultSet = js.Any.fromFunction3(createSortedDynamicResultSet), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSortedDynamicResultSetFactory]
   }

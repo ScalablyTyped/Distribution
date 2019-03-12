@@ -15,16 +15,10 @@ trait UserRolePermissionsResource extends js.Object {
 object UserRolePermissionsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UserRolePermission]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsIdsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UserRolePermissionsListResponse]
-    ]
+    get: gapiDotClientDotDfareportingLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[UserRolePermission],
+    list: gapiDotClientDotDfareportingLib.Anon_AltFieldsIdsKey => gapiDotClientLib.gapiNs.clientNs.Request[UserRolePermissionsListResponse]
   ): UserRolePermissionsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[UserRolePermissionsResource]
   }

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   @JSName("$ngBootbox")
-  var $ngBootbox: ngbootboxLib.BootboxService = js.native
+  var $ngBootbox: BootboxService = js.native
 }
 

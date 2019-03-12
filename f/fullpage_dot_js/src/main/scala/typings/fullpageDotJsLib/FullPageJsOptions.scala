@@ -311,17 +311,11 @@ trait FullPageJsOptions extends js.Object {
 object FullPageJsOptions {
   @scala.inline
   def apply(
-    afterLoad: js.Function2[/* anchorLink */ java.lang.String, /* index */ scala.Double, scala.Unit] = null,
-    afterRender: js.Function0[scala.Unit] = null,
-    afterResize: js.Function0[scala.Unit] = null,
-    afterResponsive: js.Function1[/* isResponsive */ scala.Boolean, scala.Unit] = null,
-    afterSlideLoad: js.Function4[
-      /* anchorLink */ java.lang.String, 
-      /* index */ scala.Double, 
-      /* slideAnchor */ java.lang.String, 
-      /* slideIndex */ scala.Double, 
-      scala.Unit
-    ] = null,
+    afterLoad: (/* anchorLink */ java.lang.String, /* index */ scala.Double) => scala.Unit = null,
+    afterRender: () => scala.Unit = null,
+    afterResize: () => scala.Unit = null,
+    afterResponsive: /* isResponsive */ scala.Boolean => scala.Unit = null,
+    afterSlideLoad: (/* anchorLink */ java.lang.String, /* index */ scala.Double, /* slideAnchor */ java.lang.String, /* slideIndex */ scala.Double) => scala.Unit = null,
     anchors: js.Array[java.lang.String] = null,
     animateAnchor: js.UndefOr[scala.Boolean] = js.undefined,
     autoScrolling: js.UndefOr[scala.Boolean] = js.undefined,
@@ -351,20 +345,8 @@ object FullPageJsOptions {
     normalScrollElementTouchThreshold: scala.Int | scala.Double = null,
     normalScrollElements: java.lang.String = null,
     offsetSections: js.UndefOr[scala.Boolean] = js.undefined,
-    onLeave: js.Function3[
-      /* index */ scala.Double, 
-      /* nextIndex */ scala.Double, 
-      /* direction */ java.lang.String, 
-      scala.Unit
-    ] = null,
-    onSlideLeave: js.Function5[
-      /* anchorLink */ java.lang.String, 
-      /* index */ scala.Double, 
-      /* slideIndex */ scala.Double, 
-      /* direction */ java.lang.String, 
-      /* nextSlideIndex */ scala.Double, 
-      scala.Unit
-    ] = null,
+    onLeave: (/* index */ scala.Double, /* nextIndex */ scala.Double, /* direction */ java.lang.String) => scala.Unit = null,
+    onSlideLeave: (/* anchorLink */ java.lang.String, /* index */ scala.Double, /* slideIndex */ scala.Double, /* direction */ java.lang.String, /* nextSlideIndex */ scala.Double) => scala.Unit = null,
     paddingBottom: java.lang.String = null,
     paddingTop: java.lang.String = null,
     parallax: js.UndefOr[scala.Boolean] = js.undefined,
@@ -391,11 +373,11 @@ object FullPageJsOptions {
     verticalCentered: js.UndefOr[scala.Boolean] = js.undefined
   ): FullPageJsOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterLoad != null) __obj.updateDynamic("afterLoad")(afterLoad)
-    if (afterRender != null) __obj.updateDynamic("afterRender")(afterRender)
-    if (afterResize != null) __obj.updateDynamic("afterResize")(afterResize)
-    if (afterResponsive != null) __obj.updateDynamic("afterResponsive")(afterResponsive)
-    if (afterSlideLoad != null) __obj.updateDynamic("afterSlideLoad")(afterSlideLoad)
+    if (afterLoad != null) __obj.updateDynamic("afterLoad")(js.Any.fromFunction2(afterLoad))
+    if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction0(afterRender))
+    if (afterResize != null) __obj.updateDynamic("afterResize")(js.Any.fromFunction0(afterResize))
+    if (afterResponsive != null) __obj.updateDynamic("afterResponsive")(js.Any.fromFunction1(afterResponsive))
+    if (afterSlideLoad != null) __obj.updateDynamic("afterSlideLoad")(js.Any.fromFunction4(afterSlideLoad))
     if (anchors != null) __obj.updateDynamic("anchors")(anchors)
     if (!js.isUndefined(animateAnchor)) __obj.updateDynamic("animateAnchor")(animateAnchor)
     if (!js.isUndefined(autoScrolling)) __obj.updateDynamic("autoScrolling")(autoScrolling)
@@ -425,8 +407,8 @@ object FullPageJsOptions {
     if (normalScrollElementTouchThreshold != null) __obj.updateDynamic("normalScrollElementTouchThreshold")(normalScrollElementTouchThreshold.asInstanceOf[js.Any])
     if (normalScrollElements != null) __obj.updateDynamic("normalScrollElements")(normalScrollElements)
     if (!js.isUndefined(offsetSections)) __obj.updateDynamic("offsetSections")(offsetSections)
-    if (onLeave != null) __obj.updateDynamic("onLeave")(onLeave)
-    if (onSlideLeave != null) __obj.updateDynamic("onSlideLeave")(onSlideLeave)
+    if (onLeave != null) __obj.updateDynamic("onLeave")(js.Any.fromFunction3(onLeave))
+    if (onSlideLeave != null) __obj.updateDynamic("onSlideLeave")(js.Any.fromFunction5(onSlideLeave))
     if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom)
     if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop)
     if (!js.isUndefined(parallax)) __obj.updateDynamic("parallax")(parallax)

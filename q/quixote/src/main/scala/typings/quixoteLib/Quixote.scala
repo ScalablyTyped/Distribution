@@ -16,13 +16,9 @@ trait Quixote extends js.Object {
 object Quixote {
   @scala.inline
   def apply(
-    createFrame: js.Function2[
-      QuixoteFrameOptions, 
-      js.Function2[/* err */ stdLib.Error, /* loadedFrame */ QFrame, scala.Unit], 
-      QFrame
-    ]
+    createFrame: (QuixoteFrameOptions, js.Function2[/* err */ stdLib.Error, /* loadedFrame */ QFrame, scala.Unit]) => QFrame
   ): Quixote = {
-    val __obj = js.Dynamic.literal(createFrame = createFrame)
+    val __obj = js.Dynamic.literal(createFrame = js.Any.fromFunction2(createFrame))
   
     __obj.asInstanceOf[Quixote]
   }

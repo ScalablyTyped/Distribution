@@ -51,34 +51,22 @@ object Framework {
     isNpmRebuildRequired: scala.Boolean,
     macOsDefaultTargets: js.Array[java.lang.String],
     name: java.lang.String,
-    prepareApplicationStageDirectory: js.Function1[PrepareApplicationStageDirectoryOptions, js.Promise[_]],
+    prepareApplicationStageDirectory: PrepareApplicationStageDirectoryOptions => js.Promise[_],
     version: java.lang.String,
-    afterPack: js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AfterPackContext */ /* context */ js.Any, 
-      js.Promise[_]
-    ] = null,
-    beforeCopyExtraFiles: js.Function1[/* options */ BeforeCopyExtraFilesOptions, js.Promise[_]] = null,
-    createTransformer: js.Function0[builderDashUtilLib.outFsMod.FileTransformer | scala.Null] = null,
-    getDefaultIcon: js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ /* platform */ js.Any, 
-      java.lang.String | scala.Null
-    ] = null,
-    getExcludedDependencies: js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ /* platform */ js.Any, 
-      js.Array[java.lang.String] | scala.Null
-    ] = null,
-    getMainFile: js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ /* platform */ js.Any, 
-      java.lang.String | scala.Null
-    ] = null
+    afterPack: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AfterPackContext */ /* context */ js.Any => js.Promise[_] = null,
+    beforeCopyExtraFiles: /* options */ BeforeCopyExtraFilesOptions => js.Promise[_] = null,
+    createTransformer: () => builderDashUtilLib.outFsMod.FileTransformer | scala.Null = null,
+    getDefaultIcon: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ /* platform */ js.Any => java.lang.String | scala.Null = null,
+    getExcludedDependencies: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ /* platform */ js.Any => js.Array[java.lang.String] | scala.Null = null,
+    getMainFile: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ /* platform */ js.Any => java.lang.String | scala.Null = null
   ): Framework = {
-    val __obj = js.Dynamic.literal(defaultAppIdPrefix = defaultAppIdPrefix, distMacOsAppName = distMacOsAppName, isCopyElevateHelper = isCopyElevateHelper, isNpmRebuildRequired = isNpmRebuildRequired, macOsDefaultTargets = macOsDefaultTargets, name = name, prepareApplicationStageDirectory = prepareApplicationStageDirectory, version = version)
-    if (afterPack != null) __obj.updateDynamic("afterPack")(afterPack)
-    if (beforeCopyExtraFiles != null) __obj.updateDynamic("beforeCopyExtraFiles")(beforeCopyExtraFiles)
-    if (createTransformer != null) __obj.updateDynamic("createTransformer")(createTransformer)
-    if (getDefaultIcon != null) __obj.updateDynamic("getDefaultIcon")(getDefaultIcon)
-    if (getExcludedDependencies != null) __obj.updateDynamic("getExcludedDependencies")(getExcludedDependencies)
-    if (getMainFile != null) __obj.updateDynamic("getMainFile")(getMainFile)
+    val __obj = js.Dynamic.literal(defaultAppIdPrefix = defaultAppIdPrefix, distMacOsAppName = distMacOsAppName, isCopyElevateHelper = isCopyElevateHelper, isNpmRebuildRequired = isNpmRebuildRequired, macOsDefaultTargets = macOsDefaultTargets, name = name, prepareApplicationStageDirectory = js.Any.fromFunction1(prepareApplicationStageDirectory), version = version)
+    if (afterPack != null) __obj.updateDynamic("afterPack")(js.Any.fromFunction1(afterPack))
+    if (beforeCopyExtraFiles != null) __obj.updateDynamic("beforeCopyExtraFiles")(js.Any.fromFunction1(beforeCopyExtraFiles))
+    if (createTransformer != null) __obj.updateDynamic("createTransformer")(js.Any.fromFunction0(createTransformer))
+    if (getDefaultIcon != null) __obj.updateDynamic("getDefaultIcon")(js.Any.fromFunction1(getDefaultIcon))
+    if (getExcludedDependencies != null) __obj.updateDynamic("getExcludedDependencies")(js.Any.fromFunction1(getExcludedDependencies))
+    if (getMainFile != null) __obj.updateDynamic("getMainFile")(js.Any.fromFunction1(getMainFile))
     __obj.asInstanceOf[Framework]
   }
 }

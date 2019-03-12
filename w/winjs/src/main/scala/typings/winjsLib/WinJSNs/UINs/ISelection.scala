@@ -67,18 +67,18 @@ trait ISelection[T] extends js.Object {
 object ISelection {
   @scala.inline
   def apply[T](
-    add: js.Function1[js.Any, winjsLib.WinJSNs.Promise[_]],
-    clear: js.Function0[winjsLib.WinJSNs.Promise[_]],
-    count: js.Function0[scala.Double],
-    getIndices: js.Function0[js.Array[scala.Double]],
-    getItems: js.Function0[winjsLib.WinJSNs.Promise[js.Array[IItem[T]]]],
-    getRanges: js.Function0[js.Array[ISelectionRange]],
-    isEverything: js.Function0[scala.Boolean],
-    remove: js.Function1[js.Any, winjsLib.WinJSNs.Promise[_]],
-    selectAll: js.Function0[scala.Unit],
-    set: js.Function1[js.Any, winjsLib.WinJSNs.Promise[_]]
+    add: js.Any => winjsLib.WinJSNs.Promise[_],
+    clear: () => winjsLib.WinJSNs.Promise[_],
+    count: () => scala.Double,
+    getIndices: () => js.Array[scala.Double],
+    getItems: () => winjsLib.WinJSNs.Promise[js.Array[IItem[T]]],
+    getRanges: () => js.Array[ISelectionRange],
+    isEverything: () => scala.Boolean,
+    remove: js.Any => winjsLib.WinJSNs.Promise[_],
+    selectAll: () => scala.Unit,
+    set: js.Any => winjsLib.WinJSNs.Promise[_]
   ): ISelection[T] = {
-    val __obj = js.Dynamic.literal(add = add, clear = clear, count = count, getIndices = getIndices, getItems = getItems, getRanges = getRanges, isEverything = isEverything, remove = remove, selectAll = selectAll, set = set)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), clear = js.Any.fromFunction0(clear), count = js.Any.fromFunction0(count), getIndices = js.Any.fromFunction0(getIndices), getItems = js.Any.fromFunction0(getItems), getRanges = js.Any.fromFunction0(getRanges), isEverything = js.Any.fromFunction0(isEverything), remove = js.Any.fromFunction1(remove), selectAll = js.Any.fromFunction0(selectAll), set = js.Any.fromFunction1(set))
   
     __obj.asInstanceOf[ISelection[T]]
   }

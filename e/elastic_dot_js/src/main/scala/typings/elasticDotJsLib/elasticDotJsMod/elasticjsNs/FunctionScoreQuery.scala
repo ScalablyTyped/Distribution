@@ -51,16 +51,16 @@ trait FunctionScoreQuery extends Query {
 object FunctionScoreQuery {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    boost: js.Function1[scala.Double, FunctionScoreQuery],
-    boostMode: js.Function1[java.lang.String, FunctionScoreQuery],
-    filter: js.Function1[Filter, FunctionScoreQuery],
-    functions: js.Function1[js.Array[ScoreFunction], FunctionScoreQuery],
-    query: js.Function1[Query, FunctionScoreQuery],
-    scoreMode: js.Function1[java.lang.String, FunctionScoreQuery],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    boost: scala.Double => FunctionScoreQuery,
+    boostMode: java.lang.String => FunctionScoreQuery,
+    filter: Filter => FunctionScoreQuery,
+    functions: js.Array[ScoreFunction] => FunctionScoreQuery,
+    query: Query => FunctionScoreQuery,
+    scoreMode: java.lang.String => FunctionScoreQuery,
+    toJSON: () => js.Any
   ): FunctionScoreQuery = {
-    val __obj = js.Dynamic.literal(_type = _type, boost = boost, boostMode = boostMode, filter = filter, functions = functions, query = query, scoreMode = scoreMode, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), boost = js.Any.fromFunction1(boost), boostMode = js.Any.fromFunction1(boostMode), filter = js.Any.fromFunction1(filter), functions = js.Any.fromFunction1(functions), query = js.Any.fromFunction1(query), scoreMode = js.Any.fromFunction1(scoreMode), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[FunctionScoreQuery]
   }

@@ -12,12 +12,9 @@ trait IPlaylistStatics extends js.Object {
 object IPlaylistStatics {
   @scala.inline
   def apply(
-    loadAsync: js.Function1[
-      winrtLib.WindowsNs.StorageNs.IStorageFile, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[Playlist]
-    ]
+    loadAsync: winrtLib.WindowsNs.StorageNs.IStorageFile => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[Playlist]
   ): IPlaylistStatics = {
-    val __obj = js.Dynamic.literal(loadAsync = loadAsync)
+    val __obj = js.Dynamic.literal(loadAsync = js.Any.fromFunction1(loadAsync))
   
     __obj.asInstanceOf[IPlaylistStatics]
   }

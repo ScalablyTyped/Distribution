@@ -14,12 +14,12 @@ trait ObservableConfig extends js.Object {
 object ObservableConfig {
   @scala.inline
   def apply(
-    fromESObservable: js.Function1[/* observable */ Subscribable[_], _] = null,
-    toESObservable: js.Function1[/* stream */ js.Any, Subscribable[_]] = null
+    fromESObservable: /* observable */ Subscribable[_] => _ = null,
+    toESObservable: /* stream */ js.Any => Subscribable[_] = null
   ): ObservableConfig = {
     val __obj = js.Dynamic.literal()
-    if (fromESObservable != null) __obj.updateDynamic("fromESObservable")(fromESObservable)
-    if (toESObservable != null) __obj.updateDynamic("toESObservable")(toESObservable)
+    if (fromESObservable != null) __obj.updateDynamic("fromESObservable")(js.Any.fromFunction1(fromESObservable))
+    if (toESObservable != null) __obj.updateDynamic("toESObservable")(js.Any.fromFunction1(toESObservable))
     __obj.asInstanceOf[ObservableConfig]
   }
 }

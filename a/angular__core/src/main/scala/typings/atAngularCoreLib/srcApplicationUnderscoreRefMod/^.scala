@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val ALLOW_MULTIPLE_PLATFORMS: atAngularCoreLib.srcDiMod.InjectionToken[scala.Boolean] = js.native
-  def assertPlatform(requiredToken: js.Any): atAngularCoreLib.srcApplicationUnderscoreRefMod.PlatformRef = js.native
+  def assertPlatform(requiredToken: js.Any): PlatformRef = js.native
   def compileNgModuleFactory__POST_R3__[M](
     injector: atAngularCoreLib.srcDiMod.Injector,
     options: atAngularCoreLib.srcLinkerCompilerMod.CompilerOptions,
@@ -17,31 +17,31 @@ object ^ extends js.Object {
   ): js.Promise[
     atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[M]
   ] = js.native
-  def createPlatform(injector: atAngularCoreLib.srcDiMod.Injector): atAngularCoreLib.srcApplicationUnderscoreRefMod.PlatformRef = js.native
+  def createPlatform(injector: atAngularCoreLib.srcDiMod.Injector): PlatformRef = js.native
   def createPlatformFactory(
     parentPlatformFactory: js.Function1[
       /* extraProviders */ js.UndefOr[js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider]], 
-      atAngularCoreLib.srcApplicationUnderscoreRefMod.PlatformRef
+      PlatformRef
     ],
     name: java.lang.String
   ): js.Function1[
     /* extraProviders */ js.UndefOr[js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider]], 
-    atAngularCoreLib.srcApplicationUnderscoreRefMod.PlatformRef
+    PlatformRef
   ] = js.native
   def createPlatformFactory(
     parentPlatformFactory: js.Function1[
       /* extraProviders */ js.UndefOr[js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider]], 
-      atAngularCoreLib.srcApplicationUnderscoreRefMod.PlatformRef
+      PlatformRef
     ],
     name: java.lang.String,
     providers: js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider]
   ): js.Function1[
     /* extraProviders */ js.UndefOr[js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider]], 
-    atAngularCoreLib.srcApplicationUnderscoreRefMod.PlatformRef
+    PlatformRef
   ] = js.native
   def createPlatformFactory(parentPlatformFactory: scala.Null, name: java.lang.String): js.Function1[
     /* extraProviders */ js.UndefOr[js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider]], 
-    atAngularCoreLib.srcApplicationUnderscoreRefMod.PlatformRef
+    PlatformRef
   ] = js.native
   def createPlatformFactory(
     parentPlatformFactory: scala.Null,
@@ -49,9 +49,9 @@ object ^ extends js.Object {
     providers: js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider]
   ): js.Function1[
     /* extraProviders */ js.UndefOr[js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider]], 
-    atAngularCoreLib.srcApplicationUnderscoreRefMod.PlatformRef
+    PlatformRef
   ] = js.native
   def destroyPlatform(): scala.Unit = js.native
-  def getPlatform(): atAngularCoreLib.srcApplicationUnderscoreRefMod.PlatformRef | scala.Null = js.native
+  def getPlatform(): PlatformRef | scala.Null = js.native
 }
 

@@ -32,11 +32,8 @@ trait symbologySize extends js.Object {
 
 object symbologySize {
   @scala.inline
-  def apply(
-    cloneScheme: js.Function1[SizeScheme, SizeScheme],
-    getSchemes: js.Function1[sizeGetSchemesParams, SizeSchemes]
-  ): symbologySize = {
-    val __obj = js.Dynamic.literal(cloneScheme = cloneScheme, getSchemes = getSchemes)
+  def apply(cloneScheme: SizeScheme => SizeScheme, getSchemes: sizeGetSchemesParams => SizeSchemes): symbologySize = {
+    val __obj = js.Dynamic.literal(cloneScheme = js.Any.fromFunction1(cloneScheme), getSchemes = js.Any.fromFunction1(getSchemes))
   
     __obj.asInstanceOf[symbologySize]
   }

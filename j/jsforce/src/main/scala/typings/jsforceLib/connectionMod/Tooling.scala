@@ -13,7 +13,7 @@ class Tooling () extends BaseConnection {
   def executeAnonymous(body: java.lang.String): js.Promise[ExecuteAnonymousResult] = js.native
   def executeAnonymous(
     body: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* res */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* res */ js.Any, scala.Unit]
   ): js.Promise[ExecuteAnonymousResult] = js.native
 }
 

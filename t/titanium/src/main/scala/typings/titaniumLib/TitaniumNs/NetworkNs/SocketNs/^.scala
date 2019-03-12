@@ -51,8 +51,8 @@ object ^ extends js.Object {
   /**
   			 * Returns a new TCP socket object.
   			 */
-  def createTCP(): titaniumLib.TitaniumNs.NetworkNs.SocketNs.TCP = js.native
-  def createTCP(params: js.Any): titaniumLib.TitaniumNs.NetworkNs.SocketNs.TCP = js.native
+  def createTCP(): TCP = js.native
+  def createTCP(params: js.Any): TCP = js.native
   /**
   			 * Fires a synthesized event to any registered listeners.
   			 */

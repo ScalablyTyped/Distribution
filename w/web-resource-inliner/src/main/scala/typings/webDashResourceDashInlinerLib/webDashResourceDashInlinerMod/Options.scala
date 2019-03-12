@@ -131,15 +131,12 @@ object Options {
     fileContent: java.lang.String,
     images: scala.Boolean | scala.Double = null,
     inlineAttribute: java.lang.String = null,
-    linkTransform: js.Function2[/* content */ java.lang.String, /* done */ Callback, _] = null,
+    linkTransform: (/* content */ java.lang.String, /* done */ Callback) => _ = null,
     links: scala.Boolean | scala.Double = null,
     rebaseRelativeTo: java.lang.String = null,
     relativeTo: java.lang.String = null,
-    requestTransform: js.Function1[
-      /* requestOptions */ requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions, 
-      requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions
-    ] = null,
-    scriptTransform: js.Function2[/* content */ java.lang.String, /* done */ Callback, _] = null,
+    requestTransform: /* requestOptions */ requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions => requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions = null,
+    scriptTransform: (/* content */ java.lang.String, /* done */ Callback) => _ = null,
     scripts: scala.Boolean | scala.Double = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined,
     svgs: scala.Boolean | scala.Double = null
@@ -147,12 +144,12 @@ object Options {
     val __obj = js.Dynamic.literal(fileContent = fileContent)
     if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
     if (inlineAttribute != null) __obj.updateDynamic("inlineAttribute")(inlineAttribute)
-    if (linkTransform != null) __obj.updateDynamic("linkTransform")(linkTransform)
+    if (linkTransform != null) __obj.updateDynamic("linkTransform")(js.Any.fromFunction2(linkTransform))
     if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
     if (rebaseRelativeTo != null) __obj.updateDynamic("rebaseRelativeTo")(rebaseRelativeTo)
     if (relativeTo != null) __obj.updateDynamic("relativeTo")(relativeTo)
-    if (requestTransform != null) __obj.updateDynamic("requestTransform")(requestTransform)
-    if (scriptTransform != null) __obj.updateDynamic("scriptTransform")(scriptTransform)
+    if (requestTransform != null) __obj.updateDynamic("requestTransform")(js.Any.fromFunction1(requestTransform))
+    if (scriptTransform != null) __obj.updateDynamic("scriptTransform")(js.Any.fromFunction2(scriptTransform))
     if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
     if (svgs != null) __obj.updateDynamic("svgs")(svgs.asInstanceOf[js.Any])

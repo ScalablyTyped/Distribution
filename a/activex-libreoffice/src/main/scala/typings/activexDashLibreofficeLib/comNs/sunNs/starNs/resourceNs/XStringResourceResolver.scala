@@ -33,12 +33,12 @@ trait XStringResourceResolver
     * Returns a sequence of all supported locales
     * @returns a sequence of all supported locales
     */
-  val Locales: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+  val Locales: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
   /**
     * Returns a sequence of all valid Resource IDs for the current locale
     * @returns a sequence of all valid Resource IDs
     */
-  val ResourceIDs: activexDashInteropLib.SafeArray[java.lang.String]
+  val ResourceIDs: stdLib.SafeArray[java.lang.String]
   /**
     * Returns the current locale specified in the accessed resource.
     *
@@ -55,12 +55,12 @@ trait XStringResourceResolver
     * Returns a sequence of all supported locales
     * @returns a sequence of all supported locales
     */
-  def getLocales(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+  def getLocales(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
   /**
     * Returns a sequence of all valid Resource IDs for the current locale
     * @returns a sequence of all valid Resource IDs
     */
-  def getResourceIDs(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getResourceIDs(): stdLib.SafeArray[java.lang.String]
   /**
     * Returns a sequence of all valid Resource IDs for a specific locale
     *
@@ -68,7 +68,7 @@ trait XStringResourceResolver
     * @param locale The locale the ResourceIDs should be returned for. The locale has to match exactly with one of the locales provided by {@link getLocales()
     * @returns a sequence of all valid Resource IDs
     */
-  def getResourceIDsForLocale(locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): activexDashInteropLib.SafeArray[java.lang.String]
+  def getResourceIDsForLocale(locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): stdLib.SafeArray[java.lang.String]
   /**
     * Checks if the resource contains an entry for the given ResourceID and current locale.
     * @param ResourceID ID to specify the string inside the resource.
@@ -109,37 +109,24 @@ object XStringResourceResolver {
   def apply(
     CurrentLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
     DefaultLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
-    Locales: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
-    ResourceIDs: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    addModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
-    getCurrentLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
-    getDefaultLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
-    getLocales: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
-    ],
-    getResourceIDs: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getResourceIDsForLocale: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashInteropLib.SafeArray[java.lang.String]
-    ],
-    hasEntryForId: js.Function1[java.lang.String, scala.Boolean],
-    hasEntryForIdAndLocale: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Boolean
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
-    resolveString: js.Function1[java.lang.String, java.lang.String],
-    resolveStringForLocale: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String
-    ]
+    Locales: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    ResourceIDs: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    addModifyListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener => scala.Unit,
+    getCurrentLocale: () => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    getDefaultLocale: () => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    getLocales: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getResourceIDs: () => stdLib.SafeArray[java.lang.String],
+    getResourceIDsForLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => stdLib.SafeArray[java.lang.String],
+    hasEntryForId: java.lang.String => scala.Boolean,
+    hasEntryForIdAndLocale: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeModifyListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener => scala.Unit,
+    resolveString: java.lang.String => java.lang.String,
+    resolveStringForLocale: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => java.lang.String
   ): XStringResourceResolver = {
-    val __obj = js.Dynamic.literal(CurrentLocale = CurrentLocale, DefaultLocale = DefaultLocale, Locales = Locales, ResourceIDs = ResourceIDs, acquire = acquire, addModifyListener = addModifyListener, getCurrentLocale = getCurrentLocale, getDefaultLocale = getDefaultLocale, getLocales = getLocales, getResourceIDs = getResourceIDs, getResourceIDsForLocale = getResourceIDsForLocale, hasEntryForId = hasEntryForId, hasEntryForIdAndLocale = hasEntryForIdAndLocale, queryInterface = queryInterface, release = release, removeModifyListener = removeModifyListener, resolveString = resolveString, resolveStringForLocale = resolveStringForLocale)
+    val __obj = js.Dynamic.literal(CurrentLocale = CurrentLocale, DefaultLocale = DefaultLocale, Locales = Locales, ResourceIDs = ResourceIDs, acquire = js.Any.fromFunction0(acquire), addModifyListener = js.Any.fromFunction1(addModifyListener), getCurrentLocale = js.Any.fromFunction0(getCurrentLocale), getDefaultLocale = js.Any.fromFunction0(getDefaultLocale), getLocales = js.Any.fromFunction0(getLocales), getResourceIDs = js.Any.fromFunction0(getResourceIDs), getResourceIDsForLocale = js.Any.fromFunction1(getResourceIDsForLocale), hasEntryForId = js.Any.fromFunction1(hasEntryForId), hasEntryForIdAndLocale = js.Any.fromFunction2(hasEntryForIdAndLocale), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeModifyListener = js.Any.fromFunction1(removeModifyListener), resolveString = js.Any.fromFunction1(resolveString), resolveStringForLocale = js.Any.fromFunction2(resolveStringForLocale))
   
     __obj.asInstanceOf[XStringResourceResolver]
   }

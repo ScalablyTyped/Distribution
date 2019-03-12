@@ -27,15 +27,15 @@ trait Anon_Id extends js.Object {
 object Anon_Id {
   @scala.inline
   def apply(
-    onclick: js.Function1[/* id */ js.Any, scala.Unit] = null,
-    onmouseout: js.Function1[/* id */ js.Any, scala.Unit] = null,
-    onmouseover: js.Function1[/* id */ js.Any, scala.Unit] = null,
+    onclick: /* id */ js.Any => scala.Unit = null,
+    onmouseout: /* id */ js.Any => scala.Unit = null,
+    onmouseover: /* id */ js.Any => scala.Unit = null,
     tile: Anon_Height = null
   ): Anon_Id = {
     val __obj = js.Dynamic.literal()
-    if (onclick != null) __obj.updateDynamic("onclick")(onclick)
-    if (onmouseout != null) __obj.updateDynamic("onmouseout")(onmouseout)
-    if (onmouseover != null) __obj.updateDynamic("onmouseover")(onmouseover)
+    if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction1(onclick))
+    if (onmouseout != null) __obj.updateDynamic("onmouseout")(js.Any.fromFunction1(onmouseout))
+    if (onmouseover != null) __obj.updateDynamic("onmouseover")(js.Any.fromFunction1(onmouseover))
     if (tile != null) __obj.updateDynamic("tile")(tile)
     __obj.asInstanceOf[Anon_Id]
   }

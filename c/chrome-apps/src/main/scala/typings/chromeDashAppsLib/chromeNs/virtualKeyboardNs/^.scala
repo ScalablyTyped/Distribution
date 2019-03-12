@@ -13,13 +13,10 @@ object ^ extends js.Object {
     * @param restrictions the preferences to enabled/disabled virtual keyboard features.
     * @param [callback] Invoked with the values which were updated.
     */
-  def restrictFeatures(restrictions: chromeDashAppsLib.chromeNs.virtualKeyboardNs.FeatureRestrictions): scala.Unit = js.native
+  def restrictFeatures(restrictions: FeatureRestrictions): scala.Unit = js.native
   def restrictFeatures(
-    restrictions: chromeDashAppsLib.chromeNs.virtualKeyboardNs.FeatureRestrictions,
-    callback: js.Function1[
-      /* update */ chromeDashAppsLib.chromeNs.virtualKeyboardNs.FeatureRestrictions, 
-      scala.Unit
-    ]
+    restrictions: FeatureRestrictions,
+    callback: js.Function1[/* update */ FeatureRestrictions, scala.Unit]
   ): scala.Unit = js.native
 }
 

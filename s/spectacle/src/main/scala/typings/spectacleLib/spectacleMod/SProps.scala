@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SProps extends BaseProps {
-  var `type`: js.UndefOr[sType | coreDashJsLib.Array[sType]] = js.undefined
+  var `type`: js.UndefOr[sType | js.Array[sType]] = js.undefined
 }
 
 object SProps {
@@ -26,7 +26,7 @@ object SProps {
     textColor: java.lang.String = null,
     textFont: java.lang.String = null,
     textSize: java.lang.String = null,
-    `type`: sType | coreDashJsLib.Array[sType] = null
+    `type`: sType | js.Array[sType] = null
   ): SProps = {
     val __obj = js.Dynamic.literal()
     if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor)

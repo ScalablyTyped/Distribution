@@ -9,7 +9,7 @@ trait ContinuousBackupsDescription extends js.Object {
   /**
     *  ContinuousBackupsStatus can be one of the following states: ENABLED, DISABLED
     */
-  var ContinuousBackupsStatus: ContinuousBackupsStatus
+  var ContinuousBackupsStatus: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.ContinuousBackupsStatus
   /**
     * The description of the point in time recovery settings applied to the table.
     */

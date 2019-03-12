@@ -72,14 +72,14 @@ object ^ extends js.Object {
   /**
   		 * Creates and returns an instance of <Titanium.Contacts.Group>.
   		 */
-  def createGroup(): titaniumLib.TitaniumNs.ContactsNs.Group = js.native
-  def createGroup(parameters: js.Any): titaniumLib.TitaniumNs.ContactsNs.Group = js.native
+  def createGroup(): Group = js.native
+  def createGroup(parameters: js.Any): Group = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Contacts.Person>, and commits all pending
   		 * changes to the underlying contacts database.
   		 */
-  def createPerson(): titaniumLib.TitaniumNs.ContactsNs.Person = js.native
-  def createPerson(parameters: js.Any): titaniumLib.TitaniumNs.ContactsNs.Person = js.native
+  def createPerson(): Person = js.native
+  def createPerson(parameters: js.Any): Person = js.native
   /**
   		 * Fires a synthesized event to any registered listeners.
   		 */
@@ -87,11 +87,11 @@ object ^ extends js.Object {
   /**
   		 * Gets all groups.
   		 */
-  def getAllGroups(): js.Array[titaniumLib.TitaniumNs.ContactsNs.Group] = js.native
+  def getAllGroups(): js.Array[Group] = js.native
   /**
   		 * Gets all people, unless a limit is specified.
   		 */
-  def getAllPeople(limit: scala.Double): js.Array[titaniumLib.TitaniumNs.ContactsNs.Person] = js.native
+  def getAllPeople(limit: scala.Double): js.Array[Person] = js.native
   /**
   		 * Gets the value of the <Titanium.Contacts.apiName> property.
   		 */
@@ -107,11 +107,11 @@ object ^ extends js.Object {
   /**
   		 * Gets the group with the specified identifier. Deprecated for >= iOS9. Use <Titanium.Contacts.getGroupByIdentifier> instead.
   		 */
-  def getGroupByID(id: scala.Double): titaniumLib.TitaniumNs.ContactsNs.Group = js.native
+  def getGroupByID(id: scala.Double): Group = js.native
   /**
   		 * Gets the group with the specified identifier.
   		 */
-  def getGroupByIdentifier(id: java.lang.String): titaniumLib.TitaniumNs.ContactsNs.Group = js.native
+  def getGroupByIdentifier(id: java.lang.String): Group = js.native
   /**
   		 * Gets the value of the <Titanium.Contacts.lifecycleContainer> property.
   		 */
@@ -120,15 +120,15 @@ object ^ extends js.Object {
   		 * Gets people with a `firstName`, `middleName` or `lastName` field, or a combination
   		 * of these fields, that match the specified name.
   		 */
-  def getPeopleWithName(name: java.lang.String): js.Array[titaniumLib.TitaniumNs.ContactsNs.Person] = js.native
+  def getPeopleWithName(name: java.lang.String): js.Array[Person] = js.native
   /**
   		 * Gets the person with the specified identifier. Deprecated for >= iOS9. Use <Titanium.Contacts.getPersonByIdentifier> instead.
   		 */
-  def getPersonByID(id: scala.Double): titaniumLib.TitaniumNs.ContactsNs.Person = js.native
+  def getPersonByID(id: scala.Double): Person = js.native
   /**
   		 * Gets the person with the specified identifier.
   		 */
-  def getPersonByIdentifier(id: scala.Double): titaniumLib.TitaniumNs.ContactsNs.Person = js.native
+  def getPersonByIdentifier(id: scala.Double): Person = js.native
   /**
   		 * Returns `true` if the app has contacts access.
   		 */
@@ -140,11 +140,11 @@ object ^ extends js.Object {
   /**
   		 * Removes a group from the address book.
   		 */
-  def removeGroup(group: titaniumLib.TitaniumNs.ContactsNs.Group): scala.Unit = js.native
+  def removeGroup(group: Group): scala.Unit = js.native
   /**
   		 * Removes a contact from the address book.
   		 */
-  def removePerson(person: titaniumLib.TitaniumNs.ContactsNs.Person): scala.Unit = js.native
+  def removePerson(person: Person): scala.Unit = js.native
   /**
   		 * If authorization is unknown, will bring up a dialog requesting permission.
   		 */
@@ -160,7 +160,7 @@ object ^ extends js.Object {
   /**
   		 * Commits all pending changes to the underlying contacts database.
   		 */
-  def save(contacts: js.Array[titaniumLib.TitaniumNs.ContactsNs.Person]): scala.Unit = js.native
+  def save(contacts: js.Array[Person]): scala.Unit = js.native
   /**
   		 * Sets the value of the <Titanium.Contacts.bubbleParent> property.
   		 */

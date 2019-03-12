@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "EventRange")
 @js.native
 class EventRange protected ()
-  extends fullcalendarLib.eventrangeMod.default {
+  extends fullcalendarLib.eventRangeMod.default {
   def this(unzonedRange: js.Any, eventDef: js.Any) = this()
   def this(unzonedRange: js.Any, eventDef: js.Any, eventInstance: js.Any) = this()
 }

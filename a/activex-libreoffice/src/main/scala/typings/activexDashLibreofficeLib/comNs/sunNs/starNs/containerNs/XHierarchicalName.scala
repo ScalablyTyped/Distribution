@@ -31,13 +31,13 @@ object XHierarchicalName {
   @scala.inline
   def apply(
     HierarchicalName: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    composeHierarchicalName: js.Function1[java.lang.String, java.lang.String],
-    getHierarchicalName: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    composeHierarchicalName: java.lang.String => java.lang.String,
+    getHierarchicalName: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XHierarchicalName = {
-    val __obj = js.Dynamic.literal(HierarchicalName = HierarchicalName, acquire = acquire, composeHierarchicalName = composeHierarchicalName, getHierarchicalName = getHierarchicalName, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(HierarchicalName = HierarchicalName, acquire = js.Any.fromFunction0(acquire), composeHierarchicalName = js.Any.fromFunction1(composeHierarchicalName), getHierarchicalName = js.Any.fromFunction0(getHierarchicalName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XHierarchicalName]
   }

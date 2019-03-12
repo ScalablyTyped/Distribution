@@ -25,8 +25,8 @@ object MobxApolloQueryOptions {
     fetchResults: js.UndefOr[scala.Boolean] = js.undefined,
     metadata: js.Any = null,
     notifyOnNetworkStatusChange: js.UndefOr[scala.Boolean] = js.undefined,
-    onError: js.Function1[/* error */ apolloDashClientLib.apolloDashClientMod.ApolloError, scala.Unit] = null,
-    onFetch: js.Function1[/* result */ T, scala.Unit] = null,
+    onError: /* error */ apolloDashClientLib.apolloDashClientMod.ApolloError => scala.Unit = null,
+    onFetch: /* result */ T => scala.Unit = null,
     pollInterval: scala.Int | scala.Double = null,
     variables: apolloDashClientLib.coreTypesMod.OperationVariables = null
   ): MobxApolloQueryOptions[T] = {
@@ -37,8 +37,8 @@ object MobxApolloQueryOptions {
     if (!js.isUndefined(fetchResults)) __obj.updateDynamic("fetchResults")(fetchResults)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (!js.isUndefined(notifyOnNetworkStatusChange)) __obj.updateDynamic("notifyOnNetworkStatusChange")(notifyOnNetworkStatusChange)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onFetch != null) __obj.updateDynamic("onFetch")(onFetch)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onFetch != null) __obj.updateDynamic("onFetch")(js.Any.fromFunction1(onFetch))
     if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables)
     __obj.asInstanceOf[MobxApolloQueryOptions[T]]

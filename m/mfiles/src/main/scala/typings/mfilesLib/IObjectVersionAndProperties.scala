@@ -16,13 +16,13 @@ trait IObjectVersionAndProperties extends js.Object {
 object IObjectVersionAndProperties {
   @scala.inline
   def apply(
-    Clone: js.Function0[IObjectVersionAndProperties],
+    Clone: () => IObjectVersionAndProperties,
     ObjVer: IObjVer,
     Properties: IPropertyValues,
     Vault: IVault,
     VersionData: IObjectVersion
   ): IObjectVersionAndProperties = {
-    val __obj = js.Dynamic.literal(Clone = Clone, ObjVer = ObjVer, Properties = Properties, Vault = Vault, VersionData = VersionData)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), ObjVer = ObjVer, Properties = Properties, Vault = Vault, VersionData = VersionData)
   
     __obj.asInstanceOf[IObjectVersionAndProperties]
   }

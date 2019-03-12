@@ -17,20 +17,14 @@ trait IPasswordVault extends js.Object {
 object IPasswordVault {
   @scala.inline
   def apply(
-    add: js.Function1[PasswordCredential, scala.Unit],
-    findAllByResource: js.Function1[
-      java.lang.String, 
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[PasswordCredential]
-    ],
-    findAllByUserName: js.Function1[
-      java.lang.String, 
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[PasswordCredential]
-    ],
-    remove: js.Function1[PasswordCredential, scala.Unit],
-    retrieve: js.Function2[java.lang.String, java.lang.String, PasswordCredential],
-    retrieveAll: js.Function0[winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[PasswordCredential]]
+    add: PasswordCredential => scala.Unit,
+    findAllByResource: java.lang.String => winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[PasswordCredential],
+    findAllByUserName: java.lang.String => winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[PasswordCredential],
+    remove: PasswordCredential => scala.Unit,
+    retrieve: (java.lang.String, java.lang.String) => PasswordCredential,
+    retrieveAll: () => winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[PasswordCredential]
   ): IPasswordVault = {
-    val __obj = js.Dynamic.literal(add = add, findAllByResource = findAllByResource, findAllByUserName = findAllByUserName, remove = remove, retrieve = retrieve, retrieveAll = retrieveAll)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), findAllByResource = js.Any.fromFunction1(findAllByResource), findAllByUserName = js.Any.fromFunction1(findAllByUserName), remove = js.Any.fromFunction1(remove), retrieve = js.Any.fromFunction2(retrieve), retrieveAll = js.Any.fromFunction0(retrieveAll))
   
     __obj.asInstanceOf[IPasswordVault]
   }

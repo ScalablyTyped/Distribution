@@ -6,20 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Command /////////////////////////////////////////////
+@js.native
 trait KoliteCommand extends js.Object {
-  var canExecute: knockoutLib.KnockoutComputed[scala.Boolean]
-  def execute(args: js.Any*): js.Any
-}
-
-object KoliteCommand {
-  @scala.inline
-  def apply(
-    canExecute: knockoutLib.KnockoutComputed[scala.Boolean],
-    execute: js.Function1[/* repeated */ js.Any, js.Any]
-  ): KoliteCommand = {
-    val __obj = js.Dynamic.literal(canExecute = canExecute, execute = execute)
-  
-    __obj.asInstanceOf[KoliteCommand]
-  }
+  @JSName("canExecute")
+  var canExecute_Original: knockoutLib.KnockoutComputed[scala.Boolean] = js.native
+  def canExecute(): scala.Boolean = js.native
+  def canExecute(value: scala.Boolean): scala.Unit = js.native
+  def execute(args: js.Any*): js.Any = js.native
 }
 

@@ -195,21 +195,12 @@ object _Impl {
     minCharacters: scala.Double,
     name: java.lang.String,
     namespace: java.lang.String,
-    onResults: js.Function2[semanticDashUiDashSearchLib.JQuery, js.Any, scala.Unit],
-    onResultsAdd: js.Function2[
-      semanticDashUiDashSearchLib.JQuery, 
-      java.lang.String, 
-      semanticDashUiDashSearchLib.semanticDashUiDashSearchLibNumbers.`false` | scala.Unit
-    ],
-    onResultsClose: js.Function1[semanticDashUiDashSearchLib.JQuery, scala.Unit],
-    onResultsOpen: js.Function1[semanticDashUiDashSearchLib.JQuery, scala.Unit],
-    onSearchQuery: js.Function2[semanticDashUiDashSearchLib.JQuery, java.lang.String, scala.Unit],
-    onSelect: js.Function3[
-      semanticDashUiDashSearchLib.JQuery, 
-      js.Any, 
-      js.Any, 
-      semanticDashUiDashSearchLib.semanticDashUiDashSearchLibNumbers.`false` | scala.Unit
-    ],
+    onResults: (semanticDashUiDashSearchLib.JQuery, js.Any) => scala.Unit,
+    onResultsAdd: (semanticDashUiDashSearchLib.JQuery, java.lang.String) => semanticDashUiDashSearchLib.semanticDashUiDashSearchLibNumbers.`false` | scala.Unit,
+    onResultsClose: semanticDashUiDashSearchLib.JQuery => scala.Unit,
+    onResultsOpen: semanticDashUiDashSearchLib.JQuery => scala.Unit,
+    onSearchQuery: (semanticDashUiDashSearchLib.JQuery, java.lang.String) => scala.Unit,
+    onSelect: (semanticDashUiDashSearchLib.JQuery, js.Any, js.Any) => semanticDashUiDashSearchLib.semanticDashUiDashSearchLibNumbers.`false` | scala.Unit,
     performance: scala.Boolean,
     regExp: semanticDashUiDashSearchLib.SemanticUINs.SearchNs.RegExpSettings,
     searchDelay: scala.Double,
@@ -225,7 +216,7 @@ object _Impl {
     `type`: java.lang.String,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(apiSettings = apiSettings.asInstanceOf[js.Any], cache = cache, className = className.asInstanceOf[js.Any], debug = debug, duration = duration, easing = easing, error = error.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], hideDelay = hideDelay, maxResults = maxResults, metadata = metadata.asInstanceOf[js.Any], minCharacters = minCharacters, name = name, namespace = namespace, onResults = onResults, onResultsAdd = onResultsAdd, onResultsClose = onResultsClose, onResultsOpen = onResultsOpen, onSearchQuery = onSearchQuery, onSelect = onSelect, performance = performance, regExp = regExp.asInstanceOf[js.Any], searchDelay = searchDelay, searchFields = searchFields, searchFullText = searchFullText, selectFirstResult = selectFirstResult, selector = selector.asInstanceOf[js.Any], showNoResults = showNoResults, silent = silent, source = source.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], transition = transition, verbose = verbose)
+    val __obj = js.Dynamic.literal(apiSettings = apiSettings.asInstanceOf[js.Any], cache = cache, className = className.asInstanceOf[js.Any], debug = debug, duration = duration, easing = easing, error = error.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], hideDelay = hideDelay, maxResults = maxResults, metadata = metadata.asInstanceOf[js.Any], minCharacters = minCharacters, name = name, namespace = namespace, onResults = js.Any.fromFunction2(onResults), onResultsAdd = js.Any.fromFunction2(onResultsAdd), onResultsClose = js.Any.fromFunction1(onResultsClose), onResultsOpen = js.Any.fromFunction1(onResultsOpen), onSearchQuery = js.Any.fromFunction2(onSearchQuery), onSelect = js.Any.fromFunction3(onSelect), performance = performance, regExp = regExp.asInstanceOf[js.Any], searchDelay = searchDelay, searchFields = searchFields, searchFullText = searchFullText, selectFirstResult = selectFirstResult, selector = selector.asInstanceOf[js.Any], showNoResults = showNoResults, silent = silent, source = source.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], transition = transition, verbose = verbose)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[_Impl]
   }

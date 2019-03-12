@@ -86,38 +86,35 @@ trait WorkspaceCenter extends js.Object {
 object WorkspaceCenter {
   @scala.inline
   def apply(
-    activateNextPane: js.Function0[scala.Unit],
-    activatePreviousPane: js.Function0[scala.Unit],
-    destroyActivePane: js.Function0[scala.Unit],
-    getActivePane: js.Function0[Pane],
-    getActivePaneItem: js.Function0[js.UndefOr[js.Object]],
-    getActiveTextEditor: js.Function0[js.UndefOr[TextEditor]],
-    getPaneItems: js.Function0[js.Array[js.Object]],
-    getPanes: js.Function0[js.Array[Pane]],
-    getTextEditors: js.Function0[js.Array[TextEditor]],
-    observeActivePane: js.Function1[js.Function1[/* pane */ Pane, scala.Unit], Disposable],
-    observeActivePaneItem: js.Function1[js.Function1[/* item */ js.Object, scala.Unit], Disposable],
-    observePaneItems: js.Function1[js.Function1[/* item */ js.Object, scala.Unit], Disposable],
-    observePanes: js.Function1[js.Function1[/* pane */ Pane, scala.Unit], Disposable],
-    observeTextEditors: js.Function1[js.Function1[/* editor */ TextEditor, scala.Unit], Disposable],
-    onDidAddPane: js.Function1[js.Function1[/* event */ atomLib.Anon_Pane, scala.Unit], Disposable],
-    onDidAddPaneItem: js.Function1[js.Function1[/* event */ PaneItemObservedEvent, scala.Unit], Disposable],
-    onDidAddTextEditor: js.Function1[js.Function1[/* event */ TextEditorObservedEvent, scala.Unit], Disposable],
-    onDidChangeActivePane: js.Function1[js.Function1[/* pane */ Pane, scala.Unit], Disposable],
-    onDidChangeActivePaneItem: js.Function1[js.Function1[/* item */ js.Object, scala.Unit], Disposable],
-    onDidDestroyPane: js.Function1[js.Function1[/* event */ atomLib.Anon_Pane, scala.Unit], Disposable],
-    onDidDestroyPaneItem: js.Function1[js.Function1[/* event */ PaneItemObservedEvent, scala.Unit], Disposable],
-    onDidStopChangingActivePaneItem: js.Function1[js.Function1[/* item */ js.Object, scala.Unit], Disposable],
-    onWillDestroyPane: js.Function1[js.Function1[/* event */ atomLib.Anon_Pane, scala.Unit], Disposable],
-    onWillDestroyPaneItem: js.Function1[
-      js.Function1[/* event */ PaneItemObservedEvent, scala.Unit | js.Promise[scala.Unit]], 
-      Disposable
-    ],
-    paneForItem: js.Function1[js.Object, js.UndefOr[Pane]],
-    paneForURI: js.Function1[java.lang.String, js.UndefOr[Pane]],
-    saveAll: js.Function0[scala.Unit]
+    activateNextPane: () => scala.Unit,
+    activatePreviousPane: () => scala.Unit,
+    destroyActivePane: () => scala.Unit,
+    getActivePane: () => Pane,
+    getActivePaneItem: () => js.UndefOr[js.Object],
+    getActiveTextEditor: () => js.UndefOr[TextEditor],
+    getPaneItems: () => js.Array[js.Object],
+    getPanes: () => js.Array[Pane],
+    getTextEditors: () => js.Array[TextEditor],
+    observeActivePane: js.Function1[/* pane */ Pane, scala.Unit] => Disposable,
+    observeActivePaneItem: js.Function1[/* item */ js.Object, scala.Unit] => Disposable,
+    observePaneItems: js.Function1[/* item */ js.Object, scala.Unit] => Disposable,
+    observePanes: js.Function1[/* pane */ Pane, scala.Unit] => Disposable,
+    observeTextEditors: js.Function1[/* editor */ TextEditor, scala.Unit] => Disposable,
+    onDidAddPane: js.Function1[/* event */ atomLib.Anon_Pane, scala.Unit] => Disposable,
+    onDidAddPaneItem: js.Function1[/* event */ PaneItemObservedEvent, scala.Unit] => Disposable,
+    onDidAddTextEditor: js.Function1[/* event */ TextEditorObservedEvent, scala.Unit] => Disposable,
+    onDidChangeActivePane: js.Function1[/* pane */ Pane, scala.Unit] => Disposable,
+    onDidChangeActivePaneItem: js.Function1[/* item */ js.Object, scala.Unit] => Disposable,
+    onDidDestroyPane: js.Function1[/* event */ atomLib.Anon_Pane, scala.Unit] => Disposable,
+    onDidDestroyPaneItem: js.Function1[/* event */ PaneItemObservedEvent, scala.Unit] => Disposable,
+    onDidStopChangingActivePaneItem: js.Function1[/* item */ js.Object, scala.Unit] => Disposable,
+    onWillDestroyPane: js.Function1[/* event */ atomLib.Anon_Pane, scala.Unit] => Disposable,
+    onWillDestroyPaneItem: js.Function1[/* event */ PaneItemObservedEvent, scala.Unit | js.Promise[scala.Unit]] => Disposable,
+    paneForItem: js.Object => js.UndefOr[Pane],
+    paneForURI: java.lang.String => js.UndefOr[Pane],
+    saveAll: () => scala.Unit
   ): WorkspaceCenter = {
-    val __obj = js.Dynamic.literal(activateNextPane = activateNextPane, activatePreviousPane = activatePreviousPane, destroyActivePane = destroyActivePane, getActivePane = getActivePane, getActivePaneItem = getActivePaneItem, getActiveTextEditor = getActiveTextEditor, getPaneItems = getPaneItems, getPanes = getPanes, getTextEditors = getTextEditors, observeActivePane = observeActivePane, observeActivePaneItem = observeActivePaneItem, observePaneItems = observePaneItems, observePanes = observePanes, observeTextEditors = observeTextEditors, onDidAddPane = onDidAddPane, onDidAddPaneItem = onDidAddPaneItem, onDidAddTextEditor = onDidAddTextEditor, onDidChangeActivePane = onDidChangeActivePane, onDidChangeActivePaneItem = onDidChangeActivePaneItem, onDidDestroyPane = onDidDestroyPane, onDidDestroyPaneItem = onDidDestroyPaneItem, onDidStopChangingActivePaneItem = onDidStopChangingActivePaneItem, onWillDestroyPane = onWillDestroyPane, onWillDestroyPaneItem = onWillDestroyPaneItem, paneForItem = paneForItem, paneForURI = paneForURI, saveAll = saveAll)
+    val __obj = js.Dynamic.literal(activateNextPane = js.Any.fromFunction0(activateNextPane), activatePreviousPane = js.Any.fromFunction0(activatePreviousPane), destroyActivePane = js.Any.fromFunction0(destroyActivePane), getActivePane = js.Any.fromFunction0(getActivePane), getActivePaneItem = js.Any.fromFunction0(getActivePaneItem), getActiveTextEditor = js.Any.fromFunction0(getActiveTextEditor), getPaneItems = js.Any.fromFunction0(getPaneItems), getPanes = js.Any.fromFunction0(getPanes), getTextEditors = js.Any.fromFunction0(getTextEditors), observeActivePane = js.Any.fromFunction1(observeActivePane), observeActivePaneItem = js.Any.fromFunction1(observeActivePaneItem), observePaneItems = js.Any.fromFunction1(observePaneItems), observePanes = js.Any.fromFunction1(observePanes), observeTextEditors = js.Any.fromFunction1(observeTextEditors), onDidAddPane = js.Any.fromFunction1(onDidAddPane), onDidAddPaneItem = js.Any.fromFunction1(onDidAddPaneItem), onDidAddTextEditor = js.Any.fromFunction1(onDidAddTextEditor), onDidChangeActivePane = js.Any.fromFunction1(onDidChangeActivePane), onDidChangeActivePaneItem = js.Any.fromFunction1(onDidChangeActivePaneItem), onDidDestroyPane = js.Any.fromFunction1(onDidDestroyPane), onDidDestroyPaneItem = js.Any.fromFunction1(onDidDestroyPaneItem), onDidStopChangingActivePaneItem = js.Any.fromFunction1(onDidStopChangingActivePaneItem), onWillDestroyPane = js.Any.fromFunction1(onWillDestroyPane), onWillDestroyPaneItem = js.Any.fromFunction1(onWillDestroyPaneItem), paneForItem = js.Any.fromFunction1(paneForItem), paneForURI = js.Any.fromFunction1(paneForURI), saveAll = js.Any.fromFunction0(saveAll))
   
     __obj.asInstanceOf[WorkspaceCenter]
   }

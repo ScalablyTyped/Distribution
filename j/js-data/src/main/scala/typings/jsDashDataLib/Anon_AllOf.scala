@@ -32,30 +32,30 @@ trait Anon_AllOf extends js.Object {
 object Anon_AllOf {
   @scala.inline
   def apply(
-    allOf: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
-    anyOf: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
-    dependencies: js.Function3[js.Any, js.Any, js.Any, scala.Unit],
-    enum: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
-    items: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
-    maxItems: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
-    maxLength: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
-    maxProperties: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
-    maximum: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
-    minItems: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
-    minLength: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
-    minProperties: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
-    minimum: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
-    multipleOf: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
-    not: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
-    oneOf: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
-    pattern: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
-    properties: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
-    required: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
-    `type`: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
-    uniqueItems: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError]
+    allOf: (js.Any, js.Any, js.Any) => js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    anyOf: (js.Any, js.Any, js.Any) => js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    dependencies: (js.Any, js.Any, js.Any) => scala.Unit,
+    enum: (js.Any, js.Any, js.Any) => jsDashDataLib.jsDashDataMod.SchemaValidationError,
+    items: (js.Any, js.Any, js.Any) => js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    maxItems: (js.Any, js.Any, js.Any) => jsDashDataLib.jsDashDataMod.SchemaValidationError,
+    maxLength: (js.Any, js.Any, js.Any) => jsDashDataLib.jsDashDataMod.SchemaValidationError,
+    maxProperties: (js.Any, js.Any, js.Any) => jsDashDataLib.jsDashDataMod.SchemaValidationError,
+    maximum: (js.Any, js.Any, js.Any) => jsDashDataLib.jsDashDataMod.SchemaValidationError,
+    minItems: (js.Any, js.Any, js.Any) => jsDashDataLib.jsDashDataMod.SchemaValidationError,
+    minLength: (js.Any, js.Any, js.Any) => jsDashDataLib.jsDashDataMod.SchemaValidationError,
+    minProperties: (js.Any, js.Any, js.Any) => jsDashDataLib.jsDashDataMod.SchemaValidationError,
+    minimum: (js.Any, js.Any, js.Any) => jsDashDataLib.jsDashDataMod.SchemaValidationError,
+    multipleOf: (js.Any, js.Any, js.Any) => jsDashDataLib.jsDashDataMod.SchemaValidationError,
+    not: (js.Any, js.Any, js.Any) => jsDashDataLib.jsDashDataMod.SchemaValidationError,
+    oneOf: (js.Any, js.Any, js.Any) => js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    pattern: (js.Any, js.Any, js.Any) => jsDashDataLib.jsDashDataMod.SchemaValidationError,
+    properties: (js.Any, js.Any, js.Any) => js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    required: (js.Any, js.Any, js.Any) => js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    `type`: (js.Any, js.Any, js.Any) => jsDashDataLib.jsDashDataMod.SchemaValidationError,
+    uniqueItems: (js.Any, js.Any, js.Any) => jsDashDataLib.jsDashDataMod.SchemaValidationError
   ): Anon_AllOf = {
-    val __obj = js.Dynamic.literal(allOf = allOf, anyOf = anyOf, dependencies = dependencies, enum = enum, items = items, maxItems = maxItems, maxLength = maxLength, maxProperties = maxProperties, maximum = maximum, minItems = minItems, minLength = minLength, minProperties = minProperties, minimum = minimum, multipleOf = multipleOf, not = not, oneOf = oneOf, pattern = pattern, properties = properties, required = required, uniqueItems = uniqueItems)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(allOf = js.Any.fromFunction3(allOf), anyOf = js.Any.fromFunction3(anyOf), dependencies = js.Any.fromFunction3(dependencies), enum = js.Any.fromFunction3(enum), items = js.Any.fromFunction3(items), maxItems = js.Any.fromFunction3(maxItems), maxLength = js.Any.fromFunction3(maxLength), maxProperties = js.Any.fromFunction3(maxProperties), maximum = js.Any.fromFunction3(maximum), minItems = js.Any.fromFunction3(minItems), minLength = js.Any.fromFunction3(minLength), minProperties = js.Any.fromFunction3(minProperties), minimum = js.Any.fromFunction3(minimum), multipleOf = js.Any.fromFunction3(multipleOf), not = js.Any.fromFunction3(not), oneOf = js.Any.fromFunction3(oneOf), pattern = js.Any.fromFunction3(pattern), properties = js.Any.fromFunction3(properties), required = js.Any.fromFunction3(required), uniqueItems = js.Any.fromFunction3(uniqueItems))
+    __obj.updateDynamic("type")(js.Any.fromFunction3(`type`))
     __obj.asInstanceOf[Anon_AllOf]
   }
 }

@@ -14,6 +14,6 @@ class Button ()
 @JSImport("antd/lib/radio", "Button")
 @js.native
 object Button extends js.Object {
-  var contextTypes: antdLib.Anon_RadioGroup = js.native
+  var contextTypes: antdLib.Anon_ComponentNameLocation = js.native
 }
 

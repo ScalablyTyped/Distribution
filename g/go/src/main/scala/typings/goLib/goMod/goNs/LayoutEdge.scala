@@ -31,15 +31,15 @@ trait LayoutEdge extends js.Object {
 object LayoutEdge {
   @scala.inline
   def apply(
-    commit: js.Function0[scala.Unit],
+    commit: () => scala.Unit,
     data: js.Any,
     fromVertex: LayoutVertex,
-    getOtherVertex: js.Function1[LayoutVertex, scala.Unit],
+    getOtherVertex: LayoutVertex => scala.Unit,
     link: Link,
     network: LayoutNetwork,
     toVertex: LayoutVertex
   ): LayoutEdge = {
-    val __obj = js.Dynamic.literal(commit = commit, data = data, fromVertex = fromVertex, getOtherVertex = getOtherVertex, link = link, network = network, toVertex = toVertex)
+    val __obj = js.Dynamic.literal(commit = js.Any.fromFunction0(commit), data = data, fromVertex = fromVertex, getOtherVertex = js.Any.fromFunction1(getOtherVertex), link = link, network = network, toVertex = toVertex)
   
     __obj.asInstanceOf[LayoutEdge]
   }

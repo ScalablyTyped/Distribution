@@ -19,7 +19,7 @@ object RequestOptions {
   @scala.inline
   def apply(
     backgroundColor: java.lang.String = null,
-    oncancel: js.Function0[scala.Unit] = null,
+    oncancel: () => scala.Unit = null,
     privacyPolicy: java.lang.String = null,
     returnTo: java.lang.String = null,
     siteLogo: java.lang.String = null,
@@ -28,7 +28,7 @@ object RequestOptions {
   ): RequestOptions = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (oncancel != null) __obj.updateDynamic("oncancel")(oncancel)
+    if (oncancel != null) __obj.updateDynamic("oncancel")(js.Any.fromFunction0(oncancel))
     if (privacyPolicy != null) __obj.updateDynamic("privacyPolicy")(privacyPolicy)
     if (returnTo != null) __obj.updateDynamic("returnTo")(returnTo)
     if (siteLogo != null) __obj.updateDynamic("siteLogo")(siteLogo)

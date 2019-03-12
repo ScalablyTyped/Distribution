@@ -291,7 +291,7 @@ object BadgeProps {
   @scala.inline
   def apply(
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLSpanElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLSpanElement] = null,
     color: reactDashFoundationLib.enumsMod.BadgeColors = null
   ): BadgeProps = {
     val __obj = js.Dynamic.literal()

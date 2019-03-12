@@ -61,22 +61,18 @@ object XDiagram {
     Floor: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
     Legend: XLegend,
     Wall: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
-    acquire: js.Function0[scala.Unit],
-    getDefaultColorScheme: js.Function0[XColorScheme],
-    getFloor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    getLegend: js.Function0[XLegend],
-    getWall: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setDefaultColorScheme: js.Function1[XColorScheme, scala.Unit],
-    setDiagramData: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    setLegend: js.Function1[XLegend, scala.Unit]
+    acquire: () => scala.Unit,
+    getDefaultColorScheme: () => XColorScheme,
+    getFloor: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    getLegend: () => XLegend,
+    getWall: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setDefaultColorScheme: XColorScheme => scala.Unit,
+    setDiagramData: (activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    setLegend: XLegend => scala.Unit
   ): XDiagram = {
-    val __obj = js.Dynamic.literal(DefaultColorScheme = DefaultColorScheme, Floor = Floor, Legend = Legend, Wall = Wall, acquire = acquire, getDefaultColorScheme = getDefaultColorScheme, getFloor = getFloor, getLegend = getLegend, getWall = getWall, queryInterface = queryInterface, release = release, setDefaultColorScheme = setDefaultColorScheme, setDiagramData = setDiagramData, setLegend = setLegend)
+    val __obj = js.Dynamic.literal(DefaultColorScheme = DefaultColorScheme, Floor = Floor, Legend = Legend, Wall = Wall, acquire = js.Any.fromFunction0(acquire), getDefaultColorScheme = js.Any.fromFunction0(getDefaultColorScheme), getFloor = js.Any.fromFunction0(getFloor), getLegend = js.Any.fromFunction0(getLegend), getWall = js.Any.fromFunction0(getWall), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDefaultColorScheme = js.Any.fromFunction1(setDefaultColorScheme), setDiagramData = js.Any.fromFunction2(setDiagramData), setLegend = js.Any.fromFunction1(setLegend))
   
     __obj.asInstanceOf[XDiagram]
   }

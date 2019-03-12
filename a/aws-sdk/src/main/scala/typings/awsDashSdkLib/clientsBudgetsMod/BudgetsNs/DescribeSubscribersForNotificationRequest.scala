@@ -9,11 +9,11 @@ trait DescribeSubscribersForNotificationRequest extends js.Object {
   /**
     * The accountId that is associated with the budget whose subscribers you want descriptions of.
     */
-  var AccountId: AccountId
+  var AccountId: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.AccountId
   /**
     * The name of the budget whose subscribers you want descriptions of.
     */
-  var BudgetName: BudgetName
+  var BudgetName: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.BudgetName
   /**
     * An optional integer that represents how many entries a paginated response contains. The maximum is 100.
     */
@@ -25,7 +25,7 @@ trait DescribeSubscribersForNotificationRequest extends js.Object {
   /**
     * The notification whose subscribers you want to list.
     */
-  var Notification: Notification
+  var Notification: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.Notification
 }
 
 object DescribeSubscribersForNotificationRequest {

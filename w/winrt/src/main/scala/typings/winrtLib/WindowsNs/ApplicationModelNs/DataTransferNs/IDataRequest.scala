@@ -17,10 +17,10 @@ object IDataRequest {
   def apply(
     data: DataPackage,
     deadline: stdLib.Date,
-    failWithDisplayText: js.Function1[java.lang.String, scala.Unit],
-    getDeferral: js.Function0[DataRequestDeferral]
+    failWithDisplayText: java.lang.String => scala.Unit,
+    getDeferral: () => DataRequestDeferral
   ): IDataRequest = {
-    val __obj = js.Dynamic.literal(data = data, deadline = deadline, failWithDisplayText = failWithDisplayText, getDeferral = getDeferral)
+    val __obj = js.Dynamic.literal(data = data, deadline = deadline, failWithDisplayText = js.Any.fromFunction1(failWithDisplayText), getDeferral = js.Any.fromFunction0(getDeferral))
   
     __obj.asInstanceOf[IDataRequest]
   }

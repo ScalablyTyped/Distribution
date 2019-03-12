@@ -54,8 +54,8 @@ object ^ extends js.Object {
     * The raw require function. This expression isn’t parsed by the Parser for dependencies.
     */
   var __webpack_require__ : js.Any = js.native
-  var module: webpackDashEnvLib.NodeModule = js.native
+  var module: NodeModule = js.native
   var process: webpackDashEnvLib.NodeJSNs.Process = js.native
-  var require: webpackDashEnvLib.NodeRequire = js.native
+  var require: NodeRequire = js.native
 }
 

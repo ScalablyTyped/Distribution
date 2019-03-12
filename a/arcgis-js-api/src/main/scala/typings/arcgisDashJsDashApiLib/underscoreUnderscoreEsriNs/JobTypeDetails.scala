@@ -140,16 +140,16 @@ object JobTypeDetails {
     defaultPriority: java.lang.String,
     defaultStartDate: stdLib.Date,
     description: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     id: java.lang.String,
     jobNamingScheme: java.lang.String,
     jobVersionNamingScheme: java.lang.String,
     mxdNamingScheme: java.lang.String,
     name: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     state: java.lang.String
   ): JobTypeDetails = {
-    val __obj = js.Dynamic.literal(autoExecuteCreatedJobs = autoExecuteCreatedJobs, canDataWorkspaceChange = canDataWorkspaceChange, category = category, constructor = constructor, defaultAssignedTo = defaultAssignedTo, defaultAssignedType = defaultAssignedType, defaultDataWorkspaceId = defaultDataWorkspaceId, defaultDescription = defaultDescription, defaultDueDate = defaultDueDate, defaultJobDuration = defaultJobDuration, defaultParentVersionName = defaultParentVersionName, defaultPriority = defaultPriority, defaultStartDate = defaultStartDate, description = description, hasOwnProperty = hasOwnProperty, id = id, jobNamingScheme = jobNamingScheme, jobVersionNamingScheme = jobVersionNamingScheme, mxdNamingScheme = mxdNamingScheme, name = name, propertyIsEnumerable = propertyIsEnumerable, state = state)
+    val __obj = js.Dynamic.literal(autoExecuteCreatedJobs = autoExecuteCreatedJobs, canDataWorkspaceChange = canDataWorkspaceChange, category = category, constructor = constructor, defaultAssignedTo = defaultAssignedTo, defaultAssignedType = defaultAssignedType, defaultDataWorkspaceId = defaultDataWorkspaceId, defaultDescription = defaultDescription, defaultDueDate = defaultDueDate, defaultJobDuration = defaultJobDuration, defaultParentVersionName = defaultParentVersionName, defaultPriority = defaultPriority, defaultStartDate = defaultStartDate, description = description, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, jobNamingScheme = jobNamingScheme, jobVersionNamingScheme = jobVersionNamingScheme, mxdNamingScheme = mxdNamingScheme, name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), state = state)
   
     __obj.asInstanceOf[JobTypeDetails]
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.PropertyPages")
 @js.native
 class PropertyPages protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: scala.Double = js.native
   var `Outlook.PropertyPages_typekey`: PropertyPages = js.native

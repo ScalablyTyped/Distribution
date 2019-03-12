@@ -40,7 +40,7 @@ trait SCBroker
     event: scDashBrokerLib.scDashBrokerLibStrings.masterMessage,
     listener: js.Function2[
       /* data */ js.Any, 
-      /* respond */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* responseData */ js.Any, scala.Unit], 
+      /* respond */ js.Function2[/* err */ stdLib.Error | scala.Null, /* responseData */ js.Any, scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -49,7 +49,7 @@ trait SCBroker
     event: scDashBrokerLib.scDashBrokerLibStrings.message,
     listener: js.Function2[
       /* message */ js.Any, 
-      /* respond */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* responseData */ js.Any, scala.Unit], 
+      /* respond */ js.Function2[/* err */ stdLib.Error | scala.Null, /* responseData */ js.Any, scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -71,14 +71,14 @@ trait SCBroker
   @JSName("on")
   def on_warning(
     event: scDashBrokerLib.scDashBrokerLibStrings.warning,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   def publish(channel: java.lang.String, message: js.Any): scala.Unit = js.native
   def run(): scala.Unit = js.native
   def sendToMaster(data: js.Any): scala.Unit = js.native
   def sendToMaster(
     data: js.Any,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* responseData */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* responseData */ js.Any, scala.Unit]
   ): scala.Unit = js.native
 }
 

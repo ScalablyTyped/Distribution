@@ -17,14 +17,14 @@ trait MapType extends js.Object {
 object MapType {
   @scala.inline
   def apply(
-    getTile: js.Function3[scala.Double, scala.Double, scala.Double, stdLib.HTMLElement | Tile],
+    getTile: (scala.Double, scala.Double, scala.Double) => stdLib.HTMLElement | Tile,
     maxZoom: scala.Double,
     minZoom: scala.Double,
     name: java.lang.String,
     projection: Projection,
     tileSize: Size
   ): MapType = {
-    val __obj = js.Dynamic.literal(getTile = getTile, maxZoom = maxZoom, minZoom = minZoom, name = name, projection = projection, tileSize = tileSize)
+    val __obj = js.Dynamic.literal(getTile = js.Any.fromFunction3(getTile), maxZoom = maxZoom, minZoom = minZoom, name = name, projection = projection, tileSize = tileSize)
   
     __obj.asInstanceOf[MapType]
   }

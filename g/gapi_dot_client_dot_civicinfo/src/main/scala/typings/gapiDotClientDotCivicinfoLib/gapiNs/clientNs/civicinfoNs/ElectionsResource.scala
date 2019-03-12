@@ -15,16 +15,10 @@ trait ElectionsResource extends js.Object {
 object ElectionsResource {
   @scala.inline
   def apply(
-    electionQuery: js.Function1[
-      gapiDotClientDotCivicinfoLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ElectionsQueryResponse]
-    ],
-    voterInfoQuery: js.Function1[
-      gapiDotClientDotCivicinfoLib.Anon_Address, 
-      gapiDotClientLib.gapiNs.clientNs.Request[VoterInfoResponse]
-    ]
+    electionQuery: gapiDotClientDotCivicinfoLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[ElectionsQueryResponse],
+    voterInfoQuery: gapiDotClientDotCivicinfoLib.Anon_Address => gapiDotClientLib.gapiNs.clientNs.Request[VoterInfoResponse]
   ): ElectionsResource = {
-    val __obj = js.Dynamic.literal(electionQuery = electionQuery, voterInfoQuery = voterInfoQuery)
+    val __obj = js.Dynamic.literal(electionQuery = js.Any.fromFunction1(electionQuery), voterInfoQuery = js.Any.fromFunction1(voterInfoQuery))
   
     __obj.asInstanceOf[ElectionsResource]
   }

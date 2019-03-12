@@ -16,10 +16,10 @@ object NotifyReturn {
   @scala.inline
   def apply(
     $ele: jqueryLib.JQuery[stdLib.HTMLElement],
-    close: js.Function0[scala.Unit],
-    update: js.Function2[java.lang.String, js.Any, scala.Unit]
+    close: () => scala.Unit,
+    update: (java.lang.String, js.Any) => scala.Unit
   ): NotifyReturn = {
-    val __obj = js.Dynamic.literal($ele = $ele, close = close, update = update)
+    val __obj = js.Dynamic.literal($ele = $ele, close = js.Any.fromFunction0(close), update = js.Any.fromFunction2(update))
   
     __obj.asInstanceOf[NotifyReturn]
   }

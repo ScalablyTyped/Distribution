@@ -18,8 +18,8 @@ trait Response extends js.Object {
 
 object Response {
   @scala.inline
-  def apply(jwt: js.Function1[js.Any, jwtDashExpressLib.jwtDashExpressMod.JWT]): Response = {
-    val __obj = js.Dynamic.literal(jwt = jwt)
+  def apply(jwt: js.Any => jwtDashExpressLib.jwtDashExpressMod.JWT): Response = {
+    val __obj = js.Dynamic.literal(jwt = js.Any.fromFunction1(jwt))
   
     __obj.asInstanceOf[Response]
   }

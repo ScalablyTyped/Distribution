@@ -16,9 +16,9 @@ trait CommandOptions extends js.Object {
 
 object CommandOptions {
   @scala.inline
-  def apply(action: js.Function, canExecute: js.Function0[scala.Boolean] = null, context: js.Any = null): CommandOptions = {
+  def apply(action: js.Function, canExecute: () => scala.Boolean = null, context: js.Any = null): CommandOptions = {
     val __obj = js.Dynamic.literal(action = action)
-    if (canExecute != null) __obj.updateDynamic("canExecute")(canExecute)
+    if (canExecute != null) __obj.updateDynamic("canExecute")(js.Any.fromFunction0(canExecute))
     if (context != null) __obj.updateDynamic("context")(context)
     __obj.asInstanceOf[CommandOptions]
   }

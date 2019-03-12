@@ -45,10 +45,8 @@ trait histogram extends js.Object {
 
 object histogram {
   @scala.inline
-  def apply(
-    histogram: js.Function1[histogramHistogramParams, arcgisDashJsDashApiLib.IPromise[HistogramResult]]
-  ): histogram = {
-    val __obj = js.Dynamic.literal(histogram = histogram)
+  def apply(histogram: histogramHistogramParams => arcgisDashJsDashApiLib.IPromise[HistogramResult]): histogram = {
+    val __obj = js.Dynamic.literal(histogram = js.Any.fromFunction1(histogram))
   
     __obj.asInstanceOf[histogram]
   }

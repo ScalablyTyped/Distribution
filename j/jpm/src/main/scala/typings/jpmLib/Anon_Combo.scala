@@ -12,8 +12,8 @@ trait Anon_Combo extends js.Object {
 
 object Anon_Combo {
   @scala.inline
-  def apply(combo: java.lang.String, onPress: js.Function0[scala.Unit]): Anon_Combo = {
-    val __obj = js.Dynamic.literal(combo = combo, onPress = onPress)
+  def apply(combo: java.lang.String, onPress: () => scala.Unit): Anon_Combo = {
+    val __obj = js.Dynamic.literal(combo = combo, onPress = js.Any.fromFunction0(onPress))
   
     __obj.asInstanceOf[Anon_Combo]
   }

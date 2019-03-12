@@ -16,13 +16,13 @@ trait UndoRedoSnapshot extends js.Object {
 object UndoRedoSnapshot {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
-    restore: js.Function0[scala.Unit],
-    save: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit],
+    destroy: () => scala.Unit,
+    restore: () => scala.Unit,
+    save: (java.lang.String, scala.Double, scala.Double) => scala.Unit,
     sheet: Sheet,
     stack: Stack
   ): UndoRedoSnapshot = {
-    val __obj = js.Dynamic.literal(destroy = destroy, restore = restore, save = save, sheet = sheet, stack = stack)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), restore = js.Any.fromFunction0(restore), save = js.Any.fromFunction3(save), sheet = sheet, stack = stack)
   
     __obj.asInstanceOf[UndoRedoSnapshot]
   }

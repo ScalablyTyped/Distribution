@@ -31,13 +31,13 @@ object SearchViewModelSuggestResult {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     key: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     sourceIndex: scala.Double,
     text: java.lang.String
   ): SearchViewModelSuggestResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, key = key, propertyIsEnumerable = propertyIsEnumerable, sourceIndex = sourceIndex, text = text)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), key = key, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sourceIndex = sourceIndex, text = text)
   
     __obj.asInstanceOf[SearchViewModelSuggestResult]
   }

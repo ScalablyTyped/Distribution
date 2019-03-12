@@ -22,10 +22,10 @@ trait MapContext extends js.Object {
 object MapContext {
   @scala.inline
   def apply(
-    getCenterLocation: js.Function1[GetCenterLocationOptions, OpenLocationOptions],
-    moveToLocation: js.Function0[scala.Unit]
+    getCenterLocation: GetCenterLocationOptions => OpenLocationOptions,
+    moveToLocation: () => scala.Unit
   ): MapContext = {
-    val __obj = js.Dynamic.literal(getCenterLocation = getCenterLocation, moveToLocation = moveToLocation)
+    val __obj = js.Dynamic.literal(getCenterLocation = js.Any.fromFunction1(getCenterLocation), moveToLocation = js.Any.fromFunction0(moveToLocation))
   
     __obj.asInstanceOf[MapContext]
   }

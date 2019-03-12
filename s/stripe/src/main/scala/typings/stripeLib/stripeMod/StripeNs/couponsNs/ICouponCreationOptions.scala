@@ -37,6 +37,10 @@ trait ICouponCreationOptions
     */
   var max_redemptions: js.UndefOr[scala.Double] = js.undefined
   /**
+    * Name of the coupon displayed to customers on, for instance invoices, or receipts. By default the id is shown if name is not set.
+    */
+  var name: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * A positive integer between 1 and 100 that represents the discount the coupon will apply (required if amount_off is not passed)
     */
   var percent_off: js.UndefOr[scala.Double] = js.undefined
@@ -59,6 +63,7 @@ object ICouponCreationOptions {
     include: js.Array[java.lang.String] = null,
     max_redemptions: scala.Int | scala.Double = null,
     metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    name: java.lang.String = null,
     percent_off: scala.Int | scala.Double = null,
     redeem_by: scala.Int | scala.Double = null
   ): ICouponCreationOptions = {
@@ -71,6 +76,7 @@ object ICouponCreationOptions {
     if (include != null) __obj.updateDynamic("include")(include)
     if (max_redemptions != null) __obj.updateDynamic("max_redemptions")(max_redemptions.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (name != null) __obj.updateDynamic("name")(name)
     if (percent_off != null) __obj.updateDynamic("percent_off")(percent_off.asInstanceOf[js.Any])
     if (redeem_by != null) __obj.updateDynamic("redeem_by")(redeem_by.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICouponCreationOptions]

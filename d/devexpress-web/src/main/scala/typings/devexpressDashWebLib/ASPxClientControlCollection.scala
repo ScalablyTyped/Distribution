@@ -68,14 +68,14 @@ object ASPxClientControlCollection {
     CallbackError: ASPxClientEvent[ASPxClientGlobalCallbackErrorEventHandler[ASPxClientControlCollection]],
     ControlsInitialized: ASPxClientEvent[ASPxClientControlsInitializedEventHandler[ASPxClientControlCollection]],
     EndCallback: ASPxClientEvent[ASPxClientGlobalEndCallbackEventHandler[ASPxClientControlCollection]],
-    ForEachControl: js.Function1[ASPxClientControlAction, scala.Unit],
-    Get: js.Function1[js.Object, js.Object],
-    GetByName: js.Function1[java.lang.String, js.Object],
-    GetControlsByPredicate: js.Function1[ASPxClientControlPredicate, js.Array[js.Object]],
-    GetControlsByType: js.Function1[js.Object, js.Array[js.Object]],
+    ForEachControl: ASPxClientControlAction => scala.Unit,
+    Get: js.Object => js.Object,
+    GetByName: java.lang.String => js.Object,
+    GetControlsByPredicate: ASPxClientControlPredicate => js.Array[js.Object],
+    GetControlsByType: js.Object => js.Array[js.Object],
     ValidationCompleted: ASPxClientEvent[ASPxClientValidationCompletedEventHandler[ASPxClientControlCollection]]
   ): ASPxClientControlCollection = {
-    val __obj = js.Dynamic.literal(BeginCallback = BeginCallback, BrowserWindowResized = BrowserWindowResized, CallbackError = CallbackError, ControlsInitialized = ControlsInitialized, EndCallback = EndCallback, ForEachControl = ForEachControl, Get = Get, GetByName = GetByName, GetControlsByPredicate = GetControlsByPredicate, GetControlsByType = GetControlsByType, ValidationCompleted = ValidationCompleted)
+    val __obj = js.Dynamic.literal(BeginCallback = BeginCallback, BrowserWindowResized = BrowserWindowResized, CallbackError = CallbackError, ControlsInitialized = ControlsInitialized, EndCallback = EndCallback, ForEachControl = js.Any.fromFunction1(ForEachControl), Get = js.Any.fromFunction1(Get), GetByName = js.Any.fromFunction1(GetByName), GetControlsByPredicate = js.Any.fromFunction1(GetControlsByPredicate), GetControlsByType = js.Any.fromFunction1(GetControlsByType), ValidationCompleted = ValidationCompleted)
   
     __obj.asInstanceOf[ASPxClientControlCollection]
   }

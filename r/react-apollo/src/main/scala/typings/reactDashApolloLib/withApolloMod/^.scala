@@ -8,11 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-apollo/withApollo", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  def default[TProps, TResult](WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[WithApolloClient[TProps]]): reactLib.reactMod.ReactNs.ComponentClass[TProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
   def default[TProps, TResult](
-    WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[reactDashApolloLib.withApolloMod.WithApolloClient[TProps]]
-  ): reactLib.reactMod.ReactNs.ComponentClass[TProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  def default[TProps, TResult](
-    WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[reactDashApolloLib.withApolloMod.WithApolloClient[TProps]],
+    WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[WithApolloClient[TProps]],
     operationOptions: reactDashApolloLib.typesMod.OperationOption[
       TProps, 
       TResult, 

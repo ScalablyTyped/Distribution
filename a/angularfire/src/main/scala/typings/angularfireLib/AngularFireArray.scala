@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AngularFireArray
-  extends coreDashJsLib.Array[AngularFireSimpleObject] {
+  extends stdLib.Array[AngularFireSimpleObject] {
   /**
   	 * Create a new record with a unique ID and add it to the end of the array.
   	 * This should be used instead of Array.prototype.push, since those changes will not be
@@ -164,7 +164,7 @@ trait AngularFireArray
       /* prevChild */ java.lang.String, 
       scala.Unit
     ]
-  ): angularLib.angularMod.Global.Function = js.native
+  ): js.Function = js.native
   @JSName("$watch")
   def $watch(
     cb: js.Function3[
@@ -174,6 +174,6 @@ trait AngularFireArray
       scala.Unit
     ],
     context: js.Any
-  ): angularLib.angularMod.Global.Function = js.native
+  ): js.Function = js.native
 }
 

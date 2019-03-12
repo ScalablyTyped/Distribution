@@ -138,7 +138,7 @@ import scala.scalajs.js.annotation._
     * Grab bag of paragraph properties, used as a string-any map for interim interop purposes.
     * @since LibreOffice 4.2  This property is intentionally not handled by the ODF filter. Any member that should be handled there should be first moved out
     */
-  var ParaInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  var ParaInteropGrabBag: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /** determines if the first line should be indented automatically. */
   var ParaIsAutoFirstLineIndent: scala.Boolean
   /**
@@ -191,7 +191,7 @@ import scala.scalajs.js.annotation._
   /** contains the name of the current paragraph style. */
   var ParaStyleName: java.lang.String
   /** specifies the positions and kinds of the tab stops within this paragraph. */
-  var ParaTabStops: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.TabStop]
+  var ParaTabStops: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.TabStop]
   /**
     * determines the top margin of the paragraph in 100th mm.
     *

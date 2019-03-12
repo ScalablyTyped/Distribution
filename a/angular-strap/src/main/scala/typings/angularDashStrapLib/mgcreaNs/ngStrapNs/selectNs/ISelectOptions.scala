@@ -45,10 +45,10 @@ object ISelectOptions {
     maxLengthHtml: java.lang.String = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     noneText: java.lang.String = null,
-    onBeforeHide: js.Function1[/* select */ ISelect, scala.Unit] = null,
-    onBeforeShow: js.Function1[/* select */ ISelect, scala.Unit] = null,
-    onHide: js.Function1[/* select */ ISelect, scala.Unit] = null,
-    onShow: js.Function1[/* select */ ISelect, scala.Unit] = null,
+    onBeforeHide: /* select */ ISelect => scala.Unit = null,
+    onBeforeShow: /* select */ ISelect => scala.Unit = null,
+    onHide: /* select */ ISelect => scala.Unit = null,
+    onShow: /* select */ ISelect => scala.Unit = null,
     placeholder: java.lang.String = null,
     placement: java.lang.String = null,
     sort: js.UndefOr[scala.Boolean] = js.undefined,
@@ -69,10 +69,10 @@ object ISelectOptions {
     if (maxLengthHtml != null) __obj.updateDynamic("maxLengthHtml")(maxLengthHtml)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (noneText != null) __obj.updateDynamic("noneText")(noneText)
-    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(onBeforeHide)
-    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(onBeforeShow)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(js.Any.fromFunction1(onBeforeHide))
+    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(js.Any.fromFunction1(onBeforeShow))
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction1(onHide))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (placement != null) __obj.updateDynamic("placement")(placement)
     if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort)

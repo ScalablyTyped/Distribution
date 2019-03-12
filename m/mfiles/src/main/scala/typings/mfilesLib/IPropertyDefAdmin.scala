@@ -20,13 +20,13 @@ object IPropertyDefAdmin {
   def apply(
     AllowAutomaticPermissions: scala.Boolean,
     AutomaticValue: IAutomaticValue,
-    Clone: js.Function0[IPropertyDefAdmin],
+    Clone: () => IPropertyDefAdmin,
     NamedValueNamespaces: INamedValueNamespaces,
     PropertyDef: IPropertyDef,
     SemanticAliases: ISemanticAliases,
     Validation: IValidation
   ): IPropertyDefAdmin = {
-    val __obj = js.Dynamic.literal(AllowAutomaticPermissions = AllowAutomaticPermissions, AutomaticValue = AutomaticValue, Clone = Clone, NamedValueNamespaces = NamedValueNamespaces, PropertyDef = PropertyDef, SemanticAliases = SemanticAliases, Validation = Validation)
+    val __obj = js.Dynamic.literal(AllowAutomaticPermissions = AllowAutomaticPermissions, AutomaticValue = AutomaticValue, Clone = js.Any.fromFunction0(Clone), NamedValueNamespaces = NamedValueNamespaces, PropertyDef = PropertyDef, SemanticAliases = SemanticAliases, Validation = Validation)
   
     __obj.asInstanceOf[IPropertyDefAdmin]
   }

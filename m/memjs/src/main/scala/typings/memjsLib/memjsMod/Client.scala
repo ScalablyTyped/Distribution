@@ -40,7 +40,7 @@ class Client protected () extends js.Object {
     value: java.lang.String,
     options: memjsLib.Anon_Expires,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
@@ -51,7 +51,7 @@ class Client protected () extends js.Object {
     value: nodeLib.Buffer,
     options: memjsLib.Anon_Expires,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
@@ -73,7 +73,7 @@ class Client protected () extends js.Object {
     key: java.lang.String,
     value: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
@@ -83,7 +83,7 @@ class Client protected () extends js.Object {
     key: java.lang.String,
     value: nodeLib.Buffer,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
@@ -118,7 +118,7 @@ class Client protected () extends js.Object {
     amount: scala.Double,
     options: memjsLib.Anon_ExpiresInitial,
     callback: js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* success */ scala.Boolean | scala.Null, 
       /* value */ js.UndefOr[scala.Double | scala.Null], 
       scala.Unit
@@ -140,7 +140,7 @@ class Client protected () extends js.Object {
   def delete(
     key: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
@@ -160,7 +160,7 @@ class Client protected () extends js.Object {
   def flush(): js.Promise[stdLib.Record[java.lang.String, scala.Boolean]] = js.native
   def flush(
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* results */ stdLib.Record[java.lang.String, scala.Boolean], 
       scala.Unit
     ]
@@ -183,7 +183,7 @@ class Client protected () extends js.Object {
   def get(
     key: java.lang.String,
     callback: js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* value */ nodeLib.Buffer | scala.Null, 
       /* flags */ nodeLib.Buffer | scala.Null, 
       scala.Unit
@@ -213,7 +213,7 @@ class Client protected () extends js.Object {
     amount: scala.Double,
     options: memjsLib.Anon_ExpiresInitial,
     callback: js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* success */ scala.Boolean | scala.Null, 
       /* value */ js.UndefOr[scala.Double | scala.Null], 
       scala.Unit
@@ -239,13 +239,13 @@ class Client protected () extends js.Object {
     key: java.lang.String,
     request: nodeLib.Buffer,
     seq: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* repeated */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* repeated */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def perform(
     key: java.lang.String,
     request: nodeLib.Buffer,
     seq: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* repeated */ js.Any, scala.Unit],
+    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* repeated */ js.Any, scala.Unit],
     retries: scala.Double
   ): scala.Unit = js.native
   /**
@@ -265,7 +265,7 @@ class Client protected () extends js.Object {
     key: java.lang.String,
     value: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
@@ -275,7 +275,7 @@ class Client protected () extends js.Object {
     key: java.lang.String,
     value: nodeLib.Buffer,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
@@ -313,7 +313,7 @@ class Client protected () extends js.Object {
     value: java.lang.String,
     options: memjsLib.Anon_Expires,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
@@ -324,7 +324,7 @@ class Client protected () extends js.Object {
     value: nodeLib.Buffer,
     options: memjsLib.Anon_Expires,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
@@ -346,7 +346,7 @@ class Client protected () extends js.Object {
   def resetStats(): scala.Unit = js.native
   def resetStats(
     callback: js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* server */ java.lang.String, 
       /* stats */ (stdLib.Record[java.lang.String, java.lang.String]) | scala.Null, 
       scala.Unit
@@ -380,7 +380,7 @@ class Client protected () extends js.Object {
     value: java.lang.String,
     options: memjsLib.Anon_Expires,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
@@ -391,7 +391,7 @@ class Client protected () extends js.Object {
     value: nodeLib.Buffer,
     options: memjsLib.Anon_Expires,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
@@ -411,7 +411,7 @@ class Client protected () extends js.Object {
   def stats(): scala.Unit = js.native
   def stats(
     callback: js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* server */ java.lang.String, 
       /* stats */ (stdLib.Record[java.lang.String, java.lang.String]) | scala.Null, 
       scala.Unit
@@ -434,7 +434,7 @@ class Client protected () extends js.Object {
   def statsWithKey(
     key: java.lang.String,
     callback: js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* server */ java.lang.String, 
       /* stats */ (stdLib.Record[java.lang.String, java.lang.String]) | scala.Null, 
       scala.Unit
@@ -457,7 +457,7 @@ class Client protected () extends js.Object {
     key: java.lang.String,
     expires: scala.Double,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]

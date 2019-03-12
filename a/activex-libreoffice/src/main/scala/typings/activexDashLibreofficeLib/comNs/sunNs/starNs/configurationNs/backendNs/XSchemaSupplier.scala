@@ -24,12 +24,12 @@ trait XSchemaSupplier
 object XSchemaSupplier {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getComponentSchema: js.Function1[java.lang.String, XSchema],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getComponentSchema: java.lang.String => XSchema,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSchemaSupplier = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getComponentSchema = getComponentSchema, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getComponentSchema = js.Any.fromFunction1(getComponentSchema), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSchemaSupplier]
   }

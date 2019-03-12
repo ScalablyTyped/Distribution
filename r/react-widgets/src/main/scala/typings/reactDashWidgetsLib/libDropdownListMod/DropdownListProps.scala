@@ -113,11 +113,11 @@ trait DropdownListProps
   /**
     * The native onKeyDown event, called preventDefault will prevent any custom behavior, included keyboard shortcuts.
     */
-  var onKeyDown: js.UndefOr[js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit]] = js.undefined
+  var onKeyDown: js.UndefOr[js.Function1[/* event */ stdLib.KeyboardEvent, scala.Unit]] = js.undefined
   /**
     * The native onKeyPress event, called preventDefault will stop any custom behavior.
     */
-  var onKeyPress: js.UndefOr[js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit]] = js.undefined
+  var onKeyPress: js.UndefOr[js.Function1[/* event */ stdLib.KeyboardEvent, scala.Unit]] = js.undefined
   /**
     * Called when the value of the filter input changes either from typing or a pasted value.
     * onSearch should be used when the searchTerm prop is set.
@@ -205,13 +205,13 @@ object DropdownListProps {
     minLength: scala.Int | scala.Double = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
-    onChange: js.Function1[/* value */ js.Any, scala.Unit] = null,
-    onCreate: js.Function1[/* value */ js.Any, scala.Unit] = null,
-    onKeyDown: js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit] = null,
-    onKeyPress: js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit] = null,
-    onSearch: js.Function1[/* searchTerm */ java.lang.String, scala.Unit] = null,
-    onSelect: js.Function1[/* value */ js.Any, scala.Unit] = null,
-    onToggle: js.Function1[/* isOpen */ scala.Boolean, scala.Unit] = null,
+    onChange: /* value */ js.Any => scala.Unit = null,
+    onCreate: /* value */ js.Any => scala.Unit = null,
+    onKeyDown: /* event */ stdLib.KeyboardEvent => scala.Unit = null,
+    onKeyPress: /* event */ stdLib.KeyboardEvent => scala.Unit = null,
+    onSearch: /* searchTerm */ java.lang.String => scala.Unit = null,
+    onSelect: /* value */ js.Any => scala.Unit = null,
+    onToggle: /* isOpen */ scala.Boolean => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     placeholder: java.lang.String = null,
     readOnly: scala.Boolean | js.Array[_] = null,
@@ -249,13 +249,13 @@ object DropdownListProps {
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onCreate != null) __obj.updateDynamic("onCreate")(onCreate)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
-    if (onSearch != null) __obj.updateDynamic("onSearch")(onSearch)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (onToggle != null) __obj.updateDynamic("onToggle")(onToggle)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onCreate != null) __obj.updateDynamic("onCreate")(js.Any.fromFunction1(onCreate))
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
+    if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction1(onSearch))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
+    if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction1(onToggle))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])

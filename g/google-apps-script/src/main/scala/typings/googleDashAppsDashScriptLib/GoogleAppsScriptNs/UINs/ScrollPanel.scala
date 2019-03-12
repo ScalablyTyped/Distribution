@@ -39,37 +39,33 @@ trait ScrollPanel extends js.Object {
 object ScrollPanel {
   @scala.inline
   def apply(
-    add: js.Function1[Widget, ScrollPanel],
-    addScrollHandler: js.Function1[Handler, ScrollPanel],
-    addStyleDependentName: js.Function1[java.lang.String, ScrollPanel],
-    addStyleName: js.Function1[java.lang.String, ScrollPanel],
-    clear: js.Function0[ScrollPanel],
-    getId: js.Function0[java.lang.String],
-    getTag: js.Function0[java.lang.String],
-    getType: js.Function0[java.lang.String],
-    setAlwaysShowScrollBars: js.Function1[scala.Boolean, ScrollPanel],
-    setHeight: js.Function1[java.lang.String, ScrollPanel],
-    setHorizontalScrollPosition: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ScrollPanel],
-    setId: js.Function1[java.lang.String, ScrollPanel],
-    setLayoutData: js.Function1[js.Object, ScrollPanel],
-    setPixelSize: js.Function2[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      ScrollPanel
-    ],
-    setScrollPosition: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ScrollPanel],
-    setSize: js.Function2[java.lang.String, java.lang.String, ScrollPanel],
-    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, ScrollPanel],
-    setStyleAttributes: js.Function1[js.Object, ScrollPanel],
-    setStyleName: js.Function1[java.lang.String, ScrollPanel],
-    setStylePrimaryName: js.Function1[java.lang.String, ScrollPanel],
-    setTag: js.Function1[java.lang.String, ScrollPanel],
-    setTitle: js.Function1[java.lang.String, ScrollPanel],
-    setVisible: js.Function1[scala.Boolean, ScrollPanel],
-    setWidget: js.Function1[Widget, ScrollPanel],
-    setWidth: js.Function1[java.lang.String, ScrollPanel]
+    add: Widget => ScrollPanel,
+    addScrollHandler: Handler => ScrollPanel,
+    addStyleDependentName: java.lang.String => ScrollPanel,
+    addStyleName: java.lang.String => ScrollPanel,
+    clear: () => ScrollPanel,
+    getId: () => java.lang.String,
+    getTag: () => java.lang.String,
+    getType: () => java.lang.String,
+    setAlwaysShowScrollBars: scala.Boolean => ScrollPanel,
+    setHeight: java.lang.String => ScrollPanel,
+    setHorizontalScrollPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => ScrollPanel,
+    setId: java.lang.String => ScrollPanel,
+    setLayoutData: js.Object => ScrollPanel,
+    setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => ScrollPanel,
+    setScrollPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => ScrollPanel,
+    setSize: (java.lang.String, java.lang.String) => ScrollPanel,
+    setStyleAttribute: (java.lang.String, java.lang.String) => ScrollPanel,
+    setStyleAttributes: js.Object => ScrollPanel,
+    setStyleName: java.lang.String => ScrollPanel,
+    setStylePrimaryName: java.lang.String => ScrollPanel,
+    setTag: java.lang.String => ScrollPanel,
+    setTitle: java.lang.String => ScrollPanel,
+    setVisible: scala.Boolean => ScrollPanel,
+    setWidget: Widget => ScrollPanel,
+    setWidth: java.lang.String => ScrollPanel
   ): ScrollPanel = {
-    val __obj = js.Dynamic.literal(add = add, addScrollHandler = addScrollHandler, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, clear = clear, getId = getId, getTag = getTag, getType = getType, setAlwaysShowScrollBars = setAlwaysShowScrollBars, setHeight = setHeight, setHorizontalScrollPosition = setHorizontalScrollPosition, setId = setId, setLayoutData = setLayoutData, setPixelSize = setPixelSize, setScrollPosition = setScrollPosition, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setTitle = setTitle, setVisible = setVisible, setWidget = setWidget, setWidth = setWidth)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), addScrollHandler = js.Any.fromFunction1(addScrollHandler), addStyleDependentName = js.Any.fromFunction1(addStyleDependentName), addStyleName = js.Any.fromFunction1(addStyleName), clear = js.Any.fromFunction0(clear), getId = js.Any.fromFunction0(getId), getTag = js.Any.fromFunction0(getTag), getType = js.Any.fromFunction0(getType), setAlwaysShowScrollBars = js.Any.fromFunction1(setAlwaysShowScrollBars), setHeight = js.Any.fromFunction1(setHeight), setHorizontalScrollPosition = js.Any.fromFunction1(setHorizontalScrollPosition), setId = js.Any.fromFunction1(setId), setLayoutData = js.Any.fromFunction1(setLayoutData), setPixelSize = js.Any.fromFunction2(setPixelSize), setScrollPosition = js.Any.fromFunction1(setScrollPosition), setSize = js.Any.fromFunction2(setSize), setStyleAttribute = js.Any.fromFunction2(setStyleAttribute), setStyleAttributes = js.Any.fromFunction1(setStyleAttributes), setStyleName = js.Any.fromFunction1(setStyleName), setStylePrimaryName = js.Any.fromFunction1(setStylePrimaryName), setTag = js.Any.fromFunction1(setTag), setTitle = js.Any.fromFunction1(setTitle), setVisible = js.Any.fromFunction1(setVisible), setWidget = js.Any.fromFunction1(setWidget), setWidth = js.Any.fromFunction1(setWidth))
   
     __obj.asInstanceOf[ScrollPanel]
   }

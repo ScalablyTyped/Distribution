@@ -15,12 +15,9 @@ object OffersResource {
   @scala.inline
   def apply(
     history: HistoryResource,
-    list: js.Function1[
-      gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListOffersResponse]
-    ]
+    list: gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[ListOffersResponse]
   ): OffersResource = {
-    val __obj = js.Dynamic.literal(history = history, list = list)
+    val __obj = js.Dynamic.literal(history = history, list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[OffersResource]
   }

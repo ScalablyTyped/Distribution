@@ -59,8 +59,8 @@ object PopupViewModelOpenOptions {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     collapsed: js.UndefOr[scala.Boolean] = js.undefined,
     content: java.lang.String = null,
     features: js.Array[Graphic] = null,
@@ -69,7 +69,7 @@ object PopupViewModelOpenOptions {
     title: java.lang.String = null,
     updateLocationEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): PopupViewModelOpenOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
     if (content != null) __obj.updateDynamic("content")(content)
     if (features != null) __obj.updateDynamic("features")(features)

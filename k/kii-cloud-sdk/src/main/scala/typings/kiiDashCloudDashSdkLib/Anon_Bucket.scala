@@ -17,15 +17,10 @@ trait Anon_Bucket extends js.Object {
 object Anon_Bucket {
   @scala.inline
   def apply(
-    failure: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiBucket, java.lang.String, js.Any],
-    success: js.Function3[
-      kiiDashCloudDashSdkLib.KiiCloudNs.KiiBucket, 
-      kiiDashCloudDashSdkLib.KiiCloudNs.KiiQuery, 
-      scala.Double, 
-      js.Any
-    ]
+    failure: (kiiDashCloudDashSdkLib.KiiCloudNs.KiiBucket, java.lang.String) => js.Any,
+    success: (kiiDashCloudDashSdkLib.KiiCloudNs.KiiBucket, kiiDashCloudDashSdkLib.KiiCloudNs.KiiQuery, scala.Double) => js.Any
   ): Anon_Bucket = {
-    val __obj = js.Dynamic.literal(failure = failure, success = success)
+    val __obj = js.Dynamic.literal(failure = js.Any.fromFunction2(failure), success = js.Any.fromFunction3(success))
   
     __obj.asInstanceOf[Anon_Bucket]
   }

@@ -19,15 +19,12 @@ trait XCachedContentResultSetStubFactory
 object XCachedContentResultSetStubFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createCachedContentResultSetStub: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createCachedContentResultSetStub: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet => activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCachedContentResultSetStubFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createCachedContentResultSetStub = createCachedContentResultSetStub, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createCachedContentResultSetStub = js.Any.fromFunction1(createCachedContentResultSetStub), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCachedContentResultSetStubFactory]
   }

@@ -43,37 +43,19 @@ trait BoundingBox extends js.Object {
 object BoundingBox {
   @scala.inline
   def apply(
-    addBezierCurve: js.Function8[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ],
-    addPoint: js.Function2[scala.Double, scala.Double, scala.Unit],
-    addQuadraticCurve: js.Function6[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ],
-    addX: js.Function1[scala.Double, scala.Unit],
-    addY: js.Function1[scala.Double, scala.Unit],
-    height: js.Function0[scala.Double],
-    width: js.Function0[scala.Double],
+    addBezierCurve: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    addPoint: (scala.Double, scala.Double) => scala.Unit,
+    addQuadraticCurve: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    addX: scala.Double => scala.Unit,
+    addY: scala.Double => scala.Unit,
+    height: () => scala.Double,
+    width: () => scala.Double,
     x1: scala.Double,
     x2: scala.Double,
     y1: scala.Double,
     y2: scala.Double
   ): BoundingBox = {
-    val __obj = js.Dynamic.literal(addBezierCurve = addBezierCurve, addPoint = addPoint, addQuadraticCurve = addQuadraticCurve, addX = addX, addY = addY, height = height, width = width, x1 = x1, x2 = x2, y1 = y1, y2 = y2)
+    val __obj = js.Dynamic.literal(addBezierCurve = js.Any.fromFunction8(addBezierCurve), addPoint = js.Any.fromFunction2(addPoint), addQuadraticCurve = js.Any.fromFunction6(addQuadraticCurve), addX = js.Any.fromFunction1(addX), addY = js.Any.fromFunction1(addY), height = js.Any.fromFunction0(height), width = js.Any.fromFunction0(width), x1 = x1, x2 = x2, y1 = y1, y2 = y2)
   
     __obj.asInstanceOf[BoundingBox]
   }

@@ -13,10 +13,10 @@ trait IUriEscapeStatics extends js.Object {
 object IUriEscapeStatics {
   @scala.inline
   def apply(
-    escapeComponent: js.Function1[java.lang.String, java.lang.String],
-    unescapeComponent: js.Function1[java.lang.String, java.lang.String]
+    escapeComponent: java.lang.String => java.lang.String,
+    unescapeComponent: java.lang.String => java.lang.String
   ): IUriEscapeStatics = {
-    val __obj = js.Dynamic.literal(escapeComponent = escapeComponent, unescapeComponent = unescapeComponent)
+    val __obj = js.Dynamic.literal(escapeComponent = js.Any.fromFunction1(escapeComponent), unescapeComponent = js.Any.fromFunction1(unescapeComponent))
   
     __obj.asInstanceOf[IUriEscapeStatics]
   }

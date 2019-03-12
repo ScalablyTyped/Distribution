@@ -21,12 +21,12 @@ object XDefaultsSupplier {
   @scala.inline
   def apply(
     Defaults: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
-    acquire: js.Function0[scala.Unit],
-    getDefaults: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDefaults: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDefaultsSupplier = {
-    val __obj = js.Dynamic.literal(Defaults = Defaults, acquire = acquire, getDefaults = getDefaults, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Defaults = Defaults, acquire = js.Any.fromFunction0(acquire), getDefaults = js.Any.fromFunction0(getDefaults), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDefaultsSupplier]
   }

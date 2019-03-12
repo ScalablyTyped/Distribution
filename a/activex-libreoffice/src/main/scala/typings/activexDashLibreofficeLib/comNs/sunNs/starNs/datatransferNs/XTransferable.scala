@@ -16,7 +16,7 @@ trait XTransferable
     * @returns The sequence of supported {@link DataFlavor} .
     * @see com.sun.star.datatransfer.DataFlavor
     */
-  val TransferDataFlavors: activexDashInteropLib.SafeArray[DataFlavor]
+  val TransferDataFlavors: stdLib.SafeArray[DataFlavor]
   /**
     * Called by a data consumer to obtain data from the source in a specified format.
     * @param aFlavor Describes the requested data format
@@ -30,7 +30,7 @@ trait XTransferable
     * @returns The sequence of supported {@link DataFlavor} .
     * @see com.sun.star.datatransfer.DataFlavor
     */
-  def getTransferDataFlavors(): activexDashInteropLib.SafeArray[DataFlavor]
+  def getTransferDataFlavors(): stdLib.SafeArray[DataFlavor]
   /**
     * Checks if the data object supports the specified data flavor.
     * @param aFlavor Describes the format that should be checked
@@ -42,15 +42,15 @@ trait XTransferable
 object XTransferable {
   @scala.inline
   def apply(
-    TransferDataFlavors: activexDashInteropLib.SafeArray[DataFlavor],
-    acquire: js.Function0[scala.Unit],
-    getTransferData: js.Function1[DataFlavor, js.Any],
-    getTransferDataFlavors: js.Function0[activexDashInteropLib.SafeArray[DataFlavor]],
-    isDataFlavorSupported: js.Function1[DataFlavor, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    TransferDataFlavors: stdLib.SafeArray[DataFlavor],
+    acquire: () => scala.Unit,
+    getTransferData: DataFlavor => js.Any,
+    getTransferDataFlavors: () => stdLib.SafeArray[DataFlavor],
+    isDataFlavorSupported: DataFlavor => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTransferable = {
-    val __obj = js.Dynamic.literal(TransferDataFlavors = TransferDataFlavors, acquire = acquire, getTransferData = getTransferData, getTransferDataFlavors = getTransferDataFlavors, isDataFlavorSupported = isDataFlavorSupported, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(TransferDataFlavors = TransferDataFlavors, acquire = js.Any.fromFunction0(acquire), getTransferData = js.Any.fromFunction1(getTransferData), getTransferDataFlavors = js.Any.fromFunction0(getTransferDataFlavors), isDataFlavorSupported = js.Any.fromFunction1(isDataFlavorSupported), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTransferable]
   }

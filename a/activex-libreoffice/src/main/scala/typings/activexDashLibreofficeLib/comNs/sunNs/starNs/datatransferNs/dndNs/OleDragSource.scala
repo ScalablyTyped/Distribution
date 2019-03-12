@@ -17,26 +17,18 @@ trait OleDragSource
 object OleDragSource {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    getDefaultCursor: js.Function1[scala.Double, scala.Double],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    isDragImageSupported: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    startDrag: js.Function6[
-      DragGestureEvent, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable, 
-      XDragSourceListener, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    dispose: () => scala.Unit,
+    getDefaultCursor: scala.Double => scala.Double,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    isDragImageSupported: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    startDrag: (DragGestureEvent, scala.Double, scala.Double, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable, XDragSourceListener) => scala.Unit
   ): OleDragSource = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addEventListener = addEventListener, dispose = dispose, getDefaultCursor = getDefaultCursor, initialize = initialize, isDragImageSupported = isDragImageSupported, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, startDrag = startDrag)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), dispose = js.Any.fromFunction0(dispose), getDefaultCursor = js.Any.fromFunction1(getDefaultCursor), initialize = js.Any.fromFunction1(initialize), isDragImageSupported = js.Any.fromFunction0(isDragImageSupported), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), startDrag = js.Any.fromFunction6(startDrag))
   
     __obj.asInstanceOf[OleDragSource]
   }

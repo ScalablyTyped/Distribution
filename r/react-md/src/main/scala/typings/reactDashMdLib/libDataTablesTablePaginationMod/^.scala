@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/DataTables/TablePagination", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentClass[
-    reactDashMdLib.libDataTablesTablePaginationMod.TablePaginationProps, 
-    reactLib.reactMod.ReactNs.ComponentState
-  ] = js.native
+  val default: reactLib.reactMod.ReactNs.ComponentClass[TablePaginationProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
 }
 

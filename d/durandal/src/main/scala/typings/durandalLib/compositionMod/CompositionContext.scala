@@ -58,47 +58,32 @@ object CompositionContext {
     composingNewView: scala.Boolean,
     mode: java.lang.String,
     parent: stdLib.HTMLElement,
-    triggerAttach: js.Function0[scala.Unit],
+    triggerAttach: () => scala.Unit,
     activate: js.UndefOr[scala.Boolean] = js.undefined,
     area: java.lang.String = null,
-    attached: js.Function3[
-      /* child */ stdLib.HTMLElement, 
-      /* parent */ stdLib.HTMLElement, 
-      /* context */ CompositionContext, 
-      scala.Unit
-    ] = null,
-    binding: js.Function3[
-      /* child */ stdLib.HTMLElement, 
-      /* parent */ stdLib.HTMLElement, 
-      /* context */ CompositionContext, 
-      scala.Unit
-    ] = null,
+    attached: (/* child */ stdLib.HTMLElement, /* parent */ stdLib.HTMLElement, /* context */ CompositionContext) => scala.Unit = null,
+    binding: (/* child */ stdLib.HTMLElement, /* parent */ stdLib.HTMLElement, /* context */ CompositionContext) => scala.Unit = null,
     bindingContext: knockoutLib.KnockoutBindingContext = null,
     cacheViews: js.UndefOr[scala.Boolean] = js.undefined,
-    compositionComplete: js.Function3[
-      /* child */ stdLib.HTMLElement, 
-      /* parent */ stdLib.HTMLElement, 
-      /* context */ CompositionContext, 
-      scala.Unit
-    ] = null,
+    compositionComplete: (/* child */ stdLib.HTMLElement, /* parent */ stdLib.HTMLElement, /* context */ CompositionContext) => scala.Unit = null,
     model: js.Any = null,
     preserveContext: js.UndefOr[scala.Boolean] = js.undefined,
-    strategy: js.Function1[/* context */ CompositionContext, durandalLib.DurandalPromise[stdLib.HTMLElement]] = null,
+    strategy: /* context */ CompositionContext => durandalLib.DurandalPromise[stdLib.HTMLElement] = null,
     transition: java.lang.String = null,
     view: js.Any = null,
     viewElements: js.Array[stdLib.HTMLElement] = null
   ): CompositionContext = {
-    val __obj = js.Dynamic.literal(activeView = activeView, child = child, composingNewView = composingNewView, mode = mode, parent = parent, triggerAttach = triggerAttach)
+    val __obj = js.Dynamic.literal(activeView = activeView, child = child, composingNewView = composingNewView, mode = mode, parent = parent, triggerAttach = js.Any.fromFunction0(triggerAttach))
     if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate)
     if (area != null) __obj.updateDynamic("area")(area)
-    if (attached != null) __obj.updateDynamic("attached")(attached)
-    if (binding != null) __obj.updateDynamic("binding")(binding)
+    if (attached != null) __obj.updateDynamic("attached")(js.Any.fromFunction3(attached))
+    if (binding != null) __obj.updateDynamic("binding")(js.Any.fromFunction3(binding))
     if (bindingContext != null) __obj.updateDynamic("bindingContext")(bindingContext)
     if (!js.isUndefined(cacheViews)) __obj.updateDynamic("cacheViews")(cacheViews)
-    if (compositionComplete != null) __obj.updateDynamic("compositionComplete")(compositionComplete)
+    if (compositionComplete != null) __obj.updateDynamic("compositionComplete")(js.Any.fromFunction3(compositionComplete))
     if (model != null) __obj.updateDynamic("model")(model)
     if (!js.isUndefined(preserveContext)) __obj.updateDynamic("preserveContext")(preserveContext)
-    if (strategy != null) __obj.updateDynamic("strategy")(strategy)
+    if (strategy != null) __obj.updateDynamic("strategy")(js.Any.fromFunction1(strategy))
     if (transition != null) __obj.updateDynamic("transition")(transition)
     if (view != null) __obj.updateDynamic("view")(view)
     if (viewElements != null) __obj.updateDynamic("viewElements")(viewElements)

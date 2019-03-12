@@ -11,8 +11,8 @@ trait IXmlDomImplementation extends js.Object {
 
 object IXmlDomImplementation {
   @scala.inline
-  def apply(hasFeature: js.Function2[java.lang.String, js.Any, scala.Boolean]): IXmlDomImplementation = {
-    val __obj = js.Dynamic.literal(hasFeature = hasFeature)
+  def apply(hasFeature: (java.lang.String, js.Any) => scala.Boolean): IXmlDomImplementation = {
+    val __obj = js.Dynamic.literal(hasFeature = js.Any.fromFunction2(hasFeature))
   
     __obj.asInstanceOf[IXmlDomImplementation]
   }

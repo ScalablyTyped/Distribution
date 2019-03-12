@@ -41,12 +41,8 @@ trait PlusMapsOverlay extends js.Object {
 
 object PlusMapsOverlay {
   @scala.inline
-  def apply(
-    hide: js.Function0[scala.Unit],
-    isVisible: js.Function0[scala.Boolean],
-    show: js.Function0[scala.Unit]
-  ): PlusMapsOverlay = {
-    val __obj = js.Dynamic.literal(hide = hide, isVisible = isVisible, show = show)
+  def apply(hide: () => scala.Unit, isVisible: () => scala.Boolean, show: () => scala.Unit): PlusMapsOverlay = {
+    val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), isVisible = js.Any.fromFunction0(isVisible), show = js.Any.fromFunction0(show))
   
     __obj.asInstanceOf[PlusMapsOverlay]
   }

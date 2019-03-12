@@ -22,12 +22,12 @@ trait XSimpleMailClientSupplier
 object XSimpleMailClientSupplier {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    querySimpleMailClient: js.Function0[XSimpleMailClient],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    querySimpleMailClient: () => XSimpleMailClient,
+    release: () => scala.Unit
   ): XSimpleMailClientSupplier = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, querySimpleMailClient = querySimpleMailClient, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), querySimpleMailClient = js.Any.fromFunction0(querySimpleMailClient), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSimpleMailClientSupplier]
   }

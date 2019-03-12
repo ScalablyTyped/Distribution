@@ -22,16 +22,16 @@ trait MapContext
 object MapContext {
   @scala.inline
   def apply(
-    getCenterLocation: js.Function1[GetCenterLocationOptions, scala.Unit],
-    moveToLocation: js.Function0[scala.Unit],
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
-    success: js.Function1[js.Any, scala.Unit] = null
+    getCenterLocation: GetCenterLocationOptions => scala.Unit,
+    moveToLocation: () => scala.Unit,
+    complete: /* res */ js.Any => scala.Unit = null,
+    fail: js.Any => scala.Unit = null,
+    success: js.Any => scala.Unit = null
   ): MapContext = {
-    val __obj = js.Dynamic.literal(getCenterLocation = getCenterLocation, moveToLocation = moveToLocation)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(getCenterLocation = js.Any.fromFunction1(getCenterLocation), moveToLocation = js.Any.fromFunction0(moveToLocation))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[MapContext]
   }
 }

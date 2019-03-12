@@ -10,7 +10,7 @@ trait DrawerProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var closable: js.UndefOr[scala.Boolean] = js.undefined
   var destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined
-  var getContainer: js.UndefOr[java.lang.String | reactLib.HTMLElement | getContainerFunc] = js.undefined
+  var getContainer: js.UndefOr[java.lang.String | stdLib.HTMLElement | getContainerFunc] = js.undefined
   var handler: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var height: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var mask: js.UndefOr[scala.Boolean] = js.undefined
@@ -35,13 +35,13 @@ object DrawerProps {
     className: java.lang.String = null,
     closable: js.UndefOr[scala.Boolean] = js.undefined,
     destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined,
-    getContainer: java.lang.String | reactLib.HTMLElement | getContainerFunc = null,
+    getContainer: java.lang.String | stdLib.HTMLElement | getContainerFunc = null,
     handler: reactLib.reactMod.ReactNs.ReactNode = null,
     height: scala.Double | java.lang.String = null,
     mask: js.UndefOr[scala.Boolean] = js.undefined,
     maskClosable: js.UndefOr[scala.Boolean] = js.undefined,
     maskStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    onClose: js.Function1[/* e */ EventType, scala.Unit] = null,
+    onClose: /* e */ EventType => scala.Unit = null,
     placement: placementType = null,
     prefixCls: java.lang.String = null,
     push: js.UndefOr[scala.Boolean] = js.undefined,
@@ -63,7 +63,7 @@ object DrawerProps {
     if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
     if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable)
     if (maskStyle != null) __obj.updateDynamic("maskStyle")(maskStyle)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (placement != null) __obj.updateDynamic("placement")(placement)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (!js.isUndefined(push)) __obj.updateDynamic("push")(push)

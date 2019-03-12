@@ -35,14 +35,14 @@ trait QueryFilter extends Filter {
 object QueryFilter {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cache: js.Function1[scala.Boolean, QueryFilter],
-    cacheKey: js.Function1[java.lang.String, QueryFilter],
-    name: js.Function1[java.lang.String, QueryFilter],
-    query: js.Function1[js.Object, QueryFilter],
-    toJSON: js.Function0[QueryFilter]
+    _type: () => java.lang.String,
+    cache: scala.Boolean => QueryFilter,
+    cacheKey: java.lang.String => QueryFilter,
+    name: java.lang.String => QueryFilter,
+    query: js.Object => QueryFilter,
+    toJSON: () => QueryFilter
   ): QueryFilter = {
-    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, name = name, query = query, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), name = js.Any.fromFunction1(name), query = js.Any.fromFunction1(query), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[QueryFilter]
   }

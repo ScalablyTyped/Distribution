@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def decrypt(
-    arg: triplesecLib.triplesecMod.Arguments,
+    arg: Arguments,
     cb: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* buff */ nodeLib.Buffer | scala.Null, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def encrypt(
-    arg: triplesecLib.triplesecMod.Arguments,
+    arg: Arguments,
     cb: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* buff */ nodeLib.Buffer | scala.Null, 
       scala.Unit
     ]

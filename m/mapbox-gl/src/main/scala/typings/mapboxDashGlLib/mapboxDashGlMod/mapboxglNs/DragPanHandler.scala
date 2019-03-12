@@ -15,12 +15,12 @@ trait DragPanHandler extends js.Object {
 object DragPanHandler {
   @scala.inline
   def apply(
-    disable: js.Function0[scala.Unit],
-    enable: js.Function0[scala.Unit],
-    isActive: js.Function0[scala.Boolean],
-    isEnabled: js.Function0[scala.Boolean]
+    disable: () => scala.Unit,
+    enable: () => scala.Unit,
+    isActive: () => scala.Boolean,
+    isEnabled: () => scala.Boolean
   ): DragPanHandler = {
-    val __obj = js.Dynamic.literal(disable = disable, enable = enable, isActive = isActive, isEnabled = isEnabled)
+    val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), isActive = js.Any.fromFunction0(isActive), isEnabled = js.Any.fromFunction0(isEnabled))
   
     __obj.asInstanceOf[DragPanHandler]
   }

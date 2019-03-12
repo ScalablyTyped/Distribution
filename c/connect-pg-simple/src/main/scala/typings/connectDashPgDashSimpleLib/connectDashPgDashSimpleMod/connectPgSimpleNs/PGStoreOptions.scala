@@ -26,7 +26,7 @@ object PGStoreOptions {
   def apply(
     conObject: pgLib.pgMod.PoolConfig = null,
     conString: java.lang.String = null,
-    errorLog: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    errorLog: /* repeated */ js.Any => scala.Unit = null,
     pgPromise: js.Object = null,
     pool: pgLib.pgMod.Pool = null,
     pruneSessionInterval: connectDashPgDashSimpleLib.connectDashPgDashSimpleLibNumbers.`false` | scala.Double = null,
@@ -37,7 +37,7 @@ object PGStoreOptions {
     val __obj = js.Dynamic.literal()
     if (conObject != null) __obj.updateDynamic("conObject")(conObject)
     if (conString != null) __obj.updateDynamic("conString")(conString)
-    if (errorLog != null) __obj.updateDynamic("errorLog")(errorLog)
+    if (errorLog != null) __obj.updateDynamic("errorLog")(js.Any.fromFunction1(errorLog))
     if (pgPromise != null) __obj.updateDynamic("pgPromise")(pgPromise)
     if (pool != null) __obj.updateDynamic("pool")(pool)
     if (pruneSessionInterval != null) __obj.updateDynamic("pruneSessionInterval")(pruneSessionInterval.asInstanceOf[js.Any])

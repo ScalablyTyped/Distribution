@@ -30,33 +30,15 @@ object DevicesResource {
   @scala.inline
   def apply(
     configVersions: ConfigVersionsResource,
-    create: js.Function1[
-      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Device]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Device]
-    ],
-    list: js.Function1[
-      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackDeviceIds, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListDevicesResponse]
-    ],
-    modifyCloudToDeviceConfig: js.Function1[
-      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DeviceConfig]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Device]
-    ],
+    create: gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[Device],
+    delete: gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[Device],
+    list: gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackDeviceIds => gapiDotClientLib.gapiNs.clientNs.Request[ListDevicesResponse],
+    modifyCloudToDeviceConfig: gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[DeviceConfig],
+    patch: gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[Device],
     states: StatesResource
   ): DevicesResource = {
-    val __obj = js.Dynamic.literal(configVersions = configVersions, create = create, delete = delete, get = get, list = list, modifyCloudToDeviceConfig = modifyCloudToDeviceConfig, patch = patch, states = states)
+    val __obj = js.Dynamic.literal(configVersions = configVersions, create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), modifyCloudToDeviceConfig = js.Any.fromFunction1(modifyCloudToDeviceConfig), patch = js.Any.fromFunction1(patch), states = states)
   
     __obj.asInstanceOf[DevicesResource]
   }

@@ -14,11 +14,11 @@ trait Anon_Expected extends js.Object {
 object Anon_Expected {
   @scala.inline
   def apply(
-    toChangeInState: js.Function1[js.Any, scala.Unit],
-    toReturnState: js.Function1[js.Any, scala.Unit],
-    toStayTheSame: js.Function0[scala.Unit]
+    toChangeInState: js.Any => scala.Unit,
+    toReturnState: js.Any => scala.Unit,
+    toStayTheSame: () => scala.Unit
   ): Anon_Expected = {
-    val __obj = js.Dynamic.literal(toChangeInState = toChangeInState, toReturnState = toReturnState, toStayTheSame = toStayTheSame)
+    val __obj = js.Dynamic.literal(toChangeInState = js.Any.fromFunction1(toChangeInState), toReturnState = js.Any.fromFunction1(toReturnState), toStayTheSame = js.Any.fromFunction0(toStayTheSame))
   
     __obj.asInstanceOf[Anon_Expected]
   }

@@ -86,18 +86,18 @@ trait SharedClass extends js.Object {
 object SharedClass {
   @scala.inline
   def apply(
-    ctor: js.Function0[scala.Unit],
-    defineMethod: js.Function2[java.lang.String, js.Any, scala.Unit],
-    disableMethod: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
-    disableMethodByName: js.Function1[java.lang.String, scala.Unit],
-    find: js.Function2[js.Function0[scala.Unit | java.lang.String], scala.Boolean, js.Any],
-    findMethodByName: js.Function1[java.lang.String, js.Any],
-    getKeyFromMethodNameAndTarget: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
+    ctor: () => scala.Unit,
+    defineMethod: (java.lang.String, js.Any) => scala.Unit,
+    disableMethod: (java.lang.String, scala.Boolean) => scala.Unit,
+    disableMethodByName: java.lang.String => scala.Unit,
+    find: (js.Function0[scala.Unit | java.lang.String], scala.Boolean) => js.Any,
+    findMethodByName: java.lang.String => js.Any,
+    getKeyFromMethodNameAndTarget: (java.lang.String, scala.Boolean) => scala.Unit,
     http: js.Any,
-    methods: js.Function1[loopbackLib.Anon_IncludeDisabled, js.Array[_]],
-    resolve: js.Function1[js.Function0[scala.Unit], scala.Unit]
+    methods: loopbackLib.Anon_IncludeDisabled => js.Array[_],
+    resolve: js.Function0[scala.Unit] => scala.Unit
   ): SharedClass = {
-    val __obj = js.Dynamic.literal(ctor = ctor, defineMethod = defineMethod, disableMethod = disableMethod, disableMethodByName = disableMethodByName, find = find, findMethodByName = findMethodByName, getKeyFromMethodNameAndTarget = getKeyFromMethodNameAndTarget, http = http, methods = methods, resolve = resolve)
+    val __obj = js.Dynamic.literal(ctor = js.Any.fromFunction0(ctor), defineMethod = js.Any.fromFunction2(defineMethod), disableMethod = js.Any.fromFunction2(disableMethod), disableMethodByName = js.Any.fromFunction1(disableMethodByName), find = js.Any.fromFunction2(find), findMethodByName = js.Any.fromFunction1(findMethodByName), getKeyFromMethodNameAndTarget = js.Any.fromFunction2(getKeyFromMethodNameAndTarget), http = http, methods = js.Any.fromFunction1(methods), resolve = js.Any.fromFunction1(resolve))
   
     __obj.asInstanceOf[SharedClass]
   }

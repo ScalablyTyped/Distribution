@@ -103,24 +103,12 @@ trait GuardianInvitationsResource extends js.Object {
 object GuardianInvitationsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GuardianInvitation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsInvitationId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GuardianInvitation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsInvitedEmailAddress, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListGuardianInvitationsResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsInvitationIdKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GuardianInvitation]
-    ]
+    create: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[GuardianInvitation],
+    get: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsInvitationId => gapiDotClientLib.gapiNs.clientNs.Request[GuardianInvitation],
+    list: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsInvitedEmailAddress => gapiDotClientLib.gapiNs.clientNs.Request[ListGuardianInvitationsResponse],
+    patch: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsInvitationIdKey => gapiDotClientLib.gapiNs.clientNs.Request[GuardianInvitation]
   ): GuardianInvitationsResource = {
-    val __obj = js.Dynamic.literal(create = create, get = get, list = list, patch = patch)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch))
   
     __obj.asInstanceOf[GuardianInvitationsResource]
   }

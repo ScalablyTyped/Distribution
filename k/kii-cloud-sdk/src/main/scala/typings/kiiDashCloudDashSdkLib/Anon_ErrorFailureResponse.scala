@@ -13,10 +13,10 @@ trait Anon_ErrorFailureResponse extends js.Object {
 object Anon_ErrorFailureResponse {
   @scala.inline
   def apply(
-    failure: js.Function1[stdLib.Error, js.Any],
-    success: js.Function1[kiiDashCloudDashSdkLib.KiiCloudNs.KiiGcmInstallationResponse, js.Any]
+    failure: stdLib.Error => js.Any,
+    success: kiiDashCloudDashSdkLib.KiiCloudNs.KiiGcmInstallationResponse => js.Any
   ): Anon_ErrorFailureResponse = {
-    val __obj = js.Dynamic.literal(failure = failure, success = success)
+    val __obj = js.Dynamic.literal(failure = js.Any.fromFunction1(failure), success = js.Any.fromFunction1(success))
   
     __obj.asInstanceOf[Anon_ErrorFailureResponse]
   }

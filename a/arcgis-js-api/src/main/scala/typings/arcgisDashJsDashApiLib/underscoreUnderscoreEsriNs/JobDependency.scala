@@ -58,14 +58,14 @@ object JobDependency {
     depJobId: scala.Double,
     depOnType: java.lang.String,
     depOnValue: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     heldOnValue: scala.Double,
     holdOnType: java.lang.String,
     id: scala.Double,
     jobID: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): JobDependency = {
-    val __obj = js.Dynamic.literal(constructor = constructor, depJobId = depJobId, depOnType = depOnType, depOnValue = depOnValue, hasOwnProperty = hasOwnProperty, heldOnValue = heldOnValue, holdOnType = holdOnType, id = id, jobID = jobID, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, depJobId = depJobId, depOnType = depOnType, depOnValue = depOnValue, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), heldOnValue = heldOnValue, holdOnType = holdOnType, id = id, jobID = jobID, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[JobDependency]
   }

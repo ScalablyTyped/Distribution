@@ -25,8 +25,8 @@ trait FileObj extends js.Object {
 object FileObj {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
-    getNative: js.Function0[stdLib.File],
+    destroy: () => scala.Unit,
+    getNative: () => stdLib.File,
     ext: java.lang.String = null,
     id: java.lang.String = null,
     isImage: js.UndefOr[scala.Boolean] = js.undefined,
@@ -40,7 +40,7 @@ object FileObj {
     status: STATUS = null,
     `type`: java.lang.String = null
   ): FileObj = {
-    val __obj = js.Dynamic.literal(destroy = destroy, getNative = getNative)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getNative = js.Any.fromFunction0(getNative))
     if (ext != null) __obj.updateDynamic("ext")(ext)
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(isImage)) __obj.updateDynamic("isImage")(isImage)

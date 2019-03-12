@@ -912,812 +912,344 @@ trait Events extends js.Object {
 object Events {
   @scala.inline
   def apply(
-    afterAddChild: js.Function3[
-      /* parent */ handsontableLib.handsontableMod.HandsontableNs.RowObject, 
-      /* element */ handsontableLib.handsontableMod.HandsontableNs.RowObject | scala.Unit, 
-      /* index */ scala.Double | scala.Unit, 
-      scala.Unit
-    ] = null,
-    afterBeginEditing: js.Function2[/* row */ scala.Double, /* column */ scala.Double, scala.Unit] = null,
-    afterCellMetaReset: js.Function0[scala.Unit] = null,
-    afterChange: js.Function2[
-      /* changes */ js.Array[handsontableLib.handsontableMod.HandsontableNs.CellChange] | scala.Null, 
-      /* source */ handsontableLib.handsontableMod.HandsontableNs.ChangeSource, 
-      scala.Unit
-    ] = null,
-    afterChangesObserved: js.Function0[scala.Unit] = null,
-    afterColumnMove: js.Function2[/* startColumn */ scala.Double, /* endColumn */ scala.Double, scala.Unit] = null,
-    afterColumnResize: js.Function3[
-      /* currentColumn */ scala.Double, 
-      /* newSize */ scala.Double, 
-      /* isDoubleClick */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    afterColumnSort: js.Function2[
-      /* currentSortConfig */ js.Array[handsontableLib.handsontableMod.HandsontableNs.columnSortingNs.Config], 
-      /* destinationSortConfigs */ js.Array[handsontableLib.handsontableMod.HandsontableNs.columnSortingNs.Config], 
-      scala.Unit
-    ] = null,
-    afterContextMenuDefaultOptions: js.Function1[
-      /* predefinedItems */ js.Array[
-        handsontableLib.handsontableMod.HandsontableNs.contextMenuNs.PredefinedMenuItemKey | handsontableLib.handsontableMod.HandsontableNs.contextMenuNs.MenuItemConfig
-      ], 
-      scala.Unit
-    ] = null,
-    afterContextMenuHide: js.Function1[
-      /* context */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ContextMenu, 
-      scala.Unit
-    ] = null,
-    afterContextMenuShow: js.Function1[
-      /* context */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ContextMenu, 
-      scala.Unit
-    ] = null,
-    afterCopy: js.Function2[
-      /* data */ js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]], 
-      /* coords */ js.Array[handsontableLib.handsontableMod.HandsontableNs.pluginsNs.RangeType], 
-      scala.Unit
-    ] = null,
-    afterCopyLimit: js.Function4[
-      /* selectedRows */ scala.Double, 
-      /* selectedColumnds */ scala.Double, 
-      /* copyRowsLimit */ scala.Double, 
-      /* copyColumnsLimit */ scala.Double, 
-      scala.Unit
-    ] = null,
-    afterCreateCol: js.Function2[/* index */ scala.Double, /* amount */ scala.Double, scala.Unit] = null,
-    afterCreateRow: js.Function2[/* index */ scala.Double, /* amount */ scala.Double, scala.Unit] = null,
-    afterCut: js.Function2[
-      /* data */ js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]], 
-      /* coords */ js.Array[handsontableLib.handsontableMod.HandsontableNs.pluginsNs.RangeType], 
-      scala.Unit
-    ] = null,
-    afterDeselect: js.Function0[scala.Unit] = null,
-    afterDestroy: js.Function0[scala.Unit] = null,
-    afterDetachChild: js.Function2[
-      /* parent */ handsontableLib.handsontableMod.HandsontableNs.RowObject, 
-      /* element */ handsontableLib.handsontableMod.HandsontableNs.RowObject, 
-      scala.Unit
-    ] = null,
-    afterDocumentKeyDown: js.Function1[/* event */ stdLib.KeyboardEvent, scala.Unit] = null,
-    afterDrawSelection: js.Function4[
-      /* currentRow */ scala.Double, 
-      /* currentColumn */ scala.Double, 
-      /* cornersOfSelection */ js.Array[scala.Double], 
-      /* layerLevel */ scala.Double | scala.Unit, 
-      java.lang.String | scala.Unit
-    ] = null,
-    afterDropdownMenuDefaultOptions: js.Function1[
-      /* predefinedItems */ js.Array[
-        handsontableLib.handsontableMod.HandsontableNs.contextMenuNs.PredefinedMenuItemKey | handsontableLib.handsontableMod.HandsontableNs.contextMenuNs.MenuItemConfig
-      ], 
-      scala.Unit
-    ] = null,
-    afterDropdownMenuHide: js.Function1[
-      /* instance */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.DropdownMenu, 
-      scala.Unit
-    ] = null,
-    afterDropdownMenuShow: js.Function1[
-      /* instance */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.DropdownMenu, 
-      scala.Unit
-    ] = null,
-    afterFilter: js.Function1[
-      /* conditionsStack */ js.Array[
-        handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ColumnConditions
-      ], 
-      scala.Unit
-    ] = null,
-    afterGetCellMeta: js.Function3[
-      /* row */ scala.Double, 
-      /* col */ scala.Double, 
-      /* cellProperties */ handsontableLib.handsontableMod.HandsontableNs.CellProperties, 
-      scala.Unit
-    ] = null,
-    afterGetColHeader: js.Function2[/* col */ scala.Double, /* TH */ stdLib.HTMLTableHeaderCellElement, scala.Unit] = null,
-    afterGetColumnHeaderRenderers: js.Function1[
-      /* renderers */ js.Array[
-        js.Function2[/* col */ scala.Double, /* TH */ stdLib.HTMLTableHeaderCellElement, scala.Unit]
-      ], 
-      scala.Unit
-    ] = null,
-    afterGetRowHeader: js.Function2[/* row */ scala.Double, /* TH */ stdLib.HTMLTableHeaderCellElement, scala.Unit] = null,
-    afterGetRowHeaderRenderers: js.Function1[
-      /* renderers */ js.Array[
-        js.Function2[/* row */ scala.Double, /* TH */ stdLib.HTMLTableHeaderCellElement, scala.Unit]
-      ], 
-      scala.Unit
-    ] = null,
-    afterHideColumns: js.Function4[
-      /* currentHideConfig */ js.Array[scala.Double], 
-      /* destinationHideConfig */ js.Array[scala.Double], 
-      /* actionPossible */ scala.Boolean, 
-      /* stateChanged */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    afterHideRows: js.Function4[
-      /* currentHideConfig */ js.Array[scala.Double], 
-      /* destinationHideConfig */ js.Array[scala.Double], 
-      /* actionPossible */ scala.Boolean, 
-      /* stateChanged */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    afterInit: js.Function0[scala.Unit] = null,
-    afterLanguageChange: js.Function1[/* languageCode */ java.lang.String, scala.Unit] = null,
-    afterListen: js.Function0[scala.Unit] = null,
-    afterLoadData: js.Function1[/* initialLoad */ scala.Boolean, scala.Unit] = null,
-    afterMergeCells: js.Function3[
-      /* cellRange */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange, 
-      /* mergeParent */ handsontableLib.handsontableMod.HandsontableNs.mergeCellsNs.Settings, 
-      /* auto */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    afterModifyTransformEnd: js.Function3[
-      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
-      /* rowTransformDir */ handsontableLib.handsontableLibNumbers.`-1` | handsontableLib.handsontableLibNumbers.`0`, 
-      /* colTransformDir */ handsontableLib.handsontableLibNumbers.`-1` | handsontableLib.handsontableLibNumbers.`0`, 
-      scala.Unit
-    ] = null,
-    afterModifyTransformStart: js.Function3[
-      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
-      /* rowTransformDir */ handsontableLib.handsontableLibNumbers.`-1` | handsontableLib.handsontableLibNumbers.`0`, 
-      /* colTransformDir */ handsontableLib.handsontableLibNumbers.`-1` | handsontableLib.handsontableLibNumbers.`0`, 
-      scala.Unit
-    ] = null,
-    afterMomentumScroll: js.Function0[scala.Unit] = null,
-    afterOnCellContextMenu: js.Function3[
-      /* event */ stdLib.MouseEvent, 
-      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
-      /* TD */ stdLib.HTMLTableCellElement, 
-      scala.Unit
-    ] = null,
-    afterOnCellCornerDblClick: js.Function1[/* event */ stdLib.MouseEvent, scala.Unit] = null,
-    afterOnCellCornerMouseDown: js.Function1[/* event */ stdLib.MouseEvent, scala.Unit] = null,
-    afterOnCellMouseDown: js.Function3[
-      /* event */ stdLib.MouseEvent, 
-      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
-      /* TD */ stdLib.HTMLTableCellElement, 
-      scala.Unit
-    ] = null,
-    afterOnCellMouseOut: js.Function3[
-      /* event */ stdLib.MouseEvent, 
-      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
-      /* TD */ stdLib.HTMLTableCellElement, 
-      scala.Unit
-    ] = null,
-    afterOnCellMouseOver: js.Function3[
-      /* event */ stdLib.MouseEvent, 
-      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
-      /* TD */ stdLib.HTMLTableCellElement, 
-      scala.Unit
-    ] = null,
-    afterOnCellMouseUp: js.Function3[
-      /* event */ stdLib.MouseEvent, 
-      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
-      /* TD */ stdLib.HTMLTableCellElement, 
-      scala.Unit
-    ] = null,
-    afterPaste: js.Function2[
-      /* data */ js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]], 
-      /* coords */ js.Array[handsontableLib.handsontableMod.HandsontableNs.pluginsNs.RangeType], 
-      scala.Unit
-    ] = null,
-    afterPluginsInitialized: js.Function0[scala.Unit] = null,
-    afterRedo: js.Function1[
-      /* action */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.UndoRedoAction, 
-      scala.Unit
-    ] = null,
-    afterRefreshDimensions: js.Function3[
-      /* previousDimensions */ js.Object, 
-      /* currentDimensions */ js.Object, 
-      /* stateChanged */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    afterRemoveCellMeta: js.Function4[
-      /* row */ scala.Double, 
-      /* column */ scala.Double, 
-      /* key */ java.lang.String, 
-      /* value */ js.Any, 
-      scala.Unit
-    ] = null,
-    afterRemoveCol: js.Function2[/* index */ scala.Double, /* amount */ scala.Double, scala.Unit] = null,
-    afterRemoveRow: js.Function2[/* index */ scala.Double, /* amount */ scala.Double, scala.Unit] = null,
-    afterRender: js.Function1[/* isForced */ scala.Boolean, scala.Unit] = null,
-    afterRenderer: js.Function6[
-      /* TD */ stdLib.HTMLTableCellElement, 
-      /* row */ scala.Double, 
-      /* col */ scala.Double, 
-      /* prop */ java.lang.String | scala.Double, 
-      /* value */ java.lang.String, 
-      /* cellProperties */ handsontableLib.handsontableMod.HandsontableNs.CellProperties, 
-      scala.Unit
-    ] = null,
-    afterRowMove: js.Function2[/* startRow */ scala.Double, /* endRow */ scala.Double, scala.Unit] = null,
-    afterRowResize: js.Function3[
-      /* currentRow */ scala.Double, 
-      /* newSize */ scala.Double, 
-      /* isDoubleClick */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    afterScrollHorizontally: js.Function0[scala.Unit] = null,
-    afterScrollVertically: js.Function0[scala.Unit] = null,
-    afterSelection: js.Function6[
-      /* row */ scala.Double, 
-      /* column */ scala.Double, 
-      /* row2 */ scala.Double, 
-      /* column2 */ scala.Double, 
-      /* preventScrolling */ handsontableLib.Anon_Value, 
-      /* selectionLayerLevel */ scala.Double, 
-      scala.Unit
-    ] = null,
-    afterSelectionByProp: js.Function6[
-      /* row */ scala.Double, 
-      /* prop */ java.lang.String, 
-      /* row2 */ scala.Double, 
-      /* prop2 */ java.lang.String, 
-      /* preventScrolling */ handsontableLib.Anon_Value, 
-      /* selectionLayerLevel */ scala.Double, 
-      scala.Unit
-    ] = null,
-    afterSelectionEnd: js.Function5[
-      /* row */ scala.Double, 
-      /* column */ scala.Double, 
-      /* row2 */ scala.Double, 
-      /* column2 */ scala.Double, 
-      /* selectionLayerLevel */ scala.Double, 
-      scala.Unit
-    ] = null,
-    afterSelectionEndByProp: js.Function5[
-      /* row */ scala.Double, 
-      /* prop */ java.lang.String, 
-      /* row2 */ scala.Double, 
-      /* prop2 */ java.lang.String, 
-      /* selectionLayerLevel */ scala.Double, 
-      scala.Unit
-    ] = null,
-    afterSetCellMeta: js.Function4[
-      /* row */ scala.Double, 
-      /* col */ scala.Double, 
-      /* key */ java.lang.String, 
-      /* value */ js.Any, 
-      scala.Unit
-    ] = null,
-    afterSetDataAtCell: js.Function2[
-      /* changes */ js.Array[handsontableLib.handsontableMod.HandsontableNs.CellChange], 
-      /* source */ js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.ChangeSource], 
-      scala.Unit
-    ] = null,
-    afterSetDataAtRowProp: js.Function2[
-      /* changes */ js.Array[handsontableLib.handsontableMod.HandsontableNs.CellChange], 
-      /* source */ js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.ChangeSource], 
-      scala.Unit
-    ] = null,
-    afterTrimRow: js.Function4[
-      /* currentTrimConfig */ js.Array[scala.Double], 
-      /* destinationTrimConfig */ js.Array[scala.Double], 
-      /* actionPossible */ scala.Boolean, 
-      /* stateChanged */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    afterUndo: js.Function1[
-      /* action */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.UndoRedoAction, 
-      scala.Unit
-    ] = null,
-    afterUnhideColumns: js.Function4[
-      /* currentHideConfig */ js.Array[scala.Double], 
-      /* destinationHideConfig */ js.Array[scala.Double], 
-      /* actionPossible */ scala.Boolean, 
-      /* stateChanged */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    afterUnhideRows: js.Function4[
-      /* currentHideConfig */ js.Array[scala.Double], 
-      /* destinationHideConfig */ js.Array[scala.Double], 
-      /* actionPossible */ scala.Boolean, 
-      /* stateChanged */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    afterUnlisten: js.Function0[scala.Unit] = null,
-    afterUnmergeCells: js.Function2[
-      /* cellRange */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange, 
-      /* auto */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    afterUntrimRow: js.Function4[
-      /* currentTrimConfig */ js.Array[scala.Double], 
-      /* destinationTrimConfig */ js.Array[scala.Double], 
-      /* actionPossible */ scala.Boolean, 
-      /* stateChanged */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    afterUpdateSettings: js.Function1[
-      /* newSettings */ handsontableLib.handsontableMod.HandsontableNs.GridSettings, 
-      scala.Unit
-    ] = null,
-    afterValidate: js.Function5[
-      /* isValid */ scala.Boolean, 
-      /* value */ handsontableLib.handsontableMod.HandsontableNs.CellValue, 
-      /* row */ scala.Double, 
-      /* prop */ java.lang.String | scala.Double, 
-      /* source */ handsontableLib.handsontableMod.HandsontableNs.ChangeSource, 
-      scala.Unit | scala.Boolean
-    ] = null,
-    afterViewportColumnCalculatorOverride: js.Function1[
-      /* calc */ handsontableLib.handsontableMod.HandsontableNs.ViewportColumnsCalculator, 
-      scala.Unit
-    ] = null,
-    afterViewportRowCalculatorOverride: js.Function1[
-      /* calc */ handsontableLib.handsontableMod.HandsontableNs.ViewportColumnsCalculator, 
-      scala.Unit
-    ] = null,
-    beforeAddChild: js.Function3[
-      /* parent */ handsontableLib.handsontableMod.HandsontableNs.RowObject, 
-      /* element */ handsontableLib.handsontableMod.HandsontableNs.RowObject | scala.Unit, 
-      /* index */ scala.Double | scala.Unit, 
-      scala.Unit
-    ] = null,
-    beforeAutofill: js.Function3[
-      /* start */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
-      /* end */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
-      /* data */ js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]], 
-      scala.Unit
-    ] = null,
-    beforeAutofillInsidePopulate: js.Function4[
-      /* index */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
-      /* direction */ handsontableLib.handsontableLibStrings.up | handsontableLib.handsontableLibStrings.down | handsontableLib.handsontableLibStrings.left | handsontableLib.handsontableLibStrings.right, 
-      /* input */ js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]], 
-      /* deltas */ js.Array[_], 
-      scala.Unit
-    ] = null,
-    beforeCellAlignment: js.Function4[
-      /* stateBefore */ org.scalablytyped.runtime.NumberDictionary[js.Array[java.lang.String]], 
-      /* range */ js.Array[handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange], 
-      /* type */ handsontableLib.handsontableLibStrings.horizontal | handsontableLib.handsontableLibStrings.vertical, 
-      /* alignmentClass */ handsontableLib.handsontableLibStrings.htLeft | handsontableLib.handsontableLibStrings.htCenter | handsontableLib.handsontableLibStrings.htRight | handsontableLib.handsontableLibStrings.htJustify | handsontableLib.handsontableLibStrings.htTop | handsontableLib.handsontableLibStrings.htMiddle | handsontableLib.handsontableLibStrings.htBottom, 
-      scala.Unit
-    ] = null,
-    beforeChange: js.Function2[
-      /* changes */ js.Array[handsontableLib.handsontableMod.HandsontableNs.CellChange], 
-      /* source */ handsontableLib.handsontableMod.HandsontableNs.ChangeSource, 
-      scala.Unit | scala.Boolean
-    ] = null,
-    beforeChangeRender: js.Function2[
-      /* changes */ js.Array[handsontableLib.handsontableMod.HandsontableNs.CellChange], 
-      /* source */ handsontableLib.handsontableMod.HandsontableNs.ChangeSource, 
-      scala.Unit
-    ] = null,
-    beforeColumnMove: js.Function2[/* columns */ js.Array[scala.Double], /* target */ scala.Double, scala.Unit] = null,
-    beforeColumnResize: js.Function3[
-      /* currentColumn */ scala.Double, 
-      /* newSize */ scala.Double, 
-      /* isDoubleClick */ scala.Boolean, 
-      scala.Unit | scala.Double
-    ] = null,
-    beforeColumnSort: js.Function2[
-      /* currentSortConfig */ js.Array[handsontableLib.handsontableMod.HandsontableNs.columnSortingNs.Config], 
-      /* destinationSortConfigs */ js.Array[handsontableLib.handsontableMod.HandsontableNs.columnSortingNs.Config], 
-      scala.Unit | scala.Boolean
-    ] = null,
-    beforeContextMenuSetItems: js.Function1[
-      /* menuItems */ js.Array[handsontableLib.handsontableMod.HandsontableNs.contextMenuNs.MenuItemConfig], 
-      scala.Unit
-    ] = null,
-    beforeContextMenuShow: js.Function1[
-      /* context */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ContextMenu, 
-      scala.Unit
-    ] = null,
-    beforeCopy: js.Function2[
-      /* data */ js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]], 
-      /* coords */ js.Array[handsontableLib.handsontableMod.HandsontableNs.pluginsNs.RangeType], 
-      scala.Unit | scala.Boolean
-    ] = null,
-    beforeCreateCol: js.Function3[
-      /* index */ scala.Double, 
-      /* amount */ scala.Double, 
-      /* source */ js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.ChangeSource], 
-      scala.Unit
-    ] = null,
-    beforeCreateRow: js.Function3[
-      /* index */ scala.Double, 
-      /* amount */ scala.Double, 
-      /* source */ js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.ChangeSource], 
-      scala.Unit
-    ] = null,
-    beforeCut: js.Function2[
-      /* data */ js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]], 
-      /* coords */ js.Array[handsontableLib.handsontableMod.HandsontableNs.pluginsNs.RangeType], 
-      scala.Unit | scala.Boolean
-    ] = null,
-    beforeDetachChild: js.Function2[
-      /* parent */ handsontableLib.handsontableMod.HandsontableNs.RowObject, 
-      /* element */ handsontableLib.handsontableMod.HandsontableNs.RowObject, 
-      scala.Unit
-    ] = null,
-    beforeDrawBorders: js.Function2[
-      /* corners */ js.Array[scala.Double], 
-      /* borderClassName */ js.UndefOr[
-        handsontableLib.handsontableLibStrings.current | handsontableLib.handsontableLibStrings.area | handsontableLib.handsontableLibStrings.highlight
-      ], 
-      scala.Unit
-    ] = null,
-    beforeDropdownMenuSetItems: js.Function1[
-      /* menuItems */ js.Array[handsontableLib.handsontableMod.HandsontableNs.contextMenuNs.MenuItemConfig], 
-      scala.Unit
-    ] = null,
-    beforeDropdownMenuShow: js.Function1[
-      /* instance */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.DropdownMenu, 
-      scala.Unit
-    ] = null,
-    beforeFilter: js.Function1[
-      /* conditionsStack */ js.Array[
-        handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ColumnConditions
-      ], 
-      scala.Unit | scala.Boolean
-    ] = null,
-    beforeGetCellMeta: js.Function3[
-      /* row */ scala.Double, 
-      /* col */ scala.Double, 
-      /* cellProperties */ handsontableLib.handsontableMod.HandsontableNs.CellProperties, 
-      scala.Unit
-    ] = null,
-    beforeHideColumns: js.Function3[
-      /* currentHideConfig */ js.Array[scala.Double], 
-      /* destinationHideConfig */ js.Array[scala.Double], 
-      /* actionPossible */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    beforeHideRows: js.Function3[
-      /* currentHideConfig */ js.Array[scala.Double], 
-      /* destinationHideConfig */ js.Array[scala.Double], 
-      /* actionPossible */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    beforeInit: js.Function0[scala.Unit] = null,
-    beforeInitWalkontable: js.Function1[/* walkontableConfig */ js.Object, scala.Unit] = null,
-    beforeKeyDown: js.Function1[/* event */ stdLib.KeyboardEvent, scala.Unit] = null,
-    beforeLanguageChange: js.Function1[/* languageCode */ java.lang.String, scala.Unit] = null,
-    beforeMergeCells: js.Function2[
-      /* cellRange */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange, 
-      /* auto */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    beforeOnCellContextMenu: js.Function3[
-      /* event */ stdLib.MouseEvent, 
-      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
-      /* TD */ stdLib.HTMLTableCellElement, 
-      scala.Unit
-    ] = null,
-    beforeOnCellMouseDown: js.Function4[
-      /* event */ stdLib.MouseEvent, 
-      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
-      /* TD */ stdLib.HTMLTableCellElement, 
-      /* controller */ handsontableLib.handsontableMod.HandsontableNs.SelectionController, 
-      scala.Unit
-    ] = null,
-    beforeOnCellMouseOut: js.Function3[
-      /* event */ stdLib.MouseEvent, 
-      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
-      /* TD */ stdLib.HTMLTableCellElement, 
-      scala.Unit
-    ] = null,
-    beforeOnCellMouseOver: js.Function4[
-      /* event */ stdLib.MouseEvent, 
-      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
-      /* TD */ stdLib.HTMLTableCellElement, 
-      /* controller */ handsontableLib.handsontableMod.HandsontableNs.SelectionController, 
-      scala.Unit
-    ] = null,
-    beforeOnCellMouseUp: js.Function4[
-      /* event */ stdLib.MouseEvent, 
-      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
-      /* TD */ stdLib.HTMLTableCellElement, 
-      /* controller */ handsontableLib.handsontableMod.HandsontableNs.SelectionController, 
-      scala.Unit
-    ] = null,
-    beforePaste: js.Function2[
-      /* data */ js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]], 
-      /* coords */ js.Array[handsontableLib.handsontableMod.HandsontableNs.pluginsNs.RangeType], 
-      scala.Unit | scala.Boolean
-    ] = null,
-    beforeRedo: js.Function1[
-      /* action */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.UndoRedoAction, 
-      scala.Unit
-    ] = null,
-    beforeRefreshDimensions: js.Function3[
-      /* previousDimensions */ js.Object, 
-      /* currentDimensions */ js.Object, 
-      /* actionPossible */ scala.Boolean, 
-      scala.Boolean | scala.Unit
-    ] = null,
-    beforeRemoveCellClassNames: js.Function0[js.Array[java.lang.String] | scala.Unit] = null,
-    beforeRemoveCellMeta: js.Function4[
-      /* row */ scala.Double, 
-      /* column */ scala.Double, 
-      /* key */ java.lang.String, 
-      /* value */ js.Any, 
-      scala.Unit
-    ] = null,
-    beforeRemoveCol: js.Function4[
-      /* index */ scala.Double, 
-      /* amount */ scala.Double, 
-      /* physicalColumns */ js.Array[scala.Double], 
-      /* source */ js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.ChangeSource], 
-      scala.Unit
-    ] = null,
-    beforeRemoveRow: js.Function4[
-      /* index */ scala.Double, 
-      /* amount */ scala.Double, 
-      /* physicalColumns */ js.Array[scala.Double], 
-      /* source */ js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.ChangeSource], 
-      scala.Unit
-    ] = null,
-    beforeRender: js.Function2[
-      /* isForced */ scala.Boolean, 
-      /* skipRender */ handsontableLib.Anon_SkipRender, 
-      scala.Unit
-    ] = null,
-    beforeRenderer: js.Function6[
-      /* TD */ stdLib.HTMLTableCellElement, 
-      /* row */ scala.Double, 
-      /* col */ scala.Double, 
-      /* prop */ java.lang.String | scala.Double, 
-      /* value */ handsontableLib.handsontableMod.HandsontableNs.CellValue, 
-      /* cellProperties */ handsontableLib.handsontableMod.HandsontableNs.CellProperties, 
-      scala.Unit
-    ] = null,
-    beforeRowMove: js.Function2[/* columns */ js.Array[scala.Double], /* target */ scala.Double, scala.Unit] = null,
-    beforeRowResize: js.Function3[
-      /* currentRow */ scala.Double, 
-      /* newSize */ scala.Double, 
-      /* isDoubleClick */ scala.Boolean, 
-      scala.Double | scala.Unit
-    ] = null,
-    beforeSetRangeEnd: js.Function1[
-      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
-      scala.Unit
-    ] = null,
-    beforeSetRangeStart: js.Function1[
-      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
-      scala.Unit
-    ] = null,
-    beforeSetRangeStartOnly: js.Function1[
-      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
-      scala.Unit
-    ] = null,
-    beforeStretchingColumnWidth: js.Function2[
-      /* stretchedWidth */ scala.Double, 
-      /* column */ scala.Double, 
-      scala.Unit | scala.Double
-    ] = null,
-    beforeTouchScroll: js.Function0[scala.Unit] = null,
-    beforeTrimRow: js.Function3[
-      /* currentTrimConfig */ js.Array[scala.Double], 
-      /* destinationTrimConfig */ js.Array[scala.Double], 
-      /* actionPossible */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    beforeUndo: js.Function1[
-      /* action */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.UndoRedoAction, 
-      scala.Unit
-    ] = null,
-    beforeUnhideColumns: js.Function3[
-      /* currentHideConfig */ js.Array[scala.Double], 
-      /* destinationHideConfig */ js.Array[scala.Double], 
-      /* actionPossible */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    beforeUnhideRows: js.Function3[
-      /* currentHideConfig */ js.Array[scala.Double], 
-      /* destinationHideConfig */ js.Array[scala.Double], 
-      /* actionPossible */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    beforeUnmergeCells: js.Function2[
-      /* cellRange */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange, 
-      /* auto */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    beforeUntrimRow: js.Function3[
-      /* currentTrimConfig */ js.Array[scala.Double], 
-      /* destinationTrimConfig */ js.Array[scala.Double], 
-      /* actionPossible */ scala.Boolean, 
-      scala.Unit
-    ] = null,
-    beforeValidate: js.Function4[
-      /* value */ handsontableLib.handsontableMod.HandsontableNs.CellValue, 
-      /* row */ scala.Double, 
-      /* prop */ java.lang.String | scala.Double, 
-      /* source */ js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.ChangeSource], 
-      scala.Unit
-    ] = null,
-    beforeValueRender: js.Function2[
-      /* value */ handsontableLib.handsontableMod.HandsontableNs.CellValue, 
-      /* cellProperties */ handsontableLib.handsontableMod.HandsontableNs.CellProperties, 
-      scala.Unit
-    ] = null,
-    construct: js.Function0[scala.Unit] = null,
-    hiddenColumn: js.Function1[/* column */ scala.Double, scala.Unit] = null,
-    hiddenRow: js.Function1[/* row */ scala.Double, scala.Unit] = null,
-    init: js.Function0[scala.Unit] = null,
-    modifyAutofillRange: js.Function2[
-      /* startArea */ js.Array[js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]], 
-      /* entireArea */ js.Array[js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]], 
-      scala.Unit
-    ] = null,
-    modifyCol: js.Function1[/* col */ scala.Double, scala.Unit] = null,
-    modifyColHeader: js.Function1[/* column */ scala.Double, scala.Unit] = null,
-    modifyColWidth: js.Function2[/* width */ scala.Double, /* col */ scala.Double, scala.Unit] = null,
-    modifyColumnHeaderHeight: js.Function0[scala.Unit] = null,
-    modifyCopyableRange: js.Function1[
-      /* copyableRanges */ js.Array[handsontableLib.handsontableMod.HandsontableNs.pluginsNs.RangeType], 
-      scala.Unit
-    ] = null,
-    modifyData: js.Function4[
-      /* row */ scala.Double, 
-      /* column */ scala.Double, 
-      /* valueHolder */ handsontableLib.Anon_ValueCellValue, 
-      /* ioMode */ handsontableLib.handsontableLibStrings.get | handsontableLib.handsontableLibStrings.set, 
-      scala.Unit
-    ] = null,
-    modifyGetCellCoords: js.Function3[
-      /* row */ scala.Double, 
-      /* column */ scala.Double, 
-      /* topmost */ scala.Boolean, 
-      scala.Unit | (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double])
-    ] = null,
-    modifyRow: js.Function1[/* row */ scala.Double, scala.Unit] = null,
-    modifyRowData: js.Function1[/* row */ scala.Double, scala.Unit] = null,
-    modifyRowHeader: js.Function1[/* row */ scala.Double, scala.Unit] = null
+    afterAddChild: (/* parent */ handsontableLib.handsontableMod.HandsontableNs.RowObject, /* element */ handsontableLib.handsontableMod.HandsontableNs.RowObject | scala.Unit, /* index */ scala.Double | scala.Unit) => scala.Unit = null,
+    afterBeginEditing: (/* row */ scala.Double, /* column */ scala.Double) => scala.Unit = null,
+    afterCellMetaReset: () => scala.Unit = null,
+    afterChange: (/* changes */ js.Array[handsontableLib.handsontableMod.HandsontableNs.CellChange] | scala.Null, /* source */ handsontableLib.handsontableMod.HandsontableNs.ChangeSource) => scala.Unit = null,
+    afterChangesObserved: () => scala.Unit = null,
+    afterColumnMove: (/* startColumn */ scala.Double, /* endColumn */ scala.Double) => scala.Unit = null,
+    afterColumnResize: (/* currentColumn */ scala.Double, /* newSize */ scala.Double, /* isDoubleClick */ scala.Boolean) => scala.Unit = null,
+    afterColumnSort: (/* currentSortConfig */ js.Array[handsontableLib.handsontableMod.HandsontableNs.columnSortingNs.Config], /* destinationSortConfigs */ js.Array[handsontableLib.handsontableMod.HandsontableNs.columnSortingNs.Config]) => scala.Unit = null,
+    afterContextMenuDefaultOptions: /* predefinedItems */ js.Array[
+      handsontableLib.handsontableMod.HandsontableNs.contextMenuNs.PredefinedMenuItemKey | handsontableLib.handsontableMod.HandsontableNs.contextMenuNs.MenuItemConfig
+    ] => scala.Unit = null,
+    afterContextMenuHide: /* context */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ContextMenu => scala.Unit = null,
+    afterContextMenuShow: /* context */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ContextMenu => scala.Unit = null,
+    afterCopy: (/* data */ js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]], /* coords */ js.Array[handsontableLib.handsontableMod.HandsontableNs.pluginsNs.RangeType]) => scala.Unit = null,
+    afterCopyLimit: (/* selectedRows */ scala.Double, /* selectedColumnds */ scala.Double, /* copyRowsLimit */ scala.Double, /* copyColumnsLimit */ scala.Double) => scala.Unit = null,
+    afterCreateCol: (/* index */ scala.Double, /* amount */ scala.Double) => scala.Unit = null,
+    afterCreateRow: (/* index */ scala.Double, /* amount */ scala.Double) => scala.Unit = null,
+    afterCut: (/* data */ js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]], /* coords */ js.Array[handsontableLib.handsontableMod.HandsontableNs.pluginsNs.RangeType]) => scala.Unit = null,
+    afterDeselect: () => scala.Unit = null,
+    afterDestroy: () => scala.Unit = null,
+    afterDetachChild: (/* parent */ handsontableLib.handsontableMod.HandsontableNs.RowObject, /* element */ handsontableLib.handsontableMod.HandsontableNs.RowObject) => scala.Unit = null,
+    afterDocumentKeyDown: /* event */ stdLib.KeyboardEvent => scala.Unit = null,
+    afterDrawSelection: (/* currentRow */ scala.Double, /* currentColumn */ scala.Double, /* cornersOfSelection */ js.Array[scala.Double], /* layerLevel */ scala.Double | scala.Unit) => java.lang.String | scala.Unit = null,
+    afterDropdownMenuDefaultOptions: /* predefinedItems */ js.Array[
+      handsontableLib.handsontableMod.HandsontableNs.contextMenuNs.PredefinedMenuItemKey | handsontableLib.handsontableMod.HandsontableNs.contextMenuNs.MenuItemConfig
+    ] => scala.Unit = null,
+    afterDropdownMenuHide: /* instance */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.DropdownMenu => scala.Unit = null,
+    afterDropdownMenuShow: /* instance */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.DropdownMenu => scala.Unit = null,
+    afterFilter: /* conditionsStack */ js.Array[
+      handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ColumnConditions
+    ] => scala.Unit = null,
+    afterGetCellMeta: (/* row */ scala.Double, /* col */ scala.Double, /* cellProperties */ handsontableLib.handsontableMod.HandsontableNs.CellProperties) => scala.Unit = null,
+    afterGetColHeader: (/* col */ scala.Double, /* TH */ stdLib.HTMLTableHeaderCellElement) => scala.Unit = null,
+    afterGetColumnHeaderRenderers: /* renderers */ js.Array[
+      js.Function2[/* col */ scala.Double, /* TH */ stdLib.HTMLTableHeaderCellElement, scala.Unit]
+    ] => scala.Unit = null,
+    afterGetRowHeader: (/* row */ scala.Double, /* TH */ stdLib.HTMLTableHeaderCellElement) => scala.Unit = null,
+    afterGetRowHeaderRenderers: /* renderers */ js.Array[
+      js.Function2[/* row */ scala.Double, /* TH */ stdLib.HTMLTableHeaderCellElement, scala.Unit]
+    ] => scala.Unit = null,
+    afterHideColumns: (/* currentHideConfig */ js.Array[scala.Double], /* destinationHideConfig */ js.Array[scala.Double], /* actionPossible */ scala.Boolean, /* stateChanged */ scala.Boolean) => scala.Unit = null,
+    afterHideRows: (/* currentHideConfig */ js.Array[scala.Double], /* destinationHideConfig */ js.Array[scala.Double], /* actionPossible */ scala.Boolean, /* stateChanged */ scala.Boolean) => scala.Unit = null,
+    afterInit: () => scala.Unit = null,
+    afterLanguageChange: /* languageCode */ java.lang.String => scala.Unit = null,
+    afterListen: () => scala.Unit = null,
+    afterLoadData: /* initialLoad */ scala.Boolean => scala.Unit = null,
+    afterMergeCells: (/* cellRange */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange, /* mergeParent */ handsontableLib.handsontableMod.HandsontableNs.mergeCellsNs.Settings, /* auto */ scala.Boolean) => scala.Unit = null,
+    afterModifyTransformEnd: (/* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, /* rowTransformDir */ handsontableLib.handsontableLibNumbers.`-1` | handsontableLib.handsontableLibNumbers.`0`, /* colTransformDir */ handsontableLib.handsontableLibNumbers.`-1` | handsontableLib.handsontableLibNumbers.`0`) => scala.Unit = null,
+    afterModifyTransformStart: (/* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, /* rowTransformDir */ handsontableLib.handsontableLibNumbers.`-1` | handsontableLib.handsontableLibNumbers.`0`, /* colTransformDir */ handsontableLib.handsontableLibNumbers.`-1` | handsontableLib.handsontableLibNumbers.`0`) => scala.Unit = null,
+    afterMomentumScroll: () => scala.Unit = null,
+    afterOnCellContextMenu: (/* event */ stdLib.MouseEvent, /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, /* TD */ stdLib.HTMLTableCellElement) => scala.Unit = null,
+    afterOnCellCornerDblClick: /* event */ stdLib.MouseEvent => scala.Unit = null,
+    afterOnCellCornerMouseDown: /* event */ stdLib.MouseEvent => scala.Unit = null,
+    afterOnCellMouseDown: (/* event */ stdLib.MouseEvent, /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, /* TD */ stdLib.HTMLTableCellElement) => scala.Unit = null,
+    afterOnCellMouseOut: (/* event */ stdLib.MouseEvent, /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, /* TD */ stdLib.HTMLTableCellElement) => scala.Unit = null,
+    afterOnCellMouseOver: (/* event */ stdLib.MouseEvent, /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, /* TD */ stdLib.HTMLTableCellElement) => scala.Unit = null,
+    afterOnCellMouseUp: (/* event */ stdLib.MouseEvent, /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, /* TD */ stdLib.HTMLTableCellElement) => scala.Unit = null,
+    afterPaste: (/* data */ js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]], /* coords */ js.Array[handsontableLib.handsontableMod.HandsontableNs.pluginsNs.RangeType]) => scala.Unit = null,
+    afterPluginsInitialized: () => scala.Unit = null,
+    afterRedo: /* action */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.UndoRedoAction => scala.Unit = null,
+    afterRefreshDimensions: (/* previousDimensions */ js.Object, /* currentDimensions */ js.Object, /* stateChanged */ scala.Boolean) => scala.Unit = null,
+    afterRemoveCellMeta: (/* row */ scala.Double, /* column */ scala.Double, /* key */ java.lang.String, /* value */ js.Any) => scala.Unit = null,
+    afterRemoveCol: (/* index */ scala.Double, /* amount */ scala.Double) => scala.Unit = null,
+    afterRemoveRow: (/* index */ scala.Double, /* amount */ scala.Double) => scala.Unit = null,
+    afterRender: /* isForced */ scala.Boolean => scala.Unit = null,
+    afterRenderer: (/* TD */ stdLib.HTMLTableCellElement, /* row */ scala.Double, /* col */ scala.Double, /* prop */ java.lang.String | scala.Double, /* value */ java.lang.String, /* cellProperties */ handsontableLib.handsontableMod.HandsontableNs.CellProperties) => scala.Unit = null,
+    afterRowMove: (/* startRow */ scala.Double, /* endRow */ scala.Double) => scala.Unit = null,
+    afterRowResize: (/* currentRow */ scala.Double, /* newSize */ scala.Double, /* isDoubleClick */ scala.Boolean) => scala.Unit = null,
+    afterScrollHorizontally: () => scala.Unit = null,
+    afterScrollVertically: () => scala.Unit = null,
+    afterSelection: (/* row */ scala.Double, /* column */ scala.Double, /* row2 */ scala.Double, /* column2 */ scala.Double, /* preventScrolling */ handsontableLib.Anon_Value, /* selectionLayerLevel */ scala.Double) => scala.Unit = null,
+    afterSelectionByProp: (/* row */ scala.Double, /* prop */ java.lang.String, /* row2 */ scala.Double, /* prop2 */ java.lang.String, /* preventScrolling */ handsontableLib.Anon_Value, /* selectionLayerLevel */ scala.Double) => scala.Unit = null,
+    afterSelectionEnd: (/* row */ scala.Double, /* column */ scala.Double, /* row2 */ scala.Double, /* column2 */ scala.Double, /* selectionLayerLevel */ scala.Double) => scala.Unit = null,
+    afterSelectionEndByProp: (/* row */ scala.Double, /* prop */ java.lang.String, /* row2 */ scala.Double, /* prop2 */ java.lang.String, /* selectionLayerLevel */ scala.Double) => scala.Unit = null,
+    afterSetCellMeta: (/* row */ scala.Double, /* col */ scala.Double, /* key */ java.lang.String, /* value */ js.Any) => scala.Unit = null,
+    afterSetDataAtCell: (/* changes */ js.Array[handsontableLib.handsontableMod.HandsontableNs.CellChange], /* source */ js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.ChangeSource]) => scala.Unit = null,
+    afterSetDataAtRowProp: (/* changes */ js.Array[handsontableLib.handsontableMod.HandsontableNs.CellChange], /* source */ js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.ChangeSource]) => scala.Unit = null,
+    afterTrimRow: (/* currentTrimConfig */ js.Array[scala.Double], /* destinationTrimConfig */ js.Array[scala.Double], /* actionPossible */ scala.Boolean, /* stateChanged */ scala.Boolean) => scala.Unit = null,
+    afterUndo: /* action */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.UndoRedoAction => scala.Unit = null,
+    afterUnhideColumns: (/* currentHideConfig */ js.Array[scala.Double], /* destinationHideConfig */ js.Array[scala.Double], /* actionPossible */ scala.Boolean, /* stateChanged */ scala.Boolean) => scala.Unit = null,
+    afterUnhideRows: (/* currentHideConfig */ js.Array[scala.Double], /* destinationHideConfig */ js.Array[scala.Double], /* actionPossible */ scala.Boolean, /* stateChanged */ scala.Boolean) => scala.Unit = null,
+    afterUnlisten: () => scala.Unit = null,
+    afterUnmergeCells: (/* cellRange */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange, /* auto */ scala.Boolean) => scala.Unit = null,
+    afterUntrimRow: (/* currentTrimConfig */ js.Array[scala.Double], /* destinationTrimConfig */ js.Array[scala.Double], /* actionPossible */ scala.Boolean, /* stateChanged */ scala.Boolean) => scala.Unit = null,
+    afterUpdateSettings: /* newSettings */ handsontableLib.handsontableMod.HandsontableNs.GridSettings => scala.Unit = null,
+    afterValidate: (/* isValid */ scala.Boolean, /* value */ handsontableLib.handsontableMod.HandsontableNs.CellValue, /* row */ scala.Double, /* prop */ java.lang.String | scala.Double, /* source */ handsontableLib.handsontableMod.HandsontableNs.ChangeSource) => scala.Unit | scala.Boolean = null,
+    afterViewportColumnCalculatorOverride: /* calc */ handsontableLib.handsontableMod.HandsontableNs.ViewportColumnsCalculator => scala.Unit = null,
+    afterViewportRowCalculatorOverride: /* calc */ handsontableLib.handsontableMod.HandsontableNs.ViewportColumnsCalculator => scala.Unit = null,
+    beforeAddChild: (/* parent */ handsontableLib.handsontableMod.HandsontableNs.RowObject, /* element */ handsontableLib.handsontableMod.HandsontableNs.RowObject | scala.Unit, /* index */ scala.Double | scala.Unit) => scala.Unit = null,
+    beforeAutofill: (/* start */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, /* end */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, /* data */ js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]]) => scala.Unit = null,
+    beforeAutofillInsidePopulate: (/* index */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, /* direction */ handsontableLib.handsontableLibStrings.up | handsontableLib.handsontableLibStrings.down | handsontableLib.handsontableLibStrings.left | handsontableLib.handsontableLibStrings.right, /* input */ js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]], /* deltas */ js.Array[_]) => scala.Unit = null,
+    beforeCellAlignment: (/* stateBefore */ org.scalablytyped.runtime.NumberDictionary[js.Array[java.lang.String]], /* range */ js.Array[handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange], /* type */ handsontableLib.handsontableLibStrings.horizontal | handsontableLib.handsontableLibStrings.vertical, /* alignmentClass */ handsontableLib.handsontableLibStrings.htLeft | handsontableLib.handsontableLibStrings.htCenter | handsontableLib.handsontableLibStrings.htRight | handsontableLib.handsontableLibStrings.htJustify | handsontableLib.handsontableLibStrings.htTop | handsontableLib.handsontableLibStrings.htMiddle | handsontableLib.handsontableLibStrings.htBottom) => scala.Unit = null,
+    beforeChange: (/* changes */ js.Array[handsontableLib.handsontableMod.HandsontableNs.CellChange], /* source */ handsontableLib.handsontableMod.HandsontableNs.ChangeSource) => scala.Unit | scala.Boolean = null,
+    beforeChangeRender: (/* changes */ js.Array[handsontableLib.handsontableMod.HandsontableNs.CellChange], /* source */ handsontableLib.handsontableMod.HandsontableNs.ChangeSource) => scala.Unit = null,
+    beforeColumnMove: (/* columns */ js.Array[scala.Double], /* target */ scala.Double) => scala.Unit = null,
+    beforeColumnResize: (/* currentColumn */ scala.Double, /* newSize */ scala.Double, /* isDoubleClick */ scala.Boolean) => scala.Unit | scala.Double = null,
+    beforeColumnSort: (/* currentSortConfig */ js.Array[handsontableLib.handsontableMod.HandsontableNs.columnSortingNs.Config], /* destinationSortConfigs */ js.Array[handsontableLib.handsontableMod.HandsontableNs.columnSortingNs.Config]) => scala.Unit | scala.Boolean = null,
+    beforeContextMenuSetItems: /* menuItems */ js.Array[handsontableLib.handsontableMod.HandsontableNs.contextMenuNs.MenuItemConfig] => scala.Unit = null,
+    beforeContextMenuShow: /* context */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ContextMenu => scala.Unit = null,
+    beforeCopy: (/* data */ js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]], /* coords */ js.Array[handsontableLib.handsontableMod.HandsontableNs.pluginsNs.RangeType]) => scala.Unit | scala.Boolean = null,
+    beforeCreateCol: (/* index */ scala.Double, /* amount */ scala.Double, /* source */ js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.ChangeSource]) => scala.Unit = null,
+    beforeCreateRow: (/* index */ scala.Double, /* amount */ scala.Double, /* source */ js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.ChangeSource]) => scala.Unit = null,
+    beforeCut: (/* data */ js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]], /* coords */ js.Array[handsontableLib.handsontableMod.HandsontableNs.pluginsNs.RangeType]) => scala.Unit | scala.Boolean = null,
+    beforeDetachChild: (/* parent */ handsontableLib.handsontableMod.HandsontableNs.RowObject, /* element */ handsontableLib.handsontableMod.HandsontableNs.RowObject) => scala.Unit = null,
+    beforeDrawBorders: (/* corners */ js.Array[scala.Double], /* borderClassName */ js.UndefOr[
+      handsontableLib.handsontableLibStrings.current | handsontableLib.handsontableLibStrings.area | handsontableLib.handsontableLibStrings.highlight
+    ]) => scala.Unit = null,
+    beforeDropdownMenuSetItems: /* menuItems */ js.Array[handsontableLib.handsontableMod.HandsontableNs.contextMenuNs.MenuItemConfig] => scala.Unit = null,
+    beforeDropdownMenuShow: /* instance */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.DropdownMenu => scala.Unit = null,
+    beforeFilter: /* conditionsStack */ js.Array[
+      handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ColumnConditions
+    ] => scala.Unit | scala.Boolean = null,
+    beforeGetCellMeta: (/* row */ scala.Double, /* col */ scala.Double, /* cellProperties */ handsontableLib.handsontableMod.HandsontableNs.CellProperties) => scala.Unit = null,
+    beforeHideColumns: (/* currentHideConfig */ js.Array[scala.Double], /* destinationHideConfig */ js.Array[scala.Double], /* actionPossible */ scala.Boolean) => scala.Unit = null,
+    beforeHideRows: (/* currentHideConfig */ js.Array[scala.Double], /* destinationHideConfig */ js.Array[scala.Double], /* actionPossible */ scala.Boolean) => scala.Unit = null,
+    beforeInit: () => scala.Unit = null,
+    beforeInitWalkontable: /* walkontableConfig */ js.Object => scala.Unit = null,
+    beforeKeyDown: /* event */ stdLib.KeyboardEvent => scala.Unit = null,
+    beforeLanguageChange: /* languageCode */ java.lang.String => scala.Unit = null,
+    beforeMergeCells: (/* cellRange */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange, /* auto */ scala.Boolean) => scala.Unit = null,
+    beforeOnCellContextMenu: (/* event */ stdLib.MouseEvent, /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, /* TD */ stdLib.HTMLTableCellElement) => scala.Unit = null,
+    beforeOnCellMouseDown: (/* event */ stdLib.MouseEvent, /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, /* TD */ stdLib.HTMLTableCellElement, /* controller */ handsontableLib.handsontableMod.HandsontableNs.SelectionController) => scala.Unit = null,
+    beforeOnCellMouseOut: (/* event */ stdLib.MouseEvent, /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, /* TD */ stdLib.HTMLTableCellElement) => scala.Unit = null,
+    beforeOnCellMouseOver: (/* event */ stdLib.MouseEvent, /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, /* TD */ stdLib.HTMLTableCellElement, /* controller */ handsontableLib.handsontableMod.HandsontableNs.SelectionController) => scala.Unit = null,
+    beforeOnCellMouseUp: (/* event */ stdLib.MouseEvent, /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, /* TD */ stdLib.HTMLTableCellElement, /* controller */ handsontableLib.handsontableMod.HandsontableNs.SelectionController) => scala.Unit = null,
+    beforePaste: (/* data */ js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]], /* coords */ js.Array[handsontableLib.handsontableMod.HandsontableNs.pluginsNs.RangeType]) => scala.Unit | scala.Boolean = null,
+    beforeRedo: /* action */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.UndoRedoAction => scala.Unit = null,
+    beforeRefreshDimensions: (/* previousDimensions */ js.Object, /* currentDimensions */ js.Object, /* actionPossible */ scala.Boolean) => scala.Boolean | scala.Unit = null,
+    beforeRemoveCellClassNames: () => js.Array[java.lang.String] | scala.Unit = null,
+    beforeRemoveCellMeta: (/* row */ scala.Double, /* column */ scala.Double, /* key */ java.lang.String, /* value */ js.Any) => scala.Unit = null,
+    beforeRemoveCol: (/* index */ scala.Double, /* amount */ scala.Double, /* physicalColumns */ js.Array[scala.Double], /* source */ js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.ChangeSource]) => scala.Unit = null,
+    beforeRemoveRow: (/* index */ scala.Double, /* amount */ scala.Double, /* physicalColumns */ js.Array[scala.Double], /* source */ js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.ChangeSource]) => scala.Unit = null,
+    beforeRender: (/* isForced */ scala.Boolean, /* skipRender */ handsontableLib.Anon_SkipRender) => scala.Unit = null,
+    beforeRenderer: (/* TD */ stdLib.HTMLTableCellElement, /* row */ scala.Double, /* col */ scala.Double, /* prop */ java.lang.String | scala.Double, /* value */ handsontableLib.handsontableMod.HandsontableNs.CellValue, /* cellProperties */ handsontableLib.handsontableMod.HandsontableNs.CellProperties) => scala.Unit = null,
+    beforeRowMove: (/* columns */ js.Array[scala.Double], /* target */ scala.Double) => scala.Unit = null,
+    beforeRowResize: (/* currentRow */ scala.Double, /* newSize */ scala.Double, /* isDoubleClick */ scala.Boolean) => scala.Double | scala.Unit = null,
+    beforeSetRangeEnd: /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords => scala.Unit = null,
+    beforeSetRangeStart: /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords => scala.Unit = null,
+    beforeSetRangeStartOnly: /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords => scala.Unit = null,
+    beforeStretchingColumnWidth: (/* stretchedWidth */ scala.Double, /* column */ scala.Double) => scala.Unit | scala.Double = null,
+    beforeTouchScroll: () => scala.Unit = null,
+    beforeTrimRow: (/* currentTrimConfig */ js.Array[scala.Double], /* destinationTrimConfig */ js.Array[scala.Double], /* actionPossible */ scala.Boolean) => scala.Unit = null,
+    beforeUndo: /* action */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.UndoRedoAction => scala.Unit = null,
+    beforeUnhideColumns: (/* currentHideConfig */ js.Array[scala.Double], /* destinationHideConfig */ js.Array[scala.Double], /* actionPossible */ scala.Boolean) => scala.Unit = null,
+    beforeUnhideRows: (/* currentHideConfig */ js.Array[scala.Double], /* destinationHideConfig */ js.Array[scala.Double], /* actionPossible */ scala.Boolean) => scala.Unit = null,
+    beforeUnmergeCells: (/* cellRange */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange, /* auto */ scala.Boolean) => scala.Unit = null,
+    beforeUntrimRow: (/* currentTrimConfig */ js.Array[scala.Double], /* destinationTrimConfig */ js.Array[scala.Double], /* actionPossible */ scala.Boolean) => scala.Unit = null,
+    beforeValidate: (/* value */ handsontableLib.handsontableMod.HandsontableNs.CellValue, /* row */ scala.Double, /* prop */ java.lang.String | scala.Double, /* source */ js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.ChangeSource]) => scala.Unit = null,
+    beforeValueRender: (/* value */ handsontableLib.handsontableMod.HandsontableNs.CellValue, /* cellProperties */ handsontableLib.handsontableMod.HandsontableNs.CellProperties) => scala.Unit = null,
+    construct: () => scala.Unit = null,
+    hiddenColumn: /* column */ scala.Double => scala.Unit = null,
+    hiddenRow: /* row */ scala.Double => scala.Unit = null,
+    init: () => scala.Unit = null,
+    modifyAutofillRange: (/* startArea */ js.Array[js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]], /* entireArea */ js.Array[js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]]) => scala.Unit = null,
+    modifyCol: /* col */ scala.Double => scala.Unit = null,
+    modifyColHeader: /* column */ scala.Double => scala.Unit = null,
+    modifyColWidth: (/* width */ scala.Double, /* col */ scala.Double) => scala.Unit = null,
+    modifyColumnHeaderHeight: () => scala.Unit = null,
+    modifyCopyableRange: /* copyableRanges */ js.Array[handsontableLib.handsontableMod.HandsontableNs.pluginsNs.RangeType] => scala.Unit = null,
+    modifyData: (/* row */ scala.Double, /* column */ scala.Double, /* valueHolder */ handsontableLib.Anon_ValueCellValue, /* ioMode */ handsontableLib.handsontableLibStrings.get | handsontableLib.handsontableLibStrings.set) => scala.Unit = null,
+    modifyGetCellCoords: (/* row */ scala.Double, /* column */ scala.Double, /* topmost */ scala.Boolean) => scala.Unit | (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]) = null,
+    modifyRow: /* row */ scala.Double => scala.Unit = null,
+    modifyRowData: /* row */ scala.Double => scala.Unit = null,
+    modifyRowHeader: /* row */ scala.Double => scala.Unit = null,
+    modifyRowHeaderWidth: /* rowHeaderWidth */ scala.Double => scala.Unit = null,
+    modifyRowHeight: (/* height */ scala.Double, /* row */ scala.Double) => scala.Unit = null,
+    modifyRowSourceData: /* row */ scala.Double => scala.Unit = null,
+    modifyTransformEnd: /* delta */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords => scala.Unit = null,
+    modifyTransformStart: /* delta */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords => scala.Unit = null,
+    persistentStateLoad: (/* key */ java.lang.String, /* valuePlaceholder */ handsontableLib.Anon_ValueAny) => scala.Unit = null,
+    persistentStateReset: /* key */ java.lang.String => scala.Unit = null,
+    persistentStateSave: (/* key */ java.lang.String, /* value */ js.Any) => scala.Unit = null,
+    skipLengthCache: /* delay */ scala.Double => scala.Unit = null,
+    unmodifyCol: /* col */ scala.Double => scala.Unit = null,
+    unmodifyRow: /* row */ scala.Double => scala.Unit = null
   ): Events = {
     val __obj = js.Dynamic.literal()
-    if (afterAddChild != null) __obj.updateDynamic("afterAddChild")(afterAddChild)
-    if (afterBeginEditing != null) __obj.updateDynamic("afterBeginEditing")(afterBeginEditing)
-    if (afterCellMetaReset != null) __obj.updateDynamic("afterCellMetaReset")(afterCellMetaReset)
-    if (afterChange != null) __obj.updateDynamic("afterChange")(afterChange)
-    if (afterChangesObserved != null) __obj.updateDynamic("afterChangesObserved")(afterChangesObserved)
-    if (afterColumnMove != null) __obj.updateDynamic("afterColumnMove")(afterColumnMove)
-    if (afterColumnResize != null) __obj.updateDynamic("afterColumnResize")(afterColumnResize)
-    if (afterColumnSort != null) __obj.updateDynamic("afterColumnSort")(afterColumnSort)
-    if (afterContextMenuDefaultOptions != null) __obj.updateDynamic("afterContextMenuDefaultOptions")(afterContextMenuDefaultOptions)
-    if (afterContextMenuHide != null) __obj.updateDynamic("afterContextMenuHide")(afterContextMenuHide)
-    if (afterContextMenuShow != null) __obj.updateDynamic("afterContextMenuShow")(afterContextMenuShow)
-    if (afterCopy != null) __obj.updateDynamic("afterCopy")(afterCopy)
-    if (afterCopyLimit != null) __obj.updateDynamic("afterCopyLimit")(afterCopyLimit)
-    if (afterCreateCol != null) __obj.updateDynamic("afterCreateCol")(afterCreateCol)
-    if (afterCreateRow != null) __obj.updateDynamic("afterCreateRow")(afterCreateRow)
-    if (afterCut != null) __obj.updateDynamic("afterCut")(afterCut)
-    if (afterDeselect != null) __obj.updateDynamic("afterDeselect")(afterDeselect)
-    if (afterDestroy != null) __obj.updateDynamic("afterDestroy")(afterDestroy)
-    if (afterDetachChild != null) __obj.updateDynamic("afterDetachChild")(afterDetachChild)
-    if (afterDocumentKeyDown != null) __obj.updateDynamic("afterDocumentKeyDown")(afterDocumentKeyDown)
-    if (afterDrawSelection != null) __obj.updateDynamic("afterDrawSelection")(afterDrawSelection)
-    if (afterDropdownMenuDefaultOptions != null) __obj.updateDynamic("afterDropdownMenuDefaultOptions")(afterDropdownMenuDefaultOptions)
-    if (afterDropdownMenuHide != null) __obj.updateDynamic("afterDropdownMenuHide")(afterDropdownMenuHide)
-    if (afterDropdownMenuShow != null) __obj.updateDynamic("afterDropdownMenuShow")(afterDropdownMenuShow)
-    if (afterFilter != null) __obj.updateDynamic("afterFilter")(afterFilter)
-    if (afterGetCellMeta != null) __obj.updateDynamic("afterGetCellMeta")(afterGetCellMeta)
-    if (afterGetColHeader != null) __obj.updateDynamic("afterGetColHeader")(afterGetColHeader)
-    if (afterGetColumnHeaderRenderers != null) __obj.updateDynamic("afterGetColumnHeaderRenderers")(afterGetColumnHeaderRenderers)
-    if (afterGetRowHeader != null) __obj.updateDynamic("afterGetRowHeader")(afterGetRowHeader)
-    if (afterGetRowHeaderRenderers != null) __obj.updateDynamic("afterGetRowHeaderRenderers")(afterGetRowHeaderRenderers)
-    if (afterHideColumns != null) __obj.updateDynamic("afterHideColumns")(afterHideColumns)
-    if (afterHideRows != null) __obj.updateDynamic("afterHideRows")(afterHideRows)
-    if (afterInit != null) __obj.updateDynamic("afterInit")(afterInit)
-    if (afterLanguageChange != null) __obj.updateDynamic("afterLanguageChange")(afterLanguageChange)
-    if (afterListen != null) __obj.updateDynamic("afterListen")(afterListen)
-    if (afterLoadData != null) __obj.updateDynamic("afterLoadData")(afterLoadData)
-    if (afterMergeCells != null) __obj.updateDynamic("afterMergeCells")(afterMergeCells)
-    if (afterModifyTransformEnd != null) __obj.updateDynamic("afterModifyTransformEnd")(afterModifyTransformEnd)
-    if (afterModifyTransformStart != null) __obj.updateDynamic("afterModifyTransformStart")(afterModifyTransformStart)
-    if (afterMomentumScroll != null) __obj.updateDynamic("afterMomentumScroll")(afterMomentumScroll)
-    if (afterOnCellContextMenu != null) __obj.updateDynamic("afterOnCellContextMenu")(afterOnCellContextMenu)
-    if (afterOnCellCornerDblClick != null) __obj.updateDynamic("afterOnCellCornerDblClick")(afterOnCellCornerDblClick)
-    if (afterOnCellCornerMouseDown != null) __obj.updateDynamic("afterOnCellCornerMouseDown")(afterOnCellCornerMouseDown)
-    if (afterOnCellMouseDown != null) __obj.updateDynamic("afterOnCellMouseDown")(afterOnCellMouseDown)
-    if (afterOnCellMouseOut != null) __obj.updateDynamic("afterOnCellMouseOut")(afterOnCellMouseOut)
-    if (afterOnCellMouseOver != null) __obj.updateDynamic("afterOnCellMouseOver")(afterOnCellMouseOver)
-    if (afterOnCellMouseUp != null) __obj.updateDynamic("afterOnCellMouseUp")(afterOnCellMouseUp)
-    if (afterPaste != null) __obj.updateDynamic("afterPaste")(afterPaste)
-    if (afterPluginsInitialized != null) __obj.updateDynamic("afterPluginsInitialized")(afterPluginsInitialized)
-    if (afterRedo != null) __obj.updateDynamic("afterRedo")(afterRedo)
-    if (afterRefreshDimensions != null) __obj.updateDynamic("afterRefreshDimensions")(afterRefreshDimensions)
-    if (afterRemoveCellMeta != null) __obj.updateDynamic("afterRemoveCellMeta")(afterRemoveCellMeta)
-    if (afterRemoveCol != null) __obj.updateDynamic("afterRemoveCol")(afterRemoveCol)
-    if (afterRemoveRow != null) __obj.updateDynamic("afterRemoveRow")(afterRemoveRow)
-    if (afterRender != null) __obj.updateDynamic("afterRender")(afterRender)
-    if (afterRenderer != null) __obj.updateDynamic("afterRenderer")(afterRenderer)
-    if (afterRowMove != null) __obj.updateDynamic("afterRowMove")(afterRowMove)
-    if (afterRowResize != null) __obj.updateDynamic("afterRowResize")(afterRowResize)
-    if (afterScrollHorizontally != null) __obj.updateDynamic("afterScrollHorizontally")(afterScrollHorizontally)
-    if (afterScrollVertically != null) __obj.updateDynamic("afterScrollVertically")(afterScrollVertically)
-    if (afterSelection != null) __obj.updateDynamic("afterSelection")(afterSelection)
-    if (afterSelectionByProp != null) __obj.updateDynamic("afterSelectionByProp")(afterSelectionByProp)
-    if (afterSelectionEnd != null) __obj.updateDynamic("afterSelectionEnd")(afterSelectionEnd)
-    if (afterSelectionEndByProp != null) __obj.updateDynamic("afterSelectionEndByProp")(afterSelectionEndByProp)
-    if (afterSetCellMeta != null) __obj.updateDynamic("afterSetCellMeta")(afterSetCellMeta)
-    if (afterSetDataAtCell != null) __obj.updateDynamic("afterSetDataAtCell")(afterSetDataAtCell)
-    if (afterSetDataAtRowProp != null) __obj.updateDynamic("afterSetDataAtRowProp")(afterSetDataAtRowProp)
-    if (afterTrimRow != null) __obj.updateDynamic("afterTrimRow")(afterTrimRow)
-    if (afterUndo != null) __obj.updateDynamic("afterUndo")(afterUndo)
-    if (afterUnhideColumns != null) __obj.updateDynamic("afterUnhideColumns")(afterUnhideColumns)
-    if (afterUnhideRows != null) __obj.updateDynamic("afterUnhideRows")(afterUnhideRows)
-    if (afterUnlisten != null) __obj.updateDynamic("afterUnlisten")(afterUnlisten)
-    if (afterUnmergeCells != null) __obj.updateDynamic("afterUnmergeCells")(afterUnmergeCells)
-    if (afterUntrimRow != null) __obj.updateDynamic("afterUntrimRow")(afterUntrimRow)
-    if (afterUpdateSettings != null) __obj.updateDynamic("afterUpdateSettings")(afterUpdateSettings)
-    if (afterValidate != null) __obj.updateDynamic("afterValidate")(afterValidate)
-    if (afterViewportColumnCalculatorOverride != null) __obj.updateDynamic("afterViewportColumnCalculatorOverride")(afterViewportColumnCalculatorOverride)
-    if (afterViewportRowCalculatorOverride != null) __obj.updateDynamic("afterViewportRowCalculatorOverride")(afterViewportRowCalculatorOverride)
-    if (beforeAddChild != null) __obj.updateDynamic("beforeAddChild")(beforeAddChild)
-    if (beforeAutofill != null) __obj.updateDynamic("beforeAutofill")(beforeAutofill)
-    if (beforeAutofillInsidePopulate != null) __obj.updateDynamic("beforeAutofillInsidePopulate")(beforeAutofillInsidePopulate)
-    if (beforeCellAlignment != null) __obj.updateDynamic("beforeCellAlignment")(beforeCellAlignment)
-    if (beforeChange != null) __obj.updateDynamic("beforeChange")(beforeChange)
-    if (beforeChangeRender != null) __obj.updateDynamic("beforeChangeRender")(beforeChangeRender)
-    if (beforeColumnMove != null) __obj.updateDynamic("beforeColumnMove")(beforeColumnMove)
-    if (beforeColumnResize != null) __obj.updateDynamic("beforeColumnResize")(beforeColumnResize)
-    if (beforeColumnSort != null) __obj.updateDynamic("beforeColumnSort")(beforeColumnSort)
-    if (beforeContextMenuSetItems != null) __obj.updateDynamic("beforeContextMenuSetItems")(beforeContextMenuSetItems)
-    if (beforeContextMenuShow != null) __obj.updateDynamic("beforeContextMenuShow")(beforeContextMenuShow)
-    if (beforeCopy != null) __obj.updateDynamic("beforeCopy")(beforeCopy)
-    if (beforeCreateCol != null) __obj.updateDynamic("beforeCreateCol")(beforeCreateCol)
-    if (beforeCreateRow != null) __obj.updateDynamic("beforeCreateRow")(beforeCreateRow)
-    if (beforeCut != null) __obj.updateDynamic("beforeCut")(beforeCut)
-    if (beforeDetachChild != null) __obj.updateDynamic("beforeDetachChild")(beforeDetachChild)
-    if (beforeDrawBorders != null) __obj.updateDynamic("beforeDrawBorders")(beforeDrawBorders)
-    if (beforeDropdownMenuSetItems != null) __obj.updateDynamic("beforeDropdownMenuSetItems")(beforeDropdownMenuSetItems)
-    if (beforeDropdownMenuShow != null) __obj.updateDynamic("beforeDropdownMenuShow")(beforeDropdownMenuShow)
-    if (beforeFilter != null) __obj.updateDynamic("beforeFilter")(beforeFilter)
-    if (beforeGetCellMeta != null) __obj.updateDynamic("beforeGetCellMeta")(beforeGetCellMeta)
-    if (beforeHideColumns != null) __obj.updateDynamic("beforeHideColumns")(beforeHideColumns)
-    if (beforeHideRows != null) __obj.updateDynamic("beforeHideRows")(beforeHideRows)
-    if (beforeInit != null) __obj.updateDynamic("beforeInit")(beforeInit)
-    if (beforeInitWalkontable != null) __obj.updateDynamic("beforeInitWalkontable")(beforeInitWalkontable)
-    if (beforeKeyDown != null) __obj.updateDynamic("beforeKeyDown")(beforeKeyDown)
-    if (beforeLanguageChange != null) __obj.updateDynamic("beforeLanguageChange")(beforeLanguageChange)
-    if (beforeMergeCells != null) __obj.updateDynamic("beforeMergeCells")(beforeMergeCells)
-    if (beforeOnCellContextMenu != null) __obj.updateDynamic("beforeOnCellContextMenu")(beforeOnCellContextMenu)
-    if (beforeOnCellMouseDown != null) __obj.updateDynamic("beforeOnCellMouseDown")(beforeOnCellMouseDown)
-    if (beforeOnCellMouseOut != null) __obj.updateDynamic("beforeOnCellMouseOut")(beforeOnCellMouseOut)
-    if (beforeOnCellMouseOver != null) __obj.updateDynamic("beforeOnCellMouseOver")(beforeOnCellMouseOver)
-    if (beforeOnCellMouseUp != null) __obj.updateDynamic("beforeOnCellMouseUp")(beforeOnCellMouseUp)
-    if (beforePaste != null) __obj.updateDynamic("beforePaste")(beforePaste)
-    if (beforeRedo != null) __obj.updateDynamic("beforeRedo")(beforeRedo)
-    if (beforeRefreshDimensions != null) __obj.updateDynamic("beforeRefreshDimensions")(beforeRefreshDimensions)
-    if (beforeRemoveCellClassNames != null) __obj.updateDynamic("beforeRemoveCellClassNames")(beforeRemoveCellClassNames)
-    if (beforeRemoveCellMeta != null) __obj.updateDynamic("beforeRemoveCellMeta")(beforeRemoveCellMeta)
-    if (beforeRemoveCol != null) __obj.updateDynamic("beforeRemoveCol")(beforeRemoveCol)
-    if (beforeRemoveRow != null) __obj.updateDynamic("beforeRemoveRow")(beforeRemoveRow)
-    if (beforeRender != null) __obj.updateDynamic("beforeRender")(beforeRender)
-    if (beforeRenderer != null) __obj.updateDynamic("beforeRenderer")(beforeRenderer)
-    if (beforeRowMove != null) __obj.updateDynamic("beforeRowMove")(beforeRowMove)
-    if (beforeRowResize != null) __obj.updateDynamic("beforeRowResize")(beforeRowResize)
-    if (beforeSetRangeEnd != null) __obj.updateDynamic("beforeSetRangeEnd")(beforeSetRangeEnd)
-    if (beforeSetRangeStart != null) __obj.updateDynamic("beforeSetRangeStart")(beforeSetRangeStart)
-    if (beforeSetRangeStartOnly != null) __obj.updateDynamic("beforeSetRangeStartOnly")(beforeSetRangeStartOnly)
-    if (beforeStretchingColumnWidth != null) __obj.updateDynamic("beforeStretchingColumnWidth")(beforeStretchingColumnWidth)
-    if (beforeTouchScroll != null) __obj.updateDynamic("beforeTouchScroll")(beforeTouchScroll)
-    if (beforeTrimRow != null) __obj.updateDynamic("beforeTrimRow")(beforeTrimRow)
-    if (beforeUndo != null) __obj.updateDynamic("beforeUndo")(beforeUndo)
-    if (beforeUnhideColumns != null) __obj.updateDynamic("beforeUnhideColumns")(beforeUnhideColumns)
-    if (beforeUnhideRows != null) __obj.updateDynamic("beforeUnhideRows")(beforeUnhideRows)
-    if (beforeUnmergeCells != null) __obj.updateDynamic("beforeUnmergeCells")(beforeUnmergeCells)
-    if (beforeUntrimRow != null) __obj.updateDynamic("beforeUntrimRow")(beforeUntrimRow)
-    if (beforeValidate != null) __obj.updateDynamic("beforeValidate")(beforeValidate)
-    if (beforeValueRender != null) __obj.updateDynamic("beforeValueRender")(beforeValueRender)
-    if (construct != null) __obj.updateDynamic("construct")(construct)
-    if (hiddenColumn != null) __obj.updateDynamic("hiddenColumn")(hiddenColumn)
-    if (hiddenRow != null) __obj.updateDynamic("hiddenRow")(hiddenRow)
-    if (init != null) __obj.updateDynamic("init")(init)
-    if (modifyAutofillRange != null) __obj.updateDynamic("modifyAutofillRange")(modifyAutofillRange)
-    if (modifyCol != null) __obj.updateDynamic("modifyCol")(modifyCol)
-    if (modifyColHeader != null) __obj.updateDynamic("modifyColHeader")(modifyColHeader)
-    if (modifyColWidth != null) __obj.updateDynamic("modifyColWidth")(modifyColWidth)
-    if (modifyColumnHeaderHeight != null) __obj.updateDynamic("modifyColumnHeaderHeight")(modifyColumnHeaderHeight)
-    if (modifyCopyableRange != null) __obj.updateDynamic("modifyCopyableRange")(modifyCopyableRange)
-    if (modifyData != null) __obj.updateDynamic("modifyData")(modifyData)
-    if (modifyGetCellCoords != null) __obj.updateDynamic("modifyGetCellCoords")(modifyGetCellCoords)
-    if (modifyRow != null) __obj.updateDynamic("modifyRow")(modifyRow)
-    if (modifyRowData != null) __obj.updateDynamic("modifyRowData")(modifyRowData)
-    if (modifyRowHeader != null) __obj.updateDynamic("modifyRowHeader")(modifyRowHeader)
+    if (afterAddChild != null) __obj.updateDynamic("afterAddChild")(js.Any.fromFunction3(afterAddChild))
+    if (afterBeginEditing != null) __obj.updateDynamic("afterBeginEditing")(js.Any.fromFunction2(afterBeginEditing))
+    if (afterCellMetaReset != null) __obj.updateDynamic("afterCellMetaReset")(js.Any.fromFunction0(afterCellMetaReset))
+    if (afterChange != null) __obj.updateDynamic("afterChange")(js.Any.fromFunction2(afterChange))
+    if (afterChangesObserved != null) __obj.updateDynamic("afterChangesObserved")(js.Any.fromFunction0(afterChangesObserved))
+    if (afterColumnMove != null) __obj.updateDynamic("afterColumnMove")(js.Any.fromFunction2(afterColumnMove))
+    if (afterColumnResize != null) __obj.updateDynamic("afterColumnResize")(js.Any.fromFunction3(afterColumnResize))
+    if (afterColumnSort != null) __obj.updateDynamic("afterColumnSort")(js.Any.fromFunction2(afterColumnSort))
+    if (afterContextMenuDefaultOptions != null) __obj.updateDynamic("afterContextMenuDefaultOptions")(js.Any.fromFunction1(afterContextMenuDefaultOptions))
+    if (afterContextMenuHide != null) __obj.updateDynamic("afterContextMenuHide")(js.Any.fromFunction1(afterContextMenuHide))
+    if (afterContextMenuShow != null) __obj.updateDynamic("afterContextMenuShow")(js.Any.fromFunction1(afterContextMenuShow))
+    if (afterCopy != null) __obj.updateDynamic("afterCopy")(js.Any.fromFunction2(afterCopy))
+    if (afterCopyLimit != null) __obj.updateDynamic("afterCopyLimit")(js.Any.fromFunction4(afterCopyLimit))
+    if (afterCreateCol != null) __obj.updateDynamic("afterCreateCol")(js.Any.fromFunction2(afterCreateCol))
+    if (afterCreateRow != null) __obj.updateDynamic("afterCreateRow")(js.Any.fromFunction2(afterCreateRow))
+    if (afterCut != null) __obj.updateDynamic("afterCut")(js.Any.fromFunction2(afterCut))
+    if (afterDeselect != null) __obj.updateDynamic("afterDeselect")(js.Any.fromFunction0(afterDeselect))
+    if (afterDestroy != null) __obj.updateDynamic("afterDestroy")(js.Any.fromFunction0(afterDestroy))
+    if (afterDetachChild != null) __obj.updateDynamic("afterDetachChild")(js.Any.fromFunction2(afterDetachChild))
+    if (afterDocumentKeyDown != null) __obj.updateDynamic("afterDocumentKeyDown")(js.Any.fromFunction1(afterDocumentKeyDown))
+    if (afterDrawSelection != null) __obj.updateDynamic("afterDrawSelection")(js.Any.fromFunction4(afterDrawSelection))
+    if (afterDropdownMenuDefaultOptions != null) __obj.updateDynamic("afterDropdownMenuDefaultOptions")(js.Any.fromFunction1(afterDropdownMenuDefaultOptions))
+    if (afterDropdownMenuHide != null) __obj.updateDynamic("afterDropdownMenuHide")(js.Any.fromFunction1(afterDropdownMenuHide))
+    if (afterDropdownMenuShow != null) __obj.updateDynamic("afterDropdownMenuShow")(js.Any.fromFunction1(afterDropdownMenuShow))
+    if (afterFilter != null) __obj.updateDynamic("afterFilter")(js.Any.fromFunction1(afterFilter))
+    if (afterGetCellMeta != null) __obj.updateDynamic("afterGetCellMeta")(js.Any.fromFunction3(afterGetCellMeta))
+    if (afterGetColHeader != null) __obj.updateDynamic("afterGetColHeader")(js.Any.fromFunction2(afterGetColHeader))
+    if (afterGetColumnHeaderRenderers != null) __obj.updateDynamic("afterGetColumnHeaderRenderers")(js.Any.fromFunction1(afterGetColumnHeaderRenderers))
+    if (afterGetRowHeader != null) __obj.updateDynamic("afterGetRowHeader")(js.Any.fromFunction2(afterGetRowHeader))
+    if (afterGetRowHeaderRenderers != null) __obj.updateDynamic("afterGetRowHeaderRenderers")(js.Any.fromFunction1(afterGetRowHeaderRenderers))
+    if (afterHideColumns != null) __obj.updateDynamic("afterHideColumns")(js.Any.fromFunction4(afterHideColumns))
+    if (afterHideRows != null) __obj.updateDynamic("afterHideRows")(js.Any.fromFunction4(afterHideRows))
+    if (afterInit != null) __obj.updateDynamic("afterInit")(js.Any.fromFunction0(afterInit))
+    if (afterLanguageChange != null) __obj.updateDynamic("afterLanguageChange")(js.Any.fromFunction1(afterLanguageChange))
+    if (afterListen != null) __obj.updateDynamic("afterListen")(js.Any.fromFunction0(afterListen))
+    if (afterLoadData != null) __obj.updateDynamic("afterLoadData")(js.Any.fromFunction1(afterLoadData))
+    if (afterMergeCells != null) __obj.updateDynamic("afterMergeCells")(js.Any.fromFunction3(afterMergeCells))
+    if (afterModifyTransformEnd != null) __obj.updateDynamic("afterModifyTransformEnd")(js.Any.fromFunction3(afterModifyTransformEnd))
+    if (afterModifyTransformStart != null) __obj.updateDynamic("afterModifyTransformStart")(js.Any.fromFunction3(afterModifyTransformStart))
+    if (afterMomentumScroll != null) __obj.updateDynamic("afterMomentumScroll")(js.Any.fromFunction0(afterMomentumScroll))
+    if (afterOnCellContextMenu != null) __obj.updateDynamic("afterOnCellContextMenu")(js.Any.fromFunction3(afterOnCellContextMenu))
+    if (afterOnCellCornerDblClick != null) __obj.updateDynamic("afterOnCellCornerDblClick")(js.Any.fromFunction1(afterOnCellCornerDblClick))
+    if (afterOnCellCornerMouseDown != null) __obj.updateDynamic("afterOnCellCornerMouseDown")(js.Any.fromFunction1(afterOnCellCornerMouseDown))
+    if (afterOnCellMouseDown != null) __obj.updateDynamic("afterOnCellMouseDown")(js.Any.fromFunction3(afterOnCellMouseDown))
+    if (afterOnCellMouseOut != null) __obj.updateDynamic("afterOnCellMouseOut")(js.Any.fromFunction3(afterOnCellMouseOut))
+    if (afterOnCellMouseOver != null) __obj.updateDynamic("afterOnCellMouseOver")(js.Any.fromFunction3(afterOnCellMouseOver))
+    if (afterOnCellMouseUp != null) __obj.updateDynamic("afterOnCellMouseUp")(js.Any.fromFunction3(afterOnCellMouseUp))
+    if (afterPaste != null) __obj.updateDynamic("afterPaste")(js.Any.fromFunction2(afterPaste))
+    if (afterPluginsInitialized != null) __obj.updateDynamic("afterPluginsInitialized")(js.Any.fromFunction0(afterPluginsInitialized))
+    if (afterRedo != null) __obj.updateDynamic("afterRedo")(js.Any.fromFunction1(afterRedo))
+    if (afterRefreshDimensions != null) __obj.updateDynamic("afterRefreshDimensions")(js.Any.fromFunction3(afterRefreshDimensions))
+    if (afterRemoveCellMeta != null) __obj.updateDynamic("afterRemoveCellMeta")(js.Any.fromFunction4(afterRemoveCellMeta))
+    if (afterRemoveCol != null) __obj.updateDynamic("afterRemoveCol")(js.Any.fromFunction2(afterRemoveCol))
+    if (afterRemoveRow != null) __obj.updateDynamic("afterRemoveRow")(js.Any.fromFunction2(afterRemoveRow))
+    if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction1(afterRender))
+    if (afterRenderer != null) __obj.updateDynamic("afterRenderer")(js.Any.fromFunction6(afterRenderer))
+    if (afterRowMove != null) __obj.updateDynamic("afterRowMove")(js.Any.fromFunction2(afterRowMove))
+    if (afterRowResize != null) __obj.updateDynamic("afterRowResize")(js.Any.fromFunction3(afterRowResize))
+    if (afterScrollHorizontally != null) __obj.updateDynamic("afterScrollHorizontally")(js.Any.fromFunction0(afterScrollHorizontally))
+    if (afterScrollVertically != null) __obj.updateDynamic("afterScrollVertically")(js.Any.fromFunction0(afterScrollVertically))
+    if (afterSelection != null) __obj.updateDynamic("afterSelection")(js.Any.fromFunction6(afterSelection))
+    if (afterSelectionByProp != null) __obj.updateDynamic("afterSelectionByProp")(js.Any.fromFunction6(afterSelectionByProp))
+    if (afterSelectionEnd != null) __obj.updateDynamic("afterSelectionEnd")(js.Any.fromFunction5(afterSelectionEnd))
+    if (afterSelectionEndByProp != null) __obj.updateDynamic("afterSelectionEndByProp")(js.Any.fromFunction5(afterSelectionEndByProp))
+    if (afterSetCellMeta != null) __obj.updateDynamic("afterSetCellMeta")(js.Any.fromFunction4(afterSetCellMeta))
+    if (afterSetDataAtCell != null) __obj.updateDynamic("afterSetDataAtCell")(js.Any.fromFunction2(afterSetDataAtCell))
+    if (afterSetDataAtRowProp != null) __obj.updateDynamic("afterSetDataAtRowProp")(js.Any.fromFunction2(afterSetDataAtRowProp))
+    if (afterTrimRow != null) __obj.updateDynamic("afterTrimRow")(js.Any.fromFunction4(afterTrimRow))
+    if (afterUndo != null) __obj.updateDynamic("afterUndo")(js.Any.fromFunction1(afterUndo))
+    if (afterUnhideColumns != null) __obj.updateDynamic("afterUnhideColumns")(js.Any.fromFunction4(afterUnhideColumns))
+    if (afterUnhideRows != null) __obj.updateDynamic("afterUnhideRows")(js.Any.fromFunction4(afterUnhideRows))
+    if (afterUnlisten != null) __obj.updateDynamic("afterUnlisten")(js.Any.fromFunction0(afterUnlisten))
+    if (afterUnmergeCells != null) __obj.updateDynamic("afterUnmergeCells")(js.Any.fromFunction2(afterUnmergeCells))
+    if (afterUntrimRow != null) __obj.updateDynamic("afterUntrimRow")(js.Any.fromFunction4(afterUntrimRow))
+    if (afterUpdateSettings != null) __obj.updateDynamic("afterUpdateSettings")(js.Any.fromFunction1(afterUpdateSettings))
+    if (afterValidate != null) __obj.updateDynamic("afterValidate")(js.Any.fromFunction5(afterValidate))
+    if (afterViewportColumnCalculatorOverride != null) __obj.updateDynamic("afterViewportColumnCalculatorOverride")(js.Any.fromFunction1(afterViewportColumnCalculatorOverride))
+    if (afterViewportRowCalculatorOverride != null) __obj.updateDynamic("afterViewportRowCalculatorOverride")(js.Any.fromFunction1(afterViewportRowCalculatorOverride))
+    if (beforeAddChild != null) __obj.updateDynamic("beforeAddChild")(js.Any.fromFunction3(beforeAddChild))
+    if (beforeAutofill != null) __obj.updateDynamic("beforeAutofill")(js.Any.fromFunction3(beforeAutofill))
+    if (beforeAutofillInsidePopulate != null) __obj.updateDynamic("beforeAutofillInsidePopulate")(js.Any.fromFunction4(beforeAutofillInsidePopulate))
+    if (beforeCellAlignment != null) __obj.updateDynamic("beforeCellAlignment")(js.Any.fromFunction4(beforeCellAlignment))
+    if (beforeChange != null) __obj.updateDynamic("beforeChange")(js.Any.fromFunction2(beforeChange))
+    if (beforeChangeRender != null) __obj.updateDynamic("beforeChangeRender")(js.Any.fromFunction2(beforeChangeRender))
+    if (beforeColumnMove != null) __obj.updateDynamic("beforeColumnMove")(js.Any.fromFunction2(beforeColumnMove))
+    if (beforeColumnResize != null) __obj.updateDynamic("beforeColumnResize")(js.Any.fromFunction3(beforeColumnResize))
+    if (beforeColumnSort != null) __obj.updateDynamic("beforeColumnSort")(js.Any.fromFunction2(beforeColumnSort))
+    if (beforeContextMenuSetItems != null) __obj.updateDynamic("beforeContextMenuSetItems")(js.Any.fromFunction1(beforeContextMenuSetItems))
+    if (beforeContextMenuShow != null) __obj.updateDynamic("beforeContextMenuShow")(js.Any.fromFunction1(beforeContextMenuShow))
+    if (beforeCopy != null) __obj.updateDynamic("beforeCopy")(js.Any.fromFunction2(beforeCopy))
+    if (beforeCreateCol != null) __obj.updateDynamic("beforeCreateCol")(js.Any.fromFunction3(beforeCreateCol))
+    if (beforeCreateRow != null) __obj.updateDynamic("beforeCreateRow")(js.Any.fromFunction3(beforeCreateRow))
+    if (beforeCut != null) __obj.updateDynamic("beforeCut")(js.Any.fromFunction2(beforeCut))
+    if (beforeDetachChild != null) __obj.updateDynamic("beforeDetachChild")(js.Any.fromFunction2(beforeDetachChild))
+    if (beforeDrawBorders != null) __obj.updateDynamic("beforeDrawBorders")(js.Any.fromFunction2(beforeDrawBorders))
+    if (beforeDropdownMenuSetItems != null) __obj.updateDynamic("beforeDropdownMenuSetItems")(js.Any.fromFunction1(beforeDropdownMenuSetItems))
+    if (beforeDropdownMenuShow != null) __obj.updateDynamic("beforeDropdownMenuShow")(js.Any.fromFunction1(beforeDropdownMenuShow))
+    if (beforeFilter != null) __obj.updateDynamic("beforeFilter")(js.Any.fromFunction1(beforeFilter))
+    if (beforeGetCellMeta != null) __obj.updateDynamic("beforeGetCellMeta")(js.Any.fromFunction3(beforeGetCellMeta))
+    if (beforeHideColumns != null) __obj.updateDynamic("beforeHideColumns")(js.Any.fromFunction3(beforeHideColumns))
+    if (beforeHideRows != null) __obj.updateDynamic("beforeHideRows")(js.Any.fromFunction3(beforeHideRows))
+    if (beforeInit != null) __obj.updateDynamic("beforeInit")(js.Any.fromFunction0(beforeInit))
+    if (beforeInitWalkontable != null) __obj.updateDynamic("beforeInitWalkontable")(js.Any.fromFunction1(beforeInitWalkontable))
+    if (beforeKeyDown != null) __obj.updateDynamic("beforeKeyDown")(js.Any.fromFunction1(beforeKeyDown))
+    if (beforeLanguageChange != null) __obj.updateDynamic("beforeLanguageChange")(js.Any.fromFunction1(beforeLanguageChange))
+    if (beforeMergeCells != null) __obj.updateDynamic("beforeMergeCells")(js.Any.fromFunction2(beforeMergeCells))
+    if (beforeOnCellContextMenu != null) __obj.updateDynamic("beforeOnCellContextMenu")(js.Any.fromFunction3(beforeOnCellContextMenu))
+    if (beforeOnCellMouseDown != null) __obj.updateDynamic("beforeOnCellMouseDown")(js.Any.fromFunction4(beforeOnCellMouseDown))
+    if (beforeOnCellMouseOut != null) __obj.updateDynamic("beforeOnCellMouseOut")(js.Any.fromFunction3(beforeOnCellMouseOut))
+    if (beforeOnCellMouseOver != null) __obj.updateDynamic("beforeOnCellMouseOver")(js.Any.fromFunction4(beforeOnCellMouseOver))
+    if (beforeOnCellMouseUp != null) __obj.updateDynamic("beforeOnCellMouseUp")(js.Any.fromFunction4(beforeOnCellMouseUp))
+    if (beforePaste != null) __obj.updateDynamic("beforePaste")(js.Any.fromFunction2(beforePaste))
+    if (beforeRedo != null) __obj.updateDynamic("beforeRedo")(js.Any.fromFunction1(beforeRedo))
+    if (beforeRefreshDimensions != null) __obj.updateDynamic("beforeRefreshDimensions")(js.Any.fromFunction3(beforeRefreshDimensions))
+    if (beforeRemoveCellClassNames != null) __obj.updateDynamic("beforeRemoveCellClassNames")(js.Any.fromFunction0(beforeRemoveCellClassNames))
+    if (beforeRemoveCellMeta != null) __obj.updateDynamic("beforeRemoveCellMeta")(js.Any.fromFunction4(beforeRemoveCellMeta))
+    if (beforeRemoveCol != null) __obj.updateDynamic("beforeRemoveCol")(js.Any.fromFunction4(beforeRemoveCol))
+    if (beforeRemoveRow != null) __obj.updateDynamic("beforeRemoveRow")(js.Any.fromFunction4(beforeRemoveRow))
+    if (beforeRender != null) __obj.updateDynamic("beforeRender")(js.Any.fromFunction2(beforeRender))
+    if (beforeRenderer != null) __obj.updateDynamic("beforeRenderer")(js.Any.fromFunction6(beforeRenderer))
+    if (beforeRowMove != null) __obj.updateDynamic("beforeRowMove")(js.Any.fromFunction2(beforeRowMove))
+    if (beforeRowResize != null) __obj.updateDynamic("beforeRowResize")(js.Any.fromFunction3(beforeRowResize))
+    if (beforeSetRangeEnd != null) __obj.updateDynamic("beforeSetRangeEnd")(js.Any.fromFunction1(beforeSetRangeEnd))
+    if (beforeSetRangeStart != null) __obj.updateDynamic("beforeSetRangeStart")(js.Any.fromFunction1(beforeSetRangeStart))
+    if (beforeSetRangeStartOnly != null) __obj.updateDynamic("beforeSetRangeStartOnly")(js.Any.fromFunction1(beforeSetRangeStartOnly))
+    if (beforeStretchingColumnWidth != null) __obj.updateDynamic("beforeStretchingColumnWidth")(js.Any.fromFunction2(beforeStretchingColumnWidth))
+    if (beforeTouchScroll != null) __obj.updateDynamic("beforeTouchScroll")(js.Any.fromFunction0(beforeTouchScroll))
+    if (beforeTrimRow != null) __obj.updateDynamic("beforeTrimRow")(js.Any.fromFunction3(beforeTrimRow))
+    if (beforeUndo != null) __obj.updateDynamic("beforeUndo")(js.Any.fromFunction1(beforeUndo))
+    if (beforeUnhideColumns != null) __obj.updateDynamic("beforeUnhideColumns")(js.Any.fromFunction3(beforeUnhideColumns))
+    if (beforeUnhideRows != null) __obj.updateDynamic("beforeUnhideRows")(js.Any.fromFunction3(beforeUnhideRows))
+    if (beforeUnmergeCells != null) __obj.updateDynamic("beforeUnmergeCells")(js.Any.fromFunction2(beforeUnmergeCells))
+    if (beforeUntrimRow != null) __obj.updateDynamic("beforeUntrimRow")(js.Any.fromFunction3(beforeUntrimRow))
+    if (beforeValidate != null) __obj.updateDynamic("beforeValidate")(js.Any.fromFunction4(beforeValidate))
+    if (beforeValueRender != null) __obj.updateDynamic("beforeValueRender")(js.Any.fromFunction2(beforeValueRender))
+    if (construct != null) __obj.updateDynamic("construct")(js.Any.fromFunction0(construct))
+    if (hiddenColumn != null) __obj.updateDynamic("hiddenColumn")(js.Any.fromFunction1(hiddenColumn))
+    if (hiddenRow != null) __obj.updateDynamic("hiddenRow")(js.Any.fromFunction1(hiddenRow))
+    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction0(init))
+    if (modifyAutofillRange != null) __obj.updateDynamic("modifyAutofillRange")(js.Any.fromFunction2(modifyAutofillRange))
+    if (modifyCol != null) __obj.updateDynamic("modifyCol")(js.Any.fromFunction1(modifyCol))
+    if (modifyColHeader != null) __obj.updateDynamic("modifyColHeader")(js.Any.fromFunction1(modifyColHeader))
+    if (modifyColWidth != null) __obj.updateDynamic("modifyColWidth")(js.Any.fromFunction2(modifyColWidth))
+    if (modifyColumnHeaderHeight != null) __obj.updateDynamic("modifyColumnHeaderHeight")(js.Any.fromFunction0(modifyColumnHeaderHeight))
+    if (modifyCopyableRange != null) __obj.updateDynamic("modifyCopyableRange")(js.Any.fromFunction1(modifyCopyableRange))
+    if (modifyData != null) __obj.updateDynamic("modifyData")(js.Any.fromFunction4(modifyData))
+    if (modifyGetCellCoords != null) __obj.updateDynamic("modifyGetCellCoords")(js.Any.fromFunction3(modifyGetCellCoords))
+    if (modifyRow != null) __obj.updateDynamic("modifyRow")(js.Any.fromFunction1(modifyRow))
+    if (modifyRowData != null) __obj.updateDynamic("modifyRowData")(js.Any.fromFunction1(modifyRowData))
+    if (modifyRowHeader != null) __obj.updateDynamic("modifyRowHeader")(js.Any.fromFunction1(modifyRowHeader))
+    if (modifyRowHeaderWidth != null) __obj.updateDynamic("modifyRowHeaderWidth")(js.Any.fromFunction1(modifyRowHeaderWidth))
+    if (modifyRowHeight != null) __obj.updateDynamic("modifyRowHeight")(js.Any.fromFunction2(modifyRowHeight))
+    if (modifyRowSourceData != null) __obj.updateDynamic("modifyRowSourceData")(js.Any.fromFunction1(modifyRowSourceData))
+    if (modifyTransformEnd != null) __obj.updateDynamic("modifyTransformEnd")(js.Any.fromFunction1(modifyTransformEnd))
+    if (modifyTransformStart != null) __obj.updateDynamic("modifyTransformStart")(js.Any.fromFunction1(modifyTransformStart))
+    if (persistentStateLoad != null) __obj.updateDynamic("persistentStateLoad")(js.Any.fromFunction2(persistentStateLoad))
+    if (persistentStateReset != null) __obj.updateDynamic("persistentStateReset")(js.Any.fromFunction1(persistentStateReset))
+    if (persistentStateSave != null) __obj.updateDynamic("persistentStateSave")(js.Any.fromFunction2(persistentStateSave))
+    if (skipLengthCache != null) __obj.updateDynamic("skipLengthCache")(js.Any.fromFunction1(skipLengthCache))
+    if (unmodifyCol != null) __obj.updateDynamic("unmodifyCol")(js.Any.fromFunction1(unmodifyCol))
+    if (unmodifyRow != null) __obj.updateDynamic("unmodifyRow")(js.Any.fromFunction1(unmodifyRow))
     __obj.asInstanceOf[Events]
   }
 }

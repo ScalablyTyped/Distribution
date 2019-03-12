@@ -47,34 +47,34 @@ trait BootstrapClientMenuItem extends ASPxClientMenuItem {
 object BootstrapClientMenuItem {
   @scala.inline
   def apply(
-    GetBadgeIconCssClass: js.Function0[java.lang.String],
-    GetBadgeText: js.Function0[java.lang.String],
-    GetChecked: js.Function0[scala.Boolean],
-    GetEnabled: js.Function0[scala.Boolean],
-    GetIconCssClass: js.Function0[java.lang.String],
-    GetImageUrl: js.Function0[java.lang.String],
-    GetItem: js.Function1[scala.Double, BootstrapClientMenuItem],
-    GetItemByName: js.Function1[java.lang.String, BootstrapClientMenuItem],
-    GetItemCount: js.Function0[scala.Double],
-    GetNavigateUrl: js.Function0[java.lang.String],
-    GetText: js.Function0[java.lang.String],
-    GetVisible: js.Function0[scala.Boolean],
-    SetBadgeIconCssClass: js.Function1[java.lang.String, scala.Unit],
-    SetBadgeText: js.Function1[java.lang.String, scala.Unit],
-    SetChecked: js.Function1[scala.Boolean, scala.Unit],
-    SetEnabled: js.Function1[scala.Boolean, scala.Unit],
-    SetIconCssClass: js.Function1[java.lang.String, scala.Unit],
-    SetImageUrl: js.Function1[java.lang.String, scala.Unit],
-    SetNavigateUrl: js.Function1[java.lang.String, scala.Unit],
-    SetText: js.Function1[java.lang.String, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    GetBadgeIconCssClass: () => java.lang.String,
+    GetBadgeText: () => java.lang.String,
+    GetChecked: () => scala.Boolean,
+    GetEnabled: () => scala.Boolean,
+    GetIconCssClass: () => java.lang.String,
+    GetImageUrl: () => java.lang.String,
+    GetItem: scala.Double => BootstrapClientMenuItem,
+    GetItemByName: java.lang.String => BootstrapClientMenuItem,
+    GetItemCount: () => scala.Double,
+    GetNavigateUrl: () => java.lang.String,
+    GetText: () => java.lang.String,
+    GetVisible: () => scala.Boolean,
+    SetBadgeIconCssClass: java.lang.String => scala.Unit,
+    SetBadgeText: java.lang.String => scala.Unit,
+    SetChecked: scala.Boolean => scala.Unit,
+    SetEnabled: scala.Boolean => scala.Unit,
+    SetIconCssClass: java.lang.String => scala.Unit,
+    SetImageUrl: java.lang.String => scala.Unit,
+    SetNavigateUrl: java.lang.String => scala.Unit,
+    SetText: java.lang.String => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
     index: scala.Double,
     indexPath: java.lang.String,
     menu: ASPxClientMenuBase,
     name: java.lang.String,
     parent: BootstrapClientMenuItem
   ): BootstrapClientMenuItem = {
-    val __obj = js.Dynamic.literal(GetBadgeIconCssClass = GetBadgeIconCssClass, GetBadgeText = GetBadgeText, GetChecked = GetChecked, GetEnabled = GetEnabled, GetIconCssClass = GetIconCssClass, GetImageUrl = GetImageUrl, GetItem = GetItem, GetItemByName = GetItemByName, GetItemCount = GetItemCount, GetNavigateUrl = GetNavigateUrl, GetText = GetText, GetVisible = GetVisible, SetBadgeIconCssClass = SetBadgeIconCssClass, SetBadgeText = SetBadgeText, SetChecked = SetChecked, SetEnabled = SetEnabled, SetIconCssClass = SetIconCssClass, SetImageUrl = SetImageUrl, SetNavigateUrl = SetNavigateUrl, SetText = SetText, SetVisible = SetVisible, index = index, indexPath = indexPath, menu = menu, name = name, parent = parent)
+    val __obj = js.Dynamic.literal(GetBadgeIconCssClass = js.Any.fromFunction0(GetBadgeIconCssClass), GetBadgeText = js.Any.fromFunction0(GetBadgeText), GetChecked = js.Any.fromFunction0(GetChecked), GetEnabled = js.Any.fromFunction0(GetEnabled), GetIconCssClass = js.Any.fromFunction0(GetIconCssClass), GetImageUrl = js.Any.fromFunction0(GetImageUrl), GetItem = js.Any.fromFunction1(GetItem), GetItemByName = js.Any.fromFunction1(GetItemByName), GetItemCount = js.Any.fromFunction0(GetItemCount), GetNavigateUrl = js.Any.fromFunction0(GetNavigateUrl), GetText = js.Any.fromFunction0(GetText), GetVisible = js.Any.fromFunction0(GetVisible), SetBadgeIconCssClass = js.Any.fromFunction1(SetBadgeIconCssClass), SetBadgeText = js.Any.fromFunction1(SetBadgeText), SetChecked = js.Any.fromFunction1(SetChecked), SetEnabled = js.Any.fromFunction1(SetEnabled), SetIconCssClass = js.Any.fromFunction1(SetIconCssClass), SetImageUrl = js.Any.fromFunction1(SetImageUrl), SetNavigateUrl = js.Any.fromFunction1(SetNavigateUrl), SetText = js.Any.fromFunction1(SetText), SetVisible = js.Any.fromFunction1(SetVisible), index = index, indexPath = indexPath, menu = menu, name = name, parent = parent)
   
     __obj.asInstanceOf[BootstrapClientMenuItem]
   }

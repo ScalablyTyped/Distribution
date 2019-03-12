@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.ControlFormat")
 @js.native
 class ControlFormat protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Creator: XlCreator = js.native
   var DropDownLines: scala.Double = js.native
   var Enabled: scala.Boolean = js.native
@@ -29,7 +29,7 @@ class ControlFormat protected () extends js.Object {
   var _Default: scala.Double = js.native
   def AddItem(Text: java.lang.String): scala.Unit = js.native
   def AddItem(Text: java.lang.String, Index: scala.Double): scala.Unit = js.native
-  def List(): activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  def List(): stdLib.SafeArray[java.lang.String] = js.native
   def List(Index: scala.Double): java.lang.String = js.native
   def RemoveAllItems(): scala.Unit = js.native
   def RemoveItem(Index: scala.Double): scala.Unit = js.native

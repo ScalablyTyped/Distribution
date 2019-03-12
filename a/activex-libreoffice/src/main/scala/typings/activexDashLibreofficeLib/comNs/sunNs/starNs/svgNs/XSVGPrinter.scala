@@ -22,21 +22,14 @@ trait XSVGPrinter
 object XSVGPrinter {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    endJob: js.Function0[scala.Unit],
-    printPage: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    startJob: js.Function5[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      java.lang.String, 
-      scala.Double, 
-      scala.Boolean, 
-      scala.Boolean
-    ]
+    acquire: () => scala.Unit,
+    endJob: () => scala.Unit,
+    printPage: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    startJob: (activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], java.lang.String, scala.Double, scala.Boolean) => scala.Boolean
   ): XSVGPrinter = {
-    val __obj = js.Dynamic.literal(acquire = acquire, endJob = endJob, printPage = printPage, queryInterface = queryInterface, release = release, startJob = startJob)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), endJob = js.Any.fromFunction0(endJob), printPage = js.Any.fromFunction1(printPage), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), startJob = js.Any.fromFunction5(startJob))
   
     __obj.asInstanceOf[XSVGPrinter]
   }

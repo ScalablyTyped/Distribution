@@ -24,12 +24,7 @@ object ^ extends js.Object {
     * Fired when a URL is visited, providing the HistoryItem data for that URL. This event fires before the page has
     * loaded.
     */
-  val onVisited: firefoxDashWebextDashBrowserLib.WebExtEvent[
-    js.Function1[
-      /* result */ firefoxDashWebextDashBrowserLib.browserNs.historyNs.HistoryItem, 
-      scala.Unit
-    ]
-  ] = js.native
+  val onVisited: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* result */ HistoryItem, scala.Unit]] = js.native
   /**
     * Adds a URL to the history with a default visitTime of the current time and a default transition type of "link".
     */
@@ -44,9 +39,9 @@ object ^ extends js.Object {
   /** Removes all occurrences of the given URL from the history. */
   def deleteUrl(details: firefoxDashWebextDashBrowserLib.Anon_Url): js.Promise[scala.Unit] = js.native
   /** Retrieves information about visits to a URL. */
-  def getVisits(details: firefoxDashWebextDashBrowserLib.Anon_Url): js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.historyNs.VisitItem]] = js.native
+  def getVisits(details: firefoxDashWebextDashBrowserLib.Anon_Url): js.Promise[js.Array[VisitItem]] = js.native
   /* history functions */
   /** Searches the history for the last visit time of each page matching the query. */
-  def search(query: firefoxDashWebextDashBrowserLib.Anon_EndTime): js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.historyNs.HistoryItem]] = js.native
+  def search(query: firefoxDashWebextDashBrowserLib.Anon_EndTime): js.Promise[js.Array[HistoryItem]] = js.native
 }
 

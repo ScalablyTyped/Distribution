@@ -16,13 +16,13 @@ trait Cable extends js.Object {
 object Cable {
   @scala.inline
   def apply(
-    connect: js.Function0[scala.Unit],
-    disconnect: js.Function0[scala.Unit],
-    ensureActiveConnection: js.Function0[scala.Unit],
-    send: js.Function1[js.Any, scala.Unit],
+    connect: () => scala.Unit,
+    disconnect: () => scala.Unit,
+    ensureActiveConnection: () => scala.Unit,
+    send: js.Any => scala.Unit,
     subscriptions: Subscriptions
   ): Cable = {
-    val __obj = js.Dynamic.literal(connect = connect, disconnect = disconnect, ensureActiveConnection = ensureActiveConnection, send = send, subscriptions = subscriptions)
+    val __obj = js.Dynamic.literal(connect = js.Any.fromFunction0(connect), disconnect = js.Any.fromFunction0(disconnect), ensureActiveConnection = js.Any.fromFunction0(ensureActiveConnection), send = js.Any.fromFunction1(send), subscriptions = subscriptions)
   
     __obj.asInstanceOf[Cable]
   }

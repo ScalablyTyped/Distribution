@@ -13,14 +13,14 @@ trait SearchCommandArgument extends js.Object {
   /** the search criteria. */
   var Info: SearchInfo
   /** the properties for which values shall be provided through the {@link ContentResultSet} returned by the search command. */
-  var Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
+  var Properties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
 }
 
 object SearchCommandArgument {
   @scala.inline
   def apply(
     Info: SearchInfo,
-    Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
+    Properties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
   ): SearchCommandArgument = {
     val __obj = js.Dynamic.literal(Info = Info, Properties = Properties)
   

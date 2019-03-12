@@ -72,7 +72,7 @@ trait PlusNetworkinfo extends js.Object {
 object PlusNetworkinfo {
   @scala.inline
   def apply(
-    getCurrentType: js.Function0[scala.Double],
+    getCurrentType: () => scala.Double,
     CONNECTION_CELL2G: scala.Int | scala.Double = null,
     CONNECTION_CELL3G: scala.Int | scala.Double = null,
     CONNECTION_CELL4G: scala.Int | scala.Double = null,
@@ -81,7 +81,7 @@ object PlusNetworkinfo {
     CONNECTION_UNKNOW: scala.Int | scala.Double = null,
     CONNECTION_WIFI: scala.Int | scala.Double = null
   ): PlusNetworkinfo = {
-    val __obj = js.Dynamic.literal(getCurrentType = getCurrentType)
+    val __obj = js.Dynamic.literal(getCurrentType = js.Any.fromFunction0(getCurrentType))
     if (CONNECTION_CELL2G != null) __obj.updateDynamic("CONNECTION_CELL2G")(CONNECTION_CELL2G.asInstanceOf[js.Any])
     if (CONNECTION_CELL3G != null) __obj.updateDynamic("CONNECTION_CELL3G")(CONNECTION_CELL3G.asInstanceOf[js.Any])
     if (CONNECTION_CELL4G != null) __obj.updateDynamic("CONNECTION_CELL4G")(CONNECTION_CELL4G.asInstanceOf[js.Any])

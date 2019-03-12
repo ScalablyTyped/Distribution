@@ -16,17 +16,17 @@ object ContentEvent {
   def apply(
     content: java.lang.String,
     format: java.lang.String,
-    isDefaultPrevented: js.Function0[scala.Boolean],
-    isImmediatePropagationStopped: js.Function0[scala.Boolean],
-    isPropagationStopped: js.Function0[scala.Boolean],
-    preventDefault: js.Function0[scala.Unit],
+    isDefaultPrevented: () => scala.Boolean,
+    isImmediatePropagationStopped: () => scala.Boolean,
+    isPropagationStopped: () => scala.Boolean,
+    preventDefault: () => scala.Unit,
     set: scala.Boolean,
-    stopImmediatePropagation: js.Function0[scala.Unit],
-    stopPropagation: js.Function0[scala.Unit],
+    stopImmediatePropagation: () => scala.Unit,
+    stopPropagation: () => scala.Unit,
     target: java.lang.String,
     `type`: java.lang.String
   ): ContentEvent = {
-    val __obj = js.Dynamic.literal(content = content, format = format, isDefaultPrevented = isDefaultPrevented, isImmediatePropagationStopped = isImmediatePropagationStopped, isPropagationStopped = isPropagationStopped, preventDefault = preventDefault, set = set, stopImmediatePropagation = stopImmediatePropagation, stopPropagation = stopPropagation, target = target)
+    val __obj = js.Dynamic.literal(content = content, format = format, isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), set = set, stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ContentEvent]
   }

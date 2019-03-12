@@ -16,12 +16,12 @@ trait View[D] extends js.Object {
 object View {
   @scala.inline
   def apply[D](
-    map: js.Function1[/* doc */ D with Document, scala.Unit] = null,
-    reduce: js.Function1[/* doc */ D with Document, scala.Unit] = null
+    map: /* doc */ D with Document => scala.Unit = null,
+    reduce: /* doc */ D with Document => scala.Unit = null
   ): View[D] = {
     val __obj = js.Dynamic.literal()
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (reduce != null) __obj.updateDynamic("reduce")(reduce)
+    if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
+    if (reduce != null) __obj.updateDynamic("reduce")(js.Any.fromFunction1(reduce))
     __obj.asInstanceOf[View[D]]
   }
 }

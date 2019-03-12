@@ -29,44 +29,17 @@ trait GroupsResource extends js.Object {
 object GroupsResource {
   @scala.inline
   def apply(
-    addMember: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsGroupName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsGroupName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsGroupName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Group]
-    ],
-    getIamPolicy: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GroupList]
-    ],
-    removeMember: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsGroupName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    setIamPolicy: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    testIamPermissions: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TestPermissionsResponse]
-    ]
+    addMember: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsGroupName => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    delete: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsGroupName => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsGroupName => gapiDotClientLib.gapiNs.clientNs.Request[Group],
+    getIamPolicy: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    insert: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotClouduseraccountsLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[GroupList],
+    removeMember: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsGroupName => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    setIamPolicy: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    testIamPermissions: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[TestPermissionsResponse]
   ): GroupsResource = {
-    val __obj = js.Dynamic.literal(addMember = addMember, delete = delete, get = get, getIamPolicy = getIamPolicy, insert = insert, list = list, removeMember = removeMember, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions)
+    val __obj = js.Dynamic.literal(addMember = js.Any.fromFunction1(addMember), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), removeMember = js.Any.fromFunction1(removeMember), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions))
   
     __obj.asInstanceOf[GroupsResource]
   }

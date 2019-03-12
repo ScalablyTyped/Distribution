@@ -31,16 +31,8 @@ object LabelProps {
     horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     icon: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconProps] = null,
     image: js.Any = null,
-    onClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ LabelProps, 
-      scala.Unit
-    ] = null,
-    onRemove: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ LabelProps, 
-      scala.Unit
-    ] = null,
+    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ LabelProps) => scala.Unit = null,
+    onRemove: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ LabelProps) => scala.Unit = null,
     pointing: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.above | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.below | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right = null,
     removeIcon: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconProps] = null,
     ribbon: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right = null,
@@ -65,8 +57,8 @@ object LabelProps {
     if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
+    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction2(onRemove))
     if (pointing != null) __obj.updateDynamic("pointing")(pointing.asInstanceOf[js.Any])
     if (removeIcon != null) __obj.updateDynamic("removeIcon")(removeIcon.asInstanceOf[js.Any])
     if (ribbon != null) __obj.updateDynamic("ribbon")(ribbon.asInstanceOf[js.Any])

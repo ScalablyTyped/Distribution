@@ -13,8 +13,8 @@ trait RTCCertificate extends js.Object {
 
 object RTCCertificate {
   @scala.inline
-  def apply(expires: scala.Double, getAlgorithm: js.Function0[java.lang.String]): RTCCertificate = {
-    val __obj = js.Dynamic.literal(expires = expires, getAlgorithm = getAlgorithm)
+  def apply(expires: scala.Double, getAlgorithm: () => java.lang.String): RTCCertificate = {
+    val __obj = js.Dynamic.literal(expires = expires, getAlgorithm = js.Any.fromFunction0(getAlgorithm))
   
     __obj.asInstanceOf[RTCCertificate]
   }

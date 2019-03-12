@@ -21,25 +21,21 @@ object XSystemClipboard {
     Contents: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable,
     Name: java.lang.String,
     RenderingCapabilities: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addClipboardListener: js.Function1[XClipboardListener, scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    flushClipboard: js.Function0[scala.Unit],
-    getContents: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable],
-    getName: js.Function0[java.lang.String],
-    getRenderingCapabilities: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeClipboardListener: js.Function1[XClipboardListener, scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    setContents: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable, 
-      XClipboardOwner, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    addClipboardListener: XClipboardListener => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    dispose: () => scala.Unit,
+    flushClipboard: () => scala.Unit,
+    getContents: () => activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable,
+    getName: () => java.lang.String,
+    getRenderingCapabilities: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeClipboardListener: XClipboardListener => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    setContents: (activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable, XClipboardOwner) => scala.Unit
   ): XSystemClipboard = {
-    val __obj = js.Dynamic.literal(Contents = Contents, Name = Name, RenderingCapabilities = RenderingCapabilities, acquire = acquire, addClipboardListener = addClipboardListener, addEventListener = addEventListener, dispose = dispose, flushClipboard = flushClipboard, getContents = getContents, getName = getName, getRenderingCapabilities = getRenderingCapabilities, queryInterface = queryInterface, release = release, removeClipboardListener = removeClipboardListener, removeEventListener = removeEventListener, setContents = setContents)
+    val __obj = js.Dynamic.literal(Contents = Contents, Name = Name, RenderingCapabilities = RenderingCapabilities, acquire = js.Any.fromFunction0(acquire), addClipboardListener = js.Any.fromFunction1(addClipboardListener), addEventListener = js.Any.fromFunction1(addEventListener), dispose = js.Any.fromFunction0(dispose), flushClipboard = js.Any.fromFunction0(flushClipboard), getContents = js.Any.fromFunction0(getContents), getName = js.Any.fromFunction0(getName), getRenderingCapabilities = js.Any.fromFunction0(getRenderingCapabilities), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeClipboardListener = js.Any.fromFunction1(removeClipboardListener), removeEventListener = js.Any.fromFunction1(removeEventListener), setContents = js.Any.fromFunction2(setContents))
   
     __obj.asInstanceOf[XSystemClipboard]
   }

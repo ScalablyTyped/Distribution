@@ -18,15 +18,15 @@ trait Executable[T] extends js.Object {
 object Executable {
   @scala.inline
   def apply[T](
-    all: js.Function0[bluebirdLib.bluebirdMod.namespaced[js.Array[T]]],
-    allWithin: js.Function1[DatabaseConnection, bluebirdLib.bluebirdMod.namespaced[js.Array[T]]],
-    exec: js.Function0[bluebirdLib.bluebirdMod.namespaced[scala.Unit]],
-    execWithin: js.Function1[DatabaseConnection, bluebirdLib.bluebirdMod.namespaced[scala.Unit]],
-    get: js.Function0[bluebirdLib.bluebirdMod.namespaced[T]],
-    getWithin: js.Function1[DatabaseConnection, bluebirdLib.bluebirdMod.namespaced[T]],
-    toQuery: js.Function0[QueryLike]
+    all: () => bluebirdLib.bluebirdMod.namespaced[js.Array[T]],
+    allWithin: DatabaseConnection => bluebirdLib.bluebirdMod.namespaced[js.Array[T]],
+    exec: () => bluebirdLib.bluebirdMod.namespaced[scala.Unit],
+    execWithin: DatabaseConnection => bluebirdLib.bluebirdMod.namespaced[scala.Unit],
+    get: () => bluebirdLib.bluebirdMod.namespaced[T],
+    getWithin: DatabaseConnection => bluebirdLib.bluebirdMod.namespaced[T],
+    toQuery: () => QueryLike
   ): Executable[T] = {
-    val __obj = js.Dynamic.literal(all = all, allWithin = allWithin, exec = exec, execWithin = execWithin, get = get, getWithin = getWithin, toQuery = toQuery)
+    val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all), allWithin = js.Any.fromFunction1(allWithin), exec = js.Any.fromFunction0(exec), execWithin = js.Any.fromFunction1(execWithin), get = js.Any.fromFunction0(get), getWithin = js.Any.fromFunction1(getWithin), toQuery = js.Any.fromFunction0(toQuery))
   
     __obj.asInstanceOf[Executable[T]]
   }

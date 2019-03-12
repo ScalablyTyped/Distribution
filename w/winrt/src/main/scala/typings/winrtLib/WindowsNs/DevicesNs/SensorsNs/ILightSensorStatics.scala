@@ -11,8 +11,8 @@ trait ILightSensorStatics extends js.Object {
 
 object ILightSensorStatics {
   @scala.inline
-  def apply(getDefault: js.Function0[LightSensor]): ILightSensorStatics = {
-    val __obj = js.Dynamic.literal(getDefault = getDefault)
+  def apply(getDefault: () => LightSensor): ILightSensorStatics = {
+    val __obj = js.Dynamic.literal(getDefault = js.Any.fromFunction0(getDefault))
   
     __obj.asInstanceOf[ILightSensorStatics]
   }

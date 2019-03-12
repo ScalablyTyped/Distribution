@@ -91,35 +91,22 @@ object Anon_CallbackCertificateClientCertificateType {
   @scala.inline
   def apply(
     ClientCertificateType: Anon_ECDSASIGN,
-    getKeyPair: js.Function3[
-      stdLib.ArrayBuffer, 
-      js.Object, 
-      js.Function2[
-        /* publicKey */ stdLib.CryptoKey, 
-        /* privateKey */ stdLib.CryptoKey | scala.Null, 
-        scala.Unit
-      ], 
+    getKeyPair: (stdLib.ArrayBuffer, js.Object, js.Function2[
+      /* publicKey */ stdLib.CryptoKey, 
+      /* privateKey */ stdLib.CryptoKey | scala.Null, 
       scala.Unit
-    ],
-    selectClientCertificates: js.Function2[
-      chromeDashAppsLib.chromeNs.platformKeysNs.SelectDetails, 
-      js.Function1[
-        /* matches */ js.Array[chromeDashAppsLib.chromeNs.platformKeysNs.Match], 
-        scala.Unit
-      ], 
+    ]) => scala.Unit,
+    selectClientCertificates: (chromeDashAppsLib.chromeNs.platformKeysNs.SelectDetails, js.Function1[
+      /* matches */ js.Array[chromeDashAppsLib.chromeNs.platformKeysNs.Match], 
       scala.Unit
-    ],
-    subtleCrypto: js.Function0[stdLib.SubtleCrypto],
-    verifyTLSServerCertificate: js.Function2[
-      chromeDashAppsLib.chromeNs.platformKeysNs.VerificationDetails, 
-      js.Function1[
-        /* result */ chromeDashAppsLib.chromeNs.platformKeysNs.VerificationResult, 
-        scala.Unit
-      ], 
+    ]) => scala.Unit,
+    subtleCrypto: () => stdLib.SubtleCrypto,
+    verifyTLSServerCertificate: (chromeDashAppsLib.chromeNs.platformKeysNs.VerificationDetails, js.Function1[
+      /* result */ chromeDashAppsLib.chromeNs.platformKeysNs.VerificationResult, 
       scala.Unit
-    ]
+    ]) => scala.Unit
   ): Anon_CallbackCertificateClientCertificateType = {
-    val __obj = js.Dynamic.literal(ClientCertificateType = ClientCertificateType, getKeyPair = getKeyPair, selectClientCertificates = selectClientCertificates, subtleCrypto = subtleCrypto, verifyTLSServerCertificate = verifyTLSServerCertificate)
+    val __obj = js.Dynamic.literal(ClientCertificateType = ClientCertificateType, getKeyPair = js.Any.fromFunction3(getKeyPair), selectClientCertificates = js.Any.fromFunction2(selectClientCertificates), subtleCrypto = js.Any.fromFunction0(subtleCrypto), verifyTLSServerCertificate = js.Any.fromFunction2(verifyTLSServerCertificate))
   
     __obj.asInstanceOf[Anon_CallbackCertificateClientCertificateType]
   }

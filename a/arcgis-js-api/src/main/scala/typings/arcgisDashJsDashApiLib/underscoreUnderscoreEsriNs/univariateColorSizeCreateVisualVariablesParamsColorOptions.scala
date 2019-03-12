@@ -39,13 +39,13 @@ object univariateColorSizeCreateVisualVariablesParamsColorOptions {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     colorScheme: ColorScheme = null,
     legendOptions: univariateColorSizeCreateVisualVariablesParamsColorOptionsLegendOptions = null,
     theme: java.lang.String = null
   ): univariateColorSizeCreateVisualVariablesParamsColorOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme)
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
     if (theme != null) __obj.updateDynamic("theme")(theme)

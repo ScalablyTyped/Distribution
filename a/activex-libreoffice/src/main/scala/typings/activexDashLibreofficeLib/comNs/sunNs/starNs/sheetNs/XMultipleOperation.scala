@@ -29,18 +29,12 @@ trait XMultipleOperation
 object XMultipleOperation {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setTableOperation: js.Function4[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, 
-      TableOperationMode, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setTableOperation: (activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, TableOperationMode, activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress) => scala.Unit
   ): XMultipleOperation = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, setTableOperation = setTableOperation)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setTableOperation = js.Any.fromFunction4(setTableOperation))
   
     __obj.asInstanceOf[XMultipleOperation]
   }

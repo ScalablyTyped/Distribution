@@ -13,10 +13,10 @@ object EllipseGeometryUpdater {
   @scala.inline
   def apply(
     classificationTypeProperty: Property,
-    createDynamicUpdater: js.Function2[PrimitiveCollection, PrimitiveCollection, DynamicGeometryUpdater],
-    createFillGeometryInstance: js.Function1[JulianDate, GeometryInstance],
-    createOutlineGeometryInstance: js.Function1[JulianDate, GeometryInstance],
-    destroy: js.Function0[scala.Unit],
+    createDynamicUpdater: (PrimitiveCollection, PrimitiveCollection) => DynamicGeometryUpdater,
+    createFillGeometryInstance: JulianDate => GeometryInstance,
+    createOutlineGeometryInstance: JulianDate => GeometryInstance,
+    destroy: () => scala.Unit,
     entity: Entity,
     fillEnabled: scala.Boolean,
     fillMaterialProperty: MaterialProperty,
@@ -25,10 +25,10 @@ object EllipseGeometryUpdater {
     hasConstantOutline: scala.Boolean,
     id: java.lang.String,
     isClosed: scala.Boolean,
-    isDestroyed: js.Function0[scala.Boolean],
+    isDestroyed: () => scala.Boolean,
     isDynamic: scala.Boolean,
-    isFilled: js.Function1[JulianDate, scala.Boolean],
-    isOutlineVisible: js.Function1[JulianDate, scala.Boolean],
+    isFilled: JulianDate => scala.Boolean,
+    isOutlineVisible: JulianDate => scala.Boolean,
     onTerrain: scala.Boolean,
     outlineColorProperty: Property,
     outlineEnabled: scala.Boolean,
@@ -36,7 +36,7 @@ object EllipseGeometryUpdater {
     readonlydistanceDisplayConditionProperty: Property,
     shadowsProperty: Property
   ): EllipseGeometryUpdater = {
-    val __obj = js.Dynamic.literal(classificationTypeProperty = classificationTypeProperty, createDynamicUpdater = createDynamicUpdater, createFillGeometryInstance = createFillGeometryInstance, createOutlineGeometryInstance = createOutlineGeometryInstance, destroy = destroy, entity = entity, fillEnabled = fillEnabled, fillMaterialProperty = fillMaterialProperty, geometryChanged = geometryChanged, hasConstantFill = hasConstantFill, hasConstantOutline = hasConstantOutline, id = id, isClosed = isClosed, isDestroyed = isDestroyed, isDynamic = isDynamic, isFilled = isFilled, isOutlineVisible = isOutlineVisible, onTerrain = onTerrain, outlineColorProperty = outlineColorProperty, outlineEnabled = outlineEnabled, outlineWidth = outlineWidth, readonlydistanceDisplayConditionProperty = readonlydistanceDisplayConditionProperty, shadowsProperty = shadowsProperty)
+    val __obj = js.Dynamic.literal(classificationTypeProperty = classificationTypeProperty, createDynamicUpdater = js.Any.fromFunction2(createDynamicUpdater), createFillGeometryInstance = js.Any.fromFunction1(createFillGeometryInstance), createOutlineGeometryInstance = js.Any.fromFunction1(createOutlineGeometryInstance), destroy = js.Any.fromFunction0(destroy), entity = entity, fillEnabled = fillEnabled, fillMaterialProperty = fillMaterialProperty, geometryChanged = geometryChanged, hasConstantFill = hasConstantFill, hasConstantOutline = hasConstantOutline, id = id, isClosed = isClosed, isDestroyed = js.Any.fromFunction0(isDestroyed), isDynamic = isDynamic, isFilled = js.Any.fromFunction1(isFilled), isOutlineVisible = js.Any.fromFunction1(isOutlineVisible), onTerrain = onTerrain, outlineColorProperty = outlineColorProperty, outlineEnabled = outlineEnabled, outlineWidth = outlineWidth, readonlydistanceDisplayConditionProperty = readonlydistanceDisplayConditionProperty, shadowsProperty = shadowsProperty)
   
     __obj.asInstanceOf[EllipseGeometryUpdater]
   }

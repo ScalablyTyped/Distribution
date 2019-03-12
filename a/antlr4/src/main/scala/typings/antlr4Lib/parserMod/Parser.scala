@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Parser protected ()
   extends antlr4Lib.recognizerMod.Recognizer {
-  def this(input: antlr4Lib.commontokenstreamMod.CommonTokenStream) = this()
+  def this(input: antlr4Lib.commonTokenStreamMod.CommonTokenStream) = this()
   var _errHandler: antlr4Lib.errorErrorStrategyMod.ErrorStrategy = js.native
   var buildParseTrees: scala.Boolean = js.native
   def addContextToParseTree(): js.Any = js.native
@@ -19,19 +19,19 @@ class Parser protected ()
   def dumpDFA(): scala.Unit = js.native
   def enterOuterAlt(): scala.Unit = js.native
   def enterRecursionRule(
-    localCtx: antlr4Lib.parserrulecontextMod.ParserRuleContext,
+    localCtx: antlr4Lib.parserRuleContextMod.ParserRuleContext,
     state: js.Any,
     ruleIndex: js.Any,
     precedence: js.Any
   ): scala.Unit = js.native
-  def enterRule(localCtx: antlr4Lib.parserrulecontextMod.ParserRuleContext, state: js.Any, ruleIndex: scala.Double): scala.Unit = js.native
+  def enterRule(localCtx: antlr4Lib.parserRuleContextMod.ParserRuleContext, state: js.Any, ruleIndex: scala.Double): scala.Unit = js.native
   def exitRule(): scala.Unit = js.native
   def getATNWithBypassAlts(): js.Any = js.native
   def getCurrentToken(): antlr4Lib.tokenMod.Token = js.native
   def getDFAStrings(): js.Any = js.native
   def getExpectedTokens(): js.Array[antlr4Lib.tokenMod.Token] = js.native
   def getExpectedTokensWithinCurrentRule(): js.Array[antlr4Lib.tokenMod.Token] = js.native
-  def getInputStream(): antlr4Lib.inputstreamMod.InputStream = js.native
+  def getInputStream(): antlr4Lib.inputStreamMod.InputStream = js.native
   def getInvokingContext(ruleIndex: scala.Double): js.Any = js.native
   def getParseListeners(): js.Array[antlr4Lib.treeTreeMod.ParseTreeListener] = js.native
   def getPrecedence(): js.Any = js.native
@@ -45,7 +45,7 @@ class Parser protected ()
   def matchWildcard(): antlr4Lib.tokenMod.Token = js.native
   def notifyErrorListeners(msg: java.lang.String, offendingToken: antlr4Lib.tokenMod.Token, err: js.Any): scala.Unit = js.native
   def pushNewRecursionContext(
-    localCtx: antlr4Lib.parserrulecontextMod.ParserRuleContext,
+    localCtx: antlr4Lib.parserRuleContextMod.ParserRuleContext,
     state: js.Any,
     ruleIndex: js.Any,
     precedence: js.Any
@@ -58,6 +58,6 @@ class Parser protected ()
   def setTrace(trace: scala.Boolean): scala.Unit = js.native
   def triggerEnterRuleEvent(): scala.Unit = js.native
   def triggerExitRuleEvent(): scala.Unit = js.native
-  def unrollRecursionContexts(parentCtx: antlr4Lib.parserrulecontextMod.ParserRuleContext): scala.Unit = js.native
+  def unrollRecursionContexts(parentCtx: antlr4Lib.parserRuleContextMod.ParserRuleContext): scala.Unit = js.native
 }
 

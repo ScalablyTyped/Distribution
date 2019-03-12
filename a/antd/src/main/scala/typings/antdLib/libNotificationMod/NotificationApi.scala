@@ -20,17 +20,17 @@ trait NotificationApi extends js.Object {
 object NotificationApi {
   @scala.inline
   def apply(
-    close: js.Function1[java.lang.String, scala.Unit],
-    config: js.Function1[ConfigProps, scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    error: js.Function1[ArgsProps, scala.Unit],
-    info: js.Function1[ArgsProps, scala.Unit],
-    open: js.Function1[ArgsProps, scala.Unit],
-    success: js.Function1[ArgsProps, scala.Unit],
-    warn: js.Function1[ArgsProps, scala.Unit],
-    warning: js.Function1[ArgsProps, scala.Unit]
+    close: java.lang.String => scala.Unit,
+    config: ConfigProps => scala.Unit,
+    destroy: () => scala.Unit,
+    error: ArgsProps => scala.Unit,
+    info: ArgsProps => scala.Unit,
+    open: ArgsProps => scala.Unit,
+    success: ArgsProps => scala.Unit,
+    warn: ArgsProps => scala.Unit,
+    warning: ArgsProps => scala.Unit
   ): NotificationApi = {
-    val __obj = js.Dynamic.literal(close = close, config = config, destroy = destroy, error = error, info = info, open = open, success = success, warn = warn, warning = warning)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction1(close), config = js.Any.fromFunction1(config), destroy = js.Any.fromFunction0(destroy), error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), open = js.Any.fromFunction1(open), success = js.Any.fromFunction1(success), warn = js.Any.fromFunction1(warn), warning = js.Any.fromFunction1(warning))
   
     __obj.asInstanceOf[NotificationApi]
   }

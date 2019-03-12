@@ -54,11 +54,7 @@ object Options {
     lineWrapping: js.UndefOr[scala.Boolean] = js.undefined,
     parsingConfig: ParsingOptions = null,
     placeholder: java.lang.String = null,
-    previewRender: js.Function2[
-      /* markdownPlaintext */ java.lang.String, 
-      /* previewElement */ js.UndefOr[stdLib.HTMLElement], 
-      java.lang.String
-    ] = null,
+    previewRender: (/* markdownPlaintext */ java.lang.String, /* previewElement */ js.UndefOr[stdLib.HTMLElement]) => java.lang.String = null,
     promptURLs: js.UndefOr[scala.Boolean] = js.undefined,
     renderingConfig: RenderingOptions = null,
     shortcuts: ShortcutsArray = null,
@@ -84,7 +80,7 @@ object Options {
     if (!js.isUndefined(lineWrapping)) __obj.updateDynamic("lineWrapping")(lineWrapping)
     if (parsingConfig != null) __obj.updateDynamic("parsingConfig")(parsingConfig)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (previewRender != null) __obj.updateDynamic("previewRender")(previewRender)
+    if (previewRender != null) __obj.updateDynamic("previewRender")(js.Any.fromFunction2(previewRender))
     if (!js.isUndefined(promptURLs)) __obj.updateDynamic("promptURLs")(promptURLs)
     if (renderingConfig != null) __obj.updateDynamic("renderingConfig")(renderingConfig)
     if (shortcuts != null) __obj.updateDynamic("shortcuts")(shortcuts)

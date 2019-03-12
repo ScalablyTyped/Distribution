@@ -39,17 +39,13 @@ object Options {
   def apply(
     buffer: js.UndefOr[scala.Boolean] = js.undefined,
     immediate: js.UndefOr[scala.Boolean] = js.undefined,
-    skip: js.Function2[
-      /* req */ nodeLib.httpMod.IncomingMessage, 
-      /* res */ nodeLib.httpMod.ServerResponse, 
-      scala.Boolean
-    ] = null,
+    skip: (/* req */ nodeLib.httpMod.IncomingMessage, /* res */ nodeLib.httpMod.ServerResponse) => scala.Boolean = null,
     stream: StreamOptions = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer)
     if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
-    if (skip != null) __obj.updateDynamic("skip")(skip)
+    if (skip != null) __obj.updateDynamic("skip")(js.Any.fromFunction2(skip))
     if (stream != null) __obj.updateDynamic("stream")(stream)
     __obj.asInstanceOf[Options]
   }

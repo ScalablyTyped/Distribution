@@ -8,20 +8,17 @@ import scala.scalajs.js.annotation._
 @JSImport("watch", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  def createMonitor(root: java.lang.String, callback: js.Function1[/* monitor */ Monitor, scala.Unit]): scala.Unit = js.native
   def createMonitor(
     root: java.lang.String,
-    callback: js.Function1[/* monitor */ watchLib.watchMod.Monitor, scala.Unit]
-  ): scala.Unit = js.native
-  def createMonitor(
-    root: java.lang.String,
-    options: watchLib.watchMod.Options,
-    callback: js.Function1[/* monitor */ watchLib.watchMod.Monitor, scala.Unit]
+    options: Options,
+    callback: js.Function1[/* monitor */ Monitor, scala.Unit]
   ): scala.Unit = js.native
   def unwatchTree(root: java.lang.String): scala.Unit = js.native
   def watchTree(
     root: java.lang.String,
     callback: js.Function3[
-      /* f */ watchLib.watchMod.FileOrFiles, 
+      /* f */ FileOrFiles, 
       /* curr */ nodeLib.fsMod.Stats, 
       /* prev */ nodeLib.fsMod.Stats, 
       scala.Unit
@@ -29,9 +26,9 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def watchTree(
     root: java.lang.String,
-    options: watchLib.watchMod.Options,
+    options: Options,
     callback: js.Function3[
-      /* f */ watchLib.watchMod.FileOrFiles, 
+      /* f */ FileOrFiles, 
       /* curr */ nodeLib.fsMod.Stats, 
       /* prev */ nodeLib.fsMod.Stats, 
       scala.Unit

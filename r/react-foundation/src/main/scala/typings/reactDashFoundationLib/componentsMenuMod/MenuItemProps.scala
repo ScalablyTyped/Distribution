@@ -292,7 +292,7 @@ object MenuItemProps {
   @scala.inline
   def apply(
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLLIElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLLIElement] = null,
     isActive: js.UndefOr[scala.Boolean] = js.undefined
   ): MenuItemProps = {
     val __obj = js.Dynamic.literal()

@@ -27,10 +27,10 @@ trait Model extends ModelInstance {
   def findOrCreate(criteria: js.Any): QueryBuilder[_] = js.native
   def findOrCreate(criteria: js.Any, values: js.Any): QueryBuilder[_] = js.native
   def findOrCreate(criteria: js.Any, values: js.Any, cb: Callback[_]): QueryBuilder[_] = js.native
-  def native(cb: js.Function2[/* err */ nodeLib.Error, /* collection */ js.Any, scala.Unit]): scala.Unit = js.native
+  def native(cb: js.Function2[/* err */ stdLib.Error, /* collection */ js.Any, scala.Unit]): scala.Unit = js.native
   def query(sqlQuery: java.lang.String, cb: Callback[_]): scala.Unit = js.native
   def query(sqlQuery: java.lang.String, data: js.Any, cb: Callback[_]): scala.Unit = js.native
-  def stream(criteria: js.Any, writeEnd: js.Any): nodeLib.NodeJSNs.WritableStream | nodeLib.Error = js.native
+  def stream(criteria: js.Any, writeEnd: js.Any): nodeLib.NodeJSNs.WritableStream | stdLib.Error = js.native
   def update(criteria: js.Any, changes: js.Any): WaterlinePromise[js.Array[_]] = js.native
   def update(criteria: js.Any, changes: js.Any, cb: Callback[_]): WaterlinePromise[js.Array[_]] = js.native
   def update(criteria: js.Any, changes: js.Array[_]): WaterlinePromise[js.Array[_]] = js.native

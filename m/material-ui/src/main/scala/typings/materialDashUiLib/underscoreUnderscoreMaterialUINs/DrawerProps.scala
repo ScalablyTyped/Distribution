@@ -32,7 +32,7 @@ object DrawerProps {
     containerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     disableSwipeToOpen: js.UndefOr[scala.Boolean] = js.undefined,
     docked: js.UndefOr[scala.Boolean] = js.undefined,
-    onRequestChange: js.Function2[/* opening */ scala.Boolean, /* reason */ java.lang.String, scala.Unit] = null,
+    onRequestChange: (/* opening */ scala.Boolean, /* reason */ java.lang.String) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     openSecondary: js.UndefOr[scala.Boolean] = js.undefined,
     overlayClassName: java.lang.String = null,
@@ -48,7 +48,7 @@ object DrawerProps {
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle)
     if (!js.isUndefined(disableSwipeToOpen)) __obj.updateDynamic("disableSwipeToOpen")(disableSwipeToOpen)
     if (!js.isUndefined(docked)) __obj.updateDynamic("docked")(docked)
-    if (onRequestChange != null) __obj.updateDynamic("onRequestChange")(onRequestChange)
+    if (onRequestChange != null) __obj.updateDynamic("onRequestChange")(js.Any.fromFunction2(onRequestChange))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (!js.isUndefined(openSecondary)) __obj.updateDynamic("openSecondary")(openSecondary)
     if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName)

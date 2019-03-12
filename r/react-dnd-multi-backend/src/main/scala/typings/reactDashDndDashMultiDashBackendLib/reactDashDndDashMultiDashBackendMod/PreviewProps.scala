@@ -21,14 +21,9 @@ trait PreviewProps extends js.Object {
 object PreviewProps {
   @scala.inline
   def apply(
-    generator: js.Function3[
-      java.lang.String, 
-      js.Any, 
-      reactLib.reactMod.ReactNs.CSSProperties, 
-      reactLib.reactMod.Global.JSXNs.Element
-    ]
+    generator: (java.lang.String, js.Any, reactLib.reactMod.ReactNs.CSSProperties) => reactLib.reactMod.Global.JSXNs.Element
   ): PreviewProps = {
-    val __obj = js.Dynamic.literal(generator = generator)
+    val __obj = js.Dynamic.literal(generator = js.Any.fromFunction3(generator))
   
     __obj.asInstanceOf[PreviewProps]
   }

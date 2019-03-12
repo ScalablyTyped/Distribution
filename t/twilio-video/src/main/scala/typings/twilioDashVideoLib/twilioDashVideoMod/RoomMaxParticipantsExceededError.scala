@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class RoomMaxParticipantsExceededError () extends TwilioError {
   @JSName("code")
   var code_RoomMaxParticipantsExceededError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53105` = js.native
-  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Room contains too many Participants` = js.native
+  @JSName("message")
+  var message_RoomMaxParticipantsExceededError: twilioDashVideoLib.twilioDashVideoLibStrings.`Room contains too many Participants` = js.native
 }
 

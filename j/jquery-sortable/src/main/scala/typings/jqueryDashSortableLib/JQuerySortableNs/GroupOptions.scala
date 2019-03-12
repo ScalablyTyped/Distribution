@@ -38,18 +38,13 @@ trait GroupOptions extends js.Object {
 object GroupOptions {
   @scala.inline
   def apply(
-    afterMove: js.Function3[
-      /* $placeholder */ jqueryDashSortableLib.JQuery, 
-      /* container */ Container, 
-      /* $closestItemOrContainer */ jqueryDashSortableLib.JQuery, 
-      scala.Unit
-    ] = null,
+    afterMove: (/* $placeholder */ jqueryDashSortableLib.JQuery, /* container */ Container, /* $closestItemOrContainer */ jqueryDashSortableLib.JQuery) => scala.Unit = null,
     containerPath: java.lang.String = null,
     containerSelector: java.lang.String = null,
     delay: scala.Int | scala.Double = null,
     distance: scala.Int | scala.Double = null,
     handle: java.lang.String = null,
-    isValidTarget: js.Function2[/* $item */ jqueryDashSortableLib.JQuery, /* container */ Container, scala.Boolean] = null,
+    isValidTarget: (/* $item */ jqueryDashSortableLib.JQuery, /* container */ Container) => scala.Boolean = null,
     itemPath: java.lang.String = null,
     itemSelector: java.lang.String = null,
     onCancel: OnCancelHandler = null,
@@ -63,13 +58,13 @@ object GroupOptions {
     tolerance: scala.Int | scala.Double = null
   ): GroupOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterMove != null) __obj.updateDynamic("afterMove")(afterMove)
+    if (afterMove != null) __obj.updateDynamic("afterMove")(js.Any.fromFunction3(afterMove))
     if (containerPath != null) __obj.updateDynamic("containerPath")(containerPath)
     if (containerSelector != null) __obj.updateDynamic("containerSelector")(containerSelector)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (handle != null) __obj.updateDynamic("handle")(handle)
-    if (isValidTarget != null) __obj.updateDynamic("isValidTarget")(isValidTarget)
+    if (isValidTarget != null) __obj.updateDynamic("isValidTarget")(js.Any.fromFunction2(isValidTarget))
     if (itemPath != null) __obj.updateDynamic("itemPath")(itemPath)
     if (itemSelector != null) __obj.updateDynamic("itemSelector")(itemSelector)
     if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel)

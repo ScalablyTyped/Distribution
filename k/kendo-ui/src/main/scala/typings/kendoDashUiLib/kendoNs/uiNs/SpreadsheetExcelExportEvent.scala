@@ -13,13 +13,13 @@ trait SpreadsheetExcelExportEvent extends SpreadsheetEvent {
 object SpreadsheetExcelExportEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Spreadsheet,
     data: js.Any = null,
     workbook: kendoDashUiLib.kendoNs.ooxmlNs.Workbook = null
   ): SpreadsheetExcelExportEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (data != null) __obj.updateDynamic("data")(data)
     if (workbook != null) __obj.updateDynamic("workbook")(workbook)
     __obj.asInstanceOf[SpreadsheetExcelExportEvent]

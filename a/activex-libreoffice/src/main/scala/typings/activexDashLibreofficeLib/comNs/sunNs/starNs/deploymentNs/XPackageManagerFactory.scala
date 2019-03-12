@@ -28,8 +28,8 @@ trait XPackageManagerFactory extends js.Object {
 
 object XPackageManagerFactory {
   @scala.inline
-  def apply(getPackageManager: js.Function1[java.lang.String, XPackageManager]): XPackageManagerFactory = {
-    val __obj = js.Dynamic.literal(getPackageManager = getPackageManager)
+  def apply(getPackageManager: java.lang.String => XPackageManager): XPackageManagerFactory = {
+    val __obj = js.Dynamic.literal(getPackageManager = js.Any.fromFunction1(getPackageManager))
   
     __obj.asInstanceOf[XPackageManagerFactory]
   }

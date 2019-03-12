@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HttpsError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   /**
     * A standard error code that will be returned to the client. This also
     * determines the HTTP status code of the response, as defined in code.proto.
@@ -20,8 +20,14 @@ trait HttpsError
 
 object HttpsError {
   @scala.inline
-  def apply(code: FunctionsErrorCode, details: js.Any = null, stack: java.lang.String = null): HttpsError = {
-    val __obj = js.Dynamic.literal(code = code)
+  def apply(
+    code: FunctionsErrorCode,
+    message: java.lang.String,
+    name: java.lang.String,
+    details: js.Any = null,
+    stack: java.lang.String = null
+  ): HttpsError = {
+    val __obj = js.Dynamic.literal(code = code, message = message, name = name)
     if (details != null) __obj.updateDynamic("details")(details)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[HttpsError]

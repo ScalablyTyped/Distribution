@@ -12,8 +12,8 @@ trait Dragster extends js.Object {
 
 object Dragster {
   @scala.inline
-  def apply(removeListeners: js.Function0[scala.Unit], reset: js.Function0[scala.Unit]): Dragster = {
-    val __obj = js.Dynamic.literal(removeListeners = removeListeners, reset = reset)
+  def apply(removeListeners: () => scala.Unit, reset: () => scala.Unit): Dragster = {
+    val __obj = js.Dynamic.literal(removeListeners = js.Any.fromFunction0(removeListeners), reset = js.Any.fromFunction0(reset))
   
     __obj.asInstanceOf[Dragster]
   }

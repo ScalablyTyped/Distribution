@@ -13,10 +13,10 @@ trait FileUploadTransport extends js.Object {
 object FileUploadTransport {
   @scala.inline
   def apply(
-    flush: js.Function0[scala.Unit],
-    queue: js.Function1[stdLib.FileList, js.Array[atOracleOraclejetLib.ojprogresslistMod.ProgressItem]]
+    flush: () => scala.Unit,
+    queue: stdLib.FileList => js.Array[atOracleOraclejetLib.ojprogresslistMod.ProgressItem]
   ): FileUploadTransport = {
-    val __obj = js.Dynamic.literal(flush = flush, queue = queue)
+    val __obj = js.Dynamic.literal(flush = js.Any.fromFunction0(flush), queue = js.Any.fromFunction1(queue))
   
     __obj.asInstanceOf[FileUploadTransport]
   }

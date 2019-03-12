@@ -9,11 +9,11 @@ trait DescribeBudgetRequest extends js.Object {
   /**
     * The accountId that is associated with the budget that you want a description of.
     */
-  var AccountId: AccountId
+  var AccountId: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.AccountId
   /**
     * The name of the budget that you want a description of.
     */
-  var BudgetName: BudgetName
+  var BudgetName: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.BudgetName
 }
 
 object DescribeBudgetRequest {

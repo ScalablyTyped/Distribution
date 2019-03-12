@@ -13,12 +13,9 @@ trait SignupUrlsResource extends js.Object {
 object SignupUrlsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotAndroidmanagementLib.Anon_AccesstokenAltBearertokenCallbackCallbackUrl, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SignupUrl]
-    ]
+    create: gapiDotClientDotAndroidmanagementLib.Anon_AccesstokenAltBearertokenCallbackCallbackUrl => gapiDotClientLib.gapiNs.clientNs.Request[SignupUrl]
   ): SignupUrlsResource = {
-    val __obj = js.Dynamic.literal(create = create)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
   
     __obj.asInstanceOf[SignupUrlsResource]
   }

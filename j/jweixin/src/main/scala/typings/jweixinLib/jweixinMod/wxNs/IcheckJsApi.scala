@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IcheckJsApi extends BaseParams {
-  var jsApiList: jsApiList
+  var jsApiList: jweixinLib.jweixinMod.wxNs.jsApiList
    // 需要检测的JS接口列表，所有JS接口列表见附录2,
   // 以键值对的形式返回，可用的api值true，不可用为false
   // 如：{"checkResult":{"chooseImage":true},"errMsg":"checkJsApi:ok"}
@@ -18,13 +18,13 @@ object IcheckJsApi {
   @scala.inline
   def apply(
     jsApiList: jsApiList,
-    success: js.Function1[jweixinLib.Anon_Api, scala.Unit],
-    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+    success: jweixinLib.Anon_Api => scala.Unit,
+    complete: /* repeated */ js.Any => scala.Unit = null,
+    fail: /* repeated */ js.Any => scala.Unit = null
   ): IcheckJsApi = {
-    val __obj = js.Dynamic.literal(jsApiList = jsApiList, success = success)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    val __obj = js.Dynamic.literal(jsApiList = jsApiList, success = js.Any.fromFunction1(success))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[IcheckJsApi]
   }
 }

@@ -48,17 +48,17 @@ object CoseLayoutOptions {
   def apply(
     componentSpacing: scala.Double,
     coolingFactor: scala.Double,
-    edgeElasticity: js.Function1[js.Any, scala.Double],
+    edgeElasticity: js.Any => scala.Double,
     fit: scala.Boolean,
     gravity: scala.Double,
-    idealEdgeLength: js.Function1[js.Any, scala.Double],
+    idealEdgeLength: js.Any => scala.Double,
     initialTemp: scala.Double,
     minTemp: scala.Double,
     name: cytoscapeLib.cytoscapeLibStrings.cose,
     nestingFactor: scala.Double,
     nodeDimensionsIncludeLabels: scala.Boolean,
     nodeOverlap: scala.Double,
-    nodeRepulsion: js.Function1[js.Any, scala.Double],
+    nodeRepulsion: js.Any => scala.Double,
     numIter: scala.Double,
     randomize: scala.Boolean,
     refresh: scala.Double,
@@ -74,7 +74,7 @@ object CoseLayoutOptions {
     spacingFactor: scala.Int | scala.Double = null,
     stop: LayoutHandler = null
   ): CoseLayoutOptions = {
-    val __obj = js.Dynamic.literal(componentSpacing = componentSpacing, coolingFactor = coolingFactor, edgeElasticity = edgeElasticity, fit = fit, gravity = gravity, idealEdgeLength = idealEdgeLength, initialTemp = initialTemp, minTemp = minTemp, name = name, nestingFactor = nestingFactor, nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels, nodeOverlap = nodeOverlap, nodeRepulsion = nodeRepulsion, numIter = numIter, randomize = randomize, refresh = refresh, weaver = weaver)
+    val __obj = js.Dynamic.literal(componentSpacing = componentSpacing, coolingFactor = coolingFactor, edgeElasticity = js.Any.fromFunction1(edgeElasticity), fit = fit, gravity = gravity, idealEdgeLength = js.Any.fromFunction1(idealEdgeLength), initialTemp = initialTemp, minTemp = minTemp, name = name, nestingFactor = nestingFactor, nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels, nodeOverlap = nodeOverlap, nodeRepulsion = js.Any.fromFunction1(nodeRepulsion), numIter = numIter, randomize = randomize, refresh = refresh, weaver = weaver)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing)

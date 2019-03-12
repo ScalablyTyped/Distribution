@@ -14,7 +14,7 @@ trait XGridRowSelection extends js.Object {
     * Returns the indices of all selected rows.
     * @returns a sequence of indices.
     */
-  val SelectedRows: activexDashInteropLib.SafeArray[scala.Double]
+  val SelectedRows: stdLib.SafeArray[scala.Double]
   /**
     * Adds a listener for the {@link GridSelectionEvent} posted after the grid changes.
     * @param listener the listener to add.
@@ -31,7 +31,7 @@ trait XGridRowSelection extends js.Object {
     * Returns the indices of all selected rows.
     * @returns a sequence of indices.
     */
-  def getSelectedRows(): activexDashInteropLib.SafeArray[scala.Double]
+  def getSelectedRows(): stdLib.SafeArray[scala.Double]
   /**
     * Returns whether rows are selected.
     * @returns `TRUE` if and only if at least one row is selected.
@@ -61,18 +61,18 @@ trait XGridRowSelection extends js.Object {
 object XGridRowSelection {
   @scala.inline
   def apply(
-    SelectedRows: activexDashInteropLib.SafeArray[scala.Double],
-    addSelectionListener: js.Function1[XGridSelectionListener, scala.Unit],
-    deselectAllRows: js.Function0[scala.Unit],
-    deselectRow: js.Function1[scala.Double, scala.Unit],
-    getSelectedRows: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    hasSelectedRows: js.Function0[scala.Boolean],
-    isRowSelected: js.Function1[scala.Double, scala.Boolean],
-    removeSelectionListener: js.Function1[XGridSelectionListener, scala.Unit],
-    selectAllRows: js.Function0[scala.Unit],
-    selectRow: js.Function1[scala.Double, scala.Unit]
+    SelectedRows: stdLib.SafeArray[scala.Double],
+    addSelectionListener: XGridSelectionListener => scala.Unit,
+    deselectAllRows: () => scala.Unit,
+    deselectRow: scala.Double => scala.Unit,
+    getSelectedRows: () => stdLib.SafeArray[scala.Double],
+    hasSelectedRows: () => scala.Boolean,
+    isRowSelected: scala.Double => scala.Boolean,
+    removeSelectionListener: XGridSelectionListener => scala.Unit,
+    selectAllRows: () => scala.Unit,
+    selectRow: scala.Double => scala.Unit
   ): XGridRowSelection = {
-    val __obj = js.Dynamic.literal(SelectedRows = SelectedRows, addSelectionListener = addSelectionListener, deselectAllRows = deselectAllRows, deselectRow = deselectRow, getSelectedRows = getSelectedRows, hasSelectedRows = hasSelectedRows, isRowSelected = isRowSelected, removeSelectionListener = removeSelectionListener, selectAllRows = selectAllRows, selectRow = selectRow)
+    val __obj = js.Dynamic.literal(SelectedRows = SelectedRows, addSelectionListener = js.Any.fromFunction1(addSelectionListener), deselectAllRows = js.Any.fromFunction0(deselectAllRows), deselectRow = js.Any.fromFunction1(deselectRow), getSelectedRows = js.Any.fromFunction0(getSelectedRows), hasSelectedRows = js.Any.fromFunction0(hasSelectedRows), isRowSelected = js.Any.fromFunction1(isRowSelected), removeSelectionListener = js.Any.fromFunction1(removeSelectionListener), selectAllRows = js.Any.fromFunction0(selectAllRows), selectRow = js.Any.fromFunction1(selectRow))
   
     __obj.asInstanceOf[XGridRowSelection]
   }

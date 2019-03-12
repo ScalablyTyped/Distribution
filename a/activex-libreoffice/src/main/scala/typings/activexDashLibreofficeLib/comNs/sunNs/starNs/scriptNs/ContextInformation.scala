@@ -15,7 +15,7 @@ trait ContextInformation extends js.Object {
   /** contains the last line in the module's source code associated with the context. */
   var EndLine: scala.Double
   /** Get all names of the local variable in this context. */
-  var LocalVariableNames: activexDashInteropLib.SafeArray[java.lang.String]
+  var LocalVariableNames: stdLib.SafeArray[java.lang.String]
   /**
     * Full qualified name to address the module or function associated with the context. If the module or function can't be addressed by name, e.g., in case
     * that a runtime generated eval-module is executed, this string is empty
@@ -44,7 +44,7 @@ object ContextInformation {
   def apply(
     EndColumn: scala.Double,
     EndLine: scala.Double,
-    LocalVariableNames: activexDashInteropLib.SafeArray[java.lang.String],
+    LocalVariableNames: stdLib.SafeArray[java.lang.String],
     Name: java.lang.String,
     SourceCode: java.lang.String,
     StartColumn: scala.Double,

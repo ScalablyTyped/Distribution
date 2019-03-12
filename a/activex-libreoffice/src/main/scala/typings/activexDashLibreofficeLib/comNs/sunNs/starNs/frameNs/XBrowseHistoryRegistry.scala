@@ -21,18 +21,13 @@ trait XBrowseHistoryRegistry
 object XBrowseHistoryRegistry {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createNewEntry: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      java.lang.String, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    updateViewData: js.Function1[js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    createNewEntry: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], java.lang.String) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    updateViewData: js.Any => scala.Unit
   ): XBrowseHistoryRegistry = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createNewEntry = createNewEntry, queryInterface = queryInterface, release = release, updateViewData = updateViewData)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createNewEntry = js.Any.fromFunction3(createNewEntry), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), updateViewData = js.Any.fromFunction1(updateViewData))
   
     __obj.asInstanceOf[XBrowseHistoryRegistry]
   }

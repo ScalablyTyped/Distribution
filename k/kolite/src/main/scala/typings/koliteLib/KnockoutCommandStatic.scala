@@ -14,10 +14,10 @@ trait KnockoutCommandStatic extends js.Object {
 object KnockoutCommandStatic {
   @scala.inline
   def apply(
-    asyncCommand: js.Function1[KoLiteCommandOptions, KoliteAsyncCommand],
-    command: js.Function1[KoLiteCommandOptions, KoliteCommand]
+    asyncCommand: KoLiteCommandOptions => KoliteAsyncCommand,
+    command: KoLiteCommandOptions => KoliteCommand
   ): KnockoutCommandStatic = {
-    val __obj = js.Dynamic.literal(asyncCommand = asyncCommand, command = command)
+    val __obj = js.Dynamic.literal(asyncCommand = js.Any.fromFunction1(asyncCommand), command = js.Any.fromFunction1(command))
   
     __obj.asInstanceOf[KnockoutCommandStatic]
   }

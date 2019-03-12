@@ -33,19 +33,15 @@ object TabBarBottomProps {
     activeBackgroundColor: java.lang.String,
     activeTintColor: java.lang.String,
     allowFontScaling: scala.Boolean,
-    getLabel: js.Function1[TabScene, reactLib.reactMod.ReactNs.ReactNode | java.lang.String],
-    getOnPress: js.Function2[
-      NavigationRoute[NavigationParams], 
-      TabScene, 
-      js.Function1[/* args */ reactDashNavigationLib.Anon_IndexJumpToIndex, scala.Unit]
-    ],
-    getTestIDProps: js.Function1[TabScene, js.Function1[/* scene */ TabScene, _]],
+    getLabel: TabScene => reactLib.reactMod.ReactNs.ReactNode | java.lang.String,
+    getOnPress: (NavigationRoute[NavigationParams], TabScene) => js.Function1[/* args */ reactDashNavigationLib.Anon_IndexJumpToIndex, scala.Unit],
+    getTestIDProps: TabScene => js.Function1[/* scene */ TabScene, _],
     inactiveBackgroundColor: java.lang.String,
     inactiveTintColor: java.lang.String,
-    jumpToIndex: js.Function1[scala.Double, scala.Unit],
+    jumpToIndex: scala.Double => scala.Unit,
     navigation: NavigationScreenProp[NavigationState, NavigationParams],
     position: AnimatedValue,
-    renderIcon: js.Function1[TabScene, reactLib.reactMod.ReactNs.ReactNode],
+    renderIcon: TabScene => reactLib.reactMod.ReactNs.ReactNode,
     adaptive: js.UndefOr[scala.Boolean] = js.undefined,
     animateStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
     labelStyle: reactDashNativeLib.reactDashNativeMod.TextStyle = null,
@@ -54,7 +50,7 @@ object TabBarBottomProps {
     style: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
     tabStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null
   ): TabBarBottomProps = {
-    val __obj = js.Dynamic.literal(activeBackgroundColor = activeBackgroundColor, activeTintColor = activeTintColor, allowFontScaling = allowFontScaling, getLabel = getLabel, getOnPress = getOnPress, getTestIDProps = getTestIDProps, inactiveBackgroundColor = inactiveBackgroundColor, inactiveTintColor = inactiveTintColor, jumpToIndex = jumpToIndex, navigation = navigation, position = position, renderIcon = renderIcon)
+    val __obj = js.Dynamic.literal(activeBackgroundColor = activeBackgroundColor, activeTintColor = activeTintColor, allowFontScaling = allowFontScaling, getLabel = js.Any.fromFunction1(getLabel), getOnPress = js.Any.fromFunction2(getOnPress), getTestIDProps = js.Any.fromFunction1(getTestIDProps), inactiveBackgroundColor = inactiveBackgroundColor, inactiveTintColor = inactiveTintColor, jumpToIndex = js.Any.fromFunction1(jumpToIndex), navigation = navigation, position = position, renderIcon = js.Any.fromFunction1(renderIcon))
     if (!js.isUndefined(adaptive)) __obj.updateDynamic("adaptive")(adaptive)
     if (animateStyle != null) __obj.updateDynamic("animateStyle")(animateStyle)
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)

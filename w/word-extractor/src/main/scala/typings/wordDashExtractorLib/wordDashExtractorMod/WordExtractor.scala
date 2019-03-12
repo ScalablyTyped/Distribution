@@ -12,12 +12,9 @@ trait WordExtractor extends js.Object {
 object WordExtractor {
   @scala.inline
   def apply(
-    extract: js.Function1[
-      java.lang.String, 
-      js.Promise[wordDashExtractorLib.wordDashExtractorMod.WordExtractorNs.Document]
-    ]
+    extract: java.lang.String => js.Promise[wordDashExtractorLib.wordDashExtractorMod.WordExtractorNs.Document]
   ): WordExtractor = {
-    val __obj = js.Dynamic.literal(extract = extract)
+    val __obj = js.Dynamic.literal(extract = js.Any.fromFunction1(extract))
   
     __obj.asInstanceOf[WordExtractor]
   }

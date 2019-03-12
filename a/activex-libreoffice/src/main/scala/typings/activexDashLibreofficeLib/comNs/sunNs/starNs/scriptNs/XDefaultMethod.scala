@@ -35,12 +35,12 @@ object XDefaultMethod {
   @scala.inline
   def apply(
     DefaultMethodName: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getDefaultMethodName: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDefaultMethodName: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDefaultMethod = {
-    val __obj = js.Dynamic.literal(DefaultMethodName = DefaultMethodName, acquire = acquire, getDefaultMethodName = getDefaultMethodName, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(DefaultMethodName = DefaultMethodName, acquire = js.Any.fromFunction0(acquire), getDefaultMethodName = js.Any.fromFunction0(getDefaultMethodName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDefaultMethod]
   }

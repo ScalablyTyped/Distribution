@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
 trait XStarBasicDialogInfo
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** returns binary data describing the SIDialog in SBX stream format */
-  val Data: activexDashInteropLib.SafeArray[scala.Double]
+  val Data: stdLib.SafeArray[scala.Double]
   /** returns the name of the dialog */
   val Name: java.lang.String
   /** returns binary data describing the SIDialog in SBX stream format */
-  def getData(): activexDashInteropLib.SafeArray[scala.Double]
+  def getData(): stdLib.SafeArray[scala.Double]
   /** returns the name of the dialog */
   def getName(): java.lang.String
 }
@@ -24,15 +24,15 @@ trait XStarBasicDialogInfo
 object XStarBasicDialogInfo {
   @scala.inline
   def apply(
-    Data: activexDashInteropLib.SafeArray[scala.Double],
+    Data: stdLib.SafeArray[scala.Double],
     Name: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getData: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    getName: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getData: () => stdLib.SafeArray[scala.Double],
+    getName: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XStarBasicDialogInfo = {
-    val __obj = js.Dynamic.literal(Data = Data, Name = Name, acquire = acquire, getData = getData, getName = getName, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Data = Data, Name = Name, acquire = js.Any.fromFunction0(acquire), getData = js.Any.fromFunction0(getData), getName = js.Any.fromFunction0(getName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XStarBasicDialogInfo]
   }

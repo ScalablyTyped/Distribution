@@ -18,16 +18,10 @@ trait ActiveXObject extends js.Object {
 object ActiveXObject {
   @scala.inline
   def apply(
-    set_Item: js.Function4[
-      activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WshEnvironment, 
-      activexDashIwshruntimelibraryLib.activexDashIwshruntimelibraryLibStrings.Item, 
-      js.Array[java.lang.String], 
-      java.lang.String, 
-      scala.Unit
-    ]
+    set_Item: (activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WshEnvironment, activexDashIwshruntimelibraryLib.activexDashIwshruntimelibraryLibStrings.Item, js.Array[java.lang.String], java.lang.String) => scala.Unit
   ): ActiveXObject = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("set")(set_Item)
+    __obj.updateDynamic("set")(js.Any.fromFunction4(set_Item))
     __obj.asInstanceOf[ActiveXObject]
   }
 }

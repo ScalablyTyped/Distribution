@@ -14,11 +14,11 @@ object ^ extends js.Object {
   val default: ldclientDashJsLib.Anon_EnvKey = js.native
   val version: java.lang.String = js.native
   def createConsoleLogger(minimumLevel: java.lang.String): ldclientDashJsDashCommonLib.ldclientDashJsDashCommonMod.LDLogger = js.native
-  def initialize(envKey: java.lang.String, user: ldclientDashJsDashCommonLib.ldclientDashJsDashCommonMod.LDUser): ldclientDashJsLib.ldclientDashJsMod.LDClient = js.native
+  def initialize(envKey: java.lang.String, user: ldclientDashJsDashCommonLib.ldclientDashJsDashCommonMod.LDUser): LDClient = js.native
   def initialize(
     envKey: java.lang.String,
     user: ldclientDashJsDashCommonLib.ldclientDashJsDashCommonMod.LDUser,
-    options: ldclientDashJsLib.ldclientDashJsMod.LDOptions
-  ): ldclientDashJsLib.ldclientDashJsMod.LDClient = js.native
+    options: LDOptions
+  ): LDClient = js.native
 }
 

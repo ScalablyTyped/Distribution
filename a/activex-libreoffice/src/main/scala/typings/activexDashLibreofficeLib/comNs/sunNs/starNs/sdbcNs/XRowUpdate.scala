@@ -142,46 +142,28 @@ trait XRowUpdate
 object XRowUpdate {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    updateBinaryStream: js.Function3[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      scala.Double, 
-      scala.Unit
-    ],
-    updateBoolean: js.Function2[scala.Double, scala.Boolean, scala.Unit],
-    updateByte: js.Function2[scala.Double, scala.Double, scala.Unit],
-    updateBytes: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      scala.Unit
-    ],
-    updateCharacterStream: js.Function3[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      scala.Double, 
-      scala.Unit
-    ],
-    updateDate: js.Function2[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date, scala.Unit],
-    updateDouble: js.Function2[scala.Double, scala.Double, scala.Unit],
-    updateFloat: js.Function2[scala.Double, scala.Double, scala.Unit],
-    updateInt: js.Function2[scala.Double, scala.Double, scala.Unit],
-    updateLong: js.Function2[scala.Double, scala.Double, scala.Unit],
-    updateNull: js.Function1[scala.Double, scala.Unit],
-    updateNumericObject: js.Function3[scala.Double, js.Any, scala.Double, scala.Unit],
-    updateObject: js.Function2[scala.Double, js.Any, scala.Unit],
-    updateShort: js.Function2[scala.Double, scala.Double, scala.Unit],
-    updateString: js.Function2[scala.Double, java.lang.String, scala.Unit],
-    updateTime: js.Function2[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit],
-    updateTimestamp: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    updateBinaryStream: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Double) => scala.Unit,
+    updateBoolean: (scala.Double, scala.Boolean) => scala.Unit,
+    updateByte: (scala.Double, scala.Double) => scala.Unit,
+    updateBytes: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]) => scala.Unit,
+    updateCharacterStream: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Double) => scala.Unit,
+    updateDate: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date) => scala.Unit,
+    updateDouble: (scala.Double, scala.Double) => scala.Unit,
+    updateFloat: (scala.Double, scala.Double) => scala.Unit,
+    updateInt: (scala.Double, scala.Double) => scala.Unit,
+    updateLong: (scala.Double, scala.Double) => scala.Unit,
+    updateNull: scala.Double => scala.Unit,
+    updateNumericObject: (scala.Double, js.Any, scala.Double) => scala.Unit,
+    updateObject: (scala.Double, js.Any) => scala.Unit,
+    updateShort: (scala.Double, scala.Double) => scala.Unit,
+    updateString: (scala.Double, java.lang.String) => scala.Unit,
+    updateTime: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time) => scala.Unit,
+    updateTimestamp: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime) => scala.Unit
   ): XRowUpdate = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, updateBinaryStream = updateBinaryStream, updateBoolean = updateBoolean, updateByte = updateByte, updateBytes = updateBytes, updateCharacterStream = updateCharacterStream, updateDate = updateDate, updateDouble = updateDouble, updateFloat = updateFloat, updateInt = updateInt, updateLong = updateLong, updateNull = updateNull, updateNumericObject = updateNumericObject, updateObject = updateObject, updateShort = updateShort, updateString = updateString, updateTime = updateTime, updateTimestamp = updateTimestamp)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), updateBinaryStream = js.Any.fromFunction3(updateBinaryStream), updateBoolean = js.Any.fromFunction2(updateBoolean), updateByte = js.Any.fromFunction2(updateByte), updateBytes = js.Any.fromFunction2(updateBytes), updateCharacterStream = js.Any.fromFunction3(updateCharacterStream), updateDate = js.Any.fromFunction2(updateDate), updateDouble = js.Any.fromFunction2(updateDouble), updateFloat = js.Any.fromFunction2(updateFloat), updateInt = js.Any.fromFunction2(updateInt), updateLong = js.Any.fromFunction2(updateLong), updateNull = js.Any.fromFunction1(updateNull), updateNumericObject = js.Any.fromFunction3(updateNumericObject), updateObject = js.Any.fromFunction2(updateObject), updateShort = js.Any.fromFunction2(updateShort), updateString = js.Any.fromFunction2(updateString), updateTime = js.Any.fromFunction2(updateTime), updateTimestamp = js.Any.fromFunction2(updateTimestamp))
   
     __obj.asInstanceOf[XRowUpdate]
   }

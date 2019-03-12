@@ -28,21 +28,16 @@ trait FilterOptionsDialog
 object FilterOptionsDialog {
   @scala.inline
   def apply(
-    PropertyValues: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
-    acquire: js.Function0[scala.Unit],
-    execute: js.Function0[scala.Double],
-    getPropertyValues: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setPropertyValues: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    setTitle: js.Function1[java.lang.String, scala.Unit]
+    PropertyValues: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    acquire: () => scala.Unit,
+    execute: () => scala.Double,
+    getPropertyValues: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setPropertyValues: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] => scala.Unit,
+    setTitle: java.lang.String => scala.Unit
   ): FilterOptionsDialog = {
-    val __obj = js.Dynamic.literal(PropertyValues = PropertyValues, acquire = acquire, execute = execute, getPropertyValues = getPropertyValues, queryInterface = queryInterface, release = release, setPropertyValues = setPropertyValues, setTitle = setTitle)
+    val __obj = js.Dynamic.literal(PropertyValues = PropertyValues, acquire = js.Any.fromFunction0(acquire), execute = js.Any.fromFunction0(execute), getPropertyValues = js.Any.fromFunction0(getPropertyValues), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setPropertyValues = js.Any.fromFunction1(setPropertyValues), setTitle = js.Any.fromFunction1(setTitle))
   
     __obj.asInstanceOf[FilterOptionsDialog]
   }

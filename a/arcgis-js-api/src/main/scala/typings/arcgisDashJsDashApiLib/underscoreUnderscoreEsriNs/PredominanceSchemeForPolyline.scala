@@ -45,14 +45,14 @@ object PredominanceSchemeForPolyline {
   def apply(
     colors: js.Array[Color],
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     noDataColor: Color,
     opacity: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     sizeScheme: SizeSchemeForPolyline,
     width: scala.Double
   ): PredominanceSchemeForPolyline = {
-    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = hasOwnProperty, noDataColor = noDataColor, opacity = opacity, propertyIsEnumerable = propertyIsEnumerable, sizeScheme = sizeScheme, width = width)
+    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), noDataColor = noDataColor, opacity = opacity, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sizeScheme = sizeScheme, width = width)
   
     __obj.asInstanceOf[PredominanceSchemeForPolyline]
   }

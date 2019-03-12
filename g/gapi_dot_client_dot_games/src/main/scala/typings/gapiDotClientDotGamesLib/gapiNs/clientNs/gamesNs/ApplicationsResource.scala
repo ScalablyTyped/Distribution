@@ -20,20 +20,11 @@ trait ApplicationsResource extends js.Object {
 object ApplicationsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltApplicationId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Application]
-    ],
-    played: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    verify: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltApplicationIdConsistencyToken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ApplicationVerifyResponse]
-    ]
+    get: gapiDotClientDotGamesLib.Anon_AltApplicationId => gapiDotClientLib.gapiNs.clientNs.Request[Application],
+    played: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    verify: gapiDotClientDotGamesLib.Anon_AltApplicationIdConsistencyToken => gapiDotClientLib.gapiNs.clientNs.Request[ApplicationVerifyResponse]
   ): ApplicationsResource = {
-    val __obj = js.Dynamic.literal(get = get, played = played, verify = verify)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), played = js.Any.fromFunction1(played), verify = js.Any.fromFunction1(verify))
   
     __obj.asInstanceOf[ApplicationsResource]
   }

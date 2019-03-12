@@ -77,14 +77,14 @@ trait ChangedEvent extends js.Object {
 object ChangedEvent {
   @scala.inline
   def apply(
-    canRedo: js.Function0[scala.Boolean],
-    canUndo: js.Function0[scala.Boolean],
+    canRedo: () => scala.Boolean,
+    canUndo: () => scala.Boolean,
     change: EnumValue,
-    clear: js.Function0[scala.Unit],
-    copy: js.Function0[ChangedEvent],
+    clear: () => scala.Unit,
+    copy: () => ChangedEvent,
     diagram: Diagram,
-    getParam: js.Function1[scala.Boolean, js.Any],
-    getValue: js.Function1[scala.Boolean, js.Any],
+    getParam: scala.Boolean => js.Any,
+    getValue: scala.Boolean => js.Any,
     isTransactionFinished: scala.Boolean,
     model: Model,
     modelChange: java.lang.String,
@@ -94,10 +94,10 @@ object ChangedEvent {
     oldParam: js.Any,
     oldValue: js.Any,
     propertyName: PropertyAccessor,
-    redo: js.Function0[scala.Unit],
-    undo: js.Function0[scala.Unit]
+    redo: () => scala.Unit,
+    undo: () => scala.Unit
   ): ChangedEvent = {
-    val __obj = js.Dynamic.literal(canRedo = canRedo, canUndo = canUndo, change = change, clear = clear, copy = copy, diagram = diagram, getParam = getParam, getValue = getValue, isTransactionFinished = isTransactionFinished, model = model, modelChange = modelChange, newParam = newParam, newValue = newValue, oldParam = oldParam, oldValue = oldValue, propertyName = propertyName.asInstanceOf[js.Any], redo = redo, undo = undo)
+    val __obj = js.Dynamic.literal(canRedo = js.Any.fromFunction0(canRedo), canUndo = js.Any.fromFunction0(canUndo), change = change, clear = js.Any.fromFunction0(clear), copy = js.Any.fromFunction0(copy), diagram = diagram, getParam = js.Any.fromFunction1(getParam), getValue = js.Any.fromFunction1(getValue), isTransactionFinished = isTransactionFinished, model = model, modelChange = modelChange, newParam = newParam, newValue = newValue, oldParam = oldParam, oldValue = oldValue, propertyName = propertyName.asInstanceOf[js.Any], redo = js.Any.fromFunction0(redo), undo = js.Any.fromFunction0(undo))
     __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[ChangedEvent]
   }

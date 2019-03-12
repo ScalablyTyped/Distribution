@@ -12,18 +12,14 @@ trait ContentService extends Service {
 object ContentService {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[
-      java.lang.String, 
-      js.Function1[
-        /* event */ doubleclickDashGptLib.googletagNs.eventsNs.ImpressionViewableEvent | doubleclickDashGptLib.googletagNs.eventsNs.SlotOnloadEvent | doubleclickDashGptLib.googletagNs.eventsNs.SlotRenderEndedEvent | doubleclickDashGptLib.googletagNs.eventsNs.slotVisibilityChangedEvent, 
-        scala.Unit
-      ], 
+    addEventListener: (java.lang.String, js.Function1[
+      /* event */ doubleclickDashGptLib.googletagNs.eventsNs.ImpressionViewableEvent | doubleclickDashGptLib.googletagNs.eventsNs.SlotOnloadEvent | doubleclickDashGptLib.googletagNs.eventsNs.SlotRenderEndedEvent | doubleclickDashGptLib.googletagNs.eventsNs.slotVisibilityChangedEvent, 
       scala.Unit
-    ],
-    getSlots: js.Function0[js.Array[Slot]],
-    setContent: js.Function2[Slot, java.lang.String, scala.Unit]
+    ]) => scala.Unit,
+    getSlots: () => js.Array[Slot],
+    setContent: (Slot, java.lang.String) => scala.Unit
   ): ContentService = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, getSlots = getSlots, setContent = setContent)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), getSlots = js.Any.fromFunction0(getSlots), setContent = js.Any.fromFunction2(setContent))
   
     __obj.asInstanceOf[ContentService]
   }

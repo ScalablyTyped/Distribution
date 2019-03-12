@@ -101,12 +101,12 @@ trait TextTable
     * contains the column description of the table.
     * @see com.sun.star.text.TableColumnSeparator
     */
-  var TableColumnSeparators: activexDashInteropLib.SafeArray[TableColumnSeparator]
+  var TableColumnSeparators: stdLib.SafeArray[TableColumnSeparator]
   /**
     * Grab bag of table properties, used as a string-any map for interim interop purposes.
     * @since LibreOffice 4.3  This property is intentionally not handled by the ODF filter. Any member that should be handled there should be first moved out
     */
-  var TableInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  var TableInteropGrabBag: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * contains the name of table style used by the table.
     * @since LibreOffice 5.3
@@ -128,7 +128,7 @@ object TextTable {
   def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
-    AnchorTypes: activexDashInteropLib.SafeArray[TextContentAnchorType],
+    AnchorTypes: stdLib.SafeArray[TextContentAnchorType],
     BackColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
     BackGraphicFilter: java.lang.String,
     BackGraphicLocation: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.GraphicLocation,
@@ -136,14 +136,14 @@ object TextTable {
     BackTransparent: scala.Boolean,
     BottomMargin: scala.Double,
     BreakType: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.BreakType,
-    CellNames: activexDashInteropLib.SafeArray[java.lang.String],
+    CellNames: stdLib.SafeArray[java.lang.String],
     ChartColumnAsLabel: scala.Boolean,
     ChartRowAsLabel: scala.Boolean,
     CollapsingBorders: scala.Boolean,
-    ColumnDescriptions: activexDashInteropLib.SafeArray[java.lang.String],
+    ColumnDescriptions: stdLib.SafeArray[java.lang.String],
     Columns: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableColumns,
-    Data: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[scala.Double]],
-    DataArray: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]],
+    Data: stdLib.SafeArray[stdLib.SafeArray[scala.Double]],
+    DataArray: stdLib.SafeArray[stdLib.SafeArray[_]],
     HeaderRowCount: scala.Double,
     HoriOrient: scala.Double,
     IsWidthRelative: scala.Boolean,
@@ -156,82 +156,55 @@ object TextTable {
     RelativeWidth: scala.Double,
     RepeatHeadline: scala.Boolean,
     RightMargin: scala.Double,
-    RowDescriptions: activexDashInteropLib.SafeArray[java.lang.String],
+    RowDescriptions: stdLib.SafeArray[java.lang.String],
     Rows: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableRows,
     ShadowFormat: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.ShadowFormat,
     Split: scala.Boolean,
     TableBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableBorder,
     TableColumnRelativeSum: scala.Double,
-    TableColumnSeparators: activexDashInteropLib.SafeArray[TableColumnSeparator],
-    TableInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    TableColumnSeparators: stdLib.SafeArray[TableColumnSeparator],
+    TableInteropGrabBag: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     TableTemplateName: java.lang.String,
     TextWrap: WrapTextMode,
     TopMargin: scala.Double,
     UserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
     Width: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addChartDataChangeEventListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.XChartDataChangeEventListener, 
-      scala.Unit
-    ],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    attach: js.Function1[XTextRange, scala.Unit],
-    autoFormat: js.Function1[java.lang.String, scala.Unit],
-    createCursorByCellName: js.Function1[java.lang.String, XTextTableCursor],
-    createSortDescriptor: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    dispose: js.Function0[scala.Unit],
-    getAnchor: js.Function0[XTextRange],
-    getCellByName: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCell],
-    getCellByPosition: js.Function2[
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCell
-    ],
-    getCellNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getCellRangeByName: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange],
-    getCellRangeByPosition: js.Function4[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange
-    ],
-    getColumnDescriptions: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getColumns: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableColumns],
-    getData: js.Function0[activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[scala.Double]]],
-    getDataArray: js.Function0[activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]],
-    getName: js.Function0[java.lang.String],
-    getNotANumber: js.Function0[scala.Double],
-    getRowDescriptions: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getRows: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableRows],
-    initialize: js.Function2[scala.Double, scala.Double, scala.Unit],
-    isNotANumber: js.Function1[scala.Double, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeChartDataChangeEventListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.XChartDataChangeEventListener, 
-      scala.Unit
-    ],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    setColumnDescriptions: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
-    setData: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      scala.Unit
-    ],
-    setDataArray: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]], 
-      scala.Unit
-    ],
-    setName: js.Function1[java.lang.String, scala.Unit],
-    setRowDescriptions: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
-    sort: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    addChartDataChangeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.XChartDataChangeEventListener => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    attach: XTextRange => scala.Unit,
+    autoFormat: java.lang.String => scala.Unit,
+    createCursorByCellName: java.lang.String => XTextTableCursor,
+    createSortDescriptor: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    dispose: () => scala.Unit,
+    getAnchor: () => XTextRange,
+    getCellByName: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCell,
+    getCellByPosition: (scala.Double, scala.Double) => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCell,
+    getCellNames: () => stdLib.SafeArray[java.lang.String],
+    getCellRangeByName: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange,
+    getCellRangeByPosition: (scala.Double, scala.Double, scala.Double, scala.Double) => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange,
+    getColumnDescriptions: () => stdLib.SafeArray[java.lang.String],
+    getColumns: () => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableColumns,
+    getData: () => stdLib.SafeArray[stdLib.SafeArray[scala.Double]],
+    getDataArray: () => stdLib.SafeArray[stdLib.SafeArray[_]],
+    getName: () => java.lang.String,
+    getNotANumber: () => scala.Double,
+    getRowDescriptions: () => stdLib.SafeArray[java.lang.String],
+    getRows: () => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableRows,
+    initialize: (scala.Double, scala.Double) => scala.Unit,
+    isNotANumber: scala.Double => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeChartDataChangeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.XChartDataChangeEventListener => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    setColumnDescriptions: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => scala.Unit,
+    setData: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]] => scala.Unit,
+    setDataArray: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]] => scala.Unit,
+    setName: java.lang.String => scala.Unit,
+    setRowDescriptions: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => scala.Unit,
+    sort: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] => scala.Unit
   ): TextTable = {
-    val __obj = js.Dynamic.literal(Anchor = Anchor, AnchorType = AnchorType, AnchorTypes = AnchorTypes, BackColor = BackColor, BackGraphicFilter = BackGraphicFilter, BackGraphicLocation = BackGraphicLocation, BackGraphicURL = BackGraphicURL, BackTransparent = BackTransparent, BottomMargin = BottomMargin, BreakType = BreakType, CellNames = CellNames, ChartColumnAsLabel = ChartColumnAsLabel, ChartRowAsLabel = ChartRowAsLabel, CollapsingBorders = CollapsingBorders, ColumnDescriptions = ColumnDescriptions, Columns = Columns, Data = Data, DataArray = DataArray, HeaderRowCount = HeaderRowCount, HoriOrient = HoriOrient, IsWidthRelative = IsWidthRelative, KeepTogether = KeepTogether, LeftMargin = LeftMargin, Name = Name, NotANumber = NotANumber, PageDescName = PageDescName, PageNumberOffset = PageNumberOffset, RelativeWidth = RelativeWidth, RepeatHeadline = RepeatHeadline, RightMargin = RightMargin, RowDescriptions = RowDescriptions, Rows = Rows, ShadowFormat = ShadowFormat, Split = Split, TableBorder = TableBorder, TableColumnRelativeSum = TableColumnRelativeSum, TableColumnSeparators = TableColumnSeparators, TableInteropGrabBag = TableInteropGrabBag, TableTemplateName = TableTemplateName, TextWrap = TextWrap, TopMargin = TopMargin, UserDefinedAttributes = UserDefinedAttributes, Width = Width, acquire = acquire, addChartDataChangeEventListener = addChartDataChangeEventListener, addEventListener = addEventListener, attach = attach, autoFormat = autoFormat, createCursorByCellName = createCursorByCellName, createSortDescriptor = createSortDescriptor, dispose = dispose, getAnchor = getAnchor, getCellByName = getCellByName, getCellByPosition = getCellByPosition, getCellNames = getCellNames, getCellRangeByName = getCellRangeByName, getCellRangeByPosition = getCellRangeByPosition, getColumnDescriptions = getColumnDescriptions, getColumns = getColumns, getData = getData, getDataArray = getDataArray, getName = getName, getNotANumber = getNotANumber, getRowDescriptions = getRowDescriptions, getRows = getRows, initialize = initialize, isNotANumber = isNotANumber, queryInterface = queryInterface, release = release, removeChartDataChangeEventListener = removeChartDataChangeEventListener, removeEventListener = removeEventListener, setColumnDescriptions = setColumnDescriptions, setData = setData, setDataArray = setDataArray, setName = setName, setRowDescriptions = setRowDescriptions, sort = sort)
+    val __obj = js.Dynamic.literal(Anchor = Anchor, AnchorType = AnchorType, AnchorTypes = AnchorTypes, BackColor = BackColor, BackGraphicFilter = BackGraphicFilter, BackGraphicLocation = BackGraphicLocation, BackGraphicURL = BackGraphicURL, BackTransparent = BackTransparent, BottomMargin = BottomMargin, BreakType = BreakType, CellNames = CellNames, ChartColumnAsLabel = ChartColumnAsLabel, ChartRowAsLabel = ChartRowAsLabel, CollapsingBorders = CollapsingBorders, ColumnDescriptions = ColumnDescriptions, Columns = Columns, Data = Data, DataArray = DataArray, HeaderRowCount = HeaderRowCount, HoriOrient = HoriOrient, IsWidthRelative = IsWidthRelative, KeepTogether = KeepTogether, LeftMargin = LeftMargin, Name = Name, NotANumber = NotANumber, PageDescName = PageDescName, PageNumberOffset = PageNumberOffset, RelativeWidth = RelativeWidth, RepeatHeadline = RepeatHeadline, RightMargin = RightMargin, RowDescriptions = RowDescriptions, Rows = Rows, ShadowFormat = ShadowFormat, Split = Split, TableBorder = TableBorder, TableColumnRelativeSum = TableColumnRelativeSum, TableColumnSeparators = TableColumnSeparators, TableInteropGrabBag = TableInteropGrabBag, TableTemplateName = TableTemplateName, TextWrap = TextWrap, TopMargin = TopMargin, UserDefinedAttributes = UserDefinedAttributes, Width = Width, acquire = js.Any.fromFunction0(acquire), addChartDataChangeEventListener = js.Any.fromFunction1(addChartDataChangeEventListener), addEventListener = js.Any.fromFunction1(addEventListener), attach = js.Any.fromFunction1(attach), autoFormat = js.Any.fromFunction1(autoFormat), createCursorByCellName = js.Any.fromFunction1(createCursorByCellName), createSortDescriptor = js.Any.fromFunction0(createSortDescriptor), dispose = js.Any.fromFunction0(dispose), getAnchor = js.Any.fromFunction0(getAnchor), getCellByName = js.Any.fromFunction1(getCellByName), getCellByPosition = js.Any.fromFunction2(getCellByPosition), getCellNames = js.Any.fromFunction0(getCellNames), getCellRangeByName = js.Any.fromFunction1(getCellRangeByName), getCellRangeByPosition = js.Any.fromFunction4(getCellRangeByPosition), getColumnDescriptions = js.Any.fromFunction0(getColumnDescriptions), getColumns = js.Any.fromFunction0(getColumns), getData = js.Any.fromFunction0(getData), getDataArray = js.Any.fromFunction0(getDataArray), getName = js.Any.fromFunction0(getName), getNotANumber = js.Any.fromFunction0(getNotANumber), getRowDescriptions = js.Any.fromFunction0(getRowDescriptions), getRows = js.Any.fromFunction0(getRows), initialize = js.Any.fromFunction2(initialize), isNotANumber = js.Any.fromFunction1(isNotANumber), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeChartDataChangeEventListener = js.Any.fromFunction1(removeChartDataChangeEventListener), removeEventListener = js.Any.fromFunction1(removeEventListener), setColumnDescriptions = js.Any.fromFunction1(setColumnDescriptions), setData = js.Any.fromFunction1(setData), setDataArray = js.Any.fromFunction1(setDataArray), setName = js.Any.fromFunction1(setName), setRowDescriptions = js.Any.fromFunction1(setRowDescriptions), sort = js.Any.fromFunction1(sort))
   
     __obj.asInstanceOf[TextTable]
   }

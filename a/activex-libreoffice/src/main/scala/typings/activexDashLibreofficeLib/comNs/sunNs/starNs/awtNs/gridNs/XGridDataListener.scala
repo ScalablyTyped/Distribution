@@ -28,16 +28,16 @@ trait XGridDataListener
 object XGridDataListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    dataChanged: js.Function1[GridDataEvent, scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    rowHeadingChanged: js.Function1[GridDataEvent, scala.Unit],
-    rowsInserted: js.Function1[GridDataEvent, scala.Unit],
-    rowsRemoved: js.Function1[GridDataEvent, scala.Unit]
+    acquire: () => scala.Unit,
+    dataChanged: GridDataEvent => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    rowHeadingChanged: GridDataEvent => scala.Unit,
+    rowsInserted: GridDataEvent => scala.Unit,
+    rowsRemoved: GridDataEvent => scala.Unit
   ): XGridDataListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, dataChanged = dataChanged, disposing = disposing, queryInterface = queryInterface, release = release, rowHeadingChanged = rowHeadingChanged, rowsInserted = rowsInserted, rowsRemoved = rowsRemoved)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), dataChanged = js.Any.fromFunction1(dataChanged), disposing = js.Any.fromFunction1(disposing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), rowHeadingChanged = js.Any.fromFunction1(rowHeadingChanged), rowsInserted = js.Any.fromFunction1(rowsInserted), rowsRemoved = js.Any.fromFunction1(rowsRemoved))
   
     __obj.asInstanceOf[XGridDataListener]
   }

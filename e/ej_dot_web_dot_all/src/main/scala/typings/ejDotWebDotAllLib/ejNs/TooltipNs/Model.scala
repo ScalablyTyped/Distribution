@@ -123,30 +123,30 @@ object Model {
     animation: Animation = null,
     associate: Associate | java.lang.String = null,
     autoCloseTimeout: scala.Int | scala.Double = null,
-    beforeClose: js.Function1[/* e */ BeforeCloseEventArgs, scala.Unit] = null,
-    beforeOpen: js.Function1[/* e */ BeforeOpenEventArgs, scala.Unit] = null,
-    click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
-    close: js.Function1[/* e */ CloseEventArgs, scala.Unit] = null,
+    beforeClose: /* e */ BeforeCloseEventArgs => scala.Unit = null,
+    beforeOpen: /* e */ BeforeOpenEventArgs => scala.Unit = null,
+    click: /* e */ ClickEventArgs => scala.Unit = null,
+    close: /* e */ CloseEventArgs => scala.Unit = null,
     closeMode: CloseMode | java.lang.String = null,
     collision: Collision | java.lang.String = null,
     containment: java.lang.String = null,
     content: java.lang.String = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     height: java.lang.String | scala.Double = null,
-    hover: js.Function1[/* e */ HoverEventArgs, scala.Unit] = null,
+    hover: /* e */ HoverEventArgs => scala.Unit = null,
     isBalloon: js.UndefOr[scala.Boolean] = js.undefined,
-    open: js.Function1[/* e */ OpenEventArgs, scala.Unit] = null,
+    open: /* e */ OpenEventArgs => scala.Unit = null,
     position: Position = null,
     showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
     showShadow: js.UndefOr[scala.Boolean] = js.undefined,
     target: java.lang.String = null,
     tip: Tip = null,
     title: java.lang.String = null,
-    tracking: js.Function1[/* e */ TrackingEventArgs, scala.Unit] = null,
+    tracking: /* e */ TrackingEventArgs => scala.Unit = null,
     trigger: Trigger | java.lang.String = null,
     width: java.lang.String | scala.Double = null
   ): Model = {
@@ -155,30 +155,30 @@ object Model {
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (associate != null) __obj.updateDynamic("associate")(associate.asInstanceOf[js.Any])
     if (autoCloseTimeout != null) __obj.updateDynamic("autoCloseTimeout")(autoCloseTimeout.asInstanceOf[js.Any])
-    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
-    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen)
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction1(beforeClose))
+    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(js.Any.fromFunction1(beforeOpen))
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (closeMode != null) __obj.updateDynamic("closeMode")(closeMode.asInstanceOf[js.Any])
     if (collision != null) __obj.updateDynamic("collision")(collision.asInstanceOf[js.Any])
     if (containment != null) __obj.updateDynamic("containment")(containment)
     if (content != null) __obj.updateDynamic("content")(content)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hover != null) __obj.updateDynamic("hover")(hover)
+    if (hover != null) __obj.updateDynamic("hover")(js.Any.fromFunction1(hover))
     if (!js.isUndefined(isBalloon)) __obj.updateDynamic("isBalloon")(isBalloon)
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (position != null) __obj.updateDynamic("position")(position)
     if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
     if (!js.isUndefined(showShadow)) __obj.updateDynamic("showShadow")(showShadow)
     if (target != null) __obj.updateDynamic("target")(target)
     if (tip != null) __obj.updateDynamic("tip")(tip)
     if (title != null) __obj.updateDynamic("title")(title)
-    if (tracking != null) __obj.updateDynamic("tracking")(tracking)
+    if (tracking != null) __obj.updateDynamic("tracking")(js.Any.fromFunction1(tracking))
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]

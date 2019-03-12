@@ -21,17 +21,13 @@ trait ConnectionStrategy extends js.Object {
 object ConnectionStrategy {
   @scala.inline
   def apply(
-    cancelUndispatched: js.Function2[
+    cancelUndispatched: (/* message */ vscodeDashJsonrpcLib.libMessagesMod.Message, /* next */ js.Function1[
       /* message */ vscodeDashJsonrpcLib.libMessagesMod.Message, 
-      /* next */ js.Function1[
-        /* message */ vscodeDashJsonrpcLib.libMessagesMod.Message, 
-        js.UndefOr[vscodeDashJsonrpcLib.libMessagesMod.ResponseMessage]
-      ], 
       js.UndefOr[vscodeDashJsonrpcLib.libMessagesMod.ResponseMessage]
-    ] = null
+    ]) => js.UndefOr[vscodeDashJsonrpcLib.libMessagesMod.ResponseMessage] = null
   ): ConnectionStrategy = {
     val __obj = js.Dynamic.literal()
-    if (cancelUndispatched != null) __obj.updateDynamic("cancelUndispatched")(cancelUndispatched)
+    if (cancelUndispatched != null) __obj.updateDynamic("cancelUndispatched")(js.Any.fromFunction2(cancelUndispatched))
     __obj.asInstanceOf[ConnectionStrategy]
   }
 }

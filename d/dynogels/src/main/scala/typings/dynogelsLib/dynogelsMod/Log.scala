@@ -12,11 +12,8 @@ trait Log extends js.Object {
 
 object Log {
   @scala.inline
-  def apply(
-    info: js.Function1[/* repeated */ js.Any, scala.Unit],
-    warn: js.Function1[/* repeated */ js.Any, scala.Unit]
-  ): Log = {
-    val __obj = js.Dynamic.literal(info = info, warn = warn)
+  def apply(info: /* repeated */ js.Any => scala.Unit, warn: /* repeated */ js.Any => scala.Unit): Log = {
+    val __obj = js.Dynamic.literal(info = js.Any.fromFunction1(info), warn = js.Any.fromFunction1(warn))
   
     __obj.asInstanceOf[Log]
   }

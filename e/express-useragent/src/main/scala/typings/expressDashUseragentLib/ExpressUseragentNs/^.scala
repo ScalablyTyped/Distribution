@@ -14,6 +14,6 @@ object ^ extends js.Object {
     /* next */ js.UndefOr[js.Function], 
     scala.Unit
   ] = js.native
-  def parse(source: java.lang.String): expressDashUseragentLib.ExpressUseragentNs.UserAgent = js.native
+  def parse(source: java.lang.String): UserAgent = js.native
 }
 

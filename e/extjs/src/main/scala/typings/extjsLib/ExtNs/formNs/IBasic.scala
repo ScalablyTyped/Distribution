@@ -153,221 +153,158 @@ trait IBasic
 object IBasic {
   @scala.inline
   def apply(
-    addEvents: js.Function1[/* eventNames */ js.UndefOr[js.Any], scala.Unit] = null,
-    addListener: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      _
-    ] = null,
-    addManagedListener: js.Function5[
-      /* item */ js.UndefOr[js.Any], 
-      /* ename */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      _
-    ] = null,
+    addEvents: /* eventNames */ js.UndefOr[js.Any] => scala.Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
+    addManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     alias: extjsLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
     api: js.Any = null,
-    applyIfToFields: js.Function1[/* obj */ js.UndefOr[js.Any], IBasic] = null,
-    applyToFields: js.Function1[/* obj */ js.UndefOr[js.Any], IBasic] = null,
+    applyIfToFields: /* obj */ js.UndefOr[js.Any] => IBasic = null,
+    applyToFields: /* obj */ js.UndefOr[js.Any] => IBasic = null,
     baseParams: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    checkDirty: js.Function0[scala.Unit] = null,
-    checkValidity: js.Function0[scala.Unit] = null,
-    clearInvalid: js.Function0[IBasic] = null,
-    clearListeners: js.Function0[scala.Unit] = null,
-    clearManagedListeners: js.Function0[scala.Unit] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
+    checkDirty: () => scala.Unit = null,
+    checkValidity: () => scala.Unit = null,
+    clearInvalid: () => IBasic = null,
+    clearListeners: () => scala.Unit = null,
+    clearManagedListeners: () => scala.Unit = null,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
-    doAction: js.Function2[/* action */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], IBasic] = null,
-    enableBubble: js.Function1[/* eventNames */ js.UndefOr[js.Any], scala.Unit] = null,
+    destroy: () => scala.Unit = null,
+    doAction: (/* action */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => IBasic = null,
+    enableBubble: /* eventNames */ js.UndefOr[js.Any] => scala.Unit = null,
     errorReader: js.Any = null,
     extend: java.lang.String = null,
-    findField: js.Function1[/* id */ js.UndefOr[java.lang.String], _] = null,
-    fireEvent: js.Function2[/* eventName */ java.lang.String, /* repeated */ js.Any, scala.Boolean] = null,
-    fireEventArgs: js.Function2[
-      /* eventName */ js.UndefOr[java.lang.String], 
-      /* args */ js.UndefOr[extjsLib.ExtNs.Array], 
-      scala.Boolean
-    ] = null,
-    getFieldValues: js.Function1[/* dirtyOnly */ js.UndefOr[scala.Boolean], _] = null,
-    getFields: js.Function0[extjsLib.ExtNs.utilNs.IMixedCollection] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getRecord: js.Function0[extjsLib.ExtNs.dataNs.IModel] = null,
-    getValues: js.Function4[
-      /* asString */ js.UndefOr[scala.Boolean], 
-      /* dirtyOnly */ js.UndefOr[scala.Boolean], 
-      /* includeEmptyText */ js.UndefOr[scala.Boolean], 
-      /* useDataValues */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    hasInvalidField: js.Function0[scala.Unit] = null,
-    hasListener: js.Function1[/* eventName */ js.UndefOr[java.lang.String], scala.Boolean] = null,
+    findField: /* id */ js.UndefOr[java.lang.String] => _ = null,
+    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => scala.Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[extjsLib.ExtNs.Array]) => scala.Boolean = null,
+    getFieldValues: /* dirtyOnly */ js.UndefOr[scala.Boolean] => _ = null,
+    getFields: () => extjsLib.ExtNs.utilNs.IMixedCollection = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getRecord: () => extjsLib.ExtNs.dataNs.IModel = null,
+    getValues: (/* asString */ js.UndefOr[scala.Boolean], /* dirtyOnly */ js.UndefOr[scala.Boolean], /* includeEmptyText */ js.UndefOr[scala.Boolean], /* useDataValues */ js.UndefOr[scala.Boolean]) => _ = null,
+    hasInvalidField: () => scala.Unit = null,
+    hasListener: /* eventName */ js.UndefOr[java.lang.String] => scala.Boolean = null,
     hasListeners: js.Any = null,
-    hasUpload: js.Function0[scala.Boolean] = null,
+    hasUpload: () => scala.Boolean = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IBasic] = null,
-    isDirty: js.Function0[scala.Boolean] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IBasic = null,
+    isDirty: () => scala.Boolean = null,
     isObservable: js.UndefOr[scala.Boolean] = js.undefined,
-    isValid: js.Function0[scala.Boolean] = null,
+    isValid: () => scala.Boolean = null,
     jsonSubmit: js.UndefOr[scala.Boolean] = js.undefined,
     listeners: js.Any = null,
-    load: js.Function1[/* options */ js.UndefOr[js.Any], IBasic] = null,
-    loadRecord: js.Function1[/* record */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel], IBasic] = null,
-    markInvalid: js.Function1[/* errors */ js.UndefOr[js.Any], IBasic] = null,
+    load: /* options */ js.UndefOr[js.Any] => IBasic = null,
+    loadRecord: /* record */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel] => IBasic = null,
+    markInvalid: /* errors */ js.UndefOr[js.Any] => IBasic = null,
     method: java.lang.String = null,
     mixins: js.Any = null,
-    mon: js.Function5[
-      /* item */ js.UndefOr[js.Any], 
-      /* ename */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      _
-    ] = null,
-    mun: js.Function4[
-      /* item */ js.UndefOr[js.Any], 
-      /* ename */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    on: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      _
-    ] = null,
+    mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
+    mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     owner: extjsLib.ExtNs.containerNs.IContainer = null,
     paramOrder: js.Any = null,
     paramsAsHash: js.UndefOr[scala.Boolean] = js.undefined,
     reader: js.Any = null,
-    relayEvents: js.Function3[
-      /* origin */ js.UndefOr[js.Any], 
-      /* events */ js.UndefOr[extjsLib.ExtNs.Array], 
-      /* prefix */ js.UndefOr[java.lang.String], 
-      _
-    ] = null,
-    removeListener: js.Function3[
-      /* eventName */ js.UndefOr[java.lang.String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    removeManagedListener: js.Function4[
-      /* item */ js.UndefOr[js.Any], 
-      /* ename */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[extjsLib.ExtNs.Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
     requires: extjsLib.ExtNs.Array = null,
-    reset: js.Function1[/* resetRecord */ js.UndefOr[scala.Boolean], IBasic] = null,
-    resumeEvent: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    resumeEvents: js.Function0[scala.Unit] = null,
+    reset: /* resetRecord */ js.UndefOr[scala.Boolean] => IBasic = null,
+    resumeEvent: /* repeated */ js.Any => scala.Unit = null,
+    resumeEvents: () => scala.Unit = null,
     self: extjsLib.ExtNs.IClass = null,
-    setValues: js.Function1[/* values */ js.UndefOr[js.Any], IBasic] = null,
+    setValues: /* values */ js.UndefOr[js.Any] => IBasic = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     standardSubmit: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
-    submit: js.Function1[/* options */ js.UndefOr[js.Any], IBasic] = null,
-    suspendEvent: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    suspendEvents: js.Function1[/* queueSuspended */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    submit: /* options */ js.UndefOr[js.Any] => IBasic = null,
+    suspendEvent: /* repeated */ js.Any => scala.Unit = null,
+    suspendEvents: /* queueSuspended */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     timeout: scala.Int | scala.Double = null,
     trackResetOnLoad: js.UndefOr[scala.Boolean] = js.undefined,
-    un: js.Function3[
-      /* eventName */ js.UndefOr[java.lang.String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    updateRecord: js.Function1[/* record */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel], IBasic] = null,
+    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    updateRecord: /* record */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel] => IBasic = null,
     url: java.lang.String = null,
     uses: extjsLib.ExtNs.Array = null,
     waitMsgTarget: js.Any = null,
     waitTitle: java.lang.String = null
   ): IBasic = {
     val __obj = js.Dynamic.literal()
-    if (addEvents != null) __obj.updateDynamic("addEvents")(addEvents)
-    if (addListener != null) __obj.updateDynamic("addListener")(addListener)
-    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(addManagedListener)
+    if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
+    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction4(addListener))
+    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
     if (api != null) __obj.updateDynamic("api")(api)
-    if (applyIfToFields != null) __obj.updateDynamic("applyIfToFields")(applyIfToFields)
-    if (applyToFields != null) __obj.updateDynamic("applyToFields")(applyToFields)
+    if (applyIfToFields != null) __obj.updateDynamic("applyIfToFields")(js.Any.fromFunction1(applyIfToFields))
+    if (applyToFields != null) __obj.updateDynamic("applyToFields")(js.Any.fromFunction1(applyToFields))
     if (baseParams != null) __obj.updateDynamic("baseParams")(baseParams)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
-    if (checkDirty != null) __obj.updateDynamic("checkDirty")(checkDirty)
-    if (checkValidity != null) __obj.updateDynamic("checkValidity")(checkValidity)
-    if (clearInvalid != null) __obj.updateDynamic("clearInvalid")(clearInvalid)
-    if (clearListeners != null) __obj.updateDynamic("clearListeners")(clearListeners)
-    if (clearManagedListeners != null) __obj.updateDynamic("clearManagedListeners")(clearManagedListeners)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
+    if (checkDirty != null) __obj.updateDynamic("checkDirty")(js.Any.fromFunction0(checkDirty))
+    if (checkValidity != null) __obj.updateDynamic("checkValidity")(js.Any.fromFunction0(checkValidity))
+    if (clearInvalid != null) __obj.updateDynamic("clearInvalid")(js.Any.fromFunction0(clearInvalid))
+    if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
+    if (clearManagedListeners != null) __obj.updateDynamic("clearManagedListeners")(js.Any.fromFunction0(clearManagedListeners))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (doAction != null) __obj.updateDynamic("doAction")(doAction)
-    if (enableBubble != null) __obj.updateDynamic("enableBubble")(enableBubble)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
+    if (doAction != null) __obj.updateDynamic("doAction")(js.Any.fromFunction2(doAction))
+    if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
     if (errorReader != null) __obj.updateDynamic("errorReader")(errorReader)
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (findField != null) __obj.updateDynamic("findField")(findField)
-    if (fireEvent != null) __obj.updateDynamic("fireEvent")(fireEvent)
-    if (fireEventArgs != null) __obj.updateDynamic("fireEventArgs")(fireEventArgs)
-    if (getFieldValues != null) __obj.updateDynamic("getFieldValues")(getFieldValues)
-    if (getFields != null) __obj.updateDynamic("getFields")(getFields)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getRecord != null) __obj.updateDynamic("getRecord")(getRecord)
-    if (getValues != null) __obj.updateDynamic("getValues")(getValues)
-    if (hasInvalidField != null) __obj.updateDynamic("hasInvalidField")(hasInvalidField)
-    if (hasListener != null) __obj.updateDynamic("hasListener")(hasListener)
+    if (findField != null) __obj.updateDynamic("findField")(js.Any.fromFunction1(findField))
+    if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
+    if (fireEventArgs != null) __obj.updateDynamic("fireEventArgs")(js.Any.fromFunction2(fireEventArgs))
+    if (getFieldValues != null) __obj.updateDynamic("getFieldValues")(js.Any.fromFunction1(getFieldValues))
+    if (getFields != null) __obj.updateDynamic("getFields")(js.Any.fromFunction0(getFields))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getRecord != null) __obj.updateDynamic("getRecord")(js.Any.fromFunction0(getRecord))
+    if (getValues != null) __obj.updateDynamic("getValues")(js.Any.fromFunction4(getValues))
+    if (hasInvalidField != null) __obj.updateDynamic("hasInvalidField")(js.Any.fromFunction0(hasInvalidField))
+    if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners)
-    if (hasUpload != null) __obj.updateDynamic("hasUpload")(hasUpload)
+    if (hasUpload != null) __obj.updateDynamic("hasUpload")(js.Any.fromFunction0(hasUpload))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
-    if (isDirty != null) __obj.updateDynamic("isDirty")(isDirty)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (isDirty != null) __obj.updateDynamic("isDirty")(js.Any.fromFunction0(isDirty))
     if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable)
-    if (isValid != null) __obj.updateDynamic("isValid")(isValid)
+    if (isValid != null) __obj.updateDynamic("isValid")(js.Any.fromFunction0(isValid))
     if (!js.isUndefined(jsonSubmit)) __obj.updateDynamic("jsonSubmit")(jsonSubmit)
     if (listeners != null) __obj.updateDynamic("listeners")(listeners)
-    if (load != null) __obj.updateDynamic("load")(load)
-    if (loadRecord != null) __obj.updateDynamic("loadRecord")(loadRecord)
-    if (markInvalid != null) __obj.updateDynamic("markInvalid")(markInvalid)
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
+    if (loadRecord != null) __obj.updateDynamic("loadRecord")(js.Any.fromFunction1(loadRecord))
+    if (markInvalid != null) __obj.updateDynamic("markInvalid")(js.Any.fromFunction1(markInvalid))
     if (method != null) __obj.updateDynamic("method")(method)
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (mon != null) __obj.updateDynamic("mon")(mon)
-    if (mun != null) __obj.updateDynamic("mun")(mun)
-    if (on != null) __obj.updateDynamic("on")(on)
+    if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
+    if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
+    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction4(on))
     if (owner != null) __obj.updateDynamic("owner")(owner)
     if (paramOrder != null) __obj.updateDynamic("paramOrder")(paramOrder)
     if (!js.isUndefined(paramsAsHash)) __obj.updateDynamic("paramsAsHash")(paramsAsHash)
     if (reader != null) __obj.updateDynamic("reader")(reader)
-    if (relayEvents != null) __obj.updateDynamic("relayEvents")(relayEvents)
-    if (removeListener != null) __obj.updateDynamic("removeListener")(removeListener)
-    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(removeManagedListener)
+    if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction3(relayEvents))
+    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction3(removeListener))
+    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
     if (requires != null) __obj.updateDynamic("requires")(requires)
-    if (reset != null) __obj.updateDynamic("reset")(reset)
-    if (resumeEvent != null) __obj.updateDynamic("resumeEvent")(resumeEvent)
-    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(resumeEvents)
+    if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction1(reset))
+    if (resumeEvent != null) __obj.updateDynamic("resumeEvent")(js.Any.fromFunction1(resumeEvent))
+    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setValues != null) __obj.updateDynamic("setValues")(setValues)
+    if (setValues != null) __obj.updateDynamic("setValues")(js.Any.fromFunction1(setValues))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (!js.isUndefined(standardSubmit)) __obj.updateDynamic("standardSubmit")(standardSubmit)
     if (statics != null) __obj.updateDynamic("statics")(statics)
-    if (submit != null) __obj.updateDynamic("submit")(submit)
-    if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(suspendEvent)
-    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(suspendEvents)
+    if (submit != null) __obj.updateDynamic("submit")(js.Any.fromFunction1(submit))
+    if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
+    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (!js.isUndefined(trackResetOnLoad)) __obj.updateDynamic("trackResetOnLoad")(trackResetOnLoad)
-    if (un != null) __obj.updateDynamic("un")(un)
-    if (updateRecord != null) __obj.updateDynamic("updateRecord")(updateRecord)
+    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction3(un))
+    if (updateRecord != null) __obj.updateDynamic("updateRecord")(js.Any.fromFunction1(updateRecord))
     if (url != null) __obj.updateDynamic("url")(url)
     if (uses != null) __obj.updateDynamic("uses")(uses)
     if (waitMsgTarget != null) __obj.updateDynamic("waitMsgTarget")(waitMsgTarget)

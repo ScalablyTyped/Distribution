@@ -15,16 +15,14 @@ trait EventContext
 object EventContext {
   @scala.inline
   def apply(
-    getContext: js.Function0[xrmLib.XrmNs.GlobalContext],
-    getDepth: js.Function0[scala.Double],
-    getEventSource: js.Function0[
-      xrmLib.XrmNs.AttributesNs.Attribute | xrmLib.XrmNs.ControlsNs.Control | xrmLib.XrmNs.Entity
-    ],
-    getFormContext: js.Function0[xrmLib.XrmNs.FormContext],
-    getSharedVariable: js.Function1[java.lang.String, js.Any],
-    setSharedVariable: js.Function2[java.lang.String, js.Any, scala.Unit]
+    getContext: () => xrmLib.XrmNs.GlobalContext,
+    getDepth: () => scala.Double,
+    getEventSource: () => xrmLib.XrmNs.AttributesNs.Attribute | xrmLib.XrmNs.ControlsNs.Control | xrmLib.XrmNs.Entity,
+    getFormContext: () => xrmLib.XrmNs.FormContext,
+    getSharedVariable: java.lang.String => js.Any,
+    setSharedVariable: (java.lang.String, js.Any) => scala.Unit
   ): EventContext = {
-    val __obj = js.Dynamic.literal(getContext = getContext, getDepth = getDepth, getEventSource = getEventSource, getFormContext = getFormContext, getSharedVariable = getSharedVariable, setSharedVariable = setSharedVariable)
+    val __obj = js.Dynamic.literal(getContext = js.Any.fromFunction0(getContext), getDepth = js.Any.fromFunction0(getDepth), getEventSource = js.Any.fromFunction0(getEventSource), getFormContext = js.Any.fromFunction0(getFormContext), getSharedVariable = js.Any.fromFunction1(getSharedVariable), setSharedVariable = js.Any.fromFunction2(setSharedVariable))
   
     __obj.asInstanceOf[EventContext]
   }

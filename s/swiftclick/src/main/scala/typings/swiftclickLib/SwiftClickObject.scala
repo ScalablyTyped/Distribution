@@ -14,11 +14,11 @@ trait SwiftClickObject extends js.Object {
 object SwiftClickObject {
   @scala.inline
   def apply(
-    addNodeNamesToTrack: js.Function1[js.Array[java.lang.String], scala.Unit],
-    replaceNodeNamesToTrack: js.Function1[js.Array[java.lang.String], scala.Unit],
-    useCssParser: js.Function1[scala.Boolean, scala.Unit]
+    addNodeNamesToTrack: js.Array[java.lang.String] => scala.Unit,
+    replaceNodeNamesToTrack: js.Array[java.lang.String] => scala.Unit,
+    useCssParser: scala.Boolean => scala.Unit
   ): SwiftClickObject = {
-    val __obj = js.Dynamic.literal(addNodeNamesToTrack = addNodeNamesToTrack, replaceNodeNamesToTrack = replaceNodeNamesToTrack, useCssParser = useCssParser)
+    val __obj = js.Dynamic.literal(addNodeNamesToTrack = js.Any.fromFunction1(addNodeNamesToTrack), replaceNodeNamesToTrack = js.Any.fromFunction1(replaceNodeNamesToTrack), useCssParser = js.Any.fromFunction1(useCssParser))
   
     __obj.asInstanceOf[SwiftClickObject]
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait S3rver extends js.Object {
   def run(
     callback: js.Function4[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* hostname */ java.lang.String, 
       /* port */ scala.Double, 
       /* directory */ java.lang.String, 
@@ -26,24 +26,21 @@ trait S3rver extends js.Object {
 object S3rver {
   @scala.inline
   def apply(
-    run: js.Function1[
-      js.Function4[
-        /* error */ nodeLib.Error, 
-        /* hostname */ java.lang.String, 
-        /* port */ scala.Double, 
-        /* directory */ java.lang.String, 
-        scala.Unit
-      ], 
-      nodeLib.httpMod.Server
-    ],
-    setDirectory: js.Function1[java.lang.String, S3rver],
-    setErrorDocument: js.Function1[java.lang.String, S3rver],
-    setHostname: js.Function1[java.lang.String, S3rver],
-    setIndexDocument: js.Function1[java.lang.String, S3rver],
-    setPort: js.Function1[scala.Double, S3rver],
-    setSilent: js.Function1[scala.Boolean, S3rver]
+    run: js.Function4[
+      /* error */ stdLib.Error, 
+      /* hostname */ java.lang.String, 
+      /* port */ scala.Double, 
+      /* directory */ java.lang.String, 
+      scala.Unit
+    ] => nodeLib.httpMod.Server,
+    setDirectory: java.lang.String => S3rver,
+    setErrorDocument: java.lang.String => S3rver,
+    setHostname: java.lang.String => S3rver,
+    setIndexDocument: java.lang.String => S3rver,
+    setPort: scala.Double => S3rver,
+    setSilent: scala.Boolean => S3rver
   ): S3rver = {
-    val __obj = js.Dynamic.literal(run = run, setDirectory = setDirectory, setErrorDocument = setErrorDocument, setHostname = setHostname, setIndexDocument = setIndexDocument, setPort = setPort, setSilent = setSilent)
+    val __obj = js.Dynamic.literal(run = js.Any.fromFunction1(run), setDirectory = js.Any.fromFunction1(setDirectory), setErrorDocument = js.Any.fromFunction1(setErrorDocument), setHostname = js.Any.fromFunction1(setHostname), setIndexDocument = js.Any.fromFunction1(setIndexDocument), setPort = js.Any.fromFunction1(setPort), setSilent = js.Any.fromFunction1(setSilent))
   
     __obj.asInstanceOf[S3rver]
   }

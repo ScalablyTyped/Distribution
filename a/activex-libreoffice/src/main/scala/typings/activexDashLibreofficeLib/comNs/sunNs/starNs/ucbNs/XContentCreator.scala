@@ -29,19 +29,19 @@ trait XContentCreator
     * returns a list with information about the creatable contents.
     * @returns the list with information about the creatable contents.
     */
-  def queryCreatableContentsInfo(): activexDashInteropLib.SafeArray[ContentInfo]
+  def queryCreatableContentsInfo(): stdLib.SafeArray[ContentInfo]
 }
 
 object XContentCreator {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createNewContent: js.Function1[ContentInfo, XContent],
-    queryCreatableContentsInfo: js.Function0[activexDashInteropLib.SafeArray[ContentInfo]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createNewContent: ContentInfo => XContent,
+    queryCreatableContentsInfo: () => stdLib.SafeArray[ContentInfo],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XContentCreator = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createNewContent = createNewContent, queryCreatableContentsInfo = queryCreatableContentsInfo, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createNewContent = js.Any.fromFunction1(createNewContent), queryCreatableContentsInfo = js.Any.fromFunction0(queryCreatableContentsInfo), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XContentCreator]
   }

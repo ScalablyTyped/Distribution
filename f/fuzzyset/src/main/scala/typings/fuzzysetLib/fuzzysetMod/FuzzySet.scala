@@ -16,13 +16,13 @@ trait FuzzySet extends js.Object {
 object FuzzySet {
   @scala.inline
   def apply(
-    add: js.Function1[java.lang.String, scala.Boolean],
-    get: js.Function1[java.lang.String, js.Array[js.Tuple2[scala.Double, java.lang.String]]],
-    isEmpty: js.Function0[scala.Boolean],
-    length: js.Function0[scala.Double],
-    values: js.Function0[js.Array[java.lang.String]]
+    add: java.lang.String => scala.Boolean,
+    get: java.lang.String => js.Array[js.Tuple2[scala.Double, java.lang.String]],
+    isEmpty: () => scala.Boolean,
+    length: () => scala.Double,
+    values: () => js.Array[java.lang.String]
   ): FuzzySet = {
-    val __obj = js.Dynamic.literal(add = add, get = get, isEmpty = isEmpty, length = length, values = values)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), get = js.Any.fromFunction1(get), isEmpty = js.Any.fromFunction0(isEmpty), length = js.Any.fromFunction0(length), values = js.Any.fromFunction0(values))
   
     __obj.asInstanceOf[FuzzySet]
   }

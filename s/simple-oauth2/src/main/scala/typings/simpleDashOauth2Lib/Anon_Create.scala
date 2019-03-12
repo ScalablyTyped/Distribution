@@ -13,12 +13,9 @@ trait Anon_Create extends js.Object {
 object Anon_Create {
   @scala.inline
   def apply(
-    create: js.Function1[
-      simpleDashOauth2Lib.simpleDashOauth2Mod.Token, 
-      simpleDashOauth2Lib.simpleDashOauth2Mod.AccessToken
-    ]
+    create: simpleDashOauth2Lib.simpleDashOauth2Mod.Token => simpleDashOauth2Lib.simpleDashOauth2Mod.AccessToken
   ): Anon_Create = {
-    val __obj = js.Dynamic.literal(create = create)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
   
     __obj.asInstanceOf[Anon_Create]
   }

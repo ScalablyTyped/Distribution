@@ -13,7 +13,7 @@ trait User extends UserInfo {
   var emailVerified: scala.Boolean = js.native
   var isAnonymous: scala.Boolean = js.native
   var metadata: firebaseLib.firebaseMod.firebaseNs.authNs.UserMetadata = js.native
-  var providerData: coreDashJsLib.Array[UserInfo | scala.Null] = js.native
+  var providerData: js.Array[UserInfo | scala.Null] = js.native
   var refreshToken: java.lang.String = js.native
   /**
     * Deletes and signs out the user.
@@ -616,7 +616,7 @@ trait User extends UserInfo {
     *
     * @return {!Object} A JSON-serializable representation of this object.
     */
-  def toJSON(): coreDashJsLib.Object = js.native
+  def toJSON(): js.Object = js.native
   /**
     * Unlinks a provider from a user account.
     *

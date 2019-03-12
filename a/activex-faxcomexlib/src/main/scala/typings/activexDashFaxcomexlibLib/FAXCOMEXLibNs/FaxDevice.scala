@@ -37,17 +37,17 @@ class FaxDevice protected () extends js.Object {
   /** Device's Transmitting Station ID */
   var TSID: java.lang.String = js.native
   /** Array of routing methods GUIDs */
-  val UsedRoutingMethods: activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  val UsedRoutingMethods: stdLib.SafeArray[java.lang.String] = js.native
   /** Answer the call */
   def AnswerCall(): scala.Unit = js.native
   /** Get the device level extention property */
-  def GetExtensionProperty(bstrGUID: java.lang.String): activexDashInteropLib.SafeArray[_] = js.native
+  def GetExtensionProperty(bstrGUID: java.lang.String): stdLib.SafeArray[_] = js.native
   /** Refresh the object */
   def Refresh(): scala.Unit = js.native
   /** Save the object */
   def Save(): scala.Unit = js.native
   /** Set the device level extention property */
-  def SetExtensionProperty(bstrGUID: java.lang.String, vProperty: activexDashInteropLib.SafeArray[_]): scala.Unit = js.native
+  def SetExtensionProperty(bstrGUID: java.lang.String, vProperty: stdLib.SafeArray[_]): scala.Unit = js.native
   /** Adds or removes routing method */
   def UseRoutingMethod(bstrMethodGUID: java.lang.String, bUse: scala.Boolean): scala.Unit = js.native
 }

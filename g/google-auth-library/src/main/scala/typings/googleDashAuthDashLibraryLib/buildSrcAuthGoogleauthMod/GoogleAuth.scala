@@ -209,7 +209,7 @@ class GoogleAuth () extends js.Object {
   def getCredentials(): js.Promise[googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.CredentialBody] = js.native
   def getCredentials(
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* credentials */ js.UndefOr[googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.CredentialBody], 
       scala.Unit
     ]

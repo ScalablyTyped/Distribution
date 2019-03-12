@@ -14,10 +14,10 @@ trait Anon_Algo1Algo2 extends js.Object {
 object Anon_Algo1Algo2 {
   @scala.inline
   def apply(
-    pickAlgorithm: js.Function2[/* algo1 */ java.lang.String, /* algo2 */ java.lang.String, java.lang.String] = null
+    pickAlgorithm: (/* algo1 */ java.lang.String, /* algo2 */ java.lang.String) => java.lang.String = null
   ): Anon_Algo1Algo2 = {
     val __obj = js.Dynamic.literal()
-    if (pickAlgorithm != null) __obj.updateDynamic("pickAlgorithm")(pickAlgorithm)
+    if (pickAlgorithm != null) __obj.updateDynamic("pickAlgorithm")(js.Any.fromFunction2(pickAlgorithm))
     __obj.asInstanceOf[Anon_Algo1Algo2]
   }
 }

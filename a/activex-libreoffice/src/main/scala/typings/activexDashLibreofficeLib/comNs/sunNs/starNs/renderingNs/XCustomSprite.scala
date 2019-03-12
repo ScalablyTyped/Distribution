@@ -38,24 +38,19 @@ object XCustomSprite {
   @scala.inline
   def apply(
     ContentCanvas: XCanvas,
-    acquire: js.Function0[scala.Unit],
-    clip: js.Function1[XPolyPolygon2D, scala.Unit],
-    getContentCanvas: js.Function0[XCanvas],
-    hide: js.Function0[scala.Unit],
-    move: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
-      ViewState, 
-      RenderState, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setAlpha: js.Function1[scala.Double, scala.Unit],
-    setPriority: js.Function1[scala.Double, scala.Unit],
-    show: js.Function0[scala.Unit],
-    transform: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix2D, scala.Unit]
+    acquire: () => scala.Unit,
+    clip: XPolyPolygon2D => scala.Unit,
+    getContentCanvas: () => XCanvas,
+    hide: () => scala.Unit,
+    move: (activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, ViewState, RenderState) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setAlpha: scala.Double => scala.Unit,
+    setPriority: scala.Double => scala.Unit,
+    show: () => scala.Unit,
+    transform: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix2D => scala.Unit
   ): XCustomSprite = {
-    val __obj = js.Dynamic.literal(ContentCanvas = ContentCanvas, acquire = acquire, clip = clip, getContentCanvas = getContentCanvas, hide = hide, move = move, queryInterface = queryInterface, release = release, setAlpha = setAlpha, setPriority = setPriority, show = show, transform = transform)
+    val __obj = js.Dynamic.literal(ContentCanvas = ContentCanvas, acquire = js.Any.fromFunction0(acquire), clip = js.Any.fromFunction1(clip), getContentCanvas = js.Any.fromFunction0(getContentCanvas), hide = js.Any.fromFunction0(hide), move = js.Any.fromFunction3(move), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setAlpha = js.Any.fromFunction1(setAlpha), setPriority = js.Any.fromFunction1(setPriority), show = js.Any.fromFunction0(show), transform = js.Any.fromFunction1(transform))
   
     __obj.asInstanceOf[XCustomSprite]
   }

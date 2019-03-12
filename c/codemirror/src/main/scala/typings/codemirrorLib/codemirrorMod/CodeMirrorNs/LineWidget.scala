@@ -15,8 +15,8 @@ trait LineWidget extends js.Object {
 
 object LineWidget {
   @scala.inline
-  def apply(changed: js.Function0[scala.Unit], clear: js.Function0[scala.Unit]): LineWidget = {
-    val __obj = js.Dynamic.literal(changed = changed, clear = clear)
+  def apply(changed: () => scala.Unit, clear: () => scala.Unit): LineWidget = {
+    val __obj = js.Dynamic.literal(changed = js.Any.fromFunction0(changed), clear = js.Any.fromFunction0(clear))
   
     __obj.asInstanceOf[LineWidget]
   }

@@ -14,11 +14,11 @@ trait DropTarget extends js.Object {
 object DropTarget {
   @scala.inline
   def apply(
-    canDrop: js.Function2[DragDropMonitor, Identifier, scala.Boolean],
-    drop: js.Function2[DragDropMonitor, Identifier, js.Any],
-    hover: js.Function2[DragDropMonitor, Identifier, scala.Unit]
+    canDrop: (DragDropMonitor, Identifier) => scala.Boolean,
+    drop: (DragDropMonitor, Identifier) => js.Any,
+    hover: (DragDropMonitor, Identifier) => scala.Unit
   ): DropTarget = {
-    val __obj = js.Dynamic.literal(canDrop = canDrop, drop = drop, hover = hover)
+    val __obj = js.Dynamic.literal(canDrop = js.Any.fromFunction2(canDrop), drop = js.Any.fromFunction2(drop), hover = js.Any.fromFunction2(hover))
   
     __obj.asInstanceOf[DropTarget]
   }

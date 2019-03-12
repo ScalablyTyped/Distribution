@@ -11,6 +11,6 @@ object ^ extends js.Object {
   def typeSourceSpan(
     kind: java.lang.String,
     `type`: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileIdentifierMetadata
-  ): atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan = js.native
+  ): ParseSourceSpan = js.native
 }
 

@@ -51,6 +51,6 @@ object ^ extends js.Object {
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     varDefNodes: js.Array[graphqlLib.languageAstMod.VariableDefinitionNode],
     inputs: org.scalablytyped.runtime.StringDictionary[js.Any]
-  ): graphqlLib.executionValuesMod.CoercedVariableValues = js.native
+  ): CoercedVariableValues = js.native
 }
 

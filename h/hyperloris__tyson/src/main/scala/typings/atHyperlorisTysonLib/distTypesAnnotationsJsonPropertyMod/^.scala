@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def JsonProperty(): js.Any = js.native
-  def JsonProperty(options: atHyperlorisTysonLib.distTypesAnnotationsJsonPropertyMod.JsonPropertyOptions): js.Any = js.native
+  def JsonProperty(options: JsonPropertyOptions): js.Any = js.native
   def JsonProperty(options: java.lang.String): js.Any = js.native
 }
 

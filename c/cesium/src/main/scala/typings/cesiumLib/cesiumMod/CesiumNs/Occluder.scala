@@ -18,13 +18,13 @@ object Occluder {
   @scala.inline
   def apply(
     cameraPosition: Cartesian3,
-    computeVisibility: js.Function1[BoundingSphere, scala.Double],
-    isBoundingSphereVisible: js.Function1[BoundingSphere, scala.Boolean],
-    isPointVisible: js.Function1[Cartesian3, scala.Boolean],
+    computeVisibility: BoundingSphere => scala.Double,
+    isBoundingSphereVisible: BoundingSphere => scala.Boolean,
+    isPointVisible: Cartesian3 => scala.Boolean,
     position: Cartesian3,
     radius: scala.Double
   ): Occluder = {
-    val __obj = js.Dynamic.literal(cameraPosition = cameraPosition, computeVisibility = computeVisibility, isBoundingSphereVisible = isBoundingSphereVisible, isPointVisible = isPointVisible, position = position, radius = radius)
+    val __obj = js.Dynamic.literal(cameraPosition = cameraPosition, computeVisibility = js.Any.fromFunction1(computeVisibility), isBoundingSphereVisible = js.Any.fromFunction1(isBoundingSphereVisible), isPointVisible = js.Any.fromFunction1(isPointVisible), position = position, radius = radius)
   
     __obj.asInstanceOf[Occluder]
   }

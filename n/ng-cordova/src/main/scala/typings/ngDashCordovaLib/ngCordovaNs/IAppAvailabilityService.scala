@@ -11,8 +11,8 @@ trait IAppAvailabilityService extends js.Object {
 
 object IAppAvailabilityService {
   @scala.inline
-  def apply(check: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[_]]): IAppAvailabilityService = {
-    val __obj = js.Dynamic.literal(check = check)
+  def apply(check: java.lang.String => angularLib.angularMod.angularNs.IPromise[_]): IAppAvailabilityService = {
+    val __obj = js.Dynamic.literal(check = js.Any.fromFunction1(check))
   
     __obj.asInstanceOf[IAppAvailabilityService]
   }

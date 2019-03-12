@@ -8,31 +8,31 @@ import scala.scalajs.js.annotation._
 @JSImport("spdy", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def createAgent(base: js.Any, options: spdyLib.spdyMod.AgentOptions): spdyLib.spdyMod.Agent | spdyLib.spdyMod.PlainAgent = js.native
-  def createAgent(options: spdyLib.spdyMod.AgentOptions): spdyLib.spdyMod.Agent | spdyLib.spdyMod.PlainAgent = js.native
+  def createAgent(base: js.Any, options: AgentOptions): Agent | PlainAgent = js.native
+  def createAgent(options: AgentOptions): Agent | PlainAgent = js.native
   def createServer(
     base: js.Any,
-    options: spdyLib.spdyMod.ServerOptions,
+    options: ServerOptions,
     handler: js.Function2[
-      /* request */ spdyLib.spdyMod.IncomingMessage, 
+      /* request */ IncomingMessage, 
       /* response */ nodeLib.httpMod.ServerResponse, 
       scala.Unit
     ]
-  ): spdyLib.spdyMod.Server = js.native
+  ): Server = js.native
   def createServer(
     handler: js.Function2[
-      /* request */ spdyLib.spdyMod.IncomingMessage, 
+      /* request */ IncomingMessage, 
       /* response */ nodeLib.httpMod.ServerResponse, 
       scala.Unit
     ]
-  ): spdyLib.spdyMod.Server = js.native
+  ): Server = js.native
   def createServer(
-    options: spdyLib.spdyMod.ServerOptions,
+    options: ServerOptions,
     handler: js.Function2[
-      /* request */ spdyLib.spdyMod.IncomingMessage, 
+      /* request */ IncomingMessage, 
       /* response */ nodeLib.httpMod.ServerResponse, 
       scala.Unit
     ]
-  ): spdyLib.spdyMod.Server = js.native
+  ): Server = js.native
 }
 

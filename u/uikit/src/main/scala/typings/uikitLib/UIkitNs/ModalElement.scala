@@ -23,12 +23,8 @@ trait ModalElement extends js.Object {
 
 object ModalElement {
   @scala.inline
-  def apply(
-    hide: js.Function0[scala.Unit],
-    isActive: js.Function0[scala.Boolean],
-    show: js.Function0[scala.Unit]
-  ): ModalElement = {
-    val __obj = js.Dynamic.literal(hide = hide, isActive = isActive, show = show)
+  def apply(hide: () => scala.Unit, isActive: () => scala.Boolean, show: () => scala.Unit): ModalElement = {
+    val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), isActive = js.Any.fromFunction0(isActive), show = js.Any.fromFunction0(show))
   
     __obj.asInstanceOf[ModalElement]
   }

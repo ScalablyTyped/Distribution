@@ -16,11 +16,11 @@ object JQueryEventSpy {
   @scala.inline
   def apply(
     eventName: java.lang.String,
-    handler: js.Function1[jqueryLib.JQueryEventObject, js.Any],
-    reset: js.Function0[js.Any],
+    handler: jqueryLib.JQueryEventObject => js.Any,
+    reset: () => js.Any,
     selector: java.lang.String
   ): JQueryEventSpy = {
-    val __obj = js.Dynamic.literal(eventName = eventName, handler = handler, reset = reset, selector = selector)
+    val __obj = js.Dynamic.literal(eventName = eventName, handler = js.Any.fromFunction1(handler), reset = js.Any.fromFunction0(reset), selector = selector)
   
     __obj.asInstanceOf[JQueryEventSpy]
   }

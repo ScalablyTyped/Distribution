@@ -9,7 +9,7 @@ trait ParcelBundle extends js.Object {
   /**
     * A Set of all assets inside the bundle
     */
-  var assets: nodeLib.Set[_]
+  var assets: stdLib.Set[_]
   /**
     * The entryPoint of the bundle, used for generating the name and gathering assets.
     */
@@ -21,7 +21,7 @@ trait ParcelBundle extends js.Object {
   /**
     * A Map<Asset, number(line number inside the bundle)> of all the locations of the assets inside the bundle, used to generate accurate source maps
     */
-  var offsets: nodeLib.Map[ParcelAsset, scala.Double]
+  var offsets: stdLib.Map[ParcelAsset, scala.Double]
   /**
     * The parent bundle, is null in case of the entry bundleany
     */
@@ -29,11 +29,11 @@ trait ParcelBundle extends js.Object {
   /**
     * A Set of all sibling bundles
     */
-  var siblingBundles: nodeLib.Set[_]
+  var siblingBundles: stdLib.Set[_]
   /**
     * A Map<String(Type: js, css, map, ...), Bundle> of all sibling bundles
     */
-  var siblingBundlesMap: nodeLib.Map[java.lang.String, ParcelBundle]
+  var siblingBundlesMap: stdLib.Map[java.lang.String, ParcelBundle]
   /**
     * The type of assets it contains (e.g. js, css, map, ...)
     */
@@ -43,12 +43,12 @@ trait ParcelBundle extends js.Object {
 object ParcelBundle {
   @scala.inline
   def apply(
-    assets: nodeLib.Set[_],
+    assets: stdLib.Set[_],
     entryAsset: js.Any,
     name: java.lang.String,
-    offsets: nodeLib.Map[ParcelAsset, scala.Double],
-    siblingBundles: nodeLib.Set[_],
-    siblingBundlesMap: nodeLib.Map[java.lang.String, ParcelBundle],
+    offsets: stdLib.Map[ParcelAsset, scala.Double],
+    siblingBundles: stdLib.Set[_],
+    siblingBundlesMap: stdLib.Map[java.lang.String, ParcelBundle],
     `type`: java.lang.String,
     parentBundle: js.Any = null
   ): ParcelBundle = {

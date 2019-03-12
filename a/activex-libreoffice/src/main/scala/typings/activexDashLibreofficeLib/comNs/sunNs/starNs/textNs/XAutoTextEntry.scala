@@ -18,12 +18,12 @@ trait XAutoTextEntry
 object XAutoTextEntry {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    applyTo: js.Function1[XTextRange, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    applyTo: XTextRange => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAutoTextEntry = {
-    val __obj = js.Dynamic.literal(acquire = acquire, applyTo = applyTo, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), applyTo = js.Any.fromFunction1(applyTo), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAutoTextEntry]
   }

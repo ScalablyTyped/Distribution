@@ -12,13 +12,10 @@ trait Anon_Data extends js.Object {
 
 object Anon_Data {
   @scala.inline
-  def apply(
-    ext: java.lang.String = null,
-    transform: js.Function1[/* data */ java.lang.String, java.lang.String] = null
-  ): Anon_Data = {
+  def apply(ext: java.lang.String = null, transform: /* data */ java.lang.String => java.lang.String = null): Anon_Data = {
     val __obj = js.Dynamic.literal()
     if (ext != null) __obj.updateDynamic("ext")(ext)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     __obj.asInstanceOf[Anon_Data]
   }
 }

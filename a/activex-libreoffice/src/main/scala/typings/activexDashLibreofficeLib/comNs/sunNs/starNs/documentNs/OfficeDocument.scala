@@ -44,7 +44,7 @@ trait OfficeDocument
     * Grab bag of document properties, used as a string-any map for interim interop purposes.
     * @since LibreOffice 4.2  This property is intentionally not handled by the ODF filter. Any member that should be handled there should be first moved out
     */
-  var InteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] = js.native
+  var InteropGrabBag: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] = js.native
   /**
     * contains a unique id for the document
     *

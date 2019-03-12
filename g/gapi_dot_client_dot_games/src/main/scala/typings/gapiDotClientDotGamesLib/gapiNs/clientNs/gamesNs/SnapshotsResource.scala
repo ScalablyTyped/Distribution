@@ -17,16 +17,10 @@ trait SnapshotsResource extends js.Object {
 object SnapshotsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageOauthtokenPrettyPrintQuotaUserSnapshotId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Snapshot]
-    ],
-    list: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageMaxResults, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SnapshotListResponse]
-    ]
+    get: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageOauthtokenPrettyPrintQuotaUserSnapshotId => gapiDotClientLib.gapiNs.clientNs.Request[Snapshot],
+    list: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageMaxResults => gapiDotClientLib.gapiNs.clientNs.Request[SnapshotListResponse]
   ): SnapshotsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[SnapshotsResource]
   }

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react/dist/commonjs/modules/Accordion/Accordion", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionMod.AccordionComponent = js.native
+  val default: AccordionComponent = js.native
 }
 

@@ -16,11 +16,11 @@ trait ViewSelector
 object ViewSelector {
   @scala.inline
   def apply(
-    getCurrentView: js.Function0[xrmLib.XrmNs.ControlsNs.ViewSelectorItem],
-    isVisible: js.Function0[scala.Boolean],
-    setCurrentView: js.Function1[xrmLib.XrmNs.ControlsNs.ViewSelectorItem, scala.Unit]
+    getCurrentView: () => xrmLib.XrmNs.ControlsNs.ViewSelectorItem,
+    isVisible: () => scala.Boolean,
+    setCurrentView: xrmLib.XrmNs.ControlsNs.ViewSelectorItem => scala.Unit
   ): ViewSelector = {
-    val __obj = js.Dynamic.literal(getCurrentView = getCurrentView, isVisible = isVisible, setCurrentView = setCurrentView)
+    val __obj = js.Dynamic.literal(getCurrentView = js.Any.fromFunction0(getCurrentView), isVisible = js.Any.fromFunction0(isVisible), setCurrentView = js.Any.fromFunction1(setCurrentView))
   
     __obj.asInstanceOf[ViewSelector]
   }

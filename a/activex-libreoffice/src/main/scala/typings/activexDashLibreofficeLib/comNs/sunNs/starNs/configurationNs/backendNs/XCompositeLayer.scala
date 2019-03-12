@@ -15,7 +15,7 @@ trait XCompositeLayer extends XLayer {
     * @returns a list supported sublayer identifiers
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs in the retrieval of the data.
     */
-  def listSubLayerIds(): activexDashInteropLib.SafeArray[java.lang.String]
+  def listSubLayerIds(): stdLib.SafeArray[java.lang.String]
   /**
     * Describes the content of a particular sublayer to an {@link XLayerHandler} .
     * @param aHandler Handler object that will receive calls describing the contents of the sublayer.
@@ -31,14 +31,14 @@ trait XCompositeLayer extends XLayer {
 object XCompositeLayer {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    listSubLayerIds: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    readData: js.Function1[XLayerHandler, scala.Unit],
-    readSubLayerData: js.Function2[XLayerHandler, java.lang.String, scala.Unit],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    listSubLayerIds: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    readData: XLayerHandler => scala.Unit,
+    readSubLayerData: (XLayerHandler, java.lang.String) => scala.Unit,
+    release: () => scala.Unit
   ): XCompositeLayer = {
-    val __obj = js.Dynamic.literal(acquire = acquire, listSubLayerIds = listSubLayerIds, queryInterface = queryInterface, readData = readData, readSubLayerData = readSubLayerData, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), listSubLayerIds = js.Any.fromFunction0(listSubLayerIds), queryInterface = js.Any.fromFunction1(queryInterface), readData = js.Any.fromFunction1(readData), readSubLayerData = js.Any.fromFunction2(readSubLayerData), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCompositeLayer]
   }

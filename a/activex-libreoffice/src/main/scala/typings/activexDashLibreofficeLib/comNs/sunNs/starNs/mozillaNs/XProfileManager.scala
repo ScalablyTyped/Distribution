@@ -64,17 +64,17 @@ object XProfileManager {
   def apply(
     CurrentProduct: MozillaProductType,
     CurrentProfile: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    bootupProfile: js.Function2[MozillaProductType, java.lang.String, scala.Double],
-    getCurrentProduct: js.Function0[MozillaProductType],
-    getCurrentProfile: js.Function0[java.lang.String],
-    isCurrentProfileLocked: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setCurrentProfile: js.Function2[MozillaProductType, java.lang.String, java.lang.String],
-    shutdownProfile: js.Function0[scala.Double]
+    acquire: () => scala.Unit,
+    bootupProfile: (MozillaProductType, java.lang.String) => scala.Double,
+    getCurrentProduct: () => MozillaProductType,
+    getCurrentProfile: () => java.lang.String,
+    isCurrentProfileLocked: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setCurrentProfile: (MozillaProductType, java.lang.String) => java.lang.String,
+    shutdownProfile: () => scala.Double
   ): XProfileManager = {
-    val __obj = js.Dynamic.literal(CurrentProduct = CurrentProduct, CurrentProfile = CurrentProfile, acquire = acquire, bootupProfile = bootupProfile, getCurrentProduct = getCurrentProduct, getCurrentProfile = getCurrentProfile, isCurrentProfileLocked = isCurrentProfileLocked, queryInterface = queryInterface, release = release, setCurrentProfile = setCurrentProfile, shutdownProfile = shutdownProfile)
+    val __obj = js.Dynamic.literal(CurrentProduct = CurrentProduct, CurrentProfile = CurrentProfile, acquire = js.Any.fromFunction0(acquire), bootupProfile = js.Any.fromFunction2(bootupProfile), getCurrentProduct = js.Any.fromFunction0(getCurrentProduct), getCurrentProfile = js.Any.fromFunction0(getCurrentProfile), isCurrentProfileLocked = js.Any.fromFunction0(isCurrentProfileLocked), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setCurrentProfile = js.Any.fromFunction2(setCurrentProfile), shutdownProfile = js.Any.fromFunction0(shutdownProfile))
   
     __obj.asInstanceOf[XProfileManager]
   }

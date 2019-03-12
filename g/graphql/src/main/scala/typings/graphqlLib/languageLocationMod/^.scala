@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/language/location", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def getLocation(source: graphqlLib.languageSourceMod.Source, position: scala.Double): graphqlLib.languageLocationMod.SourceLocation = js.native
+  def getLocation(source: graphqlLib.languageSourceMod.Source, position: scala.Double): SourceLocation = js.native
 }
 

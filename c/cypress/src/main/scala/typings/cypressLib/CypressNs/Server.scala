@@ -17,16 +17,16 @@ object Server {
     enable: scala.Boolean,
     force404: scala.Boolean,
     method: HttpMethod,
-    onAbort: js.Function1[/* repeated */ js.Any, scala.Unit],
-    onRequest: js.Function1[/* repeated */ js.Any, scala.Unit],
-    onResponse: js.Function1[/* repeated */ js.Any, scala.Unit],
+    onAbort: /* repeated */ js.Any => scala.Unit,
+    onRequest: /* repeated */ js.Any => scala.Unit,
+    onResponse: /* repeated */ js.Any => scala.Unit,
     response: js.Any,
     status: scala.Double,
     url: java.lang.String | stdLib.RegExp,
-    whitelist: js.Function1[js.Any, scala.Boolean],
+    whitelist: js.Any => scala.Boolean,
     headers: js.Object = null
   ): Server = {
-    val __obj = js.Dynamic.literal(delay = delay, enable = enable, force404 = force404, method = method, onAbort = onAbort, onRequest = onRequest, onResponse = onResponse, response = response, status = status, url = url.asInstanceOf[js.Any], whitelist = whitelist)
+    val __obj = js.Dynamic.literal(delay = delay, enable = enable, force404 = force404, method = method, onAbort = js.Any.fromFunction1(onAbort), onRequest = js.Any.fromFunction1(onRequest), onResponse = js.Any.fromFunction1(onResponse), response = response, status = status, url = url.asInstanceOf[js.Any], whitelist = js.Any.fromFunction1(whitelist))
     if (headers != null) __obj.updateDynamic("headers")(headers)
     __obj.asInstanceOf[Server]
   }

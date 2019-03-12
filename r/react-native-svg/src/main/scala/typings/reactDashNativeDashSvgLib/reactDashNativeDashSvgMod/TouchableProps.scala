@@ -23,20 +23,20 @@ object TouchableProps {
     delayPressIn: scala.Int | scala.Double = null,
     delayPressOut: scala.Int | scala.Double = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    onLongPress: js.Function1[/* event */ js.Any, _] = null,
-    onPress: js.Function1[/* event */ js.Any, _] = null,
-    onPressIn: js.Function1[/* event */ js.Any, _] = null,
-    onPressOut: js.Function1[/* event */ js.Any, _] = null
+    onLongPress: /* event */ js.Any => _ = null,
+    onPress: /* event */ js.Any => _ = null,
+    onPressIn: /* event */ js.Any => _ = null,
+    onPressOut: /* event */ js.Any => _ = null
   ): TouchableProps = {
     val __obj = js.Dynamic.literal()
     if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])
     if (delayPressIn != null) __obj.updateDynamic("delayPressIn")(delayPressIn.asInstanceOf[js.Any])
     if (delayPressOut != null) __obj.updateDynamic("delayPressOut")(delayPressOut.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
-    if (onPressIn != null) __obj.updateDynamic("onPressIn")(onPressIn)
-    if (onPressOut != null) __obj.updateDynamic("onPressOut")(onPressOut)
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
+    if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction1(onPressIn))
+    if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction1(onPressOut))
     __obj.asInstanceOf[TouchableProps]
   }
 }

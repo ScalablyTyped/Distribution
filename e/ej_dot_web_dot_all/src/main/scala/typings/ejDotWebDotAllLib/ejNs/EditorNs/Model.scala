@@ -135,18 +135,18 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    change: /* e */ ChangeEventArgs => scala.Unit = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
     currencySymbol: java.lang.String = null,
     decimalPlaces: scala.Int | scala.Double = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
     enableStrictMode: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
-    focusIn: js.Function1[/* e */ FocusInEventArgs, scala.Unit] = null,
-    focusOut: js.Function1[/* e */ FocusOutEventArgs, scala.Unit] = null,
+    focusIn: /* e */ FocusInEventArgs => scala.Unit = null,
+    focusOut: /* e */ FocusOutEventArgs => scala.Unit = null,
     groupSeparator: java.lang.String = null,
     groupSize: java.lang.String = null,
     height: java.lang.String = null,
@@ -169,18 +169,18 @@ object Model {
     width: java.lang.String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (currencySymbol != null) __obj.updateDynamic("currencySymbol")(currencySymbol)
     if (decimalPlaces != null) __obj.updateDynamic("decimalPlaces")(decimalPlaces.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
     if (!js.isUndefined(enableStrictMode)) __obj.updateDynamic("enableStrictMode")(enableStrictMode)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (focusIn != null) __obj.updateDynamic("focusIn")(focusIn)
-    if (focusOut != null) __obj.updateDynamic("focusOut")(focusOut)
+    if (focusIn != null) __obj.updateDynamic("focusIn")(js.Any.fromFunction1(focusIn))
+    if (focusOut != null) __obj.updateDynamic("focusOut")(js.Any.fromFunction1(focusOut))
     if (groupSeparator != null) __obj.updateDynamic("groupSeparator")(groupSeparator)
     if (groupSize != null) __obj.updateDynamic("groupSize")(groupSize)
     if (height != null) __obj.updateDynamic("height")(height)

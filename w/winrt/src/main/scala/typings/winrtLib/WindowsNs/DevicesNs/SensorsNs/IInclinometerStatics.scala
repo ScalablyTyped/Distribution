@@ -11,8 +11,8 @@ trait IInclinometerStatics extends js.Object {
 
 object IInclinometerStatics {
   @scala.inline
-  def apply(getDefault: js.Function0[Inclinometer]): IInclinometerStatics = {
-    val __obj = js.Dynamic.literal(getDefault = getDefault)
+  def apply(getDefault: () => Inclinometer): IInclinometerStatics = {
+    val __obj = js.Dynamic.literal(getDefault = js.Any.fromFunction0(getDefault))
   
     __obj.asInstanceOf[IInclinometerStatics]
   }

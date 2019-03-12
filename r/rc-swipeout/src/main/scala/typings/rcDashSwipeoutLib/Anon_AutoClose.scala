@@ -21,12 +21,12 @@ object Anon_AutoClose {
     autoClose: scala.Boolean,
     disabled: scala.Boolean,
     left: js.Array[scala.Nothing],
-    onClose: js.Function0[scala.Unit],
-    onOpen: js.Function0[scala.Unit],
+    onClose: () => scala.Unit,
+    onOpen: () => scala.Unit,
     prefixCls: java.lang.String,
     right: js.Array[scala.Nothing]
   ): Anon_AutoClose = {
-    val __obj = js.Dynamic.literal(autoClose = autoClose, disabled = disabled, left = left, onClose = onClose, onOpen = onOpen, prefixCls = prefixCls, right = right)
+    val __obj = js.Dynamic.literal(autoClose = autoClose, disabled = disabled, left = left, onClose = js.Any.fromFunction0(onClose), onOpen = js.Any.fromFunction0(onOpen), prefixCls = prefixCls, right = right)
   
     __obj.asInstanceOf[Anon_AutoClose]
   }

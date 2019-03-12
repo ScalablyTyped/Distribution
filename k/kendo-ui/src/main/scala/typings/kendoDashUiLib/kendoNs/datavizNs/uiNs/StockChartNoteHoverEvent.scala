@@ -16,7 +16,7 @@ trait StockChartNoteHoverEvent extends StockChartEvent {
 object StockChartNoteHoverEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: StockChart,
     category: js.Any = null,
@@ -25,7 +25,7 @@ object StockChartNoteHoverEvent {
     series: js.Any = null,
     value: js.Any = null
   ): StockChartNoteHoverEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (category != null) __obj.updateDynamic("category")(category)
     if (dataItem != null) __obj.updateDynamic("dataItem")(dataItem)
     if (element != null) __obj.updateDynamic("element")(element)

@@ -11,8 +11,8 @@ trait INotificationScope extends js.Object {
 
 object INotificationScope {
   @scala.inline
-  def apply(kill: js.Function1[scala.Boolean, scala.Unit]): INotificationScope = {
-    val __obj = js.Dynamic.literal(kill = kill)
+  def apply(kill: scala.Boolean => scala.Unit): INotificationScope = {
+    val __obj = js.Dynamic.literal(kill = js.Any.fromFunction1(kill))
   
     __obj.asInstanceOf[INotificationScope]
   }

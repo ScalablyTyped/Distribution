@@ -13,12 +13,8 @@ trait AdWordsOperation[E] extends js.Object {
 
 object AdWordsOperation {
   @scala.inline
-  def apply[E](
-    getErrors: js.Function0[js.Array[java.lang.String]],
-    getResult: js.Function0[E],
-    isSuccessful: js.Function0[scala.Boolean]
-  ): AdWordsOperation[E] = {
-    val __obj = js.Dynamic.literal(getErrors = getErrors, getResult = getResult, isSuccessful = isSuccessful)
+  def apply[E](getErrors: () => js.Array[java.lang.String], getResult: () => E, isSuccessful: () => scala.Boolean): AdWordsOperation[E] = {
+    val __obj = js.Dynamic.literal(getErrors = js.Any.fromFunction0(getErrors), getResult = js.Any.fromFunction0(getResult), isSuccessful = js.Any.fromFunction0(isSuccessful))
   
     __obj.asInstanceOf[AdWordsOperation[E]]
   }

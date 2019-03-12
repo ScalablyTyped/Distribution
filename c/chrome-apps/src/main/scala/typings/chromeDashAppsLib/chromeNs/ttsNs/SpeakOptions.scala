@@ -55,7 +55,7 @@ object SpeakOptions {
     extensionId: java.lang.String = null,
     gender: chromeDashAppsLib.chromeDashAppsLibStrings.male | chromeDashAppsLib.chromeDashAppsLibStrings.female = null,
     lang: java.lang.String = null,
-    onEvent: js.Function1[/* event */ TtsEvent, scala.Unit] = null,
+    onEvent: /* event */ TtsEvent => scala.Unit = null,
     pitch: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
     rate: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
     requiredEventTypes: js.Array[java.lang.String] = null,
@@ -68,7 +68,7 @@ object SpeakOptions {
     if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId)
     if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang)
-    if (onEvent != null) __obj.updateDynamic("onEvent")(onEvent)
+    if (onEvent != null) __obj.updateDynamic("onEvent")(js.Any.fromFunction1(onEvent))
     if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch)
     if (!js.isUndefined(rate)) __obj.updateDynamic("rate")(rate)
     if (requiredEventTypes != null) __obj.updateDynamic("requiredEventTypes")(requiredEventTypes)

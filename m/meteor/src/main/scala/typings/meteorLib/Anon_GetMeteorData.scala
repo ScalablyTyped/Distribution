@@ -12,8 +12,8 @@ trait Anon_GetMeteorData[TOwnProps, TDataProps] extends js.Object {
 
 object Anon_GetMeteorData {
   @scala.inline
-  def apply[TOwnProps, TDataProps](getMeteorData: js.Function1[TOwnProps, TDataProps], pure: js.UndefOr[scala.Boolean] = js.undefined): Anon_GetMeteorData[TOwnProps, TDataProps] = {
-    val __obj = js.Dynamic.literal(getMeteorData = getMeteorData)
+  def apply[TOwnProps, TDataProps](getMeteorData: TOwnProps => TDataProps, pure: js.UndefOr[scala.Boolean] = js.undefined): Anon_GetMeteorData[TOwnProps, TDataProps] = {
+    val __obj = js.Dynamic.literal(getMeteorData = js.Any.fromFunction1(getMeteorData))
     if (!js.isUndefined(pure)) __obj.updateDynamic("pure")(pure)
     __obj.asInstanceOf[Anon_GetMeteorData[TOwnProps, TDataProps]]
   }

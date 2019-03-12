@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class Application protected () extends js.Object {
   val AnswerWizard: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.AnswerWizard */ js.Any = js.native
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Assistance: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.IAssistance */ js.Any = js.native
   val Assistant: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.Assistant */ js.Any = js.native
   val COMAddIns: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.COMAddIns */ js.Any = js.native
   val Class: OlObjectClass = js.native
   val DefaultProfileName: java.lang.String = js.native
-  val Explorers: Explorers = js.native
+  val Explorers: activexDashOutlookLib.OutlookNs.Explorers = js.native
   var FeatureInstall: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.MsoFeatureInstall */ js.Any = js.native
-  val Inspectors: Inspectors = js.native
+  val Inspectors: activexDashOutlookLib.OutlookNs.Inspectors = js.native
   val IsTrusted: scala.Boolean = js.native
   val LanguageSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.LanguageSettings */ js.Any = js.native
   val Name: java.lang.String = js.native
@@ -25,9 +25,9 @@ class Application protected () extends js.Object {
   val Parent: js.Any = js.native
   val PickerDialog: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.PickerDialog */ js.Any = js.native
   val ProductCode: java.lang.String = js.native
-  val Reminders: Reminders = js.native
+  val Reminders: activexDashOutlookLib.OutlookNs.Reminders = js.native
   val Session: NameSpace = js.native
-  val TimeZones: TimeZones = js.native
+  val TimeZones: activexDashOutlookLib.OutlookNs.TimeZones = js.native
   val Version: java.lang.String = js.native
   def ActiveExplorer(): Explorer = js.native
   def ActiveInspector(): Inspector = js.native

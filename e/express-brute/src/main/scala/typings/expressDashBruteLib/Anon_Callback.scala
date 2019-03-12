@@ -11,9 +11,9 @@ trait Anon_Callback extends js.Object {
 
 object Anon_Callback {
   @scala.inline
-  def apply(reset: js.Function1[/* callback */ js.UndefOr[js.Function0[scala.Unit]], scala.Unit] = null): Anon_Callback = {
+  def apply(reset: /* callback */ js.UndefOr[js.Function0[scala.Unit]] => scala.Unit = null): Anon_Callback = {
     val __obj = js.Dynamic.literal()
-    if (reset != null) __obj.updateDynamic("reset")(reset)
+    if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction1(reset))
     __obj.asInstanceOf[Anon_Callback]
   }
 }

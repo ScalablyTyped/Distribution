@@ -25,7 +25,7 @@ object BootboxDialogOptions {
     animate: js.UndefOr[scala.Boolean] = js.undefined,
     backdrop: js.UndefOr[scala.Boolean] = js.undefined,
     buttons: BootboxButtonMap = null,
-    callback: js.Function1[T, _] = null,
+    callback: T => _ = null,
     className: java.lang.String = null,
     closeButton: js.UndefOr[scala.Boolean] = js.undefined,
     onEscape: js.Function0[_] | scala.Boolean = null,
@@ -37,7 +37,7 @@ object BootboxDialogOptions {
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop)
     if (buttons != null) __obj.updateDynamic("buttons")(buttons)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton)
     if (onEscape != null) __obj.updateDynamic("onEscape")(onEscape.asInstanceOf[js.Any])

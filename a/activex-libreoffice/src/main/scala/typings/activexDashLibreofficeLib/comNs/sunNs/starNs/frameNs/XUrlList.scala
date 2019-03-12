@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation._
 /** @deprecated Deprecated */
 trait XUrlList
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
-  var List: activexDashInteropLib.SafeArray[java.lang.String]
+  var List: stdLib.SafeArray[java.lang.String]
 }
 
 object XUrlList {
   @scala.inline
   def apply(
-    List: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    List: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XUrlList = {
-    val __obj = js.Dynamic.literal(List = List, acquire = acquire, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(List = List, acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XUrlList]
   }

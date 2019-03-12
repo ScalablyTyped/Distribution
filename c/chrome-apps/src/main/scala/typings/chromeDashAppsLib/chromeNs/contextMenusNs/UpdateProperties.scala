@@ -65,7 +65,7 @@ object UpdateProperties {
     ] = null,
     documentUrlPatterns: js.Array[java.lang.String] = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
-    onclick: js.Function1[/* info */ OnClickData, scala.Unit] = null,
+    onclick: /* info */ OnClickData => scala.Unit = null,
     parentId: chromeDashAppsLib.chromeNs.integer | java.lang.String = null,
     targetUrlPatterns: js.Array[java.lang.String] = null,
     title: java.lang.String = null,
@@ -84,7 +84,7 @@ object UpdateProperties {
     if (contexts != null) __obj.updateDynamic("contexts")(contexts)
     if (documentUrlPatterns != null) __obj.updateDynamic("documentUrlPatterns")(documentUrlPatterns)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (onclick != null) __obj.updateDynamic("onclick")(onclick)
+    if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction1(onclick))
     if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
     if (targetUrlPatterns != null) __obj.updateDynamic("targetUrlPatterns")(targetUrlPatterns)
     if (title != null) __obj.updateDynamic("title")(title)

@@ -17,31 +17,15 @@ object ChainRec1 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS */](
     URI: F,
-    ap: js.Function2[
-      fpDashTsLib.libHKTMod.Type[F, js.Function1[js.Any, js.Any]], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any]
-    ],
-    chain: js.Function2[
-      fpDashTsLib.libHKTMod.Type[F, js.Any], 
-      js.Function1[js.Any, fpDashTsLib.libHKTMod.Type[F, js.Any]], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any]
-    ],
-    chainRec: js.Function2[
+    ap: (fpDashTsLib.libHKTMod.Type[F, js.Function1[js.Any, js.Any]], fpDashTsLib.libHKTMod.Type[F, js.Any]) => fpDashTsLib.libHKTMod.Type[F, js.Any],
+    chain: (fpDashTsLib.libHKTMod.Type[F, js.Any], js.Function1[js.Any, fpDashTsLib.libHKTMod.Type[F, js.Any]]) => fpDashTsLib.libHKTMod.Type[F, js.Any],
+    chainRec: (js.Any, js.Function1[
       js.Any, 
-      js.Function1[
-        js.Any, 
-        fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]]
-      ], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any]
-    ],
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.Type[F, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type[F, js.Any]
-    ]
+      fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]]
+    ]) => fpDashTsLib.libHKTMod.Type[F, js.Any],
+    map: (fpDashTsLib.libHKTMod.Type[F, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type[F, js.Any]
   ): ChainRec1[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ap = ap, chain = chain, chainRec = chainRec, map = map)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ap = js.Any.fromFunction2(ap), chain = js.Any.fromFunction2(chain), chainRec = js.Any.fromFunction2(chainRec), map = js.Any.fromFunction2(map))
   
     __obj.asInstanceOf[ChainRec1[F]]
   }

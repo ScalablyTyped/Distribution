@@ -37,7 +37,7 @@ trait XSimpleTabController
     * @param ID the ID of the tab.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the specified ID isn't used inside this tab controller.
     */
-  def getTabProps(ID: scala.Double): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
+  def getTabProps(ID: scala.Double): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
   /**
     * create a new tab and return an unique ID, which can be used further to address this tab by using other methods of this interface.
     * @returns [long an unique ID for this new tab.
@@ -70,26 +70,19 @@ object XSimpleTabController {
   @scala.inline
   def apply(
     ActiveTabID: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    activateTab: js.Function1[scala.Double, scala.Unit],
-    addTabListener: js.Function1[XTabListener, scala.Unit],
-    getActiveTabID: js.Function0[scala.Double],
-    getTabProps: js.Function1[
-      scala.Double, 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
-    ],
-    insertTab: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeTab: js.Function1[scala.Double, scala.Unit],
-    removeTabListener: js.Function1[XTabListener, scala.Unit],
-    setTabProps: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    activateTab: scala.Double => scala.Unit,
+    addTabListener: XTabListener => scala.Unit,
+    getActiveTabID: () => scala.Double,
+    getTabProps: scala.Double => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    insertTab: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeTab: scala.Double => scala.Unit,
+    removeTabListener: XTabListener => scala.Unit,
+    setTabProps: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]) => scala.Unit
   ): XSimpleTabController = {
-    val __obj = js.Dynamic.literal(ActiveTabID = ActiveTabID, acquire = acquire, activateTab = activateTab, addTabListener = addTabListener, getActiveTabID = getActiveTabID, getTabProps = getTabProps, insertTab = insertTab, queryInterface = queryInterface, release = release, removeTab = removeTab, removeTabListener = removeTabListener, setTabProps = setTabProps)
+    val __obj = js.Dynamic.literal(ActiveTabID = ActiveTabID, acquire = js.Any.fromFunction0(acquire), activateTab = js.Any.fromFunction1(activateTab), addTabListener = js.Any.fromFunction1(addTabListener), getActiveTabID = js.Any.fromFunction0(getActiveTabID), getTabProps = js.Any.fromFunction1(getTabProps), insertTab = js.Any.fromFunction0(insertTab), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeTab = js.Any.fromFunction1(removeTab), removeTabListener = js.Any.fromFunction1(removeTabListener), setTabProps = js.Any.fromFunction2(setTabProps))
   
     __obj.asInstanceOf[XSimpleTabController]
   }

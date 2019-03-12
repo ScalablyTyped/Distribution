@@ -15,12 +15,12 @@ trait MediaUrls extends js.Object {
 object MediaUrls {
   @scala.inline
   def apply(
-    getFullMediaUrl: js.Function0[java.lang.String],
-    getPreviewMediaUrl: js.Function0[java.lang.String],
-    getShrunkenMediaUrl: js.Function0[java.lang.String],
-    getVideoThumbnailMediaUrl: js.Function0[java.lang.String]
+    getFullMediaUrl: () => java.lang.String,
+    getPreviewMediaUrl: () => java.lang.String,
+    getShrunkenMediaUrl: () => java.lang.String,
+    getVideoThumbnailMediaUrl: () => java.lang.String
   ): MediaUrls = {
-    val __obj = js.Dynamic.literal(getFullMediaUrl = getFullMediaUrl, getPreviewMediaUrl = getPreviewMediaUrl, getShrunkenMediaUrl = getShrunkenMediaUrl, getVideoThumbnailMediaUrl = getVideoThumbnailMediaUrl)
+    val __obj = js.Dynamic.literal(getFullMediaUrl = js.Any.fromFunction0(getFullMediaUrl), getPreviewMediaUrl = js.Any.fromFunction0(getPreviewMediaUrl), getShrunkenMediaUrl = js.Any.fromFunction0(getShrunkenMediaUrl), getVideoThumbnailMediaUrl = js.Any.fromFunction0(getVideoThumbnailMediaUrl))
   
     __obj.asInstanceOf[MediaUrls]
   }

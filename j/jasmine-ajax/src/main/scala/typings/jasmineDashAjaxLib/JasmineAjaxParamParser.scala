@@ -12,11 +12,8 @@ trait JasmineAjaxParamParser extends js.Object {
 
 object JasmineAjaxParamParser {
   @scala.inline
-  def apply(
-    parse: js.Function1[java.lang.String, js.Any],
-    test: js.Function1[stdLib.XMLHttpRequest, scala.Boolean]
-  ): JasmineAjaxParamParser = {
-    val __obj = js.Dynamic.literal(parse = parse, test = test)
+  def apply(parse: java.lang.String => js.Any, test: stdLib.XMLHttpRequest => scala.Boolean): JasmineAjaxParamParser = {
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), test = js.Any.fromFunction1(test))
   
     __obj.asInstanceOf[JasmineAjaxParamParser]
   }

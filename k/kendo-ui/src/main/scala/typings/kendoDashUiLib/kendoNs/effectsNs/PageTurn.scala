@@ -12,14 +12,14 @@ trait PageTurn extends Effect {
 object PageTurn {
   @scala.inline
   def apply(
-    add: js.Function1[Effect, PageTurn],
-    direction: js.Function1[java.lang.String, PageTurn],
-    duration: js.Function1[scala.Double, PageTurn],
-    play: js.Function0[kendoDashUiLib.JQueryPromise[_]],
-    reverse: js.Function0[kendoDashUiLib.JQueryPromise[_]],
-    stop: js.Function0[PageTurn]
+    add: Effect => PageTurn,
+    direction: java.lang.String => PageTurn,
+    duration: scala.Double => PageTurn,
+    play: () => kendoDashUiLib.JQueryPromise[_],
+    reverse: () => kendoDashUiLib.JQueryPromise[_],
+    stop: () => PageTurn
   ): PageTurn = {
-    val __obj = js.Dynamic.literal(add = add, direction = direction, duration = duration, play = play, reverse = reverse, stop = stop)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), direction = js.Any.fromFunction1(direction), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[PageTurn]
   }

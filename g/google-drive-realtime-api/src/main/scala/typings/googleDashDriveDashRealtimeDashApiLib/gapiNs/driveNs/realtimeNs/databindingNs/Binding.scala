@@ -20,9 +20,9 @@ object Binding {
   def apply(
     collaborativeObject: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.CollaborativeObject,
     domElement: stdLib.Element,
-    unbind: js.Function0[scala.Unit]
+    unbind: () => scala.Unit
   ): Binding = {
-    val __obj = js.Dynamic.literal(collaborativeObject = collaborativeObject, domElement = domElement, unbind = unbind)
+    val __obj = js.Dynamic.literal(collaborativeObject = collaborativeObject, domElement = domElement, unbind = js.Any.fromFunction0(unbind))
   
     __obj.asInstanceOf[Binding]
   }

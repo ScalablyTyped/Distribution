@@ -25,20 +25,20 @@ object Collection {
   @scala.inline
   def apply(
     URI: java.lang.String,
-    addColumn: js.Function2[js.Object, CbCallback, scala.Unit],
-    columns: js.Function1[CbCallback, scala.Unit],
-    count: js.Function2[Query, CbCallback, scala.Unit],
-    create: js.Function2[Item, CbCallback, scala.Unit],
-    deleteCollection: js.Function1[CbCallback, scala.Unit],
-    dropColumn: js.Function2[java.lang.String, CbCallback, scala.Unit],
-    fetch: js.Function2[Query, CbCallback, scala.Unit],
-    remove: js.Function2[Query, CbCallback, scala.Unit],
+    addColumn: (js.Object, CbCallback) => scala.Unit,
+    columns: CbCallback => scala.Unit,
+    count: (Query, CbCallback) => scala.Unit,
+    create: (Item, CbCallback) => scala.Unit,
+    deleteCollection: CbCallback => scala.Unit,
+    dropColumn: (java.lang.String, CbCallback) => scala.Unit,
+    fetch: (Query, CbCallback) => scala.Unit,
+    remove: (Query, CbCallback) => scala.Unit,
     systemKey: java.lang.String,
     systemSecret: java.lang.String,
-    update: js.Function3[Query, js.Object, CbCallback, scala.Unit],
+    update: (Query, js.Object, CbCallback) => scala.Unit,
     user: APIUser
   ): Collection = {
-    val __obj = js.Dynamic.literal(URI = URI, addColumn = addColumn, columns = columns, count = count, create = create, deleteCollection = deleteCollection, dropColumn = dropColumn, fetch = fetch, remove = remove, systemKey = systemKey, systemSecret = systemSecret, update = update, user = user)
+    val __obj = js.Dynamic.literal(URI = URI, addColumn = js.Any.fromFunction2(addColumn), columns = js.Any.fromFunction1(columns), count = js.Any.fromFunction2(count), create = js.Any.fromFunction2(create), deleteCollection = js.Any.fromFunction1(deleteCollection), dropColumn = js.Any.fromFunction2(dropColumn), fetch = js.Any.fromFunction2(fetch), remove = js.Any.fromFunction2(remove), systemKey = systemKey, systemSecret = systemSecret, update = js.Any.fromFunction3(update), user = user)
   
     __obj.asInstanceOf[Collection]
   }

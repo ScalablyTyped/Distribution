@@ -45,12 +45,12 @@ object XPooledConnection {
   @scala.inline
   def apply(
     Connection: XConnection,
-    acquire: js.Function0[scala.Unit],
-    getConnection: js.Function0[XConnection],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getConnection: () => XConnection,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XPooledConnection = {
-    val __obj = js.Dynamic.literal(Connection = Connection, acquire = acquire, getConnection = getConnection, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Connection = Connection, acquire = js.Any.fromFunction0(acquire), getConnection = js.Any.fromFunction0(getConnection), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XPooledConnection]
   }

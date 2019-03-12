@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("moment")
 @js.native
 object ^ extends js.Object {
-  var holidays: momentDashHolidayLib.momentMod.Holidays = js.native
-  var modifyHolidays: momentDashHolidayLib.momentMod.HolidayModifier = js.native
+  var holidays: Holidays = js.native
+  var modifyHolidays: HolidayModifier = js.native
 }
 

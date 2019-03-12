@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 trait XConnectionPointContainer
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** @returns a sequence of all outgoing types; specifies which are supported by this connectable object. */
-  val ConnectionPointTypes: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`]
+  val ConnectionPointTypes: stdLib.SafeArray[activexDashLibreofficeLib.`type`]
   /**
     * creates a connection between this object and a client's sink, where the sink implements the outgoing interface specified with ID.
     *
@@ -31,7 +31,7 @@ trait XConnectionPointContainer
     xListener: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): scala.Unit
   /** @returns a sequence of all outgoing types; specifies which are supported by this connectable object. */
-  def getConnectionPointTypes(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`]
+  def getConnectionPointTypes(): stdLib.SafeArray[activexDashLibreofficeLib.`type`]
   /**
     * @param aType specifies the connection point's type.
     * @returns an {@link XConnectionPoint} interface of a connection point for a specified type if that type describes a supported outgoing interface. It is NUL
@@ -50,24 +50,16 @@ trait XConnectionPointContainer
 object XConnectionPointContainer {
   @scala.inline
   def apply(
-    ConnectionPointTypes: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`],
-    acquire: js.Function0[scala.Unit],
-    advise: js.Function2[
-      activexDashLibreofficeLib.`type`, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      scala.Unit
-    ],
-    getConnectionPointTypes: js.Function0[activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`]],
-    queryConnectionPoint: js.Function1[activexDashLibreofficeLib.`type`, XConnectionPoint],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    unadvise: js.Function2[
-      activexDashLibreofficeLib.`type`, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      scala.Unit
-    ]
+    ConnectionPointTypes: stdLib.SafeArray[activexDashLibreofficeLib.`type`],
+    acquire: () => scala.Unit,
+    advise: (activexDashLibreofficeLib.`type`, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface) => scala.Unit,
+    getConnectionPointTypes: () => stdLib.SafeArray[activexDashLibreofficeLib.`type`],
+    queryConnectionPoint: activexDashLibreofficeLib.`type` => XConnectionPoint,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    unadvise: (activexDashLibreofficeLib.`type`, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface) => scala.Unit
   ): XConnectionPointContainer = {
-    val __obj = js.Dynamic.literal(ConnectionPointTypes = ConnectionPointTypes, acquire = acquire, advise = advise, getConnectionPointTypes = getConnectionPointTypes, queryConnectionPoint = queryConnectionPoint, queryInterface = queryInterface, release = release, unadvise = unadvise)
+    val __obj = js.Dynamic.literal(ConnectionPointTypes = ConnectionPointTypes, acquire = js.Any.fromFunction0(acquire), advise = js.Any.fromFunction2(advise), getConnectionPointTypes = js.Any.fromFunction0(getConnectionPointTypes), queryConnectionPoint = js.Any.fromFunction1(queryConnectionPoint), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), unadvise = js.Any.fromFunction2(unadvise))
   
     __obj.asInstanceOf[XConnectionPointContainer]
   }

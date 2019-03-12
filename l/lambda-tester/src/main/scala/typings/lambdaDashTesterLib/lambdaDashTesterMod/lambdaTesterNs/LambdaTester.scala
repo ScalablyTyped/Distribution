@@ -23,20 +23,20 @@ trait LambdaTester extends js.Object {
 object LambdaTester {
   @scala.inline
   def apply(
-    clientContext: js.Function1[awsDashLambdaLib.awsDashLambdaMod.ClientContext, LambdaTester],
-    context: js.Function1[awsDashLambdaLib.awsDashLambdaMod.Context, LambdaTester],
-    event: js.Function1[js.Any, LambdaTester],
-    expectError: js.Function1[Verifier, js.Promise[_]],
-    expectFail: js.Function1[Verifier, js.Promise[_]],
-    expectReject: js.Function1[Verifier, js.Promise[_]],
-    expectResolve: js.Function1[Verifier, js.Promise[_]],
-    expectResult: js.Function1[Verifier, js.Promise[_]],
-    expectSucceed: js.Function1[Verifier, js.Promise[_]],
-    identity: js.Function2[java.lang.String, java.lang.String, LambdaTester],
-    timeout: js.Function1[scala.Double, LambdaTester],
-    xray: js.Function0[LambdaTester]
+    clientContext: awsDashLambdaLib.awsDashLambdaMod.ClientContext => LambdaTester,
+    context: awsDashLambdaLib.awsDashLambdaMod.Context => LambdaTester,
+    event: js.Any => LambdaTester,
+    expectError: Verifier => js.Promise[_],
+    expectFail: Verifier => js.Promise[_],
+    expectReject: Verifier => js.Promise[_],
+    expectResolve: Verifier => js.Promise[_],
+    expectResult: Verifier => js.Promise[_],
+    expectSucceed: Verifier => js.Promise[_],
+    identity: (java.lang.String, java.lang.String) => LambdaTester,
+    timeout: scala.Double => LambdaTester,
+    xray: () => LambdaTester
   ): LambdaTester = {
-    val __obj = js.Dynamic.literal(clientContext = clientContext, context = context, event = event, expectError = expectError, expectFail = expectFail, expectReject = expectReject, expectResolve = expectResolve, expectResult = expectResult, expectSucceed = expectSucceed, identity = identity, timeout = timeout, xray = xray)
+    val __obj = js.Dynamic.literal(clientContext = js.Any.fromFunction1(clientContext), context = js.Any.fromFunction1(context), event = js.Any.fromFunction1(event), expectError = js.Any.fromFunction1(expectError), expectFail = js.Any.fromFunction1(expectFail), expectReject = js.Any.fromFunction1(expectReject), expectResolve = js.Any.fromFunction1(expectResolve), expectResult = js.Any.fromFunction1(expectResult), expectSucceed = js.Any.fromFunction1(expectSucceed), identity = js.Any.fromFunction2(identity), timeout = js.Any.fromFunction1(timeout), xray = js.Any.fromFunction0(xray))
   
     __obj.asInstanceOf[LambdaTester]
   }

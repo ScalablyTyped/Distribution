@@ -53,24 +53,16 @@ trait XSlidePreviewCache extends js.Object {
 object XSlidePreviewCache {
   @scala.inline
   def apply(
-    addPreviewCreationNotifyListener: js.Function1[XSlidePreviewCacheListener, scala.Unit],
-    getSlidePreview: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap
-    ],
-    pause: js.Function0[scala.Unit],
-    removePreviewCreationNotifyListener: js.Function1[XSlidePreviewCacheListener, scala.Unit],
-    resume: js.Function0[scala.Unit],
-    setDocumentSlides: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      scala.Unit
-    ],
-    setPreviewSize: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D, scala.Unit],
-    setVisibleRange: js.Function2[scala.Double, scala.Double, scala.Unit]
+    addPreviewCreationNotifyListener: XSlidePreviewCacheListener => scala.Unit,
+    getSlidePreview: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas) => activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap,
+    pause: () => scala.Unit,
+    removePreviewCreationNotifyListener: XSlidePreviewCacheListener => scala.Unit,
+    resume: () => scala.Unit,
+    setDocumentSlides: (activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface) => scala.Unit,
+    setPreviewSize: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D => scala.Unit,
+    setVisibleRange: (scala.Double, scala.Double) => scala.Unit
   ): XSlidePreviewCache = {
-    val __obj = js.Dynamic.literal(addPreviewCreationNotifyListener = addPreviewCreationNotifyListener, getSlidePreview = getSlidePreview, pause = pause, removePreviewCreationNotifyListener = removePreviewCreationNotifyListener, resume = resume, setDocumentSlides = setDocumentSlides, setPreviewSize = setPreviewSize, setVisibleRange = setVisibleRange)
+    val __obj = js.Dynamic.literal(addPreviewCreationNotifyListener = js.Any.fromFunction1(addPreviewCreationNotifyListener), getSlidePreview = js.Any.fromFunction2(getSlidePreview), pause = js.Any.fromFunction0(pause), removePreviewCreationNotifyListener = js.Any.fromFunction1(removePreviewCreationNotifyListener), resume = js.Any.fromFunction0(resume), setDocumentSlides = js.Any.fromFunction2(setDocumentSlides), setPreviewSize = js.Any.fromFunction1(setPreviewSize), setVisibleRange = js.Any.fromFunction2(setVisibleRange))
   
     __obj.asInstanceOf[XSlidePreviewCache]
   }

@@ -18,7 +18,7 @@ trait FullMetadata extends UploadMetadata {
     * Use Reference.getDownloadURL instead. This property will be removed in a
     * future release.
     */
-  var downloadURLs: coreDashJsLib.Array[java.lang.String]
+  var downloadURLs: js.Array[java.lang.String]
   /**
     * The full path of this object.
     */
@@ -56,7 +56,7 @@ object FullMetadata {
   @scala.inline
   def apply(
     bucket: java.lang.String,
-    downloadURLs: coreDashJsLib.Array[java.lang.String],
+    downloadURLs: js.Array[java.lang.String],
     fullPath: java.lang.String,
     generation: java.lang.String,
     metageneration: java.lang.String,

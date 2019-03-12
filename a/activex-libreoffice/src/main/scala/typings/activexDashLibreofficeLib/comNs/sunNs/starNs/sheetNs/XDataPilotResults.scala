@@ -19,30 +19,27 @@ trait XDataPilotResults
     *
     * The outer sequence contains the value rows. The inner sequences contain the values for one row.
     */
-  val Results: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[DataResult]]
-  def getFilteredResults(aFilters: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataPilotFieldFilter]): activexDashInteropLib.SafeArray[scala.Double]
+  val Results: stdLib.SafeArray[stdLib.SafeArray[DataResult]]
+  def getFilteredResults(aFilters: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataPilotFieldFilter]): stdLib.SafeArray[scala.Double]
   /**
     * returns the result array.
     *
     * The outer sequence contains the value rows. The inner sequences contain the values for one row.
     */
-  def getResults(): activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[DataResult]]
+  def getResults(): stdLib.SafeArray[stdLib.SafeArray[DataResult]]
 }
 
 object XDataPilotResults {
   @scala.inline
   def apply(
-    Results: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[DataResult]],
-    acquire: js.Function0[scala.Unit],
-    getFilteredResults: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataPilotFieldFilter], 
-      activexDashInteropLib.SafeArray[scala.Double]
-    ],
-    getResults: js.Function0[activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[DataResult]]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    Results: stdLib.SafeArray[stdLib.SafeArray[DataResult]],
+    acquire: () => scala.Unit,
+    getFilteredResults: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataPilotFieldFilter] => stdLib.SafeArray[scala.Double],
+    getResults: () => stdLib.SafeArray[stdLib.SafeArray[DataResult]],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDataPilotResults = {
-    val __obj = js.Dynamic.literal(Results = Results, acquire = acquire, getFilteredResults = getFilteredResults, getResults = getResults, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Results = Results, acquire = js.Any.fromFunction0(acquire), getFilteredResults = js.Any.fromFunction1(getFilteredResults), getResults = js.Any.fromFunction0(getResults), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDataPilotResults]
   }

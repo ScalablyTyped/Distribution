@@ -26,7 +26,7 @@ object IObjectClass {
     AdditionalClassInfo: IAdditionalClassInfo,
     AssociatedPropertyDefs: IAssociatedPropertyDefs,
     AutomaticPermissionsForObjects: IAutomaticPermissions,
-    Clone: js.Function0[IObjectClass],
+    Clone: () => IObjectClass,
     ForceWorkflow: scala.Boolean,
     ID: scala.Double,
     Name: java.lang.String,
@@ -34,7 +34,7 @@ object IObjectClass {
     ObjectType: mfilesLib.MFilesNs.MFBuiltInObjectType | scala.Double,
     Workflow: scala.Double
   ): IObjectClass = {
-    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, AdditionalClassInfo = AdditionalClassInfo, AssociatedPropertyDefs = AssociatedPropertyDefs, AutomaticPermissionsForObjects = AutomaticPermissionsForObjects, Clone = Clone, ForceWorkflow = ForceWorkflow, ID = ID, Name = Name, NamePropertyDef = NamePropertyDef, ObjectType = ObjectType.asInstanceOf[js.Any], Workflow = Workflow)
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, AdditionalClassInfo = AdditionalClassInfo, AssociatedPropertyDefs = AssociatedPropertyDefs, AutomaticPermissionsForObjects = AutomaticPermissionsForObjects, Clone = js.Any.fromFunction0(Clone), ForceWorkflow = ForceWorkflow, ID = ID, Name = Name, NamePropertyDef = NamePropertyDef, ObjectType = ObjectType.asInstanceOf[js.Any], Workflow = Workflow)
   
     __obj.asInstanceOf[IObjectClass]
   }

@@ -48,11 +48,11 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The ARN of the principal (IAM user, role, or group).
       */
-    var PrincipalARN: PrincipalARN
+    var PrincipalARN: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.PrincipalARN
     /**
       * The principal type. The supported value is IAM.
       */
-    var PrincipalType: PrincipalType
+    var PrincipalType: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.PrincipalType
   }
   
   trait AssociatePrincipalWithPortfolioOutput extends js.Object
@@ -103,11 +103,11 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The resource identifier.
       */
-    var ResourceId: ResourceId
+    var ResourceId: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ResourceId
     /**
       * The TagOption identifier.
       */
-    var TagOptionId: TagOptionId
+    var TagOptionId: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.TagOptionId
   }
   
   trait AssociateTagOptionWithResourceOutput extends js.Object
@@ -120,7 +120,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * One or more associations, each consisting of the Action ID, the Product ID, and the Provisioning Artifact ID.
       */
-    var ServiceActionAssociations: ServiceActionAssociations
+    var ServiceActionAssociations: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ServiceActionAssociations
   }
   
   trait BatchAssociateServiceActionWithProvisioningArtifactOutput extends js.Object {
@@ -138,7 +138,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * One or more associations, each consisting of the Action ID, the Product ID, and the Provisioning Artifact ID.
       */
-    var ServiceActionAssociations: ServiceActionAssociations
+    var ServiceActionAssociations: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ServiceActionAssociations
   }
   
   trait BatchDisassociateServiceActionFromProvisioningArtifactOutput extends js.Object {
@@ -204,7 +204,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       *  A unique identifier that you provide to ensure idempotency. If multiple requests differ only by the idempotency token, the same response is returned for each repeated request. 
       */
-    var IdempotencyToken: IdempotencyToken
+    var IdempotencyToken: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.IdempotencyToken
     /**
       * The Amazon Resource Name (ARN) of the source product.
       */
@@ -242,7 +242,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * A unique identifier that you provide to ensure idempotency. If multiple requests differ only by the idempotency token, the same response is returned for each repeated request.
       */
-    var IdempotencyToken: IdempotencyToken
+    var IdempotencyToken: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.IdempotencyToken
     /**
       * The constraint parameters, in JSON format. The syntax depends on the constraint type as follows:  LAUNCH  Specify the RoleArn property as follows:  {"RoleArn" : "arn:aws:iam::123456789012:role/LaunchRole"}  You cannot have both a LAUNCH and a STACKSET constraint. You also cannot have more than one LAUNCH constraint on a product and portfolio.  NOTIFICATION  Specify the NotificationArns property as follows:  {"NotificationArns" : ["arn:aws:sns:us-east-1:123456789012:Topic"]}   STACKSET  Specify the Parameters property as follows:  {"Version": "String", "Properties": {"AccountList": [ "String" ], "RegionList": [ "String" ], "AdminRole": "String", "ExecutionRole": "String"}}  You cannot have both a LAUNCH and a STACKSET constraint. You also cannot have more than one STACKSET constraint on a product and portfolio. Products with a STACKSET constraint will launch an AWS CloudFormation stack set.  TEMPLATE  Specify the Rules property. For more information, see Template Constraint Rules.  
       */
@@ -292,11 +292,11 @@ object ServiceCatalogNs extends js.Object {
     /**
       * A unique identifier that you provide to ensure idempotency. If multiple requests differ only by the idempotency token, the same response is returned for each repeated request.
       */
-    var IdempotencyToken: IdempotencyToken
+    var IdempotencyToken: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.IdempotencyToken
     /**
       * The name of the portfolio provider.
       */
-    var ProviderName: ProviderName
+    var ProviderName: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ProviderName
     /**
       * One or more tags.
       */
@@ -356,7 +356,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * A unique identifier that you provide to ensure idempotency. If multiple requests differ only by the idempotency token, the same response is returned for each repeated request.
       */
-    var IdempotencyToken: IdempotencyToken
+    var IdempotencyToken: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.IdempotencyToken
     /**
       * The name of the product.
       */
@@ -368,7 +368,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The type of product.
       */
-    var ProductType: ProductType
+    var ProductType: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ProductType
     /**
       * The configuration of the provisioning artifact.
       */
@@ -414,7 +414,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * A unique identifier that you provide to ensure idempotency. If multiple requests differ only by the idempotency token, the same response is returned for each repeated request.
       */
-    var IdempotencyToken: IdempotencyToken
+    var IdempotencyToken: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.IdempotencyToken
     /**
       * Passed to CloudFormation. The SNS topic ARNs to which to publish stack-related events.
       */
@@ -438,7 +438,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * A user-friendly name for the provisioned product. This value must be unique for the AWS account and cannot be updated after the product is provisioned.
       */
-    var ProvisionedProductName: ProvisionedProductName
+    var ProvisionedProductName: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ProvisionedProductName
     /**
       * The identifier of the provisioning artifact.
       */
@@ -484,7 +484,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * A unique identifier that you provide to ensure idempotency. If multiple requests differ only by the idempotency token, the same response is returned for each repeated request.
       */
-    var IdempotencyToken: IdempotencyToken
+    var IdempotencyToken: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.IdempotencyToken
     /**
       * The configuration for the provisioning artifact.
       */
@@ -530,7 +530,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * A unique identifier that you provide to ensure idempotency. If multiple requests differ only by the idempotency token, the same response is returned for each repeated request.
       */
-    var IdempotencyToken: IdempotencyToken
+    var IdempotencyToken: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.IdempotencyToken
     /**
       * The self-service action name.
       */
@@ -570,7 +570,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The identifier of the constraint.
       */
-    var Id: Id
+    var Id: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.Id
   }
   
   trait DeleteConstraintOutput extends js.Object
@@ -583,7 +583,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The portfolio identifier.
       */
-    var Id: Id
+    var Id: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.Id
   }
   
   trait DeletePortfolioOutput extends js.Object
@@ -622,7 +622,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The product identifier.
       */
-    var Id: Id
+    var Id: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.Id
   }
   
   trait DeleteProductOutput extends js.Object
@@ -669,7 +669,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The self-service action identifier. For example, act-fs7abcd89wxyz.
       */
-    var Id: Id
+    var Id: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.Id
   }
   
   trait DeleteServiceActionOutput extends js.Object
@@ -691,7 +691,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The identifier of the constraint.
       */
-    var Id: Id
+    var Id: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.Id
   }
   
   trait DescribeConstraintOutput extends js.Object {
@@ -743,7 +743,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The portfolio identifier.
       */
-    var Id: Id
+    var Id: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.Id
   }
   
   trait DescribePortfolioOutput extends js.Object {
@@ -765,7 +765,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The token for the portfolio share operation. This token is returned either by CreatePortfolioShare or by DeletePortfolioShare.
       */
-    var PortfolioShareToken: PortfolioShareToken
+    var PortfolioShareToken: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.PortfolioShareToken
   }
   
   trait DescribePortfolioShareStatusOutput extends js.Object {
@@ -799,7 +799,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The product identifier.
       */
-    var Id: Id
+    var Id: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.Id
   }
   
   trait DescribeProductAsAdminOutput extends js.Object {
@@ -829,7 +829,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The product identifier.
       */
-    var Id: Id
+    var Id: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.Id
   }
   
   trait DescribeProductOutput extends js.Object {
@@ -851,7 +851,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The product view identifier.
       */
-    var Id: Id
+    var Id: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.Id
   }
   
   trait DescribeProductViewOutput extends js.Object {
@@ -873,7 +873,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The provisioned product identifier.
       */
-    var Id: Id
+    var Id: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.Id
   }
   
   trait DescribeProvisionedProductOutput extends js.Object {
@@ -1005,7 +1005,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The record identifier of the provisioned product. This identifier is returned by the request operation.
       */
-    var Id: Id
+    var Id: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.Id
     /**
       * The maximum number of items to return with this call.
       */
@@ -1039,7 +1039,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The self-service action identifier.
       */
-    var Id: Id
+    var Id: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.Id
   }
   
   trait DescribeServiceActionOutput extends js.Object {
@@ -1079,7 +1079,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The ARN of the principal (IAM user, role, or group).
       */
-    var PrincipalARN: PrincipalARN
+    var PrincipalARN: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.PrincipalARN
   }
   
   trait DisassociatePrincipalFromPortfolioOutput extends js.Object
@@ -1126,11 +1126,11 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The resource identifier.
       */
-    var ResourceId: ResourceId
+    var ResourceId: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ResourceId
     /**
       * The TagOption identifier.
       */
-    var TagOptionId: TagOptionId
+    var TagOptionId: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.TagOptionId
   }
   
   trait DisassociateTagOptionFromResourceOutput extends js.Object
@@ -1147,7 +1147,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * A unique identifier that you provide to ensure idempotency. If multiple requests differ only by the idempotency token, the same response is returned for each repeated request.
       */
-    var IdempotencyToken: IdempotencyToken
+    var IdempotencyToken: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.IdempotencyToken
     /**
       * The plan identifier.
       */
@@ -1340,7 +1340,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The organization node type that will be returned in the output.    ORGANIZATION - Organization that has access to the portfolio.     ORGANIZATIONAL_UNIT - Organizational unit that has access to the portfolio within your organization.    ACCOUNT - Account that has access to the portfolio within your organization.  
       */
-    var OrganizationNodeType: OrganizationNodeType
+    var OrganizationNodeType: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.OrganizationNodeType
     /**
       * The maximum number of items to return with this call.
       */
@@ -1621,7 +1621,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The TagOption identifier.
       */
-    var TagOptionId: TagOptionId
+    var TagOptionId: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.TagOptionId
   }
   
   trait ListResourcesForTagOptionOutput extends js.Object {
@@ -1899,7 +1899,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * A user-friendly name for the provisioned product. This value must be unique for the AWS account and cannot be updated after the product is provisioned.
       */
-    var ProvisionedProductName: ProvisionedProductName
+    var ProvisionedProductName: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ProvisionedProductName
     /**
       * The identifier of the provisioning artifact.
       */
@@ -4673,7 +4673,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The identifier of the constraint.
       */
-    var Id: Id
+    var Id: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.Id
   }
   
   trait UpdateConstraintOutput extends js.Object {
@@ -4711,7 +4711,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The portfolio identifier.
       */
-    var Id: Id
+    var Id: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.Id
     /**
       * The updated name of the portfolio provider.
       */
@@ -4753,7 +4753,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The product identifier.
       */
-    var Id: Id
+    var Id: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.Id
     /**
       * The updated product name.
       */
@@ -4941,7 +4941,7 @@ object ServiceCatalogNs extends js.Object {
     /**
       * The self-service action identifier.
       */
-    var Id: Id
+    var Id: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.Id
     /**
       * The self-service action name.
       */

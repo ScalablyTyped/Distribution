@@ -11,7 +11,7 @@ trait XIdlMethod extends XIdlMember {
     * Returns the declared exceptions types of the reflected method.
     * @returns declared exception types of reflected method
     */
-  val ExceptionTypes: activexDashInteropLib.SafeArray[XIdlClass[_]]
+  val ExceptionTypes: stdLib.SafeArray[XIdlClass[_]]
   /**
     * Returns the method mode in which calls are run, i.e. either oneway or twoway. Method mode oneway denotes that a call may be run asynchronously (thus
     * having no out parameters or return value)
@@ -23,12 +23,12 @@ trait XIdlMethod extends XIdlMember {
     * (in, out, inout), the parameter's name and formal type.
     * @returns parameter information of reflected method
     */
-  val ParameterInfos: activexDashInteropLib.SafeArray[ParamInfo]
+  val ParameterInfos: stdLib.SafeArray[ParamInfo]
   /**
     * Returns the formal parameter types of the reflected method in order of IDL declaration.
     * @returns formal parameter types of reflected method
     */
-  val ParameterTypes: activexDashInteropLib.SafeArray[XIdlClass[_]]
+  val ParameterTypes: stdLib.SafeArray[XIdlClass[_]]
   /**
     * Returns the return type of the reflected method.
     * @returns return type of reflected method
@@ -38,7 +38,7 @@ trait XIdlMethod extends XIdlMember {
     * Returns the declared exceptions types of the reflected method.
     * @returns declared exception types of reflected method
     */
-  def getExceptionTypes(): activexDashInteropLib.SafeArray[XIdlClass[_]]
+  def getExceptionTypes(): stdLib.SafeArray[XIdlClass[_]]
   /**
     * Returns the method mode in which calls are run, i.e. either oneway or twoway. Method mode oneway denotes that a call may be run asynchronously (thus
     * having no out parameters or return value)
@@ -50,12 +50,12 @@ trait XIdlMethod extends XIdlMember {
     * (in, out, inout), the parameter's name and formal type.
     * @returns parameter information of reflected method
     */
-  def getParameterInfos(): activexDashInteropLib.SafeArray[ParamInfo]
+  def getParameterInfos(): stdLib.SafeArray[ParamInfo]
   /**
     * Returns the formal parameter types of the reflected method in order of IDL declaration.
     * @returns formal parameter types of reflected method
     */
-  def getParameterTypes(): activexDashInteropLib.SafeArray[XIdlClass[_]]
+  def getParameterTypes(): stdLib.SafeArray[XIdlClass[_]]
   /**
     * Returns the return type of the reflected method.
     * @returns return type of reflected method
@@ -78,25 +78,25 @@ object XIdlMethod {
   @scala.inline
   def apply(
     DeclaringClass: XIdlClass[_],
-    ExceptionTypes: activexDashInteropLib.SafeArray[XIdlClass[_]],
+    ExceptionTypes: stdLib.SafeArray[XIdlClass[_]],
     Mode: MethodMode,
     Name: java.lang.String,
-    ParameterInfos: activexDashInteropLib.SafeArray[ParamInfo],
-    ParameterTypes: activexDashInteropLib.SafeArray[XIdlClass[_]],
+    ParameterInfos: stdLib.SafeArray[ParamInfo],
+    ParameterTypes: stdLib.SafeArray[XIdlClass[_]],
     ReturnType: XIdlClass[_],
-    acquire: js.Function0[scala.Unit],
-    getDeclaringClass: js.Function0[XIdlClass[_]],
-    getExceptionTypes: js.Function0[activexDashInteropLib.SafeArray[XIdlClass[_]]],
-    getMode: js.Function0[MethodMode],
-    getName: js.Function0[java.lang.String],
-    getParameterInfos: js.Function0[activexDashInteropLib.SafeArray[ParamInfo]],
-    getParameterTypes: js.Function0[activexDashInteropLib.SafeArray[XIdlClass[_]]],
-    getReturnType: js.Function0[XIdlClass[_]],
-    invoke: js.Function2[js.Any, js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]], js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDeclaringClass: () => XIdlClass[_],
+    getExceptionTypes: () => stdLib.SafeArray[XIdlClass[_]],
+    getMode: () => MethodMode,
+    getName: () => java.lang.String,
+    getParameterInfos: () => stdLib.SafeArray[ParamInfo],
+    getParameterTypes: () => stdLib.SafeArray[XIdlClass[_]],
+    getReturnType: () => XIdlClass[_],
+    invoke: (js.Any, js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]]) => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XIdlMethod = {
-    val __obj = js.Dynamic.literal(DeclaringClass = DeclaringClass, ExceptionTypes = ExceptionTypes, Mode = Mode, Name = Name, ParameterInfos = ParameterInfos, ParameterTypes = ParameterTypes, ReturnType = ReturnType, acquire = acquire, getDeclaringClass = getDeclaringClass, getExceptionTypes = getExceptionTypes, getMode = getMode, getName = getName, getParameterInfos = getParameterInfos, getParameterTypes = getParameterTypes, getReturnType = getReturnType, invoke = invoke, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(DeclaringClass = DeclaringClass, ExceptionTypes = ExceptionTypes, Mode = Mode, Name = Name, ParameterInfos = ParameterInfos, ParameterTypes = ParameterTypes, ReturnType = ReturnType, acquire = js.Any.fromFunction0(acquire), getDeclaringClass = js.Any.fromFunction0(getDeclaringClass), getExceptionTypes = js.Any.fromFunction0(getExceptionTypes), getMode = js.Any.fromFunction0(getMode), getName = js.Any.fromFunction0(getName), getParameterInfos = js.Any.fromFunction0(getParameterInfos), getParameterTypes = js.Any.fromFunction0(getParameterTypes), getReturnType = js.Any.fromFunction0(getReturnType), invoke = js.Any.fromFunction2(invoke), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XIdlMethod]
   }

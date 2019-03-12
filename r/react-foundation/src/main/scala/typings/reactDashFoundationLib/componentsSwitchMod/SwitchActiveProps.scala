@@ -292,7 +292,7 @@ object SwitchActiveProps {
   @scala.inline
   def apply(
     GeneralPropTypes: reactDashFoundationLib.utilsMod.GeneralPropTypes = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLSpanElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLSpanElement] = null,
     text: java.lang.String = null
   ): SwitchActiveProps = {
     val __obj = js.Dynamic.literal()

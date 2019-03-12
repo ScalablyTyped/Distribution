@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): expressLib.expressMod.eNs.RequestHandler = js.native
-  def apply(options: expressDashValidatorLib.expressDashValidatorMod.ExpressValidatorOptions): expressLib.expressMod.eNs.RequestHandler = js.native
+  def apply(options: ExpressValidatorOptions): expressLib.expressMod.eNs.RequestHandler = js.native
 }
 

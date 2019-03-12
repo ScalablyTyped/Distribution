@@ -48,7 +48,7 @@ object Options {
     ignoreUrl: js.UndefOr[scala.Boolean] = js.undefined,
     port: scala.Int | scala.Double = null,
     redirectMethods: js.Array[java.lang.String] = null,
-    resolver: js.Function1[/* ctx */ koaLib.koaMod.ApplicationNs.Context, scala.Boolean] = null,
+    resolver: /* ctx */ koaLib.koaMod.ApplicationNs.Context => scala.Boolean = null,
     skipDefaultPort: js.UndefOr[scala.Boolean] = js.undefined,
     temporary: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
@@ -58,7 +58,7 @@ object Options {
     if (!js.isUndefined(ignoreUrl)) __obj.updateDynamic("ignoreUrl")(ignoreUrl)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (redirectMethods != null) __obj.updateDynamic("redirectMethods")(redirectMethods)
-    if (resolver != null) __obj.updateDynamic("resolver")(resolver)
+    if (resolver != null) __obj.updateDynamic("resolver")(js.Any.fromFunction1(resolver))
     if (!js.isUndefined(skipDefaultPort)) __obj.updateDynamic("skipDefaultPort")(skipDefaultPort)
     if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary)
     __obj.asInstanceOf[Options]

@@ -30,7 +30,7 @@ object SpringJointData {
   @scala.inline
   def apply(
     damping: scala.Double,
-    forceApplicationCallback: js.Function0[scala.Unit],
+    forceApplicationCallback: () => scala.Unit,
     length: scala.Double,
     stiffness: scala.Double,
     collision: js.UndefOr[scala.Boolean] = js.undefined,
@@ -40,7 +40,7 @@ object SpringJointData {
     mainPivot: Vector3 = null,
     nativeParams: js.Any = null
   ): SpringJointData = {
-    val __obj = js.Dynamic.literal(damping = damping, forceApplicationCallback = forceApplicationCallback, length = length, stiffness = stiffness)
+    val __obj = js.Dynamic.literal(damping = damping, forceApplicationCallback = js.Any.fromFunction0(forceApplicationCallback), length = length, stiffness = stiffness)
     if (!js.isUndefined(collision)) __obj.updateDynamic("collision")(collision)
     if (connectedAxis != null) __obj.updateDynamic("connectedAxis")(connectedAxis)
     if (connectedPivot != null) __obj.updateDynamic("connectedPivot")(connectedPivot)

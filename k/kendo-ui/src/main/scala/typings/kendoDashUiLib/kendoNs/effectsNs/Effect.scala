@@ -16,13 +16,13 @@ trait Effect extends js.Object {
 object Effect {
   @scala.inline
   def apply(
-    add: js.Function1[Effect, Effect],
-    duration: js.Function1[scala.Double, Effect],
-    play: js.Function0[kendoDashUiLib.JQueryPromise[_]],
-    reverse: js.Function0[kendoDashUiLib.JQueryPromise[_]],
-    stop: js.Function0[Effect]
+    add: Effect => Effect,
+    duration: scala.Double => Effect,
+    play: () => kendoDashUiLib.JQueryPromise[_],
+    reverse: () => kendoDashUiLib.JQueryPromise[_],
+    stop: () => Effect
   ): Effect = {
-    val __obj = js.Dynamic.literal(add = add, duration = duration, play = play, reverse = reverse, stop = stop)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[Effect]
   }

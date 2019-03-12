@@ -15,12 +15,9 @@ object SetRoute {
   @scala.inline
   def apply(
     route: java.lang.String,
-    set: js.Function1[
-      falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.JSONGraph, 
-      RouteResult | js.Promise[RouteResult]
-    ]
+    set: falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.JSONGraph => RouteResult | js.Promise[RouteResult]
   ): SetRoute = {
-    val __obj = js.Dynamic.literal(route = route, set = set)
+    val __obj = js.Dynamic.literal(route = route, set = js.Any.fromFunction1(set))
   
     __obj.asInstanceOf[SetRoute]
   }

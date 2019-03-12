@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@expo/vector-icons", "FontAwesome")
 @js.native
 class FontAwesome ()
-  extends reactDashNativeDashVectorDashIconsLib.fontawesomeMod.default
+  extends reactDashNativeDashVectorDashIconsLib.fontAwesomeMod.default
 
 /* static members */
 @JSImport("@expo/vector-icons", "FontAwesome")

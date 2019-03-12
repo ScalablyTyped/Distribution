@@ -275,19 +275,9 @@ object ITooltipsterOptions {
     distance: scala.Double | js.Array[scala.Double] = null,
     functionAfter: TooltipsterStandardCallbackFunction = null,
     functionBefore: TooltipsterStandardCallbackFunction = null,
-    functionFormat: js.Function3[
-      /* instance */ ITooltipsterInstance, 
-      /* helper */ ITooltipsterHelper, 
-      /* content */ js.Any, 
-      java.lang.String | tooltipsterLib.JQuery
-    ] = null,
+    functionFormat: (/* instance */ ITooltipsterInstance, /* helper */ ITooltipsterHelper, /* content */ js.Any) => java.lang.String | tooltipsterLib.JQuery = null,
     functionInit: TooltipsterStandardCallbackFunction = null,
-    functionPosition: js.Function3[
-      /* instance */ ITooltipsterInstance, 
-      /* helper */ ITooltipsterHelper, 
-      /* position */ ITooltipPosition, 
-      ITooltipPosition
-    ] = null,
+    functionPosition: (/* instance */ ITooltipsterInstance, /* helper */ ITooltipsterHelper, /* position */ ITooltipPosition) => ITooltipPosition = null,
     functionReady: TooltipsterStandardCallbackFunction = null,
     interactive: js.UndefOr[scala.Boolean] = js.undefined,
     maxWidth: scala.Int | scala.Double = null,
@@ -326,9 +316,9 @@ object ITooltipsterOptions {
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (functionAfter != null) __obj.updateDynamic("functionAfter")(functionAfter)
     if (functionBefore != null) __obj.updateDynamic("functionBefore")(functionBefore)
-    if (functionFormat != null) __obj.updateDynamic("functionFormat")(functionFormat)
+    if (functionFormat != null) __obj.updateDynamic("functionFormat")(js.Any.fromFunction3(functionFormat))
     if (functionInit != null) __obj.updateDynamic("functionInit")(functionInit)
-    if (functionPosition != null) __obj.updateDynamic("functionPosition")(functionPosition)
+    if (functionPosition != null) __obj.updateDynamic("functionPosition")(js.Any.fromFunction3(functionPosition))
     if (functionReady != null) __obj.updateDynamic("functionReady")(functionReady)
     if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])

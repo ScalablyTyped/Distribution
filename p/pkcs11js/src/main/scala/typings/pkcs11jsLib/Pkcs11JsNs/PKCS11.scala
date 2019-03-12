@@ -64,7 +64,7 @@ class PKCS11 () extends js.Object {
     session: Handle,
     inData: nodeLib.Buffer,
     outData: nodeLib.Buffer,
-    cb: js.Function2[/* error */ nodeLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Finishes a multiple-part decryption operation
@@ -115,7 +115,7 @@ class PKCS11 () extends js.Object {
     mechanism: Mechanism,
     key: Handle,
     template: Template,
-    cb: js.Function2[/* error */ nodeLib.Error, /* hKey */ Handle, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error, /* hKey */ Handle, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Destroys an object
@@ -145,7 +145,7 @@ class PKCS11 () extends js.Object {
     session: Handle,
     inData: nodeLib.Buffer,
     outData: nodeLib.Buffer,
-    cb: js.Function2[/* error */ nodeLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Finishes a multiple-part message-digesting operation
@@ -193,7 +193,7 @@ class PKCS11 () extends js.Object {
     session: Handle,
     inData: nodeLib.Buffer,
     outData: nodeLib.Buffer,
-    cb: js.Function2[/* error */ nodeLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Finishes a multiple-part encryption operation
@@ -274,7 +274,7 @@ class PKCS11 () extends js.Object {
     session: Handle,
     mechanism: Mechanism,
     template: Template,
-    cb: js.Function2[/* error */ nodeLib.Error, /* key */ Handle, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error, /* key */ Handle, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Generates a public-key/private-key pair,
@@ -302,7 +302,7 @@ class PKCS11 () extends js.Object {
     mechanism: Mechanism,
     publicTmpl: Template,
     privateTmpl: Template,
-    cb: js.Function2[/* error */ nodeLib.Error, /* keys */ KeyPair, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error, /* keys */ KeyPair, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Generates random data
@@ -482,7 +482,7 @@ class PKCS11 () extends js.Object {
     session: Handle,
     inData: nodeLib.Buffer,
     outData: nodeLib.Buffer,
-    cb: js.Function2[/* error */ nodeLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Finishes a multiple-part signature operation,
@@ -549,7 +549,7 @@ class PKCS11 () extends js.Object {
     unwrappingKey: Handle,
     wrappedKey: nodeLib.Buffer,
     template: Template,
-    cb: js.Function2[/* error */ nodeLib.Error, /* key */ Handle, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error, /* key */ Handle, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Verifies a signature in a single-part operation,
@@ -576,7 +576,7 @@ class PKCS11 () extends js.Object {
     session: Handle,
     inData: nodeLib.Buffer,
     signature: nodeLib.Buffer,
-    cb: js.Function2[/* error */ nodeLib.Error, /* verify */ scala.Boolean, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error, /* verify */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Finishes a multiple-part verification
@@ -643,7 +643,7 @@ class PKCS11 () extends js.Object {
     wrappingKey: Handle,
     key: Handle,
     wrappedKey: nodeLib.Buffer,
-    cb: js.Function2[/* error */ nodeLib.Error, /* wrappedKey */ nodeLib.Buffer, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error, /* wrappedKey */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Closes dynamic library

@@ -18,7 +18,7 @@ trait IWorkflowAdmin extends js.Object {
 object IWorkflowAdmin {
   @scala.inline
   def apply(
-    Clone: js.Function0[IWorkflowAdmin],
+    Clone: () => IWorkflowAdmin,
     Description: java.lang.String,
     Permissions: IAccessControlList,
     SemanticAliases: ISemanticAliases,
@@ -26,7 +26,7 @@ object IWorkflowAdmin {
     States: IStatesAdmin,
     Workflow: IWorkflow
   ): IWorkflowAdmin = {
-    val __obj = js.Dynamic.literal(Clone = Clone, Description = Description, Permissions = Permissions, SemanticAliases = SemanticAliases, StateTransitions = StateTransitions, States = States, Workflow = Workflow)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Description = Description, Permissions = Permissions, SemanticAliases = SemanticAliases, StateTransitions = StateTransitions, States = States, Workflow = Workflow)
   
     __obj.asInstanceOf[IWorkflowAdmin]
   }

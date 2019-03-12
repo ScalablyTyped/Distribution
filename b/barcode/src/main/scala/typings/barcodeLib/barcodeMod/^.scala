@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("barcode", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(`type`: java.lang.String, options: barcodeLib.barcodeMod.BarcodeOptions): barcodeLib.barcodeMod.BarcodeResult = js.native
+  def apply(`type`: java.lang.String, options: BarcodeOptions): BarcodeResult = js.native
 }
 

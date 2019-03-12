@@ -23,11 +23,11 @@ trait ParentNode extends js.Object {
 object ParentNode {
   @scala.inline
   def apply(
-    append: js.Function1[/* repeated */ stdLib.Node | java.lang.String, scala.Unit],
+    append: /* repeated */ stdLib.Node | java.lang.String => scala.Unit,
     children: stdLib.HTMLCollection,
-    prepend: js.Function1[/* repeated */ stdLib.Node | java.lang.String, scala.Unit]
+    prepend: /* repeated */ stdLib.Node | java.lang.String => scala.Unit
   ): ParentNode = {
-    val __obj = js.Dynamic.literal(append = append, children = children, prepend = prepend)
+    val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), children = children, prepend = js.Any.fromFunction1(prepend))
   
     __obj.asInstanceOf[ParentNode]
   }

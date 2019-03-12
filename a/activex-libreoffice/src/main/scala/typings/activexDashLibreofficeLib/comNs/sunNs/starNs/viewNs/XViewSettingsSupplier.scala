@@ -18,12 +18,12 @@ object XViewSettingsSupplier {
   @scala.inline
   def apply(
     ViewSettings: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
-    acquire: js.Function0[scala.Unit],
-    getViewSettings: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getViewSettings: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XViewSettingsSupplier = {
-    val __obj = js.Dynamic.literal(ViewSettings = ViewSettings, acquire = acquire, getViewSettings = getViewSettings, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ViewSettings = ViewSettings, acquire = js.Any.fromFunction0(acquire), getViewSettings = js.Any.fromFunction0(getViewSettings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XViewSettingsSupplier]
   }

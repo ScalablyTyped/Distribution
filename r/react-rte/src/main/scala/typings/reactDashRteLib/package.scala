@@ -24,14 +24,14 @@ package object reactDashRteLib {
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNode */ js.Any
   ]
   type CustomBlockFn = js.Function1[
-    /* element */ reactLib.Element, 
+    /* element */ stdLib.Element, 
     js.UndefOr[
       scala.Null | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CustomBlockObject */ js.Any)
     ]
   ]
   type CustomControl = (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNode */ js.Any) | CustControlFunc
   type CustomInlineFn = js.Function2[
-    /* element */ reactLib.Element, 
+    /* element */ stdLib.Element, 
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify InlineCreators */ /* inlineCreators */ js.Any, 
     js.UndefOr[
       scala.Null | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Style */ js.Any)

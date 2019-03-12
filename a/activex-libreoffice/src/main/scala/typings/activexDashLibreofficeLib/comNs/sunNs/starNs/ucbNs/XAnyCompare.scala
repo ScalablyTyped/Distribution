@@ -20,12 +20,12 @@ trait XAnyCompare
 object XAnyCompare {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    compare: js.Function2[js.Any, js.Any, scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    compare: (js.Any, js.Any) => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAnyCompare = {
-    val __obj = js.Dynamic.literal(acquire = acquire, compare = compare, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), compare = js.Any.fromFunction2(compare), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAnyCompare]
   }

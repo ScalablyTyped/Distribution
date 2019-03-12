@@ -27,7 +27,7 @@ class Headers () extends js.Object {
     fn: js.Function3[
       /* values */ js.Array[java.lang.String], 
       /* name */ js.UndefOr[java.lang.String], 
-      /* headers */ nodeLib.Map[java.lang.String, js.Array[java.lang.String]], 
+      /* headers */ stdLib.Map[java.lang.String, js.Array[java.lang.String]], 
       scala.Unit
     ]
   ): scala.Unit = js.native

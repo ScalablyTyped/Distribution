@@ -20,8 +20,8 @@ object ^ extends js.Object {
   def parseAndCheckHttpResponse(operations: js.Any): js.Function1[/* response */ stdLib.Response, js.Promise[_]] = js.native
   def selectHttpOptionsAndBody(
     operation: apolloDashLinkLib.libTypesMod.Operation,
-    fallbackConfig: apolloDashLinkDashHttpDashCommonLib.apolloDashLinkDashHttpDashCommonMod.HttpConfig,
-    configs: apolloDashLinkDashHttpDashCommonLib.apolloDashLinkDashHttpDashCommonMod.HttpConfig*
+    fallbackConfig: HttpConfig,
+    configs: HttpConfig*
   ): apolloDashLinkDashHttpDashCommonLib.Anon_Body = js.native
   def selectURI(operation: js.Any): js.Any = js.native
   def selectURI(operation: js.Any, fallbackURI: java.lang.String): js.Any = js.native

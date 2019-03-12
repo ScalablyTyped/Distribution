@@ -12,8 +12,8 @@ trait DocumentTriggerBuilder extends js.Object {
 
 object DocumentTriggerBuilder {
   @scala.inline
-  def apply(create: js.Function0[Trigger], onOpen: js.Function0[DocumentTriggerBuilder]): DocumentTriggerBuilder = {
-    val __obj = js.Dynamic.literal(create = create, onOpen = onOpen)
+  def apply(create: () => Trigger, onOpen: () => DocumentTriggerBuilder): DocumentTriggerBuilder = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), onOpen = js.Any.fromFunction0(onOpen))
   
     __obj.asInstanceOf[DocumentTriggerBuilder]
   }

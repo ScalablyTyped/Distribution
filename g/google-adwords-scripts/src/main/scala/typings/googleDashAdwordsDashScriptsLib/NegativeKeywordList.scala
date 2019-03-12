@@ -18,17 +18,17 @@ trait NegativeKeywordList extends AdWordsEntity {
 object NegativeKeywordList {
   @scala.inline
   def apply(
-    addNegativeKeyword: js.Function1[java.lang.String, scala.Unit],
-    addNegativeKeywords: js.Function1[js.Array[java.lang.String], scala.Unit],
-    campaigns: js.Function0[AdWordsSelector[Campaign]],
-    getId: js.Function0[scala.Double],
-    getName: js.Function0[java.lang.String],
-    negativeKeywords: js.Function0[AdWordsSelector[SharedNegativeKeyword]],
-    setName: js.Function0[java.lang.String],
-    getEntityType: js.Function0[java.lang.String] = null
+    addNegativeKeyword: java.lang.String => scala.Unit,
+    addNegativeKeywords: js.Array[java.lang.String] => scala.Unit,
+    campaigns: () => AdWordsSelector[Campaign],
+    getId: () => scala.Double,
+    getName: () => java.lang.String,
+    negativeKeywords: () => AdWordsSelector[SharedNegativeKeyword],
+    setName: () => java.lang.String,
+    getEntityType: () => java.lang.String = null
   ): NegativeKeywordList = {
-    val __obj = js.Dynamic.literal(addNegativeKeyword = addNegativeKeyword, addNegativeKeywords = addNegativeKeywords, campaigns = campaigns, getId = getId, getName = getName, negativeKeywords = negativeKeywords, setName = setName)
-    if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
+    val __obj = js.Dynamic.literal(addNegativeKeyword = js.Any.fromFunction1(addNegativeKeyword), addNegativeKeywords = js.Any.fromFunction1(addNegativeKeywords), campaigns = js.Any.fromFunction0(campaigns), getId = js.Any.fromFunction0(getId), getName = js.Any.fromFunction0(getName), negativeKeywords = js.Any.fromFunction0(negativeKeywords), setName = js.Any.fromFunction0(setName))
+    if (getEntityType != null) __obj.updateDynamic("getEntityType")(js.Any.fromFunction0(getEntityType))
     __obj.asInstanceOf[NegativeKeywordList]
   }
 }

@@ -30,9 +30,9 @@ object IMobileBroadbandNetwork {
     registeredProviderId: java.lang.String,
     registeredProviderName: java.lang.String,
     registrationNetworkError: scala.Double,
-    showConnectionUI: js.Function0[scala.Unit]
+    showConnectionUI: () => scala.Unit
   ): IMobileBroadbandNetwork = {
-    val __obj = js.Dynamic.literal(accessPointName = accessPointName, activationNetworkError = activationNetworkError, networkAdapter = networkAdapter, networkRegistrationState = networkRegistrationState, packetAttachNetworkError = packetAttachNetworkError, registeredDataClass = registeredDataClass, registeredProviderId = registeredProviderId, registeredProviderName = registeredProviderName, registrationNetworkError = registrationNetworkError, showConnectionUI = showConnectionUI)
+    val __obj = js.Dynamic.literal(accessPointName = accessPointName, activationNetworkError = activationNetworkError, networkAdapter = networkAdapter, networkRegistrationState = networkRegistrationState, packetAttachNetworkError = packetAttachNetworkError, registeredDataClass = registeredDataClass, registeredProviderId = registeredProviderId, registeredProviderName = registeredProviderName, registrationNetworkError = registrationNetworkError, showConnectionUI = js.Any.fromFunction0(showConnectionUI))
   
     __obj.asInstanceOf[IMobileBroadbandNetwork]
   }

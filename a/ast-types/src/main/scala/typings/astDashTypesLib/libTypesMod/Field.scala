@@ -16,14 +16,14 @@ trait Field[T] extends js.Object {
 object Field {
   @scala.inline
   def apply[T](
-    getValue: js.Function1[org.scalablytyped.runtime.StringDictionary[js.Any], js.Any],
+    getValue: org.scalablytyped.runtime.StringDictionary[js.Any] => js.Any,
     hidden: scala.Boolean,
     name: java.lang.String,
-    toString: js.Function0[java.lang.String],
+    toString: () => java.lang.String,
     `type`: Type[T],
     defaultFn: js.Function = null
   ): Field[T] = {
-    val __obj = js.Dynamic.literal(getValue = getValue, hidden = hidden, name = name, toString = toString)
+    val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction1(getValue), hidden = hidden, name = name, toString = js.Any.fromFunction0(toString))
     __obj.updateDynamic("type")(`type`)
     if (defaultFn != null) __obj.updateDynamic("defaultFn")(defaultFn)
     __obj.asInstanceOf[Field[T]]

@@ -22,18 +22,18 @@ object SnackbarProps {
   def apply(
     bottomNavigation: scala.Boolean,
     message: java.lang.String,
-    onRequestClose: js.Function0[scala.Unit],
+    onRequestClose: () => scala.Unit,
     timeout: scala.Double,
     visible: scala.Boolean,
     actionText: java.lang.String = null,
     button: ButtonProps = null,
-    onActionPress: js.Function0[scala.Unit] = null,
+    onActionPress: () => scala.Unit = null,
     style: reactDashNativeDashMaterialDashUiLib.Anon_ContainerMessage = null
   ): SnackbarProps = {
-    val __obj = js.Dynamic.literal(bottomNavigation = bottomNavigation, message = message, onRequestClose = onRequestClose, timeout = timeout, visible = visible)
+    val __obj = js.Dynamic.literal(bottomNavigation = bottomNavigation, message = message, onRequestClose = js.Any.fromFunction0(onRequestClose), timeout = timeout, visible = visible)
     if (actionText != null) __obj.updateDynamic("actionText")(actionText)
     if (button != null) __obj.updateDynamic("button")(button)
-    if (onActionPress != null) __obj.updateDynamic("onActionPress")(onActionPress)
+    if (onActionPress != null) __obj.updateDynamic("onActionPress")(js.Any.fromFunction0(onActionPress))
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[SnackbarProps]
   }

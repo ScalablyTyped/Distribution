@@ -17,13 +17,13 @@ trait XItemEventBroadcaster
 object XItemEventBroadcaster {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addItemListener: js.Function1[XItemListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeItemListener: js.Function1[XItemListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addItemListener: XItemListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeItemListener: XItemListener => scala.Unit
   ): XItemEventBroadcaster = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addItemListener = addItemListener, queryInterface = queryInterface, release = release, removeItemListener = removeItemListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addItemListener = js.Any.fromFunction1(addItemListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeItemListener = js.Any.fromFunction1(removeItemListener))
   
     __obj.asInstanceOf[XItemEventBroadcaster]
   }

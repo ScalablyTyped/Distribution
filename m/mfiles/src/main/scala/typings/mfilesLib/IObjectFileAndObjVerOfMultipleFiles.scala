@@ -16,13 +16,13 @@ trait IObjectFileAndObjVerOfMultipleFiles extends js.Object {
 object IObjectFileAndObjVerOfMultipleFiles {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IObjectFileAndObjVer, scala.Unit],
-    Clone: js.Function0[IObjectFileAndObjVerOfMultipleFiles],
+    Add: (scala.Double, IObjectFileAndObjVer) => scala.Unit,
+    Clone: () => IObjectFileAndObjVerOfMultipleFiles,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IObjectFileAndObjVer],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => IObjectFileAndObjVer,
+    Remove: scala.Double => scala.Unit
   ): IObjectFileAndObjVerOfMultipleFiles = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IObjectFileAndObjVerOfMultipleFiles]
   }

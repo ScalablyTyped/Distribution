@@ -138,17 +138,17 @@ object _Impl {
     namespace: java.lang.String,
     observeChanges: scala.Boolean,
     on: java.lang.String,
-    onChange: js.Function1[semanticDashUiDashAccordionLib.JQuery, scala.Unit],
-    onClose: js.Function1[semanticDashUiDashAccordionLib.JQuery, scala.Unit],
-    onClosing: js.Function1[semanticDashUiDashAccordionLib.JQuery, scala.Unit],
-    onOpen: js.Function1[semanticDashUiDashAccordionLib.JQuery, scala.Unit],
-    onOpening: js.Function1[semanticDashUiDashAccordionLib.JQuery, scala.Unit],
+    onChange: semanticDashUiDashAccordionLib.JQuery => scala.Unit,
+    onClose: semanticDashUiDashAccordionLib.JQuery => scala.Unit,
+    onClosing: semanticDashUiDashAccordionLib.JQuery => scala.Unit,
+    onOpen: semanticDashUiDashAccordionLib.JQuery => scala.Unit,
+    onOpening: semanticDashUiDashAccordionLib.JQuery => scala.Unit,
     performance: scala.Boolean,
     selector: semanticDashUiDashAccordionLib.SemanticUINs.AccordionNs.SelectorSettings,
     silent: scala.Boolean,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(animateChildren = animateChildren, className = className.asInstanceOf[js.Any], closeNested = closeNested, collapsible = collapsible, debug = debug, duration = duration, easing = easing, error = error, exclusive = exclusive, name = name, namespace = namespace, observeChanges = observeChanges, on = on, onChange = onChange, onClose = onClose, onClosing = onClosing, onOpen = onOpen, onOpening = onOpening, performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, verbose = verbose)
+    val __obj = js.Dynamic.literal(animateChildren = animateChildren, className = className.asInstanceOf[js.Any], closeNested = closeNested, collapsible = collapsible, debug = debug, duration = duration, easing = easing, error = error, exclusive = exclusive, name = name, namespace = namespace, observeChanges = observeChanges, on = on, onChange = js.Any.fromFunction1(onChange), onClose = js.Any.fromFunction1(onClose), onClosing = js.Any.fromFunction1(onClosing), onOpen = js.Any.fromFunction1(onOpen), onOpening = js.Any.fromFunction1(onOpening), performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, verbose = verbose)
   
     __obj.asInstanceOf[_Impl]
   }

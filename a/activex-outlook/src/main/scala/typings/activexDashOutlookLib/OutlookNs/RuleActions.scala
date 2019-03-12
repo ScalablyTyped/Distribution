@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.RuleActions")
 @js.native
 class RuleActions protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val AssignToCategory: AssignToCategoryRuleAction = js.native
   val CC: SendRuleAction = js.native
   val Class: OlObjectClass = js.native

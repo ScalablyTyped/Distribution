@@ -14,8 +14,8 @@ trait CorkedRequest extends js.Object {
 
 object CorkedRequest {
   @scala.inline
-  def apply(entry: js.Any, finish: js.Function0[scala.Unit], next: js.Any): CorkedRequest = {
-    val __obj = js.Dynamic.literal(entry = entry, finish = finish, next = next)
+  def apply(entry: js.Any, finish: () => scala.Unit, next: js.Any): CorkedRequest = {
+    val __obj = js.Dynamic.literal(entry = entry, finish = js.Any.fromFunction0(finish), next = next)
   
     __obj.asInstanceOf[CorkedRequest]
   }

@@ -40,16 +40,16 @@ object KeyboardNavigation {
   @scala.inline
   def apply(
     clickToNav: js.UndefOr[scala.Boolean] = js.undefined,
-    customStyle: js.Function2[/* cell */ js.Any, /* row */ js.Any, reactLib.reactMod.ReactNs.CSSProperties] = null,
-    customStyleOnEditCell: js.Function2[/* cell */ js.Any, /* row */ js.Any, reactLib.reactMod.ReactNs.CSSProperties] = null,
+    customStyle: (/* cell */ js.Any, /* row */ js.Any) => reactLib.reactMod.ReactNs.CSSProperties = null,
+    customStyleOnEditCell: (/* cell */ js.Any, /* row */ js.Any) => reactLib.reactMod.ReactNs.CSSProperties = null,
     enterToEdit: js.UndefOr[scala.Boolean] = js.undefined,
     enterToExpand: js.UndefOr[scala.Boolean] = js.undefined,
     enterToSelect: js.UndefOr[scala.Boolean] = js.undefined
   ): KeyboardNavigation = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(clickToNav)) __obj.updateDynamic("clickToNav")(clickToNav)
-    if (customStyle != null) __obj.updateDynamic("customStyle")(customStyle)
-    if (customStyleOnEditCell != null) __obj.updateDynamic("customStyleOnEditCell")(customStyleOnEditCell)
+    if (customStyle != null) __obj.updateDynamic("customStyle")(js.Any.fromFunction2(customStyle))
+    if (customStyleOnEditCell != null) __obj.updateDynamic("customStyleOnEditCell")(js.Any.fromFunction2(customStyleOnEditCell))
     if (!js.isUndefined(enterToEdit)) __obj.updateDynamic("enterToEdit")(enterToEdit)
     if (!js.isUndefined(enterToExpand)) __obj.updateDynamic("enterToExpand")(enterToExpand)
     if (!js.isUndefined(enterToSelect)) __obj.updateDynamic("enterToSelect")(enterToSelect)

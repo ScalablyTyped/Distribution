@@ -11,7 +11,7 @@ trait MenuProps extends js.Object {
   var defaultSelectedKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var focusable: js.UndefOr[scala.Boolean] = js.undefined
   var getPopupContainer: js.UndefOr[
-    js.Function1[/* triggerNode */ js.UndefOr[reactLib.HTMLElement], reactLib.HTMLElement]
+    js.Function1[/* triggerNode */ js.UndefOr[stdLib.HTMLElement], stdLib.HTMLElement]
   ] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var inlineCollapsed: js.UndefOr[scala.Boolean] = js.undefined
@@ -20,7 +20,7 @@ trait MenuProps extends js.Object {
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* param */ ClickParam, scala.Unit]] = js.undefined
   var onDeselect: js.UndefOr[js.Function1[/* param */ SelectParam, scala.Unit]] = js.undefined
-  var onMouseEnter: js.UndefOr[js.Function1[/* e */ reactLib.MouseEvent, scala.Unit]] = js.undefined
+  var onMouseEnter: js.UndefOr[js.Function1[/* e */ stdLib.MouseEvent, scala.Unit]] = js.undefined
   var onOpenChange: js.UndefOr[js.Function1[/* openKeys */ js.Array[java.lang.String], scala.Unit]] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* param */ SelectParam, scala.Unit]] = js.undefined
   var openAnimation: js.UndefOr[java.lang.String | js.Object] = js.undefined
@@ -42,17 +42,17 @@ object MenuProps {
     defaultOpenKeys: js.Array[java.lang.String] = null,
     defaultSelectedKeys: js.Array[java.lang.String] = null,
     focusable: js.UndefOr[scala.Boolean] = js.undefined,
-    getPopupContainer: js.Function1[/* triggerNode */ js.UndefOr[reactLib.HTMLElement], reactLib.HTMLElement] = null,
+    getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.HTMLElement] => stdLib.HTMLElement = null,
     id: java.lang.String = null,
     inlineCollapsed: js.UndefOr[scala.Boolean] = js.undefined,
     inlineIndent: scala.Int | scala.Double = null,
     mode: MenuMode = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: js.Function1[/* param */ ClickParam, scala.Unit] = null,
-    onDeselect: js.Function1[/* param */ SelectParam, scala.Unit] = null,
-    onMouseEnter: js.Function1[/* e */ reactLib.MouseEvent, scala.Unit] = null,
-    onOpenChange: js.Function1[/* openKeys */ js.Array[java.lang.String], scala.Unit] = null,
-    onSelect: js.Function1[/* param */ SelectParam, scala.Unit] = null,
+    onClick: /* param */ ClickParam => scala.Unit = null,
+    onDeselect: /* param */ SelectParam => scala.Unit = null,
+    onMouseEnter: /* e */ stdLib.MouseEvent => scala.Unit = null,
+    onOpenChange: /* openKeys */ js.Array[java.lang.String] => scala.Unit = null,
+    onSelect: /* param */ SelectParam => scala.Unit = null,
     openAnimation: java.lang.String | js.Object = null,
     openKeys: js.Array[java.lang.String] = null,
     openTransitionName: java.lang.String | js.Object = null,
@@ -69,17 +69,17 @@ object MenuProps {
     if (defaultOpenKeys != null) __obj.updateDynamic("defaultOpenKeys")(defaultOpenKeys)
     if (defaultSelectedKeys != null) __obj.updateDynamic("defaultSelectedKeys")(defaultSelectedKeys)
     if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable)
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer)
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(inlineCollapsed)) __obj.updateDynamic("inlineCollapsed")(inlineCollapsed)
     if (inlineIndent != null) __obj.updateDynamic("inlineIndent")(inlineIndent.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onDeselect != null) __obj.updateDynamic("onDeselect")(onDeselect)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(onOpenChange)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onDeselect != null) __obj.updateDynamic("onDeselect")(js.Any.fromFunction1(onDeselect))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
+    if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1(onOpenChange))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (openAnimation != null) __obj.updateDynamic("openAnimation")(openAnimation.asInstanceOf[js.Any])
     if (openKeys != null) __obj.updateDynamic("openKeys")(openKeys)
     if (openTransitionName != null) __obj.updateDynamic("openTransitionName")(openTransitionName.asInstanceOf[js.Any])

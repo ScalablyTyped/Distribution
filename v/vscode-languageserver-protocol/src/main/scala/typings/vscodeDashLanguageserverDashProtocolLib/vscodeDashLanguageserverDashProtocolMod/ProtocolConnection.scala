@@ -23,7 +23,7 @@ trait ProtocolConnection extends js.Object {
   @JSName("onError")
   var onError_Original: vscodeDashJsonrpcLib.libEventsMod.Event[
     js.Tuple3[
-      nodeLib.Error, 
+      stdLib.Error, 
       js.UndefOr[vscodeDashJsonrpcLib.libMessagesMod.Message], 
       js.UndefOr[scala.Double]
     ]
@@ -68,7 +68,7 @@ trait ProtocolConnection extends js.Object {
   def onError(
     listener: js.Function1[
       /* e */ js.Tuple3[
-        nodeLib.Error, 
+        stdLib.Error, 
         js.UndefOr[vscodeDashJsonrpcLib.libMessagesMod.Message], 
         js.UndefOr[scala.Double]
       ], 
@@ -78,7 +78,7 @@ trait ProtocolConnection extends js.Object {
   def onError(
     listener: js.Function1[
       /* e */ js.Tuple3[
-        nodeLib.Error, 
+        stdLib.Error, 
         js.UndefOr[vscodeDashJsonrpcLib.libMessagesMod.Message], 
         js.UndefOr[scala.Double]
       ], 
@@ -89,7 +89,7 @@ trait ProtocolConnection extends js.Object {
   def onError(
     listener: js.Function1[
       /* e */ js.Tuple3[
-        nodeLib.Error, 
+        stdLib.Error, 
         js.UndefOr[vscodeDashJsonrpcLib.libMessagesMod.Message], 
         js.UndefOr[scala.Double]
       ], 

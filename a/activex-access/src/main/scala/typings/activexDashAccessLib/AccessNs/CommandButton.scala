@@ -12,7 +12,7 @@ class CommandButton protected () extends js.Object {
   var AddColon: scala.Boolean = js.native
   var AfterUpdateMacro: java.lang.String = js.native
   var Alignment: scala.Double = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   var AutoLabel: scala.Boolean = js.native
   var AutoRepeat: scala.Boolean = js.native
   var BackColor: scala.Double = js.native
@@ -76,7 +76,7 @@ class CommandButton protected () extends js.Object {
   var HoverShade: scala.Double = js.native
   var HoverThemeColorIndex: scala.Double = js.native
   var HoverTint: scala.Double = js.native
-  val Hyperlink: Hyperlink = js.native
+  val Hyperlink: activexDashAccessLib.AccessNs.Hyperlink = js.native
   var HyperlinkAddress: java.lang.String = js.native
   var HyperlinkSubAddress: java.lang.String = js.native
   var InSelection: scala.Boolean = js.native

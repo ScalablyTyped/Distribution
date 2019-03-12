@@ -26,14 +26,14 @@ object XColorScaleEntry {
     Color: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
     Formula: java.lang.String,
     Type: scala.Double,
-    getColor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color],
-    getFormula: js.Function0[java.lang.String],
-    getType: js.Function0[scala.Double],
-    setColor: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color, scala.Unit],
-    setFormula: js.Function1[java.lang.String, scala.Unit],
-    setType: js.Function1[scala.Double, scala.Unit]
+    getColor: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    getFormula: () => java.lang.String,
+    getType: () => scala.Double,
+    setColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color => scala.Unit,
+    setFormula: java.lang.String => scala.Unit,
+    setType: scala.Double => scala.Unit
   ): XColorScaleEntry = {
-    val __obj = js.Dynamic.literal(Color = Color, Formula = Formula, Type = Type, getColor = getColor, getFormula = getFormula, getType = getType, setColor = setColor, setFormula = setFormula, setType = setType)
+    val __obj = js.Dynamic.literal(Color = Color, Formula = Formula, Type = Type, getColor = js.Any.fromFunction0(getColor), getFormula = js.Any.fromFunction0(getFormula), getType = js.Any.fromFunction0(getType), setColor = js.Any.fromFunction1(setColor), setFormula = js.Any.fromFunction1(setFormula), setType = js.Any.fromFunction1(setType))
   
     __obj.asInstanceOf[XColorScaleEntry]
   }

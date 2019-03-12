@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WL.App")
 @js.native
 object ^ extends js.Object {
-  def addActionReceiver(id: java.lang.String, callback: ibmDashMobilefirstLib.WLNs.AppNs.ActionReceiverCallback): scala.Unit = js.native
+  def addActionReceiver(id: java.lang.String, callback: ActionReceiverCallback): scala.Unit = js.native
   /**
     * @deprecate Deprecated.
     */
   def close(): scala.Unit = js.native
   def copyToClipboard(stringToCopy: java.lang.String): scala.Unit = js.native
-  def copyToClipboard(stringToCopy: java.lang.String, callback: ibmDashMobilefirstLib.WLNs.AppNs.Callback): scala.Unit = js.native
+  def copyToClipboard(stringToCopy: java.lang.String, callback: Callback): scala.Unit = js.native
   def getDeviceLanguage(): java.lang.String = js.native
   def getDeviceLocale(): java.lang.String = js.native
   /**
@@ -24,21 +24,17 @@ object ^ extends js.Object {
   def hideSplashScreen(): scala.Unit = js.native
   def openURL(url: java.lang.String): scala.Unit = js.native
   def openURL(url: java.lang.String, target: java.lang.String): scala.Unit = js.native
-  def openURL(
-    url: java.lang.String,
-    target: java.lang.String,
-    options: ibmDashMobilefirstLib.WLNs.AppNs.OpenURLOptions
-  ): scala.Unit = js.native
-  def overrideBackButton(callback: ibmDashMobilefirstLib.WLNs.AppNs.Callback): scala.Unit = js.native
+  def openURL(url: java.lang.String, target: java.lang.String, options: OpenURLOptions): scala.Unit = js.native
+  def overrideBackButton(callback: Callback): scala.Unit = js.native
   def removeActionReceiver(id: java.lang.String): scala.Unit = js.native
   /**
     * @deprecated since version 6.0.0
     */
   def resetBackButton(): scala.Unit = js.native
   def sendActionToNative(action: java.lang.String): scala.Unit = js.native
-  def sendActionToNative(action: java.lang.String, data: ibmDashMobilefirstLib.WLNs.AppNs.Data): scala.Unit = js.native
+  def sendActionToNative(action: java.lang.String, data: Data): scala.Unit = js.native
   def setKeepAliveInBackground(enabled: scala.Boolean): scala.Unit = js.native
-  def setKeepAliveInBackground(enabled: scala.Boolean, options: ibmDashMobilefirstLib.WLNs.AppNs.KeepAliveInBackgroundOptions): scala.Unit = js.native
+  def setKeepAliveInBackground(enabled: scala.Boolean, options: KeepAliveInBackgroundOptions): scala.Unit = js.native
   def showSplashScreen(): scala.Unit = js.native
 }
 

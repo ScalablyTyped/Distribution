@@ -11,8 +11,8 @@ trait Verify extends js.Object {
 
 object Verify {
   @scala.inline
-  def apply(verify: js.Function2[java.lang.String, java.lang.String, scala.Boolean]): Verify = {
-    val __obj = js.Dynamic.literal(verify = verify)
+  def apply(verify: (java.lang.String, java.lang.String) => scala.Boolean): Verify = {
+    val __obj = js.Dynamic.literal(verify = js.Any.fromFunction2(verify))
   
     __obj.asInstanceOf[Verify]
   }

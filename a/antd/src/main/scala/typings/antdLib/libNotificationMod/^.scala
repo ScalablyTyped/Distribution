@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/notification", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: antdLib.libNotificationMod.NotificationApi = js.native
+  val default: NotificationApi = js.native
 }
 

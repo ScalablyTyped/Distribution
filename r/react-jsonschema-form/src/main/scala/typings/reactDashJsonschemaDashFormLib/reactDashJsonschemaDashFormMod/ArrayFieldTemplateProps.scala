@@ -35,14 +35,14 @@ object ArrayFieldTemplateProps {
     formData: js.Any,
     idSchema: IdSchema,
     items: js.Array[reactDashJsonschemaDashFormLib.Anon_Children],
-    onAddClick: js.Function1[js.Any, js.Function1[/* event */ js.Any, scala.Unit]],
+    onAddClick: js.Any => js.Function1[/* event */ js.Any, scala.Unit],
     readonly: scala.Boolean,
     required: scala.Boolean,
     schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6,
     title: java.lang.String,
     uiSchema: UiSchema
   ): ArrayFieldTemplateProps = {
-    val __obj = js.Dynamic.literal(DescriptionField = DescriptionField, TitleField = TitleField, canAdd = canAdd, className = className, disabled = disabled, formContext = formContext, formData = formData, idSchema = idSchema, items = items, onAddClick = onAddClick, readonly = readonly, required = required, schema = schema, title = title, uiSchema = uiSchema)
+    val __obj = js.Dynamic.literal(DescriptionField = DescriptionField, TitleField = TitleField, canAdd = canAdd, className = className, disabled = disabled, formContext = formContext, formData = formData, idSchema = idSchema, items = items, onAddClick = js.Any.fromFunction1(onAddClick), readonly = readonly, required = required, schema = schema, title = title, uiSchema = uiSchema)
   
     __obj.asInstanceOf[ArrayFieldTemplateProps]
   }

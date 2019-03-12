@@ -19,9 +19,9 @@ trait Menu
     antdLib.antdLibStrings.`inline` | antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical | antdLib.antdLibStrings.`vertical-left` | antdLib.antdLibStrings.`vertical-right`
   ] = js.native
   def handleClick(e: ClickParam): scala.Unit = js.native
-  def handleMouseEnter(e: reactLib.MouseEvent): scala.Unit = js.native
+  def handleMouseEnter(e: stdLib.MouseEvent): scala.Unit = js.native
   def handleOpenChange(openKeys: js.Array[java.lang.String]): scala.Unit = js.native
-  def handleTransitionEnd(e: reactLib.TransitionEvent): scala.Unit = js.native
+  def handleTransitionEnd(e: stdLib.TransitionEvent): scala.Unit = js.native
   def renderMenu(hasGetPopupContainerGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   def restoreModeVerticalFromInline(): scala.Unit = js.native
   def setOpenKeys(openKeys: js.Array[java.lang.String]): scala.Unit = js.native

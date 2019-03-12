@@ -20,18 +20,12 @@ trait ParserInline extends js.Object {
 object ParserInline {
   @scala.inline
   def apply(
-    parse: js.Function4[
-      java.lang.String, 
-      remarkableLib.libMod.RemarkableNs.Options, 
-      remarkableLib.libMod.RemarkableNs.Env, 
-      js.Array[remarkableLib.libMod.RemarkableNs.Token], 
-      scala.Unit
-    ],
-    skipToken: js.Function1[remarkableLib.libMod.RemarkableNs.StateInline, scala.Unit],
-    tokenize: js.Function1[remarkableLib.libMod.RemarkableNs.StateInline, scala.Unit],
-    validateLink: js.Function1[java.lang.String, scala.Boolean]
+    parse: (java.lang.String, remarkableLib.libMod.RemarkableNs.Options, remarkableLib.libMod.RemarkableNs.Env, js.Array[remarkableLib.libMod.RemarkableNs.Token]) => scala.Unit,
+    skipToken: remarkableLib.libMod.RemarkableNs.StateInline => scala.Unit,
+    tokenize: remarkableLib.libMod.RemarkableNs.StateInline => scala.Unit,
+    validateLink: java.lang.String => scala.Boolean
   ): ParserInline = {
-    val __obj = js.Dynamic.literal(parse = parse, skipToken = skipToken, tokenize = tokenize, validateLink = validateLink)
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction4(parse), skipToken = js.Any.fromFunction1(skipToken), tokenize = js.Any.fromFunction1(tokenize), validateLink = js.Any.fromFunction1(validateLink))
   
     __obj.asInstanceOf[ParserInline]
   }

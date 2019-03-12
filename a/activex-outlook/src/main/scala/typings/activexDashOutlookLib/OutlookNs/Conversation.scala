@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.Conversation")
 @js.native
 class Conversation protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   val ConversationID: java.lang.String = js.native
   var `Outlook.Conversation_typekey`: Conversation = js.native

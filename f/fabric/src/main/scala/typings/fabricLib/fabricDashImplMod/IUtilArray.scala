@@ -27,11 +27,11 @@ trait IUtilArray extends js.Object {
 object IUtilArray {
   @scala.inline
   def apply(
-    invoke: js.Function2[js.Array[_], java.lang.String, js.Array[_]],
-    max: js.Function2[js.Array[_], java.lang.String, js.Any],
-    min: js.Function2[js.Array[_], java.lang.String, js.Any]
+    invoke: (js.Array[_], java.lang.String) => js.Array[_],
+    max: (js.Array[_], java.lang.String) => js.Any,
+    min: (js.Array[_], java.lang.String) => js.Any
   ): IUtilArray = {
-    val __obj = js.Dynamic.literal(invoke = invoke, max = max, min = min)
+    val __obj = js.Dynamic.literal(invoke = js.Any.fromFunction2(invoke), max = js.Any.fromFunction2(max), min = js.Any.fromFunction2(min))
   
     __obj.asInstanceOf[IUtilArray]
   }

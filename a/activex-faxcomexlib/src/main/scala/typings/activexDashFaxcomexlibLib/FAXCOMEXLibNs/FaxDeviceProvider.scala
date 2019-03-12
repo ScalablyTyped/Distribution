@@ -12,7 +12,7 @@ class FaxDeviceProvider protected () extends js.Object {
   /** Is device provider built in debug environment */
   val Debug: scala.Boolean = js.native
   /** Array of device IDs exposed by the provider */
-  val DeviceIds: activexDashInteropLib.SafeArray[scala.Double] = js.native
+  val DeviceIds: stdLib.SafeArray[scala.Double] = js.native
   var `FAXCOMEXLib.FaxDeviceProvider_typekey`: FaxDeviceProvider = js.native
   /** Provider's friendly name */
   val FriendlyName: java.lang.String = js.native

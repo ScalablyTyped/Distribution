@@ -15,38 +15,19 @@ object KoLiteActivityBindingHandler {
   def apply(
     defaultOptions: KoLiteActivityDefaultOptions,
     after: js.Array[java.lang.String] = null,
-    init: js.Function5[
-      js.Any, 
-      /* valueAccessor */ js.Function0[js.Any], 
-      /* allBindingsAccessor */ knockoutLib.KnockoutAllBindingsAccessor, 
-      js.Any, 
-      /* bindingContext */ knockoutLib.KnockoutBindingContext, 
-      scala.Unit | knockoutLib.Anon_ControlsDescendantBindings
-    ] = null,
+    init: (js.Any, /* valueAccessor */ js.Function0[js.Any], /* allBindingsAccessor */ knockoutLib.KnockoutAllBindingsAccessor, js.Any, /* bindingContext */ knockoutLib.KnockoutBindingContext) => scala.Unit | knockoutLib.Anon_ControlsDescendantBindings = null,
     options: js.Any = null,
-    preprocess: js.Function3[
-      /* value */ java.lang.String, 
-      /* name */ java.lang.String, 
-      /* addBindingCallback */ js.UndefOr[
-        js.Function2[/* name */ java.lang.String, /* value */ java.lang.String, scala.Unit]
-      ], 
-      java.lang.String
-    ] = null,
-    update: js.Function5[
-      js.Any, 
-      /* valueAccessor */ js.Function0[js.Any], 
-      /* allBindingsAccessor */ knockoutLib.KnockoutAllBindingsAccessor, 
-      js.Any, 
-      /* bindingContext */ knockoutLib.KnockoutBindingContext, 
-      scala.Unit
-    ] = null
+    preprocess: (/* value */ java.lang.String, /* name */ java.lang.String, /* addBindingCallback */ js.UndefOr[
+      js.Function2[/* name */ java.lang.String, /* value */ java.lang.String, scala.Unit]
+    ]) => java.lang.String = null,
+    update: (js.Any, /* valueAccessor */ js.Function0[js.Any], /* allBindingsAccessor */ knockoutLib.KnockoutAllBindingsAccessor, js.Any, /* bindingContext */ knockoutLib.KnockoutBindingContext) => scala.Unit = null
   ): KoLiteActivityBindingHandler = {
     val __obj = js.Dynamic.literal(defaultOptions = defaultOptions)
     if (after != null) __obj.updateDynamic("after")(after)
-    if (init != null) __obj.updateDynamic("init")(init)
+    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction5(init))
     if (options != null) __obj.updateDynamic("options")(options)
-    if (preprocess != null) __obj.updateDynamic("preprocess")(preprocess)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (preprocess != null) __obj.updateDynamic("preprocess")(js.Any.fromFunction3(preprocess))
+    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction5(update))
     __obj.asInstanceOf[KoLiteActivityBindingHandler]
   }
 }

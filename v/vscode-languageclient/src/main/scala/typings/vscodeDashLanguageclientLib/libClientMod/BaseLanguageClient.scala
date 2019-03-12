@@ -38,7 +38,6 @@ abstract class BaseLanguageClient protected () extends js.Object {
   var _telemetryEmitter: js.Any = js.native
   var _trace: js.Any = js.native
   var _traceFormat: js.Any = js.native
-  var _traceOutputChannel: js.Any = js.native
   var _tracer: js.Any = js.native
   var cleanUp: js.Any = js.native
   val clientOptions: LanguageClientOptions = js.native
@@ -71,10 +70,8 @@ abstract class BaseLanguageClient protected () extends js.Object {
   var refreshTrace: js.Any = js.native
   var resolveConnection: js.Any = js.native
   var setDiagnostics: js.Any = js.native
-  var showNotificationMessage: js.Any = js.native
   var state: js.Any = js.native
   var trace: vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.Trace = js.native
-  val traceOutputChannel: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OutputChannel */ js.Any = js.native
   def createDefaultErrorHandler(): ErrorHandler = js.native
   /* protected */ def createMessageTransports(encoding: java.lang.String): vscodeDashJsonrpcLib.Thenable[MessageTransports] = js.native
   def error(message: java.lang.String): scala.Unit = js.native

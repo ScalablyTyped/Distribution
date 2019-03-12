@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GoogleLoginProps
-  extends reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement] {
+  extends reactLib.reactMod.ReactNs.ButtonHTMLAttributes[stdLib.HTMLButtonElement] {
   var buttonText: js.UndefOr[java.lang.String] = js.undefined
   var fetchBasicProfile: js.UndefOr[scala.Boolean] = js.undefined
   var prompt: js.UndefOr[java.lang.String] = js.undefined
@@ -18,15 +18,15 @@ trait GoogleLoginProps
 object GoogleLoginProps {
   @scala.inline
   def apply(
-    responseHandler: js.Function1[GoogleLoginInfo, scala.Unit],
+    responseHandler: GoogleLoginInfo => scala.Unit,
     socialId: java.lang.String,
-    ButtonHTMLAttributes: reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement] = null,
+    ButtonHTMLAttributes: reactLib.reactMod.ReactNs.ButtonHTMLAttributes[stdLib.HTMLButtonElement] = null,
     buttonText: java.lang.String = null,
     fetchBasicProfile: js.UndefOr[scala.Boolean] = js.undefined,
     prompt: java.lang.String = null,
     scope: java.lang.String = null
   ): GoogleLoginProps = {
-    val __obj = js.Dynamic.literal(responseHandler = responseHandler, socialId = socialId)
+    val __obj = js.Dynamic.literal(responseHandler = js.Any.fromFunction1(responseHandler), socialId = socialId)
     js.Dynamic.global.Object.assign(__obj, ButtonHTMLAttributes)
     if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
     if (!js.isUndefined(fetchBasicProfile)) __obj.updateDynamic("fetchBasicProfile")(fetchBasicProfile)

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var app: expressLib.expressMod.eNs.Application = js.native
-  var workers: js.Array[kueLib.kueMod.Worker] = js.native
-  def createQueue(): kueLib.kueMod.Queue = js.native
-  def createQueue(options: js.Object): kueLib.kueMod.Queue = js.native
+  var workers: js.Array[Worker] = js.native
+  def createQueue(): Queue = js.native
+  def createQueue(options: js.Object): Queue = js.native
 }
 

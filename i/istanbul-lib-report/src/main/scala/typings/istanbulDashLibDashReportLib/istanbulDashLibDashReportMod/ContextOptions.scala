@@ -13,12 +13,8 @@ trait ContextOptions extends js.Object {
 
 object ContextOptions {
   @scala.inline
-  def apply(
-    dir: java.lang.String,
-    sourceFinder: js.Function1[java.lang.String, java.lang.String],
-    watermarks: Watermarks
-  ): ContextOptions = {
-    val __obj = js.Dynamic.literal(dir = dir, sourceFinder = sourceFinder, watermarks = watermarks)
+  def apply(dir: java.lang.String, sourceFinder: java.lang.String => java.lang.String, watermarks: Watermarks): ContextOptions = {
+    val __obj = js.Dynamic.literal(dir = dir, sourceFinder = js.Any.fromFunction1(sourceFinder), watermarks = watermarks)
   
     __obj.asInstanceOf[ContextOptions]
   }

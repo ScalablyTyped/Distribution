@@ -112,39 +112,16 @@ trait PayPalMobileStatic extends js.Object {
 object PayPalMobileStatic {
   @scala.inline
   def apply(
-    applicationCorrelationIDForEnvironment: js.Function2[
-      java.lang.String, 
-      js.Function1[/* applicationCorrelationId */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ],
-    clientMetadataID: js.Function1[js.Function1[/* clientMetadataId */ java.lang.String, scala.Unit], scala.Unit],
-    init: js.Function2[PayPalClientIds, js.Function0[scala.Unit], scala.Unit],
-    prepareToRender: js.Function3[
-      java.lang.String, 
-      paypalDashCordovaDashPluginLib.PayPalConfiguration, 
-      js.Function0[scala.Unit], 
-      scala.Unit
-    ],
-    renderFuturePaymentUI: js.Function2[
-      js.Function1[/* result */ FuturePaymentResult, scala.Unit], 
-      js.Function1[/* cancelReason */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ],
-    renderProfileSharingUI: js.Function3[
-      js.Array[java.lang.String], 
-      js.Function1[/* result */ js.Any, scala.Unit], 
-      js.Function1[/* cancelReason */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ],
-    renderSinglePaymentUI: js.Function3[
-      paypalDashCordovaDashPluginLib.PayPalPayment, 
-      js.Function1[/* result */ SinglePaymentResult, scala.Unit], 
-      js.Function1[/* cancelReason */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ],
-    version: js.Function1[js.Function1[/* result */ java.lang.String, scala.Unit], scala.Unit]
+    applicationCorrelationIDForEnvironment: (java.lang.String, js.Function1[/* applicationCorrelationId */ java.lang.String, scala.Unit]) => scala.Unit,
+    clientMetadataID: js.Function1[/* clientMetadataId */ java.lang.String, scala.Unit] => scala.Unit,
+    init: (PayPalClientIds, js.Function0[scala.Unit]) => scala.Unit,
+    prepareToRender: (java.lang.String, paypalDashCordovaDashPluginLib.PayPalConfiguration, js.Function0[scala.Unit]) => scala.Unit,
+    renderFuturePaymentUI: (js.Function1[/* result */ FuturePaymentResult, scala.Unit], js.Function1[/* cancelReason */ java.lang.String, scala.Unit]) => scala.Unit,
+    renderProfileSharingUI: (js.Array[java.lang.String], js.Function1[/* result */ js.Any, scala.Unit], js.Function1[/* cancelReason */ java.lang.String, scala.Unit]) => scala.Unit,
+    renderSinglePaymentUI: (paypalDashCordovaDashPluginLib.PayPalPayment, js.Function1[/* result */ SinglePaymentResult, scala.Unit], js.Function1[/* cancelReason */ java.lang.String, scala.Unit]) => scala.Unit,
+    version: js.Function1[/* result */ java.lang.String, scala.Unit] => scala.Unit
   ): PayPalMobileStatic = {
-    val __obj = js.Dynamic.literal(applicationCorrelationIDForEnvironment = applicationCorrelationIDForEnvironment, clientMetadataID = clientMetadataID, init = init, prepareToRender = prepareToRender, renderFuturePaymentUI = renderFuturePaymentUI, renderProfileSharingUI = renderProfileSharingUI, renderSinglePaymentUI = renderSinglePaymentUI, version = version)
+    val __obj = js.Dynamic.literal(applicationCorrelationIDForEnvironment = js.Any.fromFunction2(applicationCorrelationIDForEnvironment), clientMetadataID = js.Any.fromFunction1(clientMetadataID), init = js.Any.fromFunction2(init), prepareToRender = js.Any.fromFunction3(prepareToRender), renderFuturePaymentUI = js.Any.fromFunction2(renderFuturePaymentUI), renderProfileSharingUI = js.Any.fromFunction3(renderProfileSharingUI), renderSinglePaymentUI = js.Any.fromFunction3(renderSinglePaymentUI), version = js.Any.fromFunction1(version))
   
     __obj.asInstanceOf[PayPalMobileStatic]
   }

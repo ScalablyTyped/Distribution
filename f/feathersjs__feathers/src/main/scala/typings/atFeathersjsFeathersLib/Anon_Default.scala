@@ -16,10 +16,10 @@ object Anon_Default {
   @scala.inline
   def apply(
     SKIP: atFeathersjsFeathersLib.atFeathersjsFeathersMod.SkipSymbol,
-    default: js.Function0[atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[js.Any]],
+    default: () => atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[js.Any],
     version: java.lang.String
   ): Anon_Default = {
-    val __obj = js.Dynamic.literal(SKIP = SKIP.asInstanceOf[js.Any], default = default, version = version)
+    val __obj = js.Dynamic.literal(SKIP = SKIP.asInstanceOf[js.Any], default = js.Any.fromFunction0(default), version = version)
   
     __obj.asInstanceOf[Anon_Default]
   }

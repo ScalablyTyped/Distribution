@@ -12,11 +12,11 @@ object FSxNs extends js.Object {
     /**
       * The ID of the backup.
       */
-    var BackupId: BackupId
+    var BackupId: awsDashSdkLib.clientsFsxMod.FSxNs.BackupId
     /**
       * The time when a particular backup was created.
       */
-    var CreationTime: CreationTime
+    var CreationTime: awsDashSdkLib.clientsFsxMod.FSxNs.CreationTime
     /**
       * Details explaining any failures that occur when creating a backup.
       */
@@ -24,7 +24,7 @@ object FSxNs extends js.Object {
     /**
       * Metadata of the file system associated with the backup. This metadata is persisted even if the file system is deleted.
       */
-    var FileSystem: FileSystem
+    var FileSystem: awsDashSdkLib.clientsFsxMod.FSxNs.FileSystem
     /**
       * The ID of the AWS Key Management Service (AWS KMS) key used to encrypt this backup's data.
       */
@@ -70,7 +70,7 @@ object FSxNs extends js.Object {
     /**
       * The ID of the file system to back up.
       */
-    var FileSystemId: FileSystemId
+    var FileSystemId: awsDashSdkLib.clientsFsxMod.FSxNs.FileSystemId
     /**
       * The tags to apply to the backup at backup creation. The key value of the Name tag appears in the console as the backup name.
       */
@@ -85,7 +85,7 @@ object FSxNs extends js.Object {
   }
   
   trait CreateFileSystemFromBackupRequest extends js.Object {
-    var BackupId: BackupId
+    var BackupId: awsDashSdkLib.clientsFsxMod.FSxNs.BackupId
     /**
       * (Optional) A string of up to 64 ASCII characters that Amazon FSx uses to ensure idempotent creation. This string is automatically filled on your behalf when you use the AWS Command Line Interface (AWS CLI) or an AWS SDK.
       */
@@ -97,7 +97,7 @@ object FSxNs extends js.Object {
     /**
       * A list of IDs for the subnets that the file system will be accessible from. Currently, you can specify only one subnet. The file server is also launched in that subnet's Availability Zone.
       */
-    var SubnetIds: SubnetIds
+    var SubnetIds: awsDashSdkLib.clientsFsxMod.FSxNs.SubnetIds
     /**
       * The tags to be applied to the file system at file system creation. The key value of the Name tag appears in the console as the file system name.
       */
@@ -142,7 +142,7 @@ object FSxNs extends js.Object {
     /**
       * The type of file system.
       */
-    var FileSystemType: FileSystemType
+    var FileSystemType: awsDashSdkLib.clientsFsxMod.FSxNs.FileSystemType
     var KmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
     var LustreConfiguration: js.UndefOr[CreateFileSystemLustreConfiguration] = js.undefined
     /**
@@ -152,11 +152,11 @@ object FSxNs extends js.Object {
     /**
       * The storage capacity of the file system. For Windows file systems, the storage capacity has a minimum of 300 GiB, and a maximum of 65,536 GiB. For Lustre file systems, the storage capacity has a minimum of 3,600 GiB. Storage capacity is provisioned in increments of 3,600 GiB.
       */
-    var StorageCapacity: StorageCapacity
+    var StorageCapacity: awsDashSdkLib.clientsFsxMod.FSxNs.StorageCapacity
     /**
       * A list of IDs for the subnets that the file system will be accessible from. File systems support only one subnet. The file server is also launched in that subnet's Availability Zone.
       */
-    var SubnetIds: SubnetIds
+    var SubnetIds: awsDashSdkLib.clientsFsxMod.FSxNs.SubnetIds
     /**
       * The tags to be applied to the file system at file system creation. The key value of the Name tag appears in the console as the file system name.
       */
@@ -220,7 +220,7 @@ object FSxNs extends js.Object {
     /**
       * The ID of the backup you want to delete.
       */
-    var BackupId: BackupId
+    var BackupId: awsDashSdkLib.clientsFsxMod.FSxNs.BackupId
     /**
       * (Optional) A string of up to 64 ASCII characters that Amazon FSx uses to ensure idempotent deletion. This is automatically filled on your behalf when using the AWS CLI or SDK.
       */
@@ -246,7 +246,7 @@ object FSxNs extends js.Object {
     /**
       * The ID of the file system you want to delete.
       */
-    var FileSystemId: FileSystemId
+    var FileSystemId: awsDashSdkLib.clientsFsxMod.FSxNs.FileSystemId
     var WindowsConfiguration: js.UndefOr[DeleteFileSystemWindowsConfiguration] = js.undefined
   }
   
@@ -431,7 +431,7 @@ object FSxNs extends js.Object {
     /**
       * The ARN of the Amazon FSx resource that will have its tags listed.
       */
-    var ResourceARN: ResourceARN
+    var ResourceARN: awsDashSdkLib.clientsFsxMod.FSxNs.ResourceARN
   }
   
   trait ListTagsForResourceResponse extends js.Object {
@@ -468,11 +468,11 @@ object FSxNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the Amazon FSx resource that you want to tag.
       */
-    var ResourceARN: ResourceARN
+    var ResourceARN: awsDashSdkLib.clientsFsxMod.FSxNs.ResourceARN
     /**
       * A list of tags for the resource. If a tag with a given key already exists, the value is replaced by the one specified in this parameter.
       */
-    var Tags: Tags
+    var Tags: awsDashSdkLib.clientsFsxMod.FSxNs.Tags
   }
   
   trait TagResourceResponse extends js.Object
@@ -741,11 +741,11 @@ object FSxNs extends js.Object {
     /**
       * The ARN of the Amazon FSx resource to untag.
       */
-    var ResourceARN: ResourceARN
+    var ResourceARN: awsDashSdkLib.clientsFsxMod.FSxNs.ResourceARN
     /**
       * A list of keys of tags on the resource to untag. In case the tag key doesn't exist, the call will still succeed to be idempotent.
       */
-    var TagKeys: TagKeys
+    var TagKeys: awsDashSdkLib.clientsFsxMod.FSxNs.TagKeys
   }
   
   trait UntagResourceResponse extends js.Object
@@ -762,7 +762,7 @@ object FSxNs extends js.Object {
       * (Optional) A string of up to 64 ASCII characters that Amazon FSx uses to ensure idempotent updates. This string is automatically filled on your behalf when you use the AWS Command Line Interface (AWS CLI) or an AWS SDK.
       */
     var ClientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
-    var FileSystemId: FileSystemId
+    var FileSystemId: awsDashSdkLib.clientsFsxMod.FSxNs.FileSystemId
     var LustreConfiguration: js.UndefOr[UpdateFileSystemLustreConfiguration] = js.undefined
     /**
       * The configuration for this Microsoft Windows file system. The only supported options are for backup and maintenance.

@@ -25,7 +25,7 @@ trait Transaction extends js.Object {
     *
     * @param callback function(err), where err is error object in case of error.
     */
-  def commit(callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit
+  def commit(callback: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]): scala.Unit
   /**
     * Synchronously commits this transaction.
     *
@@ -51,7 +51,7 @@ trait Transaction extends js.Object {
     */
   def query(
     sql: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* res */ FBResult, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* res */ FBResult, scala.Unit]
   ): scala.Unit
   /**
     * Executes SQL query in context of this transaction. Returns FBResult object in case of success. Raises error otherwise.
@@ -67,7 +67,7 @@ trait Transaction extends js.Object {
     *
     * @param callback function(err), where err is error object in case of error.
     */
-  def rollback(callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit
+  def rollback(callback: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]): scala.Unit
   /**
     * Synchronously rollbacks transaction.
     *
@@ -83,7 +83,7 @@ trait Transaction extends js.Object {
     *
     * @param callback function(err), where err is error object in case of error.
     */
-  def start(callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit
+  def start(callback: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]): scala.Unit
   /**
     * Synchronously starts transaction.
     *
@@ -98,22 +98,18 @@ trait Transaction extends js.Object {
 object Transaction {
   @scala.inline
   def apply(
-    commit: js.Function1[js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit], scala.Unit],
-    commitSync: js.Function0[scala.Unit],
+    commit: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit] => scala.Unit,
+    commitSync: () => scala.Unit,
     inTransaction: scala.Boolean,
-    prepareSync: js.Function1[java.lang.String, FBStatement],
-    query: js.Function2[
-      java.lang.String, 
-      js.Function2[/* err */ nodeLib.Error | scala.Null, /* res */ FBResult, scala.Unit], 
-      scala.Unit
-    ],
-    querySync: js.Function1[java.lang.String, scala.Unit],
-    rollback: js.Function1[js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit], scala.Unit],
-    rollbackSync: js.Function0[scala.Unit],
-    start: js.Function1[js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit], scala.Unit],
-    startSync: js.Function0[scala.Unit]
+    prepareSync: java.lang.String => FBStatement,
+    query: (java.lang.String, js.Function2[/* err */ stdLib.Error | scala.Null, /* res */ FBResult, scala.Unit]) => scala.Unit,
+    querySync: java.lang.String => scala.Unit,
+    rollback: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit] => scala.Unit,
+    rollbackSync: () => scala.Unit,
+    start: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit] => scala.Unit,
+    startSync: () => scala.Unit
   ): Transaction = {
-    val __obj = js.Dynamic.literal(commit = commit, commitSync = commitSync, inTransaction = inTransaction, prepareSync = prepareSync, query = query, querySync = querySync, rollback = rollback, rollbackSync = rollbackSync, start = start, startSync = startSync)
+    val __obj = js.Dynamic.literal(commit = js.Any.fromFunction1(commit), commitSync = js.Any.fromFunction0(commitSync), inTransaction = inTransaction, prepareSync = js.Any.fromFunction1(prepareSync), query = js.Any.fromFunction2(query), querySync = js.Any.fromFunction1(querySync), rollback = js.Any.fromFunction1(rollback), rollbackSync = js.Any.fromFunction0(rollbackSync), start = js.Any.fromFunction1(start), startSync = js.Any.fromFunction0(startSync))
   
     __obj.asInstanceOf[Transaction]
   }

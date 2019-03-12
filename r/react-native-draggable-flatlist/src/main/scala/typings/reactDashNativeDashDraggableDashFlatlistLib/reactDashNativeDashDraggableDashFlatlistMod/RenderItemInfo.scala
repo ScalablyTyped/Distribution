@@ -19,10 +19,10 @@ object RenderItemInfo {
     index: scala.Double,
     isActive: scala.Boolean,
     item: ItemR,
-    move: js.Function0[scala.Unit],
-    moveEnd: js.Function0[scala.Unit]
+    move: () => scala.Unit,
+    moveEnd: () => scala.Unit
   ): RenderItemInfo[ItemR] = {
-    val __obj = js.Dynamic.literal(index = index, isActive = isActive, item = item.asInstanceOf[js.Any], move = move, moveEnd = moveEnd)
+    val __obj = js.Dynamic.literal(index = index, isActive = isActive, item = item.asInstanceOf[js.Any], move = js.Any.fromFunction0(move), moveEnd = js.Any.fromFunction0(moveEnd))
   
     __obj.asInstanceOf[RenderItemInfo[ItemR]]
   }

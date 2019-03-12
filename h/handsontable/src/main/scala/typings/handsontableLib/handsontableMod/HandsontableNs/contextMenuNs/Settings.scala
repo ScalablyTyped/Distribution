@@ -21,15 +21,10 @@ object Settings {
   @scala.inline
   def apply(
     items: js.Array[PredefinedMenuItemKey] | MenuConfig,
-    callback: js.Function3[
-      /* key */ java.lang.String, 
-      /* selection */ js.Array[Selection], 
-      /* clickEvent */ stdLib.MouseEvent, 
-      scala.Unit
-    ] = null
+    callback: (/* key */ java.lang.String, /* selection */ js.Array[Selection], /* clickEvent */ stdLib.MouseEvent) => scala.Unit = null
   ): Settings = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction3(callback))
     __obj.asInstanceOf[Settings]
   }
 }

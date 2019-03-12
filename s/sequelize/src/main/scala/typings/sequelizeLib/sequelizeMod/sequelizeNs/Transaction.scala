@@ -38,10 +38,10 @@ object Transaction {
   @scala.inline
   def apply(
     LOCK: TransactionLock,
-    commit: js.Function0[bluebirdLib.bluebirdMod.namespaced[scala.Unit]],
-    rollback: js.Function0[bluebirdLib.bluebirdMod.namespaced[scala.Unit]]
+    commit: () => bluebirdLib.bluebirdMod.namespaced[scala.Unit],
+    rollback: () => bluebirdLib.bluebirdMod.namespaced[scala.Unit]
   ): Transaction = {
-    val __obj = js.Dynamic.literal(LOCK = LOCK, commit = commit, rollback = rollback)
+    val __obj = js.Dynamic.literal(LOCK = LOCK, commit = js.Any.fromFunction0(commit), rollback = js.Any.fromFunction0(rollback))
   
     __obj.asInstanceOf[Transaction]
   }

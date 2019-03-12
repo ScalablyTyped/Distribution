@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait Transports extends js.Object {
   var Console: ConsoleTransportInstance
-  var ConsoleTransportOptions: ConsoleTransportOptions
+  var ConsoleTransportOptions: winstonLib.libWinstonTransportsMod.winstonNs.ConsoleTransportOptions
   var File: FileTransportInstance
-  var FileTransportOptions: FileTransportOptions
+  var FileTransportOptions: winstonLib.libWinstonTransportsMod.winstonNs.FileTransportOptions
   var Http: HttpTransportInstance
-  var HttpTransportOptions: HttpTransportOptions
+  var HttpTransportOptions: winstonLib.libWinstonTransportsMod.winstonNs.HttpTransportOptions
   var Stream: StreamTransportInstance
-  var StreamTransportOptions: StreamTransportOptions
+  var StreamTransportOptions: winstonLib.libWinstonTransportsMod.winstonNs.StreamTransportOptions
 }
 
 object Transports {

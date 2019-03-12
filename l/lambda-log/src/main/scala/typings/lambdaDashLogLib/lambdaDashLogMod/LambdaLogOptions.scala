@@ -30,9 +30,9 @@ object LambdaLogOptions {
   def apply(
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     dev: js.UndefOr[scala.Boolean] = js.undefined,
-    dynamicMeta: js.Function1[/* message */ LogMessage, _] = null,
+    dynamicMeta: /* message */ LogMessage => _ = null,
     meta: js.Any = null,
-    replacer: js.Function2[/* key */ java.lang.String, /* value */ js.Any, _] = null,
+    replacer: (/* key */ java.lang.String, /* value */ js.Any) => _ = null,
     silent: js.UndefOr[scala.Boolean] = js.undefined,
     stderrStream: nodeLib.fsMod.WriteStream = null,
     stdoutStream: nodeLib.fsMod.WriteStream = null,
@@ -41,9 +41,9 @@ object LambdaLogOptions {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (!js.isUndefined(dev)) __obj.updateDynamic("dev")(dev)
-    if (dynamicMeta != null) __obj.updateDynamic("dynamicMeta")(dynamicMeta)
+    if (dynamicMeta != null) __obj.updateDynamic("dynamicMeta")(js.Any.fromFunction1(dynamicMeta))
     if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (replacer != null) __obj.updateDynamic("replacer")(replacer)
+    if (replacer != null) __obj.updateDynamic("replacer")(js.Any.fromFunction2(replacer))
     if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
     if (stderrStream != null) __obj.updateDynamic("stderrStream")(stderrStream)
     if (stdoutStream != null) __obj.updateDynamic("stdoutStream")(stdoutStream)

@@ -18,7 +18,7 @@ trait ImageMapTypeOptions extends js.Object {
 object ImageMapTypeOptions {
   @scala.inline
   def apply(
-    getTileUrl: js.Function2[Point, scala.Double, java.lang.String],
+    getTileUrl: (Point, scala.Double) => java.lang.String,
     alt: java.lang.String = null,
     maxZoom: scala.Int | scala.Double = null,
     minZoom: scala.Int | scala.Double = null,
@@ -26,7 +26,7 @@ object ImageMapTypeOptions {
     opacity: scala.Int | scala.Double = null,
     tileSize: Size = null
   ): ImageMapTypeOptions = {
-    val __obj = js.Dynamic.literal(getTileUrl = getTileUrl)
+    val __obj = js.Dynamic.literal(getTileUrl = js.Any.fromFunction2(getTileUrl))
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])

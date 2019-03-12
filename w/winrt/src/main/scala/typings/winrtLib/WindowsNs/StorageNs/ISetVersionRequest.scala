@@ -13,12 +13,8 @@ trait ISetVersionRequest extends js.Object {
 
 object ISetVersionRequest {
   @scala.inline
-  def apply(
-    currentVersion: scala.Double,
-    desiredVersion: scala.Double,
-    getDeferral: js.Function0[SetVersionDeferral]
-  ): ISetVersionRequest = {
-    val __obj = js.Dynamic.literal(currentVersion = currentVersion, desiredVersion = desiredVersion, getDeferral = getDeferral)
+  def apply(currentVersion: scala.Double, desiredVersion: scala.Double, getDeferral: () => SetVersionDeferral): ISetVersionRequest = {
+    val __obj = js.Dynamic.literal(currentVersion = currentVersion, desiredVersion = desiredVersion, getDeferral = js.Any.fromFunction0(getDeferral))
   
     __obj.asInstanceOf[ISetVersionRequest]
   }

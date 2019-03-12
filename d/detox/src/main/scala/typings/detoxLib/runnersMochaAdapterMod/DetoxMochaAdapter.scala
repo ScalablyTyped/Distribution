@@ -14,11 +14,11 @@ trait DetoxMochaAdapter extends js.Object {
 object DetoxMochaAdapter {
   @scala.inline
   def apply(
-    afterEach: js.Function1[js.Any, js.Promise[scala.Unit]],
-    beforeEach: js.Function1[js.Any, js.Promise[scala.Unit]],
+    afterEach: js.Any => js.Promise[scala.Unit],
+    beforeEach: js.Any => js.Promise[scala.Unit],
     detox: detoxLib.detoxMod.Global.DetoxNs.Detox
   ): DetoxMochaAdapter = {
-    val __obj = js.Dynamic.literal(afterEach = afterEach, beforeEach = beforeEach, detox = detox)
+    val __obj = js.Dynamic.literal(afterEach = js.Any.fromFunction1(afterEach), beforeEach = js.Any.fromFunction1(beforeEach), detox = detox)
   
     __obj.asInstanceOf[DetoxMochaAdapter]
   }

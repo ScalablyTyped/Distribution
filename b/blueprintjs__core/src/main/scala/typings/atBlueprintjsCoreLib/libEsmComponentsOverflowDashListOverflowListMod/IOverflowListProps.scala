@@ -71,22 +71,22 @@ object IOverflowListProps {
   @scala.inline
   def apply[T](
     items: js.Array[T],
-    overflowRenderer: js.Function1[js.Array[T], reactLib.reactMod.ReactNs.ReactNode],
-    visibleItemRenderer: js.Function2[T, scala.Double, reactLib.reactMod.ReactNs.ReactChild],
+    overflowRenderer: js.Array[T] => reactLib.reactMod.ReactNs.ReactNode,
+    visibleItemRenderer: (T, scala.Double) => reactLib.reactMod.ReactNs.ReactChild,
     className: java.lang.String = null,
     collapseFrom: atBlueprintjsCoreLib.libEsmCommonBoundaryMod.Boundary = null,
     minVisibleItems: scala.Int | scala.Double = null,
     observeParents: js.UndefOr[scala.Boolean] = js.undefined,
-    onOverflow: js.Function1[/* overflowItems */ js.Array[T], scala.Unit] = null,
+    onOverflow: /* overflowItems */ js.Array[T] => scala.Unit = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null
   ): IOverflowListProps[T] = {
-    val __obj = js.Dynamic.literal(items = items, overflowRenderer = overflowRenderer, visibleItemRenderer = visibleItemRenderer)
+    val __obj = js.Dynamic.literal(items = items, overflowRenderer = js.Any.fromFunction1(overflowRenderer), visibleItemRenderer = js.Any.fromFunction2(visibleItemRenderer))
     if (className != null) __obj.updateDynamic("className")(className)
     if (collapseFrom != null) __obj.updateDynamic("collapseFrom")(collapseFrom)
     if (minVisibleItems != null) __obj.updateDynamic("minVisibleItems")(minVisibleItems.asInstanceOf[js.Any])
     if (!js.isUndefined(observeParents)) __obj.updateDynamic("observeParents")(observeParents)
-    if (onOverflow != null) __obj.updateDynamic("onOverflow")(onOverflow)
+    if (onOverflow != null) __obj.updateDynamic("onOverflow")(js.Any.fromFunction1(onOverflow))
     if (style != null) __obj.updateDynamic("style")(style)
     if (tagName != null) __obj.updateDynamic("tagName")(tagName)
     __obj.asInstanceOf[IOverflowListProps[T]]

@@ -15,16 +15,10 @@ trait CustomchannelsResource extends js.Object {
 object CustomchannelsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAdClientId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAdClientIdAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CustomChannels]
-    ]
+    get: gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAdClientId => gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel],
+    list: gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAdClientIdAlt => gapiDotClientLib.gapiNs.clientNs.Request[CustomChannels]
   ): CustomchannelsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[CustomchannelsResource]
   }

@@ -31,13 +31,13 @@ trait XStringEscape
 object XStringEscape {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    escapeString: js.Function1[java.lang.String, java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    unescapeString: js.Function1[java.lang.String, java.lang.String]
+    acquire: () => scala.Unit,
+    escapeString: java.lang.String => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    unescapeString: java.lang.String => java.lang.String
   ): XStringEscape = {
-    val __obj = js.Dynamic.literal(acquire = acquire, escapeString = escapeString, queryInterface = queryInterface, release = release, unescapeString = unescapeString)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), escapeString = js.Any.fromFunction1(escapeString), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), unescapeString = js.Any.fromFunction1(unescapeString))
   
     __obj.asInstanceOf[XStringEscape]
   }

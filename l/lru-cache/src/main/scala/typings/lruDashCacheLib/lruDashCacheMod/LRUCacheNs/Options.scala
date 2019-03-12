@@ -64,8 +64,8 @@ trait Options[K, V] extends js.Object {
 object Options {
   @scala.inline
   def apply[K, V](
-    dispose: js.Function2[/* key */ K, /* value */ V, scala.Unit] = null,
-    length: js.Function2[/* value */ V, /* key */ js.UndefOr[K], scala.Double] = null,
+    dispose: (/* key */ K, /* value */ V) => scala.Unit = null,
+    length: (/* value */ V, /* key */ js.UndefOr[K]) => scala.Double = null,
     max: scala.Int | scala.Double = null,
     maxAge: scala.Int | scala.Double = null,
     noDisposeOnSet: js.UndefOr[scala.Boolean] = js.undefined,
@@ -73,8 +73,8 @@ object Options {
     updateAgeOnGet: js.UndefOr[scala.Boolean] = js.undefined
   ): Options[K, V] = {
     val __obj = js.Dynamic.literal()
-    if (dispose != null) __obj.updateDynamic("dispose")(dispose)
-    if (length != null) __obj.updateDynamic("length")(length)
+    if (dispose != null) __obj.updateDynamic("dispose")(js.Any.fromFunction2(dispose))
+    if (length != null) __obj.updateDynamic("length")(js.Any.fromFunction2(length))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (!js.isUndefined(noDisposeOnSet)) __obj.updateDynamic("noDisposeOnSet")(noDisposeOnSet)

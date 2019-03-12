@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 trait XChartTypeContainer
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** retrieve all chart types */
-  var ChartTypes: activexDashInteropLib.SafeArray[XChartType]
+  var ChartTypes: stdLib.SafeArray[XChartType]
   /**
     * add a chart type to the chart type container
     * @throws IllegalArgumentException If the given chart type is already contained in the chart type container.
     */
   def addChartType(aChartType: XChartType): scala.Unit
   /** retrieve all chart types */
-  def getChartTypes(): activexDashInteropLib.SafeArray[XChartType]
+  def getChartTypes(): stdLib.SafeArray[XChartType]
   /** removes one data series from the chart type container. */
   def removeChartType(aChartType: XChartType): scala.Unit
   /** set all chart types */
@@ -25,16 +25,16 @@ trait XChartTypeContainer
 object XChartTypeContainer {
   @scala.inline
   def apply(
-    ChartTypes: activexDashInteropLib.SafeArray[XChartType],
-    acquire: js.Function0[scala.Unit],
-    addChartType: js.Function1[XChartType, scala.Unit],
-    getChartTypes: js.Function0[activexDashInteropLib.SafeArray[XChartType]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeChartType: js.Function1[XChartType, scala.Unit],
-    setChartTypes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XChartType], scala.Unit]
+    ChartTypes: stdLib.SafeArray[XChartType],
+    acquire: () => scala.Unit,
+    addChartType: XChartType => scala.Unit,
+    getChartTypes: () => stdLib.SafeArray[XChartType],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeChartType: XChartType => scala.Unit,
+    setChartTypes: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XChartType] => scala.Unit
   ): XChartTypeContainer = {
-    val __obj = js.Dynamic.literal(ChartTypes = ChartTypes, acquire = acquire, addChartType = addChartType, getChartTypes = getChartTypes, queryInterface = queryInterface, release = release, removeChartType = removeChartType, setChartTypes = setChartTypes)
+    val __obj = js.Dynamic.literal(ChartTypes = ChartTypes, acquire = js.Any.fromFunction0(acquire), addChartType = js.Any.fromFunction1(addChartType), getChartTypes = js.Any.fromFunction0(getChartTypes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeChartType = js.Any.fromFunction1(removeChartType), setChartTypes = js.Any.fromFunction1(setChartTypes))
   
     __obj.asInstanceOf[XChartTypeContainer]
   }

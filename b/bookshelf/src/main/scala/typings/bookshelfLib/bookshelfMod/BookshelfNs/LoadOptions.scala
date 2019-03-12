@@ -14,11 +14,13 @@ object LoadOptions {
   def apply(
     withRelated: js.Array[java.lang.String | WithRelatedQuery],
     debug: js.UndefOr[scala.Boolean] = js.undefined,
-    transacting: knexLib.knexMod.KnexNs.Transaction = null
+    transacting: knexLib.knexMod.KnexNs.Transaction = null,
+    withSchema: java.lang.String = null
   ): LoadOptions = {
     val __obj = js.Dynamic.literal(withRelated = withRelated)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (transacting != null) __obj.updateDynamic("transacting")(transacting)
+    if (withSchema != null) __obj.updateDynamic("withSchema")(withSchema)
     __obj.asInstanceOf[LoadOptions]
   }
 }

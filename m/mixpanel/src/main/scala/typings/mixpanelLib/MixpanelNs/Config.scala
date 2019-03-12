@@ -160,7 +160,7 @@ object Config {
     disable_persistence: js.UndefOr[scala.Boolean] = js.undefined,
     img: js.UndefOr[scala.Boolean] = js.undefined,
     ip: js.UndefOr[scala.Boolean] = js.undefined,
-    loaded: js.Function1[/* lib */ mixpanelLib.Mixpanel, scala.Unit] = null,
+    loaded: /* lib */ mixpanelLib.Mixpanel => scala.Unit = null,
     persistence: mixpanelLib.mixpanelLibStrings.localStorage | mixpanelLib.mixpanelLibStrings.cookie = null,
     persistence_name: java.lang.String = null,
     property_blacklist: js.Array[java.lang.String] = null,
@@ -186,7 +186,7 @@ object Config {
     if (!js.isUndefined(disable_persistence)) __obj.updateDynamic("disable_persistence")(disable_persistence)
     if (!js.isUndefined(img)) __obj.updateDynamic("img")(img)
     if (!js.isUndefined(ip)) __obj.updateDynamic("ip")(ip)
-    if (loaded != null) __obj.updateDynamic("loaded")(loaded)
+    if (loaded != null) __obj.updateDynamic("loaded")(js.Any.fromFunction1(loaded))
     if (persistence != null) __obj.updateDynamic("persistence")(persistence.asInstanceOf[js.Any])
     if (persistence_name != null) __obj.updateDynamic("persistence_name")(persistence_name)
     if (property_blacklist != null) __obj.updateDynamic("property_blacklist")(property_blacklist)

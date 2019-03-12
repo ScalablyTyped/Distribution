@@ -8,107 +8,73 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Blaze")
 @js.native
 object ^ extends js.Object {
-  var Template: meteorDashTypingsLib.BlazeNs.TemplateStatic = js.native
-  var TemplateInstance: meteorDashTypingsLib.BlazeNs.TemplateInstanceStatic = js.native
-  var View: meteorDashTypingsLib.BlazeNs.ViewStatic = js.native
-  var currentView: meteorDashTypingsLib.BlazeNs.View = js.native
-  def Each(argFunc: js.Function, contentFunc: js.Function): meteorDashTypingsLib.BlazeNs.View = js.native
-  def Each(argFunc: js.Function, contentFunc: js.Function, elseFunc: js.Function): meteorDashTypingsLib.BlazeNs.View = js.native
-  def If(conditionFunc: js.Function, contentFunc: js.Function): meteorDashTypingsLib.BlazeNs.View = js.native
-  def If(conditionFunc: js.Function, contentFunc: js.Function, elseFunc: js.Function): meteorDashTypingsLib.BlazeNs.View = js.native
-  def Let(bindings: js.Function, contentFunc: js.Function): meteorDashTypingsLib.BlazeNs.View = js.native
-  def Unless(conditionFunc: js.Function, contentFunc: js.Function): meteorDashTypingsLib.BlazeNs.View = js.native
-  def Unless(conditionFunc: js.Function, contentFunc: js.Function, elseFunc: js.Function): meteorDashTypingsLib.BlazeNs.View = js.native
-  def With(data: js.Function, contentFunc: js.Function): meteorDashTypingsLib.BlazeNs.View = js.native
-  def With(data: js.Object, contentFunc: js.Function): meteorDashTypingsLib.BlazeNs.View = js.native
+  var Template: TemplateStatic = js.native
+  var TemplateInstance: TemplateInstanceStatic = js.native
+  var View: ViewStatic = js.native
+  var currentView: View = js.native
+  def Each(argFunc: js.Function, contentFunc: js.Function): View = js.native
+  def Each(argFunc: js.Function, contentFunc: js.Function, elseFunc: js.Function): View = js.native
+  def If(conditionFunc: js.Function, contentFunc: js.Function): View = js.native
+  def If(conditionFunc: js.Function, contentFunc: js.Function, elseFunc: js.Function): View = js.native
+  def Let(bindings: js.Function, contentFunc: js.Function): View = js.native
+  def Unless(conditionFunc: js.Function, contentFunc: js.Function): View = js.native
+  def Unless(conditionFunc: js.Function, contentFunc: js.Function, elseFunc: js.Function): View = js.native
+  def With(data: js.Function, contentFunc: js.Function): View = js.native
+  def With(data: js.Object, contentFunc: js.Function): View = js.native
   def getData(): js.Object = js.native
-  def getData(elementOrView: meteorDashTypingsLib.BlazeNs.View): js.Object = js.native
+  def getData(elementOrView: View): js.Object = js.native
   def getData(elementOrView: stdLib.HTMLElement): js.Object = js.native
-  def getView(): meteorDashTypingsLib.BlazeNs.View = js.native
-  def getView(element: stdLib.HTMLElement): meteorDashTypingsLib.BlazeNs.View = js.native
+  def getView(): View = js.native
+  def getView(element: stdLib.HTMLElement): View = js.native
   def isTemplate(value: js.Any): scala.Boolean = js.native
-  def remove(renderedView: meteorDashTypingsLib.BlazeNs.View): scala.Unit = js.native
-  def render(templateOrView: meteorDashTypingsLib.BlazeNs.Template, parentNode: stdLib.Node): meteorDashTypingsLib.BlazeNs.View = js.native
-  def render(
-    templateOrView: meteorDashTypingsLib.BlazeNs.Template,
-    parentNode: stdLib.Node,
-    nextNode: stdLib.Node
-  ): meteorDashTypingsLib.BlazeNs.View = js.native
-  def render(
-    templateOrView: meteorDashTypingsLib.BlazeNs.Template,
-    parentNode: stdLib.Node,
-    nextNode: stdLib.Node,
-    parentView: meteorDashTypingsLib.BlazeNs.View
-  ): meteorDashTypingsLib.BlazeNs.View = js.native
-  def render(templateOrView: meteorDashTypingsLib.BlazeNs.View, parentNode: stdLib.Node): meteorDashTypingsLib.BlazeNs.View = js.native
-  def render(templateOrView: meteorDashTypingsLib.BlazeNs.View, parentNode: stdLib.Node, nextNode: stdLib.Node): meteorDashTypingsLib.BlazeNs.View = js.native
-  def render(
-    templateOrView: meteorDashTypingsLib.BlazeNs.View,
-    parentNode: stdLib.Node,
-    nextNode: stdLib.Node,
-    parentView: meteorDashTypingsLib.BlazeNs.View
-  ): meteorDashTypingsLib.BlazeNs.View = js.native
-  def renderWithData(templateOrView: meteorDashTypingsLib.BlazeNs.Template, data: js.Function, parentNode: stdLib.Node): meteorDashTypingsLib.BlazeNs.View = js.native
+  def remove(renderedView: View): scala.Unit = js.native
+  def render(templateOrView: Template, parentNode: stdLib.Node): View = js.native
+  def render(templateOrView: Template, parentNode: stdLib.Node, nextNode: stdLib.Node): View = js.native
+  def render(templateOrView: Template, parentNode: stdLib.Node, nextNode: stdLib.Node, parentView: View): View = js.native
+  def render(templateOrView: View, parentNode: stdLib.Node): View = js.native
+  def render(templateOrView: View, parentNode: stdLib.Node, nextNode: stdLib.Node): View = js.native
+  def render(templateOrView: View, parentNode: stdLib.Node, nextNode: stdLib.Node, parentView: View): View = js.native
+  def renderWithData(templateOrView: Template, data: js.Function, parentNode: stdLib.Node): View = js.native
+  def renderWithData(templateOrView: Template, data: js.Function, parentNode: stdLib.Node, nextNode: stdLib.Node): View = js.native
   def renderWithData(
-    templateOrView: meteorDashTypingsLib.BlazeNs.Template,
-    data: js.Function,
-    parentNode: stdLib.Node,
-    nextNode: stdLib.Node
-  ): meteorDashTypingsLib.BlazeNs.View = js.native
-  def renderWithData(
-    templateOrView: meteorDashTypingsLib.BlazeNs.Template,
+    templateOrView: Template,
     data: js.Function,
     parentNode: stdLib.Node,
     nextNode: stdLib.Node,
-    parentView: meteorDashTypingsLib.BlazeNs.View
-  ): meteorDashTypingsLib.BlazeNs.View = js.native
-  def renderWithData(templateOrView: meteorDashTypingsLib.BlazeNs.Template, data: js.Object, parentNode: stdLib.Node): meteorDashTypingsLib.BlazeNs.View = js.native
+    parentView: View
+  ): View = js.native
+  def renderWithData(templateOrView: Template, data: js.Object, parentNode: stdLib.Node): View = js.native
+  def renderWithData(templateOrView: Template, data: js.Object, parentNode: stdLib.Node, nextNode: stdLib.Node): View = js.native
   def renderWithData(
-    templateOrView: meteorDashTypingsLib.BlazeNs.Template,
-    data: js.Object,
-    parentNode: stdLib.Node,
-    nextNode: stdLib.Node
-  ): meteorDashTypingsLib.BlazeNs.View = js.native
-  def renderWithData(
-    templateOrView: meteorDashTypingsLib.BlazeNs.Template,
+    templateOrView: Template,
     data: js.Object,
     parentNode: stdLib.Node,
     nextNode: stdLib.Node,
-    parentView: meteorDashTypingsLib.BlazeNs.View
-  ): meteorDashTypingsLib.BlazeNs.View = js.native
-  def renderWithData(templateOrView: meteorDashTypingsLib.BlazeNs.View, data: js.Function, parentNode: stdLib.Node): meteorDashTypingsLib.BlazeNs.View = js.native
+    parentView: View
+  ): View = js.native
+  def renderWithData(templateOrView: View, data: js.Function, parentNode: stdLib.Node): View = js.native
+  def renderWithData(templateOrView: View, data: js.Function, parentNode: stdLib.Node, nextNode: stdLib.Node): View = js.native
   def renderWithData(
-    templateOrView: meteorDashTypingsLib.BlazeNs.View,
-    data: js.Function,
-    parentNode: stdLib.Node,
-    nextNode: stdLib.Node
-  ): meteorDashTypingsLib.BlazeNs.View = js.native
-  def renderWithData(
-    templateOrView: meteorDashTypingsLib.BlazeNs.View,
+    templateOrView: View,
     data: js.Function,
     parentNode: stdLib.Node,
     nextNode: stdLib.Node,
-    parentView: meteorDashTypingsLib.BlazeNs.View
-  ): meteorDashTypingsLib.BlazeNs.View = js.native
-  def renderWithData(templateOrView: meteorDashTypingsLib.BlazeNs.View, data: js.Object, parentNode: stdLib.Node): meteorDashTypingsLib.BlazeNs.View = js.native
+    parentView: View
+  ): View = js.native
+  def renderWithData(templateOrView: View, data: js.Object, parentNode: stdLib.Node): View = js.native
+  def renderWithData(templateOrView: View, data: js.Object, parentNode: stdLib.Node, nextNode: stdLib.Node): View = js.native
   def renderWithData(
-    templateOrView: meteorDashTypingsLib.BlazeNs.View,
-    data: js.Object,
-    parentNode: stdLib.Node,
-    nextNode: stdLib.Node
-  ): meteorDashTypingsLib.BlazeNs.View = js.native
-  def renderWithData(
-    templateOrView: meteorDashTypingsLib.BlazeNs.View,
+    templateOrView: View,
     data: js.Object,
     parentNode: stdLib.Node,
     nextNode: stdLib.Node,
-    parentView: meteorDashTypingsLib.BlazeNs.View
-  ): meteorDashTypingsLib.BlazeNs.View = js.native
-  def toHTML(templateOrView: meteorDashTypingsLib.BlazeNs.Template): java.lang.String = js.native
-  def toHTML(templateOrView: meteorDashTypingsLib.BlazeNs.View): java.lang.String = js.native
-  def toHTMLWithData(templateOrView: meteorDashTypingsLib.BlazeNs.Template, data: js.Function): java.lang.String = js.native
-  def toHTMLWithData(templateOrView: meteorDashTypingsLib.BlazeNs.Template, data: js.Object): java.lang.String = js.native
-  def toHTMLWithData(templateOrView: meteorDashTypingsLib.BlazeNs.View, data: js.Function): java.lang.String = js.native
-  def toHTMLWithData(templateOrView: meteorDashTypingsLib.BlazeNs.View, data: js.Object): java.lang.String = js.native
+    parentView: View
+  ): View = js.native
+  def toHTML(templateOrView: Template): java.lang.String = js.native
+  def toHTML(templateOrView: View): java.lang.String = js.native
+  def toHTMLWithData(templateOrView: Template, data: js.Function): java.lang.String = js.native
+  def toHTMLWithData(templateOrView: Template, data: js.Object): java.lang.String = js.native
+  def toHTMLWithData(templateOrView: View, data: js.Function): java.lang.String = js.native
+  def toHTMLWithData(templateOrView: View, data: js.Object): java.lang.String = js.native
 }
 

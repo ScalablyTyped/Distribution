@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   */
 trait XExtendedIndexEntrySupplier extends XIndexEntrySupplier {
   /** Returns locale list for which the {@link IndexEntrySupplier} provides service. */
-  val LocaleList: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+  val LocaleList: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
   /**
     * Compares index entries
     *
@@ -37,7 +37,7 @@ trait XExtendedIndexEntrySupplier extends XIndexEntrySupplier {
     aLocale2: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale
   ): scala.Double
   /** Returns index algorithm list for specific locale */
-  def getAlgorithmList(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): activexDashInteropLib.SafeArray[java.lang.String]
+  def getAlgorithmList(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): stdLib.SafeArray[java.lang.String]
   /**
     * Returns index key.
     *
@@ -52,7 +52,7 @@ trait XExtendedIndexEntrySupplier extends XIndexEntrySupplier {
     aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale
   ): java.lang.String
   /** Returns locale list for which the {@link IndexEntrySupplier} provides service. */
-  def getLocaleList(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+  def getLocaleList(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
   /** Returns phonetic candidate for index entry for the locale. */
   def getPhoneticCandidate(aIndexEntry: java.lang.String, aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): java.lang.String
   /**
@@ -74,57 +74,21 @@ trait XExtendedIndexEntrySupplier extends XIndexEntrySupplier {
 object XExtendedIndexEntrySupplier {
   @scala.inline
   def apply(
-    LocaleList: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
-    acquire: js.Function0[scala.Unit],
-    compareIndexEntry: js.Function6[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double
-    ],
-    getAlgorithmList: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashInteropLib.SafeArray[java.lang.String]
-    ],
-    getIndexCharacter: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String, 
-      java.lang.String
-    ],
-    getIndexFollowPageWord: js.Function2[
-      scala.Boolean, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String
-    ],
-    getIndexKey: js.Function3[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String
-    ],
-    getLocaleList: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
-    ],
-    getPhoneticCandidate: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String
-    ],
-    loadAlgorithm: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String, 
-      scala.Double, 
-      scala.Boolean
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    usePhoneticEntry: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Boolean]
+    LocaleList: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    acquire: () => scala.Unit,
+    compareIndexEntry: (java.lang.String, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => scala.Double,
+    getAlgorithmList: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => stdLib.SafeArray[java.lang.String],
+    getIndexCharacter: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String) => java.lang.String,
+    getIndexFollowPageWord: (scala.Boolean, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => java.lang.String,
+    getIndexKey: (java.lang.String, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => java.lang.String,
+    getLocaleList: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getPhoneticCandidate: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => java.lang.String,
+    loadAlgorithm: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String, scala.Double) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    usePhoneticEntry: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => scala.Boolean
   ): XExtendedIndexEntrySupplier = {
-    val __obj = js.Dynamic.literal(LocaleList = LocaleList, acquire = acquire, compareIndexEntry = compareIndexEntry, getAlgorithmList = getAlgorithmList, getIndexCharacter = getIndexCharacter, getIndexFollowPageWord = getIndexFollowPageWord, getIndexKey = getIndexKey, getLocaleList = getLocaleList, getPhoneticCandidate = getPhoneticCandidate, loadAlgorithm = loadAlgorithm, queryInterface = queryInterface, release = release, usePhoneticEntry = usePhoneticEntry)
+    val __obj = js.Dynamic.literal(LocaleList = LocaleList, acquire = js.Any.fromFunction0(acquire), compareIndexEntry = js.Any.fromFunction6(compareIndexEntry), getAlgorithmList = js.Any.fromFunction1(getAlgorithmList), getIndexCharacter = js.Any.fromFunction3(getIndexCharacter), getIndexFollowPageWord = js.Any.fromFunction2(getIndexFollowPageWord), getIndexKey = js.Any.fromFunction3(getIndexKey), getLocaleList = js.Any.fromFunction0(getLocaleList), getPhoneticCandidate = js.Any.fromFunction2(getPhoneticCandidate), loadAlgorithm = js.Any.fromFunction3(loadAlgorithm), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), usePhoneticEntry = js.Any.fromFunction1(usePhoneticEntry))
   
     __obj.asInstanceOf[XExtendedIndexEntrySupplier]
   }

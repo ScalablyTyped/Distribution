@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "EventDef")
 @js.native
 abstract class EventDef protected ()
-  extends fullcalendarLib.eventdefMod.default {
+  extends fullcalendarLib.eventDefMod.default {
   def this(source: js.Any) = this()
 }
 

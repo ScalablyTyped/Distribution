@@ -13,10 +13,10 @@ trait IUssdSessionStatics extends js.Object {
 object IUssdSessionStatics {
   @scala.inline
   def apply(
-    createFromNetworkAccountId: js.Function1[java.lang.String, UssdSession],
-    createFromNetworkInterfaceId: js.Function1[java.lang.String, UssdSession]
+    createFromNetworkAccountId: java.lang.String => UssdSession,
+    createFromNetworkInterfaceId: java.lang.String => UssdSession
   ): IUssdSessionStatics = {
-    val __obj = js.Dynamic.literal(createFromNetworkAccountId = createFromNetworkAccountId, createFromNetworkInterfaceId = createFromNetworkInterfaceId)
+    val __obj = js.Dynamic.literal(createFromNetworkAccountId = js.Any.fromFunction1(createFromNetworkAccountId), createFromNetworkInterfaceId = js.Any.fromFunction1(createFromNetworkInterfaceId))
   
     __obj.asInstanceOf[IUssdSessionStatics]
   }

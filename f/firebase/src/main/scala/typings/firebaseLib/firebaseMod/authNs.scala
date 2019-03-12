@@ -91,7 +91,7 @@ object authNs extends js.Object {
       * @return {!firebase.auth.AuthProvider} The provider instance itself.
       */
     /* CompleteClass */
-    override def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
+    override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
   }
   
   /**
@@ -122,7 +122,7 @@ object authNs extends js.Object {
       * @return {!firebase.auth.AuthProvider} The provider instance itself.
       */
     /* CompleteClass */
-    override def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
+    override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
   }
   
   /**
@@ -216,7 +216,7 @@ object authNs extends js.Object {
       * @return {!firebase.auth.AuthProvider} The provider instance itself.
       */
     /* CompleteClass */
-    override def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
+    override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
   }
   
   /**
@@ -246,7 +246,7 @@ object authNs extends js.Object {
       * @return {!firebase.auth.AuthProvider} The provider instance itself.
       */
     /* CompleteClass */
-    override def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
+    override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
   }
   
   /**
@@ -313,7 +313,7 @@ object authNs extends js.Object {
       * @return {!firebase.auth.AuthProvider} The provider instance itself.
       */
     /* CompleteClass */
-    override def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
+    override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
   }
   
   /**
@@ -345,7 +345,7 @@ object authNs extends js.Object {
       * @return {!firebase.auth.AuthProvider} The provider instance itself.
       */
     /* CompleteClass */
-    override def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
+    override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
   }
   
   /**
@@ -559,11 +559,11 @@ object authNs extends js.Object {
     extends firebaseLib.firebaseMod.firebaseNs.authNs.RecaptchaVerifier_Instance {
     def this(container: java.lang.String) = this()
     def this(container: js.Any) = this()
-    def this(container: java.lang.String, parameters: coreDashJsLib.Object) = this()
-    def this(container: js.Any, parameters: coreDashJsLib.Object) = this()
-    def this(container: java.lang.String, parameters: coreDashJsLib.Object, app: firebaseLib.firebaseMod.firebaseNs.appNs.App) = this()
+    def this(container: java.lang.String, parameters: js.Object) = this()
+    def this(container: js.Any, parameters: js.Object) = this()
+    def this(container: java.lang.String, parameters: js.Object, app: firebaseLib.firebaseMod.firebaseNs.appNs.App) = this()
     def this(container: java.lang.String, parameters: scala.Null, app: firebaseLib.firebaseMod.firebaseNs.appNs.App) = this()
-    def this(container: js.Any, parameters: coreDashJsLib.Object, app: firebaseLib.firebaseMod.firebaseNs.appNs.App) = this()
+    def this(container: js.Any, parameters: js.Object, app: firebaseLib.firebaseMod.firebaseNs.appNs.App) = this()
     def this(container: js.Any, parameters: scala.Null, app: firebaseLib.firebaseMod.firebaseNs.appNs.App) = this()
     /**
       * Identifies the type of application verifier (e.g. "recaptcha").
@@ -649,7 +649,7 @@ object authNs extends js.Object {
       * @return {!firebase.auth.AuthProvider} The provider instance itself.
       */
     /* CompleteClass */
-    override def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
+    override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
   }
   
   /**
@@ -671,7 +671,7 @@ object authNs extends js.Object {
       * @return {!firebase.auth.AuthProvider} The provider instance itself.
       */
     /* CompleteClass */
-    override def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
+    override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
   }
   
   @JSName("Auth")

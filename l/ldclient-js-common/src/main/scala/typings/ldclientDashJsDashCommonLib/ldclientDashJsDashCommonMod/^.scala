@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val version: java.lang.String = js.native
-  def createConsoleLogger(minimumLevel: java.lang.String): ldclientDashJsDashCommonLib.ldclientDashJsDashCommonMod.LDLogger = js.native
+  def createConsoleLogger(minimumLevel: java.lang.String): LDLogger = js.native
 }
 

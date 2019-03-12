@@ -63,7 +63,7 @@ object InteractiveMapProps {
     doubleClickZoom: js.UndefOr[scala.Boolean] = js.undefined,
     dragPan: js.UndefOr[scala.Boolean] = js.undefined,
     dragRotate: js.UndefOr[scala.Boolean] = js.undefined,
-    getCursor: js.Function1[/* state */ ExtraState, scala.Unit] = null,
+    getCursor: /* state */ ExtraState => scala.Unit = null,
     gl: js.Object = null,
     interactiveLayerIds: js.Array[java.lang.String] = null,
     keyboard: js.UndefOr[scala.Boolean] = js.undefined,
@@ -74,30 +74,30 @@ object InteractiveMapProps {
     maxZoom: scala.Int | scala.Double = null,
     minPitch: scala.Int | scala.Double = null,
     minZoom: scala.Int | scala.Double = null,
-    onClick: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
-    onContextMenu: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
-    onDblClick: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
-    onError: js.Function1[/* e */ MapError, scala.Unit] = null,
-    onHover: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
-    onInteractionStateChange: js.Function1[/* state */ ExtraState, scala.Unit] = null,
-    onLoad: js.Function0[scala.Unit] = null,
-    onMouseDown: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
-    onMouseEnter: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
-    onMouseLeave: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
-    onMouseMove: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
-    onMouseOut: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
-    onMouseUp: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
-    onNativeClick: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
-    onResize: js.Function1[/* dimensions */ reactDashMapDashGlLib.Anon_Height, scala.Unit] = null,
-    onTouchEnd: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
-    onTouchMove: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
-    onTouchStart: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
-    onTransitionEnd: js.Function0[scala.Unit] = null,
-    onTransitionInterrupt: js.Function0[scala.Unit] = null,
-    onTransitionStart: js.Function0[scala.Unit] = null,
-    onViewStateChange: js.Function1[/* info */ ViewStateChangeInfo, scala.Unit] = null,
-    onViewportChange: js.Function1[/* viewState */ ViewState, scala.Unit] = null,
-    onWheel: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
+    onClick: /* event */ PointerEvent => scala.Unit = null,
+    onContextMenu: /* event */ PointerEvent => scala.Unit = null,
+    onDblClick: /* event */ PointerEvent => scala.Unit = null,
+    onError: /* e */ MapError => scala.Unit = null,
+    onHover: /* event */ PointerEvent => scala.Unit = null,
+    onInteractionStateChange: /* state */ ExtraState => scala.Unit = null,
+    onLoad: () => scala.Unit = null,
+    onMouseDown: /* event */ PointerEvent => scala.Unit = null,
+    onMouseEnter: /* event */ PointerEvent => scala.Unit = null,
+    onMouseLeave: /* event */ PointerEvent => scala.Unit = null,
+    onMouseMove: /* event */ PointerEvent => scala.Unit = null,
+    onMouseOut: /* event */ PointerEvent => scala.Unit = null,
+    onMouseUp: /* event */ PointerEvent => scala.Unit = null,
+    onNativeClick: /* event */ PointerEvent => scala.Unit = null,
+    onResize: /* dimensions */ reactDashMapDashGlLib.Anon_Height => scala.Unit = null,
+    onTouchEnd: /* event */ PointerEvent => scala.Unit = null,
+    onTouchMove: /* event */ PointerEvent => scala.Unit = null,
+    onTouchStart: /* event */ PointerEvent => scala.Unit = null,
+    onTransitionEnd: () => scala.Unit = null,
+    onTransitionInterrupt: () => scala.Unit = null,
+    onTransitionStart: () => scala.Unit = null,
+    onViewStateChange: /* info */ ViewStateChangeInfo => scala.Unit = null,
+    onViewportChange: /* viewState */ ViewState => scala.Unit = null,
+    onWheel: /* event */ PointerEvent => scala.Unit = null,
     preserveDrawingBuffer: js.UndefOr[scala.Boolean] = js.undefined,
     preventStyleDiffing: js.UndefOr[scala.Boolean] = js.undefined,
     reuseMap: js.UndefOr[scala.Boolean] = js.undefined,
@@ -107,11 +107,7 @@ object InteractiveMapProps {
     touchAction: java.lang.String = null,
     touchRotate: js.UndefOr[scala.Boolean] = js.undefined,
     touchZoom: js.UndefOr[scala.Boolean] = js.undefined,
-    transformRequest: js.Function2[
-      /* url */ js.UndefOr[java.lang.String], 
-      /* resourceType */ js.UndefOr[java.lang.String], 
-      MapRequest
-    ] = null,
+    transformRequest: (/* url */ js.UndefOr[java.lang.String], /* resourceType */ js.UndefOr[java.lang.String]) => MapRequest = null,
     transitionDuration: scala.Int | scala.Double = null,
     transitionEasing: EasingFunction = null,
     transitionInterpolator: TransitionInterpolator = null,
@@ -130,7 +126,7 @@ object InteractiveMapProps {
     if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom)
     if (!js.isUndefined(dragPan)) __obj.updateDynamic("dragPan")(dragPan)
     if (!js.isUndefined(dragRotate)) __obj.updateDynamic("dragRotate")(dragRotate)
-    if (getCursor != null) __obj.updateDynamic("getCursor")(getCursor)
+    if (getCursor != null) __obj.updateDynamic("getCursor")(js.Any.fromFunction1(getCursor))
     if (gl != null) __obj.updateDynamic("gl")(gl)
     if (interactiveLayerIds != null) __obj.updateDynamic("interactiveLayerIds")(interactiveLayerIds)
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
@@ -141,30 +137,30 @@ object InteractiveMapProps {
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minPitch != null) __obj.updateDynamic("minPitch")(minPitch.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(onContextMenu)
-    if (onDblClick != null) __obj.updateDynamic("onDblClick")(onDblClick)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onHover != null) __obj.updateDynamic("onHover")(onHover)
-    if (onInteractionStateChange != null) __obj.updateDynamic("onInteractionStateChange")(onInteractionStateChange)
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut)
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
-    if (onNativeClick != null) __obj.updateDynamic("onNativeClick")(onNativeClick)
-    if (onResize != null) __obj.updateDynamic("onResize")(onResize)
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(onTransitionEnd)
-    if (onTransitionInterrupt != null) __obj.updateDynamic("onTransitionInterrupt")(onTransitionInterrupt)
-    if (onTransitionStart != null) __obj.updateDynamic("onTransitionStart")(onTransitionStart)
-    if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(onViewStateChange)
-    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(onViewportChange)
-    if (onWheel != null) __obj.updateDynamic("onWheel")(onWheel)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1(onContextMenu))
+    if (onDblClick != null) __obj.updateDynamic("onDblClick")(js.Any.fromFunction1(onDblClick))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction1(onHover))
+    if (onInteractionStateChange != null) __obj.updateDynamic("onInteractionStateChange")(js.Any.fromFunction1(onInteractionStateChange))
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
+    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1(onMouseOut))
+    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
+    if (onNativeClick != null) __obj.updateDynamic("onNativeClick")(js.Any.fromFunction1(onNativeClick))
+    if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction1(onResize))
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
+    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction0(onTransitionEnd))
+    if (onTransitionInterrupt != null) __obj.updateDynamic("onTransitionInterrupt")(js.Any.fromFunction0(onTransitionInterrupt))
+    if (onTransitionStart != null) __obj.updateDynamic("onTransitionStart")(js.Any.fromFunction0(onTransitionStart))
+    if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(js.Any.fromFunction1(onViewStateChange))
+    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(js.Any.fromFunction1(onViewportChange))
+    if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer)
     if (!js.isUndefined(preventStyleDiffing)) __obj.updateDynamic("preventStyleDiffing")(preventStyleDiffing)
     if (!js.isUndefined(reuseMap)) __obj.updateDynamic("reuseMap")(reuseMap)
@@ -174,7 +170,7 @@ object InteractiveMapProps {
     if (touchAction != null) __obj.updateDynamic("touchAction")(touchAction)
     if (!js.isUndefined(touchRotate)) __obj.updateDynamic("touchRotate")(touchRotate)
     if (!js.isUndefined(touchZoom)) __obj.updateDynamic("touchZoom")(touchZoom)
-    if (transformRequest != null) __obj.updateDynamic("transformRequest")(transformRequest)
+    if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction2(transformRequest))
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
     if (transitionEasing != null) __obj.updateDynamic("transitionEasing")(transitionEasing)
     if (transitionInterpolator != null) __obj.updateDynamic("transitionInterpolator")(transitionInterpolator)

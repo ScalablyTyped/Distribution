@@ -19,7 +19,7 @@ trait XView
     *
     * A device must be set before.
     */
-  val Size: Size
+  val Size: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size
   /**
     * draws the object at the specified position.
     *
@@ -49,16 +49,16 @@ object XView {
   def apply(
     Graphics: XGraphics,
     Size: Size,
-    acquire: js.Function0[scala.Unit],
-    draw: js.Function2[scala.Double, scala.Double, scala.Unit],
-    getGraphics: js.Function0[XGraphics],
-    getSize: js.Function0[Size],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setGraphics: js.Function1[XGraphics, scala.Boolean],
-    setZoom: js.Function2[scala.Double, scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    draw: (scala.Double, scala.Double) => scala.Unit,
+    getGraphics: () => XGraphics,
+    getSize: () => Size,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setGraphics: XGraphics => scala.Boolean,
+    setZoom: (scala.Double, scala.Double) => scala.Unit
   ): XView = {
-    val __obj = js.Dynamic.literal(Graphics = Graphics, Size = Size, acquire = acquire, draw = draw, getGraphics = getGraphics, getSize = getSize, queryInterface = queryInterface, release = release, setGraphics = setGraphics, setZoom = setZoom)
+    val __obj = js.Dynamic.literal(Graphics = Graphics, Size = Size, acquire = js.Any.fromFunction0(acquire), draw = js.Any.fromFunction2(draw), getGraphics = js.Any.fromFunction0(getGraphics), getSize = js.Any.fromFunction0(getSize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setGraphics = js.Any.fromFunction1(setGraphics), setZoom = js.Any.fromFunction2(setZoom))
   
     __obj.asInstanceOf[XView]
   }

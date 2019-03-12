@@ -17,7 +17,7 @@ class Legend protected () extends js.Object {
   val Format: ChartFormat = js.native
   var Height: scala.Double = js.native
   var IncludeInLayout: scala.Boolean = js.native
-  val Interior: Interior = js.native
+  val Interior: activexDashWordLib.WordNs.Interior = js.native
   var Left: scala.Double = js.native
   val Name: java.lang.String = js.native
   val Parent: js.Any = js.native

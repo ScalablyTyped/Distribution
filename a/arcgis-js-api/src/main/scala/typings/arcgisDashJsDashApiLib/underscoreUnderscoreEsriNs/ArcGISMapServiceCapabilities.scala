@@ -33,11 +33,11 @@ object ArcGISMapServiceCapabilities {
     constructor: js.Function,
     exportMap: ArcGISMapServiceCapabilitiesExportMap,
     exportTiles: ArcGISMapServiceCapabilitiesExportTiles,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     operations: ArcGISMapServiceCapabilitiesOperations,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): ArcGISMapServiceCapabilities = {
-    val __obj = js.Dynamic.literal(constructor = constructor, exportMap = exportMap, exportTiles = exportTiles, hasOwnProperty = hasOwnProperty, operations = operations, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, exportMap = exportMap, exportTiles = exportTiles, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operations = operations, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[ArcGISMapServiceCapabilities]
   }

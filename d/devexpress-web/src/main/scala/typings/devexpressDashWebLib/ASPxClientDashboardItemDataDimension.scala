@@ -46,12 +46,12 @@ object ASPxClientDashboardItemDataDimension {
   def apply(
     DataMember: java.lang.String,
     DateTimeGroupInterval: java.lang.String,
-    Format: js.Function1[js.Object, java.lang.String],
+    Format: js.Object => java.lang.String,
     Id: java.lang.String,
     Name: java.lang.String,
     TextGroupInterval: java.lang.String
   ): ASPxClientDashboardItemDataDimension = {
-    val __obj = js.Dynamic.literal(DataMember = DataMember, DateTimeGroupInterval = DateTimeGroupInterval, Format = Format, Id = Id, Name = Name, TextGroupInterval = TextGroupInterval)
+    val __obj = js.Dynamic.literal(DataMember = DataMember, DateTimeGroupInterval = DateTimeGroupInterval, Format = js.Any.fromFunction1(Format), Id = Id, Name = Name, TextGroupInterval = TextGroupInterval)
   
     __obj.asInstanceOf[ASPxClientDashboardItemDataDimension]
   }

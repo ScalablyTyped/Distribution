@@ -29,11 +29,8 @@ trait SailsHook extends js.Object {
 
 object SailsHook {
   @scala.inline
-  def apply(
-    initialize: js.Function1[js.Function0[_], scala.Unit],
-    routes: swaggerDashSailsDashHookLib.Anon_After
-  ): SailsHook = {
-    val __obj = js.Dynamic.literal(initialize = initialize, routes = routes)
+  def apply(initialize: js.Function0[_] => scala.Unit, routes: swaggerDashSailsDashHookLib.Anon_After): SailsHook = {
+    val __obj = js.Dynamic.literal(initialize = js.Any.fromFunction1(initialize), routes = routes)
   
     __obj.asInstanceOf[SailsHook]
   }

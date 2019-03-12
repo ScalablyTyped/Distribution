@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val canUseDOM: scala.Boolean = js.native
-  def peek(): reactDashHelmetLib.reactDashHelmetMod.HelmetData = js.native
-  def renderStatic(): reactDashHelmetLib.reactDashHelmetMod.HelmetData = js.native
-  def rewind(): reactDashHelmetLib.reactDashHelmetMod.HelmetData = js.native
+  def peek(): HelmetData = js.native
+  def renderStatic(): HelmetData = js.native
+  def rewind(): HelmetData = js.native
 }
 

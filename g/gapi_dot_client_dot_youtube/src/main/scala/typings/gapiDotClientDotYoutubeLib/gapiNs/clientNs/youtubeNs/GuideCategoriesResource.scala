@@ -13,12 +13,9 @@ trait GuideCategoriesResource extends js.Object {
 object GuideCategoriesResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFieldsHlId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GuideCategoryListResponse]
-    ]
+    list: gapiDotClientDotYoutubeLib.Anon_AltFieldsHlId => gapiDotClientLib.gapiNs.clientNs.Request[GuideCategoryListResponse]
   ): GuideCategoriesResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[GuideCategoriesResource]
   }

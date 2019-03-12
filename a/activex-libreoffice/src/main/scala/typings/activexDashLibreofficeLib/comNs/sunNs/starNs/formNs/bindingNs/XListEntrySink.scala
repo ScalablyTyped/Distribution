@@ -25,13 +25,13 @@ object XListEntrySink {
   @scala.inline
   def apply(
     ListEntrySource: XListEntrySource,
-    acquire: js.Function0[scala.Unit],
-    getListEntrySource: js.Function0[XListEntrySource],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setListEntrySource: js.Function1[XListEntrySource, scala.Unit]
+    acquire: () => scala.Unit,
+    getListEntrySource: () => XListEntrySource,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setListEntrySource: XListEntrySource => scala.Unit
   ): XListEntrySink = {
-    val __obj = js.Dynamic.literal(ListEntrySource = ListEntrySource, acquire = acquire, getListEntrySource = getListEntrySource, queryInterface = queryInterface, release = release, setListEntrySource = setListEntrySource)
+    val __obj = js.Dynamic.literal(ListEntrySource = ListEntrySource, acquire = js.Any.fromFunction0(acquire), getListEntrySource = js.Any.fromFunction0(getListEntrySource), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setListEntrySource = js.Any.fromFunction1(setListEntrySource))
   
     __obj.asInstanceOf[XListEntrySink]
   }

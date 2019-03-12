@@ -17,10 +17,10 @@ class Connection protected ()
     * @param name A string representing a name to associate with the transaction. Optional, and defaults to an empty string. Required when isolationLevel is present.
     * @param isolationLevel The isolation level that the transaction is to be run with.
     */
-  def beginTransaction(callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error], scala.Unit]): scala.Unit = js.native
-  def beginTransaction(callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error], scala.Unit], name: java.lang.String): scala.Unit = js.native
+  def beginTransaction(callback: js.Function1[/* error */ js.UndefOr[stdLib.Error], scala.Unit]): scala.Unit = js.native
+  def beginTransaction(callback: js.Function1[/* error */ js.UndefOr[stdLib.Error], scala.Unit], name: java.lang.String): scala.Unit = js.native
   def beginTransaction(
-    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error], scala.Unit],
+    callback: js.Function1[/* error */ js.UndefOr[stdLib.Error], scala.Unit],
     name: java.lang.String,
     isolationLevel: ISOLATION_LEVEL
   ): scala.Unit = js.native
@@ -42,7 +42,7 @@ class Connection protected ()
     * @param callback The callback is called when the request to commit the transaction has completed, either successfully or with an error. If an error occured then err will describe the error.
     * 					As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
     */
-  def commitTransaction(callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def commitTransaction(callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /**
     * Executes a BulkLoad.
     */
@@ -71,7 +71,7 @@ class Connection protected ()
     */
   def newBulkLoad(
     tableName: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* rowCount */ scala.Double, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* rowCount */ scala.Double, scala.Unit]
   ): BulkLoad = js.native
   /**
     * The server has reported that the charset has changed.
@@ -87,7 +87,7 @@ class Connection protected ()
   @JSName("on")
   def on_connect(
     event: tediousLib.tediousLibStrings.connect,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /**
     * The server has reported that the active database has changed. This may be as a result of a successful login, or a use statement.
@@ -116,7 +116,7 @@ class Connection protected ()
   @JSName("on")
   def on_error(
     event: tediousLib.tediousLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /**
     * The server has issued an error message.
@@ -124,7 +124,7 @@ class Connection protected ()
   @JSName("on")
   def on_errorMessage(
     event: tediousLib.tediousLibStrings.errorMessage,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /**
     * The server has issued an information message.
@@ -152,19 +152,19 @@ class Connection protected ()
     * @param callback The callback is called when the connection reset has completed, either successfully or with an error. If an error occured then err will describe the error.
     * 					As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
     */
-  def reset(callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def reset(callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /**
     * Rollback a transaction. There should be an active transaction. That is, beginTransaction should have been previously called.
     * @param callback The callback is called when the request to rollback the transaction has completed, either successfully or with an error. If an error occured then err will describe the error.
     * 						As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
     */
-  def rollbackTransaction(callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def rollbackTransaction(callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /**
     * Set a savepoint within a transaction. There should be an active transaction. That is, beginTransaction should have been previously called.
     * @param callback The callback is called when the request to set a savepoint within the transaction has completed, either successfully or with an error. If an error occured then err will describe the error.
     * 					As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
     */
-  def saveTransaction(callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def saveTransaction(callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /**
     * Run the given callback after starting a transaction, and commit or rollback the transaction afterwards.
     * This is a helper that employs beginTransaction, commitTransaction, rollbackTransaction and saveTransaction to greatly simplify the use of database transactions and automatically handle transaction nesting.
@@ -178,11 +178,11 @@ class Connection protected ()
     */
   def transaction(
     callback: js.Function2[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* done */ js.Function3[
-        /* error */ js.UndefOr[nodeLib.Error], 
+        /* error */ js.UndefOr[stdLib.Error], 
         /* doneCallback */ js.UndefOr[
-          js.Function2[/* error */ js.UndefOr[nodeLib.Error], /* repeated */ js.Any, scala.Unit]
+          js.Function2[/* error */ js.UndefOr[stdLib.Error], /* repeated */ js.Any, scala.Unit]
         ], 
         /* repeated */ js.Any, 
         scala.Unit
@@ -192,11 +192,11 @@ class Connection protected ()
   ): scala.Unit = js.native
   def transaction(
     callback: js.Function2[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* done */ js.Function3[
-        /* error */ js.UndefOr[nodeLib.Error], 
+        /* error */ js.UndefOr[stdLib.Error], 
         /* doneCallback */ js.UndefOr[
-          js.Function2[/* error */ js.UndefOr[nodeLib.Error], /* repeated */ js.Any, scala.Unit]
+          js.Function2[/* error */ js.UndefOr[stdLib.Error], /* repeated */ js.Any, scala.Unit]
         ], 
         /* repeated */ js.Any, 
         scala.Unit
@@ -207,11 +207,11 @@ class Connection protected ()
   ): scala.Unit = js.native
   def transaction(
     callback: js.Function2[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* done */ js.Function3[
-        /* error */ js.UndefOr[nodeLib.Error], 
+        /* error */ js.UndefOr[stdLib.Error], 
         /* doneCallback */ js.UndefOr[
-          js.Function2[/* error */ js.UndefOr[nodeLib.Error], /* repeated */ js.Any, scala.Unit]
+          js.Function2[/* error */ js.UndefOr[stdLib.Error], /* repeated */ js.Any, scala.Unit]
         ], 
         /* repeated */ js.Any, 
         scala.Unit

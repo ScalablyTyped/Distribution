@@ -111,7 +111,7 @@ object Change extends js.Object {
   def findOrCreateChange(
     modelName: java.lang.String,
     modelId: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* change */ this.type, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* change */ this.type, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Get the checkpoint model.
@@ -145,7 +145,7 @@ object Change extends js.Object {
   def rectifyModelChanges(
     modelName: java.lang.String,
     modelIds: js.Array[_],
-    callback: js.Function2[/* err */ nodeLib.Error, /* changes */ js.Array[_], scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* changes */ js.Array[_], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Get the revision string for the given object

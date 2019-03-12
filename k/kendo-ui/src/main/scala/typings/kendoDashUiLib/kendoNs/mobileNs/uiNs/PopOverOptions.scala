@@ -16,16 +16,16 @@ trait PopOverOptions extends js.Object {
 object PopOverOptions {
   @scala.inline
   def apply(
-    close: js.Function1[/* e */ PopOverCloseEvent, scala.Unit] = null,
+    close: /* e */ PopOverCloseEvent => scala.Unit = null,
     name: java.lang.String = null,
-    open: js.Function1[/* e */ PopOverOpenEvent, scala.Unit] = null,
+    open: /* e */ PopOverOpenEvent => scala.Unit = null,
     pane: PopOverPane = null,
     popup: PopOverPopup = null
   ): PopOverOptions = {
     val __obj = js.Dynamic.literal()
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (name != null) __obj.updateDynamic("name")(name)
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (pane != null) __obj.updateDynamic("pane")(pane)
     if (popup != null) __obj.updateDynamic("popup")(popup)
     __obj.asInstanceOf[PopOverOptions]

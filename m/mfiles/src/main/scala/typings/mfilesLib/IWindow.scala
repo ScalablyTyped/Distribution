@@ -26,23 +26,23 @@ trait IWindow extends js.Object {
 object IWindow {
   @scala.inline
   def apply(
-    Close: js.Function0[scala.Unit],
+    Close: () => scala.Unit,
     Events: IWindowEvents,
-    Focus: js.Function0[scala.Unit],
+    Focus: () => scala.Unit,
     Handle: scala.Double,
     Height: scala.Double,
     IsFocused: scala.Boolean,
     Maximizable: scala.Boolean,
-    Maximize: js.Function0[scala.Unit],
+    Maximize: () => scala.Unit,
     Minimizable: scala.Boolean,
-    Minimize: js.Function0[scala.Unit],
+    Minimize: () => scala.Unit,
     Resizable: scala.Boolean,
-    Restore: js.Function0[scala.Unit],
-    SetDefaultSize: js.Function3[scala.Double, scala.Double, scala.Boolean, scala.Unit],
+    Restore: () => scala.Unit,
+    SetDefaultSize: (scala.Double, scala.Double, scala.Boolean) => scala.Unit,
     Title: java.lang.String,
     Width: scala.Double
   ): IWindow = {
-    val __obj = js.Dynamic.literal(Close = Close, Events = Events, Focus = Focus, Handle = Handle, Height = Height, IsFocused = IsFocused, Maximizable = Maximizable, Maximize = Maximize, Minimizable = Minimizable, Minimize = Minimize, Resizable = Resizable, Restore = Restore, SetDefaultSize = SetDefaultSize, Title = Title, Width = Width)
+    val __obj = js.Dynamic.literal(Close = js.Any.fromFunction0(Close), Events = Events, Focus = js.Any.fromFunction0(Focus), Handle = Handle, Height = Height, IsFocused = IsFocused, Maximizable = Maximizable, Maximize = js.Any.fromFunction0(Maximize), Minimizable = Minimizable, Minimize = js.Any.fromFunction0(Minimize), Resizable = Resizable, Restore = js.Any.fromFunction0(Restore), SetDefaultSize = js.Any.fromFunction3(SetDefaultSize), Title = Title, Width = Width)
   
     __obj.asInstanceOf[IWindow]
   }

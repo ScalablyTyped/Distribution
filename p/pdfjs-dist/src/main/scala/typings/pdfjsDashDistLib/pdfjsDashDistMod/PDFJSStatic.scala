@@ -125,8 +125,8 @@ trait PDFJSStatic extends js.Object {
 object PDFJSStatic {
   @scala.inline
   def apply(
-    PDFSinglePageViewer: js.Function1[PDFViewerParams, scala.Unit],
-    PDFViewer: js.Function1[PDFViewerParams, scala.Unit],
+    PDFSinglePageViewer: PDFViewerParams => scala.Unit,
+    PDFViewer: PDFViewerParams => scala.Unit,
     cMapPacked: scala.Boolean,
     cMapUrl: java.lang.String,
     disableAutoFetch: scala.Boolean,
@@ -149,7 +149,7 @@ object PDFJSStatic {
     verbosity: scala.Double,
     workerSrc: java.lang.String
   ): PDFJSStatic = {
-    val __obj = js.Dynamic.literal(PDFSinglePageViewer = PDFSinglePageViewer, PDFViewer = PDFViewer, cMapPacked = cMapPacked, cMapUrl = cMapUrl, disableAutoFetch = disableAutoFetch, disableCreateObjectURL = disableCreateObjectURL, disableFontFace = disableFontFace, disableFullscreen = disableFullscreen, disableRange = disableRange, disableStream = disableStream, disableTextLayer = disableTextLayer, disableWebGL = disableWebGL, disableWorker = disableWorker, imageResourcesPath = imageResourcesPath, isEvalSupported = isEvalSupported, maxCanvasPixels = maxCanvasPixels, maxImageSize = maxImageSize, openExternalLinksInNewWindow = openExternalLinksInNewWindow, pdfBug = pdfBug, postMessageTransfers = postMessageTransfers, useOnlyCssZoom = useOnlyCssZoom, verbosity = verbosity, workerSrc = workerSrc)
+    val __obj = js.Dynamic.literal(PDFSinglePageViewer = js.Any.fromFunction1(PDFSinglePageViewer), PDFViewer = js.Any.fromFunction1(PDFViewer), cMapPacked = cMapPacked, cMapUrl = cMapUrl, disableAutoFetch = disableAutoFetch, disableCreateObjectURL = disableCreateObjectURL, disableFontFace = disableFontFace, disableFullscreen = disableFullscreen, disableRange = disableRange, disableStream = disableStream, disableTextLayer = disableTextLayer, disableWebGL = disableWebGL, disableWorker = disableWorker, imageResourcesPath = imageResourcesPath, isEvalSupported = isEvalSupported, maxCanvasPixels = maxCanvasPixels, maxImageSize = maxImageSize, openExternalLinksInNewWindow = openExternalLinksInNewWindow, pdfBug = pdfBug, postMessageTransfers = postMessageTransfers, useOnlyCssZoom = useOnlyCssZoom, verbosity = verbosity, workerSrc = workerSrc)
   
     __obj.asInstanceOf[PDFJSStatic]
   }

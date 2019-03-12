@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 trait XUnoControlContainer
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** returns all currently specified tab controllers. */
-  var TabControllers: activexDashInteropLib.SafeArray[XTabController]
+  var TabControllers: stdLib.SafeArray[XTabController]
   /** adds a single tab controller. */
   def addTabController(TabController: XTabController): scala.Unit
   /** returns all currently specified tab controllers. */
-  def getTabControllers(): activexDashInteropLib.SafeArray[XTabController]
+  def getTabControllers(): stdLib.SafeArray[XTabController]
   /** removes a single tab controller. */
   def removeTabController(TabController: XTabController): scala.Unit
   /** sets a set of tab controllers. */
@@ -23,16 +23,16 @@ trait XUnoControlContainer
 object XUnoControlContainer {
   @scala.inline
   def apply(
-    TabControllers: activexDashInteropLib.SafeArray[XTabController],
-    acquire: js.Function0[scala.Unit],
-    addTabController: js.Function1[XTabController, scala.Unit],
-    getTabControllers: js.Function0[activexDashInteropLib.SafeArray[XTabController]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeTabController: js.Function1[XTabController, scala.Unit],
-    setTabControllers: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XTabController], scala.Unit]
+    TabControllers: stdLib.SafeArray[XTabController],
+    acquire: () => scala.Unit,
+    addTabController: XTabController => scala.Unit,
+    getTabControllers: () => stdLib.SafeArray[XTabController],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeTabController: XTabController => scala.Unit,
+    setTabControllers: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XTabController] => scala.Unit
   ): XUnoControlContainer = {
-    val __obj = js.Dynamic.literal(TabControllers = TabControllers, acquire = acquire, addTabController = addTabController, getTabControllers = getTabControllers, queryInterface = queryInterface, release = release, removeTabController = removeTabController, setTabControllers = setTabControllers)
+    val __obj = js.Dynamic.literal(TabControllers = TabControllers, acquire = js.Any.fromFunction0(acquire), addTabController = js.Any.fromFunction1(addTabController), getTabControllers = js.Any.fromFunction0(getTabControllers), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeTabController = js.Any.fromFunction1(removeTabController), setTabControllers = js.Any.fromFunction1(setTabControllers))
   
     __obj.asInstanceOf[XUnoControlContainer]
   }

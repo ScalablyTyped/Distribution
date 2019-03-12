@@ -14,11 +14,11 @@ trait FormatDiagnosticsHost extends js.Object {
 object FormatDiagnosticsHost {
   @scala.inline
   def apply(
-    getCanonicalFileName: js.Function1[java.lang.String, java.lang.String],
-    getCurrentDirectory: js.Function0[java.lang.String],
-    getNewLine: js.Function0[java.lang.String]
+    getCanonicalFileName: java.lang.String => java.lang.String,
+    getCurrentDirectory: () => java.lang.String,
+    getNewLine: () => java.lang.String
   ): FormatDiagnosticsHost = {
-    val __obj = js.Dynamic.literal(getCanonicalFileName = getCanonicalFileName, getCurrentDirectory = getCurrentDirectory, getNewLine = getNewLine)
+    val __obj = js.Dynamic.literal(getCanonicalFileName = js.Any.fromFunction1(getCanonicalFileName), getCurrentDirectory = js.Any.fromFunction0(getCurrentDirectory), getNewLine = js.Any.fromFunction0(getNewLine))
   
     __obj.asInstanceOf[FormatDiagnosticsHost]
   }

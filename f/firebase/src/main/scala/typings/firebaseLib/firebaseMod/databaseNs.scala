@@ -64,7 +64,7 @@ object databaseNs extends js.Object {
       * });
       * ```
       */
-    var TIMESTAMP: coreDashJsLib.Object = js.native
+    var TIMESTAMP: js.Object = js.native
   }
   
 }

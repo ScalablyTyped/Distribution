@@ -19,14 +19,14 @@ trait XCellRangeFormula
     * Each element of the result contains the same string that would be returned by {@link com.sun.star.table.XCell.getFormula()} for the corresponding
     * cell.
     */
-  var FormulaArray: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]]
+  var FormulaArray: stdLib.SafeArray[stdLib.SafeArray[java.lang.String]]
   /**
     * gets an array from the contents of the cell range.
     *
     * Each element of the result contains the same string that would be returned by {@link com.sun.star.table.XCell.getFormula()} for the corresponding
     * cell.
     */
-  def getFormulaArray(): activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]]
+  def getFormulaArray(): stdLib.SafeArray[stdLib.SafeArray[java.lang.String]]
   /**
     * fills the cell range with values from an array.
     *
@@ -42,19 +42,14 @@ trait XCellRangeFormula
 object XCellRangeFormula {
   @scala.inline
   def apply(
-    FormulaArray: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]],
-    acquire: js.Function0[scala.Unit],
-    getFormulaArray: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setFormulaArray: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]], 
-      scala.Unit
-    ]
+    FormulaArray: stdLib.SafeArray[stdLib.SafeArray[java.lang.String]],
+    acquire: () => scala.Unit,
+    getFormulaArray: () => stdLib.SafeArray[stdLib.SafeArray[java.lang.String]],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setFormulaArray: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]] => scala.Unit
   ): XCellRangeFormula = {
-    val __obj = js.Dynamic.literal(FormulaArray = FormulaArray, acquire = acquire, getFormulaArray = getFormulaArray, queryInterface = queryInterface, release = release, setFormulaArray = setFormulaArray)
+    val __obj = js.Dynamic.literal(FormulaArray = FormulaArray, acquire = js.Any.fromFunction0(acquire), getFormulaArray = js.Any.fromFunction0(getFormulaArray), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setFormulaArray = js.Any.fromFunction1(setFormulaArray))
   
     __obj.asInstanceOf[XCellRangeFormula]
   }

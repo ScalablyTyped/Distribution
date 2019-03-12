@@ -15,20 +15,11 @@ trait PromoofferResource extends js.Object {
 object PromoofferResource {
   @scala.inline
   def apply(
-    accept: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltAndroidId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    dismiss: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltAndroidIdDevice, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltAndroidIdDeviceFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Offers]
-    ]
+    accept: gapiDotClientDotBooksLib.Anon_AltAndroidId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    dismiss: gapiDotClientDotBooksLib.Anon_AltAndroidIdDevice => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotBooksLib.Anon_AltAndroidIdDeviceFields => gapiDotClientLib.gapiNs.clientNs.Request[Offers]
   ): PromoofferResource = {
-    val __obj = js.Dynamic.literal(accept = accept, dismiss = dismiss, get = get)
+    val __obj = js.Dynamic.literal(accept = js.Any.fromFunction1(accept), dismiss = js.Any.fromFunction1(dismiss), get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[PromoofferResource]
   }

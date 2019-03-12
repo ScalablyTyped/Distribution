@@ -19,20 +19,20 @@ object SocketConnectParams {
   @scala.inline
   def apply(
     url: java.lang.String,
-    complete: js.Function0[scala.Unit] = null,
-    fail: js.Function0[scala.Unit] = null,
+    complete: () => scala.Unit = null,
+    fail: () => scala.Unit = null,
     header: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     method: RequestMethod = null,
     protocols: js.Array[java.lang.String] = null,
-    success: js.Function0[scala.Unit] = null
+    success: () => scala.Unit = null
   ): SocketConnectParams = {
     val __obj = js.Dynamic.literal(url = url)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (header != null) __obj.updateDynamic("header")(header)
     if (method != null) __obj.updateDynamic("method")(method)
     if (protocols != null) __obj.updateDynamic("protocols")(protocols)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[SocketConnectParams]
   }
 }

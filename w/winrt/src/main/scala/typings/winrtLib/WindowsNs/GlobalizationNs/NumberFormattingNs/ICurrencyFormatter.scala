@@ -17,10 +17,10 @@ object ICurrencyFormatter {
   @scala.inline
   def apply(
     currency: java.lang.String,
-    format: js.Function1[scala.Double, java.lang.String],
-    formatDouble: js.Function1[scala.Double, java.lang.String],
-    formatInt: js.Function1[scala.Double, java.lang.String],
-    formatUInt: js.Function1[scala.Double, java.lang.String],
+    format: scala.Double => java.lang.String,
+    formatDouble: scala.Double => java.lang.String,
+    formatInt: scala.Double => java.lang.String,
+    formatUInt: scala.Double => java.lang.String,
     fractionDigits: scala.Double,
     geographicRegion: java.lang.String,
     integerDigits: scala.Double,
@@ -28,13 +28,13 @@ object ICurrencyFormatter {
     isGrouped: scala.Boolean,
     languages: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String],
     numeralSystem: java.lang.String,
-    parseDouble: js.Function1[java.lang.String, scala.Double],
-    parseInt: js.Function1[java.lang.String, scala.Double],
-    parseUInt: js.Function1[java.lang.String, scala.Double],
+    parseDouble: java.lang.String => scala.Double,
+    parseInt: java.lang.String => scala.Double,
+    parseUInt: java.lang.String => scala.Double,
     resolvedGeographicRegion: java.lang.String,
     resolvedLanguage: java.lang.String
   ): ICurrencyFormatter = {
-    val __obj = js.Dynamic.literal(currency = currency, format = format, formatDouble = formatDouble, formatInt = formatInt, formatUInt = formatUInt, fractionDigits = fractionDigits, geographicRegion = geographicRegion, integerDigits = integerDigits, isDecimalPointAlwaysDisplayed = isDecimalPointAlwaysDisplayed, isGrouped = isGrouped, languages = languages, numeralSystem = numeralSystem, parseDouble = parseDouble, parseInt = parseInt, parseUInt = parseUInt, resolvedGeographicRegion = resolvedGeographicRegion, resolvedLanguage = resolvedLanguage)
+    val __obj = js.Dynamic.literal(currency = currency, format = js.Any.fromFunction1(format), formatDouble = js.Any.fromFunction1(formatDouble), formatInt = js.Any.fromFunction1(formatInt), formatUInt = js.Any.fromFunction1(formatUInt), fractionDigits = fractionDigits, geographicRegion = geographicRegion, integerDigits = integerDigits, isDecimalPointAlwaysDisplayed = isDecimalPointAlwaysDisplayed, isGrouped = isGrouped, languages = languages, numeralSystem = numeralSystem, parseDouble = js.Any.fromFunction1(parseDouble), parseInt = js.Any.fromFunction1(parseInt), parseUInt = js.Any.fromFunction1(parseUInt), resolvedGeographicRegion = resolvedGeographicRegion, resolvedLanguage = resolvedLanguage)
   
     __obj.asInstanceOf[ICurrencyFormatter]
   }

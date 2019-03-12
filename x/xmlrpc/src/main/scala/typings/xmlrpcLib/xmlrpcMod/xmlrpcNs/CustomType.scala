@@ -13,8 +13,8 @@ trait CustomType extends js.Object {
 
 object CustomType {
   @scala.inline
-  def apply(raw: java.lang.String, serialize: js.Function1[js.Any, js.Any], tagName: java.lang.String): CustomType = {
-    val __obj = js.Dynamic.literal(raw = raw, serialize = serialize, tagName = tagName)
+  def apply(raw: java.lang.String, serialize: js.Any => js.Any, tagName: java.lang.String): CustomType = {
+    val __obj = js.Dynamic.literal(raw = raw, serialize = js.Any.fromFunction1(serialize), tagName = tagName)
   
     __obj.asInstanceOf[CustomType]
   }

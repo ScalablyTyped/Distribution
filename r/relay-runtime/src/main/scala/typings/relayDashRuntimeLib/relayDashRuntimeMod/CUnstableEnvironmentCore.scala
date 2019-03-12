@@ -110,34 +110,18 @@ trait CUnstableEnvironmentCore[TEnvironment, TFragment, TGraphQLTaggedNode, TNod
 object CUnstableEnvironmentCore {
   @scala.inline
   def apply[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation](
-    areEqualSelectors: js.Function2[CSelector[TNode], CSelector[TNode], scala.Boolean],
-    createFragmentSpecResolver: js.Function5[
-      CRelayContext[TEnvironment], 
-      java.lang.String, 
-      CFragmentMap[TFragment], 
-      Props, 
-      js.Function0[scala.Unit], 
-      FragmentSpecResolver
-    ],
-    createOperationSelector: js.Function2[TOperation, Variables, COperationSelector[TNode, TOperation]],
-    getDataIDsFromObject: js.Function2[
-      CFragmentMap[TFragment], 
-      Props, 
-      org.scalablytyped.runtime.StringDictionary[js.UndefOr[DataID | js.Array[DataID] | scala.Null]]
-    ],
-    getFragment: js.Function1[TGraphQLTaggedNode, TFragment],
-    getOperation: js.Function1[TGraphQLTaggedNode, TOperation],
-    getSelector: js.Function3[Variables, TFragment, js.Any, CSelector[TNode] | scala.Null],
-    getSelectorList: js.Function3[Variables, TFragment, js.Array[_], js.Array[CSelector[TNode]] | scala.Null],
-    getSelectorsFromObject: js.Function3[
-      Variables, 
-      CFragmentMap[TFragment], 
-      Props, 
-      org.scalablytyped.runtime.StringDictionary[js.UndefOr[CSelector[TNode] | js.Array[CSelector[TNode]] | scala.Null]]
-    ],
-    getVariablesFromObject: js.Function3[Variables, CFragmentMap[TFragment], Props, Variables]
+    areEqualSelectors: (CSelector[TNode], CSelector[TNode]) => scala.Boolean,
+    createFragmentSpecResolver: (CRelayContext[TEnvironment], java.lang.String, CFragmentMap[TFragment], Props, js.Function0[scala.Unit]) => FragmentSpecResolver,
+    createOperationSelector: (TOperation, Variables) => COperationSelector[TNode, TOperation],
+    getDataIDsFromObject: (CFragmentMap[TFragment], Props) => org.scalablytyped.runtime.StringDictionary[js.UndefOr[DataID | js.Array[DataID] | scala.Null]],
+    getFragment: TGraphQLTaggedNode => TFragment,
+    getOperation: TGraphQLTaggedNode => TOperation,
+    getSelector: (Variables, TFragment, js.Any) => CSelector[TNode] | scala.Null,
+    getSelectorList: (Variables, TFragment, js.Array[_]) => js.Array[CSelector[TNode]] | scala.Null,
+    getSelectorsFromObject: (Variables, CFragmentMap[TFragment], Props) => org.scalablytyped.runtime.StringDictionary[js.UndefOr[CSelector[TNode] | js.Array[CSelector[TNode]] | scala.Null]],
+    getVariablesFromObject: (Variables, CFragmentMap[TFragment], Props) => Variables
   ): CUnstableEnvironmentCore[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation] = {
-    val __obj = js.Dynamic.literal(areEqualSelectors = areEqualSelectors, createFragmentSpecResolver = createFragmentSpecResolver, createOperationSelector = createOperationSelector, getDataIDsFromObject = getDataIDsFromObject, getFragment = getFragment, getOperation = getOperation, getSelector = getSelector, getSelectorList = getSelectorList, getSelectorsFromObject = getSelectorsFromObject, getVariablesFromObject = getVariablesFromObject)
+    val __obj = js.Dynamic.literal(areEqualSelectors = js.Any.fromFunction2(areEqualSelectors), createFragmentSpecResolver = js.Any.fromFunction5(createFragmentSpecResolver), createOperationSelector = js.Any.fromFunction2(createOperationSelector), getDataIDsFromObject = js.Any.fromFunction2(getDataIDsFromObject), getFragment = js.Any.fromFunction1(getFragment), getOperation = js.Any.fromFunction1(getOperation), getSelector = js.Any.fromFunction3(getSelector), getSelectorList = js.Any.fromFunction3(getSelectorList), getSelectorsFromObject = js.Any.fromFunction3(getSelectorsFromObject), getVariablesFromObject = js.Any.fromFunction3(getVariablesFromObject))
   
     __obj.asInstanceOf[CUnstableEnvironmentCore[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation]]
   }

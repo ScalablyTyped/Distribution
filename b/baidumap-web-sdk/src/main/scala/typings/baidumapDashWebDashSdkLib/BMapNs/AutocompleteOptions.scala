@@ -17,13 +17,13 @@ object AutocompleteOptions {
   def apply(
     input: java.lang.String | stdLib.HTMLElement = null,
     location: java.lang.String | Map | Point = null,
-    onSearchComplete: js.Function1[/* result */ AutocompleteResult, scala.Unit] = null,
+    onSearchComplete: /* result */ AutocompleteResult => scala.Unit = null,
     types: js.Array[java.lang.String] = null
   ): AutocompleteOptions = {
     val __obj = js.Dynamic.literal()
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (onSearchComplete != null) __obj.updateDynamic("onSearchComplete")(onSearchComplete)
+    if (onSearchComplete != null) __obj.updateDynamic("onSearchComplete")(js.Any.fromFunction1(onSearchComplete))
     if (types != null) __obj.updateDynamic("types")(types)
     __obj.asInstanceOf[AutocompleteOptions]
   }

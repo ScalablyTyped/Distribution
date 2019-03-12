@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait QuerySnapshot extends js.Object {
   /** An array of all the documents in the `QuerySnapshot`. */
-  val docs: coreDashJsLib.Array[QueryDocumentSnapshot] = js.native
+  val docs: js.Array[QueryDocumentSnapshot] = js.native
   /** True if there are no documents in the `QuerySnapshot`. */
   val empty: scala.Boolean = js.native
   /**
@@ -31,8 +31,8 @@ trait QuerySnapshot extends js.Object {
     * changes (i.e. only `DocumentSnapshot.metadata` changed) should trigger
     * snapshot events.
     */
-  def docChanges(): coreDashJsLib.Array[DocumentChange] = js.native
-  def docChanges(options: SnapshotListenOptions): coreDashJsLib.Array[DocumentChange] = js.native
+  def docChanges(): js.Array[DocumentChange] = js.native
+  def docChanges(options: SnapshotListenOptions): js.Array[DocumentChange] = js.native
   /**
     * Enumerates all of the documents in the `QuerySnapshot`.
     *

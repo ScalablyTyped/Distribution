@@ -17,14 +17,14 @@ trait Selection extends js.Object {
 object Selection {
   @scala.inline
   def apply(
-    getCurrentPage: js.Function0[Page],
-    getPageElementRange: js.Function0[PageElementRange],
-    getPageRange: js.Function0[PageRange],
-    getSelectionType: js.Function0[SelectionType],
-    getTableCellRange: js.Function0[TableCellRange],
-    getTextRange: js.Function0[TextRange]
+    getCurrentPage: () => Page,
+    getPageElementRange: () => PageElementRange,
+    getPageRange: () => PageRange,
+    getSelectionType: () => SelectionType,
+    getTableCellRange: () => TableCellRange,
+    getTextRange: () => TextRange
   ): Selection = {
-    val __obj = js.Dynamic.literal(getCurrentPage = getCurrentPage, getPageElementRange = getPageElementRange, getPageRange = getPageRange, getSelectionType = getSelectionType, getTableCellRange = getTableCellRange, getTextRange = getTextRange)
+    val __obj = js.Dynamic.literal(getCurrentPage = js.Any.fromFunction0(getCurrentPage), getPageElementRange = js.Any.fromFunction0(getPageElementRange), getPageRange = js.Any.fromFunction0(getPageRange), getSelectionType = js.Any.fromFunction0(getSelectionType), getTableCellRange = js.Any.fromFunction0(getTableCellRange), getTextRange = js.Any.fromFunction0(getTextRange))
   
     __obj.asInstanceOf[Selection]
   }

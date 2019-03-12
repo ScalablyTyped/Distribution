@@ -12,12 +12,12 @@ trait EditorPasteEvent extends EditorEvent {
 object EditorPasteEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Editor,
     html: js.Any = null
   ): EditorPasteEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (html != null) __obj.updateDynamic("html")(html)
     __obj.asInstanceOf[EditorPasteEvent]
   }

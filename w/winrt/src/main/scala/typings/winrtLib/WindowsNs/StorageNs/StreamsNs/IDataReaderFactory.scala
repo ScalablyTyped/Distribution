@@ -11,8 +11,8 @@ trait IDataReaderFactory extends js.Object {
 
 object IDataReaderFactory {
   @scala.inline
-  def apply(createDataReader: js.Function1[IInputStream, DataReader]): IDataReaderFactory = {
-    val __obj = js.Dynamic.literal(createDataReader = createDataReader)
+  def apply(createDataReader: IInputStream => DataReader): IDataReaderFactory = {
+    val __obj = js.Dynamic.literal(createDataReader = js.Any.fromFunction1(createDataReader))
   
     __obj.asInstanceOf[IDataReaderFactory]
   }

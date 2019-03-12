@@ -44,29 +44,29 @@ trait StackFrame extends js.Object {
 object StackFrame {
   @scala.inline
   def apply(
-    getArgs: js.Function0[js.Array[_]],
-    getColumnNumber: js.Function0[scala.Double],
-    getEvalOrigin: js.Function0[StackFrame],
-    getFileName: js.Function0[java.lang.String],
-    getFunctionName: js.Function0[java.lang.String],
-    getIsConstructor: js.Function0[scala.Boolean],
-    getIsEval: js.Function0[scala.Boolean],
-    getIsNative: js.Function0[scala.Boolean],
-    getIsTopLevel: js.Function0[scala.Boolean],
-    getLineNumber: js.Function0[scala.Double],
-    getSource: js.Function0[java.lang.String],
-    setArgs: js.Function0[scala.Unit],
-    setColumnNumber: js.Function0[scala.Unit],
-    setEvalOrigin: js.Function0[scala.Unit],
-    setFileName: js.Function0[scala.Unit],
-    setFunctionName: js.Function0[scala.Unit],
-    setIsConstructor: js.Function0[scala.Unit],
-    setIsEval: js.Function0[scala.Unit],
-    setIsNative: js.Function0[scala.Unit],
-    setIsTopLevel: js.Function0[scala.Unit],
-    setLineNumber: js.Function0[scala.Unit],
-    setSource: js.Function0[scala.Unit],
-    toString: js.Function0[java.lang.String],
+    getArgs: () => js.Array[_],
+    getColumnNumber: () => scala.Double,
+    getEvalOrigin: () => StackFrame,
+    getFileName: () => java.lang.String,
+    getFunctionName: () => java.lang.String,
+    getIsConstructor: () => scala.Boolean,
+    getIsEval: () => scala.Boolean,
+    getIsNative: () => scala.Boolean,
+    getIsTopLevel: () => scala.Boolean,
+    getLineNumber: () => scala.Double,
+    getSource: () => java.lang.String,
+    setArgs: () => scala.Unit,
+    setColumnNumber: () => scala.Unit,
+    setEvalOrigin: () => scala.Unit,
+    setFileName: () => scala.Unit,
+    setFunctionName: () => scala.Unit,
+    setIsConstructor: () => scala.Unit,
+    setIsEval: () => scala.Unit,
+    setIsNative: () => scala.Unit,
+    setIsTopLevel: () => scala.Unit,
+    setLineNumber: () => scala.Unit,
+    setSource: () => scala.Unit,
+    toString: () => java.lang.String,
     args: js.Array[_] = null,
     columnNumber: scala.Int | scala.Double = null,
     evalOrigin: StackFrame = null,
@@ -79,7 +79,7 @@ object StackFrame {
     lineNumber: scala.Int | scala.Double = null,
     source: java.lang.String = null
   ): StackFrame = {
-    val __obj = js.Dynamic.literal(getArgs = getArgs, getColumnNumber = getColumnNumber, getEvalOrigin = getEvalOrigin, getFileName = getFileName, getFunctionName = getFunctionName, getIsConstructor = getIsConstructor, getIsEval = getIsEval, getIsNative = getIsNative, getIsTopLevel = getIsTopLevel, getLineNumber = getLineNumber, getSource = getSource, setArgs = setArgs, setColumnNumber = setColumnNumber, setEvalOrigin = setEvalOrigin, setFileName = setFileName, setFunctionName = setFunctionName, setIsConstructor = setIsConstructor, setIsEval = setIsEval, setIsNative = setIsNative, setIsTopLevel = setIsTopLevel, setLineNumber = setLineNumber, setSource = setSource, toString = toString)
+    val __obj = js.Dynamic.literal(getArgs = js.Any.fromFunction0(getArgs), getColumnNumber = js.Any.fromFunction0(getColumnNumber), getEvalOrigin = js.Any.fromFunction0(getEvalOrigin), getFileName = js.Any.fromFunction0(getFileName), getFunctionName = js.Any.fromFunction0(getFunctionName), getIsConstructor = js.Any.fromFunction0(getIsConstructor), getIsEval = js.Any.fromFunction0(getIsEval), getIsNative = js.Any.fromFunction0(getIsNative), getIsTopLevel = js.Any.fromFunction0(getIsTopLevel), getLineNumber = js.Any.fromFunction0(getLineNumber), getSource = js.Any.fromFunction0(getSource), setArgs = js.Any.fromFunction0(setArgs), setColumnNumber = js.Any.fromFunction0(setColumnNumber), setEvalOrigin = js.Any.fromFunction0(setEvalOrigin), setFileName = js.Any.fromFunction0(setFileName), setFunctionName = js.Any.fromFunction0(setFunctionName), setIsConstructor = js.Any.fromFunction0(setIsConstructor), setIsEval = js.Any.fromFunction0(setIsEval), setIsNative = js.Any.fromFunction0(setIsNative), setIsTopLevel = js.Any.fromFunction0(setIsTopLevel), setLineNumber = js.Any.fromFunction0(setLineNumber), setSource = js.Any.fromFunction0(setSource), toString = js.Any.fromFunction0(toString))
     if (args != null) __obj.updateDynamic("args")(args)
     if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
     if (evalOrigin != null) __obj.updateDynamic("evalOrigin")(evalOrigin)

@@ -18,15 +18,15 @@ object FormProps {
   def apply(
     errors: js.Object = null,
     messages: grommetLib.Anon_Invalid = null,
-    onChange: js.Function1[/* repeated */ js.Any, _] = null,
-    onSubmit: js.Function1[/* repeated */ js.Any, _] = null,
+    onChange: /* repeated */ js.Any => _ = null,
+    onSubmit: /* repeated */ js.Any => _ = null,
     value: js.Object = null
   ): FormProps = {
     val __obj = js.Dynamic.literal()
     if (errors != null) __obj.updateDynamic("errors")(errors)
     if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(onSubmit)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[FormProps]
   }

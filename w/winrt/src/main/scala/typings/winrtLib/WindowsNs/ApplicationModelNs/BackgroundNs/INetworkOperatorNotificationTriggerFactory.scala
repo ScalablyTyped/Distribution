@@ -11,8 +11,8 @@ trait INetworkOperatorNotificationTriggerFactory extends js.Object {
 
 object INetworkOperatorNotificationTriggerFactory {
   @scala.inline
-  def apply(create: js.Function1[java.lang.String, NetworkOperatorNotificationTrigger]): INetworkOperatorNotificationTriggerFactory = {
-    val __obj = js.Dynamic.literal(create = create)
+  def apply(create: java.lang.String => NetworkOperatorNotificationTrigger): INetworkOperatorNotificationTriggerFactory = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
   
     __obj.asInstanceOf[INetworkOperatorNotificationTriggerFactory]
   }

@@ -107,21 +107,14 @@ object HTMLViewProps {
     bullet: java.lang.String = null,
     lineBreak: java.lang.String = null,
     nodeComponentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any = null,
-    onLinkLongPress: js.Function1[/* url */ java.lang.String, scala.Unit] = null,
-    onLinkPress: js.Function1[/* url */ java.lang.String, scala.Unit] = null,
+    onLinkLongPress: /* url */ java.lang.String => scala.Unit = null,
+    onLinkPress: /* url */ java.lang.String => scala.Unit = null,
     paragraphBreak: java.lang.String = null,
-    renderNode: js.Function5[
+    renderNode: (/* node */ HTMLViewNode, /* index */ scala.Double, /* siblings */ HTMLViewNode, /* parent */ HTMLViewNode, /* defaultRenderer */ js.Function2[
       /* node */ HTMLViewNode, 
-      /* index */ scala.Double, 
-      /* siblings */ HTMLViewNode, 
       /* parent */ HTMLViewNode, 
-      /* defaultRenderer */ js.Function2[
-        /* node */ HTMLViewNode, 
-        /* parent */ HTMLViewNode, 
-        reactLib.reactMod.ReactNs.ReactNode
-      ], 
       reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    ]) => reactLib.reactMod.ReactNs.ReactNode = null,
     rootComponentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties */ js.Any = null,
     stylesheet: org.scalablytyped.runtime.StringDictionary[
       reactDashNativeLib.reactDashNativeMod.StyleProp[
@@ -138,10 +131,10 @@ object HTMLViewProps {
     if (bullet != null) __obj.updateDynamic("bullet")(bullet)
     if (lineBreak != null) __obj.updateDynamic("lineBreak")(lineBreak)
     if (nodeComponentProps != null) __obj.updateDynamic("nodeComponentProps")(nodeComponentProps)
-    if (onLinkLongPress != null) __obj.updateDynamic("onLinkLongPress")(onLinkLongPress)
-    if (onLinkPress != null) __obj.updateDynamic("onLinkPress")(onLinkPress)
+    if (onLinkLongPress != null) __obj.updateDynamic("onLinkLongPress")(js.Any.fromFunction1(onLinkLongPress))
+    if (onLinkPress != null) __obj.updateDynamic("onLinkPress")(js.Any.fromFunction1(onLinkPress))
     if (paragraphBreak != null) __obj.updateDynamic("paragraphBreak")(paragraphBreak)
-    if (renderNode != null) __obj.updateDynamic("renderNode")(renderNode)
+    if (renderNode != null) __obj.updateDynamic("renderNode")(js.Any.fromFunction5(renderNode))
     if (rootComponentProps != null) __obj.updateDynamic("rootComponentProps")(rootComponentProps)
     if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet)
     if (textComponentProps != null) __obj.updateDynamic("textComponentProps")(textComponentProps)

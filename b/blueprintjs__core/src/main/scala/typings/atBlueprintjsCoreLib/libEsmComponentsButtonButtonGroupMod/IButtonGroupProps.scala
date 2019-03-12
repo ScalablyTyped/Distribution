@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because var conflicts: className. Inlined  */ trait IButtonGroupProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] {
   /**
     * Text alignment within button. By default, icons and text will be centered
     * within the button. Passing `"left"` or `"right"` will align the button
@@ -40,7 +40,7 @@ import scala.scalajs.js.annotation._
 object IButtonGroupProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
     IProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps = null,
     alignText: atBlueprintjsCoreLib.libEsmCommonAlignmentMod.Alignment = null,
     fill: js.UndefOr[scala.Boolean] = js.undefined,

@@ -15,10 +15,10 @@ trait StageChangeEventArguments
 object StageChangeEventArguments {
   @scala.inline
   def apply(
-    getDirection: js.Function0[xrmLib.XrmNs.ProcessFlowNs.StageChangeDirection],
-    getStage: js.Function0[xrmLib.XrmNs.ProcessFlowNs.Stage]
+    getDirection: () => xrmLib.XrmNs.ProcessFlowNs.StageChangeDirection,
+    getStage: () => xrmLib.XrmNs.ProcessFlowNs.Stage
   ): StageChangeEventArguments = {
-    val __obj = js.Dynamic.literal(getDirection = getDirection, getStage = getStage)
+    val __obj = js.Dynamic.literal(getDirection = js.Any.fromFunction0(getDirection), getStage = js.Any.fromFunction0(getStage))
   
     __obj.asInstanceOf[StageChangeEventArguments]
   }

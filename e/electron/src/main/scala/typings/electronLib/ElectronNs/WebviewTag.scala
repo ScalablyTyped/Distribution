@@ -1661,7 +1661,7 @@ trait WebviewTag
     */
   def printToPDF(
     options: PrintToPDFOptions,
-    callback: js.Function2[/* error */ nodeLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Executes editing command redo in page.

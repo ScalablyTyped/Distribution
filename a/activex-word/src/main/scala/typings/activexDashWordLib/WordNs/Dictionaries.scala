@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Dictionaries protected () extends js.Object {
   var ActiveCustomDictionary: Dictionary = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Count: scala.Double = js.native
   val Creator: scala.Double = js.native
   val Maximum: scala.Double = js.native

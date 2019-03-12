@@ -18,8 +18,8 @@ trait JSONSupport extends js.Object {
 
 object JSONSupport {
   @scala.inline
-  def apply(toJSON: js.Function0[js.Any]): JSONSupport = {
-    val __obj = js.Dynamic.literal(toJSON = toJSON)
+  def apply(toJSON: () => js.Any): JSONSupport = {
+    val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[JSONSupport]
   }

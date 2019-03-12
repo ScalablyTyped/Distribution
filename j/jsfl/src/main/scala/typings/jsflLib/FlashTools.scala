@@ -26,19 +26,19 @@ object FlashTools {
   def apply(
     activeTool: js.Any,
     altIsDown: js.Any,
-    constraintPoint: js.Function0[js.Any],
+    constraintPoint: () => js.Any,
     ctlIsDown: js.Any,
-    getKeyDown: js.Function0[js.Any],
+    getKeyDown: () => js.Any,
     mouseIsDown: js.Any,
     penDownLoc: js.Any,
     penLoc: js.Any,
-    setCreatingBbox: js.Function0[js.Any],
-    setCursor: js.Function0[js.Any],
+    setCreatingBbox: () => js.Any,
+    setCursor: () => js.Any,
     shiftIsDown: js.Any,
-    snapPoint: js.Function0[js.Any],
+    snapPoint: () => js.Any,
     toolObjs: js.Any
   ): FlashTools = {
-    val __obj = js.Dynamic.literal(activeTool = activeTool, altIsDown = altIsDown, constraintPoint = constraintPoint, ctlIsDown = ctlIsDown, getKeyDown = getKeyDown, mouseIsDown = mouseIsDown, penDownLoc = penDownLoc, penLoc = penLoc, setCreatingBbox = setCreatingBbox, setCursor = setCursor, shiftIsDown = shiftIsDown, snapPoint = snapPoint, toolObjs = toolObjs)
+    val __obj = js.Dynamic.literal(activeTool = activeTool, altIsDown = altIsDown, constraintPoint = js.Any.fromFunction0(constraintPoint), ctlIsDown = ctlIsDown, getKeyDown = js.Any.fromFunction0(getKeyDown), mouseIsDown = mouseIsDown, penDownLoc = penDownLoc, penLoc = penLoc, setCreatingBbox = js.Any.fromFunction0(setCreatingBbox), setCursor = js.Any.fromFunction0(setCursor), shiftIsDown = shiftIsDown, snapPoint = js.Any.fromFunction0(snapPoint), toolObjs = toolObjs)
   
     __obj.asInstanceOf[FlashTools]
   }

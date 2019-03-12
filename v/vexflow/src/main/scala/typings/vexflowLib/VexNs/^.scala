@@ -18,8 +18,8 @@ object ^ extends js.Object {
   def Min(a: scala.Double, b: scala.Double): scala.Double = js.native
   def RoundN(x: scala.Double, n: scala.Double): scala.Double = js.native
   def SortAndUnique[T /* <: js.Array[_] */](arr: T, cmp: js.Function, eq: js.Function): T = js.native
-  def drawDot(ctx: vexflowLib.VexNs.IRenderContext, x: scala.Double, y: scala.Double): scala.Unit = js.native
-  def drawDot(ctx: vexflowLib.VexNs.IRenderContext, x: scala.Double, y: scala.Double, color: java.lang.String): scala.Unit = js.native
+  def drawDot(ctx: IRenderContext, x: scala.Double, y: scala.Double): scala.Unit = js.native
+  def drawDot(ctx: IRenderContext, x: scala.Double, y: scala.Double, color: java.lang.String): scala.Unit = js.native
   def getCanvasContext(canvas_sel: java.lang.String): stdLib.CanvasRenderingContext2D = js.native
 }
 

@@ -14,13 +14,13 @@ trait Number extends js.Object {
     * Non-standard.
     */
   @JSName(org.scalablytyped.runtime.Symbol.iterator)
-  var iterator: js.Function0[nodeLib.IterableIterator[scala.Double]]
+  var iterator: js.Function0[stdLib.IterableIterator[scala.Double]]
 }
 
 object Number {
   @scala.inline
-  def apply(iterator: js.Function0[nodeLib.IterableIterator[scala.Double]]): Number = {
-    val __obj = js.Dynamic.literal(iterator = iterator)
+  def apply(iterator: () => stdLib.IterableIterator[scala.Double]): Number = {
+    val __obj = js.Dynamic.literal(iterator = js.Any.fromFunction0(iterator))
   
     __obj.asInstanceOf[Number]
   }

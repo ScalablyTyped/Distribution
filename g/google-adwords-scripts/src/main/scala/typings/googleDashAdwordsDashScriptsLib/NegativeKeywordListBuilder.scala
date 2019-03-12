@@ -12,10 +12,10 @@ trait NegativeKeywordListBuilder[NegativeKeywordList] extends AdWordsBuilder[Neg
 object NegativeKeywordListBuilder {
   @scala.inline
   def apply[NegativeKeywordList](
-    build: js.Function0[AdWordsOperation[NegativeKeywordList]],
-    withName: js.Function1[java.lang.String, NegativeKeywordListBuilder[NegativeKeywordList]]
+    build: () => AdWordsOperation[NegativeKeywordList],
+    withName: java.lang.String => NegativeKeywordListBuilder[NegativeKeywordList]
   ): NegativeKeywordListBuilder[NegativeKeywordList] = {
-    val __obj = js.Dynamic.literal(build = build, withName = withName)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), withName = js.Any.fromFunction1(withName))
   
     __obj.asInstanceOf[NegativeKeywordListBuilder[NegativeKeywordList]]
   }

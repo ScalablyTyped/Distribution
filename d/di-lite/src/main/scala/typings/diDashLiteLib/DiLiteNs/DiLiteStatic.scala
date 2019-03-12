@@ -18,15 +18,15 @@ trait DiLiteStatic extends js.Object {
 object DiLiteStatic {
   @scala.inline
   def apply(
-    createContext: js.Function0[CreateContext],
-    dependencyExpression: js.Function1[java.lang.String, java.lang.String],
-    entry: js.Function2[java.lang.String, CreateContext, js.Any],
+    createContext: () => CreateContext,
+    dependencyExpression: java.lang.String => java.lang.String,
+    entry: (java.lang.String, CreateContext) => js.Any,
     factory: FactoryEnum,
     strategy: StrategyEnum,
     utils: Utils,
     version: java.lang.String
   ): DiLiteStatic = {
-    val __obj = js.Dynamic.literal(createContext = createContext, dependencyExpression = dependencyExpression, entry = entry, factory = factory, strategy = strategy, utils = utils, version = version)
+    val __obj = js.Dynamic.literal(createContext = js.Any.fromFunction0(createContext), dependencyExpression = js.Any.fromFunction1(dependencyExpression), entry = js.Any.fromFunction2(entry), factory = factory, strategy = strategy, utils = utils, version = version)
   
     __obj.asInstanceOf[DiLiteStatic]
   }

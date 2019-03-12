@@ -27,12 +27,12 @@ trait ChooseImageConfig extends js.Object {
 object ChooseImageConfig {
   @scala.inline
   def apply(
-    success: js.Function1[wxDashJsDashSdkDashDtLib.Anon_LocalIds, scala.Unit],
+    success: wxDashJsDashSdkDashDtLib.Anon_LocalIds => scala.Unit,
     count: scala.Int | scala.Double = null,
     sizeType: js.Array[java.lang.String] = null,
     sourceType: js.Array[java.lang.String] = null
   ): ChooseImageConfig = {
-    val __obj = js.Dynamic.literal(success = success)
+    val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (sizeType != null) __obj.updateDynamic("sizeType")(sizeType)
     if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType)

@@ -61,7 +61,7 @@ trait ChaiJQueryStatic extends js.Object {
     * @param html A string defining a single, standalone, HTML element (e.g. <div/> or <div></div>).
     * @param attributes An object of attributes, events, and methods to call on the newly-created element.
     */
-  def apply(html: java.lang.String, attributes: chaiLib.Object): ChaiJQuery = js.native
+  def apply(html: java.lang.String, attributes: js.Object): ChaiJQuery = js.native
   def apply(html: java.lang.String, ownerDocument: stdLib.Document): ChaiJQuery = js.native
   /**
     * Accepts a string containing a CSS selector which is then used to match a set of elements.
@@ -266,28 +266,6 @@ trait ChaiJQueryStatic extends js.Object {
     * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, or html).
     */
   def get(url: java.lang.String): jqueryLib.JQueryXHR = js.native
-  def get(url: java.lang.String, data: chaiLib.Object): jqueryLib.JQueryXHR = js.native
-  def get(
-    url: java.lang.String,
-    data: chaiLib.Object,
-    success: js.Function3[
-      /* data */ js.Any, 
-      /* textStatus */ java.lang.String, 
-      /* jqXHR */ jqueryLib.JQueryXHR, 
-      _
-    ]
-  ): jqueryLib.JQueryXHR = js.native
-  def get(
-    url: java.lang.String,
-    data: chaiLib.Object,
-    success: js.Function3[
-      /* data */ js.Any, 
-      /* textStatus */ java.lang.String, 
-      /* jqXHR */ jqueryLib.JQueryXHR, 
-      _
-    ],
-    dataType: java.lang.String
-  ): jqueryLib.JQueryXHR = js.native
   def get(url: java.lang.String, data: java.lang.String): jqueryLib.JQueryXHR = js.native
   def get(
     url: java.lang.String,
@@ -302,6 +280,28 @@ trait ChaiJQueryStatic extends js.Object {
   def get(
     url: java.lang.String,
     data: java.lang.String,
+    success: js.Function3[
+      /* data */ js.Any, 
+      /* textStatus */ java.lang.String, 
+      /* jqXHR */ jqueryLib.JQueryXHR, 
+      _
+    ],
+    dataType: java.lang.String
+  ): jqueryLib.JQueryXHR = js.native
+  def get(url: java.lang.String, data: js.Object): jqueryLib.JQueryXHR = js.native
+  def get(
+    url: java.lang.String,
+    data: js.Object,
+    success: js.Function3[
+      /* data */ js.Any, 
+      /* textStatus */ java.lang.String, 
+      /* jqXHR */ jqueryLib.JQueryXHR, 
+      _
+    ]
+  ): jqueryLib.JQueryXHR = js.native
+  def get(
+    url: java.lang.String,
+    data: js.Object,
     success: js.Function3[
       /* data */ js.Any, 
       /* textStatus */ java.lang.String, 
@@ -336,10 +336,10 @@ trait ChaiJQueryStatic extends js.Object {
     * @param success A callback function that is executed if the request succeeds.
     */
   def getJSON(url: java.lang.String): jqueryLib.JQueryXHR = js.native
-  def getJSON(url: java.lang.String, data: chaiLib.Object): jqueryLib.JQueryXHR = js.native
+  def getJSON(url: java.lang.String, data: java.lang.String): jqueryLib.JQueryXHR = js.native
   def getJSON(
     url: java.lang.String,
-    data: chaiLib.Object,
+    data: java.lang.String,
     success: js.Function3[
       /* data */ js.Any, 
       /* textStatus */ java.lang.String, 
@@ -347,10 +347,10 @@ trait ChaiJQueryStatic extends js.Object {
       _
     ]
   ): jqueryLib.JQueryXHR = js.native
-  def getJSON(url: java.lang.String, data: java.lang.String): jqueryLib.JQueryXHR = js.native
+  def getJSON(url: java.lang.String, data: js.Object): jqueryLib.JQueryXHR = js.native
   def getJSON(
     url: java.lang.String,
-    data: java.lang.String,
+    data: js.Object,
     success: js.Function3[
       /* data */ js.Any, 
       /* textStatus */ java.lang.String, 
@@ -503,8 +503,8 @@ trait ChaiJQueryStatic extends js.Object {
     *
     * @param removeAll A Boolean indicating whether to remove all jQuery variables from the global scope (including jQuery itself).
     */
-  def noConflict(): chaiLib.Object = js.native
-  def noConflict(removeAll: scala.Boolean): chaiLib.Object = js.native
+  def noConflict(): js.Object = js.native
+  def noConflict(removeAll: scala.Boolean): js.Object = js.native
   /**
     * An empty function.
     */
@@ -550,28 +550,6 @@ trait ChaiJQueryStatic extends js.Object {
     * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
     */
   def post(url: java.lang.String): jqueryLib.JQueryXHR = js.native
-  def post(url: java.lang.String, data: chaiLib.Object): jqueryLib.JQueryXHR = js.native
-  def post(
-    url: java.lang.String,
-    data: chaiLib.Object,
-    success: js.Function3[
-      /* data */ js.Any, 
-      /* textStatus */ java.lang.String, 
-      /* jqXHR */ jqueryLib.JQueryXHR, 
-      _
-    ]
-  ): jqueryLib.JQueryXHR = js.native
-  def post(
-    url: java.lang.String,
-    data: chaiLib.Object,
-    success: js.Function3[
-      /* data */ js.Any, 
-      /* textStatus */ java.lang.String, 
-      /* jqXHR */ jqueryLib.JQueryXHR, 
-      _
-    ],
-    dataType: java.lang.String
-  ): jqueryLib.JQueryXHR = js.native
   def post(url: java.lang.String, data: java.lang.String): jqueryLib.JQueryXHR = js.native
   def post(
     url: java.lang.String,
@@ -586,6 +564,28 @@ trait ChaiJQueryStatic extends js.Object {
   def post(
     url: java.lang.String,
     data: java.lang.String,
+    success: js.Function3[
+      /* data */ js.Any, 
+      /* textStatus */ java.lang.String, 
+      /* jqXHR */ jqueryLib.JQueryXHR, 
+      _
+    ],
+    dataType: java.lang.String
+  ): jqueryLib.JQueryXHR = js.native
+  def post(url: java.lang.String, data: js.Object): jqueryLib.JQueryXHR = js.native
+  def post(
+    url: java.lang.String,
+    data: js.Object,
+    success: js.Function3[
+      /* data */ js.Any, 
+      /* textStatus */ java.lang.String, 
+      /* jqXHR */ jqueryLib.JQueryXHR, 
+      _
+    ]
+  ): jqueryLib.JQueryXHR = js.native
+  def post(
+    url: java.lang.String,
+    data: js.Object,
     success: js.Function3[
       /* data */ js.Any, 
       /* textStatus */ java.lang.String, 
@@ -620,7 +620,7 @@ trait ChaiJQueryStatic extends js.Object {
     * @param name The name of the function whose context will be changed (should be a property of the context object).
     * @param additionalArguments Any number of arguments to be passed to the function named in the name argument.
     */
-  def proxy(context: chaiLib.Object, name: java.lang.String, additionalArguments: js.Any*): js.Any = js.native
+  def proxy(context: js.Object, name: java.lang.String, additionalArguments: js.Any*): js.Any = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     *
@@ -628,11 +628,7 @@ trait ChaiJQueryStatic extends js.Object {
     * @param context The object to which the context (this) of the function should be set.
     * @param additionalArguments Any number of arguments to be passed to the function referenced in the function argument.
     */
-  def proxy(
-    fnction: js.Function1[/* repeated */ js.Any, _],
-    context: chaiLib.Object,
-    additionalArguments: js.Any*
-  ): js.Any = js.native
+  def proxy(fnction: js.Function1[/* repeated */ js.Any, _], context: js.Object, additionalArguments: js.Any*): js.Any = js.native
   /**
     * Show the queue of functions to be executed on the matched element.
     *

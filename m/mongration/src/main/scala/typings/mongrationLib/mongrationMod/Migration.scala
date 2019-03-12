@@ -15,7 +15,7 @@ class Migration protected () extends js.Object {
   def migrate(): scala.Unit = js.native
   def migrate(
     doneCb: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* response */ js.Array[MigrationResponse], 
       scala.Unit
     ]

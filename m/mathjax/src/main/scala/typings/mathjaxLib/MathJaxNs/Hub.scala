@@ -137,23 +137,23 @@ trait Hub extends js.Object {
 object Hub {
   @scala.inline
   def apply(
-    Config: js.Function1[Config, scala.Unit],
-    Configured: js.Function0[scala.Unit],
-    Insert: js.Function2[js.Any, js.Any, js.Any],
-    PreProcess: js.Function2[js.Any, js.Any, js.Any],
-    Process: js.Function2[js.Any, js.Any, js.Any],
-    Queue: js.Function1[js.Any, js.Any],
-    Reprocess: js.Function2[js.Any, js.Any, js.Any],
-    Rerender: js.Function2[js.Any, js.Any, js.Any],
-    Typeset: js.Function2[js.Any, js.Any, js.Any],
-    Update: js.Function2[js.Any, js.Any, js.Any],
-    formatError: js.Function2[js.Any, js.Any, scala.Unit],
-    getAllJax: js.Function1[js.Any, js.Array[_]],
-    getJaxByInputType: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getJaxByType: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getJaxFor: js.Function1[js.Any, js.Any],
-    isJax: js.Function1[js.Any, scala.Double],
-    setRenderer: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    Config: Config => scala.Unit,
+    Configured: () => scala.Unit,
+    Insert: (js.Any, js.Any) => js.Any,
+    PreProcess: (js.Any, js.Any) => js.Any,
+    Process: (js.Any, js.Any) => js.Any,
+    Queue: js.Any => js.Any,
+    Reprocess: (js.Any, js.Any) => js.Any,
+    Rerender: (js.Any, js.Any) => js.Any,
+    Typeset: (js.Any, js.Any) => js.Any,
+    Update: (js.Any, js.Any) => js.Any,
+    formatError: (js.Any, js.Any) => scala.Unit,
+    getAllJax: js.Any => js.Array[_],
+    getJaxByInputType: (java.lang.String, js.Any) => scala.Unit,
+    getJaxByType: (java.lang.String, js.Any) => scala.Unit,
+    getJaxFor: js.Any => js.Any,
+    isJax: js.Any => scala.Double,
+    setRenderer: (java.lang.String, java.lang.String) => scala.Unit,
     Browser: BrowserInfo = null,
     Register: Register = null,
     config: Config = null,
@@ -165,7 +165,7 @@ object Hub {
     queue: js.Any = null,
     signal: Signal = null
   ): Hub = {
-    val __obj = js.Dynamic.literal(Config = Config, Configured = Configured, Insert = Insert, PreProcess = PreProcess, Process = Process, Queue = Queue, Reprocess = Reprocess, Rerender = Rerender, Typeset = Typeset, Update = Update, formatError = formatError, getAllJax = getAllJax, getJaxByInputType = getJaxByInputType, getJaxByType = getJaxByType, getJaxFor = getJaxFor, isJax = isJax, setRenderer = setRenderer)
+    val __obj = js.Dynamic.literal(Config = js.Any.fromFunction1(Config), Configured = js.Any.fromFunction0(Configured), Insert = js.Any.fromFunction2(Insert), PreProcess = js.Any.fromFunction2(PreProcess), Process = js.Any.fromFunction2(Process), Queue = js.Any.fromFunction1(Queue), Reprocess = js.Any.fromFunction2(Reprocess), Rerender = js.Any.fromFunction2(Rerender), Typeset = js.Any.fromFunction2(Typeset), Update = js.Any.fromFunction2(Update), formatError = js.Any.fromFunction2(formatError), getAllJax = js.Any.fromFunction1(getAllJax), getJaxByInputType = js.Any.fromFunction2(getJaxByInputType), getJaxByType = js.Any.fromFunction2(getJaxByType), getJaxFor = js.Any.fromFunction1(getJaxFor), isJax = js.Any.fromFunction1(isJax), setRenderer = js.Any.fromFunction2(setRenderer))
     if (Browser != null) __obj.updateDynamic("Browser")(Browser)
     if (Register != null) __obj.updateDynamic("Register")(Register)
     if (config != null) __obj.updateDynamic("config")(config)

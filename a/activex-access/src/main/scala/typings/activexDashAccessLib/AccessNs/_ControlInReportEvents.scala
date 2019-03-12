@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class _ControlInReportEvents protected () extends js.Object {
   var `Access._ControlInReportEvents_typekey`: _ControlInReportEvents = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   var BottomPadding: scala.Double = js.native
   @JSName("Controls")
   val Controls_Original: Children = js.native
-  val Form: Form = js.native
+  val Form: activexDashAccessLib.AccessNs.Form = js.native
   var GridlineColor: scala.Double = js.native
   var GridlineStyleBottom: scala.Double = js.native
   var GridlineStyleLeft: scala.Double = js.native
@@ -24,7 +24,7 @@ class _ControlInReportEvents protected () extends js.Object {
   var GridlineWidthRight: scala.Double = js.native
   var GridlineWidthTop: scala.Double = js.native
   var HorizontalAnchor: AcHorizontalAnchor = js.native
-  val Hyperlink: Hyperlink = js.native
+  val Hyperlink: activexDashAccessLib.AccessNs.Hyperlink = js.native
   @JSName("ItemsSelected")
   val ItemsSelected_Original: _ItemsSelected = js.native
   val Layout: AcLayoutType = js.native
@@ -38,7 +38,7 @@ class _ControlInReportEvents protected () extends js.Object {
   val Parent: js.Any = js.native
   @JSName("Properties")
   val Properties_Original: Properties = js.native
-  val Report: Report = js.native
+  val Report: activexDashAccessLib.AccessNs.Report = js.native
   var RightPadding: scala.Double = js.native
   @JSName("SmartTags")
   val SmartTags_Original: SmartTags = js.native

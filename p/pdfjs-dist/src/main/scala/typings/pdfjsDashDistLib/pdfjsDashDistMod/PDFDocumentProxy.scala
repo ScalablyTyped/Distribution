@@ -62,20 +62,20 @@ trait PDFDocumentProxy extends js.Object {
 object PDFDocumentProxy {
   @scala.inline
   def apply(
-    dataLoaded: js.Function0[PDFPromise[js.Array[_]]],
-    destroy: js.Function0[scala.Unit],
-    embeddedFontsUsed: js.Function0[scala.Boolean],
+    dataLoaded: () => PDFPromise[js.Array[_]],
+    destroy: () => scala.Unit,
+    embeddedFontsUsed: () => scala.Boolean,
     fingerprint: java.lang.String,
-    getData: js.Function0[PDFPromise[stdLib.Uint8Array]],
-    getDestinations: js.Function0[PDFPromise[js.Array[_]]],
-    getJavaScript: js.Function0[PDFPromise[js.Array[java.lang.String]]],
-    getMetadata: js.Function0[PDFPromise[pdfjsDashDistLib.Anon_Info]],
-    getOutline: js.Function0[PDFPromise[js.Array[PDFTreeNode]]],
-    getPage: js.Function1[scala.Double, PDFPromise[PDFPageProxy]],
-    isEncrypted: js.Function0[PDFPromise[scala.Boolean]],
+    getData: () => PDFPromise[stdLib.Uint8Array],
+    getDestinations: () => PDFPromise[js.Array[_]],
+    getJavaScript: () => PDFPromise[js.Array[java.lang.String]],
+    getMetadata: () => PDFPromise[pdfjsDashDistLib.Anon_Info],
+    getOutline: () => PDFPromise[js.Array[PDFTreeNode]],
+    getPage: scala.Double => PDFPromise[PDFPageProxy],
+    isEncrypted: () => PDFPromise[scala.Boolean],
     numPages: scala.Double
   ): PDFDocumentProxy = {
-    val __obj = js.Dynamic.literal(dataLoaded = dataLoaded, destroy = destroy, embeddedFontsUsed = embeddedFontsUsed, fingerprint = fingerprint, getData = getData, getDestinations = getDestinations, getJavaScript = getJavaScript, getMetadata = getMetadata, getOutline = getOutline, getPage = getPage, isEncrypted = isEncrypted, numPages = numPages)
+    val __obj = js.Dynamic.literal(dataLoaded = js.Any.fromFunction0(dataLoaded), destroy = js.Any.fromFunction0(destroy), embeddedFontsUsed = js.Any.fromFunction0(embeddedFontsUsed), fingerprint = fingerprint, getData = js.Any.fromFunction0(getData), getDestinations = js.Any.fromFunction0(getDestinations), getJavaScript = js.Any.fromFunction0(getJavaScript), getMetadata = js.Any.fromFunction0(getMetadata), getOutline = js.Any.fromFunction0(getOutline), getPage = js.Any.fromFunction1(getPage), isEncrypted = js.Any.fromFunction0(isEncrypted), numPages = numPages)
   
     __obj.asInstanceOf[PDFDocumentProxy]
   }

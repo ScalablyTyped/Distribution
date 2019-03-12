@@ -6,16 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GraphQLServiceDefinition extends js.Object {
-  var errors: js.UndefOr[
-    apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[graphqlLib.graphqlMod.GraphQLError]
-  ] = js.undefined
+  var errors: js.UndefOr[js.Array[graphqlLib.graphqlMod.GraphQLError]] = js.undefined
   var schema: js.UndefOr[graphqlLib.graphqlMod.GraphQLSchema] = js.undefined
 }
 
 object GraphQLServiceDefinition {
   @scala.inline
   def apply(
-    errors: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[graphqlLib.graphqlMod.GraphQLError] = null,
+    errors: js.Array[graphqlLib.graphqlMod.GraphQLError] = null,
     schema: graphqlLib.graphqlMod.GraphQLSchema = null
   ): GraphQLServiceDefinition = {
     val __obj = js.Dynamic.literal()

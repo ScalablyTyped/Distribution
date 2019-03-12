@@ -63,19 +63,19 @@ trait IPv4RangeAggregation extends Aggregation {
 object IPv4RangeAggregation {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    agg: js.Function1[Aggregation, IPv4RangeAggregation],
-    aggregation: js.Function1[Aggregation, IPv4RangeAggregation],
-    field: js.Function1[java.lang.String, IPv4RangeAggregation],
-    keyed: js.Function1[scala.Boolean, IPv4RangeAggregation],
-    lang: js.Function1[java.lang.String, IPv4RangeAggregation],
-    params: js.Function1[js.Object, IPv4RangeAggregation],
-    range: js.Function3[java.lang.String, java.lang.String, java.lang.String, IPv4RangeAggregation],
-    script: js.Function1[java.lang.String, IPv4RangeAggregation],
-    scriptValuesSorted: js.Function1[scala.Boolean, IPv4RangeAggregation],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    agg: Aggregation => IPv4RangeAggregation,
+    aggregation: Aggregation => IPv4RangeAggregation,
+    field: java.lang.String => IPv4RangeAggregation,
+    keyed: scala.Boolean => IPv4RangeAggregation,
+    lang: java.lang.String => IPv4RangeAggregation,
+    params: js.Object => IPv4RangeAggregation,
+    range: (java.lang.String, java.lang.String, java.lang.String) => IPv4RangeAggregation,
+    script: java.lang.String => IPv4RangeAggregation,
+    scriptValuesSorted: scala.Boolean => IPv4RangeAggregation,
+    toJSON: () => js.Any
   ): IPv4RangeAggregation = {
-    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, field = field, keyed = keyed, lang = lang, params = params, range = range, script = script, scriptValuesSorted = scriptValuesSorted, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), agg = js.Any.fromFunction1(agg), aggregation = js.Any.fromFunction1(aggregation), field = js.Any.fromFunction1(field), keyed = js.Any.fromFunction1(keyed), lang = js.Any.fromFunction1(lang), params = js.Any.fromFunction1(params), range = js.Any.fromFunction3(range), script = js.Any.fromFunction1(script), scriptValuesSorted = js.Any.fromFunction1(scriptValuesSorted), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[IPv4RangeAggregation]
   }

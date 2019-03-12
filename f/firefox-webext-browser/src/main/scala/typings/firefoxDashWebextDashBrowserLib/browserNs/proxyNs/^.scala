@@ -14,7 +14,7 @@ object ^ extends js.Object {
   val onProxyError: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* error */ js.Object, scala.Unit]] = js.native
   /* proxy events */
   /** Fired when proxy data is needed for a request. */
-  val onRequest: firefoxDashWebextDashBrowserLib.browserNs.proxyNs._ProxyOnRequestEvent[
+  val onRequest: _ProxyOnRequestEvent[
     js.Function1[/* details */ firefoxDashWebextDashBrowserLib.Anon_DocumentUrl, scala.Unit]
   ] = js.native
   /* proxy properties */

@@ -27,18 +27,18 @@ object TranslateMarkerOptions {
     destination: baiduDashAppLib.Anon_LatitudeLongitude,
     markerId: scala.Double,
     rotate: scala.Double,
-    animationEnd: js.Function0[scala.Unit] = null,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    animationEnd: () => scala.Unit = null,
+    complete: /* res */ js.Any => scala.Unit = null,
     duration: scala.Int | scala.Double = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
-    success: js.Function1[js.Any, scala.Unit] = null
+    fail: js.Any => scala.Unit = null,
+    success: js.Any => scala.Unit = null
   ): TranslateMarkerOptions = {
     val __obj = js.Dynamic.literal(autoRotate = autoRotate, destination = destination, markerId = markerId, rotate = rotate)
-    if (animationEnd != null) __obj.updateDynamic("animationEnd")(animationEnd)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (animationEnd != null) __obj.updateDynamic("animationEnd")(js.Any.fromFunction0(animationEnd))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[TranslateMarkerOptions]
   }
 }

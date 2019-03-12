@@ -11,23 +11,23 @@ object ^ extends js.Object {
   /**
     * 批量添加卡券接口
     */
-  def addCard(config: wxDashJsDashSdkDashDtLib.wxNs.AddCardConfig): scala.Unit = js.native
+  def addCard(config: AddCardConfig): scala.Unit = js.native
   /**
     * 判断当前客户端版本是否支持指定 JS 接口
     */
-  def checkJsApi(setting: wxDashJsDashSdkDashDtLib.wxNs.CheckApiConfig): scala.Unit = js.native
+  def checkJsApi(setting: CheckApiConfig): scala.Unit = js.native
   /**
     * 拉取适用卡券列表并获取用户选择信息
     */
-  def chooseCard(config: wxDashJsDashSdkDashDtLib.wxNs.ChooseCardConfig): scala.Unit = js.native
+  def chooseCard(config: ChooseCardConfig): scala.Unit = js.native
   /**
     * 拍照或从手机相册中选图接口
     */
-  def chooseImage(config: wxDashJsDashSdkDashDtLib.wxNs.ChooseImageConfig): scala.Unit = js.native
+  def chooseImage(config: ChooseImageConfig): scala.Unit = js.native
   /**
     * 发起一个微信支付请求
     */
-  def chooseWXPay(config: wxDashJsDashSdkDashDtLib.wxNs.ChooseWXPayConfig): scala.Unit = js.native
+  def chooseWXPay(config: ChooseWXPayConfig): scala.Unit = js.native
   /**
     * 关闭当前网页窗口接口
     */
@@ -36,9 +36,9 @@ object ^ extends js.Object {
     * 初始化，做任何操作前必须调用该方法
     * @param setting 配置对象
     */
-  def config(setting: wxDashJsDashSdkDashDtLib.wxNs.WxConfig): scala.Unit = js.native
-  def downloadImage(config: wxDashJsDashSdkDashDtLib.wxNs.DownLoadImageConfig): scala.Unit = js.native
-  def downloadVoice(config: wxDashJsDashSdkDashDtLib.wxNs.DownloadVoiceConfig): scala.Unit = js.native
+  def config(setting: WxConfig): scala.Unit = js.native
+  def downloadImage(config: DownLoadImageConfig): scala.Unit = js.native
+  def downloadVoice(config: DownloadVoiceConfig): scala.Unit = js.native
   /**
     * 配置微信初始化失败后的回调
     * @param err 失败回调
@@ -47,11 +47,11 @@ object ^ extends js.Object {
   /**
     * 获取本地图片接口,此接口仅在 iOS WKWebview 下提供，用于兼容 iOS WKWebview 不支持 localId 直接显示图片的问题
     */
-  def getLocalImgData(config: wxDashJsDashSdkDashDtLib.wxNs.GetLocalImgDataConfig): scala.Unit = js.native
+  def getLocalImgData(config: GetLocalImgDataConfig): scala.Unit = js.native
   /**
     * 获取地理位置接口
     */
-  def getLocation(config: wxDashJsDashSdkDashDtLib.wxNs.GetLocationConfig): scala.Unit = js.native
+  def getLocation(config: GetLocationConfig): scala.Unit = js.native
   /**
     * 获取网络状态, var networkType = res.networkType; 返回网络类型 2g，3g，4g，wifi
     */
@@ -63,36 +63,36 @@ object ^ extends js.Object {
   /**
     * 批量隐藏功能按钮接口
     */
-  def hideMenuItems(config: wxDashJsDashSdkDashDtLib.wxNs.MenuItemsConfig): scala.Unit = js.native
+  def hideMenuItems(config: MenuItemsConfig): scala.Unit = js.native
   /**
     * 获取“分享给朋友”按钮点击状态及自定义分享内容接口
     * @deprecated
     */
-  def onMenuShareAppMessage(setting: wxDashJsDashSdkDashDtLib.wxNs.SharedAppMessage): scala.Unit = js.native
+  def onMenuShareAppMessage(setting: SharedAppMessage): scala.Unit = js.native
   /**
     * “分享到QQ”按钮点击状态及自定义分享内容接口
     * @deprecated
     */
-  def onMenuShareQQ(config: wxDashJsDashSdkDashDtLib.wxNs.MenuShareQQ): scala.Unit = js.native
+  def onMenuShareQQ(config: MenuShareQQ): scala.Unit = js.native
   /**
     * 获取“分享到QQ空间”按钮点击状态及自定义分享内容接口
     * @deprecated
     */
-  def onMenuShareQZone(config: wxDashJsDashSdkDashDtLib.wxNs.MenuShareWeibo): scala.Unit = js.native
+  def onMenuShareQZone(config: MenuShareWeibo): scala.Unit = js.native
   /**
     * 获取“分享到朋友圈”按钮点击状态及自定义分享内容接口
     * @deprecated
     */
-  def onMenuShareTimeline(setting: wxDashJsDashSdkDashDtLib.wxNs.ShareTimelineConfig): scala.Unit = js.native
+  def onMenuShareTimeline(setting: ShareTimelineConfig): scala.Unit = js.native
   /**
     * 获取“分享到腾讯微博”按钮点击状态及自定义分享内容接口
     */
-  def onMenuShareWeibo(config: wxDashJsDashSdkDashDtLib.wxNs.MenuShareWeibo): scala.Unit = js.native
+  def onMenuShareWeibo(config: MenuShareWeibo): scala.Unit = js.native
   /**
     * 监听周边 ibeacon 设备接口,
     * 摇一摇周边接口使用注意事项及更多返回结果说明，请参考：摇一摇周边获取设备信息
     */
-  def onSearchBeacons(config: wxDashJsDashSdkDashDtLib.wxNs.OnSearchBeaconsConfig): scala.Unit = js.native
+  def onSearchBeacons(config: OnSearchBeaconsConfig): scala.Unit = js.native
   /**
     * 停止播放后的回调
     */
@@ -104,15 +104,15 @@ object ^ extends js.Object {
   /**
     * 查看微信卡包中的卡券接口
     */
-  def openCard(config: wxDashJsDashSdkDashDtLib.wxNs.OpenCardConfig): scala.Unit = js.native
+  def openCard(config: OpenCardConfig): scala.Unit = js.native
   /**
     * 微信内置地图查看位置
     */
-  def openLocation(config: wxDashJsDashSdkDashDtLib.wxNs.OpenLocationConfig): scala.Unit = js.native
+  def openLocation(config: OpenLocationConfig): scala.Unit = js.native
   /**
     * 跳转微信商品页接口
     */
-  def openProductSpecificView(config: wxDashJsDashSdkDashDtLib.wxNs.OpenProductSpecificViewConfig): scala.Unit = js.native
+  def openProductSpecificView(config: OpenProductSpecificViewConfig): scala.Unit = js.native
   /**
     * 暂停音频
     */
@@ -124,7 +124,7 @@ object ^ extends js.Object {
   /**
     * 预览图片接口
     */
-  def previewImage(config: wxDashJsDashSdkDashDtLib.wxNs.PreviewImageConfig): scala.Unit = js.native
+  def previewImage(config: PreviewImageConfig): scala.Unit = js.native
   /**
     * 配置微信初始化成功后的回调
     * @param x 回调
@@ -133,7 +133,7 @@ object ^ extends js.Object {
   /**
     * 调起微信扫一扫接口
     */
-  def scanQRCode(config: wxDashJsDashSdkDashDtLib.wxNs.ScanQRCodeConfig): scala.Unit = js.native
+  def scanQRCode(config: ScanQRCodeConfig): scala.Unit = js.native
   /**
     * 显示所有功能按钮接口
     */
@@ -141,7 +141,7 @@ object ^ extends js.Object {
   /**
     * 批量显示功能按钮接口
     */
-  def showMenuItems(config: wxDashJsDashSdkDashDtLib.wxNs.MenuItemsConfig): scala.Unit = js.native
+  def showMenuItems(config: MenuItemsConfig): scala.Unit = js.native
   /**
     * 开始录音
     */
@@ -149,7 +149,7 @@ object ^ extends js.Object {
   /**
     * 开启查找周边 ibeacon 设备接口
     */
-  def startSearchBeacons(config: wxDashJsDashSdkDashDtLib.wxNs.StartSearchBeaconsConfig): scala.Unit = js.native
+  def startSearchBeacons(config: StartSearchBeaconsConfig): scala.Unit = js.native
   /**
     * 停止录音
     */
@@ -157,7 +157,7 @@ object ^ extends js.Object {
   /**
     * 关闭查找完成后的回调函数
     */
-  def stopSearchBeacons(config: wxDashJsDashSdkDashDtLib.wxNs.StopSearchBeaconsConfig): scala.Unit = js.native
+  def stopSearchBeacons(config: StopSearchBeaconsConfig): scala.Unit = js.native
   /**
     * 停止播放音频
     */
@@ -165,24 +165,24 @@ object ^ extends js.Object {
   /**
     * 识别音频并返回识别结果接口
     */
-  def translateVoice(config: wxDashJsDashSdkDashDtLib.wxNs.UploadVoiceConfig): scala.Unit = js.native
+  def translateVoice(config: UploadVoiceConfig): scala.Unit = js.native
   /**
     * “分享给朋友”及“分享到QQ”
     * @param config
     */
-  def updateAppMessageShareData(config: wxDashJsDashSdkDashDtLib.wxNs.ShareToUserConfig): scala.Unit = js.native
+  def updateAppMessageShareData(config: ShareToUserConfig): scala.Unit = js.native
   /**
     * “分享到朋友圈”及“分享到QQ空间”
     * @param config
     */
-  def updateTimelineShareData(config: wxDashJsDashSdkDashDtLib.wxNs.ShareToTimelineConfig): scala.Unit = js.native
+  def updateTimelineShareData(config: ShareToTimelineConfig): scala.Unit = js.native
   /**
     * 上传图片
     */
-  def uploadImage(config: wxDashJsDashSdkDashDtLib.wxNs.UploadImageConfig): scala.Unit = js.native
+  def uploadImage(config: UploadImageConfig): scala.Unit = js.native
   /**
     * 上传语音接口, 上传语音有效期3天，可用微信多媒体接口下载语音到自己的服务器，
     */
-  def uploadVoice(config: wxDashJsDashSdkDashDtLib.wxNs.UploadVoiceConfig): scala.Unit = js.native
+  def uploadVoice(config: UploadVoiceConfig): scala.Unit = js.native
 }
 

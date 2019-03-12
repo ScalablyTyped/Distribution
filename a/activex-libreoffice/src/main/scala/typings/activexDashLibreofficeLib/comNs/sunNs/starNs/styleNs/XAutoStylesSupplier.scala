@@ -24,12 +24,12 @@ object XAutoStylesSupplier {
   @scala.inline
   def apply(
     AutoStyles: XAutoStyles,
-    acquire: js.Function0[scala.Unit],
-    getAutoStyles: js.Function0[XAutoStyles],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getAutoStyles: () => XAutoStyles,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAutoStylesSupplier = {
-    val __obj = js.Dynamic.literal(AutoStyles = AutoStyles, acquire = acquire, getAutoStyles = getAutoStyles, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(AutoStyles = AutoStyles, acquire = js.Any.fromFunction0(acquire), getAutoStyles = js.Any.fromFunction0(getAutoStyles), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAutoStylesSupplier]
   }

@@ -284,7 +284,7 @@ object CostExplorerNs extends js.Object {
     /**
       * Sets the start and end dates for retrieving AWS costs. The start date is inclusive, but the end date is exclusive. For example, if start is 2017-01-01 and end is 2017-05-01, then the cost and usage data is retrieved from 2017-01-01 up to and including 2017-04-30 but not including 2017-05-01.
       */
-    var TimePeriod: js.UndefOr[DateInterval] = js.undefined
+    var TimePeriod: DateInterval
   }
   
   trait GetCostAndUsageResponse extends js.Object {
@@ -310,11 +310,11 @@ object CostExplorerNs extends js.Object {
     /**
       * How granular you want the forecast to be. You can get 3 months of DAILY forecasts or 12 months of MONTHLY forecasts. The GetCostForecast operation supports only DAILY and MONTHLY granularities.
       */
-    var Granularity: Granularity
+    var Granularity: awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs.Granularity
     /**
       * Which metric Cost Explorer uses to create your forecast. For more information about blended and unblended rates, see Why does the "blended" annotation appear on some line items in my bill?.  Valid values for a GetCostForecast call are the following:   AmortizedCost   BlendedCost   NetAmortizedCost   NetUnblendedCost   UnblendedCost  
       */
-    var Metric: Metric
+    var Metric: awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs.Metric
     /**
       * Cost Explorer always returns the mean forecast as a single point. You can request a prediction interval around the mean by specifying a confidence level. The higher the confidence level, the more confident Cost Explorer is about the actual value falling in the prediction interval. Higher confidence levels result in wider prediction intervals.
       */
@@ -344,7 +344,7 @@ object CostExplorerNs extends js.Object {
     /**
       * The name of the dimension. Each Dimension is available for a different Context. For more information, see Context.
       */
-    var Dimension: Dimension
+    var Dimension: awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs.Dimension
     /**
       * The token to retrieve the next set of results. AWS provides the token when the response from a previous call has more results than the maximum page size.
       */
@@ -409,7 +409,7 @@ object CostExplorerNs extends js.Object {
     /**
       * The amount of time that your reservations covered.
       */
-    var CoveragesByTime: CoveragesByTime
+    var CoveragesByTime: awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs.CoveragesByTime
     /**
       * The token for the next set of retrievable results. AWS provides the token when the response from a previous call has more results than the maximum page size.
       */
@@ -509,7 +509,7 @@ object CostExplorerNs extends js.Object {
     /**
       * The amount of time that you used your RIs.
       */
-    var UtilizationsByTime: UtilizationsByTime
+    var UtilizationsByTime: awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs.UtilizationsByTime
   }
   
   trait GetTagsRequest extends js.Object {

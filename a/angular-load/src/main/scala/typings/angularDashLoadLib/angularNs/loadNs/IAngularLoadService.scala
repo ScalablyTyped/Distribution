@@ -13,10 +13,10 @@ trait IAngularLoadService extends js.Object {
 object IAngularLoadService {
   @scala.inline
   def apply(
-    loadCSS: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[_]],
-    loadScript: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[_]]
+    loadCSS: java.lang.String => angularLib.angularMod.angularNs.IPromise[_],
+    loadScript: java.lang.String => angularLib.angularMod.angularNs.IPromise[_]
   ): IAngularLoadService = {
-    val __obj = js.Dynamic.literal(loadCSS = loadCSS, loadScript = loadScript)
+    val __obj = js.Dynamic.literal(loadCSS = js.Any.fromFunction1(loadCSS), loadScript = js.Any.fromFunction1(loadScript))
   
     __obj.asInstanceOf[IAngularLoadService]
   }

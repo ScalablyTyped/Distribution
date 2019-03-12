@@ -16,21 +16,18 @@ trait ComponentDefinitions extends ComponentLifecycles {
 object ComponentDefinitions {
   @scala.inline
   def apply(
-    attached: js.Function0[scala.Unit],
-    compute: js.Function1[
-      org.scalablytyped.runtime.StringDictionary[js.Any], 
-      org.scalablytyped.runtime.StringDictionary[js.Any]
-    ],
-    created: js.Function0[scala.Unit],
+    attached: () => scala.Unit,
+    compute: org.scalablytyped.runtime.StringDictionary[js.Any] => org.scalablytyped.runtime.StringDictionary[js.Any],
+    created: () => scala.Unit,
     data: org.scalablytyped.runtime.StringDictionary[js.Any],
-    detached: js.Function0[scala.Unit],
+    detached: () => scala.Unit,
     methods: org.scalablytyped.runtime.StringDictionary[js.ThisFunction0[/* this */ Component, _]],
     mixins: js.Array[stdLib.Partial[ComponentDefinitions]],
-    moved: js.Function0[scala.Unit],
+    moved: () => scala.Unit,
     properties: ComponentProperties,
-    ready: js.Function0[scala.Unit]
+    ready: () => scala.Unit
   ): ComponentDefinitions = {
-    val __obj = js.Dynamic.literal(attached = attached, compute = compute, created = created, data = data, detached = detached, methods = methods, mixins = mixins, moved = moved, properties = properties, ready = ready)
+    val __obj = js.Dynamic.literal(attached = js.Any.fromFunction0(attached), compute = js.Any.fromFunction1(compute), created = js.Any.fromFunction0(created), data = data, detached = js.Any.fromFunction0(detached), methods = methods, mixins = mixins, moved = js.Any.fromFunction0(moved), properties = properties, ready = js.Any.fromFunction0(ready))
   
     __obj.asInstanceOf[ComponentDefinitions]
   }

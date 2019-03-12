@@ -21,14 +21,14 @@ object Viewporter {
   def apply(
     ACTIVE: scala.Boolean,
     READY: scala.Boolean,
-    change: js.Function1[stdLib.EventListener, scala.Unit],
+    change: stdLib.EventListener => scala.Unit,
     forceDetection: scala.Boolean,
-    isLandscape: js.Function0[scala.Boolean],
+    isLandscape: () => scala.Boolean,
     preventPageScroll: scala.Boolean,
-    ready: js.Function1[stdLib.EventListener, scala.Unit],
-    refresh: js.Function0[scala.Unit]
+    ready: stdLib.EventListener => scala.Unit,
+    refresh: () => scala.Unit
   ): Viewporter = {
-    val __obj = js.Dynamic.literal(ACTIVE = ACTIVE, READY = READY, change = change, forceDetection = forceDetection, isLandscape = isLandscape, preventPageScroll = preventPageScroll, ready = ready, refresh = refresh)
+    val __obj = js.Dynamic.literal(ACTIVE = ACTIVE, READY = READY, change = js.Any.fromFunction1(change), forceDetection = forceDetection, isLandscape = js.Any.fromFunction0(isLandscape), preventPageScroll = preventPageScroll, ready = js.Any.fromFunction1(ready), refresh = js.Any.fromFunction0(refresh))
   
     __obj.asInstanceOf[Viewporter]
   }

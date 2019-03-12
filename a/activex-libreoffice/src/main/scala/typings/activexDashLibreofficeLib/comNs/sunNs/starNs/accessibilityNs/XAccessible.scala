@@ -48,12 +48,12 @@ object XAccessible {
   @scala.inline
   def apply(
     AccessibleContext: XAccessibleContext,
-    acquire: js.Function0[scala.Unit],
-    getAccessibleContext: js.Function0[XAccessibleContext],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getAccessibleContext: () => XAccessibleContext,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAccessible = {
-    val __obj = js.Dynamic.literal(AccessibleContext = AccessibleContext, acquire = acquire, getAccessibleContext = getAccessibleContext, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(AccessibleContext = AccessibleContext, acquire = js.Any.fromFunction0(acquire), getAccessibleContext = js.Any.fromFunction0(getAccessibleContext), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAccessible]
   }

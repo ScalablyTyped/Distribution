@@ -25,12 +25,12 @@ trait StatusBar extends js.Object {
 object StatusBar {
   @scala.inline
   def apply(
-    addLeftTile: js.Function1[AddTileOptions, Tile],
-    addRightTile: js.Function1[AddTileOptions, Tile],
-    getLeftTiles: js.Function0[js.Array[Tile]],
-    getRightTiles: js.Function0[js.Array[Tile]]
+    addLeftTile: AddTileOptions => Tile,
+    addRightTile: AddTileOptions => Tile,
+    getLeftTiles: () => js.Array[Tile],
+    getRightTiles: () => js.Array[Tile]
   ): StatusBar = {
-    val __obj = js.Dynamic.literal(addLeftTile = addLeftTile, addRightTile = addRightTile, getLeftTiles = getLeftTiles, getRightTiles = getRightTiles)
+    val __obj = js.Dynamic.literal(addLeftTile = js.Any.fromFunction1(addLeftTile), addRightTile = js.Any.fromFunction1(addRightTile), getLeftTiles = js.Any.fromFunction0(getLeftTiles), getRightTiles = js.Any.fromFunction0(getRightTiles))
   
     __obj.asInstanceOf[StatusBar]
   }

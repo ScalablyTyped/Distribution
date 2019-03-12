@@ -13,7 +13,7 @@ trait MulterOptions extends js.Object {
     js.Function3[
       /* req */ expressLib.expressMod.eNs.Request, 
       /* file */ File, 
-      /* callback */ js.Function2[/* error */ nodeLib.Error, /* acceptFile */ scala.Boolean, scala.Unit], 
+      /* callback */ js.Function2[/* error */ stdLib.Error, /* acceptFile */ scala.Boolean, scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -27,18 +27,13 @@ object MulterOptions {
   @scala.inline
   def apply(
     dest: java.lang.String = null,
-    fileFilter: js.Function3[
-      /* req */ expressLib.expressMod.eNs.Request, 
-      /* file */ File, 
-      /* callback */ js.Function2[/* error */ nodeLib.Error, /* acceptFile */ scala.Boolean, scala.Unit], 
-      scala.Unit
-    ] = null,
+    fileFilter: (/* req */ expressLib.expressMod.eNs.Request, /* file */ File, /* callback */ js.Function2[/* error */ stdLib.Error, /* acceptFile */ scala.Boolean, scala.Unit]) => scala.Unit = null,
     limits: swaggerDashExpressDashMiddlewareLib.Anon_FieldNameSize = null,
     storage: StorageEngine = null
   ): MulterOptions = {
     val __obj = js.Dynamic.literal()
     if (dest != null) __obj.updateDynamic("dest")(dest)
-    if (fileFilter != null) __obj.updateDynamic("fileFilter")(fileFilter)
+    if (fileFilter != null) __obj.updateDynamic("fileFilter")(js.Any.fromFunction3(fileFilter))
     if (limits != null) __obj.updateDynamic("limits")(limits)
     if (storage != null) __obj.updateDynamic("storage")(storage)
     __obj.asInstanceOf[MulterOptions]

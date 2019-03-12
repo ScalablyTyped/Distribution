@@ -31,9 +31,9 @@ trait PrinterDescriptor extends js.Object {
     *
     * Setting this property may change the value of {@link PrinterDescriptor.PaperSize} .
     */
-  var PaperFormat: PaperFormat
+  var PaperFormat: activexDashLibreofficeLib.comNs.sunNs.starNs.viewNs.PaperFormat
   /** specifies the orientation of the paper. */
-  var PaperOrientation: PaperOrientation
+  var PaperOrientation: activexDashLibreofficeLib.comNs.sunNs.starNs.viewNs.PaperOrientation
   /**
     * specifies the size of the paper in 100th mm.
     *

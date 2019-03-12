@@ -17,20 +17,20 @@ trait TileLayerEvents extends js.Object {
 object TileLayerEvents {
   @scala.inline
   def apply(
-    onload: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    onloading: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    ontileerror: js.Function1[/* event */ leafletLib.leafletMod.TileEvent, scala.Unit] = null,
-    ontileload: js.Function1[/* event */ leafletLib.leafletMod.TileEvent, scala.Unit] = null,
-    ontileloadstart: js.Function1[/* event */ leafletLib.leafletMod.TileEvent, scala.Unit] = null,
-    ontileunload: js.Function1[/* event */ leafletLib.leafletMod.TileEvent, scala.Unit] = null
+    onload: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    onloading: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    ontileerror: /* event */ leafletLib.leafletMod.TileEvent => scala.Unit = null,
+    ontileload: /* event */ leafletLib.leafletMod.TileEvent => scala.Unit = null,
+    ontileloadstart: /* event */ leafletLib.leafletMod.TileEvent => scala.Unit = null,
+    ontileunload: /* event */ leafletLib.leafletMod.TileEvent => scala.Unit = null
   ): TileLayerEvents = {
     val __obj = js.Dynamic.literal()
-    if (onload != null) __obj.updateDynamic("onload")(onload)
-    if (onloading != null) __obj.updateDynamic("onloading")(onloading)
-    if (ontileerror != null) __obj.updateDynamic("ontileerror")(ontileerror)
-    if (ontileload != null) __obj.updateDynamic("ontileload")(ontileload)
-    if (ontileloadstart != null) __obj.updateDynamic("ontileloadstart")(ontileloadstart)
-    if (ontileunload != null) __obj.updateDynamic("ontileunload")(ontileunload)
+    if (onload != null) __obj.updateDynamic("onload")(js.Any.fromFunction1(onload))
+    if (onloading != null) __obj.updateDynamic("onloading")(js.Any.fromFunction1(onloading))
+    if (ontileerror != null) __obj.updateDynamic("ontileerror")(js.Any.fromFunction1(ontileerror))
+    if (ontileload != null) __obj.updateDynamic("ontileload")(js.Any.fromFunction1(ontileload))
+    if (ontileloadstart != null) __obj.updateDynamic("ontileloadstart")(js.Any.fromFunction1(ontileloadstart))
+    if (ontileunload != null) __obj.updateDynamic("ontileunload")(js.Any.fromFunction1(ontileunload))
     __obj.asInstanceOf[TileLayerEvents]
   }
 }

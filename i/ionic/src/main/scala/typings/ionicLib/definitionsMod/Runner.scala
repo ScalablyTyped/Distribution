@@ -11,8 +11,8 @@ trait Runner[T /* <: js.Object */, U] extends js.Object {
 
 object Runner {
   @scala.inline
-  def apply[T /* <: js.Object */, U](run: js.Function1[T, js.Promise[U]]): Runner[T, U] = {
-    val __obj = js.Dynamic.literal(run = run)
+  def apply[T /* <: js.Object */, U](run: T => js.Promise[U]): Runner[T, U] = {
+    val __obj = js.Dynamic.literal(run = js.Any.fromFunction1(run))
   
     __obj.asInstanceOf[Runner[T, U]]
   }

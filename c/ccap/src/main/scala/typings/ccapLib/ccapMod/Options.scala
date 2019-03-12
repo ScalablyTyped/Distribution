@@ -24,7 +24,7 @@ object Options {
   @scala.inline
   def apply(
     fontsize: scala.Int | scala.Double = null,
-    generate: js.Function0[java.lang.String] = null,
+    generate: () => java.lang.String = null,
     height: scala.Int | scala.Double = null,
     offset: scala.Int | scala.Double = null,
     quality: scala.Int | scala.Double = null,
@@ -32,7 +32,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (fontsize != null) __obj.updateDynamic("fontsize")(fontsize.asInstanceOf[js.Any])
-    if (generate != null) __obj.updateDynamic("generate")(generate)
+    if (generate != null) __obj.updateDynamic("generate")(js.Any.fromFunction0(generate))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])

@@ -82,7 +82,7 @@ trait XDocumentDigitalSignatures
   def verifyDocumentContentSignatures(
     xStorage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage,
     xSignInStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream
-  ): activexDashInteropLib.SafeArray[DocumentSignatureInformation]
+  ): stdLib.SafeArray[DocumentSignatureInformation]
   /**
     * checks for digital signatures and their status.
     *
@@ -91,7 +91,7 @@ trait XDocumentDigitalSignatures
   def verifyPackageSignatures(
     Storage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage,
     xSignInStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream
-  ): activexDashInteropLib.SafeArray[DocumentSignatureInformation]
+  ): stdLib.SafeArray[DocumentSignatureInformation]
   /**
     * checks for digital signatures and their status.
     *
@@ -100,7 +100,7 @@ trait XDocumentDigitalSignatures
   def verifyScriptingContentSignatures(
     xStorage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage,
     xSignInStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream
-  ): activexDashInteropLib.SafeArray[DocumentSignatureInformation]
+  ): stdLib.SafeArray[DocumentSignatureInformation]
 }
 
 object XDocumentDigitalSignatures {
@@ -109,66 +109,30 @@ object XDocumentDigitalSignatures {
     DocumentContentSignatureDefaultStreamName: java.lang.String,
     PackageSignatureDefaultStreamName: java.lang.String,
     ScriptingContentSignatureDefaultStreamName: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    addAuthorToTrustedSources: js.Function1[XCertificate, scala.Unit],
-    addLocationToTrustedSources: js.Function1[java.lang.String, scala.Unit],
-    chooseCertificate: js.Function1[js.Array[java.lang.String], XCertificate],
-    getDocumentContentSignatureDefaultStreamName: js.Function0[java.lang.String],
-    getPackageSignatureDefaultStreamName: js.Function0[java.lang.String],
-    getScriptingContentSignatureDefaultStreamName: js.Function0[java.lang.String],
-    isAuthorTrusted: js.Function1[XCertificate, scala.Boolean],
-    isLocationTrusted: js.Function1[java.lang.String, scala.Boolean],
-    manageTrustedSources: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    showCertificate: js.Function1[XCertificate, scala.Unit],
-    showDocumentContentSignatures: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      scala.Unit
-    ],
-    showPackageSignatures: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      scala.Unit
-    ],
-    showScriptingContentSignatures: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      scala.Unit
-    ],
-    signDocumentContent: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream, 
-      scala.Boolean
-    ],
-    signPackage: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream, 
-      scala.Boolean
-    ],
-    signScriptingContent: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream, 
-      scala.Boolean
-    ],
-    verifyDocumentContentSignatures: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      activexDashInteropLib.SafeArray[DocumentSignatureInformation]
-    ],
-    verifyPackageSignatures: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      activexDashInteropLib.SafeArray[DocumentSignatureInformation]
-    ],
-    verifyScriptingContentSignatures: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      activexDashInteropLib.SafeArray[DocumentSignatureInformation]
-    ]
+    acquire: () => scala.Unit,
+    addAuthorToTrustedSources: XCertificate => scala.Unit,
+    addLocationToTrustedSources: java.lang.String => scala.Unit,
+    chooseCertificate: js.Array[java.lang.String] => XCertificate,
+    getDocumentContentSignatureDefaultStreamName: () => java.lang.String,
+    getPackageSignatureDefaultStreamName: () => java.lang.String,
+    getScriptingContentSignatureDefaultStreamName: () => java.lang.String,
+    isAuthorTrusted: XCertificate => scala.Boolean,
+    isLocationTrusted: java.lang.String => scala.Boolean,
+    manageTrustedSources: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    showCertificate: XCertificate => scala.Unit,
+    showDocumentContentSignatures: (activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream) => scala.Unit,
+    showPackageSignatures: (activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream) => scala.Unit,
+    showScriptingContentSignatures: (activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream) => scala.Unit,
+    signDocumentContent: (activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream) => scala.Boolean,
+    signPackage: (activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream) => scala.Boolean,
+    signScriptingContent: (activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream) => scala.Boolean,
+    verifyDocumentContentSignatures: (activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream) => stdLib.SafeArray[DocumentSignatureInformation],
+    verifyPackageSignatures: (activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream) => stdLib.SafeArray[DocumentSignatureInformation],
+    verifyScriptingContentSignatures: (activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream) => stdLib.SafeArray[DocumentSignatureInformation]
   ): XDocumentDigitalSignatures = {
-    val __obj = js.Dynamic.literal(DocumentContentSignatureDefaultStreamName = DocumentContentSignatureDefaultStreamName, PackageSignatureDefaultStreamName = PackageSignatureDefaultStreamName, ScriptingContentSignatureDefaultStreamName = ScriptingContentSignatureDefaultStreamName, acquire = acquire, addAuthorToTrustedSources = addAuthorToTrustedSources, addLocationToTrustedSources = addLocationToTrustedSources, chooseCertificate = chooseCertificate, getDocumentContentSignatureDefaultStreamName = getDocumentContentSignatureDefaultStreamName, getPackageSignatureDefaultStreamName = getPackageSignatureDefaultStreamName, getScriptingContentSignatureDefaultStreamName = getScriptingContentSignatureDefaultStreamName, isAuthorTrusted = isAuthorTrusted, isLocationTrusted = isLocationTrusted, manageTrustedSources = manageTrustedSources, queryInterface = queryInterface, release = release, showCertificate = showCertificate, showDocumentContentSignatures = showDocumentContentSignatures, showPackageSignatures = showPackageSignatures, showScriptingContentSignatures = showScriptingContentSignatures, signDocumentContent = signDocumentContent, signPackage = signPackage, signScriptingContent = signScriptingContent, verifyDocumentContentSignatures = verifyDocumentContentSignatures, verifyPackageSignatures = verifyPackageSignatures, verifyScriptingContentSignatures = verifyScriptingContentSignatures)
+    val __obj = js.Dynamic.literal(DocumentContentSignatureDefaultStreamName = DocumentContentSignatureDefaultStreamName, PackageSignatureDefaultStreamName = PackageSignatureDefaultStreamName, ScriptingContentSignatureDefaultStreamName = ScriptingContentSignatureDefaultStreamName, acquire = js.Any.fromFunction0(acquire), addAuthorToTrustedSources = js.Any.fromFunction1(addAuthorToTrustedSources), addLocationToTrustedSources = js.Any.fromFunction1(addLocationToTrustedSources), chooseCertificate = js.Any.fromFunction1(chooseCertificate), getDocumentContentSignatureDefaultStreamName = js.Any.fromFunction0(getDocumentContentSignatureDefaultStreamName), getPackageSignatureDefaultStreamName = js.Any.fromFunction0(getPackageSignatureDefaultStreamName), getScriptingContentSignatureDefaultStreamName = js.Any.fromFunction0(getScriptingContentSignatureDefaultStreamName), isAuthorTrusted = js.Any.fromFunction1(isAuthorTrusted), isLocationTrusted = js.Any.fromFunction1(isLocationTrusted), manageTrustedSources = js.Any.fromFunction0(manageTrustedSources), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), showCertificate = js.Any.fromFunction1(showCertificate), showDocumentContentSignatures = js.Any.fromFunction2(showDocumentContentSignatures), showPackageSignatures = js.Any.fromFunction2(showPackageSignatures), showScriptingContentSignatures = js.Any.fromFunction2(showScriptingContentSignatures), signDocumentContent = js.Any.fromFunction2(signDocumentContent), signPackage = js.Any.fromFunction2(signPackage), signScriptingContent = js.Any.fromFunction2(signScriptingContent), verifyDocumentContentSignatures = js.Any.fromFunction2(verifyDocumentContentSignatures), verifyPackageSignatures = js.Any.fromFunction2(verifyPackageSignatures), verifyScriptingContentSignatures = js.Any.fromFunction2(verifyScriptingContentSignatures))
   
     __obj.asInstanceOf[XDocumentDigitalSignatures]
   }

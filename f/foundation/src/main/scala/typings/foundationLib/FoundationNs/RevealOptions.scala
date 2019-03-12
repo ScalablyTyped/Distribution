@@ -29,15 +29,15 @@ object RevealOptions {
     animation_speed: scala.Int | scala.Double = null,
     bg: foundationLib.JQuery = null,
     bg_class: java.lang.String = null,
-    close: js.Function0[_] = null,
+    close: () => _ = null,
     close_on_background_click: js.UndefOr[scala.Boolean] = js.undefined,
-    closed: js.Function0[_] = null,
+    closed: () => _ = null,
     css: foundationLib.Anon_Close = null,
     dismiss_modal_class: java.lang.String = null,
     multiple_opened: js.UndefOr[scala.Boolean] = js.undefined,
-    on_ajax_error: js.Function0[_] = null,
-    open: js.Function0[_] = null,
-    opened: js.Function0[_] = null,
+    on_ajax_error: () => _ = null,
+    open: () => _ = null,
+    opened: () => _ = null,
     root_element: java.lang.String = null
   ): RevealOptions = {
     val __obj = js.Dynamic.literal()
@@ -45,15 +45,15 @@ object RevealOptions {
     if (animation_speed != null) __obj.updateDynamic("animation_speed")(animation_speed.asInstanceOf[js.Any])
     if (bg != null) __obj.updateDynamic("bg")(bg)
     if (bg_class != null) __obj.updateDynamic("bg_class")(bg_class)
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction0(close))
     if (!js.isUndefined(close_on_background_click)) __obj.updateDynamic("close_on_background_click")(close_on_background_click)
-    if (closed != null) __obj.updateDynamic("closed")(closed)
+    if (closed != null) __obj.updateDynamic("closed")(js.Any.fromFunction0(closed))
     if (css != null) __obj.updateDynamic("css")(css)
     if (dismiss_modal_class != null) __obj.updateDynamic("dismiss_modal_class")(dismiss_modal_class)
     if (!js.isUndefined(multiple_opened)) __obj.updateDynamic("multiple_opened")(multiple_opened)
-    if (on_ajax_error != null) __obj.updateDynamic("on_ajax_error")(on_ajax_error)
-    if (open != null) __obj.updateDynamic("open")(open)
-    if (opened != null) __obj.updateDynamic("opened")(opened)
+    if (on_ajax_error != null) __obj.updateDynamic("on_ajax_error")(js.Any.fromFunction0(on_ajax_error))
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction0(open))
+    if (opened != null) __obj.updateDynamic("opened")(js.Any.fromFunction0(opened))
     if (root_element != null) __obj.updateDynamic("root_element")(root_element)
     __obj.asInstanceOf[RevealOptions]
   }

@@ -82,10 +82,10 @@ trait ASPxClientRichEditPopupMenuItem extends js.Object {
 object ASPxClientRichEditPopupMenuItem {
   @scala.inline
   def apply(
-    GetItem: js.Function1[scala.Double, ASPxClientRichEditPopupMenuItem],
-    GetItemByName: js.Function1[java.lang.String, ASPxClientRichEditPopupMenuItem],
-    GetItemCount: js.Function0[scala.Double],
-    GetSubItems: js.Function0[ASPxClientRichEditPopupMenuItemCollection],
+    GetItem: scala.Double => ASPxClientRichEditPopupMenuItem,
+    GetItemByName: java.lang.String => ASPxClientRichEditPopupMenuItem,
+    GetItemCount: () => scala.Double,
+    GetSubItems: () => ASPxClientRichEditPopupMenuItemCollection,
     beginGroup: scala.Boolean,
     enabled: scala.Boolean,
     imageClassName: java.lang.String,
@@ -97,7 +97,7 @@ object ASPxClientRichEditPopupMenuItem {
     text: java.lang.String,
     tooltip: java.lang.String
   ): ASPxClientRichEditPopupMenuItem = {
-    val __obj = js.Dynamic.literal(GetItem = GetItem, GetItemByName = GetItemByName, GetItemCount = GetItemCount, GetSubItems = GetSubItems, beginGroup = beginGroup, enabled = enabled, imageClassName = imageClassName, imageUrl = imageUrl, name = name, navigateUrl = navigateUrl, parent = parent, target = target, text = text, tooltip = tooltip)
+    val __obj = js.Dynamic.literal(GetItem = js.Any.fromFunction1(GetItem), GetItemByName = js.Any.fromFunction1(GetItemByName), GetItemCount = js.Any.fromFunction0(GetItemCount), GetSubItems = js.Any.fromFunction0(GetSubItems), beginGroup = beginGroup, enabled = enabled, imageClassName = imageClassName, imageUrl = imageUrl, name = name, navigateUrl = navigateUrl, parent = parent, target = target, text = text, tooltip = tooltip)
   
     __obj.asInstanceOf[ASPxClientRichEditPopupMenuItem]
   }

@@ -12,14 +12,14 @@ trait ResultBuilder extends QueryResult {
 object ResultBuilder {
   @scala.inline
   def apply(
-    addRow: js.Function1[js.Any, scala.Unit],
+    addRow: js.Any => scala.Unit,
     command: java.lang.String,
     fields: js.Array[FieldDef],
     oid: scala.Double,
     rowCount: scala.Double,
     rows: js.Array[_]
   ): ResultBuilder = {
-    val __obj = js.Dynamic.literal(addRow = addRow, command = command, fields = fields, oid = oid, rowCount = rowCount, rows = rows)
+    val __obj = js.Dynamic.literal(addRow = js.Any.fromFunction1(addRow), command = command, fields = fields, oid = oid, rowCount = rowCount, rows = rows)
   
     __obj.asInstanceOf[ResultBuilder]
   }

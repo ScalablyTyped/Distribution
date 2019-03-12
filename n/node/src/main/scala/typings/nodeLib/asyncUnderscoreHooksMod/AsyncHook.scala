@@ -18,8 +18,8 @@ trait AsyncHook extends js.Object {
 
 object AsyncHook {
   @scala.inline
-  def apply(disable: js.Function0[AsyncHook], enable: js.Function0[AsyncHook]): AsyncHook = {
-    val __obj = js.Dynamic.literal(disable = disable, enable = enable)
+  def apply(disable: () => AsyncHook, enable: () => AsyncHook): AsyncHook = {
+    val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable))
   
     __obj.asInstanceOf[AsyncHook]
   }

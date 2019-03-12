@@ -19,13 +19,13 @@ trait PolicyInformation extends js.Object {
 object PolicyInformation {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     policyIdentifier: java.lang.String,
     policyQualifiers: js.Array[pkijsLib.srcPolicyQualifierInfoMod.default],
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): PolicyInformation = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, policyIdentifier = policyIdentifier, policyQualifiers = policyQualifiers, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), policyIdentifier = policyIdentifier, policyQualifiers = policyQualifiers, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[PolicyInformation]
   }

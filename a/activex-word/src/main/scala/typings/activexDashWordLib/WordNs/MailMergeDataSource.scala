@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MailMergeDataSource protected () extends js.Object {
   var ActiveRecord: WdMailMergeActiveRecord = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val ConnectString: java.lang.String = js.native
   val Creator: scala.Double = js.native
   val DataFields: MailMergeDataFields = js.native
@@ -21,7 +21,7 @@ class MailMergeDataSource protected () extends js.Object {
   var InvalidAddress: scala.Boolean = js.native
   var InvalidComments: java.lang.String = js.native
   var LastRecord: scala.Double = js.native
-  val MappedDataFields: MappedDataFields = js.native
+  val MappedDataFields: activexDashWordLib.WordNs.MappedDataFields = js.native
   val Name: java.lang.String = js.native
   val Parent: js.Any = js.native
   var QueryString: java.lang.String = js.native

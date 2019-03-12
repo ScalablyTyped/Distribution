@@ -13,11 +13,11 @@ trait Budget extends js.Object {
   /**
     * The name of a budget. The name must be unique within accounts. The : and \ characters aren't allowed in BudgetName.
     */
-  var BudgetName: BudgetName
+  var BudgetName: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.BudgetName
   /**
     * Whether this budget tracks monetary costs, usage, RI utilization, or RI coverage.
     */
-  var BudgetType: BudgetType
+  var BudgetType: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.BudgetType
   /**
     * The actual and forecasted cost or usage that the budget tracks.
     */
@@ -41,7 +41,7 @@ trait Budget extends js.Object {
   /**
     * The length of time until a budget resets the actual and forecasted spend. DAILY is available only for RI_UTILIZATION and RI_COVERAGE budgets.
     */
-  var TimeUnit: TimeUnit
+  var TimeUnit: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.TimeUnit
 }
 
 object Budget {

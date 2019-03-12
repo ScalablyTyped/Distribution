@@ -16,9 +16,9 @@ object StatelessProps {
   @scala.inline
   def apply(
     isEditing: scala.Boolean,
-    onCancel: js.Function0[scala.Unit],
-    onConfirm: js.Function0[scala.Unit],
-    onEditRequested: js.Function0[scala.Unit],
+    onCancel: () => scala.Unit,
+    onConfirm: () => scala.Unit,
+    onEditRequested: () => scala.Unit,
     readView: reactLib.reactMod.ReactNs.ReactElement[_],
     areActionButtonsHidden: js.UndefOr[scala.Boolean] = js.undefined,
     disableEditViewFieldBase: js.UndefOr[scala.Boolean] = js.undefined,
@@ -33,7 +33,7 @@ object StatelessProps {
     labelHtmlFor: java.lang.String = null,
     shouldConfirmOnEnter: js.UndefOr[scala.Boolean] = js.undefined
   ): StatelessProps = {
-    val __obj = js.Dynamic.literal(isEditing = isEditing, onCancel = onCancel, onConfirm = onConfirm, onEditRequested = onEditRequested, readView = readView)
+    val __obj = js.Dynamic.literal(isEditing = isEditing, onCancel = js.Any.fromFunction0(onCancel), onConfirm = js.Any.fromFunction0(onConfirm), onEditRequested = js.Any.fromFunction0(onEditRequested), readView = readView)
     if (!js.isUndefined(areActionButtonsHidden)) __obj.updateDynamic("areActionButtonsHidden")(areActionButtonsHidden)
     if (!js.isUndefined(disableEditViewFieldBase)) __obj.updateDynamic("disableEditViewFieldBase")(disableEditViewFieldBase)
     if (editView != null) __obj.updateDynamic("editView")(editView)

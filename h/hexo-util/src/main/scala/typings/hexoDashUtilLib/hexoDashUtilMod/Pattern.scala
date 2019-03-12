@@ -12,9 +12,9 @@ trait Pattern[T] extends js.Object {
 
 object Pattern {
   @scala.inline
-  def apply[T](`match`: js.Function1[java.lang.String, T], test: js.Function1[java.lang.String, scala.Boolean]): Pattern[T] = {
-    val __obj = js.Dynamic.literal(test = test)
-    __obj.updateDynamic("match")(`match`)
+  def apply[T](`match`: java.lang.String => T, test: java.lang.String => scala.Boolean): Pattern[T] = {
+    val __obj = js.Dynamic.literal(test = js.Any.fromFunction1(test))
+    __obj.updateDynamic("match")(js.Any.fromFunction1(`match`))
     __obj.asInstanceOf[Pattern[T]]
   }
 }

@@ -13,14 +13,14 @@ object ^ extends js.Object {
   /**
     * Gets the current priority at which the caller is executing.
     **/
-  var currentPriority: winjsLib.WinJSNs.UtilitiesNs.SchedulerNs.Priority = js.native
+  var currentPriority: Priority = js.native
   //#endregion Properties
   //#region Functions
   /**
     * Creates and returns a new IOwnerToken which can be set to the owner property of one or more jobs.
     * @returns A new IOwnerToken which can be set to the owner property of one or more jobs.
     **/
-  def createOwnerToken(): winjsLib.WinJSNs.UtilitiesNs.SchedulerNs.IOwnerToken = js.native
+  def createOwnerToken(): IOwnerToken = js.native
   /**
     * Runs the specified callback in a high priority context.
     * @param callback The callback to run in a high priority callback.
@@ -34,8 +34,8 @@ object ^ extends js.Object {
     * @returns A Promise which completes when the drain has finished. Canceling this Promise cancels the drain request. This Promise will never enter an error state.
     **/
   def requestDrain(): winjsLib.WinJSNs.Promise[_] = js.native
-  def requestDrain(priority: winjsLib.WinJSNs.UtilitiesNs.SchedulerNs.Priority): winjsLib.WinJSNs.Promise[_] = js.native
-  def requestDrain(priority: winjsLib.WinJSNs.UtilitiesNs.SchedulerNs.Priority, name: java.lang.String): winjsLib.WinJSNs.Promise[_] = js.native
+  def requestDrain(priority: Priority): winjsLib.WinJSNs.Promise[_] = js.native
+  def requestDrain(priority: Priority, name: java.lang.String): winjsLib.WinJSNs.Promise[_] = js.native
   /**
     * Returns a string representation of the scheduler's state for diagnostic purposes. The jobs and drain requests are displayed in the order in which they are currently expected to be processed. The current job and drain request are marked by an asterisk.
     * @returns A string representation of the scheduler's state for diagnostic purposes. The jobs and drain requests are displayed in the order in which they are currently expected to be processed. The current job and drain request are marked by an asterisk.
@@ -49,22 +49,15 @@ object ^ extends js.Object {
     * @param name A description of the work item for diagnostics. The default value is an empty string.
     * @returns The job instance that represents this work item.
     **/
-  def schedule(work: js.Function1[/* jobInfo */ winjsLib.WinJSNs.UtilitiesNs.SchedulerNs.IJobInfo, _]): winjsLib.WinJSNs.UtilitiesNs.SchedulerNs.IJob = js.native
+  def schedule(work: js.Function1[/* jobInfo */ IJobInfo, _]): IJob = js.native
+  def schedule(work: js.Function1[/* jobInfo */ IJobInfo, _], priority: Priority): IJob = js.native
+  def schedule(work: js.Function1[/* jobInfo */ IJobInfo, _], priority: Priority, thisArg: js.Any): IJob = js.native
   def schedule(
-    work: js.Function1[/* jobInfo */ winjsLib.WinJSNs.UtilitiesNs.SchedulerNs.IJobInfo, _],
-    priority: winjsLib.WinJSNs.UtilitiesNs.SchedulerNs.Priority
-  ): winjsLib.WinJSNs.UtilitiesNs.SchedulerNs.IJob = js.native
-  def schedule(
-    work: js.Function1[/* jobInfo */ winjsLib.WinJSNs.UtilitiesNs.SchedulerNs.IJobInfo, _],
-    priority: winjsLib.WinJSNs.UtilitiesNs.SchedulerNs.Priority,
-    thisArg: js.Any
-  ): winjsLib.WinJSNs.UtilitiesNs.SchedulerNs.IJob = js.native
-  def schedule(
-    work: js.Function1[/* jobInfo */ winjsLib.WinJSNs.UtilitiesNs.SchedulerNs.IJobInfo, _],
-    priority: winjsLib.WinJSNs.UtilitiesNs.SchedulerNs.Priority,
+    work: js.Function1[/* jobInfo */ IJobInfo, _],
+    priority: Priority,
     thisArg: js.Any,
     name: java.lang.String
-  ): winjsLib.WinJSNs.UtilitiesNs.SchedulerNs.IJob = js.native
+  ): IJob = js.native
   /**
     * Schedules a job to complete the returned Promise at WinJS.Utilities.Scheduler.Priority.aboveNormal priority.
     * @param promiseValue The value returned by the completed Promise.

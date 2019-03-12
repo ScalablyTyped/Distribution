@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.MailingLabel")
 @js.native
 class MailingLabel protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
-  val CustomLabels: CustomLabels = js.native
+  val CustomLabels: activexDashWordLib.WordNs.CustomLabels = js.native
   var DefaultLabelName: java.lang.String = js.native
   var DefaultLaserTray: WdPaperTray = js.native
   var DefaultPrintBarCode: scala.Boolean = js.native

@@ -61,7 +61,7 @@ trait Global extends js.Object {
   var Uint8ClampedArray: js.Function = js.native
   var WeakMap: stdLib.WeakMapConstructor = js.native
   var WeakSet: js.Function = js.native
-  var console: nodeLib.Console with stdLib.Console = js.native
+  var console: stdLib.Console = js.native
   @JSName("decodeURIComponent")
   var decodeURIComponent_Original: js.Function1[/* encodedURIComponent */ java.lang.String, java.lang.String] = js.native
   @JSName("decodeURI")

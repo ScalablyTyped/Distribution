@@ -16,7 +16,7 @@ object Props {
   @scala.inline
   def apply(
     value: scala.Double,
-    children: js.Function1[/* formattedNumber */ java.lang.String, reactLib.reactMod.ReactNs.ReactNode] = null,
+    children: /* formattedNumber */ java.lang.String => reactLib.reactMod.ReactNs.ReactNode = null,
     currency: java.lang.String = null,
     currencyDisplay: java.lang.String = null,
     format: java.lang.String = null,
@@ -30,7 +30,7 @@ object Props {
     useGrouping: js.UndefOr[scala.Boolean] = js.undefined
   ): Props = {
     val __obj = js.Dynamic.literal(value = value)
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (currency != null) __obj.updateDynamic("currency")(currency)
     if (currencyDisplay != null) __obj.updateDynamic("currencyDisplay")(currencyDisplay)
     if (format != null) __obj.updateDynamic("format")(format)

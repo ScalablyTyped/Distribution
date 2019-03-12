@@ -15,11 +15,11 @@ trait JoinRequestPlugin extends js.Object {
 object JoinRequestPlugin {
   @scala.inline
   def apply(
-    apply: js.Function1[enhancedDashResolveLib.libResolverMod.namespaced, scala.Unit],
+    apply: enhancedDashResolveLib.libResolverMod.namespaced => scala.Unit,
     source: java.lang.String,
     target: java.lang.String
   ): JoinRequestPlugin = {
-    val __obj = js.Dynamic.literal(apply = apply, source = source, target = target)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), source = source, target = target)
   
     __obj.asInstanceOf[JoinRequestPlugin]
   }

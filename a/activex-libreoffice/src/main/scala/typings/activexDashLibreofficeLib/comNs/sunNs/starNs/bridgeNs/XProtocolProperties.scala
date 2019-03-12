@@ -19,7 +19,7 @@ trait XProtocolProperties
     *
     * The properties MUST NOT change between a requestChange and a commit change call.
     */
-  val Properties: activexDashInteropLib.SafeArray[ProtocolProperty]
+  val Properties: stdLib.SafeArray[ProtocolProperty]
   /**
     * called to commit a protocol change.
     *
@@ -36,7 +36,7 @@ trait XProtocolProperties
     *
     * The properties MUST NOT change between a requestChange and a commit change call.
     */
-  def getProperties(): activexDashInteropLib.SafeArray[ProtocolProperty]
+  def getProperties(): stdLib.SafeArray[ProtocolProperty]
   /**
     * called to initiate a protocol change.
     *
@@ -51,15 +51,15 @@ trait XProtocolProperties
 object XProtocolProperties {
   @scala.inline
   def apply(
-    Properties: activexDashInteropLib.SafeArray[ProtocolProperty],
-    acquire: js.Function0[scala.Unit],
-    commitChange: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ProtocolProperty], scala.Unit],
-    getProperties: js.Function0[activexDashInteropLib.SafeArray[ProtocolProperty]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    requestChange: js.Function1[scala.Double, scala.Double]
+    Properties: stdLib.SafeArray[ProtocolProperty],
+    acquire: () => scala.Unit,
+    commitChange: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ProtocolProperty] => scala.Unit,
+    getProperties: () => stdLib.SafeArray[ProtocolProperty],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    requestChange: scala.Double => scala.Double
   ): XProtocolProperties = {
-    val __obj = js.Dynamic.literal(Properties = Properties, acquire = acquire, commitChange = commitChange, getProperties = getProperties, queryInterface = queryInterface, release = release, requestChange = requestChange)
+    val __obj = js.Dynamic.literal(Properties = Properties, acquire = js.Any.fromFunction0(acquire), commitChange = js.Any.fromFunction1(commitChange), getProperties = js.Any.fromFunction0(getProperties), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), requestChange = js.Any.fromFunction1(requestChange))
   
     __obj.asInstanceOf[XProtocolProperties]
   }

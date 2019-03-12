@@ -48,26 +48,13 @@ trait XNumberFormatPreviewer
 object XNumberFormatPreviewer {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    convertNumberToPreviewString: js.Function4[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Boolean, 
-      java.lang.String
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    queryPreviewColorForNumber: js.Function5[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Boolean, 
-      Color, 
-      Color
-    ],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    convertNumberToPreviewString: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Boolean) => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    queryPreviewColorForNumber: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Boolean, Color) => Color,
+    release: () => scala.Unit
   ): XNumberFormatPreviewer = {
-    val __obj = js.Dynamic.literal(acquire = acquire, convertNumberToPreviewString = convertNumberToPreviewString, queryInterface = queryInterface, queryPreviewColorForNumber = queryPreviewColorForNumber, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), convertNumberToPreviewString = js.Any.fromFunction4(convertNumberToPreviewString), queryInterface = js.Any.fromFunction1(queryInterface), queryPreviewColorForNumber = js.Any.fromFunction5(queryPreviewColorForNumber), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XNumberFormatPreviewer]
   }

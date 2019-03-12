@@ -14,11 +14,11 @@ trait WebcamFrameRate extends js.Object {
 object WebcamFrameRate {
   @scala.inline
   def apply(
-    Get: js.Function1[scala.Double, java.lang.String],
-    GetCount: js.Function0[scala.Double],
-    GetCurrent: js.Function0[java.lang.String]
+    Get: scala.Double => java.lang.String,
+    GetCount: () => scala.Double,
+    GetCurrent: () => java.lang.String
   ): WebcamFrameRate = {
-    val __obj = js.Dynamic.literal(Get = Get, GetCount = GetCount, GetCurrent = GetCurrent)
+    val __obj = js.Dynamic.literal(Get = js.Any.fromFunction1(Get), GetCount = js.Any.fromFunction0(GetCount), GetCurrent = js.Any.fromFunction0(GetCurrent))
   
     __obj.asInstanceOf[WebcamFrameRate]
   }

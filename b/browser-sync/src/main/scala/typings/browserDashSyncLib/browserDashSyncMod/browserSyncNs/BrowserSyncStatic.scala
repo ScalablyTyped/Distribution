@@ -17,7 +17,7 @@ trait BrowserSyncStatic extends BrowserSyncInstance {
     */
   def apply(): BrowserSyncInstance = js.native
   def apply(config: Options): BrowserSyncInstance = js.native
-  def apply(config: Options, callback: js.Function2[/* err */ nodeLib.Error, /* bs */ js.Object, _]): BrowserSyncInstance = js.native
+  def apply(config: Options, callback: js.Function2[/* err */ stdLib.Error, /* bs */ js.Object, _]): BrowserSyncInstance = js.native
   /**
     * Create a Browsersync instance
     * @param name an identifier that can used for retrieval later

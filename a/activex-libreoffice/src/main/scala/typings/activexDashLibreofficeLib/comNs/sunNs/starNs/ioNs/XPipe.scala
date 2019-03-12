@@ -21,27 +21,19 @@ trait XPipe
 object XPipe {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    available: js.Function0[scala.Double],
-    closeInput: js.Function0[scala.Unit],
-    closeOutput: js.Function0[scala.Unit],
-    flush: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    readBytes: js.Function2[
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      scala.Double, 
-      scala.Double
-    ],
-    readSomeBytes: js.Function2[
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      scala.Double, 
-      scala.Double
-    ],
-    release: js.Function0[scala.Unit],
-    skipBytes: js.Function1[scala.Double, scala.Unit],
-    writeBytes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
+    acquire: () => scala.Unit,
+    available: () => scala.Double,
+    closeInput: () => scala.Unit,
+    closeOutput: () => scala.Unit,
+    flush: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    readBytes: (js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], scala.Double) => scala.Double,
+    readSomeBytes: (js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], scala.Double) => scala.Double,
+    release: () => scala.Unit,
+    skipBytes: scala.Double => scala.Unit,
+    writeBytes: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => scala.Unit
   ): XPipe = {
-    val __obj = js.Dynamic.literal(acquire = acquire, available = available, closeInput = closeInput, closeOutput = closeOutput, flush = flush, queryInterface = queryInterface, readBytes = readBytes, readSomeBytes = readSomeBytes, release = release, skipBytes = skipBytes, writeBytes = writeBytes)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), available = js.Any.fromFunction0(available), closeInput = js.Any.fromFunction0(closeInput), closeOutput = js.Any.fromFunction0(closeOutput), flush = js.Any.fromFunction0(flush), queryInterface = js.Any.fromFunction1(queryInterface), readBytes = js.Any.fromFunction2(readBytes), readSomeBytes = js.Any.fromFunction2(readSomeBytes), release = js.Any.fromFunction0(release), skipBytes = js.Any.fromFunction1(skipBytes), writeBytes = js.Any.fromFunction1(writeBytes))
   
     __obj.asInstanceOf[XPipe]
   }

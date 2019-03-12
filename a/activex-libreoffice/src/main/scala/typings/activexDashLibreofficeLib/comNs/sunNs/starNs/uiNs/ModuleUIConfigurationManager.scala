@@ -35,52 +35,34 @@ object ModuleUIConfigurationManager {
     EventsManager: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     ImageManager: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     ShortCutManager: XAcceleratorConfiguration,
-    acquire: js.Function0[scala.Unit],
-    addConfigurationListener: js.Function1[XUIConfigurationListener, scala.Unit],
-    createDefault: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    createSettings: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer],
-    getDefaultSettings: js.Function1[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
+    acquire: () => scala.Unit,
+    addConfigurationListener: XUIConfigurationListener => scala.Unit,
+    createDefault: (java.lang.String, java.lang.String) => scala.Unit,
+    createSettings: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer,
+    getDefaultSettings: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    getEventsManager: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getImageManager: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getSettings: (java.lang.String, scala.Boolean) => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    getShortCutManager: () => XAcceleratorConfiguration,
+    getUIElementsInfo: scala.Double => stdLib.SafeArray[
+      stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
     ],
-    getEventsManager: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    getImageManager: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    getSettings: js.Function2[
-      java.lang.String, 
-      scala.Boolean, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
-    ],
-    getShortCutManager: js.Function0[XAcceleratorConfiguration],
-    getUIElementsInfo: js.Function1[
-      scala.Double, 
-      activexDashInteropLib.SafeArray[
-        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-      ]
-    ],
-    hasSettings: js.Function1[java.lang.String, scala.Boolean],
-    insertSettings: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, 
-      scala.Unit
-    ],
-    isDefaultSettings: js.Function1[java.lang.String, scala.Boolean],
-    isModified: js.Function0[scala.Boolean],
-    isReadOnly: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    reload: js.Function0[scala.Unit],
-    removeConfigurationListener: js.Function1[XUIConfigurationListener, scala.Unit],
-    removeSettings: js.Function1[java.lang.String, scala.Unit],
-    replaceSettings: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, 
-      scala.Unit
-    ],
-    reset: js.Function0[scala.Unit],
-    store: js.Function0[scala.Unit],
-    storeToStorage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, scala.Unit]
+    hasSettings: java.lang.String => scala.Boolean,
+    insertSettings: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess) => scala.Unit,
+    isDefaultSettings: java.lang.String => scala.Boolean,
+    isModified: () => scala.Boolean,
+    isReadOnly: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    reload: () => scala.Unit,
+    removeConfigurationListener: XUIConfigurationListener => scala.Unit,
+    removeSettings: java.lang.String => scala.Unit,
+    replaceSettings: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess) => scala.Unit,
+    reset: () => scala.Unit,
+    store: () => scala.Unit,
+    storeToStorage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage => scala.Unit
   ): ModuleUIConfigurationManager = {
-    val __obj = js.Dynamic.literal(EventsManager = EventsManager, ImageManager = ImageManager, ShortCutManager = ShortCutManager, acquire = acquire, addConfigurationListener = addConfigurationListener, createDefault = createDefault, createSettings = createSettings, getDefaultSettings = getDefaultSettings, getEventsManager = getEventsManager, getImageManager = getImageManager, getSettings = getSettings, getShortCutManager = getShortCutManager, getUIElementsInfo = getUIElementsInfo, hasSettings = hasSettings, insertSettings = insertSettings, isDefaultSettings = isDefaultSettings, isModified = isModified, isReadOnly = isReadOnly, queryInterface = queryInterface, release = release, reload = reload, removeConfigurationListener = removeConfigurationListener, removeSettings = removeSettings, replaceSettings = replaceSettings, reset = reset, store = store, storeToStorage = storeToStorage)
+    val __obj = js.Dynamic.literal(EventsManager = EventsManager, ImageManager = ImageManager, ShortCutManager = ShortCutManager, acquire = js.Any.fromFunction0(acquire), addConfigurationListener = js.Any.fromFunction1(addConfigurationListener), createDefault = js.Any.fromFunction2(createDefault), createSettings = js.Any.fromFunction0(createSettings), getDefaultSettings = js.Any.fromFunction1(getDefaultSettings), getEventsManager = js.Any.fromFunction0(getEventsManager), getImageManager = js.Any.fromFunction0(getImageManager), getSettings = js.Any.fromFunction2(getSettings), getShortCutManager = js.Any.fromFunction0(getShortCutManager), getUIElementsInfo = js.Any.fromFunction1(getUIElementsInfo), hasSettings = js.Any.fromFunction1(hasSettings), insertSettings = js.Any.fromFunction2(insertSettings), isDefaultSettings = js.Any.fromFunction1(isDefaultSettings), isModified = js.Any.fromFunction0(isModified), isReadOnly = js.Any.fromFunction0(isReadOnly), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), reload = js.Any.fromFunction0(reload), removeConfigurationListener = js.Any.fromFunction1(removeConfigurationListener), removeSettings = js.Any.fromFunction1(removeSettings), replaceSettings = js.Any.fromFunction2(replaceSettings), reset = js.Any.fromFunction0(reset), store = js.Any.fromFunction0(store), storeToStorage = js.Any.fromFunction1(storeToStorage))
   
     __obj.asInstanceOf[ModuleUIConfigurationManager]
   }

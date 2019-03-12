@@ -17,12 +17,12 @@ trait IEventController extends js.Object {
 object IEventController {
   @scala.inline
   def apply(
-    onStartListening: js.Function2[/* events */ IEventManager, /* type */ java.lang.String, scala.Unit] = null,
-    onStopListening: js.Function2[/* events */ IEventManager, /* type */ java.lang.String, scala.Unit] = null
+    onStartListening: (/* events */ IEventManager, /* type */ java.lang.String) => scala.Unit = null,
+    onStopListening: (/* events */ IEventManager, /* type */ java.lang.String) => scala.Unit = null
   ): IEventController = {
     val __obj = js.Dynamic.literal()
-    if (onStartListening != null) __obj.updateDynamic("onStartListening")(onStartListening)
-    if (onStopListening != null) __obj.updateDynamic("onStopListening")(onStopListening)
+    if (onStartListening != null) __obj.updateDynamic("onStartListening")(js.Any.fromFunction2(onStartListening))
+    if (onStopListening != null) __obj.updateDynamic("onStopListening")(js.Any.fromFunction2(onStopListening))
     __obj.asInstanceOf[IEventController]
   }
 }

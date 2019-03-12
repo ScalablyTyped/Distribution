@@ -28,36 +28,15 @@ trait AutoscalersResource extends js.Object {
 object AutoscalersResource {
   @scala.inline
   def apply(
-    aggregatedList: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AutoscalerAggregatedList]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltAutoscaler, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltAutoscalerFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Autoscaler]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AutoscalerList]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltAutoscalerFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    update: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltAutoscalerFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    aggregatedList: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[AutoscalerAggregatedList],
+    delete: gapiDotClientDotComputeLib.Anon_AltAutoscaler => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotComputeLib.Anon_AltAutoscalerFields => gapiDotClientLib.gapiNs.clientNs.Request[Autoscaler],
+    insert: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotComputeLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[AutoscalerList],
+    patch: gapiDotClientDotComputeLib.Anon_AltAutoscalerFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    update: gapiDotClientDotComputeLib.Anon_AltAutoscalerFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): AutoscalersResource = {
-    val __obj = js.Dynamic.literal(aggregatedList = aggregatedList, delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(aggregatedList = js.Any.fromFunction1(aggregatedList), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[AutoscalersResource]
   }

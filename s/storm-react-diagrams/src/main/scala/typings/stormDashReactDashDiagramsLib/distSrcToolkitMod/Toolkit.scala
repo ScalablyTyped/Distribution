@@ -26,7 +26,7 @@ object Toolkit extends js.Object {
     * @param  {Element} element  [description]
     * @param  {string}  selector [description]
     */
-  def closest(element: reactLib.Element, selector: java.lang.String): js.Any = js.native
+  def closest(element: stdLib.Element, selector: java.lang.String): js.Any = js.native
   def generateCurvePath(
     firstPoint: stormDashReactDashDiagramsLib.distSrcModelsPointModelMod.PointModel,
     lastPoint: stormDashReactDashDiagramsLib.distSrcModelsPointModelMod.PointModel

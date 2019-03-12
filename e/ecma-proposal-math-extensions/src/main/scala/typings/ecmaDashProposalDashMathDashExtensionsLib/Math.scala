@@ -69,13 +69,13 @@ object Math {
   def apply(
     DEG_PER_RAD: scala.Double,
     RAD_PER_DEG: scala.Double,
-    clamp: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double],
-    degrees: js.Function1[scala.Double, scala.Double],
-    fscale: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-    radians: js.Function1[scala.Double, scala.Double],
-    scale: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double]
+    clamp: (scala.Double, scala.Double, scala.Double) => scala.Double,
+    degrees: scala.Double => scala.Double,
+    fscale: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => scala.Double,
+    radians: scala.Double => scala.Double,
+    scale: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => scala.Double
   ): Math = {
-    val __obj = js.Dynamic.literal(DEG_PER_RAD = DEG_PER_RAD, RAD_PER_DEG = RAD_PER_DEG, clamp = clamp, degrees = degrees, fscale = fscale, radians = radians, scale = scale)
+    val __obj = js.Dynamic.literal(DEG_PER_RAD = DEG_PER_RAD, RAD_PER_DEG = RAD_PER_DEG, clamp = js.Any.fromFunction3(clamp), degrees = js.Any.fromFunction1(degrees), fscale = js.Any.fromFunction5(fscale), radians = js.Any.fromFunction1(radians), scale = js.Any.fromFunction5(scale))
   
     __obj.asInstanceOf[Math]
   }

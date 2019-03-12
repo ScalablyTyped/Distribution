@@ -8,39 +8,39 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line:no-empty-interface
 @js.native
 trait p5InstanceExtensions extends js.Object {
-  val ADD: ADD = js.native
-  val ARROW: ARROW = js.native
-  val AUDIO: AUDIO = js.native
-  val AUTO: AUTO = js.native
-  val AXES: AXES = js.native
-  val BASELINE: BASELINE = js.native
-  val BEVEL: BEVEL = js.native
-  val BLEND: BLEND = js.native
-  val BLUR: BLUR = js.native
-  val BOLD: BOLD = js.native
-  val BOLDITALIC: BOLDITALIC = js.native
-  val BOTTOM: BOTTOM = js.native
-  val BURN: BURN = js.native
-  val CENTER: CENTER = js.native
-  val CHORD: CHORD = js.native
-  val CLOSE: CLOSE = js.native
-  val CORNER: CORNER = js.native
-  val CORNERS: CORNERS = js.native
-  val CROSS: CROSS = js.native
-  val DARKEST: DARKEST = js.native
+  val ADD: p5Lib.p5Mod.p5Ns.ADD = js.native
+  val ARROW: p5Lib.p5Mod.p5Ns.ARROW = js.native
+  val AUDIO: p5Lib.p5Mod.p5Ns.AUDIO = js.native
+  val AUTO: p5Lib.p5Mod.p5Ns.AUTO = js.native
+  val AXES: p5Lib.p5Mod.p5Ns.AXES = js.native
+  val BASELINE: p5Lib.p5Mod.p5Ns.BASELINE = js.native
+  val BEVEL: p5Lib.p5Mod.p5Ns.BEVEL = js.native
+  val BLEND: p5Lib.p5Mod.p5Ns.BLEND = js.native
+  val BLUR: p5Lib.p5Mod.p5Ns.BLUR = js.native
+  val BOLD: p5Lib.p5Mod.p5Ns.BOLD = js.native
+  val BOLDITALIC: p5Lib.p5Mod.p5Ns.BOLDITALIC = js.native
+  val BOTTOM: p5Lib.p5Mod.p5Ns.BOTTOM = js.native
+  val BURN: p5Lib.p5Mod.p5Ns.BURN = js.native
+  val CENTER: p5Lib.p5Mod.p5Ns.CENTER = js.native
+  val CHORD: p5Lib.p5Mod.p5Ns.CHORD = js.native
+  val CLOSE: p5Lib.p5Mod.p5Ns.CLOSE = js.native
+  val CORNER: p5Lib.p5Mod.p5Ns.CORNER = js.native
+  val CORNERS: p5Lib.p5Mod.p5Ns.CORNERS = js.native
+  val CROSS: p5Lib.p5Mod.p5Ns.CROSS = js.native
+  val DARKEST: p5Lib.p5Mod.p5Ns.DARKEST = js.native
   /**
     *   Constant to be used with angleMode() function, to
     *   set the mode which p5.js interprates and
     *   calculates angles (either DEGREES or RADIANS).
     */
-  val DEGREES: DEGREES = js.native
-  val DIFFERENCE: DIFFERENCE = js.native
-  val DILATE: DILATE = js.native
-  val DODGE: DODGE = js.native
-  val ERODE: ERODE = js.native
-  val EXCLUSION: EXCLUSION = js.native
-  val GRAY: GRAY = js.native
-  val GRID: GRID = js.native
+  val DEGREES: p5Lib.p5Mod.p5Ns.DEGREES = js.native
+  val DIFFERENCE: p5Lib.p5Mod.p5Ns.DIFFERENCE = js.native
+  val DILATE: p5Lib.p5Mod.p5Ns.DILATE = js.native
+  val DODGE: p5Lib.p5Mod.p5Ns.DODGE = js.native
+  val ERODE: p5Lib.p5Mod.p5Ns.ERODE = js.native
+  val EXCLUSION: p5Lib.p5Mod.p5Ns.EXCLUSION = js.native
+  val GRAY: p5Lib.p5Mod.p5Ns.GRAY = js.native
+  val GRID: p5Lib.p5Mod.p5Ns.GRID = js.native
   /**
     *   HALF_PI is a mathematical constant with the value
     *   1.57079632679489661923. It is half the ratio of
@@ -49,26 +49,26 @@ trait p5InstanceExtensions extends js.Object {
     *   functions sin() and cos().
     */
   val HALF_PI: scala.Double = js.native
-  val HAND: HAND = js.native
-  val HARD_LIGHT: HARD_LIGHT = js.native
-  val HSB: HSB = js.native
-  val HSL: HSL = js.native
-  val INVERT: INVERT = js.native
-  val ITALIC: ITALIC = js.native
-  val LANDSCAPE: LANDSCAPE = js.native
-  val LEFT: LEFT = js.native
-  val LIGHTEST: LIGHTEST = js.native
-  val LINES: LINES = js.native
-  val LINE_LOOP: LINE_LOOP = js.native
-  val LINE_STRIP: LINE_STRIP = js.native
-  val MITER: MITER = js.native
-  val MOVE: MOVE = js.native
-  val MULTIPLY: MULTIPLY = js.native
-  val NORMAL: NORMAL = js.native
-  val OPAQUE: OPAQUE = js.native
-  val OPEN: OPEN = js.native
-  val OVERLAY: OVERLAY = js.native
-  val P2D: P2D = js.native
+  val HAND: p5Lib.p5Mod.p5Ns.HAND = js.native
+  val HARD_LIGHT: p5Lib.p5Mod.p5Ns.HARD_LIGHT = js.native
+  val HSB: p5Lib.p5Mod.p5Ns.HSB = js.native
+  val HSL: p5Lib.p5Mod.p5Ns.HSL = js.native
+  val INVERT: p5Lib.p5Mod.p5Ns.INVERT = js.native
+  val ITALIC: p5Lib.p5Mod.p5Ns.ITALIC = js.native
+  val LANDSCAPE: p5Lib.p5Mod.p5Ns.LANDSCAPE = js.native
+  val LEFT: p5Lib.p5Mod.p5Ns.LEFT = js.native
+  val LIGHTEST: p5Lib.p5Mod.p5Ns.LIGHTEST = js.native
+  val LINES: p5Lib.p5Mod.p5Ns.LINES = js.native
+  val LINE_LOOP: p5Lib.p5Mod.p5Ns.LINE_LOOP = js.native
+  val LINE_STRIP: p5Lib.p5Mod.p5Ns.LINE_STRIP = js.native
+  val MITER: p5Lib.p5Mod.p5Ns.MITER = js.native
+  val MOVE: p5Lib.p5Mod.p5Ns.MOVE = js.native
+  val MULTIPLY: p5Lib.p5Mod.p5Ns.MULTIPLY = js.native
+  val NORMAL: p5Lib.p5Mod.p5Ns.NORMAL = js.native
+  val OPAQUE: p5Lib.p5Mod.p5Ns.OPAQUE = js.native
+  val OPEN: p5Lib.p5Mod.p5Ns.OPEN = js.native
+  val OVERLAY: p5Lib.p5Mod.p5Ns.OVERLAY = js.native
+  val P2D: p5Lib.p5Mod.p5Ns.P2D = js.native
   /**
     *   PI is a mathematical constant with the value
     *   3.14159265358979323846. It is the ratio of the
@@ -77,13 +77,13 @@ trait p5InstanceExtensions extends js.Object {
     *   functions sin() and cos().
     */
   val PI: scala.Double = js.native
-  val PIE: PIE = js.native
-  val POINTS: POINTS = js.native
-  val PORTRAIT: PORTRAIT = js.native
-  val POSTERIZE: POSTERIZE = js.native
-  val PROJECT: PROJECT = js.native
-  val QUADS: QUADS = js.native
-  val QUAD_STRIP: QUAD_STRIP = js.native
+  val PIE: p5Lib.p5Mod.p5Ns.PIE = js.native
+  val POINTS: p5Lib.p5Mod.p5Ns.POINTS = js.native
+  val PORTRAIT: p5Lib.p5Mod.p5Ns.PORTRAIT = js.native
+  val POSTERIZE: p5Lib.p5Mod.p5Ns.POSTERIZE = js.native
+  val PROJECT: p5Lib.p5Mod.p5Ns.PROJECT = js.native
+  val QUADS: p5Lib.p5Mod.p5Ns.QUADS = js.native
+  val QUAD_STRIP: p5Lib.p5Mod.p5Ns.QUAD_STRIP = js.native
   /**
     *   QUARTER_PI is a mathematical constant with the
     *   value 0.7853982. It is one quarter the ratio of
@@ -97,15 +97,15 @@ trait p5InstanceExtensions extends js.Object {
     *   set the mode which p5.js interprates and
     *   calculates angles (either RADIANS or DEGREES).
     */
-  val RADIANS: RADIANS = js.native
-  val RADIUS: RADIUS = js.native
-  val REPLACE: REPLACE = js.native
-  val RGB: RGB = js.native
-  val RIGHT: RIGHT = js.native
-  val ROUND: ROUND = js.native
-  val SCREEN: SCREEN = js.native
-  val SOFT_LIGHT: SOFT_LIGHT = js.native
-  val SQUARE: SQUARE = js.native
+  val RADIANS: p5Lib.p5Mod.p5Ns.RADIANS = js.native
+  val RADIUS: p5Lib.p5Mod.p5Ns.RADIUS = js.native
+  val REPLACE: p5Lib.p5Mod.p5Ns.REPLACE = js.native
+  val RGB: p5Lib.p5Mod.p5Ns.RGB = js.native
+  val RIGHT: p5Lib.p5Mod.p5Ns.RIGHT = js.native
+  val ROUND: p5Lib.p5Mod.p5Ns.ROUND = js.native
+  val SCREEN: p5Lib.p5Mod.p5Ns.SCREEN = js.native
+  val SOFT_LIGHT: p5Lib.p5Mod.p5Ns.SOFT_LIGHT = js.native
+  val SQUARE: p5Lib.p5Mod.p5Ns.SQUARE = js.native
   /**
     *   TAU is an alias for TWO_PI, a mathematical
     *   constant with the value 6.28318530717958647693. It
@@ -115,12 +115,12 @@ trait p5InstanceExtensions extends js.Object {
     *   and cos().
     */
   val TAU: scala.Double = js.native
-  val TEXT: TEXT = js.native
-  val THRESHOLD: THRESHOLD = js.native
-  val TOP: TOP = js.native
-  val TRIANGLES: TRIANGLES = js.native
-  val TRIANGLE_FAN: TRIANGLE_FAN = js.native
-  val TRIANGLE_STRIP: TRIANGLE_STRIP = js.native
+  val TEXT: p5Lib.p5Mod.p5Ns.TEXT = js.native
+  val THRESHOLD: p5Lib.p5Mod.p5Ns.THRESHOLD = js.native
+  val TOP: p5Lib.p5Mod.p5Ns.TOP = js.native
+  val TRIANGLES: p5Lib.p5Mod.p5Ns.TRIANGLES = js.native
+  val TRIANGLE_FAN: p5Lib.p5Mod.p5Ns.TRIANGLE_FAN = js.native
+  val TRIANGLE_STRIP: p5Lib.p5Mod.p5Ns.TRIANGLE_STRIP = js.native
   /**
     *   TWO_PI is a mathematical constant with the value
     *   6.28318530717958647693. It is twice the ratio of
@@ -129,9 +129,9 @@ trait p5InstanceExtensions extends js.Object {
     *   functions sin() and cos().
     */
   val TWO_PI: scala.Double = js.native
-  val VIDEO: VIDEO = js.native
-  val WAIT: WAIT = js.native
-  val WEBGL: WEBGL = js.native
+  val VIDEO: p5Lib.p5Mod.p5Ns.VIDEO = js.native
+  val WAIT: p5Lib.p5Mod.p5Ns.WAIT = js.native
+  val WEBGL: p5Lib.p5Mod.p5Ns.WEBGL = js.native
   /**
     *   The system variable accelerationX always contains
     *   the acceleration of the device along the x axis.

@@ -15,12 +15,9 @@ object RootCategoriesResource {
   @scala.inline
   def apply(
     infoTypes: InfoTypesResource,
-    list: js.Function1[
-      gapiDotClientDotDlpLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GooglePrivacyDlpV2beta1ListRootCategoriesResponse]
-    ]
+    list: gapiDotClientDotDlpLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[GooglePrivacyDlpV2beta1ListRootCategoriesResponse]
   ): RootCategoriesResource = {
-    val __obj = js.Dynamic.literal(infoTypes = infoTypes, list = list)
+    val __obj = js.Dynamic.literal(infoTypes = infoTypes, list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[RootCategoriesResource]
   }

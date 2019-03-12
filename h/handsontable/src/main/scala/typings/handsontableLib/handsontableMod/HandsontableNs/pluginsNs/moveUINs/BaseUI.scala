@@ -24,21 +24,21 @@ trait BaseUI extends js.Object {
 object BaseUI {
   @scala.inline
   def apply(
-    appendTo: js.Function1[stdLib.HTMLElement, scala.Unit],
-    build: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    getOffset: js.Function0[js.Object],
-    getPosition: js.Function0[js.Object],
-    getSize: js.Function0[js.Object],
+    appendTo: stdLib.HTMLElement => scala.Unit,
+    build: () => scala.Unit,
+    destroy: () => scala.Unit,
+    getOffset: () => js.Object,
+    getPosition: () => js.Object,
+    getSize: () => js.Object,
     hot: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
-    isAppended: js.Function0[scala.Boolean],
-    isBuilt: js.Function0[scala.Boolean],
-    setOffset: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setPosition: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setSize: js.Function2[scala.Double, scala.Double, scala.Unit],
+    isAppended: () => scala.Boolean,
+    isBuilt: () => scala.Boolean,
+    setOffset: (scala.Double, scala.Double) => scala.Unit,
+    setPosition: (scala.Double, scala.Double) => scala.Unit,
+    setSize: (scala.Double, scala.Double) => scala.Unit,
     state: scala.Double
   ): BaseUI = {
-    val __obj = js.Dynamic.literal(appendTo = appendTo, build = build, destroy = destroy, getOffset = getOffset, getPosition = getPosition, getSize = getSize, hot = hot, isAppended = isAppended, isBuilt = isBuilt, setOffset = setOffset, setPosition = setPosition, setSize = setSize, state = state)
+    val __obj = js.Dynamic.literal(appendTo = js.Any.fromFunction1(appendTo), build = js.Any.fromFunction0(build), destroy = js.Any.fromFunction0(destroy), getOffset = js.Any.fromFunction0(getOffset), getPosition = js.Any.fromFunction0(getPosition), getSize = js.Any.fromFunction0(getSize), hot = hot, isAppended = js.Any.fromFunction0(isAppended), isBuilt = js.Any.fromFunction0(isBuilt), setOffset = js.Any.fromFunction2(setOffset), setPosition = js.Any.fromFunction2(setPosition), setSize = js.Any.fromFunction2(setSize), state = state)
   
     __obj.asInstanceOf[BaseUI]
   }

@@ -47,16 +47,16 @@ trait PlaceHolder extends js.Object {
 object PlaceHolder {
   @scala.inline
   def apply(
-    cancel: js.Function0[scala.Unit],
-    detach: js.Function0[scala.Unit],
-    hideOtherMarkers: js.Function0[scala.Unit],
-    on: js.Function2[java.lang.String, js.Function1[/* e */ js.Any, _], scala.Unit],
-    onCursorChange: js.Function0[scala.Unit],
-    onUpdate: js.Function0[scala.Unit],
-    setup: js.Function0[scala.Unit],
-    showOtherMarkers: js.Function0[scala.Unit]
+    cancel: () => scala.Unit,
+    detach: () => scala.Unit,
+    hideOtherMarkers: () => scala.Unit,
+    on: (java.lang.String, js.Function1[/* e */ js.Any, _]) => scala.Unit,
+    onCursorChange: () => scala.Unit,
+    onUpdate: () => scala.Unit,
+    setup: () => scala.Unit,
+    showOtherMarkers: () => scala.Unit
   ): PlaceHolder = {
-    val __obj = js.Dynamic.literal(cancel = cancel, detach = detach, hideOtherMarkers = hideOtherMarkers, on = on, onCursorChange = onCursorChange, onUpdate = onUpdate, setup = setup, showOtherMarkers = showOtherMarkers)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), detach = js.Any.fromFunction0(detach), hideOtherMarkers = js.Any.fromFunction0(hideOtherMarkers), on = js.Any.fromFunction2(on), onCursorChange = js.Any.fromFunction0(onCursorChange), onUpdate = js.Any.fromFunction0(onUpdate), setup = js.Any.fromFunction0(setup), showOtherMarkers = js.Any.fromFunction0(showOtherMarkers))
   
     __obj.asInstanceOf[PlaceHolder]
   }

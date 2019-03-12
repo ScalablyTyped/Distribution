@@ -31,12 +31,12 @@ trait XStringAbbreviation
 object XStringAbbreviation {
   @scala.inline
   def apply(
-    abbreviateString: js.Function3[XStringWidth, scala.Double, java.lang.String, java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    abbreviateString: (XStringWidth, scala.Double, java.lang.String) => java.lang.String,
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XStringAbbreviation = {
-    val __obj = js.Dynamic.literal(abbreviateString = abbreviateString, acquire = acquire, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(abbreviateString = js.Any.fromFunction3(abbreviateString), acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XStringAbbreviation]
   }

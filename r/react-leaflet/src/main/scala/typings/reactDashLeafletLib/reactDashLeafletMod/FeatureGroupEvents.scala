@@ -18,22 +18,22 @@ trait FeatureGroupEvents extends js.Object {
 object FeatureGroupEvents {
   @scala.inline
   def apply(
-    onclick: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null,
-    oncontextmenu: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null,
-    ondblclick: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null,
-    onlayeradd: js.Function1[/* event */ leafletLib.leafletMod.LayerEvent, scala.Unit] = null,
-    onlayerremove: js.Function1[/* event */ leafletLib.leafletMod.LayerEvent, scala.Unit] = null,
-    onmouseout: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null,
-    onmouseover: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null
+    onclick: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null,
+    oncontextmenu: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null,
+    ondblclick: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null,
+    onlayeradd: /* event */ leafletLib.leafletMod.LayerEvent => scala.Unit = null,
+    onlayerremove: /* event */ leafletLib.leafletMod.LayerEvent => scala.Unit = null,
+    onmouseout: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null,
+    onmouseover: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null
   ): FeatureGroupEvents = {
     val __obj = js.Dynamic.literal()
-    if (onclick != null) __obj.updateDynamic("onclick")(onclick)
-    if (oncontextmenu != null) __obj.updateDynamic("oncontextmenu")(oncontextmenu)
-    if (ondblclick != null) __obj.updateDynamic("ondblclick")(ondblclick)
-    if (onlayeradd != null) __obj.updateDynamic("onlayeradd")(onlayeradd)
-    if (onlayerremove != null) __obj.updateDynamic("onlayerremove")(onlayerremove)
-    if (onmouseout != null) __obj.updateDynamic("onmouseout")(onmouseout)
-    if (onmouseover != null) __obj.updateDynamic("onmouseover")(onmouseover)
+    if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction1(onclick))
+    if (oncontextmenu != null) __obj.updateDynamic("oncontextmenu")(js.Any.fromFunction1(oncontextmenu))
+    if (ondblclick != null) __obj.updateDynamic("ondblclick")(js.Any.fromFunction1(ondblclick))
+    if (onlayeradd != null) __obj.updateDynamic("onlayeradd")(js.Any.fromFunction1(onlayeradd))
+    if (onlayerremove != null) __obj.updateDynamic("onlayerremove")(js.Any.fromFunction1(onlayerremove))
+    if (onmouseout != null) __obj.updateDynamic("onmouseout")(js.Any.fromFunction1(onmouseout))
+    if (onmouseover != null) __obj.updateDynamic("onmouseover")(js.Any.fromFunction1(onmouseover))
     __obj.asInstanceOf[FeatureGroupEvents]
   }
 }

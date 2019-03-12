@@ -20,17 +20,17 @@ trait IUserOrUserGroupIDEx extends js.Object {
 object IUserOrUserGroupIDEx {
   @scala.inline
   def apply(
-    Clone: js.Function0[IUserOrUserGroupIDEx],
+    Clone: () => IUserOrUserGroupIDEx,
     IndirectProperty: IIndirectPropertyID,
-    SetIndirectPropertyPseudoUser: js.Function1[IIndirectPropertyID, scala.Unit],
-    SetUserAccount: js.Function1[scala.Double, scala.Unit],
-    SetUserGroup: js.Function1[scala.Double, scala.Unit],
-    SetWorkflowStatePseudoUser: js.Function1[scala.Double, scala.Unit],
+    SetIndirectPropertyPseudoUser: IIndirectPropertyID => scala.Unit,
+    SetUserAccount: scala.Double => scala.Unit,
+    SetUserGroup: scala.Double => scala.Unit,
+    SetWorkflowStatePseudoUser: scala.Double => scala.Unit,
     UserOrGroupID: scala.Double,
     UserOrGroupType: mfilesLib.MFilesNs.MFUserOrUserGroupType,
     WorkflowState: scala.Double
   ): IUserOrUserGroupIDEx = {
-    val __obj = js.Dynamic.literal(Clone = Clone, IndirectProperty = IndirectProperty, SetIndirectPropertyPseudoUser = SetIndirectPropertyPseudoUser, SetUserAccount = SetUserAccount, SetUserGroup = SetUserGroup, SetWorkflowStatePseudoUser = SetWorkflowStatePseudoUser, UserOrGroupID = UserOrGroupID, UserOrGroupType = UserOrGroupType, WorkflowState = WorkflowState)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), IndirectProperty = IndirectProperty, SetIndirectPropertyPseudoUser = js.Any.fromFunction1(SetIndirectPropertyPseudoUser), SetUserAccount = js.Any.fromFunction1(SetUserAccount), SetUserGroup = js.Any.fromFunction1(SetUserGroup), SetWorkflowStatePseudoUser = js.Any.fromFunction1(SetWorkflowStatePseudoUser), UserOrGroupID = UserOrGroupID, UserOrGroupType = UserOrGroupType, WorkflowState = WorkflowState)
   
     __obj.asInstanceOf[IUserOrUserGroupIDEx]
   }

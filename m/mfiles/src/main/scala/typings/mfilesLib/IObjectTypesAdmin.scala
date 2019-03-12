@@ -12,8 +12,8 @@ trait IObjectTypesAdmin extends js.Object {
 
 object IObjectTypesAdmin {
   @scala.inline
-  def apply(Count: scala.Double, Item: js.Function1[scala.Double, IObjectTypeAdmin]): IObjectTypesAdmin = {
-    val __obj = js.Dynamic.literal(Count = Count, Item = Item)
+  def apply(Count: scala.Double, Item: scala.Double => IObjectTypeAdmin): IObjectTypesAdmin = {
+    val __obj = js.Dynamic.literal(Count = Count, Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[IObjectTypesAdmin]
   }

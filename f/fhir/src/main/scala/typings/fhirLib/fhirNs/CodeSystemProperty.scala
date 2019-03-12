@@ -28,7 +28,7 @@ trait CodeSystemProperty extends BackboneElement {
   /**
     * Identifies the property on the concepts, and when referred to in operations
     */
-  var code: code
+  var code: fhirLib.fhirNs.code
   /**
     * Why the property is defined, and/or what it conveys
     */

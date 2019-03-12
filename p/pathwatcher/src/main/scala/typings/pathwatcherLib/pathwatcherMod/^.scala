@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def closeAllWatchers(): scala.Unit = js.native
   def getWatchedPaths(): js.Array[java.lang.String] = js.native
-  def watch(): pathwatcherLib.pathwatcherMod.PathWatcher = js.native
+  def watch(): PathWatcher = js.native
 }
 

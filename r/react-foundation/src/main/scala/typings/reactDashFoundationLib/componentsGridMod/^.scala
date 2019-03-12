@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-foundation/components/grid", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Column: reactLib.reactMod.ReactNs.StatelessComponent[reactDashFoundationLib.componentsGridMod.ColumnProps] = js.native
-  val Row: reactLib.reactMod.ReactNs.StatelessComponent[reactDashFoundationLib.componentsGridMod.RowProps] = js.native
+  val Column: reactLib.reactMod.ReactNs.StatelessComponent[ColumnProps] = js.native
+  val Row: reactLib.reactMod.ReactNs.StatelessComponent[RowProps] = js.native
 }
 

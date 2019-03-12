@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("gl-react-expo", "Surface")
 @js.native
 class Surface ()
-  extends glDashReactLib.glDashReactMod.Surface[glDashReactDashExpoLib.glviewnativeMod.GLViewNative] {
+  extends glDashReactLib.glDashReactMod.Surface[glDashReactDashExpoLib.gLViewNativeMod.GLViewNative] {
   @JSName("props")
   var props_Surface: SurfaceProps = js.native
 }

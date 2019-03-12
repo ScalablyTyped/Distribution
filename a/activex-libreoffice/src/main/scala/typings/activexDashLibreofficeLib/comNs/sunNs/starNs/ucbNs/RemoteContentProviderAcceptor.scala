@@ -13,20 +13,14 @@ trait RemoteContentProviderAcceptor
 object RemoteContentProviderAcceptor {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    activateRemoteContentProviders: js.Function0[XContentProviderManager],
-    addRemoteContentProvider: js.Function4[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XMultiServiceFactory, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      XRemoteContentProviderDoneListener, 
-      scala.Boolean
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeRemoteContentProvider: js.Function1[java.lang.String, scala.Boolean]
+    acquire: () => scala.Unit,
+    activateRemoteContentProviders: () => XContentProviderManager,
+    addRemoteContentProvider: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XMultiServiceFactory, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], XRemoteContentProviderDoneListener) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeRemoteContentProvider: java.lang.String => scala.Boolean
   ): RemoteContentProviderAcceptor = {
-    val __obj = js.Dynamic.literal(acquire = acquire, activateRemoteContentProviders = activateRemoteContentProviders, addRemoteContentProvider = addRemoteContentProvider, queryInterface = queryInterface, release = release, removeRemoteContentProvider = removeRemoteContentProvider)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), activateRemoteContentProviders = js.Any.fromFunction0(activateRemoteContentProviders), addRemoteContentProvider = js.Any.fromFunction4(addRemoteContentProvider), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeRemoteContentProvider = js.Any.fromFunction1(removeRemoteContentProvider))
   
     __obj.asInstanceOf[RemoteContentProviderAcceptor]
   }

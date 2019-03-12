@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Table: reactLib.reactMod.ReactNs.FC[
-    grommetLib.componentsTableMod.TableProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    TableProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.TableHTMLAttributes[reactLib.HTMLTableElement], 
       reactLib.HTMLTableElement
     ])

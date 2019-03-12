@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("dispatchr", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def createDispatcher(options: dispatchrLib.dispatchrMod.DispatcherOption): dispatchrLib.dispatchrMod.Dispatcher = js.native
+  def createDispatcher(options: DispatcherOption): Dispatcher = js.native
 }
 

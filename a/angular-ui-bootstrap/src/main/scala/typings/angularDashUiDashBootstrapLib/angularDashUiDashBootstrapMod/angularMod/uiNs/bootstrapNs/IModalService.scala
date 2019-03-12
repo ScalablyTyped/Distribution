@@ -20,10 +20,10 @@ trait IModalService extends js.Object {
 object IModalService {
   @scala.inline
   def apply(
-    getPromiseChain: js.Function0[angularLib.angularMod.angularNs.IPromise[_]],
-    open: js.Function1[IModalSettings, IModalInstanceService]
+    getPromiseChain: () => angularLib.angularMod.angularNs.IPromise[_],
+    open: IModalSettings => IModalInstanceService
   ): IModalService = {
-    val __obj = js.Dynamic.literal(getPromiseChain = getPromiseChain, open = open)
+    val __obj = js.Dynamic.literal(getPromiseChain = js.Any.fromFunction0(getPromiseChain), open = js.Any.fromFunction1(open))
   
     __obj.asInstanceOf[IModalService]
   }

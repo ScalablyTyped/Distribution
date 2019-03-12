@@ -86,8 +86,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    afterInsert: js.Function1[/* h */ MarkupSet, java.lang.String] = null,
-    beforeInsert: js.Function1[/* h */ MarkupSet, java.lang.String] = null,
+    afterInsert: /* h */ MarkupSet => java.lang.String = null,
+    beforeInsert: /* h */ MarkupSet => java.lang.String = null,
     markupSet: js.Array[MarkupSet] = null,
     nameSpace: java.lang.String = null,
     onCtrlEnter: MarkupSet = null,
@@ -104,8 +104,8 @@ object Options {
     resizeHandle: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (afterInsert != null) __obj.updateDynamic("afterInsert")(afterInsert)
-    if (beforeInsert != null) __obj.updateDynamic("beforeInsert")(beforeInsert)
+    if (afterInsert != null) __obj.updateDynamic("afterInsert")(js.Any.fromFunction1(afterInsert))
+    if (beforeInsert != null) __obj.updateDynamic("beforeInsert")(js.Any.fromFunction1(beforeInsert))
     if (markupSet != null) __obj.updateDynamic("markupSet")(markupSet)
     if (nameSpace != null) __obj.updateDynamic("nameSpace")(nameSpace)
     if (onCtrlEnter != null) __obj.updateDynamic("onCtrlEnter")(onCtrlEnter)

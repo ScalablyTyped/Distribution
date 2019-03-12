@@ -919,7 +919,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("and")
   def and_havealwaysthrown(chainer: cypressLib.cypressLibStrings.haveDOTalwaysDOTthrown, value: java.lang.String): Chainable[Subject] = js.native
   @JSName("and")
-  def and_havealwaysthrown(chainer: cypressLib.cypressLibStrings.haveDOTalwaysDOTthrown, value: nodeLib.Error): Chainable[Subject] = js.native
+  def and_havealwaysthrown(chainer: cypressLib.cypressLibStrings.haveDOTalwaysDOTthrown, value: stdLib.Error): Chainable[Subject] = js.native
   @JSName("and")
   def and_havealwaysthrown(chainer: cypressLib.cypressLibStrings.haveDOTalwaysDOTthrown, value: stdLib.ErrorConstructor): Chainable[Subject] = js.native
   /**
@@ -1342,7 +1342,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("and")
   def and_havethrown(chainer: cypressLib.cypressLibStrings.haveDOTthrown, value: java.lang.String): Chainable[Subject] = js.native
   @JSName("and")
-  def and_havethrown(chainer: cypressLib.cypressLibStrings.haveDOTthrown, value: nodeLib.Error): Chainable[Subject] = js.native
+  def and_havethrown(chainer: cypressLib.cypressLibStrings.haveDOTthrown, value: stdLib.Error): Chainable[Subject] = js.native
   @JSName("and")
   def and_havethrown(chainer: cypressLib.cypressLibStrings.haveDOTthrown, value: stdLib.ErrorConstructor): Chainable[Subject] = js.native
   /**
@@ -2262,7 +2262,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("and")
   def and_nothavealwaysthrown(chainer: cypressLib.cypressLibStrings.notDOThaveDOTalwaysDOTthrown, value: java.lang.String): Chainable[Subject] = js.native
   @JSName("and")
-  def and_nothavealwaysthrown(chainer: cypressLib.cypressLibStrings.notDOThaveDOTalwaysDOTthrown, value: nodeLib.Error): Chainable[Subject] = js.native
+  def and_nothavealwaysthrown(chainer: cypressLib.cypressLibStrings.notDOThaveDOTalwaysDOTthrown, value: stdLib.Error): Chainable[Subject] = js.native
   @JSName("and")
   def and_nothavealwaysthrown(chainer: cypressLib.cypressLibStrings.notDOThaveDOTalwaysDOTthrown, value: stdLib.ErrorConstructor): Chainable[Subject] = js.native
   /**
@@ -2673,7 +2673,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("and")
   def and_nothavethrown(chainer: cypressLib.cypressLibStrings.notDOThaveDOTthrown, value: java.lang.String): Chainable[Subject] = js.native
   @JSName("and")
-  def and_nothavethrown(chainer: cypressLib.cypressLibStrings.notDOThaveDOTthrown, value: nodeLib.Error): Chainable[Subject] = js.native
+  def and_nothavethrown(chainer: cypressLib.cypressLibStrings.notDOThaveDOTthrown, value: stdLib.Error): Chainable[Subject] = js.native
   @JSName("and")
   def and_nothavethrown(chainer: cypressLib.cypressLibStrings.notDOThaveDOTthrown, value: stdLib.ErrorConstructor): Chainable[Subject] = js.native
   /**
@@ -2898,11 +2898,11 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/and
     */
   @JSName("and")
-  def and_throw(chainer: cypressLib.cypressLibStrings.`throw`, error: nodeLib.Error): Chainable[Subject] = js.native
+  def and_throw(chainer: cypressLib.cypressLibStrings.`throw`, error: stdLib.Error): Chainable[Subject] = js.native
   @JSName("and")
-  def and_throw(chainer: cypressLib.cypressLibStrings.`throw`, error: nodeLib.Error, expected: java.lang.String): Chainable[Subject] = js.native
+  def and_throw(chainer: cypressLib.cypressLibStrings.`throw`, error: stdLib.Error, expected: java.lang.String): Chainable[Subject] = js.native
   @JSName("and")
-  def and_throw(chainer: cypressLib.cypressLibStrings.`throw`, error: nodeLib.Error, expected: stdLib.RegExp): Chainable[Subject] = js.native
+  def and_throw(chainer: cypressLib.cypressLibStrings.`throw`, error: stdLib.Error, expected: stdLib.RegExp): Chainable[Subject] = js.native
   @JSName("and")
   def and_throw(chainer: cypressLib.cypressLibStrings.`throw`, value: java.lang.String): Chainable[Subject] = js.native
   @JSName("and")
@@ -12296,10 +12296,10 @@ trait Chainable[Subject] extends js.Object {
     *
     * @see https://on.cypress.io/go
     */
-  def go(direction: HistoryDirection): Chainable[mochaLib.Window] = js.native
-  def go(direction: HistoryDirection, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[mochaLib.Window] = js.native
-  def go(direction: scala.Double): Chainable[mochaLib.Window] = js.native
-  def go(direction: scala.Double, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[mochaLib.Window] = js.native
+  def go(direction: HistoryDirection): Chainable[stdLib.Window] = js.native
+  def go(direction: HistoryDirection, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[stdLib.Window] = js.native
+  def go(direction: scala.Double): Chainable[stdLib.Window] = js.native
+  def go(direction: scala.Double, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[stdLib.Window] = js.native
   /**
     * Get the current URL hash of the page that is currently active.
     *
@@ -15699,7 +15699,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("off")
   def off_fail(
     action: cypressLib.cypressLibStrings.fail,
-    fn: js.Function2[/* error */ nodeLib.Error, /* mocha */ mochaLib.MochaNs.IRunnable, scala.Unit]
+    fn: js.Function2[/* error */ stdLib.Error, /* mocha */ mochaLib.MochaNs.IRunnable, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires whenever a command emits this event so it can be displayed in the Command Log. Useful to see how internal cypress commands utilize the {% url 'Cypress.log()' cypress-log %} API.
@@ -15800,7 +15800,7 @@ trait Chainable[Subject] extends js.Object {
   def `off_uncaught:exception`(
     action: cypressLib.cypressLibStrings.`uncaught:exception`,
     fn: js.Function2[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* runnable */ mochaLib.MochaNs.IRunnable, 
       cypressLib.cypressLibNumbers.`false` | scala.Unit
     ]
@@ -15869,7 +15869,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("off")
   def `off_window:before:load`(
     action: cypressLib.cypressLibStrings.`window:before:load`,
-    fn: js.Function1[/* win */ mochaLib.Window, scala.Unit]
+    fn: js.Function1[/* win */ stdLib.Window, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires when your application is about to navigate away. The real event object is provided to you. Your app may have set a `returnValue` on the event, which is useful to assert on.
@@ -15921,7 +15921,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("off")
   def `off_window:load`(
     action: cypressLib.cypressLibStrings.`window:load`,
-    fn: js.Function1[/* win */ mochaLib.Window, scala.Unit]
+    fn: js.Function1[/* win */ stdLib.Window, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires when your application is has unloaded and is navigating away. The real event object is provided to you. This event is not cancelable.
@@ -15999,7 +15999,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("on")
   def on_fail(
     action: cypressLib.cypressLibStrings.fail,
-    fn: js.Function2[/* error */ nodeLib.Error, /* mocha */ mochaLib.MochaNs.IRunnable, scala.Unit]
+    fn: js.Function2[/* error */ stdLib.Error, /* mocha */ mochaLib.MochaNs.IRunnable, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires whenever a command emits this event so it can be displayed in the Command Log. Useful to see how internal cypress commands utilize the {% url 'Cypress.log()' cypress-log %} API.
@@ -16100,7 +16100,7 @@ trait Chainable[Subject] extends js.Object {
   def `on_uncaught:exception`(
     action: cypressLib.cypressLibStrings.`uncaught:exception`,
     fn: js.Function2[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* runnable */ mochaLib.MochaNs.IRunnable, 
       cypressLib.cypressLibNumbers.`false` | scala.Unit
     ]
@@ -16169,7 +16169,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("on")
   def `on_window:before:load`(
     action: cypressLib.cypressLibStrings.`window:before:load`,
-    fn: js.Function1[/* win */ mochaLib.Window, scala.Unit]
+    fn: js.Function1[/* win */ stdLib.Window, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires when your application is about to navigate away. The real event object is provided to you. Your app may have set a `returnValue` on the event, which is useful to assert on.
@@ -16221,7 +16221,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("on")
   def `on_window:load`(
     action: cypressLib.cypressLibStrings.`window:load`,
-    fn: js.Function1[/* win */ mochaLib.Window, scala.Unit]
+    fn: js.Function1[/* win */ stdLib.Window, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires when your application is has unloaded and is navigating away. The real event object is provided to you. This event is not cancelable.
@@ -24595,7 +24595,7 @@ trait Chainable[Subject] extends js.Object {
     * @example
     *    cy.reload()
     */
-  def reload(): Chainable[mochaLib.Window] = js.native
+  def reload(): Chainable[stdLib.Window] = js.native
   /**
     * Reload the page without cache
     *
@@ -24606,8 +24606,8 @@ trait Chainable[Subject] extends js.Object {
     *    cy.visit('http://localhost:3000/admin')
     *    cy.reload(true)
     */
-  def reload(forceReload: scala.Boolean): Chainable[mochaLib.Window] = js.native
-  def reload(options: stdLib.Partial[Loggable with Timeoutable]): Chainable[mochaLib.Window] = js.native
+  def reload(forceReload: scala.Boolean): Chainable[stdLib.Window] = js.native
+  def reload(options: stdLib.Partial[Loggable with Timeoutable]): Chainable[stdLib.Window] = js.native
   /**
     * Make an HTTP request with specific method.
     *
@@ -25617,7 +25617,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("should")
   def should_havealwaysthrown(chainer: cypressLib.cypressLibStrings.haveDOTalwaysDOTthrown, value: java.lang.String): Chainable[Subject] = js.native
   @JSName("should")
-  def should_havealwaysthrown(chainer: cypressLib.cypressLibStrings.haveDOTalwaysDOTthrown, value: nodeLib.Error): Chainable[Subject] = js.native
+  def should_havealwaysthrown(chainer: cypressLib.cypressLibStrings.haveDOTalwaysDOTthrown, value: stdLib.Error): Chainable[Subject] = js.native
   @JSName("should")
   def should_havealwaysthrown(chainer: cypressLib.cypressLibStrings.haveDOTalwaysDOTthrown, value: stdLib.ErrorConstructor): Chainable[Subject] = js.native
   /**
@@ -26015,7 +26015,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("should")
   def should_havethrown(chainer: cypressLib.cypressLibStrings.haveDOTthrown, value: java.lang.String): Chainable[Subject] = js.native
   @JSName("should")
-  def should_havethrown(chainer: cypressLib.cypressLibStrings.haveDOTthrown, value: nodeLib.Error): Chainable[Subject] = js.native
+  def should_havethrown(chainer: cypressLib.cypressLibStrings.haveDOTthrown, value: stdLib.Error): Chainable[Subject] = js.native
   @JSName("should")
   def should_havethrown(chainer: cypressLib.cypressLibStrings.haveDOTthrown, value: stdLib.ErrorConstructor): Chainable[Subject] = js.native
   /**
@@ -26876,7 +26876,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("should")
   def should_nothavealwaysthrown(chainer: cypressLib.cypressLibStrings.notDOThaveDOTalwaysDOTthrown, value: java.lang.String): Chainable[Subject] = js.native
   @JSName("should")
-  def should_nothavealwaysthrown(chainer: cypressLib.cypressLibStrings.notDOThaveDOTalwaysDOTthrown, value: nodeLib.Error): Chainable[Subject] = js.native
+  def should_nothavealwaysthrown(chainer: cypressLib.cypressLibStrings.notDOThaveDOTalwaysDOTthrown, value: stdLib.Error): Chainable[Subject] = js.native
   @JSName("should")
   def should_nothavealwaysthrown(chainer: cypressLib.cypressLibStrings.notDOThaveDOTalwaysDOTthrown, value: stdLib.ErrorConstructor): Chainable[Subject] = js.native
   /**
@@ -27263,7 +27263,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("should")
   def should_nothavethrown(chainer: cypressLib.cypressLibStrings.notDOThaveDOTthrown, value: java.lang.String): Chainable[Subject] = js.native
   @JSName("should")
-  def should_nothavethrown(chainer: cypressLib.cypressLibStrings.notDOThaveDOTthrown, value: nodeLib.Error): Chainable[Subject] = js.native
+  def should_nothavethrown(chainer: cypressLib.cypressLibStrings.notDOThaveDOTthrown, value: stdLib.Error): Chainable[Subject] = js.native
   @JSName("should")
   def should_nothavethrown(chainer: cypressLib.cypressLibStrings.notDOThaveDOTthrown, value: stdLib.ErrorConstructor): Chainable[Subject] = js.native
   /**
@@ -27475,11 +27475,11 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/should
     */
   @JSName("should")
-  def should_throw(chainer: cypressLib.cypressLibStrings.`throw`, error: nodeLib.Error): Chainable[Subject] = js.native
+  def should_throw(chainer: cypressLib.cypressLibStrings.`throw`, error: stdLib.Error): Chainable[Subject] = js.native
   @JSName("should")
-  def should_throw(chainer: cypressLib.cypressLibStrings.`throw`, error: nodeLib.Error, expected: java.lang.String): Chainable[Subject] = js.native
+  def should_throw(chainer: cypressLib.cypressLibStrings.`throw`, error: stdLib.Error, expected: java.lang.String): Chainable[Subject] = js.native
   @JSName("should")
-  def should_throw(chainer: cypressLib.cypressLibStrings.`throw`, error: nodeLib.Error, expected: stdLib.RegExp): Chainable[Subject] = js.native
+  def should_throw(chainer: cypressLib.cypressLibStrings.`throw`, error: stdLib.Error, expected: stdLib.RegExp): Chainable[Subject] = js.native
   @JSName("should")
   def should_throw(chainer: cypressLib.cypressLibStrings.`throw`, value: java.lang.String): Chainable[Subject] = js.native
   @JSName("should")
@@ -32214,8 +32214,8 @@ trait Chainable[Subject] extends js.Object {
     *    cy.visit('/somewhere') // opens ${baseUrl}/somewhere
     *
     */
-  def visit(url: java.lang.String): Chainable[mochaLib.Window] = js.native
-  def visit(url: java.lang.String, options: stdLib.Partial[VisitOptions]): Chainable[mochaLib.Window] = js.native
+  def visit(url: java.lang.String): Chainable[stdLib.Window] = js.native
+  def visit(url: java.lang.String, options: stdLib.Partial[VisitOptions]): Chainable[stdLib.Window] = js.native
   /**
     * Wait for a specific XHR to respond.
     *
@@ -32289,8 +32289,8 @@ trait Chainable[Subject] extends js.Object {
     })
     ```
     */
-  def window(): Chainable[mochaLib.Window] = js.native
-  def window(options: stdLib.Partial[Loggable with Timeoutable]): Chainable[mochaLib.Window] = js.native
+  def window(): Chainable[stdLib.Window] = js.native
+  def window(options: stdLib.Partial[Loggable with Timeoutable]): Chainable[stdLib.Window] = js.native
   /**
     * Scopes all subsequent cy commands to within this element.
     * Useful when working within a particular group of elements such as a `<form>`.

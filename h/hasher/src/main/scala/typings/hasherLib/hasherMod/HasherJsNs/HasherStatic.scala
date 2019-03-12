@@ -89,23 +89,23 @@ object HasherStatic {
     VERSION: java.lang.String,
     appendHash: java.lang.String,
     changed: signalsLib.signalsMod.signalsNs.Signal[_],
-    dispose: js.Function0[scala.Unit],
-    getBaseURL: js.Function0[java.lang.String],
-    getHash: js.Function0[java.lang.String],
-    getHashAsArray: js.Function0[js.Array[java.lang.String]],
-    getURL: js.Function0[java.lang.String],
-    init: js.Function0[scala.Unit],
+    dispose: () => scala.Unit,
+    getBaseURL: () => java.lang.String,
+    getHash: () => java.lang.String,
+    getHashAsArray: () => js.Array[java.lang.String],
+    getURL: () => java.lang.String,
+    init: () => scala.Unit,
     initialized: signalsLib.signalsMod.signalsNs.Signal[_],
-    isActive: js.Function0[scala.Boolean],
+    isActive: () => scala.Boolean,
     prependHash: java.lang.String,
-    replaceHash: js.Function1[/* repeated */ java.lang.String, scala.Unit],
+    replaceHash: /* repeated */ java.lang.String => scala.Unit,
     separator: java.lang.String,
-    setHash: js.Function1[/* repeated */ java.lang.String, scala.Unit],
-    stop: js.Function0[scala.Unit],
+    setHash: /* repeated */ java.lang.String => scala.Unit,
+    stop: () => scala.Unit,
     stopped: signalsLib.signalsMod.signalsNs.Signal[_],
-    toString: js.Function0[java.lang.String]
+    toString: () => java.lang.String
   ): HasherStatic = {
-    val __obj = js.Dynamic.literal(VERSION = VERSION, appendHash = appendHash, changed = changed, dispose = dispose, getBaseURL = getBaseURL, getHash = getHash, getHashAsArray = getHashAsArray, getURL = getURL, init = init, initialized = initialized, isActive = isActive, prependHash = prependHash, replaceHash = replaceHash, separator = separator, setHash = setHash, stop = stop, stopped = stopped, toString = toString)
+    val __obj = js.Dynamic.literal(VERSION = VERSION, appendHash = appendHash, changed = changed, dispose = js.Any.fromFunction0(dispose), getBaseURL = js.Any.fromFunction0(getBaseURL), getHash = js.Any.fromFunction0(getHash), getHashAsArray = js.Any.fromFunction0(getHashAsArray), getURL = js.Any.fromFunction0(getURL), init = js.Any.fromFunction0(init), initialized = initialized, isActive = js.Any.fromFunction0(isActive), prependHash = prependHash, replaceHash = js.Any.fromFunction1(replaceHash), separator = separator, setHash = js.Any.fromFunction1(setHash), stop = js.Any.fromFunction0(stop), stopped = stopped, toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[HasherStatic]
   }

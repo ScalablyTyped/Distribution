@@ -31,12 +31,12 @@ object Resource {
   @scala.inline
   def apply(
     url: java.lang.String,
-    getContent: js.Function0[js.Promise[js.Object]] = null,
-    setContent: js.Function2[/* content */ java.lang.String, /* commit */ scala.Boolean, js.Promise[_]] = null
+    getContent: () => js.Promise[js.Object] = null,
+    setContent: (/* content */ java.lang.String, /* commit */ scala.Boolean) => js.Promise[_] = null
   ): Resource = {
     val __obj = js.Dynamic.literal(url = url)
-    if (getContent != null) __obj.updateDynamic("getContent")(getContent)
-    if (setContent != null) __obj.updateDynamic("setContent")(setContent)
+    if (getContent != null) __obj.updateDynamic("getContent")(js.Any.fromFunction0(getContent))
+    if (setContent != null) __obj.updateDynamic("setContent")(js.Any.fromFunction2(setContent))
     __obj.asInstanceOf[Resource]
   }
 }

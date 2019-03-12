@@ -23,11 +23,11 @@ trait MenuBarDocument extends js.Object {
 object MenuBarDocument {
   @scala.inline
   def apply(
-    getDocument: js.Function1[stdLib.Element, stdLib.Document],
-    setDocument: js.Function2[stdLib.Document, stdLib.Element, scala.Unit],
-    setSelectedItem: js.Function1[stdLib.Element, scala.Unit]
+    getDocument: stdLib.Element => stdLib.Document,
+    setDocument: (stdLib.Document, stdLib.Element) => scala.Unit,
+    setSelectedItem: stdLib.Element => scala.Unit
   ): MenuBarDocument = {
-    val __obj = js.Dynamic.literal(getDocument = getDocument, setDocument = setDocument, setSelectedItem = setSelectedItem)
+    val __obj = js.Dynamic.literal(getDocument = js.Any.fromFunction1(getDocument), setDocument = js.Any.fromFunction2(setDocument), setSelectedItem = js.Any.fromFunction1(setSelectedItem))
   
     __obj.asInstanceOf[MenuBarDocument]
   }

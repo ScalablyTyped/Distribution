@@ -13,8 +13,8 @@ trait Transform extends js.Object {
 
 object Transform {
   @scala.inline
-  def apply(clone: js.Function0[Transform], rotation: Quaternion, translation: Vector3): Transform = {
-    val __obj = js.Dynamic.literal(clone = clone, rotation = rotation, translation = translation)
+  def apply(clone: () => Transform, rotation: Quaternion, translation: Vector3): Transform = {
+    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), rotation = rotation, translation = translation)
   
     __obj.asInstanceOf[Transform]
   }

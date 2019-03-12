@@ -23,32 +23,14 @@ trait TriggersResource extends js.Object {
 object TriggersResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Trigger]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Trigger]
-    ],
-    list: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListTriggersResponse]
-    ],
-    revert: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RevertTriggerResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Trigger]
-    ]
+    create: gapiDotClientDotTagmanagerLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Trigger],
+    delete: gapiDotClientDotTagmanagerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotTagmanagerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Trigger],
+    list: gapiDotClientDotTagmanagerLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[ListTriggersResponse],
+    revert: gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint => gapiDotClientLib.gapiNs.clientNs.Request[RevertTriggerResponse],
+    update: gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint => gapiDotClientLib.gapiNs.clientNs.Request[Trigger]
   ): TriggersResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, revert = revert, update = update)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), revert = js.Any.fromFunction1(revert), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[TriggersResource]
   }

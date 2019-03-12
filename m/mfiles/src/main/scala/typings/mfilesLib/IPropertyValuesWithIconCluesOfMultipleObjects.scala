@@ -14,11 +14,11 @@ trait IPropertyValuesWithIconCluesOfMultipleObjects extends js.Object {
 object IPropertyValuesWithIconCluesOfMultipleObjects {
   @scala.inline
   def apply(
-    Clone: js.Function0[IPropertyValuesWithIconCluesOfMultipleObjects],
+    Clone: () => IPropertyValuesWithIconCluesOfMultipleObjects,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IPropertyValuesWithIconClues]
+    Item: scala.Double => IPropertyValuesWithIconClues
   ): IPropertyValuesWithIconCluesOfMultipleObjects = {
-    val __obj = js.Dynamic.literal(Clone = Clone, Count = Count, Item = Item)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Count = Count, Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[IPropertyValuesWithIconCluesOfMultipleObjects]
   }

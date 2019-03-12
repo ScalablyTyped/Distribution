@@ -105,28 +105,28 @@ trait GeoDistanceFacet extends Facet {
 object GeoDistanceFacet {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    addRange: js.Function2[stdLib.Number, stdLib.Number, GeoDistanceFacet],
-    addUnboundedFrom: js.Function1[stdLib.Number, GeoDistanceFacet],
-    addUnboundedTo: js.Function1[stdLib.Number, GeoDistanceFacet],
-    cacheFilter: js.Function1[scala.Boolean, GeoDistanceFacet],
-    distanceType: js.Function1[java.lang.String, GeoDistanceFacet],
-    facetFilter: js.Function1[js.Object, GeoDistanceFacet],
-    field: js.Function1[java.lang.String, GeoDistanceFacet],
-    global: js.Function1[scala.Boolean, GeoDistanceFacet],
-    lang: js.Function1[java.lang.String, GeoDistanceFacet],
-    mode: js.Function1[java.lang.String, GeoDistanceFacet],
-    nested: js.Function1[java.lang.String, GeoDistanceFacet],
-    normalize: js.Function1[java.lang.String, GeoDistanceFacet],
-    params: js.Function1[js.Object, GeoDistanceFacet],
-    point: js.Function1[GeoPoint, GeoDistanceFacet],
-    scope: js.Function1[java.lang.String, GeoDistanceFacet],
-    toJSON: js.Function0[js.Any],
-    unit: js.Function1[java.lang.String, GeoDistanceFacet],
-    valueField: js.Function1[java.lang.String, GeoDistanceFacet],
-    valueScript: js.Function1[java.lang.String, GeoDistanceFacet]
+    _type: () => java.lang.String,
+    addRange: (stdLib.Number, stdLib.Number) => GeoDistanceFacet,
+    addUnboundedFrom: stdLib.Number => GeoDistanceFacet,
+    addUnboundedTo: stdLib.Number => GeoDistanceFacet,
+    cacheFilter: scala.Boolean => GeoDistanceFacet,
+    distanceType: java.lang.String => GeoDistanceFacet,
+    facetFilter: js.Object => GeoDistanceFacet,
+    field: java.lang.String => GeoDistanceFacet,
+    global: scala.Boolean => GeoDistanceFacet,
+    lang: java.lang.String => GeoDistanceFacet,
+    mode: java.lang.String => GeoDistanceFacet,
+    nested: java.lang.String => GeoDistanceFacet,
+    normalize: java.lang.String => GeoDistanceFacet,
+    params: js.Object => GeoDistanceFacet,
+    point: GeoPoint => GeoDistanceFacet,
+    scope: java.lang.String => GeoDistanceFacet,
+    toJSON: () => js.Any,
+    unit: java.lang.String => GeoDistanceFacet,
+    valueField: java.lang.String => GeoDistanceFacet,
+    valueScript: java.lang.String => GeoDistanceFacet
   ): GeoDistanceFacet = {
-    val __obj = js.Dynamic.literal(_type = _type, addRange = addRange, addUnboundedFrom = addUnboundedFrom, addUnboundedTo = addUnboundedTo, cacheFilter = cacheFilter, distanceType = distanceType, facetFilter = facetFilter, field = field, global = global, lang = lang, mode = mode, nested = nested, normalize = normalize, params = params, point = point, scope = scope, toJSON = toJSON, unit = unit, valueField = valueField, valueScript = valueScript)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), addRange = js.Any.fromFunction2(addRange), addUnboundedFrom = js.Any.fromFunction1(addUnboundedFrom), addUnboundedTo = js.Any.fromFunction1(addUnboundedTo), cacheFilter = js.Any.fromFunction1(cacheFilter), distanceType = js.Any.fromFunction1(distanceType), facetFilter = js.Any.fromFunction1(facetFilter), field = js.Any.fromFunction1(field), global = js.Any.fromFunction1(global), lang = js.Any.fromFunction1(lang), mode = js.Any.fromFunction1(mode), nested = js.Any.fromFunction1(nested), normalize = js.Any.fromFunction1(normalize), params = js.Any.fromFunction1(params), point = js.Any.fromFunction1(point), scope = js.Any.fromFunction1(scope), toJSON = js.Any.fromFunction0(toJSON), unit = js.Any.fromFunction1(unit), valueField = js.Any.fromFunction1(valueField), valueScript = js.Any.fromFunction1(valueScript))
   
     __obj.asInstanceOf[GeoDistanceFacet]
   }

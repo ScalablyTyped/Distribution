@@ -23,11 +23,8 @@ trait CalculationCache[Result] extends js.Object {
 
 object CalculationCache {
   @scala.inline
-  def apply[Result](
-    invalidate: js.Function0[scala.Unit],
-    result: js.Function2[js.Array[js.Object], js.Function0[Result], Result]
-  ): CalculationCache[Result] = {
-    val __obj = js.Dynamic.literal(invalidate = invalidate, result = result)
+  def apply[Result](invalidate: () => scala.Unit, result: (js.Array[js.Object], js.Function0[Result]) => Result): CalculationCache[Result] = {
+    val __obj = js.Dynamic.literal(invalidate = js.Any.fromFunction0(invalidate), result = js.Any.fromFunction2(result))
   
     __obj.asInstanceOf[CalculationCache[Result]]
   }

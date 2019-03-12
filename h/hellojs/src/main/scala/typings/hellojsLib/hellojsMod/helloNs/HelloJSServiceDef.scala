@@ -49,7 +49,7 @@ object HelloJSServiceDef {
     form: (js.Function2[/* p */ js.Any, /* query */ js.Any, scala.Unit]) | scala.Boolean = null,
     get: org.scalablytyped.runtime.StringDictionary[java.lang.String | HelloJSUrlMappingFunction] = null,
     jsonp: (js.Function2[/* p */ js.Any, /* query */ js.Any, scala.Unit]) | scala.Boolean = null,
-    login: js.Function1[/* p */ js.Any, scala.Unit] = null,
+    login: /* p */ js.Any => scala.Unit = null,
     logout: (js.Function1[/* callback */ js.Function0[scala.Unit | java.lang.String], scala.Unit]) | java.lang.String = null,
     name: java.lang.String = null,
     patch: org.scalablytyped.runtime.StringDictionary[java.lang.String | HelloJSUrlMappingFunction] = null,
@@ -60,7 +60,7 @@ object HelloJSServiceDef {
     scope: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     scope_delim: java.lang.String = null,
     wrap: org.scalablytyped.runtime.StringDictionary[js.Function3[/* r */ js.Any, /* headers */ js.Any, /* p */ js.Any, scala.Unit]] = null,
-    xhr: js.Function2[/* p */ js.Any, /* query */ js.Any, scala.Unit] = null
+    xhr: (/* p */ js.Any, /* query */ js.Any) => scala.Unit = null
   ): HelloJSServiceDef = {
     val __obj = js.Dynamic.literal(oauth = oauth.asInstanceOf[js.Any])
     if (base != null) __obj.updateDynamic("base")(base)
@@ -68,7 +68,7 @@ object HelloJSServiceDef {
     if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
     if (get != null) __obj.updateDynamic("get")(get)
     if (jsonp != null) __obj.updateDynamic("jsonp")(jsonp.asInstanceOf[js.Any])
-    if (login != null) __obj.updateDynamic("login")(login)
+    if (login != null) __obj.updateDynamic("login")(js.Any.fromFunction1(login))
     if (logout != null) __obj.updateDynamic("logout")(logout.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (patch != null) __obj.updateDynamic("patch")(patch)
@@ -79,7 +79,7 @@ object HelloJSServiceDef {
     if (scope != null) __obj.updateDynamic("scope")(scope)
     if (scope_delim != null) __obj.updateDynamic("scope_delim")(scope_delim)
     if (wrap != null) __obj.updateDynamic("wrap")(wrap)
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    if (xhr != null) __obj.updateDynamic("xhr")(js.Any.fromFunction2(xhr))
     __obj.asInstanceOf[HelloJSServiceDef]
   }
 }

@@ -5,49 +5,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PromisedLanguageChains extends js.Object {
-  var and: PromisedAssertion
-  var at: PromisedAssertion
-  var be: PromisedAssertion
-  var been: PromisedAssertion
-  var but: PromisedAssertion
-  var does: PromisedAssertion
-  var eventually: Eventually
-  var has: PromisedAssertion
-  var have: PromisedAssertion
-  var is: PromisedAssertion
-  var of: PromisedAssertion
-  var same: PromisedAssertion
-  var that: PromisedAssertion
+  @JSName("and")
+  var and_Original: PromisedAssertion = js.native
+  @JSName("at")
+  var at_Original: PromisedAssertion = js.native
+  @JSName("be")
+  var be_Original: PromisedAssertion = js.native
+  @JSName("been")
+  var been_Original: PromisedAssertion = js.native
+  @JSName("but")
+  var but_Original: PromisedAssertion = js.native
+  @JSName("does")
+  var does_Original: PromisedAssertion = js.native
+  @JSName("eventually")
+  var eventually_Original: Eventually = js.native
+  @JSName("has")
+  var has_Original: PromisedAssertion = js.native
+  @JSName("have")
+  var have_Original: PromisedAssertion = js.native
+  @JSName("is")
+  var is_Original: PromisedAssertion = js.native
+  @JSName("of")
+  var of_Original: PromisedAssertion = js.native
+  @JSName("same")
+  var same_Original: PromisedAssertion = js.native
+  @JSName("that")
+  var that_Original: PromisedAssertion = js.native
   // From chai
-  var to: PromisedAssertion
-  var which: PromisedAssertion
-  var `with`: PromisedAssertion
-}
-
-object PromisedLanguageChains {
-  @scala.inline
-  def apply(
-    and: PromisedAssertion,
-    at: PromisedAssertion,
-    be: PromisedAssertion,
-    been: PromisedAssertion,
-    but: PromisedAssertion,
-    does: PromisedAssertion,
-    eventually: Eventually,
-    has: PromisedAssertion,
-    have: PromisedAssertion,
-    is: PromisedAssertion,
-    of: PromisedAssertion,
-    same: PromisedAssertion,
-    that: PromisedAssertion,
-    to: PromisedAssertion,
-    which: PromisedAssertion,
-    `with`: PromisedAssertion
-  ): PromisedLanguageChains = {
-    val __obj = js.Dynamic.literal(and = and, at = at, be = be, been = been, but = but, does = does, eventually = eventually, has = has, have = have, is = is, of = of, same = same, that = that, to = to, which = which)
-    __obj.updateDynamic("with")(`with`)
-    __obj.asInstanceOf[PromisedLanguageChains]
-  }
+  @JSName("to")
+  var to_Original: PromisedAssertion = js.native
+  @JSName("which")
+  var which_Original: PromisedAssertion = js.native
+  @JSName("with")
+  var with_Original: PromisedAssertion = js.native
+  def and(`type`: java.lang.String): PromisedAssertion = js.native
+  def and(`type`: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
+  def at(`type`: java.lang.String): PromisedAssertion = js.native
+  def at(`type`: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
+  def be(`type`: java.lang.String): PromisedAssertion = js.native
+  def be(`type`: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
+  def been(`type`: java.lang.String): PromisedAssertion = js.native
+  def been(`type`: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
+  def but(`type`: java.lang.String): PromisedAssertion = js.native
+  def but(`type`: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
+  def does(`type`: java.lang.String): PromisedAssertion = js.native
+  def does(`type`: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
+  def eventually(`type`: java.lang.String): PromisedAssertion = js.native
+  def eventually(`type`: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
+  def has(`type`: java.lang.String): PromisedAssertion = js.native
+  def has(`type`: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
+  def have(`type`: java.lang.String): PromisedAssertion = js.native
+  def have(`type`: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
+  def is(`type`: java.lang.String): PromisedAssertion = js.native
+  def is(`type`: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
+  def of(`type`: java.lang.String): PromisedAssertion = js.native
+  def of(`type`: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
+  def same(`type`: java.lang.String): PromisedAssertion = js.native
+  def same(`type`: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
+  def that(`type`: java.lang.String): PromisedAssertion = js.native
+  def that(`type`: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
+  // From chai
+  def to(`type`: java.lang.String): PromisedAssertion = js.native
+  def to(`type`: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
+  def which(`type`: java.lang.String): PromisedAssertion = js.native
+  def which(`type`: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
+  def `with`(`type`: java.lang.String): PromisedAssertion = js.native
+  def `with`(`type`: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
 }
 

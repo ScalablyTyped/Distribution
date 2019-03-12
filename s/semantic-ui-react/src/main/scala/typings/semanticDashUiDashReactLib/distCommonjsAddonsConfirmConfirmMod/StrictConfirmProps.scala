@@ -23,7 +23,7 @@ trait StrictConfirmProps
     */
   var onCancel: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
       /* data */ ConfirmProps, 
       scala.Unit
     ]
@@ -36,7 +36,7 @@ trait StrictConfirmProps
     */
   var onConfirm: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
       /* data */ ConfirmProps, 
       scala.Unit
     ]
@@ -76,41 +76,13 @@ object StrictConfirmProps {
     mountNode: js.Any = null,
     mouseEnterDelay: scala.Int | scala.Double = null,
     mouseLeaveDelay: scala.Int | scala.Double = null,
-    onActionClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsModulesModalModalMod.ModalProps, 
-      scala.Unit
-    ] = null,
-    onCancel: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
-      /* data */ ConfirmProps, 
-      scala.Unit
-    ] = null,
-    onClose: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsModulesModalModalMod.ModalProps, 
-      scala.Unit
-    ] = null,
-    onConfirm: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
-      /* data */ ConfirmProps, 
-      scala.Unit
-    ] = null,
-    onMount: js.Function2[
-      /* nothing */ scala.Null, 
-      /* data */ semanticDashUiDashReactLib.distCommonjsModulesModalModalMod.ModalProps, 
-      scala.Unit
-    ] = null,
-    onOpen: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsModulesModalModalMod.ModalProps, 
-      scala.Unit
-    ] = null,
-    onUnmount: js.Function2[
-      /* nothing */ scala.Null, 
-      /* data */ semanticDashUiDashReactLib.distCommonjsModulesModalModalMod.ModalProps, 
-      scala.Unit
-    ] = null,
+    onActionClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsModulesModalModalMod.ModalProps) => scala.Unit = null,
+    onCancel: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ ConfirmProps) => scala.Unit = null,
+    onClose: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsModulesModalModalMod.ModalProps) => scala.Unit = null,
+    onConfirm: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ ConfirmProps) => scala.Unit = null,
+    onMount: (/* nothing */ scala.Null, /* data */ semanticDashUiDashReactLib.distCommonjsModulesModalModalMod.ModalProps) => scala.Unit = null,
+    onOpen: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsModulesModalModalMod.ModalProps) => scala.Unit = null,
+    onUnmount: (/* nothing */ scala.Null, /* data */ semanticDashUiDashReactLib.distCommonjsModulesModalModalMod.ModalProps) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     openOnTriggerClick: js.UndefOr[scala.Boolean] = js.undefined,
     openOnTriggerFocus: js.UndefOr[scala.Boolean] = js.undefined,
@@ -118,7 +90,7 @@ object StrictConfirmProps {
     size: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mini | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tiny | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.small | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.large | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.fullscreen = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     trigger: reactLib.reactMod.ReactNs.ReactNode = null,
-    triggerRef: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null
+    triggerRef: /* node */ stdLib.HTMLElement => scala.Unit = null
   ): StrictConfirmProps = {
     val __obj = js.Dynamic.literal()
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
@@ -145,13 +117,13 @@ object StrictConfirmProps {
     if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode)
     if (mouseEnterDelay != null) __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay.asInstanceOf[js.Any])
     if (mouseLeaveDelay != null) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.asInstanceOf[js.Any])
-    if (onActionClick != null) __obj.updateDynamic("onActionClick")(onActionClick)
-    if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onConfirm != null) __obj.updateDynamic("onConfirm")(onConfirm)
-    if (onMount != null) __obj.updateDynamic("onMount")(onMount)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
-    if (onUnmount != null) __obj.updateDynamic("onUnmount")(onUnmount)
+    if (onActionClick != null) __obj.updateDynamic("onActionClick")(js.Any.fromFunction2(onActionClick))
+    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction2(onCancel))
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2(onClose))
+    if (onConfirm != null) __obj.updateDynamic("onConfirm")(js.Any.fromFunction2(onConfirm))
+    if (onMount != null) __obj.updateDynamic("onMount")(js.Any.fromFunction2(onMount))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction2(onOpen))
+    if (onUnmount != null) __obj.updateDynamic("onUnmount")(js.Any.fromFunction2(onUnmount))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (!js.isUndefined(openOnTriggerClick)) __obj.updateDynamic("openOnTriggerClick")(openOnTriggerClick)
     if (!js.isUndefined(openOnTriggerFocus)) __obj.updateDynamic("openOnTriggerFocus")(openOnTriggerFocus)
@@ -159,7 +131,7 @@ object StrictConfirmProps {
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
-    if (triggerRef != null) __obj.updateDynamic("triggerRef")(triggerRef)
+    if (triggerRef != null) __obj.updateDynamic("triggerRef")(js.Any.fromFunction1(triggerRef))
     __obj.asInstanceOf[StrictConfirmProps]
   }
 }

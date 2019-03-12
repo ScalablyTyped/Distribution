@@ -11,8 +11,8 @@ trait PhononAjaxReturnObject extends js.Object {
 
 object PhononAjaxReturnObject {
   @scala.inline
-  def apply(cancel: js.Function0[scala.Unit]): PhononAjaxReturnObject = {
-    val __obj = js.Dynamic.literal(cancel = cancel)
+  def apply(cancel: () => scala.Unit): PhononAjaxReturnObject = {
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel))
   
     __obj.asInstanceOf[PhononAjaxReturnObject]
   }

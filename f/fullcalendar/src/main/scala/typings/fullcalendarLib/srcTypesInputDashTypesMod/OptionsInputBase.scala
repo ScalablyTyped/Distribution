@@ -324,22 +324,12 @@ object OptionsInputBase {
     customButtons: org.scalablytyped.runtime.StringDictionary[CustomButtonInput] = null,
     dateAlignment: java.lang.String = null,
     dateIncrement: DurationInput = null,
-    dayClick: js.Function4[
-      /* date */ momentLib.momentMod.momentNs.Moment, 
-      /* jsEvent */ stdLib.MouseEvent, 
-      /* view */ fullcalendarLib.viewMod.default, 
-      /* resourceObj */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
+    dayClick: (/* date */ momentLib.momentMod.momentNs.Moment, /* jsEvent */ stdLib.MouseEvent, /* view */ fullcalendarLib.viewMod.default, /* resourceObj */ js.UndefOr[js.Any]) => scala.Unit = null,
     dayCount: scala.Int | scala.Double = null,
     dayNames: js.Array[java.lang.String] = null,
     dayNamesShort: js.Array[java.lang.String] = null,
     dayPopoverFormat: java.lang.String = null,
-    dayRender: js.Function2[
-      /* date */ momentLib.momentMod.momentNs.Moment, 
-      /* cell */ fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery, 
-      scala.Unit
-    ] = null,
+    dayRender: (/* date */ momentLib.momentMod.momentNs.Moment, /* cell */ fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery) => scala.Unit = null,
     defaultDate: MomentInput = null,
     defaultView: java.lang.String = null,
     displayEventEnd: js.UndefOr[scala.Boolean] = js.undefined,
@@ -347,117 +337,42 @@ object OptionsInputBase {
     dragOpacity: scala.Int | scala.Double = null,
     dragRevertDuration: scala.Int | scala.Double = null,
     dragScroll: js.UndefOr[scala.Boolean] = js.undefined,
-    drop: js.Function3[
-      /* date */ momentLib.momentMod.momentNs.Moment, 
-      /* jsEvent */ stdLib.MouseEvent, 
-      /* ui */ js.Any, 
-      scala.Unit
-    ] = null,
+    drop: (/* date */ momentLib.momentMod.momentNs.Moment, /* jsEvent */ stdLib.MouseEvent, /* ui */ js.Any) => scala.Unit = null,
     dropAccept: java.lang.String | (js.Function1[/* draggable */ js.Any, scala.Boolean]) = null,
     droppable: js.UndefOr[scala.Boolean] = js.undefined,
     duration: DurationInput = null,
     editable: js.UndefOr[scala.Boolean] = js.undefined,
     endParam: java.lang.String = null,
-    eventAfterAllRender: js.Function1[/* view */ fullcalendarLib.viewMod.default, scala.Unit] = null,
-    eventAfterRender: js.Function3[
-      /* event */ EventObjectInput, 
-      /* element */ fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery, 
-      /* view */ fullcalendarLib.viewMod.default, 
-      scala.Unit
-    ] = null,
-    eventAllow: js.Function2[/* dropInfo */ DropInfo, /* draggedEvent */ EventObjectInput, scala.Boolean] = null,
+    eventAfterAllRender: /* view */ fullcalendarLib.viewMod.default => scala.Unit = null,
+    eventAfterRender: (/* event */ EventObjectInput, /* element */ fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
+    eventAllow: (/* dropInfo */ DropInfo, /* draggedEvent */ EventObjectInput) => scala.Boolean = null,
     eventBackgroundColor: java.lang.String = null,
     eventBorderColor: java.lang.String = null,
-    eventClick: js.Function3[
-      /* event */ EventObjectInput, 
-      /* jsEvent */ stdLib.MouseEvent, 
-      /* view */ fullcalendarLib.viewMod.default, 
-      scala.Boolean | scala.Unit
-    ] = null,
+    eventClick: (/* event */ EventObjectInput, /* jsEvent */ stdLib.MouseEvent, /* view */ fullcalendarLib.viewMod.default) => scala.Boolean | scala.Unit = null,
     eventColor: java.lang.String = null,
     eventConstraint: ConstraintInput = null,
-    eventDataTransform: js.Function1[/* eventData */ js.Any, EventObjectInput] = null,
-    eventDestroy: js.Function3[
-      /* event */ EventObjectInput, 
-      /* element */ fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery, 
-      /* view */ fullcalendarLib.viewMod.default, 
-      scala.Unit
-    ] = null,
-    eventDragStart: js.Function4[
-      /* event */ EventObjectInput, 
-      /* jsEvent */ stdLib.MouseEvent, 
-      /* ui */ js.Any, 
-      /* view */ fullcalendarLib.viewMod.default, 
-      scala.Unit
-    ] = null,
-    eventDragStop: js.Function4[
-      /* event */ EventObjectInput, 
-      /* jsEvent */ stdLib.MouseEvent, 
-      /* ui */ js.Any, 
-      /* view */ fullcalendarLib.viewMod.default, 
-      scala.Unit
-    ] = null,
-    eventDrop: js.Function6[
-      /* event */ EventObjectInput, 
-      /* delta */ momentLib.momentMod.momentNs.Duration, 
-      /* revertFunc */ js.Function, 
-      /* jsEvent */ stdLib.Event, 
-      /* ui */ js.Any, 
-      /* view */ fullcalendarLib.viewMod.default, 
-      scala.Unit
-    ] = null,
+    eventDataTransform: /* eventData */ js.Any => EventObjectInput = null,
+    eventDestroy: (/* event */ EventObjectInput, /* element */ fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
+    eventDragStart: (/* event */ EventObjectInput, /* jsEvent */ stdLib.MouseEvent, /* ui */ js.Any, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
+    eventDragStop: (/* event */ EventObjectInput, /* jsEvent */ stdLib.MouseEvent, /* ui */ js.Any, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
+    eventDrop: (/* event */ EventObjectInput, /* delta */ momentLib.momentMod.momentNs.Duration, /* revertFunc */ js.Function, /* jsEvent */ stdLib.Event, /* ui */ js.Any, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
     eventDurationEditable: js.UndefOr[scala.Boolean] = js.undefined,
     eventLimit: scala.Boolean | scala.Double = null,
     eventLimitClick: fullcalendarLib.fullcalendarLibStrings.popover | fullcalendarLib.fullcalendarLibStrings.week | fullcalendarLib.fullcalendarLibStrings.day | java.lang.String | (js.Function2[/* cellinfo */ CellInfo, /* jsevent */ stdLib.Event, scala.Unit]) = null,
     eventLimitText: java.lang.String | (js.Function1[/* eventCnt */ scala.Double, java.lang.String]) = null,
     eventLongPressDelay: scala.Int | scala.Double = null,
-    eventMouseout: js.Function3[
-      /* event */ EventObjectInput, 
-      /* jsEvent */ stdLib.MouseEvent, 
-      /* view */ fullcalendarLib.viewMod.default, 
-      scala.Unit
-    ] = null,
-    eventMouseover: js.Function3[
-      /* event */ EventObjectInput, 
-      /* jsEvent */ stdLib.MouseEvent, 
-      /* view */ fullcalendarLib.viewMod.default, 
-      scala.Unit
-    ] = null,
+    eventMouseout: (/* event */ EventObjectInput, /* jsEvent */ stdLib.MouseEvent, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
+    eventMouseover: (/* event */ EventObjectInput, /* jsEvent */ stdLib.MouseEvent, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
     eventOrder: java.lang.String | (js.Array[
       (js.Function2[/* a */ EventObjectInput, /* b */ EventObjectInput, scala.Double]) | java.lang.String
     ]) = null,
     eventOverlap: scala.Boolean | (js.Function2[/* stillEvent */ EventObjectInput, /* movingEvent */ EventObjectInput, scala.Boolean]) = null,
-    eventReceive: js.Function1[/* event */ EventObjectInput, scala.Unit] = null,
-    eventRender: js.Function3[
-      /* event */ EventObjectInput, 
-      /* element */ fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery, 
-      /* view */ fullcalendarLib.viewMod.default, 
-      scala.Unit
-    ] = null,
+    eventReceive: /* event */ EventObjectInput => scala.Unit = null,
+    eventRender: (/* event */ EventObjectInput, /* element */ fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
     eventRenderWait: scala.Int | scala.Double = null,
-    eventResize: js.Function6[
-      /* event */ EventObjectInput, 
-      /* delta */ momentLib.momentMod.momentNs.Duration, 
-      /* revertFunc */ js.Function, 
-      /* jsEvent */ stdLib.Event, 
-      /* ui */ js.Any, 
-      /* view */ fullcalendarLib.viewMod.default, 
-      scala.Unit
-    ] = null,
-    eventResizeStart: js.Function4[
-      /* event */ EventObjectInput, 
-      /* jsEvent */ stdLib.MouseEvent, 
-      /* ui */ js.Any, 
-      /* view */ fullcalendarLib.viewMod.default, 
-      scala.Unit
-    ] = null,
-    eventResizeStop: js.Function4[
-      /* event */ EventObjectInput, 
-      /* jsEvent */ stdLib.MouseEvent, 
-      /* ui */ js.Any, 
-      /* view */ fullcalendarLib.viewMod.default, 
-      scala.Unit
-    ] = null,
+    eventResize: (/* event */ EventObjectInput, /* delta */ momentLib.momentMod.momentNs.Duration, /* revertFunc */ js.Function, /* jsEvent */ stdLib.Event, /* ui */ js.Any, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
+    eventResizeStart: (/* event */ EventObjectInput, /* jsEvent */ stdLib.MouseEvent, /* ui */ js.Any, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
+    eventResizeStop: (/* event */ EventObjectInput, /* jsEvent */ stdLib.MouseEvent, /* ui */ js.Any, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
     eventSources: js.Array[EventSourceInput] = null,
     eventStartEditable: js.UndefOr[scala.Boolean] = js.undefined,
     eventTextColor: java.lang.String = null,
@@ -473,11 +388,7 @@ object OptionsInputBase {
     lazyFetching: js.UndefOr[scala.Boolean] = js.undefined,
     listDayAltFormat: java.lang.String | scala.Boolean = null,
     listDayFormat: java.lang.String | scala.Boolean = null,
-    loading: js.Function2[
-      /* isLoading */ scala.Boolean, 
-      /* view */ fullcalendarLib.viewMod.default, 
-      scala.Unit
-    ] = null,
+    loading: (/* isLoading */ scala.Boolean, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
     locale: java.lang.String = null,
     longPressDelay: scala.Int | scala.Double = null,
     maxTime: DurationInput = null,
@@ -496,15 +407,8 @@ object OptionsInputBase {
     now: MomentInput | js.Function0[MomentInput] = null,
     nowIndicator: js.UndefOr[scala.Boolean] = js.undefined,
     scrollTime: DurationInput = null,
-    select: js.Function5[
-      /* start */ momentLib.momentMod.momentNs.Moment, 
-      /* end */ momentLib.momentMod.momentNs.Moment, 
-      /* jsEvent */ stdLib.MouseEvent, 
-      /* view */ fullcalendarLib.viewMod.default, 
-      /* resource */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    selectAllow: js.Function1[/* selectInfo */ SelectInfo, scala.Boolean] = null,
+    select: (/* start */ momentLib.momentMod.momentNs.Moment, /* end */ momentLib.momentMod.momentNs.Moment, /* jsEvent */ stdLib.MouseEvent, /* view */ fullcalendarLib.viewMod.default, /* resource */ js.UndefOr[js.Any]) => scala.Unit = null,
+    selectAllow: /* selectInfo */ SelectInfo => scala.Boolean = null,
     selectConstraint: ConstraintInput = null,
     selectHelper: js.UndefOr[scala.Boolean] = js.undefined,
     selectOverlap: scala.Boolean | (js.Function1[/* event */ EventObjectInput, scala.Boolean]) = null,
@@ -521,27 +425,19 @@ object OptionsInputBase {
     timeFormat: java.lang.String = null,
     timezone: java.lang.String | scala.Boolean = null,
     titleFormat: java.lang.String = null,
-    unselect: js.Function2[/* view */ fullcalendarLib.viewMod.default, /* jsEvent */ stdLib.Event, scala.Unit] = null,
+    unselect: (/* view */ fullcalendarLib.viewMod.default, /* jsEvent */ stdLib.Event) => scala.Unit = null,
     unselectAuto: js.UndefOr[scala.Boolean] = js.undefined,
     unselectCancel: java.lang.String = null,
     validRange: RangeInput = null,
-    viewDestroy: js.Function2[
-      /* view */ fullcalendarLib.viewMod.default, 
-      /* element */ fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery, 
-      scala.Unit
-    ] = null,
-    viewRender: js.Function2[
-      /* view */ fullcalendarLib.viewMod.default, 
-      /* element */ fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery, 
-      scala.Unit
-    ] = null,
+    viewDestroy: (/* view */ fullcalendarLib.viewMod.default, /* element */ fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery) => scala.Unit = null,
+    viewRender: (/* view */ fullcalendarLib.viewMod.default, /* element */ fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery) => scala.Unit = null,
     visibleRange: (js.Function1[/* currentDate */ momentLib.momentMod.momentNs.Moment, RangeInput]) | RangeInput = null,
     weekNumberCalculation: fullcalendarLib.fullcalendarLibStrings.local | fullcalendarLib.fullcalendarLibStrings.ISO | (js.Function1[/* m */ momentLib.momentMod.momentNs.Moment, scala.Double]) = null,
     weekNumberTitle: java.lang.String = null,
     weekNumbers: js.UndefOr[scala.Boolean] = js.undefined,
     weekNumbersWithinDays: js.UndefOr[scala.Boolean] = js.undefined,
     weekends: js.UndefOr[scala.Boolean] = js.undefined,
-    windowResize: js.Function1[/* view */ fullcalendarLib.viewMod.default, scala.Unit] = null,
+    windowResize: /* view */ fullcalendarLib.viewMod.default => scala.Unit = null,
     windowResizeDelay: scala.Int | scala.Double = null
   ): OptionsInputBase = {
     val __obj = js.Dynamic.literal()
@@ -561,12 +457,12 @@ object OptionsInputBase {
     if (customButtons != null) __obj.updateDynamic("customButtons")(customButtons)
     if (dateAlignment != null) __obj.updateDynamic("dateAlignment")(dateAlignment)
     if (dateIncrement != null) __obj.updateDynamic("dateIncrement")(dateIncrement.asInstanceOf[js.Any])
-    if (dayClick != null) __obj.updateDynamic("dayClick")(dayClick)
+    if (dayClick != null) __obj.updateDynamic("dayClick")(js.Any.fromFunction4(dayClick))
     if (dayCount != null) __obj.updateDynamic("dayCount")(dayCount.asInstanceOf[js.Any])
     if (dayNames != null) __obj.updateDynamic("dayNames")(dayNames)
     if (dayNamesShort != null) __obj.updateDynamic("dayNamesShort")(dayNamesShort)
     if (dayPopoverFormat != null) __obj.updateDynamic("dayPopoverFormat")(dayPopoverFormat)
-    if (dayRender != null) __obj.updateDynamic("dayRender")(dayRender)
+    if (dayRender != null) __obj.updateDynamic("dayRender")(js.Any.fromFunction2(dayRender))
     if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate.asInstanceOf[js.Any])
     if (defaultView != null) __obj.updateDynamic("defaultView")(defaultView)
     if (!js.isUndefined(displayEventEnd)) __obj.updateDynamic("displayEventEnd")(displayEventEnd)
@@ -574,40 +470,40 @@ object OptionsInputBase {
     if (dragOpacity != null) __obj.updateDynamic("dragOpacity")(dragOpacity.asInstanceOf[js.Any])
     if (dragRevertDuration != null) __obj.updateDynamic("dragRevertDuration")(dragRevertDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(dragScroll)) __obj.updateDynamic("dragScroll")(dragScroll)
-    if (drop != null) __obj.updateDynamic("drop")(drop)
+    if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction3(drop))
     if (dropAccept != null) __obj.updateDynamic("dropAccept")(dropAccept.asInstanceOf[js.Any])
     if (!js.isUndefined(droppable)) __obj.updateDynamic("droppable")(droppable)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
     if (endParam != null) __obj.updateDynamic("endParam")(endParam)
-    if (eventAfterAllRender != null) __obj.updateDynamic("eventAfterAllRender")(eventAfterAllRender)
-    if (eventAfterRender != null) __obj.updateDynamic("eventAfterRender")(eventAfterRender)
-    if (eventAllow != null) __obj.updateDynamic("eventAllow")(eventAllow)
+    if (eventAfterAllRender != null) __obj.updateDynamic("eventAfterAllRender")(js.Any.fromFunction1(eventAfterAllRender))
+    if (eventAfterRender != null) __obj.updateDynamic("eventAfterRender")(js.Any.fromFunction3(eventAfterRender))
+    if (eventAllow != null) __obj.updateDynamic("eventAllow")(js.Any.fromFunction2(eventAllow))
     if (eventBackgroundColor != null) __obj.updateDynamic("eventBackgroundColor")(eventBackgroundColor)
     if (eventBorderColor != null) __obj.updateDynamic("eventBorderColor")(eventBorderColor)
-    if (eventClick != null) __obj.updateDynamic("eventClick")(eventClick)
+    if (eventClick != null) __obj.updateDynamic("eventClick")(js.Any.fromFunction3(eventClick))
     if (eventColor != null) __obj.updateDynamic("eventColor")(eventColor)
     if (eventConstraint != null) __obj.updateDynamic("eventConstraint")(eventConstraint)
-    if (eventDataTransform != null) __obj.updateDynamic("eventDataTransform")(eventDataTransform)
-    if (eventDestroy != null) __obj.updateDynamic("eventDestroy")(eventDestroy)
-    if (eventDragStart != null) __obj.updateDynamic("eventDragStart")(eventDragStart)
-    if (eventDragStop != null) __obj.updateDynamic("eventDragStop")(eventDragStop)
-    if (eventDrop != null) __obj.updateDynamic("eventDrop")(eventDrop)
+    if (eventDataTransform != null) __obj.updateDynamic("eventDataTransform")(js.Any.fromFunction1(eventDataTransform))
+    if (eventDestroy != null) __obj.updateDynamic("eventDestroy")(js.Any.fromFunction3(eventDestroy))
+    if (eventDragStart != null) __obj.updateDynamic("eventDragStart")(js.Any.fromFunction4(eventDragStart))
+    if (eventDragStop != null) __obj.updateDynamic("eventDragStop")(js.Any.fromFunction4(eventDragStop))
+    if (eventDrop != null) __obj.updateDynamic("eventDrop")(js.Any.fromFunction6(eventDrop))
     if (!js.isUndefined(eventDurationEditable)) __obj.updateDynamic("eventDurationEditable")(eventDurationEditable)
     if (eventLimit != null) __obj.updateDynamic("eventLimit")(eventLimit.asInstanceOf[js.Any])
     if (eventLimitClick != null) __obj.updateDynamic("eventLimitClick")(eventLimitClick.asInstanceOf[js.Any])
     if (eventLimitText != null) __obj.updateDynamic("eventLimitText")(eventLimitText.asInstanceOf[js.Any])
     if (eventLongPressDelay != null) __obj.updateDynamic("eventLongPressDelay")(eventLongPressDelay.asInstanceOf[js.Any])
-    if (eventMouseout != null) __obj.updateDynamic("eventMouseout")(eventMouseout)
-    if (eventMouseover != null) __obj.updateDynamic("eventMouseover")(eventMouseover)
+    if (eventMouseout != null) __obj.updateDynamic("eventMouseout")(js.Any.fromFunction3(eventMouseout))
+    if (eventMouseover != null) __obj.updateDynamic("eventMouseover")(js.Any.fromFunction3(eventMouseover))
     if (eventOrder != null) __obj.updateDynamic("eventOrder")(eventOrder.asInstanceOf[js.Any])
     if (eventOverlap != null) __obj.updateDynamic("eventOverlap")(eventOverlap.asInstanceOf[js.Any])
-    if (eventReceive != null) __obj.updateDynamic("eventReceive")(eventReceive)
-    if (eventRender != null) __obj.updateDynamic("eventRender")(eventRender)
+    if (eventReceive != null) __obj.updateDynamic("eventReceive")(js.Any.fromFunction1(eventReceive))
+    if (eventRender != null) __obj.updateDynamic("eventRender")(js.Any.fromFunction3(eventRender))
     if (eventRenderWait != null) __obj.updateDynamic("eventRenderWait")(eventRenderWait.asInstanceOf[js.Any])
-    if (eventResize != null) __obj.updateDynamic("eventResize")(eventResize)
-    if (eventResizeStart != null) __obj.updateDynamic("eventResizeStart")(eventResizeStart)
-    if (eventResizeStop != null) __obj.updateDynamic("eventResizeStop")(eventResizeStop)
+    if (eventResize != null) __obj.updateDynamic("eventResize")(js.Any.fromFunction6(eventResize))
+    if (eventResizeStart != null) __obj.updateDynamic("eventResizeStart")(js.Any.fromFunction4(eventResizeStart))
+    if (eventResizeStop != null) __obj.updateDynamic("eventResizeStop")(js.Any.fromFunction4(eventResizeStop))
     if (eventSources != null) __obj.updateDynamic("eventSources")(eventSources)
     if (!js.isUndefined(eventStartEditable)) __obj.updateDynamic("eventStartEditable")(eventStartEditable)
     if (eventTextColor != null) __obj.updateDynamic("eventTextColor")(eventTextColor)
@@ -623,7 +519,7 @@ object OptionsInputBase {
     if (!js.isUndefined(lazyFetching)) __obj.updateDynamic("lazyFetching")(lazyFetching)
     if (listDayAltFormat != null) __obj.updateDynamic("listDayAltFormat")(listDayAltFormat.asInstanceOf[js.Any])
     if (listDayFormat != null) __obj.updateDynamic("listDayFormat")(listDayFormat.asInstanceOf[js.Any])
-    if (loading != null) __obj.updateDynamic("loading")(loading)
+    if (loading != null) __obj.updateDynamic("loading")(js.Any.fromFunction2(loading))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (longPressDelay != null) __obj.updateDynamic("longPressDelay")(longPressDelay.asInstanceOf[js.Any])
     if (maxTime != null) __obj.updateDynamic("maxTime")(maxTime.asInstanceOf[js.Any])
@@ -638,8 +534,8 @@ object OptionsInputBase {
     if (now != null) __obj.updateDynamic("now")(now.asInstanceOf[js.Any])
     if (!js.isUndefined(nowIndicator)) __obj.updateDynamic("nowIndicator")(nowIndicator)
     if (scrollTime != null) __obj.updateDynamic("scrollTime")(scrollTime.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(select)
-    if (selectAllow != null) __obj.updateDynamic("selectAllow")(selectAllow)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction5(select))
+    if (selectAllow != null) __obj.updateDynamic("selectAllow")(js.Any.fromFunction1(selectAllow))
     if (selectConstraint != null) __obj.updateDynamic("selectConstraint")(selectConstraint)
     if (!js.isUndefined(selectHelper)) __obj.updateDynamic("selectHelper")(selectHelper)
     if (selectOverlap != null) __obj.updateDynamic("selectOverlap")(selectOverlap.asInstanceOf[js.Any])
@@ -656,19 +552,19 @@ object OptionsInputBase {
     if (timeFormat != null) __obj.updateDynamic("timeFormat")(timeFormat)
     if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     if (titleFormat != null) __obj.updateDynamic("titleFormat")(titleFormat)
-    if (unselect != null) __obj.updateDynamic("unselect")(unselect)
+    if (unselect != null) __obj.updateDynamic("unselect")(js.Any.fromFunction2(unselect))
     if (!js.isUndefined(unselectAuto)) __obj.updateDynamic("unselectAuto")(unselectAuto)
     if (unselectCancel != null) __obj.updateDynamic("unselectCancel")(unselectCancel)
     if (validRange != null) __obj.updateDynamic("validRange")(validRange)
-    if (viewDestroy != null) __obj.updateDynamic("viewDestroy")(viewDestroy)
-    if (viewRender != null) __obj.updateDynamic("viewRender")(viewRender)
+    if (viewDestroy != null) __obj.updateDynamic("viewDestroy")(js.Any.fromFunction2(viewDestroy))
+    if (viewRender != null) __obj.updateDynamic("viewRender")(js.Any.fromFunction2(viewRender))
     if (visibleRange != null) __obj.updateDynamic("visibleRange")(visibleRange.asInstanceOf[js.Any])
     if (weekNumberCalculation != null) __obj.updateDynamic("weekNumberCalculation")(weekNumberCalculation.asInstanceOf[js.Any])
     if (weekNumberTitle != null) __obj.updateDynamic("weekNumberTitle")(weekNumberTitle)
     if (!js.isUndefined(weekNumbers)) __obj.updateDynamic("weekNumbers")(weekNumbers)
     if (!js.isUndefined(weekNumbersWithinDays)) __obj.updateDynamic("weekNumbersWithinDays")(weekNumbersWithinDays)
     if (!js.isUndefined(weekends)) __obj.updateDynamic("weekends")(weekends)
-    if (windowResize != null) __obj.updateDynamic("windowResize")(windowResize)
+    if (windowResize != null) __obj.updateDynamic("windowResize")(js.Any.fromFunction1(windowResize))
     if (windowResizeDelay != null) __obj.updateDynamic("windowResizeDelay")(windowResizeDelay.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsInputBase]
   }

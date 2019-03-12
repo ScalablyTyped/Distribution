@@ -15,12 +15,12 @@ trait ScriptReferenceHost extends js.Object {
 object ScriptReferenceHost {
   @scala.inline
   def apply(
-    getCompilerOptions: js.Function0[CompilerOptions],
-    getCurrentDirectory: js.Function0[java.lang.String],
-    getSourceFile: js.Function1[java.lang.String, js.UndefOr[SourceFile]],
-    getSourceFileByPath: js.Function1[Path, js.UndefOr[SourceFile]]
+    getCompilerOptions: () => CompilerOptions,
+    getCurrentDirectory: () => java.lang.String,
+    getSourceFile: java.lang.String => js.UndefOr[SourceFile],
+    getSourceFileByPath: Path => js.UndefOr[SourceFile]
   ): ScriptReferenceHost = {
-    val __obj = js.Dynamic.literal(getCompilerOptions = getCompilerOptions, getCurrentDirectory = getCurrentDirectory, getSourceFile = getSourceFile, getSourceFileByPath = getSourceFileByPath)
+    val __obj = js.Dynamic.literal(getCompilerOptions = js.Any.fromFunction0(getCompilerOptions), getCurrentDirectory = js.Any.fromFunction0(getCurrentDirectory), getSourceFile = js.Any.fromFunction1(getSourceFile), getSourceFileByPath = js.Any.fromFunction1(getSourceFileByPath))
   
     __obj.asInstanceOf[ScriptReferenceHost]
   }

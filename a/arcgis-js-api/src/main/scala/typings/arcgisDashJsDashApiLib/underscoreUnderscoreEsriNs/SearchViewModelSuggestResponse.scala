@@ -45,13 +45,13 @@ object SearchViewModelSuggestResponse {
     activeSourceIndex: scala.Double,
     constructor: js.Function,
     errors: js.Array[Error],
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     numResults: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     results: js.Array[SearchViewModelSuggestResponseResults],
     searchTerm: java.lang.String
   ): SearchViewModelSuggestResponse = {
-    val __obj = js.Dynamic.literal(activeSourceIndex = activeSourceIndex, constructor = constructor, errors = errors, hasOwnProperty = hasOwnProperty, numResults = numResults, propertyIsEnumerable = propertyIsEnumerable, results = results, searchTerm = searchTerm)
+    val __obj = js.Dynamic.literal(activeSourceIndex = activeSourceIndex, constructor = constructor, errors = errors, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), numResults = numResults, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), results = results, searchTerm = searchTerm)
   
     __obj.asInstanceOf[SearchViewModelSuggestResponse]
   }

@@ -16,15 +16,15 @@ trait CollectionSessionStorage extends SessionStorage {
 object CollectionSessionStorage {
   @scala.inline
   def apply(
-    clear: js.Function1[Session, scala.Boolean],
-    forClient: js.Function1[Session, java.lang.String | scala.Null],
-    fromClient: js.Function1[java.lang.String, Session | scala.Null],
-    `new`: js.Function0[Session],
-    prune: js.Function0[js.Array[java.lang.String]],
-    save: js.Function1[Session, Session]
+    clear: Session => scala.Boolean,
+    forClient: Session => java.lang.String | scala.Null,
+    fromClient: java.lang.String => Session | scala.Null,
+    `new`: () => Session,
+    prune: () => js.Array[java.lang.String],
+    save: Session => Session
   ): CollectionSessionStorage = {
-    val __obj = js.Dynamic.literal(clear = clear, forClient = forClient, fromClient = fromClient, prune = prune, save = save)
-    __obj.updateDynamic("new")(`new`)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear), forClient = js.Any.fromFunction1(forClient), fromClient = js.Any.fromFunction1(fromClient), prune = js.Any.fromFunction0(prune), save = js.Any.fromFunction1(save))
+    __obj.updateDynamic("new")(js.Any.fromFunction0(`new`))
     __obj.asInstanceOf[CollectionSessionStorage]
   }
 }

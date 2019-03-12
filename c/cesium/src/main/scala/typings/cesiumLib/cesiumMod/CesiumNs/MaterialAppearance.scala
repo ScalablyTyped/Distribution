@@ -19,9 +19,9 @@ object MaterialAppearance {
     faceForward: scala.Boolean,
     flat: scala.Boolean,
     fragmentShaderSource: java.lang.String,
-    getFragmentShaderSource: js.Function0[java.lang.String],
-    getRenderState: js.Function0[js.Any],
-    isTranslucent: js.Function0[scala.Boolean],
+    getFragmentShaderSource: () => java.lang.String,
+    getRenderState: () => js.Any,
+    isTranslucent: () => scala.Boolean,
     material: Material,
     materialSupport: cesiumLib.cesiumMod.CesiumNs.MaterialAppearanceNs.MaterialSupport,
     renderState: js.Any,
@@ -29,7 +29,7 @@ object MaterialAppearance {
     vertexFormat: VertexFormat,
     vertexShaderSource: java.lang.String
   ): MaterialAppearance = {
-    val __obj = js.Dynamic.literal(closed = closed, faceForward = faceForward, flat = flat, fragmentShaderSource = fragmentShaderSource, getFragmentShaderSource = getFragmentShaderSource, getRenderState = getRenderState, isTranslucent = isTranslucent, material = material, materialSupport = materialSupport, renderState = renderState, translucent = translucent, vertexFormat = vertexFormat, vertexShaderSource = vertexShaderSource)
+    val __obj = js.Dynamic.literal(closed = closed, faceForward = faceForward, flat = flat, fragmentShaderSource = fragmentShaderSource, getFragmentShaderSource = js.Any.fromFunction0(getFragmentShaderSource), getRenderState = js.Any.fromFunction0(getRenderState), isTranslucent = js.Any.fromFunction0(isTranslucent), material = material, materialSupport = materialSupport, renderState = renderState, translucent = translucent, vertexFormat = vertexFormat, vertexShaderSource = vertexShaderSource)
   
     __obj.asInstanceOf[MaterialAppearance]
   }

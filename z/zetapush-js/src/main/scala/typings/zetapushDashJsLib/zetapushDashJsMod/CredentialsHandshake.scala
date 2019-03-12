@@ -18,12 +18,12 @@ object CredentialsHandshake {
     authType: java.lang.String,
     authVersion: java.lang.String,
     deploymentId: java.lang.String,
-    getHandshakeFields: js.Function1[Client, HandshakeFields],
+    getHandshakeFields: Client => HandshakeFields,
     login: java.lang.String,
     password: java.lang.String,
     sandboxId: java.lang.String
   ): CredentialsHandshake = {
-    val __obj = js.Dynamic.literal(authData = authData, authType = authType, authVersion = authVersion, deploymentId = deploymentId, getHandshakeFields = getHandshakeFields, login = login, password = password, sandboxId = sandboxId)
+    val __obj = js.Dynamic.literal(authData = authData, authType = authType, authVersion = authVersion, deploymentId = deploymentId, getHandshakeFields = js.Any.fromFunction1(getHandshakeFields), login = login, password = password, sandboxId = sandboxId)
   
     __obj.asInstanceOf[CredentialsHandshake]
   }

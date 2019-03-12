@@ -243,8 +243,8 @@ object _Impl {
   def apply(
     action: java.lang.String | semanticDashUiDashApiLib.semanticDashUiDashApiLibNumbers.`false`,
     api: /* import warning: ImportType.apply Failed type conversion: {[action: string] : string, [action: string] : string} */ js.Any,
-    beforeSend: js.Function1[semanticDashUiDashApiLib.SemanticUINs.ApiSettings, js.Any],
-    beforeXHR: js.Function1[jqueryLib.JQueryNs.jqXHR[_], js.Any],
+    beforeSend: semanticDashUiDashApiLib.SemanticUINs.ApiSettings => js.Any,
+    beforeXHR: jqueryLib.JQueryNs.jqXHR[_] => js.Any,
     cache: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.local | scala.Boolean,
     className: semanticDashUiDashApiLib.SemanticUINs.ApiNs.ClassNameSettings,
     data: js.Any,
@@ -268,23 +268,13 @@ object _Impl {
     name: java.lang.String,
     namespace: java.lang.String,
     on: java.lang.String,
-    onAbort: js.Function3[
-      java.lang.String, 
-      semanticDashUiDashApiLib.JQuery, 
-      jqueryLib.JQueryNs.jqXHR[_], 
-      scala.Unit
-    ],
-    onComplete: js.Function3[js.Any, semanticDashUiDashApiLib.JQuery, jqueryLib.JQueryNs.jqXHR[_], scala.Unit],
-    onError: js.Function3[
-      java.lang.String, 
-      semanticDashUiDashApiLib.JQuery, 
-      jqueryLib.JQueryNs.jqXHR[_], 
-      scala.Unit
-    ],
-    onFailure: js.Function2[js.Any, semanticDashUiDashApiLib.JQuery, scala.Unit],
-    onRequest: js.Function2[jqueryLib.JQueryNs.Deferred[_, _, _], jqueryLib.JQueryNs.jqXHR[_], scala.Unit],
-    onResponse: js.Function1[js.Any, scala.Unit],
-    onSuccess: js.Function3[js.Any, semanticDashUiDashApiLib.JQuery, jqueryLib.JQueryNs.jqXHR[_], scala.Unit],
+    onAbort: (java.lang.String, semanticDashUiDashApiLib.JQuery, jqueryLib.JQueryNs.jqXHR[_]) => scala.Unit,
+    onComplete: (js.Any, semanticDashUiDashApiLib.JQuery, jqueryLib.JQueryNs.jqXHR[_]) => scala.Unit,
+    onError: (java.lang.String, semanticDashUiDashApiLib.JQuery, jqueryLib.JQueryNs.jqXHR[_]) => scala.Unit,
+    onFailure: (js.Any, semanticDashUiDashApiLib.JQuery) => scala.Unit,
+    onRequest: (jqueryLib.JQueryNs.Deferred[_, _, _], jqueryLib.JQueryNs.jqXHR[_]) => scala.Unit,
+    onResponse: js.Any => scala.Unit,
+    onSuccess: (js.Any, semanticDashUiDashApiLib.JQuery, jqueryLib.JQueryNs.jqXHR[_]) => scala.Unit,
     performance: scala.Boolean,
     regExp: semanticDashUiDashApiLib.SemanticUINs.ApiNs.RegExpSettings,
     response: js.Any | semanticDashUiDashApiLib.semanticDashUiDashApiLibNumbers.`false`,
@@ -297,14 +287,14 @@ object _Impl {
     serializeForm: scala.Boolean,
     silent: scala.Boolean,
     stateContext: java.lang.String | semanticDashUiDashApiLib.JQuery,
-    successTest: js.Function1[js.Any, scala.Boolean],
+    successTest: js.Any => scala.Boolean,
     throttle: scala.Double,
     throttleFirstRequest: scala.Boolean,
     url: java.lang.String | semanticDashUiDashApiLib.semanticDashUiDashApiLibNumbers.`false`,
     urlData: js.Any | semanticDashUiDashApiLib.semanticDashUiDashApiLibNumbers.`false`,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], api = api, beforeSend = beforeSend, beforeXHR = beforeXHR, cache = cache.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], data = data, dataType = dataType.asInstanceOf[js.Any], debug = debug, defaultData = defaultData, encodeParameters = encodeParameters, error = error.asInstanceOf[js.Any], errorDuration = errorDuration.asInstanceOf[js.Any], hideError = hideError.asInstanceOf[js.Any], interruptRequests = interruptRequests, loadingDuration = loadingDuration, metadata = metadata.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], mockResponse = mockResponse.asInstanceOf[js.Any], mockResponseAsync = mockResponseAsync.asInstanceOf[js.Any], name = name, namespace = namespace, on = on, onAbort = onAbort, onComplete = onComplete, onError = onError, onFailure = onFailure, onRequest = onRequest, onResponse = onResponse, onSuccess = onSuccess, performance = performance, regExp = regExp.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseAsync = responseAsync.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], serializeForm = serializeForm, silent = silent, stateContext = stateContext.asInstanceOf[js.Any], successTest = successTest, throttle = throttle, throttleFirstRequest = throttleFirstRequest, url = url.asInstanceOf[js.Any], urlData = urlData.asInstanceOf[js.Any], verbose = verbose)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], api = api, beforeSend = js.Any.fromFunction1(beforeSend), beforeXHR = js.Any.fromFunction1(beforeXHR), cache = cache.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], data = data, dataType = dataType.asInstanceOf[js.Any], debug = debug, defaultData = defaultData, encodeParameters = encodeParameters, error = error.asInstanceOf[js.Any], errorDuration = errorDuration.asInstanceOf[js.Any], hideError = hideError.asInstanceOf[js.Any], interruptRequests = interruptRequests, loadingDuration = loadingDuration, metadata = metadata.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], mockResponse = mockResponse.asInstanceOf[js.Any], mockResponseAsync = mockResponseAsync.asInstanceOf[js.Any], name = name, namespace = namespace, on = on, onAbort = js.Any.fromFunction3(onAbort), onComplete = js.Any.fromFunction3(onComplete), onError = js.Any.fromFunction3(onError), onFailure = js.Any.fromFunction2(onFailure), onRequest = js.Any.fromFunction2(onRequest), onResponse = js.Any.fromFunction1(onResponse), onSuccess = js.Any.fromFunction3(onSuccess), performance = performance, regExp = regExp.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseAsync = responseAsync.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], serializeForm = serializeForm, silent = silent, stateContext = stateContext.asInstanceOf[js.Any], successTest = js.Any.fromFunction1(successTest), throttle = throttle, throttleFirstRequest = throttleFirstRequest, url = url.asInstanceOf[js.Any], urlData = urlData.asInstanceOf[js.Any], verbose = verbose)
   
     __obj.asInstanceOf[_Impl]
   }

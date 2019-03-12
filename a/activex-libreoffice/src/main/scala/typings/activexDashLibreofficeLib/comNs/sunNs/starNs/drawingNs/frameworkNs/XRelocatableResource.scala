@@ -17,8 +17,8 @@ trait XRelocatableResource extends js.Object {
 
 object XRelocatableResource {
   @scala.inline
-  def apply(relocateToAnchor: js.Function1[XResource, scala.Boolean]): XRelocatableResource = {
-    val __obj = js.Dynamic.literal(relocateToAnchor = relocateToAnchor)
+  def apply(relocateToAnchor: XResource => scala.Boolean): XRelocatableResource = {
+    val __obj = js.Dynamic.literal(relocateToAnchor = js.Any.fromFunction1(relocateToAnchor))
   
     __obj.asInstanceOf[XRelocatableResource]
   }

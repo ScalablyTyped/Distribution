@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
   */
 trait XEncryptionProtectedStorage extends XEncryptionProtectedSource2 {
   /** allows to get the encryption algorithms of the object. */
-  var EncryptionAlgorithms: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
+  var EncryptionAlgorithms: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
   /** allows to get the encryption algorithms of the object. */
-  def getEncryptionAlgorithms(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
+  def getEncryptionAlgorithms(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
   /**
     * allows to set the encryption algorithms for the object.
     *
@@ -42,26 +42,18 @@ trait XEncryptionProtectedStorage extends XEncryptionProtectedSource2 {
 object XEncryptionProtectedStorage {
   @scala.inline
   def apply(
-    EncryptionAlgorithms: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
-    acquire: js.Function0[scala.Unit],
-    getEncryptionAlgorithms: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
-    ],
-    hasEncryptionData: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEncryption: js.Function0[scala.Unit],
-    setEncryptionAlgorithms: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
-      scala.Unit
-    ],
-    setEncryptionData: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
-      scala.Unit
-    ],
-    setEncryptionPassword: js.Function1[java.lang.String, scala.Unit]
+    EncryptionAlgorithms: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    acquire: () => scala.Unit,
+    getEncryptionAlgorithms: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    hasEncryptionData: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEncryption: () => scala.Unit,
+    setEncryptionAlgorithms: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue] => scala.Unit,
+    setEncryptionData: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue] => scala.Unit,
+    setEncryptionPassword: java.lang.String => scala.Unit
   ): XEncryptionProtectedStorage = {
-    val __obj = js.Dynamic.literal(EncryptionAlgorithms = EncryptionAlgorithms, acquire = acquire, getEncryptionAlgorithms = getEncryptionAlgorithms, hasEncryptionData = hasEncryptionData, queryInterface = queryInterface, release = release, removeEncryption = removeEncryption, setEncryptionAlgorithms = setEncryptionAlgorithms, setEncryptionData = setEncryptionData, setEncryptionPassword = setEncryptionPassword)
+    val __obj = js.Dynamic.literal(EncryptionAlgorithms = EncryptionAlgorithms, acquire = js.Any.fromFunction0(acquire), getEncryptionAlgorithms = js.Any.fromFunction0(getEncryptionAlgorithms), hasEncryptionData = js.Any.fromFunction0(hasEncryptionData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEncryption = js.Any.fromFunction0(removeEncryption), setEncryptionAlgorithms = js.Any.fromFunction1(setEncryptionAlgorithms), setEncryptionData = js.Any.fromFunction1(setEncryptionData), setEncryptionPassword = js.Any.fromFunction1(setEncryptionPassword))
   
     __obj.asInstanceOf[XEncryptionProtectedStorage]
   }

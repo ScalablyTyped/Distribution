@@ -16,9 +16,9 @@ class AllowEditRange protected () extends js.Object {
   val Users_Original: UserAccessList = js.native
   def ChangePassword(Password: java.lang.String): scala.Unit = js.native
   def Delete(): scala.Unit = js.native
-  def Range(Address: java.lang.String): Range = js.native
-  def Range(RowIndex: scala.Double): Range = js.native
-  def Range(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native
+  def Range(Address: java.lang.String): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(RowIndex: scala.Double): activexDashExcelLib.ExcelNs.Range = js.native
+  def Range(RowIndex: scala.Double, ColumnIndex: scala.Double): activexDashExcelLib.ExcelNs.Range = js.native
   def Unprotect(): scala.Unit = js.native
   def Unprotect(Password: java.lang.String): scala.Unit = js.native
   def Users(Index: java.lang.String): UserAccess = js.native

@@ -17,22 +17,22 @@ trait IShellPaneTabEvents extends IEvents {
 object IShellPaneTabEvents {
   @scala.inline
   def apply(
-    Register: js.Function2[mfilesLib.MFilesNs.Event, js.Function, scala.Double],
-    Unregister: js.Function1[scala.Double, scala.Unit],
-    OnHideTab: js.Function0[scala.Unit] = null,
-    OnShowTab: js.Function0[scala.Unit] = null,
-    OnStarted: js.Function0[scala.Unit] = null,
-    OnStop: js.Function0[scala.Unit] = null,
-    OnTabSelected: js.Function0[scala.Unit] = null,
-    OnTabUnselected: js.Function0[scala.Unit] = null
+    Register: (mfilesLib.MFilesNs.Event, js.Function) => scala.Double,
+    Unregister: scala.Double => scala.Unit,
+    OnHideTab: () => scala.Unit = null,
+    OnShowTab: () => scala.Unit = null,
+    OnStarted: () => scala.Unit = null,
+    OnStop: () => scala.Unit = null,
+    OnTabSelected: () => scala.Unit = null,
+    OnTabUnselected: () => scala.Unit = null
   ): IShellPaneTabEvents = {
-    val __obj = js.Dynamic.literal(Register = Register, Unregister = Unregister)
-    if (OnHideTab != null) __obj.updateDynamic("OnHideTab")(OnHideTab)
-    if (OnShowTab != null) __obj.updateDynamic("OnShowTab")(OnShowTab)
-    if (OnStarted != null) __obj.updateDynamic("OnStarted")(OnStarted)
-    if (OnStop != null) __obj.updateDynamic("OnStop")(OnStop)
-    if (OnTabSelected != null) __obj.updateDynamic("OnTabSelected")(OnTabSelected)
-    if (OnTabUnselected != null) __obj.updateDynamic("OnTabUnselected")(OnTabUnselected)
+    val __obj = js.Dynamic.literal(Register = js.Any.fromFunction2(Register), Unregister = js.Any.fromFunction1(Unregister))
+    if (OnHideTab != null) __obj.updateDynamic("OnHideTab")(js.Any.fromFunction0(OnHideTab))
+    if (OnShowTab != null) __obj.updateDynamic("OnShowTab")(js.Any.fromFunction0(OnShowTab))
+    if (OnStarted != null) __obj.updateDynamic("OnStarted")(js.Any.fromFunction0(OnStarted))
+    if (OnStop != null) __obj.updateDynamic("OnStop")(js.Any.fromFunction0(OnStop))
+    if (OnTabSelected != null) __obj.updateDynamic("OnTabSelected")(js.Any.fromFunction0(OnTabSelected))
+    if (OnTabUnselected != null) __obj.updateDynamic("OnTabUnselected")(js.Any.fromFunction0(OnTabUnselected))
     __obj.asInstanceOf[IShellPaneTabEvents]
   }
 }

@@ -38,14 +38,14 @@ trait ScriptField extends js.Object {
 object ScriptField {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    ignoreFailure: js.Function1[scala.Boolean, ScriptField],
-    lang: js.Function1[java.lang.String, ScriptField],
-    params: js.Function1[js.Object, ScriptField],
-    script: js.Function1[java.lang.String, ScriptField],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    ignoreFailure: scala.Boolean => ScriptField,
+    lang: java.lang.String => ScriptField,
+    params: js.Object => ScriptField,
+    script: java.lang.String => ScriptField,
+    toJSON: () => js.Any
   ): ScriptField = {
-    val __obj = js.Dynamic.literal(_type = _type, ignoreFailure = ignoreFailure, lang = lang, params = params, script = script, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), ignoreFailure = js.Any.fromFunction1(ignoreFailure), lang = js.Any.fromFunction1(lang), params = js.Any.fromFunction1(params), script = js.Any.fromFunction1(script), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[ScriptField]
   }

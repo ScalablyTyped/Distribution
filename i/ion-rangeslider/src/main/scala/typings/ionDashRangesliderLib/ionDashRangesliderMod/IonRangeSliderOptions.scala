@@ -120,13 +120,13 @@ object IonRangeSliderOptions {
     max_postfix: java.lang.String = null,
     min: scala.Int | scala.Double = null,
     min_interval: scala.Int | scala.Double = null,
-    onChange: js.Function1[/* obj */ IonRangeSliderEvent, scala.Unit] = null,
-    onFinish: js.Function1[/* obj */ IonRangeSliderEvent, scala.Unit] = null,
-    onStart: js.Function1[/* obj */ IonRangeSliderEvent, scala.Unit] = null,
-    onUpdate: js.Function1[/* obj */ IonRangeSliderEvent, scala.Unit] = null,
+    onChange: /* obj */ IonRangeSliderEvent => scala.Unit = null,
+    onFinish: /* obj */ IonRangeSliderEvent => scala.Unit = null,
+    onStart: /* obj */ IonRangeSliderEvent => scala.Unit = null,
+    onUpdate: /* obj */ IonRangeSliderEvent => scala.Unit = null,
     postfix: java.lang.String = null,
     prefix: java.lang.String = null,
-    prettify: js.Function1[/* num */ scala.Double, java.lang.String] = null,
+    prettify: /* num */ scala.Double => java.lang.String = null,
     prettify_enabled: js.UndefOr[scala.Boolean] = js.undefined,
     prettify_separator: java.lang.String = null,
     scope: js.Any = null,
@@ -165,13 +165,13 @@ object IonRangeSliderOptions {
     if (max_postfix != null) __obj.updateDynamic("max_postfix")(max_postfix)
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (min_interval != null) __obj.updateDynamic("min_interval")(min_interval.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onFinish != null) __obj.updateDynamic("onFinish")(onFinish)
-    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onFinish != null) __obj.updateDynamic("onFinish")(js.Any.fromFunction1(onFinish))
+    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction1(onStart))
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
     if (postfix != null) __obj.updateDynamic("postfix")(postfix)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (prettify != null) __obj.updateDynamic("prettify")(prettify)
+    if (prettify != null) __obj.updateDynamic("prettify")(js.Any.fromFunction1(prettify))
     if (!js.isUndefined(prettify_enabled)) __obj.updateDynamic("prettify_enabled")(prettify_enabled)
     if (prettify_separator != null) __obj.updateDynamic("prettify_separator")(prettify_separator)
     if (scope != null) __obj.updateDynamic("scope")(scope)

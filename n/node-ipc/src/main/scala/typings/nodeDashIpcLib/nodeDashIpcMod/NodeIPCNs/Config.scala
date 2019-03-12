@@ -124,7 +124,7 @@ object Config {
     interfaces: nodeDashIpcLib.Anon_Family,
     logDepth: scala.Double,
     logInColor: scala.Boolean,
-    logger: js.Function1[java.lang.String, scala.Unit],
+    logger: java.lang.String => scala.Unit,
     maxConnections: scala.Double,
     maxRetries: scala.Boolean,
     networkHost: java.lang.String,
@@ -138,7 +138,7 @@ object Config {
     tls: nodeDashIpcLib.Anon_Private,
     unlink: scala.Boolean
   ): Config = {
-    val __obj = js.Dynamic.literal(appspace = appspace, encoding = encoding.asInstanceOf[js.Any], id = id, interfaces = interfaces, logDepth = logDepth, logInColor = logInColor, logger = logger, maxConnections = maxConnections, maxRetries = maxRetries, networkHost = networkHost, networkPort = networkPort, rawBuffer = rawBuffer, retry = retry, silent = silent, socketRoot = socketRoot, stopRetrying = stopRetrying, sync = sync, tls = tls, unlink = unlink)
+    val __obj = js.Dynamic.literal(appspace = appspace, encoding = encoding.asInstanceOf[js.Any], id = id, interfaces = interfaces, logDepth = logDepth, logInColor = logInColor, logger = js.Any.fromFunction1(logger), maxConnections = maxConnections, maxRetries = maxRetries, networkHost = networkHost, networkPort = networkPort, rawBuffer = rawBuffer, retry = retry, silent = silent, socketRoot = socketRoot, stopRetrying = stopRetrying, sync = sync, tls = tls, unlink = unlink)
   
     __obj.asInstanceOf[Config]
   }

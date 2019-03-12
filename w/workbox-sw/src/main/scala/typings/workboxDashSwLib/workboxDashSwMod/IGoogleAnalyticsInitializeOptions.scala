@@ -29,10 +29,10 @@ object IGoogleAnalyticsInitializeOptions {
   @scala.inline
   def apply(
     cacheName: java.lang.String,
-    hitFilter: js.Function1[stdLib.URLSearchParams, scala.Unit],
+    hitFilter: stdLib.URLSearchParams => scala.Unit,
     parameterOverrides: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): IGoogleAnalyticsInitializeOptions = {
-    val __obj = js.Dynamic.literal(cacheName = cacheName, hitFilter = hitFilter, parameterOverrides = parameterOverrides)
+    val __obj = js.Dynamic.literal(cacheName = cacheName, hitFilter = js.Any.fromFunction1(hitFilter), parameterOverrides = parameterOverrides)
   
     __obj.asInstanceOf[IGoogleAnalyticsInitializeOptions]
   }

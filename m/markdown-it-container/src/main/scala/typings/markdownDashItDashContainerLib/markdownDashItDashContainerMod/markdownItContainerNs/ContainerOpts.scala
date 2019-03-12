@@ -24,20 +24,13 @@ object ContainerOpts {
   @scala.inline
   def apply(
     marker: java.lang.String = null,
-    render: js.Function5[
-      /* tokens */ js.Array[markdownDashItLib.libTokenMod.namespaced], 
-      /* index */ scala.Double, 
-      /* options */ js.Any, 
-      /* env */ js.Any, 
-      /* self */ markdownDashItLib.libRendererMod.namespaced, 
-      scala.Unit
-    ] = null,
-    validate: js.Function1[/* params */ java.lang.String, scala.Boolean] = null
+    render: (/* tokens */ js.Array[markdownDashItLib.libTokenMod.namespaced], /* index */ scala.Double, /* options */ js.Any, /* env */ js.Any, /* self */ markdownDashItLib.libRendererMod.namespaced) => scala.Unit = null,
+    validate: /* params */ java.lang.String => scala.Boolean = null
   ): ContainerOpts = {
     val __obj = js.Dynamic.literal()
     if (marker != null) __obj.updateDynamic("marker")(marker)
-    if (render != null) __obj.updateDynamic("render")(render)
-    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction5(render))
+    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction1(validate))
     __obj.asInstanceOf[ContainerOpts]
   }
 }

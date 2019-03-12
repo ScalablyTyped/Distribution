@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait PushPageOptions extends js.Object {
   var animation: js.UndefOr[java.lang.String] = js.undefined
-  var animationOptions: js.UndefOr[coreDashJsLib.Object] = js.undefined
-  var callback: js.UndefOr[coreDashJsLib.Function] = js.undefined
-  var data: js.UndefOr[coreDashJsLib.Object] = js.undefined
+  var animationOptions: js.UndefOr[js.Object] = js.undefined
+  var callback: js.UndefOr[js.Function] = js.undefined
+  var data: js.UndefOr[js.Object] = js.undefined
   var page: js.UndefOr[js.Any] = js.undefined
   var pageHTML: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -18,9 +18,9 @@ object PushPageOptions {
   @scala.inline
   def apply(
     animation: java.lang.String = null,
-    animationOptions: coreDashJsLib.Object = null,
-    callback: coreDashJsLib.Function = null,
-    data: coreDashJsLib.Object = null,
+    animationOptions: js.Object = null,
+    callback: js.Function = null,
+    data: js.Object = null,
     page: js.Any = null,
     pageHTML: java.lang.String = null
   ): PushPageOptions = {

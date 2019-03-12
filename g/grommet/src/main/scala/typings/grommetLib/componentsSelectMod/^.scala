@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/Select", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Select: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsSelectMod.SelectProps, 
-    reactLib.reactMod.ReactNs.ComponentState
-  ] = js.native
+  val Select: reactLib.reactMod.ReactNs.ComponentClass[SelectProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
 }
 

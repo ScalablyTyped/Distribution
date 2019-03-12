@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait eventInfo extends js.Object {
   var data: js.Any
-  var editor: editor
+  var editor: ckeditorLib.CKEDITORNs.editor
   var listenerData: js.Any
   var name: java.lang.String
   var sender: org.scalablytyped.runtime.StringDictionary[js.Any]
@@ -19,16 +19,16 @@ trait eventInfo extends js.Object {
 object eventInfo {
   @scala.inline
   def apply(
-    cancel: js.Function0[scala.Unit],
+    cancel: () => scala.Unit,
     data: js.Any,
     editor: editor,
     listenerData: js.Any,
     name: java.lang.String,
-    removeListener: js.Function0[scala.Unit],
+    removeListener: () => scala.Unit,
     sender: org.scalablytyped.runtime.StringDictionary[js.Any],
-    stop: js.Function0[scala.Unit]
+    stop: () => scala.Unit
   ): eventInfo = {
-    val __obj = js.Dynamic.literal(cancel = cancel, data = data, editor = editor, listenerData = listenerData, name = name, removeListener = removeListener, sender = sender, stop = stop)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), data = data, editor = editor, listenerData = listenerData, name = name, removeListener = js.Any.fromFunction0(removeListener), sender = sender, stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[eventInfo]
   }

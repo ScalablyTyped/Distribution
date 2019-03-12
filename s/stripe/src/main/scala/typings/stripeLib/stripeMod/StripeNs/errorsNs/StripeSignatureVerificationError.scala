@@ -14,6 +14,7 @@ object StripeSignatureVerificationError {
   @scala.inline
   def apply(
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    name: java.lang.String,
     raw: js.Any,
     rawType: RawType,
     readonly: scala.Double,
@@ -26,7 +27,7 @@ object StripeSignatureVerificationError {
     params: java.lang.String = null,
     stack: java.lang.String = null
   ): StripeSignatureVerificationError = {
-    val __obj = js.Dynamic.literal(headers = headers, raw = raw, rawType = rawType, readonly = readonly, requestId = requestId)
+    val __obj = js.Dynamic.literal(headers = headers, name = name, raw = raw, rawType = rawType, readonly = readonly, requestId = requestId)
     __obj.updateDynamic("type")(`type`)
     if (code != null) __obj.updateDynamic("code")(code)
     if (detail != null) __obj.updateDynamic("detail")(detail)

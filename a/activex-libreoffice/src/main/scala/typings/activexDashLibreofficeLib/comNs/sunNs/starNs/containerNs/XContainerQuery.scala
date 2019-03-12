@@ -37,16 +37,13 @@ trait XContainerQuery
 object XContainerQuery {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createSubSetEnumerationByProperties: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
-      XEnumeration
-    ],
-    createSubSetEnumerationByQuery: js.Function1[java.lang.String, XEnumeration],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createSubSetEnumerationByProperties: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue] => XEnumeration,
+    createSubSetEnumerationByQuery: java.lang.String => XEnumeration,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XContainerQuery = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createSubSetEnumerationByProperties = createSubSetEnumerationByProperties, createSubSetEnumerationByQuery = createSubSetEnumerationByQuery, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createSubSetEnumerationByProperties = js.Any.fromFunction1(createSubSetEnumerationByProperties), createSubSetEnumerationByQuery = js.Any.fromFunction1(createSubSetEnumerationByQuery), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XContainerQuery]
   }

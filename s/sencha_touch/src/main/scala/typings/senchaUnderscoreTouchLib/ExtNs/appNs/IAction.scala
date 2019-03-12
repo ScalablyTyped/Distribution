@@ -112,40 +112,40 @@ object IAction {
     application: IApplication = null,
     args: senchaUnderscoreTouchLib.ExtNs.Array = null,
     beforeFilters: senchaUnderscoreTouchLib.ExtNs.Array = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     controller: IController = null,
-    destroy: js.Function0[scala.Unit] = null,
-    execute: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
+    execute: () => scala.Unit = null,
     extend: java.lang.String = null,
-    getAction: js.Function0[java.lang.String] = null,
-    getApplication: js.Function0[IApplication] = null,
-    getArgs: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getBeforeFilters: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getController: js.Function0[IController] = null,
-    getData: js.Function0[_] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getScope: js.Function0[_] = null,
-    getTitle: js.Function0[_] = null,
-    getUrl: js.Function0[java.lang.String] = null,
+    getAction: () => java.lang.String = null,
+    getApplication: () => IApplication = null,
+    getArgs: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getBeforeFilters: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getController: () => IController = null,
+    getData: () => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getScope: () => _ = null,
+    getTitle: () => _ = null,
+    getUrl: () => java.lang.String = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
-    resume: js.Function0[scala.Unit] = null,
+    resume: () => scala.Unit = null,
     scope: js.Any = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setAction: js.Function1[/* action */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setApplication: js.Function1[/* application */ js.UndefOr[IApplication], scala.Unit] = null,
-    setArgs: js.Function1[/* args */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
-    setBeforeFilters: js.Function1[/* beforeFilters */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
-    setController: js.Function1[/* controller */ js.UndefOr[IController], scala.Unit] = null,
-    setData: js.Function1[/* data */ js.UndefOr[js.Any], scala.Unit] = null,
-    setScope: js.Function1[/* scope */ js.UndefOr[js.Any], scala.Unit] = null,
-    setTitle: js.Function1[/* title */ js.UndefOr[js.Any], scala.Unit] = null,
-    setUrl: js.Function1[/* url */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setAction: /* action */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setApplication: /* application */ js.UndefOr[IApplication] => scala.Unit = null,
+    setArgs: /* args */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
+    setBeforeFilters: /* beforeFilters */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
+    setController: /* controller */ js.UndefOr[IController] => scala.Unit = null,
+    setData: /* data */ js.UndefOr[js.Any] => scala.Unit = null,
+    setScope: /* scope */ js.UndefOr[js.Any] => scala.Unit = null,
+    setTitle: /* title */ js.UndefOr[js.Any] => scala.Unit = null,
+    setUrl: /* url */ js.UndefOr[java.lang.String] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     url: java.lang.String = null,
@@ -158,40 +158,40 @@ object IAction {
     if (application != null) __obj.updateDynamic("application")(application)
     if (args != null) __obj.updateDynamic("args")(args)
     if (beforeFilters != null) __obj.updateDynamic("beforeFilters")(beforeFilters)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
     if (controller != null) __obj.updateDynamic("controller")(controller)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (execute != null) __obj.updateDynamic("execute")(execute)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
+    if (execute != null) __obj.updateDynamic("execute")(js.Any.fromFunction0(execute))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getAction != null) __obj.updateDynamic("getAction")(getAction)
-    if (getApplication != null) __obj.updateDynamic("getApplication")(getApplication)
-    if (getArgs != null) __obj.updateDynamic("getArgs")(getArgs)
-    if (getBeforeFilters != null) __obj.updateDynamic("getBeforeFilters")(getBeforeFilters)
-    if (getController != null) __obj.updateDynamic("getController")(getController)
-    if (getData != null) __obj.updateDynamic("getData")(getData)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getScope != null) __obj.updateDynamic("getScope")(getScope)
-    if (getTitle != null) __obj.updateDynamic("getTitle")(getTitle)
-    if (getUrl != null) __obj.updateDynamic("getUrl")(getUrl)
+    if (getAction != null) __obj.updateDynamic("getAction")(js.Any.fromFunction0(getAction))
+    if (getApplication != null) __obj.updateDynamic("getApplication")(js.Any.fromFunction0(getApplication))
+    if (getArgs != null) __obj.updateDynamic("getArgs")(js.Any.fromFunction0(getArgs))
+    if (getBeforeFilters != null) __obj.updateDynamic("getBeforeFilters")(js.Any.fromFunction0(getBeforeFilters))
+    if (getController != null) __obj.updateDynamic("getController")(js.Any.fromFunction0(getController))
+    if (getData != null) __obj.updateDynamic("getData")(js.Any.fromFunction0(getData))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getScope != null) __obj.updateDynamic("getScope")(js.Any.fromFunction0(getScope))
+    if (getTitle != null) __obj.updateDynamic("getTitle")(js.Any.fromFunction0(getTitle))
+    if (getUrl != null) __obj.updateDynamic("getUrl")(js.Any.fromFunction0(getUrl))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
-    if (resume != null) __obj.updateDynamic("resume")(resume)
+    if (resume != null) __obj.updateDynamic("resume")(js.Any.fromFunction0(resume))
     if (scope != null) __obj.updateDynamic("scope")(scope)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setAction != null) __obj.updateDynamic("setAction")(setAction)
-    if (setApplication != null) __obj.updateDynamic("setApplication")(setApplication)
-    if (setArgs != null) __obj.updateDynamic("setArgs")(setArgs)
-    if (setBeforeFilters != null) __obj.updateDynamic("setBeforeFilters")(setBeforeFilters)
-    if (setController != null) __obj.updateDynamic("setController")(setController)
-    if (setData != null) __obj.updateDynamic("setData")(setData)
-    if (setScope != null) __obj.updateDynamic("setScope")(setScope)
-    if (setTitle != null) __obj.updateDynamic("setTitle")(setTitle)
-    if (setUrl != null) __obj.updateDynamic("setUrl")(setUrl)
+    if (setAction != null) __obj.updateDynamic("setAction")(js.Any.fromFunction1(setAction))
+    if (setApplication != null) __obj.updateDynamic("setApplication")(js.Any.fromFunction1(setApplication))
+    if (setArgs != null) __obj.updateDynamic("setArgs")(js.Any.fromFunction1(setArgs))
+    if (setBeforeFilters != null) __obj.updateDynamic("setBeforeFilters")(js.Any.fromFunction1(setBeforeFilters))
+    if (setController != null) __obj.updateDynamic("setController")(js.Any.fromFunction1(setController))
+    if (setData != null) __obj.updateDynamic("setData")(js.Any.fromFunction1(setData))
+    if (setScope != null) __obj.updateDynamic("setScope")(js.Any.fromFunction1(setScope))
+    if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction1(setTitle))
+    if (setUrl != null) __obj.updateDynamic("setUrl")(js.Any.fromFunction1(setUrl))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (url != null) __obj.updateDynamic("url")(url)

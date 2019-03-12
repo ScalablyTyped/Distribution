@@ -18,14 +18,14 @@ object CopyfileParams {
   def apply(
     destPath: java.lang.String,
     srcPath: java.lang.String,
-    complete: js.Function0[scala.Unit] = null,
-    fail: js.Function1[/* res */ wegameDashApiLib.Anon_ErrMsg, scala.Unit] = null,
-    success: js.Function0[scala.Unit] = null
+    complete: () => scala.Unit = null,
+    fail: /* res */ wegameDashApiLib.Anon_ErrMsg => scala.Unit = null,
+    success: () => scala.Unit = null
   ): CopyfileParams = {
     val __obj = js.Dynamic.literal(destPath = destPath, srcPath = srcPath)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[CopyfileParams]
   }
 }

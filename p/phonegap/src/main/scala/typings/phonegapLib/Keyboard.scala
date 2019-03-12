@@ -21,16 +21,16 @@ object Keyboard {
   @scala.inline
   def apply(
     automaticScrollToTopOnHiding: scala.Boolean,
-    disableScrollingInShrinkView: js.Function1[scala.Boolean, scala.Unit],
-    hideFormAccessoryBar: js.Function1[scala.Boolean, scala.Unit],
+    disableScrollingInShrinkView: scala.Boolean => scala.Unit,
+    hideFormAccessoryBar: scala.Boolean => scala.Unit,
     isVisible: scala.Boolean,
     onhide: js.Function,
     onhiding: js.Function,
     onshow: js.Function,
     onshowing: js.Function,
-    shrinkView: js.Function1[scala.Boolean, scala.Unit]
+    shrinkView: scala.Boolean => scala.Unit
   ): Keyboard = {
-    val __obj = js.Dynamic.literal(automaticScrollToTopOnHiding = automaticScrollToTopOnHiding, disableScrollingInShrinkView = disableScrollingInShrinkView, hideFormAccessoryBar = hideFormAccessoryBar, isVisible = isVisible, onhide = onhide, onhiding = onhiding, onshow = onshow, onshowing = onshowing, shrinkView = shrinkView)
+    val __obj = js.Dynamic.literal(automaticScrollToTopOnHiding = automaticScrollToTopOnHiding, disableScrollingInShrinkView = js.Any.fromFunction1(disableScrollingInShrinkView), hideFormAccessoryBar = js.Any.fromFunction1(hideFormAccessoryBar), isVisible = isVisible, onhide = onhide, onhiding = onhiding, onshow = onshow, onshowing = onshowing, shrinkView = js.Any.fromFunction1(shrinkView))
   
     __obj.asInstanceOf[Keyboard]
   }

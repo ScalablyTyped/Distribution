@@ -56,13 +56,13 @@ object DropDownTreeOptions {
     autoBind: js.UndefOr[scala.Boolean] = js.undefined,
     autoClose: js.UndefOr[scala.Boolean] = js.undefined,
     autoWidth: js.UndefOr[scala.Boolean] = js.undefined,
-    change: js.Function1[/* e */ DropDownTreeChangeEvent, scala.Unit] = null,
+    change: /* e */ DropDownTreeChangeEvent => scala.Unit = null,
     checkAll: js.UndefOr[scala.Boolean] = js.undefined,
     checkAllTemplate: java.lang.String | js.Function = null,
     checkboxes: scala.Boolean | DropDownTreeCheckboxes = null,
     clearButton: js.UndefOr[scala.Boolean] = js.undefined,
-    close: js.Function1[/* e */ DropDownTreeCloseEvent, scala.Unit] = null,
-    dataBound: js.Function1[/* e */ DropDownTreeDataBoundEvent, scala.Unit] = null,
+    close: /* e */ DropDownTreeCloseEvent => scala.Unit = null,
+    dataBound: /* e */ DropDownTreeDataBoundEvent => scala.Unit = null,
     dataImageUrlField: java.lang.String = null,
     dataSource: js.Any | kendoDashUiLib.kendoNs.dataNs.HierarchicalDataSource = null,
     dataSpriteCssClassField: java.lang.String = null,
@@ -73,7 +73,7 @@ object DropDownTreeOptions {
     enable: js.UndefOr[scala.Boolean] = js.undefined,
     enforceMinLength: js.UndefOr[scala.Boolean] = js.undefined,
     filter: java.lang.String = null,
-    filtering: js.Function1[/* e */ DropDownTreeFilteringEvent, scala.Unit] = null,
+    filtering: /* e */ DropDownTreeFilteringEvent => scala.Unit = null,
     footerTemplate: java.lang.String | js.Function = null,
     headerTemplate: java.lang.String | js.Function = null,
     height: java.lang.String | scala.Double = null,
@@ -83,10 +83,10 @@ object DropDownTreeOptions {
     minLength: scala.Int | scala.Double = null,
     name: java.lang.String = null,
     noDataTemplate: java.lang.String | js.Function = null,
-    open: js.Function1[/* e */ DropDownTreeOpenEvent, scala.Unit] = null,
+    open: /* e */ DropDownTreeOpenEvent => scala.Unit = null,
     placeholder: java.lang.String = null,
     popup: DropDownTreePopup = null,
-    select: js.Function1[/* e */ DropDownTreeSelectEvent, scala.Unit] = null,
+    select: /* e */ DropDownTreeSelectEvent => scala.Unit = null,
     tagMode: java.lang.String = null,
     template: java.lang.String | js.Function = null,
     text: java.lang.String = null,
@@ -99,13 +99,13 @@ object DropDownTreeOptions {
     if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind)
     if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
     if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth)
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (!js.isUndefined(checkAll)) __obj.updateDynamic("checkAll")(checkAll)
     if (checkAllTemplate != null) __obj.updateDynamic("checkAllTemplate")(checkAllTemplate.asInstanceOf[js.Any])
     if (checkboxes != null) __obj.updateDynamic("checkboxes")(checkboxes.asInstanceOf[js.Any])
     if (!js.isUndefined(clearButton)) __obj.updateDynamic("clearButton")(clearButton)
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
     if (dataImageUrlField != null) __obj.updateDynamic("dataImageUrlField")(dataImageUrlField)
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (dataSpriteCssClassField != null) __obj.updateDynamic("dataSpriteCssClassField")(dataSpriteCssClassField)
@@ -116,7 +116,7 @@ object DropDownTreeOptions {
     if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
     if (!js.isUndefined(enforceMinLength)) __obj.updateDynamic("enforceMinLength")(enforceMinLength)
     if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (filtering != null) __obj.updateDynamic("filtering")(filtering)
+    if (filtering != null) __obj.updateDynamic("filtering")(js.Any.fromFunction1(filtering))
     if (footerTemplate != null) __obj.updateDynamic("footerTemplate")(footerTemplate.asInstanceOf[js.Any])
     if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
@@ -126,10 +126,10 @@ object DropDownTreeOptions {
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (noDataTemplate != null) __obj.updateDynamic("noDataTemplate")(noDataTemplate.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (popup != null) __obj.updateDynamic("popup")(popup)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (tagMode != null) __obj.updateDynamic("tagMode")(tagMode)
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text)

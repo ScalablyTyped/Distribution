@@ -54,7 +54,7 @@ trait StrictMenuProps extends js.Object {
     */
   var onItemClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
       /* data */ semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuItemMod.MenuItemProps, 
       scala.Unit
     ]
@@ -101,11 +101,7 @@ object StrictMenuProps {
     icon: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.labeled = null,
     inverted: js.UndefOr[scala.Boolean] = js.undefined,
     items: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandCollection[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuItemMod.MenuItemProps] = null,
-    onItemClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuItemMod.MenuItemProps, 
-      scala.Unit
-    ] = null,
+    onItemClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuItemMod.MenuItemProps) => scala.Unit = null,
     pagination: js.UndefOr[scala.Boolean] = js.undefined,
     pointing: js.UndefOr[scala.Boolean] = js.undefined,
     secondary: js.UndefOr[scala.Boolean] = js.undefined,
@@ -132,7 +128,7 @@ object StrictMenuProps {
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted)
     if (items != null) __obj.updateDynamic("items")(items)
-    if (onItemClick != null) __obj.updateDynamic("onItemClick")(onItemClick)
+    if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction2(onItemClick))
     if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination)
     if (!js.isUndefined(pointing)) __obj.updateDynamic("pointing")(pointing)
     if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary)

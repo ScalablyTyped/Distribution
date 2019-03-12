@@ -15,7 +15,7 @@ trait DictConstructor
   def apply(): Dict[_] = js.native
   def apply(value: js.Any): Dict[_] = js.native
   def apply[T](value: Dict[T]): Dict[T] = js.native
-  def entries[T](`object`: Dict[T]): nodeLib.IterableIterator[js.Tuple2[stdLib.PropertyKey, T]] = js.native
+  def entries[T](`object`: Dict[T]): stdLib.IterableIterator[js.Tuple2[stdLib.PropertyKey, T]] = js.native
   def every[T](
     `object`: Dict[T],
     callbackfn: js.Function3[/* value */ T, /* key */ stdLib.PropertyKey, /* dict */ Dict[T], scala.Boolean]
@@ -66,7 +66,7 @@ trait DictConstructor
   def includes[T](`object`: Dict[T], value: T): scala.Boolean = js.native
   def isDict(value: js.Any): scala.Boolean = js.native
   def keyOf[T](`object`: Dict[T], value: T): stdLib.PropertyKey = js.native
-  def keys[T](`object`: Dict[T]): nodeLib.IterableIterator[stdLib.PropertyKey] = js.native
+  def keys[T](`object`: Dict[T]): stdLib.IterableIterator[stdLib.PropertyKey] = js.native
   def map[T, U](
     `object`: Dict[T],
     callbackfn: js.Function3[/* value */ T, /* key */ stdLib.PropertyKey, /* dict */ Dict[T], U]
@@ -171,6 +171,6 @@ trait DictConstructor
     ],
     memo: Dict[U]
   ): Dict[U] = js.native
-  def values[T](`object`: Dict[T]): nodeLib.IterableIterator[T] = js.native
+  def values[T](`object`: Dict[T]): stdLib.IterableIterator[T] = js.native
 }
 

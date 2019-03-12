@@ -150,9 +150,9 @@ object ZMCreditBorrowOptions {
     borrow_shop_name: java.lang.String = null,
     borrow_time: java.lang.String = null,
     cert_no: java.lang.String = null,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    complete: /* res */ js.Any => scala.Unit = null,
     deposit_state: java.lang.String = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
+    fail: js.Any => scala.Unit = null,
     invoke_return_url: java.lang.String = null,
     invoke_state: java.lang.String = null,
     invoke_type: aliDashAppLib.aliDashAppLibStrings.TINYAPP | aliDashAppLib.aliDashAppLibStrings.WINDOWS | java.lang.String = null,
@@ -160,16 +160,16 @@ object ZMCreditBorrowOptions {
     name: java.lang.String = null,
     rent_info: java.lang.String = null,
     rent_settle_type: aliDashAppLib.aliDashAppLibStrings.merchant | aliDashAppLib.aliDashAppLibStrings.alipay | java.lang.String = null,
-    success: js.Function1[/* res */ aliDashAppLib.Anon_4000, scala.Unit] = null
+    success: /* res */ aliDashAppLib.Anon_4000 => scala.Unit = null
   ): ZMCreditBorrowOptions = {
     val __obj = js.Dynamic.literal(credit_biz = credit_biz, deposit_amount = deposit_amount, expiry_time = expiry_time, goods_name = goods_name, out_order_no = out_order_no, product_code = product_code, rent_amount = rent_amount, rent_unit = rent_unit)
     if (address != null) __obj.updateDynamic("address")(address)
     if (borrow_shop_name != null) __obj.updateDynamic("borrow_shop_name")(borrow_shop_name)
     if (borrow_time != null) __obj.updateDynamic("borrow_time")(borrow_time)
     if (cert_no != null) __obj.updateDynamic("cert_no")(cert_no)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (deposit_state != null) __obj.updateDynamic("deposit_state")(deposit_state)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (invoke_return_url != null) __obj.updateDynamic("invoke_return_url")(invoke_return_url)
     if (invoke_state != null) __obj.updateDynamic("invoke_state")(invoke_state)
     if (invoke_type != null) __obj.updateDynamic("invoke_type")(invoke_type.asInstanceOf[js.Any])
@@ -177,7 +177,7 @@ object ZMCreditBorrowOptions {
     if (name != null) __obj.updateDynamic("name")(name)
     if (rent_info != null) __obj.updateDynamic("rent_info")(rent_info)
     if (rent_settle_type != null) __obj.updateDynamic("rent_settle_type")(rent_settle_type.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ZMCreditBorrowOptions]
   }
 }

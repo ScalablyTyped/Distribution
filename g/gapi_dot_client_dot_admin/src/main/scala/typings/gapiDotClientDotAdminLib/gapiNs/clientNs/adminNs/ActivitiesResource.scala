@@ -15,16 +15,10 @@ trait ActivitiesResource extends js.Object {
 object ActivitiesResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotAdminLib.Anon_ActorIpAddress, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Activities]
-    ],
-    watch: js.Function1[
-      gapiDotClientDotAdminLib.Anon_ActorIpAddress, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Channel]
-    ]
+    list: gapiDotClientDotAdminLib.Anon_ActorIpAddress => gapiDotClientLib.gapiNs.clientNs.Request[Activities],
+    watch: gapiDotClientDotAdminLib.Anon_ActorIpAddress => gapiDotClientLib.gapiNs.clientNs.Request[Channel]
   ): ActivitiesResource = {
-    val __obj = js.Dynamic.literal(list = list, watch = watch)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), watch = js.Any.fromFunction1(watch))
   
     __obj.asInstanceOf[ActivitiesResource]
   }

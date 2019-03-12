@@ -44,14 +44,14 @@ object PLoadingOptions {
     containerClass: java.lang.String = null,
     containerHTML: java.lang.String = null,
     destroyAfterHide: js.UndefOr[scala.Boolean] = js.undefined,
-    hideAnimation: js.Function1[/* $container */ JQuery, scala.Unit] = null,
+    hideAnimation: /* $container */ JQuery => scala.Unit = null,
     idPrefix: java.lang.String = null,
     maskColor: java.lang.String = null,
-    onDestroyContainer: js.Function1[/* $container */ JQuery, scala.Unit] = null,
-    onHideContainer: js.Function2[/* $pluginElement */ JQuery, /* $container */ JQuery, scala.Unit] = null,
-    onShowContainer: js.Function2[/* $pluginElement */ JQuery, /* $container */ JQuery, scala.Unit] = null,
+    onDestroyContainer: /* $container */ JQuery => scala.Unit = null,
+    onHideContainer: (/* $pluginElement */ JQuery, /* $container */ JQuery) => scala.Unit = null,
+    onShowContainer: (/* $pluginElement */ JQuery, /* $container */ JQuery) => scala.Unit = null,
     pluginNameSpace: java.lang.String = null,
-    showAnimation: js.Function1[/* $container */ JQuery, scala.Unit] = null,
+    showAnimation: /* $container */ JQuery => scala.Unit = null,
     spinnerAttrs: js.Object = null,
     spinnerClass: java.lang.String = null,
     spinnerHTML: java.lang.String = null,
@@ -63,14 +63,14 @@ object PLoadingOptions {
     if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass)
     if (containerHTML != null) __obj.updateDynamic("containerHTML")(containerHTML)
     if (!js.isUndefined(destroyAfterHide)) __obj.updateDynamic("destroyAfterHide")(destroyAfterHide)
-    if (hideAnimation != null) __obj.updateDynamic("hideAnimation")(hideAnimation)
+    if (hideAnimation != null) __obj.updateDynamic("hideAnimation")(js.Any.fromFunction1(hideAnimation))
     if (idPrefix != null) __obj.updateDynamic("idPrefix")(idPrefix)
     if (maskColor != null) __obj.updateDynamic("maskColor")(maskColor)
-    if (onDestroyContainer != null) __obj.updateDynamic("onDestroyContainer")(onDestroyContainer)
-    if (onHideContainer != null) __obj.updateDynamic("onHideContainer")(onHideContainer)
-    if (onShowContainer != null) __obj.updateDynamic("onShowContainer")(onShowContainer)
+    if (onDestroyContainer != null) __obj.updateDynamic("onDestroyContainer")(js.Any.fromFunction1(onDestroyContainer))
+    if (onHideContainer != null) __obj.updateDynamic("onHideContainer")(js.Any.fromFunction2(onHideContainer))
+    if (onShowContainer != null) __obj.updateDynamic("onShowContainer")(js.Any.fromFunction2(onShowContainer))
     if (pluginNameSpace != null) __obj.updateDynamic("pluginNameSpace")(pluginNameSpace)
-    if (showAnimation != null) __obj.updateDynamic("showAnimation")(showAnimation)
+    if (showAnimation != null) __obj.updateDynamic("showAnimation")(js.Any.fromFunction1(showAnimation))
     if (spinnerAttrs != null) __obj.updateDynamic("spinnerAttrs")(spinnerAttrs)
     if (spinnerClass != null) __obj.updateDynamic("spinnerClass")(spinnerClass)
     if (spinnerHTML != null) __obj.updateDynamic("spinnerHTML")(spinnerHTML)

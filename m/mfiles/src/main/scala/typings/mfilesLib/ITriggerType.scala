@@ -21,18 +21,18 @@ trait ITriggerType extends js.Object {
 object ITriggerType {
   @scala.inline
   def apply(
-    Clone: js.Function0[ITriggerType],
+    Clone: () => ITriggerType,
     Daily: IDailyTrigger,
     MonthlyDOW: IMonthlyDOWTrigger,
     MonthlyDate: IMonthlyDateTrigger,
-    SetDailyTrigger: js.Function1[IDailyTrigger, scala.Unit],
-    SetMonthlyDOW: js.Function1[IMonthlyDOWTrigger, scala.Unit],
-    SetMonthlyDate: js.Function1[IMonthlyDateTrigger, scala.Unit],
-    SetWeekly: js.Function1[IWeeklyTrigger, scala.Unit],
+    SetDailyTrigger: IDailyTrigger => scala.Unit,
+    SetMonthlyDOW: IMonthlyDOWTrigger => scala.Unit,
+    SetMonthlyDate: IMonthlyDateTrigger => scala.Unit,
+    SetWeekly: IWeeklyTrigger => scala.Unit,
     Type: mfilesLib.MFilesNs.MFTriggerType,
     Weekly: IWeeklyTrigger
   ): ITriggerType = {
-    val __obj = js.Dynamic.literal(Clone = Clone, Daily = Daily, MonthlyDOW = MonthlyDOW, MonthlyDate = MonthlyDate, SetDailyTrigger = SetDailyTrigger, SetMonthlyDOW = SetMonthlyDOW, SetMonthlyDate = SetMonthlyDate, SetWeekly = SetWeekly, Type = Type, Weekly = Weekly)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Daily = Daily, MonthlyDOW = MonthlyDOW, MonthlyDate = MonthlyDate, SetDailyTrigger = js.Any.fromFunction1(SetDailyTrigger), SetMonthlyDOW = js.Any.fromFunction1(SetMonthlyDOW), SetMonthlyDate = js.Any.fromFunction1(SetMonthlyDate), SetWeekly = js.Any.fromFunction1(SetWeekly), Type = Type, Weekly = Weekly)
   
     __obj.asInstanceOf[ITriggerType]
   }

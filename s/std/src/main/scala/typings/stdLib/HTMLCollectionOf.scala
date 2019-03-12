@@ -14,12 +14,12 @@ trait HTMLCollectionOf[T /* <: Element */] extends HTMLCollectionBase {
 object HTMLCollectionOf {
   @scala.inline
   def apply[T /* <: Element */](
-    item: js.Function1[scala.Double, T | scala.Null],
-    iterator: js.Function0[IterableIterator[T]],
+    item: scala.Double => T | scala.Null,
+    iterator: () => IterableIterator[T],
     length: scala.Double,
-    namedItem: js.Function1[java.lang.String, T | scala.Null]
+    namedItem: java.lang.String => T | scala.Null
   ): HTMLCollectionOf[T] = {
-    val __obj = js.Dynamic.literal(item = item, iterator = iterator, length = length, namedItem = namedItem)
+    val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), iterator = js.Any.fromFunction0(iterator), length = length, namedItem = js.Any.fromFunction1(namedItem))
   
     __obj.asInstanceOf[HTMLCollectionOf[T]]
   }

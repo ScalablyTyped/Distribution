@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait XDevice
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** returns the list of available font descriptors. */
-  val FontDescriptors: activexDashInteropLib.SafeArray[FontDescriptor]
+  val FontDescriptors: stdLib.SafeArray[FontDescriptor]
   /** returns information about the device. */
   val Info: DeviceInfo
   /**
@@ -39,7 +39,7 @@ trait XDevice
     */
   def getFont(aDescriptor: FontDescriptor): XFont
   /** returns the list of available font descriptors. */
-  def getFontDescriptors(): activexDashInteropLib.SafeArray[FontDescriptor]
+  def getFontDescriptors(): stdLib.SafeArray[FontDescriptor]
   /** returns information about the device. */
   def getInfo(): DeviceInfo
 }
@@ -47,20 +47,20 @@ trait XDevice
 object XDevice {
   @scala.inline
   def apply(
-    FontDescriptors: activexDashInteropLib.SafeArray[FontDescriptor],
+    FontDescriptors: stdLib.SafeArray[FontDescriptor],
     Info: DeviceInfo,
-    acquire: js.Function0[scala.Unit],
-    createBitmap: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, XBitmap],
-    createDevice: js.Function2[scala.Double, scala.Double, XDevice],
-    createDisplayBitmap: js.Function1[XBitmap, XDisplayBitmap],
-    createGraphics: js.Function0[XGraphics],
-    getFont: js.Function1[FontDescriptor, XFont],
-    getFontDescriptors: js.Function0[activexDashInteropLib.SafeArray[FontDescriptor]],
-    getInfo: js.Function0[DeviceInfo],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createBitmap: (scala.Double, scala.Double, scala.Double, scala.Double) => XBitmap,
+    createDevice: (scala.Double, scala.Double) => XDevice,
+    createDisplayBitmap: XBitmap => XDisplayBitmap,
+    createGraphics: () => XGraphics,
+    getFont: FontDescriptor => XFont,
+    getFontDescriptors: () => stdLib.SafeArray[FontDescriptor],
+    getInfo: () => DeviceInfo,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDevice = {
-    val __obj = js.Dynamic.literal(FontDescriptors = FontDescriptors, Info = Info, acquire = acquire, createBitmap = createBitmap, createDevice = createDevice, createDisplayBitmap = createDisplayBitmap, createGraphics = createGraphics, getFont = getFont, getFontDescriptors = getFontDescriptors, getInfo = getInfo, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(FontDescriptors = FontDescriptors, Info = Info, acquire = js.Any.fromFunction0(acquire), createBitmap = js.Any.fromFunction4(createBitmap), createDevice = js.Any.fromFunction2(createDevice), createDisplayBitmap = js.Any.fromFunction1(createDisplayBitmap), createGraphics = js.Any.fromFunction0(createGraphics), getFont = js.Any.fromFunction1(getFont), getFontDescriptors = js.Any.fromFunction0(getFontDescriptors), getInfo = js.Any.fromFunction0(getInfo), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDevice]
   }

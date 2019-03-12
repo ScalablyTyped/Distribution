@@ -11,8 +11,8 @@ trait CreateableIndexBuilder extends js.Object {
 
 object CreateableIndexBuilder {
   @scala.inline
-  def apply(withOptions: js.Function1[MappedDict[java.lang.String], CreateableIndexBuilder]): CreateableIndexBuilder = {
-    val __obj = js.Dynamic.literal(withOptions = withOptions)
+  def apply(withOptions: MappedDict[java.lang.String] => CreateableIndexBuilder): CreateableIndexBuilder = {
+    val __obj = js.Dynamic.literal(withOptions = js.Any.fromFunction1(withOptions))
   
     __obj.asInstanceOf[CreateableIndexBuilder]
   }

@@ -23,20 +23,11 @@ trait url extends js.Object {
 object url {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotUrlshortenerLib.Anon_Fields, 
-      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotUrlshortenerLib.GoogleApiUrlShortenerUrlResource]
-    ],
-    insert: js.Function1[
-      gapiDotUrlshortenerLib.Anon_FieldsRequestBody, 
-      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotUrlshortenerLib.GoogleApiUrlShortenerUrlResource]
-    ],
-    list: js.Function1[
-      gapiDotUrlshortenerLib.Anon_FieldsProjection, 
-      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotUrlshortenerLib.GoogleApiUrlShortenerUrlResource]
-    ]
+    get: gapiDotUrlshortenerLib.Anon_Fields => gapiLib.gapiNs.clientNs.HttpRequest[gapiDotUrlshortenerLib.GoogleApiUrlShortenerUrlResource],
+    insert: gapiDotUrlshortenerLib.Anon_FieldsRequestBody => gapiLib.gapiNs.clientNs.HttpRequest[gapiDotUrlshortenerLib.GoogleApiUrlShortenerUrlResource],
+    list: gapiDotUrlshortenerLib.Anon_FieldsProjection => gapiLib.gapiNs.clientNs.HttpRequest[gapiDotUrlshortenerLib.GoogleApiUrlShortenerUrlResource]
   ): url = {
-    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[url]
   }

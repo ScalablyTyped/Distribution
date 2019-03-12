@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def config(): dotenvLib.dotenvMod.DotenvConfigOutput = js.native
-  def config(options: dotenvDashSafeLib.dotenvDashSafeMod.DotenvSafeOptions): dotenvLib.dotenvMod.DotenvConfigOutput = js.native
+  def config(options: DotenvSafeOptions): dotenvLib.dotenvMod.DotenvConfigOutput = js.native
   def load(): dotenvLib.dotenvMod.DotenvConfigOutput = js.native
-  def load(options: dotenvDashSafeLib.dotenvDashSafeMod.DotenvSafeOptions): dotenvLib.dotenvMod.DotenvConfigOutput = js.native
+  def load(options: DotenvSafeOptions): dotenvLib.dotenvMod.DotenvConfigOutput = js.native
 }
 

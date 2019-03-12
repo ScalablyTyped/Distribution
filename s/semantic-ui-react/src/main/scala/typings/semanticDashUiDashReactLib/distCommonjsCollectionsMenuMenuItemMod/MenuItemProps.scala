@@ -26,11 +26,7 @@ object MenuItemProps {
     index: scala.Int | scala.Double = null,
     link: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
-    onClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
-      /* data */ MenuItemProps, 
-      scala.Unit
-    ] = null,
+    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ MenuItemProps) => scala.Unit = null,
     position: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right = null
   ): MenuItemProps = {
     val __obj = js.Dynamic.literal()
@@ -48,7 +44,7 @@ object MenuItemProps {
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (!js.isUndefined(link)) __obj.updateDynamic("link")(link)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItemProps]
   }

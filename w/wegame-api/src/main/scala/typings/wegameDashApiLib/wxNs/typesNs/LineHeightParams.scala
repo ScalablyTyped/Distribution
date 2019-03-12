@@ -25,20 +25,20 @@ object LineHeightParams {
   def apply(
     fontFamily: java.lang.String,
     text: java.lang.String,
-    complete: js.Function0[scala.Unit] = null,
-    fail: js.Function0[scala.Unit] = null,
+    complete: () => scala.Unit = null,
+    fail: () => scala.Unit = null,
     fontSize: scala.Int | scala.Double = null,
     fontStyle: wegameDashApiLib.wegameDashApiLibStrings.normal | wegameDashApiLib.wegameDashApiLibStrings.italic = null,
     fontWeight: wegameDashApiLib.wegameDashApiLibStrings.normal | wegameDashApiLib.wegameDashApiLibStrings.bold = null,
-    success: js.Function1[/* res */ wegameDashApiLib.Anon_LineHeight, scala.Unit] = null
+    success: /* res */ wegameDashApiLib.Anon_LineHeight => scala.Unit = null
   ): LineHeightParams = {
     val __obj = js.Dynamic.literal(fontFamily = fontFamily, text = text)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[LineHeightParams]
   }
 }

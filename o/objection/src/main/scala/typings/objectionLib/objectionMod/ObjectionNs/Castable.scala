@@ -24,21 +24,21 @@ trait Castable extends js.Object {
 object Castable {
   @scala.inline
   def apply(
-    as: js.Function1[java.lang.String, Castable],
-    asArray: js.Function0[Castable],
-    castArray: js.Function0[Castable],
-    castBigInt: js.Function0[Castable],
-    castBool: js.Function0[Castable],
-    castDecimal: js.Function0[Castable],
-    castFloat: js.Function0[Castable],
-    castInt: js.Function0[Castable],
-    castJson: js.Function0[Castable],
-    castReal: js.Function0[Castable],
-    castText: js.Function0[Castable],
-    castTo: js.Function1[java.lang.String, Castable],
-    castType: js.Function1[java.lang.String, Castable]
+    as: java.lang.String => Castable,
+    asArray: () => Castable,
+    castArray: () => Castable,
+    castBigInt: () => Castable,
+    castBool: () => Castable,
+    castDecimal: () => Castable,
+    castFloat: () => Castable,
+    castInt: () => Castable,
+    castJson: () => Castable,
+    castReal: () => Castable,
+    castText: () => Castable,
+    castTo: java.lang.String => Castable,
+    castType: java.lang.String => Castable
   ): Castable = {
-    val __obj = js.Dynamic.literal(as = as, asArray = asArray, castArray = castArray, castBigInt = castBigInt, castBool = castBool, castDecimal = castDecimal, castFloat = castFloat, castInt = castInt, castJson = castJson, castReal = castReal, castText = castText, castTo = castTo, castType = castType)
+    val __obj = js.Dynamic.literal(as = js.Any.fromFunction1(as), asArray = js.Any.fromFunction0(asArray), castArray = js.Any.fromFunction0(castArray), castBigInt = js.Any.fromFunction0(castBigInt), castBool = js.Any.fromFunction0(castBool), castDecimal = js.Any.fromFunction0(castDecimal), castFloat = js.Any.fromFunction0(castFloat), castInt = js.Any.fromFunction0(castInt), castJson = js.Any.fromFunction0(castJson), castReal = js.Any.fromFunction0(castReal), castText = js.Any.fromFunction0(castText), castTo = js.Any.fromFunction1(castTo), castType = js.Any.fromFunction1(castType))
   
     __obj.asInstanceOf[Castable]
   }

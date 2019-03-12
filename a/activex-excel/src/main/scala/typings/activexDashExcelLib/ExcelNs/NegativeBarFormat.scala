@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.NegativeBarFormat")
 @js.native
 class NegativeBarFormat protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val BorderColor: FormatColor = js.native
   var BorderColorType: XlDataBarNegativeColorType = js.native
   val Color: FormatColor = js.native

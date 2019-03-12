@@ -22,11 +22,11 @@ object EmotionCache {
     key: java.lang.String,
     registered: RegisteredCache,
     sheet: StyleSheet,
-    stylis: js.Function2[java.lang.String, java.lang.String, js.Array[java.lang.String]],
+    stylis: (java.lang.String, java.lang.String) => js.Array[java.lang.String],
     compat: atEmotionUtilsLib.atEmotionUtilsLibNumbers.`true` = null,
     nonce: java.lang.String = null
   ): EmotionCache = {
-    val __obj = js.Dynamic.literal(inserted = inserted, key = key, registered = registered, sheet = sheet, stylis = stylis)
+    val __obj = js.Dynamic.literal(inserted = inserted, key = key, registered = registered, sheet = sheet, stylis = js.Any.fromFunction2(stylis))
     if (compat != null) __obj.updateDynamic("compat")(compat)
     if (nonce != null) __obj.updateDynamic("nonce")(nonce)
     __obj.asInstanceOf[EmotionCache]

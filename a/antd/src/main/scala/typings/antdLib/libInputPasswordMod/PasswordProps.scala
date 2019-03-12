@@ -20,7 +20,7 @@ object PasswordProps {
     addonBefore: reactLib.reactMod.ReactNs.ReactNode = null,
     allowClear: js.UndefOr[scala.Boolean] = js.undefined,
     inputPrefixCls: java.lang.String = null,
-    onPressEnter: reactLib.reactMod.ReactNs.KeyboardEventHandler[reactLib.HTMLInputElement] = null,
+    onPressEnter: reactLib.reactMod.ReactNs.KeyboardEventHandler[stdLib.HTMLInputElement] = null,
     prefix: reactLib.reactMod.ReactNs.ReactNode = null,
     prefixCls: java.lang.String = null,
     size: /* import warning: ImportType.apply Failed type conversion: ['small', 'default', 'large'][number] */ js.Any = null,

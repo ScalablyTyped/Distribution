@@ -19,14 +19,14 @@ object Event {
   @scala.inline
   def apply(
     args: js.Any,
-    callback: js.Function1[js.Any, js.Any],
+    callback: js.Any => js.Any,
     emitter: nextgenDashEventsLib.nextgenDashEventsMod.NextGenEvents,
     interrupt: scala.Null,
     mice: scala.Double,
     name: java.lang.String,
     sync: scala.Boolean
   ): Event = {
-    val __obj = js.Dynamic.literal(args = args, callback = callback, emitter = emitter, interrupt = interrupt, mice = mice, name = name, sync = sync)
+    val __obj = js.Dynamic.literal(args = args, callback = js.Any.fromFunction1(callback), emitter = emitter, interrupt = interrupt, mice = mice, name = name, sync = sync)
   
     __obj.asInstanceOf[Event]
   }

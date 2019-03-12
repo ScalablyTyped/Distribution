@@ -213,38 +213,17 @@ object Anon_ArialabelAutoHeightChildren {
     headerStyle: js.Any = null,
     height: scala.Int | scala.Double = null,
     id: java.lang.String = null,
-    noRowsRenderer: js.Function0[scala.Unit] = null,
-    onHeaderClick: js.Function1[
-      /* params */ reactDashVirtualizedLib.distEsTableMod.HeaderMouseEventHandlerParams, 
-      scala.Unit
-    ] = null,
-    onRowClick: js.Function1[
-      /* info */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
-      scala.Unit
-    ] = null,
-    onRowDoubleClick: js.Function1[
-      /* info */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
-      scala.Unit
-    ] = null,
-    onRowMouseOut: js.Function1[
-      /* info */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
-      scala.Unit
-    ] = null,
-    onRowMouseOver: js.Function1[
-      /* info */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
-      scala.Unit
-    ] = null,
-    onRowsRendered: js.Function1[
-      /* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.IndexRange with reactDashVirtualizedLib.reactDashVirtualizedMod.OverscanIndexRange, 
-      scala.Unit
-    ] = null,
-    onScroll: js.Function1[
-      /* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.ScrollEventData, 
-      scala.Unit
-    ] = null,
+    noRowsRenderer: () => scala.Unit = null,
+    onHeaderClick: /* params */ reactDashVirtualizedLib.distEsTableMod.HeaderMouseEventHandlerParams => scala.Unit = null,
+    onRowClick: /* info */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams => scala.Unit = null,
+    onRowDoubleClick: /* info */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams => scala.Unit = null,
+    onRowMouseOut: /* info */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams => scala.Unit = null,
+    onRowMouseOver: /* info */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams => scala.Unit = null,
+    onRowsRendered: /* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.IndexRange with reactDashVirtualizedLib.reactDashVirtualizedMod.OverscanIndexRange => scala.Unit = null,
+    onScroll: /* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.ScrollEventData => scala.Unit = null,
     overscanRowCount: scala.Int | scala.Double = null,
     rowClassName: java.lang.String | (js.Function1[/* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, java.lang.String]) = null,
-    rowGetter: js.Function1[/* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, _] = null,
+    rowGetter: /* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index => _ = null,
     rowRenderer: reactDashVirtualizedLib.distEsTableMod.TableRowRenderer = null,
     rowStyle: reactLib.reactMod.ReactNs.CSSProperties | (js.Function1[
       /* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, 
@@ -253,7 +232,7 @@ object Anon_ArialabelAutoHeightChildren {
     scrollToAlignment: java.lang.String = null,
     scrollToIndex: scala.Int | scala.Double = null,
     scrollTop: scala.Int | scala.Double = null,
-    sort: js.Function1[/* info */ Anon_SortBy, scala.Unit] = null,
+    sort: /* info */ Anon_SortBy => scala.Unit = null,
     sortBy: java.lang.String = null,
     sortDirection: reactDashVirtualizedLib.distEsTableMod.SortDirectionType = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -275,23 +254,23 @@ object Anon_ArialabelAutoHeightChildren {
     if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
-    if (noRowsRenderer != null) __obj.updateDynamic("noRowsRenderer")(noRowsRenderer)
-    if (onHeaderClick != null) __obj.updateDynamic("onHeaderClick")(onHeaderClick)
-    if (onRowClick != null) __obj.updateDynamic("onRowClick")(onRowClick)
-    if (onRowDoubleClick != null) __obj.updateDynamic("onRowDoubleClick")(onRowDoubleClick)
-    if (onRowMouseOut != null) __obj.updateDynamic("onRowMouseOut")(onRowMouseOut)
-    if (onRowMouseOver != null) __obj.updateDynamic("onRowMouseOver")(onRowMouseOver)
-    if (onRowsRendered != null) __obj.updateDynamic("onRowsRendered")(onRowsRendered)
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
+    if (noRowsRenderer != null) __obj.updateDynamic("noRowsRenderer")(js.Any.fromFunction0(noRowsRenderer))
+    if (onHeaderClick != null) __obj.updateDynamic("onHeaderClick")(js.Any.fromFunction1(onHeaderClick))
+    if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction1(onRowClick))
+    if (onRowDoubleClick != null) __obj.updateDynamic("onRowDoubleClick")(js.Any.fromFunction1(onRowDoubleClick))
+    if (onRowMouseOut != null) __obj.updateDynamic("onRowMouseOut")(js.Any.fromFunction1(onRowMouseOut))
+    if (onRowMouseOver != null) __obj.updateDynamic("onRowMouseOver")(js.Any.fromFunction1(onRowMouseOver))
+    if (onRowsRendered != null) __obj.updateDynamic("onRowsRendered")(js.Any.fromFunction1(onRowsRendered))
+    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (overscanRowCount != null) __obj.updateDynamic("overscanRowCount")(overscanRowCount.asInstanceOf[js.Any])
     if (rowClassName != null) __obj.updateDynamic("rowClassName")(rowClassName.asInstanceOf[js.Any])
-    if (rowGetter != null) __obj.updateDynamic("rowGetter")(rowGetter)
+    if (rowGetter != null) __obj.updateDynamic("rowGetter")(js.Any.fromFunction1(rowGetter))
     if (rowRenderer != null) __obj.updateDynamic("rowRenderer")(rowRenderer)
     if (rowStyle != null) __obj.updateDynamic("rowStyle")(rowStyle.asInstanceOf[js.Any])
     if (scrollToAlignment != null) __obj.updateDynamic("scrollToAlignment")(scrollToAlignment)
     if (scrollToIndex != null) __obj.updateDynamic("scrollToIndex")(scrollToIndex.asInstanceOf[js.Any])
     if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction1(sort))
     if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy)
     if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection)
     if (style != null) __obj.updateDynamic("style")(style)

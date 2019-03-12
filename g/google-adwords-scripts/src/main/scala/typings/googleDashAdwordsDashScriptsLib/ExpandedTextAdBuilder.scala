@@ -16,18 +16,18 @@ trait ExpandedTextAdBuilder[ExpandedTextAd] extends AdBuilder[ExpandedTextAdBuil
 object ExpandedTextAdBuilder {
   @scala.inline
   def apply[ExpandedTextAd](
-    build: js.Function0[AdWordsOperation[ExpandedTextAdBuilder[ExpandedTextAd]]],
-    withCustomParameters: js.Function1[js.Object, ExpandedTextAdBuilder[ExpandedTextAd]],
-    withDescription: js.Function1[java.lang.String, ExpandedTextAdBuilder[ExpandedTextAd]],
-    withFinalUrl: js.Function1[java.lang.String, ExpandedTextAdBuilder[ExpandedTextAd]],
-    withHeadlinePart1: js.Function1[java.lang.String, ExpandedTextAdBuilder[ExpandedTextAd]],
-    withHeadlinePart2: js.Function1[java.lang.String, ExpandedTextAdBuilder[ExpandedTextAd]],
-    withMobileFinalUrl: js.Function1[java.lang.String, ExpandedTextAdBuilder[ExpandedTextAd]],
-    withPath1: js.Function1[java.lang.String, ExpandedTextAdBuilder[ExpandedTextAd]],
-    withPath2: js.Function1[java.lang.String, ExpandedTextAdBuilder[ExpandedTextAd]],
-    withTrackingTemplate: js.Function1[java.lang.String, ExpandedTextAdBuilder[ExpandedTextAd]]
+    build: () => AdWordsOperation[ExpandedTextAdBuilder[ExpandedTextAd]],
+    withCustomParameters: js.Object => ExpandedTextAdBuilder[ExpandedTextAd],
+    withDescription: java.lang.String => ExpandedTextAdBuilder[ExpandedTextAd],
+    withFinalUrl: java.lang.String => ExpandedTextAdBuilder[ExpandedTextAd],
+    withHeadlinePart1: java.lang.String => ExpandedTextAdBuilder[ExpandedTextAd],
+    withHeadlinePart2: java.lang.String => ExpandedTextAdBuilder[ExpandedTextAd],
+    withMobileFinalUrl: java.lang.String => ExpandedTextAdBuilder[ExpandedTextAd],
+    withPath1: java.lang.String => ExpandedTextAdBuilder[ExpandedTextAd],
+    withPath2: java.lang.String => ExpandedTextAdBuilder[ExpandedTextAd],
+    withTrackingTemplate: java.lang.String => ExpandedTextAdBuilder[ExpandedTextAd]
   ): ExpandedTextAdBuilder[ExpandedTextAd] = {
-    val __obj = js.Dynamic.literal(build = build, withCustomParameters = withCustomParameters, withDescription = withDescription, withFinalUrl = withFinalUrl, withHeadlinePart1 = withHeadlinePart1, withHeadlinePart2 = withHeadlinePart2, withMobileFinalUrl = withMobileFinalUrl, withPath1 = withPath1, withPath2 = withPath2, withTrackingTemplate = withTrackingTemplate)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), withCustomParameters = js.Any.fromFunction1(withCustomParameters), withDescription = js.Any.fromFunction1(withDescription), withFinalUrl = js.Any.fromFunction1(withFinalUrl), withHeadlinePart1 = js.Any.fromFunction1(withHeadlinePart1), withHeadlinePart2 = js.Any.fromFunction1(withHeadlinePart2), withMobileFinalUrl = js.Any.fromFunction1(withMobileFinalUrl), withPath1 = js.Any.fromFunction1(withPath1), withPath2 = js.Any.fromFunction1(withPath2), withTrackingTemplate = js.Any.fromFunction1(withTrackingTemplate))
   
     __obj.asInstanceOf[ExpandedTextAdBuilder[ExpandedTextAd]]
   }

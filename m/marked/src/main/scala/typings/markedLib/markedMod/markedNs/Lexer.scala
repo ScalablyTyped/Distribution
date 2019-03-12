@@ -13,8 +13,8 @@ trait Lexer extends js.Object {
 
 object Lexer {
   @scala.inline
-  def apply(lex: js.Function1[java.lang.String, TokensList], rules: Rules, tokens: TokensList): Lexer = {
-    val __obj = js.Dynamic.literal(lex = lex, rules = rules, tokens = tokens)
+  def apply(lex: java.lang.String => TokensList, rules: Rules, tokens: TokensList): Lexer = {
+    val __obj = js.Dynamic.literal(lex = js.Any.fromFunction1(lex), rules = rules, tokens = tokens)
   
     __obj.asInstanceOf[Lexer]
   }

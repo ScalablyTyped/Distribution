@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Logger () extends js.Object {
   def this(hasLevelHandlers: LoggerOptions) = this()
-  var handlers: nodeLib.Set[LoggerHandler] = js.native
+  var handlers: stdLib.Set[LoggerHandler] = js.native
   var level: LoggerLevelWeight = js.native
   def clone(opts: stdLib.Partial[LoggerOptions]): Logger = js.native
   def createRecord(msg: java.lang.String): LogRecord = js.native
@@ -67,6 +67,6 @@ class Logger () extends js.Object {
 @JSImport("@ionic/cli-framework/lib/logger", "Logger")
 @js.native
 object Logger extends js.Object {
-  def cloneHandlers(handlers: nodeLib.ReadonlySet[atIonicCliDashFrameworkLib.libLoggerMod.LoggerHandler]): nodeLib.Set[atIonicCliDashFrameworkLib.libLoggerMod.LoggerHandler] = js.native
+  def cloneHandlers(handlers: stdLib.ReadonlySet[atIonicCliDashFrameworkLib.libLoggerMod.LoggerHandler]): stdLib.Set[atIonicCliDashFrameworkLib.libLoggerMod.LoggerHandler] = js.native
 }
 

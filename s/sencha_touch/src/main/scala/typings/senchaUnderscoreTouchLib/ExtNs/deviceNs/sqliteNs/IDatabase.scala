@@ -30,47 +30,47 @@ object IDatabase {
   def apply(
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    changeVersion: js.Function1[/* config */ js.UndefOr[js.Any], scala.Unit] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
+    changeVersion: /* config */ js.UndefOr[js.Any] => scala.Unit = null,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     extend: java.lang.String = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getVersion: js.Function0[java.lang.String] = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getVersion: () => java.lang.String = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
-    readTransaction: js.Function1[/* config */ js.UndefOr[js.Any], scala.Unit] = null,
+    readTransaction: /* config */ js.UndefOr[js.Any] => scala.Unit = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
-    transaction: js.Function1[/* config */ js.UndefOr[js.Any], scala.Unit] = null,
+    transaction: /* config */ js.UndefOr[js.Any] => scala.Unit = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null
   ): IDatabase = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
-    if (changeVersion != null) __obj.updateDynamic("changeVersion")(changeVersion)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
+    if (changeVersion != null) __obj.updateDynamic("changeVersion")(js.Any.fromFunction1(changeVersion))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getVersion != null) __obj.updateDynamic("getVersion")(getVersion)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getVersion != null) __obj.updateDynamic("getVersion")(js.Any.fromFunction0(getVersion))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
-    if (readTransaction != null) __obj.updateDynamic("readTransaction")(readTransaction)
+    if (readTransaction != null) __obj.updateDynamic("readTransaction")(js.Any.fromFunction1(readTransaction))
     if (self != null) __obj.updateDynamic("self")(self)
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (transaction != null) __obj.updateDynamic("transaction")(js.Any.fromFunction1(transaction))
     if (uses != null) __obj.updateDynamic("uses")(uses)
     __obj.asInstanceOf[IDatabase]
   }

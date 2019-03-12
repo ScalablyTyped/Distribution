@@ -28,7 +28,7 @@ object DistributionProps {
     values: js.Array[grommetLib.Anon_Value],
     a11yTitle: java.lang.String = null,
     alignSelf: grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.stretch = null,
-    children: js.Function1[/* repeated */ js.Any, _] = null,
+    children: /* repeated */ js.Any => _ = null,
     fill: js.UndefOr[scala.Boolean] = js.undefined,
     gap: grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String = null,
     gridArea: java.lang.String = null,
@@ -37,7 +37,7 @@ object DistributionProps {
     val __obj = js.Dynamic.literal(values = values)
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
     if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)

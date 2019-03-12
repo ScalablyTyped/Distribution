@@ -19,14 +19,14 @@ object AlterManager {
   @scala.inline
   def apply(
     dataProvider: DataProvider,
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     hot: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
     matrix: Matrix,
-    prepareAlter: js.Function2[java.lang.String, js.Any, scala.Unit],
+    prepareAlter: (java.lang.String, js.Any) => scala.Unit,
     sheet: Sheet,
-    triggerAlter: js.Function2[java.lang.String, js.Any, scala.Unit]
+    triggerAlter: (java.lang.String, js.Any) => scala.Unit
   ): AlterManager = {
-    val __obj = js.Dynamic.literal(dataProvider = dataProvider, destroy = destroy, hot = hot, matrix = matrix, prepareAlter = prepareAlter, sheet = sheet, triggerAlter = triggerAlter)
+    val __obj = js.Dynamic.literal(dataProvider = dataProvider, destroy = js.Any.fromFunction0(destroy), hot = hot, matrix = matrix, prepareAlter = js.Any.fromFunction2(prepareAlter), sheet = sheet, triggerAlter = js.Any.fromFunction2(triggerAlter))
   
     __obj.asInstanceOf[AlterManager]
   }

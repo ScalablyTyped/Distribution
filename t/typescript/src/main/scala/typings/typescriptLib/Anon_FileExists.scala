@@ -15,12 +15,12 @@ trait Anon_FileExists extends js.Object {
 object Anon_FileExists {
   @scala.inline
   def apply(
-    fileExists: js.Function1[java.lang.String, scala.Boolean],
-    getExecutingFilePath: js.Function0[java.lang.String],
-    readFile: js.Function1[java.lang.String, js.UndefOr[java.lang.String]],
-    resolvePath: js.Function1[java.lang.String, java.lang.String]
+    fileExists: java.lang.String => scala.Boolean,
+    getExecutingFilePath: () => java.lang.String,
+    readFile: java.lang.String => js.UndefOr[java.lang.String],
+    resolvePath: java.lang.String => java.lang.String
   ): Anon_FileExists = {
-    val __obj = js.Dynamic.literal(fileExists = fileExists, getExecutingFilePath = getExecutingFilePath, readFile = readFile, resolvePath = resolvePath)
+    val __obj = js.Dynamic.literal(fileExists = js.Any.fromFunction1(fileExists), getExecutingFilePath = js.Any.fromFunction0(getExecutingFilePath), readFile = js.Any.fromFunction1(readFile), resolvePath = js.Any.fromFunction1(resolvePath))
   
     __obj.asInstanceOf[Anon_FileExists]
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class OMathEqArray protected () extends js.Object {
   var Align: WdOMathVertAlignType = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
   val E: OMathArgs = js.native
   var MaxDist: scala.Boolean = js.native

@@ -11,8 +11,8 @@ trait TweenPlugin extends js.Object {
 
 object TweenPlugin {
   @scala.inline
-  def apply(activate: js.Function1[js.Array[_], scala.Boolean]): TweenPlugin = {
-    val __obj = js.Dynamic.literal(activate = activate)
+  def apply(activate: js.Array[_] => scala.Boolean): TweenPlugin = {
+    val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate))
   
     __obj.asInstanceOf[TweenPlugin]
   }

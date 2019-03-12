@@ -17,7 +17,7 @@ class DiagramNode protected () extends js.Object {
   var `Office.DiagramNode_typekey`: DiagramNode = js.native
   val Parent: js.Any = js.native
   val Root: DiagramNode = js.native
-  val Shape: Shape = js.native
+  val Shape: activexDashOfficeLib.OfficeNs.Shape = js.native
   val TextShape: Shape = js.native
   /**
     * @param Pos [Pos=2]

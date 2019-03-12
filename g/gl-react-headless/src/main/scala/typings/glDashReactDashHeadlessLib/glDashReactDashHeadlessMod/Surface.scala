@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("gl-react-headless", "Surface")
 @js.native
 class Surface ()
-  extends glDashReactLib.glDashReactMod.Surface[glDashReactDashHeadlessLib.glviewheadlessMod.GLViewHeadless] {
+  extends glDashReactLib.glDashReactMod.Surface[glDashReactDashHeadlessLib.gLViewHeadlessMod.GLViewHeadless] {
   @JSName("props")
   var props_Surface: SurfaceProps = js.native
 }

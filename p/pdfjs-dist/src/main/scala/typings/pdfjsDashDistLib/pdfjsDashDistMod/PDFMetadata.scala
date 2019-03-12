@@ -14,11 +14,11 @@ trait PDFMetadata extends js.Object {
 object PDFMetadata {
   @scala.inline
   def apply(
-    get: js.Function1[java.lang.String, java.lang.String],
-    has: js.Function1[java.lang.String, scala.Boolean],
-    parse: js.Function0[scala.Unit]
+    get: java.lang.String => java.lang.String,
+    has: java.lang.String => scala.Boolean,
+    parse: () => scala.Unit
   ): PDFMetadata = {
-    val __obj = js.Dynamic.literal(get = get, has = has, parse = parse)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), parse = js.Any.fromFunction0(parse))
   
     __obj.asInstanceOf[PDFMetadata]
   }

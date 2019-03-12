@@ -22,27 +22,27 @@ object ConfigurationController {
   def apply(
     CurrentConfiguration: XConfiguration,
     RequestedConfiguration: XConfiguration,
-    addConfigurationChangeListener: js.Function3[XConfigurationChangeListener, java.lang.String, js.Any, scala.Unit],
-    addResourceFactory: js.Function2[java.lang.String, XResourceFactory, scala.Unit],
-    create: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, scala.Unit],
-    getCurrentConfiguration: js.Function0[XConfiguration],
-    getRequestedConfiguration: js.Function0[XConfiguration],
-    getResource: js.Function1[XResourceId, XResource],
-    getResourceFactory: js.Function1[java.lang.String, XResourceFactory],
-    hasPendingRequests: js.Function0[scala.Boolean],
-    lock: js.Function0[scala.Unit],
-    notifyEvent: js.Function1[ConfigurationChangeEvent, scala.Unit],
-    postChangeRequest: js.Function1[XConfigurationChangeRequest, scala.Unit],
-    removeConfigurationChangeListener: js.Function1[XConfigurationChangeListener, scala.Unit],
-    removeResourceFactoryForReference: js.Function1[XResourceFactory, scala.Unit],
-    removeResourceFactoryForURL: js.Function1[java.lang.String, scala.Unit],
-    requestResourceActivation: js.Function2[XResourceId, ResourceActivationMode, scala.Unit],
-    requestResourceDeactivation: js.Function1[XResourceId, scala.Unit],
-    restoreConfiguration: js.Function1[XConfiguration, scala.Unit],
-    unlock: js.Function0[scala.Unit],
-    update: js.Function0[scala.Unit]
+    addConfigurationChangeListener: (XConfigurationChangeListener, java.lang.String, js.Any) => scala.Unit,
+    addResourceFactory: (java.lang.String, XResourceFactory) => scala.Unit,
+    create: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController => scala.Unit,
+    getCurrentConfiguration: () => XConfiguration,
+    getRequestedConfiguration: () => XConfiguration,
+    getResource: XResourceId => XResource,
+    getResourceFactory: java.lang.String => XResourceFactory,
+    hasPendingRequests: () => scala.Boolean,
+    lock: () => scala.Unit,
+    notifyEvent: ConfigurationChangeEvent => scala.Unit,
+    postChangeRequest: XConfigurationChangeRequest => scala.Unit,
+    removeConfigurationChangeListener: XConfigurationChangeListener => scala.Unit,
+    removeResourceFactoryForReference: XResourceFactory => scala.Unit,
+    removeResourceFactoryForURL: java.lang.String => scala.Unit,
+    requestResourceActivation: (XResourceId, ResourceActivationMode) => scala.Unit,
+    requestResourceDeactivation: XResourceId => scala.Unit,
+    restoreConfiguration: XConfiguration => scala.Unit,
+    unlock: () => scala.Unit,
+    update: () => scala.Unit
   ): ConfigurationController = {
-    val __obj = js.Dynamic.literal(CurrentConfiguration = CurrentConfiguration, RequestedConfiguration = RequestedConfiguration, addConfigurationChangeListener = addConfigurationChangeListener, addResourceFactory = addResourceFactory, create = create, getCurrentConfiguration = getCurrentConfiguration, getRequestedConfiguration = getRequestedConfiguration, getResource = getResource, getResourceFactory = getResourceFactory, hasPendingRequests = hasPendingRequests, lock = lock, notifyEvent = notifyEvent, postChangeRequest = postChangeRequest, removeConfigurationChangeListener = removeConfigurationChangeListener, removeResourceFactoryForReference = removeResourceFactoryForReference, removeResourceFactoryForURL = removeResourceFactoryForURL, requestResourceActivation = requestResourceActivation, requestResourceDeactivation = requestResourceDeactivation, restoreConfiguration = restoreConfiguration, unlock = unlock, update = update)
+    val __obj = js.Dynamic.literal(CurrentConfiguration = CurrentConfiguration, RequestedConfiguration = RequestedConfiguration, addConfigurationChangeListener = js.Any.fromFunction3(addConfigurationChangeListener), addResourceFactory = js.Any.fromFunction2(addResourceFactory), create = js.Any.fromFunction1(create), getCurrentConfiguration = js.Any.fromFunction0(getCurrentConfiguration), getRequestedConfiguration = js.Any.fromFunction0(getRequestedConfiguration), getResource = js.Any.fromFunction1(getResource), getResourceFactory = js.Any.fromFunction1(getResourceFactory), hasPendingRequests = js.Any.fromFunction0(hasPendingRequests), lock = js.Any.fromFunction0(lock), notifyEvent = js.Any.fromFunction1(notifyEvent), postChangeRequest = js.Any.fromFunction1(postChangeRequest), removeConfigurationChangeListener = js.Any.fromFunction1(removeConfigurationChangeListener), removeResourceFactoryForReference = js.Any.fromFunction1(removeResourceFactoryForReference), removeResourceFactoryForURL = js.Any.fromFunction1(removeResourceFactoryForURL), requestResourceActivation = js.Any.fromFunction2(requestResourceActivation), requestResourceDeactivation = js.Any.fromFunction1(requestResourceDeactivation), restoreConfiguration = js.Any.fromFunction1(restoreConfiguration), unlock = js.Any.fromFunction0(unlock), update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[ConfigurationController]
   }

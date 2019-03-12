@@ -13,8 +13,8 @@ trait Throbber extends js.Object {
 
 object Throbber {
   @scala.inline
-  def apply(restart: js.Function0[scala.Unit], start: js.Function0[scala.Unit], stop: js.Function0[scala.Unit]): Throbber = {
-    val __obj = js.Dynamic.literal(restart = restart, start = start, stop = stop)
+  def apply(restart: () => scala.Unit, start: () => scala.Unit, stop: () => scala.Unit): Throbber = {
+    val __obj = js.Dynamic.literal(restart = js.Any.fromFunction0(restart), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[Throbber]
   }

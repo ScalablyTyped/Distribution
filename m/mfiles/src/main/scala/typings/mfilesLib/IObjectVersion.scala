@@ -57,15 +57,15 @@ object IObjectVersion {
     CheckedOutToUserName: java.lang.String,
     CheckedOutVersion: scala.Double,
     Class: mfilesLib.MFilesNs.MFBuiltInDocumentClass | mfilesLib.MFilesNs.MFBuiltInObjectClass | scala.Double,
-    Clone: js.Function0[IObjectVersion],
+    Clone: () => IObjectVersion,
     CreatedUtc: stdLib.Date,
     Deleted: scala.Boolean,
     DisplayID: java.lang.String,
     DisplayIDAvailable: scala.Boolean,
     Files: IObjectFiles,
     FilesCount: scala.Double,
-    GetNameForFileSystem: js.Function1[scala.Boolean, java.lang.String],
-    GetNameForFileSystemEx: js.Function2[scala.Boolean, scala.Boolean, java.lang.String],
+    GetNameForFileSystem: scala.Boolean => java.lang.String,
+    GetNameForFileSystemEx: (scala.Boolean, scala.Boolean) => java.lang.String,
     HasAssignments: scala.Boolean,
     HasSharedFiles: scala.Boolean,
     IsAccessedByMeValid: scala.Boolean,
@@ -90,7 +90,7 @@ object IObjectVersion {
     VersionGUID: java.lang.String,
     VisibleAfterOperation: scala.Boolean
   ): IObjectVersion = {
-    val __obj = js.Dynamic.literal(AccessedByMeUtc = AccessedByMeUtc, CheckedOutAtUtc = CheckedOutAtUtc, CheckedOutTo = CheckedOutTo, CheckedOutToHostName = CheckedOutToHostName, CheckedOutToUserName = CheckedOutToUserName, CheckedOutVersion = CheckedOutVersion, Class = Class.asInstanceOf[js.Any], Clone = Clone, CreatedUtc = CreatedUtc, Deleted = Deleted, DisplayID = DisplayID, DisplayIDAvailable = DisplayIDAvailable, Files = Files, FilesCount = FilesCount, GetNameForFileSystem = GetNameForFileSystem, GetNameForFileSystemEx = GetNameForFileSystemEx, HasAssignments = HasAssignments, HasSharedFiles = HasSharedFiles, IsAccessedByMeValid = IsAccessedByMeValid, IsObjectConflict = IsObjectConflict, IsObjectShortcut = IsObjectShortcut, LastModifiedUtc = LastModifiedUtc, LatestCheckedInVersion = LatestCheckedInVersion, LatestCheckedInVersionOrCheckedOutVersion = LatestCheckedInVersionOrCheckedOutVersion, ObjVer = ObjVer, ObjectCheckedOut = ObjectCheckedOut, ObjectCheckedOutToThisUserOnAnyComputer = ObjectCheckedOutToThisUserOnAnyComputer, ObjectCheckedOutToThisUserOnThisComputer = ObjectCheckedOutToThisUserOnThisComputer, ObjectFlags = ObjectFlags, ObjectGUID = ObjectGUID, ObjectVersionFlags = ObjectVersionFlags, OriginalObjID = OriginalObjID, OriginalVaultGUID = OriginalVaultGUID, SingleFile = SingleFile, ThisVersionCheckedOut = ThisVersionCheckedOut, ThisVersionLatestToThisUser = ThisVersionLatestToThisUser, Title = Title, VersionGUID = VersionGUID, VisibleAfterOperation = VisibleAfterOperation)
+    val __obj = js.Dynamic.literal(AccessedByMeUtc = AccessedByMeUtc, CheckedOutAtUtc = CheckedOutAtUtc, CheckedOutTo = CheckedOutTo, CheckedOutToHostName = CheckedOutToHostName, CheckedOutToUserName = CheckedOutToUserName, CheckedOutVersion = CheckedOutVersion, Class = Class.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), CreatedUtc = CreatedUtc, Deleted = Deleted, DisplayID = DisplayID, DisplayIDAvailable = DisplayIDAvailable, Files = Files, FilesCount = FilesCount, GetNameForFileSystem = js.Any.fromFunction1(GetNameForFileSystem), GetNameForFileSystemEx = js.Any.fromFunction2(GetNameForFileSystemEx), HasAssignments = HasAssignments, HasSharedFiles = HasSharedFiles, IsAccessedByMeValid = IsAccessedByMeValid, IsObjectConflict = IsObjectConflict, IsObjectShortcut = IsObjectShortcut, LastModifiedUtc = LastModifiedUtc, LatestCheckedInVersion = LatestCheckedInVersion, LatestCheckedInVersionOrCheckedOutVersion = LatestCheckedInVersionOrCheckedOutVersion, ObjVer = ObjVer, ObjectCheckedOut = ObjectCheckedOut, ObjectCheckedOutToThisUserOnAnyComputer = ObjectCheckedOutToThisUserOnAnyComputer, ObjectCheckedOutToThisUserOnThisComputer = ObjectCheckedOutToThisUserOnThisComputer, ObjectFlags = ObjectFlags, ObjectGUID = ObjectGUID, ObjectVersionFlags = ObjectVersionFlags, OriginalObjID = OriginalObjID, OriginalVaultGUID = OriginalVaultGUID, SingleFile = SingleFile, ThisVersionCheckedOut = ThisVersionCheckedOut, ThisVersionLatestToThisUser = ThisVersionLatestToThisUser, Title = Title, VersionGUID = VersionGUID, VisibleAfterOperation = VisibleAfterOperation)
   
     __obj.asInstanceOf[IObjectVersion]
   }

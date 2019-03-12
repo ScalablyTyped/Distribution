@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("react-foundation/components/menu", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Menu: reactLib.reactMod.ReactNs.StatelessComponent[reactDashFoundationLib.componentsMenuMod.MenuProps] = js.native
-  val MenuItem: reactLib.reactMod.ReactNs.StatelessComponent[reactDashFoundationLib.componentsMenuMod.MenuItemProps] = js.native
-  def MenuText(props: reactDashFoundationLib.componentsMenuMod.MenuItemProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  val Menu: reactLib.reactMod.ReactNs.StatelessComponent[MenuProps] = js.native
+  val MenuItem: reactLib.reactMod.ReactNs.StatelessComponent[MenuItemProps] = js.native
+  def MenuText(props: MenuItemProps): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

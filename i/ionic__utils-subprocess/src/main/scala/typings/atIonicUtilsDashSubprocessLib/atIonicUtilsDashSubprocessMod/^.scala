@@ -16,10 +16,7 @@ object ^ extends js.Object {
   def convertPATH(path: java.lang.String): java.lang.String = js.native
   def expandTildePath(p: java.lang.String): java.lang.String = js.native
   def findExecutables(program: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
-  def findExecutables(
-    program: java.lang.String,
-    hasPATH: atIonicUtilsDashSubprocessLib.atIonicUtilsDashSubprocessMod.WhichOptions
-  ): js.Promise[js.Array[java.lang.String]] = js.native
+  def findExecutables(program: java.lang.String, hasPATH: WhichOptions): js.Promise[js.Array[java.lang.String]] = js.native
   def fork(modulePath: java.lang.String): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
   def fork(modulePath: java.lang.String, args: js.Array[java.lang.String]): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
   @JSName("fork")
@@ -39,9 +36,6 @@ object ^ extends js.Object {
     options: nodeLib.childUnderscoreProcessMod.SpawnOptions
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
   def which(program: java.lang.String): js.Promise[java.lang.String] = js.native
-  def which(
-    program: java.lang.String,
-    hasPATH: atIonicUtilsDashSubprocessLib.atIonicUtilsDashSubprocessMod.WhichOptions
-  ): js.Promise[java.lang.String] = js.native
+  def which(program: java.lang.String, hasPATH: WhichOptions): js.Promise[java.lang.String] = js.native
 }
 

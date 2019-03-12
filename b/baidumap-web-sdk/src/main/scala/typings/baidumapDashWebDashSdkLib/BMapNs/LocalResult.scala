@@ -28,19 +28,19 @@ object LocalResult {
     bounds: Bounds,
     center: LocalResultPoi,
     city: java.lang.String,
-    getCityList: js.Function0[js.Array[_]],
-    getCurrentNumPois: js.Function0[scala.Double],
-    getNumPages: js.Function0[scala.Double],
-    getNumPois: js.Function0[scala.Double],
-    getPageIndex: js.Function0[scala.Double],
-    getPoi: js.Function1[scala.Double, LocalResultPoi],
+    getCityList: () => js.Array[_],
+    getCurrentNumPois: () => scala.Double,
+    getNumPages: () => scala.Double,
+    getNumPois: () => scala.Double,
+    getPageIndex: () => scala.Double,
+    getPoi: scala.Double => LocalResultPoi,
     keyword: java.lang.String,
     moreResultsUrl: java.lang.String,
     province: java.lang.String,
     radius: scala.Double,
     suggestions: js.Array[java.lang.String]
   ): LocalResult = {
-    val __obj = js.Dynamic.literal(bounds = bounds, center = center, city = city, getCityList = getCityList, getCurrentNumPois = getCurrentNumPois, getNumPages = getNumPages, getNumPois = getNumPois, getPageIndex = getPageIndex, getPoi = getPoi, keyword = keyword, moreResultsUrl = moreResultsUrl, province = province, radius = radius, suggestions = suggestions)
+    val __obj = js.Dynamic.literal(bounds = bounds, center = center, city = city, getCityList = js.Any.fromFunction0(getCityList), getCurrentNumPois = js.Any.fromFunction0(getCurrentNumPois), getNumPages = js.Any.fromFunction0(getNumPages), getNumPois = js.Any.fromFunction0(getNumPois), getPageIndex = js.Any.fromFunction0(getPageIndex), getPoi = js.Any.fromFunction1(getPoi), keyword = keyword, moreResultsUrl = moreResultsUrl, province = province, radius = radius, suggestions = suggestions)
   
     __obj.asInstanceOf[LocalResult]
   }

@@ -30,12 +30,12 @@ trait SecurityManagerProtocol extends js.Object {
 object SecurityManagerProtocol {
   @scala.inline
   def apply(
-    connectionDelegateForUrl: js.Function1[js.Any, APSConnectionDelegate],
-    getKeyManagers: js.Function1[js.Any, js.Array[_]],
-    getTrustManagers: js.Function1[js.Any, js.Array[_]],
-    willHandleURL: js.Function1[js.Any, scala.Boolean]
+    connectionDelegateForUrl: js.Any => APSConnectionDelegate,
+    getKeyManagers: js.Any => js.Array[_],
+    getTrustManagers: js.Any => js.Array[_],
+    willHandleURL: js.Any => scala.Boolean
   ): SecurityManagerProtocol = {
-    val __obj = js.Dynamic.literal(connectionDelegateForUrl = connectionDelegateForUrl, getKeyManagers = getKeyManagers, getTrustManagers = getTrustManagers, willHandleURL = willHandleURL)
+    val __obj = js.Dynamic.literal(connectionDelegateForUrl = js.Any.fromFunction1(connectionDelegateForUrl), getKeyManagers = js.Any.fromFunction1(getKeyManagers), getTrustManagers = js.Any.fromFunction1(getTrustManagers), willHandleURL = js.Any.fromFunction1(willHandleURL))
   
     __obj.asInstanceOf[SecurityManagerProtocol]
   }

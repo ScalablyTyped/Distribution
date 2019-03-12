@@ -19,10 +19,10 @@ trait DiffView extends js.Object {
 object DiffView {
   @scala.inline
   def apply(
-    forceUpdate: js.Function0[js.Function1[/* mode */ java.lang.String, scala.Unit]],
-    setShowDifferences: js.Function1[scala.Boolean, scala.Unit]
+    forceUpdate: () => js.Function1[/* mode */ java.lang.String, scala.Unit],
+    setShowDifferences: scala.Boolean => scala.Unit
   ): DiffView = {
-    val __obj = js.Dynamic.literal(forceUpdate = forceUpdate, setShowDifferences = setShowDifferences)
+    val __obj = js.Dynamic.literal(forceUpdate = js.Any.fromFunction0(forceUpdate), setShowDifferences = js.Any.fromFunction1(setShowDifferences))
   
     __obj.asInstanceOf[DiffView]
   }

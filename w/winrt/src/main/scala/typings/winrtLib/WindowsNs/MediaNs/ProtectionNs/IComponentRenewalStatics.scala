@@ -12,12 +12,9 @@ trait IComponentRenewalStatics extends js.Object {
 object IComponentRenewalStatics {
   @scala.inline
   def apply(
-    renewSystemComponentsAsync: js.Function1[
-      RevocationAndRenewalInformation, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[RenewalStatus, scala.Double]
-    ]
+    renewSystemComponentsAsync: RevocationAndRenewalInformation => winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[RenewalStatus, scala.Double]
   ): IComponentRenewalStatics = {
-    val __obj = js.Dynamic.literal(renewSystemComponentsAsync = renewSystemComponentsAsync)
+    val __obj = js.Dynamic.literal(renewSystemComponentsAsync = js.Any.fromFunction1(renewSystemComponentsAsync))
   
     __obj.asInstanceOf[IComponentRenewalStatics]
   }

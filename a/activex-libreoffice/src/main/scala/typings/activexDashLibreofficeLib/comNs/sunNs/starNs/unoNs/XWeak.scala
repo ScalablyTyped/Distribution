@@ -41,12 +41,12 @@ trait XWeak extends XInterface {
 object XWeak {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryAdapter: js.Function0[XAdapter],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    queryAdapter: () => XAdapter,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XWeak = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryAdapter = queryAdapter, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryAdapter = js.Any.fromFunction0(queryAdapter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XWeak]
   }

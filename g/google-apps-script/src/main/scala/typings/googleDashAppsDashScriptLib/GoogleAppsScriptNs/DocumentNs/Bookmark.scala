@@ -13,12 +13,8 @@ trait Bookmark extends js.Object {
 
 object Bookmark {
   @scala.inline
-  def apply(
-    getId: js.Function0[java.lang.String],
-    getPosition: js.Function0[Position],
-    remove: js.Function0[scala.Unit]
-  ): Bookmark = {
-    val __obj = js.Dynamic.literal(getId = getId, getPosition = getPosition, remove = remove)
+  def apply(getId: () => java.lang.String, getPosition: () => Position, remove: () => scala.Unit): Bookmark = {
+    val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId), getPosition = js.Any.fromFunction0(getPosition), remove = js.Any.fromFunction0(remove))
   
     __obj.asInstanceOf[Bookmark]
   }

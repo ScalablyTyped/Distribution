@@ -19,17 +19,13 @@ object PackOptions {
     dereference: js.UndefOr[scala.Boolean] = js.undefined,
     dmode: scala.Int | scala.Double = null,
     entries: js.Array[java.lang.String] = null,
-    filter: js.Function1[/* name */ java.lang.String, scala.Boolean] = null,
+    filter: /* name */ java.lang.String => scala.Boolean = null,
     finalize: js.UndefOr[scala.Boolean] = js.undefined,
-    finish: js.Function1[/* pack */ js.Any, scala.Unit] = null,
+    finish: /* pack */ js.Any => scala.Unit = null,
     fmode: scala.Int | scala.Double = null,
-    ignore: js.Function1[/* name */ java.lang.String, scala.Boolean] = null,
-    map: js.Function1[/* header */ Headers, Headers] = null,
-    mapStream: js.Function2[
-      /* fileStream */ nodeLib.fsMod.ReadStream, 
-      /* header */ Headers, 
-      nodeLib.fsMod.ReadStream
-    ] = null,
+    ignore: /* name */ java.lang.String => scala.Boolean = null,
+    map: /* header */ Headers => Headers = null,
+    mapStream: (/* fileStream */ nodeLib.fsMod.ReadStream, /* header */ Headers) => nodeLib.fsMod.ReadStream = null,
     readable: js.UndefOr[scala.Boolean] = js.undefined,
     strict: js.UndefOr[scala.Boolean] = js.undefined,
     writable: js.UndefOr[scala.Boolean] = js.undefined
@@ -38,13 +34,13 @@ object PackOptions {
     if (!js.isUndefined(dereference)) __obj.updateDynamic("dereference")(dereference)
     if (dmode != null) __obj.updateDynamic("dmode")(dmode.asInstanceOf[js.Any])
     if (entries != null) __obj.updateDynamic("entries")(entries)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (!js.isUndefined(finalize)) __obj.updateDynamic("finalize")(finalize)
-    if (finish != null) __obj.updateDynamic("finish")(finish)
+    if (finish != null) __obj.updateDynamic("finish")(js.Any.fromFunction1(finish))
     if (fmode != null) __obj.updateDynamic("fmode")(fmode.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (mapStream != null) __obj.updateDynamic("mapStream")(mapStream)
+    if (ignore != null) __obj.updateDynamic("ignore")(js.Any.fromFunction1(ignore))
+    if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
+    if (mapStream != null) __obj.updateDynamic("mapStream")(js.Any.fromFunction2(mapStream))
     if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable)
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
     if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable)

@@ -51,16 +51,16 @@ trait IJob extends js.Object {
 object IJob {
   @scala.inline
   def apply(
-    cancel: js.Function0[scala.Unit],
+    cancel: () => scala.Unit,
     completed: scala.Boolean,
     id: scala.Double,
     name: java.lang.String,
     owner: IOwnerToken,
-    pause: js.Function0[scala.Unit],
+    pause: () => scala.Unit,
     priority: Priority,
-    resume: js.Function0[scala.Unit]
+    resume: () => scala.Unit
   ): IJob = {
-    val __obj = js.Dynamic.literal(cancel = cancel, completed = completed, id = id, name = name, owner = owner, pause = pause, priority = priority, resume = resume)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), completed = completed, id = id, name = name, owner = owner, pause = js.Any.fromFunction0(pause), priority = priority, resume = js.Any.fromFunction0(resume))
   
     __obj.asInstanceOf[IJob]
   }

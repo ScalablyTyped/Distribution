@@ -82,7 +82,7 @@ trait TransitionOptions extends js.Object {
 object TransitionOptions {
   @scala.inline
   def apply(
-    current: js.Function0[atUirouterCoreLib.libTransitionTransitionMod.Transition] = null,
+    current: () => atUirouterCoreLib.libTransitionTransitionMod.Transition = null,
     custom: js.Any = null,
     inherit: js.UndefOr[scala.Boolean] = js.undefined,
     location: scala.Boolean | java.lang.String = null,
@@ -94,7 +94,7 @@ object TransitionOptions {
     source: atUirouterCoreLib.atUirouterCoreLibStrings.sref | atUirouterCoreLib.atUirouterCoreLibStrings.url | atUirouterCoreLib.atUirouterCoreLibStrings.redirect | atUirouterCoreLib.atUirouterCoreLibStrings.otherwise | atUirouterCoreLib.atUirouterCoreLibStrings.unknown = null
   ): TransitionOptions = {
     val __obj = js.Dynamic.literal()
-    if (current != null) __obj.updateDynamic("current")(current)
+    if (current != null) __obj.updateDynamic("current")(js.Any.fromFunction0(current))
     if (custom != null) __obj.updateDynamic("custom")(custom)
     if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])

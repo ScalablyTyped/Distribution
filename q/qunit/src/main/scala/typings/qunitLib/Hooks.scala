@@ -28,16 +28,16 @@ trait Hooks extends js.Object {
 object Hooks {
   @scala.inline
   def apply(
-    after: js.Function1[/* assert */ Assert, scala.Unit] = null,
-    afterEach: js.Function1[/* assert */ Assert, scala.Unit] = null,
-    before: js.Function1[/* assert */ Assert, scala.Unit] = null,
-    beforeEach: js.Function1[/* assert */ Assert, scala.Unit] = null
+    after: /* assert */ Assert => scala.Unit = null,
+    afterEach: /* assert */ Assert => scala.Unit = null,
+    before: /* assert */ Assert => scala.Unit = null,
+    beforeEach: /* assert */ Assert => scala.Unit = null
   ): Hooks = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after)
-    if (afterEach != null) __obj.updateDynamic("afterEach")(afterEach)
-    if (before != null) __obj.updateDynamic("before")(before)
-    if (beforeEach != null) __obj.updateDynamic("beforeEach")(beforeEach)
+    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction1(after))
+    if (afterEach != null) __obj.updateDynamic("afterEach")(js.Any.fromFunction1(afterEach))
+    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction1(before))
+    if (beforeEach != null) __obj.updateDynamic("beforeEach")(js.Any.fromFunction1(beforeEach))
     __obj.asInstanceOf[Hooks]
   }
 }

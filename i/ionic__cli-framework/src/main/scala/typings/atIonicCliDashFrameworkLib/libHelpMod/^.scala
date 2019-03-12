@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/cli-framework/lib/help", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def createCommandMetadataFromSchema(schema: atIonicCliDashFrameworkLib.libHelpMod.CommandHelpSchema): stdLib.Required[
+  def createCommandMetadataFromSchema(schema: CommandHelpSchema): stdLib.Required[
     atIonicCliDashFrameworkLib.definitionsMod.CommandMetadata[
       atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataInput, 
       atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption

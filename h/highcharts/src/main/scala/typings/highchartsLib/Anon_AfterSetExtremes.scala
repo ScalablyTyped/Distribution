@@ -33,12 +33,12 @@ trait Anon_AfterSetExtremes extends js.Object {
 object Anon_AfterSetExtremes {
   @scala.inline
   def apply(
-    afterSetExtremes: js.Function1[/* event */ highchartsLib.highchartsMod.HighchartsNs.AxisEvent, scala.Unit] = null,
-    setExtremes: js.Function1[/* event */ highchartsLib.highchartsMod.HighchartsNs.AxisEvent, scala.Unit] = null
+    afterSetExtremes: /* event */ highchartsLib.highchartsMod.HighchartsNs.AxisEvent => scala.Unit = null,
+    setExtremes: /* event */ highchartsLib.highchartsMod.HighchartsNs.AxisEvent => scala.Unit = null
   ): Anon_AfterSetExtremes = {
     val __obj = js.Dynamic.literal()
-    if (afterSetExtremes != null) __obj.updateDynamic("afterSetExtremes")(afterSetExtremes)
-    if (setExtremes != null) __obj.updateDynamic("setExtremes")(setExtremes)
+    if (afterSetExtremes != null) __obj.updateDynamic("afterSetExtremes")(js.Any.fromFunction1(afterSetExtremes))
+    if (setExtremes != null) __obj.updateDynamic("setExtremes")(js.Any.fromFunction1(setExtremes))
     __obj.asInstanceOf[Anon_AfterSetExtremes]
   }
 }

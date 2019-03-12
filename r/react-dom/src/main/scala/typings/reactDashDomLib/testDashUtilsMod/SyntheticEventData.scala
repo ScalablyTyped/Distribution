@@ -9,11 +9,11 @@ trait SyntheticEventData extends OptionalEventProperties {
   var altKey: js.UndefOr[scala.Boolean] = js.undefined
   var button: js.UndefOr[scala.Double] = js.undefined
   var buttons: js.UndefOr[scala.Double] = js.undefined
-  var changedTouches: js.UndefOr[reactLib.TouchList] = js.undefined
+  var changedTouches: js.UndefOr[stdLib.TouchList] = js.undefined
   var charCode: js.UndefOr[scala.Boolean] = js.undefined
   var clientX: js.UndefOr[scala.Double] = js.undefined
   var clientY: js.UndefOr[scala.Double] = js.undefined
-  var clipboardData: js.UndefOr[reactLib.DataTransfer] = js.undefined
+  var clipboardData: js.UndefOr[stdLib.DataTransfer] = js.undefined
   var ctrlKey: js.UndefOr[scala.Boolean] = js.undefined
   var deltaMode: js.UndefOr[scala.Double] = js.undefined
   var deltaX: js.UndefOr[scala.Double] = js.undefined
@@ -28,13 +28,13 @@ trait SyntheticEventData extends OptionalEventProperties {
   var metaKey: js.UndefOr[scala.Boolean] = js.undefined
   var pageX: js.UndefOr[scala.Double] = js.undefined
   var pageY: js.UndefOr[scala.Double] = js.undefined
-  var relatedTarget: js.UndefOr[reactLib.EventTarget] = js.undefined
+  var relatedTarget: js.UndefOr[stdLib.EventTarget] = js.undefined
   var repeat: js.UndefOr[scala.Boolean] = js.undefined
   var screenX: js.UndefOr[scala.Double] = js.undefined
   var screenY: js.UndefOr[scala.Double] = js.undefined
   var shiftKey: js.UndefOr[scala.Boolean] = js.undefined
-  var targetTouches: js.UndefOr[reactLib.TouchList] = js.undefined
-  var touches: js.UndefOr[reactLib.TouchList] = js.undefined
+  var targetTouches: js.UndefOr[stdLib.TouchList] = js.undefined
+  var touches: js.UndefOr[stdLib.TouchList] = js.undefined
   var view: js.UndefOr[reactLib.reactMod.ReactNs.AbstractView] = js.undefined
   var which: js.UndefOr[scala.Double] = js.undefined
 }
@@ -47,13 +47,13 @@ object SyntheticEventData {
     button: scala.Int | scala.Double = null,
     buttons: scala.Int | scala.Double = null,
     cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    changedTouches: reactLib.TouchList = null,
+    changedTouches: stdLib.TouchList = null,
     charCode: js.UndefOr[scala.Boolean] = js.undefined,
     clientX: scala.Int | scala.Double = null,
     clientY: scala.Int | scala.Double = null,
-    clipboardData: reactLib.DataTransfer = null,
+    clipboardData: stdLib.DataTransfer = null,
     ctrlKey: js.UndefOr[scala.Boolean] = js.undefined,
-    currentTarget: reactLib.EventTarget = null,
+    currentTarget: stdLib.EventTarget = null,
     defaultPrevented: js.UndefOr[scala.Boolean] = js.undefined,
     deltaMode: scala.Int | scala.Double = null,
     deltaX: scala.Int | scala.Double = null,
@@ -61,27 +61,27 @@ object SyntheticEventData {
     deltaZ: scala.Int | scala.Double = null,
     detail: scala.Int | scala.Double = null,
     eventPhase: scala.Int | scala.Double = null,
-    getModifierState: js.Function1[/* key */ java.lang.String, scala.Boolean] = null,
+    getModifierState: /* key */ java.lang.String => scala.Boolean = null,
     isTrusted: js.UndefOr[scala.Boolean] = js.undefined,
     key: java.lang.String = null,
     keyCode: scala.Int | scala.Double = null,
     locale: java.lang.String = null,
     location: scala.Int | scala.Double = null,
     metaKey: js.UndefOr[scala.Boolean] = js.undefined,
-    nativeEvent: reactLib.Event = null,
+    nativeEvent: stdLib.Event = null,
     pageX: scala.Int | scala.Double = null,
     pageY: scala.Int | scala.Double = null,
-    preventDefault: js.Function0[scala.Unit] = null,
-    relatedTarget: reactLib.EventTarget = null,
+    preventDefault: () => scala.Unit = null,
+    relatedTarget: stdLib.EventTarget = null,
     repeat: js.UndefOr[scala.Boolean] = js.undefined,
     screenX: scala.Int | scala.Double = null,
     screenY: scala.Int | scala.Double = null,
     shiftKey: js.UndefOr[scala.Boolean] = js.undefined,
-    stopPropagation: js.Function0[scala.Unit] = null,
-    target: reactLib.EventTarget = null,
-    targetTouches: reactLib.TouchList = null,
+    stopPropagation: () => scala.Unit = null,
+    target: stdLib.EventTarget = null,
+    targetTouches: stdLib.TouchList = null,
     timeStamp: stdLib.Date = null,
-    touches: reactLib.TouchList = null,
+    touches: stdLib.TouchList = null,
     `type`: java.lang.String = null,
     view: reactLib.reactMod.ReactNs.AbstractView = null,
     which: scala.Int | scala.Double = null
@@ -106,7 +106,7 @@ object SyntheticEventData {
     if (deltaZ != null) __obj.updateDynamic("deltaZ")(deltaZ.asInstanceOf[js.Any])
     if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
     if (eventPhase != null) __obj.updateDynamic("eventPhase")(eventPhase.asInstanceOf[js.Any])
-    if (getModifierState != null) __obj.updateDynamic("getModifierState")(getModifierState)
+    if (getModifierState != null) __obj.updateDynamic("getModifierState")(js.Any.fromFunction1(getModifierState))
     if (!js.isUndefined(isTrusted)) __obj.updateDynamic("isTrusted")(isTrusted)
     if (key != null) __obj.updateDynamic("key")(key)
     if (keyCode != null) __obj.updateDynamic("keyCode")(keyCode.asInstanceOf[js.Any])
@@ -116,13 +116,13 @@ object SyntheticEventData {
     if (nativeEvent != null) __obj.updateDynamic("nativeEvent")(nativeEvent)
     if (pageX != null) __obj.updateDynamic("pageX")(pageX.asInstanceOf[js.Any])
     if (pageY != null) __obj.updateDynamic("pageY")(pageY.asInstanceOf[js.Any])
-    if (preventDefault != null) __obj.updateDynamic("preventDefault")(preventDefault)
+    if (preventDefault != null) __obj.updateDynamic("preventDefault")(js.Any.fromFunction0(preventDefault))
     if (relatedTarget != null) __obj.updateDynamic("relatedTarget")(relatedTarget)
     if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat)
     if (screenX != null) __obj.updateDynamic("screenX")(screenX.asInstanceOf[js.Any])
     if (screenY != null) __obj.updateDynamic("screenY")(screenY.asInstanceOf[js.Any])
     if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey)
-    if (stopPropagation != null) __obj.updateDynamic("stopPropagation")(stopPropagation)
+    if (stopPropagation != null) __obj.updateDynamic("stopPropagation")(js.Any.fromFunction0(stopPropagation))
     if (target != null) __obj.updateDynamic("target")(target)
     if (targetTouches != null) __obj.updateDynamic("targetTouches")(targetTouches)
     if (timeStamp != null) __obj.updateDynamic("timeStamp")(timeStamp)

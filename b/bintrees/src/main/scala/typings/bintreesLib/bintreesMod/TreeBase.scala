@@ -22,19 +22,19 @@ trait TreeBase[T] extends js.Object {
 object TreeBase {
   @scala.inline
   def apply[T](
-    clear: js.Function0[scala.Unit],
-    each: js.Function1[Callback[T], scala.Unit],
-    find: js.Function1[T, T],
-    findIter: js.Function1[T, Iterator[T]],
-    iterator: js.Function0[Iterator[T]],
-    lowerBound: js.Function1[T, Iterator[T]],
-    max: js.Function0[T],
-    min: js.Function0[T],
-    reach: js.Function1[Callback[T], scala.Unit],
+    clear: () => scala.Unit,
+    each: Callback[T] => scala.Unit,
+    find: T => T,
+    findIter: T => Iterator[T],
+    iterator: () => Iterator[T],
+    lowerBound: T => Iterator[T],
+    max: () => T,
+    min: () => T,
+    reach: Callback[T] => scala.Unit,
     size: scala.Double,
-    upperBound: js.Function1[T, Iterator[T]]
+    upperBound: T => Iterator[T]
   ): TreeBase[T] = {
-    val __obj = js.Dynamic.literal(clear = clear, each = each, find = find, findIter = findIter, iterator = iterator, lowerBound = lowerBound, max = max, min = min, reach = reach, size = size, upperBound = upperBound)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), each = js.Any.fromFunction1(each), find = js.Any.fromFunction1(find), findIter = js.Any.fromFunction1(findIter), iterator = js.Any.fromFunction0(iterator), lowerBound = js.Any.fromFunction1(lowerBound), max = js.Any.fromFunction0(max), min = js.Any.fromFunction0(min), reach = js.Any.fromFunction1(reach), size = size, upperBound = js.Any.fromFunction1(upperBound))
   
     __obj.asInstanceOf[TreeBase[T]]
   }

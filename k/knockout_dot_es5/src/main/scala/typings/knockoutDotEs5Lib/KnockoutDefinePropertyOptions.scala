@@ -12,9 +12,9 @@ trait KnockoutDefinePropertyOptions extends js.Object {
 
 object KnockoutDefinePropertyOptions {
   @scala.inline
-  def apply(get: js.Function0[js.Any], set: js.Function1[/* value */ js.Any, scala.Unit] = null): KnockoutDefinePropertyOptions = {
-    val __obj = js.Dynamic.literal(get = get)
-    if (set != null) __obj.updateDynamic("set")(set)
+  def apply(get: () => js.Any, set: /* value */ js.Any => scala.Unit = null): KnockoutDefinePropertyOptions = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get))
+    if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction1(set))
     __obj.asInstanceOf[KnockoutDefinePropertyOptions]
   }
 }

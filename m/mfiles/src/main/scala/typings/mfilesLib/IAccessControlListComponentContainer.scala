@@ -15,12 +15,12 @@ trait IAccessControlListComponentContainer extends js.Object {
 object IAccessControlListComponentContainer {
   @scala.inline
   def apply(
-    At: js.Function1[IAccessControlListComponentKey, IAccessControlListComponent],
+    At: IAccessControlListComponentKey => IAccessControlListComponent,
     Count: scala.Double,
-    GetKeys: js.Function0[IAccessControlListComponentKeys],
-    HasKey: js.Function1[IAccessControlListComponentKey, scala.Boolean]
+    GetKeys: () => IAccessControlListComponentKeys,
+    HasKey: IAccessControlListComponentKey => scala.Boolean
   ): IAccessControlListComponentContainer = {
-    val __obj = js.Dynamic.literal(At = At, Count = Count, GetKeys = GetKeys, HasKey = HasKey)
+    val __obj = js.Dynamic.literal(At = js.Any.fromFunction1(At), Count = Count, GetKeys = js.Any.fromFunction0(GetKeys), HasKey = js.Any.fromFunction1(HasKey))
   
     __obj.asInstanceOf[IAccessControlListComponentContainer]
   }

@@ -14,11 +14,11 @@ trait ISmsDeviceStatics extends js.Object {
 object ISmsDeviceStatics {
   @scala.inline
   def apply(
-    fromIdAsync: js.Function1[java.lang.String, winrtLib.WindowsNs.FoundationNs.IAsyncOperation[SmsDevice]],
-    getDefaultAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[SmsDevice]],
-    getDeviceSelector: js.Function0[java.lang.String]
+    fromIdAsync: java.lang.String => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[SmsDevice],
+    getDefaultAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[SmsDevice],
+    getDeviceSelector: () => java.lang.String
   ): ISmsDeviceStatics = {
-    val __obj = js.Dynamic.literal(fromIdAsync = fromIdAsync, getDefaultAsync = getDefaultAsync, getDeviceSelector = getDeviceSelector)
+    val __obj = js.Dynamic.literal(fromIdAsync = js.Any.fromFunction1(fromIdAsync), getDefaultAsync = js.Any.fromFunction0(getDefaultAsync), getDeviceSelector = js.Any.fromFunction0(getDeviceSelector))
   
     __obj.asInstanceOf[ISmsDeviceStatics]
   }

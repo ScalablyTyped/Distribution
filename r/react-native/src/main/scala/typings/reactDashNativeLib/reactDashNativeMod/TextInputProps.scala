@@ -235,37 +235,37 @@ object TextInputProps {
     nativeID: java.lang.String = null,
     needsOffscreenAlphaCompositing: js.UndefOr[scala.Boolean] = js.undefined,
     numberOfLines: scala.Int | scala.Double = null,
-    onAccessibilityAction: js.Function0[scala.Unit] = null,
-    onAccessibilityTap: js.Function0[scala.Unit] = null,
-    onBlur: js.Function1[/* e */ NativeSyntheticEvent[TextInputFocusEventData], scala.Unit] = null,
-    onChange: js.Function1[/* e */ NativeSyntheticEvent[TextInputChangeEventData], scala.Unit] = null,
-    onChangeText: js.Function1[/* text */ java.lang.String, scala.Unit] = null,
-    onContentSizeChange: js.Function1[/* e */ NativeSyntheticEvent[TextInputContentSizeChangeEventData], scala.Unit] = null,
-    onEndEditing: js.Function1[/* e */ NativeSyntheticEvent[TextInputEndEditingEventData], scala.Unit] = null,
-    onFocus: js.Function1[/* e */ NativeSyntheticEvent[TextInputFocusEventData], scala.Unit] = null,
-    onKeyPress: js.Function1[/* e */ NativeSyntheticEvent[TextInputKeyPressEventData], scala.Unit] = null,
-    onLayout: js.Function1[/* event */ LayoutChangeEvent, scala.Unit] = null,
-    onMagicTap: js.Function0[scala.Unit] = null,
-    onMoveShouldSetResponder: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
-    onMoveShouldSetResponderCapture: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
-    onResponderEnd: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderGrant: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderMove: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderReject: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderRelease: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderStart: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderTerminate: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onResponderTerminationRequest: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
-    onScroll: js.Function1[/* e */ NativeSyntheticEvent[TextInputScrollEventData], scala.Unit] = null,
-    onSelectionChange: js.Function1[/* e */ NativeSyntheticEvent[TextInputSelectionChangeEventData], scala.Unit] = null,
-    onStartShouldSetResponder: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
-    onStartShouldSetResponderCapture: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
-    onSubmitEditing: js.Function1[/* e */ NativeSyntheticEvent[TextInputSubmitEditingEventData], scala.Unit] = null,
-    onTouchCancel: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onTouchEnd: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onTouchEndCapture: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onTouchMove: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onTouchStart: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
+    onAccessibilityAction: () => scala.Unit = null,
+    onAccessibilityTap: () => scala.Unit = null,
+    onBlur: /* e */ NativeSyntheticEvent[TextInputFocusEventData] => scala.Unit = null,
+    onChange: /* e */ NativeSyntheticEvent[TextInputChangeEventData] => scala.Unit = null,
+    onChangeText: /* text */ java.lang.String => scala.Unit = null,
+    onContentSizeChange: /* e */ NativeSyntheticEvent[TextInputContentSizeChangeEventData] => scala.Unit = null,
+    onEndEditing: /* e */ NativeSyntheticEvent[TextInputEndEditingEventData] => scala.Unit = null,
+    onFocus: /* e */ NativeSyntheticEvent[TextInputFocusEventData] => scala.Unit = null,
+    onKeyPress: /* e */ NativeSyntheticEvent[TextInputKeyPressEventData] => scala.Unit = null,
+    onLayout: /* event */ LayoutChangeEvent => scala.Unit = null,
+    onMagicTap: () => scala.Unit = null,
+    onMoveShouldSetResponder: /* event */ GestureResponderEvent => scala.Boolean = null,
+    onMoveShouldSetResponderCapture: /* event */ GestureResponderEvent => scala.Boolean = null,
+    onResponderEnd: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderGrant: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderMove: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderReject: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderRelease: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderStart: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderTerminate: /* event */ GestureResponderEvent => scala.Unit = null,
+    onResponderTerminationRequest: /* event */ GestureResponderEvent => scala.Boolean = null,
+    onScroll: /* e */ NativeSyntheticEvent[TextInputScrollEventData] => scala.Unit = null,
+    onSelectionChange: /* e */ NativeSyntheticEvent[TextInputSelectionChangeEventData] => scala.Unit = null,
+    onStartShouldSetResponder: /* event */ GestureResponderEvent => scala.Boolean = null,
+    onStartShouldSetResponderCapture: /* event */ GestureResponderEvent => scala.Boolean = null,
+    onSubmitEditing: /* e */ NativeSyntheticEvent[TextInputSubmitEditingEventData] => scala.Unit = null,
+    onTouchCancel: /* event */ GestureResponderEvent => scala.Unit = null,
+    onTouchEnd: /* event */ GestureResponderEvent => scala.Unit = null,
+    onTouchEndCapture: /* event */ GestureResponderEvent => scala.Unit = null,
+    onTouchMove: /* event */ GestureResponderEvent => scala.Unit = null,
+    onTouchStart: /* event */ GestureResponderEvent => scala.Unit = null,
     placeholder: java.lang.String = null,
     placeholderTextColor: java.lang.String = null,
     pointerEvents: reactDashNativeLib.reactDashNativeLibStrings.`box-none` | reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.`box-only` | reactDashNativeLib.reactDashNativeLibStrings.auto = null,
@@ -328,37 +328,37 @@ object TextInputProps {
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
     if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(onAccessibilityAction)
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(onAccessibilityTap)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onChangeText != null) __obj.updateDynamic("onChangeText")(onChangeText)
-    if (onContentSizeChange != null) __obj.updateDynamic("onContentSizeChange")(onContentSizeChange)
-    if (onEndEditing != null) __obj.updateDynamic("onEndEditing")(onEndEditing)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
-    if (onLayout != null) __obj.updateDynamic("onLayout")(onLayout)
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(onMagicTap)
-    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(onMoveShouldSetResponder)
-    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(onMoveShouldSetResponderCapture)
-    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(onResponderEnd)
-    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(onResponderGrant)
-    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(onResponderMove)
-    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(onResponderReject)
-    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(onResponderRelease)
-    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(onResponderStart)
-    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(onResponderTerminate)
-    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(onResponderTerminationRequest)
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
-    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(onSelectionChange)
-    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(onStartShouldSetResponder)
-    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(onStartShouldSetResponderCapture)
-    if (onSubmitEditing != null) __obj.updateDynamic("onSubmitEditing")(onSubmitEditing)
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel)
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
-    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(onTouchEndCapture)
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction0(onAccessibilityAction))
+    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onChangeText != null) __obj.updateDynamic("onChangeText")(js.Any.fromFunction1(onChangeText))
+    if (onContentSizeChange != null) __obj.updateDynamic("onContentSizeChange")(js.Any.fromFunction1(onContentSizeChange))
+    if (onEndEditing != null) __obj.updateDynamic("onEndEditing")(js.Any.fromFunction1(onEndEditing))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
+    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
+    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
+    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))
+    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(js.Any.fromFunction1(onMoveShouldSetResponderCapture))
+    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(js.Any.fromFunction1(onResponderEnd))
+    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(js.Any.fromFunction1(onResponderGrant))
+    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(js.Any.fromFunction1(onResponderMove))
+    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(js.Any.fromFunction1(onResponderReject))
+    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(js.Any.fromFunction1(onResponderRelease))
+    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(js.Any.fromFunction1(onResponderStart))
+    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(js.Any.fromFunction1(onResponderTerminate))
+    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(js.Any.fromFunction1(onResponderTerminationRequest))
+    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
+    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(js.Any.fromFunction1(onSelectionChange))
+    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1(onStartShouldSetResponder))
+    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1(onStartShouldSetResponderCapture))
+    if (onSubmitEditing != null) __obj.updateDynamic("onSubmitEditing")(js.Any.fromFunction1(onSubmitEditing))
+    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
+    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(js.Any.fromFunction1(onTouchEndCapture))
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (placeholderTextColor != null) __obj.updateDynamic("placeholderTextColor")(placeholderTextColor)
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])

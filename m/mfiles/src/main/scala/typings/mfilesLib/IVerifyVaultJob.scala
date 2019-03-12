@@ -19,16 +19,16 @@ trait IVerifyVaultJob extends js.Object {
 object IVerifyVaultJob {
   @scala.inline
   def apply(
-    Clone: js.Function0[IVerifyVaultJob],
+    Clone: () => IVerifyVaultJob,
     FixErrors: scala.Boolean,
-    GetNumberOfSteps: js.Function0[scala.Double],
-    GetOneBasedIndexOfStep: js.Function1[scala.Double, scala.Double],
-    GetStepProgressText: js.Function1[scala.Double, java.lang.String],
-    Set: js.Function3[java.lang.String, scala.Boolean, scala.Boolean, scala.Unit],
+    GetNumberOfSteps: () => scala.Double,
+    GetOneBasedIndexOfStep: scala.Double => scala.Double,
+    GetStepProgressText: scala.Double => java.lang.String,
+    Set: (java.lang.String, scala.Boolean, scala.Boolean) => scala.Unit,
     VaultGUID: java.lang.String,
     VerifyFileContents: scala.Boolean
   ): IVerifyVaultJob = {
-    val __obj = js.Dynamic.literal(Clone = Clone, FixErrors = FixErrors, GetNumberOfSteps = GetNumberOfSteps, GetOneBasedIndexOfStep = GetOneBasedIndexOfStep, GetStepProgressText = GetStepProgressText, Set = Set, VaultGUID = VaultGUID, VerifyFileContents = VerifyFileContents)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), FixErrors = FixErrors, GetNumberOfSteps = js.Any.fromFunction0(GetNumberOfSteps), GetOneBasedIndexOfStep = js.Any.fromFunction1(GetOneBasedIndexOfStep), GetStepProgressText = js.Any.fromFunction1(GetStepProgressText), Set = js.Any.fromFunction3(Set), VaultGUID = VaultGUID, VerifyFileContents = VerifyFileContents)
   
     __obj.asInstanceOf[IVerifyVaultJob]
   }

@@ -12,21 +12,18 @@ object ^ extends js.Object {
   def getStrokeDashArray(style: stdLib.Record[java.lang.String, _]): js.Array[scala.Double] = js.native
   def getStrokeWidth(style: stdLib.Record[java.lang.String, _]): scala.Double = js.native
   def renderArea(
-    context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D,
+    context: stdLib.CanvasRenderingContext2D,
     d3Area: d3DashShapeLib.d3DashShapeMod.Area[_],
     data: js.Array[_],
-    style: plottableLib.buildSrcDrawersCanvasDrawerMod.IFillStyle with plottableLib.buildSrcDrawersCanvasDrawerMod.IStrokeStyle
+    style: IFillStyle with IStrokeStyle
   ): scala.Unit = js.native
   def renderLine(
-    context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D,
+    context: stdLib.CanvasRenderingContext2D,
     d3Line: d3DashShapeLib.d3DashShapeMod.Line[_],
     data: js.Array[_],
-    style: plottableLib.buildSrcDrawersCanvasDrawerMod.IStrokeStyle
+    style: IStrokeStyle
   ): scala.Unit = js.native
-  def renderPathWithStyle(
-    context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D,
-    style: stdLib.Record[java.lang.String, _]
-  ): scala.Unit = js.native
+  def renderPathWithStyle(context: stdLib.CanvasRenderingContext2D, style: stdLib.Record[java.lang.String, _]): scala.Unit = js.native
   def resolveAttributes(
     projector: plottableLib.buildSrcCoreInterfacesMod.AttributeToAppliedProjector,
     attrKeys: js.Array[java.lang.String],

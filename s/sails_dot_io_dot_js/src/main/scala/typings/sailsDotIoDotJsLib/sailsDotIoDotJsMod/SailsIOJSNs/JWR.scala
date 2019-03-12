@@ -19,13 +19,13 @@ object JWR {
   def apply(
     body: js.Any,
     headers: Headers,
-    pipe: js.Function0[stdLib.Error],
+    pipe: () => stdLib.Error,
     statusCode: scala.Double,
-    toPOJO: js.Function0[sailsDotIoDotJsLib.Anon_Body],
-    toString: js.Function0[java.lang.String],
+    toPOJO: () => sailsDotIoDotJsLib.Anon_Body,
+    toString: () => java.lang.String,
     error: stdLib.Error = null
   ): JWR = {
-    val __obj = js.Dynamic.literal(body = body, headers = headers, pipe = pipe, statusCode = statusCode, toPOJO = toPOJO, toString = toString)
+    val __obj = js.Dynamic.literal(body = body, headers = headers, pipe = js.Any.fromFunction0(pipe), statusCode = statusCode, toPOJO = js.Any.fromFunction0(toPOJO), toString = js.Any.fromFunction0(toString))
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[JWR]
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.commands")
 @js.native
 object ^ extends js.Object {
-  var onCommand: chromeLib.chromeNs.commandsNs.CommandEvent = js.native
-  def getAll(callback: js.Function1[/* commands */ js.Array[chromeLib.chromeNs.commandsNs.Command], scala.Unit]): scala.Unit = js.native
+  var onCommand: CommandEvent = js.native
+  def getAll(callback: js.Function1[/* commands */ js.Array[Command], scala.Unit]): scala.Unit = js.native
 }
 

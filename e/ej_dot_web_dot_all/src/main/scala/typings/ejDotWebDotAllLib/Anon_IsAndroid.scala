@@ -16,13 +16,13 @@ trait Anon_IsAndroid extends js.Object {
 object Anon_IsAndroid {
   @scala.inline
   def apply(
-    isAndroid: js.Function0[scala.Boolean],
-    isFlat: js.Function0[scala.Boolean],
-    isIOS: js.Function0[scala.Boolean],
-    isIOS7: js.Function0[scala.Boolean],
-    isWindows: js.Function0[scala.Boolean]
+    isAndroid: () => scala.Boolean,
+    isFlat: () => scala.Boolean,
+    isIOS: () => scala.Boolean,
+    isIOS7: () => scala.Boolean,
+    isWindows: () => scala.Boolean
   ): Anon_IsAndroid = {
-    val __obj = js.Dynamic.literal(isAndroid = isAndroid, isFlat = isFlat, isIOS = isIOS, isIOS7 = isIOS7, isWindows = isWindows)
+    val __obj = js.Dynamic.literal(isAndroid = js.Any.fromFunction0(isAndroid), isFlat = js.Any.fromFunction0(isFlat), isIOS = js.Any.fromFunction0(isIOS), isIOS7 = js.Any.fromFunction0(isIOS7), isWindows = js.Any.fromFunction0(isWindows))
   
     __obj.asInstanceOf[Anon_IsAndroid]
   }

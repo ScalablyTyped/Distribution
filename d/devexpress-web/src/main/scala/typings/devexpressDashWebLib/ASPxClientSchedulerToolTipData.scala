@@ -26,11 +26,11 @@ trait ASPxClientSchedulerToolTipData extends js.Object {
 object ASPxClientSchedulerToolTipData {
   @scala.inline
   def apply(
-    GetAppointment: js.Function0[ASPxClientAppointment],
-    GetInterval: js.Function0[ASPxClientTimeInterval],
-    GetResources: js.Function0[js.Array[java.lang.String]]
+    GetAppointment: () => ASPxClientAppointment,
+    GetInterval: () => ASPxClientTimeInterval,
+    GetResources: () => js.Array[java.lang.String]
   ): ASPxClientSchedulerToolTipData = {
-    val __obj = js.Dynamic.literal(GetAppointment = GetAppointment, GetInterval = GetInterval, GetResources = GetResources)
+    val __obj = js.Dynamic.literal(GetAppointment = js.Any.fromFunction0(GetAppointment), GetInterval = js.Any.fromFunction0(GetInterval), GetResources = js.Any.fromFunction0(GetResources))
   
     __obj.asInstanceOf[ASPxClientSchedulerToolTipData]
   }

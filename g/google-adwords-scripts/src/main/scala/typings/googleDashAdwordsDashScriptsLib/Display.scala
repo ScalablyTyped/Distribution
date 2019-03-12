@@ -15,12 +15,12 @@ trait Display extends js.Object {
 object Display {
   @scala.inline
   def apply(
-    audiences: js.Function0[AdWordsSelector[Audience]],
-    keywords: js.Function0[AdWordsSelector[DisplayKeyword]],
-    placements: js.Function0[AdWordsSelector[Placement]],
-    topics: js.Function0[AdWordsSelector[Topic]]
+    audiences: () => AdWordsSelector[Audience],
+    keywords: () => AdWordsSelector[DisplayKeyword],
+    placements: () => AdWordsSelector[Placement],
+    topics: () => AdWordsSelector[Topic]
   ): Display = {
-    val __obj = js.Dynamic.literal(audiences = audiences, keywords = keywords, placements = placements, topics = topics)
+    val __obj = js.Dynamic.literal(audiences = js.Any.fromFunction0(audiences), keywords = js.Any.fromFunction0(keywords), placements = js.Any.fromFunction0(placements), topics = js.Any.fromFunction0(topics))
   
     __obj.asInstanceOf[Display]
   }

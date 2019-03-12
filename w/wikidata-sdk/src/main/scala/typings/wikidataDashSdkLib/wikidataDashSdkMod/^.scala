@@ -231,7 +231,7 @@ object ^ extends js.Object {
     value: js.Array[java.lang.String],
     options: wikidataDashSdkLib.Anon_CaseInsensitive
   ): java.lang.String = js.native
-  def getSitelinkData(a: java.lang.String): wikidataDashSdkLib.wikidataDashSdkMod.SitelinkData = js.native
+  def getSitelinkData(a: java.lang.String): SitelinkData = js.native
   def getSitelinkUrl(a: wikidataDashSdkLib.Anon_Site): java.lang.String = js.native
   def getSitelinkUrl(site: wikidataDashSdkLib.defTypeSiteMod.WikidataSite, title: java.lang.String): java.lang.String = js.native
   def getWikidataIdsFromSitelinks(): scala.Unit = js.native
@@ -416,6 +416,6 @@ object ^ extends js.Object {
   def wikidataTimeToEpochTime(a: java.lang.String): java.lang.String = js.native
   def wikidataTimeToISOString(a: java.lang.String): java.lang.String = js.native
   def wikidataTimeToSimpleDay(a: java.lang.String): java.lang.String = js.native
-  def wikidataTimeToSimpleDay(a: wikidataDashSdkLib.wikidataDashSdkMod.Json): java.lang.String = js.native
+  def wikidataTimeToSimpleDay(a: Json): java.lang.String = js.native
 }
 

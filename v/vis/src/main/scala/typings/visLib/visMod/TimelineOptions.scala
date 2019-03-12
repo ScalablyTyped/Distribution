@@ -105,7 +105,7 @@ object TimelineOptions {
     multiselectPerGroup: js.UndefOr[scala.Boolean] = js.undefined,
     onAdd: TimelineOptionsItemCallbackFunction = null,
     onAddGroup: TimelineOptionsGroupCallbackFunction = null,
-    onInitialDrawComplete: js.Function0[scala.Unit] = null,
+    onInitialDrawComplete: () => scala.Unit = null,
     onMove: TimelineOptionsItemCallbackFunction = null,
     onMoveGroup: TimelineOptionsGroupCallbackFunction = null,
     onMoving: TimelineOptionsItemCallbackFunction = null,
@@ -170,7 +170,7 @@ object TimelineOptions {
     if (!js.isUndefined(multiselectPerGroup)) __obj.updateDynamic("multiselectPerGroup")(multiselectPerGroup)
     if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd)
     if (onAddGroup != null) __obj.updateDynamic("onAddGroup")(onAddGroup)
-    if (onInitialDrawComplete != null) __obj.updateDynamic("onInitialDrawComplete")(onInitialDrawComplete)
+    if (onInitialDrawComplete != null) __obj.updateDynamic("onInitialDrawComplete")(js.Any.fromFunction0(onInitialDrawComplete))
     if (onMove != null) __obj.updateDynamic("onMove")(onMove)
     if (onMoveGroup != null) __obj.updateDynamic("onMoveGroup")(onMoveGroup)
     if (onMoving != null) __obj.updateDynamic("onMoving")(onMoving)

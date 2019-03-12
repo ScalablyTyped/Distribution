@@ -36,23 +36,23 @@ object CardExe {
     signature: java.lang.String,
     timestamp: scala.Double,
     code: java.lang.String = null,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
+    complete: /* res */ js.Any => scala.Unit = null,
+    fail: js.Any => scala.Unit = null,
     fixed_begintimestamp: scala.Int | scala.Double = null,
     nonce_str: java.lang.String = null,
     openid: java.lang.String = null,
     outer_str: java.lang.String = null,
-    success: js.Function1[js.Any, scala.Unit] = null
+    success: js.Any => scala.Unit = null
   ): CardExe = {
     val __obj = js.Dynamic.literal(signature = signature, timestamp = timestamp)
     if (code != null) __obj.updateDynamic("code")(code)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (fixed_begintimestamp != null) __obj.updateDynamic("fixed_begintimestamp")(fixed_begintimestamp.asInstanceOf[js.Any])
     if (nonce_str != null) __obj.updateDynamic("nonce_str")(nonce_str)
     if (openid != null) __obj.updateDynamic("openid")(openid)
     if (outer_str != null) __obj.updateDynamic("outer_str")(outer_str)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[CardExe]
   }
 }

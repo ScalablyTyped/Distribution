@@ -27,12 +27,12 @@ object XDimensionsSupplier {
   @scala.inline
   def apply(
     Dimensions: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
-    acquire: js.Function0[scala.Unit],
-    getDimensions: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDimensions: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDimensionsSupplier = {
-    val __obj = js.Dynamic.literal(Dimensions = Dimensions, acquire = acquire, getDimensions = getDimensions, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Dimensions = Dimensions, acquire = js.Any.fromFunction0(acquire), getDimensions = js.Any.fromFunction0(getDimensions), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDimensionsSupplier]
   }

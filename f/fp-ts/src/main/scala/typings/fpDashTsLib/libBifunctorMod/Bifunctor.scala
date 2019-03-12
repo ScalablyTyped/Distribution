@@ -18,14 +18,9 @@ object Bifunctor {
   @scala.inline
   def apply[F](
     URI: F,
-    bimap: js.Function3[
-      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any]
-    ]
+    bimap: (fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any]
   ): Bifunctor[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], bimap = bimap)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], bimap = js.Any.fromFunction3(bimap))
   
     __obj.asInstanceOf[Bifunctor[F]]
   }

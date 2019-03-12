@@ -47,17 +47,9 @@ object MenuProps {
     listStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     maxHeight: scala.Int | scala.Double = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
-      /* itemValue */ js.Any | js.Array[_], 
-      scala.Unit
-    ] = null,
+    onChange: (/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], /* itemValue */ js.Any | js.Array[_]) => scala.Unit = null,
     onEscKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
-    onItemClick: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
-      /* item */ MenuItem, 
-      scala.Unit
-    ] = null,
+    onItemClick: (/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], /* item */ MenuItem) => scala.Unit = null,
     onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
     selectedMenuItemStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -73,9 +65,9 @@ object MenuProps {
     if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle)
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onEscKeyDown != null) __obj.updateDynamic("onEscKeyDown")(onEscKeyDown)
-    if (onItemClick != null) __obj.updateDynamic("onItemClick")(onItemClick)
+    if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction2(onItemClick))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
     if (selectedMenuItemStyle != null) __obj.updateDynamic("selectedMenuItemStyle")(selectedMenuItemStyle)
     if (style != null) __obj.updateDynamic("style")(style)

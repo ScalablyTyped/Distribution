@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("detect-hover", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: detectDashHoverLib.detectDashHoverMod.detectHover = js.native
+  val default: detectHover = js.native
 }
 

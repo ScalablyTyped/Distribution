@@ -17,16 +17,16 @@ object MkdirParams {
   @scala.inline
   def apply(
     dirPath: java.lang.String,
-    complete: js.Function0[scala.Unit] = null,
-    fail: js.Function1[/* res */ wegameDashApiLib.Anon_ErrMsg, scala.Unit] = null,
+    complete: () => scala.Unit = null,
+    fail: /* res */ wegameDashApiLib.Anon_ErrMsg => scala.Unit = null,
     recursive: js.UndefOr[scala.Boolean] = js.undefined,
-    success: js.Function0[scala.Unit] = null
+    success: () => scala.Unit = null
   ): MkdirParams = {
     val __obj = js.Dynamic.literal(dirPath = dirPath)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[MkdirParams]
   }
 }

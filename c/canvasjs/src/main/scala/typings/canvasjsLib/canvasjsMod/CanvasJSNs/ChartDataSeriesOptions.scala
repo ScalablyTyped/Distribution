@@ -177,7 +177,7 @@ object ChartDataSeriesOptions {
     axisYIndex: scala.Int | scala.Double = null,
     axisYType: java.lang.String = null,
     bevelEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    click: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
+    click: /* event */ ChartEvent => scala.Unit = null,
     color: java.lang.String = null,
     connectNullData: js.UndefOr[scala.Boolean] = js.undefined,
     explodeOnClick: js.UndefOr[scala.Boolean] = js.undefined,
@@ -190,7 +190,7 @@ object ChartDataSeriesOptions {
     indexLabelFontSize: scala.Int | scala.Double = null,
     indexLabelFontStyle: java.lang.String = null,
     indexLabelFontWeight: java.lang.String = null,
-    indexLabelFormatter: js.Function1[/* e */ canvasjsLib.Anon_ChartDataPoint, java.lang.String] = null,
+    indexLabelFormatter: /* e */ canvasjsLib.Anon_ChartDataPoint => java.lang.String = null,
     indexLabelLineColor: java.lang.String = null,
     indexLabelLineDashType: canvasjsLib.DashType = null,
     indexLabelLineThickness: scala.Int | scala.Double = null,
@@ -209,9 +209,9 @@ object ChartDataSeriesOptions {
     markerColor: java.lang.String = null,
     markerSize: scala.Int | scala.Double = null,
     markerType: java.lang.String = null,
-    mousemove: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
-    mouseout: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
-    mouseover: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
+    mousemove: /* event */ ChartEvent => scala.Unit = null,
+    mouseout: /* event */ ChartEvent => scala.Unit = null,
+    mouseover: /* event */ ChartEvent => scala.Unit = null,
     name: java.lang.String = null,
     nullDataLineDashType: canvasjsLib.DashType = null,
     percentFormatString: java.lang.String = null,
@@ -233,7 +233,7 @@ object ChartDataSeriesOptions {
     if (axisYIndex != null) __obj.updateDynamic("axisYIndex")(axisYIndex.asInstanceOf[js.Any])
     if (axisYType != null) __obj.updateDynamic("axisYType")(axisYType)
     if (!js.isUndefined(bevelEnabled)) __obj.updateDynamic("bevelEnabled")(bevelEnabled)
-    if (click != null) __obj.updateDynamic("click")(click)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
     if (color != null) __obj.updateDynamic("color")(color)
     if (!js.isUndefined(connectNullData)) __obj.updateDynamic("connectNullData")(connectNullData)
     if (!js.isUndefined(explodeOnClick)) __obj.updateDynamic("explodeOnClick")(explodeOnClick)
@@ -246,7 +246,7 @@ object ChartDataSeriesOptions {
     if (indexLabelFontSize != null) __obj.updateDynamic("indexLabelFontSize")(indexLabelFontSize.asInstanceOf[js.Any])
     if (indexLabelFontStyle != null) __obj.updateDynamic("indexLabelFontStyle")(indexLabelFontStyle)
     if (indexLabelFontWeight != null) __obj.updateDynamic("indexLabelFontWeight")(indexLabelFontWeight)
-    if (indexLabelFormatter != null) __obj.updateDynamic("indexLabelFormatter")(indexLabelFormatter)
+    if (indexLabelFormatter != null) __obj.updateDynamic("indexLabelFormatter")(js.Any.fromFunction1(indexLabelFormatter))
     if (indexLabelLineColor != null) __obj.updateDynamic("indexLabelLineColor")(indexLabelLineColor)
     if (indexLabelLineDashType != null) __obj.updateDynamic("indexLabelLineDashType")(indexLabelLineDashType)
     if (indexLabelLineThickness != null) __obj.updateDynamic("indexLabelLineThickness")(indexLabelLineThickness.asInstanceOf[js.Any])
@@ -265,9 +265,9 @@ object ChartDataSeriesOptions {
     if (markerColor != null) __obj.updateDynamic("markerColor")(markerColor)
     if (markerSize != null) __obj.updateDynamic("markerSize")(markerSize.asInstanceOf[js.Any])
     if (markerType != null) __obj.updateDynamic("markerType")(markerType)
-    if (mousemove != null) __obj.updateDynamic("mousemove")(mousemove)
-    if (mouseout != null) __obj.updateDynamic("mouseout")(mouseout)
-    if (mouseover != null) __obj.updateDynamic("mouseover")(mouseover)
+    if (mousemove != null) __obj.updateDynamic("mousemove")(js.Any.fromFunction1(mousemove))
+    if (mouseout != null) __obj.updateDynamic("mouseout")(js.Any.fromFunction1(mouseout))
+    if (mouseover != null) __obj.updateDynamic("mouseover")(js.Any.fromFunction1(mouseover))
     if (name != null) __obj.updateDynamic("name")(name)
     if (nullDataLineDashType != null) __obj.updateDynamic("nullDataLineDashType")(nullDataLineDashType)
     if (percentFormatString != null) __obj.updateDynamic("percentFormatString")(percentFormatString)

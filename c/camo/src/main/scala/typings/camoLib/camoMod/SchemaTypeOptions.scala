@@ -58,7 +58,7 @@ object SchemaTypeOptions {
     min: scala.Int | scala.Double = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
     unique: js.UndefOr[scala.Boolean] = js.undefined,
-    validate: js.Function1[/* value */ Type, scala.Boolean] = null
+    validate: /* value */ Type => scala.Boolean = null
   ): SchemaTypeOptions[Type] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -69,7 +69,7 @@ object SchemaTypeOptions {
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
     if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
-    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction1(validate))
     __obj.asInstanceOf[SchemaTypeOptions[Type]]
   }
 }

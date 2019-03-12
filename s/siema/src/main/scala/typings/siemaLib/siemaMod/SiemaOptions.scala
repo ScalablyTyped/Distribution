@@ -27,8 +27,8 @@ object SiemaOptions {
     easing: java.lang.String = null,
     loop: js.UndefOr[scala.Boolean] = js.undefined,
     multipleDrag: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function0[scala.Unit] = null,
-    onInit: js.Function0[scala.Unit] = null,
+    onChange: () => scala.Unit = null,
+    onInit: () => scala.Unit = null,
     perPage: scala.Double | PageInterface = null,
     selector: java.lang.String | stdLib.HTMLElement = null,
     startIndex: scala.Int | scala.Double = null,
@@ -40,8 +40,8 @@ object SiemaOptions {
     if (easing != null) __obj.updateDynamic("easing")(easing)
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
     if (!js.isUndefined(multipleDrag)) __obj.updateDynamic("multipleDrag")(multipleDrag)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onInit != null) __obj.updateDynamic("onInit")(onInit)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction0(onChange))
+    if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction0(onInit))
     if (perPage != null) __obj.updateDynamic("perPage")(perPage.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])

@@ -9,12 +9,12 @@ package object fastifyNs {
   type BodyParser[HttpRequest, RawBody /* <: java.lang.String | nodeLib.Buffer */] = (js.Function3[
     /* req */ HttpRequest, 
     /* rawBody */ RawBody, 
-    /* done */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* body */ js.UndefOr[js.Any], scala.Unit], 
+    /* done */ js.Function2[/* err */ stdLib.Error | scala.Null, /* body */ js.UndefOr[js.Any], scala.Unit], 
     scala.Unit
   ]) | (js.Function2[/* req */ HttpRequest, /* rawBody */ RawBody, js.Promise[js.Any]])
   type ContentTypeParser[HttpRequest] = (js.Function2[
     /* req */ HttpRequest, 
-    /* done */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* body */ js.UndefOr[js.Any], scala.Unit], 
+    /* done */ js.Function2[/* err */ stdLib.Error | scala.Null, /* body */ js.UndefOr[js.Any], scala.Unit], 
     scala.Unit
   ]) | (js.Function1[/* req */ HttpRequest, js.Promise[js.Any]])
   type DefaultBody = js.Any
@@ -22,7 +22,7 @@ package object fastifyNs {
     /* this */ FastifyInstance[HttpServer, HttpRequest, HttpResponse], 
     /* req */ FastifyRequest[HttpRequest, Query, Params, Headers, Body], 
     /* reply */ FastifyReply[HttpResponse], 
-    /* done */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
+    /* done */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
     scala.Unit
   ]
   type FastifyMiddlewareWithPayload[HttpServer, HttpRequest, HttpResponse, Query, Params, Headers, Body] = js.ThisFunction4[
@@ -30,7 +30,7 @@ package object fastifyNs {
     /* req */ FastifyRequest[HttpRequest, Query, Params, Headers, Body], 
     /* reply */ FastifyReply[HttpResponse], 
     /* payload */ js.Any, 
-    /* done */ js.Function2[/* err */ js.UndefOr[nodeLib.Error], /* value */ js.UndefOr[js.Any], scala.Unit], 
+    /* done */ js.Function2[/* err */ js.UndefOr[stdLib.Error], /* value */ js.UndefOr[js.Any], scala.Unit], 
     scala.Unit
   ]
   // TODO - define/import JSONSchema types

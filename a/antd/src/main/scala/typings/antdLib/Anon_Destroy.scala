@@ -12,11 +12,8 @@ trait Anon_Destroy extends js.Object {
 
 object Anon_Destroy {
   @scala.inline
-  def apply(
-    destroy: js.Function0[scala.Unit],
-    update: js.Function1[antdLib.libModalModalMod.ModalFuncProps, scala.Unit]
-  ): Anon_Destroy = {
-    val __obj = js.Dynamic.literal(destroy = destroy, update = update)
+  def apply(destroy: () => scala.Unit, update: antdLib.libModalModalMod.ModalFuncProps => scala.Unit): Anon_Destroy = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[Anon_Destroy]
   }

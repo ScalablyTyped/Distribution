@@ -26,32 +26,14 @@ trait HttpHealthChecksResource extends js.Object {
 object HttpHealthChecksResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsHttpHealthCheck, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsHttpHealthCheckKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[HttpHealthCheck]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[HttpHealthCheckList]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsHttpHealthCheck, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    update: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsHttpHealthCheck, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    delete: gapiDotClientDotComputeLib.Anon_AltFieldsHttpHealthCheck => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotComputeLib.Anon_AltFieldsHttpHealthCheckKey => gapiDotClientLib.gapiNs.clientNs.Request[HttpHealthCheck],
+    insert: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[HttpHealthCheckList],
+    patch: gapiDotClientDotComputeLib.Anon_AltFieldsHttpHealthCheck => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    update: gapiDotClientDotComputeLib.Anon_AltFieldsHttpHealthCheck => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): HttpHealthChecksResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[HttpHealthChecksResource]
   }

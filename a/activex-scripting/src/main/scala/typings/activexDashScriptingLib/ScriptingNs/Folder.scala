@@ -12,13 +12,13 @@ class Folder protected () extends js.Object {
   /** Folder attributes */
   var Attributes: FileAttribute = js.native
   /** Date folder was created */
-  val DateCreated: activexDashInteropLib.VarDate = js.native
+  val DateCreated: stdLib.VarDate = js.native
   /** Date folder was last accessed */
-  val DateLastAccessed: activexDashInteropLib.VarDate = js.native
+  val DateLastAccessed: stdLib.VarDate = js.native
   /** Date folder was last modified */
-  val DateLastModified: activexDashInteropLib.VarDate = js.native
+  val DateLastModified: stdLib.VarDate = js.native
   /** Get drive that contains folder */
-  val Drive: Drive = js.native
+  val Drive: activexDashScriptingLib.ScriptingNs.Drive = js.native
   /** Get files collection */
   @JSName("Files")
   val Files_Original: Files = js.native

@@ -41,15 +41,15 @@ trait DropdownProps
   /**
     * Callback function that is fired when the component is blurred.
     */
-  var onBlur: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onBlur: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback function that is fired when the component's value changes.
     */
-  var onChange: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onChange: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback function that is fired when the component is focused.
     */
-  var onFocus: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onFocus: js.UndefOr[js.Function] = js.undefined
   /**
     * If true, the dropdown has a required attribute.
     * @default false
@@ -58,11 +58,11 @@ trait DropdownProps
   /**
     * Array of data objects with the data to represent in the dropdown.
     */
-  var source: coreDashJsLib.Array[_]
+  var source: js.Array[_]
   /**
     * Callback function that returns a JSX template to represent the element.
     */
-  var template: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var template: js.UndefOr[js.Function] = js.undefined
   /**
     * Classnames object defining the component style.
     */
@@ -80,7 +80,7 @@ trait DropdownProps
 object DropdownProps {
   @scala.inline
   def apply(
-    source: coreDashJsLib.Array[_],
+    source: js.Array[_],
     allowBlank: js.UndefOr[scala.Boolean] = js.undefined,
     auto: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
@@ -90,34 +90,34 @@ object DropdownProps {
     label: java.lang.String = null,
     labelKey: java.lang.String = null,
     name: java.lang.String = null,
-    onBlur: coreDashJsLib.Function = null,
-    onChange: coreDashJsLib.Function = null,
-    onClick: coreDashJsLib.Function = null,
-    onContextMenu: coreDashJsLib.Function = null,
-    onDoubleClick: coreDashJsLib.Function = null,
-    onDrag: coreDashJsLib.Function = null,
-    onDragEnd: coreDashJsLib.Function = null,
-    onDragEnter: coreDashJsLib.Function = null,
-    onDragExit: coreDashJsLib.Function = null,
-    onDragLeave: coreDashJsLib.Function = null,
-    onDragOver: coreDashJsLib.Function = null,
-    onDragStart: coreDashJsLib.Function = null,
-    onDrop: coreDashJsLib.Function = null,
-    onFocus: coreDashJsLib.Function = null,
-    onMouseDown: coreDashJsLib.Function = null,
-    onMouseEnter: coreDashJsLib.Function = null,
-    onMouseLeave: coreDashJsLib.Function = null,
-    onMouseMove: coreDashJsLib.Function = null,
-    onMouseOut: coreDashJsLib.Function = null,
-    onMouseOver: coreDashJsLib.Function = null,
-    onMouseUp: coreDashJsLib.Function = null,
-    onTouchCancel: coreDashJsLib.Function = null,
-    onTouchEnd: coreDashJsLib.Function = null,
-    onTouchMove: coreDashJsLib.Function = null,
-    onTouchStart: coreDashJsLib.Function = null,
+    onBlur: js.Function = null,
+    onChange: js.Function = null,
+    onClick: js.Function = null,
+    onContextMenu: js.Function = null,
+    onDoubleClick: js.Function = null,
+    onDrag: js.Function = null,
+    onDragEnd: js.Function = null,
+    onDragEnter: js.Function = null,
+    onDragExit: js.Function = null,
+    onDragLeave: js.Function = null,
+    onDragOver: js.Function = null,
+    onDragStart: js.Function = null,
+    onDrop: js.Function = null,
+    onFocus: js.Function = null,
+    onMouseDown: js.Function = null,
+    onMouseEnter: js.Function = null,
+    onMouseLeave: js.Function = null,
+    onMouseMove: js.Function = null,
+    onMouseOut: js.Function = null,
+    onMouseOver: js.Function = null,
+    onMouseUp: js.Function = null,
+    onTouchCancel: js.Function = null,
+    onTouchEnd: js.Function = null,
+    onTouchMove: js.Function = null,
+    onTouchStart: js.Function = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    template: coreDashJsLib.Function = null,
+    template: js.Function = null,
     theme: DropdownTheme = null,
     value: java.lang.String | scala.Double = null,
     valueKey: java.lang.String = null

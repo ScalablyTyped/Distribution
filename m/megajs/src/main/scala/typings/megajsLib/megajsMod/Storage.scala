@@ -24,11 +24,11 @@ class Storage protected () extends js.Object {
   def login(cb: js.Any): nodeLib.streamMod.Readable = js.native
   def mkdir(
     options: java.lang.String,
-    cb: js.Function2[/* err */ js.UndefOr[nodeLib.Error], /* file */ MutableFile, scala.Unit]
+    cb: js.Function2[/* err */ js.UndefOr[stdLib.Error], /* file */ MutableFile, scala.Unit]
   ): nodeLib.streamMod.Readable = js.native
   def mkdir(
     options: MakeDirectoryOptions,
-    cb: js.Function2[/* err */ js.UndefOr[nodeLib.Error], /* file */ MutableFile, scala.Unit]
+    cb: js.Function2[/* err */ js.UndefOr[stdLib.Error], /* file */ MutableFile, scala.Unit]
   ): nodeLib.streamMod.Readable = js.native
   def reload(cb: js.Any): nodeLib.streamMod.Readable = js.native
   def toJSON(): stdLib.JSON = js.native

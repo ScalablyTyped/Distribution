@@ -19,7 +19,6 @@ class Module protected () extends js.Object {
   var paths: js.Array[java.lang.String] = js.native
   @JSName("require")
   var require_Original: nodeLib.NodeRequireFunction = js.native
-  /* tslint:disable-next-line:callable-types */
   def require(id: java.lang.String): js.Any = js.native
 }
 

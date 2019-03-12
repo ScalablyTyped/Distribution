@@ -15,16 +15,10 @@ trait RegionsResource extends js.Object {
 object RegionsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegion, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Region]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RegionList]
-    ]
+    get: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegion => gapiDotClientLib.gapiNs.clientNs.Request[Region],
+    list: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[RegionList]
   ): RegionsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[RegionsResource]
   }

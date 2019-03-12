@@ -25,10 +25,10 @@ trait SceneModePickerViewModel extends js.Object {
 object SceneModePickerViewModel {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     dropDownVisible: scala.Boolean,
     duration: scala.Double,
-    isDestroyed: js.Function0[scala.Boolean],
+    isDestroyed: () => scala.Boolean,
     morphTo2D: Command,
     morphTo3D: Command,
     morphToColumbusView: Command,
@@ -40,7 +40,7 @@ object SceneModePickerViewModel {
     tooltip3D: java.lang.String,
     tooltipColumbusView: java.lang.String
   ): SceneModePickerViewModel = {
-    val __obj = js.Dynamic.literal(destroy = destroy, dropDownVisible = dropDownVisible, duration = duration, isDestroyed = isDestroyed, morphTo2D = morphTo2D, morphTo3D = morphTo3D, morphToColumbusView = morphToColumbusView, scene = scene, sceneMode = sceneMode, selectedTooltip = selectedTooltip, toggleDropDown = toggleDropDown, tooltip2D = tooltip2D, tooltip3D = tooltip3D, tooltipColumbusView = tooltipColumbusView)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), dropDownVisible = dropDownVisible, duration = duration, isDestroyed = js.Any.fromFunction0(isDestroyed), morphTo2D = morphTo2D, morphTo3D = morphTo3D, morphToColumbusView = morphToColumbusView, scene = scene, sceneMode = sceneMode, selectedTooltip = selectedTooltip, toggleDropDown = toggleDropDown, tooltip2D = tooltip2D, tooltip3D = tooltip3D, tooltipColumbusView = tooltipColumbusView)
   
     __obj.asInstanceOf[SceneModePickerViewModel]
   }

@@ -24,15 +24,15 @@ object RouteOptions {
     delay: scala.Double,
     force404: scala.Boolean,
     method: HttpMethod,
-    onAbort: js.Function1[/* repeated */ js.Any, scala.Unit],
-    onRequest: js.Function1[/* repeated */ js.Any, scala.Unit],
-    onResponse: js.Function1[/* repeated */ js.Any, scala.Unit],
+    onAbort: /* repeated */ js.Any => scala.Unit,
+    onRequest: /* repeated */ js.Any => scala.Unit,
+    onResponse: /* repeated */ js.Any => scala.Unit,
     response: js.Any,
     status: scala.Double,
     url: java.lang.String | stdLib.RegExp,
     headers: js.Object = null
   ): RouteOptions = {
-    val __obj = js.Dynamic.literal(delay = delay, force404 = force404, method = method, onAbort = onAbort, onRequest = onRequest, onResponse = onResponse, response = response, status = status, url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(delay = delay, force404 = force404, method = method, onAbort = js.Any.fromFunction1(onAbort), onRequest = js.Any.fromFunction1(onRequest), onResponse = js.Any.fromFunction1(onResponse), response = response, status = status, url = url.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers)
     __obj.asInstanceOf[RouteOptions]
   }

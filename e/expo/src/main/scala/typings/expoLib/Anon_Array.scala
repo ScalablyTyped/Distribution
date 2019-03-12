@@ -13,12 +13,8 @@ trait Anon_Array extends js.Object {
 
 object Anon_Array {
   @scala.inline
-  def apply(
-    _array: js.Array[expoLib.expoMod.HashMap],
-    item: js.Function1[scala.Double, js.Any],
-    length: scala.Double
-  ): Anon_Array = {
-    val __obj = js.Dynamic.literal(_array = _array, item = item, length = length)
+  def apply(_array: js.Array[expoLib.expoMod.HashMap], item: scala.Double => js.Any, length: scala.Double): Anon_Array = {
+    val __obj = js.Dynamic.literal(_array = _array, item = js.Any.fromFunction1(item), length = length)
   
     __obj.asInstanceOf[Anon_Array]
   }

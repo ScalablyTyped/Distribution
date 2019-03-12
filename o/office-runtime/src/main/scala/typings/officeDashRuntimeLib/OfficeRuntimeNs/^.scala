@@ -17,6 +17,6 @@ object ^ extends js.Object {
     * @param url
     * @param options
     */
-  def displayWebDialog(url: java.lang.String, options: officeDashRuntimeLib.OfficeRuntimeNs.DisplayWebDialogOptions): js.Promise[officeDashRuntimeLib.OfficeRuntimeNs.Dialog] = js.native
+  def displayWebDialog(url: java.lang.String, options: DisplayWebDialogOptions): js.Promise[Dialog] = js.native
 }
 

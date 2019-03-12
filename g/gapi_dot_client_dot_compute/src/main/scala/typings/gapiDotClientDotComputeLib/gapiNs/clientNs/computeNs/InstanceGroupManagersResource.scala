@@ -91,56 +91,20 @@ trait InstanceGroupManagersResource extends js.Object {
 object InstanceGroupManagersResource {
   @scala.inline
   def apply(
-    abandonInstances: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManager, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    aggregatedList: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupManagerAggregatedList]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManager, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    deleteInstances: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManager, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManagerKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupManager]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupManagerList]
-    ],
-    listManagedInstances: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsFilterInstanceGroupManager, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupManagersListManagedInstancesResponse]
-    ],
-    recreateInstances: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManager, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    resize: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManagerKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    setInstanceTemplate: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManager, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    setTargetPools: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManager, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    abandonInstances: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManager => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    aggregatedList: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupManagerAggregatedList],
+    delete: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManager => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    deleteInstances: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManager => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManagerKey => gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupManager],
+    insert: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotComputeLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupManagerList],
+    listManagedInstances: gapiDotClientDotComputeLib.Anon_AltFieldsFilterInstanceGroupManager => gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupManagersListManagedInstancesResponse],
+    recreateInstances: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManager => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    resize: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManagerKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    setInstanceTemplate: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManager => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    setTargetPools: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManager => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): InstanceGroupManagersResource = {
-    val __obj = js.Dynamic.literal(abandonInstances = abandonInstances, aggregatedList = aggregatedList, delete = delete, deleteInstances = deleteInstances, get = get, insert = insert, list = list, listManagedInstances = listManagedInstances, recreateInstances = recreateInstances, resize = resize, setInstanceTemplate = setInstanceTemplate, setTargetPools = setTargetPools)
+    val __obj = js.Dynamic.literal(abandonInstances = js.Any.fromFunction1(abandonInstances), aggregatedList = js.Any.fromFunction1(aggregatedList), delete = js.Any.fromFunction1(delete), deleteInstances = js.Any.fromFunction1(deleteInstances), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), listManagedInstances = js.Any.fromFunction1(listManagedInstances), recreateInstances = js.Any.fromFunction1(recreateInstances), resize = js.Any.fromFunction1(resize), setInstanceTemplate = js.Any.fromFunction1(setInstanceTemplate), setTargetPools = js.Any.fromFunction1(setTargetPools))
   
     __obj.asInstanceOf[InstanceGroupManagersResource]
   }

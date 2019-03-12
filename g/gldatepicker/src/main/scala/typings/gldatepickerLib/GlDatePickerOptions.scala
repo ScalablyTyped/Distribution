@@ -62,22 +62,10 @@ object GlDatePickerOptions {
     hideOnClick: js.UndefOr[scala.Boolean] = js.undefined,
     monthNames: js.Array[java.lang.String] = null,
     nextArrow: java.lang.String = null,
-    onClick: js.Function4[
-      /* inputElement */ JQuery, 
-      /* cell */ JQuery, 
-      /* date */ stdLib.Date, 
-      /* data */ js.Any, 
-      scala.Unit
-    ] = null,
-    onHide: js.Function1[/* calendar */ JQuery, scala.Unit] = null,
-    onHover: js.Function4[
-      /* inputElement */ JQuery, 
-      /* cell */ JQuery, 
-      /* date */ stdLib.Date, 
-      /* data */ js.Any, 
-      scala.Unit
-    ] = null,
-    onShow: js.Function1[/* calendar */ JQuery, scala.Unit] = null,
+    onClick: (/* inputElement */ JQuery, /* cell */ JQuery, /* date */ stdLib.Date, /* data */ js.Any) => scala.Unit = null,
+    onHide: /* calendar */ JQuery => scala.Unit = null,
+    onHover: (/* inputElement */ JQuery, /* cell */ JQuery, /* date */ stdLib.Date, /* data */ js.Any) => scala.Unit = null,
+    onShow: /* calendar */ JQuery => scala.Unit = null,
     prevArrow: java.lang.String = null,
     selectableDOW: js.Array[scala.Double] = null,
     selectableDateRange: js.Array[GlDatePickerDateRange] = null,
@@ -101,10 +89,10 @@ object GlDatePickerOptions {
     if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick)
     if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames)
     if (nextArrow != null) __obj.updateDynamic("nextArrow")(nextArrow)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onHover != null) __obj.updateDynamic("onHover")(onHover)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction4(onClick))
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction1(onHide))
+    if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction4(onHover))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (prevArrow != null) __obj.updateDynamic("prevArrow")(prevArrow)
     if (selectableDOW != null) __obj.updateDynamic("selectableDOW")(selectableDOW)
     if (selectableDateRange != null) __obj.updateDynamic("selectableDateRange")(selectableDateRange)

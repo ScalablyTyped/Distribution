@@ -19,24 +19,12 @@ trait FiltersResource extends js.Object {
 object FiltersResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotGmailLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Filter]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Filter]
-    ],
-    list: js.Function1[
-      gapiDotClientDotGmailLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListFiltersResponse]
-    ]
+    create: gapiDotClientDotGmailLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Filter],
+    delete: gapiDotClientDotGmailLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotGmailLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Filter],
+    list: gapiDotClientDotGmailLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ListFiltersResponse]
   ): FiltersResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[FiltersResource]
   }

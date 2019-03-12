@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("nodal", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val API: nodalLib.nodalMod.APIConstructor = js.native
+  val API: APIConstructor = js.native
   val APIResource: js.Any = js.native
   val CLI: js.Any = js.native
   val mime: js.Any = js.native

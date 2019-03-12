@@ -17,8 +17,8 @@ trait CommonSubMethods extends js.Object {
 
 object CommonSubMethods {
   @scala.inline
-  def apply(cache: js.Function1[java.lang.String, Api]): CommonSubMethods = {
-    val __obj = js.Dynamic.literal(cache = cache)
+  def apply(cache: java.lang.String => Api): CommonSubMethods = {
+    val __obj = js.Dynamic.literal(cache = js.Any.fromFunction1(cache))
   
     __obj.asInstanceOf[CommonSubMethods]
   }

@@ -242,7 +242,7 @@ object LegendOptions {
     itemStyle: CSSObject = null,
     itemWidth: scala.Int | scala.Double = null,
     labelFormat: java.lang.String = null,
-    labelFormatter: js.Function0[java.lang.String] = null,
+    labelFormatter: () => java.lang.String = null,
     layout: java.lang.String = null,
     lineHeight: scala.Int | scala.Double = null,
     margin: scala.Int | scala.Double = null,
@@ -280,7 +280,7 @@ object LegendOptions {
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
     if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
     if (labelFormat != null) __obj.updateDynamic("labelFormat")(labelFormat)
-    if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(labelFormatter)
+    if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(js.Any.fromFunction0(labelFormatter))
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])

@@ -32,13 +32,13 @@ trait SpanNotQuery extends Query {
 object SpanNotQuery {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    boost: js.Function1[scala.Double, SpanNotQuery],
-    exclude: js.Function1[js.Object, SpanNotQuery],
-    include: js.Function1[js.Object, SpanNotQuery],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    boost: scala.Double => SpanNotQuery,
+    exclude: js.Object => SpanNotQuery,
+    include: js.Object => SpanNotQuery,
+    toJSON: () => js.Any
   ): SpanNotQuery = {
-    val __obj = js.Dynamic.literal(_type = _type, boost = boost, exclude = exclude, include = include, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), boost = js.Any.fromFunction1(boost), exclude = js.Any.fromFunction1(exclude), include = js.Any.fromFunction1(include), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[SpanNotQuery]
   }

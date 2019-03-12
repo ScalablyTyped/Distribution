@@ -22,24 +22,21 @@ trait XCipherContext
     * Whether the object does encryption or decryption is specified by creation of the object.
     * @param aData data that should be encrypted/decrypted
     */
-  def convertWithCipherContext(aData: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]): activexDashInteropLib.SafeArray[scala.Double]
+  def convertWithCipherContext(aData: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]): stdLib.SafeArray[scala.Double]
   /** finalizes cipher and disposes context. */
-  def finalizeCipherContextAndDispose(): activexDashInteropLib.SafeArray[scala.Double]
+  def finalizeCipherContextAndDispose(): stdLib.SafeArray[scala.Double]
 }
 
 object XCipherContext {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    convertWithCipherContext: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      activexDashInteropLib.SafeArray[scala.Double]
-    ],
-    finalizeCipherContextAndDispose: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    convertWithCipherContext: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => stdLib.SafeArray[scala.Double],
+    finalizeCipherContextAndDispose: () => stdLib.SafeArray[scala.Double],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCipherContext = {
-    val __obj = js.Dynamic.literal(acquire = acquire, convertWithCipherContext = convertWithCipherContext, finalizeCipherContextAndDispose = finalizeCipherContextAndDispose, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), convertWithCipherContext = js.Any.fromFunction1(convertWithCipherContext), finalizeCipherContextAndDispose = js.Any.fromFunction0(finalizeCipherContextAndDispose), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCipherContext]
   }

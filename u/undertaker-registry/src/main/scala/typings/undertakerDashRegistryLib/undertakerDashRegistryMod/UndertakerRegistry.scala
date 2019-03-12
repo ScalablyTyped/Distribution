@@ -40,14 +40,12 @@ trait UndertakerRegistry extends js.Object {
 object UndertakerRegistry {
   @scala.inline
   def apply(
-    get: js.Function1[java.lang.String, js.Any],
-    init: js.Function1[js.Any, scala.Unit],
-    set: js.Function2[java.lang.String, js.Any, js.Any],
-    tasks: js.Function0[
-      org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ js.Any, _]]
-    ]
+    get: java.lang.String => js.Any,
+    init: js.Any => scala.Unit,
+    set: (java.lang.String, js.Any) => js.Any,
+    tasks: () => org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ js.Any, _]]
   ): UndertakerRegistry = {
-    val __obj = js.Dynamic.literal(get = get, init = init, set = set, tasks = tasks)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), init = js.Any.fromFunction1(init), set = js.Any.fromFunction2(set), tasks = js.Any.fromFunction0(tasks))
   
     __obj.asInstanceOf[UndertakerRegistry]
   }

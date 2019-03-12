@@ -18,12 +18,12 @@ class Queue protected ()
   @JSName("on")
   def on_error(
     event: nodeDashResqueLib.nodeDashResqueLibStrings.error,
-    cb: js.Function2[/* error */ nodeLib.Error, /* queue */ java.lang.String, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error, /* queue */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_error(
     event: nodeDashResqueLib.nodeDashResqueLibStrings.error,
-    cb: js.Function2[/* error */ nodeLib.Error, /* queue */ java.lang.String, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error, /* queue */ java.lang.String, scala.Unit]
   ): this.type = js.native
 }
 

@@ -13,7 +13,7 @@ trait XComboBox
   /** returns the number of items in the combo box. */
   val ItemCount: scala.Double
   /** returns all items of the combo box. */
-  val Items: activexDashInteropLib.SafeArray[java.lang.String]
+  val Items: stdLib.SafeArray[java.lang.String]
   /** registers a listener for action events. */
   def addActionListener(l: XActionListener): scala.Unit
   /** adds an item at the specified position. */
@@ -29,7 +29,7 @@ trait XComboBox
   /** returns the number of items in the combo box. */
   def getItemCount(): scala.Double
   /** returns all items of the combo box. */
-  def getItems(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getItems(): stdLib.SafeArray[java.lang.String]
   /** unregisters a listener for action events. */
   def removeActionListener(l: XActionListener): scala.Unit
   /** unregisters a listener for item events. */
@@ -45,28 +45,24 @@ object XComboBox {
   def apply(
     DropDownLineCount: scala.Double,
     ItemCount: scala.Double,
-    Items: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    addActionListener: js.Function1[XActionListener, scala.Unit],
-    addItem: js.Function2[java.lang.String, scala.Double, scala.Unit],
-    addItemListener: js.Function1[XItemListener, scala.Unit],
-    addItems: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      scala.Double, 
-      scala.Unit
-    ],
-    getDropDownLineCount: js.Function0[scala.Double],
-    getItem: js.Function1[scala.Double, java.lang.String],
-    getItemCount: js.Function0[scala.Double],
-    getItems: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeActionListener: js.Function1[XActionListener, scala.Unit],
-    removeItemListener: js.Function1[XItemListener, scala.Unit],
-    removeItems: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setDropDownLineCount: js.Function1[scala.Double, scala.Unit]
+    Items: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    addActionListener: XActionListener => scala.Unit,
+    addItem: (java.lang.String, scala.Double) => scala.Unit,
+    addItemListener: XItemListener => scala.Unit,
+    addItems: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Double) => scala.Unit,
+    getDropDownLineCount: () => scala.Double,
+    getItem: scala.Double => java.lang.String,
+    getItemCount: () => scala.Double,
+    getItems: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeActionListener: XActionListener => scala.Unit,
+    removeItemListener: XItemListener => scala.Unit,
+    removeItems: (scala.Double, scala.Double) => scala.Unit,
+    setDropDownLineCount: scala.Double => scala.Unit
   ): XComboBox = {
-    val __obj = js.Dynamic.literal(DropDownLineCount = DropDownLineCount, ItemCount = ItemCount, Items = Items, acquire = acquire, addActionListener = addActionListener, addItem = addItem, addItemListener = addItemListener, addItems = addItems, getDropDownLineCount = getDropDownLineCount, getItem = getItem, getItemCount = getItemCount, getItems = getItems, queryInterface = queryInterface, release = release, removeActionListener = removeActionListener, removeItemListener = removeItemListener, removeItems = removeItems, setDropDownLineCount = setDropDownLineCount)
+    val __obj = js.Dynamic.literal(DropDownLineCount = DropDownLineCount, ItemCount = ItemCount, Items = Items, acquire = js.Any.fromFunction0(acquire), addActionListener = js.Any.fromFunction1(addActionListener), addItem = js.Any.fromFunction2(addItem), addItemListener = js.Any.fromFunction1(addItemListener), addItems = js.Any.fromFunction2(addItems), getDropDownLineCount = js.Any.fromFunction0(getDropDownLineCount), getItem = js.Any.fromFunction1(getItem), getItemCount = js.Any.fromFunction0(getItemCount), getItems = js.Any.fromFunction0(getItems), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeActionListener = js.Any.fromFunction1(removeActionListener), removeItemListener = js.Any.fromFunction1(removeItemListener), removeItems = js.Any.fromFunction2(removeItems), setDropDownLineCount = js.Any.fromFunction1(setDropDownLineCount))
   
     __obj.asInstanceOf[XComboBox]
   }

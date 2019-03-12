@@ -54,13 +54,13 @@ object PrintTemplateLayoutOptions {
     constructor: js.Function,
     copyrightText: java.lang.String,
     customTextElements: js.Array[_],
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     legendLayers: js.Array[LegendLayer],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     titleText: java.lang.String,
     scalebarUnit: java.lang.String = null
   ): PrintTemplateLayoutOptions = {
-    val __obj = js.Dynamic.literal(authorText = authorText, constructor = constructor, copyrightText = copyrightText, customTextElements = customTextElements, hasOwnProperty = hasOwnProperty, legendLayers = legendLayers, propertyIsEnumerable = propertyIsEnumerable, titleText = titleText)
+    val __obj = js.Dynamic.literal(authorText = authorText, constructor = constructor, copyrightText = copyrightText, customTextElements = customTextElements, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), legendLayers = legendLayers, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), titleText = titleText)
     if (scalebarUnit != null) __obj.updateDynamic("scalebarUnit")(scalebarUnit)
     __obj.asInstanceOf[PrintTemplateLayoutOptions]
   }

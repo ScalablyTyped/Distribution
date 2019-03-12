@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(url: java.lang.String): jsonpLib.CancelFn = js.native
   def apply(url: java.lang.String, callback: jsonpLib.RequestCallback): jsonpLib.CancelFn = js.native
-  def apply(url: java.lang.String, options: jsonpLib.jsonpMod.Options): jsonpLib.CancelFn = js.native
-  def apply(url: java.lang.String, options: jsonpLib.jsonpMod.Options, cb: jsonpLib.RequestCallback): jsonpLib.CancelFn = js.native
+  def apply(url: java.lang.String, options: Options): jsonpLib.CancelFn = js.native
+  def apply(url: java.lang.String, options: Options, cb: jsonpLib.RequestCallback): jsonpLib.CancelFn = js.native
 }
 

@@ -378,10 +378,10 @@ trait State extends js.Object {
   ): State = js.native
   def tile(filename: java.lang.String): State = js.native
   def title(title: java.lang.String): State = js.native
-  def toBuffer(callback: js.Function2[/* err */ nodeLib.Error, /* buffer */ nodeLib.Buffer, _]): nodeLib.streamMod.PassThrough = js.native
+  def toBuffer(callback: js.Function2[/* err */ stdLib.Error, /* buffer */ nodeLib.Buffer, _]): nodeLib.streamMod.PassThrough = js.native
   def toBuffer(
     format: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* buffer */ nodeLib.Buffer, _]
+    callback: js.Function2[/* err */ stdLib.Error, /* buffer */ nodeLib.Buffer, _]
   ): nodeLib.streamMod.PassThrough = js.native
   def transform(color: java.lang.String): State = js.native
   def transparent(color: java.lang.String): State = js.native

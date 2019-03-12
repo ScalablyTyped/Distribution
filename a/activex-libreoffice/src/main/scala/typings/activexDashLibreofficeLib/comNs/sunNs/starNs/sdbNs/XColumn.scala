@@ -48,7 +48,7 @@ trait XColumn
     * @returns the column value; if the value is SQL NULL, the result is empty.
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val Bytes: activexDashInteropLib.SafeArray[scala.Double]
+  val Bytes: stdLib.SafeArray[scala.Double]
   /**
     * gets the value of a column in the current row as a stream of uninterpreted bytes. The value can then be read in chunks from the stream. This method is
     * particularly suitable for retrieving large LONGVARCHAR values.
@@ -166,7 +166,7 @@ trait XColumn
     * @returns the column value; if the value is SQL NULL, the result is empty.
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getBytes(): activexDashInteropLib.SafeArray[scala.Double]
+  def getBytes(): stdLib.SafeArray[scala.Double]
   /**
     * gets the value of a column in the current row as a stream of uninterpreted bytes. The value can then be read in chunks from the stream. This method is
     * particularly suitable for retrieving large LONGVARCHAR values.
@@ -268,7 +268,7 @@ object XColumn {
     Blob: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XBlob,
     Boolean: scala.Boolean,
     Byte: scala.Double,
-    Bytes: activexDashInteropLib.SafeArray[scala.Double],
+    Bytes: stdLib.SafeArray[scala.Double],
     CharacterStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
     Clob: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XClob,
     Date: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date,
@@ -281,31 +281,31 @@ object XColumn {
     String: java.lang.String,
     Time: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
     Timestamp: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime,
-    acquire: js.Function0[scala.Unit],
-    getArray: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XArray],
-    getBinaryStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
-    getBlob: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XBlob],
-    getBoolean: js.Function0[scala.Boolean],
-    getByte: js.Function0[scala.Double],
-    getBytes: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    getCharacterStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
-    getClob: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XClob],
-    getDate: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date],
-    getDouble: js.Function0[scala.Double],
-    getFloat: js.Function0[scala.Double],
-    getInt: js.Function0[scala.Double],
-    getLong: js.Function0[scala.Double],
-    getObject: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess, js.Any],
-    getRef: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRef],
-    getShort: js.Function0[scala.Double],
-    getString: js.Function0[java.lang.String],
-    getTime: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time],
-    getTimestamp: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    wasNull: js.Function0[scala.Boolean]
+    acquire: () => scala.Unit,
+    getArray: () => activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XArray,
+    getBinaryStream: () => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    getBlob: () => activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XBlob,
+    getBoolean: () => scala.Boolean,
+    getByte: () => scala.Double,
+    getBytes: () => stdLib.SafeArray[scala.Double],
+    getCharacterStream: () => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    getClob: () => activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XClob,
+    getDate: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date,
+    getDouble: () => scala.Double,
+    getFloat: () => scala.Double,
+    getInt: () => scala.Double,
+    getLong: () => scala.Double,
+    getObject: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess => js.Any,
+    getRef: () => activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRef,
+    getShort: () => scala.Double,
+    getString: () => java.lang.String,
+    getTime: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
+    getTimestamp: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    wasNull: () => scala.Boolean
   ): XColumn = {
-    val __obj = js.Dynamic.literal(Array = Array, BinaryStream = BinaryStream, Blob = Blob, Boolean = Boolean, Byte = Byte, Bytes = Bytes, CharacterStream = CharacterStream, Clob = Clob, Date = Date, Double = Double, Float = Float, Int = Int, Long = Long, Ref = Ref, Short = Short, String = String, Time = Time, Timestamp = Timestamp, acquire = acquire, getArray = getArray, getBinaryStream = getBinaryStream, getBlob = getBlob, getBoolean = getBoolean, getByte = getByte, getBytes = getBytes, getCharacterStream = getCharacterStream, getClob = getClob, getDate = getDate, getDouble = getDouble, getFloat = getFloat, getInt = getInt, getLong = getLong, getObject = getObject, getRef = getRef, getShort = getShort, getString = getString, getTime = getTime, getTimestamp = getTimestamp, queryInterface = queryInterface, release = release, wasNull = wasNull)
+    val __obj = js.Dynamic.literal(Array = Array, BinaryStream = BinaryStream, Blob = Blob, Boolean = Boolean, Byte = Byte, Bytes = Bytes, CharacterStream = CharacterStream, Clob = Clob, Date = Date, Double = Double, Float = Float, Int = Int, Long = Long, Ref = Ref, Short = Short, String = String, Time = Time, Timestamp = Timestamp, acquire = js.Any.fromFunction0(acquire), getArray = js.Any.fromFunction0(getArray), getBinaryStream = js.Any.fromFunction0(getBinaryStream), getBlob = js.Any.fromFunction0(getBlob), getBoolean = js.Any.fromFunction0(getBoolean), getByte = js.Any.fromFunction0(getByte), getBytes = js.Any.fromFunction0(getBytes), getCharacterStream = js.Any.fromFunction0(getCharacterStream), getClob = js.Any.fromFunction0(getClob), getDate = js.Any.fromFunction0(getDate), getDouble = js.Any.fromFunction0(getDouble), getFloat = js.Any.fromFunction0(getFloat), getInt = js.Any.fromFunction0(getInt), getLong = js.Any.fromFunction0(getLong), getObject = js.Any.fromFunction1(getObject), getRef = js.Any.fromFunction0(getRef), getShort = js.Any.fromFunction0(getShort), getString = js.Any.fromFunction0(getString), getTime = js.Any.fromFunction0(getTime), getTimestamp = js.Any.fromFunction0(getTimestamp), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), wasNull = js.Any.fromFunction0(wasNull))
   
     __obj.asInstanceOf[XColumn]
   }

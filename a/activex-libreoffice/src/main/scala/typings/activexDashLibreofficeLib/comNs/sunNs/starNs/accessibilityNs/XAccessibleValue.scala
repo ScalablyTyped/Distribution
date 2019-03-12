@@ -74,15 +74,15 @@ object XAccessibleValue {
     CurrentValue: js.Any,
     MaximumValue: js.Any,
     MinimumValue: js.Any,
-    acquire: js.Function0[scala.Unit],
-    getCurrentValue: js.Function0[js.Any],
-    getMaximumValue: js.Function0[js.Any],
-    getMinimumValue: js.Function0[js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setCurrentValue: js.Function1[js.Any, scala.Boolean]
+    acquire: () => scala.Unit,
+    getCurrentValue: () => js.Any,
+    getMaximumValue: () => js.Any,
+    getMinimumValue: () => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setCurrentValue: js.Any => scala.Boolean
   ): XAccessibleValue = {
-    val __obj = js.Dynamic.literal(CurrentValue = CurrentValue, MaximumValue = MaximumValue, MinimumValue = MinimumValue, acquire = acquire, getCurrentValue = getCurrentValue, getMaximumValue = getMaximumValue, getMinimumValue = getMinimumValue, queryInterface = queryInterface, release = release, setCurrentValue = setCurrentValue)
+    val __obj = js.Dynamic.literal(CurrentValue = CurrentValue, MaximumValue = MaximumValue, MinimumValue = MinimumValue, acquire = js.Any.fromFunction0(acquire), getCurrentValue = js.Any.fromFunction0(getCurrentValue), getMaximumValue = js.Any.fromFunction0(getMaximumValue), getMinimumValue = js.Any.fromFunction0(getMinimumValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setCurrentValue = js.Any.fromFunction1(setCurrentValue))
   
     __obj.asInstanceOf[XAccessibleValue]
   }

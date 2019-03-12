@@ -23,7 +23,7 @@ class Global protected () extends js.Object {
   ] = js.native
   var Predicate: angularDashOdataDashResourcesLib.Anon_And = js.native
   var Property: org.scalablytyped.runtime.Instantiable1[/* value */ java.lang.String, Property] = js.native
-  var Provider: Provider[_] = js.native
+  var Provider: angularDashOdataDashResourcesLib.ODataNs.Provider[_] = js.native
   var Value: org.scalablytyped.runtime.Instantiable2[/* value */ js.Any, /* type */ js.UndefOr[/* type */ java.lang.String], Value] = js.native
 }
 

@@ -35,22 +35,22 @@ object IPolarChart {
   def apply(
     IAbstractChart: IAbstractChart = null,
     center: senchaUnderscoreTouchLib.ExtNs.Array = null,
-    getCenter: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getRadius: js.Function0[scala.Double] = null,
+    getCenter: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getRadius: () => scala.Double = null,
     radius: scala.Int | scala.Double = null,
-    redraw: js.Function0[scala.Unit] = null,
-    setCenter: js.Function1[/* center */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
-    setRadius: js.Function1[/* radius */ js.UndefOr[scala.Double], scala.Unit] = null
+    redraw: () => scala.Unit = null,
+    setCenter: /* center */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
+    setRadius: /* radius */ js.UndefOr[scala.Double] => scala.Unit = null
   ): IPolarChart = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IAbstractChart)
     if (center != null) __obj.updateDynamic("center")(center)
-    if (getCenter != null) __obj.updateDynamic("getCenter")(getCenter)
-    if (getRadius != null) __obj.updateDynamic("getRadius")(getRadius)
+    if (getCenter != null) __obj.updateDynamic("getCenter")(js.Any.fromFunction0(getCenter))
+    if (getRadius != null) __obj.updateDynamic("getRadius")(js.Any.fromFunction0(getRadius))
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (redraw != null) __obj.updateDynamic("redraw")(redraw)
-    if (setCenter != null) __obj.updateDynamic("setCenter")(setCenter)
-    if (setRadius != null) __obj.updateDynamic("setRadius")(setRadius)
+    if (redraw != null) __obj.updateDynamic("redraw")(js.Any.fromFunction0(redraw))
+    if (setCenter != null) __obj.updateDynamic("setCenter")(js.Any.fromFunction1(setCenter))
+    if (setRadius != null) __obj.updateDynamic("setRadius")(js.Any.fromFunction1(setRadius))
     __obj.asInstanceOf[IPolarChart]
   }
 }

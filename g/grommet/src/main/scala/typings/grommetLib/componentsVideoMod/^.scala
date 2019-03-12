@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Video: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsVideoMod.VideoProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    VideoProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
       reactLib.HTMLVideoElement
     ]), 

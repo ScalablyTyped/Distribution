@@ -12,7 +12,7 @@ object ^ extends js.Object {
   def del(path: java.lang.String): js.Any = js.native
   def get(path: java.lang.String): js.Any = js.native
   def headersToString(headers: js.Any): java.lang.String = js.native
-  def parseHttpResponse(httpResponse: seleniumDashWebdriverLib.httpMod.Response, w3c: scala.Boolean): js.Any = js.native
+  def parseHttpResponse(httpResponse: Response, w3c: scala.Boolean): js.Any = js.native
   def post(path: java.lang.String): js.Any = js.native
   def resource(method: java.lang.String, path: java.lang.String): js.Any = js.native
   def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any): js.Any = js.native

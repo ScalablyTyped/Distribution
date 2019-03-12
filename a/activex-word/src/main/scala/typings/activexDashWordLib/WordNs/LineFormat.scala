@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.LineFormat")
 @js.native
 class LineFormat protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val BackColor: ColorFormat = js.native
   var BeginArrowheadLength: activexDashOfficeLib.OfficeNs.MsoArrowheadLength = js.native
   var BeginArrowheadStyle: activexDashOfficeLib.OfficeNs.MsoArrowheadStyle = js.native

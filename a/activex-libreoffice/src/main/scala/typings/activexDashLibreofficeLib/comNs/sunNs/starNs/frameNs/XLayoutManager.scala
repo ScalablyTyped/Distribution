@@ -36,7 +36,7 @@ trait XLayoutManager
     * retrieves all user interface elements which are currently instantiated.
     * @returns a sequence of user interface elements providing {@link com.sun.star.ui.XUIElement} interface.  The layout manager instance is owner of the return
     */
-  val Elements: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XUIElement]
+  val Elements: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XUIElement]
   /**
     * attaches a {@link com.sun.star.frame.XFrame} to a layout manager.
     * @param Frame specifies the frame that should be attached to the layout manager  A layout manager needs a {@link com.sun.star.frame.XFrame} to be able to
@@ -111,7 +111,7 @@ trait XLayoutManager
     * retrieves all user interface elements which are currently instantiated.
     * @returns a sequence of user interface elements providing {@link com.sun.star.ui.XUIElement} interface.  The layout manager instance is owner of the return
     */
-  def getElements(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XUIElement]
+  def getElements(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XUIElement]
   /**
     * hides a user interface element.
     * @param ResourceURL specifies which user interface element should be hidden. A resource URL must meet the following syntax: "private:resource/$type/$name
@@ -237,63 +237,43 @@ object XLayoutManager {
   def apply(
     CurrentDockingArea: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
     DockingAreaAcceptor: activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XDockingAreaAcceptor,
-    Elements: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XUIElement],
-    acquire: js.Function0[scala.Unit],
-    attachFrame: js.Function1[XFrame, scala.Unit],
-    createElement: js.Function1[java.lang.String, scala.Unit],
-    destroyElement: js.Function1[java.lang.String, scala.Unit],
-    doLayout: js.Function0[scala.Unit],
-    dockAllWindows: js.Function1[scala.Double, scala.Boolean],
-    dockWindow: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.DockingArea, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, 
-      scala.Boolean
-    ],
-    floatWindow: js.Function1[java.lang.String, scala.Boolean],
-    getCurrentDockingArea: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
-    getDockingAreaAcceptor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XDockingAreaAcceptor],
-    getElement: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XUIElement],
-    getElementPos: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point],
-    getElementSize: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
-    getElements: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XUIElement]
-    ],
-    hideElement: js.Function1[java.lang.String, scala.Boolean],
-    isElementDocked: js.Function1[java.lang.String, scala.Boolean],
-    isElementFloating: js.Function1[java.lang.String, scala.Boolean],
-    isElementLocked: js.Function1[java.lang.String, scala.Boolean],
-    isElementVisible: js.Function1[java.lang.String, scala.Boolean],
-    isVisible: js.Function0[scala.Boolean],
-    lock: js.Function0[scala.Unit],
-    lockWindow: js.Function1[java.lang.String, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    requestElement: js.Function1[java.lang.String, scala.Boolean],
-    reset: js.Function0[scala.Unit],
-    setDockingAreaAcceptor: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XDockingAreaAcceptor, scala.Unit],
-    setElementPos: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, 
-      scala.Unit
-    ],
-    setElementPosSize: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, 
-      scala.Unit
-    ],
-    setElementSize: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, 
-      scala.Unit
-    ],
-    setVisible: js.Function1[scala.Boolean, scala.Unit],
-    showElement: js.Function1[java.lang.String, scala.Boolean],
-    unlock: js.Function0[scala.Unit],
-    unlockWindow: js.Function1[java.lang.String, scala.Boolean]
+    Elements: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XUIElement],
+    acquire: () => scala.Unit,
+    attachFrame: XFrame => scala.Unit,
+    createElement: java.lang.String => scala.Unit,
+    destroyElement: java.lang.String => scala.Unit,
+    doLayout: () => scala.Unit,
+    dockAllWindows: scala.Double => scala.Boolean,
+    dockWindow: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.DockingArea, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point) => scala.Boolean,
+    floatWindow: java.lang.String => scala.Boolean,
+    getCurrentDockingArea: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    getDockingAreaAcceptor: () => activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XDockingAreaAcceptor,
+    getElement: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XUIElement,
+    getElementPos: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    getElementSize: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    getElements: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XUIElement],
+    hideElement: java.lang.String => scala.Boolean,
+    isElementDocked: java.lang.String => scala.Boolean,
+    isElementFloating: java.lang.String => scala.Boolean,
+    isElementLocked: java.lang.String => scala.Boolean,
+    isElementVisible: java.lang.String => scala.Boolean,
+    isVisible: () => scala.Boolean,
+    lock: () => scala.Unit,
+    lockWindow: java.lang.String => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    requestElement: java.lang.String => scala.Boolean,
+    reset: () => scala.Unit,
+    setDockingAreaAcceptor: activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XDockingAreaAcceptor => scala.Unit,
+    setElementPos: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point) => scala.Unit,
+    setElementPosSize: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size) => scala.Unit,
+    setElementSize: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size) => scala.Unit,
+    setVisible: scala.Boolean => scala.Unit,
+    showElement: java.lang.String => scala.Boolean,
+    unlock: () => scala.Unit,
+    unlockWindow: java.lang.String => scala.Boolean
   ): XLayoutManager = {
-    val __obj = js.Dynamic.literal(CurrentDockingArea = CurrentDockingArea, DockingAreaAcceptor = DockingAreaAcceptor, Elements = Elements, acquire = acquire, attachFrame = attachFrame, createElement = createElement, destroyElement = destroyElement, doLayout = doLayout, dockAllWindows = dockAllWindows, dockWindow = dockWindow, floatWindow = floatWindow, getCurrentDockingArea = getCurrentDockingArea, getDockingAreaAcceptor = getDockingAreaAcceptor, getElement = getElement, getElementPos = getElementPos, getElementSize = getElementSize, getElements = getElements, hideElement = hideElement, isElementDocked = isElementDocked, isElementFloating = isElementFloating, isElementLocked = isElementLocked, isElementVisible = isElementVisible, isVisible = isVisible, lock = lock, lockWindow = lockWindow, queryInterface = queryInterface, release = release, requestElement = requestElement, reset = reset, setDockingAreaAcceptor = setDockingAreaAcceptor, setElementPos = setElementPos, setElementPosSize = setElementPosSize, setElementSize = setElementSize, setVisible = setVisible, showElement = showElement, unlock = unlock, unlockWindow = unlockWindow)
+    val __obj = js.Dynamic.literal(CurrentDockingArea = CurrentDockingArea, DockingAreaAcceptor = DockingAreaAcceptor, Elements = Elements, acquire = js.Any.fromFunction0(acquire), attachFrame = js.Any.fromFunction1(attachFrame), createElement = js.Any.fromFunction1(createElement), destroyElement = js.Any.fromFunction1(destroyElement), doLayout = js.Any.fromFunction0(doLayout), dockAllWindows = js.Any.fromFunction1(dockAllWindows), dockWindow = js.Any.fromFunction3(dockWindow), floatWindow = js.Any.fromFunction1(floatWindow), getCurrentDockingArea = js.Any.fromFunction0(getCurrentDockingArea), getDockingAreaAcceptor = js.Any.fromFunction0(getDockingAreaAcceptor), getElement = js.Any.fromFunction1(getElement), getElementPos = js.Any.fromFunction1(getElementPos), getElementSize = js.Any.fromFunction1(getElementSize), getElements = js.Any.fromFunction0(getElements), hideElement = js.Any.fromFunction1(hideElement), isElementDocked = js.Any.fromFunction1(isElementDocked), isElementFloating = js.Any.fromFunction1(isElementFloating), isElementLocked = js.Any.fromFunction1(isElementLocked), isElementVisible = js.Any.fromFunction1(isElementVisible), isVisible = js.Any.fromFunction0(isVisible), lock = js.Any.fromFunction0(lock), lockWindow = js.Any.fromFunction1(lockWindow), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), requestElement = js.Any.fromFunction1(requestElement), reset = js.Any.fromFunction0(reset), setDockingAreaAcceptor = js.Any.fromFunction1(setDockingAreaAcceptor), setElementPos = js.Any.fromFunction2(setElementPos), setElementPosSize = js.Any.fromFunction3(setElementPosSize), setElementSize = js.Any.fromFunction2(setElementSize), setVisible = js.Any.fromFunction1(setVisible), showElement = js.Any.fromFunction1(showElement), unlock = js.Any.fromFunction0(unlock), unlockWindow = js.Any.fromFunction1(unlockWindow))
   
     __obj.asInstanceOf[XLayoutManager]
   }

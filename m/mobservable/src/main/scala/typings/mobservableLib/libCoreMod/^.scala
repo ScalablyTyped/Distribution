@@ -37,22 +37,22 @@ object ^ extends js.Object {
   def extendObservableHelper(
     target: js.Any,
     properties: js.Any,
-    mode: mobservableLib.libCoreMod.ValueMode,
+    mode: ValueMode,
     context: mobservableLib.libInterfacesMod.IContextInfoStruct
   ): js.Object = js.native
   def fastArray[V](): mobservableLib.libInterfacesMod.IObservableArray[V] = js.native
   def fastArray[V](initialValues: js.Array[V]): mobservableLib.libInterfacesMod.IObservableArray[V] = js.native
   def getStrict(): scala.Boolean = js.native
-  def getTypeOfValue(value: js.Any): mobservableLib.libCoreMod.ValueType = js.native
-  def getValueModeFromModifierFunc(): mobservableLib.libCoreMod.ValueMode = js.native
-  def getValueModeFromModifierFunc(func: js.Function): mobservableLib.libCoreMod.ValueMode = js.native
-  def getValueModeFromValue(value: js.Any, defaultMode: mobservableLib.libCoreMod.ValueMode): js.Tuple2[mobservableLib.libCoreMod.ValueMode, _] = js.native
+  def getTypeOfValue(value: js.Any): ValueType = js.native
+  def getValueModeFromModifierFunc(): ValueMode = js.native
+  def getValueModeFromModifierFunc(func: js.Function): ValueMode = js.native
+  def getValueModeFromValue(value: js.Any, defaultMode: ValueMode): js.Tuple2[ValueMode, _] = js.native
   def isObservable(value: js.Any): scala.Boolean = js.native
   def isObservable(value: js.Any, property: java.lang.String): scala.Boolean = js.native
   def isObservableArray(thing: js.Any): scala.Boolean = js.native
   def isObservableMap(thing: js.Any): scala.Boolean = js.native
   def isObservableObject(thing: js.Any): scala.Boolean = js.native
-  def makeChildObservable(value: js.Any, parentMode: mobservableLib.libCoreMod.ValueMode, context: js.Any): js.Any = js.native
+  def makeChildObservable(value: js.Any, parentMode: ValueMode, context: js.Any): js.Any = js.native
   def map[V](): mobservableLib.libObservablemapMod.ObservableMap[V] = js.native
   def map[V](initialValues: mobservableLib.libObservablemapMod.KeyValueMap[V]): mobservableLib.libObservablemapMod.ObservableMap[V] = js.native
   def map[V](initialValues: mobservableLib.libObservablemapMod.KeyValueMap[V], valueModifier: js.Function): mobservableLib.libObservablemapMod.ObservableMap[V] = js.native

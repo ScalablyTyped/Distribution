@@ -27,7 +27,7 @@ object IImportContentJob {
   @scala.inline
   def apply(
     ActivateAutomaticPermissionsForNewOrChangedDefinitions: scala.Boolean,
-    Clone: js.Function0[IImportContentJob],
+    Clone: () => IImportContentJob,
     DisableImportedExternalObjectTypeConnections: scala.Boolean,
     DisableImportedExternalUserGroups: scala.Boolean,
     DisableImportedVaultEventHandlers: scala.Boolean,
@@ -42,7 +42,7 @@ object IImportContentJob {
     UseNamesAsAliases: scala.Boolean,
     UsePermissions: scala.Boolean
   ): IImportContentJob = {
-    val __obj = js.Dynamic.literal(ActivateAutomaticPermissionsForNewOrChangedDefinitions = ActivateAutomaticPermissionsForNewOrChangedDefinitions, Clone = Clone, DisableImportedExternalObjectTypeConnections = DisableImportedExternalObjectTypeConnections, DisableImportedExternalUserGroups = DisableImportedExternalUserGroups, DisableImportedVaultEventHandlers = DisableImportedVaultEventHandlers, Flags = Flags, IgnoreAutomaticPermissionsDefinedByObjects = IgnoreAutomaticPermissionsDefinedByObjects, Impersonation = Impersonation, MetadataStructureSelectors = MetadataStructureSelectors, Permissions = Permissions, ResetExportTimestamps = ResetExportTimestamps, SourceLocation = SourceLocation, UseDefaultObjectTypePermissions = UseDefaultObjectTypePermissions, UseNamesAsAliases = UseNamesAsAliases, UsePermissions = UsePermissions)
+    val __obj = js.Dynamic.literal(ActivateAutomaticPermissionsForNewOrChangedDefinitions = ActivateAutomaticPermissionsForNewOrChangedDefinitions, Clone = js.Any.fromFunction0(Clone), DisableImportedExternalObjectTypeConnections = DisableImportedExternalObjectTypeConnections, DisableImportedExternalUserGroups = DisableImportedExternalUserGroups, DisableImportedVaultEventHandlers = DisableImportedVaultEventHandlers, Flags = Flags, IgnoreAutomaticPermissionsDefinedByObjects = IgnoreAutomaticPermissionsDefinedByObjects, Impersonation = Impersonation, MetadataStructureSelectors = MetadataStructureSelectors, Permissions = Permissions, ResetExportTimestamps = ResetExportTimestamps, SourceLocation = SourceLocation, UseDefaultObjectTypePermissions = UseDefaultObjectTypePermissions, UseNamesAsAliases = UseNamesAsAliases, UsePermissions = UsePermissions)
   
     __obj.asInstanceOf[IImportContentJob]
   }

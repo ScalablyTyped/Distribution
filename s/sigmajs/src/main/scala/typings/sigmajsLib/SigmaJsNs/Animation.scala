@@ -16,14 +16,9 @@ trait Animation extends js.Object {
 object Animation {
   @scala.inline
   def apply(
-    camera: js.Function3[
-      Camera, 
-      org.scalablytyped.runtime.StringDictionary[js.Any], 
-      org.scalablytyped.runtime.StringDictionary[js.Any], 
-      scala.Double
-    ]
+    camera: (Camera, org.scalablytyped.runtime.StringDictionary[js.Any], org.scalablytyped.runtime.StringDictionary[js.Any]) => scala.Double
   ): Animation = {
-    val __obj = js.Dynamic.literal(camera = camera)
+    val __obj = js.Dynamic.literal(camera = js.Any.fromFunction3(camera))
   
     __obj.asInstanceOf[Animation]
   }

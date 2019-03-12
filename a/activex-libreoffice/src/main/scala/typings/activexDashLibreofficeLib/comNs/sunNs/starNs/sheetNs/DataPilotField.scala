@@ -77,7 +77,7 @@ trait DataPilotField
     * The order of the functions in this sequence is reflected in the DataPilot table. Multiple entries of the same function are ignored when setting the
     * property.
     */
-  var Subtotals: activexDashInteropLib.SafeArray[GeneralFunction]
+  var Subtotals: stdLib.SafeArray[GeneralFunction]
   /**
     * specifies the functions used to calculate subtotals for this field.
     *
@@ -91,7 +91,7 @@ trait DataPilotField
     * property.
     * @since LibreOffice 5.3
     */
-  var Subtotals2: activexDashInteropLib.SafeArray[scala.Double]
+  var Subtotals2: stdLib.SafeArray[scala.Double]
   /** specifies whether to use the selected page to filter the data pilot or show all. */
   var UseSelectedPage: scala.Boolean
   /**
@@ -122,46 +122,27 @@ object DataPilotField {
     SelectedPage: java.lang.String,
     ShowEmpty: scala.Boolean,
     SortInfo: DataPilotFieldSortInfo,
-    Subtotals: activexDashInteropLib.SafeArray[GeneralFunction],
-    Subtotals2: activexDashInteropLib.SafeArray[scala.Double],
+    Subtotals: stdLib.SafeArray[GeneralFunction],
+    Subtotals2: stdLib.SafeArray[scala.Double],
     UseSelectedPage: scala.Boolean,
     UsedHierarchy: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    addPropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    addVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    createDateGroup: js.Function1[DataPilotFieldGroupInfo, XDataPilotField],
-    createNameGroup: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      XDataPilotField
-    ],
-    getItems: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
-    getName: js.Function0[java.lang.String],
-    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
-    getPropertyValue: js.Function1[java.lang.String, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removePropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    removeVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    setName: js.Function1[java.lang.String, scala.Unit],
-    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    addPropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    addVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    createDateGroup: DataPilotFieldGroupInfo => XDataPilotField,
+    createNameGroup: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => XDataPilotField,
+    getItems: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    getName: () => java.lang.String,
+    getPropertySetInfo: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    getPropertyValue: java.lang.String => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removePropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    removeVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    setName: java.lang.String => scala.Unit,
+    setPropertyValue: (java.lang.String, js.Any) => scala.Unit
   ): DataPilotField = {
-    val __obj = js.Dynamic.literal(AutoShowInfo = AutoShowInfo, Function = Function, Function2 = Function2, GroupInfo = GroupInfo, HasAutoShowInfo = HasAutoShowInfo, HasLayoutInfo = HasLayoutInfo, HasReference = HasReference, HasSortInfo = HasSortInfo, IsGroupField = IsGroupField, Items = Items, LayoutInfo = LayoutInfo, Name = Name, Orientation = Orientation, PropertySetInfo = PropertySetInfo, Reference = Reference, SelectedPage = SelectedPage, ShowEmpty = ShowEmpty, SortInfo = SortInfo, Subtotals = Subtotals, Subtotals2 = Subtotals2, UseSelectedPage = UseSelectedPage, UsedHierarchy = UsedHierarchy, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, createDateGroup = createDateGroup, createNameGroup = createNameGroup, getItems = getItems, getName = getName, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setName = setName, setPropertyValue = setPropertyValue)
+    val __obj = js.Dynamic.literal(AutoShowInfo = AutoShowInfo, Function = Function, Function2 = Function2, GroupInfo = GroupInfo, HasAutoShowInfo = HasAutoShowInfo, HasLayoutInfo = HasLayoutInfo, HasReference = HasReference, HasSortInfo = HasSortInfo, IsGroupField = IsGroupField, Items = Items, LayoutInfo = LayoutInfo, Name = Name, Orientation = Orientation, PropertySetInfo = PropertySetInfo, Reference = Reference, SelectedPage = SelectedPage, ShowEmpty = ShowEmpty, SortInfo = SortInfo, Subtotals = Subtotals, Subtotals2 = Subtotals2, UseSelectedPage = UseSelectedPage, UsedHierarchy = UsedHierarchy, acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createDateGroup = js.Any.fromFunction1(createDateGroup), createNameGroup = js.Any.fromFunction1(createNameGroup), getItems = js.Any.fromFunction0(getItems), getName = js.Any.fromFunction0(getName), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setName = js.Any.fromFunction1(setName), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
   
     __obj.asInstanceOf[DataPilotField]
   }

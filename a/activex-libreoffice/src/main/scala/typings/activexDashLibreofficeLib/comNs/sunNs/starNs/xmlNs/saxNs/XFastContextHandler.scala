@@ -54,18 +54,18 @@ trait XFastContextHandler
 object XFastContextHandler {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    characters: js.Function1[java.lang.String, scala.Unit],
-    createFastChildContext: js.Function2[scala.Double, XFastAttributeList, XFastContextHandler],
-    createUnknownChildContext: js.Function3[java.lang.String, java.lang.String, XFastAttributeList, XFastContextHandler],
-    endFastElement: js.Function1[scala.Double, scala.Unit],
-    endUnknownElement: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    startFastElement: js.Function2[scala.Double, XFastAttributeList, scala.Unit],
-    startUnknownElement: js.Function3[java.lang.String, java.lang.String, XFastAttributeList, scala.Unit]
+    acquire: () => scala.Unit,
+    characters: java.lang.String => scala.Unit,
+    createFastChildContext: (scala.Double, XFastAttributeList) => XFastContextHandler,
+    createUnknownChildContext: (java.lang.String, java.lang.String, XFastAttributeList) => XFastContextHandler,
+    endFastElement: scala.Double => scala.Unit,
+    endUnknownElement: (java.lang.String, java.lang.String) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    startFastElement: (scala.Double, XFastAttributeList) => scala.Unit,
+    startUnknownElement: (java.lang.String, java.lang.String, XFastAttributeList) => scala.Unit
   ): XFastContextHandler = {
-    val __obj = js.Dynamic.literal(acquire = acquire, characters = characters, createFastChildContext = createFastChildContext, createUnknownChildContext = createUnknownChildContext, endFastElement = endFastElement, endUnknownElement = endUnknownElement, queryInterface = queryInterface, release = release, startFastElement = startFastElement, startUnknownElement = startUnknownElement)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), characters = js.Any.fromFunction1(characters), createFastChildContext = js.Any.fromFunction2(createFastChildContext), createUnknownChildContext = js.Any.fromFunction3(createUnknownChildContext), endFastElement = js.Any.fromFunction1(endFastElement), endUnknownElement = js.Any.fromFunction2(endUnknownElement), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), startFastElement = js.Any.fromFunction2(startFastElement), startUnknownElement = js.Any.fromFunction3(startUnknownElement))
   
     __obj.asInstanceOf[XFastContextHandler]
   }

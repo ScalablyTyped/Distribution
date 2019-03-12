@@ -13,13 +13,13 @@ trait BackButtonClickEvent extends BackButtonEvent {
 object BackButtonClickEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: BackButton,
     button: kendoDashUiLib.JQuery = null,
     target: kendoDashUiLib.JQuery = null
   ): BackButtonClickEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (button != null) __obj.updateDynamic("button")(button)
     if (target != null) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[BackButtonClickEvent]

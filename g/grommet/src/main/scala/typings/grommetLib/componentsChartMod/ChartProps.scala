@@ -42,8 +42,8 @@ object ChartProps {
     color: java.lang.String | grommetLib.Anon_ColorMedium = null,
     gridArea: java.lang.String = null,
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null,
-    onClick: js.Function1[/* repeated */ js.Any, _] = null,
-    onHover: js.Function1[/* repeated */ js.Any, _] = null,
+    onClick: /* repeated */ js.Any => _ = null,
+    onHover: /* repeated */ js.Any => _ = null,
     overflow: js.UndefOr[scala.Boolean] = js.undefined,
     round: js.UndefOr[scala.Boolean] = js.undefined,
     size: grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.full | grommetLib.Anon_Full | java.lang.String = null,
@@ -57,8 +57,8 @@ object ChartProps {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onHover != null) __obj.updateDynamic("onHover")(onHover)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction1(onHover))
     if (!js.isUndefined(overflow)) __obj.updateDynamic("overflow")(overflow)
     if (!js.isUndefined(round)) __obj.updateDynamic("round")(round)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

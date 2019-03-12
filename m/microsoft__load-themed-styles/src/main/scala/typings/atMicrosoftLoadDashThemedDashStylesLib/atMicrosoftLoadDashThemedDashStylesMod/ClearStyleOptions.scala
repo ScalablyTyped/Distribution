@@ -11,14 +11,17 @@ sealed trait ClearStyleOptions extends js.Object
 @JSImport("@microsoft/load-themed-styles", "ClearStyleOptions")
 @js.native
 object ClearStyleOptions extends js.Object {
+  /** both themable and non-themable styles will be cleared */
   @js.native
   sealed trait all
     extends atMicrosoftLoadDashThemedDashStylesLib.atMicrosoftLoadDashThemedDashStylesMod.ClearStyleOptions
   
+  /** only non-themable styles will be cleared */
   @js.native
   sealed trait onlyNonThemable
     extends atMicrosoftLoadDashThemedDashStylesLib.atMicrosoftLoadDashThemedDashStylesMod.ClearStyleOptions
   
+  /** only themable styles will be cleared */
   @js.native
   sealed trait onlyThemable
     extends atMicrosoftLoadDashThemedDashStylesLib.atMicrosoftLoadDashThemedDashStylesMod.ClearStyleOptions

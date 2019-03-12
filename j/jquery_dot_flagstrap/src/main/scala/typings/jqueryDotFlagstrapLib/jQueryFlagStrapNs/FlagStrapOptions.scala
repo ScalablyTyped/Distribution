@@ -74,13 +74,13 @@ object FlagStrapOptions {
     scrollable: scala.Boolean,
     countries: js.Object = null,
     inputId: java.lang.String = null,
-    onSelect: js.Function2[/* value */ js.Any, /* element */ js.Any, scala.Unit] = null,
+    onSelect: (/* value */ js.Any, /* element */ js.Any) => scala.Unit = null,
     scrollableHeight: java.lang.String = null
   ): FlagStrapOptions = {
     val __obj = js.Dynamic.literal(buttonSize = buttonSize, buttonType = buttonType, inputName = inputName, labelMargin = labelMargin, placeholder = placeholder.asInstanceOf[js.Any], scrollable = scrollable)
     if (countries != null) __obj.updateDynamic("countries")(countries)
     if (inputId != null) __obj.updateDynamic("inputId")(inputId)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
     if (scrollableHeight != null) __obj.updateDynamic("scrollableHeight")(scrollableHeight)
     __obj.asInstanceOf[FlagStrapOptions]
   }

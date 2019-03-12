@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Forms extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   val Count: scala.Double = js.native
   val Parent: js.Any = js.native
   def apply(Index: java.lang.String): Form = js.native

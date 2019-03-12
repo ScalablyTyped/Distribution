@@ -49,7 +49,7 @@ object TextInputProps {
     expand: protonDashNativeLib.Anon_H = null,
     label: java.lang.String = null,
     multiline: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function1[/* text */ java.lang.String, scala.Unit] = null,
+    onChange: /* text */ java.lang.String => scala.Unit = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     row: scala.Int | scala.Double = null,
     secure: js.UndefOr[scala.Boolean] = js.undefined,
@@ -65,7 +65,7 @@ object TextInputProps {
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (label != null) __obj.updateDynamic("label")(label)
     if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)

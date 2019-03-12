@@ -11,10 +11,8 @@ trait IInputStreamReference extends js.Object {
 
 object IInputStreamReference {
   @scala.inline
-  def apply(
-    openSequentialReadAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[IInputStream]]
-  ): IInputStreamReference = {
-    val __obj = js.Dynamic.literal(openSequentialReadAsync = openSequentialReadAsync)
+  def apply(openSequentialReadAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[IInputStream]): IInputStreamReference = {
+    val __obj = js.Dynamic.literal(openSequentialReadAsync = js.Any.fromFunction0(openSequentialReadAsync))
   
     __obj.asInstanceOf[IInputStreamReference]
   }

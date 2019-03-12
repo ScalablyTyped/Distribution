@@ -38,32 +38,19 @@ trait Anon_BeforeScreenshot extends js.Object {
 object Anon_BeforeScreenshot {
   @scala.inline
   def apply(
-    beforeScreenshot: js.Function2[
-      /* page */ puppeteerLib.puppeteerMod.Page, 
-      /* options */ atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.ImageSnapshotOptions, 
-      js.Promise[scala.Unit]
-    ] = null,
+    beforeScreenshot: (/* page */ puppeteerLib.puppeteerMod.Page, /* options */ atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.ImageSnapshotOptions) => js.Promise[scala.Unit] = null,
     chromeExecutablePath: java.lang.String = null,
-    getGotoOptions: js.Function1[
-      /* options */ atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.ImageSnapshotOptions, 
-      puppeteerLib.puppeteerMod.NavigationOptions
-    ] = null,
-    getMatchOptions: js.Function1[
-      /* options */ atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.ImageSnapshotOptions, 
-      Anon_FailureThreshold
-    ] = null,
-    getScreenshotOptions: js.Function1[
-      /* options */ atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.ImageSnapshotOptions, 
-      puppeteerLib.puppeteerMod.ScreenshotOptions
-    ] = null,
+    getGotoOptions: /* options */ atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.ImageSnapshotOptions => puppeteerLib.puppeteerMod.NavigationOptions = null,
+    getMatchOptions: /* options */ atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.ImageSnapshotOptions => Anon_FailureThreshold = null,
+    getScreenshotOptions: /* options */ atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.ImageSnapshotOptions => puppeteerLib.puppeteerMod.ScreenshotOptions = null,
     storybookUrl: java.lang.String = null
   ): Anon_BeforeScreenshot = {
     val __obj = js.Dynamic.literal()
-    if (beforeScreenshot != null) __obj.updateDynamic("beforeScreenshot")(beforeScreenshot)
+    if (beforeScreenshot != null) __obj.updateDynamic("beforeScreenshot")(js.Any.fromFunction2(beforeScreenshot))
     if (chromeExecutablePath != null) __obj.updateDynamic("chromeExecutablePath")(chromeExecutablePath)
-    if (getGotoOptions != null) __obj.updateDynamic("getGotoOptions")(getGotoOptions)
-    if (getMatchOptions != null) __obj.updateDynamic("getMatchOptions")(getMatchOptions)
-    if (getScreenshotOptions != null) __obj.updateDynamic("getScreenshotOptions")(getScreenshotOptions)
+    if (getGotoOptions != null) __obj.updateDynamic("getGotoOptions")(js.Any.fromFunction1(getGotoOptions))
+    if (getMatchOptions != null) __obj.updateDynamic("getMatchOptions")(js.Any.fromFunction1(getMatchOptions))
+    if (getScreenshotOptions != null) __obj.updateDynamic("getScreenshotOptions")(js.Any.fromFunction1(getScreenshotOptions))
     if (storybookUrl != null) __obj.updateDynamic("storybookUrl")(storybookUrl)
     __obj.asInstanceOf[Anon_BeforeScreenshot]
   }

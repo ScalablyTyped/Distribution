@@ -12,11 +12,8 @@ trait FullScreen extends js.Object {
 
 object FullScreen {
   @scala.inline
-  def apply(
-    cancel: js.Function1[FullScreenType, scala.Unit],
-    request: js.Function1[FullScreenType, scala.Unit]
-  ): FullScreen = {
-    val __obj = js.Dynamic.literal(cancel = cancel, request = request)
+  def apply(cancel: FullScreenType => scala.Unit, request: FullScreenType => scala.Unit): FullScreen = {
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), request = js.Any.fromFunction1(request))
   
     __obj.asInstanceOf[FullScreen]
   }

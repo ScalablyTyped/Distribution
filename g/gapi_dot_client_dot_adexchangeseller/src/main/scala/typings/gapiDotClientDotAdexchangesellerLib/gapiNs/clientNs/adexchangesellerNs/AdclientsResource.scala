@@ -13,12 +13,9 @@ trait AdclientsResource extends js.Object {
 object AdclientsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotAdexchangesellerLib.Anon_AccountId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AdClients]
-    ]
+    list: gapiDotClientDotAdexchangesellerLib.Anon_AccountId => gapiDotClientLib.gapiNs.clientNs.Request[AdClients]
   ): AdclientsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[AdclientsResource]
   }

@@ -15,12 +15,12 @@ trait Anon_AddDisposeCallback extends js.Object {
 object Anon_AddDisposeCallback {
   @scala.inline
   def apply(
-    addDisposeCallback: js.Function2[stdLib.Node, js.Function, scala.Unit],
-    cleanNode: js.Function1[stdLib.Node, stdLib.Node],
-    removeDisposeCallback: js.Function2[stdLib.Node, js.Function, scala.Unit],
-    removeNode: js.Function1[stdLib.Node, scala.Unit]
+    addDisposeCallback: (stdLib.Node, js.Function) => scala.Unit,
+    cleanNode: stdLib.Node => stdLib.Node,
+    removeDisposeCallback: (stdLib.Node, js.Function) => scala.Unit,
+    removeNode: stdLib.Node => scala.Unit
   ): Anon_AddDisposeCallback = {
-    val __obj = js.Dynamic.literal(addDisposeCallback = addDisposeCallback, cleanNode = cleanNode, removeDisposeCallback = removeDisposeCallback, removeNode = removeNode)
+    val __obj = js.Dynamic.literal(addDisposeCallback = js.Any.fromFunction2(addDisposeCallback), cleanNode = js.Any.fromFunction1(cleanNode), removeDisposeCallback = js.Any.fromFunction2(removeDisposeCallback), removeNode = js.Any.fromFunction1(removeNode))
   
     __obj.asInstanceOf[Anon_AddDisposeCallback]
   }

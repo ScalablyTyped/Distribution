@@ -18,8 +18,8 @@ trait OnChanges extends js.Object {
 
 object OnChanges {
   @scala.inline
-  def apply(ngOnChanges: js.Function1[SimpleChanges, scala.Unit]): OnChanges = {
-    val __obj = js.Dynamic.literal(ngOnChanges = ngOnChanges)
+  def apply(ngOnChanges: SimpleChanges => scala.Unit): OnChanges = {
+    val __obj = js.Dynamic.literal(ngOnChanges = js.Any.fromFunction1(ngOnChanges))
   
     __obj.asInstanceOf[OnChanges]
   }

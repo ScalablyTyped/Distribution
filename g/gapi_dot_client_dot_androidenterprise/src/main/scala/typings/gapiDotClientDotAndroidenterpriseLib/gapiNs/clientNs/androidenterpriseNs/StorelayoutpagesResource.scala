@@ -23,32 +23,14 @@ trait StorelayoutpagesResource extends js.Object {
 object StorelayoutpagesResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtokenPageId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtokenPageId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StorePage]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StorePage]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StoreLayoutPagesListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtokenPageId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StorePage]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtokenPageId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[StorePage]
-    ]
+    delete: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtokenPageId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtokenPageId => gapiDotClientLib.gapiNs.clientNs.Request[StorePage],
+    insert: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields => gapiDotClientLib.gapiNs.clientNs.Request[StorePage],
+    list: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields => gapiDotClientLib.gapiNs.clientNs.Request[StoreLayoutPagesListResponse],
+    patch: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtokenPageId => gapiDotClientLib.gapiNs.clientNs.Request[StorePage],
+    update: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtokenPageId => gapiDotClientLib.gapiNs.clientNs.Request[StorePage]
   ): StorelayoutpagesResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[StorelayoutpagesResource]
   }

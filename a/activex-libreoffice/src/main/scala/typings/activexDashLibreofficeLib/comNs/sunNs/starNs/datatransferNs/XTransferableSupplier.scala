@@ -31,10 +31,10 @@ object XTransferableSupplier {
   @scala.inline
   def apply(
     Transferable: XTransferable,
-    getTransferable: js.Function0[XTransferable],
-    insertTransferable: js.Function1[XTransferable, scala.Unit]
+    getTransferable: () => XTransferable,
+    insertTransferable: XTransferable => scala.Unit
   ): XTransferableSupplier = {
-    val __obj = js.Dynamic.literal(Transferable = Transferable, getTransferable = getTransferable, insertTransferable = insertTransferable)
+    val __obj = js.Dynamic.literal(Transferable = Transferable, getTransferable = js.Any.fromFunction0(getTransferable), insertTransferable = js.Any.fromFunction1(insertTransferable))
   
     __obj.asInstanceOf[XTransferableSupplier]
   }

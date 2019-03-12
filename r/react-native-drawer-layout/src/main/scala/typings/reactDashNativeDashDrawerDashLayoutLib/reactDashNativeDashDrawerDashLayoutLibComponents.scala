@@ -1,0 +1,18 @@
+package typings
+package reactDashNativeDashDrawerDashLayoutLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashNativeDashDrawerDashLayoutLibComponents {
+  @scala.inline
+  def ReactDashNativeDashDrawerDashLayout: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashNativeDashDrawerDashLayoutLib.reactDashNativeDashDrawerDashLayoutMod.DrawerLayoutProperties
+  ] = js.constructorOf[reactDashNativeDashDrawerDashLayoutLib.reactDashNativeDashDrawerDashLayoutMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashNativeDashDrawerDashLayoutLib.reactDashNativeDashDrawerDashLayoutMod.DrawerLayoutProperties]]
+  @scala.inline
+  def DrawerLayoutProperties: reactDashNativeDashDrawerDashLayoutLib.reactDashNativeDashDrawerDashLayoutMod.DrawerLayoutProperties.type = reactDashNativeDashDrawerDashLayoutLib.reactDashNativeDashDrawerDashLayoutMod.DrawerLayoutProperties
+  type DrawerLayoutProperties = reactDashNativeDashDrawerDashLayoutLib.reactDashNativeDashDrawerDashLayoutMod.DrawerLayoutProperties
+}
+

@@ -13,10 +13,10 @@ trait IPaddingImpl extends js.Object {
 object IPaddingImpl {
   @scala.inline
   def apply(
-    pad: js.Function2[cryptojsLib.CryptoJSNs.libNs.WordArray, scala.Double, scala.Unit],
-    unpad: js.Function1[cryptojsLib.CryptoJSNs.libNs.WordArray, scala.Unit]
+    pad: (cryptojsLib.CryptoJSNs.libNs.WordArray, scala.Double) => scala.Unit,
+    unpad: cryptojsLib.CryptoJSNs.libNs.WordArray => scala.Unit
   ): IPaddingImpl = {
-    val __obj = js.Dynamic.literal(pad = pad, unpad = unpad)
+    val __obj = js.Dynamic.literal(pad = js.Any.fromFunction2(pad), unpad = js.Any.fromFunction1(unpad))
   
     __obj.asInstanceOf[IPaddingImpl]
   }

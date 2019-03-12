@@ -1,0 +1,34 @@
+package typings
+package reactDashBreadcrumbsDashDynamicLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashBreadcrumbsDashDynamicLibComponents {
+  @scala.inline
+  def Breadcrumbs: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashBreadcrumbsDashDynamicLib.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProps
+  ] = js.constructorOf[reactDashBreadcrumbsDashDynamicLib.reactDashBreadcrumbsDashDynamicMod.Breadcrumbs].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashBreadcrumbsDashDynamicLib.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProps]]
+  @scala.inline
+  def BreadcrumbsItem: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashBreadcrumbsDashDynamicLib.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsItemProps
+  ] = js.constructorOf[reactDashBreadcrumbsDashDynamicLib.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsItem].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashBreadcrumbsDashDynamicLib.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsItemProps]]
+  @scala.inline
+  def BreadcrumbsProvider: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashBreadcrumbsDashDynamicLib.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProviderProps
+  ] = js.constructorOf[reactDashBreadcrumbsDashDynamicLib.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProvider].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashBreadcrumbsDashDynamicLib.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProviderProps]]
+  @scala.inline
+  def BreadcrumbsItemProps: reactDashBreadcrumbsDashDynamicLib.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsItemProps.type = reactDashBreadcrumbsDashDynamicLib.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsItemProps
+  type BreadcrumbsItemProps = reactDashBreadcrumbsDashDynamicLib.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsItemProps
+  @scala.inline
+  def BreadcrumbsProps: reactDashBreadcrumbsDashDynamicLib.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProps.type = reactDashBreadcrumbsDashDynamicLib.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProps
+  type BreadcrumbsProps = reactDashBreadcrumbsDashDynamicLib.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProps
+  @scala.inline
+  def BreadcrumbsProviderProps: reactDashBreadcrumbsDashDynamicLib.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProviderProps.type = reactDashBreadcrumbsDashDynamicLib.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProviderProps
+  type BreadcrumbsProviderProps = reactDashBreadcrumbsDashDynamicLib.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProviderProps
+}
+

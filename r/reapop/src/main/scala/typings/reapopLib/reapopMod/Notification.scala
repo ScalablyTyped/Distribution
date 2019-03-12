@@ -32,8 +32,8 @@ object Notification {
     id: java.lang.String | scala.Double = null,
     image: java.lang.String = null,
     message: java.lang.String = null,
-    onAdd: js.Function0[scala.Unit] = null,
-    onRemove: js.Function0[scala.Unit] = null,
+    onAdd: () => scala.Unit = null,
+    onRemove: () => scala.Unit = null,
     position: java.lang.String | reapopLib.POSITION = null,
     status: java.lang.String | scala.Double | reapopLib.STATUSES = null,
     title: java.lang.String = null
@@ -47,8 +47,8 @@ object Notification {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image)
     if (message != null) __obj.updateDynamic("message")(message)
-    if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd)
-    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
+    if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction0(onAdd))
+    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction0(onRemove))
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)

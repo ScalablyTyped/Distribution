@@ -18,11 +18,11 @@ object IGeometryEditor {
     events: IEventManager,
     geometry: IGeometry,
     options: IOptionManager,
-    startEditing: js.Function0[scala.Unit],
+    startEditing: () => scala.Unit,
     state: IDataManager,
-    stopEditing: js.Function0[scala.Unit]
+    stopEditing: () => scala.Unit
   ): IGeometryEditor = {
-    val __obj = js.Dynamic.literal(events = events, geometry = geometry, options = options, startEditing = startEditing, state = state, stopEditing = stopEditing)
+    val __obj = js.Dynamic.literal(events = events, geometry = geometry, options = options, startEditing = js.Any.fromFunction0(startEditing), state = state, stopEditing = js.Any.fromFunction0(stopEditing))
   
     __obj.asInstanceOf[IGeometryEditor]
   }

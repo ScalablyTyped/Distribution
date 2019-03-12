@@ -123,7 +123,7 @@ object FilterTableOptions {
   @scala.inline
   def apply(
     autofocus: js.UndefOr[scala.Boolean] = js.undefined,
-    callback: js.Function2[/* term */ java.lang.String, /* table */ jqueryDotFiltertableLib.JQuery, scala.Unit] = null,
+    callback: (/* term */ java.lang.String, /* table */ jqueryDotFiltertableLib.JQuery) => scala.Unit = null,
     containerClass: java.lang.String = null,
     containerTag: java.lang.String = null,
     hideTFootOnFilter: js.UndefOr[scala.Boolean] = js.undefined,
@@ -146,7 +146,7 @@ object FilterTableOptions {
   ): FilterTableOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
     if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass)
     if (containerTag != null) __obj.updateDynamic("containerTag")(containerTag)
     if (!js.isUndefined(hideTFootOnFilter)) __obj.updateDynamic("hideTFootOnFilter")(hideTFootOnFilter)

@@ -12,8 +12,8 @@ trait BaseOperation
 
 object BaseOperation {
   @scala.inline
-  def apply(objects: js.Function0[js.Array[_]], toJSON: js.Function0[js.Any]): BaseOperation = {
-    val __obj = js.Dynamic.literal(objects = objects, toJSON = toJSON)
+  def apply(objects: () => js.Array[_], toJSON: () => js.Any): BaseOperation = {
+    val __obj = js.Dynamic.literal(objects = js.Any.fromFunction0(objects), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[BaseOperation]
   }

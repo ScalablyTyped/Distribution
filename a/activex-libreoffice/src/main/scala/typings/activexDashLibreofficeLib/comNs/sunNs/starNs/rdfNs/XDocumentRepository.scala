@@ -23,7 +23,7 @@ trait XDocumentRepository extends XRepository {
     * @throws com::sun::star::lang::IllegalArgumentException if the given Element is `NULL` , or of a type that can not have RDFa metadata attached.
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
-  def getStatementRDFa(Element: XMetadatable): activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[activexDashInteropLib.SafeArray[Statement], scala.Boolean]
+  def getStatementRDFa(Element: XMetadatable): activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[stdLib.SafeArray[Statement], scala.Boolean]
   /**
     * gets matching RDFa statements from the repository.
     *
@@ -82,59 +82,24 @@ trait XDocumentRepository extends XRepository {
 object XDocumentRepository {
   @scala.inline
   def apply(
-    GraphNames: activexDashInteropLib.SafeArray[XURI],
-    createBlankNode: js.Function0[XBlankNode],
-    createGraph: js.Function1[XURI, XNamedGraph],
-    destroyGraph: js.Function1[XURI, scala.Unit],
-    exportGraph: js.Function4[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream, 
-      XURI, 
-      XURI, 
-      scala.Unit
-    ],
-    getGraph: js.Function1[XURI, XNamedGraph],
-    getGraphNames: js.Function0[activexDashInteropLib.SafeArray[XURI]],
-    getStatementRDFa: js.Function1[
-      XMetadatable, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[activexDashInteropLib.SafeArray[Statement], scala.Boolean]
-    ],
-    getStatements: js.Function3[
-      XResource, 
-      XURI, 
-      XNode, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration
-    ],
-    getStatementsRDFa: js.Function3[
-      XResource, 
-      XURI, 
-      XNode, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration
-    ],
-    importGraph: js.Function4[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      XURI, 
-      XURI, 
-      XNamedGraph
-    ],
-    queryAsk: js.Function1[java.lang.String, scala.Boolean],
-    queryConstruct: js.Function1[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration
-    ],
-    querySelect: js.Function1[java.lang.String, XQuerySelectResult],
-    removeStatementRDFa: js.Function1[XMetadatable, scala.Unit],
-    setStatementRDFa: js.Function5[
-      XResource, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XURI], 
-      XMetadatable, 
-      java.lang.String, 
-      XURI, 
-      scala.Unit
-    ]
+    GraphNames: stdLib.SafeArray[XURI],
+    createBlankNode: () => XBlankNode,
+    createGraph: XURI => XNamedGraph,
+    destroyGraph: XURI => scala.Unit,
+    exportGraph: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream, XURI, XURI) => scala.Unit,
+    getGraph: XURI => XNamedGraph,
+    getGraphNames: () => stdLib.SafeArray[XURI],
+    getStatementRDFa: XMetadatable => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[stdLib.SafeArray[Statement], scala.Boolean],
+    getStatements: (XResource, XURI, XNode) => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration,
+    getStatementsRDFa: (XResource, XURI, XNode) => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration,
+    importGraph: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, XURI, XURI) => XNamedGraph,
+    queryAsk: java.lang.String => scala.Boolean,
+    queryConstruct: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration,
+    querySelect: java.lang.String => XQuerySelectResult,
+    removeStatementRDFa: XMetadatable => scala.Unit,
+    setStatementRDFa: (XResource, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XURI], XMetadatable, java.lang.String, XURI) => scala.Unit
   ): XDocumentRepository = {
-    val __obj = js.Dynamic.literal(GraphNames = GraphNames, createBlankNode = createBlankNode, createGraph = createGraph, destroyGraph = destroyGraph, exportGraph = exportGraph, getGraph = getGraph, getGraphNames = getGraphNames, getStatementRDFa = getStatementRDFa, getStatements = getStatements, getStatementsRDFa = getStatementsRDFa, importGraph = importGraph, queryAsk = queryAsk, queryConstruct = queryConstruct, querySelect = querySelect, removeStatementRDFa = removeStatementRDFa, setStatementRDFa = setStatementRDFa)
+    val __obj = js.Dynamic.literal(GraphNames = GraphNames, createBlankNode = js.Any.fromFunction0(createBlankNode), createGraph = js.Any.fromFunction1(createGraph), destroyGraph = js.Any.fromFunction1(destroyGraph), exportGraph = js.Any.fromFunction4(exportGraph), getGraph = js.Any.fromFunction1(getGraph), getGraphNames = js.Any.fromFunction0(getGraphNames), getStatementRDFa = js.Any.fromFunction1(getStatementRDFa), getStatements = js.Any.fromFunction3(getStatements), getStatementsRDFa = js.Any.fromFunction3(getStatementsRDFa), importGraph = js.Any.fromFunction4(importGraph), queryAsk = js.Any.fromFunction1(queryAsk), queryConstruct = js.Any.fromFunction1(queryConstruct), querySelect = js.Any.fromFunction1(querySelect), removeStatementRDFa = js.Any.fromFunction1(removeStatementRDFa), setStatementRDFa = js.Any.fromFunction5(setStatementRDFa))
   
     __obj.asInstanceOf[XDocumentRepository]
   }

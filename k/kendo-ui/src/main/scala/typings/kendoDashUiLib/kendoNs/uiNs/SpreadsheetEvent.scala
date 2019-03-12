@@ -13,8 +13,8 @@ trait SpreadsheetEvent extends js.Object {
 
 object SpreadsheetEvent {
   @scala.inline
-  def apply(isDefaultPrevented: js.Function0[scala.Boolean], preventDefault: js.Function, sender: Spreadsheet): SpreadsheetEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+  def apply(isDefaultPrevented: () => scala.Boolean, preventDefault: js.Function, sender: Spreadsheet): SpreadsheetEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
   
     __obj.asInstanceOf[SpreadsheetEvent]
   }

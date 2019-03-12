@@ -12,11 +12,8 @@ trait Anon_GetMessageID extends js.Object {
 
 object Anon_GetMessageID {
   @scala.inline
-  def apply(
-    getMessageID: js.Function0[js.Promise[java.lang.String]],
-    getThreadID: js.Function0[js.Promise[java.lang.String]]
-  ): Anon_GetMessageID = {
-    val __obj = js.Dynamic.literal(getMessageID = getMessageID, getThreadID = getThreadID)
+  def apply(getMessageID: () => js.Promise[java.lang.String], getThreadID: () => js.Promise[java.lang.String]): Anon_GetMessageID = {
+    val __obj = js.Dynamic.literal(getMessageID = js.Any.fromFunction0(getMessageID), getThreadID = js.Any.fromFunction0(getThreadID))
   
     __obj.asInstanceOf[Anon_GetMessageID]
   }

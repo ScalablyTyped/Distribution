@@ -119,7 +119,7 @@ package object nodeDashSassMod {
   ]
   type FunctionDeclarations[FunctionType /* <: SassFunction */] = stdLib.Record[java.lang.String, FunctionType]
   type Importer = AsyncImporter | SyncImporter
-  type ImporterReturnType = _ImporterReturnType | nodeLib.Error | scala.Null
+  type ImporterReturnType = _ImporterReturnType | stdLib.Error | scala.Null
   type SassFunction = SyncSassFunction | AsyncSassFunction
   type SassFunctionCallback = js.Function1[/* $result */ nodeDashSassLib.nodeDashSassMod.typesNs.ReturnValue, scala.Unit]
   type SassRenderCallback = js.Function2[/* err */ SassError, /* result */ Result, js.Any]

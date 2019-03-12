@@ -100,69 +100,21 @@ trait XCharacterClassification
 object XCharacterClassification {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getCharacterDirection: js.Function2[java.lang.String, scala.Double, scala.Double],
-    getCharacterType: js.Function3[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double
-    ],
-    getScript: js.Function2[java.lang.String, scala.Double, scala.Double],
-    getStringType: js.Function4[
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double
-    ],
-    getType: js.Function2[java.lang.String, scala.Double, scala.Double],
-    parseAnyToken: js.Function7[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      java.lang.String, 
-      scala.Double, 
-      java.lang.String, 
-      ParseResult
-    ],
-    parsePredefinedToken: js.Function8[
-      scala.Double, 
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      java.lang.String, 
-      scala.Double, 
-      java.lang.String, 
-      ParseResult
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    toLower: js.Function4[
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String
-    ],
-    toTitle: js.Function4[
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String
-    ],
-    toUpper: js.Function4[
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String
-    ]
+    acquire: () => scala.Unit,
+    getCharacterDirection: (java.lang.String, scala.Double) => scala.Double,
+    getCharacterType: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => scala.Double,
+    getScript: (java.lang.String, scala.Double) => scala.Double,
+    getStringType: (java.lang.String, scala.Double, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => scala.Double,
+    getType: (java.lang.String, scala.Double) => scala.Double,
+    parseAnyToken: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double, java.lang.String, scala.Double, java.lang.String) => ParseResult,
+    parsePredefinedToken: (scala.Double, java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double, java.lang.String, scala.Double, java.lang.String) => ParseResult,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    toLower: (java.lang.String, scala.Double, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => java.lang.String,
+    toTitle: (java.lang.String, scala.Double, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => java.lang.String,
+    toUpper: (java.lang.String, scala.Double, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => java.lang.String
   ): XCharacterClassification = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getCharacterDirection = getCharacterDirection, getCharacterType = getCharacterType, getScript = getScript, getStringType = getStringType, getType = getType, parseAnyToken = parseAnyToken, parsePredefinedToken = parsePredefinedToken, queryInterface = queryInterface, release = release, toLower = toLower, toTitle = toTitle, toUpper = toUpper)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getCharacterDirection = js.Any.fromFunction2(getCharacterDirection), getCharacterType = js.Any.fromFunction3(getCharacterType), getScript = js.Any.fromFunction2(getScript), getStringType = js.Any.fromFunction4(getStringType), getType = js.Any.fromFunction2(getType), parseAnyToken = js.Any.fromFunction7(parseAnyToken), parsePredefinedToken = js.Any.fromFunction8(parsePredefinedToken), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), toLower = js.Any.fromFunction4(toLower), toTitle = js.Any.fromFunction4(toTitle), toUpper = js.Any.fromFunction4(toUpper))
   
     __obj.asInstanceOf[XCharacterClassification]
   }

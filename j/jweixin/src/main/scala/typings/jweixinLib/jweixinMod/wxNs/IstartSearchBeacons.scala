@@ -18,14 +18,14 @@ trait IstartSearchBeacons extends BaseParams {
 object IstartSearchBeacons {
   @scala.inline
   def apply(
-    complete: js.Function1[js.Any, scala.Unit],
+    complete: js.Any => scala.Unit,
     ticket: java.lang.String,
-    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    success: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+    fail: /* repeated */ js.Any => scala.Unit = null,
+    success: /* repeated */ js.Any => scala.Unit = null
   ): IstartSearchBeacons = {
-    val __obj = js.Dynamic.literal(complete = complete, ticket = ticket)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete), ticket = ticket)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[IstartSearchBeacons]
   }
 }

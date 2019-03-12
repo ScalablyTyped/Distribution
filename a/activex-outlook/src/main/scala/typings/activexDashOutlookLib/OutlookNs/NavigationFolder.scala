@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.NavigationFolder")
 @js.native
 class NavigationFolder protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   val DisplayName: java.lang.String = js.native
-  val Folder: Folder = js.native
+  val Folder: activexDashOutlookLib.OutlookNs.Folder = js.native
   val IsRemovable: scala.Boolean = js.native
   var IsSelected: scala.Boolean = js.native
   var IsSideBySide: scala.Boolean = js.native

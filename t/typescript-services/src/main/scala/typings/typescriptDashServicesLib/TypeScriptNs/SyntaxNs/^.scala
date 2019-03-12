@@ -14,10 +14,10 @@ object ^ extends js.Object {
   var emptySeparatedList: typescriptDashServicesLib.TypeScriptNs.ISeparatedSyntaxList = js.native
   var emptyTriviaList: typescriptDashServicesLib.TypeScriptNs.ISyntaxTriviaList = js.native
   var lineFeedTrivia: typescriptDashServicesLib.TypeScriptNs.ISyntaxTrivia = js.native
-  var normalModeFactory: typescriptDashServicesLib.TypeScriptNs.SyntaxNs.IFactory = js.native
+  var normalModeFactory: IFactory = js.native
   var spaceTrivia: typescriptDashServicesLib.TypeScriptNs.ISyntaxTrivia = js.native
   var spaceTriviaList: typescriptDashServicesLib.TypeScriptNs.ISyntaxTriviaList = js.native
-  var strictModeFactory: typescriptDashServicesLib.TypeScriptNs.SyntaxNs.IFactory = js.native
+  var strictModeFactory: IFactory = js.native
   def assignmentExpression(
     left: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax,
     token: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken,

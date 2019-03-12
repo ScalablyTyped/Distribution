@@ -23,20 +23,20 @@ trait ITimestamp extends js.Object {
 object ITimestamp {
   @scala.inline
   def apply(
-    Clone: js.Function0[ITimestamp],
+    Clone: () => ITimestamp,
     Day: scala.Double,
     Fraction: scala.Double,
-    GetValue: js.Function0[js.Any],
+    GetValue: () => js.Any,
     Hour: scala.Double,
-    LocalTimeToUtc: js.Function0[ITimestamp],
+    LocalTimeToUtc: () => ITimestamp,
     Minute: scala.Double,
     Month: scala.Double,
     Second: scala.Double,
-    SetValue: js.Function1[js.Any, scala.Unit],
-    UtcToLocalTime: js.Function0[ITimestamp],
+    SetValue: js.Any => scala.Unit,
+    UtcToLocalTime: () => ITimestamp,
     Year: scala.Double
   ): ITimestamp = {
-    val __obj = js.Dynamic.literal(Clone = Clone, Day = Day, Fraction = Fraction, GetValue = GetValue, Hour = Hour, LocalTimeToUtc = LocalTimeToUtc, Minute = Minute, Month = Month, Second = Second, SetValue = SetValue, UtcToLocalTime = UtcToLocalTime, Year = Year)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Day = Day, Fraction = Fraction, GetValue = js.Any.fromFunction0(GetValue), Hour = Hour, LocalTimeToUtc = js.Any.fromFunction0(LocalTimeToUtc), Minute = Minute, Month = Month, Second = Second, SetValue = js.Any.fromFunction1(SetValue), UtcToLocalTime = js.Any.fromFunction0(UtcToLocalTime), Year = Year)
   
     __obj.asInstanceOf[ITimestamp]
   }

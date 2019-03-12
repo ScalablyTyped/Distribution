@@ -114,33 +114,15 @@ trait CourseWorkResource extends js.Object {
 object CourseWorkResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CourseWork]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CourseWork]
-    ],
-    list: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdCourseWorkStates, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListCourseWorkResponse]
-    ],
-    modifyAssignees: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CourseWork]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CourseWork]
-    ],
+    create: gapiDotClientDotClassroomLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[CourseWork],
+    delete: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[CourseWork],
+    list: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdCourseWorkStates => gapiDotClientLib.gapiNs.clientNs.Request[ListCourseWorkResponse],
+    modifyAssignees: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[CourseWork],
+    patch: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[CourseWork],
     studentSubmissions: StudentSubmissionsResource
   ): CourseWorkResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, modifyAssignees = modifyAssignees, patch = patch, studentSubmissions = studentSubmissions)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), modifyAssignees = js.Any.fromFunction1(modifyAssignees), patch = js.Any.fromFunction1(patch), studentSubmissions = studentSubmissions)
   
     __obj.asInstanceOf[CourseWorkResource]
   }

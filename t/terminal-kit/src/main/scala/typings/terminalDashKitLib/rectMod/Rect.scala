@@ -20,17 +20,17 @@ trait Rect extends js.Object {
 object Rect {
   @scala.inline
   def apply(
-    clip: js.Function4[Rect, scala.Double, scala.Double, scala.Boolean, scala.Unit],
+    clip: (Rect, scala.Double, scala.Double, scala.Boolean) => scala.Unit,
     height: scala.Double,
     isNull: scala.Boolean,
-    set: js.Function1[terminalDashKitLib.rectMod.RectNs.Region, scala.Unit],
+    set: terminalDashKitLib.rectMod.RectNs.Region => scala.Unit,
     width: scala.Double,
     xmax: scala.Double,
     xmin: scala.Double,
     ymax: scala.Double,
     ymin: scala.Double
   ): Rect = {
-    val __obj = js.Dynamic.literal(clip = clip, height = height, isNull = isNull, set = set, width = width, xmax = xmax, xmin = xmin, ymax = ymax, ymin = ymin)
+    val __obj = js.Dynamic.literal(clip = js.Any.fromFunction4(clip), height = height, isNull = isNull, set = js.Any.fromFunction1(set), width = width, xmax = xmax, xmin = xmin, ymax = ymax, ymin = ymin)
   
     __obj.asInstanceOf[Rect]
   }

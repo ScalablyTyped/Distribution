@@ -13,12 +13,9 @@ trait SegmentsResource extends js.Object {
 object SegmentsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Segments]
-    ]
+    list: gapiDotClientDotAnalyticsLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Segments]
   ): SegmentsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[SegmentsResource]
   }

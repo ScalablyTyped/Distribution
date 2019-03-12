@@ -97,40 +97,40 @@ trait RemoteViews
 object RemoteViews {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     bubbleParent: scala.Boolean,
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getApiName: js.Function0[java.lang.String],
-    getBubbleParent: js.Function0[scala.Boolean],
-    getLayoutId: js.Function0[scala.Double],
-    getPackageName: js.Function0[java.lang.String],
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
+    getApiName: () => java.lang.String,
+    getBubbleParent: () => scala.Boolean,
+    getLayoutId: () => scala.Double,
+    getPackageName: () => java.lang.String,
     layoutId: scala.Double,
     packageName: java.lang.String,
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    setBoolean: js.Function3[scala.Double, java.lang.String, scala.Boolean, scala.Unit],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
-    setChronometer: js.Function4[scala.Double, stdLib.Date, java.lang.String, scala.Boolean, scala.Unit],
-    setDouble: js.Function3[scala.Double, java.lang.String, scala.Double, scala.Unit],
-    setImageViewResource: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setImageViewUri: js.Function2[scala.Double, java.lang.String, scala.Unit],
-    setInt: js.Function3[scala.Double, java.lang.String, scala.Double, scala.Unit],
-    setLayoutId: js.Function1[scala.Double, scala.Unit],
-    setOnClickPendingIntent: js.Function2[scala.Double, PendingIntent, scala.Unit],
-    setPackageName: js.Function1[java.lang.String, scala.Unit],
-    setProgressBar: js.Function4[scala.Double, scala.Double, scala.Double, scala.Boolean, scala.Unit],
-    setString: js.Function3[scala.Double, java.lang.String, java.lang.String, scala.Unit],
-    setTextColor: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setTextViewText: js.Function2[scala.Double, java.lang.String, scala.Unit],
-    setUri: js.Function3[scala.Double, java.lang.String, java.lang.String, scala.Unit],
-    setViewVisibility: js.Function2[scala.Double, scala.Double, scala.Unit],
-    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    setBoolean: (scala.Double, java.lang.String, scala.Boolean) => scala.Unit,
+    setBubbleParent: scala.Boolean => scala.Unit,
+    setChronometer: (scala.Double, stdLib.Date, java.lang.String, scala.Boolean) => scala.Unit,
+    setDouble: (scala.Double, java.lang.String, scala.Double) => scala.Unit,
+    setImageViewResource: (scala.Double, scala.Double) => scala.Unit,
+    setImageViewUri: (scala.Double, java.lang.String) => scala.Unit,
+    setInt: (scala.Double, java.lang.String, scala.Double) => scala.Unit,
+    setLayoutId: scala.Double => scala.Unit,
+    setOnClickPendingIntent: (scala.Double, PendingIntent) => scala.Unit,
+    setPackageName: java.lang.String => scala.Unit,
+    setProgressBar: (scala.Double, scala.Double, scala.Double, scala.Boolean) => scala.Unit,
+    setString: (scala.Double, java.lang.String, java.lang.String) => scala.Unit,
+    setTextColor: (scala.Double, scala.Double) => scala.Unit,
+    setTextViewText: (scala.Double, java.lang.String) => scala.Unit,
+    setUri: (scala.Double, java.lang.String, java.lang.String) => scala.Unit,
+    setViewVisibility: (scala.Double, scala.Double) => scala.Unit,
+    getLifecycleContainer: () => titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
   ): RemoteViews = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, getLayoutId = getLayoutId, getPackageName = getPackageName, layoutId = layoutId, packageName = packageName, removeEventListener = removeEventListener, setBoolean = setBoolean, setBubbleParent = setBubbleParent, setChronometer = setChronometer, setDouble = setDouble, setImageViewResource = setImageViewResource, setImageViewUri = setImageViewUri, setInt = setInt, setLayoutId = setLayoutId, setOnClickPendingIntent = setOnClickPendingIntent, setPackageName = setPackageName, setProgressBar = setProgressBar, setString = setString, setTextColor = setTextColor, setTextViewText = setTextViewText, setUri = setUri, setViewVisibility = setViewVisibility)
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getLayoutId = js.Any.fromFunction0(getLayoutId), getPackageName = js.Any.fromFunction0(getPackageName), layoutId = layoutId, packageName = packageName, removeEventListener = js.Any.fromFunction2(removeEventListener), setBoolean = js.Any.fromFunction3(setBoolean), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setChronometer = js.Any.fromFunction4(setChronometer), setDouble = js.Any.fromFunction3(setDouble), setImageViewResource = js.Any.fromFunction2(setImageViewResource), setImageViewUri = js.Any.fromFunction2(setImageViewUri), setInt = js.Any.fromFunction3(setInt), setLayoutId = js.Any.fromFunction1(setLayoutId), setOnClickPendingIntent = js.Any.fromFunction2(setOnClickPendingIntent), setPackageName = js.Any.fromFunction1(setPackageName), setProgressBar = js.Any.fromFunction4(setProgressBar), setString = js.Any.fromFunction3(setString), setTextColor = js.Any.fromFunction2(setTextColor), setTextViewText = js.Any.fromFunction2(setTextViewText), setUri = js.Any.fromFunction3(setUri), setViewVisibility = js.Any.fromFunction2(setViewVisibility))
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
     __obj.asInstanceOf[RemoteViews]

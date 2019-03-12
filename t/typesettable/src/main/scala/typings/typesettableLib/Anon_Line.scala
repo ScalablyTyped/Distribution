@@ -18,16 +18,9 @@ trait Anon_Line extends js.Object {
 object Anon_Line {
   @scala.inline
   def apply(
-    write: js.Function5[
-      java.lang.String, 
-      scala.Double, 
-      typesettableLib.buildSrcWritersWriterMod.IXAlign, 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ]
+    write: (java.lang.String, scala.Double, typesettableLib.buildSrcWritersWriterMod.IXAlign, scala.Double, scala.Double) => scala.Unit
   ): Anon_Line = {
-    val __obj = js.Dynamic.literal(write = write)
+    val __obj = js.Dynamic.literal(write = js.Any.fromFunction5(write))
   
     __obj.asInstanceOf[Anon_Line]
   }

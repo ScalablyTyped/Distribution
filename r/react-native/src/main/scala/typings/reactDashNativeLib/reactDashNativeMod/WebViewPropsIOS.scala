@@ -74,7 +74,7 @@ object WebViewPropsIOS {
     bounces: js.UndefOr[scala.Boolean] = js.undefined,
     dataDetectorTypes: reactDashNativeLib.DataDetectorTypes | js.Array[reactDashNativeLib.DataDetectorTypes] = null,
     decelerationRate: reactDashNativeLib.reactDashNativeLibStrings.normal | reactDashNativeLib.reactDashNativeLibStrings.fast | scala.Double = null,
-    onShouldStartLoadWithRequest: js.Function1[/* event */ WebViewIOSLoadRequestEvent, scala.Boolean] = null,
+    onShouldStartLoadWithRequest: /* event */ WebViewIOSLoadRequestEvent => scala.Boolean = null,
     scrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     useWebKit: js.UndefOr[scala.Boolean] = js.undefined
   ): WebViewPropsIOS = {
@@ -83,7 +83,7 @@ object WebViewPropsIOS {
     if (!js.isUndefined(bounces)) __obj.updateDynamic("bounces")(bounces)
     if (dataDetectorTypes != null) __obj.updateDynamic("dataDetectorTypes")(dataDetectorTypes.asInstanceOf[js.Any])
     if (decelerationRate != null) __obj.updateDynamic("decelerationRate")(decelerationRate.asInstanceOf[js.Any])
-    if (onShouldStartLoadWithRequest != null) __obj.updateDynamic("onShouldStartLoadWithRequest")(onShouldStartLoadWithRequest)
+    if (onShouldStartLoadWithRequest != null) __obj.updateDynamic("onShouldStartLoadWithRequest")(js.Any.fromFunction1(onShouldStartLoadWithRequest))
     if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled)
     if (!js.isUndefined(useWebKit)) __obj.updateDynamic("useWebKit")(useWebKit)
     __obj.asInstanceOf[WebViewPropsIOS]

@@ -101,7 +101,7 @@ import scala.scalajs.js.annotation._
   /**
     * Code used in URL
     */
-  var code: code
+  var code: fhirLib.fhirNs.code
   /**
     * eq | ne | gt | lt | ge | le | sa | eb | ap
     */

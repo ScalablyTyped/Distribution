@@ -31,7 +31,7 @@ object GridLayoutOptions {
     fit: scala.Boolean,
     name: cytoscapeLib.cytoscapeLibStrings.grid,
     nodeDimensionsIncludeLabels: scala.Boolean,
-    position: js.Function1[java.lang.String, cytoscapeLib.Anon_Col],
+    position: java.lang.String => cytoscapeLib.Anon_Col,
     animate: js.UndefOr[scala.Boolean] = js.undefined,
     animationDuration: scala.Int | scala.Double = null,
     animationEasing: js.UndefOr[scala.Boolean] = js.undefined,
@@ -46,7 +46,7 @@ object GridLayoutOptions {
     spacingFactor: scala.Int | scala.Double = null,
     stop: LayoutHandler = null
   ): GridLayoutOptions = {
-    val __obj = js.Dynamic.literal(condense = condense, fit = fit, name = name, nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels, position = position)
+    val __obj = js.Dynamic.literal(condense = condense, fit = fit, name = name, nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels, position = js.Any.fromFunction1(position))
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing)

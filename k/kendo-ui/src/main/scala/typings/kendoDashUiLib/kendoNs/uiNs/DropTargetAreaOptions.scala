@@ -16,16 +16,16 @@ trait DropTargetAreaOptions extends js.Object {
 object DropTargetAreaOptions {
   @scala.inline
   def apply(
-    dragenter: js.Function1[/* e */ DropTargetAreaDragenterEvent, scala.Unit] = null,
-    dragleave: js.Function1[/* e */ DropTargetAreaDragleaveEvent, scala.Unit] = null,
-    drop: js.Function1[/* e */ DropTargetAreaDropEvent, scala.Unit] = null,
+    dragenter: /* e */ DropTargetAreaDragenterEvent => scala.Unit = null,
+    dragleave: /* e */ DropTargetAreaDragleaveEvent => scala.Unit = null,
+    drop: /* e */ DropTargetAreaDropEvent => scala.Unit = null,
     filter: java.lang.String = null,
     group: java.lang.String = null
   ): DropTargetAreaOptions = {
     val __obj = js.Dynamic.literal()
-    if (dragenter != null) __obj.updateDynamic("dragenter")(dragenter)
-    if (dragleave != null) __obj.updateDynamic("dragleave")(dragleave)
-    if (drop != null) __obj.updateDynamic("drop")(drop)
+    if (dragenter != null) __obj.updateDynamic("dragenter")(js.Any.fromFunction1(dragenter))
+    if (dragleave != null) __obj.updateDynamic("dragleave")(js.Any.fromFunction1(dragleave))
+    if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction1(drop))
     if (filter != null) __obj.updateDynamic("filter")(filter)
     if (group != null) __obj.updateDynamic("group")(group)
     __obj.asInstanceOf[DropTargetAreaOptions]

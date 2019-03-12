@@ -43,41 +43,37 @@ trait Label extends js.Object {
 object Label {
   @scala.inline
   def apply(
-    addClickHandler: js.Function1[Handler, Label],
-    addMouseDownHandler: js.Function1[Handler, Label],
-    addMouseMoveHandler: js.Function1[Handler, Label],
-    addMouseOutHandler: js.Function1[Handler, Label],
-    addMouseOverHandler: js.Function1[Handler, Label],
-    addMouseUpHandler: js.Function1[Handler, Label],
-    addMouseWheelHandler: js.Function1[Handler, Label],
-    addStyleDependentName: js.Function1[java.lang.String, Label],
-    addStyleName: js.Function1[java.lang.String, Label],
-    getId: js.Function0[java.lang.String],
-    getTag: js.Function0[java.lang.String],
-    getType: js.Function0[java.lang.String],
-    setDirection: js.Function1[Component, Label],
-    setHeight: js.Function1[java.lang.String, Label],
-    setHorizontalAlignment: js.Function1[HorizontalAlignment, Label],
-    setId: js.Function1[java.lang.String, Label],
-    setLayoutData: js.Function1[js.Object, Label],
-    setPixelSize: js.Function2[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      Label
-    ],
-    setSize: js.Function2[java.lang.String, java.lang.String, Label],
-    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, Label],
-    setStyleAttributes: js.Function1[js.Object, Label],
-    setStyleName: js.Function1[java.lang.String, Label],
-    setStylePrimaryName: js.Function1[java.lang.String, Label],
-    setTag: js.Function1[java.lang.String, Label],
-    setText: js.Function1[java.lang.String, Label],
-    setTitle: js.Function1[java.lang.String, Label],
-    setVisible: js.Function1[scala.Boolean, Label],
-    setWidth: js.Function1[java.lang.String, Label],
-    setWordWrap: js.Function1[scala.Boolean, Label]
+    addClickHandler: Handler => Label,
+    addMouseDownHandler: Handler => Label,
+    addMouseMoveHandler: Handler => Label,
+    addMouseOutHandler: Handler => Label,
+    addMouseOverHandler: Handler => Label,
+    addMouseUpHandler: Handler => Label,
+    addMouseWheelHandler: Handler => Label,
+    addStyleDependentName: java.lang.String => Label,
+    addStyleName: java.lang.String => Label,
+    getId: () => java.lang.String,
+    getTag: () => java.lang.String,
+    getType: () => java.lang.String,
+    setDirection: Component => Label,
+    setHeight: java.lang.String => Label,
+    setHorizontalAlignment: HorizontalAlignment => Label,
+    setId: java.lang.String => Label,
+    setLayoutData: js.Object => Label,
+    setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => Label,
+    setSize: (java.lang.String, java.lang.String) => Label,
+    setStyleAttribute: (java.lang.String, java.lang.String) => Label,
+    setStyleAttributes: js.Object => Label,
+    setStyleName: java.lang.String => Label,
+    setStylePrimaryName: java.lang.String => Label,
+    setTag: java.lang.String => Label,
+    setText: java.lang.String => Label,
+    setTitle: java.lang.String => Label,
+    setVisible: scala.Boolean => Label,
+    setWidth: java.lang.String => Label,
+    setWordWrap: scala.Boolean => Label
   ): Label = {
-    val __obj = js.Dynamic.literal(addClickHandler = addClickHandler, addMouseDownHandler = addMouseDownHandler, addMouseMoveHandler = addMouseMoveHandler, addMouseOutHandler = addMouseOutHandler, addMouseOverHandler = addMouseOverHandler, addMouseUpHandler = addMouseUpHandler, addMouseWheelHandler = addMouseWheelHandler, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, getId = getId, getTag = getTag, getType = getType, setDirection = setDirection, setHeight = setHeight, setHorizontalAlignment = setHorizontalAlignment, setId = setId, setLayoutData = setLayoutData, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setText = setText, setTitle = setTitle, setVisible = setVisible, setWidth = setWidth, setWordWrap = setWordWrap)
+    val __obj = js.Dynamic.literal(addClickHandler = js.Any.fromFunction1(addClickHandler), addMouseDownHandler = js.Any.fromFunction1(addMouseDownHandler), addMouseMoveHandler = js.Any.fromFunction1(addMouseMoveHandler), addMouseOutHandler = js.Any.fromFunction1(addMouseOutHandler), addMouseOverHandler = js.Any.fromFunction1(addMouseOverHandler), addMouseUpHandler = js.Any.fromFunction1(addMouseUpHandler), addMouseWheelHandler = js.Any.fromFunction1(addMouseWheelHandler), addStyleDependentName = js.Any.fromFunction1(addStyleDependentName), addStyleName = js.Any.fromFunction1(addStyleName), getId = js.Any.fromFunction0(getId), getTag = js.Any.fromFunction0(getTag), getType = js.Any.fromFunction0(getType), setDirection = js.Any.fromFunction1(setDirection), setHeight = js.Any.fromFunction1(setHeight), setHorizontalAlignment = js.Any.fromFunction1(setHorizontalAlignment), setId = js.Any.fromFunction1(setId), setLayoutData = js.Any.fromFunction1(setLayoutData), setPixelSize = js.Any.fromFunction2(setPixelSize), setSize = js.Any.fromFunction2(setSize), setStyleAttribute = js.Any.fromFunction2(setStyleAttribute), setStyleAttributes = js.Any.fromFunction1(setStyleAttributes), setStyleName = js.Any.fromFunction1(setStyleName), setStylePrimaryName = js.Any.fromFunction1(setStylePrimaryName), setTag = js.Any.fromFunction1(setTag), setText = js.Any.fromFunction1(setText), setTitle = js.Any.fromFunction1(setTitle), setVisible = js.Any.fromFunction1(setVisible), setWidth = js.Any.fromFunction1(setWidth), setWordWrap = js.Any.fromFunction1(setWordWrap))
   
     __obj.asInstanceOf[Label]
   }

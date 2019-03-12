@@ -52,42 +52,27 @@ trait GetText extends js.Object {
 object GetText {
   @scala.inline
   def apply(
-    addTranslations: js.Function3[java.lang.String, java.lang.String, js.Object, scala.Unit],
-    dgettext: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    dngettext: js.Function4[java.lang.String, java.lang.String, java.lang.String, scala.Double, java.lang.String],
-    dnpgettext: js.Function5[
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      scala.Double, 
-      java.lang.String
-    ],
-    dpgettext: js.Function3[java.lang.String, java.lang.String, java.lang.String, java.lang.String],
-    emit: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getComment: js.Function3[java.lang.String, java.lang.String, java.lang.String, js.Object | scala.Boolean],
-    gettext: js.Function1[java.lang.String, java.lang.String],
-    ngettext: js.Function3[java.lang.String, java.lang.String, scala.Double, java.lang.String],
-    npgettext: js.Function4[java.lang.String, java.lang.String, java.lang.String, scala.Double, java.lang.String],
-    off_error: js.Function2[
-      nodeDashGettextLib.nodeDashGettextLibStrings.error, 
-      js.Function1[/* error */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ],
-    on_error: js.Function2[
-      nodeDashGettextLib.nodeDashGettextLibStrings.error, 
-      js.Function1[/* error */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ],
-    pgettext: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    setLocale: js.Function1[java.lang.String, scala.Unit],
-    setTextDomain: js.Function1[java.lang.String, scala.Unit],
-    textdomain: js.Function1[java.lang.String, scala.Unit],
-    warn: js.Function1[java.lang.String, scala.Unit]
+    addTranslations: (java.lang.String, java.lang.String, js.Object) => scala.Unit,
+    dgettext: (java.lang.String, java.lang.String) => java.lang.String,
+    dngettext: (java.lang.String, java.lang.String, java.lang.String, scala.Double) => java.lang.String,
+    dnpgettext: (java.lang.String, java.lang.String, java.lang.String, java.lang.String, scala.Double) => java.lang.String,
+    dpgettext: (java.lang.String, java.lang.String, java.lang.String) => java.lang.String,
+    emit: (java.lang.String, js.Any) => scala.Unit,
+    getComment: (java.lang.String, java.lang.String, java.lang.String) => js.Object | scala.Boolean,
+    gettext: java.lang.String => java.lang.String,
+    ngettext: (java.lang.String, java.lang.String, scala.Double) => java.lang.String,
+    npgettext: (java.lang.String, java.lang.String, java.lang.String, scala.Double) => java.lang.String,
+    off_error: (nodeDashGettextLib.nodeDashGettextLibStrings.error, js.Function1[/* error */ java.lang.String, scala.Unit]) => scala.Unit,
+    on_error: (nodeDashGettextLib.nodeDashGettextLibStrings.error, js.Function1[/* error */ java.lang.String, scala.Unit]) => scala.Unit,
+    pgettext: (java.lang.String, java.lang.String) => java.lang.String,
+    setLocale: java.lang.String => scala.Unit,
+    setTextDomain: java.lang.String => scala.Unit,
+    textdomain: java.lang.String => scala.Unit,
+    warn: java.lang.String => scala.Unit
   ): GetText = {
-    val __obj = js.Dynamic.literal(addTranslations = addTranslations, dgettext = dgettext, dngettext = dngettext, dnpgettext = dnpgettext, dpgettext = dpgettext, emit = emit, getComment = getComment, gettext = gettext, ngettext = ngettext, npgettext = npgettext, pgettext = pgettext, setLocale = setLocale, setTextDomain = setTextDomain, textdomain = textdomain, warn = warn)
-    __obj.updateDynamic("off")(off_error)
-    __obj.updateDynamic("on")(on_error)
+    val __obj = js.Dynamic.literal(addTranslations = js.Any.fromFunction3(addTranslations), dgettext = js.Any.fromFunction2(dgettext), dngettext = js.Any.fromFunction4(dngettext), dnpgettext = js.Any.fromFunction5(dnpgettext), dpgettext = js.Any.fromFunction3(dpgettext), emit = js.Any.fromFunction2(emit), getComment = js.Any.fromFunction3(getComment), gettext = js.Any.fromFunction1(gettext), ngettext = js.Any.fromFunction3(ngettext), npgettext = js.Any.fromFunction4(npgettext), pgettext = js.Any.fromFunction2(pgettext), setLocale = js.Any.fromFunction1(setLocale), setTextDomain = js.Any.fromFunction1(setTextDomain), textdomain = js.Any.fromFunction1(textdomain), warn = js.Any.fromFunction1(warn))
+    __obj.updateDynamic("off")(js.Any.fromFunction2(off_error))
+    __obj.updateDynamic("on")(js.Any.fromFunction2(on_error))
     __obj.asInstanceOf[GetText]
   }
 }

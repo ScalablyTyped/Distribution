@@ -34,20 +34,12 @@ trait XPrimitive2DRenderer
 object XPrimitive2DRenderer {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    rasterize: js.Function6[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XPrimitive2D], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap
-    ],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    rasterize: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XPrimitive2D], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], scala.Double, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D, scala.Double) => activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap,
+    release: () => scala.Unit
   ): XPrimitive2DRenderer = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, rasterize = rasterize, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), rasterize = js.Any.fromFunction6(rasterize), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XPrimitive2DRenderer]
   }

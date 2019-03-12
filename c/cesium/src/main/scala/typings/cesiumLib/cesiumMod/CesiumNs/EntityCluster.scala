@@ -23,12 +23,12 @@ object EntityCluster {
     clusterEvent: Event,
     clusterLabels: scala.Boolean,
     clusterPoints: scala.Boolean,
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     enabled: scala.Boolean,
     minimumClusterSize: scala.Double,
     pixelRange: scala.Double
   ): EntityCluster = {
-    val __obj = js.Dynamic.literal(clusterBillboards = clusterBillboards, clusterEvent = clusterEvent, clusterLabels = clusterLabels, clusterPoints = clusterPoints, destroy = destroy, enabled = enabled, minimumClusterSize = minimumClusterSize, pixelRange = pixelRange)
+    val __obj = js.Dynamic.literal(clusterBillboards = clusterBillboards, clusterEvent = clusterEvent, clusterLabels = clusterLabels, clusterPoints = clusterPoints, destroy = js.Any.fromFunction0(destroy), enabled = enabled, minimumClusterSize = minimumClusterSize, pixelRange = pixelRange)
   
     __obj.asInstanceOf[EntityCluster]
   }

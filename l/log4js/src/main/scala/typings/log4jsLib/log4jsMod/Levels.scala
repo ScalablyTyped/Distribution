@@ -31,10 +31,10 @@ object Levels {
     OFF: Level,
     TRACE: Level,
     WARN: Level,
-    getLevel: js.Function1[java.lang.String, Level],
+    getLevel: java.lang.String => Level,
     levels: js.Array[Level]
   ): Levels = {
-    val __obj = js.Dynamic.literal(ALL = ALL, DEBUG = DEBUG, ERROR = ERROR, FATAL = FATAL, INFO = INFO, MARK = MARK, OFF = OFF, TRACE = TRACE, WARN = WARN, getLevel = getLevel, levels = levels)
+    val __obj = js.Dynamic.literal(ALL = ALL, DEBUG = DEBUG, ERROR = ERROR, FATAL = FATAL, INFO = INFO, MARK = MARK, OFF = OFF, TRACE = TRACE, WARN = WARN, getLevel = js.Any.fromFunction1(getLevel), levels = levels)
   
     __obj.asInstanceOf[Levels]
   }

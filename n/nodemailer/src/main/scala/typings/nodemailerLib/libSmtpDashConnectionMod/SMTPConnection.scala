@@ -54,7 +54,7 @@ trait SMTPConnection
   @JSName("emit")
   def emit_end(event: nodemailerLib.nodemailerLibStrings.end): scala.Boolean = js.native
   @JSName("emit")
-  def emit_error(event: nodemailerLib.nodemailerLibStrings.error, error: nodeLib.Error): scala.Boolean = js.native
+  def emit_error(event: nodemailerLib.nodemailerLibStrings.error, error: stdLib.Error): scala.Boolean = js.native
   @JSName("listenerCount")
   def listenerCount_connect(event: nodemailerLib.nodemailerLibStrings.connect): scala.Double = js.native
   @JSName("listenerCount")

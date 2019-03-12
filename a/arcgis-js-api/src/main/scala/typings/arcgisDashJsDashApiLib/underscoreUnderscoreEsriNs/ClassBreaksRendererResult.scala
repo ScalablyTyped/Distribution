@@ -47,11 +47,11 @@ object ClassBreaksRendererResult {
     colorScheme: ColorScheme,
     constructor: js.Function,
     defaultValuesUsed: scala.Boolean,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     renderer: ClassBreaksRenderer
   ): ClassBreaksRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId, classBreaksResult = classBreaksResult, colorScheme = colorScheme, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, classBreaksResult = classBreaksResult, colorScheme = colorScheme, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer)
   
     __obj.asInstanceOf[ClassBreaksRendererResult]
   }

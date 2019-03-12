@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.CustomView")
 @js.native
 class CustomView protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Creator: XlCreator = js.native
   var `Excel.CustomView_typekey`: CustomView = js.native
   val Name: java.lang.String = js.native

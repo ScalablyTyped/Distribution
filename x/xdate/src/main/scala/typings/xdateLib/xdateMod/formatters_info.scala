@@ -17,13 +17,13 @@ object formatters_info {
   def apply(
     i: java.lang.String = null,
     u: java.lang.String = null,
-    vvv: js.Function2[/* xdate */ XDate, /* useutc */ scala.Boolean, java.lang.String] = null,
+    vvv: (/* xdate */ XDate, /* useutc */ scala.Boolean) => java.lang.String = null,
     xxx: java.lang.String = null
   ): formatters_info = {
     val __obj = js.Dynamic.literal()
     if (i != null) __obj.updateDynamic("i")(i)
     if (u != null) __obj.updateDynamic("u")(u)
-    if (vvv != null) __obj.updateDynamic("vvv")(vvv)
+    if (vvv != null) __obj.updateDynamic("vvv")(js.Any.fromFunction2(vvv))
     if (xxx != null) __obj.updateDynamic("xxx")(xxx)
     __obj.asInstanceOf[formatters_info]
   }

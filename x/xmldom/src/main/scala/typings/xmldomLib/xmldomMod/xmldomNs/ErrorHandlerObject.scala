@@ -14,14 +14,14 @@ trait ErrorHandlerObject extends js.Object {
 object ErrorHandlerObject {
   @scala.inline
   def apply(
-    error: js.Function1[/* msg */ js.Any, _] = null,
-    fatalError: js.Function1[/* msg */ js.Any, _] = null,
-    warning: js.Function1[/* msg */ js.Any, _] = null
+    error: /* msg */ js.Any => _ = null,
+    fatalError: /* msg */ js.Any => _ = null,
+    warning: /* msg */ js.Any => _ = null
   ): ErrorHandlerObject = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (fatalError != null) __obj.updateDynamic("fatalError")(fatalError)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
+    if (fatalError != null) __obj.updateDynamic("fatalError")(js.Any.fromFunction1(fatalError))
+    if (warning != null) __obj.updateDynamic("warning")(js.Any.fromFunction1(warning))
     __obj.asInstanceOf[ErrorHandlerObject]
   }
 }

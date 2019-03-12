@@ -107,32 +107,28 @@ trait RegExp extends js.Object {
 object RegExp {
   @scala.inline
   def apply(
-    compile: js.Function0[RegExp],
-    exec: js.Function1[java.lang.String, RegExpExecArray | scala.Null],
+    compile: () => RegExp,
+    exec: java.lang.String => RegExpExecArray | scala.Null,
     flags: java.lang.String,
     global: scala.Boolean,
     ignoreCase: scala.Boolean,
     lastIndex: scala.Double,
-    `match`: js.Function1[/* string */ java.lang.String, RegExpMatchArray | scala.Null],
+    `match`: /* string */ java.lang.String => RegExpMatchArray | scala.Null,
     multiline: scala.Boolean,
     replace: (js.Function2[/* string */ java.lang.String, /* replaceValue */ java.lang.String, java.lang.String]) with (js.Function2[
       /* string */ java.lang.String, 
       /* replacer */ js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String], 
       java.lang.String
     ]),
-    search: js.Function1[/* string */ java.lang.String, scala.Double],
+    search: /* string */ java.lang.String => scala.Double,
     source: java.lang.String,
-    split: js.Function2[
-      /* string */ java.lang.String, 
-      /* limit */ js.UndefOr[scala.Double], 
-      Array[java.lang.String]
-    ],
+    split: (/* string */ java.lang.String, /* limit */ js.UndefOr[scala.Double]) => Array[java.lang.String],
     sticky: scala.Boolean,
-    test: js.Function1[java.lang.String, scala.Boolean],
+    test: java.lang.String => scala.Boolean,
     unicode: scala.Boolean
   ): RegExp = {
-    val __obj = js.Dynamic.literal(compile = compile, exec = exec, flags = flags, global = global, ignoreCase = ignoreCase, lastIndex = lastIndex, multiline = multiline, replace = replace, search = search, source = source, split = split, sticky = sticky, test = test, unicode = unicode)
-    __obj.updateDynamic("match")(`match`)
+    val __obj = js.Dynamic.literal(compile = js.Any.fromFunction0(compile), exec = js.Any.fromFunction1(exec), flags = flags, global = global, ignoreCase = ignoreCase, lastIndex = lastIndex, multiline = multiline, replace = replace, search = js.Any.fromFunction1(search), source = source, split = js.Any.fromFunction2(split), sticky = sticky, test = js.Any.fromFunction1(test), unicode = unicode)
+    __obj.updateDynamic("match")(js.Any.fromFunction1(`match`))
     __obj.asInstanceOf[RegExp]
   }
 }

@@ -14,19 +14,14 @@ object ^ extends js.Object {
     * generated any input for a specified number of seconds, and "active" when the user generates input on an idle
     * system.
     */
-  val onStateChanged: firefoxDashWebextDashBrowserLib.WebExtEvent[
-    js.Function1[
-      /* newState */ firefoxDashWebextDashBrowserLib.browserNs.idleNs.IdleState, 
-      scala.Unit
-    ]
-  ] = js.native
+  val onStateChanged: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* newState */ IdleState, scala.Unit]] = js.native
   /* idle functions */
   /**
     * Returns "idle" if the user has not generated any input for a specified number of seconds, or "active" otherwise.
     * @param detectionIntervalInSeconds The system is considered idle if detectionIntervalInSeconds seconds have
     *     elapsed since the last user input detected.
     */
-  def queryState(detectionIntervalInSeconds: scala.Double): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.idleNs.IdleState] = js.native
+  def queryState(detectionIntervalInSeconds: scala.Double): js.Promise[IdleState] = js.native
   /**
     * Sets the interval, in seconds, used to determine when the system is in an idle state for onStateChanged events.
     * The default interval is 60 seconds.

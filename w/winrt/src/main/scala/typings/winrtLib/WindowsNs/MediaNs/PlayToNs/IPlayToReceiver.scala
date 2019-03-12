@@ -40,18 +40,18 @@ object IPlayToReceiver {
   @scala.inline
   def apply(
     friendlyName: java.lang.String,
-    notifyDurationChange: js.Function1[scala.Double, scala.Unit],
-    notifyEnded: js.Function0[scala.Unit],
-    notifyError: js.Function0[scala.Unit],
-    notifyLoadedMetadata: js.Function0[scala.Unit],
-    notifyPaused: js.Function0[scala.Unit],
-    notifyPlaying: js.Function0[scala.Unit],
-    notifyRateChange: js.Function1[scala.Double, scala.Unit],
-    notifySeeked: js.Function0[scala.Unit],
-    notifySeeking: js.Function0[scala.Unit],
-    notifyStopped: js.Function0[scala.Unit],
-    notifyTimeUpdate: js.Function1[scala.Double, scala.Unit],
-    notifyVolumeChange: js.Function2[scala.Double, scala.Boolean, scala.Unit],
+    notifyDurationChange: scala.Double => scala.Unit,
+    notifyEnded: () => scala.Unit,
+    notifyError: () => scala.Unit,
+    notifyLoadedMetadata: () => scala.Unit,
+    notifyPaused: () => scala.Unit,
+    notifyPlaying: () => scala.Unit,
+    notifyRateChange: scala.Double => scala.Unit,
+    notifySeeked: () => scala.Unit,
+    notifySeeking: () => scala.Unit,
+    notifyStopped: () => scala.Unit,
+    notifyTimeUpdate: scala.Double => scala.Unit,
+    notifyVolumeChange: (scala.Double, scala.Boolean) => scala.Unit,
     oncurrenttimechangerequested: js.Any,
     onmutechangerequested: js.Any,
     onpauserequested: js.Any,
@@ -62,13 +62,13 @@ object IPlayToReceiver {
     ontimeupdaterequested: js.Any,
     onvolumechangerequested: js.Any,
     properties: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet,
-    startAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncAction],
-    stopAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncAction],
+    startAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncAction,
+    stopAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncAction,
     supportsAudio: scala.Boolean,
     supportsImage: scala.Boolean,
     supportsVideo: scala.Boolean
   ): IPlayToReceiver = {
-    val __obj = js.Dynamic.literal(friendlyName = friendlyName, notifyDurationChange = notifyDurationChange, notifyEnded = notifyEnded, notifyError = notifyError, notifyLoadedMetadata = notifyLoadedMetadata, notifyPaused = notifyPaused, notifyPlaying = notifyPlaying, notifyRateChange = notifyRateChange, notifySeeked = notifySeeked, notifySeeking = notifySeeking, notifyStopped = notifyStopped, notifyTimeUpdate = notifyTimeUpdate, notifyVolumeChange = notifyVolumeChange, oncurrenttimechangerequested = oncurrenttimechangerequested, onmutechangerequested = onmutechangerequested, onpauserequested = onpauserequested, onplaybackratechangerequested = onplaybackratechangerequested, onplayrequested = onplayrequested, onsourcechangerequested = onsourcechangerequested, onstoprequested = onstoprequested, ontimeupdaterequested = ontimeupdaterequested, onvolumechangerequested = onvolumechangerequested, properties = properties, startAsync = startAsync, stopAsync = stopAsync, supportsAudio = supportsAudio, supportsImage = supportsImage, supportsVideo = supportsVideo)
+    val __obj = js.Dynamic.literal(friendlyName = friendlyName, notifyDurationChange = js.Any.fromFunction1(notifyDurationChange), notifyEnded = js.Any.fromFunction0(notifyEnded), notifyError = js.Any.fromFunction0(notifyError), notifyLoadedMetadata = js.Any.fromFunction0(notifyLoadedMetadata), notifyPaused = js.Any.fromFunction0(notifyPaused), notifyPlaying = js.Any.fromFunction0(notifyPlaying), notifyRateChange = js.Any.fromFunction1(notifyRateChange), notifySeeked = js.Any.fromFunction0(notifySeeked), notifySeeking = js.Any.fromFunction0(notifySeeking), notifyStopped = js.Any.fromFunction0(notifyStopped), notifyTimeUpdate = js.Any.fromFunction1(notifyTimeUpdate), notifyVolumeChange = js.Any.fromFunction2(notifyVolumeChange), oncurrenttimechangerequested = oncurrenttimechangerequested, onmutechangerequested = onmutechangerequested, onpauserequested = onpauserequested, onplaybackratechangerequested = onplaybackratechangerequested, onplayrequested = onplayrequested, onsourcechangerequested = onsourcechangerequested, onstoprequested = onstoprequested, ontimeupdaterequested = ontimeupdaterequested, onvolumechangerequested = onvolumechangerequested, properties = properties, startAsync = js.Any.fromFunction0(startAsync), stopAsync = js.Any.fromFunction0(stopAsync), supportsAudio = supportsAudio, supportsImage = supportsImage, supportsVideo = supportsVideo)
   
     __obj.asInstanceOf[IPlayToReceiver]
   }

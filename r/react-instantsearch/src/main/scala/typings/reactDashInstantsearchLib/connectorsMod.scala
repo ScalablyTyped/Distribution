@@ -8,7 +8,19 @@ import scala.scalajs.js.annotation._
 @JSImport("react-instantsearch/connectors", JSImport.Namespace)
 @js.native
 object connectorsMod extends js.Object {
-  def connectAutoComplete(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  def connectAutoComplete[TDoc](
+    stateless: reactLib.reactMod.ReactNs.StatelessComponent[
+      reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.AutocompleteProvided[TDoc]
+    ]
+  ): reactLib.reactMod.ReactNs.ComponentClass[
+    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.AutocompleteExposed, 
+    reactLib.reactMod.ReactNs.ComponentState
+  ] = js.native
+  def connectAutoComplete[Props /* <: reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.AutocompleteProvided[TDoc] */, TDoc](Composed: reactLib.reactMod.ReactNs.ComponentType[Props]): reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.ConnectedComponentClass[
+    Props, 
+    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.AutocompleteProvided[TDoc], 
+    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.AutocompleteExposed
+  ] = js.native
   def connectBreadcrumb(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
   def connectConfigure(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
   def connectCurrentRefinements(
@@ -42,8 +54,34 @@ object connectorsMod extends js.Object {
     reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.GeoSearchExposed
   ] = js.native
   def connectHierarchicalMenu(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  def connectHighlight(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  def connectHits[TProps /* <: reactDashInstantsearchDashCoreLib.Anon_Hits[THit] */, THit](ctor: reactLib.reactMod.ReactNs.ComponentType[TProps]): reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.ConnectedComponentClass[TProps, reactDashInstantsearchDashCoreLib.Anon_HitsArray[THit], js.Object] = js.native
+  def connectHighlight[TDoc](
+    stateless: reactLib.reactMod.ReactNs.StatelessComponent[
+      reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.HighlightProps[TDoc]
+    ]
+  ): reactLib.reactMod.ReactNs.ComponentClass[
+    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.HighlightPassedThru[TDoc], 
+    reactLib.reactMod.ReactNs.ComponentState
+  ] = js.native
+  def connectHighlight[TProps /* <: stdLib.Partial[
+    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.HighlightProps[TDoc]
+  ] */, TDoc](ctor: reactLib.reactMod.ReactNs.ComponentType[TProps]): reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.ConnectedComponentClass[
+    TProps, 
+    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.HighlightProvided[TDoc], 
+    js.Object
+  ] = js.native
+  def connectHits[THit](
+    stateless: reactLib.reactMod.ReactNs.StatelessComponent[
+      reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.HitsProvided[THit]
+    ]
+  ): reactLib.reactMod.ReactNs.ComponentClass[
+    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.HighlightPassedThru[_], 
+    reactLib.reactMod.ReactNs.ComponentState
+  ] = js.native
+  def connectHits[TProps /* <: reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.HitsProvided[THit] */, THit](ctor: reactLib.reactMod.ReactNs.ComponentType[TProps]): reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.ConnectedComponentClass[
+    TProps, 
+    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.HitsProvided[THit], 
+    js.Object
+  ] = js.native
   def connectHitsPerPage(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
   def connectInfiniteHits(
     Composed: reactLib.reactMod.ReactNs.ComponentType[
@@ -124,12 +162,25 @@ object connectorsMod extends js.Object {
       reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.StateResultsProvided[reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.BasicDoc]
     ]
   ): reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  def connectStateResults[TProps](ctor: reactLib.reactMod.ReactNs.ComponentType[TProps]): reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.ConnectedComponentClass[
+  def connectStateResults[TProps /* <: stdLib.Partial[
+    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.StateResultsProvided[_]
+  ] */](ctor: reactLib.reactMod.ReactNs.ComponentType[TProps]): reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.ConnectedComponentClass[
     TProps, 
-    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.StateResultsProvided[js.Object], 
+    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.StateResultsProvided[reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.BasicDoc], 
     js.Object
   ] = js.native
-  def connectStats(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  def connectStats(
+    stateless: reactLib.reactMod.ReactNs.StatelessComponent[
+      reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.StatsProvided
+    ]
+  ): reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  def connectStats[TProps /* <: stdLib.Partial[
+    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.StatsProvided
+  ] */](ctor: reactLib.reactMod.ReactNs.ComponentType[TProps]): reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.ConnectedComponentClass[
+    TProps, 
+    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.StatsProvided, 
+    js.Object
+  ] = js.native
   def connectToggleRefinement(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
 }
 

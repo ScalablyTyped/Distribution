@@ -36,11 +36,11 @@ object LocalFileSystemSync {
   def apply(
     PERSISTENT: scala.Double,
     TEMPORARY: scala.Double,
-    requestFileSystemSync: js.Function2[scala.Double, scala.Double, FileSystemSync],
-    resolveLocalFileSystemSyncURL: js.Function1[java.lang.String, EntrySync],
-    webkitRequestFileSystemSync: js.Function2[scala.Double, scala.Double, FileSystemSync]
+    requestFileSystemSync: (scala.Double, scala.Double) => FileSystemSync,
+    resolveLocalFileSystemSyncURL: java.lang.String => EntrySync,
+    webkitRequestFileSystemSync: (scala.Double, scala.Double) => FileSystemSync
   ): LocalFileSystemSync = {
-    val __obj = js.Dynamic.literal(PERSISTENT = PERSISTENT, TEMPORARY = TEMPORARY, requestFileSystemSync = requestFileSystemSync, resolveLocalFileSystemSyncURL = resolveLocalFileSystemSyncURL, webkitRequestFileSystemSync = webkitRequestFileSystemSync)
+    val __obj = js.Dynamic.literal(PERSISTENT = PERSISTENT, TEMPORARY = TEMPORARY, requestFileSystemSync = js.Any.fromFunction2(requestFileSystemSync), resolveLocalFileSystemSyncURL = js.Any.fromFunction1(resolveLocalFileSystemSyncURL), webkitRequestFileSystemSync = js.Any.fromFunction2(webkitRequestFileSystemSync))
   
     __obj.asInstanceOf[LocalFileSystemSync]
   }

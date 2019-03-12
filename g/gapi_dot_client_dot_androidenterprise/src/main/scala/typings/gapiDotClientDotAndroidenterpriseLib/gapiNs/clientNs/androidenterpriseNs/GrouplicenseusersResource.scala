@@ -13,12 +13,9 @@ trait GrouplicenseusersResource extends js.Object {
 object GrouplicenseusersResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsGroupLicenseId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GroupLicenseUsersListResponse]
-    ]
+    list: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsGroupLicenseId => gapiDotClientLib.gapiNs.clientNs.Request[GroupLicenseUsersListResponse]
   ): GrouplicenseusersResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[GrouplicenseusersResource]
   }

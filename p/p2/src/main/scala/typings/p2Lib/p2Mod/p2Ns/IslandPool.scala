@@ -13,14 +13,14 @@ trait IslandPool extends Pool {
 object IslandPool {
   @scala.inline
   def apply(
-    create: js.Function0[Island],
-    destroy: js.Function1[Island, IslandPool],
-    get: js.Function0[js.Any],
+    create: () => Island,
+    destroy: Island => IslandPool,
+    get: () => js.Any,
     objects: js.Array[_],
-    release: js.Function1[js.Any, Pool],
-    resize: js.Function1[scala.Double, Pool]
+    release: js.Any => Pool,
+    resize: scala.Double => Pool
   ): IslandPool = {
-    val __obj = js.Dynamic.literal(create = create, destroy = destroy, get = get, objects = objects, release = release, resize = resize)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), destroy = js.Any.fromFunction1(destroy), get = js.Any.fromFunction0(get), objects = objects, release = js.Any.fromFunction1(release), resize = js.Any.fromFunction1(resize))
   
     __obj.asInstanceOf[IslandPool]
   }

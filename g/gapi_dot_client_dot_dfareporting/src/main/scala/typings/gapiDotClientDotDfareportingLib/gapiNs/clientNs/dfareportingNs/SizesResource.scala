@@ -17,20 +17,11 @@ trait SizesResource extends js.Object {
 object SizesResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Size]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Size]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsHeight, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SizesListResponse]
-    ]
+    get: gapiDotClientDotDfareportingLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Size],
+    insert: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Size],
+    list: gapiDotClientDotDfareportingLib.Anon_AltFieldsHeight => gapiDotClientLib.gapiNs.clientNs.Request[SizesListResponse]
   ): SizesResource = {
-    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[SizesResource]
   }

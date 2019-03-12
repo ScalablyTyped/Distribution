@@ -21,8 +21,8 @@ trait Anon_ToSections extends js.Object {
 
 object Anon_ToSections {
   @scala.inline
-  def apply(toSections: js.Function0[scala.Unit], toSlides: js.Function0[scala.Unit]): Anon_ToSections = {
-    val __obj = js.Dynamic.literal(toSections = toSections, toSlides = toSlides)
+  def apply(toSections: () => scala.Unit, toSlides: () => scala.Unit): Anon_ToSections = {
+    val __obj = js.Dynamic.literal(toSections = js.Any.fromFunction0(toSections), toSlides = js.Any.fromFunction0(toSlides))
   
     __obj.asInstanceOf[Anon_ToSections]
   }

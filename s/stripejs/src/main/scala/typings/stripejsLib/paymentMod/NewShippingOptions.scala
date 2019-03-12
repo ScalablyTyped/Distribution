@@ -19,11 +19,8 @@ trait NewShippingOptions extends js.Object {
 
 object NewShippingOptions {
   @scala.inline
-  def apply(
-    shippingOption: stripejsLib.shippingMod.ShippingOption,
-    updateWith: js.Function1[UpdateOptions, scala.Unit]
-  ): NewShippingOptions = {
-    val __obj = js.Dynamic.literal(shippingOption = shippingOption, updateWith = updateWith)
+  def apply(shippingOption: stripejsLib.shippingMod.ShippingOption, updateWith: UpdateOptions => scala.Unit): NewShippingOptions = {
+    val __obj = js.Dynamic.literal(shippingOption = shippingOption, updateWith = js.Any.fromFunction1(updateWith))
   
     __obj.asInstanceOf[NewShippingOptions]
   }

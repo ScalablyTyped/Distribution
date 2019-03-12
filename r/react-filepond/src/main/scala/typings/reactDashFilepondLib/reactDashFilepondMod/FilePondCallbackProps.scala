@@ -70,46 +70,36 @@ trait FilePondCallbackProps extends js.Object {
 object FilePondCallbackProps {
   @scala.inline
   def apply(
-    onaddfile: js.Function2[/* file */ File, /* error */ FilePondErrorDescription, scala.Unit] = null,
-    onaddfileprogress: js.Function2[/* file */ File, /* progress */ scala.Double, scala.Unit] = null,
-    onaddfilestart: js.Function1[/* file */ File, scala.Unit] = null,
-    onerror: js.Function3[
-      /* file */ js.UndefOr[File], 
-      /* error */ js.UndefOr[FilePondErrorDescription], 
-      /* status */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    oninit: js.Function0[scala.Unit] = null,
-    onpreparefile: js.Function2[/* file */ File, /* output */ js.Any, scala.Unit] = null,
-    onprocessfile: js.Function2[/* file */ File, /* error */ FilePondErrorDescription, scala.Unit] = null,
-    onprocessfileabort: js.Function1[/* file */ File, scala.Unit] = null,
-    onprocessfileprogress: js.Function2[/* file */ File, /* progress */ scala.Double, scala.Unit] = null,
-    onprocessfilestart: js.Function1[/* file */ File, scala.Unit] = null,
-    onprocessfileundo: js.Function1[/* file */ File, scala.Unit] = null,
-    onremovefile: js.Function1[/* file */ File, scala.Unit] = null,
-    onupdatefiles: js.Function1[/* fileItems */ js.Array[File], scala.Unit] = null,
-    onwarning: js.Function3[
-      /* error */ js.Any, 
-      /* file */ js.UndefOr[File], 
-      /* status */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null
+    onaddfile: (/* file */ File, /* error */ FilePondErrorDescription) => scala.Unit = null,
+    onaddfileprogress: (/* file */ File, /* progress */ scala.Double) => scala.Unit = null,
+    onaddfilestart: /* file */ File => scala.Unit = null,
+    onerror: (/* file */ js.UndefOr[File], /* error */ js.UndefOr[FilePondErrorDescription], /* status */ js.UndefOr[js.Any]) => scala.Unit = null,
+    oninit: () => scala.Unit = null,
+    onpreparefile: (/* file */ File, /* output */ js.Any) => scala.Unit = null,
+    onprocessfile: (/* file */ File, /* error */ FilePondErrorDescription) => scala.Unit = null,
+    onprocessfileabort: /* file */ File => scala.Unit = null,
+    onprocessfileprogress: (/* file */ File, /* progress */ scala.Double) => scala.Unit = null,
+    onprocessfilestart: /* file */ File => scala.Unit = null,
+    onprocessfileundo: /* file */ File => scala.Unit = null,
+    onremovefile: /* file */ File => scala.Unit = null,
+    onupdatefiles: /* fileItems */ js.Array[File] => scala.Unit = null,
+    onwarning: (/* error */ js.Any, /* file */ js.UndefOr[File], /* status */ js.UndefOr[js.Any]) => scala.Unit = null
   ): FilePondCallbackProps = {
     val __obj = js.Dynamic.literal()
-    if (onaddfile != null) __obj.updateDynamic("onaddfile")(onaddfile)
-    if (onaddfileprogress != null) __obj.updateDynamic("onaddfileprogress")(onaddfileprogress)
-    if (onaddfilestart != null) __obj.updateDynamic("onaddfilestart")(onaddfilestart)
-    if (onerror != null) __obj.updateDynamic("onerror")(onerror)
-    if (oninit != null) __obj.updateDynamic("oninit")(oninit)
-    if (onpreparefile != null) __obj.updateDynamic("onpreparefile")(onpreparefile)
-    if (onprocessfile != null) __obj.updateDynamic("onprocessfile")(onprocessfile)
-    if (onprocessfileabort != null) __obj.updateDynamic("onprocessfileabort")(onprocessfileabort)
-    if (onprocessfileprogress != null) __obj.updateDynamic("onprocessfileprogress")(onprocessfileprogress)
-    if (onprocessfilestart != null) __obj.updateDynamic("onprocessfilestart")(onprocessfilestart)
-    if (onprocessfileundo != null) __obj.updateDynamic("onprocessfileundo")(onprocessfileundo)
-    if (onremovefile != null) __obj.updateDynamic("onremovefile")(onremovefile)
-    if (onupdatefiles != null) __obj.updateDynamic("onupdatefiles")(onupdatefiles)
-    if (onwarning != null) __obj.updateDynamic("onwarning")(onwarning)
+    if (onaddfile != null) __obj.updateDynamic("onaddfile")(js.Any.fromFunction2(onaddfile))
+    if (onaddfileprogress != null) __obj.updateDynamic("onaddfileprogress")(js.Any.fromFunction2(onaddfileprogress))
+    if (onaddfilestart != null) __obj.updateDynamic("onaddfilestart")(js.Any.fromFunction1(onaddfilestart))
+    if (onerror != null) __obj.updateDynamic("onerror")(js.Any.fromFunction3(onerror))
+    if (oninit != null) __obj.updateDynamic("oninit")(js.Any.fromFunction0(oninit))
+    if (onpreparefile != null) __obj.updateDynamic("onpreparefile")(js.Any.fromFunction2(onpreparefile))
+    if (onprocessfile != null) __obj.updateDynamic("onprocessfile")(js.Any.fromFunction2(onprocessfile))
+    if (onprocessfileabort != null) __obj.updateDynamic("onprocessfileabort")(js.Any.fromFunction1(onprocessfileabort))
+    if (onprocessfileprogress != null) __obj.updateDynamic("onprocessfileprogress")(js.Any.fromFunction2(onprocessfileprogress))
+    if (onprocessfilestart != null) __obj.updateDynamic("onprocessfilestart")(js.Any.fromFunction1(onprocessfilestart))
+    if (onprocessfileundo != null) __obj.updateDynamic("onprocessfileundo")(js.Any.fromFunction1(onprocessfileundo))
+    if (onremovefile != null) __obj.updateDynamic("onremovefile")(js.Any.fromFunction1(onremovefile))
+    if (onupdatefiles != null) __obj.updateDynamic("onupdatefiles")(js.Any.fromFunction1(onupdatefiles))
+    if (onwarning != null) __obj.updateDynamic("onwarning")(js.Any.fromFunction3(onwarning))
     __obj.asInstanceOf[FilePondCallbackProps]
   }
 }

@@ -138,71 +138,47 @@ object XSingleSelectQueryComposer {
     OrderColumns: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
     Query: java.lang.String,
     QueryWithSubstitution: java.lang.String,
-    StructuredFilter: activexDashInteropLib.SafeArray[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    StructuredFilter: stdLib.SafeArray[
+      stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
     ],
-    StructuredHavingClause: activexDashInteropLib.SafeArray[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    StructuredHavingClause: stdLib.SafeArray[
+      stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
     ],
-    acquire: js.Function0[scala.Unit],
-    appendFilterByColumn: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
-      scala.Boolean, 
-      scala.Double, 
-      scala.Unit
+    acquire: () => scala.Unit,
+    appendFilterByColumn: (activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, scala.Boolean, scala.Double) => scala.Unit,
+    appendGroupByColumn: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet => scala.Unit,
+    appendHavingClauseByColumn: (activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, scala.Boolean, scala.Double) => scala.Unit,
+    appendOrderByColumn: (activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, scala.Boolean) => scala.Unit,
+    getFilter: () => java.lang.String,
+    getGroup: () => java.lang.String,
+    getGroupColumns: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    getHavingClause: () => java.lang.String,
+    getOrder: () => java.lang.String,
+    getOrderColumns: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    getQuery: () => java.lang.String,
+    getQueryWithSubstitution: () => java.lang.String,
+    getStructuredFilter: () => stdLib.SafeArray[
+      stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
     ],
-    appendGroupByColumn: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, scala.Unit],
-    appendHavingClauseByColumn: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
-      scala.Boolean, 
-      scala.Double, 
-      scala.Unit
+    getStructuredHavingClause: () => stdLib.SafeArray[
+      stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
     ],
-    appendOrderByColumn: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
-      scala.Boolean, 
-      scala.Unit
-    ],
-    getFilter: js.Function0[java.lang.String],
-    getGroup: js.Function0[java.lang.String],
-    getGroupColumns: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
-    getHavingClause: js.Function0[java.lang.String],
-    getOrder: js.Function0[java.lang.String],
-    getOrderColumns: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
-    getQuery: js.Function0[java.lang.String],
-    getQueryWithSubstitution: js.Function0[java.lang.String],
-    getStructuredFilter: js.Function0[
-      activexDashInteropLib.SafeArray[
-        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-      ]
-    ],
-    getStructuredHavingClause: js.Function0[
-      activexDashInteropLib.SafeArray[
-        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-      ]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setCommand: js.Function2[java.lang.String, scala.Double, scala.Unit],
-    setFilter: js.Function1[java.lang.String, scala.Unit],
-    setGroup: js.Function1[java.lang.String, scala.Unit],
-    setHavingClause: js.Function1[java.lang.String, scala.Unit],
-    setOrder: js.Function1[java.lang.String, scala.Unit],
-    setQuery: js.Function1[java.lang.String, scala.Unit],
-    setStructuredFilter: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
-        activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-      ], 
-      scala.Unit
-    ],
-    setStructuredHavingClause: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
-        activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-      ], 
-      scala.Unit
-    ]
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setCommand: (java.lang.String, scala.Double) => scala.Unit,
+    setFilter: java.lang.String => scala.Unit,
+    setGroup: java.lang.String => scala.Unit,
+    setHavingClause: java.lang.String => scala.Unit,
+    setOrder: java.lang.String => scala.Unit,
+    setQuery: java.lang.String => scala.Unit,
+    setStructuredFilter: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ] => scala.Unit,
+    setStructuredHavingClause: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ] => scala.Unit
   ): XSingleSelectQueryComposer = {
-    val __obj = js.Dynamic.literal(ElementaryQuery = ElementaryQuery, Filter = Filter, Group = Group, GroupColumns = GroupColumns, HavingClause = HavingClause, Order = Order, OrderColumns = OrderColumns, Query = Query, QueryWithSubstitution = QueryWithSubstitution, StructuredFilter = StructuredFilter, StructuredHavingClause = StructuredHavingClause, acquire = acquire, appendFilterByColumn = appendFilterByColumn, appendGroupByColumn = appendGroupByColumn, appendHavingClauseByColumn = appendHavingClauseByColumn, appendOrderByColumn = appendOrderByColumn, getFilter = getFilter, getGroup = getGroup, getGroupColumns = getGroupColumns, getHavingClause = getHavingClause, getOrder = getOrder, getOrderColumns = getOrderColumns, getQuery = getQuery, getQueryWithSubstitution = getQueryWithSubstitution, getStructuredFilter = getStructuredFilter, getStructuredHavingClause = getStructuredHavingClause, queryInterface = queryInterface, release = release, setCommand = setCommand, setFilter = setFilter, setGroup = setGroup, setHavingClause = setHavingClause, setOrder = setOrder, setQuery = setQuery, setStructuredFilter = setStructuredFilter, setStructuredHavingClause = setStructuredHavingClause)
+    val __obj = js.Dynamic.literal(ElementaryQuery = ElementaryQuery, Filter = Filter, Group = Group, GroupColumns = GroupColumns, HavingClause = HavingClause, Order = Order, OrderColumns = OrderColumns, Query = Query, QueryWithSubstitution = QueryWithSubstitution, StructuredFilter = StructuredFilter, StructuredHavingClause = StructuredHavingClause, acquire = js.Any.fromFunction0(acquire), appendFilterByColumn = js.Any.fromFunction3(appendFilterByColumn), appendGroupByColumn = js.Any.fromFunction1(appendGroupByColumn), appendHavingClauseByColumn = js.Any.fromFunction3(appendHavingClauseByColumn), appendOrderByColumn = js.Any.fromFunction2(appendOrderByColumn), getFilter = js.Any.fromFunction0(getFilter), getGroup = js.Any.fromFunction0(getGroup), getGroupColumns = js.Any.fromFunction0(getGroupColumns), getHavingClause = js.Any.fromFunction0(getHavingClause), getOrder = js.Any.fromFunction0(getOrder), getOrderColumns = js.Any.fromFunction0(getOrderColumns), getQuery = js.Any.fromFunction0(getQuery), getQueryWithSubstitution = js.Any.fromFunction0(getQueryWithSubstitution), getStructuredFilter = js.Any.fromFunction0(getStructuredFilter), getStructuredHavingClause = js.Any.fromFunction0(getStructuredHavingClause), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setCommand = js.Any.fromFunction2(setCommand), setFilter = js.Any.fromFunction1(setFilter), setGroup = js.Any.fromFunction1(setGroup), setHavingClause = js.Any.fromFunction1(setHavingClause), setOrder = js.Any.fromFunction1(setOrder), setQuery = js.Any.fromFunction1(setQuery), setStructuredFilter = js.Any.fromFunction1(setStructuredFilter), setStructuredHavingClause = js.Any.fromFunction1(setStructuredHavingClause))
   
     __obj.asInstanceOf[XSingleSelectQueryComposer]
   }

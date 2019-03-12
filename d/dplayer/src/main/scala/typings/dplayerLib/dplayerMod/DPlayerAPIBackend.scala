@@ -13,10 +13,10 @@ trait DPlayerAPIBackend extends js.Object {
 object DPlayerAPIBackend {
   @scala.inline
   def apply(
-    read: js.Function2[js.Any, js.Function0[scala.Unit], scala.Unit],
-    send: js.Function3[js.Any, DPlayerDanmakuItem, js.Function0[scala.Unit], scala.Unit]
+    read: (js.Any, js.Function0[scala.Unit]) => scala.Unit,
+    send: (js.Any, DPlayerDanmakuItem, js.Function0[scala.Unit]) => scala.Unit
   ): DPlayerAPIBackend = {
-    val __obj = js.Dynamic.literal(read = read, send = send)
+    val __obj = js.Dynamic.literal(read = js.Any.fromFunction2(read), send = js.Any.fromFunction3(send))
   
     __obj.asInstanceOf[DPlayerAPIBackend]
   }

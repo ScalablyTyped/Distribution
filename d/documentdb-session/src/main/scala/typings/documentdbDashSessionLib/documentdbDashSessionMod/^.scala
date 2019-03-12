@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("documentdb-session", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(expressSession: documentdbDashSessionLib.Anon_MemoryStore): documentdbDashSessionLib.documentdbDashSessionMod.DocumentDBStoreConstructor = js.native
+  def apply(expressSession: documentdbDashSessionLib.Anon_MemoryStore): DocumentDBStoreConstructor = js.native
 }
 

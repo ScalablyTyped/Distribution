@@ -111,7 +111,7 @@ trait SMTPServerOptions
       /* auth */ SMTPServerAuthentication, 
       /* session */ SMTPServerSession, 
       /* callback */ js.Function2[
-        /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+        /* err */ js.UndefOr[stdLib.Error | scala.Null], 
         /* response */ js.UndefOr[SMTPServerAuthenticationResponse], 
         scala.Unit
       ], 
@@ -124,7 +124,7 @@ trait SMTPServerOptions
   var onClose: js.UndefOr[
     js.Function2[
       /* session */ SMTPServerSession, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -134,7 +134,7 @@ trait SMTPServerOptions
   var onConnect: js.UndefOr[
     js.Function2[
       /* session */ SMTPServerSession, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -145,7 +145,7 @@ trait SMTPServerOptions
     js.Function3[
       /* stream */ SMTPServerDataStream, 
       /* session */ SMTPServerSession, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -156,7 +156,7 @@ trait SMTPServerOptions
     js.Function3[
       /* address */ SMTPServerAddress, 
       /* session */ SMTPServerSession, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -167,7 +167,7 @@ trait SMTPServerOptions
     js.Function3[
       /* address */ SMTPServerAddress, 
       /* session */ SMTPServerSession, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -191,7 +191,7 @@ trait SMTPServerOptions
     * optional Map or an object of TLS options for SNI where servername is the key. Overrided by SNICallback.
     */
   var sniOptions: js.UndefOr[
-    org.scalablytyped.runtime.StringDictionary[nodeLib.tlsMod.TlsOptions] | (nodeLib.Map[java.lang.String, nodeLib.tlsMod.TlsOptions])
+    org.scalablytyped.runtime.StringDictionary[nodeLib.tlsMod.TlsOptions] | (stdLib.Map[java.lang.String, nodeLib.tlsMod.TlsOptions])
   ] = js.undefined
   /**
     * How many milliseconds of inactivity to allow before disconnecting the client (defaults to 1 minute)
@@ -220,15 +220,11 @@ object SMTPServerOptions {
   def apply(
     ALPNProtocols: js.Array[java.lang.String] | js.Array[nodeLib.Buffer] | js.Array[stdLib.Uint8Array] | nodeLib.Buffer | stdLib.Uint8Array = null,
     NPNProtocols: js.Array[java.lang.String] | js.Array[nodeLib.Buffer] | js.Array[stdLib.Uint8Array] | nodeLib.Buffer | stdLib.Uint8Array = null,
-    SNICallback: js.Function2[
-      /* servername */ java.lang.String, 
-      /* cb */ js.Function2[
-        /* err */ nodeLib.Error | scala.Null, 
-        /* ctx */ nodeLib.tlsMod.SecureContext, 
-        scala.Unit
-      ], 
+    SNICallback: (/* servername */ java.lang.String, /* cb */ js.Function2[
+      /* err */ nodeLib.Error | scala.Null, 
+      /* ctx */ nodeLib.tlsMod.SecureContext, 
       scala.Unit
-    ] = null,
+    ]) => scala.Unit = null,
     allowInsecureAuth: js.UndefOr[scala.Boolean] = js.undefined,
     authMethods: js.Array[java.lang.String] = null,
     authOptional: js.UndefOr[scala.Boolean] = js.undefined,
@@ -257,44 +253,16 @@ object SMTPServerOptions {
     minVersion: nodeLib.tlsMod.SecureVersion = null,
     name: java.lang.String = null,
     needsUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
-    onAuth: js.Function3[
-      /* auth */ SMTPServerAuthentication, 
-      /* session */ SMTPServerSession, 
-      /* callback */ js.Function2[
-        /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-        /* response */ js.UndefOr[SMTPServerAuthenticationResponse], 
-        scala.Unit
-      ], 
+    onAuth: (/* auth */ SMTPServerAuthentication, /* session */ SMTPServerSession, /* callback */ js.Function2[
+      /* err */ js.UndefOr[stdLib.Error | scala.Null], 
+      /* response */ js.UndefOr[SMTPServerAuthenticationResponse], 
       scala.Unit
-    ] = null,
-    onClose: js.Function2[
-      /* session */ SMTPServerSession, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
-      scala.Unit
-    ] = null,
-    onConnect: js.Function2[
-      /* session */ SMTPServerSession, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
-      scala.Unit
-    ] = null,
-    onData: js.Function3[
-      /* stream */ SMTPServerDataStream, 
-      /* session */ SMTPServerSession, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
-      scala.Unit
-    ] = null,
-    onMailFrom: js.Function3[
-      /* address */ SMTPServerAddress, 
-      /* session */ SMTPServerSession, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
-      scala.Unit
-    ] = null,
-    onRcptTo: js.Function3[
-      /* address */ SMTPServerAddress, 
-      /* session */ SMTPServerSession, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
-      scala.Unit
-    ] = null,
+    ]) => scala.Unit = null,
+    onClose: (/* session */ SMTPServerSession, /* callback */ js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]) => scala.Unit = null,
+    onConnect: (/* session */ SMTPServerSession, /* callback */ js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]) => scala.Unit = null,
+    onData: (/* stream */ SMTPServerDataStream, /* session */ SMTPServerSession, /* callback */ js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]) => scala.Unit = null,
+    onMailFrom: (/* address */ SMTPServerAddress, /* session */ SMTPServerSession, /* callback */ js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]) => scala.Unit = null,
+    onRcptTo: (/* address */ SMTPServerAddress, /* session */ SMTPServerSession, /* callback */ js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]) => scala.Unit = null,
     passphrase: java.lang.String = null,
     pfx: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer | js.Object]) = null,
     rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined,
@@ -306,7 +274,7 @@ object SMTPServerOptions {
     sessionIdContext: java.lang.String = null,
     sessionTimeout: scala.Int | scala.Double = null,
     size: scala.Int | scala.Double = null,
-    sniOptions: org.scalablytyped.runtime.StringDictionary[nodeLib.tlsMod.TlsOptions] | (nodeLib.Map[java.lang.String, nodeLib.tlsMod.TlsOptions]) = null,
+    sniOptions: org.scalablytyped.runtime.StringDictionary[nodeLib.tlsMod.TlsOptions] | (stdLib.Map[java.lang.String, nodeLib.tlsMod.TlsOptions]) = null,
     socketTimeout: js.UndefOr[ms] = js.undefined,
     ticketKeys: nodeLib.Buffer = null,
     useProxy: js.UndefOr[scala.Boolean] = js.undefined,
@@ -316,7 +284,7 @@ object SMTPServerOptions {
     val __obj = js.Dynamic.literal()
     if (ALPNProtocols != null) __obj.updateDynamic("ALPNProtocols")(ALPNProtocols.asInstanceOf[js.Any])
     if (NPNProtocols != null) __obj.updateDynamic("NPNProtocols")(NPNProtocols.asInstanceOf[js.Any])
-    if (SNICallback != null) __obj.updateDynamic("SNICallback")(SNICallback)
+    if (SNICallback != null) __obj.updateDynamic("SNICallback")(js.Any.fromFunction2(SNICallback))
     if (!js.isUndefined(allowInsecureAuth)) __obj.updateDynamic("allowInsecureAuth")(allowInsecureAuth)
     if (authMethods != null) __obj.updateDynamic("authMethods")(authMethods)
     if (!js.isUndefined(authOptional)) __obj.updateDynamic("authOptional")(authOptional)
@@ -345,12 +313,12 @@ object SMTPServerOptions {
     if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion)
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(needsUpgrade)) __obj.updateDynamic("needsUpgrade")(needsUpgrade)
-    if (onAuth != null) __obj.updateDynamic("onAuth")(onAuth)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onConnect != null) __obj.updateDynamic("onConnect")(onConnect)
-    if (onData != null) __obj.updateDynamic("onData")(onData)
-    if (onMailFrom != null) __obj.updateDynamic("onMailFrom")(onMailFrom)
-    if (onRcptTo != null) __obj.updateDynamic("onRcptTo")(onRcptTo)
+    if (onAuth != null) __obj.updateDynamic("onAuth")(js.Any.fromFunction3(onAuth))
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2(onClose))
+    if (onConnect != null) __obj.updateDynamic("onConnect")(js.Any.fromFunction2(onConnect))
+    if (onData != null) __obj.updateDynamic("onData")(js.Any.fromFunction3(onData))
+    if (onMailFrom != null) __obj.updateDynamic("onMailFrom")(js.Any.fromFunction3(onMailFrom))
+    if (onRcptTo != null) __obj.updateDynamic("onRcptTo")(js.Any.fromFunction3(onRcptTo))
     if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
     if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)

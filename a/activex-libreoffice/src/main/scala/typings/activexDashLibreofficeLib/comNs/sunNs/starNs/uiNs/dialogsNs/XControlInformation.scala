@@ -15,19 +15,19 @@ trait XControlInformation
     * Query for the supported controls of a service instance.
     * @returns a sequence with the names of the supported controls.
     */
-  val SupportedControls: activexDashInteropLib.SafeArray[java.lang.String]
+  val SupportedControls: stdLib.SafeArray[java.lang.String]
   /**
     * Returns a sequence with properties supported by the specified control.
     * @param aControlName The name of the control. Common control names are for instance "OkButton" or "CancelButton".
     * @returns a sequence of control properties supported by the specified control.
     * @throws com::sun::star::lang::IllegalArgumentException when the specified control is not supported.
     */
-  def getSupportedControlProperties(aControlName: java.lang.String): activexDashInteropLib.SafeArray[java.lang.String]
+  def getSupportedControlProperties(aControlName: java.lang.String): stdLib.SafeArray[java.lang.String]
   /**
     * Query for the supported controls of a service instance.
     * @returns a sequence with the names of the supported controls.
     */
-  def getSupportedControls(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getSupportedControls(): stdLib.SafeArray[java.lang.String]
   /**
     * Returns whether control property is supported by a control.
     * @param aControlName The name of the control.
@@ -47,16 +47,16 @@ trait XControlInformation
 object XControlInformation {
   @scala.inline
   def apply(
-    SupportedControls: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    getSupportedControlProperties: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[java.lang.String]],
-    getSupportedControls: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    isControlPropertySupported: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    isControlSupported: js.Function1[java.lang.String, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    SupportedControls: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    getSupportedControlProperties: java.lang.String => stdLib.SafeArray[java.lang.String],
+    getSupportedControls: () => stdLib.SafeArray[java.lang.String],
+    isControlPropertySupported: (java.lang.String, java.lang.String) => scala.Boolean,
+    isControlSupported: java.lang.String => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XControlInformation = {
-    val __obj = js.Dynamic.literal(SupportedControls = SupportedControls, acquire = acquire, getSupportedControlProperties = getSupportedControlProperties, getSupportedControls = getSupportedControls, isControlPropertySupported = isControlPropertySupported, isControlSupported = isControlSupported, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(SupportedControls = SupportedControls, acquire = js.Any.fromFunction0(acquire), getSupportedControlProperties = js.Any.fromFunction1(getSupportedControlProperties), getSupportedControls = js.Any.fromFunction0(getSupportedControls), isControlPropertySupported = js.Any.fromFunction2(isControlPropertySupported), isControlSupported = js.Any.fromFunction1(isControlSupported), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XControlInformation]
   }

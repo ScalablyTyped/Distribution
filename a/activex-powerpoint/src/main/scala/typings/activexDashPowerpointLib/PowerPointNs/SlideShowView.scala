@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class SlideShowView protected () extends js.Object {
   var AcceleratorsEnabled: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   val AdvanceMode: PpSlideShowAdvanceMode = js.native
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   val CurrentShowPosition: scala.Double = js.native
   val IsNamedShow: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   val LastSlideViewed: Slide = js.native
@@ -24,7 +24,7 @@ class SlideShowView protected () extends js.Object {
   var PointerType: PpSlideShowPointerType = js.native
   var `PowerPoint.SlideShowView_typekey`: SlideShowView = js.native
   val PresentationElapsedTime: scala.Double = js.native
-  val Slide: Slide = js.native
+  val Slide: activexDashPowerpointLib.PowerPointNs.Slide = js.native
   var SlideElapsedTime: scala.Double = js.native
   val SlideShowName: java.lang.String = js.native
   var State: PpSlideShowState = js.native
@@ -45,7 +45,7 @@ class SlideShowView protected () extends js.Object {
   def InstallTracker(pTracker: MouseTracker, Presenter: activexDashOfficeLib.OfficeNs.MsoTriState): scala.Unit = js.native
   def Last(): scala.Unit = js.native
   def Next(): scala.Unit = js.native
-  def Player(ShapeId: js.Any): Player = js.native
+  def Player(ShapeId: js.Any): activexDashPowerpointLib.PowerPointNs.Player = js.native
   def Previous(): scala.Unit = js.native
   def ResetSlideTime(): scala.Unit = js.native
 }

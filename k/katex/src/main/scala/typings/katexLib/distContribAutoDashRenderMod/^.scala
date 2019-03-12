@@ -14,9 +14,6 @@ object ^ extends js.Object {
     * @param options Render options
     */
   def default(elem: stdLib.HTMLElement): scala.Unit = js.native
-  def default(
-    elem: stdLib.HTMLElement,
-    options: katexLib.distContribAutoDashRenderMod.RenderMathInElementOptions
-  ): scala.Unit = js.native
+  def default(elem: stdLib.HTMLElement, options: RenderMathInElementOptions): scala.Unit = js.native
 }
 

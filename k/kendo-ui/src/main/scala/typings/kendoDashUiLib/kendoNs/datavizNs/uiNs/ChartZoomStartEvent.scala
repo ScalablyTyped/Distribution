@@ -13,13 +13,13 @@ trait ChartZoomStartEvent extends ChartEvent {
 object ChartZoomStartEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Chart,
     axisRanges: js.Any = null,
     originalEvent: js.Any = null
   ): ChartZoomStartEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (axisRanges != null) __obj.updateDynamic("axisRanges")(axisRanges)
     if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
     __obj.asInstanceOf[ChartZoomStartEvent]

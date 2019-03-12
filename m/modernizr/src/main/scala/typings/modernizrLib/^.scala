@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var Modernizr: modernizrLib.ModernizrStatic = js.native
+  var Modernizr: ModernizrStatic = js.native
 }
 

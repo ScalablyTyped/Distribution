@@ -18,12 +18,12 @@ trait XDrawPageSummarizer
 object XDrawPageSummarizer {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    summarize: js.Function1[XDrawPages, XDrawPage]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    summarize: XDrawPages => XDrawPage
   ): XDrawPageSummarizer = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, summarize = summarize)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), summarize = js.Any.fromFunction1(summarize))
   
     __obj.asInstanceOf[XDrawPageSummarizer]
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Calendar: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsCalendarMod.CalendarProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    CalendarProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
       reactLib.HTMLDivElement
     ]), 

@@ -19,13 +19,13 @@ trait ResembleComparison extends js.Object {
 object ResembleComparison {
   @scala.inline
   def apply(
-    ignoreAntialiasing: js.Function0[ResembleComparison],
-    ignoreColors: js.Function0[ResembleComparison],
-    ignoreNothing: js.Function0[ResembleComparison],
-    onComplete: js.Function1[js.Function1[/* result */ ResembleComparisonResult, scala.Unit], scala.Unit],
-    repaint: js.Function0[ResembleComparison]
+    ignoreAntialiasing: () => ResembleComparison,
+    ignoreColors: () => ResembleComparison,
+    ignoreNothing: () => ResembleComparison,
+    onComplete: js.Function1[/* result */ ResembleComparisonResult, scala.Unit] => scala.Unit,
+    repaint: () => ResembleComparison
   ): ResembleComparison = {
-    val __obj = js.Dynamic.literal(ignoreAntialiasing = ignoreAntialiasing, ignoreColors = ignoreColors, ignoreNothing = ignoreNothing, onComplete = onComplete, repaint = repaint)
+    val __obj = js.Dynamic.literal(ignoreAntialiasing = js.Any.fromFunction0(ignoreAntialiasing), ignoreColors = js.Any.fromFunction0(ignoreColors), ignoreNothing = js.Any.fromFunction0(ignoreNothing), onComplete = js.Any.fromFunction1(onComplete), repaint = js.Any.fromFunction0(repaint))
   
     __obj.asInstanceOf[ResembleComparison]
   }

@@ -11,8 +11,8 @@ trait IBackgroundTask extends js.Object {
 
 object IBackgroundTask {
   @scala.inline
-  def apply(run: js.Function1[IBackgroundTaskInstance, scala.Unit]): IBackgroundTask = {
-    val __obj = js.Dynamic.literal(run = run)
+  def apply(run: IBackgroundTaskInstance => scala.Unit): IBackgroundTask = {
+    val __obj = js.Dynamic.literal(run = js.Any.fromFunction1(run))
   
     __obj.asInstanceOf[IBackgroundTask]
   }

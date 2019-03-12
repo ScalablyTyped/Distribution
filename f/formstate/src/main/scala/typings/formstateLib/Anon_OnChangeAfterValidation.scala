@@ -14,8 +14,8 @@ trait Anon_OnChangeAfterValidation extends js.Object {
 
 object Anon_OnChangeAfterValidation {
   @scala.inline
-  def apply(on$ChangeAfterValidation: js.Function0[scala.Unit], on$Reinit: js.Function0[scala.Unit]): Anon_OnChangeAfterValidation = {
-    val __obj = js.Dynamic.literal(on$ChangeAfterValidation = on$ChangeAfterValidation, on$Reinit = on$Reinit)
+  def apply(on$ChangeAfterValidation: () => scala.Unit, on$Reinit: () => scala.Unit): Anon_OnChangeAfterValidation = {
+    val __obj = js.Dynamic.literal(on$ChangeAfterValidation = js.Any.fromFunction0(on$ChangeAfterValidation), on$Reinit = js.Any.fromFunction0(on$Reinit))
   
     __obj.asInstanceOf[Anon_OnChangeAfterValidation]
   }

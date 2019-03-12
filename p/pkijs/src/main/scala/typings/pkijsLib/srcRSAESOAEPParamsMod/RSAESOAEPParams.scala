@@ -17,14 +17,14 @@ trait RSAESOAEPParams extends js.Object {
 object RSAESOAEPParams {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     hashAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
     maskGenAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
     pSourceAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): RSAESOAEPParams = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, hashAlgorithm = hashAlgorithm, maskGenAlgorithm = maskGenAlgorithm, pSourceAlgorithm = pSourceAlgorithm, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), hashAlgorithm = hashAlgorithm, maskGenAlgorithm = maskGenAlgorithm, pSourceAlgorithm = pSourceAlgorithm, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[RSAESOAEPParams]
   }

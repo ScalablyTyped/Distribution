@@ -47,12 +47,12 @@ object MoveEventInfo {
     constructor: js.Function,
     dx: scala.Double,
     dy: scala.Double,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     mover: Graphic,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     `type`: java.lang.String
   ): MoveEventInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor, dx = dx, dy = dy, hasOwnProperty = hasOwnProperty, mover = mover, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, dx = dx, dy = dy, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mover = mover, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MoveEventInfo]
   }

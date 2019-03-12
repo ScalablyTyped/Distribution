@@ -16,7 +16,7 @@ trait ScaleData extends js.Object {
   var AxisType: scala.Double
   var Categories: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XLabeledDataSequence
   /** increment data to be used for not date-time axis */
-  var IncrementData: IncrementData
+  var IncrementData: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.IncrementData
   /**
     * if the any contains a double value this is used as a fixed minimum. Otherwise, if the any is empty or contains an incompatible type, the minimum is
     * automatic.

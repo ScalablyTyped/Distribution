@@ -12,13 +12,9 @@ trait Anon_Args extends js.Object {
 object Anon_Args {
   @scala.inline
   def apply(
-    throttle: js.Function2[
-      js.Function1[/* repeated */ js.Any, _], 
-      scala.Double, 
-      js.Function1[/* repeated */ js.Any, _]
-    ]
+    throttle: (js.Function1[/* repeated */ js.Any, _], scala.Double) => js.Function1[/* repeated */ js.Any, _]
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal(throttle = throttle)
+    val __obj = js.Dynamic.literal(throttle = js.Any.fromFunction2(throttle))
   
     __obj.asInstanceOf[Anon_Args]
   }

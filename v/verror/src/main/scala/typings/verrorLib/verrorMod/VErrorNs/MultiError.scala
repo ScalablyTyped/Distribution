@@ -19,13 +19,13 @@ trait MultiError
 object MultiError {
   @scala.inline
   def apply(
-    cause: js.Function0[js.UndefOr[stdLib.Error]],
-    errors: js.Function0[js.Array[stdLib.Error]],
+    cause: () => js.UndefOr[stdLib.Error],
+    errors: () => js.Array[stdLib.Error],
     message: java.lang.String,
     name: java.lang.String,
     stack: java.lang.String = null
   ): MultiError = {
-    val __obj = js.Dynamic.literal(cause = cause, errors = errors, message = message, name = name)
+    val __obj = js.Dynamic.literal(cause = js.Any.fromFunction0(cause), errors = js.Any.fromFunction0(errors), message = message, name = name)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[MultiError]
   }

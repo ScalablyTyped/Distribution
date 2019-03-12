@@ -110,14 +110,14 @@ object CloudWatchNs extends js.Object {
     /**
       * The alarms to be deleted.
       */
-    var AlarmNames: AlarmNames
+    var AlarmNames: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.AlarmNames
   }
   
   trait DeleteDashboardsInput extends js.Object {
     /**
       * The dashboards to be deleted. This parameter is required.
       */
-    var DashboardNames: DashboardNames
+    var DashboardNames: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.DashboardNames
   }
   
   trait DeleteDashboardsOutput extends js.Object
@@ -172,11 +172,11 @@ object CloudWatchNs extends js.Object {
     /**
       * The name of the metric.
       */
-    var MetricName: MetricName
+    var MetricName: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.MetricName
     /**
       * The namespace of the metric.
       */
-    var Namespace: Namespace
+    var Namespace: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.Namespace
     /**
       * The period, in seconds, over which the statistic is applied.
       */
@@ -262,21 +262,21 @@ object CloudWatchNs extends js.Object {
     /**
       * The names of the alarms.
       */
-    var AlarmNames: AlarmNames
+    var AlarmNames: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.AlarmNames
   }
   
   trait EnableAlarmActionsInput extends js.Object {
     /**
       * The names of the alarms.
       */
-    var AlarmNames: AlarmNames
+    var AlarmNames: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.AlarmNames
   }
   
   trait GetDashboardInput extends js.Object {
     /**
       * The name of the dashboard to be described.
       */
-    var DashboardName: DashboardName
+    var DashboardName: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.DashboardName
   }
   
   trait GetDashboardOutput extends js.Object {
@@ -306,7 +306,7 @@ object CloudWatchNs extends js.Object {
     /**
       * The metric queries to be returned. A single GetMetricData call can include as many as 100 MetricDataQuery structures. Each of these structures can specify either a metric to retrieve, or a math expression to perform on retrieved data. 
       */
-    var MetricDataQueries: MetricDataQueries
+    var MetricDataQueries: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.MetricDataQueries
     /**
       * Include this value, if it was returned by the previous call, to get the next set of data points.
       */
@@ -348,15 +348,15 @@ object CloudWatchNs extends js.Object {
     /**
       * The name of the metric, with or without spaces.
       */
-    var MetricName: MetricName
+    var MetricName: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.MetricName
     /**
       * The namespace of the metric, with or without spaces.
       */
-    var Namespace: Namespace
+    var Namespace: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.Namespace
     /**
       * The granularity, in seconds, of the returned data points. For metrics with regular resolution, a period can be as short as one minute (60 seconds) and must be a multiple of 60. For high-resolution metrics that are collected at intervals of less than one minute, the period can be 1, 5, 10, 30, 60, or any multiple of 60. High-resolution metrics are those metrics stored by a PutMetricData call that includes a StorageResolution of 1 second. If the StartTime parameter specifies a time stamp that is greater than 3 hours ago, you must specify the period as follows or no data points in that time range is returned:   Start time between 3 hours and 15 days ago - Use a multiple of 60 seconds (1 minute).   Start time between 15 and 63 days ago - Use a multiple of 300 seconds (5 minutes).   Start time greater than 63 days ago - Use a multiple of 3600 seconds (1 hour).  
       */
-    var Period: Period
+    var Period: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.Period
     /**
       * The time stamp that determines the first data point to return. Start times are evaluated relative to the time that CloudWatch receives the request. The value specified is inclusive; results include data points with the specified time stamp. The time stamp must be in ISO 8601 UTC format (for example, 2016-10-03T23:00:00Z). CloudWatch rounds the specified time stamp as follows:   Start time less than 15 days ago - Round down to the nearest whole minute. For example, 12:32:34 is rounded down to 12:32:00.   Start time between 15 and 63 days ago - Round down to the nearest 5-minute clock interval. For example, 12:32:34 is rounded down to 12:30:00.   Start time greater than 63 days ago - Round down to the nearest 1-hour clock interval. For example, 12:32:34 is rounded down to 12:00:00.   If you set Period to 5, 10, or 30, the start time of your request is rounded down to the nearest time that corresponds to even 5-, 10-, or 30-second divisions of a minute. For example, if you make a query at (HH:mm:ss) 01:05:23 for the previous 10-second period, the start time of your request is rounded down and you receive data from 01:05:10 to 01:05:20. If you make a query at 15:07:17 for the previous 5 minutes of data, using a period of 5 seconds, you receive data timestamped between 15:02:15 and 15:07:15. 
       */
@@ -386,7 +386,7 @@ object CloudWatchNs extends js.Object {
     /**
       * A JSON string that defines the bitmap graph to be retrieved. The string includes the metrics to include in the graph, statistics, annotations, title, axis limits, and so on. You can include only one MetricWidget parameter in each GetMetricWidgetImage call. For more information about the syntax of MetricWidget see CloudWatch-Metric-Widget-Structure. If any metric on the graph could not load all the requested data points, an orange triangle with an exclamation point appears next to the graph legend.
       */
-    var MetricWidget: MetricWidget
+    var MetricWidget: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.MetricWidget
     /**
       * The format of the resulting image. Only PNG images are supported. The default is png. If you specify png, the API returns an HTTP response with the content-type set to text/xml. The image data is in a MetricWidgetImage field. For example:   &lt;GetMetricWidgetImageResponse xmlns=&lt;URLstring&gt;&gt;    &lt;GetMetricWidgetImageResult&gt;    &lt;MetricWidgetImage&gt;    iVBORw0KGgoAAAANSUhEUgAAAlgAAAGQEAYAAAAip...    &lt;/MetricWidgetImage&gt;    &lt;/GetMetricWidgetImageResult&gt;    &lt;ResponseMetadata&gt;    &lt;RequestId&gt;6f0d4192-4d42-11e8-82c1-f539a07e0e3b&lt;/RequestId&gt;    &lt;/ResponseMetadata&gt;   &lt;/GetMetricWidgetImageResponse&gt;  The image/png setting is intended only for custom HTTP requests. For most use cases, and all actions using an AWS SDK, you should use png. If you specify image/png, the HTTP response has a content-type set to image/png, and the body of the response is a PNG image. 
       */
@@ -647,7 +647,7 @@ object CloudWatchNs extends js.Object {
     /**
       * The name of the metric.
       */
-    var MetricName: MetricName
+    var MetricName: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.MetricName
     /**
       * The statistical values for the metric.
       */
@@ -678,15 +678,15 @@ object CloudWatchNs extends js.Object {
     /**
       * The metric to return, including the metric name, namespace, and dimensions.
       */
-    var Metric: Metric
+    var Metric: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.Metric
     /**
       * The period, in seconds, to use when retrieving the metric.
       */
-    var Period: Period
+    var Period: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.Period
     /**
       * The statistic to return. It can include any CloudWatch statistic or extended statistic.
       */
-    var Stat: Stat
+    var Stat: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.Stat
     /**
       * The unit to use for the returned data points.
       */
@@ -697,11 +697,11 @@ object CloudWatchNs extends js.Object {
     /**
       * The detailed information about the dashboard in JSON format, including the widgets to include and their location on the dashboard. This parameter is required. For more information about the syntax, see CloudWatch-Dashboard-Body-Structure.
       */
-    var DashboardBody: DashboardBody
+    var DashboardBody: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.DashboardBody
     /**
       * The name of the dashboard. If a dashboard with this name already exists, this call modifies that dashboard, replacing its current contents. Otherwise, a new dashboard is created. The maximum length is 255, and valid characters are A-Z, a-z, 0-9, "-", and "_". This parameter is required.
       */
-    var DashboardName: DashboardName
+    var DashboardName: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.DashboardName
   }
   
   trait PutDashboardOutput extends js.Object {
@@ -727,11 +727,11 @@ object CloudWatchNs extends js.Object {
     /**
       * The name for the alarm. This name must be unique within your AWS account.
       */
-    var AlarmName: AlarmName
+    var AlarmName: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.AlarmName
     /**
       *  The arithmetic operation to use when comparing the specified statistic and threshold. The specified statistic value is used as the first operand.
       */
-    var ComparisonOperator: ComparisonOperator
+    var ComparisonOperator: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.ComparisonOperator
     /**
       * The number of datapoints that must be breaching to trigger the alarm. This is used only if you are setting an "M out of N" alarm. In that case, this value is the M. For more information, see Evaluating an Alarm in the Amazon CloudWatch User Guide.
       */
@@ -747,7 +747,7 @@ object CloudWatchNs extends js.Object {
     /**
       * The number of periods over which data is compared to the specified threshold. If you are setting an alarm that requires that a number of consecutive data points be breaching to trigger the alarm, this value specifies that number. If you are setting an "M out of N" alarm, this value is the N. An alarm's total current evaluation period can be no longer than one day, so this number multiplied by Period cannot be more than 86,400 seconds.
       */
-    var EvaluationPeriods: EvaluationPeriods
+    var EvaluationPeriods: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.EvaluationPeriods
     /**
       * The percentile statistic for the metric specified in MetricName. Specify a value between p0.0 and p100. When you call PutMetricAlarm and specify a MetricName, you must specify either Statistic or ExtendedStatistic, but not both.
       */
@@ -783,7 +783,7 @@ object CloudWatchNs extends js.Object {
     /**
       * The value against which the specified statistic is compared.
       */
-    var Threshold: Threshold
+    var Threshold: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.Threshold
     /**
       *  Sets how this alarm is to handle missing data points. If TreatMissingData is omitted, the default behavior of missing is used. For more information, see Configuring How CloudWatch Alarms Treats Missing Data. Valid Values: breaching | notBreaching | ignore | missing 
       */
@@ -798,22 +798,22 @@ object CloudWatchNs extends js.Object {
     /**
       * The data for the metric. The array can include no more than 20 metrics per call.
       */
-    var MetricData: MetricData
+    var MetricData: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.MetricData
     /**
       * The namespace for the metric data. You cannot specify a namespace that begins with "AWS/". Namespaces that begin with "AWS/" are reserved for use by Amazon Web Services products.
       */
-    var Namespace: Namespace
+    var Namespace: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.Namespace
   }
   
   trait SetAlarmStateInput extends js.Object {
     /**
       * The name for the alarm. This name must be unique within the AWS account. The maximum length is 255 characters.
       */
-    var AlarmName: AlarmName
+    var AlarmName: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.AlarmName
     /**
       * The reason that this alarm is set to this specific state, in text format.
       */
-    var StateReason: StateReason
+    var StateReason: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.StateReason
     /**
       * The reason that this alarm is set to this specific state, in JSON format.
       */
@@ -821,7 +821,7 @@ object CloudWatchNs extends js.Object {
     /**
       * The value of the state.
       */
-    var StateValue: StateValue
+    var StateValue: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.StateValue
   }
   
   trait StatisticSet extends js.Object {

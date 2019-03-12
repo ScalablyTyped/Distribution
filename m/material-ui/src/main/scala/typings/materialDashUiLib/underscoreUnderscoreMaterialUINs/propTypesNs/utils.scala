@@ -19,16 +19,16 @@ trait utils extends js.Object {
 object utils {
   @scala.inline
   def apply(
-    addDays: js.Function2[stdLib.Date, scala.Double, stdLib.Date],
-    addMonths: js.Function2[stdLib.Date, scala.Double, stdLib.Date],
-    addYears: js.Function2[stdLib.Date, scala.Double, stdLib.Date],
-    getFirstDayOfMonth: js.Function1[stdLib.Date, stdLib.Date],
-    getWeekArray: js.Function2[stdLib.Date, scala.Double, js.Array[js.Array[stdLib.Date | scala.Null]]],
-    getYear: js.Function1[stdLib.Date, scala.Double],
-    monthDiff: js.Function2[stdLib.Date, stdLib.Date, scala.Double],
-    setYear: js.Function2[stdLib.Date, scala.Double, stdLib.Date]
+    addDays: (stdLib.Date, scala.Double) => stdLib.Date,
+    addMonths: (stdLib.Date, scala.Double) => stdLib.Date,
+    addYears: (stdLib.Date, scala.Double) => stdLib.Date,
+    getFirstDayOfMonth: stdLib.Date => stdLib.Date,
+    getWeekArray: (stdLib.Date, scala.Double) => js.Array[js.Array[stdLib.Date | scala.Null]],
+    getYear: stdLib.Date => scala.Double,
+    monthDiff: (stdLib.Date, stdLib.Date) => scala.Double,
+    setYear: (stdLib.Date, scala.Double) => stdLib.Date
   ): utils = {
-    val __obj = js.Dynamic.literal(addDays = addDays, addMonths = addMonths, addYears = addYears, getFirstDayOfMonth = getFirstDayOfMonth, getWeekArray = getWeekArray, getYear = getYear, monthDiff = monthDiff, setYear = setYear)
+    val __obj = js.Dynamic.literal(addDays = js.Any.fromFunction2(addDays), addMonths = js.Any.fromFunction2(addMonths), addYears = js.Any.fromFunction2(addYears), getFirstDayOfMonth = js.Any.fromFunction1(getFirstDayOfMonth), getWeekArray = js.Any.fromFunction2(getWeekArray), getYear = js.Any.fromFunction1(getYear), monthDiff = js.Any.fromFunction2(monthDiff), setYear = js.Any.fromFunction2(setYear))
   
     __obj.asInstanceOf[utils]
   }

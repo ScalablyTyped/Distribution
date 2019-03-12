@@ -34,13 +34,13 @@ trait Dispatcher[TPayload] extends js.Object {
 object Dispatcher {
   @scala.inline
   def apply[TPayload](
-    dispatch: js.Function1[TPayload, scala.Unit],
-    isDispatching: js.Function0[scala.Boolean],
-    register: js.Function1[js.Function1[/* payload */ TPayload, scala.Unit], java.lang.String],
-    unregister: js.Function1[java.lang.String, scala.Unit],
-    waitFor: js.Function1[js.Array[java.lang.String], scala.Unit]
+    dispatch: TPayload => scala.Unit,
+    isDispatching: () => scala.Boolean,
+    register: js.Function1[/* payload */ TPayload, scala.Unit] => java.lang.String,
+    unregister: java.lang.String => scala.Unit,
+    waitFor: js.Array[java.lang.String] => scala.Unit
   ): Dispatcher[TPayload] = {
-    val __obj = js.Dynamic.literal(dispatch = dispatch, isDispatching = isDispatching, register = register, unregister = unregister, waitFor = waitFor)
+    val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), isDispatching = js.Any.fromFunction0(isDispatching), register = js.Any.fromFunction1(register), unregister = js.Any.fromFunction1(unregister), waitFor = js.Any.fromFunction1(waitFor))
   
     __obj.asInstanceOf[Dispatcher[TPayload]]
   }

@@ -12,12 +12,12 @@ object IBorderSplitter {
   def apply(
     ISplitter: ISplitter = null,
     collapseTarget: js.Any = null,
-    getTrackerConfig: js.Function0[scala.Unit] = null
+    getTrackerConfig: () => scala.Unit = null
   ): IBorderSplitter = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, ISplitter)
     if (collapseTarget != null) __obj.updateDynamic("collapseTarget")(collapseTarget)
-    if (getTrackerConfig != null) __obj.updateDynamic("getTrackerConfig")(getTrackerConfig)
+    if (getTrackerConfig != null) __obj.updateDynamic("getTrackerConfig")(js.Any.fromFunction0(getTrackerConfig))
     __obj.asInstanceOf[IBorderSplitter]
   }
 }

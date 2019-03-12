@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 object Typography {
   @scala.inline
-  def apply(pxToRem: js.Function1[scala.Double, java.lang.String]): Typography = {
-    val __obj = js.Dynamic.literal(pxToRem = pxToRem)
+  def apply(pxToRem: scala.Double => java.lang.String): Typography = {
+    val __obj = js.Dynamic.literal(pxToRem = js.Any.fromFunction1(pxToRem))
   
     __obj.asInstanceOf[Typography]
   }

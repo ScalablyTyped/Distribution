@@ -44,7 +44,7 @@ object Anon_AcceptRanges {
     redirect: js.UndefOr[scala.Boolean] = js.undefined,
     schemaHide: js.UndefOr[scala.Boolean] = js.undefined,
     serve: js.UndefOr[scala.Boolean] = js.undefined,
-    setHeaders: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    setHeaders: /* repeated */ js.Any => scala.Unit = null,
     wildcard: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AcceptRanges = {
     val __obj = js.Dynamic.literal(root = root)
@@ -62,7 +62,7 @@ object Anon_AcceptRanges {
     if (!js.isUndefined(redirect)) __obj.updateDynamic("redirect")(redirect)
     if (!js.isUndefined(schemaHide)) __obj.updateDynamic("schemaHide")(schemaHide)
     if (!js.isUndefined(serve)) __obj.updateDynamic("serve")(serve)
-    if (setHeaders != null) __obj.updateDynamic("setHeaders")(setHeaders)
+    if (setHeaders != null) __obj.updateDynamic("setHeaders")(js.Any.fromFunction1(setHeaders))
     if (!js.isUndefined(wildcard)) __obj.updateDynamic("wildcard")(wildcard)
     __obj.asInstanceOf[Anon_AcceptRanges]
   }

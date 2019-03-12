@@ -10,7 +10,7 @@ trait Plugin extends js.Object {
   var buildEnd: js.UndefOr[
     js.ThisFunction1[
       /* this */ PluginContext, 
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       js.Promise[scala.Unit] | scala.Unit
     ]
   ] = js.undefined
@@ -72,7 +72,7 @@ trait Plugin extends js.Object {
   var renderError: js.UndefOr[
     js.ThisFunction1[
       /* this */ PluginContext, 
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       js.Promise[scala.Unit] | scala.Unit
     ]
   ] = js.undefined
@@ -101,7 +101,7 @@ object Plugin {
     banner: AddonHook = null,
     buildEnd: js.ThisFunction1[
       /* this */ PluginContext, 
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       js.Promise[scala.Unit] | scala.Unit
     ] = null,
     buildStart: js.ThisFunction1[
@@ -146,7 +146,7 @@ object Plugin {
     renderChunk: RenderChunkHook = null,
     renderError: js.ThisFunction1[
       /* this */ PluginContext, 
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       js.Promise[scala.Unit] | scala.Unit
     ] = null,
     renderStart: js.ThisFunction0[/* this */ PluginContext, js.Promise[scala.Unit] | scala.Unit] = null,
@@ -155,7 +155,7 @@ object Plugin {
     transform: TransformHook = null,
     transformBundle: TransformChunkHook = null,
     transformChunk: TransformChunkHook = null,
-    watchChange: js.Function1[/* id */ java.lang.String, scala.Unit] = null,
+    watchChange: /* id */ java.lang.String => scala.Unit = null,
     writeBundle: js.ThisFunction1[
       /* this */ PluginContext, 
       /* bundle */ OutputBundle, 
@@ -184,7 +184,7 @@ object Plugin {
     if (transform != null) __obj.updateDynamic("transform")(transform)
     if (transformBundle != null) __obj.updateDynamic("transformBundle")(transformBundle)
     if (transformChunk != null) __obj.updateDynamic("transformChunk")(transformChunk)
-    if (watchChange != null) __obj.updateDynamic("watchChange")(watchChange)
+    if (watchChange != null) __obj.updateDynamic("watchChange")(js.Any.fromFunction1(watchChange))
     if (writeBundle != null) __obj.updateDynamic("writeBundle")(writeBundle)
     __obj.asInstanceOf[Plugin]
   }

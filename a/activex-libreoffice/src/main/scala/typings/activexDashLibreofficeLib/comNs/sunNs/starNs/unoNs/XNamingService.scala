@@ -26,14 +26,14 @@ trait XNamingService extends XInterface {
 object XNamingService {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getRegisteredObject: js.Function1[java.lang.String, XInterface],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerObject: js.Function2[java.lang.String, XInterface, scala.Unit],
-    release: js.Function0[scala.Unit],
-    revokeObject: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getRegisteredObject: java.lang.String => XInterface,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerObject: (java.lang.String, XInterface) => scala.Unit,
+    release: () => scala.Unit,
+    revokeObject: java.lang.String => scala.Unit
   ): XNamingService = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getRegisteredObject = getRegisteredObject, queryInterface = queryInterface, registerObject = registerObject, release = release, revokeObject = revokeObject)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getRegisteredObject = js.Any.fromFunction1(getRegisteredObject), queryInterface = js.Any.fromFunction1(queryInterface), registerObject = js.Any.fromFunction2(registerObject), release = js.Any.fromFunction0(release), revokeObject = js.Any.fromFunction1(revokeObject))
   
     __obj.asInstanceOf[XNamingService]
   }

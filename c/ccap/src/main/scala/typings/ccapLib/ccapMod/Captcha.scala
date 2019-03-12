@@ -11,8 +11,8 @@ trait Captcha extends js.Object {
 
 object Captcha {
   @scala.inline
-  def apply(get: js.Function0[js.Tuple2[java.lang.String, nodeLib.Buffer]]): Captcha = {
-    val __obj = js.Dynamic.literal(get = get)
+  def apply(get: () => js.Tuple2[java.lang.String, nodeLib.Buffer]): Captcha = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get))
   
     __obj.asInstanceOf[Captcha]
   }

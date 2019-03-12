@@ -14,11 +14,11 @@ trait IMessageWebSocketMessageReceivedEventArgs extends js.Object {
 object IMessageWebSocketMessageReceivedEventArgs {
   @scala.inline
   def apply(
-    getDataReader: js.Function0[winrtLib.WindowsNs.StorageNs.StreamsNs.DataReader],
-    getDataStream: js.Function0[winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream],
+    getDataReader: () => winrtLib.WindowsNs.StorageNs.StreamsNs.DataReader,
+    getDataStream: () => winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream,
     messageType: SocketMessageType
   ): IMessageWebSocketMessageReceivedEventArgs = {
-    val __obj = js.Dynamic.literal(getDataReader = getDataReader, getDataStream = getDataStream, messageType = messageType)
+    val __obj = js.Dynamic.literal(getDataReader = js.Any.fromFunction0(getDataReader), getDataStream = js.Any.fromFunction0(getDataStream), messageType = messageType)
   
     __obj.asInstanceOf[IMessageWebSocketMessageReceivedEventArgs]
   }

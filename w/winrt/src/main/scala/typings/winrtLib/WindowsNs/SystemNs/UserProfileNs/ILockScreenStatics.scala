@@ -15,18 +15,12 @@ trait ILockScreenStatics extends js.Object {
 object ILockScreenStatics {
   @scala.inline
   def apply(
-    getImageStream: js.Function0[winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream],
+    getImageStream: () => winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream,
     originalImageFile: winrtLib.WindowsNs.FoundationNs.Uri,
-    setImageFileAsync: js.Function1[
-      winrtLib.WindowsNs.StorageNs.IStorageFile, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncAction
-    ],
-    setImageStreamAsync: js.Function1[
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncAction
-    ]
+    setImageFileAsync: winrtLib.WindowsNs.StorageNs.IStorageFile => winrtLib.WindowsNs.FoundationNs.IAsyncAction,
+    setImageStreamAsync: winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream => winrtLib.WindowsNs.FoundationNs.IAsyncAction
   ): ILockScreenStatics = {
-    val __obj = js.Dynamic.literal(getImageStream = getImageStream, originalImageFile = originalImageFile, setImageFileAsync = setImageFileAsync, setImageStreamAsync = setImageStreamAsync)
+    val __obj = js.Dynamic.literal(getImageStream = js.Any.fromFunction0(getImageStream), originalImageFile = originalImageFile, setImageFileAsync = js.Any.fromFunction1(setImageFileAsync), setImageStreamAsync = js.Any.fromFunction1(setImageStreamAsync))
   
     __obj.asInstanceOf[ILockScreenStatics]
   }

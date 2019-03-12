@@ -8,26 +8,26 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.Pane")
 @js.native
 class Pane protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var BrowseToWindow: scala.Boolean = js.native
   val BrowseWidth: scala.Double = js.native
   val Creator: scala.Double = js.native
   var DisplayRulers: scala.Boolean = js.native
   var DisplayVerticalRuler: scala.Boolean = js.native
-  val Document: Document = js.native
-  val Frameset: Frameset = js.native
+  val Document: activexDashWordLib.WordNs.Document = js.native
+  val Frameset: activexDashWordLib.WordNs.Frameset = js.native
   var HorizontalPercentScrolled: scala.Double = js.native
   val Index: scala.Double = js.native
   var MinimumFontSize: scala.Double = js.native
   val Next: Pane = js.native
-  val Pages: Pages = js.native
+  val Pages: activexDashWordLib.WordNs.Pages = js.native
   val Parent: js.Any = js.native
   val Previous: Pane = js.native
-  val Selection: Selection = js.native
+  val Selection: activexDashWordLib.WordNs.Selection = js.native
   var VerticalPercentScrolled: scala.Double = js.native
-  val View: View = js.native
+  val View: activexDashWordLib.WordNs.View = js.native
   var `Word.Pane_typekey`: Pane = js.native
-  val Zooms: Zooms = js.native
+  val Zooms: activexDashWordLib.WordNs.Zooms = js.native
   def Activate(): scala.Unit = js.native
   def AutoScroll(Velocity: scala.Double): scala.Unit = js.native
   def Close(): scala.Unit = js.native

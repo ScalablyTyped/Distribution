@@ -13,10 +13,10 @@ trait NativeEventTarget extends js.Object {
 object NativeEventTarget {
   @scala.inline
   def apply(
-    off: js.Function2[java.lang.String, js.Function1[/* e */ js.Any, _], scala.Unit],
-    on: js.Function2[java.lang.String, js.Function1[/* e */ js.Any, _], scala.Unit]
+    off: (java.lang.String, js.Function1[/* e */ js.Any, _]) => scala.Unit,
+    on: (java.lang.String, js.Function1[/* e */ js.Any, _]) => scala.Unit
   ): NativeEventTarget = {
-    val __obj = js.Dynamic.literal(off = off, on = on)
+    val __obj = js.Dynamic.literal(off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on))
   
     __obj.asInstanceOf[NativeEventTarget]
   }

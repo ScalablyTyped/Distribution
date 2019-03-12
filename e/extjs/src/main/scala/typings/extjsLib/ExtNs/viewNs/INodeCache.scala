@@ -62,32 +62,22 @@ object INodeCache {
   def apply(
     alias: extjsLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    clear: js.Function1[/* removeDom */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
+    clear: /* removeDom */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     config: js.Any = null,
     extend: java.lang.String = null,
-    fill: js.Function1[/* els */ js.UndefOr[extjsLib.ExtNs.Array], INodeCache] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    indexOf: js.Function1[/* el */ js.UndefOr[js.Any], scala.Double] = null,
+    fill: /* els */ js.UndefOr[extjsLib.ExtNs.Array] => INodeCache = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    indexOf: /* el */ js.UndefOr[js.Any] => scala.Double = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], INodeCache] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => INodeCache = null,
     mixins: js.Any = null,
-    removeElement: js.Function2[/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    replaceElement: js.Function3[
-      /* el */ js.UndefOr[js.Any], 
-      /* replacement */ js.UndefOr[js.Any], 
-      /* domReplace */ js.UndefOr[scala.Boolean], 
-      INodeCache
-    ] = null,
+    removeElement: (/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
+    replaceElement: (/* el */ js.UndefOr[js.Any], /* replacement */ js.UndefOr[js.Any], /* domReplace */ js.UndefOr[scala.Boolean]) => INodeCache = null,
     requires: extjsLib.ExtNs.Array = null,
-    scroll: js.Function3[
-      /* newRecords */ js.UndefOr[extjsLib.ExtNs.Array], 
-      /* direction */ js.UndefOr[scala.Double], 
-      /* removeCount */ js.UndefOr[scala.Double], 
-      scala.Unit
-    ] = null,
+    scroll: (/* newRecords */ js.UndefOr[extjsLib.ExtNs.Array], /* direction */ js.UndefOr[scala.Double], /* removeCount */ js.UndefOr[scala.Double]) => scala.Unit = null,
     self: extjsLib.ExtNs.IClass = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
@@ -96,22 +86,22 @@ object INodeCache {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
-    if (clear != null) __obj.updateDynamic("clear")(clear)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
+    if (clear != null) __obj.updateDynamic("clear")(js.Any.fromFunction1(clear))
     if (config != null) __obj.updateDynamic("config")(config)
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (indexOf != null) __obj.updateDynamic("indexOf")(indexOf)
+    if (fill != null) __obj.updateDynamic("fill")(js.Any.fromFunction1(fill))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (indexOf != null) __obj.updateDynamic("indexOf")(js.Any.fromFunction1(indexOf))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (removeElement != null) __obj.updateDynamic("removeElement")(removeElement)
-    if (replaceElement != null) __obj.updateDynamic("replaceElement")(replaceElement)
+    if (removeElement != null) __obj.updateDynamic("removeElement")(js.Any.fromFunction2(removeElement))
+    if (replaceElement != null) __obj.updateDynamic("replaceElement")(js.Any.fromFunction3(replaceElement))
     if (requires != null) __obj.updateDynamic("requires")(requires)
-    if (scroll != null) __obj.updateDynamic("scroll")(scroll)
+    if (scroll != null) __obj.updateDynamic("scroll")(js.Any.fromFunction3(scroll))
     if (self != null) __obj.updateDynamic("self")(self)
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)

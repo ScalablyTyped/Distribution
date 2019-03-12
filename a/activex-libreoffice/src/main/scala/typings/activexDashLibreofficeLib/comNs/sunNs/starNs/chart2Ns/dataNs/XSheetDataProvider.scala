@@ -19,19 +19,13 @@ trait XSheetDataProvider
 object XSheetDataProvider {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createDataSequenceByFormulaTokens: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.FormulaToken], 
-      XDataSequence
-    ],
-    createDataSequenceByFormulaTokensPossible: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.FormulaToken], 
-      scala.Boolean
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createDataSequenceByFormulaTokens: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.FormulaToken] => XDataSequence,
+    createDataSequenceByFormulaTokensPossible: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.FormulaToken] => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSheetDataProvider = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createDataSequenceByFormulaTokens = createDataSequenceByFormulaTokens, createDataSequenceByFormulaTokensPossible = createDataSequenceByFormulaTokensPossible, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createDataSequenceByFormulaTokens = js.Any.fromFunction1(createDataSequenceByFormulaTokens), createDataSequenceByFormulaTokensPossible = js.Any.fromFunction1(createDataSequenceByFormulaTokensPossible), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSheetDataProvider]
   }

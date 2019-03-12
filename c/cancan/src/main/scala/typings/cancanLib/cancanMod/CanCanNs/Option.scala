@@ -13,12 +13,12 @@ trait Option extends js.Object {
 object Option {
   @scala.inline
   def apply(
-    createError: js.Function0[_] = null,
-    instanceOf: js.Function2[/* instance */ js.Any, /* model */ js.Any, scala.Boolean] = null
+    createError: () => _ = null,
+    instanceOf: (/* instance */ js.Any, /* model */ js.Any) => scala.Boolean = null
   ): Option = {
     val __obj = js.Dynamic.literal()
-    if (createError != null) __obj.updateDynamic("createError")(createError)
-    if (instanceOf != null) __obj.updateDynamic("instanceOf")(instanceOf)
+    if (createError != null) __obj.updateDynamic("createError")(js.Any.fromFunction0(createError))
+    if (instanceOf != null) __obj.updateDynamic("instanceOf")(js.Any.fromFunction2(instanceOf))
     __obj.asInstanceOf[Option]
   }
 }

@@ -13,12 +13,8 @@ trait Repeater extends js.Object {
 
 object Repeater {
   @scala.inline
-  def apply(
-    column: js.Function1[java.lang.String, Future],
-    count: js.Function0[Future],
-    row: js.Function1[scala.Double, Future]
-  ): Repeater = {
-    val __obj = js.Dynamic.literal(column = column, count = count, row = row)
+  def apply(column: java.lang.String => Future, count: () => Future, row: scala.Double => Future): Repeater = {
+    val __obj = js.Dynamic.literal(column = js.Any.fromFunction1(column), count = js.Any.fromFunction0(count), row = js.Any.fromFunction1(row))
   
     __obj.asInstanceOf[Repeater]
   }

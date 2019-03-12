@@ -37,7 +37,7 @@ class UserRefreshClient ()
   def fromStream(inputStream: nodeLib.streamMod.Readable): js.Promise[scala.Unit] = js.native
   def fromStream(
     inputStream: nodeLib.streamMod.Readable,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): scala.Unit = js.native
 }
 

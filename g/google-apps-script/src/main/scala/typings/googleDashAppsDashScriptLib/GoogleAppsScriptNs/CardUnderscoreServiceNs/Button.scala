@@ -16,13 +16,13 @@ trait Button extends js.Object {
 object Button {
   @scala.inline
   def apply(
-    setAuthorizationAction: js.Function1[AuthorizationAction, Button],
-    setComposeAction: js.Function2[Action, ComposedEmailType, Button],
-    setOnClickAction: js.Function1[Action, Button],
-    setOnClickOpenLinkAction: js.Function1[Action, Button],
-    setOpenLink: js.Function1[OpenLink, Button]
+    setAuthorizationAction: AuthorizationAction => Button,
+    setComposeAction: (Action, ComposedEmailType) => Button,
+    setOnClickAction: Action => Button,
+    setOnClickOpenLinkAction: Action => Button,
+    setOpenLink: OpenLink => Button
   ): Button = {
-    val __obj = js.Dynamic.literal(setAuthorizationAction = setAuthorizationAction, setComposeAction = setComposeAction, setOnClickAction = setOnClickAction, setOnClickOpenLinkAction = setOnClickOpenLinkAction, setOpenLink = setOpenLink)
+    val __obj = js.Dynamic.literal(setAuthorizationAction = js.Any.fromFunction1(setAuthorizationAction), setComposeAction = js.Any.fromFunction2(setComposeAction), setOnClickAction = js.Any.fromFunction1(setOnClickAction), setOnClickOpenLinkAction = js.Any.fromFunction1(setOnClickOpenLinkAction), setOpenLink = js.Any.fromFunction1(setOpenLink))
   
     __obj.asInstanceOf[Button]
   }

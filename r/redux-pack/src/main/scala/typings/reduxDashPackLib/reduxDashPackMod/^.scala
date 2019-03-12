@@ -13,14 +13,8 @@ object ^ extends js.Object {
   val middleware: reduxLib.reduxMod.Middleware[js.Object, js.Any, reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.AnyAction]] = js.native
   def handle[TState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload](
     state: TState,
-    action: reduxDashPackLib.reduxDashPackMod.Action[
-      reduxDashPackLib.reduxDashPackMod.TFullState, 
-      TSuccessPayload, 
-      TErrorPayload, 
-      TStartPayload, 
-      TMetaPayload
-    ],
-    handlers: reduxDashPackLib.reduxDashPackMod.Handlers[TState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload]
+    action: Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload],
+    handlers: Handlers[TState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload]
   ): TState = js.native
 }
 

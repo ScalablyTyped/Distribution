@@ -9,10 +9,10 @@ trait GroupProps extends js.Object {
   var children: js.UndefOr[js.Any] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var compact: js.UndefOr[scala.Boolean] = js.undefined
-  var onBlur: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLSpanElement]] = js.undefined
-  var onFocus: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLSpanElement]] = js.undefined
-  var onMouseEnter: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLSpanElement]] = js.undefined
-  var onMouseLeave: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLSpanElement]] = js.undefined
+  var onBlur: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[stdLib.HTMLSpanElement]] = js.undefined
+  var onFocus: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[stdLib.HTMLSpanElement]] = js.undefined
+  var onMouseEnter: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLSpanElement]] = js.undefined
+  var onMouseLeave: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLSpanElement]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var size: js.UndefOr[
     antdLib.antdLibStrings.large | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default
@@ -26,10 +26,10 @@ object GroupProps {
     children: js.Any = null,
     className: java.lang.String = null,
     compact: js.UndefOr[scala.Boolean] = js.undefined,
-    onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLSpanElement] = null,
-    onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLSpanElement] = null,
-    onMouseEnter: reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLSpanElement] = null,
-    onMouseLeave: reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLSpanElement] = null,
+    onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[stdLib.HTMLSpanElement] = null,
+    onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[stdLib.HTMLSpanElement] = null,
+    onMouseEnter: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLSpanElement] = null,
+    onMouseLeave: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLSpanElement] = null,
     prefixCls: java.lang.String = null,
     size: antdLib.antdLibStrings.large | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null

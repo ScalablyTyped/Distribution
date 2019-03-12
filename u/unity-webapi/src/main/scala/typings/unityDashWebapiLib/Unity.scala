@@ -23,12 +23,12 @@ object Unity {
     MediaPlayer: UnityMediaPlayer,
     MessagingIndicator: UnityMessagingIndicator,
     Notification: UnityNotification,
-    addAction: js.Function2[java.lang.String, js.Function, js.Any],
-    init: js.Function1[UnitySettings, js.Any],
-    removeAction: js.Function1[java.lang.String, js.Any],
-    removeActions: js.Function0[js.Any]
+    addAction: (java.lang.String, js.Function) => js.Any,
+    init: UnitySettings => js.Any,
+    removeAction: java.lang.String => js.Any,
+    removeActions: () => js.Any
   ): Unity = {
-    val __obj = js.Dynamic.literal(Launcher = Launcher, MediaPlayer = MediaPlayer, MessagingIndicator = MessagingIndicator, Notification = Notification, addAction = addAction, init = init, removeAction = removeAction, removeActions = removeActions)
+    val __obj = js.Dynamic.literal(Launcher = Launcher, MediaPlayer = MediaPlayer, MessagingIndicator = MessagingIndicator, Notification = Notification, addAction = js.Any.fromFunction2(addAction), init = js.Any.fromFunction1(init), removeAction = js.Any.fromFunction1(removeAction), removeActions = js.Any.fromFunction0(removeActions))
   
     __obj.asInstanceOf[Unity]
   }

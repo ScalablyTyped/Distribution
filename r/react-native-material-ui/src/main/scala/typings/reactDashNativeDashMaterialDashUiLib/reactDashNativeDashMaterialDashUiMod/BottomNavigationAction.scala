@@ -23,14 +23,14 @@ object BottomNavigationAction {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     key: java.lang.String = null,
     label: java.lang.String = null,
-    onPress: js.Function0[scala.Unit] = null,
+    onPress: () => scala.Unit = null,
     style: reactDashNativeDashMaterialDashUiLib.Anon_Active = null
   ): BottomNavigationAction = {
     val __obj = js.Dynamic.literal(active = active, icon = icon.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (key != null) __obj.updateDynamic("key")(key)
     if (label != null) __obj.updateDynamic("label")(label)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[BottomNavigationAction]
   }

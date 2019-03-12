@@ -6,27 +6,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BreadcrumbsProps extends js.Object {
-  var container: js.UndefOr[java.lang.String | reactLib.Element | js.Object] = js.undefined
+  var container: js.UndefOr[java.lang.String | stdLib.Element | js.Object] = js.undefined
   var containerProps: js.UndefOr[js.Object] = js.undefined
   var duplicateProps: js.UndefOr[js.Object] = js.undefined
-  var finalItem: js.UndefOr[java.lang.String | reactLib.Element | js.Object] = js.undefined
+  var finalItem: js.UndefOr[java.lang.String | stdLib.Element | js.Object] = js.undefined
   var finalProps: js.UndefOr[js.Object] = js.undefined
-  var item: js.UndefOr[java.lang.String | reactLib.Element | js.Object] = js.undefined
+  var item: js.UndefOr[java.lang.String | stdLib.Element | js.Object] = js.undefined
   var renameProps: js.UndefOr[js.Object] = js.undefined
-  var separator: js.UndefOr[java.lang.String | reactLib.Element | js.Object] = js.undefined
+  var separator: js.UndefOr[java.lang.String | stdLib.Element | js.Object] = js.undefined
 }
 
 object BreadcrumbsProps {
   @scala.inline
   def apply(
-    container: java.lang.String | reactLib.Element | js.Object = null,
+    container: java.lang.String | stdLib.Element | js.Object = null,
     containerProps: js.Object = null,
     duplicateProps: js.Object = null,
-    finalItem: java.lang.String | reactLib.Element | js.Object = null,
+    finalItem: java.lang.String | stdLib.Element | js.Object = null,
     finalProps: js.Object = null,
-    item: java.lang.String | reactLib.Element | js.Object = null,
+    item: java.lang.String | stdLib.Element | js.Object = null,
     renameProps: js.Object = null,
-    separator: java.lang.String | reactLib.Element | js.Object = null
+    separator: java.lang.String | stdLib.Element | js.Object = null
   ): BreadcrumbsProps = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])

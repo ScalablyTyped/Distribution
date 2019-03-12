@@ -132,21 +132,21 @@ object IFrameOptions {
     bodyMargin: scala.Double | java.lang.String = null,
     bodyPadding: scala.Double | java.lang.String = null,
     checkOrigin: scala.Boolean | js.Array[java.lang.String] = null,
-    closedCallback: js.Function1[/* iframeId */ java.lang.String, scala.Unit] = null,
+    closedCallback: /* iframeId */ java.lang.String => scala.Unit = null,
     heightCalculationMethod: HeightCalculationMethod = null,
     id: java.lang.String = null,
     inPageLinks: js.UndefOr[scala.Boolean] = js.undefined,
-    initCallback: js.Function1[/* iframe */ IFrameComponent, scala.Unit] = null,
+    initCallback: /* iframe */ IFrameComponent => scala.Unit = null,
     interval: scala.Int | scala.Double = null,
     log: js.UndefOr[scala.Boolean] = js.undefined,
     maxHeight: scala.Int | scala.Double = null,
     maxWidth: scala.Int | scala.Double = null,
-    messageCallback: js.Function1[/* data */ IFrameMessageData, scala.Unit] = null,
+    messageCallback: /* data */ IFrameMessageData => scala.Unit = null,
     minHeight: scala.Int | scala.Double = null,
     minWidth: scala.Int | scala.Double = null,
     resizeFrom: iframeDashResizerLib.iframeDashResizerLibStrings.parent | iframeDashResizerLib.iframeDashResizerLibStrings.child = null,
-    resizedCallback: js.Function1[/* data */ IFrameResizedData, scala.Unit] = null,
-    scrollCallback: js.Function1[/* data */ IFrameScrollData, scala.Boolean] = null,
+    resizedCallback: /* data */ IFrameResizedData => scala.Unit = null,
+    scrollCallback: /* data */ IFrameScrollData => scala.Boolean = null,
     scrolling: scala.Boolean | iframeDashResizerLib.iframeDashResizerLibStrings.auto = null,
     sizeHeight: js.UndefOr[scala.Boolean] = js.undefined,
     sizeWidth: js.UndefOr[scala.Boolean] = js.undefined,
@@ -159,21 +159,21 @@ object IFrameOptions {
     if (bodyMargin != null) __obj.updateDynamic("bodyMargin")(bodyMargin.asInstanceOf[js.Any])
     if (bodyPadding != null) __obj.updateDynamic("bodyPadding")(bodyPadding.asInstanceOf[js.Any])
     if (checkOrigin != null) __obj.updateDynamic("checkOrigin")(checkOrigin.asInstanceOf[js.Any])
-    if (closedCallback != null) __obj.updateDynamic("closedCallback")(closedCallback)
+    if (closedCallback != null) __obj.updateDynamic("closedCallback")(js.Any.fromFunction1(closedCallback))
     if (heightCalculationMethod != null) __obj.updateDynamic("heightCalculationMethod")(heightCalculationMethod)
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(inPageLinks)) __obj.updateDynamic("inPageLinks")(inPageLinks)
-    if (initCallback != null) __obj.updateDynamic("initCallback")(initCallback)
+    if (initCallback != null) __obj.updateDynamic("initCallback")(js.Any.fromFunction1(initCallback))
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (!js.isUndefined(log)) __obj.updateDynamic("log")(log)
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (messageCallback != null) __obj.updateDynamic("messageCallback")(messageCallback)
+    if (messageCallback != null) __obj.updateDynamic("messageCallback")(js.Any.fromFunction1(messageCallback))
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     if (resizeFrom != null) __obj.updateDynamic("resizeFrom")(resizeFrom.asInstanceOf[js.Any])
-    if (resizedCallback != null) __obj.updateDynamic("resizedCallback")(resizedCallback)
-    if (scrollCallback != null) __obj.updateDynamic("scrollCallback")(scrollCallback)
+    if (resizedCallback != null) __obj.updateDynamic("resizedCallback")(js.Any.fromFunction1(resizedCallback))
+    if (scrollCallback != null) __obj.updateDynamic("scrollCallback")(js.Any.fromFunction1(scrollCallback))
     if (scrolling != null) __obj.updateDynamic("scrolling")(scrolling.asInstanceOf[js.Any])
     if (!js.isUndefined(sizeHeight)) __obj.updateDynamic("sizeHeight")(sizeHeight)
     if (!js.isUndefined(sizeWidth)) __obj.updateDynamic("sizeWidth")(sizeWidth)

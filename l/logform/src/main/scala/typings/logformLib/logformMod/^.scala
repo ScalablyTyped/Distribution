@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("logform", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def format(transform: logformLib.logformMod.TransformFunction): logformLib.logformMod.FormatWrap = js.native
+  def format(transform: TransformFunction): FormatWrap = js.native
   def levels(config: js.Object): js.Object = js.native
 }
 

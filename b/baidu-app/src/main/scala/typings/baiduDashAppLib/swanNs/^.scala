@@ -11,7 +11,7 @@ object ^ extends js.Object {
   /**
   	 * 批量添加卡券。
   	 */
-  def addCard(options: baiduDashAppLib.swanNs.CardOptions): scala.Unit = js.native
+  def addCard(options: CardOptions): scala.Unit = js.native
   /**
   	 * 增加 手机联系人
   	 * 调用后，用户可以选择将该表单以“新增联系人”或“添加到已有联系人”的方式
@@ -19,7 +19,7 @@ object ^ extends js.Object {
   	 * 完成手机通讯录联系人和联系方式的增加。
   	 * @version 1.2.0
   	 */
-  def addPhoneContact(options: baiduDashAppLib.swanNs.PhoneContact): scala.Unit = js.native
+  def addPhoneContact(options: PhoneContact): scala.Unit = js.native
   // #endregion
   // #region 拓展接口
   /**
@@ -32,7 +32,7 @@ object ^ extends js.Object {
   	 * 调用后会立刻弹窗询问用户是否同意授权小程序使用某项功能或获取用户的某些数据，
   	 * 但不会实际调用对应接口。如果用户之前已经同意授权，则不会出现弹窗，直接返回成功。
   	 */
-  def authorize(options: baiduDashAppLib.swanNs.AuthorizeOptions): scala.Unit = js.native
+  def authorize(options: AuthorizeOptions): scala.Unit = js.native
   /**
   	 * 将 Base64 字符串转成 ArrayBuffer 数据
   	 *
@@ -57,38 +57,38 @@ object ^ extends js.Object {
   	 * 返回一个数组，用来描述 canvas 区域隐含的像素数据
   	 * @version 1.9.0
   	 */
-  def canvasGetImageData(options: baiduDashAppLib.swanNs.CanvasImageDataOptions): scala.Unit = js.native
+  def canvasGetImageData(options: CanvasImageDataOptions): scala.Unit = js.native
   /**
   	 * 将像素数据绘制到画布的方法
   	 * @version 1.9.0
   	 */
-  def canvasPutImageData(options: baiduDashAppLib.swanNs.CanvasPutImageDataOptions): scala.Unit = js.native
+  def canvasPutImageData(options: CanvasPutImageDataOptions): scala.Unit = js.native
   /**
   	 * 把当前画布的内容导出生成图片，并返回文件路径
   	 */
-  def canvasToTempFilePath(options: stdLib.Partial[baiduDashAppLib.swanNs.CanvasToTempFilePathOptions]): scala.Unit = js.native
+  def canvasToTempFilePath(options: stdLib.Partial[CanvasToTempFilePathOptions]): scala.Unit = js.native
   /**
   	 * 调用接口 swan.login 获取 Authorization Code，智能小程序可以使用
   	 * swan.login()接口获取Authorization Code。
   	 */
-  def checkSession(options: baiduDashAppLib.swanNs.CheckSessionOption): scala.Unit = js.native
-  def chooseAddress(options: baiduDashAppLib.swanNs.ChooseAddressOptions): scala.Unit = js.native
+  def checkSession(options: CheckSessionOption): scala.Unit = js.native
+  def chooseAddress(options: ChooseAddressOptions): scala.Unit = js.native
   /**
   	 * 从本地相册选择图片或使用相机拍照。
   	 */
-  def chooseImage(options: baiduDashAppLib.swanNs.ChooseImageOptions): scala.Unit = js.native
+  def chooseImage(options: ChooseImageOptions): scala.Unit = js.native
   /**
   	 * 选择用户的发票抬头。
   	 */
-  def chooseInvoiceTitle(options: baiduDashAppLib.swanNs.ChooseInvoiceTitleOptions): scala.Unit = js.native
+  def chooseInvoiceTitle(options: ChooseInvoiceTitleOptions): scala.Unit = js.native
   /**
   	 * 打开地图选择位置
   	 */
-  def chooseLocation(options: baiduDashAppLib.swanNs.ChooseLocationOptions): scala.Unit = js.native
+  def chooseLocation(options: ChooseLocationOptions): scala.Unit = js.native
   /**
   	 * 拍摄视频或从手机相册中选视频，返回视频的临时文件路径。
   	 */
-  def chooseVideo(options: baiduDashAppLib.swanNs.ChooseVideoOptions): scala.Unit = js.native
+  def chooseVideo(options: ChooseVideoOptions): scala.Unit = js.native
   /**
   	 * 清理本地数据缓存。
   	 */
@@ -101,24 +101,24 @@ object ^ extends js.Object {
   	 * 断开与低功耗蓝牙设备的连接
   	 * @version 1.1.0
   	 */
-  def closeBLEConnection(options: baiduDashAppLib.swanNs.CloseBLEConnectionOptions): scala.Unit = js.native
+  def closeBLEConnection(options: CloseBLEConnectionOptions): scala.Unit = js.native
   /**
   	 * 关闭蓝牙模块。调用该方法将断开所有已建立的链接并释放系统资源
   	 * @version 1.1.0
   	 */
-  def closeBluetoothAdapter(options: baiduDashAppLib.swanNs.CloseBluetoothAdapterOptions): scala.Unit = js.native
+  def closeBluetoothAdapter(options: CloseBluetoothAdapterOptions): scala.Unit = js.native
   /**
   	 * 关闭WebSocket连接。
   	 */
   def closeSocket(): scala.Unit = js.native
-  def closeSocket(options: baiduDashAppLib.swanNs.CloseSocketOptions): scala.Unit = js.native
+  def closeSocket(options: CloseSocketOptions): scala.Unit = js.native
   /**
   	 * 创建一个 WebSocket 连接；
   	 * 一个微信小程序同时只能有一个 WebSocket 连接，
   	 * 如果当前已存在一个 WebSocket 连接，
   	 * 会自动关闭该连接，并重新创建一个 WebSocket 连接。
   	 */
-  def connectSocket(options: baiduDashAppLib.swanNs.ConnectSocketOptions): scala.Unit = js.native
+  def connectSocket(options: ConnectSocketOptions): scala.Unit = js.native
   /**
   	 * 连接 Wi-Fi。
   	 * 若已知 Wi-Fi 信息，可以直接利用该接口连接。
@@ -126,20 +126,20 @@ object ^ extends js.Object {
   	 * @version 1.6.0
   	 */
   def connectWifi(): scala.Unit = js.native
-  def connectWifi(options: baiduDashAppLib.swanNs.ConnectWiFiOptions): scala.Unit = js.native
+  def connectWifi(options: ConnectWiFiOptions): scala.Unit = js.native
   /**
   	 * 创建一个动画实例animation。调用实例的方法来描述动画。
   	 * 最后通过动画实例的export方法导出动画数据传递给组件的animation属性。
   	 *
   	 * 注意: export 方法每次调用后会清掉之前的动画操作
   	 */
-  def createAnimation(): baiduDashAppLib.swanNs.Animation = js.native
-  def createAnimation(options: baiduDashAppLib.swanNs.CreateAnimationOptions): baiduDashAppLib.swanNs.Animation = js.native
+  def createAnimation(): Animation = js.native
+  def createAnimation(options: CreateAnimationOptions): Animation = js.native
   /**
   	 * 低功耗蓝牙接口
   	 * @version 1.1.0
   	 */
-  def createBLEConnection(options: baiduDashAppLib.swanNs.CreateBLEConnectionOptions): scala.Unit = js.native
+  def createBLEConnection(options: CreateBLEConnectionOptions): scala.Unit = js.native
   /**
   	 * 创建并返回 camera 上下文 cameraContext 对象
   	 * cameraContext 与页面的 camera 组件绑定
@@ -147,8 +147,8 @@ object ^ extends js.Object {
   	 * 在自定义组件下，第一个参数传入组件实例this，以操作组件内 <camera/> 组件
   	 * @version 1.6.0
   	 */
-  def createCameraContext(): baiduDashAppLib.swanNs.CameraContext = js.native
-  def createCameraContext(instance: js.Any): baiduDashAppLib.swanNs.CameraContext = js.native
+  def createCameraContext(): CameraContext = js.native
+  def createCameraContext(instance: js.Any): CameraContext = js.native
   /**
   	 * 创建并返回绘图上下文context对象。
   	 * context只是一个记录方法调用的容器，
@@ -156,127 +156,124 @@ object ^ extends js.Object {
   	 * ontext跟<canvas/>不存在对应关系，
   	 * 一个context生成画布的绘制动作数组可以应用于多个<canvas/>。
   	 */
-  def createCanvasContext(selector: java.lang.String): baiduDashAppLib.swanNs.CanvasContext = js.native
+  def createCanvasContext(selector: java.lang.String): CanvasContext = js.native
   /**
   	 * 创建并返回内部 audio 上下文 innerAudioContext 对象。
   	 */
-  def createInnerAudioContext(): baiduDashAppLib.swanNs.InnerAudioContext = js.native
-  def createIntersectionObserver(context: baiduDashAppLib.swanNs.Component[_, _]): baiduDashAppLib.swanNs.IntersectionObserver = js.native
-  def createIntersectionObserver(
-    context: baiduDashAppLib.swanNs.Component[_, _],
-    options: baiduDashAppLib.swanNs.CreateIntersectionObserverOption
-  ): baiduDashAppLib.swanNs.IntersectionObserver = js.native
+  def createInnerAudioContext(): InnerAudioContext = js.native
+  def createIntersectionObserver(context: Component[_, _]): IntersectionObserver = js.native
+  def createIntersectionObserver(context: Component[_, _], options: CreateIntersectionObserverOption): IntersectionObserver = js.native
   /**
   	 * 操作对应的 <live-player/> 组件。
   	 * 创建并返回 live-player 上下文 LivePlayerContext 对象。
   	 * 在自定义组件下，第二个参数传入组件实例this，以操作组件内 <live-player/> 组件
   	 * @version 1.7.0
   	 */
-  def createLivePlayerContext(id: java.lang.String, instance: js.Any): baiduDashAppLib.swanNs.LivePlayerContext = js.native
+  def createLivePlayerContext(id: java.lang.String, instance: js.Any): LivePlayerContext = js.native
   /**
   	 * 创建并返回 map 上下文 mapContext 对象
   	 */
-  def createMapContext(mapId: java.lang.String): baiduDashAppLib.swanNs.MapContext = js.native
+  def createMapContext(mapId: java.lang.String): MapContext = js.native
   /**
   	 * 返回一个SelectorQuery对象实例。
   	 * 可以在这个实例上使用select等方法选择节点，并使用boundingClientRect等方法选择需要查询的信息。
   	 * @version 1.4.0
   	 */
-  def createSelectorQuery(): baiduDashAppLib.swanNs.SelectorQuery = js.native
+  def createSelectorQuery(): SelectorQuery = js.native
   /**
   	 * 创建并返回 video 上下文 videoContext 对象
   	 * @param videoId video标签id <video  src="{{src}}" id="myVideo" ></video>
   	 */
-  def createVideoContext(videoId: java.lang.String): baiduDashAppLib.swanNs.VideoContext = js.native
+  def createVideoContext(videoId: java.lang.String): VideoContext = js.native
   /**
   	 * 下载文件资源到本地。客户端直接发起一个 HTTP GET 请求，
   	 * 把下载到的资源根据 type 进行处理，并返回文件的本地临时路径。
   	 */
-  def downloadFile(options: baiduDashAppLib.swanNs.DownloadFileOptions): baiduDashAppLib.swanNs.DownloadTask = js.native
+  def downloadFile(options: DownloadFileOptions): DownloadTask = js.native
   /**
   	 * 绘制画布
   	 */
-  def drawCanvas(options: baiduDashAppLib.swanNs.DrawCanvasOptions): scala.Unit = js.native
+  def drawCanvas(options: DrawCanvasOptions): scala.Unit = js.native
   /**
   	 * 获取当前账号信息
   	 * @version >= 2.2.2
   	 */
-  def getAccountInfoSync(): baiduDashAppLib.swanNs.AccountInfo = js.native
+  def getAccountInfoSync(): AccountInfo = js.native
   /**
   	 * 获取蓝牙设备所有 characteristic（特征值）
   	 */
-  def getBLEDeviceCharacteristics(options: baiduDashAppLib.swanNs.GetBLEDeviceCharacteristicsOptions): scala.Unit = js.native
+  def getBLEDeviceCharacteristics(options: GetBLEDeviceCharacteristicsOptions): scala.Unit = js.native
   /**
   	 * 获取蓝牙设备所有 service（服务）
   	 */
-  def getBLEDeviceServices(options: baiduDashAppLib.swanNs.GetBLEDeviceServicesOptions): scala.Unit = js.native
+  def getBLEDeviceServices(options: GetBLEDeviceServicesOptions): scala.Unit = js.native
   /**
   	 * 获取全局唯一的背景音频管理器 backgroundAudioManager。
   	 * @version 1.2.0
   	 */
-  def getBackgroundAudioManager(): baiduDashAppLib.swanNs.BackgroundAudioManager = js.native
+  def getBackgroundAudioManager(): BackgroundAudioManager = js.native
   /**
   	 * 获取音乐播放状态。
   	 * @deprecated 1.2.0
   	 */
-  def getBackgroundAudioPlayerState(options: baiduDashAppLib.swanNs.GetBackgroundAudioPlayerStateOptions): scala.Unit = js.native
+  def getBackgroundAudioPlayerState(options: GetBackgroundAudioPlayerStateOptions): scala.Unit = js.native
   /**
   	 * 获取所有已搜索到的iBeacon设备
   	 * @version 1.2.0
   	 */
-  def getBeacons(options: baiduDashAppLib.swanNs.GetBeaconsOptions): scala.Unit = js.native
+  def getBeacons(options: GetBeaconsOptions): scala.Unit = js.native
   /**
   	 * 获取本机蓝牙适配器状态
   	 * @version 1.1.0
   	 */
-  def getBluetoothAdapterState(options: baiduDashAppLib.swanNs.GetBluetoothAdapterStateOptions): scala.Unit = js.native
+  def getBluetoothAdapterState(options: GetBluetoothAdapterStateOptions): scala.Unit = js.native
   /**
   	 * 获取所有已发现的蓝牙设备，包括已经和本机处于连接状态的设备
   	 */
-  def getBluetoothDevices(options: baiduDashAppLib.swanNs.GetBluetoothDevicesOptions): scala.Unit = js.native
+  def getBluetoothDevices(options: GetBluetoothDevicesOptions): scala.Unit = js.native
   /**
   	 * 获取系统剪贴板内容
   	 * 微信客户端 6.5.6 版本开始支持
   	 * @version 1.1.0
   	 */
-  def getClipboardData(options: baiduDashAppLib.swanNs.BaseOptions[_, _]): scala.Unit = js.native
+  def getClipboardData(options: BaseOptions[_, _]): scala.Unit = js.native
   /**
   	 * 根据 uuid 获取处于已连接状态的设备
   	 * @version 1.1.0
   	 */
-  def getConnectedBluetoothDevices(options: baiduDashAppLib.swanNs.GetConnectedBluetoothDevicesOptions): scala.Unit = js.native
+  def getConnectedBluetoothDevices(options: GetConnectedBluetoothDevicesOptions): scala.Unit = js.native
   /**
   	 * 获取已连接中的 Wi-Fi 信息
   	 * @version 1.6.0
   	 */
   def getConnectedWifi(): scala.Unit = js.native
-  def getConnectedWifi(options: baiduDashAppLib.swanNs.GetConnectedWifiOptions): scala.Unit = js.native
-  def getEnvInfoSync(): baiduDashAppLib.swanNs.EnvInfo = js.native
+  def getConnectedWifi(options: GetConnectedWifiOptions): scala.Unit = js.native
+  def getEnvInfoSync(): EnvInfo = js.native
   /**
   	 * 获取第三方平台自定义的数据字段。
   	 * @version 1.1.0
   	 */
   def getExtConfig(): scala.Unit = js.native
-  def getExtConfig(options: baiduDashAppLib.swanNs.GetExtConfigOptions): scala.Unit = js.native
+  def getExtConfig(options: GetExtConfigOptions): scala.Unit = js.native
   /**
   	 * 获取第三方平台自定义的数据字段的同步接口。
   	 * @version 1.1.0
   	 */
-  def getExtConfigSync(): baiduDashAppLib.swanNs.ExtConfig = js.native
+  def getExtConfigSync(): ExtConfig = js.native
   /**
   	 *  获取文件信息
   	 * @version 1.4.0
   	 */
-  def getFileInfo(options: baiduDashAppLib.swanNs.GetFileInfoOptions): scala.Unit = js.native
+  def getFileInfo(options: GetFileInfoOptions): scala.Unit = js.native
   /**
   	 * 获取图片信息
   	 */
-  def getImageInfo(options: baiduDashAppLib.swanNs.GetImageInfoOptions): scala.Unit = js.native
+  def getImageInfo(options: GetImageInfoOptions): scala.Unit = js.native
   /**
   	 * 获取当前的地理位置、速度。
   	 */
   def getLocation(): scala.Unit = js.native
-  def getLocation(options: baiduDashAppLib.swanNs.GetLocationOptions): scala.Unit = js.native
+  def getLocation(options: GetLocationOptions): scala.Unit = js.native
   // #region LogManager
   /**
   	 * 获取日志管理器 logManager 对象。logManager提供log、info、warn、debug四个方法写日志到文件，
@@ -285,51 +282,51 @@ object ^ extends js.Object {
   	 * 用户可以通过设置Button组件的open-type为feedback来上传打印的日志。
   	 * 用户上传的日志可以通过登录小程序管理后台后进入左侧菜单“客服反馈”页面获取到。
   	 */
-  def getLogManager(): baiduDashAppLib.swanNs.Logger = js.native
+  def getLogManager(): Logger = js.native
   /**
   	 * 获取网络类型。
   	 */
-  def getNetworkType(options: baiduDashAppLib.swanNs.GetNetworkTypeOptions): scala.Unit = js.native
+  def getNetworkType(options: GetNetworkTypeOptions): scala.Unit = js.native
   /**
   	 * 获取全局唯一的录音管理器 recorderManager
   	 * @version 1.6.0
   	 */
-  def getRecorderManager(): baiduDashAppLib.swanNs.RecorderManager = js.native
+  def getRecorderManager(): RecorderManager = js.native
   /**
   	 * 获取本地文件的文件信息
   	 */
-  def getSavedFileInfo(options: baiduDashAppLib.swanNs.GetSavedFileInfoOptions): scala.Unit = js.native
+  def getSavedFileInfo(options: GetSavedFileInfoOptions): scala.Unit = js.native
   /**
   	 * 获取本地已保存的文件列表
   	 */
-  def getSavedFileList(options: baiduDashAppLib.swanNs.GetSavedFileListOptions): scala.Unit = js.native
+  def getSavedFileList(options: GetSavedFileListOptions): scala.Unit = js.native
   /**
   	 * 获取屏幕亮度
   	 * @version 1.2.0
   	 */
   def getScreenBrightness(): scala.Unit = js.native
-  def getScreenBrightness(options: baiduDashAppLib.swanNs.GetScreenBrightnessOptions): scala.Unit = js.native
+  def getScreenBrightness(options: GetScreenBrightnessOptions): scala.Unit = js.native
   /**
   	 * 获取用户的当前设置。
   	 * 注：返回值中只会出现小程序已经向用户请求过的权限。
   	 * @version 1.2.0
   	 */
-  def getSetting(options: baiduDashAppLib.swanNs.OpenSettingOptions): scala.Unit = js.native
+  def getSetting(options: OpenSettingOptions): scala.Unit = js.native
   /**
   	 * 获取转发详细信息
   	 * @version 1.1.0
   	 */
   def getShareInfo(): scala.Unit = js.native
-  def getShareInfo(options: baiduDashAppLib.swanNs.GetShareInfoOptions): scala.Unit = js.native
+  def getShareInfo(options: GetShareInfoOptions): scala.Unit = js.native
   /**
   	 * 从本地缓存中异步获取指定 key 对应的内容。
   	 */
-  def getStorage(options: baiduDashAppLib.swanNs.GetStorageOptions): scala.Unit = js.native
+  def getStorage(options: GetStorageOptions): scala.Unit = js.native
   /**
   	 * 异步获取当前storage的相关信息
   	 */
-  def getStorageInfo(options: baiduDashAppLib.swanNs.GetStorageInfoOptions): scala.Unit = js.native
-  def getStorageInfoSync(): baiduDashAppLib.swanNs.StorageInfo = js.native
+  def getStorageInfo(options: GetStorageInfoOptions): scala.Unit = js.native
+  def getStorageInfoSync(): StorageInfo = js.native
   /**
   	 * 从本地缓存中同步获取指定 key 对应的内容。
   	 *
@@ -338,17 +335,17 @@ object ^ extends js.Object {
   /**
   	 * 获取 swanid。
   	 */
-  def getSwanId(opt: baiduDashAppLib.swanNs.SwanIdOptions): scala.Unit = js.native
+  def getSwanId(opt: SwanIdOptions): scala.Unit = js.native
   /**
   	 * 获取系统信息。
   	 */
-  def getSystemInfo(options: baiduDashAppLib.swanNs.GetSystemInfoOptions): scala.Unit = js.native
-  def getSystemInfoSync(): baiduDashAppLib.swanNs.SystemInfo = js.native
-  def getUpdateManager(): baiduDashAppLib.swanNs.UpdateManager = js.native
+  def getSystemInfo(options: GetSystemInfoOptions): scala.Unit = js.native
+  def getSystemInfoSync(): SystemInfo = js.native
+  def getUpdateManager(): UpdateManager = js.native
   /**
   	 * 获取用户信息，需要先调用 swan.login 接口。
   	 */
-  def getUserInfo(options: baiduDashAppLib.swanNs.GetUserInfoOptions): scala.Unit = js.native
+  def getUserInfo(options: GetUserInfoOptions): scala.Unit = js.native
   /**
   	 * 请求获取 Wi-Fi 列表
   	 * 在 onGetWifiList 注册的回调中返回 wifiList 数据。
@@ -357,7 +354,7 @@ object ^ extends js.Object {
   	 * @version 1.6.0
   	 */
   def getWifiList(): scala.Unit = js.native
-  def getWifiList(options: baiduDashAppLib.swanNs.BaseOptions[_, _]): scala.Unit = js.native
+  def getWifiList(options: BaseOptions[_, _]): scala.Unit = js.native
   /**
   	 * 收起键盘。
   	 */
@@ -376,17 +373,17 @@ object ^ extends js.Object {
   	 * @version 1.1.0
   	 */
   def hideShareMenu(): scala.Unit = js.native
-  def hideShareMenu(options: baiduDashAppLib.swanNs.ShareMenuOptions): scala.Unit = js.native
+  def hideShareMenu(options: ShareMenuOptions): scala.Unit = js.native
   /**
   	 * 隐藏 tabBar
   	 * @version 1.9.0
   	 */
-  def hideTabBar(options: baiduDashAppLib.swanNs.ShowTabBarOptions): scala.Unit = js.native
+  def hideTabBar(options: ShowTabBarOptions): scala.Unit = js.native
   /**
   	 * 隐藏 tabBar 某一项的右上角的红点
   	 * @version 1.9.0
   	 */
-  def hideTabBarRedDot(option: baiduDashAppLib.swanNs.TabBarBadgeOptions): scala.Unit = js.native
+  def hideTabBarRedDot(option: TabBarBadgeOptions): scala.Unit = js.native
   def hideToast(): scala.Unit = js.native
   /**
   	 * 获取手百登录状态。手百登录状态 true: 已登录，false: 未登录
@@ -395,45 +392,45 @@ object ^ extends js.Object {
   /**
   	 * 提前下载好子包的资源，目录结构配置参考(https://smartprogram.baidu.com/docs/develop/framework/subpackages/)。
   	 */
-  def loadSubPackage(options: baiduDashAppLib.swanNs.LoadSubPackageOptions): scala.Unit = js.native
+  def loadSubPackage(options: LoadSubPackageOptions): scala.Unit = js.native
   /**
   	 * 调用接口获取登录凭证（code）进而换取用户登录态信息，
   	 * 包括用户的唯一标识（openid） 及本次登录的 会话密钥（session_key）。
   	 * 用户数据的加解密通讯需要依赖会话密钥完成。
   	 */
-  def login(option: baiduDashAppLib.swanNs.LoginOptions): scala.Unit = js.native
+  def login(option: LoginOptions): scala.Unit = js.native
   /**
   	 * 拨打电话
   	 */
-  def makePhoneCall(options: baiduDashAppLib.swanNs.MakePhoneCallOptions): scala.Unit = js.native
+  def makePhoneCall(options: MakePhoneCallOptions): scala.Unit = js.native
   /**
   	 * 关闭当前页面，回退前一页面。
   	 */
   def navigateBack(): scala.Unit = js.native
-  def navigateBack(options: baiduDashAppLib.swanNs.NavigateBackOptions): scala.Unit = js.native
+  def navigateBack(options: NavigateBackOptions): scala.Unit = js.native
   /**
   	 * 返回到上一个小程序，只有在当前小程序是被其他小程序打开时可以调用成功
   	 */
-  def navigateBackMiniProgram(options: baiduDashAppLib.swanNs.NavigateBackMiniProgramOptions): scala.Unit = js.native
+  def navigateBackMiniProgram(options: NavigateBackMiniProgramOptions): scala.Unit = js.native
   /**
   	 *  返回上一个小程序
   	 */
-  def navigateBackSmartProgram(options: baiduDashAppLib.swanNs.navigateBackSmartProgramOptions): scala.Unit = js.native
+  def navigateBackSmartProgram(options: navigateBackSmartProgramOptions): scala.Unit = js.native
   /**
   	 * 保留当前页面，跳转到应用内的某个页面，使用swan.navigateBack可以返回到原页面。
   	 *
   	 * 注意：为了不让用户在使用小程序时造成困扰，
   	 * 我们规定页面路径只能是五层，请尽量避免多层级的交互方式。
   	 */
-  def navigateTo(options: baiduDashAppLib.swanNs.NavigateToOptions): scala.Unit = js.native
+  def navigateTo(options: NavigateToOptions): scala.Unit = js.native
   /**
   	 * 打开同一公众号下关联的另一个小程序。
   	 */
-  def navigateToMiniProgram(options: baiduDashAppLib.swanNs.NavigateToMiniProgramOptions): scala.Unit = js.native
+  def navigateToMiniProgram(options: NavigateToMiniProgramOptions): scala.Unit = js.native
   /**
   	 *  打开另一个小程序。
   	 */
-  def navigateToSmartProgram(options: baiduDashAppLib.swanNs.navigateToSmartProgramOptions): scala.Unit = js.native
+  def navigateToSmartProgram(options: navigateToSmartProgramOptions): scala.Unit = js.native
   /**
   	 * 用于延迟一部分操作到下一个时间片再执行（类似于 setTimeout）。
   	 * @param func
@@ -445,11 +442,11 @@ object ^ extends js.Object {
   	 * 注意：必须设备的特征值支持notify才可以成功调用，具体参照 characteristic 的 properties 属性
   	 * 另外，必须先启用notify才能监听到设备 characteristicValueChange 事件
   	 */
-  def notifyBLECharacteristicValueChanged(options: baiduDashAppLib.swanNs.NotifyBLECharacteristicValueChanged): scala.Unit = js.native
+  def notifyBLECharacteristicValueChanged(options: NotifyBLECharacteristicValueChanged): scala.Unit = js.native
   /**
   	 * 监听重力感应数据，频率：5次/秒
   	 */
-  def onAccelerometerChange(callback: baiduDashAppLib.swanNs.AccelerometerChangeCallback): scala.Unit = js.native
+  def onAccelerometerChange(callback: AccelerometerChangeCallback): scala.Unit = js.native
   /**
   	 * 监听低功耗蓝牙设备的特征值变化。必须先启用notify接口才能接收到设备推送的notification。
   	 */
@@ -484,12 +481,12 @@ object ^ extends js.Object {
   	 * @version 1.2.0
   	 */
   def onBeaconUpdate(): scala.Unit = js.native
-  def onBeaconUpdate(callback: js.Function1[/* beacons */ js.Array[baiduDashAppLib.swanNs.Beacon], scala.Unit]): scala.Unit = js.native
+  def onBeaconUpdate(callback: js.Function1[/* beacons */ js.Array[Beacon], scala.Unit]): scala.Unit = js.native
   /**
   	 * 监听蓝牙适配器状态变化事件
   	 * @version 1.1.0
   	 */
-  def onBluetoothAdapterStateChange(callback: js.Function1[/* res */ baiduDashAppLib.swanNs.BluetoothAdapterState, scala.Unit]): scala.Unit = js.native
+  def onBluetoothAdapterStateChange(callback: js.Function1[/* res */ BluetoothAdapterState, scala.Unit]): scala.Unit = js.native
   /**
   	 * 监听寻找到新设备的事件
   	 * @version 1.1.0
@@ -498,13 +495,13 @@ object ^ extends js.Object {
   /**
   	 * 监听罗盘数据，频率：5次/秒，接口调用后会自动开始监听，可使用swan.stopCompass停止监听。
   	 */
-  def onCompassChange(callback: baiduDashAppLib.swanNs.CompassChangeCallback): scala.Unit = js.native
+  def onCompassChange(callback: CompassChangeCallback): scala.Unit = js.native
   /**
   	 * 监听在获取到 Wi-Fi 列表数据时的事件，在回调中将返回 wifiList。
   	 * @version 1.6.0
   	 */
   def onGetWifiList(): scala.Unit = js.native
-  def onGetWifiList(callback: js.Function1[/* res */ baiduDashAppLib.swanNs.GetWifiListOptions, scala.Unit]): scala.Unit = js.native
+  def onGetWifiList(callback: js.Function1[/* res */ GetWifiListOptions, scala.Unit]): scala.Unit = js.native
   // 内存
   def onMemoryWarning(callback: js.Function1[/* res */ baiduDashAppLib.Anon_Level, scala.Unit]): scala.Unit = js.native
   /**
@@ -520,7 +517,7 @@ object ^ extends js.Object {
   /**
   	 * 监听WebSocket接受到服务器的消息事件。
   	 */
-  def onSocketMessage(callback: js.Function1[/* res */ baiduDashAppLib.swanNs.DataResponse, scala.Unit]): scala.Unit = js.native
+  def onSocketMessage(callback: js.Function1[/* res */ DataResponse, scala.Unit]): scala.Unit = js.native
   /** 监听WebSocket连接打开事件。 */
   def onSocketOpen(callback: js.Function1[/* res */ js.Any, scala.Unit]): scala.Unit = js.native
   /**
@@ -534,44 +531,44 @@ object ^ extends js.Object {
   	 * @version 1.6.0
   	 */
   def onWifiConnected(): scala.Unit = js.native
-  def onWifiConnected(callback: js.Function1[/* wifi */ baiduDashAppLib.swanNs.WiFi, scala.Unit]): scala.Unit = js.native
+  def onWifiConnected(callback: js.Function1[/* wifi */ WiFi, scala.Unit]): scala.Unit = js.native
   /**
   	 * 初始化蓝牙适配器
   	 * @version 1.1.0
   	 */
-  def openBluetoothAdapter(options: baiduDashAppLib.swanNs.OpenBluetoothAdapterOptions): scala.Unit = js.native
+  def openBluetoothAdapter(options: OpenBluetoothAdapterOptions): scala.Unit = js.native
   /**
   	 * 查看微信卡包中的卡券。
   	 *
   	 */
-  def openCard(options: baiduDashAppLib.swanNs.OpenCardOptions): scala.Unit = js.native
+  def openCard(options: OpenCardOptions): scala.Unit = js.native
   /**
   	 * 新开页面打开文档，支持格式：doc, xls, ppt, pdf, docx, xlsx, pptx
   	 */
-  def openDocument(options: baiduDashAppLib.swanNs.OpenDocumentOptions): scala.Unit = js.native
+  def openDocument(options: OpenDocumentOptions): scala.Unit = js.native
   /**
   	 * 使用微信内置地图查看位置
   	 */
-  def openLocation(options: baiduDashAppLib.swanNs.OpenLocationOptions): scala.Unit = js.native
+  def openLocation(options: OpenLocationOptions): scala.Unit = js.native
   /**
   	 * 调起客户端小程序设置界面，返回用户设置的操作结果。
   	 * 注：设置界面只会出现小程序已经向用户请求过的权限。
   	 * @version 1.1.0
   	 */
-  def openSetting(options: baiduDashAppLib.swanNs.OpenSettingOptions): scala.Unit = js.native
+  def openSetting(options: OpenSettingOptions): scala.Unit = js.native
   /**
   	 * 调起分享面板。
   	 * bug : 百度App Android 客户端 10.13 以下版本，点击分享
   	 * 面板的取消时,不会执行 fail 回调。
   	 */
-  def openShare(options: baiduDashAppLib.swanNs.openShareOptions): scala.Unit = js.native
-  def pageScrollTo(options: baiduDashAppLib.swanNs.PageScrollToOptions): scala.Unit = js.native
+  def openShare(options: openShareOptions): scala.Unit = js.native
+  def pageScrollTo(options: PageScrollToOptions): scala.Unit = js.native
   /**
   	 * 暂停播放音乐。
   	 * @deprecated 1.2.0
   	 */
   def pauseBackgroundAudio(): scala.Unit = js.native
-  def pauseBackgroundAudio(options: baiduDashAppLib.swanNs.PlayBackgroundAudioOptions): scala.Unit = js.native
+  def pauseBackgroundAudio(options: PlayBackgroundAudioOptions): scala.Unit = js.native
   /**
   	 * 暂停正在播放的语音。
   	 * 再次调用swan.playVoice播放同一个文件时，会从暂停处开始播放。
@@ -583,43 +580,43 @@ object ^ extends js.Object {
   	 * 播放音乐，同时只能有一首音乐正在播放。
   	 * @deprecated 1.2.0
   	 */
-  def playBackgroundAudio(options: baiduDashAppLib.swanNs.PlayBackgroundAudioOptions): scala.Unit = js.native
+  def playBackgroundAudio(options: PlayBackgroundAudioOptions): scala.Unit = js.native
   /**
   	 * 开始播放语音，同时只允许一个语音文件正在播放，
   	 * 如果前一个语音文件还没播放完，将中断前一个语音播放。
   	 * @deprecated 1.6.0
   	 */
-  def playVoice(options: baiduDashAppLib.swanNs.PlayVoiceOptions): scala.Unit = js.native
+  def playVoice(options: PlayVoiceOptions): scala.Unit = js.native
   /**
   	 * 预览图片。
   	 */
-  def previewImage(options: baiduDashAppLib.swanNs.PreviewImageOptions): scala.Unit = js.native
+  def previewImage(options: PreviewImageOptions): scala.Unit = js.native
   /**
   	 * 关闭所有页面，打开到应用内的某个页面。
   	 * @version 1.1.0
   	 */
   def reLaunch(): scala.Unit = js.native
-  def reLaunch(options: baiduDashAppLib.swanNs.ReLaunchOptions): scala.Unit = js.native
+  def reLaunch(options: ReLaunchOptions): scala.Unit = js.native
   /**
   	 * 读取低功耗蓝牙设备的特征值的二进制数据值。
   	 * 注意：必须设备的特征值支持read才可以成功调用，具体参照 characteristic 的 properties 属性
   	 */
-  def readBLECharacteristicValue(options: baiduDashAppLib.swanNs.ReadBLECharacteristicValue): scala.Unit = js.native
+  def readBLECharacteristicValue(options: ReadBLECharacteristicValue): scala.Unit = js.native
   /**
   	 * 关闭当前页面，跳转到应用内的某个页面。
   	 */
-  def redirectTo(options: baiduDashAppLib.swanNs.RedirectToOptions): scala.Unit = js.native
+  def redirectTo(options: RedirectToOptions): scala.Unit = js.native
   /**
   	 * 删除本地存储的文件
   	 */
-  def removeSavedFile(options: baiduDashAppLib.swanNs.RemoveSavedFileOptions): scala.Unit = js.native
-  def removeStorage(options: baiduDashAppLib.swanNs.RemoveStorageOptions): scala.Unit = js.native
-  def removeStorageSync(key: java.lang.String): baiduDashAppLib.swanNs.DataResponse = js.native
+  def removeSavedFile(options: RemoveSavedFileOptions): scala.Unit = js.native
+  def removeStorage(options: RemoveStorageOptions): scala.Unit = js.native
+  def removeStorageSync(key: java.lang.String): DataResponse = js.native
   /**
   	 * 移除 tabBar 某一项右上角的文本
   	 * @version 1.9.0
   	 */
-  def removeTabBarBadge(options: baiduDashAppLib.swanNs.TabBarBadgeOptions): scala.Unit = js.native
+  def removeTabBarBadge(options: TabBarBadgeOptions): scala.Unit = js.native
   /**
   	 * 自定义分析数据上报接口。使用前，需要在小程序管理后台自定义分析中新建事件，配置好事件名与字段。
   	 *
@@ -637,95 +634,95 @@ object ^ extends js.Object {
   /**
   	 * swan.request发起的是https请求。一个微信小程序，同时只能有5个网络请求连接。
   	 */
-  def request(options: baiduDashAppLib.swanNs.RequestOptions): baiduDashAppLib.swanNs.RequestTask = js.native
+  def request(options: RequestOptions): RequestTask = js.native
   /**
   	 * 发起微信支付。
   	 */
-  def requestPayment(options: baiduDashAppLib.swanNs.RequestPaymentOptions): scala.Unit = js.native
+  def requestPayment(options: RequestPaymentOptions): scala.Unit = js.native
   /**
   	 * 百度收银台。
   	 * @version 1.8.5
   	 */
-  def requestPolymerPayment(options: baiduDashAppLib.swanNs.requestPolymerPaymentOptions): scala.Unit = js.native
+  def requestPolymerPayment(options: requestPolymerPaymentOptions): scala.Unit = js.native
   /**
   	 * 保存文件到本地。
   	 * 本地文件存储的大小限制为 10M
   	 */
-  def saveFile(options: baiduDashAppLib.swanNs.SaveFileOptions): scala.Unit = js.native
+  def saveFile(options: SaveFileOptions): scala.Unit = js.native
   /**
   	 * 保存图片到系统相册。
   	 * 需要用户授权 scope.writePhotosAlbum
   	 * @version 1.2.0
   	 */
-  def saveImageToPhotosAlbum(options: baiduDashAppLib.swanNs.SaveImageToPhotosAlbumOptions): scala.Unit = js.native
+  def saveImageToPhotosAlbum(options: SaveImageToPhotosAlbumOptions): scala.Unit = js.native
   /** 保存视频到系统相册。需要用户授权 scope.writePhotosAlbum */
-  def saveVideoToPhotosAlbum(options: baiduDashAppLib.swanNs.SaveVideoOptions): scala.Unit = js.native
+  def saveVideoToPhotosAlbum(options: SaveVideoOptions): scala.Unit = js.native
   /**
   	 * 调起客户端扫码界面，扫码成功后返回对应的结果
   	 */
-  def scanCode(options: baiduDashAppLib.swanNs.ScanCodeOptions): scala.Unit = js.native
+  def scanCode(options: ScanCodeOptions): scala.Unit = js.native
   /**
   	 * 控制音乐播放进度。
   	 * @deprecated 1.2.0
   	 */
-  def seekBackgroundAudio(options: baiduDashAppLib.swanNs.SeekBackgroundAudioOptions): scala.Unit = js.native
+  def seekBackgroundAudio(options: SeekBackgroundAudioOptions): scala.Unit = js.native
   /**
   	 * 通过 WebSocket 连接发送数据，需要先 swan.connectSocket，
   	 * 并在 swan.onSocketOpen 回调之后才能发送。
   	 */
-  def sendSocketMessage(options: baiduDashAppLib.swanNs.SendSocketMessageOptions): scala.Unit = js.native
+  def sendSocketMessage(options: SendSocketMessageOptions): scala.Unit = js.native
   /**
   	 * 设置系统剪贴板的内容
   	 * 微信客户端 6.5.6 版本开始支持
   	 * @version 1.1.0
   	 */
-  def setClipboardData(options: baiduDashAppLib.swanNs.SetClipboardDataOptions): scala.Unit = js.native
+  def setClipboardData(options: SetClipboardDataOptions): scala.Unit = js.native
   /**
   	 * 动态设置当前页面的标题。此方法为 web 版小程序专用方法，使用前需
   	 * 判断方法是否存在。
   	 */
   def setDocumentTitle(): scala.Unit = js.native
   def setDocumentTitle(options: baiduDashAppLib.Anon_Title): scala.Unit = js.native
-  def setEnableDebug(options: baiduDashAppLib.swanNs.EnableDebugOptions): scala.Unit = js.native
+  def setEnableDebug(options: EnableDebugOptions): scala.Unit = js.native
   /**
   	 * 设置是否保持常亮状态。
   	 * 仅在当前小程序生效，离开小程序后设置失效。
   	 * @version 1.4.0
   	 */
   def setKeepScreenOn(): scala.Unit = js.native
-  def setKeepScreenOn(options: baiduDashAppLib.swanNs.SetKeepScreenOnOptions): scala.Unit = js.native
+  def setKeepScreenOn(options: SetKeepScreenOnOptions): scala.Unit = js.native
   /**
   	 * 设置 web 版小程序 description meta 信息。此方法为 web 版小
   	 * 程序专用方法，使用前需判断方法是否存在。
   	 */
   def setMetaDescription(): scala.Unit = js.native
-  def setMetaDescription(content: baiduDashAppLib.swanNs.MetaDescription): scala.Unit = js.native
+  def setMetaDescription(content: MetaDescription): scala.Unit = js.native
   /**
   	 * 设置 web 版小程序 keywords meta 信息。此方法为 web 版小程序专
   	 * 用方法，使用前需判断方法是否存在。
   	 */
   def setMetaKeywords(): scala.Unit = js.native
-  def setMetaKeywords(content: baiduDashAppLib.swanNs.MetaKeywords): scala.Unit = js.native
+  def setMetaKeywords(content: MetaKeywords): scala.Unit = js.native
   /**
   	 * 设置导航颜色
   	 * @version 1.4.3
   	 */
-  def setNavigationBarColor(options: baiduDashAppLib.swanNs.SetNavigationBarColorOptions): scala.Unit = js.native
+  def setNavigationBarColor(options: SetNavigationBarColorOptions): scala.Unit = js.native
   /**
   	 * 动态设置当前页面的标题。
   	 * @version 1.4.3
   	 */
-  def setNavigationBarTitle(options: baiduDashAppLib.swanNs.SetNavigationBarTitleOptions): scala.Unit = js.native
+  def setNavigationBarTitle(options: SetNavigationBarTitleOptions): scala.Unit = js.native
   /**
   	 * 设置屏幕亮度
   	 * @version 1.2.0
   	 */
-  def setScreenBrightness(options: baiduDashAppLib.swanNs.SetScreenBrightnessOptions): scala.Unit = js.native
+  def setScreenBrightness(options: SetScreenBrightnessOptions): scala.Unit = js.native
   /**
   	 * 将数据存储在本地缓存中指定的 key 中，
   	 * 会覆盖掉原来该 key 对应的内容，这是一个异步接口。
   	 */
-  def setStorage(options: baiduDashAppLib.swanNs.SetStorageOptions): scala.Unit = js.native
+  def setStorage(options: SetStorageOptions): scala.Unit = js.native
   /**
   	 * 将 data 存储在本地缓存中指定的 key 中，
   	 * 会覆盖掉原来该 key 对应的内容，这是一个同步接口。
@@ -739,17 +736,17 @@ object ^ extends js.Object {
   	 * 为 tabBar 某一项的右上角添加文本
   	 * @version 1.9.0
   	 */
-  def setTabBarBadge(options: baiduDashAppLib.swanNs.SetTabBarBadgeOptions): scala.Unit = js.native
+  def setTabBarBadge(options: SetTabBarBadgeOptions): scala.Unit = js.native
   /**
   	 * 动态设置 tabBar 某一项的内容
   	 * @version 1.9.0
   	 */
-  def setTabBarItem(options: baiduDashAppLib.swanNs.SetTabBarItemOptions): scala.Unit = js.native
+  def setTabBarItem(options: SetTabBarItemOptions): scala.Unit = js.native
   /**
   	 * 动态设置 tabBar 的整体样式
   	 * @version 1.9.0
   	 */
-  def setTabBarStyle(options: baiduDashAppLib.swanNs.SetTabBarStyleOptions): scala.Unit = js.native
+  def setTabBarStyle(options: SetTabBarStyleOptions): scala.Unit = js.native
   /**
   	 * 动态设置置顶栏文字内容
   	 * 只有当前小程序被置顶时能生效，如果当前小程序没有被置顶，也能调用成功，但是不会立即生效
@@ -759,7 +756,7 @@ object ^ extends js.Object {
   	 * @version 1.4.3
   	 */
   def setTopBarText(): scala.Unit = js.native
-  def setTopBarText(options: baiduDashAppLib.swanNs.SetTopBarTextOptions): scala.Unit = js.native
+  def setTopBarText(options: SetTopBarTextOptions): scala.Unit = js.native
   /**
   	 * iOS特有接口 在 onGetWifiList 回调后，利用接口设置 wifiList 中 AP 的相关信息。
   	 * 注意：
@@ -768,19 +765,19 @@ object ^ extends js.Object {
   	 * + 有可能随着周边 Wi-Fi 列表的刷新，单个流程内收到多次带有存在重复的 Wi-Fi 列表的回调。
   	 * @version 1.6.0
   	 */
-  def setWifiList(options: baiduDashAppLib.swanNs.SetWifiListOptions): scala.Unit = js.native
+  def setWifiList(options: SetWifiListOptions): scala.Unit = js.native
   /**
   	 * 显示操作菜单
   	 */
-  def showActionSheet(options: baiduDashAppLib.swanNs.ActionSheetOptions): scala.Unit = js.native
+  def showActionSheet(options: ActionSheetOptions): scala.Unit = js.native
   /**
   	 * 显示 loading 提示框, 需主动调用 swan.hideLoading 才能关闭提示框
   	 */
-  def showLoading(options: baiduDashAppLib.swanNs.LoadingOptions): scala.Unit = js.native
+  def showLoading(options: LoadingOptions): scala.Unit = js.native
   /**
   	 * 显示模态弹窗
   	 */
-  def showModal(options: baiduDashAppLib.swanNs.ModalOptions): scala.Unit = js.native
+  def showModal(options: ModalOptions): scala.Unit = js.native
   /**
   	 * 在当前页面显示导航条加载动画。
   	 * @version 1.4.3
@@ -791,46 +788,46 @@ object ^ extends js.Object {
   	 *
   	 */
   def showShareMenu(): scala.Unit = js.native
-  def showShareMenu(options: baiduDashAppLib.swanNs.ShareMenuOptions): scala.Unit = js.native
+  def showShareMenu(options: ShareMenuOptions): scala.Unit = js.native
   /**
   	 * 显示 tabBar
   	 * @version 1.9.0
   	 */
-  def showTabBar(options: baiduDashAppLib.swanNs.ShowTabBarOptions): scala.Unit = js.native
+  def showTabBar(options: ShowTabBarOptions): scala.Unit = js.native
   /**
   	 * 显示 tabBar 某一项的右上角的红点
   	 * @version 1.9.0
   	 */
-  def showTabBarRedDot(option: baiduDashAppLib.swanNs.TabBarBadgeOptions): scala.Unit = js.native
+  def showTabBarRedDot(option: TabBarBadgeOptions): scala.Unit = js.native
   /**
   	 * 显示消息提示框
   	 */
-  def showToast(options: baiduDashAppLib.swanNs.ToastOptions): scala.Unit = js.native
+  def showToast(options: ToastOptions): scala.Unit = js.native
   /**
   	 * 开始监听加速度数据。
   	 * 微信客户端 6.5.6 版本开始支持
   	 * @version 1.1.0
   	 */
-  def startAccelerometer(options: baiduDashAppLib.swanNs.AccelerometerOptions): scala.Unit = js.native
+  def startAccelerometer(options: AccelerometerOptions): scala.Unit = js.native
   /**
   	 * 开始搜索附近的iBeacon设备
   	 * @version 1.2.0
   	 */
-  def startBeaconDiscovery(options: baiduDashAppLib.swanNs.StartBeaconDiscoveryOptions): scala.Unit = js.native
+  def startBeaconDiscovery(options: StartBeaconDiscoveryOptions): scala.Unit = js.native
   /**
   	 * 开始监听罗盘数据。
   	 * 微信客户端 6.5.6 版本开始支持
   	 * @version 1.1.0
   	 */
   def startCompass(): scala.Unit = js.native
-  def startCompass(options: baiduDashAppLib.swanNs.CompassOptions): scala.Unit = js.native
+  def startCompass(options: CompassOptions): scala.Unit = js.native
   // 页面-----下拉刷新
   /**
   	 * 开始下拉刷新，调用后触发下拉刷新动画，效果与用户手动下拉刷新一致
   	 * @version 1.5.0
   	 */
   def startPullDownRefresh(): scala.Unit = js.native
-  def startPullDownRefresh(options: baiduDashAppLib.swanNs.BaseOptions[_, _]): scala.Unit = js.native
+  def startPullDownRefresh(options: BaseOptions[_, _]): scala.Unit = js.native
   /**
   	 * 开始录音。当主动调用swan.stopRecord，
   	 * 或者录音超过1分钟时自动结束录音，返回录音文件的临时文件路径。
@@ -838,50 +835,50 @@ object ^ extends js.Object {
   	 * 如需持久保存，需在主动调用swan.saveFile，在小程序下次启动时才能访问得到。
   	 * @deprecated 1.6.0
   	 */
-  def startRecord(options: baiduDashAppLib.swanNs.StartRecordAudioOptions): scala.Unit = js.native
+  def startRecord(options: StartRecordAudioOptions): scala.Unit = js.native
   // 设备-----Wi-Fi
   /**
   	 * 初始化 Wi-Fi 模块。
   	 * @version 1.6.0
   	 */
   def startWifi(): scala.Unit = js.native
-  def startWifi(options: baiduDashAppLib.swanNs.BaseOptions[_, _]): scala.Unit = js.native
+  def startWifi(options: BaseOptions[_, _]): scala.Unit = js.native
   /**
   	 * 停止监听加速度数据。
   	 * 微信客户端 6.5.6 版本开始支持
   	 * @version 1.1.0
   	 */
   def stopAccelerometer(): scala.Unit = js.native
-  def stopAccelerometer(options: baiduDashAppLib.swanNs.AccelerometerOptions): scala.Unit = js.native
+  def stopAccelerometer(options: AccelerometerOptions): scala.Unit = js.native
   /**
   	 * 停止播放音乐。
   	 * @deprecated 1.2.0
   	 */
   def stopBackgroundAudio(): scala.Unit = js.native
-  def stopBackgroundAudio(options: baiduDashAppLib.swanNs.PlayBackgroundAudioOptions): scala.Unit = js.native
+  def stopBackgroundAudio(options: PlayBackgroundAudioOptions): scala.Unit = js.native
   /**
   	 * 停止搜索附近的iBeacon设备
   	 * @version 1.2.0
   	 */
-  def stopBeaconDiscovery(options: baiduDashAppLib.swanNs.StopBeaconDiscoveryOptions): scala.Unit = js.native
+  def stopBeaconDiscovery(options: StopBeaconDiscoveryOptions): scala.Unit = js.native
   /**
   	 * 停止搜寻附近的蓝牙外围设备。请在确保找到需要连接的设备后调用该方法停止搜索。
   	 * @version 1.1.0
   	 */
-  def stopBluetoothDevicesDiscovery(options: baiduDashAppLib.swanNs.StopBluetoothDevicesDiscoveryOptions): scala.Unit = js.native
+  def stopBluetoothDevicesDiscovery(options: StopBluetoothDevicesDiscoveryOptions): scala.Unit = js.native
   def stopCompass(): scala.Unit = js.native
-  def stopCompass(options: baiduDashAppLib.swanNs.CompassOptions): scala.Unit = js.native
+  def stopCompass(options: CompassOptions): scala.Unit = js.native
   /**
   	 * 停止当前页面下拉刷新
   	 * @version 1.5.0
   	 */
   def stopPullDownRefresh(): scala.Unit = js.native
-  def stopPullDownRefresh(options: baiduDashAppLib.swanNs.BaseOptions[_, _]): scala.Unit = js.native
+  def stopPullDownRefresh(options: BaseOptions[_, _]): scala.Unit = js.native
   /**
   	 * 主动调用停止录音。
   	 */
   def stopRecord(): scala.Unit = js.native
-  def stopRecord(options: baiduDashAppLib.swanNs.StopRecordAudioOptions): scala.Unit = js.native
+  def stopRecord(options: StopRecordAudioOptions): scala.Unit = js.native
   /**
   	 * 结束播放语音。
   	 * @deprecated 1.6.0
@@ -892,17 +889,17 @@ object ^ extends js.Object {
   	 * @version 1.6.0
   	 */
   def stopWifi(): scala.Unit = js.native
-  def stopWifi(options: baiduDashAppLib.swanNs.BaseOptions[_, _]): scala.Unit = js.native
+  def stopWifi(options: BaseOptions[_, _]): scala.Unit = js.native
   /**
   	 * 跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面
   	 */
-  def switchTab(options: baiduDashAppLib.swanNs.SwitchTabOptions): scala.Unit = js.native
+  def switchTab(options: SwitchTabOptions): scala.Unit = js.native
   /**
   	 * 更新转发属性
   	 * @version 1.2.0
   	 */
   def updateShareMenu(): scala.Unit = js.native
-  def updateShareMenu(options: baiduDashAppLib.swanNs.UpdateShareMenuOptions): scala.Unit = js.native
+  def updateShareMenu(options: UpdateShareMenuOptions): scala.Unit = js.native
   /**
   	 * 将本地资源上传到开发者服务器。
   	 * 如页面通过 swan.chooseImage 等接口获取到一个本地资源的临时文件路径后，
@@ -910,29 +907,29 @@ object ^ extends js.Object {
   	 * 客户端发起一个 HTTPS POST 请求，
   	 * 其中 Content-Type 为 multipart/form-data 。
   	 */
-  def uploadFile(options: baiduDashAppLib.swanNs.UploadFileOptions): baiduDashAppLib.swanNs.UploadTask = js.native
+  def uploadFile(options: UploadFileOptions): UploadTask = js.native
   /**
   	 * swanid有效性校验接口：true表示有效，false表示无效。
   	 */
-  def verify(options: baiduDashAppLib.swanNs.verifyOptions): scala.Unit = js.native
+  def verify(options: verifyOptions): scala.Unit = js.native
   // 设备-----震动
   /**
   	 * 使手机发生较长时间的振动（400ms）
   	 * @version 1.2.0
   	 */
   def vibrateLong(): scala.Unit = js.native
-  def vibrateLong(options: baiduDashAppLib.swanNs.BaseOptions[_, _]): scala.Unit = js.native
+  def vibrateLong(options: BaseOptions[_, _]): scala.Unit = js.native
   /**
   	 * 使手机发生较短时间的振动（15ms）
   	 * @version 1.2.0
   	 */
   def vibrateShort(): scala.Unit = js.native
-  def vibrateShort(options: baiduDashAppLib.swanNs.BaseOptions[_, _]): scala.Unit = js.native
+  def vibrateShort(options: BaseOptions[_, _]): scala.Unit = js.native
   /**
   	 * 向低功耗蓝牙设备特征值中写入二进制数据。
   	 * 注意：必须设备的特征值支持write才可以成功调用，具体参照 characteristic 的 properties 属性
   	 * tips: 并行调用多次读写接口存在读写失败的可能性
   	 */
-  def writeBLECharacteristicValue(options: baiduDashAppLib.swanNs.WriteBLECharacteristicValue): scala.Unit = js.native
+  def writeBLECharacteristicValue(options: WriteBLECharacteristicValue): scala.Unit = js.native
 }
 

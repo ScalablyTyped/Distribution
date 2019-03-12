@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("docopt", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def docopt(doc: java.lang.String, options: docoptLib.docoptMod.DocoptOption): js.Any = js.native
+  def docopt(doc: java.lang.String, options: DocoptOption): js.Any = js.native
 }
 

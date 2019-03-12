@@ -13,13 +13,13 @@ trait DiagramSelectEvent extends DiagramEvent {
 object DiagramSelectEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Diagram,
     deselected: js.Any = null,
     selected: js.Any = null
   ): DiagramSelectEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (deselected != null) __obj.updateDynamic("deselected")(deselected)
     if (selected != null) __obj.updateDynamic("selected")(selected)
     __obj.asInstanceOf[DiagramSelectEvent]

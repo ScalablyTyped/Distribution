@@ -13,10 +13,10 @@ trait ParserCore extends js.Object {
 object ParserCore {
   @scala.inline
   def apply(
-    process: js.Function1[js.Any, scala.Unit],
+    process: js.Any => scala.Unit,
     ruler: markdownDashItLib.libRulerMod.namespaced[markdownDashItLib.libRulesUnderscoreCoreStateUnderscoreCoreMod.namespaced]
   ): ParserCore = {
-    val __obj = js.Dynamic.literal(process = process, ruler = ruler)
+    val __obj = js.Dynamic.literal(process = js.Any.fromFunction1(process), ruler = ruler)
   
     __obj.asInstanceOf[ParserCore]
   }

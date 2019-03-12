@@ -142,7 +142,7 @@ trait JSTreeStaticDefaultsCore extends js.Object {
 object JSTreeStaticDefaultsCore {
   @scala.inline
   def apply(
-    error: js.Function0[js.Any],
+    error: () => js.Any,
     animation: js.Any = null,
     check_callback: js.Any = null,
     data: js.Any = null,
@@ -154,7 +154,7 @@ object JSTreeStaticDefaultsCore {
     themes: JSTreeStaticDefaultsCoreThemes = null,
     worker: js.UndefOr[scala.Boolean] = js.undefined
   ): JSTreeStaticDefaultsCore = {
-    val __obj = js.Dynamic.literal(error = error)
+    val __obj = js.Dynamic.literal(error = js.Any.fromFunction0(error))
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (check_callback != null) __obj.updateDynamic("check_callback")(check_callback)
     if (data != null) __obj.updateDynamic("data")(data)

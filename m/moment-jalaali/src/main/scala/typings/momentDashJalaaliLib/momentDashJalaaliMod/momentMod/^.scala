@@ -14,6 +14,6 @@ object ^ extends js.Object {
     * Add persian language.
     */
   def loadPersian(): scala.Unit = js.native
-  def loadPersian(options: momentDashJalaaliLib.momentDashJalaaliMod.momentMod.LoadPersianOptions): scala.Unit = js.native
+  def loadPersian(options: LoadPersianOptions): scala.Unit = js.native
 }
 

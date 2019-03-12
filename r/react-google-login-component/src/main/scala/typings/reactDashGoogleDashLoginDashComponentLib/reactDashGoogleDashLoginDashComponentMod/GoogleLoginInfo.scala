@@ -11,8 +11,8 @@ trait GoogleLoginInfo extends js.Object {
 
 object GoogleLoginInfo {
   @scala.inline
-  def apply(getAuthResponse: js.Function0[reactDashGoogleDashLoginDashComponentLib.Anon_Accesstoken]): GoogleLoginInfo = {
-    val __obj = js.Dynamic.literal(getAuthResponse = getAuthResponse)
+  def apply(getAuthResponse: () => reactDashGoogleDashLoginDashComponentLib.Anon_Accesstoken): GoogleLoginInfo = {
+    val __obj = js.Dynamic.literal(getAuthResponse = js.Any.fromFunction0(getAuthResponse))
   
     __obj.asInstanceOf[GoogleLoginInfo]
   }

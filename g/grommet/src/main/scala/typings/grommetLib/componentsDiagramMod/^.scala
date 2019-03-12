@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Diagram: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsDiagramMod.DiagramProps with reactLib.reactMod.ReactNs.SVGProps[reactLib.SVGSVGElement], 
+    DiagramProps with reactLib.reactMod.ReactNs.SVGProps[reactLib.SVGSVGElement], 
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
 }

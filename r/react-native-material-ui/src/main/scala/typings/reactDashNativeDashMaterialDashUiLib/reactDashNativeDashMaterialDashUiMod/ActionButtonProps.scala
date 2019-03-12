@@ -25,8 +25,8 @@ object ActionButtonProps {
     actions: js.Array[java.lang.String] | js.Array[reactLib.reactMod.Global.JSXNs.Element] | js.Array[reactDashNativeDashMaterialDashUiLib.Anon_Icon] = null,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
     icon: java.lang.String = null,
-    onLongPress: js.Function0[scala.Unit] = null,
-    onPress: js.Function0[scala.Unit] = null,
+    onLongPress: () => scala.Unit = null,
+    onPress: () => scala.Unit = null,
     style: reactDashNativeDashMaterialDashUiLib.Anon_Container = null,
     transition: reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiLibStrings.toolbar | reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiLibStrings.speedDial = null
   ): ActionButtonProps = {
@@ -34,8 +34,8 @@ object ActionButtonProps {
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction0(onLongPress))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (style != null) __obj.updateDynamic("style")(style)
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionButtonProps]

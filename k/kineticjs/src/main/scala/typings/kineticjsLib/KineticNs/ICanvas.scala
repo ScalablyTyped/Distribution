@@ -17,12 +17,12 @@ object ICanvas {
   @scala.inline
   def apply(
     _canvas: stdLib.HTMLCanvasElement,
-    getPixelRatio: js.Function0[scala.Double],
+    getPixelRatio: () => scala.Double,
     height: scala.Double,
-    setPixelRatio: js.Function1[scala.Double, js.Any],
+    setPixelRatio: scala.Double => js.Any,
     width: scala.Double
   ): ICanvas = {
-    val __obj = js.Dynamic.literal(_canvas = _canvas, getPixelRatio = getPixelRatio, height = height, setPixelRatio = setPixelRatio, width = width)
+    val __obj = js.Dynamic.literal(_canvas = _canvas, getPixelRatio = js.Any.fromFunction0(getPixelRatio), height = height, setPixelRatio = js.Any.fromFunction1(setPixelRatio), width = width)
   
     __obj.asInstanceOf[ICanvas]
   }

@@ -13,12 +13,12 @@ trait XLibraryQueryExecutable
 object XLibraryQueryExecutable {
   @scala.inline
   def apply(
-    HasExecutableCode: js.Function1[java.lang.String, scala.Boolean],
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    HasExecutableCode: java.lang.String => scala.Boolean,
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XLibraryQueryExecutable = {
-    val __obj = js.Dynamic.literal(HasExecutableCode = HasExecutableCode, acquire = acquire, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(HasExecutableCode = js.Any.fromFunction1(HasExecutableCode), acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XLibraryQueryExecutable]
   }

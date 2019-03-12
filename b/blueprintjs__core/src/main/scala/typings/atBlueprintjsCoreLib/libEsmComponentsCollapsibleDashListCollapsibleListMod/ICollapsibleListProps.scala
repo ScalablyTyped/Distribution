@@ -40,18 +40,14 @@ object ICollapsibleListProps {
   @scala.inline
   def apply(
     dropdownTarget: reactLib.reactMod.Global.JSXNs.Element,
-    visibleItemRenderer: js.Function2[
-      atBlueprintjsCoreLib.libEsmComponentsMenuMenuItemMod.IMenuItemProps, 
-      scala.Double, 
-      reactLib.reactMod.Global.JSXNs.Element
-    ],
+    visibleItemRenderer: (atBlueprintjsCoreLib.libEsmComponentsMenuMenuItemMod.IMenuItemProps, scala.Double) => reactLib.reactMod.Global.JSXNs.Element,
     className: java.lang.String = null,
     collapseFrom: atBlueprintjsCoreLib.libEsmCommonBoundaryMod.Boundary = null,
     dropdownProps: atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverMod.IPopoverProps = null,
     visibleItemClassName: java.lang.String = null,
     visibleItemCount: scala.Int | scala.Double = null
   ): ICollapsibleListProps = {
-    val __obj = js.Dynamic.literal(dropdownTarget = dropdownTarget, visibleItemRenderer = visibleItemRenderer)
+    val __obj = js.Dynamic.literal(dropdownTarget = dropdownTarget, visibleItemRenderer = js.Any.fromFunction2(visibleItemRenderer))
     if (className != null) __obj.updateDynamic("className")(className)
     if (collapseFrom != null) __obj.updateDynamic("collapseFrom")(collapseFrom)
     if (dropdownProps != null) __obj.updateDynamic("dropdownProps")(dropdownProps)

@@ -14,8 +14,8 @@ trait Props extends js.Object {
   var onChange: js.UndefOr[js.Function1[/* newSize */ scala.Double, scala.Unit]] = js.undefined
   var onDragFinished: js.UndefOr[js.Function1[/* newSize */ scala.Double, scala.Unit]] = js.undefined
   var onDragStarted: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onResizerClick: js.UndefOr[js.Function1[/* event */ reactLib.MouseEvent, scala.Unit]] = js.undefined
-  var onResizerDoubleClick: js.UndefOr[js.Function1[/* event */ reactLib.MouseEvent, scala.Unit]] = js.undefined
+  var onResizerClick: js.UndefOr[js.Function1[/* event */ stdLib.MouseEvent, scala.Unit]] = js.undefined
+  var onResizerDoubleClick: js.UndefOr[js.Function1[/* event */ stdLib.MouseEvent, scala.Unit]] = js.undefined
   var pane1Style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var pane2Style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var paneStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
@@ -40,11 +40,11 @@ object Props {
     defaultSize: Size = null,
     maxSize: Size = null,
     minSize: Size = null,
-    onChange: js.Function1[/* newSize */ scala.Double, scala.Unit] = null,
-    onDragFinished: js.Function1[/* newSize */ scala.Double, scala.Unit] = null,
-    onDragStarted: js.Function0[scala.Unit] = null,
-    onResizerClick: js.Function1[/* event */ reactLib.MouseEvent, scala.Unit] = null,
-    onResizerDoubleClick: js.Function1[/* event */ reactLib.MouseEvent, scala.Unit] = null,
+    onChange: /* newSize */ scala.Double => scala.Unit = null,
+    onDragFinished: /* newSize */ scala.Double => scala.Unit = null,
+    onDragStarted: () => scala.Unit = null,
+    onResizerClick: /* event */ stdLib.MouseEvent => scala.Unit = null,
+    onResizerDoubleClick: /* event */ stdLib.MouseEvent => scala.Unit = null,
     pane1Style: reactLib.reactMod.ReactNs.CSSProperties = null,
     pane2Style: reactLib.reactMod.ReactNs.CSSProperties = null,
     paneStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -62,11 +62,11 @@ object Props {
     if (defaultSize != null) __obj.updateDynamic("defaultSize")(defaultSize.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
     if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onDragFinished != null) __obj.updateDynamic("onDragFinished")(onDragFinished)
-    if (onDragStarted != null) __obj.updateDynamic("onDragStarted")(onDragStarted)
-    if (onResizerClick != null) __obj.updateDynamic("onResizerClick")(onResizerClick)
-    if (onResizerDoubleClick != null) __obj.updateDynamic("onResizerDoubleClick")(onResizerDoubleClick)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onDragFinished != null) __obj.updateDynamic("onDragFinished")(js.Any.fromFunction1(onDragFinished))
+    if (onDragStarted != null) __obj.updateDynamic("onDragStarted")(js.Any.fromFunction0(onDragStarted))
+    if (onResizerClick != null) __obj.updateDynamic("onResizerClick")(js.Any.fromFunction1(onResizerClick))
+    if (onResizerDoubleClick != null) __obj.updateDynamic("onResizerDoubleClick")(js.Any.fromFunction1(onResizerDoubleClick))
     if (pane1Style != null) __obj.updateDynamic("pane1Style")(pane1Style)
     if (pane2Style != null) __obj.updateDynamic("pane2Style")(pane2Style)
     if (paneStyle != null) __obj.updateDynamic("paneStyle")(paneStyle)

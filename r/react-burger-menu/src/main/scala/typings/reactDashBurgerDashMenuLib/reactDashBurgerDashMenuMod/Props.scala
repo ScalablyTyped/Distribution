@@ -54,7 +54,7 @@ object Props {
     menuClassName: java.lang.String = null,
     morphShapeClassName: java.lang.String = null,
     noOverlay: js.UndefOr[scala.Boolean] = js.undefined,
-    onStateChange: js.Function1[/* state */ State, scala.Unit] = null,
+    onStateChange: /* state */ State => scala.Unit = null,
     outerContainerId: java.lang.String = null,
     overlayClassName: java.lang.String = null,
     pageWrapId: java.lang.String = null,
@@ -77,7 +77,7 @@ object Props {
     if (menuClassName != null) __obj.updateDynamic("menuClassName")(menuClassName)
     if (morphShapeClassName != null) __obj.updateDynamic("morphShapeClassName")(morphShapeClassName)
     if (!js.isUndefined(noOverlay)) __obj.updateDynamic("noOverlay")(noOverlay)
-    if (onStateChange != null) __obj.updateDynamic("onStateChange")(onStateChange)
+    if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1(onStateChange))
     if (outerContainerId != null) __obj.updateDynamic("outerContainerId")(outerContainerId)
     if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName)
     if (pageWrapId != null) __obj.updateDynamic("pageWrapId")(pageWrapId)

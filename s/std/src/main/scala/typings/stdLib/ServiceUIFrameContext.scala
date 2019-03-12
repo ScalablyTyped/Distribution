@@ -13,10 +13,10 @@ trait ServiceUIFrameContext extends js.Object {
 object ServiceUIFrameContext {
   @scala.inline
   def apply(
-    getCachedFrameMessage: js.Function1[java.lang.String, java.lang.String],
-    postFrameMessage: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    getCachedFrameMessage: java.lang.String => java.lang.String,
+    postFrameMessage: (java.lang.String, java.lang.String) => scala.Unit
   ): ServiceUIFrameContext = {
-    val __obj = js.Dynamic.literal(getCachedFrameMessage = getCachedFrameMessage, postFrameMessage = postFrameMessage)
+    val __obj = js.Dynamic.literal(getCachedFrameMessage = js.Any.fromFunction1(getCachedFrameMessage), postFrameMessage = js.Any.fromFunction2(postFrameMessage))
   
     __obj.asInstanceOf[ServiceUIFrameContext]
   }

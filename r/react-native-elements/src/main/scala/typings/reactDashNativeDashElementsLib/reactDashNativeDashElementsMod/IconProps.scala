@@ -102,8 +102,8 @@ object IconProps {
     iconStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[
       reactDashNativeLib.reactDashNativeMod.TextStyle | reactDashNativeLib.reactDashNativeMod.ViewStyle
     ] = null,
-    onLongPress: js.Function0[scala.Unit] = null,
-    onPress: js.Function0[scala.Unit] = null,
+    onLongPress: () => scala.Unit = null,
+    onPress: () => scala.Unit = null,
     raised: js.UndefOr[scala.Boolean] = js.undefined,
     reverse: js.UndefOr[scala.Boolean] = js.undefined,
     reverseColor: java.lang.String = null,
@@ -118,8 +118,8 @@ object IconProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (disabledStyle != null) __obj.updateDynamic("disabledStyle")(disabledStyle.asInstanceOf[js.Any])
     if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction0(onLongPress))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised)
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
     if (reverseColor != null) __obj.updateDynamic("reverseColor")(reverseColor)

@@ -32,12 +32,12 @@ trait ClientContext extends js.Object {
 object ClientContext {
   @scala.inline
   def apply(
-    getClient: js.Function0[Client],
-    getClientState: js.Function0[ClientState],
-    getFormFactor: js.Function0[xrmLib.XrmEnumNs.ClientFormFactor],
-    isOffline: js.Function0[scala.Boolean]
+    getClient: () => Client,
+    getClientState: () => ClientState,
+    getFormFactor: () => xrmLib.XrmEnumNs.ClientFormFactor,
+    isOffline: () => scala.Boolean
   ): ClientContext = {
-    val __obj = js.Dynamic.literal(getClient = getClient, getClientState = getClientState, getFormFactor = getFormFactor, isOffline = isOffline)
+    val __obj = js.Dynamic.literal(getClient = js.Any.fromFunction0(getClient), getClientState = js.Any.fromFunction0(getClientState), getFormFactor = js.Any.fromFunction0(getFormFactor), isOffline = js.Any.fromFunction0(isOffline))
   
     __obj.asInstanceOf[ClientContext]
   }

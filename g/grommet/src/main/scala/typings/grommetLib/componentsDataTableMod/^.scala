@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val DataTable: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsDataTableMod.DataTableProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    DataTableProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.TableHTMLAttributes[reactLib.HTMLTableElement], 
       reactLib.HTMLTableElement
     ]), 

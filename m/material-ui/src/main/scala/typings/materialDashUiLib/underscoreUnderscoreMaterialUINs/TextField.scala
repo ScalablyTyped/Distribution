@@ -11,7 +11,7 @@ class TextField ()
   extends reactLib.reactMod.Component[TextFieldProps, js.Object, js.Any] {
   def blur(): scala.Unit = js.native
   def focus(): scala.Unit = js.native
-  def getInputNode(): reactLib.HTMLInputElement = js.native
+  def getInputNode(): stdLib.HTMLInputElement = js.native
   def getValue(): java.lang.String = js.native
   def select(): scala.Unit = js.native
 }

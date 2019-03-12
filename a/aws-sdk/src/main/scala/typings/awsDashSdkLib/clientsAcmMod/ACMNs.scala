@@ -376,7 +376,7 @@ object ACMNs extends js.Object {
     /**
       * The status of ACM's managed renewal of the certificate.
       */
-    var RenewalStatus: RenewalStatus
+    var RenewalStatus: awsDashSdkLib.clientsAcmMod.ACMNs.RenewalStatus
   }
   
   trait RequestCertificateRequest extends js.Object {

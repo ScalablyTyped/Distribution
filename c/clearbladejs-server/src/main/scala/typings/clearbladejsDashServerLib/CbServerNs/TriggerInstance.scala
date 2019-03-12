@@ -15,12 +15,12 @@ trait TriggerInstance extends js.Object {
 object TriggerInstance {
   @scala.inline
   def apply(
-    Delete: js.Function1[CbCallback, scala.Unit],
-    Update: js.Function2[js.Object, CbCallback, scala.Unit],
+    Delete: CbCallback => scala.Unit,
+    Update: (js.Object, CbCallback) => scala.Unit,
     name: java.lang.String,
     systemKey: java.lang.String
   ): TriggerInstance = {
-    val __obj = js.Dynamic.literal(Delete = Delete, Update = Update, name = name, systemKey = systemKey)
+    val __obj = js.Dynamic.literal(Delete = js.Any.fromFunction1(Delete), Update = js.Any.fromFunction2(Update), name = name, systemKey = systemKey)
   
     __obj.asInstanceOf[TriggerInstance]
   }

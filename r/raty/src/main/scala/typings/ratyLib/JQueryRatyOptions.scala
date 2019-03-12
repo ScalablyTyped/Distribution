@@ -57,13 +57,13 @@ object JQueryRatyOptions {
     cancelOff: java.lang.String = null,
     cancelOn: java.lang.String = null,
     cancelPlace: java.lang.String = null,
-    click: js.Function2[/* score */ scala.Double, /* event */ jqueryLib.JQueryEventObject, scala.Unit] = null,
+    click: (/* score */ scala.Double, /* event */ jqueryLib.JQueryEventObject) => scala.Unit = null,
     half: js.UndefOr[scala.Boolean] = js.undefined,
     halfShow: js.UndefOr[scala.Boolean] = js.undefined,
     hints: js.Array[java.lang.String] = null,
     iconRange: js.Array[js.Array[_]] = null,
-    mouseout: js.Function2[/* score */ scala.Double, /* event */ jqueryLib.JQueryEventObject, scala.Unit] = null,
-    mouseover: js.Function2[/* score */ scala.Double, /* event */ jqueryLib.JQueryEventObject, scala.Unit] = null,
+    mouseout: (/* score */ scala.Double, /* event */ jqueryLib.JQueryEventObject) => scala.Unit = null,
+    mouseover: (/* score */ scala.Double, /* event */ jqueryLib.JQueryEventObject) => scala.Unit = null,
     noRatedMsg: java.lang.String = null,
     number: scala.Int | scala.Double = null,
     numberMax: scala.Int | scala.Double = null,
@@ -93,13 +93,13 @@ object JQueryRatyOptions {
     if (cancelOff != null) __obj.updateDynamic("cancelOff")(cancelOff)
     if (cancelOn != null) __obj.updateDynamic("cancelOn")(cancelOn)
     if (cancelPlace != null) __obj.updateDynamic("cancelPlace")(cancelPlace)
-    if (click != null) __obj.updateDynamic("click")(click)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction2(click))
     if (!js.isUndefined(half)) __obj.updateDynamic("half")(half)
     if (!js.isUndefined(halfShow)) __obj.updateDynamic("halfShow")(halfShow)
     if (hints != null) __obj.updateDynamic("hints")(hints)
     if (iconRange != null) __obj.updateDynamic("iconRange")(iconRange)
-    if (mouseout != null) __obj.updateDynamic("mouseout")(mouseout)
-    if (mouseover != null) __obj.updateDynamic("mouseover")(mouseover)
+    if (mouseout != null) __obj.updateDynamic("mouseout")(js.Any.fromFunction2(mouseout))
+    if (mouseover != null) __obj.updateDynamic("mouseover")(js.Any.fromFunction2(mouseover))
     if (noRatedMsg != null) __obj.updateDynamic("noRatedMsg")(noRatedMsg)
     if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
     if (numberMax != null) __obj.updateDynamic("numberMax")(numberMax.asInstanceOf[js.Any])

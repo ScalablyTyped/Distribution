@@ -24,7 +24,7 @@ object Anon_CheckedDisabledE {
     inputId: java.lang.String = null,
     modifier: java.lang.String = null,
     name: java.lang.String = null,
-    onChange: js.Function1[/* e */ reactDashOnsenuiLib.reactDashOnsenuiMod.SwitchChangeEvent, scala.Unit] = null
+    onChange: /* e */ reactDashOnsenuiLib.reactDashOnsenuiMod.SwitchChangeEvent => scala.Unit = null
   ): Anon_CheckedDisabledE = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
@@ -32,7 +32,7 @@ object Anon_CheckedDisabledE {
     if (inputId != null) __obj.updateDynamic("inputId")(inputId)
     if (modifier != null) __obj.updateDynamic("modifier")(modifier)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[Anon_CheckedDisabledE]
   }
 }

@@ -22,7 +22,7 @@ object SliderOptions {
   def apply(
     end: scala.Int | scala.Double = null,
     initial: scala.Int | scala.Double = null,
-    on_change: js.Function0[_] = null,
+    on_change: () => _ = null,
     precision: scala.Int | scala.Double = null,
     start: scala.Int | scala.Double = null,
     step: scala.Int | scala.Double = null,
@@ -32,7 +32,7 @@ object SliderOptions {
     val __obj = js.Dynamic.literal()
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
-    if (on_change != null) __obj.updateDynamic("on_change")(on_change)
+    if (on_change != null) __obj.updateDynamic("on_change")(js.Any.fromFunction0(on_change))
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])

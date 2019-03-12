@@ -12,7 +12,7 @@ trait StripeTokenPaymentResponse extends StripePaymentResponse {
 object StripeTokenPaymentResponse {
   @scala.inline
   def apply(
-    complete: js.Function1[java.lang.String, scala.Unit],
+    complete: java.lang.String => scala.Unit,
     methodName: java.lang.String,
     token: stripeDashV3Lib.stripeNs.Token,
     payerEmail: java.lang.String = null,
@@ -21,7 +21,7 @@ object StripeTokenPaymentResponse {
     shippingAddress: ShippingAddress = null,
     shippingOption: ShippingOption = null
   ): StripeTokenPaymentResponse = {
-    val __obj = js.Dynamic.literal(complete = complete, methodName = methodName, token = token)
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete), methodName = methodName, token = token)
     if (payerEmail != null) __obj.updateDynamic("payerEmail")(payerEmail)
     if (payerName != null) __obj.updateDynamic("payerName")(payerName)
     if (payerPhone != null) __obj.updateDynamic("payerPhone")(payerPhone)

@@ -23,20 +23,20 @@ trait Fixtures extends js.Object {
 object Fixtures {
   @scala.inline
   def apply(
-    appendLoad: js.Function1[/* repeated */ java.lang.String, scala.Unit],
-    appendSet: js.Function1[java.lang.String, scala.Unit],
-    body: js.Function0[java.lang.String],
-    cleanUp: js.Function0[scala.Unit],
-    clearCache: js.Function0[scala.Unit],
+    appendLoad: /* repeated */ java.lang.String => scala.Unit,
+    appendSet: java.lang.String => scala.Unit,
+    body: () => java.lang.String,
+    cleanUp: () => scala.Unit,
+    clearCache: () => scala.Unit,
     containerId: java.lang.String,
-    load: js.Function1[/* repeated */ java.lang.String, scala.Unit],
+    load: /* repeated */ java.lang.String => scala.Unit,
     path: java.lang.String,
-    preload: js.Function1[/* repeated */ java.lang.String, scala.Unit],
-    read: js.Function1[/* repeated */ java.lang.String, java.lang.String],
-    set: js.Function1[java.lang.String, scala.Unit],
-    window: js.Function0[stdLib.Window]
+    preload: /* repeated */ java.lang.String => scala.Unit,
+    read: /* repeated */ java.lang.String => java.lang.String,
+    set: java.lang.String => scala.Unit,
+    window: () => stdLib.Window
   ): Fixtures = {
-    val __obj = js.Dynamic.literal(appendLoad = appendLoad, appendSet = appendSet, body = body, cleanUp = cleanUp, clearCache = clearCache, containerId = containerId, load = load, path = path, preload = preload, read = read, set = set, window = window)
+    val __obj = js.Dynamic.literal(appendLoad = js.Any.fromFunction1(appendLoad), appendSet = js.Any.fromFunction1(appendSet), body = js.Any.fromFunction0(body), cleanUp = js.Any.fromFunction0(cleanUp), clearCache = js.Any.fromFunction0(clearCache), containerId = containerId, load = js.Any.fromFunction1(load), path = path, preload = js.Any.fromFunction1(preload), read = js.Any.fromFunction1(read), set = js.Any.fromFunction1(set), window = js.Any.fromFunction0(window))
   
     __obj.asInstanceOf[Fixtures]
   }

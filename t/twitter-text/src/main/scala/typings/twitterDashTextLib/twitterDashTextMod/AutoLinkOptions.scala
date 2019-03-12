@@ -41,8 +41,8 @@ object AutoLinkOptions {
     htmlAttrs: Attributes = null,
     htmlEscapeNonEntities: js.UndefOr[scala.Boolean] = js.undefined,
     invisibleTagAttrs: java.lang.String = null,
-    linkAttributeBlock: js.Function2[/* entity */ EntityWithIndices, /* attributes */ Attributes, scala.Unit] = null,
-    linkTextBlock: js.Function2[/* entity */ EntityWithIndices, /* text */ java.lang.String, scala.Unit] = null,
+    linkAttributeBlock: (/* entity */ EntityWithIndices, /* attributes */ Attributes) => scala.Unit = null,
+    linkTextBlock: (/* entity */ EntityWithIndices, /* text */ java.lang.String) => scala.Unit = null,
     listClass: java.lang.String = null,
     listUrlBase: java.lang.String = null,
     suppressNoFollow: js.UndefOr[scala.Boolean] = js.undefined,
@@ -62,8 +62,8 @@ object AutoLinkOptions {
     if (htmlAttrs != null) __obj.updateDynamic("htmlAttrs")(htmlAttrs)
     if (!js.isUndefined(htmlEscapeNonEntities)) __obj.updateDynamic("htmlEscapeNonEntities")(htmlEscapeNonEntities)
     if (invisibleTagAttrs != null) __obj.updateDynamic("invisibleTagAttrs")(invisibleTagAttrs)
-    if (linkAttributeBlock != null) __obj.updateDynamic("linkAttributeBlock")(linkAttributeBlock)
-    if (linkTextBlock != null) __obj.updateDynamic("linkTextBlock")(linkTextBlock)
+    if (linkAttributeBlock != null) __obj.updateDynamic("linkAttributeBlock")(js.Any.fromFunction2(linkAttributeBlock))
+    if (linkTextBlock != null) __obj.updateDynamic("linkTextBlock")(js.Any.fromFunction2(linkTextBlock))
     if (listClass != null) __obj.updateDynamic("listClass")(listClass)
     if (listUrlBase != null) __obj.updateDynamic("listUrlBase")(listUrlBase)
     if (!js.isUndefined(suppressNoFollow)) __obj.updateDynamic("suppressNoFollow")(suppressNoFollow)

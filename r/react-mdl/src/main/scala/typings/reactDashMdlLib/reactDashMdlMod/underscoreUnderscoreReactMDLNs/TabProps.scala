@@ -21,7 +21,7 @@ object TabProps {
     HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[js.Any] = null,
     active: js.UndefOr[scala.Boolean] = js.undefined,
     cssPrefix: java.lang.String = null,
-    onTabClick: js.Function1[/* tabId */ scala.Double, _] = null,
+    onTabClick: /* tabId */ scala.Double => _ = null,
     tabId: scala.Int | scala.Double = null
   ): TabProps = {
     val __obj = js.Dynamic.literal()
@@ -29,7 +29,7 @@ object TabProps {
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (cssPrefix != null) __obj.updateDynamic("cssPrefix")(cssPrefix)
-    if (onTabClick != null) __obj.updateDynamic("onTabClick")(onTabClick)
+    if (onTabClick != null) __obj.updateDynamic("onTabClick")(js.Any.fromFunction1(onTabClick))
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabProps]
   }

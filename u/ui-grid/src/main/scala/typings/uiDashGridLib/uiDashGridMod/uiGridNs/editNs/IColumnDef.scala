@@ -99,12 +99,7 @@ object IColumnDef {
     editDropdownOptionsArray: js.Array[IEditDropdown] = null,
     editDropdownRowEntityOptionsArrayPath: java.lang.String = null,
     editDropdownValueLabel: java.lang.String = null,
-    editFileChooserCallback: js.Function3[
-      /* gridRow */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity], 
-      /* gridCol */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridColumnOf[TEntity], 
-      /* files */ stdLib.FileList, 
-      scala.Unit
-    ] = null,
+    editFileChooserCallback: (/* gridRow */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity], /* gridCol */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridColumnOf[TEntity], /* files */ stdLib.FileList) => scala.Unit = null,
     editModelField: java.lang.String = null,
     editableCellTemplate: java.lang.String = null,
     enableCellEdit: js.UndefOr[scala.Boolean] = js.undefined,
@@ -117,7 +112,7 @@ object IColumnDef {
     if (editDropdownOptionsArray != null) __obj.updateDynamic("editDropdownOptionsArray")(editDropdownOptionsArray)
     if (editDropdownRowEntityOptionsArrayPath != null) __obj.updateDynamic("editDropdownRowEntityOptionsArrayPath")(editDropdownRowEntityOptionsArrayPath)
     if (editDropdownValueLabel != null) __obj.updateDynamic("editDropdownValueLabel")(editDropdownValueLabel)
-    if (editFileChooserCallback != null) __obj.updateDynamic("editFileChooserCallback")(editFileChooserCallback)
+    if (editFileChooserCallback != null) __obj.updateDynamic("editFileChooserCallback")(js.Any.fromFunction3(editFileChooserCallback))
     if (editModelField != null) __obj.updateDynamic("editModelField")(editModelField)
     if (editableCellTemplate != null) __obj.updateDynamic("editableCellTemplate")(editableCellTemplate)
     if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit)

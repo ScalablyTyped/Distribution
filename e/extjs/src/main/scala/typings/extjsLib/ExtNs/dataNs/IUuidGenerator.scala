@@ -23,19 +23,19 @@ object IUuidGenerator {
   def apply(
     alias: extjsLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     extend: java.lang.String = null,
-    generate: js.Function0[java.lang.String] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    generate: () => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
     id: java.lang.String = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IUuidGenerator] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IUuidGenerator = null,
     isGenerator: js.UndefOr[scala.Boolean] = js.undefined,
     mixins: js.Any = null,
-    reconfigure: js.Function1[/* config */ js.UndefOr[js.Any], scala.Unit] = null,
+    reconfigure: /* config */ js.UndefOr[js.Any] => scala.Unit = null,
     requires: extjsLib.ExtNs.Array = null,
     salt: js.Any = null,
     self: extjsLib.ExtNs.IClass = null,
@@ -48,19 +48,19 @@ object IUuidGenerator {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (generate != null) __obj.updateDynamic("generate")(generate)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (generate != null) __obj.updateDynamic("generate")(js.Any.fromFunction0(generate))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (id != null) __obj.updateDynamic("id")(id)
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (!js.isUndefined(isGenerator)) __obj.updateDynamic("isGenerator")(isGenerator)
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (reconfigure != null) __obj.updateDynamic("reconfigure")(reconfigure)
+    if (reconfigure != null) __obj.updateDynamic("reconfigure")(js.Any.fromFunction1(reconfigure))
     if (requires != null) __obj.updateDynamic("requires")(requires)
     if (salt != null) __obj.updateDynamic("salt")(salt)
     if (self != null) __obj.updateDynamic("self")(self)

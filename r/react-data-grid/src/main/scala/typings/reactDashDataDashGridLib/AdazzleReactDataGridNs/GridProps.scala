@@ -249,31 +249,27 @@ object GridProps {
     enableCellSelect: js.UndefOr[scala.Boolean] = js.undefined,
     enableDragAndDrop: js.UndefOr[scala.Boolean] = js.undefined,
     enableRowSelect: scala.Boolean | reactDashDataDashGridLib.reactDashDataDashGridLibStrings.single | reactDashDataDashGridLib.reactDashDataDashGridLibStrings.multi = null,
-    getCellActions: js.Function2[/* column */ Column[T], /* row */ T, js.Array[ActionButton | ActionMenu]] = null,
-    getValidFilterValues: js.Function1[/* columnKey */ java.lang.String, js.Array[_]] = null,
+    getCellActions: (/* column */ Column[T], /* row */ T) => js.Array[ActionButton | ActionMenu] = null,
+    getValidFilterValues: /* columnKey */ java.lang.String => js.Array[_] = null,
     headerFiltersHeight: scala.Int | scala.Double = null,
     headerRowHeight: scala.Int | scala.Double = null,
     minColumnWidth: scala.Int | scala.Double = null,
     minHeight: scala.Int | scala.Double = null,
     minWidth: scala.Int | scala.Double = null,
-    onAddFilter: js.Function1[/* filter */ Filter, scala.Unit] = null,
-    onCellCopyPaste: js.Function1[/* e */ CellCopyPasteEvent, scala.Unit] = null,
-    onCellDeSelected: js.Function1[/* coordinates */ reactDashDataDashGridLib.Anon_Idx, scala.Unit] = null,
-    onCellSelected: js.Function1[/* coordinates */ reactDashDataDashGridLib.Anon_Idx, scala.Unit] = null,
-    onCellsDragged: js.Function1[/* e */ CellDragEvent, scala.Unit] = null,
-    onClearFilters: js.Function0[scala.Unit] = null,
-    onColumnResize: js.Function2[/* index */ scala.Double, /* width */ scala.Double, scala.Unit] = null,
-    onDragHandleDoubleClick: js.Function1[/* e */ DragHandleDoubleClickEvent[T], scala.Unit] = null,
-    onGridRowsUpdated: js.Function1[/* e */ GridRowsUpdatedEvent[T], scala.Unit] = null,
-    onGridSort: js.Function2[
-      /* sortColumn */ java.lang.String, 
-      /* sortDirection */ reactDashDataDashGridLib.reactDashDataDashGridLibStrings.ASC | reactDashDataDashGridLib.reactDashDataDashGridLibStrings.DESC | reactDashDataDashGridLib.reactDashDataDashGridLibStrings.NONE, 
-      scala.Unit
-    ] = null,
-    onRowClick: js.Function2[/* rowIdx */ scala.Double, /* row */ T, scala.Unit] = null,
-    onRowExpandToggle: js.Function1[/* props */ OnRowExpandToggle, scala.Unit] = null,
-    onRowSelect: js.Function1[/* rows */ js.Array[T], scala.Unit] = null,
-    onRowUpdated: js.Function1[/* e */ RowUpdateEvent[T], scala.Unit] = null,
+    onAddFilter: /* filter */ Filter => scala.Unit = null,
+    onCellCopyPaste: /* e */ CellCopyPasteEvent => scala.Unit = null,
+    onCellDeSelected: /* coordinates */ reactDashDataDashGridLib.Anon_Idx => scala.Unit = null,
+    onCellSelected: /* coordinates */ reactDashDataDashGridLib.Anon_Idx => scala.Unit = null,
+    onCellsDragged: /* e */ CellDragEvent => scala.Unit = null,
+    onClearFilters: () => scala.Unit = null,
+    onColumnResize: (/* index */ scala.Double, /* width */ scala.Double) => scala.Unit = null,
+    onDragHandleDoubleClick: /* e */ DragHandleDoubleClickEvent[T] => scala.Unit = null,
+    onGridRowsUpdated: /* e */ GridRowsUpdatedEvent[T] => scala.Unit = null,
+    onGridSort: (/* sortColumn */ java.lang.String, /* sortDirection */ reactDashDataDashGridLib.reactDashDataDashGridLibStrings.ASC | reactDashDataDashGridLib.reactDashDataDashGridLibStrings.DESC | reactDashDataDashGridLib.reactDashDataDashGridLibStrings.NONE) => scala.Unit = null,
+    onRowClick: (/* rowIdx */ scala.Double, /* row */ T) => scala.Unit = null,
+    onRowExpandToggle: /* props */ OnRowExpandToggle => scala.Unit = null,
+    onRowSelect: /* rows */ js.Array[T] => scala.Unit = null,
+    onRowUpdated: /* e */ RowUpdateEvent[T] => scala.Unit = null,
     rowActionsCell: (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
     rowHeight: scala.Int | scala.Double = null,
     rowKey: java.lang.String = null,
@@ -293,27 +289,27 @@ object GridProps {
     if (!js.isUndefined(enableCellSelect)) __obj.updateDynamic("enableCellSelect")(enableCellSelect)
     if (!js.isUndefined(enableDragAndDrop)) __obj.updateDynamic("enableDragAndDrop")(enableDragAndDrop)
     if (enableRowSelect != null) __obj.updateDynamic("enableRowSelect")(enableRowSelect.asInstanceOf[js.Any])
-    if (getCellActions != null) __obj.updateDynamic("getCellActions")(getCellActions)
-    if (getValidFilterValues != null) __obj.updateDynamic("getValidFilterValues")(getValidFilterValues)
+    if (getCellActions != null) __obj.updateDynamic("getCellActions")(js.Any.fromFunction2(getCellActions))
+    if (getValidFilterValues != null) __obj.updateDynamic("getValidFilterValues")(js.Any.fromFunction1(getValidFilterValues))
     if (headerFiltersHeight != null) __obj.updateDynamic("headerFiltersHeight")(headerFiltersHeight.asInstanceOf[js.Any])
     if (headerRowHeight != null) __obj.updateDynamic("headerRowHeight")(headerRowHeight.asInstanceOf[js.Any])
     if (minColumnWidth != null) __obj.updateDynamic("minColumnWidth")(minColumnWidth.asInstanceOf[js.Any])
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (onAddFilter != null) __obj.updateDynamic("onAddFilter")(onAddFilter)
-    if (onCellCopyPaste != null) __obj.updateDynamic("onCellCopyPaste")(onCellCopyPaste)
-    if (onCellDeSelected != null) __obj.updateDynamic("onCellDeSelected")(onCellDeSelected)
-    if (onCellSelected != null) __obj.updateDynamic("onCellSelected")(onCellSelected)
-    if (onCellsDragged != null) __obj.updateDynamic("onCellsDragged")(onCellsDragged)
-    if (onClearFilters != null) __obj.updateDynamic("onClearFilters")(onClearFilters)
-    if (onColumnResize != null) __obj.updateDynamic("onColumnResize")(onColumnResize)
-    if (onDragHandleDoubleClick != null) __obj.updateDynamic("onDragHandleDoubleClick")(onDragHandleDoubleClick)
-    if (onGridRowsUpdated != null) __obj.updateDynamic("onGridRowsUpdated")(onGridRowsUpdated)
-    if (onGridSort != null) __obj.updateDynamic("onGridSort")(onGridSort)
-    if (onRowClick != null) __obj.updateDynamic("onRowClick")(onRowClick)
-    if (onRowExpandToggle != null) __obj.updateDynamic("onRowExpandToggle")(onRowExpandToggle)
-    if (onRowSelect != null) __obj.updateDynamic("onRowSelect")(onRowSelect)
-    if (onRowUpdated != null) __obj.updateDynamic("onRowUpdated")(onRowUpdated)
+    if (onAddFilter != null) __obj.updateDynamic("onAddFilter")(js.Any.fromFunction1(onAddFilter))
+    if (onCellCopyPaste != null) __obj.updateDynamic("onCellCopyPaste")(js.Any.fromFunction1(onCellCopyPaste))
+    if (onCellDeSelected != null) __obj.updateDynamic("onCellDeSelected")(js.Any.fromFunction1(onCellDeSelected))
+    if (onCellSelected != null) __obj.updateDynamic("onCellSelected")(js.Any.fromFunction1(onCellSelected))
+    if (onCellsDragged != null) __obj.updateDynamic("onCellsDragged")(js.Any.fromFunction1(onCellsDragged))
+    if (onClearFilters != null) __obj.updateDynamic("onClearFilters")(js.Any.fromFunction0(onClearFilters))
+    if (onColumnResize != null) __obj.updateDynamic("onColumnResize")(js.Any.fromFunction2(onColumnResize))
+    if (onDragHandleDoubleClick != null) __obj.updateDynamic("onDragHandleDoubleClick")(js.Any.fromFunction1(onDragHandleDoubleClick))
+    if (onGridRowsUpdated != null) __obj.updateDynamic("onGridRowsUpdated")(js.Any.fromFunction1(onGridRowsUpdated))
+    if (onGridSort != null) __obj.updateDynamic("onGridSort")(js.Any.fromFunction2(onGridSort))
+    if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction2(onRowClick))
+    if (onRowExpandToggle != null) __obj.updateDynamic("onRowExpandToggle")(js.Any.fromFunction1(onRowExpandToggle))
+    if (onRowSelect != null) __obj.updateDynamic("onRowSelect")(js.Any.fromFunction1(onRowSelect))
+    if (onRowUpdated != null) __obj.updateDynamic("onRowUpdated")(js.Any.fromFunction1(onRowUpdated))
     if (rowActionsCell != null) __obj.updateDynamic("rowActionsCell")(rowActionsCell.asInstanceOf[js.Any])
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
     if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey)

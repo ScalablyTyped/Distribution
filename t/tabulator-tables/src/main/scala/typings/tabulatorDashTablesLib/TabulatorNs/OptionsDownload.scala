@@ -22,16 +22,16 @@ trait OptionsDownload extends js.Object {
 object OptionsDownload {
   @scala.inline
   def apply(
-    downloadComplete: js.Function0[scala.Unit] = null,
+    downloadComplete: () => scala.Unit = null,
     downloadConfig: tabulatorDashTablesLib.Anon_ColumnCalcsColumnGroups = null,
-    downloadDataFormatter: js.Function1[/* data */ js.Array[_], _] = null,
-    downloadReady: js.Function2[/* fileContents */ js.Any, /* blob */ js.Any, _] = null
+    downloadDataFormatter: /* data */ js.Array[_] => _ = null,
+    downloadReady: (/* fileContents */ js.Any, /* blob */ js.Any) => _ = null
   ): OptionsDownload = {
     val __obj = js.Dynamic.literal()
-    if (downloadComplete != null) __obj.updateDynamic("downloadComplete")(downloadComplete)
+    if (downloadComplete != null) __obj.updateDynamic("downloadComplete")(js.Any.fromFunction0(downloadComplete))
     if (downloadConfig != null) __obj.updateDynamic("downloadConfig")(downloadConfig)
-    if (downloadDataFormatter != null) __obj.updateDynamic("downloadDataFormatter")(downloadDataFormatter)
-    if (downloadReady != null) __obj.updateDynamic("downloadReady")(downloadReady)
+    if (downloadDataFormatter != null) __obj.updateDynamic("downloadDataFormatter")(js.Any.fromFunction1(downloadDataFormatter))
+    if (downloadReady != null) __obj.updateDynamic("downloadReady")(js.Any.fromFunction2(downloadReady))
     __obj.asInstanceOf[OptionsDownload]
   }
 }

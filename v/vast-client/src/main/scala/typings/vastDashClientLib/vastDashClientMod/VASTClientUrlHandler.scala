@@ -11,15 +11,8 @@ trait VASTClientUrlHandler extends js.Object {
 
 object VASTClientUrlHandler {
   @scala.inline
-  def apply(
-    get: js.Function3[
-      java.lang.String, 
-      vastDashClientLib.Anon_Timeout, 
-      vastDashClientLib.Anon_Err, 
-      scala.Unit
-    ]
-  ): VASTClientUrlHandler = {
-    val __obj = js.Dynamic.literal(get = get)
+  def apply(get: (java.lang.String, vastDashClientLib.Anon_Timeout, vastDashClientLib.Anon_Err) => scala.Unit): VASTClientUrlHandler = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction3(get))
   
     __obj.asInstanceOf[VASTClientUrlHandler]
   }

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val DomToImage: domDashToDashImageLib.domDashToDashImageMod.DomToImage = js.native
-  val default: domDashToDashImageLib.domDashToDashImageMod.DomToImage = js.native
+  val default: DomToImage = js.native
 }
 

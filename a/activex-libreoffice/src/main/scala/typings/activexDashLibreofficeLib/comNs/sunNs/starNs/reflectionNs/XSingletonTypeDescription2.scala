@@ -36,16 +36,16 @@ object XSingletonTypeDescription2 {
     Name: java.lang.String,
     Service: XServiceTypeDescription,
     TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
-    acquire: js.Function0[scala.Unit],
-    getInterface: js.Function0[XTypeDescription],
-    getName: js.Function0[java.lang.String],
-    getService: js.Function0[XServiceTypeDescription],
-    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
-    isInterfaceBased: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getInterface: () => XTypeDescription,
+    getName: () => java.lang.String,
+    getService: () => XServiceTypeDescription,
+    getTypeClass: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    isInterfaceBased: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSingletonTypeDescription2 = {
-    val __obj = js.Dynamic.literal(Interface = Interface, Name = Name, Service = Service, TypeClass = TypeClass, acquire = acquire, getInterface = getInterface, getName = getName, getService = getService, getTypeClass = getTypeClass, isInterfaceBased = isInterfaceBased, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Interface = Interface, Name = Name, Service = Service, TypeClass = TypeClass, acquire = js.Any.fromFunction0(acquire), getInterface = js.Any.fromFunction0(getInterface), getName = js.Any.fromFunction0(getName), getService = js.Any.fromFunction0(getService), getTypeClass = js.Any.fromFunction0(getTypeClass), isInterfaceBased = js.Any.fromFunction0(isInterfaceBased), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSingletonTypeDescription2]
   }

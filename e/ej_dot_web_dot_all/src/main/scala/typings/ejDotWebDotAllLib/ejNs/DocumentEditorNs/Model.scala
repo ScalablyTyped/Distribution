@@ -27,17 +27,17 @@ object Model {
   @scala.inline
   def apply(
     importExportSettings: ImportExportSettings = null,
-    onDocumentChange: js.Function1[/* e */ OnDocumentChangeEventArgs, scala.Unit] = null,
-    onRequestNavigate: js.Function1[/* e */ OnRequestNavigateEventArgs, scala.Unit] = null,
-    onSelectionChange: js.Function1[/* e */ OnSelectionChangeEventArgs, scala.Unit] = null,
-    onZoomFactorChange: js.Function1[/* e */ OnZoomFactorChangeEventArgs, scala.Unit] = null
+    onDocumentChange: /* e */ OnDocumentChangeEventArgs => scala.Unit = null,
+    onRequestNavigate: /* e */ OnRequestNavigateEventArgs => scala.Unit = null,
+    onSelectionChange: /* e */ OnSelectionChangeEventArgs => scala.Unit = null,
+    onZoomFactorChange: /* e */ OnZoomFactorChangeEventArgs => scala.Unit = null
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (importExportSettings != null) __obj.updateDynamic("importExportSettings")(importExportSettings)
-    if (onDocumentChange != null) __obj.updateDynamic("onDocumentChange")(onDocumentChange)
-    if (onRequestNavigate != null) __obj.updateDynamic("onRequestNavigate")(onRequestNavigate)
-    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(onSelectionChange)
-    if (onZoomFactorChange != null) __obj.updateDynamic("onZoomFactorChange")(onZoomFactorChange)
+    if (onDocumentChange != null) __obj.updateDynamic("onDocumentChange")(js.Any.fromFunction1(onDocumentChange))
+    if (onRequestNavigate != null) __obj.updateDynamic("onRequestNavigate")(js.Any.fromFunction1(onRequestNavigate))
+    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(js.Any.fromFunction1(onSelectionChange))
+    if (onZoomFactorChange != null) __obj.updateDynamic("onZoomFactorChange")(js.Any.fromFunction1(onZoomFactorChange))
     __obj.asInstanceOf[Model]
   }
 }

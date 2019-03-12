@@ -18,13 +18,13 @@ trait XFilterDetect
 object XFilterDetect {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getContentType: js.Function1[java.lang.String, java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    useExternBrowser: js.Function1[java.lang.String, scala.Boolean]
+    acquire: () => scala.Unit,
+    getContentType: java.lang.String => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    useExternBrowser: java.lang.String => scala.Boolean
   ): XFilterDetect = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getContentType = getContentType, queryInterface = queryInterface, release = release, useExternBrowser = useExternBrowser)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getContentType = js.Any.fromFunction1(getContentType), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), useExternBrowser = js.Any.fromFunction1(useExternBrowser))
   
     __obj.asInstanceOf[XFilterDetect]
   }

@@ -18,34 +18,34 @@ trait ISeparatedSyntaxList extends ISyntaxElement {
 object ISeparatedSyntaxList {
   @scala.inline
   def apply(
-    childAt: js.Function1[scala.Double, ISyntaxNodeOrToken],
-    childCount: js.Function0[scala.Double],
-    collectTextElements: js.Function1[js.Array[java.lang.String], scala.Unit],
-    firstToken: js.Function0[ISyntaxToken],
-    fullText: js.Function0[java.lang.String],
-    fullWidth: js.Function0[scala.Double],
-    insertChildrenInto: js.Function2[js.Array[ISyntaxElement], scala.Double, scala.Unit],
-    isIncrementallyUnusable: js.Function0[scala.Boolean],
-    isList: js.Function0[scala.Boolean],
-    isNode: js.Function0[scala.Boolean],
-    isSeparatedList: js.Function0[scala.Boolean],
-    isToken: js.Function0[scala.Boolean],
-    isTypeScriptSpecific: js.Function0[scala.Boolean],
-    kind: js.Function0[SyntaxKind],
-    lastToken: js.Function0[ISyntaxToken],
-    leadingTrivia: js.Function0[ISyntaxTriviaList],
-    leadingTriviaWidth: js.Function0[scala.Double],
-    nonSeparatorAt: js.Function1[scala.Double, ISyntaxNodeOrToken],
-    nonSeparatorCount: js.Function0[scala.Double],
-    separatorAt: js.Function1[scala.Double, ISyntaxToken],
-    separatorCount: js.Function0[scala.Double],
-    toArray: js.Function0[js.Array[ISyntaxNodeOrToken]],
-    toNonSeparatorArray: js.Function0[js.Array[ISyntaxNodeOrToken]],
-    trailingTrivia: js.Function0[ISyntaxTriviaList],
-    trailingTriviaWidth: js.Function0[scala.Double],
-    width: js.Function0[scala.Double]
+    childAt: scala.Double => ISyntaxNodeOrToken,
+    childCount: () => scala.Double,
+    collectTextElements: js.Array[java.lang.String] => scala.Unit,
+    firstToken: () => ISyntaxToken,
+    fullText: () => java.lang.String,
+    fullWidth: () => scala.Double,
+    insertChildrenInto: (js.Array[ISyntaxElement], scala.Double) => scala.Unit,
+    isIncrementallyUnusable: () => scala.Boolean,
+    isList: () => scala.Boolean,
+    isNode: () => scala.Boolean,
+    isSeparatedList: () => scala.Boolean,
+    isToken: () => scala.Boolean,
+    isTypeScriptSpecific: () => scala.Boolean,
+    kind: () => SyntaxKind,
+    lastToken: () => ISyntaxToken,
+    leadingTrivia: () => ISyntaxTriviaList,
+    leadingTriviaWidth: () => scala.Double,
+    nonSeparatorAt: scala.Double => ISyntaxNodeOrToken,
+    nonSeparatorCount: () => scala.Double,
+    separatorAt: scala.Double => ISyntaxToken,
+    separatorCount: () => scala.Double,
+    toArray: () => js.Array[ISyntaxNodeOrToken],
+    toNonSeparatorArray: () => js.Array[ISyntaxNodeOrToken],
+    trailingTrivia: () => ISyntaxTriviaList,
+    trailingTriviaWidth: () => scala.Double,
+    width: () => scala.Double
   ): ISeparatedSyntaxList = {
-    val __obj = js.Dynamic.literal(childAt = childAt, childCount = childCount, collectTextElements = collectTextElements, firstToken = firstToken, fullText = fullText, fullWidth = fullWidth, insertChildrenInto = insertChildrenInto, isIncrementallyUnusable = isIncrementallyUnusable, isList = isList, isNode = isNode, isSeparatedList = isSeparatedList, isToken = isToken, isTypeScriptSpecific = isTypeScriptSpecific, kind = kind, lastToken = lastToken, leadingTrivia = leadingTrivia, leadingTriviaWidth = leadingTriviaWidth, nonSeparatorAt = nonSeparatorAt, nonSeparatorCount = nonSeparatorCount, separatorAt = separatorAt, separatorCount = separatorCount, toArray = toArray, toNonSeparatorArray = toNonSeparatorArray, trailingTrivia = trailingTrivia, trailingTriviaWidth = trailingTriviaWidth, width = width)
+    val __obj = js.Dynamic.literal(childAt = js.Any.fromFunction1(childAt), childCount = js.Any.fromFunction0(childCount), collectTextElements = js.Any.fromFunction1(collectTextElements), firstToken = js.Any.fromFunction0(firstToken), fullText = js.Any.fromFunction0(fullText), fullWidth = js.Any.fromFunction0(fullWidth), insertChildrenInto = js.Any.fromFunction2(insertChildrenInto), isIncrementallyUnusable = js.Any.fromFunction0(isIncrementallyUnusable), isList = js.Any.fromFunction0(isList), isNode = js.Any.fromFunction0(isNode), isSeparatedList = js.Any.fromFunction0(isSeparatedList), isToken = js.Any.fromFunction0(isToken), isTypeScriptSpecific = js.Any.fromFunction0(isTypeScriptSpecific), kind = js.Any.fromFunction0(kind), lastToken = js.Any.fromFunction0(lastToken), leadingTrivia = js.Any.fromFunction0(leadingTrivia), leadingTriviaWidth = js.Any.fromFunction0(leadingTriviaWidth), nonSeparatorAt = js.Any.fromFunction1(nonSeparatorAt), nonSeparatorCount = js.Any.fromFunction0(nonSeparatorCount), separatorAt = js.Any.fromFunction1(separatorAt), separatorCount = js.Any.fromFunction0(separatorCount), toArray = js.Any.fromFunction0(toArray), toNonSeparatorArray = js.Any.fromFunction0(toNonSeparatorArray), trailingTrivia = js.Any.fromFunction0(trailingTrivia), trailingTriviaWidth = js.Any.fromFunction0(trailingTriviaWidth), width = js.Any.fromFunction0(width))
   
     __obj.asInstanceOf[ISeparatedSyntaxList]
   }

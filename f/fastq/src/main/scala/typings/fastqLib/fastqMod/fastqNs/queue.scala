@@ -24,19 +24,19 @@ object queue {
   @scala.inline
   def apply(
     concurrency: scala.Double,
-    drain: js.Function0[js.Any],
-    empty: js.Function0[scala.Unit],
-    idle: js.Function0[scala.Boolean],
-    kill: js.Function0[js.Any],
-    killAndDrain: js.Function0[js.Any],
-    length: js.Function0[scala.Double],
-    pause: js.Function0[js.Any],
-    push: js.Function2[js.Any, done, scala.Unit],
-    resume: js.Function0[js.Any],
-    saturated: js.Function0[scala.Unit],
-    unshift: js.Function2[js.Any, done, scala.Unit]
+    drain: () => js.Any,
+    empty: () => scala.Unit,
+    idle: () => scala.Boolean,
+    kill: () => js.Any,
+    killAndDrain: () => js.Any,
+    length: () => scala.Double,
+    pause: () => js.Any,
+    push: (js.Any, done) => scala.Unit,
+    resume: () => js.Any,
+    saturated: () => scala.Unit,
+    unshift: (js.Any, done) => scala.Unit
   ): queue = {
-    val __obj = js.Dynamic.literal(concurrency = concurrency, drain = drain, empty = empty, idle = idle, kill = kill, killAndDrain = killAndDrain, length = length, pause = pause, push = push, resume = resume, saturated = saturated, unshift = unshift)
+    val __obj = js.Dynamic.literal(concurrency = concurrency, drain = js.Any.fromFunction0(drain), empty = js.Any.fromFunction0(empty), idle = js.Any.fromFunction0(idle), kill = js.Any.fromFunction0(kill), killAndDrain = js.Any.fromFunction0(killAndDrain), length = js.Any.fromFunction0(length), pause = js.Any.fromFunction0(pause), push = js.Any.fromFunction2(push), resume = js.Any.fromFunction0(resume), saturated = js.Any.fromFunction0(saturated), unshift = js.Any.fromFunction2(unshift))
   
     __obj.asInstanceOf[queue]
   }

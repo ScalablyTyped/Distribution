@@ -239,6 +239,6 @@ class Client protected () extends js.Object {
     * @param deadline When to stop waiting for a connection.
     * @param callback The callback to call when done attempting to connect.
     */
-  def waitForReady(deadline: Deadline, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
+  def waitForReady(deadline: Deadline, callback: js.Function1[/* error */ stdLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
 }
 

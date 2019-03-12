@@ -39,12 +39,12 @@ object XmlAssertion {
     same: XmlAssertion,
     that: XmlAssertion,
     to: XmlAssertion,
-    valid: js.Function0[XmlAssertion],
+    valid: () => XmlAssertion,
     which: XmlAssertion,
     `with`: XmlAssertion,
     xml: XmlAssertion
   ): XmlAssertion = {
-    val __obj = js.Dynamic.literal(and = and, at = at, be = be, been = been, has = has, have = have, is = is, not = not, of = of, same = same, that = that, to = to, valid = valid, which = which, xml = xml)
+    val __obj = js.Dynamic.literal(and = and, at = at, be = be, been = been, has = has, have = have, is = is, not = not, of = of, same = same, that = that, to = to, valid = js.Any.fromFunction0(valid), which = which, xml = xml)
     __obj.updateDynamic("with")(`with`)
     __obj.asInstanceOf[XmlAssertion]
   }

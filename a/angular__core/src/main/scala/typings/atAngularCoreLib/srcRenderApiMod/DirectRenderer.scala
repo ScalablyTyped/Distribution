@@ -16,13 +16,13 @@ trait DirectRenderer extends js.Object {
 object DirectRenderer {
   @scala.inline
   def apply(
-    appendChild: js.Function2[js.Any, js.Any, scala.Unit],
-    insertBefore: js.Function2[js.Any, js.Any, scala.Unit],
-    nextSibling: js.Function1[js.Any, js.Any],
-    parentElement: js.Function1[js.Any, js.Any],
-    remove: js.Function1[js.Any, scala.Unit]
+    appendChild: (js.Any, js.Any) => scala.Unit,
+    insertBefore: (js.Any, js.Any) => scala.Unit,
+    nextSibling: js.Any => js.Any,
+    parentElement: js.Any => js.Any,
+    remove: js.Any => scala.Unit
   ): DirectRenderer = {
-    val __obj = js.Dynamic.literal(appendChild = appendChild, insertBefore = insertBefore, nextSibling = nextSibling, parentElement = parentElement, remove = remove)
+    val __obj = js.Dynamic.literal(appendChild = js.Any.fromFunction2(appendChild), insertBefore = js.Any.fromFunction2(insertBefore), nextSibling = js.Any.fromFunction1(nextSibling), parentElement = js.Any.fromFunction1(parentElement), remove = js.Any.fromFunction1(remove))
   
     __obj.asInstanceOf[DirectRenderer]
   }

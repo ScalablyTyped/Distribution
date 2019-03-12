@@ -20,7 +20,7 @@ object ^ extends js.Object {
   def accessorName(fn: vegaDashUtilLib.vegaDashUtilMod.AccessorFn[_]): java.lang.String = js.native
   def array[T](v: T): js.Array[T] = js.native
   def array[T](v: js.Array[T]): js.Array[T] = js.native
-  def changeset(): vegaDashTypingsLib.typesRuntimeMod.Changeset = js.native
+  def changeset(): Changeset = js.native
   def clampRange(range: js.Array[scala.Double], min: scala.Double, max: scala.Double): js.Array[scala.Double] = js.native
   def compare(fields: java.lang.String): js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = js.native
   def compare(fields: java.lang.String, orders: js.Array[vegaDashUtilLib.vegaDashUtilMod.Order]): js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = js.native
@@ -70,9 +70,9 @@ object ^ extends js.Object {
   def formatLocale(definition: js.Object): scala.Unit = js.native
   def id(`_`: js.Object): js.Symbol = js.native
   def identity[V](v: V): V = js.native
-  def inferType(values: js.Array[_]): vegaDashTypingsLib.typesRuntimeMod.TypeInference = js.native
-  def inferType(values: js.Array[_], field: java.lang.String): vegaDashTypingsLib.typesRuntimeMod.TypeInference = js.native
-  def inferTypes(values: js.Array[_], fields: js.Array[java.lang.String]): org.scalablytyped.runtime.StringDictionary[vegaDashTypingsLib.typesRuntimeMod.TypeInference] = js.native
+  def inferType(values: js.Array[_]): TypeInference = js.native
+  def inferType(values: js.Array[_], field: java.lang.String): TypeInference = js.native
+  def inferTypes(values: js.Array[_], fields: js.Array[java.lang.String]): org.scalablytyped.runtime.StringDictionary[TypeInference] = js.native
   def inherits[C /* <: js.Object */, P /* <: js.Object */](child: C, parent: P): C with P = js.native
   def inrange(value: scala.Double, range: js.Array[scala.Double], left: scala.Boolean, right: scala.Boolean): scala.Boolean = js.native
   def isArray[T](a: js.Any): /* is std.Array<T> */ scala.Boolean = js.native
@@ -87,8 +87,8 @@ object ^ extends js.Object {
   def key(fields: js.Array[java.lang.String]): js.Function1[/* _ */ js.Object, java.lang.String] = js.native
   def key(fields: js.Array[java.lang.String], flat: scala.Boolean): js.Function1[/* _ */ js.Object, java.lang.String] = js.native
   def lerp(array: js.Array[scala.Double], fraction: scala.Double): scala.Double = js.native
-  def loader(): vegaDashTypingsLib.typesRuntimeMod.Loader = js.native
-  def loader(opt: vegaDashTypingsLib.typesRuntimeMod.LoaderOptions): vegaDashTypingsLib.typesRuntimeMod.Loader = js.native
+  def loader(): Loader = js.native
+  def loader(opt: LoaderOptions): Loader = js.native
   def log(args: js.Any*): scala.Unit = js.native
   def logger(): vegaDashUtilLib.vegaDashUtilMod.LoggerInterface = js.native
   def logger(`_`: scala.Double): vegaDashUtilLib.vegaDashUtilMod.LoggerInterface = js.native
@@ -138,10 +138,10 @@ object ^ extends js.Object {
   def panLog(domain: js.Array[scala.Double], delta: scala.Double): js.Array[scala.Double] = js.native
   def panPow(domain: js.Array[scala.Double], delta: scala.Double, exponent: scala.Double): js.Array[scala.Double] = js.native
   def panSymlog(domain: js.Array[scala.Double], delta: scala.Double, constant: scala.Double): js.Array[scala.Double] = js.native
-  def parse(spec: vegaDashTypingsLib.typesSpecMod.Spec): vegaDashTypingsLib.typesRuntimeMod.Runtime = js.native
-  def parse(spec: vegaDashTypingsLib.typesSpecMod.Spec, opt: js.Any): vegaDashTypingsLib.typesRuntimeMod.Runtime = js.native
+  def parse(spec: vegaDashTypingsLib.typesSpecMod.Spec): Runtime = js.native
+  def parse(spec: vegaDashTypingsLib.typesSpecMod.Spec, opt: js.Any): Runtime = js.native
   def peek(array: js.Array[_]): js.Any = js.native
-  def projection(`type`: java.lang.String, projection: js.Any): vegaDashTypingsLib.typesRuntimeMod.View = js.native
+  def projection(`type`: java.lang.String, projection: js.Any): View = js.native
   def quarter(date: scala.Double): scala.Double = js.native
   def quarter(date: stdLib.Date): scala.Double = js.native
   def read(data: java.lang.String, schema: vegaDashTypingsLib.typesSpecDataMod.Format): js.Array[js.Object] = js.native

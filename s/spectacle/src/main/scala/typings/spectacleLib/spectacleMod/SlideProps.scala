@@ -20,10 +20,10 @@ trait SlideProps extends BaseProps {
   var progressColor: js.UndefOr[java.lang.String] = js.undefined
   var slideIndex: js.UndefOr[scala.Double] = js.undefined
   var state: js.UndefOr[java.lang.String] = js.undefined
-  var transition: js.UndefOr[coreDashJsLib.Array[transitionType]] = js.undefined
+  var transition: js.UndefOr[js.Array[transitionType]] = js.undefined
   var transitionDuration: js.UndefOr[scala.Double] = js.undefined
-  var transitionIn: js.UndefOr[coreDashJsLib.Array[transitionType]] = js.undefined
-  var transitionOut: js.UndefOr[coreDashJsLib.Array[transitionType]] = js.undefined
+  var transitionIn: js.UndefOr[js.Array[transitionType]] = js.undefined
+  var transitionOut: js.UndefOr[js.Array[transitionType]] = js.undefined
 }
 
 object SlideProps {
@@ -38,7 +38,7 @@ object SlideProps {
     className: java.lang.String = null,
     contentStyles: CSSProperties = null,
     controlColor: java.lang.String = null,
-    dispatch: js.Function0[scala.Unit] = null,
+    dispatch: () => scala.Unit = null,
     hash: scala.Double | java.lang.String = null,
     history: js.Any = null,
     id: java.lang.String = null,
@@ -46,7 +46,7 @@ object SlideProps {
     lastSlideIndex: scala.Int | scala.Double = null,
     margin: scala.Double | java.lang.String = null,
     notes: java.lang.String = null,
-    onActive: js.Function1[/* slideIndex */ java.lang.String | scala.Double, scala.Unit] = null,
+    onActive: /* slideIndex */ java.lang.String | scala.Double => scala.Unit = null,
     padding: scala.Double | java.lang.String = null,
     progressColor: java.lang.String = null,
     slideIndex: scala.Int | scala.Double = null,
@@ -56,10 +56,10 @@ object SlideProps {
     textColor: java.lang.String = null,
     textFont: java.lang.String = null,
     textSize: java.lang.String = null,
-    transition: coreDashJsLib.Array[transitionType] = null,
+    transition: js.Array[transitionType] = null,
     transitionDuration: scala.Int | scala.Double = null,
-    transitionIn: coreDashJsLib.Array[transitionType] = null,
-    transitionOut: coreDashJsLib.Array[transitionType] = null
+    transitionIn: js.Array[transitionType] = null,
+    transitionOut: js.Array[transitionType] = null
   ): SlideProps = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align)
@@ -71,7 +71,7 @@ object SlideProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (contentStyles != null) __obj.updateDynamic("contentStyles")(contentStyles)
     if (controlColor != null) __obj.updateDynamic("controlColor")(controlColor)
-    if (dispatch != null) __obj.updateDynamic("dispatch")(dispatch)
+    if (dispatch != null) __obj.updateDynamic("dispatch")(js.Any.fromFunction0(dispatch))
     if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
     if (history != null) __obj.updateDynamic("history")(history)
     if (id != null) __obj.updateDynamic("id")(id)
@@ -79,7 +79,7 @@ object SlideProps {
     if (lastSlideIndex != null) __obj.updateDynamic("lastSlideIndex")(lastSlideIndex.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (notes != null) __obj.updateDynamic("notes")(notes)
-    if (onActive != null) __obj.updateDynamic("onActive")(onActive)
+    if (onActive != null) __obj.updateDynamic("onActive")(js.Any.fromFunction1(onActive))
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (progressColor != null) __obj.updateDynamic("progressColor")(progressColor)
     if (slideIndex != null) __obj.updateDynamic("slideIndex")(slideIndex.asInstanceOf[js.Any])

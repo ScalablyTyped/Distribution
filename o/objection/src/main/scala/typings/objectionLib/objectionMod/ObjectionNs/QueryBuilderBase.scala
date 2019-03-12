@@ -246,7 +246,7 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
       scala.Unit
     ]
   ): this.type = js.native
-  def onError(fn: js.Function2[/* error */ nodeLib.Error, /* builder */ this.type, _]): this.type = js.native
+  def onError(fn: js.Function2[/* error */ stdLib.Error, /* builder */ this.type, _]): this.type = js.native
   def orWhereJsonHasAll(fieldExpression: FieldExpression, keys: java.lang.String): QueryBuilder[QM, RM, RV] = js.native
   def orWhereJsonHasAll(fieldExpression: FieldExpression, keys: js.Array[java.lang.String]): QueryBuilder[QM, RM, RV] = js.native
   def orWhereJsonHasAny(fieldExpression: FieldExpression, keys: java.lang.String): QueryBuilder[QM, RM, RV] = js.native

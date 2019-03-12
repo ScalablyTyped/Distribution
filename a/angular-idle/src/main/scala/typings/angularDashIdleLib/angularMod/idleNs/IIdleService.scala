@@ -60,18 +60,18 @@ trait IIdleService extends js.Object {
 object IIdleService {
   @scala.inline
   def apply(
-    getIdle: js.Function0[scala.Double],
-    getTimeout: js.Function0[scala.Double],
-    idling: js.Function0[scala.Boolean],
-    interrupt: js.Function0[js.Any],
-    isExpired: js.Function0[scala.Boolean],
-    running: js.Function0[scala.Boolean],
-    setIdle: js.Function1[scala.Double, scala.Unit],
-    setTimeout: js.Function1[scala.Double, scala.Unit],
-    unwatch: js.Function0[scala.Unit],
-    watch: js.Function0[scala.Unit]
+    getIdle: () => scala.Double,
+    getTimeout: () => scala.Double,
+    idling: () => scala.Boolean,
+    interrupt: () => js.Any,
+    isExpired: () => scala.Boolean,
+    running: () => scala.Boolean,
+    setIdle: scala.Double => scala.Unit,
+    setTimeout: scala.Double => scala.Unit,
+    unwatch: () => scala.Unit,
+    watch: () => scala.Unit
   ): IIdleService = {
-    val __obj = js.Dynamic.literal(getIdle = getIdle, getTimeout = getTimeout, idling = idling, interrupt = interrupt, isExpired = isExpired, running = running, setIdle = setIdle, setTimeout = setTimeout, unwatch = unwatch, watch = watch)
+    val __obj = js.Dynamic.literal(getIdle = js.Any.fromFunction0(getIdle), getTimeout = js.Any.fromFunction0(getTimeout), idling = js.Any.fromFunction0(idling), interrupt = js.Any.fromFunction0(interrupt), isExpired = js.Any.fromFunction0(isExpired), running = js.Any.fromFunction0(running), setIdle = js.Any.fromFunction1(setIdle), setTimeout = js.Any.fromFunction1(setTimeout), unwatch = js.Any.fromFunction0(unwatch), watch = js.Any.fromFunction0(watch))
   
     __obj.asInstanceOf[IIdleService]
   }

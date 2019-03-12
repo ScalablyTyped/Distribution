@@ -18,15 +18,15 @@ trait Configurable[T] extends js.Object {
 object Configurable {
   @scala.inline
   def apply[T](
-    disable: js.Function1[java.lang.String, T with Configurable[T]],
-    disabled: js.Function1[java.lang.String, scala.Boolean],
-    enable: js.Function1[java.lang.String, T with Configurable[T]],
-    enabled: js.Function1[java.lang.String, scala.Boolean],
-    get: js.Function1[java.lang.String, js.Any],
-    set: js.Function2[java.lang.String, js.Any, T with Configurable[T]],
+    disable: java.lang.String => T with Configurable[T],
+    disabled: java.lang.String => scala.Boolean,
+    enable: java.lang.String => T with Configurable[T],
+    enabled: java.lang.String => scala.Boolean,
+    get: java.lang.String => js.Any,
+    set: (java.lang.String, js.Any) => T with Configurable[T],
     settings: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): Configurable[T] = {
-    val __obj = js.Dynamic.literal(disable = disable, disabled = disabled, enable = enable, enabled = enabled, get = get, set = set, settings = settings)
+    val __obj = js.Dynamic.literal(disable = js.Any.fromFunction1(disable), disabled = js.Any.fromFunction1(disabled), enable = js.Any.fromFunction1(enable), enabled = js.Any.fromFunction1(enabled), get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set), settings = settings)
   
     __obj.asInstanceOf[Configurable[T]]
   }

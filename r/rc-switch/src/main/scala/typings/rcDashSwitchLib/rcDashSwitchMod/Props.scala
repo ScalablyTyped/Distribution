@@ -31,8 +31,8 @@ object Props {
     defaultChecked: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     loadingIcon: reactLib.reactMod.ReactNs.ReactNode = null,
-    onChange: js.Function1[/* checked */ scala.Boolean, scala.Unit] = null,
-    onClick: js.Function1[/* checked */ scala.Boolean, scala.Unit] = null,
+    onChange: /* checked */ scala.Boolean => scala.Unit = null,
+    onClick: /* checked */ scala.Boolean => scala.Unit = null,
     prefixCls: java.lang.String = null,
     tabIndex: scala.Int | scala.Double = null
   ): Props = {
@@ -43,8 +43,8 @@ object Props {
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (loadingIcon != null) __obj.updateDynamic("loadingIcon")(loadingIcon.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]

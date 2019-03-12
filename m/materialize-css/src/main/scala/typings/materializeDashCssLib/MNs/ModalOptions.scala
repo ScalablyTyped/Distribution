@@ -72,16 +72,16 @@ object ModalOptions {
     dismissible: scala.Boolean,
     endingTop: java.lang.String,
     inDuration: scala.Double,
-    onCloseEnd: js.Function2[Modal, stdLib.Element, scala.Unit],
-    onCloseStart: js.Function2[Modal, stdLib.Element, scala.Unit],
-    onOpenEnd: js.Function2[Modal, stdLib.Element, scala.Unit],
-    onOpenStart: js.Function2[Modal, stdLib.Element, scala.Unit],
+    onCloseEnd: (Modal, stdLib.Element) => scala.Unit,
+    onCloseStart: (Modal, stdLib.Element) => scala.Unit,
+    onOpenEnd: (Modal, stdLib.Element) => scala.Unit,
+    onOpenStart: (Modal, stdLib.Element) => scala.Unit,
     opacity: scala.Double,
     outDuration: scala.Double,
     preventScrolling: scala.Boolean,
     startingTop: java.lang.String
   ): ModalOptions = {
-    val __obj = js.Dynamic.literal(dismissible = dismissible, endingTop = endingTop, inDuration = inDuration, onCloseEnd = onCloseEnd, onCloseStart = onCloseStart, onOpenEnd = onOpenEnd, onOpenStart = onOpenStart, opacity = opacity, outDuration = outDuration, preventScrolling = preventScrolling, startingTop = startingTop)
+    val __obj = js.Dynamic.literal(dismissible = dismissible, endingTop = endingTop, inDuration = inDuration, onCloseEnd = js.Any.fromFunction2(onCloseEnd), onCloseStart = js.Any.fromFunction2(onCloseStart), onOpenEnd = js.Any.fromFunction2(onOpenEnd), onOpenStart = js.Any.fromFunction2(onOpenStart), opacity = opacity, outDuration = outDuration, preventScrolling = preventScrolling, startingTop = startingTop)
   
     __obj.asInstanceOf[ModalOptions]
   }

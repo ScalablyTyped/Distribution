@@ -13,7 +13,7 @@ trait BucketStream[T]
   @JSName("on")
   def on_error(
     event: minioLib.minioLibStrings.error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
 }
 

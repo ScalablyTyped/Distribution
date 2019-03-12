@@ -292,7 +292,7 @@ object AccordianContentProps {
   @scala.inline
   def apply(
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
     isActive: js.UndefOr[scala.Boolean] = js.undefined
   ): AccordianContentProps = {
     val __obj = js.Dynamic.literal()

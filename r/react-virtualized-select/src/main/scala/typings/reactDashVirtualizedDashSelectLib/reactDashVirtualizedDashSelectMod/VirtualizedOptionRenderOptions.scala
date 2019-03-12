@@ -22,7 +22,7 @@ trait VirtualizedOptionRenderOptions[T] extends js.Object {
 object VirtualizedOptionRenderOptions {
   @scala.inline
   def apply[T](
-    focusOption: js.Function1[T, scala.Unit],
+    focusOption: T => scala.Unit,
     focusedOption: T,
     focusedOptionIndex: scala.Double,
     key: java.lang.String,
@@ -30,11 +30,11 @@ object VirtualizedOptionRenderOptions {
     listProps: reactDashVirtualizedLib.distEsListMod.ListProps,
     option: T,
     options: js.Array[T],
-    selectValue: js.Function1[T, scala.Unit],
+    selectValue: T => scala.Unit,
     style: stdLib.Record[java.lang.String, java.lang.String],
     valueArray: js.Array[T]
   ): VirtualizedOptionRenderOptions[T] = {
-    val __obj = js.Dynamic.literal(focusOption = focusOption, focusedOption = focusedOption.asInstanceOf[js.Any], focusedOptionIndex = focusedOptionIndex, key = key, labelKey = labelKey, listProps = listProps, option = option.asInstanceOf[js.Any], options = options, selectValue = selectValue, style = style, valueArray = valueArray)
+    val __obj = js.Dynamic.literal(focusOption = js.Any.fromFunction1(focusOption), focusedOption = focusedOption.asInstanceOf[js.Any], focusedOptionIndex = focusedOptionIndex, key = key, labelKey = labelKey, listProps = listProps, option = option.asInstanceOf[js.Any], options = options, selectValue = js.Any.fromFunction1(selectValue), style = style, valueArray = valueArray)
   
     __obj.asInstanceOf[VirtualizedOptionRenderOptions[T]]
   }

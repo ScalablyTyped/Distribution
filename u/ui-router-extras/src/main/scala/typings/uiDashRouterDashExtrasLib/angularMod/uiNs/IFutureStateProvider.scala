@@ -25,11 +25,11 @@ trait IFutureStateProvider extends js.Object {
 object IFutureStateProvider {
   @scala.inline
   def apply(
-    addResolve: js.Function1[IResolveFunction, scala.Unit],
-    futureState: js.Function1[IFutureState, scala.Unit],
-    stateFactory: js.Function2[java.lang.String, IFutureStateFactory, scala.Unit]
+    addResolve: IResolveFunction => scala.Unit,
+    futureState: IFutureState => scala.Unit,
+    stateFactory: (java.lang.String, IFutureStateFactory) => scala.Unit
   ): IFutureStateProvider = {
-    val __obj = js.Dynamic.literal(addResolve = addResolve, futureState = futureState, stateFactory = stateFactory)
+    val __obj = js.Dynamic.literal(addResolve = js.Any.fromFunction1(addResolve), futureState = js.Any.fromFunction1(futureState), stateFactory = js.Any.fromFunction2(stateFactory))
   
     __obj.asInstanceOf[IFutureStateProvider]
   }

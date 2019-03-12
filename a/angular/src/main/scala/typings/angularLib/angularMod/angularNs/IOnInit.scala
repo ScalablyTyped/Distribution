@@ -21,8 +21,8 @@ trait IOnInit extends js.Object {
 
 object IOnInit {
   @scala.inline
-  def apply($onInit: js.Function0[scala.Unit]): IOnInit = {
-    val __obj = js.Dynamic.literal($onInit = $onInit)
+  def apply($onInit: () => scala.Unit): IOnInit = {
+    val __obj = js.Dynamic.literal($onInit = js.Any.fromFunction0($onInit))
   
     __obj.asInstanceOf[IOnInit]
   }

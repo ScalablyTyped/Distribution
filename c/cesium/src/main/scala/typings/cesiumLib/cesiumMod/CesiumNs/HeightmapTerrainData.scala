@@ -25,23 +25,14 @@ trait HeightmapTerrainData extends js.Object {
 object HeightmapTerrainData {
   @scala.inline
   def apply(
-    createMesh: js.Function4[TilingScheme, scala.Double, scala.Double, scala.Double, js.Promise[TerrainMesh]],
-    interpolateHeight: js.Function3[Rectangle, scala.Double, scala.Double, scala.Double],
-    isChildAvailable: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Boolean],
-    upsample: js.Function7[
-      TilingScheme, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      js.Promise[HeightmapTerrainData]
-    ],
-    wasCreatedByUpsampling: js.Function0[scala.Boolean],
+    createMesh: (TilingScheme, scala.Double, scala.Double, scala.Double) => js.Promise[TerrainMesh],
+    interpolateHeight: (Rectangle, scala.Double, scala.Double) => scala.Double,
+    isChildAvailable: (scala.Double, scala.Double, scala.Double, scala.Double) => scala.Boolean,
+    upsample: (TilingScheme, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => js.Promise[HeightmapTerrainData],
+    wasCreatedByUpsampling: () => scala.Boolean,
     waterMask: stdLib.Uint8Array | stdLib.HTMLImageElement | stdLib.HTMLCanvasElement
   ): HeightmapTerrainData = {
-    val __obj = js.Dynamic.literal(createMesh = createMesh, interpolateHeight = interpolateHeight, isChildAvailable = isChildAvailable, upsample = upsample, wasCreatedByUpsampling = wasCreatedByUpsampling, waterMask = waterMask.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(createMesh = js.Any.fromFunction4(createMesh), interpolateHeight = js.Any.fromFunction3(interpolateHeight), isChildAvailable = js.Any.fromFunction4(isChildAvailable), upsample = js.Any.fromFunction7(upsample), wasCreatedByUpsampling = js.Any.fromFunction0(wasCreatedByUpsampling), waterMask = waterMask.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HeightmapTerrainData]
   }

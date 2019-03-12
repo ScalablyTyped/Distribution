@@ -86,33 +86,27 @@ object AutocompleteProps {
   @scala.inline
   def apply[T](
     data: js.Array[T],
-    renderItem: js.Function1[T, reactLib.reactMod.ReactNs.ReactNode],
+    renderItem: T => reactLib.reactMod.ReactNs.ReactNode,
     containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     hideResults: js.UndefOr[scala.Boolean] = js.undefined,
     inputContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     listContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     listStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
-    onShowResult: js.Function1[/* showResults */ scala.Boolean, scala.Unit] = null,
-    onStartShouldSetResponderCapture: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
-      scala.Boolean
-    ] = null,
+    onShowResult: /* showResults */ scala.Boolean => scala.Unit = null,
+    onStartShouldSetResponderCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
     renderSeparator: js.Any = null,
-    renderTextInput: js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties */ /* props */ js.Any, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null
+    renderTextInput: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties */ /* props */ js.Any => reactLib.reactMod.ReactNs.ReactNode = null
   ): AutocompleteProps[T] = {
-    val __obj = js.Dynamic.literal(data = data, renderItem = renderItem)
+    val __obj = js.Dynamic.literal(data = data, renderItem = js.Any.fromFunction1(renderItem))
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(hideResults)) __obj.updateDynamic("hideResults")(hideResults)
     if (inputContainerStyle != null) __obj.updateDynamic("inputContainerStyle")(inputContainerStyle.asInstanceOf[js.Any])
     if (listContainerStyle != null) __obj.updateDynamic("listContainerStyle")(listContainerStyle.asInstanceOf[js.Any])
     if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle.asInstanceOf[js.Any])
-    if (onShowResult != null) __obj.updateDynamic("onShowResult")(onShowResult)
-    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(onStartShouldSetResponderCapture)
+    if (onShowResult != null) __obj.updateDynamic("onShowResult")(js.Any.fromFunction1(onShowResult))
+    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1(onStartShouldSetResponderCapture))
     if (renderSeparator != null) __obj.updateDynamic("renderSeparator")(renderSeparator)
-    if (renderTextInput != null) __obj.updateDynamic("renderTextInput")(renderTextInput)
+    if (renderTextInput != null) __obj.updateDynamic("renderTextInput")(js.Any.fromFunction1(renderTextInput))
     __obj.asInstanceOf[AutocompleteProps[T]]
   }
 }

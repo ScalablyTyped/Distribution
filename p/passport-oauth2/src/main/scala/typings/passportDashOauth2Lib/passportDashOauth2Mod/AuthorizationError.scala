@@ -18,6 +18,10 @@ class AuthorizationError protected ()
   /* CompleteClass */
   override var code: java.lang.String = js.native
   /* CompleteClass */
+  override var message: java.lang.String = js.native
+  /* CompleteClass */
+  override var name: java.lang.String = js.native
+  /* CompleteClass */
   override var status: scala.Double = js.native
 }
 

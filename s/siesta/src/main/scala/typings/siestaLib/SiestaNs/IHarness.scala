@@ -40,7 +40,7 @@ object IHarness {
     alsoPreload: js.Array[_],
     autoCheckGlobals: scala.Boolean,
     cachePreload: scala.Boolean,
-    configure: js.Function1[js.Any, scala.Unit],
+    configure: js.Any => scala.Unit,
     defaultTimeout: scala.Boolean,
     disableColoring: scala.Boolean,
     expectedGlobals: js.Array[java.lang.String],
@@ -54,14 +54,14 @@ object IHarness {
     pauseBetweenTests: scala.Double,
     preload: js.Array[_],
     runCore: java.lang.String,
-    start: js.Function1[/* repeated */ js.Any, scala.Unit],
+    start: /* repeated */ js.Any => scala.Unit,
     subTestTimeout: scala.Double,
     testClass: ITest,
     title: java.lang.String,
     transparentEx: scala.Boolean,
     waitForTimeout: scala.Double
   ): IHarness = {
-    val __obj = js.Dynamic.literal(alsoPreload = alsoPreload, autoCheckGlobals = autoCheckGlobals, cachePreload = cachePreload, configure = configure, defaultTimeout = defaultTimeout, disableColoring = disableColoring, expectedGlobals = expectedGlobals, isReadyTimeout = isReadyTimeout, keepNLastResults = keepNLastResults, keepResults = keepResults, listenters = listenters, maxThreads = maxThreads, needDone = needDone, overrideSetTimeout = overrideSetTimeout, pauseBetweenTests = pauseBetweenTests, preload = preload, runCore = runCore, start = start, subTestTimeout = subTestTimeout, testClass = testClass, title = title, transparentEx = transparentEx, waitForTimeout = waitForTimeout)
+    val __obj = js.Dynamic.literal(alsoPreload = alsoPreload, autoCheckGlobals = autoCheckGlobals, cachePreload = cachePreload, configure = js.Any.fromFunction1(configure), defaultTimeout = defaultTimeout, disableColoring = disableColoring, expectedGlobals = expectedGlobals, isReadyTimeout = isReadyTimeout, keepNLastResults = keepNLastResults, keepResults = keepResults, listenters = listenters, maxThreads = maxThreads, needDone = needDone, overrideSetTimeout = overrideSetTimeout, pauseBetweenTests = pauseBetweenTests, preload = preload, runCore = runCore, start = js.Any.fromFunction1(start), subTestTimeout = subTestTimeout, testClass = testClass, title = title, transparentEx = transparentEx, waitForTimeout = waitForTimeout)
   
     __obj.asInstanceOf[IHarness]
   }

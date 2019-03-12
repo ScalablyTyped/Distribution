@@ -98,23 +98,10 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    apply: js.Function1[
-      /* manifest */ webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest, 
-      scala.Unit
-    ] = null,
+    apply: /* manifest */ webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest => scala.Unit = null,
     assets: js.Object = null,
-    customize: js.Function4[
-      /* entry */ Entry, 
-      /* original */ AnyObject, 
-      /* manifest */ webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest, 
-      /* asset */ AnyObject, 
-      Entry | webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestLibNumbers.`false`
-    ] = null,
-    done: js.Function2[
-      /* manifest */ webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest, 
-      /* stats */ AnyObject, 
-      scala.Unit
-    ] = null,
+    customize: (/* entry */ Entry, /* original */ AnyObject, /* manifest */ webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest, /* asset */ AnyObject) => Entry | webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestLibNumbers.`false` = null,
+    done: (/* manifest */ webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest, /* stats */ AnyObject) => scala.Unit = null,
     entrypoints: js.UndefOr[scala.Boolean] = js.undefined,
     entrypointsKey: java.lang.String | webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestLibNumbers.`false` = null,
     fileExtRegex: stdLib.RegExp | webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestLibNumbers.`false` = null,
@@ -140,18 +127,14 @@ object Options {
       scala.Double
     ]) = null,
     space: scala.Int | scala.Double = null,
-    transform: js.Function2[
-      /* assets */ AnyObject, 
-      /* manifest */ webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest, 
-      _
-    ] = null,
+    transform: (/* assets */ AnyObject, /* manifest */ webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest) => _ = null,
     writeToDisk: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (apply != null) __obj.updateDynamic("apply")(apply)
+    if (apply != null) __obj.updateDynamic("apply")(js.Any.fromFunction1(apply))
     if (assets != null) __obj.updateDynamic("assets")(assets)
-    if (customize != null) __obj.updateDynamic("customize")(customize)
-    if (done != null) __obj.updateDynamic("done")(done)
+    if (customize != null) __obj.updateDynamic("customize")(js.Any.fromFunction4(customize))
+    if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction2(done))
     if (!js.isUndefined(entrypoints)) __obj.updateDynamic("entrypoints")(entrypoints)
     if (entrypointsKey != null) __obj.updateDynamic("entrypointsKey")(entrypointsKey.asInstanceOf[js.Any])
     if (fileExtRegex != null) __obj.updateDynamic("fileExtRegex")(fileExtRegex.asInstanceOf[js.Any])
@@ -164,7 +147,7 @@ object Options {
     if (replacer != null) __obj.updateDynamic("replacer")(replacer.asInstanceOf[js.Any])
     if (sortManifest != null) __obj.updateDynamic("sortManifest")(sortManifest.asInstanceOf[js.Any])
     if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction2(transform))
     if (!js.isUndefined(writeToDisk)) __obj.updateDynamic("writeToDisk")(writeToDisk)
     __obj.asInstanceOf[Options]
   }

@@ -14,11 +14,11 @@ trait IProximityDeviceStatics extends js.Object {
 object IProximityDeviceStatics {
   @scala.inline
   def apply(
-    fromId: js.Function1[java.lang.String, ProximityDevice],
-    getDefault: js.Function0[ProximityDevice],
-    getDeviceSelector: js.Function0[java.lang.String]
+    fromId: java.lang.String => ProximityDevice,
+    getDefault: () => ProximityDevice,
+    getDeviceSelector: () => java.lang.String
   ): IProximityDeviceStatics = {
-    val __obj = js.Dynamic.literal(fromId = fromId, getDefault = getDefault, getDeviceSelector = getDeviceSelector)
+    val __obj = js.Dynamic.literal(fromId = js.Any.fromFunction1(fromId), getDefault = js.Any.fromFunction0(getDefault), getDeviceSelector = js.Any.fromFunction0(getDeviceSelector))
   
     __obj.asInstanceOf[IProximityDeviceStatics]
   }

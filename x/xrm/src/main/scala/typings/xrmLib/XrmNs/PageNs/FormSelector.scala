@@ -15,10 +15,10 @@ trait FormSelector
 object FormSelector {
   @scala.inline
   def apply(
-    getCurrentItem: js.Function0[xrmLib.XrmNs.ControlsNs.FormItem],
+    getCurrentItem: () => xrmLib.XrmNs.ControlsNs.FormItem,
     items: xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.FormItem]
   ): FormSelector = {
-    val __obj = js.Dynamic.literal(getCurrentItem = getCurrentItem, items = items)
+    val __obj = js.Dynamic.literal(getCurrentItem = js.Any.fromFunction0(getCurrentItem), items = items)
   
     __obj.asInstanceOf[FormSelector]
   }

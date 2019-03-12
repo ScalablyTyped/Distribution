@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(input: java.lang.String): java.lang.String = js.native
-  def apply(
-    input: java.lang.String,
-    opts: stripDashJsonDashCommentsLib.stripDashJsonDashCommentsMod.StripJsonOptions
-  ): java.lang.String = js.native
+  def apply(input: java.lang.String, opts: StripJsonOptions): java.lang.String = js.native
 }
 

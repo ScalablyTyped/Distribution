@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 trait XCustomShapeEngine
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** @returns a collection of interaction handles */
-  val Interaction: activexDashInteropLib.SafeArray[XCustomShapeHandle]
+  val Interaction: stdLib.SafeArray[XCustomShapeHandle]
   /** @returns the line geometry of the object */
   val LineGeometry: PolyPolygonBezierCoords
   /** @returns the text bound of the shape */
   val TextBounds: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle
   /** @returns a collection of interaction handles */
-  def getInteraction(): activexDashInteropLib.SafeArray[XCustomShapeHandle]
+  def getInteraction(): stdLib.SafeArray[XCustomShapeHandle]
   /** @returns the line geometry of the object */
   def getLineGeometry(): PolyPolygonBezierCoords
   /** @returns the text bound of the shape */
@@ -27,18 +27,18 @@ trait XCustomShapeEngine
 object XCustomShapeEngine {
   @scala.inline
   def apply(
-    Interaction: activexDashInteropLib.SafeArray[XCustomShapeHandle],
+    Interaction: stdLib.SafeArray[XCustomShapeHandle],
     LineGeometry: PolyPolygonBezierCoords,
     TextBounds: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
-    acquire: js.Function0[scala.Unit],
-    getInteraction: js.Function0[activexDashInteropLib.SafeArray[XCustomShapeHandle]],
-    getLineGeometry: js.Function0[PolyPolygonBezierCoords],
-    getTextBounds: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    render: js.Function0[XShape]
+    acquire: () => scala.Unit,
+    getInteraction: () => stdLib.SafeArray[XCustomShapeHandle],
+    getLineGeometry: () => PolyPolygonBezierCoords,
+    getTextBounds: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    render: () => XShape
   ): XCustomShapeEngine = {
-    val __obj = js.Dynamic.literal(Interaction = Interaction, LineGeometry = LineGeometry, TextBounds = TextBounds, acquire = acquire, getInteraction = getInteraction, getLineGeometry = getLineGeometry, getTextBounds = getTextBounds, queryInterface = queryInterface, release = release, render = render)
+    val __obj = js.Dynamic.literal(Interaction = Interaction, LineGeometry = LineGeometry, TextBounds = TextBounds, acquire = js.Any.fromFunction0(acquire), getInteraction = js.Any.fromFunction0(getInteraction), getLineGeometry = js.Any.fromFunction0(getLineGeometry), getTextBounds = js.Any.fromFunction0(getTextBounds), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), render = js.Any.fromFunction0(render))
   
     __obj.asInstanceOf[XCustomShapeEngine]
   }

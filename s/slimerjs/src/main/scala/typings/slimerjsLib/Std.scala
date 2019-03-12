@@ -12,8 +12,8 @@ trait Std extends js.Object {
 
 object Std {
   @scala.inline
-  def apply(read: js.Function0[js.Any], write: js.Function1[js.Any, scala.Unit]): Std = {
-    val __obj = js.Dynamic.literal(read = read, write = write)
+  def apply(read: () => js.Any, write: js.Any => scala.Unit): Std = {
+    val __obj = js.Dynamic.literal(read = js.Any.fromFunction0(read), write = js.Any.fromFunction1(write))
   
     __obj.asInstanceOf[Std]
   }

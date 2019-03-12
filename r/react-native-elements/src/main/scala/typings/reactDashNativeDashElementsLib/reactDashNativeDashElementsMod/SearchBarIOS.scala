@@ -29,11 +29,11 @@ object SearchBarIOS {
     inputStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     leftIconContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     loadingProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActivityIndicatorProperties */ js.Any = null,
-    onBlur: js.Function0[scala.Unit] = null,
-    onCancel: js.Function0[scala.Unit] = null,
-    onChangeText: js.Function1[/* text */ java.lang.String, scala.Unit] = null,
-    onClear: js.Function0[scala.Unit] = null,
-    onFocus: js.Function0[scala.Unit] = null,
+    onBlur: () => scala.Unit = null,
+    onCancel: () => scala.Unit = null,
+    onChangeText: /* text */ java.lang.String => scala.Unit = null,
+    onClear: () => scala.Unit = null,
+    onFocus: () => scala.Unit = null,
     rightIconContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     searchIcon: IconNode = null,
     showLoading: js.UndefOr[scala.Boolean] = js.undefined
@@ -47,11 +47,11 @@ object SearchBarIOS {
     if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle.asInstanceOf[js.Any])
     if (leftIconContainerStyle != null) __obj.updateDynamic("leftIconContainerStyle")(leftIconContainerStyle.asInstanceOf[js.Any])
     if (loadingProps != null) __obj.updateDynamic("loadingProps")(loadingProps)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel)
-    if (onChangeText != null) __obj.updateDynamic("onChangeText")(onChangeText)
-    if (onClear != null) __obj.updateDynamic("onClear")(onClear)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
+    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction0(onCancel))
+    if (onChangeText != null) __obj.updateDynamic("onChangeText")(js.Any.fromFunction1(onChangeText))
+    if (onClear != null) __obj.updateDynamic("onClear")(js.Any.fromFunction0(onClear))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction0(onFocus))
     if (rightIconContainerStyle != null) __obj.updateDynamic("rightIconContainerStyle")(rightIconContainerStyle.asInstanceOf[js.Any])
     if (searchIcon != null) __obj.updateDynamic("searchIcon")(searchIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(showLoading)) __obj.updateDynamic("showLoading")(showLoading)

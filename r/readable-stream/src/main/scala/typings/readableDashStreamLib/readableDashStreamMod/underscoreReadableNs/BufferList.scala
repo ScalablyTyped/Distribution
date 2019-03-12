@@ -20,17 +20,17 @@ trait BufferList[D /* <: safeDashBufferLib.safeDashBufferMod.Buffer */] extends 
 object BufferList {
   @scala.inline
   def apply[D /* <: safeDashBufferLib.safeDashBufferMod.Buffer */](
-    clear: js.Function0[scala.Unit],
-    concat: js.Function1[scala.Double, D],
+    clear: () => scala.Unit,
+    concat: scala.Double => D,
     head: Entry[D],
-    join: js.Function1[js.Any, java.lang.String],
+    join: js.Any => java.lang.String,
     length: scala.Double,
-    push: js.Function1[D, scala.Unit],
-    shift: js.Function0[D],
+    push: D => scala.Unit,
+    shift: () => D,
     tail: Entry[D],
-    unshift: js.Function1[D, scala.Unit]
+    unshift: D => scala.Unit
   ): BufferList[D] = {
-    val __obj = js.Dynamic.literal(clear = clear, concat = concat, head = head, join = join, length = length, push = push, shift = shift, tail = tail, unshift = unshift)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), concat = js.Any.fromFunction1(concat), head = head, join = js.Any.fromFunction1(join), length = length, push = js.Any.fromFunction1(push), shift = js.Any.fromFunction0(shift), tail = tail, unshift = js.Any.fromFunction1(unshift))
   
     __obj.asInstanceOf[BufferList[D]]
   }

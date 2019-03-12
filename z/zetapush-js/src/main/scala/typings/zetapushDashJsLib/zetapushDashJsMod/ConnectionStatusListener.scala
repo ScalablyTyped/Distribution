@@ -21,18 +21,18 @@ trait ConnectionStatusListener extends js.Object {
 object ConnectionStatusListener {
   @scala.inline
   def apply(
-    onConnectionBroken: js.Function0[scala.Unit],
-    onConnectionClosed: js.Function0[scala.Unit],
-    onConnectionEstablished: js.Function0[scala.Unit],
-    onConnectionToServerFail: js.Function1[js.Any, scala.Unit],
-    onConnectionWillClose: js.Function0[scala.Unit],
-    onFailedHandshake: js.Function1[js.Any, scala.Unit],
-    onMessageLost: js.Function0[scala.Unit],
-    onNegotiationFailed: js.Function1[js.Any, scala.Unit],
-    onNoServerUrlAvailable: js.Function0[scala.Unit],
-    onSuccessfulHandshake: js.Function1[js.Any, scala.Unit]
+    onConnectionBroken: () => scala.Unit,
+    onConnectionClosed: () => scala.Unit,
+    onConnectionEstablished: () => scala.Unit,
+    onConnectionToServerFail: js.Any => scala.Unit,
+    onConnectionWillClose: () => scala.Unit,
+    onFailedHandshake: js.Any => scala.Unit,
+    onMessageLost: () => scala.Unit,
+    onNegotiationFailed: js.Any => scala.Unit,
+    onNoServerUrlAvailable: () => scala.Unit,
+    onSuccessfulHandshake: js.Any => scala.Unit
   ): ConnectionStatusListener = {
-    val __obj = js.Dynamic.literal(onConnectionBroken = onConnectionBroken, onConnectionClosed = onConnectionClosed, onConnectionEstablished = onConnectionEstablished, onConnectionToServerFail = onConnectionToServerFail, onConnectionWillClose = onConnectionWillClose, onFailedHandshake = onFailedHandshake, onMessageLost = onMessageLost, onNegotiationFailed = onNegotiationFailed, onNoServerUrlAvailable = onNoServerUrlAvailable, onSuccessfulHandshake = onSuccessfulHandshake)
+    val __obj = js.Dynamic.literal(onConnectionBroken = js.Any.fromFunction0(onConnectionBroken), onConnectionClosed = js.Any.fromFunction0(onConnectionClosed), onConnectionEstablished = js.Any.fromFunction0(onConnectionEstablished), onConnectionToServerFail = js.Any.fromFunction1(onConnectionToServerFail), onConnectionWillClose = js.Any.fromFunction0(onConnectionWillClose), onFailedHandshake = js.Any.fromFunction1(onFailedHandshake), onMessageLost = js.Any.fromFunction0(onMessageLost), onNegotiationFailed = js.Any.fromFunction1(onNegotiationFailed), onNoServerUrlAvailable = js.Any.fromFunction0(onNoServerUrlAvailable), onSuccessfulHandshake = js.Any.fromFunction1(onSuccessfulHandshake))
   
     __obj.asInstanceOf[ConnectionStatusListener]
   }

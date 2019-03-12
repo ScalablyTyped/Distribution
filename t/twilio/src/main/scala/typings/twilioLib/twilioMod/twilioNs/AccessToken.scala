@@ -21,16 +21,16 @@ object AccessToken {
   @scala.inline
   def apply(
     accountSid: java.lang.String,
-    addGrant: js.Function1[Grant, scala.Unit],
+    addGrant: Grant => scala.Unit,
     grants: js.Array[Grant],
     identity: java.lang.String,
     keySid: java.lang.String,
     nbf: scala.Double,
     secret: java.lang.String,
-    toJwt: js.Function1[java.lang.String, js.Any],
+    toJwt: java.lang.String => js.Any,
     ttl: scala.Double
   ): AccessToken = {
-    val __obj = js.Dynamic.literal(accountSid = accountSid, addGrant = addGrant, grants = grants, identity = identity, keySid = keySid, nbf = nbf, secret = secret, toJwt = toJwt, ttl = ttl)
+    val __obj = js.Dynamic.literal(accountSid = accountSid, addGrant = js.Any.fromFunction1(addGrant), grants = grants, identity = identity, keySid = keySid, nbf = nbf, secret = secret, toJwt = js.Any.fromFunction1(toJwt), ttl = ttl)
   
     __obj.asInstanceOf[AccessToken]
   }

@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class Style protected () extends js.Object {
   var AddIndent: scala.Boolean = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   @JSName("Borders")
   val Borders_Original: Borders = js.native
   val BuiltIn: scala.Boolean = js.native
   val Creator: XlCreator = js.native
   var `Excel.Style_typekey`: Style = js.native
-  val Font: Font = js.native
+  val Font: activexDashExcelLib.ExcelNs.Font = js.native
   var FormulaHidden: scala.Boolean = js.native
   var HorizontalAlignment: XlHAlign = js.native
   var IncludeAlignment: scala.Boolean = js.native
@@ -25,7 +25,7 @@ class Style protected () extends js.Object {
   var IncludePatterns: scala.Boolean = js.native
   var IncludeProtection: scala.Boolean = js.native
   var IndentLevel: scala.Double = js.native
-  val Interior: Interior = js.native
+  val Interior: activexDashExcelLib.ExcelNs.Interior = js.native
   var Locked: scala.Boolean = js.native
   var MergeCells: scala.Boolean = js.native
   val Name: java.lang.String = js.native

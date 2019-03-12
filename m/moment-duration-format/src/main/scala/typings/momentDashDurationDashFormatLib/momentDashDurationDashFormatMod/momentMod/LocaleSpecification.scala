@@ -28,12 +28,7 @@ object LocaleSpecification {
     durationLabelsLong: DurationLabelDef = null,
     durationLabelsShort: DurationLabelDef = null,
     durationLabelsStandard: DurationLabelDef = null,
-    durationPluralKey: js.Function3[
-      /* token */ java.lang.String, 
-      /* integerValue */ scala.Double, 
-      /* decimalValue */ scala.Double, 
-      java.lang.String
-    ] = null,
+    durationPluralKey: (/* token */ java.lang.String, /* integerValue */ scala.Double, /* decimalValue */ scala.Double) => java.lang.String = null,
     durationTimeTemplates: DurationTimeDef = null
   ): LocaleSpecification = {
     val __obj = js.Dynamic.literal()
@@ -41,7 +36,7 @@ object LocaleSpecification {
     if (durationLabelsLong != null) __obj.updateDynamic("durationLabelsLong")(durationLabelsLong)
     if (durationLabelsShort != null) __obj.updateDynamic("durationLabelsShort")(durationLabelsShort)
     if (durationLabelsStandard != null) __obj.updateDynamic("durationLabelsStandard")(durationLabelsStandard)
-    if (durationPluralKey != null) __obj.updateDynamic("durationPluralKey")(durationPluralKey)
+    if (durationPluralKey != null) __obj.updateDynamic("durationPluralKey")(js.Any.fromFunction3(durationPluralKey))
     if (durationTimeTemplates != null) __obj.updateDynamic("durationTimeTemplates")(durationTimeTemplates)
     __obj.asInstanceOf[LocaleSpecification]
   }

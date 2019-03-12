@@ -38,13 +38,13 @@ object QueryFieldInfo {
   def apply(
     alias: java.lang.String,
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     length: java.lang.String,
     name: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     `type`: java.lang.String
   ): QueryFieldInfo = {
-    val __obj = js.Dynamic.literal(alias = alias, constructor = constructor, hasOwnProperty = hasOwnProperty, length = length, name = name, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(alias = alias, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), length = length, name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[QueryFieldInfo]
   }

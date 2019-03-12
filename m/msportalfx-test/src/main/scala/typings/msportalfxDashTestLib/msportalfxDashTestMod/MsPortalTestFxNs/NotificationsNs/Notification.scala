@@ -15,23 +15,20 @@ object Notification {
   @scala.inline
   def apply(
     baseLocator: msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator,
-    click: js.Function0[qLib.qMod.QNs.Promise[scala.Unit]],
-    getAttribute: js.Function1[java.lang.String, qLib.qMod.QNs.Promise[java.lang.String]],
-    getDescription: js.Function0[qLib.qMod.QNs.Promise[java.lang.String]],
-    getLocator: js.Function0[msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator],
-    getText: js.Function0[qLib.qMod.QNs.Promise[java.lang.String]],
-    getTitle: js.Function0[qLib.qMod.QNs.Promise[java.lang.String]],
-    isDisplayed: js.Function0[qLib.qMod.QNs.Promise[scala.Boolean]],
-    isElementPresent: js.Function1[
-      msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator, 
-      qLib.qMod.QNs.Promise[scala.Boolean]
-    ],
-    isPresent: js.Function0[qLib.qMod.QNs.Promise[scala.Boolean]],
+    click: () => qLib.qMod.QNs.Promise[scala.Unit],
+    getAttribute: java.lang.String => qLib.qMod.QNs.Promise[java.lang.String],
+    getDescription: () => qLib.qMod.QNs.Promise[java.lang.String],
+    getLocator: () => msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator,
+    getText: () => qLib.qMod.QNs.Promise[java.lang.String],
+    getTitle: () => qLib.qMod.QNs.Promise[java.lang.String],
+    isDisplayed: () => qLib.qMod.QNs.Promise[scala.Boolean],
+    isElementPresent: msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator => qLib.qMod.QNs.Promise[scala.Boolean],
+    isPresent: () => qLib.qMod.QNs.Promise[scala.Boolean],
     parentLocator: msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator,
-    rightClick: js.Function0[qLib.qMod.QNs.Promise[scala.Unit]],
-    sendKeys: js.Function1[/* repeated */ java.lang.String, qLib.qMod.QNs.Promise[scala.Unit]]
+    rightClick: () => qLib.qMod.QNs.Promise[scala.Unit],
+    sendKeys: /* repeated */ java.lang.String => qLib.qMod.QNs.Promise[scala.Unit]
   ): Notification = {
-    val __obj = js.Dynamic.literal(baseLocator = baseLocator, click = click, getAttribute = getAttribute, getDescription = getDescription, getLocator = getLocator, getText = getText, getTitle = getTitle, isDisplayed = isDisplayed, isElementPresent = isElementPresent, isPresent = isPresent, parentLocator = parentLocator, rightClick = rightClick, sendKeys = sendKeys)
+    val __obj = js.Dynamic.literal(baseLocator = baseLocator, click = js.Any.fromFunction0(click), getAttribute = js.Any.fromFunction1(getAttribute), getDescription = js.Any.fromFunction0(getDescription), getLocator = js.Any.fromFunction0(getLocator), getText = js.Any.fromFunction0(getText), getTitle = js.Any.fromFunction0(getTitle), isDisplayed = js.Any.fromFunction0(isDisplayed), isElementPresent = js.Any.fromFunction1(isElementPresent), isPresent = js.Any.fromFunction0(isPresent), parentLocator = parentLocator, rightClick = js.Any.fromFunction0(rightClick), sendKeys = js.Any.fromFunction1(sendKeys))
   
     __obj.asInstanceOf[Notification]
   }

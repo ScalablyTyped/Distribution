@@ -66,17 +66,17 @@ trait CheckUtil extends js.Object {
 object CheckUtil {
   @scala.inline
   def apply(
-    isArray: js.Function1[js.Any, scala.Boolean],
-    isBlank: js.Function1[js.Any, scala.Boolean],
-    isBoolAttr: js.Function1[java.lang.String, scala.Boolean],
-    isFunction: js.Function1[js.Any, scala.Boolean],
-    isObject: js.Function1[js.Any, scala.Boolean],
-    isReservedName: js.Function1[java.lang.String, scala.Boolean],
-    isString: js.Function1[js.Any, /* is string */ scala.Boolean],
-    isUndefined: js.Function1[js.Any, scala.Boolean],
-    isWritable: js.Function2[js.Any, java.lang.String, scala.Boolean]
+    isArray: js.Any => scala.Boolean,
+    isBlank: js.Any => scala.Boolean,
+    isBoolAttr: java.lang.String => scala.Boolean,
+    isFunction: js.Any => scala.Boolean,
+    isObject: js.Any => scala.Boolean,
+    isReservedName: java.lang.String => scala.Boolean,
+    isString: js.Any => /* is string */ scala.Boolean,
+    isUndefined: js.Any => scala.Boolean,
+    isWritable: (js.Any, java.lang.String) => scala.Boolean
   ): CheckUtil = {
-    val __obj = js.Dynamic.literal(isArray = isArray, isBlank = isBlank, isBoolAttr = isBoolAttr, isFunction = isFunction, isObject = isObject, isReservedName = isReservedName, isString = isString, isUndefined = isUndefined, isWritable = isWritable)
+    val __obj = js.Dynamic.literal(isArray = js.Any.fromFunction1(isArray), isBlank = js.Any.fromFunction1(isBlank), isBoolAttr = js.Any.fromFunction1(isBoolAttr), isFunction = js.Any.fromFunction1(isFunction), isObject = js.Any.fromFunction1(isObject), isReservedName = js.Any.fromFunction1(isReservedName), isString = js.Any.fromFunction1(isString), isUndefined = js.Any.fromFunction1(isUndefined), isWritable = js.Any.fromFunction2(isWritable))
   
     __obj.asInstanceOf[CheckUtil]
   }

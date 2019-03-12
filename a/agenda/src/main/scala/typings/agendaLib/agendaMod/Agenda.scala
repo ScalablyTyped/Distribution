@@ -63,7 +63,7 @@ trait Agenda
     name: java.lang.String,
     handler: js.Function2[
       /* job */ agendaLib.agendaMod.AgendaNs.Job[T], 
-      /* done */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
+      /* done */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -72,7 +72,7 @@ trait Agenda
     options: agendaLib.agendaMod.AgendaNs.JobOptions,
     handler: js.Function2[
       /* job */ agendaLib.agendaMod.AgendaNs.Job[T], 
-      /* done */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
+      /* done */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): scala.Unit = js.native

@@ -8,11 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/applicationloadbalancing/getTargetGroup", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def getTargetGroup(): js.Promise[atPulumiAwsLib.applicationloadbalancingGetTargetGroupMod.GetTargetGroupResult] = js.native
-  def getTargetGroup(args: atPulumiAwsLib.applicationloadbalancingGetTargetGroupMod.GetTargetGroupArgs): js.Promise[atPulumiAwsLib.applicationloadbalancingGetTargetGroupMod.GetTargetGroupResult] = js.native
-  def getTargetGroup(
-    args: atPulumiAwsLib.applicationloadbalancingGetTargetGroupMod.GetTargetGroupArgs,
-    opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.applicationloadbalancingGetTargetGroupMod.GetTargetGroupResult] = js.native
+  def getTargetGroup(): js.Promise[GetTargetGroupResult] = js.native
+  def getTargetGroup(args: GetTargetGroupArgs): js.Promise[GetTargetGroupResult] = js.native
+  def getTargetGroup(args: GetTargetGroupArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[GetTargetGroupResult] = js.native
 }
 

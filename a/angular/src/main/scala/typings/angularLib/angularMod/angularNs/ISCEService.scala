@@ -33,30 +33,26 @@ trait ISCEService extends js.Object {
 object ISCEService {
   @scala.inline
   def apply(
-    getTrusted: js.Function2[java.lang.String, js.Any, js.Any],
-    getTrustedCss: js.Function1[js.Any, js.Any],
-    getTrustedHtml: js.Function1[js.Any, js.Any],
-    getTrustedJs: js.Function1[js.Any, js.Any],
-    getTrustedResourceUrl: js.Function1[js.Any, js.Any],
-    getTrustedUrl: js.Function1[js.Any, js.Any],
-    isEnabled: js.Function0[scala.Boolean],
-    parse: js.Function2[
-      java.lang.String, 
-      java.lang.String, 
-      js.Function2[/* context */ js.Any, /* locals */ js.Any, _]
-    ],
-    parseAsCss: js.Function1[java.lang.String, js.Function2[/* context */ js.Any, /* locals */ js.Any, _]],
-    parseAsHtml: js.Function1[java.lang.String, js.Function2[/* context */ js.Any, /* locals */ js.Any, _]],
-    parseAsJs: js.Function1[java.lang.String, js.Function2[/* context */ js.Any, /* locals */ js.Any, _]],
-    parseAsResourceUrl: js.Function1[java.lang.String, js.Function2[/* context */ js.Any, /* locals */ js.Any, _]],
-    parseAsUrl: js.Function1[java.lang.String, js.Function2[/* context */ js.Any, /* locals */ js.Any, _]],
-    trustAs: js.Function2[java.lang.String, js.Any, js.Any],
-    trustAsHtml: js.Function1[js.Any, js.Any],
-    trustAsJs: js.Function1[js.Any, js.Any],
-    trustAsResourceUrl: js.Function1[js.Any, js.Any],
-    trustAsUrl: js.Function1[js.Any, js.Any]
+    getTrusted: (java.lang.String, js.Any) => js.Any,
+    getTrustedCss: js.Any => js.Any,
+    getTrustedHtml: js.Any => js.Any,
+    getTrustedJs: js.Any => js.Any,
+    getTrustedResourceUrl: js.Any => js.Any,
+    getTrustedUrl: js.Any => js.Any,
+    isEnabled: () => scala.Boolean,
+    parse: (java.lang.String, java.lang.String) => js.Function2[/* context */ js.Any, /* locals */ js.Any, _],
+    parseAsCss: java.lang.String => js.Function2[/* context */ js.Any, /* locals */ js.Any, _],
+    parseAsHtml: java.lang.String => js.Function2[/* context */ js.Any, /* locals */ js.Any, _],
+    parseAsJs: java.lang.String => js.Function2[/* context */ js.Any, /* locals */ js.Any, _],
+    parseAsResourceUrl: java.lang.String => js.Function2[/* context */ js.Any, /* locals */ js.Any, _],
+    parseAsUrl: java.lang.String => js.Function2[/* context */ js.Any, /* locals */ js.Any, _],
+    trustAs: (java.lang.String, js.Any) => js.Any,
+    trustAsHtml: js.Any => js.Any,
+    trustAsJs: js.Any => js.Any,
+    trustAsResourceUrl: js.Any => js.Any,
+    trustAsUrl: js.Any => js.Any
   ): ISCEService = {
-    val __obj = js.Dynamic.literal(getTrusted = getTrusted, getTrustedCss = getTrustedCss, getTrustedHtml = getTrustedHtml, getTrustedJs = getTrustedJs, getTrustedResourceUrl = getTrustedResourceUrl, getTrustedUrl = getTrustedUrl, isEnabled = isEnabled, parse = parse, parseAsCss = parseAsCss, parseAsHtml = parseAsHtml, parseAsJs = parseAsJs, parseAsResourceUrl = parseAsResourceUrl, parseAsUrl = parseAsUrl, trustAs = trustAs, trustAsHtml = trustAsHtml, trustAsJs = trustAsJs, trustAsResourceUrl = trustAsResourceUrl, trustAsUrl = trustAsUrl)
+    val __obj = js.Dynamic.literal(getTrusted = js.Any.fromFunction2(getTrusted), getTrustedCss = js.Any.fromFunction1(getTrustedCss), getTrustedHtml = js.Any.fromFunction1(getTrustedHtml), getTrustedJs = js.Any.fromFunction1(getTrustedJs), getTrustedResourceUrl = js.Any.fromFunction1(getTrustedResourceUrl), getTrustedUrl = js.Any.fromFunction1(getTrustedUrl), isEnabled = js.Any.fromFunction0(isEnabled), parse = js.Any.fromFunction2(parse), parseAsCss = js.Any.fromFunction1(parseAsCss), parseAsHtml = js.Any.fromFunction1(parseAsHtml), parseAsJs = js.Any.fromFunction1(parseAsJs), parseAsResourceUrl = js.Any.fromFunction1(parseAsResourceUrl), parseAsUrl = js.Any.fromFunction1(parseAsUrl), trustAs = js.Any.fromFunction2(trustAs), trustAsHtml = js.Any.fromFunction1(trustAsHtml), trustAsJs = js.Any.fromFunction1(trustAsJs), trustAsResourceUrl = js.Any.fromFunction1(trustAsResourceUrl), trustAsUrl = js.Any.fromFunction1(trustAsUrl))
   
     __obj.asInstanceOf[ISCEService]
   }

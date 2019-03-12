@@ -5,24 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReplaceRetWithRet extends js.Object {
-  var in: js.Function1[/* collection */ js.Any, ReplaceExpression]
-  var in_ : js.Function1[/* collection */ js.Any, ReplaceExpression]
-  def into(collection: js.Any): ReplaceExpression
-  def `with`(collection: js.Any): ReplaceRetWithRet
-}
-
-object ReplaceRetWithRet {
-  @scala.inline
-  def apply(
-    in: js.Function1[/* collection */ js.Any, ReplaceExpression],
-    in_ : js.Function1[/* collection */ js.Any, ReplaceExpression],
-    into: js.Function1[js.Any, ReplaceExpression],
-    `with`: js.Function1[js.Any, ReplaceRetWithRet]
-  ): ReplaceRetWithRet = {
-    val __obj = js.Dynamic.literal(in = in, in_ = in_, into = into)
-    __obj.updateDynamic("with")(`with`)
-    __obj.asInstanceOf[ReplaceRetWithRet]
-  }
+  @JSName("in")
+  var in_Original: js.Function1[/* collection */ js.Any, ReplaceExpression] = js.native
+  @JSName("in_")
+  var in__Original: js.Function1[/* collection */ js.Any, ReplaceExpression] = js.native
+  def in(collection: js.Any): ReplaceExpression = js.native
+  def in_(collection: js.Any): ReplaceExpression = js.native
+  def into(collection: js.Any): ReplaceExpression = js.native
+  def `with`(collection: js.Any): ReplaceRetWithRet = js.native
 }
 

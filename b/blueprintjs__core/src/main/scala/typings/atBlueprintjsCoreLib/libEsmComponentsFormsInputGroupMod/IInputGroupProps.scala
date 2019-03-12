@@ -16,7 +16,7 @@ trait IInputGroupProps
     */
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   /** Ref handler that receives HTML `<input>` element backing this component. */
-  var inputRef: js.UndefOr[js.Function1[/* ref */ reactLib.HTMLInputElement | scala.Null, _]] = js.undefined
+  var inputRef: js.UndefOr[js.Function1[/* ref */ stdLib.HTMLInputElement | scala.Null, _]] = js.undefined
   /** Whether this input should use large styles. */
   var large: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -50,11 +50,11 @@ object IInputGroupProps {
     className: java.lang.String = null,
     defaultValue: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    inputRef: js.Function1[/* ref */ reactLib.HTMLInputElement | scala.Null, _] = null,
+    inputRef: /* ref */ stdLib.HTMLInputElement | scala.Null => _ = null,
     intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
     large: js.UndefOr[scala.Boolean] = js.undefined,
     leftIcon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
-    onChange: reactLib.reactMod.ReactNs.FormEventHandler[reactLib.HTMLElement] = null,
+    onChange: reactLib.reactMod.ReactNs.FormEventHandler[stdLib.HTMLElement] = null,
     placeholder: java.lang.String = null,
     rightElement: reactLib.reactMod.Global.JSXNs.Element = null,
     round: js.UndefOr[scala.Boolean] = js.undefined,
@@ -66,7 +66,7 @@ object IInputGroupProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef)
+    if (inputRef != null) __obj.updateDynamic("inputRef")(js.Any.fromFunction1(inputRef))
     if (intent != null) __obj.updateDynamic("intent")(intent)
     if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
     if (leftIcon != null) __obj.updateDynamic("leftIcon")(leftIcon.asInstanceOf[js.Any])

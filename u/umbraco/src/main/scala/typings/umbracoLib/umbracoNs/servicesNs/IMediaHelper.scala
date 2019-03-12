@@ -132,17 +132,17 @@ trait IMediaHelper extends js.Object {
 object IMediaHelper {
   @scala.inline
   def apply(
-    detectIfImageByExtension: js.Function1[java.lang.String, scala.Boolean],
-    formatFileTypes: js.Function1[java.lang.String, java.lang.String],
-    getImagePropertyValue: js.Function1[IMediaOptions, java.lang.String],
-    getMediaPropertyValue: js.Function1[IMediaOptions, java.lang.String],
-    getThumbnail: js.Function1[IMediaOptions, java.lang.String],
-    getThumbnailFromPath: js.Function1[java.lang.String, java.lang.String],
-    resolveFile: js.Function2[IMediaEntity, scala.Boolean, java.lang.String],
-    resolveFileFromEntity: js.Function2[IMediaEntity, scala.Boolean, java.lang.String],
-    scaleToMaxSize: js.Function3[scala.Double, scala.Double, scala.Double, js.Any]
+    detectIfImageByExtension: java.lang.String => scala.Boolean,
+    formatFileTypes: java.lang.String => java.lang.String,
+    getImagePropertyValue: IMediaOptions => java.lang.String,
+    getMediaPropertyValue: IMediaOptions => java.lang.String,
+    getThumbnail: IMediaOptions => java.lang.String,
+    getThumbnailFromPath: java.lang.String => java.lang.String,
+    resolveFile: (IMediaEntity, scala.Boolean) => java.lang.String,
+    resolveFileFromEntity: (IMediaEntity, scala.Boolean) => java.lang.String,
+    scaleToMaxSize: (scala.Double, scala.Double, scala.Double) => js.Any
   ): IMediaHelper = {
-    val __obj = js.Dynamic.literal(detectIfImageByExtension = detectIfImageByExtension, formatFileTypes = formatFileTypes, getImagePropertyValue = getImagePropertyValue, getMediaPropertyValue = getMediaPropertyValue, getThumbnail = getThumbnail, getThumbnailFromPath = getThumbnailFromPath, resolveFile = resolveFile, resolveFileFromEntity = resolveFileFromEntity, scaleToMaxSize = scaleToMaxSize)
+    val __obj = js.Dynamic.literal(detectIfImageByExtension = js.Any.fromFunction1(detectIfImageByExtension), formatFileTypes = js.Any.fromFunction1(formatFileTypes), getImagePropertyValue = js.Any.fromFunction1(getImagePropertyValue), getMediaPropertyValue = js.Any.fromFunction1(getMediaPropertyValue), getThumbnail = js.Any.fromFunction1(getThumbnail), getThumbnailFromPath = js.Any.fromFunction1(getThumbnailFromPath), resolveFile = js.Any.fromFunction2(resolveFile), resolveFileFromEntity = js.Any.fromFunction2(resolveFileFromEntity), scaleToMaxSize = js.Any.fromFunction3(scaleToMaxSize))
   
     __obj.asInstanceOf[IMediaHelper]
   }

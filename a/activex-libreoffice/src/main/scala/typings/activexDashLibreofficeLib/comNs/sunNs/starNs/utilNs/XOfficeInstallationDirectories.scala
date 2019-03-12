@@ -64,15 +64,15 @@ object XOfficeInstallationDirectories {
   def apply(
     OfficeInstallationDirectoryURL: java.lang.String,
     OfficeUserDataDirectoryURL: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getOfficeInstallationDirectoryURL: js.Function0[java.lang.String],
-    getOfficeUserDataDirectoryURL: js.Function0[java.lang.String],
-    makeAbsoluteURL: js.Function1[java.lang.String, java.lang.String],
-    makeRelocatableURL: js.Function1[java.lang.String, java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getOfficeInstallationDirectoryURL: () => java.lang.String,
+    getOfficeUserDataDirectoryURL: () => java.lang.String,
+    makeAbsoluteURL: java.lang.String => java.lang.String,
+    makeRelocatableURL: java.lang.String => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XOfficeInstallationDirectories = {
-    val __obj = js.Dynamic.literal(OfficeInstallationDirectoryURL = OfficeInstallationDirectoryURL, OfficeUserDataDirectoryURL = OfficeUserDataDirectoryURL, acquire = acquire, getOfficeInstallationDirectoryURL = getOfficeInstallationDirectoryURL, getOfficeUserDataDirectoryURL = getOfficeUserDataDirectoryURL, makeAbsoluteURL = makeAbsoluteURL, makeRelocatableURL = makeRelocatableURL, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(OfficeInstallationDirectoryURL = OfficeInstallationDirectoryURL, OfficeUserDataDirectoryURL = OfficeUserDataDirectoryURL, acquire = js.Any.fromFunction0(acquire), getOfficeInstallationDirectoryURL = js.Any.fromFunction0(getOfficeInstallationDirectoryURL), getOfficeUserDataDirectoryURL = js.Any.fromFunction0(getOfficeUserDataDirectoryURL), makeAbsoluteURL = js.Any.fromFunction1(makeAbsoluteURL), makeRelocatableURL = js.Any.fromFunction1(makeRelocatableURL), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XOfficeInstallationDirectories]
   }

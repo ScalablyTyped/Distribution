@@ -17,14 +17,14 @@ trait BaseOptions[R, E] extends js.Object {
 object BaseOptions {
   @scala.inline
   def apply[R, E](
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
-    fail: js.Function1[/* res */ E, scala.Unit] = null,
-    success: js.Function1[/* res */ R, scala.Unit] = null
+    complete: /* res */ js.Any => scala.Unit = null,
+    fail: /* res */ E => scala.Unit = null,
+    success: /* res */ R => scala.Unit = null
   ): BaseOptions[R, E] = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[BaseOptions[R, E]]
   }
 }

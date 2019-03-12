@@ -23,20 +23,20 @@ trait GlideElementDescriptor extends js.Object {
 object GlideElementDescriptor {
   @scala.inline
   def apply(
-    getAttachmentEncryptionType: js.Function0[java.lang.String],
-    getEncryptionType: js.Function0[java.lang.String],
-    getInternalType: js.Function0[java.lang.String],
-    getLabel: js.Function0[java.lang.String],
-    getLength: js.Function0[scala.Double],
-    getName: js.Function0[java.lang.String],
-    getPlural: js.Function0[scala.Boolean],
-    hasAttachmentsEncrypted: js.Function0[scala.Boolean],
-    isAutoOrSysID: js.Function0[scala.Boolean],
-    isChoiceTable: js.Function0[scala.Boolean],
-    isEdgeEncrypted: js.Function0[scala.Boolean],
-    isVirtual: js.Function0[scala.Boolean]
+    getAttachmentEncryptionType: () => java.lang.String,
+    getEncryptionType: () => java.lang.String,
+    getInternalType: () => java.lang.String,
+    getLabel: () => java.lang.String,
+    getLength: () => scala.Double,
+    getName: () => java.lang.String,
+    getPlural: () => scala.Boolean,
+    hasAttachmentsEncrypted: () => scala.Boolean,
+    isAutoOrSysID: () => scala.Boolean,
+    isChoiceTable: () => scala.Boolean,
+    isEdgeEncrypted: () => scala.Boolean,
+    isVirtual: () => scala.Boolean
   ): GlideElementDescriptor = {
-    val __obj = js.Dynamic.literal(getAttachmentEncryptionType = getAttachmentEncryptionType, getEncryptionType = getEncryptionType, getInternalType = getInternalType, getLabel = getLabel, getLength = getLength, getName = getName, getPlural = getPlural, hasAttachmentsEncrypted = hasAttachmentsEncrypted, isAutoOrSysID = isAutoOrSysID, isChoiceTable = isChoiceTable, isEdgeEncrypted = isEdgeEncrypted, isVirtual = isVirtual)
+    val __obj = js.Dynamic.literal(getAttachmentEncryptionType = js.Any.fromFunction0(getAttachmentEncryptionType), getEncryptionType = js.Any.fromFunction0(getEncryptionType), getInternalType = js.Any.fromFunction0(getInternalType), getLabel = js.Any.fromFunction0(getLabel), getLength = js.Any.fromFunction0(getLength), getName = js.Any.fromFunction0(getName), getPlural = js.Any.fromFunction0(getPlural), hasAttachmentsEncrypted = js.Any.fromFunction0(hasAttachmentsEncrypted), isAutoOrSysID = js.Any.fromFunction0(isAutoOrSysID), isChoiceTable = js.Any.fromFunction0(isChoiceTable), isEdgeEncrypted = js.Any.fromFunction0(isEdgeEncrypted), isVirtual = js.Any.fromFunction0(isVirtual))
   
     __obj.asInstanceOf[GlideElementDescriptor]
   }

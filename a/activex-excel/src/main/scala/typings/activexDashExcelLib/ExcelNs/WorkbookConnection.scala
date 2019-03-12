@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.WorkbookConnection")
 @js.native
 class WorkbookConnection protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Creator: XlCreator = js.native
   var Description: java.lang.String = js.native
   var `Excel.WorkbookConnection_typekey`: WorkbookConnection = js.native
   var Name: java.lang.String = js.native
-  val ODBCConnection: ODBCConnection = js.native
-  val OLEDBConnection: OLEDBConnection = js.native
+  val ODBCConnection: activexDashExcelLib.ExcelNs.ODBCConnection = js.native
+  val OLEDBConnection: activexDashExcelLib.ExcelNs.OLEDBConnection = js.native
   val Parent: js.Any = js.native
   @JSName("Ranges")
   val Ranges_Original: Ranges = js.native

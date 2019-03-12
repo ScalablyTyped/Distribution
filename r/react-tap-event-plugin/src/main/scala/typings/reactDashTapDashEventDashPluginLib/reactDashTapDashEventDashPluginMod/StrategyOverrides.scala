@@ -18,14 +18,10 @@ trait StrategyOverrides extends js.Object {
 object StrategyOverrides {
   @scala.inline
   def apply(
-    shouldRejectClick: js.Function2[
-      /* lastTouchEventTimestamp */ stdLib.Date, 
-      /* clickEventTimestamp */ stdLib.Date, 
-      scala.Boolean
-    ] = null
+    shouldRejectClick: (/* lastTouchEventTimestamp */ stdLib.Date, /* clickEventTimestamp */ stdLib.Date) => scala.Boolean = null
   ): StrategyOverrides = {
     val __obj = js.Dynamic.literal()
-    if (shouldRejectClick != null) __obj.updateDynamic("shouldRejectClick")(shouldRejectClick)
+    if (shouldRejectClick != null) __obj.updateDynamic("shouldRejectClick")(js.Any.fromFunction2(shouldRejectClick))
     __obj.asInstanceOf[StrategyOverrides]
   }
 }

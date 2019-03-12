@@ -15,16 +15,16 @@ trait LifecycleHooks extends js.Object {
 object LifecycleHooks {
   @scala.inline
   def apply(
-    destroyed: js.Function0[scala.Unit] = null,
-    init: js.Function0[scala.Unit] = null,
-    mounted: js.Function0[scala.Unit] = null,
-    updated: js.Function0[scala.Unit] = null
+    destroyed: () => scala.Unit = null,
+    init: () => scala.Unit = null,
+    mounted: () => scala.Unit = null,
+    updated: () => scala.Unit = null
   ): LifecycleHooks = {
     val __obj = js.Dynamic.literal()
-    if (destroyed != null) __obj.updateDynamic("destroyed")(destroyed)
-    if (init != null) __obj.updateDynamic("init")(init)
-    if (mounted != null) __obj.updateDynamic("mounted")(mounted)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (destroyed != null) __obj.updateDynamic("destroyed")(js.Any.fromFunction0(destroyed))
+    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction0(init))
+    if (mounted != null) __obj.updateDynamic("mounted")(js.Any.fromFunction0(mounted))
+    if (updated != null) __obj.updateDynamic("updated")(js.Any.fromFunction0(updated))
     __obj.asInstanceOf[LifecycleHooks]
   }
 }

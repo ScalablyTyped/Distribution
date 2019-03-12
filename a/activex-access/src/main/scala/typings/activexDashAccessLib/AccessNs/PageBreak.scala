@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PageBreak protected () extends js.Object {
   var `Access.PageBreak_typekey`: PageBreak = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   var ControlName: java.lang.String = js.native
   var ControlType: scala.Double = js.native
   var EventProcPrefix: java.lang.String = js.native

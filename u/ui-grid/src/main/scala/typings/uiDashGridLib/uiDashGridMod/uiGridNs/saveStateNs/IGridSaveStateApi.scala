@@ -23,10 +23,10 @@ trait IGridSaveStateApi extends js.Object {
 object IGridSaveStateApi {
   @scala.inline
   def apply(
-    restore: js.Function2[angularLib.angularMod.angularNs.IScope, IGridSavedState, scala.Unit],
-    save: js.Function0[IGridSavedState]
+    restore: (angularLib.angularMod.angularNs.IScope, IGridSavedState) => scala.Unit,
+    save: () => IGridSavedState
   ): IGridSaveStateApi = {
-    val __obj = js.Dynamic.literal(restore = restore, save = save)
+    val __obj = js.Dynamic.literal(restore = js.Any.fromFunction2(restore), save = js.Any.fromFunction0(save))
   
     __obj.asInstanceOf[IGridSaveStateApi]
   }

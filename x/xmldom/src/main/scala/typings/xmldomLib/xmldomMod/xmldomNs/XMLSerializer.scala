@@ -11,8 +11,8 @@ trait XMLSerializer extends js.Object {
 
 object XMLSerializer {
   @scala.inline
-  def apply(serializeToString: js.Function1[stdLib.Node, java.lang.String]): XMLSerializer = {
-    val __obj = js.Dynamic.literal(serializeToString = serializeToString)
+  def apply(serializeToString: stdLib.Node => java.lang.String): XMLSerializer = {
+    val __obj = js.Dynamic.literal(serializeToString = js.Any.fromFunction1(serializeToString))
   
     __obj.asInstanceOf[XMLSerializer]
   }

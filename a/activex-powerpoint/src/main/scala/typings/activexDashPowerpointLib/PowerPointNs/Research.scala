@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.Research")
 @js.native
 class Research protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   val Parent: js.Any = js.native
   var `PowerPoint.Research_typekey`: Research = js.native
   def IsResearchService(ServiceID: java.lang.String): scala.Boolean = js.native

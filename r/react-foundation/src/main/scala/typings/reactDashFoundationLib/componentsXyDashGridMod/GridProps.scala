@@ -300,7 +300,7 @@ object GridProps {
   @scala.inline
   def apply(
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
     collapseOnLarge: reactDashFoundationLib.enumsMod.GutterTypes = null,
     collapseOnMedium: reactDashFoundationLib.enumsMod.GutterTypes = null,
     collapseOnSmall: reactDashFoundationLib.enumsMod.GutterTypes = null,

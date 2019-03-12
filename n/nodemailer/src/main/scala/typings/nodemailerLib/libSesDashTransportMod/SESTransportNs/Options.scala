@@ -40,7 +40,7 @@ object Options {
     list: nodemailerLib.libMailerMod.MailNs.ListHeaders = null,
     maxConnections: scala.Int | scala.Double = null,
     messageId: java.lang.String = null,
-    normalizeHeaderKey: js.Function1[/* key */ java.lang.String, java.lang.String] = null,
+    normalizeHeaderKey: /* key */ java.lang.String => java.lang.String = null,
     raw: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | nodemailerLib.libMailerMod.MailNs.AttachmentLike = null,
     references: java.lang.String | js.Array[java.lang.String] = null,
     replyTo: java.lang.String | nodemailerLib.libMailerMod.MailNs.Address = null,
@@ -73,7 +73,7 @@ object Options {
     if (list != null) __obj.updateDynamic("list")(list)
     if (maxConnections != null) __obj.updateDynamic("maxConnections")(maxConnections.asInstanceOf[js.Any])
     if (messageId != null) __obj.updateDynamic("messageId")(messageId)
-    if (normalizeHeaderKey != null) __obj.updateDynamic("normalizeHeaderKey")(normalizeHeaderKey)
+    if (normalizeHeaderKey != null) __obj.updateDynamic("normalizeHeaderKey")(js.Any.fromFunction1(normalizeHeaderKey))
     if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
     if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo.asInstanceOf[js.Any])

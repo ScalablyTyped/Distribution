@@ -12,5 +12,7 @@ class SubscriptionClient protected ()
   def this(url: java.lang.String) = this()
   def this(url: java.lang.String, options: subscriptionsDashTransportDashWsLib.distClientMod.ClientOptions) = this()
   def this(url: java.lang.String, options: subscriptionsDashTransportDashWsLib.distClientMod.ClientOptions, webSocketImpl: js.Any) = this()
+  def this(url: java.lang.String, options: subscriptionsDashTransportDashWsLib.distClientMod.ClientOptions, webSocketImpl: js.Any, webSocketProtocols: java.lang.String) = this()
+  def this(url: java.lang.String, options: subscriptionsDashTransportDashWsLib.distClientMod.ClientOptions, webSocketImpl: js.Any, webSocketProtocols: js.Array[java.lang.String]) = this()
 }
 

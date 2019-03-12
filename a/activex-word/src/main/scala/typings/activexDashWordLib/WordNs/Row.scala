@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class Row protected () extends js.Object {
   var Alignment: WdRowAlignment = js.native
   var AllowBreakAcrossPages: scala.Double = js.native
-  val Application: Application = js.native
-  var Borders: Borders = js.native
-  val Cells: Cells = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
+  var Borders: activexDashWordLib.WordNs.Borders = js.native
+  val Cells: activexDashWordLib.WordNs.Cells = js.native
   val Creator: scala.Double = js.native
   var HeadingFormat: scala.Double = js.native
   var Height: scala.Double = js.native
@@ -26,8 +26,8 @@ class Row protected () extends js.Object {
   val Next: Row = js.native
   val Parent: js.Any = js.native
   val Previous: Row = js.native
-  val Range: Range = js.native
-  val Shading: Shading = js.native
+  val Range: activexDashWordLib.WordNs.Range = js.native
+  val Shading: activexDashWordLib.WordNs.Shading = js.native
   var SpaceBetweenColumns: scala.Double = js.native
   var `Word.Row_typekey`: Row = js.native
   def ConvertToText(): Range = js.native

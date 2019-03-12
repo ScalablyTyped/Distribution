@@ -23,7 +23,7 @@ object Merge {
   @scala.inline
   def apply(
     key: PlainValue,
-    toJSON: js.Function0[js.Any],
+    toJSON: () => js.Any,
     `type`: yamlLib.yamlLibStrings.MERGE_PAIR,
     value: SeqBase,
     comment: java.lang.String = null,
@@ -32,7 +32,7 @@ object Merge {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     tag: java.lang.String = null
   ): Merge = {
-    val __obj = js.Dynamic.literal(key = key, toJSON = toJSON, value = value)
+    val __obj = js.Dynamic.literal(key = key, toJSON = js.Any.fromFunction0(toJSON), value = value)
     __obj.updateDynamic("type")(`type`)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore)

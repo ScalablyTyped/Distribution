@@ -24,12 +24,12 @@ object XPrintSettingsSupplier {
   @scala.inline
   def apply(
     PrintSettings: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
-    acquire: js.Function0[scala.Unit],
-    getPrintSettings: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getPrintSettings: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XPrintSettingsSupplier = {
-    val __obj = js.Dynamic.literal(PrintSettings = PrintSettings, acquire = acquire, getPrintSettings = getPrintSettings, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(PrintSettings = PrintSettings, acquire = js.Any.fromFunction0(acquire), getPrintSettings = js.Any.fromFunction0(getPrintSettings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XPrintSettingsSupplier]
   }

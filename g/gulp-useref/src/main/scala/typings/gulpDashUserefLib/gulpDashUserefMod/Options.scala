@@ -22,7 +22,7 @@ object Options {
     noAssets: js.UndefOr[scala.Boolean] = js.undefined,
     noconcat: js.UndefOr[scala.Boolean] = js.undefined,
     searchPath: java.lang.String | js.Array[java.lang.String] = null,
-    transformPath: js.Function1[/* filePath */ java.lang.String, scala.Unit] = null
+    transformPath: /* filePath */ java.lang.String => scala.Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (additionalStreams != null) __obj.updateDynamic("additionalStreams")(additionalStreams)
@@ -30,7 +30,7 @@ object Options {
     if (!js.isUndefined(noAssets)) __obj.updateDynamic("noAssets")(noAssets)
     if (!js.isUndefined(noconcat)) __obj.updateDynamic("noconcat")(noconcat)
     if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath.asInstanceOf[js.Any])
-    if (transformPath != null) __obj.updateDynamic("transformPath")(transformPath)
+    if (transformPath != null) __obj.updateDynamic("transformPath")(js.Any.fromFunction1(transformPath))
     __obj.asInstanceOf[Options]
   }
 }

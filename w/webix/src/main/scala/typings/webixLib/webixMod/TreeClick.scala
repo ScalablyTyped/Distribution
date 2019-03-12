@@ -14,11 +14,11 @@ trait TreeClick extends js.Object {
 object TreeClick {
   @scala.inline
   def apply(
-    webix_tree_checkbox: js.Function2[js.Any, org.scalablytyped.runtime.StringDictionary[js.Any], java.lang.String],
-    webix_tree_close: js.Function2[js.Any, org.scalablytyped.runtime.StringDictionary[js.Any], java.lang.String],
-    webix_tree_open: js.Function2[js.Any, org.scalablytyped.runtime.StringDictionary[js.Any], java.lang.String]
+    webix_tree_checkbox: (js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]) => java.lang.String,
+    webix_tree_close: (js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]) => java.lang.String,
+    webix_tree_open: (js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]) => java.lang.String
   ): TreeClick = {
-    val __obj = js.Dynamic.literal(webix_tree_checkbox = webix_tree_checkbox, webix_tree_close = webix_tree_close, webix_tree_open = webix_tree_open)
+    val __obj = js.Dynamic.literal(webix_tree_checkbox = js.Any.fromFunction2(webix_tree_checkbox), webix_tree_close = js.Any.fromFunction2(webix_tree_close), webix_tree_open = js.Any.fromFunction2(webix_tree_open))
   
     __obj.asInstanceOf[TreeClick]
   }

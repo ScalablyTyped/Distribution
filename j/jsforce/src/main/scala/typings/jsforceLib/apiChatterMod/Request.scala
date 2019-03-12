@@ -16,6 +16,6 @@ class Request[T] protected ()
   def promise(): js.Promise[T] = js.native
   def stream(): nodeLib.streamMod.Stream = js.native
   def thenCall(): jsforceLib.queryMod.Query[T] = js.native
-  def thenCall(callback: js.Function2[/* err */ nodeLib.Error, /* records */ T, scala.Unit]): jsforceLib.queryMod.Query[T] = js.native
+  def thenCall(callback: js.Function2[/* err */ stdLib.Error, /* records */ T, scala.Unit]): jsforceLib.queryMod.Query[T] = js.native
 }
 

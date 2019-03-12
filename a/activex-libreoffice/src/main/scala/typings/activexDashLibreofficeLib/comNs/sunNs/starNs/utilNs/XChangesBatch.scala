@@ -36,14 +36,14 @@ object XChangesBatch {
   @scala.inline
   def apply(
     PendingChanges: ChangesSet,
-    acquire: js.Function0[scala.Unit],
-    commitChanges: js.Function0[scala.Unit],
-    getPendingChanges: js.Function0[ChangesSet],
-    hasPendingChanges: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    commitChanges: () => scala.Unit,
+    getPendingChanges: () => ChangesSet,
+    hasPendingChanges: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XChangesBatch = {
-    val __obj = js.Dynamic.literal(PendingChanges = PendingChanges.asInstanceOf[js.Any], acquire = acquire, commitChanges = commitChanges, getPendingChanges = getPendingChanges, hasPendingChanges = hasPendingChanges, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(PendingChanges = PendingChanges.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), commitChanges = js.Any.fromFunction0(commitChanges), getPendingChanges = js.Any.fromFunction0(getPendingChanges), hasPendingChanges = js.Any.fromFunction0(hasPendingChanges), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XChangesBatch]
   }

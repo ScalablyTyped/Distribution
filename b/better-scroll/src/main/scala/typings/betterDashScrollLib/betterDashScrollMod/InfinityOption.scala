@@ -14,11 +14,11 @@ trait InfinityOption extends js.Object {
 object InfinityOption {
   @scala.inline
   def apply(
-    createTombstone: js.Function0[stdLib.Element],
-    fetch: js.Function1[scala.Double, scala.Unit],
-    render: js.Function2[js.Any, stdLib.Element, stdLib.Element]
+    createTombstone: () => stdLib.Element,
+    fetch: scala.Double => scala.Unit,
+    render: (js.Any, stdLib.Element) => stdLib.Element
   ): InfinityOption = {
-    val __obj = js.Dynamic.literal(createTombstone = createTombstone, fetch = fetch, render = render)
+    val __obj = js.Dynamic.literal(createTombstone = js.Any.fromFunction0(createTombstone), fetch = js.Any.fromFunction1(fetch), render = js.Any.fromFunction2(render))
   
     __obj.asInstanceOf[InfinityOption]
   }

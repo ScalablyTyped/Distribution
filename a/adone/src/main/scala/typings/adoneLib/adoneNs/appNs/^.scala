@@ -16,9 +16,9 @@ object ^ extends js.Object {
   def DMainCliCommand(info: adoneLib.adoneNs.appNs.INs.MainCommandInfo): js.Function1[/* repeated */ js.Any, scala.Unit] = js.native
   def DSubsystem(): js.Function1[/* repeated */ js.Any, scala.Unit] = js.native
   def DSubsystem(info: adoneLib.adoneNs.appNs.INs.ApplicationInfo): js.Function1[/* repeated */ js.Any, scala.Unit] = js.native
-  def run(app: adoneLib.adoneNs.appNs.Application): js.Promise[scala.Unit] = js.native
-  def run(app: adoneLib.adoneNs.appNs.Application, ignoreArgs: scala.Boolean): js.Promise[scala.Unit] = js.native
-  def runCli(app: adoneLib.adoneNs.appNs.CliApplication): js.Promise[scala.Unit] = js.native
-  def runCli(app: adoneLib.adoneNs.appNs.CliApplication, ignoreArgs: scala.Boolean): js.Promise[scala.Unit] = js.native
+  def run(app: Application): js.Promise[scala.Unit] = js.native
+  def run(app: Application, ignoreArgs: scala.Boolean): js.Promise[scala.Unit] = js.native
+  def runCli(app: CliApplication): js.Promise[scala.Unit] = js.native
+  def runCli(app: CliApplication, ignoreArgs: scala.Boolean): js.Promise[scala.Unit] = js.native
 }
 

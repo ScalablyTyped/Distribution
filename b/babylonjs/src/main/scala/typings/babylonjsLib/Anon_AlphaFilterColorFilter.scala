@@ -25,7 +25,7 @@ object Anon_AlphaFilterColorFilter {
     height: scala.Int | scala.Double = null,
     maxHeight: scala.Int | scala.Double = null,
     minHeight: scala.Int | scala.Double = null,
-    onReady: js.Function1[/* mesh */ babylonjsLib.BABYLONNs.GroundMesh, scala.Unit] = null,
+    onReady: /* mesh */ babylonjsLib.BABYLONNs.GroundMesh => scala.Unit = null,
     subdivisions: scala.Int | scala.Double = null,
     updatable: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Int | scala.Double = null
@@ -36,7 +36,7 @@ object Anon_AlphaFilterColorFilter {
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (onReady != null) __obj.updateDynamic("onReady")(onReady)
+    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction1(onReady))
     if (subdivisions != null) __obj.updateDynamic("subdivisions")(subdivisions.asInstanceOf[js.Any])
     if (!js.isUndefined(updatable)) __obj.updateDynamic("updatable")(updatable)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

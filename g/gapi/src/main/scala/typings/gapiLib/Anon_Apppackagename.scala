@@ -40,7 +40,7 @@ object Anon_Apppackagename {
   @scala.inline
   def apply(
     apppackagename: java.lang.String = null,
-    callback: js.Function0[scala.Unit] = null,
+    callback: () => scala.Unit = null,
     clientid: java.lang.String = null,
     cookiepolicy: java.lang.String = null,
     includegrantedscopes: js.UndefOr[scala.Boolean] = js.undefined,
@@ -49,7 +49,7 @@ object Anon_Apppackagename {
   ): Anon_Apppackagename = {
     val __obj = js.Dynamic.literal()
     if (apppackagename != null) __obj.updateDynamic("apppackagename")(apppackagename)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (clientid != null) __obj.updateDynamic("clientid")(clientid)
     if (cookiepolicy != null) __obj.updateDynamic("cookiepolicy")(cookiepolicy)
     if (!js.isUndefined(includegrantedscopes)) __obj.updateDynamic("includegrantedscopes")(includegrantedscopes)

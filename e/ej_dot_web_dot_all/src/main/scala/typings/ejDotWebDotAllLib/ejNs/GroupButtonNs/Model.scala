@@ -81,42 +81,42 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    beforeSelect: js.Function1[/* e */ BeforeSelectEventArgs, scala.Unit] = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    beforeSelect: /* e */ BeforeSelectEventArgs => scala.Unit = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
     dataSource: js.Any = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     fields: js.Any = null,
     groupButtonMode: ejDotWebDotAllLib.ejNs.GroupButtonMode | java.lang.String = null,
     height: java.lang.String | scala.Double = null,
     htmlAttributes: js.Any = null,
-    keyPress: js.Function1[/* e */ KeyPressEventArgs, scala.Unit] = null,
+    keyPress: /* e */ KeyPressEventArgs => scala.Unit = null,
     orientation: ejDotWebDotAllLib.ejNs.Orientation | java.lang.String = null,
     query: js.Any = null,
-    select: js.Function1[/* e */ SelectEventArgs, scala.Unit] = null,
+    select: /* e */ SelectEventArgs => scala.Unit = null,
     selectedItemIndex: js.Array[scala.Double] | js.Array[java.lang.String] = null,
     showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
     size: ejDotWebDotAllLib.ejNs.ButtonSize | java.lang.String = null,
     width: java.lang.String | scala.Double = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (beforeSelect != null) __obj.updateDynamic("beforeSelect")(beforeSelect)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (beforeSelect != null) __obj.updateDynamic("beforeSelect")(js.Any.fromFunction1(beforeSelect))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (groupButtonMode != null) __obj.updateDynamic("groupButtonMode")(groupButtonMode.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
-    if (keyPress != null) __obj.updateDynamic("keyPress")(keyPress)
+    if (keyPress != null) __obj.updateDynamic("keyPress")(js.Any.fromFunction1(keyPress))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (selectedItemIndex != null) __obj.updateDynamic("selectedItemIndex")(selectedItemIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

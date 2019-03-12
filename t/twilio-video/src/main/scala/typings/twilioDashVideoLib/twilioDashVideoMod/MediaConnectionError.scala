@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MediaConnectionError () extends TwilioError {
   @JSName("code")
   var code_MediaConnectionError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53405` = js.native
-  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Media connection failed` = js.native
+  @JSName("message")
+  var message_MediaConnectionError: twilioDashVideoLib.twilioDashVideoLibStrings.`Media connection failed` = js.native
 }
 

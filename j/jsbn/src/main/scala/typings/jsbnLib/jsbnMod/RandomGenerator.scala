@@ -11,8 +11,8 @@ trait RandomGenerator extends js.Object {
 
 object RandomGenerator {
   @scala.inline
-  def apply(nextBytes: js.Function1[js.Array[scala.Double], scala.Unit]): RandomGenerator = {
-    val __obj = js.Dynamic.literal(nextBytes = nextBytes)
+  def apply(nextBytes: js.Array[scala.Double] => scala.Unit): RandomGenerator = {
+    val __obj = js.Dynamic.literal(nextBytes = js.Any.fromFunction1(nextBytes))
   
     __obj.asInstanceOf[RandomGenerator]
   }

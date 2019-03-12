@@ -16,14 +16,9 @@ trait FoldableComposition12C[F /* <: fpDashTsLib.libHKTMod.URIS */, G /* <: fpDa
 object FoldableComposition12C {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS */, G /* <: fpDashTsLib.libHKTMod.URIS2 */, LG](
-    reduce: js.Function3[
-      fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type2[G, LG, js.Any]], 
-      js.Any, 
-      js.Function2[js.Any, js.Any, js.Any], 
-      js.Any
-    ]
+    reduce: (fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type2[G, LG, js.Any]], js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any
   ): FoldableComposition12C[F, G, LG] = {
-    val __obj = js.Dynamic.literal(reduce = reduce)
+    val __obj = js.Dynamic.literal(reduce = js.Any.fromFunction3(reduce))
   
     __obj.asInstanceOf[FoldableComposition12C[F, G, LG]]
   }

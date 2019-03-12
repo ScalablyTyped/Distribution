@@ -38,21 +38,21 @@ object Primitive {
     cull: scala.Boolean,
     debugShowBoundingVolume: scala.Boolean,
     depthFailAppearance: Appearance,
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     geometryInstances: js.Array[GeometryInstance] | GeometryInstance,
-    getGeometryInstanceAttributes: js.Function1[js.Any, js.Any],
+    getGeometryInstanceAttributes: js.Any => js.Any,
     interleave: scala.Boolean,
-    isDestroyed: js.Function0[scala.Boolean],
+    isDestroyed: () => scala.Boolean,
     modelMatrix: Matrix4,
     ready: scala.Boolean,
     readyPromise: js.Promise[Primitive],
     releaseGeometryInstances: scala.Boolean,
     shadows: ShadowMode,
     show: scala.Boolean,
-    update: js.Function0[scala.Unit],
+    update: () => scala.Unit,
     vertexCacheOptimize: scala.Boolean
   ): Primitive = {
-    val __obj = js.Dynamic.literal(allowPicking = allowPicking, appearance = appearance, asynchronous = asynchronous, compressVertices = compressVertices, cull = cull, debugShowBoundingVolume = debugShowBoundingVolume, depthFailAppearance = depthFailAppearance, destroy = destroy, geometryInstances = geometryInstances.asInstanceOf[js.Any], getGeometryInstanceAttributes = getGeometryInstanceAttributes, interleave = interleave, isDestroyed = isDestroyed, modelMatrix = modelMatrix, ready = ready, readyPromise = readyPromise, releaseGeometryInstances = releaseGeometryInstances, shadows = shadows, show = show, update = update, vertexCacheOptimize = vertexCacheOptimize)
+    val __obj = js.Dynamic.literal(allowPicking = allowPicking, appearance = appearance, asynchronous = asynchronous, compressVertices = compressVertices, cull = cull, debugShowBoundingVolume = debugShowBoundingVolume, depthFailAppearance = depthFailAppearance, destroy = js.Any.fromFunction0(destroy), geometryInstances = geometryInstances.asInstanceOf[js.Any], getGeometryInstanceAttributes = js.Any.fromFunction1(getGeometryInstanceAttributes), interleave = interleave, isDestroyed = js.Any.fromFunction0(isDestroyed), modelMatrix = modelMatrix, ready = ready, readyPromise = readyPromise, releaseGeometryInstances = releaseGeometryInstances, shadows = shadows, show = show, update = js.Any.fromFunction0(update), vertexCacheOptimize = vertexCacheOptimize)
   
     __obj.asInstanceOf[Primitive]
   }

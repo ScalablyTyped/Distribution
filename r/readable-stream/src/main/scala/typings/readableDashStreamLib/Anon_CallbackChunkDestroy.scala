@@ -9,15 +9,15 @@ trait Anon_CallbackChunkDestroy extends js.Object {
   var destroy: js.UndefOr[
     js.ThisFunction2[
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Writable, 
-      /* error */ nodeLib.Error | scala.Null, 
-      /* callback */ js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit], 
+      /* error */ stdLib.Error | scala.Null, 
+      /* callback */ js.Function1[/* error */ stdLib.Error | scala.Null, scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
   var `final`: js.UndefOr[
     js.ThisFunction1[
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Writable, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -26,7 +26,7 @@ trait Anon_CallbackChunkDestroy extends js.Object {
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Writable, 
       /* chunk */ js.Any, 
       /* encoding */ java.lang.String, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -34,7 +34,7 @@ trait Anon_CallbackChunkDestroy extends js.Object {
     js.ThisFunction2[
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Writable, 
       /* chunk */ stdLib.ArrayLike[Anon_Chunk], 
-      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -45,26 +45,26 @@ object Anon_CallbackChunkDestroy {
   def apply(
     destroy: js.ThisFunction2[
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Writable, 
-      /* error */ nodeLib.Error | scala.Null, 
-      /* callback */ js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit], 
+      /* error */ stdLib.Error | scala.Null, 
+      /* callback */ js.Function1[/* error */ stdLib.Error | scala.Null, scala.Unit], 
       scala.Unit
     ] = null,
     `final`: js.ThisFunction1[
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Writable, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ] = null,
     write: js.ThisFunction3[
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Writable, 
       /* chunk */ js.Any, 
       /* encoding */ java.lang.String, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ] = null,
     writev: js.ThisFunction2[
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Writable, 
       /* chunk */ stdLib.ArrayLike[Anon_Chunk], 
-      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ] = null
   ): Anon_CallbackChunkDestroy = {

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   */
 trait BatchUpdateException extends SQLException {
   /** is an array of `long` , with each element indicating the update count for a SQL command that executed successfully before the exception was thrown. */
-  var UpdateCounts: activexDashInteropLib.SafeArray[scala.Double]
+  var UpdateCounts: stdLib.SafeArray[scala.Double]
 }
 
 object BatchUpdateException {
@@ -25,7 +25,7 @@ object BatchUpdateException {
     Message: java.lang.String,
     NextException: js.Any,
     SQLState: java.lang.String,
-    UpdateCounts: activexDashInteropLib.SafeArray[scala.Double]
+    UpdateCounts: stdLib.SafeArray[scala.Double]
   ): BatchUpdateException = {
     val __obj = js.Dynamic.literal(Context = Context, ErrorCode = ErrorCode, Message = Message, NextException = NextException, SQLState = SQLState, UpdateCounts = UpdateCounts)
   

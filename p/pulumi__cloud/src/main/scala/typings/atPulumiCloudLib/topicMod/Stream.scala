@@ -23,10 +23,8 @@ trait Stream[T] extends js.Object {
 
 object Stream {
   @scala.inline
-  def apply[T](
-    subscribe: js.Function2[java.lang.String, js.Function1[/* item */ T, js.Promise[scala.Unit]], scala.Unit]
-  ): Stream[T] = {
-    val __obj = js.Dynamic.literal(subscribe = subscribe)
+  def apply[T](subscribe: (java.lang.String, js.Function1[/* item */ T, js.Promise[scala.Unit]]) => scala.Unit): Stream[T] = {
+    val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction2(subscribe))
   
     __obj.asInstanceOf[Stream[T]]
   }

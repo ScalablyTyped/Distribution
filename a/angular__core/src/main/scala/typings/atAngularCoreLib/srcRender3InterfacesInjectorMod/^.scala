@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val INJECTOR_BLOOM_PARENT_SIZE: /* 9 */ scala.Double = js.native
-  val NO_PARENT_INJECTOR: atAngularCoreLib.srcRender3InterfacesInjectorMod.RelativeInjectorLocation = js.native
+  val NO_PARENT_INJECTOR: RelativeInjectorLocation = js.native
   val PARENT_INJECTOR: /* 8 */ scala.Double = js.native
   val TNODE: /* 8 */ scala.Double = js.native
   val unusedValueExportToPlacateAjd: /* 1 */ scala.Double = js.native

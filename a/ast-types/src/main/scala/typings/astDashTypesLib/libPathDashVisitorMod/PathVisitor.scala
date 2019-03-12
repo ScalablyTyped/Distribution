@@ -36,17 +36,17 @@ object PathVisitor {
     _reusableContextStack: js.Any,
     _shouldVisitComments: js.Any,
     _visiting: js.Any,
-    abort: js.Function0[scala.Unit],
-    acquireContext: js.Function1[js.Any, js.Any],
-    releaseContext: js.Function1[js.Any, scala.Unit],
-    reportChanged: js.Function0[scala.Unit],
-    reset: js.Function1[/* repeated */ js.Any, js.Any],
-    visit: js.Function1[/* repeated */ js.Any, js.Any],
-    visitWithoutReset: js.Function1[js.Any, js.Any],
+    abort: () => scala.Unit,
+    acquireContext: js.Any => js.Any,
+    releaseContext: js.Any => scala.Unit,
+    reportChanged: () => scala.Unit,
+    reset: /* repeated */ js.Any => js.Any,
+    visit: /* repeated */ js.Any => js.Any,
+    visitWithoutReset: js.Any => js.Any,
     visitor: js.Any,
-    wasChangeReported: js.Function0[js.Any]
+    wasChangeReported: () => js.Any
   ): PathVisitor = {
-    val __obj = js.Dynamic.literal(AbortRequest = AbortRequest, Context = Context, _abortRequested = _abortRequested, _changeReported = _changeReported, _methodNameTable = _methodNameTable, _reusableContextStack = _reusableContextStack, _shouldVisitComments = _shouldVisitComments, _visiting = _visiting, abort = abort, acquireContext = acquireContext, releaseContext = releaseContext, reportChanged = reportChanged, reset = reset, visit = visit, visitWithoutReset = visitWithoutReset, visitor = visitor, wasChangeReported = wasChangeReported)
+    val __obj = js.Dynamic.literal(AbortRequest = AbortRequest, Context = Context, _abortRequested = _abortRequested, _changeReported = _changeReported, _methodNameTable = _methodNameTable, _reusableContextStack = _reusableContextStack, _shouldVisitComments = _shouldVisitComments, _visiting = _visiting, abort = js.Any.fromFunction0(abort), acquireContext = js.Any.fromFunction1(acquireContext), releaseContext = js.Any.fromFunction1(releaseContext), reportChanged = js.Any.fromFunction0(reportChanged), reset = js.Any.fromFunction1(reset), visit = js.Any.fromFunction1(visit), visitWithoutReset = js.Any.fromFunction1(visitWithoutReset), visitor = visitor, wasChangeReported = js.Any.fromFunction0(wasChangeReported))
   
     __obj.asInstanceOf[PathVisitor]
   }

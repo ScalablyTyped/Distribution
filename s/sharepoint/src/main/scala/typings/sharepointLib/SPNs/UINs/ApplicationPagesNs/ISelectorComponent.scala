@@ -21,22 +21,17 @@ trait ISelectorComponent extends js.Object {
 object ISelectorComponent {
   @scala.inline
   def apply(
-    get_callback: js.Function0[
-      js.Function2[/* sender */ js.Any, /* e */ microsoftDashAjaxLib.SysNs.EventArgs, scala.Unit]
-    ],
-    get_componentType: js.Function0[SelectorType],
-    get_scopeKey: js.Function0[java.lang.String],
-    get_selectedEntities: js.Function0[js.Any],
-    removeEntity: js.Function1[ResolveEntity, scala.Unit],
-    revertTo: js.Function1[ResolveEntity, scala.Unit],
-    setEntity: js.Function1[ResolveEntity, scala.Unit],
-    set_callback: js.Function1[
-      js.Function2[/* sender */ js.Any, /* e */ microsoftDashAjaxLib.SysNs.EventArgs, scala.Unit], 
-      scala.Unit
-    ],
-    set_selectedEntities: js.Function1[js.Any, scala.Unit]
+    get_callback: () => js.Function2[/* sender */ js.Any, /* e */ microsoftDashAjaxLib.SysNs.EventArgs, scala.Unit],
+    get_componentType: () => SelectorType,
+    get_scopeKey: () => java.lang.String,
+    get_selectedEntities: () => js.Any,
+    removeEntity: ResolveEntity => scala.Unit,
+    revertTo: ResolveEntity => scala.Unit,
+    setEntity: ResolveEntity => scala.Unit,
+    set_callback: js.Function2[/* sender */ js.Any, /* e */ microsoftDashAjaxLib.SysNs.EventArgs, scala.Unit] => scala.Unit,
+    set_selectedEntities: js.Any => scala.Unit
   ): ISelectorComponent = {
-    val __obj = js.Dynamic.literal(get_callback = get_callback, get_componentType = get_componentType, get_scopeKey = get_scopeKey, get_selectedEntities = get_selectedEntities, removeEntity = removeEntity, revertTo = revertTo, setEntity = setEntity, set_callback = set_callback, set_selectedEntities = set_selectedEntities)
+    val __obj = js.Dynamic.literal(get_callback = js.Any.fromFunction0(get_callback), get_componentType = js.Any.fromFunction0(get_componentType), get_scopeKey = js.Any.fromFunction0(get_scopeKey), get_selectedEntities = js.Any.fromFunction0(get_selectedEntities), removeEntity = js.Any.fromFunction1(removeEntity), revertTo = js.Any.fromFunction1(revertTo), setEntity = js.Any.fromFunction1(setEntity), set_callback = js.Any.fromFunction1(set_callback), set_selectedEntities = js.Any.fromFunction1(set_selectedEntities))
   
     __obj.asInstanceOf[ISelectorComponent]
   }

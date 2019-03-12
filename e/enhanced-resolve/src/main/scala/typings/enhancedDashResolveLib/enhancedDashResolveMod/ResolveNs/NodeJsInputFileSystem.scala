@@ -32,7 +32,7 @@ trait NodeJsInputFileSystem extends js.Object {
   def readFileSync(filename: java.lang.String, options: enhancedDashResolveLib.Anon_Flag): nodeLib.Buffer = js.native
   def readdir(
     path: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* files */ js.Array[java.lang.String], scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* files */ js.Array[java.lang.String], scala.Unit]
   ): scala.Unit = js.native
   def readdirSync(path: java.lang.String): js.Array[java.lang.String] = js.native
   def readlink(path: java.lang.String): scala.Unit = js.native

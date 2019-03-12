@@ -45,13 +45,13 @@ trait DataLoader[K, V] extends js.Object {
 object DataLoader {
   @scala.inline
   def apply[K, V](
-    clear: js.Function1[K, DataLoader[K, V]],
-    clearAll: js.Function0[DataLoader[K, V]],
-    load: js.Function1[K, js.Promise[V]],
-    loadMany: js.Function1[js.Array[K], js.Promise[js.Array[V]]],
-    prime: js.Function2[K, V, DataLoader[K, V]]
+    clear: K => DataLoader[K, V],
+    clearAll: () => DataLoader[K, V],
+    load: K => js.Promise[V],
+    loadMany: js.Array[K] => js.Promise[js.Array[V]],
+    prime: (K, V) => DataLoader[K, V]
   ): DataLoader[K, V] = {
-    val __obj = js.Dynamic.literal(clear = clear, clearAll = clearAll, load = load, loadMany = loadMany, prime = prime)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear), clearAll = js.Any.fromFunction0(clearAll), load = js.Any.fromFunction1(load), loadMany = js.Any.fromFunction1(loadMany), prime = js.Any.fromFunction2(prime))
   
     __obj.asInstanceOf[DataLoader[K, V]]
   }

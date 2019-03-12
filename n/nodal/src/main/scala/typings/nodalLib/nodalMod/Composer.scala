@@ -126,17 +126,17 @@ class Composer[T /* <: Model */] protected () extends js.Object {
     * Counts the results in the query
     * @param {function} callback Supplied with an error and the integer value of the count
     */
-  def count(callback: js.Function2[/* err */ nodeLib.Error, /* count */ scala.Double, scala.Unit]): scala.Unit = js.native
+  def count(callback: js.Function2[/* err */ stdLib.Error, /* count */ scala.Double, scala.Unit]): scala.Unit = js.native
   /**
     * Execute the query you've been composing.
     * @param {function({Error}, {Nodal.ModelArray})} callback The method to execute when the query is complete
     */
-  def end(callback: js.Function2[/* err */ nodeLib.Error, /* modelArray */ ModelArray[T], scala.Unit]): scala.Unit = js.native
+  def end(callback: js.Function2[/* err */ stdLib.Error, /* modelArray */ ModelArray[T], scala.Unit]): scala.Unit = js.native
   /**
     * Shortcut for .limit(1).end(callback) that only returns a model object or error if not found
     * @param {Function} callback Callback to execute, provides an error and model parameter
     */
-  def first(callback: js.Function2[/* err */ nodeLib.Error, /* model */ Model, scala.Unit]): scala.Unit = js.native
+  def first(callback: js.Function2[/* err */ stdLib.Error, /* model */ Model, scala.Unit]): scala.Unit = js.native
   /**
     * Groups by a specific field, or a transformation on a field
     * @param {String} column The column to group by
@@ -269,7 +269,7 @@ class Composer[T /* <: Model */] protected () extends js.Object {
     */
   def update(
     fields: IAnyObject,
-    callback: js.Function2[/* err */ nodeLib.Error, /* modelArray */ ModelArray[T], scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* modelArray */ ModelArray[T], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Add comparisons to SQL WHERE clause.

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait AllEventObject
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject {
   /** The arguments of the original method. */
-  var Arguments: activexDashInteropLib.SafeArray[_]
+  var Arguments: stdLib.SafeArray[_]
   /**
     * A helper value for the implementation that can be used arbitrarily.
     *
@@ -29,7 +29,7 @@ trait AllEventObject
 object AllEventObject {
   @scala.inline
   def apply(
-    Arguments: activexDashInteropLib.SafeArray[_],
+    Arguments: stdLib.SafeArray[_],
     Helper: js.Any,
     ListenerType: activexDashLibreofficeLib.`type`,
     MethodName: java.lang.String,

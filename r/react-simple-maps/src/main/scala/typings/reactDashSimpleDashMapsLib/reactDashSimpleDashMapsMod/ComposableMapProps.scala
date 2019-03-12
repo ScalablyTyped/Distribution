@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ComposableMapProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var defs: js.UndefOr[reactLib.SVGDefsElement] = js.undefined
+  var defs: js.UndefOr[stdLib.SVGDefsElement] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var preserveAspectRatio: js.UndefOr[java.lang.String] = js.undefined
   var projection: js.UndefOr[java.lang.String | ProjectionFunction] = js.undefined
@@ -22,7 +22,7 @@ object ComposableMapProps {
   @scala.inline
   def apply(
     className: java.lang.String = null,
-    defs: reactLib.SVGDefsElement = null,
+    defs: stdLib.SVGDefsElement = null,
     height: scala.Int | scala.Double = null,
     preserveAspectRatio: java.lang.String = null,
     projection: java.lang.String | ProjectionFunction = null,

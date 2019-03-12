@@ -15,12 +15,12 @@ trait RouterEvent extends js.Object {
 object RouterEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Router,
     url: java.lang.String
   ): RouterEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender, url = url)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender, url = url)
   
     __obj.asInstanceOf[RouterEvent]
   }

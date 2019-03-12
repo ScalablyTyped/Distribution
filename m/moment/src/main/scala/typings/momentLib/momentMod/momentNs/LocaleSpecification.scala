@@ -41,18 +41,13 @@ object LocaleSpecification {
   /* x */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     calendar: CalendarSpec = null,
     invalidDate: java.lang.String = null,
-    isPM: js.Function1[/* input */ java.lang.String, scala.Boolean] = null,
+    isPM: /* input */ java.lang.String => scala.Boolean = null,
     longDateFormat: LongDateFormatSpec = null,
-    meridiem: js.Function3[
-      /* hour */ scala.Double, 
-      /* minute */ scala.Double, 
-      /* isLower */ scala.Boolean, 
-      java.lang.String
-    ] = null,
+    meridiem: (/* hour */ scala.Double, /* minute */ scala.Double, /* isLower */ scala.Boolean) => java.lang.String = null,
     meridiemParse: stdLib.RegExp = null,
     months: js.Array[java.lang.String] | StandaloneFormatSpec | MonthWeekdayFn = null,
     monthsShort: js.Array[java.lang.String] | StandaloneFormatSpec | MonthWeekdayFn = null,
-    ordinal: js.Function1[/* n */ scala.Double, java.lang.String] = null,
+    ordinal: /* n */ scala.Double => java.lang.String = null,
     ordinalParse: stdLib.RegExp = null,
     relativeTime: RelativeTimeSpec = null,
     week: WeekSpec = null,
@@ -64,13 +59,13 @@ object LocaleSpecification {
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (calendar != null) __obj.updateDynamic("calendar")(calendar)
     if (invalidDate != null) __obj.updateDynamic("invalidDate")(invalidDate)
-    if (isPM != null) __obj.updateDynamic("isPM")(isPM)
+    if (isPM != null) __obj.updateDynamic("isPM")(js.Any.fromFunction1(isPM))
     if (longDateFormat != null) __obj.updateDynamic("longDateFormat")(longDateFormat)
-    if (meridiem != null) __obj.updateDynamic("meridiem")(meridiem)
+    if (meridiem != null) __obj.updateDynamic("meridiem")(js.Any.fromFunction3(meridiem))
     if (meridiemParse != null) __obj.updateDynamic("meridiemParse")(meridiemParse)
     if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
     if (monthsShort != null) __obj.updateDynamic("monthsShort")(monthsShort.asInstanceOf[js.Any])
-    if (ordinal != null) __obj.updateDynamic("ordinal")(ordinal)
+    if (ordinal != null) __obj.updateDynamic("ordinal")(js.Any.fromFunction1(ordinal))
     if (ordinalParse != null) __obj.updateDynamic("ordinalParse")(ordinalParse)
     if (relativeTime != null) __obj.updateDynamic("relativeTime")(relativeTime)
     if (week != null) __obj.updateDynamic("week")(week)

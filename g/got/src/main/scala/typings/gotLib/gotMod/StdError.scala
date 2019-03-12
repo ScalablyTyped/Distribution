@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StdError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   var code: js.UndefOr[java.lang.String] = js.undefined
   var host: js.UndefOr[java.lang.String] = js.undefined
   var hostname: js.UndefOr[java.lang.String] = js.undefined
@@ -20,6 +20,8 @@ trait StdError
 object StdError {
   @scala.inline
   def apply(
+    message: java.lang.String,
+    name: java.lang.String,
     code: java.lang.String = null,
     host: java.lang.String = null,
     hostname: java.lang.String = null,
@@ -30,7 +32,7 @@ object StdError {
     stack: java.lang.String = null,
     url: java.lang.String = null
   ): StdError = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(message = message, name = name)
     if (code != null) __obj.updateDynamic("code")(code)
     if (host != null) __obj.updateDynamic("host")(host)
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)

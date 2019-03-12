@@ -16,11 +16,11 @@ object Anon_3ChannelsHcg {
   @scala.inline
   def apply(
     channels: colorDashConvertLib.colorDashConvertLibNumbers.`3`,
-    hcg: js.Function1[colorDashConvertLib.conversionsMod.HWB, colorDashConvertLib.conversionsMod.HCG],
+    hcg: colorDashConvertLib.conversionsMod.HWB => colorDashConvertLib.conversionsMod.HCG,
     labels: colorDashConvertLib.colorDashConvertLibStrings.hwb,
-    rgb: js.Function1[colorDashConvertLib.conversionsMod.HWB, colorDashConvertLib.conversionsMod.RGB]
+    rgb: colorDashConvertLib.conversionsMod.HWB => colorDashConvertLib.conversionsMod.RGB
   ): Anon_3ChannelsHcg = {
-    val __obj = js.Dynamic.literal(channels = channels, hcg = hcg, labels = labels, rgb = rgb)
+    val __obj = js.Dynamic.literal(channels = channels, hcg = js.Any.fromFunction1(hcg), labels = labels, rgb = js.Any.fromFunction1(rgb))
   
     __obj.asInstanceOf[Anon_3ChannelsHcg]
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.OLEFormat")
 @js.native
 class OLEFormat protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var ClassType: java.lang.String = js.native
   val Creator: scala.Double = js.native
   var DisplayAsIcon: scala.Boolean = js.native

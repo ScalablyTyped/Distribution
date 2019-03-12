@@ -9,7 +9,7 @@ trait GlobalTableGlobalSecondaryIndexSettingsUpdate extends js.Object {
   /**
     * The name of the global secondary index. The name must be unique among all other indexes on this table.
     */
-  var IndexName: IndexName
+  var IndexName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.IndexName
   /**
     * AutoScaling settings for managing a global secondary index's write capacity units.
     */

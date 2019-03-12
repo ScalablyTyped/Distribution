@@ -18,15 +18,15 @@ trait Anon_ChangeMonth extends js.Object {
 object Anon_ChangeMonth {
   @scala.inline
   def apply(
-    changeMonth: js.Function1[scala.Double, scala.Unit],
-    changeYear: js.Function1[scala.Double, scala.Unit],
+    changeMonth: scala.Double => scala.Unit,
+    changeYear: scala.Double => scala.Unit,
     date: stdLib.Date,
-    decreaseMonth: js.Function0[scala.Unit],
-    increaseMonth: js.Function0[scala.Unit],
+    decreaseMonth: () => scala.Unit,
+    increaseMonth: () => scala.Unit,
     nextMonthButtonDisabled: scala.Boolean,
     prevMonthButtonDisabled: scala.Boolean
   ): Anon_ChangeMonth = {
-    val __obj = js.Dynamic.literal(changeMonth = changeMonth, changeYear = changeYear, date = date, decreaseMonth = decreaseMonth, increaseMonth = increaseMonth, nextMonthButtonDisabled = nextMonthButtonDisabled, prevMonthButtonDisabled = prevMonthButtonDisabled)
+    val __obj = js.Dynamic.literal(changeMonth = js.Any.fromFunction1(changeMonth), changeYear = js.Any.fromFunction1(changeYear), date = date, decreaseMonth = js.Any.fromFunction0(decreaseMonth), increaseMonth = js.Any.fromFunction0(increaseMonth), nextMonthButtonDisabled = nextMonthButtonDisabled, prevMonthButtonDisabled = prevMonthButtonDisabled)
   
     __obj.asInstanceOf[Anon_ChangeMonth]
   }

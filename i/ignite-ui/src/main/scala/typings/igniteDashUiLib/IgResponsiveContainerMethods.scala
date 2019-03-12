@@ -38,13 +38,13 @@ trait IgResponsiveContainerMethods extends js.Object {
 object IgResponsiveContainerMethods {
   @scala.inline
   def apply(
-    addCallback: js.Function4[js.Function, js.Object, scala.Double, js.Object, scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    removeCallback: js.Function1[scala.Double, scala.Unit],
-    startPoller: js.Function0[scala.Unit],
-    stopPoller: js.Function0[scala.Unit]
+    addCallback: (js.Function, js.Object, scala.Double, js.Object) => scala.Unit,
+    destroy: () => scala.Unit,
+    removeCallback: scala.Double => scala.Unit,
+    startPoller: () => scala.Unit,
+    stopPoller: () => scala.Unit
   ): IgResponsiveContainerMethods = {
-    val __obj = js.Dynamic.literal(addCallback = addCallback, destroy = destroy, removeCallback = removeCallback, startPoller = startPoller, stopPoller = stopPoller)
+    val __obj = js.Dynamic.literal(addCallback = js.Any.fromFunction4(addCallback), destroy = js.Any.fromFunction0(destroy), removeCallback = js.Any.fromFunction1(removeCallback), startPoller = js.Any.fromFunction0(startPoller), stopPoller = js.Any.fromFunction0(stopPoller))
   
     __obj.asInstanceOf[IgResponsiveContainerMethods]
   }

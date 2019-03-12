@@ -13,7 +13,7 @@ object ^ extends js.Object {
     *
     * @see https://mochajs.org/api/module-base#.colors
     */
-  val colors: mochaLib.MochaNs.reportersNs.BaseNs.ColorMap = js.native
+  val colors: ColorMap = js.native
   /**
     * Inline diffs instead of +/-
     *
@@ -25,7 +25,7 @@ object ^ extends js.Object {
     *
     * @see https://mochajs.org/api/module-base#.symbols
     */
-  val symbols: mochaLib.MochaNs.reportersNs.BaseNs.SymbolMap = js.native
+  val symbols: SymbolMap = js.native
   /**
     * Enables coloring by default
     *

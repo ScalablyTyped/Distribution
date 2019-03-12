@@ -1797,15 +1797,15 @@ trait ActiveXObject extends js.Object {
   def set_List(
     obj: activexDashExcelLib.ExcelNs.ControlFormat,
     propertyName: activexDashExcelLib.activexDashExcelLibStrings.List,
-    parameterTypes: js.Array[scala.Nothing],
-    newValue: activexDashInteropLib.SafeArray[java.lang.String]
+    parameterTypes: js.Array[scala.Double],
+    newValue: java.lang.String
   ): scala.Unit = js.native
   @JSName("set")
   def set_List(
     obj: activexDashExcelLib.ExcelNs.ControlFormat,
     propertyName: activexDashExcelLib.activexDashExcelLibStrings.List,
-    parameterTypes: js.Array[scala.Double],
-    newValue: java.lang.String
+    parameterTypes: js.Array[scala.Nothing],
+    newValue: stdLib.SafeArray[java.lang.String]
   ): scala.Unit = js.native
   @JSName("set")
   def set_PrintQuality(

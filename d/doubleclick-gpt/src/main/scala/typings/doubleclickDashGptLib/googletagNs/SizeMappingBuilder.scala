@@ -12,11 +12,8 @@ trait SizeMappingBuilder extends js.Object {
 
 object SizeMappingBuilder {
   @scala.inline
-  def apply(
-    addSize: js.Function2[SingleSizeArray, GeneralSize, SizeMappingBuilder],
-    build: js.Function0[SizeMappingArray]
-  ): SizeMappingBuilder = {
-    val __obj = js.Dynamic.literal(addSize = addSize, build = build)
+  def apply(addSize: (SingleSizeArray, GeneralSize) => SizeMappingBuilder, build: () => SizeMappingArray): SizeMappingBuilder = {
+    val __obj = js.Dynamic.literal(addSize = js.Any.fromFunction2(addSize), build = js.Any.fromFunction0(build))
   
     __obj.asInstanceOf[SizeMappingBuilder]
   }

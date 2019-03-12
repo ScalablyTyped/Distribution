@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object ICompilerNs {
   type Handler = js.Function2[
-    /* err */ nodeLib.Error, 
+    /* err */ stdLib.Error, 
     /* stats */ webpackLib.webpackMod.webpackNs.Stats, 
     scala.Unit
   ]

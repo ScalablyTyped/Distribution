@@ -49,9 +49,9 @@ object Props {
     enableTransforms: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     innerZ: scala.Double | java.lang.String = null,
-    onStateChange: js.Function1[/* status */ Status, scala.Unit] = null,
+    onStateChange: /* status */ Status => scala.Unit = null,
     releasedClass: java.lang.String = null,
-    shouldFreeze: js.Function0[scala.Boolean] = null,
+    shouldFreeze: () => scala.Boolean = null,
     top: scala.Double | java.lang.String = null
   ): Props = {
     val __obj = js.Dynamic.literal()
@@ -60,9 +60,9 @@ object Props {
     if (!js.isUndefined(enableTransforms)) __obj.updateDynamic("enableTransforms")(enableTransforms)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (innerZ != null) __obj.updateDynamic("innerZ")(innerZ.asInstanceOf[js.Any])
-    if (onStateChange != null) __obj.updateDynamic("onStateChange")(onStateChange)
+    if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1(onStateChange))
     if (releasedClass != null) __obj.updateDynamic("releasedClass")(releasedClass)
-    if (shouldFreeze != null) __obj.updateDynamic("shouldFreeze")(shouldFreeze)
+    if (shouldFreeze != null) __obj.updateDynamic("shouldFreeze")(js.Any.fromFunction0(shouldFreeze))
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }

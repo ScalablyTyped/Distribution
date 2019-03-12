@@ -23,14 +23,14 @@ object IBatchError {
   def apply(
     data: js.Array[TBatchData],
     first: js.Any,
-    getErrors: js.Function0[js.Array[_]],
+    getErrors: () => js.Array[_],
     message: java.lang.String,
     name: java.lang.String,
     stack: java.lang.String,
     stat: IBatchStat,
-    toString: js.Function0[java.lang.String]
+    toString: () => java.lang.String
   ): IBatchError = {
-    val __obj = js.Dynamic.literal(data = data, first = first, getErrors = getErrors, message = message, name = name, stack = stack, stat = stat, toString = toString)
+    val __obj = js.Dynamic.literal(data = data, first = first, getErrors = js.Any.fromFunction0(getErrors), message = message, name = name, stack = stack, stat = stat, toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[IBatchError]
   }

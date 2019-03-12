@@ -24,7 +24,7 @@ object Options {
     filename: java.lang.String,
     detective: js.Any = null,
     directory: java.lang.String = null,
-    filter: js.Function1[/* path */ java.lang.String, scala.Boolean] = null,
+    filter: /* path */ java.lang.String => scala.Boolean = null,
     isListForm: js.UndefOr[scala.Boolean] = js.undefined,
     nodeModulesConfig: js.Any = null,
     nonExistent: js.Array[java.lang.String] = null,
@@ -35,7 +35,7 @@ object Options {
     val __obj = js.Dynamic.literal(filename = filename)
     if (detective != null) __obj.updateDynamic("detective")(detective)
     if (directory != null) __obj.updateDynamic("directory")(directory)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (!js.isUndefined(isListForm)) __obj.updateDynamic("isListForm")(isListForm)
     if (nodeModulesConfig != null) __obj.updateDynamic("nodeModulesConfig")(nodeModulesConfig)
     if (nonExistent != null) __obj.updateDynamic("nonExistent")(nonExistent)

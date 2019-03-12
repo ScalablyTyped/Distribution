@@ -11,8 +11,8 @@ trait IPushNotificationTriggerFactory extends js.Object {
 
 object IPushNotificationTriggerFactory {
   @scala.inline
-  def apply(create: js.Function1[java.lang.String, PushNotificationTrigger]): IPushNotificationTriggerFactory = {
-    val __obj = js.Dynamic.literal(create = create)
+  def apply(create: java.lang.String => PushNotificationTrigger): IPushNotificationTriggerFactory = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
   
     __obj.asInstanceOf[IPushNotificationTriggerFactory]
   }

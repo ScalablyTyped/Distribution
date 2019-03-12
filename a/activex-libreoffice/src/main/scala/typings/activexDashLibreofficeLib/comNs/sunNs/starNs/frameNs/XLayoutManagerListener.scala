@@ -32,18 +32,13 @@ trait XLayoutManagerListener
 object XLayoutManagerListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    layoutEvent: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, 
-      scala.Double, 
-      js.Any, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    layoutEvent: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Double, js.Any) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XLayoutManagerListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, layoutEvent = layoutEvent, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), layoutEvent = js.Any.fromFunction3(layoutEvent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XLayoutManagerListener]
   }

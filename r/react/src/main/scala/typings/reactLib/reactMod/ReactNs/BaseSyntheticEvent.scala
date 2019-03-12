@@ -35,18 +35,18 @@ object BaseSyntheticEvent {
     currentTarget: C,
     defaultPrevented: scala.Boolean,
     eventPhase: scala.Double,
-    isDefaultPrevented: js.Function0[scala.Boolean],
-    isPropagationStopped: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
+    isPropagationStopped: () => scala.Boolean,
     isTrusted: scala.Boolean,
     nativeEvent: E,
-    persist: js.Function0[scala.Unit],
-    preventDefault: js.Function0[scala.Unit],
-    stopPropagation: js.Function0[scala.Unit],
+    persist: () => scala.Unit,
+    preventDefault: () => scala.Unit,
+    stopPropagation: () => scala.Unit,
     target: T,
     timeStamp: scala.Double,
     `type`: java.lang.String
   ): BaseSyntheticEvent[E, C, T] = {
-    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelable = cancelable, currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented, eventPhase = eventPhase, isDefaultPrevented = isDefaultPrevented, isPropagationStopped = isPropagationStopped, isTrusted = isTrusted, nativeEvent = nativeEvent.asInstanceOf[js.Any], persist = persist, preventDefault = preventDefault, stopPropagation = stopPropagation, target = target.asInstanceOf[js.Any], timeStamp = timeStamp)
+    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelable = cancelable, currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented, eventPhase = eventPhase, isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted, nativeEvent = nativeEvent.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist), preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BaseSyntheticEvent[E, C, T]]
   }

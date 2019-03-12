@@ -13,8 +13,8 @@ trait IKeyNamePair extends js.Object {
 
 object IKeyNamePair {
   @scala.inline
-  def apply(Clone: js.Function0[IKeyNamePair], Key: scala.Double, Name: java.lang.String): IKeyNamePair = {
-    val __obj = js.Dynamic.literal(Clone = Clone, Key = Key, Name = Name)
+  def apply(Clone: () => IKeyNamePair, Key: scala.Double, Name: java.lang.String): IKeyNamePair = {
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Key = Key, Name = Name)
   
     __obj.asInstanceOf[IKeyNamePair]
   }

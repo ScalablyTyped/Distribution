@@ -67,7 +67,7 @@ trait PromiseFtp extends js.Object {
     * was an error, true if there was an error but the client didn't recieve it,
     * or false if there was no error.
     */
-  def end(): bluebirdLib.bluebirdMod.namespaced[nodeLib.Error | scala.Boolean] = js.native
+  def end(): bluebirdLib.bluebirdMod.namespaced[stdLib.Error | scala.Boolean] = js.native
   /**
     * Retrieve a file at path from the server.
     * @param path - the path of the file to get.

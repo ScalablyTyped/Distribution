@@ -52,7 +52,7 @@ object ButtonProps {
     icon: reactLib.reactMod.Global.JSXNs.Element = null,
     label: reactLib.reactMod.ReactNs.ReactNode = null,
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null,
-    onClick: js.Function1[/* repeated */ js.Any, _] = null,
+    onClick: /* repeated */ js.Any => _ = null,
     plain: js.UndefOr[scala.Boolean] = js.undefined,
     primary: js.UndefOr[scala.Boolean] = js.undefined,
     reverse: js.UndefOr[scala.Boolean] = js.undefined,
@@ -73,7 +73,7 @@ object ButtonProps {
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
     if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)

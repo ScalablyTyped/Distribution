@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation._
   */
 trait XTextSection extends XTextContent {
   /** @returns all text sections that are children of this text section (recursive). */
-  val ChildSections: activexDashInteropLib.SafeArray[XTextSection]
+  val ChildSections: stdLib.SafeArray[XTextSection]
   /** If the object is a child section, then this method returns the parent text section. */
   val ParentSection: XTextSection
   /** @returns all text sections that are children of this text section (recursive). */
-  def getChildSections(): activexDashInteropLib.SafeArray[XTextSection]
+  def getChildSections(): stdLib.SafeArray[XTextSection]
   /** If the object is a child section, then this method returns the parent text section. */
   def getParentSection(): XTextSection
 }
@@ -24,20 +24,20 @@ object XTextSection {
   @scala.inline
   def apply(
     Anchor: XTextRange,
-    ChildSections: activexDashInteropLib.SafeArray[XTextSection],
+    ChildSections: stdLib.SafeArray[XTextSection],
     ParentSection: XTextSection,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    attach: js.Function1[XTextRange, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    getAnchor: js.Function0[XTextRange],
-    getChildSections: js.Function0[activexDashInteropLib.SafeArray[XTextSection]],
-    getParentSection: js.Function0[XTextSection],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    attach: XTextRange => scala.Unit,
+    dispose: () => scala.Unit,
+    getAnchor: () => XTextRange,
+    getChildSections: () => stdLib.SafeArray[XTextSection],
+    getParentSection: () => XTextSection,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit
   ): XTextSection = {
-    val __obj = js.Dynamic.literal(Anchor = Anchor, ChildSections = ChildSections, ParentSection = ParentSection, acquire = acquire, addEventListener = addEventListener, attach = attach, dispose = dispose, getAnchor = getAnchor, getChildSections = getChildSections, getParentSection = getParentSection, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(Anchor = Anchor, ChildSections = ChildSections, ParentSection = ParentSection, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), attach = js.Any.fromFunction1(attach), dispose = js.Any.fromFunction0(dispose), getAnchor = js.Any.fromFunction0(getAnchor), getChildSections = js.Any.fromFunction0(getChildSections), getParentSection = js.Any.fromFunction0(getParentSection), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener))
   
     __obj.asInstanceOf[XTextSection]
   }

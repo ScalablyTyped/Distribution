@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("adone.collection.DefaultMap")
 @js.native
 class DefaultMap[K, V] ()
-  extends nodeLib.Map[K, V] {
+  extends stdLib.Map[K, V] {
   def this(factory: js.Function1[/* key */ K, V]) = this()
   def this(factory: org.scalablytyped.runtime.StringDictionary[V]) = this()
-  def this(factory: js.Function1[/* key */ K, V], iterable: nodeLib.Iterable[js.Tuple2[K, V]]) = this()
-  def this(factory: org.scalablytyped.runtime.StringDictionary[V], iterable: nodeLib.Iterable[js.Tuple2[K, V]]) = this()
+  def this(factory: js.Function1[/* key */ K, V], iterable: stdLib.Iterable[js.Tuple2[K, V]]) = this()
+  def this(factory: org.scalablytyped.runtime.StringDictionary[V], iterable: stdLib.Iterable[js.Tuple2[K, V]]) = this()
 }
 

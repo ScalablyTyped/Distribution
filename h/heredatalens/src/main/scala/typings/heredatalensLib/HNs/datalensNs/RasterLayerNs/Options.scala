@@ -50,27 +50,16 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    buffer: js.Function1[/* zoom */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, scala.Double] = null,
-    dataToRows: js.Function4[
-      /* data */ heredatalensLib.HNs.datalensNs.ServiceNs.Data, 
-      /* x */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.X, 
-      /* y */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Y, 
-      /* zoom */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, 
-      js.Array[Row]
-    ] = null,
-    renderTile: js.Function3[
-      /* points */ js.Array[TilePoint], 
-      /* canvas */ stdLib.HTMLCanvasElement, 
-      /* zoom */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, 
-      scala.Unit
-    ] = null,
-    rowToTilePoint: js.Function3[/* row */ Row, /* x */ X, /* y */ Y, TilePoint] = null
+    buffer: /* zoom */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom => scala.Double = null,
+    dataToRows: (/* data */ heredatalensLib.HNs.datalensNs.ServiceNs.Data, /* x */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.X, /* y */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Y, /* zoom */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom) => js.Array[Row] = null,
+    renderTile: (/* points */ js.Array[TilePoint], /* canvas */ stdLib.HTMLCanvasElement, /* zoom */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom) => scala.Unit = null,
+    rowToTilePoint: (/* row */ Row, /* x */ X, /* y */ Y) => TilePoint = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer)
-    if (dataToRows != null) __obj.updateDynamic("dataToRows")(dataToRows)
-    if (renderTile != null) __obj.updateDynamic("renderTile")(renderTile)
-    if (rowToTilePoint != null) __obj.updateDynamic("rowToTilePoint")(rowToTilePoint)
+    if (buffer != null) __obj.updateDynamic("buffer")(js.Any.fromFunction1(buffer))
+    if (dataToRows != null) __obj.updateDynamic("dataToRows")(js.Any.fromFunction4(dataToRows))
+    if (renderTile != null) __obj.updateDynamic("renderTile")(js.Any.fromFunction3(renderTile))
+    if (rowToTilePoint != null) __obj.updateDynamic("rowToTilePoint")(js.Any.fromFunction3(rowToTilePoint))
     __obj.asInstanceOf[Options]
   }
 }

@@ -79,37 +79,25 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    rowToTilePoint: js.Function3[Row, X, Y, TilePoint],
+    rowToTilePoint: (Row, X, Y) => TilePoint,
     aggregation: Aggregation = null,
-    alphaScale: js.Function1[/* scale */ scala.Double, scala.Double] = null,
+    alphaScale: /* scale */ scala.Double => scala.Double = null,
     bandwidth: Bandwidth | BandwidthStop | js.Array[BandwidthStop] | BandwidthCallback = null,
-    colorScale: js.Function1[/* scale */ scala.Double, java.lang.String] = null,
-    countRange: js.Function1[
-      /* zoom */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, 
-      js.Array[scala.Double]
-    ] = null,
-    dataToRows: js.Function4[
-      /* data */ heredatalensLib.HNs.datalensNs.ServiceNs.Data, 
-      /* x */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.X, 
-      /* y */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Y, 
-      /* zoom */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, 
-      js.Array[Row]
-    ] = null,
+    colorScale: /* scale */ scala.Double => java.lang.String = null,
+    countRange: /* zoom */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom => js.Array[scala.Double] = null,
+    dataToRows: (/* data */ heredatalensLib.HNs.datalensNs.ServiceNs.Data, /* x */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.X, /* y */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Y, /* zoom */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom) => js.Array[Row] = null,
     inputScale: InputScale = null,
-    valueRange: js.Function1[
-      /* zoom */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, 
-      js.Array[scala.Double]
-    ] = null
+    valueRange: /* zoom */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom => js.Array[scala.Double] = null
   ): Options = {
-    val __obj = js.Dynamic.literal(rowToTilePoint = rowToTilePoint)
+    val __obj = js.Dynamic.literal(rowToTilePoint = js.Any.fromFunction3(rowToTilePoint))
     if (aggregation != null) __obj.updateDynamic("aggregation")(aggregation)
-    if (alphaScale != null) __obj.updateDynamic("alphaScale")(alphaScale)
+    if (alphaScale != null) __obj.updateDynamic("alphaScale")(js.Any.fromFunction1(alphaScale))
     if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
-    if (colorScale != null) __obj.updateDynamic("colorScale")(colorScale)
-    if (countRange != null) __obj.updateDynamic("countRange")(countRange)
-    if (dataToRows != null) __obj.updateDynamic("dataToRows")(dataToRows)
+    if (colorScale != null) __obj.updateDynamic("colorScale")(js.Any.fromFunction1(colorScale))
+    if (countRange != null) __obj.updateDynamic("countRange")(js.Any.fromFunction1(countRange))
+    if (dataToRows != null) __obj.updateDynamic("dataToRows")(js.Any.fromFunction4(dataToRows))
     if (inputScale != null) __obj.updateDynamic("inputScale")(inputScale)
-    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange)
+    if (valueRange != null) __obj.updateDynamic("valueRange")(js.Any.fromFunction1(valueRange))
     __obj.asInstanceOf[Options]
   }
 }

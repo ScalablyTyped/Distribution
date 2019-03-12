@@ -22,18 +22,14 @@ trait Route[C /* <: Context */, R] extends js.Object {
 object Route {
   @scala.inline
   def apply[C /* <: Context */, R](
-    action: js.Function2[
-      /* context */ (RouteContext[C, R]) with C, 
-      /* params */ Params, 
-      R | js.Promise[R] | scala.Unit
-    ] = null,
+    action: (/* context */ (RouteContext[C, R]) with C, /* params */ Params) => R | js.Promise[R] | scala.Unit = null,
     children: Routes[C, R] = null,
     name: java.lang.String = null,
     parent: Route[_, _] = null,
     path: java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp]) = null
   ): Route[C, R] = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
+    if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction2(action))
     if (children != null) __obj.updateDynamic("children")(children)
     if (name != null) __obj.updateDynamic("name")(name)
     if (parent != null) __obj.updateDynamic("parent")(parent)

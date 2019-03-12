@@ -23,15 +23,15 @@ trait JasmineJQueryEvents extends js.Object {
 object JasmineJQueryEvents {
   @scala.inline
   def apply(
-    args: js.Function2[java.lang.String, java.lang.String, js.Any],
-    cleanUp: js.Function0[scala.Unit],
-    spyOn: js.Function2[java.lang.String, java.lang.String, JQueryEventSpy],
-    wasPrevented: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    wasStopped: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    wasTriggered: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    wasTriggeredWith: js.Function4[java.lang.String, java.lang.String, js.Any, jasmineLib.jasmineNs.Env, scala.Boolean]
+    args: (java.lang.String, java.lang.String) => js.Any,
+    cleanUp: () => scala.Unit,
+    spyOn: (java.lang.String, java.lang.String) => JQueryEventSpy,
+    wasPrevented: (java.lang.String, java.lang.String) => scala.Boolean,
+    wasStopped: (java.lang.String, java.lang.String) => scala.Boolean,
+    wasTriggered: (java.lang.String, java.lang.String) => scala.Boolean,
+    wasTriggeredWith: (java.lang.String, java.lang.String, js.Any, jasmineLib.jasmineNs.Env) => scala.Boolean
   ): JasmineJQueryEvents = {
-    val __obj = js.Dynamic.literal(args = args, cleanUp = cleanUp, spyOn = spyOn, wasPrevented = wasPrevented, wasStopped = wasStopped, wasTriggered = wasTriggered, wasTriggeredWith = wasTriggeredWith)
+    val __obj = js.Dynamic.literal(args = js.Any.fromFunction2(args), cleanUp = js.Any.fromFunction0(cleanUp), spyOn = js.Any.fromFunction2(spyOn), wasPrevented = js.Any.fromFunction2(wasPrevented), wasStopped = js.Any.fromFunction2(wasStopped), wasTriggered = js.Any.fromFunction2(wasTriggered), wasTriggeredWith = js.Any.fromFunction4(wasTriggeredWith))
   
     __obj.asInstanceOf[JasmineJQueryEvents]
   }

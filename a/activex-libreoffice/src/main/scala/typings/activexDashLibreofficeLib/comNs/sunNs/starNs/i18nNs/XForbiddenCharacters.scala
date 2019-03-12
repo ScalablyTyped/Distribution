@@ -28,19 +28,15 @@ trait XForbiddenCharacters
 object XForbiddenCharacters {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getForbiddenCharacters: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, ForbiddenCharacters],
-    hasForbiddenCharacters: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeForbiddenCharacters: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit],
-    setForbiddenCharacters: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      ForbiddenCharacters, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    getForbiddenCharacters: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => ForbiddenCharacters,
+    hasForbiddenCharacters: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeForbiddenCharacters: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => scala.Unit,
+    setForbiddenCharacters: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, ForbiddenCharacters) => scala.Unit
   ): XForbiddenCharacters = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getForbiddenCharacters = getForbiddenCharacters, hasForbiddenCharacters = hasForbiddenCharacters, queryInterface = queryInterface, release = release, removeForbiddenCharacters = removeForbiddenCharacters, setForbiddenCharacters = setForbiddenCharacters)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getForbiddenCharacters = js.Any.fromFunction1(getForbiddenCharacters), hasForbiddenCharacters = js.Any.fromFunction1(hasForbiddenCharacters), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeForbiddenCharacters = js.Any.fromFunction1(removeForbiddenCharacters), setForbiddenCharacters = js.Any.fromFunction2(setForbiddenCharacters))
   
     __obj.asInstanceOf[XForbiddenCharacters]
   }

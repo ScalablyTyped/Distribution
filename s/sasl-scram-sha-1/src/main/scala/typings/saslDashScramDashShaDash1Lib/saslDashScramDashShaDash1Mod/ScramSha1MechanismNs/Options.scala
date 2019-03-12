@@ -11,9 +11,9 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(genNonce: js.Function0[scala.Double] = null): Options = {
+  def apply(genNonce: () => scala.Double = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (genNonce != null) __obj.updateDynamic("genNonce")(genNonce)
+    if (genNonce != null) __obj.updateDynamic("genNonce")(js.Any.fromFunction0(genNonce))
     __obj.asInstanceOf[Options]
   }
 }

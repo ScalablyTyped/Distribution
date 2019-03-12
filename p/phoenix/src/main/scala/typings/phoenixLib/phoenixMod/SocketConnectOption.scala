@@ -20,17 +20,17 @@ trait SocketConnectOption extends js.Object {
 object SocketConnectOption {
   @scala.inline
   def apply(
-    decode: js.Function2[java.lang.String, js.Function, js.Any],
-    encode: js.Function2[js.Object, js.Function, js.Any],
+    decode: (java.lang.String, js.Function) => js.Any,
+    encode: (js.Object, js.Function) => js.Any,
     heartbeatIntervalMs: scala.Double,
-    logger: js.Function3[java.lang.String, java.lang.String, js.Any, scala.Unit],
+    logger: (java.lang.String, java.lang.String, js.Any) => scala.Unit,
     longpollernumber: scala.Double,
     params: js.Object | js.Function,
     reconnectAfterMs: scala.Double,
     timeout: scala.Double,
     transport: js.Any
   ): SocketConnectOption = {
-    val __obj = js.Dynamic.literal(decode = decode, encode = encode, heartbeatIntervalMs = heartbeatIntervalMs, logger = logger, longpollernumber = longpollernumber, params = params.asInstanceOf[js.Any], reconnectAfterMs = reconnectAfterMs, timeout = timeout, transport = transport)
+    val __obj = js.Dynamic.literal(decode = js.Any.fromFunction2(decode), encode = js.Any.fromFunction2(encode), heartbeatIntervalMs = heartbeatIntervalMs, logger = js.Any.fromFunction3(logger), longpollernumber = longpollernumber, params = params.asInstanceOf[js.Any], reconnectAfterMs = reconnectAfterMs, timeout = timeout, transport = transport)
   
     __obj.asInstanceOf[SocketConnectOption]
   }

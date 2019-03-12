@@ -24,18 +24,13 @@ trait ILogOptions extends js.Object {
 object ILogOptions {
   @scala.inline
   def apply(
-    action: js.Function3[
-      /* message */ java.lang.String, 
-      /* tags */ java.lang.String, 
-      /* type */ java.lang.String, 
-      scala.Unit
-    ] = null,
+    action: (/* message */ java.lang.String, /* tags */ java.lang.String, /* type */ java.lang.String) => scala.Unit = null,
     excludeTags: java.lang.String = null,
     tags: java.lang.String = null,
     `type`: java.lang.String = null
   ): ILogOptions = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
+    if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction3(action))
     if (excludeTags != null) __obj.updateDynamic("excludeTags")(excludeTags)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

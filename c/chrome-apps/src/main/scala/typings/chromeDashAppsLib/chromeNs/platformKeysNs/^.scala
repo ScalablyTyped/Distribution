@@ -55,13 +55,7 @@ object ^ extends js.Object {
     * @param callback Will provide *matches*: The list of certificates that match the request, that the
     *                 app has permission for and, if *interactive* is true, that were selected by the user.
     */
-  def selectClientCertificates(
-    details: chromeDashAppsLib.chromeNs.platformKeysNs.SelectDetails,
-    callback: js.Function1[
-      /* matches */ js.Array[chromeDashAppsLib.chromeNs.platformKeysNs.Match], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def selectClientCertificates(details: SelectDetails, callback: js.Function1[/* matches */ js.Array[Match], scala.Unit]): scala.Unit = js.native
   /**
     * An implementation of WebCrypto's SubtleCrypto
     * that allows crypto operations on keys of client
@@ -80,12 +74,6 @@ object ^ extends js.Object {
     * The implementation is supposed to respect the EKU serverAuth and to
     * support subject alternative names.
     */
-  def verifyTLSServerCertificate(
-    details: chromeDashAppsLib.chromeNs.platformKeysNs.VerificationDetails,
-    callback: js.Function1[
-      /* result */ chromeDashAppsLib.chromeNs.platformKeysNs.VerificationResult, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def verifyTLSServerCertificate(details: VerificationDetails, callback: js.Function1[/* result */ VerificationResult, scala.Unit]): scala.Unit = js.native
 }
 

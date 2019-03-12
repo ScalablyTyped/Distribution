@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("google.script")
 @js.native
 object ^ extends js.Object {
-  val run: googleDotScriptDotClientDashSideLib.googleNs.scriptNs.Runner = js.native
+  val run: Runner = js.native
 }
 

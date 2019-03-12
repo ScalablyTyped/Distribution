@@ -12,8 +12,8 @@ trait AccountingBook extends js.Object {
 
 object AccountingBook {
   @scala.inline
-  def apply(getId: js.Function0[scala.Double], isPrimary: js.Function0[scala.Boolean]): AccountingBook = {
-    val __obj = js.Dynamic.literal(getId = getId, isPrimary = isPrimary)
+  def apply(getId: () => scala.Double, isPrimary: () => scala.Boolean): AccountingBook = {
+    val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId), isPrimary = js.Any.fromFunction0(isPrimary))
   
     __obj.asInstanceOf[AccountingBook]
   }

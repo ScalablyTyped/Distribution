@@ -10,7 +10,7 @@ trait Options
   var customLogLevel: js.UndefOr[
     js.Function2[
       /* res */ nodeLib.httpMod.ServerResponse, 
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       pinoLib.pinoMod.PNs.Level
     ]
   ] = js.undefined
@@ -27,11 +27,7 @@ object Options {
     browser: pinoLib.Anon_AsObject = null,
     changeLevelName: java.lang.String = null,
     customLevels: org.scalablytyped.runtime.StringDictionary[scala.Double] = null,
-    customLogLevel: js.Function2[
-      /* res */ nodeLib.httpMod.ServerResponse, 
-      /* error */ nodeLib.Error, 
-      pinoLib.pinoMod.PNs.Level
-    ] = null,
+    customLogLevel: (/* res */ nodeLib.httpMod.ServerResponse, /* error */ stdLib.Error) => pinoLib.pinoMod.PNs.Level = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     genReqId: GenReqId = null,
     level: pinoLib.pinoMod.PNs.LevelWithSilent | java.lang.String = null,
@@ -39,7 +35,7 @@ object Options {
     logger: pinoLib.pinoMod.PNs.Logger = null,
     messageKey: java.lang.String = null,
     name: java.lang.String = null,
-    onTerminated: js.Function2[/* eventName */ java.lang.String, /* err */ js.Any, scala.Unit] = null,
+    onTerminated: (/* eventName */ java.lang.String, /* err */ js.Any) => scala.Unit = null,
     prettyPrint: scala.Boolean | pinoLib.pinoMod.PNs.PrettyOptions = null,
     redact: js.Array[java.lang.String] | pinoLib.pinoMod.PNs.redactOptions = null,
     safe: js.UndefOr[scala.Boolean] = js.undefined,
@@ -55,7 +51,7 @@ object Options {
     if (browser != null) __obj.updateDynamic("browser")(browser)
     if (changeLevelName != null) __obj.updateDynamic("changeLevelName")(changeLevelName)
     if (customLevels != null) __obj.updateDynamic("customLevels")(customLevels)
-    if (customLogLevel != null) __obj.updateDynamic("customLogLevel")(customLogLevel)
+    if (customLogLevel != null) __obj.updateDynamic("customLogLevel")(js.Any.fromFunction2(customLogLevel))
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (genReqId != null) __obj.updateDynamic("genReqId")(genReqId)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
@@ -63,7 +59,7 @@ object Options {
     if (logger != null) __obj.updateDynamic("logger")(logger)
     if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onTerminated != null) __obj.updateDynamic("onTerminated")(onTerminated)
+    if (onTerminated != null) __obj.updateDynamic("onTerminated")(js.Any.fromFunction2(onTerminated))
     if (prettyPrint != null) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
     if (redact != null) __obj.updateDynamic("redact")(redact.asInstanceOf[js.Any])
     if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe)

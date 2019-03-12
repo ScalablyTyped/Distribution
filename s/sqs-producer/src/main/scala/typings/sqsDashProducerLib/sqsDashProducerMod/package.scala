@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object sqsDashProducerMod {
-  type ProducerCallback[T] = js.Function2[/* err */ js.UndefOr[nodeLib.Error], /* data */ js.UndefOr[T], js.Any]
+  type ProducerCallback[T] = js.Function2[/* err */ js.UndefOr[stdLib.Error], /* data */ js.UndefOr[T], js.Any]
 }

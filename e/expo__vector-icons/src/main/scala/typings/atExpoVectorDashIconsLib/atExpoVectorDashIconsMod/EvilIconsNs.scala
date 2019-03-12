@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation._
 object EvilIconsNs extends js.Object {
   @js.native
   class Button ()
-    extends reactDashNativeDashVectorDashIconsLib.eviliconsMod.defaultNs.Button
+    extends reactDashNativeDashVectorDashIconsLib.evilIconsMod.defaultNs.Button
   
   @js.native
   class TabBarItem ()
-    extends reactDashNativeDashVectorDashIconsLib.eviliconsMod.defaultNs.TabBarItem
+    extends reactDashNativeDashVectorDashIconsLib.evilIconsMod.defaultNs.TabBarItem
   
   @js.native
   class TabBarItemIOS ()
-    extends reactDashNativeDashVectorDashIconsLib.eviliconsMod.defaultNs.TabBarItemIOS
+    extends reactDashNativeDashVectorDashIconsLib.evilIconsMod.defaultNs.TabBarItemIOS
   
   @js.native
   class ToolbarAndroid ()
-    extends reactDashNativeDashVectorDashIconsLib.eviliconsMod.defaultNs.ToolbarAndroid
+    extends reactDashNativeDashVectorDashIconsLib.evilIconsMod.defaultNs.ToolbarAndroid
   
 }
 

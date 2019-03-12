@@ -18,13 +18,13 @@ object RevokedCertificate {
   @scala.inline
   def apply(
     crlEntryExtensions: pkijsLib.srcExtensionsMod.default,
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     revocationDate: pkijsLib.srcTimeMod.default,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     userCertificate: asn1jsLib.asn1jsMod.Integer
   ): RevokedCertificate = {
-    val __obj = js.Dynamic.literal(crlEntryExtensions = crlEntryExtensions, fromSchema = fromSchema, revocationDate = revocationDate, toJSON = toJSON, toSchema = toSchema, userCertificate = userCertificate)
+    val __obj = js.Dynamic.literal(crlEntryExtensions = crlEntryExtensions, fromSchema = js.Any.fromFunction1(fromSchema), revocationDate = revocationDate, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), userCertificate = userCertificate)
   
     __obj.asInstanceOf[RevokedCertificate]
   }

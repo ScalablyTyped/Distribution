@@ -25,36 +25,15 @@ trait AdunitsResource extends js.Object {
 object AdunitsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AccountIdAdClientId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AdUnit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AccountIdAdClientId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AdUnit]
-    ],
-    getAdCode: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AccountIdAdClientIdAdUnitId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AdCode]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AccountId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AdUnit]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AccountIdAdClientIdAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AdUnits]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AccountIdAdClientId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AdUnit]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AccountId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AdUnit]
-    ]
+    delete: gapiDotClientDotAdsensehostLib.Anon_AccountIdAdClientId => gapiDotClientLib.gapiNs.clientNs.Request[AdUnit],
+    get: gapiDotClientDotAdsensehostLib.Anon_AccountIdAdClientId => gapiDotClientLib.gapiNs.clientNs.Request[AdUnit],
+    getAdCode: gapiDotClientDotAdsensehostLib.Anon_AccountIdAdClientIdAdUnitId => gapiDotClientLib.gapiNs.clientNs.Request[AdCode],
+    insert: gapiDotClientDotAdsensehostLib.Anon_AccountId => gapiDotClientLib.gapiNs.clientNs.Request[AdUnit],
+    list: gapiDotClientDotAdsensehostLib.Anon_AccountIdAdClientIdAlt => gapiDotClientLib.gapiNs.clientNs.Request[AdUnits],
+    patch: gapiDotClientDotAdsensehostLib.Anon_AccountIdAdClientId => gapiDotClientLib.gapiNs.clientNs.Request[AdUnit],
+    update: gapiDotClientDotAdsensehostLib.Anon_AccountId => gapiDotClientLib.gapiNs.clientNs.Request[AdUnit]
   ): AdunitsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, getAdCode = getAdCode, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getAdCode = js.Any.fromFunction1(getAdCode), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[AdunitsResource]
   }

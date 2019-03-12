@@ -21,20 +21,11 @@ trait MetricDescriptorsResource extends js.Object {
 object MetricDescriptorsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotCloudmonitoringLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[MetricDescriptor]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotCloudmonitoringLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DeleteMetricDescriptorResponse]
-    ],
-    list: js.Function1[
-      gapiDotClientDotCloudmonitoringLib.Anon_AltCount, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListMetricDescriptorsResponse]
-    ]
+    create: gapiDotClientDotCloudmonitoringLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[MetricDescriptor],
+    delete: gapiDotClientDotCloudmonitoringLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[DeleteMetricDescriptorResponse],
+    list: gapiDotClientDotCloudmonitoringLib.Anon_AltCount => gapiDotClientLib.gapiNs.clientNs.Request[ListMetricDescriptorsResponse]
   ): MetricDescriptorsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, list = list)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[MetricDescriptorsResource]
   }

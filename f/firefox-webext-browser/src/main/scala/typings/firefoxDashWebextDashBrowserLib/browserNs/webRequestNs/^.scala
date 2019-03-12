@@ -21,14 +21,14 @@ object ^ extends js.Object {
     * @returns If "blocking" is specified in the "extraInfoSpec" parameter, the event listener should return an object
     *     of this type.
     */
-  val onAuthRequired: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs._WebRequestOnAuthRequiredEvent[
+  val onAuthRequired: _WebRequestOnAuthRequiredEvent[
     js.Function1[
       /* details */ firefoxDashWebextDashBrowserLib.Anon_Challenger, 
-      firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.BlockingResponse | js.Promise[firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.BlockingResponse] | scala.Unit
+      BlockingResponse | js.Promise[BlockingResponse] | scala.Unit
     ]
   ] = js.native
   /** Fired when a server-initiated redirect is about to occur. */
-  val onBeforeRedirect: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs._WebRequestOnBeforeRedirectEvent[
+  val onBeforeRedirect: _WebRequestOnBeforeRedirectEvent[
     js.Function1[
       /* details */ firefoxDashWebextDashBrowserLib.Anon_DocumentUrlFrameIdFromCacheIp, 
       scala.Unit
@@ -40,10 +40,10 @@ object ^ extends js.Object {
     * @returns If "blocking" is specified in the "extraInfoSpec" parameter, the event listener should return an object
     *     of this type.
     */
-  val onBeforeRequest: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs._WebRequestOnBeforeRequestEvent[
+  val onBeforeRequest: _WebRequestOnBeforeRequestEvent[
     js.Function1[
       /* details */ firefoxDashWebextDashBrowserLib.Anon_DocumentUrlFrameId, 
-      firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.BlockingResponse | js.Promise[firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.BlockingResponse] | scala.Unit
+      BlockingResponse | js.Promise[BlockingResponse] | scala.Unit
     ]
   ] = js.native
   /**
@@ -52,21 +52,21 @@ object ^ extends js.Object {
     * @returns If "blocking" is specified in the "extraInfoSpec" parameter, the event listener should return an object
     *     of this type.
     */
-  val onBeforeSendHeaders: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs._WebRequestOnBeforeSendHeadersEvent[
+  val onBeforeSendHeaders: _WebRequestOnBeforeSendHeadersEvent[
     js.Function1[
       /* details */ firefoxDashWebextDashBrowserLib.Anon_DocumentUrlFrameIdMethod, 
-      firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.BlockingResponse | js.Promise[firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.BlockingResponse] | scala.Unit
+      BlockingResponse | js.Promise[BlockingResponse] | scala.Unit
     ]
   ] = js.native
   /** Fired when a request is completed. */
-  val onCompleted: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs._WebRequestOnCompletedEvent[
+  val onCompleted: _WebRequestOnCompletedEvent[
     js.Function1[
       /* details */ firefoxDashWebextDashBrowserLib.Anon_DocumentUrlFrameIdFromCache, 
       scala.Unit
     ]
   ] = js.native
   /** Fired when an error occurs. */
-  val onErrorOccurred: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs._WebRequestOnErrorOccurredEvent[
+  val onErrorOccurred: _WebRequestOnErrorOccurredEvent[
     js.Function1[/* details */ firefoxDashWebextDashBrowserLib.Anon_DocumentUrlError, scala.Unit]
   ] = js.native
   /**
@@ -74,17 +74,17 @@ object ^ extends js.Object {
     * @returns If "blocking" is specified in the "extraInfoSpec" parameter, the event listener should return an object
     *     of this type.
     */
-  val onHeadersReceived: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs._WebRequestOnHeadersReceivedEvent[
+  val onHeadersReceived: _WebRequestOnHeadersReceivedEvent[
     js.Function1[
       /* details */ firefoxDashWebextDashBrowserLib.Anon_DocumentUrlFrameIdMethodOriginUrl, 
-      firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.BlockingResponse | js.Promise[firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.BlockingResponse] | scala.Unit
+      BlockingResponse | js.Promise[BlockingResponse] | scala.Unit
     ]
   ] = js.native
   /**
     * Fired when the first byte of the response body is received. For HTTP requests, this means that the status line
     * and response headers are available.
     */
-  val onResponseStarted: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs._WebRequestOnResponseStartedEvent[
+  val onResponseStarted: _WebRequestOnResponseStartedEvent[
     js.Function1[
       /* details */ firefoxDashWebextDashBrowserLib.Anon_DocumentUrlFrameIdFromCache, 
       scala.Unit
@@ -94,7 +94,7 @@ object ^ extends js.Object {
     * Fired just before a request is going to be sent to the server (modifications of previous onBeforeSendHeaders
     * callbacks are visible by the time onSendHeaders is fired).
     */
-  val onSendHeaders: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs._WebRequestOnSendHeadersEvent[
+  val onSendHeaders: _WebRequestOnSendHeadersEvent[
     js.Function1[
       /* details */ firefoxDashWebextDashBrowserLib.Anon_DocumentUrlFrameIdMethod, 
       scala.Unit
@@ -105,8 +105,8 @@ object ^ extends js.Object {
   /**
     * Retrieves the security information for the request. Returns a promise that will resolve to a SecurityInfo object.
     */
-  def getSecurityInfo(requestId: java.lang.String): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.SecurityInfo] = js.native
-  def getSecurityInfo(requestId: java.lang.String, options: firefoxDashWebextDashBrowserLib.Anon_CertificateChain): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.SecurityInfo] = js.native
+  def getSecurityInfo(requestId: java.lang.String): js.Promise[SecurityInfo] = js.native
+  def getSecurityInfo(requestId: java.lang.String, options: firefoxDashWebextDashBrowserLib.Anon_CertificateChain): js.Promise[SecurityInfo] = js.native
   /* webRequest functions */
   /**
     * Needs to be called when the behavior of the webRequest handlers has changed to prevent incorrect handling due to

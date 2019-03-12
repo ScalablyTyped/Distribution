@@ -24,13 +24,13 @@ trait XCommandInfoChangeListener
 object XCommandInfoChangeListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    commandInfoChange: js.Function1[CommandInfoChangeEvent, scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    commandInfoChange: CommandInfoChangeEvent => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCommandInfoChangeListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, commandInfoChange = commandInfoChange, disposing = disposing, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), commandInfoChange = js.Any.fromFunction1(commandInfoChange), disposing = js.Any.fromFunction1(disposing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCommandInfoChangeListener]
   }

@@ -15,8 +15,8 @@ trait IDesktopNotificationProvider extends js.Object {
 
 object IDesktopNotificationProvider {
   @scala.inline
-  def apply(config: js.Function1[IDesktopNotificationOptions, scala.Unit]): IDesktopNotificationProvider = {
-    val __obj = js.Dynamic.literal(config = config)
+  def apply(config: IDesktopNotificationOptions => scala.Unit): IDesktopNotificationProvider = {
+    val __obj = js.Dynamic.literal(config = js.Any.fromFunction1(config))
   
     __obj.asInstanceOf[IDesktopNotificationProvider]
   }

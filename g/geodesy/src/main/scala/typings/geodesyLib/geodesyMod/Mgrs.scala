@@ -11,7 +11,7 @@ class Mgrs protected () extends js.Object {
   def this(zone: scala.Double, band: java.lang.String, e100k: java.lang.String, n100k: java.lang.String, easting: scala.Double, northing: scala.Double) = this()
   def this(zone: scala.Double, band: java.lang.String, e100k: java.lang.String, n100k: java.lang.String, easting: scala.Double, northing: scala.Double, datum: datum) = this()
   var band: java.lang.String = js.native
-  var datum: datum = js.native
+  var datum: geodesyLib.geodesyMod.datum = js.native
   var e100k: java.lang.String = js.native
   var e100kLetters: java.lang.String = js.native
   var easting: scala.Double = js.native

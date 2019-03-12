@@ -15,12 +15,12 @@ trait MediaDimensions extends js.Object {
 object MediaDimensions {
   @scala.inline
   def apply(
-    getFullMediaDimensions: js.Function0[Dimensions],
-    getPreviewMediaDimensions: js.Function0[Dimensions],
-    getShrunkenMediaDimensions: js.Function0[Dimensions],
-    getVideoThumbnailDimensions: js.Function0[Dimensions]
+    getFullMediaDimensions: () => Dimensions,
+    getPreviewMediaDimensions: () => Dimensions,
+    getShrunkenMediaDimensions: () => Dimensions,
+    getVideoThumbnailDimensions: () => Dimensions
   ): MediaDimensions = {
-    val __obj = js.Dynamic.literal(getFullMediaDimensions = getFullMediaDimensions, getPreviewMediaDimensions = getPreviewMediaDimensions, getShrunkenMediaDimensions = getShrunkenMediaDimensions, getVideoThumbnailDimensions = getVideoThumbnailDimensions)
+    val __obj = js.Dynamic.literal(getFullMediaDimensions = js.Any.fromFunction0(getFullMediaDimensions), getPreviewMediaDimensions = js.Any.fromFunction0(getPreviewMediaDimensions), getShrunkenMediaDimensions = js.Any.fromFunction0(getShrunkenMediaDimensions), getVideoThumbnailDimensions = js.Any.fromFunction0(getVideoThumbnailDimensions))
   
     __obj.asInstanceOf[MediaDimensions]
   }

@@ -8,12 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("drivelist", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def list(
-    callback: js.Function2[
-      /* error */ js.Any, 
-      /* drives */ js.Array[drivelistLib.drivelistMod.Drive], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def list(callback: js.Function2[/* error */ js.Any, /* drives */ js.Array[Drive], scala.Unit]): scala.Unit = js.native
 }
 

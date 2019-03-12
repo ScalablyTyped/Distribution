@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IWrapperOptions extends js.Object {
-  var apiCheck: js.UndefOr[
-    org.scalablytyped.runtime.StringDictionary[angularLib.angularMod.Global.Function]
-  ] = js.undefined
+  var apiCheck: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Function]] = js.undefined
   var apiCheckFunction: js.UndefOr[java.lang.String] = js.undefined
    //'throw' or 'warn
   var apiCheckInstance: js.UndefOr[js.Any] = js.undefined
@@ -18,13 +16,13 @@ trait IWrapperOptions extends js.Object {
   var template: js.UndefOr[java.lang.String] = js.undefined
   var templateUrl: js.UndefOr[java.lang.String] = js.undefined
   var types: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var validateOptions: js.UndefOr[angularLib.angularMod.Global.Function] = js.undefined
+  var validateOptions: js.UndefOr[js.Function] = js.undefined
 }
 
 object IWrapperOptions {
   @scala.inline
   def apply(
-    apiCheck: org.scalablytyped.runtime.StringDictionary[angularLib.angularMod.Global.Function] = null,
+    apiCheck: org.scalablytyped.runtime.StringDictionary[js.Function] = null,
     apiCheckFunction: java.lang.String = null,
     apiCheckInstance: js.Any = null,
     apiCheckOptions: js.Object = null,
@@ -33,7 +31,7 @@ object IWrapperOptions {
     template: java.lang.String = null,
     templateUrl: java.lang.String = null,
     types: js.Array[java.lang.String] = null,
-    validateOptions: angularLib.angularMod.Global.Function = null
+    validateOptions: js.Function = null
   ): IWrapperOptions = {
     val __obj = js.Dynamic.literal()
     if (apiCheck != null) __obj.updateDynamic("apiCheck")(apiCheck)

@@ -18,16 +18,9 @@ trait OnChildClickListener extends js.Object {
 object OnChildClickListener {
   @scala.inline
   def apply(
-    onChildClick: js.Function5[
-      androiduixLib.androidNs.widgetNs.ExpandableListView, 
-      androiduixLib.androidNs.viewNs.View, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Boolean
-    ]
+    onChildClick: (androiduixLib.androidNs.widgetNs.ExpandableListView, androiduixLib.androidNs.viewNs.View, scala.Double, scala.Double, scala.Double) => scala.Boolean
   ): OnChildClickListener = {
-    val __obj = js.Dynamic.literal(onChildClick = onChildClick)
+    val __obj = js.Dynamic.literal(onChildClick = js.Any.fromFunction5(onChildClick))
   
     __obj.asInstanceOf[OnChildClickListener]
   }

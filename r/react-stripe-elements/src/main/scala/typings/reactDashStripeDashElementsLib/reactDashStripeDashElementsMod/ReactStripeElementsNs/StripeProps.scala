@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait StripeProps extends js.Object {
-  var paymentRequest: js.Function1[
+  @JSName("paymentRequest")
+  var paymentRequest_Original: js.Function1[
     /* options */ stripeDashV3Lib.stripeNs.paymentRequestNs.StripePaymentRequestOptions, 
     stripeDashV3Lib.stripeNs.paymentRequestNs.StripePaymentRequest
   ] = js.native
@@ -15,5 +16,6 @@ trait StripeProps extends js.Object {
   def createSource(sourceData: SourceOptions): js.Promise[SourceResponse] = js.native
   def createToken(): js.Promise[PatchedTokenResponse] = js.native
   def createToken(options: TokenOptions): js.Promise[PatchedTokenResponse] = js.native
+  def paymentRequest(options: stripeDashV3Lib.stripeNs.paymentRequestNs.StripePaymentRequestOptions): stripeDashV3Lib.stripeNs.paymentRequestNs.StripePaymentRequest = js.native
 }
 

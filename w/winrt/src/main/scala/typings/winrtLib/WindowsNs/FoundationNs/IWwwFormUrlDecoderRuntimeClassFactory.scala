@@ -11,8 +11,8 @@ trait IWwwFormUrlDecoderRuntimeClassFactory extends js.Object {
 
 object IWwwFormUrlDecoderRuntimeClassFactory {
   @scala.inline
-  def apply(createWwwFormUrlDecoder: js.Function1[java.lang.String, WwwFormUrlDecoder]): IWwwFormUrlDecoderRuntimeClassFactory = {
-    val __obj = js.Dynamic.literal(createWwwFormUrlDecoder = createWwwFormUrlDecoder)
+  def apply(createWwwFormUrlDecoder: java.lang.String => WwwFormUrlDecoder): IWwwFormUrlDecoderRuntimeClassFactory = {
+    val __obj = js.Dynamic.literal(createWwwFormUrlDecoder = js.Any.fromFunction1(createWwwFormUrlDecoder))
   
     __obj.asInstanceOf[IWwwFormUrlDecoderRuntimeClassFactory]
   }

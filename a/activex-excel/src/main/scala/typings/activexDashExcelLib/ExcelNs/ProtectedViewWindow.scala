@@ -19,7 +19,7 @@ class ProtectedViewWindow protected () extends js.Object {
   var Visible: scala.Boolean = js.native
   var Width: scala.Double = js.native
   var WindowState: XlProtectedViewWindowState = js.native
-  val Workbook: Workbook = js.native
+  val Workbook: activexDashExcelLib.ExcelNs.Workbook = js.native
   val _Default: java.lang.String = js.native
   def Activate(): scala.Unit = js.native
   def Close(): scala.Boolean = js.native

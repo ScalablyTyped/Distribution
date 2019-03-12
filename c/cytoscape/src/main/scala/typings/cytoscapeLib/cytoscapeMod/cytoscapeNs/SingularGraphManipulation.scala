@@ -27,8 +27,8 @@ trait SingularGraphManipulation extends js.Object {
 
 object SingularGraphManipulation {
   @scala.inline
-  def apply(cy: js.Function0[Core], inside: js.Function0[scala.Boolean], removed: js.Function0[scala.Boolean]): SingularGraphManipulation = {
-    val __obj = js.Dynamic.literal(cy = cy, inside = inside, removed = removed)
+  def apply(cy: () => Core, inside: () => scala.Boolean, removed: () => scala.Boolean): SingularGraphManipulation = {
+    val __obj = js.Dynamic.literal(cy = js.Any.fromFunction0(cy), inside = js.Any.fromFunction0(inside), removed = js.Any.fromFunction0(removed))
   
     __obj.asInstanceOf[SingularGraphManipulation]
   }

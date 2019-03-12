@@ -16,7 +16,7 @@ object ^ extends js.Object {
     * Convert the given value in bytes into a string.
     */
   def apply(value: scala.Double): java.lang.String = js.native
-  def apply(value: scala.Double, options: bytesLib.bytesMod.BytesOptions): java.lang.String = js.native
+  def apply(value: scala.Double, options: BytesOptions): java.lang.String = js.native
   /**
     * Format the given value in bytes into a string.
     *
@@ -24,7 +24,7 @@ object ^ extends js.Object {
     * If it is a float, it is rounded.
     */
   def format(value: scala.Double): java.lang.String = js.native
-  def format(value: scala.Double, options: bytesLib.bytesMod.BytesOptions): java.lang.String = js.native
+  def format(value: scala.Double, options: BytesOptions): java.lang.String = js.native
   /**
     * Parse the string value into an integer in bytes.
     *

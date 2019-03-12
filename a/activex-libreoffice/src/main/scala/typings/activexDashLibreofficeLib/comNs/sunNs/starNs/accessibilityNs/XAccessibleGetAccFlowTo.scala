@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait XAccessibleGetAccFlowTo
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
-  def getAccFlowTo(aXShape: js.Any, nType: scala.Double): activexDashInteropLib.SafeArray[_]
+  def getAccFlowTo(aXShape: js.Any, nType: scala.Double): stdLib.SafeArray[_]
 }
 
 object XAccessibleGetAccFlowTo {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getAccFlowTo: js.Function2[js.Any, scala.Double, activexDashInteropLib.SafeArray[_]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getAccFlowTo: (js.Any, scala.Double) => stdLib.SafeArray[_],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAccessibleGetAccFlowTo = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getAccFlowTo = getAccFlowTo, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getAccFlowTo = js.Any.fromFunction2(getAccFlowTo), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAccessibleGetAccFlowTo]
   }

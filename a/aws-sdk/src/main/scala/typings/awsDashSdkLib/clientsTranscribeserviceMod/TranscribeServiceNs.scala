@@ -19,15 +19,15 @@ object TranscribeServiceNs extends js.Object {
     /**
       * The language code of the vocabulary entries.
       */
-    var LanguageCode: LanguageCode
+    var LanguageCode: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.LanguageCode
     /**
       * An array of strings that contains the vocabulary entries. 
       */
-    var Phrases: Phrases
+    var Phrases: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.Phrases
     /**
       * The name of the vocabulary. The name must be unique within an AWS account. The name is case-sensitive.
       */
-    var VocabularyName: VocabularyName
+    var VocabularyName: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.VocabularyName
   }
   
   trait CreateVocabularyResponse extends js.Object {
@@ -57,21 +57,21 @@ object TranscribeServiceNs extends js.Object {
     /**
       * The name of the transcription job to be deleted.
       */
-    var TranscriptionJobName: TranscriptionJobName
+    var TranscriptionJobName: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.TranscriptionJobName
   }
   
   trait DeleteVocabularyRequest extends js.Object {
     /**
       * The name of the vocabulary to delete. 
       */
-    var VocabularyName: VocabularyName
+    var VocabularyName: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.VocabularyName
   }
   
   trait GetTranscriptionJobRequest extends js.Object {
     /**
       * The name of the job.
       */
-    var TranscriptionJobName: TranscriptionJobName
+    var TranscriptionJobName: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.TranscriptionJobName
   }
   
   trait GetTranscriptionJobResponse extends js.Object {
@@ -85,7 +85,7 @@ object TranscribeServiceNs extends js.Object {
     /**
       * The name of the vocabulary to return information about. The name is case-sensitive.
       */
-    var VocabularyName: VocabularyName
+    var VocabularyName: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.VocabularyName
   }
   
   trait GetVocabularyResponse extends js.Object {
@@ -213,15 +213,15 @@ object TranscribeServiceNs extends js.Object {
     /**
       * The language code for the language used in the input media file.
       */
-    var LanguageCode: LanguageCode
+    var LanguageCode: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.LanguageCode
     /**
       * An object that describes the input media for a transcription job.
       */
-    var Media: Media
+    var Media: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.Media
     /**
       * The format of the input media file.
       */
-    var MediaFormat: MediaFormat
+    var MediaFormat: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.MediaFormat
     /**
       * The sample rate, in Hertz, of the audio track in the input media file. 
       */
@@ -237,7 +237,7 @@ object TranscribeServiceNs extends js.Object {
     /**
       * The name of the job. Note that you can't use the strings "." or ".." by themselves as the job name. The name must also be unique within an AWS account.
       */
-    var TranscriptionJobName: TranscriptionJobName
+    var TranscriptionJobName: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.TranscriptionJobName
   }
   
   trait StartTranscriptionJobResponse extends js.Object {
@@ -534,15 +534,15 @@ object TranscribeServiceNs extends js.Object {
     /**
       * The language code of the vocabulary entries.
       */
-    var LanguageCode: LanguageCode
+    var LanguageCode: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.LanguageCode
     /**
       * An array of strings containing the vocabulary entries.
       */
-    var Phrases: Phrases
+    var Phrases: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.Phrases
     /**
       * The name of the vocabulary to update. The name is case-sensitive.
       */
-    var VocabularyName: VocabularyName
+    var VocabularyName: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.VocabularyName
   }
   
   trait UpdateVocabularyResponse extends js.Object {

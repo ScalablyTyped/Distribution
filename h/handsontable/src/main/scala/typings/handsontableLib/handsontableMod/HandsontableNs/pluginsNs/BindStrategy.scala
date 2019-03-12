@@ -20,17 +20,17 @@ trait BindStrategy extends js.Object {
 object BindStrategy {
   @scala.inline
   def apply(
-    clearMap: js.Function0[scala.Unit],
-    createMap: js.Function1[scala.Double, scala.Unit],
-    createRow: js.Function1[js.Any, scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    klass: js.Function0[scala.Unit],
-    removeRow: js.Function1[js.Any, scala.Unit],
-    setStrategy: js.Function1[java.lang.String, scala.Unit],
+    clearMap: () => scala.Unit,
+    createMap: scala.Double => scala.Unit,
+    createRow: js.Any => scala.Unit,
+    destroy: () => scala.Unit,
+    klass: () => scala.Unit,
+    removeRow: js.Any => scala.Unit,
+    setStrategy: java.lang.String => scala.Unit,
     strategy: java.lang.String | scala.Unit,
-    translate: js.Function1[js.Any, scala.Unit]
+    translate: js.Any => scala.Unit
   ): BindStrategy = {
-    val __obj = js.Dynamic.literal(clearMap = clearMap, createMap = createMap, createRow = createRow, destroy = destroy, klass = klass, removeRow = removeRow, setStrategy = setStrategy, strategy = strategy.asInstanceOf[js.Any], translate = translate)
+    val __obj = js.Dynamic.literal(clearMap = js.Any.fromFunction0(clearMap), createMap = js.Any.fromFunction1(createMap), createRow = js.Any.fromFunction1(createRow), destroy = js.Any.fromFunction0(destroy), klass = js.Any.fromFunction0(klass), removeRow = js.Any.fromFunction1(removeRow), setStrategy = js.Any.fromFunction1(setStrategy), strategy = strategy.asInstanceOf[js.Any], translate = js.Any.fromFunction1(translate))
   
     __obj.asInstanceOf[BindStrategy]
   }

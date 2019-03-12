@@ -21,14 +21,14 @@ object EditorBaseProps {
   def apply(
     column: ExcelColumn,
     height: scala.Double,
-    onBlur: js.Function0[scala.Unit],
-    onCommit: js.Function0[scala.Unit],
-    onCommitCancel: js.Function0[scala.Unit],
+    onBlur: () => scala.Unit,
+    onCommit: () => scala.Unit,
+    onCommitCancel: () => scala.Unit,
     rowData: js.Any,
     rowMetaData: js.Any,
     value: js.Any
   ): EditorBaseProps = {
-    val __obj = js.Dynamic.literal(column = column, height = height, onBlur = onBlur, onCommit = onCommit, onCommitCancel = onCommitCancel, rowData = rowData, rowMetaData = rowMetaData, value = value)
+    val __obj = js.Dynamic.literal(column = column, height = height, onBlur = js.Any.fromFunction0(onBlur), onCommit = js.Any.fromFunction0(onCommit), onCommitCancel = js.Any.fromFunction0(onCommitCancel), rowData = rowData, rowMetaData = rowMetaData, value = value)
   
     __obj.asInstanceOf[EditorBaseProps]
   }

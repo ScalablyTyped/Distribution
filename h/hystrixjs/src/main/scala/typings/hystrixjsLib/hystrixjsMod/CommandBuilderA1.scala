@@ -27,27 +27,24 @@ trait CommandBuilderA1[R, T] extends js.Object {
 object CommandBuilderA1 {
   @scala.inline
   def apply[R, T](
-    build: js.Function0[CommandA1[R, T]],
-    circuitBreakerErrorThresholdPercentage: js.Function1[scala.Double, CommandBuilderA1[R, T]],
-    circuitBreakerForceClosed: js.Function1[scala.Boolean, CommandBuilderA1[R, T]],
-    circuitBreakerForceOpened: js.Function1[scala.Boolean, CommandBuilderA1[R, T]],
-    circuitBreakerRequestVolumeThreshold: js.Function1[scala.Double, CommandBuilderA1[R, T]],
-    circuitBreakerSleepWindowInMilliseconds: js.Function1[scala.Double, CommandBuilderA1[R, T]],
-    context: js.Function1[js.Any, CommandBuilderA1[R, T]],
-    errorHandler: js.Function1[js.Function1[/* error */ js.Any, scala.Boolean], CommandBuilderA1[R, T]],
-    fallbackTo: js.Function1[
-      js.Function2[/* error */ stdLib.Error, /* args */ js.Array[T], js.Thenable[R]], 
-      CommandBuilderA1[R, T]
-    ],
-    percentileWindowLength: js.Function1[scala.Double, CommandBuilderA1[R, T]],
-    percentileWindowNumberOfBuckets: js.Function1[scala.Double, CommandBuilderA1[R, T]],
-    requestVolumeRejectionThreshold: js.Function1[scala.Double, CommandBuilderA1[R, T]],
-    run: js.Function1[js.Function1[/* t */ T, js.Thenable[R]], CommandBuilderA1[R, T]],
-    statisticalWindowLength: js.Function1[scala.Double, CommandBuilderA1[R, T]],
-    statisticalWindowNumberOfBuckets: js.Function1[scala.Double, CommandBuilderA1[R, T]],
-    timeout: js.Function1[scala.Double, CommandBuilderA1[R, T]]
+    build: () => CommandA1[R, T],
+    circuitBreakerErrorThresholdPercentage: scala.Double => CommandBuilderA1[R, T],
+    circuitBreakerForceClosed: scala.Boolean => CommandBuilderA1[R, T],
+    circuitBreakerForceOpened: scala.Boolean => CommandBuilderA1[R, T],
+    circuitBreakerRequestVolumeThreshold: scala.Double => CommandBuilderA1[R, T],
+    circuitBreakerSleepWindowInMilliseconds: scala.Double => CommandBuilderA1[R, T],
+    context: js.Any => CommandBuilderA1[R, T],
+    errorHandler: js.Function1[/* error */ js.Any, scala.Boolean] => CommandBuilderA1[R, T],
+    fallbackTo: js.Function2[/* error */ stdLib.Error, /* args */ js.Array[T], js.Thenable[R]] => CommandBuilderA1[R, T],
+    percentileWindowLength: scala.Double => CommandBuilderA1[R, T],
+    percentileWindowNumberOfBuckets: scala.Double => CommandBuilderA1[R, T],
+    requestVolumeRejectionThreshold: scala.Double => CommandBuilderA1[R, T],
+    run: js.Function1[/* t */ T, js.Thenable[R]] => CommandBuilderA1[R, T],
+    statisticalWindowLength: scala.Double => CommandBuilderA1[R, T],
+    statisticalWindowNumberOfBuckets: scala.Double => CommandBuilderA1[R, T],
+    timeout: scala.Double => CommandBuilderA1[R, T]
   ): CommandBuilderA1[R, T] = {
-    val __obj = js.Dynamic.literal(build = build, circuitBreakerErrorThresholdPercentage = circuitBreakerErrorThresholdPercentage, circuitBreakerForceClosed = circuitBreakerForceClosed, circuitBreakerForceOpened = circuitBreakerForceOpened, circuitBreakerRequestVolumeThreshold = circuitBreakerRequestVolumeThreshold, circuitBreakerSleepWindowInMilliseconds = circuitBreakerSleepWindowInMilliseconds, context = context, errorHandler = errorHandler, fallbackTo = fallbackTo, percentileWindowLength = percentileWindowLength, percentileWindowNumberOfBuckets = percentileWindowNumberOfBuckets, requestVolumeRejectionThreshold = requestVolumeRejectionThreshold, run = run, statisticalWindowLength = statisticalWindowLength, statisticalWindowNumberOfBuckets = statisticalWindowNumberOfBuckets, timeout = timeout)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), circuitBreakerErrorThresholdPercentage = js.Any.fromFunction1(circuitBreakerErrorThresholdPercentage), circuitBreakerForceClosed = js.Any.fromFunction1(circuitBreakerForceClosed), circuitBreakerForceOpened = js.Any.fromFunction1(circuitBreakerForceOpened), circuitBreakerRequestVolumeThreshold = js.Any.fromFunction1(circuitBreakerRequestVolumeThreshold), circuitBreakerSleepWindowInMilliseconds = js.Any.fromFunction1(circuitBreakerSleepWindowInMilliseconds), context = js.Any.fromFunction1(context), errorHandler = js.Any.fromFunction1(errorHandler), fallbackTo = js.Any.fromFunction1(fallbackTo), percentileWindowLength = js.Any.fromFunction1(percentileWindowLength), percentileWindowNumberOfBuckets = js.Any.fromFunction1(percentileWindowNumberOfBuckets), requestVolumeRejectionThreshold = js.Any.fromFunction1(requestVolumeRejectionThreshold), run = js.Any.fromFunction1(run), statisticalWindowLength = js.Any.fromFunction1(statisticalWindowLength), statisticalWindowNumberOfBuckets = js.Any.fromFunction1(statisticalWindowNumberOfBuckets), timeout = js.Any.fromFunction1(timeout))
   
     __obj.asInstanceOf[CommandBuilderA1[R, T]]
   }

@@ -39,33 +39,15 @@ trait KeyRingsResource extends js.Object {
 object KeyRingsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[KeyRing]
-    ],
+    create: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[KeyRing],
     cryptoKeys: CryptoKeysResource,
-    get: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[KeyRing]
-    ],
-    getIamPolicy: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    list: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListKeyRingsResponse]
-    ],
-    setIamPolicy: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    testIamPermissions: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
-    ]
+    get: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[KeyRing],
+    getIamPolicy: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    list: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ListKeyRingsResponse],
+    setIamPolicy: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    testIamPermissions: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
   ): KeyRingsResource = {
-    val __obj = js.Dynamic.literal(create = create, cryptoKeys = cryptoKeys, get = get, getIamPolicy = getIamPolicy, list = list, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), cryptoKeys = cryptoKeys, get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), list = js.Any.fromFunction1(list), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions))
   
     __obj.asInstanceOf[KeyRingsResource]
   }

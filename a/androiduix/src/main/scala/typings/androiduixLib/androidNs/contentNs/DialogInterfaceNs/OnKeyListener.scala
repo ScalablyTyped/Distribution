@@ -16,14 +16,9 @@ trait OnKeyListener extends js.Object {
 object OnKeyListener {
   @scala.inline
   def apply(
-    onKey: js.Function3[
-      androiduixLib.androidNs.contentNs.DialogInterface, 
-      scala.Double, 
-      androiduixLib.androidNs.viewNs.KeyEvent, 
-      scala.Boolean
-    ]
+    onKey: (androiduixLib.androidNs.contentNs.DialogInterface, scala.Double, androiduixLib.androidNs.viewNs.KeyEvent) => scala.Boolean
   ): OnKeyListener = {
-    val __obj = js.Dynamic.literal(onKey = onKey)
+    val __obj = js.Dynamic.literal(onKey = js.Any.fromFunction3(onKey))
   
     __obj.asInstanceOf[OnKeyListener]
   }

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def default(): historyLib.historyMod.History[historyLib.historyMod.LocationState] = js.native
-  def default(options: historyLib.createHashHistoryMod.HashHistoryBuildOptions): historyLib.historyMod.History[historyLib.historyMod.LocationState] = js.native
+  def default(options: HashHistoryBuildOptions): historyLib.historyMod.History[historyLib.historyMod.LocationState] = js.native
 }
 

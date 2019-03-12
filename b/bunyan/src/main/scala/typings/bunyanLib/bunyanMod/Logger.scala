@@ -26,7 +26,7 @@ trait Logger
     * (including the stack) and sets `msg` to the exception
     * message or you can specify the `msg`.
     */
-  def debug(error: nodeLib.Error, params: js.Any*): scala.Unit = js.native
+  def debug(error: stdLib.Error, params: js.Any*): scala.Unit = js.native
   /**
     * Uses `util.format` for msg formatting.
     */
@@ -51,7 +51,7 @@ trait Logger
     * (including the stack) and sets `msg` to the exception
     * message or you can specify the `msg`.
     */
-  def error(error: nodeLib.Error, params: js.Any*): scala.Unit = js.native
+  def error(error: stdLib.Error, params: js.Any*): scala.Unit = js.native
   /**
     * Uses `util.format` for msg formatting.
     */
@@ -76,7 +76,7 @@ trait Logger
     * (including the stack) and sets `msg` to the exception
     * message or you can specify the `msg`.
     */
-  def fatal(error: nodeLib.Error, params: js.Any*): scala.Unit = js.native
+  def fatal(error: stdLib.Error, params: js.Any*): scala.Unit = js.native
   /**
     * Uses `util.format` for msg formatting.
     */
@@ -101,7 +101,7 @@ trait Logger
     * (including the stack) and sets `msg` to the exception
     * message or you can specify the `msg`.
     */
-  def info(error: nodeLib.Error, params: js.Any*): scala.Unit = js.native
+  def info(error: stdLib.Error, params: js.Any*): scala.Unit = js.native
   /**
     * Uses `util.format` for msg formatting.
     */
@@ -134,7 +134,7 @@ trait Logger
     * (including the stack) and sets `msg` to the exception
     * message or you can specify the `msg`.
     */
-  def trace(error: nodeLib.Error, params: js.Any*): scala.Unit = js.native
+  def trace(error: stdLib.Error, params: js.Any*): scala.Unit = js.native
   /**
     * Uses `util.format` for msg formatting.
     */
@@ -159,7 +159,7 @@ trait Logger
     * (including the stack) and sets `msg` to the exception
     * message or you can specify the `msg`.
     */
-  def warn(error: nodeLib.Error, params: js.Any*): scala.Unit = js.native
+  def warn(error: stdLib.Error, params: js.Any*): scala.Unit = js.native
   /**
     * Uses `util.format` for msg formatting.
     */

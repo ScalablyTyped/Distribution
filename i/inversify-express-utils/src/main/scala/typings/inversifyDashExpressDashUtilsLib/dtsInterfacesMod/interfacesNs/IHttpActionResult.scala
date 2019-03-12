@@ -12,11 +12,9 @@ trait IHttpActionResult extends js.Object {
 object IHttpActionResult {
   @scala.inline
   def apply(
-    executeAsync: js.Function0[
-      js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
-    ]
+    executeAsync: () => js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
   ): IHttpActionResult = {
-    val __obj = js.Dynamic.literal(executeAsync = executeAsync)
+    val __obj = js.Dynamic.literal(executeAsync = js.Any.fromFunction0(executeAsync))
   
     __obj.asInstanceOf[IHttpActionResult]
   }

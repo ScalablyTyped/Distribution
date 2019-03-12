@@ -20,16 +20,10 @@ trait AvailsResource extends js.Object {
 object AvailsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotPlaymoviespartnerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Avail]
-    ],
-    list: js.Function1[
-      gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListAvailsResponse]
-    ]
+    get: gapiDotClientDotPlaymoviespartnerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Avail],
+    list: gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountId => gapiDotClientLib.gapiNs.clientNs.Request[ListAvailsResponse]
   ): AvailsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[AvailsResource]
   }

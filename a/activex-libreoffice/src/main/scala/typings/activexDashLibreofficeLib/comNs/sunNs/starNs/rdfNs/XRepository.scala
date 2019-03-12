@@ -24,7 +24,7 @@ trait XRepository extends js.Object {
     * @returns a list containing the names of the graphs in the repository
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
-  val GraphNames: activexDashInteropLib.SafeArray[XURI]
+  val GraphNames: stdLib.SafeArray[XURI]
   /**
     * creates a fresh unique blank node.
     * @returns a newly generated blank node which is unique in this repository
@@ -86,7 +86,7 @@ trait XRepository extends js.Object {
     * @returns a list containing the names of the graphs in the repository
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
-  def getGraphNames(): activexDashInteropLib.SafeArray[XURI]
+  def getGraphNames(): stdLib.SafeArray[XURI]
   /**
     * gets matching RDF statements from the repository.
     *
@@ -163,40 +163,20 @@ trait XRepository extends js.Object {
 object XRepository {
   @scala.inline
   def apply(
-    GraphNames: activexDashInteropLib.SafeArray[XURI],
-    createBlankNode: js.Function0[XBlankNode],
-    createGraph: js.Function1[XURI, XNamedGraph],
-    destroyGraph: js.Function1[XURI, scala.Unit],
-    exportGraph: js.Function4[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream, 
-      XURI, 
-      XURI, 
-      scala.Unit
-    ],
-    getGraph: js.Function1[XURI, XNamedGraph],
-    getGraphNames: js.Function0[activexDashInteropLib.SafeArray[XURI]],
-    getStatements: js.Function3[
-      XResource, 
-      XURI, 
-      XNode, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration
-    ],
-    importGraph: js.Function4[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      XURI, 
-      XURI, 
-      XNamedGraph
-    ],
-    queryAsk: js.Function1[java.lang.String, scala.Boolean],
-    queryConstruct: js.Function1[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration
-    ],
-    querySelect: js.Function1[java.lang.String, XQuerySelectResult]
+    GraphNames: stdLib.SafeArray[XURI],
+    createBlankNode: () => XBlankNode,
+    createGraph: XURI => XNamedGraph,
+    destroyGraph: XURI => scala.Unit,
+    exportGraph: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream, XURI, XURI) => scala.Unit,
+    getGraph: XURI => XNamedGraph,
+    getGraphNames: () => stdLib.SafeArray[XURI],
+    getStatements: (XResource, XURI, XNode) => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration,
+    importGraph: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, XURI, XURI) => XNamedGraph,
+    queryAsk: java.lang.String => scala.Boolean,
+    queryConstruct: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration,
+    querySelect: java.lang.String => XQuerySelectResult
   ): XRepository = {
-    val __obj = js.Dynamic.literal(GraphNames = GraphNames, createBlankNode = createBlankNode, createGraph = createGraph, destroyGraph = destroyGraph, exportGraph = exportGraph, getGraph = getGraph, getGraphNames = getGraphNames, getStatements = getStatements, importGraph = importGraph, queryAsk = queryAsk, queryConstruct = queryConstruct, querySelect = querySelect)
+    val __obj = js.Dynamic.literal(GraphNames = GraphNames, createBlankNode = js.Any.fromFunction0(createBlankNode), createGraph = js.Any.fromFunction1(createGraph), destroyGraph = js.Any.fromFunction1(destroyGraph), exportGraph = js.Any.fromFunction4(exportGraph), getGraph = js.Any.fromFunction1(getGraph), getGraphNames = js.Any.fromFunction0(getGraphNames), getStatements = js.Any.fromFunction3(getStatements), importGraph = js.Any.fromFunction4(importGraph), queryAsk = js.Any.fromFunction1(queryAsk), queryConstruct = js.Any.fromFunction1(queryConstruct), querySelect = js.Any.fromFunction1(querySelect))
   
     __obj.asInstanceOf[XRepository]
   }

@@ -62,20 +62,11 @@ trait XDocumentRecovery extends js.Object {
 object XDocumentRecovery {
   @scala.inline
   def apply(
-    recoverFromFile: js.Function3[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    storeToRecoveryFile: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    wasModifiedSinceLastSave: js.Function0[scala.Boolean]
+    recoverFromFile: (java.lang.String, java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    storeToRecoveryFile: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    wasModifiedSinceLastSave: () => scala.Boolean
   ): XDocumentRecovery = {
-    val __obj = js.Dynamic.literal(recoverFromFile = recoverFromFile, storeToRecoveryFile = storeToRecoveryFile, wasModifiedSinceLastSave = wasModifiedSinceLastSave)
+    val __obj = js.Dynamic.literal(recoverFromFile = js.Any.fromFunction3(recoverFromFile), storeToRecoveryFile = js.Any.fromFunction2(storeToRecoveryFile), wasModifiedSinceLastSave = js.Any.fromFunction0(wasModifiedSinceLastSave))
   
     __obj.asInstanceOf[XDocumentRecovery]
   }

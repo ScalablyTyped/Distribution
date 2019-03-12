@@ -76,13 +76,13 @@ object WorksheetChangedEventArgs {
     address: java.lang.String,
     changeType: DataChangeType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RangeEdited | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RowInserted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RowDeleted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ColumnInserted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ColumnDeleted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.CellInserted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.CellDeleted,
     details: ChangedEventDetail,
-    getRange: js.Function1[RequestContext, Range],
-    getRangeOrNullObject: js.Function1[RequestContext, Range],
+    getRange: RequestContext => Range,
+    getRangeOrNullObject: RequestContext => Range,
     source: EventSource | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Local | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Remote,
     `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.WorksheetChanged,
     worksheetId: java.lang.String
   ): WorksheetChangedEventArgs = {
-    val __obj = js.Dynamic.literal(address = address, changeType = changeType.asInstanceOf[js.Any], details = details, getRange = getRange, getRangeOrNullObject = getRangeOrNullObject, source = source.asInstanceOf[js.Any], worksheetId = worksheetId)
+    val __obj = js.Dynamic.literal(address = address, changeType = changeType.asInstanceOf[js.Any], details = details, getRange = js.Any.fromFunction1(getRange), getRangeOrNullObject = js.Any.fromFunction1(getRangeOrNullObject), source = source.asInstanceOf[js.Any], worksheetId = worksheetId)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WorksheetChangedEventArgs]
   }

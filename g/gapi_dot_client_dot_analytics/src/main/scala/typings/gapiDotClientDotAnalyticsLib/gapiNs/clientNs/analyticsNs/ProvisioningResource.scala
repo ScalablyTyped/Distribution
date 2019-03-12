@@ -13,12 +13,9 @@ trait ProvisioningResource extends js.Object {
 object ProvisioningResource {
   @scala.inline
   def apply(
-    createAccountTicket: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AccountTicket]
-    ]
+    createAccountTicket: gapiDotClientDotAnalyticsLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[AccountTicket]
   ): ProvisioningResource = {
-    val __obj = js.Dynamic.literal(createAccountTicket = createAccountTicket)
+    val __obj = js.Dynamic.literal(createAccountTicket = js.Any.fromFunction1(createAccountTicket))
   
     __obj.asInstanceOf[ProvisioningResource]
   }

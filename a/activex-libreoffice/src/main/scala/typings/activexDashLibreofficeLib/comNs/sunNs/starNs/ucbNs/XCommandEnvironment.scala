@@ -48,13 +48,13 @@ object XCommandEnvironment {
   def apply(
     InteractionHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler,
     ProgressHandler: XProgressHandler,
-    acquire: js.Function0[scala.Unit],
-    getInteractionHandler: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler],
-    getProgressHandler: js.Function0[XProgressHandler],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getInteractionHandler: () => activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler,
+    getProgressHandler: () => XProgressHandler,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCommandEnvironment = {
-    val __obj = js.Dynamic.literal(InteractionHandler = InteractionHandler, ProgressHandler = ProgressHandler, acquire = acquire, getInteractionHandler = getInteractionHandler, getProgressHandler = getProgressHandler, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(InteractionHandler = InteractionHandler, ProgressHandler = ProgressHandler, acquire = js.Any.fromFunction0(acquire), getInteractionHandler = js.Any.fromFunction0(getInteractionHandler), getProgressHandler = js.Any.fromFunction0(getProgressHandler), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCommandEnvironment]
   }

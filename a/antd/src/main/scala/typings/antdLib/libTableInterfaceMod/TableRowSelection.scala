@@ -53,30 +53,13 @@ object TableRowSelection {
     columnTitle: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
     columnWidth: java.lang.String | scala.Double = null,
     fixed: js.UndefOr[scala.Boolean] = js.undefined,
-    getCheckboxProps: js.Function1[/* record */ T, js.Object] = null,
+    getCheckboxProps: /* record */ T => js.Object = null,
     hideDefaultSelections: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function2[
-      /* selectedRowKeys */ js.Array[java.lang.String] | js.Array[scala.Double], 
-      /* selectedRows */ js.Array[T], 
-      scala.Unit
-    ] = null,
+    onChange: (/* selectedRowKeys */ js.Array[java.lang.String] | js.Array[scala.Double], /* selectedRows */ js.Array[T]) => scala.Unit = null,
     onSelect: SelectionSelectFn[T] = null,
-    onSelectAll: js.Function3[
-      /* selected */ scala.Boolean, 
-      /* selectedRows */ js.Array[T], 
-      /* changeRows */ js.Array[T], 
-      scala.Unit
-    ] = null,
-    onSelectInvert: js.Function1[
-      /* selectedRowKeys */ js.Array[java.lang.String] | js.Array[scala.Double], 
-      scala.Unit
-    ] = null,
-    onSelectMultiple: js.Function3[
-      /* selected */ scala.Boolean, 
-      /* selectedRows */ js.Array[T], 
-      /* changeRows */ js.Array[T], 
-      scala.Unit
-    ] = null,
+    onSelectAll: (/* selected */ scala.Boolean, /* selectedRows */ js.Array[T], /* changeRows */ js.Array[T]) => scala.Unit = null,
+    onSelectInvert: /* selectedRowKeys */ js.Array[java.lang.String] | js.Array[scala.Double] => scala.Unit = null,
+    onSelectMultiple: (/* selected */ scala.Boolean, /* selectedRows */ js.Array[T], /* changeRows */ js.Array[T]) => scala.Unit = null,
     selectWay: TableSelectWay = null,
     selectedRowKeys: js.Array[java.lang.String] | js.Array[scala.Double] = null,
     selections: js.Array[SelectionItem] | scala.Boolean = null,
@@ -86,13 +69,13 @@ object TableRowSelection {
     if (columnTitle != null) __obj.updateDynamic("columnTitle")(columnTitle.asInstanceOf[js.Any])
     if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed)
-    if (getCheckboxProps != null) __obj.updateDynamic("getCheckboxProps")(getCheckboxProps)
+    if (getCheckboxProps != null) __obj.updateDynamic("getCheckboxProps")(js.Any.fromFunction1(getCheckboxProps))
     if (!js.isUndefined(hideDefaultSelections)) __obj.updateDynamic("hideDefaultSelections")(hideDefaultSelections)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (onSelectAll != null) __obj.updateDynamic("onSelectAll")(onSelectAll)
-    if (onSelectInvert != null) __obj.updateDynamic("onSelectInvert")(onSelectInvert)
-    if (onSelectMultiple != null) __obj.updateDynamic("onSelectMultiple")(onSelectMultiple)
+    if (onSelectAll != null) __obj.updateDynamic("onSelectAll")(js.Any.fromFunction3(onSelectAll))
+    if (onSelectInvert != null) __obj.updateDynamic("onSelectInvert")(js.Any.fromFunction1(onSelectInvert))
+    if (onSelectMultiple != null) __obj.updateDynamic("onSelectMultiple")(js.Any.fromFunction3(onSelectMultiple))
     if (selectWay != null) __obj.updateDynamic("selectWay")(selectWay)
     if (selectedRowKeys != null) __obj.updateDynamic("selectedRowKeys")(selectedRowKeys.asInstanceOf[js.Any])
     if (selections != null) __obj.updateDynamic("selections")(selections.asInstanceOf[js.Any])

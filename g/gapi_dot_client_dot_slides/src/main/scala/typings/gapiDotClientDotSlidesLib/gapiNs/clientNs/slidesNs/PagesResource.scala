@@ -18,16 +18,10 @@ trait PagesResource extends js.Object {
 object PagesResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotSlidesLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Page]
-    ],
-    getThumbnail: js.Function1[
-      gapiDotClientDotSlidesLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Thumbnail]
-    ]
+    get: gapiDotClientDotSlidesLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Page],
+    getThumbnail: gapiDotClientDotSlidesLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[Thumbnail]
   ): PagesResource = {
-    val __obj = js.Dynamic.literal(get = get, getThumbnail = getThumbnail)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), getThumbnail = js.Any.fromFunction1(getThumbnail))
   
     __obj.asInstanceOf[PagesResource]
   }

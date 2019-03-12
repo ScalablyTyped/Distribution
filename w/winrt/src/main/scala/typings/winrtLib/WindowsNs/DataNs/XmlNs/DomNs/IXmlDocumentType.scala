@@ -14,16 +14,16 @@ trait IXmlDocumentType extends IXmlNode {
 object IXmlDocumentType {
   @scala.inline
   def apply(
-    appendChild: js.Function1[IXmlNode, IXmlNode],
+    appendChild: IXmlNode => IXmlNode,
     attributes: XmlNamedNodeMap,
     childNodes: XmlNodeList,
-    cloneNode: js.Function1[scala.Boolean, IXmlNode],
+    cloneNode: scala.Boolean => IXmlNode,
     entities: XmlNamedNodeMap,
     firstChild: IXmlNode,
-    getXml: js.Function0[java.lang.String],
-    hasChildNodes: js.Function0[scala.Boolean],
+    getXml: () => java.lang.String,
+    hasChildNodes: () => scala.Boolean,
     innerText: java.lang.String,
-    insertBefore: js.Function2[IXmlNode, IXmlNode, IXmlNode],
+    insertBefore: (IXmlNode, IXmlNode) => IXmlNode,
     lastChild: IXmlNode,
     localName: js.Any,
     name: java.lang.String,
@@ -32,20 +32,20 @@ object IXmlDocumentType {
     nodeName: java.lang.String,
     nodeType: NodeType,
     nodeValue: js.Any,
-    normalize: js.Function0[scala.Unit],
+    normalize: () => scala.Unit,
     notations: XmlNamedNodeMap,
     ownerDocument: XmlDocument,
     parentNode: IXmlNode,
     prefix: js.Any,
     previousSibling: IXmlNode,
-    removeChild: js.Function1[IXmlNode, IXmlNode],
-    replaceChild: js.Function2[IXmlNode, IXmlNode, IXmlNode],
-    selectNodes: js.Function1[java.lang.String, XmlNodeList],
-    selectNodesNS: js.Function2[java.lang.String, js.Any, XmlNodeList],
-    selectSingleNode: js.Function1[java.lang.String, IXmlNode],
-    selectSingleNodeNS: js.Function2[java.lang.String, js.Any, IXmlNode]
+    removeChild: IXmlNode => IXmlNode,
+    replaceChild: (IXmlNode, IXmlNode) => IXmlNode,
+    selectNodes: java.lang.String => XmlNodeList,
+    selectNodesNS: (java.lang.String, js.Any) => XmlNodeList,
+    selectSingleNode: java.lang.String => IXmlNode,
+    selectSingleNodeNS: (java.lang.String, js.Any) => IXmlNode
   ): IXmlDocumentType = {
-    val __obj = js.Dynamic.literal(appendChild = appendChild, attributes = attributes, childNodes = childNodes, cloneNode = cloneNode, entities = entities, firstChild = firstChild, getXml = getXml, hasChildNodes = hasChildNodes, innerText = innerText, insertBefore = insertBefore, lastChild = lastChild, localName = localName, name = name, namespaceUri = namespaceUri, nextSibling = nextSibling, nodeName = nodeName, nodeType = nodeType, nodeValue = nodeValue, normalize = normalize, notations = notations, ownerDocument = ownerDocument, parentNode = parentNode, prefix = prefix, previousSibling = previousSibling, removeChild = removeChild, replaceChild = replaceChild, selectNodes = selectNodes, selectNodesNS = selectNodesNS, selectSingleNode = selectSingleNode, selectSingleNodeNS = selectSingleNodeNS)
+    val __obj = js.Dynamic.literal(appendChild = js.Any.fromFunction1(appendChild), attributes = attributes, childNodes = childNodes, cloneNode = js.Any.fromFunction1(cloneNode), entities = entities, firstChild = firstChild, getXml = js.Any.fromFunction0(getXml), hasChildNodes = js.Any.fromFunction0(hasChildNodes), innerText = innerText, insertBefore = js.Any.fromFunction2(insertBefore), lastChild = lastChild, localName = localName, name = name, namespaceUri = namespaceUri, nextSibling = nextSibling, nodeName = nodeName, nodeType = nodeType, nodeValue = nodeValue, normalize = js.Any.fromFunction0(normalize), notations = notations, ownerDocument = ownerDocument, parentNode = parentNode, prefix = prefix, previousSibling = previousSibling, removeChild = js.Any.fromFunction1(removeChild), replaceChild = js.Any.fromFunction2(replaceChild), selectNodes = js.Any.fromFunction1(selectNodes), selectNodesNS = js.Any.fromFunction2(selectNodesNS), selectSingleNode = js.Any.fromFunction1(selectSingleNode), selectSingleNodeNS = js.Any.fromFunction2(selectSingleNodeNS))
   
     __obj.asInstanceOf[IXmlDocumentType]
   }

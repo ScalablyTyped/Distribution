@@ -10,8 +10,8 @@ trait IStringable extends js.Object
 
 object IStringable {
   @scala.inline
-  def apply(toString: js.Function0[java.lang.String]): IStringable = {
-    val __obj = js.Dynamic.literal(toString = toString)
+  def apply(toString: () => java.lang.String): IStringable = {
+    val __obj = js.Dynamic.literal(toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[IStringable]
   }

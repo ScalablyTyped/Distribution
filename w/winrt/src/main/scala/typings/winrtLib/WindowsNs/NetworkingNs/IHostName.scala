@@ -20,11 +20,11 @@ object IHostName {
     canonicalName: java.lang.String,
     displayName: java.lang.String,
     iPInformation: winrtLib.WindowsNs.NetworkingNs.ConnectivityNs.IPInformation,
-    isEqual: js.Function1[HostName, scala.Boolean],
+    isEqual: HostName => scala.Boolean,
     rawName: java.lang.String,
     `type`: HostNameType
   ): IHostName = {
-    val __obj = js.Dynamic.literal(canonicalName = canonicalName, displayName = displayName, iPInformation = iPInformation, isEqual = isEqual, rawName = rawName)
+    val __obj = js.Dynamic.literal(canonicalName = canonicalName, displayName = displayName, iPInformation = iPInformation, isEqual = js.Any.fromFunction1(isEqual), rawName = rawName)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IHostName]
   }

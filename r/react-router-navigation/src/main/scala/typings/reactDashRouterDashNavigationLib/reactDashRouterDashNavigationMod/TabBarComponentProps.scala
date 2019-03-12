@@ -16,9 +16,9 @@ object TabBarComponentProps {
     hideTabBar: js.UndefOr[scala.Boolean] = js.undefined,
     label: java.lang.String = null,
     labelStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
-    renderLabel: js.Function1[/* props */ TabSubViewProps, reactLib.reactMod.ReactNs.ReactNode] = null,
-    renderTabBar: js.Function1[/* props */ TabSubViewProps, reactLib.reactMod.ReactNs.ReactNode] = null,
-    renderTabIcon: js.Function1[/* props */ TabSubViewProps, reactLib.reactMod.ReactNs.ReactNode] = null,
+    renderLabel: /* props */ TabSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderTabBar: /* props */ TabSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderTabIcon: /* props */ TabSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
     tabActiveTintColor: java.lang.String = null,
     tabBarIndicatorStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     tabBarPosition: reactDashRouterDashNavigationLib.reactDashRouterDashNavigationLibStrings.top | reactDashRouterDashNavigationLib.reactDashRouterDashNavigationLibStrings.bottom = null,
@@ -31,9 +31,9 @@ object TabBarComponentProps {
     if (!js.isUndefined(hideTabBar)) __obj.updateDynamic("hideTabBar")(hideTabBar)
     if (label != null) __obj.updateDynamic("label")(label)
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
-    if (renderLabel != null) __obj.updateDynamic("renderLabel")(renderLabel)
-    if (renderTabBar != null) __obj.updateDynamic("renderTabBar")(renderTabBar)
-    if (renderTabIcon != null) __obj.updateDynamic("renderTabIcon")(renderTabIcon)
+    if (renderLabel != null) __obj.updateDynamic("renderLabel")(js.Any.fromFunction1(renderLabel))
+    if (renderTabBar != null) __obj.updateDynamic("renderTabBar")(js.Any.fromFunction1(renderTabBar))
+    if (renderTabIcon != null) __obj.updateDynamic("renderTabIcon")(js.Any.fromFunction1(renderTabIcon))
     if (tabActiveTintColor != null) __obj.updateDynamic("tabActiveTintColor")(tabActiveTintColor)
     if (tabBarIndicatorStyle != null) __obj.updateDynamic("tabBarIndicatorStyle")(tabBarIndicatorStyle.asInstanceOf[js.Any])
     if (tabBarPosition != null) __obj.updateDynamic("tabBarPosition")(tabBarPosition.asInstanceOf[js.Any])

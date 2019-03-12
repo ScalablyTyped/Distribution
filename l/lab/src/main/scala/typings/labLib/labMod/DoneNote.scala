@@ -12,8 +12,8 @@ trait DoneNote extends js.Object {
 
 object DoneNote {
   @scala.inline
-  def apply(note: js.Function1[java.lang.String, scala.Unit]): DoneNote = {
-    val __obj = js.Dynamic.literal(note = note)
+  def apply(note: java.lang.String => scala.Unit): DoneNote = {
+    val __obj = js.Dynamic.literal(note = js.Any.fromFunction1(note))
   
     __obj.asInstanceOf[DoneNote]
   }

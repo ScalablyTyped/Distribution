@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.webstore")
 @js.native
 object ^ extends js.Object {
-  var onDownloadProgress: chromeLib.chromeNs.webstoreNs.DownloadProgressEvent = js.native
-  var onInstallStageChanged: chromeLib.chromeNs.webstoreNs.InstallationStageEvent = js.native
+  var onDownloadProgress: DownloadProgressEvent = js.native
+  var onInstallStageChanged: InstallationStageEvent = js.native
   def install(): scala.Unit = js.native
   def install(
     failureCallback: js.Function2[

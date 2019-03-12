@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.SlicerCacheLevel")
 @js.native
 class SlicerCacheLevel protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Count: scala.Double = js.native
   val Creator: XlCreator = js.native
   var CrossFilterType: XlSlicerCrossFilterType = js.native

@@ -101,7 +101,7 @@ trait FillProperties extends js.Object {
   /** If the property {@link FillStyle} is set to FillStyle::HATCH, this is the name of the used fill hatch style. */
   var FillHatchName: java.lang.String
   /** This enumeration selects the style the area will be filled with. */
-  var FillStyle: FillStyle
+  var FillStyle: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.FillStyle
   /**
     * This is the transparence of the filled area.
     *

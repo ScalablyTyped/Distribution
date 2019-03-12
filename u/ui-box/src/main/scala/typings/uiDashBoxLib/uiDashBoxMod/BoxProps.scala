@@ -47,7 +47,7 @@ object BoxProps {
     boxSizing: uiDashBoxLib.UIBoxProp = null,
     className: java.lang.String = null,
     clearfix: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: js.Function1[/* node */ reactLib.reactMod.ReactNs.ReactNode, _] = null,
+    innerRef: /* node */ reactLib.reactMod.ReactNs.ReactNode => _ = null,
     is: uiDashBoxLib.UIBoxIsProp = null,
     marginX: uiDashBoxLib.UIBoxProp = null,
     marginY: uiDashBoxLib.UIBoxProp = null,
@@ -59,7 +59,7 @@ object BoxProps {
     if (boxSizing != null) __obj.updateDynamic("boxSizing")(boxSizing.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clearfix)) __obj.updateDynamic("clearfix")(clearfix)
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(js.Any.fromFunction1(innerRef))
     if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
     if (marginX != null) __obj.updateDynamic("marginX")(marginX.asInstanceOf[js.Any])
     if (marginY != null) __obj.updateDynamic("marginY")(marginY.asInstanceOf[js.Any])

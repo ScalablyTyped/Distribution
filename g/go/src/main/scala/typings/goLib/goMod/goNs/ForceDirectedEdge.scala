@@ -16,17 +16,17 @@ trait ForceDirectedEdge extends LayoutEdge {
 object ForceDirectedEdge {
   @scala.inline
   def apply(
-    commit: js.Function0[scala.Unit],
+    commit: () => scala.Unit,
     data: js.Any,
     fromVertex: LayoutVertex,
-    getOtherVertex: js.Function1[LayoutVertex, scala.Unit],
+    getOtherVertex: LayoutVertex => scala.Unit,
     length: scala.Double,
     link: Link,
     network: LayoutNetwork,
     stiffness: scala.Double,
     toVertex: LayoutVertex
   ): ForceDirectedEdge = {
-    val __obj = js.Dynamic.literal(commit = commit, data = data, fromVertex = fromVertex, getOtherVertex = getOtherVertex, length = length, link = link, network = network, stiffness = stiffness, toVertex = toVertex)
+    val __obj = js.Dynamic.literal(commit = js.Any.fromFunction0(commit), data = data, fromVertex = fromVertex, getOtherVertex = js.Any.fromFunction1(getOtherVertex), length = length, link = link, network = network, stiffness = stiffness, toVertex = toVertex)
   
     __obj.asInstanceOf[ForceDirectedEdge]
   }

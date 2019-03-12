@@ -11,10 +11,8 @@ trait BindingOnSyntax[T] extends js.Object {
 
 object BindingOnSyntax {
   @scala.inline
-  def apply[T](
-    onActivation: js.Function1[js.Function2[/* context */ Context, /* injectable */ T, T], BindingWhenSyntax[T]]
-  ): BindingOnSyntax[T] = {
-    val __obj = js.Dynamic.literal(onActivation = onActivation)
+  def apply[T](onActivation: js.Function2[/* context */ Context, /* injectable */ T, T] => BindingWhenSyntax[T]): BindingOnSyntax[T] = {
+    val __obj = js.Dynamic.literal(onActivation = js.Any.fromFunction1(onActivation))
   
     __obj.asInstanceOf[BindingOnSyntax[T]]
   }

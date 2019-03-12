@@ -34,18 +34,18 @@ trait MigrationOptions extends js.Object {
 object MigrationOptions {
   @scala.inline
   def apply(
-    customResolver: js.Function1[/* path */ java.lang.String, umzugLib.Anon_Down] = null,
+    customResolver: /* path */ java.lang.String => umzugLib.Anon_Down = null,
     params: js.Array[_] = null,
     path: java.lang.String = null,
     pattern: stdLib.RegExp = null,
-    wrap: js.Function1[/* fn */ js.Any, _] = null
+    wrap: /* fn */ js.Any => _ = null
   ): MigrationOptions = {
     val __obj = js.Dynamic.literal()
-    if (customResolver != null) __obj.updateDynamic("customResolver")(customResolver)
+    if (customResolver != null) __obj.updateDynamic("customResolver")(js.Any.fromFunction1(customResolver))
     if (params != null) __obj.updateDynamic("params")(params)
     if (path != null) __obj.updateDynamic("path")(path)
     if (pattern != null) __obj.updateDynamic("pattern")(pattern)
-    if (wrap != null) __obj.updateDynamic("wrap")(wrap)
+    if (wrap != null) __obj.updateDynamic("wrap")(js.Any.fromFunction1(wrap))
     __obj.asInstanceOf[MigrationOptions]
   }
 }

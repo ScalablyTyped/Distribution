@@ -26,13 +26,8 @@ trait PaginationComponentProps extends js.Object {
 
 object PaginationComponentProps {
   @scala.inline
-  def apply(
-    isActive: scala.Boolean,
-    isDisabled: scala.Boolean,
-    onClick: js.Function0[scala.Unit],
-    value: scala.Double
-  ): PaginationComponentProps = {
-    val __obj = js.Dynamic.literal(isActive = isActive, isDisabled = isDisabled, onClick = onClick, value = value)
+  def apply(isActive: scala.Boolean, isDisabled: scala.Boolean, onClick: () => scala.Unit, value: scala.Double): PaginationComponentProps = {
+    val __obj = js.Dynamic.literal(isActive = isActive, isDisabled = isDisabled, onClick = js.Any.fromFunction0(onClick), value = value)
   
     __obj.asInstanceOf[PaginationComponentProps]
   }

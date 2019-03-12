@@ -31,7 +31,7 @@ object WorldMapProps {
     gridArea: java.lang.String = null,
     hoverColor: java.lang.String | grommetLib.Anon_Dark = null,
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null,
-    onSelectPlace: js.Function1[/* repeated */ js.Any, _] = null,
+    onSelectPlace: /* repeated */ js.Any => _ = null,
     places: js.Array[grommetLib.Anon_ArgsColorLocation] = null
   ): WorldMapProps = {
     val __obj = js.Dynamic.literal()
@@ -42,7 +42,7 @@ object WorldMapProps {
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
     if (hoverColor != null) __obj.updateDynamic("hoverColor")(hoverColor.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (onSelectPlace != null) __obj.updateDynamic("onSelectPlace")(onSelectPlace)
+    if (onSelectPlace != null) __obj.updateDynamic("onSelectPlace")(js.Any.fromFunction1(onSelectPlace))
     if (places != null) __obj.updateDynamic("places")(places)
     __obj.asInstanceOf[WorldMapProps]
   }

@@ -91,48 +91,18 @@ trait ValuesResource extends js.Object {
 object ValuesResource {
   @scala.inline
   def apply(
-    append: js.Function1[
-      gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AppendValuesResponse]
-    ],
-    batchClear: js.Function1[
-      gapiDotClientDotSheetsLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BatchClearValuesResponse]
-    ],
-    batchClearByDataFilter: js.Function1[
-      gapiDotClientDotSheetsLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BatchClearValuesByDataFilterResponse]
-    ],
-    batchGet: js.Function1[
-      gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackDateTimeRenderOption, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BatchGetValuesResponse]
-    ],
-    batchGetByDataFilter: js.Function1[
-      gapiDotClientDotSheetsLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BatchGetValuesByDataFilterResponse]
-    ],
-    batchUpdate: js.Function1[
-      gapiDotClientDotSheetsLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdateValuesResponse]
-    ],
-    batchUpdateByDataFilter: js.Function1[
-      gapiDotClientDotSheetsLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdateValuesByDataFilterResponse]
-    ],
-    clear: js.Function1[
-      gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ClearValuesResponse]
-    ],
-    get: js.Function1[
-      gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackDateTimeRenderOptionFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ValueRange]
-    ],
-    update: js.Function1[
-      gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackFieldsIncludeValuesInResponse, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UpdateValuesResponse]
-    ]
+    append: gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[AppendValuesResponse],
+    batchClear: gapiDotClientDotSheetsLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[BatchClearValuesResponse],
+    batchClearByDataFilter: gapiDotClientDotSheetsLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[BatchClearValuesByDataFilterResponse],
+    batchGet: gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackDateTimeRenderOption => gapiDotClientLib.gapiNs.clientNs.Request[BatchGetValuesResponse],
+    batchGetByDataFilter: gapiDotClientDotSheetsLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[BatchGetValuesByDataFilterResponse],
+    batchUpdate: gapiDotClientDotSheetsLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdateValuesResponse],
+    batchUpdateByDataFilter: gapiDotClientDotSheetsLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdateValuesByDataFilterResponse],
+    clear: gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[ClearValuesResponse],
+    get: gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackDateTimeRenderOptionFields => gapiDotClientLib.gapiNs.clientNs.Request[ValueRange],
+    update: gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackFieldsIncludeValuesInResponse => gapiDotClientLib.gapiNs.clientNs.Request[UpdateValuesResponse]
   ): ValuesResource = {
-    val __obj = js.Dynamic.literal(append = append, batchClear = batchClear, batchClearByDataFilter = batchClearByDataFilter, batchGet = batchGet, batchGetByDataFilter = batchGetByDataFilter, batchUpdate = batchUpdate, batchUpdateByDataFilter = batchUpdateByDataFilter, clear = clear, get = get, update = update)
+    val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), batchClear = js.Any.fromFunction1(batchClear), batchClearByDataFilter = js.Any.fromFunction1(batchClearByDataFilter), batchGet = js.Any.fromFunction1(batchGet), batchGetByDataFilter = js.Any.fromFunction1(batchGetByDataFilter), batchUpdate = js.Any.fromFunction1(batchUpdate), batchUpdateByDataFilter = js.Any.fromFunction1(batchUpdateByDataFilter), clear = js.Any.fromFunction1(clear), get = js.Any.fromFunction1(get), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[ValuesResource]
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait References extends js.Object {
   val Count: scala.Double = js.native
   val Parent: VBProject = js.native
-  val VBE: VBE = js.native
+  val VBE: activexDashVbideLib.VBIDENs.VBE = js.native
   def apply(index: js.Any): Reference = js.native
   def AddFromFile(FileName: java.lang.String): Reference = js.native
   def AddFromGuid(Guid: java.lang.String, Major: scala.Double, Minor: scala.Double): Reference = js.native

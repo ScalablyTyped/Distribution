@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/utilities/lib/dom/getChildren", JSImport.Namespace)
 @js.native
 object libDomGetChildrenMod extends js.Object {
-  def getChildren(parent: reactLib.HTMLElement): js.Array[reactLib.HTMLElement] = js.native
-  def getChildren(parent: reactLib.HTMLElement, allowVirtualChildren: scala.Boolean): js.Array[reactLib.HTMLElement] = js.native
+  def getChildren(parent: stdLib.HTMLElement): js.Array[stdLib.HTMLElement] = js.native
+  def getChildren(parent: stdLib.HTMLElement, allowVirtualChildren: scala.Boolean): js.Array[stdLib.HTMLElement] = js.native
 }
 

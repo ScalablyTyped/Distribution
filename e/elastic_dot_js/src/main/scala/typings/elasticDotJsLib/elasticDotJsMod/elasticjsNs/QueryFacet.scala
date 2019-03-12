@@ -51,17 +51,17 @@ trait QueryFacet extends Facet {
 object QueryFacet {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cacheFilter: js.Function1[scala.Boolean, QueryFacet],
-    facetFilter: js.Function1[js.Object, QueryFacet],
-    global: js.Function1[scala.Boolean, QueryFacet],
-    mode: js.Function1[java.lang.String, QueryFacet],
-    nested: js.Function1[java.lang.String, QueryFacet],
-    query: js.Function1[js.Object, QueryFacet],
-    scope: js.Function1[java.lang.String, QueryFacet],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    cacheFilter: scala.Boolean => QueryFacet,
+    facetFilter: js.Object => QueryFacet,
+    global: scala.Boolean => QueryFacet,
+    mode: java.lang.String => QueryFacet,
+    nested: java.lang.String => QueryFacet,
+    query: js.Object => QueryFacet,
+    scope: java.lang.String => QueryFacet,
+    toJSON: () => js.Any
   ): QueryFacet = {
-    val __obj = js.Dynamic.literal(_type = _type, cacheFilter = cacheFilter, facetFilter = facetFilter, global = global, mode = mode, nested = nested, query = query, scope = scope, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cacheFilter = js.Any.fromFunction1(cacheFilter), facetFilter = js.Any.fromFunction1(facetFilter), global = js.Any.fromFunction1(global), mode = js.Any.fromFunction1(mode), nested = js.Any.fromFunction1(nested), query = js.Any.fromFunction1(query), scope = js.Any.fromFunction1(scope), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[QueryFacet]
   }

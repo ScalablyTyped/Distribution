@@ -21,28 +21,13 @@ trait CampaignsResource extends js.Object {
 object CampaignsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Campaign]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltDefaultLandingPageName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Campaign]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AdvertiserGroupIdsAdvertiserIds, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CampaignsListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Campaign]
-    ],
-    update: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Campaign]
-    ]
+    get: gapiDotClientDotDfareportingLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Campaign],
+    insert: gapiDotClientDotDfareportingLib.Anon_AltDefaultLandingPageName => gapiDotClientLib.gapiNs.clientNs.Request[Campaign],
+    list: gapiDotClientDotDfareportingLib.Anon_AdvertiserGroupIdsAdvertiserIds => gapiDotClientLib.gapiNs.clientNs.Request[CampaignsListResponse],
+    patch: gapiDotClientDotDfareportingLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Campaign],
+    update: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Campaign]
   ): CampaignsResource = {
-    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[CampaignsResource]
   }

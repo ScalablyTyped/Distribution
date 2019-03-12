@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(string: java.lang.String, maxLength: scala.Double): java.lang.String = js.native
-  def apply(
-    string: java.lang.String,
-    maxLength: scala.Double,
-    options: textDashClipperLib.textDashClipperMod.Options
-  ): java.lang.String = js.native
+  def apply(string: java.lang.String, maxLength: scala.Double, options: Options): java.lang.String = js.native
 }
 

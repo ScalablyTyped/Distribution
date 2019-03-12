@@ -45,15 +45,15 @@ object XChartData {
   @scala.inline
   def apply(
     NotANumber: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addChartDataChangeEventListener: js.Function1[XChartDataChangeEventListener, scala.Unit],
-    getNotANumber: js.Function0[scala.Double],
-    isNotANumber: js.Function1[scala.Double, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeChartDataChangeEventListener: js.Function1[XChartDataChangeEventListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addChartDataChangeEventListener: XChartDataChangeEventListener => scala.Unit,
+    getNotANumber: () => scala.Double,
+    isNotANumber: scala.Double => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeChartDataChangeEventListener: XChartDataChangeEventListener => scala.Unit
   ): XChartData = {
-    val __obj = js.Dynamic.literal(NotANumber = NotANumber, acquire = acquire, addChartDataChangeEventListener = addChartDataChangeEventListener, getNotANumber = getNotANumber, isNotANumber = isNotANumber, queryInterface = queryInterface, release = release, removeChartDataChangeEventListener = removeChartDataChangeEventListener)
+    val __obj = js.Dynamic.literal(NotANumber = NotANumber, acquire = js.Any.fromFunction0(acquire), addChartDataChangeEventListener = js.Any.fromFunction1(addChartDataChangeEventListener), getNotANumber = js.Any.fromFunction0(getNotANumber), isNotANumber = js.Any.fromFunction1(isNotANumber), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeChartDataChangeEventListener = js.Any.fromFunction1(removeChartDataChangeEventListener))
   
     __obj.asInstanceOf[XChartData]
   }

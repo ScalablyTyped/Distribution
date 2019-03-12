@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/utilities/lib/createRef", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def createRef[T](): atUifabricUtilitiesLib.libCreateRefMod.RefObject[T] = js.native
+  def createRef[T](): RefObject[T] = js.native
 }
 

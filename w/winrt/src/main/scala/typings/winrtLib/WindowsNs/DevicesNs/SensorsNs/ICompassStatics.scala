@@ -11,8 +11,8 @@ trait ICompassStatics extends js.Object {
 
 object ICompassStatics {
   @scala.inline
-  def apply(getDefault: js.Function0[Compass]): ICompassStatics = {
-    val __obj = js.Dynamic.literal(getDefault = getDefault)
+  def apply(getDefault: () => Compass): ICompassStatics = {
+    val __obj = js.Dynamic.literal(getDefault = js.Any.fromFunction0(getDefault))
   
     __obj.asInstanceOf[ICompassStatics]
   }

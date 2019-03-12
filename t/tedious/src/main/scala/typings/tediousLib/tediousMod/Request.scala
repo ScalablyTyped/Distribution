@@ -18,7 +18,7 @@ class Request protected ()
     * 					rows: Rows as a result of executing the SQL statement. Will only be avaiable if Connection's config.options.rowCollectionOnRequestCompletion is true.
     */
   def this(sql: java.lang.String, callback: js.Function3[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* rowCount */ scala.Double, 
       /* rows */ js.Array[_], 
       scala.Unit
@@ -56,12 +56,7 @@ class Request protected ()
   @JSName("on")
   def on_done(
     event: tediousLib.tediousLibStrings.done,
-    listener: js.Function3[
-      /* error */ nodeLib.Error, 
-      /* more */ scala.Boolean, 
-      /* rows */ js.Array[_], 
-      scala.Unit
-    ]
+    listener: js.Function3[/* error */ stdLib.Error, /* more */ scala.Boolean, /* rows */ js.Array[_], scala.Unit]
   ): this.type = js.native
   /**
     * Indicates the completion status of a SQL statement within a stored procedure. All rows from a statement in a stored procedure have been provided (through row events).
@@ -70,7 +65,7 @@ class Request protected ()
   def on_doneInProc(
     event: tediousLib.tediousLibStrings.doneInProc,
     listener: js.Function4[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* more */ scala.Boolean, 
       /* returnStatus */ js.Any, 
       /* rows */ js.Array[_], 
@@ -83,12 +78,7 @@ class Request protected ()
   @JSName("on")
   def on_doneProc(
     event: tediousLib.tediousLibStrings.doneProc,
-    listener: js.Function3[
-      /* error */ nodeLib.Error, 
-      /* more */ scala.Boolean, 
-      /* rows */ js.Array[_], 
-      scala.Unit
-    ]
+    listener: js.Function3[/* error */ stdLib.Error, /* more */ scala.Boolean, /* rows */ js.Array[_], scala.Unit]
   ): this.type = js.native
   /**
     * The request encountered an error and has not been prepared. 
@@ -96,7 +86,7 @@ class Request protected ()
   @JSName("on")
   def on_error(
     event: tediousLib.tediousLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /**
     * The request has been prepared and can be used in subsequent calls to execute and unprepare. 

@@ -9,22 +9,22 @@ trait MapMatcher extends Matcher {
   /**
     * Requires a Map to contain each one of the items the given map has.
     */
-  def contains(expected: nodeLib.Map[_, _]): Matcher
+  def contains(expected: stdLib.Map[_, _]): Matcher
   /**
     * Requires a Map to be deep equal another one.
     */
-  def deepEquals(expected: nodeLib.Map[_, _]): Matcher
+  def deepEquals(expected: stdLib.Map[_, _]): Matcher
 }
 
 object MapMatcher {
   @scala.inline
   def apply(
-    and: js.Function1[Matcher, Matcher],
-    contains: js.Function1[nodeLib.Map[_, _], Matcher],
-    deepEquals: js.Function1[nodeLib.Map[_, _], Matcher],
-    or: js.Function1[Matcher, Matcher]
+    and: Matcher => Matcher,
+    contains: stdLib.Map[_, _] => Matcher,
+    deepEquals: stdLib.Map[_, _] => Matcher,
+    or: Matcher => Matcher
   ): MapMatcher = {
-    val __obj = js.Dynamic.literal(and = and, contains = contains, deepEquals = deepEquals, or = or)
+    val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), contains = js.Any.fromFunction1(contains), deepEquals = js.Any.fromFunction1(deepEquals), or = js.Any.fromFunction1(or))
   
     __obj.asInstanceOf[MapMatcher]
   }

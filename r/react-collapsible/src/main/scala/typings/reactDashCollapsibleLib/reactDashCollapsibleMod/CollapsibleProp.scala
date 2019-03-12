@@ -49,12 +49,12 @@ object CollapsibleProp {
     contentInnerClassName: java.lang.String = null,
     contentOuterClassName: java.lang.String = null,
     easing: java.lang.String = null,
-    handleTriggerClick: js.Function1[/* accordionPosition */ js.UndefOr[java.lang.String | scala.Double], scala.Unit] = null,
+    handleTriggerClick: /* accordionPosition */ js.UndefOr[java.lang.String | scala.Double] => scala.Unit = null,
     lazyRender: js.UndefOr[scala.Boolean] = js.undefined,
-    onClose: js.Function0[scala.Unit] = null,
-    onClosing: js.Function0[scala.Unit] = null,
-    onOpen: js.Function0[scala.Unit] = null,
-    onOpening: js.Function0[scala.Unit] = null,
+    onClose: () => scala.Unit = null,
+    onClosing: () => scala.Unit = null,
+    onOpen: () => scala.Unit = null,
+    onOpening: () => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     openedClassName: java.lang.String = null,
     overflowWhenOpen: reactDashCollapsibleLib.reactDashCollapsibleLibStrings.hidden | reactDashCollapsibleLib.reactDashCollapsibleLibStrings.visible | reactDashCollapsibleLib.reactDashCollapsibleLibStrings.auto | reactDashCollapsibleLib.reactDashCollapsibleLibStrings.scroll | reactDashCollapsibleLib.reactDashCollapsibleLibStrings.inherit | reactDashCollapsibleLib.reactDashCollapsibleLibStrings.initial | reactDashCollapsibleLib.reactDashCollapsibleLibStrings.unset = null,
@@ -77,12 +77,12 @@ object CollapsibleProp {
     if (contentInnerClassName != null) __obj.updateDynamic("contentInnerClassName")(contentInnerClassName)
     if (contentOuterClassName != null) __obj.updateDynamic("contentOuterClassName")(contentOuterClassName)
     if (easing != null) __obj.updateDynamic("easing")(easing)
-    if (handleTriggerClick != null) __obj.updateDynamic("handleTriggerClick")(handleTriggerClick)
+    if (handleTriggerClick != null) __obj.updateDynamic("handleTriggerClick")(js.Any.fromFunction1(handleTriggerClick))
     if (!js.isUndefined(lazyRender)) __obj.updateDynamic("lazyRender")(lazyRender)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onClosing != null) __obj.updateDynamic("onClosing")(onClosing)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
-    if (onOpening != null) __obj.updateDynamic("onOpening")(onOpening)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
+    if (onClosing != null) __obj.updateDynamic("onClosing")(js.Any.fromFunction0(onClosing))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
+    if (onOpening != null) __obj.updateDynamic("onOpening")(js.Any.fromFunction0(onOpening))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (openedClassName != null) __obj.updateDynamic("openedClassName")(openedClassName)
     if (overflowWhenOpen != null) __obj.updateDynamic("overflowWhenOpen")(overflowWhenOpen.asInstanceOf[js.Any])

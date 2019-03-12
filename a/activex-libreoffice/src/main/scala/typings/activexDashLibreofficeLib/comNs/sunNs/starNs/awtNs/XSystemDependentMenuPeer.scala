@@ -28,12 +28,12 @@ trait XSystemDependentMenuPeer
 object XSystemDependentMenuPeer {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getMenuHandle: js.Function2[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Double, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getMenuHandle: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Double) => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSystemDependentMenuPeer = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getMenuHandle = getMenuHandle, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getMenuHandle = js.Any.fromFunction2(getMenuHandle), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSystemDependentMenuPeer]
   }

@@ -43,15 +43,15 @@ object ScaleDependentStops {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     stops: js.Array[SizeStop],
     `type`: java.lang.String,
     valueExpression: java.lang.String,
     expression: java.lang.String = null,
     target: java.lang.String = null
   ): ScaleDependentStops = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, stops = stops, valueExpression = valueExpression)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stops = stops, valueExpression = valueExpression)
     __obj.updateDynamic("type")(`type`)
     if (expression != null) __obj.updateDynamic("expression")(expression)
     if (target != null) __obj.updateDynamic("target")(target)

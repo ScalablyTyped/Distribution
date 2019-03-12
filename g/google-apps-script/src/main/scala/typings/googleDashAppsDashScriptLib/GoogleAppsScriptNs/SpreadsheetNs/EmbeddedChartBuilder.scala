@@ -38,45 +38,30 @@ trait EmbeddedChartBuilder extends js.Object {
 object EmbeddedChartBuilder {
   @scala.inline
   def apply(
-    addRange: js.Function1[Range, EmbeddedChartBuilder],
-    asAreaChart: js.Function0[EmbeddedAreaChartBuilder],
-    asBarChart: js.Function0[EmbeddedBarChartBuilder],
-    asColumnChart: js.Function0[EmbeddedColumnChartBuilder],
-    asComboChart: js.Function0[EmbeddedComboChartBuilder],
-    asHistogramChart: js.Function0[EmbeddedHistogramChartBuilder],
-    asLineChart: js.Function0[EmbeddedLineChartBuilder],
-    asPieChart: js.Function0[EmbeddedPieChartBuilder],
-    asScatterChart: js.Function0[EmbeddedScatterChartBuilder],
-    asTableChart: js.Function0[EmbeddedTableChartBuilder],
-    build: js.Function0[EmbeddedChart],
-    getChartType: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartType],
-    getContainer: js.Function0[ContainerInfo],
-    getRanges: js.Function0[js.Array[Range]],
-    removeRange: js.Function1[Range, EmbeddedChartBuilder],
-    setChartType: js.Function1[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartType, 
-      EmbeddedChartBuilder
-    ],
-    setHiddenDimensionStrategy: js.Function1[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartHiddenDimensionStrategy, 
-      EmbeddedChartBuilder
-    ],
-    setMergeStrategy: js.Function1[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartMergeStrategy, 
-      EmbeddedChartBuilder
-    ],
-    setNumHeaders: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, EmbeddedChartBuilder],
-    setOption: js.Function2[java.lang.String, js.Object, EmbeddedChartBuilder],
-    setPosition: js.Function4[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      EmbeddedChartBuilder
-    ],
-    setTransposeRowsAndColumns: js.Function1[scala.Boolean, EmbeddedChartBuilder]
+    addRange: Range => EmbeddedChartBuilder,
+    asAreaChart: () => EmbeddedAreaChartBuilder,
+    asBarChart: () => EmbeddedBarChartBuilder,
+    asColumnChart: () => EmbeddedColumnChartBuilder,
+    asComboChart: () => EmbeddedComboChartBuilder,
+    asHistogramChart: () => EmbeddedHistogramChartBuilder,
+    asLineChart: () => EmbeddedLineChartBuilder,
+    asPieChart: () => EmbeddedPieChartBuilder,
+    asScatterChart: () => EmbeddedScatterChartBuilder,
+    asTableChart: () => EmbeddedTableChartBuilder,
+    build: () => EmbeddedChart,
+    getChartType: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartType,
+    getContainer: () => ContainerInfo,
+    getRanges: () => js.Array[Range],
+    removeRange: Range => EmbeddedChartBuilder,
+    setChartType: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartType => EmbeddedChartBuilder,
+    setHiddenDimensionStrategy: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartHiddenDimensionStrategy => EmbeddedChartBuilder,
+    setMergeStrategy: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartMergeStrategy => EmbeddedChartBuilder,
+    setNumHeaders: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => EmbeddedChartBuilder,
+    setOption: (java.lang.String, js.Object) => EmbeddedChartBuilder,
+    setPosition: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => EmbeddedChartBuilder,
+    setTransposeRowsAndColumns: scala.Boolean => EmbeddedChartBuilder
   ): EmbeddedChartBuilder = {
-    val __obj = js.Dynamic.literal(addRange = addRange, asAreaChart = asAreaChart, asBarChart = asBarChart, asColumnChart = asColumnChart, asComboChart = asComboChart, asHistogramChart = asHistogramChart, asLineChart = asLineChart, asPieChart = asPieChart, asScatterChart = asScatterChart, asTableChart = asTableChart, build = build, getChartType = getChartType, getContainer = getContainer, getRanges = getRanges, removeRange = removeRange, setChartType = setChartType, setHiddenDimensionStrategy = setHiddenDimensionStrategy, setMergeStrategy = setMergeStrategy, setNumHeaders = setNumHeaders, setOption = setOption, setPosition = setPosition, setTransposeRowsAndColumns = setTransposeRowsAndColumns)
+    val __obj = js.Dynamic.literal(addRange = js.Any.fromFunction1(addRange), asAreaChart = js.Any.fromFunction0(asAreaChart), asBarChart = js.Any.fromFunction0(asBarChart), asColumnChart = js.Any.fromFunction0(asColumnChart), asComboChart = js.Any.fromFunction0(asComboChart), asHistogramChart = js.Any.fromFunction0(asHistogramChart), asLineChart = js.Any.fromFunction0(asLineChart), asPieChart = js.Any.fromFunction0(asPieChart), asScatterChart = js.Any.fromFunction0(asScatterChart), asTableChart = js.Any.fromFunction0(asTableChart), build = js.Any.fromFunction0(build), getChartType = js.Any.fromFunction0(getChartType), getContainer = js.Any.fromFunction0(getContainer), getRanges = js.Any.fromFunction0(getRanges), removeRange = js.Any.fromFunction1(removeRange), setChartType = js.Any.fromFunction1(setChartType), setHiddenDimensionStrategy = js.Any.fromFunction1(setHiddenDimensionStrategy), setMergeStrategy = js.Any.fromFunction1(setMergeStrategy), setNumHeaders = js.Any.fromFunction1(setNumHeaders), setOption = js.Any.fromFunction2(setOption), setPosition = js.Any.fromFunction4(setPosition), setTransposeRowsAndColumns = js.Any.fromFunction1(setTransposeRowsAndColumns))
   
     __obj.asInstanceOf[EmbeddedChartBuilder]
   }

@@ -38,25 +38,25 @@ trait FormApi extends js.Object {
 object FormApi {
   @scala.inline
   def apply(
-    addValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    addValue: (java.lang.String, js.Any) => scala.Unit,
     asyncValidations: scala.Double,
     errors: FormErrors,
-    getFormState: js.Function0[FormState],
-    removeValue: js.Function2[java.lang.String, scala.Double, scala.Unit],
-    resetAll: js.Function0[scala.Unit],
-    setAllTouched: js.Function1[org.scalablytyped.runtime.StringDictionary[scala.Boolean], scala.Unit],
-    setAllValues: js.Function1[FormValues, scala.Unit],
-    setError: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    setFormState: js.Function1[FormState, scala.Unit],
-    setSuccess: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    setTouched: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
-    setValue: js.Function2[java.lang.String, js.Any, scala.Unit],
-    setWarning: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    submitForm: js.Function1[reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], scala.Unit],
+    getFormState: () => FormState,
+    removeValue: (java.lang.String, scala.Double) => scala.Unit,
+    resetAll: () => scala.Unit,
+    setAllTouched: org.scalablytyped.runtime.StringDictionary[scala.Boolean] => scala.Unit,
+    setAllValues: FormValues => scala.Unit,
+    setError: (java.lang.String, java.lang.String) => scala.Unit,
+    setFormState: FormState => scala.Unit,
+    setSuccess: (java.lang.String, java.lang.String) => scala.Unit,
+    setTouched: (java.lang.String, scala.Boolean) => scala.Unit,
+    setValue: (java.lang.String, js.Any) => scala.Unit,
+    setWarning: (java.lang.String, java.lang.String) => scala.Unit,
+    submitForm: reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event] => scala.Unit,
     submits: scala.Double,
     submitted: scala.Boolean,
     successes: FormErrors,
-    swapValues: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit],
+    swapValues: (java.lang.String, scala.Double, scala.Double) => scala.Unit,
     touched: Touched,
     validating: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
     validationFailed: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
@@ -64,7 +64,7 @@ object FormApi {
     values: FormValues,
     warnings: FormErrors
   ): FormApi = {
-    val __obj = js.Dynamic.literal(addValue = addValue, asyncValidations = asyncValidations, errors = errors, getFormState = getFormState, removeValue = removeValue, resetAll = resetAll, setAllTouched = setAllTouched, setAllValues = setAllValues, setError = setError, setFormState = setFormState, setSuccess = setSuccess, setTouched = setTouched, setValue = setValue, setWarning = setWarning, submitForm = submitForm, submits = submits, submitted = submitted, successes = successes, swapValues = swapValues, touched = touched, validating = validating, validationFailed = validationFailed, validationFailures = validationFailures, values = values, warnings = warnings)
+    val __obj = js.Dynamic.literal(addValue = js.Any.fromFunction2(addValue), asyncValidations = asyncValidations, errors = errors, getFormState = js.Any.fromFunction0(getFormState), removeValue = js.Any.fromFunction2(removeValue), resetAll = js.Any.fromFunction0(resetAll), setAllTouched = js.Any.fromFunction1(setAllTouched), setAllValues = js.Any.fromFunction1(setAllValues), setError = js.Any.fromFunction2(setError), setFormState = js.Any.fromFunction1(setFormState), setSuccess = js.Any.fromFunction2(setSuccess), setTouched = js.Any.fromFunction2(setTouched), setValue = js.Any.fromFunction2(setValue), setWarning = js.Any.fromFunction2(setWarning), submitForm = js.Any.fromFunction1(submitForm), submits = submits, submitted = submitted, successes = successes, swapValues = js.Any.fromFunction3(swapValues), touched = touched, validating = validating, validationFailed = validationFailed, validationFailures = validationFailures, values = values, warnings = warnings)
   
     __obj.asInstanceOf[FormApi]
   }

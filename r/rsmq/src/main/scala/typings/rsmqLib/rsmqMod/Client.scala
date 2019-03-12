@@ -13,51 +13,19 @@ trait Client
 object Client {
   @scala.inline
   def apply(
-    changeMessageVisibility: js.Function2[
-      rsmqLib.rsmqMod.RedisSMQNs.VisibilityOptions, 
-      rsmqLib.rsmqMod.RedisSMQNs.CallbackT[scala.Double], 
-      scala.Unit
-    ],
-    createQueue: js.Function2[
-      rsmqLib.rsmqMod.RedisSMQNs.QueueOptions, 
-      rsmqLib.rsmqMod.RedisSMQNs.CallbackT[scala.Double], 
-      scala.Unit
-    ],
-    deleteMessage: js.Function2[
-      rsmqLib.rsmqMod.RedisSMQNs.MessageIdentifier, 
-      rsmqLib.rsmqMod.RedisSMQNs.CallbackT[scala.Double], 
-      scala.Unit
-    ],
-    deleteQueue: js.Function2[
-      rsmqLib.rsmqMod.RedisSMQNs.QueueIdentifier, 
-      rsmqLib.rsmqMod.RedisSMQNs.CallbackT[scala.Double], 
-      scala.Unit
-    ],
-    getQueueAttributes: js.Function2[
-      rsmqLib.rsmqMod.RedisSMQNs.QueueIdentifier, 
-      rsmqLib.rsmqMod.RedisSMQNs.CallbackT[rsmqLib.rsmqMod.RedisSMQNs.QueueAttributes], 
-      scala.Unit
-    ],
-    listQueues: js.Function1[rsmqLib.rsmqMod.RedisSMQNs.CallbackT[js.Array[java.lang.String]], scala.Unit],
-    quit: js.Function0[scala.Unit],
-    receiveMessage: js.Function2[
-      rsmqLib.rsmqMod.RedisSMQNs.ReceiveOptions, 
-      rsmqLib.rsmqMod.RedisSMQNs.CallbackT[rsmqLib.rsmqMod.RedisSMQNs.Message], 
-      scala.Unit
-    ],
+    changeMessageVisibility: (rsmqLib.rsmqMod.RedisSMQNs.VisibilityOptions, rsmqLib.rsmqMod.RedisSMQNs.CallbackT[scala.Double]) => scala.Unit,
+    createQueue: (rsmqLib.rsmqMod.RedisSMQNs.QueueOptions, rsmqLib.rsmqMod.RedisSMQNs.CallbackT[scala.Double]) => scala.Unit,
+    deleteMessage: (rsmqLib.rsmqMod.RedisSMQNs.MessageIdentifier, rsmqLib.rsmqMod.RedisSMQNs.CallbackT[scala.Double]) => scala.Unit,
+    deleteQueue: (rsmqLib.rsmqMod.RedisSMQNs.QueueIdentifier, rsmqLib.rsmqMod.RedisSMQNs.CallbackT[scala.Double]) => scala.Unit,
+    getQueueAttributes: (rsmqLib.rsmqMod.RedisSMQNs.QueueIdentifier, rsmqLib.rsmqMod.RedisSMQNs.CallbackT[rsmqLib.rsmqMod.RedisSMQNs.QueueAttributes]) => scala.Unit,
+    listQueues: rsmqLib.rsmqMod.RedisSMQNs.CallbackT[js.Array[java.lang.String]] => scala.Unit,
+    quit: () => scala.Unit,
+    receiveMessage: (rsmqLib.rsmqMod.RedisSMQNs.ReceiveOptions, rsmqLib.rsmqMod.RedisSMQNs.CallbackT[rsmqLib.rsmqMod.RedisSMQNs.Message]) => scala.Unit,
     redis: redisLib.redisMod.RedisClient,
-    sendMessage: js.Function2[
-      rsmqLib.rsmqMod.RedisSMQNs.NewMessage, 
-      rsmqLib.rsmqMod.RedisSMQNs.CallbackT[java.lang.String], 
-      scala.Unit
-    ],
-    setQueueAttributes: js.Function2[
-      rsmqLib.rsmqMod.RedisSMQNs.QueueOptions, 
-      rsmqLib.rsmqMod.RedisSMQNs.CallbackT[rsmqLib.rsmqMod.RedisSMQNs.QueueAttributes], 
-      scala.Unit
-    ]
+    sendMessage: (rsmqLib.rsmqMod.RedisSMQNs.NewMessage, rsmqLib.rsmqMod.RedisSMQNs.CallbackT[java.lang.String]) => scala.Unit,
+    setQueueAttributes: (rsmqLib.rsmqMod.RedisSMQNs.QueueOptions, rsmqLib.rsmqMod.RedisSMQNs.CallbackT[rsmqLib.rsmqMod.RedisSMQNs.QueueAttributes]) => scala.Unit
   ): Client = {
-    val __obj = js.Dynamic.literal(changeMessageVisibility = changeMessageVisibility, createQueue = createQueue, deleteMessage = deleteMessage, deleteQueue = deleteQueue, getQueueAttributes = getQueueAttributes, listQueues = listQueues, quit = quit, receiveMessage = receiveMessage, redis = redis, sendMessage = sendMessage, setQueueAttributes = setQueueAttributes)
+    val __obj = js.Dynamic.literal(changeMessageVisibility = js.Any.fromFunction2(changeMessageVisibility), createQueue = js.Any.fromFunction2(createQueue), deleteMessage = js.Any.fromFunction2(deleteMessage), deleteQueue = js.Any.fromFunction2(deleteQueue), getQueueAttributes = js.Any.fromFunction2(getQueueAttributes), listQueues = js.Any.fromFunction1(listQueues), quit = js.Any.fromFunction0(quit), receiveMessage = js.Any.fromFunction2(receiveMessage), redis = redis, sendMessage = js.Any.fromFunction2(sendMessage), setQueueAttributes = js.Any.fromFunction2(setQueueAttributes))
   
     __obj.asInstanceOf[Client]
   }

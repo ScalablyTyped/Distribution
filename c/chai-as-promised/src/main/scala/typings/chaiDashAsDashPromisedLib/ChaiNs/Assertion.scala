@@ -11,13 +11,22 @@ trait Assertion
   extends chaiLib.ChaiNs.LanguageChains
      with chaiLib.ChaiNs.NumericComparison
      with chaiLib.ChaiNs.TypeComparison {
-  var eventually: PromisedAssertion = js.native
-  var fulfilled: PromisedAssertion = js.native
-  var rejected: PromisedAssertion = js.native
+  @JSName("eventually")
+  var eventually_Original: PromisedAssertion = js.native
+  @JSName("fulfilled")
+  var fulfilled_Original: PromisedAssertion = js.native
   @JSName("rejectedWith")
   var rejectedWith_Original: PromisedThrow = js.native
+  @JSName("rejected")
+  var rejected_Original: PromisedAssertion = js.native
   def become(expected: js.Any): PromisedAssertion = js.native
+  def eventually(`type`: java.lang.String): PromisedAssertion = js.native
+  def eventually(`type`: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
+  def fulfilled(`type`: java.lang.String): PromisedAssertion = js.native
+  def fulfilled(`type`: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
   def notify(fn: js.Function): PromisedAssertion = js.native
+  def rejected(`type`: java.lang.String): PromisedAssertion = js.native
+  def rejected(`type`: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
   def rejectedWith(): PromisedAssertion = js.native
   def rejectedWith(constructor: js.Function): PromisedAssertion = js.native
   def rejectedWith(constructor: js.Function, expected: java.lang.String): PromisedAssertion = js.native

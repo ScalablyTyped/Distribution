@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-batched-subscribe", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def batchedSubscribe(batch: reduxDashBatchedDashSubscribeLib.reduxDashBatchedDashSubscribeMod.BatchFunction): js.Any = js.native
+  def batchedSubscribe(batch: BatchFunction): js.Any = js.native
 }
 

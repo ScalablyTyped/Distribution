@@ -28,7 +28,7 @@ trait XTabBar extends js.Object {
     *
     * This method can be used when {@link addTabBarButtonAfter()} does not provide enough control as to where to insert a new button.
     */
-  val TabBarButtons: activexDashInteropLib.SafeArray[TabBarButton]
+  val TabBarButtons: stdLib.SafeArray[TabBarButton]
   /**
     * Add a tab bar button to the right of another one.
     * @param aButton The new tab bar button that is to be inserted. If a button with the same resource id is already present than that is removed before the n
@@ -47,7 +47,7 @@ trait XTabBar extends js.Object {
     *
     * This method can be used when {@link addTabBarButtonAfter()} does not provide enough control as to where to insert a new button.
     */
-  def getTabBarButtons(): activexDashInteropLib.SafeArray[TabBarButton]
+  def getTabBarButtons(): stdLib.SafeArray[TabBarButton]
   /**
     * Test whether the specified button exists in the tab bar.
     * @param aButton The tab bar button whose existence is tested.
@@ -64,14 +64,14 @@ trait XTabBar extends js.Object {
 object XTabBar {
   @scala.inline
   def apply(
-    TabBarButtons: activexDashInteropLib.SafeArray[TabBarButton],
-    addTabBarButtonAfter: js.Function2[TabBarButton, TabBarButton, scala.Unit],
-    appendTabBarButton: js.Function1[TabBarButton, scala.Unit],
-    getTabBarButtons: js.Function0[activexDashInteropLib.SafeArray[TabBarButton]],
-    hasTabBarButton: js.Function1[TabBarButton, scala.Boolean],
-    removeTabBarButton: js.Function1[TabBarButton, scala.Unit]
+    TabBarButtons: stdLib.SafeArray[TabBarButton],
+    addTabBarButtonAfter: (TabBarButton, TabBarButton) => scala.Unit,
+    appendTabBarButton: TabBarButton => scala.Unit,
+    getTabBarButtons: () => stdLib.SafeArray[TabBarButton],
+    hasTabBarButton: TabBarButton => scala.Boolean,
+    removeTabBarButton: TabBarButton => scala.Unit
   ): XTabBar = {
-    val __obj = js.Dynamic.literal(TabBarButtons = TabBarButtons, addTabBarButtonAfter = addTabBarButtonAfter, appendTabBarButton = appendTabBarButton, getTabBarButtons = getTabBarButtons, hasTabBarButton = hasTabBarButton, removeTabBarButton = removeTabBarButton)
+    val __obj = js.Dynamic.literal(TabBarButtons = TabBarButtons, addTabBarButtonAfter = js.Any.fromFunction2(addTabBarButtonAfter), appendTabBarButton = js.Any.fromFunction1(appendTabBarButton), getTabBarButtons = js.Any.fromFunction0(getTabBarButtons), hasTabBarButton = js.Any.fromFunction1(hasTabBarButton), removeTabBarButton = js.Any.fromFunction1(removeTabBarButton))
   
     __obj.asInstanceOf[XTabBar]
   }

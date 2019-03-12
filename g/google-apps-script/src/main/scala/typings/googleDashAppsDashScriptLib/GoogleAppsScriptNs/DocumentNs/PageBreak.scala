@@ -20,17 +20,17 @@ trait PageBreak extends js.Object {
 object PageBreak {
   @scala.inline
   def apply(
-    copy: js.Function0[PageBreak],
-    getAttributes: js.Function0[js.Object],
-    getNextSibling: js.Function0[Element],
-    getParent: js.Function0[ContainerElement],
-    getPreviousSibling: js.Function0[Element],
-    getType: js.Function0[ElementType],
-    isAtDocumentEnd: js.Function0[scala.Boolean],
-    removeFromParent: js.Function0[PageBreak],
-    setAttributes: js.Function1[js.Object, PageBreak]
+    copy: () => PageBreak,
+    getAttributes: () => js.Object,
+    getNextSibling: () => Element,
+    getParent: () => ContainerElement,
+    getPreviousSibling: () => Element,
+    getType: () => ElementType,
+    isAtDocumentEnd: () => scala.Boolean,
+    removeFromParent: () => PageBreak,
+    setAttributes: js.Object => PageBreak
   ): PageBreak = {
-    val __obj = js.Dynamic.literal(copy = copy, getAttributes = getAttributes, getNextSibling = getNextSibling, getParent = getParent, getPreviousSibling = getPreviousSibling, getType = getType, isAtDocumentEnd = isAtDocumentEnd, removeFromParent = removeFromParent, setAttributes = setAttributes)
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), getAttributes = js.Any.fromFunction0(getAttributes), getNextSibling = js.Any.fromFunction0(getNextSibling), getParent = js.Any.fromFunction0(getParent), getPreviousSibling = js.Any.fromFunction0(getPreviousSibling), getType = js.Any.fromFunction0(getType), isAtDocumentEnd = js.Any.fromFunction0(isAtDocumentEnd), removeFromParent = js.Any.fromFunction0(removeFromParent), setAttributes = js.Any.fromFunction1(setAttributes))
   
     __obj.asInstanceOf[PageBreak]
   }

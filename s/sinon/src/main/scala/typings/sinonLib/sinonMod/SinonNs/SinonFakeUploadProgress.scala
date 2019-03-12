@@ -15,12 +15,12 @@ trait SinonFakeUploadProgress extends js.Object {
 object SinonFakeUploadProgress {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* e */ sinonLib.sinonMod.Event, _], scala.Unit],
-    dispatchEvent: js.Function1[sinonLib.sinonMod.Event, scala.Unit],
+    addEventListener: (java.lang.String, js.Function1[/* e */ sinonLib.sinonMod.Event, _]) => scala.Unit,
+    dispatchEvent: sinonLib.sinonMod.Event => scala.Unit,
     eventListeners: sinonLib.Anon_Abort,
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* e */ sinonLib.sinonMod.Event, _], scala.Unit]
+    removeEventListener: (java.lang.String, js.Function1[/* e */ sinonLib.sinonMod.Event, _]) => scala.Unit
   ): SinonFakeUploadProgress = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, dispatchEvent = dispatchEvent, eventListeners = eventListeners, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), dispatchEvent = js.Any.fromFunction1(dispatchEvent), eventListeners = eventListeners, removeEventListener = js.Any.fromFunction2(removeEventListener))
   
     __obj.asInstanceOf[SinonFakeUploadProgress]
   }

@@ -13,17 +13,17 @@ trait IPixelCircleGeometry extends IPixelGeometry {
 object IPixelCircleGeometry {
   @scala.inline
   def apply(
-    equals: js.Function1[IPixelGeometry, scala.Boolean],
+    equals: IPixelGeometry => scala.Boolean,
     events: IEventManager,
-    getBounds: js.Function0[js.Array[js.Array[scala.Double]] | scala.Null],
-    getCoordinates: js.Function0[js.Array[scala.Double]],
-    getMetaData: js.Function0[js.Object],
-    getRadius: js.Function0[scala.Double],
-    getType: js.Function0[java.lang.String],
-    scale: js.Function1[scala.Double, IPixelGeometry],
-    shift: js.Function1[js.Array[scala.Double], IPixelGeometry]
+    getBounds: () => js.Array[js.Array[scala.Double]] | scala.Null,
+    getCoordinates: () => js.Array[scala.Double],
+    getMetaData: () => js.Object,
+    getRadius: () => scala.Double,
+    getType: () => java.lang.String,
+    scale: scala.Double => IPixelGeometry,
+    shift: js.Array[scala.Double] => IPixelGeometry
   ): IPixelCircleGeometry = {
-    val __obj = js.Dynamic.literal(equals = equals, events = events, getBounds = getBounds, getCoordinates = getCoordinates, getMetaData = getMetaData, getRadius = getRadius, getType = getType, scale = scale, shift = shift)
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), events = events, getBounds = js.Any.fromFunction0(getBounds), getCoordinates = js.Any.fromFunction0(getCoordinates), getMetaData = js.Any.fromFunction0(getMetaData), getRadius = js.Any.fromFunction0(getRadius), getType = js.Any.fromFunction0(getType), scale = js.Any.fromFunction1(scale), shift = js.Any.fromFunction1(shift))
   
     __obj.asInstanceOf[IPixelCircleGeometry]
   }

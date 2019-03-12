@@ -91,7 +91,7 @@ trait TelegramBot
   @JSName("addListener")
   def addListener_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_inline_query(
@@ -113,7 +113,7 @@ trait TelegramBot
   @JSName("addListener")
   def addListener_polling_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.polling_error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_pre_checkout_query(
@@ -134,7 +134,7 @@ trait TelegramBot
   @JSName("addListener")
   def addListener_webhook_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.webhook_error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /**
     * @deprecated since version 0.30.0
@@ -496,7 +496,7 @@ trait TelegramBot
   @JSName("off")
   def off_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("off")
   def off_inline_query(
@@ -518,7 +518,7 @@ trait TelegramBot
   @JSName("off")
   def off_polling_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.polling_error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("off")
   def off_pre_checkout_query(
@@ -539,7 +539,7 @@ trait TelegramBot
   @JSName("off")
   def off_webhook_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.webhook_error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   def on(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType,
@@ -664,7 +664,7 @@ trait TelegramBot
   @JSName("on")
   def on_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_inline_query(
@@ -686,7 +686,7 @@ trait TelegramBot
   @JSName("on")
   def on_polling_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.polling_error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_pre_checkout_query(
@@ -707,7 +707,7 @@ trait TelegramBot
   @JSName("on")
   def on_webhook_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.webhook_error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   def once(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType,
@@ -792,7 +792,7 @@ trait TelegramBot
   @JSName("once")
   def once_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_inline_query(
@@ -814,7 +814,7 @@ trait TelegramBot
   @JSName("once")
   def once_polling_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.polling_error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_pre_checkout_query(
@@ -835,7 +835,7 @@ trait TelegramBot
   @JSName("once")
   def once_webhook_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.webhook_error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   def openWebHook(): js.Promise[_] = js.native
   def pinChatMessage(chatId: java.lang.String, messageId: java.lang.String): js.Promise[scala.Boolean] = js.native
@@ -923,7 +923,7 @@ trait TelegramBot
   @JSName("prependListener")
   def prependListener_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_inline_query(
@@ -945,7 +945,7 @@ trait TelegramBot
   @JSName("prependListener")
   def prependListener_polling_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.polling_error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_pre_checkout_query(
@@ -966,7 +966,7 @@ trait TelegramBot
   @JSName("prependListener")
   def prependListener_webhook_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.webhook_error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   def prependOnceListener(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType,
@@ -1051,7 +1051,7 @@ trait TelegramBot
   @JSName("prependOnceListener")
   def prependOnceListener_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_inline_query(
@@ -1073,7 +1073,7 @@ trait TelegramBot
   @JSName("prependOnceListener")
   def prependOnceListener_polling_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.polling_error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_pre_checkout_query(
@@ -1094,7 +1094,7 @@ trait TelegramBot
   @JSName("prependOnceListener")
   def prependOnceListener_webhook_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.webhook_error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   def processUpdate(update: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.Update): scala.Unit = js.native
   def promoteChatMember(chatId: java.lang.String, userId: java.lang.String): js.Promise[scala.Boolean] = js.native
@@ -1206,7 +1206,7 @@ trait TelegramBot
   @JSName("removeListener")
   def removeListener_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_inline_query(
@@ -1228,7 +1228,7 @@ trait TelegramBot
   @JSName("removeListener")
   def removeListener_polling_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.polling_error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_pre_checkout_query(
@@ -1249,7 +1249,7 @@ trait TelegramBot
   @JSName("removeListener")
   def removeListener_webhook_error(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.webhook_error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   def removeReplyListener(replyListenerId: scala.Double): nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ReplyListener = js.native
   def removeTextListener(regexp: stdLib.RegExp): nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.TextListener | scala.Null = js.native

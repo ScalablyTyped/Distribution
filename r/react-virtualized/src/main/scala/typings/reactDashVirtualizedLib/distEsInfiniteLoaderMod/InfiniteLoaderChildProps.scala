@@ -13,10 +13,10 @@ trait InfiniteLoaderChildProps extends js.Object {
 object InfiniteLoaderChildProps {
   @scala.inline
   def apply(
-    onRowsRendered: js.Function1[reactDashVirtualizedLib.Anon_StartIndex, scala.Unit],
-    registerChild: js.Function1[js.Any, scala.Unit]
+    onRowsRendered: reactDashVirtualizedLib.Anon_StartIndex => scala.Unit,
+    registerChild: js.Any => scala.Unit
   ): InfiniteLoaderChildProps = {
-    val __obj = js.Dynamic.literal(onRowsRendered = onRowsRendered, registerChild = registerChild)
+    val __obj = js.Dynamic.literal(onRowsRendered = js.Any.fromFunction1(onRowsRendered), registerChild = js.Any.fromFunction1(registerChild))
   
     __obj.asInstanceOf[InfiniteLoaderChildProps]
   }

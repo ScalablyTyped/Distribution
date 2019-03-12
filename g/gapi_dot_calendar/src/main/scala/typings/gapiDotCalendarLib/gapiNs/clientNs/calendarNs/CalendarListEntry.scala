@@ -13,7 +13,7 @@ trait CalendarListEntry extends js.Object {
   var defaultReminders: js.Array[gapiDotCalendarLib.Anon_Method]
   var deleted: js.UndefOr[scala.Boolean] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
-  var etag: etag
+  var etag: gapiDotCalendarLib.gapiNs.clientNs.calendarNs.etag
   var foregroundColor: js.UndefOr[java.lang.String] = js.undefined
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
   var id: java.lang.String

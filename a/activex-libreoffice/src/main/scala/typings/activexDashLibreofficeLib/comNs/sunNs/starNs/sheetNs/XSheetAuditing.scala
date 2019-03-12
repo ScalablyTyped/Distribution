@@ -47,18 +47,18 @@ trait XSheetAuditing
 object XSheetAuditing {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    clearArrows: js.Function0[scala.Unit],
-    hideDependents: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Boolean],
-    hidePrecedents: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    showDependents: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Boolean],
-    showErrors: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Boolean],
-    showInvalid: js.Function0[scala.Boolean],
-    showPrecedents: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Boolean]
+    acquire: () => scala.Unit,
+    clearArrows: () => scala.Unit,
+    hideDependents: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress => scala.Boolean,
+    hidePrecedents: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    showDependents: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress => scala.Boolean,
+    showErrors: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress => scala.Boolean,
+    showInvalid: () => scala.Boolean,
+    showPrecedents: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress => scala.Boolean
   ): XSheetAuditing = {
-    val __obj = js.Dynamic.literal(acquire = acquire, clearArrows = clearArrows, hideDependents = hideDependents, hidePrecedents = hidePrecedents, queryInterface = queryInterface, release = release, showDependents = showDependents, showErrors = showErrors, showInvalid = showInvalid, showPrecedents = showPrecedents)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), clearArrows = js.Any.fromFunction0(clearArrows), hideDependents = js.Any.fromFunction1(hideDependents), hidePrecedents = js.Any.fromFunction1(hidePrecedents), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), showDependents = js.Any.fromFunction1(showDependents), showErrors = js.Any.fromFunction1(showErrors), showInvalid = js.Any.fromFunction0(showInvalid), showPrecedents = js.Any.fromFunction1(showPrecedents))
   
     __obj.asInstanceOf[XSheetAuditing]
   }

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-material-kit", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val MKColor: reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKColorStatic = js.native
-  val theme: reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.ThemeStatic = js.native
-  def getTheme(): reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.ThemeStatic = js.native
-  def setTheme(theme: reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.ThemeStatic): scala.Unit = js.native
+  val MKColor: MKColorStatic = js.native
+  val theme: ThemeStatic = js.native
+  def getTheme(): ThemeStatic = js.native
+  def setTheme(theme: ThemeStatic): scala.Unit = js.native
 }
 

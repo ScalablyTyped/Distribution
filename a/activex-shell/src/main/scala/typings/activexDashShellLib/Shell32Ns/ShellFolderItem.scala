@@ -24,7 +24,7 @@ class ShellFolderItem protected () extends js.Object {
   /** Is the item a link? */
   val IsLink: scala.Boolean = js.native
   /** Modification Date? */
-  var ModifyDate: activexDashInteropLib.VarDate = js.native
+  var ModifyDate: stdLib.VarDate = js.native
   /** Get display name for item */
   var Name: java.lang.String = js.native
   /** Get Parent object */

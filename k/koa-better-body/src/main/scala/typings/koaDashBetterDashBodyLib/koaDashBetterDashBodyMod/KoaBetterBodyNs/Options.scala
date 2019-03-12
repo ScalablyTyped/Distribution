@@ -30,7 +30,7 @@ object Options {
     bufferLimit: java.lang.String = null,
     decodeURIComponent: js.Any = null,
     delimiter: js.Symbol = null,
-    detectJSON: js.Function0[_] = null,
+    detectJSON: () => _ = null,
     fields: scala.Boolean | java.lang.String = null,
     files: scala.Boolean | java.lang.String = null,
     formLimit: java.lang.String = null,
@@ -47,7 +47,7 @@ object Options {
     if (bufferLimit != null) __obj.updateDynamic("bufferLimit")(bufferLimit)
     if (decodeURIComponent != null) __obj.updateDynamic("decodeURIComponent")(decodeURIComponent)
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
-    if (detectJSON != null) __obj.updateDynamic("detectJSON")(detectJSON)
+    if (detectJSON != null) __obj.updateDynamic("detectJSON")(js.Any.fromFunction0(detectJSON))
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (formLimit != null) __obj.updateDynamic("formLimit")(formLimit)

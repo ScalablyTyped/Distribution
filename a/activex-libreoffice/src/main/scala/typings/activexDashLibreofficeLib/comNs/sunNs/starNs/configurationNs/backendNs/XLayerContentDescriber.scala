@@ -28,16 +28,12 @@ trait XLayerContentDescriber
 object XLayerContentDescriber {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    describeLayer: js.Function2[
-      XLayerHandler, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[PropertyInfo], 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    describeLayer: (XLayerHandler, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[PropertyInfo]) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XLayerContentDescriber = {
-    val __obj = js.Dynamic.literal(acquire = acquire, describeLayer = describeLayer, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), describeLayer = js.Any.fromFunction2(describeLayer), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XLayerContentDescriber]
   }

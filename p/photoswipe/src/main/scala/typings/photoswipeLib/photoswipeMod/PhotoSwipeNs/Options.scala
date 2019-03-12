@@ -251,13 +251,13 @@ object Options {
     escKey: js.UndefOr[scala.Boolean] = js.undefined,
     focus: js.UndefOr[scala.Boolean] = js.undefined,
     galleryUID: scala.Int | scala.Double = null,
-    getDoubleTapZoom: js.Function2[/* isMouseClick */ scala.Boolean, /* item */ Item, scala.Double] = null,
-    getNumItemsFn: js.Function0[scala.Double] = null,
-    getThumbBoundsFn: js.Function1[/* index */ scala.Double, photoswipeLib.Anon_W] = null,
+    getDoubleTapZoom: (/* isMouseClick */ scala.Boolean, /* item */ Item) => scala.Double = null,
+    getNumItemsFn: () => scala.Double = null,
+    getThumbBoundsFn: /* index */ scala.Double => photoswipeLib.Anon_W = null,
     hideAnimationDuration: scala.Int | scala.Double = null,
     history: js.UndefOr[scala.Boolean] = js.undefined,
     index: scala.Int | scala.Double = null,
-    isClickableElement: js.Function1[/* el */ stdLib.HTMLElement, scala.Boolean] = null,
+    isClickableElement: /* el */ stdLib.HTMLElement => scala.Boolean = null,
     loop: js.UndefOr[scala.Boolean] = js.undefined,
     mainClass: java.lang.String = null,
     mainScrollEndFriction: scala.Int | scala.Double = null,
@@ -281,13 +281,13 @@ object Options {
     if (!js.isUndefined(escKey)) __obj.updateDynamic("escKey")(escKey)
     if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
     if (galleryUID != null) __obj.updateDynamic("galleryUID")(galleryUID.asInstanceOf[js.Any])
-    if (getDoubleTapZoom != null) __obj.updateDynamic("getDoubleTapZoom")(getDoubleTapZoom)
-    if (getNumItemsFn != null) __obj.updateDynamic("getNumItemsFn")(getNumItemsFn)
-    if (getThumbBoundsFn != null) __obj.updateDynamic("getThumbBoundsFn")(getThumbBoundsFn)
+    if (getDoubleTapZoom != null) __obj.updateDynamic("getDoubleTapZoom")(js.Any.fromFunction2(getDoubleTapZoom))
+    if (getNumItemsFn != null) __obj.updateDynamic("getNumItemsFn")(js.Any.fromFunction0(getNumItemsFn))
+    if (getThumbBoundsFn != null) __obj.updateDynamic("getThumbBoundsFn")(js.Any.fromFunction1(getThumbBoundsFn))
     if (hideAnimationDuration != null) __obj.updateDynamic("hideAnimationDuration")(hideAnimationDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(history)) __obj.updateDynamic("history")(history)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (isClickableElement != null) __obj.updateDynamic("isClickableElement")(isClickableElement)
+    if (isClickableElement != null) __obj.updateDynamic("isClickableElement")(js.Any.fromFunction1(isClickableElement))
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
     if (mainClass != null) __obj.updateDynamic("mainClass")(mainClass)
     if (mainScrollEndFriction != null) __obj.updateDynamic("mainScrollEndFriction")(mainScrollEndFriction.asInstanceOf[js.Any])

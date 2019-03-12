@@ -21,19 +21,13 @@ trait ActiveXObject extends js.Object {
 object ActiveXObject {
   @scala.inline
   def apply(
-    on: js.Function4[
-      activexDashDiskquotaLib.DiskQuotaTypeLibraryNs.DiskQuotaControl, 
-      activexDashDiskquotaLib.activexDashDiskquotaLibStrings.OnUserNameChanged, 
-      js.Array[activexDashDiskquotaLib.activexDashDiskquotaLibStrings.pUser], 
-      js.ThisFunction1[
-        /* this */ activexDashDiskquotaLib.DiskQuotaTypeLibraryNs.DiskQuotaControl, 
-        /* parameter */ Anon_PUser, 
-        scala.Unit
-      ], 
+    on: (activexDashDiskquotaLib.DiskQuotaTypeLibraryNs.DiskQuotaControl, activexDashDiskquotaLib.activexDashDiskquotaLibStrings.OnUserNameChanged, js.Array[activexDashDiskquotaLib.activexDashDiskquotaLibStrings.pUser], js.ThisFunction1[
+      /* this */ activexDashDiskquotaLib.DiskQuotaTypeLibraryNs.DiskQuotaControl, 
+      /* parameter */ Anon_PUser, 
       scala.Unit
-    ]
+    ]) => scala.Unit
   ): ActiveXObject = {
-    val __obj = js.Dynamic.literal(on = on)
+    val __obj = js.Dynamic.literal(on = js.Any.fromFunction4(on))
   
     __obj.asInstanceOf[ActiveXObject]
   }

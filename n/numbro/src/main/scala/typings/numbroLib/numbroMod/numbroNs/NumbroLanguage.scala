@@ -27,14 +27,14 @@ object NumbroLanguage {
     delimiters: numbroLib.Anon_Decimal,
     formats: numbroLib.Anon_FourDigits,
     languageTag: java.lang.String,
-    ordinal: js.Function1[scala.Double, java.lang.String],
+    ordinal: scala.Double => java.lang.String,
     byteFormat: Format = null,
     currencyFormat: Format = null,
     defaults: Format = null,
     ordinalFormat: Format = null,
     percentageFormat: Format = null
   ): NumbroLanguage = {
-    val __obj = js.Dynamic.literal(abbreviations = abbreviations, currency = currency, delimiters = delimiters, formats = formats, languageTag = languageTag, ordinal = ordinal)
+    val __obj = js.Dynamic.literal(abbreviations = abbreviations, currency = currency, delimiters = delimiters, formats = formats, languageTag = languageTag, ordinal = js.Any.fromFunction1(ordinal))
     if (byteFormat != null) __obj.updateDynamic("byteFormat")(byteFormat)
     if (currencyFormat != null) __obj.updateDynamic("currencyFormat")(currencyFormat)
     if (defaults != null) __obj.updateDynamic("defaults")(defaults)

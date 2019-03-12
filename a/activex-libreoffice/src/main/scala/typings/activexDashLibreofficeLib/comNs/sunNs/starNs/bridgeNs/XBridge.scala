@@ -31,14 +31,14 @@ object XBridge {
   def apply(
     Description: java.lang.String,
     Name: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getDescription: js.Function0[java.lang.String],
-    getInstance: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    getName: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDescription: () => java.lang.String,
+    getInstance: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getName: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XBridge = {
-    val __obj = js.Dynamic.literal(Description = Description, Name = Name, acquire = acquire, getDescription = getDescription, getInstance = getInstance, getName = getName, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Description = Description, Name = Name, acquire = js.Any.fromFunction0(acquire), getDescription = js.Any.fromFunction0(getDescription), getInstance = js.Any.fromFunction1(getInstance), getName = js.Any.fromFunction0(getName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XBridge]
   }

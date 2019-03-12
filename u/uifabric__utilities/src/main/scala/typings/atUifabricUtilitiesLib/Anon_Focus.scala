@@ -11,8 +11,8 @@ trait Anon_Focus extends js.Object {
 
 object Anon_Focus {
   @scala.inline
-  def apply(focus: js.Function0[scala.Unit]): Anon_Focus = {
-    val __obj = js.Dynamic.literal(focus = focus)
+  def apply(focus: () => scala.Unit): Anon_Focus = {
+    val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus))
   
     __obj.asInstanceOf[Anon_Focus]
   }

@@ -39,15 +39,15 @@ trait Chunk extends js.Object {
 object Chunk {
   @scala.inline
   def apply(
-    end: js.Function1[java.lang.String, Chunk],
-    map: js.Function1[js.Function1[Chunk, _], Chunk],
-    render: js.Function2[js.Any, Context, Chunk],
-    setError: js.Function1[js.Any, Chunk],
-    tap: js.Function1[js.Function1[/* value */ js.Any, _], Chunk],
-    untap: js.Function0[Chunk],
-    write: js.Function1[java.lang.String, Chunk]
+    end: java.lang.String => Chunk,
+    map: js.Function1[Chunk, _] => Chunk,
+    render: (js.Any, Context) => Chunk,
+    setError: js.Any => Chunk,
+    tap: js.Function1[/* value */ js.Any, _] => Chunk,
+    untap: () => Chunk,
+    write: java.lang.String => Chunk
   ): Chunk = {
-    val __obj = js.Dynamic.literal(end = end, map = map, render = render, setError = setError, tap = tap, untap = untap, write = write)
+    val __obj = js.Dynamic.literal(end = js.Any.fromFunction1(end), map = js.Any.fromFunction1(map), render = js.Any.fromFunction2(render), setError = js.Any.fromFunction1(setError), tap = js.Any.fromFunction1(tap), untap = js.Any.fromFunction0(untap), write = js.Any.fromFunction1(write))
   
     __obj.asInstanceOf[Chunk]
   }

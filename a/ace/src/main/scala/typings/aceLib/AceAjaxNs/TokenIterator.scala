@@ -31,13 +31,13 @@ trait TokenIterator extends js.Object {
 object TokenIterator {
   @scala.inline
   def apply(
-    getCurrentToken: js.Function0[TokenInfo],
-    getCurrentTokenColumn: js.Function0[scala.Double],
-    getCurrentTokenRow: js.Function0[scala.Double],
-    stepBackward: js.Function0[js.Array[java.lang.String]],
-    stepForward: js.Function0[java.lang.String]
+    getCurrentToken: () => TokenInfo,
+    getCurrentTokenColumn: () => scala.Double,
+    getCurrentTokenRow: () => scala.Double,
+    stepBackward: () => js.Array[java.lang.String],
+    stepForward: () => java.lang.String
   ): TokenIterator = {
-    val __obj = js.Dynamic.literal(getCurrentToken = getCurrentToken, getCurrentTokenColumn = getCurrentTokenColumn, getCurrentTokenRow = getCurrentTokenRow, stepBackward = stepBackward, stepForward = stepForward)
+    val __obj = js.Dynamic.literal(getCurrentToken = js.Any.fromFunction0(getCurrentToken), getCurrentTokenColumn = js.Any.fromFunction0(getCurrentTokenColumn), getCurrentTokenRow = js.Any.fromFunction0(getCurrentTokenRow), stepBackward = js.Any.fromFunction0(stepBackward), stepForward = js.Any.fromFunction0(stepForward))
   
     __obj.asInstanceOf[TokenIterator]
   }

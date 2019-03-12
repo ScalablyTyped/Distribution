@@ -50,28 +50,15 @@ trait XNativeNumberSupplier
 object XNativeNumberSupplier {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    convertFromXmlAttributes: js.Function1[NativeNumberXmlAttributes, scala.Double],
-    convertToXmlAttributes: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      NativeNumberXmlAttributes
-    ],
-    getNativeNumberString: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      java.lang.String
-    ],
-    isValidNatNum: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double, 
-      scala.Boolean
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    convertFromXmlAttributes: NativeNumberXmlAttributes => scala.Double,
+    convertToXmlAttributes: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double) => NativeNumberXmlAttributes,
+    getNativeNumberString: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double) => java.lang.String,
+    isValidNatNum: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XNativeNumberSupplier = {
-    val __obj = js.Dynamic.literal(acquire = acquire, convertFromXmlAttributes = convertFromXmlAttributes, convertToXmlAttributes = convertToXmlAttributes, getNativeNumberString = getNativeNumberString, isValidNatNum = isValidNatNum, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), convertFromXmlAttributes = js.Any.fromFunction1(convertFromXmlAttributes), convertToXmlAttributes = js.Any.fromFunction2(convertToXmlAttributes), getNativeNumberString = js.Any.fromFunction3(getNativeNumberString), isValidNatNum = js.Any.fromFunction2(isValidNatNum), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XNativeNumberSupplier]
   }

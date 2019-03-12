@@ -50,89 +50,31 @@ trait XFormsUIHelper1 extends js.Object {
 object XFormsUIHelper1 {
   @scala.inline
   def apply(
-    cloneBindingAsGhost: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
-    ],
-    createAttribute: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode
-    ],
-    createElement: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode
-    ],
-    getBindingForNode: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
-      scala.Boolean, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
-    ],
-    getBindingName: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
-      scala.Boolean, 
-      java.lang.String
-    ],
-    getDefaultBindingExpressionForNode: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, java.lang.String],
-    getDefaultServiceNameForNode: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, java.lang.String],
-    getNodeDisplayName: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
-      scala.Boolean, 
-      java.lang.String
-    ],
-    getNodeName: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, java.lang.String],
-    getResultForExpression: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
-      scala.Boolean, 
-      java.lang.String, 
-      java.lang.String
-    ],
-    getSubmissionName: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
-      scala.Boolean, 
-      java.lang.String
-    ],
-    isValidPrefixName: js.Function1[java.lang.String, scala.Boolean],
-    isValidXMLName: js.Function1[java.lang.String, scala.Boolean],
-    newInstance: js.Function3[
-      java.lang.String, 
-      java.lang.String, 
-      scala.Boolean, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XDocument
-    ],
-    newModel: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel, 
-      java.lang.String, 
-      XModel
-    ],
-    removeBindingForNode: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, scala.Unit],
-    removeBindingIfUseless: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, scala.Unit],
-    removeInstance: js.Function1[java.lang.String, scala.Unit],
-    removeModel: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel, 
-      java.lang.String, 
-      scala.Unit
-    ],
-    renameInstance: js.Function4[java.lang.String, java.lang.String, java.lang.String, scala.Boolean, scala.Unit],
-    renameModel: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel, 
-      java.lang.String, 
-      java.lang.String, 
-      scala.Unit
-    ],
-    renameNode: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode
-    ],
-    setNodeValue: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
-      java.lang.String, 
-      scala.Unit
-    ]
+    cloneBindingAsGhost: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    createAttribute: (activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, java.lang.String) => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode,
+    createElement: (activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, java.lang.String) => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode,
+    getBindingForNode: (activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, scala.Boolean) => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    getBindingName: (activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, scala.Boolean) => java.lang.String,
+    getDefaultBindingExpressionForNode: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode => java.lang.String,
+    getDefaultServiceNameForNode: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode => java.lang.String,
+    getNodeDisplayName: (activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, scala.Boolean) => java.lang.String,
+    getNodeName: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode => java.lang.String,
+    getResultForExpression: (activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, scala.Boolean, java.lang.String) => java.lang.String,
+    getSubmissionName: (activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, scala.Boolean) => java.lang.String,
+    isValidPrefixName: java.lang.String => scala.Boolean,
+    isValidXMLName: java.lang.String => scala.Boolean,
+    newInstance: (java.lang.String, java.lang.String, scala.Boolean) => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XDocument,
+    newModel: (activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel, java.lang.String) => XModel,
+    removeBindingForNode: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode => scala.Unit,
+    removeBindingIfUseless: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet => scala.Unit,
+    removeInstance: java.lang.String => scala.Unit,
+    removeModel: (activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel, java.lang.String) => scala.Unit,
+    renameInstance: (java.lang.String, java.lang.String, java.lang.String, scala.Boolean) => scala.Unit,
+    renameModel: (activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel, java.lang.String, java.lang.String) => scala.Unit,
+    renameNode: (activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, java.lang.String) => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode,
+    setNodeValue: (activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, java.lang.String) => scala.Unit
   ): XFormsUIHelper1 = {
-    val __obj = js.Dynamic.literal(cloneBindingAsGhost = cloneBindingAsGhost, createAttribute = createAttribute, createElement = createElement, getBindingForNode = getBindingForNode, getBindingName = getBindingName, getDefaultBindingExpressionForNode = getDefaultBindingExpressionForNode, getDefaultServiceNameForNode = getDefaultServiceNameForNode, getNodeDisplayName = getNodeDisplayName, getNodeName = getNodeName, getResultForExpression = getResultForExpression, getSubmissionName = getSubmissionName, isValidPrefixName = isValidPrefixName, isValidXMLName = isValidXMLName, newInstance = newInstance, newModel = newModel, removeBindingForNode = removeBindingForNode, removeBindingIfUseless = removeBindingIfUseless, removeInstance = removeInstance, removeModel = removeModel, renameInstance = renameInstance, renameModel = renameModel, renameNode = renameNode, setNodeValue = setNodeValue)
+    val __obj = js.Dynamic.literal(cloneBindingAsGhost = js.Any.fromFunction1(cloneBindingAsGhost), createAttribute = js.Any.fromFunction2(createAttribute), createElement = js.Any.fromFunction2(createElement), getBindingForNode = js.Any.fromFunction2(getBindingForNode), getBindingName = js.Any.fromFunction2(getBindingName), getDefaultBindingExpressionForNode = js.Any.fromFunction1(getDefaultBindingExpressionForNode), getDefaultServiceNameForNode = js.Any.fromFunction1(getDefaultServiceNameForNode), getNodeDisplayName = js.Any.fromFunction2(getNodeDisplayName), getNodeName = js.Any.fromFunction1(getNodeName), getResultForExpression = js.Any.fromFunction3(getResultForExpression), getSubmissionName = js.Any.fromFunction2(getSubmissionName), isValidPrefixName = js.Any.fromFunction1(isValidPrefixName), isValidXMLName = js.Any.fromFunction1(isValidXMLName), newInstance = js.Any.fromFunction3(newInstance), newModel = js.Any.fromFunction2(newModel), removeBindingForNode = js.Any.fromFunction1(removeBindingForNode), removeBindingIfUseless = js.Any.fromFunction1(removeBindingIfUseless), removeInstance = js.Any.fromFunction1(removeInstance), removeModel = js.Any.fromFunction2(removeModel), renameInstance = js.Any.fromFunction4(renameInstance), renameModel = js.Any.fromFunction3(renameModel), renameNode = js.Any.fromFunction2(renameNode), setNodeValue = js.Any.fromFunction2(setNodeValue))
   
     __obj.asInstanceOf[XFormsUIHelper1]
   }

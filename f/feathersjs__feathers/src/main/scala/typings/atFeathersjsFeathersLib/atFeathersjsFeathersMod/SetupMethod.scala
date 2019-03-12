@@ -11,8 +11,8 @@ trait SetupMethod extends js.Object {
 
 object SetupMethod {
   @scala.inline
-  def apply(setup: js.Function2[Application[_], java.lang.String, scala.Unit]): SetupMethod = {
-    val __obj = js.Dynamic.literal(setup = setup)
+  def apply(setup: (Application[_], java.lang.String) => scala.Unit): SetupMethod = {
+    val __obj = js.Dynamic.literal(setup = js.Any.fromFunction2(setup))
   
     __obj.asInstanceOf[SetupMethod]
   }

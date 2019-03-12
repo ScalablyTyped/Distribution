@@ -31,14 +31,14 @@ trait FlashShape extends FlashOval {
 object FlashShape {
   @scala.inline
   def apply(
-    beginEdit: js.Function0[scala.Unit],
+    beginEdit: () => scala.Unit,
     closePath: scala.Boolean,
     contours: js.Array[FlashContour],
-    deleteEdge: js.Function1[scala.Double, scala.Unit],
+    deleteEdge: scala.Double => scala.Unit,
     edges: js.Array[FlashEdge],
     endAngle: scala.Double,
-    endEdit: js.Function0[scala.Unit],
-    getCubicSegmentPoints: js.Function1[scala.Double, js.Array[FlashPoint]],
+    endEdit: () => scala.Unit,
+    getCubicSegmentPoints: scala.Double => js.Array[FlashPoint],
     innerRadius: scala.Double,
     isDrawingObject: scala.Boolean,
     isGroup: scala.Boolean,
@@ -49,7 +49,7 @@ object FlashShape {
     startAngle: scala.Double,
     vertices: js.Array[FlashVertex]
   ): FlashShape = {
-    val __obj = js.Dynamic.literal(beginEdit = beginEdit, closePath = closePath, contours = contours, deleteEdge = deleteEdge, edges = edges, endAngle = endAngle, endEdit = endEdit, getCubicSegmentPoints = getCubicSegmentPoints, innerRadius = innerRadius, isDrawingObject = isDrawingObject, isGroup = isGroup, isOvalObject = isOvalObject, isRectangleObject = isRectangleObject, members = members, numCubicSegments = numCubicSegments, startAngle = startAngle, vertices = vertices)
+    val __obj = js.Dynamic.literal(beginEdit = js.Any.fromFunction0(beginEdit), closePath = closePath, contours = contours, deleteEdge = js.Any.fromFunction1(deleteEdge), edges = edges, endAngle = endAngle, endEdit = js.Any.fromFunction0(endEdit), getCubicSegmentPoints = js.Any.fromFunction1(getCubicSegmentPoints), innerRadius = innerRadius, isDrawingObject = isDrawingObject, isGroup = isGroup, isOvalObject = isOvalObject, isRectangleObject = isRectangleObject, members = members, numCubicSegments = numCubicSegments, startAngle = startAngle, vertices = vertices)
   
     __obj.asInstanceOf[FlashShape]
   }

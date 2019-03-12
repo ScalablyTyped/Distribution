@@ -31,15 +31,8 @@ object Props {
     containerStyles: reactLib.reactMod.ReactNs.CSSProperties = null,
     drops: daterangepickerLib.daterangepickerLibStrings.down | daterangepickerLib.daterangepickerLibStrings.up = null,
     endDate: daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString = null,
-    isCustomDate: js.Function1[
-      /* date */ daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString, 
-      js.UndefOr[java.lang.String | js.Array[java.lang.String]]
-    ] = null,
-    isInvalidDate: js.Function2[
-      /* startDate */ daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString, 
-      /* endDate */ js.UndefOr[daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString], 
-      scala.Boolean
-    ] = null,
+    isCustomDate: /* date */ daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString => js.UndefOr[java.lang.String | js.Array[java.lang.String]] = null,
+    isInvalidDate: (/* startDate */ daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString, /* endDate */ js.UndefOr[daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString]) => scala.Boolean = null,
     linkedCalendars: js.UndefOr[scala.Boolean] = js.undefined,
     locale: daterangepickerLib.daterangepickerMod.daterangepickerNs.Locale = null,
     maxDate: daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString = null,
@@ -84,8 +77,8 @@ object Props {
     if (containerStyles != null) __obj.updateDynamic("containerStyles")(containerStyles)
     if (drops != null) __obj.updateDynamic("drops")(drops.asInstanceOf[js.Any])
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (isCustomDate != null) __obj.updateDynamic("isCustomDate")(isCustomDate)
-    if (isInvalidDate != null) __obj.updateDynamic("isInvalidDate")(isInvalidDate)
+    if (isCustomDate != null) __obj.updateDynamic("isCustomDate")(js.Any.fromFunction1(isCustomDate))
+    if (isInvalidDate != null) __obj.updateDynamic("isInvalidDate")(js.Any.fromFunction2(isInvalidDate))
     if (!js.isUndefined(linkedCalendars)) __obj.updateDynamic("linkedCalendars")(linkedCalendars)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])

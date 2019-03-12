@@ -47,7 +47,7 @@ import scala.scalajs.js.annotation._
     */
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement], 
+      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement], 
       /* data */ semanticDashUiDashReactLib.distCommonjsElementsInputInputMod.InputOnChangeData, 
       scala.Unit
     ]
@@ -82,11 +82,7 @@ object StrictFormInputProps {
     label: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps] = null,
     labelPosition: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`left corner`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`right corner`) = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsElementsInputInputMod.InputOnChangeData, 
-      scala.Unit
-    ] = null,
+    onChange: (/* event */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement], /* data */ semanticDashUiDashReactLib.distCommonjsElementsInputInputMod.InputOnChangeData) => scala.Unit = null,
     required: js.Any = null,
     size: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES = null,
     tabIndex: scala.Double | java.lang.String = null,
@@ -114,7 +110,7 @@ object StrictFormInputProps {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (required != null) __obj.updateDynamic("required")(required)
     if (size != null) __obj.updateDynamic("size")(size)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])

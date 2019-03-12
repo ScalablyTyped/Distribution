@@ -13,8 +13,8 @@ trait IEnumerator[T] extends js.Object {
 
 object IEnumerator {
   @scala.inline
-  def apply[T](current: js.Function0[T], dispose: js.Function0[scala.Unit], moveNext: js.Function0[scala.Boolean]): IEnumerator[T] = {
-    val __obj = js.Dynamic.literal(current = current, dispose = dispose, moveNext = moveNext)
+  def apply[T](current: () => T, dispose: () => scala.Unit, moveNext: () => scala.Boolean): IEnumerator[T] = {
+    val __obj = js.Dynamic.literal(current = js.Any.fromFunction0(current), dispose = js.Any.fromFunction0(dispose), moveNext = js.Any.fromFunction0(moveNext))
   
     __obj.asInstanceOf[IEnumerator[T]]
   }

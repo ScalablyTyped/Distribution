@@ -16,13 +16,13 @@ trait Reduction extends js.Object {
 object Reduction {
   @scala.inline
   def apply(
-    convert: js.Function1[BigInteger, BigInteger],
-    mulTo: js.Function3[BigInteger, BigInteger, BigInteger, scala.Unit],
-    reduce: js.Function1[BigInteger, scala.Unit],
-    revert: js.Function1[BigInteger, BigInteger],
-    sqrTo: js.Function2[BigInteger, BigInteger, scala.Unit]
+    convert: BigInteger => BigInteger,
+    mulTo: (BigInteger, BigInteger, BigInteger) => scala.Unit,
+    reduce: BigInteger => scala.Unit,
+    revert: BigInteger => BigInteger,
+    sqrTo: (BigInteger, BigInteger) => scala.Unit
   ): Reduction = {
-    val __obj = js.Dynamic.literal(convert = convert, mulTo = mulTo, reduce = reduce, revert = revert, sqrTo = sqrTo)
+    val __obj = js.Dynamic.literal(convert = js.Any.fromFunction1(convert), mulTo = js.Any.fromFunction3(mulTo), reduce = js.Any.fromFunction1(reduce), revert = js.Any.fromFunction1(revert), sqrTo = js.Any.fromFunction2(sqrTo))
   
     __obj.asInstanceOf[Reduction]
   }

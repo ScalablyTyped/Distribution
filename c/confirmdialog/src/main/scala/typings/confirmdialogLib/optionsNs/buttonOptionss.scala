@@ -12,10 +12,10 @@ trait buttonOptionss extends js.Object {
 
 object buttonOptionss {
   @scala.inline
-  def apply(cancel: js.Function0[scala.Unit] = null, confirm: js.Function0[scala.Unit] = null): buttonOptionss = {
+  def apply(cancel: () => scala.Unit = null, confirm: () => scala.Unit = null): buttonOptionss = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (confirm != null) __obj.updateDynamic("confirm")(confirm)
+    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
+    if (confirm != null) __obj.updateDynamic("confirm")(js.Any.fromFunction0(confirm))
     __obj.asInstanceOf[buttonOptionss]
   }
 }

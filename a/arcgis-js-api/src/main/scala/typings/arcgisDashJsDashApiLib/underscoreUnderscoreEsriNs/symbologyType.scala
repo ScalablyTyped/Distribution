@@ -33,11 +33,8 @@ trait symbologyType extends js.Object {
 
 object symbologyType {
   @scala.inline
-  def apply(
-    cloneScheme: js.Function1[TypeScheme, TypeScheme],
-    getSchemes: js.Function1[typeGetSchemesParams, TypeSchemes]
-  ): symbologyType = {
-    val __obj = js.Dynamic.literal(cloneScheme = cloneScheme, getSchemes = getSchemes)
+  def apply(cloneScheme: TypeScheme => TypeScheme, getSchemes: typeGetSchemesParams => TypeSchemes): symbologyType = {
+    val __obj = js.Dynamic.literal(cloneScheme = js.Any.fromFunction1(cloneScheme), getSchemes = js.Any.fromFunction1(getSchemes))
   
     __obj.asInstanceOf[symbologyType]
   }

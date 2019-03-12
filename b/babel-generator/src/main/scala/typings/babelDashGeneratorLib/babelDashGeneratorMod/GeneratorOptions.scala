@@ -87,7 +87,7 @@ object GeneratorOptions {
     minified: js.UndefOr[scala.Boolean] = js.undefined,
     quotes: babelDashGeneratorLib.babelDashGeneratorLibStrings.single | babelDashGeneratorLib.babelDashGeneratorLibStrings.double = null,
     retainLines: js.UndefOr[scala.Boolean] = js.undefined,
-    shouldPrintComment: js.Function1[/* comment */ java.lang.String, scala.Boolean] = null,
+    shouldPrintComment: /* comment */ java.lang.String => scala.Boolean = null,
     sourceFileName: java.lang.String = null,
     sourceMapTarget: java.lang.String = null,
     sourceMaps: js.UndefOr[scala.Boolean] = js.undefined,
@@ -104,7 +104,7 @@ object GeneratorOptions {
     if (!js.isUndefined(minified)) __obj.updateDynamic("minified")(minified)
     if (quotes != null) __obj.updateDynamic("quotes")(quotes.asInstanceOf[js.Any])
     if (!js.isUndefined(retainLines)) __obj.updateDynamic("retainLines")(retainLines)
-    if (shouldPrintComment != null) __obj.updateDynamic("shouldPrintComment")(shouldPrintComment)
+    if (shouldPrintComment != null) __obj.updateDynamic("shouldPrintComment")(js.Any.fromFunction1(shouldPrintComment))
     if (sourceFileName != null) __obj.updateDynamic("sourceFileName")(sourceFileName)
     if (sourceMapTarget != null) __obj.updateDynamic("sourceMapTarget")(sourceMapTarget)
     if (!js.isUndefined(sourceMaps)) __obj.updateDynamic("sourceMaps")(sourceMaps)

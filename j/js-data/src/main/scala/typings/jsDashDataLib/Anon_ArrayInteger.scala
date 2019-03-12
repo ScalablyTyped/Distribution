@@ -17,15 +17,15 @@ trait Anon_ArrayInteger extends js.Object {
 object Anon_ArrayInteger {
   @scala.inline
   def apply(
-    array: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
-    integer: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
-    number: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
-    numeric: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
-    `object`: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
-    string: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]]
+    array: (js.Any, js.Any, js.Any) => js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    integer: (js.Any, js.Any, js.Any) => js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    number: (js.Any, js.Any, js.Any) => js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    numeric: (js.Any, js.Any, js.Any) => js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    `object`: (js.Any, js.Any, js.Any) => js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    string: (js.Any, js.Any, js.Any) => js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]
   ): Anon_ArrayInteger = {
-    val __obj = js.Dynamic.literal(array = array, integer = integer, number = number, numeric = numeric, string = string)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(array = js.Any.fromFunction3(array), integer = js.Any.fromFunction3(integer), number = js.Any.fromFunction3(number), numeric = js.Any.fromFunction3(numeric), string = js.Any.fromFunction3(string))
+    __obj.updateDynamic("object")(js.Any.fromFunction3(`object`))
     __obj.asInstanceOf[Anon_ArrayInteger]
   }
 }

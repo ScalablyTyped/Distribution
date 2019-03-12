@@ -15,7 +15,7 @@ class Utm protected () extends js.Object {
   var convergence: scala.Double = js.native
   var datum: Datum = js.native
   var easting: scala.Double = js.native
-  var hemisphere: hemisphere = js.native
+  var hemisphere: geodesyLib.geodesyMod.hemisphere = js.native
   var northing: scala.Double = js.native
   var scale: scala.Double = js.native
   var zone: scala.Double = js.native

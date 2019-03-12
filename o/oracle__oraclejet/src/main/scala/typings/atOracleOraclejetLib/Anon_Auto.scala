@@ -19,13 +19,10 @@ object Anon_Auto {
     converter: js.Object,
     label: java.lang.String,
     labelStyle: js.Object,
-    renderer: js.Function1[
-      atOracleOraclejetLib.ojchartMod.ojChartNs.PieCenterContext, 
-      Anon_Insert | Anon_PreventDefault
-    ],
+    renderer: atOracleOraclejetLib.ojchartMod.ojChartNs.PieCenterContext => Anon_Insert | Anon_PreventDefault,
     scaling: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.thousand | atOracleOraclejetLib.atOracleOraclejetLibStrings.million | atOracleOraclejetLib.atOracleOraclejetLibStrings.billion | atOracleOraclejetLib.atOracleOraclejetLibStrings.trillion | atOracleOraclejetLib.atOracleOraclejetLibStrings.quadrillion | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto
   ): Anon_Auto = {
-    val __obj = js.Dynamic.literal(converter = converter, label = label, labelStyle = labelStyle, renderer = renderer, scaling = scaling.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(converter = converter, label = label, labelStyle = labelStyle, renderer = js.Any.fromFunction1(renderer), scaling = scaling.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Auto]
   }

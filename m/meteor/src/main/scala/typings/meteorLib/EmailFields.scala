@@ -19,16 +19,16 @@ trait EmailFields extends js.Object {
 object EmailFields {
   @scala.inline
   def apply(
-    from: js.Function0[java.lang.String] = null,
-    html: js.Function2[/* user */ meteorLib.MeteorNs.User, /* url */ java.lang.String, java.lang.String] = null,
-    subject: js.Function1[/* user */ meteorLib.MeteorNs.User, java.lang.String] = null,
-    text: js.Function2[/* user */ meteorLib.MeteorNs.User, /* url */ java.lang.String, java.lang.String] = null
+    from: () => java.lang.String = null,
+    html: (/* user */ meteorLib.MeteorNs.User, /* url */ java.lang.String) => java.lang.String = null,
+    subject: /* user */ meteorLib.MeteorNs.User => java.lang.String = null,
+    text: (/* user */ meteorLib.MeteorNs.User, /* url */ java.lang.String) => java.lang.String = null
   ): EmailFields = {
     val __obj = js.Dynamic.literal()
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (html != null) __obj.updateDynamic("html")(html)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (from != null) __obj.updateDynamic("from")(js.Any.fromFunction0(from))
+    if (html != null) __obj.updateDynamic("html")(js.Any.fromFunction2(html))
+    if (subject != null) __obj.updateDynamic("subject")(js.Any.fromFunction1(subject))
+    if (text != null) __obj.updateDynamic("text")(js.Any.fromFunction2(text))
     __obj.asInstanceOf[EmailFields]
   }
 }

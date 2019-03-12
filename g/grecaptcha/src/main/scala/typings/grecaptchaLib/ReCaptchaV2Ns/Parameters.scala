@@ -70,9 +70,9 @@ object Parameters {
   @scala.inline
   def apply(
     badge: Badge = null,
-    callback: js.Function1[/* response */ java.lang.String, scala.Unit] = null,
-    `error-callback`: js.Function0[scala.Unit] = null,
-    `expired-callback`: js.Function0[scala.Unit] = null,
+    callback: /* response */ java.lang.String => scala.Unit = null,
+    `error-callback`: () => scala.Unit = null,
+    `expired-callback`: () => scala.Unit = null,
     isolated: js.UndefOr[scala.Boolean] = js.undefined,
     sitekey: java.lang.String = null,
     size: Size = null,
@@ -82,9 +82,9 @@ object Parameters {
   ): Parameters = {
     val __obj = js.Dynamic.literal()
     if (badge != null) __obj.updateDynamic("badge")(badge)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (`error-callback` != null) __obj.updateDynamic("error-callback")(`error-callback`)
-    if (`expired-callback` != null) __obj.updateDynamic("expired-callback")(`expired-callback`)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
+    if (`error-callback` != null) __obj.updateDynamic("error-callback")(js.Any.fromFunction0(`error-callback`))
+    if (`expired-callback` != null) __obj.updateDynamic("expired-callback")(js.Any.fromFunction0(`expired-callback`))
     if (!js.isUndefined(isolated)) __obj.updateDynamic("isolated")(isolated)
     if (sitekey != null) __obj.updateDynamic("sitekey")(sitekey)
     if (size != null) __obj.updateDynamic("size")(size)

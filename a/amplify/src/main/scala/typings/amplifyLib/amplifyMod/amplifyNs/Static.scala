@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 trait Static extends js.Object {
   @JSName("request")
   var request_Original: Request = js.native
-  var store: Store = js.native
+  @JSName("store")
+  var store_Original: Store = js.native
   @JSName("subscribe")
   var subscribe_Original: Subscribe = js.native
   /***
@@ -39,6 +40,23 @@ trait Static extends js.Object {
     *   error (optional): Function to invoke on error.
     */
   def request(settings: RequestSettings): js.Any = js.native
+  /***
+    * Gets a hash of all stored values.
+    */
+  def store(): js.Any = js.native
+  /***
+    * Gets a stored value based on the key.
+    */
+  def store(key: java.lang.String): js.Any = js.native
+  /***
+    * Stores a value for a given key using the default storage type.
+    *
+    * key: Identifier for the value being stored.
+    * value: The value to store. The value can be anything that can be serialized as JSON.
+    * [options]: A set of key/value pairs that relate to settings for storing the value.
+    */
+  def store(key: java.lang.String, value: js.Any): scala.Unit = js.native
+  def store(key: java.lang.String, value: js.Any, options: js.Any): scala.Unit = js.native
   /***
     * Subscribe to a message.
     * topic: Name of the message to subscribe to.

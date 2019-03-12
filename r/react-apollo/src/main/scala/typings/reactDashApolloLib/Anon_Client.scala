@@ -9,8 +9,16 @@ import scala.scalajs.js.annotation._
 trait Anon_Client extends js.Object {
   @JSName("client")
   var client_Original: propDashTypesLib.propDashTypesMod.Validator[js.Object] = js.native
-  var operations: propDashTypesLib.propDashTypesMod.Requireable[js.Object] = js.native
+  @JSName("operations")
+  var operations_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Object] = js.native
   def client(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def operations(
     props: js.Object,
     propName: java.lang.String,
     componentName: java.lang.String,

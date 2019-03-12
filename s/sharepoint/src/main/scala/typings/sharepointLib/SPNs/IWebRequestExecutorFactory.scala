@@ -12,8 +12,8 @@ trait IWebRequestExecutorFactory extends js.Object {
 
 object IWebRequestExecutorFactory {
   @scala.inline
-  def apply(createWebRequestExecutor: js.Function0[microsoftDashAjaxLib.SysNs.NetNs.WebRequestExecutor]): IWebRequestExecutorFactory = {
-    val __obj = js.Dynamic.literal(createWebRequestExecutor = createWebRequestExecutor)
+  def apply(createWebRequestExecutor: () => microsoftDashAjaxLib.SysNs.NetNs.WebRequestExecutor): IWebRequestExecutorFactory = {
+    val __obj = js.Dynamic.literal(createWebRequestExecutor = js.Any.fromFunction0(createWebRequestExecutor))
   
     __obj.asInstanceOf[IWebRequestExecutorFactory]
   }

@@ -37,13 +37,7 @@ object IdPOptions {
   @scala.inline
   def apply(
     cert: java.lang.String | nodeLib.Buffer,
-    getPostURL: js.Function4[
-      java.lang.String, 
-      js.Any, 
-      expressLib.expressMod.eNs.Request, 
-      js.Function2[/* err */ js.Any, /* url */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ],
+    getPostURL: (java.lang.String, js.Any, expressLib.expressMod.eNs.Request, js.Function2[/* err */ js.Any, /* url */ java.lang.String, scala.Unit]) => scala.Unit,
     issuer: java.lang.String,
     key: java.lang.String | nodeLib.Buffer,
     RelayState: java.lang.String = null,
@@ -54,7 +48,7 @@ object IdPOptions {
     encryptionAlgorithm: java.lang.String = null,
     encryptionCert: java.lang.String | nodeLib.Buffer = null,
     encryptionPublicKey: java.lang.String | nodeLib.Buffer = null,
-    getUserFromRequest: js.Function1[/* req */ expressLib.expressMod.eNs.Request, _] = null,
+    getUserFromRequest: /* req */ expressLib.expressMod.eNs.Request => _ = null,
     inResponseTo: java.lang.String = null,
     keyEncryptionAlgorighm: java.lang.String = null,
     lifetimeInSeconds: scala.Int | scala.Double = null,
@@ -63,7 +57,7 @@ object IdPOptions {
     signResponse: js.UndefOr[scala.Boolean] = js.undefined,
     signatureAlgorithm: SignatureAlgorithmType = null
   ): IdPOptions = {
-    val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], getPostURL = getPostURL, issuer = issuer, key = key.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], getPostURL = js.Any.fromFunction4(getPostURL), issuer = issuer, key = key.asInstanceOf[js.Any])
     if (RelayState != null) __obj.updateDynamic("RelayState")(RelayState)
     if (audience != null) __obj.updateDynamic("audience")(audience)
     if (authnContextClassRef != null) __obj.updateDynamic("authnContextClassRef")(authnContextClassRef)
@@ -72,7 +66,7 @@ object IdPOptions {
     if (encryptionAlgorithm != null) __obj.updateDynamic("encryptionAlgorithm")(encryptionAlgorithm)
     if (encryptionCert != null) __obj.updateDynamic("encryptionCert")(encryptionCert.asInstanceOf[js.Any])
     if (encryptionPublicKey != null) __obj.updateDynamic("encryptionPublicKey")(encryptionPublicKey.asInstanceOf[js.Any])
-    if (getUserFromRequest != null) __obj.updateDynamic("getUserFromRequest")(getUserFromRequest)
+    if (getUserFromRequest != null) __obj.updateDynamic("getUserFromRequest")(js.Any.fromFunction1(getUserFromRequest))
     if (inResponseTo != null) __obj.updateDynamic("inResponseTo")(inResponseTo)
     if (keyEncryptionAlgorighm != null) __obj.updateDynamic("keyEncryptionAlgorighm")(keyEncryptionAlgorighm)
     if (lifetimeInSeconds != null) __obj.updateDynamic("lifetimeInSeconds")(lifetimeInSeconds.asInstanceOf[js.Any])

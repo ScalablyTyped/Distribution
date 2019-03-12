@@ -25,11 +25,11 @@ trait ModalProps
   var dialogTransitionTimeout: js.UndefOr[scala.Double] = js.undefined
   var enforceFocus: js.UndefOr[scala.Boolean] = js.undefined
   var keyboard: js.UndefOr[scala.Boolean] = js.undefined
-  var onBackdropClick: js.UndefOr[js.Function1[/* node */ reactLib.HTMLElement, _]] = js.undefined
-  var onEscapeKeyUp: js.UndefOr[js.Function1[/* node */ reactLib.HTMLElement, _]] = js.undefined
+  var onBackdropClick: js.UndefOr[js.Function1[/* node */ stdLib.HTMLElement, _]] = js.undefined
+  var onEscapeKeyUp: js.UndefOr[js.Function1[/* node */ stdLib.HTMLElement, _]] = js.undefined
   // Required
   var onHide: js.Function
-  var onShow: js.UndefOr[js.Function1[/* node */ reactLib.HTMLElement, _]] = js.undefined
+  var onShow: js.UndefOr[js.Function1[/* node */ stdLib.HTMLElement, _]] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
   var transition: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
 }
@@ -55,9 +55,9 @@ object ModalProps {
     dialogTransitionTimeout: scala.Int | scala.Double = null,
     enforceFocus: js.UndefOr[scala.Boolean] = js.undefined,
     keyboard: js.UndefOr[scala.Boolean] = js.undefined,
-    onBackdropClick: js.Function1[/* node */ reactLib.HTMLElement, _] = null,
-    onEscapeKeyUp: js.Function1[/* node */ reactLib.HTMLElement, _] = null,
-    onShow: js.Function1[/* node */ reactLib.HTMLElement, _] = null,
+    onBackdropClick: /* node */ stdLib.HTMLElement => _ = null,
+    onEscapeKeyUp: /* node */ stdLib.HTMLElement => _ = null,
+    onShow: /* node */ stdLib.HTMLElement => _ = null,
     show: js.UndefOr[scala.Boolean] = js.undefined,
     transition: reactLib.reactMod.ReactNs.ReactElement[_] = null
   ): ModalProps = {
@@ -79,9 +79,9 @@ object ModalProps {
     if (dialogTransitionTimeout != null) __obj.updateDynamic("dialogTransitionTimeout")(dialogTransitionTimeout.asInstanceOf[js.Any])
     if (!js.isUndefined(enforceFocus)) __obj.updateDynamic("enforceFocus")(enforceFocus)
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
-    if (onBackdropClick != null) __obj.updateDynamic("onBackdropClick")(onBackdropClick)
-    if (onEscapeKeyUp != null) __obj.updateDynamic("onEscapeKeyUp")(onEscapeKeyUp)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onBackdropClick != null) __obj.updateDynamic("onBackdropClick")(js.Any.fromFunction1(onBackdropClick))
+    if (onEscapeKeyUp != null) __obj.updateDynamic("onEscapeKeyUp")(js.Any.fromFunction1(onEscapeKeyUp))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
     if (transition != null) __obj.updateDynamic("transition")(transition)
     __obj.asInstanceOf[ModalProps]

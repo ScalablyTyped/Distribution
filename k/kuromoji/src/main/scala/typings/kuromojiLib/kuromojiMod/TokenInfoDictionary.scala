@@ -25,19 +25,16 @@ trait TokenInfoDictionary extends js.Object {
 object TokenInfoDictionary {
   @scala.inline
   def apply(
-    addMapping: js.Function2[scala.Double, scala.Double, scala.Unit],
-    buildDictionary: js.Function1[
-      js.Array[js.Array[_]], 
-      org.scalablytyped.runtime.NumberDictionary[java.lang.String]
-    ],
-    getFeatures: js.Function1[java.lang.String, java.lang.String],
-    loadDictionary: js.Function1[stdLib.Uint8Array, TokenInfoDictionary],
-    loadPosVector: js.Function1[stdLib.Uint8Array, TokenInfoDictionary],
-    loadTargetMap: js.Function1[stdLib.Uint8Array, TokenInfoDictionary],
-    put: js.Function5[scala.Double, scala.Double, scala.Double, java.lang.String, java.lang.String, scala.Double],
-    targetMapToBuffer: js.Function0[stdLib.Uint8Array]
+    addMapping: (scala.Double, scala.Double) => scala.Unit,
+    buildDictionary: js.Array[js.Array[_]] => org.scalablytyped.runtime.NumberDictionary[java.lang.String],
+    getFeatures: java.lang.String => java.lang.String,
+    loadDictionary: stdLib.Uint8Array => TokenInfoDictionary,
+    loadPosVector: stdLib.Uint8Array => TokenInfoDictionary,
+    loadTargetMap: stdLib.Uint8Array => TokenInfoDictionary,
+    put: (scala.Double, scala.Double, scala.Double, java.lang.String, java.lang.String) => scala.Double,
+    targetMapToBuffer: () => stdLib.Uint8Array
   ): TokenInfoDictionary = {
-    val __obj = js.Dynamic.literal(addMapping = addMapping, buildDictionary = buildDictionary, getFeatures = getFeatures, loadDictionary = loadDictionary, loadPosVector = loadPosVector, loadTargetMap = loadTargetMap, put = put, targetMapToBuffer = targetMapToBuffer)
+    val __obj = js.Dynamic.literal(addMapping = js.Any.fromFunction2(addMapping), buildDictionary = js.Any.fromFunction1(buildDictionary), getFeatures = js.Any.fromFunction1(getFeatures), loadDictionary = js.Any.fromFunction1(loadDictionary), loadPosVector = js.Any.fromFunction1(loadPosVector), loadTargetMap = js.Any.fromFunction1(loadTargetMap), put = js.Any.fromFunction5(put), targetMapToBuffer = js.Any.fromFunction0(targetMapToBuffer))
   
     __obj.asInstanceOf[TokenInfoDictionary]
   }

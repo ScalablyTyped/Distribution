@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jasmine-expect/dist/toHaveFalse", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val toHaveFalse: jasmineDashExpectLib.distToHaveFalseMod.ToHaveFalse = js.native
+  val toHaveFalse: ToHaveFalse = js.native
 }
 

@@ -13,7 +13,7 @@ trait Subscriber extends js.Object {
   /**
     * The type of notification that AWS sends to a subscriber.
     */
-  var SubscriptionType: SubscriptionType
+  var SubscriptionType: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.SubscriptionType
 }
 
 object Subscriber {

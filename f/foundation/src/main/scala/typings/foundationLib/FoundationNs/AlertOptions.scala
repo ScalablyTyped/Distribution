@@ -12,9 +12,9 @@ trait AlertOptions extends js.Object {
 
 object AlertOptions {
   @scala.inline
-  def apply(callback: js.Function0[_] = null): AlertOptions = {
+  def apply(callback: () => _ = null): AlertOptions = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     __obj.asInstanceOf[AlertOptions]
   }
 }

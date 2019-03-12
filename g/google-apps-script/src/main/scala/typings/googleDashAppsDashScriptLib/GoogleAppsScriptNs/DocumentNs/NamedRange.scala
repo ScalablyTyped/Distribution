@@ -15,12 +15,12 @@ trait NamedRange extends js.Object {
 object NamedRange {
   @scala.inline
   def apply(
-    getId: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getRange: js.Function0[Range],
-    remove: js.Function0[scala.Unit]
+    getId: () => java.lang.String,
+    getName: () => java.lang.String,
+    getRange: () => Range,
+    remove: () => scala.Unit
   ): NamedRange = {
-    val __obj = js.Dynamic.literal(getId = getId, getName = getName, getRange = getRange, remove = remove)
+    val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId), getName = js.Any.fromFunction0(getName), getRange = js.Any.fromFunction0(getRange), remove = js.Any.fromFunction0(remove))
   
     __obj.asInstanceOf[NamedRange]
   }

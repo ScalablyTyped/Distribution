@@ -15,10 +15,10 @@ trait ConcatFromOptionsBuilder extends js.Object {
 object ConcatFromOptionsBuilder {
   @scala.inline
   def apply(
-    paths: js.Function2[js.Array[java.lang.String], js.Any, ToOptionsBuilder],
-    strings: js.Function2[js.Array[java.lang.String], js.Any, ToOptionsBuilder]
+    paths: (js.Array[java.lang.String], js.Any) => ToOptionsBuilder,
+    strings: (js.Array[java.lang.String], js.Any) => ToOptionsBuilder
   ): ConcatFromOptionsBuilder = {
-    val __obj = js.Dynamic.literal(paths = paths, strings = strings)
+    val __obj = js.Dynamic.literal(paths = js.Any.fromFunction2(paths), strings = js.Any.fromFunction2(strings))
   
     __obj.asInstanceOf[ConcatFromOptionsBuilder]
   }

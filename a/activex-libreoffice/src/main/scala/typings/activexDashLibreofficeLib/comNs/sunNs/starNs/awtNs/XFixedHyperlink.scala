@@ -42,19 +42,19 @@ object XFixedHyperlink {
     Alignment: scala.Double,
     Text: java.lang.String,
     URL: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    addActionListener: js.Function1[XActionListener, scala.Unit],
-    getAlignment: js.Function0[scala.Double],
-    getText: js.Function0[java.lang.String],
-    getURL: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeActionListener: js.Function1[XActionListener, scala.Unit],
-    setAlignment: js.Function1[scala.Double, scala.Unit],
-    setText: js.Function1[java.lang.String, scala.Unit],
-    setURL: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    addActionListener: XActionListener => scala.Unit,
+    getAlignment: () => scala.Double,
+    getText: () => java.lang.String,
+    getURL: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeActionListener: XActionListener => scala.Unit,
+    setAlignment: scala.Double => scala.Unit,
+    setText: java.lang.String => scala.Unit,
+    setURL: java.lang.String => scala.Unit
   ): XFixedHyperlink = {
-    val __obj = js.Dynamic.literal(Alignment = Alignment, Text = Text, URL = URL, acquire = acquire, addActionListener = addActionListener, getAlignment = getAlignment, getText = getText, getURL = getURL, queryInterface = queryInterface, release = release, removeActionListener = removeActionListener, setAlignment = setAlignment, setText = setText, setURL = setURL)
+    val __obj = js.Dynamic.literal(Alignment = Alignment, Text = Text, URL = URL, acquire = js.Any.fromFunction0(acquire), addActionListener = js.Any.fromFunction1(addActionListener), getAlignment = js.Any.fromFunction0(getAlignment), getText = js.Any.fromFunction0(getText), getURL = js.Any.fromFunction0(getURL), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeActionListener = js.Any.fromFunction1(removeActionListener), setAlignment = js.Any.fromFunction1(setAlignment), setText = js.Any.fromFunction1(setText), setURL = js.Any.fromFunction1(setURL))
   
     __obj.asInstanceOf[XFixedHyperlink]
   }

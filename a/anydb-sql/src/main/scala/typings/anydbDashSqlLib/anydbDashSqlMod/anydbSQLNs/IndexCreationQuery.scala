@@ -18,21 +18,21 @@ trait IndexCreationQuery
 object IndexCreationQuery {
   @scala.inline
   def apply(
-    all: js.Function0[bluebirdLib.bluebirdMod.namespaced[js.Array[scala.Unit]]],
-    allWithin: js.Function1[DatabaseConnection, bluebirdLib.bluebirdMod.namespaced[js.Array[scala.Unit]]],
-    exec: js.Function0[bluebirdLib.bluebirdMod.namespaced[scala.Unit]],
-    execWithin: js.Function1[DatabaseConnection, bluebirdLib.bluebirdMod.namespaced[scala.Unit]],
-    fulltext: js.Function0[IndexCreationQuery],
-    get: js.Function0[bluebirdLib.bluebirdMod.namespaced[scala.Unit]],
-    getWithin: js.Function1[DatabaseConnection, bluebirdLib.bluebirdMod.namespaced[scala.Unit]],
-    on: js.Function1[/* repeated */ Column[_] | OrderByValueNode, IndexCreationQuery],
-    spatial: js.Function0[IndexCreationQuery],
-    toQuery: js.Function0[QueryLike],
-    unique: js.Function0[IndexCreationQuery],
-    using: js.Function1[java.lang.String, IndexCreationQuery],
-    withParser: js.Function1[java.lang.String, IndexCreationQuery]
+    all: () => bluebirdLib.bluebirdMod.namespaced[js.Array[scala.Unit]],
+    allWithin: DatabaseConnection => bluebirdLib.bluebirdMod.namespaced[js.Array[scala.Unit]],
+    exec: () => bluebirdLib.bluebirdMod.namespaced[scala.Unit],
+    execWithin: DatabaseConnection => bluebirdLib.bluebirdMod.namespaced[scala.Unit],
+    fulltext: () => IndexCreationQuery,
+    get: () => bluebirdLib.bluebirdMod.namespaced[scala.Unit],
+    getWithin: DatabaseConnection => bluebirdLib.bluebirdMod.namespaced[scala.Unit],
+    on: /* repeated */ Column[_] | OrderByValueNode => IndexCreationQuery,
+    spatial: () => IndexCreationQuery,
+    toQuery: () => QueryLike,
+    unique: () => IndexCreationQuery,
+    using: java.lang.String => IndexCreationQuery,
+    withParser: java.lang.String => IndexCreationQuery
   ): IndexCreationQuery = {
-    val __obj = js.Dynamic.literal(all = all, allWithin = allWithin, exec = exec, execWithin = execWithin, fulltext = fulltext, get = get, getWithin = getWithin, on = on, spatial = spatial, toQuery = toQuery, unique = unique, using = using, withParser = withParser)
+    val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all), allWithin = js.Any.fromFunction1(allWithin), exec = js.Any.fromFunction0(exec), execWithin = js.Any.fromFunction1(execWithin), fulltext = js.Any.fromFunction0(fulltext), get = js.Any.fromFunction0(get), getWithin = js.Any.fromFunction1(getWithin), on = js.Any.fromFunction1(on), spatial = js.Any.fromFunction0(spatial), toQuery = js.Any.fromFunction0(toQuery), unique = js.Any.fromFunction0(unique), using = js.Any.fromFunction1(using), withParser = js.Any.fromFunction1(withParser))
   
     __obj.asInstanceOf[IndexCreationQuery]
   }

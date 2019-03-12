@@ -26,12 +26,12 @@ trait ReactCropProps extends js.Object {
   var onDragStart: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onImageError: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLImageElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLImageElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
   var onImageLoaded: js.UndefOr[
-    js.Function2[/* target */ reactLib.HTMLImageElement, /* pixelCrop */ PixelCrop, scala.Unit]
+    js.Function2[/* target */ stdLib.HTMLImageElement, /* pixelCrop */ PixelCrop, scala.Unit]
   ] = js.undefined
   var src: java.lang.String
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
@@ -41,7 +41,7 @@ trait ReactCropProps extends js.Object {
 object ReactCropProps {
   @scala.inline
   def apply(
-    onChange: js.Function2[Crop, PixelCrop, scala.Unit],
+    onChange: (Crop, PixelCrop) => scala.Unit,
     src: java.lang.String,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     className: java.lang.String = null,
@@ -56,17 +56,14 @@ object ReactCropProps {
     maxWidth: scala.Int | scala.Double = null,
     minHeight: scala.Int | scala.Double = null,
     minWidth: scala.Int | scala.Double = null,
-    onComplete: js.Function2[/* crop */ Crop, /* pixelCrop */ PixelCrop, scala.Unit] = null,
-    onDragEnd: js.Function0[scala.Unit] = null,
-    onDragStart: js.Function0[scala.Unit] = null,
-    onImageError: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLImageElement, reactLib.Event], 
-      scala.Unit
-    ] = null,
-    onImageLoaded: js.Function2[/* target */ reactLib.HTMLImageElement, /* pixelCrop */ PixelCrop, scala.Unit] = null,
+    onComplete: (/* crop */ Crop, /* pixelCrop */ PixelCrop) => scala.Unit = null,
+    onDragEnd: () => scala.Unit = null,
+    onDragStart: () => scala.Unit = null,
+    onImageError: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLImageElement, reactLib.Event] => scala.Unit = null,
+    onImageLoaded: (/* target */ stdLib.HTMLImageElement, /* pixelCrop */ PixelCrop) => scala.Unit = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): ReactCropProps = {
-    val __obj = js.Dynamic.literal(onChange = onChange, src = src)
+    val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction2(onChange), src = src)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (crop != null) __obj.updateDynamic("crop")(crop)
@@ -80,11 +77,11 @@ object ReactCropProps {
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd)
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
-    if (onImageError != null) __obj.updateDynamic("onImageError")(onImageError)
-    if (onImageLoaded != null) __obj.updateDynamic("onImageLoaded")(onImageLoaded)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction2(onComplete))
+    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction0(onDragEnd))
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction0(onDragStart))
+    if (onImageError != null) __obj.updateDynamic("onImageError")(js.Any.fromFunction1(onImageError))
+    if (onImageLoaded != null) __obj.updateDynamic("onImageLoaded")(js.Any.fromFunction2(onImageLoaded))
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[ReactCropProps]
   }

@@ -76,28 +76,28 @@ object ILegend {
     baseCls: java.lang.String = null,
     disableSelection: js.UndefOr[scala.Boolean] = js.undefined,
     docked: java.lang.String = null,
-    getBaseCls: js.Function0[java.lang.String] = null,
-    getDisableSelection: js.Function0[scala.Boolean] = null,
-    getDocked: js.Function0[java.lang.String] = null,
-    getHorizontalHeight: js.Function0[scala.Double] = null,
-    getInline: js.Function0[scala.Boolean] = null,
-    getItemTpl: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getPadding: js.Function0[scala.Double] = null,
-    getToggleable: js.Function0[scala.Boolean] = null,
-    getVerticalWidth: js.Function0[scala.Double] = null,
+    getBaseCls: () => java.lang.String = null,
+    getDisableSelection: () => scala.Boolean = null,
+    getDocked: () => java.lang.String = null,
+    getHorizontalHeight: () => scala.Double = null,
+    getInline: () => scala.Boolean = null,
+    getItemTpl: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getPadding: () => scala.Double = null,
+    getToggleable: () => scala.Boolean = null,
+    getVerticalWidth: () => scala.Double = null,
     `inline`: js.Any = null,
     itemTpl: js.Any = null,
     padding: js.Any = null,
     position: java.lang.String = null,
-    setBaseCls: js.Function1[/* baseCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setDisableSelection: js.Function1[/* disableSelection */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setDocked: js.Function1[/* docked */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setHorizontalHeight: js.Function1[/* horizontalHeight */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setInline: js.Function1[/* inline */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setItemTpl: js.Function1[/* itemTpl */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
-    setPadding: js.Function1[/* padding */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setToggleable: js.Function1[/* toggleable */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setVerticalWidth: js.Function1[/* verticalWidth */ js.UndefOr[scala.Double], scala.Unit] = null,
+    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setDisableSelection: /* disableSelection */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setDocked: /* docked */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setHorizontalHeight: /* horizontalHeight */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setInline: /* inline */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setItemTpl: /* itemTpl */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
+    setPadding: /* padding */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setToggleable: /* toggleable */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setVerticalWidth: /* verticalWidth */ js.UndefOr[scala.Double] => scala.Unit = null,
     toggleable: js.UndefOr[scala.Boolean] = js.undefined
   ): ILegend = {
     val __obj = js.Dynamic.literal()
@@ -105,28 +105,28 @@ object ILegend {
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
     if (!js.isUndefined(disableSelection)) __obj.updateDynamic("disableSelection")(disableSelection)
     if (docked != null) __obj.updateDynamic("docked")(docked)
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(getBaseCls)
-    if (getDisableSelection != null) __obj.updateDynamic("getDisableSelection")(getDisableSelection)
-    if (getDocked != null) __obj.updateDynamic("getDocked")(getDocked)
-    if (getHorizontalHeight != null) __obj.updateDynamic("getHorizontalHeight")(getHorizontalHeight)
-    if (getInline != null) __obj.updateDynamic("getInline")(getInline)
-    if (getItemTpl != null) __obj.updateDynamic("getItemTpl")(getItemTpl)
-    if (getPadding != null) __obj.updateDynamic("getPadding")(getPadding)
-    if (getToggleable != null) __obj.updateDynamic("getToggleable")(getToggleable)
-    if (getVerticalWidth != null) __obj.updateDynamic("getVerticalWidth")(getVerticalWidth)
+    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
+    if (getDisableSelection != null) __obj.updateDynamic("getDisableSelection")(js.Any.fromFunction0(getDisableSelection))
+    if (getDocked != null) __obj.updateDynamic("getDocked")(js.Any.fromFunction0(getDocked))
+    if (getHorizontalHeight != null) __obj.updateDynamic("getHorizontalHeight")(js.Any.fromFunction0(getHorizontalHeight))
+    if (getInline != null) __obj.updateDynamic("getInline")(js.Any.fromFunction0(getInline))
+    if (getItemTpl != null) __obj.updateDynamic("getItemTpl")(js.Any.fromFunction0(getItemTpl))
+    if (getPadding != null) __obj.updateDynamic("getPadding")(js.Any.fromFunction0(getPadding))
+    if (getToggleable != null) __obj.updateDynamic("getToggleable")(js.Any.fromFunction0(getToggleable))
+    if (getVerticalWidth != null) __obj.updateDynamic("getVerticalWidth")(js.Any.fromFunction0(getVerticalWidth))
     if (`inline` != null) __obj.updateDynamic("inline")(`inline`)
     if (itemTpl != null) __obj.updateDynamic("itemTpl")(itemTpl)
     if (padding != null) __obj.updateDynamic("padding")(padding)
     if (position != null) __obj.updateDynamic("position")(position)
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(setBaseCls)
-    if (setDisableSelection != null) __obj.updateDynamic("setDisableSelection")(setDisableSelection)
-    if (setDocked != null) __obj.updateDynamic("setDocked")(setDocked)
-    if (setHorizontalHeight != null) __obj.updateDynamic("setHorizontalHeight")(setHorizontalHeight)
-    if (setInline != null) __obj.updateDynamic("setInline")(setInline)
-    if (setItemTpl != null) __obj.updateDynamic("setItemTpl")(setItemTpl)
-    if (setPadding != null) __obj.updateDynamic("setPadding")(setPadding)
-    if (setToggleable != null) __obj.updateDynamic("setToggleable")(setToggleable)
-    if (setVerticalWidth != null) __obj.updateDynamic("setVerticalWidth")(setVerticalWidth)
+    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
+    if (setDisableSelection != null) __obj.updateDynamic("setDisableSelection")(js.Any.fromFunction1(setDisableSelection))
+    if (setDocked != null) __obj.updateDynamic("setDocked")(js.Any.fromFunction1(setDocked))
+    if (setHorizontalHeight != null) __obj.updateDynamic("setHorizontalHeight")(js.Any.fromFunction1(setHorizontalHeight))
+    if (setInline != null) __obj.updateDynamic("setInline")(js.Any.fromFunction1(setInline))
+    if (setItemTpl != null) __obj.updateDynamic("setItemTpl")(js.Any.fromFunction1(setItemTpl))
+    if (setPadding != null) __obj.updateDynamic("setPadding")(js.Any.fromFunction1(setPadding))
+    if (setToggleable != null) __obj.updateDynamic("setToggleable")(js.Any.fromFunction1(setToggleable))
+    if (setVerticalWidth != null) __obj.updateDynamic("setVerticalWidth")(js.Any.fromFunction1(setVerticalWidth))
     if (!js.isUndefined(toggleable)) __obj.updateDynamic("toggleable")(toggleable)
     __obj.asInstanceOf[ILegend]
   }

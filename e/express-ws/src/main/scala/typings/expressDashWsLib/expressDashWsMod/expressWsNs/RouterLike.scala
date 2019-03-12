@@ -5,23 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RouterLike
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
      with /* key */ org.scalablytyped.runtime.NumberDictionary[js.Any] {
-  var get: expressLib.expressMod.eNs.IRouterMatcher[this.type]
-}
-
-object RouterLike {
-  @scala.inline
-  def apply(
-    get: expressLib.expressMod.eNs.IRouterMatcher[RouterLike],
-    NumberDictionary: /* key */ org.scalablytyped.runtime.NumberDictionary[js.Any] = null,
-    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
-  ): RouterLike = {
-    val __obj = js.Dynamic.literal(get = get)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    __obj.asInstanceOf[RouterLike]
-  }
+  @JSName("get")
+  var get_Original: expressLib.expressMod.eNs.IRouterMatcher[this.type] = js.native
+  def get(
+    path: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.PathParams,
+    handlers: (expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.RequestHandler | expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.RequestHandlerParams)*
+  ): this.type = js.native
+  def get(
+    path: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.PathParams,
+    subApplication: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Application
+  ): this.type = js.native
 }
 

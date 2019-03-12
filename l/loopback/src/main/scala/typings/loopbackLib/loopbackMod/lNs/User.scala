@@ -92,7 +92,7 @@ trait User extends PersistedModel {
   def createAccessToken(
     ttl: scala.Double,
     options: js.Any,
-    callback: js.Function2[/* err */ java.lang.String | nodeLib.Error, /* token */ AccessToken, scala.Unit]
+    callback: js.Function2[/* err */ java.lang.String | stdLib.Error, /* token */ AccessToken, scala.Unit]
   ): js.Promise[AccessToken] | scala.Unit = js.native
   /**
     * Compare the given `password` with the users hashed password
@@ -104,7 +104,7 @@ trait User extends PersistedModel {
   def hasPassword(password: java.lang.String): js.Promise[scala.Boolean] | scala.Unit = js.native
   def hasPassword(
     password: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* isMatch */ scala.Boolean, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* isMatch */ scala.Boolean, scala.Unit]
   ): js.Promise[scala.Boolean] | scala.Unit = js.native
   /**
     * Verify a user's identity by sending them a confirmation email

@@ -51,8 +51,8 @@ class Controller ()
     * @param {optional Array} The interface to use for the data being returned, if not an error.
     * @return {boolean}
     */
-  def respond(data: nodeLib.Error): scala.Boolean = js.native
-  def respond(data: nodeLib.Error, arrInterface: js.Array[java.lang.String]): scala.Boolean = js.native
+  def respond(data: stdLib.Error): scala.Boolean = js.native
+  def respond(data: stdLib.Error, arrInterface: js.Array[java.lang.String]): scala.Boolean = js.native
   /**
     * Using API formatting, send an http.ServerResponse indicating there were Too Many Requests (429) (i.e. the client is being rate limited)
     * @param {string} msg Error message to send

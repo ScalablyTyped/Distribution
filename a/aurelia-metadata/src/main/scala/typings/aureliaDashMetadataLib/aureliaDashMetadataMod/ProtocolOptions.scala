@@ -20,12 +20,12 @@ trait ProtocolOptions extends js.Object {
 object ProtocolOptions {
   @scala.inline
   def apply(
-    compose: js.Function1[/* target */ js.Any, scala.Unit] = null,
-    validate: js.Function1[/* target */ js.Any, java.lang.String | scala.Boolean] = null
+    compose: /* target */ js.Any => scala.Unit = null,
+    validate: /* target */ js.Any => java.lang.String | scala.Boolean = null
   ): ProtocolOptions = {
     val __obj = js.Dynamic.literal()
-    if (compose != null) __obj.updateDynamic("compose")(compose)
-    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (compose != null) __obj.updateDynamic("compose")(js.Any.fromFunction1(compose))
+    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction1(validate))
     __obj.asInstanceOf[ProtocolOptions]
   }
 }

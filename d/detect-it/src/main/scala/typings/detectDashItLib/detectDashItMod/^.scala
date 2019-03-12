@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("detect-it", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: detectDashItLib.detectDashItMod.detectIt = js.native
+  val default: detectIt = js.native
 }
 

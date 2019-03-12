@@ -108,16 +108,16 @@ object Static {
     modifier: ModifierStatic,
     month: TimePeriod,
     parse: ParseStatic,
-    schedule: js.Function1[js.Any, Schedule],
+    schedule: js.Any => Schedule,
     second: TimePeriod,
-    setInterval: js.Function2[js.Function0[scala.Unit], ScheduleData, Timer],
-    setTimeout: js.Function2[js.Function0[scala.Unit], ScheduleData, Timer],
+    setInterval: (js.Function0[scala.Unit], ScheduleData) => Timer,
+    setTimeout: (js.Function0[scala.Unit], ScheduleData) => Timer,
     time: TimePeriod,
     weekOfMonth: TimePeriod,
     weekOfYear: TimePeriod,
     year: TimePeriod
   ): Static = {
-    val __obj = js.Dynamic.literal(date = date, day = day, dayOfWeek = dayOfWeek, dayOfWeekCount = dayOfWeekCount, dayOfYear = dayOfYear, hour = hour, minute = minute, modifier = modifier, month = month, parse = parse, schedule = schedule, second = second, setInterval = setInterval, setTimeout = setTimeout, time = time, weekOfMonth = weekOfMonth, weekOfYear = weekOfYear, year = year)
+    val __obj = js.Dynamic.literal(date = date, day = day, dayOfWeek = dayOfWeek, dayOfWeekCount = dayOfWeekCount, dayOfYear = dayOfYear, hour = hour, minute = minute, modifier = modifier, month = month, parse = parse, schedule = js.Any.fromFunction1(schedule), second = second, setInterval = js.Any.fromFunction2(setInterval), setTimeout = js.Any.fromFunction2(setTimeout), time = time, weekOfMonth = weekOfMonth, weekOfYear = weekOfYear, year = year)
   
     __obj.asInstanceOf[Static]
   }

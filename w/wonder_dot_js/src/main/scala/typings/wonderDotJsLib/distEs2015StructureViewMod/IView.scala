@@ -22,12 +22,9 @@ object IView {
   @scala.inline
   def apply(
     dom: js.Any,
-    getContext: js.Function1[
-      wonderDotJsLib.distEs2015CoreDataMainDataMod.ContextConfigData, 
-      stdLib.WebGLRenderingContext
-    ],
+    getContext: wonderDotJsLib.distEs2015CoreDataMainDataMod.ContextConfigData => stdLib.WebGLRenderingContext,
     height: scala.Double,
-    initCanvas: js.Function0[scala.Unit],
+    initCanvas: () => scala.Unit,
     offset: wonderDotJsLib.Anon_XY,
     styleHeight: java.lang.String,
     styleWidth: java.lang.String,
@@ -35,7 +32,7 @@ object IView {
     x: scala.Double,
     y: scala.Double
   ): IView = {
-    val __obj = js.Dynamic.literal(dom = dom, getContext = getContext, height = height, initCanvas = initCanvas, offset = offset, styleHeight = styleHeight, styleWidth = styleWidth, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(dom = dom, getContext = js.Any.fromFunction1(getContext), height = height, initCanvas = js.Any.fromFunction0(initCanvas), offset = offset, styleHeight = styleHeight, styleWidth = styleWidth, width = width, x = x, y = y)
   
     __obj.asInstanceOf[IView]
   }

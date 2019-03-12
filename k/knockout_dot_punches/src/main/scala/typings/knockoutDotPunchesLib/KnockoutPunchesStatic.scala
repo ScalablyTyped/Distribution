@@ -11,8 +11,8 @@ trait KnockoutPunchesStatic extends js.Object {
 
 object KnockoutPunchesStatic {
   @scala.inline
-  def apply(enableAll: js.Function0[scala.Unit]): KnockoutPunchesStatic = {
-    val __obj = js.Dynamic.literal(enableAll = enableAll)
+  def apply(enableAll: () => scala.Unit): KnockoutPunchesStatic = {
+    val __obj = js.Dynamic.literal(enableAll = js.Any.fromFunction0(enableAll))
   
     __obj.asInstanceOf[KnockoutPunchesStatic]
   }

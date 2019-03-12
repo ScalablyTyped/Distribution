@@ -36,12 +36,12 @@ object XCellFormatRangesSupplier {
   @scala.inline
   def apply(
     CellFormatRanges: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
-    acquire: js.Function0[scala.Unit],
-    getCellFormatRanges: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getCellFormatRanges: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCellFormatRangesSupplier = {
-    val __obj = js.Dynamic.literal(CellFormatRanges = CellFormatRanges, acquire = acquire, getCellFormatRanges = getCellFormatRanges, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(CellFormatRanges = CellFormatRanges, acquire = js.Any.fromFunction0(acquire), getCellFormatRanges = js.Any.fromFunction0(getCellFormatRanges), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCellFormatRangesSupplier]
   }

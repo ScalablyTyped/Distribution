@@ -18,15 +18,15 @@ trait UtilStatic extends js.Object {
 object UtilStatic {
   @scala.inline
   def apply(
-    decode: js.Function1[java.lang.String, java.lang.String],
-    encode: js.Function1[java.lang.String, java.lang.String],
-    getKeys: js.Function1[js.Object, js.Array[_]],
-    isArray: js.Function1[js.Any, scala.Boolean],
-    isObject: js.Function1[js.Any, scala.Boolean],
-    retrieve: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    toArray: js.Function1[/* repeated */ js.Any, js.Array[_]]
+    decode: java.lang.String => java.lang.String,
+    encode: java.lang.String => java.lang.String,
+    getKeys: js.Object => js.Array[_],
+    isArray: js.Any => scala.Boolean,
+    isObject: js.Any => scala.Boolean,
+    retrieve: (java.lang.String, java.lang.String) => java.lang.String,
+    toArray: /* repeated */ js.Any => js.Array[_]
   ): UtilStatic = {
-    val __obj = js.Dynamic.literal(decode = decode, encode = encode, getKeys = getKeys, isArray = isArray, isObject = isObject, retrieve = retrieve, toArray = toArray)
+    val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode), getKeys = js.Any.fromFunction1(getKeys), isArray = js.Any.fromFunction1(isArray), isObject = js.Any.fromFunction1(isObject), retrieve = js.Any.fromFunction2(retrieve), toArray = js.Any.fromFunction1(toArray))
   
     __obj.asInstanceOf[UtilStatic]
   }

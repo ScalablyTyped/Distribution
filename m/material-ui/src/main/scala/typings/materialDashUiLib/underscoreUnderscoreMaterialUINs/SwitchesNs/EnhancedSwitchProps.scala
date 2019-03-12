@@ -38,7 +38,7 @@ object EnhancedSwitchProps {
   def apply(
     inputStyle: reactLib.reactMod.ReactNs.CSSProperties,
     inputType: java.lang.String,
-    onParentShouldUpdate: js.Function1[scala.Boolean, scala.Unit],
+    onParentShouldUpdate: scala.Boolean => scala.Unit,
     switchElement: reactLib.reactMod.ReactNs.ReactElement[_],
     switched: scala.Boolean,
     CommonEnhancedSwitchProps: CommonEnhancedSwitchProps[EnhancedSwitch] = null,
@@ -57,11 +57,7 @@ object EnhancedSwitchProps {
     onMouseDown: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
     onMouseLeave: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
     onMouseUp: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onSwitch: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
-      /* isInputChecked */ scala.Boolean, 
-      scala.Unit
-    ] = null,
+    onSwitch: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* isInputChecked */ scala.Boolean) => scala.Unit = null,
     onTouchEnd: reactLib.reactMod.ReactNs.TouchEventHandler[js.Object] = null,
     onTouchStart: reactLib.reactMod.ReactNs.TouchEventHandler[js.Object] = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
@@ -72,7 +68,7 @@ object EnhancedSwitchProps {
     trackStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     value: java.lang.String = null
   ): EnhancedSwitchProps = {
-    val __obj = js.Dynamic.literal(inputStyle = inputStyle, inputType = inputType, onParentShouldUpdate = onParentShouldUpdate, switchElement = switchElement, switched = switched)
+    val __obj = js.Dynamic.literal(inputStyle = inputStyle, inputType = inputType, onParentShouldUpdate = js.Any.fromFunction1(onParentShouldUpdate), switchElement = switchElement, switched = switched)
     js.Dynamic.global.Object.assign(__obj, CommonEnhancedSwitchProps)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(defaultSwitched)) __obj.updateDynamic("defaultSwitched")(defaultSwitched)
@@ -89,7 +85,7 @@ object EnhancedSwitchProps {
     if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
     if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
-    if (onSwitch != null) __obj.updateDynamic("onSwitch")(onSwitch)
+    if (onSwitch != null) __obj.updateDynamic("onSwitch")(js.Any.fromFunction2(onSwitch))
     if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
     if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)

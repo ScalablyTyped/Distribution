@@ -619,7 +619,7 @@ object ^ extends js.Object {
   /**
   		 * An instance of <Titanium.Media.MusicPlayer> representing the app-specific music player.
   		 */
-  val appMusicPlayer: titaniumLib.TitaniumNs.MediaNs.MusicPlayer = js.native
+  val appMusicPlayer: MusicPlayer = js.native
   /**
   		 * Returns the line type constant for the current line type.
   		 */
@@ -695,7 +695,7 @@ object ^ extends js.Object {
   /**
   		 * An instance of <Titanium.Media.MusicPlayer> representing the system-wide music player.
   		 */
-  val systemMusicPlayer: titaniumLib.TitaniumNs.MediaNs.MusicPlayer = js.native
+  val systemMusicPlayer: MusicPlayer = js.native
   /**
   		 * Current volume of the playback device.
   		 */
@@ -715,28 +715,28 @@ object ^ extends js.Object {
   /**
   		 * Creates and returns an instance of <Titanium.Media.AudioPlayer>.
   		 */
-  def createAudioPlayer(): titaniumLib.TitaniumNs.MediaNs.AudioPlayer = js.native
-  def createAudioPlayer(parameters: js.Any): titaniumLib.TitaniumNs.MediaNs.AudioPlayer = js.native
+  def createAudioPlayer(): AudioPlayer = js.native
+  def createAudioPlayer(parameters: js.Any): AudioPlayer = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Media.AudioRecorder>.
   		 */
-  def createAudioRecorder(): titaniumLib.TitaniumNs.MediaNs.AudioRecorder = js.native
-  def createAudioRecorder(parameters: js.Any): titaniumLib.TitaniumNs.MediaNs.AudioRecorder = js.native
+  def createAudioRecorder(): AudioRecorder = js.native
+  def createAudioRecorder(parameters: js.Any): AudioRecorder = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Media.Sound>.
   		 */
-  def createSound(): titaniumLib.TitaniumNs.MediaNs.Sound = js.native
-  def createSound(parameters: js.Any): titaniumLib.TitaniumNs.MediaNs.Sound = js.native
+  def createSound(): Sound = js.native
+  def createSound(parameters: js.Any): Sound = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Media.SystemAlert>.
   		 */
-  def createSystemAlert(): titaniumLib.TitaniumNs.MediaNs.SystemAlert = js.native
-  def createSystemAlert(parameters: js.Any): titaniumLib.TitaniumNs.MediaNs.SystemAlert = js.native
+  def createSystemAlert(): SystemAlert = js.native
+  def createSystemAlert(parameters: js.Any): SystemAlert = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Media.VideoPlayer>.
   		 */
-  def createVideoPlayer(): titaniumLib.TitaniumNs.MediaNs.VideoPlayer = js.native
-  def createVideoPlayer(parameters: js.Any): titaniumLib.TitaniumNs.MediaNs.VideoPlayer = js.native
+  def createVideoPlayer(): VideoPlayer = js.native
+  def createVideoPlayer(parameters: js.Any): VideoPlayer = js.native
   /**
   		 * Fires a synthesized event to any registered listeners.
   		 */
@@ -748,7 +748,7 @@ object ^ extends js.Object {
   /**
   		 * Gets the value of the <Titanium.Media.appMusicPlayer> property.
   		 */
-  def getAppMusicPlayer(): titaniumLib.TitaniumNs.MediaNs.MusicPlayer = js.native
+  def getAppMusicPlayer(): MusicPlayer = js.native
   /**
   		 * Gets the value of the <Titanium.Media.audioLineType> property.
   		 */
@@ -836,7 +836,7 @@ object ^ extends js.Object {
   /**
   		 * Gets the value of the <Titanium.Media.systemMusicPlayer> property.
   		 */
-  def getSystemMusicPlayer(): titaniumLib.TitaniumNs.MediaNs.MusicPlayer = js.native
+  def getSystemMusicPlayer(): MusicPlayer = js.native
   /**
   		 * Gets the value of the <Titanium.Media.volume> property.
   		 */
@@ -888,7 +888,7 @@ object ^ extends js.Object {
   /**
   		 * Searches the music library for items matching the specified search predicates.
   		 */
-  def queryMusicLibrary(query: titaniumLib.MediaQueryType): js.Array[titaniumLib.TitaniumNs.MediaNs.Item] = js.native
+  def queryMusicLibrary(query: titaniumLib.MediaQueryType): js.Array[Item] = js.native
   /**
   		 * Removes the specified callback as an event listener for the named event.
   		 */

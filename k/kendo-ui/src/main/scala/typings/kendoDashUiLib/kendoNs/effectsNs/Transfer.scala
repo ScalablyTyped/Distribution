@@ -10,13 +10,13 @@ trait Transfer extends Effect
 object Transfer {
   @scala.inline
   def apply(
-    add: js.Function1[Effect, Transfer],
-    duration: js.Function1[scala.Double, Transfer],
-    play: js.Function0[kendoDashUiLib.JQueryPromise[_]],
-    reverse: js.Function0[kendoDashUiLib.JQueryPromise[_]],
-    stop: js.Function0[Transfer]
+    add: Effect => Transfer,
+    duration: scala.Double => Transfer,
+    play: () => kendoDashUiLib.JQueryPromise[_],
+    reverse: () => kendoDashUiLib.JQueryPromise[_],
+    stop: () => Transfer
   ): Transfer = {
-    val __obj = js.Dynamic.literal(add = add, duration = duration, play = play, reverse = reverse, stop = stop)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[Transfer]
   }

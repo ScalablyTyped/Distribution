@@ -17,12 +17,7 @@ object ^ extends js.Object {
   ] = js.native
   /* downloads events */
   /** This event fires with the DownloadItem object when a download begins. */
-  val onCreated: firefoxDashWebextDashBrowserLib.WebExtEvent[
-    js.Function1[
-      /* downloadItem */ firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.DownloadItem, 
-      scala.Unit
-    ]
-  ] = js.native
+  val onCreated: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* downloadItem */ DownloadItem, scala.Unit]] = js.native
   /**
     * Fires with the `downloadId` when a download is erased from history.
     * @param downloadId The `id` of the DownloadItem that was erased.
@@ -57,7 +52,7 @@ object ^ extends js.Object {
     */
   def drag(downloadId: scala.Double): scala.Unit = js.native
   /** Erase matching DownloadItems from history */
-  def erase(query: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.DownloadQuery): js.Promise[js.UndefOr[js.Array[scala.Double]]] = js.native
+  def erase(query: DownloadQuery): js.Promise[js.UndefOr[js.Array[scala.Double]]] = js.native
   /**
     * Retrieve an icon for the specified download. For new downloads, file icons are available after the onCreated
     * event has been received. The image returned by this function while a download is in progress may be different
@@ -88,7 +83,7 @@ object ^ extends js.Object {
     * Find DownloadItems. Set `query` to the empty object to get all DownloadItems. To get a specific DownloadItem,
     * set only the `id` field.
     */
-  def search(query: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.DownloadQuery): js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.DownloadItem]] = js.native
+  def search(query: DownloadQuery): js.Promise[js.Array[DownloadItem]] = js.native
   /** @deprecated Unsupported on Firefox at this time. */
   def setShelfEnabled(enabled: scala.Boolean): scala.Unit = js.native
   /** Show the downloaded file in its folder in a file manager. */

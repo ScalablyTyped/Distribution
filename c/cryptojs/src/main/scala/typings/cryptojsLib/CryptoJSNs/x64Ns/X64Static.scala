@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait X64Static extends js.Object {
-  var Word: Word
-  var WordArray: WordArray
+  var Word: cryptojsLib.CryptoJSNs.x64Ns.Word
+  var WordArray: cryptojsLib.CryptoJSNs.x64Ns.WordArray
 }
 
 object X64Static {

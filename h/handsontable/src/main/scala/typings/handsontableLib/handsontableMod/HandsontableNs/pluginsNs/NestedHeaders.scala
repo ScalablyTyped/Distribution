@@ -26,36 +26,36 @@ trait NestedHeaders extends Base {
 object NestedHeaders {
   @scala.inline
   def apply(
-    addHook: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit],
-    callOnPluginsReady: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    checkForFixedColumnsCollision: js.Function0[scala.Unit],
-    checkForOverlappingHeaders: js.Function0[scala.Unit],
-    clearHooks: js.Function0[scala.Unit],
+    addHook: (java.lang.String, js.Function0[scala.Unit]) => scala.Unit,
+    callOnPluginsReady: js.Function0[scala.Unit] => scala.Unit,
+    checkForFixedColumnsCollision: () => scala.Unit,
+    checkForOverlappingHeaders: () => scala.Unit,
+    clearHooks: () => scala.Unit,
     colspanArray: js.Array[_],
     columnHeaderLevelCount: scala.Double,
-    destroy: js.Function0[scala.Unit],
-    disablePlugin: js.Function0[scala.Unit],
-    enablePlugin: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
+    disablePlugin: () => scala.Unit,
+    enablePlugin: () => scala.Unit,
     enabled: scala.Boolean,
-    fillColspanArrayWithDummies: js.Function2[scala.Double, scala.Double, scala.Unit],
-    fillTheRemainingColspans: js.Function0[scala.Unit],
-    getChildHeaders: js.Function2[scala.Double, scala.Double, js.Array[_]],
-    getColspan: js.Function2[scala.Double, scala.Double, scala.Double],
-    getNestedParent: js.Function2[scala.Double, scala.Double, js.Any],
+    fillColspanArrayWithDummies: (scala.Double, scala.Double) => scala.Unit,
+    fillTheRemainingColspans: () => scala.Unit,
+    getChildHeaders: (scala.Double, scala.Double) => js.Array[_],
+    getColspan: (scala.Double, scala.Double) => scala.Double,
+    getNestedParent: (scala.Double, scala.Double) => js.Any,
     ghostTable: GhostTableNestedHeaders,
-    headerRendererFactory: js.Function1[scala.Double, js.Function0[scala.Unit]],
-    init: js.Function0[scala.Unit],
+    headerRendererFactory: scala.Double => js.Function0[scala.Unit],
+    init: () => scala.Unit,
     initialized: scala.Boolean,
     isPluginsReady: scala.Boolean,
-    levelToRowCoords: js.Function1[scala.Double, scala.Double],
+    levelToRowCoords: scala.Double => scala.Double,
     pluginName: java.lang.String,
     pluginsInitializedCallback: js.Array[_],
-    removeHook: js.Function1[java.lang.String, scala.Unit],
-    rowCoordsToLevel: js.Function1[scala.Double, scala.Double],
+    removeHook: java.lang.String => scala.Unit,
+    rowCoordsToLevel: scala.Double => scala.Double,
     settings: js.Array[_],
-    setupColspanArray: js.Function0[scala.Unit]
+    setupColspanArray: () => scala.Unit
   ): NestedHeaders = {
-    val __obj = js.Dynamic.literal(addHook = addHook, callOnPluginsReady = callOnPluginsReady, checkForFixedColumnsCollision = checkForFixedColumnsCollision, checkForOverlappingHeaders = checkForOverlappingHeaders, clearHooks = clearHooks, colspanArray = colspanArray, columnHeaderLevelCount = columnHeaderLevelCount, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, fillColspanArrayWithDummies = fillColspanArrayWithDummies, fillTheRemainingColspans = fillTheRemainingColspans, getChildHeaders = getChildHeaders, getColspan = getColspan, getNestedParent = getNestedParent, ghostTable = ghostTable, headerRendererFactory = headerRendererFactory, init = init, initialized = initialized, isPluginsReady = isPluginsReady, levelToRowCoords = levelToRowCoords, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook, rowCoordsToLevel = rowCoordsToLevel, settings = settings, setupColspanArray = setupColspanArray)
+    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), checkForFixedColumnsCollision = js.Any.fromFunction0(checkForFixedColumnsCollision), checkForOverlappingHeaders = js.Any.fromFunction0(checkForOverlappingHeaders), clearHooks = js.Any.fromFunction0(clearHooks), colspanArray = colspanArray, columnHeaderLevelCount = columnHeaderLevelCount, destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, fillColspanArrayWithDummies = js.Any.fromFunction2(fillColspanArrayWithDummies), fillTheRemainingColspans = js.Any.fromFunction0(fillTheRemainingColspans), getChildHeaders = js.Any.fromFunction2(getChildHeaders), getColspan = js.Any.fromFunction2(getColspan), getNestedParent = js.Any.fromFunction2(getNestedParent), ghostTable = ghostTable, headerRendererFactory = js.Any.fromFunction1(headerRendererFactory), init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, levelToRowCoords = js.Any.fromFunction1(levelToRowCoords), pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = js.Any.fromFunction1(removeHook), rowCoordsToLevel = js.Any.fromFunction1(rowCoordsToLevel), settings = settings, setupColspanArray = js.Any.fromFunction0(setupColspanArray))
   
     __obj.asInstanceOf[NestedHeaders]
   }

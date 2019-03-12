@@ -47,13 +47,13 @@ trait Noise extends js.Object {
 object Noise {
   @scala.inline
   def apply(
-    perlin2: js.Function2[scala.Double, scala.Double, scala.Double],
-    perlin3: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double],
-    seed: js.Function1[scala.Double, scala.Unit],
-    simplex2: js.Function2[scala.Double, scala.Double, scala.Double],
-    simplex3: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double]
+    perlin2: (scala.Double, scala.Double) => scala.Double,
+    perlin3: (scala.Double, scala.Double, scala.Double) => scala.Double,
+    seed: scala.Double => scala.Unit,
+    simplex2: (scala.Double, scala.Double) => scala.Double,
+    simplex3: (scala.Double, scala.Double, scala.Double) => scala.Double
   ): Noise = {
-    val __obj = js.Dynamic.literal(perlin2 = perlin2, perlin3 = perlin3, seed = seed, simplex2 = simplex2, simplex3 = simplex3)
+    val __obj = js.Dynamic.literal(perlin2 = js.Any.fromFunction2(perlin2), perlin3 = js.Any.fromFunction3(perlin3), seed = js.Any.fromFunction1(seed), simplex2 = js.Any.fromFunction2(simplex2), simplex3 = js.Any.fromFunction3(simplex3))
   
     __obj.asInstanceOf[Noise]
   }

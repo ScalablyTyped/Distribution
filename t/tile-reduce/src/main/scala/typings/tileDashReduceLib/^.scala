@@ -31,6 +31,6 @@ object ^ extends js.Object {
     *     console.log('starting')
     * })
     */
-  def TileReduce(options: tileDashReduceLib.Options): tileDashReduceLib.Events = js.native
+  def TileReduce(options: Options): Events = js.native
 }
 

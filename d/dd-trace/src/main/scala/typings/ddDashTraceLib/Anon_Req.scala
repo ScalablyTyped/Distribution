@@ -24,17 +24,12 @@ trait Anon_Req extends js.Object {
 object Anon_Req {
   @scala.inline
   def apply(
-    request: js.Function3[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify opentracing.Span */ /* span */ js.UndefOr[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify opentracing.Span */ js.Any
-      ], 
-      /* req */ js.UndefOr[nodeLib.httpMod.IncomingMessage], 
-      /* res */ js.UndefOr[nodeLib.httpMod.ServerResponse], 
-      _
-    ] = null
+    request: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify opentracing.Span */ /* span */ js.UndefOr[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify opentracing.Span */ js.Any
+    ], /* req */ js.UndefOr[nodeLib.httpMod.IncomingMessage], /* res */ js.UndefOr[nodeLib.httpMod.ServerResponse]) => _ = null
   ): Anon_Req = {
     val __obj = js.Dynamic.literal()
-    if (request != null) __obj.updateDynamic("request")(request)
+    if (request != null) __obj.updateDynamic("request")(js.Any.fromFunction3(request))
     __obj.asInstanceOf[Anon_Req]
   }
 }

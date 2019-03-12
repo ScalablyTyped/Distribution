@@ -13,10 +13,10 @@ trait ICoreWindowFlyoutFactory extends js.Object {
 object ICoreWindowFlyoutFactory {
   @scala.inline
   def apply(
-    create: js.Function1[winrtLib.WindowsNs.FoundationNs.Point, CoreWindowFlyout],
-    createWithTitle: js.Function2[winrtLib.WindowsNs.FoundationNs.Point, java.lang.String, CoreWindowFlyout]
+    create: winrtLib.WindowsNs.FoundationNs.Point => CoreWindowFlyout,
+    createWithTitle: (winrtLib.WindowsNs.FoundationNs.Point, java.lang.String) => CoreWindowFlyout
   ): ICoreWindowFlyoutFactory = {
-    val __obj = js.Dynamic.literal(create = create, createWithTitle = createWithTitle)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), createWithTitle = js.Any.fromFunction2(createWithTitle))
   
     __obj.asInstanceOf[ICoreWindowFlyoutFactory]
   }

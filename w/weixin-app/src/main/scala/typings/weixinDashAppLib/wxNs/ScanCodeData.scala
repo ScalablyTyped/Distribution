@@ -21,7 +21,7 @@ trait ScanCodeData extends js.Object {
   /**
   		 * 所扫码的类型
   		 */
-  var scanType: scanType
+  var scanType: weixinDashAppLib.wxNs.scanType
 }
 
 object ScanCodeData {

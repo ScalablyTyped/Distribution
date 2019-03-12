@@ -38,19 +38,19 @@ object ActionSheetOptions {
     items: js.Array[java.lang.String],
     badges: js.Array[stdLib.Partial[Badge]] = null,
     cancelButtonText: java.lang.String = null,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    complete: /* res */ js.Any => scala.Unit = null,
     destructiveBtnIndex: scala.Int | scala.Double = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
-    success: js.Function1[/* res */ aliDashAppLib.Anon_Index, scala.Unit] = null,
+    fail: js.Any => scala.Unit = null,
+    success: /* res */ aliDashAppLib.Anon_Index => scala.Unit = null,
     title: java.lang.String = null
   ): ActionSheetOptions = {
     val __obj = js.Dynamic.literal(items = items)
     if (badges != null) __obj.updateDynamic("badges")(badges)
     if (cancelButtonText != null) __obj.updateDynamic("cancelButtonText")(cancelButtonText)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (destructiveBtnIndex != null) __obj.updateDynamic("destructiveBtnIndex")(destructiveBtnIndex.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[ActionSheetOptions]
   }

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def toJS(source: js.Any): js.Any = js.native
-  def toJS(source: js.Any, options: mobxLib.libApiTojsMod.ToJSOptions): js.Any = js.native
+  def toJS(source: js.Any, options: ToJSOptions): js.Any = js.native
   def toJS[T](source: T): T = js.native
-  def toJS[T](source: T, options: mobxLib.libApiTojsMod.ToJSOptions): T = js.native
+  def toJS[T](source: T, options: ToJSOptions): T = js.native
 }
 

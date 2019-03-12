@@ -29,10 +29,10 @@ object IUriRuntimeClass {
   @scala.inline
   def apply(
     absoluteUri: java.lang.String,
-    combineUri: js.Function1[java.lang.String, Uri],
+    combineUri: java.lang.String => Uri,
     displayUri: java.lang.String,
     domain: java.lang.String,
-    equals: js.Function1[Uri, scala.Boolean],
+    equals: Uri => scala.Boolean,
     extension: java.lang.String,
     fragment: java.lang.String,
     host: java.lang.String,
@@ -46,7 +46,7 @@ object IUriRuntimeClass {
     suspicious: scala.Boolean,
     userName: java.lang.String
   ): IUriRuntimeClass = {
-    val __obj = js.Dynamic.literal(absoluteUri = absoluteUri, combineUri = combineUri, displayUri = displayUri, domain = domain, equals = equals, extension = extension, fragment = fragment, host = host, password = password, path = path, port = port, query = query, queryParsed = queryParsed, rawUri = rawUri, schemeName = schemeName, suspicious = suspicious, userName = userName)
+    val __obj = js.Dynamic.literal(absoluteUri = absoluteUri, combineUri = js.Any.fromFunction1(combineUri), displayUri = displayUri, domain = domain, equals = js.Any.fromFunction1(equals), extension = extension, fragment = fragment, host = host, password = password, path = path, port = port, query = query, queryParsed = queryParsed, rawUri = rawUri, schemeName = schemeName, suspicious = suspicious, userName = userName)
   
     __obj.asInstanceOf[IUriRuntimeClass]
   }

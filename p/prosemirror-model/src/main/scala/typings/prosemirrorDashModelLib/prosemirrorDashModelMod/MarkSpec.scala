@@ -65,7 +65,7 @@ object MarkSpec {
     inclusive: js.UndefOr[scala.Boolean] = js.undefined,
     parseDOM: js.Array[ParseRule] = null,
     spanning: js.UndefOr[scala.Boolean] = js.undefined,
-    toDOM: js.Function2[/* mark */ Mark[_], /* inline */ scala.Boolean, DOMOutputSpec] = null
+    toDOM: (/* mark */ Mark[_], /* inline */ scala.Boolean) => DOMOutputSpec = null
   ): MarkSpec = {
     val __obj = js.Dynamic.literal()
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
@@ -74,7 +74,7 @@ object MarkSpec {
     if (!js.isUndefined(inclusive)) __obj.updateDynamic("inclusive")(inclusive)
     if (parseDOM != null) __obj.updateDynamic("parseDOM")(parseDOM)
     if (!js.isUndefined(spanning)) __obj.updateDynamic("spanning")(spanning)
-    if (toDOM != null) __obj.updateDynamic("toDOM")(toDOM)
+    if (toDOM != null) __obj.updateDynamic("toDOM")(js.Any.fromFunction2(toDOM))
     __obj.asInstanceOf[MarkSpec]
   }
 }

@@ -9,11 +9,11 @@ trait CreateBackupInput extends js.Object {
   /**
     * Specified name for the backup.
     */
-  var BackupName: BackupName
+  var BackupName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.BackupName
   /**
     * The name of the table.
     */
-  var TableName: TableName
+  var TableName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TableName
 }
 
 object CreateBackupInput {

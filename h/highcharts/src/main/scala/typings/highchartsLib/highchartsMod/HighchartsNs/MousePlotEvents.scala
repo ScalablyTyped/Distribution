@@ -15,16 +15,16 @@ trait MousePlotEvents extends js.Object {
 object MousePlotEvents {
   @scala.inline
   def apply(
-    click: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
-    mousemove: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
-    mouseout: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
-    mouseover: js.Function1[/* event */ stdLib.Event, scala.Unit] = null
+    click: /* event */ stdLib.Event => scala.Unit = null,
+    mousemove: /* event */ stdLib.Event => scala.Unit = null,
+    mouseout: /* event */ stdLib.Event => scala.Unit = null,
+    mouseover: /* event */ stdLib.Event => scala.Unit = null
   ): MousePlotEvents = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (mousemove != null) __obj.updateDynamic("mousemove")(mousemove)
-    if (mouseout != null) __obj.updateDynamic("mouseout")(mouseout)
-    if (mouseover != null) __obj.updateDynamic("mouseover")(mouseover)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
+    if (mousemove != null) __obj.updateDynamic("mousemove")(js.Any.fromFunction1(mousemove))
+    if (mouseout != null) __obj.updateDynamic("mouseout")(js.Any.fromFunction1(mouseout))
+    if (mouseover != null) __obj.updateDynamic("mouseover")(js.Any.fromFunction1(mouseover))
     __obj.asInstanceOf[MousePlotEvents]
   }
 }

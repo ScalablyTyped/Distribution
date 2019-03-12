@@ -13,10 +13,10 @@ trait IServiceDeviceStatics extends js.Object {
 object IServiceDeviceStatics {
   @scala.inline
   def apply(
-    getDeviceSelector: js.Function1[ServiceDeviceType, java.lang.String],
-    getDeviceSelectorFromServiceId: js.Function1[java.lang.String, java.lang.String]
+    getDeviceSelector: ServiceDeviceType => java.lang.String,
+    getDeviceSelectorFromServiceId: java.lang.String => java.lang.String
   ): IServiceDeviceStatics = {
-    val __obj = js.Dynamic.literal(getDeviceSelector = getDeviceSelector, getDeviceSelectorFromServiceId = getDeviceSelectorFromServiceId)
+    val __obj = js.Dynamic.literal(getDeviceSelector = js.Any.fromFunction1(getDeviceSelector), getDeviceSelectorFromServiceId = js.Any.fromFunction1(getDeviceSelectorFromServiceId))
   
     __obj.asInstanceOf[IServiceDeviceStatics]
   }

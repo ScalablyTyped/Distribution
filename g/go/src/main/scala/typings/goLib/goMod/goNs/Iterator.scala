@@ -55,19 +55,19 @@ trait Iterator[T] extends Iterable[T] {
 object Iterator {
   @scala.inline
   def apply[T](
-    all: js.Function1[js.Function1[/* x */ T, scala.Boolean], scala.Boolean],
-    any: js.Function1[js.Function1[/* x */ T, scala.Boolean], scala.Boolean],
+    all: js.Function1[/* x */ T, scala.Boolean] => scala.Boolean,
+    any: js.Function1[/* x */ T, scala.Boolean] => scala.Boolean,
     count: scala.Double,
-    each: js.Function1[js.Function1[/* x */ T, scala.Unit], scala.Unit],
-    filter: js.Function1[js.Function1[/* x */ T, scala.Boolean], Iterator[T]],
-    first: js.Function0[T],
+    each: js.Function1[/* x */ T, scala.Unit] => scala.Unit,
+    filter: js.Function1[/* x */ T, scala.Boolean] => Iterator[T],
+    first: () => T,
     iterator: Iterator[T],
     key: js.Any,
-    next: js.Function0[scala.Boolean],
-    reset: js.Function0[scala.Unit],
+    next: () => scala.Boolean,
+    reset: () => scala.Unit,
     value: T
   ): Iterator[T] = {
-    val __obj = js.Dynamic.literal(all = all, any = any, count = count, each = each, filter = filter, first = first, iterator = iterator, key = key, next = next, reset = reset, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(all = js.Any.fromFunction1(all), any = js.Any.fromFunction1(any), count = count, each = js.Any.fromFunction1(each), filter = js.Any.fromFunction1(filter), first = js.Any.fromFunction0(first), iterator = iterator, key = key, next = js.Any.fromFunction0(next), reset = js.Any.fromFunction0(reset), value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Iterator[T]]
   }

@@ -15,12 +15,12 @@ trait RuleSet extends js.Object {
   /** is a flag indicating whether the rules apply to folders, too. */
   var HandleFolder: scala.Boolean
   /** contains a number of rules. */
-  var Rules: activexDashInteropLib.SafeArray[Rule]
+  var Rules: stdLib.SafeArray[Rule]
 }
 
 object RuleSet {
   @scala.inline
-  def apply(HandleFolder: scala.Boolean, Rules: activexDashInteropLib.SafeArray[Rule]): RuleSet = {
+  def apply(HandleFolder: scala.Boolean, Rules: stdLib.SafeArray[Rule]): RuleSet = {
     val __obj = js.Dynamic.literal(HandleFolder = HandleFolder, Rules = Rules)
   
     __obj.asInstanceOf[RuleSet]

@@ -53,15 +53,15 @@ object XDragSourceContext {
   @scala.inline
   def apply(
     CurrentCursor: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getCurrentCursor: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setCursor: js.Function1[scala.Double, scala.Unit],
-    setImage: js.Function1[scala.Double, scala.Unit],
-    transferablesFlavorsChanged: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getCurrentCursor: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setCursor: scala.Double => scala.Unit,
+    setImage: scala.Double => scala.Unit,
+    transferablesFlavorsChanged: () => scala.Unit
   ): XDragSourceContext = {
-    val __obj = js.Dynamic.literal(CurrentCursor = CurrentCursor, acquire = acquire, getCurrentCursor = getCurrentCursor, queryInterface = queryInterface, release = release, setCursor = setCursor, setImage = setImage, transferablesFlavorsChanged = transferablesFlavorsChanged)
+    val __obj = js.Dynamic.literal(CurrentCursor = CurrentCursor, acquire = js.Any.fromFunction0(acquire), getCurrentCursor = js.Any.fromFunction0(getCurrentCursor), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setCursor = js.Any.fromFunction1(setCursor), setImage = js.Any.fromFunction1(setImage), transferablesFlavorsChanged = js.Any.fromFunction0(transferablesFlavorsChanged))
   
     __obj.asInstanceOf[XDragSourceContext]
   }

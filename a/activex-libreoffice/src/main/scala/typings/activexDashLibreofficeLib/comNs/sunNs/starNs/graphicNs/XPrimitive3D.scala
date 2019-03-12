@@ -19,7 +19,7 @@ trait XPrimitive3D
     */
   def getDecomposition(
     aViewParameters: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-  ): activexDashInteropLib.SafeArray[XPrimitive3D]
+  ): stdLib.SafeArray[XPrimitive3D]
   /**
     * Retrieve bound rect of primitive
     *
@@ -35,19 +35,13 @@ trait XPrimitive3D
 object XPrimitive3D {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getDecomposition: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      activexDashInteropLib.SafeArray[XPrimitive3D]
-    ],
-    getRange: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle3D
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDecomposition: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] => stdLib.SafeArray[XPrimitive3D],
+    getRange: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] => activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle3D,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XPrimitive3D = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getDecomposition = getDecomposition, getRange = getRange, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDecomposition = js.Any.fromFunction1(getDecomposition), getRange = js.Any.fromFunction1(getRange), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XPrimitive3D]
   }

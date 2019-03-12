@@ -18,66 +18,66 @@ trait ReactImageGalleryProps extends js.Object {
   var lazyLoad: js.UndefOr[scala.Boolean] = js.undefined
   var onClick: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLDivElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onImageError: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[reactLib.HTMLImageElement], 
+      /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[stdLib.HTMLImageElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onImageLoad: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[reactLib.HTMLImageElement], 
+      /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[stdLib.HTMLImageElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseLeave: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLDivElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseOver: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLDivElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onPause: js.UndefOr[js.Function1[/* currentIndex */ scala.Double, scala.Unit]] = js.undefined
   var onPlay: js.UndefOr[js.Function1[/* currentIndex */ scala.Double, scala.Unit]] = js.undefined
-  var onScreenChange: js.UndefOr[js.Function1[/* fullScreenElement */ reactLib.Element, scala.Unit]] = js.undefined
+  var onScreenChange: js.UndefOr[js.Function1[/* fullScreenElement */ stdLib.Element, scala.Unit]] = js.undefined
   var onSlide: js.UndefOr[js.Function1[/* currentIndex */ scala.Double, scala.Unit]] = js.undefined
   var onThumbnailClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLAnchorElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLAnchorElement], 
       /* index */ scala.Double, 
       scala.Unit
     ]
   ] = js.undefined
   var onThumbnailError: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[reactLib.HTMLImageElement], 
+      /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[stdLib.HTMLImageElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onTouchEnd: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLDivElement], 
+      /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLDivElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onTouchMove: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLDivElement], 
+      /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLDivElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onTouchStart: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLDivElement], 
+      /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLDivElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -85,7 +85,7 @@ trait ReactImageGalleryProps extends js.Object {
   var renderCustomControls: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
   var renderFullscreenButton: js.UndefOr[
     js.Function2[
-      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement], 
+      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLElement], 
       /* isFullscreen */ scala.Boolean, 
       reactLib.reactMod.ReactNs.ReactNode
     ]
@@ -95,21 +95,21 @@ trait ReactImageGalleryProps extends js.Object {
   ] = js.undefined
   var renderLeftNav: js.UndefOr[
     js.Function2[
-      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement], 
+      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLElement], 
       /* isDisabled */ scala.Boolean, 
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.undefined
   var renderPlayPauseButton: js.UndefOr[
     js.Function2[
-      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement], 
+      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLElement], 
       /* isPlaying */ scala.Boolean, 
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.undefined
   var renderRightNav: js.UndefOr[
     js.Function2[
-      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement], 
+      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLElement], 
       /* isDisabled */ scala.Boolean, 
       reactLib.reactMod.ReactNs.ReactNode
     ]
@@ -149,75 +149,28 @@ object ReactImageGalleryProps {
     indexSeparator: java.lang.String = null,
     infinite: js.UndefOr[scala.Boolean] = js.undefined,
     lazyLoad: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLDivElement], 
-      scala.Unit
-    ] = null,
-    onImageError: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[reactLib.HTMLImageElement], 
-      scala.Unit
-    ] = null,
-    onImageLoad: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[reactLib.HTMLImageElement], 
-      scala.Unit
-    ] = null,
-    onMouseLeave: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLDivElement], 
-      scala.Unit
-    ] = null,
-    onMouseOver: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLDivElement], 
-      scala.Unit
-    ] = null,
-    onPause: js.Function1[/* currentIndex */ scala.Double, scala.Unit] = null,
-    onPlay: js.Function1[/* currentIndex */ scala.Double, scala.Unit] = null,
-    onScreenChange: js.Function1[/* fullScreenElement */ reactLib.Element, scala.Unit] = null,
-    onSlide: js.Function1[/* currentIndex */ scala.Double, scala.Unit] = null,
-    onThumbnailClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLAnchorElement], 
-      /* index */ scala.Double, 
-      scala.Unit
-    ] = null,
-    onThumbnailError: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[reactLib.HTMLImageElement], 
-      scala.Unit
-    ] = null,
-    onTouchEnd: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLDivElement], 
-      scala.Unit
-    ] = null,
-    onTouchMove: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLDivElement], 
-      scala.Unit
-    ] = null,
-    onTouchStart: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLDivElement], 
-      scala.Unit
-    ] = null,
+    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement] => scala.Unit = null,
+    onImageError: /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[stdLib.HTMLImageElement] => scala.Unit = null,
+    onImageLoad: /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[stdLib.HTMLImageElement] => scala.Unit = null,
+    onMouseLeave: /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement] => scala.Unit = null,
+    onMouseOver: /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement] => scala.Unit = null,
+    onPause: /* currentIndex */ scala.Double => scala.Unit = null,
+    onPlay: /* currentIndex */ scala.Double => scala.Unit = null,
+    onScreenChange: /* fullScreenElement */ stdLib.Element => scala.Unit = null,
+    onSlide: /* currentIndex */ scala.Double => scala.Unit = null,
+    onThumbnailClick: (/* event */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLAnchorElement], /* index */ scala.Double) => scala.Unit = null,
+    onThumbnailError: /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[stdLib.HTMLImageElement] => scala.Unit = null,
+    onTouchEnd: /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLDivElement] => scala.Unit = null,
+    onTouchMove: /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLDivElement] => scala.Unit = null,
+    onTouchStart: /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLDivElement] => scala.Unit = null,
     preventDefaultTouchmoveEvent: js.UndefOr[scala.Boolean] = js.undefined,
-    renderCustomControls: js.Function0[reactLib.reactMod.ReactNs.ReactNode] = null,
-    renderFullscreenButton: js.Function2[
-      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement], 
-      /* isFullscreen */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
-    renderItem: js.Function1[/* item */ ReactImageGalleryItem, reactLib.reactMod.ReactNs.ReactNode] = null,
-    renderLeftNav: js.Function2[
-      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement], 
-      /* isDisabled */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
-    renderPlayPauseButton: js.Function2[
-      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement], 
-      /* isPlaying */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
-    renderRightNav: js.Function2[
-      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement], 
-      /* isDisabled */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
-    renderThumbInner: js.Function1[/* item */ ReactImageGalleryItem, reactLib.reactMod.ReactNs.ReactNode] = null,
+    renderCustomControls: () => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderFullscreenButton: (/* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLElement], /* isFullscreen */ scala.Boolean) => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderItem: /* item */ ReactImageGalleryItem => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderLeftNav: (/* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLElement], /* isDisabled */ scala.Boolean) => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderPlayPauseButton: (/* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLElement], /* isPlaying */ scala.Boolean) => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderRightNav: (/* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLElement], /* isDisabled */ scala.Boolean) => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderThumbInner: /* item */ ReactImageGalleryItem => reactLib.reactMod.ReactNs.ReactNode = null,
     showBullets: js.UndefOr[scala.Boolean] = js.undefined,
     showFullscreenButton: js.UndefOr[scala.Boolean] = js.undefined,
     showIndex: js.UndefOr[scala.Boolean] = js.undefined,
@@ -244,28 +197,28 @@ object ReactImageGalleryProps {
     if (indexSeparator != null) __obj.updateDynamic("indexSeparator")(indexSeparator)
     if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite)
     if (!js.isUndefined(lazyLoad)) __obj.updateDynamic("lazyLoad")(lazyLoad)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onImageError != null) __obj.updateDynamic("onImageError")(onImageError)
-    if (onImageLoad != null) __obj.updateDynamic("onImageLoad")(onImageLoad)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(onMouseOver)
-    if (onPause != null) __obj.updateDynamic("onPause")(onPause)
-    if (onPlay != null) __obj.updateDynamic("onPlay")(onPlay)
-    if (onScreenChange != null) __obj.updateDynamic("onScreenChange")(onScreenChange)
-    if (onSlide != null) __obj.updateDynamic("onSlide")(onSlide)
-    if (onThumbnailClick != null) __obj.updateDynamic("onThumbnailClick")(onThumbnailClick)
-    if (onThumbnailError != null) __obj.updateDynamic("onThumbnailError")(onThumbnailError)
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onImageError != null) __obj.updateDynamic("onImageError")(js.Any.fromFunction1(onImageError))
+    if (onImageLoad != null) __obj.updateDynamic("onImageLoad")(js.Any.fromFunction1(onImageLoad))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
+    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1(onMouseOver))
+    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction1(onPause))
+    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction1(onPlay))
+    if (onScreenChange != null) __obj.updateDynamic("onScreenChange")(js.Any.fromFunction1(onScreenChange))
+    if (onSlide != null) __obj.updateDynamic("onSlide")(js.Any.fromFunction1(onSlide))
+    if (onThumbnailClick != null) __obj.updateDynamic("onThumbnailClick")(js.Any.fromFunction2(onThumbnailClick))
+    if (onThumbnailError != null) __obj.updateDynamic("onThumbnailError")(js.Any.fromFunction1(onThumbnailError))
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
     if (!js.isUndefined(preventDefaultTouchmoveEvent)) __obj.updateDynamic("preventDefaultTouchmoveEvent")(preventDefaultTouchmoveEvent)
-    if (renderCustomControls != null) __obj.updateDynamic("renderCustomControls")(renderCustomControls)
-    if (renderFullscreenButton != null) __obj.updateDynamic("renderFullscreenButton")(renderFullscreenButton)
-    if (renderItem != null) __obj.updateDynamic("renderItem")(renderItem)
-    if (renderLeftNav != null) __obj.updateDynamic("renderLeftNav")(renderLeftNav)
-    if (renderPlayPauseButton != null) __obj.updateDynamic("renderPlayPauseButton")(renderPlayPauseButton)
-    if (renderRightNav != null) __obj.updateDynamic("renderRightNav")(renderRightNav)
-    if (renderThumbInner != null) __obj.updateDynamic("renderThumbInner")(renderThumbInner)
+    if (renderCustomControls != null) __obj.updateDynamic("renderCustomControls")(js.Any.fromFunction0(renderCustomControls))
+    if (renderFullscreenButton != null) __obj.updateDynamic("renderFullscreenButton")(js.Any.fromFunction2(renderFullscreenButton))
+    if (renderItem != null) __obj.updateDynamic("renderItem")(js.Any.fromFunction1(renderItem))
+    if (renderLeftNav != null) __obj.updateDynamic("renderLeftNav")(js.Any.fromFunction2(renderLeftNav))
+    if (renderPlayPauseButton != null) __obj.updateDynamic("renderPlayPauseButton")(js.Any.fromFunction2(renderPlayPauseButton))
+    if (renderRightNav != null) __obj.updateDynamic("renderRightNav")(js.Any.fromFunction2(renderRightNav))
+    if (renderThumbInner != null) __obj.updateDynamic("renderThumbInner")(js.Any.fromFunction1(renderThumbInner))
     if (!js.isUndefined(showBullets)) __obj.updateDynamic("showBullets")(showBullets)
     if (!js.isUndefined(showFullscreenButton)) __obj.updateDynamic("showFullscreenButton")(showFullscreenButton)
     if (!js.isUndefined(showIndex)) __obj.updateDynamic("showIndex")(showIndex)

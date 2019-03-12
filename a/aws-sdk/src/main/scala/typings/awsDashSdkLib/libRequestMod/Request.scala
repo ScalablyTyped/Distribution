@@ -251,7 +251,7 @@ class Request[D, E] protected () extends js.Object {
   def onAsync_httpError(
     event: awsDashSdkLib.awsDashSdkLibStrings.httpError,
     listener: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* response */ awsDashSdkLib.libResponseMod.Response[D, E], 
       scala.Unit
     ]
@@ -260,7 +260,7 @@ class Request[D, E] protected () extends js.Object {
   def onAsync_httpError(
     event: awsDashSdkLib.awsDashSdkLibStrings.httpError,
     listener: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* response */ awsDashSdkLib.libResponseMod.Response[D, E], 
       scala.Unit
     ],
@@ -591,7 +591,7 @@ class Request[D, E] protected () extends js.Object {
   def on_httpError(
     event: awsDashSdkLib.awsDashSdkLibStrings.httpError,
     listener: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* response */ awsDashSdkLib.libResponseMod.Response[D, E], 
       scala.Unit
     ]
@@ -600,7 +600,7 @@ class Request[D, E] protected () extends js.Object {
   def on_httpError(
     event: awsDashSdkLib.awsDashSdkLibStrings.httpError,
     listener: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* response */ awsDashSdkLib.libResponseMod.Response[D, E], 
       scala.Unit
     ],

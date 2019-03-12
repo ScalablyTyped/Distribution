@@ -22,24 +22,12 @@ trait GroupsResource extends js.Object {
 object GroupsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotYoutubeanalyticsLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotYoutubeanalyticsLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Group]
-    ],
-    list: js.Function1[
-      gapiDotClientDotYoutubeanalyticsLib.Anon_AltFieldsId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GroupListResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotYoutubeanalyticsLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Group]
-    ]
+    delete: gapiDotClientDotYoutubeanalyticsLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    insert: gapiDotClientDotYoutubeanalyticsLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Group],
+    list: gapiDotClientDotYoutubeanalyticsLib.Anon_AltFieldsId => gapiDotClientLib.gapiNs.clientNs.Request[GroupListResponse],
+    update: gapiDotClientDotYoutubeanalyticsLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Group]
   ): GroupsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[GroupsResource]
   }

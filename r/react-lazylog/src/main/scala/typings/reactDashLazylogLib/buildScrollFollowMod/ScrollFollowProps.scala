@@ -13,10 +13,10 @@ trait ScrollFollowProps extends js.Object {
 object ScrollFollowProps {
   @scala.inline
   def apply(
-    render: js.Function1[ScrollFollowRenderProps, reactLib.reactMod.ReactNs.ReactNode],
+    render: ScrollFollowRenderProps => reactLib.reactMod.ReactNs.ReactNode,
     startFollowing: js.UndefOr[scala.Boolean] = js.undefined
   ): ScrollFollowProps = {
-    val __obj = js.Dynamic.literal(render = render)
+    val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
     if (!js.isUndefined(startFollowing)) __obj.updateDynamic("startFollowing")(startFollowing)
     __obj.asInstanceOf[ScrollFollowProps]
   }

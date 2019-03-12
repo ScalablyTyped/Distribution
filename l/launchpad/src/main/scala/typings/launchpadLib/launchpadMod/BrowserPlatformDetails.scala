@@ -34,12 +34,7 @@ object BrowserPlatformDetails {
     command: java.lang.String = null,
     cwd: java.lang.String = null,
     defaultLocation: java.lang.String = null,
-    getCommand: js.Function3[
-      /* browser */ BrowserPlatformDetails, 
-      /* url */ java.lang.String, 
-      /* args */ js.Array[java.lang.String], 
-      java.lang.String
-    ] = null,
+    getCommand: (/* browser */ BrowserPlatformDetails, /* url */ java.lang.String, /* args */ js.Array[java.lang.String]) => java.lang.String = null,
     imageName: java.lang.String = null,
     multi: js.UndefOr[scala.Boolean] = js.undefined,
     opensTab: js.UndefOr[scala.Boolean] = js.undefined,
@@ -53,7 +48,7 @@ object BrowserPlatformDetails {
     if (command != null) __obj.updateDynamic("command")(command)
     if (cwd != null) __obj.updateDynamic("cwd")(cwd)
     if (defaultLocation != null) __obj.updateDynamic("defaultLocation")(defaultLocation)
-    if (getCommand != null) __obj.updateDynamic("getCommand")(getCommand)
+    if (getCommand != null) __obj.updateDynamic("getCommand")(js.Any.fromFunction3(getCommand))
     if (imageName != null) __obj.updateDynamic("imageName")(imageName)
     if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
     if (!js.isUndefined(opensTab)) __obj.updateDynamic("opensTab")(opensTab)

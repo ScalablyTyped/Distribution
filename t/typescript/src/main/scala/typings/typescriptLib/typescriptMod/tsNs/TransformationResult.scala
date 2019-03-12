@@ -38,18 +38,13 @@ trait TransformationResult[T /* <: Node */] extends js.Object {
 object TransformationResult {
   @scala.inline
   def apply[T /* <: Node */](
-    dispose: js.Function0[scala.Unit],
-    emitNodeWithNotification: js.Function3[
-      EmitHint, 
-      Node, 
-      js.Function2[/* hint */ EmitHint, /* node */ Node, scala.Unit], 
-      scala.Unit
-    ],
-    substituteNode: js.Function2[EmitHint, Node, Node],
+    dispose: () => scala.Unit,
+    emitNodeWithNotification: (EmitHint, Node, js.Function2[/* hint */ EmitHint, /* node */ Node, scala.Unit]) => scala.Unit,
+    substituteNode: (EmitHint, Node) => Node,
     transformed: js.Array[T],
     diagnostics: js.Array[DiagnosticWithLocation] = null
   ): TransformationResult[T] = {
-    val __obj = js.Dynamic.literal(dispose = dispose, emitNodeWithNotification = emitNodeWithNotification, substituteNode = substituteNode, transformed = transformed)
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), emitNodeWithNotification = js.Any.fromFunction3(emitNodeWithNotification), substituteNode = js.Any.fromFunction2(substituteNode), transformed = transformed)
     if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics)
     __obj.asInstanceOf[TransformationResult[T]]
   }

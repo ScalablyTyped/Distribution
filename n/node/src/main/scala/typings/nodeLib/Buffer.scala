@@ -243,7 +243,7 @@ org.scalablytyped.runtime.Instantiable1[
     * Creates a new Buffer using the passed {data}
     * @param data data to create a new Buffer
     */
-  def from(data: js.Array[_]): nodeLib.Buffer = js.native
+  def from(data: js.Array[scala.Double]): nodeLib.Buffer = js.native
   def from(data: stdLib.Uint8Array): nodeLib.Buffer = js.native
   /**
     * Creates a new Buffer containing the given JavaScript string {str}.

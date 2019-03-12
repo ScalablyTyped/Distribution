@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val CACHE_SIZE_UNLIMITED: scala.Double = js.native
-  def setLogLevel(logLevel: atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.LogLevel): scala.Unit = js.native
+  def setLogLevel(logLevel: LogLevel): scala.Unit = js.native
 }
 

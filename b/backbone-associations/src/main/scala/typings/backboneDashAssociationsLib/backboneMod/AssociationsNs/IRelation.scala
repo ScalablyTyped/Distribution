@@ -35,7 +35,7 @@ object IRelation {
     `type`: java.lang.String,
     collectionType: java.lang.String | org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.BackboneNs.Collection[js.Any]] = null,
     isTransient: js.UndefOr[scala.Boolean] = js.undefined,
-    map: js.Function1[/* repeated */ js.Any, _] = null,
+    map: /* repeated */ js.Any => _ = null,
     remoteKey: java.lang.String = null,
     serialize: js.Array[java.lang.String] = null
   ): IRelation = {
@@ -43,7 +43,7 @@ object IRelation {
     __obj.updateDynamic("type")(`type`)
     if (collectionType != null) __obj.updateDynamic("collectionType")(collectionType.asInstanceOf[js.Any])
     if (!js.isUndefined(isTransient)) __obj.updateDynamic("isTransient")(isTransient)
-    if (map != null) __obj.updateDynamic("map")(map)
+    if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
     if (remoteKey != null) __obj.updateDynamic("remoteKey")(remoteKey)
     if (serialize != null) __obj.updateDynamic("serialize")(serialize)
     __obj.asInstanceOf[IRelation]

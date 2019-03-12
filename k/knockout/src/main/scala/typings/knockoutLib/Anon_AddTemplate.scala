@@ -14,11 +14,11 @@ trait Anon_AddTemplate extends js.Object {
 object Anon_AddTemplate {
   @scala.inline
   def apply(
-    addTemplate: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    createJavaScriptEvaluatorBlock: js.Function1[java.lang.String, java.lang.String],
-    renderTemplateSource: js.Function3[js.Object, KnockoutBindingContext, js.Object, js.Array[stdLib.Node]]
+    addTemplate: (java.lang.String, java.lang.String) => scala.Unit,
+    createJavaScriptEvaluatorBlock: java.lang.String => java.lang.String,
+    renderTemplateSource: (js.Object, KnockoutBindingContext, js.Object) => js.Array[stdLib.Node]
   ): Anon_AddTemplate = {
-    val __obj = js.Dynamic.literal(addTemplate = addTemplate, createJavaScriptEvaluatorBlock = createJavaScriptEvaluatorBlock, renderTemplateSource = renderTemplateSource)
+    val __obj = js.Dynamic.literal(addTemplate = js.Any.fromFunction2(addTemplate), createJavaScriptEvaluatorBlock = js.Any.fromFunction1(createJavaScriptEvaluatorBlock), renderTemplateSource = js.Any.fromFunction3(renderTemplateSource))
   
     __obj.asInstanceOf[Anon_AddTemplate]
   }

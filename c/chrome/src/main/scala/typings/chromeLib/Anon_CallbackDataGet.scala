@@ -14,12 +14,9 @@ trait Anon_CallbackDataGet extends js.Object {
 object Anon_CallbackDataGet {
   @scala.inline
   def apply(
-    get: js.Function1[
-      js.Function1[/* data */ js.Array[chromeLib.chromeNs.topSitesNs.MostVisitedURL], scala.Unit], 
-      scala.Unit
-    ]
+    get: js.Function1[/* data */ js.Array[chromeLib.chromeNs.topSitesNs.MostVisitedURL], scala.Unit] => scala.Unit
   ): Anon_CallbackDataGet = {
-    val __obj = js.Dynamic.literal(get = get)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[Anon_CallbackDataGet]
   }

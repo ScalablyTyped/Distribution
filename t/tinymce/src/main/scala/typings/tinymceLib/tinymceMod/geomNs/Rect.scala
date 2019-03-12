@@ -18,15 +18,15 @@ trait Rect extends js.Object {
 object Rect {
   @scala.inline
   def apply(
-    clamp: js.Function3[Rect, Rect, scala.Boolean, Rect],
-    create: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, Rect],
-    findBestRelativePosition: js.Function4[Rect, Rect, Rect, js.Array[_], scala.Unit],
-    fromClientRect: js.Function1[stdLib.ClientRect, Rect],
-    inflate: js.Function3[Rect, scala.Double, scala.Double, Rect],
-    intersect: js.Function2[Rect, Rect, Rect],
-    relativePosition: js.Function3[Rect, Rect, java.lang.String, scala.Unit]
+    clamp: (Rect, Rect, scala.Boolean) => Rect,
+    create: (scala.Double, scala.Double, scala.Double, scala.Double) => Rect,
+    findBestRelativePosition: (Rect, Rect, Rect, js.Array[_]) => scala.Unit,
+    fromClientRect: stdLib.ClientRect => Rect,
+    inflate: (Rect, scala.Double, scala.Double) => Rect,
+    intersect: (Rect, Rect) => Rect,
+    relativePosition: (Rect, Rect, java.lang.String) => scala.Unit
   ): Rect = {
-    val __obj = js.Dynamic.literal(clamp = clamp, create = create, findBestRelativePosition = findBestRelativePosition, fromClientRect = fromClientRect, inflate = inflate, intersect = intersect, relativePosition = relativePosition)
+    val __obj = js.Dynamic.literal(clamp = js.Any.fromFunction3(clamp), create = js.Any.fromFunction4(create), findBestRelativePosition = js.Any.fromFunction4(findBestRelativePosition), fromClientRect = js.Any.fromFunction1(fromClientRect), inflate = js.Any.fromFunction3(inflate), intersect = js.Any.fromFunction2(intersect), relativePosition = js.Any.fromFunction3(relativePosition))
   
     __obj.asInstanceOf[Rect]
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("shopify-prime/dist/infrastructure/shopify_error", "ShopifyError")
 @js.native
 class ShopifyError protected ()
-  extends nodeLib.Error {
+  extends stdLib.Error {
   def this(response: shopifyDashPrimeLib.Anon_Status, body: ErrorType1) = this()
   def this(response: shopifyDashPrimeLib.Anon_Status, body: ErrorType2) = this()
   def this(response: shopifyDashPrimeLib.Anon_Status, body: ErrorType3) = this()
@@ -19,6 +19,10 @@ class ShopifyError protected ()
   var body: ErrorType1 | ErrorType2 | ErrorType3 = js.native
   var errors: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
   val isShopifyPrime: scala.Boolean = js.native
+  /* CompleteClass */
+  override var message: java.lang.String = js.native
+  /* CompleteClass */
+  override var name: java.lang.String = js.native
   var statusCode: scala.Double = js.native
   var statusText: java.lang.String = js.native
 }

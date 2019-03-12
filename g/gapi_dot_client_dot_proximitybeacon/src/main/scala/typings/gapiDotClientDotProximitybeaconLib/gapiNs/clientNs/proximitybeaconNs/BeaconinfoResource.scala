@@ -18,12 +18,9 @@ trait BeaconinfoResource extends js.Object {
 object BeaconinfoResource {
   @scala.inline
   def apply(
-    getforobserved: js.Function1[
-      gapiDotClientDotProximitybeaconLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GetInfoForObservedBeaconsResponse]
-    ]
+    getforobserved: gapiDotClientDotProximitybeaconLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[GetInfoForObservedBeaconsResponse]
   ): BeaconinfoResource = {
-    val __obj = js.Dynamic.literal(getforobserved = getforobserved)
+    val __obj = js.Dynamic.literal(getforobserved = js.Any.fromFunction1(getforobserved))
   
     __obj.asInstanceOf[BeaconinfoResource]
   }

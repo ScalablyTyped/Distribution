@@ -13,10 +13,10 @@ trait KnockoutObservableFunctions[T]
 object KnockoutObservableFunctions {
   @scala.inline
   def apply[T](
-    equalityComparer: js.Function2[js.Any, js.Any, scala.Boolean],
+    equalityComparer: (js.Any, js.Any) => scala.Boolean,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[KnockoutBindingHandler] = null
   ): KnockoutObservableFunctions[T] = {
-    val __obj = js.Dynamic.literal(equalityComparer = equalityComparer)
+    val __obj = js.Dynamic.literal(equalityComparer = js.Any.fromFunction2(equalityComparer))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[KnockoutObservableFunctions[T]]
   }

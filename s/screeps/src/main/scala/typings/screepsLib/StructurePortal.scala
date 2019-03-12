@@ -29,18 +29,18 @@ object StructurePortal {
   @scala.inline
   def apply(
     destination: RoomPosition | Anon_RoomShard,
-    destroy: js.Function0[ScreepsReturnCode],
+    destroy: () => ScreepsReturnCode,
     hits: scala.Double,
     hitsMax: scala.Double,
     id: java.lang.String,
-    isActive: js.Function0[scala.Boolean],
-    notifyWhenAttacked: js.Function1[scala.Boolean, ScreepsReturnCode],
+    isActive: () => scala.Boolean,
+    notifyWhenAttacked: scala.Boolean => ScreepsReturnCode,
     pos: RoomPosition,
     room: Room,
     structureType: STRUCTURE_PORTAL,
     ticksToDecay: scala.Int | scala.Double = null
   ): StructurePortal = {
-    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], destroy = destroy, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, notifyWhenAttacked = notifyWhenAttacked, pos = pos, room = room, structureType = structureType)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), pos = pos, room = room, structureType = structureType)
     if (ticksToDecay != null) __obj.updateDynamic("ticksToDecay")(ticksToDecay.asInstanceOf[js.Any])
     __obj.asInstanceOf[StructurePortal]
   }

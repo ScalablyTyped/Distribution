@@ -35,20 +35,16 @@ object XFileDialog {
   def apply(
     CurrentFilter: java.lang.String,
     Path: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getCurrentFilter: js.Function0[java.lang.String],
-    getPath: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setCurrentFilter: js.Function1[java.lang.String, scala.Unit],
-    setFilters: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      scala.Unit
-    ],
-    setPath: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getCurrentFilter: () => java.lang.String,
+    getPath: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setCurrentFilter: java.lang.String => scala.Unit,
+    setFilters: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]) => scala.Unit,
+    setPath: java.lang.String => scala.Unit
   ): XFileDialog = {
-    val __obj = js.Dynamic.literal(CurrentFilter = CurrentFilter, Path = Path, acquire = acquire, getCurrentFilter = getCurrentFilter, getPath = getPath, queryInterface = queryInterface, release = release, setCurrentFilter = setCurrentFilter, setFilters = setFilters, setPath = setPath)
+    val __obj = js.Dynamic.literal(CurrentFilter = CurrentFilter, Path = Path, acquire = js.Any.fromFunction0(acquire), getCurrentFilter = js.Any.fromFunction0(getCurrentFilter), getPath = js.Any.fromFunction0(getPath), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setCurrentFilter = js.Any.fromFunction1(setCurrentFilter), setFilters = js.Any.fromFunction2(setFilters), setPath = js.Any.fromFunction1(setPath))
   
     __obj.asInstanceOf[XFileDialog]
   }

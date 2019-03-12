@@ -16,13 +16,13 @@ trait XVbaMethodParameter
 object XVbaMethodParameter {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getVbaMethodParameter: js.Function1[java.lang.String, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setVbaMethodParameter: js.Function2[java.lang.String, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    getVbaMethodParameter: java.lang.String => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setVbaMethodParameter: (java.lang.String, js.Any) => scala.Unit
   ): XVbaMethodParameter = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getVbaMethodParameter = getVbaMethodParameter, queryInterface = queryInterface, release = release, setVbaMethodParameter = setVbaMethodParameter)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getVbaMethodParameter = js.Any.fromFunction1(getVbaMethodParameter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setVbaMethodParameter = js.Any.fromFunction2(setVbaMethodParameter))
   
     __obj.asInstanceOf[XVbaMethodParameter]
   }

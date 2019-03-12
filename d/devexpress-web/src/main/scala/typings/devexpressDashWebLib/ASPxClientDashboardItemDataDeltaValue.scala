@@ -54,18 +54,18 @@ trait ASPxClientDashboardItemDataDeltaValue extends js.Object {
 object ASPxClientDashboardItemDataDeltaValue {
   @scala.inline
   def apply(
-    GetAbsoluteVariation: js.Function0[ASPxClientDashboardItemDataMeasureValue],
-    GetActualValue: js.Function0[ASPxClientDashboardItemDataMeasureValue],
-    GetDisplaySubValue1: js.Function0[ASPxClientDashboardItemDataMeasureValue],
-    GetDisplaySubValue2: js.Function0[ASPxClientDashboardItemDataMeasureValue],
-    GetDisplayValue: js.Function0[ASPxClientDashboardItemDataMeasureValue],
-    GetIndicatorType: js.Function0[ASPxClientDashboardItemDataMeasureValue],
-    GetIsGood: js.Function0[ASPxClientDashboardItemDataMeasureValue],
-    GetPercentOfTarget: js.Function0[ASPxClientDashboardItemDataMeasureValue],
-    GetPercentVariation: js.Function0[ASPxClientDashboardItemDataMeasureValue],
-    GetTargetValue: js.Function0[ASPxClientDashboardItemDataMeasureValue]
+    GetAbsoluteVariation: () => ASPxClientDashboardItemDataMeasureValue,
+    GetActualValue: () => ASPxClientDashboardItemDataMeasureValue,
+    GetDisplaySubValue1: () => ASPxClientDashboardItemDataMeasureValue,
+    GetDisplaySubValue2: () => ASPxClientDashboardItemDataMeasureValue,
+    GetDisplayValue: () => ASPxClientDashboardItemDataMeasureValue,
+    GetIndicatorType: () => ASPxClientDashboardItemDataMeasureValue,
+    GetIsGood: () => ASPxClientDashboardItemDataMeasureValue,
+    GetPercentOfTarget: () => ASPxClientDashboardItemDataMeasureValue,
+    GetPercentVariation: () => ASPxClientDashboardItemDataMeasureValue,
+    GetTargetValue: () => ASPxClientDashboardItemDataMeasureValue
   ): ASPxClientDashboardItemDataDeltaValue = {
-    val __obj = js.Dynamic.literal(GetAbsoluteVariation = GetAbsoluteVariation, GetActualValue = GetActualValue, GetDisplaySubValue1 = GetDisplaySubValue1, GetDisplaySubValue2 = GetDisplaySubValue2, GetDisplayValue = GetDisplayValue, GetIndicatorType = GetIndicatorType, GetIsGood = GetIsGood, GetPercentOfTarget = GetPercentOfTarget, GetPercentVariation = GetPercentVariation, GetTargetValue = GetTargetValue)
+    val __obj = js.Dynamic.literal(GetAbsoluteVariation = js.Any.fromFunction0(GetAbsoluteVariation), GetActualValue = js.Any.fromFunction0(GetActualValue), GetDisplaySubValue1 = js.Any.fromFunction0(GetDisplaySubValue1), GetDisplaySubValue2 = js.Any.fromFunction0(GetDisplaySubValue2), GetDisplayValue = js.Any.fromFunction0(GetDisplayValue), GetIndicatorType = js.Any.fromFunction0(GetIndicatorType), GetIsGood = js.Any.fromFunction0(GetIsGood), GetPercentOfTarget = js.Any.fromFunction0(GetPercentOfTarget), GetPercentVariation = js.Any.fromFunction0(GetPercentVariation), GetTargetValue = js.Any.fromFunction0(GetTargetValue))
   
     __obj.asInstanceOf[ASPxClientDashboardItemDataDeltaValue]
   }

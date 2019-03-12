@@ -17,7 +17,7 @@ trait Anon_Body extends js.Object {
     resource: java.lang.String,
     params: js.Any,
     body: js.Any,
-    callback: js.Function2[/* error */ nodeLib.Error, /* data */ js.Any, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* data */ js.Any, scala.Unit]
   ): scala.Unit
   /**
     *
@@ -28,7 +28,7 @@ trait Anon_Body extends js.Object {
   def delete(
     resource: java.lang.String,
     params: js.Any,
-    callback: js.Function2[/* error */ nodeLib.Error, /* data */ js.Any, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* data */ js.Any, scala.Unit]
   ): scala.Unit
   /**
     * GET request to the server
@@ -39,7 +39,7 @@ trait Anon_Body extends js.Object {
   def read(
     resource: java.lang.String,
     params: js.Any,
-    callback: js.Function2[/* error */ nodeLib.Error, /* data */ js.Any, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* data */ js.Any, scala.Unit]
   ): scala.Unit
   /**
     *
@@ -52,41 +52,19 @@ trait Anon_Body extends js.Object {
     resource: java.lang.String,
     params: js.Any,
     body: js.Any,
-    callback: js.Function2[/* error */ nodeLib.Error, /* data */ js.Any, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* data */ js.Any, scala.Unit]
   ): scala.Unit
 }
 
 object Anon_Body {
   @scala.inline
   def apply(
-    create: js.Function4[
-      java.lang.String, 
-      js.Any, 
-      js.Any, 
-      js.Function2[/* error */ nodeLib.Error, /* data */ js.Any, scala.Unit], 
-      scala.Unit
-    ],
-    delete: js.Function3[
-      java.lang.String, 
-      js.Any, 
-      js.Function2[/* error */ nodeLib.Error, /* data */ js.Any, scala.Unit], 
-      scala.Unit
-    ],
-    read: js.Function3[
-      java.lang.String, 
-      js.Any, 
-      js.Function2[/* error */ nodeLib.Error, /* data */ js.Any, scala.Unit], 
-      scala.Unit
-    ],
-    update: js.Function4[
-      java.lang.String, 
-      js.Any, 
-      js.Any, 
-      js.Function2[/* error */ nodeLib.Error, /* data */ js.Any, scala.Unit], 
-      scala.Unit
-    ]
+    create: (java.lang.String, js.Any, js.Any, js.Function2[/* error */ stdLib.Error, /* data */ js.Any, scala.Unit]) => scala.Unit,
+    delete: (java.lang.String, js.Any, js.Function2[/* error */ stdLib.Error, /* data */ js.Any, scala.Unit]) => scala.Unit,
+    read: (java.lang.String, js.Any, js.Function2[/* error */ stdLib.Error, /* data */ js.Any, scala.Unit]) => scala.Unit,
+    update: (java.lang.String, js.Any, js.Any, js.Function2[/* error */ stdLib.Error, /* data */ js.Any, scala.Unit]) => scala.Unit
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, read = read, update = update)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction4(create), delete = js.Any.fromFunction3(delete), read = js.Any.fromFunction3(read), update = js.Any.fromFunction4(update))
   
     __obj.asInstanceOf[Anon_Body]
   }

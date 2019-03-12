@@ -13,12 +13,8 @@ trait Visualizer extends js.Object {
 
 object Visualizer {
   @scala.inline
-  def apply(
-    destroy: js.Function0[scala.Unit],
-    isDestroyed: js.Function0[scala.Boolean],
-    update: js.Function1[JulianDate, scala.Boolean]
-  ): Visualizer = {
-    val __obj = js.Dynamic.literal(destroy = destroy, isDestroyed = isDestroyed, update = update)
+  def apply(destroy: () => scala.Unit, isDestroyed: () => scala.Boolean, update: JulianDate => scala.Boolean): Visualizer = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), isDestroyed = js.Any.fromFunction0(isDestroyed), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[Visualizer]
   }

@@ -40,21 +40,12 @@ trait NewLifecycle[P, S, SS] extends js.Object {
 object NewLifecycle {
   @scala.inline
   def apply[P, S, SS](
-    componentDidUpdate: js.Function3[
-      /* prevProps */ stdLib.Readonly[P], 
-      /* prevState */ stdLib.Readonly[S], 
-      /* snapshot */ js.UndefOr[SS], 
-      scala.Unit
-    ] = null,
-    getSnapshotBeforeUpdate: js.Function2[
-      /* prevProps */ stdLib.Readonly[P], 
-      /* prevState */ stdLib.Readonly[S], 
-      SS | scala.Null
-    ] = null
+    componentDidUpdate: (/* prevProps */ stdLib.Readonly[P], /* prevState */ stdLib.Readonly[S], /* snapshot */ js.UndefOr[SS]) => scala.Unit = null,
+    getSnapshotBeforeUpdate: (/* prevProps */ stdLib.Readonly[P], /* prevState */ stdLib.Readonly[S]) => SS | scala.Null = null
   ): NewLifecycle[P, S, SS] = {
     val __obj = js.Dynamic.literal()
-    if (componentDidUpdate != null) __obj.updateDynamic("componentDidUpdate")(componentDidUpdate)
-    if (getSnapshotBeforeUpdate != null) __obj.updateDynamic("getSnapshotBeforeUpdate")(getSnapshotBeforeUpdate)
+    if (componentDidUpdate != null) __obj.updateDynamic("componentDidUpdate")(js.Any.fromFunction3(componentDidUpdate))
+    if (getSnapshotBeforeUpdate != null) __obj.updateDynamic("getSnapshotBeforeUpdate")(js.Any.fromFunction2(getSnapshotBeforeUpdate))
     __obj.asInstanceOf[NewLifecycle[P, S, SS]]
   }
 }

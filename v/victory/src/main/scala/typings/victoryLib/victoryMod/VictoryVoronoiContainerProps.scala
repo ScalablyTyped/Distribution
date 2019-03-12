@@ -99,14 +99,9 @@ object VictoryVoronoiContainerProps {
     events: reactLib.reactMod.ReactNs.DOMAttributes[_] = null,
     height: scala.Int | scala.Double = null,
     labelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    labels: js.Function3[
-      /* point */ js.Any, 
-      /* index */ scala.Double, 
-      /* points */ js.Array[_], 
-      java.lang.String
-    ] = null,
-    onActivated: js.Function2[/* points */ js.Array[_], /* props */ VictoryVoronoiContainerProps, scala.Unit] = null,
-    onDeactivated: js.Function2[/* points */ js.Array[_], /* props */ VictoryVoronoiContainerProps, scala.Unit] = null,
+    labels: (/* point */ js.Any, /* index */ scala.Double, /* points */ js.Array[_]) => java.lang.String = null,
+    onActivated: (/* points */ js.Array[_], /* props */ VictoryVoronoiContainerProps) => scala.Unit = null,
+    onDeactivated: (/* points */ js.Array[_], /* props */ VictoryVoronoiContainerProps) => scala.Unit = null,
     radius: scala.Int | scala.Double = null,
     responsive: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -124,9 +119,9 @@ object VictoryVoronoiContainerProps {
     if (events != null) __obj.updateDynamic("events")(events)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (onActivated != null) __obj.updateDynamic("onActivated")(onActivated)
-    if (onDeactivated != null) __obj.updateDynamic("onDeactivated")(onDeactivated)
+    if (labels != null) __obj.updateDynamic("labels")(js.Any.fromFunction3(labels))
+    if (onActivated != null) __obj.updateDynamic("onActivated")(js.Any.fromFunction2(onActivated))
+    if (onDeactivated != null) __obj.updateDynamic("onDeactivated")(js.Any.fromFunction2(onDeactivated))
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
     if (style != null) __obj.updateDynamic("style")(style)

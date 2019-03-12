@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class OMathFunction protected () extends js.Object {
   val Acc: OMathAcc = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Args: OMathArgs = js.native
   val Bar: OMathBar = js.native
   val BorderBox: OMathBorderBox = js.native
@@ -24,11 +24,11 @@ class OMathFunction protected () extends js.Object {
   val LimUpp: OMathLimUpp = js.native
   val Mat: OMathMat = js.native
   val Nary: OMathNary = js.native
-  val OMath: OMath = js.native
+  val OMath: activexDashWordLib.WordNs.OMath = js.native
   val Parent: js.Any = js.native
   val Phantom: OMathPhantom = js.native
   val Rad: OMathRad = js.native
-  val Range: Range = js.native
+  val Range: activexDashWordLib.WordNs.Range = js.native
   val ScrPre: OMathScrPre = js.native
   val ScrSub: OMathScrSub = js.native
   val ScrSubSup: OMathScrSubSup = js.native

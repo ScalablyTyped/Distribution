@@ -11,8 +11,8 @@ trait Anon_IgnoreWarnings extends js.Object {
 
 object Anon_IgnoreWarnings {
   @scala.inline
-  def apply(ignoreWarnings: js.Function1[js.Array[java.lang.String], scala.Unit]): Anon_IgnoreWarnings = {
-    val __obj = js.Dynamic.literal(ignoreWarnings = ignoreWarnings)
+  def apply(ignoreWarnings: js.Array[java.lang.String] => scala.Unit): Anon_IgnoreWarnings = {
+    val __obj = js.Dynamic.literal(ignoreWarnings = js.Any.fromFunction1(ignoreWarnings))
   
     __obj.asInstanceOf[Anon_IgnoreWarnings]
   }

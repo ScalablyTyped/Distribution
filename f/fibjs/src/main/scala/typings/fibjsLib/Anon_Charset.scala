@@ -14,11 +14,11 @@ trait Anon_Charset extends js.Object {
 object Anon_Charset {
   @scala.inline
   def apply(
-    decode: js.Function2[java.lang.String, Class_Buffer, java.lang.String],
-    encode: js.Function2[java.lang.String, java.lang.String, Class_Buffer],
-    isEncoding: js.Function1[java.lang.String, scala.Boolean]
+    decode: (java.lang.String, Class_Buffer) => java.lang.String,
+    encode: (java.lang.String, java.lang.String) => Class_Buffer,
+    isEncoding: java.lang.String => scala.Boolean
   ): Anon_Charset = {
-    val __obj = js.Dynamic.literal(decode = decode, encode = encode, isEncoding = isEncoding)
+    val __obj = js.Dynamic.literal(decode = js.Any.fromFunction2(decode), encode = js.Any.fromFunction2(encode), isEncoding = js.Any.fromFunction1(isEncoding))
   
     __obj.asInstanceOf[Anon_Charset]
   }

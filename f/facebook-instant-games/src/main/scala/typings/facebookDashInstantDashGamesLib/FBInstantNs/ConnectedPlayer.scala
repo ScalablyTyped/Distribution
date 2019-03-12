@@ -32,11 +32,11 @@ trait ConnectedPlayer extends js.Object {
 object ConnectedPlayer {
   @scala.inline
   def apply(
-    getID: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String | scala.Null],
-    getPhoto: js.Function0[java.lang.String | scala.Null]
+    getID: () => java.lang.String,
+    getName: () => java.lang.String | scala.Null,
+    getPhoto: () => java.lang.String | scala.Null
   ): ConnectedPlayer = {
-    val __obj = js.Dynamic.literal(getID = getID, getName = getName, getPhoto = getPhoto)
+    val __obj = js.Dynamic.literal(getID = js.Any.fromFunction0(getID), getName = js.Any.fromFunction0(getName), getPhoto = js.Any.fromFunction0(getPhoto))
   
     __obj.asInstanceOf[ConnectedPlayer]
   }

@@ -24,22 +24,22 @@ trait TemplateAstVisitor extends js.Object {
 object TemplateAstVisitor {
   @scala.inline
   def apply(
-    visitAttr: js.Function2[AttrAst, js.Any, js.Any],
-    visitBoundText: js.Function2[BoundTextAst, js.Any, js.Any],
-    visitDirective: js.Function2[DirectiveAst, js.Any, js.Any],
-    visitDirectiveProperty: js.Function2[BoundDirectivePropertyAst, js.Any, js.Any],
-    visitElement: js.Function2[ElementAst, js.Any, js.Any],
-    visitElementProperty: js.Function2[BoundElementPropertyAst, js.Any, js.Any],
-    visitEmbeddedTemplate: js.Function2[EmbeddedTemplateAst, js.Any, js.Any],
-    visitEvent: js.Function2[BoundEventAst, js.Any, js.Any],
-    visitNgContent: js.Function2[NgContentAst, js.Any, js.Any],
-    visitReference: js.Function2[ReferenceAst, js.Any, js.Any],
-    visitText: js.Function2[TextAst, js.Any, js.Any],
-    visitVariable: js.Function2[VariableAst, js.Any, js.Any],
-    visit: js.Function2[/* ast */ TemplateAst, /* context */ js.Any, _] = null
+    visitAttr: (AttrAst, js.Any) => js.Any,
+    visitBoundText: (BoundTextAst, js.Any) => js.Any,
+    visitDirective: (DirectiveAst, js.Any) => js.Any,
+    visitDirectiveProperty: (BoundDirectivePropertyAst, js.Any) => js.Any,
+    visitElement: (ElementAst, js.Any) => js.Any,
+    visitElementProperty: (BoundElementPropertyAst, js.Any) => js.Any,
+    visitEmbeddedTemplate: (EmbeddedTemplateAst, js.Any) => js.Any,
+    visitEvent: (BoundEventAst, js.Any) => js.Any,
+    visitNgContent: (NgContentAst, js.Any) => js.Any,
+    visitReference: (ReferenceAst, js.Any) => js.Any,
+    visitText: (TextAst, js.Any) => js.Any,
+    visitVariable: (VariableAst, js.Any) => js.Any,
+    visit: (/* ast */ TemplateAst, /* context */ js.Any) => _ = null
   ): TemplateAstVisitor = {
-    val __obj = js.Dynamic.literal(visitAttr = visitAttr, visitBoundText = visitBoundText, visitDirective = visitDirective, visitDirectiveProperty = visitDirectiveProperty, visitElement = visitElement, visitElementProperty = visitElementProperty, visitEmbeddedTemplate = visitEmbeddedTemplate, visitEvent = visitEvent, visitNgContent = visitNgContent, visitReference = visitReference, visitText = visitText, visitVariable = visitVariable)
-    if (visit != null) __obj.updateDynamic("visit")(visit)
+    val __obj = js.Dynamic.literal(visitAttr = js.Any.fromFunction2(visitAttr), visitBoundText = js.Any.fromFunction2(visitBoundText), visitDirective = js.Any.fromFunction2(visitDirective), visitDirectiveProperty = js.Any.fromFunction2(visitDirectiveProperty), visitElement = js.Any.fromFunction2(visitElement), visitElementProperty = js.Any.fromFunction2(visitElementProperty), visitEmbeddedTemplate = js.Any.fromFunction2(visitEmbeddedTemplate), visitEvent = js.Any.fromFunction2(visitEvent), visitNgContent = js.Any.fromFunction2(visitNgContent), visitReference = js.Any.fromFunction2(visitReference), visitText = js.Any.fromFunction2(visitText), visitVariable = js.Any.fromFunction2(visitVariable))
+    if (visit != null) __obj.updateDynamic("visit")(js.Any.fromFunction2(visit))
     __obj.asInstanceOf[TemplateAstVisitor]
   }
 }

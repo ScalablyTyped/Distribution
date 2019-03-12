@@ -18,7 +18,7 @@ trait JQueryTransitOptions extends js.Object {
 object JQueryTransitOptions {
   @scala.inline
   def apply(
-    complete: js.Function0[scala.Unit] = null,
+    complete: () => scala.Unit = null,
     delay: scala.Int | scala.Double = null,
     duration: scala.Int | scala.Double = null,
     easing: java.lang.String = null,
@@ -26,7 +26,7 @@ object JQueryTransitOptions {
     scale: js.Any = null
   ): JQueryTransitOptions = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing)

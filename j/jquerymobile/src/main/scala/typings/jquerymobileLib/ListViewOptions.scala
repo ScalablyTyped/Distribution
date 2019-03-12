@@ -28,7 +28,7 @@ object ListViewOptions {
   @scala.inline
   def apply(
     autodividers: js.UndefOr[scala.Boolean] = js.undefined,
-    autodividersSelector: js.Function1[/* jq */ js.UndefOr[JQuery], java.lang.String] = null,
+    autodividersSelector: /* jq */ js.UndefOr[JQuery] => java.lang.String = null,
     countTheme: java.lang.String = null,
     defaults: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -46,7 +46,7 @@ object ListViewOptions {
   ): ListViewOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autodividers)) __obj.updateDynamic("autodividers")(autodividers)
-    if (autodividersSelector != null) __obj.updateDynamic("autodividersSelector")(autodividersSelector)
+    if (autodividersSelector != null) __obj.updateDynamic("autodividersSelector")(js.Any.fromFunction1(autodividersSelector))
     if (countTheme != null) __obj.updateDynamic("countTheme")(countTheme)
     if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

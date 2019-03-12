@@ -13,7 +13,7 @@ object ^ extends js.Object {
   def apply(
     pattern: java.lang.String,
     cb: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* matches */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -22,7 +22,7 @@ object ^ extends js.Object {
     pattern: java.lang.String,
     options: globLib.globMod.GNs.IOptions,
     cb: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* matches */ js.Array[java.lang.String], 
       scala.Unit
     ]

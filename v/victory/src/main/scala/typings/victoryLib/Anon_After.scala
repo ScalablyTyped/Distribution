@@ -14,13 +14,13 @@ trait Anon_After extends js.Object {
 object Anon_After {
   @scala.inline
   def apply(
-    after: js.Function1[/* datum */ js.Any, victoryLib.victoryMod.AnimationStyle] = null,
-    before: js.Function1[/* datum */ js.Any, victoryLib.victoryMod.AnimationStyle] = null,
+    after: /* datum */ js.Any => victoryLib.victoryMod.AnimationStyle = null,
+    before: /* datum */ js.Any => victoryLib.victoryMod.AnimationStyle = null,
     duration: scala.Int | scala.Double = null
   ): Anon_After = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after)
-    if (before != null) __obj.updateDynamic("before")(before)
+    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction1(after))
+    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction1(before))
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_After]
   }

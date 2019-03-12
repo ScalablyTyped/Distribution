@@ -34,23 +34,23 @@ trait Gradient extends js.Object {
 object Gradient {
   @scala.inline
   def apply(
-    brighten: js.Function1[/* alpha */ scala.Double, Gradient] = null,
-    get: js.Function1[/* format */ java.lang.String, java.lang.String] = null,
+    brighten: /* alpha */ scala.Double => Gradient = null,
+    get: /* format */ java.lang.String => java.lang.String = null,
     linearGradient: LinearGradient | js.Array[scala.Double] = null,
     radialGradient: highchartsLib.Anon_Cx = null,
     raw: java.lang.String = null,
     rgba: js.Array[scala.Double] = null,
-    setOpacity: js.Function1[/* alpha */ scala.Double, Gradient] = null,
+    setOpacity: /* alpha */ scala.Double => Gradient = null,
     stops: js.Array[js.Array[_]] = null
   ): Gradient = {
     val __obj = js.Dynamic.literal()
-    if (brighten != null) __obj.updateDynamic("brighten")(brighten)
-    if (get != null) __obj.updateDynamic("get")(get)
+    if (brighten != null) __obj.updateDynamic("brighten")(js.Any.fromFunction1(brighten))
+    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
     if (linearGradient != null) __obj.updateDynamic("linearGradient")(linearGradient.asInstanceOf[js.Any])
     if (radialGradient != null) __obj.updateDynamic("radialGradient")(radialGradient)
     if (raw != null) __obj.updateDynamic("raw")(raw)
     if (rgba != null) __obj.updateDynamic("rgba")(rgba)
-    if (setOpacity != null) __obj.updateDynamic("setOpacity")(setOpacity)
+    if (setOpacity != null) __obj.updateDynamic("setOpacity")(js.Any.fromFunction1(setOpacity))
     if (stops != null) __obj.updateDynamic("stops")(stops)
     __obj.asInstanceOf[Gradient]
   }

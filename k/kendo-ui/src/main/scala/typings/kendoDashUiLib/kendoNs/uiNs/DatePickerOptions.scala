@@ -33,8 +33,8 @@ object DatePickerOptions {
   def apply(
     ARIATemplate: java.lang.String = null,
     animation: scala.Boolean | DatePickerAnimation = null,
-    change: js.Function1[/* e */ DatePickerChangeEvent, scala.Unit] = null,
-    close: js.Function1[/* e */ DatePickerCloseEvent, scala.Unit] = null,
+    change: /* e */ DatePickerChangeEvent => scala.Unit = null,
+    close: /* e */ DatePickerCloseEvent => scala.Unit = null,
     culture: java.lang.String = null,
     dateInput: js.UndefOr[scala.Boolean] = js.undefined,
     dates: js.Any = null,
@@ -46,7 +46,7 @@ object DatePickerOptions {
     min: stdLib.Date = null,
     month: DatePickerMonth = null,
     name: java.lang.String = null,
-    open: js.Function1[/* e */ DatePickerOpenEvent, scala.Unit] = null,
+    open: /* e */ DatePickerOpenEvent => scala.Unit = null,
     parseFormats: js.Any = null,
     start: java.lang.String = null,
     value: stdLib.Date = null,
@@ -55,8 +55,8 @@ object DatePickerOptions {
     val __obj = js.Dynamic.literal()
     if (ARIATemplate != null) __obj.updateDynamic("ARIATemplate")(ARIATemplate)
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (culture != null) __obj.updateDynamic("culture")(culture)
     if (!js.isUndefined(dateInput)) __obj.updateDynamic("dateInput")(dateInput)
     if (dates != null) __obj.updateDynamic("dates")(dates)
@@ -68,7 +68,7 @@ object DatePickerOptions {
     if (min != null) __obj.updateDynamic("min")(min)
     if (month != null) __obj.updateDynamic("month")(month)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (parseFormats != null) __obj.updateDynamic("parseFormats")(parseFormats)
     if (start != null) __obj.updateDynamic("start")(start)
     if (value != null) __obj.updateDynamic("value")(value)

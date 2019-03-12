@@ -30,7 +30,7 @@ object Anon_Allow {
     contentScriptWhen: jpmLib.jpmLibStrings.start | jpmLib.jpmLibStrings.ready | jpmLib.jpmLibStrings.end = null,
     contentURL: java.lang.String = null,
     include: java.lang.String | js.Array[java.lang.String] | stdLib.RegExp | js.Array[stdLib.RegExp] = null,
-    onMessage: js.Function1[/* message */ java.lang.String, _] = null
+    onMessage: /* message */ java.lang.String => _ = null
   ): Anon_Allow = {
     val __obj = js.Dynamic.literal()
     if (allow != null) __obj.updateDynamic("allow")(allow)
@@ -40,7 +40,7 @@ object Anon_Allow {
     if (contentScriptWhen != null) __obj.updateDynamic("contentScriptWhen")(contentScriptWhen.asInstanceOf[js.Any])
     if (contentURL != null) __obj.updateDynamic("contentURL")(contentURL)
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (onMessage != null) __obj.updateDynamic("onMessage")(onMessage)
+    if (onMessage != null) __obj.updateDynamic("onMessage")(js.Any.fromFunction1(onMessage))
     __obj.asInstanceOf[Anon_Allow]
   }
 }

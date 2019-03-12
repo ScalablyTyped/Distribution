@@ -25,7 +25,7 @@ object JQDateRangeSliderOptions {
     durationIn: scala.Int | scala.Double = null,
     durationOut: scala.Int | scala.Double = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
-    formatter: js.Function1[/* date */ stdLib.Date, java.lang.String] = null,
+    formatter: /* date */ stdLib.Date => java.lang.String = null,
     range: scala.Boolean | JQRangeSliderRangeLength = null,
     scales: js.Array[jQRangeSliderScale] = null,
     step: JQRangeSliderDateSteps = null,
@@ -42,7 +42,7 @@ object JQDateRangeSliderOptions {
     if (durationIn != null) __obj.updateDynamic("durationIn")(durationIn.asInstanceOf[js.Any])
     if (durationOut != null) __obj.updateDynamic("durationOut")(durationOut.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (scales != null) __obj.updateDynamic("scales")(scales)
     if (step != null) __obj.updateDynamic("step")(step)

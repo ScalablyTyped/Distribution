@@ -74,7 +74,7 @@ trait Select[OptionType]
   // Getters
   // ==============================
   def getCommonProps(): reactDashSelectLib.Anon_Action[OptionType] = js.native
-  def getControlRef(ref: reactLib.HTMLElement): scala.Unit = js.native
+  def getControlRef(ref: stdLib.HTMLElement): scala.Unit = js.native
   @JSName("getElementId")
   def getElementId_group(element: reactDashSelectLib.reactDashSelectLibStrings.group): java.lang.String = js.native
   @JSName("getElementId")
@@ -83,9 +83,9 @@ trait Select[OptionType]
   def getElementId_listbox(element: reactDashSelectLib.reactDashSelectLibStrings.listbox): java.lang.String = js.native
   @JSName("getElementId")
   def getElementId_option(element: reactDashSelectLib.reactDashSelectLibStrings.option): java.lang.String = js.native
-  def getFocusedOptionRef(ref: reactLib.HTMLElement): scala.Unit = js.native
-  def getInputRef(ref: reactLib.HTMLElement): scala.Unit = js.native
-  def getMenuListRef(ref: reactLib.HTMLElement): scala.Unit = js.native
+  def getFocusedOptionRef(ref: stdLib.HTMLElement): scala.Unit = js.native
+  def getInputRef(ref: stdLib.HTMLElement): scala.Unit = js.native
+  def getMenuListRef(ref: stdLib.HTMLElement): scala.Unit = js.native
   def getNextFocusedOption(options: reactDashSelectLib.libTypesMod.OptionsType[OptionType]): OptionType = js.native
   def getNextFocusedValue(nextSelectValue: reactDashSelectLib.libTypesMod.OptionsType[OptionType]): OptionType = js.native
   def getOptionLabel(option: OptionType): java.lang.String = js.native
@@ -94,42 +94,42 @@ trait Select[OptionType]
   // ==============================
   // Focus Handlers
   // ==============================
-  def handleInputChange(event: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLInputElement]): scala.Unit = js.native
+  def handleInputChange(event: reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLInputElement]): scala.Unit = js.native
   def hasOptions(): scala.Boolean = js.native
   def hasValue(): scala.Boolean = js.native
   def isClearable(): scala.Boolean = js.native
   def isOptionDisabled(option: OptionType, selectValue: reactDashSelectLib.libTypesMod.OptionsType[OptionType]): scala.Boolean = js.native
   def isOptionSelected(option: OptionType, selectValue: reactDashSelectLib.libTypesMod.OptionsType[OptionType]): scala.Boolean = js.native
   def onClearIndicatorMouseDown(event: MouseOrTouchEvent): scala.Unit = js.native
-  def onClearIndicatorTouchEnd(event: reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLElement]): scala.Unit = js.native
+  def onClearIndicatorTouchEnd(event: reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement]): scala.Unit = js.native
   def onCompositionEnd(): scala.Unit = js.native
   def onCompositionStart(): scala.Unit = js.native
   def onControlMouseDown(event: MouseOrTouchEvent): scala.Unit = js.native
-  def onControlTouchEnd(event: reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLElement]): scala.Unit = js.native
+  def onControlTouchEnd(event: reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement]): scala.Unit = js.native
   def onDropdownIndicatorMouseDown(event: MouseOrTouchEvent): scala.Unit = js.native
-  def onDropdownIndicatorTouchEnd(event: reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLElement]): scala.Unit = js.native
-  def onInputBlur(event: reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLInputElement]): scala.Unit = js.native
+  def onDropdownIndicatorTouchEnd(event: reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement]): scala.Unit = js.native
+  def onInputBlur(event: reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLInputElement]): scala.Unit = js.native
   def onInputChange(newValue: java.lang.String, actionMeta: reactDashSelectLib.libTypesMod.InputActionMeta): scala.Unit = js.native
-  def onInputFocus(event: reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLInputElement]): scala.Unit = js.native
+  def onInputFocus(event: reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLInputElement]): scala.Unit = js.native
   // ==============================
   // Keyboard Handlers
   // ==============================
-  def onKeyDown(event: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]): scala.Unit = js.native
+  def onKeyDown(event: reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement]): scala.Unit = js.native
   def onMenuClose(): scala.Unit = js.native
   // ==============================
   // Mouse Handlers
   // ==============================
-  def onMenuMouseDown(event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
-  def onMenuMouseMove(event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
+  def onMenuMouseDown(event: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
+  def onMenuMouseMove(event: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
   // ==============================
   // Consumer Handlers
   // ==============================
   def onMenuOpen(): scala.Unit = js.native
   def onOptionHover(focusedOption: OptionType): scala.Unit = js.native
-  def onScroll(event: reactLib.Event): scala.Unit = js.native
-  def onTouchEnd(event: reactLib.TouchEvent): scala.Unit = js.native
-  def onTouchMove(event: reactLib.TouchEvent): scala.Unit = js.native
-  def onTouchStart(event: reactLib.TouchEvent): scala.Unit = js.native
+  def onScroll(event: stdLib.Event): scala.Unit = js.native
+  def onTouchEnd(event: stdLib.TouchEvent): scala.Unit = js.native
+  def onTouchMove(event: stdLib.TouchEvent): scala.Unit = js.native
+  def onTouchStart(event: stdLib.TouchEvent): scala.Unit = js.native
   @JSName("openMenu")
   def openMenu_first(focusOption: reactDashSelectLib.reactDashSelectLibStrings.first): scala.Unit = js.native
   @JSName("openMenu")

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.Interior")
 @js.native
 class Interior protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   var Color: js.Any = js.native
   var ColorIndex: js.Any = js.native
   val Creator: scala.Double = js.native

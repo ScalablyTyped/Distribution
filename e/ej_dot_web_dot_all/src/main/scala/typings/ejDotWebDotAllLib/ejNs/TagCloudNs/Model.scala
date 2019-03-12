@@ -73,38 +73,38 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    click: /* e */ ClickEventArgs => scala.Unit = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
     dataSource: js.Any = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
     fields: Fields = null,
     format: java.lang.String | ejDotWebDotAllLib.ejNs.Format = null,
     htmlAttributes: js.Any = null,
     maxFontSize: java.lang.String | scala.Double = null,
     minFontSize: java.lang.String | scala.Double = null,
-    mouseout: js.Function1[/* e */ MouseoutEventArgs, scala.Unit] = null,
-    mouseover: js.Function1[/* e */ MouseoverEventArgs, scala.Unit] = null,
+    mouseout: /* e */ MouseoutEventArgs => scala.Unit = null,
+    mouseover: /* e */ MouseoverEventArgs => scala.Unit = null,
     query: js.Any = null,
     showTitle: js.UndefOr[scala.Boolean] = js.undefined,
     titleImage: java.lang.String = null,
     titleText: java.lang.String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
     if (maxFontSize != null) __obj.updateDynamic("maxFontSize")(maxFontSize.asInstanceOf[js.Any])
     if (minFontSize != null) __obj.updateDynamic("minFontSize")(minFontSize.asInstanceOf[js.Any])
-    if (mouseout != null) __obj.updateDynamic("mouseout")(mouseout)
-    if (mouseover != null) __obj.updateDynamic("mouseover")(mouseover)
+    if (mouseout != null) __obj.updateDynamic("mouseout")(js.Any.fromFunction1(mouseout))
+    if (mouseover != null) __obj.updateDynamic("mouseover")(js.Any.fromFunction1(mouseover))
     if (query != null) __obj.updateDynamic("query")(query)
     if (!js.isUndefined(showTitle)) __obj.updateDynamic("showTitle")(showTitle)
     if (titleImage != null) __obj.updateDynamic("titleImage")(titleImage)

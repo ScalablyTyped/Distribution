@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait VBProjects extends js.Object {
   val Count: scala.Double = js.native
   val Parent: VBE = js.native
-  val VBE: VBE = js.native
+  val VBE: activexDashVbideLib.VBIDENs.VBE = js.native
   def apply(index: js.Any): VBProject = js.native
   def Add(Type: vbext_ProjectType): VBProject = js.native
   def Item(index: js.Any): VBProject = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Mongoose extends js.Object {
   var DocumentProvider: js.Any = js.native
   val ErrorNs: js.Any = js.native
-  var Model: Model[_, js.Object] = js.native
+  var Model: mongooseLib.mongooseMod.Model[_, js.Object] = js.native
   var Mongoose: org.scalablytyped.runtime.Instantiable1[
     /* args (repeated) */ js.Any, 
     /* import warning: ImportType.apply Failed type conversion: typeof mongoose */ js.Any

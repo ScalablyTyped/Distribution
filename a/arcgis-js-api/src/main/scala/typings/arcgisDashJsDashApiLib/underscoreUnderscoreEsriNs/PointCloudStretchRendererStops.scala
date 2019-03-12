@@ -32,12 +32,12 @@ object PointCloudStretchRendererStops {
   def apply(
     color: Color,
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     value: scala.Double,
     label: java.lang.String = null
   ): PointCloudStretchRendererStops = {
-    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, value = value)
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value)
     if (label != null) __obj.updateDynamic("label")(label)
     __obj.asInstanceOf[PointCloudStretchRendererStops]
   }

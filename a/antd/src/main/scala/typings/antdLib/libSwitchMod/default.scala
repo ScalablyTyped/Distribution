@@ -13,6 +13,6 @@ class default () extends Switch
 @JSImport("antd/lib/switch", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var propTypes: antdLib.Anon_ClassNameDefaultPrefixCls = js.native
+  var propTypes: antdLib.Anon_ClassNameComponentNameDefault = js.native
 }
 

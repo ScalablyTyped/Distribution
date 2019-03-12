@@ -19,14 +19,14 @@ object VRButtonViewModel {
   @scala.inline
   def apply(
     command: Command,
-    destroy: js.Function0[scala.Unit],
-    isDestroyed: js.Function0[scala.Boolean],
+    destroy: () => scala.Unit,
+    isDestroyed: () => scala.Boolean,
     isVREnabled: scala.Boolean,
     isVRMode: scala.Boolean,
     tooltip: java.lang.String,
     vrElement: stdLib.Element
   ): VRButtonViewModel = {
-    val __obj = js.Dynamic.literal(command = command, destroy = destroy, isDestroyed = isDestroyed, isVREnabled = isVREnabled, isVRMode = isVRMode, tooltip = tooltip, vrElement = vrElement)
+    val __obj = js.Dynamic.literal(command = command, destroy = js.Any.fromFunction0(destroy), isDestroyed = js.Any.fromFunction0(isDestroyed), isVREnabled = isVREnabled, isVRMode = isVRMode, tooltip = tooltip, vrElement = vrElement)
   
     __obj.asInstanceOf[VRButtonViewModel]
   }

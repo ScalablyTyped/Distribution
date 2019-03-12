@@ -104,19 +104,19 @@ trait FlexSliderOptions extends js.Object {
 object FlexSliderOptions {
   @scala.inline
   def apply(
-    added: js.Function1[/* slider */ SliderObject, _] = null,
-    after: js.Function1[/* slider */ SliderObject, _] = null,
+    added: /* slider */ SliderObject => _ = null,
+    after: /* slider */ SliderObject => _ = null,
     animation: java.lang.String = null,
     animationLoop: js.UndefOr[scala.Boolean] = js.undefined,
     animationSpeed: scala.Int | scala.Double = null,
     asNavFor: java.lang.String = null,
-    before: js.Function1[/* slider */ SliderObject, _] = null,
+    before: /* slider */ SliderObject => _ = null,
     controlNav: js.Any = null,
     controlsContainer: java.lang.String = null,
     direction: java.lang.String = null,
     directionNav: js.UndefOr[scala.Boolean] = js.undefined,
     easing: java.lang.String = null,
-    end: js.Function1[/* slider */ SliderObject, _] = null,
+    end: /* slider */ SliderObject => _ = null,
     initDelay: scala.Int | scala.Double = null,
     itemMargin: scala.Int | scala.Double = null,
     itemWidth: scala.Int | scala.Double = null,
@@ -136,13 +136,13 @@ object FlexSliderOptions {
     playText: java.lang.String = null,
     prevText: java.lang.String = null,
     randomize: js.UndefOr[scala.Boolean] = js.undefined,
-    removed: js.Function1[/* slider */ SliderObject, _] = null,
+    removed: /* slider */ SliderObject => _ = null,
     reverse: js.UndefOr[scala.Boolean] = js.undefined,
     selector: java.lang.String = null,
     slideshow: js.UndefOr[scala.Boolean] = js.undefined,
     slideshowSpeed: scala.Int | scala.Double = null,
     smoothHeight: js.UndefOr[scala.Boolean] = js.undefined,
-    start: js.Function1[/* slider */ SliderObject, _] = null,
+    start: /* slider */ SliderObject => _ = null,
     startAt: scala.Int | scala.Double = null,
     sync: java.lang.String = null,
     touch: js.UndefOr[scala.Boolean] = js.undefined,
@@ -150,19 +150,19 @@ object FlexSliderOptions {
     video: js.UndefOr[scala.Boolean] = js.undefined
   ): FlexSliderOptions = {
     val __obj = js.Dynamic.literal()
-    if (added != null) __obj.updateDynamic("added")(added)
-    if (after != null) __obj.updateDynamic("after")(after)
+    if (added != null) __obj.updateDynamic("added")(js.Any.fromFunction1(added))
+    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction1(after))
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (!js.isUndefined(animationLoop)) __obj.updateDynamic("animationLoop")(animationLoop)
     if (animationSpeed != null) __obj.updateDynamic("animationSpeed")(animationSpeed.asInstanceOf[js.Any])
     if (asNavFor != null) __obj.updateDynamic("asNavFor")(asNavFor)
-    if (before != null) __obj.updateDynamic("before")(before)
+    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction1(before))
     if (controlNav != null) __obj.updateDynamic("controlNav")(controlNav)
     if (controlsContainer != null) __obj.updateDynamic("controlsContainer")(controlsContainer)
     if (direction != null) __obj.updateDynamic("direction")(direction)
     if (!js.isUndefined(directionNav)) __obj.updateDynamic("directionNav")(directionNav)
     if (easing != null) __obj.updateDynamic("easing")(easing)
-    if (end != null) __obj.updateDynamic("end")(end)
+    if (end != null) __obj.updateDynamic("end")(js.Any.fromFunction1(end))
     if (initDelay != null) __obj.updateDynamic("initDelay")(initDelay.asInstanceOf[js.Any])
     if (itemMargin != null) __obj.updateDynamic("itemMargin")(itemMargin.asInstanceOf[js.Any])
     if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
@@ -182,13 +182,13 @@ object FlexSliderOptions {
     if (playText != null) __obj.updateDynamic("playText")(playText)
     if (prevText != null) __obj.updateDynamic("prevText")(prevText)
     if (!js.isUndefined(randomize)) __obj.updateDynamic("randomize")(randomize)
-    if (removed != null) __obj.updateDynamic("removed")(removed)
+    if (removed != null) __obj.updateDynamic("removed")(js.Any.fromFunction1(removed))
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
     if (selector != null) __obj.updateDynamic("selector")(selector)
     if (!js.isUndefined(slideshow)) __obj.updateDynamic("slideshow")(slideshow)
     if (slideshowSpeed != null) __obj.updateDynamic("slideshowSpeed")(slideshowSpeed.asInstanceOf[js.Any])
     if (!js.isUndefined(smoothHeight)) __obj.updateDynamic("smoothHeight")(smoothHeight)
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
     if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
     if (sync != null) __obj.updateDynamic("sync")(sync)
     if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch)

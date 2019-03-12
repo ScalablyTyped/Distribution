@@ -18,12 +18,12 @@ object IViewport {
   def apply(
     IContainer: IContainer = null,
     isViewport: js.UndefOr[scala.Boolean] = js.undefined,
-    onRender: js.Function0[scala.Unit] = null
+    onRender: () => scala.Unit = null
   ): IViewport = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IContainer)
     if (!js.isUndefined(isViewport)) __obj.updateDynamic("isViewport")(isViewport)
-    if (onRender != null) __obj.updateDynamic("onRender")(onRender)
+    if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction0(onRender))
     __obj.asInstanceOf[IViewport]
   }
 }

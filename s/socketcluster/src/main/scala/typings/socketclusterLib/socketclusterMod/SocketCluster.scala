@@ -48,14 +48,14 @@ trait SocketCluster
   @JSName("on")
   def on_fail(
     event: socketclusterLib.socketclusterLibStrings.fail,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_ready(event: socketclusterLib.socketclusterLibStrings.ready, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
   def on_warning(
     event: socketclusterLib.socketclusterLibStrings.warning,
-    listener: js.Function1[/* warning */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* warning */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_workerClusterExit(
@@ -90,14 +90,14 @@ trait SocketCluster
   def sendToBroker(
     brokerId: scala.Double,
     data: js.Any,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* responseData */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* responseData */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def sendToWorker(workerId: scala.Double, data: js.Any): scala.Unit = js.native
   def sendToWorker(
     workerId: scala.Double,
     data: js.Any,
     callback: js.Function3[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* responseData */ js.Any, 
       /* workerId */ scala.Double, 
       scala.Unit

@@ -50,14 +50,10 @@ object ListItemProps {
     nestedLevel: scala.Int | scala.Double = null,
     nestedListStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     onClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onKeyboardFocus: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], 
-      /* isKeyboardFocused */ scala.Boolean, 
-      scala.Unit
-    ] = null,
+    onKeyboardFocus: (/* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], /* isKeyboardFocused */ scala.Boolean) => scala.Unit = null,
     onMouseEnter: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
     onMouseLeave: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onNestedListToggle: js.Function1[/* item */ ListItem, scala.Unit] = null,
+    onNestedListToggle: /* item */ ListItem => scala.Unit = null,
     onTouchStart: reactLib.reactMod.ReactNs.TouchEventHandler[js.Object] = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     primaryText: reactLib.reactMod.ReactNs.ReactNode = null,
@@ -87,10 +83,10 @@ object ListItemProps {
     if (nestedLevel != null) __obj.updateDynamic("nestedLevel")(nestedLevel.asInstanceOf[js.Any])
     if (nestedListStyle != null) __obj.updateDynamic("nestedListStyle")(nestedListStyle)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onKeyboardFocus != null) __obj.updateDynamic("onKeyboardFocus")(onKeyboardFocus)
+    if (onKeyboardFocus != null) __obj.updateDynamic("onKeyboardFocus")(js.Any.fromFunction2(onKeyboardFocus))
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
-    if (onNestedListToggle != null) __obj.updateDynamic("onNestedListToggle")(onNestedListToggle)
+    if (onNestedListToggle != null) __obj.updateDynamic("onNestedListToggle")(js.Any.fromFunction1(onNestedListToggle))
     if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (primaryText != null) __obj.updateDynamic("primaryText")(primaryText.asInstanceOf[js.Any])

@@ -14,11 +14,11 @@ trait IDeviceMotionService extends js.Object {
 object IDeviceMotionService {
   @scala.inline
   def apply(
-    clearWatch: js.Function1[scala.Double, scala.Unit],
-    getCurrentAcceleration: js.Function0[angularLib.angularMod.angularNs.IPromise[IDeviceMotionAcceleration]],
-    watchAcceleration: js.Function1[IDeviceMotionAccelerometerOptions, IDeviceMotionWatchPromise]
+    clearWatch: scala.Double => scala.Unit,
+    getCurrentAcceleration: () => angularLib.angularMod.angularNs.IPromise[IDeviceMotionAcceleration],
+    watchAcceleration: IDeviceMotionAccelerometerOptions => IDeviceMotionWatchPromise
   ): IDeviceMotionService = {
-    val __obj = js.Dynamic.literal(clearWatch = clearWatch, getCurrentAcceleration = getCurrentAcceleration, watchAcceleration = watchAcceleration)
+    val __obj = js.Dynamic.literal(clearWatch = js.Any.fromFunction1(clearWatch), getCurrentAcceleration = js.Any.fromFunction0(getCurrentAcceleration), watchAcceleration = js.Any.fromFunction1(watchAcceleration))
   
     __obj.asInstanceOf[IDeviceMotionService]
   }

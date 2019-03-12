@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val URI: /* Map */ java.lang.String = js.native
   val empty: stdLib.Map[scala.Nothing, scala.Nothing] = js.native
-  val map: fpDashTsLib.libFilterableMod.Filterable2[fpDashTsLib.libMapMod.URI] = js.native
+  val map: fpDashTsLib.libFilterableMod.Filterable2[URI] = js.native
   def collect[K](O: fpDashTsLib.libOrdMod.Ord[K]): js.Function2[
     /* m */ stdLib.Map[K, _], 
     /* f */ js.Function2[/* k */ K, /* a */ js.Any, _], 

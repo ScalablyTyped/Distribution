@@ -32,13 +32,11 @@ object XSortableGridData {
   @scala.inline
   def apply(
     CurrentSortOrder: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[scala.Double, scala.Boolean],
-    getCurrentSortOrder: js.Function0[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[scala.Double, scala.Boolean]
-    ],
-    removeColumnSort: js.Function0[scala.Unit],
-    sortByColumn: js.Function2[scala.Double, scala.Boolean, scala.Unit]
+    getCurrentSortOrder: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[scala.Double, scala.Boolean],
+    removeColumnSort: () => scala.Unit,
+    sortByColumn: (scala.Double, scala.Boolean) => scala.Unit
   ): XSortableGridData = {
-    val __obj = js.Dynamic.literal(CurrentSortOrder = CurrentSortOrder, getCurrentSortOrder = getCurrentSortOrder, removeColumnSort = removeColumnSort, sortByColumn = sortByColumn)
+    val __obj = js.Dynamic.literal(CurrentSortOrder = CurrentSortOrder, getCurrentSortOrder = js.Any.fromFunction0(getCurrentSortOrder), removeColumnSort = js.Any.fromFunction0(removeColumnSort), sortByColumn = js.Any.fromFunction2(sortByColumn))
   
     __obj.asInstanceOf[XSortableGridData]
   }

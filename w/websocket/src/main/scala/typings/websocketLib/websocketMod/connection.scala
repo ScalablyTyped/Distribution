@@ -62,7 +62,7 @@ trait connection
   @JSName("addListener")
   def addListener_error(
     event: websocketLib.websocketLibStrings.error,
-    cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    cb: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_frame(event: websocketLib.websocketLibStrings.frame, cb: js.Function1[/* frame */ frame, scala.Unit]): this.type = js.native
@@ -84,7 +84,7 @@ trait connection
   def drop(reasonCode: scala.Double): scala.Unit = js.native
   def drop(reasonCode: scala.Double, description: java.lang.String): scala.Unit = js.native
   def fragmentAndSend(frame: frame): scala.Unit = js.native
-  def fragmentAndSend(frame: frame, cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def fragmentAndSend(frame: frame, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   // Events
   def on(event: java.lang.String, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
@@ -95,7 +95,7 @@ trait connection
   @JSName("on")
   def on_error(
     event: websocketLib.websocketLibStrings.error,
-    cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    cb: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_frame(event: websocketLib.websocketLibStrings.frame, cb: js.Function1[/* frame */ frame, scala.Unit]): this.type = js.native

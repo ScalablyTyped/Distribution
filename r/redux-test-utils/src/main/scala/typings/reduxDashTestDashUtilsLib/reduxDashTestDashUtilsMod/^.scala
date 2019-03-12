@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-test-utils", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def createMockDispatch(): reduxDashTestDashUtilsLib.reduxDashTestDashUtilsMod.mockDispatch[_] = js.native
-  def createMockStore(): reduxDashTestDashUtilsLib.reduxDashTestDashUtilsMod.mockStore[_] = js.native
-  def createMockStore(state: js.Any): reduxDashTestDashUtilsLib.reduxDashTestDashUtilsMod.mockStore[_] = js.native
+  def createMockDispatch(): mockDispatch[_] = js.native
+  def createMockStore(): mockStore[_] = js.native
+  def createMockStore(state: js.Any): mockStore[_] = js.native
 }
 

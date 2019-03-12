@@ -69,17 +69,13 @@ trait IAttributes
 object IAttributes {
   @scala.inline
   def apply(
-    $addClass: js.Function1[java.lang.String, scala.Unit],
+    $addClass: java.lang.String => scala.Unit,
     $attr: js.Object,
-    $normalize: js.Function1[java.lang.String, java.lang.String],
-    $observe: js.Function2[
-      java.lang.String, 
-      js.Function1[/* value */ js.UndefOr[js.Any], _], 
-      angularLib.angularMod.Global.Function
-    ],
-    $removeClass: js.Function1[java.lang.String, scala.Unit],
-    $set: js.Function2[java.lang.String, js.Any, scala.Unit],
-    $updateClass: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    $normalize: java.lang.String => java.lang.String,
+    $observe: (java.lang.String, js.Function1[/* value */ js.UndefOr[js.Any], _]) => angularLib.angularMod.Global.Function,
+    $removeClass: java.lang.String => scala.Unit,
+    $set: (java.lang.String, js.Any) => scala.Unit,
+    $updateClass: (java.lang.String, java.lang.String) => scala.Unit,
     StringDictionary: /**
     * this is necessary to be able to access the scoped attributes. it's not very elegant
     * because you have to use attrs['foo'] instead of attrs.foo but I don't know of a better way
@@ -87,7 +83,7 @@ object IAttributes {
     */
   /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): IAttributes = {
-    val __obj = js.Dynamic.literal($addClass = $addClass, $attr = $attr, $normalize = $normalize, $observe = $observe, $removeClass = $removeClass, $set = $set, $updateClass = $updateClass)
+    val __obj = js.Dynamic.literal($addClass = js.Any.fromFunction1($addClass), $attr = $attr, $normalize = js.Any.fromFunction1($normalize), $observe = js.Any.fromFunction2($observe), $removeClass = js.Any.fromFunction1($removeClass), $set = js.Any.fromFunction2($set), $updateClass = js.Any.fromFunction2($updateClass))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IAttributes]
   }

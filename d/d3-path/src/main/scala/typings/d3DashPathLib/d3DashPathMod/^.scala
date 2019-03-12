@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("d3-path", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def path(): d3DashPathLib.d3DashPathMod.Path = js.native
+  def path(): Path = js.native
 }
 

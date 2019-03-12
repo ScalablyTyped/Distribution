@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ChartDataItemType extends js.Object {
-  var chart: amchartsLib.amchartMod.default
+  var chart: amchartsLib.amChartMod.default
    // Always "rollOverSlice".
   var dataItem: amchartsLib.sliceMod.default
   var `type`: java.lang.String
@@ -15,7 +15,7 @@ trait Anon_ChartDataItemType extends js.Object {
 object Anon_ChartDataItemType {
   @scala.inline
   def apply(
-    chart: amchartsLib.amchartMod.default,
+    chart: amchartsLib.amChartMod.default,
     dataItem: amchartsLib.sliceMod.default,
     `type`: java.lang.String
   ): Anon_ChartDataItemType = {

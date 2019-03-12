@@ -43,8 +43,8 @@ trait XSQLQueryComposer
     * the name of the column and the filter condition. The filter condition is of type string.
     * @returns the structured filter
     */
-  val StructuredFilter: activexDashInteropLib.SafeArray[
-    activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  val StructuredFilter: stdLib.SafeArray[
+    stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   ]
   /**
     * appends a new filter condition by a {@link com.sun.star.sdb.DataColumn} providing the name and the value for the filter.
@@ -93,8 +93,8 @@ trait XSQLQueryComposer
     * the name of the column and the filter condition. The filter condition is of type string.
     * @returns the structured filter
     */
-  def getStructuredFilter(): activexDashInteropLib.SafeArray[
-    activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  def getStructuredFilter(): stdLib.SafeArray[
+    stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   ]
   /**
     * makes it possible to set a filter condition for the query.
@@ -123,32 +123,26 @@ object XSQLQueryComposer {
     Filter: java.lang.String,
     Order: java.lang.String,
     Query: java.lang.String,
-    StructuredFilter: activexDashInteropLib.SafeArray[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    StructuredFilter: stdLib.SafeArray[
+      stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
     ],
-    acquire: js.Function0[scala.Unit],
-    appendFilterByColumn: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, scala.Unit],
-    appendOrderByColumn: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
-      scala.Boolean, 
-      scala.Unit
+    acquire: () => scala.Unit,
+    appendFilterByColumn: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet => scala.Unit,
+    appendOrderByColumn: (activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, scala.Boolean) => scala.Unit,
+    getComposedQuery: () => java.lang.String,
+    getFilter: () => java.lang.String,
+    getOrder: () => java.lang.String,
+    getQuery: () => java.lang.String,
+    getStructuredFilter: () => stdLib.SafeArray[
+      stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
     ],
-    getComposedQuery: js.Function0[java.lang.String],
-    getFilter: js.Function0[java.lang.String],
-    getOrder: js.Function0[java.lang.String],
-    getQuery: js.Function0[java.lang.String],
-    getStructuredFilter: js.Function0[
-      activexDashInteropLib.SafeArray[
-        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-      ]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setFilter: js.Function1[java.lang.String, scala.Unit],
-    setOrder: js.Function1[java.lang.String, scala.Unit],
-    setQuery: js.Function1[java.lang.String, scala.Unit]
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setFilter: java.lang.String => scala.Unit,
+    setOrder: java.lang.String => scala.Unit,
+    setQuery: java.lang.String => scala.Unit
   ): XSQLQueryComposer = {
-    val __obj = js.Dynamic.literal(ComposedQuery = ComposedQuery, Filter = Filter, Order = Order, Query = Query, StructuredFilter = StructuredFilter, acquire = acquire, appendFilterByColumn = appendFilterByColumn, appendOrderByColumn = appendOrderByColumn, getComposedQuery = getComposedQuery, getFilter = getFilter, getOrder = getOrder, getQuery = getQuery, getStructuredFilter = getStructuredFilter, queryInterface = queryInterface, release = release, setFilter = setFilter, setOrder = setOrder, setQuery = setQuery)
+    val __obj = js.Dynamic.literal(ComposedQuery = ComposedQuery, Filter = Filter, Order = Order, Query = Query, StructuredFilter = StructuredFilter, acquire = js.Any.fromFunction0(acquire), appendFilterByColumn = js.Any.fromFunction1(appendFilterByColumn), appendOrderByColumn = js.Any.fromFunction2(appendOrderByColumn), getComposedQuery = js.Any.fromFunction0(getComposedQuery), getFilter = js.Any.fromFunction0(getFilter), getOrder = js.Any.fromFunction0(getOrder), getQuery = js.Any.fromFunction0(getQuery), getStructuredFilter = js.Any.fromFunction0(getStructuredFilter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setFilter = js.Any.fromFunction1(setFilter), setOrder = js.Any.fromFunction1(setOrder), setQuery = js.Any.fromFunction1(setQuery))
   
     __obj.asInstanceOf[XSQLQueryComposer]
   }

@@ -27,7 +27,7 @@ class PNG ()
   @JSName("on")
   def on_error(
     event: pngjs2Lib.pngjs2LibStrings.error,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_metadata(
@@ -43,12 +43,12 @@ class PNG ()
   def parse(data: java.lang.String): PNG = js.native
   def parse(
     data: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
   ): PNG = js.native
   def parse(data: nodeLib.Buffer): PNG = js.native
   def parse(
     data: nodeLib.Buffer,
-    callback: js.Function2[/* err */ nodeLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
   ): PNG = js.native
 }
 

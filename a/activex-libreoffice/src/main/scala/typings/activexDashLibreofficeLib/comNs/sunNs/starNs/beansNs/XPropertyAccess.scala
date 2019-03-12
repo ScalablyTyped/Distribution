@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation._
 trait XPropertyAccess
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** @returns a sequence of all property values within the object in a single call. */
-  var PropertyValues: activexDashInteropLib.SafeArray[PropertyValue]
+  var PropertyValues: stdLib.SafeArray[PropertyValue]
   /** @returns a sequence of all property values within the object in a single call. */
-  def getPropertyValues(): activexDashInteropLib.SafeArray[PropertyValue]
+  def getPropertyValues(): stdLib.SafeArray[PropertyValue]
   /**
     * sets the values of given properties.
     *
@@ -30,14 +30,14 @@ trait XPropertyAccess
 object XPropertyAccess {
   @scala.inline
   def apply(
-    PropertyValues: activexDashInteropLib.SafeArray[PropertyValue],
-    acquire: js.Function0[scala.Unit],
-    getPropertyValues: js.Function0[activexDashInteropLib.SafeArray[PropertyValue]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setPropertyValues: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[PropertyValue], scala.Unit]
+    PropertyValues: stdLib.SafeArray[PropertyValue],
+    acquire: () => scala.Unit,
+    getPropertyValues: () => stdLib.SafeArray[PropertyValue],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setPropertyValues: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[PropertyValue] => scala.Unit
   ): XPropertyAccess = {
-    val __obj = js.Dynamic.literal(PropertyValues = PropertyValues, acquire = acquire, getPropertyValues = getPropertyValues, queryInterface = queryInterface, release = release, setPropertyValues = setPropertyValues)
+    val __obj = js.Dynamic.literal(PropertyValues = PropertyValues, acquire = js.Any.fromFunction0(acquire), getPropertyValues = js.Any.fromFunction0(getPropertyValues), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setPropertyValues = js.Any.fromFunction1(setPropertyValues))
   
     __obj.asInstanceOf[XPropertyAccess]
   }

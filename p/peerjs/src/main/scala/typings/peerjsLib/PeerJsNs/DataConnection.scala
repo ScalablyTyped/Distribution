@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DataConnection extends js.Object {
   var buffSize: scala.Double = js.native
-  var dataChannel: webrtcLib.RTCDataChannel = js.native
+  var dataChannel: stdLib.RTCDataChannel = js.native
   var label: java.lang.String = js.native
   var metadata: js.Any = js.native
   var open: scala.Boolean = js.native

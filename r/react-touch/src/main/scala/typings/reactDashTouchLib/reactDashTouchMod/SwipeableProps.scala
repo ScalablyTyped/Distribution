@@ -20,21 +20,21 @@ object SwipeableProps {
   @scala.inline
   def apply(
     config: SwipeableConfig = null,
-    onMouseDown: js.Function0[scala.Unit] = null,
-    onSwipeDown: js.Function0[scala.Unit] = null,
-    onSwipeLeft: js.Function0[scala.Unit] = null,
-    onSwipeRight: js.Function0[scala.Unit] = null,
-    onSwipeUp: js.Function0[scala.Unit] = null,
-    onTouchStart: js.Function0[scala.Unit] = null
+    onMouseDown: () => scala.Unit = null,
+    onSwipeDown: () => scala.Unit = null,
+    onSwipeLeft: () => scala.Unit = null,
+    onSwipeRight: () => scala.Unit = null,
+    onSwipeUp: () => scala.Unit = null,
+    onTouchStart: () => scala.Unit = null
   ): SwipeableProps = {
     val __obj = js.Dynamic.literal()
     if (config != null) __obj.updateDynamic("config")(config)
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
-    if (onSwipeDown != null) __obj.updateDynamic("onSwipeDown")(onSwipeDown)
-    if (onSwipeLeft != null) __obj.updateDynamic("onSwipeLeft")(onSwipeLeft)
-    if (onSwipeRight != null) __obj.updateDynamic("onSwipeRight")(onSwipeRight)
-    if (onSwipeUp != null) __obj.updateDynamic("onSwipeUp")(onSwipeUp)
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction0(onMouseDown))
+    if (onSwipeDown != null) __obj.updateDynamic("onSwipeDown")(js.Any.fromFunction0(onSwipeDown))
+    if (onSwipeLeft != null) __obj.updateDynamic("onSwipeLeft")(js.Any.fromFunction0(onSwipeLeft))
+    if (onSwipeRight != null) __obj.updateDynamic("onSwipeRight")(js.Any.fromFunction0(onSwipeRight))
+    if (onSwipeUp != null) __obj.updateDynamic("onSwipeUp")(js.Any.fromFunction0(onSwipeUp))
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction0(onTouchStart))
     __obj.asInstanceOf[SwipeableProps]
   }
 }

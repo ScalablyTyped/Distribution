@@ -68,7 +68,7 @@ object Option {
   @scala.inline
   def apply(
     abbr: java.lang.String = null,
-    callback: js.Function1[/* option */ js.Any, java.lang.String] = null,
+    callback: /* option */ js.Any => java.lang.String = null,
     choices: js.Array[java.lang.String] = null,
     default: js.Any = null,
     flag: js.UndefOr[scala.Boolean] = js.undefined,
@@ -84,7 +84,7 @@ object Option {
   ): Option = {
     val __obj = js.Dynamic.literal()
     if (abbr != null) __obj.updateDynamic("abbr")(abbr)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (choices != null) __obj.updateDynamic("choices")(choices)
     if (default != null) __obj.updateDynamic("default")(default)
     if (!js.isUndefined(flag)) __obj.updateDynamic("flag")(flag)

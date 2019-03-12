@@ -41,7 +41,7 @@ object IPolylineOptions {
     hasHint: js.UndefOr[scala.Boolean] = js.undefined,
     interactiveZIndex: js.UndefOr[scala.Boolean] = js.undefined,
     interactivityModel: java.lang.String = null,
-    lineStringOverlay: js.Function0[js.Object | java.lang.String] = null,
+    lineStringOverlay: () => js.Object | java.lang.String = null,
     opacity: scala.Int | scala.Double = null,
     openBalloonOnClick: js.UndefOr[scala.Boolean] = js.undefined,
     openEmptyBalloon: js.UndefOr[scala.Boolean] = js.undefined,
@@ -67,7 +67,7 @@ object IPolylineOptions {
     if (!js.isUndefined(hasHint)) __obj.updateDynamic("hasHint")(hasHint)
     if (!js.isUndefined(interactiveZIndex)) __obj.updateDynamic("interactiveZIndex")(interactiveZIndex)
     if (interactivityModel != null) __obj.updateDynamic("interactivityModel")(interactivityModel)
-    if (lineStringOverlay != null) __obj.updateDynamic("lineStringOverlay")(lineStringOverlay)
+    if (lineStringOverlay != null) __obj.updateDynamic("lineStringOverlay")(js.Any.fromFunction0(lineStringOverlay))
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (!js.isUndefined(openBalloonOnClick)) __obj.updateDynamic("openBalloonOnClick")(openBalloonOnClick)
     if (!js.isUndefined(openEmptyBalloon)) __obj.updateDynamic("openEmptyBalloon")(openEmptyBalloon)

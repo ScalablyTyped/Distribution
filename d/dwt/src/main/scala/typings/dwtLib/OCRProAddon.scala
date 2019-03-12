@@ -15,12 +15,12 @@ trait OCRProAddon extends js.Object {
 object OCRProAddon {
   @scala.inline
   def apply(
-    NewOCRError: js.Function0[OCRError],
-    NewOCRReadPara: js.Function0[OCRReadPara],
-    NewOCRZone: js.Function0[OCRZone],
-    NewSettings: js.Function0[Settings]
+    NewOCRError: () => OCRError,
+    NewOCRReadPara: () => OCRReadPara,
+    NewOCRZone: () => OCRZone,
+    NewSettings: () => Settings
   ): OCRProAddon = {
-    val __obj = js.Dynamic.literal(NewOCRError = NewOCRError, NewOCRReadPara = NewOCRReadPara, NewOCRZone = NewOCRZone, NewSettings = NewSettings)
+    val __obj = js.Dynamic.literal(NewOCRError = js.Any.fromFunction0(NewOCRError), NewOCRReadPara = js.Any.fromFunction0(NewOCRReadPara), NewOCRZone = js.Any.fromFunction0(NewOCRZone), NewSettings = js.Any.fromFunction0(NewSettings))
   
     __obj.asInstanceOf[OCRProAddon]
   }

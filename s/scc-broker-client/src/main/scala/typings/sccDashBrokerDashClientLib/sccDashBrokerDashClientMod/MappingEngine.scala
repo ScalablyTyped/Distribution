@@ -14,11 +14,11 @@ trait MappingEngine extends js.Object {
 object MappingEngine {
   @scala.inline
   def apply(
-    findSite: js.Function1[java.lang.String, java.lang.String],
-    getSites: js.Function0[js.Array[java.lang.String]],
-    setSites: js.Function1[js.Array[java.lang.String], scala.Unit]
+    findSite: java.lang.String => java.lang.String,
+    getSites: () => js.Array[java.lang.String],
+    setSites: js.Array[java.lang.String] => scala.Unit
   ): MappingEngine = {
-    val __obj = js.Dynamic.literal(findSite = findSite, getSites = getSites, setSites = setSites)
+    val __obj = js.Dynamic.literal(findSite = js.Any.fromFunction1(findSite), getSites = js.Any.fromFunction0(getSites), setSites = js.Any.fromFunction1(setSites))
   
     __obj.asInstanceOf[MappingEngine]
   }

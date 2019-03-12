@@ -30,11 +30,11 @@ trait DeserializerOptions extends js.Object {
 object DeserializerOptions {
   @scala.inline
   def apply(
-    getConstructor: js.Function1[java.lang.String, js.Function0[_]],
-    getTypeId: js.Function1[js.Any, java.lang.String],
-    reviver: js.Function2[java.lang.String, js.Any, js.Any]
+    getConstructor: java.lang.String => js.Function0[_],
+    getTypeId: js.Any => java.lang.String,
+    reviver: (java.lang.String, js.Any) => js.Any
   ): DeserializerOptions = {
-    val __obj = js.Dynamic.literal(getConstructor = getConstructor, getTypeId = getTypeId, reviver = reviver)
+    val __obj = js.Dynamic.literal(getConstructor = js.Any.fromFunction1(getConstructor), getTypeId = js.Any.fromFunction1(getTypeId), reviver = js.Any.fromFunction2(reviver))
   
     __obj.asInstanceOf[DeserializerOptions]
   }

@@ -13,7 +13,7 @@ trait MakeAuthenticatedRequest extends js.Object {
   def apply(reqOpts: DecorateRequestOptions, options: MakeAuthenticatedRequestOptions): scala.Unit | Abortable = js.native
   def getCredentials(
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[stdLib.Error | scala.Null], 
       /* credentials */ js.UndefOr[googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.CredentialBody], 
       scala.Unit
     ]

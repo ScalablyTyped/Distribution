@@ -105,43 +105,43 @@ object IFilter {
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
     anyMatch: js.UndefOr[scala.Boolean] = js.undefined,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     exactMatch: js.UndefOr[scala.Boolean] = js.undefined,
     extend: java.lang.String = null,
     filterFn: js.Any = null,
-    getAnyMatch: js.Function0[scala.Boolean] = null,
-    getCaseSensitive: js.Function0[scala.Boolean] = null,
-    getExactMatch: js.Function0[scala.Boolean] = null,
-    getFilterFn: js.Function0[_] = null,
-    getId: js.Function0[java.lang.String] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getProperty: js.Function0[java.lang.String] = null,
-    getRoot: js.Function0[java.lang.String] = null,
-    getScope: js.Function0[_] = null,
-    getValue: js.Function0[_] = null,
+    getAnyMatch: () => scala.Boolean = null,
+    getCaseSensitive: () => scala.Boolean = null,
+    getExactMatch: () => scala.Boolean = null,
+    getFilterFn: () => _ = null,
+    getId: () => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getProperty: () => java.lang.String = null,
+    getRoot: () => java.lang.String = null,
+    getScope: () => _ = null,
+    getValue: () => _ = null,
     id: java.lang.String = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     property: java.lang.String = null,
     root: java.lang.String = null,
     scope: js.Any = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setAnyMatch: js.Function1[/* anyMatch */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setCaseSensitive: js.Function1[/* caseSensitive */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setExactMatch: js.Function1[/* exactMatch */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setFilterFn: js.Function1[/* filterFn */ js.UndefOr[js.Any], scala.Unit] = null,
-    setId: js.Function1[/* id */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setProperty: js.Function1[/* property */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setRoot: js.Function1[/* root */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setScope: js.Function1[/* scope */ js.UndefOr[js.Any], scala.Unit] = null,
-    setValue: js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit] = null,
+    setAnyMatch: /* anyMatch */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setCaseSensitive: /* caseSensitive */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setExactMatch: /* exactMatch */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setFilterFn: /* filterFn */ js.UndefOr[js.Any] => scala.Unit = null,
+    setId: /* id */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setProperty: /* property */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setRoot: /* root */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setScope: /* scope */ js.UndefOr[js.Any] => scala.Unit = null,
+    setValue: /* value */ js.UndefOr[js.Any] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null,
@@ -151,43 +151,43 @@ object IFilter {
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
     if (!js.isUndefined(anyMatch)) __obj.updateDynamic("anyMatch")(anyMatch)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (!js.isUndefined(exactMatch)) __obj.updateDynamic("exactMatch")(exactMatch)
     if (extend != null) __obj.updateDynamic("extend")(extend)
     if (filterFn != null) __obj.updateDynamic("filterFn")(filterFn)
-    if (getAnyMatch != null) __obj.updateDynamic("getAnyMatch")(getAnyMatch)
-    if (getCaseSensitive != null) __obj.updateDynamic("getCaseSensitive")(getCaseSensitive)
-    if (getExactMatch != null) __obj.updateDynamic("getExactMatch")(getExactMatch)
-    if (getFilterFn != null) __obj.updateDynamic("getFilterFn")(getFilterFn)
-    if (getId != null) __obj.updateDynamic("getId")(getId)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getProperty != null) __obj.updateDynamic("getProperty")(getProperty)
-    if (getRoot != null) __obj.updateDynamic("getRoot")(getRoot)
-    if (getScope != null) __obj.updateDynamic("getScope")(getScope)
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
+    if (getAnyMatch != null) __obj.updateDynamic("getAnyMatch")(js.Any.fromFunction0(getAnyMatch))
+    if (getCaseSensitive != null) __obj.updateDynamic("getCaseSensitive")(js.Any.fromFunction0(getCaseSensitive))
+    if (getExactMatch != null) __obj.updateDynamic("getExactMatch")(js.Any.fromFunction0(getExactMatch))
+    if (getFilterFn != null) __obj.updateDynamic("getFilterFn")(js.Any.fromFunction0(getFilterFn))
+    if (getId != null) __obj.updateDynamic("getId")(js.Any.fromFunction0(getId))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getProperty != null) __obj.updateDynamic("getProperty")(js.Any.fromFunction0(getProperty))
+    if (getRoot != null) __obj.updateDynamic("getRoot")(js.Any.fromFunction0(getRoot))
+    if (getScope != null) __obj.updateDynamic("getScope")(js.Any.fromFunction0(getScope))
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
     if (id != null) __obj.updateDynamic("id")(id)
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
     if (property != null) __obj.updateDynamic("property")(property)
     if (root != null) __obj.updateDynamic("root")(root)
     if (scope != null) __obj.updateDynamic("scope")(scope)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setAnyMatch != null) __obj.updateDynamic("setAnyMatch")(setAnyMatch)
-    if (setCaseSensitive != null) __obj.updateDynamic("setCaseSensitive")(setCaseSensitive)
-    if (setExactMatch != null) __obj.updateDynamic("setExactMatch")(setExactMatch)
-    if (setFilterFn != null) __obj.updateDynamic("setFilterFn")(setFilterFn)
-    if (setId != null) __obj.updateDynamic("setId")(setId)
-    if (setProperty != null) __obj.updateDynamic("setProperty")(setProperty)
-    if (setRoot != null) __obj.updateDynamic("setRoot")(setRoot)
-    if (setScope != null) __obj.updateDynamic("setScope")(setScope)
-    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
+    if (setAnyMatch != null) __obj.updateDynamic("setAnyMatch")(js.Any.fromFunction1(setAnyMatch))
+    if (setCaseSensitive != null) __obj.updateDynamic("setCaseSensitive")(js.Any.fromFunction1(setCaseSensitive))
+    if (setExactMatch != null) __obj.updateDynamic("setExactMatch")(js.Any.fromFunction1(setExactMatch))
+    if (setFilterFn != null) __obj.updateDynamic("setFilterFn")(js.Any.fromFunction1(setFilterFn))
+    if (setId != null) __obj.updateDynamic("setId")(js.Any.fromFunction1(setId))
+    if (setProperty != null) __obj.updateDynamic("setProperty")(js.Any.fromFunction1(setProperty))
+    if (setRoot != null) __obj.updateDynamic("setRoot")(js.Any.fromFunction1(setRoot))
+    if (setScope != null) __obj.updateDynamic("setScope")(js.Any.fromFunction1(setScope))
+    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (uses != null) __obj.updateDynamic("uses")(uses)

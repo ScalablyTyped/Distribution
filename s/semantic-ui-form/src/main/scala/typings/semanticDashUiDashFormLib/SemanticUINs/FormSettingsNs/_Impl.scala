@@ -148,15 +148,10 @@ object _Impl {
     name: java.lang.String,
     namespace: java.lang.String,
     on: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.submit | semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.blur | semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.change,
-    onFailure: js.Function3[semanticDashUiDashFormLib.JQuery, js.Array[java.lang.String], js.Any, scala.Unit],
-    onInvalid: js.Function1[semanticDashUiDashFormLib.JQuery, scala.Unit],
-    onSuccess: js.Function3[
-      semanticDashUiDashFormLib.JQuery, 
-      jqueryLib.JQueryNs.TriggeredEvent[stdLib.HTMLElement, _, _, _], 
-      js.Any, 
-      scala.Unit
-    ],
-    onValid: js.Function1[semanticDashUiDashFormLib.JQuery, scala.Unit],
+    onFailure: (semanticDashUiDashFormLib.JQuery, js.Array[java.lang.String], js.Any) => scala.Unit,
+    onInvalid: semanticDashUiDashFormLib.JQuery => scala.Unit,
+    onSuccess: (semanticDashUiDashFormLib.JQuery, jqueryLib.JQueryNs.TriggeredEvent[stdLib.HTMLElement, _, _, _], js.Any) => scala.Unit,
+    onValid: semanticDashUiDashFormLib.JQuery => scala.Unit,
     performance: scala.Boolean,
     prompt: semanticDashUiDashFormLib.SemanticUINs.FormNs.PromptSettings,
     revalidate: scala.Boolean,
@@ -168,7 +163,7 @@ object _Impl {
     transition: java.lang.String,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], debug = debug, defaults = defaults, delay = delay, duration = duration, error = error, fields = fields, keyboardShortcuts = keyboardShortcuts, metadata = metadata, name = name, namespace = namespace, on = on.asInstanceOf[js.Any], onFailure = onFailure, onInvalid = onInvalid, onSuccess = onSuccess, onValid = onValid, performance = performance, prompt = prompt.asInstanceOf[js.Any], revalidate = revalidate, rules = rules, selector = selector.asInstanceOf[js.Any], silent = silent, templates = templates.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], transition = transition, verbose = verbose)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], debug = debug, defaults = defaults, delay = delay, duration = duration, error = error, fields = fields, keyboardShortcuts = keyboardShortcuts, metadata = metadata, name = name, namespace = namespace, on = on.asInstanceOf[js.Any], onFailure = js.Any.fromFunction3(onFailure), onInvalid = js.Any.fromFunction1(onInvalid), onSuccess = js.Any.fromFunction3(onSuccess), onValid = js.Any.fromFunction1(onValid), performance = performance, prompt = prompt.asInstanceOf[js.Any], revalidate = revalidate, rules = rules, selector = selector.asInstanceOf[js.Any], silent = silent, templates = templates.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], transition = transition, verbose = verbose)
     __obj.updateDynamic("inline")(`inline`)
     __obj.asInstanceOf[_Impl]
   }

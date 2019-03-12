@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait CacheProvider extends js.Object {
   def get(
     key: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* value */ js.Any, scala.Unit | scala.Null]
+    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* value */ js.Any, scala.Unit | scala.Null]
   ): scala.Unit = js.native
   def remove(
     key: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* key */ java.lang.String, 
       scala.Unit | scala.Null
     ]
@@ -23,7 +23,7 @@ trait CacheProvider extends js.Object {
     key: java.lang.String,
     value: js.Any,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* cacheItem */ CacheItem, 
       scala.Unit | scala.Null
     ]
@@ -32,7 +32,7 @@ trait CacheProvider extends js.Object {
     key: scala.Null,
     value: js.Any,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* cacheItem */ CacheItem, 
       scala.Unit | scala.Null
     ]

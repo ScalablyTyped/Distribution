@@ -11,8 +11,8 @@ trait IAnimationDescriptionFactory extends js.Object {
 
 object IAnimationDescriptionFactory {
   @scala.inline
-  def apply(createInstance: js.Function2[AnimationEffect, AnimationEffectTarget, AnimationDescription]): IAnimationDescriptionFactory = {
-    val __obj = js.Dynamic.literal(createInstance = createInstance)
+  def apply(createInstance: (AnimationEffect, AnimationEffectTarget) => AnimationDescription): IAnimationDescriptionFactory = {
+    val __obj = js.Dynamic.literal(createInstance = js.Any.fromFunction2(createInstance))
   
     __obj.asInstanceOf[IAnimationDescriptionFactory]
   }

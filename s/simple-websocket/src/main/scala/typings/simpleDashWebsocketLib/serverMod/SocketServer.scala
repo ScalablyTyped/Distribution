@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SocketServer
   extends nodeLib.eventsMod.EventEmitter {
-  var clients: nodeLib.Set[wsLib.wsMod.namespaced] = js.native
+  var clients: stdLib.Set[wsLib.wsMod.namespaced] = js.native
   var options: simpleDashWebsocketLib.serverMod.SocketServerNs.Options = js.native
   var path: java.lang.String = js.native
   // Events
@@ -20,7 +20,7 @@ trait SocketServer
   @JSName("addListener")
   def addListener_error(
     event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.error,
-    cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    cb: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_headers(
@@ -37,14 +37,14 @@ trait SocketServer
     cb: js.Function0[scala.Unit]
   ): this.type = js.native
   def close(): scala.Unit = js.native
-  def close(cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]): scala.Unit = js.native
+  def close(cb: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]): scala.Unit = js.native
   @JSName("emit")
   def emit_connection(
     event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.connection,
     socket: simpleDashWebsocketLib.simpleDashWebsocketMod.namespaced
   ): scala.Boolean = js.native
   @JSName("emit")
-  def emit_error(event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.error, error: nodeLib.Error): scala.Boolean = js.native
+  def emit_error(event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.error, error: stdLib.Error): scala.Boolean = js.native
   @JSName("emit")
   def emit_headers(
     event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.headers,
@@ -68,7 +68,7 @@ trait SocketServer
     ]
   ] = js.native
   @JSName("listeners")
-  def listeners_error(event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.error): js.Array[js.Function1[/* error */ nodeLib.Error, scala.Unit]] = js.native
+  def listeners_error(event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.error): js.Array[js.Function1[/* error */ stdLib.Error, scala.Unit]] = js.native
   @JSName("listeners")
   def listeners_headers(event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.headers): js.Array[
     js.Function2[
@@ -91,7 +91,7 @@ trait SocketServer
   @JSName("off")
   def off_error(
     event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.error,
-    cb: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    cb: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("off")
   def off_headers(
@@ -119,7 +119,7 @@ trait SocketServer
   @JSName("on")
   def on_error(
     event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.error,
-    cb: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    cb: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_headers(
@@ -147,7 +147,7 @@ trait SocketServer
   @JSName("once")
   def once_error(
     event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.error,
-    cb: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    cb: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_headers(
@@ -171,7 +171,7 @@ trait SocketServer
   @JSName("prependListener")
   def prependListener_error(
     event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.error,
-    cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    cb: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_headers(
@@ -195,7 +195,7 @@ trait SocketServer
   @JSName("prependOnceListener")
   def prependOnceListener_error(
     event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.error,
-    cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    cb: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_headers(
@@ -220,7 +220,7 @@ trait SocketServer
     ]
   ] = js.native
   @JSName("rawListeners")
-  def rawListeners_error(event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.error): js.Array[js.Function1[/* error */ nodeLib.Error, scala.Unit]] = js.native
+  def rawListeners_error(event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.error): js.Array[js.Function1[/* error */ stdLib.Error, scala.Unit]] = js.native
   @JSName("rawListeners")
   def rawListeners_headers(event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.headers): js.Array[
     js.Function2[
@@ -239,7 +239,7 @@ trait SocketServer
   @JSName("removeListener")
   def removeListener_error(
     event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.error,
-    cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    cb: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_headers(

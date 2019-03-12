@@ -16,14 +16,14 @@ trait Route extends js.Object {
 object Route {
   @scala.inline
   def apply(
-    addHandler: js.Function1[js.Function, scala.Unit],
-    `match`: js.Function2[java.lang.String, js.Any, scala.Boolean],
-    removeHandler: js.Function1[js.Function, scala.Unit],
-    run: js.Function1[js.Any, scala.Unit],
-    toURL: js.Function1[js.Any, java.lang.String]
+    addHandler: js.Function => scala.Unit,
+    `match`: (java.lang.String, js.Any) => scala.Boolean,
+    removeHandler: js.Function => scala.Unit,
+    run: js.Any => scala.Unit,
+    toURL: js.Any => java.lang.String
   ): Route = {
-    val __obj = js.Dynamic.literal(addHandler = addHandler, removeHandler = removeHandler, run = run, toURL = toURL)
-    __obj.updateDynamic("match")(`match`)
+    val __obj = js.Dynamic.literal(addHandler = js.Any.fromFunction1(addHandler), removeHandler = js.Any.fromFunction1(removeHandler), run = js.Any.fromFunction1(run), toURL = js.Any.fromFunction1(toURL))
+    __obj.updateDynamic("match")(js.Any.fromFunction2(`match`))
     __obj.asInstanceOf[Route]
   }
 }

@@ -24,21 +24,21 @@ trait CheapRuler extends js.Object {
 object CheapRuler {
   @scala.inline
   def apply(
-    along: js.Function2[Line, scala.Double, Point],
-    area: js.Function1[Polygon, scala.Double],
-    bearing: js.Function2[Point, Point, scala.Double],
-    bufferBBox: js.Function2[BBox, scala.Double, BBox],
-    bufferPoint: js.Function2[Point, scala.Double, BBox],
-    destination: js.Function3[Point, scala.Double, scala.Double, Point],
-    distance: js.Function2[Point, Point, scala.Double],
-    insideBBox: js.Function2[Point, BBox, scala.Boolean],
-    lineDistance: js.Function1[Points, scala.Double],
-    lineSlice: js.Function3[Point, Point, Line, Line],
-    lineSliceAlong: js.Function3[scala.Double, scala.Double, Line, Line],
-    offset: js.Function3[Point, scala.Double, scala.Double, Point],
-    pointOnLine: js.Function2[Line, Point, cheapDashRulerLib.Anon_Index]
+    along: (Line, scala.Double) => Point,
+    area: Polygon => scala.Double,
+    bearing: (Point, Point) => scala.Double,
+    bufferBBox: (BBox, scala.Double) => BBox,
+    bufferPoint: (Point, scala.Double) => BBox,
+    destination: (Point, scala.Double, scala.Double) => Point,
+    distance: (Point, Point) => scala.Double,
+    insideBBox: (Point, BBox) => scala.Boolean,
+    lineDistance: Points => scala.Double,
+    lineSlice: (Point, Point, Line) => Line,
+    lineSliceAlong: (scala.Double, scala.Double, Line) => Line,
+    offset: (Point, scala.Double, scala.Double) => Point,
+    pointOnLine: (Line, Point) => cheapDashRulerLib.Anon_Index
   ): CheapRuler = {
-    val __obj = js.Dynamic.literal(along = along, area = area, bearing = bearing, bufferBBox = bufferBBox, bufferPoint = bufferPoint, destination = destination, distance = distance, insideBBox = insideBBox, lineDistance = lineDistance, lineSlice = lineSlice, lineSliceAlong = lineSliceAlong, offset = offset, pointOnLine = pointOnLine)
+    val __obj = js.Dynamic.literal(along = js.Any.fromFunction2(along), area = js.Any.fromFunction1(area), bearing = js.Any.fromFunction2(bearing), bufferBBox = js.Any.fromFunction2(bufferBBox), bufferPoint = js.Any.fromFunction2(bufferPoint), destination = js.Any.fromFunction3(destination), distance = js.Any.fromFunction2(distance), insideBBox = js.Any.fromFunction2(insideBBox), lineDistance = js.Any.fromFunction1(lineDistance), lineSlice = js.Any.fromFunction3(lineSlice), lineSliceAlong = js.Any.fromFunction3(lineSliceAlong), offset = js.Any.fromFunction3(offset), pointOnLine = js.Any.fromFunction2(pointOnLine))
   
     __obj.asInstanceOf[CheapRuler]
   }

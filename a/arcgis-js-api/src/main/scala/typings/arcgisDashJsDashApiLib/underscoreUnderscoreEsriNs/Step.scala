@@ -125,17 +125,17 @@ object Step {
     defaultPercentComplete: scala.Double,
     hasBeenExecuted: scala.Boolean,
     hasBeenStarted: scala.Boolean,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     id: scala.Double,
     name: java.lang.String,
     notificationType: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     selfCheck: scala.Boolean,
     statusId: scala.Double,
     stepPercentComplete: scala.Double,
     stepType: StepType
   ): Step = {
-    val __obj = js.Dynamic.literal(assignedTo = assignedTo, assignedType = assignedType, async = async, autoRun = autoRun, canSkip = canSkip, canSpawnConcurrency = canSpawnConcurrency, commonId = commonId, constructor = constructor, defaultPercentComplete = defaultPercentComplete, hasBeenExecuted = hasBeenExecuted, hasBeenStarted = hasBeenStarted, hasOwnProperty = hasOwnProperty, id = id, name = name, notificationType = notificationType, propertyIsEnumerable = propertyIsEnumerable, selfCheck = selfCheck, statusId = statusId, stepPercentComplete = stepPercentComplete, stepType = stepType)
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo, assignedType = assignedType, async = async, autoRun = autoRun, canSkip = canSkip, canSpawnConcurrency = canSpawnConcurrency, commonId = commonId, constructor = constructor, defaultPercentComplete = defaultPercentComplete, hasBeenExecuted = hasBeenExecuted, hasBeenStarted = hasBeenStarted, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, name = name, notificationType = notificationType, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), selfCheck = selfCheck, statusId = statusId, stepPercentComplete = stepPercentComplete, stepType = stepType)
   
     __obj.asInstanceOf[Step]
   }

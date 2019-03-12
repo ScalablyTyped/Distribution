@@ -28,15 +28,15 @@ object IKeyboardEvent {
     browserEvent: stdLib.KeyboardEvent,
     code: java.lang.String,
     ctrlKey: scala.Boolean,
-    equals: js.Function1[scala.Double, scala.Boolean],
+    equals: scala.Double => scala.Boolean,
     keyCode: KeyCode,
     metaKey: scala.Boolean,
-    preventDefault: js.Function0[scala.Unit],
+    preventDefault: () => scala.Unit,
     shiftKey: scala.Boolean,
-    stopPropagation: js.Function0[scala.Unit],
+    stopPropagation: () => scala.Unit,
     target: stdLib.HTMLElement
   ): IKeyboardEvent = {
-    val __obj = js.Dynamic.literal(_standardKeyboardEventBrand = _standardKeyboardEventBrand, altKey = altKey, browserEvent = browserEvent, code = code, ctrlKey = ctrlKey, equals = equals, keyCode = keyCode, metaKey = metaKey, preventDefault = preventDefault, shiftKey = shiftKey, stopPropagation = stopPropagation, target = target)
+    val __obj = js.Dynamic.literal(_standardKeyboardEventBrand = _standardKeyboardEventBrand, altKey = altKey, browserEvent = browserEvent, code = code, ctrlKey = ctrlKey, equals = js.Any.fromFunction1(equals), keyCode = keyCode, metaKey = metaKey, preventDefault = js.Any.fromFunction0(preventDefault), shiftKey = shiftKey, stopPropagation = js.Any.fromFunction0(stopPropagation), target = target)
   
     __obj.asInstanceOf[IKeyboardEvent]
   }

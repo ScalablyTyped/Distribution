@@ -18,7 +18,7 @@ trait DateInputOptions extends js.Object {
 object DateInputOptions {
   @scala.inline
   def apply(
-    change: js.Function1[/* e */ DateInputChangeEvent, scala.Unit] = null,
+    change: /* e */ DateInputChangeEvent => scala.Unit = null,
     format: java.lang.String = null,
     max: stdLib.Date = null,
     messages: DateInputMessages = null,
@@ -27,7 +27,7 @@ object DateInputOptions {
     value: stdLib.Date = null
   ): DateInputOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (format != null) __obj.updateDynamic("format")(format)
     if (max != null) __obj.updateDynamic("max")(max)
     if (messages != null) __obj.updateDynamic("messages")(messages)

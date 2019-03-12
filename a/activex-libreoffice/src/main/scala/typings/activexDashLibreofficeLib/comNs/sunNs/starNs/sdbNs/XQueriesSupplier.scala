@@ -28,12 +28,12 @@ object XQueriesSupplier {
   @scala.inline
   def apply(
     Queries: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
-    acquire: js.Function0[scala.Unit],
-    getQueries: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getQueries: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XQueriesSupplier = {
-    val __obj = js.Dynamic.literal(Queries = Queries, acquire = acquire, getQueries = getQueries, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Queries = Queries, acquire = js.Any.fromFunction0(acquire), getQueries = js.Any.fromFunction0(getQueries), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XQueriesSupplier]
   }

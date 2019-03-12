@@ -29,7 +29,7 @@ object SnackbarProps {
     className: java.lang.String = null,
     contentStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     onActionClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onRequestClose: js.Function1[/* reason */ java.lang.String, scala.Unit] = null,
+    onRequestClose: /* reason */ java.lang.String => scala.Unit = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): SnackbarProps = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], open = open)
@@ -39,7 +39,7 @@ object SnackbarProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle)
     if (onActionClick != null) __obj.updateDynamic("onActionClick")(onActionClick)
-    if (onRequestClose != null) __obj.updateDynamic("onRequestClose")(onRequestClose)
+    if (onRequestClose != null) __obj.updateDynamic("onRequestClose")(js.Any.fromFunction1(onRequestClose))
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[SnackbarProps]
   }

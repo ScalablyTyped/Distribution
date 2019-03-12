@@ -20,13 +20,9 @@ trait XRedline extends js.Object {
 object XRedline {
   @scala.inline
   def apply(
-    makeRedline: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
-      scala.Unit
-    ]
+    makeRedline: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues) => scala.Unit
   ): XRedline = {
-    val __obj = js.Dynamic.literal(makeRedline = makeRedline)
+    val __obj = js.Dynamic.literal(makeRedline = js.Any.fromFunction2(makeRedline))
   
     __obj.asInstanceOf[XRedline]
   }

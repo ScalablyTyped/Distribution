@@ -18,15 +18,15 @@ trait ScreenshotOptions extends js.Object {
 object ScreenshotOptions {
   @scala.inline
   def apply(
-    afterScreenshot: js.Function1[stdLib.Document, scala.Unit],
-    beforeScreenshot: js.Function1[stdLib.Document, scala.Unit],
+    afterScreenshot: stdLib.Document => scala.Unit,
+    beforeScreenshot: stdLib.Document => scala.Unit,
     blackout: js.Array[java.lang.String],
     capture: cypressLib.cypressLibStrings.runner | cypressLib.cypressLibStrings.viewport | cypressLib.cypressLibStrings.fullPage,
     clip: Dimensions,
     disableTimersAndAnimations: scala.Boolean,
     scale: scala.Boolean
   ): ScreenshotOptions = {
-    val __obj = js.Dynamic.literal(afterScreenshot = afterScreenshot, beforeScreenshot = beforeScreenshot, blackout = blackout, capture = capture.asInstanceOf[js.Any], clip = clip, disableTimersAndAnimations = disableTimersAndAnimations, scale = scale)
+    val __obj = js.Dynamic.literal(afterScreenshot = js.Any.fromFunction1(afterScreenshot), beforeScreenshot = js.Any.fromFunction1(beforeScreenshot), blackout = blackout, capture = capture.asInstanceOf[js.Any], clip = clip, disableTimersAndAnimations = disableTimersAndAnimations, scale = scale)
   
     __obj.asInstanceOf[ScreenshotOptions]
   }

@@ -13,10 +13,10 @@ trait Anon_Fixed extends js.Object {
 object Anon_Fixed {
   @scala.inline
   def apply(
-    fixed: js.Function1[scala.Double, js.Function0[js.Promise[scala.Unit]]],
-    relative: js.Function1[scala.Double, js.Function1[/* ms */ scala.Double, js.Promise[scala.Unit]]]
+    fixed: scala.Double => js.Function0[js.Promise[scala.Unit]],
+    relative: scala.Double => js.Function1[/* ms */ scala.Double, js.Promise[scala.Unit]]
   ): Anon_Fixed = {
-    val __obj = js.Dynamic.literal(fixed = fixed, relative = relative)
+    val __obj = js.Dynamic.literal(fixed = js.Any.fromFunction1(fixed), relative = js.Any.fromFunction1(relative))
   
     __obj.asInstanceOf[Anon_Fixed]
   }

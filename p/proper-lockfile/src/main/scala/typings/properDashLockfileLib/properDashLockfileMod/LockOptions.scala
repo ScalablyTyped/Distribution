@@ -26,7 +26,7 @@ object LockOptions {
   def apply(
     fs: js.Any = null,
     lockfilePath: java.lang.String = null,
-    onCompromised: js.Function1[/* err */ stdLib.Error, _] = null,
+    onCompromised: /* err */ stdLib.Error => _ = null,
     realpath: js.UndefOr[scala.Boolean] = js.undefined,
     retries: scala.Int | scala.Double = null,
     stale: scala.Int | scala.Double = null,
@@ -35,7 +35,7 @@ object LockOptions {
     val __obj = js.Dynamic.literal()
     if (fs != null) __obj.updateDynamic("fs")(fs)
     if (lockfilePath != null) __obj.updateDynamic("lockfilePath")(lockfilePath)
-    if (onCompromised != null) __obj.updateDynamic("onCompromised")(onCompromised)
+    if (onCompromised != null) __obj.updateDynamic("onCompromised")(js.Any.fromFunction1(onCompromised))
     if (!js.isUndefined(realpath)) __obj.updateDynamic("realpath")(realpath)
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
     if (stale != null) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])

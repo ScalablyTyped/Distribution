@@ -16,8 +16,8 @@ trait LoaderPlugin extends js.Object {
 
 object LoaderPlugin {
   @scala.inline
-  def apply(fetch: js.Function1[java.lang.String, js.Promise[_]]): LoaderPlugin = {
-    val __obj = js.Dynamic.literal(fetch = fetch)
+  def apply(fetch: java.lang.String => js.Promise[_]): LoaderPlugin = {
+    val __obj = js.Dynamic.literal(fetch = js.Any.fromFunction1(fetch))
   
     __obj.asInstanceOf[LoaderPlugin]
   }

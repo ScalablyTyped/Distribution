@@ -15,20 +15,12 @@ trait Erd extends js.Object {
 object Erd {
   @scala.inline
   def apply(
-    listenTo: js.Function2[
-      stdLib.HTMLElement, 
-      js.Function1[/* elem */ stdLib.HTMLElement, scala.Unit], 
-      scala.Unit
-    ],
-    removeAllListeners: js.Function1[stdLib.HTMLElement, scala.Unit],
-    removeListener: js.Function2[
-      stdLib.HTMLElement, 
-      js.Function1[/* elem */ stdLib.HTMLElement, scala.Unit], 
-      scala.Unit
-    ],
-    uninstall: js.Function1[stdLib.HTMLElement, scala.Unit]
+    listenTo: (stdLib.HTMLElement, js.Function1[/* elem */ stdLib.HTMLElement, scala.Unit]) => scala.Unit,
+    removeAllListeners: stdLib.HTMLElement => scala.Unit,
+    removeListener: (stdLib.HTMLElement, js.Function1[/* elem */ stdLib.HTMLElement, scala.Unit]) => scala.Unit,
+    uninstall: stdLib.HTMLElement => scala.Unit
   ): Erd = {
-    val __obj = js.Dynamic.literal(listenTo = listenTo, removeAllListeners = removeAllListeners, removeListener = removeListener, uninstall = uninstall)
+    val __obj = js.Dynamic.literal(listenTo = js.Any.fromFunction2(listenTo), removeAllListeners = js.Any.fromFunction1(removeAllListeners), removeListener = js.Any.fromFunction2(removeListener), uninstall = js.Any.fromFunction1(uninstall))
   
     __obj.asInstanceOf[Erd]
   }

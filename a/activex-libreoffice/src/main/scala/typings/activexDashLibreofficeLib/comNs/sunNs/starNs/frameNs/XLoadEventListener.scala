@@ -26,14 +26,14 @@ trait XLoadEventListener
 object XLoadEventListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    loadCancelled: js.Function1[XFrameLoader, scala.Unit],
-    loadFinished: js.Function1[XFrameLoader, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    loadCancelled: XFrameLoader => scala.Unit,
+    loadFinished: XFrameLoader => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XLoadEventListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, loadCancelled = loadCancelled, loadFinished = loadFinished, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), loadCancelled = js.Any.fromFunction1(loadCancelled), loadFinished = js.Any.fromFunction1(loadFinished), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XLoadEventListener]
   }

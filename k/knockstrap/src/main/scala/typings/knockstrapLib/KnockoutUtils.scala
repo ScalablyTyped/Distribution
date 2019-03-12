@@ -12,11 +12,8 @@ trait KnockoutUtils extends js.Object {
 
 object KnockoutUtils {
   @scala.inline
-  def apply(
-    uniqueId: js.Function1[java.lang.String, java.lang.String],
-    unwrapProperties: js.Function1[js.Any, js.Any]
-  ): KnockoutUtils = {
-    val __obj = js.Dynamic.literal(uniqueId = uniqueId, unwrapProperties = unwrapProperties)
+  def apply(uniqueId: java.lang.String => java.lang.String, unwrapProperties: js.Any => js.Any): KnockoutUtils = {
+    val __obj = js.Dynamic.literal(uniqueId = js.Any.fromFunction1(uniqueId), unwrapProperties = js.Any.fromFunction1(unwrapProperties))
   
     __obj.asInstanceOf[KnockoutUtils]
   }

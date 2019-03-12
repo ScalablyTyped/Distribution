@@ -16,9 +16,9 @@ trait OnRatingBarChangeListener extends js.Object {
 object OnRatingBarChangeListener {
   @scala.inline
   def apply(
-    onRatingChanged: js.Function3[androiduixLib.androidNs.widgetNs.RatingBar, scala.Double, scala.Boolean, scala.Unit]
+    onRatingChanged: (androiduixLib.androidNs.widgetNs.RatingBar, scala.Double, scala.Boolean) => scala.Unit
   ): OnRatingBarChangeListener = {
-    val __obj = js.Dynamic.literal(onRatingChanged = onRatingChanged)
+    val __obj = js.Dynamic.literal(onRatingChanged = js.Any.fromFunction3(onRatingChanged))
   
     __obj.asInstanceOf[OnRatingBarChangeListener]
   }

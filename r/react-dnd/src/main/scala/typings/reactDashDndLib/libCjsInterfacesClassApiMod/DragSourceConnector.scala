@@ -32,8 +32,8 @@ trait DragSourceConnector extends js.Object {
 
 object DragSourceConnector {
   @scala.inline
-  def apply(dragPreview: js.Function0[ConnectDragPreview], dragSource: js.Function0[ConnectDragSource]): DragSourceConnector = {
-    val __obj = js.Dynamic.literal(dragPreview = dragPreview, dragSource = dragSource)
+  def apply(dragPreview: () => ConnectDragPreview, dragSource: () => ConnectDragSource): DragSourceConnector = {
+    val __obj = js.Dynamic.literal(dragPreview = js.Any.fromFunction0(dragPreview), dragSource = js.Any.fromFunction0(dragSource))
   
     __obj.asInstanceOf[DragSourceConnector]
   }

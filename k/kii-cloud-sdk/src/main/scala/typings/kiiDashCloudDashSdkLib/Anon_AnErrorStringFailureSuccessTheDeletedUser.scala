@@ -13,10 +13,10 @@ trait Anon_AnErrorStringFailureSuccessTheDeletedUser extends js.Object {
 object Anon_AnErrorStringFailureSuccessTheDeletedUser {
   @scala.inline
   def apply(
-    failure: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser, java.lang.String, js.Any],
-    success: js.Function1[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser, js.Any]
+    failure: (kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser, java.lang.String) => js.Any,
+    success: kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser => js.Any
   ): Anon_AnErrorStringFailureSuccessTheDeletedUser = {
-    val __obj = js.Dynamic.literal(failure = failure, success = success)
+    val __obj = js.Dynamic.literal(failure = js.Any.fromFunction2(failure), success = js.Any.fromFunction1(success))
   
     __obj.asInstanceOf[Anon_AnErrorStringFailureSuccessTheDeletedUser]
   }

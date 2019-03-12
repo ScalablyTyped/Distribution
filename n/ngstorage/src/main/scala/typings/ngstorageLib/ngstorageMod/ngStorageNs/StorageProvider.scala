@@ -20,15 +20,15 @@ object StorageProvider {
   @scala.inline
   def apply(
     $get: js.Any,
-    get: js.Function1[java.lang.String, js.Any | scala.Boolean],
-    remove: js.Function1[java.lang.String, scala.Unit],
-    set: js.Function2[java.lang.String, js.Any, js.Any | scala.Boolean],
-    setDeserializer: js.Function1[js.Function1[/* value */ java.lang.String, _], scala.Unit],
-    setKeyPrefix: js.Function1[java.lang.String, scala.Unit],
-    setSerializer: js.Function1[js.Function1[/* value */ js.Any, java.lang.String], scala.Unit],
-    supported: js.Function0[scala.Boolean]
+    get: java.lang.String => js.Any | scala.Boolean,
+    remove: java.lang.String => scala.Unit,
+    set: (java.lang.String, js.Any) => js.Any | scala.Boolean,
+    setDeserializer: js.Function1[/* value */ java.lang.String, _] => scala.Unit,
+    setKeyPrefix: java.lang.String => scala.Unit,
+    setSerializer: js.Function1[/* value */ js.Any, java.lang.String] => scala.Unit,
+    supported: () => scala.Boolean
   ): StorageProvider = {
-    val __obj = js.Dynamic.literal($get = $get, get = get, remove = remove, set = set, setDeserializer = setDeserializer, setKeyPrefix = setKeyPrefix, setSerializer = setSerializer, supported = supported)
+    val __obj = js.Dynamic.literal($get = $get, get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set), setDeserializer = js.Any.fromFunction1(setDeserializer), setKeyPrefix = js.Any.fromFunction1(setKeyPrefix), setSerializer = js.Any.fromFunction1(setSerializer), supported = js.Any.fromFunction0(supported))
   
     __obj.asInstanceOf[StorageProvider]
   }

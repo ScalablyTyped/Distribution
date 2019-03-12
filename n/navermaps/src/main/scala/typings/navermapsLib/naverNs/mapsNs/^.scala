@@ -14,7 +14,7 @@ object ^ extends js.Object {
   def EPSG3857Coord(): scala.Unit = js.native
   def Event(): scala.Unit = js.native
   // Map.MapType.Preset
-  def NaverMapTypeOption(options: navermapsLib.naverNs.mapsNs.NaverImageMapTypeOptions): scala.Unit = js.native
+  def NaverMapTypeOption(options: NaverImageMapTypeOptions): scala.Unit = js.native
   // Sub module: geocoder
   def Service(): scala.Unit = js.native
   def TM128(): scala.Unit = js.native

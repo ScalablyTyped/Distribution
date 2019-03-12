@@ -15,16 +15,12 @@ trait XComponentRegistry
 object XComponentRegistry {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createObject: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createObject: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik) => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XComponentRegistry = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createObject = createObject, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createObject = js.Any.fromFunction2(createObject), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XComponentRegistry]
   }

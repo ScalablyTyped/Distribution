@@ -12,8 +12,8 @@ trait ScreenshotDefaultsOptions extends ScreenshotOptions {
 object ScreenshotDefaultsOptions {
   @scala.inline
   def apply(
-    afterScreenshot: js.Function1[stdLib.Document, scala.Unit],
-    beforeScreenshot: js.Function1[stdLib.Document, scala.Unit],
+    afterScreenshot: stdLib.Document => scala.Unit,
+    beforeScreenshot: stdLib.Document => scala.Unit,
     blackout: js.Array[java.lang.String],
     capture: cypressLib.cypressLibStrings.runner | cypressLib.cypressLibStrings.viewport | cypressLib.cypressLibStrings.fullPage,
     clip: Dimensions,
@@ -21,7 +21,7 @@ object ScreenshotDefaultsOptions {
     scale: scala.Boolean,
     screenshotOnRunFailure: scala.Boolean
   ): ScreenshotDefaultsOptions = {
-    val __obj = js.Dynamic.literal(afterScreenshot = afterScreenshot, beforeScreenshot = beforeScreenshot, blackout = blackout, capture = capture.asInstanceOf[js.Any], clip = clip, disableTimersAndAnimations = disableTimersAndAnimations, scale = scale, screenshotOnRunFailure = screenshotOnRunFailure)
+    val __obj = js.Dynamic.literal(afterScreenshot = js.Any.fromFunction1(afterScreenshot), beforeScreenshot = js.Any.fromFunction1(beforeScreenshot), blackout = blackout, capture = capture.asInstanceOf[js.Any], clip = clip, disableTimersAndAnimations = disableTimersAndAnimations, scale = scale, screenshotOnRunFailure = screenshotOnRunFailure)
   
     __obj.asInstanceOf[ScreenshotDefaultsOptions]
   }

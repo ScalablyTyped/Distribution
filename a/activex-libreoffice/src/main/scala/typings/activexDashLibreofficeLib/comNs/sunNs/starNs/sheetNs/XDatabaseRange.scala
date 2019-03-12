@@ -24,12 +24,12 @@ trait XDatabaseRange
     * returns the database import descriptor stored with this database range.
     * @see DatabaseImportDescriptor
     */
-  val ImportDescriptor: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  val ImportDescriptor: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * returns the sort descriptor stored with the database range.
     * @see SheetSortDescriptor2
     */
-  val SortDescriptor: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  val SortDescriptor: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * returns the subtotal descriptor stored with the database range.
     *
@@ -50,12 +50,12 @@ trait XDatabaseRange
     * returns the database import descriptor stored with this database range.
     * @see DatabaseImportDescriptor
     */
-  def getImportDescriptor(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  def getImportDescriptor(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * returns the sort descriptor stored with the database range.
     * @see SheetSortDescriptor2
     */
-  def getSortDescriptor(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  def getSortDescriptor(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * returns the subtotal descriptor stored with the database range.
     *
@@ -74,25 +74,21 @@ object XDatabaseRange {
   def apply(
     DataArea: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
     FilterDescriptor: XSheetFilterDescriptor,
-    ImportDescriptor: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
-    SortDescriptor: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    ImportDescriptor: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    SortDescriptor: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     SubTotalDescriptor: XSubTotalDescriptor,
-    acquire: js.Function0[scala.Unit],
-    getDataArea: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
-    getFilterDescriptor: js.Function0[XSheetFilterDescriptor],
-    getImportDescriptor: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    getSortDescriptor: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    getSubTotalDescriptor: js.Function0[XSubTotalDescriptor],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    refresh: js.Function0[scala.Unit],
-    release: js.Function0[scala.Unit],
-    setDataArea: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit]
+    acquire: () => scala.Unit,
+    getDataArea: () => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
+    getFilterDescriptor: () => XSheetFilterDescriptor,
+    getImportDescriptor: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    getSortDescriptor: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    getSubTotalDescriptor: () => XSubTotalDescriptor,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    refresh: () => scala.Unit,
+    release: () => scala.Unit,
+    setDataArea: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress => scala.Unit
   ): XDatabaseRange = {
-    val __obj = js.Dynamic.literal(DataArea = DataArea, FilterDescriptor = FilterDescriptor, ImportDescriptor = ImportDescriptor, SortDescriptor = SortDescriptor, SubTotalDescriptor = SubTotalDescriptor, acquire = acquire, getDataArea = getDataArea, getFilterDescriptor = getFilterDescriptor, getImportDescriptor = getImportDescriptor, getSortDescriptor = getSortDescriptor, getSubTotalDescriptor = getSubTotalDescriptor, queryInterface = queryInterface, refresh = refresh, release = release, setDataArea = setDataArea)
+    val __obj = js.Dynamic.literal(DataArea = DataArea, FilterDescriptor = FilterDescriptor, ImportDescriptor = ImportDescriptor, SortDescriptor = SortDescriptor, SubTotalDescriptor = SubTotalDescriptor, acquire = js.Any.fromFunction0(acquire), getDataArea = js.Any.fromFunction0(getDataArea), getFilterDescriptor = js.Any.fromFunction0(getFilterDescriptor), getImportDescriptor = js.Any.fromFunction0(getImportDescriptor), getSortDescriptor = js.Any.fromFunction0(getSortDescriptor), getSubTotalDescriptor = js.Any.fromFunction0(getSubTotalDescriptor), queryInterface = js.Any.fromFunction1(queryInterface), refresh = js.Any.fromFunction0(refresh), release = js.Any.fromFunction0(release), setDataArea = js.Any.fromFunction1(setDataArea))
   
     __obj.asInstanceOf[XDatabaseRange]
   }

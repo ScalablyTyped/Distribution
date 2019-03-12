@@ -18,13 +18,13 @@ object AddMeta {
   @scala.inline
   def apply(
     action: js.Any,
-    end: js.Function1[js.Function0[scala.Unit], js.UndefOr[scala.Nothing]],
+    end: js.Function0[scala.Unit] => js.UndefOr[scala.Nothing],
     pattern: Pattern,
     plugin: PluginDefinition,
     schema: js.Any,
-    use: js.Function1[AddMetaMiddleware, AddMeta]
+    use: AddMetaMiddleware => AddMeta
   ): AddMeta = {
-    val __obj = js.Dynamic.literal(action = action, end = end, pattern = pattern, plugin = plugin, schema = schema, use = use)
+    val __obj = js.Dynamic.literal(action = action, end = js.Any.fromFunction1(end), pattern = pattern, plugin = plugin, schema = schema, use = js.Any.fromFunction1(use))
   
     __obj.asInstanceOf[AddMeta]
   }

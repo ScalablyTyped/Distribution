@@ -13,12 +13,9 @@ trait SdfResource extends js.Object {
 object SdfResource {
   @scala.inline
   def apply(
-    download: js.Function1[
-      gapiDotClientDotDoubleclickbidmanagerLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DownloadResponse]
-    ]
+    download: gapiDotClientDotDoubleclickbidmanagerLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[DownloadResponse]
   ): SdfResource = {
-    val __obj = js.Dynamic.literal(download = download)
+    val __obj = js.Dynamic.literal(download = js.Any.fromFunction1(download))
   
     __obj.asInstanceOf[SdfResource]
   }

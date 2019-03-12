@@ -14,7 +14,7 @@ class Ng1ViewConfig protected ()
   @JSName("$id")
   override var $id: scala.Double = js.native
   var component: java.lang.String = js.native
-  var controller: angularLib.angularMod.Global.Function = js.native
+  var controller: js.Function = js.native
   var factory: atUirouterAngularjsLib.libTemplateFactoryMod.TemplateFactory = js.native
   /* CompleteClass */
   override var loaded: scala.Boolean = js.native

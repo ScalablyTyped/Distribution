@@ -17,14 +17,14 @@ trait AppToolbarButtonView extends js.Object {
 object AppToolbarButtonView {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
+    close: () => scala.Unit,
     destroyed: scala.Boolean,
-    on_destroy: js.Function2[inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit], scala.Unit],
-    open: js.Function0[scala.Unit],
-    remove: js.Function0[scala.Unit]
+    on_destroy: (inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit]) => scala.Unit,
+    open: () => scala.Unit,
+    remove: () => scala.Unit
   ): AppToolbarButtonView = {
-    val __obj = js.Dynamic.literal(close = close, destroyed = destroyed, open = open, remove = remove)
-    __obj.updateDynamic("on")(on_destroy)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroyed = destroyed, open = js.Any.fromFunction0(open), remove = js.Any.fromFunction0(remove))
+    __obj.updateDynamic("on")(js.Any.fromFunction2(on_destroy))
     __obj.asInstanceOf[AppToolbarButtonView]
   }
 }

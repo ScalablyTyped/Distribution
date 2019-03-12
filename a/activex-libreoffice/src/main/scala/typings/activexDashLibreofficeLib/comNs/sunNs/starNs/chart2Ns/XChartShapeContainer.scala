@@ -19,14 +19,14 @@ object XChartShapeContainer {
   @scala.inline
   def apply(
     Shape: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape,
-    acquire: js.Function0[scala.Unit],
-    addShape: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, scala.Unit],
-    getShape: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeShape: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, scala.Unit]
+    acquire: () => scala.Unit,
+    addShape: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape => scala.Unit,
+    getShape: () => activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeShape: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape => scala.Unit
   ): XChartShapeContainer = {
-    val __obj = js.Dynamic.literal(Shape = Shape, acquire = acquire, addShape = addShape, getShape = getShape, queryInterface = queryInterface, release = release, removeShape = removeShape)
+    val __obj = js.Dynamic.literal(Shape = Shape, acquire = js.Any.fromFunction0(acquire), addShape = js.Any.fromFunction1(addShape), getShape = js.Any.fromFunction0(getShape), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeShape = js.Any.fromFunction1(removeShape))
   
     __obj.asInstanceOf[XChartShapeContainer]
   }

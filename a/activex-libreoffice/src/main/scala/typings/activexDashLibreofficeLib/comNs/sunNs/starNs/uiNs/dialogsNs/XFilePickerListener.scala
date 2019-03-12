@@ -48,17 +48,17 @@ trait XFilePickerListener
 object XFilePickerListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    controlStateChanged: js.Function1[FilePickerEvent, scala.Unit],
-    dialogSizeChanged: js.Function0[scala.Unit],
-    directoryChanged: js.Function1[FilePickerEvent, scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    fileSelectionChanged: js.Function1[FilePickerEvent, scala.Unit],
-    helpRequested: js.Function1[FilePickerEvent, java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    controlStateChanged: FilePickerEvent => scala.Unit,
+    dialogSizeChanged: () => scala.Unit,
+    directoryChanged: FilePickerEvent => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    fileSelectionChanged: FilePickerEvent => scala.Unit,
+    helpRequested: FilePickerEvent => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XFilePickerListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, controlStateChanged = controlStateChanged, dialogSizeChanged = dialogSizeChanged, directoryChanged = directoryChanged, disposing = disposing, fileSelectionChanged = fileSelectionChanged, helpRequested = helpRequested, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), controlStateChanged = js.Any.fromFunction1(controlStateChanged), dialogSizeChanged = js.Any.fromFunction0(dialogSizeChanged), directoryChanged = js.Any.fromFunction1(directoryChanged), disposing = js.Any.fromFunction1(disposing), fileSelectionChanged = js.Any.fromFunction1(fileSelectionChanged), helpRequested = js.Any.fromFunction1(helpRequested), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XFilePickerListener]
   }

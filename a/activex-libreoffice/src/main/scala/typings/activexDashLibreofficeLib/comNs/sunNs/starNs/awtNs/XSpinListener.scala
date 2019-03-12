@@ -21,16 +21,16 @@ trait XSpinListener
 object XSpinListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    down: js.Function1[SpinEvent, scala.Unit],
-    first: js.Function1[SpinEvent, scala.Unit],
-    last: js.Function1[SpinEvent, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    up: js.Function1[SpinEvent, scala.Unit]
+    acquire: () => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    down: SpinEvent => scala.Unit,
+    first: SpinEvent => scala.Unit,
+    last: SpinEvent => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    up: SpinEvent => scala.Unit
   ): XSpinListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, down = down, first = first, last = last, queryInterface = queryInterface, release = release, up = up)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), down = js.Any.fromFunction1(down), first = js.Any.fromFunction1(first), last = js.Any.fromFunction1(last), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), up = js.Any.fromFunction1(up))
   
     __obj.asInstanceOf[XSpinListener]
   }

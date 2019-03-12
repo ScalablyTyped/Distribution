@@ -10,7 +10,7 @@ package object MailNs {
   type ListHeader = java.lang.String | nodemailerLib.Anon_Comment
   type PluginFunction = js.Function2[
     /* mail */ nodemailerLib.libMailerMailDashMessageMod.namespaced, 
-    /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+    /* callback */ js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
     scala.Unit
   ]
 }

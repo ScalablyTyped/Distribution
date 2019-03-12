@@ -13,12 +13,9 @@ trait MetricsResource extends js.Object {
 object MetricsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotAdsenseLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Metadata]
-    ]
+    list: gapiDotClientDotAdsenseLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Metadata]
   ): MetricsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[MetricsResource]
   }

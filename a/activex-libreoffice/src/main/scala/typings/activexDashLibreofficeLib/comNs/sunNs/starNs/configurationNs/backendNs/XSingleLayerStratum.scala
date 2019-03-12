@@ -42,13 +42,13 @@ trait XSingleLayerStratum
 object XSingleLayerStratum {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getLayer: js.Function2[java.lang.String, java.lang.String, XLayer],
-    getUpdatableLayer: js.Function1[java.lang.String, XUpdatableLayer],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getLayer: (java.lang.String, java.lang.String) => XLayer,
+    getUpdatableLayer: java.lang.String => XUpdatableLayer,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSingleLayerStratum = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getLayer = getLayer, getUpdatableLayer = getUpdatableLayer, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getLayer = js.Any.fromFunction2(getLayer), getUpdatableLayer = js.Any.fromFunction1(getUpdatableLayer), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSingleLayerStratum]
   }

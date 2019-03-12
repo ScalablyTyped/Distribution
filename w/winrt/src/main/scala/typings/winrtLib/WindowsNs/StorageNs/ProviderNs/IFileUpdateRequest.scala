@@ -18,11 +18,11 @@ object IFileUpdateRequest {
   def apply(
     contentId: java.lang.String,
     file: winrtLib.WindowsNs.StorageNs.StorageFile,
-    getDeferral: js.Function0[FileUpdateRequestDeferral],
+    getDeferral: () => FileUpdateRequestDeferral,
     status: FileUpdateStatus,
-    updateLocalFile: js.Function1[winrtLib.WindowsNs.StorageNs.IStorageFile, scala.Unit]
+    updateLocalFile: winrtLib.WindowsNs.StorageNs.IStorageFile => scala.Unit
   ): IFileUpdateRequest = {
-    val __obj = js.Dynamic.literal(contentId = contentId, file = file, getDeferral = getDeferral, status = status, updateLocalFile = updateLocalFile)
+    val __obj = js.Dynamic.literal(contentId = contentId, file = file, getDeferral = js.Any.fromFunction0(getDeferral), status = status, updateLocalFile = js.Any.fromFunction1(updateLocalFile))
   
     __obj.asInstanceOf[IFileUpdateRequest]
   }

@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
   */
 trait IMemberPickerOptions extends js.Object {
   /*callback function*/
-  var callback: angularLib.angularMod.Global.Function
+  var callback: js.Function
   /*should the tree pick one or multiple members before returning*/
   var multiPicker: scala.Boolean
 }
 
 object IMemberPickerOptions {
   @scala.inline
-  def apply(callback: angularLib.angularMod.Global.Function, multiPicker: scala.Boolean): IMemberPickerOptions = {
+  def apply(callback: js.Function, multiPicker: scala.Boolean): IMemberPickerOptions = {
     val __obj = js.Dynamic.literal(callback = callback, multiPicker = multiPicker)
   
     __obj.asInstanceOf[IMemberPickerOptions]

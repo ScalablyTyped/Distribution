@@ -35,13 +35,13 @@ trait XFormulaQuery
 object XFormulaQuery {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryDependents: js.Function1[scala.Boolean, XSheetCellRanges],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    queryPrecedents: js.Function1[scala.Boolean, XSheetCellRanges],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    queryDependents: scala.Boolean => XSheetCellRanges,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    queryPrecedents: scala.Boolean => XSheetCellRanges,
+    release: () => scala.Unit
   ): XFormulaQuery = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryDependents = queryDependents, queryInterface = queryInterface, queryPrecedents = queryPrecedents, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryDependents = js.Any.fromFunction1(queryDependents), queryInterface = js.Any.fromFunction1(queryInterface), queryPrecedents = js.Any.fromFunction1(queryPrecedents), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XFormulaQuery]
   }

@@ -31,7 +31,7 @@ object Anon_Data {
     data: java.lang.String = null,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     method: java.lang.String = null,
-    onreadystatechange: js.Function1[/* ev */ stdLib.ProgressEvent, _] = null,
+    onreadystatechange: /* ev */ stdLib.ProgressEvent => _ = null,
     readyState: scala.Int | scala.Double = null,
     response: js.Any = null,
     responseBody: js.Any = null,
@@ -49,7 +49,7 @@ object Anon_Data {
     if (data != null) __obj.updateDynamic("data")(data)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (method != null) __obj.updateDynamic("method")(method)
-    if (onreadystatechange != null) __obj.updateDynamic("onreadystatechange")(onreadystatechange)
+    if (onreadystatechange != null) __obj.updateDynamic("onreadystatechange")(js.Any.fromFunction1(onreadystatechange))
     if (readyState != null) __obj.updateDynamic("readyState")(readyState.asInstanceOf[js.Any])
     if (response != null) __obj.updateDynamic("response")(response)
     if (responseBody != null) __obj.updateDynamic("responseBody")(responseBody)

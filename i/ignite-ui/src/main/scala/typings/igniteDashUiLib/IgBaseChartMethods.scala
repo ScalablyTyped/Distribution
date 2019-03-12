@@ -103,23 +103,23 @@ trait IgBaseChartMethods extends js.Object {
 object IgBaseChartMethods {
   @scala.inline
   def apply(
-    addItem: js.Function1[js.Object, js.Object],
-    chart: js.Function0[js.Object],
-    dataBind: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    findIndexOfItem: js.Function1[js.Object, scala.Double],
-    flush: js.Function0[scala.Unit],
-    getData: js.Function0[js.Array[_]],
-    getDataItem: js.Function1[js.Object, js.Object],
-    insertItem: js.Function2[js.Object, scala.Double, js.Object],
-    notifyClearItems: js.Function1[js.Object, js.Object],
-    notifyInsertItem: js.Function3[js.Object, scala.Double, js.Object, js.Object],
-    notifyRemoveItem: js.Function3[js.Object, scala.Double, js.Object, js.Object],
-    notifySetItem: js.Function4[js.Object, scala.Double, js.Object, js.Object, js.Object],
-    removeItem: js.Function1[scala.Double, js.Object],
-    setItem: js.Function2[scala.Double, js.Object, js.Object]
+    addItem: js.Object => js.Object,
+    chart: () => js.Object,
+    dataBind: () => scala.Unit,
+    destroy: () => scala.Unit,
+    findIndexOfItem: js.Object => scala.Double,
+    flush: () => scala.Unit,
+    getData: () => js.Array[_],
+    getDataItem: js.Object => js.Object,
+    insertItem: (js.Object, scala.Double) => js.Object,
+    notifyClearItems: js.Object => js.Object,
+    notifyInsertItem: (js.Object, scala.Double, js.Object) => js.Object,
+    notifyRemoveItem: (js.Object, scala.Double, js.Object) => js.Object,
+    notifySetItem: (js.Object, scala.Double, js.Object, js.Object) => js.Object,
+    removeItem: scala.Double => js.Object,
+    setItem: (scala.Double, js.Object) => js.Object
   ): IgBaseChartMethods = {
-    val __obj = js.Dynamic.literal(addItem = addItem, chart = chart, dataBind = dataBind, destroy = destroy, findIndexOfItem = findIndexOfItem, flush = flush, getData = getData, getDataItem = getDataItem, insertItem = insertItem, notifyClearItems = notifyClearItems, notifyInsertItem = notifyInsertItem, notifyRemoveItem = notifyRemoveItem, notifySetItem = notifySetItem, removeItem = removeItem, setItem = setItem)
+    val __obj = js.Dynamic.literal(addItem = js.Any.fromFunction1(addItem), chart = js.Any.fromFunction0(chart), dataBind = js.Any.fromFunction0(dataBind), destroy = js.Any.fromFunction0(destroy), findIndexOfItem = js.Any.fromFunction1(findIndexOfItem), flush = js.Any.fromFunction0(flush), getData = js.Any.fromFunction0(getData), getDataItem = js.Any.fromFunction1(getDataItem), insertItem = js.Any.fromFunction2(insertItem), notifyClearItems = js.Any.fromFunction1(notifyClearItems), notifyInsertItem = js.Any.fromFunction3(notifyInsertItem), notifyRemoveItem = js.Any.fromFunction3(notifyRemoveItem), notifySetItem = js.Any.fromFunction4(notifySetItem), removeItem = js.Any.fromFunction1(removeItem), setItem = js.Any.fromFunction2(setItem))
   
     __obj.asInstanceOf[IgBaseChartMethods]
   }

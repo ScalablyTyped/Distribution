@@ -13,10 +13,10 @@ trait RegistrationResult extends js.Object {
 object RegistrationResult {
   @scala.inline
   def apply(
-    parse: js.Function1[js.Object, js.Object | js.Array[js.Object]],
-    serialize: js.Function3[java.lang.String, js.Object, js.Array[java.lang.String], java.lang.String]
+    parse: js.Object => js.Object | js.Array[js.Object],
+    serialize: (java.lang.String, js.Object, js.Array[java.lang.String]) => java.lang.String
   ): RegistrationResult = {
-    val __obj = js.Dynamic.literal(parse = parse, serialize = serialize)
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), serialize = js.Any.fromFunction3(serialize))
   
     __obj.asInstanceOf[RegistrationResult]
   }

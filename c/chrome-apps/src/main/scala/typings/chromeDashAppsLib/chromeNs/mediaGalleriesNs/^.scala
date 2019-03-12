@@ -12,34 +12,18 @@ object ^ extends js.Object {
     * Fired when a media gallery is changed or a gallery watch is dropped
     * @since Chrome 38.
     */
-  val onGalleryChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[
-      /* args */ chromeDashAppsLib.chromeNs.mediaGalleriesNs.GalleryChangedEventArgs, 
-      scala.Unit
-    ]
-  ] = js.native
+  val onGalleryChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* args */ GalleryChangedEventArgs, scala.Unit]] = js.native
   /**
     * @deprecated Deprecated since Chrome 51. The mediaGalleries API no longer supports scanning.
     * The pending media scan has changed state. See details for more information.
     */
-  val onScanProgress: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[
-      /* args */ chromeDashAppsLib.chromeNs.mediaGalleriesNs.ScanProgressEventArgs, 
-      scala.Unit
-    ]
-  ] = js.native
+  val onScanProgress: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* args */ ScanProgressEventArgs, scala.Unit]] = js.native
   /**
     * Adds a gallery watch for the gallery with the specified gallery ID.
     * The given callback is then fired with a success or failure result.
     * @since Chrome 39.
     */
-  def addGalleryWatch(
-    galleryId: java.lang.String,
-    callback: js.Function1[
-      /* result */ chromeDashAppsLib.chromeNs.mediaGalleriesNs.GalleryWatchResult, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def addGalleryWatch(galleryId: java.lang.String, callback: js.Function1[/* result */ GalleryWatchResult, scala.Unit]): scala.Unit = js.native
   /**
     * @deprecated Deprecated since Chrome 51. The mediaGalleries API no longer supports scanning.
     * @description
@@ -84,17 +68,12 @@ object ^ extends js.Object {
     * @deprecated Deprecated since Chrome 51. Use getMediaFileSystemMetadata instead
     * Get metadata for all available media galleries.
     */
-  def getAllMediaFileSystemMetadata(
-    callback: js.Function1[
-      /* metadatas */ js.Array[chromeDashAppsLib.chromeNs.mediaGalleriesNs.MediaFileSystemMetadata], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def getAllMediaFileSystemMetadata(callback: js.Function1[/* metadatas */ js.Array[MediaFileSystemMetadata], scala.Unit]): scala.Unit = js.native
   /**
     * Get metadata about a specific media file system
     * @since Chrome 26.
     */
-  def getMediaFileSystemMetadata(mediaFileSystem: filesystemLib.FileSystem): chromeDashAppsLib.chromeNs.mediaGalleriesNs.MediaFileSystemMetadata = js.native
+  def getMediaFileSystemMetadata(mediaFileSystem: filesystemLib.FileSystem): MediaFileSystemMetadata = js.native
   /**
     * Get the media galleries configured in this user agent.
     * If none are configured or available, the callback will receive an empty array.
@@ -105,7 +84,7 @@ object ^ extends js.Object {
     * If none are configured or available, the callback will receive an empty array.
     */
   def getMediaFileSystems(
-    options: chromeDashAppsLib.chromeNs.mediaGalleriesNs.MediaFileSystemsOptions,
+    options: MediaFileSystemsOptions,
     callback: js.Function1[/* mediaFileSystems */ js.Array[filesystemLib.FileSystem], scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -113,10 +92,7 @@ object ^ extends js.Object {
     * This should work for files in media galleries as well as other DOM filesystems.
     * @since Chrome 38.
     */
-  def getMetadata(
-    mediaFile: stdLib.Blob,
-    callback: js.Function1[/* metadata */ chromeDashAppsLib.chromeNs.mediaGalleriesNs.Metadata, scala.Unit]
-  ): scala.Unit = js.native
+  def getMetadata(mediaFile: stdLib.Blob, callback: js.Function1[/* metadata */ Metadata, scala.Unit]): scala.Unit = js.native
   /**
     * Gets the media-specific metadata for a media file.
     * This should work for files in media galleries as well as other DOM filesystems.
@@ -124,8 +100,8 @@ object ^ extends js.Object {
     */
   def getMetadata(
     mediaFile: stdLib.Blob,
-    options: chromeDashAppsLib.chromeNs.mediaGalleriesNs.MetadataOptions,
-    callback: js.Function1[/* metadata */ chromeDashAppsLib.chromeNs.mediaGalleriesNs.Metadata, scala.Unit]
+    options: MetadataOptions,
+    callback: js.Function1[/* metadata */ Metadata, scala.Unit]
   ): scala.Unit = js.native
   /**
     * @deprecated Deprecated since Chrome 51. Use removeGalleryWatch instead.

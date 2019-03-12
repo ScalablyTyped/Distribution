@@ -26,15 +26,10 @@ object AdvancedEncryptionSchemePKCS1OAEP {
   def apply(
     hash: HashingAlgorithm,
     scheme: nodeDashRsaLib.nodeDashRsaLibStrings.pkcs1_oaep,
-    mgf: js.Function3[
-      /* data */ nodeLib.Buffer, 
-      /* length */ scala.Double, 
-      /* hash */ HashingAlgorithm, 
-      nodeLib.Buffer
-    ] = null
+    mgf: (/* data */ nodeLib.Buffer, /* length */ scala.Double, /* hash */ HashingAlgorithm) => nodeLib.Buffer = null
   ): AdvancedEncryptionSchemePKCS1OAEP = {
     val __obj = js.Dynamic.literal(hash = hash, scheme = scheme)
-    if (mgf != null) __obj.updateDynamic("mgf")(mgf)
+    if (mgf != null) __obj.updateDynamic("mgf")(js.Any.fromFunction3(mgf))
     __obj.asInstanceOf[AdvancedEncryptionSchemePKCS1OAEP]
   }
 }

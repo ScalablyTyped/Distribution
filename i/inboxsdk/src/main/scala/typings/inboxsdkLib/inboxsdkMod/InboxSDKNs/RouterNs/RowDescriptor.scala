@@ -28,14 +28,14 @@ object RowDescriptor {
     title: java.lang.String,
     iconClass: java.lang.String = null,
     iconUrl: java.lang.String = null,
-    onClick: js.Function0[scala.Unit] = null,
+    onClick: () => scala.Unit = null,
     routeID: java.lang.String = null,
     routeParams: js.Array[java.lang.String] = null
   ): RowDescriptor = {
     val __obj = js.Dynamic.literal(body = body, isRead = isRead, labels = labels, shortDetailText = shortDetailText, title = title)
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
     if (routeID != null) __obj.updateDynamic("routeID")(routeID)
     if (routeParams != null) __obj.updateDynamic("routeParams")(routeParams)
     __obj.asInstanceOf[RowDescriptor]

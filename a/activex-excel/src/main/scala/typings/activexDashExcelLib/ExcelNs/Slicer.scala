@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Slicer protected () extends js.Object {
   val ActiveItem: SlicerItem = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var Caption: java.lang.String = js.native
   var ColumnWidth: scala.Double = js.native
   val Creator: XlCreator = js.native
@@ -23,9 +23,9 @@ class Slicer protected () extends js.Object {
   var NumberOfColumns: scala.Double = js.native
   val Parent: js.Any = js.native
   var RowHeight: scala.Double = js.native
-  val Shape: Shape = js.native
-  val SlicerCache: SlicerCache = js.native
-  val SlicerCacheLevel: SlicerCacheLevel = js.native
+  val Shape: activexDashExcelLib.ExcelNs.Shape = js.native
+  val SlicerCache: activexDashExcelLib.ExcelNs.SlicerCache = js.native
+  val SlicerCacheLevel: activexDashExcelLib.ExcelNs.SlicerCacheLevel = js.native
   var Style: js.Any = js.native
   var Top: scala.Double = js.native
   var Width: scala.Double = js.native

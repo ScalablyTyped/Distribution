@@ -14,9 +14,9 @@ object Anon_Map {
   @scala.inline
   def apply(
     map: istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageMap,
-    sourceFinder: js.Function1[java.lang.String, java.lang.String]
+    sourceFinder: java.lang.String => java.lang.String
   ): Anon_Map = {
-    val __obj = js.Dynamic.literal(map = map, sourceFinder = sourceFinder)
+    val __obj = js.Dynamic.literal(map = map, sourceFinder = js.Any.fromFunction1(sourceFinder))
   
     __obj.asInstanceOf[Anon_Map]
   }

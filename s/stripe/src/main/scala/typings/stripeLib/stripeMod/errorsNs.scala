@@ -17,7 +17,9 @@ object errorsNs extends js.Object {
     /* CompleteClass */
     override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
     /* CompleteClass */
-    override val message: java.lang.String = js.native
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
     /* CompleteClass */
     override val raw: js.Any = js.native
     /* CompleteClass */
@@ -39,7 +41,9 @@ object errorsNs extends js.Object {
     /* CompleteClass */
     override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
     /* CompleteClass */
-    override val message: java.lang.String = js.native
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
     /* CompleteClass */
     override val raw: js.Any = js.native
     /* CompleteClass */
@@ -61,7 +65,9 @@ object errorsNs extends js.Object {
     /* CompleteClass */
     override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
     /* CompleteClass */
-    override val message: java.lang.String = js.native
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
     /* CompleteClass */
     override val raw: js.Any = js.native
     /* CompleteClass */
@@ -83,7 +89,9 @@ object errorsNs extends js.Object {
     /* CompleteClass */
     override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
     /* CompleteClass */
-    override val message: java.lang.String = js.native
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
     /* CompleteClass */
     override val raw: js.Any = js.native
     /* CompleteClass */
@@ -105,7 +113,9 @@ object errorsNs extends js.Object {
     /* CompleteClass */
     override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
     /* CompleteClass */
-    override val message: java.lang.String = js.native
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
     /* CompleteClass */
     override val raw: js.Any = js.native
     /* CompleteClass */
@@ -124,7 +134,9 @@ object errorsNs extends js.Object {
     /* CompleteClass */
     override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
     /* CompleteClass */
-    override val message: java.lang.String = js.native
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
     /* CompleteClass */
     override val raw: js.Any = js.native
     /* CompleteClass */
@@ -146,7 +158,9 @@ object errorsNs extends js.Object {
     /* CompleteClass */
     override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
     /* CompleteClass */
-    override val message: java.lang.String = js.native
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
     /* CompleteClass */
     override val raw: js.Any = js.native
     /* CompleteClass */
@@ -168,7 +182,9 @@ object errorsNs extends js.Object {
     /* CompleteClass */
     override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
     /* CompleteClass */
-    override val message: java.lang.String = js.native
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
     /* CompleteClass */
     override val raw: js.Any = js.native
     /* CompleteClass */
@@ -190,7 +206,9 @@ object errorsNs extends js.Object {
     /* CompleteClass */
     override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
     /* CompleteClass */
-    override val message: java.lang.String = js.native
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
     /* CompleteClass */
     override val raw: js.Any = js.native
     /* CompleteClass */
@@ -212,7 +230,9 @@ object errorsNs extends js.Object {
     /* CompleteClass */
     override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
     /* CompleteClass */
-    override val message: java.lang.String = js.native
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
     /* CompleteClass */
     override val raw: js.Any = js.native
     /* CompleteClass */
@@ -232,7 +252,9 @@ object errorsNs extends js.Object {
   class _Error ()
     extends stripeLib.stripeMod.StripeNs.errorsNs._Error {
     /* CompleteClass */
-    override val message: java.lang.String = js.native
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
   }
   
   /* static members */

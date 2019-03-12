@@ -29,16 +29,12 @@ object ^ extends js.Object {
     *      *Since Chrome 71. Warning: this is the current Dev channel.*
     * @param [callback]
     */
-  def setImageData(imageData: stdLib.ArrayBuffer, `type`: chromeDashAppsLib.chromeNs.clipboardNs.ImageType): scala.Unit = js.native
+  def setImageData(imageData: stdLib.ArrayBuffer, `type`: ImageType): scala.Unit = js.native
+  def setImageData(imageData: stdLib.ArrayBuffer, `type`: ImageType, additionalItems: AdditionalItems): scala.Unit = js.native
   def setImageData(
     imageData: stdLib.ArrayBuffer,
-    `type`: chromeDashAppsLib.chromeNs.clipboardNs.ImageType,
-    additionalItems: chromeDashAppsLib.chromeNs.clipboardNs.AdditionalItems
-  ): scala.Unit = js.native
-  def setImageData(
-    imageData: stdLib.ArrayBuffer,
-    `type`: chromeDashAppsLib.chromeNs.clipboardNs.ImageType,
-    additionalItems: chromeDashAppsLib.chromeNs.clipboardNs.AdditionalItems,
+    `type`: ImageType,
+    additionalItems: AdditionalItems,
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
 }

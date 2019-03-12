@@ -22,6 +22,6 @@ object ^ extends js.Object {
     * Register a user script programmatically given its `userScripts.UserScriptOptions`, and resolves to a
     * `userScripts.RegisteredUserScript` instance
     */
-  def register(userScriptOptions: firefoxDashWebextDashBrowserLib.browserNs.userScriptsNs.UserScriptOptions): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.userScriptsNs.RegisteredUserScript] = js.native
+  def register(userScriptOptions: UserScriptOptions): js.Promise[RegisteredUserScript] = js.native
 }
 

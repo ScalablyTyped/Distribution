@@ -31,13 +31,13 @@ object FeatureLayerApplyEditsEdits {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     addFeatures: js.Array[Graphic] = null,
     deleteFeatures: js.Array[Graphic] | js.Array[_] = null,
     updateFeatures: js.Array[Graphic] = null
   ): FeatureLayerApplyEditsEdits = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (addFeatures != null) __obj.updateDynamic("addFeatures")(addFeatures)
     if (deleteFeatures != null) __obj.updateDynamic("deleteFeatures")(deleteFeatures.asInstanceOf[js.Any])
     if (updateFeatures != null) __obj.updateDynamic("updateFeatures")(updateFeatures)

@@ -56,10 +56,10 @@ object JWTExpressOptions {
     cookies: js.UndefOr[scala.Boolean] = js.undefined,
     refresh: js.UndefOr[scala.Boolean] = js.undefined,
     reqProperty: java.lang.String = null,
-    revoke: js.Function1[/* jwt */ JWT, scala.Unit] = null,
+    revoke: /* jwt */ JWT => scala.Unit = null,
     signOptions: jsonwebtokenLib.jsonwebtokenMod.SignOptions = null,
     stales: scala.Int | scala.Double = null,
-    verify: js.Function1[/* jwt */ JWT, scala.Boolean] = null,
+    verify: /* jwt */ JWT => scala.Boolean = null,
     verifyOptions: jsonwebtokenLib.jsonwebtokenMod.VerifyOptions = null
   ): JWTExpressOptions = {
     val __obj = js.Dynamic.literal()
@@ -68,10 +68,10 @@ object JWTExpressOptions {
     if (!js.isUndefined(cookies)) __obj.updateDynamic("cookies")(cookies)
     if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh)
     if (reqProperty != null) __obj.updateDynamic("reqProperty")(reqProperty)
-    if (revoke != null) __obj.updateDynamic("revoke")(revoke)
+    if (revoke != null) __obj.updateDynamic("revoke")(js.Any.fromFunction1(revoke))
     if (signOptions != null) __obj.updateDynamic("signOptions")(signOptions)
     if (stales != null) __obj.updateDynamic("stales")(stales.asInstanceOf[js.Any])
-    if (verify != null) __obj.updateDynamic("verify")(verify)
+    if (verify != null) __obj.updateDynamic("verify")(js.Any.fromFunction1(verify))
     if (verifyOptions != null) __obj.updateDynamic("verifyOptions")(verifyOptions)
     __obj.asInstanceOf[JWTExpressOptions]
   }

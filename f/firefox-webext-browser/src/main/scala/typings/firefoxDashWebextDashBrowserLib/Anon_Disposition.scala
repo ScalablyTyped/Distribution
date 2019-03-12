@@ -67,12 +67,9 @@ object Anon_Disposition {
       ]
     ],
     onInputStarted: WebExtEvent[js.Function0[scala.Unit]],
-    setDefaultSuggestion: js.Function1[
-      firefoxDashWebextDashBrowserLib.browserNs.omniboxNs.DefaultSuggestResult, 
-      scala.Unit
-    ]
+    setDefaultSuggestion: firefoxDashWebextDashBrowserLib.browserNs.omniboxNs.DefaultSuggestResult => scala.Unit
   ): Anon_Disposition = {
-    val __obj = js.Dynamic.literal(onInputCancelled = onInputCancelled, onInputChanged = onInputChanged, onInputEntered = onInputEntered, onInputStarted = onInputStarted, setDefaultSuggestion = setDefaultSuggestion)
+    val __obj = js.Dynamic.literal(onInputCancelled = onInputCancelled, onInputChanged = onInputChanged, onInputEntered = onInputEntered, onInputStarted = onInputStarted, setDefaultSuggestion = js.Any.fromFunction1(setDefaultSuggestion))
   
     __obj.asInstanceOf[Anon_Disposition]
   }

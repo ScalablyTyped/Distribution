@@ -17,43 +17,31 @@ trait XPasswordContainer2
 object XPasswordContainer2 {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    add: js.Function4[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      XInteractionHandler, 
-      scala.Unit
-    ],
-    addPersistent: js.Function4[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      XInteractionHandler, 
-      scala.Unit
-    ],
-    addUrl: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
-    allowPersistentStoring: js.Function1[scala.Boolean, scala.Boolean],
-    authorizateWithMasterPassword: js.Function1[XInteractionHandler, scala.Boolean],
-    changeMasterPassword: js.Function1[XInteractionHandler, scala.Boolean],
-    find: js.Function2[java.lang.String, XInteractionHandler, UrlRecord],
-    findForName: js.Function3[java.lang.String, java.lang.String, XInteractionHandler, UrlRecord],
-    findUrl: js.Function1[java.lang.String, java.lang.String],
-    getAllPersistent: js.Function1[XInteractionHandler, activexDashInteropLib.SafeArray[UrlRecord]],
-    getUrls: js.Function1[scala.Boolean, activexDashInteropLib.SafeArray[java.lang.String]],
-    hasMasterPassword: js.Function0[scala.Boolean],
-    isDefaultMasterPasswordUsed: js.Function0[scala.Boolean],
-    isPersistentStoringAllowed: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    remove: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    removeAllPersistent: js.Function0[scala.Unit],
-    removeMasterPassword: js.Function0[scala.Unit],
-    removePersistent: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    removeUrl: js.Function1[java.lang.String, scala.Unit],
-    useDefaultMasterPassword: js.Function1[XInteractionHandler, scala.Boolean]
+    acquire: () => scala.Unit,
+    add: (java.lang.String, java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], XInteractionHandler) => scala.Unit,
+    addPersistent: (java.lang.String, java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], XInteractionHandler) => scala.Unit,
+    addUrl: (java.lang.String, scala.Boolean) => scala.Unit,
+    allowPersistentStoring: scala.Boolean => scala.Boolean,
+    authorizateWithMasterPassword: XInteractionHandler => scala.Boolean,
+    changeMasterPassword: XInteractionHandler => scala.Boolean,
+    find: (java.lang.String, XInteractionHandler) => UrlRecord,
+    findForName: (java.lang.String, java.lang.String, XInteractionHandler) => UrlRecord,
+    findUrl: java.lang.String => java.lang.String,
+    getAllPersistent: XInteractionHandler => stdLib.SafeArray[UrlRecord],
+    getUrls: scala.Boolean => stdLib.SafeArray[java.lang.String],
+    hasMasterPassword: () => scala.Boolean,
+    isDefaultMasterPasswordUsed: () => scala.Boolean,
+    isPersistentStoringAllowed: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    remove: (java.lang.String, java.lang.String) => scala.Unit,
+    removeAllPersistent: () => scala.Unit,
+    removeMasterPassword: () => scala.Unit,
+    removePersistent: (java.lang.String, java.lang.String) => scala.Unit,
+    removeUrl: java.lang.String => scala.Unit,
+    useDefaultMasterPassword: XInteractionHandler => scala.Boolean
   ): XPasswordContainer2 = {
-    val __obj = js.Dynamic.literal(acquire = acquire, add = add, addPersistent = addPersistent, addUrl = addUrl, allowPersistentStoring = allowPersistentStoring, authorizateWithMasterPassword = authorizateWithMasterPassword, changeMasterPassword = changeMasterPassword, find = find, findForName = findForName, findUrl = findUrl, getAllPersistent = getAllPersistent, getUrls = getUrls, hasMasterPassword = hasMasterPassword, isDefaultMasterPasswordUsed = isDefaultMasterPasswordUsed, isPersistentStoringAllowed = isPersistentStoringAllowed, queryInterface = queryInterface, release = release, remove = remove, removeAllPersistent = removeAllPersistent, removeMasterPassword = removeMasterPassword, removePersistent = removePersistent, removeUrl = removeUrl, useDefaultMasterPassword = useDefaultMasterPassword)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), add = js.Any.fromFunction4(add), addPersistent = js.Any.fromFunction4(addPersistent), addUrl = js.Any.fromFunction2(addUrl), allowPersistentStoring = js.Any.fromFunction1(allowPersistentStoring), authorizateWithMasterPassword = js.Any.fromFunction1(authorizateWithMasterPassword), changeMasterPassword = js.Any.fromFunction1(changeMasterPassword), find = js.Any.fromFunction2(find), findForName = js.Any.fromFunction3(findForName), findUrl = js.Any.fromFunction1(findUrl), getAllPersistent = js.Any.fromFunction1(getAllPersistent), getUrls = js.Any.fromFunction1(getUrls), hasMasterPassword = js.Any.fromFunction0(hasMasterPassword), isDefaultMasterPasswordUsed = js.Any.fromFunction0(isDefaultMasterPasswordUsed), isPersistentStoringAllowed = js.Any.fromFunction0(isPersistentStoringAllowed), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), remove = js.Any.fromFunction2(remove), removeAllPersistent = js.Any.fromFunction0(removeAllPersistent), removeMasterPassword = js.Any.fromFunction0(removeMasterPassword), removePersistent = js.Any.fromFunction2(removePersistent), removeUrl = js.Any.fromFunction1(removeUrl), useDefaultMasterPassword = js.Any.fromFunction1(useDefaultMasterPassword))
   
     __obj.asInstanceOf[XPasswordContainer2]
   }

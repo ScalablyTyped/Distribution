@@ -11,8 +11,8 @@ trait Constraint extends Updatable {
 
 object Constraint {
   @scala.inline
-  def apply(getOrder: js.Function0[scala.Double], update: js.Function0[scala.Unit]): Constraint = {
-    val __obj = js.Dynamic.literal(getOrder = getOrder, update = update)
+  def apply(getOrder: () => scala.Double, update: () => scala.Unit): Constraint = {
+    val __obj = js.Dynamic.literal(getOrder = js.Any.fromFunction0(getOrder), update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[Constraint]
   }

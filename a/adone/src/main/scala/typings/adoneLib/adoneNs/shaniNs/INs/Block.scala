@@ -20,19 +20,19 @@ class Block protected () extends js.Object {
   /**
     * After each hooks iterator
     */
-  def afterEachHooks(): nodeLib.IterableIterator[Hook] = js.native
+  def afterEachHooks(): stdLib.IterableIterator[Hook] = js.native
   /**
     * After hooks iterator
     */
-  def afterHooks(): nodeLib.IterableIterator[Hook] = js.native
+  def afterHooks(): stdLib.IterableIterator[Hook] = js.native
   /**
     * Before each hooks iterator
     */
-  def beforeEachHooks(): nodeLib.IterableIterator[Hook] = js.native
+  def beforeEachHooks(): stdLib.IterableIterator[Hook] = js.native
   /**
     * Before hooks iterator
     */
-  def beforeHooks(): nodeLib.IterableIterator[Hook] = js.native
+  def beforeHooks(): stdLib.IterableIterator[Hook] = js.native
   /**
     * Returns a chain of blocks from the root to this block
     */

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def compareTwoStrings(string1: java.lang.String, string2: java.lang.String): scala.Double = js.native
-  def findBestMatch(mainString: java.lang.String, targetStrings: js.Array[java.lang.String]): stringDashSimilarityLib.stringDashSimilarityMod.BestMatch = js.native
+  def findBestMatch(mainString: java.lang.String, targetStrings: js.Array[java.lang.String]): BestMatch = js.native
 }
 

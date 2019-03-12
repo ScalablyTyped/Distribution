@@ -8,20 +8,16 @@ import scala.scalajs.js.annotation._
 trait GoogleOAuth2Client extends js.Object {
   def getRequestMetadata(
     optUri: java.lang.String,
-    metadataCallback: js.Function2[/* err */ nodeLib.Error, /* headers */ js.Any, scala.Unit]
+    metadataCallback: js.Function2[/* err */ stdLib.Error, /* headers */ js.Any, scala.Unit]
   ): scala.Unit
 }
 
 object GoogleOAuth2Client {
   @scala.inline
   def apply(
-    getRequestMetadata: js.Function2[
-      java.lang.String, 
-      js.Function2[/* err */ nodeLib.Error, /* headers */ js.Any, scala.Unit], 
-      scala.Unit
-    ]
+    getRequestMetadata: (java.lang.String, js.Function2[/* err */ stdLib.Error, /* headers */ js.Any, scala.Unit]) => scala.Unit
   ): GoogleOAuth2Client = {
-    val __obj = js.Dynamic.literal(getRequestMetadata = getRequestMetadata)
+    val __obj = js.Dynamic.literal(getRequestMetadata = js.Any.fromFunction2(getRequestMetadata))
   
     __obj.asInstanceOf[GoogleOAuth2Client]
   }

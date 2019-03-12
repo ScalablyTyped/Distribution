@@ -29,18 +29,14 @@ object TabBarTopProps {
   def apply(
     activeTintColor: java.lang.String,
     allowFontScaling: scala.Boolean,
-    getLabel: js.Function1[TabScene, reactLib.reactMod.ReactNs.ReactNode | java.lang.String],
-    getOnPress: js.Function2[
-      NavigationRoute[NavigationParams], 
-      TabScene, 
-      js.Function1[/* args */ reactDashNavigationLib.Anon_IndexJumpToIndex, scala.Unit]
-    ],
+    getLabel: TabScene => reactLib.reactMod.ReactNs.ReactNode | java.lang.String,
+    getOnPress: (NavigationRoute[NavigationParams], TabScene) => js.Function1[/* args */ reactDashNavigationLib.Anon_IndexJumpToIndex, scala.Unit],
     inactiveTintColor: java.lang.String,
     indicatorStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle],
-    jumpToIndex: js.Function1[scala.Double, scala.Unit],
+    jumpToIndex: scala.Double => scala.Unit,
     navigation: NavigationScreenProp[NavigationState, NavigationParams],
     position: AnimatedValue,
-    renderIcon: js.Function1[TabScene, reactLib.reactMod.ReactNs.ReactElement[_]],
+    renderIcon: TabScene => reactLib.reactMod.ReactNs.ReactElement[_],
     showIcon: scala.Boolean,
     showLabel: scala.Boolean,
     tabBarPosition: java.lang.String,
@@ -48,7 +44,7 @@ object TabBarTopProps {
     iconStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
     labelStyle: reactDashNativeLib.reactDashNativeMod.TextStyle = null
   ): TabBarTopProps = {
-    val __obj = js.Dynamic.literal(activeTintColor = activeTintColor, allowFontScaling = allowFontScaling, getLabel = getLabel, getOnPress = getOnPress, inactiveTintColor = inactiveTintColor, indicatorStyle = indicatorStyle.asInstanceOf[js.Any], jumpToIndex = jumpToIndex, navigation = navigation, position = position, renderIcon = renderIcon, showIcon = showIcon, showLabel = showLabel, tabBarPosition = tabBarPosition, upperCaseLabel = upperCaseLabel)
+    val __obj = js.Dynamic.literal(activeTintColor = activeTintColor, allowFontScaling = allowFontScaling, getLabel = js.Any.fromFunction1(getLabel), getOnPress = js.Any.fromFunction2(getOnPress), inactiveTintColor = inactiveTintColor, indicatorStyle = indicatorStyle.asInstanceOf[js.Any], jumpToIndex = js.Any.fromFunction1(jumpToIndex), navigation = navigation, position = position, renderIcon = js.Any.fromFunction1(renderIcon), showIcon = showIcon, showLabel = showLabel, tabBarPosition = tabBarPosition, upperCaseLabel = upperCaseLabel)
     if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle)
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
     __obj.asInstanceOf[TabBarTopProps]

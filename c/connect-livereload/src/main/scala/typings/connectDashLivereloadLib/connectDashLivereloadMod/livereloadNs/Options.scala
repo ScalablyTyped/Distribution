@@ -23,7 +23,7 @@ object Options {
     disableCompression: js.UndefOr[scala.Boolean] = js.undefined,
     excludeList: js.Array[FileMatcher] = null,
     hostname: java.lang.String = null,
-    html: js.Function1[/* val */ java.lang.String, scala.Boolean] = null,
+    html: /* val */ java.lang.String => scala.Boolean = null,
     ignore: js.Array[FileMatcher] = null,
     include: js.Array[FileMatcher] = null,
     port: scala.Int | scala.Double = null,
@@ -34,7 +34,7 @@ object Options {
     if (!js.isUndefined(disableCompression)) __obj.updateDynamic("disableCompression")(disableCompression)
     if (excludeList != null) __obj.updateDynamic("excludeList")(excludeList)
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)
-    if (html != null) __obj.updateDynamic("html")(html)
+    if (html != null) __obj.updateDynamic("html")(js.Any.fromFunction1(html))
     if (ignore != null) __obj.updateDynamic("ignore")(ignore)
     if (include != null) __obj.updateDynamic("include")(include)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

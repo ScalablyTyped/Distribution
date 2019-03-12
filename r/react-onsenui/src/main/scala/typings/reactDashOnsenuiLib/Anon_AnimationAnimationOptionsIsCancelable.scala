@@ -32,12 +32,12 @@ object Anon_AnimationAnimationOptionsIsCancelable {
     isOpen: js.UndefOr[scala.Boolean] = js.undefined,
     maskColor: java.lang.String = null,
     modifier: java.lang.String = null,
-    onCancel: js.Function0[scala.Unit] = null,
-    onDeviceBackButton: js.Function0[scala.Unit] = null,
-    onPostHide: js.Function0[scala.Unit] = null,
-    onPostShow: js.Function0[scala.Unit] = null,
-    onPreHide: js.Function0[scala.Unit] = null,
-    onPreShow: js.Function0[scala.Unit] = null,
+    onCancel: () => scala.Unit = null,
+    onDeviceBackButton: () => scala.Unit = null,
+    onPostHide: () => scala.Unit = null,
+    onPostShow: () => scala.Unit = null,
+    onPreHide: () => scala.Unit = null,
+    onPreShow: () => scala.Unit = null,
     title: java.lang.String = null
   ): Anon_AnimationAnimationOptionsIsCancelable = {
     val __obj = js.Dynamic.literal()
@@ -48,12 +48,12 @@ object Anon_AnimationAnimationOptionsIsCancelable {
     if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
     if (maskColor != null) __obj.updateDynamic("maskColor")(maskColor)
     if (modifier != null) __obj.updateDynamic("modifier")(modifier)
-    if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel)
-    if (onDeviceBackButton != null) __obj.updateDynamic("onDeviceBackButton")(onDeviceBackButton)
-    if (onPostHide != null) __obj.updateDynamic("onPostHide")(onPostHide)
-    if (onPostShow != null) __obj.updateDynamic("onPostShow")(onPostShow)
-    if (onPreHide != null) __obj.updateDynamic("onPreHide")(onPreHide)
-    if (onPreShow != null) __obj.updateDynamic("onPreShow")(onPreShow)
+    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction0(onCancel))
+    if (onDeviceBackButton != null) __obj.updateDynamic("onDeviceBackButton")(js.Any.fromFunction0(onDeviceBackButton))
+    if (onPostHide != null) __obj.updateDynamic("onPostHide")(js.Any.fromFunction0(onPostHide))
+    if (onPostShow != null) __obj.updateDynamic("onPostShow")(js.Any.fromFunction0(onPostShow))
+    if (onPreHide != null) __obj.updateDynamic("onPreHide")(js.Any.fromFunction0(onPreHide))
+    if (onPreShow != null) __obj.updateDynamic("onPreShow")(js.Any.fromFunction0(onPreShow))
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[Anon_AnimationAnimationOptionsIsCancelable]
   }

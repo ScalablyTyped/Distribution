@@ -13,12 +13,9 @@ trait HostedmodelsResource extends js.Object {
 object HostedmodelsResource {
   @scala.inline
   def apply(
-    predict: js.Function1[
-      gapiDotClientDotPredictionLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Output]
-    ]
+    predict: gapiDotClientDotPredictionLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Output]
   ): HostedmodelsResource = {
-    val __obj = js.Dynamic.literal(predict = predict)
+    val __obj = js.Dynamic.literal(predict = js.Any.fromFunction1(predict))
   
     __obj.asInstanceOf[HostedmodelsResource]
   }

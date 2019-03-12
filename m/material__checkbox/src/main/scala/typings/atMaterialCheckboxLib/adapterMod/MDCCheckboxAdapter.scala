@@ -22,21 +22,19 @@ trait MDCCheckboxAdapter extends js.Object {
 object MDCCheckboxAdapter {
   @scala.inline
   def apply(
-    addClass: js.Function1[java.lang.String, scala.Unit],
-    deregisterAnimationEndHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    deregisterChangeHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    forceLayout: js.Function0[scala.Unit],
-    getNativeControl: js.Function0[
-      atMaterialSelectionDashControlLib.atMaterialSelectionDashControlMod.MDCSelectionControlState
-    ],
-    isAttachedToDOM: js.Function0[scala.Boolean],
-    registerAnimationEndHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    registerChangeHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    removeClass: js.Function1[java.lang.String, scala.Unit],
-    removeNativeControlAttr: js.Function1[java.lang.String, scala.Unit],
-    setNativeControlAttr: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    addClass: java.lang.String => scala.Unit,
+    deregisterAnimationEndHandler: stdLib.EventListener => scala.Unit,
+    deregisterChangeHandler: stdLib.EventListener => scala.Unit,
+    forceLayout: () => scala.Unit,
+    getNativeControl: () => atMaterialSelectionDashControlLib.atMaterialSelectionDashControlMod.MDCSelectionControlState,
+    isAttachedToDOM: () => scala.Boolean,
+    registerAnimationEndHandler: stdLib.EventListener => scala.Unit,
+    registerChangeHandler: stdLib.EventListener => scala.Unit,
+    removeClass: java.lang.String => scala.Unit,
+    removeNativeControlAttr: java.lang.String => scala.Unit,
+    setNativeControlAttr: (java.lang.String, java.lang.String) => scala.Unit
   ): MDCCheckboxAdapter = {
-    val __obj = js.Dynamic.literal(addClass = addClass, deregisterAnimationEndHandler = deregisterAnimationEndHandler, deregisterChangeHandler = deregisterChangeHandler, forceLayout = forceLayout, getNativeControl = getNativeControl, isAttachedToDOM = isAttachedToDOM, registerAnimationEndHandler = registerAnimationEndHandler, registerChangeHandler = registerChangeHandler, removeClass = removeClass, removeNativeControlAttr = removeNativeControlAttr, setNativeControlAttr = setNativeControlAttr)
+    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), deregisterAnimationEndHandler = js.Any.fromFunction1(deregisterAnimationEndHandler), deregisterChangeHandler = js.Any.fromFunction1(deregisterChangeHandler), forceLayout = js.Any.fromFunction0(forceLayout), getNativeControl = js.Any.fromFunction0(getNativeControl), isAttachedToDOM = js.Any.fromFunction0(isAttachedToDOM), registerAnimationEndHandler = js.Any.fromFunction1(registerAnimationEndHandler), registerChangeHandler = js.Any.fromFunction1(registerChangeHandler), removeClass = js.Any.fromFunction1(removeClass), removeNativeControlAttr = js.Any.fromFunction1(removeNativeControlAttr), setNativeControlAttr = js.Any.fromFunction2(setNativeControlAttr))
   
     __obj.asInstanceOf[MDCCheckboxAdapter]
   }

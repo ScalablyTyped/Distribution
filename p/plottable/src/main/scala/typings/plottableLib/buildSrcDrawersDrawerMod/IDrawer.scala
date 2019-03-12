@@ -31,16 +31,12 @@ trait IDrawer extends js.Object {
 object IDrawer {
   @scala.inline
   def apply(
-    draw: js.Function2[
-      js.Array[_], 
-      js.Array[plottableLib.buildSrcDrawersDrawStepMod.AppliedDrawStep], 
-      scala.Unit
-    ],
-    getVisualPrimitiveAtIndex: js.Function1[scala.Double, stdLib.Element],
-    getVisualPrimitives: js.Function0[js.Array[stdLib.Element]],
-    remove: js.Function0[scala.Unit]
+    draw: (js.Array[_], js.Array[plottableLib.buildSrcDrawersDrawStepMod.AppliedDrawStep]) => scala.Unit,
+    getVisualPrimitiveAtIndex: scala.Double => stdLib.Element,
+    getVisualPrimitives: () => js.Array[stdLib.Element],
+    remove: () => scala.Unit
   ): IDrawer = {
-    val __obj = js.Dynamic.literal(draw = draw, getVisualPrimitiveAtIndex = getVisualPrimitiveAtIndex, getVisualPrimitives = getVisualPrimitives, remove = remove)
+    val __obj = js.Dynamic.literal(draw = js.Any.fromFunction2(draw), getVisualPrimitiveAtIndex = js.Any.fromFunction1(getVisualPrimitiveAtIndex), getVisualPrimitives = js.Any.fromFunction0(getVisualPrimitives), remove = js.Any.fromFunction0(remove))
   
     __obj.asInstanceOf[IDrawer]
   }

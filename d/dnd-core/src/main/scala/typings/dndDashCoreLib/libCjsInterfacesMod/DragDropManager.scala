@@ -17,14 +17,14 @@ trait DragDropManager[Context] extends js.Object {
 object DragDropManager {
   @scala.inline
   def apply[Context](
-    dispatch: js.Function1[js.Any, scala.Unit],
-    getActions: js.Function0[DragDropActions],
-    getBackend: js.Function0[Backend],
-    getContext: js.Function0[Context],
-    getMonitor: js.Function0[DragDropMonitor],
-    getRegistry: js.Function0[HandlerRegistry]
+    dispatch: js.Any => scala.Unit,
+    getActions: () => DragDropActions,
+    getBackend: () => Backend,
+    getContext: () => Context,
+    getMonitor: () => DragDropMonitor,
+    getRegistry: () => HandlerRegistry
   ): DragDropManager[Context] = {
-    val __obj = js.Dynamic.literal(dispatch = dispatch, getActions = getActions, getBackend = getBackend, getContext = getContext, getMonitor = getMonitor, getRegistry = getRegistry)
+    val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), getActions = js.Any.fromFunction0(getActions), getBackend = js.Any.fromFunction0(getBackend), getContext = js.Any.fromFunction0(getContext), getMonitor = js.Any.fromFunction0(getMonitor), getRegistry = js.Any.fromFunction0(getRegistry))
   
     __obj.asInstanceOf[DragDropManager[Context]]
   }

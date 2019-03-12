@@ -17,14 +17,14 @@ object WizardProps {
   def apply(
     basename: java.lang.String = null,
     history: historyLib.historyMod.History[historyLib.historyMod.LocationState] = null,
-    onNext: js.Function1[/* wizard */ WizardContext, scala.Unit] = null,
-    render: js.Function1[/* wizard */ WizardContext, reactLib.reactMod.ReactNs.ReactNode] = null
+    onNext: /* wizard */ WizardContext => scala.Unit = null,
+    render: /* wizard */ WizardContext => reactLib.reactMod.ReactNs.ReactNode = null
   ): WizardProps = {
     val __obj = js.Dynamic.literal()
     if (basename != null) __obj.updateDynamic("basename")(basename)
     if (history != null) __obj.updateDynamic("history")(history)
-    if (onNext != null) __obj.updateDynamic("onNext")(onNext)
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (onNext != null) __obj.updateDynamic("onNext")(js.Any.fromFunction1(onNext))
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     __obj.asInstanceOf[WizardProps]
   }
 }

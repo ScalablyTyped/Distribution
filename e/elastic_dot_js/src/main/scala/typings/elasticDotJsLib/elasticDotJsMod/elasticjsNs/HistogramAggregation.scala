@@ -83,23 +83,23 @@ trait HistogramAggregation extends Aggregation {
 object HistogramAggregation {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    agg: js.Function1[Aggregation, HistogramAggregation],
-    aggregation: js.Function1[Aggregation, HistogramAggregation],
-    extendedBounds: js.Function2[scala.Double, scala.Double, HistogramAggregation],
-    field: js.Function1[java.lang.String, HistogramAggregation],
-    format: js.Function1[java.lang.String, HistogramAggregation],
-    interval: js.Function1[scala.Double, HistogramAggregation],
-    keyed: js.Function1[scala.Boolean, HistogramAggregation],
-    lang: js.Function1[java.lang.String, HistogramAggregation],
-    minDocCount: js.Function1[scala.Double, HistogramAggregation],
-    order: js.Function2[java.lang.String, java.lang.String, HistogramAggregation],
-    params: js.Function1[js.Object, HistogramAggregation],
-    script: js.Function1[java.lang.String, HistogramAggregation],
-    scriptValuesSorted: js.Function1[scala.Boolean, HistogramAggregation],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    agg: Aggregation => HistogramAggregation,
+    aggregation: Aggregation => HistogramAggregation,
+    extendedBounds: (scala.Double, scala.Double) => HistogramAggregation,
+    field: java.lang.String => HistogramAggregation,
+    format: java.lang.String => HistogramAggregation,
+    interval: scala.Double => HistogramAggregation,
+    keyed: scala.Boolean => HistogramAggregation,
+    lang: java.lang.String => HistogramAggregation,
+    minDocCount: scala.Double => HistogramAggregation,
+    order: (java.lang.String, java.lang.String) => HistogramAggregation,
+    params: js.Object => HistogramAggregation,
+    script: java.lang.String => HistogramAggregation,
+    scriptValuesSorted: scala.Boolean => HistogramAggregation,
+    toJSON: () => js.Any
   ): HistogramAggregation = {
-    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, extendedBounds = extendedBounds, field = field, format = format, interval = interval, keyed = keyed, lang = lang, minDocCount = minDocCount, order = order, params = params, script = script, scriptValuesSorted = scriptValuesSorted, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), agg = js.Any.fromFunction1(agg), aggregation = js.Any.fromFunction1(aggregation), extendedBounds = js.Any.fromFunction2(extendedBounds), field = js.Any.fromFunction1(field), format = js.Any.fromFunction1(format), interval = js.Any.fromFunction1(interval), keyed = js.Any.fromFunction1(keyed), lang = js.Any.fromFunction1(lang), minDocCount = js.Any.fromFunction1(minDocCount), order = js.Any.fromFunction2(order), params = js.Any.fromFunction1(params), script = js.Any.fromFunction1(script), scriptValuesSorted = js.Any.fromFunction1(scriptValuesSorted), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[HistogramAggregation]
   }

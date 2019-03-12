@@ -32,12 +32,12 @@ object DynamicMapLayer {
   def apply(
     constructor: js.Function,
     gdbVersion: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     mapLayerId: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     `type`: java.lang.String
   ): DynamicMapLayer = {
-    val __obj = js.Dynamic.literal(constructor = constructor, gdbVersion = gdbVersion, hasOwnProperty = hasOwnProperty, mapLayerId = mapLayerId, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, gdbVersion = gdbVersion, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mapLayerId = mapLayerId, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DynamicMapLayer]
   }

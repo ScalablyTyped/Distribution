@@ -54,24 +54,16 @@ object RowGroupSettings {
     dataSrc: scala.Double | java.lang.String = null,
     enable: js.UndefOr[scala.Boolean] = js.undefined,
     endClassName: java.lang.String = null,
-    endRender: js.Function2[
-      /* rows */ Api, 
-      /* group */ java.lang.String, 
-      java.lang.String | stdLib.HTMLElement | datatablesDotNetLib.JQuery
-    ] = null,
-    startRender: js.Function2[
-      /* rows */ Api, 
-      /* group */ java.lang.String, 
-      java.lang.String | stdLib.HTMLElement | datatablesDotNetLib.JQuery
-    ] = null
+    endRender: (/* rows */ Api, /* group */ java.lang.String) => java.lang.String | stdLib.HTMLElement | datatablesDotNetLib.JQuery = null,
+    startRender: (/* rows */ Api, /* group */ java.lang.String) => java.lang.String | stdLib.HTMLElement | datatablesDotNetLib.JQuery = null
   ): RowGroupSettings = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
     if (dataSrc != null) __obj.updateDynamic("dataSrc")(dataSrc.asInstanceOf[js.Any])
     if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
     if (endClassName != null) __obj.updateDynamic("endClassName")(endClassName)
-    if (endRender != null) __obj.updateDynamic("endRender")(endRender)
-    if (startRender != null) __obj.updateDynamic("startRender")(startRender)
+    if (endRender != null) __obj.updateDynamic("endRender")(js.Any.fromFunction2(endRender))
+    if (startRender != null) __obj.updateDynamic("startRender")(js.Any.fromFunction2(startRender))
     __obj.asInstanceOf[RowGroupSettings]
   }
 }

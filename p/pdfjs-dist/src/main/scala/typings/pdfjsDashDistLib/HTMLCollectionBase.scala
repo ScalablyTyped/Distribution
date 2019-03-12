@@ -20,11 +20,11 @@ trait HTMLCollectionBase
 object HTMLCollectionBase {
   @scala.inline
   def apply(
-    item: js.Function1[scala.Double, Element | scala.Null],
+    item: scala.Double => Element | scala.Null,
     length: scala.Double,
     NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Element] = null
   ): HTMLCollectionBase = {
-    val __obj = js.Dynamic.literal(item = item, length = length)
+    val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), length = length)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[HTMLCollectionBase]
   }

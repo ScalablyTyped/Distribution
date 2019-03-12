@@ -51,17 +51,17 @@ trait SingularPosition extends js.Object {
 object SingularPosition {
   @scala.inline
   def apply(
-    active: js.Function0[scala.Boolean],
-    height: js.Function0[scala.Double],
-    outerHeight: js.Function0[scala.Double],
-    outerWidth: js.Function0[scala.Double],
-    renderedHeight: js.Function0[scala.Double],
-    renderedOuterHeight: js.Function0[scala.Double],
-    renderedOuterWidth: js.Function0[scala.Double],
-    renderedWidth: js.Function0[scala.Double],
-    width: js.Function0[scala.Double]
+    active: () => scala.Boolean,
+    height: () => scala.Double,
+    outerHeight: () => scala.Double,
+    outerWidth: () => scala.Double,
+    renderedHeight: () => scala.Double,
+    renderedOuterHeight: () => scala.Double,
+    renderedOuterWidth: () => scala.Double,
+    renderedWidth: () => scala.Double,
+    width: () => scala.Double
   ): SingularPosition = {
-    val __obj = js.Dynamic.literal(active = active, height = height, outerHeight = outerHeight, outerWidth = outerWidth, renderedHeight = renderedHeight, renderedOuterHeight = renderedOuterHeight, renderedOuterWidth = renderedOuterWidth, renderedWidth = renderedWidth, width = width)
+    val __obj = js.Dynamic.literal(active = js.Any.fromFunction0(active), height = js.Any.fromFunction0(height), outerHeight = js.Any.fromFunction0(outerHeight), outerWidth = js.Any.fromFunction0(outerWidth), renderedHeight = js.Any.fromFunction0(renderedHeight), renderedOuterHeight = js.Any.fromFunction0(renderedOuterHeight), renderedOuterWidth = js.Any.fromFunction0(renderedOuterWidth), renderedWidth = js.Any.fromFunction0(renderedWidth), width = js.Any.fromFunction0(width))
   
     __obj.asInstanceOf[SingularPosition]
   }

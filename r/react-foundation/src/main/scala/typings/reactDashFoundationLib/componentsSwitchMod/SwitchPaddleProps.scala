@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - reactDashFoundationLib.utilsMod.GeneralPropTypes because var conflicts: className. Inlined showFor, showOnlyFor, hideFor, hideOnlyFor, isHidden, isInvisible, showForLandscape, showForPortrait, showForSr, showOnFocus, isClearfix, float */ trait SwitchPaddleProps
-  extends reactLib.reactMod.ReactNs.LabelHTMLAttributes[reactLib.HTMLLabelElement] {
+  extends reactLib.reactMod.ReactNs.LabelHTMLAttributes[stdLib.HTMLLabelElement] {
   var float: js.UndefOr[reactDashFoundationLib.enumsMod.FloatTypes] = js.undefined
   var hideFor: js.UndefOr[
     reactDashFoundationLib.reactDashFoundationLibStrings.medium | reactDashFoundationLib.reactDashFoundationLibStrings.large
@@ -28,7 +28,7 @@ object SwitchPaddleProps {
   @scala.inline
   def apply(
     GeneralPropTypes: reactDashFoundationLib.utilsMod.GeneralPropTypes = null,
-    LabelHTMLAttributes: reactLib.reactMod.ReactNs.LabelHTMLAttributes[reactLib.HTMLLabelElement] = null
+    LabelHTMLAttributes: reactLib.reactMod.ReactNs.LabelHTMLAttributes[stdLib.HTMLLabelElement] = null
   ): SwitchPaddleProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, GeneralPropTypes)

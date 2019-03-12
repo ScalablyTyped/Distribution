@@ -23,13 +23,13 @@ object XSheetConditionalEntry {
   @scala.inline
   def apply(
     StyleName: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getStyleName: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setStyleName: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getStyleName: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setStyleName: java.lang.String => scala.Unit
   ): XSheetConditionalEntry = {
-    val __obj = js.Dynamic.literal(StyleName = StyleName, acquire = acquire, getStyleName = getStyleName, queryInterface = queryInterface, release = release, setStyleName = setStyleName)
+    val __obj = js.Dynamic.literal(StyleName = StyleName, acquire = js.Any.fromFunction0(acquire), getStyleName = js.Any.fromFunction0(getStyleName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setStyleName = js.Any.fromFunction1(setStyleName))
   
     __obj.asInstanceOf[XSheetConditionalEntry]
   }

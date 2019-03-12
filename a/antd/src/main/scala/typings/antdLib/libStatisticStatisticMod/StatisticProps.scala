@@ -36,10 +36,7 @@ object StatisticProps {
     suffix: reactLib.reactMod.ReactNs.ReactNode = null,
     title: reactLib.reactMod.ReactNs.ReactNode = null,
     value: antdLib.libStatisticUtilsMod.valueType = null,
-    valueRender: js.Function1[
-      /* node */ reactLib.reactMod.ReactNs.ReactNode, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    valueRender: /* node */ reactLib.reactMod.ReactNs.ReactNode => reactLib.reactMod.ReactNs.ReactNode = null,
     valueStyle: reactLib.reactMod.ReactNs.CSSProperties = null
   ): StatisticProps = {
     val __obj = js.Dynamic.literal()
@@ -54,7 +51,7 @@ object StatisticProps {
     if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (valueRender != null) __obj.updateDynamic("valueRender")(valueRender)
+    if (valueRender != null) __obj.updateDynamic("valueRender")(js.Any.fromFunction1(valueRender))
     if (valueStyle != null) __obj.updateDynamic("valueStyle")(valueStyle)
     __obj.asInstanceOf[StatisticProps]
   }

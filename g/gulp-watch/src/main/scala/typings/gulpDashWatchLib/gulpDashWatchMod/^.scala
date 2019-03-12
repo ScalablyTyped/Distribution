@@ -8,16 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-watch", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(glob: js.Array[java.lang.String] | java.lang.String): gulpDashWatchLib.gulpDashWatchMod.IWatchStream = js.native
-  def apply(glob: java.lang.String | js.Array[java.lang.String], callback: gulpDashWatchLib.Cb): gulpDashWatchLib.gulpDashWatchMod.IWatchStream = js.native
+  def apply(glob: js.Array[java.lang.String] | java.lang.String): IWatchStream = js.native
+  def apply(glob: java.lang.String | js.Array[java.lang.String], callback: gulpDashWatchLib.Cb): IWatchStream = js.native
+  def apply(glob: java.lang.String | js.Array[java.lang.String], options: IOptions): IWatchStream = js.native
   def apply(
     glob: java.lang.String | js.Array[java.lang.String],
-    options: gulpDashWatchLib.gulpDashWatchMod.IOptions
-  ): gulpDashWatchLib.gulpDashWatchMod.IWatchStream = js.native
-  def apply(
-    glob: java.lang.String | js.Array[java.lang.String],
-    options: gulpDashWatchLib.gulpDashWatchMod.IOptions,
+    options: IOptions,
     callback: gulpDashWatchLib.Cb
-  ): gulpDashWatchLib.gulpDashWatchMod.IWatchStream = js.native
+  ): IWatchStream = js.native
 }
 

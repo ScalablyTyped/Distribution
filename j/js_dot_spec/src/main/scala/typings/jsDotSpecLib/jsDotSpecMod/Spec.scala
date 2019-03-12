@@ -33,13 +33,13 @@ trait Spec extends js.Object {
 object Spec {
   @scala.inline
   def apply(
-    conform: js.Function1[js.Any, js.Any],
-    explain: js.Function3[js.Array[java.lang.String], js.Array[java.lang.String], js.Any, js.Array[Problem]],
+    conform: js.Any => js.Any,
+    explain: (js.Array[java.lang.String], js.Array[java.lang.String], js.Any) => js.Array[Problem],
     name: java.lang.String,
     options: js.Object,
-    toString: js.Function0[java.lang.String]
+    toString: () => java.lang.String
   ): Spec = {
-    val __obj = js.Dynamic.literal(conform = conform, explain = explain, name = name, options = options, toString = toString)
+    val __obj = js.Dynamic.literal(conform = js.Any.fromFunction1(conform), explain = js.Any.fromFunction3(explain), name = name, options = options, toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[Spec]
   }

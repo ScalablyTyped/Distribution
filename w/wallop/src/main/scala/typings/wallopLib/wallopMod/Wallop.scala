@@ -35,14 +35,14 @@ trait Wallop extends js.Object {
 object Wallop {
   @scala.inline
   def apply(
-    goTo: js.Function1[scala.Double, Wallop],
-    next: js.Function0[Wallop],
-    off: js.Function2[java.lang.String, js.Function0[scala.Unit], Wallop],
-    on: js.Function2[java.lang.String, js.Function0[scala.Unit], Wallop],
-    previous: js.Function0[Wallop],
-    reset: js.Function0[Wallop]
+    goTo: scala.Double => Wallop,
+    next: () => Wallop,
+    off: (java.lang.String, js.Function0[scala.Unit]) => Wallop,
+    on: (java.lang.String, js.Function0[scala.Unit]) => Wallop,
+    previous: () => Wallop,
+    reset: () => Wallop
   ): Wallop = {
-    val __obj = js.Dynamic.literal(goTo = goTo, next = next, off = off, on = on, previous = previous, reset = reset)
+    val __obj = js.Dynamic.literal(goTo = js.Any.fromFunction1(goTo), next = js.Any.fromFunction0(next), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), previous = js.Any.fromFunction0(previous), reset = js.Any.fromFunction0(reset))
   
     __obj.asInstanceOf[Wallop]
   }

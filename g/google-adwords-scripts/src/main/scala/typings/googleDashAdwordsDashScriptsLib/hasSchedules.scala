@@ -12,11 +12,8 @@ trait hasSchedules extends js.Object {
 
 object hasSchedules {
   @scala.inline
-  def apply(
-    getSchedules: js.Function0[ExtensionSchedule],
-    setSchedules: js.Function1[ExtensionScheduleInput, scala.Unit]
-  ): hasSchedules = {
-    val __obj = js.Dynamic.literal(getSchedules = getSchedules, setSchedules = setSchedules)
+  def apply(getSchedules: () => ExtensionSchedule, setSchedules: ExtensionScheduleInput => scala.Unit): hasSchedules = {
+    val __obj = js.Dynamic.literal(getSchedules = js.Any.fromFunction0(getSchedules), setSchedules = js.Any.fromFunction1(setSchedules))
   
     __obj.asInstanceOf[hasSchedules]
   }

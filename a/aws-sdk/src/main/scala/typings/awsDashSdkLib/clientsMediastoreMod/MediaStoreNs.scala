@@ -46,7 +46,7 @@ object MediaStoreNs extends js.Object {
     /**
       * Specifies which headers are allowed in a preflight OPTIONS request through the Access-Control-Request-Headers header. Each header name that is specified in Access-Control-Request-Headers must have a corresponding entry in the rule. Only the headers that were requested are sent back.  This element can contain only one wildcard character (*).
       */
-    var AllowedHeaders: AllowedHeaders
+    var AllowedHeaders: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.AllowedHeaders
     /**
       * Identifies an HTTP method that the origin that is specified in the rule is allowed to execute. Each CORS rule must contain at least one AllowedMethods and one AllowedOrigins element.
       */
@@ -54,7 +54,7 @@ object MediaStoreNs extends js.Object {
     /**
       * One or more response headers that you want users to be able to access from their applications (for example, from a JavaScript XMLHttpRequest object). Each CORS rule must have at least one AllowedOrigins element. The string value can include only one wildcard character (*), for example, http:// *.example.com. Additionally, you can specify only one wildcard character to allow cross-origin access for all origins.
       */
-    var AllowedOrigins: AllowedOrigins
+    var AllowedOrigins: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.AllowedOrigins
     /**
       * One or more headers in the response that you want users to be able to access from their applications (for example, from a JavaScript XMLHttpRequest object). This element is optional for each rule.
       */
@@ -69,21 +69,21 @@ object MediaStoreNs extends js.Object {
     /**
       * The name for the container. The name must be from 1 to 255 characters. Container names must be unique to your AWS account within a specific region. As an example, you could create a container named movies in every region, as long as you don’t have an existing container with that name.
       */
-    var ContainerName: ContainerName
+    var ContainerName: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.ContainerName
   }
   
   trait CreateContainerOutput extends js.Object {
     /**
       * ContainerARN: The Amazon Resource Name (ARN) of the newly created container. The ARN has the following format: arn:aws:&lt;region&gt;:&lt;account that owns this container&gt;:container/&lt;name of container&gt;. For example: arn:aws:mediastore:us-west-2:111122223333:container/movies  ContainerName: The container name as specified in the request. CreationTime: Unix time stamp. Status: The status of container creation or deletion. The status is one of the following: CREATING, ACTIVE, or DELETING. While the service is creating the container, the status is CREATING. When an endpoint is available, the status changes to ACTIVE. The return value does not include the container's endpoint. To make downstream requests, you must obtain this value by using DescribeContainer or ListContainers.
       */
-    var Container: Container
+    var Container: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.Container
   }
   
   trait DeleteContainerInput extends js.Object {
     /**
       * The name of the container to delete. 
       */
-    var ContainerName: ContainerName
+    var ContainerName: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.ContainerName
   }
   
   trait DeleteContainerOutput extends js.Object
@@ -92,7 +92,7 @@ object MediaStoreNs extends js.Object {
     /**
       * The name of the container that holds the policy.
       */
-    var ContainerName: ContainerName
+    var ContainerName: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.ContainerName
   }
   
   trait DeleteContainerPolicyOutput extends js.Object
@@ -101,7 +101,7 @@ object MediaStoreNs extends js.Object {
     /**
       * The name of the container to remove the policy from.
       */
-    var ContainerName: ContainerName
+    var ContainerName: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.ContainerName
   }
   
   trait DeleteCorsPolicyOutput extends js.Object
@@ -110,7 +110,7 @@ object MediaStoreNs extends js.Object {
     /**
       * The name of the container that holds the object lifecycle policy.
       */
-    var ContainerName: ContainerName
+    var ContainerName: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.ContainerName
   }
   
   trait DeleteLifecyclePolicyOutput extends js.Object
@@ -133,7 +133,7 @@ object MediaStoreNs extends js.Object {
     /**
       * The name of the container. 
       */
-    var ContainerName: ContainerName
+    var ContainerName: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.ContainerName
   }
   
   trait GetContainerPolicyOutput extends js.Object {
@@ -147,28 +147,28 @@ object MediaStoreNs extends js.Object {
     /**
       * The name of the container that the policy is assigned to.
       */
-    var ContainerName: ContainerName
+    var ContainerName: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.ContainerName
   }
   
   trait GetCorsPolicyOutput extends js.Object {
     /**
       * The CORS policy assigned to the container.
       */
-    var CorsPolicy: CorsPolicy
+    var CorsPolicy: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.CorsPolicy
   }
   
   trait GetLifecyclePolicyInput extends js.Object {
     /**
       * The name of the container that the object lifecycle policy is assigned to.
       */
-    var ContainerName: ContainerName
+    var ContainerName: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.ContainerName
   }
   
   trait GetLifecyclePolicyOutput extends js.Object {
     /**
       * The object lifecycle policy that is assigned to the container.
       */
-    var LifecyclePolicy: LifecyclePolicy
+    var LifecyclePolicy: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.LifecyclePolicy
   }
   
   trait ListContainersInput extends js.Object {
@@ -197,7 +197,7 @@ object MediaStoreNs extends js.Object {
     /**
       * The name of the container.
       */
-    var ContainerName: ContainerName
+    var ContainerName: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.ContainerName
     /**
       * The contents of the policy, which includes the following:    One Version tag   One Statement tag that contains the standard tags for the policy.  
       */
@@ -210,11 +210,11 @@ object MediaStoreNs extends js.Object {
     /**
       * The name of the container that you want to assign the CORS policy to.
       */
-    var ContainerName: ContainerName
+    var ContainerName: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.ContainerName
     /**
       * The CORS policy to apply to the container. 
       */
-    var CorsPolicy: CorsPolicy
+    var CorsPolicy: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.CorsPolicy
   }
   
   trait PutCorsPolicyOutput extends js.Object
@@ -223,11 +223,11 @@ object MediaStoreNs extends js.Object {
     /**
       * The name of the container that you want to assign the object lifecycle policy to.
       */
-    var ContainerName: ContainerName
+    var ContainerName: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.ContainerName
     /**
       * The object lifecycle policy to apply to the container.
       */
-    var LifecyclePolicy: LifecyclePolicy
+    var LifecyclePolicy: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.LifecyclePolicy
   }
   
   trait PutLifecyclePolicyOutput extends js.Object
@@ -236,7 +236,7 @@ object MediaStoreNs extends js.Object {
     /**
       * The name of the container that you want to start access logging on.
       */
-    var ContainerName: ContainerName
+    var ContainerName: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.ContainerName
   }
   
   trait StartAccessLoggingOutput extends js.Object
@@ -245,7 +245,7 @@ object MediaStoreNs extends js.Object {
     /**
       * The name of the container that you want to stop access logging on.
       */
-    var ContainerName: ContainerName
+    var ContainerName: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.ContainerName
   }
   
   trait StopAccessLoggingOutput extends js.Object

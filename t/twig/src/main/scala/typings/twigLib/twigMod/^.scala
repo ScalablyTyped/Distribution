@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def __express(
     path: java.lang.String,
-    options: twigLib.twigMod.CompileOptions,
+    options: CompileOptions,
     fn: js.Function2[/* err */ stdLib.Error, /* result */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def cache(value: scala.Boolean): scala.Unit = js.native
-  def compile(markup: java.lang.String, options: twigLib.twigMod.CompileOptions): js.Function1[/* context */ js.Any, _] = js.native
+  def compile(markup: java.lang.String, options: CompileOptions): js.Function1[/* context */ js.Any, _] = js.native
   def extendFilter(
     name: java.lang.String,
     definition: js.Function2[/* left */ js.Any, /* repeated */ js.Any, java.lang.String]
@@ -24,9 +24,9 @@ object ^ extends js.Object {
   def extendTest(name: java.lang.String, definition: js.Function1[/* value */ js.Any, scala.Boolean]): scala.Unit = js.native
   def renderFile(
     path: java.lang.String,
-    options: twigLib.twigMod.CompileOptions,
+    options: CompileOptions,
     fn: js.Function2[/* err */ stdLib.Error, /* result */ js.Any, scala.Unit]
   ): scala.Unit = js.native
-  def twig(params: twigLib.twigMod.Parameters): twigLib.twigMod.Template = js.native
+  def twig(params: Parameters): Template = js.native
 }
 

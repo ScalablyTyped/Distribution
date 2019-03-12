@@ -20,8 +20,8 @@ object Options {
   def apply(
     errorThreshold: scala.Int | scala.Double = null,
     numBuckets: scala.Int | scala.Double = null,
-    onCircuitClose: js.Function1[/* m */ Metrics, scala.Unit] = null,
-    onCircuitOpen: js.Function1[/* m */ Metrics, scala.Unit] = null,
+    onCircuitClose: /* m */ Metrics => scala.Unit = null,
+    onCircuitOpen: /* m */ Metrics => scala.Unit = null,
     timeoutDuration: scala.Int | scala.Double = null,
     volumeThreshold: scala.Int | scala.Double = null,
     windowDuration: scala.Int | scala.Double = null
@@ -29,8 +29,8 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (errorThreshold != null) __obj.updateDynamic("errorThreshold")(errorThreshold.asInstanceOf[js.Any])
     if (numBuckets != null) __obj.updateDynamic("numBuckets")(numBuckets.asInstanceOf[js.Any])
-    if (onCircuitClose != null) __obj.updateDynamic("onCircuitClose")(onCircuitClose)
-    if (onCircuitOpen != null) __obj.updateDynamic("onCircuitOpen")(onCircuitOpen)
+    if (onCircuitClose != null) __obj.updateDynamic("onCircuitClose")(js.Any.fromFunction1(onCircuitClose))
+    if (onCircuitOpen != null) __obj.updateDynamic("onCircuitOpen")(js.Any.fromFunction1(onCircuitOpen))
     if (timeoutDuration != null) __obj.updateDynamic("timeoutDuration")(timeoutDuration.asInstanceOf[js.Any])
     if (volumeThreshold != null) __obj.updateDynamic("volumeThreshold")(volumeThreshold.asInstanceOf[js.Any])
     if (windowDuration != null) __obj.updateDynamic("windowDuration")(windowDuration.asInstanceOf[js.Any])

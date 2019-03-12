@@ -24,7 +24,7 @@ trait CodeSystemConcept extends BackboneElement {
   /**
     * Code that identifies concept
     */
-  var code: code
+  var code: fhirLib.fhirNs.code
   /**
     * Child Concepts (is-a/contains/categorizes)
     */

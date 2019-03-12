@@ -13,12 +13,12 @@ trait ProgressEvents extends js.Object {
 object ProgressEvents {
   @scala.inline
   def apply(
-    progressComplete: js.Function1[/* lobibox */ LobiboxStatic, scala.Unit] = null,
-    progressUpdated: js.Function1[/* lobibox */ LobiboxStatic, scala.Unit] = null
+    progressComplete: /* lobibox */ LobiboxStatic => scala.Unit = null,
+    progressUpdated: /* lobibox */ LobiboxStatic => scala.Unit = null
   ): ProgressEvents = {
     val __obj = js.Dynamic.literal()
-    if (progressComplete != null) __obj.updateDynamic("progressComplete")(progressComplete)
-    if (progressUpdated != null) __obj.updateDynamic("progressUpdated")(progressUpdated)
+    if (progressComplete != null) __obj.updateDynamic("progressComplete")(js.Any.fromFunction1(progressComplete))
+    if (progressUpdated != null) __obj.updateDynamic("progressUpdated")(js.Any.fromFunction1(progressUpdated))
     __obj.asInstanceOf[ProgressEvents]
   }
 }

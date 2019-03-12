@@ -16,11 +16,11 @@ object IAdditionalClassInfo {
   @scala.inline
   def apply(
     AssignmentClassInfo: IAssignmentClassInfo,
-    Clear: js.Function0[scala.Unit],
-    Clone: js.Function0[IAdditionalClassInfo],
+    Clear: () => scala.Unit,
+    Clone: () => IAdditionalClassInfo,
     InfoType: mfilesLib.MFilesNs.MFAdditionalClassInfoType
   ): IAdditionalClassInfo = {
-    val __obj = js.Dynamic.literal(AssignmentClassInfo = AssignmentClassInfo, Clear = Clear, Clone = Clone, InfoType = InfoType)
+    val __obj = js.Dynamic.literal(AssignmentClassInfo = AssignmentClassInfo, Clear = js.Any.fromFunction0(Clear), Clone = js.Any.fromFunction0(Clone), InfoType = InfoType)
   
     __obj.asInstanceOf[IAdditionalClassInfo]
   }

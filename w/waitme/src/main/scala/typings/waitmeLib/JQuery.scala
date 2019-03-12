@@ -22,19 +22,6 @@ trait JQuery extends js.Object {
   @JSName("on")
   def on_close(event: waitmeLib.waitmeLibStrings.close, handler: js.Function0[scala.Unit]): this.type = js.native
   /**
-    * init with default options
-    * Use: $(container).waitMe();
-    *
-    * init with custom options
-    * Use: $(container).waitMe({param1 : value1, param2 : value2, ...});
-    *
-    * for close waitMe.
-    * Use: $(container).waitMe("hide");
-    *
-    * @param options
-    * @returns {JQuery}
-    */
-  /**
     * $(container).waitMe({param1 : value1, param2 : value2, ...});
     */
   def waitMe(): JQuery = js.native

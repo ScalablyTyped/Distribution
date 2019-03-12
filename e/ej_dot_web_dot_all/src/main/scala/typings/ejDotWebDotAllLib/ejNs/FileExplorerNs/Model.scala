@@ -273,54 +273,54 @@ object Model {
     allowDragAndDrop: js.UndefOr[scala.Boolean] = js.undefined,
     allowKeyboardNavigation: js.UndefOr[scala.Boolean] = js.undefined,
     allowMultiSelection: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeAjaxRequest: js.Function1[/* e */ BeforeAjaxRequestEventArgs, scala.Unit] = null,
-    beforeDownload: js.Function1[/* e */ BeforeDownloadEventArgs, scala.Unit] = null,
-    beforeGetImage: js.Function1[/* e */ BeforeGetImageEventArgs, scala.Unit] = null,
-    beforeOpen: js.Function1[/* e */ BeforeOpenEventArgs, scala.Unit] = null,
-    beforeUpload: js.Function1[/* e */ BeforeUploadEventArgs, scala.Unit] = null,
-    beforeUploadDialogOpen: js.Function1[/* e */ BeforeUploadDialogOpenEventArgs, scala.Unit] = null,
-    beforeUploadSend: js.Function1[/* e */ BeforeUploadSendEventArgs, scala.Unit] = null,
+    beforeAjaxRequest: /* e */ BeforeAjaxRequestEventArgs => scala.Unit = null,
+    beforeDownload: /* e */ BeforeDownloadEventArgs => scala.Unit = null,
+    beforeGetImage: /* e */ BeforeGetImageEventArgs => scala.Unit = null,
+    beforeOpen: /* e */ BeforeOpenEventArgs => scala.Unit = null,
+    beforeUpload: /* e */ BeforeUploadEventArgs => scala.Unit = null,
+    beforeUploadDialogOpen: /* e */ BeforeUploadDialogOpenEventArgs => scala.Unit = null,
+    beforeUploadSend: /* e */ BeforeUploadSendEventArgs => scala.Unit = null,
     contextMenuSettings: ContextMenuSettings = null,
-    copy: js.Function1[/* e */ CopyEventArgs, scala.Unit] = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
-    createFolder: js.Function1[/* e */ CreateFolderEventArgs, scala.Unit] = null,
+    copy: /* e */ CopyEventArgs => scala.Unit = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
+    createFolder: /* e */ CreateFolderEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
-    cut: js.Function1[/* e */ CutEventArgs, scala.Unit] = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
-    drag: js.Function1[/* e */ DragEventArgs, scala.Unit] = null,
-    dragStart: js.Function1[/* e */ DragStartEventArgs, scala.Unit] = null,
-    dragStop: js.Function1[/* e */ DragStopEventArgs, scala.Unit] = null,
-    drop: js.Function1[/* e */ DropEventArgs, scala.Unit] = null,
+    cut: /* e */ CutEventArgs => scala.Unit = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
+    drag: /* e */ DragEventArgs => scala.Unit = null,
+    dragStart: /* e */ DragStartEventArgs => scala.Unit = null,
+    dragStop: /* e */ DragStopEventArgs => scala.Unit = null,
+    drop: /* e */ DropEventArgs => scala.Unit = null,
     enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
     enableResize: js.UndefOr[scala.Boolean] = js.undefined,
     enableThumbnailCompress: js.UndefOr[scala.Boolean] = js.undefined,
     fileTypes: java.lang.String = null,
     filterSettings: FilterSettings = null,
-    getImage: js.Function1[/* e */ GetImageEventArgs, scala.Unit] = null,
+    getImage: /* e */ GetImageEventArgs => scala.Unit = null,
     gridSettings: GridSettings = null,
     height: java.lang.String | scala.Double = null,
     isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
-    keydown: js.Function1[/* e */ KeydownEventArgs, scala.Unit] = null,
+    keydown: /* e */ KeydownEventArgs => scala.Unit = null,
     layout: layoutType | java.lang.String = null,
-    layoutChange: js.Function1[/* e */ LayoutChangeEventArgs, scala.Unit] = null,
+    layoutChange: /* e */ LayoutChangeEventArgs => scala.Unit = null,
     locale: java.lang.String = null,
     maxHeight: java.lang.String | scala.Double = null,
     maxWidth: java.lang.String | scala.Double = null,
-    menuBeforeOpen: js.Function1[/* e */ MenuBeforeOpenEventArgs, scala.Unit] = null,
-    menuClick: js.Function1[/* e */ MenuClickEventArgs, scala.Unit] = null,
-    menuOpen: js.Function1[/* e */ MenuOpenEventArgs, scala.Unit] = null,
+    menuBeforeOpen: /* e */ MenuBeforeOpenEventArgs => scala.Unit = null,
+    menuClick: /* e */ MenuClickEventArgs => scala.Unit = null,
+    menuOpen: /* e */ MenuOpenEventArgs => scala.Unit = null,
     minHeight: java.lang.String | scala.Double = null,
     minWidth: java.lang.String | scala.Double = null,
-    open: js.Function1[/* e */ OpenEventArgs, scala.Unit] = null,
-    paste: js.Function1[/* e */ PasteEventArgs, scala.Unit] = null,
+    open: /* e */ OpenEventArgs => scala.Unit = null,
+    paste: /* e */ PasteEventArgs => scala.Unit = null,
     path: java.lang.String = null,
-    remove: js.Function1[/* e */ RemoveEventArgs, scala.Unit] = null,
-    resize: js.Function1[/* e */ ResizeEventArgs, scala.Unit] = null,
-    resizeStart: js.Function1[/* e */ ResizeStartEventArgs, scala.Unit] = null,
-    resizeStop: js.Function1[/* e */ ResizeStopEventArgs, scala.Unit] = null,
+    remove: /* e */ RemoveEventArgs => scala.Unit = null,
+    resize: /* e */ ResizeEventArgs => scala.Unit = null,
+    resizeStart: /* e */ ResizeStartEventArgs => scala.Unit = null,
+    resizeStop: /* e */ ResizeStopEventArgs => scala.Unit = null,
     rootFolderName: java.lang.String = null,
-    select: js.Function1[/* e */ SelectEventArgs, scala.Unit] = null,
+    select: /* e */ SelectEventArgs => scala.Unit = null,
     selectedFolder: java.lang.String = null,
     selectedItems: java.lang.String | js.Array[_] = null,
     showCheckbox: js.UndefOr[scala.Boolean] = js.undefined,
@@ -330,14 +330,14 @@ object Model {
     showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
     showThumbnail: js.UndefOr[scala.Boolean] = js.undefined,
     showToolbar: js.UndefOr[scala.Boolean] = js.undefined,
-    templateRefresh: js.Function1[/* e */ TemplateRefreshEventArgs, scala.Unit] = null,
+    templateRefresh: /* e */ TemplateRefreshEventArgs => scala.Unit = null,
     tools: js.Any = null,
     toolsList: js.Array[_] = null,
-    unselect: js.Function1[/* e */ UnselectEventArgs, scala.Unit] = null,
-    uploadComplete: js.Function1[/* e */ UploadCompleteEventArgs, scala.Unit] = null,
-    uploadError: js.Function1[/* e */ UploadErrorEventArgs, scala.Unit] = null,
+    unselect: /* e */ UnselectEventArgs => scala.Unit = null,
+    uploadComplete: /* e */ UploadCompleteEventArgs => scala.Unit = null,
+    uploadError: /* e */ UploadErrorEventArgs => scala.Unit = null,
     uploadSettings: UploadSettings = null,
-    uploadSuccess: js.Function1[/* e */ UploadSuccessEventArgs, scala.Unit] = null,
+    uploadSuccess: /* e */ UploadSuccessEventArgs => scala.Unit = null,
     virtualItemCount: scala.Int | scala.Double = null,
     width: java.lang.String | scala.Double = null
   ): Model = {
@@ -348,54 +348,54 @@ object Model {
     if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop)
     if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation)
     if (!js.isUndefined(allowMultiSelection)) __obj.updateDynamic("allowMultiSelection")(allowMultiSelection)
-    if (beforeAjaxRequest != null) __obj.updateDynamic("beforeAjaxRequest")(beforeAjaxRequest)
-    if (beforeDownload != null) __obj.updateDynamic("beforeDownload")(beforeDownload)
-    if (beforeGetImage != null) __obj.updateDynamic("beforeGetImage")(beforeGetImage)
-    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen)
-    if (beforeUpload != null) __obj.updateDynamic("beforeUpload")(beforeUpload)
-    if (beforeUploadDialogOpen != null) __obj.updateDynamic("beforeUploadDialogOpen")(beforeUploadDialogOpen)
-    if (beforeUploadSend != null) __obj.updateDynamic("beforeUploadSend")(beforeUploadSend)
+    if (beforeAjaxRequest != null) __obj.updateDynamic("beforeAjaxRequest")(js.Any.fromFunction1(beforeAjaxRequest))
+    if (beforeDownload != null) __obj.updateDynamic("beforeDownload")(js.Any.fromFunction1(beforeDownload))
+    if (beforeGetImage != null) __obj.updateDynamic("beforeGetImage")(js.Any.fromFunction1(beforeGetImage))
+    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(js.Any.fromFunction1(beforeOpen))
+    if (beforeUpload != null) __obj.updateDynamic("beforeUpload")(js.Any.fromFunction1(beforeUpload))
+    if (beforeUploadDialogOpen != null) __obj.updateDynamic("beforeUploadDialogOpen")(js.Any.fromFunction1(beforeUploadDialogOpen))
+    if (beforeUploadSend != null) __obj.updateDynamic("beforeUploadSend")(js.Any.fromFunction1(beforeUploadSend))
     if (contextMenuSettings != null) __obj.updateDynamic("contextMenuSettings")(contextMenuSettings)
-    if (copy != null) __obj.updateDynamic("copy")(copy)
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (createFolder != null) __obj.updateDynamic("createFolder")(createFolder)
+    if (copy != null) __obj.updateDynamic("copy")(js.Any.fromFunction1(copy))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
+    if (createFolder != null) __obj.updateDynamic("createFolder")(js.Any.fromFunction1(createFolder))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (cut != null) __obj.updateDynamic("cut")(cut)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (drag != null) __obj.updateDynamic("drag")(drag)
-    if (dragStart != null) __obj.updateDynamic("dragStart")(dragStart)
-    if (dragStop != null) __obj.updateDynamic("dragStop")(dragStop)
-    if (drop != null) __obj.updateDynamic("drop")(drop)
+    if (cut != null) __obj.updateDynamic("cut")(js.Any.fromFunction1(cut))
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
+    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1(drag))
+    if (dragStart != null) __obj.updateDynamic("dragStart")(js.Any.fromFunction1(dragStart))
+    if (dragStop != null) __obj.updateDynamic("dragStop")(js.Any.fromFunction1(dragStop))
+    if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction1(drop))
     if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
     if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize)
     if (!js.isUndefined(enableThumbnailCompress)) __obj.updateDynamic("enableThumbnailCompress")(enableThumbnailCompress)
     if (fileTypes != null) __obj.updateDynamic("fileTypes")(fileTypes)
     if (filterSettings != null) __obj.updateDynamic("filterSettings")(filterSettings)
-    if (getImage != null) __obj.updateDynamic("getImage")(getImage)
+    if (getImage != null) __obj.updateDynamic("getImage")(js.Any.fromFunction1(getImage))
     if (gridSettings != null) __obj.updateDynamic("gridSettings")(gridSettings)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
-    if (keydown != null) __obj.updateDynamic("keydown")(keydown)
+    if (keydown != null) __obj.updateDynamic("keydown")(js.Any.fromFunction1(keydown))
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (layoutChange != null) __obj.updateDynamic("layoutChange")(layoutChange)
+    if (layoutChange != null) __obj.updateDynamic("layoutChange")(js.Any.fromFunction1(layoutChange))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (menuBeforeOpen != null) __obj.updateDynamic("menuBeforeOpen")(menuBeforeOpen)
-    if (menuClick != null) __obj.updateDynamic("menuClick")(menuClick)
-    if (menuOpen != null) __obj.updateDynamic("menuOpen")(menuOpen)
+    if (menuBeforeOpen != null) __obj.updateDynamic("menuBeforeOpen")(js.Any.fromFunction1(menuBeforeOpen))
+    if (menuClick != null) __obj.updateDynamic("menuClick")(js.Any.fromFunction1(menuClick))
+    if (menuOpen != null) __obj.updateDynamic("menuOpen")(js.Any.fromFunction1(menuOpen))
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(open)
-    if (paste != null) __obj.updateDynamic("paste")(paste)
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
+    if (paste != null) __obj.updateDynamic("paste")(js.Any.fromFunction1(paste))
     if (path != null) __obj.updateDynamic("path")(path)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (resize != null) __obj.updateDynamic("resize")(resize)
-    if (resizeStart != null) __obj.updateDynamic("resizeStart")(resizeStart)
-    if (resizeStop != null) __obj.updateDynamic("resizeStop")(resizeStop)
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
+    if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction1(resize))
+    if (resizeStart != null) __obj.updateDynamic("resizeStart")(js.Any.fromFunction1(resizeStart))
+    if (resizeStop != null) __obj.updateDynamic("resizeStop")(js.Any.fromFunction1(resizeStop))
     if (rootFolderName != null) __obj.updateDynamic("rootFolderName")(rootFolderName)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (selectedFolder != null) __obj.updateDynamic("selectedFolder")(selectedFolder)
     if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
     if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox)
@@ -405,14 +405,14 @@ object Model {
     if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
     if (!js.isUndefined(showThumbnail)) __obj.updateDynamic("showThumbnail")(showThumbnail)
     if (!js.isUndefined(showToolbar)) __obj.updateDynamic("showToolbar")(showToolbar)
-    if (templateRefresh != null) __obj.updateDynamic("templateRefresh")(templateRefresh)
+    if (templateRefresh != null) __obj.updateDynamic("templateRefresh")(js.Any.fromFunction1(templateRefresh))
     if (tools != null) __obj.updateDynamic("tools")(tools)
     if (toolsList != null) __obj.updateDynamic("toolsList")(toolsList)
-    if (unselect != null) __obj.updateDynamic("unselect")(unselect)
-    if (uploadComplete != null) __obj.updateDynamic("uploadComplete")(uploadComplete)
-    if (uploadError != null) __obj.updateDynamic("uploadError")(uploadError)
+    if (unselect != null) __obj.updateDynamic("unselect")(js.Any.fromFunction1(unselect))
+    if (uploadComplete != null) __obj.updateDynamic("uploadComplete")(js.Any.fromFunction1(uploadComplete))
+    if (uploadError != null) __obj.updateDynamic("uploadError")(js.Any.fromFunction1(uploadError))
     if (uploadSettings != null) __obj.updateDynamic("uploadSettings")(uploadSettings)
-    if (uploadSuccess != null) __obj.updateDynamic("uploadSuccess")(uploadSuccess)
+    if (uploadSuccess != null) __obj.updateDynamic("uploadSuccess")(js.Any.fromFunction1(uploadSuccess))
     if (virtualItemCount != null) __obj.updateDynamic("virtualItemCount")(virtualItemCount.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]

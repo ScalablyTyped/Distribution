@@ -40,11 +40,7 @@ object TabProps {
     icon: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
     innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
     label: reactLib.reactMod.ReactNs.ReactNode = null,
-    onChange: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[atMaterialDashUiCoreLib.Anon_Checked], 
-      /* value */ js.Any, 
-      scala.Unit
-    ] = null,
+    onChange: (/* event */ reactLib.reactMod.ReactNs.ChangeEvent[atMaterialDashUiCoreLib.Anon_Checked], /* value */ js.Any) => scala.Unit = null,
     onClick: reactLib.reactMod.ReactNs.EventHandler[_] = null,
     selected: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -59,7 +55,7 @@ object TabProps {
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
     if (style != null) __obj.updateDynamic("style")(style)

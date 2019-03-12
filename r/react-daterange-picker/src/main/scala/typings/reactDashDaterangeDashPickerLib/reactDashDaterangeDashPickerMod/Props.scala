@@ -65,10 +65,10 @@ object Props {
     maximumDate: stdLib.Date = null,
     minimumDate: stdLib.Date = null,
     numberOfCalendars: scala.Int | scala.Double = null,
-    onHighlightDate: js.Function1[/* date */ stdLib.Date, scala.Unit] = null,
-    onHighlightRange: js.Function1[/* date */ stdLib.Date, scala.Unit] = null,
-    onSelect: js.Function1[/* value */ OnSelectCallbackParam, scala.Unit] = null,
-    onSelectStart: js.Function1[/* value */ momentDashRangeLib.momentDashRangeMod.MomentRangeExtends, scala.Unit] = null,
+    onHighlightDate: /* date */ stdLib.Date => scala.Unit = null,
+    onHighlightRange: /* date */ stdLib.Date => scala.Unit = null,
+    onSelect: /* value */ OnSelectCallbackParam => scala.Unit = null,
+    onSelectStart: /* value */ momentDashRangeLib.momentDashRangeMod.MomentRangeExtends => scala.Unit = null,
     paginationArrowComponent: (reactLib.reactMod.ReactNs.ComponentClass[PaginationArrowProps[js.Object], reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.SFC[PaginationArrowProps[js.Object]] = null,
     ref: reactLib.reactMod.ReactNs.LegacyRef[T] = null,
     selectedLabel: java.lang.String = null,
@@ -96,10 +96,10 @@ object Props {
     if (maximumDate != null) __obj.updateDynamic("maximumDate")(maximumDate)
     if (minimumDate != null) __obj.updateDynamic("minimumDate")(minimumDate)
     if (numberOfCalendars != null) __obj.updateDynamic("numberOfCalendars")(numberOfCalendars.asInstanceOf[js.Any])
-    if (onHighlightDate != null) __obj.updateDynamic("onHighlightDate")(onHighlightDate)
-    if (onHighlightRange != null) __obj.updateDynamic("onHighlightRange")(onHighlightRange)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (onSelectStart != null) __obj.updateDynamic("onSelectStart")(onSelectStart)
+    if (onHighlightDate != null) __obj.updateDynamic("onHighlightDate")(js.Any.fromFunction1(onHighlightDate))
+    if (onHighlightRange != null) __obj.updateDynamic("onHighlightRange")(js.Any.fromFunction1(onHighlightRange))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
+    if (onSelectStart != null) __obj.updateDynamic("onSelectStart")(js.Any.fromFunction1(onSelectStart))
     if (paginationArrowComponent != null) __obj.updateDynamic("paginationArrowComponent")(paginationArrowComponent.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (selectedLabel != null) __obj.updateDynamic("selectedLabel")(selectedLabel)

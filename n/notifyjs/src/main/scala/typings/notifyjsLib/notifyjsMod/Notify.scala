@@ -28,16 +28,16 @@ trait Notify extends js.Object {
 object Notify {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    handleEvent: js.Function1[stdLib.Event, scala.Unit],
-    onClickNotification: js.Function0[scala.Unit],
-    onCloseNotification: js.Function0[scala.Unit],
-    onErrorNotification: js.Function0[scala.Unit],
-    onShowNotification: js.Function1[stdLib.Event, scala.Unit],
-    show: js.Function0[scala.Unit]
+    close: () => scala.Unit,
+    destroy: () => scala.Unit,
+    handleEvent: stdLib.Event => scala.Unit,
+    onClickNotification: () => scala.Unit,
+    onCloseNotification: () => scala.Unit,
+    onErrorNotification: () => scala.Unit,
+    onShowNotification: stdLib.Event => scala.Unit,
+    show: () => scala.Unit
   ): Notify = {
-    val __obj = js.Dynamic.literal(close = close, destroy = destroy, handleEvent = handleEvent, onClickNotification = onClickNotification, onCloseNotification = onCloseNotification, onErrorNotification = onErrorNotification, onShowNotification = onShowNotification, show = show)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), handleEvent = js.Any.fromFunction1(handleEvent), onClickNotification = js.Any.fromFunction0(onClickNotification), onCloseNotification = js.Any.fromFunction0(onCloseNotification), onErrorNotification = js.Any.fromFunction0(onErrorNotification), onShowNotification = js.Any.fromFunction1(onShowNotification), show = js.Any.fromFunction0(show))
   
     __obj.asInstanceOf[Notify]
   }

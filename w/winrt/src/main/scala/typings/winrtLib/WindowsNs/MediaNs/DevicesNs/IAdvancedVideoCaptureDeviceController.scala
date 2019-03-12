@@ -13,10 +13,10 @@ trait IAdvancedVideoCaptureDeviceController extends js.Object {
 object IAdvancedVideoCaptureDeviceController {
   @scala.inline
   def apply(
-    getDeviceProperty: js.Function1[java.lang.String, js.Any],
-    setDeviceProperty: js.Function2[java.lang.String, js.Any, scala.Unit]
+    getDeviceProperty: java.lang.String => js.Any,
+    setDeviceProperty: (java.lang.String, js.Any) => scala.Unit
   ): IAdvancedVideoCaptureDeviceController = {
-    val __obj = js.Dynamic.literal(getDeviceProperty = getDeviceProperty, setDeviceProperty = setDeviceProperty)
+    val __obj = js.Dynamic.literal(getDeviceProperty = js.Any.fromFunction1(getDeviceProperty), setDeviceProperty = js.Any.fromFunction2(setDeviceProperty))
   
     __obj.asInstanceOf[IAdvancedVideoCaptureDeviceController]
   }

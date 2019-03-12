@@ -25,14 +25,14 @@ trait IRandomAccessIterator[T, Iterator /* <: IRandomAccessIterator[T, Iterator]
 object IRandomAccessIterator {
   @scala.inline
   def apply[T, Iterator /* <: IRandomAccessIterator[T, Iterator] */](
-    advance: js.Function1[scala.Double, Iterator],
-    equals: js.Function1[Iterator, scala.Boolean],
-    index: js.Function0[scala.Double],
-    next: js.Function0[Iterator],
-    prev: js.Function0[Iterator],
+    advance: scala.Double => Iterator,
+    equals: Iterator => scala.Boolean,
+    index: () => scala.Double,
+    next: () => Iterator,
+    prev: () => Iterator,
     value: T
   ): IRandomAccessIterator[T, Iterator] = {
-    val __obj = js.Dynamic.literal(advance = advance, equals = equals, index = index, next = next, prev = prev, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(advance = js.Any.fromFunction1(advance), equals = js.Any.fromFunction1(equals), index = js.Any.fromFunction0(index), next = js.Any.fromFunction0(next), prev = js.Any.fromFunction0(prev), value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IRandomAccessIterator[T, Iterator]]
   }

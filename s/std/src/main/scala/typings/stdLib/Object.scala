@@ -24,14 +24,14 @@ object Object {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[PropertyKey, scala.Boolean],
-    isPrototypeOf: js.Function1[js.Object, scala.Boolean],
-    propertyIsEnumerable: js.Function1[PropertyKey, scala.Boolean],
-    toLocaleString: js.Function0[java.lang.String],
-    toString: js.Function0[java.lang.String],
-    valueOf: js.Function0[js.Object]
+    hasOwnProperty: PropertyKey => scala.Boolean,
+    isPrototypeOf: js.Object => scala.Boolean,
+    propertyIsEnumerable: PropertyKey => scala.Boolean,
+    toLocaleString: () => java.lang.String,
+    toString: () => java.lang.String,
+    valueOf: () => js.Object
   ): Object = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, isPrototypeOf = isPrototypeOf, propertyIsEnumerable = propertyIsEnumerable, toLocaleString = toLocaleString, toString = toString, valueOf = valueOf)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), isPrototypeOf = js.Any.fromFunction1(isPrototypeOf), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), toLocaleString = js.Any.fromFunction0(toLocaleString), toString = js.Any.fromFunction0(toString), valueOf = js.Any.fromFunction0(valueOf))
   
     __obj.asInstanceOf[Object]
   }

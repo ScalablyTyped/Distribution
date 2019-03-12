@@ -21,7 +21,7 @@ trait Delete extends js.Object {
   /**
     * The primary key of the item to be deleted. Each element consists of an attribute name and a value for that attribute.
     */
-  var Key: Key
+  var Key: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.Key
   /**
     * Use ReturnValuesOnConditionCheckFailure to get the item attributes if the Delete condition fails. For ReturnValuesOnConditionCheckFailure, the valid values are: NONE and ALL_OLD.
     */
@@ -29,7 +29,7 @@ trait Delete extends js.Object {
   /**
     * Name of the table in which the item to be deleted resides.
     */
-  var TableName: TableName
+  var TableName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TableName
 }
 
 object Delete {

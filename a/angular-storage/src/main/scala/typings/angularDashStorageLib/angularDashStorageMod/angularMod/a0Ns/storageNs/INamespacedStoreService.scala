@@ -31,11 +31,11 @@ trait INamespacedStoreService extends js.Object {
 object INamespacedStoreService {
   @scala.inline
   def apply(
-    get: js.Function1[java.lang.String, js.Any],
-    remove: js.Function1[java.lang.String, scala.Unit],
-    set: js.Function2[java.lang.String, js.Any, scala.Unit]
+    get: java.lang.String => js.Any,
+    remove: java.lang.String => scala.Unit,
+    set: (java.lang.String, js.Any) => scala.Unit
   ): INamespacedStoreService = {
-    val __obj = js.Dynamic.literal(get = get, remove = remove, set = set)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set))
   
     __obj.asInstanceOf[INamespacedStoreService]
   }

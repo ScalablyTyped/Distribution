@@ -11,11 +11,11 @@ trait NanoidAsync extends js.Object {
   def apply(size: scala.Double): js.Promise[java.lang.String] = js.native
   def apply(
     size: scala.Double,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* id */ java.lang.String, _]
+    callback: js.Function2[/* error */ stdLib.Error | scala.Null, /* id */ java.lang.String, _]
   ): scala.Unit = js.native
   def apply(
     size: scala.Null,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* id */ java.lang.String, _]
+    callback: js.Function2[/* error */ stdLib.Error | scala.Null, /* id */ java.lang.String, _]
   ): scala.Unit = js.native
 }
 

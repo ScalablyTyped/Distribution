@@ -19,19 +19,16 @@ trait ISmsDeviceMessageStore extends js.Object {
 object ISmsDeviceMessageStore {
   @scala.inline
   def apply(
-    deleteMessageAsync: js.Function1[scala.Double, winrtLib.WindowsNs.FoundationNs.IAsyncAction],
-    deleteMessagesAsync: js.Function1[SmsMessageFilter, winrtLib.WindowsNs.FoundationNs.IAsyncAction],
-    getMessageAsync: js.Function1[scala.Double, winrtLib.WindowsNs.FoundationNs.IAsyncOperation[ISmsMessage]],
-    getMessagesAsync: js.Function1[
-      SmsMessageFilter, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[
-        winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ISmsMessage], 
-        scala.Double
-      ]
+    deleteMessageAsync: scala.Double => winrtLib.WindowsNs.FoundationNs.IAsyncAction,
+    deleteMessagesAsync: SmsMessageFilter => winrtLib.WindowsNs.FoundationNs.IAsyncAction,
+    getMessageAsync: scala.Double => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[ISmsMessage],
+    getMessagesAsync: SmsMessageFilter => winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ISmsMessage], 
+      scala.Double
     ],
     maxMessages: scala.Double
   ): ISmsDeviceMessageStore = {
-    val __obj = js.Dynamic.literal(deleteMessageAsync = deleteMessageAsync, deleteMessagesAsync = deleteMessagesAsync, getMessageAsync = getMessageAsync, getMessagesAsync = getMessagesAsync, maxMessages = maxMessages)
+    val __obj = js.Dynamic.literal(deleteMessageAsync = js.Any.fromFunction1(deleteMessageAsync), deleteMessagesAsync = js.Any.fromFunction1(deleteMessagesAsync), getMessageAsync = js.Any.fromFunction1(getMessageAsync), getMessagesAsync = js.Any.fromFunction1(getMessagesAsync), maxMessages = maxMessages)
   
     __obj.asInstanceOf[ISmsDeviceMessageStore]
   }

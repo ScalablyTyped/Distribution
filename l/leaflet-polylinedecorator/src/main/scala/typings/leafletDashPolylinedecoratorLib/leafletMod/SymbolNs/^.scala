@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSGlobal("leaflet.Symbol")
 @js.native
 object ^ extends js.Object {
-  def arrowHead(): leafletDashPolylinedecoratorLib.leafletMod.SymbolNs.ArrowHead = js.native
-  def arrowHead(options: leafletDashPolylinedecoratorLib.leafletMod.SymbolNs.ArrowHeadOptions): leafletDashPolylinedecoratorLib.leafletMod.SymbolNs.ArrowHead = js.native
-  def dash(): leafletDashPolylinedecoratorLib.leafletMod.SymbolNs.Dash = js.native
-  def dash(options: leafletDashPolylinedecoratorLib.leafletMod.SymbolNs.DashOptions): leafletDashPolylinedecoratorLib.leafletMod.SymbolNs.Dash = js.native
-  def marker(): leafletDashPolylinedecoratorLib.leafletMod.SymbolNs.Marker = js.native
-  def marker(options: leafletDashPolylinedecoratorLib.leafletMod.SymbolNs.MarkerOptions): leafletDashPolylinedecoratorLib.leafletMod.SymbolNs.Marker = js.native
+  def arrowHead(): ArrowHead = js.native
+  def arrowHead(options: ArrowHeadOptions): ArrowHead = js.native
+  def dash(): Dash = js.native
+  def dash(options: DashOptions): Dash = js.native
+  def marker(): Marker = js.native
+  def marker(options: MarkerOptions): Marker = js.native
 }
 

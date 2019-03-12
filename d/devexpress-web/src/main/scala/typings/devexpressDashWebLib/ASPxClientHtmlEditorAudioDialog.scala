@@ -30,28 +30,28 @@ trait ASPxClientHtmlEditorAudioDialog extends ASPxClientHtmlEditorMediaDialogBas
 object ASPxClientHtmlEditorAudioDialog {
   @scala.inline
   def apply(
-    GetAutoPlayCheckBox: js.Function0[ASPxClientCheckBox],
-    GetBorderColorColorEdit: js.Function0[ASPxClientColorEdit],
-    GetBorderStyleComboBox: js.Function0[ASPxClientComboBox],
-    GetBorderWidthSpinEdit: js.Function0[ASPxClientSpinEdit],
-    GetBottomMarginTextBox: js.Function0[ASPxClientTextBox],
-    GetCancelButton: js.Function0[ASPxClientButton],
-    GetCssClassNameComboBox: js.Function0[ASPxClientComboBox],
-    GetFormLayout: js.Function0[ASPxClientFormLayout],
-    GetHeightSpinEdit: js.Function0[ASPxClientSpinEdit],
-    GetLeftMarginTextBox: js.Function0[ASPxClientTextBox],
-    GetLoopCheckBox: js.Function0[ASPxClientCheckBox],
-    GetMediaFileSelector: js.Function0[ASPxClientMediaFileSelector],
-    GetMoreOptionsCheckBox: js.Function0[ASPxClientCheckBox],
-    GetOkButton: js.Function0[ASPxClientButton],
-    GetPositionComboBox: js.Function0[ASPxClientComboBox],
-    GetPreloadModeComboBox: js.Function0[ASPxClientComboBox],
-    GetRightMarginTextBox: js.Function0[ASPxClientTextBox],
-    GetShowPlayerControlsCheckBox: js.Function0[ASPxClientCheckBox],
-    GetTopMarginTextBox: js.Function0[ASPxClientTextBox],
-    GetWidthSpinEdit: js.Function0[ASPxClientSpinEdit]
+    GetAutoPlayCheckBox: () => ASPxClientCheckBox,
+    GetBorderColorColorEdit: () => ASPxClientColorEdit,
+    GetBorderStyleComboBox: () => ASPxClientComboBox,
+    GetBorderWidthSpinEdit: () => ASPxClientSpinEdit,
+    GetBottomMarginTextBox: () => ASPxClientTextBox,
+    GetCancelButton: () => ASPxClientButton,
+    GetCssClassNameComboBox: () => ASPxClientComboBox,
+    GetFormLayout: () => ASPxClientFormLayout,
+    GetHeightSpinEdit: () => ASPxClientSpinEdit,
+    GetLeftMarginTextBox: () => ASPxClientTextBox,
+    GetLoopCheckBox: () => ASPxClientCheckBox,
+    GetMediaFileSelector: () => ASPxClientMediaFileSelector,
+    GetMoreOptionsCheckBox: () => ASPxClientCheckBox,
+    GetOkButton: () => ASPxClientButton,
+    GetPositionComboBox: () => ASPxClientComboBox,
+    GetPreloadModeComboBox: () => ASPxClientComboBox,
+    GetRightMarginTextBox: () => ASPxClientTextBox,
+    GetShowPlayerControlsCheckBox: () => ASPxClientCheckBox,
+    GetTopMarginTextBox: () => ASPxClientTextBox,
+    GetWidthSpinEdit: () => ASPxClientSpinEdit
   ): ASPxClientHtmlEditorAudioDialog = {
-    val __obj = js.Dynamic.literal(GetAutoPlayCheckBox = GetAutoPlayCheckBox, GetBorderColorColorEdit = GetBorderColorColorEdit, GetBorderStyleComboBox = GetBorderStyleComboBox, GetBorderWidthSpinEdit = GetBorderWidthSpinEdit, GetBottomMarginTextBox = GetBottomMarginTextBox, GetCancelButton = GetCancelButton, GetCssClassNameComboBox = GetCssClassNameComboBox, GetFormLayout = GetFormLayout, GetHeightSpinEdit = GetHeightSpinEdit, GetLeftMarginTextBox = GetLeftMarginTextBox, GetLoopCheckBox = GetLoopCheckBox, GetMediaFileSelector = GetMediaFileSelector, GetMoreOptionsCheckBox = GetMoreOptionsCheckBox, GetOkButton = GetOkButton, GetPositionComboBox = GetPositionComboBox, GetPreloadModeComboBox = GetPreloadModeComboBox, GetRightMarginTextBox = GetRightMarginTextBox, GetShowPlayerControlsCheckBox = GetShowPlayerControlsCheckBox, GetTopMarginTextBox = GetTopMarginTextBox, GetWidthSpinEdit = GetWidthSpinEdit)
+    val __obj = js.Dynamic.literal(GetAutoPlayCheckBox = js.Any.fromFunction0(GetAutoPlayCheckBox), GetBorderColorColorEdit = js.Any.fromFunction0(GetBorderColorColorEdit), GetBorderStyleComboBox = js.Any.fromFunction0(GetBorderStyleComboBox), GetBorderWidthSpinEdit = js.Any.fromFunction0(GetBorderWidthSpinEdit), GetBottomMarginTextBox = js.Any.fromFunction0(GetBottomMarginTextBox), GetCancelButton = js.Any.fromFunction0(GetCancelButton), GetCssClassNameComboBox = js.Any.fromFunction0(GetCssClassNameComboBox), GetFormLayout = js.Any.fromFunction0(GetFormLayout), GetHeightSpinEdit = js.Any.fromFunction0(GetHeightSpinEdit), GetLeftMarginTextBox = js.Any.fromFunction0(GetLeftMarginTextBox), GetLoopCheckBox = js.Any.fromFunction0(GetLoopCheckBox), GetMediaFileSelector = js.Any.fromFunction0(GetMediaFileSelector), GetMoreOptionsCheckBox = js.Any.fromFunction0(GetMoreOptionsCheckBox), GetOkButton = js.Any.fromFunction0(GetOkButton), GetPositionComboBox = js.Any.fromFunction0(GetPositionComboBox), GetPreloadModeComboBox = js.Any.fromFunction0(GetPreloadModeComboBox), GetRightMarginTextBox = js.Any.fromFunction0(GetRightMarginTextBox), GetShowPlayerControlsCheckBox = js.Any.fromFunction0(GetShowPlayerControlsCheckBox), GetTopMarginTextBox = js.Any.fromFunction0(GetTopMarginTextBox), GetWidthSpinEdit = js.Any.fromFunction0(GetWidthSpinEdit))
   
     __obj.asInstanceOf[ASPxClientHtmlEditorAudioDialog]
   }

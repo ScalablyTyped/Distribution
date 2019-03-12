@@ -15,12 +15,12 @@ trait IPropertyValuesWithIconClues extends js.Object {
 object IPropertyValuesWithIconClues {
   @scala.inline
   def apply(
-    Clone: js.Function0[IPropertyValuesWithIconClues],
+    Clone: () => IPropertyValuesWithIconClues,
     IconClues: IPropertyValueIconClues,
     ObjVer: IObjVer,
     PropertyValues: IPropertyValues
   ): IPropertyValuesWithIconClues = {
-    val __obj = js.Dynamic.literal(Clone = Clone, IconClues = IconClues, ObjVer = ObjVer, PropertyValues = PropertyValues)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), IconClues = IconClues, ObjVer = ObjVer, PropertyValues = PropertyValues)
   
     __obj.asInstanceOf[IPropertyValuesWithIconClues]
   }

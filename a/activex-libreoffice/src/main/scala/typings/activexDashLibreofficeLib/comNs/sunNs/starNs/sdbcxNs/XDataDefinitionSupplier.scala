@@ -31,17 +31,13 @@ trait XDataDefinitionSupplier
 object XDataDefinitionSupplier {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getDataDefinitionByConnection: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection, XTablesSupplier],
-    getDataDefinitionByURL: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      XTablesSupplier
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDataDefinitionByConnection: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection => XTablesSupplier,
+    getDataDefinitionByURL: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => XTablesSupplier,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDataDefinitionSupplier = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getDataDefinitionByConnection = getDataDefinitionByConnection, getDataDefinitionByURL = getDataDefinitionByURL, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDataDefinitionByConnection = js.Any.fromFunction1(getDataDefinitionByConnection), getDataDefinitionByURL = js.Any.fromFunction2(getDataDefinitionByURL), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDataDefinitionSupplier]
   }

@@ -21,13 +21,13 @@ object ChooseImageOptions {
   def apply(
     count: scala.Double,
     sourceType: js.Array[ImageSourceType],
-    success: js.Function1[aliDashAppLib.Anon_ApFilePaths, scala.Unit],
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
-    fail: js.Function1[js.Any, scala.Unit] = null
+    success: aliDashAppLib.Anon_ApFilePaths => scala.Unit,
+    complete: /* res */ js.Any => scala.Unit = null,
+    fail: js.Any => scala.Unit = null
   ): ChooseImageOptions = {
-    val __obj = js.Dynamic.literal(count = count, sourceType = sourceType, success = success)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    val __obj = js.Dynamic.literal(count = count, sourceType = sourceType, success = js.Any.fromFunction1(success))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[ChooseImageOptions]
   }
 }

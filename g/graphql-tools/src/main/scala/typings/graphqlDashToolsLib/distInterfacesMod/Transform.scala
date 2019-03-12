@@ -19,17 +19,14 @@ trait Transform extends js.Object {
 object Transform {
   @scala.inline
   def apply(
-    transformRequest: js.Function1[/* originalRequest */ Request, Request] = null,
-    transformResult: js.Function1[/* result */ Result, Result] = null,
-    transformSchema: js.Function1[
-      /* schema */ graphqlLib.graphqlMod.GraphQLSchema, 
-      graphqlLib.graphqlMod.GraphQLSchema
-    ] = null
+    transformRequest: /* originalRequest */ Request => Request = null,
+    transformResult: /* result */ Result => Result = null,
+    transformSchema: /* schema */ graphqlLib.graphqlMod.GraphQLSchema => graphqlLib.graphqlMod.GraphQLSchema = null
   ): Transform = {
     val __obj = js.Dynamic.literal()
-    if (transformRequest != null) __obj.updateDynamic("transformRequest")(transformRequest)
-    if (transformResult != null) __obj.updateDynamic("transformResult")(transformResult)
-    if (transformSchema != null) __obj.updateDynamic("transformSchema")(transformSchema)
+    if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction1(transformRequest))
+    if (transformResult != null) __obj.updateDynamic("transformResult")(js.Any.fromFunction1(transformResult))
+    if (transformSchema != null) __obj.updateDynamic("transformSchema")(js.Any.fromFunction1(transformSchema))
     __obj.asInstanceOf[Transform]
   }
 }

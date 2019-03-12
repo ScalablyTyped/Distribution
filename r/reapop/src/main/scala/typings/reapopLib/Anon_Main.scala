@@ -14,11 +14,11 @@ object Anon_Main {
   @scala.inline
   def apply(
     main: java.lang.String = null,
-    position: js.Function1[/* position */ java.lang.String, java.lang.String] = null
+    position: /* position */ java.lang.String => java.lang.String = null
   ): Anon_Main = {
     val __obj = js.Dynamic.literal()
     if (main != null) __obj.updateDynamic("main")(main)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(js.Any.fromFunction1(position))
     __obj.asInstanceOf[Anon_Main]
   }
 }

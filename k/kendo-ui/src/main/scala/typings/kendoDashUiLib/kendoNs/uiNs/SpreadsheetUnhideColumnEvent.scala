@@ -13,13 +13,13 @@ trait SpreadsheetUnhideColumnEvent extends SpreadsheetEvent {
 object SpreadsheetUnhideColumnEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Spreadsheet,
     index: scala.Int | scala.Double = null,
     sheet: kendoDashUiLib.kendoNs.spreadsheetNs.Sheet = null
   ): SpreadsheetUnhideColumnEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (sheet != null) __obj.updateDynamic("sheet")(sheet)
     __obj.asInstanceOf[SpreadsheetUnhideColumnEvent]

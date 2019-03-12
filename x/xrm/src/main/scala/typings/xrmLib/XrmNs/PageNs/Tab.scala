@@ -17,18 +17,18 @@ trait Tab
 object Tab {
   @scala.inline
   def apply(
-    getDisplayState: js.Function0[xrmLib.XrmNs.DisplayState],
-    getLabel: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getParent: js.Function0[xrmLib.XrmNs.Ui],
-    getVisible: js.Function0[scala.Boolean],
+    getDisplayState: () => xrmLib.XrmNs.DisplayState,
+    getLabel: () => java.lang.String,
+    getName: () => java.lang.String,
+    getParent: () => xrmLib.XrmNs.Ui,
+    getVisible: () => scala.Boolean,
     sections: xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.Section],
-    setDisplayState: js.Function1[xrmLib.XrmNs.DisplayState, scala.Unit],
-    setFocus: js.Function0[scala.Unit],
-    setLabel: js.Function1[java.lang.String, scala.Unit],
-    setVisible: js.Function1[scala.Boolean, scala.Unit]
+    setDisplayState: xrmLib.XrmNs.DisplayState => scala.Unit,
+    setFocus: () => scala.Unit,
+    setLabel: java.lang.String => scala.Unit,
+    setVisible: scala.Boolean => scala.Unit
   ): Tab = {
-    val __obj = js.Dynamic.literal(getDisplayState = getDisplayState, getLabel = getLabel, getName = getName, getParent = getParent, getVisible = getVisible, sections = sections, setDisplayState = setDisplayState, setFocus = setFocus, setLabel = setLabel, setVisible = setVisible)
+    val __obj = js.Dynamic.literal(getDisplayState = js.Any.fromFunction0(getDisplayState), getLabel = js.Any.fromFunction0(getLabel), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getVisible = js.Any.fromFunction0(getVisible), sections = sections, setDisplayState = js.Any.fromFunction1(setDisplayState), setFocus = js.Any.fromFunction0(setFocus), setLabel = js.Any.fromFunction1(setLabel), setVisible = js.Any.fromFunction1(setVisible))
   
     __obj.asInstanceOf[Tab]
   }

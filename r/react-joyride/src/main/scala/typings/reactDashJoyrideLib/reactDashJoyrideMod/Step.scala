@@ -44,7 +44,7 @@ trait Step extends OverridableProps {
   /**
     * The target for the step. It can be a CSS selector or an HtmlElement directly (but using refs created in the same render would required an additional render afterwards).
     */
-  var target: reactLib.HTMLElement | java.lang.String
+  var target: stdLib.HTMLElement | java.lang.String
   /**
     * The tooltip's title.
     */
@@ -55,7 +55,7 @@ object Step {
   @scala.inline
   def apply(
     content: reactLib.reactMod.ReactNs.ReactNode | java.lang.String,
-    target: reactLib.HTMLElement | java.lang.String,
+    target: stdLib.HTMLElement | java.lang.String,
     beaconComponent: reactLib.reactMod.ReactNs.ReactNode = null,
     disableBeacon: js.UndefOr[scala.Boolean] = js.undefined,
     disableCloseOnEsc: js.UndefOr[scala.Boolean] = js.undefined,

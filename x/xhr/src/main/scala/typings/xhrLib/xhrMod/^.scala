@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("xhr", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: xhrLib.xhrMod.XhrStatic = js.native
+  val default: XhrStatic = js.native
 }
 

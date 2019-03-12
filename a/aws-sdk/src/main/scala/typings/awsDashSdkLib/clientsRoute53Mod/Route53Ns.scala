@@ -34,7 +34,7 @@ object Route53Ns extends js.Object {
     /**
       *  Alias resource record sets only: The value that you specify depends on where you want to route queries:  CloudFront distribution  Specify the domain name that CloudFront assigned when you created your distribution. Your CloudFront distribution must include an alternate domain name that matches the name of the resource record set. For example, if the name of the resource record set is acme.example.com, your CloudFront distribution must include acme.example.com as one of the alternate domain names. For more information, see Using Alternate Domain Names (CNAMEs) in the Amazon CloudFront Developer Guide.  For failover alias records, you can't specify a CloudFront distribution for both the primary and secondary records. A distribution must include an alternate domain name that matches the name of the record. However, the primary and secondary records have the same name, and you can't include the same alternate domain name in more than one distribution.    Elastic Beanstalk environment  If the domain name for your Elastic Beanstalk environment includes the region that you deployed the environment in, you can create an alias record that routes traffic to the environment. For example, the domain name my-environment.us-west-2.elasticbeanstalk.com is a regionalized domain name.   For environments that were created before early 2016, the domain name doesn't include the region. To route traffic to these environments, you must create a CNAME record instead of an alias record. Note that you can't create a CNAME record for the root domain name. For example, if your domain name is example.com, you can create a record that routes traffic for acme.example.com to your Elastic Beanstalk environment, but you can't create a record that routes traffic for example.com to your Elastic Beanstalk environment.  For Elastic Beanstalk environments that have regionalized subdomains, specify the CNAME attribute for the environment. You can use the following methods to get the value of the CNAME attribute:    AWS Management Console: For information about how to get the value by using the console, see Using Custom Domains with AWS Elastic Beanstalk in the AWS Elastic Beanstalk Developer Guide.    Elastic Beanstalk API: Use the DescribeEnvironments action to get the value of the CNAME attribute. For more information, see DescribeEnvironments in the AWS Elastic Beanstalk API Reference.    AWS CLI: Use the describe-environments command to get the value of the CNAME attribute. For more information, see describe-environments in the AWS Command Line Interface Reference.    ELB load balancer  Specify the DNS name that is associated with the load balancer. Get the DNS name by using the AWS Management Console, the ELB API, or the AWS CLI.     AWS Management Console: Go to the EC2 page, choose Load Balancers in the navigation pane, choose the load balancer, choose the Description tab, and get the value of the DNS name field.  If you're routing traffic to a Classic Load Balancer, get the value that begins with dualstack. If you're routing traffic to another type of load balancer, get the value that applies to the record type, A or AAAA.    Elastic Load Balancing API: Use DescribeLoadBalancers to get the value of DNSName. For more information, see the applicable guide:   Classic Load Balancers: DescribeLoadBalancers    Application and Network Load Balancers: DescribeLoadBalancers       AWS CLI: Use describe-load-balancers to get the value of DNSName. For more information, see the applicable guide:   Classic Load Balancers: describe-load-balancers    Application and Network Load Balancers: describe-load-balancers       Amazon S3 bucket that is configured as a static website  Specify the domain name of the Amazon S3 website endpoint that you created the bucket in, for example, s3-website.us-east-2.amazonaws.com. For more information about valid values, see the table Amazon Simple Storage Service (S3) Website Endpoints in the Amazon Web Services General Reference. For more information about using S3 buckets for websites, see Getting Started with Amazon Route 53 in the Amazon Route 53 Developer Guide.   Another Route 53 resource record set  Specify the value of the Name element for a resource record set in the current hosted zone.  If you're creating an alias record that has the same name as the hosted zone (known as the zone apex), you can't specify the domain name for a record for which the value of Type is CNAME. This is because the alias record must have the same type as the record that you're routing traffic to, and creating a CNAME record for the zone apex isn't supported even for an alias record.   
       */
-    var DNSName: DNSName
+    var DNSName: awsDashSdkLib.clientsRoute53Mod.Route53Ns.DNSName
     /**
       *  Applies only to alias, failover alias, geolocation alias, latency alias, and weighted alias resource record sets: When EvaluateTargetHealth is true, an alias resource record set inherits the health of the referenced AWS resource, such as an ELB load balancer or another resource record set in the hosted zone. Note the following:  CloudFront distributions  You can't set EvaluateTargetHealth to true when the alias target is a CloudFront distribution.  Elastic Beanstalk environments that have regionalized subdomains  If you specify an Elastic Beanstalk environment in DNSName and the environment contains an ELB load balancer, Elastic Load Balancing routes queries only to the healthy Amazon EC2 instances that are registered with the load balancer. (An environment automatically contains an ELB load balancer if it includes more than one Amazon EC2 instance.) If you set EvaluateTargetHealth to true and either no Amazon EC2 instances are healthy or the load balancer itself is unhealthy, Route 53 routes queries to other available resources that are healthy, if any.  If the environment contains a single Amazon EC2 instance, there are no special requirements.  ELB load balancers  Health checking behavior depends on the type of load balancer:    Classic Load Balancers: If you specify an ELB Classic Load Balancer in DNSName, Elastic Load Balancing routes queries only to the healthy Amazon EC2 instances that are registered with the load balancer. If you set EvaluateTargetHealth to true and either no EC2 instances are healthy or the load balancer itself is unhealthy, Route 53 routes queries to other resources.    Application and Network Load Balancers: If you specify an ELB Application or Network Load Balancer and you set EvaluateTargetHealth to true, Route 53 routes queries to the load balancer based on the health of the target groups that are associated with the load balancer:   For an Application or Network Load Balancer to be considered healthy, every target group that contains targets must contain at least one healthy target. If any target group contains only unhealthy targets, the load balancer is considered unhealthy, and Route 53 routes queries to other resources.   A target group that has no registered targets is considered healthy.      When you create a load balancer, you configure settings for Elastic Load Balancing health checks; they're not Route 53 health checks, but they perform a similar function. Do not create Route 53 health checks for the EC2 instances that you register with an ELB load balancer.    S3 buckets  There are no special requirements for setting EvaluateTargetHealth to true when the alias target is an S3 bucket.  Other records in the same hosted zone  If the AWS resource that you specify in DNSName is a record or a group of records (for example, a group of weighted records) but is not another alias record, we recommend that you associate a health check with all of the records in the alias target. For more information, see What Happens When You Omit Health Checks? in the Amazon Route 53 Developer Guide.   For more information and examples, see Amazon Route 53 Health Checks and DNS Failover in the Amazon Route 53 Developer Guide.
       */
@@ -57,14 +57,14 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains information about the VPC that you want to associate with a private hosted zone.
       */
-    var VPC: VPC
+    var VPC: awsDashSdkLib.clientsRoute53Mod.Route53Ns.VPC
   }
   
   trait AssociateVPCWithHostedZoneResponse extends js.Object {
     /**
       * A complex type that describes the changes made to your hosted zone.
       */
-    var ChangeInfo: ChangeInfo
+    var ChangeInfo: awsDashSdkLib.clientsRoute53Mod.Route53Ns.ChangeInfo
   }
   
   trait Change extends js.Object {
@@ -75,14 +75,14 @@ object Route53Ns extends js.Object {
     /**
       * Information about the resource record set to create, delete, or update.
       */
-    var ResourceRecordSet: ResourceRecordSet
+    var ResourceRecordSet: awsDashSdkLib.clientsRoute53Mod.Route53Ns.ResourceRecordSet
   }
   
   trait ChangeBatch extends js.Object {
     /**
       * Information about the changes to make to the record sets.
       */
-    var Changes: Changes
+    var Changes: awsDashSdkLib.clientsRoute53Mod.Route53Ns.Changes
     /**
       *  Optional: Any comments you want to include about a change batch request.
       */
@@ -112,7 +112,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains an optional comment and the Changes element.
       */
-    var ChangeBatch: ChangeBatch
+    var ChangeBatch: awsDashSdkLib.clientsRoute53Mod.Route53Ns.ChangeBatch
     /**
       * The ID of the hosted zone that contains the resource record sets that you want to change.
       */
@@ -123,7 +123,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains information about changes made to your hosted zone. This element contains an ID that you use when performing a GetChange action to get detailed information about the change.
       */
-    var ChangeInfo: ChangeInfo
+    var ChangeInfo: awsDashSdkLib.clientsRoute53Mod.Route53Ns.ChangeInfo
   }
   
   trait ChangeTagsForResourceRequest extends js.Object {
@@ -158,7 +158,7 @@ object Route53Ns extends js.Object {
     /**
       * For the metric that the CloudWatch alarm is associated with, the arithmetic operation that is used for the comparison.
       */
-    var ComparisonOperator: ComparisonOperator
+    var ComparisonOperator: awsDashSdkLib.clientsRoute53Mod.Route53Ns.ComparisonOperator
     /**
       * For the metric that the CloudWatch alarm is associated with, a complex type that contains information about the dimensions for the metric. For information, see Amazon CloudWatch Namespaces, Dimensions, and Metrics Reference in the Amazon CloudWatch User Guide.
       */
@@ -166,27 +166,27 @@ object Route53Ns extends js.Object {
     /**
       * For the metric that the CloudWatch alarm is associated with, the number of periods that the metric is compared to the threshold.
       */
-    var EvaluationPeriods: EvaluationPeriods
+    var EvaluationPeriods: awsDashSdkLib.clientsRoute53Mod.Route53Ns.EvaluationPeriods
     /**
       * The name of the CloudWatch metric that the alarm is associated with.
       */
-    var MetricName: MetricName
+    var MetricName: awsDashSdkLib.clientsRoute53Mod.Route53Ns.MetricName
     /**
       * The namespace of the metric that the alarm is associated with. For more information, see Amazon CloudWatch Namespaces, Dimensions, and Metrics Reference in the Amazon CloudWatch User Guide.
       */
-    var Namespace: Namespace
+    var Namespace: awsDashSdkLib.clientsRoute53Mod.Route53Ns.Namespace
     /**
       * For the metric that the CloudWatch alarm is associated with, the duration of one evaluation period in seconds.
       */
-    var Period: Period
+    var Period: awsDashSdkLib.clientsRoute53Mod.Route53Ns.Period
     /**
       * For the metric that the CloudWatch alarm is associated with, the statistic that is applied to the metric.
       */
-    var Statistic: Statistic
+    var Statistic: awsDashSdkLib.clientsRoute53Mod.Route53Ns.Statistic
     /**
       * For the metric that the CloudWatch alarm is associated with, the value the metric is compared with.
       */
-    var Threshold: Threshold
+    var Threshold: awsDashSdkLib.clientsRoute53Mod.Route53Ns.Threshold
   }
   
   trait CreateHealthCheckRequest extends js.Object {
@@ -197,14 +197,14 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains settings for a new health check.
       */
-    var HealthCheckConfig: HealthCheckConfig
+    var HealthCheckConfig: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HealthCheckConfig
   }
   
   trait CreateHealthCheckResponse extends js.Object {
     /**
       * A complex type that contains identifying information about the health check.
       */
-    var HealthCheck: HealthCheck
+    var HealthCheck: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HealthCheck
     /**
       * The unique URL representing the new health check.
       */
@@ -238,15 +238,15 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains information about the CreateHostedZone request.
       */
-    var ChangeInfo: ChangeInfo
+    var ChangeInfo: awsDashSdkLib.clientsRoute53Mod.Route53Ns.ChangeInfo
     /**
       * A complex type that describes the name servers for this hosted zone.
       */
-    var DelegationSet: DelegationSet
+    var DelegationSet: awsDashSdkLib.clientsRoute53Mod.Route53Ns.DelegationSet
     /**
       * A complex type that contains general information about the hosted zone.
       */
-    var HostedZone: HostedZone
+    var HostedZone: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HostedZone
     /**
       * The unique URL representing the new hosted zone.
       */
@@ -261,7 +261,7 @@ object Route53Ns extends js.Object {
     /**
       * The Amazon Resource Name (ARN) for the log group that you want to Amazon Route 53 to send query logs to. This is the format of the ARN: arn:aws:logs:region:account-id:log-group:log_group_name  To get the ARN for a log group, you can use the CloudWatch console, the DescribeLogGroups API action, the describe-log-groups command, or the applicable command in one of the AWS SDKs.
       */
-    var CloudWatchLogsLogGroupArn: CloudWatchLogsLogGroupArn
+    var CloudWatchLogsLogGroupArn: awsDashSdkLib.clientsRoute53Mod.Route53Ns.CloudWatchLogsLogGroupArn
     /**
       * The ID of the hosted zone that you want to log queries for. You can log queries only for public hosted zones.
       */
@@ -276,7 +276,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains the ID for a query logging configuration, the ID of the hosted zone that you want to log queries for, and the ARN for the log group that you want Amazon Route 53 to send query logs to.
       */
-    var QueryLoggingConfig: QueryLoggingConfig
+    var QueryLoggingConfig: awsDashSdkLib.clientsRoute53Mod.Route53Ns.QueryLoggingConfig
   }
   
   trait CreateReusableDelegationSetRequest extends js.Object {
@@ -294,7 +294,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains name server information.
       */
-    var DelegationSet: DelegationSet
+    var DelegationSet: awsDashSdkLib.clientsRoute53Mod.Route53Ns.DelegationSet
     /**
       * The unique URL representing the new reusable delegation set.
       */
@@ -313,15 +313,15 @@ object Route53Ns extends js.Object {
     /**
       * (Optional) The TTL that you want Amazon Route 53 to assign to all of the resource record sets that it creates in the specified hosted zone.
       */
-    var TTL: TTL
+    var TTL: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TTL
     /**
       * The ID of the traffic policy that you want to use to create resource record sets in the specified hosted zone.
       */
-    var TrafficPolicyId: TrafficPolicyId
+    var TrafficPolicyId: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicyId
     /**
       * The version of the traffic policy that you want to use to create resource record sets in the specified hosted zone.
       */
-    var TrafficPolicyVersion: TrafficPolicyVersion
+    var TrafficPolicyVersion: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicyVersion
   }
   
   trait CreateTrafficPolicyInstanceResponse extends js.Object {
@@ -332,7 +332,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains settings for the new traffic policy instance.
       */
-    var TrafficPolicyInstance: TrafficPolicyInstance
+    var TrafficPolicyInstance: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicyInstance
   }
   
   trait CreateTrafficPolicyRequest extends js.Object {
@@ -358,7 +358,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains settings for the new traffic policy.
       */
-    var TrafficPolicy: TrafficPolicy
+    var TrafficPolicy: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicy
   }
   
   trait CreateTrafficPolicyVersionRequest extends js.Object {
@@ -384,7 +384,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains settings for the new version of the traffic policy.
       */
-    var TrafficPolicy: TrafficPolicy
+    var TrafficPolicy: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicy
   }
   
   trait CreateVPCAssociationAuthorizationRequest extends js.Object {
@@ -395,7 +395,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains the VPC ID and region for the VPC that you want to authorize associating with your hosted zone.
       */
-    var VPC: VPC
+    var VPC: awsDashSdkLib.clientsRoute53Mod.Route53Ns.VPC
   }
   
   trait CreateVPCAssociationAuthorizationResponse extends js.Object {
@@ -406,7 +406,7 @@ object Route53Ns extends js.Object {
     /**
       * The VPC that you authorized associating with a hosted zone.
       */
-    var VPC: VPC
+    var VPC: awsDashSdkLib.clientsRoute53Mod.Route53Ns.VPC
   }
   
   trait DelegationSet extends js.Object {
@@ -428,7 +428,7 @@ object Route53Ns extends js.Object {
     /**
       * The ID of the health check that you want to delete.
       */
-    var HealthCheckId: HealthCheckId
+    var HealthCheckId: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HealthCheckId
   }
   
   trait DeleteHealthCheckResponse extends js.Object
@@ -444,7 +444,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains the ID, the status, and the date and time of a request to delete a hosted zone.
       */
-    var ChangeInfo: ChangeInfo
+    var ChangeInfo: awsDashSdkLib.clientsRoute53Mod.Route53Ns.ChangeInfo
   }
   
   trait DeleteQueryLoggingConfigRequest extends js.Object {
@@ -495,7 +495,7 @@ object Route53Ns extends js.Object {
     /**
       * When removing authorization to associate a VPC that was created by one AWS account with a hosted zone that was created with a different AWS account, a complex type that includes the ID and region of the VPC.
       */
-    var VPC: VPC
+    var VPC: awsDashSdkLib.clientsRoute53Mod.Route53Ns.VPC
   }
   
   trait DeleteVPCAssociationAuthorizationResponse extends js.Object
@@ -523,14 +523,14 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains information about the VPC that you're disassociating from the specified hosted zone.
       */
-    var VPC: VPC
+    var VPC: awsDashSdkLib.clientsRoute53Mod.Route53Ns.VPC
   }
   
   trait DisassociateVPCFromHostedZoneResponse extends js.Object {
     /**
       * A complex type that describes the changes made to the specified private hosted zone.
       */
-    var ChangeInfo: ChangeInfo
+    var ChangeInfo: awsDashSdkLib.clientsRoute53Mod.Route53Ns.ChangeInfo
   }
   
   trait GeoLocation extends js.Object {
@@ -604,13 +604,13 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains information about the specified change batch.
       */
-    var ChangeInfo: ChangeInfo
+    var ChangeInfo: awsDashSdkLib.clientsRoute53Mod.Route53Ns.ChangeInfo
   }
   
   trait GetCheckerIpRangesRequest extends js.Object
   
   trait GetCheckerIpRangesResponse extends js.Object {
-    var CheckerIpRanges: CheckerIpRanges
+    var CheckerIpRanges: awsDashSdkLib.clientsRoute53Mod.Route53Ns.CheckerIpRanges
   }
   
   trait GetGeoLocationRequest extends js.Object {
@@ -632,7 +632,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains the codes and full continent, country, and subdivision names for the specified geolocation code.
       */
-    var GeoLocationDetails: GeoLocationDetails
+    var GeoLocationDetails: awsDashSdkLib.clientsRoute53Mod.Route53Ns.GeoLocationDetails
   }
   
   trait GetHealthCheckCountRequest extends js.Object
@@ -641,49 +641,49 @@ object Route53Ns extends js.Object {
     /**
       * The number of health checks associated with the current AWS account.
       */
-    var HealthCheckCount: HealthCheckCount
+    var HealthCheckCount: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HealthCheckCount
   }
   
   trait GetHealthCheckLastFailureReasonRequest extends js.Object {
     /**
       * The ID for the health check for which you want the last failure reason. When you created the health check, CreateHealthCheck returned the ID in the response, in the HealthCheckId element.  If you want to get the last failure reason for a calculated health check, you must use the Amazon Route 53 console or the CloudWatch console. You can't use GetHealthCheckLastFailureReason for a calculated health check. 
       */
-    var HealthCheckId: HealthCheckId
+    var HealthCheckId: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HealthCheckId
   }
   
   trait GetHealthCheckLastFailureReasonResponse extends js.Object {
     /**
       * A list that contains one Observation element for each Amazon Route 53 health checker that is reporting a last failure reason. 
       */
-    var HealthCheckObservations: HealthCheckObservations
+    var HealthCheckObservations: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HealthCheckObservations
   }
   
   trait GetHealthCheckRequest extends js.Object {
     /**
       * The identifier that Amazon Route 53 assigned to the health check when you created it. When you add or update a resource record set, you use this value to specify which health check to use. The value can be up to 64 characters long.
       */
-    var HealthCheckId: HealthCheckId
+    var HealthCheckId: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HealthCheckId
   }
   
   trait GetHealthCheckResponse extends js.Object {
     /**
       * A complex type that contains information about one health check that is associated with the current AWS account.
       */
-    var HealthCheck: HealthCheck
+    var HealthCheck: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HealthCheck
   }
   
   trait GetHealthCheckStatusRequest extends js.Object {
     /**
       * The ID for the health check that you want the current status for. When you created the health check, CreateHealthCheck returned the ID in the response, in the HealthCheckId element.  If you want to check the status of a calculated health check, you must use the Amazon Route 53 console or the CloudWatch console. You can't use GetHealthCheckStatus to get the status of a calculated health check. 
       */
-    var HealthCheckId: HealthCheckId
+    var HealthCheckId: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HealthCheckId
   }
   
   trait GetHealthCheckStatusResponse extends js.Object {
     /**
       * A list that contains one HealthCheckObservation element for each Amazon Route 53 health checker that is reporting a status about the health check endpoint.
       */
-    var HealthCheckObservations: HealthCheckObservations
+    var HealthCheckObservations: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HealthCheckObservations
   }
   
   trait GetHostedZoneCountRequest extends js.Object
@@ -692,7 +692,7 @@ object Route53Ns extends js.Object {
     /**
       * The total number of public and private hosted zones that are associated with the current AWS account.
       */
-    var HostedZoneCount: HostedZoneCount
+    var HostedZoneCount: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HostedZoneCount
   }
   
   trait GetHostedZoneLimitRequest extends js.Object {
@@ -732,7 +732,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains general information about the specified hosted zone.
       */
-    var HostedZone: HostedZone
+    var HostedZone: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HostedZone
     /**
       * A complex type that contains information about the VPCs that are associated with the specified hosted zone.
       */
@@ -750,7 +750,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains information about the query logging configuration that you specified in a GetQueryLoggingConfig request.
       */
-    var QueryLoggingConfig: QueryLoggingConfig
+    var QueryLoggingConfig: awsDashSdkLib.clientsRoute53Mod.Route53Ns.QueryLoggingConfig
   }
   
   trait GetReusableDelegationSetLimitRequest extends js.Object {
@@ -786,7 +786,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains information about the reusable delegation set.
       */
-    var DelegationSet: DelegationSet
+    var DelegationSet: awsDashSdkLib.clientsRoute53Mod.Route53Ns.DelegationSet
   }
   
   trait GetTrafficPolicyInstanceCountRequest extends js.Object
@@ -795,7 +795,7 @@ object Route53Ns extends js.Object {
     /**
       * The number of traffic policy instances that are associated with the current AWS account.
       */
-    var TrafficPolicyInstanceCount: TrafficPolicyInstanceCount
+    var TrafficPolicyInstanceCount: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicyInstanceCount
   }
   
   trait GetTrafficPolicyInstanceRequest extends js.Object {
@@ -809,7 +809,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains settings for the traffic policy instance.
       */
-    var TrafficPolicyInstance: TrafficPolicyInstance
+    var TrafficPolicyInstance: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicyInstance
   }
   
   trait GetTrafficPolicyRequest extends js.Object {
@@ -827,7 +827,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains settings for the specified traffic policy.
       */
-    var TrafficPolicy: TrafficPolicy
+    var TrafficPolicy: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicy
   }
   
   trait HealthCheck extends js.Object {
@@ -842,11 +842,11 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains detailed information about one health check.
       */
-    var HealthCheckConfig: HealthCheckConfig
+    var HealthCheckConfig: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HealthCheckConfig
     /**
       * The version of the health check. You can optionally pass this value in a call to UpdateHealthCheck to prevent overwriting another change to the health check.
       */
-    var HealthCheckVersion: HealthCheckVersion
+    var HealthCheckVersion: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HealthCheckVersion
     /**
       * The identifier that Amazon Route 53assigned to the health check when you created it. When you add or update a resource record set, you use this value to specify which health check to use. The value can be up to 64 characters long. 
       */
@@ -1026,7 +1026,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains one GeoLocationDetails element for each location that Amazon Route 53 supports for geolocation.
       */
-    var GeoLocationDetailsList: GeoLocationDetailsList
+    var GeoLocationDetailsList: awsDashSdkLib.clientsRoute53Mod.Route53Ns.GeoLocationDetailsList
     /**
       * A value that indicates whether more locations remain to be listed after the last location in this response. If so, the value of IsTruncated is true. To get more values, submit another request and include the values of NextContinentCode, NextCountryCode, and NextSubdivisionCode in the startcontinentcode, startcountrycode, and startsubdivisioncode, as applicable.
       */
@@ -1064,7 +1064,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains one HealthCheck element for each health check that is associated with the current AWS account.
       */
-    var HealthChecks: HealthChecks
+    var HealthChecks: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HealthChecks
     /**
       * A flag that indicates whether there are more health checks to be listed. If the response was truncated, you can get the next group of health checks by submitting another ListHealthChecks request and specifying the value of NextMarker in the marker parameter.
       */
@@ -1110,7 +1110,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains general information about the hosted zone.
       */
-    var HostedZones: HostedZones
+    var HostedZones: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HostedZones
     /**
       * A flag that indicates whether there are more hosted zones to be listed. If the response was truncated, you can get the next group of maxitems hosted zones by calling ListHostedZonesByName again and specifying the values of NextDNSName and NextHostedZoneId elements in the dnsname and hostedzoneid parameters.
       */
@@ -1148,7 +1148,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains general information about the hosted zone.
       */
-    var HostedZones: HostedZones
+    var HostedZones: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HostedZones
     /**
       * A flag indicating whether there are more hosted zones to be listed. If the response was truncated, you can get more hosted zones by submitting another ListHostedZones request and specifying the value of NextMarker in the marker parameter.
       */
@@ -1190,7 +1190,7 @@ object Route53Ns extends js.Object {
     /**
       * An array that contains one QueryLoggingConfig element for each configuration for DNS query logging that is associated with the current AWS account.
       */
-    var QueryLoggingConfigs: QueryLoggingConfigs
+    var QueryLoggingConfigs: awsDashSdkLib.clientsRoute53Mod.Route53Ns.QueryLoggingConfigs
   }
   
   trait ListResourceRecordSetsRequest extends js.Object {
@@ -1240,7 +1240,7 @@ object Route53Ns extends js.Object {
     /**
       * Information about multiple resource record sets.
       */
-    var ResourceRecordSets: ResourceRecordSets
+    var ResourceRecordSets: awsDashSdkLib.clientsRoute53Mod.Route53Ns.ResourceRecordSets
   }
   
   trait ListReusableDelegationSetsRequest extends js.Object {
@@ -1258,7 +1258,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains one DelegationSet element for each reusable delegation set that was created by the current AWS account.
       */
-    var DelegationSets: DelegationSets
+    var DelegationSets: awsDashSdkLib.clientsRoute53Mod.Route53Ns.DelegationSets
     /**
       * A flag that indicates whether there are more reusable delegation sets to be listed.
       */
@@ -1292,7 +1292,7 @@ object Route53Ns extends js.Object {
     /**
       * A ResourceTagSet containing tags associated with the specified resource.
       */
-    var ResourceTagSet: ResourceTagSet
+    var ResourceTagSet: awsDashSdkLib.clientsRoute53Mod.Route53Ns.ResourceTagSet
   }
   
   trait ListTagsForResourcesRequest extends js.Object {
@@ -1340,7 +1340,7 @@ object Route53Ns extends js.Object {
     /**
       * A list that contains one TrafficPolicySummary element for each traffic policy that was created by the current AWS account.
       */
-    var TrafficPolicySummaries: TrafficPolicySummaries
+    var TrafficPolicySummaries: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicySummaries
   }
   
   trait ListTrafficPolicyInstancesByHostedZoneRequest extends js.Object {
@@ -1382,7 +1382,7 @@ object Route53Ns extends js.Object {
     /**
       * A list that contains one TrafficPolicyInstance element for each traffic policy instance that matches the elements in the request. 
       */
-    var TrafficPolicyInstances: TrafficPolicyInstances
+    var TrafficPolicyInstances: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicyInstances
   }
   
   trait ListTrafficPolicyInstancesByPolicyRequest extends js.Object {
@@ -1397,7 +1397,7 @@ object Route53Ns extends js.Object {
     /**
       * The ID of the traffic policy for which you want to list traffic policy instances.
       */
-    var TrafficPolicyId: TrafficPolicyId
+    var TrafficPolicyId: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicyId
     /**
       * If the value of IsTruncated in the previous response was true, you have more traffic policy instances. To get more traffic policy instances, submit another ListTrafficPolicyInstancesByPolicy request. For the value of trafficpolicyinstancename, specify the value of TrafficPolicyInstanceNameMarker from the previous response, which is the name of the first traffic policy instance that Amazon Route 53 will return if you submit another request. If the value of IsTruncated in the previous response was false, there are no more traffic policy instances to get.
       */
@@ -1409,7 +1409,7 @@ object Route53Ns extends js.Object {
     /**
       * The version of the traffic policy for which you want to list traffic policy instances. The version must be associated with the traffic policy that is specified by TrafficPolicyId.
       */
-    var TrafficPolicyVersion: TrafficPolicyVersion
+    var TrafficPolicyVersion: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicyVersion
   }
   
   trait ListTrafficPolicyInstancesByPolicyResponse extends js.Object {
@@ -1436,7 +1436,7 @@ object Route53Ns extends js.Object {
     /**
       * A list that contains one TrafficPolicyInstance element for each traffic policy instance that matches the elements in the request.
       */
-    var TrafficPolicyInstances: TrafficPolicyInstances
+    var TrafficPolicyInstances: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicyInstances
   }
   
   trait ListTrafficPolicyInstancesRequest extends js.Object {
@@ -1482,7 +1482,7 @@ object Route53Ns extends js.Object {
     /**
       * A list that contains one TrafficPolicyInstance element for each traffic policy instance that matches the elements in the request.
       */
-    var TrafficPolicyInstances: TrafficPolicyInstances
+    var TrafficPolicyInstances: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicyInstances
   }
   
   trait ListTrafficPolicyVersionsRequest extends js.Object {
@@ -1512,11 +1512,11 @@ object Route53Ns extends js.Object {
     /**
       * A list that contains one TrafficPolicy element for each traffic policy version that is associated with the specified traffic policy.
       */
-    var TrafficPolicies: TrafficPolicies
+    var TrafficPolicies: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicies
     /**
       * If IsTruncated is true, the value of TrafficPolicyVersionMarker identifies the first traffic policy that Amazon Route 53 will return if you submit another request. Call ListTrafficPolicyVersions again and specify the value of TrafficPolicyVersionMarker in the TrafficPolicyVersionMarker request parameter. This element is present only if IsTruncated is true.
       */
-    var TrafficPolicyVersionMarker: TrafficPolicyVersionMarker
+    var TrafficPolicyVersionMarker: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicyVersionMarker
   }
   
   trait ListVPCAssociationAuthorizationsRequest extends js.Object {
@@ -1546,14 +1546,14 @@ object Route53Ns extends js.Object {
     /**
       * The list of VPCs that are authorized to be associated with the specified hosted zone.
       */
-    var VPCs: VPCs
+    var VPCs: awsDashSdkLib.clientsRoute53Mod.Route53Ns.VPCs
   }
   
   trait QueryLoggingConfig extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the CloudWatch Logs log group that Amazon Route 53 is publishing logs to.
       */
-    var CloudWatchLogsLogGroupArn: CloudWatchLogsLogGroupArn
+    var CloudWatchLogsLogGroupArn: awsDashSdkLib.clientsRoute53Mod.Route53Ns.CloudWatchLogsLogGroupArn
     /**
       * The ID of the hosted zone that CloudWatch Logs is logging queries for. 
       */
@@ -1705,7 +1705,7 @@ object Route53Ns extends js.Object {
     /**
       * The Amazon Route 53 name server used to respond to the request.
       */
-    var Nameserver: Nameserver
+    var Nameserver: awsDashSdkLib.clientsRoute53Mod.Route53Ns.Nameserver
     /**
       * The protocol that Amazon Route 53 used to respond to the request, either UDP or TCP. 
       */
@@ -1713,7 +1713,7 @@ object Route53Ns extends js.Object {
     /**
       * A list that contains values that Amazon Route 53 returned for this resource record set.
       */
-    var RecordData: RecordData
+    var RecordData: awsDashSdkLib.clientsRoute53Mod.Route53Ns.RecordData
     /**
       * The name of the resource record set that you submitted a request for.
       */
@@ -1767,7 +1767,7 @@ object Route53Ns extends js.Object {
     /**
       * If State is Failed, an explanation of the reason for the failure. If State is another value, Message is empty.
       */
-    var Message: Message
+    var Message: awsDashSdkLib.clientsRoute53Mod.Route53Ns.Message
     /**
       * The DNS name, such as www.example.com, for which Amazon Route 53 responds to queries by using the resource record sets that are associated with this traffic policy instance. 
       */
@@ -1779,11 +1779,11 @@ object Route53Ns extends js.Object {
     /**
       * The TTL that Amazon Route 53 assigned to all of the resource record sets that it created in the specified hosted zone.
       */
-    var TTL: TTL
+    var TTL: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TTL
     /**
       * The ID of the traffic policy that Amazon Route 53 used to create resource record sets in the specified hosted zone.
       */
-    var TrafficPolicyId: TrafficPolicyId
+    var TrafficPolicyId: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicyId
     /**
       * The DNS type that Amazon Route 53 assigned to all of the resource record sets that it created for this traffic policy instance. 
       */
@@ -1791,7 +1791,7 @@ object Route53Ns extends js.Object {
     /**
       * The version of the traffic policy that Amazon Route 53 used to create resource record sets in the specified hosted zone.
       */
-    var TrafficPolicyVersion: TrafficPolicyVersion
+    var TrafficPolicyVersion: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicyVersion
   }
   
   trait TrafficPolicySummary extends js.Object {
@@ -3172,7 +3172,7 @@ object Route53Ns extends js.Object {
     /**
       * The ID for the health check for which you want detailed information. When you created the health check, CreateHealthCheck returned the ID in the response, in the HealthCheckId element.
       */
-    var HealthCheckId: HealthCheckId
+    var HealthCheckId: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HealthCheckId
     /**
       * A sequential counter that Amazon Route 53 sets to 1 when you create a health check and increments by 1 each time you update settings for the health check. We recommend that you use GetHealthCheck or ListHealthChecks to get the current value of HealthCheckVersion for the health check that you want to update, and that you include that value in your UpdateHealthCheck request. This prevents Route 53 from overwriting an intervening update:   If the value in the UpdateHealthCheck request matches the value of HealthCheckVersion in the health check, Route 53 updates the health check with the new settings.   If the value of HealthCheckVersion in the health check is greater, the health check was changed after you got the version number. Route 53 does not update the health check, and it returns a HealthCheckVersionMismatch error.  
       */
@@ -3219,7 +3219,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains the response to an UpdateHealthCheck request.
       */
-    var HealthCheck: HealthCheck
+    var HealthCheck: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HealthCheck
   }
   
   trait UpdateHostedZoneCommentRequest extends js.Object {
@@ -3237,7 +3237,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains the response to the UpdateHostedZoneComment request.
       */
-    var HostedZone: HostedZone
+    var HostedZone: awsDashSdkLib.clientsRoute53Mod.Route53Ns.HostedZone
   }
   
   trait UpdateTrafficPolicyCommentRequest extends js.Object {
@@ -3259,7 +3259,7 @@ object Route53Ns extends js.Object {
     /**
       * A complex type that contains settings for the specified traffic policy.
       */
-    var TrafficPolicy: TrafficPolicy
+    var TrafficPolicy: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicy
   }
   
   trait UpdateTrafficPolicyInstanceRequest extends js.Object {
@@ -3270,22 +3270,22 @@ object Route53Ns extends js.Object {
     /**
       * The TTL that you want Amazon Route 53 to assign to all of the updated resource record sets.
       */
-    var TTL: TTL
+    var TTL: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TTL
     /**
       * The ID of the traffic policy that you want Amazon Route 53 to use to update resource record sets for the specified traffic policy instance.
       */
-    var TrafficPolicyId: TrafficPolicyId
+    var TrafficPolicyId: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicyId
     /**
       * The version of the traffic policy that you want Amazon Route 53 to use to update resource record sets for the specified traffic policy instance.
       */
-    var TrafficPolicyVersion: TrafficPolicyVersion
+    var TrafficPolicyVersion: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicyVersion
   }
   
   trait UpdateTrafficPolicyInstanceResponse extends js.Object {
     /**
       * A complex type that contains settings for the updated traffic policy instance.
       */
-    var TrafficPolicyInstance: TrafficPolicyInstance
+    var TrafficPolicyInstance: awsDashSdkLib.clientsRoute53Mod.Route53Ns.TrafficPolicyInstance
   }
   
   trait VPC extends js.Object {

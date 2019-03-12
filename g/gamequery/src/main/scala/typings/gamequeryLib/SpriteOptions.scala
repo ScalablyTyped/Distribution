@@ -18,7 +18,7 @@ object SpriteOptions {
   @scala.inline
   def apply(
     animation: js.Any = null,
-    callback: js.Function0[_] = null,
+    callback: () => _ = null,
     height: scala.Int | scala.Double = null,
     posx: scala.Int | scala.Double = null,
     posy: scala.Int | scala.Double = null,
@@ -26,7 +26,7 @@ object SpriteOptions {
   ): SpriteOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (posx != null) __obj.updateDynamic("posx")(posx.asInstanceOf[js.Any])
     if (posy != null) __obj.updateDynamic("posy")(posy.asInstanceOf[js.Any])

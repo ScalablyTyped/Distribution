@@ -45,19 +45,19 @@ object XIterateContainer {
     SubItem: scala.Double,
     Target: js.Any,
     Type: scala.Double,
-    UserData: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
-    acquire: js.Function0[scala.Unit],
-    appendChild: js.Function1[XAnimationNode, XAnimationNode],
-    getParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    insertAfter: js.Function2[XAnimationNode, XAnimationNode, XAnimationNode],
-    insertBefore: js.Function2[XAnimationNode, XAnimationNode, XAnimationNode],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeChild: js.Function1[XAnimationNode, XAnimationNode],
-    replaceChild: js.Function2[XAnimationNode, XAnimationNode, XAnimationNode],
-    setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
+    UserData: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    acquire: () => scala.Unit,
+    appendChild: XAnimationNode => XAnimationNode,
+    getParent: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    insertAfter: (XAnimationNode, XAnimationNode) => XAnimationNode,
+    insertBefore: (XAnimationNode, XAnimationNode) => XAnimationNode,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeChild: XAnimationNode => XAnimationNode,
+    replaceChild: (XAnimationNode, XAnimationNode) => XAnimationNode,
+    setParent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => scala.Unit
   ): XIterateContainer = {
-    val __obj = js.Dynamic.literal(Acceleration = Acceleration, AutoReverse = AutoReverse, Begin = Begin, Decelerate = Decelerate, Duration = Duration, End = End, EndSync = EndSync, Fill = Fill, FillDefault = FillDefault, IterateInterval = IterateInterval, IterateType = IterateType, Parent = Parent, RepeatCount = RepeatCount, RepeatDuration = RepeatDuration, Restart = Restart, RestartDefault = RestartDefault, SubItem = SubItem, Target = Target, Type = Type, UserData = UserData, acquire = acquire, appendChild = appendChild, getParent = getParent, insertAfter = insertAfter, insertBefore = insertBefore, queryInterface = queryInterface, release = release, removeChild = removeChild, replaceChild = replaceChild, setParent = setParent)
+    val __obj = js.Dynamic.literal(Acceleration = Acceleration, AutoReverse = AutoReverse, Begin = Begin, Decelerate = Decelerate, Duration = Duration, End = End, EndSync = EndSync, Fill = Fill, FillDefault = FillDefault, IterateInterval = IterateInterval, IterateType = IterateType, Parent = Parent, RepeatCount = RepeatCount, RepeatDuration = RepeatDuration, Restart = Restart, RestartDefault = RestartDefault, SubItem = SubItem, Target = Target, Type = Type, UserData = UserData, acquire = js.Any.fromFunction0(acquire), appendChild = js.Any.fromFunction1(appendChild), getParent = js.Any.fromFunction0(getParent), insertAfter = js.Any.fromFunction2(insertAfter), insertBefore = js.Any.fromFunction2(insertBefore), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeChild = js.Any.fromFunction1(removeChild), replaceChild = js.Any.fromFunction2(replaceChild), setParent = js.Any.fromFunction1(setParent))
   
     __obj.asInstanceOf[XIterateContainer]
   }

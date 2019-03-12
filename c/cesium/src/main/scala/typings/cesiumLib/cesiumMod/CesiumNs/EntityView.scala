@@ -20,9 +20,9 @@ object EntityView {
     ellipsoid: Ellipsoid,
     entity: Entity,
     scene: Scene,
-    update: js.Function1[JulianDate, scala.Unit]
+    update: JulianDate => scala.Unit
   ): EntityView = {
-    val __obj = js.Dynamic.literal(boundingSphere = boundingSphere, ellipsoid = ellipsoid, entity = entity, scene = scene, update = update)
+    val __obj = js.Dynamic.literal(boundingSphere = boundingSphere, ellipsoid = ellipsoid, entity = entity, scene = scene, update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[EntityView]
   }

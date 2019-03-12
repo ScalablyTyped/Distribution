@@ -24,13 +24,13 @@ trait XShapeCombiner
 object XShapeCombiner {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    combine: js.Function1[XShapes, XShape],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    split: js.Function1[XShape, scala.Unit]
+    acquire: () => scala.Unit,
+    combine: XShapes => XShape,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    split: XShape => scala.Unit
   ): XShapeCombiner = {
-    val __obj = js.Dynamic.literal(acquire = acquire, combine = combine, queryInterface = queryInterface, release = release, split = split)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), combine = js.Any.fromFunction1(combine), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), split = js.Any.fromFunction1(split))
   
     __obj.asInstanceOf[XShapeCombiner]
   }

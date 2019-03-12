@@ -17,14 +17,11 @@ trait thumbnails extends js.Object {
 object thumbnails {
   @scala.inline
   def apply(
-    set: js.Function1[
-      gapiDotYoutubeLib.Anon_VideoId, 
-      gapiLib.gapiNs.clientNs.HttpRequest[
-        gapiDotYoutubeLib.GoogleApiYouTubePageInfo[gapiDotYoutubeLib.GoogleApiYouTubeThumbnailResource]
-      ]
+    set: gapiDotYoutubeLib.Anon_VideoId => gapiLib.gapiNs.clientNs.HttpRequest[
+      gapiDotYoutubeLib.GoogleApiYouTubePageInfo[gapiDotYoutubeLib.GoogleApiYouTubeThumbnailResource]
     ]
   ): thumbnails = {
-    val __obj = js.Dynamic.literal(set = set)
+    val __obj = js.Dynamic.literal(set = js.Any.fromFunction1(set))
   
     __obj.asInstanceOf[thumbnails]
   }

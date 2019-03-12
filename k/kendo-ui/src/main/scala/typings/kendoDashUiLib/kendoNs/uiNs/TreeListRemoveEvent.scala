@@ -13,13 +13,13 @@ trait TreeListRemoveEvent extends TreeListEvent {
 object TreeListRemoveEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: TreeList,
     model: kendoDashUiLib.kendoNs.dataNs.TreeListModel = null,
     row: kendoDashUiLib.JQuery = null
   ): TreeListRemoveEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (model != null) __obj.updateDynamic("model")(model)
     if (row != null) __obj.updateDynamic("row")(row)
     __obj.asInstanceOf[TreeListRemoveEvent]

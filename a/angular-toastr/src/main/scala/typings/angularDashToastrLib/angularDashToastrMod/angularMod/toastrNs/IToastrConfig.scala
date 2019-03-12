@@ -23,9 +23,9 @@ object IToastrConfig {
     maxOpened: scala.Int | scala.Double = null,
     messageClass: java.lang.String = null,
     newestOnTop: js.UndefOr[scala.Boolean] = js.undefined,
-    onHidden: js.Function2[/* wasClicked */ scala.Boolean, /* toast */ IToast, scala.Unit] = null,
-    onShown: js.Function1[/* toast */ IToast, scala.Unit] = null,
-    onTap: js.Function1[/* toast */ IToast, scala.Unit] = null,
+    onHidden: (/* wasClicked */ scala.Boolean, /* toast */ IToast) => scala.Unit = null,
+    onShown: /* toast */ IToast => scala.Unit = null,
+    onTap: /* toast */ IToast => scala.Unit = null,
     positionClass: java.lang.String = null,
     preventDuplicates: js.UndefOr[scala.Boolean] = js.undefined,
     preventOpenDuplicates: js.UndefOr[scala.Boolean] = js.undefined,
@@ -49,9 +49,9 @@ object IToastrConfig {
     if (maxOpened != null) __obj.updateDynamic("maxOpened")(maxOpened.asInstanceOf[js.Any])
     if (messageClass != null) __obj.updateDynamic("messageClass")(messageClass)
     if (!js.isUndefined(newestOnTop)) __obj.updateDynamic("newestOnTop")(newestOnTop)
-    if (onHidden != null) __obj.updateDynamic("onHidden")(onHidden)
-    if (onShown != null) __obj.updateDynamic("onShown")(onShown)
-    if (onTap != null) __obj.updateDynamic("onTap")(onTap)
+    if (onHidden != null) __obj.updateDynamic("onHidden")(js.Any.fromFunction2(onHidden))
+    if (onShown != null) __obj.updateDynamic("onShown")(js.Any.fromFunction1(onShown))
+    if (onTap != null) __obj.updateDynamic("onTap")(js.Any.fromFunction1(onTap))
     if (positionClass != null) __obj.updateDynamic("positionClass")(positionClass)
     if (!js.isUndefined(preventDuplicates)) __obj.updateDynamic("preventDuplicates")(preventDuplicates)
     if (!js.isUndefined(preventOpenDuplicates)) __obj.updateDynamic("preventOpenDuplicates")(preventOpenDuplicates)

@@ -18,13 +18,11 @@ object IContactPicker {
   def apply(
     commitButtonText: java.lang.String,
     desiredFields: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[java.lang.String],
-    pickMultipleContactsAsync: js.Function0[
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ContactInformation]]
-    ],
-    pickSingleContactAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[ContactInformation]],
+    pickMultipleContactsAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ContactInformation]],
+    pickSingleContactAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[ContactInformation],
     selectionMode: ContactSelectionMode
   ): IContactPicker = {
-    val __obj = js.Dynamic.literal(commitButtonText = commitButtonText, desiredFields = desiredFields, pickMultipleContactsAsync = pickMultipleContactsAsync, pickSingleContactAsync = pickSingleContactAsync, selectionMode = selectionMode)
+    val __obj = js.Dynamic.literal(commitButtonText = commitButtonText, desiredFields = desiredFields, pickMultipleContactsAsync = js.Any.fromFunction0(pickMultipleContactsAsync), pickSingleContactAsync = js.Any.fromFunction0(pickSingleContactAsync), selectionMode = selectionMode)
   
     __obj.asInstanceOf[IContactPicker]
   }

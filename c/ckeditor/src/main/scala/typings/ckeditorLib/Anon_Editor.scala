@@ -13,14 +13,10 @@ trait Anon_Editor extends js.Object {
 object Anon_Editor {
   @scala.inline
   def apply(
-    exec: js.Function1[ckeditorLib.CKEDITORNs.editor, scala.Boolean],
-    refresh: js.Function2[
-      ckeditorLib.CKEDITORNs.editor, 
-      ckeditorLib.CKEDITORNs.domNs.elementPath, 
-      scala.Double
-    ]
+    exec: ckeditorLib.CKEDITORNs.editor => scala.Boolean,
+    refresh: (ckeditorLib.CKEDITORNs.editor, ckeditorLib.CKEDITORNs.domNs.elementPath) => scala.Double
   ): Anon_Editor = {
-    val __obj = js.Dynamic.literal(exec = exec, refresh = refresh)
+    val __obj = js.Dynamic.literal(exec = js.Any.fromFunction1(exec), refresh = js.Any.fromFunction2(refresh))
   
     __obj.asInstanceOf[Anon_Editor]
   }

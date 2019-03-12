@@ -19,14 +19,14 @@ object AppUser {
   @scala.inline
   def apply(
     URI: java.lang.String,
-    allUsers: js.Function2[Query, CbCallback, scala.Unit],
-    getUser: js.Function1[CbCallback, scala.Unit],
-    setUser: js.Function2[js.Object, CbCallback, scala.Unit],
+    allUsers: (Query, CbCallback) => scala.Unit,
+    getUser: CbCallback => scala.Unit,
+    setUser: (js.Object, CbCallback) => scala.Unit,
     systemKey: java.lang.String,
     systemSecret: java.lang.String,
     user: APIUser
   ): AppUser = {
-    val __obj = js.Dynamic.literal(URI = URI, allUsers = allUsers, getUser = getUser, setUser = setUser, systemKey = systemKey, systemSecret = systemSecret, user = user)
+    val __obj = js.Dynamic.literal(URI = URI, allUsers = js.Any.fromFunction2(allUsers), getUser = js.Any.fromFunction1(getUser), setUser = js.Any.fromFunction2(setUser), systemKey = systemKey, systemSecret = systemSecret, user = user)
   
     __obj.asInstanceOf[AppUser]
   }

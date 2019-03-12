@@ -9,13 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def render(
-    options: sassLib.sassMod.Options,
-    callback: js.Function2[
-      /* exception */ sassLib.sassMod.SassException, 
-      /* result */ sassLib.sassMod.Result, 
-      scala.Unit
-    ]
+    options: Options,
+    callback: js.Function2[/* exception */ SassException, /* result */ Result, scala.Unit]
   ): scala.Unit = js.native
-  def renderSync(options: sassLib.sassMod.Options): sassLib.sassMod.Result = js.native
+  def renderSync(options: Options): Result = js.native
 }
 

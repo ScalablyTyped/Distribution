@@ -11,8 +11,8 @@ trait KnockoutValidationRuleDefinition extends KnockoutValidationRuleBase {
 
 object KnockoutValidationRuleDefinition {
   @scala.inline
-  def apply(message: java.lang.String, validator: js.Function2[js.Any, js.Any, scala.Boolean]): KnockoutValidationRuleDefinition = {
-    val __obj = js.Dynamic.literal(message = message, validator = validator)
+  def apply(message: java.lang.String, validator: (js.Any, js.Any) => scala.Boolean): KnockoutValidationRuleDefinition = {
+    val __obj = js.Dynamic.literal(message = message, validator = js.Any.fromFunction2(validator))
   
     __obj.asInstanceOf[KnockoutValidationRuleDefinition]
   }

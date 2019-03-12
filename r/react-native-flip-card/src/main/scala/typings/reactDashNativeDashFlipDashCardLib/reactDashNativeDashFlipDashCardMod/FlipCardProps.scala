@@ -32,8 +32,8 @@ object FlipCardProps {
     flipHorizontal: js.UndefOr[scala.Boolean] = js.undefined,
     flipVertical: js.UndefOr[scala.Boolean] = js.undefined,
     friction: scala.Int | scala.Double = null,
-    onFlipEnd: js.Function0[scala.Unit] = null,
-    onFlipStart: js.Function0[scala.Unit] = null,
+    onFlipEnd: () => scala.Unit = null,
+    onFlipStart: () => scala.Unit = null,
     perspective: scala.Int | scala.Double = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     useNativeDriver: js.UndefOr[scala.Boolean] = js.undefined
@@ -46,8 +46,8 @@ object FlipCardProps {
     if (!js.isUndefined(flipHorizontal)) __obj.updateDynamic("flipHorizontal")(flipHorizontal)
     if (!js.isUndefined(flipVertical)) __obj.updateDynamic("flipVertical")(flipVertical)
     if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
-    if (onFlipEnd != null) __obj.updateDynamic("onFlipEnd")(onFlipEnd)
-    if (onFlipStart != null) __obj.updateDynamic("onFlipStart")(onFlipStart)
+    if (onFlipEnd != null) __obj.updateDynamic("onFlipEnd")(js.Any.fromFunction0(onFlipEnd))
+    if (onFlipStart != null) __obj.updateDynamic("onFlipStart")(js.Any.fromFunction0(onFlipStart))
     if (perspective != null) __obj.updateDynamic("perspective")(perspective.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver)

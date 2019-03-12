@@ -14,11 +14,11 @@ trait HumanparserStatic extends js.Object {
 object HumanparserStatic {
   @scala.inline
   def apply(
-    getFullestName: js.Function1[java.lang.String, FullerNameOutput],
-    parseAddress: js.Function1[java.lang.String, AddressOutput],
-    parseName: js.Function1[java.lang.String, NameOutput]
+    getFullestName: java.lang.String => FullerNameOutput,
+    parseAddress: java.lang.String => AddressOutput,
+    parseName: java.lang.String => NameOutput
   ): HumanparserStatic = {
-    val __obj = js.Dynamic.literal(getFullestName = getFullestName, parseAddress = parseAddress, parseName = parseName)
+    val __obj = js.Dynamic.literal(getFullestName = js.Any.fromFunction1(getFullestName), parseAddress = js.Any.fromFunction1(parseAddress), parseName = js.Any.fromFunction1(parseName))
   
     __obj.asInstanceOf[HumanparserStatic]
   }

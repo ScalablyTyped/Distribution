@@ -17,7 +17,7 @@ trait PlainValue
 object PlainValue {
   @scala.inline
   def apply(
-    toJSON: js.Function0[js.Any],
+    toJSON: () => js.Any,
     `type`: yamlLib.yamlLibStrings.PLAIN,
     comment: java.lang.String = null,
     commentBefore: java.lang.String = null,
@@ -27,7 +27,7 @@ object PlainValue {
     tag: java.lang.String = null,
     value: scala.Boolean | scala.Double | java.lang.String = null
   ): PlainValue = {
-    val __obj = js.Dynamic.literal(toJSON = toJSON)
+    val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON))
     __obj.updateDynamic("type")(`type`)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore)

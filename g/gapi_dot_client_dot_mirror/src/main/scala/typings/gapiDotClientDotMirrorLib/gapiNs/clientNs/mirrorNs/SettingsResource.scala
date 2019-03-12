@@ -12,13 +12,8 @@ trait SettingsResource extends js.Object {
 
 object SettingsResource {
   @scala.inline
-  def apply(
-    get: js.Function1[
-      gapiDotClientDotMirrorLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Setting]
-    ]
-  ): SettingsResource = {
-    val __obj = js.Dynamic.literal(get = get)
+  def apply(get: gapiDotClientDotMirrorLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Setting]): SettingsResource = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[SettingsResource]
   }

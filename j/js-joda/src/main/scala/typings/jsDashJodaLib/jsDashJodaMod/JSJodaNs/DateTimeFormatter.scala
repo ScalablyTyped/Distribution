@@ -22,20 +22,20 @@ trait DateTimeFormatter extends js.Object {
 object DateTimeFormatter {
   @scala.inline
   def apply(
-    chronology: js.Function0[js.Any],
-    decimalStyle: js.Function0[js.Any],
-    format: js.Function1[TemporalAccessor, java.lang.String],
-    locale: js.Function0[js.Any],
-    parse: js.Function2[java.lang.String, TemporalQuery, TemporalAccessor],
-    parse1: js.Function1[java.lang.String, TemporalAccessor],
-    parse2: js.Function2[js.Any, js.Any, js.Any],
-    parseUnresolved: js.Function2[js.Any, js.Any, js.Any],
-    toString: js.Function0[java.lang.String],
-    withChronology: js.Function1[js.Any, js.Any],
-    withLocale: js.Function1[Locale, DateTimeFormatter],
-    withResolverStyle: js.Function1[ResolverStyle, DateTimeFormatter]
+    chronology: () => js.Any,
+    decimalStyle: () => js.Any,
+    format: TemporalAccessor => java.lang.String,
+    locale: () => js.Any,
+    parse: (java.lang.String, TemporalQuery) => TemporalAccessor,
+    parse1: java.lang.String => TemporalAccessor,
+    parse2: (js.Any, js.Any) => js.Any,
+    parseUnresolved: (js.Any, js.Any) => js.Any,
+    toString: () => java.lang.String,
+    withChronology: js.Any => js.Any,
+    withLocale: Locale => DateTimeFormatter,
+    withResolverStyle: ResolverStyle => DateTimeFormatter
   ): DateTimeFormatter = {
-    val __obj = js.Dynamic.literal(chronology = chronology, decimalStyle = decimalStyle, format = format, locale = locale, parse = parse, parse1 = parse1, parse2 = parse2, parseUnresolved = parseUnresolved, toString = toString, withChronology = withChronology, withLocale = withLocale, withResolverStyle = withResolverStyle)
+    val __obj = js.Dynamic.literal(chronology = js.Any.fromFunction0(chronology), decimalStyle = js.Any.fromFunction0(decimalStyle), format = js.Any.fromFunction1(format), locale = js.Any.fromFunction0(locale), parse = js.Any.fromFunction2(parse), parse1 = js.Any.fromFunction1(parse1), parse2 = js.Any.fromFunction2(parse2), parseUnresolved = js.Any.fromFunction2(parseUnresolved), toString = js.Any.fromFunction0(toString), withChronology = js.Any.fromFunction1(withChronology), withLocale = js.Any.fromFunction1(withLocale), withResolverStyle = js.Any.fromFunction1(withResolverStyle))
   
     __obj.asInstanceOf[DateTimeFormatter]
   }

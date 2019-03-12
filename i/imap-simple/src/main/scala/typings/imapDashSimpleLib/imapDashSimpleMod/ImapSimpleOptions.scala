@@ -23,15 +23,15 @@ object ImapSimpleOptions {
   def apply(
     imap: imapLib.imapMod.ConnectionNs.Config,
     connectTimeout: scala.Int | scala.Double = null,
-    onexpunge: js.Function1[/* seqno */ scala.Double, scala.Unit] = null,
-    onmail: js.Function1[/* numNewMail */ scala.Double, scala.Unit] = null,
-    onupdate: js.Function2[/* seqno */ scala.Double, /* info */ js.Any, scala.Unit] = null
+    onexpunge: /* seqno */ scala.Double => scala.Unit = null,
+    onmail: /* numNewMail */ scala.Double => scala.Unit = null,
+    onupdate: (/* seqno */ scala.Double, /* info */ js.Any) => scala.Unit = null
   ): ImapSimpleOptions = {
     val __obj = js.Dynamic.literal(imap = imap)
     if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
-    if (onexpunge != null) __obj.updateDynamic("onexpunge")(onexpunge)
-    if (onmail != null) __obj.updateDynamic("onmail")(onmail)
-    if (onupdate != null) __obj.updateDynamic("onupdate")(onupdate)
+    if (onexpunge != null) __obj.updateDynamic("onexpunge")(js.Any.fromFunction1(onexpunge))
+    if (onmail != null) __obj.updateDynamic("onmail")(js.Any.fromFunction1(onmail))
+    if (onupdate != null) __obj.updateDynamic("onupdate")(js.Any.fromFunction2(onupdate))
     __obj.asInstanceOf[ImapSimpleOptions]
   }
 }

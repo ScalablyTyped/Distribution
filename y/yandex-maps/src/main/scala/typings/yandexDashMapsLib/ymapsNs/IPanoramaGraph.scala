@@ -14,11 +14,11 @@ trait IPanoramaGraph extends js.Object {
 object IPanoramaGraph {
   @scala.inline
   def apply(
-    getEdges: js.Function0[js.Array[IPanoramaGraphEdge]],
-    getNodes: js.Function0[js.Array[IPanoramaGraphEdge]],
-    getPanorama: js.Function0[IPanorama]
+    getEdges: () => js.Array[IPanoramaGraphEdge],
+    getNodes: () => js.Array[IPanoramaGraphEdge],
+    getPanorama: () => IPanorama
   ): IPanoramaGraph = {
-    val __obj = js.Dynamic.literal(getEdges = getEdges, getNodes = getNodes, getPanorama = getPanorama)
+    val __obj = js.Dynamic.literal(getEdges = js.Any.fromFunction0(getEdges), getNodes = js.Any.fromFunction0(getNodes), getPanorama = js.Any.fromFunction0(getPanorama))
   
     __obj.asInstanceOf[IPanoramaGraph]
   }

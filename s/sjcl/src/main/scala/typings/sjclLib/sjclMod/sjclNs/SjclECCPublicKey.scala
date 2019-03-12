@@ -11,8 +11,8 @@ trait SjclECCPublicKey extends js.Object {
 
 object SjclECCPublicKey {
   @scala.inline
-  def apply(get: js.Function0[SjclECCPublicKeyData]): SjclECCPublicKey = {
-    val __obj = js.Dynamic.literal(get = get)
+  def apply(get: () => SjclECCPublicKeyData): SjclECCPublicKey = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get))
   
     __obj.asInstanceOf[SjclECCPublicKey]
   }

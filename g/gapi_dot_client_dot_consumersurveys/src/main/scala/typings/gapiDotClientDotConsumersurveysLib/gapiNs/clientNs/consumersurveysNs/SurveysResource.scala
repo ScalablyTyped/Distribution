@@ -25,36 +25,15 @@ trait SurveysResource extends js.Object {
 object SurveysResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotConsumersurveysLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SurveysDeleteResponse]
-    ],
-    get: js.Function1[
-      gapiDotClientDotConsumersurveysLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Survey]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotConsumersurveysLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Survey]
-    ],
-    list: js.Function1[
-      gapiDotClientDotConsumersurveysLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SurveysListResponse]
-    ],
-    start: js.Function1[
-      gapiDotClientDotConsumersurveysLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SurveysStartResponse]
-    ],
-    stop: js.Function1[
-      gapiDotClientDotConsumersurveysLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SurveysStopResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotConsumersurveysLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Survey]
-    ]
+    delete: gapiDotClientDotConsumersurveysLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[SurveysDeleteResponse],
+    get: gapiDotClientDotConsumersurveysLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Survey],
+    insert: gapiDotClientDotConsumersurveysLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Survey],
+    list: gapiDotClientDotConsumersurveysLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[SurveysListResponse],
+    start: gapiDotClientDotConsumersurveysLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[SurveysStartResponse],
+    stop: gapiDotClientDotConsumersurveysLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[SurveysStopResponse],
+    update: gapiDotClientDotConsumersurveysLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Survey]
   ): SurveysResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, start = start, stop = stop, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), start = js.Any.fromFunction1(start), stop = js.Any.fromFunction1(stop), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[SurveysResource]
   }

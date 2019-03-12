@@ -22,26 +22,26 @@ object GiraffeObject {
   @scala.inline
   def apply(
     app: App,
-    afterDispose: js.Function0[js.Any] = null,
-    afterInitialize: js.Function0[js.Any] = null,
+    afterDispose: () => js.Any = null,
+    afterInitialize: () => js.Any = null,
     appEvents: StringMap = null,
-    beforeDispose: js.Function0[js.Any] = null,
-    beforeInitialize: js.Function0[js.Any] = null,
+    beforeDispose: () => js.Any = null,
+    beforeInitialize: () => js.Any = null,
     dataEvents: StringMap = null,
     defaultOptions: DefaultOptions = null,
-    dispose: js.Function0[js.Any] = null,
-    initialize: js.Function0[js.Any] = null
+    dispose: () => js.Any = null,
+    initialize: () => js.Any = null
   ): GiraffeObject = {
     val __obj = js.Dynamic.literal(app = app)
-    if (afterDispose != null) __obj.updateDynamic("afterDispose")(afterDispose)
-    if (afterInitialize != null) __obj.updateDynamic("afterInitialize")(afterInitialize)
+    if (afterDispose != null) __obj.updateDynamic("afterDispose")(js.Any.fromFunction0(afterDispose))
+    if (afterInitialize != null) __obj.updateDynamic("afterInitialize")(js.Any.fromFunction0(afterInitialize))
     if (appEvents != null) __obj.updateDynamic("appEvents")(appEvents)
-    if (beforeDispose != null) __obj.updateDynamic("beforeDispose")(beforeDispose)
-    if (beforeInitialize != null) __obj.updateDynamic("beforeInitialize")(beforeInitialize)
+    if (beforeDispose != null) __obj.updateDynamic("beforeDispose")(js.Any.fromFunction0(beforeDispose))
+    if (beforeInitialize != null) __obj.updateDynamic("beforeInitialize")(js.Any.fromFunction0(beforeInitialize))
     if (dataEvents != null) __obj.updateDynamic("dataEvents")(dataEvents)
     if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions)
-    if (dispose != null) __obj.updateDynamic("dispose")(dispose)
-    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
+    if (dispose != null) __obj.updateDynamic("dispose")(js.Any.fromFunction0(dispose))
+    if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction0(initialize))
     __obj.asInstanceOf[GiraffeObject]
   }
 }

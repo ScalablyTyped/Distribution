@@ -9,3 +9,12 @@ trait Anon_Configure extends js.Object {
   var configure: Anon_HitsPerPage
 }
 
+object Anon_Configure {
+  @scala.inline
+  def apply(configure: Anon_HitsPerPage): Anon_Configure = {
+    val __obj = js.Dynamic.literal(configure = configure)
+  
+    __obj.asInstanceOf[Anon_Configure]
+  }
+}
+

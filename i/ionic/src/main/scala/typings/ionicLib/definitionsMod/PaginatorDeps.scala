@@ -17,12 +17,12 @@ object PaginatorDeps {
   @scala.inline
   def apply[T /* <: Response[js.Array[js.Object]] */, S](
     client: IClient,
-    guard: js.Function1[APIResponseSuccess, /* is T */ scala.Boolean],
-    reqgen: js.Function0[js.Promise[ionicLib.Anon_Req]],
+    guard: APIResponseSuccess => /* is T */ scala.Boolean,
+    reqgen: () => js.Promise[ionicLib.Anon_Req],
     max: scala.Int | scala.Double = null,
     state: stdLib.Partial[S] = null
   ): PaginatorDeps[T, S] = {
-    val __obj = js.Dynamic.literal(client = client, guard = guard, reqgen = reqgen)
+    val __obj = js.Dynamic.literal(client = client, guard = js.Any.fromFunction1(guard), reqgen = js.Any.fromFunction0(reqgen))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state)
     __obj.asInstanceOf[PaginatorDeps[T, S]]

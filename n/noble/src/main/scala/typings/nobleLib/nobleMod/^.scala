@@ -13,7 +13,7 @@ object ^ extends js.Object {
   @JSName("on")
   def on_discover(
     event: nobleLib.nobleLibStrings.discover,
-    listener: js.Function1[/* peripheral */ nobleLib.nobleMod.Peripheral, scala.Unit]
+    listener: js.Function1[/* peripheral */ Peripheral, scala.Unit]
   ): nodeLib.eventsMod.EventEmitter = js.native
   @JSName("on")
   def on_scanStart(event: nobleLib.nobleLibStrings.scanStart, listener: js.Function0[scala.Unit]): nodeLib.eventsMod.EventEmitter = js.native
@@ -30,7 +30,7 @@ object ^ extends js.Object {
   @JSName("removeListener")
   def removeListener_discover(
     event: nobleLib.nobleLibStrings.discover,
-    listener: js.Function1[/* peripheral */ nobleLib.nobleMod.Peripheral, scala.Unit]
+    listener: js.Function1[/* peripheral */ Peripheral, scala.Unit]
   ): nodeLib.eventsMod.EventEmitter = js.native
   @JSName("removeListener")
   def removeListener_scanStart(event: nobleLib.nobleLibStrings.scanStart, listener: js.Function0[scala.Unit]): nodeLib.eventsMod.EventEmitter = js.native
@@ -42,17 +42,17 @@ object ^ extends js.Object {
     listener: js.Function1[/* state */ java.lang.String, scala.Unit]
   ): nodeLib.eventsMod.EventEmitter = js.native
   def startScanning(): scala.Unit = js.native
-  def startScanning(callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error], scala.Unit]): scala.Unit = js.native
+  def startScanning(callback: js.Function1[/* error */ js.UndefOr[stdLib.Error], scala.Unit]): scala.Unit = js.native
   def startScanning(serviceUUIDs: js.Array[java.lang.String]): scala.Unit = js.native
   def startScanning(serviceUUIDs: js.Array[java.lang.String], allowDuplicates: scala.Boolean): scala.Unit = js.native
   def startScanning(
     serviceUUIDs: js.Array[java.lang.String],
     allowDuplicates: scala.Boolean,
-    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* error */ js.UndefOr[stdLib.Error], scala.Unit]
   ): scala.Unit = js.native
   def startScanning(
     serviceUUIDs: js.Array[java.lang.String],
-    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* error */ js.UndefOr[stdLib.Error], scala.Unit]
   ): scala.Unit = js.native
   def stopScanning(): scala.Unit = js.native
   def stopScanning(callback: js.Function0[scala.Unit]): scala.Unit = js.native

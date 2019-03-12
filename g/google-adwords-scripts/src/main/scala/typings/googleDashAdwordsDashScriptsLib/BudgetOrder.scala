@@ -19,16 +19,16 @@ trait BudgetOrder extends js.Object {
 object BudgetOrder {
   @scala.inline
   def apply(
-    getBillingAccount: js.Function0[BillingAccount],
-    getEndDatetime: js.Function0[AdWordsDate],
-    getId: js.Function0[scala.Double],
-    getName: js.Function0[java.lang.String],
-    getPoNumber: js.Function0[scala.Double],
-    getSpendingLimit: js.Function0[scala.Double],
-    getStartDateTime: js.Function0[AdWordsDate],
-    getTotalAdjustments: js.Function0[scala.Double]
+    getBillingAccount: () => BillingAccount,
+    getEndDatetime: () => AdWordsDate,
+    getId: () => scala.Double,
+    getName: () => java.lang.String,
+    getPoNumber: () => scala.Double,
+    getSpendingLimit: () => scala.Double,
+    getStartDateTime: () => AdWordsDate,
+    getTotalAdjustments: () => scala.Double
   ): BudgetOrder = {
-    val __obj = js.Dynamic.literal(getBillingAccount = getBillingAccount, getEndDatetime = getEndDatetime, getId = getId, getName = getName, getPoNumber = getPoNumber, getSpendingLimit = getSpendingLimit, getStartDateTime = getStartDateTime, getTotalAdjustments = getTotalAdjustments)
+    val __obj = js.Dynamic.literal(getBillingAccount = js.Any.fromFunction0(getBillingAccount), getEndDatetime = js.Any.fromFunction0(getEndDatetime), getId = js.Any.fromFunction0(getId), getName = js.Any.fromFunction0(getName), getPoNumber = js.Any.fromFunction0(getPoNumber), getSpendingLimit = js.Any.fromFunction0(getSpendingLimit), getStartDateTime = js.Any.fromFunction0(getStartDateTime), getTotalAdjustments = js.Any.fromFunction0(getTotalAdjustments))
   
     __obj.asInstanceOf[BudgetOrder]
   }

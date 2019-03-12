@@ -74,61 +74,61 @@ object GridOptions {
     allowCopy: scala.Boolean | GridAllowCopy = null,
     altRowTemplate: java.lang.String | js.Function = null,
     autoBind: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeEdit: js.Function1[/* e */ GridBeforeEditEvent, scala.Unit] = null,
-    cancel: js.Function1[/* e */ GridCancelEvent, scala.Unit] = null,
-    cellClose: js.Function1[/* e */ GridCellCloseEvent, scala.Unit] = null,
-    change: js.Function1[/* e */ GridChangeEvent, scala.Unit] = null,
-    columnHide: js.Function1[/* e */ GridColumnHideEvent, scala.Unit] = null,
-    columnLock: js.Function1[/* e */ GridColumnLockEvent, scala.Unit] = null,
+    beforeEdit: /* e */ GridBeforeEditEvent => scala.Unit = null,
+    cancel: /* e */ GridCancelEvent => scala.Unit = null,
+    cellClose: /* e */ GridCellCloseEvent => scala.Unit = null,
+    change: /* e */ GridChangeEvent => scala.Unit = null,
+    columnHide: /* e */ GridColumnHideEvent => scala.Unit = null,
+    columnLock: /* e */ GridColumnLockEvent => scala.Unit = null,
     columnMenu: scala.Boolean | GridColumnMenu = null,
-    columnMenuInit: js.Function1[/* e */ GridColumnMenuInitEvent, scala.Unit] = null,
-    columnMenuOpen: js.Function1[/* e */ GridColumnMenuOpenEvent, scala.Unit] = null,
-    columnReorder: js.Function1[/* e */ GridColumnReorderEvent, scala.Unit] = null,
-    columnResize: js.Function1[/* e */ GridColumnResizeEvent, scala.Unit] = null,
+    columnMenuInit: /* e */ GridColumnMenuInitEvent => scala.Unit = null,
+    columnMenuOpen: /* e */ GridColumnMenuOpenEvent => scala.Unit = null,
+    columnReorder: /* e */ GridColumnReorderEvent => scala.Unit = null,
+    columnResize: /* e */ GridColumnResizeEvent => scala.Unit = null,
     columnResizeHandleWidth: scala.Int | scala.Double = null,
-    columnShow: js.Function1[/* e */ GridColumnShowEvent, scala.Unit] = null,
-    columnUnlock: js.Function1[/* e */ GridColumnUnlockEvent, scala.Unit] = null,
+    columnShow: /* e */ GridColumnShowEvent => scala.Unit = null,
+    columnUnlock: /* e */ GridColumnUnlockEvent => scala.Unit = null,
     columns: js.Array[GridColumn] = null,
-    dataBinding: js.Function1[/* e */ GridDataBindingEvent, scala.Unit] = null,
-    dataBound: js.Function1[/* e */ GridDataBoundEvent, scala.Unit] = null,
+    dataBinding: /* e */ GridDataBindingEvent => scala.Unit = null,
+    dataBound: /* e */ GridDataBoundEvent => scala.Unit = null,
     dataSource: js.Any | kendoDashUiLib.kendoNs.dataNs.DataSource = null,
-    detailCollapse: js.Function1[/* e */ GridDetailCollapseEvent, scala.Unit] = null,
-    detailExpand: js.Function1[/* e */ GridDetailExpandEvent, scala.Unit] = null,
-    detailInit: js.Function1[/* e */ GridDetailInitEvent, scala.Unit] = null,
+    detailCollapse: /* e */ GridDetailCollapseEvent => scala.Unit = null,
+    detailExpand: /* e */ GridDetailExpandEvent => scala.Unit = null,
+    detailInit: /* e */ GridDetailInitEvent => scala.Unit = null,
     detailTemplate: java.lang.String | js.Function = null,
-    edit: js.Function1[/* e */ GridEditEvent, scala.Unit] = null,
+    edit: /* e */ GridEditEvent => scala.Unit = null,
     editable: scala.Boolean | java.lang.String | GridEditable = null,
     excel: GridExcel = null,
-    excelExport: js.Function1[/* e */ GridExcelExportEvent, scala.Unit] = null,
-    filter: js.Function1[/* e */ GridFilterEvent, scala.Unit] = null,
-    filterMenuInit: js.Function1[/* e */ GridFilterMenuInitEvent, scala.Unit] = null,
-    filterMenuOpen: js.Function1[/* e */ GridFilterMenuOpenEvent, scala.Unit] = null,
+    excelExport: /* e */ GridExcelExportEvent => scala.Unit = null,
+    filter: /* e */ GridFilterEvent => scala.Unit = null,
+    filterMenuInit: /* e */ GridFilterMenuInitEvent => scala.Unit = null,
+    filterMenuOpen: /* e */ GridFilterMenuOpenEvent => scala.Unit = null,
     filterable: scala.Boolean | GridFilterable = null,
-    group: js.Function1[/* e */ GridGroupEvent, scala.Unit] = null,
-    groupCollapse: js.Function1[/* e */ GridGroupCollapseEvent, scala.Unit] = null,
-    groupExpand: js.Function1[/* e */ GridGroupExpandEvent, scala.Unit] = null,
+    group: /* e */ GridGroupEvent => scala.Unit = null,
+    groupCollapse: /* e */ GridGroupCollapseEvent => scala.Unit = null,
+    groupExpand: /* e */ GridGroupExpandEvent => scala.Unit = null,
     groupable: scala.Boolean | GridGroupable = null,
     height: scala.Double | java.lang.String = null,
     messages: GridMessages = null,
     mobile: scala.Boolean | java.lang.String = null,
     name: java.lang.String = null,
     navigatable: js.UndefOr[scala.Boolean] = js.undefined,
-    navigate: js.Function1[/* e */ GridNavigateEvent, scala.Unit] = null,
+    navigate: /* e */ GridNavigateEvent => scala.Unit = null,
     noRecords: scala.Boolean | GridNoRecords = null,
-    page: js.Function1[/* e */ GridPageEvent, scala.Unit] = null,
+    page: /* e */ GridPageEvent => scala.Unit = null,
     pageable: scala.Boolean | GridPageable = null,
     pdf: GridPdf = null,
-    pdfExport: js.Function1[/* e */ GridPdfExportEvent, scala.Unit] = null,
+    pdfExport: /* e */ GridPdfExportEvent => scala.Unit = null,
     persistSelection: js.UndefOr[scala.Boolean] = js.undefined,
-    remove: js.Function1[/* e */ GridRemoveEvent, scala.Unit] = null,
+    remove: /* e */ GridRemoveEvent => scala.Unit = null,
     reorderable: js.UndefOr[scala.Boolean] = js.undefined,
     resizable: js.UndefOr[scala.Boolean] = js.undefined,
     rowTemplate: java.lang.String | js.Function = null,
-    save: js.Function1[/* e */ GridSaveEvent, scala.Unit] = null,
-    saveChanges: js.Function1[/* e */ GridSaveChangesEvent, scala.Unit] = null,
+    save: /* e */ GridSaveEvent => scala.Unit = null,
+    saveChanges: /* e */ GridSaveChangesEvent => scala.Unit = null,
     scrollable: scala.Boolean | GridScrollable = null,
     selectable: scala.Boolean | java.lang.String = null,
-    sort: js.Function1[/* e */ GridSortEvent, scala.Unit] = null,
+    sort: /* e */ GridSortEvent => scala.Unit = null,
     sortable: scala.Boolean | GridSortable = null,
     toolbar: js.Array[java.lang.String | GridToolbarItem] = null
   ): GridOptions = {
@@ -136,61 +136,61 @@ object GridOptions {
     if (allowCopy != null) __obj.updateDynamic("allowCopy")(allowCopy.asInstanceOf[js.Any])
     if (altRowTemplate != null) __obj.updateDynamic("altRowTemplate")(altRowTemplate.asInstanceOf[js.Any])
     if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind)
-    if (beforeEdit != null) __obj.updateDynamic("beforeEdit")(beforeEdit)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (cellClose != null) __obj.updateDynamic("cellClose")(cellClose)
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (columnHide != null) __obj.updateDynamic("columnHide")(columnHide)
-    if (columnLock != null) __obj.updateDynamic("columnLock")(columnLock)
+    if (beforeEdit != null) __obj.updateDynamic("beforeEdit")(js.Any.fromFunction1(beforeEdit))
+    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
+    if (cellClose != null) __obj.updateDynamic("cellClose")(js.Any.fromFunction1(cellClose))
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (columnHide != null) __obj.updateDynamic("columnHide")(js.Any.fromFunction1(columnHide))
+    if (columnLock != null) __obj.updateDynamic("columnLock")(js.Any.fromFunction1(columnLock))
     if (columnMenu != null) __obj.updateDynamic("columnMenu")(columnMenu.asInstanceOf[js.Any])
-    if (columnMenuInit != null) __obj.updateDynamic("columnMenuInit")(columnMenuInit)
-    if (columnMenuOpen != null) __obj.updateDynamic("columnMenuOpen")(columnMenuOpen)
-    if (columnReorder != null) __obj.updateDynamic("columnReorder")(columnReorder)
-    if (columnResize != null) __obj.updateDynamic("columnResize")(columnResize)
+    if (columnMenuInit != null) __obj.updateDynamic("columnMenuInit")(js.Any.fromFunction1(columnMenuInit))
+    if (columnMenuOpen != null) __obj.updateDynamic("columnMenuOpen")(js.Any.fromFunction1(columnMenuOpen))
+    if (columnReorder != null) __obj.updateDynamic("columnReorder")(js.Any.fromFunction1(columnReorder))
+    if (columnResize != null) __obj.updateDynamic("columnResize")(js.Any.fromFunction1(columnResize))
     if (columnResizeHandleWidth != null) __obj.updateDynamic("columnResizeHandleWidth")(columnResizeHandleWidth.asInstanceOf[js.Any])
-    if (columnShow != null) __obj.updateDynamic("columnShow")(columnShow)
-    if (columnUnlock != null) __obj.updateDynamic("columnUnlock")(columnUnlock)
+    if (columnShow != null) __obj.updateDynamic("columnShow")(js.Any.fromFunction1(columnShow))
+    if (columnUnlock != null) __obj.updateDynamic("columnUnlock")(js.Any.fromFunction1(columnUnlock))
     if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1(dataBinding))
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (detailCollapse != null) __obj.updateDynamic("detailCollapse")(detailCollapse)
-    if (detailExpand != null) __obj.updateDynamic("detailExpand")(detailExpand)
-    if (detailInit != null) __obj.updateDynamic("detailInit")(detailInit)
+    if (detailCollapse != null) __obj.updateDynamic("detailCollapse")(js.Any.fromFunction1(detailCollapse))
+    if (detailExpand != null) __obj.updateDynamic("detailExpand")(js.Any.fromFunction1(detailExpand))
+    if (detailInit != null) __obj.updateDynamic("detailInit")(js.Any.fromFunction1(detailInit))
     if (detailTemplate != null) __obj.updateDynamic("detailTemplate")(detailTemplate.asInstanceOf[js.Any])
-    if (edit != null) __obj.updateDynamic("edit")(edit)
+    if (edit != null) __obj.updateDynamic("edit")(js.Any.fromFunction1(edit))
     if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
     if (excel != null) __obj.updateDynamic("excel")(excel)
-    if (excelExport != null) __obj.updateDynamic("excelExport")(excelExport)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (filterMenuInit != null) __obj.updateDynamic("filterMenuInit")(filterMenuInit)
-    if (filterMenuOpen != null) __obj.updateDynamic("filterMenuOpen")(filterMenuOpen)
+    if (excelExport != null) __obj.updateDynamic("excelExport")(js.Any.fromFunction1(excelExport))
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
+    if (filterMenuInit != null) __obj.updateDynamic("filterMenuInit")(js.Any.fromFunction1(filterMenuInit))
+    if (filterMenuOpen != null) __obj.updateDynamic("filterMenuOpen")(js.Any.fromFunction1(filterMenuOpen))
     if (filterable != null) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (groupCollapse != null) __obj.updateDynamic("groupCollapse")(groupCollapse)
-    if (groupExpand != null) __obj.updateDynamic("groupExpand")(groupExpand)
+    if (group != null) __obj.updateDynamic("group")(js.Any.fromFunction1(group))
+    if (groupCollapse != null) __obj.updateDynamic("groupCollapse")(js.Any.fromFunction1(groupCollapse))
+    if (groupExpand != null) __obj.updateDynamic("groupExpand")(js.Any.fromFunction1(groupExpand))
     if (groupable != null) __obj.updateDynamic("groupable")(groupable.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (mobile != null) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable)
-    if (navigate != null) __obj.updateDynamic("navigate")(navigate)
+    if (navigate != null) __obj.updateDynamic("navigate")(js.Any.fromFunction1(navigate))
     if (noRecords != null) __obj.updateDynamic("noRecords")(noRecords.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page)
+    if (page != null) __obj.updateDynamic("page")(js.Any.fromFunction1(page))
     if (pageable != null) __obj.updateDynamic("pageable")(pageable.asInstanceOf[js.Any])
     if (pdf != null) __obj.updateDynamic("pdf")(pdf)
-    if (pdfExport != null) __obj.updateDynamic("pdfExport")(pdfExport)
+    if (pdfExport != null) __obj.updateDynamic("pdfExport")(js.Any.fromFunction1(pdfExport))
     if (!js.isUndefined(persistSelection)) __obj.updateDynamic("persistSelection")(persistSelection)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
     if (!js.isUndefined(reorderable)) __obj.updateDynamic("reorderable")(reorderable)
     if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
     if (rowTemplate != null) __obj.updateDynamic("rowTemplate")(rowTemplate.asInstanceOf[js.Any])
-    if (save != null) __obj.updateDynamic("save")(save)
-    if (saveChanges != null) __obj.updateDynamic("saveChanges")(saveChanges)
+    if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction1(save))
+    if (saveChanges != null) __obj.updateDynamic("saveChanges")(js.Any.fromFunction1(saveChanges))
     if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
     if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction1(sort))
     if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar)
     __obj.asInstanceOf[GridOptions]

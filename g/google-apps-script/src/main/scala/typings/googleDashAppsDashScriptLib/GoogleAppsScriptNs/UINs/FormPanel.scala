@@ -40,38 +40,34 @@ trait FormPanel extends js.Object {
 object FormPanel {
   @scala.inline
   def apply(
-    add: js.Function1[Widget, FormPanel],
-    addStyleDependentName: js.Function1[java.lang.String, FormPanel],
-    addStyleName: js.Function1[java.lang.String, FormPanel],
-    addSubmitCompleteHandler: js.Function1[Handler, FormPanel],
-    addSubmitHandler: js.Function1[Handler, FormPanel],
-    clear: js.Function0[FormPanel],
-    getId: js.Function0[java.lang.String],
-    getTag: js.Function0[java.lang.String],
-    getType: js.Function0[java.lang.String],
-    setAction: js.Function1[java.lang.String, FormPanel],
-    setEncoding: js.Function1[java.lang.String, FormPanel],
-    setHeight: js.Function1[java.lang.String, FormPanel],
-    setId: js.Function1[java.lang.String, FormPanel],
-    setLayoutData: js.Function1[js.Object, FormPanel],
-    setMethod: js.Function1[java.lang.String, FormPanel],
-    setPixelSize: js.Function2[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      FormPanel
-    ],
-    setSize: js.Function2[java.lang.String, java.lang.String, FormPanel],
-    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, FormPanel],
-    setStyleAttributes: js.Function1[js.Object, FormPanel],
-    setStyleName: js.Function1[java.lang.String, FormPanel],
-    setStylePrimaryName: js.Function1[java.lang.String, FormPanel],
-    setTag: js.Function1[java.lang.String, FormPanel],
-    setTitle: js.Function1[java.lang.String, FormPanel],
-    setVisible: js.Function1[scala.Boolean, FormPanel],
-    setWidget: js.Function1[Widget, FormPanel],
-    setWidth: js.Function1[java.lang.String, FormPanel]
+    add: Widget => FormPanel,
+    addStyleDependentName: java.lang.String => FormPanel,
+    addStyleName: java.lang.String => FormPanel,
+    addSubmitCompleteHandler: Handler => FormPanel,
+    addSubmitHandler: Handler => FormPanel,
+    clear: () => FormPanel,
+    getId: () => java.lang.String,
+    getTag: () => java.lang.String,
+    getType: () => java.lang.String,
+    setAction: java.lang.String => FormPanel,
+    setEncoding: java.lang.String => FormPanel,
+    setHeight: java.lang.String => FormPanel,
+    setId: java.lang.String => FormPanel,
+    setLayoutData: js.Object => FormPanel,
+    setMethod: java.lang.String => FormPanel,
+    setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => FormPanel,
+    setSize: (java.lang.String, java.lang.String) => FormPanel,
+    setStyleAttribute: (java.lang.String, java.lang.String) => FormPanel,
+    setStyleAttributes: js.Object => FormPanel,
+    setStyleName: java.lang.String => FormPanel,
+    setStylePrimaryName: java.lang.String => FormPanel,
+    setTag: java.lang.String => FormPanel,
+    setTitle: java.lang.String => FormPanel,
+    setVisible: scala.Boolean => FormPanel,
+    setWidget: Widget => FormPanel,
+    setWidth: java.lang.String => FormPanel
   ): FormPanel = {
-    val __obj = js.Dynamic.literal(add = add, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, addSubmitCompleteHandler = addSubmitCompleteHandler, addSubmitHandler = addSubmitHandler, clear = clear, getId = getId, getTag = getTag, getType = getType, setAction = setAction, setEncoding = setEncoding, setHeight = setHeight, setId = setId, setLayoutData = setLayoutData, setMethod = setMethod, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setTitle = setTitle, setVisible = setVisible, setWidget = setWidget, setWidth = setWidth)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), addStyleDependentName = js.Any.fromFunction1(addStyleDependentName), addStyleName = js.Any.fromFunction1(addStyleName), addSubmitCompleteHandler = js.Any.fromFunction1(addSubmitCompleteHandler), addSubmitHandler = js.Any.fromFunction1(addSubmitHandler), clear = js.Any.fromFunction0(clear), getId = js.Any.fromFunction0(getId), getTag = js.Any.fromFunction0(getTag), getType = js.Any.fromFunction0(getType), setAction = js.Any.fromFunction1(setAction), setEncoding = js.Any.fromFunction1(setEncoding), setHeight = js.Any.fromFunction1(setHeight), setId = js.Any.fromFunction1(setId), setLayoutData = js.Any.fromFunction1(setLayoutData), setMethod = js.Any.fromFunction1(setMethod), setPixelSize = js.Any.fromFunction2(setPixelSize), setSize = js.Any.fromFunction2(setSize), setStyleAttribute = js.Any.fromFunction2(setStyleAttribute), setStyleAttributes = js.Any.fromFunction1(setStyleAttributes), setStyleName = js.Any.fromFunction1(setStyleName), setStylePrimaryName = js.Any.fromFunction1(setStylePrimaryName), setTag = js.Any.fromFunction1(setTag), setTitle = js.Any.fromFunction1(setTitle), setVisible = js.Any.fromFunction1(setVisible), setWidget = js.Any.fromFunction1(setWidget), setWidth = js.Any.fromFunction1(setWidth))
   
     __obj.asInstanceOf[FormPanel]
   }

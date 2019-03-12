@@ -20,13 +20,13 @@ trait XToolkitRobot extends js.Object {
 object XToolkitRobot {
   @scala.inline
   def apply(
-    keyPress: js.Function1[KeyEvent, scala.Unit],
-    keyRelease: js.Function1[KeyEvent, scala.Unit],
-    mouseMove: js.Function1[MouseEvent, scala.Unit],
-    mousePress: js.Function1[MouseEvent, scala.Unit],
-    mouseRelease: js.Function1[MouseEvent, scala.Unit]
+    keyPress: KeyEvent => scala.Unit,
+    keyRelease: KeyEvent => scala.Unit,
+    mouseMove: MouseEvent => scala.Unit,
+    mousePress: MouseEvent => scala.Unit,
+    mouseRelease: MouseEvent => scala.Unit
   ): XToolkitRobot = {
-    val __obj = js.Dynamic.literal(keyPress = keyPress, keyRelease = keyRelease, mouseMove = mouseMove, mousePress = mousePress, mouseRelease = mouseRelease)
+    val __obj = js.Dynamic.literal(keyPress = js.Any.fromFunction1(keyPress), keyRelease = js.Any.fromFunction1(keyRelease), mouseMove = js.Any.fromFunction1(mouseMove), mousePress = js.Any.fromFunction1(mousePress), mouseRelease = js.Any.fromFunction1(mouseRelease))
   
     __obj.asInstanceOf[XToolkitRobot]
   }

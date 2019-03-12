@@ -38,11 +38,11 @@ object Boom {
     message: java.lang.String,
     name: java.lang.String,
     output: boomLib.boomMod.BoomNs.Output,
-    reformat: js.Function0[java.lang.String],
+    reformat: () => java.lang.String,
     isMissing: js.UndefOr[scala.Boolean] = js.undefined,
     stack: java.lang.String = null
   ): Boom[Data] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], isBoom = isBoom, isServer = isServer, message = message, name = name, output = output, reformat = reformat)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], isBoom = isBoom, isServer = isServer, message = message, name = name, output = output, reformat = js.Any.fromFunction0(reformat))
     if (!js.isUndefined(isMissing)) __obj.updateDynamic("isMissing")(isMissing)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[Boom[Data]]

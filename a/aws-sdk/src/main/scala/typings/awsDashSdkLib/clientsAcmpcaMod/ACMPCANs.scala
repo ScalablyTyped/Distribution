@@ -122,11 +122,11 @@ object ACMPCANs extends js.Object {
     /**
       * Type of the public key algorithm and size, in bits, of the key pair that your key pair creates when it issues a certificate.
       */
-    var KeyAlgorithm: KeyAlgorithm
+    var KeyAlgorithm: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.KeyAlgorithm
     /**
       * Name of the algorithm your private CA uses to sign certificate requests.
       */
-    var SigningAlgorithm: SigningAlgorithm
+    var SigningAlgorithm: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.SigningAlgorithm
     /**
       * Structure that contains X.500 distinguished name information for your private CA.
       */
@@ -144,7 +144,7 @@ object ACMPCANs extends js.Object {
     /**
       * Format in which to create the report. This can be either JSON or CSV.
       */
-    var AuditReportResponseFormat: AuditReportResponseFormat
+    var AuditReportResponseFormat: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.AuditReportResponseFormat
     /**
       * Amazon Resource Name (ARN) of the CA to be audited. This is of the form:  arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 .
       */
@@ -170,11 +170,11 @@ object ACMPCANs extends js.Object {
     /**
       * Name and bit size of the private key algorithm, the name of the signing algorithm, and X.500 certificate subject information.
       */
-    var CertificateAuthorityConfiguration: CertificateAuthorityConfiguration
+    var CertificateAuthorityConfiguration: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.CertificateAuthorityConfiguration
     /**
       * The type of the certificate authority. Currently, this must be SUBORDINATE.
       */
-    var CertificateAuthorityType: CertificateAuthorityType
+    var CertificateAuthorityType: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.CertificateAuthorityType
     /**
       * Alphanumeric string that can be used to distinguish between calls to CreateCertificateAuthority. Idempotency tokens time out after five minutes. Therefore, if you call CreateCertificateAuthority multiple times with the same idempotency token within a five minute period, ACM PCA recognizes that you are requesting only one certificate. As a result, ACM PCA issues only one. If you change the idempotency token for each call, however, ACM PCA recognizes that you are requesting multiple certificates.
       */
@@ -230,7 +230,7 @@ object ACMPCANs extends js.Object {
     /**
       * The report ID returned by calling the CreateCertificateAuthorityAuditReport operation.
       */
-    var AuditReportId: AuditReportId
+    var AuditReportId: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.AuditReportId
     /**
       * The Amazon Resource Name (ARN) of the private CA. This must be of the form:  arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 . 
       */
@@ -355,11 +355,11 @@ object ACMPCANs extends js.Object {
     /**
       * The name of the algorithm that will be used to sign the certificate to be issued.
       */
-    var SigningAlgorithm: SigningAlgorithm
+    var SigningAlgorithm: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.SigningAlgorithm
     /**
       * The type of the validity period.
       */
-    var Validity: Validity
+    var Validity: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.Validity
   }
   
   trait IssueCertificateResponse extends js.Object {
@@ -443,7 +443,7 @@ object ACMPCANs extends js.Object {
     /**
       * Specifies why you revoked the certificate.
       */
-    var RevocationReason: RevocationReason
+    var RevocationReason: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.RevocationReason
   }
   
   trait Tag extends js.Object {

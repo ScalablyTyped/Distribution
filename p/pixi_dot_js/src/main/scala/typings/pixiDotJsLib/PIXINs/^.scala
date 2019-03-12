@@ -25,15 +25,10 @@ object ^ extends js.Object {
   val VERSION: java.lang.String = js.native
   val WRAP_MODES: pixiDotJsLib.Anon_CLAMP = js.native
   val loader: pixiDotJsLib.PIXINs.loadersNs.Loader = js.native
-  def autoDetectRenderer(): pixiDotJsLib.PIXINs.WebGLRenderer | pixiDotJsLib.PIXINs.CanvasRenderer = js.native
-  def autoDetectRenderer(options: pixiDotJsLib.PIXINs.RendererOptions): pixiDotJsLib.PIXINs.WebGLRenderer | pixiDotJsLib.PIXINs.CanvasRenderer = js.native
-  def autoDetectRenderer(width: scala.Double, height: scala.Double): pixiDotJsLib.PIXINs.WebGLRenderer | pixiDotJsLib.PIXINs.CanvasRenderer = js.native
-  def autoDetectRenderer(width: scala.Double, height: scala.Double, options: pixiDotJsLib.PIXINs.RendererOptions): pixiDotJsLib.PIXINs.WebGLRenderer | pixiDotJsLib.PIXINs.CanvasRenderer = js.native
-  def autoDetectRenderer(
-    width: scala.Double,
-    height: scala.Double,
-    options: pixiDotJsLib.PIXINs.RendererOptions,
-    forceCanvas: scala.Boolean
-  ): pixiDotJsLib.PIXINs.WebGLRenderer | pixiDotJsLib.PIXINs.CanvasRenderer = js.native
+  def autoDetectRenderer(): WebGLRenderer | CanvasRenderer = js.native
+  def autoDetectRenderer(options: RendererOptions): WebGLRenderer | CanvasRenderer = js.native
+  def autoDetectRenderer(width: scala.Double, height: scala.Double): WebGLRenderer | CanvasRenderer = js.native
+  def autoDetectRenderer(width: scala.Double, height: scala.Double, options: RendererOptions): WebGLRenderer | CanvasRenderer = js.native
+  def autoDetectRenderer(width: scala.Double, height: scala.Double, options: RendererOptions, forceCanvas: scala.Boolean): WebGLRenderer | CanvasRenderer = js.native
 }
 

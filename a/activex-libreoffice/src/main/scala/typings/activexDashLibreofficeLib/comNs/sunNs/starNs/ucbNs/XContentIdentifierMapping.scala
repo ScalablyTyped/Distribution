@@ -48,15 +48,15 @@ trait XContentIdentifierMapping
 object XContentIdentifierMapping {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    mapContent: js.Function1[XContent, XContent],
-    mapContentIdentifier: js.Function1[XContentIdentifier, XContentIdentifier],
-    mapContentIdentifierString: js.Function1[java.lang.String, java.lang.String],
-    mapRow: js.Function1[js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]], scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    mapContent: XContent => XContent,
+    mapContentIdentifier: XContentIdentifier => XContentIdentifier,
+    mapContentIdentifierString: java.lang.String => java.lang.String,
+    mapRow: js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]] => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XContentIdentifierMapping = {
-    val __obj = js.Dynamic.literal(acquire = acquire, mapContent = mapContent, mapContentIdentifier = mapContentIdentifier, mapContentIdentifierString = mapContentIdentifierString, mapRow = mapRow, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), mapContent = js.Any.fromFunction1(mapContent), mapContentIdentifier = js.Any.fromFunction1(mapContentIdentifier), mapContentIdentifierString = js.Any.fromFunction1(mapContentIdentifierString), mapRow = js.Any.fromFunction1(mapRow), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XContentIdentifierMapping]
   }

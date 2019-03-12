@@ -345,15 +345,15 @@ object AzureNs extends js.Object {
     type ListSubscriptionsOptions = stdLib.Partial[PaginationOptions]
     type ListTopicsOptions = stdLib.Partial[PaginationOptions]
     type MessageOrName = Message | java.lang.String
-    type ResponseCallback = js.Function2[/* error */ nodeLib.Error | scala.Null, /* response */ Response, scala.Unit]
+    type ResponseCallback = js.Function2[/* error */ stdLib.Error | scala.Null, /* response */ Response, scala.Unit]
     type ResultAndResponseCallback = js.Function3[
-        /* error */ nodeLib.Error | scala.Null, 
+        /* error */ stdLib.Error | scala.Null, 
         /* result */ scala.Boolean | azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.ResultsNs.ModelsNs.Base | js.Array[azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.ResultsNs.ModelsNs.Base], 
         /* response */ Response, 
         scala.Unit
       ]
     type TypedResultAndResponseCallback[T] = js.Function3[
-        /* error */ nodeLib.Error | scala.Null, 
+        /* error */ stdLib.Error | scala.Null, 
         /* result */ T, 
         /* response */ Response, 
         scala.Unit

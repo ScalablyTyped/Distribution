@@ -10,19 +10,19 @@ trait IXmlComment extends IXmlCharacterData
 object IXmlComment {
   @scala.inline
   def apply(
-    appendChild: js.Function1[IXmlNode, IXmlNode],
-    appendData: js.Function1[java.lang.String, scala.Unit],
+    appendChild: IXmlNode => IXmlNode,
+    appendData: java.lang.String => scala.Unit,
     attributes: XmlNamedNodeMap,
     childNodes: XmlNodeList,
-    cloneNode: js.Function1[scala.Boolean, IXmlNode],
+    cloneNode: scala.Boolean => IXmlNode,
     data: java.lang.String,
-    deleteData: js.Function2[scala.Double, scala.Double, scala.Unit],
+    deleteData: (scala.Double, scala.Double) => scala.Unit,
     firstChild: IXmlNode,
-    getXml: js.Function0[java.lang.String],
-    hasChildNodes: js.Function0[scala.Boolean],
+    getXml: () => java.lang.String,
+    hasChildNodes: () => scala.Boolean,
     innerText: java.lang.String,
-    insertBefore: js.Function2[IXmlNode, IXmlNode, IXmlNode],
-    insertData: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    insertBefore: (IXmlNode, IXmlNode) => IXmlNode,
+    insertData: (scala.Double, java.lang.String) => scala.Unit,
     lastChild: IXmlNode,
     length: scala.Double,
     localName: js.Any,
@@ -31,21 +31,21 @@ object IXmlComment {
     nodeName: java.lang.String,
     nodeType: NodeType,
     nodeValue: js.Any,
-    normalize: js.Function0[scala.Unit],
+    normalize: () => scala.Unit,
     ownerDocument: XmlDocument,
     parentNode: IXmlNode,
     prefix: js.Any,
     previousSibling: IXmlNode,
-    removeChild: js.Function1[IXmlNode, IXmlNode],
-    replaceChild: js.Function2[IXmlNode, IXmlNode, IXmlNode],
-    replaceData: js.Function3[scala.Double, scala.Double, java.lang.String, scala.Unit],
-    selectNodes: js.Function1[java.lang.String, XmlNodeList],
-    selectNodesNS: js.Function2[java.lang.String, js.Any, XmlNodeList],
-    selectSingleNode: js.Function1[java.lang.String, IXmlNode],
-    selectSingleNodeNS: js.Function2[java.lang.String, js.Any, IXmlNode],
-    substringData: js.Function2[scala.Double, scala.Double, java.lang.String]
+    removeChild: IXmlNode => IXmlNode,
+    replaceChild: (IXmlNode, IXmlNode) => IXmlNode,
+    replaceData: (scala.Double, scala.Double, java.lang.String) => scala.Unit,
+    selectNodes: java.lang.String => XmlNodeList,
+    selectNodesNS: (java.lang.String, js.Any) => XmlNodeList,
+    selectSingleNode: java.lang.String => IXmlNode,
+    selectSingleNodeNS: (java.lang.String, js.Any) => IXmlNode,
+    substringData: (scala.Double, scala.Double) => java.lang.String
   ): IXmlComment = {
-    val __obj = js.Dynamic.literal(appendChild = appendChild, appendData = appendData, attributes = attributes, childNodes = childNodes, cloneNode = cloneNode, data = data, deleteData = deleteData, firstChild = firstChild, getXml = getXml, hasChildNodes = hasChildNodes, innerText = innerText, insertBefore = insertBefore, insertData = insertData, lastChild = lastChild, length = length, localName = localName, namespaceUri = namespaceUri, nextSibling = nextSibling, nodeName = nodeName, nodeType = nodeType, nodeValue = nodeValue, normalize = normalize, ownerDocument = ownerDocument, parentNode = parentNode, prefix = prefix, previousSibling = previousSibling, removeChild = removeChild, replaceChild = replaceChild, replaceData = replaceData, selectNodes = selectNodes, selectNodesNS = selectNodesNS, selectSingleNode = selectSingleNode, selectSingleNodeNS = selectSingleNodeNS, substringData = substringData)
+    val __obj = js.Dynamic.literal(appendChild = js.Any.fromFunction1(appendChild), appendData = js.Any.fromFunction1(appendData), attributes = attributes, childNodes = childNodes, cloneNode = js.Any.fromFunction1(cloneNode), data = data, deleteData = js.Any.fromFunction2(deleteData), firstChild = firstChild, getXml = js.Any.fromFunction0(getXml), hasChildNodes = js.Any.fromFunction0(hasChildNodes), innerText = innerText, insertBefore = js.Any.fromFunction2(insertBefore), insertData = js.Any.fromFunction2(insertData), lastChild = lastChild, length = length, localName = localName, namespaceUri = namespaceUri, nextSibling = nextSibling, nodeName = nodeName, nodeType = nodeType, nodeValue = nodeValue, normalize = js.Any.fromFunction0(normalize), ownerDocument = ownerDocument, parentNode = parentNode, prefix = prefix, previousSibling = previousSibling, removeChild = js.Any.fromFunction1(removeChild), replaceChild = js.Any.fromFunction2(replaceChild), replaceData = js.Any.fromFunction3(replaceData), selectNodes = js.Any.fromFunction1(selectNodes), selectNodesNS = js.Any.fromFunction2(selectNodesNS), selectSingleNode = js.Any.fromFunction1(selectSingleNode), selectSingleNodeNS = js.Any.fromFunction2(selectSingleNodeNS), substringData = js.Any.fromFunction2(substringData))
   
     __obj.asInstanceOf[IXmlComment]
   }

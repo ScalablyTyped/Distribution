@@ -31,9 +31,9 @@ object ISequenceError {
     reason: java.lang.String,
     source: js.Any,
     stack: java.lang.String,
-    toString: js.Function0[java.lang.String]
+    toString: () => java.lang.String
   ): ISequenceError = {
-    val __obj = js.Dynamic.literal(dest = dest, duration = duration, error = error, index = index, message = message, name = name, reason = reason, source = source, stack = stack, toString = toString)
+    val __obj = js.Dynamic.literal(dest = dest, duration = duration, error = error, index = index, message = message, name = name, reason = reason, source = source, stack = stack, toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[ISequenceError]
   }

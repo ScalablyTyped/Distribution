@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@lingui/macro", "SelectOrdinal")
 @js.native
 class SelectOrdinal ()
-  extends atLinguiMacroLib.reactselectMod.SelectOrdinal
+  extends atLinguiMacroLib.reactSelectMod.SelectOrdinal
 

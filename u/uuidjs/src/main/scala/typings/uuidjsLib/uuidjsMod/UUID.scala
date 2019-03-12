@@ -23,16 +23,16 @@ object UUID {
   def apply(
     bitFields: UUIDFields[java.lang.String],
     bitString: java.lang.String,
-    equals: js.Function1[UUID, scala.Boolean],
+    equals: UUID => scala.Boolean,
     hexFields: UUIDFields[java.lang.String],
     hexNoDelim: java.lang.String,
     hexString: java.lang.String,
     intFields: UUIDFields[scala.Double],
-    toString: js.Function0[java.lang.String],
+    toString: () => java.lang.String,
     urn: java.lang.String,
     version: scala.Double
   ): UUID = {
-    val __obj = js.Dynamic.literal(bitFields = bitFields, bitString = bitString, equals = equals, hexFields = hexFields, hexNoDelim = hexNoDelim, hexString = hexString, intFields = intFields, toString = toString, urn = urn, version = version)
+    val __obj = js.Dynamic.literal(bitFields = bitFields, bitString = bitString, equals = js.Any.fromFunction1(equals), hexFields = hexFields, hexNoDelim = hexNoDelim, hexString = hexString, intFields = intFields, toString = js.Any.fromFunction0(toString), urn = urn, version = version)
   
     __obj.asInstanceOf[UUID]
   }

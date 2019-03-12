@@ -23,12 +23,12 @@ object XCellRangeReferrer {
   @scala.inline
   def apply(
     ReferredCells: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange,
-    acquire: js.Function0[scala.Unit],
-    getReferredCells: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getReferredCells: () => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCellRangeReferrer = {
-    val __obj = js.Dynamic.literal(ReferredCells = ReferredCells, acquire = acquire, getReferredCells = getReferredCells, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ReferredCells = ReferredCells, acquire = js.Any.fromFunction0(acquire), getReferredCells = js.Any.fromFunction0(getReferredCells), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCellRangeReferrer]
   }

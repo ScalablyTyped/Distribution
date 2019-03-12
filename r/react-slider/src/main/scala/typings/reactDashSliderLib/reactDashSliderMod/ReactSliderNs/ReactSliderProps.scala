@@ -58,19 +58,10 @@ object ReactSliderProps {
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
     minDistance: scala.Int | scala.Double = null,
-    onAfterChange: js.Function1[
-      /* value */ js.UndefOr[scala.Double | js.Array[scala.Double] | scala.Null], 
-      scala.Unit
-    ] = null,
-    onBeforeChange: js.Function1[
-      /* value */ js.UndefOr[scala.Double | js.Array[scala.Double] | scala.Null], 
-      scala.Unit
-    ] = null,
-    onChange: js.Function1[
-      /* value */ js.UndefOr[scala.Double | js.Array[scala.Double] | scala.Null], 
-      scala.Unit
-    ] = null,
-    onSliderClick: js.Function1[/* value */ scala.Double, scala.Unit] = null,
+    onAfterChange: /* value */ js.UndefOr[scala.Double | js.Array[scala.Double] | scala.Null] => scala.Unit = null,
+    onBeforeChange: /* value */ js.UndefOr[scala.Double | js.Array[scala.Double] | scala.Null] => scala.Unit = null,
+    onChange: /* value */ js.UndefOr[scala.Double | js.Array[scala.Double] | scala.Null] => scala.Unit = null,
+    onSliderClick: /* value */ scala.Double => scala.Unit = null,
     orientation: reactDashSliderLib.reactDashSliderLibStrings.horizontal | reactDashSliderLib.reactDashSliderLibStrings.vertical = null,
     pearling: js.UndefOr[scala.Boolean] = js.undefined,
     snapDragDisabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -89,10 +80,10 @@ object ReactSliderProps {
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (minDistance != null) __obj.updateDynamic("minDistance")(minDistance.asInstanceOf[js.Any])
-    if (onAfterChange != null) __obj.updateDynamic("onAfterChange")(onAfterChange)
-    if (onBeforeChange != null) __obj.updateDynamic("onBeforeChange")(onBeforeChange)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onSliderClick != null) __obj.updateDynamic("onSliderClick")(onSliderClick)
+    if (onAfterChange != null) __obj.updateDynamic("onAfterChange")(js.Any.fromFunction1(onAfterChange))
+    if (onBeforeChange != null) __obj.updateDynamic("onBeforeChange")(js.Any.fromFunction1(onBeforeChange))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onSliderClick != null) __obj.updateDynamic("onSliderClick")(js.Any.fromFunction1(onSliderClick))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (!js.isUndefined(pearling)) __obj.updateDynamic("pearling")(pearling)
     if (!js.isUndefined(snapDragDisabled)) __obj.updateDynamic("snapDragDisabled")(snapDragDisabled)

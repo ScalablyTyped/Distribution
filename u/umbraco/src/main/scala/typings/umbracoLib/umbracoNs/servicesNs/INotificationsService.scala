@@ -157,20 +157,20 @@ trait INotificationsService extends js.Object {
 object INotificationsService {
   @scala.inline
   def apply(
-    add: js.Function1[INotificationItem, INotification],
-    addView: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Unit],
+    add: INotificationItem => INotification,
+    addView: (java.lang.String, /* repeated */ js.Any) => scala.Unit,
     current: js.Array[java.lang.String],
-    error: js.Function2[java.lang.String, java.lang.String, INotification],
-    getCurrent: js.Function0[js.Array[INotification]],
-    hasView: js.Function1[java.lang.String, scala.Boolean],
-    info: js.Function2[java.lang.String, java.lang.String, INotification],
-    remove: js.Function1[scala.Double, scala.Unit],
-    removeAll: js.Function0[scala.Unit],
-    showNotification: js.Function1[INotificationArgs, INotification],
-    success: js.Function2[java.lang.String, java.lang.String, INotification],
-    warning: js.Function2[java.lang.String, java.lang.String, INotification]
+    error: (java.lang.String, java.lang.String) => INotification,
+    getCurrent: () => js.Array[INotification],
+    hasView: java.lang.String => scala.Boolean,
+    info: (java.lang.String, java.lang.String) => INotification,
+    remove: scala.Double => scala.Unit,
+    removeAll: () => scala.Unit,
+    showNotification: INotificationArgs => INotification,
+    success: (java.lang.String, java.lang.String) => INotification,
+    warning: (java.lang.String, java.lang.String) => INotification
   ): INotificationsService = {
-    val __obj = js.Dynamic.literal(add = add, addView = addView, current = current, error = error, getCurrent = getCurrent, hasView = hasView, info = info, remove = remove, removeAll = removeAll, showNotification = showNotification, success = success, warning = warning)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), addView = js.Any.fromFunction2(addView), current = current, error = js.Any.fromFunction2(error), getCurrent = js.Any.fromFunction0(getCurrent), hasView = js.Any.fromFunction1(hasView), info = js.Any.fromFunction2(info), remove = js.Any.fromFunction1(remove), removeAll = js.Any.fromFunction0(removeAll), showNotification = js.Any.fromFunction1(showNotification), success = js.Any.fromFunction2(success), warning = js.Any.fromFunction2(warning))
   
     __obj.asInstanceOf[INotificationsService]
   }

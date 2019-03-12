@@ -25,22 +25,18 @@ trait HttpConnector extends js.Object {
 object HttpConnector {
   @scala.inline
   def apply(
-    createAgent: js.Function1[js.Any, js.Any],
-    makeAgentConfig: js.Function1[js.Any, js.Any],
-    makeReqParams: js.Function1[js.Any, js.Any],
-    request: js.Function2[
-      js.Any, 
-      js.Function4[
-        /* error */ js.Any, 
-        /* response */ js.Any, 
-        /* status */ js.Any, 
-        /* headers */ js.Any, 
-        scala.Unit
-      ], 
+    createAgent: js.Any => js.Any,
+    makeAgentConfig: js.Any => js.Any,
+    makeReqParams: js.Any => js.Any,
+    request: (js.Any, js.Function4[
+      /* error */ js.Any, 
+      /* response */ js.Any, 
+      /* status */ js.Any, 
+      /* headers */ js.Any, 
       scala.Unit
-    ]
+    ]) => scala.Unit
   ): HttpConnector = {
-    val __obj = js.Dynamic.literal(createAgent = createAgent, makeAgentConfig = makeAgentConfig, makeReqParams = makeReqParams, request = request)
+    val __obj = js.Dynamic.literal(createAgent = js.Any.fromFunction1(createAgent), makeAgentConfig = js.Any.fromFunction1(makeAgentConfig), makeReqParams = js.Any.fromFunction1(makeReqParams), request = js.Any.fromFunction2(request))
   
     __obj.asInstanceOf[HttpConnector]
   }

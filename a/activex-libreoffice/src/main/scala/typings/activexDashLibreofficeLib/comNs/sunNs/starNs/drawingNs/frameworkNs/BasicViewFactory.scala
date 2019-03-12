@@ -22,11 +22,11 @@ trait BasicViewFactory extends XResourceFactory {
 object BasicViewFactory {
   @scala.inline
   def apply(
-    create: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, scala.Unit],
-    createResource: js.Function1[XResourceId, XResource],
-    releaseResource: js.Function1[XResource, scala.Unit]
+    create: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController => scala.Unit,
+    createResource: XResourceId => XResource,
+    releaseResource: XResource => scala.Unit
   ): BasicViewFactory = {
-    val __obj = js.Dynamic.literal(create = create, createResource = createResource, releaseResource = releaseResource)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), createResource = js.Any.fromFunction1(createResource), releaseResource = js.Any.fromFunction1(releaseResource))
   
     __obj.asInstanceOf[BasicViewFactory]
   }

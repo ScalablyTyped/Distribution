@@ -39,41 +39,17 @@ trait RegistriesResource extends js.Object {
 object RegistriesResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DeviceRegistry]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
+    create: gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[DeviceRegistry],
+    delete: gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
     devices: DevicesResource,
-    get: js.Function1[
-      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DeviceRegistry]
-    ],
-    getIamPolicy: js.Function1[
-      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    list: js.Function1[
-      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListDeviceRegistriesResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DeviceRegistry]
-    ],
-    setIamPolicy: js.Function1[
-      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    testIamPermissions: js.Function1[
-      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
-    ]
+    get: gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[DeviceRegistry],
+    getIamPolicy: gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    list: gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[ListDeviceRegistriesResponse],
+    patch: gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[DeviceRegistry],
+    setIamPolicy: gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    testIamPermissions: gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
   ): RegistriesResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, devices = devices, get = get, getIamPolicy = getIamPolicy, list = list, patch = patch, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), devices = devices, get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions))
   
     __obj.asInstanceOf[RegistriesResource]
   }

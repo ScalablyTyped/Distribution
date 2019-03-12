@@ -18,15 +18,15 @@ trait IUserOrUserGroupIDExs extends js.Object {
 object IUserOrUserGroupIDExs {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IUserOrUserGroupIDEx, scala.Unit],
-    Clone: js.Function0[IUserOrUserGroupIDExs],
+    Add: (scala.Double, IUserOrUserGroupIDEx) => scala.Unit,
+    Clone: () => IUserOrUserGroupIDExs,
     Count: scala.Double,
-    GetUserOrUserGroupIDEx: js.Function2[scala.Double, mfilesLib.MFilesNs.MFUserOrUserGroupType, IUserOrUserGroupIDEx],
-    GetUserOrUserGroupIDExIndex: js.Function2[scala.Double, mfilesLib.MFilesNs.MFUserOrUserGroupType, scala.Double],
-    Item: js.Function1[scala.Double, IUserOrUserGroupIDEx],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    GetUserOrUserGroupIDEx: (scala.Double, mfilesLib.MFilesNs.MFUserOrUserGroupType) => IUserOrUserGroupIDEx,
+    GetUserOrUserGroupIDExIndex: (scala.Double, mfilesLib.MFilesNs.MFUserOrUserGroupType) => scala.Double,
+    Item: scala.Double => IUserOrUserGroupIDEx,
+    Remove: scala.Double => scala.Unit
   ): IUserOrUserGroupIDExs = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, GetUserOrUserGroupIDEx = GetUserOrUserGroupIDEx, GetUserOrUserGroupIDExIndex = GetUserOrUserGroupIDExIndex, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count, GetUserOrUserGroupIDEx = js.Any.fromFunction2(GetUserOrUserGroupIDEx), GetUserOrUserGroupIDExIndex = js.Any.fromFunction2(GetUserOrUserGroupIDExIndex), Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IUserOrUserGroupIDExs]
   }

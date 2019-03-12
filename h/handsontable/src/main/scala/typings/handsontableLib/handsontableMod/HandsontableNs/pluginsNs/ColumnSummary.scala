@@ -21,31 +21,31 @@ trait ColumnSummary extends Base {
 object ColumnSummary {
   @scala.inline
   def apply(
-    addHook: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit],
-    calculate: js.Function1[Endpoints, scala.Unit],
-    calculateAverage: js.Function1[Endpoints, scala.Double],
-    calculateMinMax: js.Function2[Endpoints, java.lang.String, scala.Double],
-    calculateSum: js.Function1[Endpoints, scala.Unit],
-    callOnPluginsReady: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    clearHooks: js.Function0[scala.Unit],
-    countEmpty: js.Function2[js.Array[_], scala.Double, scala.Double],
-    countEntries: js.Function1[Endpoints, scala.Double],
-    destroy: js.Function0[scala.Unit],
-    disablePlugin: js.Function0[scala.Unit],
-    enablePlugin: js.Function0[scala.Unit],
+    addHook: (java.lang.String, js.Function0[scala.Unit]) => scala.Unit,
+    calculate: Endpoints => scala.Unit,
+    calculateAverage: Endpoints => scala.Double,
+    calculateMinMax: (Endpoints, java.lang.String) => scala.Double,
+    calculateSum: Endpoints => scala.Unit,
+    callOnPluginsReady: js.Function0[scala.Unit] => scala.Unit,
+    clearHooks: () => scala.Unit,
+    countEmpty: (js.Array[_], scala.Double) => scala.Double,
+    countEntries: Endpoints => scala.Double,
+    destroy: () => scala.Unit,
+    disablePlugin: () => scala.Unit,
+    enablePlugin: () => scala.Unit,
     enabled: scala.Boolean,
     endpoints: Endpoints | scala.Unit,
-    getCellValue: js.Function2[scala.Double, scala.Double, java.lang.String],
-    getPartialMinMax: js.Function3[js.Array[_], scala.Double, java.lang.String, scala.Double],
-    getPartialSum: js.Function2[js.Array[_], scala.Double, scala.Double],
-    init: js.Function0[scala.Unit],
+    getCellValue: (scala.Double, scala.Double) => java.lang.String,
+    getPartialMinMax: (js.Array[_], scala.Double, java.lang.String) => scala.Double,
+    getPartialSum: (js.Array[_], scala.Double) => scala.Double,
+    init: () => scala.Unit,
     initialized: scala.Boolean,
     isPluginsReady: scala.Boolean,
     pluginName: java.lang.String,
     pluginsInitializedCallback: js.Array[_],
-    removeHook: js.Function1[java.lang.String, scala.Unit]
+    removeHook: java.lang.String => scala.Unit
   ): ColumnSummary = {
-    val __obj = js.Dynamic.literal(addHook = addHook, calculate = calculate, calculateAverage = calculateAverage, calculateMinMax = calculateMinMax, calculateSum = calculateSum, callOnPluginsReady = callOnPluginsReady, clearHooks = clearHooks, countEmpty = countEmpty, countEntries = countEntries, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, endpoints = endpoints.asInstanceOf[js.Any], getCellValue = getCellValue, getPartialMinMax = getPartialMinMax, getPartialSum = getPartialSum, init = init, initialized = initialized, isPluginsReady = isPluginsReady, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook)
+    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), calculate = js.Any.fromFunction1(calculate), calculateAverage = js.Any.fromFunction1(calculateAverage), calculateMinMax = js.Any.fromFunction2(calculateMinMax), calculateSum = js.Any.fromFunction1(calculateSum), callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), countEmpty = js.Any.fromFunction2(countEmpty), countEntries = js.Any.fromFunction1(countEntries), destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, endpoints = endpoints.asInstanceOf[js.Any], getCellValue = js.Any.fromFunction2(getCellValue), getPartialMinMax = js.Any.fromFunction3(getPartialMinMax), getPartialSum = js.Any.fromFunction2(getPartialSum), init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = js.Any.fromFunction1(removeHook))
   
     __obj.asInstanceOf[ColumnSummary]
   }

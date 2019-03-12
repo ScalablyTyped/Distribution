@@ -46,12 +46,12 @@ object PCContinuousRendererResult {
     colorScheme: ColorScheme,
     constructor: js.Function,
     defaultValuesUsed: scala.Boolean,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     renderer: PointCloudStretchRenderer,
     statistics: SummaryStatisticsResult
   ): PCContinuousRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId, colorScheme = colorScheme, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer, statistics = statistics)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, colorScheme = colorScheme, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer, statistics = statistics)
   
     __obj.asInstanceOf[PCContinuousRendererResult]
   }

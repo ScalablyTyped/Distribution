@@ -56,14 +56,14 @@ object PipsOptions {
   def apply(
     mode: nouisliderLib.nouisliderLibStrings.range | nouisliderLib.nouisliderLibStrings.steps | nouisliderLib.nouisliderLibStrings.positions | nouisliderLib.nouisliderLibStrings.count | nouisliderLib.nouisliderLibStrings.values,
     density: scala.Int | scala.Double = null,
-    filter: js.Function1[/* repeated */ js.Any, PipFilterResult] = null,
+    filter: /* repeated */ js.Any => PipFilterResult = null,
     format: js.Object | (js.Function1[/* repeated */ js.Any, _]) = null,
     stepped: js.UndefOr[scala.Boolean] = js.undefined,
     values: scala.Double | js.Array[scala.Double] = null
   ): PipsOptions = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (!js.isUndefined(stepped)) __obj.updateDynamic("stepped")(stepped)
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])

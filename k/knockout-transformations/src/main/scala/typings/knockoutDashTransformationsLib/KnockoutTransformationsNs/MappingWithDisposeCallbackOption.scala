@@ -11,8 +11,8 @@ trait MappingWithDisposeCallbackOption[T, TResult] extends js.Object {
 
 object MappingWithDisposeCallbackOption {
   @scala.inline
-  def apply[T, TResult](mappingWithDisposeCallback: js.Function1[T, knockoutDashTransformationsLib.Anon_Dispose[TResult]]): MappingWithDisposeCallbackOption[T, TResult] = {
-    val __obj = js.Dynamic.literal(mappingWithDisposeCallback = mappingWithDisposeCallback)
+  def apply[T, TResult](mappingWithDisposeCallback: T => knockoutDashTransformationsLib.Anon_Dispose[TResult]): MappingWithDisposeCallbackOption[T, TResult] = {
+    val __obj = js.Dynamic.literal(mappingWithDisposeCallback = js.Any.fromFunction1(mappingWithDisposeCallback))
   
     __obj.asInstanceOf[MappingWithDisposeCallbackOption[T, TResult]]
   }

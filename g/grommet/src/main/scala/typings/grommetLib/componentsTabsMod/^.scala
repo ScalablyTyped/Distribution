@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Tabs: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsTabsMod.TabsProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    TabsProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
       reactLib.HTMLDivElement
     ]), 

@@ -11,8 +11,8 @@ trait Restorable extends js.Object {
 
 object Restorable {
   @scala.inline
-  def apply(restore: js.Function0[scala.Unit]): Restorable = {
-    val __obj = js.Dynamic.literal(restore = restore)
+  def apply(restore: () => scala.Unit): Restorable = {
+    val __obj = js.Dynamic.literal(restore = js.Any.fromFunction0(restore))
   
     __obj.asInstanceOf[Restorable]
   }

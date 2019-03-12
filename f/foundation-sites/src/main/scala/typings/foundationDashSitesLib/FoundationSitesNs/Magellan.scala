@@ -16,12 +16,12 @@ trait Magellan extends js.Object {
 object Magellan {
   @scala.inline
   def apply(
-    calcPoints: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    reflow: js.Function0[scala.Unit],
-    scrollToLoc: js.Function1[java.lang.String, scala.Unit]
+    calcPoints: () => scala.Unit,
+    destroy: () => scala.Unit,
+    reflow: () => scala.Unit,
+    scrollToLoc: java.lang.String => scala.Unit
   ): Magellan = {
-    val __obj = js.Dynamic.literal(calcPoints = calcPoints, destroy = destroy, reflow = reflow, scrollToLoc = scrollToLoc)
+    val __obj = js.Dynamic.literal(calcPoints = js.Any.fromFunction0(calcPoints), destroy = js.Any.fromFunction0(destroy), reflow = js.Any.fromFunction0(reflow), scrollToLoc = js.Any.fromFunction1(scrollToLoc))
   
     __obj.asInstanceOf[Magellan]
   }

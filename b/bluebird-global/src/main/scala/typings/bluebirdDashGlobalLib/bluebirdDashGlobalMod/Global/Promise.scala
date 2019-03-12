@@ -18,8 +18,10 @@ trait Promise[T] extends js.Object {
     /* options */ bluebirdLib.bluebirdMod.BluebirdNs.SpreadOption, 
     this.type
   ]) | (js.Function1[/* repeated */ js.Any, this.type]) = js.native
-  var bind: js.Function1[/* thisArg */ js.Any, bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
-  var call: js.ThisFunction2[
+  @JSName("bind")
+  var bind_Original: js.Function1[/* thisArg */ js.Any, bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
+  @JSName("call")
+  var call_Original: js.ThisFunction2[
     /* this */ bluebirdLib.bluebirdMod.Bluebird[_], 
     /* propertyName */ java.lang.String, 
     /* repeated */ js.Any, 
@@ -29,7 +31,8 @@ trait Promise[T] extends js.Object {
       ]
     ]
   ] = js.native
-  var cancel: js.Function0[scala.Unit] = js.native
+  @JSName("cancel")
+  var cancel_Original: js.Function0[scala.Unit] = js.native
   var catchReturn: (js.Function1[/* value */ js.Any, bluebirdLib.bluebirdMod.Bluebird[T | _]]) | (js.Function6[
     /* filter1 */ bluebirdLib.Constructor[stdLib.Error], 
     /* filter2 */ bluebirdLib.Constructor[stdLib.Error], 
@@ -505,8 +508,10 @@ trait Promise[T] extends js.Object {
     /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
     bluebirdLib.bluebirdMod.Bluebird[_ | T]
   ]) = js.native
-  var delay: js.Function1[/* ms */ scala.Double, bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
-  var disposer: js.Function1[
+  @JSName("delay")
+  var delay_Original: js.Function1[/* ms */ scala.Double, bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
+  @JSName("disposer")
+  var disposer_Original: js.Function1[
     /* disposeFn */ js.Function2[
       /* arg */ T, 
       /* promise */ bluebirdLib.bluebirdMod.Bluebird[T], 
@@ -522,21 +527,29 @@ trait Promise[T] extends js.Object {
     /* onRejected */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
     scala.Unit
   ]) = js.native
-  var error: js.Function1[
+  @JSName("error")
+  var error_Original: js.Function1[
     /* onReject */ js.Function1[/* reason */ js.Any, bluebirdLib.Resolvable[_]], 
     bluebirdLib.bluebirdMod.Bluebird[_]
   ] = js.native
   // finally: Bluebird<T>["finally"]; // Provided by lib.es2018.promise.d.ts
-  var get: js.Function1[
+  @JSName("get")
+  var get_Original: js.Function1[
     /* key */ java.lang.String, 
     bluebirdLib.bluebirdMod.Bluebird[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
-  var isCancelled: js.Function0[scala.Boolean] = js.native
-  var isFulfilled: js.Function0[scala.Boolean] = js.native
-  var isPending: js.Function0[scala.Boolean] = js.native
-  var isRejected: js.Function0[scala.Boolean] = js.native
-  var isResolved: js.Function0[scala.Boolean] = js.native
-  var lastly: js.Function1[
+  @JSName("isCancelled")
+  var isCancelled_Original: js.Function0[scala.Boolean] = js.native
+  @JSName("isFulfilled")
+  var isFulfilled_Original: js.Function0[scala.Boolean] = js.native
+  @JSName("isPending")
+  var isPending_Original: js.Function0[scala.Boolean] = js.native
+  @JSName("isRejected")
+  var isRejected_Original: js.Function0[scala.Boolean] = js.native
+  @JSName("isResolved")
+  var isResolved_Original: js.Function0[scala.Boolean] = js.native
+  @JSName("lastly")
+  var lastly_Original: js.Function1[
     /* handler */ js.Function0[bluebirdLib.Resolvable[_]], 
     bluebirdLib.bluebirdMod.Bluebird[T]
   ] = js.native
@@ -555,18 +568,16 @@ trait Promise[T] extends js.Object {
     /* this */ js.Thenable[bluebirdLib.bluebirdMod.BluebirdNs.ResolvableProps[_]], 
     bluebirdLib.bluebirdMod.Bluebird[_]
   ]) = js.native
-  var reason: js.Function0[_] = js.native
+  @JSName("reason")
+  var reason_Original: js.Function0[_] = js.native
   var reflect: (js.Function0[
     bluebirdLib.bluebirdMod.Bluebird[bluebirdLib.bluebirdMod.BluebirdNs.Inspection[T]]
   ]) | (js.Function0[
     bluebirdLib.bluebirdMod.Bluebird[bluebirdLib.bluebirdMod.BluebirdNs.Inspection[_]]
   ]) = js.native
   var `return`: js.Function0[bluebirdLib.bluebirdMod.Bluebird[scala.Unit]] | (js.Function1[/* value */ js.Any, bluebirdLib.bluebirdMod.Bluebird[_]]) = js.native
-  var suppressUnhandledRejections: js.Function0[scala.Unit] = js.native
-  var tap: js.Function1[
-    /* onFulFill */ js.Function1[/* value */ T, bluebirdLib.Resolvable[_]], 
-    bluebirdLib.bluebirdMod.Bluebird[T]
-  ] = js.native
+  @JSName("suppressUnhandledRejections")
+  var suppressUnhandledRejections_Original: js.Function0[scala.Unit] = js.native
   var tapCatch: (js.Function1[
     /* onReject */ js.Function1[/* error */ js.UndefOr[js.Any], bluebirdLib.Resolvable[_]], 
     bluebirdLib.bluebirdMod.Bluebird[T]
@@ -775,10 +786,17 @@ trait Promise[T] extends js.Object {
     /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
     bluebirdLib.bluebirdMod.Bluebird[T]
   ]) = js.native
+  @JSName("tap")
+  var tap_Original: js.Function1[
+    /* onFulFill */ js.Function1[/* value */ T, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[T]
+  ] = js.native
   // then: Bluebird<T>["then"]; // Provided by lib.es5.d.ts
   var thenReturn: js.Function0[bluebirdLib.bluebirdMod.Bluebird[scala.Unit]] | (js.Function1[/* value */ js.Any, bluebirdLib.bluebirdMod.Bluebird[_]]) = js.native
-  var thenThrow: js.Function1[/* reason */ stdLib.Error, bluebirdLib.bluebirdMod.Bluebird[scala.Nothing]] = js.native
-  var `throw`: js.Function1[/* reason */ stdLib.Error, bluebirdLib.bluebirdMod.Bluebird[scala.Nothing]] = js.native
+  @JSName("thenThrow")
+  var thenThrow_Original: js.Function1[/* reason */ stdLib.Error, bluebirdLib.bluebirdMod.Bluebird[scala.Nothing]] = js.native
+  @JSName("throw")
+  var throw_Original: js.Function1[/* reason */ stdLib.Error, bluebirdLib.bluebirdMod.Bluebird[scala.Nothing]] = js.native
   var timeout: (js.Function1[/* ms */ scala.Double, bluebirdLib.bluebirdMod.Bluebird[T]]) | (js.Function2[
     /* ms */ scala.Double, 
     /* message */ java.lang.String, 
@@ -788,14 +806,21 @@ trait Promise[T] extends js.Object {
     /* message */ stdLib.Error, 
     bluebirdLib.bluebirdMod.Bluebird[T]
   ]) = js.native
-  var toJSON: js.Function0[js.Object] = js.native
+  @JSName("toJSON")
+  var toJSON_Original: js.Function0[js.Object] = js.native
   @JSName("toString")
-  var toString_FPromise: js.Function0[java.lang.String] = js.native
-  var value: js.Function0[T] = js.native
+  var toString_Original: js.Function0[java.lang.String] = js.native
+  @JSName("value")
+  var value_Original: js.Function0[T] = js.native
   def all(): bluebirdLib.bluebirdMod.namespaced[scala.Nothing] = js.native
   def all(`this`: Promise[stdLib.Iterable[js.Object]]): bluebirdLib.bluebirdMod.namespaced[T] = js.native
   def any(): bluebirdLib.bluebirdMod.namespaced[scala.Nothing] = js.native
   def any[Q](`this`: Promise[T with stdLib.Iterable[Q]]): bluebirdLib.bluebirdMod.namespaced[Q] = js.native
+  def bind(thisArg: js.Any): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
+  def call[U /* <: java.lang.String */, Q](`this`: bluebirdLib.bluebirdMod.Bluebird[Q], propertyName: U, args: js.Any*): bluebirdLib.bluebirdMod.Bluebird[
+    stdLib.ReturnType[/* import warning: ImportType.apply Failed type conversion: Q[U] */ js.Any]
+  ] = js.native
+  def cancel(): scala.Unit = js.native
   /*
     * TypeScript disallows adding overrides via `catch: typeof Bluebird.prototype.catch`. Copy&paste them then.
     *
@@ -827,7 +852,16 @@ trait Promise[T] extends js.Object {
   ): bluebirdLib.bluebirdMod.namespaced[U | T] = js.native
   @JSName("catch")
   def catch_U[U](predicate: js.Object, onReject: js.Function1[/* error */ js.Any, U | js.Thenable[U]]): bluebirdLib.bluebirdMod.namespaced[U | T] = js.native
+  def delay(ms: scala.Double): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
+  def disposer(
+    disposeFn: js.Function2[
+      /* arg */ T, 
+      /* promise */ bluebirdLib.bluebirdMod.Bluebird[T], 
+      bluebirdLib.Resolvable[scala.Unit]
+    ]
+  ): bluebirdLib.bluebirdMod.BluebirdNs.Disposer[T] = js.native
   def each[Q](`this`: Promise[T with stdLib.Iterable[Q]], iterator: IterateFunction[Q, _]): bluebirdLib.bluebirdMod.namespaced[T] = js.native
+  def error[U](onReject: js.Function1[/* reason */ js.Any, bluebirdLib.Resolvable[U]]): bluebirdLib.bluebirdMod.Bluebird[U] = js.native
   def filter[Q](`this`: Promise[T with stdLib.Iterable[Q]], filterer: IterateFunction[Q, scala.Boolean]): bluebirdLib.bluebirdMod.namespaced[T] = js.native
   def filter[Q](
     `this`: Promise[T with stdLib.Iterable[Q]],
@@ -843,6 +877,14 @@ trait Promise[T] extends js.Object {
     */
   def `finally`(): Promise[T] = js.native
   def `finally`(onfinally: js.Function0[scala.Unit]): Promise[T] = js.native
+  // finally: Bluebird<T>["finally"]; // Provided by lib.es2018.promise.d.ts
+  def get[U /* <: java.lang.String */](key: U): bluebirdLib.bluebirdMod.Bluebird[/* import warning: ImportType.apply Failed type conversion: T[U] */ js.Any] = js.native
+  def isCancelled(): scala.Boolean = js.native
+  def isFulfilled(): scala.Boolean = js.native
+  def isPending(): scala.Boolean = js.native
+  def isRejected(): scala.Boolean = js.native
+  def isResolved(): scala.Boolean = js.native
+  def lastly(handler: js.Function0[bluebirdLib.Resolvable[_]]): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def map[U, Q](`this`: Promise[T with stdLib.Iterable[Q]], mapper: IterateFunction[Q, U]): bluebirdLib.bluebirdMod.namespaced[js.Array[U]] = js.native
   def map[U, Q](
     `this`: Promise[T with stdLib.Iterable[Q]],
@@ -852,6 +894,7 @@ trait Promise[T] extends js.Object {
   def mapSeries[U, Q](`this`: Promise[T with stdLib.Iterable[Q]], iterator: IterateFunction[Q, U]): bluebirdLib.bluebirdMod.namespaced[js.Array[U]] = js.native
   def race(): bluebirdLib.bluebirdMod.namespaced[scala.Nothing] = js.native
   def race[Q](`this`: Promise[T with stdLib.Iterable[Q]]): bluebirdLib.bluebirdMod.namespaced[Q] = js.native
+  def reason(): js.Any = js.native
   def reduce[U, Q](
     `this`: Promise[T with stdLib.Iterable[Q]],
     reducer: js.Function4[
@@ -878,6 +921,8 @@ trait Promise[T] extends js.Object {
     `this`: bluebirdLib.bluebirdMod.namespaced[T with stdLib.Iterable[Q]],
     fulfilledHandler: js.Function1[/* repeated */ Q, U | js.Thenable[U]]
   ): bluebirdLib.bluebirdMod.namespaced[U] = js.native
+  def suppressUnhandledRejections(): scala.Unit = js.native
+  def tap(onFulFill: js.Function1[/* value */ T, bluebirdLib.Resolvable[_]]): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   /*
     * Copy&paste ::then and ::catch from lib.es5.promise.d.ts, because Bluebird's typings are not
     * in line with the standard lib.
@@ -900,5 +945,9 @@ trait Promise[T] extends js.Object {
     onfulfilled: scala.Null,
     onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
   ): Promise[TResult1 | TResult2] = js.native
+  def thenThrow(reason: stdLib.Error): bluebirdLib.bluebirdMod.Bluebird[scala.Nothing] = js.native
+  def `throw`(reason: stdLib.Error): bluebirdLib.bluebirdMod.Bluebird[scala.Nothing] = js.native
+  def toJSON(): js.Object = js.native
+  def value(): T = js.native
 }
 

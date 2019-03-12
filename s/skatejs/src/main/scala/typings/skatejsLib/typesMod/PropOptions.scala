@@ -17,17 +17,17 @@ object PropOptions {
   @scala.inline
   def apply[T](
     attribute: PropOptionsAttribute = null,
-    coerce: js.Function1[/* value */ js.Any, Maybe[T]] = null,
+    coerce: /* value */ js.Any => Maybe[T] = null,
     default: T = null,
-    deserialize: js.Function1[/* value */ java.lang.String | scala.Null, Maybe[T]] = null,
-    serialize: js.Function1[/* value */ Maybe[T], java.lang.String | scala.Null] = null
+    deserialize: /* value */ java.lang.String | scala.Null => Maybe[T] = null,
+    serialize: /* value */ Maybe[T] => java.lang.String | scala.Null = null
   ): PropOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (attribute != null) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
-    if (coerce != null) __obj.updateDynamic("coerce")(coerce)
+    if (coerce != null) __obj.updateDynamic("coerce")(js.Any.fromFunction1(coerce))
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (deserialize != null) __obj.updateDynamic("deserialize")(deserialize)
-    if (serialize != null) __obj.updateDynamic("serialize")(serialize)
+    if (deserialize != null) __obj.updateDynamic("deserialize")(js.Any.fromFunction1(deserialize))
+    if (serialize != null) __obj.updateDynamic("serialize")(js.Any.fromFunction1(serialize))
     __obj.asInstanceOf[PropOptions[T]]
   }
 }

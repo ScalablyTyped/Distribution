@@ -21,12 +21,12 @@ trait UiStandardElement
 object UiStandardElement {
   @scala.inline
   def apply(
-    getLabel: js.Function0[java.lang.String],
-    getVisible: js.Function0[scala.Boolean],
-    setLabel: js.Function1[java.lang.String, scala.Unit],
-    setVisible: js.Function1[scala.Boolean, scala.Unit]
+    getLabel: () => java.lang.String,
+    getVisible: () => scala.Boolean,
+    setLabel: java.lang.String => scala.Unit,
+    setVisible: scala.Boolean => scala.Unit
   ): UiStandardElement = {
-    val __obj = js.Dynamic.literal(getLabel = getLabel, getVisible = getVisible, setLabel = setLabel, setVisible = setVisible)
+    val __obj = js.Dynamic.literal(getLabel = js.Any.fromFunction0(getLabel), getVisible = js.Any.fromFunction0(getVisible), setLabel = js.Any.fromFunction1(setLabel), setVisible = js.Any.fromFunction1(setVisible))
   
     __obj.asInstanceOf[UiStandardElement]
   }

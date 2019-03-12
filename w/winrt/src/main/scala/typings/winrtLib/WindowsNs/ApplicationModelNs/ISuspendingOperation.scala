@@ -12,8 +12,8 @@ trait ISuspendingOperation extends js.Object {
 
 object ISuspendingOperation {
   @scala.inline
-  def apply(deadline: stdLib.Date, getDeferral: js.Function0[SuspendingDeferral]): ISuspendingOperation = {
-    val __obj = js.Dynamic.literal(deadline = deadline, getDeferral = getDeferral)
+  def apply(deadline: stdLib.Date, getDeferral: () => SuspendingDeferral): ISuspendingOperation = {
+    val __obj = js.Dynamic.literal(deadline = deadline, getDeferral = js.Any.fromFunction0(getDeferral))
   
     __obj.asInstanceOf[ISuspendingOperation]
   }

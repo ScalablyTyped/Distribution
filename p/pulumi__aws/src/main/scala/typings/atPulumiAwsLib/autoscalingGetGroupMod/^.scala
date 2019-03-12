@@ -8,10 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/autoscaling/getGroup", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def getGroup(args: atPulumiAwsLib.autoscalingGetGroupMod.GetGroupArgs): js.Promise[atPulumiAwsLib.autoscalingGetGroupMod.GetGroupResult] = js.native
-  def getGroup(
-    args: atPulumiAwsLib.autoscalingGetGroupMod.GetGroupArgs,
-    opts: atPulumiPulumiLib.invokeMod.InvokeOptions
-  ): js.Promise[atPulumiAwsLib.autoscalingGetGroupMod.GetGroupResult] = js.native
+  def getGroup(args: GetGroupArgs): js.Promise[GetGroupResult] = js.native
+  def getGroup(args: GetGroupArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[GetGroupResult] = js.native
 }
 

@@ -18,16 +18,9 @@ trait Anon_Attr extends js.Object {
 object Anon_Attr {
   @scala.inline
   def apply(
-    getElement: js.Function5[
-      reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalColumnDescription[_], 
-      reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.EditableAttrs, 
-      java.lang.String, 
-      scala.Boolean, 
-      js.Any, 
-      reactLib.reactMod.ReactNs.ReactElement[_] | scala.Boolean
-    ]
+    getElement: (reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalColumnDescription[_], reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.EditableAttrs, java.lang.String, scala.Boolean, js.Any) => reactLib.reactMod.ReactNs.ReactElement[_] | scala.Boolean
   ): Anon_Attr = {
-    val __obj = js.Dynamic.literal(getElement = getElement)
+    val __obj = js.Dynamic.literal(getElement = js.Any.fromFunction5(getElement))
   
     __obj.asInstanceOf[Anon_Attr]
   }

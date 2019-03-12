@@ -13,12 +13,12 @@ trait Anon_Error extends js.Object {
 object Anon_Error {
   @scala.inline
   def apply(
-    error: js.Function1[/* error */ CordovaPluginsFileOpener2Result, scala.Unit] = null,
-    success: js.Function1[/* result */ CordovaPluginsFileOpener2Result, scala.Unit] = null
+    error: /* error */ CordovaPluginsFileOpener2Result => scala.Unit = null,
+    success: /* result */ CordovaPluginsFileOpener2Result => scala.Unit = null
   ): Anon_Error = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[Anon_Error]
   }
 }

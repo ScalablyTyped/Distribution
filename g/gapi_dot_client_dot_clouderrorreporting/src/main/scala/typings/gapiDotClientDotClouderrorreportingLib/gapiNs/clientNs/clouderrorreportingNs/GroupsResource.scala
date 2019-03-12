@@ -18,16 +18,10 @@ trait GroupsResource extends js.Object {
 object GroupsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotClouderrorreportingLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ErrorGroup]
-    ],
-    update: js.Function1[
-      gapiDotClientDotClouderrorreportingLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ErrorGroup]
-    ]
+    get: gapiDotClientDotClouderrorreportingLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ErrorGroup],
+    update: gapiDotClientDotClouderrorreportingLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[ErrorGroup]
   ): GroupsResource = {
-    val __obj = js.Dynamic.literal(get = get, update = update)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[GroupsResource]
   }

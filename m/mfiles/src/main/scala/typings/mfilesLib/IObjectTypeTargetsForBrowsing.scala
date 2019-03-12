@@ -16,13 +16,13 @@ trait IObjectTypeTargetsForBrowsing extends js.Object {
 object IObjectTypeTargetsForBrowsing {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IObjectTypeTargetForBrowsing, scala.Unit],
-    Clone: js.Function0[IObjectTypeTargetsForBrowsing],
+    Add: (scala.Double, IObjectTypeTargetForBrowsing) => scala.Unit,
+    Clone: () => IObjectTypeTargetsForBrowsing,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IObjectTypeTargetForBrowsing],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => IObjectTypeTargetForBrowsing,
+    Remove: scala.Double => scala.Unit
   ): IObjectTypeTargetsForBrowsing = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IObjectTypeTargetsForBrowsing]
   }

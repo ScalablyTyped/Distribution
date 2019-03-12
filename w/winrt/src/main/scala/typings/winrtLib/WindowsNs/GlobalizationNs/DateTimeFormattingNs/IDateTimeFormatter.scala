@@ -30,7 +30,7 @@ object IDateTimeFormatter {
   def apply(
     calendar: java.lang.String,
     clock: java.lang.String,
-    format: js.Function1[stdLib.Date, java.lang.String],
+    format: stdLib.Date => java.lang.String,
     geographicRegion: java.lang.String,
     includeDay: DayFormat,
     includeDayOfWeek: DayOfWeekFormat,
@@ -46,7 +46,7 @@ object IDateTimeFormatter {
     resolvedLanguage: java.lang.String,
     template: java.lang.String
   ): IDateTimeFormatter = {
-    val __obj = js.Dynamic.literal(calendar = calendar, clock = clock, format = format, geographicRegion = geographicRegion, includeDay = includeDay, includeDayOfWeek = includeDayOfWeek, includeHour = includeHour, includeMinute = includeMinute, includeMonth = includeMonth, includeSecond = includeSecond, includeYear = includeYear, languages = languages, numeralSystem = numeralSystem, patterns = patterns, resolvedGeographicRegion = resolvedGeographicRegion, resolvedLanguage = resolvedLanguage, template = template)
+    val __obj = js.Dynamic.literal(calendar = calendar, clock = clock, format = js.Any.fromFunction1(format), geographicRegion = geographicRegion, includeDay = includeDay, includeDayOfWeek = includeDayOfWeek, includeHour = includeHour, includeMinute = includeMinute, includeMonth = includeMonth, includeSecond = includeSecond, includeYear = includeYear, languages = languages, numeralSystem = numeralSystem, patterns = patterns, resolvedGeographicRegion = resolvedGeographicRegion, resolvedLanguage = resolvedLanguage, template = template)
   
     __obj.asInstanceOf[IDateTimeFormatter]
   }

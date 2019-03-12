@@ -11,10 +11,8 @@ trait IToastNotificationFactory extends js.Object {
 
 object IToastNotificationFactory {
   @scala.inline
-  def apply(
-    createToastNotification: js.Function1[winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument, ToastNotification]
-  ): IToastNotificationFactory = {
-    val __obj = js.Dynamic.literal(createToastNotification = createToastNotification)
+  def apply(createToastNotification: winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument => ToastNotification): IToastNotificationFactory = {
+    val __obj = js.Dynamic.literal(createToastNotification = js.Any.fromFunction1(createToastNotification))
   
     __obj.asInstanceOf[IToastNotificationFactory]
   }

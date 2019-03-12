@@ -18,7 +18,7 @@ trait StrictTextAreaProps extends js.Object {
     */
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLTextAreaElement], 
+      /* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLTextAreaElement], 
       /* data */ TextAreaProps, 
       scala.Unit
     ]
@@ -31,7 +31,7 @@ trait StrictTextAreaProps extends js.Object {
     */
   var onInput: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLTextAreaElement], 
+      /* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLTextAreaElement], 
       /* data */ TextAreaProps, 
       scala.Unit
     ]
@@ -49,16 +49,8 @@ object StrictTextAreaProps {
   def apply(
     as: js.Any = null,
     autoHeight: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLTextAreaElement], 
-      /* data */ TextAreaProps, 
-      scala.Unit
-    ] = null,
-    onInput: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLTextAreaElement], 
-      /* data */ TextAreaProps, 
-      scala.Unit
-    ] = null,
+    onChange: (/* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLTextAreaElement], /* data */ TextAreaProps) => scala.Unit = null,
+    onInput: (/* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLTextAreaElement], /* data */ TextAreaProps) => scala.Unit = null,
     rows: scala.Double | java.lang.String = null,
     style: js.Object = null,
     value: scala.Double | java.lang.String = null
@@ -66,8 +58,8 @@ object StrictTextAreaProps {
     val __obj = js.Dynamic.literal()
     if (as != null) __obj.updateDynamic("as")(as)
     if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onInput != null) __obj.updateDynamic("onInput")(onInput)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction2(onInput))
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

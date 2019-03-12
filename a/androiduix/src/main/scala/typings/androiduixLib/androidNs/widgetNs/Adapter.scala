@@ -25,23 +25,18 @@ trait Adapter extends js.Object {
 object Adapter {
   @scala.inline
   def apply(
-    getCount: js.Function0[scala.Double],
-    getItem: js.Function1[scala.Double, js.Any],
-    getItemId: js.Function1[scala.Double, scala.Double],
-    getItemViewType: js.Function1[scala.Double, scala.Double],
-    getView: js.Function3[
-      scala.Double, 
-      androiduixLib.androidNs.viewNs.View, 
-      androiduixLib.androidNs.viewNs.ViewGroup, 
-      androiduixLib.androidNs.viewNs.View
-    ],
-    getViewTypeCount: js.Function0[scala.Double],
-    hasStableIds: js.Function0[scala.Boolean],
-    isEmpty: js.Function0[scala.Boolean],
-    registerDataSetObserver: js.Function1[androiduixLib.androidNs.databaseNs.DataSetObserver, scala.Unit],
-    unregisterDataSetObserver: js.Function1[androiduixLib.androidNs.databaseNs.DataSetObserver, scala.Unit]
+    getCount: () => scala.Double,
+    getItem: scala.Double => js.Any,
+    getItemId: scala.Double => scala.Double,
+    getItemViewType: scala.Double => scala.Double,
+    getView: (scala.Double, androiduixLib.androidNs.viewNs.View, androiduixLib.androidNs.viewNs.ViewGroup) => androiduixLib.androidNs.viewNs.View,
+    getViewTypeCount: () => scala.Double,
+    hasStableIds: () => scala.Boolean,
+    isEmpty: () => scala.Boolean,
+    registerDataSetObserver: androiduixLib.androidNs.databaseNs.DataSetObserver => scala.Unit,
+    unregisterDataSetObserver: androiduixLib.androidNs.databaseNs.DataSetObserver => scala.Unit
   ): Adapter = {
-    val __obj = js.Dynamic.literal(getCount = getCount, getItem = getItem, getItemId = getItemId, getItemViewType = getItemViewType, getView = getView, getViewTypeCount = getViewTypeCount, hasStableIds = hasStableIds, isEmpty = isEmpty, registerDataSetObserver = registerDataSetObserver, unregisterDataSetObserver = unregisterDataSetObserver)
+    val __obj = js.Dynamic.literal(getCount = js.Any.fromFunction0(getCount), getItem = js.Any.fromFunction1(getItem), getItemId = js.Any.fromFunction1(getItemId), getItemViewType = js.Any.fromFunction1(getItemViewType), getView = js.Any.fromFunction3(getView), getViewTypeCount = js.Any.fromFunction0(getViewTypeCount), hasStableIds = js.Any.fromFunction0(hasStableIds), isEmpty = js.Any.fromFunction0(isEmpty), registerDataSetObserver = js.Any.fromFunction1(registerDataSetObserver), unregisterDataSetObserver = js.Any.fromFunction1(unregisterDataSetObserver))
   
     __obj.asInstanceOf[Adapter]
   }

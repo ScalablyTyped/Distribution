@@ -20,8 +20,8 @@ trait MapType extends js.Object {
 object MapType {
   @scala.inline
   def apply(
-    getTile: js.Function3[Point, scala.Double, stdLib.Document, stdLib.Element],
-    releaseTile: js.Function1[stdLib.Element, scala.Unit],
+    getTile: (Point, scala.Double, stdLib.Document) => stdLib.Element,
+    releaseTile: stdLib.Element => scala.Unit,
     alt: java.lang.String = null,
     maxZoom: scala.Int | scala.Double = null,
     minZoom: scala.Int | scala.Double = null,
@@ -30,7 +30,7 @@ object MapType {
     radius: scala.Int | scala.Double = null,
     tileSize: Size = null
   ): MapType = {
-    val __obj = js.Dynamic.literal(getTile = getTile, releaseTile = releaseTile)
+    val __obj = js.Dynamic.literal(getTile = js.Any.fromFunction3(getTile), releaseTile = js.Any.fromFunction1(releaseTile))
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])

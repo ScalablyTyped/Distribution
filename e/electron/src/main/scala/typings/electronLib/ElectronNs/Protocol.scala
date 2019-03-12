@@ -27,7 +27,7 @@ trait Protocol extends EventEmitter {
       /* callback */ js.Function1[/* buffer */ js.UndefOr[nodeLib.Buffer], scala.Unit], 
       scala.Unit
     ],
-    completion: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    completion: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Intercepts scheme protocol and uses handler as the protocol's new handler which
@@ -48,7 +48,7 @@ trait Protocol extends EventEmitter {
       /* callback */ js.Function1[/* filePath */ java.lang.String, scala.Unit], 
       scala.Unit
     ],
-    completion: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    completion: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Intercepts scheme protocol and uses handler as the protocol's new handler which
@@ -69,7 +69,7 @@ trait Protocol extends EventEmitter {
       /* callback */ js.Function1[/* redirectRequest */ RedirectRequest, scala.Unit], 
       scala.Unit
     ],
-    completion: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    completion: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Same as protocol.registerStreamProtocol, except that it replaces an existing
@@ -96,7 +96,7 @@ trait Protocol extends EventEmitter {
       ], 
       scala.Unit
     ],
-    completion: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    completion: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Intercepts scheme protocol and uses handler as the protocol's new handler which
@@ -117,13 +117,13 @@ trait Protocol extends EventEmitter {
       /* callback */ js.Function1[/* data */ js.UndefOr[java.lang.String], scala.Unit], 
       scala.Unit
     ],
-    completion: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    completion: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   /**
     * The callback will be called with a boolean that indicates whether there is
     * already a handler for scheme.
     */
-  def isProtocolHandled(scheme: java.lang.String, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def isProtocolHandled(scheme: java.lang.String, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /**
     * Registers a protocol of scheme that will send a Buffer as a response. The usage
     * is the same with registerFileProtocol, except that the callback should be called
@@ -145,7 +145,7 @@ trait Protocol extends EventEmitter {
       /* callback */ js.Function1[/* buffer */ js.UndefOr[nodeLib.Buffer | MimeTypedBuffer], scala.Unit], 
       scala.Unit
     ],
-    completion: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    completion: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Registers a protocol of scheme that will send the file as a response. The
@@ -177,7 +177,7 @@ trait Protocol extends EventEmitter {
       /* callback */ js.Function1[/* filePath */ js.UndefOr[java.lang.String], scala.Unit], 
       scala.Unit
     ],
-    completion: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    completion: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Registers a protocol of scheme that will send an HTTP request as a response. The
@@ -202,7 +202,7 @@ trait Protocol extends EventEmitter {
       /* callback */ js.Function1[/* redirectRequest */ RedirectRequest, scala.Unit], 
       scala.Unit
     ],
-    completion: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    completion: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def registerServiceWorkerSchemes(schemes: js.Array[java.lang.String]): scala.Unit = js.native
   /**
@@ -252,7 +252,7 @@ trait Protocol extends EventEmitter {
       ], 
       scala.Unit
     ],
-    completion: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    completion: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Registers a protocol of scheme that will send a String as a response. The usage
@@ -275,17 +275,17 @@ trait Protocol extends EventEmitter {
       /* callback */ js.Function1[/* data */ js.UndefOr[java.lang.String], scala.Unit], 
       scala.Unit
     ],
-    completion: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    completion: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Remove the interceptor installed for scheme and restore its original handler.
     */
   def uninterceptProtocol(scheme: java.lang.String): scala.Unit = js.native
-  def uninterceptProtocol(scheme: java.lang.String, completion: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def uninterceptProtocol(scheme: java.lang.String, completion: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /**
     * Unregisters the custom protocol of scheme.
     */
   def unregisterProtocol(scheme: java.lang.String): scala.Unit = js.native
-  def unregisterProtocol(scheme: java.lang.String, completion: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def unregisterProtocol(scheme: java.lang.String, completion: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
 }
 

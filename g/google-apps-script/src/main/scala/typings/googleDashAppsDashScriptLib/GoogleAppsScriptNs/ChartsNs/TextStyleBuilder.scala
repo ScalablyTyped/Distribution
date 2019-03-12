@@ -15,12 +15,12 @@ trait TextStyleBuilder extends js.Object {
 object TextStyleBuilder {
   @scala.inline
   def apply(
-    build: js.Function0[TextStyle],
-    setColor: js.Function1[java.lang.String, TextStyleBuilder],
-    setFontName: js.Function1[java.lang.String, TextStyleBuilder],
-    setFontSize: js.Function1[stdLib.Number, TextStyleBuilder]
+    build: () => TextStyle,
+    setColor: java.lang.String => TextStyleBuilder,
+    setFontName: java.lang.String => TextStyleBuilder,
+    setFontSize: stdLib.Number => TextStyleBuilder
   ): TextStyleBuilder = {
-    val __obj = js.Dynamic.literal(build = build, setColor = setColor, setFontName = setFontName, setFontSize = setFontSize)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setColor = js.Any.fromFunction1(setColor), setFontName = js.Any.fromFunction1(setFontName), setFontSize = js.Any.fromFunction1(setFontSize))
   
     __obj.asInstanceOf[TextStyleBuilder]
   }

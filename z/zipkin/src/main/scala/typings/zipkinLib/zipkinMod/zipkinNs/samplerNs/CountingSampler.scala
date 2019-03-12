@@ -10,12 +10,9 @@ trait CountingSampler extends Sampler
 object CountingSampler {
   @scala.inline
   def apply(
-    shouldSample: js.Function1[
-      zipkinLib.zipkinMod.zipkinNs.TraceId, 
-      zipkinLib.zipkinMod.zipkinNs.optionNs.IOption[scala.Boolean]
-    ]
+    shouldSample: zipkinLib.zipkinMod.zipkinNs.TraceId => zipkinLib.zipkinMod.zipkinNs.optionNs.IOption[scala.Boolean]
   ): CountingSampler = {
-    val __obj = js.Dynamic.literal(shouldSample = shouldSample)
+    val __obj = js.Dynamic.literal(shouldSample = js.Any.fromFunction1(shouldSample))
   
     __obj.asInstanceOf[CountingSampler]
   }

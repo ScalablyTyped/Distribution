@@ -15,13 +15,9 @@ trait Deployer extends js.Object {
 object Deployer {
   @scala.inline
   def apply(
-    register: js.Function2[
-      java.lang.String, 
-      js.Function1[/* args */ hexoLib.hexoMod.HexoNs.extendNs.DeployerNs.Config, scala.Unit], 
-      scala.Unit
-    ]
+    register: (java.lang.String, js.Function1[/* args */ hexoLib.hexoMod.HexoNs.extendNs.DeployerNs.Config, scala.Unit]) => scala.Unit
   ): Deployer = {
-    val __obj = js.Dynamic.literal(register = register)
+    val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
   
     __obj.asInstanceOf[Deployer]
   }

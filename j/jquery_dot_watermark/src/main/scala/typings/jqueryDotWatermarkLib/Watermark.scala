@@ -16,13 +16,13 @@ trait Watermark extends js.Object {
 object Watermark {
   @scala.inline
   def apply(
-    hide: js.Function1[java.lang.String, scala.Unit],
-    hideAll: js.Function0[scala.Unit],
+    hide: java.lang.String => scala.Unit,
+    hideAll: () => scala.Unit,
     options: WatermarkOptions,
-    show: js.Function1[java.lang.String, scala.Unit],
-    showAll: js.Function0[scala.Unit]
+    show: java.lang.String => scala.Unit,
+    showAll: () => scala.Unit
   ): Watermark = {
-    val __obj = js.Dynamic.literal(hide = hide, hideAll = hideAll, options = options, show = show, showAll = showAll)
+    val __obj = js.Dynamic.literal(hide = js.Any.fromFunction1(hide), hideAll = js.Any.fromFunction0(hideAll), options = options, show = js.Any.fromFunction1(show), showAll = js.Any.fromFunction0(showAll))
   
     __obj.asInstanceOf[Watermark]
   }

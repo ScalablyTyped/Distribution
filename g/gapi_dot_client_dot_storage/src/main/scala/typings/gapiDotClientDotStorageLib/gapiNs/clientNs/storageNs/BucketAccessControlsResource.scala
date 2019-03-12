@@ -23,32 +23,14 @@ trait BucketAccessControlsResource extends js.Object {
 object BucketAccessControlsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotStorageLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotStorageLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BucketAccessControl]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucket, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BucketAccessControl]
-    ],
-    list: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucket, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BucketAccessControls]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotStorageLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BucketAccessControl]
-    ],
-    update: js.Function1[
-      gapiDotClientDotStorageLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BucketAccessControl]
-    ]
+    delete: gapiDotClientDotStorageLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotStorageLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[BucketAccessControl],
+    insert: gapiDotClientDotStorageLib.Anon_AltBucket => gapiDotClientLib.gapiNs.clientNs.Request[BucketAccessControl],
+    list: gapiDotClientDotStorageLib.Anon_AltBucket => gapiDotClientLib.gapiNs.clientNs.Request[BucketAccessControls],
+    patch: gapiDotClientDotStorageLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[BucketAccessControl],
+    update: gapiDotClientDotStorageLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[BucketAccessControl]
   ): BucketAccessControlsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[BucketAccessControlsResource]
   }

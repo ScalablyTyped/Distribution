@@ -12,13 +12,13 @@ trait TopicBuilder[Topic] extends DisplayBuilder[TopicBuilder[Topic]] {
 object TopicBuilder {
   @scala.inline
   def apply[Topic](
-    build: js.Function0[AdWordsOperation[TopicBuilder[Topic]]],
-    exclude: js.Function0[AdWordsOperation[TopicBuilder[Topic]]],
-    withCpc: js.Function1[scala.Double, TopicBuilder[Topic]],
-    withCpm: js.Function1[scala.Double, TopicBuilder[Topic]],
-    withTopicId: js.Function1[scala.Double, TopicBuilder[Topic]]
+    build: () => AdWordsOperation[TopicBuilder[Topic]],
+    exclude: () => AdWordsOperation[TopicBuilder[Topic]],
+    withCpc: scala.Double => TopicBuilder[Topic],
+    withCpm: scala.Double => TopicBuilder[Topic],
+    withTopicId: scala.Double => TopicBuilder[Topic]
   ): TopicBuilder[Topic] = {
-    val __obj = js.Dynamic.literal(build = build, exclude = exclude, withCpc = withCpc, withCpm = withCpm, withTopicId = withTopicId)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), exclude = js.Any.fromFunction0(exclude), withCpc = js.Any.fromFunction1(withCpc), withCpm = js.Any.fromFunction1(withCpm), withTopicId = js.Any.fromFunction1(withTopicId))
   
     __obj.asInstanceOf[TopicBuilder[Topic]]
   }

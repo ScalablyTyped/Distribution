@@ -28,11 +28,11 @@ trait IPen extends js.Object {
 object IPen {
   @scala.inline
   def apply(
-    write: js.Function5[java.lang.String, scala.Double, IXAlign, scala.Double, scala.Double, scala.Unit],
-    destroy: js.Function0[scala.Unit] = null
+    write: (java.lang.String, scala.Double, IXAlign, scala.Double, scala.Double) => scala.Unit,
+    destroy: () => scala.Unit = null
   ): IPen = {
-    val __obj = js.Dynamic.literal(write = write)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    val __obj = js.Dynamic.literal(write = js.Any.fromFunction5(write))
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     __obj.asInstanceOf[IPen]
   }
 }

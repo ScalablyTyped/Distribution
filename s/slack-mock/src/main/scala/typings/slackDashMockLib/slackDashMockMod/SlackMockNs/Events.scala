@@ -15,10 +15,10 @@ object Events {
   @scala.inline
   def apply[T](
     calls: js.Array[EventCall[T]],
-    reset: js.Function0[scala.Unit],
-    send: js.Function2[EventUrl, T, js.Promise[scala.Unit]]
+    reset: () => scala.Unit,
+    send: (EventUrl, T) => js.Promise[scala.Unit]
   ): Events[T] = {
-    val __obj = js.Dynamic.literal(calls = calls, reset = reset, send = send)
+    val __obj = js.Dynamic.literal(calls = calls, reset = js.Any.fromFunction0(reset), send = js.Any.fromFunction2(send))
   
     __obj.asInstanceOf[Events[T]]
   }

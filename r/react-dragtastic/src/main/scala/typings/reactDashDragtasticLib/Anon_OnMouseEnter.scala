@@ -13,12 +13,8 @@ trait Anon_OnMouseEnter extends js.Object {
 
 object Anon_OnMouseEnter {
   @scala.inline
-  def apply(
-    onMouseEnter: js.Function0[scala.Unit],
-    onMouseLeave: js.Function0[scala.Unit],
-    onMouseUp: js.Function0[scala.Unit]
-  ): Anon_OnMouseEnter = {
-    val __obj = js.Dynamic.literal(onMouseEnter = onMouseEnter, onMouseLeave = onMouseLeave, onMouseUp = onMouseUp)
+  def apply(onMouseEnter: () => scala.Unit, onMouseLeave: () => scala.Unit, onMouseUp: () => scala.Unit): Anon_OnMouseEnter = {
+    val __obj = js.Dynamic.literal(onMouseEnter = js.Any.fromFunction0(onMouseEnter), onMouseLeave = js.Any.fromFunction0(onMouseLeave), onMouseUp = js.Any.fromFunction0(onMouseUp))
   
     __obj.asInstanceOf[Anon_OnMouseEnter]
   }

@@ -11,8 +11,8 @@ trait Keyframes extends js.Object {
 
 object Keyframes {
   @scala.inline
-  def apply(getName: js.Function0[java.lang.String]): Keyframes = {
-    val __obj = js.Dynamic.literal(getName = getName)
+  def apply(getName: () => java.lang.String): Keyframes = {
+    val __obj = js.Dynamic.literal(getName = js.Any.fromFunction0(getName))
   
     __obj.asInstanceOf[Keyframes]
   }

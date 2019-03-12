@@ -31,13 +31,13 @@ trait MatchAllFilter extends Filter {
 object MatchAllFilter {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cache: js.Function1[scala.Boolean, MatchAllFilter],
-    cacheKey: js.Function1[java.lang.String, MatchAllFilter],
-    name: js.Function1[java.lang.String, MatchAllFilter],
-    toJSON: js.Function0[MatchAllFilter]
+    _type: () => java.lang.String,
+    cache: scala.Boolean => MatchAllFilter,
+    cacheKey: java.lang.String => MatchAllFilter,
+    name: java.lang.String => MatchAllFilter,
+    toJSON: () => MatchAllFilter
   ): MatchAllFilter = {
-    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, name = name, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), name = js.Any.fromFunction1(name), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[MatchAllFilter]
   }

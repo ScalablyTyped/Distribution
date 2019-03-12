@@ -34,7 +34,7 @@ class Image ()
   def parse(data: nodeLib.Buffer): Image = js.native
   def parse(
     data: nodeLib.Buffer,
-    callback: js.Function2[/* err */ nodeLib.Error, /* image */ this.type, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* image */ this.type, scala.Unit]
   ): Image = js.native
 }
 

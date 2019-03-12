@@ -31,15 +31,15 @@ object XChainable {
   def apply(
     Predecessor: XChainable,
     Successor: XChainable,
-    acquire: js.Function0[scala.Unit],
-    getPredecessor: js.Function0[XChainable],
-    getSuccessor: js.Function0[XChainable],
-    isChainable: js.Function1[XChainable, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setSuccessor: js.Function1[XChainable, scala.Unit]
+    acquire: () => scala.Unit,
+    getPredecessor: () => XChainable,
+    getSuccessor: () => XChainable,
+    isChainable: XChainable => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setSuccessor: XChainable => scala.Unit
   ): XChainable = {
-    val __obj = js.Dynamic.literal(Predecessor = Predecessor, Successor = Successor, acquire = acquire, getPredecessor = getPredecessor, getSuccessor = getSuccessor, isChainable = isChainable, queryInterface = queryInterface, release = release, setSuccessor = setSuccessor)
+    val __obj = js.Dynamic.literal(Predecessor = Predecessor, Successor = Successor, acquire = js.Any.fromFunction0(acquire), getPredecessor = js.Any.fromFunction0(getPredecessor), getSuccessor = js.Any.fromFunction0(getSuccessor), isChainable = js.Any.fromFunction1(isChainable), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setSuccessor = js.Any.fromFunction1(setSuccessor))
   
     __obj.asInstanceOf[XChainable]
   }

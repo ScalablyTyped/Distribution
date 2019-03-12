@@ -160,7 +160,7 @@ object SliderOptions {
   def apply(
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     focus: js.UndefOr[scala.Boolean] = js.undefined,
-    formatter: js.Function1[/* val */ scala.Double, java.lang.String] = null,
+    formatter: /* val */ scala.Double => java.lang.String = null,
     handle: java.lang.String = null,
     id: java.lang.String = null,
     labelledby: java.lang.String | js.Array[java.lang.String] = null,
@@ -189,7 +189,7 @@ object SliderOptions {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
     if (handle != null) __obj.updateDynamic("handle")(handle)
     if (id != null) __obj.updateDynamic("id")(id)
     if (labelledby != null) __obj.updateDynamic("labelledby")(labelledby.asInstanceOf[js.Any])

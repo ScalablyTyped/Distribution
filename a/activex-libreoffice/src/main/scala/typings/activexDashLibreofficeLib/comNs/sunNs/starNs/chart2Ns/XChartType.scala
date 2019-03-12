@@ -19,19 +19,19 @@ trait XChartType
     *
     * Note, that this does not involve optional roles, like error-bars.
     */
-  val SupportedMandatoryRoles: activexDashInteropLib.SafeArray[java.lang.String]
+  val SupportedMandatoryRoles: stdLib.SafeArray[java.lang.String]
   /**
     * Returns a sequence of roles that are understood in addition to the mandatory roles (see {@link XChartType.getSupportedMandatoryRoles()} ).
     *
     * An example for an optional role are error-bars.
     */
-  val SupportedOptionalRoles: activexDashInteropLib.SafeArray[java.lang.String]
+  val SupportedOptionalRoles: stdLib.SafeArray[java.lang.String]
   /**
     * Returns a sequence with supported property mapping roles.
     *
     * An example for a property mapping role is FillColor.
     */
-  val SupportedPropertyRoles: activexDashInteropLib.SafeArray[java.lang.String]
+  val SupportedPropertyRoles: stdLib.SafeArray[java.lang.String]
   /**
     * Creates a coordinate systems that fits the chart-type with its current settings and for the given dimension.
     * @throws IllegalArgumentException This chart type cannot be displayed in the given dimension.
@@ -49,19 +49,19 @@ trait XChartType
     *
     * Note, that this does not involve optional roles, like error-bars.
     */
-  def getSupportedMandatoryRoles(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getSupportedMandatoryRoles(): stdLib.SafeArray[java.lang.String]
   /**
     * Returns a sequence of roles that are understood in addition to the mandatory roles (see {@link XChartType.getSupportedMandatoryRoles()} ).
     *
     * An example for an optional role are error-bars.
     */
-  def getSupportedOptionalRoles(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getSupportedOptionalRoles(): stdLib.SafeArray[java.lang.String]
   /**
     * Returns a sequence with supported property mapping roles.
     *
     * An example for a property mapping role is FillColor.
     */
-  def getSupportedPropertyRoles(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getSupportedPropertyRoles(): stdLib.SafeArray[java.lang.String]
 }
 
 object XChartType {
@@ -69,20 +69,20 @@ object XChartType {
   def apply(
     ChartType: java.lang.String,
     RoleOfSequenceForSeriesLabel: java.lang.String,
-    SupportedMandatoryRoles: activexDashInteropLib.SafeArray[java.lang.String],
-    SupportedOptionalRoles: activexDashInteropLib.SafeArray[java.lang.String],
-    SupportedPropertyRoles: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    createCoordinateSystem: js.Function1[scala.Double, XCoordinateSystem],
-    getChartType: js.Function0[java.lang.String],
-    getRoleOfSequenceForSeriesLabel: js.Function0[java.lang.String],
-    getSupportedMandatoryRoles: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getSupportedOptionalRoles: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getSupportedPropertyRoles: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    SupportedMandatoryRoles: stdLib.SafeArray[java.lang.String],
+    SupportedOptionalRoles: stdLib.SafeArray[java.lang.String],
+    SupportedPropertyRoles: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    createCoordinateSystem: scala.Double => XCoordinateSystem,
+    getChartType: () => java.lang.String,
+    getRoleOfSequenceForSeriesLabel: () => java.lang.String,
+    getSupportedMandatoryRoles: () => stdLib.SafeArray[java.lang.String],
+    getSupportedOptionalRoles: () => stdLib.SafeArray[java.lang.String],
+    getSupportedPropertyRoles: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XChartType = {
-    val __obj = js.Dynamic.literal(ChartType = ChartType, RoleOfSequenceForSeriesLabel = RoleOfSequenceForSeriesLabel, SupportedMandatoryRoles = SupportedMandatoryRoles, SupportedOptionalRoles = SupportedOptionalRoles, SupportedPropertyRoles = SupportedPropertyRoles, acquire = acquire, createCoordinateSystem = createCoordinateSystem, getChartType = getChartType, getRoleOfSequenceForSeriesLabel = getRoleOfSequenceForSeriesLabel, getSupportedMandatoryRoles = getSupportedMandatoryRoles, getSupportedOptionalRoles = getSupportedOptionalRoles, getSupportedPropertyRoles = getSupportedPropertyRoles, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ChartType = ChartType, RoleOfSequenceForSeriesLabel = RoleOfSequenceForSeriesLabel, SupportedMandatoryRoles = SupportedMandatoryRoles, SupportedOptionalRoles = SupportedOptionalRoles, SupportedPropertyRoles = SupportedPropertyRoles, acquire = js.Any.fromFunction0(acquire), createCoordinateSystem = js.Any.fromFunction1(createCoordinateSystem), getChartType = js.Any.fromFunction0(getChartType), getRoleOfSequenceForSeriesLabel = js.Any.fromFunction0(getRoleOfSequenceForSeriesLabel), getSupportedMandatoryRoles = js.Any.fromFunction0(getSupportedMandatoryRoles), getSupportedOptionalRoles = js.Any.fromFunction0(getSupportedOptionalRoles), getSupportedPropertyRoles = js.Any.fromFunction0(getSupportedPropertyRoles), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XChartType]
   }

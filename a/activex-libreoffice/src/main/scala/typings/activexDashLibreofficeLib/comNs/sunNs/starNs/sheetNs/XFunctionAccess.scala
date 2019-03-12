@@ -25,12 +25,12 @@ trait XFunctionAccess
 object XFunctionAccess {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    callFunction: js.Function2[java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    callFunction: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]) => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XFunctionAccess = {
-    val __obj = js.Dynamic.literal(acquire = acquire, callFunction = callFunction, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), callFunction = js.Any.fromFunction2(callFunction), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XFunctionAccess]
   }

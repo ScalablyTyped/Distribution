@@ -17,10 +17,10 @@ object Anon_Annotated {
   def apply(
     annotated: java.lang.String,
     column: scala.Double,
-    inspect: js.Function0[java.lang.String],
+    inspect: () => java.lang.String,
     line: scala.Double
   ): Anon_Annotated = {
-    val __obj = js.Dynamic.literal(annotated = annotated, column = column, inspect = inspect, line = line)
+    val __obj = js.Dynamic.literal(annotated = annotated, column = column, inspect = js.Any.fromFunction0(inspect), line = line)
   
     __obj.asInstanceOf[Anon_Annotated]
   }

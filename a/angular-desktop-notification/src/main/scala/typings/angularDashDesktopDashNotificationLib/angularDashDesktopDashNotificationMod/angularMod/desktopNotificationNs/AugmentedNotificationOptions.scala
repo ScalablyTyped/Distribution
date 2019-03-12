@@ -56,7 +56,7 @@ object AugmentedNotificationOptions {
     icon: java.lang.String = null,
     image: java.lang.String = null,
     lang: java.lang.String = null,
-    onClick: js.Function1[/* event */ stdLib.MouseEvent, scala.Unit] = null,
+    onClick: /* event */ stdLib.MouseEvent => scala.Unit = null,
     onError: stdLib.EventListener = null,
     renotify: js.UndefOr[scala.Boolean] = js.undefined,
     requireInteraction: js.UndefOr[scala.Boolean] = js.undefined,
@@ -75,7 +75,7 @@ object AugmentedNotificationOptions {
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (image != null) __obj.updateDynamic("image")(image)
     if (lang != null) __obj.updateDynamic("lang")(lang)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onError != null) __obj.updateDynamic("onError")(onError)
     if (!js.isUndefined(renotify)) __obj.updateDynamic("renotify")(renotify)
     if (!js.isUndefined(requireInteraction)) __obj.updateDynamic("requireInteraction")(requireInteraction)

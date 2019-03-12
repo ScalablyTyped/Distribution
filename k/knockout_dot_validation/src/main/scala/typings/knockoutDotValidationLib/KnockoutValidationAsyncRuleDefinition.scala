@@ -15,9 +15,9 @@ object KnockoutValidationAsyncRuleDefinition {
   def apply(
     async: scala.Boolean,
     message: java.lang.String,
-    validator: js.Function3[js.Any, js.Any, KnockoutValidationAsyncCallback, scala.Unit]
+    validator: (js.Any, js.Any, KnockoutValidationAsyncCallback) => scala.Unit
   ): KnockoutValidationAsyncRuleDefinition = {
-    val __obj = js.Dynamic.literal(async = async, message = message, validator = validator)
+    val __obj = js.Dynamic.literal(async = async, message = message, validator = js.Any.fromFunction3(validator))
   
     __obj.asInstanceOf[KnockoutValidationAsyncRuleDefinition]
   }

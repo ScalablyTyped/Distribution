@@ -49,16 +49,9 @@ object ValidationRule {
     min: scala.Int | scala.Double = null,
     pattern: stdLib.RegExp = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
-    transform: js.Function1[/* value */ js.Any, _] = null,
+    transform: /* value */ js.Any => _ = null,
     `type`: java.lang.String = null,
-    validator: js.Function5[
-      /* rule */ js.Any, 
-      /* value */ js.Any, 
-      /* callback */ js.Any, 
-      /* source */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      _
-    ] = null,
+    validator: (/* rule */ js.Any, /* value */ js.Any, /* callback */ js.Any, /* source */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     whitespace: js.UndefOr[scala.Boolean] = js.undefined
   ): ValidationRule = {
     val __obj = js.Dynamic.literal()
@@ -69,9 +62,9 @@ object ValidationRule {
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern)
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (validator != null) __obj.updateDynamic("validator")(validator)
+    if (validator != null) __obj.updateDynamic("validator")(js.Any.fromFunction5(validator))
     if (!js.isUndefined(whitespace)) __obj.updateDynamic("whitespace")(whitespace)
     __obj.asInstanceOf[ValidationRule]
   }

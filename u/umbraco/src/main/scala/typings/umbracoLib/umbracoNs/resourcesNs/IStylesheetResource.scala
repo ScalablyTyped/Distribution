@@ -78,11 +78,11 @@ trait IStylesheetResource extends js.Object {
 object IStylesheetResource {
   @scala.inline
   def apply(
-    getAll: js.Function0[angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
-    getRules: js.Function1[scala.Double, angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
-    getRulesByName: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[IResourcePromise]]
+    getAll: () => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
+    getRules: scala.Double => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
+    getRulesByName: java.lang.String => angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   ): IStylesheetResource = {
-    val __obj = js.Dynamic.literal(getAll = getAll, getRules = getRules, getRulesByName = getRulesByName)
+    val __obj = js.Dynamic.literal(getAll = js.Any.fromFunction0(getAll), getRules = js.Any.fromFunction1(getRules), getRulesByName = js.Any.fromFunction1(getRulesByName))
   
     __obj.asInstanceOf[IStylesheetResource]
   }

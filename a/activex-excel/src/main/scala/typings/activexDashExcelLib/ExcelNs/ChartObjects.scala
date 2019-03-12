@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ChartObjects extends js.Object {
-  val Application: Application = js.native
-  val Border: Border = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
+  val Border: activexDashExcelLib.ExcelNs.Border = js.native
   val Count: scala.Double = js.native
   val Creator: XlCreator = js.native
   var Enabled: scala.Boolean = js.native
   var Height: scala.Double = js.native
-  val Interior: Interior = js.native
+  val Interior: activexDashExcelLib.ExcelNs.Interior = js.native
   var Left: scala.Double = js.native
   var Locked: scala.Boolean = js.native
   var OnAction: java.lang.String = js.native

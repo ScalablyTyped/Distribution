@@ -29,40 +29,15 @@ trait SphericalMercator extends js.Object {
 object SphericalMercator {
   @scala.inline
   def apply(
-    bbox: js.Function5[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Boolean, 
-      atMapboxSphericalmercatorLib.Projection, 
-      atMapboxSphericalmercatorLib.BoundingBox
-    ],
-    convert: js.Function2[
-      atMapboxSphericalmercatorLib.BoundingBox, 
-      atMapboxSphericalmercatorLib.Projection, 
-      atMapboxSphericalmercatorLib.BoundingBox
-    ],
-    forward: js.Function1[atMapboxSphericalmercatorLib.LatLngPoint, atMapboxSphericalmercatorLib.XYPoint],
-    inverse: js.Function1[atMapboxSphericalmercatorLib.XYPoint, atMapboxSphericalmercatorLib.LatLngPoint],
-    ll: js.Function2[
-      atMapboxSphericalmercatorLib.XYPoint, 
-      scala.Double, 
-      atMapboxSphericalmercatorLib.LatLngPoint
-    ],
-    px: js.Function2[
-      atMapboxSphericalmercatorLib.LatLngPoint, 
-      scala.Double, 
-      atMapboxSphericalmercatorLib.XYPoint
-    ],
-    xyz: js.Function4[
-      atMapboxSphericalmercatorLib.BoundingBox, 
-      scala.Double, 
-      scala.Boolean, 
-      atMapboxSphericalmercatorLib.Projection, 
-      XYBounds
-    ]
+    bbox: (scala.Double, scala.Double, scala.Double, scala.Boolean, atMapboxSphericalmercatorLib.Projection) => atMapboxSphericalmercatorLib.BoundingBox,
+    convert: (atMapboxSphericalmercatorLib.BoundingBox, atMapboxSphericalmercatorLib.Projection) => atMapboxSphericalmercatorLib.BoundingBox,
+    forward: atMapboxSphericalmercatorLib.LatLngPoint => atMapboxSphericalmercatorLib.XYPoint,
+    inverse: atMapboxSphericalmercatorLib.XYPoint => atMapboxSphericalmercatorLib.LatLngPoint,
+    ll: (atMapboxSphericalmercatorLib.XYPoint, scala.Double) => atMapboxSphericalmercatorLib.LatLngPoint,
+    px: (atMapboxSphericalmercatorLib.LatLngPoint, scala.Double) => atMapboxSphericalmercatorLib.XYPoint,
+    xyz: (atMapboxSphericalmercatorLib.BoundingBox, scala.Double, scala.Boolean, atMapboxSphericalmercatorLib.Projection) => XYBounds
   ): SphericalMercator = {
-    val __obj = js.Dynamic.literal(bbox = bbox, convert = convert, forward = forward, inverse = inverse, ll = ll, px = px, xyz = xyz)
+    val __obj = js.Dynamic.literal(bbox = js.Any.fromFunction5(bbox), convert = js.Any.fromFunction2(convert), forward = js.Any.fromFunction1(forward), inverse = js.Any.fromFunction1(inverse), ll = js.Any.fromFunction2(ll), px = js.Any.fromFunction2(px), xyz = js.Any.fromFunction4(xyz))
   
     __obj.asInstanceOf[SphericalMercator]
   }

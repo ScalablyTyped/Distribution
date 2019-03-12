@@ -9,10 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def accept(socketId: scala.Double): scala.Unit = js.native
-  def accept(
-    socketId: scala.Double,
-    callback: js.Function1[/* acceptInfo */ chromeLib.chromeNs.socketNs.AcceptInfo, scala.Unit]
-  ): scala.Unit = js.native
+  def accept(socketId: scala.Double, callback: js.Function1[/* acceptInfo */ AcceptInfo, scala.Unit]): scala.Unit = js.native
   def bind(
     socketId: scala.Double,
     address: java.lang.String,
@@ -30,17 +27,12 @@ object ^ extends js.Object {
   def create(
     `type`: java.lang.String,
     options: js.Object,
-    callback: js.Function1[/* createInfo */ chromeLib.chromeNs.socketNs.CreateInfo, scala.Unit]
+    callback: js.Function1[/* createInfo */ CreateInfo, scala.Unit]
   ): scala.Unit = js.native
   def destroy(socketId: scala.Double): scala.Unit = js.native
   def disconnect(socketId: scala.Double): scala.Unit = js.native
-  def getInfo(
-    socketId: scala.Double,
-    callback: js.Function1[/* result */ chromeLib.chromeNs.socketNs.SocketInfo, scala.Unit]
-  ): scala.Unit = js.native
-  def getNetworkList(
-    callback: js.Function1[/* result */ js.Array[chromeLib.chromeNs.socketNs.NetworkInterface], scala.Unit]
-  ): scala.Unit = js.native
+  def getInfo(socketId: scala.Double, callback: js.Function1[/* result */ SocketInfo, scala.Unit]): scala.Unit = js.native
+  def getNetworkList(callback: js.Function1[/* result */ js.Array[NetworkInterface], scala.Unit]): scala.Unit = js.native
   def listen(socketId: scala.Double, address: java.lang.String, port: scala.Double): scala.Unit = js.native
   def listen(socketId: scala.Double, address: java.lang.String, port: scala.Double, backlog: scala.Double): scala.Unit = js.native
   def listen(
@@ -55,14 +47,14 @@ object ^ extends js.Object {
   def read(
     socketId: scala.Double,
     bufferSize: scala.Double,
-    callback: js.Function1[/* readInfo */ chromeLib.chromeNs.socketNs.ReadInfo, scala.Unit]
+    callback: js.Function1[/* readInfo */ ReadInfo, scala.Unit]
   ): scala.Unit = js.native
   def recvFrom(socketId: scala.Double): scala.Unit = js.native
   def recvFrom(socketId: scala.Double, bufferSize: scala.Double): scala.Unit = js.native
   def recvFrom(
     socketId: scala.Double,
     bufferSize: scala.Double,
-    callback: js.Function1[/* recvFromInfo */ chromeLib.chromeNs.socketNs.RecvFromInfo, scala.Unit]
+    callback: js.Function1[/* recvFromInfo */ RecvFromInfo, scala.Unit]
   ): scala.Unit = js.native
   def sendTo(socketId: scala.Double, data: stdLib.ArrayBuffer, address: java.lang.String, port: scala.Double): scala.Unit = js.native
   def sendTo(
@@ -70,7 +62,7 @@ object ^ extends js.Object {
     data: stdLib.ArrayBuffer,
     address: java.lang.String,
     port: scala.Double,
-    callback: js.Function1[/* writeInfo */ chromeLib.chromeNs.socketNs.WriteInfo, scala.Unit]
+    callback: js.Function1[/* writeInfo */ WriteInfo, scala.Unit]
   ): scala.Unit = js.native
   def setKeepAlive(socketId: scala.Double, enable: scala.Boolean): scala.Unit = js.native
   def setKeepAlive(socketId: scala.Double, enable: scala.Boolean, delay: scala.Double): scala.Unit = js.native
@@ -90,7 +82,7 @@ object ^ extends js.Object {
   def write(
     socketId: scala.Double,
     data: stdLib.ArrayBuffer,
-    callback: js.Function1[/* writeInfo */ chromeLib.chromeNs.socketNs.WriteInfo, scala.Unit]
+    callback: js.Function1[/* writeInfo */ WriteInfo, scala.Unit]
   ): scala.Unit = js.native
 }
 

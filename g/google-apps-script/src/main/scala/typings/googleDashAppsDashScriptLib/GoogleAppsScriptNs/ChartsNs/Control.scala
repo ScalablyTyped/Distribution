@@ -13,12 +13,8 @@ trait Control extends js.Object {
 
 object Control {
   @scala.inline
-  def apply(
-    getId: js.Function0[java.lang.String],
-    getType: js.Function0[java.lang.String],
-    setId: js.Function1[java.lang.String, Control]
-  ): Control = {
-    val __obj = js.Dynamic.literal(getId = getId, getType = getType, setId = setId)
+  def apply(getId: () => java.lang.String, getType: () => java.lang.String, setId: java.lang.String => Control): Control = {
+    val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId), getType = js.Any.fromFunction0(getType), setId = js.Any.fromFunction1(setId))
   
     __obj.asInstanceOf[Control]
   }

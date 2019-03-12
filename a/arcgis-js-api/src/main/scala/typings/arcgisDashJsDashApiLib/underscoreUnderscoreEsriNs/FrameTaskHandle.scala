@@ -37,13 +37,13 @@ object FrameTaskHandle {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    pause: js.Function0[scala.Unit],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    remove: js.Function0[scala.Unit],
-    resume: js.Function0[scala.Unit]
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    pause: () => scala.Unit,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
+    remove: () => scala.Unit,
+    resume: () => scala.Unit
   ): FrameTaskHandle = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, pause = pause, propertyIsEnumerable = propertyIsEnumerable, remove = remove, resume = resume)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), pause = js.Any.fromFunction0(pause), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), remove = js.Any.fromFunction0(remove), resume = js.Any.fromFunction0(resume))
   
     __obj.asInstanceOf[FrameTaskHandle]
   }

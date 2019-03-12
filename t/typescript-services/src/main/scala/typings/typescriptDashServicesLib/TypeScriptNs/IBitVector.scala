@@ -14,11 +14,11 @@ trait IBitVector extends js.Object {
 object IBitVector {
   @scala.inline
   def apply(
-    release: js.Function0[scala.Unit],
-    setValueAt: js.Function2[scala.Double, scala.Boolean, scala.Unit],
-    valueAt: js.Function1[scala.Double, scala.Boolean]
+    release: () => scala.Unit,
+    setValueAt: (scala.Double, scala.Boolean) => scala.Unit,
+    valueAt: scala.Double => scala.Boolean
   ): IBitVector = {
-    val __obj = js.Dynamic.literal(release = release, setValueAt = setValueAt, valueAt = valueAt)
+    val __obj = js.Dynamic.literal(release = js.Any.fromFunction0(release), setValueAt = js.Any.fromFunction2(setValueAt), valueAt = js.Any.fromFunction1(valueAt))
   
     __obj.asInstanceOf[IBitVector]
   }

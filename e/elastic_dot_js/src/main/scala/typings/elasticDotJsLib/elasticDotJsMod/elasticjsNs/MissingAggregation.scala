@@ -37,13 +37,13 @@ trait MissingAggregation extends Aggregation {
 object MissingAggregation {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    agg: js.Function1[Aggregation, MissingAggregation],
-    aggregation: js.Function1[Aggregation, MissingAggregation],
-    field: js.Function1[java.lang.String, MissingAggregation],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    agg: Aggregation => MissingAggregation,
+    aggregation: Aggregation => MissingAggregation,
+    field: java.lang.String => MissingAggregation,
+    toJSON: () => js.Any
   ): MissingAggregation = {
-    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, field = field, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), agg = js.Any.fromFunction1(agg), aggregation = js.Any.fromFunction1(aggregation), field = js.Any.fromFunction1(field), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[MissingAggregation]
   }

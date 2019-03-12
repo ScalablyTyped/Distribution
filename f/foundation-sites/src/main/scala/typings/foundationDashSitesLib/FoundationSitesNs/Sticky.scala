@@ -12,8 +12,8 @@ trait Sticky extends js.Object {
 
 object Sticky {
   @scala.inline
-  def apply(destroy: js.Function0[scala.Unit]): Sticky = {
-    val __obj = js.Dynamic.literal(destroy = destroy)
+  def apply(destroy: () => scala.Unit): Sticky = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
   
     __obj.asInstanceOf[Sticky]
   }

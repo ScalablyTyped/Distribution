@@ -14,11 +14,11 @@ trait Anon_CallbackGetHAR extends js.Object {
 object Anon_CallbackGetHAR {
   @scala.inline
   def apply(
-    getHAR: js.Function1[js.Function1[/* harLog */ js.Object, scala.Unit], scala.Unit],
+    getHAR: js.Function1[/* harLog */ js.Object, scala.Unit] => scala.Unit,
     onNavigated: chromeLib.chromeNs.devtoolsNs.networkNs.NavigatedEvent,
     onRequestFinished: chromeLib.chromeNs.devtoolsNs.networkNs.RequestFinishedEvent
   ): Anon_CallbackGetHAR = {
-    val __obj = js.Dynamic.literal(getHAR = getHAR, onNavigated = onNavigated, onRequestFinished = onRequestFinished)
+    val __obj = js.Dynamic.literal(getHAR = js.Any.fromFunction1(getHAR), onNavigated = onNavigated, onRequestFinished = onRequestFinished)
   
     __obj.asInstanceOf[Anon_CallbackGetHAR]
   }

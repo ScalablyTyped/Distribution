@@ -62,13 +62,13 @@ object CommonOptions {
     delay: scala.Double | reactDashLoadableLib.reactDashLoadableLibNumbers.`false` = null,
     modules: js.Array[java.lang.String] = null,
     timeout: scala.Double | reactDashLoadableLib.reactDashLoadableLibNumbers.`false` = null,
-    webpack: js.Function0[js.Array[scala.Double]] = null
+    webpack: () => js.Array[scala.Double] = null
   ): CommonOptions = {
     val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (modules != null) __obj.updateDynamic("modules")(modules)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (webpack != null) __obj.updateDynamic("webpack")(webpack)
+    if (webpack != null) __obj.updateDynamic("webpack")(js.Any.fromFunction0(webpack))
     __obj.asInstanceOf[CommonOptions]
   }
 }

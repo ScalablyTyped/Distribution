@@ -16,39 +16,35 @@ import scala.scalajs.js.annotation._
 trait XPrintJob
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** returns the {@link PrintOptions} used for the print job */
-  val PrintOptions: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  val PrintOptions: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /** returns the printed object used for the print job */
   val Printable: XPrintable
   /** returns the Printer used for the print job */
-  val Printer: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  val Printer: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   def cancelJob(): scala.Unit
   /** returns the {@link PrintOptions} used for the print job */
-  def getPrintOptions(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  def getPrintOptions(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /** returns the printed object used for the print job */
   def getPrintable(): XPrintable
   /** returns the Printer used for the print job */
-  def getPrinter(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  def getPrinter(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
 }
 
 object XPrintJob {
   @scala.inline
   def apply(
-    PrintOptions: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    PrintOptions: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     Printable: XPrintable,
-    Printer: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
-    acquire: js.Function0[scala.Unit],
-    cancelJob: js.Function0[scala.Unit],
-    getPrintOptions: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    getPrintable: js.Function0[XPrintable],
-    getPrinter: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    Printer: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    acquire: () => scala.Unit,
+    cancelJob: () => scala.Unit,
+    getPrintOptions: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    getPrintable: () => XPrintable,
+    getPrinter: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XPrintJob = {
-    val __obj = js.Dynamic.literal(PrintOptions = PrintOptions, Printable = Printable, Printer = Printer, acquire = acquire, cancelJob = cancelJob, getPrintOptions = getPrintOptions, getPrintable = getPrintable, getPrinter = getPrinter, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(PrintOptions = PrintOptions, Printable = Printable, Printer = Printer, acquire = js.Any.fromFunction0(acquire), cancelJob = js.Any.fromFunction0(cancelJob), getPrintOptions = js.Any.fromFunction0(getPrintOptions), getPrintable = js.Any.fromFunction0(getPrintable), getPrinter = js.Any.fromFunction0(getPrinter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XPrintJob]
   }

@@ -39,7 +39,7 @@ object FlashFrame {
     actionScript: js.Any,
     duration: js.Any,
     elements: js.Array[FlashElement],
-    getCustomEase: js.Function0[js.Any],
+    getCustomEase: () => js.Any,
     hasCustomEase: js.Any,
     labelType: js.Any,
     motionTweenOrientToPath: js.Any,
@@ -49,7 +49,7 @@ object FlashFrame {
     motionTweenSnap: js.Any,
     motionTweenSync: js.Any,
     name: js.Any,
-    setCustomEase: js.Function0[js.Any],
+    setCustomEase: () => js.Any,
     shapeTweenBlend: js.Any,
     soundEffect: js.Any,
     soundLibraryItem: FlashSoundItem,
@@ -62,7 +62,7 @@ object FlashFrame {
     tweenType: js.Any,
     useSingleEaseCurve: js.Any
   ): FlashFrame = {
-    val __obj = js.Dynamic.literal(actionScript = actionScript, duration = duration, elements = elements, getCustomEase = getCustomEase, hasCustomEase = hasCustomEase, labelType = labelType, motionTweenOrientToPath = motionTweenOrientToPath, motionTweenRotate = motionTweenRotate, motionTweenRotateTimes = motionTweenRotateTimes, motionTweenScale = motionTweenScale, motionTweenSnap = motionTweenSnap, motionTweenSync = motionTweenSync, name = name, setCustomEase = setCustomEase, shapeTweenBlend = shapeTweenBlend, soundEffect = soundEffect, soundLibraryItem = soundLibraryItem, soundLoop = soundLoop, soundLoopMode = soundLoopMode, soundName = soundName, soundSync = soundSync, startFrame = startFrame, tweenEasing = tweenEasing, tweenType = tweenType, useSingleEaseCurve = useSingleEaseCurve)
+    val __obj = js.Dynamic.literal(actionScript = actionScript, duration = duration, elements = elements, getCustomEase = js.Any.fromFunction0(getCustomEase), hasCustomEase = hasCustomEase, labelType = labelType, motionTweenOrientToPath = motionTweenOrientToPath, motionTweenRotate = motionTweenRotate, motionTweenRotateTimes = motionTweenRotateTimes, motionTweenScale = motionTweenScale, motionTweenSnap = motionTweenSnap, motionTweenSync = motionTweenSync, name = name, setCustomEase = js.Any.fromFunction0(setCustomEase), shapeTweenBlend = shapeTweenBlend, soundEffect = soundEffect, soundLibraryItem = soundLibraryItem, soundLoop = soundLoop, soundLoopMode = soundLoopMode, soundName = soundName, soundSync = soundSync, startFrame = startFrame, tweenEasing = tweenEasing, tweenType = tweenType, useSingleEaseCurve = useSingleEaseCurve)
   
     __obj.asInstanceOf[FlashFrame]
   }

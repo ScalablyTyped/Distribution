@@ -128,13 +128,10 @@ object ParseRule {
     attrs: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     contentElement: java.lang.String | (js.Function1[/* p */ stdLib.Node, stdLib.Node]) = null,
     context: java.lang.String = null,
-    getAttrs: js.Function1[
-      /* p */ stdLib.Node | java.lang.String, 
-      js.UndefOr[
-        org.scalablytyped.runtime.StringDictionary[_] | prosemirrorDashModelLib.prosemirrorDashModelLibNumbers.`false` | scala.Null
-      ]
+    getAttrs: /* p */ stdLib.Node | java.lang.String => js.UndefOr[
+      org.scalablytyped.runtime.StringDictionary[_] | prosemirrorDashModelLib.prosemirrorDashModelLibNumbers.`false` | scala.Null
     ] = null,
-    getContent: js.Function2[/* p */ stdLib.Node, /* schema */ Schema[_, _], Fragment[Schema[_, _]]] = null,
+    getContent: (/* p */ stdLib.Node, /* schema */ Schema[_, _]) => Fragment[Schema[_, _]] = null,
     ignore: js.UndefOr[scala.Boolean] = js.undefined,
     mark: java.lang.String = null,
     namespace: java.lang.String = null,
@@ -149,8 +146,8 @@ object ParseRule {
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
     if (contentElement != null) __obj.updateDynamic("contentElement")(contentElement.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context)
-    if (getAttrs != null) __obj.updateDynamic("getAttrs")(getAttrs)
-    if (getContent != null) __obj.updateDynamic("getContent")(getContent)
+    if (getAttrs != null) __obj.updateDynamic("getAttrs")(js.Any.fromFunction1(getAttrs))
+    if (getContent != null) __obj.updateDynamic("getContent")(js.Any.fromFunction2(getContent))
     if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore)
     if (mark != null) __obj.updateDynamic("mark")(mark)
     if (namespace != null) __obj.updateDynamic("namespace")(namespace)

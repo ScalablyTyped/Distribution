@@ -24,21 +24,21 @@ trait DvtDiagramLayoutContext extends js.Object {
 object DvtDiagramLayoutContext {
   @scala.inline
   def apply(
-    getCommonContainer: js.Function2[js.Any, js.Any, js.Any],
-    getComponentSize: js.Function0[atOracleOraclejetLib.Anon_H],
-    getCurrentViewport: js.Function0[atOracleOraclejetLib.Anon_H],
-    getEventData: js.Function0[js.Object],
-    getLinkById: js.Function1[js.Any, DvtDiagramLayoutContextLink],
-    getLinkByIndex: js.Function1[scala.Double, DvtDiagramLayoutContextLink],
-    getLinkCount: js.Function0[scala.Double],
-    getNodeById: js.Function1[js.Any, DvtDiagramLayoutContextNode],
-    getNodeByIndex: js.Function1[scala.Double, DvtDiagramLayoutContextNode],
-    getNodeCount: js.Function0[scala.Double],
-    getViewport: js.Function0[atOracleOraclejetLib.Anon_H],
-    isLocaleR2L: js.Function0[scala.Boolean],
-    setViewport: js.Function1[atOracleOraclejetLib.Anon_H, scala.Unit]
+    getCommonContainer: (js.Any, js.Any) => js.Any,
+    getComponentSize: () => atOracleOraclejetLib.Anon_H,
+    getCurrentViewport: () => atOracleOraclejetLib.Anon_H,
+    getEventData: () => js.Object,
+    getLinkById: js.Any => DvtDiagramLayoutContextLink,
+    getLinkByIndex: scala.Double => DvtDiagramLayoutContextLink,
+    getLinkCount: () => scala.Double,
+    getNodeById: js.Any => DvtDiagramLayoutContextNode,
+    getNodeByIndex: scala.Double => DvtDiagramLayoutContextNode,
+    getNodeCount: () => scala.Double,
+    getViewport: () => atOracleOraclejetLib.Anon_H,
+    isLocaleR2L: () => scala.Boolean,
+    setViewport: atOracleOraclejetLib.Anon_H => scala.Unit
   ): DvtDiagramLayoutContext = {
-    val __obj = js.Dynamic.literal(getCommonContainer = getCommonContainer, getComponentSize = getComponentSize, getCurrentViewport = getCurrentViewport, getEventData = getEventData, getLinkById = getLinkById, getLinkByIndex = getLinkByIndex, getLinkCount = getLinkCount, getNodeById = getNodeById, getNodeByIndex = getNodeByIndex, getNodeCount = getNodeCount, getViewport = getViewport, isLocaleR2L = isLocaleR2L, setViewport = setViewport)
+    val __obj = js.Dynamic.literal(getCommonContainer = js.Any.fromFunction2(getCommonContainer), getComponentSize = js.Any.fromFunction0(getComponentSize), getCurrentViewport = js.Any.fromFunction0(getCurrentViewport), getEventData = js.Any.fromFunction0(getEventData), getLinkById = js.Any.fromFunction1(getLinkById), getLinkByIndex = js.Any.fromFunction1(getLinkByIndex), getLinkCount = js.Any.fromFunction0(getLinkCount), getNodeById = js.Any.fromFunction1(getNodeById), getNodeByIndex = js.Any.fromFunction1(getNodeByIndex), getNodeCount = js.Any.fromFunction0(getNodeCount), getViewport = js.Any.fromFunction0(getViewport), isLocaleR2L = js.Any.fromFunction0(isLocaleR2L), setViewport = js.Any.fromFunction1(setViewport))
   
     __obj.asInstanceOf[DvtDiagramLayoutContext]
   }

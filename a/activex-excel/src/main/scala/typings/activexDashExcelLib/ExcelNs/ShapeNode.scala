@@ -13,7 +13,7 @@ class ShapeNode protected () extends js.Object {
   val EditingType: activexDashOfficeLib.OfficeNs.MsoEditingType = js.native
   var `Excel.ShapeNode_typekey`: ShapeNode = js.native
   val Parent: js.Any = js.native
-  val Points: activexDashInteropLib.SafeArray[scala.Double] = js.native
+  val Points: stdLib.SafeArray[scala.Double] = js.native
   val SegmentType: activexDashOfficeLib.OfficeNs.MsoSegmentType = js.native
 }
 

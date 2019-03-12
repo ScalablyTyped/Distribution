@@ -27,24 +27,24 @@ trait IDateElement extends js.Object {
 object IDateElement {
   @scala.inline
   def apply(
-    day: js.Function0[IDateElementEvaluator],
-    days: js.Function0[IDateElementEvaluator],
-    hour: js.Function0[IDateElementEvaluator],
-    hours: js.Function0[IDateElementEvaluator],
-    millisecond: js.Function0[IDateElementEvaluator],
-    milliseconds: js.Function0[IDateElementEvaluator],
-    minute: js.Function0[IDateElementEvaluator],
-    minutes: js.Function0[IDateElementEvaluator],
-    month: js.Function0[IDateElementEvaluator],
-    months: js.Function0[IDateElementEvaluator],
-    second: js.Function0[IDateElementEvaluator],
-    seconds: js.Function0[IDateElementEvaluator],
-    week: js.Function0[IDateElementEvaluator],
-    weeks: js.Function0[IDateElementEvaluator],
-    year: js.Function0[IDateElementEvaluator],
-    years: js.Function0[IDateElementEvaluator]
+    day: () => IDateElementEvaluator,
+    days: () => IDateElementEvaluator,
+    hour: () => IDateElementEvaluator,
+    hours: () => IDateElementEvaluator,
+    millisecond: () => IDateElementEvaluator,
+    milliseconds: () => IDateElementEvaluator,
+    minute: () => IDateElementEvaluator,
+    minutes: () => IDateElementEvaluator,
+    month: () => IDateElementEvaluator,
+    months: () => IDateElementEvaluator,
+    second: () => IDateElementEvaluator,
+    seconds: () => IDateElementEvaluator,
+    week: () => IDateElementEvaluator,
+    weeks: () => IDateElementEvaluator,
+    year: () => IDateElementEvaluator,
+    years: () => IDateElementEvaluator
   ): IDateElement = {
-    val __obj = js.Dynamic.literal(day = day, days = days, hour = hour, hours = hours, millisecond = millisecond, milliseconds = milliseconds, minute = minute, minutes = minutes, month = month, months = months, second = second, seconds = seconds, week = week, weeks = weeks, year = year, years = years)
+    val __obj = js.Dynamic.literal(day = js.Any.fromFunction0(day), days = js.Any.fromFunction0(days), hour = js.Any.fromFunction0(hour), hours = js.Any.fromFunction0(hours), millisecond = js.Any.fromFunction0(millisecond), milliseconds = js.Any.fromFunction0(milliseconds), minute = js.Any.fromFunction0(minute), minutes = js.Any.fromFunction0(minutes), month = js.Any.fromFunction0(month), months = js.Any.fromFunction0(months), second = js.Any.fromFunction0(second), seconds = js.Any.fromFunction0(seconds), week = js.Any.fromFunction0(week), weeks = js.Any.fromFunction0(weeks), year = js.Any.fromFunction0(year), years = js.Any.fromFunction0(years))
   
     __obj.asInstanceOf[IDateElement]
   }

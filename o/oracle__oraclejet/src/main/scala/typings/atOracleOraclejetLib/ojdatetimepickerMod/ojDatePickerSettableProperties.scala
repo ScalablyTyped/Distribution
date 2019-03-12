@@ -20,10 +20,7 @@ object ojDatePickerSettableProperties {
     autofocus: scala.Boolean,
     converter: atOracleOraclejetLib.ojvalidationDashBaseMod.Converter[java.lang.String] | atOracleOraclejetLib.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter,
     datePicker: atOracleOraclejetLib.Anon_,
-    dayFormatter: js.Function1[
-      atOracleOraclejetLib.ojdatetimepickerMod.ojInputDateNs.DayFormatterInput, 
-      scala.Null | atOracleOraclejetLib.atOracleOraclejetLibStrings.all | atOracleOraclejetLib.ojdatetimepickerMod.ojInputDateNs.DayFormatterOutput
-    ],
+    dayFormatter: atOracleOraclejetLib.ojdatetimepickerMod.ojInputDateNs.DayFormatterInput => scala.Null | atOracleOraclejetLib.atOracleOraclejetLibStrings.all | atOracleOraclejetLib.ojdatetimepickerMod.ojInputDateNs.DayFormatterOutput,
     dayMetaData: org.scalablytyped.runtime.StringDictionary[
       org.scalablytyped.runtime.StringDictionary[
         org.scalablytyped.runtime.StringDictionary[atOracleOraclejetLib.Anon_ClassNameDisabled]
@@ -52,7 +49,7 @@ object ojDatePickerSettableProperties {
       atOracleOraclejetLib.ojvalidationDashBaseMod.Validator[java.lang.String] | atOracleOraclejetLib.ojvalidationDashBaseMod.ValidationNs.RegisteredValidator
     ] = null
   ): ojDatePickerSettableProperties = {
-    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators, autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus, converter = converter.asInstanceOf[js.Any], datePicker = datePicker, dayFormatter = dayFormatter, dayMetaData = dayMetaData, disabled = disabled, displayOptions = displayOptions, help = help, helpHints = helpHints, keyboardEdit = keyboardEdit, labelHint = labelHint, messagesCustom = messagesCustom, pickerAttributes = pickerAttributes, placeholder = placeholder, rawValue = rawValue, readonly = readonly, renderMode = renderMode, required = required, translations = translations, valid = valid.asInstanceOf[js.Any], value = value)
+    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators, autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus, converter = converter.asInstanceOf[js.Any], datePicker = datePicker, dayFormatter = js.Any.fromFunction1(dayFormatter), dayMetaData = dayMetaData, disabled = disabled, displayOptions = displayOptions, help = help, helpHints = helpHints, keyboardEdit = keyboardEdit, labelHint = labelHint, messagesCustom = messagesCustom, pickerAttributes = pickerAttributes, placeholder = placeholder, rawValue = rawValue, readonly = readonly, renderMode = renderMode, required = required, translations = translations, valid = valid.asInstanceOf[js.Any], value = value)
     if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
     if (max != null) __obj.updateDynamic("max")(max)
     if (min != null) __obj.updateDynamic("min")(min)

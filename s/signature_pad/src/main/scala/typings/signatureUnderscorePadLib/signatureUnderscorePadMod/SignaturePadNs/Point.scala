@@ -17,14 +17,14 @@ trait Point extends js.Object {
 object Point {
   @scala.inline
   def apply(
-    distanceTo: js.Function1[Point, scala.Double],
+    distanceTo: Point => scala.Double,
     time: scala.Double,
-    velocityFrom: js.Function1[Point, scala.Double],
+    velocityFrom: Point => scala.Double,
     x: scala.Double,
     y: scala.Double,
     color: java.lang.String = null
   ): Point = {
-    val __obj = js.Dynamic.literal(distanceTo = distanceTo, time = time, velocityFrom = velocityFrom, x = x, y = y)
+    val __obj = js.Dynamic.literal(distanceTo = js.Any.fromFunction1(distanceTo), time = time, velocityFrom = js.Any.fromFunction1(velocityFrom), x = x, y = y)
     if (color != null) __obj.updateDynamic("color")(color)
     __obj.asInstanceOf[Point]
   }

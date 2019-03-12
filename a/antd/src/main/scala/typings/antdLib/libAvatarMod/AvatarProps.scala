@@ -32,7 +32,7 @@ object AvatarProps {
     children: js.Any = null,
     className: java.lang.String = null,
     icon: java.lang.String = null,
-    onError: js.Function0[scala.Boolean] = null,
+    onError: () => scala.Boolean = null,
     prefixCls: java.lang.String = null,
     shape: antdLib.antdLibStrings.circle | antdLib.antdLibStrings.square = null,
     size: antdLib.antdLibStrings.large | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default | scala.Double = null,
@@ -45,7 +45,7 @@ object AvatarProps {
     if (children != null) __obj.updateDynamic("children")(children)
     if (className != null) __obj.updateDynamic("className")(className)
     if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction0(onError))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

@@ -32,14 +32,14 @@ trait MDCLineRippleAdapter extends js.Object {
 object MDCLineRippleAdapter {
   @scala.inline
   def apply(
-    addClass: js.Function1[java.lang.String, scala.Unit],
-    deregisterEventHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    hasClass: js.Function1[java.lang.String, scala.Boolean],
-    registerEventHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    removeClass: js.Function1[java.lang.String, scala.Unit],
-    setStyle: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    addClass: java.lang.String => scala.Unit,
+    deregisterEventHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    hasClass: java.lang.String => scala.Boolean,
+    registerEventHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    removeClass: java.lang.String => scala.Unit,
+    setStyle: (java.lang.String, java.lang.String) => scala.Unit
   ): MDCLineRippleAdapter = {
-    val __obj = js.Dynamic.literal(addClass = addClass, deregisterEventHandler = deregisterEventHandler, hasClass = hasClass, registerEventHandler = registerEventHandler, removeClass = removeClass, setStyle = setStyle)
+    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), deregisterEventHandler = js.Any.fromFunction2(deregisterEventHandler), hasClass = js.Any.fromFunction1(hasClass), registerEventHandler = js.Any.fromFunction2(registerEventHandler), removeClass = js.Any.fromFunction1(removeClass), setStyle = js.Any.fromFunction2(setStyle))
   
     __obj.asInstanceOf[MDCLineRippleAdapter]
   }

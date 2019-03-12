@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val DOM: tinymceLib.tinymceMod.domNs.DOMUtils = js.native
   val EditorManager: tinymceLib.tinymceMod.EditorManager = js.native
-  val PluginManager: tinymceLib.tinymceMod.AddOnManager = js.native
+  val PluginManager: AddOnManager = js.native
   val ScriptLoader: tinymceLib.tinymceMod.domNs.ScriptLoader = js.native
-  val ThemeManager: tinymceLib.tinymceMod.AddOnManager = js.native
-  val activeEditor: tinymceLib.tinymceMod.Editor = js.native
+  val ThemeManager: AddOnManager = js.native
+  val activeEditor: Editor = js.native
   val baseURL: java.lang.String = js.native
   def create(s: java.lang.String, p: js.Object): scala.Unit = js.native
   def create(s: java.lang.String, p: js.Object, root: js.Object): scala.Unit = js.native
@@ -23,7 +23,7 @@ object ^ extends js.Object {
   def explode(s: java.lang.String, d: java.lang.String): scala.Unit = js.native
   def grep(a: js.Array[_], f: js.Function0[scala.Unit]): js.Array[_] = js.native
   def inArray(item: js.Any, arr: js.Array[_]): scala.Double = js.native
-  def init(settings: tinymceLib.tinymceMod.Settings): scala.Unit = js.native
+  def init(settings: Settings): scala.Unit = js.native
   def is(obj: js.Object): scala.Boolean = js.native
   def is(obj: js.Object, `type`: java.lang.String): scala.Boolean = js.native
   def isArray(obj: js.Object): scala.Boolean = js.native

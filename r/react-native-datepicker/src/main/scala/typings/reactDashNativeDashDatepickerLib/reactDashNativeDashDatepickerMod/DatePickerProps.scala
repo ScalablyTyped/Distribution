@@ -60,7 +60,7 @@ object DatePickerProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     duration: scala.Int | scala.Double = null,
     format: java.lang.String = null,
-    getDateStr: js.Function1[/* date */ stdLib.Date, java.lang.String] = null,
+    getDateStr: /* date */ stdLib.Date => java.lang.String = null,
     height: scala.Int | scala.Double = null,
     hideText: js.UndefOr[scala.Boolean] = js.undefined,
     iconComponent: reactLib.reactMod.Global.JSXNs.Element = null,
@@ -70,12 +70,12 @@ object DatePickerProps {
     maxDate: java.lang.String | stdLib.Date = null,
     minDate: java.lang.String | stdLib.Date = null,
     minuteInterval: scala.Int | scala.Double = null,
-    modalOnResponderTerminationRequest: js.Function1[/* e */ js.Any, scala.Boolean] = null,
+    modalOnResponderTerminationRequest: /* e */ js.Any => scala.Boolean = null,
     mode: reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerLibStrings.date | reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerLibStrings.datetime | reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerLibStrings.time = null,
-    onCloseModal: js.Function0[scala.Unit] = null,
-    onDateChange: js.Function2[/* dateStr */ java.lang.String, /* date */ stdLib.Date, scala.Unit] = null,
-    onOpenModal: js.Function0[scala.Unit] = null,
-    onPressMask: js.Function0[scala.Unit] = null,
+    onCloseModal: () => scala.Unit = null,
+    onDateChange: (/* dateStr */ java.lang.String, /* date */ stdLib.Date) => scala.Unit = null,
+    onOpenModal: () => scala.Unit = null,
+    onPressMask: () => scala.Unit = null,
     placeholder: java.lang.String = null,
     showIcon: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[_] = null,
@@ -95,7 +95,7 @@ object DatePickerProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format)
-    if (getDateStr != null) __obj.updateDynamic("getDateStr")(getDateStr)
+    if (getDateStr != null) __obj.updateDynamic("getDateStr")(js.Any.fromFunction1(getDateStr))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(hideText)) __obj.updateDynamic("hideText")(hideText)
     if (iconComponent != null) __obj.updateDynamic("iconComponent")(iconComponent)
@@ -105,12 +105,12 @@ object DatePickerProps {
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
     if (minuteInterval != null) __obj.updateDynamic("minuteInterval")(minuteInterval.asInstanceOf[js.Any])
-    if (modalOnResponderTerminationRequest != null) __obj.updateDynamic("modalOnResponderTerminationRequest")(modalOnResponderTerminationRequest)
+    if (modalOnResponderTerminationRequest != null) __obj.updateDynamic("modalOnResponderTerminationRequest")(js.Any.fromFunction1(modalOnResponderTerminationRequest))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (onCloseModal != null) __obj.updateDynamic("onCloseModal")(onCloseModal)
-    if (onDateChange != null) __obj.updateDynamic("onDateChange")(onDateChange)
-    if (onOpenModal != null) __obj.updateDynamic("onOpenModal")(onOpenModal)
-    if (onPressMask != null) __obj.updateDynamic("onPressMask")(onPressMask)
+    if (onCloseModal != null) __obj.updateDynamic("onCloseModal")(js.Any.fromFunction0(onCloseModal))
+    if (onDateChange != null) __obj.updateDynamic("onDateChange")(js.Any.fromFunction2(onDateChange))
+    if (onOpenModal != null) __obj.updateDynamic("onOpenModal")(js.Any.fromFunction0(onOpenModal))
+    if (onPressMask != null) __obj.updateDynamic("onPressMask")(js.Any.fromFunction0(onPressMask))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon)
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

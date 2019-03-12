@@ -17,9 +17,9 @@ object libCjsHooksMod extends js.Object {
       CollectedProps
     ]
   ): CollectedProps = js.native
-  def useDragPreview[Props](DragPreview: reactLib.reactMod.ReactNs.RefForwardingComponent[reactLib.Element, Props]): js.Tuple2[
+  def useDragPreview[Props](DragPreview: reactLib.reactMod.ReactNs.RefForwardingComponent[stdLib.Element, Props]): js.Tuple2[
     reactLib.reactMod.ReactNs.FC[Props], 
-    reactLib.reactMod.ReactNs.RefObject[reactLib.Element]
+    reactLib.reactMod.ReactNs.RefObject[stdLib.Element]
   ] = js.native
   def useDrop[DragObject, DropResult, CollectedProps](
     spec: reactDashDndLib.libCjsInterfacesHooksApiMod.DropTargetHookSpec[DragObject, DropResult, CollectedProps]

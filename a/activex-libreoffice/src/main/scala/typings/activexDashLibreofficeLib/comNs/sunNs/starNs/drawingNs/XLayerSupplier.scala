@@ -21,12 +21,12 @@ object XLayerSupplier {
   @scala.inline
   def apply(
     LayerManager: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
-    acquire: js.Function0[scala.Unit],
-    getLayerManager: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getLayerManager: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XLayerSupplier = {
-    val __obj = js.Dynamic.literal(LayerManager = LayerManager, acquire = acquire, getLayerManager = getLayerManager, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(LayerManager = LayerManager, acquire = js.Any.fromFunction0(acquire), getLayerManager = js.Any.fromFunction0(getLayerManager), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XLayerSupplier]
   }

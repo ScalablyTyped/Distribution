@@ -11,12 +11,12 @@ trait XInterfaceMethodTypeDescription extends XInterfaceMemberTypeDescription {
     * Returns declared exceptions that may occur upon invocations of the method.
     * @returns declared exceptions of method
     */
-  val Exceptions: activexDashInteropLib.SafeArray[XTypeDescription]
+  val Exceptions: stdLib.SafeArray[XTypeDescription]
   /**
     * Returns all parameters of the method in order of IDL declaration.
     * @returns method parameters
     */
-  val Parameters: activexDashInteropLib.SafeArray[XMethodParameter]
+  val Parameters: stdLib.SafeArray[XMethodParameter]
   /**
     * Returns the method's return type.
     * @returns method's return type
@@ -26,12 +26,12 @@ trait XInterfaceMethodTypeDescription extends XInterfaceMemberTypeDescription {
     * Returns declared exceptions that may occur upon invocations of the method.
     * @returns declared exceptions of method
     */
-  def getExceptions(): activexDashInteropLib.SafeArray[XTypeDescription]
+  def getExceptions(): stdLib.SafeArray[XTypeDescription]
   /**
     * Returns all parameters of the method in order of IDL declaration.
     * @returns method parameters
     */
-  def getParameters(): activexDashInteropLib.SafeArray[XMethodParameter]
+  def getParameters(): stdLib.SafeArray[XMethodParameter]
   /**
     * Returns the method's return type.
     * @returns method's return type
@@ -47,26 +47,26 @@ trait XInterfaceMethodTypeDescription extends XInterfaceMemberTypeDescription {
 object XInterfaceMethodTypeDescription {
   @scala.inline
   def apply(
-    Exceptions: activexDashInteropLib.SafeArray[XTypeDescription],
+    Exceptions: stdLib.SafeArray[XTypeDescription],
     MemberName: java.lang.String,
     Name: java.lang.String,
-    Parameters: activexDashInteropLib.SafeArray[XMethodParameter],
+    Parameters: stdLib.SafeArray[XMethodParameter],
     Position: scala.Double,
     ReturnType: XTypeDescription,
     TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
-    acquire: js.Function0[scala.Unit],
-    getExceptions: js.Function0[activexDashInteropLib.SafeArray[XTypeDescription]],
-    getMemberName: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getParameters: js.Function0[activexDashInteropLib.SafeArray[XMethodParameter]],
-    getPosition: js.Function0[scala.Double],
-    getReturnType: js.Function0[XTypeDescription],
-    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
-    isOneway: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getExceptions: () => stdLib.SafeArray[XTypeDescription],
+    getMemberName: () => java.lang.String,
+    getName: () => java.lang.String,
+    getParameters: () => stdLib.SafeArray[XMethodParameter],
+    getPosition: () => scala.Double,
+    getReturnType: () => XTypeDescription,
+    getTypeClass: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    isOneway: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XInterfaceMethodTypeDescription = {
-    val __obj = js.Dynamic.literal(Exceptions = Exceptions, MemberName = MemberName, Name = Name, Parameters = Parameters, Position = Position, ReturnType = ReturnType, TypeClass = TypeClass, acquire = acquire, getExceptions = getExceptions, getMemberName = getMemberName, getName = getName, getParameters = getParameters, getPosition = getPosition, getReturnType = getReturnType, getTypeClass = getTypeClass, isOneway = isOneway, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Exceptions = Exceptions, MemberName = MemberName, Name = Name, Parameters = Parameters, Position = Position, ReturnType = ReturnType, TypeClass = TypeClass, acquire = js.Any.fromFunction0(acquire), getExceptions = js.Any.fromFunction0(getExceptions), getMemberName = js.Any.fromFunction0(getMemberName), getName = js.Any.fromFunction0(getName), getParameters = js.Any.fromFunction0(getParameters), getPosition = js.Any.fromFunction0(getPosition), getReturnType = js.Any.fromFunction0(getReturnType), getTypeClass = js.Any.fromFunction0(getTypeClass), isOneway = js.Any.fromFunction0(isOneway), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XInterfaceMethodTypeDescription]
   }

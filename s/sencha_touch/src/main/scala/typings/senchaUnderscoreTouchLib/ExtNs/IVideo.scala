@@ -32,30 +32,30 @@ object IVideo {
   def apply(
     IMedia: IMedia = null,
     baseCls: java.lang.String = null,
-    getBaseCls: js.Function0[java.lang.String] = null,
-    getPosterUrl: js.Function0[java.lang.String] = null,
-    getUrl: js.Function0[java.lang.String] = null,
-    initialize: js.Function0[scala.Unit] = null,
+    getBaseCls: () => java.lang.String = null,
+    getPosterUrl: () => java.lang.String = null,
+    getUrl: () => java.lang.String = null,
+    initialize: () => scala.Unit = null,
     posterUrl: java.lang.String = null,
-    setBaseCls: js.Function1[/* baseCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setPosterUrl: js.Function1[/* posterUrl */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setUrl: js.Function1[/* url */ js.UndefOr[js.Any], scala.Unit] = null,
-    updatePosterUrl: js.Function1[/* newUrl */ js.UndefOr[js.Any], scala.Unit] = null,
-    updateUrl: js.Function1[/* newUrl */ js.UndefOr[js.Any], scala.Unit] = null
+    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setPosterUrl: /* posterUrl */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setUrl: /* url */ js.UndefOr[js.Any] => scala.Unit = null,
+    updatePosterUrl: /* newUrl */ js.UndefOr[js.Any] => scala.Unit = null,
+    updateUrl: /* newUrl */ js.UndefOr[js.Any] => scala.Unit = null
   ): IVideo = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IMedia)
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(getBaseCls)
-    if (getPosterUrl != null) __obj.updateDynamic("getPosterUrl")(getPosterUrl)
-    if (getUrl != null) __obj.updateDynamic("getUrl")(getUrl)
-    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
+    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
+    if (getPosterUrl != null) __obj.updateDynamic("getPosterUrl")(js.Any.fromFunction0(getPosterUrl))
+    if (getUrl != null) __obj.updateDynamic("getUrl")(js.Any.fromFunction0(getUrl))
+    if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction0(initialize))
     if (posterUrl != null) __obj.updateDynamic("posterUrl")(posterUrl)
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(setBaseCls)
-    if (setPosterUrl != null) __obj.updateDynamic("setPosterUrl")(setPosterUrl)
-    if (setUrl != null) __obj.updateDynamic("setUrl")(setUrl)
-    if (updatePosterUrl != null) __obj.updateDynamic("updatePosterUrl")(updatePosterUrl)
-    if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl)
+    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
+    if (setPosterUrl != null) __obj.updateDynamic("setPosterUrl")(js.Any.fromFunction1(setPosterUrl))
+    if (setUrl != null) __obj.updateDynamic("setUrl")(js.Any.fromFunction1(setUrl))
+    if (updatePosterUrl != null) __obj.updateDynamic("updatePosterUrl")(js.Any.fromFunction1(updatePosterUrl))
+    if (updateUrl != null) __obj.updateDynamic("updateUrl")(js.Any.fromFunction1(updateUrl))
     __obj.asInstanceOf[IVideo]
   }
 }

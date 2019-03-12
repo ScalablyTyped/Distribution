@@ -29,12 +29,12 @@ object ConversionInfo {
   @scala.inline
   def apply(
     constructor: js.Function,
-    convert: js.Function0[scala.Unit],
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    reverseConvert: js.Function0[scala.Unit]
+    convert: () => scala.Unit,
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
+    reverseConvert: () => scala.Unit
   ): ConversionInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor, convert = convert, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, reverseConvert = reverseConvert)
+    val __obj = js.Dynamic.literal(constructor = constructor, convert = js.Any.fromFunction0(convert), hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), reverseConvert = js.Any.fromFunction0(reverseConvert))
   
     __obj.asInstanceOf[ConversionInfo]
   }

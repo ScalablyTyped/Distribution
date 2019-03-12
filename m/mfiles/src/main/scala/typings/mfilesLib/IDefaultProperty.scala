@@ -44,7 +44,7 @@ trait IDefaultProperty extends js.Object {
 object IDefaultProperty {
   @scala.inline
   def apply(
-    Clone: js.Function0[IDefaultProperty],
+    Clone: () => IDefaultProperty,
     DataFixedValueValue: ITypedValue,
     DataFromEmailAddVLItemIfNotFound: scala.Boolean,
     DataFromEmailField: mfilesLib.MFilesNs.MFEmailField,
@@ -62,15 +62,15 @@ object IDefaultProperty {
     DataFromXMLTreatLookupAsID: scala.Boolean,
     DataFromXMLXPathExpression: java.lang.String,
     PropertyDefID: mfilesLib.MFilesNs.MFBuiltInPropertyDef | scala.Double,
-    SetFixedValue: js.Function1[ITypedValue, scala.Unit],
-    SetFromEmail: js.Function3[mfilesLib.MFilesNs.MFEmailField, scala.Boolean, scala.Boolean, scala.Unit],
-    SetFromEmailHeader: js.Function3[java.lang.String, scala.Boolean, scala.Boolean, scala.Unit],
-    SetFromHPDSSXML: js.Function3[java.lang.String, scala.Boolean, scala.Boolean, scala.Unit],
-    SetFromOCR: js.Function3[IOCRZone, scala.Boolean, scala.Boolean, scala.Unit],
-    SetFromXML: js.Function3[java.lang.String, scala.Boolean, scala.Boolean, scala.Unit],
+    SetFixedValue: ITypedValue => scala.Unit,
+    SetFromEmail: (mfilesLib.MFilesNs.MFEmailField, scala.Boolean, scala.Boolean) => scala.Unit,
+    SetFromEmailHeader: (java.lang.String, scala.Boolean, scala.Boolean) => scala.Unit,
+    SetFromHPDSSXML: (java.lang.String, scala.Boolean, scala.Boolean) => scala.Unit,
+    SetFromOCR: (IOCRZone, scala.Boolean, scala.Boolean) => scala.Unit,
+    SetFromXML: (java.lang.String, scala.Boolean, scala.Boolean) => scala.Unit,
     Type: mfilesLib.MFilesNs.MFDefaultPropertyType
   ): IDefaultProperty = {
-    val __obj = js.Dynamic.literal(Clone = Clone, DataFixedValueValue = DataFixedValueValue, DataFromEmailAddVLItemIfNotFound = DataFromEmailAddVLItemIfNotFound, DataFromEmailField = DataFromEmailField, DataFromEmailHeaderAddVLItemIfNotFound = DataFromEmailHeaderAddVLItemIfNotFound, DataFromEmailHeaderField = DataFromEmailHeaderField, DataFromEmailHeaderTreatLookupAsID = DataFromEmailHeaderTreatLookupAsID, DataFromEmailTreatLookupAsID = DataFromEmailTreatLookupAsID, DataFromHPDSSXMLAddVLItemIfNotFound = DataFromHPDSSXMLAddVLItemIfNotFound, DataFromHPDSSXMLPromptName = DataFromHPDSSXMLPromptName, DataFromHPDSSXMLTreatLookupAsID = DataFromHPDSSXMLTreatLookupAsID, DataFromOCRAddVLItemIfNotFound = DataFromOCRAddVLItemIfNotFound, DataFromOCRTreatLookupAsID = DataFromOCRTreatLookupAsID, DataFromOCRZone = DataFromOCRZone, DataFromXMLAddVLItemIfNotFound = DataFromXMLAddVLItemIfNotFound, DataFromXMLTreatLookupAsID = DataFromXMLTreatLookupAsID, DataFromXMLXPathExpression = DataFromXMLXPathExpression, PropertyDefID = PropertyDefID.asInstanceOf[js.Any], SetFixedValue = SetFixedValue, SetFromEmail = SetFromEmail, SetFromEmailHeader = SetFromEmailHeader, SetFromHPDSSXML = SetFromHPDSSXML, SetFromOCR = SetFromOCR, SetFromXML = SetFromXML, Type = Type)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), DataFixedValueValue = DataFixedValueValue, DataFromEmailAddVLItemIfNotFound = DataFromEmailAddVLItemIfNotFound, DataFromEmailField = DataFromEmailField, DataFromEmailHeaderAddVLItemIfNotFound = DataFromEmailHeaderAddVLItemIfNotFound, DataFromEmailHeaderField = DataFromEmailHeaderField, DataFromEmailHeaderTreatLookupAsID = DataFromEmailHeaderTreatLookupAsID, DataFromEmailTreatLookupAsID = DataFromEmailTreatLookupAsID, DataFromHPDSSXMLAddVLItemIfNotFound = DataFromHPDSSXMLAddVLItemIfNotFound, DataFromHPDSSXMLPromptName = DataFromHPDSSXMLPromptName, DataFromHPDSSXMLTreatLookupAsID = DataFromHPDSSXMLTreatLookupAsID, DataFromOCRAddVLItemIfNotFound = DataFromOCRAddVLItemIfNotFound, DataFromOCRTreatLookupAsID = DataFromOCRTreatLookupAsID, DataFromOCRZone = DataFromOCRZone, DataFromXMLAddVLItemIfNotFound = DataFromXMLAddVLItemIfNotFound, DataFromXMLTreatLookupAsID = DataFromXMLTreatLookupAsID, DataFromXMLXPathExpression = DataFromXMLXPathExpression, PropertyDefID = PropertyDefID.asInstanceOf[js.Any], SetFixedValue = js.Any.fromFunction1(SetFixedValue), SetFromEmail = js.Any.fromFunction3(SetFromEmail), SetFromEmailHeader = js.Any.fromFunction3(SetFromEmailHeader), SetFromHPDSSXML = js.Any.fromFunction3(SetFromHPDSSXML), SetFromOCR = js.Any.fromFunction3(SetFromOCR), SetFromXML = js.Any.fromFunction3(SetFromXML), Type = Type)
   
     __obj.asInstanceOf[IDefaultProperty]
   }

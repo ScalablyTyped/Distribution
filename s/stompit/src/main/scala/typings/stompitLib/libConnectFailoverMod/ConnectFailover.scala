@@ -12,7 +12,7 @@ trait ConnectFailover
   def addServer(config: stompitLib.libConnectMod.connectNs.ConnectOptions): scala.Unit = js.native
   def connect(
     callback: js.Function4[
-      /* error */ nodeLib.Error | scala.Null, 
+      /* error */ stdLib.Error | scala.Null, 
       /* client */ stompitLib.libClientMod.namespaced, 
       /* reconnect */ js.Function0[scala.Unit], 
       /* server */ stompitLib.libConnectFailoverMod.ConnectFailoverNs.Server, 

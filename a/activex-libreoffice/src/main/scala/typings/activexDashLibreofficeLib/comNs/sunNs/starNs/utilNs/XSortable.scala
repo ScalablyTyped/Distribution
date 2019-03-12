@@ -31,7 +31,7 @@ trait XSortable
     * @see com.sun.star.table.TableSortDescriptor2
     * @see com.sun.star.text.TextSortDescriptor2
     */
-  def createSortDescriptor(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  def createSortDescriptor(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * sorts the contents of the object according to the specified properties.
     *
@@ -51,18 +51,13 @@ trait XSortable
 object XSortable {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createSortDescriptor: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    sort: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    createSortDescriptor: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    sort: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] => scala.Unit
   ): XSortable = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createSortDescriptor = createSortDescriptor, queryInterface = queryInterface, release = release, sort = sort)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createSortDescriptor = js.Any.fromFunction0(createSortDescriptor), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), sort = js.Any.fromFunction1(sort))
   
     __obj.asInstanceOf[XSortable]
   }

@@ -18,12 +18,9 @@ trait ConnectionsResource extends js.Object {
 object ConnectionsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotPeopleLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListConnectionsResponse]
-    ]
+    list: gapiDotClientDotPeopleLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[ListConnectionsResponse]
   ): ConnectionsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ConnectionsResource]
   }

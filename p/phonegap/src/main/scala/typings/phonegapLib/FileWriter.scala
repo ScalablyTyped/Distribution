@@ -33,7 +33,7 @@ trait FileWriter extends js.Object {
 object FileWriter {
   @scala.inline
   def apply(
-    abort: js.Function0[scala.Unit],
+    abort: () => scala.Unit,
     error: FileError,
     fileName: java.lang.String,
     length: scala.Double,
@@ -45,11 +45,11 @@ object FileWriter {
     onwritestart: js.Function,
     position: scala.Double,
     readyState: js.Any,
-    seek: js.Function1[scala.Double, scala.Unit],
-    truncate: js.Function1[scala.Double, scala.Unit],
-    write: js.Function1[js.Any, scala.Unit]
+    seek: scala.Double => scala.Unit,
+    truncate: scala.Double => scala.Unit,
+    write: js.Any => scala.Unit
   ): FileWriter = {
-    val __obj = js.Dynamic.literal(abort = abort, error = error, fileName = fileName, length = length, onabort = onabort, onerror = onerror, onprogress = onprogress, onwrite = onwrite, onwriteend = onwriteend, onwritestart = onwritestart, position = position, readyState = readyState, seek = seek, truncate = truncate, write = write)
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), error = error, fileName = fileName, length = length, onabort = onabort, onerror = onerror, onprogress = onprogress, onwrite = onwrite, onwriteend = onwriteend, onwritestart = onwritestart, position = position, readyState = readyState, seek = js.Any.fromFunction1(seek), truncate = js.Any.fromFunction1(truncate), write = js.Any.fromFunction1(write))
   
     __obj.asInstanceOf[FileWriter]
   }

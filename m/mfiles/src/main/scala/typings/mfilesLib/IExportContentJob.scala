@@ -25,7 +25,7 @@ trait IExportContentJob extends js.Object {
 object IExportContentJob {
   @scala.inline
   def apply(
-    Clone: js.Function0[IExportContentJob],
+    Clone: () => IExportContentJob,
     ExportContent: scala.Boolean,
     ExportStructureItems: scala.Boolean,
     Flags: mfilesLib.MFilesNs.MFExportContentFlag,
@@ -34,13 +34,13 @@ object IExportContentJob {
     IncludePrivateUISettingsWithStructure: scala.Boolean,
     IncludeValueListItemsWithStructure: scala.Boolean,
     SearchConditions: ISearchConditions,
-    SetExportAllStructureItems: js.Function1[scala.Boolean, scala.Unit],
+    SetExportAllStructureItems: scala.Boolean => scala.Unit,
     StructureItems: IExportStructureItems,
     TargetLocation: java.lang.String,
     UseIgnoreChangesBefore: scala.Boolean,
     UseSearchConditions: scala.Boolean
   ): IExportContentJob = {
-    val __obj = js.Dynamic.literal(Clone = Clone, ExportContent = ExportContent, ExportStructureItems = ExportStructureItems, Flags = Flags, IgnoreChangesBefore = IgnoreChangesBefore, Impersonation = Impersonation, IncludePrivateUISettingsWithStructure = IncludePrivateUISettingsWithStructure, IncludeValueListItemsWithStructure = IncludeValueListItemsWithStructure, SearchConditions = SearchConditions, SetExportAllStructureItems = SetExportAllStructureItems, StructureItems = StructureItems, TargetLocation = TargetLocation, UseIgnoreChangesBefore = UseIgnoreChangesBefore, UseSearchConditions = UseSearchConditions)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), ExportContent = ExportContent, ExportStructureItems = ExportStructureItems, Flags = Flags, IgnoreChangesBefore = IgnoreChangesBefore, Impersonation = Impersonation, IncludePrivateUISettingsWithStructure = IncludePrivateUISettingsWithStructure, IncludeValueListItemsWithStructure = IncludeValueListItemsWithStructure, SearchConditions = SearchConditions, SetExportAllStructureItems = js.Any.fromFunction1(SetExportAllStructureItems), StructureItems = StructureItems, TargetLocation = TargetLocation, UseIgnoreChangesBefore = UseIgnoreChangesBefore, UseSearchConditions = UseSearchConditions)
   
     __obj.asInstanceOf[IExportContentJob]
   }

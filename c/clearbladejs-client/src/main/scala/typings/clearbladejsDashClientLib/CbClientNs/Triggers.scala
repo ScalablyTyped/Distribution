@@ -20,15 +20,15 @@ object Triggers {
   @scala.inline
   def apply(
     URI: java.lang.String,
-    create: js.Function3[java.lang.String, js.Object, CbCallback, scala.Unit],
-    delete: js.Function2[java.lang.String, CbCallback, scala.Unit],
-    fetchDefinitions: js.Function1[CbCallback, scala.Unit],
+    create: (java.lang.String, js.Object, CbCallback) => scala.Unit,
+    delete: (java.lang.String, CbCallback) => scala.Unit,
+    fetchDefinitions: CbCallback => scala.Unit,
     systemKey: java.lang.String,
     systemSecret: java.lang.String,
-    update: js.Function3[java.lang.String, js.Object, CbCallback, scala.Unit],
+    update: (java.lang.String, js.Object, CbCallback) => scala.Unit,
     user: APIUser
   ): Triggers = {
-    val __obj = js.Dynamic.literal(URI = URI, create = create, delete = delete, fetchDefinitions = fetchDefinitions, systemKey = systemKey, systemSecret = systemSecret, update = update, user = user)
+    val __obj = js.Dynamic.literal(URI = URI, create = js.Any.fromFunction3(create), delete = js.Any.fromFunction2(delete), fetchDefinitions = js.Any.fromFunction1(fetchDefinitions), systemKey = systemKey, systemSecret = systemSecret, update = js.Any.fromFunction3(update), user = user)
   
     __obj.asInstanceOf[Triggers]
   }

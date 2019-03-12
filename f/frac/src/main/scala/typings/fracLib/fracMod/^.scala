@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("frac", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: fracLib.fracMod.Frac$Module = js.native
-  val frac: fracLib.fracMod.Frac$Module = js.native
+  val default: Frac$Module = js.native
+  val frac: Frac$Module = js.native
 }
 

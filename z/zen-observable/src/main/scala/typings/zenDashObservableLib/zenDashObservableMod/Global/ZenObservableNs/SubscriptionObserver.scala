@@ -16,11 +16,11 @@ object SubscriptionObserver {
   @scala.inline
   def apply[T](
     closed: scala.Boolean,
-    complete: js.Function0[scala.Unit],
-    error: js.Function1[js.Any, scala.Unit],
-    next: js.Function1[T, scala.Unit]
+    complete: () => scala.Unit,
+    error: js.Any => scala.Unit,
+    next: T => scala.Unit
   ): SubscriptionObserver[T] = {
-    val __obj = js.Dynamic.literal(closed = closed, complete = complete, error = error, next = next)
+    val __obj = js.Dynamic.literal(closed = closed, complete = js.Any.fromFunction0(complete), error = js.Any.fromFunction1(error), next = js.Any.fromFunction1(next))
   
     __obj.asInstanceOf[SubscriptionObserver[T]]
   }

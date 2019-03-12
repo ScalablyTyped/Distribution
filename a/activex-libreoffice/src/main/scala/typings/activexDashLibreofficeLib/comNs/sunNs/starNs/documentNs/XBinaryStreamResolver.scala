@@ -32,14 +32,14 @@ trait XBinaryStreamResolver
 object XBinaryStreamResolver {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createOutputStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream],
-    getInputStream: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    resolveOutputStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream, java.lang.String]
+    acquire: () => scala.Unit,
+    createOutputStream: () => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream,
+    getInputStream: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    resolveOutputStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream => java.lang.String
   ): XBinaryStreamResolver = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createOutputStream = createOutputStream, getInputStream = getInputStream, queryInterface = queryInterface, release = release, resolveOutputStream = resolveOutputStream)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createOutputStream = js.Any.fromFunction0(createOutputStream), getInputStream = js.Any.fromFunction1(getInputStream), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), resolveOutputStream = js.Any.fromFunction1(resolveOutputStream))
   
     __obj.asInstanceOf[XBinaryStreamResolver]
   }

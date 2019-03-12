@@ -14,14 +14,14 @@ trait DiagramClickEvent extends DiagramEvent {
 object DiagramClickEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Diagram,
     item: js.Any = null,
     meta: js.Any = null,
     point: kendoDashUiLib.kendoNs.datavizNs.diagramNs.Point = null
   ): DiagramClickEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (item != null) __obj.updateDynamic("item")(item)
     if (meta != null) __obj.updateDynamic("meta")(meta)
     if (point != null) __obj.updateDynamic("point")(point)

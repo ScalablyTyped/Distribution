@@ -64,16 +64,16 @@ object FluxStore {
     __changed: scala.Boolean,
     __className: java.lang.String,
     __dispatcher: fluxLib.libDispatcherMod.namespaced[TPayload],
-    __emitChange: js.Function0[scala.Unit],
+    __emitChange: () => scala.Unit,
     __emitter: fbemitterLib.fbemitterMod.EventEmitter,
-    __invokeOnDispatch: js.Function1[TPayload, scala.Unit],
-    __onDispatch: js.Function1[TPayload, scala.Unit],
-    addListener: js.Function1[js.Function0[scala.Unit], fbemitterLib.fbemitterMod.EventSubscription],
-    getDispatchToken: js.Function0[java.lang.String],
-    getDispatcher: js.Function0[fluxLib.libDispatcherMod.namespaced[TPayload]],
-    hasChanged: js.Function0[scala.Boolean]
+    __invokeOnDispatch: TPayload => scala.Unit,
+    __onDispatch: TPayload => scala.Unit,
+    addListener: js.Function0[scala.Unit] => fbemitterLib.fbemitterMod.EventSubscription,
+    getDispatchToken: () => java.lang.String,
+    getDispatcher: () => fluxLib.libDispatcherMod.namespaced[TPayload],
+    hasChanged: () => scala.Boolean
   ): FluxStore[TPayload] = {
-    val __obj = js.Dynamic.literal(__changeEvent = __changeEvent, __changed = __changed, __className = __className, __dispatcher = __dispatcher, __emitChange = __emitChange, __emitter = __emitter, __invokeOnDispatch = __invokeOnDispatch, __onDispatch = __onDispatch, addListener = addListener, getDispatchToken = getDispatchToken, getDispatcher = getDispatcher, hasChanged = hasChanged)
+    val __obj = js.Dynamic.literal(__changeEvent = __changeEvent, __changed = __changed, __className = __className, __dispatcher = __dispatcher, __emitChange = js.Any.fromFunction0(__emitChange), __emitter = __emitter, __invokeOnDispatch = js.Any.fromFunction1(__invokeOnDispatch), __onDispatch = js.Any.fromFunction1(__onDispatch), addListener = js.Any.fromFunction1(addListener), getDispatchToken = js.Any.fromFunction0(getDispatchToken), getDispatcher = js.Any.fromFunction0(getDispatcher), hasChanged = js.Any.fromFunction0(hasChanged))
   
     __obj.asInstanceOf[FluxStore[TPayload]]
   }

@@ -12,11 +12,8 @@ trait TypeInfo extends js.Object {
 
 object TypeInfo {
   @scala.inline
-  def apply(
-    `type`: js.Object,
-    validate: js.Function3[CommandData, java.lang.String, java.lang.String, scala.Boolean]
-  ): TypeInfo = {
-    val __obj = js.Dynamic.literal(validate = validate)
+  def apply(`type`: js.Object, validate: (CommandData, java.lang.String, java.lang.String) => scala.Boolean): TypeInfo = {
+    val __obj = js.Dynamic.literal(validate = js.Any.fromFunction3(validate))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TypeInfo]
   }

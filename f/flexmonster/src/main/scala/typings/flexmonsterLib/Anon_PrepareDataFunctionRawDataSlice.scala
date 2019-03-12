@@ -17,7 +17,7 @@ trait Anon_PrepareDataFunctionRawDataSlice extends js.Object {
 object Anon_PrepareDataFunctionRawDataSlice {
   @scala.inline
   def apply(
-    prepareDataFunction: js.Function1[/* rawData */ js.Any, _] = null,
+    prepareDataFunction: /* rawData */ js.Any => _ = null,
     slice: flexmonsterLib.flexmonsterMod.FlexmonsterNs.Slice = null,
     `type`: java.lang.String = null,
     valuesOnly: js.UndefOr[scala.Boolean] = js.undefined,
@@ -25,7 +25,7 @@ object Anon_PrepareDataFunctionRawDataSlice {
     xAxisType: java.lang.String = null
   ): Anon_PrepareDataFunctionRawDataSlice = {
     val __obj = js.Dynamic.literal()
-    if (prepareDataFunction != null) __obj.updateDynamic("prepareDataFunction")(prepareDataFunction)
+    if (prepareDataFunction != null) __obj.updateDynamic("prepareDataFunction")(js.Any.fromFunction1(prepareDataFunction))
     if (slice != null) __obj.updateDynamic("slice")(slice)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(valuesOnly)) __obj.updateDynamic("valuesOnly")(valuesOnly)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait QueryContext extends js.Object {
   var client: js.UndefOr[apolloDashClientLib.apolloDashClientMod.default[js.Object]] = js.undefined
-  var operations: js.UndefOr[nodeLib.Map[java.lang.String, reactDashApolloLib.Anon_Query]] = js.undefined
+  var operations: js.UndefOr[stdLib.Map[java.lang.String, reactDashApolloLib.Anon_Query]] = js.undefined
   var renderPromises: js.UndefOr[reactDashApolloLib.getDataFromTreeMod.RenderPromises] = js.undefined
 }
 
@@ -15,7 +15,7 @@ object QueryContext {
   @scala.inline
   def apply(
     client: apolloDashClientLib.apolloDashClientMod.default[js.Object] = null,
-    operations: nodeLib.Map[java.lang.String, reactDashApolloLib.Anon_Query] = null,
+    operations: stdLib.Map[java.lang.String, reactDashApolloLib.Anon_Query] = null,
     renderPromises: reactDashApolloLib.getDataFromTreeMod.RenderPromises = null
   ): QueryContext = {
     val __obj = js.Dynamic.literal()

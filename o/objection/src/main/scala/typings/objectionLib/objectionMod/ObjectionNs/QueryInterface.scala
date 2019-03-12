@@ -21,19 +21,23 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   var andWhere_Original: Where[QM, RM, RV] = js.native
   @JSName("as")
   var as_Original: As[QM, RM, RV] = js.native
-  var column: Select[QM, RM, RV] = js.native
-  var columns: Select[QM, RM, RV] = js.native
+  @JSName("column")
+  var column_Original: Select[QM, RM, RV] = js.native
+  @JSName("columns")
+  var columns_Original: Select[QM, RM, RV] = js.native
   @JSName("crossJoin")
   var crossJoin_Original: Join[QM, RM, RV] = js.native
-  var distinct: Distinct[QM, RM, RV] = js.native
+  @JSName("distinct")
+  var distinct_Original: Distinct[QM, RM, RV] = js.native
   @JSName("from")
   var from_Original: Table[QM, RM, RV] = js.native
   @JSName("fullOuterJoin")
   var fullOuterJoin_Original: Join[QM, RM, RV] = js.native
-  // Group by
-  var groupBy: GroupBy[QM, RM, RV] = js.native
   @JSName("groupByRaw")
   var groupByRaw_Original: RawMethod[QM, RM, RV] = js.native
+  // Group by
+  @JSName("groupBy")
+  var groupBy_Original: GroupBy[QM, RM, RV] = js.native
   @JSName("havingBetween")
   var havingBetween_Original: WhereBetween[QM, RM, RV] = js.native
   @JSName("havingExists")
@@ -123,7 +127,8 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   var rightJoin_Original: Join[QM, RM, RV] = js.native
   @JSName("rightOuterJoin")
   var rightOuterJoin_Original: Join[QM, RM, RV] = js.native
-  var select: Select[QM, RM, RV] = js.native
+  @JSName("select")
+  var select_Original: Select[QM, RM, RV] = js.native
   @JSName("table")
   var table_Original: Table[QM, RM, RV] = js.native
   // Union
@@ -154,12 +159,13 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   // Wheres
   @JSName("where")
   var where_Original: Where[QM, RM, RV] = js.native
-  // Withs
-  var `with`: With[QM, RM, RV] = js.native
   @JSName("withRaw")
   var withRaw_Original: WithRaw[QM, RM, RV] = js.native
   @JSName("withWrapped")
   var withWrapped_Original: WithWrapped[QM, RM, RV] = js.native
+  // Withs
+  @JSName("with")
+  var with_Original: With[QM, RM, RV] = js.native
   def andHaving(
     callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
   ): QueryBuilder[QM, RM, RV] = js.native
@@ -250,6 +256,10 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   // Clear
   def clearSelect(): this.type = js.native
   def clearWhere(): this.type = js.native
+  def column(columnNames: ColumnRef*): QueryBuilder[QM, RM, RV] = js.native
+  def column(columnNames: js.Array[ColumnRef]): QueryBuilder[QM, RM, RV] = js.native
+  def columns(columnNames: ColumnRef*): QueryBuilder[QM, RM, RV] = js.native
+  def columns(columnNames: js.Array[ColumnRef]): QueryBuilder[QM, RM, RV] = js.native
   def connection(connection: js.Any): this.type = js.native
   // Aggregation
   def count(): this.type = js.native
@@ -279,6 +289,8 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def decrement(columnName: java.lang.String, amount: scala.Double): this.type = js.native
   def del(): QueryBuilderYieldingCount[QM, RM] = js.native
   def delete(): QueryBuilderYieldingCount[QM, RM] = js.native
+  def distinct(columnNames: ColumnRef*): QueryBuilder[QM, RM, RV] = js.native
+  def distinct(columnNames: js.Array[ColumnRef]): QueryBuilder[QM, RM, RV] = js.native
   def from(
     callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
   ): QueryBuilder[QM, RM, RV] = js.native
@@ -300,6 +312,16 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
   ): QueryBuilder[QM, RM, RV] = js.native
   def fullOuterJoin(tableName: TableName, raw: Raw): QueryBuilder[QM, RM, RV] = js.native
+  // Group by
+  def groupBy(columnNames: ColumnRef*): QueryBuilder[QM, RM, RV] = js.native
+  // Group by
+  def groupBy(columnNames: js.Array[ColumnRef]): QueryBuilder[QM, RM, RV] = js.native
+  // Group by
+  def groupBy(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
+  // Group by
+  def groupBy(sql: java.lang.String, bindings: js.Any*): QueryBuilder[QM, RM, RV] = js.native
+  // Group by
+  def groupBy(sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
   def groupByRaw(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
   def groupByRaw(sql: java.lang.String, bindings: js.Any*): QueryBuilder[QM, RM, RV] = js.native
   def groupByRaw(sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
@@ -703,6 +725,8 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
   ): QueryBuilder[QM, RM, RV] = js.native
   def rightOuterJoin(tableName: TableName, raw: Raw): QueryBuilder[QM, RM, RV] = js.native
+  def select(columnNames: ColumnRef*): QueryBuilder[QM, RM, RV] = js.native
+  def select(columnNames: js.Array[ColumnRef]): QueryBuilder[QM, RM, RV] = js.native
   def sum(columnName: java.lang.String): this.type = js.native
   def sumDistinct(columnName: java.lang.String): this.type = js.native
   def table(
@@ -830,6 +854,11 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def whereWrapped(
     callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
   ): QueryBuilder[QM, RM, RV] = js.native
+  // Withs
+  def `with`(alias: java.lang.String, raw: Raw): QueryBuilder[QM, RM, RV] = js.native
+  // Withs
+  def `with`(alias: java.lang.String, sql: java.lang.String): QueryBuilder[QM, RM, RV] = js.native
+  def `with`(alias: java.lang.String, sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
   def withRaw(alias: java.lang.String, raw: Raw): QueryBuilder[QM, RM, RV] = js.native
   def withRaw(alias: java.lang.String, sql: java.lang.String): QueryBuilder[QM, RM, RV] = js.native
   def withRaw(alias: java.lang.String, sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native

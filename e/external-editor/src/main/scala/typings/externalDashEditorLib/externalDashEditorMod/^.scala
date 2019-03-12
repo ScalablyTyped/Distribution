@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def edit(): java.lang.String = js.native
   def edit(text: java.lang.String): java.lang.String = js.native
-  def editAsync(text: java.lang.String, callback: externalDashEditorLib.externalDashEditorMod.StringCallback): scala.Unit = js.native
+  def editAsync(text: java.lang.String, callback: StringCallback): scala.Unit = js.native
 }
 

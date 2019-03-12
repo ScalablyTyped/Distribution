@@ -22,7 +22,7 @@ object IBearerStrategyOptionWithRequest {
     issuer: java.lang.String | js.Array[java.lang.String] = null,
     loggingLevel: passportDashAzureDashAdLib.passportDashAzureDashAdLibStrings.info | passportDashAzureDashAdLib.passportDashAzureDashAdLibStrings.warn | passportDashAzureDashAdLib.passportDashAzureDashAdLibStrings.error = null,
     loggingNoPII: js.UndefOr[scala.Boolean] = js.undefined,
-    policyName: nodeLib.String = null,
+    policyName: java.lang.String = null,
     scope: js.Array[java.lang.String] = null,
     validateIssuer: js.UndefOr[scala.Boolean] = js.undefined
   ): IBearerStrategyOptionWithRequest = {

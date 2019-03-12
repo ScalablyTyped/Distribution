@@ -293,7 +293,7 @@ object ProgressMeterWithTextProps {
   def apply(
     text: java.lang.String,
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLSpanElement] = null
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLSpanElement] = null
   ): ProgressMeterWithTextProps = {
     val __obj = js.Dynamic.literal(text = text)
     js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)

@@ -51,7 +51,7 @@ class GoogleToken () extends js.Object {
   def getToken(): js.Promise[js.UndefOr[java.lang.String | scala.Null]] = js.native
   def getToken(
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* token */ js.UndefOr[java.lang.String | scala.Null], 
       scala.Unit
     ]
@@ -68,6 +68,6 @@ class GoogleToken () extends js.Object {
     * @param callback The callback function.
     */
   def revokeToken(): js.Promise[scala.Unit] = js.native
-  def revokeToken(callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]): scala.Unit = js.native
+  def revokeToken(callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]): scala.Unit = js.native
 }
 

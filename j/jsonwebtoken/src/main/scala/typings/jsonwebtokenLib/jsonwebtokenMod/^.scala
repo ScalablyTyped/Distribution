@@ -9,124 +9,58 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def decode(token: java.lang.String): scala.Null | org.scalablytyped.runtime.StringDictionary[js.Any] | java.lang.String = js.native
-  def decode(token: java.lang.String, options: jsonwebtokenLib.jsonwebtokenMod.DecodeOptions): scala.Null | org.scalablytyped.runtime.StringDictionary[js.Any] | java.lang.String = js.native
-  def sign(payload: java.lang.String, secretOrPrivateKey: jsonwebtokenLib.jsonwebtokenMod.Secret): java.lang.String = js.native
+  def decode(token: java.lang.String, options: DecodeOptions): scala.Null | org.scalablytyped.runtime.StringDictionary[js.Any] | java.lang.String = js.native
+  def sign(payload: java.lang.String, secretOrPrivateKey: Secret): java.lang.String = js.native
+  def sign(payload: java.lang.String, secretOrPrivateKey: Secret, callback: SignCallback): scala.Unit = js.native
+  def sign(payload: java.lang.String, secretOrPrivateKey: Secret, options: SignOptions): java.lang.String = js.native
   def sign(
     payload: java.lang.String,
-    secretOrPrivateKey: jsonwebtokenLib.jsonwebtokenMod.Secret,
-    callback: jsonwebtokenLib.jsonwebtokenMod.SignCallback
+    secretOrPrivateKey: Secret,
+    options: SignOptions,
+    callback: SignCallback
   ): scala.Unit = js.native
-  def sign(
-    payload: java.lang.String,
-    secretOrPrivateKey: jsonwebtokenLib.jsonwebtokenMod.Secret,
-    options: jsonwebtokenLib.jsonwebtokenMod.SignOptions
-  ): java.lang.String = js.native
-  def sign(
-    payload: java.lang.String,
-    secretOrPrivateKey: jsonwebtokenLib.jsonwebtokenMod.Secret,
-    options: jsonwebtokenLib.jsonwebtokenMod.SignOptions,
-    callback: jsonwebtokenLib.jsonwebtokenMod.SignCallback
-  ): scala.Unit = js.native
-  def sign(payload: js.Object, secretOrPrivateKey: jsonwebtokenLib.jsonwebtokenMod.Secret): java.lang.String = js.native
-  def sign(
-    payload: js.Object,
-    secretOrPrivateKey: jsonwebtokenLib.jsonwebtokenMod.Secret,
-    callback: jsonwebtokenLib.jsonwebtokenMod.SignCallback
-  ): scala.Unit = js.native
-  def sign(
-    payload: js.Object,
-    secretOrPrivateKey: jsonwebtokenLib.jsonwebtokenMod.Secret,
-    options: jsonwebtokenLib.jsonwebtokenMod.SignOptions
-  ): java.lang.String = js.native
-  def sign(
-    payload: js.Object,
-    secretOrPrivateKey: jsonwebtokenLib.jsonwebtokenMod.Secret,
-    options: jsonwebtokenLib.jsonwebtokenMod.SignOptions,
-    callback: jsonwebtokenLib.jsonwebtokenMod.SignCallback
-  ): scala.Unit = js.native
-  def sign(payload: nodeLib.Buffer, secretOrPrivateKey: jsonwebtokenLib.jsonwebtokenMod.Secret): java.lang.String = js.native
-  def sign(
-    payload: nodeLib.Buffer,
-    secretOrPrivateKey: jsonwebtokenLib.jsonwebtokenMod.Secret,
-    callback: jsonwebtokenLib.jsonwebtokenMod.SignCallback
-  ): scala.Unit = js.native
-  def sign(
-    payload: nodeLib.Buffer,
-    secretOrPrivateKey: jsonwebtokenLib.jsonwebtokenMod.Secret,
-    options: jsonwebtokenLib.jsonwebtokenMod.SignOptions
-  ): java.lang.String = js.native
-  def sign(
-    payload: nodeLib.Buffer,
-    secretOrPrivateKey: jsonwebtokenLib.jsonwebtokenMod.Secret,
-    options: jsonwebtokenLib.jsonwebtokenMod.SignOptions,
-    callback: jsonwebtokenLib.jsonwebtokenMod.SignCallback
-  ): scala.Unit = js.native
+  def sign(payload: js.Object, secretOrPrivateKey: Secret): java.lang.String = js.native
+  def sign(payload: js.Object, secretOrPrivateKey: Secret, callback: SignCallback): scala.Unit = js.native
+  def sign(payload: js.Object, secretOrPrivateKey: Secret, options: SignOptions): java.lang.String = js.native
+  def sign(payload: js.Object, secretOrPrivateKey: Secret, options: SignOptions, callback: SignCallback): scala.Unit = js.native
+  def sign(payload: nodeLib.Buffer, secretOrPrivateKey: Secret): java.lang.String = js.native
+  def sign(payload: nodeLib.Buffer, secretOrPrivateKey: Secret, callback: SignCallback): scala.Unit = js.native
+  def sign(payload: nodeLib.Buffer, secretOrPrivateKey: Secret, options: SignOptions): java.lang.String = js.native
+  def sign(payload: nodeLib.Buffer, secretOrPrivateKey: Secret, options: SignOptions, callback: SignCallback): scala.Unit = js.native
   def verify(token: java.lang.String, secretOrPublicKey: java.lang.String): js.Object | java.lang.String = js.native
+  def verify(token: java.lang.String, secretOrPublicKey: java.lang.String, callback: VerifyCallback): scala.Unit = js.native
+  def verify(token: java.lang.String, secretOrPublicKey: java.lang.String, options: VerifyOptions): js.Object | java.lang.String = js.native
   def verify(
     token: java.lang.String,
     secretOrPublicKey: java.lang.String,
-    callback: jsonwebtokenLib.jsonwebtokenMod.VerifyCallback
+    options: VerifyOptions,
+    callback: VerifyCallback
   ): scala.Unit = js.native
+  def verify(token: java.lang.String, secretOrPublicKey: GetPublicKeyOrSecret): scala.Unit = js.native
+  def verify(token: java.lang.String, secretOrPublicKey: GetPublicKeyOrSecret, callback: VerifyCallback): scala.Unit = js.native
+  def verify(token: java.lang.String, secretOrPublicKey: GetPublicKeyOrSecret, options: VerifyOptions): scala.Unit = js.native
   def verify(
     token: java.lang.String,
-    secretOrPublicKey: java.lang.String,
-    options: jsonwebtokenLib.jsonwebtokenMod.VerifyOptions
-  ): js.Object | java.lang.String = js.native
-  def verify(
-    token: java.lang.String,
-    secretOrPublicKey: java.lang.String,
-    options: jsonwebtokenLib.jsonwebtokenMod.VerifyOptions,
-    callback: jsonwebtokenLib.jsonwebtokenMod.VerifyCallback
-  ): scala.Unit = js.native
-  def verify(token: java.lang.String, secretOrPublicKey: jsonwebtokenLib.jsonwebtokenMod.GetPublicKeyOrSecret): scala.Unit = js.native
-  def verify(
-    token: java.lang.String,
-    secretOrPublicKey: jsonwebtokenLib.jsonwebtokenMod.GetPublicKeyOrSecret,
-    callback: jsonwebtokenLib.jsonwebtokenMod.VerifyCallback
-  ): scala.Unit = js.native
-  def verify(
-    token: java.lang.String,
-    secretOrPublicKey: jsonwebtokenLib.jsonwebtokenMod.GetPublicKeyOrSecret,
-    options: jsonwebtokenLib.jsonwebtokenMod.VerifyOptions
-  ): scala.Unit = js.native
-  def verify(
-    token: java.lang.String,
-    secretOrPublicKey: jsonwebtokenLib.jsonwebtokenMod.GetPublicKeyOrSecret,
-    options: jsonwebtokenLib.jsonwebtokenMod.VerifyOptions,
-    callback: jsonwebtokenLib.jsonwebtokenMod.VerifyCallback
+    secretOrPublicKey: GetPublicKeyOrSecret,
+    options: VerifyOptions,
+    callback: VerifyCallback
   ): scala.Unit = js.native
   def verify(token: java.lang.String, secretOrPublicKey: nodeLib.Buffer): js.Object | java.lang.String = js.native
+  def verify(token: java.lang.String, secretOrPublicKey: nodeLib.Buffer, callback: VerifyCallback): scala.Unit = js.native
+  def verify(token: java.lang.String, secretOrPublicKey: nodeLib.Buffer, options: VerifyOptions): js.Object | java.lang.String = js.native
   def verify(
     token: java.lang.String,
     secretOrPublicKey: nodeLib.Buffer,
-    callback: jsonwebtokenLib.jsonwebtokenMod.VerifyCallback
-  ): scala.Unit = js.native
-  def verify(
-    token: java.lang.String,
-    secretOrPublicKey: nodeLib.Buffer,
-    options: jsonwebtokenLib.jsonwebtokenMod.VerifyOptions
-  ): js.Object | java.lang.String = js.native
-  def verify(
-    token: java.lang.String,
-    secretOrPublicKey: nodeLib.Buffer,
-    options: jsonwebtokenLib.jsonwebtokenMod.VerifyOptions,
-    callback: jsonwebtokenLib.jsonwebtokenMod.VerifyCallback
+    options: VerifyOptions,
+    callback: VerifyCallback
   ): scala.Unit = js.native
   @JSName("verify")
   def verify_Unit(token: java.lang.String, secretOrPublicKey: java.lang.String): scala.Unit = js.native
   @JSName("verify")
-  def verify_Unit(
-    token: java.lang.String,
-    secretOrPublicKey: java.lang.String,
-    options: jsonwebtokenLib.jsonwebtokenMod.VerifyOptions
-  ): scala.Unit = js.native
+  def verify_Unit(token: java.lang.String, secretOrPublicKey: java.lang.String, options: VerifyOptions): scala.Unit = js.native
   @JSName("verify")
   def verify_Unit(token: java.lang.String, secretOrPublicKey: nodeLib.Buffer): scala.Unit = js.native
   @JSName("verify")
-  def verify_Unit(
-    token: java.lang.String,
-    secretOrPublicKey: nodeLib.Buffer,
-    options: jsonwebtokenLib.jsonwebtokenMod.VerifyOptions
-  ): scala.Unit = js.native
+  def verify_Unit(token: java.lang.String, secretOrPublicKey: nodeLib.Buffer, options: VerifyOptions): scala.Unit = js.native
 }
 

@@ -11,8 +11,8 @@ trait SubscribeArg[FormFields] extends js.Object {
 
 object SubscribeArg {
   @scala.inline
-  def apply[FormFields](subscribe: js.Function1[FormFields, scala.Unit]): SubscribeArg[FormFields] = {
-    val __obj = js.Dynamic.literal(subscribe = subscribe)
+  def apply[FormFields](subscribe: FormFields => scala.Unit): SubscribeArg[FormFields] = {
+    val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
   
     __obj.asInstanceOf[SubscribeArg[FormFields]]
   }

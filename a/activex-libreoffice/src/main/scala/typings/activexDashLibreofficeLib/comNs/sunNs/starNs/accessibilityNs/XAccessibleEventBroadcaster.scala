@@ -22,13 +22,13 @@ trait XAccessibleEventBroadcaster
 object XAccessibleEventBroadcaster {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addAccessibleEventListener: js.Function1[XAccessibleEventListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeAccessibleEventListener: js.Function1[XAccessibleEventListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addAccessibleEventListener: XAccessibleEventListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeAccessibleEventListener: XAccessibleEventListener => scala.Unit
   ): XAccessibleEventBroadcaster = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addAccessibleEventListener = addAccessibleEventListener, queryInterface = queryInterface, release = release, removeAccessibleEventListener = removeAccessibleEventListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addAccessibleEventListener = js.Any.fromFunction1(addAccessibleEventListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeAccessibleEventListener = js.Any.fromFunction1(removeAccessibleEventListener))
   
     __obj.asInstanceOf[XAccessibleEventBroadcaster]
   }

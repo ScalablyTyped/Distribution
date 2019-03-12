@@ -11,7 +11,7 @@ object ^ extends js.Object {
   def default(
     breakpoints: atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.Breakpoints,
     spacing: atMaterialDashUiCoreLib.stylesSpacingMod.Spacing,
-    mixins: atMaterialDashUiCoreLib.stylesCreateMixinsMod.MixinsOptions
-  ): atMaterialDashUiCoreLib.stylesCreateMixinsMod.Mixins = js.native
+    mixins: MixinsOptions
+  ): Mixins = js.native
 }
 

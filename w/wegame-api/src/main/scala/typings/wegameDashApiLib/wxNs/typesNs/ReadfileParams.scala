@@ -17,16 +17,16 @@ object ReadfileParams {
   @scala.inline
   def apply(
     filePath: java.lang.String,
-    complete: js.Function0[scala.Unit] = null,
+    complete: () => scala.Unit = null,
     encoding: FileContentEncoding = null,
-    fail: js.Function1[/* res */ wegameDashApiLib.Anon_ErrMsg, scala.Unit] = null,
-    success: js.Function1[/* res */ wegameDashApiLib.Anon_Data, scala.Unit] = null
+    fail: /* res */ wegameDashApiLib.Anon_ErrMsg => scala.Unit = null,
+    success: /* res */ wegameDashApiLib.Anon_Data => scala.Unit = null
   ): ReadfileParams = {
     val __obj = js.Dynamic.literal(filePath = filePath)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ReadfileParams]
   }
 }

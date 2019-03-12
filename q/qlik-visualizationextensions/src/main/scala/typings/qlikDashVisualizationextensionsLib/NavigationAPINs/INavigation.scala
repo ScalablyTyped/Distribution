@@ -85,17 +85,17 @@ object INavigation {
   def apply(
     analysis: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.analysis,
     edit: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.edit,
-    getCurrentSheetId: js.Function0[NavigationResult],
-    getMode: js.Function0[java.lang.String],
-    gotoSheet: js.Function1[java.lang.String, NavigationResult],
-    gotoStory: js.Function1[java.lang.String, NavigationResult],
-    isModeAllowed: js.Function1[NavigationModeType, scala.Boolean],
-    nextSheet: js.Function0[NavigationResult],
-    prevSheet: js.Function0[NavigationResult],
-    setMode: js.Function1[java.lang.String, NavigationResult],
-    switchMode: js.Function1[NavigationModeType, NavigationResult]
+    getCurrentSheetId: () => NavigationResult,
+    getMode: () => java.lang.String,
+    gotoSheet: java.lang.String => NavigationResult,
+    gotoStory: java.lang.String => NavigationResult,
+    isModeAllowed: NavigationModeType => scala.Boolean,
+    nextSheet: () => NavigationResult,
+    prevSheet: () => NavigationResult,
+    setMode: java.lang.String => NavigationResult,
+    switchMode: NavigationModeType => NavigationResult
   ): INavigation = {
-    val __obj = js.Dynamic.literal(analysis = analysis, edit = edit, getCurrentSheetId = getCurrentSheetId, getMode = getMode, gotoSheet = gotoSheet, gotoStory = gotoStory, isModeAllowed = isModeAllowed, nextSheet = nextSheet, prevSheet = prevSheet, setMode = setMode, switchMode = switchMode)
+    val __obj = js.Dynamic.literal(analysis = analysis, edit = edit, getCurrentSheetId = js.Any.fromFunction0(getCurrentSheetId), getMode = js.Any.fromFunction0(getMode), gotoSheet = js.Any.fromFunction1(gotoSheet), gotoStory = js.Any.fromFunction1(gotoStory), isModeAllowed = js.Any.fromFunction1(isModeAllowed), nextSheet = js.Any.fromFunction0(nextSheet), prevSheet = js.Any.fromFunction0(prevSheet), setMode = js.Any.fromFunction1(setMode), switchMode = js.Any.fromFunction1(switchMode))
   
     __obj.asInstanceOf[INavigation]
   }

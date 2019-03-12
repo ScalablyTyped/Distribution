@@ -12,7 +12,7 @@ object MarketplaceMeteringNs extends js.Object {
     /**
       * Product code is used to uniquely identify a product in AWS Marketplace. The product code should be the same as the one used during the publishing of a new product.
       */
-    var ProductCode: ProductCode
+    var ProductCode: awsDashSdkLib.clientsMarketplacemeteringMod.MarketplaceMeteringNs.ProductCode
     /**
       * The set of UsageRecords to submit. BatchMeterUsage accepts up to 25 UsageRecords at a time.
       */
@@ -45,19 +45,19 @@ object MarketplaceMeteringNs extends js.Object {
     /**
       * Product code is used to uniquely identify a product in AWS Marketplace. The product code should be the same as the one used during the publishing of a new product.
       */
-    var ProductCode: ProductCode
+    var ProductCode: awsDashSdkLib.clientsMarketplacemeteringMod.MarketplaceMeteringNs.ProductCode
     /**
       * Timestamp of the hour, recorded in UTC. The seconds and milliseconds portions of the timestamp will be ignored.
       */
-    var Timestamp: Timestamp
+    var Timestamp: awsDashSdkLib.clientsMarketplacemeteringMod.MarketplaceMeteringNs.Timestamp
     /**
       * It will be one of the fcp dimension name provided during the publishing of the product.
       */
-    var UsageDimension: UsageDimension
+    var UsageDimension: awsDashSdkLib.clientsMarketplacemeteringMod.MarketplaceMeteringNs.UsageDimension
     /**
       * Consumption value for the hour.
       */
-    var UsageQuantity: UsageQuantity
+    var UsageQuantity: awsDashSdkLib.clientsMarketplacemeteringMod.MarketplaceMeteringNs.UsageQuantity
   }
   
   trait MeterUsageResult extends js.Object {
@@ -75,7 +75,7 @@ object MarketplaceMeteringNs extends js.Object {
     /**
       * Product code is used to uniquely identify a product in AWS Marketplace. The product code should be the same as the one used during the publishing of a new product.
       */
-    var ProductCode: ProductCode
+    var ProductCode: awsDashSdkLib.clientsMarketplacemeteringMod.MarketplaceMeteringNs.ProductCode
     /**
       * Public Key Version provided by AWS Marketplace
       */
@@ -214,7 +214,7 @@ object MarketplaceMeteringNs extends js.Object {
     /**
       * The CustomerIdentifier is obtained through the ResolveCustomer operation and represents an individual buyer in your application.
       */
-    var CustomerIdentifier: CustomerIdentifier
+    var CustomerIdentifier: awsDashSdkLib.clientsMarketplacemeteringMod.MarketplaceMeteringNs.CustomerIdentifier
     /**
       * During the process of registering a product on AWS Marketplace, up to eight dimensions are specified. These represent different units of value in your application.
       */
@@ -226,7 +226,7 @@ object MarketplaceMeteringNs extends js.Object {
     /**
       * Timestamp of the hour, recorded in UTC. The seconds and milliseconds portions of the timestamp will be ignored. Your application can meter usage for up to one hour in the past.
       */
-    var Timestamp: Timestamp
+    var Timestamp: awsDashSdkLib.clientsMarketplacemeteringMod.MarketplaceMeteringNs.Timestamp
   }
   
   trait UsageRecordResult extends js.Object {

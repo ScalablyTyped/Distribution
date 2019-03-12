@@ -17,18 +17,10 @@ trait ICalendarFactory extends js.Object {
 object ICalendarFactory {
   @scala.inline
   def apply(
-    createCalendar: js.Function3[
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], 
-      java.lang.String, 
-      java.lang.String, 
-      Calendar
-    ],
-    createCalendarDefaultCalendarAndClock: js.Function1[
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], 
-      Calendar
-    ]
+    createCalendar: (winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], java.lang.String, java.lang.String) => Calendar,
+    createCalendarDefaultCalendarAndClock: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String] => Calendar
   ): ICalendarFactory = {
-    val __obj = js.Dynamic.literal(createCalendar = createCalendar, createCalendarDefaultCalendarAndClock = createCalendarDefaultCalendarAndClock)
+    val __obj = js.Dynamic.literal(createCalendar = js.Any.fromFunction3(createCalendar), createCalendarDefaultCalendarAndClock = js.Any.fromFunction1(createCalendarDefaultCalendarAndClock))
   
     __obj.asInstanceOf[ICalendarFactory]
   }

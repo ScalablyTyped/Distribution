@@ -32,9 +32,9 @@ object IToastBaseConfig {
     extendedTimeOut: scala.Int | scala.Double = null,
     extraData: js.Any = null,
     messageClass: java.lang.String = null,
-    onHidden: js.Function2[/* wasClicked */ scala.Boolean, /* toast */ IToast, scala.Unit] = null,
-    onShown: js.Function1[/* toast */ IToast, scala.Unit] = null,
-    onTap: js.Function1[/* toast */ IToast, scala.Unit] = null,
+    onHidden: (/* wasClicked */ scala.Boolean, /* toast */ IToast) => scala.Unit = null,
+    onShown: /* toast */ IToast => scala.Unit = null,
+    onTap: /* toast */ IToast => scala.Unit = null,
     progressBar: js.UndefOr[scala.Boolean] = js.undefined,
     tapToDismiss: js.UndefOr[scala.Boolean] = js.undefined,
     templates: angularDashToastrLib.Anon_Progressbar = null,
@@ -49,9 +49,9 @@ object IToastBaseConfig {
     if (extendedTimeOut != null) __obj.updateDynamic("extendedTimeOut")(extendedTimeOut.asInstanceOf[js.Any])
     if (extraData != null) __obj.updateDynamic("extraData")(extraData)
     if (messageClass != null) __obj.updateDynamic("messageClass")(messageClass)
-    if (onHidden != null) __obj.updateDynamic("onHidden")(onHidden)
-    if (onShown != null) __obj.updateDynamic("onShown")(onShown)
-    if (onTap != null) __obj.updateDynamic("onTap")(onTap)
+    if (onHidden != null) __obj.updateDynamic("onHidden")(js.Any.fromFunction2(onHidden))
+    if (onShown != null) __obj.updateDynamic("onShown")(js.Any.fromFunction1(onShown))
+    if (onTap != null) __obj.updateDynamic("onTap")(js.Any.fromFunction1(onTap))
     if (!js.isUndefined(progressBar)) __obj.updateDynamic("progressBar")(progressBar)
     if (!js.isUndefined(tapToDismiss)) __obj.updateDynamic("tapToDismiss")(tapToDismiss)
     if (templates != null) __obj.updateDynamic("templates")(templates)

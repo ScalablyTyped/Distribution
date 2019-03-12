@@ -503,7 +503,7 @@ object bxSliderOptions {
     autoDirection: java.lang.String = null,
     autoHover: js.UndefOr[scala.Boolean] = js.undefined,
     autoStart: js.UndefOr[scala.Boolean] = js.undefined,
-    buildPager: js.Function1[/* slideIndex */ scala.Double, scala.Unit] = null,
+    buildPager: /* slideIndex */ scala.Double => scala.Unit = null,
     captions: js.UndefOr[scala.Boolean] = js.undefined,
     controls: js.UndefOr[scala.Boolean] = js.undefined,
     easing: java.lang.String = null,
@@ -516,32 +516,12 @@ object bxSliderOptions {
     moveSlides: scala.Int | scala.Double = null,
     nextSelector: java.lang.String = null,
     nextText: java.lang.String = null,
-    onSlideAfter: js.Function3[
-      /* $slideElement */ js.UndefOr[JQuery], 
-      /* oldIndex */ js.UndefOr[scala.Double], 
-      /* newIndex */ js.UndefOr[scala.Double], 
-      scala.Unit
-    ] = null,
-    onSlideBefore: js.Function3[
-      /* $slideElement */ js.UndefOr[JQuery], 
-      /* oldIndex */ js.UndefOr[scala.Double], 
-      /* newIndex */ js.UndefOr[scala.Double], 
-      scala.Unit
-    ] = null,
-    onSlideNext: js.Function3[
-      /* $slideElement */ js.UndefOr[JQuery], 
-      /* oldIndex */ js.UndefOr[scala.Double], 
-      /* newIndex */ js.UndefOr[scala.Double], 
-      scala.Unit
-    ] = null,
-    onSlidePrev: js.Function3[
-      /* $slideElement */ js.UndefOr[JQuery], 
-      /* oldIndex */ js.UndefOr[scala.Double], 
-      /* newIndex */ js.UndefOr[scala.Double], 
-      scala.Unit
-    ] = null,
-    onSliderLoad: js.Function1[/* currentIndex */ js.UndefOr[scala.Double], scala.Unit] = null,
-    onSliderResize: js.Function1[/* currentIndex */ js.UndefOr[scala.Double], scala.Unit] = null,
+    onSlideAfter: (/* $slideElement */ js.UndefOr[JQuery], /* oldIndex */ js.UndefOr[scala.Double], /* newIndex */ js.UndefOr[scala.Double]) => scala.Unit = null,
+    onSlideBefore: (/* $slideElement */ js.UndefOr[JQuery], /* oldIndex */ js.UndefOr[scala.Double], /* newIndex */ js.UndefOr[scala.Double]) => scala.Unit = null,
+    onSlideNext: (/* $slideElement */ js.UndefOr[JQuery], /* oldIndex */ js.UndefOr[scala.Double], /* newIndex */ js.UndefOr[scala.Double]) => scala.Unit = null,
+    onSlidePrev: (/* $slideElement */ js.UndefOr[JQuery], /* oldIndex */ js.UndefOr[scala.Double], /* newIndex */ js.UndefOr[scala.Double]) => scala.Unit = null,
+    onSliderLoad: /* currentIndex */ js.UndefOr[scala.Double] => scala.Unit = null,
+    onSliderResize: /* currentIndex */ js.UndefOr[scala.Double] => scala.Unit = null,
     oneToOneTouch: js.UndefOr[scala.Boolean] = js.undefined,
     pager: js.UndefOr[scala.Boolean] = js.undefined,
     pagerCustom: java.lang.String = null,
@@ -586,7 +566,7 @@ object bxSliderOptions {
     if (autoDirection != null) __obj.updateDynamic("autoDirection")(autoDirection)
     if (!js.isUndefined(autoHover)) __obj.updateDynamic("autoHover")(autoHover)
     if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart)
-    if (buildPager != null) __obj.updateDynamic("buildPager")(buildPager)
+    if (buildPager != null) __obj.updateDynamic("buildPager")(js.Any.fromFunction1(buildPager))
     if (!js.isUndefined(captions)) __obj.updateDynamic("captions")(captions)
     if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls)
     if (easing != null) __obj.updateDynamic("easing")(easing)
@@ -599,12 +579,12 @@ object bxSliderOptions {
     if (moveSlides != null) __obj.updateDynamic("moveSlides")(moveSlides.asInstanceOf[js.Any])
     if (nextSelector != null) __obj.updateDynamic("nextSelector")(nextSelector)
     if (nextText != null) __obj.updateDynamic("nextText")(nextText)
-    if (onSlideAfter != null) __obj.updateDynamic("onSlideAfter")(onSlideAfter)
-    if (onSlideBefore != null) __obj.updateDynamic("onSlideBefore")(onSlideBefore)
-    if (onSlideNext != null) __obj.updateDynamic("onSlideNext")(onSlideNext)
-    if (onSlidePrev != null) __obj.updateDynamic("onSlidePrev")(onSlidePrev)
-    if (onSliderLoad != null) __obj.updateDynamic("onSliderLoad")(onSliderLoad)
-    if (onSliderResize != null) __obj.updateDynamic("onSliderResize")(onSliderResize)
+    if (onSlideAfter != null) __obj.updateDynamic("onSlideAfter")(js.Any.fromFunction3(onSlideAfter))
+    if (onSlideBefore != null) __obj.updateDynamic("onSlideBefore")(js.Any.fromFunction3(onSlideBefore))
+    if (onSlideNext != null) __obj.updateDynamic("onSlideNext")(js.Any.fromFunction3(onSlideNext))
+    if (onSlidePrev != null) __obj.updateDynamic("onSlidePrev")(js.Any.fromFunction3(onSlidePrev))
+    if (onSliderLoad != null) __obj.updateDynamic("onSliderLoad")(js.Any.fromFunction1(onSliderLoad))
+    if (onSliderResize != null) __obj.updateDynamic("onSliderResize")(js.Any.fromFunction1(onSliderResize))
     if (!js.isUndefined(oneToOneTouch)) __obj.updateDynamic("oneToOneTouch")(oneToOneTouch)
     if (!js.isUndefined(pager)) __obj.updateDynamic("pager")(pager)
     if (pagerCustom != null) __obj.updateDynamic("pagerCustom")(pagerCustom)

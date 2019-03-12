@@ -11,8 +11,8 @@ trait Anon_ArrayArray2alternatives extends js.Object {
 
 object Anon_ArrayArray2alternatives {
   @scala.inline
-  def apply(array2alternatives: js.Function1[js.Array[java.lang.String], java.lang.String]): Anon_ArrayArray2alternatives = {
-    val __obj = js.Dynamic.literal(array2alternatives = array2alternatives)
+  def apply(array2alternatives: js.Array[java.lang.String] => java.lang.String): Anon_ArrayArray2alternatives = {
+    val __obj = js.Dynamic.literal(array2alternatives = js.Any.fromFunction1(array2alternatives))
   
     __obj.asInstanceOf[Anon_ArrayArray2alternatives]
   }

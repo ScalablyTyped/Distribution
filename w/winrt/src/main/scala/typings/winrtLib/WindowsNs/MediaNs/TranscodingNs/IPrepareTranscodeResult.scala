@@ -16,9 +16,9 @@ object IPrepareTranscodeResult {
   def apply(
     canTranscode: scala.Boolean,
     failureReason: TranscodeFailureReason,
-    transcodeAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncActionWithProgress[scala.Double]]
+    transcodeAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncActionWithProgress[scala.Double]
   ): IPrepareTranscodeResult = {
-    val __obj = js.Dynamic.literal(canTranscode = canTranscode, failureReason = failureReason, transcodeAsync = transcodeAsync)
+    val __obj = js.Dynamic.literal(canTranscode = canTranscode, failureReason = failureReason, transcodeAsync = js.Any.fromFunction0(transcodeAsync))
   
     __obj.asInstanceOf[IPrepareTranscodeResult]
   }

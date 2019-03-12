@@ -11,8 +11,8 @@ trait CheckboxGridValidationBuilder extends js.Object {
 
 object CheckboxGridValidationBuilder {
   @scala.inline
-  def apply(requireLimitOneResponsePerColumn: js.Function0[CheckboxGridValidationBuilder]): CheckboxGridValidationBuilder = {
-    val __obj = js.Dynamic.literal(requireLimitOneResponsePerColumn = requireLimitOneResponsePerColumn)
+  def apply(requireLimitOneResponsePerColumn: () => CheckboxGridValidationBuilder): CheckboxGridValidationBuilder = {
+    val __obj = js.Dynamic.literal(requireLimitOneResponsePerColumn = js.Any.fromFunction0(requireLimitOneResponsePerColumn))
   
     __obj.asInstanceOf[CheckboxGridValidationBuilder]
   }

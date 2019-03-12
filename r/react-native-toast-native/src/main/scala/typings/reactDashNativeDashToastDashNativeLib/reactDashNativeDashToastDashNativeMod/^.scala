@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-toast-native", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactDashNativeDashToastDashNativeLib.reactDashNativeDashToastDashNativeMod.ToastNative = js.native
+  val default: ToastNative = js.native
 }
 

@@ -533,10 +533,10 @@ object Config {
   def apply(
     SELENIUM_PROMISE_MANAGER: js.UndefOr[scala.Boolean] = js.undefined,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    afterLaunch: js.Function1[/* exitCode */ scala.Double, scala.Unit] = null,
+    afterLaunch: /* exitCode */ scala.Double => scala.Unit = null,
     allScriptsTimeout: scala.Int | scala.Double = null,
     baseUrl: java.lang.String = null,
-    beforeLaunch: js.Function0[scala.Unit] = null,
+    beforeLaunch: () => scala.Unit = null,
     blockingProxyUrl: java.lang.String = null,
     browserstackKey: java.lang.String = null,
     browserstackProxy: java.lang.String = null,
@@ -572,9 +572,9 @@ object Config {
     ng12Hybrid: js.UndefOr[scala.Boolean] = js.undefined,
     noGlobals: js.UndefOr[scala.Boolean] = js.undefined,
     nodeDebug: js.UndefOr[scala.Boolean] = js.undefined,
-    onCleanUp: js.Function1[/* exitCode */ scala.Double, scala.Unit] = null,
-    onComplete: js.Function0[scala.Unit] = null,
-    onPrepare: js.Function0[scala.Unit] = null,
+    onCleanUp: /* exitCode */ scala.Double => scala.Unit = null,
+    onComplete: () => scala.Unit = null,
+    onPrepare: () => scala.Unit = null,
     params: js.Any = null,
     plugins: js.Array[protractorLib.builtPluginsMod.PluginConfig] = null,
     restartBrowserBetweenTests: js.UndefOr[scala.Boolean] = js.undefined,
@@ -613,10 +613,10 @@ object Config {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(SELENIUM_PROMISE_MANAGER)) __obj.updateDynamic("SELENIUM_PROMISE_MANAGER")(SELENIUM_PROMISE_MANAGER)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (afterLaunch != null) __obj.updateDynamic("afterLaunch")(afterLaunch)
+    if (afterLaunch != null) __obj.updateDynamic("afterLaunch")(js.Any.fromFunction1(afterLaunch))
     if (allScriptsTimeout != null) __obj.updateDynamic("allScriptsTimeout")(allScriptsTimeout.asInstanceOf[js.Any])
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
-    if (beforeLaunch != null) __obj.updateDynamic("beforeLaunch")(beforeLaunch)
+    if (beforeLaunch != null) __obj.updateDynamic("beforeLaunch")(js.Any.fromFunction0(beforeLaunch))
     if (blockingProxyUrl != null) __obj.updateDynamic("blockingProxyUrl")(blockingProxyUrl)
     if (browserstackKey != null) __obj.updateDynamic("browserstackKey")(browserstackKey)
     if (browserstackProxy != null) __obj.updateDynamic("browserstackProxy")(browserstackProxy)
@@ -652,9 +652,9 @@ object Config {
     if (!js.isUndefined(ng12Hybrid)) __obj.updateDynamic("ng12Hybrid")(ng12Hybrid)
     if (!js.isUndefined(noGlobals)) __obj.updateDynamic("noGlobals")(noGlobals)
     if (!js.isUndefined(nodeDebug)) __obj.updateDynamic("nodeDebug")(nodeDebug)
-    if (onCleanUp != null) __obj.updateDynamic("onCleanUp")(onCleanUp)
-    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
-    if (onPrepare != null) __obj.updateDynamic("onPrepare")(onPrepare)
+    if (onCleanUp != null) __obj.updateDynamic("onCleanUp")(js.Any.fromFunction1(onCleanUp))
+    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction0(onComplete))
+    if (onPrepare != null) __obj.updateDynamic("onPrepare")(js.Any.fromFunction0(onPrepare))
     if (params != null) __obj.updateDynamic("params")(params)
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)
     if (!js.isUndefined(restartBrowserBetweenTests)) __obj.updateDynamic("restartBrowserBetweenTests")(restartBrowserBetweenTests)

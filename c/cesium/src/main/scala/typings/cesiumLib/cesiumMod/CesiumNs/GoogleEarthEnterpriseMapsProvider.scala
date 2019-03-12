@@ -27,29 +27,17 @@ object GoogleEarthEnterpriseMapsProvider {
     defaultMinificationFilter: js.Any,
     defaultSaturation: scala.Double,
     errorEvent: Event,
-    getTileCredits: js.Function3[scala.Double, scala.Double, scala.Double, js.Array[Credit]],
+    getTileCredits: (scala.Double, scala.Double, scala.Double) => js.Array[Credit],
     hasAlphaChannel: scala.Boolean,
     maximumLevel: scala.Double,
     minimumLevel: scala.Double,
     path: java.lang.String,
-    pickFeatures: js.Function5[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      js.Promise[js.Array[ImageryLayerFeatureInfo]]
-    ],
+    pickFeatures: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => js.Promise[js.Array[ImageryLayerFeatureInfo]],
     proxy: Proxy,
     ready: scala.Boolean,
     readyPromise: js.Promise[scala.Boolean],
     rectangle: Rectangle,
-    requestImage: js.Function3[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      js.Promise[stdLib.HTMLImageElement | stdLib.HTMLCanvasElement]
-    ],
+    requestImage: (scala.Double, scala.Double, scala.Double) => js.Promise[stdLib.HTMLImageElement | stdLib.HTMLCanvasElement],
     requestType: java.lang.String,
     tileDiscardPolicy: TileDiscardPolicy,
     tileHeight: scala.Double,
@@ -58,7 +46,7 @@ object GoogleEarthEnterpriseMapsProvider {
     url: java.lang.String,
     version: scala.Double
   ): GoogleEarthEnterpriseMapsProvider = {
-    val __obj = js.Dynamic.literal(channel = channel, credit = credit, defaultAlpha = defaultAlpha, defaultBrightness = defaultBrightness, defaultContrast = defaultContrast, defaultGamma = defaultGamma, defaultHue = defaultHue, defaultMagnificationFilter = defaultMagnificationFilter, defaultMinificationFilter = defaultMinificationFilter, defaultSaturation = defaultSaturation, errorEvent = errorEvent, getTileCredits = getTileCredits, hasAlphaChannel = hasAlphaChannel, maximumLevel = maximumLevel, minimumLevel = minimumLevel, path = path, pickFeatures = pickFeatures, proxy = proxy, ready = ready, readyPromise = readyPromise, rectangle = rectangle, requestImage = requestImage, requestType = requestType, tileDiscardPolicy = tileDiscardPolicy, tileHeight = tileHeight, tileWidth = tileWidth, tilingScheme = tilingScheme, url = url, version = version)
+    val __obj = js.Dynamic.literal(channel = channel, credit = credit, defaultAlpha = defaultAlpha, defaultBrightness = defaultBrightness, defaultContrast = defaultContrast, defaultGamma = defaultGamma, defaultHue = defaultHue, defaultMagnificationFilter = defaultMagnificationFilter, defaultMinificationFilter = defaultMinificationFilter, defaultSaturation = defaultSaturation, errorEvent = errorEvent, getTileCredits = js.Any.fromFunction3(getTileCredits), hasAlphaChannel = hasAlphaChannel, maximumLevel = maximumLevel, minimumLevel = minimumLevel, path = path, pickFeatures = js.Any.fromFunction5(pickFeatures), proxy = proxy, ready = ready, readyPromise = readyPromise, rectangle = rectangle, requestImage = js.Any.fromFunction3(requestImage), requestType = requestType, tileDiscardPolicy = tileDiscardPolicy, tileHeight = tileHeight, tileWidth = tileWidth, tilingScheme = tilingScheme, url = url, version = version)
   
     __obj.asInstanceOf[GoogleEarthEnterpriseMapsProvider]
   }

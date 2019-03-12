@@ -18,15 +18,15 @@ trait Position extends js.Object {
 object Position {
   @scala.inline
   def apply(
-    getElement: js.Function0[Element],
-    getOffset: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getSurroundingText: js.Function0[Text],
-    getSurroundingTextOffset: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    insertBookmark: js.Function0[Bookmark],
-    insertInlineImage: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.BlobSource, InlineImage],
-    insertText: js.Function1[java.lang.String, Text]
+    getElement: () => Element,
+    getOffset: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getSurroundingText: () => Text,
+    getSurroundingTextOffset: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    insertBookmark: () => Bookmark,
+    insertInlineImage: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.BlobSource => InlineImage,
+    insertText: java.lang.String => Text
   ): Position = {
-    val __obj = js.Dynamic.literal(getElement = getElement, getOffset = getOffset, getSurroundingText = getSurroundingText, getSurroundingTextOffset = getSurroundingTextOffset, insertBookmark = insertBookmark, insertInlineImage = insertInlineImage, insertText = insertText)
+    val __obj = js.Dynamic.literal(getElement = js.Any.fromFunction0(getElement), getOffset = js.Any.fromFunction0(getOffset), getSurroundingText = js.Any.fromFunction0(getSurroundingText), getSurroundingTextOffset = js.Any.fromFunction0(getSurroundingTextOffset), insertBookmark = js.Any.fromFunction0(insertBookmark), insertInlineImage = js.Any.fromFunction1(insertInlineImage), insertText = js.Any.fromFunction1(insertText))
   
     __obj.asInstanceOf[Position]
   }

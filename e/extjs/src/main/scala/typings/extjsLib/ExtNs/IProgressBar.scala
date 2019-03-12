@@ -59,24 +59,19 @@ object IProgressBar {
     baseCls: java.lang.String = null,
     componentLayout: js.Any = null,
     id: java.lang.String = null,
-    initComponent: js.Function0[scala.Unit] = null,
-    initRenderData: js.Function0[_] = null,
-    isWaiting: js.Function0[scala.Boolean] = null,
-    onDestroy: js.Function0[scala.Unit] = null,
-    onRender: js.Function0[scala.Unit] = null,
+    initComponent: () => scala.Unit = null,
+    initRenderData: () => _ = null,
+    isWaiting: () => scala.Boolean = null,
+    onDestroy: () => scala.Unit = null,
+    onRender: () => scala.Unit = null,
     renderTpl: js.Any = null,
-    reset: js.Function1[/* hide */ js.UndefOr[scala.Boolean], IProgressBar] = null,
+    reset: /* hide */ js.UndefOr[scala.Boolean] => IProgressBar = null,
     text: java.lang.String = null,
     textEl: js.Any = null,
-    updateProgress: js.Function3[
-      /* value */ js.UndefOr[scala.Double], 
-      /* text */ js.UndefOr[java.lang.String], 
-      /* animate */ js.UndefOr[scala.Boolean], 
-      IProgressBar
-    ] = null,
-    updateText: js.Function1[/* text */ js.UndefOr[java.lang.String], IProgressBar] = null,
+    updateProgress: (/* value */ js.UndefOr[scala.Double], /* text */ js.UndefOr[java.lang.String], /* animate */ js.UndefOr[scala.Boolean]) => IProgressBar = null,
+    updateText: /* text */ js.UndefOr[java.lang.String] => IProgressBar = null,
     value: scala.Int | scala.Double = null,
-    wait: js.Function1[/* config */ js.UndefOr[js.Any], IProgressBar] = null
+    wait: /* config */ js.UndefOr[js.Any] => IProgressBar = null
   ): IProgressBar = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IComponent)
@@ -84,19 +79,19 @@ object IProgressBar {
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
     if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
     if (id != null) __obj.updateDynamic("id")(id)
-    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
-    if (initRenderData != null) __obj.updateDynamic("initRenderData")(initRenderData)
-    if (isWaiting != null) __obj.updateDynamic("isWaiting")(isWaiting)
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(onDestroy)
-    if (onRender != null) __obj.updateDynamic("onRender")(onRender)
+    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
+    if (initRenderData != null) __obj.updateDynamic("initRenderData")(js.Any.fromFunction0(initRenderData))
+    if (isWaiting != null) __obj.updateDynamic("isWaiting")(js.Any.fromFunction0(isWaiting))
+    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
+    if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction0(onRender))
     if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
-    if (reset != null) __obj.updateDynamic("reset")(reset)
+    if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction1(reset))
     if (text != null) __obj.updateDynamic("text")(text)
     if (textEl != null) __obj.updateDynamic("textEl")(textEl)
-    if (updateProgress != null) __obj.updateDynamic("updateProgress")(updateProgress)
-    if (updateText != null) __obj.updateDynamic("updateText")(updateText)
+    if (updateProgress != null) __obj.updateDynamic("updateProgress")(js.Any.fromFunction3(updateProgress))
+    if (updateText != null) __obj.updateDynamic("updateText")(js.Any.fromFunction1(updateText))
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (wait != null) __obj.updateDynamic("wait")(wait)
+    if (wait != null) __obj.updateDynamic("wait")(js.Any.fromFunction1(wait))
     __obj.asInstanceOf[IProgressBar]
   }
 }

@@ -14,11 +14,11 @@ trait Anon_FlagsGetHeapSpaceStatistics extends js.Object {
 object Anon_FlagsGetHeapSpaceStatistics {
   @scala.inline
   def apply(
-    getHeapSpaceStatistics: js.Function0[js.Array[nodeLib.v8Mod.HeapSpaceInfo]],
-    getHeapStatistics: js.Function0[nodeLib.v8Mod.HeapInfo],
-    setFlagsFromString: js.Function1[java.lang.String, scala.Unit]
+    getHeapSpaceStatistics: () => js.Array[nodeLib.v8Mod.HeapSpaceInfo],
+    getHeapStatistics: () => nodeLib.v8Mod.HeapInfo,
+    setFlagsFromString: java.lang.String => scala.Unit
   ): Anon_FlagsGetHeapSpaceStatistics = {
-    val __obj = js.Dynamic.literal(getHeapSpaceStatistics = getHeapSpaceStatistics, getHeapStatistics = getHeapStatistics, setFlagsFromString = setFlagsFromString)
+    val __obj = js.Dynamic.literal(getHeapSpaceStatistics = js.Any.fromFunction0(getHeapSpaceStatistics), getHeapStatistics = js.Any.fromFunction0(getHeapStatistics), setFlagsFromString = js.Any.fromFunction1(setFlagsFromString))
   
     __obj.asInstanceOf[Anon_FlagsGetHeapSpaceStatistics]
   }

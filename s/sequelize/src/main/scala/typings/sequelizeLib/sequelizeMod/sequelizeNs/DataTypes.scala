@@ -51,7 +51,8 @@ trait DataTypes extends js.Object {
   @JSName("BLOB")
   var BLOB_Original: DataTypeBlob = js.native
   var BOOLEAN: DataTypeBoolean = js.native
-  var CHAR: DataTypeChar = js.native
+  @JSName("CHAR")
+  var CHAR_Original: DataTypeChar = js.native
   var DATEONLY: DataTypeDateOnly = js.native
   @JSName("DATE")
   var DATE_Original: DataTypeDate = js.native
@@ -85,15 +86,19 @@ trait DataTypes extends js.Object {
   var REAL_Original: DataTypeReal = js.native
   @JSName("SMALLINT")
   var SMALLINT_Original: DataTypeSmallInt = js.native
-  var STRING: DataTypeString = js.native
+  @JSName("STRING")
+  var STRING_Original: DataTypeString = js.native
   @JSName("TEXT")
   var TEXT_Original: DataTypeText = js.native
   var TIME: DataTypeTime = js.native
   @JSName("TINYINT")
   var TINYINT_Original: DataTypeTinyInt = js.native
-  var UUID: DataTypeUUID = js.native
-  var UUIDV1: DataTypeUUIDv1 = js.native
-  var UUIDV4: DataTypeUUIDv4 = js.native
+  @JSName("UUIDV1")
+  var UUIDV1_Original: DataTypeUUIDv1 = js.native
+  @JSName("UUIDV4")
+  var UUIDV4_Original: DataTypeUUIDv4 = js.native
+  @JSName("UUID")
+  var UUID_Original: DataTypeUUID = js.native
   var VIRTUAL: DataTypeVirtual = js.native
   /**
     * Array field for Postgre
@@ -116,6 +121,12 @@ trait DataTypes extends js.Object {
   def BLOB(): DataTypeBlob = js.native
   def BLOB(length: java.lang.String): DataTypeBlob = js.native
   def BLOB(options: sequelizeLib.Anon_LengthString): DataTypeBlob = js.native
+  /**
+    * A variable length string. Default length 255
+    */
+  def CHAR(): DataTypeChar = js.native
+  def CHAR(length: scala.Double): DataTypeChar = js.native
+  def CHAR(options: sequelizeLib.Anon_Length): DataTypeChar = js.native
   /**
     * Length of decimal places of time
     */
@@ -206,6 +217,12 @@ trait DataTypes extends js.Object {
   def SMALLINT(length: scala.Double): DataTypeSmallInt = js.native
   def SMALLINT(options: sequelizeLib.Anon_Length): DataTypeSmallInt = js.native
   /**
+    * A variable length string. Default length 255
+    */
+  def STRING(): DataTypeString = js.native
+  def STRING(length: scala.Double): DataTypeString = js.native
+  def STRING(options: sequelizeLib.Anon_Length): DataTypeString = js.native
+  /**
     * Length of the text field.
     *
     * Available lengths: `tiny`, `medium`, `long`
@@ -219,5 +236,8 @@ trait DataTypes extends js.Object {
   def TINYINT(): DataTypeTinyInt = js.native
   def TINYINT(length: scala.Double): DataTypeTinyInt = js.native
   def TINYINT(options: sequelizeLib.Anon_Length): DataTypeTinyInt = js.native
+  def UUID(): DataTypeUUID = js.native
+  def UUIDV1(): DataTypeUUIDv1 = js.native
+  def UUIDV4(): DataTypeUUIDv4 = js.native
 }
 

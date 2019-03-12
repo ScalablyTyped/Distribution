@@ -11,8 +11,8 @@ trait IUssdMessageFactory extends js.Object {
 
 object IUssdMessageFactory {
   @scala.inline
-  def apply(createMessage: js.Function1[java.lang.String, UssdMessage]): IUssdMessageFactory = {
-    val __obj = js.Dynamic.literal(createMessage = createMessage)
+  def apply(createMessage: java.lang.String => UssdMessage): IUssdMessageFactory = {
+    val __obj = js.Dynamic.literal(createMessage = js.Any.fromFunction1(createMessage))
   
     __obj.asInstanceOf[IUssdMessageFactory]
   }

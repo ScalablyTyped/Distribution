@@ -36,12 +36,12 @@ object Configuration {
     encryptionKey: stdLib.ArrayBuffer | stdLib.ArrayBufferView | stdLib.Int8Array = null,
     fifoFilesFallbackPath: java.lang.String = null,
     inMemory: js.UndefOr[scala.Boolean] = js.undefined,
-    migration: js.Function2[/* oldRealm */ realmLib.Realm, /* newRealm */ realmLib.Realm, scala.Unit] = null,
+    migration: (/* oldRealm */ realmLib.Realm, /* newRealm */ realmLib.Realm) => scala.Unit = null,
     path: java.lang.String = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     schema: js.Array[ObjectClass | ObjectSchema] = null,
     schemaVersion: scala.Int | scala.Double = null,
-    shouldCompactOnLaunch: js.Function2[/* totalBytes */ scala.Double, /* usedBytes */ scala.Double, scala.Boolean] = null,
+    shouldCompactOnLaunch: (/* totalBytes */ scala.Double, /* usedBytes */ scala.Double) => scala.Boolean = null,
     sync: stdLib.Partial[realmLib.RealmNs.SyncNs.SyncConfiguration] = null
   ): Configuration = {
     val __obj = js.Dynamic.literal()
@@ -50,12 +50,12 @@ object Configuration {
     if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
     if (fifoFilesFallbackPath != null) __obj.updateDynamic("fifoFilesFallbackPath")(fifoFilesFallbackPath)
     if (!js.isUndefined(inMemory)) __obj.updateDynamic("inMemory")(inMemory)
-    if (migration != null) __obj.updateDynamic("migration")(migration)
+    if (migration != null) __obj.updateDynamic("migration")(js.Any.fromFunction2(migration))
     if (path != null) __obj.updateDynamic("path")(path)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (schema != null) __obj.updateDynamic("schema")(schema)
     if (schemaVersion != null) __obj.updateDynamic("schemaVersion")(schemaVersion.asInstanceOf[js.Any])
-    if (shouldCompactOnLaunch != null) __obj.updateDynamic("shouldCompactOnLaunch")(shouldCompactOnLaunch)
+    if (shouldCompactOnLaunch != null) __obj.updateDynamic("shouldCompactOnLaunch")(js.Any.fromFunction2(shouldCompactOnLaunch))
     if (sync != null) __obj.updateDynamic("sync")(sync)
     __obj.asInstanceOf[Configuration]
   }

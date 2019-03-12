@@ -15,16 +15,10 @@ trait AssociationsessionsResource extends js.Object {
 object AssociationsessionsResource {
   @scala.inline
   def apply(
-    start: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AssociationSession]
-    ],
-    verify: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AssociationSession]
-    ]
+    start: gapiDotClientDotAdsensehostLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[AssociationSession],
+    verify: gapiDotClientDotAdsensehostLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[AssociationSession]
   ): AssociationsessionsResource = {
-    val __obj = js.Dynamic.literal(start = start, verify = verify)
+    val __obj = js.Dynamic.literal(start = js.Any.fromFunction1(start), verify = js.Any.fromFunction1(verify))
   
     __obj.asInstanceOf[AssociationsessionsResource]
   }

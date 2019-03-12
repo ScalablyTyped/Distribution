@@ -1,31 +1,31 @@
 organization := "org.scalablytyped"
 name := "tslint"
-version := "5.13.1-7d4465"
+version := "5.13.1-8ca206"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-15d04a",
-  "org.scalablytyped" %%% "babel-code-frame" % "6.20-dt-20190212Z-aa56af",
-  "org.scalablytyped" %%% "builtin-modules" % "2.0-dt-20180214Z-578732",
-  "org.scalablytyped" %%% "chalk" % "2.4.2-6ee70e",
-  "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-1a1d0f",
-  "org.scalablytyped" %%% "commander" % "2.19.0-ea996e",
-  "org.scalablytyped" %%% "diff" % "4.0-dt-20190129Z-4b83ac",
-  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-38137e",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-a21654",
-  "org.scalablytyped" %%% "js-yaml" % "3.12-dt-20190118Z-f1d446",
-  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-f71186",
-  "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180214Z-0c0d97",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190307Z-7720a8",
-  "org.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20180507Z-d9c25d",
-  "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-cfbe1c",
-  "org.scalablytyped" %%% "std" % "3.3-05be79",
-  "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-bedf31",
-  "org.scalablytyped" %%% "tslib" % "1.9.3-d28c21",
-  "org.scalablytyped" %%% "tsutils" % "2.29.0-b4b0da",
-  "org.scalablytyped" %%% "typescript" % "3.3.3333-4b18ce")
+  "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-052e82",
+  "org.scalablytyped" %%% "babel-code-frame" % "6.20-dt-20190212Z-856656",
+  "org.scalablytyped" %%% "builtin-modules" % "2.0-dt-20180214Z-2120f2",
+  "org.scalablytyped" %%% "chalk" % "2.4.2-6d01d0",
+  "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-f1b784",
+  "org.scalablytyped" %%% "commander" % "2.19.0-776db8",
+  "org.scalablytyped" %%% "diff" % "4.0-dt-20190129Z-6c91bf",
+  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-1f537b",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-334b9b",
+  "org.scalablytyped" %%% "js-yaml" % "3.12-dt-20190118Z-0397ba",
+  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-0a2b2c",
+  "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180214Z-cb319b",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190311Z-8b4969",
+  "org.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20180507Z-d82b52",
+  "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-cc5b51",
+  "org.scalablytyped" %%% "std" % "3.3-ec2942",
+  "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-155129",
+  "org.scalablytyped" %%% "tslib" % "1.9.3-28a6ab",
+  "org.scalablytyped" %%% "tsutils" % "2.29.0-6b9b18",
+  "org.scalablytyped" %%% "typescript" % "3.3.3333-09c87f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

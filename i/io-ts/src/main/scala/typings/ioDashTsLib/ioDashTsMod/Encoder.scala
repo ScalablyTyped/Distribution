@@ -11,8 +11,8 @@ trait Encoder[A, O] extends js.Object {
 
 object Encoder {
   @scala.inline
-  def apply[A, O](encode: js.Function1[A, O]): Encoder[A, O] = {
-    val __obj = js.Dynamic.literal(encode = encode)
+  def apply[A, O](encode: A => O): Encoder[A, O] = {
+    val __obj = js.Dynamic.literal(encode = js.Any.fromFunction1(encode))
   
     __obj.asInstanceOf[Encoder[A, O]]
   }

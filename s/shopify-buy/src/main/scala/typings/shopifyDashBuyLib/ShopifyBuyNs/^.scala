@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var NO_IMAGE_URI: java.lang.String = js.native
-  def buildClient(config: shopifyDashBuyLib.ShopifyBuyNs.Config): shopifyDashBuyLib.ShopifyBuyNs.Client = js.native
+  def buildClient(config: Config): Client = js.native
 }
 

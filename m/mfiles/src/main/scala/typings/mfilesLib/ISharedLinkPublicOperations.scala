@@ -28,27 +28,13 @@ trait ISharedLinkPublicOperations extends js.Object {
 object ISharedLinkPublicOperations {
   @scala.inline
   def apply(
-    DownloadSharedFileInBlocks_Begin: js.Function3[java.lang.String, java.lang.String, INamedValues, IFileDownloadSession],
-    DownloadSharedFileInBlocks_Begin_32bit: js.Function3[java.lang.String, java.lang.String, INamedValues, IFileDownloadSession],
-    DownloadSharedFileInBlocks_ReadBlock: js.Function5[
-      java.lang.String, 
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      js.Array[scala.Double]
-    ],
-    DownloadSharedFileInBlocks_ReadBlock_32bit: js.Function5[
-      java.lang.String, 
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      js.Array[scala.Double]
-    ],
-    GetSharedLinkInfo: js.Function3[java.lang.String, java.lang.String, INamedValues, ISharedFileInfo]
+    DownloadSharedFileInBlocks_Begin: (java.lang.String, java.lang.String, INamedValues) => IFileDownloadSession,
+    DownloadSharedFileInBlocks_Begin_32bit: (java.lang.String, java.lang.String, INamedValues) => IFileDownloadSession,
+    DownloadSharedFileInBlocks_ReadBlock: (java.lang.String, java.lang.String, scala.Double, scala.Double, scala.Double) => js.Array[scala.Double],
+    DownloadSharedFileInBlocks_ReadBlock_32bit: (java.lang.String, java.lang.String, scala.Double, scala.Double, scala.Double) => js.Array[scala.Double],
+    GetSharedLinkInfo: (java.lang.String, java.lang.String, INamedValues) => ISharedFileInfo
   ): ISharedLinkPublicOperations = {
-    val __obj = js.Dynamic.literal(DownloadSharedFileInBlocks_Begin = DownloadSharedFileInBlocks_Begin, DownloadSharedFileInBlocks_Begin_32bit = DownloadSharedFileInBlocks_Begin_32bit, DownloadSharedFileInBlocks_ReadBlock = DownloadSharedFileInBlocks_ReadBlock, DownloadSharedFileInBlocks_ReadBlock_32bit = DownloadSharedFileInBlocks_ReadBlock_32bit, GetSharedLinkInfo = GetSharedLinkInfo)
+    val __obj = js.Dynamic.literal(DownloadSharedFileInBlocks_Begin = js.Any.fromFunction3(DownloadSharedFileInBlocks_Begin), DownloadSharedFileInBlocks_Begin_32bit = js.Any.fromFunction3(DownloadSharedFileInBlocks_Begin_32bit), DownloadSharedFileInBlocks_ReadBlock = js.Any.fromFunction5(DownloadSharedFileInBlocks_ReadBlock), DownloadSharedFileInBlocks_ReadBlock_32bit = js.Any.fromFunction5(DownloadSharedFileInBlocks_ReadBlock_32bit), GetSharedLinkInfo = js.Any.fromFunction3(GetSharedLinkInfo))
   
     __obj.asInstanceOf[ISharedLinkPublicOperations]
   }

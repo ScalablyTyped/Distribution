@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-permissions", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactDashNativeDashPermissionsLib.reactDashNativeDashPermissionsMod.ReactNativePermissions = js.native
+  val default: ReactNativePermissions = js.native
 }
 

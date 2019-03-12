@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Timing protected () extends js.Object {
   var Accelerate: scala.Double = js.native
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   var AutoReverse: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   var BounceEnd: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   var BounceEndIntensity: scala.Double = js.native

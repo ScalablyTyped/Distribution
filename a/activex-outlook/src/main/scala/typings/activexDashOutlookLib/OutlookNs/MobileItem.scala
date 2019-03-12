@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.MobileItem")
 @js.native
 class MobileItem protected () extends js.Object {
-  val Actions: Actions = js.native
-  val Application: Application = js.native
-  val Attachments: Attachments = js.native
+  val Actions: activexDashOutlookLib.OutlookNs.Actions = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
+  val Attachments: activexDashOutlookLib.OutlookNs.Attachments = js.native
   var BillingInformation: java.lang.String = js.native
   var Body: java.lang.String = js.native
   var Categories: java.lang.String = js.native
@@ -19,14 +19,14 @@ class MobileItem protected () extends js.Object {
   val ConversationIndex: java.lang.String = js.native
   val ConversationTopic: java.lang.String = js.native
   val Count: scala.Double = js.native
-  val CreationTime: activexDashInteropLib.VarDate = js.native
+  val CreationTime: stdLib.VarDate = js.native
   val EntryID: java.lang.String = js.native
-  val FormDescription: FormDescription = js.native
+  val FormDescription: activexDashOutlookLib.OutlookNs.FormDescription = js.native
   val GetInspector: Inspector = js.native
   var HTMLBody: java.lang.String = js.native
   var Importance: OlImportance = js.native
-  val ItemProperties: ItemProperties = js.native
-  val LastModificationTime: activexDashInteropLib.VarDate = js.native
+  val ItemProperties: activexDashOutlookLib.OutlookNs.ItemProperties = js.native
+  val LastModificationTime: stdLib.VarDate = js.native
   val MAPIOBJECT: js.Any = js.native
   var MessageClass: java.lang.String = js.native
   var Mileage: java.lang.String = js.native
@@ -36,11 +36,11 @@ class MobileItem protected () extends js.Object {
   val OutlookInternalVersion: scala.Double = js.native
   val OutlookVersion: java.lang.String = js.native
   val Parent: js.Any = js.native
-  val PropertyAccessor: PropertyAccessor = js.native
+  val PropertyAccessor: activexDashOutlookLib.OutlookNs.PropertyAccessor = js.native
   val ReceivedByEntryID: java.lang.String = js.native
   val ReceivedByName: java.lang.String = js.native
-  val ReceivedTime: activexDashInteropLib.VarDate = js.native
-  val Recipients: Recipients = js.native
+  val ReceivedTime: stdLib.VarDate = js.native
+  val Recipients: activexDashOutlookLib.OutlookNs.Recipients = js.native
   val ReplyRecipientNames: java.lang.String = js.native
   val ReplyRecipients: Recipients = js.native
   var SMILBody: java.lang.String = js.native
@@ -51,14 +51,14 @@ class MobileItem protected () extends js.Object {
   val SenderName: java.lang.String = js.native
   var Sensitivity: OlSensitivity = js.native
   val Sent: scala.Boolean = js.native
-  val SentOn: activexDashInteropLib.VarDate = js.native
+  val SentOn: stdLib.VarDate = js.native
   val Session: NameSpace = js.native
   val Size: scala.Double = js.native
   var Subject: java.lang.String = js.native
   val Submitted: scala.Boolean = js.native
   var To: java.lang.String = js.native
   var UnRead: scala.Boolean = js.native
-  val UserProperties: UserProperties = js.native
+  val UserProperties: activexDashOutlookLib.OutlookNs.UserProperties = js.native
   def Close(SaveMode: OlInspectorClose): scala.Unit = js.native
   def Copy(): js.Any = js.native
   def Delete(): scala.Unit = js.native

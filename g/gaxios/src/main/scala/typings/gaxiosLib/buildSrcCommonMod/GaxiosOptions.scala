@@ -52,7 +52,7 @@ trait GaxiosOptions extends js.Object {
 object GaxiosOptions {
   @scala.inline
   def apply(
-    adapter: js.Function1[/* options */ GaxiosOptions, GaxiosPromise[_]] = null,
+    adapter: /* options */ GaxiosOptions => GaxiosPromise[_] = null,
     agent: nodeLib.httpsMod.Agent = null,
     baseURL: java.lang.String = null,
     baseUrl: java.lang.String = null,
@@ -63,12 +63,9 @@ object GaxiosOptions {
     maxContentLength: scala.Int | scala.Double = null,
     maxRedirects: scala.Int | scala.Double = null,
     method: gaxiosLib.gaxiosLibStrings.GET | gaxiosLib.gaxiosLibStrings.HEAD | gaxiosLib.gaxiosLibStrings.POST | gaxiosLib.gaxiosLibStrings.DELETE | gaxiosLib.gaxiosLibStrings.PUT | gaxiosLib.gaxiosLibStrings.CONNECT | gaxiosLib.gaxiosLibStrings.OPTIONS | gaxiosLib.gaxiosLibStrings.TRACE | gaxiosLib.gaxiosLibStrings.PATCH = null,
-    onUploadProgress: js.Function1[/* progressEvent */ js.Any, scala.Unit] = null,
+    onUploadProgress: /* progressEvent */ js.Any => scala.Unit = null,
     params: js.Any = null,
-    paramsSerializer: js.Function1[
-      /* params */ org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double], 
-      java.lang.String
-    ] = null,
+    paramsSerializer: /* params */ org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double] => java.lang.String = null,
     responseType: gaxiosLib.gaxiosLibStrings.arraybuffer | gaxiosLib.gaxiosLibStrings.blob | gaxiosLib.gaxiosLibStrings.json | gaxiosLib.gaxiosLibStrings.text | gaxiosLib.gaxiosLibStrings.stream = null,
     retry: js.UndefOr[scala.Boolean] = js.undefined,
     retryConfig: RetryConfig = null,
@@ -76,10 +73,10 @@ object GaxiosOptions {
     size: scala.Int | scala.Double = null,
     timeout: scala.Int | scala.Double = null,
     url: java.lang.String = null,
-    validateStatus: js.Function1[/* status */ scala.Double, scala.Boolean] = null
+    validateStatus: /* status */ scala.Double => scala.Boolean = null
   ): GaxiosOptions = {
     val __obj = js.Dynamic.literal()
-    if (adapter != null) __obj.updateDynamic("adapter")(adapter)
+    if (adapter != null) __obj.updateDynamic("adapter")(js.Any.fromFunction1(adapter))
     if (agent != null) __obj.updateDynamic("agent")(agent)
     if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL)
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
@@ -90,9 +87,9 @@ object GaxiosOptions {
     if (maxContentLength != null) __obj.updateDynamic("maxContentLength")(maxContentLength.asInstanceOf[js.Any])
     if (maxRedirects != null) __obj.updateDynamic("maxRedirects")(maxRedirects.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (onUploadProgress != null) __obj.updateDynamic("onUploadProgress")(onUploadProgress)
+    if (onUploadProgress != null) __obj.updateDynamic("onUploadProgress")(js.Any.fromFunction1(onUploadProgress))
     if (params != null) __obj.updateDynamic("params")(params)
-    if (paramsSerializer != null) __obj.updateDynamic("paramsSerializer")(paramsSerializer)
+    if (paramsSerializer != null) __obj.updateDynamic("paramsSerializer")(js.Any.fromFunction1(paramsSerializer))
     if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
     if (!js.isUndefined(retry)) __obj.updateDynamic("retry")(retry)
     if (retryConfig != null) __obj.updateDynamic("retryConfig")(retryConfig)
@@ -100,7 +97,7 @@ object GaxiosOptions {
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url)
-    if (validateStatus != null) __obj.updateDynamic("validateStatus")(validateStatus)
+    if (validateStatus != null) __obj.updateDynamic("validateStatus")(js.Any.fromFunction1(validateStatus))
     __obj.asInstanceOf[GaxiosOptions]
   }
 }

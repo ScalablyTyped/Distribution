@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.declarativeWebRequest")
 @js.native
 object ^ extends js.Object {
-  var onRequest: chromeLib.chromeNs.declarativeWebRequestNs.RequestedEvent = js.native
+  var onRequest: RequestedEvent = js.native
 }
 

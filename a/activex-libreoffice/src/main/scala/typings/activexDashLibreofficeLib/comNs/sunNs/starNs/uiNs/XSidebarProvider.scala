@@ -41,17 +41,17 @@ object XSidebarProvider {
     Decks: XDecks,
     Frame: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XFrame,
     Sidebar: XSidebar,
-    acquire: js.Function0[scala.Unit],
-    getDecks: js.Function0[XDecks],
-    getFrame: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XFrame],
-    getSidebar: js.Function0[XSidebar],
-    isVisible: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setVisible: js.Function1[scala.Boolean, scala.Unit],
-    showDecks: js.Function1[scala.Boolean, scala.Unit]
+    acquire: () => scala.Unit,
+    getDecks: () => XDecks,
+    getFrame: () => activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XFrame,
+    getSidebar: () => XSidebar,
+    isVisible: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setVisible: scala.Boolean => scala.Unit,
+    showDecks: scala.Boolean => scala.Unit
   ): XSidebarProvider = {
-    val __obj = js.Dynamic.literal(Decks = Decks, Frame = Frame, Sidebar = Sidebar, acquire = acquire, getDecks = getDecks, getFrame = getFrame, getSidebar = getSidebar, isVisible = isVisible, queryInterface = queryInterface, release = release, setVisible = setVisible, showDecks = showDecks)
+    val __obj = js.Dynamic.literal(Decks = Decks, Frame = Frame, Sidebar = Sidebar, acquire = js.Any.fromFunction0(acquire), getDecks = js.Any.fromFunction0(getDecks), getFrame = js.Any.fromFunction0(getFrame), getSidebar = js.Any.fromFunction0(getSidebar), isVisible = js.Any.fromFunction0(isVisible), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setVisible = js.Any.fromFunction1(setVisible), showDecks = js.Any.fromFunction1(showDecks))
   
     __obj.asInstanceOf[XSidebarProvider]
   }

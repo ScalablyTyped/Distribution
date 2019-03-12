@@ -9,7 +9,7 @@ trait DescribeEndpointsResponse extends js.Object {
   /**
     * List of endpoints.
     */
-  var Endpoints: Endpoints
+  var Endpoints: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.Endpoints
 }
 
 object DescribeEndpointsResponse {

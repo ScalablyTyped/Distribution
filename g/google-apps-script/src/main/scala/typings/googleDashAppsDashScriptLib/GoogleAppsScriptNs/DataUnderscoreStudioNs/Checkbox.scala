@@ -15,12 +15,12 @@ trait Checkbox extends js.Object {
 object Checkbox {
   @scala.inline
   def apply(
-    setAllowOverride: js.Function1[scala.Boolean, Checkbox],
-    setHelpText: js.Function1[java.lang.String, Checkbox],
-    setId: js.Function1[java.lang.String, Checkbox],
-    setName: js.Function1[java.lang.String, Checkbox]
+    setAllowOverride: scala.Boolean => Checkbox,
+    setHelpText: java.lang.String => Checkbox,
+    setId: java.lang.String => Checkbox,
+    setName: java.lang.String => Checkbox
   ): Checkbox = {
-    val __obj = js.Dynamic.literal(setAllowOverride = setAllowOverride, setHelpText = setHelpText, setId = setId, setName = setName)
+    val __obj = js.Dynamic.literal(setAllowOverride = js.Any.fromFunction1(setAllowOverride), setHelpText = js.Any.fromFunction1(setHelpText), setId = js.Any.fromFunction1(setId), setName = js.Any.fromFunction1(setName))
   
     __obj.asInstanceOf[Checkbox]
   }

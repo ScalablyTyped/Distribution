@@ -47,14 +47,11 @@ trait Anon_AddUrl extends js.Object {
 object Anon_AddUrl {
   @scala.inline
   def apply(
-    addUrl: js.Function1[Anon_TitleTransition, js.Promise[scala.Unit]],
-    deleteAll: js.Function0[js.Promise[scala.Unit]],
-    deleteRange: js.Function1[Anon_EndTimeStartTime, js.Promise[scala.Unit]],
-    deleteUrl: js.Function1[Anon_Url, js.Promise[scala.Unit]],
-    getVisits: js.Function1[
-      Anon_Url, 
-      js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.historyNs.VisitItem]]
-    ],
+    addUrl: Anon_TitleTransition => js.Promise[scala.Unit],
+    deleteAll: () => js.Promise[scala.Unit],
+    deleteRange: Anon_EndTimeStartTime => js.Promise[scala.Unit],
+    deleteUrl: Anon_Url => js.Promise[scala.Unit],
+    getVisits: Anon_Url => js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.historyNs.VisitItem]],
     onTitleChanged: WebExtEvent[js.Function1[/* changed */ Anon_TitleUrlString, scala.Unit]],
     onVisitRemoved: WebExtEvent[js.Function1[/* removed */ Anon_AllHistory, scala.Unit]],
     onVisited: WebExtEvent[
@@ -63,12 +60,9 @@ object Anon_AddUrl {
         scala.Unit
       ]
     ],
-    search: js.Function1[
-      Anon_EndTime, 
-      js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.historyNs.HistoryItem]]
-    ]
+    search: Anon_EndTime => js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.historyNs.HistoryItem]]
   ): Anon_AddUrl = {
-    val __obj = js.Dynamic.literal(addUrl = addUrl, deleteAll = deleteAll, deleteRange = deleteRange, deleteUrl = deleteUrl, getVisits = getVisits, onTitleChanged = onTitleChanged, onVisitRemoved = onVisitRemoved, onVisited = onVisited, search = search)
+    val __obj = js.Dynamic.literal(addUrl = js.Any.fromFunction1(addUrl), deleteAll = js.Any.fromFunction0(deleteAll), deleteRange = js.Any.fromFunction1(deleteRange), deleteUrl = js.Any.fromFunction1(deleteUrl), getVisits = js.Any.fromFunction1(getVisits), onTitleChanged = onTitleChanged, onVisitRemoved = onVisitRemoved, onVisited = onVisited, search = js.Any.fromFunction1(search))
   
     __obj.asInstanceOf[Anon_AddUrl]
   }

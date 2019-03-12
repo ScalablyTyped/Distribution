@@ -39,7 +39,7 @@ trait ListBox
     * @see com.sun.star.awt.UnoControlListBoxModel.SelectedItems
     * @see com.sun.star.form.XReset
     */
-  var DefaultSelection: activexDashInteropLib.SafeArray[scala.Double] = js.native
+  var DefaultSelection: stdLib.SafeArray[scala.Double] = js.native
   /** specifies if the control has a drop down button. */
   var Dropdown: scala.Boolean = js.native
   /** determines whether the control is enabled or disabled. */
@@ -64,7 +64,7 @@ trait ListBox
   /** specifies the maximum line count displayed in the drop down box. */
   var LineCount: scala.Double = js.native
   /** contains the values associated to the strings to be displayed (which are specified by {@link com.sun.star.awt.UnoControlListBoxModel.StringItemList} ) */
-  var ListSource: activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  var ListSource: stdLib.SafeArray[java.lang.String] = js.native
   /**
     * defines how the mouse wheel can be used to scroll through the control's content.
     *
@@ -79,9 +79,9 @@ trait ListBox
   /** specifies that the content of the control cannot be modified by the user. */
   var ReadOnly: scala.Boolean = js.native
   /** specifies the sequence of selected items, identified by the position. */
-  var SelectedItems: activexDashInteropLib.SafeArray[scala.Double] = js.native
+  var SelectedItems: stdLib.SafeArray[scala.Double] = js.native
   /** specifies the list of items. */
-  var StringItemList: activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  var StringItemList: stdLib.SafeArray[java.lang.String] = js.native
   /** specifies that the control can be reached with the TAB key. */
   var Tabstop: scala.Boolean = js.native
   /** specifies the text color (RGB) of the control. */

@@ -39,13 +39,13 @@ object NodeStats {
     dev: scala.Double,
     gid: scala.Double,
     ino: scala.Double,
-    isBlockDevice: js.Function0[scala.Boolean],
-    isCharacterDevice: js.Function0[scala.Boolean],
-    isDirectory: js.Function0[scala.Boolean],
-    isFIFO: js.Function0[scala.Boolean],
-    isFile: js.Function0[scala.Boolean],
-    isSocket: js.Function0[scala.Boolean],
-    isSymbolicLink: js.Function0[scala.Boolean],
+    isBlockDevice: () => scala.Boolean,
+    isCharacterDevice: () => scala.Boolean,
+    isDirectory: () => scala.Boolean,
+    isFIFO: () => scala.Boolean,
+    isFile: () => scala.Boolean,
+    isSocket: () => scala.Boolean,
+    isSymbolicLink: () => scala.Boolean,
     mode: scala.Double,
     mtime: stdLib.Date,
     nlink: scala.Double,
@@ -54,7 +54,7 @@ object NodeStats {
     size: scala.Double,
     uid: scala.Double
   ): NodeStats = {
-    val __obj = js.Dynamic.literal(atime = atime, blksize = blksize, blocks = blocks, ctime = ctime, dev = dev, gid = gid, ino = ino, isBlockDevice = isBlockDevice, isCharacterDevice = isCharacterDevice, isDirectory = isDirectory, isFIFO = isFIFO, isFile = isFile, isSocket = isSocket, isSymbolicLink = isSymbolicLink, mode = mode, mtime = mtime, nlink = nlink, node = node, rdev = rdev, size = size, uid = uid)
+    val __obj = js.Dynamic.literal(atime = atime, blksize = blksize, blocks = blocks, ctime = ctime, dev = dev, gid = gid, ino = ino, isBlockDevice = js.Any.fromFunction0(isBlockDevice), isCharacterDevice = js.Any.fromFunction0(isCharacterDevice), isDirectory = js.Any.fromFunction0(isDirectory), isFIFO = js.Any.fromFunction0(isFIFO), isFile = js.Any.fromFunction0(isFile), isSocket = js.Any.fromFunction0(isSocket), isSymbolicLink = js.Any.fromFunction0(isSymbolicLink), mode = mode, mtime = mtime, nlink = nlink, node = node, rdev = rdev, size = size, uid = uid)
   
     __obj.asInstanceOf[NodeStats]
   }

@@ -16,7 +16,7 @@ trait XCommandInfo
     * obtains information for all supported commands.
     * @returns a sequence with information for all supported commands.
     */
-  val Commands: activexDashInteropLib.SafeArray[CommandInfo]
+  val Commands: stdLib.SafeArray[CommandInfo]
   /**
     * returns information for a specific command.
     * @param Handle specifies the handle of the requested command.
@@ -35,7 +35,7 @@ trait XCommandInfo
     * obtains information for all supported commands.
     * @returns a sequence with information for all supported commands.
     */
-  def getCommands(): activexDashInteropLib.SafeArray[CommandInfo]
+  def getCommands(): stdLib.SafeArray[CommandInfo]
   /**
     * checks whether a specific command is supported.
     * @param Handle specifies the handle of the requested command.
@@ -53,17 +53,17 @@ trait XCommandInfo
 object XCommandInfo {
   @scala.inline
   def apply(
-    Commands: activexDashInteropLib.SafeArray[CommandInfo],
-    acquire: js.Function0[scala.Unit],
-    getCommandInfoByHandle: js.Function1[scala.Double, CommandInfo],
-    getCommandInfoByName: js.Function1[java.lang.String, CommandInfo],
-    getCommands: js.Function0[activexDashInteropLib.SafeArray[CommandInfo]],
-    hasCommandByHandle: js.Function1[scala.Double, scala.Boolean],
-    hasCommandByName: js.Function1[java.lang.String, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    Commands: stdLib.SafeArray[CommandInfo],
+    acquire: () => scala.Unit,
+    getCommandInfoByHandle: scala.Double => CommandInfo,
+    getCommandInfoByName: java.lang.String => CommandInfo,
+    getCommands: () => stdLib.SafeArray[CommandInfo],
+    hasCommandByHandle: scala.Double => scala.Boolean,
+    hasCommandByName: java.lang.String => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCommandInfo = {
-    val __obj = js.Dynamic.literal(Commands = Commands, acquire = acquire, getCommandInfoByHandle = getCommandInfoByHandle, getCommandInfoByName = getCommandInfoByName, getCommands = getCommands, hasCommandByHandle = hasCommandByHandle, hasCommandByName = hasCommandByName, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Commands = Commands, acquire = js.Any.fromFunction0(acquire), getCommandInfoByHandle = js.Any.fromFunction1(getCommandInfoByHandle), getCommandInfoByName = js.Any.fromFunction1(getCommandInfoByName), getCommands = js.Any.fromFunction0(getCommands), hasCommandByHandle = js.Any.fromFunction1(hasCommandByHandle), hasCommandByName = js.Any.fromFunction1(hasCommandByName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCommandInfo]
   }

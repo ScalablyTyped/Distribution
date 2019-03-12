@@ -15,7 +15,7 @@ object ^ extends js.Object {
       /* tagName */ java.lang.String, 
       atAngularCompilerLib.srcMlUnderscoreParserTagsMod.TagDefinition
     ]
-  ): atAngularCompilerLib.srcMlUnderscoreParserLexerMod.TokenizeResult = js.native
+  ): TokenizeResult = js.native
   def tokenize(
     source: java.lang.String,
     url: java.lang.String,
@@ -23,7 +23,7 @@ object ^ extends js.Object {
       /* tagName */ java.lang.String, 
       atAngularCompilerLib.srcMlUnderscoreParserTagsMod.TagDefinition
     ],
-    options: atAngularCompilerLib.srcMlUnderscoreParserLexerMod.TokenizeOptions
-  ): atAngularCompilerLib.srcMlUnderscoreParserLexerMod.TokenizeResult = js.native
+    options: TokenizeOptions
+  ): TokenizeResult = js.native
 }
 

@@ -18,17 +18,17 @@ trait NightwatchAssertion extends js.Object {
 object NightwatchAssertion {
   @scala.inline
   def apply(
-    command: js.Function1[/* repeated */ js.Any, js.Any],
+    command: /* repeated */ js.Any => js.Any,
     expected: js.Function0[scala.Unit] | scala.Boolean,
     message: java.lang.String,
-    pass: js.Function1[/* repeated */ js.Any, js.Any],
-    value: js.Function1[/* repeated */ js.Any, js.Any],
+    pass: /* repeated */ js.Any => js.Any,
+    value: /* repeated */ js.Any => js.Any,
     api: NightwatchAPI = null,
-    failure: js.Function1[/* repeated */ js.Any, _] = null
+    failure: /* repeated */ js.Any => _ = null
   ): NightwatchAssertion = {
-    val __obj = js.Dynamic.literal(command = command, expected = expected.asInstanceOf[js.Any], message = message, pass = pass, value = value)
+    val __obj = js.Dynamic.literal(command = js.Any.fromFunction1(command), expected = expected.asInstanceOf[js.Any], message = message, pass = js.Any.fromFunction1(pass), value = js.Any.fromFunction1(value))
     if (api != null) __obj.updateDynamic("api")(api)
-    if (failure != null) __obj.updateDynamic("failure")(failure)
+    if (failure != null) __obj.updateDynamic("failure")(js.Any.fromFunction1(failure))
     __obj.asInstanceOf[NightwatchAssertion]
   }
 }

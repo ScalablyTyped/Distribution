@@ -27,11 +27,11 @@ object Device {
     major: java.lang.String,
     minor: java.lang.String,
     patch: java.lang.String,
-    toJSON: js.Function0[useragentLib.Anon_Family],
-    toString: js.Function0[java.lang.String],
-    toVersion: js.Function0[java.lang.String]
+    toJSON: () => useragentLib.Anon_Family,
+    toString: () => java.lang.String,
+    toVersion: () => java.lang.String
   ): Device = {
-    val __obj = js.Dynamic.literal(family = family, major = major, minor = minor, patch = patch, toJSON = toJSON, toString = toString, toVersion = toVersion)
+    val __obj = js.Dynamic.literal(family = family, major = major, minor = minor, patch = patch, toJSON = js.Any.fromFunction0(toJSON), toString = js.Any.fromFunction0(toString), toVersion = js.Any.fromFunction0(toVersion))
   
     __obj.asInstanceOf[Device]
   }

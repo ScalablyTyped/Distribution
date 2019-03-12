@@ -6,16 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HelmetHTMLBodyDatum extends js.Object {
-  def toComponent(): reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLBodyElement]
+  def toComponent(): reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLBodyElement]
 }
 
 object HelmetHTMLBodyDatum {
   @scala.inline
   def apply(
-    toComponent: js.Function0[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLBodyElement]],
-    toString: js.Function0[java.lang.String]
+    toComponent: () => reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLBodyElement],
+    toString: () => java.lang.String
   ): HelmetHTMLBodyDatum = {
-    val __obj = js.Dynamic.literal(toComponent = toComponent, toString = toString)
+    val __obj = js.Dynamic.literal(toComponent = js.Any.fromFunction0(toComponent), toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[HelmetHTMLBodyDatum]
   }

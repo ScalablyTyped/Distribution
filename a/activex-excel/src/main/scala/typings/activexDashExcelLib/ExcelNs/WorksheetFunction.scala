@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.WorksheetFunction")
 @js.native
 class WorksheetFunction protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Creator: XlCreator = js.native
   var `Excel.WorksheetFunction_typekey`: WorksheetFunction = js.native
   val Parent: js.Any = js.native

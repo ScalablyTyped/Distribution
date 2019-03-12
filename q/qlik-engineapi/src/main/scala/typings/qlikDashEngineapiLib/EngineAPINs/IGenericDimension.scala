@@ -63,17 +63,17 @@ trait IGenericDimension extends js.Object {
 object IGenericDimension {
   @scala.inline
   def apply(
-    applyPatches: js.Function1[js.Array[INxPatch], js.Promise[scala.Unit]],
-    getDimension: js.Function0[js.Promise[IGenericDimensionProperties]],
-    getInfo: js.Function0[js.Promise[INxInfo]],
-    getLayout: js.Function0[js.Promise[IGenericDimensionLayout]],
-    getLinkedObjects: js.Function0[js.Promise[js.Array[INxLinkedObjectInfo]]],
-    getProperties: js.Function0[js.Promise[IGenericDimensionProperties]],
-    publish: js.Function0[js.Promise[scala.Unit]],
-    setProperties: js.Function0[js.Promise[IGenericDimensionProperties]],
-    unPublish: js.Function0[js.Promise[scala.Unit]]
+    applyPatches: js.Array[INxPatch] => js.Promise[scala.Unit],
+    getDimension: () => js.Promise[IGenericDimensionProperties],
+    getInfo: () => js.Promise[INxInfo],
+    getLayout: () => js.Promise[IGenericDimensionLayout],
+    getLinkedObjects: () => js.Promise[js.Array[INxLinkedObjectInfo]],
+    getProperties: () => js.Promise[IGenericDimensionProperties],
+    publish: () => js.Promise[scala.Unit],
+    setProperties: () => js.Promise[IGenericDimensionProperties],
+    unPublish: () => js.Promise[scala.Unit]
   ): IGenericDimension = {
-    val __obj = js.Dynamic.literal(applyPatches = applyPatches, getDimension = getDimension, getInfo = getInfo, getLayout = getLayout, getLinkedObjects = getLinkedObjects, getProperties = getProperties, publish = publish, setProperties = setProperties, unPublish = unPublish)
+    val __obj = js.Dynamic.literal(applyPatches = js.Any.fromFunction1(applyPatches), getDimension = js.Any.fromFunction0(getDimension), getInfo = js.Any.fromFunction0(getInfo), getLayout = js.Any.fromFunction0(getLayout), getLinkedObjects = js.Any.fromFunction0(getLinkedObjects), getProperties = js.Any.fromFunction0(getProperties), publish = js.Any.fromFunction0(publish), setProperties = js.Any.fromFunction0(setProperties), unPublish = js.Any.fromFunction0(unPublish))
   
     __obj.asInstanceOf[IGenericDimension]
   }

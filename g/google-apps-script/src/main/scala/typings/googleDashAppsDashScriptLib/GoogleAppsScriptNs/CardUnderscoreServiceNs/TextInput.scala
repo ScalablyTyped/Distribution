@@ -19,16 +19,16 @@ trait TextInput extends js.Object {
 object TextInput {
   @scala.inline
   def apply(
-    setFieldName: js.Function1[java.lang.String, TextInput],
-    setHint: js.Function1[java.lang.String, TextInput],
-    setMultiline: js.Function1[scala.Boolean, TextInput],
-    setOnChangeAction: js.Function1[Action, TextInput],
-    setSuggestions: js.Function1[Suggestions, TextInput],
-    setSuggestionsAction: js.Function1[Action, TextInput],
-    setTitle: js.Function1[java.lang.String, TextInput],
-    setValue: js.Function1[java.lang.String, TextInput]
+    setFieldName: java.lang.String => TextInput,
+    setHint: java.lang.String => TextInput,
+    setMultiline: scala.Boolean => TextInput,
+    setOnChangeAction: Action => TextInput,
+    setSuggestions: Suggestions => TextInput,
+    setSuggestionsAction: Action => TextInput,
+    setTitle: java.lang.String => TextInput,
+    setValue: java.lang.String => TextInput
   ): TextInput = {
-    val __obj = js.Dynamic.literal(setFieldName = setFieldName, setHint = setHint, setMultiline = setMultiline, setOnChangeAction = setOnChangeAction, setSuggestions = setSuggestions, setSuggestionsAction = setSuggestionsAction, setTitle = setTitle, setValue = setValue)
+    val __obj = js.Dynamic.literal(setFieldName = js.Any.fromFunction1(setFieldName), setHint = js.Any.fromFunction1(setHint), setMultiline = js.Any.fromFunction1(setMultiline), setOnChangeAction = js.Any.fromFunction1(setOnChangeAction), setSuggestions = js.Any.fromFunction1(setSuggestions), setSuggestionsAction = js.Any.fromFunction1(setSuggestionsAction), setTitle = js.Any.fromFunction1(setTitle), setValue = js.Any.fromFunction1(setValue))
   
     __obj.asInstanceOf[TextInput]
   }

@@ -198,12 +198,7 @@ object ConnectionOptions {
     appName: java.lang.String = null,
     camelCaseColumns: js.UndefOr[scala.Boolean] = js.undefined,
     cancelTimeout: scala.Int | scala.Double = null,
-    columnNameReplacer: js.Function3[
-      /* columnName */ java.lang.String, 
-      /* index */ scala.Double, 
-      /* columnMetaData */ ColumnMetaData, 
-      java.lang.String
-    ] = null,
+    columnNameReplacer: (/* columnName */ java.lang.String, /* index */ scala.Double, /* columnMetaData */ ColumnMetaData) => java.lang.String = null,
     connectTimeout: scala.Int | scala.Double = null,
     connectionIsolationLevel: ISOLATION_LEVEL = null,
     connectionRetryInterval: scala.Int | scala.Double = null,
@@ -246,7 +241,7 @@ object ConnectionOptions {
     if (appName != null) __obj.updateDynamic("appName")(appName)
     if (!js.isUndefined(camelCaseColumns)) __obj.updateDynamic("camelCaseColumns")(camelCaseColumns)
     if (cancelTimeout != null) __obj.updateDynamic("cancelTimeout")(cancelTimeout.asInstanceOf[js.Any])
-    if (columnNameReplacer != null) __obj.updateDynamic("columnNameReplacer")(columnNameReplacer)
+    if (columnNameReplacer != null) __obj.updateDynamic("columnNameReplacer")(js.Any.fromFunction3(columnNameReplacer))
     if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
     if (connectionIsolationLevel != null) __obj.updateDynamic("connectionIsolationLevel")(connectionIsolationLevel)
     if (connectionRetryInterval != null) __obj.updateDynamic("connectionRetryInterval")(connectionRetryInterval.asInstanceOf[js.Any])

@@ -11,7 +11,7 @@ object ^ extends js.Object {
   val DAY_PERIODS_ABBREVIATED: timezonecompleteLib.Anon_Am = js.native
   val DAY_PERIODS_NARROW: timezonecompleteLib.Anon_Am = js.native
   val DAY_PERIODS_WIDE: timezonecompleteLib.Anon_Am = js.native
-  val DEFAULT_LOCALE: timezonecompleteLib.distLibLocaleMod.Locale = js.native
+  val DEFAULT_LOCALE: Locale = js.native
   val ERA_NAMES_ABBREVIATED: js.Tuple2[java.lang.String, java.lang.String] = js.native
   val ERA_NAMES_NARROW: js.Tuple2[java.lang.String, java.lang.String] = js.native
   val ERA_NAMES_WIDE: js.Tuple2[java.lang.String, java.lang.String] = js.native

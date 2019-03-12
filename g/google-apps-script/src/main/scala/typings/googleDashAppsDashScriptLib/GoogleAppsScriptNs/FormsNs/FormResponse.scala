@@ -23,20 +23,20 @@ trait FormResponse extends js.Object {
 object FormResponse {
   @scala.inline
   def apply(
-    getEditResponseUrl: js.Function0[java.lang.String],
-    getGradableItemResponses: js.Function0[js.Array[ItemResponse]],
-    getGradableResponseForItem: js.Function1[Item, ItemResponse],
-    getId: js.Function0[java.lang.String],
-    getItemResponses: js.Function0[js.Array[ItemResponse]],
-    getRespondentEmail: js.Function0[java.lang.String],
-    getResponseForItem: js.Function1[Item, ItemResponse],
-    getTimestamp: js.Function0[stdLib.Date],
-    submit: js.Function0[FormResponse],
-    toPrefilledUrl: js.Function0[java.lang.String],
-    withItemGrade: js.Function1[ItemResponse, FormResponse],
-    withItemResponse: js.Function1[ItemResponse, FormResponse]
+    getEditResponseUrl: () => java.lang.String,
+    getGradableItemResponses: () => js.Array[ItemResponse],
+    getGradableResponseForItem: Item => ItemResponse,
+    getId: () => java.lang.String,
+    getItemResponses: () => js.Array[ItemResponse],
+    getRespondentEmail: () => java.lang.String,
+    getResponseForItem: Item => ItemResponse,
+    getTimestamp: () => stdLib.Date,
+    submit: () => FormResponse,
+    toPrefilledUrl: () => java.lang.String,
+    withItemGrade: ItemResponse => FormResponse,
+    withItemResponse: ItemResponse => FormResponse
   ): FormResponse = {
-    val __obj = js.Dynamic.literal(getEditResponseUrl = getEditResponseUrl, getGradableItemResponses = getGradableItemResponses, getGradableResponseForItem = getGradableResponseForItem, getId = getId, getItemResponses = getItemResponses, getRespondentEmail = getRespondentEmail, getResponseForItem = getResponseForItem, getTimestamp = getTimestamp, submit = submit, toPrefilledUrl = toPrefilledUrl, withItemGrade = withItemGrade, withItemResponse = withItemResponse)
+    val __obj = js.Dynamic.literal(getEditResponseUrl = js.Any.fromFunction0(getEditResponseUrl), getGradableItemResponses = js.Any.fromFunction0(getGradableItemResponses), getGradableResponseForItem = js.Any.fromFunction1(getGradableResponseForItem), getId = js.Any.fromFunction0(getId), getItemResponses = js.Any.fromFunction0(getItemResponses), getRespondentEmail = js.Any.fromFunction0(getRespondentEmail), getResponseForItem = js.Any.fromFunction1(getResponseForItem), getTimestamp = js.Any.fromFunction0(getTimestamp), submit = js.Any.fromFunction0(submit), toPrefilledUrl = js.Any.fromFunction0(toPrefilledUrl), withItemGrade = js.Any.fromFunction1(withItemGrade), withItemResponse = js.Any.fromFunction1(withItemResponse))
   
     __obj.asInstanceOf[FormResponse]
   }

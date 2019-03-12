@@ -28,12 +28,12 @@ trait IPrimitive extends js.Object {
 object IPrimitive {
   @scala.inline
   def apply(
-    getCursor: js.Function0[java.lang.String],
-    getVisible: js.Function0[scala.Boolean],
-    setOptions: js.Function1[IPrimitiveOptions, scala.Unit],
+    getCursor: () => java.lang.String,
+    getVisible: () => scala.Boolean,
+    setOptions: IPrimitiveOptions => scala.Unit,
     metadata: js.Any = null
   ): IPrimitive = {
-    val __obj = js.Dynamic.literal(getCursor = getCursor, getVisible = getVisible, setOptions = setOptions)
+    val __obj = js.Dynamic.literal(getCursor = js.Any.fromFunction0(getCursor), getVisible = js.Any.fromFunction0(getVisible), setOptions = js.Any.fromFunction1(setOptions))
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     __obj.asInstanceOf[IPrimitive]
   }

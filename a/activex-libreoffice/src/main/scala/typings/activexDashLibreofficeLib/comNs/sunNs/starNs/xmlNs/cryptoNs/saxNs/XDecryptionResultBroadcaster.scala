@@ -31,13 +31,13 @@ trait XDecryptionResultBroadcaster
 object XDecryptionResultBroadcaster {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addDecryptionResultListener: js.Function1[XDecryptionResultListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeDecryptionResultListener: js.Function1[XDecryptionResultListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addDecryptionResultListener: XDecryptionResultListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeDecryptionResultListener: XDecryptionResultListener => scala.Unit
   ): XDecryptionResultBroadcaster = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addDecryptionResultListener = addDecryptionResultListener, queryInterface = queryInterface, release = release, removeDecryptionResultListener = removeDecryptionResultListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addDecryptionResultListener = js.Any.fromFunction1(addDecryptionResultListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeDecryptionResultListener = js.Any.fromFunction1(removeDecryptionResultListener))
   
     __obj.asInstanceOf[XDecryptionResultBroadcaster]
   }

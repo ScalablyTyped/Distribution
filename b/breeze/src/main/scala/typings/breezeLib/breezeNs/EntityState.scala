@@ -22,12 +22,12 @@ object EntityState {
     Detached: EntityStateSymbol,
     Modified: EntityStateSymbol,
     Unchanged: EntityStateSymbol,
-    contains: js.Function1[js.Any, scala.Boolean],
-    fromName: js.Function1[java.lang.String, breezeLib.breezeNs.coreNs.EnumSymbol],
-    getNames: js.Function0[js.Array[java.lang.String]],
-    getSymbols: js.Function0[js.Array[breezeLib.breezeNs.coreNs.EnumSymbol]]
+    contains: js.Any => scala.Boolean,
+    fromName: java.lang.String => breezeLib.breezeNs.coreNs.EnumSymbol,
+    getNames: () => js.Array[java.lang.String],
+    getSymbols: () => js.Array[breezeLib.breezeNs.coreNs.EnumSymbol]
   ): EntityState = {
-    val __obj = js.Dynamic.literal(Added = Added, Deleted = Deleted, Detached = Detached, Modified = Modified, Unchanged = Unchanged, contains = contains, fromName = fromName, getNames = getNames, getSymbols = getSymbols)
+    val __obj = js.Dynamic.literal(Added = Added, Deleted = Deleted, Detached = Detached, Modified = Modified, Unchanged = Unchanged, contains = js.Any.fromFunction1(contains), fromName = js.Any.fromFunction1(fromName), getNames = js.Any.fromFunction0(getNames), getSymbols = js.Any.fromFunction0(getSymbols))
   
     __obj.asInstanceOf[EntityState]
   }

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("knex", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(config: knexLib.knexMod.KnexNs.Config): knexLib.knexMod.Knex = js.native
+  def apply(config: knexLib.knexMod.KnexNs.Config): Knex = js.native
 }
 

@@ -35,13 +35,13 @@ object RootCloseWrapperProps {
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     event: reactDashOverlaysLib.reactDashOverlaysLibStrings.click | reactDashOverlaysLib.reactDashOverlaysLibStrings.mousedown = null,
-    onRootClose: js.Function1[/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], scala.Unit] = null
+    onRootClose: /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event] => scala.Unit = null
   ): RootCloseWrapperProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (onRootClose != null) __obj.updateDynamic("onRootClose")(onRootClose)
+    if (onRootClose != null) __obj.updateDynamic("onRootClose")(js.Any.fromFunction1(onRootClose))
     __obj.asInstanceOf[RootCloseWrapperProps]
   }
 }

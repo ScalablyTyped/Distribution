@@ -25,16 +25,16 @@ object Anon_AscendingKey {
     maximumCount: scala.Int | scala.Double = null,
     maximumValue: scala.Int | scala.Double = null,
     minimumValue: scala.Int | scala.Double = null,
-    onEnd: js.Function2[/* totalCount */ scala.Double, /* key */ java.lang.String, scala.Unit] = null,
-    onStart: js.Function2[/* totalCount */ scala.Double, /* key */ java.lang.String, scala.Unit] = null
+    onEnd: (/* totalCount */ scala.Double, /* key */ java.lang.String) => scala.Unit = null,
+    onStart: (/* totalCount */ scala.Double, /* key */ java.lang.String) => scala.Unit = null
   ): Anon_AscendingKey = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending)
     if (maximumCount != null) __obj.updateDynamic("maximumCount")(maximumCount.asInstanceOf[js.Any])
     if (maximumValue != null) __obj.updateDynamic("maximumValue")(maximumValue.asInstanceOf[js.Any])
     if (minimumValue != null) __obj.updateDynamic("minimumValue")(minimumValue.asInstanceOf[js.Any])
-    if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd)
-    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
+    if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction2(onEnd))
+    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction2(onStart))
     __obj.asInstanceOf[Anon_AscendingKey]
   }
 }

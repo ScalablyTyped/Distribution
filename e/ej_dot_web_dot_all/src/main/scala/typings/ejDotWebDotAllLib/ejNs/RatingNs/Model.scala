@@ -100,11 +100,11 @@ object Model {
   @scala.inline
   def apply(
     allowReset: js.UndefOr[scala.Boolean] = js.undefined,
-    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
-    click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    change: /* e */ ChangeEventArgs => scala.Unit = null,
+    click: /* e */ ClickEventArgs => scala.Unit = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     height: java.lang.String = null,
@@ -112,9 +112,9 @@ object Model {
     incrementStep: scala.Int | scala.Double = null,
     maxValue: scala.Int | scala.Double = null,
     minValue: scala.Int | scala.Double = null,
-    mousemove: js.Function1[/* e */ MousemoveEventArgs, scala.Unit] = null,
-    mouseout: js.Function1[/* e */ MouseoutEventArgs, scala.Unit] = null,
-    mouseover: js.Function1[/* e */ MouseoverEventArgs, scala.Unit] = null,
+    mousemove: /* e */ MousemoveEventArgs => scala.Unit = null,
+    mouseout: /* e */ MouseoutEventArgs => scala.Unit = null,
+    mouseover: /* e */ MouseoverEventArgs => scala.Unit = null,
     orientation: ejDotWebDotAllLib.ejNs.Orientation | java.lang.String = null,
     precision: Precision | java.lang.String = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
@@ -126,11 +126,11 @@ object Model {
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowReset)) __obj.updateDynamic("allowReset")(allowReset)
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (height != null) __obj.updateDynamic("height")(height)
@@ -138,9 +138,9 @@ object Model {
     if (incrementStep != null) __obj.updateDynamic("incrementStep")(incrementStep.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (mousemove != null) __obj.updateDynamic("mousemove")(mousemove)
-    if (mouseout != null) __obj.updateDynamic("mouseout")(mouseout)
-    if (mouseover != null) __obj.updateDynamic("mouseover")(mouseover)
+    if (mousemove != null) __obj.updateDynamic("mousemove")(js.Any.fromFunction1(mousemove))
+    if (mouseout != null) __obj.updateDynamic("mouseout")(js.Any.fromFunction1(mouseout))
+    if (mouseover != null) __obj.updateDynamic("mouseover")(js.Any.fromFunction1(mouseover))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)

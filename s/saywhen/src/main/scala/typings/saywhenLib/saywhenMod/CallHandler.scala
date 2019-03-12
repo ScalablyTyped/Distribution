@@ -12,8 +12,8 @@ trait CallHandler[T /* <: saywhenLib.Func */] extends js.Object {
 
 object CallHandler {
   @scala.inline
-  def apply[T /* <: saywhenLib.Func */](isCalled: Proxy[T], isCalledWith: js.Function1[/* repeated */ js.Any, Proxy[T]]): CallHandler[T] = {
-    val __obj = js.Dynamic.literal(isCalled = isCalled, isCalledWith = isCalledWith)
+  def apply[T /* <: saywhenLib.Func */](isCalled: Proxy[T], isCalledWith: /* repeated */ js.Any => Proxy[T]): CallHandler[T] = {
+    val __obj = js.Dynamic.literal(isCalled = isCalled, isCalledWith = js.Any.fromFunction1(isCalledWith))
   
     __obj.asInstanceOf[CallHandler[T]]
   }

@@ -16,9 +16,9 @@ object CustomEventHandler {
   def apply(
     destroy: js.Function,
     haltEventListeners: js.Array[java.lang.String],
-    init: js.Function1[CustomEventOptions, scala.Unit]
+    init: CustomEventOptions => scala.Unit
   ): CustomEventHandler = {
-    val __obj = js.Dynamic.literal(destroy = destroy, haltEventListeners = haltEventListeners, init = init)
+    val __obj = js.Dynamic.literal(destroy = destroy, haltEventListeners = haltEventListeners, init = js.Any.fromFunction1(init))
   
     __obj.asInstanceOf[CustomEventHandler]
   }

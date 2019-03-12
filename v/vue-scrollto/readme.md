@@ -1,5 +1,5 @@
 ```
-// Type definitions for vue-scrollto 2.7
+// Type definitions for vue-scrollto 2.14
 // Project: https://github.com/rigor789/vue-scrollto#readme
 // Definitions by: Kovács Vince <https://github.com/vincekovacs>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

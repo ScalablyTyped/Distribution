@@ -12,13 +12,10 @@ trait TwixSimpleFormatOptions extends js.Object {
 
 object TwixSimpleFormatOptions {
   @scala.inline
-  def apply(
-    allDay: java.lang.String = null,
-    template: js.Function2[/* left */ js.Any, /* right */ js.Any, _] = null
-  ): TwixSimpleFormatOptions = {
+  def apply(allDay: java.lang.String = null, template: (/* left */ js.Any, /* right */ js.Any) => _ = null): TwixSimpleFormatOptions = {
     val __obj = js.Dynamic.literal()
     if (allDay != null) __obj.updateDynamic("allDay")(allDay)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (template != null) __obj.updateDynamic("template")(js.Any.fromFunction2(template))
     __obj.asInstanceOf[TwixSimpleFormatOptions]
   }
 }

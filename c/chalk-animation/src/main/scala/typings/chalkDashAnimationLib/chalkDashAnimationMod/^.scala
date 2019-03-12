@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("chalk-animation", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val glitch: chalkDashAnimationLib.chalkDashAnimationMod.AnimationFn = js.native
-  val karaoke: chalkDashAnimationLib.chalkDashAnimationMod.AnimationFn = js.native
-  val neon: chalkDashAnimationLib.chalkDashAnimationMod.AnimationFn = js.native
-  val pulse: chalkDashAnimationLib.chalkDashAnimationMod.AnimationFn = js.native
-  val radar: chalkDashAnimationLib.chalkDashAnimationMod.AnimationFn = js.native
-  val rainbow: chalkDashAnimationLib.chalkDashAnimationMod.AnimationFn = js.native
+  val glitch: AnimationFn = js.native
+  val karaoke: AnimationFn = js.native
+  val neon: AnimationFn = js.native
+  val pulse: AnimationFn = js.native
+  val radar: AnimationFn = js.native
+  val rainbow: AnimationFn = js.native
 }
 

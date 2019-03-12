@@ -78,12 +78,12 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    beforeChange: js.Function1[/* e */ BeforeChangeEventArgs, scala.Unit] = null,
-    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    beforeChange: /* e */ BeforeChangeEventArgs => scala.Unit = null,
+    change: /* e */ ChangeEventArgs => scala.Unit = null,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -98,12 +98,12 @@ object Model {
     value: java.lang.String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (beforeChange != null) __obj.updateDynamic("beforeChange")(beforeChange)
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (beforeChange != null) __obj.updateDynamic("beforeChange")(js.Any.fromFunction1(beforeChange))
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)

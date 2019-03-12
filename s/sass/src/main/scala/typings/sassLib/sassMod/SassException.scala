@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SassException
-  extends nodeLib.Error {
+  extends stdLib.Error {
   /**
     * The column number of error.
     */
@@ -26,10 +26,6 @@ trait SassException
     */
   var line: scala.Double
   /**
-    * The error message.
-    */
-  var message: java.lang.String
-  /**
     * The status code.
     */
   var status: scala.Double
@@ -43,10 +39,11 @@ object SassException {
     formatted: java.lang.String,
     line: scala.Double,
     message: java.lang.String,
+    name: java.lang.String,
     status: scala.Double,
     stack: java.lang.String = null
   ): SassException = {
-    val __obj = js.Dynamic.literal(column = column, file = file, formatted = formatted, line = line, message = message, status = status)
+    val __obj = js.Dynamic.literal(column = column, file = file, formatted = formatted, line = line, message = message, name = name, status = status)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[SassException]
   }

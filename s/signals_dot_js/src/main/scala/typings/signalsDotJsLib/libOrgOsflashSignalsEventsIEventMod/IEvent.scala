@@ -21,12 +21,12 @@ object IEvent {
   @scala.inline
   def apply(
     bubbles: scala.Boolean,
-    clone: js.Function0[IEvent],
+    clone: () => IEvent,
     currentTarget: js.Object,
     signal: signalsDotJsLib.libOrgOsflashSignalsIPrioritySignalMod.IPrioritySignal,
     target: js.Object
   ): IEvent = {
-    val __obj = js.Dynamic.literal(bubbles = bubbles, clone = clone, currentTarget = currentTarget, signal = signal, target = target)
+    val __obj = js.Dynamic.literal(bubbles = bubbles, clone = js.Any.fromFunction0(clone), currentTarget = currentTarget, signal = signal, target = target)
   
     __obj.asInstanceOf[IEvent]
   }

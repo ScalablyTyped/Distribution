@@ -100,12 +100,7 @@ object ^ extends js.Object {
     * The system-wide token will be the same for all sessions on this device (device in the sense of e.g. a Chromebook).
     * @param callback Invoked by getTokens with the list of available Tokens.
     */
-  def getTokens(
-    callback: js.Function1[
-      /* tokens */ js.Array[chromeDashAppsLib.chromeNs.enterpriseNs.platformKeysNs.Token], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def getTokens(callback: js.Function1[/* tokens */ js.Array[Token], scala.Unit]): scala.Unit = js.native
   /**
     * Imports certificate to the given token if the certified key is already stored in this token.
     * After a successful certification request, this function should be used to store the obtained

@@ -92,39 +92,39 @@ object PushBehavior {
   @scala.inline
   def apply(
     active: scala.Boolean,
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    addItem: js.Function1[js.Any, scala.Unit],
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    addItem: js.Any => scala.Unit,
     angle: scala.Double,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     bubbleParent: scala.Boolean,
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getActive: js.Function0[scala.Boolean],
-    getAngle: js.Function0[scala.Double],
-    getApiName: js.Function0[java.lang.String],
-    getBubbleParent: js.Function0[scala.Boolean],
-    getItems: js.Function0[js.Array[titaniumLib.TitaniumNs.UINs.View]],
-    getMagnitude: js.Function0[scala.Double],
-    getPushDirection: js.Function0[titaniumLib.Point],
-    getPushMode: js.Function0[scala.Double],
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
+    getActive: () => scala.Boolean,
+    getAngle: () => scala.Double,
+    getApiName: () => java.lang.String,
+    getBubbleParent: () => scala.Boolean,
+    getItems: () => js.Array[titaniumLib.TitaniumNs.UINs.View],
+    getMagnitude: () => scala.Double,
+    getPushDirection: () => titaniumLib.Point,
+    getPushMode: () => scala.Double,
     items: js.Array[titaniumLib.TitaniumNs.UINs.View],
     magnitude: scala.Double,
     pushDirection: titaniumLib.Point,
     pushMode: scala.Double,
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    removeItem: js.Function1[js.Any, scala.Unit],
-    setActive: js.Function1[scala.Boolean, scala.Unit],
-    setAngle: js.Function1[scala.Double, scala.Unit],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
-    setMagnitude: js.Function1[scala.Double, scala.Unit],
-    setPushDirection: js.Function1[titaniumLib.Point, scala.Unit],
-    setPushMode: js.Function1[scala.Double, scala.Unit],
-    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    removeItem: js.Any => scala.Unit,
+    setActive: scala.Boolean => scala.Unit,
+    setAngle: scala.Double => scala.Unit,
+    setBubbleParent: scala.Boolean => scala.Unit,
+    setMagnitude: scala.Double => scala.Unit,
+    setPushDirection: titaniumLib.Point => scala.Unit,
+    setPushMode: scala.Double => scala.Unit,
+    getLifecycleContainer: () => titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
   ): PushBehavior = {
-    val __obj = js.Dynamic.literal(active = active, addEventListener = addEventListener, addItem = addItem, angle = angle, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, getActive = getActive, getAngle = getAngle, getApiName = getApiName, getBubbleParent = getBubbleParent, getItems = getItems, getMagnitude = getMagnitude, getPushDirection = getPushDirection, getPushMode = getPushMode, items = items, magnitude = magnitude, pushDirection = pushDirection, pushMode = pushMode, removeEventListener = removeEventListener, removeItem = removeItem, setActive = setActive, setAngle = setAngle, setBubbleParent = setBubbleParent, setMagnitude = setMagnitude, setPushDirection = setPushDirection, setPushMode = setPushMode)
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    val __obj = js.Dynamic.literal(active = active, addEventListener = js.Any.fromFunction2(addEventListener), addItem = js.Any.fromFunction1(addItem), angle = angle, apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, fireEvent = js.Any.fromFunction2(fireEvent), getActive = js.Any.fromFunction0(getActive), getAngle = js.Any.fromFunction0(getAngle), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getItems = js.Any.fromFunction0(getItems), getMagnitude = js.Any.fromFunction0(getMagnitude), getPushDirection = js.Any.fromFunction0(getPushDirection), getPushMode = js.Any.fromFunction0(getPushMode), items = items, magnitude = magnitude, pushDirection = pushDirection, pushMode = pushMode, removeEventListener = js.Any.fromFunction2(removeEventListener), removeItem = js.Any.fromFunction1(removeItem), setActive = js.Any.fromFunction1(setActive), setAngle = js.Any.fromFunction1(setAngle), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setMagnitude = js.Any.fromFunction1(setMagnitude), setPushDirection = js.Any.fromFunction1(setPushDirection), setPushMode = js.Any.fromFunction1(setPushMode))
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
     __obj.asInstanceOf[PushBehavior]

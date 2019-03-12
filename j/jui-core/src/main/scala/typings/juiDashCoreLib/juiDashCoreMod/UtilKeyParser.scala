@@ -16,13 +16,13 @@ trait UtilKeyParser extends js.Object {
 object UtilKeyParser {
   @scala.inline
   def apply(
-    changeIndex: js.Function3[java.lang.String, java.lang.String, java.lang.String, java.lang.String],
-    getIndexList: js.Function1[java.lang.String, scala.Boolean],
-    getNextIndex: js.Function1[java.lang.String, java.lang.String],
-    getParentIndex: js.Function1[java.lang.String, java.lang.String],
-    isIndexDepth: js.Function1[java.lang.String, scala.Boolean]
+    changeIndex: (java.lang.String, java.lang.String, java.lang.String) => java.lang.String,
+    getIndexList: java.lang.String => scala.Boolean,
+    getNextIndex: java.lang.String => java.lang.String,
+    getParentIndex: java.lang.String => java.lang.String,
+    isIndexDepth: java.lang.String => scala.Boolean
   ): UtilKeyParser = {
-    val __obj = js.Dynamic.literal(changeIndex = changeIndex, getIndexList = getIndexList, getNextIndex = getNextIndex, getParentIndex = getParentIndex, isIndexDepth = isIndexDepth)
+    val __obj = js.Dynamic.literal(changeIndex = js.Any.fromFunction3(changeIndex), getIndexList = js.Any.fromFunction1(getIndexList), getNextIndex = js.Any.fromFunction1(getNextIndex), getParentIndex = js.Any.fromFunction1(getParentIndex), isIndexDepth = js.Any.fromFunction1(isIndexDepth))
   
     __obj.asInstanceOf[UtilKeyParser]
   }

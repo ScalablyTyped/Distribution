@@ -47,22 +47,22 @@ trait Binding extends js.Object {
 object Binding {
   @scala.inline
   def apply(
-    bind: js.Function1[Scope, scala.Unit],
+    bind: Scope => scala.Unit,
     isBound: scala.Boolean,
     source: Scope,
-    unbind: js.Function0[scala.Unit],
-    callSource: js.Function1[/* event */ js.Any, _] = null,
+    unbind: () => scala.Unit,
+    callSource: /* event */ js.Any => _ = null,
     mode: bindingMode = null,
     sourceExpression: Expression = null,
-    updateSource: js.Function1[/* value */ js.Any, scala.Unit] = null,
-    updateTarget: js.Function1[/* value */ js.Any, scala.Unit] = null
+    updateSource: /* value */ js.Any => scala.Unit = null,
+    updateTarget: /* value */ js.Any => scala.Unit = null
   ): Binding = {
-    val __obj = js.Dynamic.literal(bind = bind, isBound = isBound, source = source, unbind = unbind)
-    if (callSource != null) __obj.updateDynamic("callSource")(callSource)
+    val __obj = js.Dynamic.literal(bind = js.Any.fromFunction1(bind), isBound = isBound, source = source, unbind = js.Any.fromFunction0(unbind))
+    if (callSource != null) __obj.updateDynamic("callSource")(js.Any.fromFunction1(callSource))
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (sourceExpression != null) __obj.updateDynamic("sourceExpression")(sourceExpression)
-    if (updateSource != null) __obj.updateDynamic("updateSource")(updateSource)
-    if (updateTarget != null) __obj.updateDynamic("updateTarget")(updateTarget)
+    if (updateSource != null) __obj.updateDynamic("updateSource")(js.Any.fromFunction1(updateSource))
+    if (updateTarget != null) __obj.updateDynamic("updateTarget")(js.Any.fromFunction1(updateTarget))
     __obj.asInstanceOf[Binding]
   }
 }

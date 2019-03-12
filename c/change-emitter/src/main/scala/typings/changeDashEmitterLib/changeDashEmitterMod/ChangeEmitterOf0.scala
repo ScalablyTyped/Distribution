@@ -12,8 +12,8 @@ trait ChangeEmitterOf0 extends js.Object {
 
 object ChangeEmitterOf0 {
   @scala.inline
-  def apply(emit: js.Function0[scala.Unit], listen: js.Function1[ListenerOf0, Unlisten]): ChangeEmitterOf0 = {
-    val __obj = js.Dynamic.literal(emit = emit, listen = listen)
+  def apply(emit: () => scala.Unit, listen: ListenerOf0 => Unlisten): ChangeEmitterOf0 = {
+    val __obj = js.Dynamic.literal(emit = js.Any.fromFunction0(emit), listen = js.Any.fromFunction1(listen))
   
     __obj.asInstanceOf[ChangeEmitterOf0]
   }

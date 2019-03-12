@@ -40,21 +40,21 @@ object ^ extends js.Object {
     defaultRealm: java.lang.String,
     callback: js.Function1[/* err */ java.lang.String, _]
   ): scala.Unit = js.native
-  def initializeClient(service: java.lang.String): js.Promise[kerberosLib.kerberosMod.KerberosClient] = js.native
+  def initializeClient(service: java.lang.String): js.Promise[KerberosClient] = js.native
   def initializeClient(
     service: java.lang.String,
-    callback: js.Function2[/* err */ java.lang.String, /* client */ kerberosLib.kerberosMod.KerberosClient, _]
+    callback: js.Function2[/* err */ java.lang.String, /* client */ KerberosClient, _]
   ): scala.Unit = js.native
-  def initializeClient(service: java.lang.String, options: kerberosLib.kerberosMod.InitializeClientOptions): js.Promise[kerberosLib.kerberosMod.KerberosClient] = js.native
+  def initializeClient(service: java.lang.String, options: InitializeClientOptions): js.Promise[KerberosClient] = js.native
   def initializeClient(
     service: java.lang.String,
-    options: kerberosLib.kerberosMod.InitializeClientOptions,
-    callback: js.Function2[/* err */ java.lang.String, /* client */ kerberosLib.kerberosMod.KerberosClient, _]
+    options: InitializeClientOptions,
+    callback: js.Function2[/* err */ java.lang.String, /* client */ KerberosClient, _]
   ): scala.Unit = js.native
-  def initializeServer(service: java.lang.String): js.Promise[kerberosLib.kerberosMod.KerberosServer] = js.native
+  def initializeServer(service: java.lang.String): js.Promise[KerberosServer] = js.native
   def initializeServer(
     service: java.lang.String,
-    callback: js.Function2[/* err */ java.lang.String, /* server */ kerberosLib.kerberosMod.KerberosServer, _]
+    callback: js.Function2[/* err */ java.lang.String, /* server */ KerberosServer, _]
   ): scala.Unit = js.native
   def principalDetails(service: java.lang.String, hostname: java.lang.String): js.Promise[java.lang.String] = js.native
   def principalDetails(

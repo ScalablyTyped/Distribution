@@ -14,7 +14,7 @@ trait SharedIniFileCredentialsOptions extends js.Object {
     js.Function2[
       /* mfaSerial */ java.lang.String, 
       /* callback */ js.Function2[
-        /* err */ js.UndefOr[nodeLib.Error], 
+        /* err */ js.UndefOr[stdLib.Error], 
         /* token */ js.UndefOr[java.lang.String], 
         scala.Unit
       ], 
@@ -30,22 +30,18 @@ object SharedIniFileCredentialsOptions {
     filename: java.lang.String = null,
     httpOptions: awsDashSdkLib.libConfigMod.HTTPOptions = null,
     profile: java.lang.String = null,
-    tokenCodeFn: js.Function2[
-      /* mfaSerial */ java.lang.String, 
-      /* callback */ js.Function2[
-        /* err */ js.UndefOr[nodeLib.Error], 
-        /* token */ js.UndefOr[java.lang.String], 
-        scala.Unit
-      ], 
+    tokenCodeFn: (/* mfaSerial */ java.lang.String, /* callback */ js.Function2[
+      /* err */ js.UndefOr[stdLib.Error], 
+      /* token */ js.UndefOr[java.lang.String], 
       scala.Unit
-    ] = null
+    ]) => scala.Unit = null
   ): SharedIniFileCredentialsOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(disableAssumeRole)) __obj.updateDynamic("disableAssumeRole")(disableAssumeRole)
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (httpOptions != null) __obj.updateDynamic("httpOptions")(httpOptions)
     if (profile != null) __obj.updateDynamic("profile")(profile)
-    if (tokenCodeFn != null) __obj.updateDynamic("tokenCodeFn")(tokenCodeFn)
+    if (tokenCodeFn != null) __obj.updateDynamic("tokenCodeFn")(js.Any.fromFunction2(tokenCodeFn))
     __obj.asInstanceOf[SharedIniFileCredentialsOptions]
   }
 }

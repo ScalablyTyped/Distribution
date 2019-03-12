@@ -23,20 +23,20 @@ trait DocsListDialog extends js.Object {
 object DocsListDialog {
   @scala.inline
   def apply(
-    addCloseHandler: js.Function1[Handler, DocsListDialog],
-    addSelectionHandler: js.Function1[Handler, DocsListDialog],
-    addView: js.Function1[FileType, DocsListDialog],
-    getId: js.Function0[java.lang.String],
-    getType: js.Function0[java.lang.String],
-    setDialogTitle: js.Function1[java.lang.String, DocsListDialog],
-    setHeight: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, DocsListDialog],
-    setInitialView: js.Function1[FileType, DocsListDialog],
-    setMultiSelectEnabled: js.Function1[scala.Boolean, DocsListDialog],
-    setOAuthToken: js.Function1[java.lang.String, DocsListDialog],
-    setWidth: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, DocsListDialog],
-    showDocsPicker: js.Function0[DocsListDialog]
+    addCloseHandler: Handler => DocsListDialog,
+    addSelectionHandler: Handler => DocsListDialog,
+    addView: FileType => DocsListDialog,
+    getId: () => java.lang.String,
+    getType: () => java.lang.String,
+    setDialogTitle: java.lang.String => DocsListDialog,
+    setHeight: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => DocsListDialog,
+    setInitialView: FileType => DocsListDialog,
+    setMultiSelectEnabled: scala.Boolean => DocsListDialog,
+    setOAuthToken: java.lang.String => DocsListDialog,
+    setWidth: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => DocsListDialog,
+    showDocsPicker: () => DocsListDialog
   ): DocsListDialog = {
-    val __obj = js.Dynamic.literal(addCloseHandler = addCloseHandler, addSelectionHandler = addSelectionHandler, addView = addView, getId = getId, getType = getType, setDialogTitle = setDialogTitle, setHeight = setHeight, setInitialView = setInitialView, setMultiSelectEnabled = setMultiSelectEnabled, setOAuthToken = setOAuthToken, setWidth = setWidth, showDocsPicker = showDocsPicker)
+    val __obj = js.Dynamic.literal(addCloseHandler = js.Any.fromFunction1(addCloseHandler), addSelectionHandler = js.Any.fromFunction1(addSelectionHandler), addView = js.Any.fromFunction1(addView), getId = js.Any.fromFunction0(getId), getType = js.Any.fromFunction0(getType), setDialogTitle = js.Any.fromFunction1(setDialogTitle), setHeight = js.Any.fromFunction1(setHeight), setInitialView = js.Any.fromFunction1(setInitialView), setMultiSelectEnabled = js.Any.fromFunction1(setMultiSelectEnabled), setOAuthToken = js.Any.fromFunction1(setOAuthToken), setWidth = js.Any.fromFunction1(setWidth), showDocsPicker = js.Any.fromFunction0(showDocsPicker))
   
     __obj.asInstanceOf[DocsListDialog]
   }

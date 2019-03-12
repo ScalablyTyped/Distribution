@@ -80,33 +80,21 @@ object ojThematicMapSettableProperties {
     translations: atOracleOraclejetLib.Anon_ComponentNameLabelAndValue,
     zooming: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.none,
     areaData: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K1, D1] = null,
-    focusRenderer: js.Function1[
-      /* context */ atOracleOraclejetLib.ojthematicmapMod.ojThematicMapNs.RendererContext[K1, K2, K3, D1, D2, D3], 
-      atOracleOraclejetLib.Anon_InsertSVGElement | scala.Unit
-    ] = null,
-    hoverRenderer: js.Function1[
-      /* context */ atOracleOraclejetLib.ojthematicmapMod.ojThematicMapNs.RendererContext[K1, K2, K3, D1, D2, D3], 
-      atOracleOraclejetLib.Anon_InsertSVGElement | scala.Unit
-    ] = null,
+    focusRenderer: /* context */ atOracleOraclejetLib.ojthematicmapMod.ojThematicMapNs.RendererContext[K1, K2, K3, D1, D2, D3] => atOracleOraclejetLib.Anon_InsertSVGElement | scala.Unit = null,
+    hoverRenderer: /* context */ atOracleOraclejetLib.ojthematicmapMod.ojThematicMapNs.RendererContext[K1, K2, K3, D1, D2, D3] => atOracleOraclejetLib.Anon_InsertSVGElement | scala.Unit = null,
     linkData: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K2, D2] = null,
     markerData: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K3, D3] = null,
-    renderer: js.Function1[
-      /* context */ atOracleOraclejetLib.ojthematicmapMod.ojThematicMapNs.RendererContext[K1, K2, K3, D1, D2, D3], 
-      atOracleOraclejetLib.Anon_InsertSVGElement | scala.Unit
-    ] = null,
-    selectionRenderer: js.Function1[
-      /* context */ atOracleOraclejetLib.ojthematicmapMod.ojThematicMapNs.RendererContext[K1, K2, K3, D1, D2, D3], 
-      atOracleOraclejetLib.Anon_InsertSVGElement | scala.Unit
-    ] = null
+    renderer: /* context */ atOracleOraclejetLib.ojthematicmapMod.ojThematicMapNs.RendererContext[K1, K2, K3, D1, D2, D3] => atOracleOraclejetLib.Anon_InsertSVGElement | scala.Unit = null,
+    selectionRenderer: /* context */ atOracleOraclejetLib.ojthematicmapMod.ojThematicMapNs.RendererContext[K1, K2, K3, D1, D2, D3] => atOracleOraclejetLib.Anon_InsertSVGElement | scala.Unit = null
   ): ojThematicMapSettableProperties[K1, K2, K3, D1, D2, D3] = {
     val __obj = js.Dynamic.literal(animationDuration = animationDuration, animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], as = as, hiddenCategories = hiddenCategories, highlightMatch = highlightMatch.asInstanceOf[js.Any], highlightedCategories = highlightedCategories, hoverBehavior = hoverBehavior.asInstanceOf[js.Any], initialZooming = initialZooming.asInstanceOf[js.Any], isolatedItem = isolatedItem.asInstanceOf[js.Any], labelDisplay = labelDisplay.asInstanceOf[js.Any], labelType = labelType.asInstanceOf[js.Any], mapProvider = mapProvider, markerZoomBehavior = markerZoomBehavior.asInstanceOf[js.Any], maxZoom = maxZoom, panning = panning.asInstanceOf[js.Any], selection = selection, selectionMode = selectionMode.asInstanceOf[js.Any], styleDefaults = styleDefaults, tooltip = tooltip, tooltipDisplay = tooltipDisplay.asInstanceOf[js.Any], touchResponse = touchResponse.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations, zooming = zooming.asInstanceOf[js.Any])
     if (areaData != null) __obj.updateDynamic("areaData")(areaData)
-    if (focusRenderer != null) __obj.updateDynamic("focusRenderer")(focusRenderer)
-    if (hoverRenderer != null) __obj.updateDynamic("hoverRenderer")(hoverRenderer)
+    if (focusRenderer != null) __obj.updateDynamic("focusRenderer")(js.Any.fromFunction1(focusRenderer))
+    if (hoverRenderer != null) __obj.updateDynamic("hoverRenderer")(js.Any.fromFunction1(hoverRenderer))
     if (linkData != null) __obj.updateDynamic("linkData")(linkData)
     if (markerData != null) __obj.updateDynamic("markerData")(markerData)
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
-    if (selectionRenderer != null) __obj.updateDynamic("selectionRenderer")(selectionRenderer)
+    if (renderer != null) __obj.updateDynamic("renderer")(js.Any.fromFunction1(renderer))
+    if (selectionRenderer != null) __obj.updateDynamic("selectionRenderer")(js.Any.fromFunction1(selectionRenderer))
     __obj.asInstanceOf[ojThematicMapSettableProperties[K1, K2, K3, D1, D2, D3]]
   }
 }

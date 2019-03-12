@@ -19,13 +19,6 @@ class IPCMessageWriter protected ()
   /* InferMemberOverrides */
   override def dispose(): scala.Unit = js.native
   def doWriteMessage(msg: vscodeDashJsonrpcLib.libMessagesMod.Message): scala.Unit = js.native
-  /**
-    *
-    * @param listener The listener function will be call when the event happens.
-    * @param thisArgs The 'this' which will be used when calling the event listener.
-    * @param disposables An array to which a {{IDisposable}} will be added. The
-    * @return
-    */
   /* InferMemberOverrides */
   override def onClose(listener: js.Function1[/* e */ scala.Unit, _]): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
   /* InferMemberOverrides */
@@ -36,18 +29,11 @@ class IPCMessageWriter protected ()
     thisArgs: js.Any,
     disposables: js.Array[vscodeDashJsonrpcLib.libEventsMod.Disposable]
   ): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
-  /**
-    *
-    * @param listener The listener function will be call when the event happens.
-    * @param thisArgs The 'this' which will be used when calling the event listener.
-    * @param disposables An array to which a {{IDisposable}} will be added. The
-    * @return
-    */
   /* InferMemberOverrides */
   override def onError(
     listener: js.Function1[
       /* e */ js.Tuple3[
-        nodeLib.Error, 
+        stdLib.Error, 
         js.UndefOr[vscodeDashJsonrpcLib.libMessagesMod.Message], 
         js.UndefOr[scala.Double]
       ], 
@@ -58,7 +44,7 @@ class IPCMessageWriter protected ()
   override def onError(
     listener: js.Function1[
       /* e */ js.Tuple3[
-        nodeLib.Error, 
+        stdLib.Error, 
         js.UndefOr[vscodeDashJsonrpcLib.libMessagesMod.Message], 
         js.UndefOr[scala.Double]
       ], 
@@ -70,7 +56,7 @@ class IPCMessageWriter protected ()
   override def onError(
     listener: js.Function1[
       /* e */ js.Tuple3[
-        nodeLib.Error, 
+        stdLib.Error, 
         js.UndefOr[vscodeDashJsonrpcLib.libMessagesMod.Message], 
         js.UndefOr[scala.Double]
       ], 

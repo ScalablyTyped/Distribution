@@ -16,10 +16,10 @@ object Equation {
   def apply(
     lhs: Expression,
     rhs: Expression,
-    solveFor: js.Function1[java.lang.String, Fraction | js.Array[Fraction] | js.Array[scala.Double]],
-    toString: js.Function0[java.lang.String]
+    solveFor: java.lang.String => Fraction | js.Array[Fraction] | js.Array[scala.Double],
+    toString: () => java.lang.String
   ): Equation = {
-    val __obj = js.Dynamic.literal(lhs = lhs, rhs = rhs, solveFor = solveFor, toString = toString)
+    val __obj = js.Dynamic.literal(lhs = lhs, rhs = rhs, solveFor = js.Any.fromFunction1(solveFor), toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[Equation]
   }

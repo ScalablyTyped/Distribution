@@ -38,13 +38,13 @@ object UniqueValueInfo {
   def apply(
     constructor: js.Function,
     count: scala.Double,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     label: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     symbol: Symbol,
     value: java.lang.String | scala.Double
   ): UniqueValueInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor, count = count, hasOwnProperty = hasOwnProperty, label = label, propertyIsEnumerable = propertyIsEnumerable, symbol = symbol, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor, count = count, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), label = label, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), symbol = symbol, value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UniqueValueInfo]
   }

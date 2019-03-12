@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PluginErrorOptions extends js.Object {
-  var error: js.UndefOr[nodeLib.Error] = js.undefined
+  var error: js.UndefOr[stdLib.Error] = js.undefined
   var fileName: js.UndefOr[java.lang.String] = js.undefined
   var lineNumber: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -39,7 +39,7 @@ trait PluginErrorOptions extends js.Object {
 object PluginErrorOptions {
   @scala.inline
   def apply(
-    error: nodeLib.Error = null,
+    error: stdLib.Error = null,
     fileName: java.lang.String = null,
     lineNumber: scala.Int | scala.Double = null,
     message: js.Any = null,

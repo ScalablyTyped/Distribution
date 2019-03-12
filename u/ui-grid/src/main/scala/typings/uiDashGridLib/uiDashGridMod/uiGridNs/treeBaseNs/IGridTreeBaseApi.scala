@@ -62,21 +62,18 @@ trait IGridTreeBaseApi[TEntity] extends js.Object {
 object IGridTreeBaseApi {
   @scala.inline
   def apply[TEntity](
-    collapseAllRows: js.Function0[scala.Unit],
-    collapseRow: js.Function1[uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity], scala.Unit],
-    collapseRowChildren: js.Function1[uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity], scala.Unit],
-    expandAllRows: js.Function0[scala.Unit],
-    expandRow: js.Function1[uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity], scala.Unit],
-    getRowChildren: js.Function1[
-      uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity], 
-      js.Array[uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity]]
-    ],
-    getTreeState: js.Function0[ITreeState],
+    collapseAllRows: () => scala.Unit,
+    collapseRow: uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity] => scala.Unit,
+    collapseRowChildren: uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity] => scala.Unit,
+    expandAllRows: () => scala.Unit,
+    expandRow: uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity] => scala.Unit,
+    getRowChildren: uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity] => js.Array[uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity]],
+    getTreeState: () => ITreeState,
     on: uiDashGridLib.Anon_HandlerRowCollapsed[TEntity],
-    setTreeState: js.Function1[ITreeState, scala.Unit],
-    toggleRowTreeState: js.Function1[uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity], scala.Unit]
+    setTreeState: ITreeState => scala.Unit,
+    toggleRowTreeState: uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity] => scala.Unit
   ): IGridTreeBaseApi[TEntity] = {
-    val __obj = js.Dynamic.literal(collapseAllRows = collapseAllRows, collapseRow = collapseRow, collapseRowChildren = collapseRowChildren, expandAllRows = expandAllRows, expandRow = expandRow, getRowChildren = getRowChildren, getTreeState = getTreeState, on = on, setTreeState = setTreeState, toggleRowTreeState = toggleRowTreeState)
+    val __obj = js.Dynamic.literal(collapseAllRows = js.Any.fromFunction0(collapseAllRows), collapseRow = js.Any.fromFunction1(collapseRow), collapseRowChildren = js.Any.fromFunction1(collapseRowChildren), expandAllRows = js.Any.fromFunction0(expandAllRows), expandRow = js.Any.fromFunction1(expandRow), getRowChildren = js.Any.fromFunction1(getRowChildren), getTreeState = js.Any.fromFunction0(getTreeState), on = on, setTreeState = js.Any.fromFunction1(setTreeState), toggleRowTreeState = js.Any.fromFunction1(toggleRowTreeState))
   
     __obj.asInstanceOf[IGridTreeBaseApi[TEntity]]
   }

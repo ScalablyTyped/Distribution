@@ -831,7 +831,7 @@ object FileInputOptions {
     showRemove: js.UndefOr[scala.Boolean] = js.undefined,
     showUpload: js.UndefOr[scala.Boolean] = js.undefined,
     showUploadedThumbs: js.UndefOr[scala.Boolean] = js.undefined,
-    slugCallback: js.Function1[/* filename */ java.lang.String, java.lang.String] = null,
+    slugCallback: /* filename */ java.lang.String => java.lang.String = null,
     textEncoding: java.lang.String = null,
     theme: java.lang.String = null,
     uploadAsync: js.UndefOr[scala.Boolean] = js.undefined,
@@ -951,7 +951,7 @@ object FileInputOptions {
     if (!js.isUndefined(showRemove)) __obj.updateDynamic("showRemove")(showRemove)
     if (!js.isUndefined(showUpload)) __obj.updateDynamic("showUpload")(showUpload)
     if (!js.isUndefined(showUploadedThumbs)) __obj.updateDynamic("showUploadedThumbs")(showUploadedThumbs)
-    if (slugCallback != null) __obj.updateDynamic("slugCallback")(slugCallback)
+    if (slugCallback != null) __obj.updateDynamic("slugCallback")(js.Any.fromFunction1(slugCallback))
     if (textEncoding != null) __obj.updateDynamic("textEncoding")(textEncoding)
     if (theme != null) __obj.updateDynamic("theme")(theme)
     if (!js.isUndefined(uploadAsync)) __obj.updateDynamic("uploadAsync")(uploadAsync)

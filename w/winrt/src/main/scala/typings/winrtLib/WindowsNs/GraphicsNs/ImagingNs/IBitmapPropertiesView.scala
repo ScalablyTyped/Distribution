@@ -12,12 +12,9 @@ trait IBitmapPropertiesView extends js.Object {
 object IBitmapPropertiesView {
   @scala.inline
   def apply(
-    getPropertiesAsync: js.Function1[
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], 
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[BitmapPropertySet]
-    ]
+    getPropertiesAsync: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String] => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[BitmapPropertySet]
   ): IBitmapPropertiesView = {
-    val __obj = js.Dynamic.literal(getPropertiesAsync = getPropertiesAsync)
+    val __obj = js.Dynamic.literal(getPropertiesAsync = js.Any.fromFunction1(getPropertiesAsync))
   
     __obj.asInstanceOf[IBitmapPropertiesView]
   }

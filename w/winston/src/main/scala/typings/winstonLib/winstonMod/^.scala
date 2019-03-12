@@ -39,7 +39,7 @@ object ^ extends js.Object {
   var profile: js.Function1[/* id */ java.lang.String | scala.Double, winstonLib.winstonMod.winstonNs.Logger] = js.native
   var query: js.Function2[
     /* options */ js.UndefOr[winstonLib.winstonMod.winstonNs.QueryOptions], 
-    /* callback */ js.UndefOr[js.Function2[/* err */ nodeLib.Error, /* results */ js.Any, scala.Unit]], 
+    /* callback */ js.UndefOr[js.Function2[/* err */ stdLib.Error, /* results */ js.Any, scala.Unit]], 
     js.Any
   ] = js.native
   var remove: js.Function1[

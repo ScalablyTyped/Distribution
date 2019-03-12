@@ -36,21 +36,21 @@ trait ShareAppMessage
 object ShareAppMessage {
   @scala.inline
   def apply(
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    complete: /* res */ js.Any => scala.Unit = null,
     desc: java.lang.String = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
+    fail: js.Any => scala.Unit = null,
     imageUrl: java.lang.String = null,
     path: java.lang.String = null,
-    success: js.Function1[/* res */ weixinDashAppLib.Anon_ShareTickets, scala.Unit] = null,
+    success: /* res */ weixinDashAppLib.Anon_ShareTickets => scala.Unit = null,
     title: java.lang.String = null
   ): ShareAppMessage = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (desc != null) __obj.updateDynamic("desc")(desc)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
     if (path != null) __obj.updateDynamic("path")(path)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[ShareAppMessage]
   }

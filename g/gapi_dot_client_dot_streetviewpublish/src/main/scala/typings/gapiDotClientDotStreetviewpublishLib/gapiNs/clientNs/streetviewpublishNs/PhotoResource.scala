@@ -100,28 +100,13 @@ trait PhotoResource extends js.Object {
 object PhotoResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotStreetviewpublishLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Photo]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Photo]
-    ],
-    startUpload: js.Function1[
-      gapiDotClientDotStreetviewpublishLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UploadRef]
-    ],
-    update: js.Function1[
-      gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Photo]
-    ]
+    create: gapiDotClientDotStreetviewpublishLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Photo],
+    delete: gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[Photo],
+    startUpload: gapiDotClientDotStreetviewpublishLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[UploadRef],
+    update: gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[Photo]
   ): PhotoResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, startUpload = startUpload, update = update)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), startUpload = js.Any.fromFunction1(startUpload), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[PhotoResource]
   }

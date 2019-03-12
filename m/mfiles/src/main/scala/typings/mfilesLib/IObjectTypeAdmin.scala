@@ -25,7 +25,7 @@ trait IObjectTypeAdmin extends js.Object {
 object IObjectTypeAdmin {
   @scala.inline
   def apply(
-    Clone: js.Function0[IObjectTypeAdmin],
+    Clone: () => IObjectTypeAdmin,
     ColumnMappings: IObjectTypeColumnMappings,
     ConnectionString: java.lang.String,
     DefaultForAutomaticPermissions: IAutomaticPermissions,
@@ -40,7 +40,7 @@ object IObjectTypeAdmin {
     Translatable: scala.Boolean,
     UpdateStatement: java.lang.String
   ): IObjectTypeAdmin = {
-    val __obj = js.Dynamic.literal(Clone = Clone, ColumnMappings = ColumnMappings, ConnectionString = ConnectionString, DefaultForAutomaticPermissions = DefaultForAutomaticPermissions, DeleteStatement = DeleteStatement, InsertIntoStatement = InsertIntoStatement, NamedValueNamespaces = NamedValueNamespaces, ObjectType = ObjectType, SelectExtIDStatement = SelectExtIDStatement, SelectStatement = SelectStatement, SelectStatementOneRecord = SelectStatementOneRecord, SemanticAliases = SemanticAliases, Translatable = Translatable, UpdateStatement = UpdateStatement)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), ColumnMappings = ColumnMappings, ConnectionString = ConnectionString, DefaultForAutomaticPermissions = DefaultForAutomaticPermissions, DeleteStatement = DeleteStatement, InsertIntoStatement = InsertIntoStatement, NamedValueNamespaces = NamedValueNamespaces, ObjectType = ObjectType, SelectExtIDStatement = SelectExtIDStatement, SelectStatement = SelectStatement, SelectStatementOneRecord = SelectStatementOneRecord, SemanticAliases = SemanticAliases, Translatable = Translatable, UpdateStatement = UpdateStatement)
   
     __obj.asInstanceOf[IObjectTypeAdmin]
   }

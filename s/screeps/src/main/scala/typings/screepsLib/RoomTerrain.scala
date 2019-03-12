@@ -21,13 +21,9 @@ trait RoomTerrain extends js.Object {
 object RoomTerrain {
   @scala.inline
   def apply(
-    get: js.Function2[
-      scala.Double, 
-      scala.Double, 
-      screepsLib.screepsLibNumbers.`0` | TERRAIN_MASK_WALL | TERRAIN_MASK_SWAMP
-    ]
+    get: (scala.Double, scala.Double) => screepsLib.screepsLibNumbers.`0` | TERRAIN_MASK_WALL | TERRAIN_MASK_SWAMP
   ): RoomTerrain = {
-    val __obj = js.Dynamic.literal(get = get)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
   
     __obj.asInstanceOf[RoomTerrain]
   }

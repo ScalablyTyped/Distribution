@@ -96,7 +96,7 @@ object Options {
     closeOnSelect: js.UndefOr[scala.Boolean] = js.undefined,
     containerCss: js.Any = null,
     containerCssClass: java.lang.String = null,
-    createTag: js.Function1[/* params */ SearchOptions, IdTextPair | scala.Null] = null,
+    createTag: /* params */ SearchOptions => IdTextPair | scala.Null = null,
     data: js.Array[DataFormat] | js.Array[GroupedDataFormat] = null,
     dataAdapter: js.Any = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
@@ -107,19 +107,11 @@ object Options {
     dropdownCss: js.Any = null,
     dropdownCssClass: java.lang.String = null,
     dropdownParent: select2Lib.select2Mod.Global.JQuery[stdLib.HTMLElement] = null,
-    escapeMarkup: js.Function1[/* markup */ java.lang.String, java.lang.String] = null,
-    initSelection: js.Function2[
-      /* element */ select2Lib.select2Mod.Global.JQuery[stdLib.HTMLElement], 
-      /* callback */ js.Function1[/* data */ js.Any, scala.Unit], 
-      scala.Unit
-    ] = null,
-    insertTag: js.Function2[/* data */ js.Array[OptionData | IdTextPair], /* tag */ IdTextPair, scala.Unit] = null,
+    escapeMarkup: /* markup */ java.lang.String => java.lang.String = null,
+    initSelection: (/* element */ select2Lib.select2Mod.Global.JQuery[stdLib.HTMLElement], /* callback */ js.Function1[/* data */ js.Any, scala.Unit]) => scala.Unit = null,
+    insertTag: (/* data */ js.Array[OptionData | IdTextPair], /* tag */ IdTextPair) => scala.Unit = null,
     language: java.lang.String | Translation = null,
-    matcher: js.Function2[
-      /* params */ SearchOptions, 
-      /* data */ OptGroupData | OptionData, 
-      OptGroupData | OptionData | scala.Null
-    ] = null,
+    matcher: (/* params */ SearchOptions, /* data */ OptGroupData | OptionData) => OptGroupData | OptionData | scala.Null = null,
     maximumInputLength: scala.Int | scala.Double = null,
     maximumSelectionLength: scala.Int | scala.Double = null,
     minimumInputLength: scala.Int | scala.Double = null,
@@ -129,28 +121,13 @@ object Options {
     resultsAdapter: js.Any = null,
     selectOnClose: js.UndefOr[scala.Boolean] = js.undefined,
     selectionAdapter: js.Any = null,
-    sorter: js.Function1[
-      /* data */ js.Array[OptGroupData | OptionData | IdTextPair], 
-      js.Array[OptGroupData | OptionData | IdTextPair]
-    ] = null,
+    sorter: /* data */ js.Array[OptGroupData | OptionData | IdTextPair] => js.Array[OptGroupData | OptionData | IdTextPair] = null,
     tags: js.UndefOr[scala.Boolean] = js.undefined,
-    templateResult: js.Function1[
-      /* result */ LoadingData | Result, 
-      java.lang.String | select2Lib.select2Mod.Global.JQuery[stdLib.HTMLElement] | scala.Null
-    ] = null,
-    templateSelection: js.Function1[
-      /* selection */ IdTextPair | LoadingData | Result, 
-      java.lang.String | select2Lib.select2Mod.Global.JQuery[stdLib.HTMLElement]
-    ] = null,
+    templateResult: /* result */ LoadingData | Result => java.lang.String | select2Lib.select2Mod.Global.JQuery[stdLib.HTMLElement] | scala.Null = null,
+    templateSelection: /* selection */ IdTextPair | LoadingData | Result => java.lang.String | select2Lib.select2Mod.Global.JQuery[stdLib.HTMLElement] = null,
     theme: java.lang.String = null,
     tokenSeparators: js.Array[java.lang.String] = null,
-    tokenizer: js.Function4[
-      /* input */ java.lang.String, 
-      /* selection */ js.Array[_], 
-      /* selectCallback */ js.Function0[scala.Unit], 
-      /* options */ Options[DataFormat | GroupedDataFormat, _], 
-      java.lang.String
-    ] = null,
+    tokenizer: (/* input */ java.lang.String, /* selection */ js.Array[_], /* selectCallback */ js.Function0[scala.Unit], /* options */ Options[DataFormat | GroupedDataFormat, _]) => java.lang.String = null,
     width: java.lang.String = null
   ): Options[Result, RemoteResult] = {
     val __obj = js.Dynamic.literal()
@@ -161,7 +138,7 @@ object Options {
     if (!js.isUndefined(closeOnSelect)) __obj.updateDynamic("closeOnSelect")(closeOnSelect)
     if (containerCss != null) __obj.updateDynamic("containerCss")(containerCss)
     if (containerCssClass != null) __obj.updateDynamic("containerCssClass")(containerCssClass)
-    if (createTag != null) __obj.updateDynamic("createTag")(createTag)
+    if (createTag != null) __obj.updateDynamic("createTag")(js.Any.fromFunction1(createTag))
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataAdapter != null) __obj.updateDynamic("dataAdapter")(dataAdapter)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
@@ -172,11 +149,11 @@ object Options {
     if (dropdownCss != null) __obj.updateDynamic("dropdownCss")(dropdownCss)
     if (dropdownCssClass != null) __obj.updateDynamic("dropdownCssClass")(dropdownCssClass)
     if (dropdownParent != null) __obj.updateDynamic("dropdownParent")(dropdownParent)
-    if (escapeMarkup != null) __obj.updateDynamic("escapeMarkup")(escapeMarkup)
-    if (initSelection != null) __obj.updateDynamic("initSelection")(initSelection)
-    if (insertTag != null) __obj.updateDynamic("insertTag")(insertTag)
+    if (escapeMarkup != null) __obj.updateDynamic("escapeMarkup")(js.Any.fromFunction1(escapeMarkup))
+    if (initSelection != null) __obj.updateDynamic("initSelection")(js.Any.fromFunction2(initSelection))
+    if (insertTag != null) __obj.updateDynamic("insertTag")(js.Any.fromFunction2(insertTag))
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (matcher != null) __obj.updateDynamic("matcher")(matcher)
+    if (matcher != null) __obj.updateDynamic("matcher")(js.Any.fromFunction2(matcher))
     if (maximumInputLength != null) __obj.updateDynamic("maximumInputLength")(maximumInputLength.asInstanceOf[js.Any])
     if (maximumSelectionLength != null) __obj.updateDynamic("maximumSelectionLength")(maximumSelectionLength.asInstanceOf[js.Any])
     if (minimumInputLength != null) __obj.updateDynamic("minimumInputLength")(minimumInputLength.asInstanceOf[js.Any])
@@ -186,13 +163,13 @@ object Options {
     if (resultsAdapter != null) __obj.updateDynamic("resultsAdapter")(resultsAdapter)
     if (!js.isUndefined(selectOnClose)) __obj.updateDynamic("selectOnClose")(selectOnClose)
     if (selectionAdapter != null) __obj.updateDynamic("selectionAdapter")(selectionAdapter)
-    if (sorter != null) __obj.updateDynamic("sorter")(sorter)
+    if (sorter != null) __obj.updateDynamic("sorter")(js.Any.fromFunction1(sorter))
     if (!js.isUndefined(tags)) __obj.updateDynamic("tags")(tags)
-    if (templateResult != null) __obj.updateDynamic("templateResult")(templateResult)
-    if (templateSelection != null) __obj.updateDynamic("templateSelection")(templateSelection)
+    if (templateResult != null) __obj.updateDynamic("templateResult")(js.Any.fromFunction1(templateResult))
+    if (templateSelection != null) __obj.updateDynamic("templateSelection")(js.Any.fromFunction1(templateSelection))
     if (theme != null) __obj.updateDynamic("theme")(theme)
     if (tokenSeparators != null) __obj.updateDynamic("tokenSeparators")(tokenSeparators)
-    if (tokenizer != null) __obj.updateDynamic("tokenizer")(tokenizer)
+    if (tokenizer != null) __obj.updateDynamic("tokenizer")(js.Any.fromFunction4(tokenizer))
     if (width != null) __obj.updateDynamic("width")(width)
     __obj.asInstanceOf[Options[Result, RemoteResult]]
   }

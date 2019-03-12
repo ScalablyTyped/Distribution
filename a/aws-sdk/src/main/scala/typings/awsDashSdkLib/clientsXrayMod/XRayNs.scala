@@ -119,7 +119,7 @@ object XRayNs extends js.Object {
     /**
       * The case-sensitive name of the new group. Default is a reserved name and names must be unique.
       */
-    var GroupName: GroupName
+    var GroupName: awsDashSdkLib.clientsXrayMod.XRayNs.GroupName
   }
   
   trait CreateGroupResult extends js.Object {
@@ -133,7 +133,7 @@ object XRayNs extends js.Object {
     /**
       * The rule definition.
       */
-    var SamplingRule: SamplingRule
+    var SamplingRule: awsDashSdkLib.clientsXrayMod.XRayNs.SamplingRule
   }
   
   trait CreateSamplingRuleResult extends js.Object {
@@ -775,27 +775,27 @@ object XRayNs extends js.Object {
     /**
       * The percentage of matching requests to instrument, after the reservoir is exhausted.
       */
-    var FixedRate: FixedRate
+    var FixedRate: awsDashSdkLib.clientsXrayMod.XRayNs.FixedRate
     /**
       * Matches the HTTP method of a request.
       */
-    var HTTPMethod: HTTPMethod
+    var HTTPMethod: awsDashSdkLib.clientsXrayMod.XRayNs.HTTPMethod
     /**
       * Matches the hostname from a request URL.
       */
-    var Host: Host
+    var Host: awsDashSdkLib.clientsXrayMod.XRayNs.Host
     /**
       * The priority of the sampling rule.
       */
-    var Priority: Priority
+    var Priority: awsDashSdkLib.clientsXrayMod.XRayNs.Priority
     /**
       * A fixed number of matching requests to instrument per second, prior to applying the fixed rate. The reservoir is not used directly by services, but applies to all services using the rule collectively.
       */
-    var ReservoirSize: ReservoirSize
+    var ReservoirSize: awsDashSdkLib.clientsXrayMod.XRayNs.ReservoirSize
     /**
       * Matches the ARN of the AWS resource on which the service runs.
       */
-    var ResourceARN: ResourceARN
+    var ResourceARN: awsDashSdkLib.clientsXrayMod.XRayNs.ResourceARN
     /**
       * The ARN of the sampling rule. Specify a rule by either name or ARN, but not both.
       */
@@ -807,19 +807,19 @@ object XRayNs extends js.Object {
     /**
       * Matches the name that the service uses to identify itself in segments.
       */
-    var ServiceName: ServiceName
+    var ServiceName: awsDashSdkLib.clientsXrayMod.XRayNs.ServiceName
     /**
       * Matches the origin that the service uses to identify its type in segments.
       */
-    var ServiceType: ServiceType
+    var ServiceType: awsDashSdkLib.clientsXrayMod.XRayNs.ServiceType
     /**
       * Matches the path from a request URL.
       */
-    var URLPath: URLPath
+    var URLPath: awsDashSdkLib.clientsXrayMod.XRayNs.URLPath
     /**
       * The version of the sampling rule format (1).
       */
-    var Version: Version
+    var Version: awsDashSdkLib.clientsXrayMod.XRayNs.Version
   }
   
   trait SamplingRuleRecord extends js.Object {
@@ -919,23 +919,23 @@ object XRayNs extends js.Object {
     /**
       * A unique identifier for the service in hexadecimal.
       */
-    var ClientID: ClientID
+    var ClientID: awsDashSdkLib.clientsXrayMod.XRayNs.ClientID
     /**
       * The number of requests that matched the rule.
       */
-    var RequestCount: RequestCount
+    var RequestCount: awsDashSdkLib.clientsXrayMod.XRayNs.RequestCount
     /**
       * The name of the sampling rule.
       */
-    var RuleName: RuleName
+    var RuleName: awsDashSdkLib.clientsXrayMod.XRayNs.RuleName
     /**
       * The number of requests recorded.
       */
-    var SampledCount: SampledCount
+    var SampledCount: awsDashSdkLib.clientsXrayMod.XRayNs.SampledCount
     /**
       * The current time.
       */
-    var Timestamp: Timestamp
+    var Timestamp: awsDashSdkLib.clientsXrayMod.XRayNs.Timestamp
   }
   
   trait SamplingTargetDocument extends js.Object {
@@ -1093,7 +1093,7 @@ object XRayNs extends js.Object {
     /**
       * 
       */
-    var Timestamp: Timestamp
+    var Timestamp: awsDashSdkLib.clientsXrayMod.XRayNs.Timestamp
   }
   
   trait Trace extends js.Object {
@@ -1685,7 +1685,7 @@ object XRayNs extends js.Object {
     /**
       * The rule and fields to change.
       */
-    var SamplingRuleUpdate: SamplingRuleUpdate
+    var SamplingRuleUpdate: awsDashSdkLib.clientsXrayMod.XRayNs.SamplingRuleUpdate
   }
   
   trait UpdateSamplingRuleResult extends js.Object {

@@ -31,9 +31,7 @@ object ^ extends js.Object {
     * function( ExtensionInfo result) {...};
     */
   def getSelf(): scala.Unit = js.native
-  def getSelf(
-    callback: js.Function1[/* result */ chromeDashAppsLib.chromeNs.managementNs.ExtensionInfo, scala.Unit]
-  ): scala.Unit = js.native
+  def getSelf(callback: js.Function1[/* result */ ExtensionInfo, scala.Unit]): scala.Unit = js.native
   /**
     * Uninstalls the calling extension.
     * Note: This function can be used without requesting the 'management' permission in the manifest.
@@ -42,10 +40,7 @@ object ^ extends js.Object {
     * @param [callback]
     */
   def uninstallSelf(): scala.Unit = js.native
-  def uninstallSelf(options: chromeDashAppsLib.chromeNs.managementNs.UninstallOptions): scala.Unit = js.native
-  def uninstallSelf(
-    options: chromeDashAppsLib.chromeNs.managementNs.UninstallOptions,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
+  def uninstallSelf(options: UninstallOptions): scala.Unit = js.native
+  def uninstallSelf(options: UninstallOptions, callback: js.Function0[scala.Unit]): scala.Unit = js.native
 }
 

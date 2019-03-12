@@ -20,21 +20,12 @@ object AccountsResource {
   @scala.inline
   def apply(
     containers: ContainersResource,
-    get: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Account]
-    ],
-    list: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKeyOauthtokenPageTokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListAccountsResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Account]
-    ],
+    get: gapiDotClientDotTagmanagerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Account],
+    list: gapiDotClientDotTagmanagerLib.Anon_AltFieldsKeyOauthtokenPageTokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[ListAccountsResponse],
+    update: gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint => gapiDotClientLib.gapiNs.clientNs.Request[Account],
     user_permissions: User_permissionsResource
   ): AccountsResource = {
-    val __obj = js.Dynamic.literal(containers = containers, get = get, list = list, update = update, user_permissions = user_permissions)
+    val __obj = js.Dynamic.literal(containers = containers, get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update), user_permissions = user_permissions)
   
     __obj.asInstanceOf[AccountsResource]
   }

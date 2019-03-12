@@ -28,7 +28,7 @@ object Options {
     baseBoundary: java.lang.String = null,
     filename: java.lang.String = null,
     keepBcc: js.UndefOr[scala.Boolean] = js.undefined,
-    normalizeHeaderKey: js.Function1[/* key */ java.lang.String, java.lang.String] = null,
+    normalizeHeaderKey: /* key */ java.lang.String => java.lang.String = null,
     parentNode: nodemailerLib.libMimeDashNodeMod.MimeNode = null,
     rootNode: nodemailerLib.libMimeDashNodeMod.MimeNode = null,
     textEncoding: nodemailerLib.nodemailerLibStrings.B | nodemailerLib.nodemailerLibStrings.Q = null
@@ -37,7 +37,7 @@ object Options {
     if (baseBoundary != null) __obj.updateDynamic("baseBoundary")(baseBoundary)
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (!js.isUndefined(keepBcc)) __obj.updateDynamic("keepBcc")(keepBcc)
-    if (normalizeHeaderKey != null) __obj.updateDynamic("normalizeHeaderKey")(normalizeHeaderKey)
+    if (normalizeHeaderKey != null) __obj.updateDynamic("normalizeHeaderKey")(js.Any.fromFunction1(normalizeHeaderKey))
     if (parentNode != null) __obj.updateDynamic("parentNode")(parentNode)
     if (rootNode != null) __obj.updateDynamic("rootNode")(rootNode)
     if (textEncoding != null) __obj.updateDynamic("textEncoding")(textEncoding.asInstanceOf[js.Any])

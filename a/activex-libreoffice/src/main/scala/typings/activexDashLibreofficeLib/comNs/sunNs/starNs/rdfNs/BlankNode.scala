@@ -25,8 +25,8 @@ trait BlankNode extends XNode {
 
 object BlankNode {
   @scala.inline
-  def apply(StringValue: java.lang.String, create: js.Function1[java.lang.String, scala.Unit]): BlankNode = {
-    val __obj = js.Dynamic.literal(StringValue = StringValue, create = create)
+  def apply(StringValue: java.lang.String, create: java.lang.String => scala.Unit): BlankNode = {
+    val __obj = js.Dynamic.literal(StringValue = StringValue, create = js.Any.fromFunction1(create))
   
     __obj.asInstanceOf[BlankNode]
   }

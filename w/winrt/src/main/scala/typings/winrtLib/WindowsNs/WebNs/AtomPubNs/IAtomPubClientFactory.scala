@@ -12,9 +12,9 @@ trait IAtomPubClientFactory extends js.Object {
 object IAtomPubClientFactory {
   @scala.inline
   def apply(
-    createAtomPubClientWithCredentials: js.Function1[winrtLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential, AtomPubClient]
+    createAtomPubClientWithCredentials: winrtLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential => AtomPubClient
   ): IAtomPubClientFactory = {
-    val __obj = js.Dynamic.literal(createAtomPubClientWithCredentials = createAtomPubClientWithCredentials)
+    val __obj = js.Dynamic.literal(createAtomPubClientWithCredentials = js.Any.fromFunction1(createAtomPubClientWithCredentials))
   
     __obj.asInstanceOf[IAtomPubClientFactory]
   }

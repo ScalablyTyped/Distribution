@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jasmine-expect/dist/toBeArrayOfSize", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val toBeArrayOfSize: jasmineDashExpectLib.distToBeArrayOfSizeMod.ToBeArrayOfSize = js.native
+  val toBeArrayOfSize: ToBeArrayOfSize = js.native
 }
 

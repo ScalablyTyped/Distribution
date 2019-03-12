@@ -13,13 +13,10 @@ trait PathWatcher extends js.Object {
 object PathWatcher {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
-    onDidChange: js.Function1[
-      js.Function1[/* change */ WatchedFilePathChangedEvent, scala.Unit], 
-      eventDashKitLib.eventDashKitMod.Disposable
-    ]
+    close: () => scala.Unit,
+    onDidChange: js.Function1[/* change */ WatchedFilePathChangedEvent, scala.Unit] => eventDashKitLib.eventDashKitMod.Disposable
   ): PathWatcher = {
-    val __obj = js.Dynamic.literal(close = close, onDidChange = onDidChange)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), onDidChange = js.Any.fromFunction1(onDidChange))
   
     __obj.asInstanceOf[PathWatcher]
   }

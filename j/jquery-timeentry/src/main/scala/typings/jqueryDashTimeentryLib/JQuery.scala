@@ -15,9 +15,6 @@ trait JQuery extends js.Object {
   /**
     * initialize TimeEntry plugin
     */
-  /**
-    * initialize TimeEntry plugin
-    */
   def timeEntry(): js.Any = js.native
   def timeEntry(configOrFnName: java.lang.String): js.Any = js.native
   def timeEntry(configOrFnName: java.lang.String, nameOrOption: js.Any): js.Any = js.native

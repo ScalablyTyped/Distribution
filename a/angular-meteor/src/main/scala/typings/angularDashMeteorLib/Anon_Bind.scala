@@ -15,8 +15,8 @@ trait Anon_Bind extends js.Object {
 
 object Anon_Bind {
   @scala.inline
-  def apply(bind: js.Function2[angularDashMeteorLib.angularMod.meteorNs.IScope, java.lang.String, scala.Unit]): Anon_Bind = {
-    val __obj = js.Dynamic.literal(bind = bind)
+  def apply(bind: (angularDashMeteorLib.angularMod.meteorNs.IScope, java.lang.String) => scala.Unit): Anon_Bind = {
+    val __obj = js.Dynamic.literal(bind = js.Any.fromFunction2(bind))
   
     __obj.asInstanceOf[Anon_Bind]
   }

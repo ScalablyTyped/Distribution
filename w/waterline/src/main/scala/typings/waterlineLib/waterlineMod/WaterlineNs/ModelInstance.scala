@@ -16,13 +16,13 @@ trait ModelInstance extends js.Object {
 object ModelInstance {
   @scala.inline
   def apply(
-    save: js.Function0[WaterlinePromise[ModelInstance]],
-    toJSON: js.Function0[js.Any],
+    save: () => WaterlinePromise[ModelInstance],
+    toJSON: () => js.Any,
     createdAt: stdLib.Date = null,
     id: scala.Double | java.lang.String = null,
     updatedAt: stdLib.Date = null
   ): ModelInstance = {
-    val __obj = js.Dynamic.literal(save = save, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(save = js.Any.fromFunction0(save), toJSON = js.Any.fromFunction0(toJSON))
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt)
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (updatedAt != null) __obj.updateDynamic("updatedAt")(updatedAt)

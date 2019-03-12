@@ -12,12 +12,8 @@ trait Locator extends js.Object {
 
 object Locator {
   @scala.inline
-  def apply(
-    findElements: js.Function1[js.Any, js.Any],
-    seleniumLocator: js.Any,
-    toString: js.Function0[java.lang.String]
-  ): Locator = {
-    val __obj = js.Dynamic.literal(findElements = findElements, seleniumLocator = seleniumLocator, toString = toString)
+  def apply(findElements: js.Any => js.Any, seleniumLocator: js.Any, toString: () => java.lang.String): Locator = {
+    val __obj = js.Dynamic.literal(findElements = js.Any.fromFunction1(findElements), seleniumLocator = seleniumLocator, toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[Locator]
   }

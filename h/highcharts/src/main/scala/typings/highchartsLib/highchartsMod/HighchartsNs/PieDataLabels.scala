@@ -58,7 +58,7 @@ object PieDataLabels {
     distance: scala.Int | scala.Double = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     format: java.lang.String = null,
-    formatter: js.Function0[java.lang.String] = null,
+    formatter: () => java.lang.String = null,
     inside: js.UndefOr[scala.Boolean] = js.undefined,
     overflow: java.lang.String = null,
     padding: scala.Int | scala.Double = null,
@@ -91,7 +91,7 @@ object PieDataLabels {
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (format != null) __obj.updateDynamic("format")(format)
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction0(formatter))
     if (!js.isUndefined(inside)) __obj.updateDynamic("inside")(inside)
     if (overflow != null) __obj.updateDynamic("overflow")(overflow)
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Window extends js.Object {
-  var NativeKeyboard: NativeKeyboard
+  var NativeKeyboard: cordovaDashPluginDashNativeDashKeyboardLib.NativeKeyboard
 }
 
 object Window {

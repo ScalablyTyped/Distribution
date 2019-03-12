@@ -14,11 +14,11 @@ trait Anon_BINARY extends js.Object {
 object Anon_BINARY {
   @scala.inline
   def apply(
-    BINARY: js.Function2[js.Array[scala.Double], js.Array[scala.Double], scala.Double],
-    CROSS_ENTROPY: js.Function2[js.Array[scala.Double], js.Array[scala.Double], scala.Double],
-    MSE: js.Function2[js.Array[scala.Double], js.Array[scala.Double], scala.Double]
+    BINARY: (js.Array[scala.Double], js.Array[scala.Double]) => scala.Double,
+    CROSS_ENTROPY: (js.Array[scala.Double], js.Array[scala.Double]) => scala.Double,
+    MSE: (js.Array[scala.Double], js.Array[scala.Double]) => scala.Double
   ): Anon_BINARY = {
-    val __obj = js.Dynamic.literal(BINARY = BINARY, CROSS_ENTROPY = CROSS_ENTROPY, MSE = MSE)
+    val __obj = js.Dynamic.literal(BINARY = js.Any.fromFunction2(BINARY), CROSS_ENTROPY = js.Any.fromFunction2(CROSS_ENTROPY), MSE = js.Any.fromFunction2(MSE))
   
     __obj.asInstanceOf[Anon_BINARY]
   }

@@ -15,16 +15,10 @@ trait TabledataResource extends js.Object {
 object TabledataResource {
   @scala.inline
   def apply(
-    insertAll: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AltDatasetIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TableDataInsertAllResponse]
-    ],
-    list: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AltDatasetIdFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TableDataList]
-    ]
+    insertAll: gapiDotClientDotBigqueryLib.Anon_AltDatasetIdFields => gapiDotClientLib.gapiNs.clientNs.Request[TableDataInsertAllResponse],
+    list: gapiDotClientDotBigqueryLib.Anon_AltDatasetIdFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[TableDataList]
   ): TabledataResource = {
-    val __obj = js.Dynamic.literal(insertAll = insertAll, list = list)
+    val __obj = js.Dynamic.literal(insertAll = js.Any.fromFunction1(insertAll), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[TabledataResource]
   }

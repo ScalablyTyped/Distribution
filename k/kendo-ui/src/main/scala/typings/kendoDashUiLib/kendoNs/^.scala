@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("kendo")
 @js.native
 object ^ extends js.Object {
-  var history: kendoDashUiLib.kendoNs.History = js.native
+  var history: History = js.native
   var keys: kendoDashUiLib.Anon_BACKSPACE = js.native
   var ns: java.lang.String = js.native
   var support: kendoDashUiLib.Anon_Browser = js.native
@@ -57,7 +57,7 @@ object ^ extends js.Object {
   def observable(data: js.Any): kendoDashUiLib.kendoNs.dataNs.ObservableObject = js.native
   def observableHierarchy(array: js.Any): scala.Unit = js.native
   def observableHierarchy(array: js.Array[_]): kendoDashUiLib.kendoNs.dataNs.ObservableArray = js.native
-  def parseColor(color: java.lang.String, noerror: scala.Boolean): kendoDashUiLib.kendoNs.Color = js.native
+  def parseColor(color: java.lang.String, noerror: scala.Boolean): Color = js.native
   def parseDate(value: java.lang.String): stdLib.Date = js.native
   def parseDate(value: java.lang.String, formats: java.lang.String): stdLib.Date = js.native
   def parseDate(value: java.lang.String, formats: java.lang.String, culture: java.lang.String): stdLib.Date = js.native
@@ -82,7 +82,7 @@ object ^ extends js.Object {
   def saveAs(options: js.Any): scala.Unit = js.native
   def stringify(value: js.Any): java.lang.String = js.native
   def template(template: java.lang.String): js.Function1[/* data */ js.Any, java.lang.String] = js.native
-  def template(template: java.lang.String, options: kendoDashUiLib.kendoNs.TemplateOptions): js.Function1[/* data */ js.Any, java.lang.String] = js.native
+  def template(template: java.lang.String, options: TemplateOptions): js.Function1[/* data */ js.Any, java.lang.String] = js.native
   def throttle(fn: js.Function, timeout: scala.Double): js.Function = js.native
   def toString(value: scala.Double, format: java.lang.String): java.lang.String = js.native
   def toString(value: scala.Double, format: java.lang.String, culture: java.lang.String): java.lang.String = js.native

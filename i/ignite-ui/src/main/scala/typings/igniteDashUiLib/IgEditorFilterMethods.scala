@@ -17,14 +17,14 @@ trait IgEditorFilterMethods extends js.Object {
 object IgEditorFilterMethods {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
-    exitEditMode: js.Function0[scala.Unit],
-    hasInvalidMessage: js.Function0[scala.Unit],
-    remove: js.Function0[scala.Unit],
-    setFocus: js.Function2[js.Object, js.Object, scala.Unit],
-    validator: js.Function0[scala.Unit]
+    destroy: () => scala.Unit,
+    exitEditMode: () => scala.Unit,
+    hasInvalidMessage: () => scala.Unit,
+    remove: () => scala.Unit,
+    setFocus: (js.Object, js.Object) => scala.Unit,
+    validator: () => scala.Unit
   ): IgEditorFilterMethods = {
-    val __obj = js.Dynamic.literal(destroy = destroy, exitEditMode = exitEditMode, hasInvalidMessage = hasInvalidMessage, remove = remove, setFocus = setFocus, validator = validator)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), exitEditMode = js.Any.fromFunction0(exitEditMode), hasInvalidMessage = js.Any.fromFunction0(hasInvalidMessage), remove = js.Any.fromFunction0(remove), setFocus = js.Any.fromFunction2(setFocus), validator = js.Any.fromFunction0(validator))
   
     __obj.asInstanceOf[IgEditorFilterMethods]
   }

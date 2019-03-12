@@ -21,16 +21,16 @@ object Edge {
   @scala.inline
   def apply(
     URI: java.lang.String,
-    columns: js.Function1[CbCallback, scala.Unit],
-    count: js.Function2[Query, CbCallback, scala.Unit],
-    create: js.Function3[js.Object, java.lang.String, CbCallback, scala.Unit],
-    deleteEdgeByName: js.Function2[java.lang.String, CbCallback, scala.Unit],
+    columns: CbCallback => scala.Unit,
+    count: (Query, CbCallback) => scala.Unit,
+    create: (js.Object, java.lang.String, CbCallback) => scala.Unit,
+    deleteEdgeByName: (java.lang.String, CbCallback) => scala.Unit,
     systemKey: java.lang.String,
     systemSecret: java.lang.String,
-    updateEdgeByName: js.Function3[java.lang.String, js.Object, CbCallback, scala.Unit],
+    updateEdgeByName: (java.lang.String, js.Object, CbCallback) => scala.Unit,
     user: APIUser
   ): Edge = {
-    val __obj = js.Dynamic.literal(URI = URI, columns = columns, count = count, create = create, deleteEdgeByName = deleteEdgeByName, systemKey = systemKey, systemSecret = systemSecret, updateEdgeByName = updateEdgeByName, user = user)
+    val __obj = js.Dynamic.literal(URI = URI, columns = js.Any.fromFunction1(columns), count = js.Any.fromFunction2(count), create = js.Any.fromFunction3(create), deleteEdgeByName = js.Any.fromFunction2(deleteEdgeByName), systemKey = systemKey, systemSecret = systemSecret, updateEdgeByName = js.Any.fromFunction3(updateEdgeByName), user = user)
   
     __obj.asInstanceOf[Edge]
   }

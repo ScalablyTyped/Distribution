@@ -15,15 +15,15 @@ trait NextObserver[T] extends PartialObserver[T] {
 object NextObserver {
   @scala.inline
   def apply[T](
-    next: js.Function1[T, scala.Unit],
+    next: T => scala.Unit,
     closed: js.UndefOr[scala.Boolean] = js.undefined,
-    complete: js.Function0[scala.Unit] = null,
-    error: js.Function1[/* err */ js.Any, scala.Unit] = null
+    complete: () => scala.Unit = null,
+    error: /* err */ js.Any => scala.Unit = null
   ): NextObserver[T] = {
-    val __obj = js.Dynamic.literal(next = next)
+    val __obj = js.Dynamic.literal(next = js.Any.fromFunction1(next))
     if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     __obj.asInstanceOf[NextObserver[T]]
   }
 }

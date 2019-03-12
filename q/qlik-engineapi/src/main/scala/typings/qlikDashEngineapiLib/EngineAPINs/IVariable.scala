@@ -68,14 +68,14 @@ trait IVariable
 object IVariable {
   @scala.inline
   def apply(
-    forceContent: js.Function2[java.lang.String, scala.Double, js.Promise[scala.Unit]],
-    getContent: js.Function0[js.Promise[IAlfaNumString]],
-    getNxProperties: js.Function0[js.Promise[INxVariableProperties]],
-    getRawContent: js.Function0[js.Promise[java.lang.String]],
-    setContent: js.Function2[java.lang.String, scala.Boolean, js.Promise[scala.Boolean]],
-    setNxProperties: js.Function1[INxVariableProperties, js.Promise[scala.Unit]]
+    forceContent: (java.lang.String, scala.Double) => js.Promise[scala.Unit],
+    getContent: () => js.Promise[IAlfaNumString],
+    getNxProperties: () => js.Promise[INxVariableProperties],
+    getRawContent: () => js.Promise[java.lang.String],
+    setContent: (java.lang.String, scala.Boolean) => js.Promise[scala.Boolean],
+    setNxProperties: INxVariableProperties => js.Promise[scala.Unit]
   ): IVariable = {
-    val __obj = js.Dynamic.literal(forceContent = forceContent, getContent = getContent, getNxProperties = getNxProperties, getRawContent = getRawContent, setContent = setContent, setNxProperties = setNxProperties)
+    val __obj = js.Dynamic.literal(forceContent = js.Any.fromFunction2(forceContent), getContent = js.Any.fromFunction0(getContent), getNxProperties = js.Any.fromFunction0(getNxProperties), getRawContent = js.Any.fromFunction0(getRawContent), setContent = js.Any.fromFunction2(setContent), setNxProperties = js.Any.fromFunction1(setNxProperties))
   
     __obj.asInstanceOf[IVariable]
   }

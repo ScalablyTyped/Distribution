@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ElementProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement] {
   @JSName("name")
   var name_ElementProps: java.lang.String
 }
@@ -15,7 +15,7 @@ object ElementProps {
   @scala.inline
   def apply(
     name: java.lang.String,
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement] = null,
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement] = null,
     id: java.lang.String = null
   ): ElementProps = {
     val __obj = js.Dynamic.literal(name = name)

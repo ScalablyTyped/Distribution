@@ -20,3 +20,19 @@ trait GeoSearchProvided[THit] extends js.Object {
   def refine(refinement: NESW): scala.Unit
 }
 
+object GeoSearchProvided {
+  @scala.inline
+  def apply[THit](
+    createURL: /* repeated */ js.Any => js.Any,
+    currentRefinement: NESW,
+    hits: js.Array[THit],
+    isRefinedWithMap: scala.Boolean,
+    position: reactDashInstantsearchDashCoreLib.Anon_Lat,
+    refine: NESW => scala.Unit
+  ): GeoSearchProvided[THit] = {
+    val __obj = js.Dynamic.literal(createURL = js.Any.fromFunction1(createURL), currentRefinement = currentRefinement, hits = hits, isRefinedWithMap = isRefinedWithMap, position = position, refine = js.Any.fromFunction1(refine))
+  
+    __obj.asInstanceOf[GeoSearchProvided[THit]]
+  }
+}
+

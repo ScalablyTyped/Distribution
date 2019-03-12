@@ -91,31 +91,21 @@ object XSAXEventKeeper {
   @scala.inline
   def apply(
     CurrentBlockingNode: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper,
-    acquire: js.Function0[scala.Unit],
-    addBlocker: js.Function0[scala.Double],
-    addElementCollector: js.Function0[scala.Double],
-    getCurrentBlockingNode: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper],
-    getElement: js.Function1[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper
-    ],
-    isBlocking: js.Function0[scala.Boolean],
-    printBufferNodeTree: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeBlocker: js.Function1[scala.Double, scala.Unit],
-    removeElementCollector: js.Function1[scala.Double, scala.Unit],
-    setElement: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper, 
-      scala.Unit
-    ],
-    setNextHandler: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler
-    ]
+    acquire: () => scala.Unit,
+    addBlocker: () => scala.Double,
+    addElementCollector: () => scala.Double,
+    getCurrentBlockingNode: () => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper,
+    getElement: scala.Double => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper,
+    isBlocking: () => scala.Boolean,
+    printBufferNodeTree: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeBlocker: scala.Double => scala.Unit,
+    removeElementCollector: scala.Double => scala.Unit,
+    setElement: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper) => scala.Unit,
+    setNextHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler
   ): XSAXEventKeeper = {
-    val __obj = js.Dynamic.literal(CurrentBlockingNode = CurrentBlockingNode, acquire = acquire, addBlocker = addBlocker, addElementCollector = addElementCollector, getCurrentBlockingNode = getCurrentBlockingNode, getElement = getElement, isBlocking = isBlocking, printBufferNodeTree = printBufferNodeTree, queryInterface = queryInterface, release = release, removeBlocker = removeBlocker, removeElementCollector = removeElementCollector, setElement = setElement, setNextHandler = setNextHandler)
+    val __obj = js.Dynamic.literal(CurrentBlockingNode = CurrentBlockingNode, acquire = js.Any.fromFunction0(acquire), addBlocker = js.Any.fromFunction0(addBlocker), addElementCollector = js.Any.fromFunction0(addElementCollector), getCurrentBlockingNode = js.Any.fromFunction0(getCurrentBlockingNode), getElement = js.Any.fromFunction1(getElement), isBlocking = js.Any.fromFunction0(isBlocking), printBufferNodeTree = js.Any.fromFunction0(printBufferNodeTree), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeBlocker = js.Any.fromFunction1(removeBlocker), removeElementCollector = js.Any.fromFunction1(removeElementCollector), setElement = js.Any.fromFunction2(setElement), setNextHandler = js.Any.fromFunction1(setNextHandler))
   
     __obj.asInstanceOf[XSAXEventKeeper]
   }

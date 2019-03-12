@@ -31,13 +31,13 @@ trait XUpdateBroadcaster
 object XUpdateBroadcaster {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addUpdateListener: js.Function1[XUpdateListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeUpdateListener: js.Function1[XUpdateListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addUpdateListener: XUpdateListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeUpdateListener: XUpdateListener => scala.Unit
   ): XUpdateBroadcaster = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addUpdateListener = addUpdateListener, queryInterface = queryInterface, release = release, removeUpdateListener = removeUpdateListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addUpdateListener = js.Any.fromFunction1(addUpdateListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeUpdateListener = js.Any.fromFunction1(removeUpdateListener))
   
     __obj.asInstanceOf[XUpdateBroadcaster]
   }

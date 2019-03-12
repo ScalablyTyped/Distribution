@@ -38,11 +38,7 @@ object ^ extends js.Object {
     compressed: scala.Boolean
   ): nodeLib.Buffer = js.native
   def sign(message: nodeLib.Buffer, privateKey: nodeLib.Buffer): secp256k1Lib.Anon_Recovery = js.native
-  def sign(
-    message: nodeLib.Buffer,
-    privateKey: nodeLib.Buffer,
-    options: secp256k1Lib.secp256k1Mod.SignOptions
-  ): secp256k1Lib.Anon_Recovery = js.native
+  def sign(message: nodeLib.Buffer, privateKey: nodeLib.Buffer, options: SignOptions): secp256k1Lib.Anon_Recovery = js.native
   def signatureExport(signature: nodeLib.Buffer): nodeLib.Buffer = js.native
   def signatureImport(signature: nodeLib.Buffer): nodeLib.Buffer = js.native
   def signatureImportLax(signature: nodeLib.Buffer): nodeLib.Buffer = js.native

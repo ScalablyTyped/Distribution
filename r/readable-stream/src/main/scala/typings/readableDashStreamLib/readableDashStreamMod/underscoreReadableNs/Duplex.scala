@@ -11,11 +11,12 @@ trait Duplex extends Writable {
   var _readableState: ReadableState = js.native
   var allowHalfOpen: scala.Boolean = js.native
   @JSName(org.scalablytyped.runtime.Symbol.asyncIterator)
-  var asyncIterator: js.Function0[nodeLib.AsyncIterableIterator[java.lang.String | nodeLib.Buffer]] = js.native
+  var asyncIterator: js.Function0[stdLib.AsyncIterableIterator[java.lang.String | nodeLib.Buffer]] = js.native
   // Readable
   var readable: scala.Boolean = js.native
   val readableHighWaterMark: scala.Double = js.native
   val readableLength: scala.Double = js.native
+  def _destroy(err: stdLib.Error, callback: js.Function1[/* error */ stdLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
   def _read(): scala.Unit = js.native
   def _read(size: scala.Double): scala.Unit = js.native
   def isPaused(): scala.Boolean = js.native

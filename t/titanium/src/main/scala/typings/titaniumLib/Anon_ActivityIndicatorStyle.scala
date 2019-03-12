@@ -196,23 +196,23 @@ object Anon_ActivityIndicatorStyle {
     TableViewScrollPositionNs: Anon_AddEventListenerApiNameApplyPropertiesBOTTOMBubbleParent,
     TableViewSeparatorStyleNs: Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEvent,
     TableViewStyleNs: Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallback,
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
     apiName: java.lang.String,
     appBadge: scala.Double,
     appSupportsShakeToEdit: scala.Boolean,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     bubbleParent: scala.Boolean,
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getApiName: js.Function0[java.lang.String],
-    getAppBadge: js.Function0[scala.Double],
-    getAppSupportsShakeToEdit: js.Function0[scala.Boolean],
-    getBubbleParent: js.Function0[scala.Boolean],
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    setAppBadge: js.Function1[scala.Double, scala.Unit],
-    setAppSupportsShakeToEdit: js.Function1[scala.Boolean, scala.Unit],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit]
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
+    getApiName: () => java.lang.String,
+    getAppBadge: () => scala.Double,
+    getAppSupportsShakeToEdit: () => scala.Boolean,
+    getBubbleParent: () => scala.Boolean,
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    setAppBadge: scala.Double => scala.Unit,
+    setAppSupportsShakeToEdit: scala.Boolean => scala.Unit,
+    setBubbleParent: scala.Boolean => scala.Unit
   ): Anon_ActivityIndicatorStyle = {
-    val __obj = js.Dynamic.literal(ActivityIndicatorStyleNs = ActivityIndicatorStyleNs, AlertDialogStyleNs = AlertDialogStyleNs, AnimationStyleNs = AnimationStyleNs, ListViewSeparatorStyleNs = ListViewSeparatorStyleNs, MODAL_PRESENTATION_CURRENT_CONTEXT = MODAL_PRESENTATION_CURRENT_CONTEXT, MODAL_PRESENTATION_FORMSHEET = MODAL_PRESENTATION_FORMSHEET, MODAL_PRESENTATION_FULLSCREEN = MODAL_PRESENTATION_FULLSCREEN, MODAL_PRESENTATION_PAGESHEET = MODAL_PRESENTATION_PAGESHEET, MODAL_TRANSITION_STYLE_COVER_VERTICAL = MODAL_TRANSITION_STYLE_COVER_VERTICAL, MODAL_TRANSITION_STYLE_CROSS_DISSOLVE = MODAL_TRANSITION_STYLE_CROSS_DISSOLVE, MODAL_TRANSITION_STYLE_FLIP_HORIZONTAL = MODAL_TRANSITION_STYLE_FLIP_HORIZONTAL, MODAL_TRANSITION_STYLE_PARTIAL_CURL = MODAL_TRANSITION_STYLE_PARTIAL_CURL, ProgressBarStyleNs = ProgressBarStyleNs, RowAnimationStyleNs = RowAnimationStyleNs, ScrollIndicatorStyleNs = ScrollIndicatorStyleNs, SystemButtonNs = SystemButtonNs, SystemButtonStyleNs = SystemButtonStyleNs, SystemIconNs = SystemIconNs, TableViewCellSelectionStyleNs = TableViewCellSelectionStyleNs, TableViewScrollPositionNs = TableViewScrollPositionNs, TableViewSeparatorStyleNs = TableViewSeparatorStyleNs, TableViewStyleNs = TableViewStyleNs, addEventListener = addEventListener, apiName = apiName, appBadge = appBadge, appSupportsShakeToEdit = appSupportsShakeToEdit, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, getApiName = getApiName, getAppBadge = getAppBadge, getAppSupportsShakeToEdit = getAppSupportsShakeToEdit, getBubbleParent = getBubbleParent, removeEventListener = removeEventListener, setAppBadge = setAppBadge, setAppSupportsShakeToEdit = setAppSupportsShakeToEdit, setBubbleParent = setBubbleParent)
+    val __obj = js.Dynamic.literal(ActivityIndicatorStyleNs = ActivityIndicatorStyleNs, AlertDialogStyleNs = AlertDialogStyleNs, AnimationStyleNs = AnimationStyleNs, ListViewSeparatorStyleNs = ListViewSeparatorStyleNs, MODAL_PRESENTATION_CURRENT_CONTEXT = MODAL_PRESENTATION_CURRENT_CONTEXT, MODAL_PRESENTATION_FORMSHEET = MODAL_PRESENTATION_FORMSHEET, MODAL_PRESENTATION_FULLSCREEN = MODAL_PRESENTATION_FULLSCREEN, MODAL_PRESENTATION_PAGESHEET = MODAL_PRESENTATION_PAGESHEET, MODAL_TRANSITION_STYLE_COVER_VERTICAL = MODAL_TRANSITION_STYLE_COVER_VERTICAL, MODAL_TRANSITION_STYLE_CROSS_DISSOLVE = MODAL_TRANSITION_STYLE_CROSS_DISSOLVE, MODAL_TRANSITION_STYLE_FLIP_HORIZONTAL = MODAL_TRANSITION_STYLE_FLIP_HORIZONTAL, MODAL_TRANSITION_STYLE_PARTIAL_CURL = MODAL_TRANSITION_STYLE_PARTIAL_CURL, ProgressBarStyleNs = ProgressBarStyleNs, RowAnimationStyleNs = RowAnimationStyleNs, ScrollIndicatorStyleNs = ScrollIndicatorStyleNs, SystemButtonNs = SystemButtonNs, SystemButtonStyleNs = SystemButtonStyleNs, SystemIconNs = SystemIconNs, TableViewCellSelectionStyleNs = TableViewCellSelectionStyleNs, TableViewScrollPositionNs = TableViewScrollPositionNs, TableViewSeparatorStyleNs = TableViewSeparatorStyleNs, TableViewStyleNs = TableViewStyleNs, addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, appBadge = appBadge, appSupportsShakeToEdit = appSupportsShakeToEdit, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getAppBadge = js.Any.fromFunction0(getAppBadge), getAppSupportsShakeToEdit = js.Any.fromFunction0(getAppSupportsShakeToEdit), getBubbleParent = js.Any.fromFunction0(getBubbleParent), removeEventListener = js.Any.fromFunction2(removeEventListener), setAppBadge = js.Any.fromFunction1(setAppBadge), setAppSupportsShakeToEdit = js.Any.fromFunction1(setAppSupportsShakeToEdit), setBubbleParent = js.Any.fromFunction1(setBubbleParent))
   
     __obj.asInstanceOf[Anon_ActivityIndicatorStyle]
   }

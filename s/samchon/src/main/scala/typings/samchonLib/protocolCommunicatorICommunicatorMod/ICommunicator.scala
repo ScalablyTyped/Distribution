@@ -30,13 +30,13 @@ trait ICommunicator
 object ICommunicator {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
-    isConnected: js.Function0[scala.Boolean],
+    close: () => scala.Unit,
+    isConnected: () => scala.Boolean,
     onClose: js.Function,
-    replyData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit],
-    sendData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit]
+    replyData: samchonLib.protocolInvokeInvokeMod.Invoke => scala.Unit,
+    sendData: samchonLib.protocolInvokeInvokeMod.Invoke => scala.Unit
   ): ICommunicator = {
-    val __obj = js.Dynamic.literal(close = close, isConnected = isConnected, onClose = onClose, replyData = replyData, sendData = sendData)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), isConnected = js.Any.fromFunction0(isConnected), onClose = onClose, replyData = js.Any.fromFunction1(replyData), sendData = js.Any.fromFunction1(sendData))
   
     __obj.asInstanceOf[ICommunicator]
   }

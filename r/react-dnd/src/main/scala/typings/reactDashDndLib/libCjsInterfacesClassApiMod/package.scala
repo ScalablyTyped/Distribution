@@ -13,7 +13,7 @@ package object libCjsInterfacesClassApiMod {
     reactLib.reactMod.ReactNs.ReactElement[js.Any]
   ]
   type DragElementWrapper[Options] = js.Function2[
-    /* elementOrNode */ reactLib.reactMod.ReactNs.ReactElement[js.Any] | reactLib.Element, 
+    /* elementOrNode */ reactLib.reactMod.ReactNs.ReactElement[js.Any] | stdLib.Element, 
     /* options */ js.UndefOr[Options], 
     reactLib.reactMod.ReactNs.ReactElement[js.Any]
   ]

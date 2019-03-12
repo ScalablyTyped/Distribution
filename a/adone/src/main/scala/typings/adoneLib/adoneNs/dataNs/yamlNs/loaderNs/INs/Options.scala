@@ -31,13 +31,13 @@ object Options {
   def apply(
     filename: java.lang.String = null,
     json: js.UndefOr[scala.Boolean] = js.undefined,
-    onWarning: js.Function1[/* warning */ js.Any, scala.Unit] = null,
+    onWarning: /* warning */ js.Any => scala.Unit = null,
     schema: adoneLib.adoneNs.dataNs.yamlNs.schemaNs.Schema = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (!js.isUndefined(json)) __obj.updateDynamic("json")(json)
-    if (onWarning != null) __obj.updateDynamic("onWarning")(onWarning)
+    if (onWarning != null) __obj.updateDynamic("onWarning")(js.Any.fromFunction1(onWarning))
     if (schema != null) __obj.updateDynamic("schema")(schema)
     __obj.asInstanceOf[Options]
   }

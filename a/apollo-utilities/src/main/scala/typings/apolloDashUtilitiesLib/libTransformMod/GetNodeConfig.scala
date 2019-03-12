@@ -12,10 +12,10 @@ trait GetNodeConfig[N] extends js.Object {
 
 object GetNodeConfig {
   @scala.inline
-  def apply[N](name: java.lang.String = null, test: js.Function1[/* node */ N, scala.Boolean] = null): GetNodeConfig[N] = {
+  def apply[N](name: java.lang.String = null, test: /* node */ N => scala.Boolean = null): GetNodeConfig[N] = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name)
-    if (test != null) __obj.updateDynamic("test")(test)
+    if (test != null) __obj.updateDynamic("test")(js.Any.fromFunction1(test))
     __obj.asInstanceOf[GetNodeConfig[N]]
   }
 }

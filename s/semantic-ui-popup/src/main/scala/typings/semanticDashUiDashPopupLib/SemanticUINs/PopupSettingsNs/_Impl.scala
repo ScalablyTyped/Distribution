@@ -288,21 +288,13 @@ object _Impl {
     observeChanges: scala.Boolean,
     offset: scala.Double,
     on: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.focus | semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.click | semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.hover | semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.manual,
-    onCreate: js.Function2[semanticDashUiDashPopupLib.JQuery, semanticDashUiDashPopupLib.JQuery, scala.Unit],
-    onHidden: js.Function2[semanticDashUiDashPopupLib.JQuery, semanticDashUiDashPopupLib.JQuery, scala.Unit],
-    onHide: js.Function2[
-      semanticDashUiDashPopupLib.JQuery, 
-      semanticDashUiDashPopupLib.JQuery, 
-      semanticDashUiDashPopupLib.semanticDashUiDashPopupLibNumbers.`false` | scala.Unit
-    ],
-    onRemove: js.Function2[semanticDashUiDashPopupLib.JQuery, semanticDashUiDashPopupLib.JQuery, scala.Unit],
-    onShow: js.Function2[
-      semanticDashUiDashPopupLib.JQuery, 
-      semanticDashUiDashPopupLib.JQuery, 
-      semanticDashUiDashPopupLib.semanticDashUiDashPopupLibNumbers.`false` | scala.Unit
-    ],
-    onUnplaceable: js.Function2[semanticDashUiDashPopupLib.JQuery, semanticDashUiDashPopupLib.JQuery, scala.Unit],
-    onVisible: js.Function2[semanticDashUiDashPopupLib.JQuery, semanticDashUiDashPopupLib.JQuery, scala.Unit],
+    onCreate: (semanticDashUiDashPopupLib.JQuery, semanticDashUiDashPopupLib.JQuery) => scala.Unit,
+    onHidden: (semanticDashUiDashPopupLib.JQuery, semanticDashUiDashPopupLib.JQuery) => scala.Unit,
+    onHide: (semanticDashUiDashPopupLib.JQuery, semanticDashUiDashPopupLib.JQuery) => semanticDashUiDashPopupLib.semanticDashUiDashPopupLibNumbers.`false` | scala.Unit,
+    onRemove: (semanticDashUiDashPopupLib.JQuery, semanticDashUiDashPopupLib.JQuery) => scala.Unit,
+    onShow: (semanticDashUiDashPopupLib.JQuery, semanticDashUiDashPopupLib.JQuery) => semanticDashUiDashPopupLib.semanticDashUiDashPopupLibNumbers.`false` | scala.Unit,
+    onUnplaceable: (semanticDashUiDashPopupLib.JQuery, semanticDashUiDashPopupLib.JQuery) => scala.Unit,
+    onVisible: (semanticDashUiDashPopupLib.JQuery, semanticDashUiDashPopupLib.JQuery) => scala.Unit,
     performance: scala.Boolean,
     popup: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibNumbers.`false` | java.lang.String | semanticDashUiDashPopupLib.JQuery,
     position: java.lang.String,
@@ -318,7 +310,7 @@ object _Impl {
     variation: java.lang.String,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(addTouchEvents = addTouchEvents, boundary = boundary.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], closable = closable, content = content, context = context.asInstanceOf[js.Any], debug = debug, delay = delay.asInstanceOf[js.Any], distanceAway = distanceAway, duration = duration, error = error.asInstanceOf[js.Any], exclusive = exclusive, hideOnScroll = hideOnScroll.asInstanceOf[js.Any], hoverable = hoverable, html = html.asInstanceOf[js.Any], jitter = jitter, lastResort = lastResort.asInstanceOf[js.Any], maxSearchDepth = maxSearchDepth, metadata = metadata.asInstanceOf[js.Any], movePopup = movePopup, name = name, namespace = namespace, observeChanges = observeChanges, offset = offset, on = on.asInstanceOf[js.Any], onCreate = onCreate, onHidden = onHidden, onHide = onHide, onRemove = onRemove, onShow = onShow, onUnplaceable = onUnplaceable, onVisible = onVisible, performance = performance, popup = popup.asInstanceOf[js.Any], position = position, prefer = prefer.asInstanceOf[js.Any], preserve = preserve, scrollContext = scrollContext.asInstanceOf[js.Any], selector = selector, setFluidWidth = setFluidWidth, silent = silent, target = target.asInstanceOf[js.Any], title = title, transition = transition, variation = variation, verbose = verbose)
+    val __obj = js.Dynamic.literal(addTouchEvents = addTouchEvents, boundary = boundary.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], closable = closable, content = content, context = context.asInstanceOf[js.Any], debug = debug, delay = delay.asInstanceOf[js.Any], distanceAway = distanceAway, duration = duration, error = error.asInstanceOf[js.Any], exclusive = exclusive, hideOnScroll = hideOnScroll.asInstanceOf[js.Any], hoverable = hoverable, html = html.asInstanceOf[js.Any], jitter = jitter, lastResort = lastResort.asInstanceOf[js.Any], maxSearchDepth = maxSearchDepth, metadata = metadata.asInstanceOf[js.Any], movePopup = movePopup, name = name, namespace = namespace, observeChanges = observeChanges, offset = offset, on = on.asInstanceOf[js.Any], onCreate = js.Any.fromFunction2(onCreate), onHidden = js.Any.fromFunction2(onHidden), onHide = js.Any.fromFunction2(onHide), onRemove = js.Any.fromFunction2(onRemove), onShow = js.Any.fromFunction2(onShow), onUnplaceable = js.Any.fromFunction2(onUnplaceable), onVisible = js.Any.fromFunction2(onVisible), performance = performance, popup = popup.asInstanceOf[js.Any], position = position, prefer = prefer.asInstanceOf[js.Any], preserve = preserve, scrollContext = scrollContext.asInstanceOf[js.Any], selector = selector, setFluidWidth = setFluidWidth, silent = silent, target = target.asInstanceOf[js.Any], title = title, transition = transition, variation = variation, verbose = verbose)
     __obj.updateDynamic("inline")(`inline`)
     __obj.asInstanceOf[_Impl]
   }

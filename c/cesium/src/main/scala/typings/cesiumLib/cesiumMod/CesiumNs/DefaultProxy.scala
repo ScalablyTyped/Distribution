@@ -11,8 +11,8 @@ trait DefaultProxy extends js.Object {
 
 object DefaultProxy {
   @scala.inline
-  def apply(getURL: js.Function1[java.lang.String, java.lang.String]): DefaultProxy = {
-    val __obj = js.Dynamic.literal(getURL = getURL)
+  def apply(getURL: java.lang.String => java.lang.String): DefaultProxy = {
+    val __obj = js.Dynamic.literal(getURL = js.Any.fromFunction1(getURL))
   
     __obj.asInstanceOf[DefaultProxy]
   }

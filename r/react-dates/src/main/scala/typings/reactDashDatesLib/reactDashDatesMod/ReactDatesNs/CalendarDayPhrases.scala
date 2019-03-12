@@ -15,11 +15,11 @@ trait CalendarDayPhrases extends js.Object {
 object CalendarDayPhrases {
   @scala.inline
   def apply(
-    chooseAvailableDate: js.Function1[java.lang.String, java.lang.String],
-    dateIsSelected: js.Function1[java.lang.String, java.lang.String],
-    dateIsUnavailable: js.Function1[java.lang.String, java.lang.String]
+    chooseAvailableDate: java.lang.String => java.lang.String,
+    dateIsSelected: java.lang.String => java.lang.String,
+    dateIsUnavailable: java.lang.String => java.lang.String
   ): CalendarDayPhrases = {
-    val __obj = js.Dynamic.literal(chooseAvailableDate = chooseAvailableDate, dateIsSelected = dateIsSelected, dateIsUnavailable = dateIsUnavailable)
+    val __obj = js.Dynamic.literal(chooseAvailableDate = js.Any.fromFunction1(chooseAvailableDate), dateIsSelected = js.Any.fromFunction1(dateIsSelected), dateIsUnavailable = js.Any.fromFunction1(dateIsUnavailable))
   
     __obj.asInstanceOf[CalendarDayPhrases]
   }

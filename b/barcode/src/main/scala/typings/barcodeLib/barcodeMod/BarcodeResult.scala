@@ -29,29 +29,19 @@ trait BarcodeResult extends js.Object {
 object BarcodeResult {
   @scala.inline
   def apply(
-    getBase64: js.Function1[
-      js.Function2[
-        /* err */ nodeLib.NodeJSNs.ErrnoException, 
-        /* base64String */ java.lang.String, 
-        scala.Unit
-      ], 
+    getBase64: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* base64String */ java.lang.String, 
       scala.Unit
-    ],
-    getStream: js.Function1[
-      js.Function2[
-        /* err */ nodeLib.NodeJSNs.ErrnoException, 
-        /* stream */ nodeLib.NodeJSNs.ReadableStream, 
-        scala.Unit
-      ], 
+    ] => scala.Unit,
+    getStream: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* stream */ nodeLib.NodeJSNs.ReadableStream, 
       scala.Unit
-    ],
-    saveImage: js.Function2[
-      java.lang.String, 
-      js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit], 
-      scala.Unit
-    ]
+    ] => scala.Unit,
+    saveImage: (java.lang.String, js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]) => scala.Unit
   ): BarcodeResult = {
-    val __obj = js.Dynamic.literal(getBase64 = getBase64, getStream = getStream, saveImage = saveImage)
+    val __obj = js.Dynamic.literal(getBase64 = js.Any.fromFunction1(getBase64), getStream = js.Any.fromFunction1(getStream), saveImage = js.Any.fromFunction2(saveImage))
   
     __obj.asInstanceOf[BarcodeResult]
   }

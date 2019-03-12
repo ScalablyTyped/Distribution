@@ -40,24 +40,11 @@ trait ExpressBrute extends js.Object {
 object ExpressBrute {
   @scala.inline
   def apply(
-    getMiddleware: js.Function1[
-      expressDashBruteLib.expressDashBruteMod.ExpressBruteNs.Middleware, 
-      expressLib.expressMod.eNs.RequestHandler
-    ],
-    prevent: js.Function3[
-      expressLib.expressMod.eNs.Request, 
-      expressLib.expressMod.eNs.Response, 
-      js.Function, 
-      expressLib.expressMod.eNs.RequestHandler
-    ],
-    reset: js.Function3[
-      java.lang.String, 
-      java.lang.String, 
-      js.Function, 
-      expressLib.expressMod.eNs.RequestHandler
-    ]
+    getMiddleware: expressDashBruteLib.expressDashBruteMod.ExpressBruteNs.Middleware => expressLib.expressMod.eNs.RequestHandler,
+    prevent: (expressLib.expressMod.eNs.Request, expressLib.expressMod.eNs.Response, js.Function) => expressLib.expressMod.eNs.RequestHandler,
+    reset: (java.lang.String, java.lang.String, js.Function) => expressLib.expressMod.eNs.RequestHandler
   ): ExpressBrute = {
-    val __obj = js.Dynamic.literal(getMiddleware = getMiddleware, prevent = prevent, reset = reset)
+    val __obj = js.Dynamic.literal(getMiddleware = js.Any.fromFunction1(getMiddleware), prevent = js.Any.fromFunction3(prevent), reset = js.Any.fromFunction3(reset))
   
     __obj.asInstanceOf[ExpressBrute]
   }

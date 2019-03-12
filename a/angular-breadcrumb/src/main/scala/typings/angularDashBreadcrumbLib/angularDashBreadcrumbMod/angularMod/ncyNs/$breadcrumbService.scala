@@ -19,12 +19,10 @@ trait $breadcrumbService extends js.Object {
 object $breadcrumbService {
   @scala.inline
   def apply(
-    getLastStep: js.Function0[angularDashBreadcrumbLib.angularDashBreadcrumbMod.angularMod.uiNs.IState],
-    getStatesChain: js.Function0[
-      js.Array[angularDashBreadcrumbLib.angularDashBreadcrumbMod.angularMod.uiNs.IState]
-    ]
+    getLastStep: () => angularDashBreadcrumbLib.angularDashBreadcrumbMod.angularMod.uiNs.IState,
+    getStatesChain: () => js.Array[angularDashBreadcrumbLib.angularDashBreadcrumbMod.angularMod.uiNs.IState]
   ): $breadcrumbService = {
-    val __obj = js.Dynamic.literal(getLastStep = getLastStep, getStatesChain = getStatesChain)
+    val __obj = js.Dynamic.literal(getLastStep = js.Any.fromFunction0(getLastStep), getStatesChain = js.Any.fromFunction0(getStatesChain))
   
     __obj.asInstanceOf[$breadcrumbService]
   }

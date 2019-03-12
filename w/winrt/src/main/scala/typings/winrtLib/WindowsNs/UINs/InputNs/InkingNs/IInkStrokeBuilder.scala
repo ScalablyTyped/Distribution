@@ -18,19 +18,13 @@ trait IInkStrokeBuilder extends js.Object {
 object IInkStrokeBuilder {
   @scala.inline
   def apply(
-    appendToStroke: js.Function1[
-      winrtLib.WindowsNs.UINs.InputNs.PointerPoint, 
-      winrtLib.WindowsNs.UINs.InputNs.PointerPoint
-    ],
-    beginStroke: js.Function1[winrtLib.WindowsNs.UINs.InputNs.PointerPoint, scala.Unit],
-    createStroke: js.Function1[
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[winrtLib.WindowsNs.FoundationNs.Point], 
-      InkStroke
-    ],
-    endStroke: js.Function1[winrtLib.WindowsNs.UINs.InputNs.PointerPoint, InkStroke],
-    setDefaultDrawingAttributes: js.Function1[InkDrawingAttributes, scala.Unit]
+    appendToStroke: winrtLib.WindowsNs.UINs.InputNs.PointerPoint => winrtLib.WindowsNs.UINs.InputNs.PointerPoint,
+    beginStroke: winrtLib.WindowsNs.UINs.InputNs.PointerPoint => scala.Unit,
+    createStroke: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[winrtLib.WindowsNs.FoundationNs.Point] => InkStroke,
+    endStroke: winrtLib.WindowsNs.UINs.InputNs.PointerPoint => InkStroke,
+    setDefaultDrawingAttributes: InkDrawingAttributes => scala.Unit
   ): IInkStrokeBuilder = {
-    val __obj = js.Dynamic.literal(appendToStroke = appendToStroke, beginStroke = beginStroke, createStroke = createStroke, endStroke = endStroke, setDefaultDrawingAttributes = setDefaultDrawingAttributes)
+    val __obj = js.Dynamic.literal(appendToStroke = js.Any.fromFunction1(appendToStroke), beginStroke = js.Any.fromFunction1(beginStroke), createStroke = js.Any.fromFunction1(createStroke), endStroke = js.Any.fromFunction1(endStroke), setDefaultDrawingAttributes = js.Any.fromFunction1(setDefaultDrawingAttributes))
   
     __obj.asInstanceOf[IInkStrokeBuilder]
   }

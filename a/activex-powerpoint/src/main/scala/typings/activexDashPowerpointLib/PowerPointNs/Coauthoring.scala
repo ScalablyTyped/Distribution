@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.Coauthoring")
 @js.native
 class Coauthoring protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   val CoauthorCount: scala.Double = js.native
   var FavorServerEditsDuringMerge: scala.Boolean = js.native
   val MergeMode: scala.Boolean = js.native

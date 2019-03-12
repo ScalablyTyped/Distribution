@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait NightwatchAssertions extends NightwatchBrowser {
-  var NightwatchAssertionsError: NightwatchAssertionsError = js.native
+  var NightwatchAssertionsError: nightwatchLib.nightwatchMod.NightwatchAssertionsError = js.native
   /**
     * Checks if the given attribute of an element contains the expected value.
     * @param selector: The selector (CSS / Xpath) used to locate the element.

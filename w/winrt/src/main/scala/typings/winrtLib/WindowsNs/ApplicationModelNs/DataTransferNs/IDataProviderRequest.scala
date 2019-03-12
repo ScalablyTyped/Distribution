@@ -17,10 +17,10 @@ object IDataProviderRequest {
   def apply(
     deadline: stdLib.Date,
     formatId: java.lang.String,
-    getDeferral: js.Function0[DataProviderDeferral],
-    setData: js.Function1[js.Any, scala.Unit]
+    getDeferral: () => DataProviderDeferral,
+    setData: js.Any => scala.Unit
   ): IDataProviderRequest = {
-    val __obj = js.Dynamic.literal(deadline = deadline, formatId = formatId, getDeferral = getDeferral, setData = setData)
+    val __obj = js.Dynamic.literal(deadline = deadline, formatId = formatId, getDeferral = js.Any.fromFunction0(getDeferral), setData = js.Any.fromFunction1(setData))
   
     __obj.asInstanceOf[IDataProviderRequest]
   }

@@ -11,8 +11,8 @@ trait Logger extends js.Object {
 
 object Logger {
   @scala.inline
-  def apply(debug: js.Function1[java.lang.String, js.Any]): Logger = {
-    val __obj = js.Dynamic.literal(debug = debug)
+  def apply(debug: java.lang.String => js.Any): Logger = {
+    val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug))
   
     __obj.asInstanceOf[Logger]
   }

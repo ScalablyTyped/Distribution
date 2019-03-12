@@ -113,6 +113,6 @@ object ^ extends js.Object {
     *           If the request is sent in the synchronous mode, it also contains the response information.
     * @see      {@link http://wiki.greasespot.net/GM_setClipboard}
     */
-  def GM_xmlhttpRequest(options: greasemonkeyLib.GMXMLHttpRequestOptions): greasemonkeyLib.GMXMLHttpRequestResult = js.native
+  def GM_xmlhttpRequest(options: GMXMLHttpRequestOptions): GMXMLHttpRequestResult = js.native
 }
 

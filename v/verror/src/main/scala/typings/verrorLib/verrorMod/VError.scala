@@ -13,12 +13,12 @@ trait VError
 object VError {
   @scala.inline
   def apply(
-    cause: js.Function0[js.UndefOr[stdLib.Error]],
+    cause: () => js.UndefOr[stdLib.Error],
     message: java.lang.String,
     name: java.lang.String,
     stack: java.lang.String = null
   ): VError = {
-    val __obj = js.Dynamic.literal(cause = cause, message = message, name = name)
+    val __obj = js.Dynamic.literal(cause = js.Any.fromFunction0(cause), message = message, name = name)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[VError]
   }

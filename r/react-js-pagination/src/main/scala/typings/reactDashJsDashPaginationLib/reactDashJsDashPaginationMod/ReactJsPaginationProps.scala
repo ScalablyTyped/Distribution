@@ -39,13 +39,13 @@ object ReactJsPaginationProps {
   @scala.inline
   def apply(
     activePage: scala.Double,
-    onChange: js.Function1[scala.Double, scala.Unit],
+    onChange: scala.Double => scala.Unit,
     totalItemsCount: scala.Double,
     activeClass: java.lang.String = null,
     activeLinkClass: java.lang.String = null,
     disabledClass: java.lang.String = null,
     firstPageText: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    getPageUrl: js.Function0[java.lang.String] = null,
+    getPageUrl: () => java.lang.String = null,
     hideDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     hideFirstLastPages: js.UndefOr[scala.Boolean] = js.undefined,
     hideNavigation: js.UndefOr[scala.Boolean] = js.undefined,
@@ -66,12 +66,12 @@ object ReactJsPaginationProps {
     pageRangeDisplayed: scala.Int | scala.Double = null,
     prevPageText: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null
   ): ReactJsPaginationProps = {
-    val __obj = js.Dynamic.literal(activePage = activePage, onChange = onChange, totalItemsCount = totalItemsCount)
+    val __obj = js.Dynamic.literal(activePage = activePage, onChange = js.Any.fromFunction1(onChange), totalItemsCount = totalItemsCount)
     if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
     if (activeLinkClass != null) __obj.updateDynamic("activeLinkClass")(activeLinkClass)
     if (disabledClass != null) __obj.updateDynamic("disabledClass")(disabledClass)
     if (firstPageText != null) __obj.updateDynamic("firstPageText")(firstPageText.asInstanceOf[js.Any])
-    if (getPageUrl != null) __obj.updateDynamic("getPageUrl")(getPageUrl)
+    if (getPageUrl != null) __obj.updateDynamic("getPageUrl")(js.Any.fromFunction0(getPageUrl))
     if (!js.isUndefined(hideDisabled)) __obj.updateDynamic("hideDisabled")(hideDisabled)
     if (!js.isUndefined(hideFirstLastPages)) __obj.updateDynamic("hideFirstLastPages")(hideFirstLastPages)
     if (!js.isUndefined(hideNavigation)) __obj.updateDynamic("hideNavigation")(hideNavigation)

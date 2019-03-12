@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object n3Mod {
-  type ErrorCallback = js.Function2[/* err */ nodeLib.Error, /* result */ js.Any, scala.Unit]
+  type ErrorCallback = js.Function2[/* err */ stdLib.Error, /* result */ js.Any, scala.Unit]
   type Logger = js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, scala.Unit]
   type OTerm = rdfDashJsLib.rdfDashJsMod.Term | java.lang.String | scala.Null
   type ParseCallback[Q /* <: BaseQuad */] = js.Function3[
-    /* error */ nodeLib.Error, 
+    /* error */ stdLib.Error, 
     /* quad */ Q, 
     /* prefixes */ Prefixes[rdfDashJsLib.rdfDashJsMod.NamedNode], 
     scala.Unit

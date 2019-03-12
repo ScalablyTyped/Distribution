@@ -17,12 +17,10 @@ object CreatedNegotiatedContentResult {
   def apply[T](
     apiController: js.Any,
     content: js.Any,
-    executeAsync: js.Function0[
-      js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
-    ],
+    executeAsync: () => js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage],
     location: js.Any
   ): CreatedNegotiatedContentResult[T] = {
-    val __obj = js.Dynamic.literal(apiController = apiController, content = content, executeAsync = executeAsync, location = location)
+    val __obj = js.Dynamic.literal(apiController = apiController, content = content, executeAsync = js.Any.fromFunction0(executeAsync), location = location)
   
     __obj.asInstanceOf[CreatedNegotiatedContentResult[T]]
   }

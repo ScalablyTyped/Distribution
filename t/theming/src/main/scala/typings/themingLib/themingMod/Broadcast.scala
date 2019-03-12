@@ -14,11 +14,11 @@ trait Broadcast[T /* <: Theme */] extends js.Object {
 object Broadcast {
   @scala.inline
   def apply[T /* <: Theme */](
-    getState: js.Function0[T],
-    subscribe: js.Function1[js.Function0[scala.Unit], SubscriptionId],
-    unsubscribe: js.Function1[SubscriptionId, scala.Unit]
+    getState: () => T,
+    subscribe: js.Function0[scala.Unit] => SubscriptionId,
+    unsubscribe: SubscriptionId => scala.Unit
   ): Broadcast[T] = {
-    val __obj = js.Dynamic.literal(getState = getState, subscribe = subscribe, unsubscribe = unsubscribe)
+    val __obj = js.Dynamic.literal(getState = js.Any.fromFunction0(getState), subscribe = js.Any.fromFunction1(subscribe), unsubscribe = js.Any.fromFunction1(unsubscribe))
   
     __obj.asInstanceOf[Broadcast[T]]
   }

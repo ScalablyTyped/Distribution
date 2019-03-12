@@ -19,19 +19,19 @@ object ViewOptions {
   @scala.inline
   def apply(
     evalTemplate: js.UndefOr[scala.Boolean] = js.undefined,
-    hide: js.Function1[/* e */ ViewEvent, scala.Unit] = null,
-    init: js.Function1[/* e */ ViewEvent, scala.Unit] = null,
+    hide: /* e */ ViewEvent => scala.Unit = null,
+    init: /* e */ ViewEvent => scala.Unit = null,
     model: js.Object = null,
-    show: js.Function1[/* e */ ViewEvent, scala.Unit] = null,
+    show: /* e */ ViewEvent => scala.Unit = null,
     tagName: java.lang.String = null,
     wrap: js.UndefOr[scala.Boolean] = js.undefined
   ): ViewOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(evalTemplate)) __obj.updateDynamic("evalTemplate")(evalTemplate)
-    if (hide != null) __obj.updateDynamic("hide")(hide)
-    if (init != null) __obj.updateDynamic("init")(init)
+    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
+    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (model != null) __obj.updateDynamic("model")(model)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
     if (tagName != null) __obj.updateDynamic("tagName")(tagName)
     if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap)
     __obj.asInstanceOf[ViewOptions]

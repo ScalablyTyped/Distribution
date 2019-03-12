@@ -68,7 +68,7 @@ object Model {
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     encodeStartStopSymbol: scala.Int | scala.Double = null,
     lightBarColor: js.Any = null,
-    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    load: /* e */ LoadEventArgs => scala.Unit = null,
     narrowBarWidth: scala.Int | scala.Double = null,
     quietZone: QuietZone = null,
     symbologyType: SymbologyType | java.lang.String = null,
@@ -85,7 +85,7 @@ object Model {
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (encodeStartStopSymbol != null) __obj.updateDynamic("encodeStartStopSymbol")(encodeStartStopSymbol.asInstanceOf[js.Any])
     if (lightBarColor != null) __obj.updateDynamic("lightBarColor")(lightBarColor)
-    if (load != null) __obj.updateDynamic("load")(load)
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (narrowBarWidth != null) __obj.updateDynamic("narrowBarWidth")(narrowBarWidth.asInstanceOf[js.Any])
     if (quietZone != null) __obj.updateDynamic("quietZone")(quietZone)
     if (symbologyType != null) __obj.updateDynamic("symbologyType")(symbologyType.asInstanceOf[js.Any])

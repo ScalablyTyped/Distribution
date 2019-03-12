@@ -39,7 +39,7 @@ trait ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments extends ASPxClientH
 object ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments {
   @scala.inline
   def apply(
-    GetCommandName: js.Function0[java.lang.String],
+    GetCommandName: () => java.lang.String,
     align: java.lang.String,
     allowFullscreen: scala.Boolean,
     enablePrivacyEnhancedMode: scala.Boolean,
@@ -51,7 +51,7 @@ object ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments {
     src: java.lang.String,
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings
   ): ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments = {
-    val __obj = js.Dynamic.literal(GetCommandName = GetCommandName, align = align, allowFullscreen = allowFullscreen, enablePrivacyEnhancedMode = enablePrivacyEnhancedMode, id = id, selectedElement = selectedElement, showPlayerControls = showPlayerControls, showRelatedVideos = showRelatedVideos, showVideoInfo = showVideoInfo, src = src, styleSettings = styleSettings)
+    val __obj = js.Dynamic.literal(GetCommandName = js.Any.fromFunction0(GetCommandName), align = align, allowFullscreen = allowFullscreen, enablePrivacyEnhancedMode = enablePrivacyEnhancedMode, id = id, selectedElement = selectedElement, showPlayerControls = showPlayerControls, showRelatedVideos = showRelatedVideos, showVideoInfo = showVideoInfo, src = src, styleSettings = styleSettings)
   
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments]
   }

@@ -34,31 +34,31 @@ object RGBA {
   @scala.inline
   def apply(
     a: scala.Double,
-    add: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, RGBA],
+    add: (scala.Double, scala.Double, scala.Double, scala.Double) => RGBA,
     b: scala.Double,
-    clone: js.Function0[Node],
-    coerce: js.Function1[Node, Node],
+    clone: () => Node,
+    coerce: Node => Node,
     column: scala.Double,
-    divide: js.Function1[scala.Double, RGBA],
-    eval: js.Function0[Node],
+    divide: scala.Double => RGBA,
+    eval: () => Node,
     filename: java.lang.String,
     first: Node,
     g: scala.Double,
     hash: java.lang.String,
     hsla: HSLA,
     lineno: scala.Double,
-    multiply: js.Function1[scala.Double, RGBA],
+    multiply: scala.Double => RGBA,
     nodeName: java.lang.String,
-    operate: js.Function2[java.lang.String, Node, Node],
+    operate: (java.lang.String, Node) => Node,
     r: scala.Double,
     rgba: RGBA,
-    shouldCoerce: js.Function1[java.lang.String, scala.Boolean],
-    substract: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, RGBA],
-    toBoolean: js.Function0[Boolean],
-    toExpression: js.Function0[Expression],
-    toJSON: js.Function0[stylusLib.Anon_ABColumn]
+    shouldCoerce: java.lang.String => scala.Boolean,
+    substract: (scala.Double, scala.Double, scala.Double, scala.Double) => RGBA,
+    toBoolean: () => Boolean,
+    toExpression: () => Expression,
+    toJSON: () => stylusLib.Anon_ABColumn
   ): RGBA = {
-    val __obj = js.Dynamic.literal(a = a, add = add, b = b, clone = clone, coerce = coerce, column = column, divide = divide, eval = eval, filename = filename, first = first, g = g, hash = hash, hsla = hsla, lineno = lineno, multiply = multiply, nodeName = nodeName, operate = operate, r = r, rgba = rgba, shouldCoerce = shouldCoerce, substract = substract, toBoolean = toBoolean, toExpression = toExpression, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(a = a, add = js.Any.fromFunction4(add), b = b, clone = js.Any.fromFunction0(clone), coerce = js.Any.fromFunction1(coerce), column = column, divide = js.Any.fromFunction1(divide), eval = js.Any.fromFunction0(eval), filename = filename, first = first, g = g, hash = hash, hsla = hsla, lineno = lineno, multiply = js.Any.fromFunction1(multiply), nodeName = nodeName, operate = js.Any.fromFunction2(operate), r = r, rgba = rgba, shouldCoerce = js.Any.fromFunction1(shouldCoerce), substract = js.Any.fromFunction4(substract), toBoolean = js.Any.fromFunction0(toBoolean), toExpression = js.Any.fromFunction0(toExpression), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[RGBA]
   }

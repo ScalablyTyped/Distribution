@@ -19,7 +19,7 @@ trait ListEntryEvent
     *
     * The concrete semantics of the value depends on the concrete event being notified.
     */
-  var Entries: activexDashInteropLib.SafeArray[java.lang.String]
+  var Entries: stdLib.SafeArray[java.lang.String]
   /**
     * denotes the position where a change occurred.
     *
@@ -32,7 +32,7 @@ object ListEntryEvent {
   @scala.inline
   def apply(
     Count: scala.Double,
-    Entries: activexDashInteropLib.SafeArray[java.lang.String],
+    Entries: stdLib.SafeArray[java.lang.String],
     Position: scala.Double,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): ListEntryEvent = {

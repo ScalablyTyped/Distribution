@@ -18,12 +18,9 @@ trait ThumbnailsResource extends js.Object {
 object ThumbnailsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListStepThumbnailsResponse]
-    ]
+    list: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[ListStepThumbnailsResponse]
   ): ThumbnailsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ThumbnailsResource]
   }

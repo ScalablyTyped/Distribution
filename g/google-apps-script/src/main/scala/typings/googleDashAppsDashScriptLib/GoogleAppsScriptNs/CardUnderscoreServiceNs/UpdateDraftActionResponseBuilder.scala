@@ -13,10 +13,10 @@ trait UpdateDraftActionResponseBuilder extends js.Object {
 object UpdateDraftActionResponseBuilder {
   @scala.inline
   def apply(
-    build: js.Function0[UpdateDraftActionResponse],
-    setUpdateDraftBodyAction: js.Function1[UpdateDraftBodyAction, UpdateDraftActionResponseBuilder]
+    build: () => UpdateDraftActionResponse,
+    setUpdateDraftBodyAction: UpdateDraftBodyAction => UpdateDraftActionResponseBuilder
   ): UpdateDraftActionResponseBuilder = {
-    val __obj = js.Dynamic.literal(build = build, setUpdateDraftBodyAction = setUpdateDraftBodyAction)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setUpdateDraftBodyAction = js.Any.fromFunction1(setUpdateDraftBodyAction))
   
     __obj.asInstanceOf[UpdateDraftActionResponseBuilder]
   }

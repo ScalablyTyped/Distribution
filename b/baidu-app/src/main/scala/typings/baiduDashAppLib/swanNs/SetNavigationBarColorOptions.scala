@@ -27,15 +27,15 @@ object SetNavigationBarColorOptions {
     backgroundColor: java.lang.String,
     frontColor: baiduDashAppLib.baiduDashAppLibStrings.`#ffffff` | baiduDashAppLib.baiduDashAppLibStrings.`#000000`,
     animation: baiduDashAppLib.Anon_Duration = null,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
-    success: js.Function1[js.Any, scala.Unit] = null
+    complete: /* res */ js.Any => scala.Unit = null,
+    fail: js.Any => scala.Unit = null,
+    success: js.Any => scala.Unit = null
   ): SetNavigationBarColorOptions = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, frontColor = frontColor.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[SetNavigationBarColorOptions]
   }
 }

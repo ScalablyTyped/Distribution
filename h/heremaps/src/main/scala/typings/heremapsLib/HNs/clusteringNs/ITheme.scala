@@ -26,10 +26,10 @@ trait ITheme extends js.Object {
 object ITheme {
   @scala.inline
   def apply(
-    getClusterPresentation: js.Function1[ICluster, heremapsLib.HNs.mapNs.Object],
-    getNoisePresentation: js.Function1[INoisePoint, heremapsLib.HNs.mapNs.Object]
+    getClusterPresentation: ICluster => heremapsLib.HNs.mapNs.Object,
+    getNoisePresentation: INoisePoint => heremapsLib.HNs.mapNs.Object
   ): ITheme = {
-    val __obj = js.Dynamic.literal(getClusterPresentation = getClusterPresentation, getNoisePresentation = getNoisePresentation)
+    val __obj = js.Dynamic.literal(getClusterPresentation = js.Any.fromFunction1(getClusterPresentation), getNoisePresentation = js.Any.fromFunction1(getNoisePresentation))
   
     __obj.asInstanceOf[ITheme]
   }

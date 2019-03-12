@@ -31,13 +31,13 @@ object IStyleSheetConfig {
     defaultPrefix: java.lang.String = null,
     injectionMode: InjectionMode = null,
     namespace: java.lang.String = null,
-    onInsertRule: js.Function1[/* rule */ java.lang.String, scala.Unit] = null
+    onInsertRule: /* rule */ java.lang.String => scala.Unit = null
   ): IStyleSheetConfig = {
     val __obj = js.Dynamic.literal()
     if (defaultPrefix != null) __obj.updateDynamic("defaultPrefix")(defaultPrefix)
     if (injectionMode != null) __obj.updateDynamic("injectionMode")(injectionMode)
     if (namespace != null) __obj.updateDynamic("namespace")(namespace)
-    if (onInsertRule != null) __obj.updateDynamic("onInsertRule")(onInsertRule)
+    if (onInsertRule != null) __obj.updateDynamic("onInsertRule")(js.Any.fromFunction1(onInsertRule))
     __obj.asInstanceOf[IStyleSheetConfig]
   }
 }

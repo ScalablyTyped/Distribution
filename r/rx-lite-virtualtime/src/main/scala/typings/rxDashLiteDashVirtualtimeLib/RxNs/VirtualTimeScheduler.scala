@@ -43,103 +43,54 @@ trait VirtualTimeScheduler[TAbsolute, TRelative]
 object VirtualTimeScheduler {
   @scala.inline
   def apply[TAbsolute, TRelative](
-    add: js.Function2[TAbsolute, TRelative, TAbsolute],
-    advanceBy: js.Function1[TRelative, scala.Unit],
-    advanceTo: js.Function1[TAbsolute, scala.Unit],
-    getNext: js.Function0[rxDashLiteLib.RxNs.internalsNs.ScheduledItem[TAbsolute]],
+    add: (TAbsolute, TRelative) => TAbsolute,
+    advanceBy: TRelative => scala.Unit,
+    advanceTo: TAbsolute => scala.Unit,
+    getNext: () => rxDashLiteLib.RxNs.internalsNs.ScheduledItem[TAbsolute],
     isEnabled: scala.Boolean,
-    isScheduler: js.Function1[js.Any, scala.Boolean],
-    now: js.Function0[scala.Double],
-    schedule: js.Function1[js.Function0[scala.Unit], rxDashCoreLib.RxNs.IDisposable],
-    scheduleAbsolute: js.Function2[TAbsolute, js.Function0[scala.Unit], rxDashCoreLib.RxNs.IDisposable],
-    scheduleAbsoluteWithState: js.Function3[
+    isScheduler: js.Any => scala.Boolean,
+    now: () => scala.Double,
+    schedule: js.Function0[scala.Unit] => rxDashCoreLib.RxNs.IDisposable,
+    scheduleAbsolute: (TAbsolute, js.Function0[scala.Unit]) => rxDashCoreLib.RxNs.IDisposable,
+    scheduleAbsoluteWithState: (js.Any, TAbsolute, js.Function2[
+      /* scheduler */ rxDashCoreLib.RxNs.IScheduler, 
       js.Any, 
-      TAbsolute, 
-      js.Function2[
-        /* scheduler */ rxDashCoreLib.RxNs.IScheduler, 
-        js.Any, 
-        rxDashCoreLib.RxNs.IDisposable
-      ], 
       rxDashCoreLib.RxNs.IDisposable
-    ],
-    schedulePeriodic: js.Function2[scala.Double, js.Function0[scala.Unit], rxDashCoreLib.RxNs.IDisposable],
-    schedulePeriodicWithState: js.Function3[js.Any, scala.Double, js.Function1[js.Any, js.Any], rxDashCoreLib.RxNs.IDisposable],
-    scheduleRecursive: js.Function1[
-      js.Function1[/* action */ js.Function0[scala.Unit], scala.Unit], 
-      rxDashCoreLib.RxNs.IDisposable
-    ],
-    scheduleRecursiveWithAbsolute: js.Function2[
-      scala.Double, 
-      js.Function1[/* action */ js.Function1[/* dueTime */ scala.Double, scala.Unit], scala.Unit], 
-      rxDashCoreLib.RxNs.IDisposable
-    ],
-    scheduleRecursiveWithAbsoluteAndState: js.Function3[
+    ]) => rxDashCoreLib.RxNs.IDisposable,
+    schedulePeriodic: (scala.Double, js.Function0[scala.Unit]) => rxDashCoreLib.RxNs.IDisposable,
+    schedulePeriodicWithState: (js.Any, scala.Double, js.Function1[js.Any, js.Any]) => rxDashCoreLib.RxNs.IDisposable,
+    scheduleRecursive: js.Function1[/* action */ js.Function0[scala.Unit], scala.Unit] => rxDashCoreLib.RxNs.IDisposable,
+    scheduleRecursiveWithAbsolute: (scala.Double, js.Function1[/* action */ js.Function1[/* dueTime */ scala.Double, scala.Unit], scala.Unit]) => rxDashCoreLib.RxNs.IDisposable,
+    scheduleRecursiveWithAbsoluteAndState: (js.Any, scala.Double, js.Function2[
       js.Any, 
-      scala.Double, 
-      js.Function2[
-        js.Any, 
-        /* action */ js.Function2[js.Any, /* dueTime */ scala.Double, scala.Unit], 
-        scala.Unit
-      ], 
-      rxDashCoreLib.RxNs.IDisposable
-    ],
-    scheduleRecursiveWithRelative: js.Function2[
-      scala.Double, 
-      js.Function1[/* action */ js.Function1[/* dueTime */ scala.Double, scala.Unit], scala.Unit], 
-      rxDashCoreLib.RxNs.IDisposable
-    ],
-    scheduleRecursiveWithRelativeAndState: js.Function3[
+      /* action */ js.Function2[js.Any, /* dueTime */ scala.Double, scala.Unit], 
+      scala.Unit
+    ]) => rxDashCoreLib.RxNs.IDisposable,
+    scheduleRecursiveWithRelative: (scala.Double, js.Function1[/* action */ js.Function1[/* dueTime */ scala.Double, scala.Unit], scala.Unit]) => rxDashCoreLib.RxNs.IDisposable,
+    scheduleRecursiveWithRelativeAndState: (js.Any, scala.Double, js.Function2[
       js.Any, 
-      scala.Double, 
-      js.Function2[
-        js.Any, 
-        /* action */ js.Function2[js.Any, /* dueTime */ scala.Double, scala.Unit], 
-        scala.Unit
-      ], 
-      rxDashCoreLib.RxNs.IDisposable
-    ],
-    scheduleRecursiveWithState: js.Function2[
+      /* action */ js.Function2[js.Any, /* dueTime */ scala.Double, scala.Unit], 
+      scala.Unit
+    ]) => rxDashCoreLib.RxNs.IDisposable,
+    scheduleRecursiveWithState: (js.Any, js.Function2[js.Any, /* action */ js.Function1[js.Any, scala.Unit], scala.Unit]) => rxDashCoreLib.RxNs.IDisposable,
+    scheduleRelative: (TRelative, js.Function0[scala.Unit]) => rxDashCoreLib.RxNs.IDisposable,
+    scheduleRelativeWithState: (js.Any, TRelative, js.Function2[
+      /* scheduler */ rxDashCoreLib.RxNs.IScheduler, 
       js.Any, 
-      js.Function2[js.Any, /* action */ js.Function1[js.Any, scala.Unit], scala.Unit], 
       rxDashCoreLib.RxNs.IDisposable
-    ],
-    scheduleRelative: js.Function2[TRelative, js.Function0[scala.Unit], rxDashCoreLib.RxNs.IDisposable],
-    scheduleRelativeWithState: js.Function3[
-      js.Any, 
-      TRelative, 
-      js.Function2[
-        /* scheduler */ rxDashCoreLib.RxNs.IScheduler, 
-        js.Any, 
-        rxDashCoreLib.RxNs.IDisposable
-      ], 
-      rxDashCoreLib.RxNs.IDisposable
-    ],
-    scheduleWithAbsolute: js.Function2[scala.Double, js.Function0[scala.Unit], rxDashCoreLib.RxNs.IDisposable],
-    scheduleWithAbsoluteAndState: js.Function3[
-      js.Any, 
-      scala.Double, 
-      js.Function2[VirtualTimeScheduler[TAbsolute, TRelative], js.Any, rxDashCoreLib.RxNs.IDisposable], 
-      rxDashCoreLib.RxNs.IDisposable
-    ],
-    scheduleWithRelative: js.Function2[scala.Double, js.Function0[scala.Unit], rxDashCoreLib.RxNs.IDisposable],
-    scheduleWithRelativeAndState: js.Function3[
-      js.Any, 
-      scala.Double, 
-      js.Function2[VirtualTimeScheduler[TAbsolute, TRelative], js.Any, rxDashCoreLib.RxNs.IDisposable], 
-      rxDashCoreLib.RxNs.IDisposable
-    ],
-    scheduleWithState: js.Function2[
-      js.Any, 
-      js.Function2[VirtualTimeScheduler[TAbsolute, TRelative], js.Any, rxDashCoreLib.RxNs.IDisposable], 
-      rxDashCoreLib.RxNs.IDisposable
-    ],
-    sleep: js.Function1[TRelative, scala.Unit],
-    start: js.Function0[rxDashCoreLib.RxNs.IDisposable],
-    stop: js.Function0[scala.Unit],
-    toDateTimeOffset: js.Function1[TAbsolute, scala.Double],
-    toRelative: js.Function1[scala.Double, TRelative]
+    ]) => rxDashCoreLib.RxNs.IDisposable,
+    scheduleWithAbsolute: (scala.Double, js.Function0[scala.Unit]) => rxDashCoreLib.RxNs.IDisposable,
+    scheduleWithAbsoluteAndState: (js.Any, scala.Double, js.Function2[VirtualTimeScheduler[TAbsolute, TRelative], js.Any, rxDashCoreLib.RxNs.IDisposable]) => rxDashCoreLib.RxNs.IDisposable,
+    scheduleWithRelative: (scala.Double, js.Function0[scala.Unit]) => rxDashCoreLib.RxNs.IDisposable,
+    scheduleWithRelativeAndState: (js.Any, scala.Double, js.Function2[VirtualTimeScheduler[TAbsolute, TRelative], js.Any, rxDashCoreLib.RxNs.IDisposable]) => rxDashCoreLib.RxNs.IDisposable,
+    scheduleWithState: (js.Any, js.Function2[VirtualTimeScheduler[TAbsolute, TRelative], js.Any, rxDashCoreLib.RxNs.IDisposable]) => rxDashCoreLib.RxNs.IDisposable,
+    sleep: TRelative => scala.Unit,
+    start: () => rxDashCoreLib.RxNs.IDisposable,
+    stop: () => scala.Unit,
+    toDateTimeOffset: TAbsolute => scala.Double,
+    toRelative: scala.Double => TRelative
   ): VirtualTimeScheduler[TAbsolute, TRelative] = {
-    val __obj = js.Dynamic.literal(add = add, advanceBy = advanceBy, advanceTo = advanceTo, getNext = getNext, isEnabled = isEnabled, isScheduler = isScheduler, now = now, schedule = schedule, scheduleAbsolute = scheduleAbsolute, scheduleAbsoluteWithState = scheduleAbsoluteWithState, schedulePeriodic = schedulePeriodic, schedulePeriodicWithState = schedulePeriodicWithState, scheduleRecursive = scheduleRecursive, scheduleRecursiveWithAbsolute = scheduleRecursiveWithAbsolute, scheduleRecursiveWithAbsoluteAndState = scheduleRecursiveWithAbsoluteAndState, scheduleRecursiveWithRelative = scheduleRecursiveWithRelative, scheduleRecursiveWithRelativeAndState = scheduleRecursiveWithRelativeAndState, scheduleRecursiveWithState = scheduleRecursiveWithState, scheduleRelative = scheduleRelative, scheduleRelativeWithState = scheduleRelativeWithState, scheduleWithAbsolute = scheduleWithAbsolute, scheduleWithAbsoluteAndState = scheduleWithAbsoluteAndState, scheduleWithRelative = scheduleWithRelative, scheduleWithRelativeAndState = scheduleWithRelativeAndState, scheduleWithState = scheduleWithState, sleep = sleep, start = start, stop = stop, toDateTimeOffset = toDateTimeOffset, toRelative = toRelative)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), advanceBy = js.Any.fromFunction1(advanceBy), advanceTo = js.Any.fromFunction1(advanceTo), getNext = js.Any.fromFunction0(getNext), isEnabled = isEnabled, isScheduler = js.Any.fromFunction1(isScheduler), now = js.Any.fromFunction0(now), schedule = js.Any.fromFunction1(schedule), scheduleAbsolute = js.Any.fromFunction2(scheduleAbsolute), scheduleAbsoluteWithState = js.Any.fromFunction3(scheduleAbsoluteWithState), schedulePeriodic = js.Any.fromFunction2(schedulePeriodic), schedulePeriodicWithState = js.Any.fromFunction3(schedulePeriodicWithState), scheduleRecursive = js.Any.fromFunction1(scheduleRecursive), scheduleRecursiveWithAbsolute = js.Any.fromFunction2(scheduleRecursiveWithAbsolute), scheduleRecursiveWithAbsoluteAndState = js.Any.fromFunction3(scheduleRecursiveWithAbsoluteAndState), scheduleRecursiveWithRelative = js.Any.fromFunction2(scheduleRecursiveWithRelative), scheduleRecursiveWithRelativeAndState = js.Any.fromFunction3(scheduleRecursiveWithRelativeAndState), scheduleRecursiveWithState = js.Any.fromFunction2(scheduleRecursiveWithState), scheduleRelative = js.Any.fromFunction2(scheduleRelative), scheduleRelativeWithState = js.Any.fromFunction3(scheduleRelativeWithState), scheduleWithAbsolute = js.Any.fromFunction2(scheduleWithAbsolute), scheduleWithAbsoluteAndState = js.Any.fromFunction3(scheduleWithAbsoluteAndState), scheduleWithRelative = js.Any.fromFunction2(scheduleWithRelative), scheduleWithRelativeAndState = js.Any.fromFunction3(scheduleWithRelativeAndState), scheduleWithState = js.Any.fromFunction2(scheduleWithState), sleep = js.Any.fromFunction1(sleep), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), toDateTimeOffset = js.Any.fromFunction1(toDateTimeOffset), toRelative = js.Any.fromFunction1(toRelative))
   
     __obj.asInstanceOf[VirtualTimeScheduler[TAbsolute, TRelative]]
   }

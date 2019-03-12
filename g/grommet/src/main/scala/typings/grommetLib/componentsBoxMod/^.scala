@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Box: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsBoxMod.BoxProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    BoxProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
       reactLib.HTMLDivElement
     ]), 

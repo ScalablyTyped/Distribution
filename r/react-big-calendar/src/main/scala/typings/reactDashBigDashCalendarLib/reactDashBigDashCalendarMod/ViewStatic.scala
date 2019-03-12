@@ -11,8 +11,8 @@ trait ViewStatic extends js.Object {
 
 object ViewStatic {
   @scala.inline
-  def apply(navigate: js.Function3[stdLib.Date, Navigate, js.Any, stdLib.Date]): ViewStatic = {
-    val __obj = js.Dynamic.literal(navigate = navigate)
+  def apply(navigate: (stdLib.Date, Navigate, js.Any) => stdLib.Date): ViewStatic = {
+    val __obj = js.Dynamic.literal(navigate = js.Any.fromFunction3(navigate))
   
     __obj.asInstanceOf[ViewStatic]
   }

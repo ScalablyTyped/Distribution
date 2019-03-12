@@ -43,7 +43,7 @@ trait Socket
     ev: engineDotIoLib.engineDotIoLibStrings.close,
     fn: js.Function2[
       /* reason */ java.lang.String, 
-      /* description */ js.UndefOr[nodeLib.Error], 
+      /* description */ js.UndefOr[stdLib.Error], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -58,7 +58,7 @@ trait Socket
   @JSName("on")
   def on_error(
     ev: engineDotIoLib.engineDotIoLibStrings.error,
-    fn: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    fn: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /**
   		 * Called when the write buffer is being flushed.

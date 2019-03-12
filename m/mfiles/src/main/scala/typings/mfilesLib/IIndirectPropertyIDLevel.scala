@@ -15,12 +15,12 @@ trait IIndirectPropertyIDLevel extends js.Object {
 object IIndirectPropertyIDLevel {
   @scala.inline
   def apply(
-    Clone: js.Function0[IIndirectPropertyIDLevel],
+    Clone: () => IIndirectPropertyIDLevel,
     ID: scala.Double,
     LevelType: mfilesLib.MFilesNs.MFIndirectPropertyIDLevelType,
-    ToJSON: js.Function0[java.lang.String]
+    ToJSON: () => java.lang.String
   ): IIndirectPropertyIDLevel = {
-    val __obj = js.Dynamic.literal(Clone = Clone, ID = ID, LevelType = LevelType, ToJSON = ToJSON)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), ID = ID, LevelType = LevelType, ToJSON = js.Any.fromFunction0(ToJSON))
   
     __obj.asInstanceOf[IIndirectPropertyIDLevel]
   }

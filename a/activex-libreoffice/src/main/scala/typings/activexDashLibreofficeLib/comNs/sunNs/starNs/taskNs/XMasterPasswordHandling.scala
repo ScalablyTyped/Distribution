@@ -41,17 +41,17 @@ trait XMasterPasswordHandling
 object XMasterPasswordHandling {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    allowPersistentStoring: js.Function1[scala.Boolean, scala.Boolean],
-    authorizateWithMasterPassword: js.Function1[XInteractionHandler, scala.Boolean],
-    changeMasterPassword: js.Function1[XInteractionHandler, scala.Boolean],
-    hasMasterPassword: js.Function0[scala.Boolean],
-    isPersistentStoringAllowed: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeMasterPassword: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    allowPersistentStoring: scala.Boolean => scala.Boolean,
+    authorizateWithMasterPassword: XInteractionHandler => scala.Boolean,
+    changeMasterPassword: XInteractionHandler => scala.Boolean,
+    hasMasterPassword: () => scala.Boolean,
+    isPersistentStoringAllowed: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeMasterPassword: () => scala.Unit
   ): XMasterPasswordHandling = {
-    val __obj = js.Dynamic.literal(acquire = acquire, allowPersistentStoring = allowPersistentStoring, authorizateWithMasterPassword = authorizateWithMasterPassword, changeMasterPassword = changeMasterPassword, hasMasterPassword = hasMasterPassword, isPersistentStoringAllowed = isPersistentStoringAllowed, queryInterface = queryInterface, release = release, removeMasterPassword = removeMasterPassword)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), allowPersistentStoring = js.Any.fromFunction1(allowPersistentStoring), authorizateWithMasterPassword = js.Any.fromFunction1(authorizateWithMasterPassword), changeMasterPassword = js.Any.fromFunction1(changeMasterPassword), hasMasterPassword = js.Any.fromFunction0(hasMasterPassword), isPersistentStoringAllowed = js.Any.fromFunction0(isPersistentStoringAllowed), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeMasterPassword = js.Any.fromFunction0(removeMasterPassword))
   
     __obj.asInstanceOf[XMasterPasswordHandling]
   }

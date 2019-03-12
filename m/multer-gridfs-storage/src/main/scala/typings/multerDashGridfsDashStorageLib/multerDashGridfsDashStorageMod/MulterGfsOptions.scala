@@ -18,14 +18,10 @@ trait MulterGfsOptions extends js.Object {
 object MulterGfsOptions {
   @scala.inline
   def apply(
-    file: js.Function2[
-      /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, 
-      /* file */ multerDashGridfsDashStorageLib.multerDashGridfsDashStorageMod.Global.ExpressNs.MulterNs.File, 
-      _
-    ] = null
+    file: (/* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, /* file */ multerDashGridfsDashStorageLib.multerDashGridfsDashStorageMod.Global.ExpressNs.MulterNs.File) => _ = null
   ): MulterGfsOptions = {
     val __obj = js.Dynamic.literal()
-    if (file != null) __obj.updateDynamic("file")(file)
+    if (file != null) __obj.updateDynamic("file")(js.Any.fromFunction2(file))
     __obj.asInstanceOf[MulterGfsOptions]
   }
 }

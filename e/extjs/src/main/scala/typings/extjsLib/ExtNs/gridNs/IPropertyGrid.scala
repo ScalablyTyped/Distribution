@@ -62,19 +62,14 @@ object IPropertyGrid {
     customEditors: js.Any = null,
     customRenderers: js.Any = null,
     enableColumnMove: js.UndefOr[scala.Boolean] = js.undefined,
-    getSource: js.Function0[_] = null,
+    getSource: () => _ = null,
     inferTypes: js.UndefOr[scala.Boolean] = js.undefined,
     nameColumnWidth: js.Any = null,
     nameField: java.lang.String = null,
     propertyNames: js.Any = null,
-    removeProperty: js.Function1[/* prop */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setProperty: js.Function3[
-      /* prop */ js.UndefOr[java.lang.String], 
-      /* value */ js.UndefOr[js.Any], 
-      /* create */ js.UndefOr[scala.Boolean], 
-      scala.Unit
-    ] = null,
-    setSource: js.Function2[/* source */ js.UndefOr[js.Any], /* sourceConfig */ js.UndefOr[js.Any], scala.Unit] = null,
+    removeProperty: /* prop */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setProperty: (/* prop */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], /* create */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
+    setSource: (/* source */ js.UndefOr[js.Any], /* sourceConfig */ js.UndefOr[js.Any]) => scala.Unit = null,
     source: js.Any = null,
     sourceConfig: js.Any = null,
     valueField: java.lang.String = null
@@ -85,14 +80,14 @@ object IPropertyGrid {
     if (customEditors != null) __obj.updateDynamic("customEditors")(customEditors)
     if (customRenderers != null) __obj.updateDynamic("customRenderers")(customRenderers)
     if (!js.isUndefined(enableColumnMove)) __obj.updateDynamic("enableColumnMove")(enableColumnMove)
-    if (getSource != null) __obj.updateDynamic("getSource")(getSource)
+    if (getSource != null) __obj.updateDynamic("getSource")(js.Any.fromFunction0(getSource))
     if (!js.isUndefined(inferTypes)) __obj.updateDynamic("inferTypes")(inferTypes)
     if (nameColumnWidth != null) __obj.updateDynamic("nameColumnWidth")(nameColumnWidth)
     if (nameField != null) __obj.updateDynamic("nameField")(nameField)
     if (propertyNames != null) __obj.updateDynamic("propertyNames")(propertyNames)
-    if (removeProperty != null) __obj.updateDynamic("removeProperty")(removeProperty)
-    if (setProperty != null) __obj.updateDynamic("setProperty")(setProperty)
-    if (setSource != null) __obj.updateDynamic("setSource")(setSource)
+    if (removeProperty != null) __obj.updateDynamic("removeProperty")(js.Any.fromFunction1(removeProperty))
+    if (setProperty != null) __obj.updateDynamic("setProperty")(js.Any.fromFunction3(setProperty))
+    if (setSource != null) __obj.updateDynamic("setSource")(js.Any.fromFunction2(setSource))
     if (source != null) __obj.updateDynamic("source")(source)
     if (sourceConfig != null) __obj.updateDynamic("sourceConfig")(sourceConfig)
     if (valueField != null) __obj.updateDynamic("valueField")(valueField)

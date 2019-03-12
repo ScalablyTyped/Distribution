@@ -15,16 +15,10 @@ trait WatermarksResource extends js.Object {
 object WatermarksResource {
   @scala.inline
   def apply(
-    set: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltChannelIdFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    unset: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltChannelIdFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ]
+    set: gapiDotClientDotYoutubeLib.Anon_AltChannelIdFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    unset: gapiDotClientDotYoutubeLib.Anon_AltChannelIdFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   ): WatermarksResource = {
-    val __obj = js.Dynamic.literal(set = set, unset = unset)
+    val __obj = js.Dynamic.literal(set = js.Any.fromFunction1(set), unset = js.Any.fromFunction1(unset))
   
     __obj.asInstanceOf[WatermarksResource]
   }

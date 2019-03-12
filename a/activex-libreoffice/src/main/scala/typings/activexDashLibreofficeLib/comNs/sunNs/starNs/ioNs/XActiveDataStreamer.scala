@@ -28,13 +28,13 @@ object XActiveDataStreamer {
   @scala.inline
   def apply(
     Stream: XStream,
-    acquire: js.Function0[scala.Unit],
-    getStream: js.Function0[XStream],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setStream: js.Function1[XStream, scala.Unit]
+    acquire: () => scala.Unit,
+    getStream: () => XStream,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setStream: XStream => scala.Unit
   ): XActiveDataStreamer = {
-    val __obj = js.Dynamic.literal(Stream = Stream, acquire = acquire, getStream = getStream, queryInterface = queryInterface, release = release, setStream = setStream)
+    val __obj = js.Dynamic.literal(Stream = Stream, acquire = js.Any.fromFunction0(acquire), getStream = js.Any.fromFunction0(getStream), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setStream = js.Any.fromFunction1(setStream))
   
     __obj.asInstanceOf[XActiveDataStreamer]
   }

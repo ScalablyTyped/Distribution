@@ -31,7 +31,7 @@ object RoutingControlOptions {
     altLineOptions: LineOptions = null,
     alternativeClassName: java.lang.String = null,
     autoRoute: js.UndefOr[scala.Boolean] = js.undefined,
-    collapseBtn: js.Function1[/* itinerary */ Itinerary, scala.Unit] = null,
+    collapseBtn: /* itinerary */ Itinerary => scala.Unit = null,
     collapseBtnClass: java.lang.String = null,
     collapsible: js.UndefOr[scala.Boolean] = js.undefined,
     containerClassName: java.lang.String = null,
@@ -46,7 +46,7 @@ object RoutingControlOptions {
     plan: Plan = null,
     pointMarkerStyle: leafletLib.leafletMod.PathOptions = null,
     routeDragInterval: scala.Int | scala.Double = null,
-    routeLine: js.Function2[/* route */ IRoute, /* options */ LineOptions, Line] = null,
+    routeLine: (/* route */ IRoute, /* options */ LineOptions) => Line = null,
     routeWhileDragging: js.UndefOr[scala.Boolean] = js.undefined,
     router: IRouter = null,
     show: js.UndefOr[scala.Boolean] = js.undefined,
@@ -62,7 +62,7 @@ object RoutingControlOptions {
     if (altLineOptions != null) __obj.updateDynamic("altLineOptions")(altLineOptions)
     if (alternativeClassName != null) __obj.updateDynamic("alternativeClassName")(alternativeClassName)
     if (!js.isUndefined(autoRoute)) __obj.updateDynamic("autoRoute")(autoRoute)
-    if (collapseBtn != null) __obj.updateDynamic("collapseBtn")(collapseBtn)
+    if (collapseBtn != null) __obj.updateDynamic("collapseBtn")(js.Any.fromFunction1(collapseBtn))
     if (collapseBtnClass != null) __obj.updateDynamic("collapseBtnClass")(collapseBtnClass)
     if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
     if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName)
@@ -77,7 +77,7 @@ object RoutingControlOptions {
     if (plan != null) __obj.updateDynamic("plan")(plan)
     if (pointMarkerStyle != null) __obj.updateDynamic("pointMarkerStyle")(pointMarkerStyle)
     if (routeDragInterval != null) __obj.updateDynamic("routeDragInterval")(routeDragInterval.asInstanceOf[js.Any])
-    if (routeLine != null) __obj.updateDynamic("routeLine")(routeLine)
+    if (routeLine != null) __obj.updateDynamic("routeLine")(js.Any.fromFunction2(routeLine))
     if (!js.isUndefined(routeWhileDragging)) __obj.updateDynamic("routeWhileDragging")(routeWhileDragging)
     if (router != null) __obj.updateDynamic("router")(router)
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)

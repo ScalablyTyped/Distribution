@@ -15,15 +15,15 @@ object XComponentEnumerationAccess {
   @scala.inline
   def apply(
     ElementType: activexDashLibreofficeLib.`type`,
-    acquire: js.Function0[scala.Unit],
-    createComponentEnumeration: js.Function0[XComponentEnumeration],
-    createEnumeration: js.Function0[XEnumeration],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    hasElements: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createComponentEnumeration: () => XComponentEnumeration,
+    createEnumeration: () => XEnumeration,
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    hasElements: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XComponentEnumerationAccess = {
-    val __obj = js.Dynamic.literal(ElementType = ElementType, acquire = acquire, createComponentEnumeration = createComponentEnumeration, createEnumeration = createEnumeration, getElementType = getElementType, hasElements = hasElements, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ElementType = ElementType, acquire = js.Any.fromFunction0(acquire), createComponentEnumeration = js.Any.fromFunction0(createComponentEnumeration), createEnumeration = js.Any.fromFunction0(createEnumeration), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XComponentEnumerationAccess]
   }

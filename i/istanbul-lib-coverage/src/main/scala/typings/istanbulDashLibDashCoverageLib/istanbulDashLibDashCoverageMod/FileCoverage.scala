@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("istanbul-lib-coverage", "FileCoverage")
 @js.native
 class FileCoverage protected () extends FileCoverageData {
+  def this(data: FileCoverage) = this()
   def this(data: FileCoverageData) = this()
   def this(data: java.lang.String) = this()
   /* CompleteClass */

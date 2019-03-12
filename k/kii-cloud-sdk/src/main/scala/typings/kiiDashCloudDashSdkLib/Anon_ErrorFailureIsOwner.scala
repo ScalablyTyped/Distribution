@@ -13,10 +13,10 @@ trait Anon_ErrorFailureIsOwner[T /* <: kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser
 object Anon_ErrorFailureIsOwner {
   @scala.inline
   def apply[T /* <: kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser | kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup */](
-    failure: js.Function1[stdLib.Error, js.Any],
-    success: js.Function3[kiiDashCloudDashSdkLib.KiiCloudNs.KiiThing, T, scala.Boolean, js.Any]
+    failure: stdLib.Error => js.Any,
+    success: (kiiDashCloudDashSdkLib.KiiCloudNs.KiiThing, T, scala.Boolean) => js.Any
   ): Anon_ErrorFailureIsOwner[T] = {
-    val __obj = js.Dynamic.literal(failure = failure, success = success)
+    val __obj = js.Dynamic.literal(failure = js.Any.fromFunction1(failure), success = js.Any.fromFunction3(success))
   
     __obj.asInstanceOf[Anon_ErrorFailureIsOwner[T]]
   }

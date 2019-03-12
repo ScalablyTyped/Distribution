@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.Series")
 @js.native
 class Series protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var ApplyPictToEnd: scala.Boolean = js.native
   var ApplyPictToFront: scala.Boolean = js.native
   var ApplyPictToSides: scala.Boolean = js.native
   var AxisGroup: XlAxisGroup = js.native
   var BarShape: XlBarShape = js.native
-  val Border: Border = js.native
+  val Border: activexDashExcelLib.ExcelNs.Border = js.native
   var BubbleSizes: java.lang.String = js.native
   var ChartType: XlChartType = js.native
   val Creator: XlCreator = js.native
   @JSName("DataLabels")
   var DataLabels_Original: DataLabels with (js.Function1[/* Index */ scala.Double, DataLabel]) = js.native
-  val ErrorBars: ErrorBars = js.native
+  val ErrorBars: activexDashExcelLib.ExcelNs.ErrorBars = js.native
   var `Excel.Series_typekey`: Series = js.native
   var Explosion: scala.Double = js.native
   val Fill: ChartFillFormat = js.native
@@ -33,11 +33,11 @@ class Series protected () extends js.Object {
   var HasDataLabels: scala.Boolean = js.native
   var HasErrorBars: scala.Boolean = js.native
   var HasLeaderLines: scala.Boolean = js.native
-  val Interior: Interior = js.native
+  val Interior: activexDashExcelLib.ExcelNs.Interior = js.native
   var InvertColor: scala.Double = js.native
   var InvertColorIndex: scala.Double = js.native
   var InvertIfNegative: scala.Boolean = js.native
-  val LeaderLines: LeaderLines = js.native
+  val LeaderLines: activexDashExcelLib.ExcelNs.LeaderLines = js.native
   var MarkerBackgroundColor: scala.Double = js.native
   var MarkerBackgroundColorIndex: XlColorIndex = js.native
   var MarkerForegroundColor: scala.Double = js.native
@@ -58,8 +58,8 @@ class Series protected () extends js.Object {
   @JSName("Trendlines")
   var Trendlines_Original: Trendlines with (js.Function1[/* Index */ scala.Double | java.lang.String, Trendline]) = js.native
   var Type: scala.Double = js.native
-  var Values: Range | activexDashInteropLib.SafeArray[scala.Double] = js.native
-  var XValues: Range | activexDashInteropLib.SafeArray[scala.Double] = js.native
+  var Values: Range | stdLib.SafeArray[scala.Double] = js.native
+  var XValues: Range | stdLib.SafeArray[scala.Double] = js.native
   def ApplyCustomType(ChartType: XlChartType): scala.Unit = js.native
   /** @param Type [Type=2] */
   def ApplyDataLabels(

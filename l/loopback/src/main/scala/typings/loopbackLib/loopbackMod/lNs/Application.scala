@@ -99,6 +99,6 @@ trait Application extends PersistedModel {
     * @callback {() => void} callback
     * @param {Error} err
     */
-  def resetKeys(appId: js.Any, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def resetKeys(appId: js.Any, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
 }
 

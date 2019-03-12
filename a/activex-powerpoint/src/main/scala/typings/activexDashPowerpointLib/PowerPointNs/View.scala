@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.View")
 @js.native
 class View protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   var DisplaySlideMiniature: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   val MediaControlsHeight: scala.Double = js.native
   val MediaControlsLeft: scala.Double = js.native
@@ -17,7 +17,7 @@ class View protected () extends js.Object {
   val MediaControlsWidth: scala.Double = js.native
   val Parent: js.Any = js.native
   var `PowerPoint.View_typekey`: View = js.native
-  val PrintOptions: PrintOptions = js.native
+  val PrintOptions: activexDashPowerpointLib.PowerPointNs.PrintOptions = js.native
   var Slide: js.Any = js.native
   val Type: PpViewType = js.native
   var Zoom: scala.Double = js.native
@@ -40,7 +40,7 @@ class View protected () extends js.Object {
     IconLabel: js.UndefOr[java.lang.String],
     Link: js.UndefOr[activexDashOfficeLib.OfficeNs.MsoTriState]
   ): scala.Unit = js.native
-  def Player(ShapeId: js.Any): Player = js.native
+  def Player(ShapeId: js.Any): activexDashPowerpointLib.PowerPointNs.Player = js.native
   /**
     * @param number [From=-1]
     * @param number [To=-1]

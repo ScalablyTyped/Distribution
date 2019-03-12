@@ -118,18 +118,18 @@ object ModalProps {
     keyboard: js.UndefOr[scala.Boolean] = js.undefined,
     manager: reactDashOverlaysLib.libModalManagerMod.namespaced = null,
     onBackdropClick: js.Function = null,
-    onEnter: js.Function1[/* node */ reactLib.HTMLElement, _] = null,
-    onEntered: js.Function1[/* node */ reactLib.HTMLElement, _] = null,
-    onEntering: js.Function1[/* node */ reactLib.HTMLElement, _] = null,
+    onEnter: /* node */ stdLib.HTMLElement => _ = null,
+    onEntered: /* node */ stdLib.HTMLElement => _ = null,
+    onEntering: /* node */ stdLib.HTMLElement => _ = null,
     onEscapeKeyDown: js.Function = null,
-    onExit: js.Function1[/* node */ reactLib.HTMLElement, _] = null,
-    onExited: js.Function1[/* node */ reactLib.HTMLElement, _] = null,
-    onExiting: js.Function1[/* node */ reactLib.HTMLElement, _] = null,
+    onExit: /* node */ stdLib.HTMLElement => _ = null,
+    onExited: /* node */ stdLib.HTMLElement => _ = null,
+    onExiting: /* node */ stdLib.HTMLElement => _ = null,
     onHide: js.Function = null,
     onRendered: js.Function = null,
     onShow: js.Function = null,
-    renderBackdrop: js.Function1[/* props */ js.Any, reactLib.reactMod.ReactNs.ReactNode] = null,
-    renderDialog: js.Function1[/* props */ js.Any, reactLib.reactMod.ReactNs.ReactNode] = null,
+    renderBackdrop: /* props */ js.Any => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderDialog: /* props */ js.Any => reactLib.reactMod.ReactNs.ReactNode = null,
     restoreFocus: js.UndefOr[scala.Boolean] = js.undefined,
     show: js.UndefOr[scala.Boolean] = js.undefined,
     transition: reactLib.reactMod.ReactNs.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps] = null
@@ -145,18 +145,18 @@ object ModalProps {
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
     if (manager != null) __obj.updateDynamic("manager")(manager)
     if (onBackdropClick != null) __obj.updateDynamic("onBackdropClick")(onBackdropClick)
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
-    if (onEntered != null) __obj.updateDynamic("onEntered")(onEntered)
-    if (onEntering != null) __obj.updateDynamic("onEntering")(onEntering)
+    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1(onEnter))
+    if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction1(onEntered))
+    if (onEntering != null) __obj.updateDynamic("onEntering")(js.Any.fromFunction1(onEntering))
     if (onEscapeKeyDown != null) __obj.updateDynamic("onEscapeKeyDown")(onEscapeKeyDown)
-    if (onExit != null) __obj.updateDynamic("onExit")(onExit)
-    if (onExited != null) __obj.updateDynamic("onExited")(onExited)
-    if (onExiting != null) __obj.updateDynamic("onExiting")(onExiting)
+    if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction1(onExit))
+    if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction1(onExited))
+    if (onExiting != null) __obj.updateDynamic("onExiting")(js.Any.fromFunction1(onExiting))
     if (onHide != null) __obj.updateDynamic("onHide")(onHide)
     if (onRendered != null) __obj.updateDynamic("onRendered")(onRendered)
     if (onShow != null) __obj.updateDynamic("onShow")(onShow)
-    if (renderBackdrop != null) __obj.updateDynamic("renderBackdrop")(renderBackdrop)
-    if (renderDialog != null) __obj.updateDynamic("renderDialog")(renderDialog)
+    if (renderBackdrop != null) __obj.updateDynamic("renderBackdrop")(js.Any.fromFunction1(renderBackdrop))
+    if (renderDialog != null) __obj.updateDynamic("renderDialog")(js.Any.fromFunction1(renderDialog))
     if (!js.isUndefined(restoreFocus)) __obj.updateDynamic("restoreFocus")(restoreFocus)
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])

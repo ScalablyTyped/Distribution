@@ -172,34 +172,34 @@ trait QueryStringQuery extends Query {
 object QueryStringQuery {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    allowLeadingWildcard: js.Function1[scala.Boolean, QueryStringQuery],
-    analyzeWildcard: js.Function1[scala.Boolean, QueryStringQuery],
-    analyzer: js.Function1[java.lang.String, QueryStringQuery],
-    autoGeneratePhraseQueries: js.Function1[scala.Boolean, QueryStringQuery],
-    boost: js.Function1[scala.Double, QueryStringQuery],
-    defaultField: js.Function1[java.lang.String, QueryStringQuery],
-    defaultOperator: js.Function1[java.lang.String, QueryStringQuery],
-    enablePositionIncrements: js.Function1[scala.Boolean, QueryStringQuery],
-    escape: js.Function1[scala.Boolean, QueryStringQuery],
-    fields: js.Function1[js.Array[_], QueryStringQuery],
-    fuzzyMaxExpansions: js.Function1[scala.Double, QueryStringQuery],
-    fuzzyMinSim: js.Function1[scala.Double, QueryStringQuery],
-    fuzzyPrefixLength: js.Function1[scala.Double, QueryStringQuery],
-    fuzzyRewrite: js.Function1[java.lang.String, QueryStringQuery],
-    lenient: js.Function1[scala.Boolean, QueryStringQuery],
-    lowercaseExpandedTerms: js.Function1[scala.Boolean, QueryStringQuery],
-    minimumShouldMatch: js.Function1[scala.Double, QueryStringQuery],
-    phraseSlop: js.Function1[scala.Double, QueryStringQuery],
-    query: js.Function1[java.lang.String, QueryStringQuery],
-    quoteAnalyzer: js.Function1[java.lang.String, QueryStringQuery],
-    quoteFieldSuffix: js.Function1[java.lang.String, QueryStringQuery],
-    rewrite: js.Function1[java.lang.String, QueryStringQuery],
-    tieBreaker: js.Function1[scala.Double, QueryStringQuery],
-    toJSON: js.Function0[js.Any],
-    useDisMax: js.Function1[java.lang.String, QueryStringQuery]
+    _type: () => java.lang.String,
+    allowLeadingWildcard: scala.Boolean => QueryStringQuery,
+    analyzeWildcard: scala.Boolean => QueryStringQuery,
+    analyzer: java.lang.String => QueryStringQuery,
+    autoGeneratePhraseQueries: scala.Boolean => QueryStringQuery,
+    boost: scala.Double => QueryStringQuery,
+    defaultField: java.lang.String => QueryStringQuery,
+    defaultOperator: java.lang.String => QueryStringQuery,
+    enablePositionIncrements: scala.Boolean => QueryStringQuery,
+    escape: scala.Boolean => QueryStringQuery,
+    fields: js.Array[_] => QueryStringQuery,
+    fuzzyMaxExpansions: scala.Double => QueryStringQuery,
+    fuzzyMinSim: scala.Double => QueryStringQuery,
+    fuzzyPrefixLength: scala.Double => QueryStringQuery,
+    fuzzyRewrite: java.lang.String => QueryStringQuery,
+    lenient: scala.Boolean => QueryStringQuery,
+    lowercaseExpandedTerms: scala.Boolean => QueryStringQuery,
+    minimumShouldMatch: scala.Double => QueryStringQuery,
+    phraseSlop: scala.Double => QueryStringQuery,
+    query: java.lang.String => QueryStringQuery,
+    quoteAnalyzer: java.lang.String => QueryStringQuery,
+    quoteFieldSuffix: java.lang.String => QueryStringQuery,
+    rewrite: java.lang.String => QueryStringQuery,
+    tieBreaker: scala.Double => QueryStringQuery,
+    toJSON: () => js.Any,
+    useDisMax: java.lang.String => QueryStringQuery
   ): QueryStringQuery = {
-    val __obj = js.Dynamic.literal(_type = _type, allowLeadingWildcard = allowLeadingWildcard, analyzeWildcard = analyzeWildcard, analyzer = analyzer, autoGeneratePhraseQueries = autoGeneratePhraseQueries, boost = boost, defaultField = defaultField, defaultOperator = defaultOperator, enablePositionIncrements = enablePositionIncrements, escape = escape, fields = fields, fuzzyMaxExpansions = fuzzyMaxExpansions, fuzzyMinSim = fuzzyMinSim, fuzzyPrefixLength = fuzzyPrefixLength, fuzzyRewrite = fuzzyRewrite, lenient = lenient, lowercaseExpandedTerms = lowercaseExpandedTerms, minimumShouldMatch = minimumShouldMatch, phraseSlop = phraseSlop, query = query, quoteAnalyzer = quoteAnalyzer, quoteFieldSuffix = quoteFieldSuffix, rewrite = rewrite, tieBreaker = tieBreaker, toJSON = toJSON, useDisMax = useDisMax)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), allowLeadingWildcard = js.Any.fromFunction1(allowLeadingWildcard), analyzeWildcard = js.Any.fromFunction1(analyzeWildcard), analyzer = js.Any.fromFunction1(analyzer), autoGeneratePhraseQueries = js.Any.fromFunction1(autoGeneratePhraseQueries), boost = js.Any.fromFunction1(boost), defaultField = js.Any.fromFunction1(defaultField), defaultOperator = js.Any.fromFunction1(defaultOperator), enablePositionIncrements = js.Any.fromFunction1(enablePositionIncrements), escape = js.Any.fromFunction1(escape), fields = js.Any.fromFunction1(fields), fuzzyMaxExpansions = js.Any.fromFunction1(fuzzyMaxExpansions), fuzzyMinSim = js.Any.fromFunction1(fuzzyMinSim), fuzzyPrefixLength = js.Any.fromFunction1(fuzzyPrefixLength), fuzzyRewrite = js.Any.fromFunction1(fuzzyRewrite), lenient = js.Any.fromFunction1(lenient), lowercaseExpandedTerms = js.Any.fromFunction1(lowercaseExpandedTerms), minimumShouldMatch = js.Any.fromFunction1(minimumShouldMatch), phraseSlop = js.Any.fromFunction1(phraseSlop), query = js.Any.fromFunction1(query), quoteAnalyzer = js.Any.fromFunction1(quoteAnalyzer), quoteFieldSuffix = js.Any.fromFunction1(quoteFieldSuffix), rewrite = js.Any.fromFunction1(rewrite), tieBreaker = js.Any.fromFunction1(tieBreaker), toJSON = js.Any.fromFunction0(toJSON), useDisMax = js.Any.fromFunction1(useDisMax))
   
     __obj.asInstanceOf[QueryStringQuery]
   }

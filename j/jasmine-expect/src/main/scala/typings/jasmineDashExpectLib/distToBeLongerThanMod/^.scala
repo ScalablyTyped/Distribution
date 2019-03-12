@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jasmine-expect/dist/toBeLongerThan", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val toBeLongerThan: jasmineDashExpectLib.distToBeLongerThanMod.ToBeLongerThan = js.native
+  val toBeLongerThan: ToBeLongerThan = js.native
 }
 

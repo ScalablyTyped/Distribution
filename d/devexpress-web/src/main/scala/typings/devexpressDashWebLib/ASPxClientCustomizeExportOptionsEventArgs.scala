@@ -28,12 +28,12 @@ trait ASPxClientCustomizeExportOptionsEventArgs extends ASPxClientEventArgs {
 object ASPxClientCustomizeExportOptionsEventArgs {
   @scala.inline
   def apply(
-    GetExportOptionsModel: js.Function1[js.Object, js.Object],
-    HideExportOptionsPanel: js.Function0[scala.Unit],
-    HideFormat: js.Function1[js.Object, scala.Unit],
-    HideProperties: js.Function2[js.Object, js.Array[js.Object], scala.Unit]
+    GetExportOptionsModel: js.Object => js.Object,
+    HideExportOptionsPanel: () => scala.Unit,
+    HideFormat: js.Object => scala.Unit,
+    HideProperties: (js.Object, js.Array[js.Object]) => scala.Unit
   ): ASPxClientCustomizeExportOptionsEventArgs = {
-    val __obj = js.Dynamic.literal(GetExportOptionsModel = GetExportOptionsModel, HideExportOptionsPanel = HideExportOptionsPanel, HideFormat = HideFormat, HideProperties = HideProperties)
+    val __obj = js.Dynamic.literal(GetExportOptionsModel = js.Any.fromFunction1(GetExportOptionsModel), HideExportOptionsPanel = js.Any.fromFunction0(HideExportOptionsPanel), HideFormat = js.Any.fromFunction1(HideFormat), HideProperties = js.Any.fromFunction2(HideProperties))
   
     __obj.asInstanceOf[ASPxClientCustomizeExportOptionsEventArgs]
   }

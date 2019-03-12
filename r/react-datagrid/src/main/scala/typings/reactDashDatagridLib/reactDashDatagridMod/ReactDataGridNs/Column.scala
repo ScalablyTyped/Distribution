@@ -70,7 +70,7 @@ object Column {
     defaultVisible: js.UndefOr[scala.Boolean] = js.undefined,
     flex: scala.Int | scala.Double = null,
     minWidth: scala.Int | scala.Double = null,
-    render: js.Function3[/* value */ js.Any, /* data */ js.Any, /* cellProps */ CellProps, _] = null,
+    render: (/* value */ js.Any, /* data */ js.Any, /* cellProps */ CellProps) => _ = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     textAlign: java.lang.String = null,
     title: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
@@ -83,7 +83,7 @@ object Column {
     if (!js.isUndefined(defaultVisible)) __obj.updateDynamic("defaultVisible")(defaultVisible)
     if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction3(render))
     if (style != null) __obj.updateDynamic("style")(style)
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

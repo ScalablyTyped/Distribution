@@ -25,20 +25,20 @@ object PreviousMap {
   @scala.inline
   def apply(
     annotation: java.lang.String,
-    consumer: js.Function0[js.Any],
+    consumer: () => js.Any,
     consumerCache: js.Any,
-    decodeInline: js.Function1[js.Any, js.Any],
+    decodeInline: js.Any => js.Any,
     file: java.lang.String,
     `inline`: js.Any,
-    isMap: js.Function1[js.Any, scala.Boolean],
-    loadAnnotation: js.Function1[js.Any, scala.Unit],
-    loadMap: js.Function2[js.Any, js.Any, js.Any],
+    isMap: js.Any => scala.Boolean,
+    loadAnnotation: js.Any => scala.Unit,
+    loadMap: (js.Any, js.Any) => js.Any,
     root: java.lang.String,
-    startWith: js.Function2[js.Any, js.Any, scala.Boolean],
+    startWith: (js.Any, js.Any) => scala.Boolean,
     text: java.lang.String,
-    withContent: js.Function0[scala.Boolean]
+    withContent: () => scala.Boolean
   ): PreviousMap = {
-    val __obj = js.Dynamic.literal(annotation = annotation, consumer = consumer, consumerCache = consumerCache, decodeInline = decodeInline, file = file, isMap = isMap, loadAnnotation = loadAnnotation, loadMap = loadMap, root = root, startWith = startWith, text = text, withContent = withContent)
+    val __obj = js.Dynamic.literal(annotation = annotation, consumer = js.Any.fromFunction0(consumer), consumerCache = consumerCache, decodeInline = js.Any.fromFunction1(decodeInline), file = file, isMap = js.Any.fromFunction1(isMap), loadAnnotation = js.Any.fromFunction1(loadAnnotation), loadMap = js.Any.fromFunction2(loadMap), root = root, startWith = js.Any.fromFunction2(startWith), text = text, withContent = js.Any.fromFunction0(withContent))
     __obj.updateDynamic("inline")(`inline`)
     __obj.asInstanceOf[PreviousMap]
   }

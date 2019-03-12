@@ -70,16 +70,16 @@ trait RegexpQuery extends Query {
 object RegexpQuery {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    boost: js.Function1[scala.Double, RegexpQuery],
-    field: js.Function1[java.lang.String, RegexpQuery],
-    flags: js.Function1[java.lang.String, RegexpQuery],
-    flagsValue: js.Function1[java.lang.String, RegexpQuery],
-    rewrite: js.Function1[java.lang.String, RegexpQuery],
-    toJSON: js.Function0[js.Any],
-    value: js.Function1[java.lang.String, RegexpQuery]
+    _type: () => java.lang.String,
+    boost: scala.Double => RegexpQuery,
+    field: java.lang.String => RegexpQuery,
+    flags: java.lang.String => RegexpQuery,
+    flagsValue: java.lang.String => RegexpQuery,
+    rewrite: java.lang.String => RegexpQuery,
+    toJSON: () => js.Any,
+    value: java.lang.String => RegexpQuery
   ): RegexpQuery = {
-    val __obj = js.Dynamic.literal(_type = _type, boost = boost, field = field, flags = flags, flagsValue = flagsValue, rewrite = rewrite, toJSON = toJSON, value = value)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), boost = js.Any.fromFunction1(boost), field = js.Any.fromFunction1(field), flags = js.Any.fromFunction1(flags), flagsValue = js.Any.fromFunction1(flagsValue), rewrite = js.Any.fromFunction1(rewrite), toJSON = js.Any.fromFunction0(toJSON), value = js.Any.fromFunction1(value))
   
     __obj.asInstanceOf[RegexpQuery]
   }

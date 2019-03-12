@@ -29,15 +29,15 @@ object XPropertyTypeDescription {
     PropertyFlags: scala.Double,
     PropertyTypeDescription: XTypeDescription,
     TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
-    acquire: js.Function0[scala.Unit],
-    getName: js.Function0[java.lang.String],
-    getPropertyFlags: js.Function0[scala.Double],
-    getPropertyTypeDescription: js.Function0[XTypeDescription],
-    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getName: () => java.lang.String,
+    getPropertyFlags: () => scala.Double,
+    getPropertyTypeDescription: () => XTypeDescription,
+    getTypeClass: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XPropertyTypeDescription = {
-    val __obj = js.Dynamic.literal(Name = Name, PropertyFlags = PropertyFlags, PropertyTypeDescription = PropertyTypeDescription, TypeClass = TypeClass, acquire = acquire, getName = getName, getPropertyFlags = getPropertyFlags, getPropertyTypeDescription = getPropertyTypeDescription, getTypeClass = getTypeClass, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Name = Name, PropertyFlags = PropertyFlags, PropertyTypeDescription = PropertyTypeDescription, TypeClass = TypeClass, acquire = js.Any.fromFunction0(acquire), getName = js.Any.fromFunction0(getName), getPropertyFlags = js.Any.fromFunction0(getPropertyFlags), getPropertyTypeDescription = js.Any.fromFunction0(getPropertyTypeDescription), getTypeClass = js.Any.fromFunction0(getTypeClass), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XPropertyTypeDescription]
   }

@@ -41,11 +41,11 @@ object MapViewAnnotation {
     id: java.lang.String = null,
     image: ImageURISource = null,
     leftCalloutView: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    onBlur: js.Function0[_] = null,
-    onDragStateChange: js.Function0[_] = null,
-    onFocus: js.Function0[_] = null,
-    onLeftCalloutPress: js.Function0[scala.Unit] = null,
-    onRightCalloutPress: js.Function0[scala.Unit] = null,
+    onBlur: () => _ = null,
+    onDragStateChange: () => _ = null,
+    onFocus: () => _ = null,
+    onLeftCalloutPress: () => scala.Unit = null,
+    onRightCalloutPress: () => scala.Unit = null,
     rightCalloutView: reactLib.reactMod.ReactNs.ReactElement[_] = null,
     subtitle: java.lang.String = null,
     tintColor: java.lang.String = null,
@@ -61,11 +61,11 @@ object MapViewAnnotation {
     if (id != null) __obj.updateDynamic("id")(id)
     if (image != null) __obj.updateDynamic("image")(image)
     if (leftCalloutView != null) __obj.updateDynamic("leftCalloutView")(leftCalloutView)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onDragStateChange != null) __obj.updateDynamic("onDragStateChange")(onDragStateChange)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onLeftCalloutPress != null) __obj.updateDynamic("onLeftCalloutPress")(onLeftCalloutPress)
-    if (onRightCalloutPress != null) __obj.updateDynamic("onRightCalloutPress")(onRightCalloutPress)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
+    if (onDragStateChange != null) __obj.updateDynamic("onDragStateChange")(js.Any.fromFunction0(onDragStateChange))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction0(onFocus))
+    if (onLeftCalloutPress != null) __obj.updateDynamic("onLeftCalloutPress")(js.Any.fromFunction0(onLeftCalloutPress))
+    if (onRightCalloutPress != null) __obj.updateDynamic("onRightCalloutPress")(js.Any.fromFunction0(onRightCalloutPress))
     if (rightCalloutView != null) __obj.updateDynamic("rightCalloutView")(rightCalloutView)
     if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
     if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RecentFiles extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Count: scala.Double = js.native
   val Creator: XlCreator = js.native
   var Maximum: scala.Double = js.native

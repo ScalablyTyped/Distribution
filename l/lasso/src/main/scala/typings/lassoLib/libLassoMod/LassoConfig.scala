@@ -34,8 +34,8 @@ object LassoConfig {
     baseDir: java.lang.String = null,
     bundles: js.Array[lassoLib.libDependenciesMod.Bundle] = null,
     bundlingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    cspNonceProvider: js.Function1[/* out */ js.Any, java.lang.String] = null,
-    fingerprintInlineCode: js.Function1[/* code */ js.Any, java.lang.String] = null,
+    cspNonceProvider: /* out */ js.Any => java.lang.String = null,
+    fingerprintInlineCode: /* code */ js.Any => java.lang.String = null,
     fingerprintsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     includeSlotNames: js.UndefOr[scala.Boolean] = js.undefined,
     minify: js.UndefOr[scala.Boolean] = js.undefined,
@@ -56,8 +56,8 @@ object LassoConfig {
     if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir)
     if (bundles != null) __obj.updateDynamic("bundles")(bundles)
     if (!js.isUndefined(bundlingEnabled)) __obj.updateDynamic("bundlingEnabled")(bundlingEnabled)
-    if (cspNonceProvider != null) __obj.updateDynamic("cspNonceProvider")(cspNonceProvider)
-    if (fingerprintInlineCode != null) __obj.updateDynamic("fingerprintInlineCode")(fingerprintInlineCode)
+    if (cspNonceProvider != null) __obj.updateDynamic("cspNonceProvider")(js.Any.fromFunction1(cspNonceProvider))
+    if (fingerprintInlineCode != null) __obj.updateDynamic("fingerprintInlineCode")(js.Any.fromFunction1(fingerprintInlineCode))
     if (!js.isUndefined(fingerprintsEnabled)) __obj.updateDynamic("fingerprintsEnabled")(fingerprintsEnabled)
     if (!js.isUndefined(includeSlotNames)) __obj.updateDynamic("includeSlotNames")(includeSlotNames)
     if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify)

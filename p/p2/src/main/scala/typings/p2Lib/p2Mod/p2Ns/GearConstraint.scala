@@ -20,15 +20,15 @@ object GearConstraint {
     bodyB: Body,
     collideConnected: scala.Boolean,
     equeations: js.Array[Equation],
-    getMaxTorque: js.Function0[scala.Double],
+    getMaxTorque: () => scala.Double,
     ratio: scala.Double,
-    setMaxTorque: js.Function1[scala.Double, scala.Unit],
-    setRelaxation: js.Function1[scala.Double, scala.Unit],
-    setStiffness: js.Function1[scala.Double, scala.Unit],
+    setMaxTorque: scala.Double => scala.Unit,
+    setRelaxation: scala.Double => scala.Unit,
+    setStiffness: scala.Double => scala.Unit,
     `type`: scala.Double,
-    update: js.Function0[scala.Unit]
+    update: () => scala.Unit
   ): GearConstraint = {
-    val __obj = js.Dynamic.literal(angle = angle, bodyA = bodyA, bodyB = bodyB, collideConnected = collideConnected, equeations = equeations, getMaxTorque = getMaxTorque, ratio = ratio, setMaxTorque = setMaxTorque, setRelaxation = setRelaxation, setStiffness = setStiffness, update = update)
+    val __obj = js.Dynamic.literal(angle = angle, bodyA = bodyA, bodyB = bodyB, collideConnected = collideConnected, equeations = equeations, getMaxTorque = js.Any.fromFunction0(getMaxTorque), ratio = ratio, setMaxTorque = js.Any.fromFunction1(setMaxTorque), setRelaxation = js.Any.fromFunction1(setRelaxation), setStiffness = js.Any.fromFunction1(setStiffness), update = js.Any.fromFunction0(update))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GearConstraint]
   }

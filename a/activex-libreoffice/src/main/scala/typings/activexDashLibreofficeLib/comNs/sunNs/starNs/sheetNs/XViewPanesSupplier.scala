@@ -21,12 +21,12 @@ object XViewPanesSupplier {
   @scala.inline
   def apply(
     ViewPanes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
-    acquire: js.Function0[scala.Unit],
-    getViewPanes: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getViewPanes: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XViewPanesSupplier = {
-    val __obj = js.Dynamic.literal(ViewPanes = ViewPanes, acquire = acquire, getViewPanes = getViewPanes, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ViewPanes = ViewPanes, acquire = js.Any.fromFunction0(acquire), getViewPanes = js.Any.fromFunction0(getViewPanes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XViewPanesSupplier]
   }

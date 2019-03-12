@@ -18,15 +18,15 @@ trait JQuery extends js.Object {
 object JQuery {
   @scala.inline
   def apply(
-    w2form: js.Function1[js.Object, w2uiLib.W2UINs.W2Form],
-    w2grid: js.Function1[js.Object, w2uiLib.W2UINs.W2Grid],
-    w2layout: js.Function1[js.Object, w2uiLib.W2UINs.W2Layout],
-    w2popup: js.Function1[js.Object, w2uiLib.W2UINs.W2Popup],
-    w2sidebar: js.Function1[js.Object, w2uiLib.W2UINs.W2Sidebar],
-    w2tabs: js.Function1[js.Object, w2uiLib.W2UINs.W2Tabs],
-    w2toolbar: js.Function1[js.Object, w2uiLib.W2UINs.W2Toolbar]
+    w2form: js.Object => w2uiLib.W2UINs.W2Form,
+    w2grid: js.Object => w2uiLib.W2UINs.W2Grid,
+    w2layout: js.Object => w2uiLib.W2UINs.W2Layout,
+    w2popup: js.Object => w2uiLib.W2UINs.W2Popup,
+    w2sidebar: js.Object => w2uiLib.W2UINs.W2Sidebar,
+    w2tabs: js.Object => w2uiLib.W2UINs.W2Tabs,
+    w2toolbar: js.Object => w2uiLib.W2UINs.W2Toolbar
   ): JQuery = {
-    val __obj = js.Dynamic.literal(w2form = w2form, w2grid = w2grid, w2layout = w2layout, w2popup = w2popup, w2sidebar = w2sidebar, w2tabs = w2tabs, w2toolbar = w2toolbar)
+    val __obj = js.Dynamic.literal(w2form = js.Any.fromFunction1(w2form), w2grid = js.Any.fromFunction1(w2grid), w2layout = js.Any.fromFunction1(w2layout), w2popup = js.Any.fromFunction1(w2popup), w2sidebar = js.Any.fromFunction1(w2sidebar), w2tabs = js.Any.fromFunction1(w2tabs), w2toolbar = js.Any.fromFunction1(w2toolbar))
   
     __obj.asInstanceOf[JQuery]
   }

@@ -20,7 +20,7 @@ trait Component[Attrs, State /* <: Lifecycle[Attrs, State] */]
 object Component {
   @scala.inline
   def apply[Attrs, State /* <: Lifecycle[Attrs, State] */](
-    view: js.Function2[State, Vnode[Attrs, State], Children | scala.Null | scala.Unit],
+    view: (State, Vnode[Attrs, State]) => Children | scala.Null | scala.Unit,
     onbeforeremove: js.ThisFunction1[State, /* vnode */ VnodeDOM[Attrs, State], js.Promise[_] | scala.Unit] = null,
     onbeforeupdate: js.ThisFunction2[
       State, 
@@ -33,7 +33,7 @@ object Component {
     onremove: js.ThisFunction1[State, /* vnode */ VnodeDOM[Attrs, State], _] = null,
     onupdate: js.ThisFunction1[State, /* vnode */ VnodeDOM[Attrs, State], _] = null
   ): Component[Attrs, State] = {
-    val __obj = js.Dynamic.literal(view = view)
+    val __obj = js.Dynamic.literal(view = js.Any.fromFunction2(view))
     if (onbeforeremove != null) __obj.updateDynamic("onbeforeremove")(onbeforeremove)
     if (onbeforeupdate != null) __obj.updateDynamic("onbeforeupdate")(onbeforeupdate)
     if (oncreate != null) __obj.updateDynamic("oncreate")(oncreate)

@@ -25,7 +25,7 @@ trait DictionaryListEvent
     * com.sun.star.linguistic2.DictionaryListEvent.nCondensedEvent()} .
     * @see com.sun.star.linguistic2.DictionaryEvent
     */
-  var aDictionaryEvents: activexDashInteropLib.SafeArray[DictionaryEvent]
+  var aDictionaryEvents: stdLib.SafeArray[DictionaryEvent]
   /**
     * the combined type of the accumulated events.
     *
@@ -39,7 +39,7 @@ object DictionaryListEvent {
   @scala.inline
   def apply(
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
-    aDictionaryEvents: activexDashInteropLib.SafeArray[DictionaryEvent],
+    aDictionaryEvents: stdLib.SafeArray[DictionaryEvent],
     nCondensedEvent: scala.Double
   ): DictionaryListEvent = {
     val __obj = js.Dynamic.literal(Source = Source, aDictionaryEvents = aDictionaryEvents, nCondensedEvent = nCondensedEvent)

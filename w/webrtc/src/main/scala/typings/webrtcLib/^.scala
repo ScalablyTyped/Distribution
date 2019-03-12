@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   // to use with adapter.js, see: https://github.com/webrtc/adapter
-  var getUserMedia: webrtcLib.NavigatorGetUserMedia = js.native
+  var getUserMedia: NavigatorGetUserMedia = js.native
 }
 

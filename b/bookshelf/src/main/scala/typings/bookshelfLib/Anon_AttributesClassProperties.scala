@@ -11,7 +11,7 @@ trait Anon_AttributesClassProperties
       bookshelfLib.bookshelfMod.BookshelfNs.Collection[bookshelfLib.bookshelfMod.BookshelfNs.Model[js.Any]]
     ] {
   // See https://github.com/tgriesser/bookshelf/blob/0.9.4/src/collection.js#L389
-  var EmptyError: createDashErrorLib.createDashErrorMod.createErrorNs.Error[nodeLib.Error] = js.native
+  var EmptyError: createDashErrorLib.createDashErrorMod.createErrorNs.Error[stdLib.Error] = js.native
   /** @deprecated use Typescript classes */
   def extend[T](): js.Function = js.native
   def extend[T](prototypeProperties: js.Any): js.Function = js.native

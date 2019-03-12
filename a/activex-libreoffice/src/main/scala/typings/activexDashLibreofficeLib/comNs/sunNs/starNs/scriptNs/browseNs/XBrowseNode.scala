@@ -15,7 +15,7 @@ trait XBrowseNode
     * Get the children of this node
     * @returns {@link com.sun.star.script.browse.XBrowseNode} sequence of child nodes
     */
-  val ChildNodes: activexDashInteropLib.SafeArray[XBrowseNode]
+  val ChildNodes: stdLib.SafeArray[XBrowseNode]
   /**
     * Get the name of the node
     * @returns The `string` name of this node
@@ -30,7 +30,7 @@ trait XBrowseNode
     * Get the children of this node
     * @returns {@link com.sun.star.script.browse.XBrowseNode} sequence of child nodes
     */
-  def getChildNodes(): activexDashInteropLib.SafeArray[XBrowseNode]
+  def getChildNodes(): stdLib.SafeArray[XBrowseNode]
   /**
     * Get the name of the node
     * @returns The `string` name of this node
@@ -51,18 +51,18 @@ trait XBrowseNode
 object XBrowseNode {
   @scala.inline
   def apply(
-    ChildNodes: activexDashInteropLib.SafeArray[XBrowseNode],
+    ChildNodes: stdLib.SafeArray[XBrowseNode],
     Name: java.lang.String,
     Type: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getChildNodes: js.Function0[activexDashInteropLib.SafeArray[XBrowseNode]],
-    getName: js.Function0[java.lang.String],
-    getType: js.Function0[scala.Double],
-    hasChildNodes: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getChildNodes: () => stdLib.SafeArray[XBrowseNode],
+    getName: () => java.lang.String,
+    getType: () => scala.Double,
+    hasChildNodes: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XBrowseNode = {
-    val __obj = js.Dynamic.literal(ChildNodes = ChildNodes, Name = Name, Type = Type, acquire = acquire, getChildNodes = getChildNodes, getName = getName, getType = getType, hasChildNodes = hasChildNodes, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ChildNodes = ChildNodes, Name = Name, Type = Type, acquire = js.Any.fromFunction0(acquire), getChildNodes = js.Any.fromFunction0(getChildNodes), getName = js.Any.fromFunction0(getName), getType = js.Any.fromFunction0(getType), hasChildNodes = js.Any.fromFunction0(hasChildNodes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XBrowseNode]
   }

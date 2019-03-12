@@ -20,11 +20,11 @@ object AtPixelOptions {
   @scala.inline
   def apply(
     hitTolerance: scala.Int | scala.Double = null,
-    layerFilter: js.Function1[/* layer */ openlayersLib.openlayersMod.layerNs.Layer, scala.Boolean] = null
+    layerFilter: /* layer */ openlayersLib.openlayersMod.layerNs.Layer => scala.Boolean = null
   ): AtPixelOptions = {
     val __obj = js.Dynamic.literal()
     if (hitTolerance != null) __obj.updateDynamic("hitTolerance")(hitTolerance.asInstanceOf[js.Any])
-    if (layerFilter != null) __obj.updateDynamic("layerFilter")(layerFilter)
+    if (layerFilter != null) __obj.updateDynamic("layerFilter")(js.Any.fromFunction1(layerFilter))
     __obj.asInstanceOf[AtPixelOptions]
   }
 }

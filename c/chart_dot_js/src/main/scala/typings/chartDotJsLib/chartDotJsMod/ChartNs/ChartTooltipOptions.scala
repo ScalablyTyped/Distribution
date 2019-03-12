@@ -60,10 +60,10 @@ object ChartTooltipOptions {
     caretPadding: scala.Int | scala.Double = null,
     caretSize: scala.Int | scala.Double = null,
     cornerRadius: scala.Int | scala.Double = null,
-    custom: js.Function1[/* a */ js.Any, scala.Unit] = null,
+    custom: /* a */ js.Any => scala.Unit = null,
     displayColors: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
-    filter: js.Function2[/* item */ ChartTooltipItem, /* data */ ChartData, scala.Boolean] = null,
+    filter: (/* item */ ChartTooltipItem, /* data */ ChartData) => scala.Boolean = null,
     footerFontColor: ChartColor = null,
     footerFontFamily: java.lang.String = null,
     footerFontSize: scala.Int | scala.Double = null,
@@ -71,7 +71,7 @@ object ChartTooltipOptions {
     footerMarginTop: scala.Int | scala.Double = null,
     footerSpacing: scala.Int | scala.Double = null,
     intersect: js.UndefOr[scala.Boolean] = js.undefined,
-    itemSort: js.Function2[/* itemA */ ChartTooltipItem, /* itemB */ ChartTooltipItem, scala.Double] = null,
+    itemSort: (/* itemA */ ChartTooltipItem, /* itemB */ ChartTooltipItem) => scala.Double = null,
     mode: InteractionMode = null,
     multiKeyBackground: java.lang.String = null,
     position: java.lang.String = null,
@@ -97,10 +97,10 @@ object ChartTooltipOptions {
     if (caretPadding != null) __obj.updateDynamic("caretPadding")(caretPadding.asInstanceOf[js.Any])
     if (caretSize != null) __obj.updateDynamic("caretSize")(caretSize.asInstanceOf[js.Any])
     if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
-    if (custom != null) __obj.updateDynamic("custom")(custom)
+    if (custom != null) __obj.updateDynamic("custom")(js.Any.fromFunction1(custom))
     if (!js.isUndefined(displayColors)) __obj.updateDynamic("displayColors")(displayColors)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
     if (footerFontColor != null) __obj.updateDynamic("footerFontColor")(footerFontColor.asInstanceOf[js.Any])
     if (footerFontFamily != null) __obj.updateDynamic("footerFontFamily")(footerFontFamily)
     if (footerFontSize != null) __obj.updateDynamic("footerFontSize")(footerFontSize.asInstanceOf[js.Any])
@@ -108,7 +108,7 @@ object ChartTooltipOptions {
     if (footerMarginTop != null) __obj.updateDynamic("footerMarginTop")(footerMarginTop.asInstanceOf[js.Any])
     if (footerSpacing != null) __obj.updateDynamic("footerSpacing")(footerSpacing.asInstanceOf[js.Any])
     if (!js.isUndefined(intersect)) __obj.updateDynamic("intersect")(intersect)
-    if (itemSort != null) __obj.updateDynamic("itemSort")(itemSort)
+    if (itemSort != null) __obj.updateDynamic("itemSort")(js.Any.fromFunction2(itemSort))
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (multiKeyBackground != null) __obj.updateDynamic("multiKeyBackground")(multiKeyBackground)
     if (position != null) __obj.updateDynamic("position")(position)

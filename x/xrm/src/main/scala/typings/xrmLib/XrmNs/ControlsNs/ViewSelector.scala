@@ -30,11 +30,11 @@ trait ViewSelector extends js.Object {
 object ViewSelector {
   @scala.inline
   def apply(
-    getCurrentView: js.Function0[ViewSelectorItem],
-    isVisible: js.Function0[scala.Boolean],
-    setCurrentView: js.Function1[ViewSelectorItem, scala.Unit]
+    getCurrentView: () => ViewSelectorItem,
+    isVisible: () => scala.Boolean,
+    setCurrentView: ViewSelectorItem => scala.Unit
   ): ViewSelector = {
-    val __obj = js.Dynamic.literal(getCurrentView = getCurrentView, isVisible = isVisible, setCurrentView = setCurrentView)
+    val __obj = js.Dynamic.literal(getCurrentView = js.Any.fromFunction0(getCurrentView), isVisible = js.Any.fromFunction0(isVisible), setCurrentView = js.Any.fromFunction1(setCurrentView))
   
     __obj.asInstanceOf[ViewSelector]
   }

@@ -213,23 +213,11 @@ object MultiselectProps {
     listProps: js.Object = null,
     messages: MultiselectMessages = null,
     minLength: scala.Int | scala.Double = null,
-    onChange: js.Function2[
-      /* dataItems */ js.Array[_], 
-      /* metadata */ reactDashWidgetsLib.Anon_Action, 
-      scala.Unit
-    ] = null,
-    onCreate: js.Function1[/* searchTerm */ java.lang.String, scala.Unit] = null,
-    onSearch: js.Function2[
-      /* searchTerm */ java.lang.String, 
-      /* metadata */ reactDashWidgetsLib.Anon_ActionClear, 
-      scala.Unit
-    ] = null,
-    onSelect: js.Function2[
-      /* value */ js.Any, 
-      /* metadata */ reactDashWidgetsLib.Anon_OriginalEvent, 
-      scala.Unit
-    ] = null,
-    onToggle: js.Function1[/* isOpen */ scala.Boolean, scala.Unit] = null,
+    onChange: (/* dataItems */ js.Array[_], /* metadata */ reactDashWidgetsLib.Anon_Action) => scala.Unit = null,
+    onCreate: /* searchTerm */ java.lang.String => scala.Unit = null,
+    onSearch: (/* searchTerm */ java.lang.String, /* metadata */ reactDashWidgetsLib.Anon_ActionClear) => scala.Unit = null,
+    onSelect: (/* value */ js.Any, /* metadata */ reactDashWidgetsLib.Anon_OriginalEvent) => scala.Unit = null,
+    onToggle: /* isOpen */ scala.Boolean => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     placeholder: java.lang.String = null,
     popupTransition: reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String = null,
@@ -265,11 +253,11 @@ object MultiselectProps {
     if (listProps != null) __obj.updateDynamic("listProps")(listProps)
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onCreate != null) __obj.updateDynamic("onCreate")(onCreate)
-    if (onSearch != null) __obj.updateDynamic("onSearch")(onSearch)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (onToggle != null) __obj.updateDynamic("onToggle")(onToggle)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onCreate != null) __obj.updateDynamic("onCreate")(js.Any.fromFunction1(onCreate))
+    if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction2(onSearch))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
+    if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction1(onToggle))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (popupTransition != null) __obj.updateDynamic("popupTransition")(popupTransition.asInstanceOf[js.Any])

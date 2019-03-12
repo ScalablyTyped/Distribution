@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-apollo", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val ApolloConsumer: reactLib.reactMod.ReactNs.StatelessComponent[reactDashApolloLib.apolloconsumerMod.ApolloConsumerProps] = js.native
+  val ApolloConsumer: reactLib.reactMod.ReactNs.StatelessComponent[reactDashApolloLib.apolloConsumerMod.ApolloConsumerProps] = js.native
   def compose(funcs: js.Function*): js.Function1[/* repeated */ js.Any, _] = js.native
   def getDataFromTree(tree: reactLib.reactMod.ReactNs.ReactNode): js.Promise[java.lang.String] = js.native
   def getDataFromTree(

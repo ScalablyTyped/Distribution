@@ -15,19 +15,11 @@ object Monoidal {
   @scala.inline
   def apply[F](
     URI: F,
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.HKT[F, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.HKT[F, js.Any]
-    ],
-    mult: js.Function2[
-      fpDashTsLib.libHKTMod.HKT[F, js.Any], 
-      fpDashTsLib.libHKTMod.HKT[F, js.Any], 
-      fpDashTsLib.libHKTMod.HKT[F, js.Tuple2[js.Any, js.Any]]
-    ],
-    unit: js.Function0[fpDashTsLib.libHKTMod.HKT[F, scala.Unit]]
+    map: (fpDashTsLib.libHKTMod.HKT[F, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.HKT[F, js.Any],
+    mult: (fpDashTsLib.libHKTMod.HKT[F, js.Any], fpDashTsLib.libHKTMod.HKT[F, js.Any]) => fpDashTsLib.libHKTMod.HKT[F, js.Tuple2[js.Any, js.Any]],
+    unit: () => fpDashTsLib.libHKTMod.HKT[F, scala.Unit]
   ): Monoidal[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], map = map, mult = mult, unit = unit)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], map = js.Any.fromFunction2(map), mult = js.Any.fromFunction2(mult), unit = js.Any.fromFunction0(unit))
   
     __obj.asInstanceOf[Monoidal[F]]
   }

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 trait MaxRedirectsError
   extends StdError
      with gotLib.gotMod.gotNs.GotError {
-  var name: gotLib.gotLibStrings.MaxRedirectsError
+  @JSName("name")
+  var name_MaxRedirectsError: gotLib.gotLibStrings.MaxRedirectsError
   var redirectUrls: js.Array[java.lang.String]
   var statusCode: scala.Double
   var statusMessage: java.lang.String
@@ -17,6 +18,7 @@ trait MaxRedirectsError
 object MaxRedirectsError {
   @scala.inline
   def apply(
+    message: java.lang.String,
     name: gotLib.gotLibStrings.MaxRedirectsError,
     redirectUrls: js.Array[java.lang.String],
     statusCode: scala.Double,
@@ -31,7 +33,7 @@ object MaxRedirectsError {
     stack: java.lang.String = null,
     url: java.lang.String = null
   ): MaxRedirectsError = {
-    val __obj = js.Dynamic.literal(name = name, redirectUrls = redirectUrls, statusCode = statusCode, statusMessage = statusMessage)
+    val __obj = js.Dynamic.literal(message = message, name = name, redirectUrls = redirectUrls, statusCode = statusCode, statusMessage = statusMessage)
     if (code != null) __obj.updateDynamic("code")(code)
     if (host != null) __obj.updateDynamic("host")(host)
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)

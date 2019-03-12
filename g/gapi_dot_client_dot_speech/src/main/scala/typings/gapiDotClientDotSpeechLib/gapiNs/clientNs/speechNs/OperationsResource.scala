@@ -50,24 +50,12 @@ trait OperationsResource extends js.Object {
 object OperationsResource {
   @scala.inline
   def apply(
-    cancel: js.Function1[
-      gapiDotClientDotSpeechLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotSpeechLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotSpeechLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotSpeechLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListOperationsResponse]
-    ]
+    cancel: gapiDotClientDotSpeechLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    delete: gapiDotClientDotSpeechLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotSpeechLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotSpeechLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[ListOperationsResponse]
   ): OperationsResource = {
-    val __obj = js.Dynamic.literal(cancel = cancel, delete = delete, get = get, list = list)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[OperationsResource]
   }

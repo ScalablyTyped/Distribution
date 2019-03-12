@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ClearBladeInt extends js.Object {
-  def Code(): Code = js.native
-  def Collection(options: CollectionOptionsWithID): Collection = js.native
-  def Collection(options: CollectionOptionsWithName): Collection = js.native
-  def Collection(options: java.lang.String): Collection = js.native
-  def Item(data: js.Object, options: ItemOptions): Item = js.native
-  def Item(data: js.Object, options: java.lang.String): Item = js.native
-  def Messaging(options: MessagingOptions, callback: CbCallback): Messaging = js.native
+  def Code(): clearbladejsDashNodeLib.clearbladejsDashNodeMod.Code = js.native
+  def Collection(options: CollectionOptionsWithID): clearbladejsDashNodeLib.clearbladejsDashNodeMod.Collection = js.native
+  def Collection(options: CollectionOptionsWithName): clearbladejsDashNodeLib.clearbladejsDashNodeMod.Collection = js.native
+  def Collection(options: java.lang.String): clearbladejsDashNodeLib.clearbladejsDashNodeMod.Collection = js.native
+  def Item(data: js.Object, options: ItemOptions): clearbladejsDashNodeLib.clearbladejsDashNodeMod.Item = js.native
+  def Item(data: js.Object, options: java.lang.String): clearbladejsDashNodeLib.clearbladejsDashNodeMod.Item = js.native
+  def Messaging(options: MessagingOptions, callback: CbCallback): clearbladejsDashNodeLib.clearbladejsDashNodeMod.Messaging = js.native
   def Query(options: QueryOptionsWithCollection): QueryObj = js.native
   def Query(options: QueryOptionsWithID): QueryObj = js.native
   def Query(options: QueryOptionsWithName): QueryObj = js.native

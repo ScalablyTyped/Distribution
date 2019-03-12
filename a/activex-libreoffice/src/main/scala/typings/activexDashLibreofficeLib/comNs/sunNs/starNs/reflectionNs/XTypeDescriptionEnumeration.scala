@@ -22,14 +22,14 @@ trait XTypeDescriptionEnumeration
 object XTypeDescriptionEnumeration {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    hasMoreElements: js.Function0[scala.Boolean],
-    nextElement: js.Function0[js.Any],
-    nextTypeDescription: js.Function0[XTypeDescription],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    hasMoreElements: () => scala.Boolean,
+    nextElement: () => js.Any,
+    nextTypeDescription: () => XTypeDescription,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTypeDescriptionEnumeration = {
-    val __obj = js.Dynamic.literal(acquire = acquire, hasMoreElements = hasMoreElements, nextElement = nextElement, nextTypeDescription = nextTypeDescription, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), hasMoreElements = js.Any.fromFunction0(hasMoreElements), nextElement = js.Any.fromFunction0(nextElement), nextTypeDescription = js.Any.fromFunction0(nextTypeDescription), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTypeDescriptionEnumeration]
   }

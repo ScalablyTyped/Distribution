@@ -49,50 +49,38 @@ trait Anon_DocFieldNames[T] extends js.Object {
 object Anon_DocFieldNames {
   @scala.inline
   def apply[T](
-    find: js.Function1[
-      js.Function3[
-        /* userId */ java.lang.String, 
-        /* selector */ meteorDashTypingsLib.MongoNs.Selector, 
-        /* options */ meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.ModifierOptions, 
-        scala.Unit
-      ], 
+    find: js.Function3[
+      /* userId */ java.lang.String, 
+      /* selector */ meteorDashTypingsLib.MongoNs.Selector, 
+      /* options */ meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.ModifierOptions, 
       scala.Unit
-    ],
-    findOne: js.Function1[
-      js.Function3[
-        /* userId */ java.lang.String, 
-        /* selector */ meteorDashTypingsLib.MongoNs.Selector, 
-        /* options */ meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.ModifierOptions, 
-        scala.Unit
-      ], 
+    ] => scala.Unit,
+    findOne: js.Function3[
+      /* userId */ java.lang.String, 
+      /* selector */ meteorDashTypingsLib.MongoNs.Selector, 
+      /* options */ meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.ModifierOptions, 
       scala.Unit
-    ],
-    insert: js.Function1[js.Function2[/* userId */ java.lang.String, /* doc */ T, scala.Unit], scala.Unit],
-    remove: js.Function1[js.Function2[/* userId */ java.lang.String, /* doc */ T, scala.Unit], scala.Unit],
-    update: js.Function1[
-      js.Function5[
-        /* userId */ java.lang.String, 
-        /* doc */ T, 
-        /* fieldNames */ js.Array[java.lang.String], 
-        /* modifier */ meteorDashTypingsLib.MongoNs.Modifier, 
-        /* options */ meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.ModifierOptions, 
-        scala.Unit
-      ], 
+    ] => scala.Unit,
+    insert: js.Function2[/* userId */ java.lang.String, /* doc */ T, scala.Unit] => scala.Unit,
+    remove: js.Function2[/* userId */ java.lang.String, /* doc */ T, scala.Unit] => scala.Unit,
+    update: js.Function5[
+      /* userId */ java.lang.String, 
+      /* doc */ T, 
+      /* fieldNames */ js.Array[java.lang.String], 
+      /* modifier */ meteorDashTypingsLib.MongoNs.Modifier, 
+      /* options */ meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.ModifierOptions, 
       scala.Unit
-    ],
-    upsert: js.Function1[
-      js.Function5[
-        /* userId */ java.lang.String, 
-        /* doc */ T, 
-        /* selector */ meteorDashTypingsLib.MongoNs.Selector, 
-        /* modifier */ meteorDashTypingsLib.MongoNs.Modifier, 
-        /* options */ meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.ModifierOptions, 
-        scala.Unit
-      ], 
+    ] => scala.Unit,
+    upsert: js.Function5[
+      /* userId */ java.lang.String, 
+      /* doc */ T, 
+      /* selector */ meteorDashTypingsLib.MongoNs.Selector, 
+      /* modifier */ meteorDashTypingsLib.MongoNs.Modifier, 
+      /* options */ meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.ModifierOptions, 
       scala.Unit
-    ]
+    ] => scala.Unit
   ): Anon_DocFieldNames[T] = {
-    val __obj = js.Dynamic.literal(find = find, findOne = findOne, insert = insert, remove = remove, update = update, upsert = upsert)
+    val __obj = js.Dynamic.literal(find = js.Any.fromFunction1(find), findOne = js.Any.fromFunction1(findOne), insert = js.Any.fromFunction1(insert), remove = js.Any.fromFunction1(remove), update = js.Any.fromFunction1(update), upsert = js.Any.fromFunction1(upsert))
   
     __obj.asInstanceOf[Anon_DocFieldNames[T]]
   }

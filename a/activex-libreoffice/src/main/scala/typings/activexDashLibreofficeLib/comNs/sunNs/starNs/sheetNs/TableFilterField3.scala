@@ -14,7 +14,7 @@ trait TableFilterField3 extends js.Object {
   /** specifies the type of the condition as defined in {@link FilterOperator2} . */
   var Operator: scala.Double
   /** specifies values to match against. Each filter field may have one or more values. */
-  var Values: activexDashInteropLib.SafeArray[FilterFieldValue]
+  var Values: stdLib.SafeArray[FilterFieldValue]
 }
 
 object TableFilterField3 {
@@ -23,7 +23,7 @@ object TableFilterField3 {
     Connection: FilterConnection,
     Field: scala.Double,
     Operator: scala.Double,
-    Values: activexDashInteropLib.SafeArray[FilterFieldValue]
+    Values: stdLib.SafeArray[FilterFieldValue]
   ): TableFilterField3 = {
     val __obj = js.Dynamic.literal(Connection = Connection, Field = Field, Operator = Operator, Values = Values)
   

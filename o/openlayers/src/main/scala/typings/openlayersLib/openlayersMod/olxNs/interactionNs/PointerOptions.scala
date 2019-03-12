@@ -26,18 +26,18 @@ trait PointerOptions extends js.Object {
 object PointerOptions {
   @scala.inline
   def apply(
-    handleDownEvent: js.Function1[/* event */ openlayersLib.openlayersMod.MapBrowserPointerEvent, scala.Boolean] = null,
-    handleDragEvent: js.Function1[/* event */ openlayersLib.openlayersMod.MapBrowserPointerEvent, scala.Boolean] = null,
-    handleEvent: js.Function1[/* event */ openlayersLib.openlayersMod.MapBrowserPointerEvent, scala.Boolean] = null,
-    handleMoveEvent: js.Function1[/* event */ openlayersLib.openlayersMod.MapBrowserPointerEvent, scala.Boolean] = null,
-    handleUpEvent: js.Function1[/* event */ openlayersLib.openlayersMod.MapBrowserPointerEvent, scala.Boolean] = null
+    handleDownEvent: /* event */ openlayersLib.openlayersMod.MapBrowserPointerEvent => scala.Boolean = null,
+    handleDragEvent: /* event */ openlayersLib.openlayersMod.MapBrowserPointerEvent => scala.Boolean = null,
+    handleEvent: /* event */ openlayersLib.openlayersMod.MapBrowserPointerEvent => scala.Boolean = null,
+    handleMoveEvent: /* event */ openlayersLib.openlayersMod.MapBrowserPointerEvent => scala.Boolean = null,
+    handleUpEvent: /* event */ openlayersLib.openlayersMod.MapBrowserPointerEvent => scala.Boolean = null
   ): PointerOptions = {
     val __obj = js.Dynamic.literal()
-    if (handleDownEvent != null) __obj.updateDynamic("handleDownEvent")(handleDownEvent)
-    if (handleDragEvent != null) __obj.updateDynamic("handleDragEvent")(handleDragEvent)
-    if (handleEvent != null) __obj.updateDynamic("handleEvent")(handleEvent)
-    if (handleMoveEvent != null) __obj.updateDynamic("handleMoveEvent")(handleMoveEvent)
-    if (handleUpEvent != null) __obj.updateDynamic("handleUpEvent")(handleUpEvent)
+    if (handleDownEvent != null) __obj.updateDynamic("handleDownEvent")(js.Any.fromFunction1(handleDownEvent))
+    if (handleDragEvent != null) __obj.updateDynamic("handleDragEvent")(js.Any.fromFunction1(handleDragEvent))
+    if (handleEvent != null) __obj.updateDynamic("handleEvent")(js.Any.fromFunction1(handleEvent))
+    if (handleMoveEvent != null) __obj.updateDynamic("handleMoveEvent")(js.Any.fromFunction1(handleMoveEvent))
+    if (handleUpEvent != null) __obj.updateDynamic("handleUpEvent")(js.Any.fromFunction1(handleUpEvent))
     __obj.asInstanceOf[PointerOptions]
   }
 }

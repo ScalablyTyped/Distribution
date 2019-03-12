@@ -18,13 +18,13 @@ trait XPropertiesChangeListener
 object XPropertiesChangeListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    propertiesChange: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[PropertyChangeEvent], scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    propertiesChange: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[PropertyChangeEvent] => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XPropertiesChangeListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, propertiesChange = propertiesChange, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), propertiesChange = js.Any.fromFunction1(propertiesChange), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XPropertiesChangeListener]
   }

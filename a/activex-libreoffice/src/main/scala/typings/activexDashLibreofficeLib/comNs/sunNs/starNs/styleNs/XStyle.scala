@@ -25,17 +25,17 @@ object XStyle {
   def apply(
     Name: java.lang.String,
     ParentStyle: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getName: js.Function0[java.lang.String],
-    getParentStyle: js.Function0[java.lang.String],
-    isInUse: js.Function0[scala.Boolean],
-    isUserDefined: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setName: js.Function1[java.lang.String, scala.Unit],
-    setParentStyle: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getName: () => java.lang.String,
+    getParentStyle: () => java.lang.String,
+    isInUse: () => scala.Boolean,
+    isUserDefined: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setName: java.lang.String => scala.Unit,
+    setParentStyle: java.lang.String => scala.Unit
   ): XStyle = {
-    val __obj = js.Dynamic.literal(Name = Name, ParentStyle = ParentStyle, acquire = acquire, getName = getName, getParentStyle = getParentStyle, isInUse = isInUse, isUserDefined = isUserDefined, queryInterface = queryInterface, release = release, setName = setName, setParentStyle = setParentStyle)
+    val __obj = js.Dynamic.literal(Name = Name, ParentStyle = ParentStyle, acquire = js.Any.fromFunction0(acquire), getName = js.Any.fromFunction0(getName), getParentStyle = js.Any.fromFunction0(getParentStyle), isInUse = js.Any.fromFunction0(isInUse), isUserDefined = js.Any.fromFunction0(isUserDefined), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setName = js.Any.fromFunction1(setName), setParentStyle = js.Any.fromFunction1(setParentStyle))
   
     __obj.asInstanceOf[XStyle]
   }

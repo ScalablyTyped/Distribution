@@ -16,9 +16,9 @@ trait XTypeProvider
     * in {@link getTypes()} . (If a unique ID could not be provided, this method was always allowed to return an empty sequence, though).
     * @deprecated DeprecatedThis feature should no longer be used, and implementations are encouraged to always return an empty sequence.
     */
-  val ImplementationId: activexDashInteropLib.SafeArray[scala.Double]
+  val ImplementationId: stdLib.SafeArray[scala.Double]
   /** returns a sequence of all types (usually interface types) provided by the object. */
-  val Types: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`]
+  val Types: stdLib.SafeArray[activexDashLibreofficeLib.`type`]
   /**
     * Obsolete unique identifier.
     *
@@ -27,23 +27,23 @@ trait XTypeProvider
     * in {@link getTypes()} . (If a unique ID could not be provided, this method was always allowed to return an empty sequence, though).
     * @deprecated DeprecatedThis feature should no longer be used, and implementations are encouraged to always return an empty sequence.
     */
-  def getImplementationId(): activexDashInteropLib.SafeArray[scala.Double]
+  def getImplementationId(): stdLib.SafeArray[scala.Double]
   /** returns a sequence of all types (usually interface types) provided by the object. */
-  def getTypes(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`]
+  def getTypes(): stdLib.SafeArray[activexDashLibreofficeLib.`type`]
 }
 
 object XTypeProvider {
   @scala.inline
   def apply(
-    ImplementationId: activexDashInteropLib.SafeArray[scala.Double],
-    Types: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`],
-    acquire: js.Function0[scala.Unit],
-    getImplementationId: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    getTypes: js.Function0[activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    ImplementationId: stdLib.SafeArray[scala.Double],
+    Types: stdLib.SafeArray[activexDashLibreofficeLib.`type`],
+    acquire: () => scala.Unit,
+    getImplementationId: () => stdLib.SafeArray[scala.Double],
+    getTypes: () => stdLib.SafeArray[activexDashLibreofficeLib.`type`],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTypeProvider = {
-    val __obj = js.Dynamic.literal(ImplementationId = ImplementationId, Types = Types, acquire = acquire, getImplementationId = getImplementationId, getTypes = getTypes, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ImplementationId = ImplementationId, Types = Types, acquire = js.Any.fromFunction0(acquire), getImplementationId = js.Any.fromFunction0(getImplementationId), getTypes = js.Any.fromFunction0(getTypes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTypeProvider]
   }

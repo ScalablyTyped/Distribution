@@ -1,7 +1,0 @@
-[warn ] PhaseRunner.scala:68 Failed because of, [react-beautiful-dnd => java.lang.RuntimeException: Type parameter not provided] [id => @atlaskit/tree, phase => typescript] 
-[error] PhaseRunner.scala:86 Failure, [react-beautiful-dnd => java.lang.RuntimeException: Type parameter not provided] [id => @atlaskit/tree, phase => typescript] 
-[warn ] PhaseRunner.scala:68 Failed because of, [react-beautiful-dnd => java.lang.RuntimeException: Type parameter not provided] [id => @atlaskit/tree, phase => typescript] 
-[error] PhaseRunner.scala:86 Failure, [react-beautiful-dnd => java.lang.RuntimeException: Type parameter not provided] [id => @atlaskit/tree, phase => typescript] 
-[error] PhaseRunner.scala:86 Failure, [react-beautiful-dnd => java.lang.RuntimeException: Type parameter not provided] [id => @atlaskit/tree, phase => scala.js] 
-[error] PhaseRunner.scala:86 Failure, [react-beautiful-dnd => java.lang.RuntimeException: Type parameter not provided] [id => @atlaskit/tree, phase => build] 
-[error] PhaseRunner.scala:86 Failure, [react-beautiful-dnd => java.lang.RuntimeException: Type parameter not provided] [id => @atlaskit/tree, phase => publish] 

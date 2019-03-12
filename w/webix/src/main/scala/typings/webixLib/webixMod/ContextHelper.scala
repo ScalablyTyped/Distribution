@@ -13,12 +13,8 @@ trait ContextHelper extends js.Object {
 
 object ContextHelper {
   @scala.inline
-  def apply(
-    attachTo: js.Function1[js.Any, scala.Unit],
-    getContext: js.Function0[js.Any],
-    setContext: js.Function1[js.Any, scala.Unit]
-  ): ContextHelper = {
-    val __obj = js.Dynamic.literal(attachTo = attachTo, getContext = getContext, setContext = setContext)
+  def apply(attachTo: js.Any => scala.Unit, getContext: () => js.Any, setContext: js.Any => scala.Unit): ContextHelper = {
+    val __obj = js.Dynamic.literal(attachTo = js.Any.fromFunction1(attachTo), getContext = js.Any.fromFunction0(getContext), setContext = js.Any.fromFunction1(setContext))
   
     __obj.asInstanceOf[ContextHelper]
   }

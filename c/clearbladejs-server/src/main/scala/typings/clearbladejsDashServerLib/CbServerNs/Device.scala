@@ -19,14 +19,14 @@ object Device {
   @scala.inline
   def apply(
     URI: java.lang.String,
-    create: js.Function2[js.Object, CbCallback, scala.Unit],
-    delete: js.Function2[Query, CbCallback, scala.Unit],
-    fetch: js.Function2[Query, CbCallback, scala.Unit],
+    create: (js.Object, CbCallback) => scala.Unit,
+    delete: (Query, CbCallback) => scala.Unit,
+    fetch: (Query, CbCallback) => scala.Unit,
     systemKey: java.lang.String,
     systemSecret: java.lang.String,
-    update: js.Function3[Query, js.Object, CbCallback, scala.Unit]
+    update: (Query, js.Object, CbCallback) => scala.Unit
   ): Device = {
-    val __obj = js.Dynamic.literal(URI = URI, create = create, delete = delete, fetch = fetch, systemKey = systemKey, systemSecret = systemSecret, update = update)
+    val __obj = js.Dynamic.literal(URI = URI, create = js.Any.fromFunction2(create), delete = js.Any.fromFunction2(delete), fetch = js.Any.fromFunction2(fetch), systemKey = systemKey, systemSecret = systemSecret, update = js.Any.fromFunction3(update))
   
     __obj.asInstanceOf[Device]
   }

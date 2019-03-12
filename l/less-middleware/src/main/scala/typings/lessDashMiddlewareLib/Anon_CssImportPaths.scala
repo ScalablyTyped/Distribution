@@ -41,26 +41,14 @@ trait Anon_CssImportPaths extends js.Object {
 object Anon_CssImportPaths {
   @scala.inline
   def apply(
-    importPaths: js.Function2[
-      /* paths */ js.Array[java.lang.String], 
-      /* req */ expressLib.expressMod.eNs.Request, 
-      js.Array[java.lang.String]
-    ] = null,
-    less: js.Function2[
-      /* css */ java.lang.String, 
-      /* req */ expressLib.expressMod.eNs.Request, 
-      java.lang.String
-    ] = null,
-    path: js.Function2[
-      /* pathname */ java.lang.String, 
-      /* req */ expressLib.expressMod.eNs.Request, 
-      java.lang.String
-    ] = null
+    importPaths: (/* paths */ js.Array[java.lang.String], /* req */ expressLib.expressMod.eNs.Request) => js.Array[java.lang.String] = null,
+    less: (/* css */ java.lang.String, /* req */ expressLib.expressMod.eNs.Request) => java.lang.String = null,
+    path: (/* pathname */ java.lang.String, /* req */ expressLib.expressMod.eNs.Request) => java.lang.String = null
   ): Anon_CssImportPaths = {
     val __obj = js.Dynamic.literal()
-    if (importPaths != null) __obj.updateDynamic("importPaths")(importPaths)
-    if (less != null) __obj.updateDynamic("less")(less)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (importPaths != null) __obj.updateDynamic("importPaths")(js.Any.fromFunction2(importPaths))
+    if (less != null) __obj.updateDynamic("less")(js.Any.fromFunction2(less))
+    if (path != null) __obj.updateDynamic("path")(js.Any.fromFunction2(path))
     __obj.asInstanceOf[Anon_CssImportPaths]
   }
 }

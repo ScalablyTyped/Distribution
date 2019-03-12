@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.Bibliography")
 @js.native
 class Bibliography protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var BibliographyStyle: java.lang.String = js.native
   val Creator: scala.Double = js.native
   val Parent: js.Any = js.native
-  val Sources: Sources = js.native
+  val Sources: activexDashWordLib.WordNs.Sources = js.native
   var `Word.Bibliography_typekey`: Bibliography = js.native
   def GenerateUniqueTag(): java.lang.String = js.native
 }

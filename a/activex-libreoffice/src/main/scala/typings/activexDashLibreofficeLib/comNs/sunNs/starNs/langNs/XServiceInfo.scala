@@ -17,7 +17,7 @@ trait XServiceInfo
     * Provides the supported service names of the implementation, including also indirect service names.
     * @returns sequence of service names that are supported
     */
-  val SupportedServiceNames: activexDashInteropLib.SafeArray[java.lang.String]
+  val SupportedServiceNames: stdLib.SafeArray[java.lang.String]
   /**
     * Provides the implementation name of the service implementation.
     * @returns unique name of the implementation
@@ -27,7 +27,7 @@ trait XServiceInfo
     * Provides the supported service names of the implementation, including also indirect service names.
     * @returns sequence of service names that are supported
     */
-  def getSupportedServiceNames(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getSupportedServiceNames(): stdLib.SafeArray[java.lang.String]
   /**
     * Tests whether the specified service is supported, i.e. implemented by the implementation.
     * @param ServiceName name of service to be tested
@@ -40,15 +40,15 @@ object XServiceInfo {
   @scala.inline
   def apply(
     ImplementationName: java.lang.String,
-    SupportedServiceNames: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    getImplementationName: js.Function0[java.lang.String],
-    getSupportedServiceNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    supportsService: js.Function1[java.lang.String, scala.Boolean]
+    SupportedServiceNames: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    getImplementationName: () => java.lang.String,
+    getSupportedServiceNames: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    supportsService: java.lang.String => scala.Boolean
   ): XServiceInfo = {
-    val __obj = js.Dynamic.literal(ImplementationName = ImplementationName, SupportedServiceNames = SupportedServiceNames, acquire = acquire, getImplementationName = getImplementationName, getSupportedServiceNames = getSupportedServiceNames, queryInterface = queryInterface, release = release, supportsService = supportsService)
+    val __obj = js.Dynamic.literal(ImplementationName = ImplementationName, SupportedServiceNames = SupportedServiceNames, acquire = js.Any.fromFunction0(acquire), getImplementationName = js.Any.fromFunction0(getImplementationName), getSupportedServiceNames = js.Any.fromFunction0(getSupportedServiceNames), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), supportsService = js.Any.fromFunction1(supportsService))
   
     __obj.asInstanceOf[XServiceInfo]
   }

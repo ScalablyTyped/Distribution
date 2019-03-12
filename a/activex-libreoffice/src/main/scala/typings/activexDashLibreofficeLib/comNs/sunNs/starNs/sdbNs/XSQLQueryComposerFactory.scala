@@ -18,12 +18,12 @@ trait XSQLQueryComposerFactory
 object XSQLQueryComposerFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createQueryComposer: js.Function0[XSQLQueryComposer],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createQueryComposer: () => XSQLQueryComposer,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSQLQueryComposerFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createQueryComposer = createQueryComposer, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createQueryComposer = js.Any.fromFunction0(createQueryComposer), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSQLQueryComposerFactory]
   }

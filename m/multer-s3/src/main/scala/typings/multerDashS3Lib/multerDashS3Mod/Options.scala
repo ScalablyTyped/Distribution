@@ -94,29 +94,14 @@ object Options {
       /* callback */ js.Function2[/* error */ js.Any, /* cacheControl */ js.UndefOr[java.lang.String], scala.Unit], 
       scala.Unit
     ]) | java.lang.String = null,
-    contentType: js.Function3[
-      /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, 
-      /* file */ multerLib.multerMod.Global.ExpressNs.MulterNs.File, 
-      /* callback */ js.Function3[
-        /* error */ js.Any, 
-        /* mime */ js.UndefOr[java.lang.String], 
-        /* stream */ js.UndefOr[nodeLib.NodeJSNs.ReadableStream], 
-        scala.Unit
-      ], 
+    contentType: (/* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, /* file */ multerLib.multerMod.Global.ExpressNs.MulterNs.File, /* callback */ js.Function3[
+      /* error */ js.Any, 
+      /* mime */ js.UndefOr[java.lang.String], 
+      /* stream */ js.UndefOr[nodeLib.NodeJSNs.ReadableStream], 
       scala.Unit
-    ] = null,
-    key: js.Function3[
-      /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, 
-      /* file */ multerLib.multerMod.Global.ExpressNs.MulterNs.File, 
-      /* callback */ js.Function2[/* error */ js.Any, /* key */ js.UndefOr[java.lang.String], scala.Unit], 
-      scala.Unit
-    ] = null,
-    metadata: js.Function3[
-      /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, 
-      /* file */ multerLib.multerMod.Global.ExpressNs.MulterNs.File, 
-      /* callback */ js.Function2[/* error */ js.Any, /* metadata */ js.UndefOr[js.Any], scala.Unit], 
-      scala.Unit
-    ] = null,
+    ]) => scala.Unit = null,
+    key: (/* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, /* file */ multerLib.multerMod.Global.ExpressNs.MulterNs.File, /* callback */ js.Function2[/* error */ js.Any, /* key */ js.UndefOr[java.lang.String], scala.Unit]) => scala.Unit = null,
+    metadata: (/* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, /* file */ multerLib.multerMod.Global.ExpressNs.MulterNs.File, /* callback */ js.Function2[/* error */ js.Any, /* metadata */ js.UndefOr[js.Any], scala.Unit]) => scala.Unit = null,
     serverSideEncryption: (js.Function3[
       /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, 
       /* file */ multerLib.multerMod.Global.ExpressNs.MulterNs.File, 
@@ -131,9 +116,9 @@ object Options {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], s3 = s3)
     if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
     if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (contentType != null) __obj.updateDynamic("contentType")(js.Any.fromFunction3(contentType))
+    if (key != null) __obj.updateDynamic("key")(js.Any.fromFunction3(key))
+    if (metadata != null) __obj.updateDynamic("metadata")(js.Any.fromFunction3(metadata))
     if (serverSideEncryption != null) __obj.updateDynamic("serverSideEncryption")(serverSideEncryption.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

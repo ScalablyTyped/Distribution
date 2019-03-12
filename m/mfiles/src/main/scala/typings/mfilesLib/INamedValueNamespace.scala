@@ -13,12 +13,8 @@ trait INamedValueNamespace extends js.Object {
 
 object INamedValueNamespace {
   @scala.inline
-  def apply(
-    Clone: js.Function0[INamedValueNamespace],
-    NamedValues: INamedValues,
-    NamespaceName: java.lang.String
-  ): INamedValueNamespace = {
-    val __obj = js.Dynamic.literal(Clone = Clone, NamedValues = NamedValues, NamespaceName = NamespaceName)
+  def apply(Clone: () => INamedValueNamespace, NamedValues: INamedValues, NamespaceName: java.lang.String): INamedValueNamespace = {
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), NamedValues = NamedValues, NamespaceName = NamespaceName)
   
     __obj.asInstanceOf[INamedValueNamespace]
   }

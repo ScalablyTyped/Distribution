@@ -13,14 +13,14 @@ trait IDashboardEvents extends IEvents {
 object IDashboardEvents {
   @scala.inline
   def apply(
-    Register: js.Function2[mfilesLib.MFilesNs.Event, js.Function, scala.Double],
-    Unregister: js.Function1[scala.Double, scala.Unit],
-    OnStarted: js.Function0[scala.Unit] = null,
-    OnStop: js.Function0[scala.Unit] = null
+    Register: (mfilesLib.MFilesNs.Event, js.Function) => scala.Double,
+    Unregister: scala.Double => scala.Unit,
+    OnStarted: () => scala.Unit = null,
+    OnStop: () => scala.Unit = null
   ): IDashboardEvents = {
-    val __obj = js.Dynamic.literal(Register = Register, Unregister = Unregister)
-    if (OnStarted != null) __obj.updateDynamic("OnStarted")(OnStarted)
-    if (OnStop != null) __obj.updateDynamic("OnStop")(OnStop)
+    val __obj = js.Dynamic.literal(Register = js.Any.fromFunction2(Register), Unregister = js.Any.fromFunction1(Unregister))
+    if (OnStarted != null) __obj.updateDynamic("OnStarted")(js.Any.fromFunction0(OnStarted))
+    if (OnStop != null) __obj.updateDynamic("OnStop")(js.Any.fromFunction0(OnStop))
     __obj.asInstanceOf[IDashboardEvents]
   }
 }

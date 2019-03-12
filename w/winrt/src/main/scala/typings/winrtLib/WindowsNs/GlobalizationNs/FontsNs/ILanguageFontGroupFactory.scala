@@ -11,8 +11,8 @@ trait ILanguageFontGroupFactory extends js.Object {
 
 object ILanguageFontGroupFactory {
   @scala.inline
-  def apply(createLanguageFontGroup: js.Function1[java.lang.String, LanguageFontGroup]): ILanguageFontGroupFactory = {
-    val __obj = js.Dynamic.literal(createLanguageFontGroup = createLanguageFontGroup)
+  def apply(createLanguageFontGroup: java.lang.String => LanguageFontGroup): ILanguageFontGroupFactory = {
+    val __obj = js.Dynamic.literal(createLanguageFontGroup = js.Any.fromFunction1(createLanguageFontGroup))
   
     __obj.asInstanceOf[ILanguageFontGroupFactory]
   }

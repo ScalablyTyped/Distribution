@@ -53,13 +53,13 @@ object SidenavOptions {
     draggable: scala.Boolean,
     edge: materializeDashCssLib.materializeDashCssLibStrings.left | materializeDashCssLib.materializeDashCssLibStrings.right,
     inDuration: scala.Double,
-    onCloseEnd: js.Function2[Sidenav, stdLib.Element, scala.Unit],
-    onCloseStart: js.Function2[Sidenav, stdLib.Element, scala.Unit],
-    onOpenEnd: js.Function2[Sidenav, stdLib.Element, scala.Unit],
-    onOpenStart: js.Function2[Sidenav, stdLib.Element, scala.Unit],
+    onCloseEnd: (Sidenav, stdLib.Element) => scala.Unit,
+    onCloseStart: (Sidenav, stdLib.Element) => scala.Unit,
+    onOpenEnd: (Sidenav, stdLib.Element) => scala.Unit,
+    onOpenStart: (Sidenav, stdLib.Element) => scala.Unit,
     outDuration: scala.Double
   ): SidenavOptions = {
-    val __obj = js.Dynamic.literal(draggable = draggable, edge = edge.asInstanceOf[js.Any], inDuration = inDuration, onCloseEnd = onCloseEnd, onCloseStart = onCloseStart, onOpenEnd = onOpenEnd, onOpenStart = onOpenStart, outDuration = outDuration)
+    val __obj = js.Dynamic.literal(draggable = draggable, edge = edge.asInstanceOf[js.Any], inDuration = inDuration, onCloseEnd = js.Any.fromFunction2(onCloseEnd), onCloseStart = js.Any.fromFunction2(onCloseStart), onOpenEnd = js.Any.fromFunction2(onOpenEnd), onOpenStart = js.Any.fromFunction2(onOpenStart), outDuration = outDuration)
   
     __obj.asInstanceOf[SidenavOptions]
   }

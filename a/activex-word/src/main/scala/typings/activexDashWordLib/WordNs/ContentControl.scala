@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.ContentControl")
 @js.native
 class ContentControl protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var BuildingBlockCategory: java.lang.String = js.native
   var BuildingBlockType: WdBuildingBlockTypes = js.native
   var Checked: scala.Boolean = js.native
@@ -26,14 +26,14 @@ class ContentControl protected () extends js.Object {
   val Parent: js.Any = js.native
   val ParentContentControl: ContentControl = js.native
   val PlaceholderText: BuildingBlock = js.native
-  val Range: Range = js.native
+  val Range: activexDashWordLib.WordNs.Range = js.native
   val ShowingPlaceholderText: scala.Boolean = js.native
   var Tag: java.lang.String = js.native
   var Temporary: scala.Boolean = js.native
   var Title: java.lang.String = js.native
   var Type: WdContentControlType = js.native
   var `Word.ContentControl_typekey`: ContentControl = js.native
-  val XMLMapping: XMLMapping = js.native
+  val XMLMapping: activexDashWordLib.WordNs.XMLMapping = js.native
   def Copy(): scala.Unit = js.native
   def Cut(): scala.Unit = js.native
   /** @param boolean [DeleteContents=false] */

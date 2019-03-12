@@ -23,7 +23,7 @@ object ^ extends js.Object {
     rawLines: java.lang.String,
     lineNumber: scala.Double,
     colNumber: scala.Double,
-    options: babelDashCodeDashFrameLib.babelDashCodeDashFrameMod.BabelCodeFrameOptions
+    options: BabelCodeFrameOptions
   ): java.lang.String = js.native
 }
 

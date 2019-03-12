@@ -21,28 +21,13 @@ trait GlobalForwardingRulesResource extends js.Object {
 object GlobalForwardingRulesResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRuleKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRuleKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ForwardingRule]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ForwardingRuleList]
-    ],
-    setTarget: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRuleKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    delete: gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRuleKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRuleKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[ForwardingRule],
+    insert: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ForwardingRuleList],
+    setTarget: gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRuleKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): GlobalForwardingRulesResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, setTarget = setTarget)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), setTarget = js.Any.fromFunction1(setTarget))
   
     __obj.asInstanceOf[GlobalForwardingRulesResource]
   }

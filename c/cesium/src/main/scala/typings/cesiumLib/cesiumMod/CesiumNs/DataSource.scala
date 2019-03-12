@@ -30,9 +30,9 @@ object DataSource {
     loadingEvent: Event,
     name: java.lang.String,
     show: scala.Boolean,
-    update: js.Function1[JulianDate, scala.Boolean]
+    update: JulianDate => scala.Boolean
   ): DataSource = {
-    val __obj = js.Dynamic.literal(changedEvent = changedEvent, clock = clock, clustering = clustering, entities = entities, errorEvent = errorEvent, isLoading = isLoading, loadingEvent = loadingEvent, name = name, show = show, update = update)
+    val __obj = js.Dynamic.literal(changedEvent = changedEvent, clock = clock, clustering = clustering, entities = entities, errorEvent = errorEvent, isLoading = isLoading, loadingEvent = loadingEvent, name = name, show = show, update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[DataSource]
   }

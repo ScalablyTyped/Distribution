@@ -22,11 +22,11 @@ object Settings {
   @scala.inline
   def apply(
     language: java.lang.String,
-    onRestrictionsChange: js.Function0[scala.Unit],
+    onRestrictionsChange: () => scala.Unit,
     restrictions: Restrictions,
     storefrontCountryCode: java.lang.String
   ): Settings = {
-    val __obj = js.Dynamic.literal(language = language, onRestrictionsChange = onRestrictionsChange, restrictions = restrictions, storefrontCountryCode = storefrontCountryCode)
+    val __obj = js.Dynamic.literal(language = language, onRestrictionsChange = js.Any.fromFunction0(onRestrictionsChange), restrictions = restrictions, storefrontCountryCode = storefrontCountryCode)
   
     __obj.asInstanceOf[Settings]
   }

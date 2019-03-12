@@ -326,11 +326,11 @@ trait IGridInstanceOf[TEntity] extends js.Object {
     * ALL
     * @returns {Function} deregister function - a function that can be called to deregister this callback
     */
-  def registerDataChangeCallback(callback: js.Function1[/* grid */ IGridInstanceOf[TEntity], scala.Unit]): angularLib.angularMod.Global.Function = js.native
+  def registerDataChangeCallback(callback: js.Function1[/* grid */ IGridInstanceOf[TEntity], scala.Unit]): js.Function = js.native
   def registerDataChangeCallback(
     callback: js.Function1[/* grid */ IGridInstanceOf[TEntity], scala.Unit],
     types: js.Array[java.lang.String]
-  ): angularLib.angularMod.Global.Function = js.native
+  ): js.Function = js.native
   /**
     * When the build creates rows from gridOptions.data, the rowBuilders will be called to add
     * additional properties to the row.

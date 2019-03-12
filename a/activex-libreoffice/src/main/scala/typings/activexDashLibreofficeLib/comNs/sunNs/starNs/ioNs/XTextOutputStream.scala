@@ -32,16 +32,16 @@ trait XTextOutputStream extends XOutputStream {
 object XTextOutputStream {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    closeOutput: js.Function0[scala.Unit],
-    flush: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setEncoding: js.Function1[java.lang.String, scala.Unit],
-    writeBytes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
-    writeString: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    closeOutput: () => scala.Unit,
+    flush: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setEncoding: java.lang.String => scala.Unit,
+    writeBytes: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => scala.Unit,
+    writeString: java.lang.String => scala.Unit
   ): XTextOutputStream = {
-    val __obj = js.Dynamic.literal(acquire = acquire, closeOutput = closeOutput, flush = flush, queryInterface = queryInterface, release = release, setEncoding = setEncoding, writeBytes = writeBytes, writeString = writeString)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), closeOutput = js.Any.fromFunction0(closeOutput), flush = js.Any.fromFunction0(flush), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setEncoding = js.Any.fromFunction1(setEncoding), writeBytes = js.Any.fromFunction1(writeBytes), writeString = js.Any.fromFunction1(writeString))
   
     __obj.asInstanceOf[XTextOutputStream]
   }

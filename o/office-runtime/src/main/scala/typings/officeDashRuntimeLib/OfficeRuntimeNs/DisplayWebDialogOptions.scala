@@ -56,18 +56,18 @@ object DisplayWebDialogOptions {
     displayInIFrame: js.UndefOr[scala.Boolean] = js.undefined,
     height: java.lang.String = null,
     hideTitle: js.UndefOr[scala.Boolean] = js.undefined,
-    onClose: js.Function0[scala.Unit] = null,
-    onMessage: js.Function2[/* message */ java.lang.String, /* dialog */ js.UndefOr[Dialog], scala.Unit] = null,
-    onRuntimeError: js.Function2[/* error */ stdLib.Error, /* dialog */ js.UndefOr[Dialog], scala.Unit] = null,
+    onClose: () => scala.Unit = null,
+    onMessage: (/* message */ java.lang.String, /* dialog */ js.UndefOr[Dialog]) => scala.Unit = null,
+    onRuntimeError: (/* error */ stdLib.Error, /* dialog */ js.UndefOr[Dialog]) => scala.Unit = null,
     width: java.lang.String = null
   ): DisplayWebDialogOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(displayInIFrame)) __obj.updateDynamic("displayInIFrame")(displayInIFrame)
     if (height != null) __obj.updateDynamic("height")(height)
     if (!js.isUndefined(hideTitle)) __obj.updateDynamic("hideTitle")(hideTitle)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onMessage != null) __obj.updateDynamic("onMessage")(onMessage)
-    if (onRuntimeError != null) __obj.updateDynamic("onRuntimeError")(onRuntimeError)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
+    if (onMessage != null) __obj.updateDynamic("onMessage")(js.Any.fromFunction2(onMessage))
+    if (onRuntimeError != null) __obj.updateDynamic("onRuntimeError")(js.Any.fromFunction2(onRuntimeError))
     if (width != null) __obj.updateDynamic("width")(width)
     __obj.asInstanceOf[DisplayWebDialogOptions]
   }

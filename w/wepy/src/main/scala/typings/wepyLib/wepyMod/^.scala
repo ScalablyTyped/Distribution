@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("wepy", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: wepyLib.wepyMod.DefaultExport = js.native
+  val default: DefaultExport = js.native
 }
 

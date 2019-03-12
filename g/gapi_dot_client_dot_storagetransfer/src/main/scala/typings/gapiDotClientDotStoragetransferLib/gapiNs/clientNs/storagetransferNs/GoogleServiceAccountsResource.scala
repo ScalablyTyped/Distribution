@@ -22,12 +22,9 @@ trait GoogleServiceAccountsResource extends js.Object {
 object GoogleServiceAccountsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotStoragetransferLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GoogleServiceAccount]
-    ]
+    get: gapiDotClientDotStoragetransferLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[GoogleServiceAccount]
   ): GoogleServiceAccountsResource = {
-    val __obj = js.Dynamic.literal(get = get)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[GoogleServiceAccountsResource]
   }

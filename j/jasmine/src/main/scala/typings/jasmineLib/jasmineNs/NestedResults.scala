@@ -21,19 +21,19 @@ trait NestedResults extends Result {
 object NestedResults {
   @scala.inline
   def apply(
-    addResult: js.Function1[Result, scala.Unit],
+    addResult: Result => scala.Unit,
     description: java.lang.String,
     failedCount: scala.Double,
-    getItems: js.Function0[js.Array[Result]],
-    log: js.Function1[js.Any, scala.Unit],
-    passed: js.Function0[scala.Boolean],
+    getItems: () => js.Array[Result],
+    log: js.Any => scala.Unit,
+    passed: () => scala.Boolean,
     passedCount: scala.Double,
-    rollupCounts: js.Function1[NestedResults, scala.Unit],
+    rollupCounts: NestedResults => scala.Unit,
     skipped: scala.Boolean,
     totalCount: scala.Double,
     `type`: java.lang.String
   ): NestedResults = {
-    val __obj = js.Dynamic.literal(addResult = addResult, description = description, failedCount = failedCount, getItems = getItems, log = log, passed = passed, passedCount = passedCount, rollupCounts = rollupCounts, skipped = skipped, totalCount = totalCount)
+    val __obj = js.Dynamic.literal(addResult = js.Any.fromFunction1(addResult), description = description, failedCount = failedCount, getItems = js.Any.fromFunction0(getItems), log = js.Any.fromFunction1(log), passed = js.Any.fromFunction0(passed), passedCount = passedCount, rollupCounts = js.Any.fromFunction1(rollupCounts), skipped = skipped, totalCount = totalCount)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[NestedResults]
   }

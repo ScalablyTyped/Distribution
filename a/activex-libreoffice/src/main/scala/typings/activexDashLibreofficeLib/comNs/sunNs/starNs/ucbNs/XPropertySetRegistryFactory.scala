@@ -23,12 +23,12 @@ trait XPropertySetRegistryFactory
 object XPropertySetRegistryFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createPropertySetRegistry: js.Function1[java.lang.String, XPropertySetRegistry],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createPropertySetRegistry: java.lang.String => XPropertySetRegistry,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XPropertySetRegistryFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createPropertySetRegistry = createPropertySetRegistry, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createPropertySetRegistry = js.Any.fromFunction1(createPropertySetRegistry), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XPropertySetRegistryFactory]
   }

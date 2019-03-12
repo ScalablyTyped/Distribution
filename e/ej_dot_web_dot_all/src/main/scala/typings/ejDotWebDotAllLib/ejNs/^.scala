@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val cssUA: java.lang.String = js.native
-  val cultures: ejDotWebDotAllLib.ejNs.culture = js.native
+  val cultures: culture = js.native
   val dataUtil: ejDotWebDotAllLib.ejNs.dataUtil = js.native
   val globalize: ejDotWebDotAllLib.ejNs.globalize = js.native
   val serverTimezoneOffset: scala.Double = js.native
@@ -29,7 +29,7 @@ object ^ extends js.Object {
   def animationEndEvent(): java.lang.String = js.native
   def avg(json: js.Any, filedName: java.lang.String): js.Any = js.native
   def blockDefaultActions(e: js.Any): scala.Unit = js.native
-  def browserInfo(): ejDotWebDotAllLib.ejNs.browserInfoOptions = js.native
+  def browserInfo(): browserInfoOptions = js.native
   def buildTag(tag: java.lang.String): ejDotWebDotAllLib.JQuery = js.native
   def buildTag(tag: java.lang.String, innerHtml: java.lang.String): ejDotWebDotAllLib.JQuery = js.native
   def buildTag(tag: java.lang.String, innerHtml: java.lang.String, styles: js.Any): ejDotWebDotAllLib.JQuery = js.native
@@ -42,8 +42,8 @@ object ^ extends js.Object {
   def destroyWidgets(element: js.Any): scala.Unit = js.native
   def endEvent(): java.lang.String = js.native
   def event(`type`: java.lang.String, data: js.Any, eventProp: js.Any): js.Any = js.native
-  def findCulture(): ejDotWebDotAllLib.ejNs.culture = js.native
-  def findCulture(culture: java.lang.String): ejDotWebDotAllLib.ejNs.culture = js.native
+  def findCulture(): culture = js.native
+  def findCulture(culture: java.lang.String): culture = js.native
   def format(value: js.Any, format: java.lang.String): java.lang.String = js.native
   def format(value: js.Any, format: java.lang.String, culture: java.lang.String): java.lang.String = js.native
   def getAndroidVersion(): js.Any = js.native
@@ -138,8 +138,8 @@ object ^ extends js.Object {
   def parseInt(value: java.lang.String, radix: js.Any, culture: java.lang.String): scala.Double = js.native
   def parseJSON(jsonText: java.lang.String): java.lang.String = js.native
   def parseTable(table: scala.Double, headerOption: java.lang.String, headerRowIndex: java.lang.String): js.Any = js.native
-  def preferredCulture(): ejDotWebDotAllLib.ejNs.culture = js.native
-  def preferredCulture(culture: java.lang.String): ejDotWebDotAllLib.ejNs.culture = js.native
+  def preferredCulture(): culture = js.native
+  def preferredCulture(culture: java.lang.String): culture = js.native
   def print(element: java.lang.String, printWindow: js.Any): scala.Unit = js.native
   def proxy(fn: js.Any): js.Any = js.native
   def proxy(fn: js.Any, context: java.lang.String): js.Any = js.native

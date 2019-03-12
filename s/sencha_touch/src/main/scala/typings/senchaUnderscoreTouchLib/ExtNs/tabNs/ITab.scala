@@ -46,17 +46,17 @@ object ITab {
     active: js.UndefOr[scala.Boolean] = js.undefined,
     activeCls: java.lang.String = null,
     baseCls: java.lang.String = null,
-    getActive: js.Function0[scala.Boolean] = null,
-    getActiveCls: js.Function0[java.lang.String] = null,
-    getBaseCls: js.Function0[java.lang.String] = null,
-    getPressedCls: js.Function0[java.lang.String] = null,
-    getTitle: js.Function0[java.lang.String] = null,
+    getActive: () => scala.Boolean = null,
+    getActiveCls: () => java.lang.String = null,
+    getBaseCls: () => java.lang.String = null,
+    getPressedCls: () => java.lang.String = null,
+    getTitle: () => java.lang.String = null,
     pressedCls: java.lang.String = null,
-    setActive: js.Function1[/* active */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setActiveCls: js.Function1[/* activeCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setBaseCls: js.Function1[/* baseCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setPressedCls: js.Function1[/* pressedCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setTitle: js.Function1[/* title */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setActive: /* active */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setActiveCls: /* activeCls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setPressedCls: /* pressedCls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setTitle: /* title */ js.UndefOr[java.lang.String] => scala.Unit = null,
     title: java.lang.String = null
   ): ITab = {
     val __obj = js.Dynamic.literal()
@@ -64,17 +64,17 @@ object ITab {
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (activeCls != null) __obj.updateDynamic("activeCls")(activeCls)
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (getActive != null) __obj.updateDynamic("getActive")(getActive)
-    if (getActiveCls != null) __obj.updateDynamic("getActiveCls")(getActiveCls)
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(getBaseCls)
-    if (getPressedCls != null) __obj.updateDynamic("getPressedCls")(getPressedCls)
-    if (getTitle != null) __obj.updateDynamic("getTitle")(getTitle)
+    if (getActive != null) __obj.updateDynamic("getActive")(js.Any.fromFunction0(getActive))
+    if (getActiveCls != null) __obj.updateDynamic("getActiveCls")(js.Any.fromFunction0(getActiveCls))
+    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
+    if (getPressedCls != null) __obj.updateDynamic("getPressedCls")(js.Any.fromFunction0(getPressedCls))
+    if (getTitle != null) __obj.updateDynamic("getTitle")(js.Any.fromFunction0(getTitle))
     if (pressedCls != null) __obj.updateDynamic("pressedCls")(pressedCls)
-    if (setActive != null) __obj.updateDynamic("setActive")(setActive)
-    if (setActiveCls != null) __obj.updateDynamic("setActiveCls")(setActiveCls)
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(setBaseCls)
-    if (setPressedCls != null) __obj.updateDynamic("setPressedCls")(setPressedCls)
-    if (setTitle != null) __obj.updateDynamic("setTitle")(setTitle)
+    if (setActive != null) __obj.updateDynamic("setActive")(js.Any.fromFunction1(setActive))
+    if (setActiveCls != null) __obj.updateDynamic("setActiveCls")(js.Any.fromFunction1(setActiveCls))
+    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
+    if (setPressedCls != null) __obj.updateDynamic("setPressedCls")(js.Any.fromFunction1(setPressedCls))
+    if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction1(setTitle))
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[ITab]
   }

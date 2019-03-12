@@ -54,15 +54,15 @@ object typeCreatePCClassRendererParams {
   def apply(
     constructor: js.Function,
     field: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     layer: PointCloudLayer,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     density: scala.Int | scala.Double = null,
     size: java.lang.String = null,
     statistics: UniqueValuesResult = null,
     typeScheme: TypeSchemeForPoint = null
   ): typeCreatePCClassRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = hasOwnProperty, layer = layer, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size)
     if (statistics != null) __obj.updateDynamic("statistics")(statistics)

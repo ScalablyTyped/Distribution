@@ -35,13 +35,13 @@ object VanillaModalConfig {
     modal: java.lang.String | stdLib.HTMLElement = null,
     modalContent: java.lang.String = null,
     modalInner: java.lang.String = null,
-    onBeforeClose: js.Function0[js.UndefOr[scala.Nothing]] = null,
-    onBeforeOpen: js.Function0[js.UndefOr[scala.Nothing]] = null,
-    onClose: js.Function0[js.UndefOr[scala.Nothing]] = null,
-    onOpen: js.Function0[js.UndefOr[scala.Nothing]] = null,
+    onBeforeClose: () => js.UndefOr[scala.Nothing] = null,
+    onBeforeOpen: () => js.UndefOr[scala.Nothing] = null,
+    onClose: () => js.UndefOr[scala.Nothing] = null,
+    onOpen: () => js.UndefOr[scala.Nothing] = null,
     open: java.lang.String = null,
     page: java.lang.String = null,
-    transitionEnd: js.Function0[js.UndefOr[scala.Nothing]] = null,
+    transitionEnd: () => js.UndefOr[scala.Nothing] = null,
     transitions: java.lang.String = null
   ): VanillaModalConfig = {
     val __obj = js.Dynamic.literal()
@@ -53,13 +53,13 @@ object VanillaModalConfig {
     if (modal != null) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
     if (modalContent != null) __obj.updateDynamic("modalContent")(modalContent)
     if (modalInner != null) __obj.updateDynamic("modalInner")(modalInner)
-    if (onBeforeClose != null) __obj.updateDynamic("onBeforeClose")(onBeforeClose)
-    if (onBeforeOpen != null) __obj.updateDynamic("onBeforeOpen")(onBeforeOpen)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onBeforeClose != null) __obj.updateDynamic("onBeforeClose")(js.Any.fromFunction0(onBeforeClose))
+    if (onBeforeOpen != null) __obj.updateDynamic("onBeforeOpen")(js.Any.fromFunction0(onBeforeOpen))
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
     if (open != null) __obj.updateDynamic("open")(open)
     if (page != null) __obj.updateDynamic("page")(page)
-    if (transitionEnd != null) __obj.updateDynamic("transitionEnd")(transitionEnd)
+    if (transitionEnd != null) __obj.updateDynamic("transitionEnd")(js.Any.fromFunction0(transitionEnd))
     if (transitions != null) __obj.updateDynamic("transitions")(transitions)
     __obj.asInstanceOf[VanillaModalConfig]
   }

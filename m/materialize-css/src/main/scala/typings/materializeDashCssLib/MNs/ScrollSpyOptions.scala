@@ -32,11 +32,11 @@ object ScrollSpyOptions {
   @scala.inline
   def apply(
     activeClass: java.lang.String,
-    getActiveElement: js.Function1[java.lang.String, java.lang.String],
+    getActiveElement: java.lang.String => java.lang.String,
     scrollOffset: scala.Double,
     throttle: scala.Double
   ): ScrollSpyOptions = {
-    val __obj = js.Dynamic.literal(activeClass = activeClass, getActiveElement = getActiveElement, scrollOffset = scrollOffset, throttle = throttle)
+    val __obj = js.Dynamic.literal(activeClass = activeClass, getActiveElement = js.Any.fromFunction1(getActiveElement), scrollOffset = scrollOffset, throttle = throttle)
   
     __obj.asInstanceOf[ScrollSpyOptions]
   }

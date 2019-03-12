@@ -15,12 +15,12 @@ object CardExpandableProps {
   @scala.inline
   def apply(
     expanded: js.UndefOr[scala.Boolean] = js.undefined,
-    onExpanding: js.Function1[/* isExpanded */ scala.Boolean, scala.Unit] = null,
+    onExpanding: /* isExpanded */ scala.Boolean => scala.Unit = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): CardExpandableProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
-    if (onExpanding != null) __obj.updateDynamic("onExpanding")(onExpanding)
+    if (onExpanding != null) __obj.updateDynamic("onExpanding")(js.Any.fromFunction1(onExpanding))
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[CardExpandableProps]
   }

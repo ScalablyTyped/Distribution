@@ -19,24 +19,12 @@ trait UsersResource extends js.Object {
 object UsersResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFieldsHost, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UsersListResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotSqladminLib.Anon_AltFieldsHost, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    delete: gapiDotClientDotSqladminLib.Anon_AltFieldsHost => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    insert: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotSqladminLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[UsersListResponse],
+    update: gapiDotClientDotSqladminLib.Anon_AltFieldsHost => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): UsersResource = {
-    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[UsersResource]
   }

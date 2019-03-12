@@ -13,12 +13,8 @@ trait Anon_PauseResumeReset extends js.Object {
 
 object Anon_PauseResumeReset {
   @scala.inline
-  def apply(
-    pauseResume: js.Function0[scala.Unit],
-    reset: js.Function0[scala.Unit],
-    update: js.Function0[scala.Unit]
-  ): Anon_PauseResumeReset = {
-    val __obj = js.Dynamic.literal(pauseResume = pauseResume, reset = reset, update = update)
+  def apply(pauseResume: () => scala.Unit, reset: () => scala.Unit, update: () => scala.Unit): Anon_PauseResumeReset = {
+    val __obj = js.Dynamic.literal(pauseResume = js.Any.fromFunction0(pauseResume), reset = js.Any.fromFunction0(reset), update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[Anon_PauseResumeReset]
   }

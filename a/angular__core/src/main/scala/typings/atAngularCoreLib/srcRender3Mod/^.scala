@@ -250,22 +250,6 @@ object ^ extends js.Object {
     suffix: scala.Null,
     directive: js.Object
   ): scala.Unit = js.native
-  def elementStyleProp(index: scala.Double, styleIndex: scala.Double, value: nodeLib.String): scala.Unit = js.native
-  def elementStyleProp(index: scala.Double, styleIndex: scala.Double, value: nodeLib.String, suffix: java.lang.String): scala.Unit = js.native
-  def elementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: nodeLib.String,
-    suffix: java.lang.String,
-    directive: js.Object
-  ): scala.Unit = js.native
-  def elementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: nodeLib.String,
-    suffix: scala.Null,
-    directive: js.Object
-  ): scala.Unit = js.native
   def elementStyleProp(index: scala.Double, styleIndex: scala.Double, value: scala.Double): scala.Unit = js.native
   def elementStyleProp(index: scala.Double, styleIndex: scala.Double, value: scala.Double, suffix: java.lang.String): scala.Unit = js.native
   def elementStyleProp(

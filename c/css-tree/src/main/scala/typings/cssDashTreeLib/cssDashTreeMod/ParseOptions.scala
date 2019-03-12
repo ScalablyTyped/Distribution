@@ -31,7 +31,7 @@ object ParseOptions {
     filename: java.lang.String = null,
     line: scala.Int | scala.Double = null,
     offset: scala.Int | scala.Double = null,
-    onParseError: js.Function2[/* error */ SyntaxParseError, /* fallbackNode */ CssNode, scala.Unit] = null,
+    onParseError: (/* error */ SyntaxParseError, /* fallbackNode */ CssNode) => scala.Unit = null,
     parseAtrulePrelude: js.UndefOr[scala.Boolean] = js.undefined,
     parseCustomProperty: js.UndefOr[scala.Boolean] = js.undefined,
     parseRulePrelude: js.UndefOr[scala.Boolean] = js.undefined,
@@ -45,7 +45,7 @@ object ParseOptions {
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (onParseError != null) __obj.updateDynamic("onParseError")(onParseError)
+    if (onParseError != null) __obj.updateDynamic("onParseError")(js.Any.fromFunction2(onParseError))
     if (!js.isUndefined(parseAtrulePrelude)) __obj.updateDynamic("parseAtrulePrelude")(parseAtrulePrelude)
     if (!js.isUndefined(parseCustomProperty)) __obj.updateDynamic("parseCustomProperty")(parseCustomProperty)
     if (!js.isUndefined(parseRulePrelude)) __obj.updateDynamic("parseRulePrelude")(parseRulePrelude)

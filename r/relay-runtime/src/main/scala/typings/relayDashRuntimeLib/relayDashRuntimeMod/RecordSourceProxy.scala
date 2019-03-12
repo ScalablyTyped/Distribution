@@ -15,12 +15,12 @@ trait RecordSourceProxy extends js.Object {
 object RecordSourceProxy {
   @scala.inline
   def apply(
-    create: js.Function2[DataID, java.lang.String, RecordProxy],
-    delete: js.Function1[DataID, scala.Unit],
-    get: js.Function1[DataID, RecordProxy | scala.Null],
-    getRoot: js.Function0[RecordProxy]
+    create: (DataID, java.lang.String) => RecordProxy,
+    delete: DataID => scala.Unit,
+    get: DataID => RecordProxy | scala.Null,
+    getRoot: () => RecordProxy
   ): RecordSourceProxy = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, getRoot = getRoot)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getRoot = js.Any.fromFunction0(getRoot))
   
     __obj.asInstanceOf[RecordSourceProxy]
   }

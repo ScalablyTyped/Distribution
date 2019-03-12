@@ -18,23 +18,23 @@ import scala.scalajs.js.annotation._
 trait XQuerySelectResult
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration {
   /** get the names of the query variables. */
-  val BindingNames: activexDashInteropLib.SafeArray[java.lang.String]
+  val BindingNames: stdLib.SafeArray[java.lang.String]
   /** get the names of the query variables. */
-  def getBindingNames(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getBindingNames(): stdLib.SafeArray[java.lang.String]
 }
 
 object XQuerySelectResult {
   @scala.inline
   def apply(
-    BindingNames: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    getBindingNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    hasMoreElements: js.Function0[scala.Boolean],
-    nextElement: js.Function0[js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    BindingNames: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    getBindingNames: () => stdLib.SafeArray[java.lang.String],
+    hasMoreElements: () => scala.Boolean,
+    nextElement: () => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XQuerySelectResult = {
-    val __obj = js.Dynamic.literal(BindingNames = BindingNames, acquire = acquire, getBindingNames = getBindingNames, hasMoreElements = hasMoreElements, nextElement = nextElement, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(BindingNames = BindingNames, acquire = js.Any.fromFunction0(acquire), getBindingNames = js.Any.fromFunction0(getBindingNames), hasMoreElements = js.Any.fromFunction0(hasMoreElements), nextElement = js.Any.fromFunction0(nextElement), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XQuerySelectResult]
   }

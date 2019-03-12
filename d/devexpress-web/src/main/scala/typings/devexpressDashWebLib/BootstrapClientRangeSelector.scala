@@ -29,41 +29,41 @@ trait BootstrapClientRangeSelector extends BootstrapUIWidgetBase {
 object BootstrapClientRangeSelector {
   @scala.inline
   def apply(
-    AdjustControl: js.Function0[scala.Unit],
+    AdjustControl: () => scala.Unit,
     Disposing: ASPxClientEvent[BootstrapUIWidgetDisposingEventHandler[BootstrapUIWidgetBase]],
     Drawn: ASPxClientEvent[BootstrapUIWidgetDrawnEventHandler[BootstrapUIWidgetBase]],
-    ExportTo: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    ExportTo: (java.lang.String, java.lang.String) => scala.Unit,
     Exported: ASPxClientEvent[BootstrapUIWidgetExportedEventHandler[BootstrapUIWidgetBase]],
     Exporting: ASPxClientEvent[BootstrapUIWidgetExportingEventHandler[BootstrapUIWidgetBase]],
     FileSaving: ASPxClientEvent[BootstrapUIWidgetFileSavingEventHandler[BootstrapUIWidgetBase]],
-    GetClientVisible: js.Function0[scala.Boolean],
-    GetDataSource: js.Function0[js.Object],
-    GetHeight: js.Function0[scala.Double],
-    GetInstance: js.Function0[js.Object],
-    GetMainElement: js.Function0[js.Object],
-    GetParentControl: js.Function0[js.Object],
-    GetValue: js.Function0[js.Array[js.Object]],
-    GetVisible: js.Function0[scala.Boolean],
-    GetWidth: js.Function0[scala.Double],
-    InCallback: js.Function0[scala.Boolean],
+    GetClientVisible: () => scala.Boolean,
+    GetDataSource: () => js.Object,
+    GetHeight: () => scala.Double,
+    GetInstance: () => js.Object,
+    GetMainElement: () => js.Object,
+    GetParentControl: () => js.Object,
+    GetValue: () => js.Array[js.Object],
+    GetVisible: () => scala.Boolean,
+    GetWidth: () => scala.Double,
+    InCallback: () => scala.Boolean,
     IncidentOccurred: ASPxClientEvent[BootstrapUIWidgetErrorEventHandler[BootstrapUIWidgetBase]],
     Init: ASPxClientEvent[BootstrapUIWidgetInitializedEventHandler[BootstrapUIWidgetBase]],
     OptionChanged: ASPxClientEvent[BootstrapUIWidgetOptionChangedEventHandler[BootstrapUIWidgetBase]],
-    Print: js.Function0[scala.Unit],
-    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
-    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetDataSource: js.Function1[js.Object, scala.Unit],
-    SetHeight: js.Function1[scala.Double, scala.Unit],
-    SetOptions: js.Function1[js.Object, scala.Unit],
-    SetValue: js.Function1[js.Array[js.Object], scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetWidth: js.Function1[scala.Double, scala.Unit],
+    Print: () => scala.Unit,
+    SendMessageToAssistiveTechnology: java.lang.String => scala.Unit,
+    SetClientVisible: scala.Boolean => scala.Unit,
+    SetDataSource: js.Object => scala.Unit,
+    SetHeight: scala.Double => scala.Unit,
+    SetOptions: js.Object => scala.Unit,
+    SetValue: js.Array[js.Object] => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
+    SetWidth: scala.Double => scala.Unit,
     ValueChanged: ASPxClientEvent[
       BootstrapClientRangeSelectorValueChangedEventHandler[BootstrapClientRangeSelector]
     ],
     name: java.lang.String
   ): BootstrapClientRangeSelector = {
-    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, Disposing = Disposing, Drawn = Drawn, ExportTo = ExportTo, Exported = Exported, Exporting = Exporting, FileSaving = FileSaving, GetClientVisible = GetClientVisible, GetDataSource = GetDataSource, GetHeight = GetHeight, GetInstance = GetInstance, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetValue = GetValue, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, IncidentOccurred = IncidentOccurred, Init = Init, OptionChanged = OptionChanged, Print = Print, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetDataSource = SetDataSource, SetHeight = SetHeight, SetOptions = SetOptions, SetValue = SetValue, SetVisible = SetVisible, SetWidth = SetWidth, ValueChanged = ValueChanged, name = name)
+    val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), Disposing = Disposing, Drawn = Drawn, ExportTo = js.Any.fromFunction2(ExportTo), Exported = Exported, Exporting = Exporting, FileSaving = FileSaving, GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetDataSource = js.Any.fromFunction0(GetDataSource), GetHeight = js.Any.fromFunction0(GetHeight), GetInstance = js.Any.fromFunction0(GetInstance), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetValue = js.Any.fromFunction0(GetValue), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), InCallback = js.Any.fromFunction0(InCallback), IncidentOccurred = IncidentOccurred, Init = Init, OptionChanged = OptionChanged, Print = js.Any.fromFunction0(Print), SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetDataSource = js.Any.fromFunction1(SetDataSource), SetHeight = js.Any.fromFunction1(SetHeight), SetOptions = js.Any.fromFunction1(SetOptions), SetValue = js.Any.fromFunction1(SetValue), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), ValueChanged = ValueChanged, name = name)
   
     __obj.asInstanceOf[BootstrapClientRangeSelector]
   }

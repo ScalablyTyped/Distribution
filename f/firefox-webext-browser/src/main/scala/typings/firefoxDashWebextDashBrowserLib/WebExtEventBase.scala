@@ -15,10 +15,10 @@ object WebExtEventBase {
   @scala.inline
   def apply[TAddListener /* <: js.Function1[/* repeated */ js.Any, _] */, TCallback](
     addListener: TAddListener,
-    hasListener: js.Function1[TCallback, scala.Boolean],
-    removeListener: js.Function1[TCallback, scala.Unit]
+    hasListener: TCallback => scala.Boolean,
+    removeListener: TCallback => scala.Unit
   ): WebExtEventBase[TAddListener, TCallback] = {
-    val __obj = js.Dynamic.literal(addListener = addListener.asInstanceOf[js.Any], hasListener = hasListener, removeListener = removeListener)
+    val __obj = js.Dynamic.literal(addListener = addListener.asInstanceOf[js.Any], hasListener = js.Any.fromFunction1(hasListener), removeListener = js.Any.fromFunction1(removeListener))
   
     __obj.asInstanceOf[WebExtEventBase[TAddListener, TCallback]]
   }

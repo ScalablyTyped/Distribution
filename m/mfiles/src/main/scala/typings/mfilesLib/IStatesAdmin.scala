@@ -15,12 +15,12 @@ trait IStatesAdmin extends js.Object {
 object IStatesAdmin {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IStateAdmin, scala.Unit],
+    Add: (scala.Double, IStateAdmin) => scala.Unit,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IStateAdmin],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => IStateAdmin,
+    Remove: scala.Double => scala.Unit
   ): IStatesAdmin = {
-    val __obj = js.Dynamic.literal(Add = Add, Count = Count, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IStatesAdmin]
   }

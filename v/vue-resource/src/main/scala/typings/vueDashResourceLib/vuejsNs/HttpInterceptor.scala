@@ -13,12 +13,12 @@ trait HttpInterceptor extends js.Object {
 object HttpInterceptor {
   @scala.inline
   def apply(
-    request: js.Function1[/* request */ HttpOptions, HttpOptions] = null,
-    response: js.Function1[/* response */ HttpResponse, HttpResponse] = null
+    request: /* request */ HttpOptions => HttpOptions = null,
+    response: /* response */ HttpResponse => HttpResponse = null
   ): HttpInterceptor = {
     val __obj = js.Dynamic.literal()
-    if (request != null) __obj.updateDynamic("request")(request)
-    if (response != null) __obj.updateDynamic("response")(response)
+    if (request != null) __obj.updateDynamic("request")(js.Any.fromFunction1(request))
+    if (response != null) __obj.updateDynamic("response")(js.Any.fromFunction1(response))
     __obj.asInstanceOf[HttpInterceptor]
   }
 }

@@ -116,23 +116,23 @@ object JQueryKnobOptions {
     angleArc: scala.Int | scala.Double = null,
     angleOffset: scala.Int | scala.Double = null,
     bgColor: java.lang.String = null,
-    cancel: js.Function0[scala.Unit] = null,
-    change: js.Function1[/* value */ scala.Double, scala.Unit] = null,
+    cancel: () => scala.Unit = null,
+    change: /* value */ scala.Double => scala.Unit = null,
     cursor: java.lang.String | scala.Boolean = null,
     displayInput: js.UndefOr[scala.Boolean] = js.undefined,
     displayPrevious: js.UndefOr[scala.Boolean] = js.undefined,
-    draw: js.Function0[scala.Unit] = null,
+    draw: () => scala.Unit = null,
     fgColor: java.lang.String = null,
     font: java.lang.String = null,
     fontWeight: java.lang.String = null,
-    format: js.Function1[/* value */ scala.Double, scala.Unit] = null,
+    format: /* value */ scala.Double => scala.Unit = null,
     height: scala.Int | scala.Double = null,
     inputColor: java.lang.String = null,
     lineCap: java.lang.String = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
-    release: js.Function1[/* value */ scala.Double, scala.Unit] = null,
+    release: /* value */ scala.Double => scala.Unit = null,
     rotation: java.lang.String = null,
     step: scala.Int | scala.Double = null,
     stopper: js.UndefOr[scala.Boolean] = js.undefined,
@@ -143,23 +143,23 @@ object JQueryKnobOptions {
     if (angleArc != null) __obj.updateDynamic("angleArc")(angleArc.asInstanceOf[js.Any])
     if (angleOffset != null) __obj.updateDynamic("angleOffset")(angleOffset.asInstanceOf[js.Any])
     if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (!js.isUndefined(displayInput)) __obj.updateDynamic("displayInput")(displayInput)
     if (!js.isUndefined(displayPrevious)) __obj.updateDynamic("displayPrevious")(displayPrevious)
-    if (draw != null) __obj.updateDynamic("draw")(draw)
+    if (draw != null) __obj.updateDynamic("draw")(js.Any.fromFunction0(draw))
     if (fgColor != null) __obj.updateDynamic("fgColor")(fgColor)
     if (font != null) __obj.updateDynamic("font")(font)
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction1(format))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (inputColor != null) __obj.updateDynamic("inputColor")(inputColor)
     if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (release != null) __obj.updateDynamic("release")(release)
+    if (release != null) __obj.updateDynamic("release")(js.Any.fromFunction1(release))
     if (rotation != null) __obj.updateDynamic("rotation")(rotation)
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (!js.isUndefined(stopper)) __obj.updateDynamic("stopper")(stopper)

@@ -23,16 +23,16 @@ object Anon_CompleteCurrent {
   @scala.inline
   def apply(
     urls: js.Array[java.lang.String],
-    complete: js.Function0[scala.Unit] = null,
+    complete: () => scala.Unit = null,
     current: java.lang.String = null,
-    fail: js.Function0[scala.Unit] = null,
-    success: js.Function0[scala.Unit] = null
+    fail: () => scala.Unit = null,
+    success: () => scala.Unit = null
   ): Anon_CompleteCurrent = {
     val __obj = js.Dynamic.literal(urls = urls)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (current != null) __obj.updateDynamic("current")(current)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[Anon_CompleteCurrent]
   }
 }

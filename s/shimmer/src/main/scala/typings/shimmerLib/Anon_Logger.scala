@@ -11,9 +11,9 @@ trait Anon_Logger extends js.Object {
 
 object Anon_Logger {
   @scala.inline
-  def apply(logger: js.Function1[/* msg */ java.lang.String, scala.Unit] = null): Anon_Logger = {
+  def apply(logger: /* msg */ java.lang.String => scala.Unit = null): Anon_Logger = {
     val __obj = js.Dynamic.literal()
-    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (logger != null) __obj.updateDynamic("logger")(js.Any.fromFunction1(logger))
     __obj.asInstanceOf[Anon_Logger]
   }
 }

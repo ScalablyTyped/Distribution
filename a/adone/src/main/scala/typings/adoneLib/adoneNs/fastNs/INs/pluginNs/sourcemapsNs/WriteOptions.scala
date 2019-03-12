@@ -60,10 +60,10 @@ object WriteOptions {
     clone: adoneLib.adoneNs.fastNs.INs.FileCloneOptions = null,
     destPath: java.lang.String = null,
     includeContent: js.UndefOr[scala.Boolean] = js.undefined,
-    mapFile: js.Function1[/* file */ T, java.lang.String] = null,
-    mapSources: js.Function2[/* path */ java.lang.String, /* file */ T, java.lang.String] = null,
+    mapFile: /* file */ T => java.lang.String = null,
+    mapSources: (/* path */ java.lang.String, /* file */ T) => java.lang.String = null,
     mapSourcesAbsolute: js.UndefOr[scala.Boolean] = js.undefined,
-    sourceMappingURL: js.Function1[/* file */ T, java.lang.String] = null,
+    sourceMappingURL: /* file */ T => java.lang.String = null,
     sourceMappingURLPrefix: java.lang.String | (js.Function1[/* file */ T, java.lang.String]) = null,
     sourceRoot: java.lang.String | (js.Function1[/* file */ T, java.lang.String]) = null
   ): WriteOptions[T] = {
@@ -73,10 +73,10 @@ object WriteOptions {
     if (clone != null) __obj.updateDynamic("clone")(clone)
     if (destPath != null) __obj.updateDynamic("destPath")(destPath)
     if (!js.isUndefined(includeContent)) __obj.updateDynamic("includeContent")(includeContent)
-    if (mapFile != null) __obj.updateDynamic("mapFile")(mapFile)
-    if (mapSources != null) __obj.updateDynamic("mapSources")(mapSources)
+    if (mapFile != null) __obj.updateDynamic("mapFile")(js.Any.fromFunction1(mapFile))
+    if (mapSources != null) __obj.updateDynamic("mapSources")(js.Any.fromFunction2(mapSources))
     if (!js.isUndefined(mapSourcesAbsolute)) __obj.updateDynamic("mapSourcesAbsolute")(mapSourcesAbsolute)
-    if (sourceMappingURL != null) __obj.updateDynamic("sourceMappingURL")(sourceMappingURL)
+    if (sourceMappingURL != null) __obj.updateDynamic("sourceMappingURL")(js.Any.fromFunction1(sourceMappingURL))
     if (sourceMappingURLPrefix != null) __obj.updateDynamic("sourceMappingURLPrefix")(sourceMappingURLPrefix.asInstanceOf[js.Any])
     if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteOptions[T]]

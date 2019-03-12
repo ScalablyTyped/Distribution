@@ -18,15 +18,15 @@ trait NavItemView extends js.Object {
 object NavItemView {
   @scala.inline
   def apply(
-    addNavItem: js.Function1[NavItemDescriptor, NavItemView],
+    addNavItem: NavItemDescriptor => NavItemView,
     destroyed: scala.Boolean,
-    isCollapsed: js.Function0[scala.Boolean],
-    on_destroy: js.Function2[inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit], scala.Unit],
-    remove: js.Function0[scala.Unit],
-    setCollapsed: js.Function1[scala.Boolean, scala.Unit]
+    isCollapsed: () => scala.Boolean,
+    on_destroy: (inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit]) => scala.Unit,
+    remove: () => scala.Unit,
+    setCollapsed: scala.Boolean => scala.Unit
   ): NavItemView = {
-    val __obj = js.Dynamic.literal(addNavItem = addNavItem, destroyed = destroyed, isCollapsed = isCollapsed, remove = remove, setCollapsed = setCollapsed)
-    __obj.updateDynamic("on")(on_destroy)
+    val __obj = js.Dynamic.literal(addNavItem = js.Any.fromFunction1(addNavItem), destroyed = destroyed, isCollapsed = js.Any.fromFunction0(isCollapsed), remove = js.Any.fromFunction0(remove), setCollapsed = js.Any.fromFunction1(setCollapsed))
+    __obj.updateDynamic("on")(js.Any.fromFunction2(on_destroy))
     __obj.asInstanceOf[NavItemView]
   }
 }

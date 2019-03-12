@@ -24,18 +24,14 @@ trait TransformStreamTransformer[R, W] extends js.Object {
 object TransformStreamTransformer {
   @scala.inline
   def apply[R, W](
-    flush: js.Function1[/* controller */ TransformStreamDefaultController[R], scala.Unit | js.Promise[_]] = null,
-    start: js.Function1[/* controller */ TransformStreamDefaultController[R], scala.Unit | js.Promise[_]] = null,
-    transform: js.Function2[
-      /* chunk */ W, 
-      /* controller */ TransformStreamDefaultController[R], 
-      scala.Unit | js.Promise[_]
-    ] = null
+    flush: /* controller */ TransformStreamDefaultController[R] => scala.Unit | js.Promise[_] = null,
+    start: /* controller */ TransformStreamDefaultController[R] => scala.Unit | js.Promise[_] = null,
+    transform: (/* chunk */ W, /* controller */ TransformStreamDefaultController[R]) => scala.Unit | js.Promise[_] = null
   ): TransformStreamTransformer[R, W] = {
     val __obj = js.Dynamic.literal()
-    if (flush != null) __obj.updateDynamic("flush")(flush)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (flush != null) __obj.updateDynamic("flush")(js.Any.fromFunction1(flush))
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction2(transform))
     __obj.asInstanceOf[TransformStreamTransformer[R, W]]
   }
 }

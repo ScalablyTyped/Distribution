@@ -46,15 +46,12 @@ object KosModel {
     reducers: org.scalablytyped.runtime.StringDictionary[
       js.Function2[/* state */ T, /* hasPayload */ kosDashCoreLib.Anon_Payload[T], scala.Unit]
     ],
-    getAsync: js.Function1[
-      /* key */ java.lang.String, 
-      js.Function2[/* dispatch */ KosDispatch, /* getState */ js.UndefOr[GetKosState[_]], scala.Unit]
-    ] = null,
-    setup: js.Function2[/* dispatch */ KosDispatch, /* getState */ GetKosState[T], scala.Unit] = null
+    getAsync: /* key */ java.lang.String => js.Function2[/* dispatch */ KosDispatch, /* getState */ js.UndefOr[GetKosState[_]], scala.Unit] = null,
+    setup: (/* dispatch */ KosDispatch, /* getState */ GetKosState[T]) => scala.Unit = null
   ): KosModel[T] = {
     val __obj = js.Dynamic.literal(asyncs = asyncs, initial = initial.asInstanceOf[js.Any], namespace = namespace, reducers = reducers)
-    if (getAsync != null) __obj.updateDynamic("getAsync")(getAsync)
-    if (setup != null) __obj.updateDynamic("setup")(setup)
+    if (getAsync != null) __obj.updateDynamic("getAsync")(js.Any.fromFunction1(getAsync))
+    if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction2(setup))
     __obj.asInstanceOf[KosModel[T]]
   }
 }

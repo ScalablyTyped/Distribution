@@ -60,17 +60,17 @@ trait TouchableMixin extends js.Object {
 object TouchableMixin {
   @scala.inline
   def apply(
-    touchableGetHighlightDelayMS: js.Function0[scala.Double],
-    touchableGetHitSlop: js.Function0[Insets],
-    touchableGetLongPressDelayMS: js.Function0[scala.Double],
-    touchableGetPressOutDelayMS: js.Function0[scala.Double],
-    touchableGetPressRectOffset: js.Function0[Insets],
-    touchableHandleActivePressIn: js.Function1[GestureResponderEvent, scala.Unit],
-    touchableHandleActivePressOut: js.Function1[GestureResponderEvent, scala.Unit],
-    touchableHandleLongPress: js.Function1[GestureResponderEvent, scala.Unit],
-    touchableHandlePress: js.Function1[GestureResponderEvent, scala.Unit]
+    touchableGetHighlightDelayMS: () => scala.Double,
+    touchableGetHitSlop: () => Insets,
+    touchableGetLongPressDelayMS: () => scala.Double,
+    touchableGetPressOutDelayMS: () => scala.Double,
+    touchableGetPressRectOffset: () => Insets,
+    touchableHandleActivePressIn: GestureResponderEvent => scala.Unit,
+    touchableHandleActivePressOut: GestureResponderEvent => scala.Unit,
+    touchableHandleLongPress: GestureResponderEvent => scala.Unit,
+    touchableHandlePress: GestureResponderEvent => scala.Unit
   ): TouchableMixin = {
-    val __obj = js.Dynamic.literal(touchableGetHighlightDelayMS = touchableGetHighlightDelayMS, touchableGetHitSlop = touchableGetHitSlop, touchableGetLongPressDelayMS = touchableGetLongPressDelayMS, touchableGetPressOutDelayMS = touchableGetPressOutDelayMS, touchableGetPressRectOffset = touchableGetPressRectOffset, touchableHandleActivePressIn = touchableHandleActivePressIn, touchableHandleActivePressOut = touchableHandleActivePressOut, touchableHandleLongPress = touchableHandleLongPress, touchableHandlePress = touchableHandlePress)
+    val __obj = js.Dynamic.literal(touchableGetHighlightDelayMS = js.Any.fromFunction0(touchableGetHighlightDelayMS), touchableGetHitSlop = js.Any.fromFunction0(touchableGetHitSlop), touchableGetLongPressDelayMS = js.Any.fromFunction0(touchableGetLongPressDelayMS), touchableGetPressOutDelayMS = js.Any.fromFunction0(touchableGetPressOutDelayMS), touchableGetPressRectOffset = js.Any.fromFunction0(touchableGetPressRectOffset), touchableHandleActivePressIn = js.Any.fromFunction1(touchableHandleActivePressIn), touchableHandleActivePressOut = js.Any.fromFunction1(touchableHandleActivePressOut), touchableHandleLongPress = js.Any.fromFunction1(touchableHandleLongPress), touchableHandlePress = js.Any.fromFunction1(touchableHandlePress))
   
     __obj.asInstanceOf[TouchableMixin]
   }

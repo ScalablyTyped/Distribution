@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.EmailOptions")
 @js.native
 class EmailOptions protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var AutoFormatAsYouTypeApplyBorders: scala.Boolean = js.native
   var AutoFormatAsYouTypeApplyBulletedLists: scala.Boolean = js.native
   var AutoFormatAsYouTypeApplyClosings: scala.Boolean = js.native
@@ -35,7 +35,7 @@ class EmailOptions protected () extends js.Object {
   val Creator: scala.Double = js.native
   val Dummy1: scala.Boolean = js.native
   val Dummy2: scala.Boolean = js.native
-  val EmailSignature: EmailSignature = js.native
+  val EmailSignature: activexDashWordLib.WordNs.EmailSignature = js.native
   var EmbedSmartTag: scala.Boolean = js.native
   var HTMLFidelity: WdEmailHTMLFidelity = js.native
   var MarkComments: scala.Boolean = js.native

@@ -21,12 +21,9 @@ trait DiagnosticsResource extends js.Object {
 object DiagnosticsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAlertFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListDiagnosticsResponse]
-    ]
+    list: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAlertFilter => gapiDotClientLib.gapiNs.clientNs.Request[ListDiagnosticsResponse]
   ): DiagnosticsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[DiagnosticsResource]
   }

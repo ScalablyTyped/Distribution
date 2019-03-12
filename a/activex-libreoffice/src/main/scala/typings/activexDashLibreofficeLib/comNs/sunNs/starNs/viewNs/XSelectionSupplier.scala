@@ -27,15 +27,15 @@ object XSelectionSupplier {
   @scala.inline
   def apply(
     Selection: js.Any,
-    acquire: js.Function0[scala.Unit],
-    addSelectionChangeListener: js.Function1[XSelectionChangeListener, scala.Unit],
-    getSelection: js.Function0[js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeSelectionChangeListener: js.Function1[XSelectionChangeListener, scala.Unit],
-    select: js.Function1[js.Any, scala.Boolean]
+    acquire: () => scala.Unit,
+    addSelectionChangeListener: XSelectionChangeListener => scala.Unit,
+    getSelection: () => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeSelectionChangeListener: XSelectionChangeListener => scala.Unit,
+    select: js.Any => scala.Boolean
   ): XSelectionSupplier = {
-    val __obj = js.Dynamic.literal(Selection = Selection, acquire = acquire, addSelectionChangeListener = addSelectionChangeListener, getSelection = getSelection, queryInterface = queryInterface, release = release, removeSelectionChangeListener = removeSelectionChangeListener, select = select)
+    val __obj = js.Dynamic.literal(Selection = Selection, acquire = js.Any.fromFunction0(acquire), addSelectionChangeListener = js.Any.fromFunction1(addSelectionChangeListener), getSelection = js.Any.fromFunction0(getSelection), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeSelectionChangeListener = js.Any.fromFunction1(removeSelectionChangeListener), select = js.Any.fromFunction1(select))
   
     __obj.asInstanceOf[XSelectionSupplier]
   }

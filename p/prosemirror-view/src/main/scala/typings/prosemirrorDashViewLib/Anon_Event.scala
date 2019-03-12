@@ -20,14 +20,14 @@ object Anon_Event {
     key: java.lang.String = null,
     marks: js.Array[prosemirrorDashModelLib.prosemirrorDashModelMod.Mark[_]] = null,
     side: scala.Int | scala.Double = null,
-    stopEvent: js.Function1[/* event */ stdLib.Event, scala.Boolean] = null
+    stopEvent: /* event */ stdLib.Event => scala.Boolean = null
   ): Anon_Event = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (key != null) __obj.updateDynamic("key")(key)
     if (marks != null) __obj.updateDynamic("marks")(marks)
     if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
-    if (stopEvent != null) __obj.updateDynamic("stopEvent")(stopEvent)
+    if (stopEvent != null) __obj.updateDynamic("stopEvent")(js.Any.fromFunction1(stopEvent))
     __obj.asInstanceOf[Anon_Event]
   }
 }

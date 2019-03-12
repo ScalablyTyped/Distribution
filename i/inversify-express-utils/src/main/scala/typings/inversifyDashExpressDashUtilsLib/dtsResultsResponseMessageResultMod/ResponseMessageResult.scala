@@ -15,12 +15,10 @@ object ResponseMessageResult {
   @scala.inline
   def apply(
     apiController: js.Any,
-    executeAsync: js.Function0[
-      js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
-    ],
+    executeAsync: () => js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage],
     message: js.Any
   ): ResponseMessageResult = {
-    val __obj = js.Dynamic.literal(apiController = apiController, executeAsync = executeAsync, message = message)
+    val __obj = js.Dynamic.literal(apiController = apiController, executeAsync = js.Any.fromFunction0(executeAsync), message = message)
   
     __obj.asInstanceOf[ResponseMessageResult]
   }

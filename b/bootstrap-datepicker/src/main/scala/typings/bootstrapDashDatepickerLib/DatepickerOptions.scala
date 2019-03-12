@@ -81,22 +81,10 @@ object DatepickerOptions {
   def apply(
     assumeNearbyYear: scala.Boolean | scala.Double = null,
     autoclose: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeShowCentury: js.Function1[
-      /* date */ stdLib.Date, 
-      js.UndefOr[java.lang.String | scala.Boolean | DatepickerBeforeShowResponse]
-    ] = null,
-    beforeShowDay: js.Function1[
-      /* date */ stdLib.Date, 
-      js.UndefOr[java.lang.String | scala.Boolean | DatepickerBeforeShowDayResponse]
-    ] = null,
-    beforeShowDecade: js.Function1[
-      /* date */ stdLib.Date, 
-      js.UndefOr[java.lang.String | scala.Boolean | DatepickerBeforeShowResponse]
-    ] = null,
-    beforeShowYear: js.Function1[
-      /* date */ stdLib.Date, 
-      js.UndefOr[java.lang.String | scala.Boolean | DatepickerBeforeShowResponse]
-    ] = null,
+    beforeShowCentury: /* date */ stdLib.Date => js.UndefOr[java.lang.String | scala.Boolean | DatepickerBeforeShowResponse] = null,
+    beforeShowDay: /* date */ stdLib.Date => js.UndefOr[java.lang.String | scala.Boolean | DatepickerBeforeShowDayResponse] = null,
+    beforeShowDecade: /* date */ stdLib.Date => js.UndefOr[java.lang.String | scala.Boolean | DatepickerBeforeShowResponse] = null,
+    beforeShowYear: /* date */ stdLib.Date => js.UndefOr[java.lang.String | scala.Boolean | DatepickerBeforeShowResponse] = null,
     calendarWeeks: js.UndefOr[scala.Boolean] = js.undefined,
     clearBtn: js.UndefOr[scala.Boolean] = js.undefined,
     container: java.lang.String = null,
@@ -132,10 +120,10 @@ object DatepickerOptions {
     val __obj = js.Dynamic.literal()
     if (assumeNearbyYear != null) __obj.updateDynamic("assumeNearbyYear")(assumeNearbyYear.asInstanceOf[js.Any])
     if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose)
-    if (beforeShowCentury != null) __obj.updateDynamic("beforeShowCentury")(beforeShowCentury)
-    if (beforeShowDay != null) __obj.updateDynamic("beforeShowDay")(beforeShowDay)
-    if (beforeShowDecade != null) __obj.updateDynamic("beforeShowDecade")(beforeShowDecade)
-    if (beforeShowYear != null) __obj.updateDynamic("beforeShowYear")(beforeShowYear)
+    if (beforeShowCentury != null) __obj.updateDynamic("beforeShowCentury")(js.Any.fromFunction1(beforeShowCentury))
+    if (beforeShowDay != null) __obj.updateDynamic("beforeShowDay")(js.Any.fromFunction1(beforeShowDay))
+    if (beforeShowDecade != null) __obj.updateDynamic("beforeShowDecade")(js.Any.fromFunction1(beforeShowDecade))
+    if (beforeShowYear != null) __obj.updateDynamic("beforeShowYear")(js.Any.fromFunction1(beforeShowYear))
     if (!js.isUndefined(calendarWeeks)) __obj.updateDynamic("calendarWeeks")(calendarWeeks)
     if (!js.isUndefined(clearBtn)) __obj.updateDynamic("clearBtn")(clearBtn)
     if (container != null) __obj.updateDynamic("container")(container)

@@ -9,7 +9,7 @@ package object cassandraDashDriverMod {
   type Callback = js.Function
   type ExecutionProfile = ExecutionProfileOptions
   type ResultCallback = js.Function2[
-    /* err */ nodeLib.Error, 
+    /* err */ stdLib.Error, 
     /* result */ cassandraDashDriverLib.cassandraDashDriverMod.typesNs.ResultSet, 
     scala.Unit
   ]

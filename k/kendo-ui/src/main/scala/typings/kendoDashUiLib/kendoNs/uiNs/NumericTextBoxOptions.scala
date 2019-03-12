@@ -28,7 +28,7 @@ trait NumericTextBoxOptions extends js.Object {
 object NumericTextBoxOptions {
   @scala.inline
   def apply(
-    change: js.Function1[/* e */ NumericTextBoxChangeEvent, scala.Unit] = null,
+    change: /* e */ NumericTextBoxChangeEvent => scala.Unit = null,
     culture: java.lang.String = null,
     decimals: scala.Int | scala.Double = null,
     downArrowText: java.lang.String = null,
@@ -40,14 +40,14 @@ object NumericTextBoxOptions {
     placeholder: java.lang.String = null,
     restrictDecimals: js.UndefOr[scala.Boolean] = js.undefined,
     round: js.UndefOr[scala.Boolean] = js.undefined,
-    spin: js.Function1[/* e */ NumericTextBoxSpinEvent, scala.Unit] = null,
+    spin: /* e */ NumericTextBoxSpinEvent => scala.Unit = null,
     spinners: js.UndefOr[scala.Boolean] = js.undefined,
     step: scala.Int | scala.Double = null,
     upArrowText: java.lang.String = null,
     value: scala.Int | scala.Double = null
   ): NumericTextBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (culture != null) __obj.updateDynamic("culture")(culture)
     if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
     if (downArrowText != null) __obj.updateDynamic("downArrowText")(downArrowText)
@@ -59,7 +59,7 @@ object NumericTextBoxOptions {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(restrictDecimals)) __obj.updateDynamic("restrictDecimals")(restrictDecimals)
     if (!js.isUndefined(round)) __obj.updateDynamic("round")(round)
-    if (spin != null) __obj.updateDynamic("spin")(spin)
+    if (spin != null) __obj.updateDynamic("spin")(js.Any.fromFunction1(spin))
     if (!js.isUndefined(spinners)) __obj.updateDynamic("spinners")(spinners)
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (upArrowText != null) __obj.updateDynamic("upArrowText")(upArrowText)

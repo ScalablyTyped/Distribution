@@ -85,46 +85,46 @@ trait UploadOptions extends js.Object {
 object UploadOptions {
   @scala.inline
   def apply(
-    abort: js.Function1[/* event */ js.Any, _] = null,
+    abort: /* event */ js.Any => _ = null,
     action: java.lang.String = null,
-    allcomplete: js.Function2[/* response */ js.Any, /* xhr */ stdLib.XMLHttpRequest, _] = null,
+    allcomplete: (/* response */ js.Any, /* xhr */ stdLib.XMLHttpRequest) => _ = null,
     allow: java.lang.String = null,
-    before: js.Function2[UploadOptions, /* files */ java.lang.String | js.Array[java.lang.String], _] = null,
-    beforeAll: js.Function1[/* files */ java.lang.String | js.Array[java.lang.String], _] = null,
-    beforeSend: js.Function1[/* xhr */ stdLib.XMLHttpRequest, _] = null,
-    complete: js.Function2[/* response */ js.Any, /* xhr */ stdLib.XMLHttpRequest, _] = null,
-    error: js.Function1[/* event */ js.Any, _] = null,
+    before: (UploadOptions, /* files */ java.lang.String | js.Array[java.lang.String]) => _ = null,
+    beforeAll: /* files */ java.lang.String | js.Array[java.lang.String] => _ = null,
+    beforeSend: /* xhr */ stdLib.XMLHttpRequest => _ = null,
+    complete: (/* response */ js.Any, /* xhr */ stdLib.XMLHttpRequest) => _ = null,
+    error: /* event */ js.Any => _ = null,
     filelimit: scala.Int | scala.Double = null,
-    load: js.Function1[/* event */ js.Any, _] = null,
-    loadend: js.Function1[/* event */ js.Any, _] = null,
-    loadstart: js.Function1[/* event */ js.Any, _] = null,
-    notallowed: js.Function2[/* file */ java.lang.String | js.Array[java.lang.String], UploadOptions, _] = null,
+    load: /* event */ js.Any => _ = null,
+    loadend: /* event */ js.Any => _ = null,
+    loadstart: /* event */ js.Any => _ = null,
+    notallowed: (/* file */ java.lang.String | js.Array[java.lang.String], UploadOptions) => _ = null,
     param: java.lang.String = null,
     params: js.Object = null,
-    progress: js.Function1[/* percent */ scala.Double, _] = null,
-    readystatechange: js.Function1[/* event */ js.Any, _] = null,
+    progress: /* percent */ scala.Double => _ = null,
+    readystatechange: /* event */ js.Any => _ = null,
     single: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: java.lang.String = null
   ): UploadOptions = {
     val __obj = js.Dynamic.literal()
-    if (abort != null) __obj.updateDynamic("abort")(abort)
+    if (abort != null) __obj.updateDynamic("abort")(js.Any.fromFunction1(abort))
     if (action != null) __obj.updateDynamic("action")(action)
-    if (allcomplete != null) __obj.updateDynamic("allcomplete")(allcomplete)
+    if (allcomplete != null) __obj.updateDynamic("allcomplete")(js.Any.fromFunction2(allcomplete))
     if (allow != null) __obj.updateDynamic("allow")(allow)
-    if (before != null) __obj.updateDynamic("before")(before)
-    if (beforeAll != null) __obj.updateDynamic("beforeAll")(beforeAll)
-    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction2(before))
+    if (beforeAll != null) __obj.updateDynamic("beforeAll")(js.Any.fromFunction1(beforeAll))
+    if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction1(beforeSend))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction2(complete))
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (filelimit != null) __obj.updateDynamic("filelimit")(filelimit.asInstanceOf[js.Any])
-    if (load != null) __obj.updateDynamic("load")(load)
-    if (loadend != null) __obj.updateDynamic("loadend")(loadend)
-    if (loadstart != null) __obj.updateDynamic("loadstart")(loadstart)
-    if (notallowed != null) __obj.updateDynamic("notallowed")(notallowed)
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
+    if (loadend != null) __obj.updateDynamic("loadend")(js.Any.fromFunction1(loadend))
+    if (loadstart != null) __obj.updateDynamic("loadstart")(js.Any.fromFunction1(loadstart))
+    if (notallowed != null) __obj.updateDynamic("notallowed")(js.Any.fromFunction2(notallowed))
     if (param != null) __obj.updateDynamic("param")(param)
     if (params != null) __obj.updateDynamic("params")(params)
-    if (progress != null) __obj.updateDynamic("progress")(progress)
-    if (readystatechange != null) __obj.updateDynamic("readystatechange")(readystatechange)
+    if (progress != null) __obj.updateDynamic("progress")(js.Any.fromFunction1(progress))
+    if (readystatechange != null) __obj.updateDynamic("readystatechange")(js.Any.fromFunction1(readystatechange))
     if (!js.isUndefined(single)) __obj.updateDynamic("single")(single)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[UploadOptions]

@@ -11,8 +11,8 @@ trait isAdGroupChild extends isCampaignChild {
 
 object isAdGroupChild {
   @scala.inline
-  def apply(getAdGroup: js.Function0[AdGroup], getCampaign: js.Function0[Campaign]): isAdGroupChild = {
-    val __obj = js.Dynamic.literal(getAdGroup = getAdGroup, getCampaign = getCampaign)
+  def apply(getAdGroup: () => AdGroup, getCampaign: () => Campaign): isAdGroupChild = {
+    val __obj = js.Dynamic.literal(getAdGroup = js.Any.fromFunction0(getAdGroup), getCampaign = js.Any.fromFunction0(getCampaign))
   
     __obj.asInstanceOf[isAdGroupChild]
   }

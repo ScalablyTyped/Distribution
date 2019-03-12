@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var NProgress: nprogressLib.NProgressStatic = js.native
+  var NProgress: NProgressStatic = js.native
 }
 

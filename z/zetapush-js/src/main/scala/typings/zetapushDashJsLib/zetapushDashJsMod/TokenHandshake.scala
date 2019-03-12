@@ -17,11 +17,11 @@ object TokenHandshake {
     authType: java.lang.String,
     authVersion: java.lang.String,
     deploymentId: java.lang.String,
-    getHandshakeFields: js.Function1[Client, HandshakeFields],
+    getHandshakeFields: Client => HandshakeFields,
     sandboxId: java.lang.String,
     token: java.lang.String
   ): TokenHandshake = {
-    val __obj = js.Dynamic.literal(authData = authData, authType = authType, authVersion = authVersion, deploymentId = deploymentId, getHandshakeFields = getHandshakeFields, sandboxId = sandboxId, token = token)
+    val __obj = js.Dynamic.literal(authData = authData, authType = authType, authVersion = authVersion, deploymentId = deploymentId, getHandshakeFields = js.Any.fromFunction1(getHandshakeFields), sandboxId = sandboxId, token = token)
   
     __obj.asInstanceOf[TokenHandshake]
   }

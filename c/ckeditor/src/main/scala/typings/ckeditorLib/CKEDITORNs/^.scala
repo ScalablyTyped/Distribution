@@ -80,36 +80,36 @@ object ^ extends js.Object {
   val VERBOSITY_WARN: scala.Double = js.native
   var basePath: java.lang.String = js.native
   val config: ckeditorLib.CKEDITORNs.config = js.native
-  var currentInstance: ckeditorLib.CKEDITORNs.editor = js.native
+  var currentInstance: editor = js.native
   // Config options
   var disableAutoInline: scala.Boolean = js.native
   var document: ckeditorLib.CKEDITORNs.domNs.document = js.native
-  var dtd: ckeditorLib.CKEDITORNs.dtdDefinition = js.native
+  var dtd: dtdDefinition = js.native
   var loadFullCoreTimeout: scala.Double = js.native
   var replaceClass: java.lang.String = js.native
   var revision: java.lang.String = js.native
   var rnd: scala.Double = js.native
   var skinName: java.lang.String = js.native
   var status: java.lang.String = js.native
-  var stylesSet: ckeditorLib.CKEDITORNs.resourceManager = js.native
+  var stylesSet: resourceManager = js.native
   var timestamp: java.lang.String = js.native
   var verbosity: scala.Double = js.native
   var version: java.lang.String = js.native
   // Methods
-  def add(editor: ckeditorLib.CKEDITORNs.editor): scala.Unit = js.native
+  def add(editor: editor): scala.Unit = js.native
   def addCss(css: java.lang.String): scala.Unit = js.native
-  def addTemplate(name: java.lang.String, source: java.lang.String): ckeditorLib.CKEDITORNs.template = js.native
-  def appendTo(element: java.lang.String): ckeditorLib.CKEDITORNs.editor = js.native
-  def appendTo(element: java.lang.String, config: ckeditorLib.CKEDITORNs.config): ckeditorLib.CKEDITORNs.editor = js.native
-  def appendTo(element: java.lang.String, config: ckeditorLib.CKEDITORNs.config, data: java.lang.String): ckeditorLib.CKEDITORNs.editor = js.native
-  def appendTo(element: stdLib.HTMLElement): ckeditorLib.CKEDITORNs.editor = js.native
-  def appendTo(element: stdLib.HTMLElement, config: ckeditorLib.CKEDITORNs.config): ckeditorLib.CKEDITORNs.editor = js.native
-  def appendTo(element: stdLib.HTMLElement, config: ckeditorLib.CKEDITORNs.config, data: java.lang.String): ckeditorLib.CKEDITORNs.editor = js.native
+  def addTemplate(name: java.lang.String, source: java.lang.String): template = js.native
+  def appendTo(element: java.lang.String): editor = js.native
+  def appendTo(element: java.lang.String, config: config): editor = js.native
+  def appendTo(element: java.lang.String, config: config, data: java.lang.String): editor = js.native
+  def appendTo(element: stdLib.HTMLElement): editor = js.native
+  def appendTo(element: stdLib.HTMLElement, config: config): editor = js.native
+  def appendTo(element: stdLib.HTMLElement, config: config, data: java.lang.String): editor = js.native
   // Event interface
   def capture(): scala.Unit = js.native
   def define(name: java.lang.String, meta: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def domReady(): scala.Unit = js.native
-  def editorConfig(config: ckeditorLib.CKEDITORNs.config): scala.Unit = js.native
+  def editorConfig(config: config): scala.Unit = js.native
   def error(errorCode: java.lang.String): scala.Unit = js.native
   def error(errorCode: java.lang.String, additionalData: js.Any): scala.Unit = js.native
   def fire(eventName: java.lang.String): js.Any = js.native
@@ -117,85 +117,72 @@ object ^ extends js.Object {
   def fire(
     eventName: java.lang.String,
     data: org.scalablytyped.runtime.StringDictionary[js.Any],
-    editor: ckeditorLib.CKEDITORNs.editor
+    editor: editor
   ): js.Any = js.native
   def fireOnce(eventName: java.lang.String): js.Any = js.native
   def fireOnce(eventName: java.lang.String, data: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any = js.native
   def fireOnce(
     eventName: java.lang.String,
     data: org.scalablytyped.runtime.StringDictionary[js.Any],
-    editor: ckeditorLib.CKEDITORNs.editor
+    editor: editor
   ): js.Any = js.native
   def getCss(): java.lang.String = js.native
-  def getTemplate(name: java.lang.String): ckeditorLib.CKEDITORNs.template = js.native
+  def getTemplate(name: java.lang.String): template = js.native
   def getUrl(resource: java.lang.String): java.lang.String = js.native
   def hasListeners(eventName: java.lang.String): scala.Boolean = js.native
-  def `inline`(element: java.lang.String): ckeditorLib.CKEDITORNs.editor = js.native
-  def `inline`(element: java.lang.String, instanceConfig: ckeditorLib.CKEDITORNs.config): ckeditorLib.CKEDITORNs.editor = js.native
-  def `inline`(element: stdLib.HTMLElement): ckeditorLib.CKEDITORNs.editor = js.native
-  def `inline`(element: stdLib.HTMLElement, instanceConfig: ckeditorLib.CKEDITORNs.config): ckeditorLib.CKEDITORNs.editor = js.native
+  def `inline`(element: java.lang.String): editor = js.native
+  def `inline`(element: java.lang.String, instanceConfig: config): editor = js.native
+  def `inline`(element: stdLib.HTMLElement): editor = js.native
+  def `inline`(element: stdLib.HTMLElement, instanceConfig: config): editor = js.native
   def inlineAll(): scala.Unit = js.native
   def loadFullCore(): scala.Unit = js.native
+  def on(eventName: java.lang.String, listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit]): scala.Unit = js.native
   def on(
     eventName: java.lang.String,
-    listenerFunction: js.Function1[/* eventInfo */ ckeditorLib.CKEDITORNs.eventInfo, scala.Unit]
-  ): scala.Unit = js.native
-  def on(
-    eventName: java.lang.String,
-    listenerFunction: js.Function1[/* eventInfo */ ckeditorLib.CKEDITORNs.eventInfo, scala.Unit],
+    listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit],
     scopeObj: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def on(
     eventName: java.lang.String,
-    listenerFunction: js.Function1[/* eventInfo */ ckeditorLib.CKEDITORNs.eventInfo, scala.Unit],
+    listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit],
     scopeObj: org.scalablytyped.runtime.StringDictionary[js.Any],
     listenerData: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def on(
     eventName: java.lang.String,
-    listenerFunction: js.Function1[/* eventInfo */ ckeditorLib.CKEDITORNs.eventInfo, scala.Unit],
+    listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit],
     scopeObj: org.scalablytyped.runtime.StringDictionary[js.Any],
     listenerData: org.scalablytyped.runtime.StringDictionary[js.Any],
     priority: scala.Double
   ): scala.Unit = js.native
+  def once(eventName: java.lang.String, listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit]): scala.Unit = js.native
   def once(
     eventName: java.lang.String,
-    listenerFunction: js.Function1[/* eventInfo */ ckeditorLib.CKEDITORNs.eventInfo, scala.Unit]
-  ): scala.Unit = js.native
-  def once(
-    eventName: java.lang.String,
-    listenerFunction: js.Function1[/* eventInfo */ ckeditorLib.CKEDITORNs.eventInfo, scala.Unit],
+    listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit],
     scopeObj: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def once(
     eventName: java.lang.String,
-    listenerFunction: js.Function1[/* eventInfo */ ckeditorLib.CKEDITORNs.eventInfo, scala.Unit],
+    listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit],
     scopeObj: org.scalablytyped.runtime.StringDictionary[js.Any],
     listenerData: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def once(
     eventName: java.lang.String,
-    listenerFunction: js.Function1[/* eventInfo */ ckeditorLib.CKEDITORNs.eventInfo, scala.Unit],
+    listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit],
     scopeObj: org.scalablytyped.runtime.StringDictionary[js.Any],
     listenerData: org.scalablytyped.runtime.StringDictionary[js.Any],
     priority: scala.Double
   ): scala.Unit = js.native
   def removeAllListeners(): scala.Unit = js.native
-  def removeListener(
-    eventName: java.lang.String,
-    listenerFunction: js.Function1[/* eventInfo */ ckeditorLib.CKEDITORNs.eventInfo, scala.Unit]
-  ): scala.Unit = js.native
-  def replace(element: java.lang.String): ckeditorLib.CKEDITORNs.editor = js.native
-  def replace(element: java.lang.String, config: ckeditorLib.CKEDITORNs.config): ckeditorLib.CKEDITORNs.editor = js.native
-  def replace(element: stdLib.HTMLTextAreaElement): ckeditorLib.CKEDITORNs.editor = js.native
-  def replace(element: stdLib.HTMLTextAreaElement, config: ckeditorLib.CKEDITORNs.config): ckeditorLib.CKEDITORNs.editor = js.native
+  def removeListener(eventName: java.lang.String, listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit]): scala.Unit = js.native
+  def replace(element: java.lang.String): editor = js.native
+  def replace(element: java.lang.String, config: config): editor = js.native
+  def replace(element: stdLib.HTMLTextAreaElement): editor = js.native
+  def replace(element: stdLib.HTMLTextAreaElement, config: config): editor = js.native
   def replaceAll(): scala.Unit = js.native
   def replaceAll(
-    assertionFunction: js.Function2[
-      /* textarea */ stdLib.HTMLTextAreaElement, 
-      /* config */ ckeditorLib.CKEDITORNs.config, 
-      scala.Boolean
-    ]
+    assertionFunction: js.Function2[/* textarea */ stdLib.HTMLTextAreaElement, /* config */ config, scala.Boolean]
   ): scala.Unit = js.native
   def replaceAll(className: java.lang.String): scala.Unit = js.native
   def warn(errorCode: java.lang.String): scala.Unit = js.native

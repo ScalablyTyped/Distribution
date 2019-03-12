@@ -47,16 +47,16 @@ trait BackgroundTokenizer extends js.Object {
 object BackgroundTokenizer {
   @scala.inline
   def apply(
-    fireUpdateEvent: js.Function2[scala.Double, scala.Double, scala.Unit],
-    getState: js.Function1[scala.Double, java.lang.String],
-    getTokens: js.Function1[scala.Double, js.Array[TokenInfo]],
-    setDocument: js.Function1[Document, scala.Unit],
-    setTokenizer: js.Function1[Tokenizer, scala.Unit],
-    start: js.Function1[scala.Double, scala.Unit],
+    fireUpdateEvent: (scala.Double, scala.Double) => scala.Unit,
+    getState: scala.Double => java.lang.String,
+    getTokens: scala.Double => js.Array[TokenInfo],
+    setDocument: Document => scala.Unit,
+    setTokenizer: Tokenizer => scala.Unit,
+    start: scala.Double => scala.Unit,
     states: js.Array[_],
-    stop: js.Function0[scala.Unit]
+    stop: () => scala.Unit
   ): BackgroundTokenizer = {
-    val __obj = js.Dynamic.literal(fireUpdateEvent = fireUpdateEvent, getState = getState, getTokens = getTokens, setDocument = setDocument, setTokenizer = setTokenizer, start = start, states = states, stop = stop)
+    val __obj = js.Dynamic.literal(fireUpdateEvent = js.Any.fromFunction2(fireUpdateEvent), getState = js.Any.fromFunction1(getState), getTokens = js.Any.fromFunction1(getTokens), setDocument = js.Any.fromFunction1(setDocument), setTokenizer = js.Any.fromFunction1(setTokenizer), start = js.Any.fromFunction1(start), states = states, stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[BackgroundTokenizer]
   }

@@ -37,10 +37,10 @@ trait XExternalUriReferenceTranslator extends js.Object {
 object XExternalUriReferenceTranslator {
   @scala.inline
   def apply(
-    translateToExternal: js.Function1[java.lang.String, java.lang.String],
-    translateToInternal: js.Function1[java.lang.String, java.lang.String]
+    translateToExternal: java.lang.String => java.lang.String,
+    translateToInternal: java.lang.String => java.lang.String
   ): XExternalUriReferenceTranslator = {
-    val __obj = js.Dynamic.literal(translateToExternal = translateToExternal, translateToInternal = translateToInternal)
+    val __obj = js.Dynamic.literal(translateToExternal = js.Any.fromFunction1(translateToExternal), translateToInternal = js.Any.fromFunction1(translateToInternal))
   
     __obj.asInstanceOf[XExternalUriReferenceTranslator]
   }

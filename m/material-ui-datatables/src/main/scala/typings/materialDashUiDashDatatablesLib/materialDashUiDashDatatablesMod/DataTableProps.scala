@@ -107,14 +107,14 @@ object DataTableProps {
     headerToolbarMode: materialDashUiDashDatatablesLib.materialDashUiDashDatatablesLibStrings.default | materialDashUiDashDatatablesLib.materialDashUiDashDatatablesLibStrings.filter | java.lang.String,
     height: js.Any,
     multiSelectable: scala.Boolean,
-    onCellClick: js.Function5[scala.Double, scala.Double, js.Any, js.Any, js.Any, scala.Unit],
-    onCellDoubleClick: js.Function5[scala.Double, scala.Double, js.Any, js.Any, js.Any, scala.Unit],
-    onFilterValueChange: js.Function1[java.lang.String, scala.Unit],
-    onNextPageClick: js.Function1[js.Any, scala.Unit],
-    onPreviousPageClick: js.Function1[js.Any, scala.Unit],
-    onRowSelection: js.Function1[js.Any, scala.Unit],
-    onRowSizeChange: js.Function2[scala.Double, js.Any, scala.Unit],
-    onSortOrderChange: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    onCellClick: (scala.Double, scala.Double, js.Any, js.Any, js.Any) => scala.Unit,
+    onCellDoubleClick: (scala.Double, scala.Double, js.Any, js.Any, js.Any) => scala.Unit,
+    onFilterValueChange: java.lang.String => scala.Unit,
+    onNextPageClick: js.Any => scala.Unit,
+    onPreviousPageClick: js.Any => scala.Unit,
+    onRowSelection: js.Any => scala.Unit,
+    onRowSizeChange: (scala.Double, js.Any) => scala.Unit,
+    onSortOrderChange: (java.lang.String, java.lang.String) => scala.Unit,
     page: scala.Double,
     rowSize: scala.Double,
     rowSizeLabel: java.lang.String,
@@ -127,7 +127,7 @@ object DataTableProps {
     showRowHover: scala.Boolean,
     showRowSizeControls: scala.Boolean,
     stripedRows: scala.Boolean,
-    summaryLabelTemplate: js.Function3[scala.Double, scala.Double, scala.Double, js.Any],
+    summaryLabelTemplate: (scala.Double, scala.Double, scala.Double) => js.Any,
     tableBodyStyle: reactLib.reactMod.ReactNs.CSSProperties,
     tableHeaderColumnStyle: reactLib.reactMod.ReactNs.CSSProperties,
     tableHeaderStyle: reactLib.reactMod.ReactNs.CSSProperties,
@@ -139,7 +139,7 @@ object DataTableProps {
     titleStyle: reactLib.reactMod.ReactNs.CSSProperties,
     toolbarIconRight: js.Any
   ): DataTableProps = {
-    val __obj = js.Dynamic.literal(columns = columns, count = count, data = data, deselectOnClickaway = deselectOnClickaway, enableSelectAll = enableSelectAll, filterHintText = filterHintText, filterValue = filterValue, fixedFooter = fixedFooter, fixedHeader = fixedHeader, footerToolbarStyle = footerToolbarStyle, headerToolbarMode = headerToolbarMode.asInstanceOf[js.Any], height = height, multiSelectable = multiSelectable, onCellClick = onCellClick, onCellDoubleClick = onCellDoubleClick, onFilterValueChange = onFilterValueChange, onNextPageClick = onNextPageClick, onPreviousPageClick = onPreviousPageClick, onRowSelection = onRowSelection, onRowSizeChange = onRowSizeChange, onSortOrderChange = onSortOrderChange, page = page, rowSize = rowSize, rowSizeLabel = rowSizeLabel, rowSizeList = rowSizeList, selectable = selectable, showCheckboxes = showCheckboxes, showFooterToolbar = showFooterToolbar, showHeaderToolbar = showHeaderToolbar, showHeaderToolbarFilterIcon = showHeaderToolbarFilterIcon, showRowHover = showRowHover, showRowSizeControls = showRowSizeControls, stripedRows = stripedRows, summaryLabelTemplate = summaryLabelTemplate, tableBodyStyle = tableBodyStyle, tableHeaderColumnStyle = tableHeaderColumnStyle, tableHeaderStyle = tableHeaderStyle, tableRowColumnStyle = tableRowColumnStyle, tableRowStyle = tableRowStyle, tableStyle = tableStyle, tableWrapperStyle = tableWrapperStyle, title = title, titleStyle = titleStyle, toolbarIconRight = toolbarIconRight)
+    val __obj = js.Dynamic.literal(columns = columns, count = count, data = data, deselectOnClickaway = deselectOnClickaway, enableSelectAll = enableSelectAll, filterHintText = filterHintText, filterValue = filterValue, fixedFooter = fixedFooter, fixedHeader = fixedHeader, footerToolbarStyle = footerToolbarStyle, headerToolbarMode = headerToolbarMode.asInstanceOf[js.Any], height = height, multiSelectable = multiSelectable, onCellClick = js.Any.fromFunction5(onCellClick), onCellDoubleClick = js.Any.fromFunction5(onCellDoubleClick), onFilterValueChange = js.Any.fromFunction1(onFilterValueChange), onNextPageClick = js.Any.fromFunction1(onNextPageClick), onPreviousPageClick = js.Any.fromFunction1(onPreviousPageClick), onRowSelection = js.Any.fromFunction1(onRowSelection), onRowSizeChange = js.Any.fromFunction2(onRowSizeChange), onSortOrderChange = js.Any.fromFunction2(onSortOrderChange), page = page, rowSize = rowSize, rowSizeLabel = rowSizeLabel, rowSizeList = rowSizeList, selectable = selectable, showCheckboxes = showCheckboxes, showFooterToolbar = showFooterToolbar, showHeaderToolbar = showHeaderToolbar, showHeaderToolbarFilterIcon = showHeaderToolbarFilterIcon, showRowHover = showRowHover, showRowSizeControls = showRowSizeControls, stripedRows = stripedRows, summaryLabelTemplate = js.Any.fromFunction3(summaryLabelTemplate), tableBodyStyle = tableBodyStyle, tableHeaderColumnStyle = tableHeaderColumnStyle, tableHeaderStyle = tableHeaderStyle, tableRowColumnStyle = tableRowColumnStyle, tableRowStyle = tableRowStyle, tableStyle = tableStyle, tableWrapperStyle = tableWrapperStyle, title = title, titleStyle = titleStyle, toolbarIconRight = toolbarIconRight)
   
     __obj.asInstanceOf[DataTableProps]
   }

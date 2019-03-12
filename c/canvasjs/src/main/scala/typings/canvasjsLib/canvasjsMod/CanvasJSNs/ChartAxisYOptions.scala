@@ -34,7 +34,7 @@ object ChartAxisYOptions {
     labelFontSize: scala.Int | scala.Double = null,
     labelFontStyle: java.lang.String = null,
     labelFontWeight: java.lang.String = null,
-    labelFormatter: js.Function1[/* e */ canvasjsLib.Anon_AxisChart, java.lang.String] = null,
+    labelFormatter: /* e */ canvasjsLib.Anon_AxisChart => java.lang.String = null,
     labelMaxWidth: scala.Int | scala.Double = null,
     labelWrap: js.UndefOr[scala.Boolean] = js.undefined,
     lineColor: java.lang.String = null,
@@ -80,7 +80,7 @@ object ChartAxisYOptions {
     if (labelFontSize != null) __obj.updateDynamic("labelFontSize")(labelFontSize.asInstanceOf[js.Any])
     if (labelFontStyle != null) __obj.updateDynamic("labelFontStyle")(labelFontStyle)
     if (labelFontWeight != null) __obj.updateDynamic("labelFontWeight")(labelFontWeight)
-    if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(labelFormatter)
+    if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(js.Any.fromFunction1(labelFormatter))
     if (labelMaxWidth != null) __obj.updateDynamic("labelMaxWidth")(labelMaxWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(labelWrap)) __obj.updateDynamic("labelWrap")(labelWrap)
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)

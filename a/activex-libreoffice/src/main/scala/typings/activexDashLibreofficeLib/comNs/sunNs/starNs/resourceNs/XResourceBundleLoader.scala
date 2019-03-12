@@ -25,17 +25,13 @@ trait XResourceBundleLoader
 object XResourceBundleLoader {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    loadBundle: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      XResourceBundle
-    ],
-    loadBundle_Default: js.Function1[java.lang.String, XResourceBundle],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    loadBundle: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => XResourceBundle,
+    loadBundle_Default: java.lang.String => XResourceBundle,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XResourceBundleLoader = {
-    val __obj = js.Dynamic.literal(acquire = acquire, loadBundle = loadBundle, loadBundle_Default = loadBundle_Default, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), loadBundle = js.Any.fromFunction2(loadBundle), loadBundle_Default = js.Any.fromFunction1(loadBundle_Default), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XResourceBundleLoader]
   }

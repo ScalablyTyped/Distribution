@@ -25,12 +25,9 @@ object Anon_OnBeforeScript {
   @scala.inline
   def apply(
     onBeforeScript: WebExtEvent[js.Function1[/* userScript */ Anon_DefineGlobals, scala.Unit]],
-    register: js.Function1[
-      firefoxDashWebextDashBrowserLib.browserNs.userScriptsNs.UserScriptOptions, 
-      js.Promise[firefoxDashWebextDashBrowserLib.browserNs.userScriptsNs.RegisteredUserScript]
-    ]
+    register: firefoxDashWebextDashBrowserLib.browserNs.userScriptsNs.UserScriptOptions => js.Promise[firefoxDashWebextDashBrowserLib.browserNs.userScriptsNs.RegisteredUserScript]
   ): Anon_OnBeforeScript = {
-    val __obj = js.Dynamic.literal(onBeforeScript = onBeforeScript, register = register)
+    val __obj = js.Dynamic.literal(onBeforeScript = onBeforeScript, register = js.Any.fromFunction1(register))
   
     __obj.asInstanceOf[Anon_OnBeforeScript]
   }

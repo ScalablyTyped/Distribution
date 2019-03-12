@@ -26,16 +26,16 @@ object carClassifyOptions {
   def apply(
     image: java.lang.String,
     color_result: java.lang.String = null,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
-    success: js.Function1[/* res */ carClassifyResponse, scala.Unit] = null,
+    complete: /* res */ js.Any => scala.Unit = null,
+    fail: js.Any => scala.Unit = null,
+    success: /* res */ carClassifyResponse => scala.Unit = null,
     top_num: scala.Int | scala.Double = null
   ): carClassifyOptions = {
     val __obj = js.Dynamic.literal(image = image)
     if (color_result != null) __obj.updateDynamic("color_result")(color_result)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     if (top_num != null) __obj.updateDynamic("top_num")(top_num.asInstanceOf[js.Any])
     __obj.asInstanceOf[carClassifyOptions]
   }

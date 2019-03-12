@@ -5,32 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Args extends js.Object {
-  var apiDoc: expressDashOpenapiLib.expressDashOpenapiMod.OpenApiNs.ApiDefinition
-  var app: expressLib.expressMod.eNs.Application
-  var customFormats: CustomFormats
-  var docPath: java.lang.String
-  var exposeApiDocs: scala.Boolean
-  var routes: java.lang.String
-  var validateApiDoc: scala.Boolean
-  def errorTransformer(openapiError: OpenapiError, jsonschemaError: JsonschemaError): js.Any
-}
-
-object Args {
-  @scala.inline
-  def apply(
-    apiDoc: expressDashOpenapiLib.expressDashOpenapiMod.OpenApiNs.ApiDefinition,
-    app: expressLib.expressMod.eNs.Application,
-    customFormats: CustomFormats,
-    docPath: java.lang.String,
-    errorTransformer: js.Function2[OpenapiError, JsonschemaError, js.Any],
-    exposeApiDocs: scala.Boolean,
-    routes: java.lang.String,
-    validateApiDoc: scala.Boolean
-  ): Args = {
-    val __obj = js.Dynamic.literal(apiDoc = apiDoc, app = app, customFormats = customFormats, docPath = docPath, errorTransformer = errorTransformer, exposeApiDocs = exposeApiDocs, routes = routes, validateApiDoc = validateApiDoc)
-  
-    __obj.asInstanceOf[Args]
-  }
+  var apiDoc: expressDashOpenapiLib.expressDashOpenapiMod.OpenApiNs.ApiDefinition = js.native
+  @JSName("app")
+  var app_Original: expressLib.expressMod.eNs.Application = js.native
+  var customFormats: CustomFormats = js.native
+  var docPath: java.lang.String = js.native
+  var exposeApiDocs: scala.Boolean = js.native
+  var routes: java.lang.String = js.native
+  var validateApiDoc: scala.Boolean = js.native
+  /**
+    * Express instance itself is a request handler, which could be invoked without
+    * third argument.
+    */
+  def app(
+    req: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request,
+    res: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response
+  ): js.Any = js.native
+  def app(
+    req: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request,
+    res: nodeLib.httpMod.ServerResponse
+  ): js.Any = js.native
+  def app(
+    req: nodeLib.httpMod.IncomingMessage,
+    res: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response
+  ): js.Any = js.native
+  def app(req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse): js.Any = js.native
+  def errorTransformer(openapiError: OpenapiError, jsonschemaError: JsonschemaError): js.Any = js.native
 }
 

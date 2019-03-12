@@ -22,7 +22,7 @@ class Options protected () extends js.Object {
   var AllowReadingMode: scala.Boolean = js.native
   var AlwaysUseClearType: scala.Boolean = js.native
   var AnimateScreenMovements: scala.Boolean = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var ApplyFarEastFontsToAscii: scala.Boolean = js.native
   var ArabicMode: WdAraSpeller = js.native
   var ArabicNumeral: WdArabicNumeral = js.native

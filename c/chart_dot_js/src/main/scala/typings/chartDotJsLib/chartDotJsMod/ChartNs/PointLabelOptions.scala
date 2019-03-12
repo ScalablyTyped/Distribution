@@ -16,14 +16,14 @@ trait PointLabelOptions extends js.Object {
 object PointLabelOptions {
   @scala.inline
   def apply(
-    callback: js.Function1[/* arg */ js.Any, _] = null,
+    callback: /* arg */ js.Any => _ = null,
     fontColor: ChartColor = null,
     fontFamily: java.lang.String = null,
     fontSize: scala.Int | scala.Double = null,
     fontStyle: java.lang.String = null
   ): PointLabelOptions = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])

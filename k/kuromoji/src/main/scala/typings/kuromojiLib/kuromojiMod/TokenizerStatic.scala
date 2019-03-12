@@ -11,8 +11,8 @@ trait TokenizerStatic extends js.Object {
 
 object TokenizerStatic {
   @scala.inline
-  def apply(splitByPunctuation: js.Function1[java.lang.String, js.Array[java.lang.String]]): TokenizerStatic = {
-    val __obj = js.Dynamic.literal(splitByPunctuation = splitByPunctuation)
+  def apply(splitByPunctuation: java.lang.String => js.Array[java.lang.String]): TokenizerStatic = {
+    val __obj = js.Dynamic.literal(splitByPunctuation = js.Any.fromFunction1(splitByPunctuation))
   
     __obj.asInstanceOf[TokenizerStatic]
   }

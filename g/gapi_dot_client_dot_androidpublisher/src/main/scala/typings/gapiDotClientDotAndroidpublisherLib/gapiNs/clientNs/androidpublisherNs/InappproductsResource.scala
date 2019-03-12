@@ -24,36 +24,15 @@ trait InappproductsResource extends js.Object {
 object InappproductsResource {
   @scala.inline
   def apply(
-    batch: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InappproductsBatchResponse]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InAppProduct]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltAutoConvertMissingPrices, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InAppProduct]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyMaxResults, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InappproductsListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltAutoConvertMissingPricesFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InAppProduct]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltAutoConvertMissingPricesFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InAppProduct]
-    ]
+    batch: gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[InappproductsBatchResponse],
+    delete: gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageName => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageName => gapiDotClientLib.gapiNs.clientNs.Request[InAppProduct],
+    insert: gapiDotClientDotAndroidpublisherLib.Anon_AltAutoConvertMissingPrices => gapiDotClientLib.gapiNs.clientNs.Request[InAppProduct],
+    list: gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyMaxResults => gapiDotClientLib.gapiNs.clientNs.Request[InappproductsListResponse],
+    patch: gapiDotClientDotAndroidpublisherLib.Anon_AltAutoConvertMissingPricesFields => gapiDotClientLib.gapiNs.clientNs.Request[InAppProduct],
+    update: gapiDotClientDotAndroidpublisherLib.Anon_AltAutoConvertMissingPricesFields => gapiDotClientLib.gapiNs.clientNs.Request[InAppProduct]
   ): InappproductsResource = {
-    val __obj = js.Dynamic.literal(batch = batch, delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(batch = js.Any.fromFunction1(batch), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[InappproductsResource]
   }

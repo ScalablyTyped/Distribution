@@ -31,13 +31,13 @@ object AuxRecordDescription {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     properties: js.Any,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     recordId: scala.Double,
     tableName: java.lang.String
   ): AuxRecordDescription = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, properties = properties, propertyIsEnumerable = propertyIsEnumerable, recordId = recordId, tableName = tableName)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), properties = properties, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), recordId = recordId, tableName = tableName)
   
     __obj.asInstanceOf[AuxRecordDescription]
   }

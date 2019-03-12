@@ -13,10 +13,10 @@ trait Anon_Html extends js.Object {
 object Anon_Html {
   @scala.inline
   def apply(
-    onIgnoreTag: js.Function3[java.lang.String, java.lang.String, Anon_IsClosing, java.lang.String],
-    remove: js.Function1[java.lang.String, java.lang.String]
+    onIgnoreTag: (java.lang.String, java.lang.String, Anon_IsClosing) => java.lang.String,
+    remove: java.lang.String => java.lang.String
   ): Anon_Html = {
-    val __obj = js.Dynamic.literal(onIgnoreTag = onIgnoreTag, remove = remove)
+    val __obj = js.Dynamic.literal(onIgnoreTag = js.Any.fromFunction3(onIgnoreTag), remove = js.Any.fromFunction1(remove))
   
     __obj.asInstanceOf[Anon_Html]
   }

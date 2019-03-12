@@ -12,10 +12,10 @@ trait ExcludedPlacementListBuilder[ExcludedPlacementList] extends AdWordsBuilder
 object ExcludedPlacementListBuilder {
   @scala.inline
   def apply[ExcludedPlacementList](
-    build: js.Function0[AdWordsOperation[ExcludedPlacementList]],
-    withName: js.Function1[java.lang.String, ExcludedPlacementListBuilder[ExcludedPlacementList]]
+    build: () => AdWordsOperation[ExcludedPlacementList],
+    withName: java.lang.String => ExcludedPlacementListBuilder[ExcludedPlacementList]
   ): ExcludedPlacementListBuilder[ExcludedPlacementList] = {
-    val __obj = js.Dynamic.literal(build = build, withName = withName)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), withName = js.Any.fromFunction1(withName))
   
     __obj.asInstanceOf[ExcludedPlacementListBuilder[ExcludedPlacementList]]
   }

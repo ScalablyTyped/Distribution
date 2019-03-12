@@ -13,16 +13,10 @@ trait Anon_LOWER extends js.Object {
 object Anon_LOWER {
   @scala.inline
   def apply(
-    LOWER: js.Function1[
-      anydbDashSqlLib.anydbDashSqlMod.anydbSQLNs.Column[java.lang.String], 
-      anydbDashSqlLib.anydbDashSqlMod.anydbSQLNs.Column[java.lang.String]
-    ],
-    RTRIM: js.Function1[
-      anydbDashSqlLib.anydbDashSqlMod.anydbSQLNs.Column[java.lang.String], 
-      anydbDashSqlLib.anydbDashSqlMod.anydbSQLNs.Column[java.lang.String]
-    ]
+    LOWER: anydbDashSqlLib.anydbDashSqlMod.anydbSQLNs.Column[java.lang.String] => anydbDashSqlLib.anydbDashSqlMod.anydbSQLNs.Column[java.lang.String],
+    RTRIM: anydbDashSqlLib.anydbDashSqlMod.anydbSQLNs.Column[java.lang.String] => anydbDashSqlLib.anydbDashSqlMod.anydbSQLNs.Column[java.lang.String]
   ): Anon_LOWER = {
-    val __obj = js.Dynamic.literal(LOWER = LOWER, RTRIM = RTRIM)
+    val __obj = js.Dynamic.literal(LOWER = js.Any.fromFunction1(LOWER), RTRIM = js.Any.fromFunction1(RTRIM))
   
     __obj.asInstanceOf[Anon_LOWER]
   }

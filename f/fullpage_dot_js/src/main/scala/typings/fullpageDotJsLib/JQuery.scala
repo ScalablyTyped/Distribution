@@ -5,16 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JQuery extends js.Object {
-  var fullpage: FullPageJs
-}
-
-object JQuery {
-  @scala.inline
-  def apply(fullpage: FullPageJs): JQuery = {
-    val __obj = js.Dynamic.literal(fullpage = fullpage)
-  
-    __obj.asInstanceOf[JQuery]
-  }
+  @JSName("fullpage")
+  var fullpage_Original: FullPageJs = js.native
+  def fullpage(): js.Any = js.native
+  def fullpage(options: FullPageJsOptions): js.Any = js.native
 }
 

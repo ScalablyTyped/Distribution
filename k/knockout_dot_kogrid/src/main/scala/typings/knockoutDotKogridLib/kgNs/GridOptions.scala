@@ -97,8 +97,8 @@ object GridOptions {
   @scala.inline
   def apply[EntityType](
     displaySelectionCheckbox: scala.Boolean,
-    afterSelectionChange: js.Function1[/* row */ Row[EntityType], scala.Unit] = null,
-    beforeSelectionChange: js.Function1[/* row */ Row[EntityType], scala.Boolean] = null,
+    afterSelectionChange: /* row */ Row[EntityType] => scala.Unit = null,
+    beforeSelectionChange: /* row */ Row[EntityType] => scala.Boolean = null,
     canSelectRows: js.UndefOr[scala.Boolean] = js.undefined,
     columnDefs: js.Array[ColumnDef] | knockoutLib.KnockoutObservable[js.Array[ColumnDef]] = null,
     columnWidth: scala.Int | scala.Double = null,
@@ -133,8 +133,8 @@ object GridOptions {
     useExternalSorting: js.UndefOr[scala.Boolean] = js.undefined
   ): GridOptions[EntityType] = {
     val __obj = js.Dynamic.literal(displaySelectionCheckbox = displaySelectionCheckbox)
-    if (afterSelectionChange != null) __obj.updateDynamic("afterSelectionChange")(afterSelectionChange)
-    if (beforeSelectionChange != null) __obj.updateDynamic("beforeSelectionChange")(beforeSelectionChange)
+    if (afterSelectionChange != null) __obj.updateDynamic("afterSelectionChange")(js.Any.fromFunction1(afterSelectionChange))
+    if (beforeSelectionChange != null) __obj.updateDynamic("beforeSelectionChange")(js.Any.fromFunction1(beforeSelectionChange))
     if (!js.isUndefined(canSelectRows)) __obj.updateDynamic("canSelectRows")(canSelectRows)
     if (columnDefs != null) __obj.updateDynamic("columnDefs")(columnDefs.asInstanceOf[js.Any])
     if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])

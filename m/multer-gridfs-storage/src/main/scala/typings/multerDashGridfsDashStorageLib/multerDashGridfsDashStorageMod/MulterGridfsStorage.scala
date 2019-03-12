@@ -17,7 +17,7 @@ trait MulterGridfsStorage
   var connected: scala.Boolean = js.native
   var connecting: scala.Boolean = js.native
   var db: mongodbLib.mongodbMod.Db = js.native
-  var error: nodeLib.Error = js.native
+  var error: stdLib.Error = js.native
   def _handleFile(
     req: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request,
     file: multerDashGridfsDashStorageLib.multerDashGridfsDashStorageMod.Global.ExpressNs.MulterNs.File,
@@ -32,7 +32,7 @@ trait MulterGridfsStorage
   def _removeFile(
     req: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request,
     file: multerDashGridfsDashStorageLib.multerDashGridfsDashStorageMod.Global.ExpressNs.MulterNs.File,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
 }
 

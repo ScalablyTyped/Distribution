@@ -24,14 +24,14 @@ object Grant {
     access_token: Token,
     expires_in: scala.Double,
     id_token: Token,
-    isExpired: js.Function0[scala.Boolean],
+    isExpired: () => scala.Boolean,
     refresh_token: Token,
-    store: js.Function2[expressLib.expressMod.eNs.Request, expressLib.expressMod.eNs.Response, scala.Unit],
-    toString: js.Function0[java.lang.String],
+    store: (expressLib.expressMod.eNs.Request, expressLib.expressMod.eNs.Response) => scala.Unit,
+    toString: () => java.lang.String,
     token_type: java.lang.String,
-    update: js.Function1[Grant, scala.Unit]
+    update: Grant => scala.Unit
   ): Grant = {
-    val __obj = js.Dynamic.literal(__raw = __raw, access_token = access_token, expires_in = expires_in, id_token = id_token, isExpired = isExpired, refresh_token = refresh_token, store = store, toString = toString, token_type = token_type, update = update)
+    val __obj = js.Dynamic.literal(__raw = __raw, access_token = access_token, expires_in = expires_in, id_token = id_token, isExpired = js.Any.fromFunction0(isExpired), refresh_token = refresh_token, store = js.Any.fromFunction2(store), toString = js.Any.fromFunction0(toString), token_type = token_type, update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[Grant]
   }

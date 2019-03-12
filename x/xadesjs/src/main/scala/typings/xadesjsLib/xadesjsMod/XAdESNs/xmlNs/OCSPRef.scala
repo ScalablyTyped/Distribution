@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait OCSPRef
   extends xmlDashCoreLib.xmlDashCoreMod.XmlObject {
   var DigestAlgAndValue: DigestAlgAndValueType = js.native
-  var OCSPIdentifier: OCSPIdentifier = js.native
+  var OCSPIdentifier: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.OCSPIdentifier = js.native
 }
 

@@ -33,14 +33,14 @@ object IScheduledJob {
     JobName: java.lang.String,
     JobType: mfilesLib.MFilesNs.MFScheduledJobType,
     OptimizeVaultJob: IOptimizeVaultJob,
-    SetBackupVaultJob: js.Function1[IBackupJob, scala.Unit],
-    SetExportContentJob: js.Function1[IExportContentJob, scala.Unit],
-    SetImportContentJob: js.Function1[IImportContentJob, scala.Unit],
-    SetOptimizeVaultJob: js.Function1[IOptimizeVaultJob, scala.Unit],
+    SetBackupVaultJob: IBackupJob => scala.Unit,
+    SetExportContentJob: IExportContentJob => scala.Unit,
+    SetImportContentJob: IImportContentJob => scala.Unit,
+    SetOptimizeVaultJob: IOptimizeVaultJob => scala.Unit,
     Temporary: scala.Boolean,
     Triggers: IScheduledJobTriggers
   ): IScheduledJob = {
-    val __obj = js.Dynamic.literal(BackupVaultJob = BackupVaultJob, Enabled = Enabled, ExportContentJob = ExportContentJob, ID = ID, ImportContentJob = ImportContentJob, JobName = JobName, JobType = JobType, OptimizeVaultJob = OptimizeVaultJob, SetBackupVaultJob = SetBackupVaultJob, SetExportContentJob = SetExportContentJob, SetImportContentJob = SetImportContentJob, SetOptimizeVaultJob = SetOptimizeVaultJob, Temporary = Temporary, Triggers = Triggers)
+    val __obj = js.Dynamic.literal(BackupVaultJob = BackupVaultJob, Enabled = Enabled, ExportContentJob = ExportContentJob, ID = ID, ImportContentJob = ImportContentJob, JobName = JobName, JobType = JobType, OptimizeVaultJob = OptimizeVaultJob, SetBackupVaultJob = js.Any.fromFunction1(SetBackupVaultJob), SetExportContentJob = js.Any.fromFunction1(SetExportContentJob), SetImportContentJob = js.Any.fromFunction1(SetImportContentJob), SetOptimizeVaultJob = js.Any.fromFunction1(SetOptimizeVaultJob), Temporary = Temporary, Triggers = Triggers)
   
     __obj.asInstanceOf[IScheduledJob]
   }

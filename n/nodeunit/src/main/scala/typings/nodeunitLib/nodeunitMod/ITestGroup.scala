@@ -25,13 +25,13 @@ object ITestGroup {
         ITestGroup | ITestBody | (js.Function1[/* callback */ ICallbackFunction, scala.Unit])
       ]
     ] = null,
-    setUp: js.Function1[/* callback */ ICallbackFunction, scala.Unit] = null,
-    tearDown: js.Function1[/* callback */ ICallbackFunction, scala.Unit] = null
+    setUp: /* callback */ ICallbackFunction => scala.Unit = null,
+    tearDown: /* callback */ ICallbackFunction => scala.Unit = null
   ): ITestGroup = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (setUp != null) __obj.updateDynamic("setUp")(setUp)
-    if (tearDown != null) __obj.updateDynamic("tearDown")(tearDown)
+    if (setUp != null) __obj.updateDynamic("setUp")(js.Any.fromFunction1(setUp))
+    if (tearDown != null) __obj.updateDynamic("tearDown")(js.Any.fromFunction1(tearDown))
     __obj.asInstanceOf[ITestGroup]
   }
 }

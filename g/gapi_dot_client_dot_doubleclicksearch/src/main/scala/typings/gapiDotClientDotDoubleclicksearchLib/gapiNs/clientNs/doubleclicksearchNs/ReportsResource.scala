@@ -19,24 +19,12 @@ trait ReportsResource extends js.Object {
 object ReportsResource {
   @scala.inline
   def apply(
-    generate: js.Function1[
-      gapiDotClientDotDoubleclicksearchLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Report]
-    ],
-    get: js.Function1[
-      gapiDotClientDotDoubleclicksearchLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Report]
-    ],
-    getFile: js.Function1[
-      gapiDotClientDotDoubleclicksearchLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    request: js.Function1[
-      gapiDotClientDotDoubleclicksearchLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Report]
-    ]
+    generate: gapiDotClientDotDoubleclicksearchLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Report],
+    get: gapiDotClientDotDoubleclicksearchLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Report],
+    getFile: gapiDotClientDotDoubleclicksearchLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    request: gapiDotClientDotDoubleclicksearchLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Report]
   ): ReportsResource = {
-    val __obj = js.Dynamic.literal(generate = generate, get = get, getFile = getFile, request = request)
+    val __obj = js.Dynamic.literal(generate = js.Any.fromFunction1(generate), get = js.Any.fromFunction1(get), getFile = js.Any.fromFunction1(getFile), request = js.Any.fromFunction1(request))
   
     __obj.asInstanceOf[ReportsResource]
   }

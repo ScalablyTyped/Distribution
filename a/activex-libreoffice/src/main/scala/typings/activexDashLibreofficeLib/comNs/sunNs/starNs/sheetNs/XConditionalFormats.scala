@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait XConditionalFormats
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
-  val ConditionalFormats: activexDashInteropLib.SafeArray[XConditionalFormat]
+  val ConditionalFormats: stdLib.SafeArray[XConditionalFormat]
   val Length: scala.Double
   /** adds a conditional format to the existing list returns the id of the inserted conditional format */
   def createByRange(range: XSheetCellRanges): scala.Double
-  def getConditionalFormats(): activexDashInteropLib.SafeArray[XConditionalFormat]
+  def getConditionalFormats(): stdLib.SafeArray[XConditionalFormat]
   def getLength(): scala.Double
   def removeByID(ID: scala.Double): scala.Unit
 }
@@ -19,17 +19,17 @@ trait XConditionalFormats
 object XConditionalFormats {
   @scala.inline
   def apply(
-    ConditionalFormats: activexDashInteropLib.SafeArray[XConditionalFormat],
+    ConditionalFormats: stdLib.SafeArray[XConditionalFormat],
     Length: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    createByRange: js.Function1[XSheetCellRanges, scala.Double],
-    getConditionalFormats: js.Function0[activexDashInteropLib.SafeArray[XConditionalFormat]],
-    getLength: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeByID: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    createByRange: XSheetCellRanges => scala.Double,
+    getConditionalFormats: () => stdLib.SafeArray[XConditionalFormat],
+    getLength: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeByID: scala.Double => scala.Unit
   ): XConditionalFormats = {
-    val __obj = js.Dynamic.literal(ConditionalFormats = ConditionalFormats, Length = Length, acquire = acquire, createByRange = createByRange, getConditionalFormats = getConditionalFormats, getLength = getLength, queryInterface = queryInterface, release = release, removeByID = removeByID)
+    val __obj = js.Dynamic.literal(ConditionalFormats = ConditionalFormats, Length = Length, acquire = js.Any.fromFunction0(acquire), createByRange = js.Any.fromFunction1(createByRange), getConditionalFormats = js.Any.fromFunction0(getConditionalFormats), getLength = js.Any.fromFunction0(getLength), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByID = js.Any.fromFunction1(removeByID))
   
     __obj.asInstanceOf[XConditionalFormats]
   }

@@ -16,11 +16,11 @@ object Anon_Dependencies {
   @scala.inline
   def apply[C, D](
     dependencies: D,
-    recomputations: js.Function0[scala.Double],
-    resetRecomputations: js.Function0[scala.Double],
+    recomputations: () => scala.Double,
+    resetRecomputations: () => scala.Double,
     resultFunc: C
   ): Anon_Dependencies[C, D] = {
-    val __obj = js.Dynamic.literal(dependencies = dependencies.asInstanceOf[js.Any], recomputations = recomputations, resetRecomputations = resetRecomputations, resultFunc = resultFunc.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dependencies = dependencies.asInstanceOf[js.Any], recomputations = js.Any.fromFunction0(recomputations), resetRecomputations = js.Any.fromFunction0(resetRecomputations), resultFunc = resultFunc.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Dependencies[C, D]]
   }

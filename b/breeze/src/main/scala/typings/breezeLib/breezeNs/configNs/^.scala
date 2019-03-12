@@ -22,7 +22,7 @@ object ^ extends js.Object {
   def getAdapterInstance(interfaceName: java.lang.String, adapterName: java.lang.String): js.Object = js.native
   def initializeAdapterInstance(interfaceName: java.lang.String, adapterName: java.lang.String): js.Object = js.native
   def initializeAdapterInstance(interfaceName: java.lang.String, adapterName: java.lang.String, isDefault: scala.Boolean): js.Object = js.native
-  def initializeAdapterInstances(config: breezeLib.breezeNs.configNs.AdapterInstancesConfig): js.Array[js.Object] = js.native
+  def initializeAdapterInstances(config: AdapterInstancesConfig): js.Array[js.Object] = js.native
   def registerAdapter(interfaceName: java.lang.String, adapterCtor: js.Function): scala.Unit = js.native
   def registerFunction(fn: js.Function, fnName: java.lang.String): scala.Unit = js.native
   def registerType(ctor: js.Function, typeName: java.lang.String): scala.Unit = js.native

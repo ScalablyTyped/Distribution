@@ -11,8 +11,8 @@ trait Object extends js.Object {
 
 object Object {
   @scala.inline
-  def apply(abbrev: js.Function0[org.scalablytyped.runtime.StringDictionary[java.lang.String]]): Object = {
-    val __obj = js.Dynamic.literal(abbrev = abbrev)
+  def apply(abbrev: () => org.scalablytyped.runtime.StringDictionary[java.lang.String]): Object = {
+    val __obj = js.Dynamic.literal(abbrev = js.Any.fromFunction0(abbrev))
   
     __obj.asInstanceOf[Object]
   }

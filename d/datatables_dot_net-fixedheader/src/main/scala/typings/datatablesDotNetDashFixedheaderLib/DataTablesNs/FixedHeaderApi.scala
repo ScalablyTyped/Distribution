@@ -31,13 +31,13 @@ trait FixedHeaderApi extends js.Object {
 object FixedHeaderApi {
   @scala.inline
   def apply(
-    adjust: js.Function0[Api],
-    disable: js.Function0[Api],
-    enable: js.Function1[scala.Boolean, Api],
-    footerOffset: js.Function1[scala.Double, Api],
-    headerOffset: js.Function1[scala.Double, Api]
+    adjust: () => Api,
+    disable: () => Api,
+    enable: scala.Boolean => Api,
+    footerOffset: scala.Double => Api,
+    headerOffset: scala.Double => Api
   ): FixedHeaderApi = {
-    val __obj = js.Dynamic.literal(adjust = adjust, disable = disable, enable = enable, footerOffset = footerOffset, headerOffset = headerOffset)
+    val __obj = js.Dynamic.literal(adjust = js.Any.fromFunction0(adjust), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction1(enable), footerOffset = js.Any.fromFunction1(footerOffset), headerOffset = js.Any.fromFunction1(headerOffset))
   
     __obj.asInstanceOf[FixedHeaderApi]
   }

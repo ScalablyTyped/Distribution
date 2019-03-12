@@ -20,17 +20,17 @@ trait TimeStampReq extends js.Object {
 object TimeStampReq {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     messageImprint: pkijsLib.srcMessageImprintMod.default,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     version: scala.Double,
     certReq: js.UndefOr[scala.Boolean] = js.undefined,
     extensions: js.Array[pkijsLib.srcExtensionMod.default] = null,
     nonce: asn1jsLib.asn1jsMod.Integer = null,
     reqPolicy: java.lang.String = null
   ): TimeStampReq = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, messageImprint = messageImprint, toJSON = toJSON, toSchema = toSchema, version = version)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), messageImprint = messageImprint, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), version = version)
     if (!js.isUndefined(certReq)) __obj.updateDynamic("certReq")(certReq)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (nonce != null) __obj.updateDynamic("nonce")(nonce)

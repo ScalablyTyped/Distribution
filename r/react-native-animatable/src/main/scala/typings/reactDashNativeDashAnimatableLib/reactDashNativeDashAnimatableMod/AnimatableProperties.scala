@@ -37,8 +37,8 @@ object AnimatableProperties {
     iterationDelay: scala.Int | scala.Double = null,
     onAnimationBegin: js.Function = null,
     onAnimationEnd: js.Function = null,
-    onTransitionBegin: js.Function1[/* property */ java.lang.String, scala.Unit] = null,
-    onTransitionEnd: js.Function1[/* property */ java.lang.String, scala.Unit] = null,
+    onTransitionBegin: /* property */ java.lang.String => scala.Unit = null,
+    onTransitionEnd: /* property */ java.lang.String => scala.Unit = null,
     transition: java.lang.String = null,
     useNativeDriver: js.UndefOr[scala.Boolean] = js.undefined
   ): AnimatableProperties[S] = {
@@ -52,8 +52,8 @@ object AnimatableProperties {
     if (iterationDelay != null) __obj.updateDynamic("iterationDelay")(iterationDelay.asInstanceOf[js.Any])
     if (onAnimationBegin != null) __obj.updateDynamic("onAnimationBegin")(onAnimationBegin)
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(onAnimationEnd)
-    if (onTransitionBegin != null) __obj.updateDynamic("onTransitionBegin")(onTransitionBegin)
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(onTransitionEnd)
+    if (onTransitionBegin != null) __obj.updateDynamic("onTransitionBegin")(js.Any.fromFunction1(onTransitionBegin))
+    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1(onTransitionEnd))
     if (transition != null) __obj.updateDynamic("transition")(transition)
     if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver)
     __obj.asInstanceOf[AnimatableProperties[S]]

@@ -27,12 +27,12 @@ trait XTransientDocumentsDocumentContentFactory
 object XTransientDocumentsDocumentContentFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createDocumentContent: js.Function1[XModel, activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XContent],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createDocumentContent: XModel => activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XContent,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTransientDocumentsDocumentContentFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createDocumentContent = createDocumentContent, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createDocumentContent = js.Any.fromFunction1(createDocumentContent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTransientDocumentsDocumentContentFactory]
   }

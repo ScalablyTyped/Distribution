@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("repl", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def start(options: easyDashXDashHeadersLib.replMod.ReplOptions): easyDashXDashHeadersLib.eventsMod.EventEmitter = js.native
+  def start(options: ReplOptions): easyDashXDashHeadersLib.eventsMod.EventEmitter = js.native
 }
 

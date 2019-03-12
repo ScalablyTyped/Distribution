@@ -65,7 +65,7 @@ object CollapsibleProps {
     duration: scala.Int | scala.Double = null,
     easing: EasingMode | js.Any = null,
     enablePointerEvents: js.UndefOr[scala.Boolean] = js.undefined,
-    onAnimationEnd: js.Function0[scala.Unit] = null,
+    onAnimationEnd: () => scala.Unit = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
   ): CollapsibleProps = {
     val __obj = js.Dynamic.literal()
@@ -75,7 +75,7 @@ object CollapsibleProps {
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (!js.isUndefined(enablePointerEvents)) __obj.updateDynamic("enablePointerEvents")(enablePointerEvents)
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(onAnimationEnd)
+    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction0(onAnimationEnd))
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollapsibleProps]
   }

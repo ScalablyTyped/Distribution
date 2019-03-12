@@ -12,12 +12,9 @@ trait Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1927274009 
 object Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1927274009 {
   @scala.inline
   def apply(
-    renderer: js.Function1[
-      atOracleOraclejetLib.ojgaugeMod.ojStatusMeterGaugeNs.TooltipContext, 
-      Anon_Insert | Anon_PreventDefault
-    ]
+    renderer: atOracleOraclejetLib.ojgaugeMod.ojStatusMeterGaugeNs.TooltipContext => Anon_Insert | Anon_PreventDefault
   ): Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1927274009 = {
-    val __obj = js.Dynamic.literal(renderer = renderer)
+    val __obj = js.Dynamic.literal(renderer = js.Any.fromFunction1(renderer))
   
     __obj.asInstanceOf[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1927274009]
   }

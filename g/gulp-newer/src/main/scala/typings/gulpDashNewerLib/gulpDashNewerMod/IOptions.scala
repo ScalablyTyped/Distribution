@@ -25,11 +25,11 @@ object IOptions {
   def apply(
     dest: java.lang.String,
     ext: java.lang.String = null,
-    map: js.Function1[/* relativePath */ java.lang.String, java.lang.String] = null
+    map: /* relativePath */ java.lang.String => java.lang.String = null
   ): IOptions = {
     val __obj = js.Dynamic.literal(dest = dest)
     if (ext != null) __obj.updateDynamic("ext")(ext)
-    if (map != null) __obj.updateDynamic("map")(map)
+    if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
     __obj.asInstanceOf[IOptions]
   }
 }

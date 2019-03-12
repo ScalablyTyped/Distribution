@@ -23,7 +23,7 @@ trait Context extends js.Object {
     status: epilogueLib.epilogueMod.ErrorsNs.EpilogueError,
     message: java.lang.String,
     errorList: js.Array[java.lang.String],
-    cause: nodeLib.Error
+    cause: stdLib.Error
   ): scala.Unit = js.native
   def error(status: scala.Double): scala.Unit = js.native
   def error(status: scala.Double, message: java.lang.String): scala.Unit = js.native
@@ -32,7 +32,7 @@ trait Context extends js.Object {
     status: scala.Double,
     message: java.lang.String,
     errorList: js.Array[java.lang.String],
-    cause: nodeLib.Error
+    cause: stdLib.Error
   ): scala.Unit = js.native
   def skip(): scala.Unit = js.native
   def stop(): scala.Unit = js.native

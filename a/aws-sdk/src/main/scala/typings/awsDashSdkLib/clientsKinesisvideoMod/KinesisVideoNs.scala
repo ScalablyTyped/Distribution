@@ -35,7 +35,7 @@ object KinesisVideoNs extends js.Object {
     /**
       * A name for the stream that you are creating. The stream name is an identifier for the stream, and must be unique for each account and region.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs.StreamName
     /**
       * A list of tags to associate with the specified stream. Each tag is a key-value pair (the value is optional).
       */
@@ -84,7 +84,7 @@ object KinesisVideoNs extends js.Object {
     /**
       * The name of the API action for which to get an endpoint.
       */
-    var APIName: APIName
+    var APIName: awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs.APIName
     /**
       * The Amazon Resource Name (ARN) of the stream that you want to get the endpoint for. You must specify either this parameter or a StreamName in the request. 
       */
@@ -465,7 +465,7 @@ object KinesisVideoNs extends js.Object {
     /**
       * A list of the keys of the tags that you want to remove.
       */
-    var TagKeyList: TagKeyList
+    var TagKeyList: awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs.TagKeyList
   }
   
   trait UntagStreamOutput extends js.Object
@@ -478,7 +478,7 @@ object KinesisVideoNs extends js.Object {
     /**
       * The retention period, in hours. The value you specify replaces the current value. The maximum value for this parameter is 87600 (ten years).
       */
-    var DataRetentionChangeInHours: DataRetentionChangeInHours
+    var DataRetentionChangeInHours: awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs.DataRetentionChangeInHours
     /**
       * Indicates whether you want to increase or decrease the retention period.
       */

@@ -127,9 +127,9 @@ trait Stream[R]
   		 */
   def consume[U](
     f: js.Function4[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* x */ R | Nil, 
-      /* push */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* value */ js.UndefOr[U | Nil], scala.Unit], 
+      /* push */ js.Function2[/* err */ stdLib.Error | scala.Null, /* value */ js.UndefOr[U | Nil], scala.Unit], 
       /* next */ js.Function0[scala.Unit], 
       scala.Unit
     ]
@@ -263,8 +263,8 @@ trait Stream[R]
   		 */
   def errors(
     f: js.Function2[
-      /* err */ nodeLib.Error, 
-      /* push */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* x */ js.UndefOr[R], scala.Unit], 
+      /* err */ stdLib.Error, 
+      /* push */ js.Function2[/* err */ stdLib.Error | scala.Null, /* x */ js.UndefOr[R], scala.Unit], 
       scala.Unit
     ]
   ): Stream[R] = js.native
@@ -546,7 +546,7 @@ trait Stream[R]
   		 * @param {Function} f - the function to handle data
   		 * @api public
   		 */
-  def pull(f: js.Function2[/* err */ nodeLib.Error, /* x */ R, scala.Unit]): scala.Unit = js.native
+  def pull(f: js.Function2[/* err */ stdLib.Error, /* x */ R, scala.Unit]): scala.Unit = js.native
   /**
   		 * Limits number of values through the stream to a maximum of number of values
   		 * per window. Errors are not limited but allowed to pass through as soon as
@@ -673,7 +673,7 @@ trait Stream[R]
   		 * @param {Function} f - the function to handle an error
   		 * @api public
   		 */
-  def stopOnError(f: js.Function1[/* err */ nodeLib.Error, scala.Unit]): Stream[R] = js.native
+  def stopOnError(f: js.Function1[/* err */ stdLib.Error, scala.Unit]): Stream[R] = js.native
   /**
   		 * Creates a new Stream with the first `n` values from the source.
   		 *
@@ -804,7 +804,7 @@ trait Stream[R]
   		 *     // parameter err will be null
   		 * });
   		 */
-  def toCallback(cb: js.Function2[/* err */ js.UndefOr[nodeLib.Error], /* x */ js.UndefOr[R], scala.Unit]): scala.Unit = js.native
+  def toCallback(cb: js.Function2[/* err */ js.UndefOr[stdLib.Error], /* x */ js.UndefOr[R], scala.Unit]): scala.Unit = js.native
   /**
   		 * Converts the stream to a node Readable Stream for use in methods
   		 * or pipes that depend on the native stream type.

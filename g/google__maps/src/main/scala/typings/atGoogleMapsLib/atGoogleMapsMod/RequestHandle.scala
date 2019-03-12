@@ -29,12 +29,12 @@ trait RequestHandle[T] extends js.Object {
 object RequestHandle {
   @scala.inline
   def apply[T](
-    asPromise: js.Function0[js.Promise[ClientResponse[T]]],
-    cancel: js.Function0[scala.Unit],
-    `finally`: js.Function1[js.Function0[scala.Unit], RequestHandle[T]]
+    asPromise: () => js.Promise[ClientResponse[T]],
+    cancel: () => scala.Unit,
+    `finally`: js.Function0[scala.Unit] => RequestHandle[T]
   ): RequestHandle[T] = {
-    val __obj = js.Dynamic.literal(asPromise = asPromise, cancel = cancel)
-    __obj.updateDynamic("finally")(`finally`)
+    val __obj = js.Dynamic.literal(asPromise = js.Any.fromFunction0(asPromise), cancel = js.Any.fromFunction0(cancel))
+    __obj.updateDynamic("finally")(js.Any.fromFunction1(`finally`))
     __obj.asInstanceOf[RequestHandle[T]]
   }
 }

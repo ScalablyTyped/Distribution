@@ -16,7 +16,7 @@ trait SortableEndEvent extends SortableEvent {
 object SortableEndEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Sortable,
     action: java.lang.String = null,
@@ -25,7 +25,7 @@ object SortableEndEvent {
     newIndex: scala.Int | scala.Double = null,
     oldIndex: scala.Int | scala.Double = null
   ): SortableEndEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (action != null) __obj.updateDynamic("action")(action)
     if (draggableEvent != null) __obj.updateDynamic("draggableEvent")(draggableEvent)
     if (item != null) __obj.updateDynamic("item")(item)

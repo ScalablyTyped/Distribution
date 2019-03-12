@@ -37,7 +37,7 @@ trait SsdpOptions extends js.Object {
 object SsdpOptions {
   @scala.inline
   def apply(
-    customLogger: js.Function2[/* format */ java.lang.String, /* repeated */ js.Any, scala.Unit] = null,
+    customLogger: (/* format */ java.lang.String, /* repeated */ js.Any) => scala.Unit = null,
     description: java.lang.String = null,
     headers: SsdpHeaders = null,
     ssdpIp: java.lang.String = null,
@@ -46,7 +46,7 @@ object SsdpOptions {
     ssdpTtl: scala.Int | scala.Double = null
   ): SsdpOptions = {
     val __obj = js.Dynamic.literal()
-    if (customLogger != null) __obj.updateDynamic("customLogger")(customLogger)
+    if (customLogger != null) __obj.updateDynamic("customLogger")(js.Any.fromFunction2(customLogger))
     if (description != null) __obj.updateDynamic("description")(description)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (ssdpIp != null) __obj.updateDynamic("ssdpIp")(ssdpIp)

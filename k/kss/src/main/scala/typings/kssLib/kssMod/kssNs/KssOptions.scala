@@ -25,7 +25,7 @@ object KssOptions {
     custom: js.Any = null,
     header: js.UndefOr[scala.Boolean] = js.undefined,
     json: js.UndefOr[scala.Boolean] = js.undefined,
-    logErrorFunction: js.Function1[/* repeated */ java.lang.String, scala.Unit] = null,
+    logErrorFunction: /* repeated */ java.lang.String => scala.Unit = null,
     markdown: js.UndefOr[scala.Boolean] = js.undefined,
     mask: java.lang.String | stdLib.RegExp = null,
     verbose: js.UndefOr[scala.Boolean] = js.undefined
@@ -36,7 +36,7 @@ object KssOptions {
     if (custom != null) __obj.updateDynamic("custom")(custom)
     if (!js.isUndefined(header)) __obj.updateDynamic("header")(header)
     if (!js.isUndefined(json)) __obj.updateDynamic("json")(json)
-    if (logErrorFunction != null) __obj.updateDynamic("logErrorFunction")(logErrorFunction)
+    if (logErrorFunction != null) __obj.updateDynamic("logErrorFunction")(js.Any.fromFunction1(logErrorFunction))
     if (!js.isUndefined(markdown)) __obj.updateDynamic("markdown")(markdown)
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)

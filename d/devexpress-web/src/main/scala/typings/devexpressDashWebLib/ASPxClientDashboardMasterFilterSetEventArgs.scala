@@ -34,12 +34,12 @@ trait ASPxClientDashboardMasterFilterSetEventArgs extends ASPxClientEventArgs {
 object ASPxClientDashboardMasterFilterSetEventArgs {
   @scala.inline
   def apply(
-    IsNullValue: js.Function1[js.Object, scala.Boolean],
-    IsOthersValue: js.Function1[js.Object, scala.Boolean],
+    IsNullValue: js.Object => scala.Boolean,
+    IsOthersValue: js.Object => scala.Boolean,
     ItemName: java.lang.String,
     Values: js.Array[js.Array[js.Object]]
   ): ASPxClientDashboardMasterFilterSetEventArgs = {
-    val __obj = js.Dynamic.literal(IsNullValue = IsNullValue, IsOthersValue = IsOthersValue, ItemName = ItemName, Values = Values)
+    val __obj = js.Dynamic.literal(IsNullValue = js.Any.fromFunction1(IsNullValue), IsOthersValue = js.Any.fromFunction1(IsOthersValue), ItemName = ItemName, Values = Values)
   
     __obj.asInstanceOf[ASPxClientDashboardMasterFilterSetEventArgs]
   }

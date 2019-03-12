@@ -15,12 +15,12 @@ trait Lookup[TKey, TValue] extends js.Object {
 object Lookup {
   @scala.inline
   def apply[TKey, TValue](
-    get: js.Function1[TKey, Enumerable[TValue]],
-    has: js.Function1[TKey, scala.Boolean],
-    length: js.Function0[scala.Double],
-    toEnumerable: js.Function0[Enumerable[Grouping[TKey, TValue]]]
+    get: TKey => Enumerable[TValue],
+    has: TKey => scala.Boolean,
+    length: () => scala.Double,
+    toEnumerable: () => Enumerable[Grouping[TKey, TValue]]
   ): Lookup[TKey, TValue] = {
-    val __obj = js.Dynamic.literal(get = get, has = has, length = length, toEnumerable = toEnumerable)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), length = js.Any.fromFunction0(length), toEnumerable = js.Any.fromFunction0(toEnumerable))
   
     __obj.asInstanceOf[Lookup[TKey, TValue]]
   }

@@ -16,12 +16,12 @@ object customHandler {
   def apply(
     `type`: java.lang.String | scala.Double,
     assignedTo: scala.Int | scala.Double = null,
-    setup: js.Function1[/* style */ definition, scala.Unit] = null
+    setup: /* style */ definition => scala.Unit = null
   ): customHandler = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (assignedTo != null) __obj.updateDynamic("assignedTo")(assignedTo.asInstanceOf[js.Any])
-    if (setup != null) __obj.updateDynamic("setup")(setup)
+    if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction1(setup))
     __obj.asInstanceOf[customHandler]
   }
 }

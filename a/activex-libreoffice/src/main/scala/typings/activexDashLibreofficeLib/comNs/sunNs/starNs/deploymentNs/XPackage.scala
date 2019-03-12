@@ -72,7 +72,7 @@ trait XPackage
     * information available at the first URL.
     * @returns update information URLs
     */
-  val UpdateInformationURLs: activexDashInteropLib.SafeArray[java.lang.String]
+  val UpdateInformationURLs: stdLib.SafeArray[java.lang.String]
   /**
     * returns the textual version representation of the package.
     *
@@ -135,7 +135,7 @@ trait XPackage
   def getBundle(
     xAbortChannel: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel,
     xCmdEnv: activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment
-  ): activexDashInteropLib.SafeArray[XPackage]
+  ): stdLib.SafeArray[XPackage]
   /**
     * returns a description string to describe the package.
     * @returns description
@@ -202,7 +202,7 @@ trait XPackage
     * information available at the first URL.
     * @returns update information URLs
     */
-  def getUpdateInformationURLs(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getUpdateInformationURLs(): stdLib.SafeArray[java.lang.String]
   /**
     * returns the textual version representation of the package.
     *
@@ -272,73 +272,41 @@ object XPackage {
     RegistrationDataURL: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[java.lang.String],
     RepositoryName: java.lang.String,
     URL: java.lang.String,
-    UpdateInformationURLs: activexDashInteropLib.SafeArray[java.lang.String],
+    UpdateInformationURLs: stdLib.SafeArray[java.lang.String],
     Version: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    addModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
-    checkDependencies: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
-      scala.Boolean
-    ],
-    checkPrerequisites: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
-      scala.Boolean, 
-      scala.Double
-    ],
-    createAbortChannel: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel],
-    dispose: js.Function0[scala.Unit],
-    exportTo: js.Function4[
-      java.lang.String, 
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
-      scala.Unit
-    ],
-    getBundle: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
-      activexDashInteropLib.SafeArray[XPackage]
-    ],
-    getDescription: js.Function0[java.lang.String],
-    getDisplayName: js.Function0[java.lang.String],
-    getIcon: js.Function1[scala.Boolean, activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic],
-    getIdentifier: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[java.lang.String]],
-    getLicenseText: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getPackageType: js.Function0[XPackageTypeInfo],
-    getPublisherInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair],
-    getRegistrationDataURL: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[java.lang.String]],
-    getRepositoryName: js.Function0[java.lang.String],
-    getURL: js.Function0[java.lang.String],
-    getUpdateInformationURLs: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getVersion: js.Function0[java.lang.String],
-    isBundle: js.Function0[scala.Boolean],
-    isRegistered: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Ambiguous[scala.Boolean]]
-    ],
-    isRemoved: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerPackage: js.Function3[
-      scala.Boolean, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
-      scala.Unit
-    ],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    removeModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
-    revokePackage: js.Function3[
-      scala.Boolean, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    addModifyListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener => scala.Unit,
+    checkDependencies: activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment => scala.Boolean,
+    checkPrerequisites: (activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, scala.Boolean) => scala.Double,
+    createAbortChannel: () => activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel,
+    dispose: () => scala.Unit,
+    exportTo: (java.lang.String, java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment) => scala.Unit,
+    getBundle: (activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment) => stdLib.SafeArray[XPackage],
+    getDescription: () => java.lang.String,
+    getDisplayName: () => java.lang.String,
+    getIcon: scala.Boolean => activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic,
+    getIdentifier: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[java.lang.String],
+    getLicenseText: () => java.lang.String,
+    getName: () => java.lang.String,
+    getPackageType: () => XPackageTypeInfo,
+    getPublisherInfo: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair,
+    getRegistrationDataURL: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[java.lang.String],
+    getRepositoryName: () => java.lang.String,
+    getURL: () => java.lang.String,
+    getUpdateInformationURLs: () => stdLib.SafeArray[java.lang.String],
+    getVersion: () => java.lang.String,
+    isBundle: () => scala.Boolean,
+    isRegistered: (activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment) => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Ambiguous[scala.Boolean]],
+    isRemoved: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerPackage: (scala.Boolean, activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment) => scala.Unit,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    removeModifyListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener => scala.Unit,
+    revokePackage: (scala.Boolean, activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment) => scala.Unit
   ): XPackage = {
-    val __obj = js.Dynamic.literal(Description = Description, DisplayName = DisplayName, Identifier = Identifier, LicenseText = LicenseText, Name = Name, PackageType = PackageType, PublisherInfo = PublisherInfo, RegistrationDataURL = RegistrationDataURL, RepositoryName = RepositoryName, URL = URL, UpdateInformationURLs = UpdateInformationURLs, Version = Version, acquire = acquire, addEventListener = addEventListener, addModifyListener = addModifyListener, checkDependencies = checkDependencies, checkPrerequisites = checkPrerequisites, createAbortChannel = createAbortChannel, dispose = dispose, exportTo = exportTo, getBundle = getBundle, getDescription = getDescription, getDisplayName = getDisplayName, getIcon = getIcon, getIdentifier = getIdentifier, getLicenseText = getLicenseText, getName = getName, getPackageType = getPackageType, getPublisherInfo = getPublisherInfo, getRegistrationDataURL = getRegistrationDataURL, getRepositoryName = getRepositoryName, getURL = getURL, getUpdateInformationURLs = getUpdateInformationURLs, getVersion = getVersion, isBundle = isBundle, isRegistered = isRegistered, isRemoved = isRemoved, queryInterface = queryInterface, registerPackage = registerPackage, release = release, removeEventListener = removeEventListener, removeModifyListener = removeModifyListener, revokePackage = revokePackage)
+    val __obj = js.Dynamic.literal(Description = Description, DisplayName = DisplayName, Identifier = Identifier, LicenseText = LicenseText, Name = Name, PackageType = PackageType, PublisherInfo = PublisherInfo, RegistrationDataURL = RegistrationDataURL, RepositoryName = RepositoryName, URL = URL, UpdateInformationURLs = UpdateInformationURLs, Version = Version, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addModifyListener = js.Any.fromFunction1(addModifyListener), checkDependencies = js.Any.fromFunction1(checkDependencies), checkPrerequisites = js.Any.fromFunction3(checkPrerequisites), createAbortChannel = js.Any.fromFunction0(createAbortChannel), dispose = js.Any.fromFunction0(dispose), exportTo = js.Any.fromFunction4(exportTo), getBundle = js.Any.fromFunction2(getBundle), getDescription = js.Any.fromFunction0(getDescription), getDisplayName = js.Any.fromFunction0(getDisplayName), getIcon = js.Any.fromFunction1(getIcon), getIdentifier = js.Any.fromFunction0(getIdentifier), getLicenseText = js.Any.fromFunction0(getLicenseText), getName = js.Any.fromFunction0(getName), getPackageType = js.Any.fromFunction0(getPackageType), getPublisherInfo = js.Any.fromFunction0(getPublisherInfo), getRegistrationDataURL = js.Any.fromFunction0(getRegistrationDataURL), getRepositoryName = js.Any.fromFunction0(getRepositoryName), getURL = js.Any.fromFunction0(getURL), getUpdateInformationURLs = js.Any.fromFunction0(getUpdateInformationURLs), getVersion = js.Any.fromFunction0(getVersion), isBundle = js.Any.fromFunction0(isBundle), isRegistered = js.Any.fromFunction2(isRegistered), isRemoved = js.Any.fromFunction0(isRemoved), queryInterface = js.Any.fromFunction1(queryInterface), registerPackage = js.Any.fromFunction3(registerPackage), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removeModifyListener = js.Any.fromFunction1(removeModifyListener), revokePackage = js.Any.fromFunction3(revokePackage))
   
     __obj.asInstanceOf[XPackage]
   }

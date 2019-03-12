@@ -39,12 +39,12 @@ object TileLayerProps {
     minNativeZoom: scala.Int | scala.Double = null,
     minZoom: scala.Int | scala.Double = null,
     noWrap: js.UndefOr[scala.Boolean] = js.undefined,
-    onload: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    onloading: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    ontileerror: js.Function1[/* event */ leafletLib.leafletMod.TileEvent, scala.Unit] = null,
-    ontileload: js.Function1[/* event */ leafletLib.leafletMod.TileEvent, scala.Unit] = null,
-    ontileloadstart: js.Function1[/* event */ leafletLib.leafletMod.TileEvent, scala.Unit] = null,
-    ontileunload: js.Function1[/* event */ leafletLib.leafletMod.TileEvent, scala.Unit] = null,
+    onload: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    onloading: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    ontileerror: /* event */ leafletLib.leafletMod.TileEvent => scala.Unit = null,
+    ontileload: /* event */ leafletLib.leafletMod.TileEvent => scala.Unit = null,
+    ontileloadstart: /* event */ leafletLib.leafletMod.TileEvent => scala.Unit = null,
+    ontileunload: /* event */ leafletLib.leafletMod.TileEvent => scala.Unit = null,
     opacity: scala.Int | scala.Double = null,
     pane: java.lang.String = null,
     subdomains: java.lang.String | js.Array[java.lang.String] = null,
@@ -72,12 +72,12 @@ object TileLayerProps {
     if (minNativeZoom != null) __obj.updateDynamic("minNativeZoom")(minNativeZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (!js.isUndefined(noWrap)) __obj.updateDynamic("noWrap")(noWrap)
-    if (onload != null) __obj.updateDynamic("onload")(onload)
-    if (onloading != null) __obj.updateDynamic("onloading")(onloading)
-    if (ontileerror != null) __obj.updateDynamic("ontileerror")(ontileerror)
-    if (ontileload != null) __obj.updateDynamic("ontileload")(ontileload)
-    if (ontileloadstart != null) __obj.updateDynamic("ontileloadstart")(ontileloadstart)
-    if (ontileunload != null) __obj.updateDynamic("ontileunload")(ontileunload)
+    if (onload != null) __obj.updateDynamic("onload")(js.Any.fromFunction1(onload))
+    if (onloading != null) __obj.updateDynamic("onloading")(js.Any.fromFunction1(onloading))
+    if (ontileerror != null) __obj.updateDynamic("ontileerror")(js.Any.fromFunction1(ontileerror))
+    if (ontileload != null) __obj.updateDynamic("ontileload")(js.Any.fromFunction1(ontileload))
+    if (ontileloadstart != null) __obj.updateDynamic("ontileloadstart")(js.Any.fromFunction1(ontileloadstart))
+    if (ontileunload != null) __obj.updateDynamic("ontileunload")(js.Any.fromFunction1(ontileunload))
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (pane != null) __obj.updateDynamic("pane")(pane)
     if (subdomains != null) __obj.updateDynamic("subdomains")(subdomains.asInstanceOf[js.Any])

@@ -12,6 +12,7 @@ trait _Readable
   var _readableState: readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.ReadableState = js.native
   var destroyed: scala.Boolean = js.native
   def _undestroy(): scala.Unit = js.native
-  def destroy(err: nodeLib.Error, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]): this.type = js.native
+  def destroy(err: stdLib.Error): this.type = js.native
+  def destroy(err: stdLib.Error, callback: js.Function1[/* error */ stdLib.Error | scala.Null, scala.Unit]): this.type = js.native
 }
 

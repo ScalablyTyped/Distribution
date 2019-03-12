@@ -14,9 +14,9 @@ trait IterableShim[T] extends js.Object {
 
 object IterableShim {
   @scala.inline
-  def apply[T](`_es6-shim iterator_`: js.Function0[Iterator[T]]): IterableShim[T] = {
+  def apply[T](`_es6-shim iterator_`: () => Iterator[T]): IterableShim[T] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_es6-shim iterator_")(`_es6-shim iterator_`)
+    __obj.updateDynamic("_es6-shim iterator_")(js.Any.fromFunction0(`_es6-shim iterator_`))
     __obj.asInstanceOf[IterableShim[T]]
   }
 }

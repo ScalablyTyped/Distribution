@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
   * @see XLocaleData for links to DTD of XML locale data files.
   */
 trait Calendar extends js.Object {
-  var Days: activexDashInteropLib.SafeArray[CalendarItem]
+  var Days: stdLib.SafeArray[CalendarItem]
   var Default: scala.Boolean
-  var Eras: activexDashInteropLib.SafeArray[CalendarItem]
+  var Eras: stdLib.SafeArray[CalendarItem]
   var MinimumNumberOfDaysForFirstWeek: scala.Double
-  var Months: activexDashInteropLib.SafeArray[CalendarItem]
+  var Months: stdLib.SafeArray[CalendarItem]
   var Name: java.lang.String
   var StartOfWeek: java.lang.String
 }
@@ -22,11 +22,11 @@ trait Calendar extends js.Object {
 object Calendar {
   @scala.inline
   def apply(
-    Days: activexDashInteropLib.SafeArray[CalendarItem],
+    Days: stdLib.SafeArray[CalendarItem],
     Default: scala.Boolean,
-    Eras: activexDashInteropLib.SafeArray[CalendarItem],
+    Eras: stdLib.SafeArray[CalendarItem],
     MinimumNumberOfDaysForFirstWeek: scala.Double,
-    Months: activexDashInteropLib.SafeArray[CalendarItem],
+    Months: stdLib.SafeArray[CalendarItem],
     Name: java.lang.String,
     StartOfWeek: java.lang.String
   ): Calendar = {

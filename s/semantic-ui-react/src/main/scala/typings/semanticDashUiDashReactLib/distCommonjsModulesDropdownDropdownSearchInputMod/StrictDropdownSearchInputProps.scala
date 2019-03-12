@@ -13,7 +13,7 @@ trait StrictDropdownSearchInputProps extends js.Object {
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** A ref handler for input. */
-  var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[reactLib.HTMLInputElement]] = js.undefined
+  var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[stdLib.HTMLInputElement]] = js.undefined
   /** An input can receive focus. */
   var tabIndex: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /** The HTML input type. */
@@ -28,7 +28,7 @@ object StrictDropdownSearchInputProps {
     as: js.Any = null,
     autoComplete: java.lang.String = null,
     className: java.lang.String = null,
-    inputRef: reactLib.reactMod.ReactNs.Ref[reactLib.HTMLInputElement] = null,
+    inputRef: reactLib.reactMod.ReactNs.Ref[stdLib.HTMLInputElement] = null,
     tabIndex: scala.Double | java.lang.String = null,
     `type`: java.lang.String = null,
     value: scala.Double | java.lang.String = null

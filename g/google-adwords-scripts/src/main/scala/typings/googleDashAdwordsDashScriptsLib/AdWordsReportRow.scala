@@ -11,8 +11,8 @@ trait AdWordsReportRow extends js.Object {
 
 object AdWordsReportRow {
   @scala.inline
-  def apply(formatForUpload: js.Function0[js.Object]): AdWordsReportRow = {
-    val __obj = js.Dynamic.literal(formatForUpload = formatForUpload)
+  def apply(formatForUpload: () => js.Object): AdWordsReportRow = {
+    val __obj = js.Dynamic.literal(formatForUpload = js.Any.fromFunction0(formatForUpload))
   
     __obj.asInstanceOf[AdWordsReportRow]
   }

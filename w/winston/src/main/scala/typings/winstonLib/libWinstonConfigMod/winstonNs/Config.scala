@@ -16,13 +16,13 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(
-    addColors: js.Function1[AbstractConfigSetColors, scala.Unit],
+    addColors: AbstractConfigSetColors => scala.Unit,
     allColors: AbstractConfigSetColors,
     cli: winstonLib.Anon_Colors,
     npm: winstonLib.Anon_ColorsLevels,
     syslog: winstonLib.Anon_ColorsLevelsSyslogConfigSetColors
   ): Config = {
-    val __obj = js.Dynamic.literal(addColors = addColors, allColors = allColors, cli = cli, npm = npm, syslog = syslog)
+    val __obj = js.Dynamic.literal(addColors = js.Any.fromFunction1(addColors), allColors = allColors, cli = cli, npm = npm, syslog = syslog)
   
     __obj.asInstanceOf[Config]
   }

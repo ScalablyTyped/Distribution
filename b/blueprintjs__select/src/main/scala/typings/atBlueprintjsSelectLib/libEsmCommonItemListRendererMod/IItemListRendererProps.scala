@@ -35,7 +35,7 @@ trait IItemListRendererProps[T] extends js.Object {
     * A ref handler that should be attached to the parent HTML element of the menu items.
     * This is required for the active item to scroll into view automatically.
     */
-  def itemsParentRef(ref: reactLib.HTMLElement): scala.Unit = js.native
+  def itemsParentRef(ref: stdLib.HTMLElement): scala.Unit = js.native
   /**
     * Call this function to render an item.
     * This retrieves the modifiers for the item and delegates actual rendering

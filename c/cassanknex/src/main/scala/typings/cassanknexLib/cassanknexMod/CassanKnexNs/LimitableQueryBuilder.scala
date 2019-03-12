@@ -13,10 +13,10 @@ trait LimitableQueryBuilder extends js.Object {
 object LimitableQueryBuilder {
   @scala.inline
   def apply(
-    limit: js.Function1[scala.Double, LimitableQueryBuilder],
-    limitPerPartition: js.Function1[scala.Double, LimitableQueryBuilder]
+    limit: scala.Double => LimitableQueryBuilder,
+    limitPerPartition: scala.Double => LimitableQueryBuilder
   ): LimitableQueryBuilder = {
-    val __obj = js.Dynamic.literal(limit = limit, limitPerPartition = limitPerPartition)
+    val __obj = js.Dynamic.literal(limit = js.Any.fromFunction1(limit), limitPerPartition = js.Any.fromFunction1(limitPerPartition))
   
     __obj.asInstanceOf[LimitableQueryBuilder]
   }

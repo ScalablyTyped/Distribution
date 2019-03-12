@@ -65,7 +65,7 @@ trait Tracer extends js.Object {
     name: java.lang.String,
     fn: js.Function2[
       /* span */ js.UndefOr[Span], 
-      /* fn */ js.UndefOr[js.Function1[/* error */ js.UndefOr[nodeLib.Error], _]], 
+      /* fn */ js.UndefOr[js.Function1[/* error */ js.UndefOr[stdLib.Error], _]], 
       T
     ]
   ): T = js.native
@@ -74,7 +74,7 @@ trait Tracer extends js.Object {
     options: TraceOptions with opentracingLib.libTracerMod.SpanOptions,
     fn: js.Function2[
       /* span */ js.UndefOr[Span], 
-      /* done */ js.UndefOr[js.Function1[/* error */ js.UndefOr[nodeLib.Error], java.lang.String]], 
+      /* done */ js.UndefOr[js.Function1[/* error */ js.UndefOr[stdLib.Error], java.lang.String]], 
       T
     ]
   ): T = js.native

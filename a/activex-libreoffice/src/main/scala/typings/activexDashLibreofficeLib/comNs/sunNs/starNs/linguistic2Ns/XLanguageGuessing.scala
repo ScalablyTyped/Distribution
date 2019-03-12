@@ -24,11 +24,11 @@ trait XLanguageGuessing extends js.Object {
     *
     * This should be the same as the mathematical union of all enabled and disabled languages.
     */
-  val AvailableLanguages: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+  val AvailableLanguages: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
   /** returns the list of all disabled languages */
-  val DisabledLanguages: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+  val DisabledLanguages: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
   /** returns the list of all enabled languages */
-  val EnabledLanguages: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+  val EnabledLanguages: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
   /**
     * allows to explicitly discard some languages from the set of languages possibly returned.
     *
@@ -50,11 +50,11 @@ trait XLanguageGuessing extends js.Object {
     *
     * This should be the same as the mathematical union of all enabled and disabled languages.
     */
-  def getAvailableLanguages(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+  def getAvailableLanguages(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
   /** returns the list of all disabled languages */
-  def getDisabledLanguages(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+  def getDisabledLanguages(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
   /** returns the list of all enabled languages */
-  def getEnabledLanguages(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+  def getEnabledLanguages(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
   /**
     * determines the single most probable language of a sub-string.
     *
@@ -75,34 +75,17 @@ trait XLanguageGuessing extends js.Object {
 object XLanguageGuessing {
   @scala.inline
   def apply(
-    AvailableLanguages: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
-    DisabledLanguages: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
-    EnabledLanguages: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
-    disableLanguages: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale], 
-      scala.Unit
-    ],
-    enableLanguages: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale], 
-      scala.Unit
-    ],
-    getAvailableLanguages: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
-    ],
-    getDisabledLanguages: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
-    ],
-    getEnabledLanguages: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
-    ],
-    guessPrimaryLanguage: js.Function3[
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale
-    ]
+    AvailableLanguages: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    DisabledLanguages: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    EnabledLanguages: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    disableLanguages: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale] => scala.Unit,
+    enableLanguages: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale] => scala.Unit,
+    getAvailableLanguages: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getDisabledLanguages: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getEnabledLanguages: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    guessPrimaryLanguage: (java.lang.String, scala.Double, scala.Double) => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale
   ): XLanguageGuessing = {
-    val __obj = js.Dynamic.literal(AvailableLanguages = AvailableLanguages, DisabledLanguages = DisabledLanguages, EnabledLanguages = EnabledLanguages, disableLanguages = disableLanguages, enableLanguages = enableLanguages, getAvailableLanguages = getAvailableLanguages, getDisabledLanguages = getDisabledLanguages, getEnabledLanguages = getEnabledLanguages, guessPrimaryLanguage = guessPrimaryLanguage)
+    val __obj = js.Dynamic.literal(AvailableLanguages = AvailableLanguages, DisabledLanguages = DisabledLanguages, EnabledLanguages = EnabledLanguages, disableLanguages = js.Any.fromFunction1(disableLanguages), enableLanguages = js.Any.fromFunction1(enableLanguages), getAvailableLanguages = js.Any.fromFunction0(getAvailableLanguages), getDisabledLanguages = js.Any.fromFunction0(getDisabledLanguages), getEnabledLanguages = js.Any.fromFunction0(getEnabledLanguages), guessPrimaryLanguage = js.Any.fromFunction3(guessPrimaryLanguage))
   
     __obj.asInstanceOf[XLanguageGuessing]
   }

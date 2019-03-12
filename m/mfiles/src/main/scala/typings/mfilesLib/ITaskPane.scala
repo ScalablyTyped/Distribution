@@ -20,17 +20,17 @@ trait ITaskPane extends js.Object {
 object ITaskPane {
   @scala.inline
   def apply(
-    AddCustomCommandToGroup: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
+    AddCustomCommandToGroup: (scala.Double, scala.Double, scala.Double) => scala.Unit,
     Available: scala.Boolean,
-    CreateGroup: js.Function2[java.lang.String, scala.Double, scala.Double],
-    DeleteGroup: js.Function1[scala.Double, scala.Unit],
+    CreateGroup: (java.lang.String, scala.Double) => scala.Double,
+    DeleteGroup: scala.Double => scala.Unit,
     Events: ITaskPaneEvents,
-    RemoveCustomCommandFromGroup: js.Function2[scala.Double, scala.Double, scala.Unit],
-    SetLogo: js.Function1[java.lang.String, scala.Unit],
-    SetTheme: js.Function1[ITheme, scala.Unit],
+    RemoveCustomCommandFromGroup: (scala.Double, scala.Double) => scala.Unit,
+    SetLogo: java.lang.String => scala.Unit,
+    SetTheme: ITheme => scala.Unit,
     Visible: scala.Boolean
   ): ITaskPane = {
-    val __obj = js.Dynamic.literal(AddCustomCommandToGroup = AddCustomCommandToGroup, Available = Available, CreateGroup = CreateGroup, DeleteGroup = DeleteGroup, Events = Events, RemoveCustomCommandFromGroup = RemoveCustomCommandFromGroup, SetLogo = SetLogo, SetTheme = SetTheme, Visible = Visible)
+    val __obj = js.Dynamic.literal(AddCustomCommandToGroup = js.Any.fromFunction3(AddCustomCommandToGroup), Available = Available, CreateGroup = js.Any.fromFunction2(CreateGroup), DeleteGroup = js.Any.fromFunction1(DeleteGroup), Events = Events, RemoveCustomCommandFromGroup = js.Any.fromFunction2(RemoveCustomCommandFromGroup), SetLogo = js.Any.fromFunction1(SetLogo), SetTheme = js.Any.fromFunction1(SetTheme), Visible = Visible)
   
     __obj.asInstanceOf[ITaskPane]
   }

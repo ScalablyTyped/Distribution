@@ -10,18 +10,12 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def matchRoutes[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ reactDashRouterDashConfigLib.reactDashRouterDashConfigLibStrings.matchRoutes with js.Any */](
-    routes: js.Array[reactDashRouterDashConfigLib.reactDashRouterDashConfigMod.RouteConfig],
-    pathname: java.lang.String
-  ): js.Array[reactDashRouterDashConfigLib.reactDashRouterDashConfigMod.MatchedRoute[Params]] = js.native
+    */ reactDashRouterDashConfigLib.reactDashRouterDashConfigLibStrings.matchRoutes with js.Any */](routes: js.Array[RouteConfig], pathname: java.lang.String): js.Array[MatchedRoute[Params]] = js.native
   def renderRoutes(): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def renderRoutes(routes: js.Array[reactDashRouterDashConfigLib.reactDashRouterDashConfigMod.RouteConfig]): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderRoutes(routes: js.Array[RouteConfig]): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderRoutes(routes: js.Array[RouteConfig], extraProps: js.Any): reactLib.reactMod.Global.JSXNs.Element = js.native
   def renderRoutes(
-    routes: js.Array[reactDashRouterDashConfigLib.reactDashRouterDashConfigMod.RouteConfig],
-    extraProps: js.Any
-  ): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def renderRoutes(
-    routes: js.Array[reactDashRouterDashConfigLib.reactDashRouterDashConfigMod.RouteConfig],
+    routes: js.Array[RouteConfig],
     extraProps: js.Any,
     switchProps: reactDashRouterLib.reactDashRouterMod.SwitchProps
   ): reactLib.reactMod.Global.JSXNs.Element = js.native

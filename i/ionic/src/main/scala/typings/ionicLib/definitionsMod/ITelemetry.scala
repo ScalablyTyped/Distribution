@@ -11,8 +11,8 @@ trait ITelemetry extends js.Object {
 
 object ITelemetry {
   @scala.inline
-  def apply(sendCommand: js.Function2[java.lang.String, js.Array[java.lang.String], js.Promise[scala.Unit]]): ITelemetry = {
-    val __obj = js.Dynamic.literal(sendCommand = sendCommand)
+  def apply(sendCommand: (java.lang.String, js.Array[java.lang.String]) => js.Promise[scala.Unit]): ITelemetry = {
+    val __obj = js.Dynamic.literal(sendCommand = js.Any.fromFunction2(sendCommand))
   
     __obj.asInstanceOf[ITelemetry]
   }

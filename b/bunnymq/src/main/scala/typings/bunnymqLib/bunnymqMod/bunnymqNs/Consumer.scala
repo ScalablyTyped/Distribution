@@ -17,8 +17,8 @@ trait Consumer extends js.Object {
 
 object Consumer {
   @scala.inline
-  def apply(consume: js.Function2[java.lang.String, ConsumerCallback[js.Any], scala.Unit]): Consumer = {
-    val __obj = js.Dynamic.literal(consume = consume)
+  def apply(consume: (java.lang.String, ConsumerCallback[js.Any]) => scala.Unit): Consumer = {
+    val __obj = js.Dynamic.literal(consume = js.Any.fromFunction2(consume))
   
     __obj.asInstanceOf[Consumer]
   }

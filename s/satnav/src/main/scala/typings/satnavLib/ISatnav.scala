@@ -15,15 +15,12 @@ trait ISatnav extends js.Object {
 object ISatnav {
   @scala.inline
   def apply(
-    change: js.Function1[
-      js.Function3[/* hash */ java.lang.String, /* params */ js.Any, /* old */ js.Any, _], 
-      ISatnav
-    ],
-    go: js.Function0[ISatnav],
-    navigate: js.Function1[INavigationOptions, ISatnav],
-    otherwise: js.Function1[java.lang.String, ISatnav]
+    change: js.Function3[/* hash */ java.lang.String, /* params */ js.Any, /* old */ js.Any, _] => ISatnav,
+    go: () => ISatnav,
+    navigate: INavigationOptions => ISatnav,
+    otherwise: java.lang.String => ISatnav
   ): ISatnav = {
-    val __obj = js.Dynamic.literal(change = change, go = go, navigate = navigate, otherwise = otherwise)
+    val __obj = js.Dynamic.literal(change = js.Any.fromFunction1(change), go = js.Any.fromFunction0(go), navigate = js.Any.fromFunction1(navigate), otherwise = js.Any.fromFunction1(otherwise))
   
     __obj.asInstanceOf[ISatnav]
   }

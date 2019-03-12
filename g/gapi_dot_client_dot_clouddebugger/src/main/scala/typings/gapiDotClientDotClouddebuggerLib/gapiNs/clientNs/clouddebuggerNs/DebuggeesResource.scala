@@ -28,16 +28,10 @@ object DebuggeesResource {
   @scala.inline
   def apply(
     breakpoints: BreakpointsResource,
-    list: js.Function1[
-      gapiDotClientDotClouddebuggerLib.Anon_AccesstokenAltBearertokenCallbackClientVersion, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListDebuggeesResponse]
-    ],
-    register: js.Function1[
-      gapiDotClientDotClouddebuggerLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RegisterDebuggeeResponse]
-    ]
+    list: gapiDotClientDotClouddebuggerLib.Anon_AccesstokenAltBearertokenCallbackClientVersion => gapiDotClientLib.gapiNs.clientNs.Request[ListDebuggeesResponse],
+    register: gapiDotClientDotClouddebuggerLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[RegisterDebuggeeResponse]
   ): DebuggeesResource = {
-    val __obj = js.Dynamic.literal(breakpoints = breakpoints, list = list, register = register)
+    val __obj = js.Dynamic.literal(breakpoints = breakpoints, list = js.Any.fromFunction1(list), register = js.Any.fromFunction1(register))
   
     __obj.asInstanceOf[DebuggeesResource]
   }

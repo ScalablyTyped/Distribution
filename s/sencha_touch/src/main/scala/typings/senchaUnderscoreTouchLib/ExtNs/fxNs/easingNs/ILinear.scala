@@ -29,26 +29,26 @@ object ILinear {
   def apply(
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     extend: java.lang.String = null,
-    getDuration: js.Function0[scala.Double] = null,
-    getEndValue: js.Function0[scala.Double] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getStartTime: js.Function0[scala.Double] = null,
-    getStartValue: js.Function0[scala.Double] = null,
+    getDuration: () => scala.Double = null,
+    getEndValue: () => scala.Double = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getStartTime: () => scala.Double = null,
+    getStartValue: () => scala.Double = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setDuration: js.Function1[/* duration */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setEndValue: js.Function1[/* endValue */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setStartTime: js.Function1[/* startTime */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setStartValue: js.Function1[/* startValue */ js.UndefOr[scala.Double], scala.Unit] = null,
+    setDuration: /* duration */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setEndValue: /* endValue */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setStartTime: /* startTime */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setStartValue: /* startValue */ js.UndefOr[scala.Double] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null
@@ -56,26 +56,26 @@ object ILinear {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getDuration != null) __obj.updateDynamic("getDuration")(getDuration)
-    if (getEndValue != null) __obj.updateDynamic("getEndValue")(getEndValue)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getStartTime != null) __obj.updateDynamic("getStartTime")(getStartTime)
-    if (getStartValue != null) __obj.updateDynamic("getStartValue")(getStartValue)
+    if (getDuration != null) __obj.updateDynamic("getDuration")(js.Any.fromFunction0(getDuration))
+    if (getEndValue != null) __obj.updateDynamic("getEndValue")(js.Any.fromFunction0(getEndValue))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getStartTime != null) __obj.updateDynamic("getStartTime")(js.Any.fromFunction0(getStartTime))
+    if (getStartValue != null) __obj.updateDynamic("getStartValue")(js.Any.fromFunction0(getStartValue))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setDuration != null) __obj.updateDynamic("setDuration")(setDuration)
-    if (setEndValue != null) __obj.updateDynamic("setEndValue")(setEndValue)
-    if (setStartTime != null) __obj.updateDynamic("setStartTime")(setStartTime)
-    if (setStartValue != null) __obj.updateDynamic("setStartValue")(setStartValue)
+    if (setDuration != null) __obj.updateDynamic("setDuration")(js.Any.fromFunction1(setDuration))
+    if (setEndValue != null) __obj.updateDynamic("setEndValue")(js.Any.fromFunction1(setEndValue))
+    if (setStartTime != null) __obj.updateDynamic("setStartTime")(js.Any.fromFunction1(setStartTime))
+    if (setStartValue != null) __obj.updateDynamic("setStartValue")(js.Any.fromFunction1(setStartValue))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (uses != null) __obj.updateDynamic("uses")(uses)

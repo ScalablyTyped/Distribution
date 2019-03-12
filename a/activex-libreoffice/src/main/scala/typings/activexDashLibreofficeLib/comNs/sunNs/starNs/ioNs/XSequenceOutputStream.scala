@@ -8,24 +8,24 @@ import scala.scalajs.js.annotation._
 /** This interface offers access to the written bytes */
 trait XSequenceOutputStream extends XOutputStream {
   /** allows to get access to the written data */
-  val WrittenBytes: activexDashInteropLib.SafeArray[scala.Double]
+  val WrittenBytes: stdLib.SafeArray[scala.Double]
   /** allows to get access to the written data */
-  def getWrittenBytes(): activexDashInteropLib.SafeArray[scala.Double]
+  def getWrittenBytes(): stdLib.SafeArray[scala.Double]
 }
 
 object XSequenceOutputStream {
   @scala.inline
   def apply(
-    WrittenBytes: activexDashInteropLib.SafeArray[scala.Double],
-    acquire: js.Function0[scala.Unit],
-    closeOutput: js.Function0[scala.Unit],
-    flush: js.Function0[scala.Unit],
-    getWrittenBytes: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    writeBytes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
+    WrittenBytes: stdLib.SafeArray[scala.Double],
+    acquire: () => scala.Unit,
+    closeOutput: () => scala.Unit,
+    flush: () => scala.Unit,
+    getWrittenBytes: () => stdLib.SafeArray[scala.Double],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    writeBytes: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => scala.Unit
   ): XSequenceOutputStream = {
-    val __obj = js.Dynamic.literal(WrittenBytes = WrittenBytes, acquire = acquire, closeOutput = closeOutput, flush = flush, getWrittenBytes = getWrittenBytes, queryInterface = queryInterface, release = release, writeBytes = writeBytes)
+    val __obj = js.Dynamic.literal(WrittenBytes = WrittenBytes, acquire = js.Any.fromFunction0(acquire), closeOutput = js.Any.fromFunction0(closeOutput), flush = js.Any.fromFunction0(flush), getWrittenBytes = js.Any.fromFunction0(getWrittenBytes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), writeBytes = js.Any.fromFunction1(writeBytes))
   
     __obj.asInstanceOf[XSequenceOutputStream]
   }

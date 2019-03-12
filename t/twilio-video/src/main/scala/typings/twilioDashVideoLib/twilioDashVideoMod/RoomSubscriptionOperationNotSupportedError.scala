@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class RoomSubscriptionOperationNotSupportedError () extends TwilioError {
   @JSName("code")
   var code_RoomSubscriptionOperationNotSupportedError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53117` = js.native
-  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`The subscription operation requested is not supported for the Room type` = js.native
+  @JSName("message")
+  var message_RoomSubscriptionOperationNotSupportedError: twilioDashVideoLib.twilioDashVideoLibStrings.`The subscription operation requested is not supported for the Room type` = js.native
 }
 

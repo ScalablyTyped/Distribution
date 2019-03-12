@@ -13,13 +13,9 @@ trait BootboxButton extends js.Object {
 
 object BootboxButton {
   @scala.inline
-  def apply(
-    callback: js.Function0[_] = null,
-    className: java.lang.String = null,
-    label: java.lang.String = null
-  ): BootboxButton = {
+  def apply(callback: () => _ = null, className: java.lang.String = null, label: java.lang.String = null): BootboxButton = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (className != null) __obj.updateDynamic("className")(className)
     if (label != null) __obj.updateDynamic("label")(label)
     __obj.asInstanceOf[BootboxButton]

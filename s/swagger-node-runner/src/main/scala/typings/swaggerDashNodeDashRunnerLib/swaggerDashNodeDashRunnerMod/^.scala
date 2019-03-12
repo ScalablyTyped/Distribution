@@ -9,12 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def create(
-    config: swaggerDashNodeDashRunnerLib.swaggerDashNodeDashRunnerMod.Config,
-    cb: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error], 
-      /* runner */ swaggerDashNodeDashRunnerLib.swaggerDashNodeDashRunnerMod.Runner, 
-      scala.Unit
-    ]
+    config: Config,
+    cb: js.Function2[/* err */ js.UndefOr[stdLib.Error], /* runner */ Runner, scala.Unit]
   ): scala.Unit = js.native
 }
 

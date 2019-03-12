@@ -21,14 +21,14 @@ trait IModuleOptions extends js.Object {
 object IModuleOptions {
   @scala.inline
   def apply(
-    callback: js.Function0[scala.Unit] = null,
+    callback: () => scala.Unit = null,
     credentials: java.lang.String = null,
-    errorCallback: js.Function0[scala.Unit] = null
+    errorCallback: () => scala.Unit = null
   ): IModuleOptions = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (credentials != null) __obj.updateDynamic("credentials")(credentials)
-    if (errorCallback != null) __obj.updateDynamic("errorCallback")(errorCallback)
+    if (errorCallback != null) __obj.updateDynamic("errorCallback")(js.Any.fromFunction0(errorCallback))
     __obj.asInstanceOf[IModuleOptions]
   }
 }

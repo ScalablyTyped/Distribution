@@ -13,11 +13,8 @@ object ^ extends js.Object {
       apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[TContext, _], 
       apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.cache | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.plugins
     ]) with apolloDashServerDashCoreLib.Anon_Context[TContext],
-    httpRequest: apolloDashServerDashCoreLib.distRunHttpQueryMod.HttpQueryRequest
-  ): js.Promise[apolloDashServerDashCoreLib.distRunHttpQueryMod.HttpQueryResponse] = js.native
-  def runHttpQuery(
-    handlerArguments: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[_],
-    request: apolloDashServerDashCoreLib.distRunHttpQueryMod.HttpQueryRequest
-  ): js.Promise[apolloDashServerDashCoreLib.distRunHttpQueryMod.HttpQueryResponse] = js.native
+    httpRequest: HttpQueryRequest
+  ): js.Promise[HttpQueryResponse] = js.native
+  def runHttpQuery(handlerArguments: js.Array[_], request: HttpQueryRequest): js.Promise[HttpQueryResponse] = js.native
 }
 

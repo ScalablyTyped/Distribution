@@ -12,7 +12,7 @@ trait MongoDBStore
      with org.scalablytyped.runtime.Instantiable1[/* connection */ ConnectionInfo, MongoDBStore]
      with org.scalablytyped.runtime.Instantiable2[
       /* connection */ ConnectionInfo, 
-      /* callback */ js.Function1[/* error */ nodeLib.Error, scala.Unit], 
+      /* callback */ js.Function1[/* error */ stdLib.Error, scala.Unit], 
       MongoDBStore
     ] {
   var client: mongodbLib.mongodbMod.MongoClient = js.native

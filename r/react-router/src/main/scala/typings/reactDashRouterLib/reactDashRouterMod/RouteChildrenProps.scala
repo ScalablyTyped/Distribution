@@ -10,7 +10,7 @@ trait RouteChildrenProps[Params /* <: /* import warning: ImportType.apply c Unsu
   */ reactDashRouterLib.reactDashRouterLibStrings.RouteChildrenProps with js.Any */, S] extends js.Object {
   var history: historyLib.historyMod.History[historyLib.historyMod.LocationState]
   var location: historyLib.historyMod.Location[S]
-  var `match`: `match`[Params] | scala.Null
+  var `match`: reactDashRouterLib.reactDashRouterMod.`match`[Params] | scala.Null
 }
 
 object RouteChildrenProps {

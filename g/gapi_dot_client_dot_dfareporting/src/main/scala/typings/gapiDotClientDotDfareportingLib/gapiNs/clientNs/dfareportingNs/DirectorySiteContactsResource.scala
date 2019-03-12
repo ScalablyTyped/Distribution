@@ -15,16 +15,10 @@ trait DirectorySiteContactsResource extends js.Object {
 object DirectorySiteContactsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DirectorySiteContact]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltDirectorySiteIds, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DirectorySiteContactsListResponse]
-    ]
+    get: gapiDotClientDotDfareportingLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[DirectorySiteContact],
+    list: gapiDotClientDotDfareportingLib.Anon_AltDirectorySiteIds => gapiDotClientLib.gapiNs.clientNs.Request[DirectorySiteContactsListResponse]
   ): DirectorySiteContactsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[DirectorySiteContactsResource]
   }

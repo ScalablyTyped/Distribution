@@ -14,7 +14,7 @@ trait Query extends js.Object {
   def consistentRead(read: scala.Boolean): Query = js.native
   def descending(): Query = js.native
   def exec(): nodeLib.streamMod.Readable = js.native
-  def exec(callback: js.Function2[/* err */ nodeLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
+  def exec(callback: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
   def expressionAttributeNames(data: js.Any): Query = js.native
   def expressionAttributeValues(data: js.Any): Query = js.native
   def filter(keyName: java.lang.String): QueryFilterChain = js.native

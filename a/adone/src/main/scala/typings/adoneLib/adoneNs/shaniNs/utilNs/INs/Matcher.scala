@@ -18,8 +18,8 @@ trait Matcher extends js.Object {
 
 object Matcher {
   @scala.inline
-  def apply(and: js.Function1[Matcher, Matcher], or: js.Function1[Matcher, Matcher]): Matcher = {
-    val __obj = js.Dynamic.literal(and = and, or = or)
+  def apply(and: Matcher => Matcher, or: Matcher => Matcher): Matcher = {
+    val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), or = js.Any.fromFunction1(or))
   
     __obj.asInstanceOf[Matcher]
   }

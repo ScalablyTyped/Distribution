@@ -39,8 +39,8 @@ object DatePickerSettings {
   @scala.inline
   def apply(
     calendarWeeks: js.UndefOr[scala.Boolean] = js.undefined,
-    change: js.Function1[/* e */ js.Any, _] = null,
-    close: js.Function1[/* e */ js.Any, _] = null,
+    change: /* e */ js.Any => _ = null,
+    close: /* e */ js.Any => _ = null,
     disableDates: js.Array[_] | js.Function = null,
     disableDaysOfWeek: js.Array[scala.Double] = null,
     footer: js.UndefOr[scala.Boolean] = js.undefined,
@@ -53,8 +53,8 @@ object DatePickerSettings {
     maxDate: stdLib.Date | java.lang.String | js.Function = null,
     minDate: stdLib.Date | java.lang.String | js.Function = null,
     modal: js.UndefOr[scala.Boolean] = js.undefined,
-    open: js.Function1[/* e */ js.Any, _] = null,
-    select: js.Function2[/* e */ js.Any, /* type */ java.lang.String, _] = null,
+    open: /* e */ js.Any => _ = null,
+    select: (/* e */ js.Any, /* type */ java.lang.String) => _ = null,
     selectOtherMonths: js.UndefOr[scala.Boolean] = js.undefined,
     showOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
     showOtherMonths: js.UndefOr[scala.Boolean] = js.undefined,
@@ -67,8 +67,8 @@ object DatePickerSettings {
   ): DatePickerSettings = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(calendarWeeks)) __obj.updateDynamic("calendarWeeks")(calendarWeeks)
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (disableDates != null) __obj.updateDynamic("disableDates")(disableDates.asInstanceOf[js.Any])
     if (disableDaysOfWeek != null) __obj.updateDynamic("disableDaysOfWeek")(disableDaysOfWeek)
     if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer)
@@ -81,8 +81,8 @@ object DatePickerSettings {
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
     if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
-    if (open != null) __obj.updateDynamic("open")(open)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction2(select))
     if (!js.isUndefined(selectOtherMonths)) __obj.updateDynamic("selectOtherMonths")(selectOtherMonths)
     if (!js.isUndefined(showOnFocus)) __obj.updateDynamic("showOnFocus")(showOnFocus)
     if (!js.isUndefined(showOtherMonths)) __obj.updateDynamic("showOtherMonths")(showOtherMonths)

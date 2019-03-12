@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Rectangle protected () extends js.Object {
   var `Access.Rectangle_typekey`: Rectangle = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   var BackColor: scala.Double = js.native
   var BackShade: scala.Double = js.native
   var BackStyle: scala.Double = js.native

@@ -29,11 +29,11 @@ trait Variable
 object Variable {
   @scala.inline
   def apply(
-    equals: js.Function1[Term, scala.Boolean],
+    equals: Term => scala.Boolean,
     termType: rdfDashJsLib.rdfDashJsLibStrings.Variable,
     value: java.lang.String
   ): Variable = {
-    val __obj = js.Dynamic.literal(equals = equals, termType = termType, value = value)
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), termType = termType, value = value)
   
     __obj.asInstanceOf[Variable]
   }

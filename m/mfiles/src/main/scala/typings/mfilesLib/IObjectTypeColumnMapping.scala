@@ -19,7 +19,7 @@ trait IObjectTypeColumnMapping extends js.Object {
 object IObjectTypeColumnMapping {
   @scala.inline
   def apply(
-    Clone: js.Function0[IObjectTypeColumnMapping],
+    Clone: () => IObjectTypeColumnMapping,
     ObjectType: mfilesLib.MFilesNs.MFBuiltInObjectType | scala.Double,
     Ordinal: scala.Double,
     PartOfInsert: scala.Boolean,
@@ -28,7 +28,7 @@ object IObjectTypeColumnMapping {
     TargetPropertyDef: scala.Double,
     Type: scala.Double
   ): IObjectTypeColumnMapping = {
-    val __obj = js.Dynamic.literal(Clone = Clone, ObjectType = ObjectType.asInstanceOf[js.Any], Ordinal = Ordinal, PartOfInsert = PartOfInsert, PartOfUpdate = PartOfUpdate, SourceField = SourceField, TargetPropertyDef = TargetPropertyDef, Type = Type)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), ObjectType = ObjectType.asInstanceOf[js.Any], Ordinal = Ordinal, PartOfInsert = PartOfInsert, PartOfUpdate = PartOfUpdate, SourceField = SourceField, TargetPropertyDef = TargetPropertyDef, Type = Type)
   
     __obj.asInstanceOf[IObjectTypeColumnMapping]
   }

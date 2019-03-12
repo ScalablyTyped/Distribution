@@ -113,22 +113,22 @@ trait Pane extends js.Object {
   def onWillRemoveItem(callback: js.Function1[/* event */ PaneListItemShiftedEvent, scala.Unit]): Disposable = js.native
   /** Save the active item. */
   def saveActiveItem[T](): js.UndefOr[js.Promise[T]] = js.native
-  def saveActiveItem[T](nextAction: js.Function1[/* error */ js.UndefOr[nodeLib.Error], T]): js.UndefOr[js.Promise[T]] = js.native
+  def saveActiveItem[T](nextAction: js.Function1[/* error */ js.UndefOr[stdLib.Error], T]): js.UndefOr[js.Promise[T]] = js.native
   /**
     *  Prompt the user for a location and save the active item with the path
     *  they select.
     */
   def saveActiveItemAs[T](): js.UndefOr[js.Promise[T]] = js.native
-  def saveActiveItemAs[T](nextAction: js.Function1[/* error */ js.UndefOr[nodeLib.Error], T]): js.UndefOr[js.Promise[T]] = js.native
+  def saveActiveItemAs[T](nextAction: js.Function1[/* error */ js.UndefOr[stdLib.Error], T]): js.UndefOr[js.Promise[T]] = js.native
   /** Save the given item. */
   def saveItem[T](item: js.Object): js.UndefOr[js.Promise[T]] = js.native
-  def saveItem[T](item: js.Object, nextAction: js.Function1[/* error */ js.UndefOr[nodeLib.Error], T]): js.UndefOr[js.Promise[T]] = js.native
+  def saveItem[T](item: js.Object, nextAction: js.Function1[/* error */ js.UndefOr[stdLib.Error], T]): js.UndefOr[js.Promise[T]] = js.native
   /**
     *  Prompt the user for a location and save the active item with the path
     *  they select.
     */
   def saveItemAs[T](item: js.Object): js.UndefOr[js.Promise[T]] = js.native
-  def saveItemAs[T](item: js.Object, nextAction: js.Function1[/* error */ js.UndefOr[nodeLib.Error], T]): js.UndefOr[js.Promise[T]] = js.native
+  def saveItemAs[T](item: js.Object, nextAction: js.Function1[/* error */ js.UndefOr[stdLib.Error], T]): js.UndefOr[js.Promise[T]] = js.native
   /** Save all items. */
   def saveItems(): scala.Unit = js.native
   /** Creates a new pane below the receiver. */

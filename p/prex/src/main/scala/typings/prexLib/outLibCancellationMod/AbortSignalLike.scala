@@ -15,10 +15,10 @@ object AbortSignalLike {
   @scala.inline
   def apply(
     aborted: scala.Boolean,
-    addEventListener_abort: js.Function2[prexLib.prexLibStrings.abort, js.Function0[_], js.Any]
+    addEventListener_abort: (prexLib.prexLibStrings.abort, js.Function0[_]) => js.Any
   ): AbortSignalLike = {
     val __obj = js.Dynamic.literal(aborted = aborted)
-    __obj.updateDynamic("addEventListener")(addEventListener_abort)
+    __obj.updateDynamic("addEventListener")(js.Any.fromFunction2(addEventListener_abort))
     __obj.asInstanceOf[AbortSignalLike]
   }
 }

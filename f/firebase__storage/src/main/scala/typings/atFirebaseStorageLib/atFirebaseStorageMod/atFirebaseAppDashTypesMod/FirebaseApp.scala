@@ -17,13 +17,10 @@ trait FirebaseApp extends js.Object {
 object FirebaseApp {
   @scala.inline
   def apply(
-    storage: js.Function1[
-      /* storageBucket */ js.UndefOr[java.lang.String], 
-      atFirebaseStorageDashTypesLib.atFirebaseStorageDashTypesMod.FirebaseStorage
-    ] = null
+    storage: /* storageBucket */ js.UndefOr[java.lang.String] => atFirebaseStorageDashTypesLib.atFirebaseStorageDashTypesMod.FirebaseStorage = null
   ): FirebaseApp = {
     val __obj = js.Dynamic.literal()
-    if (storage != null) __obj.updateDynamic("storage")(storage)
+    if (storage != null) __obj.updateDynamic("storage")(js.Any.fromFunction1(storage))
     __obj.asInstanceOf[FirebaseApp]
   }
 }

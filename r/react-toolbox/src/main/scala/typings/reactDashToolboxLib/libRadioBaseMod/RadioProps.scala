@@ -22,7 +22,7 @@ trait RadioProps
   /**
     * Callback invoked on mouse down.
     */
-  var onMouseDown: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onMouseDown: js.UndefOr[js.Function] = js.undefined
 }
 
 object RadioProps {
@@ -34,7 +34,7 @@ object RadioProps {
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
-    onMouseDown: coreDashJsLib.Function = null
+    onMouseDown: js.Function = null
   ): RadioProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

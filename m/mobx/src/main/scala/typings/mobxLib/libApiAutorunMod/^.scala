@@ -9,10 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def autorun(view: js.Function1[/* r */ mobxLib.libCoreReactionMod.IReactionPublic, _]): mobxLib.libCoreReactionMod.IReactionDisposer = js.native
-  def autorun(
-    view: js.Function1[/* r */ mobxLib.libCoreReactionMod.IReactionPublic, _],
-    opts: mobxLib.libApiAutorunMod.IAutorunOptions
-  ): mobxLib.libCoreReactionMod.IReactionDisposer = js.native
+  def autorun(view: js.Function1[/* r */ mobxLib.libCoreReactionMod.IReactionPublic, _], opts: IAutorunOptions): mobxLib.libCoreReactionMod.IReactionDisposer = js.native
   def reaction[T](
     expression: js.Function1[/* r */ mobxLib.libCoreReactionMod.IReactionPublic, T],
     effect: js.Function2[/* arg */ T, /* r */ mobxLib.libCoreReactionMod.IReactionPublic, scala.Unit]
@@ -20,7 +17,7 @@ object ^ extends js.Object {
   def reaction[T](
     expression: js.Function1[/* r */ mobxLib.libCoreReactionMod.IReactionPublic, T],
     effect: js.Function2[/* arg */ T, /* r */ mobxLib.libCoreReactionMod.IReactionPublic, scala.Unit],
-    opts: mobxLib.libApiAutorunMod.IReactionOptions
+    opts: IReactionOptions
   ): mobxLib.libCoreReactionMod.IReactionDisposer = js.native
 }
 

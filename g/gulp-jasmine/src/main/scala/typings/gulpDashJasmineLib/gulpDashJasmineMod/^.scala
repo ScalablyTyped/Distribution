@@ -13,6 +13,6 @@ object ^ extends js.Object {
     * @param options Optional options for the execution of the Jasmine test
     */
   def apply(): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  def apply(options: gulpDashJasmineLib.gulpDashJasmineMod.JasmineOptions): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def apply(options: JasmineOptions): nodeLib.NodeJSNs.ReadWriteStream = js.native
 }
 

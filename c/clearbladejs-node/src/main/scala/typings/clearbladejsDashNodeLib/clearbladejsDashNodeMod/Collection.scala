@@ -21,16 +21,16 @@ object Collection {
   @scala.inline
   def apply(
     URI: java.lang.String,
-    create: js.Function2[Item, CbCallback, scala.Unit],
+    create: (Item, CbCallback) => scala.Unit,
     endpoint: java.lang.String,
-    fetch: js.Function2[QueryObj, CbCallback, scala.Unit],
-    remove: js.Function2[Query, CbCallback, scala.Unit],
+    fetch: (QueryObj, CbCallback) => scala.Unit,
+    remove: (Query, CbCallback) => scala.Unit,
     systemKey: java.lang.String,
     systemSecret: java.lang.String,
-    update: js.Function3[Query, js.Object, CbCallback, scala.Unit],
+    update: (Query, js.Object, CbCallback) => scala.Unit,
     user: APIUser
   ): Collection = {
-    val __obj = js.Dynamic.literal(URI = URI, create = create, endpoint = endpoint, fetch = fetch, remove = remove, systemKey = systemKey, systemSecret = systemSecret, update = update, user = user)
+    val __obj = js.Dynamic.literal(URI = URI, create = js.Any.fromFunction2(create), endpoint = endpoint, fetch = js.Any.fromFunction2(fetch), remove = js.Any.fromFunction2(remove), systemKey = systemKey, systemSecret = systemSecret, update = js.Any.fromFunction3(update), user = user)
   
     __obj.asInstanceOf[Collection]
   }

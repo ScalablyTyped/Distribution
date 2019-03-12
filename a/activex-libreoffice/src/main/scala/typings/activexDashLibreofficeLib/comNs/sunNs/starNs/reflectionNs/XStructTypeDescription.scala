@@ -28,46 +28,46 @@ trait XStructTypeDescription extends XCompoundTypeDescription {
     * Returns the type arguments of an instantiated polymorphic struct type.
     * @returns a sequence of all type arguments, in the correct order; for a plain struct type, or a polymorphic struct type template, an empty sequence is returned
     */
-  val TypeArguments: activexDashInteropLib.SafeArray[XTypeDescription]
+  val TypeArguments: stdLib.SafeArray[XTypeDescription]
   /**
     * Returns the type parameters of a polymorphic struct type template.
     * @returns a sequence of the names of all type parameters, in the correct order; for a plain struct type, or an instantiated polymorphic struct type, an emp
     */
-  val TypeParameters: activexDashInteropLib.SafeArray[java.lang.String]
+  val TypeParameters: stdLib.SafeArray[java.lang.String]
   /**
     * Returns the type arguments of an instantiated polymorphic struct type.
     * @returns a sequence of all type arguments, in the correct order; for a plain struct type, or a polymorphic struct type template, an empty sequence is returned
     */
-  def getTypeArguments(): activexDashInteropLib.SafeArray[XTypeDescription]
+  def getTypeArguments(): stdLib.SafeArray[XTypeDescription]
   /**
     * Returns the type parameters of a polymorphic struct type template.
     * @returns a sequence of the names of all type parameters, in the correct order; for a plain struct type, or an instantiated polymorphic struct type, an emp
     */
-  def getTypeParameters(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getTypeParameters(): stdLib.SafeArray[java.lang.String]
 }
 
 object XStructTypeDescription {
   @scala.inline
   def apply(
     BaseType: XTypeDescription,
-    MemberNames: activexDashInteropLib.SafeArray[java.lang.String],
-    MemberTypes: activexDashInteropLib.SafeArray[XTypeDescription],
+    MemberNames: stdLib.SafeArray[java.lang.String],
+    MemberTypes: stdLib.SafeArray[XTypeDescription],
     Name: java.lang.String,
-    TypeArguments: activexDashInteropLib.SafeArray[XTypeDescription],
+    TypeArguments: stdLib.SafeArray[XTypeDescription],
     TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
-    TypeParameters: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    getBaseType: js.Function0[XTypeDescription],
-    getMemberNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getMemberTypes: js.Function0[activexDashInteropLib.SafeArray[XTypeDescription]],
-    getName: js.Function0[java.lang.String],
-    getTypeArguments: js.Function0[activexDashInteropLib.SafeArray[XTypeDescription]],
-    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
-    getTypeParameters: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    TypeParameters: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    getBaseType: () => XTypeDescription,
+    getMemberNames: () => stdLib.SafeArray[java.lang.String],
+    getMemberTypes: () => stdLib.SafeArray[XTypeDescription],
+    getName: () => java.lang.String,
+    getTypeArguments: () => stdLib.SafeArray[XTypeDescription],
+    getTypeClass: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    getTypeParameters: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XStructTypeDescription = {
-    val __obj = js.Dynamic.literal(BaseType = BaseType, MemberNames = MemberNames, MemberTypes = MemberTypes, Name = Name, TypeArguments = TypeArguments, TypeClass = TypeClass, TypeParameters = TypeParameters, acquire = acquire, getBaseType = getBaseType, getMemberNames = getMemberNames, getMemberTypes = getMemberTypes, getName = getName, getTypeArguments = getTypeArguments, getTypeClass = getTypeClass, getTypeParameters = getTypeParameters, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(BaseType = BaseType, MemberNames = MemberNames, MemberTypes = MemberTypes, Name = Name, TypeArguments = TypeArguments, TypeClass = TypeClass, TypeParameters = TypeParameters, acquire = js.Any.fromFunction0(acquire), getBaseType = js.Any.fromFunction0(getBaseType), getMemberNames = js.Any.fromFunction0(getMemberNames), getMemberTypes = js.Any.fromFunction0(getMemberTypes), getName = js.Any.fromFunction0(getName), getTypeArguments = js.Any.fromFunction0(getTypeArguments), getTypeClass = js.Any.fromFunction0(getTypeClass), getTypeParameters = js.Any.fromFunction0(getTypeParameters), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XStructTypeDescription]
   }

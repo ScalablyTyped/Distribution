@@ -12,6 +12,6 @@ trait Anon_CallbackGuid extends js.Object {
     node: webgmeLib.CoreNs.Node,
     guid: webgmeLib.CoreNs.GUID,
     callback: webgmeLib.GmeCommonNs.ResultCallback[webgmeLib.CoreNs.DataObject]
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[stdLib.Error] = js.native
 }
 

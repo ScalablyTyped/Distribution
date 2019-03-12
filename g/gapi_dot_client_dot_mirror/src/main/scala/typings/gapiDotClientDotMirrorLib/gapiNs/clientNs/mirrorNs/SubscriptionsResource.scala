@@ -19,24 +19,12 @@ trait SubscriptionsResource extends js.Object {
 object SubscriptionsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotMirrorLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotMirrorLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
-    ],
-    list: js.Function1[
-      gapiDotClientDotMirrorLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SubscriptionsListResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotMirrorLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
-    ]
+    delete: gapiDotClientDotMirrorLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    insert: gapiDotClientDotMirrorLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Subscription],
+    list: gapiDotClientDotMirrorLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[SubscriptionsListResponse],
+    update: gapiDotClientDotMirrorLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
   ): SubscriptionsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[SubscriptionsResource]
   }

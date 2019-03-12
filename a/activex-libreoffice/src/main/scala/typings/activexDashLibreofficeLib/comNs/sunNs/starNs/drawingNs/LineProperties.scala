@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
   */
 trait LineProperties extends js.Object {
   /** This property defines the rendering of ends of thick lines */
-  var LineCap: LineCap
+  var LineCap: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.LineCap
   /** This property contains the line color. */
   var LineColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color
   /** This property contains the dash of the line. */
-  var LineDash: LineDash
+  var LineDash: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.LineDash
   /** This property contains the name of the dash of the line. */
   var LineDashName: java.lang.String
   /** This property contains the line end in the form of a poly polygon Bezier. */
@@ -32,7 +32,7 @@ trait LineProperties extends js.Object {
   /** This property contains the width of the line end polygon. */
   var LineEndWidth: scala.Double
   /** This property defines the rendering of joints between thick lines */
-  var LineJoint: LineJoint
+  var LineJoint: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.LineJoint
   /** This property contains the line start in the form of a poly polygon Bezier. */
   var LineStart: PolyPolygonBezierCoords
   /** If this property is `TRUE` , the line will start from the center of the polygon. */
@@ -46,7 +46,7 @@ trait LineProperties extends js.Object {
   /** This property contains the width of the line start polygon. */
   var LineStartWidth: scala.Double
   /** This property contains the type of the line. */
-  var LineStyle: LineStyle
+  var LineStyle: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.LineStyle
   /** This property contains the extent of transparency. */
   var LineTransparence: scala.Double
   /** This property contains the width of the line in 1/100th mm. */

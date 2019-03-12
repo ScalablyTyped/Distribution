@@ -11,6 +11,6 @@ trait Anon_FromIterableAny
   /**
     * Creates a stack and pushed all the values from the given iterable object
     */
-  def from[T](iterable: nodeLib.Iterable[T]): adoneLib.adoneNs.collectionNs.Stack[T] = js.native
+  def from[T](iterable: stdLib.Iterable[T]): adoneLib.adoneNs.collectionNs.Stack[T] = js.native
 }
 

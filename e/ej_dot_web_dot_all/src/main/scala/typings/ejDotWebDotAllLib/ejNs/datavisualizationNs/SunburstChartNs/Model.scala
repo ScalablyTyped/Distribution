@@ -168,17 +168,17 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    Click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
+    Click: /* e */ ClickEventArgs => scala.Unit = null,
     animationType: ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.Animation | java.lang.String = null,
     background: java.lang.String = null,
     border: Border = null,
-    dataLabelRendering: js.Function1[/* e */ DataLabelRenderingEventArgs, scala.Unit] = null,
+    dataLabelRendering: /* e */ DataLabelRenderingEventArgs => scala.Unit = null,
     dataLabelSettings: DataLabelSettings = null,
     dataSource: js.Any = null,
-    doubleClick: js.Function1[/* e */ DoubleClickEventArgs, scala.Unit] = null,
-    drillDownBack: js.Function1[/* e */ DrillDownBackEventArgs, scala.Unit] = null,
-    drillDownClick: js.Function1[/* e */ DrillDownClickEventArgs, scala.Unit] = null,
-    drillDownReset: js.Function1[/* e */ DrillDownResetEventArgs, scala.Unit] = null,
+    doubleClick: /* e */ DoubleClickEventArgs => scala.Unit = null,
+    drillDownBack: /* e */ DrillDownBackEventArgs => scala.Unit = null,
+    drillDownClick: /* e */ DrillDownClickEventArgs => scala.Unit = null,
+    drillDownReset: /* e */ DrillDownResetEventArgs => scala.Unit = null,
     enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
     endAngle: scala.Int | scala.Double = null,
     highlightSettings: HighlightSettings = null,
@@ -186,28 +186,28 @@ object Model {
     isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
     legend: Legend = null,
     levels: js.Array[Level] = null,
-    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
-    loaded: js.Function1[/* e */ LoadedEventArgs, scala.Unit] = null,
+    load: /* e */ LoadEventArgs => scala.Unit = null,
+    loaded: /* e */ LoadedEventArgs => scala.Unit = null,
     margin: Margin = null,
     opacity: scala.Int | scala.Double = null,
     palette: java.lang.String = null,
     parentNode: java.lang.String = null,
-    pointRegionClick: js.Function1[/* e */ PointRegionClickEventArgs, scala.Unit] = null,
-    pointRegionMouseMove: js.Function1[/* e */ PointRegionMouseMoveEventArgs, scala.Unit] = null,
+    pointRegionClick: /* e */ PointRegionClickEventArgs => scala.Unit = null,
+    pointRegionMouseMove: /* e */ PointRegionMouseMoveEventArgs => scala.Unit = null,
     points: Points = null,
-    preRender: js.Function1[/* e */ PreRenderEventArgs, scala.Unit] = null,
+    preRender: /* e */ PreRenderEventArgs => scala.Unit = null,
     radius: scala.Int | scala.Double = null,
-    rightClick: js.Function1[/* e */ RightClickEventArgs, scala.Unit] = null,
+    rightClick: /* e */ RightClickEventArgs => scala.Unit = null,
     segmentBorder: SegmentBorder = null,
-    segmentRendering: js.Function1[/* e */ SegmentRenderingEventArgs, scala.Unit] = null,
+    segmentRendering: /* e */ SegmentRenderingEventArgs => scala.Unit = null,
     selectionSettings: SelectionSettings = null,
     size: Size = null,
     startAngle: scala.Int | scala.Double = null,
     theme: ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstTheme | java.lang.String = null,
     title: Title = null,
-    titleRendering: js.Function1[/* e */ TitleRenderingEventArgs, scala.Unit] = null,
+    titleRendering: /* e */ TitleRenderingEventArgs => scala.Unit = null,
     tooltip: Tooltip = null,
-    tooltipInitialize: js.Function1[/* e */ TooltipInitializeEventArgs, scala.Unit] = null,
+    tooltipInitialize: /* e */ TooltipInitializeEventArgs => scala.Unit = null,
     valueMemberPath: java.lang.String = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     xName: java.lang.String = null,
@@ -215,17 +215,17 @@ object Model {
     zoomSettings: ZoomSettings = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (Click != null) __obj.updateDynamic("Click")(Click)
+    if (Click != null) __obj.updateDynamic("Click")(js.Any.fromFunction1(Click))
     if (animationType != null) __obj.updateDynamic("animationType")(animationType.asInstanceOf[js.Any])
     if (background != null) __obj.updateDynamic("background")(background)
     if (border != null) __obj.updateDynamic("border")(border)
-    if (dataLabelRendering != null) __obj.updateDynamic("dataLabelRendering")(dataLabelRendering)
+    if (dataLabelRendering != null) __obj.updateDynamic("dataLabelRendering")(js.Any.fromFunction1(dataLabelRendering))
     if (dataLabelSettings != null) __obj.updateDynamic("dataLabelSettings")(dataLabelSettings)
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (doubleClick != null) __obj.updateDynamic("doubleClick")(doubleClick)
-    if (drillDownBack != null) __obj.updateDynamic("drillDownBack")(drillDownBack)
-    if (drillDownClick != null) __obj.updateDynamic("drillDownClick")(drillDownClick)
-    if (drillDownReset != null) __obj.updateDynamic("drillDownReset")(drillDownReset)
+    if (doubleClick != null) __obj.updateDynamic("doubleClick")(js.Any.fromFunction1(doubleClick))
+    if (drillDownBack != null) __obj.updateDynamic("drillDownBack")(js.Any.fromFunction1(drillDownBack))
+    if (drillDownClick != null) __obj.updateDynamic("drillDownClick")(js.Any.fromFunction1(drillDownClick))
+    if (drillDownReset != null) __obj.updateDynamic("drillDownReset")(js.Any.fromFunction1(drillDownReset))
     if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
     if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
     if (highlightSettings != null) __obj.updateDynamic("highlightSettings")(highlightSettings)
@@ -233,28 +233,28 @@ object Model {
     if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
     if (legend != null) __obj.updateDynamic("legend")(legend)
     if (levels != null) __obj.updateDynamic("levels")(levels)
-    if (load != null) __obj.updateDynamic("load")(load)
-    if (loaded != null) __obj.updateDynamic("loaded")(loaded)
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
+    if (loaded != null) __obj.updateDynamic("loaded")(js.Any.fromFunction1(loaded))
     if (margin != null) __obj.updateDynamic("margin")(margin)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (palette != null) __obj.updateDynamic("palette")(palette)
     if (parentNode != null) __obj.updateDynamic("parentNode")(parentNode)
-    if (pointRegionClick != null) __obj.updateDynamic("pointRegionClick")(pointRegionClick)
-    if (pointRegionMouseMove != null) __obj.updateDynamic("pointRegionMouseMove")(pointRegionMouseMove)
+    if (pointRegionClick != null) __obj.updateDynamic("pointRegionClick")(js.Any.fromFunction1(pointRegionClick))
+    if (pointRegionMouseMove != null) __obj.updateDynamic("pointRegionMouseMove")(js.Any.fromFunction1(pointRegionMouseMove))
     if (points != null) __obj.updateDynamic("points")(points)
-    if (preRender != null) __obj.updateDynamic("preRender")(preRender)
+    if (preRender != null) __obj.updateDynamic("preRender")(js.Any.fromFunction1(preRender))
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (rightClick != null) __obj.updateDynamic("rightClick")(rightClick)
+    if (rightClick != null) __obj.updateDynamic("rightClick")(js.Any.fromFunction1(rightClick))
     if (segmentBorder != null) __obj.updateDynamic("segmentBorder")(segmentBorder)
-    if (segmentRendering != null) __obj.updateDynamic("segmentRendering")(segmentRendering)
+    if (segmentRendering != null) __obj.updateDynamic("segmentRendering")(js.Any.fromFunction1(segmentRendering))
     if (selectionSettings != null) __obj.updateDynamic("selectionSettings")(selectionSettings)
     if (size != null) __obj.updateDynamic("size")(size)
     if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
-    if (titleRendering != null) __obj.updateDynamic("titleRendering")(titleRendering)
+    if (titleRendering != null) __obj.updateDynamic("titleRendering")(js.Any.fromFunction1(titleRendering))
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
-    if (tooltipInitialize != null) __obj.updateDynamic("tooltipInitialize")(tooltipInitialize)
+    if (tooltipInitialize != null) __obj.updateDynamic("tooltipInitialize")(js.Any.fromFunction1(tooltipInitialize))
     if (valueMemberPath != null) __obj.updateDynamic("valueMemberPath")(valueMemberPath)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
     if (xName != null) __obj.updateDynamic("xName")(xName)

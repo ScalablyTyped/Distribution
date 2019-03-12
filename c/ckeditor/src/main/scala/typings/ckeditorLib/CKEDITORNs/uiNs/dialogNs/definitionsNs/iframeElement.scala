@@ -18,10 +18,10 @@ object iframeElement {
     height: java.lang.String,
     src: java.lang.String,
     width: java.lang.String,
-    onContentLoad: js.Function0[scala.Unit] = null
+    onContentLoad: () => scala.Unit = null
   ): iframeElement = {
     val __obj = js.Dynamic.literal(height = height, src = src, width = width)
-    if (onContentLoad != null) __obj.updateDynamic("onContentLoad")(onContentLoad)
+    if (onContentLoad != null) __obj.updateDynamic("onContentLoad")(js.Any.fromFunction0(onContentLoad))
     __obj.asInstanceOf[iframeElement]
   }
 }

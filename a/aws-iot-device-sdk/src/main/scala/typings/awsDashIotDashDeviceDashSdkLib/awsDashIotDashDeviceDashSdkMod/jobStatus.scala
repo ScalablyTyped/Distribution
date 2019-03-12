@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait jobStatus extends js.Object {
   var status: java.lang.String
-  var statusDetails: statusDetails
+  var statusDetails: awsDashIotDashDeviceDashSdkLib.awsDashIotDashDeviceDashSdkMod.statusDetails
 }
 
 object jobStatus {

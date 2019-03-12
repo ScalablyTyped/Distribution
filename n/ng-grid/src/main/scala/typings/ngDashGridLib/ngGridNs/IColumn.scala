@@ -33,7 +33,7 @@ trait IColumn extends js.Object {
   var sortDirection: java.lang.String
   var sortPriority: scala.Double
   var sortable: scala.Boolean
-  var sortingAlgorithm: angularLib.angularMod.Global.Function
+  var sortingAlgorithm: js.Function
   var visible: scala.Boolean
   var width: scala.Double
   def copy(): IColumn
@@ -59,17 +59,17 @@ object IColumn {
     cellFilter: js.Any,
     cellTemplate: java.lang.String,
     colDef: IColumnDef,
-    copy: js.Function0[IColumn],
+    copy: () => IColumn,
     cursor: java.lang.String,
     displayName: java.lang.String,
     enableCellEdit: scala.Boolean,
     field: java.lang.String,
-    gripClick: js.Function0[js.Any],
-    gripOnMouseDown: js.Function1[js.Any, js.Any],
-    gripOnMouseUp: js.Function1[js.Any, scala.Unit],
+    gripClick: () => js.Any,
+    gripOnMouseDown: js.Any => js.Any,
+    gripOnMouseUp: js.Any => scala.Unit,
     groupIndex: scala.Double,
     groupable: scala.Boolean,
-    groupedByClass: js.Function0[java.lang.String],
+    groupedByClass: () => java.lang.String,
     headerCellTemplate: java.lang.String,
     headerClass: java.lang.String,
     headerRowHeight: scala.Double,
@@ -78,25 +78,25 @@ object IColumn {
     isGroupedBy: scala.Boolean,
     maxWidth: scala.Double,
     minWidth: scala.Double,
-    noSortVisible: js.Function0[scala.Boolean],
-    onMouseMove: js.Function1[js.Any, scala.Unit],
+    noSortVisible: () => scala.Boolean,
+    onMouseMove: js.Any => scala.Unit,
     originalIndex: scala.Double,
     pinnable: scala.Boolean,
     pinned: scala.Boolean,
     resizable: scala.Boolean,
-    setVars: js.Function1[IColumn, scala.Unit],
-    showSortButtonDown: js.Function0[scala.Boolean],
-    showSortButtonUp: js.Function0[scala.Boolean],
-    sort: js.Function1[js.Any, scala.Boolean],
+    setVars: IColumn => scala.Unit,
+    showSortButtonDown: () => scala.Boolean,
+    showSortButtonUp: () => scala.Boolean,
+    sort: js.Any => scala.Boolean,
     sortDirection: java.lang.String,
     sortPriority: scala.Double,
     sortable: scala.Boolean,
-    sortingAlgorithm: angularLib.angularMod.Global.Function,
-    toggleVisible: js.Function0[scala.Unit],
+    sortingAlgorithm: js.Function,
+    toggleVisible: () => scala.Unit,
     visible: scala.Boolean,
     width: scala.Double
   ): IColumn = {
-    val __obj = js.Dynamic.literal(aggLabelFilter = aggLabelFilter, cellClass = cellClass, cellEditableCondition = cellEditableCondition, cellFilter = cellFilter, cellTemplate = cellTemplate, colDef = colDef, copy = copy, cursor = cursor, displayName = displayName, enableCellEdit = enableCellEdit, field = field, gripClick = gripClick, gripOnMouseDown = gripOnMouseDown, gripOnMouseUp = gripOnMouseUp, groupIndex = groupIndex, groupable = groupable, groupedByClass = groupedByClass, headerCellTemplate = headerCellTemplate, headerClass = headerClass, headerRowHeight = headerRowHeight, index = index, isAggCol = isAggCol, isGroupedBy = isGroupedBy, maxWidth = maxWidth, minWidth = minWidth, noSortVisible = noSortVisible, onMouseMove = onMouseMove, originalIndex = originalIndex, pinnable = pinnable, pinned = pinned, resizable = resizable, setVars = setVars, showSortButtonDown = showSortButtonDown, showSortButtonUp = showSortButtonUp, sort = sort, sortDirection = sortDirection, sortPriority = sortPriority, sortable = sortable, sortingAlgorithm = sortingAlgorithm, toggleVisible = toggleVisible, visible = visible, width = width)
+    val __obj = js.Dynamic.literal(aggLabelFilter = aggLabelFilter, cellClass = cellClass, cellEditableCondition = cellEditableCondition, cellFilter = cellFilter, cellTemplate = cellTemplate, colDef = colDef, copy = js.Any.fromFunction0(copy), cursor = cursor, displayName = displayName, enableCellEdit = enableCellEdit, field = field, gripClick = js.Any.fromFunction0(gripClick), gripOnMouseDown = js.Any.fromFunction1(gripOnMouseDown), gripOnMouseUp = js.Any.fromFunction1(gripOnMouseUp), groupIndex = groupIndex, groupable = groupable, groupedByClass = js.Any.fromFunction0(groupedByClass), headerCellTemplate = headerCellTemplate, headerClass = headerClass, headerRowHeight = headerRowHeight, index = index, isAggCol = isAggCol, isGroupedBy = isGroupedBy, maxWidth = maxWidth, minWidth = minWidth, noSortVisible = js.Any.fromFunction0(noSortVisible), onMouseMove = js.Any.fromFunction1(onMouseMove), originalIndex = originalIndex, pinnable = pinnable, pinned = pinned, resizable = resizable, setVars = js.Any.fromFunction1(setVars), showSortButtonDown = js.Any.fromFunction0(showSortButtonDown), showSortButtonUp = js.Any.fromFunction0(showSortButtonUp), sort = js.Any.fromFunction1(sort), sortDirection = sortDirection, sortPriority = sortPriority, sortable = sortable, sortingAlgorithm = sortingAlgorithm, toggleVisible = js.Any.fromFunction0(toggleVisible), visible = visible, width = width)
   
     __obj.asInstanceOf[IColumn]
   }

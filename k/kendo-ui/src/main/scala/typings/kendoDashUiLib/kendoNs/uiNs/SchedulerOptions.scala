@@ -64,19 +64,19 @@ trait SchedulerOptions extends js.Object {
 object SchedulerOptions {
   @scala.inline
   def apply(
-    add: js.Function1[/* e */ SchedulerAddEvent, scala.Unit] = null,
+    add: /* e */ SchedulerAddEvent => scala.Unit = null,
     allDayEventTemplate: java.lang.String | js.Function = null,
     allDaySlot: js.UndefOr[scala.Boolean] = js.undefined,
     autoBind: js.UndefOr[scala.Boolean] = js.undefined,
-    cancel: js.Function1[/* e */ SchedulerCancelEvent, scala.Unit] = null,
-    change: js.Function1[/* e */ SchedulerChangeEvent, scala.Unit] = null,
+    cancel: /* e */ SchedulerCancelEvent => scala.Unit = null,
+    change: /* e */ SchedulerChangeEvent => scala.Unit = null,
     currentTimeMarker: scala.Boolean | SchedulerCurrentTimeMarker = null,
-    dataBinding: js.Function1[/* e */ SchedulerDataBindingEvent, scala.Unit] = null,
-    dataBound: js.Function1[/* e */ SchedulerDataBoundEvent, scala.Unit] = null,
+    dataBinding: /* e */ SchedulerDataBindingEvent => scala.Unit = null,
+    dataBound: /* e */ SchedulerDataBoundEvent => scala.Unit = null,
     dataSource: js.Any | kendoDashUiLib.kendoNs.dataNs.SchedulerDataSource = null,
     date: stdLib.Date = null,
     dateHeaderTemplate: java.lang.String | js.Function = null,
-    edit: js.Function1[/* e */ SchedulerEditEvent, scala.Unit] = null,
+    edit: /* e */ SchedulerEditEvent => scala.Unit = null,
     editable: scala.Boolean | SchedulerEditable = null,
     endTime: stdLib.Date = null,
     eventTemplate: java.lang.String | js.Function = null,
@@ -92,19 +92,19 @@ object SchedulerOptions {
     minorTickCount: scala.Int | scala.Double = null,
     minorTimeHeaderTemplate: java.lang.String | js.Function = null,
     mobile: scala.Boolean | java.lang.String = null,
-    move: js.Function1[/* e */ SchedulerMoveEvent, scala.Unit] = null,
-    moveEnd: js.Function1[/* e */ SchedulerMoveEndEvent, scala.Unit] = null,
-    moveStart: js.Function1[/* e */ SchedulerMoveStartEvent, scala.Unit] = null,
+    move: /* e */ SchedulerMoveEvent => scala.Unit = null,
+    moveEnd: /* e */ SchedulerMoveEndEvent => scala.Unit = null,
+    moveStart: /* e */ SchedulerMoveStartEvent => scala.Unit = null,
     name: java.lang.String = null,
-    navigate: js.Function1[/* e */ SchedulerNavigateEvent, scala.Unit] = null,
+    navigate: /* e */ SchedulerNavigateEvent => scala.Unit = null,
     pdf: SchedulerPdf = null,
-    pdfExport: js.Function1[/* e */ SchedulerPdfExportEvent, scala.Unit] = null,
-    remove: js.Function1[/* e */ SchedulerRemoveEvent, scala.Unit] = null,
-    resize: js.Function1[/* e */ SchedulerResizeEvent, scala.Unit] = null,
-    resizeEnd: js.Function1[/* e */ SchedulerResizeEndEvent, scala.Unit] = null,
-    resizeStart: js.Function1[/* e */ SchedulerResizeStartEvent, scala.Unit] = null,
+    pdfExport: /* e */ SchedulerPdfExportEvent => scala.Unit = null,
+    remove: /* e */ SchedulerRemoveEvent => scala.Unit = null,
+    resize: /* e */ SchedulerResizeEvent => scala.Unit = null,
+    resizeEnd: /* e */ SchedulerResizeEndEvent => scala.Unit = null,
+    resizeStart: /* e */ SchedulerResizeStartEvent => scala.Unit = null,
     resources: js.Array[SchedulerResource] = null,
-    save: js.Function1[/* e */ SchedulerSaveEvent, scala.Unit] = null,
+    save: /* e */ SchedulerSaveEvent => scala.Unit = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
     showWorkHours: js.UndefOr[scala.Boolean] = js.undefined,
     snap: js.UndefOr[scala.Boolean] = js.undefined,
@@ -119,19 +119,19 @@ object SchedulerOptions {
     workWeekStart: scala.Int | scala.Double = null
   ): SchedulerOptions = {
     val __obj = js.Dynamic.literal()
-    if (add != null) __obj.updateDynamic("add")(add)
+    if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction1(add))
     if (allDayEventTemplate != null) __obj.updateDynamic("allDayEventTemplate")(allDayEventTemplate.asInstanceOf[js.Any])
     if (!js.isUndefined(allDaySlot)) __obj.updateDynamic("allDaySlot")(allDaySlot)
     if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (currentTimeMarker != null) __obj.updateDynamic("currentTimeMarker")(currentTimeMarker.asInstanceOf[js.Any])
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1(dataBinding))
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date)
     if (dateHeaderTemplate != null) __obj.updateDynamic("dateHeaderTemplate")(dateHeaderTemplate.asInstanceOf[js.Any])
-    if (edit != null) __obj.updateDynamic("edit")(edit)
+    if (edit != null) __obj.updateDynamic("edit")(js.Any.fromFunction1(edit))
     if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime)
     if (eventTemplate != null) __obj.updateDynamic("eventTemplate")(eventTemplate.asInstanceOf[js.Any])
@@ -147,19 +147,19 @@ object SchedulerOptions {
     if (minorTickCount != null) __obj.updateDynamic("minorTickCount")(minorTickCount.asInstanceOf[js.Any])
     if (minorTimeHeaderTemplate != null) __obj.updateDynamic("minorTimeHeaderTemplate")(minorTimeHeaderTemplate.asInstanceOf[js.Any])
     if (mobile != null) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
-    if (move != null) __obj.updateDynamic("move")(move)
-    if (moveEnd != null) __obj.updateDynamic("moveEnd")(moveEnd)
-    if (moveStart != null) __obj.updateDynamic("moveStart")(moveStart)
+    if (move != null) __obj.updateDynamic("move")(js.Any.fromFunction1(move))
+    if (moveEnd != null) __obj.updateDynamic("moveEnd")(js.Any.fromFunction1(moveEnd))
+    if (moveStart != null) __obj.updateDynamic("moveStart")(js.Any.fromFunction1(moveStart))
     if (name != null) __obj.updateDynamic("name")(name)
-    if (navigate != null) __obj.updateDynamic("navigate")(navigate)
+    if (navigate != null) __obj.updateDynamic("navigate")(js.Any.fromFunction1(navigate))
     if (pdf != null) __obj.updateDynamic("pdf")(pdf)
-    if (pdfExport != null) __obj.updateDynamic("pdfExport")(pdfExport)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (resize != null) __obj.updateDynamic("resize")(resize)
-    if (resizeEnd != null) __obj.updateDynamic("resizeEnd")(resizeEnd)
-    if (resizeStart != null) __obj.updateDynamic("resizeStart")(resizeStart)
+    if (pdfExport != null) __obj.updateDynamic("pdfExport")(js.Any.fromFunction1(pdfExport))
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
+    if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction1(resize))
+    if (resizeEnd != null) __obj.updateDynamic("resizeEnd")(js.Any.fromFunction1(resizeEnd))
+    if (resizeStart != null) __obj.updateDynamic("resizeStart")(js.Any.fromFunction1(resizeStart))
     if (resources != null) __obj.updateDynamic("resources")(resources)
-    if (save != null) __obj.updateDynamic("save")(save)
+    if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction1(save))
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
     if (!js.isUndefined(showWorkHours)) __obj.updateDynamic("showWorkHours")(showWorkHours)
     if (!js.isUndefined(snap)) __obj.updateDynamic("snap")(snap)

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def close(): scala.Unit = js.native
-  def currentUser(): netlifyDashIdentityDashWidgetLib.netlifyDashIdentityDashWidgetMod.User | scala.Null = js.native
+  def currentUser(): User | scala.Null = js.native
   def init(): scala.Unit = js.native
-  def init(opts: netlifyDashIdentityDashWidgetLib.netlifyDashIdentityDashWidgetMod.InitOptions): scala.Unit = js.native
+  def init(opts: InitOptions): scala.Unit = js.native
   def logout(): js.UndefOr[js.Promise[scala.Unit]] = js.native
   @JSName("on")
   def on_close(
@@ -26,18 +26,12 @@ object ^ extends js.Object {
   @JSName("on")
   def on_init(
     event: netlifyDashIdentityDashWidgetLib.netlifyDashIdentityDashWidgetLibStrings.init,
-    cb: js.Function1[
-      /* user */ netlifyDashIdentityDashWidgetLib.netlifyDashIdentityDashWidgetMod.User | scala.Null, 
-      scala.Unit
-    ]
+    cb: js.Function1[/* user */ User | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
   def on_login(
     event: netlifyDashIdentityDashWidgetLib.netlifyDashIdentityDashWidgetLibStrings.login,
-    cb: js.Function1[
-      /* user */ netlifyDashIdentityDashWidgetLib.netlifyDashIdentityDashWidgetMod.User, 
-      scala.Unit
-    ]
+    cb: js.Function1[/* user */ User, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
   def on_logout(

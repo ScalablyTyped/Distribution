@@ -33,7 +33,7 @@ trait TinySliderSettings extends CommonOptions {
     * @defaultValue false
     */
   var autoplayButton: js.UndefOr[
-    reactLib.HTMLElement | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false`
+    stdLib.HTMLElement | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false`
   ] = js.undefined
   /**
     * Output autoplayButton markup when autoplay is true but a customized autoplayButton is not provided.
@@ -60,7 +60,7 @@ trait TinySliderSettings extends CommonOptions {
     * @defaultValue false
     */
   var controlsContainer: js.UndefOr[
-    reactLib.HTMLElement | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false`
+    stdLib.HTMLElement | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false`
   ] = js.undefined
   /**
     * Indicate whether the slider will be frozen (controls, nav, autoplay and other functions will stop work) when all slides can be displayed in one page.
@@ -96,7 +96,7 @@ trait TinySliderSettings extends CommonOptions {
     * @defaultValue false
     */
   var navContainer: js.UndefOr[
-    reactLib.HTMLElement | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false`
+    stdLib.HTMLElement | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false`
   ] = js.undefined
   /**
     * Difine the relationship between nested sliders.
@@ -145,7 +145,7 @@ object TinySliderSettings {
     arrowKeys: js.UndefOr[scala.Boolean] = js.undefined,
     autoHeight: js.UndefOr[scala.Boolean] = js.undefined,
     autoplay: js.UndefOr[scala.Boolean] = js.undefined,
-    autoplayButton: reactLib.HTMLElement | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false` = null,
+    autoplayButton: stdLib.HTMLElement | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false` = null,
     autoplayButtonOutput: js.UndefOr[scala.Boolean] = js.undefined,
     autoplayDirection: tinyDashSliderDashReactLib.tinyDashSliderDashReactLibStrings.forward | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibStrings.backward = null,
     autoplayHoverPause: js.UndefOr[scala.Boolean] = js.undefined,
@@ -154,7 +154,7 @@ object TinySliderSettings {
     autoplayTimeout: scala.Int | scala.Double = null,
     axis: tinyDashSliderDashReactLib.tinyDashSliderDashReactLibStrings.horizontal | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibStrings.vertical = null,
     controls: js.UndefOr[scala.Boolean] = js.undefined,
-    controlsContainer: reactLib.HTMLElement | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false` = null,
+    controlsContainer: stdLib.HTMLElement | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false` = null,
     controlsText: js.Array[java.lang.String] = null,
     disable: js.UndefOr[scala.Boolean] = js.undefined,
     edgePadding: scala.Int | scala.Double = null,
@@ -168,11 +168,9 @@ object TinySliderSettings {
     mouseDrag: js.UndefOr[scala.Boolean] = js.undefined,
     nav: js.UndefOr[scala.Boolean] = js.undefined,
     navAsThumbnails: js.UndefOr[scala.Boolean] = js.undefined,
-    navContainer: reactLib.HTMLElement | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false` = null,
+    navContainer: stdLib.HTMLElement | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false` = null,
     nested: tinyDashSliderDashReactLib.tinyDashSliderDashReactLibStrings.inner | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibStrings.outer | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false` = null,
-    onInit: js.Function0[
-      scala.Unit | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false`
-    ] = null,
+    onInit: () => scala.Unit | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false` = null,
     responsive: ResponsiveOptions | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false` = null,
     rewind: js.UndefOr[scala.Boolean] = js.undefined,
     slideBy: scala.Double | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibStrings.page = null,
@@ -214,7 +212,7 @@ object TinySliderSettings {
     if (!js.isUndefined(navAsThumbnails)) __obj.updateDynamic("navAsThumbnails")(navAsThumbnails)
     if (navContainer != null) __obj.updateDynamic("navContainer")(navContainer.asInstanceOf[js.Any])
     if (nested != null) __obj.updateDynamic("nested")(nested.asInstanceOf[js.Any])
-    if (onInit != null) __obj.updateDynamic("onInit")(onInit)
+    if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction0(onInit))
     if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
     if (!js.isUndefined(rewind)) __obj.updateDynamic("rewind")(rewind)
     if (slideBy != null) __obj.updateDynamic("slideBy")(slideBy.asInstanceOf[js.Any])

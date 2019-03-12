@@ -19,24 +19,12 @@ trait RegionCommitmentsResource extends js.Object {
 object RegionCommitmentsResource {
   @scala.inline
   def apply(
-    aggregatedList: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CommitmentAggregatedList]
-    ],
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltCommitment, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Commitment]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CommitmentList]
-    ]
+    aggregatedList: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[CommitmentAggregatedList],
+    get: gapiDotClientDotComputeLib.Anon_AltCommitment => gapiDotClientLib.gapiNs.clientNs.Request[Commitment],
+    insert: gapiDotClientDotComputeLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotComputeLib.Anon_AltFieldsFilter => gapiDotClientLib.gapiNs.clientNs.Request[CommitmentList]
   ): RegionCommitmentsResource = {
-    val __obj = js.Dynamic.literal(aggregatedList = aggregatedList, get = get, insert = insert, list = list)
+    val __obj = js.Dynamic.literal(aggregatedList = js.Any.fromFunction1(aggregatedList), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[RegionCommitmentsResource]
   }

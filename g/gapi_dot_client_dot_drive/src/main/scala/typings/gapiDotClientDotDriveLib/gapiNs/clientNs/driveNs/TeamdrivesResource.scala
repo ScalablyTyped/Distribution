@@ -21,28 +21,13 @@ trait TeamdrivesResource extends js.Object {
 object TeamdrivesResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TeamDrive]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TeamDrive]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltFieldsKeyOauthtokenPageSize, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TeamDriveList]
-    ],
-    update: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TeamDrive]
-    ]
+    create: gapiDotClientDotDriveLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[TeamDrive],
+    delete: gapiDotClientDotDriveLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotDriveLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[TeamDrive],
+    list: gapiDotClientDotDriveLib.Anon_AltFieldsKeyOauthtokenPageSize => gapiDotClientLib.gapiNs.clientNs.Request[TeamDriveList],
+    update: gapiDotClientDotDriveLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[TeamDrive]
   ): TeamdrivesResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, update = update)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[TeamdrivesResource]
   }

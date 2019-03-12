@@ -17,10 +17,10 @@ trait Topic[T] extends Stream[T] {
 object Topic {
   @scala.inline
   def apply[T](
-    publish: js.Function1[T, js.Promise[scala.Unit]],
-    subscribe: js.Function2[java.lang.String, js.Function1[/* item */ T, js.Promise[scala.Unit]], scala.Unit]
+    publish: T => js.Promise[scala.Unit],
+    subscribe: (java.lang.String, js.Function1[/* item */ T, js.Promise[scala.Unit]]) => scala.Unit
   ): Topic[T] = {
-    val __obj = js.Dynamic.literal(publish = publish, subscribe = subscribe)
+    val __obj = js.Dynamic.literal(publish = js.Any.fromFunction1(publish), subscribe = js.Any.fromFunction2(subscribe))
   
     __obj.asInstanceOf[Topic[T]]
   }

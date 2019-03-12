@@ -74,35 +74,17 @@ trait StepsResource extends js.Object {
 object StepsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Step]
-    ],
-    get: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Step]
-    ],
-    getPerfMetricsSummary: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PerfMetricsSummary]
-    ],
-    list: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPageSize, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListStepsResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrintProjectId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Step]
-    ],
+    create: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Step],
+    get: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields => gapiDotClientLib.gapiNs.clientNs.Request[Step],
+    getPerfMetricsSummary: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields => gapiDotClientLib.gapiNs.clientNs.Request[PerfMetricsSummary],
+    list: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPageSize => gapiDotClientLib.gapiNs.clientNs.Request[ListStepsResponse],
+    patch: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrintProjectId => gapiDotClientLib.gapiNs.clientNs.Request[Step],
     perfMetricsSummary: PerfMetricsSummaryResource,
     perfSampleSeries: PerfSampleSeriesResource,
-    publishXunitXmlFiles: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Step]
-    ],
+    publishXunitXmlFiles: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields => gapiDotClientLib.gapiNs.clientNs.Request[Step],
     thumbnails: ThumbnailsResource
   ): StepsResource = {
-    val __obj = js.Dynamic.literal(create = create, get = get, getPerfMetricsSummary = getPerfMetricsSummary, list = list, patch = patch, perfMetricsSummary = perfMetricsSummary, perfSampleSeries = perfSampleSeries, publishXunitXmlFiles = publishXunitXmlFiles, thumbnails = thumbnails)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), getPerfMetricsSummary = js.Any.fromFunction1(getPerfMetricsSummary), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), perfMetricsSummary = perfMetricsSummary, perfSampleSeries = perfSampleSeries, publishXunitXmlFiles = js.Any.fromFunction1(publishXunitXmlFiles), thumbnails = thumbnails)
   
     __obj.asInstanceOf[StepsResource]
   }

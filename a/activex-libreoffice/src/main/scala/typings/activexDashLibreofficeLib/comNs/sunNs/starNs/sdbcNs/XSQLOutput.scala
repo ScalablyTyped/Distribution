@@ -148,31 +148,31 @@ trait XSQLOutput
 object XSQLOutput {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    writeArray: js.Function1[XArray, scala.Unit],
-    writeBinaryStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Unit],
-    writeBlob: js.Function1[XBlob, scala.Unit],
-    writeBoolean: js.Function1[scala.Boolean, scala.Unit],
-    writeByte: js.Function1[scala.Double, scala.Unit],
-    writeBytes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
-    writeCharacterStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Unit],
-    writeClob: js.Function1[XClob, scala.Unit],
-    writeDate: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date, scala.Unit],
-    writeDouble: js.Function1[scala.Double, scala.Unit],
-    writeFloat: js.Function1[scala.Double, scala.Unit],
-    writeInt: js.Function1[scala.Double, scala.Unit],
-    writeLong: js.Function1[scala.Double, scala.Unit],
-    writeObject: js.Function1[XSQLData, scala.Unit],
-    writeRef: js.Function1[XRef, scala.Unit],
-    writeShort: js.Function1[scala.Double, scala.Unit],
-    writeString: js.Function1[java.lang.String, scala.Unit],
-    writeStruct: js.Function1[XStruct, scala.Unit],
-    writeTime: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit],
-    writeTimestamp: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime, scala.Unit]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    writeArray: XArray => scala.Unit,
+    writeBinaryStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream => scala.Unit,
+    writeBlob: XBlob => scala.Unit,
+    writeBoolean: scala.Boolean => scala.Unit,
+    writeByte: scala.Double => scala.Unit,
+    writeBytes: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => scala.Unit,
+    writeCharacterStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream => scala.Unit,
+    writeClob: XClob => scala.Unit,
+    writeDate: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date => scala.Unit,
+    writeDouble: scala.Double => scala.Unit,
+    writeFloat: scala.Double => scala.Unit,
+    writeInt: scala.Double => scala.Unit,
+    writeLong: scala.Double => scala.Unit,
+    writeObject: XSQLData => scala.Unit,
+    writeRef: XRef => scala.Unit,
+    writeShort: scala.Double => scala.Unit,
+    writeString: java.lang.String => scala.Unit,
+    writeStruct: XStruct => scala.Unit,
+    writeTime: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time => scala.Unit,
+    writeTimestamp: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime => scala.Unit
   ): XSQLOutput = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, writeArray = writeArray, writeBinaryStream = writeBinaryStream, writeBlob = writeBlob, writeBoolean = writeBoolean, writeByte = writeByte, writeBytes = writeBytes, writeCharacterStream = writeCharacterStream, writeClob = writeClob, writeDate = writeDate, writeDouble = writeDouble, writeFloat = writeFloat, writeInt = writeInt, writeLong = writeLong, writeObject = writeObject, writeRef = writeRef, writeShort = writeShort, writeString = writeString, writeStruct = writeStruct, writeTime = writeTime, writeTimestamp = writeTimestamp)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), writeArray = js.Any.fromFunction1(writeArray), writeBinaryStream = js.Any.fromFunction1(writeBinaryStream), writeBlob = js.Any.fromFunction1(writeBlob), writeBoolean = js.Any.fromFunction1(writeBoolean), writeByte = js.Any.fromFunction1(writeByte), writeBytes = js.Any.fromFunction1(writeBytes), writeCharacterStream = js.Any.fromFunction1(writeCharacterStream), writeClob = js.Any.fromFunction1(writeClob), writeDate = js.Any.fromFunction1(writeDate), writeDouble = js.Any.fromFunction1(writeDouble), writeFloat = js.Any.fromFunction1(writeFloat), writeInt = js.Any.fromFunction1(writeInt), writeLong = js.Any.fromFunction1(writeLong), writeObject = js.Any.fromFunction1(writeObject), writeRef = js.Any.fromFunction1(writeRef), writeShort = js.Any.fromFunction1(writeShort), writeString = js.Any.fromFunction1(writeString), writeStruct = js.Any.fromFunction1(writeStruct), writeTime = js.Any.fromFunction1(writeTime), writeTimestamp = js.Any.fromFunction1(writeTimestamp))
   
     __obj.asInstanceOf[XSQLOutput]
   }

@@ -27,12 +27,12 @@ object Anon_Component {
         reactDashRadioDashGroupLib.reactDashRadioDashGroupLibStrings.onChange | reactDashRadioDashGroupLib.reactDashRadioDashGroupLibStrings.role
       ]
     ] = null,
-    onChange: js.Function1[/* value */ js.Any, scala.Unit] = null,
+    onChange: /* value */ js.Any => scala.Unit = null,
     selectedValue: js.Any = null
   ): Anon_Component = {
     val __obj = js.Dynamic.literal()
     if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (selectedValue != null) __obj.updateDynamic("selectedValue")(selectedValue)
     __obj.asInstanceOf[Anon_Component]
   }

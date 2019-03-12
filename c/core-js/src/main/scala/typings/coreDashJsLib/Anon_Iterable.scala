@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Iterable extends js.Object {
-  def apply[T](iterable: nodeLib.Iterable[T]): nodeLib.Iterator[T] = js.native
+  def apply[T](iterable: stdLib.Iterable[T]): stdLib.Iterator[T] = js.native
 }
 

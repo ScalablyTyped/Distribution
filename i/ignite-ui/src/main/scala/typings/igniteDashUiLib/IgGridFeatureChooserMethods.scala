@@ -50,17 +50,17 @@ trait IgGridFeatureChooserMethods extends js.Object {
 object IgGridFeatureChooserMethods {
   @scala.inline
   def apply(
-    changeGlobalLanguage: js.Function0[scala.Unit],
-    changeGlobalRegional: js.Function0[scala.Unit],
-    changeLocale: js.Function0[scala.Unit],
-    destroy: js.Function2[js.Object, js.Object, scala.Unit],
-    getDropDownByColumnKey: js.Function1[java.lang.String, scala.Unit],
-    hideDropDown: js.Function1[java.lang.String, scala.Unit],
-    shouldShowFeatureIcon: js.Function1[js.Object, scala.Unit],
-    showDropDown: js.Function1[java.lang.String, scala.Unit],
-    toggleDropDown: js.Function1[java.lang.String, scala.Unit]
+    changeGlobalLanguage: () => scala.Unit,
+    changeGlobalRegional: () => scala.Unit,
+    changeLocale: () => scala.Unit,
+    destroy: (js.Object, js.Object) => scala.Unit,
+    getDropDownByColumnKey: java.lang.String => scala.Unit,
+    hideDropDown: java.lang.String => scala.Unit,
+    shouldShowFeatureIcon: js.Object => scala.Unit,
+    showDropDown: java.lang.String => scala.Unit,
+    toggleDropDown: java.lang.String => scala.Unit
   ): IgGridFeatureChooserMethods = {
-    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, getDropDownByColumnKey = getDropDownByColumnKey, hideDropDown = hideDropDown, shouldShowFeatureIcon = shouldShowFeatureIcon, showDropDown = showDropDown, toggleDropDown = toggleDropDown)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = js.Any.fromFunction0(changeGlobalLanguage), changeGlobalRegional = js.Any.fromFunction0(changeGlobalRegional), changeLocale = js.Any.fromFunction0(changeLocale), destroy = js.Any.fromFunction2(destroy), getDropDownByColumnKey = js.Any.fromFunction1(getDropDownByColumnKey), hideDropDown = js.Any.fromFunction1(hideDropDown), shouldShowFeatureIcon = js.Any.fromFunction1(shouldShowFeatureIcon), showDropDown = js.Any.fromFunction1(showDropDown), toggleDropDown = js.Any.fromFunction1(toggleDropDown))
   
     __obj.asInstanceOf[IgGridFeatureChooserMethods]
   }

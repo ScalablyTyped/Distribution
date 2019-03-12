@@ -47,14 +47,14 @@ object XDictionaryEntry {
   def apply(
     DictionaryWord: java.lang.String,
     ReplacementText: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getDictionaryWord: js.Function0[java.lang.String],
-    getReplacementText: js.Function0[java.lang.String],
-    isNegative: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDictionaryWord: () => java.lang.String,
+    getReplacementText: () => java.lang.String,
+    isNegative: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDictionaryEntry = {
-    val __obj = js.Dynamic.literal(DictionaryWord = DictionaryWord, ReplacementText = ReplacementText, acquire = acquire, getDictionaryWord = getDictionaryWord, getReplacementText = getReplacementText, isNegative = isNegative, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(DictionaryWord = DictionaryWord, ReplacementText = ReplacementText, acquire = js.Any.fromFunction0(acquire), getDictionaryWord = js.Any.fromFunction0(getDictionaryWord), getReplacementText = js.Any.fromFunction0(getReplacementText), isNegative = js.Any.fromFunction0(isNegative), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDictionaryEntry]
   }

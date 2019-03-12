@@ -52,7 +52,7 @@ object TranslateNs extends js.Object {
     /**
       * The data format of the custom terminology being retrieved, either CSV or TMX.
       */
-    var TerminologyDataFormat: TerminologyDataFormat
+    var TerminologyDataFormat: awsDashSdkLib.clientsTranslateMod.TranslateNs.TerminologyDataFormat
   }
   
   trait GetTerminologyResponse extends js.Object {
@@ -78,7 +78,7 @@ object TranslateNs extends js.Object {
     /**
       * The merge strategy of the custom terminology being imported. Currently, only the OVERWRITE merge strategy is supported. In this case, the imported terminology will overwrite an existing terminology of the same name.
       */
-    var MergeStrategy: MergeStrategy
+    var MergeStrategy: awsDashSdkLib.clientsTranslateMod.TranslateNs.MergeStrategy
     /**
       * The name of the custom terminology being imported.
       */
@@ -86,7 +86,7 @@ object TranslateNs extends js.Object {
     /**
       * The terminology data for the custom terminology being imported.
       */
-    var TerminologyData: TerminologyData
+    var TerminologyData: awsDashSdkLib.clientsTranslateMod.TranslateNs.TerminologyData
   }
   
   trait ImportTerminologyResponse extends js.Object {

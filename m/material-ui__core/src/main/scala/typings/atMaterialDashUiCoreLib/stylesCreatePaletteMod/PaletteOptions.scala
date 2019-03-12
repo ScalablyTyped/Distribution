@@ -30,7 +30,7 @@ object PaletteOptions {
     contrastThreshold: scala.Int | scala.Double = null,
     divider: java.lang.String = null,
     error: PaletteColorOptions = null,
-    getContrastText: js.Function1[/* background */ java.lang.String, java.lang.String] = null,
+    getContrastText: /* background */ java.lang.String => java.lang.String = null,
     grey: ColorPartial = null,
     primary: PaletteColorOptions = null,
     secondary: PaletteColorOptions = null,
@@ -45,7 +45,7 @@ object PaletteOptions {
     if (contrastThreshold != null) __obj.updateDynamic("contrastThreshold")(contrastThreshold.asInstanceOf[js.Any])
     if (divider != null) __obj.updateDynamic("divider")(divider)
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (getContrastText != null) __obj.updateDynamic("getContrastText")(getContrastText)
+    if (getContrastText != null) __obj.updateDynamic("getContrastText")(js.Any.fromFunction1(getContrastText))
     if (grey != null) __obj.updateDynamic("grey")(grey)
     if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
     if (secondary != null) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])

@@ -21,28 +21,13 @@ trait SmimeInfoResource extends js.Object {
 object SmimeInfoResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFieldsIdKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFieldsIdKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SmimeInfo]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SmimeInfo]
-    ],
-    list: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListSmimeInfoResponse]
-    ],
-    setDefault: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFieldsIdKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ]
+    delete: gapiDotClientDotGmailLib.Anon_AltFieldsIdKey => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotGmailLib.Anon_AltFieldsIdKey => gapiDotClientLib.gapiNs.clientNs.Request[SmimeInfo],
+    insert: gapiDotClientDotGmailLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[SmimeInfo],
+    list: gapiDotClientDotGmailLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[ListSmimeInfoResponse],
+    setDefault: gapiDotClientDotGmailLib.Anon_AltFieldsIdKey => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   ): SmimeInfoResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, setDefault = setDefault)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), setDefault = js.Any.fromFunction1(setDefault))
   
     __obj.asInstanceOf[SmimeInfoResource]
   }

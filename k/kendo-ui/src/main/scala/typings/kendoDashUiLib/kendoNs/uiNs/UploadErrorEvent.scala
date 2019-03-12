@@ -14,14 +14,14 @@ trait UploadErrorEvent extends UploadEvent {
 object UploadErrorEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Upload,
     XMLHttpRequest: js.Any = null,
     files: js.Array[_] = null,
     operation: java.lang.String = null
   ): UploadErrorEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (XMLHttpRequest != null) __obj.updateDynamic("XMLHttpRequest")(XMLHttpRequest)
     if (files != null) __obj.updateDynamic("files")(files)
     if (operation != null) __obj.updateDynamic("operation")(operation)

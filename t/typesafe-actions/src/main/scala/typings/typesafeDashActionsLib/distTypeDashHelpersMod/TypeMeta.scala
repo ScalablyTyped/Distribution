@@ -11,9 +11,9 @@ trait TypeMeta[T /* <: StringType */] extends js.Object {
 
 object TypeMeta {
   @scala.inline
-  def apply[T /* <: StringType */](getType: js.Function0[T] = null): TypeMeta[T] = {
+  def apply[T /* <: StringType */](getType: () => T = null): TypeMeta[T] = {
     val __obj = js.Dynamic.literal()
-    if (getType != null) __obj.updateDynamic("getType")(getType)
+    if (getType != null) __obj.updateDynamic("getType")(js.Any.fromFunction0(getType))
     __obj.asInstanceOf[TypeMeta[T]]
   }
 }

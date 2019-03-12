@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait TinySliderInfo extends js.Object {
   var cloneCount: scala.Double
-  var container: reactLib.HTMLElement
+  var container: stdLib.HTMLElement
   var controlsContainer: js.UndefOr[scala.Boolean] = js.undefined
   var hasControls: scala.Boolean
   var index: scala.Double
   var indexCached: scala.Double
   var items: scala.Double
-  var navContainer: js.UndefOr[reactLib.HTMLElement] = js.undefined
+  var navContainer: js.UndefOr[stdLib.HTMLElement] = js.undefined
   var navCurrentIndex: js.UndefOr[scala.Double] = js.undefined
   var navCurrentIndexCached: js.UndefOr[scala.Double] = js.undefined
   var navItems: js.UndefOr[stdLib.HTMLCollection] = js.undefined
-  var nextButton: js.UndefOr[reactLib.HTMLElement] = js.undefined
-  var prevButton: js.UndefOr[reactLib.HTMLElement] = js.undefined
+  var nextButton: js.UndefOr[stdLib.HTMLElement] = js.undefined
+  var prevButton: js.UndefOr[stdLib.HTMLElement] = js.undefined
   var slideBy: scala.Double
   var slideCount: scala.Double
   var slideCountNew: scala.Double
@@ -31,7 +31,7 @@ object TinySliderInfo {
   @scala.inline
   def apply(
     cloneCount: scala.Double,
-    container: reactLib.HTMLElement,
+    container: stdLib.HTMLElement,
     hasControls: scala.Boolean,
     index: scala.Double,
     indexCached: scala.Double,
@@ -41,12 +41,12 @@ object TinySliderInfo {
     slideCountNew: scala.Double,
     slideItems: stdLib.HTMLCollection,
     controlsContainer: js.UndefOr[scala.Boolean] = js.undefined,
-    navContainer: reactLib.HTMLElement = null,
+    navContainer: stdLib.HTMLElement = null,
     navCurrentIndex: scala.Int | scala.Double = null,
     navCurrentIndexCached: scala.Int | scala.Double = null,
     navItems: stdLib.HTMLCollection = null,
-    nextButton: reactLib.HTMLElement = null,
-    prevButton: reactLib.HTMLElement = null,
+    nextButton: stdLib.HTMLElement = null,
+    prevButton: stdLib.HTMLElement = null,
     visibleNavIndexes: scala.Int | scala.Double = null,
     visibleNavIndexesCached: scala.Int | scala.Double = null
   ): TinySliderInfo = {

@@ -15,15 +15,15 @@ trait IPixelGeometry extends IBaseGeometry {
 object IPixelGeometry {
   @scala.inline
   def apply(
-    equals: js.Function1[IPixelGeometry, scala.Boolean],
+    equals: IPixelGeometry => scala.Boolean,
     events: IEventManager,
-    getBounds: js.Function0[js.Array[js.Array[scala.Double]] | scala.Null],
-    getMetaData: js.Function0[js.Object],
-    getType: js.Function0[java.lang.String],
-    scale: js.Function1[scala.Double, IPixelGeometry],
-    shift: js.Function1[js.Array[scala.Double], IPixelGeometry]
+    getBounds: () => js.Array[js.Array[scala.Double]] | scala.Null,
+    getMetaData: () => js.Object,
+    getType: () => java.lang.String,
+    scale: scala.Double => IPixelGeometry,
+    shift: js.Array[scala.Double] => IPixelGeometry
   ): IPixelGeometry = {
-    val __obj = js.Dynamic.literal(equals = equals, events = events, getBounds = getBounds, getMetaData = getMetaData, getType = getType, scale = scale, shift = shift)
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), events = events, getBounds = js.Any.fromFunction0(getBounds), getMetaData = js.Any.fromFunction0(getMetaData), getType = js.Any.fromFunction0(getType), scale = js.Any.fromFunction1(scale), shift = js.Any.fromFunction1(shift))
   
     __obj.asInstanceOf[IPixelGeometry]
   }

@@ -21,23 +21,23 @@ object ChartLegendLabelOptions {
   @scala.inline
   def apply(
     boxWidth: scala.Int | scala.Double = null,
-    filter: js.Function2[/* legendItem */ ChartLegendLabelItem, /* data */ ChartData, _] = null,
+    filter: (/* legendItem */ ChartLegendLabelItem, /* data */ ChartData) => _ = null,
     fontColor: ChartColor = null,
     fontFamily: java.lang.String = null,
     fontSize: scala.Int | scala.Double = null,
     fontStyle: java.lang.String = null,
-    generateLabels: js.Function1[/* chart */ js.Any, _] = null,
+    generateLabels: /* chart */ js.Any => _ = null,
     padding: scala.Int | scala.Double = null,
     usePointStyle: js.UndefOr[scala.Boolean] = js.undefined
   ): ChartLegendLabelOptions = {
     val __obj = js.Dynamic.literal()
     if (boxWidth != null) __obj.updateDynamic("boxWidth")(boxWidth.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
     if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
-    if (generateLabels != null) __obj.updateDynamic("generateLabels")(generateLabels)
+    if (generateLabels != null) __obj.updateDynamic("generateLabels")(js.Any.fromFunction1(generateLabels))
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (!js.isUndefined(usePointStyle)) __obj.updateDynamic("usePointStyle")(usePointStyle)
     __obj.asInstanceOf[ChartLegendLabelOptions]

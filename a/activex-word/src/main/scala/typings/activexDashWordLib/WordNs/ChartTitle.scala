@@ -23,7 +23,7 @@ class ChartTitle protected () extends js.Object {
   val Height: scala.Double = js.native
   var HorizontalAlignment: js.Any = js.native
   var IncludeInLayout: scala.Boolean = js.native
-  val Interior: Interior = js.native
+  val Interior: activexDashWordLib.WordNs.Interior = js.native
   var Left: scala.Double = js.native
   val Name: java.lang.String = js.native
   var Orientation: js.Any = js.native

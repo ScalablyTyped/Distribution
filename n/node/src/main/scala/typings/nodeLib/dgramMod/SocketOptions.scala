@@ -34,17 +34,12 @@ object SocketOptions {
   def apply(
     `type`: SocketType,
     ipv6Only: js.UndefOr[scala.Boolean] = js.undefined,
-    lookup: js.Function3[
-      /* hostname */ java.lang.String, 
-      /* options */ nodeLib.dnsMod.LookupOneOptions, 
-      /* callback */ js.Function3[
-        /* err */ nodeLib.NodeJSNs.ErrnoException, 
-        /* address */ java.lang.String, 
-        /* family */ scala.Double, 
-        scala.Unit
-      ], 
+    lookup: (/* hostname */ java.lang.String, /* options */ nodeLib.dnsMod.LookupOneOptions, /* callback */ js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* address */ java.lang.String, 
+      /* family */ scala.Double, 
       scala.Unit
-    ] = null,
+    ]) => scala.Unit = null,
     recvBufferSize: scala.Int | scala.Double = null,
     reuseAddr: js.UndefOr[scala.Boolean] = js.undefined,
     sendBufferSize: scala.Int | scala.Double = null
@@ -52,7 +47,7 @@ object SocketOptions {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(ipv6Only)) __obj.updateDynamic("ipv6Only")(ipv6Only)
-    if (lookup != null) __obj.updateDynamic("lookup")(lookup)
+    if (lookup != null) __obj.updateDynamic("lookup")(js.Any.fromFunction3(lookup))
     if (recvBufferSize != null) __obj.updateDynamic("recvBufferSize")(recvBufferSize.asInstanceOf[js.Any])
     if (!js.isUndefined(reuseAddr)) __obj.updateDynamic("reuseAddr")(reuseAddr)
     if (sendBufferSize != null) __obj.updateDynamic("sendBufferSize")(sendBufferSize.asInstanceOf[js.Any])

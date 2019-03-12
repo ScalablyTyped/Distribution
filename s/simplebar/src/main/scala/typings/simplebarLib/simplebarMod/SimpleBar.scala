@@ -14,11 +14,11 @@ trait SimpleBar extends js.Object {
 object SimpleBar {
   @scala.inline
   def apply(
-    getContentElement: js.Function0[stdLib.Element],
-    getScrollElement: js.Function0[stdLib.Element],
-    recalculate: js.Function0[scala.Unit]
+    getContentElement: () => stdLib.Element,
+    getScrollElement: () => stdLib.Element,
+    recalculate: () => scala.Unit
   ): SimpleBar = {
-    val __obj = js.Dynamic.literal(getContentElement = getContentElement, getScrollElement = getScrollElement, recalculate = recalculate)
+    val __obj = js.Dynamic.literal(getContentElement = js.Any.fromFunction0(getContentElement), getScrollElement = js.Any.fromFunction0(getScrollElement), recalculate = js.Any.fromFunction0(recalculate))
   
     __obj.asInstanceOf[SimpleBar]
   }

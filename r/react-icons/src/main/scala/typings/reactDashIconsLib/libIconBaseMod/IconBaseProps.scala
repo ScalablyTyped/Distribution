@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IconBaseProps
-  extends reactLib.reactMod.ReactNs.SVGAttributes[reactLib.SVGElement] {
+  extends reactLib.reactMod.ReactNs.SVGAttributes[stdLib.SVGElement] {
   var size: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
 object IconBaseProps {
   @scala.inline
   def apply(
-    SVGAttributes: reactLib.reactMod.ReactNs.SVGAttributes[reactLib.SVGElement] = null,
+    SVGAttributes: reactLib.reactMod.ReactNs.SVGAttributes[stdLib.SVGElement] = null,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     color: java.lang.String = null,
     size: java.lang.String | scala.Double = null

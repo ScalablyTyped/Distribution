@@ -70,15 +70,12 @@ object CalendarListBaseProps {
     onDayLongPress: DateCallbackHandler = null,
     onDayPress: DateCallbackHandler = null,
     onMonthChange: DateCallbackHandler = null,
-    onPressArrowLeft: js.Function1[/* substractMonth */ js.Function0[scala.Unit], scala.Unit] = null,
-    onPressArrowRight: js.Function1[/* addMonth */ js.Function0[scala.Unit], scala.Unit] = null,
-    onVisibleMonthsChange: js.Function1[/* months */ js.Array[DateObject], scala.Unit] = null,
+    onPressArrowLeft: /* substractMonth */ js.Function0[scala.Unit] => scala.Unit = null,
+    onPressArrowRight: /* addMonth */ js.Function0[scala.Unit] => scala.Unit = null,
+    onVisibleMonthsChange: /* months */ js.Array[DateObject] => scala.Unit = null,
     pagingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     pastScrollRange: scala.Int | scala.Double = null,
-    renderArrow: js.Function1[
-      /* direction */ reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.left | reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.right, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    renderArrow: /* direction */ reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.left | reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.right => reactLib.reactMod.ReactNs.ReactNode = null,
     scrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     scrollsToTop: js.UndefOr[scala.Boolean] = js.undefined,
     selected: java.lang.String = null,
@@ -107,12 +104,12 @@ object CalendarListBaseProps {
     if (onDayLongPress != null) __obj.updateDynamic("onDayLongPress")(onDayLongPress)
     if (onDayPress != null) __obj.updateDynamic("onDayPress")(onDayPress)
     if (onMonthChange != null) __obj.updateDynamic("onMonthChange")(onMonthChange)
-    if (onPressArrowLeft != null) __obj.updateDynamic("onPressArrowLeft")(onPressArrowLeft)
-    if (onPressArrowRight != null) __obj.updateDynamic("onPressArrowRight")(onPressArrowRight)
-    if (onVisibleMonthsChange != null) __obj.updateDynamic("onVisibleMonthsChange")(onVisibleMonthsChange)
+    if (onPressArrowLeft != null) __obj.updateDynamic("onPressArrowLeft")(js.Any.fromFunction1(onPressArrowLeft))
+    if (onPressArrowRight != null) __obj.updateDynamic("onPressArrowRight")(js.Any.fromFunction1(onPressArrowRight))
+    if (onVisibleMonthsChange != null) __obj.updateDynamic("onVisibleMonthsChange")(js.Any.fromFunction1(onVisibleMonthsChange))
     if (!js.isUndefined(pagingEnabled)) __obj.updateDynamic("pagingEnabled")(pagingEnabled)
     if (pastScrollRange != null) __obj.updateDynamic("pastScrollRange")(pastScrollRange.asInstanceOf[js.Any])
-    if (renderArrow != null) __obj.updateDynamic("renderArrow")(renderArrow)
+    if (renderArrow != null) __obj.updateDynamic("renderArrow")(js.Any.fromFunction1(renderArrow))
     if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled)
     if (!js.isUndefined(scrollsToTop)) __obj.updateDynamic("scrollsToTop")(scrollsToTop)
     if (selected != null) __obj.updateDynamic("selected")(selected)

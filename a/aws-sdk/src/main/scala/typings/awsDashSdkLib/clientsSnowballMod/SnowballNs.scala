@@ -71,7 +71,7 @@ object SnowballNs extends js.Object {
     /**
       * The 39-character ID for the cluster that you want to cancel, for example CID123e4567-e89b-12d3-a456-426655440000.
       */
-    var ClusterId: ClusterId
+    var ClusterId: awsDashSdkLib.clientsSnowballMod.SnowballNs.ClusterId
   }
   
   trait CancelClusterResult extends js.Object
@@ -80,7 +80,7 @@ object SnowballNs extends js.Object {
     /**
       * The 39-character job ID for the job that you want to cancel, for example JID123e4567-e89b-12d3-a456-426655440000.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsSnowballMod.SnowballNs.JobId
   }
   
   trait CancelJobResult extends js.Object
@@ -181,7 +181,7 @@ object SnowballNs extends js.Object {
     /**
       * The address that you want the Snowball shipped to.
       */
-    var Address: Address
+    var Address: awsDashSdkLib.clientsSnowballMod.SnowballNs.Address
   }
   
   trait CreateAddressResult extends js.Object {
@@ -195,7 +195,7 @@ object SnowballNs extends js.Object {
     /**
       * The ID for the address that you want the cluster shipped to.
       */
-    var AddressId: AddressId
+    var AddressId: awsDashSdkLib.clientsSnowballMod.SnowballNs.AddressId
     /**
       * An optional description of this specific cluster, for example Environmental Data Cluster-01.
       */
@@ -207,7 +207,7 @@ object SnowballNs extends js.Object {
     /**
       * The type of job for this cluster. Currently, the only job type supported for clusters is LOCAL_USE.
       */
-    var JobType: JobType
+    var JobType: awsDashSdkLib.clientsSnowballMod.SnowballNs.JobType
     /**
       * The KmsKeyARN value that you want to associate with this cluster. KmsKeyARN values are created by using the CreateKey API action in AWS Key Management Service (AWS KMS). 
       */
@@ -223,11 +223,11 @@ object SnowballNs extends js.Object {
     /**
       * The RoleARN that you want to associate with this cluster. RoleArn values are created by using the CreateRole API action in AWS Identity and Access Management (IAM).
       */
-    var RoleARN: RoleARN
+    var RoleARN: awsDashSdkLib.clientsSnowballMod.SnowballNs.RoleARN
     /**
       * The shipping speed for each node in this cluster. This speed doesn't dictate how soon you'll get each Snowball Edge device, rather it represents how quickly each device moves to its destination while in transit. Regional shipping speeds are as follows:   In Australia, you have access to express shipping. Typically, devices shipped express are delivered in about a day.   In the European Union (EU), you have access to express shipping. Typically, Snowball Edges shipped express are delivered in about a day. In addition, most countries in the EU have access to standard shipping, which typically takes less than a week, one way.   In India, devices are delivered in one to seven days.   In the US, you have access to one-day shipping and two-day shipping.  
       */
-    var ShippingOption: ShippingOption
+    var ShippingOption: awsDashSdkLib.clientsSnowballMod.SnowballNs.ShippingOption
     /**
       * The type of AWS Snowball device to use for this cluster. The only supported device types for cluster jobs are EDGE, EDGE_C, and EDGE_CG.
       */
@@ -322,7 +322,7 @@ object SnowballNs extends js.Object {
     /**
       * The automatically generated ID for a specific address.
       */
-    var AddressId: AddressId
+    var AddressId: awsDashSdkLib.clientsSnowballMod.SnowballNs.AddressId
   }
   
   trait DescribeAddressResult extends js.Object {
@@ -358,7 +358,7 @@ object SnowballNs extends js.Object {
     /**
       * The automatically generated ID for a cluster.
       */
-    var ClusterId: ClusterId
+    var ClusterId: awsDashSdkLib.clientsSnowballMod.SnowballNs.ClusterId
   }
   
   trait DescribeClusterResult extends js.Object {
@@ -372,7 +372,7 @@ object SnowballNs extends js.Object {
     /**
       * The automatically generated ID for a job, for example JID123e4567-e89b-12d3-a456-426655440000.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsSnowballMod.SnowballNs.JobId
   }
   
   trait DescribeJobResult extends js.Object {
@@ -390,7 +390,7 @@ object SnowballNs extends js.Object {
     /**
       * The ID of the AMI in Amazon EC2.
       */
-    var AmiId: AmiId
+    var AmiId: awsDashSdkLib.clientsSnowballMod.SnowballNs.AmiId
     /**
       * The ID of the AMI on the supported device.
       */
@@ -408,7 +408,7 @@ object SnowballNs extends js.Object {
     /**
       * The ID for a job that you want to get the manifest file for, for example JID123e4567-e89b-12d3-a456-426655440000.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsSnowballMod.SnowballNs.JobId
   }
   
   trait GetJobManifestResult extends js.Object {
@@ -422,7 +422,7 @@ object SnowballNs extends js.Object {
     /**
       * The ID for the job that you want to get the UnlockCode value for, for example JID123e4567-e89b-12d3-a456-426655440000.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsSnowballMod.SnowballNs.JobId
   }
   
   trait GetJobUnlockCodeResult extends js.Object {
@@ -603,7 +603,7 @@ object SnowballNs extends js.Object {
     /**
       * The 39-character ID for the cluster that you want to list, for example CID123e4567-e89b-12d3-a456-426655440000.
       */
-    var ClusterId: ClusterId
+    var ClusterId: awsDashSdkLib.clientsSnowballMod.SnowballNs.ClusterId
     /**
       * The number of JobListEntry objects to return.
       */
@@ -1140,7 +1140,7 @@ object SnowballNs extends js.Object {
     /**
       * The cluster ID of the cluster that you want to update, for example CID123e4567-e89b-12d3-a456-426655440000.
       */
-    var ClusterId: ClusterId
+    var ClusterId: awsDashSdkLib.clientsSnowballMod.SnowballNs.ClusterId
     /**
       * The updated description of this cluster.
       */
@@ -1185,7 +1185,7 @@ object SnowballNs extends js.Object {
     /**
       * The job ID of the job that you want to update, for example JID123e4567-e89b-12d3-a456-426655440000.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsSnowballMod.SnowballNs.JobId
     /**
       * The new or updated Notification object.
       */

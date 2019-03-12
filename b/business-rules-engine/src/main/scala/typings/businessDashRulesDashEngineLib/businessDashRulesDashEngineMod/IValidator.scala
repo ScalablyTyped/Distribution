@@ -15,10 +15,10 @@ object IValidator {
   @scala.inline
   def apply(
     Error: IError,
-    Validate: js.Function1[js.Any, IValidationFailure],
-    ValidateAsync: js.Function1[js.Any, qLib.qMod.QNs.Promise[IValidationFailure]]
+    Validate: js.Any => IValidationFailure,
+    ValidateAsync: js.Any => qLib.qMod.QNs.Promise[IValidationFailure]
   ): IValidator = {
-    val __obj = js.Dynamic.literal(Error = Error, Validate = Validate, ValidateAsync = ValidateAsync)
+    val __obj = js.Dynamic.literal(Error = Error, Validate = js.Any.fromFunction1(Validate), ValidateAsync = js.Any.fromFunction1(ValidateAsync))
   
     __obj.asInstanceOf[IValidator]
   }

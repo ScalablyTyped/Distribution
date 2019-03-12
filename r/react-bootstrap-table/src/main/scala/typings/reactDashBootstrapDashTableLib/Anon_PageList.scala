@@ -9,7 +9,7 @@ trait Anon_PageList extends js.Object {
   /**
   		 * The default list of page change buttons.
   		 */
-  var pageList: reactLib.HTMLUListElement
+  var pageList: stdLib.HTMLUListElement
   /**
   		 * Default sizePerPageDropdown component.
   		 */
@@ -23,7 +23,7 @@ trait Anon_PageList extends js.Object {
 object Anon_PageList {
   @scala.inline
   def apply(
-    pageList: reactLib.HTMLUListElement,
+    pageList: stdLib.HTMLUListElement,
     sizePerPageDropDown: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SizePerPageDropDown,
     totalText: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
   ): Anon_PageList = {

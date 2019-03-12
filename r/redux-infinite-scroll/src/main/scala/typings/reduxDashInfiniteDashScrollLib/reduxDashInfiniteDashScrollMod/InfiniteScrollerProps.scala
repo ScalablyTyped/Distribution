@@ -22,7 +22,7 @@ trait InfiniteScrollerProps extends js.Object {
 object InfiniteScrollerProps {
   @scala.inline
   def apply(
-    loadMore: js.Function0[scala.Unit],
+    loadMore: () => scala.Unit,
     children: js.Array[reactLib.reactMod.Global.JSXNs.Element] = null,
     containerHeight: scala.Double | java.lang.String = null,
     elementIsScrollable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -34,7 +34,7 @@ object InfiniteScrollerProps {
     showLoader: js.UndefOr[scala.Boolean] = js.undefined,
     threshold: scala.Int | scala.Double = null
   ): InfiniteScrollerProps = {
-    val __obj = js.Dynamic.literal(loadMore = loadMore)
+    val __obj = js.Dynamic.literal(loadMore = js.Any.fromFunction0(loadMore))
     if (children != null) __obj.updateDynamic("children")(children)
     if (containerHeight != null) __obj.updateDynamic("containerHeight")(containerHeight.asInstanceOf[js.Any])
     if (!js.isUndefined(elementIsScrollable)) __obj.updateDynamic("elementIsScrollable")(elementIsScrollable)

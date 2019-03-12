@@ -70,7 +70,7 @@ trait QueryInput extends js.Object {
   /**
     * The name of the table containing the requested items.
     */
-  var TableName: TableName
+  var TableName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TableName
 }
 
 object QueryInput {

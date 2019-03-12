@@ -18,16 +18,10 @@ trait ReportsResource extends js.Object {
 object ReportsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotYoutubereportingLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Report]
-    ],
-    list: js.Function1[
-      gapiDotClientDotYoutubereportingLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListReportsResponse]
-    ]
+    get: gapiDotClientDotYoutubereportingLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Report],
+    list: gapiDotClientDotYoutubereportingLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[ListReportsResponse]
   ): ReportsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ReportsResource]
   }

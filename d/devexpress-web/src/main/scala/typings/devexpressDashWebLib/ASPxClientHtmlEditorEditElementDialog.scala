@@ -46,19 +46,19 @@ trait ASPxClientHtmlEditorEditElementDialog extends ASPxClientHtmlEditorDialogBa
 object ASPxClientHtmlEditorEditElementDialog {
   @scala.inline
   def apply(
-    GetBorderColorColorEdit: js.Function0[ASPxClientColorEdit],
-    GetBorderStyleComboBox: js.Function0[ASPxClientComboBox],
-    GetBorderWidthSpinEdit: js.Function0[ASPxClientSpinEdit],
-    GetBottomMarginTextBox: js.Function0[ASPxClientTextBox],
-    GetCancelButton: js.Function0[ASPxClientButton],
-    GetCssClassNameComboBox: js.Function0[ASPxClientComboBox],
-    GetFormLayout: js.Function0[ASPxClientFormLayout],
-    GetLeftMarginTextBox: js.Function0[ASPxClientTextBox],
-    GetOkButton: js.Function0[ASPxClientButton],
-    GetRightMarginTextBox: js.Function0[ASPxClientTextBox],
-    GetTopMarginTextBox: js.Function0[ASPxClientTextBox]
+    GetBorderColorColorEdit: () => ASPxClientColorEdit,
+    GetBorderStyleComboBox: () => ASPxClientComboBox,
+    GetBorderWidthSpinEdit: () => ASPxClientSpinEdit,
+    GetBottomMarginTextBox: () => ASPxClientTextBox,
+    GetCancelButton: () => ASPxClientButton,
+    GetCssClassNameComboBox: () => ASPxClientComboBox,
+    GetFormLayout: () => ASPxClientFormLayout,
+    GetLeftMarginTextBox: () => ASPxClientTextBox,
+    GetOkButton: () => ASPxClientButton,
+    GetRightMarginTextBox: () => ASPxClientTextBox,
+    GetTopMarginTextBox: () => ASPxClientTextBox
   ): ASPxClientHtmlEditorEditElementDialog = {
-    val __obj = js.Dynamic.literal(GetBorderColorColorEdit = GetBorderColorColorEdit, GetBorderStyleComboBox = GetBorderStyleComboBox, GetBorderWidthSpinEdit = GetBorderWidthSpinEdit, GetBottomMarginTextBox = GetBottomMarginTextBox, GetCancelButton = GetCancelButton, GetCssClassNameComboBox = GetCssClassNameComboBox, GetFormLayout = GetFormLayout, GetLeftMarginTextBox = GetLeftMarginTextBox, GetOkButton = GetOkButton, GetRightMarginTextBox = GetRightMarginTextBox, GetTopMarginTextBox = GetTopMarginTextBox)
+    val __obj = js.Dynamic.literal(GetBorderColorColorEdit = js.Any.fromFunction0(GetBorderColorColorEdit), GetBorderStyleComboBox = js.Any.fromFunction0(GetBorderStyleComboBox), GetBorderWidthSpinEdit = js.Any.fromFunction0(GetBorderWidthSpinEdit), GetBottomMarginTextBox = js.Any.fromFunction0(GetBottomMarginTextBox), GetCancelButton = js.Any.fromFunction0(GetCancelButton), GetCssClassNameComboBox = js.Any.fromFunction0(GetCssClassNameComboBox), GetFormLayout = js.Any.fromFunction0(GetFormLayout), GetLeftMarginTextBox = js.Any.fromFunction0(GetLeftMarginTextBox), GetOkButton = js.Any.fromFunction0(GetOkButton), GetRightMarginTextBox = js.Any.fromFunction0(GetRightMarginTextBox), GetTopMarginTextBox = js.Any.fromFunction0(GetTopMarginTextBox))
   
     __obj.asInstanceOf[ASPxClientHtmlEditorEditElementDialog]
   }

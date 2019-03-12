@@ -30,7 +30,7 @@ object MetadataField {
   def apply(
     Anchor: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange,
     AnchorType: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.TextContentAnchorType,
-    AnchorTypes: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.TextContentAnchorType],
+    AnchorTypes: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.TextContentAnchorType],
     ElementType: activexDashLibreofficeLib.`type`,
     End: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange,
     IsFieldDisplayed: scala.Boolean,
@@ -46,75 +46,41 @@ object MetadataField {
     String: java.lang.String,
     StringValue: java.lang.String,
     TextWrap: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.WrapTextMode,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    addPropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    addVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    attach: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange, scala.Unit],
-    createEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
-    createTextCursor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextCursor],
-    createTextCursorByRange: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextCursor
-    ],
-    dispose: js.Function0[scala.Unit],
-    ensureMetadataReference: js.Function0[scala.Unit],
-    getAnchor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    getEnd: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange],
-    getParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    getPresentation: js.Function1[scala.Boolean, java.lang.String],
-    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
-    getPropertyValue: js.Function1[java.lang.String, js.Any],
-    getStart: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange],
-    getString: js.Function0[java.lang.String],
-    getText: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText],
-    hasElements: js.Function0[scala.Boolean],
-    insertControlCharacter: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange, 
-      scala.Double, 
-      scala.Boolean, 
-      scala.Unit
-    ],
-    insertString: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange, 
-      java.lang.String, 
-      scala.Boolean, 
-      scala.Unit
-    ],
-    insertTextContent: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextContent, 
-      scala.Boolean, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    removePropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    removeTextContent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextContent, scala.Unit],
-    removeVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
-    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
-    setString: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    addPropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    addVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    attach: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange => scala.Unit,
+    createEnumeration: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration,
+    createTextCursor: () => activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextCursor,
+    createTextCursorByRange: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange => activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextCursor,
+    dispose: () => scala.Unit,
+    ensureMetadataReference: () => scala.Unit,
+    getAnchor: () => activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange,
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    getEnd: () => activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange,
+    getParent: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getPresentation: scala.Boolean => java.lang.String,
+    getPropertySetInfo: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    getPropertyValue: java.lang.String => js.Any,
+    getStart: () => activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange,
+    getString: () => java.lang.String,
+    getText: () => activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText,
+    hasElements: () => scala.Boolean,
+    insertControlCharacter: (activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange, scala.Double, scala.Boolean) => scala.Unit,
+    insertString: (activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange, java.lang.String, scala.Boolean) => scala.Unit,
+    insertTextContent: (activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange, activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextContent, scala.Boolean) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    removePropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    removeTextContent: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextContent => scala.Unit,
+    removeVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    setParent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => scala.Unit,
+    setPropertyValue: (java.lang.String, js.Any) => scala.Unit,
+    setString: java.lang.String => scala.Unit
   ): MetadataField = {
-    val __obj = js.Dynamic.literal(Anchor = Anchor, AnchorType = AnchorType, AnchorTypes = AnchorTypes, ElementType = ElementType, End = End, IsFieldDisplayed = IsFieldDisplayed, IsFieldUsed = IsFieldUsed, IsFixedLanguage = IsFixedLanguage, LocalName = LocalName, MetadataReference = MetadataReference, Namespace = Namespace, NumberFormat = NumberFormat, Parent = Parent, PropertySetInfo = PropertySetInfo, Start = Start, String = String, StringValue = StringValue, TextWrap = TextWrap, acquire = acquire, addEventListener = addEventListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, attach = attach, createEnumeration = createEnumeration, createTextCursor = createTextCursor, createTextCursorByRange = createTextCursorByRange, dispose = dispose, ensureMetadataReference = ensureMetadataReference, getAnchor = getAnchor, getElementType = getElementType, getEnd = getEnd, getParent = getParent, getPresentation = getPresentation, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getStart = getStart, getString = getString, getText = getText, hasElements = hasElements, insertControlCharacter = insertControlCharacter, insertString = insertString, insertTextContent = insertTextContent, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removePropertyChangeListener = removePropertyChangeListener, removeTextContent = removeTextContent, removeVetoableChangeListener = removeVetoableChangeListener, setParent = setParent, setPropertyValue = setPropertyValue, setString = setString)
+    val __obj = js.Dynamic.literal(Anchor = Anchor, AnchorType = AnchorType, AnchorTypes = AnchorTypes, ElementType = ElementType, End = End, IsFieldDisplayed = IsFieldDisplayed, IsFieldUsed = IsFieldUsed, IsFixedLanguage = IsFixedLanguage, LocalName = LocalName, MetadataReference = MetadataReference, Namespace = Namespace, NumberFormat = NumberFormat, Parent = Parent, PropertySetInfo = PropertySetInfo, Start = Start, String = String, StringValue = StringValue, TextWrap = TextWrap, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), attach = js.Any.fromFunction1(attach), createEnumeration = js.Any.fromFunction0(createEnumeration), createTextCursor = js.Any.fromFunction0(createTextCursor), createTextCursorByRange = js.Any.fromFunction1(createTextCursorByRange), dispose = js.Any.fromFunction0(dispose), ensureMetadataReference = js.Any.fromFunction0(ensureMetadataReference), getAnchor = js.Any.fromFunction0(getAnchor), getElementType = js.Any.fromFunction0(getElementType), getEnd = js.Any.fromFunction0(getEnd), getParent = js.Any.fromFunction0(getParent), getPresentation = js.Any.fromFunction1(getPresentation), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getStart = js.Any.fromFunction0(getStart), getString = js.Any.fromFunction0(getString), getText = js.Any.fromFunction0(getText), hasElements = js.Any.fromFunction0(hasElements), insertControlCharacter = js.Any.fromFunction3(insertControlCharacter), insertString = js.Any.fromFunction3(insertString), insertTextContent = js.Any.fromFunction3(insertTextContent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeTextContent = js.Any.fromFunction1(removeTextContent), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setParent = js.Any.fromFunction1(setParent), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setString = js.Any.fromFunction1(setString))
   
     __obj.asInstanceOf[MetadataField]
   }

@@ -22,25 +22,19 @@ object XDrawSubController {
   def apply(
     CurrentPage: XDrawPage,
     Selection: js.Any,
-    acquire: js.Function0[scala.Unit],
-    addSelectionChangeListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.viewNs.XSelectionChangeListener, 
-      scala.Unit
-    ],
-    getCurrentPage: js.Function0[XDrawPage],
-    getFastPropertyValue: js.Function1[scala.Double, js.Any],
-    getSelection: js.Function0[js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeSelectionChangeListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.viewNs.XSelectionChangeListener, 
-      scala.Unit
-    ],
-    select: js.Function1[js.Any, scala.Boolean],
-    setCurrentPage: js.Function1[XDrawPage, scala.Unit],
-    setFastPropertyValue: js.Function2[scala.Double, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    addSelectionChangeListener: activexDashLibreofficeLib.comNs.sunNs.starNs.viewNs.XSelectionChangeListener => scala.Unit,
+    getCurrentPage: () => XDrawPage,
+    getFastPropertyValue: scala.Double => js.Any,
+    getSelection: () => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeSelectionChangeListener: activexDashLibreofficeLib.comNs.sunNs.starNs.viewNs.XSelectionChangeListener => scala.Unit,
+    select: js.Any => scala.Boolean,
+    setCurrentPage: XDrawPage => scala.Unit,
+    setFastPropertyValue: (scala.Double, js.Any) => scala.Unit
   ): XDrawSubController = {
-    val __obj = js.Dynamic.literal(CurrentPage = CurrentPage, Selection = Selection, acquire = acquire, addSelectionChangeListener = addSelectionChangeListener, getCurrentPage = getCurrentPage, getFastPropertyValue = getFastPropertyValue, getSelection = getSelection, queryInterface = queryInterface, release = release, removeSelectionChangeListener = removeSelectionChangeListener, select = select, setCurrentPage = setCurrentPage, setFastPropertyValue = setFastPropertyValue)
+    val __obj = js.Dynamic.literal(CurrentPage = CurrentPage, Selection = Selection, acquire = js.Any.fromFunction0(acquire), addSelectionChangeListener = js.Any.fromFunction1(addSelectionChangeListener), getCurrentPage = js.Any.fromFunction0(getCurrentPage), getFastPropertyValue = js.Any.fromFunction1(getFastPropertyValue), getSelection = js.Any.fromFunction0(getSelection), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeSelectionChangeListener = js.Any.fromFunction1(removeSelectionChangeListener), select = js.Any.fromFunction1(select), setCurrentPage = js.Any.fromFunction1(setCurrentPage), setFastPropertyValue = js.Any.fromFunction2(setFastPropertyValue))
   
     __obj.asInstanceOf[XDrawSubController]
   }

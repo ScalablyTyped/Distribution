@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.System")
 @js.native
 class System protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val ComputerType: java.lang.String = js.native
   val Country: WdCountry = js.native
   val CountryRegion: WdCountry = js.native

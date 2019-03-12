@@ -51,9 +51,9 @@ object Remote {
     contentTracing: ContentTracing,
     crashReporter: CrashReporter,
     dialog: Dialog,
-    getCurrentWebContents: js.Function0[WebContents],
-    getCurrentWindow: js.Function0[BrowserWindow],
-    getGlobal: js.Function1[java.lang.String, js.Any],
+    getCurrentWebContents: () => WebContents,
+    getCurrentWindow: () => BrowserWindow,
+    getGlobal: java.lang.String => js.Any,
     globalShortcut: GlobalShortcut,
     inAppPurchase: InAppPurchase,
     ipcMain: IpcMain,
@@ -63,7 +63,7 @@ object Remote {
     powerMonitor: PowerMonitor,
     powerSaveBlocker: PowerSaveBlocker,
     protocol: Protocol,
-    require: js.Function1[java.lang.String, js.Any],
+    require: java.lang.String => js.Any,
     screen: Screen,
     session: electronLib.Anon_DefaultSession,
     shell: Shell,
@@ -71,7 +71,7 @@ object Remote {
     webContents: electronLib.Anon_FromIdGetAllWebContents,
     process: js.Any = null
   ): Remote = {
-    val __obj = js.Dynamic.literal(BrowserView = BrowserView, BrowserWindow = BrowserWindow, ClientRequest = ClientRequest, Cookies = Cookies, Debugger = Debugger, DownloadItem = DownloadItem, IncomingMessage = IncomingMessage, Menu = Menu, MenuItem = MenuItem, Notification = Notification, TouchBar = TouchBar, Tray = Tray, WebRequest = WebRequest, app = app, autoUpdater = autoUpdater, clipboard = clipboard, contentTracing = contentTracing, crashReporter = crashReporter, dialog = dialog, getCurrentWebContents = getCurrentWebContents, getCurrentWindow = getCurrentWindow, getGlobal = getGlobal, globalShortcut = globalShortcut, inAppPurchase = inAppPurchase, ipcMain = ipcMain, nativeImage = nativeImage, net = net, netLog = netLog, powerMonitor = powerMonitor, powerSaveBlocker = powerSaveBlocker, protocol = protocol, require = require, screen = screen, session = session, shell = shell, systemPreferences = systemPreferences, webContents = webContents)
+    val __obj = js.Dynamic.literal(BrowserView = BrowserView, BrowserWindow = BrowserWindow, ClientRequest = ClientRequest, Cookies = Cookies, Debugger = Debugger, DownloadItem = DownloadItem, IncomingMessage = IncomingMessage, Menu = Menu, MenuItem = MenuItem, Notification = Notification, TouchBar = TouchBar, Tray = Tray, WebRequest = WebRequest, app = app, autoUpdater = autoUpdater, clipboard = clipboard, contentTracing = contentTracing, crashReporter = crashReporter, dialog = dialog, getCurrentWebContents = js.Any.fromFunction0(getCurrentWebContents), getCurrentWindow = js.Any.fromFunction0(getCurrentWindow), getGlobal = js.Any.fromFunction1(getGlobal), globalShortcut = globalShortcut, inAppPurchase = inAppPurchase, ipcMain = ipcMain, nativeImage = nativeImage, net = net, netLog = netLog, powerMonitor = powerMonitor, powerSaveBlocker = powerSaveBlocker, protocol = protocol, require = js.Any.fromFunction1(require), screen = screen, session = session, shell = shell, systemPreferences = systemPreferences, webContents = webContents)
     if (process != null) __obj.updateDynamic("process")(process)
     __obj.asInstanceOf[Remote]
   }

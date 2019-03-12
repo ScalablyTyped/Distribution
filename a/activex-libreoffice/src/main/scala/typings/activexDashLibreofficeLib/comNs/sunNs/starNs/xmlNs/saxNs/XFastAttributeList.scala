@@ -17,11 +17,11 @@ import scala.scalajs.js.annotation._
 trait XFastAttributeList
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** returns a sequence of attributes which names and or namespaces URLS are translated to tokens. */
-  val FastAttributes: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.FastAttribute]
+  val FastAttributes: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.FastAttribute]
   /** returns a sequence of attributes which names and or namespaces URLS can not be translated to tokens. */
-  val UnknownAttributes: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.Attribute]
+  val UnknownAttributes: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.Attribute]
   /** returns a sequence of attributes which names and or namespaces URLS are translated to tokens. */
-  def getFastAttributes(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.FastAttribute]
+  def getFastAttributes(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.FastAttribute]
   /**
     * retrieves the value of an attribute. ;
     * @param Token contains the integer token from the {@link XFastTokenHandler} registered at the {@link XFastParser} . ;  If the attribute name has a namesp
@@ -36,7 +36,7 @@ trait XFastAttributeList
     */
   def getOptionalValueToken(Token: scala.Double, Default: scala.Double): scala.Double
   /** returns a sequence of attributes which names and or namespaces URLS can not be translated to tokens. */
-  def getUnknownAttributes(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.Attribute]
+  def getUnknownAttributes(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.Attribute]
   /**
     * retrieves the value of an attribute. ;
     * @param Token contains the integer token from the {@link XFastTokenHandler} registered at the {@link XFastParser} . ;  If the attribute name has a namesp
@@ -62,24 +62,20 @@ trait XFastAttributeList
 object XFastAttributeList {
   @scala.inline
   def apply(
-    FastAttributes: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.FastAttribute],
-    UnknownAttributes: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.Attribute],
-    acquire: js.Function0[scala.Unit],
-    getFastAttributes: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.FastAttribute]
-    ],
-    getOptionalValue: js.Function1[scala.Double, java.lang.String],
-    getOptionalValueToken: js.Function2[scala.Double, scala.Double, scala.Double],
-    getUnknownAttributes: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.Attribute]
-    ],
-    getValue: js.Function1[scala.Double, java.lang.String],
-    getValueToken: js.Function1[scala.Double, scala.Double],
-    hasAttribute: js.Function1[scala.Double, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    FastAttributes: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.FastAttribute],
+    UnknownAttributes: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.Attribute],
+    acquire: () => scala.Unit,
+    getFastAttributes: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.FastAttribute],
+    getOptionalValue: scala.Double => java.lang.String,
+    getOptionalValueToken: (scala.Double, scala.Double) => scala.Double,
+    getUnknownAttributes: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.Attribute],
+    getValue: scala.Double => java.lang.String,
+    getValueToken: scala.Double => scala.Double,
+    hasAttribute: scala.Double => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XFastAttributeList = {
-    val __obj = js.Dynamic.literal(FastAttributes = FastAttributes, UnknownAttributes = UnknownAttributes, acquire = acquire, getFastAttributes = getFastAttributes, getOptionalValue = getOptionalValue, getOptionalValueToken = getOptionalValueToken, getUnknownAttributes = getUnknownAttributes, getValue = getValue, getValueToken = getValueToken, hasAttribute = hasAttribute, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(FastAttributes = FastAttributes, UnknownAttributes = UnknownAttributes, acquire = js.Any.fromFunction0(acquire), getFastAttributes = js.Any.fromFunction0(getFastAttributes), getOptionalValue = js.Any.fromFunction1(getOptionalValue), getOptionalValueToken = js.Any.fromFunction2(getOptionalValueToken), getUnknownAttributes = js.Any.fromFunction0(getUnknownAttributes), getValue = js.Any.fromFunction1(getValue), getValueToken = js.Any.fromFunction1(getValueToken), hasAttribute = js.Any.fromFunction1(hasAttribute), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XFastAttributeList]
   }

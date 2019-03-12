@@ -13,12 +13,8 @@ trait RNFetchBlobStream extends js.Object {
 
 object RNFetchBlobStream {
   @scala.inline
-  def apply(
-    onData: js.Function0[scala.Unit],
-    onEnd: js.Function0[scala.Unit],
-    onError: js.Function0[scala.Unit]
-  ): RNFetchBlobStream = {
-    val __obj = js.Dynamic.literal(onData = onData, onEnd = onEnd, onError = onError)
+  def apply(onData: () => scala.Unit, onEnd: () => scala.Unit, onError: () => scala.Unit): RNFetchBlobStream = {
+    val __obj = js.Dynamic.literal(onData = js.Any.fromFunction0(onData), onEnd = js.Any.fromFunction0(onEnd), onError = js.Any.fromFunction0(onError))
   
     __obj.asInstanceOf[RNFetchBlobStream]
   }

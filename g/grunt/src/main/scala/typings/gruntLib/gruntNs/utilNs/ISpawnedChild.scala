@@ -31,13 +31,8 @@ trait ISpawnedChild extends js.Object {
 
 object ISpawnedChild {
   @scala.inline
-  def apply(
-    forever: js.Function0[scala.Unit],
-    kill: js.Function0[scala.Unit],
-    once: js.Function0[scala.Unit],
-    start: js.Function0[scala.Unit]
-  ): ISpawnedChild = {
-    val __obj = js.Dynamic.literal(forever = forever, kill = kill, once = once, start = start)
+  def apply(forever: () => scala.Unit, kill: () => scala.Unit, once: () => scala.Unit, start: () => scala.Unit): ISpawnedChild = {
+    val __obj = js.Dynamic.literal(forever = js.Any.fromFunction0(forever), kill = js.Any.fromFunction0(kill), once = js.Any.fromFunction0(once), start = js.Any.fromFunction0(start))
   
     __obj.asInstanceOf[ISpawnedChild]
   }

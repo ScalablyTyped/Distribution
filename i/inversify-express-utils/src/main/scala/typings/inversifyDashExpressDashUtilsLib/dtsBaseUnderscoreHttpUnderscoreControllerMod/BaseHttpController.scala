@@ -15,7 +15,7 @@ class BaseHttpController () extends js.Object {
   /* protected */ def created[T](location: java.lang.String, content: T): inversifyDashExpressDashUtilsLib.dtsResultsMod.CreatedNegotiatedContentResult[T] = js.native
   /* protected */ def created[T](location: nodeLib.urlMod.URL, content: T): inversifyDashExpressDashUtilsLib.dtsResultsMod.CreatedNegotiatedContentResult[T] = js.native
   /* protected */ def internalServerError(): inversifyDashExpressDashUtilsLib.dtsResultsMod.InternalServerErrorResult = js.native
-  /* protected */ def internalServerError(error: nodeLib.Error): inversifyDashExpressDashUtilsLib.dtsResultsMod.ExceptionResult = js.native
+  /* protected */ def internalServerError(error: stdLib.Error): inversifyDashExpressDashUtilsLib.dtsResultsMod.ExceptionResult = js.native
   /* protected */ def json(content: js.Any): inversifyDashExpressDashUtilsLib.dtsResultsMod.JsonResult = js.native
   /* protected */ def json(content: js.Any, statusCode: scala.Double): inversifyDashExpressDashUtilsLib.dtsResultsMod.JsonResult = js.native
   /* protected */ def notFound(): inversifyDashExpressDashUtilsLib.dtsResultsMod.NotFoundResult = js.native

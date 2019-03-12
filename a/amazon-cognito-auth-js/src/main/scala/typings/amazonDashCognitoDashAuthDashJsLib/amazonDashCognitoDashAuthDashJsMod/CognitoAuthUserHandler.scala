@@ -12,11 +12,8 @@ trait CognitoAuthUserHandler extends js.Object {
 
 object CognitoAuthUserHandler {
   @scala.inline
-  def apply(
-    onFailure: js.Function1[js.Any, scala.Unit],
-    onSuccess: js.Function1[CognitoAuthSession, scala.Unit]
-  ): CognitoAuthUserHandler = {
-    val __obj = js.Dynamic.literal(onFailure = onFailure, onSuccess = onSuccess)
+  def apply(onFailure: js.Any => scala.Unit, onSuccess: CognitoAuthSession => scala.Unit): CognitoAuthUserHandler = {
+    val __obj = js.Dynamic.literal(onFailure = js.Any.fromFunction1(onFailure), onSuccess = js.Any.fromFunction1(onSuccess))
   
     __obj.asInstanceOf[CognitoAuthUserHandler]
   }

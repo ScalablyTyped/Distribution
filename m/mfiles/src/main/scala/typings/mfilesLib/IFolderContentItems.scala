@@ -13,12 +13,8 @@ trait IFolderContentItems extends js.Object {
 
 object IFolderContentItems {
   @scala.inline
-  def apply(
-    Count: scala.Double,
-    Item: js.Function1[scala.Double, IFolderContentItem],
-    MoreResults: scala.Boolean
-  ): IFolderContentItems = {
-    val __obj = js.Dynamic.literal(Count = Count, Item = Item, MoreResults = MoreResults)
+  def apply(Count: scala.Double, Item: scala.Double => IFolderContentItem, MoreResults: scala.Boolean): IFolderContentItems = {
+    val __obj = js.Dynamic.literal(Count = Count, Item = js.Any.fromFunction1(Item), MoreResults = MoreResults)
   
     __obj.asInstanceOf[IFolderContentItems]
   }

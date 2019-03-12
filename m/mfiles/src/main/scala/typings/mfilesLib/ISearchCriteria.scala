@@ -32,14 +32,14 @@ object ISearchCriteria {
   @scala.inline
   def apply(
     AdditionalConditions: ISearchConditionExs,
-    Clone: js.Function0[ISearchCriteria],
+    Clone: () => ISearchCriteria,
     ExpandUI: scala.Boolean,
     FacetFilterAsJSON: java.lang.String,
     FacetFilterStatusFlags: mfilesLib.MFilesNs.MFFacetFilterStatusFlags,
     FirstCondition: ISearchConditionEx,
     FullTextSearchFlags: mfilesLib.MFilesNs.MFFullTextSearchFlags,
     FullTextSearchString: java.lang.String,
-    GetAsSearchConditions: js.Function3[scala.Boolean, scala.Boolean, scala.Boolean, ISearchConditions],
+    GetAsSearchConditions: (scala.Boolean, scala.Boolean, scala.Boolean) => ISearchConditions,
     ObjectTypeCondition: ISearchConditionEx,
     PredefinedSearchFilter: mfilesLib.MFilesNs.MFPredefinedSearchFilterType,
     PreviousBaseConditions: ISearchConditions,
@@ -48,7 +48,7 @@ object ISearchCriteria {
     SearchWithinThisFolder: scala.Boolean,
     SecondCondition: ISearchConditionEx
   ): ISearchCriteria = {
-    val __obj = js.Dynamic.literal(AdditionalConditions = AdditionalConditions, Clone = Clone, ExpandUI = ExpandUI, FacetFilterAsJSON = FacetFilterAsJSON, FacetFilterStatusFlags = FacetFilterStatusFlags, FirstCondition = FirstCondition, FullTextSearchFlags = FullTextSearchFlags, FullTextSearchString = FullTextSearchString, GetAsSearchConditions = GetAsSearchConditions, ObjectTypeCondition = ObjectTypeCondition, PredefinedSearchFilter = PredefinedSearchFilter, PreviousBaseConditions = PreviousBaseConditions, SearchFlags = SearchFlags, SearchRefinement = SearchRefinement, SearchWithinThisFolder = SearchWithinThisFolder, SecondCondition = SecondCondition)
+    val __obj = js.Dynamic.literal(AdditionalConditions = AdditionalConditions, Clone = js.Any.fromFunction0(Clone), ExpandUI = ExpandUI, FacetFilterAsJSON = FacetFilterAsJSON, FacetFilterStatusFlags = FacetFilterStatusFlags, FirstCondition = FirstCondition, FullTextSearchFlags = FullTextSearchFlags, FullTextSearchString = FullTextSearchString, GetAsSearchConditions = js.Any.fromFunction3(GetAsSearchConditions), ObjectTypeCondition = ObjectTypeCondition, PredefinedSearchFilter = PredefinedSearchFilter, PreviousBaseConditions = PreviousBaseConditions, SearchFlags = SearchFlags, SearchRefinement = SearchRefinement, SearchWithinThisFolder = SearchWithinThisFolder, SecondCondition = SecondCondition)
   
     __obj.asInstanceOf[ISearchCriteria]
   }

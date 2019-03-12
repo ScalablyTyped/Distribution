@@ -11,8 +11,8 @@ trait Anon_HostnamePromisifyArray extends js.Object {
 
 object Anon_HostnamePromisifyArray {
   @scala.inline
-  def apply(__promisify__ : js.Function1[java.lang.String, js.Promise[js.Array[java.lang.String]]]): Anon_HostnamePromisifyArray = {
-    val __obj = js.Dynamic.literal(__promisify__ = __promisify__)
+  def apply(__promisify__ : java.lang.String => js.Promise[js.Array[java.lang.String]]): Anon_HostnamePromisifyArray = {
+    val __obj = js.Dynamic.literal(__promisify__ = js.Any.fromFunction1(__promisify__))
   
     __obj.asInstanceOf[Anon_HostnamePromisifyArray]
   }

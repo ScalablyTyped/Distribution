@@ -14,11 +14,11 @@ trait ITextWriter extends js.Object {
 object ITextWriter {
   @scala.inline
   def apply(
-    Close: js.Function0[scala.Unit],
-    Write: js.Function1[java.lang.String, scala.Unit],
-    WriteLine: js.Function1[java.lang.String, scala.Unit]
+    Close: () => scala.Unit,
+    Write: java.lang.String => scala.Unit,
+    WriteLine: java.lang.String => scala.Unit
   ): ITextWriter = {
-    val __obj = js.Dynamic.literal(Close = Close, Write = Write, WriteLine = WriteLine)
+    val __obj = js.Dynamic.literal(Close = js.Any.fromFunction0(Close), Write = js.Any.fromFunction1(Write), WriteLine = js.Any.fromFunction1(WriteLine))
   
     __obj.asInstanceOf[ITextWriter]
   }

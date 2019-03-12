@@ -69,61 +69,34 @@ trait KeyBinds extends js.Object {
 object KeyBinds {
   @scala.inline
   def apply(
-    `control down`: js.Function1[
-      /* widget */ eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery | scala.Boolean, 
-      _
-    ] = null,
-    `control space`: js.Function1[
-      /* widget */ eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery, 
-      _
-    ] = null,
-    `control up`: js.Function1[
-      /* widget */ eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery | scala.Boolean, 
-      _
-    ] = null,
-    delete: js.Function0[_] = null,
-    down: js.Function1[
-      /* widget */ eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery | scala.Boolean, 
-      _
-    ] = null,
-    enter: js.Function0[_] = null,
-    escape: js.Function0[_] = null,
-    left: js.Function1[
-      /* widget */ eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery | scala.Boolean, 
-      _
-    ] = null,
-    pageDown: js.Function1[
-      /* widget */ eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery | scala.Boolean, 
-      _
-    ] = null,
-    pageUp: js.Function1[
-      /* widget */ eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery | scala.Boolean, 
-      _
-    ] = null,
-    right: js.Function1[
-      /* widget */ eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery | scala.Boolean, 
-      _
-    ] = null,
-    t: js.Function0[_] = null,
-    up: js.Function1[
-      /* widget */ eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery | scala.Boolean, 
-      _
-    ] = null
+    `control down`: /* widget */ eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery | scala.Boolean => _ = null,
+    `control space`: /* widget */ eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery => _ = null,
+    `control up`: /* widget */ eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery | scala.Boolean => _ = null,
+    delete: () => _ = null,
+    down: /* widget */ eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery | scala.Boolean => _ = null,
+    enter: () => _ = null,
+    escape: () => _ = null,
+    left: /* widget */ eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery | scala.Boolean => _ = null,
+    pageDown: /* widget */ eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery | scala.Boolean => _ = null,
+    pageUp: /* widget */ eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery | scala.Boolean => _ = null,
+    right: /* widget */ eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery | scala.Boolean => _ = null,
+    t: () => _ = null,
+    up: /* widget */ eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery | scala.Boolean => _ = null
   ): KeyBinds = {
     val __obj = js.Dynamic.literal()
-    if (`control down` != null) __obj.updateDynamic("control down")(`control down`)
-    if (`control space` != null) __obj.updateDynamic("control space")(`control space`)
-    if (`control up` != null) __obj.updateDynamic("control up")(`control up`)
-    if (delete != null) __obj.updateDynamic("delete")(delete)
-    if (down != null) __obj.updateDynamic("down")(down)
-    if (enter != null) __obj.updateDynamic("enter")(enter)
-    if (escape != null) __obj.updateDynamic("escape")(escape)
-    if (left != null) __obj.updateDynamic("left")(left)
-    if (pageDown != null) __obj.updateDynamic("pageDown")(pageDown)
-    if (pageUp != null) __obj.updateDynamic("pageUp")(pageUp)
-    if (right != null) __obj.updateDynamic("right")(right)
-    if (t != null) __obj.updateDynamic("t")(t)
-    if (up != null) __obj.updateDynamic("up")(up)
+    if (`control down` != null) __obj.updateDynamic("control down")(js.Any.fromFunction1(`control down`))
+    if (`control space` != null) __obj.updateDynamic("control space")(js.Any.fromFunction1(`control space`))
+    if (`control up` != null) __obj.updateDynamic("control up")(js.Any.fromFunction1(`control up`))
+    if (delete != null) __obj.updateDynamic("delete")(js.Any.fromFunction0(delete))
+    if (down != null) __obj.updateDynamic("down")(js.Any.fromFunction1(down))
+    if (enter != null) __obj.updateDynamic("enter")(js.Any.fromFunction0(enter))
+    if (escape != null) __obj.updateDynamic("escape")(js.Any.fromFunction0(escape))
+    if (left != null) __obj.updateDynamic("left")(js.Any.fromFunction1(left))
+    if (pageDown != null) __obj.updateDynamic("pageDown")(js.Any.fromFunction1(pageDown))
+    if (pageUp != null) __obj.updateDynamic("pageUp")(js.Any.fromFunction1(pageUp))
+    if (right != null) __obj.updateDynamic("right")(js.Any.fromFunction1(right))
+    if (t != null) __obj.updateDynamic("t")(js.Any.fromFunction0(t))
+    if (up != null) __obj.updateDynamic("up")(js.Any.fromFunction1(up))
     __obj.asInstanceOf[KeyBinds]
   }
 }

@@ -194,37 +194,23 @@ object Ndef {
     TNF_UNCHANGED: scala.Double,
     TNF_UNKNOWN: scala.Double,
     TNF_WELL_KNOWN: scala.Double,
-    absoluteUriRecord: js.Function3[java.lang.String, js.Array[scala.Double], js.Array[scala.Double], NdefRecord],
-    androidApplicationRecord: js.Function1[java.lang.String, NdefRecord],
-    decodeMessage: js.Function1[js.Array[scala.Double], js.Array[NdefRecord]],
-    decodeTnf: js.Function1[scala.Double, js.Any],
-    emptyRecord: js.Function0[NdefRecord],
-    encodeMessage: js.Function1[js.Array[NdefRecord], js.Array[scala.Double]],
-    encodeTnf: js.Function6[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double
-    ],
-    mimeMediaRecord: js.Function3[java.lang.String, js.Array[scala.Double], js.Array[scala.Double], NdefRecord],
-    record: js.Function4[
-      scala.Double, 
-      js.Array[scala.Double], 
-      js.Array[scala.Double], 
-      js.Array[scala.Double], 
-      NdefRecord
-    ],
-    smartPoster: js.Function2[js.Array[NdefRecord], js.Array[scala.Double], NdefRecord],
+    absoluteUriRecord: (java.lang.String, js.Array[scala.Double], js.Array[scala.Double]) => NdefRecord,
+    androidApplicationRecord: java.lang.String => NdefRecord,
+    decodeMessage: js.Array[scala.Double] => js.Array[NdefRecord],
+    decodeTnf: scala.Double => js.Any,
+    emptyRecord: () => NdefRecord,
+    encodeMessage: js.Array[NdefRecord] => js.Array[scala.Double],
+    encodeTnf: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => scala.Double,
+    mimeMediaRecord: (java.lang.String, js.Array[scala.Double], js.Array[scala.Double]) => NdefRecord,
+    record: (scala.Double, js.Array[scala.Double], js.Array[scala.Double], js.Array[scala.Double]) => NdefRecord,
+    smartPoster: (js.Array[NdefRecord], js.Array[scala.Double]) => NdefRecord,
     textHelper: TextHelper,
-    textRecord: js.Function3[java.lang.String, java.lang.String, js.Array[scala.Double], NdefRecord],
-    tnfToString: js.Function1[scala.Double, java.lang.String],
+    textRecord: (java.lang.String, java.lang.String, js.Array[scala.Double]) => NdefRecord,
+    tnfToString: scala.Double => java.lang.String,
     uriHelper: UriHelper,
-    uriRecord: js.Function2[java.lang.String, js.Array[scala.Double], NdefRecord]
+    uriRecord: (java.lang.String, js.Array[scala.Double]) => NdefRecord
   ): Ndef = {
-    val __obj = js.Dynamic.literal(RTD_ALTERNATIVE_CARRIER = RTD_ALTERNATIVE_CARRIER, RTD_HANDOVER_CARRIER = RTD_HANDOVER_CARRIER, RTD_HANDOVER_REQUEST = RTD_HANDOVER_REQUEST, RTD_HANDOVER_SELECT = RTD_HANDOVER_SELECT, RTD_SMART_POSTER = RTD_SMART_POSTER, RTD_TEXT = RTD_TEXT, RTD_URI = RTD_URI, TNF_ABSOLUTE_URI = TNF_ABSOLUTE_URI, TNF_EMPTY = TNF_EMPTY, TNF_EXTERNAL_TYPE = TNF_EXTERNAL_TYPE, TNF_MIME_MEDIA = TNF_MIME_MEDIA, TNF_RESERVED = TNF_RESERVED, TNF_UNCHANGED = TNF_UNCHANGED, TNF_UNKNOWN = TNF_UNKNOWN, TNF_WELL_KNOWN = TNF_WELL_KNOWN, absoluteUriRecord = absoluteUriRecord, androidApplicationRecord = androidApplicationRecord, decodeMessage = decodeMessage, decodeTnf = decodeTnf, emptyRecord = emptyRecord, encodeMessage = encodeMessage, encodeTnf = encodeTnf, mimeMediaRecord = mimeMediaRecord, record = record, smartPoster = smartPoster, textHelper = textHelper, textRecord = textRecord, tnfToString = tnfToString, uriHelper = uriHelper, uriRecord = uriRecord)
+    val __obj = js.Dynamic.literal(RTD_ALTERNATIVE_CARRIER = RTD_ALTERNATIVE_CARRIER, RTD_HANDOVER_CARRIER = RTD_HANDOVER_CARRIER, RTD_HANDOVER_REQUEST = RTD_HANDOVER_REQUEST, RTD_HANDOVER_SELECT = RTD_HANDOVER_SELECT, RTD_SMART_POSTER = RTD_SMART_POSTER, RTD_TEXT = RTD_TEXT, RTD_URI = RTD_URI, TNF_ABSOLUTE_URI = TNF_ABSOLUTE_URI, TNF_EMPTY = TNF_EMPTY, TNF_EXTERNAL_TYPE = TNF_EXTERNAL_TYPE, TNF_MIME_MEDIA = TNF_MIME_MEDIA, TNF_RESERVED = TNF_RESERVED, TNF_UNCHANGED = TNF_UNCHANGED, TNF_UNKNOWN = TNF_UNKNOWN, TNF_WELL_KNOWN = TNF_WELL_KNOWN, absoluteUriRecord = js.Any.fromFunction3(absoluteUriRecord), androidApplicationRecord = js.Any.fromFunction1(androidApplicationRecord), decodeMessage = js.Any.fromFunction1(decodeMessage), decodeTnf = js.Any.fromFunction1(decodeTnf), emptyRecord = js.Any.fromFunction0(emptyRecord), encodeMessage = js.Any.fromFunction1(encodeMessage), encodeTnf = js.Any.fromFunction6(encodeTnf), mimeMediaRecord = js.Any.fromFunction3(mimeMediaRecord), record = js.Any.fromFunction4(record), smartPoster = js.Any.fromFunction2(smartPoster), textHelper = textHelper, textRecord = js.Any.fromFunction3(textRecord), tnfToString = js.Any.fromFunction1(tnfToString), uriHelper = uriHelper, uriRecord = js.Any.fromFunction2(uriRecord))
   
     __obj.asInstanceOf[Ndef]
   }

@@ -8,31 +8,19 @@ import scala.scalajs.js.annotation._
 @JSImport("vm", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def compileFunction(
-    code: java.lang.String,
-    params: js.Array[java.lang.String],
-    options: nodeLib.vmMod.CompileFunctionOptions
-  ): js.Function = js.native
-  def createContext(): nodeLib.vmMod.Context = js.native
-  def createContext(sandbox: nodeLib.vmMod.Context): nodeLib.vmMod.Context = js.native
-  def isContext(sandbox: nodeLib.vmMod.Context): scala.Boolean = js.native
-  def runInContext(code: java.lang.String, contextifiedSandbox: nodeLib.vmMod.Context): js.Any = js.native
-  def runInContext(code: java.lang.String, contextifiedSandbox: nodeLib.vmMod.Context, options: java.lang.String): js.Any = js.native
-  def runInContext(
-    code: java.lang.String,
-    contextifiedSandbox: nodeLib.vmMod.Context,
-    options: nodeLib.vmMod.RunningScriptOptions
-  ): js.Any = js.native
+  def compileFunction(code: java.lang.String, params: js.Array[java.lang.String], options: CompileFunctionOptions): js.Function = js.native
+  def createContext(): Context = js.native
+  def createContext(sandbox: Context): Context = js.native
+  def isContext(sandbox: Context): scala.Boolean = js.native
+  def runInContext(code: java.lang.String, contextifiedSandbox: Context): js.Any = js.native
+  def runInContext(code: java.lang.String, contextifiedSandbox: Context, options: java.lang.String): js.Any = js.native
+  def runInContext(code: java.lang.String, contextifiedSandbox: Context, options: RunningScriptOptions): js.Any = js.native
   def runInNewContext(code: java.lang.String): js.Any = js.native
-  def runInNewContext(code: java.lang.String, sandbox: nodeLib.vmMod.Context): js.Any = js.native
-  def runInNewContext(code: java.lang.String, sandbox: nodeLib.vmMod.Context, options: java.lang.String): js.Any = js.native
-  def runInNewContext(
-    code: java.lang.String,
-    sandbox: nodeLib.vmMod.Context,
-    options: nodeLib.vmMod.RunningScriptOptions
-  ): js.Any = js.native
+  def runInNewContext(code: java.lang.String, sandbox: Context): js.Any = js.native
+  def runInNewContext(code: java.lang.String, sandbox: Context, options: java.lang.String): js.Any = js.native
+  def runInNewContext(code: java.lang.String, sandbox: Context, options: RunningScriptOptions): js.Any = js.native
   def runInThisContext(code: java.lang.String): js.Any = js.native
   def runInThisContext(code: java.lang.String, options: java.lang.String): js.Any = js.native
-  def runInThisContext(code: java.lang.String, options: nodeLib.vmMod.RunningScriptOptions): js.Any = js.native
+  def runInThisContext(code: java.lang.String, options: RunningScriptOptions): js.Any = js.native
 }
 

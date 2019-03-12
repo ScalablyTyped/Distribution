@@ -9,8 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def default(): dndDashCoreLib.libCjsInterfacesMod.BackendFactory = js.native
-  def default(
-    option: reactDashDndDashTouchDashBackendLib.reactDashDndDashTouchDashBackendMod.TouchBackendOptions
-  ): dndDashCoreLib.libCjsInterfacesMod.BackendFactory = js.native
+  def default(option: TouchBackendOptions): dndDashCoreLib.libCjsInterfacesMod.BackendFactory = js.native
 }
 

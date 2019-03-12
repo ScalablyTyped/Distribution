@@ -75,14 +75,14 @@ object TableChangedEventArgs {
   def apply(
     address: java.lang.String,
     changeType: DataChangeType | officeDashJsLib.officeDashJsLibStrings.Unknown | officeDashJsLib.officeDashJsLibStrings.RangeEdited | officeDashJsLib.officeDashJsLibStrings.RowInserted | officeDashJsLib.officeDashJsLibStrings.RowDeleted | officeDashJsLib.officeDashJsLibStrings.ColumnInserted | officeDashJsLib.officeDashJsLibStrings.ColumnDeleted | officeDashJsLib.officeDashJsLibStrings.CellInserted | officeDashJsLib.officeDashJsLibStrings.CellDeleted,
-    getRange: js.Function1[RequestContext, Range],
-    getRangeOrNullObject: js.Function1[RequestContext, Range],
+    getRange: RequestContext => Range,
+    getRangeOrNullObject: RequestContext => Range,
     source: EventSource | officeDashJsLib.officeDashJsLibStrings.Local | officeDashJsLib.officeDashJsLibStrings.Remote,
     tableId: java.lang.String,
     `type`: officeDashJsLib.officeDashJsLibStrings.TableChanged,
     worksheetId: java.lang.String
   ): TableChangedEventArgs = {
-    val __obj = js.Dynamic.literal(address = address, changeType = changeType.asInstanceOf[js.Any], getRange = getRange, getRangeOrNullObject = getRangeOrNullObject, source = source.asInstanceOf[js.Any], tableId = tableId, worksheetId = worksheetId)
+    val __obj = js.Dynamic.literal(address = address, changeType = changeType.asInstanceOf[js.Any], getRange = js.Any.fromFunction1(getRange), getRangeOrNullObject = js.Any.fromFunction1(getRangeOrNullObject), source = source.asInstanceOf[js.Any], tableId = tableId, worksheetId = worksheetId)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TableChangedEventArgs]
   }

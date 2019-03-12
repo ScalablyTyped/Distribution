@@ -26,15 +26,10 @@ object ClientUtils {
   @scala.inline
   def apply(
     RealtimeLoader: RealtimeLoaderFactory,
-    createRealtimeFile: js.Function3[
-      java.lang.String, 
-      java.lang.String, 
-      js.Function1[/* file */ DriveAPIFileResource, scala.Unit], 
-      scala.Unit
-    ],
+    createRealtimeFile: (java.lang.String, java.lang.String, js.Function1[/* file */ DriveAPIFileResource, scala.Unit]) => scala.Unit,
     params: googleDashDriveDashRealtimeDashApiLib.Anon_FileIds
   ): ClientUtils = {
-    val __obj = js.Dynamic.literal(RealtimeLoader = RealtimeLoader, createRealtimeFile = createRealtimeFile, params = params)
+    val __obj = js.Dynamic.literal(RealtimeLoader = RealtimeLoader, createRealtimeFile = js.Any.fromFunction3(createRealtimeFile), params = params)
   
     __obj.asInstanceOf[ClientUtils]
   }

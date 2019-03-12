@@ -26,26 +26,26 @@ trait Unit extends _MathType {
 object Unit {
   @scala.inline
   def apply(
-    abs: js.Function1[Unit, Unit],
-    clone: js.Function0[Unit],
-    divide: js.Function1[Unit, Unit],
-    equalBase: js.Function1[Unit, scala.Boolean],
-    equals: js.Function1[Unit, scala.Boolean],
-    format: js.Function1[FormatOptions, java.lang.String],
-    formatUnits: js.Function0[java.lang.String],
-    hasBase: js.Function1[js.Any, scala.Boolean],
-    multiply: js.Function1[Unit, Unit],
-    pow: js.Function1[Unit, Unit],
-    splitUnit: js.Function1[js.Array[java.lang.String | Unit], js.Array[Unit]],
-    to: js.Function1[java.lang.String, Unit],
-    toJSON: js.Function0[MathJSON],
-    toNumber: js.Function1[java.lang.String, scala.Double],
-    toNumeric: js.Function1[java.lang.String, scala.Double | Fraction | BigNumber],
-    toSI: js.Function0[Unit],
-    toString: js.Function0[java.lang.String],
-    valueOf: js.Function0[java.lang.String]
+    abs: Unit => Unit,
+    clone: () => Unit,
+    divide: Unit => Unit,
+    equalBase: Unit => scala.Boolean,
+    equals: Unit => scala.Boolean,
+    format: FormatOptions => java.lang.String,
+    formatUnits: () => java.lang.String,
+    hasBase: js.Any => scala.Boolean,
+    multiply: Unit => Unit,
+    pow: Unit => Unit,
+    splitUnit: js.Array[java.lang.String | Unit] => js.Array[Unit],
+    to: java.lang.String => Unit,
+    toJSON: () => MathJSON,
+    toNumber: java.lang.String => scala.Double,
+    toNumeric: java.lang.String => scala.Double | Fraction | BigNumber,
+    toSI: () => Unit,
+    toString: () => java.lang.String,
+    valueOf: () => java.lang.String
   ): Unit = {
-    val __obj = js.Dynamic.literal(abs = abs, clone = clone, divide = divide, equalBase = equalBase, equals = equals, format = format, formatUnits = formatUnits, hasBase = hasBase, multiply = multiply, pow = pow, splitUnit = splitUnit, to = to, toJSON = toJSON, toNumber = toNumber, toNumeric = toNumeric, toSI = toSI, toString = toString, valueOf = valueOf)
+    val __obj = js.Dynamic.literal(abs = js.Any.fromFunction1(abs), clone = js.Any.fromFunction0(clone), divide = js.Any.fromFunction1(divide), equalBase = js.Any.fromFunction1(equalBase), equals = js.Any.fromFunction1(equals), format = js.Any.fromFunction1(format), formatUnits = js.Any.fromFunction0(formatUnits), hasBase = js.Any.fromFunction1(hasBase), multiply = js.Any.fromFunction1(multiply), pow = js.Any.fromFunction1(pow), splitUnit = js.Any.fromFunction1(splitUnit), to = js.Any.fromFunction1(to), toJSON = js.Any.fromFunction0(toJSON), toNumber = js.Any.fromFunction1(toNumber), toNumeric = js.Any.fromFunction1(toNumeric), toSI = js.Any.fromFunction0(toSI), toString = js.Any.fromFunction0(toString), valueOf = js.Any.fromFunction0(valueOf))
   
     __obj.asInstanceOf[Unit]
   }

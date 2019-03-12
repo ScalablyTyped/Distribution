@@ -33,28 +33,13 @@ trait AchievementsResource extends js.Object {
 object AchievementsResource {
   @scala.inline
   def apply(
-    reset: js.Function1[
-      gapiDotClientDotGamesmanagementLib.Anon_AchievementId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AchievementResetResponse]
-    ],
-    resetAll: js.Function1[
-      gapiDotClientDotGamesmanagementLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AchievementResetAllResponse]
-    ],
-    resetAllForAllPlayers: js.Function1[
-      gapiDotClientDotGamesmanagementLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    resetForAllPlayers: js.Function1[
-      gapiDotClientDotGamesmanagementLib.Anon_AchievementId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    resetMultipleForAllPlayers: js.Function1[
-      gapiDotClientDotGamesmanagementLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ]
+    reset: gapiDotClientDotGamesmanagementLib.Anon_AchievementId => gapiDotClientLib.gapiNs.clientNs.Request[AchievementResetResponse],
+    resetAll: gapiDotClientDotGamesmanagementLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[AchievementResetAllResponse],
+    resetAllForAllPlayers: gapiDotClientDotGamesmanagementLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    resetForAllPlayers: gapiDotClientDotGamesmanagementLib.Anon_AchievementId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    resetMultipleForAllPlayers: gapiDotClientDotGamesmanagementLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   ): AchievementsResource = {
-    val __obj = js.Dynamic.literal(reset = reset, resetAll = resetAll, resetAllForAllPlayers = resetAllForAllPlayers, resetForAllPlayers = resetForAllPlayers, resetMultipleForAllPlayers = resetMultipleForAllPlayers)
+    val __obj = js.Dynamic.literal(reset = js.Any.fromFunction1(reset), resetAll = js.Any.fromFunction1(resetAll), resetAllForAllPlayers = js.Any.fromFunction1(resetAllForAllPlayers), resetForAllPlayers = js.Any.fromFunction1(resetForAllPlayers), resetMultipleForAllPlayers = js.Any.fromFunction1(resetMultipleForAllPlayers))
   
     __obj.asInstanceOf[AchievementsResource]
   }

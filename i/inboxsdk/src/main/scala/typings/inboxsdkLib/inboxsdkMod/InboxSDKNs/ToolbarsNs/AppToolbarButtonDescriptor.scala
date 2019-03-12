@@ -18,13 +18,13 @@ object AppToolbarButtonDescriptor {
   @scala.inline
   def apply(
     iconUrl: java.lang.String,
-    onClick: js.Function1[AppToolbarButtonEvent, scala.Unit],
+    onClick: AppToolbarButtonEvent => scala.Unit,
     title: java.lang.String,
     arrowColor: java.lang.String = null,
     iconClass: java.lang.String = null,
     titleClass: java.lang.String = null
   ): AppToolbarButtonDescriptor = {
-    val __obj = js.Dynamic.literal(iconUrl = iconUrl, onClick = onClick, title = title)
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl, onClick = js.Any.fromFunction1(onClick), title = title)
     if (arrowColor != null) __obj.updateDynamic("arrowColor")(arrowColor)
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     if (titleClass != null) __obj.updateDynamic("titleClass")(titleClass)

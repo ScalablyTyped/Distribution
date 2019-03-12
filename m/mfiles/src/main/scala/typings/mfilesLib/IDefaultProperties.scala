@@ -15,12 +15,12 @@ trait IDefaultProperties extends js.Object {
 object IDefaultProperties {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IDefaultProperty, scala.Unit],
+    Add: (scala.Double, IDefaultProperty) => scala.Unit,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IDefaultProperty],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => IDefaultProperty,
+    Remove: scala.Double => scala.Unit
   ): IDefaultProperties = {
-    val __obj = js.Dynamic.literal(Add = Add, Count = Count, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IDefaultProperties]
   }

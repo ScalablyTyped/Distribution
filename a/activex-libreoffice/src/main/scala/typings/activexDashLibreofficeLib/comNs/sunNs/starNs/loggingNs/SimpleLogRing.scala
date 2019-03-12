@@ -22,13 +22,13 @@ trait SimpleLogRing extends XSimpleLogRing {
 object SimpleLogRing {
   @scala.inline
   def apply(
-    CollectedLog: activexDashInteropLib.SafeArray[java.lang.String],
-    create: js.Function0[scala.Unit],
-    createWithSize: js.Function1[scala.Double, scala.Unit],
-    getCollectedLog: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    logString: js.Function1[java.lang.String, scala.Unit]
+    CollectedLog: stdLib.SafeArray[java.lang.String],
+    create: () => scala.Unit,
+    createWithSize: scala.Double => scala.Unit,
+    getCollectedLog: () => stdLib.SafeArray[java.lang.String],
+    logString: java.lang.String => scala.Unit
   ): SimpleLogRing = {
-    val __obj = js.Dynamic.literal(CollectedLog = CollectedLog, create = create, createWithSize = createWithSize, getCollectedLog = getCollectedLog, logString = logString)
+    val __obj = js.Dynamic.literal(CollectedLog = CollectedLog, create = js.Any.fromFunction0(create), createWithSize = js.Any.fromFunction1(createWithSize), getCollectedLog = js.Any.fromFunction0(getCollectedLog), logString = js.Any.fromFunction1(logString))
   
     __obj.asInstanceOf[SimpleLogRing]
   }

@@ -21,28 +21,24 @@ object XMozillaBootstrap {
   def apply(
     CurrentProduct: MozillaProductType,
     CurrentProfile: java.lang.String,
-    Run: js.Function1[XCodeProxy, scala.Double],
-    acquire: js.Function0[scala.Unit],
-    bootupProfile: js.Function2[MozillaProductType, java.lang.String, scala.Double],
-    getCurrentProduct: js.Function0[MozillaProductType],
-    getCurrentProfile: js.Function0[java.lang.String],
-    getDefaultProfile: js.Function1[MozillaProductType, java.lang.String],
-    getProfileCount: js.Function1[MozillaProductType, scala.Double],
-    getProfileExists: js.Function2[MozillaProductType, java.lang.String, scala.Boolean],
-    getProfileList: js.Function2[
-      MozillaProductType, 
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]], 
-      scala.Double
-    ],
-    getProfilePath: js.Function2[MozillaProductType, java.lang.String, java.lang.String],
-    isCurrentProfileLocked: js.Function0[scala.Boolean],
-    isProfileLocked: js.Function2[MozillaProductType, java.lang.String, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setCurrentProfile: js.Function2[MozillaProductType, java.lang.String, java.lang.String],
-    shutdownProfile: js.Function0[scala.Double]
+    Run: XCodeProxy => scala.Double,
+    acquire: () => scala.Unit,
+    bootupProfile: (MozillaProductType, java.lang.String) => scala.Double,
+    getCurrentProduct: () => MozillaProductType,
+    getCurrentProfile: () => java.lang.String,
+    getDefaultProfile: MozillaProductType => java.lang.String,
+    getProfileCount: MozillaProductType => scala.Double,
+    getProfileExists: (MozillaProductType, java.lang.String) => scala.Boolean,
+    getProfileList: (MozillaProductType, js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]]) => scala.Double,
+    getProfilePath: (MozillaProductType, java.lang.String) => java.lang.String,
+    isCurrentProfileLocked: () => scala.Boolean,
+    isProfileLocked: (MozillaProductType, java.lang.String) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setCurrentProfile: (MozillaProductType, java.lang.String) => java.lang.String,
+    shutdownProfile: () => scala.Double
   ): XMozillaBootstrap = {
-    val __obj = js.Dynamic.literal(CurrentProduct = CurrentProduct, CurrentProfile = CurrentProfile, Run = Run, acquire = acquire, bootupProfile = bootupProfile, getCurrentProduct = getCurrentProduct, getCurrentProfile = getCurrentProfile, getDefaultProfile = getDefaultProfile, getProfileCount = getProfileCount, getProfileExists = getProfileExists, getProfileList = getProfileList, getProfilePath = getProfilePath, isCurrentProfileLocked = isCurrentProfileLocked, isProfileLocked = isProfileLocked, queryInterface = queryInterface, release = release, setCurrentProfile = setCurrentProfile, shutdownProfile = shutdownProfile)
+    val __obj = js.Dynamic.literal(CurrentProduct = CurrentProduct, CurrentProfile = CurrentProfile, Run = js.Any.fromFunction1(Run), acquire = js.Any.fromFunction0(acquire), bootupProfile = js.Any.fromFunction2(bootupProfile), getCurrentProduct = js.Any.fromFunction0(getCurrentProduct), getCurrentProfile = js.Any.fromFunction0(getCurrentProfile), getDefaultProfile = js.Any.fromFunction1(getDefaultProfile), getProfileCount = js.Any.fromFunction1(getProfileCount), getProfileExists = js.Any.fromFunction2(getProfileExists), getProfileList = js.Any.fromFunction2(getProfileList), getProfilePath = js.Any.fromFunction2(getProfilePath), isCurrentProfileLocked = js.Any.fromFunction0(isCurrentProfileLocked), isProfileLocked = js.Any.fromFunction2(isProfileLocked), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setCurrentProfile = js.Any.fromFunction2(setCurrentProfile), shutdownProfile = js.Any.fromFunction0(shutdownProfile))
   
     __obj.asInstanceOf[XMozillaBootstrap]
   }

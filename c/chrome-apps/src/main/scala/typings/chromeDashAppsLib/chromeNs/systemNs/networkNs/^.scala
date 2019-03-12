@@ -9,11 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /** Retrieves information about local adapters on this system. */
-  def getNetworkInterfaces(
-    callback: js.Function1[
-      /* networkInterfaces */ js.Array[chromeDashAppsLib.chromeNs.systemNs.networkNs.NetworkInterface], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def getNetworkInterfaces(callback: js.Function1[/* networkInterfaces */ js.Array[NetworkInterface], scala.Unit]): scala.Unit = js.native
 }
 

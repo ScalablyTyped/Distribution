@@ -19,13 +19,13 @@ trait Element extends ParentNode {
 object Element {
   @scala.inline
   def apply(
-    append: js.Function1[/* repeated */ stdLib.Node | java.lang.String, scala.Unit],
+    append: /* repeated */ stdLib.Node | java.lang.String => scala.Unit,
     children: stdLib.HTMLCollection,
-    closest: js.Function1[java.lang.String, Element | scala.Null],
-    matches: js.Function1[java.lang.String, scala.Boolean],
-    prepend: js.Function1[/* repeated */ stdLib.Node | java.lang.String, scala.Unit]
+    closest: java.lang.String => Element | scala.Null,
+    matches: java.lang.String => scala.Boolean,
+    prepend: /* repeated */ stdLib.Node | java.lang.String => scala.Unit
   ): Element = {
-    val __obj = js.Dynamic.literal(append = append, children = children, closest = closest, matches = matches, prepend = prepend)
+    val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), children = children, closest = js.Any.fromFunction1(closest), matches = js.Any.fromFunction1(matches), prepend = js.Any.fromFunction1(prepend))
   
     __obj.asInstanceOf[Element]
   }

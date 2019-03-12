@@ -26,9 +26,9 @@ object IBackgroundTaskRegistration {
     name: java.lang.String,
     taskId: java.lang.String,
     trigger: IBackgroundTrigger,
-    unregister: js.Function1[scala.Boolean, scala.Unit]
+    unregister: scala.Boolean => scala.Unit
   ): IBackgroundTaskRegistration = {
-    val __obj = js.Dynamic.literal(name = name, taskId = taskId, trigger = trigger, unregister = unregister)
+    val __obj = js.Dynamic.literal(name = name, taskId = taskId, trigger = trigger, unregister = js.Any.fromFunction1(unregister))
   
     __obj.asInstanceOf[IBackgroundTaskRegistration]
   }

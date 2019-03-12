@@ -16,13 +16,13 @@ trait SpreadsheetTriggerBuilder extends js.Object {
 object SpreadsheetTriggerBuilder {
   @scala.inline
   def apply(
-    create: js.Function0[Trigger],
-    onChange: js.Function0[SpreadsheetTriggerBuilder],
-    onEdit: js.Function0[SpreadsheetTriggerBuilder],
-    onFormSubmit: js.Function0[SpreadsheetTriggerBuilder],
-    onOpen: js.Function0[SpreadsheetTriggerBuilder]
+    create: () => Trigger,
+    onChange: () => SpreadsheetTriggerBuilder,
+    onEdit: () => SpreadsheetTriggerBuilder,
+    onFormSubmit: () => SpreadsheetTriggerBuilder,
+    onOpen: () => SpreadsheetTriggerBuilder
   ): SpreadsheetTriggerBuilder = {
-    val __obj = js.Dynamic.literal(create = create, onChange = onChange, onEdit = onEdit, onFormSubmit = onFormSubmit, onOpen = onOpen)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), onChange = js.Any.fromFunction0(onChange), onEdit = js.Any.fromFunction0(onEdit), onFormSubmit = js.Any.fromFunction0(onFormSubmit), onOpen = js.Any.fromFunction0(onOpen))
   
     __obj.asInstanceOf[SpreadsheetTriggerBuilder]
   }

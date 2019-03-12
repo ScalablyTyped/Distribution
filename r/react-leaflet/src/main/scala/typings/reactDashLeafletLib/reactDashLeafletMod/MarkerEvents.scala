@@ -25,36 +25,36 @@ trait MarkerEvents extends js.Object {
 object MarkerEvents {
   @scala.inline
   def apply(
-    onadd: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    onclick: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null,
-    oncontextmenu: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null,
-    ondblclick: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null,
-    ondrag: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    ondragend: js.Function1[/* event */ leafletLib.leafletMod.DragEndEvent, scala.Unit] = null,
-    ondragstart: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    onmousedown: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null,
-    onmouseout: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null,
-    onmouseover: js.Function1[/* event */ leafletLib.leafletMod.LeafletMouseEvent, scala.Unit] = null,
-    onmove: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null,
-    onpopupclose: js.Function1[/* event */ leafletLib.leafletMod.PopupEvent, scala.Unit] = null,
-    onpopupopen: js.Function1[/* event */ leafletLib.leafletMod.PopupEvent, scala.Unit] = null,
-    onremove: js.Function1[/* event */ leafletLib.leafletMod.LeafletEvent, scala.Unit] = null
+    onadd: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    onclick: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null,
+    oncontextmenu: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null,
+    ondblclick: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null,
+    ondrag: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    ondragend: /* event */ leafletLib.leafletMod.DragEndEvent => scala.Unit = null,
+    ondragstart: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    onmousedown: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null,
+    onmouseout: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null,
+    onmouseover: /* event */ leafletLib.leafletMod.LeafletMouseEvent => scala.Unit = null,
+    onmove: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null,
+    onpopupclose: /* event */ leafletLib.leafletMod.PopupEvent => scala.Unit = null,
+    onpopupopen: /* event */ leafletLib.leafletMod.PopupEvent => scala.Unit = null,
+    onremove: /* event */ leafletLib.leafletMod.LeafletEvent => scala.Unit = null
   ): MarkerEvents = {
     val __obj = js.Dynamic.literal()
-    if (onadd != null) __obj.updateDynamic("onadd")(onadd)
-    if (onclick != null) __obj.updateDynamic("onclick")(onclick)
-    if (oncontextmenu != null) __obj.updateDynamic("oncontextmenu")(oncontextmenu)
-    if (ondblclick != null) __obj.updateDynamic("ondblclick")(ondblclick)
-    if (ondrag != null) __obj.updateDynamic("ondrag")(ondrag)
-    if (ondragend != null) __obj.updateDynamic("ondragend")(ondragend)
-    if (ondragstart != null) __obj.updateDynamic("ondragstart")(ondragstart)
-    if (onmousedown != null) __obj.updateDynamic("onmousedown")(onmousedown)
-    if (onmouseout != null) __obj.updateDynamic("onmouseout")(onmouseout)
-    if (onmouseover != null) __obj.updateDynamic("onmouseover")(onmouseover)
-    if (onmove != null) __obj.updateDynamic("onmove")(onmove)
-    if (onpopupclose != null) __obj.updateDynamic("onpopupclose")(onpopupclose)
-    if (onpopupopen != null) __obj.updateDynamic("onpopupopen")(onpopupopen)
-    if (onremove != null) __obj.updateDynamic("onremove")(onremove)
+    if (onadd != null) __obj.updateDynamic("onadd")(js.Any.fromFunction1(onadd))
+    if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction1(onclick))
+    if (oncontextmenu != null) __obj.updateDynamic("oncontextmenu")(js.Any.fromFunction1(oncontextmenu))
+    if (ondblclick != null) __obj.updateDynamic("ondblclick")(js.Any.fromFunction1(ondblclick))
+    if (ondrag != null) __obj.updateDynamic("ondrag")(js.Any.fromFunction1(ondrag))
+    if (ondragend != null) __obj.updateDynamic("ondragend")(js.Any.fromFunction1(ondragend))
+    if (ondragstart != null) __obj.updateDynamic("ondragstart")(js.Any.fromFunction1(ondragstart))
+    if (onmousedown != null) __obj.updateDynamic("onmousedown")(js.Any.fromFunction1(onmousedown))
+    if (onmouseout != null) __obj.updateDynamic("onmouseout")(js.Any.fromFunction1(onmouseout))
+    if (onmouseover != null) __obj.updateDynamic("onmouseover")(js.Any.fromFunction1(onmouseover))
+    if (onmove != null) __obj.updateDynamic("onmove")(js.Any.fromFunction1(onmove))
+    if (onpopupclose != null) __obj.updateDynamic("onpopupclose")(js.Any.fromFunction1(onpopupclose))
+    if (onpopupopen != null) __obj.updateDynamic("onpopupopen")(js.Any.fromFunction1(onpopupopen))
+    if (onremove != null) __obj.updateDynamic("onremove")(js.Any.fromFunction1(onremove))
     __obj.asInstanceOf[MarkerEvents]
   }
 }

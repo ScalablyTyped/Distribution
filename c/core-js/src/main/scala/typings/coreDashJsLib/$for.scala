@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait $for[T]
-  extends nodeLib.IterableIterator[T] {
+  extends stdLib.IterableIterator[T] {
   def array(): Array[T] = js.native
   def array[U](callbackfn: js.Function2[/* value */ T, /* key */ js.Any, U]): Array[U] = js.native
   def array[U](callbackfn: js.Function2[/* value */ T, /* key */ js.Any, U], thisArg: js.Any): Array[U] = js.native

@@ -40,14 +40,14 @@ object INDDownloadEngine {
     bufferFullMaxThresholdInSamples: scala.Double,
     bufferFullMinThresholdInSamples: scala.Double,
     canSeek: scala.Boolean,
-    close: js.Function0[scala.Unit],
+    close: () => scala.Unit,
     notifier: NDDownloadEngineNotifier,
-    open: js.Function2[winrtDashUwpLib.WindowsNs.FoundationNs.Uri, js.Array[scala.Double], scala.Unit],
-    pause: js.Function0[scala.Unit],
-    resume: js.Function0[scala.Unit],
-    seek: js.Function1[scala.Double, scala.Unit]
+    open: (winrtDashUwpLib.WindowsNs.FoundationNs.Uri, js.Array[scala.Double]) => scala.Unit,
+    pause: () => scala.Unit,
+    resume: () => scala.Unit,
+    seek: scala.Double => scala.Unit
   ): INDDownloadEngine = {
-    val __obj = js.Dynamic.literal(bufferFullMaxThresholdInSamples = bufferFullMaxThresholdInSamples, bufferFullMinThresholdInSamples = bufferFullMinThresholdInSamples, canSeek = canSeek, close = close, notifier = notifier, open = open, pause = pause, resume = resume, seek = seek)
+    val __obj = js.Dynamic.literal(bufferFullMaxThresholdInSamples = bufferFullMaxThresholdInSamples, bufferFullMinThresholdInSamples = bufferFullMinThresholdInSamples, canSeek = canSeek, close = js.Any.fromFunction0(close), notifier = notifier, open = js.Any.fromFunction2(open), pause = js.Any.fromFunction0(pause), resume = js.Any.fromFunction0(resume), seek = js.Any.fromFunction1(seek))
   
     __obj.asInstanceOf[INDDownloadEngine]
   }

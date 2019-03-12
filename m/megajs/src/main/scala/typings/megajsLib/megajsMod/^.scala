@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("megajs", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def default(options: megajsLib.megajsMod.StorageOptions): megajsLib.megajsMod.Storage = js.native
-  def default(options: megajsLib.megajsMod.StorageOptions, cb: js.Any): megajsLib.megajsMod.Storage = js.native
+  def default(options: StorageOptions): Storage = js.native
+  def default(options: StorageOptions, cb: js.Any): Storage = js.native
 }
 

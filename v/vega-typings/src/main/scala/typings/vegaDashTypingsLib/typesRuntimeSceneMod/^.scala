@@ -9,18 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def sceneVisit(
-    scene: vegaDashTypingsLib.typesRuntimeSceneMod.SceneGroup,
-    itemCallback: js.Function1[
-      /* item */ vegaDashTypingsLib.typesRuntimeSceneMod.Scene | vegaDashTypingsLib.typesRuntimeSceneMod.SceneGroup | vegaDashTypingsLib.typesRuntimeSceneMod.SceneItem, 
-      scala.Unit
-    ]
+    scene: SceneGroup,
+    itemCallback: js.Function1[/* item */ Scene | SceneGroup | SceneItem, scala.Unit]
   ): scala.Unit = js.native
-  def sceneVisit(
-    scene: vegaDashTypingsLib.typesRuntimeSceneMod.Scene,
-    itemCallback: js.Function1[
-      /* item */ vegaDashTypingsLib.typesRuntimeSceneMod.Scene | vegaDashTypingsLib.typesRuntimeSceneMod.SceneGroup | vegaDashTypingsLib.typesRuntimeSceneMod.SceneItem, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def sceneVisit(scene: Scene, itemCallback: js.Function1[/* item */ Scene | SceneGroup | SceneItem, scala.Unit]): scala.Unit = js.native
 }
 

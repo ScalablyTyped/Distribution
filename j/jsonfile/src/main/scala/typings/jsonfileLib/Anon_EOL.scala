@@ -23,7 +23,7 @@ object Anon_EOL {
     flag: java.lang.String = null,
     fs: jsonfileLib.jsonfileMod.FS = null,
     mode: java.lang.String | scala.Double = null,
-    replacer: js.Function2[/* key */ java.lang.String, /* value */ js.Any, _] = null,
+    replacer: (/* key */ java.lang.String, /* value */ js.Any) => _ = null,
     spaces: java.lang.String | scala.Double = null
   ): Anon_EOL = {
     val __obj = js.Dynamic.literal()
@@ -32,7 +32,7 @@ object Anon_EOL {
     if (flag != null) __obj.updateDynamic("flag")(flag)
     if (fs != null) __obj.updateDynamic("fs")(fs)
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (replacer != null) __obj.updateDynamic("replacer")(replacer)
+    if (replacer != null) __obj.updateDynamic("replacer")(js.Any.fromFunction2(replacer))
     if (spaces != null) __obj.updateDynamic("spaces")(spaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EOL]
   }

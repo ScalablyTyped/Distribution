@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.FormField")
 @js.native
 class FormField protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var CalculateOnExit: scala.Boolean = js.native
-  val CheckBox: CheckBox = js.native
+  val CheckBox: activexDashWordLib.WordNs.CheckBox = js.native
   val Creator: scala.Double = js.native
-  val DropDown: DropDown = js.native
+  val DropDown: activexDashWordLib.WordNs.DropDown = js.native
   var Enabled: scala.Boolean = js.native
   var EntryMacro: java.lang.String = js.native
   var ExitMacro: java.lang.String = js.native
@@ -23,10 +23,10 @@ class FormField protected () extends js.Object {
   var OwnStatus: scala.Boolean = js.native
   val Parent: js.Any = js.native
   val Previous: FormField = js.native
-  val Range: Range = js.native
+  val Range: activexDashWordLib.WordNs.Range = js.native
   var Result: java.lang.String = js.native
   var StatusText: java.lang.String = js.native
-  val TextInput: TextInput = js.native
+  val TextInput: activexDashWordLib.WordNs.TextInput = js.native
   val Type: WdFieldType = js.native
   var `Word.FormField_typekey`: FormField = js.native
   def Copy(): scala.Unit = js.native

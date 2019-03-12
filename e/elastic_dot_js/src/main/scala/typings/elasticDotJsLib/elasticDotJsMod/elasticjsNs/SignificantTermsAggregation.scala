@@ -78,20 +78,20 @@ trait SignificantTermsAggregation extends Aggregation {
 object SignificantTermsAggregation {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    agg: js.Function1[Aggregation, SignificantTermsAggregation],
-    aggregation: js.Function1[Aggregation, SignificantTermsAggregation],
-    exclude: js.Function2[java.lang.String, java.lang.String, SignificantTermsAggregation],
-    executionHint: js.Function1[java.lang.String, SignificantTermsAggregation],
-    field: js.Function1[java.lang.String, SignificantTermsAggregation],
-    format: js.Function1[java.lang.String, SignificantTermsAggregation],
-    include: js.Function2[java.lang.String, java.lang.String, SignificantTermsAggregation],
-    minDocCount: js.Function1[scala.Double, SignificantTermsAggregation],
-    shardSize: js.Function1[scala.Double, SignificantTermsAggregation],
-    size: js.Function1[scala.Double, SignificantTermsAggregation],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    agg: Aggregation => SignificantTermsAggregation,
+    aggregation: Aggregation => SignificantTermsAggregation,
+    exclude: (java.lang.String, java.lang.String) => SignificantTermsAggregation,
+    executionHint: java.lang.String => SignificantTermsAggregation,
+    field: java.lang.String => SignificantTermsAggregation,
+    format: java.lang.String => SignificantTermsAggregation,
+    include: (java.lang.String, java.lang.String) => SignificantTermsAggregation,
+    minDocCount: scala.Double => SignificantTermsAggregation,
+    shardSize: scala.Double => SignificantTermsAggregation,
+    size: scala.Double => SignificantTermsAggregation,
+    toJSON: () => js.Any
   ): SignificantTermsAggregation = {
-    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, exclude = exclude, executionHint = executionHint, field = field, format = format, include = include, minDocCount = minDocCount, shardSize = shardSize, size = size, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), agg = js.Any.fromFunction1(agg), aggregation = js.Any.fromFunction1(aggregation), exclude = js.Any.fromFunction2(exclude), executionHint = js.Any.fromFunction1(executionHint), field = js.Any.fromFunction1(field), format = js.Any.fromFunction1(format), include = js.Any.fromFunction2(include), minDocCount = js.Any.fromFunction1(minDocCount), shardSize = js.Any.fromFunction1(shardSize), size = js.Any.fromFunction1(size), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[SignificantTermsAggregation]
   }

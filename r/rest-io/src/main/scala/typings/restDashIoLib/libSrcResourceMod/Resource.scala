@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Resource protected () extends js.Object {
   def this(resDef: IResource) = this()
-  var app: expressLib.expressMod.eNs.Application = js.native
+  @JSName("app")
+  var app_Original: expressLib.expressMod.eNs.Application = js.native
   var baseUrl: java.lang.String = js.native
   var db: mongooseLib.mongooseMod.Mongoose = js.native
   var model: mongooseLib.mongooseMod.Model[mongooseLib.mongooseMod.Document, js.Object] = js.native
@@ -21,6 +22,23 @@ class Resource protected () extends js.Object {
   var resDef: IResource = js.native
   var router: expressLib.expressMod.eNs.Router = js.native
   var url: java.lang.String = js.native
+  /**
+    * Express instance itself is a request handler, which could be invoked without
+    * third argument.
+    */
+  def app(
+    req: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request,
+    res: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response
+  ): js.Any = js.native
+  def app(
+    req: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request,
+    res: nodeLib.httpMod.ServerResponse
+  ): js.Any = js.native
+  def app(
+    req: nodeLib.httpMod.IncomingMessage,
+    res: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response
+  ): js.Any = js.native
+  def app(req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse): js.Any = js.native
   def buildParentSearch(req: expressLib.expressMod.eNs.Request, query: js.Any): js.Any = js.native
   def buildPopulateQuery(req: expressLib.expressMod.eNs.Request): js.Any = js.native
   def buildSearchQuery(req: expressLib.expressMod.eNs.Request): js.Object = js.native
@@ -29,7 +47,7 @@ class Resource protected () extends js.Object {
   def createQuery(query: java.lang.String): js.Any = js.native
   def createRegex(query: java.lang.String): stdLib.RegExp = js.native
   def del(req: expressLib.expressMod.eNs.Request, res: expressLib.expressMod.eNs.Response): scala.Unit = js.native
-  def errorHandler(err: nodeLib.Error, res: expressLib.expressMod.eNs.Response): scala.Unit = js.native
+  def errorHandler(err: stdLib.Error, res: expressLib.expressMod.eNs.Response): scala.Unit = js.native
   def getAll(req: expressLib.expressMod.eNs.Request, res: expressLib.expressMod.eNs.Response): scala.Unit = js.native
   def getById(req: expressLib.expressMod.eNs.Request, res: expressLib.expressMod.eNs.Response): scala.Unit = js.native
   def setupRecursiveRoutes(): scala.Unit = js.native

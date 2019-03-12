@@ -12,8 +12,8 @@ trait ILoginAccounts extends js.Object {
 
 object ILoginAccounts {
   @scala.inline
-  def apply(Count: scala.Double, Item: js.Function1[scala.Double, ILoginAccount]): ILoginAccounts = {
-    val __obj = js.Dynamic.literal(Count = Count, Item = Item)
+  def apply(Count: scala.Double, Item: scala.Double => ILoginAccount): ILoginAccounts = {
+    val __obj = js.Dynamic.literal(Count = Count, Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[ILoginAccounts]
   }

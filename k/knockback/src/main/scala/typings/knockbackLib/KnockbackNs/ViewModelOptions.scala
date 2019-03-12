@@ -20,7 +20,7 @@ trait ViewModelOptions extends OptionsBase {
 object ViewModelOptions {
   @scala.inline
   def apply(
-    `if`: js.Function1[js.Any, js.Any],
+    `if`: js.Any => js.Any,
     factories: js.Any = null,
     factory: Factory = null,
     internals: js.Array[java.lang.String] = null,
@@ -31,7 +31,7 @@ object ViewModelOptions {
     store: Store = null
   ): ViewModelOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("if")(`if`)
+    __obj.updateDynamic("if")(js.Any.fromFunction1(`if`))
     if (factories != null) __obj.updateDynamic("factories")(factories)
     if (factory != null) __obj.updateDynamic("factory")(factory)
     if (internals != null) __obj.updateDynamic("internals")(internals)

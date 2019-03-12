@@ -23,32 +23,14 @@ trait PlacementsResource extends js.Object {
 object PlacementsResource {
   @scala.inline
   def apply(
-    generatetags: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltCampaignIdFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PlacementsGenerateTagsResponse]
-    ],
-    get: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Placement]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Placement]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AdvertiserIdsAltArchivedCampaignIds, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PlacementsListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Placement]
-    ],
-    update: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Placement]
-    ]
+    generatetags: gapiDotClientDotDfareportingLib.Anon_AltCampaignIdFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[PlacementsGenerateTagsResponse],
+    get: gapiDotClientDotDfareportingLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Placement],
+    insert: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Placement],
+    list: gapiDotClientDotDfareportingLib.Anon_AdvertiserIdsAltArchivedCampaignIds => gapiDotClientLib.gapiNs.clientNs.Request[PlacementsListResponse],
+    patch: gapiDotClientDotDfareportingLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Placement],
+    update: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Placement]
   ): PlacementsResource = {
-    val __obj = js.Dynamic.literal(generatetags = generatetags, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(generatetags = js.Any.fromFunction1(generatetags), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[PlacementsResource]
   }

@@ -38,14 +38,14 @@ trait XFileIdentifierConverter
 object XFileIdentifierConverter {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getFileProviderLocality: js.Function1[java.lang.String, scala.Double],
-    getFileURLFromSystemPath: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    getSystemPathFromFileURL: js.Function1[java.lang.String, java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getFileProviderLocality: java.lang.String => scala.Double,
+    getFileURLFromSystemPath: (java.lang.String, java.lang.String) => java.lang.String,
+    getSystemPathFromFileURL: java.lang.String => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XFileIdentifierConverter = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getFileProviderLocality = getFileProviderLocality, getFileURLFromSystemPath = getFileURLFromSystemPath, getSystemPathFromFileURL = getSystemPathFromFileURL, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getFileProviderLocality = js.Any.fromFunction1(getFileProviderLocality), getFileURLFromSystemPath = js.Any.fromFunction2(getFileURLFromSystemPath), getSystemPathFromFileURL = js.Any.fromFunction1(getSystemPathFromFileURL), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XFileIdentifierConverter]
   }

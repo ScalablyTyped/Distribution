@@ -14,11 +14,11 @@ trait User extends js.Object {
 object User {
   @scala.inline
   def apply(
-    clear: js.Function0[scala.Unit],
-    identify: js.Function1[java.lang.String, scala.Unit],
-    profile: js.Function1[org.scalablytyped.runtime.StringDictionary[js.Any], scala.Unit]
+    clear: () => scala.Unit,
+    identify: java.lang.String => scala.Unit,
+    profile: org.scalablytyped.runtime.StringDictionary[js.Any] => scala.Unit
   ): User = {
-    val __obj = js.Dynamic.literal(clear = clear, identify = identify, profile = profile)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), identify = js.Any.fromFunction1(identify), profile = js.Any.fromFunction1(profile))
   
     __obj.asInstanceOf[User]
   }

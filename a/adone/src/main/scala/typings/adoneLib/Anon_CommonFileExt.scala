@@ -21,18 +21,18 @@ trait Anon_CommonFileExt extends js.Object {
 object Anon_CommonFileExt {
   @scala.inline
   def apply(
-    commonFileExt: js.Function0[java.lang.String],
-    commonFileName: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    commonFileType: js.Function0[java.lang.String],
-    directoryPath: js.Function0[java.lang.String],
-    fileExt: js.Function1[java.lang.String, java.lang.String],
-    fileName: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    filePath: js.Function0[java.lang.String],
-    fileType: js.Function0[java.lang.String],
-    mimeType: js.Function0[java.lang.String],
-    semver: js.Function0[java.lang.String]
+    commonFileExt: () => java.lang.String,
+    commonFileName: (java.lang.String, java.lang.String) => java.lang.String,
+    commonFileType: () => java.lang.String,
+    directoryPath: () => java.lang.String,
+    fileExt: java.lang.String => java.lang.String,
+    fileName: (java.lang.String, java.lang.String) => java.lang.String,
+    filePath: () => java.lang.String,
+    fileType: () => java.lang.String,
+    mimeType: () => java.lang.String,
+    semver: () => java.lang.String
   ): Anon_CommonFileExt = {
-    val __obj = js.Dynamic.literal(commonFileExt = commonFileExt, commonFileName = commonFileName, commonFileType = commonFileType, directoryPath = directoryPath, fileExt = fileExt, fileName = fileName, filePath = filePath, fileType = fileType, mimeType = mimeType, semver = semver)
+    val __obj = js.Dynamic.literal(commonFileExt = js.Any.fromFunction0(commonFileExt), commonFileName = js.Any.fromFunction2(commonFileName), commonFileType = js.Any.fromFunction0(commonFileType), directoryPath = js.Any.fromFunction0(directoryPath), fileExt = js.Any.fromFunction1(fileExt), fileName = js.Any.fromFunction2(fileName), filePath = js.Any.fromFunction0(filePath), fileType = js.Any.fromFunction0(fileType), mimeType = js.Any.fromFunction0(mimeType), semver = js.Any.fromFunction0(semver))
   
     __obj.asInstanceOf[Anon_CommonFileExt]
   }

@@ -21,7 +21,7 @@ trait w3cwebsocket extends js.Object {
   def close(code: scala.Double): scala.Unit = js.native
   def close(code: scala.Double, reason: java.lang.String): scala.Unit = js.native
   def onclose(): scala.Unit = js.native
-  def onerror(error: nodeLib.Error): scala.Unit = js.native
+  def onerror(error: stdLib.Error): scala.Unit = js.native
   def onmessage(message: js.Any): scala.Unit = js.native
   def onopen(): scala.Unit = js.native
   def send(data: nodeLib.Buffer): scala.Unit = js.native

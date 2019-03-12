@@ -21,7 +21,7 @@ trait HttpOptions extends js.Object {
 object HttpOptions {
   @scala.inline
   def apply(
-    before: js.Function1[/* request */ js.Any, _] = null,
+    before: /* request */ js.Any => _ = null,
     body: js.Any = null,
     credentials: js.UndefOr[scala.Boolean] = js.undefined,
     emulateHTTP: js.UndefOr[scala.Boolean] = js.undefined,
@@ -29,11 +29,11 @@ object HttpOptions {
     headers: js.Any = null,
     method: java.lang.String = null,
     params: js.Any = null,
-    progress: js.Function1[/* event */ js.Any, _] = null,
+    progress: /* event */ js.Any => _ = null,
     url: java.lang.String = null
   ): HttpOptions = {
     val __obj = js.Dynamic.literal()
-    if (before != null) __obj.updateDynamic("before")(before)
+    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction1(before))
     if (body != null) __obj.updateDynamic("body")(body)
     if (!js.isUndefined(credentials)) __obj.updateDynamic("credentials")(credentials)
     if (!js.isUndefined(emulateHTTP)) __obj.updateDynamic("emulateHTTP")(emulateHTTP)
@@ -41,7 +41,7 @@ object HttpOptions {
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (method != null) __obj.updateDynamic("method")(method)
     if (params != null) __obj.updateDynamic("params")(params)
-    if (progress != null) __obj.updateDynamic("progress")(progress)
+    if (progress != null) __obj.updateDynamic("progress")(js.Any.fromFunction1(progress))
     if (url != null) __obj.updateDynamic("url")(url)
     __obj.asInstanceOf[HttpOptions]
   }

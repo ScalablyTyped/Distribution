@@ -15,10 +15,10 @@ object Anon_Disabled {
   @scala.inline
   def apply(
     disabled: scala.Boolean,
-    toggleOption: js.Function1[antdLib.libCheckboxGroupMod.CheckboxOptionType, scala.Unit],
+    toggleOption: antdLib.libCheckboxGroupMod.CheckboxOptionType => scala.Unit,
     value: js.Any
   ): Anon_Disabled = {
-    val __obj = js.Dynamic.literal(disabled = disabled, toggleOption = toggleOption, value = value)
+    val __obj = js.Dynamic.literal(disabled = disabled, toggleOption = js.Any.fromFunction1(toggleOption), value = value)
   
     __obj.asInstanceOf[Anon_Disabled]
   }

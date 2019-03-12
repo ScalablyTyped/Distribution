@@ -47,19 +47,13 @@ trait XCachedDynamicResultSetStubFactory
 object XCachedDynamicResultSetStubFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    connectToCache: js.Function4[
-      XDynamicResultSet, 
-      XDynamicResultSet, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[NumberedSortingInfo], 
-      XAnyCompareFactory, 
-      scala.Unit
-    ],
-    createCachedDynamicResultSetStub: js.Function1[XDynamicResultSet, XDynamicResultSet],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    connectToCache: (XDynamicResultSet, XDynamicResultSet, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[NumberedSortingInfo], XAnyCompareFactory) => scala.Unit,
+    createCachedDynamicResultSetStub: XDynamicResultSet => XDynamicResultSet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCachedDynamicResultSetStubFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, connectToCache = connectToCache, createCachedDynamicResultSetStub = createCachedDynamicResultSetStub, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), connectToCache = js.Any.fromFunction4(connectToCache), createCachedDynamicResultSetStub = js.Any.fromFunction1(createCachedDynamicResultSetStub), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCachedDynamicResultSetStubFactory]
   }

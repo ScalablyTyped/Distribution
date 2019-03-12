@@ -24,12 +24,12 @@ object XTableChartsSupplier {
   @scala.inline
   def apply(
     Charts: XTableCharts,
-    acquire: js.Function0[scala.Unit],
-    getCharts: js.Function0[XTableCharts],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getCharts: () => XTableCharts,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTableChartsSupplier = {
-    val __obj = js.Dynamic.literal(Charts = Charts, acquire = acquire, getCharts = getCharts, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Charts = Charts, acquire = js.Any.fromFunction0(acquire), getCharts = js.Any.fromFunction0(getCharts), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTableChartsSupplier]
   }

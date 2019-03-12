@@ -11,8 +11,8 @@ trait Assertion extends js.Object {
 
 object Assertion {
   @scala.inline
-  def apply(containSubset: js.Function1[js.Any, Assertion]): Assertion = {
-    val __obj = js.Dynamic.literal(containSubset = containSubset)
+  def apply(containSubset: js.Any => Assertion): Assertion = {
+    val __obj = js.Dynamic.literal(containSubset = js.Any.fromFunction1(containSubset))
   
     __obj.asInstanceOf[Assertion]
   }

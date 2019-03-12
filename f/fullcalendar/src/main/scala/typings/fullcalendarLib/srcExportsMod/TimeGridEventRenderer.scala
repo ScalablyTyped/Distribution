@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "TimeGridEventRenderer")
 @js.native
 class TimeGridEventRenderer protected ()
-  extends fullcalendarLib.timegrideventrendererMod.default {
+  extends fullcalendarLib.timeGridEventRendererMod.default {
   def this(timeGrid: js.Any, fillRenderer: js.Any) = this()
 }
 

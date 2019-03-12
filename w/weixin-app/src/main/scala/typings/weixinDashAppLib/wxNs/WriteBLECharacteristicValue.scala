@@ -37,14 +37,14 @@ object WriteBLECharacteristicValue {
     characteristicId: java.lang.String,
     deviceId: java.lang.String,
     serviceId: java.lang.String,
-    success: js.Function1[ErrMsgResponse, scala.Unit],
+    success: ErrMsgResponse => scala.Unit,
     value: stdLib.ArrayBuffer,
-    complete: js.Function0[scala.Unit] = null,
-    fail: js.Function0[scala.Unit] = null
+    complete: () => scala.Unit = null,
+    fail: () => scala.Unit = null
   ): WriteBLECharacteristicValue = {
-    val __obj = js.Dynamic.literal(characteristicId = characteristicId, deviceId = deviceId, serviceId = serviceId, success = success, value = value)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    val __obj = js.Dynamic.literal(characteristicId = characteristicId, deviceId = deviceId, serviceId = serviceId, success = js.Any.fromFunction1(success), value = value)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     __obj.asInstanceOf[WriteBLECharacteristicValue]
   }
 }

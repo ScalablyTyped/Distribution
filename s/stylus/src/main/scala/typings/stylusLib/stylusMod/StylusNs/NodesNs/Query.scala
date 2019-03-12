@@ -24,29 +24,29 @@ trait Query extends Node {
 object Query {
   @scala.inline
   def apply(
-    clone: js.Function0[Node],
-    coerce: js.Function1[Node, Node],
+    clone: () => Node,
+    coerce: Node => Node,
     column: scala.Double,
-    eval: js.Function0[Node],
+    eval: () => Node,
     filename: java.lang.String,
     first: Node,
     hash: java.lang.String,
     lineno: scala.Double,
-    merge: js.Function1[Query, Query],
+    merge: Query => Query,
     nodeName: java.lang.String,
     nodes: js.Array[QueryExpr],
-    operate: js.Function2[java.lang.String, Node, Node],
+    operate: (java.lang.String, Node) => Node,
     predicate: java.lang.String,
-    push: js.Function1[QueryExpr, scala.Unit],
+    push: QueryExpr => scala.Unit,
     resolvedPredicate: java.lang.String,
     resolvedType: java.lang.String,
-    shouldCoerce: js.Function1[java.lang.String, scala.Boolean],
-    toBoolean: js.Function0[Boolean],
-    toExpression: js.Function0[Expression],
-    toJSON: js.Function0[stylusLib.Anon_ColumnFilenameLinenoNodesPredicate],
+    shouldCoerce: java.lang.String => scala.Boolean,
+    toBoolean: () => Boolean,
+    toExpression: () => Expression,
+    toJSON: () => stylusLib.Anon_ColumnFilenameLinenoNodesPredicate,
     `type`: java.lang.String
   ): Query = {
-    val __obj = js.Dynamic.literal(clone = clone, coerce = coerce, column = column, eval = eval, filename = filename, first = first, hash = hash, lineno = lineno, merge = merge, nodeName = nodeName, nodes = nodes, operate = operate, predicate = predicate, push = push, resolvedPredicate = resolvedPredicate, resolvedType = resolvedType, shouldCoerce = shouldCoerce, toBoolean = toBoolean, toExpression = toExpression, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), coerce = js.Any.fromFunction1(coerce), column = column, eval = js.Any.fromFunction0(eval), filename = filename, first = first, hash = hash, lineno = lineno, merge = js.Any.fromFunction1(merge), nodeName = nodeName, nodes = nodes, operate = js.Any.fromFunction2(operate), predicate = predicate, push = js.Any.fromFunction1(push), resolvedPredicate = resolvedPredicate, resolvedType = resolvedType, shouldCoerce = js.Any.fromFunction1(shouldCoerce), toBoolean = js.Any.fromFunction0(toBoolean), toExpression = js.Any.fromFunction0(toExpression), toJSON = js.Any.fromFunction0(toJSON))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Query]
   }

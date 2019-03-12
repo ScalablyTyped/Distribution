@@ -56,27 +56,13 @@ trait XGraphicRasterizer
 object XGraphicRasterizer {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    initializeData: js.Function4[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      scala.Double, 
-      scala.Double, 
-      js.Array[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size], 
-      scala.Boolean
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    rasterize: js.Function6[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
-      XGraphic
-    ],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    initializeData: (activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Double, scala.Double, js.Array[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size]) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    rasterize: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues) => XGraphic,
+    release: () => scala.Unit
   ): XGraphicRasterizer = {
-    val __obj = js.Dynamic.literal(acquire = acquire, initializeData = initializeData, queryInterface = queryInterface, rasterize = rasterize, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), initializeData = js.Any.fromFunction4(initializeData), queryInterface = js.Any.fromFunction1(queryInterface), rasterize = js.Any.fromFunction6(rasterize), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XGraphicRasterizer]
   }

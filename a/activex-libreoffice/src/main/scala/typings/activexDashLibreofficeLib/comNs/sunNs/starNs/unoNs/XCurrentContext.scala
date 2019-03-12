@@ -22,12 +22,12 @@ trait XCurrentContext extends XInterface {
 object XCurrentContext {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getValueByName: js.Function1[java.lang.String, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getValueByName: java.lang.String => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCurrentContext = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getValueByName = getValueByName, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getValueByName = js.Any.fromFunction1(getValueByName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCurrentContext]
   }

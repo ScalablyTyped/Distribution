@@ -14,11 +14,11 @@ trait DbJsStatic extends js.Object {
 object DbJsStatic {
   @scala.inline
   def apply(
-    cmp: js.Function2[js.Any, js.Any, scala.Double],
-    delete: js.Function1[java.lang.String, js.Promise[scala.Unit]],
-    open: js.Function1[OpenOptions, js.Promise[Server]]
+    cmp: (js.Any, js.Any) => scala.Double,
+    delete: java.lang.String => js.Promise[scala.Unit],
+    open: OpenOptions => js.Promise[Server]
   ): DbJsStatic = {
-    val __obj = js.Dynamic.literal(cmp = cmp, delete = delete, open = open)
+    val __obj = js.Dynamic.literal(cmp = js.Any.fromFunction2(cmp), delete = js.Any.fromFunction1(delete), open = js.Any.fromFunction1(open))
   
     __obj.asInstanceOf[DbJsStatic]
   }

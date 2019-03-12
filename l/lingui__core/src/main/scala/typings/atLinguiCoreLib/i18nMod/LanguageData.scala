@@ -20,16 +20,12 @@ trait LanguageData extends js.Object {
 object LanguageData {
   @scala.inline
   def apply(
-    plurals: js.Function2[
-      /* n */ scala.Double, 
-      /* pluralType */ js.UndefOr[
-        atLinguiCoreLib.atLinguiCoreLibStrings.cardinal | atLinguiCoreLib.atLinguiCoreLibStrings.ordinal
-      ], 
-      java.lang.String
-    ] = null
+    plurals: (/* n */ scala.Double, /* pluralType */ js.UndefOr[
+      atLinguiCoreLib.atLinguiCoreLibStrings.cardinal | atLinguiCoreLib.atLinguiCoreLibStrings.ordinal
+    ]) => java.lang.String = null
   ): LanguageData = {
     val __obj = js.Dynamic.literal()
-    if (plurals != null) __obj.updateDynamic("plurals")(plurals)
+    if (plurals != null) __obj.updateDynamic("plurals")(js.Any.fromFunction2(plurals))
     __obj.asInstanceOf[LanguageData]
   }
 }

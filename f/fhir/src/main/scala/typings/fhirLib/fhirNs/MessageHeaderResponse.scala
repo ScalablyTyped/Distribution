@@ -20,7 +20,7 @@ trait MessageHeaderResponse extends BackboneElement {
   /**
     * ok | transient-error | fatal-error
     */
-  var code: code
+  var code: fhirLib.fhirNs.code
   /**
     * Specific list of hints/warnings/errors
     */

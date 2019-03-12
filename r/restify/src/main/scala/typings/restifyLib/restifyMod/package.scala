@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object restifyMod {
   type FindRouteCallback = js.Function3[
-    /* err */ nodeLib.Error, 
+    /* err */ stdLib.Error, 
     /* route */ js.UndefOr[Route], 
     /* params */ js.UndefOr[js.Any], 
     scala.Unit

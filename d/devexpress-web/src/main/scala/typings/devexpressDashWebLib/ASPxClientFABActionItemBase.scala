@@ -18,11 +18,11 @@ trait ASPxClientFABActionItemBase extends js.Object {
 object ASPxClientFABActionItemBase {
   @scala.inline
   def apply(
-    GetActionName: js.Function0[java.lang.String],
-    GetText: js.Function0[java.lang.String],
-    SetText: js.Function1[java.lang.String, scala.Unit]
+    GetActionName: () => java.lang.String,
+    GetText: () => java.lang.String,
+    SetText: java.lang.String => scala.Unit
   ): ASPxClientFABActionItemBase = {
-    val __obj = js.Dynamic.literal(GetActionName = GetActionName, GetText = GetText, SetText = SetText)
+    val __obj = js.Dynamic.literal(GetActionName = js.Any.fromFunction0(GetActionName), GetText = js.Any.fromFunction0(GetText), SetText = js.Any.fromFunction1(SetText))
   
     __obj.asInstanceOf[ASPxClientFABActionItemBase]
   }

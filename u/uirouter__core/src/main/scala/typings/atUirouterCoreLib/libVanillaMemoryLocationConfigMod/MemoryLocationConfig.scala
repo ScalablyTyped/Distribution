@@ -16,19 +16,6 @@ class MemoryLocationConfig ()
   var _protocol: java.lang.String = js.native
   @JSName("dispose")
   var dispose_Original: js.Function0[_] = js.native
-  @JSName("baseHref")
-  def baseHref_MMemoryLocationConfig(): java.lang.String = js.native
-  @JSName("hashPrefix")
-  def hashPrefix_MMemoryLocationConfig(): js.Any = js.native
-  @JSName("hashPrefix")
-  def hashPrefix_MMemoryLocationConfig(newval: js.Any): js.Any = js.native
-  @JSName("host")
-  def host_MMemoryLocationConfig(): java.lang.String = js.native
-  @JSName("html5Mode")
-  def html5Mode_MMemoryLocationConfig(): scala.Boolean = js.native
-  @JSName("port")
-  def port_MMemoryLocationConfig(): scala.Double = js.native
-  @JSName("protocol")
-  def protocol_MMemoryLocationConfig(): java.lang.String = js.native
+  def hashPrefix(newval: js.Any): js.Any = js.native
 }
 

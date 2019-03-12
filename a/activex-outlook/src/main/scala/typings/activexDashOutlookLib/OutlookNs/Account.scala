@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Account protected () extends js.Object {
   val AccountType: OlAccountType = js.native
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val AutoDiscoverConnectionMode: OlAutoDiscoverConnectionMode = js.native
   val AutoDiscoverXml: java.lang.String = js.native
   val Class: OlObjectClass = js.native

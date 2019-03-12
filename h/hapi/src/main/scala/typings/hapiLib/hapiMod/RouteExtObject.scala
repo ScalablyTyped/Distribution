@@ -11,6 +11,6 @@ trait RouteExtObject extends js.Object {
   var method_Original: hapiLib.hapiMod.LifecycleNs.Method = js.native
   var options: js.UndefOr[ServerExtOptions] = js.native
   def method(request: Request, h: ResponseToolkit): hapiLib.hapiMod.LifecycleNs.ReturnValue = js.native
-  def method(request: Request, h: ResponseToolkit, err: nodeLib.Error): hapiLib.hapiMod.LifecycleNs.ReturnValue = js.native
+  def method(request: Request, h: ResponseToolkit, err: stdLib.Error): hapiLib.hapiMod.LifecycleNs.ReturnValue = js.native
 }
 

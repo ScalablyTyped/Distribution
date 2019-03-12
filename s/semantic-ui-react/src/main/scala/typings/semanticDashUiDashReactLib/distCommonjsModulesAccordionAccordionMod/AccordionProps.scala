@@ -21,11 +21,7 @@ object AccordionProps {
     exclusive: js.UndefOr[scala.Boolean] = js.undefined,
     fluid: js.UndefOr[scala.Boolean] = js.undefined,
     inverted: js.UndefOr[scala.Boolean] = js.undefined,
-    onTitleClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionTitleMod.AccordionTitleProps, 
-      scala.Unit
-    ] = null,
+    onTitleClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionTitleMod.AccordionTitleProps) => scala.Unit = null,
     panels: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandCollection[
       semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionPanelMod.AccordionPanelProps
     ] = null,
@@ -41,7 +37,7 @@ object AccordionProps {
     if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
     if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid)
     if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted)
-    if (onTitleClick != null) __obj.updateDynamic("onTitleClick")(onTitleClick)
+    if (onTitleClick != null) __obj.updateDynamic("onTitleClick")(js.Any.fromFunction2(onTitleClick))
     if (panels != null) __obj.updateDynamic("panels")(panels)
     if (!js.isUndefined(styled)) __obj.updateDynamic("styled")(styled)
     __obj.asInstanceOf[AccordionProps]

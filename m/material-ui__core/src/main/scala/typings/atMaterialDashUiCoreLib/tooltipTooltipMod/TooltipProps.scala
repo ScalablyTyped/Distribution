@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<react.HTMLDivElement>, 'classes' | 'title'> ]: react.react.HTMLAttributes<react.HTMLDivElement>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLDivElement>, @material-ui/core.@material-ui/core/Tooltip/Tooltip.TooltipClassKey, 'title'>) */ trait TooltipProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | 'title'> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement>, @material-ui/core.@material-ui/core/Tooltip/Tooltip.TooltipClassKey, 'title'>) */ trait TooltipProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TooltipClassKey] {
   var PopperProps: js.UndefOr[js.Object] = js.undefined
   var TransitionComponent: js.UndefOr[
@@ -59,8 +59,8 @@ object TooltipProps {
     interactive: js.UndefOr[scala.Boolean] = js.undefined,
     leaveDelay: scala.Int | scala.Double = null,
     leaveTouchDelay: scala.Int | scala.Double = null,
-    onClose: js.Function1[/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], scala.Unit] = null,
-    onOpen: js.Function1[/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], scala.Unit] = null,
+    onClose: /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object] => scala.Unit = null,
+    onOpen: /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object] => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     placement: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`bottom-end` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`bottom-start` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.bottom | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`left-end` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`left-start` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.left | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`right-end` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`right-start` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.right | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`top-end` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`top-start` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.top = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
@@ -81,8 +81,8 @@ object TooltipProps {
     if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
     if (leaveDelay != null) __obj.updateDynamic("leaveDelay")(leaveDelay.asInstanceOf[js.Any])
     if (leaveTouchDelay != null) __obj.updateDynamic("leaveTouchDelay")(leaveTouchDelay.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)

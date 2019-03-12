@@ -17,12 +17,12 @@ object OriginatorPublicKey {
   @scala.inline
   def apply(
     algorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     publicKey: asn1jsLib.asn1jsMod.BitString,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): OriginatorPublicKey = {
-    val __obj = js.Dynamic.literal(algorithm = algorithm, fromSchema = fromSchema, publicKey = publicKey, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(algorithm = algorithm, fromSchema = js.Any.fromFunction1(fromSchema), publicKey = publicKey, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[OriginatorPublicKey]
   }

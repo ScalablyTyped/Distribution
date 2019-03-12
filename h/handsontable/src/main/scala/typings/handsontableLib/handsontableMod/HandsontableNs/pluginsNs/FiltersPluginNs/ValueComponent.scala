@@ -16,20 +16,20 @@ trait ValueComponent extends BaseComponent {
 object ValueComponent {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Boolean],
+    destroy: () => scala.Boolean,
     elements: js.Array[_],
-    getMenuItemDescriptor: js.Function0[js.Object],
-    getMultipleSelectElement: js.Function0[MultipleSelectUI],
-    getState: js.Function0[js.Object],
+    getMenuItemDescriptor: () => js.Object,
+    getMultipleSelectElement: () => MultipleSelectUI,
+    getState: () => js.Object,
     hidden: scala.Boolean,
-    hide: js.Function0[scala.Unit],
-    isHidden: js.Function0[scala.Boolean],
-    reset: js.Function0[scala.Unit],
-    setState: js.Function1[js.Object, scala.Unit],
-    show: js.Function0[scala.Unit],
-    updateState: js.Function1[js.Object, scala.Unit]
+    hide: () => scala.Unit,
+    isHidden: () => scala.Boolean,
+    reset: () => scala.Unit,
+    setState: js.Object => scala.Unit,
+    show: () => scala.Unit,
+    updateState: js.Object => scala.Unit
   ): ValueComponent = {
-    val __obj = js.Dynamic.literal(destroy = destroy, elements = elements, getMenuItemDescriptor = getMenuItemDescriptor, getMultipleSelectElement = getMultipleSelectElement, getState = getState, hidden = hidden, hide = hide, isHidden = isHidden, reset = reset, setState = setState, show = show, updateState = updateState)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), elements = elements, getMenuItemDescriptor = js.Any.fromFunction0(getMenuItemDescriptor), getMultipleSelectElement = js.Any.fromFunction0(getMultipleSelectElement), getState = js.Any.fromFunction0(getState), hidden = hidden, hide = js.Any.fromFunction0(hide), isHidden = js.Any.fromFunction0(isHidden), reset = js.Any.fromFunction0(reset), setState = js.Any.fromFunction1(setState), show = js.Any.fromFunction0(show), updateState = js.Any.fromFunction1(updateState))
   
     __obj.asInstanceOf[ValueComponent]
   }

@@ -31,12 +31,12 @@ trait State extends js.Object {
 object State {
   @scala.inline
   def apply(
-    init: js.Function0[scala.Unit],
-    initOnLoad: js.Function0[scala.Boolean],
-    pop: js.Function1[stdLib.Event, scala.Unit],
-    push: js.Function1[js.Object, scala.Unit]
+    init: () => scala.Unit,
+    initOnLoad: () => scala.Boolean,
+    pop: stdLib.Event => scala.Unit,
+    push: js.Object => scala.Unit
   ): State = {
-    val __obj = js.Dynamic.literal(init = init, initOnLoad = initOnLoad, pop = pop, push = push)
+    val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init), initOnLoad = js.Any.fromFunction0(initOnLoad), pop = js.Any.fromFunction1(pop), push = js.Any.fromFunction1(push))
   
     __obj.asInstanceOf[State]
   }

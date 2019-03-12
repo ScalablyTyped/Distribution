@@ -26,9 +26,9 @@ object JsonschemaError {
     property: java.lang.String,
     schema: java.lang.String | IJsonSchema,
     stack: java.lang.String,
-    toString: js.Function0[java.lang.String]
+    toString: () => java.lang.String
   ): JsonschemaError = {
-    val __obj = js.Dynamic.literal(argument = argument, instance = instance, message = message, name = name, property = property, schema = schema.asInstanceOf[js.Any], stack = stack, toString = toString)
+    val __obj = js.Dynamic.literal(argument = argument, instance = instance, message = message, name = name, property = property, schema = schema.asInstanceOf[js.Any], stack = stack, toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[JsonschemaError]
   }

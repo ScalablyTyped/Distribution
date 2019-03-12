@@ -16,13 +16,13 @@ trait RgbColor extends js.Object {
 object RgbColor {
   @scala.inline
   def apply(
-    asHexString: js.Function0[java.lang.String],
-    getBlue: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getColorType: js.Function0[ColorType],
-    getGreen: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getRed: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer]
+    asHexString: () => java.lang.String,
+    getBlue: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getColorType: () => ColorType,
+    getGreen: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getRed: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): RgbColor = {
-    val __obj = js.Dynamic.literal(asHexString = asHexString, getBlue = getBlue, getColorType = getColorType, getGreen = getGreen, getRed = getRed)
+    val __obj = js.Dynamic.literal(asHexString = js.Any.fromFunction0(asHexString), getBlue = js.Any.fromFunction0(getBlue), getColorType = js.Any.fromFunction0(getColorType), getGreen = js.Any.fromFunction0(getGreen), getRed = js.Any.fromFunction0(getRed))
   
     __obj.asInstanceOf[RgbColor]
   }

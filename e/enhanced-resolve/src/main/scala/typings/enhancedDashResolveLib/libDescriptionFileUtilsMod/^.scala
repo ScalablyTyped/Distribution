@@ -16,8 +16,8 @@ object ^ extends js.Object {
     directory: java.lang.String,
     filenames: js.Array[java.lang.String],
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-      /* result */ js.UndefOr[enhancedDashResolveLib.libDescriptionFileUtilsMod.LoadDescriptionFileResult], 
+      /* err */ js.UndefOr[stdLib.Error | scala.Null], 
+      /* result */ js.UndefOr[LoadDescriptionFileResult], 
       _
     ]
   ): scala.Unit = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.GlowFormat")
 @js.native
 class GlowFormat protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Color: ColorFormat = js.native
   val Creator: scala.Double = js.native
   val Parent: js.Any = js.native

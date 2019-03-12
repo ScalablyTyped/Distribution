@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   /** User **/
   /** Error **/
-  var Error: meteorDashTypingsLib.MeteorNs.ErrorStatic = js.native
+  var Error: ErrorStatic = js.native
   /** Local storage **/
-  var _localStorage: meteorDashTypingsLib.MeteorNs.LocalStorage = js.native
+  var _localStorage: LocalStorage = js.native
   /** Global props **/
   var isClient: scala.Boolean = js.native
   var isCordova: scala.Boolean = js.native
@@ -22,8 +22,8 @@ object ^ extends js.Object {
   var isServer: scala.Boolean = js.native
   var isTest: scala.Boolean = js.native
   var release: java.lang.String = js.native
-  var settings: meteorDashTypingsLib.MeteorNs.Settings = js.native
-  var users: meteorDashTypingsLib.MongoNs.Collection[meteorDashTypingsLib.MeteorNs.User] = js.native
+  var settings: Settings = js.native
+  var users: meteorDashTypingsLib.MongoNs.Collection[User] = js.native
   def _debug(args: js.Any*): scala.Unit = js.native
   /** Method **/
   /** Url **/
@@ -56,20 +56,20 @@ object ^ extends js.Object {
   def loginWith[ExternalService](options: meteorDashTypingsLib.Anon_LoginStyle): scala.Unit = js.native
   def loginWith[ExternalService](options: meteorDashTypingsLib.Anon_LoginStyle, callback: js.Function): scala.Unit = js.native
   def loginWithFacebook(): scala.Unit = js.native
-  def loginWithFacebook(options: meteorDashTypingsLib.MeteorNs.LoginWithExternalServiceOptions): scala.Unit = js.native
-  def loginWithFacebook(options: meteorDashTypingsLib.MeteorNs.LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
+  def loginWithFacebook(options: LoginWithExternalServiceOptions): scala.Unit = js.native
+  def loginWithFacebook(options: LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
   def loginWithGithub(): scala.Unit = js.native
-  def loginWithGithub(options: meteorDashTypingsLib.MeteorNs.LoginWithExternalServiceOptions): scala.Unit = js.native
-  def loginWithGithub(options: meteorDashTypingsLib.MeteorNs.LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
+  def loginWithGithub(options: LoginWithExternalServiceOptions): scala.Unit = js.native
+  def loginWithGithub(options: LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
   def loginWithGoogle(): scala.Unit = js.native
-  def loginWithGoogle(options: meteorDashTypingsLib.MeteorNs.LoginWithExternalServiceOptions): scala.Unit = js.native
-  def loginWithGoogle(options: meteorDashTypingsLib.MeteorNs.LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
+  def loginWithGoogle(options: LoginWithExternalServiceOptions): scala.Unit = js.native
+  def loginWithGoogle(options: LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
   def loginWithMeetup(): scala.Unit = js.native
-  def loginWithMeetup(options: meteorDashTypingsLib.MeteorNs.LoginWithExternalServiceOptions): scala.Unit = js.native
-  def loginWithMeetup(options: meteorDashTypingsLib.MeteorNs.LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
+  def loginWithMeetup(options: LoginWithExternalServiceOptions): scala.Unit = js.native
+  def loginWithMeetup(options: LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
   def loginWithMeteorDeveloperAccount(): scala.Unit = js.native
-  def loginWithMeteorDeveloperAccount(options: meteorDashTypingsLib.MeteorNs.LoginWithExternalServiceOptions): scala.Unit = js.native
-  def loginWithMeteorDeveloperAccount(options: meteorDashTypingsLib.MeteorNs.LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
+  def loginWithMeteorDeveloperAccount(options: LoginWithExternalServiceOptions): scala.Unit = js.native
+  def loginWithMeteorDeveloperAccount(options: LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
   def loginWithPassword(user: java.lang.String, password: java.lang.String): scala.Unit = js.native
   def loginWithPassword(user: java.lang.String, password: java.lang.String, callback: js.Function): scala.Unit = js.native
   def loginWithPassword(user: js.Object, password: java.lang.String): scala.Unit = js.native
@@ -77,11 +77,11 @@ object ^ extends js.Object {
   def loginWithToken(token: java.lang.String): scala.Unit = js.native
   def loginWithToken(token: java.lang.String, callback: js.Function): scala.Unit = js.native
   def loginWithTwitter(): scala.Unit = js.native
-  def loginWithTwitter(options: meteorDashTypingsLib.MeteorNs.LoginWithExternalServiceOptions): scala.Unit = js.native
-  def loginWithTwitter(options: meteorDashTypingsLib.MeteorNs.LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
+  def loginWithTwitter(options: LoginWithExternalServiceOptions): scala.Unit = js.native
+  def loginWithTwitter(options: LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
   def loginWithWeibo(): scala.Unit = js.native
-  def loginWithWeibo(options: meteorDashTypingsLib.MeteorNs.LoginWithExternalServiceOptions): scala.Unit = js.native
-  def loginWithWeibo(options: meteorDashTypingsLib.MeteorNs.LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
+  def loginWithWeibo(options: LoginWithExternalServiceOptions): scala.Unit = js.native
+  def loginWithWeibo(options: LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
   def logout(): scala.Unit = js.native
   def logout(callback: js.Function): scala.Unit = js.native
   def logoutOtherClients(): scala.Unit = js.native
@@ -107,8 +107,8 @@ object ^ extends js.Object {
   def status(): meteorDashTypingsLib.DDPNs.DDPStatus = js.native
   /** Status **/
   /** Pub/Sub **/
-  def subscribe(name: java.lang.String, args: js.Any*): meteorDashTypingsLib.MeteorNs.SubscriptionHandle = js.native
-  def user(): meteorDashTypingsLib.MeteorNs.User = js.native
+  def subscribe(name: java.lang.String, args: js.Any*): SubscriptionHandle = js.native
+  def user(): User = js.native
   def userId(): java.lang.String = js.native
   def wrapAsync(func: js.Function): js.Any = js.native
   def wrapAsync(func: js.Function, context: js.Object): js.Any = js.native

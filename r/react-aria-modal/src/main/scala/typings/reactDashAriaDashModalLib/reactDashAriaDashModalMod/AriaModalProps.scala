@@ -17,7 +17,7 @@ trait AriaModalProps extends js.Object {
     * node will receive the attribute `aria-hidden="true"`.
     * This can help screen readers understand what's going on.
     */
-  var applicationNode: js.UndefOr[stdLib.Node | reactLib.Element] = js.undefined
+  var applicationNode: js.UndefOr[stdLib.Node | stdLib.Element] = js.undefined
   /**
     * Apply a class to the dialog in order to custom-style it.
     *
@@ -56,7 +56,7 @@ trait AriaModalProps extends js.Object {
     * and refer to DOM nodes within it (e.g. `document.getElementById(..)`),
     * without ruining your server-side rendering.
     */
-  var getApplicationNode: js.UndefOr[js.Function0[stdLib.Node | reactLib.Element]] = js.undefined
+  var getApplicationNode: js.UndefOr[js.Function0[stdLib.Node | stdLib.Element]] = js.undefined
   /**
     * By default, styles are applied inline to the dialog and underlay
     * portions of the component. However, you can disable all inline
@@ -148,19 +148,19 @@ trait AriaModalProps extends js.Object {
 object AriaModalProps {
   @scala.inline
   def apply(
-    onExit: js.Function0[js.Any],
+    onExit: () => js.Any,
     alert: js.UndefOr[scala.Boolean] = js.undefined,
-    applicationNode: stdLib.Node | reactLib.Element = null,
+    applicationNode: stdLib.Node | stdLib.Element = null,
     dialogClass: java.lang.String = null,
     dialogId: java.lang.String = null,
     dialogStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     escapeExits: js.UndefOr[scala.Boolean] = js.undefined,
     focusDialog: js.UndefOr[scala.Boolean] = js.undefined,
-    getApplicationNode: js.Function0[stdLib.Node | reactLib.Element] = null,
+    getApplicationNode: () => stdLib.Node | stdLib.Element = null,
     includeDefaultStyles: js.UndefOr[scala.Boolean] = js.undefined,
     initialFocus: java.lang.String = null,
     mounted: js.UndefOr[scala.Boolean] = js.undefined,
-    onEnter: js.Function0[_] = null,
+    onEnter: () => _ = null,
     titleId: java.lang.String = null,
     titleText: java.lang.String = null,
     underlayClass: java.lang.String = null,
@@ -169,7 +169,7 @@ object AriaModalProps {
     underlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     verticallyCenter: js.UndefOr[scala.Boolean] = js.undefined
   ): AriaModalProps = {
-    val __obj = js.Dynamic.literal(onExit = onExit)
+    val __obj = js.Dynamic.literal(onExit = js.Any.fromFunction0(onExit))
     if (!js.isUndefined(alert)) __obj.updateDynamic("alert")(alert)
     if (applicationNode != null) __obj.updateDynamic("applicationNode")(applicationNode.asInstanceOf[js.Any])
     if (dialogClass != null) __obj.updateDynamic("dialogClass")(dialogClass)
@@ -177,11 +177,11 @@ object AriaModalProps {
     if (dialogStyle != null) __obj.updateDynamic("dialogStyle")(dialogStyle)
     if (!js.isUndefined(escapeExits)) __obj.updateDynamic("escapeExits")(escapeExits)
     if (!js.isUndefined(focusDialog)) __obj.updateDynamic("focusDialog")(focusDialog)
-    if (getApplicationNode != null) __obj.updateDynamic("getApplicationNode")(getApplicationNode)
+    if (getApplicationNode != null) __obj.updateDynamic("getApplicationNode")(js.Any.fromFunction0(getApplicationNode))
     if (!js.isUndefined(includeDefaultStyles)) __obj.updateDynamic("includeDefaultStyles")(includeDefaultStyles)
     if (initialFocus != null) __obj.updateDynamic("initialFocus")(initialFocus)
     if (!js.isUndefined(mounted)) __obj.updateDynamic("mounted")(mounted)
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
+    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction0(onEnter))
     if (titleId != null) __obj.updateDynamic("titleId")(titleId)
     if (titleText != null) __obj.updateDynamic("titleText")(titleText)
     if (underlayClass != null) __obj.updateDynamic("underlayClass")(underlayClass)

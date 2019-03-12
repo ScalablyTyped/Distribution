@@ -15,13 +15,13 @@ trait SearchAdGroupAudienceBuilder[SearchAdGroupAudience] extends AdWordsBuilder
 object SearchAdGroupAudienceBuilder {
   @scala.inline
   def apply[SearchAdGroupAudience](
-    build: js.Function0[AdWordsOperation[SearchAdGroupAudience]],
-    exclude: js.Function0[AdWordsOperation[SearchAdGroupAudience]],
-    withAudience: js.Function1[UserList, SearchAdGroupAudienceBuilder[SearchAdGroupAudience]],
-    withAudienceId: js.Function1[scala.Double, SearchAdGroupAudienceBuilder[SearchAdGroupAudience]],
-    withBidModifier: js.Function1[scala.Double, SearchAdGroupAudienceBuilder[SearchAdGroupAudience]]
+    build: () => AdWordsOperation[SearchAdGroupAudience],
+    exclude: () => AdWordsOperation[SearchAdGroupAudience],
+    withAudience: UserList => SearchAdGroupAudienceBuilder[SearchAdGroupAudience],
+    withAudienceId: scala.Double => SearchAdGroupAudienceBuilder[SearchAdGroupAudience],
+    withBidModifier: scala.Double => SearchAdGroupAudienceBuilder[SearchAdGroupAudience]
   ): SearchAdGroupAudienceBuilder[SearchAdGroupAudience] = {
-    val __obj = js.Dynamic.literal(build = build, exclude = exclude, withAudience = withAudience, withAudienceId = withAudienceId, withBidModifier = withBidModifier)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), exclude = js.Any.fromFunction0(exclude), withAudience = js.Any.fromFunction1(withAudience), withAudienceId = js.Any.fromFunction1(withAudienceId), withBidModifier = js.Any.fromFunction1(withBidModifier))
   
     __obj.asInstanceOf[SearchAdGroupAudienceBuilder[SearchAdGroupAudience]]
   }

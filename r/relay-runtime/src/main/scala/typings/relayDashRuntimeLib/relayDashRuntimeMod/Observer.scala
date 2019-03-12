@@ -16,18 +16,18 @@ trait Observer[T] extends js.Object {
 object Observer {
   @scala.inline
   def apply[T](
-    complete: js.Function0[_] = null,
-    error: js.Function1[/* error */ stdLib.Error, _] = null,
-    next: js.Function1[/* nextThing */ T, _] = null,
-    start: js.Function1[/* subscription */ Subscription, _] = null,
-    unsubscribe: js.Function1[/* subscription */ Subscription, _] = null
+    complete: () => _ = null,
+    error: /* error */ stdLib.Error => _ = null,
+    next: /* nextThing */ T => _ = null,
+    start: /* subscription */ Subscription => _ = null,
+    unsubscribe: /* subscription */ Subscription => _ = null
   ): Observer[T] = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (unsubscribe != null) __obj.updateDynamic("unsubscribe")(unsubscribe)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
+    if (next != null) __obj.updateDynamic("next")(js.Any.fromFunction1(next))
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
+    if (unsubscribe != null) __obj.updateDynamic("unsubscribe")(js.Any.fromFunction1(unsubscribe))
     __obj.asInstanceOf[Observer[T]]
   }
 }

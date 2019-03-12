@@ -395,7 +395,7 @@ object ^ extends js.Object {
   def futimesSync(fd: scala.Double, atime: stdLib.Date, mtime: java.lang.String): scala.Unit = js.native
   def futimesSync(fd: scala.Double, atime: stdLib.Date, mtime: scala.Double): scala.Unit = js.native
   def futimesSync(fd: scala.Double, atime: stdLib.Date, mtime: stdLib.Date): scala.Unit = js.native
-  def gracefulify[T](fsModule: T): T with gracefulDashFsLib.gracefulDashFsMod.Lutimes = js.native
+  def gracefulify[T](fsModule: T): T with Lutimes = js.native
   /**
     * Asynchronous lchmod(2) - Change permissions of a file. Does not dereference symbolic links.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.

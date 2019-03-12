@@ -23,26 +23,11 @@ trait IKeyDerivationParametersStatics extends js.Object {
 object IKeyDerivationParametersStatics {
   @scala.inline
   def apply(
-    buildForPbkdf2: js.Function2[
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      scala.Double, 
-      KeyDerivationParameters
-    ],
-    buildForSP800108: js.Function2[
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      KeyDerivationParameters
-    ],
-    buildForSP80056a: js.Function5[
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      KeyDerivationParameters
-    ]
+    buildForPbkdf2: (winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, scala.Double) => KeyDerivationParameters,
+    buildForSP800108: (winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer) => KeyDerivationParameters,
+    buildForSP80056a: (winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer) => KeyDerivationParameters
   ): IKeyDerivationParametersStatics = {
-    val __obj = js.Dynamic.literal(buildForPbkdf2 = buildForPbkdf2, buildForSP800108 = buildForSP800108, buildForSP80056a = buildForSP80056a)
+    val __obj = js.Dynamic.literal(buildForPbkdf2 = js.Any.fromFunction2(buildForPbkdf2), buildForSP800108 = js.Any.fromFunction2(buildForSP800108), buildForSP80056a = js.Any.fromFunction5(buildForSP80056a))
   
     __obj.asInstanceOf[IKeyDerivationParametersStatics]
   }

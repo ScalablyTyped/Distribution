@@ -15,15 +15,15 @@ trait IPredictableGenerator[T] extends IGenerator[T] {
 object IPredictableGenerator {
   @scala.inline
   def apply[T](
-    filter: js.Function1[js.Function1[T, scala.Boolean], js.Array[T]],
-    forEach: js.Function1[js.Function1[T, scala.Unit], scala.Unit],
+    filter: js.Function1[T, scala.Boolean] => js.Array[T],
+    forEach: js.Function1[T, scala.Unit] => scala.Unit,
     length: scala.Double,
-    map: js.Function1[js.Function1[T, js.Any], js.Array[js.Any]],
-    next: js.Function0[T],
-    nth: js.Function1[scala.Double, T],
-    toArray: js.Function0[js.Array[T]]
+    map: js.Function1[T, js.Any] => js.Array[js.Any],
+    next: () => T,
+    nth: scala.Double => T,
+    toArray: () => js.Array[T]
   ): IPredictableGenerator[T] = {
-    val __obj = js.Dynamic.literal(filter = filter, forEach = forEach, length = length, map = map, next = next, nth = nth, toArray = toArray)
+    val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), forEach = js.Any.fromFunction1(forEach), length = length, map = js.Any.fromFunction1(map), next = js.Any.fromFunction0(next), nth = js.Any.fromFunction1(nth), toArray = js.Any.fromFunction0(toArray))
   
     __obj.asInstanceOf[IPredictableGenerator[T]]
   }

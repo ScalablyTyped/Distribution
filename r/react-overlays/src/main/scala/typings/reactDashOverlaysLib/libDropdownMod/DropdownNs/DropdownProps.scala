@@ -46,22 +46,18 @@ trait DropdownProps extends js.Object {
 object DropdownProps {
   @scala.inline
   def apply(
-    children: js.Function1[DropdownRenderProps, reactLib.reactMod.ReactNs.ReactElement[_]],
+    children: DropdownRenderProps => reactLib.reactMod.ReactNs.ReactElement[_],
     alignEnd: js.UndefOr[scala.Boolean] = js.undefined,
     drop: Directions = null,
     itemSelector: java.lang.String = null,
-    onToggle: js.Function2[
-      /* isOpen */ scala.Boolean, 
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], 
-      scala.Unit
-    ] = null,
+    onToggle: (/* isOpen */ scala.Boolean, /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event]) => scala.Unit = null,
     show: js.UndefOr[scala.Boolean] = js.undefined
   ): DropdownProps = {
-    val __obj = js.Dynamic.literal(children = children)
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     if (!js.isUndefined(alignEnd)) __obj.updateDynamic("alignEnd")(alignEnd)
     if (drop != null) __obj.updateDynamic("drop")(drop)
     if (itemSelector != null) __obj.updateDynamic("itemSelector")(itemSelector)
-    if (onToggle != null) __obj.updateDynamic("onToggle")(onToggle)
+    if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction2(onToggle))
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
     __obj.asInstanceOf[DropdownProps]
   }

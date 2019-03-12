@@ -19,7 +19,7 @@ trait TarantoolConnection
   def disconnect(): scala.Unit = js.native
   def disconnect(reconnect: scala.Boolean): scala.Unit = js.native
   def eval(expression: java.lang.String, args: js.Any*): js.Promise[_] = js.native
-  def flushQueue(cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def flushQueue(cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def insert(spaceId: java.lang.String, tuple: js.Array[_]): js.Promise[_] = js.native
   def insert(spaceId: scala.Double, tuple: js.Array[_]): js.Promise[_] = js.native
   def replace(spaceId: java.lang.String, tuple: js.Array[_]): js.Promise[_] = js.native

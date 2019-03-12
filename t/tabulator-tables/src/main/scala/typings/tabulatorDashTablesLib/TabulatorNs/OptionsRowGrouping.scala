@@ -75,8 +75,8 @@ trait OptionsRowGrouping extends js.Object {
 object OptionsRowGrouping {
   @scala.inline
   def apply(
-    dataGrouped: js.Function0[scala.Unit] = null,
-    dataGrouping: js.Function0[scala.Unit] = null,
+    dataGrouped: () => scala.Unit = null,
+    dataGrouping: () => scala.Unit = null,
     groupBy: java.lang.String | (js.Function1[/* data */ js.Any, _]) = null,
     groupClick: GroupEventCallback = null,
     groupClosedShowCalcs: js.UndefOr[scala.Boolean] = js.undefined,
@@ -103,11 +103,11 @@ object OptionsRowGrouping {
     groupTapHold: GroupEventCallback = null,
     groupToggleElement: tabulatorDashTablesLib.tabulatorDashTablesLibStrings.arrow | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.header | tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`false` = null,
     groupValues: js.Array[js.Array[_]] = null,
-    groupVisibilityChanged: js.Function2[/* group */ GroupComponent, /* visible */ scala.Boolean, scala.Unit] = null
+    groupVisibilityChanged: (/* group */ GroupComponent, /* visible */ scala.Boolean) => scala.Unit = null
   ): OptionsRowGrouping = {
     val __obj = js.Dynamic.literal()
-    if (dataGrouped != null) __obj.updateDynamic("dataGrouped")(dataGrouped)
-    if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping)
+    if (dataGrouped != null) __obj.updateDynamic("dataGrouped")(js.Any.fromFunction0(dataGrouped))
+    if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(js.Any.fromFunction0(dataGrouping))
     if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
     if (groupClick != null) __obj.updateDynamic("groupClick")(groupClick)
     if (!js.isUndefined(groupClosedShowCalcs)) __obj.updateDynamic("groupClosedShowCalcs")(groupClosedShowCalcs)
@@ -120,7 +120,7 @@ object OptionsRowGrouping {
     if (groupTapHold != null) __obj.updateDynamic("groupTapHold")(groupTapHold)
     if (groupToggleElement != null) __obj.updateDynamic("groupToggleElement")(groupToggleElement.asInstanceOf[js.Any])
     if (groupValues != null) __obj.updateDynamic("groupValues")(groupValues)
-    if (groupVisibilityChanged != null) __obj.updateDynamic("groupVisibilityChanged")(groupVisibilityChanged)
+    if (groupVisibilityChanged != null) __obj.updateDynamic("groupVisibilityChanged")(js.Any.fromFunction2(groupVisibilityChanged))
     __obj.asInstanceOf[OptionsRowGrouping]
   }
 }

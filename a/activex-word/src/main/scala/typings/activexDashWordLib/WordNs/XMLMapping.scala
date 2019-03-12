@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.XMLMapping")
 @js.native
 class XMLMapping protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
   val CustomXMLNode: activexDashOfficeLib.OfficeNs.CustomXMLNode = js.native
   val CustomXMLPart: activexDashOfficeLib.OfficeNs.CustomXMLPart = js.native

@@ -71,16 +71,8 @@ object ISPClientPeoplePickerSchema {
     InitialHelpTextElementId: java.lang.String = null,
     InitialSuggestions: js.Array[ISPClientPeoplePickerEntity] = null,
     MaximumEntitySuggestions: scala.Int | scala.Double = null,
-    OnUserResolvedClientScript: js.Function2[
-      /* pickerElementId */ java.lang.String, 
-      /* users */ js.Array[ISPClientPeoplePickerEntity], 
-      scala.Unit
-    ] = null,
-    OnValueChangedClientScript: js.Function2[
-      /* pickerElementId */ java.lang.String, 
-      /* users */ js.Array[ISPClientPeoplePickerEntity], 
-      scala.Unit
-    ] = null,
+    OnUserResolvedClientScript: (/* pickerElementId */ java.lang.String, /* users */ js.Array[ISPClientPeoplePickerEntity]) => scala.Unit = null,
+    OnValueChangedClientScript: (/* pickerElementId */ java.lang.String, /* users */ js.Array[ISPClientPeoplePickerEntity]) => scala.Unit = null,
     PrincipalAccountType: java.lang.String = null,
     Required: js.UndefOr[scala.Boolean] = js.undefined,
     ResolvePrincipalSource: sharepointLib.SPNs.UtilitiesNs.PrincipalSource = null,
@@ -112,8 +104,8 @@ object ISPClientPeoplePickerSchema {
     if (InitialHelpTextElementId != null) __obj.updateDynamic("InitialHelpTextElementId")(InitialHelpTextElementId)
     if (InitialSuggestions != null) __obj.updateDynamic("InitialSuggestions")(InitialSuggestions)
     if (MaximumEntitySuggestions != null) __obj.updateDynamic("MaximumEntitySuggestions")(MaximumEntitySuggestions.asInstanceOf[js.Any])
-    if (OnUserResolvedClientScript != null) __obj.updateDynamic("OnUserResolvedClientScript")(OnUserResolvedClientScript)
-    if (OnValueChangedClientScript != null) __obj.updateDynamic("OnValueChangedClientScript")(OnValueChangedClientScript)
+    if (OnUserResolvedClientScript != null) __obj.updateDynamic("OnUserResolvedClientScript")(js.Any.fromFunction2(OnUserResolvedClientScript))
+    if (OnValueChangedClientScript != null) __obj.updateDynamic("OnValueChangedClientScript")(js.Any.fromFunction2(OnValueChangedClientScript))
     if (PrincipalAccountType != null) __obj.updateDynamic("PrincipalAccountType")(PrincipalAccountType)
     if (!js.isUndefined(Required)) __obj.updateDynamic("Required")(Required)
     if (ResolvePrincipalSource != null) __obj.updateDynamic("ResolvePrincipalSource")(ResolvePrincipalSource)

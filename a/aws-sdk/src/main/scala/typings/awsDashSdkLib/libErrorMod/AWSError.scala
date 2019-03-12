@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("aws-sdk/lib/error", "AWSError")
 @js.native
 class AWSError ()
-  extends nodeLib.Error {
+  extends stdLib.Error {
   /**
     * CloudFront request ID associated with the response.
     */
@@ -25,10 +25,10 @@ class AWSError ()
     * Set when a networking error occurs to easily identify the endpoint of the request.
     */
   var hostname: java.lang.String = js.native
-  /**
-    * A longer human readable error message.
-    */
-  var message: java.lang.String = js.native
+  /* CompleteClass */
+  override var message: java.lang.String = js.native
+  /* CompleteClass */
+  override var name: java.lang.String = js.native
   /**
     * Set when a networking error occurs to easily identify the region of the request.
     */

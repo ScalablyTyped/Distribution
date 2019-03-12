@@ -29,16 +29,16 @@ object ClockViewModel {
     clockRange: ClockRange,
     clockStep: ClockStep,
     currentTime: JulianDate,
-    destroy: js.Function0[scala.Unit],
-    isDestroyed: js.Function0[scala.Boolean],
+    destroy: () => scala.Unit,
+    isDestroyed: () => scala.Boolean,
     multiplier: scala.Double,
     shouldAnimate: scala.Boolean,
     startTime: JulianDate,
     stopTime: JulianDate,
-    synchronize: js.Function0[scala.Unit],
+    synchronize: () => scala.Unit,
     systemTime: JulianDate
   ): ClockViewModel = {
-    val __obj = js.Dynamic.literal(canAnimate = canAnimate, clock = clock, clockRange = clockRange, clockStep = clockStep, currentTime = currentTime, destroy = destroy, isDestroyed = isDestroyed, multiplier = multiplier, shouldAnimate = shouldAnimate, startTime = startTime, stopTime = stopTime, synchronize = synchronize, systemTime = systemTime)
+    val __obj = js.Dynamic.literal(canAnimate = canAnimate, clock = clock, clockRange = clockRange, clockStep = clockStep, currentTime = currentTime, destroy = js.Any.fromFunction0(destroy), isDestroyed = js.Any.fromFunction0(isDestroyed), multiplier = multiplier, shouldAnimate = shouldAnimate, startTime = startTime, stopTime = stopTime, synchronize = js.Any.fromFunction0(synchronize), systemTime = systemTime)
   
     __obj.asInstanceOf[ClockViewModel]
   }

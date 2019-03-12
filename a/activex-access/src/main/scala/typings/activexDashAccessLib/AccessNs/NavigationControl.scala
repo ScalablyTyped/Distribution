@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class NavigationControl protected () extends js.Object {
   var `Access.NavigationControl_typekey`: NavigationControl = js.native
   var AllowedText: scala.Double = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   var AutoTab: scala.Boolean = js.native
   var BackColor: scala.Double = js.native
   var BackShade: scala.Double = js.native
@@ -51,7 +51,7 @@ class NavigationControl protected () extends js.Object {
   var Height: scala.Double = js.native
   var HelpContextId: scala.Double = js.native
   var HorizontalAnchor: AcHorizontalAnchor = js.native
-  val Hyperlink: Hyperlink = js.native
+  val Hyperlink: activexDashAccessLib.AccessNs.Hyperlink = js.native
   var InSelection: scala.Boolean = js.native
   var IsVisible: scala.Boolean = js.native
   var KeyboardLanguage: scala.Double = js.native

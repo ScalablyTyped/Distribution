@@ -109,7 +109,7 @@ trait Parser[O /* <: js.UndefOr[js.Object] */] extends js.Object {
   def parse(buffer: nodeLib.Buffer): binaryDashParserLib.binaryDashParserMod.ParserNs.Parsed[O] = js.native
   def parse(
     buffer: nodeLib.Buffer,
-    callback: js.Function2[/* err */ js.UndefOr[nodeLib.Error], /* result */ js.UndefOr[js.Any], scala.Unit]
+    callback: js.Function2[/* err */ js.UndefOr[stdLib.Error], /* result */ js.UndefOr[js.Any], scala.Unit]
   ): binaryDashParserLib.binaryDashParserMod.ParserNs.Parsed[O] = js.native
   def skip(length: scala.Double): Parser[O] = js.native
   def string[N /* <: java.lang.String */](name: N): binaryDashParserLib.binaryDashParserMod.ParserNs.Next[O, N, java.lang.String] = js.native

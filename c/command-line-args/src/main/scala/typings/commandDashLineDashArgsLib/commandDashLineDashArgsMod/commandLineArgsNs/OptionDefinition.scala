@@ -52,7 +52,7 @@ object OptionDefinition {
     group: java.lang.String | js.Array[java.lang.String] = null,
     lazyMultiple: js.UndefOr[scala.Boolean] = js.undefined,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
-    `type`: js.Function1[/* input */ java.lang.String, _] = null
+    `type`: /* input */ java.lang.String => _ = null
   ): OptionDefinition = {
     val __obj = js.Dynamic.literal(name = name)
     if (alias != null) __obj.updateDynamic("alias")(alias)
@@ -61,7 +61,7 @@ object OptionDefinition {
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (!js.isUndefined(lazyMultiple)) __obj.updateDynamic("lazyMultiple")(lazyMultiple)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
     __obj.asInstanceOf[OptionDefinition]
   }
 }

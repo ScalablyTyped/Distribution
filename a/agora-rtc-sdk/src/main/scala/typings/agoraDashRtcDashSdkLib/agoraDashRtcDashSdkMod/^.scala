@@ -19,8 +19,8 @@ object ^ extends js.Object {
   val VIDEO_CODEC_PROFILE_HIGH: agoraDashRtcDashSdkLib.agoraDashRtcDashSdkLibNumbers.`100` = js.native
   val VIDEO_CODEC_PROFILE_MAIN: agoraDashRtcDashSdkLib.agoraDashRtcDashSdkLibNumbers.`77` = js.native
   def checkSystemRequirements(): scala.Boolean = js.native
-  def createClient(config: agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.ClientConfig): agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.Client = js.native
-  def createStream(spec: agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.StreamSpec): agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.Stream = js.native
+  def createClient(config: ClientConfig): Client = js.native
+  def createStream(spec: StreamSpec): Stream = js.native
   def getDevices(callback: js.Function1[/* devices */ js.Array[_], scala.Unit]): scala.Unit = js.native
 }
 

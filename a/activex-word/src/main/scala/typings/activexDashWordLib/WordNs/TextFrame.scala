@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.TextFrame")
 @js.native
 class TextFrame protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var AutoSize: scala.Double = js.native
   val Column: activexDashOfficeLib.OfficeNs.TextColumn2 = js.native
   val ContainingRange: Range = js.native

@@ -51,16 +51,16 @@ trait GeoHashGridAggregation extends Aggregation {
 object GeoHashGridAggregation {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    agg: js.Function1[Aggregation, GeoHashGridAggregation],
-    aggregation: js.Function1[Aggregation, GeoHashGridAggregation],
-    field: js.Function1[java.lang.String, GeoHashGridAggregation],
-    precision: js.Function1[scala.Double, GeoHashGridAggregation],
-    shardSize: js.Function1[scala.Double, GeoHashGridAggregation],
-    size: js.Function1[scala.Double, GeoHashGridAggregation],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    agg: Aggregation => GeoHashGridAggregation,
+    aggregation: Aggregation => GeoHashGridAggregation,
+    field: java.lang.String => GeoHashGridAggregation,
+    precision: scala.Double => GeoHashGridAggregation,
+    shardSize: scala.Double => GeoHashGridAggregation,
+    size: scala.Double => GeoHashGridAggregation,
+    toJSON: () => js.Any
   ): GeoHashGridAggregation = {
-    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, field = field, precision = precision, shardSize = shardSize, size = size, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), agg = js.Any.fromFunction1(agg), aggregation = js.Any.fromFunction1(aggregation), field = js.Any.fromFunction1(field), precision = js.Any.fromFunction1(precision), shardSize = js.Any.fromFunction1(shardSize), size = js.Any.fromFunction1(size), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[GeoHashGridAggregation]
   }

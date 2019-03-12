@@ -16,7 +16,7 @@ trait SchedulerMoveEndEvent extends SchedulerEvent {
 object SchedulerMoveEndEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Scheduler,
     end: stdLib.Date = null,
@@ -25,7 +25,7 @@ object SchedulerMoveEndEvent {
     slot: js.Any = null,
     start: stdLib.Date = null
   ): SchedulerMoveEndEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (end != null) __obj.updateDynamic("end")(end)
     if (event != null) __obj.updateDynamic("event")(event)
     if (resources != null) __obj.updateDynamic("resources")(resources)

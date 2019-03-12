@@ -11,6 +11,6 @@ class Change () extends ClientObject {
   def get_changeToken(): ChangeToken = js.native
   def get_changeType(): ChangeType = js.native
   def get_siteId(): Guid = js.native
-  def get_time(): microsoftDashAjaxLib.Date = js.native
+  def get_time(): stdLib.Date = js.native
 }
 

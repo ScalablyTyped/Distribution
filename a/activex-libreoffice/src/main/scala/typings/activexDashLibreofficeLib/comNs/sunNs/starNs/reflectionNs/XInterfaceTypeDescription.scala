@@ -25,7 +25,7 @@ trait XInterfaceTypeDescription extends XTypeDescription {
     * Returns the members of the interfaces, i.e. attributes and methods.
     * @returns interface members
     */
-  val Members: activexDashInteropLib.SafeArray[XInterfaceMemberTypeDescription]
+  val Members: stdLib.SafeArray[XInterfaceMemberTypeDescription]
   /**
     * Deprecated. UIK are not used anymore, a type is uniquely identified by its name. ;  Returns the UIK, i.e. the unique identifier of the interface.
     * @deprecated Deprecated
@@ -45,7 +45,7 @@ trait XInterfaceTypeDescription extends XTypeDescription {
     * Returns the members of the interfaces, i.e. attributes and methods.
     * @returns interface members
     */
-  def getMembers(): activexDashInteropLib.SafeArray[XInterfaceMemberTypeDescription]
+  def getMembers(): stdLib.SafeArray[XInterfaceMemberTypeDescription]
   /**
     * Deprecated. UIK are not used anymore, a type is uniquely identified by its name. ;  Returns the UIK, i.e. the unique identifier of the interface.
     * @deprecated Deprecated
@@ -58,20 +58,20 @@ object XInterfaceTypeDescription {
   @scala.inline
   def apply(
     BaseType: XTypeDescription,
-    Members: activexDashInteropLib.SafeArray[XInterfaceMemberTypeDescription],
+    Members: stdLib.SafeArray[XInterfaceMemberTypeDescription],
     Name: java.lang.String,
     TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
     Uik: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik,
-    acquire: js.Function0[scala.Unit],
-    getBaseType: js.Function0[XTypeDescription],
-    getMembers: js.Function0[activexDashInteropLib.SafeArray[XInterfaceMemberTypeDescription]],
-    getName: js.Function0[java.lang.String],
-    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
-    getUik: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getBaseType: () => XTypeDescription,
+    getMembers: () => stdLib.SafeArray[XInterfaceMemberTypeDescription],
+    getName: () => java.lang.String,
+    getTypeClass: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    getUik: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XInterfaceTypeDescription = {
-    val __obj = js.Dynamic.literal(BaseType = BaseType, Members = Members, Name = Name, TypeClass = TypeClass, Uik = Uik, acquire = acquire, getBaseType = getBaseType, getMembers = getMembers, getName = getName, getTypeClass = getTypeClass, getUik = getUik, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(BaseType = BaseType, Members = Members, Name = Name, TypeClass = TypeClass, Uik = Uik, acquire = js.Any.fromFunction0(acquire), getBaseType = js.Any.fromFunction0(getBaseType), getMembers = js.Any.fromFunction0(getMembers), getName = js.Any.fromFunction0(getName), getTypeClass = js.Any.fromFunction0(getTypeClass), getUik = js.Any.fromFunction0(getUik), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XInterfaceTypeDescription]
   }

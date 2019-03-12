@@ -14,7 +14,7 @@ org.scalablytyped.runtime.Instantiable2[/* x */ scala.Double, /* y */ scala.Doub
   def encode(`type`: java.lang.String): scala.Unit = js.native
   def encode(
     `type`: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* buffer */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* buffer */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def getData(): nodeLib.Buffer = js.native
   def open(fp: java.lang.String): js.Function0[scala.Unit] = js.native

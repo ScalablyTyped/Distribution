@@ -13,12 +13,9 @@ trait RevisionsResource extends js.Object {
 object RevisionsResource {
   @scala.inline
   def apply(
-    check: js.Function1[
-      gapiDotClientDotGamesLib.Anon_AltClientRevision, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RevisionCheckResponse]
-    ]
+    check: gapiDotClientDotGamesLib.Anon_AltClientRevision => gapiDotClientLib.gapiNs.clientNs.Request[RevisionCheckResponse]
   ): RevisionsResource = {
-    val __obj = js.Dynamic.literal(check = check)
+    val __obj = js.Dynamic.literal(check = js.Any.fromFunction1(check))
   
     __obj.asInstanceOf[RevisionsResource]
   }

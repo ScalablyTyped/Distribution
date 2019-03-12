@@ -34,11 +34,11 @@ object Tracing {
   @scala.inline
   def apply(
     categories: java.lang.String,
-    disable: js.Function0[scala.Unit],
-    enable: js.Function0[scala.Unit],
+    disable: () => scala.Unit,
+    enable: () => scala.Unit,
     enabled: scala.Boolean
   ): Tracing = {
-    val __obj = js.Dynamic.literal(categories = categories, disable = disable, enable = enable, enabled = enabled)
+    val __obj = js.Dynamic.literal(categories = categories, disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), enabled = enabled)
   
     __obj.asInstanceOf[Tracing]
   }

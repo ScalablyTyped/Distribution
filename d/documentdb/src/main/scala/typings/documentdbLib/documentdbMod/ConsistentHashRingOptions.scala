@@ -17,11 +17,11 @@ trait ConsistentHashRingOptions extends js.Object {
 object ConsistentHashRingOptions {
   @scala.inline
   def apply(
-    computeHash: js.Function2[/* key */ java.lang.String | scala.Double, /* seed */ scala.Double, scala.Double] = null,
+    computeHash: (/* key */ java.lang.String | scala.Double, /* seed */ scala.Double) => scala.Double = null,
     numberOfVirtualNodesPerCollection: scala.Int | scala.Double = null
   ): ConsistentHashRingOptions = {
     val __obj = js.Dynamic.literal()
-    if (computeHash != null) __obj.updateDynamic("computeHash")(computeHash)
+    if (computeHash != null) __obj.updateDynamic("computeHash")(js.Any.fromFunction2(computeHash))
     if (numberOfVirtualNodesPerCollection != null) __obj.updateDynamic("numberOfVirtualNodesPerCollection")(numberOfVirtualNodesPerCollection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsistentHashRingOptions]
   }

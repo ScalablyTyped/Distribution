@@ -11,7 +11,7 @@ object ^ extends js.Object {
   /**
     * Util methods about graphics.
     */
-  val graphic: echartsLib.echartsNs.Graphic = js.native
+  val graphic: Graphic = js.native
   /**
     * Connects interaction of multiple chart series. For example:
     *
@@ -27,7 +27,7 @@ object ^ extends js.Object {
     * @param group Group id in string, or array of chart instance.
     */
   def connect(group: java.lang.String): scala.Unit = js.native
-  def connect(group: js.Array[echartsLib.echartsNs.ECharts]): scala.Unit = js.native
+  def connect(group: js.Array[ECharts]): scala.Unit = js.native
   /**
     * Disconnects interaction of multiple chart series. To have one single
     * instance to be removed, you can set `group` of chart instance to be null.
@@ -41,28 +41,28 @@ object ^ extends js.Object {
     *
     * @param target Chart instance or container.
     */
-  def dispose(target: echartsLib.echartsNs.ECharts): scala.Unit = js.native
+  def dispose(target: ECharts): scala.Unit = js.native
   def dispose(target: stdLib.HTMLCanvasElement): scala.Unit = js.native
   def dispose(target: stdLib.HTMLDivElement): scala.Unit = js.native
-  def getInstanceByDom(target: stdLib.HTMLCanvasElement): echartsLib.echartsNs.ECharts = js.native
+  def getInstanceByDom(target: stdLib.HTMLCanvasElement): ECharts = js.native
   /**
     * Returns chart instance of dom container.
     *
     * @param target Chart container.
     */
-  def getInstanceByDom(target: stdLib.HTMLDivElement): echartsLib.echartsNs.ECharts = js.native
+  def getInstanceByDom(target: stdLib.HTMLDivElement): ECharts = js.native
   /**
     * Get a registed map.
     *
     * @param {string} mapName Map name.
     * @return {MapObj} Map data.
     */
-  def getMap(mapName: java.lang.String): echartsLib.echartsNs.MapObj = js.native
-  def init(dom: stdLib.HTMLCanvasElement): echartsLib.echartsNs.ECharts = js.native
-  def init(dom: stdLib.HTMLCanvasElement, theme: java.lang.String): echartsLib.echartsNs.ECharts = js.native
-  def init(dom: stdLib.HTMLCanvasElement, theme: java.lang.String, opts: echartsLib.Anon_DevicePixelRatio): echartsLib.echartsNs.ECharts = js.native
-  def init(dom: stdLib.HTMLCanvasElement, theme: js.Object): echartsLib.echartsNs.ECharts = js.native
-  def init(dom: stdLib.HTMLCanvasElement, theme: js.Object, opts: echartsLib.Anon_DevicePixelRatio): echartsLib.echartsNs.ECharts = js.native
+  def getMap(mapName: java.lang.String): MapObj = js.native
+  def init(dom: stdLib.HTMLCanvasElement): ECharts = js.native
+  def init(dom: stdLib.HTMLCanvasElement, theme: java.lang.String): ECharts = js.native
+  def init(dom: stdLib.HTMLCanvasElement, theme: java.lang.String, opts: echartsLib.Anon_DevicePixelRatio): ECharts = js.native
+  def init(dom: stdLib.HTMLCanvasElement, theme: js.Object): ECharts = js.native
+  def init(dom: stdLib.HTMLCanvasElement, theme: js.Object, opts: echartsLib.Anon_DevicePixelRatio): ECharts = js.native
   /**
     * Creates an ECharts instance, and returns an echartsInstance. You shall
     *     not initialize multiple ECharts instances on a single container.
@@ -85,11 +85,11 @@ object ^ extends js.Object {
     *     If setting to `null`/`undefined`/`'auto'`, height of `dom`
     *     (instance container) will be used.
     */
-  def init(dom: stdLib.HTMLDivElement): echartsLib.echartsNs.ECharts = js.native
-  def init(dom: stdLib.HTMLDivElement, theme: java.lang.String): echartsLib.echartsNs.ECharts = js.native
-  def init(dom: stdLib.HTMLDivElement, theme: java.lang.String, opts: echartsLib.Anon_DevicePixelRatio): echartsLib.echartsNs.ECharts = js.native
-  def init(dom: stdLib.HTMLDivElement, theme: js.Object): echartsLib.echartsNs.ECharts = js.native
-  def init(dom: stdLib.HTMLDivElement, theme: js.Object, opts: echartsLib.Anon_DevicePixelRatio): echartsLib.echartsNs.ECharts = js.native
+  def init(dom: stdLib.HTMLDivElement): ECharts = js.native
+  def init(dom: stdLib.HTMLDivElement, theme: java.lang.String): ECharts = js.native
+  def init(dom: stdLib.HTMLDivElement, theme: java.lang.String, opts: echartsLib.Anon_DevicePixelRatio): ECharts = js.native
+  def init(dom: stdLib.HTMLDivElement, theme: js.Object): ECharts = js.native
+  def init(dom: stdLib.HTMLDivElement, theme: js.Object, opts: echartsLib.Anon_DevicePixelRatio): ECharts = js.native
   /**
     * Registers available maps. This can only be used after including
     * [geo](https://echarts.apache.org/option.html#geo)

@@ -27,9 +27,9 @@ object StackFrame {
     isNative: scala.Boolean,
     lineNumber: scala.Double,
     source: java.lang.String,
-    toString: js.Function0[java.lang.String]
+    toString: () => java.lang.String
   ): StackFrame = {
-    val __obj = js.Dynamic.literal(args = args, columnNumber = columnNumber, fileName = fileName, functionName = functionName, isEval = isEval, isNative = isNative, lineNumber = lineNumber, source = source, toString = toString)
+    val __obj = js.Dynamic.literal(args = args, columnNumber = columnNumber, fileName = fileName, functionName = functionName, isEval = isEval, isNative = isNative, lineNumber = lineNumber, source = source, toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[StackFrame]
   }

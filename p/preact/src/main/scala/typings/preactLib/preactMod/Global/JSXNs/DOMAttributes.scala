@@ -183,7 +183,8 @@ trait DOMAttributes
 object DOMAttributes {
   @scala.inline
   def apply(
-    PreactDOMAttributes: preactLib.preactMod.preactNs.PreactDOMAttributes = null,
+    children: preactLib.preactMod.preactNs.ComponentChildren = null,
+    dangerouslySetInnerHTML: preactLib.Anon_Html = null,
     onAbort: GenericEventHandler = null,
     onAbortCapture: GenericEventHandler = null,
     onAnimationEnd: AnimationEventHandler = null,
@@ -332,10 +333,18 @@ object DOMAttributes {
     onTouchMoveCapture: TouchEventHandler = null,
     onTouchStart: TouchEventHandler = null,
     onTouchStartCapture: TouchEventHandler = null,
-    onTransitionEnd: TransitionEventHandler = null
+    onTransitionEnd: TransitionEventHandler = null,
+    onTransitionEndCapture: TransitionEventHandler = null,
+    onVolumeChange: GenericEventHandler = null,
+    onVolumeChangeCapture: GenericEventHandler = null,
+    onWaiting: GenericEventHandler = null,
+    onWaitingCapture: GenericEventHandler = null,
+    onWheel: WheelEventHandler = null,
+    onWheelCapture: WheelEventHandler = null
   ): DOMAttributes = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, PreactDOMAttributes)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML)
     if (onAbort != null) __obj.updateDynamic("onAbort")(onAbort)
     if (onAbortCapture != null) __obj.updateDynamic("onAbortCapture")(onAbortCapture)
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(onAnimationEnd)
@@ -485,6 +494,13 @@ object DOMAttributes {
     if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
     if (onTouchStartCapture != null) __obj.updateDynamic("onTouchStartCapture")(onTouchStartCapture)
     if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(onTransitionEnd)
+    if (onTransitionEndCapture != null) __obj.updateDynamic("onTransitionEndCapture")(onTransitionEndCapture)
+    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(onVolumeChange)
+    if (onVolumeChangeCapture != null) __obj.updateDynamic("onVolumeChangeCapture")(onVolumeChangeCapture)
+    if (onWaiting != null) __obj.updateDynamic("onWaiting")(onWaiting)
+    if (onWaitingCapture != null) __obj.updateDynamic("onWaitingCapture")(onWaitingCapture)
+    if (onWheel != null) __obj.updateDynamic("onWheel")(onWheel)
+    if (onWheelCapture != null) __obj.updateDynamic("onWheelCapture")(onWheelCapture)
     __obj.asInstanceOf[DOMAttributes]
   }
 }

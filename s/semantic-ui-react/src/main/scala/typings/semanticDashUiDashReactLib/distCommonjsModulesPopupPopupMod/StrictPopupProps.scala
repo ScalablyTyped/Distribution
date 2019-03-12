@@ -56,7 +56,7 @@ trait StrictPopupProps
   @JSName("onClose")
   var onClose_StrictPopupProps: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ PopupProps, 
       scala.Unit
     ]
@@ -78,7 +78,7 @@ trait StrictPopupProps
   @JSName("onOpen")
   var onOpen_StrictPopupProps: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ PopupProps, 
       scala.Unit
     ]
@@ -144,18 +144,10 @@ object StrictPopupProps {
     on: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.hover | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.click | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.focus | (js.Array[
       semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.hover | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.click | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.focus
     ]) = null,
-    onClose: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ PopupProps, 
-      scala.Unit
-    ] = null,
-    onMount: js.Function2[/* nothing */ scala.Null, /* data */ PopupProps, scala.Unit] = null,
-    onOpen: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ PopupProps, 
-      scala.Unit
-    ] = null,
-    onUnmount: js.Function2[/* nothing */ scala.Null, /* data */ PopupProps, scala.Unit] = null,
+    onClose: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ PopupProps) => scala.Unit = null,
+    onMount: (/* nothing */ scala.Null, /* data */ PopupProps) => scala.Unit = null,
+    onOpen: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ PopupProps) => scala.Unit = null,
+    onUnmount: (/* nothing */ scala.Null, /* data */ PopupProps) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     openOnTriggerClick: js.UndefOr[scala.Boolean] = js.undefined,
     openOnTriggerFocus: js.UndefOr[scala.Boolean] = js.undefined,
@@ -164,7 +156,7 @@ object StrictPopupProps {
     size: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mini | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tiny | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.small | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.large | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.huge = null,
     style: js.Object = null,
     trigger: reactLib.reactMod.ReactNs.ReactNode = null,
-    triggerRef: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
+    triggerRef: /* node */ stdLib.HTMLElement => scala.Unit = null,
     verticalOffset: scala.Int | scala.Double = null,
     wide: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.very = null
   ): StrictPopupProps = {
@@ -195,10 +187,10 @@ object StrictPopupProps {
     if (mouseEnterDelay != null) __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay.asInstanceOf[js.Any])
     if (mouseLeaveDelay != null) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onMount != null) __obj.updateDynamic("onMount")(onMount)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
-    if (onUnmount != null) __obj.updateDynamic("onUnmount")(onUnmount)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2(onClose))
+    if (onMount != null) __obj.updateDynamic("onMount")(js.Any.fromFunction2(onMount))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction2(onOpen))
+    if (onUnmount != null) __obj.updateDynamic("onUnmount")(js.Any.fromFunction2(onUnmount))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (!js.isUndefined(openOnTriggerClick)) __obj.updateDynamic("openOnTriggerClick")(openOnTriggerClick)
     if (!js.isUndefined(openOnTriggerFocus)) __obj.updateDynamic("openOnTriggerFocus")(openOnTriggerFocus)
@@ -207,7 +199,7 @@ object StrictPopupProps {
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
-    if (triggerRef != null) __obj.updateDynamic("triggerRef")(triggerRef)
+    if (triggerRef != null) __obj.updateDynamic("triggerRef")(js.Any.fromFunction1(triggerRef))
     if (verticalOffset != null) __obj.updateDynamic("verticalOffset")(verticalOffset.asInstanceOf[js.Any])
     if (wide != null) __obj.updateDynamic("wide")(wide.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictPopupProps]

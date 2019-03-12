@@ -28,7 +28,7 @@ trait Zeroconf
   @JSName("on")
   def on_error(
     e: reactDashNativeDashZeroconfLib.reactDashNativeDashZeroconfLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, _]
+    listener: js.Function1[/* err */ stdLib.Error, _]
   ): this.type = js.native
   /**
     * @param name Name of the the service.

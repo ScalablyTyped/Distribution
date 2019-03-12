@@ -22,12 +22,12 @@ object LogConfig {
   @scala.inline
   def apply(
     $el: jqueryLib.JQuery[stdLib.HTMLElement],
-    consoleProps: js.Function0[ObjectLike],
+    consoleProps: () => ObjectLike,
     displayName: java.lang.String,
     message: js.Array[_],
     name: java.lang.String
   ): LogConfig = {
-    val __obj = js.Dynamic.literal($el = $el, consoleProps = consoleProps, displayName = displayName, message = message, name = name)
+    val __obj = js.Dynamic.literal($el = $el, consoleProps = js.Any.fromFunction0(consoleProps), displayName = displayName, message = message, name = name)
   
     __obj.asInstanceOf[LogConfig]
   }

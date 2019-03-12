@@ -27,7 +27,7 @@ object CanvasMapTypeOptions {
     name: java.lang.String,
     projection: Projection,
     darktheme: js.UndefOr[scala.Boolean] = js.undefined,
-    getTileData: js.Function0[_] = null,
+    getTileData: () => _ = null,
     provider: js.Array[MapDataProvider] = null,
     repeatX: js.UndefOr[scala.Boolean] = js.undefined,
     tileSize: Size | SizeLiteral = null,
@@ -36,7 +36,7 @@ object CanvasMapTypeOptions {
   ): CanvasMapTypeOptions = {
     val __obj = js.Dynamic.literal(maxZoom = maxZoom, minZoom = minZoom, name = name, projection = projection)
     if (!js.isUndefined(darktheme)) __obj.updateDynamic("darktheme")(darktheme)
-    if (getTileData != null) __obj.updateDynamic("getTileData")(getTileData)
+    if (getTileData != null) __obj.updateDynamic("getTileData")(js.Any.fromFunction0(getTileData))
     if (provider != null) __obj.updateDynamic("provider")(provider)
     if (!js.isUndefined(repeatX)) __obj.updateDynamic("repeatX")(repeatX)
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])

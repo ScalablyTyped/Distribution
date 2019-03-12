@@ -37,7 +37,7 @@ object MediaPackageNs extends js.Object {
       * Time (in seconds) between each encryption key rotation.
       */
     var KeyRotationIntervalSeconds: js.UndefOr[__integer] = js.undefined
-    var SpekeKeyProvider: SpekeKeyProvider
+    var SpekeKeyProvider: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.SpekeKeyProvider
   }
   
   trait CmafPackage extends js.Object {
@@ -197,7 +197,7 @@ object MediaPackageNs extends js.Object {
       * Time (in seconds) between each encryption key rotation.
       */
     var KeyRotationIntervalSeconds: js.UndefOr[__integer] = js.undefined
-    var SpekeKeyProvider: SpekeKeyProvider
+    var SpekeKeyProvider: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.SpekeKeyProvider
   }
   
   trait DashPackage extends js.Object {
@@ -358,7 +358,7 @@ object MediaPackageNs extends js.Object {
       * When enabled, the EXT-X-KEY tag will be repeated in output manifests.
       */
     var RepeatExtXKey: js.UndefOr[__boolean] = js.undefined
-    var SpekeKeyProvider: SpekeKeyProvider
+    var SpekeKeyProvider: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.SpekeKeyProvider
   }
   
   trait HlsIngest extends js.Object {
@@ -589,7 +589,7 @@ object MediaPackageNs extends js.Object {
   }
   
   trait MssEncryption extends js.Object {
-    var SpekeKeyProvider: SpekeKeyProvider
+    var SpekeKeyProvider: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.SpekeKeyProvider
   }
   
   trait MssPackage extends js.Object {

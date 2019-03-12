@@ -45,20 +45,20 @@ object XSimpleText {
     End: XTextRange,
     Start: XTextRange,
     String: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    createTextCursor: js.Function0[XTextCursor],
-    createTextCursorByRange: js.Function1[XTextRange, XTextCursor],
-    getEnd: js.Function0[XTextRange],
-    getStart: js.Function0[XTextRange],
-    getString: js.Function0[java.lang.String],
-    getText: js.Function0[XText],
-    insertControlCharacter: js.Function3[XTextRange, scala.Double, scala.Boolean, scala.Unit],
-    insertString: js.Function3[XTextRange, java.lang.String, scala.Boolean, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setString: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    createTextCursor: () => XTextCursor,
+    createTextCursorByRange: XTextRange => XTextCursor,
+    getEnd: () => XTextRange,
+    getStart: () => XTextRange,
+    getString: () => java.lang.String,
+    getText: () => XText,
+    insertControlCharacter: (XTextRange, scala.Double, scala.Boolean) => scala.Unit,
+    insertString: (XTextRange, java.lang.String, scala.Boolean) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setString: java.lang.String => scala.Unit
   ): XSimpleText = {
-    val __obj = js.Dynamic.literal(End = End, Start = Start, String = String, acquire = acquire, createTextCursor = createTextCursor, createTextCursorByRange = createTextCursorByRange, getEnd = getEnd, getStart = getStart, getString = getString, getText = getText, insertControlCharacter = insertControlCharacter, insertString = insertString, queryInterface = queryInterface, release = release, setString = setString)
+    val __obj = js.Dynamic.literal(End = End, Start = Start, String = String, acquire = js.Any.fromFunction0(acquire), createTextCursor = js.Any.fromFunction0(createTextCursor), createTextCursorByRange = js.Any.fromFunction1(createTextCursorByRange), getEnd = js.Any.fromFunction0(getEnd), getStart = js.Any.fromFunction0(getStart), getString = js.Any.fromFunction0(getString), getText = js.Any.fromFunction0(getText), insertControlCharacter = js.Any.fromFunction3(insertControlCharacter), insertString = js.Any.fromFunction3(insertString), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setString = js.Any.fromFunction1(setString))
   
     __obj.asInstanceOf[XSimpleText]
   }

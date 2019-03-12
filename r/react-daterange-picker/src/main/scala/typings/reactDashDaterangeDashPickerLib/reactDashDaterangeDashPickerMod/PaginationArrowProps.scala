@@ -21,7 +21,7 @@ object PaginationArrowProps {
     direction: reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerLibStrings.next | reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerLibStrings.previous = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     key: reactLib.reactMod.ReactNs.Key = null,
-    onTrigger: js.Function0[scala.Unit] = null,
+    onTrigger: () => scala.Unit = null,
     ref: reactLib.reactMod.ReactNs.LegacyRef[T] = null
   ): PaginationArrowProps[T] = {
     val __obj = js.Dynamic.literal()
@@ -29,7 +29,7 @@ object PaginationArrowProps {
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (onTrigger != null) __obj.updateDynamic("onTrigger")(onTrigger)
+    if (onTrigger != null) __obj.updateDynamic("onTrigger")(js.Any.fromFunction0(onTrigger))
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationArrowProps[T]]
   }

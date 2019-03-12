@@ -18,14 +18,14 @@ object RotateOptions {
   def apply(
     anchor: openlayersLib.openlayersMod.Coordinate = null,
     duration: scala.Int | scala.Double = null,
-    easing: js.Function1[/* t */ scala.Double, scala.Double] = null,
+    easing: /* t */ scala.Double => scala.Double = null,
     rotation: scala.Int | scala.Double = null,
     start: scala.Int | scala.Double = null
   ): RotateOptions = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotateOptions]

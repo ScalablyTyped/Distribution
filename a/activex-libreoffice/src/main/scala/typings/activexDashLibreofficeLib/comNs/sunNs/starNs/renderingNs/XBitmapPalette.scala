@@ -63,24 +63,15 @@ object XBitmapPalette {
   def apply(
     ColorSpace: XColorSpace,
     NumberOfEntries: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getColorSpace: js.Function0[XColorSpace],
-    getIndex: js.Function2[
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent]], 
-      scala.Double, 
-      scala.Boolean
-    ],
-    getNumberOfEntries: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setIndex: js.Function3[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], 
-      scala.Boolean, 
-      scala.Double, 
-      scala.Boolean
-    ]
+    acquire: () => scala.Unit,
+    getColorSpace: () => XColorSpace,
+    getIndex: (js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent]], scala.Double) => scala.Boolean,
+    getNumberOfEntries: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setIndex: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], scala.Boolean, scala.Double) => scala.Boolean
   ): XBitmapPalette = {
-    val __obj = js.Dynamic.literal(ColorSpace = ColorSpace, NumberOfEntries = NumberOfEntries, acquire = acquire, getColorSpace = getColorSpace, getIndex = getIndex, getNumberOfEntries = getNumberOfEntries, queryInterface = queryInterface, release = release, setIndex = setIndex)
+    val __obj = js.Dynamic.literal(ColorSpace = ColorSpace, NumberOfEntries = NumberOfEntries, acquire = js.Any.fromFunction0(acquire), getColorSpace = js.Any.fromFunction0(getColorSpace), getIndex = js.Any.fromFunction2(getIndex), getNumberOfEntries = js.Any.fromFunction0(getNumberOfEntries), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setIndex = js.Any.fromFunction3(setIndex))
   
     __obj.asInstanceOf[XBitmapPalette]
   }

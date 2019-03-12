@@ -165,7 +165,7 @@ object zlibNs extends js.Object {
   def deflate(buf: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def deflate(
     buf: nodeLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def deflate(buf: nodeLib.zlibMod.InputType, callback: nodeLib.zlibMod.CompressCallback): scala.Unit = js.native
   def deflate(
@@ -176,7 +176,7 @@ object zlibNs extends js.Object {
   def deflateRaw(buf: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def deflateRaw(
     buf: nodeLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def deflateRaw(buf: nodeLib.zlibMod.InputType, callback: nodeLib.zlibMod.CompressCallback): scala.Unit = js.native
   def deflateRaw(
@@ -191,7 +191,7 @@ object zlibNs extends js.Object {
   def gunzip(buf: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def gunzip(
     buf: nodeLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def gunzip(buf: nodeLib.zlibMod.InputType, callback: nodeLib.zlibMod.CompressCallback): scala.Unit = js.native
   def gunzip(
@@ -204,7 +204,7 @@ object zlibNs extends js.Object {
   def gzip(buf: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def gzip(
     buf: nodeLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def gzip(buf: nodeLib.zlibMod.InputType, callback: nodeLib.zlibMod.CompressCallback): scala.Unit = js.native
   def gzip(
@@ -217,7 +217,7 @@ object zlibNs extends js.Object {
   def inflate(buf: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def inflate(
     buf: nodeLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def inflate(buf: nodeLib.zlibMod.InputType, callback: nodeLib.zlibMod.CompressCallback): scala.Unit = js.native
   def inflate(
@@ -228,7 +228,7 @@ object zlibNs extends js.Object {
   def inflateRaw(buf: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def inflateRaw(
     buf: nodeLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def inflateRaw(buf: nodeLib.zlibMod.InputType, callback: nodeLib.zlibMod.CompressCallback): scala.Unit = js.native
   def inflateRaw(
@@ -243,7 +243,7 @@ object zlibNs extends js.Object {
   def unzip(buf: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def unzip(
     buf: nodeLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def unzip(buf: nodeLib.zlibMod.InputType, callback: nodeLib.zlibMod.CompressCallback): scala.Unit = js.native
   def unzip(

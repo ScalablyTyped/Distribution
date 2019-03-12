@@ -21,16 +21,16 @@ trait GetLocationOptions
 object GetLocationOptions {
   @scala.inline
   def apply(
-    success: js.Function1[LocationData, scala.Unit],
+    success: LocationData => scala.Unit,
     altitude: js.UndefOr[scala.Boolean] = js.undefined,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
+    complete: /* res */ js.Any => scala.Unit = null,
+    fail: js.Any => scala.Unit = null,
     `type`: weixinDashAppLib.weixinDashAppLibStrings.wgs84 | weixinDashAppLib.weixinDashAppLibStrings.gcj02 = null
   ): GetLocationOptions = {
-    val __obj = js.Dynamic.literal(success = success)
+    val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLocationOptions]
   }

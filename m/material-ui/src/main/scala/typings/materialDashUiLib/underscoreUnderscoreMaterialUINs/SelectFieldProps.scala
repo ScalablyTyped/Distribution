@@ -75,17 +75,12 @@ object SelectFieldProps {
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
     onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onChange: js.Function3[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
-      /* index */ scala.Double, 
-      /* menuItemValue */ js.Any, 
-      scala.Unit
-    ] = null,
+    onChange: (/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], /* index */ scala.Double, /* menuItemValue */ js.Any) => scala.Unit = null,
     onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
     openImmediately: js.UndefOr[scala.Boolean] = js.undefined,
     selectFieldRoot: reactLib.reactMod.ReactNs.CSSProperties = null,
     selectedMenuItemStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    selectionRenderer: js.Function1[/* value */ js.Any, reactLib.reactMod.ReactNs.ReactNode] = null,
+    selectionRenderer: /* value */ js.Any => reactLib.reactMod.ReactNs.ReactNode = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     underlineDisabledStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     underlineFocusStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -115,12 +110,12 @@ object SelectFieldProps {
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (name != null) __obj.updateDynamic("name")(name)
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3(onChange))
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
     if (!js.isUndefined(openImmediately)) __obj.updateDynamic("openImmediately")(openImmediately)
     if (selectFieldRoot != null) __obj.updateDynamic("selectFieldRoot")(selectFieldRoot)
     if (selectedMenuItemStyle != null) __obj.updateDynamic("selectedMenuItemStyle")(selectedMenuItemStyle)
-    if (selectionRenderer != null) __obj.updateDynamic("selectionRenderer")(selectionRenderer)
+    if (selectionRenderer != null) __obj.updateDynamic("selectionRenderer")(js.Any.fromFunction1(selectionRenderer))
     if (style != null) __obj.updateDynamic("style")(style)
     if (underlineDisabledStyle != null) __obj.updateDynamic("underlineDisabledStyle")(underlineDisabledStyle)
     if (underlineFocusStyle != null) __obj.updateDynamic("underlineFocusStyle")(underlineFocusStyle)

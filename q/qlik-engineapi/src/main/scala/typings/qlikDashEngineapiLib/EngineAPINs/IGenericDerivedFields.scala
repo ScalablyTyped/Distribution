@@ -43,15 +43,15 @@ trait IGenericDerivedFields
 object IGenericDerivedFields {
   @scala.inline
   def apply(
-    getDerivedField: js.Function1[java.lang.String, js.Promise[_]],
-    getDerivedFieldData: js.Function0[js.Promise[_]],
-    getDerivedFields: js.Function0[js.Promise[_]],
-    getDerivedGroups: js.Function0[js.Promise[_]],
-    getInfo: js.Function0[js.Promise[_]],
-    getListData: js.Function0[js.Promise[_]],
-    getProperties: js.Function0[js.Promise[IGenericDerivedFieldProperties]]
+    getDerivedField: java.lang.String => js.Promise[_],
+    getDerivedFieldData: () => js.Promise[_],
+    getDerivedFields: () => js.Promise[_],
+    getDerivedGroups: () => js.Promise[_],
+    getInfo: () => js.Promise[_],
+    getListData: () => js.Promise[_],
+    getProperties: () => js.Promise[IGenericDerivedFieldProperties]
   ): IGenericDerivedFields = {
-    val __obj = js.Dynamic.literal(getDerivedField = getDerivedField, getDerivedFieldData = getDerivedFieldData, getDerivedFields = getDerivedFields, getDerivedGroups = getDerivedGroups, getInfo = getInfo, getListData = getListData, getProperties = getProperties)
+    val __obj = js.Dynamic.literal(getDerivedField = js.Any.fromFunction1(getDerivedField), getDerivedFieldData = js.Any.fromFunction0(getDerivedFieldData), getDerivedFields = js.Any.fromFunction0(getDerivedFields), getDerivedGroups = js.Any.fromFunction0(getDerivedGroups), getInfo = js.Any.fromFunction0(getInfo), getListData = js.Any.fromFunction0(getListData), getProperties = js.Any.fromFunction0(getProperties))
   
     __obj.asInstanceOf[IGenericDerivedFields]
   }

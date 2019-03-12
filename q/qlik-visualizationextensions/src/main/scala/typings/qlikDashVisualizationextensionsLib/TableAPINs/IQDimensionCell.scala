@@ -23,15 +23,15 @@ trait IQDimensionCell extends IQMeasureCell {
 object IQDimensionCell {
   @scala.inline
   def apply(
-    getPercent: js.Function0[scala.Double],
-    getPercentOfMax: js.Function0[scala.Double],
+    getPercent: () => scala.Double,
+    getPercentOfMax: () => scala.Double,
     qElemNumber: scala.Double,
     qState: java.lang.String,
     qText: java.lang.String,
-    select: js.Function0[scala.Unit],
+    select: () => scala.Unit,
     qNum: scala.Int | scala.Double = null
   ): IQDimensionCell = {
-    val __obj = js.Dynamic.literal(getPercent = getPercent, getPercentOfMax = getPercentOfMax, qElemNumber = qElemNumber, qState = qState, qText = qText, select = select)
+    val __obj = js.Dynamic.literal(getPercent = js.Any.fromFunction0(getPercent), getPercentOfMax = js.Any.fromFunction0(getPercentOfMax), qElemNumber = qElemNumber, qState = qState, qText = qText, select = js.Any.fromFunction0(select))
     if (qNum != null) __obj.updateDynamic("qNum")(qNum.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQDimensionCell]
   }

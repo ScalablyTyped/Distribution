@@ -17,12 +17,12 @@ trait DatabaseSync extends js.Object {
 object DatabaseSync {
   @scala.inline
   def apply(
-    changeVersion: js.Function3[DOMString, DOMString, SQLTransactionSyncCallback, scala.Unit],
-    readTransaction: js.Function1[SQLTransactionSyncCallback, scala.Unit],
-    transaction: js.Function1[SQLTransactionSyncCallback, scala.Unit],
+    changeVersion: (DOMString, DOMString, SQLTransactionSyncCallback) => scala.Unit,
+    readTransaction: SQLTransactionSyncCallback => scala.Unit,
+    transaction: SQLTransactionSyncCallback => scala.Unit,
     version: DOMString
   ): DatabaseSync = {
-    val __obj = js.Dynamic.literal(changeVersion = changeVersion, readTransaction = readTransaction, transaction = transaction, version = version)
+    val __obj = js.Dynamic.literal(changeVersion = js.Any.fromFunction3(changeVersion), readTransaction = js.Any.fromFunction1(readTransaction), transaction = js.Any.fromFunction1(transaction), version = version)
   
     __obj.asInstanceOf[DatabaseSync]
   }

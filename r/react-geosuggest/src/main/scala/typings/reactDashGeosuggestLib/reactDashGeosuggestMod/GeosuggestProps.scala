@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in {[ P in keyof react.react.InputHTMLAttributes<react.HTMLInputElement> ]: P} & {[ P in 'style' ]: never} & {[x: string] : never, [x: number] : never}[keyof react.react.InputHTMLAttributes<react.HTMLInputElement>] ]: react.react.InputHTMLAttributes<react.HTMLInputElement>[P]} */ trait GeosuggestProps extends js.Object {
+- Dropped {[ P in {[ P in keyof react.react.InputHTMLAttributes<std.HTMLInputElement> ]: P} & {[ P in 'style' ]: never} & {[x: string] : never, [x: number] : never}[keyof react.react.InputHTMLAttributes<std.HTMLInputElement>] ]: react.react.InputHTMLAttributes<std.HTMLInputElement>[P]} */ trait GeosuggestProps extends js.Object {
   var autoActivateFirstSuggest: js.UndefOr[scala.Boolean] = js.undefined
   var autoComplete: js.UndefOr[java.lang.String] = js.undefined
   var bounds: js.UndefOr[googlemapsLib.googleNs.mapsNs.LatLngBounds] = js.undefined
@@ -71,10 +71,7 @@ object GeosuggestProps {
     country: java.lang.String | js.Array[java.lang.String] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     fixtures: js.Array[Fixture] = null,
-    getSuggestLabel: js.Function1[
-      /* googleSuggest */ googlemapsLib.googleNs.mapsNs.placesNs.AutocompletePrediction, 
-      java.lang.String
-    ] = null,
+    getSuggestLabel: /* googleSuggest */ googlemapsLib.googleNs.mapsNs.placesNs.AutocompletePrediction => java.lang.String = null,
     googleMaps: reactDashGeosuggestLib.Anon_Adsense = null,
     highlightMatch: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreTab: js.UndefOr[scala.Boolean] = js.undefined,
@@ -84,26 +81,20 @@ object GeosuggestProps {
     location: googlemapsLib.googleNs.mapsNs.LatLng = null,
     maxFixtures: scala.Int | scala.Double = null,
     minLength: scala.Int | scala.Double = null,
-    onActivateSuggest: js.Function1[/* suggest */ Suggest, scala.Unit] = null,
-    onBlur: js.Function1[/* value */ js.Any, scala.Unit] = null,
-    onChange: js.Function1[/* value */ js.Any, scala.Unit] = null,
-    onFocus: js.Function1[/* value */ js.Any, scala.Unit] = null,
-    onKeyDown: js.Function1[/* event */ js.Any, scala.Unit] = null,
-    onKeyPress: js.Function1[/* event */ js.Any, scala.Unit] = null,
-    onSuggestNoResults: js.Function1[/* userInput */ java.lang.String, scala.Unit] = null,
-    onSuggestSelect: js.Function1[/* suggest */ Suggest, scala.Unit] = null,
-    onUpdateSuggests: js.Function2[/* suggests */ js.Any, /* activeSuggest */ js.Any, scala.Unit] = null,
+    onActivateSuggest: /* suggest */ Suggest => scala.Unit = null,
+    onBlur: /* value */ js.Any => scala.Unit = null,
+    onChange: /* value */ js.Any => scala.Unit = null,
+    onFocus: /* value */ js.Any => scala.Unit = null,
+    onKeyDown: /* event */ js.Any => scala.Unit = null,
+    onKeyPress: /* event */ js.Any => scala.Unit = null,
+    onSuggestNoResults: /* userInput */ java.lang.String => scala.Unit = null,
+    onSuggestSelect: /* suggest */ Suggest => scala.Unit = null,
+    onUpdateSuggests: (/* suggests */ js.Any, /* activeSuggest */ js.Any) => scala.Unit = null,
     placeholder: java.lang.String = null,
     queryDelay: scala.Int | scala.Double = null,
     radius: scala.Int | scala.Double = null,
-    renderSuggestItem: js.Function1[
-      /* googleSuggest */ googlemapsLib.googleNs.mapsNs.placesNs.AutocompletePrediction, 
-      _
-    ] = null,
-    skipSuggest: js.Function1[
-      /* googleSuggest */ googlemapsLib.googleNs.mapsNs.placesNs.AutocompletePrediction, 
-      scala.Boolean
-    ] = null,
+    renderSuggestItem: /* googleSuggest */ googlemapsLib.googleNs.mapsNs.placesNs.AutocompletePrediction => _ = null,
+    skipSuggest: /* googleSuggest */ googlemapsLib.googleNs.mapsNs.placesNs.AutocompletePrediction => scala.Boolean = null,
     style: Styles = null,
     suggestItemActiveClassName: java.lang.String = null,
     suggestItemClassName: java.lang.String = null,
@@ -119,7 +110,7 @@ object GeosuggestProps {
     if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (fixtures != null) __obj.updateDynamic("fixtures")(fixtures)
-    if (getSuggestLabel != null) __obj.updateDynamic("getSuggestLabel")(getSuggestLabel)
+    if (getSuggestLabel != null) __obj.updateDynamic("getSuggestLabel")(js.Any.fromFunction1(getSuggestLabel))
     if (googleMaps != null) __obj.updateDynamic("googleMaps")(googleMaps)
     if (!js.isUndefined(highlightMatch)) __obj.updateDynamic("highlightMatch")(highlightMatch)
     if (!js.isUndefined(ignoreTab)) __obj.updateDynamic("ignoreTab")(ignoreTab)
@@ -129,20 +120,20 @@ object GeosuggestProps {
     if (location != null) __obj.updateDynamic("location")(location)
     if (maxFixtures != null) __obj.updateDynamic("maxFixtures")(maxFixtures.asInstanceOf[js.Any])
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (onActivateSuggest != null) __obj.updateDynamic("onActivateSuggest")(onActivateSuggest)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
-    if (onSuggestNoResults != null) __obj.updateDynamic("onSuggestNoResults")(onSuggestNoResults)
-    if (onSuggestSelect != null) __obj.updateDynamic("onSuggestSelect")(onSuggestSelect)
-    if (onUpdateSuggests != null) __obj.updateDynamic("onUpdateSuggests")(onUpdateSuggests)
+    if (onActivateSuggest != null) __obj.updateDynamic("onActivateSuggest")(js.Any.fromFunction1(onActivateSuggest))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
+    if (onSuggestNoResults != null) __obj.updateDynamic("onSuggestNoResults")(js.Any.fromFunction1(onSuggestNoResults))
+    if (onSuggestSelect != null) __obj.updateDynamic("onSuggestSelect")(js.Any.fromFunction1(onSuggestSelect))
+    if (onUpdateSuggests != null) __obj.updateDynamic("onUpdateSuggests")(js.Any.fromFunction2(onUpdateSuggests))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (queryDelay != null) __obj.updateDynamic("queryDelay")(queryDelay.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (renderSuggestItem != null) __obj.updateDynamic("renderSuggestItem")(renderSuggestItem)
-    if (skipSuggest != null) __obj.updateDynamic("skipSuggest")(skipSuggest)
+    if (renderSuggestItem != null) __obj.updateDynamic("renderSuggestItem")(js.Any.fromFunction1(renderSuggestItem))
+    if (skipSuggest != null) __obj.updateDynamic("skipSuggest")(js.Any.fromFunction1(skipSuggest))
     if (style != null) __obj.updateDynamic("style")(style)
     if (suggestItemActiveClassName != null) __obj.updateDynamic("suggestItemActiveClassName")(suggestItemActiveClassName)
     if (suggestItemClassName != null) __obj.updateDynamic("suggestItemClassName")(suggestItemClassName)

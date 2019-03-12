@@ -16,14 +16,9 @@ trait FoldableComposition[F, G] extends js.Object {
 object FoldableComposition {
   @scala.inline
   def apply[F, G](
-    reduce: js.Function3[
-      fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]], 
-      js.Any, 
-      js.Function2[js.Any, js.Any, js.Any], 
-      js.Any
-    ]
+    reduce: (fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]], js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any
   ): FoldableComposition[F, G] = {
-    val __obj = js.Dynamic.literal(reduce = reduce)
+    val __obj = js.Dynamic.literal(reduce = js.Any.fromFunction3(reduce))
   
     __obj.asInstanceOf[FoldableComposition[F, G]]
   }

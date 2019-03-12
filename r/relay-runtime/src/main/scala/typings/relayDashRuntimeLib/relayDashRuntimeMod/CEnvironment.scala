@@ -51,18 +51,14 @@ trait CEnvironment[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperatio
 object CEnvironment {
   @scala.inline
   def apply[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation, TPayload](
-    lookup: js.Function1[CSelector[TNode], CSnapshot[TNode]],
-    retain: js.Function1[CSelector[TNode], Disposable],
-    sendQuery: js.Function1[relayDashRuntimeLib.Anon_CacheConfig[TPayload, TNode, TOperation], Disposable],
-    streamQuery: js.Function1[relayDashRuntimeLib.Anon_CacheConfig[TPayload, TNode, TOperation], Disposable],
-    subscribe: js.Function2[
-      CSnapshot[TNode], 
-      js.Function1[/* snapshot */ CSnapshot[TNode], scala.Unit], 
-      Disposable
-    ],
+    lookup: CSelector[TNode] => CSnapshot[TNode],
+    retain: CSelector[TNode] => Disposable,
+    sendQuery: relayDashRuntimeLib.Anon_CacheConfig[TPayload, TNode, TOperation] => Disposable,
+    streamQuery: relayDashRuntimeLib.Anon_CacheConfig[TPayload, TNode, TOperation] => Disposable,
+    subscribe: (CSnapshot[TNode], js.Function1[/* snapshot */ CSnapshot[TNode], scala.Unit]) => Disposable,
     unstable_internal: CUnstableEnvironmentCore[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation]
   ): CEnvironment[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation, TPayload] = {
-    val __obj = js.Dynamic.literal(lookup = lookup, retain = retain, sendQuery = sendQuery, streamQuery = streamQuery, subscribe = subscribe, unstable_internal = unstable_internal)
+    val __obj = js.Dynamic.literal(lookup = js.Any.fromFunction1(lookup), retain = js.Any.fromFunction1(retain), sendQuery = js.Any.fromFunction1(sendQuery), streamQuery = js.Any.fromFunction1(streamQuery), subscribe = js.Any.fromFunction2(subscribe), unstable_internal = unstable_internal)
   
     __obj.asInstanceOf[CEnvironment[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation, TPayload]]
   }

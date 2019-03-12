@@ -28,12 +28,12 @@ object TokenOpts {
   def apply(
     customFlags: java.lang.String = null,
     scope: java.lang.String = null,
-    trigger: js.Function0[scala.Boolean] = null
+    trigger: () => scala.Boolean = null
   ): TokenOpts = {
     val __obj = js.Dynamic.literal()
     if (customFlags != null) __obj.updateDynamic("customFlags")(customFlags)
     if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    if (trigger != null) __obj.updateDynamic("trigger")(js.Any.fromFunction0(trigger))
     __obj.asInstanceOf[TokenOpts]
   }
 }

@@ -17,19 +17,12 @@ trait Anon_All extends js.Object {
 object Anon_All {
   @scala.inline
   def apply(
-    all: js.Function1[
-      js.Array[atAngularCompilerLib.srcUtilMod.SyncAsync[js.Any]], 
-      atAngularCompilerLib.srcUtilMod.SyncAsync[js.Array[js.Any]]
-    ],
-    assertSync: js.Function1[atAngularCompilerLib.srcUtilMod.SyncAsync[js.Any], js.Any],
-    `then`: js.Function2[
-      atAngularCompilerLib.srcUtilMod.SyncAsync[js.Any], 
-      js.Function1[js.Any, atAngularCompilerLib.srcUtilMod.SyncAsync[js.Any]], 
-      atAngularCompilerLib.srcUtilMod.SyncAsync[js.Any]
-    ]
+    all: js.Array[atAngularCompilerLib.srcUtilMod.SyncAsync[js.Any]] => atAngularCompilerLib.srcUtilMod.SyncAsync[js.Array[js.Any]],
+    assertSync: atAngularCompilerLib.srcUtilMod.SyncAsync[js.Any] => js.Any,
+    `then`: (atAngularCompilerLib.srcUtilMod.SyncAsync[js.Any], js.Function1[js.Any, atAngularCompilerLib.srcUtilMod.SyncAsync[js.Any]]) => atAngularCompilerLib.srcUtilMod.SyncAsync[js.Any]
   ): Anon_All = {
-    val __obj = js.Dynamic.literal(all = all, assertSync = assertSync)
-    __obj.updateDynamic("then")(`then`)
+    val __obj = js.Dynamic.literal(all = js.Any.fromFunction1(all), assertSync = js.Any.fromFunction1(assertSync))
+    __obj.updateDynamic("then")(js.Any.fromFunction2(`then`))
     __obj.asInstanceOf[Anon_All]
   }
 }

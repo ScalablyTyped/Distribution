@@ -25,18 +25,18 @@ trait ITask extends js.Object {
 object ITask {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     fireOnStart: js.UndefOr[scala.Boolean] = js.undefined,
-    restart: js.Function1[/* interval */ js.UndefOr[scala.Double], scala.Unit] = null,
-    start: js.Function1[/* interval */ js.UndefOr[scala.Double], scala.Unit] = null,
-    stop: js.Function0[scala.Unit] = null
+    restart: /* interval */ js.UndefOr[scala.Double] => scala.Unit = null,
+    start: /* interval */ js.UndefOr[scala.Double] => scala.Unit = null,
+    stop: () => scala.Unit = null
   ): ITask = {
     val __obj = js.Dynamic.literal()
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (!js.isUndefined(fireOnStart)) __obj.updateDynamic("fireOnStart")(fireOnStart)
-    if (restart != null) __obj.updateDynamic("restart")(restart)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (restart != null) __obj.updateDynamic("restart")(js.Any.fromFunction1(restart))
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction0(stop))
     __obj.asInstanceOf[ITask]
   }
 }

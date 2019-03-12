@@ -25,17 +25,17 @@ object XSAXDocumentBuilder {
     Document: XDocument,
     DocumentFragment: XDocumentFragment,
     State: SAXDocumentBuilderState,
-    acquire: js.Function0[scala.Unit],
-    endDocumentFragment: js.Function0[scala.Unit],
-    getDocument: js.Function0[XDocument],
-    getDocumentFragment: js.Function0[XDocumentFragment],
-    getState: js.Function0[SAXDocumentBuilderState],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    reset: js.Function0[scala.Unit],
-    startDocumentFragment: js.Function1[XDocument, scala.Unit]
+    acquire: () => scala.Unit,
+    endDocumentFragment: () => scala.Unit,
+    getDocument: () => XDocument,
+    getDocumentFragment: () => XDocumentFragment,
+    getState: () => SAXDocumentBuilderState,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    reset: () => scala.Unit,
+    startDocumentFragment: XDocument => scala.Unit
   ): XSAXDocumentBuilder = {
-    val __obj = js.Dynamic.literal(Document = Document, DocumentFragment = DocumentFragment, State = State, acquire = acquire, endDocumentFragment = endDocumentFragment, getDocument = getDocument, getDocumentFragment = getDocumentFragment, getState = getState, queryInterface = queryInterface, release = release, reset = reset, startDocumentFragment = startDocumentFragment)
+    val __obj = js.Dynamic.literal(Document = Document, DocumentFragment = DocumentFragment, State = State, acquire = js.Any.fromFunction0(acquire), endDocumentFragment = js.Any.fromFunction0(endDocumentFragment), getDocument = js.Any.fromFunction0(getDocument), getDocumentFragment = js.Any.fromFunction0(getDocumentFragment), getState = js.Any.fromFunction0(getState), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), reset = js.Any.fromFunction0(reset), startDocumentFragment = js.Any.fromFunction1(startDocumentFragment))
   
     __obj.asInstanceOf[XSAXDocumentBuilder]
   }

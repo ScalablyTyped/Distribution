@@ -1,0 +1,58 @@
+package typings
+package reactDashNativeDashPopupDashDialogLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashNativeDashPopupDashDialogLibComponents {
+  @scala.inline
+  def DialogButton: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogButtonProps
+  ] = js.constructorOf[reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogButton].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogButtonProps]]
+  @scala.inline
+  def DialogContent: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogContentProps
+  ] = js.constructorOf[reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogContent].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogContentProps]]
+  @scala.inline
+  def DialogFooter: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogFooterProps
+  ] = js.constructorOf[reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogFooter].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogFooterProps]]
+  @scala.inline
+  def DialogTitle: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogTitleProps
+  ] = js.constructorOf[reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogTitle].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogTitleProps]]
+  @scala.inline
+  def Overlay: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.OverlayProps
+  ] = js.constructorOf[reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.Overlay].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.OverlayProps]]
+  @scala.inline
+  def ReactDashNativeDashPopupDashDialog: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogProps
+  ] = js.constructorOf[reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogProps]]
+  @scala.inline
+  def DialogButtonProps: reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogButtonProps.type = reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogButtonProps
+  type DialogButtonProps = reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogButtonProps
+  @scala.inline
+  def DialogContentProps: reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogContentProps.type = reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogContentProps
+  type DialogContentProps = reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogContentProps
+  @scala.inline
+  def DialogFooterProps: reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogFooterProps.type = reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogFooterProps
+  type DialogFooterProps = reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogFooterProps
+  @scala.inline
+  def DialogProps: reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogProps.type = reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogProps
+  type DialogProps = reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogProps
+  @scala.inline
+  def DialogTitleProps: reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogTitleProps.type = reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogTitleProps
+  type DialogTitleProps = reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.DialogTitleProps
+  @scala.inline
+  def OverlayProps: reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.OverlayProps.type = reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.OverlayProps
+  type OverlayProps = reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.OverlayProps
+}
+

@@ -12,8 +12,8 @@ trait BlobSource extends js.Object {
 
 object BlobSource {
   @scala.inline
-  def apply(getAs: js.Function1[java.lang.String, Blob], getBlob: js.Function0[Blob]): BlobSource = {
-    val __obj = js.Dynamic.literal(getAs = getAs, getBlob = getBlob)
+  def apply(getAs: java.lang.String => Blob, getBlob: () => Blob): BlobSource = {
+    val __obj = js.Dynamic.literal(getAs = js.Any.fromFunction1(getAs), getBlob = js.Any.fromFunction0(getBlob))
   
     __obj.asInstanceOf[BlobSource]
   }

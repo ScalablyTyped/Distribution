@@ -17,65 +17,35 @@ object ^ extends js.Object {
     fastDashJsonDashPatchLib.libHelpersMod.PatchError
   ] = js.native
   val deepClone: js.Function1[/* obj */ js.Any, js.Any] = js.native
-  def applyOperation[T](document: T, operation: fastDashJsonDashPatchLib.libCoreMod.Operation): fastDashJsonDashPatchLib.libCoreMod.OperationResult[T] = js.native
-  def applyOperation[T](
+  def applyOperation[T](document: T, operation: Operation): OperationResult[T] = js.native
+  def applyOperation[T](document: T, operation: Operation, validateOperation: Validator[T]): OperationResult[T] = js.native
+  def applyOperation[T](document: T, operation: Operation, validateOperation: Validator[T], mutateDocument: scala.Boolean): OperationResult[T] = js.native
+  def applyOperation[T](document: T, operation: Operation, validateOperation: scala.Boolean): OperationResult[T] = js.native
+  def applyOperation[T](document: T, operation: Operation, validateOperation: scala.Boolean, mutateDocument: scala.Boolean): OperationResult[T] = js.native
+  def applyPatch[T](document: T, patch: js.Array[Operation]): PatchResult[T] = js.native
+  def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Validator[T]): PatchResult[T] = js.native
+  def applyPatch[T](
     document: T,
-    operation: fastDashJsonDashPatchLib.libCoreMod.Operation,
-    validateOperation: fastDashJsonDashPatchLib.libCoreMod.Validator[T]
-  ): fastDashJsonDashPatchLib.libCoreMod.OperationResult[T] = js.native
-  def applyOperation[T](
-    document: T,
-    operation: fastDashJsonDashPatchLib.libCoreMod.Operation,
-    validateOperation: fastDashJsonDashPatchLib.libCoreMod.Validator[T],
+    patch: js.Array[Operation],
+    validateOperation: Validator[T],
     mutateDocument: scala.Boolean
-  ): fastDashJsonDashPatchLib.libCoreMod.OperationResult[T] = js.native
-  def applyOperation[T](
+  ): PatchResult[T] = js.native
+  def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: scala.Boolean): PatchResult[T] = js.native
+  def applyPatch[T](
     document: T,
-    operation: fastDashJsonDashPatchLib.libCoreMod.Operation,
-    validateOperation: scala.Boolean
-  ): fastDashJsonDashPatchLib.libCoreMod.OperationResult[T] = js.native
-  def applyOperation[T](
-    document: T,
-    operation: fastDashJsonDashPatchLib.libCoreMod.Operation,
+    patch: js.Array[Operation],
     validateOperation: scala.Boolean,
     mutateDocument: scala.Boolean
-  ): fastDashJsonDashPatchLib.libCoreMod.OperationResult[T] = js.native
-  def applyPatch[T](document: T, patch: js.Array[fastDashJsonDashPatchLib.libCoreMod.Operation]): fastDashJsonDashPatchLib.libCoreMod.PatchResult[T] = js.native
-  def applyPatch[T](
-    document: T,
-    patch: js.Array[fastDashJsonDashPatchLib.libCoreMod.Operation],
-    validateOperation: fastDashJsonDashPatchLib.libCoreMod.Validator[T]
-  ): fastDashJsonDashPatchLib.libCoreMod.PatchResult[T] = js.native
-  def applyPatch[T](
-    document: T,
-    patch: js.Array[fastDashJsonDashPatchLib.libCoreMod.Operation],
-    validateOperation: fastDashJsonDashPatchLib.libCoreMod.Validator[T],
-    mutateDocument: scala.Boolean
-  ): fastDashJsonDashPatchLib.libCoreMod.PatchResult[T] = js.native
-  def applyPatch[T](
-    document: T,
-    patch: js.Array[fastDashJsonDashPatchLib.libCoreMod.Operation],
-    validateOperation: scala.Boolean
-  ): fastDashJsonDashPatchLib.libCoreMod.PatchResult[T] = js.native
-  def applyPatch[T](
-    document: T,
-    patch: js.Array[fastDashJsonDashPatchLib.libCoreMod.Operation],
-    validateOperation: scala.Boolean,
-    mutateDocument: scala.Boolean
-  ): fastDashJsonDashPatchLib.libCoreMod.PatchResult[T] = js.native
-  def applyReducer[T](document: T, operation: fastDashJsonDashPatchLib.libCoreMod.Operation): T = js.native
+  ): PatchResult[T] = js.native
+  def applyReducer[T](document: T, operation: Operation): T = js.native
   def getValueByPointer(document: js.Any, pointer: java.lang.String): js.Any = js.native
-  def validate[T](sequence: js.Array[fastDashJsonDashPatchLib.libCoreMod.Operation]): fastDashJsonDashPatchLib.libHelpersMod.PatchError = js.native
-  def validate[T](sequence: js.Array[fastDashJsonDashPatchLib.libCoreMod.Operation], document: T): fastDashJsonDashPatchLib.libHelpersMod.PatchError = js.native
-  def validate[T](
-    sequence: js.Array[fastDashJsonDashPatchLib.libCoreMod.Operation],
-    document: T,
-    externalValidator: fastDashJsonDashPatchLib.libCoreMod.Validator[T]
-  ): fastDashJsonDashPatchLib.libHelpersMod.PatchError = js.native
-  def validator(operation: fastDashJsonDashPatchLib.libCoreMod.Operation, index: scala.Double): scala.Unit = js.native
-  def validator(operation: fastDashJsonDashPatchLib.libCoreMod.Operation, index: scala.Double, document: js.Any): scala.Unit = js.native
+  def validate[T](sequence: js.Array[Operation]): fastDashJsonDashPatchLib.libHelpersMod.PatchError = js.native
+  def validate[T](sequence: js.Array[Operation], document: T): fastDashJsonDashPatchLib.libHelpersMod.PatchError = js.native
+  def validate[T](sequence: js.Array[Operation], document: T, externalValidator: Validator[T]): fastDashJsonDashPatchLib.libHelpersMod.PatchError = js.native
+  def validator(operation: Operation, index: scala.Double): scala.Unit = js.native
+  def validator(operation: Operation, index: scala.Double, document: js.Any): scala.Unit = js.native
   def validator(
-    operation: fastDashJsonDashPatchLib.libCoreMod.Operation,
+    operation: Operation,
     index: scala.Double,
     document: js.Any,
     existingPathFragment: java.lang.String

@@ -25,14 +25,14 @@ object XEmbeddedClient {
   @scala.inline
   def apply(
     Component: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseable,
-    acquire: js.Function0[scala.Unit],
-    getComponent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseable],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    saveObject: js.Function0[scala.Unit],
-    visibilityChanged: js.Function1[scala.Boolean, scala.Unit]
+    acquire: () => scala.Unit,
+    getComponent: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseable,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    saveObject: () => scala.Unit,
+    visibilityChanged: scala.Boolean => scala.Unit
   ): XEmbeddedClient = {
-    val __obj = js.Dynamic.literal(Component = Component, acquire = acquire, getComponent = getComponent, queryInterface = queryInterface, release = release, saveObject = saveObject, visibilityChanged = visibilityChanged)
+    val __obj = js.Dynamic.literal(Component = Component, acquire = js.Any.fromFunction0(acquire), getComponent = js.Any.fromFunction0(getComponent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), saveObject = js.Any.fromFunction0(saveObject), visibilityChanged = js.Any.fromFunction1(visibilityChanged))
   
     __obj.asInstanceOf[XEmbeddedClient]
   }

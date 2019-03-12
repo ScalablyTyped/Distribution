@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.RotationEffect")
 @js.native
 class RotationEffect protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   var By: scala.Double = js.native
   var From: scala.Double = js.native
   val Parent: js.Any = js.native

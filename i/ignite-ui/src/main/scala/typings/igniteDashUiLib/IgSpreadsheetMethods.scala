@@ -106,28 +106,28 @@ trait IgSpreadsheetMethods extends js.Object {
 object IgSpreadsheetMethods {
   @scala.inline
   def apply(
-    changeGlobalLanguage: js.Function0[scala.Unit],
-    changeGlobalRegional: js.Function0[scala.Unit],
-    changeLocale: js.Function1[js.Object, scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    executeAction: js.Function1[js.Object, scala.Boolean],
-    exportVisualData: js.Function0[scala.Unit],
-    flush: js.Function0[scala.Unit],
-    getActivePane: js.Function0[js.Object],
-    getActiveSelection: js.Function0[js.Object],
-    getActiveSelectionCellRangeFormat: js.Function0[js.Object],
-    getActiveTable: js.Function0[js.Object],
-    getCellEditMode: js.Function0[js.Object],
-    getIsInEditMode: js.Function0[scala.Boolean],
-    getIsRenamingWorksheet: js.Function0[scala.Boolean],
-    getPanes: js.Function0[scala.Unit],
-    showFilterDialogForTable: js.Function2[js.Object, js.Object, scala.Unit],
-    showFilterDialogForWorksheet: js.Function2[scala.Double, js.Object, scala.Unit],
-    showTopOrBottomDialogForTable: js.Function1[js.Object, scala.Unit],
-    showTopOrBottomDialogForWorksheet: js.Function1[scala.Double, scala.Unit],
-    styleUpdated: js.Function0[scala.Unit]
+    changeGlobalLanguage: () => scala.Unit,
+    changeGlobalRegional: () => scala.Unit,
+    changeLocale: js.Object => scala.Unit,
+    destroy: () => scala.Unit,
+    executeAction: js.Object => scala.Boolean,
+    exportVisualData: () => scala.Unit,
+    flush: () => scala.Unit,
+    getActivePane: () => js.Object,
+    getActiveSelection: () => js.Object,
+    getActiveSelectionCellRangeFormat: () => js.Object,
+    getActiveTable: () => js.Object,
+    getCellEditMode: () => js.Object,
+    getIsInEditMode: () => scala.Boolean,
+    getIsRenamingWorksheet: () => scala.Boolean,
+    getPanes: () => scala.Unit,
+    showFilterDialogForTable: (js.Object, js.Object) => scala.Unit,
+    showFilterDialogForWorksheet: (scala.Double, js.Object) => scala.Unit,
+    showTopOrBottomDialogForTable: js.Object => scala.Unit,
+    showTopOrBottomDialogForWorksheet: scala.Double => scala.Unit,
+    styleUpdated: () => scala.Unit
   ): IgSpreadsheetMethods = {
-    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, executeAction = executeAction, exportVisualData = exportVisualData, flush = flush, getActivePane = getActivePane, getActiveSelection = getActiveSelection, getActiveSelectionCellRangeFormat = getActiveSelectionCellRangeFormat, getActiveTable = getActiveTable, getCellEditMode = getCellEditMode, getIsInEditMode = getIsInEditMode, getIsRenamingWorksheet = getIsRenamingWorksheet, getPanes = getPanes, showFilterDialogForTable = showFilterDialogForTable, showFilterDialogForWorksheet = showFilterDialogForWorksheet, showTopOrBottomDialogForTable = showTopOrBottomDialogForTable, showTopOrBottomDialogForWorksheet = showTopOrBottomDialogForWorksheet, styleUpdated = styleUpdated)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = js.Any.fromFunction0(changeGlobalLanguage), changeGlobalRegional = js.Any.fromFunction0(changeGlobalRegional), changeLocale = js.Any.fromFunction1(changeLocale), destroy = js.Any.fromFunction0(destroy), executeAction = js.Any.fromFunction1(executeAction), exportVisualData = js.Any.fromFunction0(exportVisualData), flush = js.Any.fromFunction0(flush), getActivePane = js.Any.fromFunction0(getActivePane), getActiveSelection = js.Any.fromFunction0(getActiveSelection), getActiveSelectionCellRangeFormat = js.Any.fromFunction0(getActiveSelectionCellRangeFormat), getActiveTable = js.Any.fromFunction0(getActiveTable), getCellEditMode = js.Any.fromFunction0(getCellEditMode), getIsInEditMode = js.Any.fromFunction0(getIsInEditMode), getIsRenamingWorksheet = js.Any.fromFunction0(getIsRenamingWorksheet), getPanes = js.Any.fromFunction0(getPanes), showFilterDialogForTable = js.Any.fromFunction2(showFilterDialogForTable), showFilterDialogForWorksheet = js.Any.fromFunction2(showFilterDialogForWorksheet), showTopOrBottomDialogForTable = js.Any.fromFunction1(showTopOrBottomDialogForTable), showTopOrBottomDialogForWorksheet = js.Any.fromFunction1(showTopOrBottomDialogForWorksheet), styleUpdated = js.Any.fromFunction0(styleUpdated))
   
     __obj.asInstanceOf[IgSpreadsheetMethods]
   }

@@ -12,12 +12,12 @@ trait IAsyncStringPropertyValidator extends IAsyncPropertyValidator {
 object IAsyncStringPropertyValidator {
   @scala.inline
   def apply(
-    isAcceptable: js.Function1[java.lang.String, qLib.qMod.QNs.Promise[scala.Boolean]],
+    isAcceptable: java.lang.String => qLib.qMod.QNs.Promise[scala.Boolean],
     isAsync: scala.Boolean,
     customMessage: IErrorCustomMessage = null,
     tagName: java.lang.String = null
   ): IAsyncStringPropertyValidator = {
-    val __obj = js.Dynamic.literal(isAcceptable = isAcceptable, isAsync = isAsync)
+    val __obj = js.Dynamic.literal(isAcceptable = js.Any.fromFunction1(isAcceptable), isAsync = isAsync)
     if (customMessage != null) __obj.updateDynamic("customMessage")(customMessage)
     if (tagName != null) __obj.updateDynamic("tagName")(tagName)
     __obj.asInstanceOf[IAsyncStringPropertyValidator]

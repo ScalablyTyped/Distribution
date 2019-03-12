@@ -59,7 +59,7 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    change: /* e */ ChangeEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
     dateFormat: java.lang.String = null,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
@@ -73,7 +73,7 @@ object Model {
     startDate: js.Any = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)

@@ -28,14 +28,14 @@ object Animation {
     delay: scala.Double,
     direction: aframeLib.aframeLibStrings.alternate | aframeLib.aframeLibStrings.alternateReverse | aframeLib.aframeLibStrings.normal | aframeLib.aframeLibStrings.reverse,
     dur: scala.Double,
-    easing: js.Function0[scala.Unit],
+    easing: () => scala.Unit,
     end: java.lang.String,
     fill: aframeLib.aframeLibStrings.backwards | aframeLib.aframeLibStrings.both | aframeLib.aframeLibStrings.forwards | aframeLib.aframeLibStrings.none,
     from: js.Any,
     repeat: scala.Double | aframeLib.aframeLibStrings.indefinite,
     to: scala.Double
   ): Animation = {
-    val __obj = js.Dynamic.literal(attribute = attribute, begin = begin.asInstanceOf[js.Any], delay = delay, direction = direction.asInstanceOf[js.Any], dur = dur, easing = easing, end = end, fill = fill.asInstanceOf[js.Any], from = from, repeat = repeat.asInstanceOf[js.Any], to = to)
+    val __obj = js.Dynamic.literal(attribute = attribute, begin = begin.asInstanceOf[js.Any], delay = delay, direction = direction.asInstanceOf[js.Any], dur = dur, easing = js.Any.fromFunction0(easing), end = end, fill = fill.asInstanceOf[js.Any], from = from, repeat = repeat.asInstanceOf[js.Any], to = to)
   
     __obj.asInstanceOf[Animation]
   }

@@ -29,12 +29,12 @@ trait XRemoteContentProviderActivator
 object XRemoteContentProviderActivator {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    activateRemoteContentProviders: js.Function0[XContentProviderManager],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    activateRemoteContentProviders: () => XContentProviderManager,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XRemoteContentProviderActivator = {
-    val __obj = js.Dynamic.literal(acquire = acquire, activateRemoteContentProviders = activateRemoteContentProviders, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), activateRemoteContentProviders = js.Any.fromFunction0(activateRemoteContentProviders), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XRemoteContentProviderActivator]
   }

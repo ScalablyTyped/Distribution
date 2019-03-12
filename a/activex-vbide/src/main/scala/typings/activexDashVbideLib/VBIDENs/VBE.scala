@@ -17,7 +17,7 @@ class VBE protected () extends js.Object {
   val CodePanes_Original: CodePanes = js.native
   @JSName("CommandBars")
   val CommandBars_Original: activexDashOfficeLib.OfficeNs.CommandBars = js.native
-  val Events: Events = js.native
+  val Events: activexDashVbideLib.VBIDENs.Events = js.native
   val MainWindow: Window = js.native
   val SelectedVBComponent: VBComponent = js.native
   var `VBIDE.VBE_typekey`: VBE = js.native

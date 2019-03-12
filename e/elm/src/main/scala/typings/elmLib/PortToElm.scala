@@ -11,8 +11,8 @@ trait PortToElm[V] extends js.Object {
 
 object PortToElm {
   @scala.inline
-  def apply[V](send: js.Function1[V, scala.Unit]): PortToElm[V] = {
-    val __obj = js.Dynamic.literal(send = send)
+  def apply[V](send: V => scala.Unit): PortToElm[V] = {
+    val __obj = js.Dynamic.literal(send = js.Any.fromFunction1(send))
   
     __obj.asInstanceOf[PortToElm[V]]
   }

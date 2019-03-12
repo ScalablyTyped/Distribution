@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ObjectIdentifier
   extends xmlDashCoreLib.xmlDashCoreMod.XmlObject {
   var Description: java.lang.String = js.native
-  var DocumentationReferences: DocumentationReferences = js.native
-  var Identifier: Identifier = js.native
+  var DocumentationReferences: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.DocumentationReferences = js.native
+  var Identifier: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.Identifier = js.native
 }
 

@@ -81,21 +81,9 @@ object IDialogOptions {
     hasBackdrop: js.UndefOr[scala.Boolean] = js.undefined,
     locals: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
-    onComplete: js.Function2[
-      /* scope */ angularLib.angularMod.angularNs.IScope, 
-      /* element */ angularLib.JQuery, 
-      scala.Unit
-    ] = null,
-    onRemoving: js.Function2[
-      /* element */ angularLib.JQuery, 
-      /* removePromise */ angularLib.angularMod.angularNs.IPromise[_], 
-      scala.Unit
-    ] = null,
-    onShowing: js.Function2[
-      /* scope */ angularLib.angularMod.angularNs.IScope, 
-      /* element */ angularLib.JQuery, 
-      scala.Unit
-    ] = null,
+    onComplete: (/* scope */ angularLib.angularMod.angularNs.IScope, /* element */ angularLib.JQuery) => scala.Unit = null,
+    onRemoving: (/* element */ angularLib.JQuery, /* removePromise */ angularLib.angularMod.angularNs.IPromise[_]) => scala.Unit = null,
+    onShowing: (/* scope */ angularLib.angularMod.angularNs.IScope, /* element */ angularLib.JQuery) => scala.Unit = null,
     openFrom: js.Any = null,
     parent: java.lang.String | stdLib.Element | angularLib.JQuery = null,
     preserveScope: js.UndefOr[scala.Boolean] = js.undefined,
@@ -121,9 +109,9 @@ object IDialogOptions {
     if (!js.isUndefined(hasBackdrop)) __obj.updateDynamic("hasBackdrop")(hasBackdrop)
     if (locals != null) __obj.updateDynamic("locals")(locals)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
-    if (onRemoving != null) __obj.updateDynamic("onRemoving")(onRemoving)
-    if (onShowing != null) __obj.updateDynamic("onShowing")(onShowing)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction2(onComplete))
+    if (onRemoving != null) __obj.updateDynamic("onRemoving")(js.Any.fromFunction2(onRemoving))
+    if (onShowing != null) __obj.updateDynamic("onShowing")(js.Any.fromFunction2(onShowing))
     if (openFrom != null) __obj.updateDynamic("openFrom")(openFrom)
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (!js.isUndefined(preserveScope)) __obj.updateDynamic("preserveScope")(preserveScope)

@@ -31,12 +31,12 @@ object AutoAffixProps {
     container: reactLib.reactMod.ReactNs.ReactInstance | js.Function0[reactLib.reactMod.ReactNs.ReactInstance] = null,
     offsetBottom: scala.Int | scala.Double = null,
     offsetTop: scala.Int | scala.Double = null,
-    onAffix: js.Function0[scala.Unit] = null,
-    onAffixBottom: js.Function0[scala.Unit] = null,
-    onAffixTop: js.Function0[scala.Unit] = null,
-    onAffixed: js.Function0[scala.Unit] = null,
-    onAffixedBottom: js.Function0[scala.Unit] = null,
-    onAffixedTop: js.Function0[scala.Unit] = null,
+    onAffix: () => scala.Unit = null,
+    onAffixBottom: () => scala.Unit = null,
+    onAffixTop: () => scala.Unit = null,
+    onAffixed: () => scala.Unit = null,
+    onAffixedBottom: () => scala.Unit = null,
+    onAffixedTop: () => scala.Unit = null,
     topClassName: java.lang.String = null,
     topStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     viewportOffsetTop: scala.Int | scala.Double = null
@@ -50,12 +50,12 @@ object AutoAffixProps {
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (offsetBottom != null) __obj.updateDynamic("offsetBottom")(offsetBottom.asInstanceOf[js.Any])
     if (offsetTop != null) __obj.updateDynamic("offsetTop")(offsetTop.asInstanceOf[js.Any])
-    if (onAffix != null) __obj.updateDynamic("onAffix")(onAffix)
-    if (onAffixBottom != null) __obj.updateDynamic("onAffixBottom")(onAffixBottom)
-    if (onAffixTop != null) __obj.updateDynamic("onAffixTop")(onAffixTop)
-    if (onAffixed != null) __obj.updateDynamic("onAffixed")(onAffixed)
-    if (onAffixedBottom != null) __obj.updateDynamic("onAffixedBottom")(onAffixedBottom)
-    if (onAffixedTop != null) __obj.updateDynamic("onAffixedTop")(onAffixedTop)
+    if (onAffix != null) __obj.updateDynamic("onAffix")(js.Any.fromFunction0(onAffix))
+    if (onAffixBottom != null) __obj.updateDynamic("onAffixBottom")(js.Any.fromFunction0(onAffixBottom))
+    if (onAffixTop != null) __obj.updateDynamic("onAffixTop")(js.Any.fromFunction0(onAffixTop))
+    if (onAffixed != null) __obj.updateDynamic("onAffixed")(js.Any.fromFunction0(onAffixed))
+    if (onAffixedBottom != null) __obj.updateDynamic("onAffixedBottom")(js.Any.fromFunction0(onAffixedBottom))
+    if (onAffixedTop != null) __obj.updateDynamic("onAffixedTop")(js.Any.fromFunction0(onAffixedTop))
     if (topClassName != null) __obj.updateDynamic("topClassName")(topClassName)
     if (topStyle != null) __obj.updateDynamic("topStyle")(topStyle)
     if (viewportOffsetTop != null) __obj.updateDynamic("viewportOffsetTop")(viewportOffsetTop.asInstanceOf[js.Any])

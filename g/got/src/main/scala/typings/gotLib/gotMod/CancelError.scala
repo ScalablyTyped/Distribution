@@ -8,12 +8,14 @@ import scala.scalajs.js.annotation._
 trait CancelError
   extends StdError
      with gotLib.gotMod.gotNs.GotError {
-  var name: gotLib.gotLibStrings.CancelError
+  @JSName("name")
+  var name_CancelError: gotLib.gotLibStrings.CancelError
 }
 
 object CancelError {
   @scala.inline
   def apply(
+    message: java.lang.String,
     name: gotLib.gotLibStrings.CancelError,
     code: java.lang.String = null,
     host: java.lang.String = null,
@@ -25,7 +27,7 @@ object CancelError {
     stack: java.lang.String = null,
     url: java.lang.String = null
   ): CancelError = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(message = message, name = name)
     if (code != null) __obj.updateDynamic("code")(code)
     if (host != null) __obj.updateDynamic("host")(host)
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)

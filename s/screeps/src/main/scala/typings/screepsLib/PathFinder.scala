@@ -14,7 +14,7 @@ trait PathFinder extends js.Object {
   /**
     * Container for custom navigation cost data.
     */
-  var CostMatrix: CostMatrix = js.native
+  var CostMatrix: screepsLib.CostMatrix = js.native
   def search(origin: RoomPosition, goal: js.Array[RoomPosition | Anon_PosRange]): PathFinderPath = js.native
   def search(origin: RoomPosition, goal: js.Array[RoomPosition | Anon_PosRange], opts: PathFinderOpts): PathFinderPath = js.native
   def search(origin: RoomPosition, goal: Anon_PosRange): PathFinderPath = js.native

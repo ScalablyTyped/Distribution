@@ -13,8 +13,8 @@ trait TemplateInstance extends js.Object {
   @JSName("$")
   def $(selector: java.lang.String): js.Any
   def autorun(runFunc: js.Function1[/* computation */ meteorLib.TrackerNs.Computation, scala.Unit]): meteorLib.TrackerNs.Computation
-  def find(selector: java.lang.String): reactLib.HTMLElement
-  def findAll(selector: java.lang.String): js.Array[reactLib.HTMLElement]
+  def find(selector: java.lang.String): stdLib.HTMLElement
+  def findAll(selector: java.lang.String): js.Array[stdLib.HTMLElement]
   def subscribe(name: java.lang.String, args: js.Any*): meteorLib.MeteorNs.SubscriptionHandle
   def subscriptionsReady(): scala.Boolean
 }
@@ -22,21 +22,18 @@ trait TemplateInstance extends js.Object {
 object TemplateInstance {
   @scala.inline
   def apply(
-    $: js.Function1[java.lang.String, js.Any],
-    autorun: js.Function1[
-      js.Function1[/* computation */ meteorLib.TrackerNs.Computation, scala.Unit], 
-      meteorLib.TrackerNs.Computation
-    ],
+    $: java.lang.String => js.Any,
+    autorun: js.Function1[/* computation */ meteorLib.TrackerNs.Computation, scala.Unit] => meteorLib.TrackerNs.Computation,
     data: js.Object,
-    find: js.Function1[java.lang.String, reactLib.HTMLElement],
-    findAll: js.Function1[java.lang.String, js.Array[reactLib.HTMLElement]],
+    find: java.lang.String => stdLib.HTMLElement,
+    findAll: java.lang.String => js.Array[stdLib.HTMLElement],
     firstNode: js.Object,
     lastNode: js.Object,
-    subscribe: js.Function2[java.lang.String, /* repeated */ js.Any, meteorLib.MeteorNs.SubscriptionHandle],
-    subscriptionsReady: js.Function0[scala.Boolean],
+    subscribe: (java.lang.String, /* repeated */ js.Any) => meteorLib.MeteorNs.SubscriptionHandle,
+    subscriptionsReady: () => scala.Boolean,
     view: js.Object
   ): TemplateInstance = {
-    val __obj = js.Dynamic.literal($ = $, autorun = autorun, data = data, find = find, findAll = findAll, firstNode = firstNode, lastNode = lastNode, subscribe = subscribe, subscriptionsReady = subscriptionsReady, view = view)
+    val __obj = js.Dynamic.literal($ = js.Any.fromFunction1($), autorun = js.Any.fromFunction1(autorun), data = data, find = js.Any.fromFunction1(find), findAll = js.Any.fromFunction1(findAll), firstNode = firstNode, lastNode = lastNode, subscribe = js.Any.fromFunction2(subscribe), subscriptionsReady = js.Any.fromFunction0(subscriptionsReady), view = view)
   
     __obj.asInstanceOf[TemplateInstance]
   }

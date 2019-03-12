@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/Autocompletes/Autocomplete", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactDashMdLib.libAutocompletesAutocompleteMod.AutocompleteComponent = js.native
+  val default: AutocompleteComponent = js.native
 }
 

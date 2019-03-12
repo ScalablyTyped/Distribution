@@ -74,7 +74,7 @@ object typesNs extends js.Object {
     def setValue(value: java.lang.String): scala.Unit = js.native
   }
   
-  val Null: Null = js.native
+  val Null: sassLib.sassMod.typesNs.Null = js.native
   /* static members */
   @js.native
   object Boolean extends js.Object {

@@ -42,13 +42,13 @@ object ParseOptions {
     mode: jjuLib.jjuLibStrings.json5 | jjuLib.jjuLibStrings.json | jjuLib.jjuLibStrings.cjson = null,
     null_prototype: js.UndefOr[scala.Boolean] = js.undefined,
     reserved_keys: jjuLib.jjuLibStrings.ignore | jjuLib.jjuLibStrings.`throw` | jjuLib.jjuLibStrings.replace = null,
-    reviver: js.Function2[/* key */ js.Any, /* value */ js.Any, _] = null
+    reviver: (/* key */ js.Any, /* value */ js.Any) => _ = null
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (!js.isUndefined(null_prototype)) __obj.updateDynamic("null_prototype")(null_prototype)
     if (reserved_keys != null) __obj.updateDynamic("reserved_keys")(reserved_keys.asInstanceOf[js.Any])
-    if (reviver != null) __obj.updateDynamic("reviver")(reviver)
+    if (reviver != null) __obj.updateDynamic("reviver")(js.Any.fromFunction2(reviver))
     __obj.asInstanceOf[ParseOptions]
   }
 }

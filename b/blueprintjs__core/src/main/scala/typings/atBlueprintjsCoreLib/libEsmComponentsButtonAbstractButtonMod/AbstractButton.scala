@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class AbstractButton[H /* <: reactLib.reactMod.ReactNs.HTMLAttributes[_] */] ()
   extends reactLib.reactMod.PureComponent[IButtonProps with H, IButtonState, js.Any] {
-  var buttonRef: reactLib.HTMLElement = js.native
+  var buttonRef: stdLib.HTMLElement = js.native
   var currentKeyDown: js.Any = js.native
   var refHandlers: atBlueprintjsCoreLib.Anon_Button = js.native
   @JSName("state")

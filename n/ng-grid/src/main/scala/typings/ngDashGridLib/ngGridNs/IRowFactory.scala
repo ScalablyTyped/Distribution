@@ -30,27 +30,27 @@ trait IRowFactory extends js.Object {
 object IRowFactory {
   @scala.inline
   def apply(
-    UpdateViewableRange: js.Function1[IRenderedRange, scala.Unit],
+    UpdateViewableRange: IRenderedRange => scala.Unit,
     aggCache: js.Any,
-    buildAggregateRow: js.Function2[js.Any, scala.Double, IAggregate],
-    buildEntityRow: js.Function2[js.Any, scala.Double, IRow],
+    buildAggregateRow: (js.Any, scala.Double) => IAggregate,
+    buildEntityRow: (js.Any, scala.Double) => IRow,
     dataChanged: scala.Boolean,
-    filteredRowsChanged: js.Function0[scala.Unit],
-    fixRowCache: js.Function0[scala.Unit],
-    getGrouping: js.Function1[js.Any, scala.Unit],
+    filteredRowsChanged: () => scala.Unit,
+    fixRowCache: () => scala.Unit,
+    getGrouping: js.Any => scala.Unit,
     groupedData: js.Any,
     numberOfAggregates: scala.Double,
     parentCache: js.Array[_],
-    parseGroupData: js.Function1[js.Any, scala.Unit],
+    parseGroupData: js.Any => scala.Unit,
     parsedData: js.Array[_],
-    renderedChange: js.Function0[scala.Unit],
-    renderedChangeNoGroups: js.Function0[scala.Unit],
+    renderedChange: () => scala.Unit,
+    renderedChangeNoGroups: () => scala.Unit,
     renderedRange: IRenderedRange,
     rowConfig: IRowConfig,
     rowHeight: scala.Double,
     selectionProvider: ISelectionProvider
   ): IRowFactory = {
-    val __obj = js.Dynamic.literal(UpdateViewableRange = UpdateViewableRange, aggCache = aggCache, buildAggregateRow = buildAggregateRow, buildEntityRow = buildEntityRow, dataChanged = dataChanged, filteredRowsChanged = filteredRowsChanged, fixRowCache = fixRowCache, getGrouping = getGrouping, groupedData = groupedData, numberOfAggregates = numberOfAggregates, parentCache = parentCache, parseGroupData = parseGroupData, parsedData = parsedData, renderedChange = renderedChange, renderedChangeNoGroups = renderedChangeNoGroups, renderedRange = renderedRange, rowConfig = rowConfig, rowHeight = rowHeight, selectionProvider = selectionProvider)
+    val __obj = js.Dynamic.literal(UpdateViewableRange = js.Any.fromFunction1(UpdateViewableRange), aggCache = aggCache, buildAggregateRow = js.Any.fromFunction2(buildAggregateRow), buildEntityRow = js.Any.fromFunction2(buildEntityRow), dataChanged = dataChanged, filteredRowsChanged = js.Any.fromFunction0(filteredRowsChanged), fixRowCache = js.Any.fromFunction0(fixRowCache), getGrouping = js.Any.fromFunction1(getGrouping), groupedData = groupedData, numberOfAggregates = numberOfAggregates, parentCache = parentCache, parseGroupData = js.Any.fromFunction1(parseGroupData), parsedData = parsedData, renderedChange = js.Any.fromFunction0(renderedChange), renderedChangeNoGroups = js.Any.fromFunction0(renderedChangeNoGroups), renderedRange = renderedRange, rowConfig = rowConfig, rowHeight = rowHeight, selectionProvider = selectionProvider)
   
     __obj.asInstanceOf[IRowFactory]
   }

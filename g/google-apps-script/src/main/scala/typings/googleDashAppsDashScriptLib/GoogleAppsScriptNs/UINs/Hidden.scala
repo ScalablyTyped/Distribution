@@ -36,34 +36,30 @@ trait Hidden extends js.Object {
 object Hidden {
   @scala.inline
   def apply(
-    addStyleDependentName: js.Function1[java.lang.String, Hidden],
-    addStyleName: js.Function1[java.lang.String, Hidden],
-    getId: js.Function0[java.lang.String],
-    getTag: js.Function0[java.lang.String],
-    getType: js.Function0[java.lang.String],
-    setDefaultValue: js.Function1[java.lang.String, Hidden],
-    setHeight: js.Function1[java.lang.String, Hidden],
-    setID: js.Function1[java.lang.String, Hidden],
-    setId: js.Function1[java.lang.String, Hidden],
-    setLayoutData: js.Function1[js.Object, Hidden],
-    setName: js.Function1[java.lang.String, Hidden],
-    setPixelSize: js.Function2[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      Hidden
-    ],
-    setSize: js.Function2[java.lang.String, java.lang.String, Hidden],
-    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, Hidden],
-    setStyleAttributes: js.Function1[js.Object, Hidden],
-    setStyleName: js.Function1[java.lang.String, Hidden],
-    setStylePrimaryName: js.Function1[java.lang.String, Hidden],
-    setTag: js.Function1[java.lang.String, Hidden],
-    setTitle: js.Function1[java.lang.String, Hidden],
-    setValue: js.Function1[java.lang.String, Hidden],
-    setVisible: js.Function1[scala.Boolean, Hidden],
-    setWidth: js.Function1[java.lang.String, Hidden]
+    addStyleDependentName: java.lang.String => Hidden,
+    addStyleName: java.lang.String => Hidden,
+    getId: () => java.lang.String,
+    getTag: () => java.lang.String,
+    getType: () => java.lang.String,
+    setDefaultValue: java.lang.String => Hidden,
+    setHeight: java.lang.String => Hidden,
+    setID: java.lang.String => Hidden,
+    setId: java.lang.String => Hidden,
+    setLayoutData: js.Object => Hidden,
+    setName: java.lang.String => Hidden,
+    setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => Hidden,
+    setSize: (java.lang.String, java.lang.String) => Hidden,
+    setStyleAttribute: (java.lang.String, java.lang.String) => Hidden,
+    setStyleAttributes: js.Object => Hidden,
+    setStyleName: java.lang.String => Hidden,
+    setStylePrimaryName: java.lang.String => Hidden,
+    setTag: java.lang.String => Hidden,
+    setTitle: java.lang.String => Hidden,
+    setValue: java.lang.String => Hidden,
+    setVisible: scala.Boolean => Hidden,
+    setWidth: java.lang.String => Hidden
   ): Hidden = {
-    val __obj = js.Dynamic.literal(addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, getId = getId, getTag = getTag, getType = getType, setDefaultValue = setDefaultValue, setHeight = setHeight, setID = setID, setId = setId, setLayoutData = setLayoutData, setName = setName, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setTitle = setTitle, setValue = setValue, setVisible = setVisible, setWidth = setWidth)
+    val __obj = js.Dynamic.literal(addStyleDependentName = js.Any.fromFunction1(addStyleDependentName), addStyleName = js.Any.fromFunction1(addStyleName), getId = js.Any.fromFunction0(getId), getTag = js.Any.fromFunction0(getTag), getType = js.Any.fromFunction0(getType), setDefaultValue = js.Any.fromFunction1(setDefaultValue), setHeight = js.Any.fromFunction1(setHeight), setID = js.Any.fromFunction1(setID), setId = js.Any.fromFunction1(setId), setLayoutData = js.Any.fromFunction1(setLayoutData), setName = js.Any.fromFunction1(setName), setPixelSize = js.Any.fromFunction2(setPixelSize), setSize = js.Any.fromFunction2(setSize), setStyleAttribute = js.Any.fromFunction2(setStyleAttribute), setStyleAttributes = js.Any.fromFunction1(setStyleAttributes), setStyleName = js.Any.fromFunction1(setStyleName), setStylePrimaryName = js.Any.fromFunction1(setStylePrimaryName), setTag = js.Any.fromFunction1(setTag), setTitle = js.Any.fromFunction1(setTitle), setValue = js.Any.fromFunction1(setValue), setVisible = js.Any.fromFunction1(setVisible), setWidth = js.Any.fromFunction1(setWidth))
   
     __obj.asInstanceOf[Hidden]
   }

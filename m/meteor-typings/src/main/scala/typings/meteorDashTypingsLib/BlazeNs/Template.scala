@@ -28,22 +28,22 @@ object Template {
   @scala.inline
   def apply(
     $: js.Any,
-    constructView: js.Function0[View],
+    constructView: () => View,
     created: js.Function,
     destroyed: js.Function,
-    events: js.Function1[EventsMap, scala.Unit],
-    find: js.Function1[java.lang.String, stdLib.HTMLElement],
-    findAll: js.Function1[java.lang.String, js.Array[stdLib.HTMLElement]],
+    events: EventsMap => scala.Unit,
+    find: java.lang.String => stdLib.HTMLElement,
+    findAll: java.lang.String => js.Array[stdLib.HTMLElement],
     head: Template,
-    helpers: js.Function1[HelpersMap, scala.Unit],
-    onCreated: js.Function1[js.Function, scala.Unit],
-    onDestroyed: js.Function1[js.Function, scala.Unit],
-    onRendered: js.Function1[js.Function, scala.Unit],
+    helpers: HelpersMap => scala.Unit,
+    onCreated: js.Function => scala.Unit,
+    onDestroyed: js.Function => scala.Unit,
+    onRendered: js.Function => scala.Unit,
     renderFunction: js.Function,
     rendered: js.Function,
     viewName: java.lang.String
   ): Template = {
-    val __obj = js.Dynamic.literal($ = $, constructView = constructView, created = created, destroyed = destroyed, events = events, find = find, findAll = findAll, head = head, helpers = helpers, onCreated = onCreated, onDestroyed = onDestroyed, onRendered = onRendered, renderFunction = renderFunction, rendered = rendered, viewName = viewName)
+    val __obj = js.Dynamic.literal($ = $, constructView = js.Any.fromFunction0(constructView), created = created, destroyed = destroyed, events = js.Any.fromFunction1(events), find = js.Any.fromFunction1(find), findAll = js.Any.fromFunction1(findAll), head = head, helpers = js.Any.fromFunction1(helpers), onCreated = js.Any.fromFunction1(onCreated), onDestroyed = js.Any.fromFunction1(onDestroyed), onRendered = js.Any.fromFunction1(onRendered), renderFunction = renderFunction, rendered = rendered, viewName = viewName)
   
     __obj.asInstanceOf[Template]
   }

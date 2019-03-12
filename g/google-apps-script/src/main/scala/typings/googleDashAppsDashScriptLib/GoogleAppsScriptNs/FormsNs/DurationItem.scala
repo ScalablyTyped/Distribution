@@ -30,28 +30,23 @@ trait DurationItem extends js.Object {
 object DurationItem {
   @scala.inline
   def apply(
-    createResponse: js.Function3[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      ItemResponse
-    ],
-    duplicate: js.Function0[DurationItem],
-    getGeneralFeedback: js.Function0[QuizFeedback],
-    getHelpText: js.Function0[java.lang.String],
-    getId: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getPoints: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getTitle: js.Function0[java.lang.String],
-    getType: js.Function0[ItemType],
-    isRequired: js.Function0[scala.Boolean],
-    setGeneralFeedback: js.Function1[QuizFeedback, DurationItem],
-    setHelpText: js.Function1[java.lang.String, DurationItem],
-    setPoints: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, DurationItem],
-    setRequired: js.Function1[scala.Boolean, DurationItem],
-    setTitle: js.Function1[java.lang.String, DurationItem]
+    createResponse: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => ItemResponse,
+    duplicate: () => DurationItem,
+    getGeneralFeedback: () => QuizFeedback,
+    getHelpText: () => java.lang.String,
+    getId: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getIndex: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getPoints: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getTitle: () => java.lang.String,
+    getType: () => ItemType,
+    isRequired: () => scala.Boolean,
+    setGeneralFeedback: QuizFeedback => DurationItem,
+    setHelpText: java.lang.String => DurationItem,
+    setPoints: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => DurationItem,
+    setRequired: scala.Boolean => DurationItem,
+    setTitle: java.lang.String => DurationItem
   ): DurationItem = {
-    val __obj = js.Dynamic.literal(createResponse = createResponse, duplicate = duplicate, getGeneralFeedback = getGeneralFeedback, getHelpText = getHelpText, getId = getId, getIndex = getIndex, getPoints = getPoints, getTitle = getTitle, getType = getType, isRequired = isRequired, setGeneralFeedback = setGeneralFeedback, setHelpText = setHelpText, setPoints = setPoints, setRequired = setRequired, setTitle = setTitle)
+    val __obj = js.Dynamic.literal(createResponse = js.Any.fromFunction3(createResponse), duplicate = js.Any.fromFunction0(duplicate), getGeneralFeedback = js.Any.fromFunction0(getGeneralFeedback), getHelpText = js.Any.fromFunction0(getHelpText), getId = js.Any.fromFunction0(getId), getIndex = js.Any.fromFunction0(getIndex), getPoints = js.Any.fromFunction0(getPoints), getTitle = js.Any.fromFunction0(getTitle), getType = js.Any.fromFunction0(getType), isRequired = js.Any.fromFunction0(isRequired), setGeneralFeedback = js.Any.fromFunction1(setGeneralFeedback), setHelpText = js.Any.fromFunction1(setHelpText), setPoints = js.Any.fromFunction1(setPoints), setRequired = js.Any.fromFunction1(setRequired), setTitle = js.Any.fromFunction1(setTitle))
   
     __obj.asInstanceOf[DurationItem]
   }

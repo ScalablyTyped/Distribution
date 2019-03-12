@@ -14,11 +14,11 @@ object PolylineGeometryUpdater {
   @scala.inline
   def apply(
     classificationTypeProperty: Property,
-    createDynamicUpdater: js.Function2[PrimitiveCollection, PrimitiveCollection, DynamicGeometryUpdater],
-    createFillGeometryInstance: js.Function1[JulianDate, GeometryInstance],
-    createOutlineGeometryInstance: js.Function1[JulianDate, GeometryInstance],
+    createDynamicUpdater: (PrimitiveCollection, PrimitiveCollection) => DynamicGeometryUpdater,
+    createFillGeometryInstance: JulianDate => GeometryInstance,
+    createOutlineGeometryInstance: JulianDate => GeometryInstance,
     depthFailMaterialProperty: MaterialProperty,
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     distanceDisplayConditionProperty: Property,
     entity: Entity,
     fillEnabled: scala.Boolean,
@@ -28,17 +28,17 @@ object PolylineGeometryUpdater {
     hasConstantOutline: scala.Boolean,
     id: java.lang.String,
     isClosed: scala.Boolean,
-    isDestroyed: js.Function0[scala.Boolean],
+    isDestroyed: () => scala.Boolean,
     isDynamic: scala.Boolean,
-    isFilled: js.Function1[JulianDate, scala.Boolean],
-    isOutlineVisible: js.Function1[JulianDate, scala.Boolean],
+    isFilled: JulianDate => scala.Boolean,
+    isOutlineVisible: JulianDate => scala.Boolean,
     outlineColorProperty: Property,
     outlineEnabled: scala.Boolean,
     outlineWidth: scala.Double,
     readonlydistanceDisplayConditionProperty: Property,
     shadowsProperty: Property
   ): PolylineGeometryUpdater = {
-    val __obj = js.Dynamic.literal(classificationTypeProperty = classificationTypeProperty, createDynamicUpdater = createDynamicUpdater, createFillGeometryInstance = createFillGeometryInstance, createOutlineGeometryInstance = createOutlineGeometryInstance, depthFailMaterialProperty = depthFailMaterialProperty, destroy = destroy, distanceDisplayConditionProperty = distanceDisplayConditionProperty, entity = entity, fillEnabled = fillEnabled, fillMaterialProperty = fillMaterialProperty, geometryChanged = geometryChanged, hasConstantFill = hasConstantFill, hasConstantOutline = hasConstantOutline, id = id, isClosed = isClosed, isDestroyed = isDestroyed, isDynamic = isDynamic, isFilled = isFilled, isOutlineVisible = isOutlineVisible, outlineColorProperty = outlineColorProperty, outlineEnabled = outlineEnabled, outlineWidth = outlineWidth, readonlydistanceDisplayConditionProperty = readonlydistanceDisplayConditionProperty, shadowsProperty = shadowsProperty)
+    val __obj = js.Dynamic.literal(classificationTypeProperty = classificationTypeProperty, createDynamicUpdater = js.Any.fromFunction2(createDynamicUpdater), createFillGeometryInstance = js.Any.fromFunction1(createFillGeometryInstance), createOutlineGeometryInstance = js.Any.fromFunction1(createOutlineGeometryInstance), depthFailMaterialProperty = depthFailMaterialProperty, destroy = js.Any.fromFunction0(destroy), distanceDisplayConditionProperty = distanceDisplayConditionProperty, entity = entity, fillEnabled = fillEnabled, fillMaterialProperty = fillMaterialProperty, geometryChanged = geometryChanged, hasConstantFill = hasConstantFill, hasConstantOutline = hasConstantOutline, id = id, isClosed = isClosed, isDestroyed = js.Any.fromFunction0(isDestroyed), isDynamic = isDynamic, isFilled = js.Any.fromFunction1(isFilled), isOutlineVisible = js.Any.fromFunction1(isOutlineVisible), outlineColorProperty = outlineColorProperty, outlineEnabled = outlineEnabled, outlineWidth = outlineWidth, readonlydistanceDisplayConditionProperty = readonlydistanceDisplayConditionProperty, shadowsProperty = shadowsProperty)
   
     __obj.asInstanceOf[PolylineGeometryUpdater]
   }

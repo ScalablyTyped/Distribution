@@ -19,16 +19,16 @@ trait ImageButton extends js.Object {
 object ImageButton {
   @scala.inline
   def apply(
-    setAltText: js.Function1[java.lang.String, ImageButton],
-    setAuthorizationAction: js.Function1[AuthorizationAction, ImageButton],
-    setComposeAction: js.Function2[Action, ComposedEmailType, ImageButton],
-    setIcon: js.Function1[Icon, ImageButton],
-    setIconUrl: js.Function1[java.lang.String, ImageButton],
-    setOnClickAction: js.Function1[Action, ImageButton],
-    setOnClickOpenLinkAction: js.Function1[Action, ImageButton],
-    setOpenLink: js.Function1[OpenLink, ImageButton]
+    setAltText: java.lang.String => ImageButton,
+    setAuthorizationAction: AuthorizationAction => ImageButton,
+    setComposeAction: (Action, ComposedEmailType) => ImageButton,
+    setIcon: Icon => ImageButton,
+    setIconUrl: java.lang.String => ImageButton,
+    setOnClickAction: Action => ImageButton,
+    setOnClickOpenLinkAction: Action => ImageButton,
+    setOpenLink: OpenLink => ImageButton
   ): ImageButton = {
-    val __obj = js.Dynamic.literal(setAltText = setAltText, setAuthorizationAction = setAuthorizationAction, setComposeAction = setComposeAction, setIcon = setIcon, setIconUrl = setIconUrl, setOnClickAction = setOnClickAction, setOnClickOpenLinkAction = setOnClickOpenLinkAction, setOpenLink = setOpenLink)
+    val __obj = js.Dynamic.literal(setAltText = js.Any.fromFunction1(setAltText), setAuthorizationAction = js.Any.fromFunction1(setAuthorizationAction), setComposeAction = js.Any.fromFunction2(setComposeAction), setIcon = js.Any.fromFunction1(setIcon), setIconUrl = js.Any.fromFunction1(setIconUrl), setOnClickAction = js.Any.fromFunction1(setOnClickAction), setOnClickOpenLinkAction = js.Any.fromFunction1(setOnClickOpenLinkAction), setOpenLink = js.Any.fromFunction1(setOpenLink))
   
     __obj.asInstanceOf[ImageButton]
   }

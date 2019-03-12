@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.Explorers")
 @js.native
 class Explorers protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: scala.Double = js.native
   var `Outlook.Explorers_typekey`: Explorers = js.native

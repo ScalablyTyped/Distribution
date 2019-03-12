@@ -99,15 +99,15 @@ object LocatorAddressToLocationsParams {
     countryCode: java.lang.String,
     distance: scala.Double,
     forStorage: scala.Boolean,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     location: Point,
     magicKey: java.lang.String,
     maxLocations: scala.Double,
     outFields: js.Array[java.lang.String],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     searchExtent: Extent
   ): LocatorAddressToLocationsParams = {
-    val __obj = js.Dynamic.literal(address = address, categories = categories, constructor = constructor, countryCode = countryCode, distance = distance, forStorage = forStorage, hasOwnProperty = hasOwnProperty, location = location, magicKey = magicKey, maxLocations = maxLocations, outFields = outFields, propertyIsEnumerable = propertyIsEnumerable, searchExtent = searchExtent)
+    val __obj = js.Dynamic.literal(address = address, categories = categories, constructor = constructor, countryCode = countryCode, distance = distance, forStorage = forStorage, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), location = location, magicKey = magicKey, maxLocations = maxLocations, outFields = outFields, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), searchExtent = searchExtent)
   
     __obj.asInstanceOf[LocatorAddressToLocationsParams]
   }

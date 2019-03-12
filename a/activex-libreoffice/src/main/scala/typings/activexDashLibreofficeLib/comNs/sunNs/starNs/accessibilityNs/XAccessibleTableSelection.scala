@@ -16,15 +16,15 @@ trait XAccessibleTableSelection
 object XAccessibleTableSelection {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    selectColumn: js.Function1[scala.Double, scala.Boolean],
-    selectRow: js.Function1[scala.Double, scala.Boolean],
-    unselectColumn: js.Function1[scala.Double, scala.Boolean],
-    unselectRow: js.Function1[scala.Double, scala.Boolean]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    selectColumn: scala.Double => scala.Boolean,
+    selectRow: scala.Double => scala.Boolean,
+    unselectColumn: scala.Double => scala.Boolean,
+    unselectRow: scala.Double => scala.Boolean
   ): XAccessibleTableSelection = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, selectColumn = selectColumn, selectRow = selectRow, unselectColumn = unselectColumn, unselectRow = unselectRow)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), selectColumn = js.Any.fromFunction1(selectColumn), selectRow = js.Any.fromFunction1(selectRow), unselectColumn = js.Any.fromFunction1(unselectColumn), unselectRow = js.Any.fromFunction1(unselectRow))
   
     __obj.asInstanceOf[XAccessibleTableSelection]
   }

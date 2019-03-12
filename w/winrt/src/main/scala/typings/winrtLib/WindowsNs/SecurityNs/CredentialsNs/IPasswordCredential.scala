@@ -19,10 +19,10 @@ object IPasswordCredential {
     password: java.lang.String,
     properties: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet,
     resource: java.lang.String,
-    retrievePassword: js.Function0[scala.Unit],
+    retrievePassword: () => scala.Unit,
     userName: java.lang.String
   ): IPasswordCredential = {
-    val __obj = js.Dynamic.literal(password = password, properties = properties, resource = resource, retrievePassword = retrievePassword, userName = userName)
+    val __obj = js.Dynamic.literal(password = password, properties = properties, resource = resource, retrievePassword = js.Any.fromFunction0(retrievePassword), userName = userName)
   
     __obj.asInstanceOf[IPasswordCredential]
   }

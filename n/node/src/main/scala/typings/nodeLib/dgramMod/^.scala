@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 @JSImport("dgram", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def createSocket(options: nodeLib.dgramMod.SocketOptions): nodeLib.dgramMod.Socket = js.native
+  def createSocket(options: SocketOptions): Socket = js.native
   def createSocket(
-    options: nodeLib.dgramMod.SocketOptions,
-    callback: js.Function2[/* msg */ nodeLib.Buffer, /* rinfo */ nodeLib.dgramMod.RemoteInfo, scala.Unit]
-  ): nodeLib.dgramMod.Socket = js.native
-  def createSocket(`type`: nodeLib.dgramMod.SocketType): nodeLib.dgramMod.Socket = js.native
+    options: SocketOptions,
+    callback: js.Function2[/* msg */ nodeLib.Buffer, /* rinfo */ RemoteInfo, scala.Unit]
+  ): Socket = js.native
+  def createSocket(`type`: SocketType): Socket = js.native
   def createSocket(
-    `type`: nodeLib.dgramMod.SocketType,
-    callback: js.Function2[/* msg */ nodeLib.Buffer, /* rinfo */ nodeLib.dgramMod.RemoteInfo, scala.Unit]
-  ): nodeLib.dgramMod.Socket = js.native
+    `type`: SocketType,
+    callback: js.Function2[/* msg */ nodeLib.Buffer, /* rinfo */ RemoteInfo, scala.Unit]
+  ): Socket = js.native
 }
 

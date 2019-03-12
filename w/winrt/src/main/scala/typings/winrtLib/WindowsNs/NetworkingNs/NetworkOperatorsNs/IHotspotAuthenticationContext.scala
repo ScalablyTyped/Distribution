@@ -25,17 +25,17 @@ trait IHotspotAuthenticationContext extends js.Object {
 object IHotspotAuthenticationContext {
   @scala.inline
   def apply(
-    abortAuthentication: js.Function1[scala.Boolean, scala.Unit],
+    abortAuthentication: scala.Boolean => scala.Unit,
     authenticationUrl: winrtLib.WindowsNs.FoundationNs.Uri,
-    issueCredentials: js.Function4[java.lang.String, java.lang.String, java.lang.String, scala.Boolean, scala.Unit],
+    issueCredentials: (java.lang.String, java.lang.String, java.lang.String, scala.Boolean) => scala.Unit,
     networkAdapter: winrtLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkAdapter,
     redirectMessageUrl: winrtLib.WindowsNs.FoundationNs.Uri,
     redirectMessageXml: winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument,
-    skipAuthentication: js.Function0[scala.Unit],
-    triggerAttentionRequired: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    skipAuthentication: () => scala.Unit,
+    triggerAttentionRequired: (java.lang.String, java.lang.String) => scala.Unit,
     wirelessNetworkId: stdLib.Uint8Array
   ): IHotspotAuthenticationContext = {
-    val __obj = js.Dynamic.literal(abortAuthentication = abortAuthentication, authenticationUrl = authenticationUrl, issueCredentials = issueCredentials, networkAdapter = networkAdapter, redirectMessageUrl = redirectMessageUrl, redirectMessageXml = redirectMessageXml, skipAuthentication = skipAuthentication, triggerAttentionRequired = triggerAttentionRequired, wirelessNetworkId = wirelessNetworkId)
+    val __obj = js.Dynamic.literal(abortAuthentication = js.Any.fromFunction1(abortAuthentication), authenticationUrl = authenticationUrl, issueCredentials = js.Any.fromFunction4(issueCredentials), networkAdapter = networkAdapter, redirectMessageUrl = redirectMessageUrl, redirectMessageXml = redirectMessageXml, skipAuthentication = js.Any.fromFunction0(skipAuthentication), triggerAttentionRequired = js.Any.fromFunction2(triggerAttentionRequired), wirelessNetworkId = wirelessNetworkId)
   
     __obj.asInstanceOf[IHotspotAuthenticationContext]
   }

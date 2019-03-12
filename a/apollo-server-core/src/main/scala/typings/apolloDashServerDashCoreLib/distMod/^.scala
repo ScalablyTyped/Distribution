@@ -47,7 +47,7 @@ object ^ extends js.Object {
     apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _]
   ] = js.native
   def runHttpQuery(
-    handlerArguments: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[_],
+    handlerArguments: js.Array[_],
     request: apolloDashServerDashCoreLib.distRunHttpQueryMod.HttpQueryRequest
   ): js.Promise[apolloDashServerDashCoreLib.distRunHttpQueryMod.HttpQueryResponse] = js.native
   def toApolloError(error: stdLib.Error with apolloDashServerDashErrorsLib.Anon_Extensions): stdLib.Error with apolloDashServerDashErrorsLib.Anon_ExtensionsAny = js.native

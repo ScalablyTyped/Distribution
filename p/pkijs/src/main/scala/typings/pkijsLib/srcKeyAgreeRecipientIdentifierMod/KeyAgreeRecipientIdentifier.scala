@@ -16,13 +16,13 @@ trait KeyAgreeRecipientIdentifier extends js.Object {
 object KeyAgreeRecipientIdentifier {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    fromSchema: js.Any => scala.Unit,
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     value: js.Any,
     variant: scala.Double
   ): KeyAgreeRecipientIdentifier = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema, value = value, variant = variant)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), value = value, variant = variant)
   
     __obj.asInstanceOf[KeyAgreeRecipientIdentifier]
   }

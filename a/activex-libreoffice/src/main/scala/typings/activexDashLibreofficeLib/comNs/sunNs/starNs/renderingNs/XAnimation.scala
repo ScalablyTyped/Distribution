@@ -19,7 +19,7 @@ trait XAnimation
     * This method returns the {@link AnimationAttributes} structure, which defines more closely how to play this animation.
     * @returns the requested {@link AnimationAttributes} structure.
     */
-  val AnimationAttributes: AnimationAttributes
+  val AnimationAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.AnimationAttributes
   /**
     * Request the attribute information for this animation.
     *
@@ -51,13 +51,13 @@ object XAnimation {
   @scala.inline
   def apply(
     AnimationAttributes: AnimationAttributes,
-    acquire: js.Function0[scala.Unit],
-    getAnimationAttributes: js.Function0[AnimationAttributes],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    render: js.Function3[XCanvas, ViewState, scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    getAnimationAttributes: () => AnimationAttributes,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    render: (XCanvas, ViewState, scala.Double) => scala.Unit
   ): XAnimation = {
-    val __obj = js.Dynamic.literal(AnimationAttributes = AnimationAttributes, acquire = acquire, getAnimationAttributes = getAnimationAttributes, queryInterface = queryInterface, release = release, render = render)
+    val __obj = js.Dynamic.literal(AnimationAttributes = AnimationAttributes, acquire = js.Any.fromFunction0(acquire), getAnimationAttributes = js.Any.fromFunction0(getAnimationAttributes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), render = js.Any.fromFunction3(render))
   
     __obj.asInstanceOf[XAnimation]
   }

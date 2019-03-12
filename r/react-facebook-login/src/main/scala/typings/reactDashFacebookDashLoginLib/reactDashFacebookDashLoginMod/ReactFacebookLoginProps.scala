@@ -21,7 +21,7 @@ trait ReactFacebookLoginProps extends js.Object {
   var language: js.UndefOr[java.lang.String] = js.undefined
   var onClick: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -47,7 +47,7 @@ object ReactFacebookLoginProps {
   @scala.inline
   def apply(
     appId: java.lang.String,
-    callback: js.Function1[ReactFacebookLoginInfo, scala.Unit],
+    callback: ReactFacebookLoginInfo => scala.Unit,
     authType: java.lang.String = null,
     autoLoad: js.UndefOr[scala.Boolean] = js.undefined,
     buttonStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -60,11 +60,8 @@ object ReactFacebookLoginProps {
     isDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     isMobile: js.UndefOr[scala.Boolean] = js.undefined,
     language: java.lang.String = null,
-    onClick: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
-    onFailure: js.Function1[/* response */ ReactFacebookFailureResponse, scala.Unit] = null,
+    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onFailure: /* response */ ReactFacebookFailureResponse => scala.Unit = null,
     reAuthenticate: js.UndefOr[scala.Boolean] = js.undefined,
     redirectUri: java.lang.String = null,
     responseType: java.lang.String = null,
@@ -78,7 +75,7 @@ object ReactFacebookLoginProps {
     version: java.lang.String = null,
     xfbml: js.UndefOr[scala.Boolean] = js.undefined
   ): ReactFacebookLoginProps = {
-    val __obj = js.Dynamic.literal(appId = appId, callback = callback)
+    val __obj = js.Dynamic.literal(appId = appId, callback = js.Any.fromFunction1(callback))
     if (authType != null) __obj.updateDynamic("authType")(authType)
     if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad)
     if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle)
@@ -91,8 +88,8 @@ object ReactFacebookLoginProps {
     if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled)
     if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile)
     if (language != null) __obj.updateDynamic("language")(language)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction1(onFailure))
     if (!js.isUndefined(reAuthenticate)) __obj.updateDynamic("reAuthenticate")(reAuthenticate)
     if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
     if (responseType != null) __obj.updateDynamic("responseType")(responseType)

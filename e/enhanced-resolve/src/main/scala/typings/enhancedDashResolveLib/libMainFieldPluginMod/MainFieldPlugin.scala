@@ -16,12 +16,12 @@ trait MainFieldPlugin extends js.Object {
 object MainFieldPlugin {
   @scala.inline
   def apply(
-    apply: js.Function1[enhancedDashResolveLib.libResolverMod.namespaced, scala.Unit],
+    apply: enhancedDashResolveLib.libResolverMod.namespaced => scala.Unit,
     options: enhancedDashResolveLib.Anon_ForceRelative,
     source: java.lang.String,
     target: java.lang.String
   ): MainFieldPlugin = {
-    val __obj = js.Dynamic.literal(apply = apply, options = options, source = source, target = target)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), options = options, source = source, target = target)
   
     __obj.asInstanceOf[MainFieldPlugin]
   }

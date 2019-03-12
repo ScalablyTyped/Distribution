@@ -25,7 +25,7 @@ trait Shell extends js.Object {
   def openExternal(
     url: java.lang.String,
     options: OpenExternalOptions,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Boolean = js.native
   /**
     * Open the given file in the desktop's default manner.

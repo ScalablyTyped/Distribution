@@ -18,7 +18,7 @@ trait MenuObject extends js.Object {
 object MenuObject {
   @scala.inline
   def apply(
-    action: js.Function1[/* e */ stdLib.Event, scala.Unit] = null,
+    action: /* e */ stdLib.Event => scala.Unit = null,
     divider: js.UndefOr[scala.Boolean] = js.undefined,
     header: java.lang.String = null,
     href: java.lang.String = null,
@@ -27,7 +27,7 @@ object MenuObject {
     text: java.lang.String = null
   ): MenuObject = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
+    if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
     if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider)
     if (header != null) __obj.updateDynamic("header")(header)
     if (href != null) __obj.updateDynamic("href")(href)

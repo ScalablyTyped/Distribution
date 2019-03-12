@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-foundation/components/close-button", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val CloseButton: reactLib.reactMod.ReactNs.StatelessComponent[reactDashFoundationLib.componentsCloseDashButtonMod.CloseButtonProps] = js.native
+  val CloseButton: reactLib.reactMod.ReactNs.StatelessComponent[CloseButtonProps] = js.native
 }
 

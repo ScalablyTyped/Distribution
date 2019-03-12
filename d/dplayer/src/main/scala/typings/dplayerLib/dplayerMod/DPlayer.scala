@@ -27,22 +27,22 @@ object DPlayer {
   @scala.inline
   def apply(
     danmaku: Danmaku,
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     events: js.Any,
     fullScreen: FullScreen,
-    notice: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit],
-    on: js.Function2[DPlayerEvents, js.Function0[scala.Unit], scala.Unit],
-    pause: js.Function0[scala.Unit],
-    play: js.Function0[scala.Unit],
-    seek: js.Function1[scala.Double, scala.Unit],
-    speed: js.Function1[scala.Double, scala.Unit],
-    switchQuality: js.Function1[scala.Double, scala.Unit],
-    switchVideo: js.Function2[DPlayerVideo, DPlayerDanmaku, scala.Unit],
-    toggle: js.Function0[scala.Unit],
+    notice: (java.lang.String, scala.Double, scala.Double) => scala.Unit,
+    on: (DPlayerEvents, js.Function0[scala.Unit]) => scala.Unit,
+    pause: () => scala.Unit,
+    play: () => scala.Unit,
+    seek: scala.Double => scala.Unit,
+    speed: scala.Double => scala.Unit,
+    switchQuality: scala.Double => scala.Unit,
+    switchVideo: (DPlayerVideo, DPlayerDanmaku) => scala.Unit,
+    toggle: () => scala.Unit,
     video: stdLib.HTMLVideoElement,
-    volume: js.Function3[scala.Double, scala.Boolean, scala.Boolean, scala.Unit]
+    volume: (scala.Double, scala.Boolean, scala.Boolean) => scala.Unit
   ): DPlayer = {
-    val __obj = js.Dynamic.literal(danmaku = danmaku, destroy = destroy, events = events, fullScreen = fullScreen, notice = notice, on = on, pause = pause, play = play, seek = seek, speed = speed, switchQuality = switchQuality, switchVideo = switchVideo, toggle = toggle, video = video, volume = volume)
+    val __obj = js.Dynamic.literal(danmaku = danmaku, destroy = js.Any.fromFunction0(destroy), events = events, fullScreen = fullScreen, notice = js.Any.fromFunction3(notice), on = js.Any.fromFunction2(on), pause = js.Any.fromFunction0(pause), play = js.Any.fromFunction0(play), seek = js.Any.fromFunction1(seek), speed = js.Any.fromFunction1(speed), switchQuality = js.Any.fromFunction1(switchQuality), switchVideo = js.Any.fromFunction2(switchVideo), toggle = js.Any.fromFunction0(toggle), video = video, volume = js.Any.fromFunction3(volume))
   
     __obj.asInstanceOf[DPlayer]
   }

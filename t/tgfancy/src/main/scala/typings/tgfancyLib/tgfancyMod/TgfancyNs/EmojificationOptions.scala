@@ -11,8 +11,8 @@ trait EmojificationOptions extends js.Object {
 
 object EmojificationOptions {
   @scala.inline
-  def apply(emojify: js.Function1[java.lang.String, java.lang.String]): EmojificationOptions = {
-    val __obj = js.Dynamic.literal(emojify = emojify)
+  def apply(emojify: java.lang.String => java.lang.String): EmojificationOptions = {
+    val __obj = js.Dynamic.literal(emojify = js.Any.fromFunction1(emojify))
   
     __obj.asInstanceOf[EmojificationOptions]
   }

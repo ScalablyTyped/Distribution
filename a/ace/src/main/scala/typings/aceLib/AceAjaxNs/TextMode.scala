@@ -19,16 +19,16 @@ trait TextMode extends js.Object {
 object TextMode {
   @scala.inline
   def apply(
-    autoOutdent: js.Function3[js.Any, js.Any, js.Any, scala.Unit],
-    checkOutdent: js.Function3[js.Any, js.Any, js.Any, scala.Boolean],
-    createModeDelegates: js.Function1[js.Any, scala.Unit],
-    createWorker: js.Function1[js.Any, js.Any],
-    getNextLineIndent: js.Function3[js.Any, js.Any, js.Any, java.lang.String],
-    getTokenizer: js.Function0[js.Any],
-    toggleCommentLines: js.Function4[js.Any, js.Any, js.Any, js.Any, scala.Unit],
-    transformAction: js.Function5[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any]
+    autoOutdent: (js.Any, js.Any, js.Any) => scala.Unit,
+    checkOutdent: (js.Any, js.Any, js.Any) => scala.Boolean,
+    createModeDelegates: js.Any => scala.Unit,
+    createWorker: js.Any => js.Any,
+    getNextLineIndent: (js.Any, js.Any, js.Any) => java.lang.String,
+    getTokenizer: () => js.Any,
+    toggleCommentLines: (js.Any, js.Any, js.Any, js.Any) => scala.Unit,
+    transformAction: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any
   ): TextMode = {
-    val __obj = js.Dynamic.literal(autoOutdent = autoOutdent, checkOutdent = checkOutdent, createModeDelegates = createModeDelegates, createWorker = createWorker, getNextLineIndent = getNextLineIndent, getTokenizer = getTokenizer, toggleCommentLines = toggleCommentLines, transformAction = transformAction)
+    val __obj = js.Dynamic.literal(autoOutdent = js.Any.fromFunction3(autoOutdent), checkOutdent = js.Any.fromFunction3(checkOutdent), createModeDelegates = js.Any.fromFunction1(createModeDelegates), createWorker = js.Any.fromFunction1(createWorker), getNextLineIndent = js.Any.fromFunction3(getNextLineIndent), getTokenizer = js.Any.fromFunction0(getTokenizer), toggleCommentLines = js.Any.fromFunction4(toggleCommentLines), transformAction = js.Any.fromFunction5(transformAction))
   
     __obj.asInstanceOf[TextMode]
   }

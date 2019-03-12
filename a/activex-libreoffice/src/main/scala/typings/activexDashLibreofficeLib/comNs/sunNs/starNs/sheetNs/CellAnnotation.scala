@@ -27,41 +27,28 @@ object CellAnnotation {
     Position: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress,
     Start: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange,
     String: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    createTextCursor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextCursor],
-    createTextCursorByRange: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextCursor
-    ],
-    getAnnotationShape: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape],
-    getAuthor: js.Function0[java.lang.String],
-    getDate: js.Function0[java.lang.String],
-    getEnd: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange],
-    getIsVisible: js.Function0[scala.Boolean],
-    getParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    getPosition: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress],
-    getStart: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange],
-    getString: js.Function0[java.lang.String],
-    getText: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText],
-    insertControlCharacter: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange, 
-      scala.Double, 
-      scala.Boolean, 
-      scala.Unit
-    ],
-    insertString: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange, 
-      java.lang.String, 
-      scala.Boolean, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setIsVisible: js.Function1[scala.Boolean, scala.Unit],
-    setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
-    setString: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    createTextCursor: () => activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextCursor,
+    createTextCursorByRange: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange => activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextCursor,
+    getAnnotationShape: () => activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape,
+    getAuthor: () => java.lang.String,
+    getDate: () => java.lang.String,
+    getEnd: () => activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange,
+    getIsVisible: () => scala.Boolean,
+    getParent: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getPosition: () => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress,
+    getStart: () => activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange,
+    getString: () => java.lang.String,
+    getText: () => activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText,
+    insertControlCharacter: (activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange, scala.Double, scala.Boolean) => scala.Unit,
+    insertString: (activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange, java.lang.String, scala.Boolean) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setIsVisible: scala.Boolean => scala.Unit,
+    setParent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => scala.Unit,
+    setString: java.lang.String => scala.Unit
   ): CellAnnotation = {
-    val __obj = js.Dynamic.literal(AnnotationShape = AnnotationShape, Author = Author, Date = Date, End = End, IsVisible = IsVisible, Parent = Parent, Position = Position, Start = Start, String = String, acquire = acquire, createTextCursor = createTextCursor, createTextCursorByRange = createTextCursorByRange, getAnnotationShape = getAnnotationShape, getAuthor = getAuthor, getDate = getDate, getEnd = getEnd, getIsVisible = getIsVisible, getParent = getParent, getPosition = getPosition, getStart = getStart, getString = getString, getText = getText, insertControlCharacter = insertControlCharacter, insertString = insertString, queryInterface = queryInterface, release = release, setIsVisible = setIsVisible, setParent = setParent, setString = setString)
+    val __obj = js.Dynamic.literal(AnnotationShape = AnnotationShape, Author = Author, Date = Date, End = End, IsVisible = IsVisible, Parent = Parent, Position = Position, Start = Start, String = String, acquire = js.Any.fromFunction0(acquire), createTextCursor = js.Any.fromFunction0(createTextCursor), createTextCursorByRange = js.Any.fromFunction1(createTextCursorByRange), getAnnotationShape = js.Any.fromFunction0(getAnnotationShape), getAuthor = js.Any.fromFunction0(getAuthor), getDate = js.Any.fromFunction0(getDate), getEnd = js.Any.fromFunction0(getEnd), getIsVisible = js.Any.fromFunction0(getIsVisible), getParent = js.Any.fromFunction0(getParent), getPosition = js.Any.fromFunction0(getPosition), getStart = js.Any.fromFunction0(getStart), getString = js.Any.fromFunction0(getString), getText = js.Any.fromFunction0(getText), insertControlCharacter = js.Any.fromFunction3(insertControlCharacter), insertString = js.Any.fromFunction3(insertString), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setIsVisible = js.Any.fromFunction1(setIsVisible), setParent = js.Any.fromFunction1(setParent), setString = js.Any.fromFunction1(setString))
   
     __obj.asInstanceOf[CellAnnotation]
   }

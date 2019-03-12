@@ -134,11 +134,11 @@ object SearchSource {
     resultSymbol: Symbol,
     suffix: java.lang.String,
     suggestionsEnabled: scala.Boolean,
-    toJSON: js.Function0[js.Any],
+    toJSON: () => js.Any,
     withinViewEnabled: scala.Boolean,
     zoomScale: scala.Double
   ): SearchSource = {
-    val __obj = js.Dynamic.literal(autoNavigate = autoNavigate, filter = filter, maxResults = maxResults, maxSuggestions = maxSuggestions, minSuggestCharacters = minSuggestCharacters, outFields = outFields, placeholder = placeholder, popupEnabled = popupEnabled, popupTemplate = popupTemplate, prefix = prefix, resultGraphicEnabled = resultGraphicEnabled, resultSymbol = resultSymbol, suffix = suffix, suggestionsEnabled = suggestionsEnabled, toJSON = toJSON, withinViewEnabled = withinViewEnabled, zoomScale = zoomScale)
+    val __obj = js.Dynamic.literal(autoNavigate = autoNavigate, filter = filter, maxResults = maxResults, maxSuggestions = maxSuggestions, minSuggestCharacters = minSuggestCharacters, outFields = outFields, placeholder = placeholder, popupEnabled = popupEnabled, popupTemplate = popupTemplate, prefix = prefix, resultGraphicEnabled = resultGraphicEnabled, resultSymbol = resultSymbol, suffix = suffix, suggestionsEnabled = suggestionsEnabled, toJSON = js.Any.fromFunction0(toJSON), withinViewEnabled = withinViewEnabled, zoomScale = zoomScale)
   
     __obj.asInstanceOf[SearchSource]
   }

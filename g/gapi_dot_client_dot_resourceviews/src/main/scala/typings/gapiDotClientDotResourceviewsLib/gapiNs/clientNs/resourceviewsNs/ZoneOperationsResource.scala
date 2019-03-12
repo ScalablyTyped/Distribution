@@ -15,16 +15,10 @@ trait ZoneOperationsResource extends js.Object {
 object ZoneOperationsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotResourceviewsLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotResourceviewsLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OperationList]
-    ]
+    get: gapiDotClientDotResourceviewsLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotResourceviewsLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[OperationList]
   ): ZoneOperationsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ZoneOperationsResource]
   }

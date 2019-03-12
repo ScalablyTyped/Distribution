@@ -10,12 +10,12 @@ trait SendMediaTypes extends js.Object {
   /** the protocol to which the information is related (i.e. "NNTP", "SMTP", "VIM"). */
   var ProtocolType: java.lang.String
   /** a list of Internet media types */
-  var Value: activexDashInteropLib.SafeArray[java.lang.String]
+  var Value: stdLib.SafeArray[java.lang.String]
 }
 
 object SendMediaTypes {
   @scala.inline
-  def apply(ProtocolType: java.lang.String, Value: activexDashInteropLib.SafeArray[java.lang.String]): SendMediaTypes = {
+  def apply(ProtocolType: java.lang.String, Value: stdLib.SafeArray[java.lang.String]): SendMediaTypes = {
     val __obj = js.Dynamic.literal(ProtocolType = ProtocolType, Value = Value)
   
     __obj.asInstanceOf[SendMediaTypes]

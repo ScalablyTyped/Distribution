@@ -13,11 +13,11 @@ trait Bosh extends js.Object {
 object Bosh {
   @scala.inline
   def apply(
-    prebind: js.Function2[/* error */ js.Any, /* data */ js.Any, scala.Unit] = null,
+    prebind: (/* error */ js.Any, /* data */ js.Any) => scala.Unit = null,
     url: java.lang.String = null
   ): Bosh = {
     val __obj = js.Dynamic.literal()
-    if (prebind != null) __obj.updateDynamic("prebind")(prebind)
+    if (prebind != null) __obj.updateDynamic("prebind")(js.Any.fromFunction2(prebind))
     if (url != null) __obj.updateDynamic("url")(url)
     __obj.asInstanceOf[Bosh]
   }

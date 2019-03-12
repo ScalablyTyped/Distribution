@@ -10,7 +10,7 @@ trait Response
   extends nodeLib.httpMod.IncomingMessage {
   var body: js.Any = js.native
    // Buffer, string, stream.Readable, or a plain object if `json` was truthy
-  var caseless: caselessLib.caselessMod.Caseless = js.native
+  var caseless: caselessLib.caselessMod.caselessNs.Caseless = js.native
   var elapsedTime: js.UndefOr[scala.Double] = js.native
   var request: Request = js.native
   @JSName("statusCode")

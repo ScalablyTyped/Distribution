@@ -123,9 +123,9 @@ object ConfigurationOptions {
     fallbacks: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     indent: java.lang.String = null,
     locales: js.Array[java.lang.String] = null,
-    logDebugFn: js.Function1[/* msg */ java.lang.String, scala.Unit] = null,
-    logErrorFn: js.Function1[/* msg */ java.lang.String, scala.Unit] = null,
-    logWarnFn: js.Function1[/* msg */ java.lang.String, scala.Unit] = null,
+    logDebugFn: /* msg */ java.lang.String => scala.Unit = null,
+    logErrorFn: /* msg */ java.lang.String => scala.Unit = null,
+    logWarnFn: /* msg */ java.lang.String => scala.Unit = null,
     objectNotation: js.UndefOr[scala.Boolean] = js.undefined,
     prefix: java.lang.String = null,
     preserveLegacyCase: js.UndefOr[scala.Boolean] = js.undefined,
@@ -145,9 +145,9 @@ object ConfigurationOptions {
     if (fallbacks != null) __obj.updateDynamic("fallbacks")(fallbacks)
     if (indent != null) __obj.updateDynamic("indent")(indent)
     if (locales != null) __obj.updateDynamic("locales")(locales)
-    if (logDebugFn != null) __obj.updateDynamic("logDebugFn")(logDebugFn)
-    if (logErrorFn != null) __obj.updateDynamic("logErrorFn")(logErrorFn)
-    if (logWarnFn != null) __obj.updateDynamic("logWarnFn")(logWarnFn)
+    if (logDebugFn != null) __obj.updateDynamic("logDebugFn")(js.Any.fromFunction1(logDebugFn))
+    if (logErrorFn != null) __obj.updateDynamic("logErrorFn")(js.Any.fromFunction1(logErrorFn))
+    if (logWarnFn != null) __obj.updateDynamic("logWarnFn")(js.Any.fromFunction1(logWarnFn))
     if (!js.isUndefined(objectNotation)) __obj.updateDynamic("objectNotation")(objectNotation)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (!js.isUndefined(preserveLegacyCase)) __obj.updateDynamic("preserveLegacyCase")(preserveLegacyCase)

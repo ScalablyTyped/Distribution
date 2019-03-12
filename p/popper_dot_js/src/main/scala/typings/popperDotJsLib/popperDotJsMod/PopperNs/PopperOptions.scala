@@ -20,8 +20,8 @@ object PopperOptions {
   def apply(
     eventsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     modifiers: Modifiers = null,
-    onCreate: js.Function1[/* data */ Data, scala.Unit] = null,
-    onUpdate: js.Function1[/* data */ Data, scala.Unit] = null,
+    onCreate: /* data */ Data => scala.Unit = null,
+    onUpdate: /* data */ Data => scala.Unit = null,
     placement: Placement = null,
     positionFixed: js.UndefOr[scala.Boolean] = js.undefined,
     removeOnDestroy: js.UndefOr[scala.Boolean] = js.undefined
@@ -29,8 +29,8 @@ object PopperOptions {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled)
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
-    if (onCreate != null) __obj.updateDynamic("onCreate")(onCreate)
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (onCreate != null) __obj.updateDynamic("onCreate")(js.Any.fromFunction1(onCreate))
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
     if (placement != null) __obj.updateDynamic("placement")(placement)
     if (!js.isUndefined(positionFixed)) __obj.updateDynamic("positionFixed")(positionFixed)
     if (!js.isUndefined(removeOnDestroy)) __obj.updateDynamic("removeOnDestroy")(removeOnDestroy)

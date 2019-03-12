@@ -43,34 +43,34 @@ trait Nacl extends js.Object {
 object Nacl {
   @scala.inline
   def apply(
-    crypto_box: js.Function4[Message, Nonce, BoxPublicKey, BoxSecretKey, CipherText],
-    crypto_box_keypair: js.Function0[BoxKeyPair],
-    crypto_box_keypair_from_raw_sk: js.Function1[stdLib.Uint8Array, BoxKeyPair],
-    crypto_box_open: js.Function4[CipherText, Nonce, BoxPublicKey, BoxSecretKey, Message],
-    crypto_box_open_precomputed: js.Function3[CipherText, Nonce, BoxSharedSecret, Message],
-    crypto_box_precompute: js.Function2[BoxPublicKey, BoxSecretKey, BoxSharedSecret],
-    crypto_box_precomputed: js.Function3[Message, Nonce, BoxSharedSecret, CipherText],
-    crypto_box_random_nonce: js.Function0[Nonce],
-    crypto_box_seed_keypair: js.Function1[stdLib.Uint8Array, BoxKeyPair],
-    crypto_hash: js.Function1[stdLib.Uint8Array, stdLib.Uint8Array],
-    crypto_hash_sha256: js.Function1[stdLib.Uint8Array, stdLib.Uint8Array],
-    crypto_secretbox: js.Function3[Message, Nonce, BoxSecretKey, CipherText],
-    crypto_secretbox_open: js.Function3[CipherText, Nonce, BoxSecretKey, Message],
-    crypto_secretbox_random_nonce: js.Function0[Nonce],
-    crypto_sign: js.Function2[Message, SignerSecretKey, MessageWithSignature],
-    crypto_sign_detached: js.Function2[Message, SignerSecretKey, Signature],
-    crypto_sign_keypair: js.Function0[SignKeyPair],
-    crypto_sign_open: js.Function2[MessageWithSignature, SignerPublicKey, Message | scala.Null],
-    crypto_sign_seed_keypair: js.Function1[stdLib.Uint8Array, SignKeyPair],
-    crypto_sign_verify_detached: js.Function3[Signature, Message, SignerPublicKey, scala.Boolean],
-    decode_latin1: js.Function1[stdLib.Uint8Array, java.lang.String],
-    decode_utf8: js.Function1[stdLib.Uint8Array, java.lang.String],
-    encode_latin1: js.Function1[java.lang.String, stdLib.Uint8Array],
-    encode_utf8: js.Function1[java.lang.String, stdLib.Uint8Array],
-    from_hex: js.Function1[java.lang.String, stdLib.Uint8Array],
-    to_hex: js.Function1[stdLib.Uint8Array, java.lang.String]
+    crypto_box: (Message, Nonce, BoxPublicKey, BoxSecretKey) => CipherText,
+    crypto_box_keypair: () => BoxKeyPair,
+    crypto_box_keypair_from_raw_sk: stdLib.Uint8Array => BoxKeyPair,
+    crypto_box_open: (CipherText, Nonce, BoxPublicKey, BoxSecretKey) => Message,
+    crypto_box_open_precomputed: (CipherText, Nonce, BoxSharedSecret) => Message,
+    crypto_box_precompute: (BoxPublicKey, BoxSecretKey) => BoxSharedSecret,
+    crypto_box_precomputed: (Message, Nonce, BoxSharedSecret) => CipherText,
+    crypto_box_random_nonce: () => Nonce,
+    crypto_box_seed_keypair: stdLib.Uint8Array => BoxKeyPair,
+    crypto_hash: stdLib.Uint8Array => stdLib.Uint8Array,
+    crypto_hash_sha256: stdLib.Uint8Array => stdLib.Uint8Array,
+    crypto_secretbox: (Message, Nonce, BoxSecretKey) => CipherText,
+    crypto_secretbox_open: (CipherText, Nonce, BoxSecretKey) => Message,
+    crypto_secretbox_random_nonce: () => Nonce,
+    crypto_sign: (Message, SignerSecretKey) => MessageWithSignature,
+    crypto_sign_detached: (Message, SignerSecretKey) => Signature,
+    crypto_sign_keypair: () => SignKeyPair,
+    crypto_sign_open: (MessageWithSignature, SignerPublicKey) => Message | scala.Null,
+    crypto_sign_seed_keypair: stdLib.Uint8Array => SignKeyPair,
+    crypto_sign_verify_detached: (Signature, Message, SignerPublicKey) => scala.Boolean,
+    decode_latin1: stdLib.Uint8Array => java.lang.String,
+    decode_utf8: stdLib.Uint8Array => java.lang.String,
+    encode_latin1: java.lang.String => stdLib.Uint8Array,
+    encode_utf8: java.lang.String => stdLib.Uint8Array,
+    from_hex: java.lang.String => stdLib.Uint8Array,
+    to_hex: stdLib.Uint8Array => java.lang.String
   ): Nacl = {
-    val __obj = js.Dynamic.literal(crypto_box = crypto_box, crypto_box_keypair = crypto_box_keypair, crypto_box_keypair_from_raw_sk = crypto_box_keypair_from_raw_sk, crypto_box_open = crypto_box_open, crypto_box_open_precomputed = crypto_box_open_precomputed, crypto_box_precompute = crypto_box_precompute, crypto_box_precomputed = crypto_box_precomputed, crypto_box_random_nonce = crypto_box_random_nonce, crypto_box_seed_keypair = crypto_box_seed_keypair, crypto_hash = crypto_hash, crypto_hash_sha256 = crypto_hash_sha256, crypto_secretbox = crypto_secretbox, crypto_secretbox_open = crypto_secretbox_open, crypto_secretbox_random_nonce = crypto_secretbox_random_nonce, crypto_sign = crypto_sign, crypto_sign_detached = crypto_sign_detached, crypto_sign_keypair = crypto_sign_keypair, crypto_sign_open = crypto_sign_open, crypto_sign_seed_keypair = crypto_sign_seed_keypair, crypto_sign_verify_detached = crypto_sign_verify_detached, decode_latin1 = decode_latin1, decode_utf8 = decode_utf8, encode_latin1 = encode_latin1, encode_utf8 = encode_utf8, from_hex = from_hex, to_hex = to_hex)
+    val __obj = js.Dynamic.literal(crypto_box = js.Any.fromFunction4(crypto_box), crypto_box_keypair = js.Any.fromFunction0(crypto_box_keypair), crypto_box_keypair_from_raw_sk = js.Any.fromFunction1(crypto_box_keypair_from_raw_sk), crypto_box_open = js.Any.fromFunction4(crypto_box_open), crypto_box_open_precomputed = js.Any.fromFunction3(crypto_box_open_precomputed), crypto_box_precompute = js.Any.fromFunction2(crypto_box_precompute), crypto_box_precomputed = js.Any.fromFunction3(crypto_box_precomputed), crypto_box_random_nonce = js.Any.fromFunction0(crypto_box_random_nonce), crypto_box_seed_keypair = js.Any.fromFunction1(crypto_box_seed_keypair), crypto_hash = js.Any.fromFunction1(crypto_hash), crypto_hash_sha256 = js.Any.fromFunction1(crypto_hash_sha256), crypto_secretbox = js.Any.fromFunction3(crypto_secretbox), crypto_secretbox_open = js.Any.fromFunction3(crypto_secretbox_open), crypto_secretbox_random_nonce = js.Any.fromFunction0(crypto_secretbox_random_nonce), crypto_sign = js.Any.fromFunction2(crypto_sign), crypto_sign_detached = js.Any.fromFunction2(crypto_sign_detached), crypto_sign_keypair = js.Any.fromFunction0(crypto_sign_keypair), crypto_sign_open = js.Any.fromFunction2(crypto_sign_open), crypto_sign_seed_keypair = js.Any.fromFunction1(crypto_sign_seed_keypair), crypto_sign_verify_detached = js.Any.fromFunction3(crypto_sign_verify_detached), decode_latin1 = js.Any.fromFunction1(decode_latin1), decode_utf8 = js.Any.fromFunction1(decode_utf8), encode_latin1 = js.Any.fromFunction1(encode_latin1), encode_utf8 = js.Any.fromFunction1(encode_utf8), from_hex = js.Any.fromFunction1(from_hex), to_hex = js.Any.fromFunction1(to_hex))
   
     __obj.asInstanceOf[Nacl]
   }

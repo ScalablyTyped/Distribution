@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def getProfile(
-    platform: overwatchDashApiLib.overwatchDashApiMod.OverwatchPlatform,
-    region: overwatchDashApiLib.overwatchDashApiMod.OverwatchServerRegion,
+    platform: OverwatchPlatform,
+    region: OverwatchServerRegion,
     tag: java.lang.String,
-    callback: overwatchDashApiLib.overwatchDashApiMod.callbackFunc[overwatchDashApiLib.overwatchDashApiMod.ProfileApiResponse]
+    callback: callbackFunc[ProfileApiResponse]
   ): scala.Unit = js.native
   def getStats(
-    platform: overwatchDashApiLib.overwatchDashApiMod.OverwatchPlatform,
-    region: overwatchDashApiLib.overwatchDashApiMod.OverwatchServerRegion,
+    platform: OverwatchPlatform,
+    region: OverwatchServerRegion,
     tag: java.lang.String,
-    callback: overwatchDashApiLib.overwatchDashApiMod.callbackFunc[overwatchDashApiLib.overwatchDashApiMod.StatsApiResponse]
+    callback: callbackFunc[StatsApiResponse]
   ): scala.Unit = js.native
 }
 

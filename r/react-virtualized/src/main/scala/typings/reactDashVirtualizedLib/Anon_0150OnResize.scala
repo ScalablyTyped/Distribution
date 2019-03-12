@@ -17,14 +17,14 @@ trait Anon_0150OnResize extends js.Object {
 object Anon_0150OnResize {
   @scala.inline
   def apply(
-    onResize: js.Function0[scala.Unit],
-    onScroll: js.Function0[scala.Unit],
+    onResize: () => scala.Unit,
+    onScroll: () => scala.Unit,
     scrollingResetTimeInterval: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`150`,
     serverHeight: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`0`,
     serverWidth: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`0`,
     scrollElement: stdLib.Window = null
   ): Anon_0150OnResize = {
-    val __obj = js.Dynamic.literal(onResize = onResize, onScroll = onScroll, scrollingResetTimeInterval = scrollingResetTimeInterval, serverHeight = serverHeight, serverWidth = serverWidth)
+    val __obj = js.Dynamic.literal(onResize = js.Any.fromFunction0(onResize), onScroll = js.Any.fromFunction0(onScroll), scrollingResetTimeInterval = scrollingResetTimeInterval, serverHeight = serverHeight, serverWidth = serverWidth)
     if (scrollElement != null) __obj.updateDynamic("scrollElement")(scrollElement)
     __obj.asInstanceOf[Anon_0150OnResize]
   }

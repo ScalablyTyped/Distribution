@@ -124,9 +124,9 @@ object predominanceCreateRendererParams {
   def apply(
     constructor: js.Function,
     fields: js.Array[predominanceCreateRendererParamsFields],
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     layer: FeatureLayer | SceneLayer | CSVLayer,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     view: View,
     basemap: java.lang.String | Basemap = null,
     colorMixMode: java.lang.String = null,
@@ -139,7 +139,7 @@ object predominanceCreateRendererParams {
     statistics: SummaryStatisticsResult = null,
     symbolType: java.lang.String = null
   ): predominanceCreateRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, fields = fields, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable, view = view)
+    val __obj = js.Dynamic.literal(constructor = constructor, fields = fields, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view)
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (colorMixMode != null) __obj.updateDynamic("colorMixMode")(colorMixMode)
     if (!js.isUndefined(defaultSymbolEnabled)) __obj.updateDynamic("defaultSymbolEnabled")(defaultSymbolEnabled)

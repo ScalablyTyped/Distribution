@@ -35,13 +35,13 @@ object XViewDataSupplier {
   @scala.inline
   def apply(
     ViewData: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
-    acquire: js.Function0[scala.Unit],
-    getViewData: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setViewData: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, scala.Unit]
+    acquire: () => scala.Unit,
+    getViewData: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setViewData: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess => scala.Unit
   ): XViewDataSupplier = {
-    val __obj = js.Dynamic.literal(ViewData = ViewData, acquire = acquire, getViewData = getViewData, queryInterface = queryInterface, release = release, setViewData = setViewData)
+    val __obj = js.Dynamic.literal(ViewData = ViewData, acquire = js.Any.fromFunction0(acquire), getViewData = js.Any.fromFunction0(getViewData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setViewData = js.Any.fromFunction1(setViewData))
   
     __obj.asInstanceOf[XViewDataSupplier]
   }

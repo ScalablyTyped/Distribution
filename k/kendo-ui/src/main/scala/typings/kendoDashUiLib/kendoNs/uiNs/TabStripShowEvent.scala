@@ -13,13 +13,13 @@ trait TabStripShowEvent extends TabStripEvent {
 object TabStripShowEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: TabStrip,
     contentElement: stdLib.Element = null,
     item: stdLib.Element = null
   ): TabStripShowEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (contentElement != null) __obj.updateDynamic("contentElement")(contentElement)
     if (item != null) __obj.updateDynamic("item")(item)
     __obj.asInstanceOf[TabStripShowEvent]

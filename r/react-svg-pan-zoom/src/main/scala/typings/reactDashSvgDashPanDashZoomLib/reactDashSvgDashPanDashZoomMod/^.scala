@@ -22,40 +22,18 @@ object ^ extends js.Object {
   val TOOL_ZOOM_IN: /* zoom-in */ java.lang.String = js.native
   val TOOL_ZOOM_OUT: /* zoom-out */ java.lang.String = js.native
   def fitSelection(
-    value: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Value,
+    value: Value,
     selectionSVGPointX: scala.Double,
     selectionSVGPointY: scala.Double,
     selectionWidth: scala.Double,
     selectionHeight: scala.Double
-  ): reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Value = js.native
-  def fitToViewer(value: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Value): reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Value = js.native
-  def pan(
-    value: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Value,
-    SVGDeltaX: scala.Double,
-    SVGDeltaY: scala.Double
-  ): reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Value = js.native
-  def pan(
-    value: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Value,
-    SVGDeltaX: scala.Double,
-    SVGDeltaY: scala.Double,
-    panLimit: scala.Double
-  ): reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Value = js.native
-  def reset(value: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Value): reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Value = js.native
-  def setPointOnViewerCenter(
-    value: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Value,
-    SVGPointX: scala.Double,
-    SVGPointY: scala.Double,
-    zoomLevel: scala.Double
-  ): reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Value = js.native
-  def zoom(
-    value: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Value,
-    SVGPointX: scala.Double,
-    SVGPointY: scala.Double,
-    scaleFactor: scala.Double
-  ): reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Value = js.native
-  def zoomOnViewerCenter(
-    value: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Value,
-    scaleFactor: scala.Double
-  ): reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Value = js.native
+  ): Value = js.native
+  def fitToViewer(value: Value): Value = js.native
+  def pan(value: Value, SVGDeltaX: scala.Double, SVGDeltaY: scala.Double): Value = js.native
+  def pan(value: Value, SVGDeltaX: scala.Double, SVGDeltaY: scala.Double, panLimit: scala.Double): Value = js.native
+  def reset(value: Value): Value = js.native
+  def setPointOnViewerCenter(value: Value, SVGPointX: scala.Double, SVGPointY: scala.Double, zoomLevel: scala.Double): Value = js.native
+  def zoom(value: Value, SVGPointX: scala.Double, SVGPointY: scala.Double, scaleFactor: scala.Double): Value = js.native
+  def zoomOnViewerCenter(value: Value, scaleFactor: scala.Double): Value = js.native
 }
 

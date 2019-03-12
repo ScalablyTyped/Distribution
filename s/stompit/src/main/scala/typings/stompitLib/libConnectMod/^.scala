@@ -12,7 +12,7 @@ object ^ extends js.Object {
   def apply(
     optionsOrPath: stompitLib.libConnectMod.connectNs.ConnectOptions | java.lang.String,
     connectionListener: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* client */ stompitLib.libClientMod.namespaced, 
       scala.Unit
     ]
@@ -23,7 +23,7 @@ object ^ extends js.Object {
     port: scala.Double,
     host: java.lang.String,
     connectionListener: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* client */ stompitLib.libClientMod.namespaced, 
       scala.Unit
     ]

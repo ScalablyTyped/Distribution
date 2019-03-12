@@ -25,20 +25,20 @@ object Service {
   @scala.inline
   def apply(
     custom: serverlessLib.classesServiceMod.ServiceNs.Custom,
-    getAllEventsInFunction: js.Function1[java.lang.String, js.Array[serverlessLib.serverlessMod.ServerlessNs.Event]],
-    getAllFunctions: js.Function0[js.Array[java.lang.String]],
-    getAllFunctionsNames: js.Function0[js.Array[java.lang.String]],
-    getEventInFunction: js.Function2[java.lang.String, java.lang.String, serverlessLib.serverlessMod.ServerlessNs.Event],
-    getFunction: js.Function1[java.lang.String, serverlessLib.serverlessMod.ServerlessNs.FunctionDefinition],
-    getServiceName: js.Function0[java.lang.String],
-    load: js.Function1[js.Object, js.Promise[_]],
-    mergeResourceArrays: js.Function0[scala.Unit],
+    getAllEventsInFunction: java.lang.String => js.Array[serverlessLib.serverlessMod.ServerlessNs.Event],
+    getAllFunctions: () => js.Array[java.lang.String],
+    getAllFunctionsNames: () => js.Array[java.lang.String],
+    getEventInFunction: (java.lang.String, java.lang.String) => serverlessLib.serverlessMod.ServerlessNs.Event,
+    getFunction: java.lang.String => serverlessLib.serverlessMod.ServerlessNs.FunctionDefinition,
+    getServiceName: () => java.lang.String,
+    load: js.Object => js.Promise[_],
+    mergeResourceArrays: () => scala.Unit,
     provider: serverlessLib.Anon_CompiledCloudFormationTemplate,
-    setFunctionNames: js.Function1[js.Object, scala.Unit],
-    update: js.Function1[js.Object, js.Object],
-    validate: js.Function0[Service]
+    setFunctionNames: js.Object => scala.Unit,
+    update: js.Object => js.Object,
+    validate: () => Service
   ): Service = {
-    val __obj = js.Dynamic.literal(custom = custom, getAllEventsInFunction = getAllEventsInFunction, getAllFunctions = getAllFunctions, getAllFunctionsNames = getAllFunctionsNames, getEventInFunction = getEventInFunction, getFunction = getFunction, getServiceName = getServiceName, load = load, mergeResourceArrays = mergeResourceArrays, provider = provider, setFunctionNames = setFunctionNames, update = update, validate = validate)
+    val __obj = js.Dynamic.literal(custom = custom, getAllEventsInFunction = js.Any.fromFunction1(getAllEventsInFunction), getAllFunctions = js.Any.fromFunction0(getAllFunctions), getAllFunctionsNames = js.Any.fromFunction0(getAllFunctionsNames), getEventInFunction = js.Any.fromFunction2(getEventInFunction), getFunction = js.Any.fromFunction1(getFunction), getServiceName = js.Any.fromFunction0(getServiceName), load = js.Any.fromFunction1(load), mergeResourceArrays = js.Any.fromFunction0(mergeResourceArrays), provider = provider, setFunctionNames = js.Any.fromFunction1(setFunctionNames), update = js.Any.fromFunction1(update), validate = js.Any.fromFunction0(validate))
   
     __obj.asInstanceOf[Service]
   }

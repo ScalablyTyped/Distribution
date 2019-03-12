@@ -13,12 +13,8 @@ trait Checkable extends js.Object {
 
 object Checkable {
   @scala.inline
-  def apply(
-    isChecked: js.Function0[scala.Boolean],
-    setChecked: js.Function1[scala.Boolean, scala.Unit],
-    toggle: js.Function0[scala.Unit]
-  ): Checkable = {
-    val __obj = js.Dynamic.literal(isChecked = isChecked, setChecked = setChecked, toggle = toggle)
+  def apply(isChecked: () => scala.Boolean, setChecked: scala.Boolean => scala.Unit, toggle: () => scala.Unit): Checkable = {
+    val __obj = js.Dynamic.literal(isChecked = js.Any.fromFunction0(isChecked), setChecked = js.Any.fromFunction1(setChecked), toggle = js.Any.fromFunction0(toggle))
   
     __obj.asInstanceOf[Checkable]
   }

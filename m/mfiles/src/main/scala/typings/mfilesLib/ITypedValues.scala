@@ -15,12 +15,12 @@ trait ITypedValues extends js.Object {
 object ITypedValues {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, ITypedValue, scala.Unit],
+    Add: (scala.Double, ITypedValue) => scala.Unit,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, ITypedValue],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => ITypedValue,
+    Remove: scala.Double => scala.Unit
   ): ITypedValues = {
-    val __obj = js.Dynamic.literal(Add = Add, Count = Count, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[ITypedValues]
   }

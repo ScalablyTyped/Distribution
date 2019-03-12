@@ -11,8 +11,8 @@ trait StaticPlots extends js.Object {
 
 object StaticPlots {
   @scala.inline
-  def apply(resize: js.Function1[Root, scala.Unit]): StaticPlots = {
-    val __obj = js.Dynamic.literal(resize = resize)
+  def apply(resize: Root => scala.Unit): StaticPlots = {
+    val __obj = js.Dynamic.literal(resize = js.Any.fromFunction1(resize))
   
     __obj.asInstanceOf[StaticPlots]
   }

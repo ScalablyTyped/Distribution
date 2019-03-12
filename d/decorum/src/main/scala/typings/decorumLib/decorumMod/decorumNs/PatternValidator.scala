@@ -13,15 +13,15 @@ trait PatternValidator extends BaseValidator {
 object PatternValidator {
   @scala.inline
   def apply(
-    getCustomMessage: js.Function1[IMessageOpts, java.lang.String],
-    getKey: js.Function0[java.lang.String],
-    getMessage: js.Function1[IMessageOpts, java.lang.String],
+    getCustomMessage: IMessageOpts => java.lang.String,
+    getKey: () => java.lang.String,
+    getMessage: IMessageOpts => java.lang.String,
     hasCustomMessage: scala.Boolean,
-    isValid: js.Function1[js.Any, scala.Boolean],
+    isValid: js.Any => scala.Boolean,
     pattern: stdLib.RegExp,
-    validatesEmptyValue: js.Function0[scala.Boolean]
+    validatesEmptyValue: () => scala.Boolean
   ): PatternValidator = {
-    val __obj = js.Dynamic.literal(getCustomMessage = getCustomMessage, getKey = getKey, getMessage = getMessage, hasCustomMessage = hasCustomMessage, isValid = isValid, pattern = pattern, validatesEmptyValue = validatesEmptyValue)
+    val __obj = js.Dynamic.literal(getCustomMessage = js.Any.fromFunction1(getCustomMessage), getKey = js.Any.fromFunction0(getKey), getMessage = js.Any.fromFunction1(getMessage), hasCustomMessage = hasCustomMessage, isValid = js.Any.fromFunction1(isValid), pattern = pattern, validatesEmptyValue = js.Any.fromFunction0(validatesEmptyValue))
   
     __obj.asInstanceOf[PatternValidator]
   }

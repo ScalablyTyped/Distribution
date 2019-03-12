@@ -15,7 +15,7 @@ trait IActionProps
   /** Click event handler. */
   var onClick: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -30,10 +30,7 @@ object IActionProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     icon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | MaybeElement = null,
     intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
-    onClick: js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
+    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
     text: reactLib.reactMod.ReactNs.ReactNode = null
   ): IActionProps = {
     val __obj = js.Dynamic.literal()
@@ -41,7 +38,7 @@ object IActionProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (intent != null) __obj.updateDynamic("intent")(intent)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IActionProps]
   }

@@ -32,17 +32,17 @@ trait XScriptTypeDetector
 object XScriptTypeDetector {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    beginOfCTLScriptType: js.Function2[java.lang.String, scala.Double, scala.Double],
-    beginOfScriptDirection: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Double],
-    endOfCTLScriptType: js.Function2[java.lang.String, scala.Double, scala.Double],
-    endOfScriptDirection: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Double],
-    getCTLScriptType: js.Function2[java.lang.String, scala.Double, scala.Double],
-    getScriptDirection: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    beginOfCTLScriptType: (java.lang.String, scala.Double) => scala.Double,
+    beginOfScriptDirection: (java.lang.String, scala.Double, scala.Double) => scala.Double,
+    endOfCTLScriptType: (java.lang.String, scala.Double) => scala.Double,
+    endOfScriptDirection: (java.lang.String, scala.Double, scala.Double) => scala.Double,
+    getCTLScriptType: (java.lang.String, scala.Double) => scala.Double,
+    getScriptDirection: (java.lang.String, scala.Double, scala.Double) => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XScriptTypeDetector = {
-    val __obj = js.Dynamic.literal(acquire = acquire, beginOfCTLScriptType = beginOfCTLScriptType, beginOfScriptDirection = beginOfScriptDirection, endOfCTLScriptType = endOfCTLScriptType, endOfScriptDirection = endOfScriptDirection, getCTLScriptType = getCTLScriptType, getScriptDirection = getScriptDirection, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), beginOfCTLScriptType = js.Any.fromFunction2(beginOfCTLScriptType), beginOfScriptDirection = js.Any.fromFunction3(beginOfScriptDirection), endOfCTLScriptType = js.Any.fromFunction2(endOfCTLScriptType), endOfScriptDirection = js.Any.fromFunction3(endOfScriptDirection), getCTLScriptType = js.Any.fromFunction2(getCTLScriptType), getScriptDirection = js.Any.fromFunction3(getScriptDirection), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XScriptTypeDetector]
   }

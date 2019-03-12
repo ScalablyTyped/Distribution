@@ -24,7 +24,7 @@ object AttributionOptions {
     collapsed: js.UndefOr[scala.Boolean] = js.undefined,
     collapsible: js.UndefOr[scala.Boolean] = js.undefined,
     label: java.lang.String | stdLib.Node = null,
-    render: js.Function1[/* event */ openlayersLib.openlayersMod.MapEvent, _] = null,
+    render: /* event */ openlayersLib.openlayersMod.MapEvent => _ = null,
     target: stdLib.Element = null,
     tipLabel: java.lang.String = null
   ): AttributionOptions = {
@@ -34,7 +34,7 @@ object AttributionOptions {
     if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
     if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (target != null) __obj.updateDynamic("target")(target)
     if (tipLabel != null) __obj.updateDynamic("tipLabel")(tipLabel)
     __obj.asInstanceOf[AttributionOptions]

@@ -11,8 +11,8 @@ trait Window extends js.Object {
 
 object Window {
   @scala.inline
-  def apply(onSpotifyWebPlaybackSDKReady: js.Function0[scala.Unit]): Window = {
-    val __obj = js.Dynamic.literal(onSpotifyWebPlaybackSDKReady = onSpotifyWebPlaybackSDKReady)
+  def apply(onSpotifyWebPlaybackSDKReady: () => scala.Unit): Window = {
+    val __obj = js.Dynamic.literal(onSpotifyWebPlaybackSDKReady = js.Any.fromFunction0(onSpotifyWebPlaybackSDKReady))
   
     __obj.asInstanceOf[Window]
   }

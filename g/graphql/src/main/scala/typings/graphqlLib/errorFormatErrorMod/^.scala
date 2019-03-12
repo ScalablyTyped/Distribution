@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/error/formatError", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def formatError(error: graphqlLib.errorGraphQLErrorMod.GraphQLError): graphqlLib.errorFormatErrorMod.GraphQLFormattedError = js.native
+  def formatError(error: graphqlLib.errorGraphQLErrorMod.GraphQLError): GraphQLFormattedError = js.native
 }
 

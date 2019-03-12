@@ -14,11 +14,11 @@ trait Certificate extends js.Object {
 object Certificate {
   @scala.inline
   def apply(
-    exportChallenge: js.Function1[BinaryLike, nodeLib.Buffer],
-    exportPublicKey: js.Function1[BinaryLike, nodeLib.Buffer],
-    verifySpkac: js.Function1[Binary, scala.Boolean]
+    exportChallenge: BinaryLike => nodeLib.Buffer,
+    exportPublicKey: BinaryLike => nodeLib.Buffer,
+    verifySpkac: Binary => scala.Boolean
   ): Certificate = {
-    val __obj = js.Dynamic.literal(exportChallenge = exportChallenge, exportPublicKey = exportPublicKey, verifySpkac = verifySpkac)
+    val __obj = js.Dynamic.literal(exportChallenge = js.Any.fromFunction1(exportChallenge), exportPublicKey = js.Any.fromFunction1(exportPublicKey), verifySpkac = js.Any.fromFunction1(verifySpkac))
   
     __obj.asInstanceOf[Certificate]
   }

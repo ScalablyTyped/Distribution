@@ -27,16 +27,16 @@ trait BulkWriteResult extends js.Object {
 object BulkWriteResult {
   @scala.inline
   def apply(
-    getInsertedIds: js.Function0[js.Array[js.Object]],
-    getLastOp: js.Function0[js.Object],
-    getRawResponse: js.Function0[js.Object],
-    getUpsertedIdAt: js.Function1[scala.Double, js.Object],
-    getUpsertedIds: js.Function0[js.Array[js.Object]],
-    getWriteConcernError: js.Function0[WriteConcernError],
-    getWriteErrorAt: js.Function1[scala.Double, WriteError],
-    getWriteErrorCount: js.Function0[scala.Double],
-    getWriteErrors: js.Function0[js.Array[js.Object]],
-    hasWriteErrors: js.Function0[scala.Boolean],
+    getInsertedIds: () => js.Array[js.Object],
+    getLastOp: () => js.Object,
+    getRawResponse: () => js.Object,
+    getUpsertedIdAt: scala.Double => js.Object,
+    getUpsertedIds: () => js.Array[js.Object],
+    getWriteConcernError: () => WriteConcernError,
+    getWriteErrorAt: scala.Double => WriteError,
+    getWriteErrorCount: () => scala.Double,
+    getWriteErrors: () => js.Array[js.Object],
+    hasWriteErrors: () => scala.Boolean,
     nInserted: scala.Double,
     nModified: scala.Double,
     nRemoved: scala.Double,
@@ -44,7 +44,7 @@ object BulkWriteResult {
     nUpserted: scala.Double,
     ok: scala.Double
   ): BulkWriteResult = {
-    val __obj = js.Dynamic.literal(getInsertedIds = getInsertedIds, getLastOp = getLastOp, getRawResponse = getRawResponse, getUpsertedIdAt = getUpsertedIdAt, getUpsertedIds = getUpsertedIds, getWriteConcernError = getWriteConcernError, getWriteErrorAt = getWriteErrorAt, getWriteErrorCount = getWriteErrorCount, getWriteErrors = getWriteErrors, hasWriteErrors = hasWriteErrors, nInserted = nInserted, nModified = nModified, nRemoved = nRemoved, nUpdated = nUpdated, nUpserted = nUpserted, ok = ok)
+    val __obj = js.Dynamic.literal(getInsertedIds = js.Any.fromFunction0(getInsertedIds), getLastOp = js.Any.fromFunction0(getLastOp), getRawResponse = js.Any.fromFunction0(getRawResponse), getUpsertedIdAt = js.Any.fromFunction1(getUpsertedIdAt), getUpsertedIds = js.Any.fromFunction0(getUpsertedIds), getWriteConcernError = js.Any.fromFunction0(getWriteConcernError), getWriteErrorAt = js.Any.fromFunction1(getWriteErrorAt), getWriteErrorCount = js.Any.fromFunction0(getWriteErrorCount), getWriteErrors = js.Any.fromFunction0(getWriteErrors), hasWriteErrors = js.Any.fromFunction0(hasWriteErrors), nInserted = nInserted, nModified = nModified, nRemoved = nRemoved, nUpdated = nUpdated, nUpserted = nUpserted, ok = ok)
   
     __obj.asInstanceOf[BulkWriteResult]
   }

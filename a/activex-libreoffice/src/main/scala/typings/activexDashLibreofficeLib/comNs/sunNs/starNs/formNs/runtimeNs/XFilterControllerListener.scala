@@ -43,15 +43,15 @@ trait XFilterControllerListener
 object XFilterControllerListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    disjunctiveTermAdded: js.Function1[FilterEvent, scala.Unit],
-    disjunctiveTermRemoved: js.Function1[FilterEvent, scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    predicateExpressionChanged: js.Function1[FilterEvent, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    disjunctiveTermAdded: FilterEvent => scala.Unit,
+    disjunctiveTermRemoved: FilterEvent => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    predicateExpressionChanged: FilterEvent => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XFilterControllerListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, disjunctiveTermAdded = disjunctiveTermAdded, disjunctiveTermRemoved = disjunctiveTermRemoved, disposing = disposing, predicateExpressionChanged = predicateExpressionChanged, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disjunctiveTermAdded = js.Any.fromFunction1(disjunctiveTermAdded), disjunctiveTermRemoved = js.Any.fromFunction1(disjunctiveTermRemoved), disposing = js.Any.fromFunction1(disposing), predicateExpressionChanged = js.Any.fromFunction1(predicateExpressionChanged), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XFilterControllerListener]
   }

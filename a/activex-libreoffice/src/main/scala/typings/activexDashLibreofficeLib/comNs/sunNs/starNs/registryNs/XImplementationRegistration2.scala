@@ -29,20 +29,16 @@ trait XImplementationRegistration2 extends XImplementationRegistration {
 object XImplementationRegistration2 {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    checkInstantiation: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[java.lang.String]],
-    getImplementations: js.Function2[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashInteropLib.SafeArray[java.lang.String]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerImplementation: js.Function3[java.lang.String, java.lang.String, XSimpleRegistry, scala.Unit],
-    registerImplementationWithLocation: js.Function4[java.lang.String, java.lang.String, java.lang.String, XSimpleRegistry, scala.Unit],
-    release: js.Function0[scala.Unit],
-    revokeImplementation: js.Function2[java.lang.String, XSimpleRegistry, scala.Boolean]
+    acquire: () => scala.Unit,
+    checkInstantiation: java.lang.String => stdLib.SafeArray[java.lang.String],
+    getImplementations: (java.lang.String, java.lang.String) => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerImplementation: (java.lang.String, java.lang.String, XSimpleRegistry) => scala.Unit,
+    registerImplementationWithLocation: (java.lang.String, java.lang.String, java.lang.String, XSimpleRegistry) => scala.Unit,
+    release: () => scala.Unit,
+    revokeImplementation: (java.lang.String, XSimpleRegistry) => scala.Boolean
   ): XImplementationRegistration2 = {
-    val __obj = js.Dynamic.literal(acquire = acquire, checkInstantiation = checkInstantiation, getImplementations = getImplementations, queryInterface = queryInterface, registerImplementation = registerImplementation, registerImplementationWithLocation = registerImplementationWithLocation, release = release, revokeImplementation = revokeImplementation)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), checkInstantiation = js.Any.fromFunction1(checkInstantiation), getImplementations = js.Any.fromFunction2(getImplementations), queryInterface = js.Any.fromFunction1(queryInterface), registerImplementation = js.Any.fromFunction3(registerImplementation), registerImplementationWithLocation = js.Any.fromFunction4(registerImplementationWithLocation), release = js.Any.fromFunction0(release), revokeImplementation = js.Any.fromFunction2(revokeImplementation))
   
     __obj.asInstanceOf[XImplementationRegistration2]
   }

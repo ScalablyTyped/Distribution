@@ -73,8 +73,8 @@ trait ASPxClientDiagramCoordinates extends js.Object {
 object ASPxClientDiagramCoordinates {
   @scala.inline
   def apply(
-    GetAxisValue: js.Function1[ASPxClientAxisBase, ASPxClientAxisValue],
-    IsEmpty: js.Function0[scala.Boolean],
+    GetAxisValue: ASPxClientAxisBase => ASPxClientAxisValue,
+    IsEmpty: () => scala.Boolean,
     argumentScaleType: java.lang.String,
     axisX: ASPxClientAxisBase,
     axisY: ASPxClientAxisBase,
@@ -86,7 +86,7 @@ object ASPxClientDiagramCoordinates {
     qualitativeArgument: java.lang.String,
     valueScaleType: java.lang.String
   ): ASPxClientDiagramCoordinates = {
-    val __obj = js.Dynamic.literal(GetAxisValue = GetAxisValue, IsEmpty = IsEmpty, argumentScaleType = argumentScaleType, axisX = axisX, axisY = axisY, dateTimeArgument = dateTimeArgument, dateTimeValue = dateTimeValue, numericalArgument = numericalArgument, numericalValue = numericalValue, pane = pane, qualitativeArgument = qualitativeArgument, valueScaleType = valueScaleType)
+    val __obj = js.Dynamic.literal(GetAxisValue = js.Any.fromFunction1(GetAxisValue), IsEmpty = js.Any.fromFunction0(IsEmpty), argumentScaleType = argumentScaleType, axisX = axisX, axisY = axisY, dateTimeArgument = dateTimeArgument, dateTimeValue = dateTimeValue, numericalArgument = numericalArgument, numericalValue = numericalValue, pane = pane, qualitativeArgument = qualitativeArgument, valueScaleType = valueScaleType)
   
     __obj.asInstanceOf[ASPxClientDiagramCoordinates]
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@uirouter/core/lib/common/coreservices", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val services: atUirouterCoreLib.libCommonCoreservicesMod.CoreServices = js.native
+  val services: CoreServices = js.native
   def makeStub[T](service: java.lang.String, methods: js.Array[java.lang.String]): T = js.native
 }
 

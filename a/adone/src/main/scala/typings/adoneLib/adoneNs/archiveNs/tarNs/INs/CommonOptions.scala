@@ -45,8 +45,8 @@ object CommonOptions {
   def apply(
     dmode: scala.Int | scala.Double = null,
     fmode: scala.Int | scala.Double = null,
-    ignore: js.Function1[/* name */ java.lang.String, scala.Boolean] = null,
-    map: js.Function1[/* header */ Header, js.UndefOr[Header]] = null,
+    ignore: /* name */ java.lang.String => scala.Boolean = null,
+    map: /* header */ Header => js.UndefOr[Header] = null,
     readable: js.UndefOr[scala.Boolean] = js.undefined,
     strip: scala.Int | scala.Double = null,
     umask: scala.Int | scala.Double = null,
@@ -55,8 +55,8 @@ object CommonOptions {
     val __obj = js.Dynamic.literal()
     if (dmode != null) __obj.updateDynamic("dmode")(dmode.asInstanceOf[js.Any])
     if (fmode != null) __obj.updateDynamic("fmode")(fmode.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
-    if (map != null) __obj.updateDynamic("map")(map)
+    if (ignore != null) __obj.updateDynamic("ignore")(js.Any.fromFunction1(ignore))
+    if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
     if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable)
     if (strip != null) __obj.updateDynamic("strip")(strip.asInstanceOf[js.Any])
     if (umask != null) __obj.updateDynamic("umask")(umask.asInstanceOf[js.Any])

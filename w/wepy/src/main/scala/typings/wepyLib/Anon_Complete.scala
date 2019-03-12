@@ -13,12 +13,8 @@ trait Anon_Complete[T] extends js.Object {
 
 object Anon_Complete {
   @scala.inline
-  def apply[T](
-    complete: js.Function0[scala.Unit],
-    fail: js.Function0[scala.Unit],
-    success: js.Function1[T, scala.Unit]
-  ): Anon_Complete[T] = {
-    val __obj = js.Dynamic.literal(complete = complete, fail = fail, success = success)
+  def apply[T](complete: () => scala.Unit, fail: () => scala.Unit, success: T => scala.Unit): Anon_Complete[T] = {
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), fail = js.Any.fromFunction0(fail), success = js.Any.fromFunction1(success))
   
     __obj.asInstanceOf[Anon_Complete[T]]
   }

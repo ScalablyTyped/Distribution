@@ -31,19 +31,13 @@ trait XQuery
 object XQuery {
   @scala.inline
   def apply(
-    IsInstalled: js.Function3[java.lang.String, java.lang.String, js.Array[scala.Boolean], scala.Unit],
-    SearchFile: js.Function4[
-      java.lang.String, 
-      java.lang.String, 
-      js.Array[scala.Boolean], 
-      js.Array[java.lang.String], 
-      scala.Unit
-    ],
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    IsInstalled: (java.lang.String, java.lang.String, js.Array[scala.Boolean]) => scala.Unit,
+    SearchFile: (java.lang.String, java.lang.String, js.Array[scala.Boolean], js.Array[java.lang.String]) => scala.Unit,
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XQuery = {
-    val __obj = js.Dynamic.literal(IsInstalled = IsInstalled, SearchFile = SearchFile, acquire = acquire, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(IsInstalled = js.Any.fromFunction3(IsInstalled), SearchFile = js.Any.fromFunction4(SearchFile), acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XQuery]
   }

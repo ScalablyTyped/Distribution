@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class LocalParticipant () extends Participant {
   @JSName("audioTracks")
-  var audioTracks_LocalParticipant: nodeLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, LocalAudioTrackPublication] = js.native
+  var audioTracks_LocalParticipant: stdLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, LocalAudioTrackPublication] = js.native
   @JSName("dataTracks")
-  var dataTracks_LocalParticipant: nodeLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, LocalDataTrackPublication] = js.native
+  var dataTracks_LocalParticipant: stdLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, LocalDataTrackPublication] = js.native
   @JSName("tracks")
-  var tracks_LocalParticipant: nodeLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, LocalTrackPublication] = js.native
+  var tracks_LocalParticipant: stdLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, LocalTrackPublication] = js.native
   @JSName("videoTracks")
-  var videoTracks_LocalParticipant: nodeLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, LocalVideoTrackPublication] = js.native
+  var videoTracks_LocalParticipant: stdLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, LocalVideoTrackPublication] = js.native
   def publishTrack(mediaStreamTrack: stdLib.MediaStreamTrack): js.Promise[LocalTrackPublication] = js.native
   def publishTrack(mediaStreamTrack: stdLib.MediaStreamTrack, options: LocalTrackOptions): js.Promise[LocalTrackPublication] = js.native
   def publishTrack(track: LocalTrack): js.Promise[LocalTrackPublication] = js.native

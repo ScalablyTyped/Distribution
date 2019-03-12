@@ -11,7 +11,7 @@ trait XFormulaParser extends js.Object {
   def parseFormula(
     aFormula: java.lang.String,
     aReferencePos: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress
-  ): activexDashInteropLib.SafeArray[FormulaToken]
+  ): stdLib.SafeArray[FormulaToken]
   /** converts a formula into a string. */
   def printFormula(
     aTokens: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[FormulaToken],
@@ -22,18 +22,10 @@ trait XFormulaParser extends js.Object {
 object XFormulaParser {
   @scala.inline
   def apply(
-    parseFormula: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
-      activexDashInteropLib.SafeArray[FormulaToken]
-    ],
-    printFormula: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[FormulaToken], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
-      java.lang.String
-    ]
+    parseFormula: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress) => stdLib.SafeArray[FormulaToken],
+    printFormula: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[FormulaToken], activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress) => java.lang.String
   ): XFormulaParser = {
-    val __obj = js.Dynamic.literal(parseFormula = parseFormula, printFormula = printFormula)
+    val __obj = js.Dynamic.literal(parseFormula = js.Any.fromFunction2(parseFormula), printFormula = js.Any.fromFunction2(printFormula))
   
     __obj.asInstanceOf[XFormulaParser]
   }

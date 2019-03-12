@@ -11,9 +11,9 @@ trait file extends js.Object {
 
 object file {
   @scala.inline
-  def apply(validate: js.Function0[scala.Boolean] = null): file = {
+  def apply(validate: () => scala.Boolean = null): file = {
     val __obj = js.Dynamic.literal()
-    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction0(validate))
     __obj.asInstanceOf[file]
   }
 }

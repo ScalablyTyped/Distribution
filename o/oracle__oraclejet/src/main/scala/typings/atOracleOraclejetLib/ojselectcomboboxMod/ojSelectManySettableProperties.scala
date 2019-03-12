@@ -52,10 +52,7 @@ object ojSelectManySettableProperties {
     translations: atOracleOraclejetLib.Anon_FilterFurtherMoreMatchesFound,
     valid: atOracleOraclejetLib.atOracleOraclejetLibStrings.valid | atOracleOraclejetLib.atOracleOraclejetLibStrings.pending | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidHidden | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidShown,
     describedBy: java.lang.String = null,
-    optionRenderer: js.Function1[
-      /* param0 */ atOracleOraclejetLib.ojselectcomboboxMod.ojSelectNs.OptionContext, 
-      stdLib.Element
-    ] = null,
+    optionRenderer: /* param0 */ atOracleOraclejetLib.ojselectcomboboxMod.ojSelectNs.OptionContext => stdLib.Element = null,
     options: (js.Array[
       atOracleOraclejetLib.ojselectcomboboxMod.ojSelectNs.Option | atOracleOraclejetLib.ojselectcomboboxMod.ojSelectNs.Optgroup
     ]) | (atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D]) = null,
@@ -65,7 +62,7 @@ object ojSelectManySettableProperties {
   ): ojSelectManySettableProperties[K, D] = {
     val __obj = js.Dynamic.literal(disabled = disabled, displayOptions = displayOptions, help = help, helpHints = helpHints, labelHint = labelHint, messagesCustom = messagesCustom, minimumResultsForSearch = minimumResultsForSearch, optionsKeys = optionsKeys, pickerAttributes = pickerAttributes, readOnly = readOnly, renderMode = renderMode.asInstanceOf[js.Any], required = required, translations = translations, valid = valid.asInstanceOf[js.Any])
     if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
-    if (optionRenderer != null) __obj.updateDynamic("optionRenderer")(optionRenderer)
+    if (optionRenderer != null) __obj.updateDynamic("optionRenderer")(js.Any.fromFunction1(optionRenderer))
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (value != null) __obj.updateDynamic("value")(value)

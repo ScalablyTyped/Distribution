@@ -20,20 +20,20 @@ class OAuth2 () extends js.Object {
   def authenticate(
     username: java.lang.String,
     password: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* tokenResponse */ TokenResponse, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* tokenResponse */ TokenResponse, scala.Unit]
   ): js.Promise[TokenResponse] = js.native
   def getAuthorizationUrl(params: jsforceLib.Anon_Scope): java.lang.String = js.native
   def refreshToken(code: java.lang.String): js.Promise[TokenResponse] = js.native
   def refreshToken(
     code: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* tokenResponse */ TokenResponse, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* tokenResponse */ TokenResponse, scala.Unit]
   ): js.Promise[TokenResponse] = js.native
   def requestToken(code: java.lang.String): js.Promise[TokenResponse] = js.native
   def requestToken(
     code: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* tokenResponse */ TokenResponse, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* tokenResponse */ TokenResponse, scala.Unit]
   ): js.Promise[TokenResponse] = js.native
   def revokeToken(accessToken: java.lang.String): js.Promise[js.UndefOr[scala.Nothing]] = js.native
-  def revokeToken(accessToken: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  def revokeToken(accessToken: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): js.Promise[js.UndefOr[scala.Nothing]] = js.native
 }
 

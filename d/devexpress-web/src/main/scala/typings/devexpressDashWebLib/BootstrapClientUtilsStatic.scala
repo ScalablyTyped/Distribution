@@ -11,8 +11,8 @@ trait BootstrapClientUtilsStatic extends js.Object {
 
 object BootstrapClientUtilsStatic {
   @scala.inline
-  def apply(UpdateDefaultStyles: js.Function0[scala.Unit]): BootstrapClientUtilsStatic = {
-    val __obj = js.Dynamic.literal(UpdateDefaultStyles = UpdateDefaultStyles)
+  def apply(UpdateDefaultStyles: () => scala.Unit): BootstrapClientUtilsStatic = {
+    val __obj = js.Dynamic.literal(UpdateDefaultStyles = js.Any.fromFunction0(UpdateDefaultStyles))
   
     __obj.asInstanceOf[BootstrapClientUtilsStatic]
   }

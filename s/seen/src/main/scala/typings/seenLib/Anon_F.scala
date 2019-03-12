@@ -12,8 +12,8 @@ trait Anon_F extends js.Object {
 
 object Anon_F {
   @scala.inline
-  def apply(f: js.Function1[js.Any, js.Any], v: js.Function1[js.Any, js.Any]): Anon_F = {
-    val __obj = js.Dynamic.literal(f = f, v = v)
+  def apply(f: js.Any => js.Any, v: js.Any => js.Any): Anon_F = {
+    val __obj = js.Dynamic.literal(f = js.Any.fromFunction1(f), v = js.Any.fromFunction1(v))
   
     __obj.asInstanceOf[Anon_F]
   }

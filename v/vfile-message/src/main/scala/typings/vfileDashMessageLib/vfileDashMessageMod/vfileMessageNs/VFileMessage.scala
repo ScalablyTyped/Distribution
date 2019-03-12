@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait VFileMessage
-  extends nodeLib.Error
+  extends stdLib.Error
      with /**
   * It’s OK to store custom data directly on the VMessage, some of those are handled by utilities.
   */
@@ -71,12 +71,12 @@ trait VFileMessage
   def apply(reason: java.lang.String, position: unistLib.unistMod.Point, origin: java.lang.String): VFileMessage = js.native
   def apply(reason: java.lang.String, position: unistLib.unistMod.Position): VFileMessage = js.native
   def apply(reason: java.lang.String, position: unistLib.unistMod.Position, origin: java.lang.String): VFileMessage = js.native
-  def apply(reason: nodeLib.Error): VFileMessage = js.native
-  def apply(reason: nodeLib.Error, position: unistLib.unistMod.Node): VFileMessage = js.native
-  def apply(reason: nodeLib.Error, position: unistLib.unistMod.Node, origin: java.lang.String): VFileMessage = js.native
-  def apply(reason: nodeLib.Error, position: unistLib.unistMod.Point): VFileMessage = js.native
-  def apply(reason: nodeLib.Error, position: unistLib.unistMod.Point, origin: java.lang.String): VFileMessage = js.native
-  def apply(reason: nodeLib.Error, position: unistLib.unistMod.Position): VFileMessage = js.native
-  def apply(reason: nodeLib.Error, position: unistLib.unistMod.Position, origin: java.lang.String): VFileMessage = js.native
+  def apply(reason: stdLib.Error): VFileMessage = js.native
+  def apply(reason: stdLib.Error, position: unistLib.unistMod.Node): VFileMessage = js.native
+  def apply(reason: stdLib.Error, position: unistLib.unistMod.Node, origin: java.lang.String): VFileMessage = js.native
+  def apply(reason: stdLib.Error, position: unistLib.unistMod.Point): VFileMessage = js.native
+  def apply(reason: stdLib.Error, position: unistLib.unistMod.Point, origin: java.lang.String): VFileMessage = js.native
+  def apply(reason: stdLib.Error, position: unistLib.unistMod.Position): VFileMessage = js.native
+  def apply(reason: stdLib.Error, position: unistLib.unistMod.Position, origin: java.lang.String): VFileMessage = js.native
 }
 

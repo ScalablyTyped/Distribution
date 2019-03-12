@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
   */
 trait ProofreadingResult extends js.Object {
   var aDocumentIdentifier: java.lang.String
-  var aErrors: activexDashInteropLib.SafeArray[SingleProofreadingError]
+  var aErrors: stdLib.SafeArray[SingleProofreadingError]
   var aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale
-  var aProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  var aProperties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   var aText: java.lang.String
   var nBehindEndOfSentencePosition: scala.Double
   var nStartOfNextSentencePosition: scala.Double
@@ -26,9 +26,9 @@ object ProofreadingResult {
   @scala.inline
   def apply(
     aDocumentIdentifier: java.lang.String,
-    aErrors: activexDashInteropLib.SafeArray[SingleProofreadingError],
+    aErrors: stdLib.SafeArray[SingleProofreadingError],
     aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
-    aProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    aProperties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     aText: java.lang.String,
     nBehindEndOfSentencePosition: scala.Double,
     nStartOfNextSentencePosition: scala.Double,

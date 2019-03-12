@@ -1,5 +1,5 @@
 ```
-// Type definitions for @storybook/addon-a11y 3.3
+// Type definitions for @storybook/addon-a11y 5.0
 // Project: https://github.com/storybooks/storybook
 // Definitions by: HyunSeob <https://github.com/hyunseob>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

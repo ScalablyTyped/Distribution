@@ -39,19 +39,16 @@ object XScenario {
   def apply(
     IsScenario: scala.Boolean,
     ScenarioComment: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    addRanges: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress], 
-      scala.Unit
-    ],
-    apply: js.Function0[scala.Unit],
-    getIsScenario: js.Function0[scala.Boolean],
-    getScenarioComment: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setScenarioComment: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    addRanges: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress] => scala.Unit,
+    apply: () => scala.Unit,
+    getIsScenario: () => scala.Boolean,
+    getScenarioComment: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setScenarioComment: java.lang.String => scala.Unit
   ): XScenario = {
-    val __obj = js.Dynamic.literal(IsScenario = IsScenario, ScenarioComment = ScenarioComment, acquire = acquire, addRanges = addRanges, apply = apply, getIsScenario = getIsScenario, getScenarioComment = getScenarioComment, queryInterface = queryInterface, release = release, setScenarioComment = setScenarioComment)
+    val __obj = js.Dynamic.literal(IsScenario = IsScenario, ScenarioComment = ScenarioComment, acquire = js.Any.fromFunction0(acquire), addRanges = js.Any.fromFunction1(addRanges), apply = js.Any.fromFunction0(apply), getIsScenario = js.Any.fromFunction0(getIsScenario), getScenarioComment = js.Any.fromFunction0(getScenarioComment), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setScenarioComment = js.Any.fromFunction1(setScenarioComment))
   
     __obj.asInstanceOf[XScenario]
   }

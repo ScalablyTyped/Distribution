@@ -11,8 +11,8 @@ trait UICollection extends js.Object {
 
 object UICollection {
   @scala.inline
-  def apply(destroy: js.Function0[scala.Unit]): UICollection = {
-    val __obj = js.Dynamic.literal(destroy = destroy)
+  def apply(destroy: () => scala.Unit): UICollection = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
   
     __obj.asInstanceOf[UICollection]
   }

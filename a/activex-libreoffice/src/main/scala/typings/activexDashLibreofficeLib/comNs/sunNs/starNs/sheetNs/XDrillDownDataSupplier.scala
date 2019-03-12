@@ -23,21 +23,18 @@ trait XDrillDownDataSupplier
     * @see com.sun.star.sheet.DataPilotFieldFilter
     * @see com.sun.star.sheet.XDataPilotTable2
     */
-  def getDrillDownData(aFilters: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataPilotFieldFilter]): activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]
+  def getDrillDownData(aFilters: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataPilotFieldFilter]): stdLib.SafeArray[stdLib.SafeArray[_]]
 }
 
 object XDrillDownDataSupplier {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getDrillDownData: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataPilotFieldFilter], 
-      activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDrillDownData: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataPilotFieldFilter] => stdLib.SafeArray[stdLib.SafeArray[_]],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDrillDownDataSupplier = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getDrillDownData = getDrillDownData, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDrillDownData = js.Any.fromFunction1(getDrillDownData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDrillDownDataSupplier]
   }

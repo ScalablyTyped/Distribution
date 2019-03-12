@@ -52,16 +52,16 @@ trait DragLayerMonitor extends js.Object {
 object DragLayerMonitor {
   @scala.inline
   def apply(
-    getClientOffset: js.Function0[dndDashCoreLib.libCjsInterfacesMod.XYCoord | scala.Null],
-    getDifferenceFromInitialOffset: js.Function0[dndDashCoreLib.libCjsInterfacesMod.XYCoord | scala.Null],
-    getInitialClientOffset: js.Function0[dndDashCoreLib.libCjsInterfacesMod.XYCoord | scala.Null],
-    getInitialSourceClientOffset: js.Function0[dndDashCoreLib.libCjsInterfacesMod.XYCoord | scala.Null],
-    getItem: js.Function0[js.Any],
-    getItemType: js.Function0[dndDashCoreLib.libCjsInterfacesMod.Identifier | scala.Null],
-    getSourceClientOffset: js.Function0[dndDashCoreLib.libCjsInterfacesMod.XYCoord | scala.Null],
-    isDragging: js.Function0[scala.Boolean]
+    getClientOffset: () => dndDashCoreLib.libCjsInterfacesMod.XYCoord | scala.Null,
+    getDifferenceFromInitialOffset: () => dndDashCoreLib.libCjsInterfacesMod.XYCoord | scala.Null,
+    getInitialClientOffset: () => dndDashCoreLib.libCjsInterfacesMod.XYCoord | scala.Null,
+    getInitialSourceClientOffset: () => dndDashCoreLib.libCjsInterfacesMod.XYCoord | scala.Null,
+    getItem: () => js.Any,
+    getItemType: () => dndDashCoreLib.libCjsInterfacesMod.Identifier | scala.Null,
+    getSourceClientOffset: () => dndDashCoreLib.libCjsInterfacesMod.XYCoord | scala.Null,
+    isDragging: () => scala.Boolean
   ): DragLayerMonitor = {
-    val __obj = js.Dynamic.literal(getClientOffset = getClientOffset, getDifferenceFromInitialOffset = getDifferenceFromInitialOffset, getInitialClientOffset = getInitialClientOffset, getInitialSourceClientOffset = getInitialSourceClientOffset, getItem = getItem, getItemType = getItemType, getSourceClientOffset = getSourceClientOffset, isDragging = isDragging)
+    val __obj = js.Dynamic.literal(getClientOffset = js.Any.fromFunction0(getClientOffset), getDifferenceFromInitialOffset = js.Any.fromFunction0(getDifferenceFromInitialOffset), getInitialClientOffset = js.Any.fromFunction0(getInitialClientOffset), getInitialSourceClientOffset = js.Any.fromFunction0(getInitialSourceClientOffset), getItem = js.Any.fromFunction0(getItem), getItemType = js.Any.fromFunction0(getItemType), getSourceClientOffset = js.Any.fromFunction0(getSourceClientOffset), isDragging = js.Any.fromFunction0(isDragging))
   
     __obj.asInstanceOf[DragLayerMonitor]
   }

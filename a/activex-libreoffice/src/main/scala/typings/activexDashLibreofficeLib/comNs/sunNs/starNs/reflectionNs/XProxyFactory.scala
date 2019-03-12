@@ -23,15 +23,12 @@ trait XProxyFactory
 object XProxyFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createProxy: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XAggregation
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createProxy: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XAggregation,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XProxyFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createProxy = createProxy, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createProxy = js.Any.fromFunction1(createProxy), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XProxyFactory]
   }

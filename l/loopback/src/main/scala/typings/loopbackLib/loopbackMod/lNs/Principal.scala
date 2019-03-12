@@ -25,8 +25,8 @@ trait Principal extends js.Object {
 
 object Principal {
   @scala.inline
-  def apply(equals: js.Function1[js.Any, scala.Unit]): Principal = {
-    val __obj = js.Dynamic.literal(equals = equals)
+  def apply(equals: js.Any => scala.Unit): Principal = {
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals))
   
     __obj.asInstanceOf[Principal]
   }

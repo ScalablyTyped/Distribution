@@ -53,12 +53,12 @@ object DatasetConfiguration {
     constructor: js.Function,
     dataWorkspaceId: java.lang.String,
     dataset: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     name: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     whereConditions: js.Array[WhereCondition]
   ): DatasetConfiguration = {
-    val __obj = js.Dynamic.literal(changeCondition = changeCondition, changeFields = changeFields, constructor = constructor, dataWorkspaceId = dataWorkspaceId, dataset = dataset, hasOwnProperty = hasOwnProperty, name = name, propertyIsEnumerable = propertyIsEnumerable, whereConditions = whereConditions)
+    val __obj = js.Dynamic.literal(changeCondition = changeCondition, changeFields = changeFields, constructor = constructor, dataWorkspaceId = dataWorkspaceId, dataset = dataset, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), whereConditions = whereConditions)
   
     __obj.asInstanceOf[DatasetConfiguration]
   }

@@ -12,8 +12,8 @@ trait UrlUtil extends js.Object {
 
 object UrlUtil {
   @scala.inline
-  def apply(makeAbsolute: js.Function1[java.lang.String, java.lang.String]): UrlUtil = {
-    val __obj = js.Dynamic.literal(makeAbsolute = makeAbsolute)
+  def apply(makeAbsolute: java.lang.String => java.lang.String): UrlUtil = {
+    val __obj = js.Dynamic.literal(makeAbsolute = js.Any.fromFunction1(makeAbsolute))
   
     __obj.asInstanceOf[UrlUtil]
   }

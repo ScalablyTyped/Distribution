@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("nodeunit", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var testCase: nodeunitLib.nodeunitMod.ITestCase = js.native
+  var testCase: ITestCase = js.native
 }
 

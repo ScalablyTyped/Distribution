@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DomainParameters
   extends xmlDashCoreLib.xmlDashCoreMod.XmlObject {
-  var NamedCurve: NamedCurve = js.native
+  var NamedCurve: xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.NamedCurve = js.native
 }
 

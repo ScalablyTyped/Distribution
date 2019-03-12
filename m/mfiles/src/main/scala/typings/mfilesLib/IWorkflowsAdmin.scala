@@ -15,12 +15,12 @@ trait IWorkflowsAdmin extends js.Object {
 object IWorkflowsAdmin {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IWorkflowAdmin, scala.Unit],
+    Add: (scala.Double, IWorkflowAdmin) => scala.Unit,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IWorkflowAdmin],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => IWorkflowAdmin,
+    Remove: scala.Double => scala.Unit
   ): IWorkflowsAdmin = {
-    val __obj = js.Dynamic.literal(Add = Add, Count = Count, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IWorkflowsAdmin]
   }

@@ -14,14 +14,14 @@ trait LayersControlEvents extends js.Object {
 object LayersControlEvents {
   @scala.inline
   def apply(
-    onbaselayerchange: js.Function1[/* event */ leafletLib.leafletMod.LayersControlEvent, scala.Unit] = null,
-    onoverlayadd: js.Function1[/* event */ leafletLib.leafletMod.LayersControlEvent, scala.Unit] = null,
-    onoverlayremove: js.Function1[/* event */ leafletLib.leafletMod.LayersControlEvent, scala.Unit] = null
+    onbaselayerchange: /* event */ leafletLib.leafletMod.LayersControlEvent => scala.Unit = null,
+    onoverlayadd: /* event */ leafletLib.leafletMod.LayersControlEvent => scala.Unit = null,
+    onoverlayremove: /* event */ leafletLib.leafletMod.LayersControlEvent => scala.Unit = null
   ): LayersControlEvents = {
     val __obj = js.Dynamic.literal()
-    if (onbaselayerchange != null) __obj.updateDynamic("onbaselayerchange")(onbaselayerchange)
-    if (onoverlayadd != null) __obj.updateDynamic("onoverlayadd")(onoverlayadd)
-    if (onoverlayremove != null) __obj.updateDynamic("onoverlayremove")(onoverlayremove)
+    if (onbaselayerchange != null) __obj.updateDynamic("onbaselayerchange")(js.Any.fromFunction1(onbaselayerchange))
+    if (onoverlayadd != null) __obj.updateDynamic("onoverlayadd")(js.Any.fromFunction1(onoverlayadd))
+    if (onoverlayremove != null) __obj.updateDynamic("onoverlayremove")(js.Any.fromFunction1(onoverlayremove))
     __obj.asInstanceOf[LayersControlEvents]
   }
 }

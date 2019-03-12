@@ -11,6 +11,6 @@ object ^ extends js.Object {
   def htmlAstToRender3Ast(
     htmlNodes: js.Array[atAngularCompilerLib.srcMlUnderscoreParserAstMod.Node],
     bindingParser: atAngularCompilerLib.srcTemplateUnderscoreParserBindingUnderscoreParserMod.BindingParser
-  ): atAngularCompilerLib.srcRender3R3UnderscoreTemplateUnderscoreTransformMod.Render3ParseResult = js.native
+  ): Render3ParseResult = js.native
 }
 

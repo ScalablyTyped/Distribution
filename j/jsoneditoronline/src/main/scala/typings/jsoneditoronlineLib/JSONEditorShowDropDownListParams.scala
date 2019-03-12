@@ -19,7 +19,7 @@ trait JSONEditorShowDropDownListParams extends js.Object {
 object JSONEditorShowDropDownListParams {
   @scala.inline
   def apply(
-    callback: js.Function1[js.Any, scala.Unit],
+    callback: js.Any => scala.Unit,
     node: JSONEditorNode,
     optionClassName: java.lang.String,
     optionSelectedClassName: java.lang.String,
@@ -28,7 +28,7 @@ object JSONEditorShowDropDownListParams {
     x: scala.Double,
     y: scala.Double
   ): JSONEditorShowDropDownListParams = {
-    val __obj = js.Dynamic.literal(callback = callback, node = node, optionClassName = optionClassName, optionSelectedClassName = optionSelectedClassName, value = value, values = values, x = x, y = y)
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), node = node, optionClassName = optionClassName, optionSelectedClassName = optionSelectedClassName, value = value, values = values, x = x, y = y)
   
     __obj.asInstanceOf[JSONEditorShowDropDownListParams]
   }

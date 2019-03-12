@@ -26,8 +26,8 @@ object TransitionProps {
     component: java.lang.String | scala.Boolean | reactLib.reactMod.ReactNs.ReactElement[_] = null,
     enter: reactDashMotionLib.reactDashMotionMod.Style = null,
     leave: reactDashMotionLib.reactDashMotionMod.Style = null,
-    onEnter: js.Function1[/* style */ reactDashMotionLib.reactDashMotionMod.PlainStyle, scala.Unit] = null,
-    onLeave: js.Function1[/* style */ reactDashMotionLib.reactDashMotionMod.Style, scala.Unit] = null,
+    onEnter: /* style */ reactDashMotionLib.reactDashMotionMod.PlainStyle => scala.Unit = null,
+    onLeave: /* style */ reactDashMotionLib.reactDashMotionMod.Style => scala.Unit = null,
     runOnMount: js.UndefOr[scala.Boolean] = js.undefined
   ): TransitionProps = {
     val __obj = js.Dynamic.literal()
@@ -35,8 +35,8 @@ object TransitionProps {
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (enter != null) __obj.updateDynamic("enter")(enter)
     if (leave != null) __obj.updateDynamic("leave")(leave)
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
-    if (onLeave != null) __obj.updateDynamic("onLeave")(onLeave)
+    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1(onEnter))
+    if (onLeave != null) __obj.updateDynamic("onLeave")(js.Any.fromFunction1(onLeave))
     if (!js.isUndefined(runOnMount)) __obj.updateDynamic("runOnMount")(runOnMount)
     __obj.asInstanceOf[TransitionProps]
   }

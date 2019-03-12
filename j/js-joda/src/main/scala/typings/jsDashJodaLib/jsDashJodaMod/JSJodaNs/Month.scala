@@ -23,24 +23,24 @@ trait Month extends TemporalAccessor {
 object Month {
   @scala.inline
   def apply(
-    adjustInto: js.Function1[Temporal, Temporal],
-    firstDayOfYear: js.Function1[scala.Boolean, scala.Double],
-    firstMonthOfQuarter: js.Function0[Month],
-    get: js.Function1[TemporalField, scala.Double],
-    getDisplayName: js.Function2[TextStyle, Locale, java.lang.String],
-    getLong: js.Function1[TemporalField, scala.Double],
-    isSupported: js.Function1[TemporalField, scala.Boolean],
-    length: js.Function1[scala.Boolean, scala.Double],
-    maxLength: js.Function0[scala.Double],
-    minLength: js.Function0[scala.Double],
-    minus: js.Function1[scala.Double, Month],
-    plus: js.Function1[scala.Double, Month],
-    query: js.Function1[TemporalQuery, js.Any],
-    range: js.Function1[TemporalField, ValueRange],
-    toString: js.Function0[java.lang.String],
-    value: js.Function0[scala.Double]
+    adjustInto: Temporal => Temporal,
+    firstDayOfYear: scala.Boolean => scala.Double,
+    firstMonthOfQuarter: () => Month,
+    get: TemporalField => scala.Double,
+    getDisplayName: (TextStyle, Locale) => java.lang.String,
+    getLong: TemporalField => scala.Double,
+    isSupported: TemporalField => scala.Boolean,
+    length: scala.Boolean => scala.Double,
+    maxLength: () => scala.Double,
+    minLength: () => scala.Double,
+    minus: scala.Double => Month,
+    plus: scala.Double => Month,
+    query: TemporalQuery => js.Any,
+    range: TemporalField => ValueRange,
+    toString: () => java.lang.String,
+    value: () => scala.Double
   ): Month = {
-    val __obj = js.Dynamic.literal(adjustInto = adjustInto, firstDayOfYear = firstDayOfYear, firstMonthOfQuarter = firstMonthOfQuarter, get = get, getDisplayName = getDisplayName, getLong = getLong, isSupported = isSupported, length = length, maxLength = maxLength, minLength = minLength, minus = minus, plus = plus, query = query, range = range, toString = toString, value = value)
+    val __obj = js.Dynamic.literal(adjustInto = js.Any.fromFunction1(adjustInto), firstDayOfYear = js.Any.fromFunction1(firstDayOfYear), firstMonthOfQuarter = js.Any.fromFunction0(firstMonthOfQuarter), get = js.Any.fromFunction1(get), getDisplayName = js.Any.fromFunction2(getDisplayName), getLong = js.Any.fromFunction1(getLong), isSupported = js.Any.fromFunction1(isSupported), length = js.Any.fromFunction1(length), maxLength = js.Any.fromFunction0(maxLength), minLength = js.Any.fromFunction0(minLength), minus = js.Any.fromFunction1(minus), plus = js.Any.fromFunction1(plus), query = js.Any.fromFunction1(query), range = js.Any.fromFunction1(range), toString = js.Any.fromFunction0(toString), value = js.Any.fromFunction0(value))
   
     __obj.asInstanceOf[Month]
   }

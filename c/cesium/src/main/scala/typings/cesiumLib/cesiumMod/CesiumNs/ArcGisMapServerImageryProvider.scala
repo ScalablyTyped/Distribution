@@ -23,28 +23,16 @@ object ArcGisMapServerImageryProvider {
     defaultMinificationFilter: js.Any,
     defaultSaturation: scala.Double,
     errorEvent: Event,
-    getTileCredits: js.Function3[scala.Double, scala.Double, scala.Double, js.Array[Credit]],
+    getTileCredits: (scala.Double, scala.Double, scala.Double) => js.Array[Credit],
     hasAlphaChannel: scala.Boolean,
     maximumLevel: scala.Double,
     minimumLevel: scala.Double,
-    pickFeatures: js.Function5[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      js.Promise[js.Array[ImageryLayerFeatureInfo]]
-    ],
+    pickFeatures: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => js.Promise[js.Array[ImageryLayerFeatureInfo]],
     proxy: Proxy,
     ready: scala.Boolean,
     readyPromise: js.Promise[scala.Boolean],
     rectangle: Rectangle,
-    requestImage: js.Function3[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      js.Promise[stdLib.HTMLImageElement | stdLib.HTMLCanvasElement]
-    ],
+    requestImage: (scala.Double, scala.Double, scala.Double) => js.Promise[stdLib.HTMLImageElement | stdLib.HTMLCanvasElement],
     tileDiscardPolicy: TileDiscardPolicy,
     tileHeight: scala.Double,
     tileWidth: scala.Double,
@@ -52,7 +40,7 @@ object ArcGisMapServerImageryProvider {
     url: java.lang.String,
     usingPrecachedTiles: scala.Boolean
   ): ArcGisMapServerImageryProvider = {
-    val __obj = js.Dynamic.literal(credit = credit, defaultAlpha = defaultAlpha, defaultBrightness = defaultBrightness, defaultContrast = defaultContrast, defaultGamma = defaultGamma, defaultHue = defaultHue, defaultMagnificationFilter = defaultMagnificationFilter, defaultMinificationFilter = defaultMinificationFilter, defaultSaturation = defaultSaturation, errorEvent = errorEvent, getTileCredits = getTileCredits, hasAlphaChannel = hasAlphaChannel, maximumLevel = maximumLevel, minimumLevel = minimumLevel, pickFeatures = pickFeatures, proxy = proxy, ready = ready, readyPromise = readyPromise, rectangle = rectangle, requestImage = requestImage, tileDiscardPolicy = tileDiscardPolicy, tileHeight = tileHeight, tileWidth = tileWidth, tilingScheme = tilingScheme, url = url, usingPrecachedTiles = usingPrecachedTiles)
+    val __obj = js.Dynamic.literal(credit = credit, defaultAlpha = defaultAlpha, defaultBrightness = defaultBrightness, defaultContrast = defaultContrast, defaultGamma = defaultGamma, defaultHue = defaultHue, defaultMagnificationFilter = defaultMagnificationFilter, defaultMinificationFilter = defaultMinificationFilter, defaultSaturation = defaultSaturation, errorEvent = errorEvent, getTileCredits = js.Any.fromFunction3(getTileCredits), hasAlphaChannel = hasAlphaChannel, maximumLevel = maximumLevel, minimumLevel = minimumLevel, pickFeatures = js.Any.fromFunction5(pickFeatures), proxy = proxy, ready = ready, readyPromise = readyPromise, rectangle = rectangle, requestImage = js.Any.fromFunction3(requestImage), tileDiscardPolicy = tileDiscardPolicy, tileHeight = tileHeight, tileWidth = tileWidth, tilingScheme = tilingScheme, url = url, usingPrecachedTiles = usingPrecachedTiles)
   
     __obj.asInstanceOf[ArcGisMapServerImageryProvider]
   }

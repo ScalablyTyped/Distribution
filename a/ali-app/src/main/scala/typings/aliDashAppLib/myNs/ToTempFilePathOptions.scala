@@ -31,14 +31,14 @@ object ToTempFilePathOptions {
     width: scala.Double,
     x: scala.Double,
     y: scala.Double,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
-    success: js.Function1[js.Any, scala.Unit] = null
+    complete: /* res */ js.Any => scala.Unit = null,
+    fail: js.Any => scala.Unit = null,
+    success: js.Any => scala.Unit = null
   ): ToTempFilePathOptions = {
     val __obj = js.Dynamic.literal(destHeight = destHeight, destWidth = destWidth, height = height, width = width, x = x, y = y)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ToTempFilePathOptions]
   }
 }

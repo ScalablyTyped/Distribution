@@ -124,44 +124,32 @@ trait _Impl extends js.Object {
 object _Impl {
   @scala.inline
   def apply(
-    beforeChecked: js.Function1[
-      stdLib.HTMLInputElement, 
-      scala.Unit | semanticDashUiDashCheckboxLib.semanticDashUiDashCheckboxLibNumbers.`false`
-    ],
-    beforeDeterminate: js.Function1[
-      stdLib.HTMLInputElement, 
-      scala.Unit | semanticDashUiDashCheckboxLib.semanticDashUiDashCheckboxLibNumbers.`false`
-    ],
-    beforeIndeterminate: js.Function1[
-      stdLib.HTMLInputElement, 
-      scala.Unit | semanticDashUiDashCheckboxLib.semanticDashUiDashCheckboxLibNumbers.`false`
-    ],
-    beforeUnchecked: js.Function1[
-      stdLib.HTMLInputElement, 
-      scala.Unit | semanticDashUiDashCheckboxLib.semanticDashUiDashCheckboxLibNumbers.`false`
-    ],
+    beforeChecked: stdLib.HTMLInputElement => scala.Unit | semanticDashUiDashCheckboxLib.semanticDashUiDashCheckboxLibNumbers.`false`,
+    beforeDeterminate: stdLib.HTMLInputElement => scala.Unit | semanticDashUiDashCheckboxLib.semanticDashUiDashCheckboxLibNumbers.`false`,
+    beforeIndeterminate: stdLib.HTMLInputElement => scala.Unit | semanticDashUiDashCheckboxLib.semanticDashUiDashCheckboxLibNumbers.`false`,
+    beforeUnchecked: stdLib.HTMLInputElement => scala.Unit | semanticDashUiDashCheckboxLib.semanticDashUiDashCheckboxLibNumbers.`false`,
     className: semanticDashUiDashCheckboxLib.SemanticUINs.CheckboxNs.ClassNameSettings,
     debug: scala.Boolean,
     error: semanticDashUiDashCheckboxLib.SemanticUINs.CheckboxNs.ErrorSettings,
     fireOnInit: scala.Boolean,
     name: java.lang.String,
     namespace: java.lang.String,
-    onChange: js.Function1[stdLib.HTMLInputElement, scala.Unit],
-    onChecked: js.Function1[stdLib.HTMLInputElement, scala.Unit],
-    onDeterminate: js.Function1[stdLib.HTMLInputElement, scala.Unit],
-    onDisable: js.Function1[stdLib.HTMLInputElement, scala.Unit],
-    onDisabled: js.Function1[stdLib.HTMLInputElement, scala.Unit],
-    onEnable: js.Function1[stdLib.HTMLInputElement, scala.Unit],
-    onEnabled: js.Function1[stdLib.HTMLInputElement, scala.Unit],
-    onIndeterminate: js.Function1[stdLib.HTMLInputElement, scala.Unit],
-    onUnchecked: js.Function1[stdLib.HTMLInputElement, scala.Unit],
+    onChange: stdLib.HTMLInputElement => scala.Unit,
+    onChecked: stdLib.HTMLInputElement => scala.Unit,
+    onDeterminate: stdLib.HTMLInputElement => scala.Unit,
+    onDisable: stdLib.HTMLInputElement => scala.Unit,
+    onDisabled: stdLib.HTMLInputElement => scala.Unit,
+    onEnable: stdLib.HTMLInputElement => scala.Unit,
+    onEnabled: stdLib.HTMLInputElement => scala.Unit,
+    onIndeterminate: stdLib.HTMLInputElement => scala.Unit,
+    onUnchecked: stdLib.HTMLInputElement => scala.Unit,
     performance: scala.Boolean,
     selector: semanticDashUiDashCheckboxLib.SemanticUINs.CheckboxNs.SelectorSettings,
     silent: scala.Boolean,
     uncheckable: semanticDashUiDashCheckboxLib.semanticDashUiDashCheckboxLibStrings.auto | scala.Boolean,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(beforeChecked = beforeChecked, beforeDeterminate = beforeDeterminate, beforeIndeterminate = beforeIndeterminate, beforeUnchecked = beforeUnchecked, className = className.asInstanceOf[js.Any], debug = debug, error = error, fireOnInit = fireOnInit, name = name, namespace = namespace, onChange = onChange, onChecked = onChecked, onDeterminate = onDeterminate, onDisable = onDisable, onDisabled = onDisabled, onEnable = onEnable, onEnabled = onEnabled, onIndeterminate = onIndeterminate, onUnchecked = onUnchecked, performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, uncheckable = uncheckable.asInstanceOf[js.Any], verbose = verbose)
+    val __obj = js.Dynamic.literal(beforeChecked = js.Any.fromFunction1(beforeChecked), beforeDeterminate = js.Any.fromFunction1(beforeDeterminate), beforeIndeterminate = js.Any.fromFunction1(beforeIndeterminate), beforeUnchecked = js.Any.fromFunction1(beforeUnchecked), className = className.asInstanceOf[js.Any], debug = debug, error = error, fireOnInit = fireOnInit, name = name, namespace = namespace, onChange = js.Any.fromFunction1(onChange), onChecked = js.Any.fromFunction1(onChecked), onDeterminate = js.Any.fromFunction1(onDeterminate), onDisable = js.Any.fromFunction1(onDisable), onDisabled = js.Any.fromFunction1(onDisabled), onEnable = js.Any.fromFunction1(onEnable), onEnabled = js.Any.fromFunction1(onEnabled), onIndeterminate = js.Any.fromFunction1(onIndeterminate), onUnchecked = js.Any.fromFunction1(onUnchecked), performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, uncheckable = uncheckable.asInstanceOf[js.Any], verbose = verbose)
   
     __obj.asInstanceOf[_Impl]
   }

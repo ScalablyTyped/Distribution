@@ -23,19 +23,19 @@ trait IframeControl
 object IframeControl {
   @scala.inline
   def apply(
-    getControlType: js.Function0[ControlType | java.lang.String],
-    getInitialUrl: js.Function0[java.lang.String],
-    getLabel: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getObject: js.Function0[stdLib.HTMLIFrameElement],
-    getParent: js.Function0[Section],
-    getSrc: js.Function0[java.lang.String],
-    getVisible: js.Function0[scala.Boolean],
-    setLabel: js.Function1[java.lang.String, scala.Unit],
-    setSrc: js.Function1[java.lang.String, scala.Unit],
-    setVisible: js.Function1[scala.Boolean, scala.Unit]
+    getControlType: () => ControlType | java.lang.String,
+    getInitialUrl: () => java.lang.String,
+    getLabel: () => java.lang.String,
+    getName: () => java.lang.String,
+    getObject: () => stdLib.HTMLIFrameElement,
+    getParent: () => Section,
+    getSrc: () => java.lang.String,
+    getVisible: () => scala.Boolean,
+    setLabel: java.lang.String => scala.Unit,
+    setSrc: java.lang.String => scala.Unit,
+    setVisible: scala.Boolean => scala.Unit
   ): IframeControl = {
-    val __obj = js.Dynamic.literal(getControlType = getControlType, getInitialUrl = getInitialUrl, getLabel = getLabel, getName = getName, getObject = getObject, getParent = getParent, getSrc = getSrc, getVisible = getVisible, setLabel = setLabel, setSrc = setSrc, setVisible = setVisible)
+    val __obj = js.Dynamic.literal(getControlType = js.Any.fromFunction0(getControlType), getInitialUrl = js.Any.fromFunction0(getInitialUrl), getLabel = js.Any.fromFunction0(getLabel), getName = js.Any.fromFunction0(getName), getObject = js.Any.fromFunction0(getObject), getParent = js.Any.fromFunction0(getParent), getSrc = js.Any.fromFunction0(getSrc), getVisible = js.Any.fromFunction0(getVisible), setLabel = js.Any.fromFunction1(setLabel), setSrc = js.Any.fromFunction1(setSrc), setVisible = js.Any.fromFunction1(setVisible))
   
     __obj.asInstanceOf[IframeControl]
   }

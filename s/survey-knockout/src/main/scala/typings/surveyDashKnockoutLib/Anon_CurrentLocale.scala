@@ -24,13 +24,13 @@ object Anon_CurrentLocale {
     currentLocaleValue: java.lang.String,
     defaultLocale: java.lang.String,
     defaultLocaleValue: java.lang.String,
-    getLocales: js.Function0[js.Array[java.lang.String]],
-    getString: js.Function1[java.lang.String, js.Any],
+    getLocales: () => js.Array[java.lang.String],
+    getString: java.lang.String => js.Any,
     localeNames: org.scalablytyped.runtime.StringDictionary[js.Any],
     locales: org.scalablytyped.runtime.StringDictionary[js.Any],
     supportedLocales: js.Array[_]
   ): Anon_CurrentLocale = {
-    val __obj = js.Dynamic.literal(currentLocale = currentLocale, currentLocaleValue = currentLocaleValue, defaultLocale = defaultLocale, defaultLocaleValue = defaultLocaleValue, getLocales = getLocales, getString = getString, localeNames = localeNames, locales = locales, supportedLocales = supportedLocales)
+    val __obj = js.Dynamic.literal(currentLocale = currentLocale, currentLocaleValue = currentLocaleValue, defaultLocale = defaultLocale, defaultLocaleValue = defaultLocaleValue, getLocales = js.Any.fromFunction0(getLocales), getString = js.Any.fromFunction1(getString), localeNames = localeNames, locales = locales, supportedLocales = supportedLocales)
   
     __obj.asInstanceOf[Anon_CurrentLocale]
   }

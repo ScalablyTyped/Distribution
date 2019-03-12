@@ -19,17 +19,17 @@ object Anon_IsPrivate {
   def apply(
     url: java.lang.String,
     isPrivate: js.UndefOr[scala.Boolean] = js.undefined,
-    onActivate: js.Function1[/* window */ jpmLib.FFAddonSDKNs.BrowserWindow, _] = null,
-    onClose: js.Function1[/* window */ jpmLib.FFAddonSDKNs.BrowserWindow, _] = null,
-    onDeactivate: js.Function1[/* window */ jpmLib.FFAddonSDKNs.BrowserWindow, _] = null,
-    onOpen: js.Function1[/* window */ jpmLib.FFAddonSDKNs.BrowserWindow, _] = null
+    onActivate: /* window */ jpmLib.FFAddonSDKNs.BrowserWindow => _ = null,
+    onClose: /* window */ jpmLib.FFAddonSDKNs.BrowserWindow => _ = null,
+    onDeactivate: /* window */ jpmLib.FFAddonSDKNs.BrowserWindow => _ = null,
+    onOpen: /* window */ jpmLib.FFAddonSDKNs.BrowserWindow => _ = null
   ): Anon_IsPrivate = {
     val __obj = js.Dynamic.literal(url = url)
     if (!js.isUndefined(isPrivate)) __obj.updateDynamic("isPrivate")(isPrivate)
-    if (onActivate != null) __obj.updateDynamic("onActivate")(onActivate)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onDeactivate != null) __obj.updateDynamic("onDeactivate")(onDeactivate)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onActivate != null) __obj.updateDynamic("onActivate")(js.Any.fromFunction1(onActivate))
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
+    if (onDeactivate != null) __obj.updateDynamic("onDeactivate")(js.Any.fromFunction1(onDeactivate))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
     __obj.asInstanceOf[Anon_IsPrivate]
   }
 }

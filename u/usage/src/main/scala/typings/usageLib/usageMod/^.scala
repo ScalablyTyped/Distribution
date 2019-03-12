@@ -12,12 +12,12 @@ object ^ extends js.Object {
   def clearHistory(pid: scala.Double): scala.Unit = js.native
   def lookup(
     pid: scala.Double,
-    callback: js.Function2[/* err */ stdLib.Error, /* result */ usageLib.usageMod.ResultObject, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* result */ ResultObject, scala.Unit]
   ): scala.Unit = js.native
   def lookup(
     pid: scala.Double,
-    options: usageLib.usageMod.Options,
-    callback: js.Function2[/* err */ stdLib.Error, /* result */ usageLib.usageMod.ResultObject, scala.Unit]
+    options: Options,
+    callback: js.Function2[/* err */ stdLib.Error, /* result */ ResultObject, scala.Unit]
   ): scala.Unit = js.native
 }
 

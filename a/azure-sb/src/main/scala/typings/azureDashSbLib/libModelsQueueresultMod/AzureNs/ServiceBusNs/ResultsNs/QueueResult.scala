@@ -13,10 +13,10 @@ trait QueueResult extends js.Object {
 object QueueResult {
   @scala.inline
   def apply(
-    parse: js.Function1[js.Object, js.Object | js.Array[js.Object]],
-    serialize: js.Function1[QueueProperties, java.lang.String]
+    parse: js.Object => js.Object | js.Array[js.Object],
+    serialize: QueueProperties => java.lang.String
   ): QueueResult = {
-    val __obj = js.Dynamic.literal(parse = parse, serialize = serialize)
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), serialize = js.Any.fromFunction1(serialize))
   
     __obj.asInstanceOf[QueueResult]
   }

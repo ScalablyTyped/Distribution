@@ -38,10 +38,10 @@ object XControllerManager {
   def apply(
     ConfigurationController: XConfigurationController,
     ModuleController: XModuleController,
-    getConfigurationController: js.Function0[XConfigurationController],
-    getModuleController: js.Function0[XModuleController]
+    getConfigurationController: () => XConfigurationController,
+    getModuleController: () => XModuleController
   ): XControllerManager = {
-    val __obj = js.Dynamic.literal(ConfigurationController = ConfigurationController, ModuleController = ModuleController, getConfigurationController = getConfigurationController, getModuleController = getModuleController)
+    val __obj = js.Dynamic.literal(ConfigurationController = ConfigurationController, ModuleController = ModuleController, getConfigurationController = js.Any.fromFunction0(getConfigurationController), getModuleController = js.Any.fromFunction0(getModuleController))
   
     __obj.asInstanceOf[XControllerManager]
   }

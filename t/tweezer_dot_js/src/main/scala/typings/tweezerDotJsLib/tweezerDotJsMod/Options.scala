@@ -26,17 +26,11 @@ object Options {
     end: scala.Double,
     start: scala.Double,
     duration: scala.Int | scala.Double = null,
-    easing: js.Function4[
-      /* currentTime */ scala.Double, 
-      /* beginningTime */ scala.Double, 
-      /* changeInValue */ scala.Double, 
-      /* duration */ scala.Double, 
-      scala.Double
-    ] = null
+    easing: (/* currentTime */ scala.Double, /* beginningTime */ scala.Double, /* changeInValue */ scala.Double, /* duration */ scala.Double) => scala.Double = null
   ): Options = {
     val __obj = js.Dynamic.literal(end = end, start = start)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction4(easing))
     __obj.asInstanceOf[Options]
   }
 }

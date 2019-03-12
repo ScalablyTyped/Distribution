@@ -19,12 +19,12 @@ object ^ extends js.Object {
   /**
     * Creates a batch object for batching individual requests.
     */
-  def newBatch[T](): gapiDotClientLib.gapiNs.clientNs.Batch[T] = js.native
+  def newBatch[T](): Batch[T] = js.native
   /**
     * Creates a HTTP request for making RESTful requests.
     * An object encapsulating the various arguments for this method.
     */
-  def request[T](args: gapiDotClientLib.Anon_Body): gapiDotClientLib.gapiNs.clientNs.Request[T] = js.native
+  def request[T](args: gapiDotClientLib.Anon_Body): Request[T] = js.native
   /**
     * Sets the API key for the application.
     * @param apiKey The API key to set

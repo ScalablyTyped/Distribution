@@ -17,13 +17,8 @@ trait IBidirectionalIterator[T, Iterator /* <: IBidirectionalIterator[T, Iterato
 
 object IBidirectionalIterator {
   @scala.inline
-  def apply[T, Iterator /* <: IBidirectionalIterator[T, Iterator] */](
-    equals: js.Function1[Iterator, scala.Boolean],
-    next: js.Function0[Iterator],
-    prev: js.Function0[Iterator],
-    value: T
-  ): IBidirectionalIterator[T, Iterator] = {
-    val __obj = js.Dynamic.literal(equals = equals, next = next, prev = prev, value = value.asInstanceOf[js.Any])
+  def apply[T, Iterator /* <: IBidirectionalIterator[T, Iterator] */](equals: Iterator => scala.Boolean, next: () => Iterator, prev: () => Iterator, value: T): IBidirectionalIterator[T, Iterator] = {
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), next = js.Any.fromFunction0(next), prev = js.Any.fromFunction0(prev), value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IBidirectionalIterator[T, Iterator]]
   }

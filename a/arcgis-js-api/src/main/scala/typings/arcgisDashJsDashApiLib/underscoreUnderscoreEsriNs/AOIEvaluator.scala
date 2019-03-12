@@ -50,15 +50,15 @@ object AOIEvaluator {
   def apply(
     aoi: Polygon,
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     inverse: scala.Boolean,
     name: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     relation: java.lang.String,
     `type`: java.lang.String,
     useJobAOI: scala.Boolean
   ): AOIEvaluator = {
-    val __obj = js.Dynamic.literal(aoi = aoi, constructor = constructor, hasOwnProperty = hasOwnProperty, inverse = inverse, name = name, propertyIsEnumerable = propertyIsEnumerable, relation = relation, useJobAOI = useJobAOI)
+    val __obj = js.Dynamic.literal(aoi = aoi, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), inverse = inverse, name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), relation = relation, useJobAOI = useJobAOI)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AOIEvaluator]
   }

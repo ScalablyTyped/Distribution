@@ -9,21 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def ping(
-    options: tcpDashPingLib.tcpDashPingMod.Options,
-    callback: js.Function2[
-      /* error */ stdLib.Error, 
-      /* result */ tcpDashPingLib.tcpDashPingMod.Result, 
-      scala.Unit
-    ]
+    options: Options,
+    callback: js.Function2[/* error */ stdLib.Error, /* result */ Result, scala.Unit]
   ): scala.Unit = js.native
   def probe(
     address: java.lang.String,
     port: scala.Double,
-    callback: js.Function2[
-      /* error */ stdLib.Error, 
-      /* result */ tcpDashPingLib.tcpDashPingMod.Result, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* error */ stdLib.Error, /* result */ Result, scala.Unit]
   ): scala.Unit = js.native
 }
 

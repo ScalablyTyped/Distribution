@@ -17,6 +17,6 @@ abstract class DebugContext () extends js.Object {
   val references: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   val renderNode: js.Any = js.native
   val view: ViewData = js.native
-  def logError(console: nodeLib.Console, values: js.Any*): scala.Unit = js.native
+  def logError(console: stdLib.Console, values: js.Any*): scala.Unit = js.native
 }
 

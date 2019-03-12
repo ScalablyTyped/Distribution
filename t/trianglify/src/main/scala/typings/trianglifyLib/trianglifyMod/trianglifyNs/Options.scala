@@ -40,7 +40,7 @@ object Options {
   @scala.inline
   def apply(
     cell_size: scala.Int | scala.Double = null,
-    color_function: js.Function2[/* x */ scala.Double, /* y */ scala.Double, java.lang.String] = null,
+    color_function: (/* x */ scala.Double, /* y */ scala.Double) => java.lang.String = null,
     color_space: java.lang.String = null,
     height: scala.Int | scala.Double = null,
     points: js.Array[scala.Double] = null,
@@ -53,7 +53,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (cell_size != null) __obj.updateDynamic("cell_size")(cell_size.asInstanceOf[js.Any])
-    if (color_function != null) __obj.updateDynamic("color_function")(color_function)
+    if (color_function != null) __obj.updateDynamic("color_function")(js.Any.fromFunction2(color_function))
     if (color_space != null) __obj.updateDynamic("color_space")(color_space)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (points != null) __obj.updateDynamic("points")(points)

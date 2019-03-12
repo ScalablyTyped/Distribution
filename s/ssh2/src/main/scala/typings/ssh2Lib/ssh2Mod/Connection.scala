@@ -28,7 +28,7 @@ trait Connection
     boundPort: scala.Double,
     remoteAddr: java.lang.String,
     remotePort: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.Error, /* channel */ ServerChannel, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* channel */ ServerChannel, scala.Unit]
   ): scala.Boolean = js.native
   def on(event: java.lang.String, listener: js.Function): this.type = js.native
   def on(event: js.Symbol, listener: js.Function): this.type = js.native
@@ -80,7 +80,7 @@ trait Connection
     * Emitted when an error occurrs.
     */
   @JSName("on")
-  def on_error(event: ssh2Lib.ssh2LibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def on_error(event: ssh2Lib.ssh2LibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   /**
     * Emitted when the client has requested a connection to a UNIX domain socket.
     */
@@ -152,7 +152,7 @@ trait Connection
     */
   def openssh_forwardOutStreamLocal(
     socketPath: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* channel */ ServerChannel, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* channel */ ServerChannel, scala.Unit]
   ): scala.Boolean = js.native
   /**
     * Initiates a rekeying with the client.
@@ -162,7 +162,7 @@ trait Connection
     * @param callback An optional callback added as a one-time handler for the `rekey` event.
     */
   def rekey(): scala.Boolean = js.native
-  def rekey(callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Boolean = js.native
+  def rekey(callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Boolean = js.native
   /**
     * Alert the client of an incoming X11 client connection from `originAddr` on port `originPort`.
     *
@@ -171,7 +171,7 @@ trait Connection
   def x11(
     originAddr: java.lang.String,
     originPort: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.Error, /* channel */ ServerChannel, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* channel */ ServerChannel, scala.Unit]
   ): scala.Boolean = js.native
 }
 

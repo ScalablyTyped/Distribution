@@ -38,7 +38,7 @@ trait INumericInputProps
   /**
     * Ref handler that receives HTML `<input>` element backing this component.
     */
-  var inputRef: js.UndefOr[js.Function1[/* ref */ reactLib.HTMLInputElement | scala.Null, _]] = js.undefined
+  var inputRef: js.UndefOr[js.Function1[/* ref */ stdLib.HTMLInputElement | scala.Null, _]] = js.undefined
   /**
     * If set to `true`, the input will display with larger styling.
     * This is equivalent to setting `Classes.LARGE` via className on the
@@ -111,7 +111,7 @@ object INumericInputProps {
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     fill: js.UndefOr[scala.Boolean] = js.undefined,
-    inputRef: js.Function1[/* ref */ reactLib.HTMLInputElement | scala.Null, _] = null,
+    inputRef: /* ref */ stdLib.HTMLInputElement | scala.Null => _ = null,
     intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
     large: js.UndefOr[scala.Boolean] = js.undefined,
     leftIcon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
@@ -119,8 +119,8 @@ object INumericInputProps {
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
     minorStepSize: scala.Int | scala.Double = null,
-    onButtonClick: js.Function2[/* valueAsNumber */ scala.Double, /* valueAsString */ java.lang.String, scala.Unit] = null,
-    onValueChange: js.Function2[/* valueAsNumber */ scala.Double, /* valueAsString */ java.lang.String, scala.Unit] = null,
+    onButtonClick: (/* valueAsNumber */ scala.Double, /* valueAsString */ java.lang.String) => scala.Unit = null,
+    onValueChange: (/* valueAsNumber */ scala.Double, /* valueAsString */ java.lang.String) => scala.Unit = null,
     placeholder: java.lang.String = null,
     rightElement: reactLib.reactMod.Global.JSXNs.Element = null,
     selectAllOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
@@ -135,7 +135,7 @@ object INumericInputProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
-    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef)
+    if (inputRef != null) __obj.updateDynamic("inputRef")(js.Any.fromFunction1(inputRef))
     if (intent != null) __obj.updateDynamic("intent")(intent)
     if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
     if (leftIcon != null) __obj.updateDynamic("leftIcon")(leftIcon.asInstanceOf[js.Any])
@@ -143,8 +143,8 @@ object INumericInputProps {
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (minorStepSize != null) __obj.updateDynamic("minorStepSize")(minorStepSize.asInstanceOf[js.Any])
-    if (onButtonClick != null) __obj.updateDynamic("onButtonClick")(onButtonClick)
-    if (onValueChange != null) __obj.updateDynamic("onValueChange")(onValueChange)
+    if (onButtonClick != null) __obj.updateDynamic("onButtonClick")(js.Any.fromFunction2(onButtonClick))
+    if (onValueChange != null) __obj.updateDynamic("onValueChange")(js.Any.fromFunction2(onValueChange))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (rightElement != null) __obj.updateDynamic("rightElement")(rightElement)
     if (!js.isUndefined(selectAllOnFocus)) __obj.updateDynamic("selectAllOnFocus")(selectAllOnFocus)

@@ -282,8 +282,8 @@ object BootstrapTableProps {
     deleteRow: js.UndefOr[scala.Boolean] = js.undefined,
     excludeCSVHeader: js.UndefOr[scala.Boolean] = js.undefined,
     expandColumnOptions: ExpandColumnOptions = null,
-    expandComponent: js.Function1[/* row */ js.Any, java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = null,
-    expandableRow: js.Function1[/* row */ js.Any, scala.Boolean] = null,
+    expandComponent: /* row */ js.Any => java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    expandableRow: /* row */ js.Any => scala.Boolean = null,
     exportCSV: js.UndefOr[scala.Boolean] = js.undefined,
     fetchInfo: FetchInfo = null,
     footer: js.UndefOr[scala.Boolean] = js.undefined,
@@ -340,8 +340,8 @@ object BootstrapTableProps {
     if (!js.isUndefined(deleteRow)) __obj.updateDynamic("deleteRow")(deleteRow)
     if (!js.isUndefined(excludeCSVHeader)) __obj.updateDynamic("excludeCSVHeader")(excludeCSVHeader)
     if (expandColumnOptions != null) __obj.updateDynamic("expandColumnOptions")(expandColumnOptions)
-    if (expandComponent != null) __obj.updateDynamic("expandComponent")(expandComponent)
-    if (expandableRow != null) __obj.updateDynamic("expandableRow")(expandableRow)
+    if (expandComponent != null) __obj.updateDynamic("expandComponent")(js.Any.fromFunction1(expandComponent))
+    if (expandableRow != null) __obj.updateDynamic("expandableRow")(js.Any.fromFunction1(expandableRow))
     if (!js.isUndefined(exportCSV)) __obj.updateDynamic("exportCSV")(exportCSV)
     if (fetchInfo != null) __obj.updateDynamic("fetchInfo")(fetchInfo)
     if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer)

@@ -20,13 +20,13 @@ object Socket {
   def apply(
     app: js.Object,
     auth: SocketAuthObject,
-    disconnect: js.Function0[js.Promise[_]],
+    disconnect: () => js.Promise[_],
     id: java.lang.String,
-    publish: js.Function2[java.lang.String, js.Any, js.Promise[_]],
-    revoke: js.Function2[java.lang.String, js.Any, js.Promise[_]],
-    send: js.Function1[js.Any, js.Promise[_]]
+    publish: (java.lang.String, js.Any) => js.Promise[_],
+    revoke: (java.lang.String, js.Any) => js.Promise[_],
+    send: js.Any => js.Promise[_]
   ): Socket = {
-    val __obj = js.Dynamic.literal(app = app, auth = auth, disconnect = disconnect, id = id, publish = publish, revoke = revoke, send = send)
+    val __obj = js.Dynamic.literal(app = app, auth = auth, disconnect = js.Any.fromFunction0(disconnect), id = id, publish = js.Any.fromFunction2(publish), revoke = js.Any.fromFunction2(revoke), send = js.Any.fromFunction1(send))
   
     __obj.asInstanceOf[Socket]
   }

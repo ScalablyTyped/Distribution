@@ -34,24 +34,12 @@ trait InstancesResource extends js.Object {
 object InstancesResource {
   @scala.inline
   def apply(
-    debug: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsInstancesId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsInstancesId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsInstancesId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Instance]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyOauthtokenPageSize, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListInstancesResponse]
-    ]
+    debug: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsInstancesId => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    delete: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsInstancesId => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsInstancesId => gapiDotClientLib.gapiNs.clientNs.Request[Instance],
+    list: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyOauthtokenPageSize => gapiDotClientLib.gapiNs.clientNs.Request[ListInstancesResponse]
   ): InstancesResource = {
-    val __obj = js.Dynamic.literal(debug = debug, delete = delete, get = get, list = list)
+    val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[InstancesResource]
   }

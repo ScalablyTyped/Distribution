@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SubscribeRequest extends js.Object {
-  var authTokenExpiredError: js.UndefOr[nodeLib.Error] = js.undefined
+  var authTokenExpiredError: js.UndefOr[stdLib.Error] = js.undefined
   var channel: js.UndefOr[java.lang.String] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined
   var socket: socketclusterDashServerLib.scserversocketMod.namespaced
@@ -17,7 +17,7 @@ object SubscribeRequest {
   @scala.inline
   def apply(
     socket: socketclusterDashServerLib.scserversocketMod.namespaced,
-    authTokenExpiredError: nodeLib.Error = null,
+    authTokenExpiredError: stdLib.Error = null,
     channel: java.lang.String = null,
     data: js.Any = null,
     waitForAuth: js.UndefOr[scala.Boolean] = js.undefined

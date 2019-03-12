@@ -32,19 +32,19 @@ object RSAPrivateKey {
     coefficient: asn1jsLib.asn1jsMod.Integer,
     exponent1: asn1jsLib.asn1jsMod.Integer,
     exponent2: asn1jsLib.asn1jsMod.Integer,
-    fromJSON: js.Function1[stdLib.JsonWebKey, scala.Unit],
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromJSON: stdLib.JsonWebKey => scala.Unit,
+    fromSchema: js.Any => scala.Unit,
     modulus: asn1jsLib.asn1jsMod.Integer,
     prime1: asn1jsLib.asn1jsMod.Integer,
     prime2: asn1jsLib.asn1jsMod.Integer,
     privateExponent: asn1jsLib.asn1jsMod.Integer,
     publicExponent: asn1jsLib.asn1jsMod.Integer,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     version: scala.Double,
     otherPrimeInfos: js.Array[pkijsLib.srcOtherPrimeInfoMod.default] = null
   ): RSAPrivateKey = {
-    val __obj = js.Dynamic.literal(coefficient = coefficient, exponent1 = exponent1, exponent2 = exponent2, fromJSON = fromJSON, fromSchema = fromSchema, modulus = modulus, prime1 = prime1, prime2 = prime2, privateExponent = privateExponent, publicExponent = publicExponent, toJSON = toJSON, toSchema = toSchema, version = version)
+    val __obj = js.Dynamic.literal(coefficient = coefficient, exponent1 = exponent1, exponent2 = exponent2, fromJSON = js.Any.fromFunction1(fromJSON), fromSchema = js.Any.fromFunction1(fromSchema), modulus = modulus, prime1 = prime1, prime2 = prime2, privateExponent = privateExponent, publicExponent = publicExponent, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), version = version)
     if (otherPrimeInfos != null) __obj.updateDynamic("otherPrimeInfos")(otherPrimeInfos)
     __obj.asInstanceOf[RSAPrivateKey]
   }

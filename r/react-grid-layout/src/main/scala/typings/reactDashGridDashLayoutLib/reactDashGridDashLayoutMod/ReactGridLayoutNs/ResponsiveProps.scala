@@ -65,21 +65,15 @@ object ResponsiveProps {
     layouts: Layouts = null,
     margin: js.Tuple2[scala.Double, scala.Double] = null,
     maxRows: scala.Int | scala.Double = null,
-    onBreakpointChange: js.Function2[/* newBreakpoint */ java.lang.String, /* newCols */ scala.Double, scala.Unit] = null,
+    onBreakpointChange: (/* newBreakpoint */ java.lang.String, /* newCols */ scala.Double) => scala.Unit = null,
     onDrag: ItemCallback = null,
     onDragStart: ItemCallback = null,
     onDragStop: ItemCallback = null,
-    onLayoutChange: js.Function2[/* currentLayout */ js.Array[Layout], /* allLayouts */ Layouts, scala.Unit] = null,
+    onLayoutChange: (/* currentLayout */ js.Array[Layout], /* allLayouts */ Layouts) => scala.Unit = null,
     onResize: ItemCallback = null,
     onResizeStart: ItemCallback = null,
     onResizeStop: ItemCallback = null,
-    onWidthChange: js.Function4[
-      /* containerWidth */ scala.Double, 
-      /* margin */ js.Tuple2[scala.Double, scala.Double], 
-      /* cols */ scala.Double, 
-      /* containerPadding */ js.Tuple2[scala.Double, scala.Double], 
-      scala.Unit
-    ] = null,
+    onWidthChange: (/* containerWidth */ scala.Double, /* margin */ js.Tuple2[scala.Double, scala.Double], /* cols */ scala.Double, /* containerPadding */ js.Tuple2[scala.Double, scala.Double]) => scala.Unit = null,
     preventCollision: js.UndefOr[scala.Boolean] = js.undefined,
     rowHeight: scala.Int | scala.Double = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -102,15 +96,15 @@ object ResponsiveProps {
     if (layouts != null) __obj.updateDynamic("layouts")(layouts)
     if (margin != null) __obj.updateDynamic("margin")(margin)
     if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
-    if (onBreakpointChange != null) __obj.updateDynamic("onBreakpointChange")(onBreakpointChange)
+    if (onBreakpointChange != null) __obj.updateDynamic("onBreakpointChange")(js.Any.fromFunction2(onBreakpointChange))
     if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag)
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
     if (onDragStop != null) __obj.updateDynamic("onDragStop")(onDragStop)
-    if (onLayoutChange != null) __obj.updateDynamic("onLayoutChange")(onLayoutChange)
+    if (onLayoutChange != null) __obj.updateDynamic("onLayoutChange")(js.Any.fromFunction2(onLayoutChange))
     if (onResize != null) __obj.updateDynamic("onResize")(onResize)
     if (onResizeStart != null) __obj.updateDynamic("onResizeStart")(onResizeStart)
     if (onResizeStop != null) __obj.updateDynamic("onResizeStop")(onResizeStop)
-    if (onWidthChange != null) __obj.updateDynamic("onWidthChange")(onWidthChange)
+    if (onWidthChange != null) __obj.updateDynamic("onWidthChange")(js.Any.fromFunction4(onWidthChange))
     if (!js.isUndefined(preventCollision)) __obj.updateDynamic("preventCollision")(preventCollision)
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)

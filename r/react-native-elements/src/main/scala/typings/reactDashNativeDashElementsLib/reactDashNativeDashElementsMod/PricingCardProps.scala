@@ -72,7 +72,7 @@ object PricingCardProps {
     containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     info: js.Array[java.lang.String] = null,
     infoStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
-    onButtonPress: js.Function0[scala.Unit] = null,
+    onButtonPress: () => scala.Unit = null,
     pricingStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     title: java.lang.String = null,
     titleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
@@ -83,7 +83,7 @@ object PricingCardProps {
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
     if (info != null) __obj.updateDynamic("info")(info)
     if (infoStyle != null) __obj.updateDynamic("infoStyle")(infoStyle.asInstanceOf[js.Any])
-    if (onButtonPress != null) __obj.updateDynamic("onButtonPress")(onButtonPress)
+    if (onButtonPress != null) __obj.updateDynamic("onButtonPress")(js.Any.fromFunction0(onButtonPress))
     if (pricingStyle != null) __obj.updateDynamic("pricingStyle")(pricingStyle.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
     if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])

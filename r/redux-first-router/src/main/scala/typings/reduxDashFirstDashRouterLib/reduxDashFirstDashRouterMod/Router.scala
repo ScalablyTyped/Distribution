@@ -15,12 +15,12 @@ trait Router[TState] extends js.Object {
 object Router {
   @scala.inline
   def apply[TState](
-    getActionForPathAndParams: js.Function1[java.lang.String, Nullable[js.Object]],
-    getPathAndParamsForState: js.Function1[TState, reduxDashFirstDashRouterLib.Anon_Params],
-    getStateForAction: js.Function2[js.Object, Nullable[TState], Nullable[TState]],
-    getStateForActionOriginal: js.Function2[js.Object, Nullable[TState], Nullable[TState]]
+    getActionForPathAndParams: java.lang.String => Nullable[js.Object],
+    getPathAndParamsForState: TState => reduxDashFirstDashRouterLib.Anon_Params,
+    getStateForAction: (js.Object, Nullable[TState]) => Nullable[TState],
+    getStateForActionOriginal: (js.Object, Nullable[TState]) => Nullable[TState]
   ): Router[TState] = {
-    val __obj = js.Dynamic.literal(getActionForPathAndParams = getActionForPathAndParams, getPathAndParamsForState = getPathAndParamsForState, getStateForAction = getStateForAction, getStateForActionOriginal = getStateForActionOriginal)
+    val __obj = js.Dynamic.literal(getActionForPathAndParams = js.Any.fromFunction1(getActionForPathAndParams), getPathAndParamsForState = js.Any.fromFunction1(getPathAndParamsForState), getStateForAction = js.Any.fromFunction2(getStateForAction), getStateForActionOriginal = js.Any.fromFunction2(getStateForActionOriginal))
   
     __obj.asInstanceOf[Router[TState]]
   }

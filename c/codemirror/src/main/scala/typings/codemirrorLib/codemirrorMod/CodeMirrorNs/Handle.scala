@@ -19,15 +19,15 @@ trait Handle extends js.Object {
 object Handle {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
+    close: () => scala.Unit,
     data: js.Any,
     length: scala.Double,
-    menuSize: js.Function0[scala.Double],
-    moveFocus: js.Function2[scala.Double, scala.Boolean, scala.Unit],
-    pick: js.Function0[scala.Unit],
-    setFocus: js.Function1[scala.Double, scala.Unit]
+    menuSize: () => scala.Double,
+    moveFocus: (scala.Double, scala.Boolean) => scala.Unit,
+    pick: () => scala.Unit,
+    setFocus: scala.Double => scala.Unit
   ): Handle = {
-    val __obj = js.Dynamic.literal(close = close, data = data, length = length, menuSize = menuSize, moveFocus = moveFocus, pick = pick, setFocus = setFocus)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), data = data, length = length, menuSize = js.Any.fromFunction0(menuSize), moveFocus = js.Any.fromFunction2(moveFocus), pick = js.Any.fromFunction0(pick), setFocus = js.Any.fromFunction1(setFocus))
   
     __obj.asInstanceOf[Handle]
   }

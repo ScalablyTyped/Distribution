@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("terminal-kit", "ScreenBufferHD")
 @js.native
 class ScreenBufferHD protected ()
-  extends terminalDashKitLib.screenbufferhdMod.namespaced {
+  extends terminalDashKitLib.screenBufferHDMod.namespaced {
   def this(options: terminalDashKitLib.Anon_Blending) = this()
-  def this(options: terminalDashKitLib.screenbufferMod.ScreenBufferNs.Options) = this()
+  def this(options: terminalDashKitLib.screenBufferMod.ScreenBufferNs.Options) = this()
 }
 
 /* static members */

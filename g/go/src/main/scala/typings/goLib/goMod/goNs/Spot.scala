@@ -71,22 +71,22 @@ trait Spot extends js.Object {
 object Spot {
   @scala.inline
   def apply(
-    copy: js.Function0[Spot],
-    equals: js.Function1[Spot, scala.Boolean],
-    includesSide: js.Function1[Spot, scala.Boolean],
-    isDefault: js.Function0[scala.Boolean],
-    isNoSpot: js.Function0[scala.Boolean],
-    isSide: js.Function0[scala.Boolean],
-    isSpot: js.Function0[scala.Boolean],
+    copy: () => Spot,
+    equals: Spot => scala.Boolean,
+    includesSide: Spot => scala.Boolean,
+    isDefault: () => scala.Boolean,
+    isNoSpot: () => scala.Boolean,
+    isSide: () => scala.Boolean,
+    isSpot: () => scala.Boolean,
     offsetX: scala.Double,
     offsetY: scala.Double,
-    opposite: js.Function0[Spot],
-    set: js.Function1[Spot, Spot],
-    setTo: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, Spot],
+    opposite: () => Spot,
+    set: Spot => Spot,
+    setTo: (scala.Double, scala.Double, scala.Double, scala.Double) => Spot,
     x: scala.Double,
     y: scala.Double
   ): Spot = {
-    val __obj = js.Dynamic.literal(copy = copy, equals = equals, includesSide = includesSide, isDefault = isDefault, isNoSpot = isNoSpot, isSide = isSide, isSpot = isSpot, offsetX = offsetX, offsetY = offsetY, opposite = opposite, set = set, setTo = setTo, x = x, y = y)
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), equals = js.Any.fromFunction1(equals), includesSide = js.Any.fromFunction1(includesSide), isDefault = js.Any.fromFunction0(isDefault), isNoSpot = js.Any.fromFunction0(isNoSpot), isSide = js.Any.fromFunction0(isSide), isSpot = js.Any.fromFunction0(isSpot), offsetX = offsetX, offsetY = offsetY, opposite = js.Any.fromFunction0(opposite), set = js.Any.fromFunction1(set), setTo = js.Any.fromFunction4(setTo), x = x, y = y)
   
     __obj.asInstanceOf[Spot]
   }

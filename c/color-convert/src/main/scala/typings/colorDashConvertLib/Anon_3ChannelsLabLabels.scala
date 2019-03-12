@@ -17,10 +17,10 @@ object Anon_3ChannelsLabLabels {
   def apply(
     channels: colorDashConvertLib.colorDashConvertLibNumbers.`3`,
     labels: colorDashConvertLib.colorDashConvertLibStrings.lab,
-    lch: js.Function1[colorDashConvertLib.conversionsMod.LAB, colorDashConvertLib.conversionsMod.LCH],
-    xyz: js.Function1[colorDashConvertLib.conversionsMod.LAB, colorDashConvertLib.conversionsMod.XYZ]
+    lch: colorDashConvertLib.conversionsMod.LAB => colorDashConvertLib.conversionsMod.LCH,
+    xyz: colorDashConvertLib.conversionsMod.LAB => colorDashConvertLib.conversionsMod.XYZ
   ): Anon_3ChannelsLabLabels = {
-    val __obj = js.Dynamic.literal(channels = channels, labels = labels, lch = lch, xyz = xyz)
+    val __obj = js.Dynamic.literal(channels = channels, labels = labels, lch = js.Any.fromFunction1(lch), xyz = js.Any.fromFunction1(xyz))
   
     __obj.asInstanceOf[Anon_3ChannelsLabLabels]
   }

@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("path-type", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val dir: pathDashTypeLib.pathDashTypeMod.PathTypeFn = js.native
-  val dirSync: pathDashTypeLib.pathDashTypeMod.PathTypeSyncFn = js.native
-  val file: pathDashTypeLib.pathDashTypeMod.PathTypeFn = js.native
-  val fileSync: pathDashTypeLib.pathDashTypeMod.PathTypeSyncFn = js.native
-  val symlink: pathDashTypeLib.pathDashTypeMod.PathTypeFn = js.native
-  val symlinkSync: pathDashTypeLib.pathDashTypeMod.PathTypeSyncFn = js.native
+  val dir: PathTypeFn = js.native
+  val dirSync: PathTypeSyncFn = js.native
+  val file: PathTypeFn = js.native
+  val fileSync: PathTypeSyncFn = js.native
+  val symlink: PathTypeFn = js.native
+  val symlinkSync: PathTypeSyncFn = js.native
 }
 

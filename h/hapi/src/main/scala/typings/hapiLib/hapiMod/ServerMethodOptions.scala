@@ -28,12 +28,12 @@ object ServerMethodOptions {
   def apply(
     bind: js.Object = null,
     cache: ServerMethodCache = null,
-    generateKey: js.Function1[/* repeated */ js.Any, java.lang.String | scala.Null] = null
+    generateKey: /* repeated */ js.Any => java.lang.String | scala.Null = null
   ): ServerMethodOptions = {
     val __obj = js.Dynamic.literal()
     if (bind != null) __obj.updateDynamic("bind")(bind)
     if (cache != null) __obj.updateDynamic("cache")(cache)
-    if (generateKey != null) __obj.updateDynamic("generateKey")(generateKey)
+    if (generateKey != null) __obj.updateDynamic("generateKey")(js.Any.fromFunction1(generateKey))
     __obj.asInstanceOf[ServerMethodOptions]
   }
 }

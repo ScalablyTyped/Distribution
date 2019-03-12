@@ -29,14 +29,14 @@ object IBar {
     androidAnimation: js.UndefOr[scala.Boolean] = js.undefined,
     baseCls: java.lang.String = null,
     cls: java.lang.String = null,
-    getAndroidAnimation: js.Function0[scala.Boolean] = null,
-    getBaseCls: js.Function0[java.lang.String] = null,
-    getCls: js.Function0[java.lang.String] = null,
-    getUi: js.Function0[java.lang.String] = null,
-    setAndroidAnimation: js.Function1[/* androidAnimation */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setBaseCls: js.Function1[/* baseCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setCls: js.Function1[/* cls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setUi: js.Function1[/* ui */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    getAndroidAnimation: () => scala.Boolean = null,
+    getBaseCls: () => java.lang.String = null,
+    getCls: () => java.lang.String = null,
+    getUi: () => java.lang.String = null,
+    setAndroidAnimation: /* androidAnimation */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setCls: /* cls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setUi: /* ui */ js.UndefOr[java.lang.String] => scala.Unit = null,
     ui: java.lang.String = null
   ): IBar = {
     val __obj = js.Dynamic.literal()
@@ -44,14 +44,14 @@ object IBar {
     if (!js.isUndefined(androidAnimation)) __obj.updateDynamic("androidAnimation")(androidAnimation)
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
     if (cls != null) __obj.updateDynamic("cls")(cls)
-    if (getAndroidAnimation != null) __obj.updateDynamic("getAndroidAnimation")(getAndroidAnimation)
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(getBaseCls)
-    if (getCls != null) __obj.updateDynamic("getCls")(getCls)
-    if (getUi != null) __obj.updateDynamic("getUi")(getUi)
-    if (setAndroidAnimation != null) __obj.updateDynamic("setAndroidAnimation")(setAndroidAnimation)
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(setBaseCls)
-    if (setCls != null) __obj.updateDynamic("setCls")(setCls)
-    if (setUi != null) __obj.updateDynamic("setUi")(setUi)
+    if (getAndroidAnimation != null) __obj.updateDynamic("getAndroidAnimation")(js.Any.fromFunction0(getAndroidAnimation))
+    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
+    if (getCls != null) __obj.updateDynamic("getCls")(js.Any.fromFunction0(getCls))
+    if (getUi != null) __obj.updateDynamic("getUi")(js.Any.fromFunction0(getUi))
+    if (setAndroidAnimation != null) __obj.updateDynamic("setAndroidAnimation")(js.Any.fromFunction1(setAndroidAnimation))
+    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
+    if (setCls != null) __obj.updateDynamic("setCls")(js.Any.fromFunction1(setCls))
+    if (setUi != null) __obj.updateDynamic("setUi")(js.Any.fromFunction1(setUi))
     if (ui != null) __obj.updateDynamic("ui")(ui)
     __obj.asInstanceOf[IBar]
   }

@@ -145,6 +145,9 @@ trait CharmInstance
   def right(x: scala.Double): this.type = js.native
   /** Move the cursor up by `y` rows. */
   def up(y: scala.Double): this.type = js.native
+  def write(msg: java.lang.String, cb: js.Function): scala.Boolean = js.native
+  def write(msg: nodeLib.Buffer, cb: js.Function): scala.Boolean = js.native
+  def write(msgs: java.lang.String, encoding: java.lang.String, cb: js.Function): scala.Boolean = js.native
   def write(msgs: nodeLib.Buffer, encoding: java.lang.String): scala.Boolean = js.native
   def write(msgs: nodeLib.Buffer, encoding: java.lang.String, cb: js.Function): scala.Boolean = js.native
 }

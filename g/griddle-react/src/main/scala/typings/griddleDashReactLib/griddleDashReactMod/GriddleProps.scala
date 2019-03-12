@@ -33,12 +33,7 @@ object GriddleProps {
     renderProperties: GriddleRenderProperties = null,
     selectors: PropertyBag[griddleDashReactLib.Selector] = null,
     settingsComponentObjects: PropertyBag[SettingsComponentObject] = null,
-    sortMethod: js.Function3[
-      /* data */ js.Array[_], 
-      /* column */ java.lang.String, 
-      /* sortAscending */ js.UndefOr[scala.Boolean], 
-      scala.Double
-    ] = null,
+    sortMethod: (/* data */ js.Array[_], /* column */ java.lang.String, /* sortAscending */ js.UndefOr[scala.Boolean]) => scala.Double = null,
     sortProperties: js.Array[GriddleSortKey] = null,
     storeKey: java.lang.String = null,
     styleConfig: GriddleStyleConfig = null,
@@ -59,7 +54,7 @@ object GriddleProps {
     if (renderProperties != null) __obj.updateDynamic("renderProperties")(renderProperties)
     if (selectors != null) __obj.updateDynamic("selectors")(selectors)
     if (settingsComponentObjects != null) __obj.updateDynamic("settingsComponentObjects")(settingsComponentObjects)
-    if (sortMethod != null) __obj.updateDynamic("sortMethod")(sortMethod)
+    if (sortMethod != null) __obj.updateDynamic("sortMethod")(js.Any.fromFunction3(sortMethod))
     if (sortProperties != null) __obj.updateDynamic("sortProperties")(sortProperties)
     if (storeKey != null) __obj.updateDynamic("storeKey")(storeKey)
     if (styleConfig != null) __obj.updateDynamic("styleConfig")(styleConfig)

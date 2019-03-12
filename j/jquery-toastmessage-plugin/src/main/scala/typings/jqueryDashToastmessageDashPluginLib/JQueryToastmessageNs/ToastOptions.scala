@@ -38,7 +38,7 @@ trait ToastOptions extends js.Object {
 object ToastOptions {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit] = null,
+    close: () => scala.Unit = null,
     closeText: java.lang.String = null,
     inEffectDuration: scala.Int | scala.Double = null,
     position: ToastPosition = null,
@@ -48,7 +48,7 @@ object ToastOptions {
     `type`: ToastType = null
   ): ToastOptions = {
     val __obj = js.Dynamic.literal()
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction0(close))
     if (closeText != null) __obj.updateDynamic("closeText")(closeText)
     if (inEffectDuration != null) __obj.updateDynamic("inEffectDuration")(inEffectDuration.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position)

@@ -13,10 +13,10 @@ trait Anon_AnErrorStringFailureSuccessTheDeletedGroup extends js.Object {
 object Anon_AnErrorStringFailureSuccessTheDeletedGroup {
   @scala.inline
   def apply(
-    failure: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup, java.lang.String, js.Any],
-    success: js.Function1[kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup, js.Any]
+    failure: (kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup, java.lang.String) => js.Any,
+    success: kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup => js.Any
   ): Anon_AnErrorStringFailureSuccessTheDeletedGroup = {
-    val __obj = js.Dynamic.literal(failure = failure, success = success)
+    val __obj = js.Dynamic.literal(failure = js.Any.fromFunction2(failure), success = js.Any.fromFunction1(success))
   
     __obj.asInstanceOf[Anon_AnErrorStringFailureSuccessTheDeletedGroup]
   }

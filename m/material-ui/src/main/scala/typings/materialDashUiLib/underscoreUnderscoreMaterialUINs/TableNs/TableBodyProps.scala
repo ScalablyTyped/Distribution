@@ -43,12 +43,12 @@ object TableBodyProps {
     deselectOnClickaway: js.UndefOr[scala.Boolean] = js.undefined,
     displayRowCheckbox: js.UndefOr[scala.Boolean] = js.undefined,
     multiSelectable: js.UndefOr[scala.Boolean] = js.undefined,
-    onCellClick: js.Function2[/* row */ scala.Double, /* column */ scala.Double, scala.Unit] = null,
-    onCellHover: js.Function2[/* row */ scala.Double, /* column */ scala.Double, scala.Unit] = null,
-    onCellHoverExit: js.Function2[/* row */ scala.Double, /* column */ scala.Double, scala.Unit] = null,
-    onRowHover: js.Function1[/* row */ scala.Double, scala.Unit] = null,
-    onRowHoverExit: js.Function1[/* row */ scala.Double, scala.Unit] = null,
-    onRowSelection: js.Function1[/* selectedRows */ js.Array[scala.Double] | java.lang.String, scala.Unit] = null,
+    onCellClick: (/* row */ scala.Double, /* column */ scala.Double) => scala.Unit = null,
+    onCellHover: (/* row */ scala.Double, /* column */ scala.Double) => scala.Unit = null,
+    onCellHoverExit: (/* row */ scala.Double, /* column */ scala.Double) => scala.Unit = null,
+    onRowHover: /* row */ scala.Double => scala.Unit = null,
+    onRowHoverExit: /* row */ scala.Double => scala.Unit = null,
+    onRowSelection: /* selectedRows */ js.Array[scala.Double] | java.lang.String => scala.Unit = null,
     preScanRows: js.UndefOr[scala.Boolean] = js.undefined,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
     showRowHover: js.UndefOr[scala.Boolean] = js.undefined,
@@ -61,12 +61,12 @@ object TableBodyProps {
     if (!js.isUndefined(deselectOnClickaway)) __obj.updateDynamic("deselectOnClickaway")(deselectOnClickaway)
     if (!js.isUndefined(displayRowCheckbox)) __obj.updateDynamic("displayRowCheckbox")(displayRowCheckbox)
     if (!js.isUndefined(multiSelectable)) __obj.updateDynamic("multiSelectable")(multiSelectable)
-    if (onCellClick != null) __obj.updateDynamic("onCellClick")(onCellClick)
-    if (onCellHover != null) __obj.updateDynamic("onCellHover")(onCellHover)
-    if (onCellHoverExit != null) __obj.updateDynamic("onCellHoverExit")(onCellHoverExit)
-    if (onRowHover != null) __obj.updateDynamic("onRowHover")(onRowHover)
-    if (onRowHoverExit != null) __obj.updateDynamic("onRowHoverExit")(onRowHoverExit)
-    if (onRowSelection != null) __obj.updateDynamic("onRowSelection")(onRowSelection)
+    if (onCellClick != null) __obj.updateDynamic("onCellClick")(js.Any.fromFunction2(onCellClick))
+    if (onCellHover != null) __obj.updateDynamic("onCellHover")(js.Any.fromFunction2(onCellHover))
+    if (onCellHoverExit != null) __obj.updateDynamic("onCellHoverExit")(js.Any.fromFunction2(onCellHoverExit))
+    if (onRowHover != null) __obj.updateDynamic("onRowHover")(js.Any.fromFunction1(onRowHover))
+    if (onRowHoverExit != null) __obj.updateDynamic("onRowHoverExit")(js.Any.fromFunction1(onRowHoverExit))
+    if (onRowSelection != null) __obj.updateDynamic("onRowSelection")(js.Any.fromFunction1(onRowSelection))
     if (!js.isUndefined(preScanRows)) __obj.updateDynamic("preScanRows")(preScanRows)
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
     if (!js.isUndefined(showRowHover)) __obj.updateDynamic("showRowHover")(showRowHover)

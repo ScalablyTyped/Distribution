@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.HiLoLines")
 @js.native
 class HiLoLines protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   val Border: ChartBorder = js.native
   val Creator: scala.Double = js.native
   val Format: ChartFormat = js.native

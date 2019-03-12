@@ -26,12 +26,12 @@ object XCellRangeAddressable {
   @scala.inline
   def apply(
     RangeAddress: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
-    acquire: js.Function0[scala.Unit],
-    getRangeAddress: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getRangeAddress: () => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCellRangeAddressable = {
-    val __obj = js.Dynamic.literal(RangeAddress = RangeAddress, acquire = acquire, getRangeAddress = getRangeAddress, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(RangeAddress = RangeAddress, acquire = js.Any.fromFunction0(acquire), getRangeAddress = js.Any.fromFunction0(getRangeAddress), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCellRangeAddressable]
   }

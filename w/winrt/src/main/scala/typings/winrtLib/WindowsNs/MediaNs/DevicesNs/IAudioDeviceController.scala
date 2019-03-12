@@ -13,23 +13,13 @@ trait IAudioDeviceController extends IMediaDeviceController {
 object IAudioDeviceController {
   @scala.inline
   def apply(
-    getAvailableMediaStreamProperties: js.Function1[
-      winrtLib.WindowsNs.MediaNs.CaptureNs.MediaStreamType, 
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtLib.WindowsNs.MediaNs.MediaPropertiesNs.IMediaEncodingProperties]
-    ],
-    getMediaStreamProperties: js.Function1[
-      winrtLib.WindowsNs.MediaNs.CaptureNs.MediaStreamType, 
-      winrtLib.WindowsNs.MediaNs.MediaPropertiesNs.IMediaEncodingProperties
-    ],
+    getAvailableMediaStreamProperties: winrtLib.WindowsNs.MediaNs.CaptureNs.MediaStreamType => winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtLib.WindowsNs.MediaNs.MediaPropertiesNs.IMediaEncodingProperties],
+    getMediaStreamProperties: winrtLib.WindowsNs.MediaNs.CaptureNs.MediaStreamType => winrtLib.WindowsNs.MediaNs.MediaPropertiesNs.IMediaEncodingProperties,
     muted: scala.Boolean,
-    setMediaStreamPropertiesAsync: js.Function2[
-      winrtLib.WindowsNs.MediaNs.CaptureNs.MediaStreamType, 
-      winrtLib.WindowsNs.MediaNs.MediaPropertiesNs.IMediaEncodingProperties, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncAction
-    ],
+    setMediaStreamPropertiesAsync: (winrtLib.WindowsNs.MediaNs.CaptureNs.MediaStreamType, winrtLib.WindowsNs.MediaNs.MediaPropertiesNs.IMediaEncodingProperties) => winrtLib.WindowsNs.FoundationNs.IAsyncAction,
     volumePercent: scala.Double
   ): IAudioDeviceController = {
-    val __obj = js.Dynamic.literal(getAvailableMediaStreamProperties = getAvailableMediaStreamProperties, getMediaStreamProperties = getMediaStreamProperties, muted = muted, setMediaStreamPropertiesAsync = setMediaStreamPropertiesAsync, volumePercent = volumePercent)
+    val __obj = js.Dynamic.literal(getAvailableMediaStreamProperties = js.Any.fromFunction1(getAvailableMediaStreamProperties), getMediaStreamProperties = js.Any.fromFunction1(getMediaStreamProperties), muted = muted, setMediaStreamPropertiesAsync = js.Any.fromFunction2(setMediaStreamPropertiesAsync), volumePercent = volumePercent)
   
     __obj.asInstanceOf[IAudioDeviceController]
   }

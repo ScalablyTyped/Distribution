@@ -24,7 +24,7 @@ trait Anon_AbstractGrantType
   var InvalidScopeError: org.scalablytyped.runtime.Instantiable0[oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.InvalidScopeError] = js.native
   var InvalidTokenError: org.scalablytyped.runtime.Instantiable0[oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.InvalidTokenError] = js.native
   var OAuthError: org.scalablytyped.runtime.Instantiable2[
-    /* messageOrError */ java.lang.String | nodeLib.Error, 
+    /* messageOrError */ java.lang.String | stdLib.Error, 
     /* properties */ js.UndefOr[/* properties */ js.Object], 
     oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.OAuthError
   ] = js.native

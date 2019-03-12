@@ -27,14 +27,14 @@ trait IgScrollMethods extends js.Object {
 object IgScrollMethods {
   @scala.inline
   def apply(
-    changeGlobalLanguage: js.Function0[scala.Unit],
-    changeGlobalRegional: js.Function0[scala.Unit],
-    changeLocale: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    option: js.Function2[js.Object, js.Object, scala.Unit],
-    refresh: js.Function0[scala.Unit]
+    changeGlobalLanguage: () => scala.Unit,
+    changeGlobalRegional: () => scala.Unit,
+    changeLocale: () => scala.Unit,
+    destroy: () => scala.Unit,
+    option: (js.Object, js.Object) => scala.Unit,
+    refresh: () => scala.Unit
   ): IgScrollMethods = {
-    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, option = option, refresh = refresh)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = js.Any.fromFunction0(changeGlobalLanguage), changeGlobalRegional = js.Any.fromFunction0(changeGlobalRegional), changeLocale = js.Any.fromFunction0(changeLocale), destroy = js.Any.fromFunction0(destroy), option = js.Any.fromFunction2(option), refresh = js.Any.fromFunction0(refresh))
   
     __obj.asInstanceOf[IgScrollMethods]
   }

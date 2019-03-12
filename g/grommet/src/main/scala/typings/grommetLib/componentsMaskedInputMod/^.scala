@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val MaskedInput: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsMaskedInputMod.MaskedInputProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    MaskedInputProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
       reactLib.HTMLInputElement
     ]), 

@@ -22,12 +22,12 @@ trait XColorScheme
 object XColorScheme {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getColorByIndex: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getColorByIndex: scala.Double => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XColorScheme = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getColorByIndex = getColorByIndex, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getColorByIndex = js.Any.fromFunction1(getColorByIndex), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XColorScheme]
   }

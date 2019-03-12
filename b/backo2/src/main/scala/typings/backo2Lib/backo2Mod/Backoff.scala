@@ -28,13 +28,13 @@ trait Backoff extends js.Object {
 object Backoff {
   @scala.inline
   def apply(
-    duration: js.Function0[scala.Double],
-    reset: js.Function0[scala.Unit],
-    setJitter: js.Function1[scala.Double, scala.Unit],
-    setMax: js.Function1[scala.Double, scala.Unit],
-    setMin: js.Function1[scala.Double, scala.Unit]
+    duration: () => scala.Double,
+    reset: () => scala.Unit,
+    setJitter: scala.Double => scala.Unit,
+    setMax: scala.Double => scala.Unit,
+    setMin: scala.Double => scala.Unit
   ): Backoff = {
-    val __obj = js.Dynamic.literal(duration = duration, reset = reset, setJitter = setJitter, setMax = setMax, setMin = setMin)
+    val __obj = js.Dynamic.literal(duration = js.Any.fromFunction0(duration), reset = js.Any.fromFunction0(reset), setJitter = js.Any.fromFunction1(setJitter), setMax = js.Any.fromFunction1(setMax), setMin = js.Any.fromFunction1(setMin))
   
     __obj.asInstanceOf[Backoff]
   }

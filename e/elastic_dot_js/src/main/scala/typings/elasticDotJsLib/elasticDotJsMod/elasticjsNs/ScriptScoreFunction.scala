@@ -37,14 +37,14 @@ trait ScriptScoreFunction extends ScoreFunction {
 object ScriptScoreFunction {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    filter: js.Function1[Filter, ScriptScoreFunction],
-    lang: js.Function1[java.lang.String, ScriptScoreFunction],
-    params: js.Function1[js.Object, ScriptScoreFunction],
-    script: js.Function1[java.lang.String, ScriptScoreFunction],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    filter: Filter => ScriptScoreFunction,
+    lang: java.lang.String => ScriptScoreFunction,
+    params: js.Object => ScriptScoreFunction,
+    script: java.lang.String => ScriptScoreFunction,
+    toJSON: () => js.Any
   ): ScriptScoreFunction = {
-    val __obj = js.Dynamic.literal(_type = _type, filter = filter, lang = lang, params = params, script = script, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), filter = js.Any.fromFunction1(filter), lang = js.Any.fromFunction1(lang), params = js.Any.fromFunction1(params), script = js.Any.fromFunction1(script), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[ScriptScoreFunction]
   }

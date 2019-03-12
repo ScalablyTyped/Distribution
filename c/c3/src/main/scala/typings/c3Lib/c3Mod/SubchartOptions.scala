@@ -21,12 +21,12 @@ trait SubchartOptions extends js.Object {
 object SubchartOptions {
   @scala.inline
   def apply(
-    onbrush: js.Function1[/* domain */ js.Any, scala.Unit] = null,
+    onbrush: /* domain */ js.Any => scala.Unit = null,
     show: js.UndefOr[scala.Boolean] = js.undefined,
     size: c3Lib.Anon_HeightNumber = null
   ): SubchartOptions = {
     val __obj = js.Dynamic.literal()
-    if (onbrush != null) __obj.updateDynamic("onbrush")(onbrush)
+    if (onbrush != null) __obj.updateDynamic("onbrush")(js.Any.fromFunction1(onbrush))
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
     if (size != null) __obj.updateDynamic("size")(size)
     __obj.asInstanceOf[SubchartOptions]

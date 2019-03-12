@@ -126,8 +126,8 @@ object Props {
     infinite: js.UndefOr[scala.Boolean] = js.undefined,
     keysControlDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     mouseDragEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    onSlideChange: js.Function1[/* e */ EventObject, scala.Unit] = null,
-    onSlideChanged: js.Function1[/* e */ EventObject, scala.Unit] = null,
+    onSlideChange: /* e */ EventObject => scala.Unit = null,
+    onSlideChanged: /* e */ EventObject => scala.Unit = null,
     playButtonEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     responsive: js.Object = null,
     slideToIndex: scala.Int | scala.Double = null,
@@ -146,8 +146,8 @@ object Props {
     if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite)
     if (!js.isUndefined(keysControlDisabled)) __obj.updateDynamic("keysControlDisabled")(keysControlDisabled)
     if (!js.isUndefined(mouseDragEnabled)) __obj.updateDynamic("mouseDragEnabled")(mouseDragEnabled)
-    if (onSlideChange != null) __obj.updateDynamic("onSlideChange")(onSlideChange)
-    if (onSlideChanged != null) __obj.updateDynamic("onSlideChanged")(onSlideChanged)
+    if (onSlideChange != null) __obj.updateDynamic("onSlideChange")(js.Any.fromFunction1(onSlideChange))
+    if (onSlideChanged != null) __obj.updateDynamic("onSlideChanged")(js.Any.fromFunction1(onSlideChanged))
     if (!js.isUndefined(playButtonEnabled)) __obj.updateDynamic("playButtonEnabled")(playButtonEnabled)
     if (responsive != null) __obj.updateDynamic("responsive")(responsive)
     if (slideToIndex != null) __obj.updateDynamic("slideToIndex")(slideToIndex.asInstanceOf[js.Any])

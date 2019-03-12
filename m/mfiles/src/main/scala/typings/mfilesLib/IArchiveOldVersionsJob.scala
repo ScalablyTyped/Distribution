@@ -26,7 +26,7 @@ object IArchiveOldVersionsJob {
     AtLeastNDaysOlder: scala.Double,
     AtLeastNVersionsOlder: scala.Double,
     CheckedInBefore: ITimestamp,
-    Clone: js.Function0[IArchiveOldVersionsJob],
+    Clone: () => IArchiveOldVersionsJob,
     Flags: mfilesLib.MFilesNs.MFExportContentFlag,
     Impersonation: IImpersonation,
     MarkedForArchiving: scala.Boolean,
@@ -36,7 +36,7 @@ object IArchiveOldVersionsJob {
     UseAtLeastNVersionsOlder: scala.Boolean,
     UseCheckedInBefore: scala.Boolean
   ): IArchiveOldVersionsJob = {
-    val __obj = js.Dynamic.literal(AtLeastNDaysOlder = AtLeastNDaysOlder, AtLeastNVersionsOlder = AtLeastNVersionsOlder, CheckedInBefore = CheckedInBefore, Clone = Clone, Flags = Flags, Impersonation = Impersonation, MarkedForArchiving = MarkedForArchiving, NoVersionTag = NoVersionTag, TargetLocation = TargetLocation, UseAtLeastNDaysOlder = UseAtLeastNDaysOlder, UseAtLeastNVersionsOlder = UseAtLeastNVersionsOlder, UseCheckedInBefore = UseCheckedInBefore)
+    val __obj = js.Dynamic.literal(AtLeastNDaysOlder = AtLeastNDaysOlder, AtLeastNVersionsOlder = AtLeastNVersionsOlder, CheckedInBefore = CheckedInBefore, Clone = js.Any.fromFunction0(Clone), Flags = Flags, Impersonation = Impersonation, MarkedForArchiving = MarkedForArchiving, NoVersionTag = NoVersionTag, TargetLocation = TargetLocation, UseAtLeastNDaysOlder = UseAtLeastNDaysOlder, UseAtLeastNVersionsOlder = UseAtLeastNVersionsOlder, UseCheckedInBefore = UseCheckedInBefore)
   
     __obj.asInstanceOf[IArchiveOldVersionsJob]
   }

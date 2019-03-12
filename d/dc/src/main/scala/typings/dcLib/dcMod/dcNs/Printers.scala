@@ -12,11 +12,8 @@ trait Printers extends js.Object {
 
 object Printers {
   @scala.inline
-  def apply(
-    filter: js.Function1[js.Any, java.lang.String],
-    filters: js.Function1[js.Array[_], java.lang.String]
-  ): Printers = {
-    val __obj = js.Dynamic.literal(filter = filter, filters = filters)
+  def apply(filter: js.Any => java.lang.String, filters: js.Array[_] => java.lang.String): Printers = {
+    val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), filters = js.Any.fromFunction1(filters))
   
     __obj.asInstanceOf[Printers]
   }

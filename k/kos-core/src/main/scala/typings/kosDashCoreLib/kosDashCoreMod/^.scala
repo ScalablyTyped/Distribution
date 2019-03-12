@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("kos-core", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var default: kosDashCoreLib.kosDashCoreMod.Kos = js.native
+  var default: Kos = js.native
 }
 

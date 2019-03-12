@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ListLevel protected () extends js.Object {
   var Alignment: WdListLevelAlignment = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
-  var Font: Font = js.native
+  var Font: activexDashWordLib.WordNs.Font = js.native
   val Index: scala.Double = js.native
   var LinkedStyle: java.lang.String = js.native
   var NumberFormat: java.lang.String = js.native

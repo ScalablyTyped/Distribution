@@ -263,47 +263,47 @@ object IOperation {
   def apply(
     action: java.lang.String = null,
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
-    allowWrite: js.Function0[scala.Boolean] = null,
+    allowWrite: () => scala.Boolean = null,
     alternateClassName: js.Any = null,
     batch: IBatch = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     callback: js.Any = null,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     extend: java.lang.String = null,
     filters: senchaUnderscoreTouchLib.ExtNs.Array = null,
-    getAction: js.Function0[java.lang.String] = null,
-    getAddRecords: js.Function0[scala.Boolean] = null,
-    getBatch: js.Function0[IBatch] = null,
-    getCallback: js.Function0[_] = null,
-    getError: js.Function0[_] = null,
-    getFilters: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getGrouper: js.Function0[senchaUnderscoreTouchLib.ExtNs.utilNs.IGrouper] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getLimit: js.Function0[scala.Double] = null,
-    getModel: js.Function0[IModel] = null,
-    getNode: js.Function0[_] = null,
-    getPage: js.Function0[_] = null,
-    getParams: js.Function0[_] = null,
-    getRequest: js.Function0[IRequest] = null,
-    getResponse: js.Function0[_] = null,
-    getResultSet: js.Function0[IResultSet] = null,
-    getScope: js.Function0[_] = null,
-    getSorters: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getStart: js.Function0[scala.Double] = null,
-    getSynchronous: js.Function0[scala.Boolean] = null,
-    getUrl: js.Function0[_] = null,
-    getWithCredentials: js.Function0[scala.Boolean] = null,
+    getAction: () => java.lang.String = null,
+    getAddRecords: () => scala.Boolean = null,
+    getBatch: () => IBatch = null,
+    getCallback: () => _ = null,
+    getError: () => _ = null,
+    getFilters: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getGrouper: () => senchaUnderscoreTouchLib.ExtNs.utilNs.IGrouper = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getLimit: () => scala.Double = null,
+    getModel: () => IModel = null,
+    getNode: () => _ = null,
+    getPage: () => _ = null,
+    getParams: () => _ = null,
+    getRequest: () => IRequest = null,
+    getResponse: () => _ = null,
+    getResultSet: () => IResultSet = null,
+    getScope: () => _ = null,
+    getSorters: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getStart: () => scala.Double = null,
+    getSynchronous: () => scala.Boolean = null,
+    getUrl: () => _ = null,
+    getWithCredentials: () => scala.Boolean = null,
     group: js.UndefOr[scala.Boolean] = js.undefined,
     grouper: senchaUnderscoreTouchLib.ExtNs.utilNs.IGrouper = null,
-    hasException: js.Function0[scala.Boolean] = null,
+    hasException: () => scala.Boolean = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
-    isComplete: js.Function0[scala.Boolean] = null,
-    isRunning: js.Function0[scala.Boolean] = null,
-    isStarted: js.Function0[scala.Boolean] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
+    isComplete: () => scala.Boolean = null,
+    isRunning: () => scala.Boolean = null,
+    isStarted: () => scala.Boolean = null,
     limit: scala.Int | scala.Double = null,
     mixins: js.Any = null,
     model: IModel = null,
@@ -315,87 +315,84 @@ object IOperation {
     resultSet: IResultSet = null,
     scope: js.Any = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setAction: js.Function1[/* action */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setAddRecords: js.Function1[/* addRecords */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setBatch: js.Function1[/* batch */ js.UndefOr[IBatch], scala.Unit] = null,
-    setCallback: js.Function1[/* callback */ js.UndefOr[js.Any], scala.Unit] = null,
-    setCompleted: js.Function0[scala.Unit] = null,
-    setException: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit] = null,
-    setFilters: js.Function1[/* filters */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
-    setGrouper: js.Function1[
-      /* grouper */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.utilNs.IGrouper], 
-      scala.Unit
-    ] = null,
-    setLimit: js.Function1[/* limit */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setModel: js.Function1[/* model */ js.UndefOr[IModel], scala.Unit] = null,
-    setNode: js.Function1[/* node */ js.UndefOr[js.Any], scala.Unit] = null,
-    setPage: js.Function1[/* page */ js.UndefOr[js.Any], scala.Unit] = null,
-    setParams: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
-    setRecords: js.Function1[/* records */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
-    setRequest: js.Function1[/* request */ js.UndefOr[IRequest], scala.Unit] = null,
-    setResponse: js.Function1[/* response */ js.UndefOr[js.Any], scala.Unit] = null,
-    setResultSet: js.Function1[/* resultSet */ js.UndefOr[IResultSet], scala.Unit] = null,
-    setScope: js.Function1[/* scope */ js.UndefOr[js.Any], scala.Unit] = null,
-    setSorters: js.Function1[/* sorters */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
-    setStart: js.Function1[/* start */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setStarted: js.Function0[scala.Unit] = null,
-    setSuccessful: js.Function0[scala.Unit] = null,
-    setSynchronous: js.Function1[/* synchronous */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setUrl: js.Function1[/* url */ js.UndefOr[js.Any], scala.Unit] = null,
-    setWithCredentials: js.Function1[/* withCredentials */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setAction: /* action */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setAddRecords: /* addRecords */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setBatch: /* batch */ js.UndefOr[IBatch] => scala.Unit = null,
+    setCallback: /* callback */ js.UndefOr[js.Any] => scala.Unit = null,
+    setCompleted: () => scala.Unit = null,
+    setException: /* error */ js.UndefOr[js.Any] => scala.Unit = null,
+    setFilters: /* filters */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
+    setGrouper: /* grouper */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.utilNs.IGrouper] => scala.Unit = null,
+    setLimit: /* limit */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setModel: /* model */ js.UndefOr[IModel] => scala.Unit = null,
+    setNode: /* node */ js.UndefOr[js.Any] => scala.Unit = null,
+    setPage: /* page */ js.UndefOr[js.Any] => scala.Unit = null,
+    setParams: /* params */ js.UndefOr[js.Any] => scala.Unit = null,
+    setRecords: /* records */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
+    setRequest: /* request */ js.UndefOr[IRequest] => scala.Unit = null,
+    setResponse: /* response */ js.UndefOr[js.Any] => scala.Unit = null,
+    setResultSet: /* resultSet */ js.UndefOr[IResultSet] => scala.Unit = null,
+    setScope: /* scope */ js.UndefOr[js.Any] => scala.Unit = null,
+    setSorters: /* sorters */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
+    setStart: /* start */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setStarted: () => scala.Unit = null,
+    setSuccessful: () => scala.Unit = null,
+    setSynchronous: /* synchronous */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setUrl: /* url */ js.UndefOr[js.Any] => scala.Unit = null,
+    setWithCredentials: /* withCredentials */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     sorters: senchaUnderscoreTouchLib.ExtNs.Array = null,
     start: scala.Int | scala.Double = null,
     statics: js.Any = null,
     synchronous: js.UndefOr[scala.Boolean] = js.undefined,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null,
-    wasSuccessful: js.Function0[scala.Boolean] = null,
+    wasSuccessful: () => scala.Boolean = null,
     withCredentials: js.UndefOr[scala.Boolean] = js.undefined
   ): IOperation = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action)
     if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (allowWrite != null) __obj.updateDynamic("allowWrite")(allowWrite)
+    if (allowWrite != null) __obj.updateDynamic("allowWrite")(js.Any.fromFunction0(allowWrite))
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
     if (batch != null) __obj.updateDynamic("batch")(batch)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (callback != null) __obj.updateDynamic("callback")(callback)
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (extend != null) __obj.updateDynamic("extend")(extend)
     if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (getAction != null) __obj.updateDynamic("getAction")(getAction)
-    if (getAddRecords != null) __obj.updateDynamic("getAddRecords")(getAddRecords)
-    if (getBatch != null) __obj.updateDynamic("getBatch")(getBatch)
-    if (getCallback != null) __obj.updateDynamic("getCallback")(getCallback)
-    if (getError != null) __obj.updateDynamic("getError")(getError)
-    if (getFilters != null) __obj.updateDynamic("getFilters")(getFilters)
-    if (getGrouper != null) __obj.updateDynamic("getGrouper")(getGrouper)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getLimit != null) __obj.updateDynamic("getLimit")(getLimit)
-    if (getModel != null) __obj.updateDynamic("getModel")(getModel)
-    if (getNode != null) __obj.updateDynamic("getNode")(getNode)
-    if (getPage != null) __obj.updateDynamic("getPage")(getPage)
-    if (getParams != null) __obj.updateDynamic("getParams")(getParams)
-    if (getRequest != null) __obj.updateDynamic("getRequest")(getRequest)
-    if (getResponse != null) __obj.updateDynamic("getResponse")(getResponse)
-    if (getResultSet != null) __obj.updateDynamic("getResultSet")(getResultSet)
-    if (getScope != null) __obj.updateDynamic("getScope")(getScope)
-    if (getSorters != null) __obj.updateDynamic("getSorters")(getSorters)
-    if (getStart != null) __obj.updateDynamic("getStart")(getStart)
-    if (getSynchronous != null) __obj.updateDynamic("getSynchronous")(getSynchronous)
-    if (getUrl != null) __obj.updateDynamic("getUrl")(getUrl)
-    if (getWithCredentials != null) __obj.updateDynamic("getWithCredentials")(getWithCredentials)
+    if (getAction != null) __obj.updateDynamic("getAction")(js.Any.fromFunction0(getAction))
+    if (getAddRecords != null) __obj.updateDynamic("getAddRecords")(js.Any.fromFunction0(getAddRecords))
+    if (getBatch != null) __obj.updateDynamic("getBatch")(js.Any.fromFunction0(getBatch))
+    if (getCallback != null) __obj.updateDynamic("getCallback")(js.Any.fromFunction0(getCallback))
+    if (getError != null) __obj.updateDynamic("getError")(js.Any.fromFunction0(getError))
+    if (getFilters != null) __obj.updateDynamic("getFilters")(js.Any.fromFunction0(getFilters))
+    if (getGrouper != null) __obj.updateDynamic("getGrouper")(js.Any.fromFunction0(getGrouper))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getLimit != null) __obj.updateDynamic("getLimit")(js.Any.fromFunction0(getLimit))
+    if (getModel != null) __obj.updateDynamic("getModel")(js.Any.fromFunction0(getModel))
+    if (getNode != null) __obj.updateDynamic("getNode")(js.Any.fromFunction0(getNode))
+    if (getPage != null) __obj.updateDynamic("getPage")(js.Any.fromFunction0(getPage))
+    if (getParams != null) __obj.updateDynamic("getParams")(js.Any.fromFunction0(getParams))
+    if (getRequest != null) __obj.updateDynamic("getRequest")(js.Any.fromFunction0(getRequest))
+    if (getResponse != null) __obj.updateDynamic("getResponse")(js.Any.fromFunction0(getResponse))
+    if (getResultSet != null) __obj.updateDynamic("getResultSet")(js.Any.fromFunction0(getResultSet))
+    if (getScope != null) __obj.updateDynamic("getScope")(js.Any.fromFunction0(getScope))
+    if (getSorters != null) __obj.updateDynamic("getSorters")(js.Any.fromFunction0(getSorters))
+    if (getStart != null) __obj.updateDynamic("getStart")(js.Any.fromFunction0(getStart))
+    if (getSynchronous != null) __obj.updateDynamic("getSynchronous")(js.Any.fromFunction0(getSynchronous))
+    if (getUrl != null) __obj.updateDynamic("getUrl")(js.Any.fromFunction0(getUrl))
+    if (getWithCredentials != null) __obj.updateDynamic("getWithCredentials")(js.Any.fromFunction0(getWithCredentials))
     if (!js.isUndefined(group)) __obj.updateDynamic("group")(group)
     if (grouper != null) __obj.updateDynamic("grouper")(grouper)
-    if (hasException != null) __obj.updateDynamic("hasException")(hasException)
+    if (hasException != null) __obj.updateDynamic("hasException")(js.Any.fromFunction0(hasException))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
-    if (isComplete != null) __obj.updateDynamic("isComplete")(isComplete)
-    if (isRunning != null) __obj.updateDynamic("isRunning")(isRunning)
-    if (isStarted != null) __obj.updateDynamic("isStarted")(isStarted)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (isComplete != null) __obj.updateDynamic("isComplete")(js.Any.fromFunction0(isComplete))
+    if (isRunning != null) __obj.updateDynamic("isRunning")(js.Any.fromFunction0(isRunning))
+    if (isStarted != null) __obj.updateDynamic("isStarted")(js.Any.fromFunction0(isStarted))
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (model != null) __obj.updateDynamic("model")(model)
@@ -407,38 +404,38 @@ object IOperation {
     if (resultSet != null) __obj.updateDynamic("resultSet")(resultSet)
     if (scope != null) __obj.updateDynamic("scope")(scope)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setAction != null) __obj.updateDynamic("setAction")(setAction)
-    if (setAddRecords != null) __obj.updateDynamic("setAddRecords")(setAddRecords)
-    if (setBatch != null) __obj.updateDynamic("setBatch")(setBatch)
-    if (setCallback != null) __obj.updateDynamic("setCallback")(setCallback)
-    if (setCompleted != null) __obj.updateDynamic("setCompleted")(setCompleted)
-    if (setException != null) __obj.updateDynamic("setException")(setException)
-    if (setFilters != null) __obj.updateDynamic("setFilters")(setFilters)
-    if (setGrouper != null) __obj.updateDynamic("setGrouper")(setGrouper)
-    if (setLimit != null) __obj.updateDynamic("setLimit")(setLimit)
-    if (setModel != null) __obj.updateDynamic("setModel")(setModel)
-    if (setNode != null) __obj.updateDynamic("setNode")(setNode)
-    if (setPage != null) __obj.updateDynamic("setPage")(setPage)
-    if (setParams != null) __obj.updateDynamic("setParams")(setParams)
-    if (setRecords != null) __obj.updateDynamic("setRecords")(setRecords)
-    if (setRequest != null) __obj.updateDynamic("setRequest")(setRequest)
-    if (setResponse != null) __obj.updateDynamic("setResponse")(setResponse)
-    if (setResultSet != null) __obj.updateDynamic("setResultSet")(setResultSet)
-    if (setScope != null) __obj.updateDynamic("setScope")(setScope)
-    if (setSorters != null) __obj.updateDynamic("setSorters")(setSorters)
-    if (setStart != null) __obj.updateDynamic("setStart")(setStart)
-    if (setStarted != null) __obj.updateDynamic("setStarted")(setStarted)
-    if (setSuccessful != null) __obj.updateDynamic("setSuccessful")(setSuccessful)
-    if (setSynchronous != null) __obj.updateDynamic("setSynchronous")(setSynchronous)
-    if (setUrl != null) __obj.updateDynamic("setUrl")(setUrl)
-    if (setWithCredentials != null) __obj.updateDynamic("setWithCredentials")(setWithCredentials)
+    if (setAction != null) __obj.updateDynamic("setAction")(js.Any.fromFunction1(setAction))
+    if (setAddRecords != null) __obj.updateDynamic("setAddRecords")(js.Any.fromFunction1(setAddRecords))
+    if (setBatch != null) __obj.updateDynamic("setBatch")(js.Any.fromFunction1(setBatch))
+    if (setCallback != null) __obj.updateDynamic("setCallback")(js.Any.fromFunction1(setCallback))
+    if (setCompleted != null) __obj.updateDynamic("setCompleted")(js.Any.fromFunction0(setCompleted))
+    if (setException != null) __obj.updateDynamic("setException")(js.Any.fromFunction1(setException))
+    if (setFilters != null) __obj.updateDynamic("setFilters")(js.Any.fromFunction1(setFilters))
+    if (setGrouper != null) __obj.updateDynamic("setGrouper")(js.Any.fromFunction1(setGrouper))
+    if (setLimit != null) __obj.updateDynamic("setLimit")(js.Any.fromFunction1(setLimit))
+    if (setModel != null) __obj.updateDynamic("setModel")(js.Any.fromFunction1(setModel))
+    if (setNode != null) __obj.updateDynamic("setNode")(js.Any.fromFunction1(setNode))
+    if (setPage != null) __obj.updateDynamic("setPage")(js.Any.fromFunction1(setPage))
+    if (setParams != null) __obj.updateDynamic("setParams")(js.Any.fromFunction1(setParams))
+    if (setRecords != null) __obj.updateDynamic("setRecords")(js.Any.fromFunction1(setRecords))
+    if (setRequest != null) __obj.updateDynamic("setRequest")(js.Any.fromFunction1(setRequest))
+    if (setResponse != null) __obj.updateDynamic("setResponse")(js.Any.fromFunction1(setResponse))
+    if (setResultSet != null) __obj.updateDynamic("setResultSet")(js.Any.fromFunction1(setResultSet))
+    if (setScope != null) __obj.updateDynamic("setScope")(js.Any.fromFunction1(setScope))
+    if (setSorters != null) __obj.updateDynamic("setSorters")(js.Any.fromFunction1(setSorters))
+    if (setStart != null) __obj.updateDynamic("setStart")(js.Any.fromFunction1(setStart))
+    if (setStarted != null) __obj.updateDynamic("setStarted")(js.Any.fromFunction0(setStarted))
+    if (setSuccessful != null) __obj.updateDynamic("setSuccessful")(js.Any.fromFunction0(setSuccessful))
+    if (setSynchronous != null) __obj.updateDynamic("setSynchronous")(js.Any.fromFunction1(setSynchronous))
+    if (setUrl != null) __obj.updateDynamic("setUrl")(js.Any.fromFunction1(setUrl))
+    if (setWithCredentials != null) __obj.updateDynamic("setWithCredentials")(js.Any.fromFunction1(setWithCredentials))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (sorters != null) __obj.updateDynamic("sorters")(sorters)
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (!js.isUndefined(synchronous)) __obj.updateDynamic("synchronous")(synchronous)
     if (uses != null) __obj.updateDynamic("uses")(uses)
-    if (wasSuccessful != null) __obj.updateDynamic("wasSuccessful")(wasSuccessful)
+    if (wasSuccessful != null) __obj.updateDynamic("wasSuccessful")(js.Any.fromFunction0(wasSuccessful))
     if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
     __obj.asInstanceOf[IOperation]
   }

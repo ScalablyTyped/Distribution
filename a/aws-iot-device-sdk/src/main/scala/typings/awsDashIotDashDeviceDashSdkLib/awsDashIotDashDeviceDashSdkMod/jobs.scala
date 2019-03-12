@@ -22,7 +22,7 @@ class jobs () extends device {
     * @param thingName - name of the Thing to cancel job execution notifications for
     * @param callback - function (err) callback for when the startJobNotifications operation completes
     */
-  def startJobNotifications(thingName: java.lang.String, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): mqttLib.mqttMod.Client = js.native
+  def startJobNotifications(thingName: java.lang.String, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): mqttLib.mqttMod.Client = js.native
   /**
     * Subscribes to job execution notifications for the thing named `thingName`. If
     * `operationName` is specified then the callback will only be called when a job
@@ -42,7 +42,7 @@ class jobs () extends device {
   def subscribeToJobs(
     thingName: java.lang.String,
     operationName: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* job */ job, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* job */ job, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Unsubscribes from job execution notifications for the thing named `thingName` having
@@ -56,7 +56,7 @@ class jobs () extends device {
   def unsubscribeFromJobs(
     thingName: java.lang.String,
     operationName: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
 }
 

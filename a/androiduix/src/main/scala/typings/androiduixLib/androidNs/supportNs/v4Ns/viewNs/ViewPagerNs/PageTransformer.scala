@@ -11,8 +11,8 @@ trait PageTransformer extends js.Object {
 
 object PageTransformer {
   @scala.inline
-  def apply(transformPage: js.Function2[androiduixLib.androidNs.viewNs.View, scala.Double, scala.Unit]): PageTransformer = {
-    val __obj = js.Dynamic.literal(transformPage = transformPage)
+  def apply(transformPage: (androiduixLib.androidNs.viewNs.View, scala.Double) => scala.Unit): PageTransformer = {
+    val __obj = js.Dynamic.literal(transformPage = js.Any.fromFunction2(transformPage))
   
     __obj.asInstanceOf[PageTransformer]
   }

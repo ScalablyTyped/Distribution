@@ -26,7 +26,7 @@ class Stream protected ()
   var writable: scala.Boolean = js.native
   def check_destroyed(): scala.Unit = js.native
   def destroy(): scala.Unit = js.native
-  def destroy(error: nodeLib.Error): scala.Unit = js.native
+  def destroy(error: stdLib.Error): scala.Unit = js.native
   def end(): scala.Unit = js.native
   def end(buffer: nodeLib.Buffer): scala.Unit = js.native
   def end(buffer: nodeLib.Buffer, cb: js.Function): scala.Unit = js.native

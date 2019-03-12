@@ -22,26 +22,16 @@ trait XSpellChecker1 extends XSupportedLanguages {
 object XSpellChecker1 {
   @scala.inline
   def apply(
-    Languages: activexDashInteropLib.SafeArray[scala.Double],
-    acquire: js.Function0[scala.Unit],
-    getLanguages: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    hasLanguage: js.Function1[scala.Double, scala.Boolean],
-    isValid: js.Function3[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
-      scala.Boolean
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    spell: js.Function3[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
-      XSpellAlternatives
-    ]
+    Languages: stdLib.SafeArray[scala.Double],
+    acquire: () => scala.Unit,
+    getLanguages: () => stdLib.SafeArray[scala.Double],
+    hasLanguage: scala.Double => scala.Boolean,
+    isValid: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    spell: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues) => XSpellAlternatives
   ): XSpellChecker1 = {
-    val __obj = js.Dynamic.literal(Languages = Languages, acquire = acquire, getLanguages = getLanguages, hasLanguage = hasLanguage, isValid = isValid, queryInterface = queryInterface, release = release, spell = spell)
+    val __obj = js.Dynamic.literal(Languages = Languages, acquire = js.Any.fromFunction0(acquire), getLanguages = js.Any.fromFunction0(getLanguages), hasLanguage = js.Any.fromFunction1(hasLanguage), isValid = js.Any.fromFunction3(isValid), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), spell = js.Any.fromFunction3(spell))
   
     __obj.asInstanceOf[XSpellChecker1]
   }

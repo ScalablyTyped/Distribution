@@ -27,12 +27,12 @@ trait CollectionPosition extends js.Object {
 object CollectionPosition {
   @scala.inline
   def apply(
-    boundingBox: js.Function1[BoundingBoxOptions, BoundingBox12 | BoundingBoxWH],
-    boundingbox: js.Function1[BoundingBoxOptions, BoundingBox12 | BoundingBoxWH],
-    renderedBoundingBox: js.Function1[BoundingBoxOptions, BoundingBox12 | BoundingBoxWH],
-    renderedBoundingbox: js.Function1[BoundingBoxOptions, BoundingBox12 | BoundingBoxWH]
+    boundingBox: BoundingBoxOptions => BoundingBox12 | BoundingBoxWH,
+    boundingbox: BoundingBoxOptions => BoundingBox12 | BoundingBoxWH,
+    renderedBoundingBox: BoundingBoxOptions => BoundingBox12 | BoundingBoxWH,
+    renderedBoundingbox: BoundingBoxOptions => BoundingBox12 | BoundingBoxWH
   ): CollectionPosition = {
-    val __obj = js.Dynamic.literal(boundingBox = boundingBox, boundingbox = boundingbox, renderedBoundingBox = renderedBoundingBox, renderedBoundingbox = renderedBoundingbox)
+    val __obj = js.Dynamic.literal(boundingBox = js.Any.fromFunction1(boundingBox), boundingbox = js.Any.fromFunction1(boundingbox), renderedBoundingBox = js.Any.fromFunction1(renderedBoundingBox), renderedBoundingbox = js.Any.fromFunction1(renderedBoundingbox))
   
     __obj.asInstanceOf[CollectionPosition]
   }

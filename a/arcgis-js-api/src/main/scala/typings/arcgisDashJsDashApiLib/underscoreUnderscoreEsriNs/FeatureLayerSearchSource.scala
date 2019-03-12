@@ -57,7 +57,7 @@ object FeatureLayerSearchSource {
   @scala.inline
   def apply(
     autoNavigate: scala.Boolean,
-    clone: js.Function0[FeatureLayerSearchSource],
+    clone: () => FeatureLayerSearchSource,
     displayField: java.lang.String,
     exactMatch: scala.Boolean,
     featureLayer: FeatureLayer,
@@ -78,11 +78,11 @@ object FeatureLayerSearchSource {
     suffix: java.lang.String,
     suggestionTemplate: java.lang.String,
     suggestionsEnabled: scala.Boolean,
-    toJSON: js.Function0[js.Any],
+    toJSON: () => js.Any,
     withinViewEnabled: scala.Boolean,
     zoomScale: scala.Double
   ): FeatureLayerSearchSource = {
-    val __obj = js.Dynamic.literal(autoNavigate = autoNavigate, clone = clone, displayField = displayField, exactMatch = exactMatch, featureLayer = featureLayer, filter = filter, maxResults = maxResults, maxSuggestions = maxSuggestions, minSuggestCharacters = minSuggestCharacters, name = name, outFields = outFields, placeholder = placeholder, popupEnabled = popupEnabled, popupTemplate = popupTemplate, prefix = prefix, resultGraphicEnabled = resultGraphicEnabled, resultSymbol = resultSymbol, searchFields = searchFields, searchTemplate = searchTemplate, suffix = suffix, suggestionTemplate = suggestionTemplate, suggestionsEnabled = suggestionsEnabled, toJSON = toJSON, withinViewEnabled = withinViewEnabled, zoomScale = zoomScale)
+    val __obj = js.Dynamic.literal(autoNavigate = autoNavigate, clone = js.Any.fromFunction0(clone), displayField = displayField, exactMatch = exactMatch, featureLayer = featureLayer, filter = filter, maxResults = maxResults, maxSuggestions = maxSuggestions, minSuggestCharacters = minSuggestCharacters, name = name, outFields = outFields, placeholder = placeholder, popupEnabled = popupEnabled, popupTemplate = popupTemplate, prefix = prefix, resultGraphicEnabled = resultGraphicEnabled, resultSymbol = resultSymbol, searchFields = searchFields, searchTemplate = searchTemplate, suffix = suffix, suggestionTemplate = suggestionTemplate, suggestionsEnabled = suggestionsEnabled, toJSON = js.Any.fromFunction0(toJSON), withinViewEnabled = withinViewEnabled, zoomScale = zoomScale)
   
     __obj.asInstanceOf[FeatureLayerSearchSource]
   }

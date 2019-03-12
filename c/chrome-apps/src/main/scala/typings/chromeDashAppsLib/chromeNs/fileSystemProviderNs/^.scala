@@ -37,7 +37,7 @@ object ^ extends js.Object {
     */
   val onAbortRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
-      /* options */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.AbortRequestedEventOptions, 
+      /* options */ AbortRequestedEventOptions, 
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -61,7 +61,7 @@ object ^ extends js.Object {
     */
   val onAddWatcherRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
-      /* options */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.WatcherRequestedEventOptions, 
+      /* options */ WatcherRequestedEventOptions, 
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -84,7 +84,7 @@ object ^ extends js.Object {
     */
   val onCloseFileRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
-      /* options */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.CloseFileRequestedEventOptions, 
+      /* options */ CloseFileRequestedEventOptions, 
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -109,7 +109,7 @@ object ^ extends js.Object {
     */
   val onConfigureRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
-      /* options */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.ConfigureRequestedEventOptions, 
+      /* options */ ConfigureRequestedEventOptions, 
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -132,7 +132,7 @@ object ^ extends js.Object {
     */
   val onCopyEntryRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
-      /* options */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.CopyEntryRequestedEventOptions, 
+      /* options */ CopyEntryRequestedEventOptions, 
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -156,7 +156,7 @@ object ^ extends js.Object {
     */
   val onCreateDirectoryRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
-      /* options */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.CreateDirectoryRequestedEventOptions, 
+      /* options */ CreateDirectoryRequestedEventOptions, 
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -179,7 +179,7 @@ object ^ extends js.Object {
     */
   val onCreateFileRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
-      /* options */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.CreateFileRequestedEventOptions, 
+      /* options */ CreateFileRequestedEventOptions, 
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -203,7 +203,7 @@ object ^ extends js.Object {
     */
   val onDeleteEntryRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
-      /* options */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.DeleteEntryRequestedEventOptions, 
+      /* options */ DeleteEntryRequestedEventOptions, 
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -228,7 +228,7 @@ object ^ extends js.Object {
     */
   val onExecuteActionRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
-      /* options */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.ExecuteActionRequestedEventOptions, 
+      /* options */ ExecuteActionRequestedEventOptions, 
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -255,11 +255,8 @@ object ^ extends js.Object {
     **/
   val onGetActionsRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
-      /* options */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.GetActionsRequestedEventOptions, 
-      /* successCallback */ js.Function1[
-        /* actions */ js.Array[chromeDashAppsLib.chromeNs.fileSystemProviderNs.Action], 
-        scala.Unit
-      ], 
+      /* options */ GetActionsRequestedEventOptions, 
+      /* successCallback */ js.Function1[/* actions */ js.Array[Action], scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
           chromeDashAppsLib.Anon_ABORT, 
@@ -282,11 +279,8 @@ object ^ extends js.Object {
     */
   val onGetMetadataRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
-      /* options */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.MetadataRequestedEventOptions, 
-      /* successCallback */ js.Function1[
-        /* metadata */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.EntryMetadata, 
-        scala.Unit
-      ], 
+      /* options */ MetadataRequestedEventOptions, 
+      /* successCallback */ js.Function1[/* metadata */ EntryMetadata, scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
           chromeDashAppsLib.Anon_ABORT, 
@@ -333,7 +327,7 @@ object ^ extends js.Object {
     */
   val onMoveEntryRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
-      /* options */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.MoveEntryRequestedEventOptions, 
+      /* options */ MoveEntryRequestedEventOptions, 
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -357,7 +351,7 @@ object ^ extends js.Object {
     */
   val onOpenFileRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
-      /* options */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.OpenFileRequestedEventOptions, 
+      /* options */ OpenFileRequestedEventOptions, 
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -381,12 +375,8 @@ object ^ extends js.Object {
     */
   val onReadDirectoryRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
-      /* options */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.ReadDirectoryRequestedEventOptions, 
-      /* successCallback */ js.Function2[
-        /* entries */ js.Array[chromeDashAppsLib.chromeNs.fileSystemProviderNs.EntryMetadata], 
-        /* hasMore */ scala.Boolean, 
-        scala.Unit
-      ], 
+      /* options */ ReadDirectoryRequestedEventOptions, 
+      /* successCallback */ js.Function2[/* entries */ js.Array[EntryMetadata], /* hasMore */ scala.Boolean, scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
           chromeDashAppsLib.Anon_ABORT, 
@@ -409,7 +399,7 @@ object ^ extends js.Object {
     */
   val onReadFileRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
-      /* options */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.ReadFileRequestedEventOptions, 
+      /* options */ ReadFileRequestedEventOptions, 
       /* successCallback */ js.Function2[/* data */ stdLib.ArrayBuffer, /* hasMore */ scala.Boolean, scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -433,7 +423,7 @@ object ^ extends js.Object {
     */
   val onRemoveWatcherRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
-      /* options */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.WatcherRequestedEventOptions, 
+      /* options */ WatcherRequestedEventOptions, 
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -456,7 +446,7 @@ object ^ extends js.Object {
     */
   val onTruncateRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
-      /* options */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.TruncateRequestedEventOptions, 
+      /* options */ TruncateRequestedEventOptions, 
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -483,7 +473,7 @@ object ^ extends js.Object {
     */
   val onUnmountRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
-      /* options */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.UnmountRequestedEventOptions, 
+      /* options */ UnmountRequestedEventOptions, 
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -505,7 +495,7 @@ object ^ extends js.Object {
     */
   val onWriteFileRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
-      /* options */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.WriteFileRequestedEventOptions, 
+      /* options */ WriteFileRequestedEventOptions, 
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -528,21 +518,13 @@ object ^ extends js.Object {
     */
   def get(
     fileSystemId: java.lang.String,
-    callback: js.Function1[
-      /* fileSystem */ chromeDashAppsLib.chromeNs.fileSystemProviderNs.FileSystemInfo, 
-      scala.Unit
-    ]
+    callback: js.Function1[/* fileSystem */ FileSystemInfo, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Returns all file systems mounted by the app.
     * @param callback Callback to receive the result of getAll function.
     */
-  def getAll(
-    callback: js.Function1[
-      /* fileSystems */ js.Array[chromeDashAppsLib.chromeNs.fileSystemProviderNs.FileSystemInfo], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def getAll(callback: js.Function1[/* fileSystems */ js.Array[FileSystemInfo], scala.Unit]): scala.Unit = js.native
   ///\/\/|\/\/\\\
   /// METHODS \\\
   ///\/\/|\/\/\\\
@@ -559,11 +541,8 @@ object ^ extends js.Object {
     *
     * @param callback A generic result callback to indicate success or failure.
     */
-  def mount(options: chromeDashAppsLib.chromeNs.fileSystemProviderNs.MountOptions): scala.Unit = js.native
-  def mount(
-    options: chromeDashAppsLib.chromeNs.fileSystemProviderNs.MountOptions,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
+  def mount(options: MountOptions): scala.Unit = js.native
+  def mount(options: MountOptions, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
     * @requires Manifest: 'file_system_provider.notify' = true
     * @description
@@ -592,10 +571,7 @@ object ^ extends js.Object {
     * @param callback A generic result callback to indicate success or failure.
     * @since Chrome 45.
     */
-  def notify(
-    options: chromeDashAppsLib.chromeNs.fileSystemProviderNs.NotificationOptions,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
+  def notify(options: NotificationOptions, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
     * Unmounts a file system with the given fileSystemId.
     * It must be called after onUnmountRequested is invoked.
@@ -606,10 +582,7 @@ object ^ extends js.Object {
     *
     * @param callback A generic result callback to indicate success or failure.
     */
-  def unmount(options: chromeDashAppsLib.chromeNs.fileSystemProviderNs.UnmountOptions): scala.Unit = js.native
-  def unmount(
-    options: chromeDashAppsLib.chromeNs.fileSystemProviderNs.UnmountOptions,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
+  def unmount(options: UnmountOptions): scala.Unit = js.native
+  def unmount(options: UnmountOptions, callback: js.Function0[scala.Unit]): scala.Unit = js.native
 }
 

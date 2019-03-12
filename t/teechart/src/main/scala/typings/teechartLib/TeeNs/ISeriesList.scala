@@ -17,13 +17,13 @@ trait ISeriesList extends js.Object {
 object ISeriesList {
   @scala.inline
   def apply(
-    anyUsesAxes: js.Function0[scala.Boolean],
+    anyUsesAxes: () => scala.Boolean,
     chart: IChart,
-    clicked: js.Function1[IPoint, scala.Boolean],
-    firstVisible: js.Function0[ISeries],
+    clicked: IPoint => scala.Boolean,
+    firstVisible: () => ISeries,
     items: js.Array[ISeries]
   ): ISeriesList = {
-    val __obj = js.Dynamic.literal(anyUsesAxes = anyUsesAxes, chart = chart, clicked = clicked, firstVisible = firstVisible, items = items)
+    val __obj = js.Dynamic.literal(anyUsesAxes = js.Any.fromFunction0(anyUsesAxes), chart = chart, clicked = js.Any.fromFunction1(clicked), firstVisible = js.Any.fromFunction0(firstVisible), items = items)
   
     __obj.asInstanceOf[ISeriesList]
   }

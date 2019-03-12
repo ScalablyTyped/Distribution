@@ -21,7 +21,7 @@ object IAreaOptions {
     axes: js.UndefOr[scala.Boolean] = js.undefined,
     behaveLikeLine: js.UndefOr[scala.Boolean] = js.undefined,
     continuousLine: js.UndefOr[scala.Boolean] = js.undefined,
-    dateFormat: js.Function1[/* timestamp */ scala.Double, java.lang.String] = null,
+    dateFormat: /* timestamp */ scala.Double => java.lang.String = null,
     eventLineColors: js.Array[java.lang.String] = null,
     eventStrokeWidth: scala.Int | scala.Double = null,
     events: js.Array[java.lang.String] = null,
@@ -37,13 +37,7 @@ object IAreaOptions {
     gridTextSize: scala.Int | scala.Double = null,
     gridTextWeight: java.lang.String = null,
     hideHover: scala.Boolean | AutoAlways = null,
-    hoverCallback: js.Function4[
-      /* index */ scala.Double, 
-      /* options */ ILineOptions, 
-      /* content */ java.lang.String, 
-      /* row */ js.Any, 
-      java.lang.String
-    ] = null,
+    hoverCallback: (/* index */ scala.Double, /* options */ ILineOptions, /* content */ java.lang.String, /* row */ js.Any) => java.lang.String = null,
     lineColors: js.Array[java.lang.String] = null,
     lineWidth: scala.Int | scala.Double = null,
     parseTime: js.UndefOr[scala.Boolean] = js.undefined,
@@ -55,9 +49,9 @@ object IAreaOptions {
     resize: js.UndefOr[scala.Boolean] = js.undefined,
     smooth: js.UndefOr[scala.Boolean] = js.undefined,
     xLabelAngle: scala.Int | scala.Double = null,
-    xLabelFormat: js.Function1[/* date */ stdLib.Date, java.lang.String] = null,
+    xLabelFormat: /* date */ stdLib.Date => java.lang.String = null,
     xLabels: Interval = null,
-    yLabelFormat: js.Function1[/* val */ js.Any, java.lang.String] = null,
+    yLabelFormat: /* val */ js.Any => java.lang.String = null,
     ymax: scala.Double | java.lang.String = null,
     ymin: scala.Double | java.lang.String = null
   ): IAreaOptions = {
@@ -65,7 +59,7 @@ object IAreaOptions {
     if (!js.isUndefined(axes)) __obj.updateDynamic("axes")(axes)
     if (!js.isUndefined(behaveLikeLine)) __obj.updateDynamic("behaveLikeLine")(behaveLikeLine)
     if (!js.isUndefined(continuousLine)) __obj.updateDynamic("continuousLine")(continuousLine)
-    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(js.Any.fromFunction1(dateFormat))
     if (eventLineColors != null) __obj.updateDynamic("eventLineColors")(eventLineColors)
     if (eventStrokeWidth != null) __obj.updateDynamic("eventStrokeWidth")(eventStrokeWidth.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events)
@@ -81,7 +75,7 @@ object IAreaOptions {
     if (gridTextSize != null) __obj.updateDynamic("gridTextSize")(gridTextSize.asInstanceOf[js.Any])
     if (gridTextWeight != null) __obj.updateDynamic("gridTextWeight")(gridTextWeight)
     if (hideHover != null) __obj.updateDynamic("hideHover")(hideHover.asInstanceOf[js.Any])
-    if (hoverCallback != null) __obj.updateDynamic("hoverCallback")(hoverCallback)
+    if (hoverCallback != null) __obj.updateDynamic("hoverCallback")(js.Any.fromFunction4(hoverCallback))
     if (lineColors != null) __obj.updateDynamic("lineColors")(lineColors)
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(parseTime)) __obj.updateDynamic("parseTime")(parseTime)
@@ -93,9 +87,9 @@ object IAreaOptions {
     if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
     if (!js.isUndefined(smooth)) __obj.updateDynamic("smooth")(smooth)
     if (xLabelAngle != null) __obj.updateDynamic("xLabelAngle")(xLabelAngle.asInstanceOf[js.Any])
-    if (xLabelFormat != null) __obj.updateDynamic("xLabelFormat")(xLabelFormat)
+    if (xLabelFormat != null) __obj.updateDynamic("xLabelFormat")(js.Any.fromFunction1(xLabelFormat))
     if (xLabels != null) __obj.updateDynamic("xLabels")(xLabels)
-    if (yLabelFormat != null) __obj.updateDynamic("yLabelFormat")(yLabelFormat)
+    if (yLabelFormat != null) __obj.updateDynamic("yLabelFormat")(js.Any.fromFunction1(yLabelFormat))
     if (ymax != null) __obj.updateDynamic("ymax")(ymax.asInstanceOf[js.Any])
     if (ymin != null) __obj.updateDynamic("ymin")(ymin.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAreaOptions]

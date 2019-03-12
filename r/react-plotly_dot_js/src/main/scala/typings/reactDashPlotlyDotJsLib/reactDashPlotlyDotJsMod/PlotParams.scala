@@ -92,7 +92,7 @@ trait PlotParams extends js.Object {
   var onInitialized: js.UndefOr[
     js.Function2[
       /* figure */ stdLib.Readonly[Figure], 
-      /* graphDiv */ stdLib.Readonly[reactLib.HTMLElement], 
+      /* graphDiv */ stdLib.Readonly[stdLib.HTMLElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -120,7 +120,7 @@ trait PlotParams extends js.Object {
   var onPurge: js.UndefOr[
     js.Function2[
       /* figure */ stdLib.Readonly[Figure], 
-      /* graphDiv */ stdLib.Readonly[reactLib.HTMLElement], 
+      /* graphDiv */ stdLib.Readonly[stdLib.HTMLElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -199,7 +199,7 @@ trait PlotParams extends js.Object {
   var onUpdate: js.UndefOr[
     js.Function2[
       /* figure */ stdLib.Readonly[Figure], 
-      /* graphDiv */ stdLib.Readonly[reactLib.HTMLElement], 
+      /* graphDiv */ stdLib.Readonly[stdLib.HTMLElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -233,124 +233,67 @@ object PlotParams {
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     divId: java.lang.String = null,
     frames: js.Array[Frame] = null,
-    onAfterExport: js.Function0[scala.Unit] = null,
-    onAfterPlot: js.Function0[scala.Unit] = null,
-    onAnimated: js.Function0[scala.Unit] = null,
-    onAnimatingFrame: js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.FrameAnimationEvent */ _
-      ], 
-      scala.Unit
-    ] = null,
-    onAnimationInterrupted: js.Function0[scala.Unit] = null,
-    onAutoSize: js.Function0[scala.Unit] = null,
-    onBeforeExport: js.Function0[scala.Unit] = null,
-    onButtonClicked: js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.ButtonClickEvent */ _
-      ], 
-      scala.Unit
-    ] = null,
-    onClick: js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotMouseEvent */ _
-      ], 
-      scala.Unit
-    ] = null,
-    onClickAnnotation: js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.ClickAnnotationEvent */ _
-      ], 
-      scala.Unit
-    ] = null,
-    onDeselect: js.Function0[scala.Unit] = null,
-    onDoubleClick: js.Function0[scala.Unit] = null,
-    onError: js.Function1[/* err */ stdLib.Readonly[stdLib.Error], scala.Unit] = null,
-    onFramework: js.Function0[scala.Unit] = null,
-    onHover: js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotMouseEvent */ _
-      ], 
-      scala.Unit
-    ] = null,
-    onInitialized: js.Function2[
-      /* figure */ stdLib.Readonly[Figure], 
-      /* graphDiv */ stdLib.Readonly[reactLib.HTMLElement], 
-      scala.Unit
-    ] = null,
-    onLegendClick: js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.LegendClickEvent */ _
-      ], 
-      scala.Boolean
-    ] = null,
-    onLegendDoubleClick: js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.LegendClickEvent */ _
-      ], 
-      scala.Boolean
-    ] = null,
-    onPurge: js.Function2[
-      /* figure */ stdLib.Readonly[Figure], 
-      /* graphDiv */ stdLib.Readonly[reactLib.HTMLElement], 
-      scala.Unit
-    ] = null,
-    onRedraw: js.Function0[scala.Unit] = null,
-    onRelayout: js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotRelayoutEvent */ _
-      ], 
-      scala.Unit
-    ] = null,
-    onRestyle: js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotRestyleEvent */ _
-      ], 
-      scala.Unit
-    ] = null,
-    onSelected: js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotSelectionEvent */ _
-      ], 
-      scala.Unit
-    ] = null,
-    onSelecting: js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotSelectionEvent */ _
-      ], 
-      scala.Unit
-    ] = null,
-    onSliderChange: js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.SliderChangeEvent */ _
-      ], 
-      scala.Unit
-    ] = null,
-    onSliderEnd: js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.SliderEndEvent */ _
-      ], 
-      scala.Unit
-    ] = null,
-    onSliderStart: js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.SliderStartEvent */ _
-      ], 
-      scala.Unit
-    ] = null,
-    onTransitionInterrupted: js.Function0[scala.Unit] = null,
-    onTransitioning: js.Function0[scala.Unit] = null,
-    onUnhover: js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotMouseEvent */ _
-      ], 
-      scala.Unit
-    ] = null,
-    onUpdate: js.Function2[
-      /* figure */ stdLib.Readonly[Figure], 
-      /* graphDiv */ stdLib.Readonly[reactLib.HTMLElement], 
-      scala.Unit
-    ] = null,
+    onAfterExport: () => scala.Unit = null,
+    onAfterPlot: () => scala.Unit = null,
+    onAnimated: () => scala.Unit = null,
+    onAnimatingFrame: /* event */ stdLib.Readonly[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.FrameAnimationEvent */ _
+    ] => scala.Unit = null,
+    onAnimationInterrupted: () => scala.Unit = null,
+    onAutoSize: () => scala.Unit = null,
+    onBeforeExport: () => scala.Unit = null,
+    onButtonClicked: /* event */ stdLib.Readonly[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.ButtonClickEvent */ _
+    ] => scala.Unit = null,
+    onClick: /* event */ stdLib.Readonly[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotMouseEvent */ _
+    ] => scala.Unit = null,
+    onClickAnnotation: /* event */ stdLib.Readonly[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.ClickAnnotationEvent */ _
+    ] => scala.Unit = null,
+    onDeselect: () => scala.Unit = null,
+    onDoubleClick: () => scala.Unit = null,
+    onError: /* err */ stdLib.Readonly[stdLib.Error] => scala.Unit = null,
+    onFramework: () => scala.Unit = null,
+    onHover: /* event */ stdLib.Readonly[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotMouseEvent */ _
+    ] => scala.Unit = null,
+    onInitialized: (/* figure */ stdLib.Readonly[Figure], /* graphDiv */ stdLib.Readonly[stdLib.HTMLElement]) => scala.Unit = null,
+    onLegendClick: /* event */ stdLib.Readonly[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.LegendClickEvent */ _
+    ] => scala.Boolean = null,
+    onLegendDoubleClick: /* event */ stdLib.Readonly[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.LegendClickEvent */ _
+    ] => scala.Boolean = null,
+    onPurge: (/* figure */ stdLib.Readonly[Figure], /* graphDiv */ stdLib.Readonly[stdLib.HTMLElement]) => scala.Unit = null,
+    onRedraw: () => scala.Unit = null,
+    onRelayout: /* event */ stdLib.Readonly[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotRelayoutEvent */ _
+    ] => scala.Unit = null,
+    onRestyle: /* event */ stdLib.Readonly[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotRestyleEvent */ _
+    ] => scala.Unit = null,
+    onSelected: /* event */ stdLib.Readonly[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotSelectionEvent */ _
+    ] => scala.Unit = null,
+    onSelecting: /* event */ stdLib.Readonly[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotSelectionEvent */ _
+    ] => scala.Unit = null,
+    onSliderChange: /* event */ stdLib.Readonly[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.SliderChangeEvent */ _
+    ] => scala.Unit = null,
+    onSliderEnd: /* event */ stdLib.Readonly[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.SliderEndEvent */ _
+    ] => scala.Unit = null,
+    onSliderStart: /* event */ stdLib.Readonly[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.SliderStartEvent */ _
+    ] => scala.Unit = null,
+    onTransitionInterrupted: () => scala.Unit = null,
+    onTransitioning: () => scala.Unit = null,
+    onUnhover: /* event */ stdLib.Readonly[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotMouseEvent */ _
+    ] => scala.Unit = null,
+    onUpdate: (/* figure */ stdLib.Readonly[Figure], /* graphDiv */ stdLib.Readonly[stdLib.HTMLElement]) => scala.Unit = null,
     revision: scala.Int | scala.Double = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     useResizeHandler: js.UndefOr[scala.Boolean] = js.undefined
@@ -361,37 +304,37 @@ object PlotParams {
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (divId != null) __obj.updateDynamic("divId")(divId)
     if (frames != null) __obj.updateDynamic("frames")(frames)
-    if (onAfterExport != null) __obj.updateDynamic("onAfterExport")(onAfterExport)
-    if (onAfterPlot != null) __obj.updateDynamic("onAfterPlot")(onAfterPlot)
-    if (onAnimated != null) __obj.updateDynamic("onAnimated")(onAnimated)
-    if (onAnimatingFrame != null) __obj.updateDynamic("onAnimatingFrame")(onAnimatingFrame)
-    if (onAnimationInterrupted != null) __obj.updateDynamic("onAnimationInterrupted")(onAnimationInterrupted)
-    if (onAutoSize != null) __obj.updateDynamic("onAutoSize")(onAutoSize)
-    if (onBeforeExport != null) __obj.updateDynamic("onBeforeExport")(onBeforeExport)
-    if (onButtonClicked != null) __obj.updateDynamic("onButtonClicked")(onButtonClicked)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onClickAnnotation != null) __obj.updateDynamic("onClickAnnotation")(onClickAnnotation)
-    if (onDeselect != null) __obj.updateDynamic("onDeselect")(onDeselect)
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(onDoubleClick)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onFramework != null) __obj.updateDynamic("onFramework")(onFramework)
-    if (onHover != null) __obj.updateDynamic("onHover")(onHover)
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(onInitialized)
-    if (onLegendClick != null) __obj.updateDynamic("onLegendClick")(onLegendClick)
-    if (onLegendDoubleClick != null) __obj.updateDynamic("onLegendDoubleClick")(onLegendDoubleClick)
-    if (onPurge != null) __obj.updateDynamic("onPurge")(onPurge)
-    if (onRedraw != null) __obj.updateDynamic("onRedraw")(onRedraw)
-    if (onRelayout != null) __obj.updateDynamic("onRelayout")(onRelayout)
-    if (onRestyle != null) __obj.updateDynamic("onRestyle")(onRestyle)
-    if (onSelected != null) __obj.updateDynamic("onSelected")(onSelected)
-    if (onSelecting != null) __obj.updateDynamic("onSelecting")(onSelecting)
-    if (onSliderChange != null) __obj.updateDynamic("onSliderChange")(onSliderChange)
-    if (onSliderEnd != null) __obj.updateDynamic("onSliderEnd")(onSliderEnd)
-    if (onSliderStart != null) __obj.updateDynamic("onSliderStart")(onSliderStart)
-    if (onTransitionInterrupted != null) __obj.updateDynamic("onTransitionInterrupted")(onTransitionInterrupted)
-    if (onTransitioning != null) __obj.updateDynamic("onTransitioning")(onTransitioning)
-    if (onUnhover != null) __obj.updateDynamic("onUnhover")(onUnhover)
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (onAfterExport != null) __obj.updateDynamic("onAfterExport")(js.Any.fromFunction0(onAfterExport))
+    if (onAfterPlot != null) __obj.updateDynamic("onAfterPlot")(js.Any.fromFunction0(onAfterPlot))
+    if (onAnimated != null) __obj.updateDynamic("onAnimated")(js.Any.fromFunction0(onAnimated))
+    if (onAnimatingFrame != null) __obj.updateDynamic("onAnimatingFrame")(js.Any.fromFunction1(onAnimatingFrame))
+    if (onAnimationInterrupted != null) __obj.updateDynamic("onAnimationInterrupted")(js.Any.fromFunction0(onAnimationInterrupted))
+    if (onAutoSize != null) __obj.updateDynamic("onAutoSize")(js.Any.fromFunction0(onAutoSize))
+    if (onBeforeExport != null) __obj.updateDynamic("onBeforeExport")(js.Any.fromFunction0(onBeforeExport))
+    if (onButtonClicked != null) __obj.updateDynamic("onButtonClicked")(js.Any.fromFunction1(onButtonClicked))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onClickAnnotation != null) __obj.updateDynamic("onClickAnnotation")(js.Any.fromFunction1(onClickAnnotation))
+    if (onDeselect != null) __obj.updateDynamic("onDeselect")(js.Any.fromFunction0(onDeselect))
+    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction0(onDoubleClick))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onFramework != null) __obj.updateDynamic("onFramework")(js.Any.fromFunction0(onFramework))
+    if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction1(onHover))
+    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction2(onInitialized))
+    if (onLegendClick != null) __obj.updateDynamic("onLegendClick")(js.Any.fromFunction1(onLegendClick))
+    if (onLegendDoubleClick != null) __obj.updateDynamic("onLegendDoubleClick")(js.Any.fromFunction1(onLegendDoubleClick))
+    if (onPurge != null) __obj.updateDynamic("onPurge")(js.Any.fromFunction2(onPurge))
+    if (onRedraw != null) __obj.updateDynamic("onRedraw")(js.Any.fromFunction0(onRedraw))
+    if (onRelayout != null) __obj.updateDynamic("onRelayout")(js.Any.fromFunction1(onRelayout))
+    if (onRestyle != null) __obj.updateDynamic("onRestyle")(js.Any.fromFunction1(onRestyle))
+    if (onSelected != null) __obj.updateDynamic("onSelected")(js.Any.fromFunction1(onSelected))
+    if (onSelecting != null) __obj.updateDynamic("onSelecting")(js.Any.fromFunction1(onSelecting))
+    if (onSliderChange != null) __obj.updateDynamic("onSliderChange")(js.Any.fromFunction1(onSliderChange))
+    if (onSliderEnd != null) __obj.updateDynamic("onSliderEnd")(js.Any.fromFunction1(onSliderEnd))
+    if (onSliderStart != null) __obj.updateDynamic("onSliderStart")(js.Any.fromFunction1(onSliderStart))
+    if (onTransitionInterrupted != null) __obj.updateDynamic("onTransitionInterrupted")(js.Any.fromFunction0(onTransitionInterrupted))
+    if (onTransitioning != null) __obj.updateDynamic("onTransitioning")(js.Any.fromFunction0(onTransitioning))
+    if (onUnhover != null) __obj.updateDynamic("onUnhover")(js.Any.fromFunction1(onUnhover))
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction2(onUpdate))
     if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (!js.isUndefined(useResizeHandler)) __obj.updateDynamic("useResizeHandler")(useResizeHandler)

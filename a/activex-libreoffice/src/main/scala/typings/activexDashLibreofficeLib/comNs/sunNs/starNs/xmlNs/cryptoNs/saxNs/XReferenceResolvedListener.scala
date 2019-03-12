@@ -22,12 +22,12 @@ trait XReferenceResolvedListener
 object XReferenceResolvedListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    referenceResolved: js.Function1[scala.Double, scala.Unit],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    referenceResolved: scala.Double => scala.Unit,
+    release: () => scala.Unit
   ): XReferenceResolvedListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, referenceResolved = referenceResolved, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), referenceResolved = js.Any.fromFunction1(referenceResolved), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XReferenceResolvedListener]
   }

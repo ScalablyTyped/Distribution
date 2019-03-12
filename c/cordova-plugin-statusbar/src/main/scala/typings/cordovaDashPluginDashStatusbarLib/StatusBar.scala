@@ -62,18 +62,18 @@ trait StatusBar extends js.Object {
 object StatusBar {
   @scala.inline
   def apply(
-    backgroundColorByHexString: js.Function1[java.lang.String, scala.Unit],
-    backgroundColorByName: js.Function1[java.lang.String, scala.Unit],
-    hide: js.Function0[scala.Unit],
+    backgroundColorByHexString: java.lang.String => scala.Unit,
+    backgroundColorByName: java.lang.String => scala.Unit,
+    hide: () => scala.Unit,
     isVisible: scala.Boolean,
-    overlaysWebView: js.Function1[scala.Boolean, scala.Unit],
-    show: js.Function0[scala.Unit],
-    styleBlackOpaque: js.Function0[scala.Unit],
-    styleBlackTranslucent: js.Function0[scala.Unit],
-    styleDefault: js.Function0[scala.Unit],
-    styleLightContent: js.Function0[scala.Unit]
+    overlaysWebView: scala.Boolean => scala.Unit,
+    show: () => scala.Unit,
+    styleBlackOpaque: () => scala.Unit,
+    styleBlackTranslucent: () => scala.Unit,
+    styleDefault: () => scala.Unit,
+    styleLightContent: () => scala.Unit
   ): StatusBar = {
-    val __obj = js.Dynamic.literal(backgroundColorByHexString = backgroundColorByHexString, backgroundColorByName = backgroundColorByName, hide = hide, isVisible = isVisible, overlaysWebView = overlaysWebView, show = show, styleBlackOpaque = styleBlackOpaque, styleBlackTranslucent = styleBlackTranslucent, styleDefault = styleDefault, styleLightContent = styleLightContent)
+    val __obj = js.Dynamic.literal(backgroundColorByHexString = js.Any.fromFunction1(backgroundColorByHexString), backgroundColorByName = js.Any.fromFunction1(backgroundColorByName), hide = js.Any.fromFunction0(hide), isVisible = isVisible, overlaysWebView = js.Any.fromFunction1(overlaysWebView), show = js.Any.fromFunction0(show), styleBlackOpaque = js.Any.fromFunction0(styleBlackOpaque), styleBlackTranslucent = js.Any.fromFunction0(styleBlackTranslucent), styleDefault = js.Any.fromFunction0(styleDefault), styleLightContent = js.Any.fromFunction0(styleLightContent))
   
     __obj.asInstanceOf[StatusBar]
   }

@@ -51,30 +51,30 @@ trait SnapBehavior
 object SnapBehavior {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     bubbleParent: scala.Boolean,
     damping: scala.Double,
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getApiName: js.Function0[java.lang.String],
-    getBubbleParent: js.Function0[scala.Boolean],
-    getDamping: js.Function0[scala.Double],
-    getItem: js.Function0[titaniumLib.TitaniumNs.UINs.View],
-    getSnapPoint: js.Function0[titaniumLib.Point],
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
+    getApiName: () => java.lang.String,
+    getBubbleParent: () => scala.Boolean,
+    getDamping: () => scala.Double,
+    getItem: () => titaniumLib.TitaniumNs.UINs.View,
+    getSnapPoint: () => titaniumLib.Point,
     item: titaniumLib.TitaniumNs.UINs.View,
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
-    setDamping: js.Function1[scala.Double, scala.Unit],
-    setItem: js.Function1[js.Any, scala.Unit],
-    setSnapPoint: js.Function1[titaniumLib.Point, scala.Unit],
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    setBubbleParent: scala.Boolean => scala.Unit,
+    setDamping: scala.Double => scala.Unit,
+    setItem: js.Any => scala.Unit,
+    setSnapPoint: titaniumLib.Point => scala.Unit,
     snapPoint: titaniumLib.Point,
-    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    getLifecycleContainer: () => titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
   ): SnapBehavior = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, damping = damping, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, getDamping = getDamping, getItem = getItem, getSnapPoint = getSnapPoint, item = item, removeEventListener = removeEventListener, setBubbleParent = setBubbleParent, setDamping = setDamping, setItem = setItem, setSnapPoint = setSnapPoint, snapPoint = snapPoint)
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, damping = damping, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getDamping = js.Any.fromFunction0(getDamping), getItem = js.Any.fromFunction0(getItem), getSnapPoint = js.Any.fromFunction0(getSnapPoint), item = item, removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setDamping = js.Any.fromFunction1(setDamping), setItem = js.Any.fromFunction1(setItem), setSnapPoint = js.Any.fromFunction1(setSnapPoint), snapPoint = snapPoint)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
     __obj.asInstanceOf[SnapBehavior]

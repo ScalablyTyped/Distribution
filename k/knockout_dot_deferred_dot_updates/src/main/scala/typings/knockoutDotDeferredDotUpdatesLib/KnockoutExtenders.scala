@@ -12,8 +12,8 @@ trait KnockoutExtenders extends js.Object {
 
 object KnockoutExtenders {
   @scala.inline
-  def apply(deferred: js.Function2[js.Any, scala.Boolean, js.Any]): KnockoutExtenders = {
-    val __obj = js.Dynamic.literal(deferred = deferred)
+  def apply(deferred: (js.Any, scala.Boolean) => js.Any): KnockoutExtenders = {
+    val __obj = js.Dynamic.literal(deferred = js.Any.fromFunction2(deferred))
   
     __obj.asInstanceOf[KnockoutExtenders]
   }

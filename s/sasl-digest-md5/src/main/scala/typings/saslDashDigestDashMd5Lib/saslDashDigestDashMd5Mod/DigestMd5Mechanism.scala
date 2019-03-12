@@ -16,15 +16,12 @@ trait DigestMd5Mechanism
 object DigestMd5Mechanism {
   @scala.inline
   def apply(
-    challenge: js.Function1[java.lang.String, DigestMd5Mechanism],
+    challenge: java.lang.String => DigestMd5Mechanism,
     clientFirst: saslDashDigestDashMd5Lib.saslDashDigestDashMd5LibNumbers.`false`,
     name: saslDashDigestDashMd5Lib.saslDashDigestDashMd5LibStrings.`DIGEST-MD5`,
-    response: js.Function1[
-      saslDashDigestDashMd5Lib.saslDashDigestDashMd5Mod.DigestMd5MechanismNs.Credentials, 
-      java.lang.String
-    ]
+    response: saslDashDigestDashMd5Lib.saslDashDigestDashMd5Mod.DigestMd5MechanismNs.Credentials => java.lang.String
   ): DigestMd5Mechanism = {
-    val __obj = js.Dynamic.literal(challenge = challenge, clientFirst = clientFirst, name = name, response = response)
+    val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = clientFirst, name = name, response = js.Any.fromFunction1(response))
   
     __obj.asInstanceOf[DigestMd5Mechanism]
   }

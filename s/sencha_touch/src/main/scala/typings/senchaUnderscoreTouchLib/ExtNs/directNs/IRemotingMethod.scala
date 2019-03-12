@@ -59,29 +59,29 @@ object IRemotingMethod {
   def apply(
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     extend: java.lang.String = null,
-    getCallData: js.Function1[/* args */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], _] = null,
-    getFormHandler: js.Function0[_] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getLen: js.Function0[_] = null,
-    getName: js.Function0[_] = null,
-    getOrdered: js.Function0[scala.Boolean] = null,
-    getParams: js.Function0[_] = null,
+    getCallData: /* args */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => _ = null,
+    getFormHandler: () => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getLen: () => _ = null,
+    getName: () => _ = null,
+    getOrdered: () => scala.Boolean = null,
+    getParams: () => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setFormHandler: js.Function1[/* formHandler */ js.UndefOr[js.Any], scala.Unit] = null,
-    setLen: js.Function1[/* len */ js.UndefOr[js.Any], scala.Unit] = null,
-    setName: js.Function1[/* name */ js.UndefOr[js.Any], scala.Unit] = null,
-    setOrdered: js.Function1[/* ordered */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setParams: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
+    setFormHandler: /* formHandler */ js.UndefOr[js.Any] => scala.Unit = null,
+    setLen: /* len */ js.UndefOr[js.Any] => scala.Unit = null,
+    setName: /* name */ js.UndefOr[js.Any] => scala.Unit = null,
+    setOrdered: /* ordered */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setParams: /* params */ js.UndefOr[js.Any] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null
@@ -89,29 +89,29 @@ object IRemotingMethod {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getCallData != null) __obj.updateDynamic("getCallData")(getCallData)
-    if (getFormHandler != null) __obj.updateDynamic("getFormHandler")(getFormHandler)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getLen != null) __obj.updateDynamic("getLen")(getLen)
-    if (getName != null) __obj.updateDynamic("getName")(getName)
-    if (getOrdered != null) __obj.updateDynamic("getOrdered")(getOrdered)
-    if (getParams != null) __obj.updateDynamic("getParams")(getParams)
+    if (getCallData != null) __obj.updateDynamic("getCallData")(js.Any.fromFunction1(getCallData))
+    if (getFormHandler != null) __obj.updateDynamic("getFormHandler")(js.Any.fromFunction0(getFormHandler))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getLen != null) __obj.updateDynamic("getLen")(js.Any.fromFunction0(getLen))
+    if (getName != null) __obj.updateDynamic("getName")(js.Any.fromFunction0(getName))
+    if (getOrdered != null) __obj.updateDynamic("getOrdered")(js.Any.fromFunction0(getOrdered))
+    if (getParams != null) __obj.updateDynamic("getParams")(js.Any.fromFunction0(getParams))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setFormHandler != null) __obj.updateDynamic("setFormHandler")(setFormHandler)
-    if (setLen != null) __obj.updateDynamic("setLen")(setLen)
-    if (setName != null) __obj.updateDynamic("setName")(setName)
-    if (setOrdered != null) __obj.updateDynamic("setOrdered")(setOrdered)
-    if (setParams != null) __obj.updateDynamic("setParams")(setParams)
+    if (setFormHandler != null) __obj.updateDynamic("setFormHandler")(js.Any.fromFunction1(setFormHandler))
+    if (setLen != null) __obj.updateDynamic("setLen")(js.Any.fromFunction1(setLen))
+    if (setName != null) __obj.updateDynamic("setName")(js.Any.fromFunction1(setName))
+    if (setOrdered != null) __obj.updateDynamic("setOrdered")(js.Any.fromFunction1(setOrdered))
+    if (setParams != null) __obj.updateDynamic("setParams")(js.Any.fromFunction1(setParams))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (uses != null) __obj.updateDynamic("uses")(uses)

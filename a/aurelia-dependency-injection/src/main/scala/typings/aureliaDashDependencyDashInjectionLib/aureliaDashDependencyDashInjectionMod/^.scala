@@ -18,14 +18,14 @@ object ^ extends js.Object {
   def inject(rest: js.Any*): js.Any = js.native
   def invokeAsFactory(): js.Any = js.native
   def invokeAsFactory(potentialTarget: js.Any): js.Any = js.native
-  def invoker(value: aureliaDashDependencyDashInjectionLib.aureliaDashDependencyDashInjectionMod.Invoker): js.Any = js.native
+  def invoker(value: Invoker): js.Any = js.native
   def `lazy`(keyValue: js.Any): js.Function3[/* target */ js.Any, /* key */ js.Any, /* index */ js.Any, scala.Unit] = js.native
   def newInstance(): js.Function3[/* target */ js.Any, /* key */ js.Any, /* index */ js.Any, scala.Unit] = js.native
   def newInstance(asKeyOrTarget: js.Any, dynamicDependencies: js.Any*): js.Function3[/* target */ js.Any, /* key */ js.Any, /* index */ js.Any, scala.Unit] = js.native
   def optional(): js.Function3[/* target */ js.Any, /* key */ js.Any, /* index */ js.Any, scala.Unit] = js.native
   def optional(checkParentOrTarget: scala.Boolean): js.Function3[/* target */ js.Any, /* key */ js.Any, /* index */ js.Any, scala.Unit] = js.native
   def parent(target: js.Any, key: js.Any, index: js.Any): scala.Unit = js.native
-  def registration(value: aureliaDashDependencyDashInjectionLib.aureliaDashDependencyDashInjectionMod.Registration): js.Any = js.native
+  def registration(value: Registration): js.Any = js.native
   def singleton(): js.Any = js.native
   def singleton(keyOrRegisterInChild: js.Any): js.Any = js.native
   def singleton(keyOrRegisterInChild: js.Any, registerInChild: scala.Boolean): js.Any = js.native

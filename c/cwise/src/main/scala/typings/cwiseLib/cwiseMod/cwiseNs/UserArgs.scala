@@ -19,18 +19,18 @@ object UserArgs {
   @scala.inline
   def apply(
     args: js.Array[cwiseDashCompilerLib.cwiseDashCompilerMod.cwiseUnderscoreCompilerNs.ArgType],
-    body: js.Function2[scala.Double, /* repeated */ js.Any, scala.Unit],
+    body: (scala.Double, /* repeated */ js.Any) => scala.Unit,
     blockSize: scala.Int | scala.Double = null,
     funcName: java.lang.String = null,
-    post: js.Function2[/* a */ scala.Double, /* repeated */ js.Any, scala.Unit] = null,
-    pre: js.Function2[/* a */ scala.Double, /* repeated */ js.Any, scala.Unit] = null,
+    post: (/* a */ scala.Double, /* repeated */ js.Any) => scala.Unit = null,
+    pre: (/* a */ scala.Double, /* repeated */ js.Any) => scala.Unit = null,
     printCode: js.UndefOr[scala.Boolean] = js.undefined
   ): UserArgs = {
-    val __obj = js.Dynamic.literal(args = args, body = body)
+    val __obj = js.Dynamic.literal(args = args, body = js.Any.fromFunction2(body))
     if (blockSize != null) __obj.updateDynamic("blockSize")(blockSize.asInstanceOf[js.Any])
     if (funcName != null) __obj.updateDynamic("funcName")(funcName)
-    if (post != null) __obj.updateDynamic("post")(post)
-    if (pre != null) __obj.updateDynamic("pre")(pre)
+    if (post != null) __obj.updateDynamic("post")(js.Any.fromFunction2(post))
+    if (pre != null) __obj.updateDynamic("pre")(js.Any.fromFunction2(pre))
     if (!js.isUndefined(printCode)) __obj.updateDynamic("printCode")(printCode)
     __obj.asInstanceOf[UserArgs]
   }

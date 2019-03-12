@@ -18,16 +18,10 @@ trait ChannelsResource extends js.Object {
 object ChannelsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltCategoryId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ChannelListResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtokenOnBehalfOfContentOwner, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Channel]
-    ]
+    list: gapiDotClientDotYoutubeLib.Anon_AltCategoryId => gapiDotClientLib.gapiNs.clientNs.Request[ChannelListResponse],
+    update: gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtokenOnBehalfOfContentOwner => gapiDotClientLib.gapiNs.clientNs.Request[Channel]
   ): ChannelsResource = {
-    val __obj = js.Dynamic.literal(list = list, update = update)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[ChannelsResource]
   }

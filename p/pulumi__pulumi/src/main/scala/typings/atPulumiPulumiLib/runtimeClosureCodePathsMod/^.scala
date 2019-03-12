@@ -9,19 +9,19 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def computeCodePaths(): js.Promise[
-    nodeLib.Map[
+    stdLib.Map[
       java.lang.String, 
       atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
     ]
   ] = js.native
   def computeCodePaths(extraIncludePaths: js.Array[java.lang.String]): js.Promise[
-    nodeLib.Map[
+    stdLib.Map[
       java.lang.String, 
       atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
     ]
   ] = js.native
   def computeCodePaths(extraIncludePaths: js.Array[java.lang.String], extraIncludePackages: js.Array[java.lang.String]): js.Promise[
-    nodeLib.Map[
+    stdLib.Map[
       java.lang.String, 
       atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
     ]
@@ -31,13 +31,13 @@ object ^ extends js.Object {
     extraIncludePackages: js.Array[java.lang.String],
     extraExcludePackages: js.Array[java.lang.String]
   ): js.Promise[
-    nodeLib.Map[
+    stdLib.Map[
       java.lang.String, 
       atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
     ]
   ] = js.native
-  def computeCodePaths(options: atPulumiPulumiLib.runtimeClosureCodePathsMod.CodePathOptions): js.Promise[
-    nodeLib.Map[
+  def computeCodePaths(options: CodePathOptions): js.Promise[
+    stdLib.Map[
       java.lang.String, 
       atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
     ]

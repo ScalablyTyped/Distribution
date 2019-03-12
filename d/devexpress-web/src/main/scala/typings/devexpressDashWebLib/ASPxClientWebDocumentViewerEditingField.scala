@@ -41,13 +41,13 @@ object ASPxClientWebDocumentViewerEditingField {
   @scala.inline
   def apply(
     editValue: js.Any,
-    editorName: js.Function0[java.lang.String],
-    groupID: js.Function0[java.lang.String],
-    id: js.Function0[java.lang.String],
-    pageIndex: js.Function0[scala.Double],
+    editorName: () => java.lang.String,
+    groupID: () => java.lang.String,
+    id: () => java.lang.String,
+    pageIndex: () => scala.Double,
     readOnly: js.Any
   ): ASPxClientWebDocumentViewerEditingField = {
-    val __obj = js.Dynamic.literal(editValue = editValue, editorName = editorName, groupID = groupID, id = id, pageIndex = pageIndex, readOnly = readOnly)
+    val __obj = js.Dynamic.literal(editValue = editValue, editorName = js.Any.fromFunction0(editorName), groupID = js.Any.fromFunction0(groupID), id = js.Any.fromFunction0(id), pageIndex = js.Any.fromFunction0(pageIndex), readOnly = readOnly)
   
     __obj.asInstanceOf[ASPxClientWebDocumentViewerEditingField]
   }

@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.Template")
 @js.native
 class Template protected () extends js.Object {
-  val Application: Application = js.native
-  val AutoTextEntries: AutoTextEntries = js.native
-  val BuildingBlockEntries: BuildingBlockEntries = js.native
-  val BuildingBlockTypes: BuildingBlockTypes = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
+  val AutoTextEntries: activexDashWordLib.WordNs.AutoTextEntries = js.native
+  val BuildingBlockEntries: activexDashWordLib.WordNs.BuildingBlockEntries = js.native
+  val BuildingBlockTypes: activexDashWordLib.WordNs.BuildingBlockTypes = js.native
   @JSName("BuiltInDocumentProperties")
   val BuiltInDocumentProperties_Original: activexDashOfficeLib.OfficeNs.DocumentProperties[Application] = js.native
   val Creator: scala.Double = js.native
@@ -24,7 +24,7 @@ class Template protected () extends js.Object {
   var KerningByAlgorithm: scala.Boolean = js.native
   var LanguageID: WdLanguageID = js.native
   var LanguageIDFarEast: WdLanguageID = js.native
-  val ListTemplates: ListTemplates = js.native
+  val ListTemplates: activexDashWordLib.WordNs.ListTemplates = js.native
   val Name: java.lang.String = js.native
   var NoLineBreakAfter: java.lang.String = js.native
   var NoLineBreakBefore: java.lang.String = js.native

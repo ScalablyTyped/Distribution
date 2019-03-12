@@ -982,7 +982,7 @@ trait ElementDefinition extends Element {
 object ElementDefinition {
   @scala.inline
   def apply(
-    Element: Element = null,
+    path: java.lang.String,
     _alias: js.Array[Element] = null,
     _comment: Element = null,
     _condition: js.Array[Element] = null,
@@ -1004,6 +1004,7 @@ object ElementDefinition {
     _defaultValueUnsignedInt: Element = null,
     _defaultValueUri: Element = null,
     _definition: Element = null,
+    _fhir_comments: js.Array[Element] = null,
     _fixedBase64Binary: Element = null,
     _fixedBoolean: Element = null,
     _fixedCode: Element = null,
@@ -1020,6 +1021,7 @@ object ElementDefinition {
     _fixedTime: Element = null,
     _fixedUnsignedInt: Element = null,
     _fixedUri: Element = null,
+    _id: Element = null,
     _isModifier: Element = null,
     _isSummary: Element = null,
     _label: Element = null,
@@ -1114,6 +1116,8 @@ object ElementDefinition {
     defaultValueUri: uri = null,
     definition: markdown = null,
     example: js.Array[ElementDefinitionExample] = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
     fixedAddress: Address = null,
     fixedAge: Age = null,
     fixedAnnotation: Annotation = null,
@@ -1131,10 +1135,102 @@ object ElementDefinition {
     fixedDistance: Distance = null,
     fixedDuration: Duration = null,
     fixedHumanName: HumanName = null,
-    fixedId: id = null
+    fixedId: id = null,
+    fixedIdentifier: Identifier = null,
+    fixedInstant: instant = null,
+    fixedInteger: js.UndefOr[integer] = js.undefined,
+    fixedMarkdown: markdown = null,
+    fixedMeta: Meta = null,
+    fixedMoney: Money = null,
+    fixedOid: oid = null,
+    fixedPeriod: Period = null,
+    fixedPositiveInt: js.UndefOr[positiveInt] = js.undefined,
+    fixedQuantity: Quantity = null,
+    fixedRange: Range = null,
+    fixedRatio: Ratio = null,
+    fixedReference: Reference = null,
+    fixedSampledData: SampledData = null,
+    fixedSignature: Signature = null,
+    fixedString: java.lang.String = null,
+    fixedTime: time = null,
+    fixedTiming: Timing = null,
+    fixedUnsignedInt: js.UndefOr[unsignedInt] = js.undefined,
+    fixedUri: uri = null,
+    id: java.lang.String = null,
+    isModifier: js.UndefOr[scala.Boolean] = js.undefined,
+    isSummary: js.UndefOr[scala.Boolean] = js.undefined,
+    label: java.lang.String = null,
+    mapping: js.Array[ElementDefinitionMapping] = null,
+    max: java.lang.String = null,
+    maxLength: js.UndefOr[integer] = js.undefined,
+    maxValueDate: date = null,
+    maxValueDateTime: dateTime = null,
+    maxValueDecimal: js.UndefOr[decimal] = js.undefined,
+    maxValueInstant: instant = null,
+    maxValueInteger: js.UndefOr[integer] = js.undefined,
+    maxValuePositiveInt: js.UndefOr[positiveInt] = js.undefined,
+    maxValueQuantity: Quantity = null,
+    maxValueTime: time = null,
+    maxValueUnsignedInt: js.UndefOr[unsignedInt] = js.undefined,
+    meaningWhenMissing: markdown = null,
+    min: js.UndefOr[unsignedInt] = js.undefined,
+    minValueDate: date = null,
+    minValueDateTime: dateTime = null,
+    minValueDecimal: js.UndefOr[decimal] = js.undefined,
+    minValueInstant: instant = null,
+    minValueInteger: js.UndefOr[integer] = js.undefined,
+    minValuePositiveInt: js.UndefOr[positiveInt] = js.undefined,
+    minValueQuantity: Quantity = null,
+    minValueTime: time = null,
+    minValueUnsignedInt: js.UndefOr[unsignedInt] = js.undefined,
+    mustSupport: js.UndefOr[scala.Boolean] = js.undefined,
+    orderMeaning: java.lang.String = null,
+    patternAddress: Address = null,
+    patternAge: Age = null,
+    patternAnnotation: Annotation = null,
+    patternAttachment: Attachment = null,
+    patternBase64Binary: base64Binary = null,
+    patternBoolean: js.UndefOr[scala.Boolean] = js.undefined,
+    patternCode: code = null,
+    patternCodeableConcept: CodeableConcept = null,
+    patternCoding: Coding = null,
+    patternContactPoint: ContactPoint = null,
+    patternCount: Count = null,
+    patternDate: date = null,
+    patternDateTime: dateTime = null,
+    patternDecimal: js.UndefOr[decimal] = js.undefined,
+    patternDistance: Distance = null,
+    patternDuration: Duration = null,
+    patternHumanName: HumanName = null,
+    patternId: id = null,
+    patternIdentifier: Identifier = null,
+    patternInstant: instant = null,
+    patternInteger: js.UndefOr[integer] = js.undefined,
+    patternMarkdown: markdown = null,
+    patternMeta: Meta = null,
+    patternMoney: Money = null,
+    patternOid: oid = null,
+    patternPeriod: Period = null,
+    patternPositiveInt: js.UndefOr[positiveInt] = js.undefined,
+    patternQuantity: Quantity = null,
+    patternRange: Range = null,
+    patternRatio: Ratio = null,
+    patternReference: Reference = null,
+    patternSampledData: SampledData = null,
+    patternSignature: Signature = null,
+    patternString: java.lang.String = null,
+    patternTime: time = null,
+    patternTiming: Timing = null,
+    patternUnsignedInt: js.UndefOr[unsignedInt] = js.undefined,
+    patternUri: uri = null,
+    representation: js.Array[code] = null,
+    requirements: markdown = null,
+    short: java.lang.String = null,
+    sliceName: java.lang.String = null,
+    slicing: ElementDefinitionSlicing = null,
+    `type`: js.Array[ElementDefinitionType] = null
   ): ElementDefinition = {
-    val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, Element)
+    val __obj = js.Dynamic.literal(path = path)
     if (_alias != null) __obj.updateDynamic("_alias")(_alias)
     if (_comment != null) __obj.updateDynamic("_comment")(_comment)
     if (_condition != null) __obj.updateDynamic("_condition")(_condition)
@@ -1156,6 +1252,7 @@ object ElementDefinition {
     if (_defaultValueUnsignedInt != null) __obj.updateDynamic("_defaultValueUnsignedInt")(_defaultValueUnsignedInt)
     if (_defaultValueUri != null) __obj.updateDynamic("_defaultValueUri")(_defaultValueUri)
     if (_definition != null) __obj.updateDynamic("_definition")(_definition)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_fixedBase64Binary != null) __obj.updateDynamic("_fixedBase64Binary")(_fixedBase64Binary)
     if (_fixedBoolean != null) __obj.updateDynamic("_fixedBoolean")(_fixedBoolean)
     if (_fixedCode != null) __obj.updateDynamic("_fixedCode")(_fixedCode)
@@ -1172,6 +1269,7 @@ object ElementDefinition {
     if (_fixedTime != null) __obj.updateDynamic("_fixedTime")(_fixedTime)
     if (_fixedUnsignedInt != null) __obj.updateDynamic("_fixedUnsignedInt")(_fixedUnsignedInt)
     if (_fixedUri != null) __obj.updateDynamic("_fixedUri")(_fixedUri)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_isModifier != null) __obj.updateDynamic("_isModifier")(_isModifier)
     if (_isSummary != null) __obj.updateDynamic("_isSummary")(_isSummary)
     if (_label != null) __obj.updateDynamic("_label")(_label)
@@ -1266,6 +1364,8 @@ object ElementDefinition {
     if (defaultValueUri != null) __obj.updateDynamic("defaultValueUri")(defaultValueUri)
     if (definition != null) __obj.updateDynamic("definition")(definition)
     if (example != null) __obj.updateDynamic("example")(example)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
     if (fixedAddress != null) __obj.updateDynamic("fixedAddress")(fixedAddress)
     if (fixedAge != null) __obj.updateDynamic("fixedAge")(fixedAge)
     if (fixedAnnotation != null) __obj.updateDynamic("fixedAnnotation")(fixedAnnotation)
@@ -1284,6 +1384,99 @@ object ElementDefinition {
     if (fixedDuration != null) __obj.updateDynamic("fixedDuration")(fixedDuration)
     if (fixedHumanName != null) __obj.updateDynamic("fixedHumanName")(fixedHumanName)
     if (fixedId != null) __obj.updateDynamic("fixedId")(fixedId)
+    if (fixedIdentifier != null) __obj.updateDynamic("fixedIdentifier")(fixedIdentifier)
+    if (fixedInstant != null) __obj.updateDynamic("fixedInstant")(fixedInstant)
+    if (!js.isUndefined(fixedInteger)) __obj.updateDynamic("fixedInteger")(fixedInteger)
+    if (fixedMarkdown != null) __obj.updateDynamic("fixedMarkdown")(fixedMarkdown)
+    if (fixedMeta != null) __obj.updateDynamic("fixedMeta")(fixedMeta)
+    if (fixedMoney != null) __obj.updateDynamic("fixedMoney")(fixedMoney)
+    if (fixedOid != null) __obj.updateDynamic("fixedOid")(fixedOid)
+    if (fixedPeriod != null) __obj.updateDynamic("fixedPeriod")(fixedPeriod)
+    if (!js.isUndefined(fixedPositiveInt)) __obj.updateDynamic("fixedPositiveInt")(fixedPositiveInt)
+    if (fixedQuantity != null) __obj.updateDynamic("fixedQuantity")(fixedQuantity)
+    if (fixedRange != null) __obj.updateDynamic("fixedRange")(fixedRange)
+    if (fixedRatio != null) __obj.updateDynamic("fixedRatio")(fixedRatio)
+    if (fixedReference != null) __obj.updateDynamic("fixedReference")(fixedReference)
+    if (fixedSampledData != null) __obj.updateDynamic("fixedSampledData")(fixedSampledData)
+    if (fixedSignature != null) __obj.updateDynamic("fixedSignature")(fixedSignature)
+    if (fixedString != null) __obj.updateDynamic("fixedString")(fixedString)
+    if (fixedTime != null) __obj.updateDynamic("fixedTime")(fixedTime)
+    if (fixedTiming != null) __obj.updateDynamic("fixedTiming")(fixedTiming)
+    if (!js.isUndefined(fixedUnsignedInt)) __obj.updateDynamic("fixedUnsignedInt")(fixedUnsignedInt)
+    if (fixedUri != null) __obj.updateDynamic("fixedUri")(fixedUri)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isModifier)) __obj.updateDynamic("isModifier")(isModifier)
+    if (!js.isUndefined(isSummary)) __obj.updateDynamic("isSummary")(isSummary)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (mapping != null) __obj.updateDynamic("mapping")(mapping)
+    if (max != null) __obj.updateDynamic("max")(max)
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength)
+    if (maxValueDate != null) __obj.updateDynamic("maxValueDate")(maxValueDate)
+    if (maxValueDateTime != null) __obj.updateDynamic("maxValueDateTime")(maxValueDateTime)
+    if (!js.isUndefined(maxValueDecimal)) __obj.updateDynamic("maxValueDecimal")(maxValueDecimal)
+    if (maxValueInstant != null) __obj.updateDynamic("maxValueInstant")(maxValueInstant)
+    if (!js.isUndefined(maxValueInteger)) __obj.updateDynamic("maxValueInteger")(maxValueInteger)
+    if (!js.isUndefined(maxValuePositiveInt)) __obj.updateDynamic("maxValuePositiveInt")(maxValuePositiveInt)
+    if (maxValueQuantity != null) __obj.updateDynamic("maxValueQuantity")(maxValueQuantity)
+    if (maxValueTime != null) __obj.updateDynamic("maxValueTime")(maxValueTime)
+    if (!js.isUndefined(maxValueUnsignedInt)) __obj.updateDynamic("maxValueUnsignedInt")(maxValueUnsignedInt)
+    if (meaningWhenMissing != null) __obj.updateDynamic("meaningWhenMissing")(meaningWhenMissing)
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min)
+    if (minValueDate != null) __obj.updateDynamic("minValueDate")(minValueDate)
+    if (minValueDateTime != null) __obj.updateDynamic("minValueDateTime")(minValueDateTime)
+    if (!js.isUndefined(minValueDecimal)) __obj.updateDynamic("minValueDecimal")(minValueDecimal)
+    if (minValueInstant != null) __obj.updateDynamic("minValueInstant")(minValueInstant)
+    if (!js.isUndefined(minValueInteger)) __obj.updateDynamic("minValueInteger")(minValueInteger)
+    if (!js.isUndefined(minValuePositiveInt)) __obj.updateDynamic("minValuePositiveInt")(minValuePositiveInt)
+    if (minValueQuantity != null) __obj.updateDynamic("minValueQuantity")(minValueQuantity)
+    if (minValueTime != null) __obj.updateDynamic("minValueTime")(minValueTime)
+    if (!js.isUndefined(minValueUnsignedInt)) __obj.updateDynamic("minValueUnsignedInt")(minValueUnsignedInt)
+    if (!js.isUndefined(mustSupport)) __obj.updateDynamic("mustSupport")(mustSupport)
+    if (orderMeaning != null) __obj.updateDynamic("orderMeaning")(orderMeaning)
+    if (patternAddress != null) __obj.updateDynamic("patternAddress")(patternAddress)
+    if (patternAge != null) __obj.updateDynamic("patternAge")(patternAge)
+    if (patternAnnotation != null) __obj.updateDynamic("patternAnnotation")(patternAnnotation)
+    if (patternAttachment != null) __obj.updateDynamic("patternAttachment")(patternAttachment)
+    if (patternBase64Binary != null) __obj.updateDynamic("patternBase64Binary")(patternBase64Binary)
+    if (!js.isUndefined(patternBoolean)) __obj.updateDynamic("patternBoolean")(patternBoolean)
+    if (patternCode != null) __obj.updateDynamic("patternCode")(patternCode)
+    if (patternCodeableConcept != null) __obj.updateDynamic("patternCodeableConcept")(patternCodeableConcept)
+    if (patternCoding != null) __obj.updateDynamic("patternCoding")(patternCoding)
+    if (patternContactPoint != null) __obj.updateDynamic("patternContactPoint")(patternContactPoint)
+    if (patternCount != null) __obj.updateDynamic("patternCount")(patternCount)
+    if (patternDate != null) __obj.updateDynamic("patternDate")(patternDate)
+    if (patternDateTime != null) __obj.updateDynamic("patternDateTime")(patternDateTime)
+    if (!js.isUndefined(patternDecimal)) __obj.updateDynamic("patternDecimal")(patternDecimal)
+    if (patternDistance != null) __obj.updateDynamic("patternDistance")(patternDistance)
+    if (patternDuration != null) __obj.updateDynamic("patternDuration")(patternDuration)
+    if (patternHumanName != null) __obj.updateDynamic("patternHumanName")(patternHumanName)
+    if (patternId != null) __obj.updateDynamic("patternId")(patternId)
+    if (patternIdentifier != null) __obj.updateDynamic("patternIdentifier")(patternIdentifier)
+    if (patternInstant != null) __obj.updateDynamic("patternInstant")(patternInstant)
+    if (!js.isUndefined(patternInteger)) __obj.updateDynamic("patternInteger")(patternInteger)
+    if (patternMarkdown != null) __obj.updateDynamic("patternMarkdown")(patternMarkdown)
+    if (patternMeta != null) __obj.updateDynamic("patternMeta")(patternMeta)
+    if (patternMoney != null) __obj.updateDynamic("patternMoney")(patternMoney)
+    if (patternOid != null) __obj.updateDynamic("patternOid")(patternOid)
+    if (patternPeriod != null) __obj.updateDynamic("patternPeriod")(patternPeriod)
+    if (!js.isUndefined(patternPositiveInt)) __obj.updateDynamic("patternPositiveInt")(patternPositiveInt)
+    if (patternQuantity != null) __obj.updateDynamic("patternQuantity")(patternQuantity)
+    if (patternRange != null) __obj.updateDynamic("patternRange")(patternRange)
+    if (patternRatio != null) __obj.updateDynamic("patternRatio")(patternRatio)
+    if (patternReference != null) __obj.updateDynamic("patternReference")(patternReference)
+    if (patternSampledData != null) __obj.updateDynamic("patternSampledData")(patternSampledData)
+    if (patternSignature != null) __obj.updateDynamic("patternSignature")(patternSignature)
+    if (patternString != null) __obj.updateDynamic("patternString")(patternString)
+    if (patternTime != null) __obj.updateDynamic("patternTime")(patternTime)
+    if (patternTiming != null) __obj.updateDynamic("patternTiming")(patternTiming)
+    if (!js.isUndefined(patternUnsignedInt)) __obj.updateDynamic("patternUnsignedInt")(patternUnsignedInt)
+    if (patternUri != null) __obj.updateDynamic("patternUri")(patternUri)
+    if (representation != null) __obj.updateDynamic("representation")(representation)
+    if (requirements != null) __obj.updateDynamic("requirements")(requirements)
+    if (short != null) __obj.updateDynamic("short")(short)
+    if (sliceName != null) __obj.updateDynamic("sliceName")(sliceName)
+    if (slicing != null) __obj.updateDynamic("slicing")(slicing)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ElementDefinition]
   }
 }

@@ -24,7 +24,7 @@ object TextSortDescriptor2 {
     IsSortColumns: scala.Boolean,
     IsSortInTable: scala.Boolean,
     MaxSortFieldsCount: scala.Double,
-    SortFields: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableSortField]
+    SortFields: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableSortField]
   ): TextSortDescriptor2 = {
     val __obj = js.Dynamic.literal(Delimiter = Delimiter, IsSortColumns = IsSortColumns, IsSortInTable = IsSortInTable, MaxSortFieldsCount = MaxSortFieldsCount, SortFields = SortFields)
   

@@ -36,13 +36,13 @@ trait Geometry extends js.Object {
 object Geometry {
   @scala.inline
   def apply(
-    averageNormals: js.Function0[p5Lib.p5Mod.Geometry],
-    averagePoleNormals: js.Function0[p5Lib.p5Mod.Geometry],
-    computeFaces: js.Function0[p5Lib.p5Mod.Geometry],
-    computeNormals: js.Function0[p5Lib.p5Mod.Geometry],
-    normalize: js.Function0[p5Lib.p5Mod.Geometry]
+    averageNormals: () => p5Lib.p5Mod.Geometry,
+    averagePoleNormals: () => p5Lib.p5Mod.Geometry,
+    computeFaces: () => p5Lib.p5Mod.Geometry,
+    computeNormals: () => p5Lib.p5Mod.Geometry,
+    normalize: () => p5Lib.p5Mod.Geometry
   ): Geometry = {
-    val __obj = js.Dynamic.literal(averageNormals = averageNormals, averagePoleNormals = averagePoleNormals, computeFaces = computeFaces, computeNormals = computeNormals, normalize = normalize)
+    val __obj = js.Dynamic.literal(averageNormals = js.Any.fromFunction0(averageNormals), averagePoleNormals = js.Any.fromFunction0(averagePoleNormals), computeFaces = js.Any.fromFunction0(computeFaces), computeNormals = js.Any.fromFunction0(computeNormals), normalize = js.Any.fromFunction0(normalize))
   
     __obj.asInstanceOf[Geometry]
   }

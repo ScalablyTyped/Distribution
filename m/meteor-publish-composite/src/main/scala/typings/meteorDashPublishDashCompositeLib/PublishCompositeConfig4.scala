@@ -14,11 +14,11 @@ trait PublishCompositeConfig4[InLevel1, InLevel2, InLevel3, InLevel4, OutLevel] 
 object PublishCompositeConfig4 {
   @scala.inline
   def apply[InLevel1, InLevel2, InLevel3, InLevel4, OutLevel](
-    find: js.Function4[InLevel4, InLevel3, InLevel2, InLevel1, meteorLib.MongoNs.Cursor[OutLevel]],
+    find: (InLevel4, InLevel3, InLevel2, InLevel1) => meteorLib.MongoNs.Cursor[OutLevel],
     children: js.Array[PublishCompositeConfigN] = null,
     collectionName: java.lang.String = null
   ): PublishCompositeConfig4[InLevel1, InLevel2, InLevel3, InLevel4, OutLevel] = {
-    val __obj = js.Dynamic.literal(find = find)
+    val __obj = js.Dynamic.literal(find = js.Any.fromFunction4(find))
     if (children != null) __obj.updateDynamic("children")(children)
     if (collectionName != null) __obj.updateDynamic("collectionName")(collectionName)
     __obj.asInstanceOf[PublishCompositeConfig4[InLevel1, InLevel2, InLevel3, InLevel4, OutLevel]]

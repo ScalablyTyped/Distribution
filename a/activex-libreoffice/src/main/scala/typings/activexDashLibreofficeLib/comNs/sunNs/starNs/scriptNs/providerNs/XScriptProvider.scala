@@ -20,12 +20,12 @@ trait XScriptProvider
 object XScriptProvider {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getScript: js.Function1[java.lang.String, XScript],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getScript: java.lang.String => XScript,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XScriptProvider = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getScript = getScript, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getScript = js.Any.fromFunction1(getScript), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XScriptProvider]
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SiderProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] {
   var breakpoint: js.UndefOr[
     antdLib.antdLibStrings.xs | antdLib.antdLibStrings.sm | antdLib.antdLibStrings.md | antdLib.antdLibStrings.lg | antdLib.antdLibStrings.xl | antdLib.antdLibStrings.xxl
   ] = js.undefined
@@ -26,14 +26,14 @@ trait SiderProps
 object SiderProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
     breakpoint: antdLib.antdLibStrings.xs | antdLib.antdLibStrings.sm | antdLib.antdLibStrings.md | antdLib.antdLibStrings.lg | antdLib.antdLibStrings.xl | antdLib.antdLibStrings.xxl = null,
     collapsed: js.UndefOr[scala.Boolean] = js.undefined,
     collapsedWidth: scala.Double | java.lang.String = null,
     collapsible: js.UndefOr[scala.Boolean] = js.undefined,
     defaultCollapsed: js.UndefOr[scala.Boolean] = js.undefined,
-    onBreakpoint: js.Function1[/* broken */ scala.Boolean, scala.Unit] = null,
-    onCollapse: js.Function2[/* collapsed */ scala.Boolean, /* type */ CollapseType, scala.Unit] = null,
+    onBreakpoint: /* broken */ scala.Boolean => scala.Unit = null,
+    onCollapse: (/* collapsed */ scala.Boolean, /* type */ CollapseType) => scala.Unit = null,
     prefixCls: java.lang.String = null,
     reverseArrow: js.UndefOr[scala.Boolean] = js.undefined,
     theme: SiderTheme = null,
@@ -47,8 +47,8 @@ object SiderProps {
     if (collapsedWidth != null) __obj.updateDynamic("collapsedWidth")(collapsedWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
     if (!js.isUndefined(defaultCollapsed)) __obj.updateDynamic("defaultCollapsed")(defaultCollapsed)
-    if (onBreakpoint != null) __obj.updateDynamic("onBreakpoint")(onBreakpoint)
-    if (onCollapse != null) __obj.updateDynamic("onCollapse")(onCollapse)
+    if (onBreakpoint != null) __obj.updateDynamic("onBreakpoint")(js.Any.fromFunction1(onBreakpoint))
+    if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction2(onCollapse))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (!js.isUndefined(reverseArrow)) __obj.updateDynamic("reverseArrow")(reverseArrow)
     if (theme != null) __obj.updateDynamic("theme")(theme)

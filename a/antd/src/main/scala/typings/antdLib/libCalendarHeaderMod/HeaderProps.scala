@@ -26,8 +26,8 @@ object HeaderProps {
     value: js.Any,
     fullscreen: js.UndefOr[scala.Boolean] = js.undefined,
     locale: js.Any = null,
-    onTypeChange: js.Function1[/* type */ java.lang.String, scala.Unit] = null,
-    onValueChange: js.Function1[/* value */ momentLib.momentMod.momentNs.Moment, scala.Unit] = null,
+    onTypeChange: /* type */ java.lang.String => scala.Unit = null,
+    onValueChange: /* value */ momentLib.momentMod.momentNs.Moment => scala.Unit = null,
     prefixCls: java.lang.String = null,
     `type`: java.lang.String = null,
     validRange: js.Tuple2[momentLib.momentMod.momentNs.Moment, momentLib.momentMod.momentNs.Moment] = null,
@@ -37,8 +37,8 @@ object HeaderProps {
     val __obj = js.Dynamic.literal(value = value)
     if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen)
     if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (onTypeChange != null) __obj.updateDynamic("onTypeChange")(onTypeChange)
-    if (onValueChange != null) __obj.updateDynamic("onValueChange")(onValueChange)
+    if (onTypeChange != null) __obj.updateDynamic("onTypeChange")(js.Any.fromFunction1(onTypeChange))
+    if (onValueChange != null) __obj.updateDynamic("onValueChange")(js.Any.fromFunction1(onValueChange))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (validRange != null) __obj.updateDynamic("validRange")(validRange)

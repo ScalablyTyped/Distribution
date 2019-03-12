@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Watcher
   extends nodeLib.eventsMod.EventEmitter {
   var data: scala.Double = js.native
-  var directoryWatcher: watchpackLib.directorywatcherMod.namespaced = js.native
+  var directoryWatcher: watchpackLib.directoryWatcherMod.namespaced = js.native
   var path: java.lang.String = js.native
   var startTime: scala.Double = js.native
   def checkStartTime(mtime: scala.Double, initial: scala.Boolean): scala.Boolean = js.native

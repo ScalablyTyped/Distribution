@@ -8,47 +8,47 @@ import scala.scalajs.js.annotation._
 object glDashReactDashDomLibNumbers {
   @js.native
   sealed trait `0DOT0`
-    extends glDashReactDashDomLib.glviewdomMod.ValidQuality
+    extends glDashReactDashDomLib.gLViewDOMMod.ValidQuality
   
   @js.native
   sealed trait `0DOT1`
-    extends glDashReactDashDomLib.glviewdomMod.ValidQuality
+    extends glDashReactDashDomLib.gLViewDOMMod.ValidQuality
   
   @js.native
   sealed trait `0DOT2`
-    extends glDashReactDashDomLib.glviewdomMod.ValidQuality
+    extends glDashReactDashDomLib.gLViewDOMMod.ValidQuality
   
   @js.native
   sealed trait `0DOT3`
-    extends glDashReactDashDomLib.glviewdomMod.ValidQuality
+    extends glDashReactDashDomLib.gLViewDOMMod.ValidQuality
   
   @js.native
   sealed trait `0DOT4`
-    extends glDashReactDashDomLib.glviewdomMod.ValidQuality
+    extends glDashReactDashDomLib.gLViewDOMMod.ValidQuality
   
   @js.native
   sealed trait `0DOT5`
-    extends glDashReactDashDomLib.glviewdomMod.ValidQuality
+    extends glDashReactDashDomLib.gLViewDOMMod.ValidQuality
   
   @js.native
   sealed trait `0DOT6`
-    extends glDashReactDashDomLib.glviewdomMod.ValidQuality
+    extends glDashReactDashDomLib.gLViewDOMMod.ValidQuality
   
   @js.native
   sealed trait `0DOT7`
-    extends glDashReactDashDomLib.glviewdomMod.ValidQuality
+    extends glDashReactDashDomLib.gLViewDOMMod.ValidQuality
   
   @js.native
   sealed trait `0DOT8`
-    extends glDashReactDashDomLib.glviewdomMod.ValidQuality
+    extends glDashReactDashDomLib.gLViewDOMMod.ValidQuality
   
   @js.native
   sealed trait `0DOT9`
-    extends glDashReactDashDomLib.glviewdomMod.ValidQuality
+    extends glDashReactDashDomLib.gLViewDOMMod.ValidQuality
   
   @js.native
   sealed trait `1DOT0`
-    extends glDashReactDashDomLib.glviewdomMod.ValidQuality
+    extends glDashReactDashDomLib.gLViewDOMMod.ValidQuality
   
   @scala.inline
   def `0DOT0`: `0DOT0` = 0.0.asInstanceOf[`0DOT0`]

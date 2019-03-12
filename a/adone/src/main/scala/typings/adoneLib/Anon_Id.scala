@@ -14,9 +14,9 @@ object Anon_Id {
   @scala.inline
   def apply(
     id: java.lang.String | nodeLib.Buffer | adoneLib.adoneNs.dataNs.bsonNs.ObjectId,
-    toHexString: js.Function0[java.lang.String]
+    toHexString: () => java.lang.String
   ): Anon_Id = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], toHexString = toHexString)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], toHexString = js.Any.fromFunction0(toHexString))
   
     __obj.asInstanceOf[Anon_Id]
   }

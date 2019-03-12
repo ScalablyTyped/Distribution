@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.AddIn")
 @js.native
 class AddIn protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Author: java.lang.String = js.native
   val CLSID: java.lang.String = js.native
   val Comments: java.lang.String = js.native

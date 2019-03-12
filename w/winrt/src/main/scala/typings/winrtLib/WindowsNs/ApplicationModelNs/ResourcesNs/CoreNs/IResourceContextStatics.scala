@@ -12,12 +12,9 @@ trait IResourceContextStatics extends js.Object {
 object IResourceContextStatics {
   @scala.inline
   def apply(
-    createMatchingContext: js.Function1[
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[ResourceQualifier], 
-      ResourceContext
-    ]
+    createMatchingContext: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[ResourceQualifier] => ResourceContext
   ): IResourceContextStatics = {
-    val __obj = js.Dynamic.literal(createMatchingContext = createMatchingContext)
+    val __obj = js.Dynamic.literal(createMatchingContext = js.Any.fromFunction1(createMatchingContext))
   
     __obj.asInstanceOf[IResourceContextStatics]
   }

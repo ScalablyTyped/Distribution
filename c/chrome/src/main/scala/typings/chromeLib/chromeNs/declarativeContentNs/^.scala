@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.declarativeContent")
 @js.native
 object ^ extends js.Object {
-  var onPageChanged: chromeLib.chromeNs.declarativeContentNs.PageChangedEvent = js.native
+  var onPageChanged: PageChangedEvent = js.native
 }
 

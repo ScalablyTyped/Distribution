@@ -60,13 +60,13 @@ object OptionalProps {
     detectAutoPan: scala.Boolean,
     detectWheel: scala.Boolean,
     modifierKeys: js.Array[java.lang.String],
-    onChangeTool: js.Function1[Tool, scala.Unit],
-    onChangeValue: js.Function1[Value, scala.Unit],
-    onClick: js.Function1[ViewerMouseEvent[js.Any], scala.Unit],
-    onDoubleClick: js.Function1[ViewerMouseEvent[js.Any], scala.Unit],
-    onMouseDown: js.Function1[ViewerMouseEvent[js.Any], scala.Unit],
-    onMouseMove: js.Function1[ViewerMouseEvent[js.Any], scala.Unit],
-    onMouseUp: js.Function1[ViewerMouseEvent[js.Any], scala.Unit],
+    onChangeTool: Tool => scala.Unit,
+    onChangeValue: Value => scala.Unit,
+    onClick: ViewerMouseEvent[js.Any] => scala.Unit,
+    onDoubleClick: ViewerMouseEvent[js.Any] => scala.Unit,
+    onMouseDown: ViewerMouseEvent[js.Any] => scala.Unit,
+    onMouseMove: ViewerMouseEvent[js.Any] => scala.Unit,
+    onMouseUp: ViewerMouseEvent[js.Any] => scala.Unit,
     preventPanOutside: scala.Boolean,
     scaleFactor: scala.Double,
     style: js.Object,
@@ -74,7 +74,7 @@ object OptionalProps {
     toolbarPosition: ToolbarPosition,
     value: Value = null
   ): OptionalProps = {
-    val __obj = js.Dynamic.literal(SVGBackground = SVGBackground, background = background, className = className, customToolbar = customToolbar.asInstanceOf[js.Any], detectAutoPan = detectAutoPan, detectWheel = detectWheel, modifierKeys = modifierKeys, onChangeTool = onChangeTool, onChangeValue = onChangeValue, onClick = onClick, onDoubleClick = onDoubleClick, onMouseDown = onMouseDown, onMouseMove = onMouseMove, onMouseUp = onMouseUp, preventPanOutside = preventPanOutside, scaleFactor = scaleFactor, style = style, tool = tool, toolbarPosition = toolbarPosition)
+    val __obj = js.Dynamic.literal(SVGBackground = SVGBackground, background = background, className = className, customToolbar = customToolbar.asInstanceOf[js.Any], detectAutoPan = detectAutoPan, detectWheel = detectWheel, modifierKeys = modifierKeys, onChangeTool = js.Any.fromFunction1(onChangeTool), onChangeValue = js.Any.fromFunction1(onChangeValue), onClick = js.Any.fromFunction1(onClick), onDoubleClick = js.Any.fromFunction1(onDoubleClick), onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseMove = js.Any.fromFunction1(onMouseMove), onMouseUp = js.Any.fromFunction1(onMouseUp), preventPanOutside = preventPanOutside, scaleFactor = scaleFactor, style = style, tool = tool, toolbarPosition = toolbarPosition)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[OptionalProps]
   }

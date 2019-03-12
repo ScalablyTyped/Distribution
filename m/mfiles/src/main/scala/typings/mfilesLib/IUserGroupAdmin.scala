@@ -17,12 +17,12 @@ object IUserGroupAdmin {
   @scala.inline
   def apply(
     AccessControlList: IAccessControlList,
-    Clone: js.Function0[IUserGroupAdmin],
-    CloneFrom: js.Function1[IUserGroupAdmin, scala.Unit],
+    Clone: () => IUserGroupAdmin,
+    CloneFrom: IUserGroupAdmin => scala.Unit,
     SemanticAliases: ISemanticAliases,
     UserGroup: IUserGroup
   ): IUserGroupAdmin = {
-    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, Clone = Clone, CloneFrom = CloneFrom, SemanticAliases = SemanticAliases, UserGroup = UserGroup)
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, Clone = js.Any.fromFunction0(Clone), CloneFrom = js.Any.fromFunction1(CloneFrom), SemanticAliases = SemanticAliases, UserGroup = UserGroup)
   
     __obj.asInstanceOf[IUserGroupAdmin]
   }

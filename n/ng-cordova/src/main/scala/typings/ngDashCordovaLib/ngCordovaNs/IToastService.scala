@@ -18,20 +18,15 @@ trait IToastService extends js.Object {
 object IToastService {
   @scala.inline
   def apply(
-    show: js.Function3[
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      angularLib.angularMod.angularNs.IPromise[_]
-    ],
-    showLongBottom: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[_]],
-    showLongCenter: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[_]],
-    showLongTop: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[_]],
-    showShortBottom: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[_]],
-    showShortCenter: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[_]],
-    showShortTop: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[_]]
+    show: (java.lang.String, java.lang.String, java.lang.String) => angularLib.angularMod.angularNs.IPromise[_],
+    showLongBottom: java.lang.String => angularLib.angularMod.angularNs.IPromise[_],
+    showLongCenter: java.lang.String => angularLib.angularMod.angularNs.IPromise[_],
+    showLongTop: java.lang.String => angularLib.angularMod.angularNs.IPromise[_],
+    showShortBottom: java.lang.String => angularLib.angularMod.angularNs.IPromise[_],
+    showShortCenter: java.lang.String => angularLib.angularMod.angularNs.IPromise[_],
+    showShortTop: java.lang.String => angularLib.angularMod.angularNs.IPromise[_]
   ): IToastService = {
-    val __obj = js.Dynamic.literal(show = show, showLongBottom = showLongBottom, showLongCenter = showLongCenter, showLongTop = showLongTop, showShortBottom = showShortBottom, showShortCenter = showShortCenter, showShortTop = showShortTop)
+    val __obj = js.Dynamic.literal(show = js.Any.fromFunction3(show), showLongBottom = js.Any.fromFunction1(showLongBottom), showLongCenter = js.Any.fromFunction1(showLongCenter), showLongTop = js.Any.fromFunction1(showLongTop), showShortBottom = js.Any.fromFunction1(showShortBottom), showShortCenter = js.Any.fromFunction1(showShortCenter), showShortTop = js.Any.fromFunction1(showShortTop))
   
     __obj.asInstanceOf[IToastService]
   }

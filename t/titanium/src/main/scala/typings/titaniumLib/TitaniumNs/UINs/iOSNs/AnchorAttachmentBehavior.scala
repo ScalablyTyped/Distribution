@@ -87,39 +87,39 @@ trait AnchorAttachmentBehavior
 object AnchorAttachmentBehavior {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
     anchor: titaniumLib.Point,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     bubbleParent: scala.Boolean,
     damping: scala.Double,
     distance: scala.Double,
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
     frequency: scala.Double,
-    getAnchor: js.Function0[titaniumLib.Point],
-    getApiName: js.Function0[java.lang.String],
-    getBubbleParent: js.Function0[scala.Boolean],
-    getDamping: js.Function0[scala.Double],
-    getDistance: js.Function0[scala.Double],
-    getFrequency: js.Function0[scala.Double],
-    getItem: js.Function0[titaniumLib.TitaniumNs.UINs.View],
-    getOffset: js.Function0[titaniumLib.Point],
+    getAnchor: () => titaniumLib.Point,
+    getApiName: () => java.lang.String,
+    getBubbleParent: () => scala.Boolean,
+    getDamping: () => scala.Double,
+    getDistance: () => scala.Double,
+    getFrequency: () => scala.Double,
+    getItem: () => titaniumLib.TitaniumNs.UINs.View,
+    getOffset: () => titaniumLib.Point,
     item: titaniumLib.TitaniumNs.UINs.View,
     offset: titaniumLib.Point,
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    setAnchor: js.Function1[titaniumLib.Point, scala.Unit],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
-    setDamping: js.Function1[scala.Double, scala.Unit],
-    setDistance: js.Function1[scala.Double, scala.Unit],
-    setFrequency: js.Function1[scala.Double, scala.Unit],
-    setItem: js.Function1[js.Any, scala.Unit],
-    setOffset: js.Function1[titaniumLib.Point, scala.Unit],
-    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    setAnchor: titaniumLib.Point => scala.Unit,
+    setBubbleParent: scala.Boolean => scala.Unit,
+    setDamping: scala.Double => scala.Unit,
+    setDistance: scala.Double => scala.Unit,
+    setFrequency: scala.Double => scala.Unit,
+    setItem: js.Any => scala.Unit,
+    setOffset: titaniumLib.Point => scala.Unit,
+    getLifecycleContainer: () => titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
   ): AnchorAttachmentBehavior = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, anchor = anchor, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, damping = damping, distance = distance, fireEvent = fireEvent, frequency = frequency, getAnchor = getAnchor, getApiName = getApiName, getBubbleParent = getBubbleParent, getDamping = getDamping, getDistance = getDistance, getFrequency = getFrequency, getItem = getItem, getOffset = getOffset, item = item, offset = offset, removeEventListener = removeEventListener, setAnchor = setAnchor, setBubbleParent = setBubbleParent, setDamping = setDamping, setDistance = setDistance, setFrequency = setFrequency, setItem = setItem, setOffset = setOffset)
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), anchor = anchor, apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, damping = damping, distance = distance, fireEvent = js.Any.fromFunction2(fireEvent), frequency = frequency, getAnchor = js.Any.fromFunction0(getAnchor), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getDamping = js.Any.fromFunction0(getDamping), getDistance = js.Any.fromFunction0(getDistance), getFrequency = js.Any.fromFunction0(getFrequency), getItem = js.Any.fromFunction0(getItem), getOffset = js.Any.fromFunction0(getOffset), item = item, offset = offset, removeEventListener = js.Any.fromFunction2(removeEventListener), setAnchor = js.Any.fromFunction1(setAnchor), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setDamping = js.Any.fromFunction1(setDamping), setDistance = js.Any.fromFunction1(setDistance), setFrequency = js.Any.fromFunction1(setFrequency), setItem = js.Any.fromFunction1(setItem), setOffset = js.Any.fromFunction1(setOffset))
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
     __obj.asInstanceOf[AnchorAttachmentBehavior]

@@ -87,13 +87,13 @@ object _Impl {
     interactive: scala.Boolean,
     name: java.lang.String,
     namespace: java.lang.String,
-    onRate: js.Function2[semanticDashUiDashRatingLib.JQuery, scala.Double, scala.Unit],
+    onRate: (semanticDashUiDashRatingLib.JQuery, scala.Double) => scala.Unit,
     performance: scala.Boolean,
     selector: semanticDashUiDashRatingLib.SemanticUINs.RatingNs.SelectorSettings,
     silent: scala.Boolean,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], clearable = clearable.asInstanceOf[js.Any], debug = debug, error = error, fireOnInit = fireOnInit, initialRating = initialRating, interactive = interactive, name = name, namespace = namespace, onRate = onRate, performance = performance, selector = selector, silent = silent, verbose = verbose)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], clearable = clearable.asInstanceOf[js.Any], debug = debug, error = error, fireOnInit = fireOnInit, initialRating = initialRating, interactive = interactive, name = name, namespace = namespace, onRate = js.Any.fromFunction2(onRate), performance = performance, selector = selector, silent = silent, verbose = verbose)
   
     __obj.asInstanceOf[_Impl]
   }

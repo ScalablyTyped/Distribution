@@ -51,7 +51,7 @@ class JWTAccess () extends js.Object {
   def fromStream(inputStream: nodeLib.streamMod.Readable): js.Promise[scala.Unit] = js.native
   def fromStream(
     inputStream: nodeLib.streamMod.Readable,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Get a non-expired access token, after refreshing if necessary.

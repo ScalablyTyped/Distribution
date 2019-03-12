@@ -57,18 +57,18 @@ object Margin {
   @scala.inline
   def apply(
     bottom: scala.Double,
-    copy: js.Function0[Margin],
-    equalTo: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Boolean],
-    equals: js.Function1[Margin, scala.Boolean],
-    equalsApprox: js.Function1[Margin, scala.Boolean],
-    isReal: js.Function0[scala.Boolean],
+    copy: () => Margin,
+    equalTo: (scala.Double, scala.Double, scala.Double, scala.Double) => scala.Boolean,
+    equals: Margin => scala.Boolean,
+    equalsApprox: Margin => scala.Boolean,
+    isReal: () => scala.Boolean,
     left: scala.Double,
     right: scala.Double,
-    set: js.Function1[Margin, Margin],
-    setTo: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, Margin],
+    set: Margin => Margin,
+    setTo: (scala.Double, scala.Double, scala.Double, scala.Double) => Margin,
     top: scala.Double
   ): Margin = {
-    val __obj = js.Dynamic.literal(bottom = bottom, copy = copy, equalTo = equalTo, equals = equals, equalsApprox = equalsApprox, isReal = isReal, left = left, right = right, set = set, setTo = setTo, top = top)
+    val __obj = js.Dynamic.literal(bottom = bottom, copy = js.Any.fromFunction0(copy), equalTo = js.Any.fromFunction4(equalTo), equals = js.Any.fromFunction1(equals), equalsApprox = js.Any.fromFunction1(equalsApprox), isReal = js.Any.fromFunction0(isReal), left = left, right = right, set = js.Any.fromFunction1(set), setTo = js.Any.fromFunction4(setTo), top = top)
   
     __obj.asInstanceOf[Margin]
   }

@@ -32,14 +32,14 @@ trait Response extends js.Object {
 object Response {
   @scala.inline
   def apply(
-    get: js.Function1[java.lang.String, js.UndefOr[_]],
-    redirect: js.Function1[java.lang.String, scala.Unit],
-    set: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    get: java.lang.String => js.UndefOr[_],
+    redirect: java.lang.String => scala.Unit,
+    set: (java.lang.String, java.lang.String) => scala.Unit,
     body: js.Any = null,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     status: scala.Int | scala.Double = null
   ): Response = {
-    val __obj = js.Dynamic.literal(get = get, redirect = redirect, set = set)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), redirect = js.Any.fromFunction1(redirect), set = js.Any.fromFunction2(set))
     if (body != null) __obj.updateDynamic("body")(body)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

@@ -54,22 +54,9 @@ object NavigationStackViewConfig {
     headerMode: HeaderMode = null,
     headerTransitionPreset: reactDashNavigationLib.reactDashNavigationLibStrings.`fade-in-place` | reactDashNavigationLib.reactDashNavigationLibStrings.uikit = null,
     mode: reactDashNavigationLib.reactDashNavigationLibStrings.card | reactDashNavigationLib.reactDashNavigationLibStrings.modal = null,
-    onTransitionEnd: js.Function2[
-      /* transitionProps */ NavigationTransitionProps, 
-      /* prevTransitionProps */ js.UndefOr[NavigationTransitionProps], 
-      scala.Unit
-    ] = null,
-    onTransitionStart: js.Function2[
-      /* transitionProps */ NavigationTransitionProps, 
-      /* prevTransitionProps */ js.UndefOr[NavigationTransitionProps], 
-      js.Promise[scala.Unit] | scala.Unit
-    ] = null,
-    transitionConfig: js.Function3[
-      /* transitionProps */ NavigationTransitionProps, 
-      /* prevTransitionProps */ NavigationTransitionProps, 
-      /* isModal */ scala.Boolean, 
-      TransitionConfig
-    ] = null,
+    onTransitionEnd: (/* transitionProps */ NavigationTransitionProps, /* prevTransitionProps */ js.UndefOr[NavigationTransitionProps]) => scala.Unit = null,
+    onTransitionStart: (/* transitionProps */ NavigationTransitionProps, /* prevTransitionProps */ js.UndefOr[NavigationTransitionProps]) => js.Promise[scala.Unit] | scala.Unit = null,
+    transitionConfig: (/* transitionProps */ NavigationTransitionProps, /* prevTransitionProps */ NavigationTransitionProps, /* isModal */ scala.Boolean) => TransitionConfig = null,
     transparentCard: js.UndefOr[scala.Boolean] = js.undefined
   ): NavigationStackViewConfig = {
     val __obj = js.Dynamic.literal()
@@ -79,9 +66,9 @@ object NavigationStackViewConfig {
     if (headerMode != null) __obj.updateDynamic("headerMode")(headerMode)
     if (headerTransitionPreset != null) __obj.updateDynamic("headerTransitionPreset")(headerTransitionPreset.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(onTransitionEnd)
-    if (onTransitionStart != null) __obj.updateDynamic("onTransitionStart")(onTransitionStart)
-    if (transitionConfig != null) __obj.updateDynamic("transitionConfig")(transitionConfig)
+    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction2(onTransitionEnd))
+    if (onTransitionStart != null) __obj.updateDynamic("onTransitionStart")(js.Any.fromFunction2(onTransitionStart))
+    if (transitionConfig != null) __obj.updateDynamic("transitionConfig")(js.Any.fromFunction3(transitionConfig))
     if (!js.isUndefined(transparentCard)) __obj.updateDynamic("transparentCard")(transparentCard)
     __obj.asInstanceOf[NavigationStackViewConfig]
   }

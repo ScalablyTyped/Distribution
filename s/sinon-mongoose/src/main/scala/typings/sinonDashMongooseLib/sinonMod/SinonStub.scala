@@ -14,8 +14,8 @@ trait SinonStub extends js.Object {
 
 object SinonStub {
   @scala.inline
-  def apply(chain: js.Function1[java.lang.String, sinonLib.sinonMod.SinonNs.SinonStub]): SinonStub = {
-    val __obj = js.Dynamic.literal(chain = chain)
+  def apply(chain: java.lang.String => sinonLib.sinonMod.SinonNs.SinonStub): SinonStub = {
+    val __obj = js.Dynamic.literal(chain = js.Any.fromFunction1(chain))
   
     __obj.asInstanceOf[SinonStub]
   }

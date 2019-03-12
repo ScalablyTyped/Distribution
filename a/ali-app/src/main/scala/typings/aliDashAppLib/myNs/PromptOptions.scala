@@ -30,18 +30,18 @@ object PromptOptions {
   def apply(
     cancelButtonText: java.lang.String,
     okButtonText: java.lang.String,
-    success: js.Function1[aliDashAppLib.Anon_InputValue, scala.Unit],
+    success: aliDashAppLib.Anon_InputValue => scala.Unit,
     align: aliDashAppLib.aliDashAppLibStrings.left | aliDashAppLib.aliDashAppLibStrings.center | aliDashAppLib.aliDashAppLibStrings.right | java.lang.String = null,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
+    complete: /* res */ js.Any => scala.Unit = null,
+    fail: js.Any => scala.Unit = null,
     message: java.lang.String = null,
     placeholder: java.lang.String = null,
     title: java.lang.String = null
   ): PromptOptions = {
-    val __obj = js.Dynamic.literal(cancelButtonText = cancelButtonText, okButtonText = okButtonText, success = success)
+    val __obj = js.Dynamic.literal(cancelButtonText = cancelButtonText, okButtonText = okButtonText, success = js.Any.fromFunction1(success))
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (message != null) __obj.updateDynamic("message")(message)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (title != null) __obj.updateDynamic("title")(title)

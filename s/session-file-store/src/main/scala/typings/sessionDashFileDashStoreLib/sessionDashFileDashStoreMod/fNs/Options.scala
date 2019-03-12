@@ -102,16 +102,16 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    decoder: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    encoder: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    decoder: /* repeated */ js.Any => scala.Unit = null,
+    encoder: /* repeated */ js.Any => scala.Unit = null,
     encoding: java.lang.String = null,
     encryptEncoding: java.lang.String = null,
     factor: scala.Int | scala.Double = null,
-    fallbackSessionFn: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    fallbackSessionFn: /* repeated */ js.Any => scala.Unit = null,
     fileExtension: java.lang.String = null,
     filePattern: stdLib.RegExp = null,
-    keyFunction: js.Function2[/* secret */ java.lang.String, /* sessionId */ java.lang.String, java.lang.String] = null,
-    logFn: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    keyFunction: (/* secret */ java.lang.String, /* sessionId */ java.lang.String) => java.lang.String = null,
+    logFn: /* repeated */ js.Any => scala.Unit = null,
     maxTimeout: scala.Int | scala.Double = null,
     minTimeout: scala.Int | scala.Double = null,
     path: java.lang.String = null,
@@ -125,16 +125,16 @@ object Options {
     ttl: scala.Int | scala.Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (decoder != null) __obj.updateDynamic("decoder")(decoder)
-    if (encoder != null) __obj.updateDynamic("encoder")(encoder)
+    if (decoder != null) __obj.updateDynamic("decoder")(js.Any.fromFunction1(decoder))
+    if (encoder != null) __obj.updateDynamic("encoder")(js.Any.fromFunction1(encoder))
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (encryptEncoding != null) __obj.updateDynamic("encryptEncoding")(encryptEncoding)
     if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
-    if (fallbackSessionFn != null) __obj.updateDynamic("fallbackSessionFn")(fallbackSessionFn)
+    if (fallbackSessionFn != null) __obj.updateDynamic("fallbackSessionFn")(js.Any.fromFunction1(fallbackSessionFn))
     if (fileExtension != null) __obj.updateDynamic("fileExtension")(fileExtension)
     if (filePattern != null) __obj.updateDynamic("filePattern")(filePattern)
-    if (keyFunction != null) __obj.updateDynamic("keyFunction")(keyFunction)
-    if (logFn != null) __obj.updateDynamic("logFn")(logFn)
+    if (keyFunction != null) __obj.updateDynamic("keyFunction")(js.Any.fromFunction2(keyFunction))
+    if (logFn != null) __obj.updateDynamic("logFn")(js.Any.fromFunction1(logFn))
     if (maxTimeout != null) __obj.updateDynamic("maxTimeout")(maxTimeout.asInstanceOf[js.Any])
     if (minTimeout != null) __obj.updateDynamic("minTimeout")(minTimeout.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path)

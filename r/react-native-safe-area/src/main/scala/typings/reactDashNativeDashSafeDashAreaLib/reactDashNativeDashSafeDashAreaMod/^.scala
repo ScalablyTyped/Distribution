@@ -18,7 +18,7 @@ object ^ extends js.Object {
   def withSafeArea_absolutePosition(
     WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[_],
     applyTo: reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaLibStrings.absolutePosition,
-    direction: reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
+    direction: Direction
   ): reactLib.reactMod.ReactNs.ComponentType[_] = js.native
   @JSName("withSafeArea")
   def withSafeArea_contentInset(
@@ -29,7 +29,7 @@ object ^ extends js.Object {
   def withSafeArea_contentInset(
     WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[_],
     applyTo: reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaLibStrings.contentInset,
-    direction: reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
+    direction: Direction
   ): reactLib.reactMod.ReactNs.ComponentType[_] = js.native
   @JSName("withSafeArea")
   def withSafeArea_margin(
@@ -40,7 +40,7 @@ object ^ extends js.Object {
   def withSafeArea_margin(
     WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[_],
     applyTo: reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaLibStrings.margin,
-    direction: reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
+    direction: Direction
   ): reactLib.reactMod.ReactNs.ComponentType[_] = js.native
   @JSName("withSafeArea")
   def withSafeArea_padding(
@@ -51,7 +51,7 @@ object ^ extends js.Object {
   def withSafeArea_padding(
     WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[_],
     applyTo: reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaLibStrings.padding,
-    direction: reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
+    direction: Direction
   ): reactLib.reactMod.ReactNs.ComponentType[_] = js.native
 }
 

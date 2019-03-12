@@ -25,18 +25,13 @@ trait XDataImporter
 object XDataImporter {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    cancel: js.Function0[scala.Unit],
-    importData: js.Function3[
-      XActiveDataSource, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent, 
-      XDataTransferEventListener, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    cancel: () => scala.Unit,
+    importData: (XActiveDataSource, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent, XDataTransferEventListener) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDataImporter = {
-    val __obj = js.Dynamic.literal(acquire = acquire, cancel = cancel, importData = importData, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), cancel = js.Any.fromFunction0(cancel), importData = js.Any.fromFunction3(importData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDataImporter]
   }

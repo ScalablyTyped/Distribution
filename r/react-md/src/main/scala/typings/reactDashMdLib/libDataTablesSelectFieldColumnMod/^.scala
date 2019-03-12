@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/DataTables/SelectFieldColumn", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactDashMdLib.libDataTablesSelectFieldColumnMod.SelectFieldColumnComponent = js.native
+  val default: SelectFieldColumnComponent = js.native
 }
 

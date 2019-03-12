@@ -19,7 +19,7 @@ object EFSNs extends js.Object {
     /**
       * A string of up to 64 ASCII characters. Amazon EFS uses this to ensure idempotent creation.
       */
-    var CreationToken: CreationToken
+    var CreationToken: awsDashSdkLib.clientsEfsMod.EFSNs.CreationToken
     /**
       * A Boolean value that, if true, creates an encrypted file system. When creating an encrypted file system, you have the option of specifying CreateFileSystemRequest$KmsKeyId for an existing AWS Key Management Service (AWS KMS) customer master key (CMK). If you don't specify a CMK, then the default CMK for Amazon EFS, /aws/elasticfilesystem, is used to protect the encrypted file system. 
       */
@@ -50,7 +50,7 @@ object EFSNs extends js.Object {
     /**
       * The ID of the file system for which to create the mount target.
       */
-    var FileSystemId: FileSystemId
+    var FileSystemId: awsDashSdkLib.clientsEfsMod.EFSNs.FileSystemId
     /**
       * Valid IPv4 address within the address range of the specified subnet.
       */
@@ -62,43 +62,43 @@ object EFSNs extends js.Object {
     /**
       * The ID of the subnet to add the mount target in.
       */
-    var SubnetId: SubnetId
+    var SubnetId: awsDashSdkLib.clientsEfsMod.EFSNs.SubnetId
   }
   
   trait CreateTagsRequest extends js.Object {
     /**
       * The ID of the file system whose tags you want to modify (String). This operation modifies the tags only, not the file system.
       */
-    var FileSystemId: FileSystemId
+    var FileSystemId: awsDashSdkLib.clientsEfsMod.EFSNs.FileSystemId
     /**
       * An array of Tag objects to add. Each Tag object is a key-value pair. 
       */
-    var Tags: Tags
+    var Tags: awsDashSdkLib.clientsEfsMod.EFSNs.Tags
   }
   
   trait DeleteFileSystemRequest extends js.Object {
     /**
       * The ID of the file system you want to delete.
       */
-    var FileSystemId: FileSystemId
+    var FileSystemId: awsDashSdkLib.clientsEfsMod.EFSNs.FileSystemId
   }
   
   trait DeleteMountTargetRequest extends js.Object {
     /**
       * The ID of the mount target to delete (String).
       */
-    var MountTargetId: MountTargetId
+    var MountTargetId: awsDashSdkLib.clientsEfsMod.EFSNs.MountTargetId
   }
   
   trait DeleteTagsRequest extends js.Object {
     /**
       * The ID of the file system whose tags you want to delete (String).
       */
-    var FileSystemId: FileSystemId
+    var FileSystemId: awsDashSdkLib.clientsEfsMod.EFSNs.FileSystemId
     /**
       * A list of tag keys to delete.
       */
-    var TagKeys: TagKeys
+    var TagKeys: awsDashSdkLib.clientsEfsMod.EFSNs.TagKeys
   }
   
   trait DescribeFileSystemsRequest extends js.Object {
@@ -139,21 +139,21 @@ object EFSNs extends js.Object {
     /**
       * The ID of the file system whose LifecycleConfiguration object you want to retrieve (String).
       */
-    var FileSystemId: FileSystemId
+    var FileSystemId: awsDashSdkLib.clientsEfsMod.EFSNs.FileSystemId
   }
   
   trait DescribeMountTargetSecurityGroupsRequest extends js.Object {
     /**
       * The ID of the mount target whose security groups you want to retrieve.
       */
-    var MountTargetId: MountTargetId
+    var MountTargetId: awsDashSdkLib.clientsEfsMod.EFSNs.MountTargetId
   }
   
   trait DescribeMountTargetSecurityGroupsResponse extends js.Object {
     /**
       * An array of security groups.
       */
-    var SecurityGroups: SecurityGroups
+    var SecurityGroups: awsDashSdkLib.clientsEfsMod.EFSNs.SecurityGroups
   }
   
   trait DescribeMountTargetsRequest extends js.Object {
@@ -194,7 +194,7 @@ object EFSNs extends js.Object {
     /**
       * The ID of the file system whose tag set you want to retrieve.
       */
-    var FileSystemId: FileSystemId
+    var FileSystemId: awsDashSdkLib.clientsEfsMod.EFSNs.FileSystemId
     /**
       * (Optional) An opaque pagination token returned from a previous DescribeTags operation (String). If present, it specifies to continue the list from where the previous call left off.
       */
@@ -217,7 +217,7 @@ object EFSNs extends js.Object {
     /**
       * Returns tags associated with the file system as an array of Tag objects. 
       */
-    var Tags: Tags
+    var Tags: awsDashSdkLib.clientsEfsMod.EFSNs.Tags
   }
   
   trait FileSystemDescription extends js.Object {
@@ -228,7 +228,7 @@ object EFSNs extends js.Object {
     /**
       * The opaque string specified in the request.
       */
-    var CreationToken: CreationToken
+    var CreationToken: awsDashSdkLib.clientsEfsMod.EFSNs.CreationToken
     /**
       * A Boolean value that, if true, indicates that the file system is encrypted.
       */
@@ -236,7 +236,7 @@ object EFSNs extends js.Object {
     /**
       * The ID of the file system, assigned by Amazon EFS.
       */
-    var FileSystemId: FileSystemId
+    var FileSystemId: awsDashSdkLib.clientsEfsMod.EFSNs.FileSystemId
     /**
       * The ID of an AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to protect the encrypted file system.
       */
@@ -244,7 +244,7 @@ object EFSNs extends js.Object {
     /**
       * The lifecycle phase of the file system.
       */
-    var LifeCycleState: LifeCycleState
+    var LifeCycleState: awsDashSdkLib.clientsEfsMod.EFSNs.LifeCycleState
     /**
       * You can add tags to a file system, including a Name tag. For more information, see CreateFileSystem. If the file system has a Name tag, Amazon EFS returns the value in this field. 
       */
@@ -260,7 +260,7 @@ object EFSNs extends js.Object {
     /**
       * The performance mode of the file system.
       */
-    var PerformanceMode: PerformanceMode
+    var PerformanceMode: awsDashSdkLib.clientsEfsMod.EFSNs.PerformanceMode
     /**
       * The throughput, measured in MiB/s, that you want to provision for a file system. The limit on throughput is 1024 MiB/s. You can get these limits increased by contacting AWS Support. For more information, see Amazon EFS Limits That You Can Increase in the Amazon EFS User Guide. 
       */
@@ -272,7 +272,7 @@ object EFSNs extends js.Object {
     /**
       * The tags associated with the file system, presented as an array of Tag objects.
       */
-    var Tags: Tags
+    var Tags: awsDashSdkLib.clientsEfsMod.EFSNs.Tags
     /**
       * The throughput mode for a file system. There are two throughput modes to choose from for your file system: bursting and provisioned. You can decrease your file system's throughput in Provisioned Throughput mode or change between the throughput modes as long as it’s been more than 24 hours since the last decrease or throughput mode change.
       */
@@ -316,7 +316,7 @@ object EFSNs extends js.Object {
     /**
       * The ID of the mount target whose security groups you want to modify.
       */
-    var MountTargetId: MountTargetId
+    var MountTargetId: awsDashSdkLib.clientsEfsMod.EFSNs.MountTargetId
     /**
       * An array of up to five VPC security group IDs.
       */
@@ -327,7 +327,7 @@ object EFSNs extends js.Object {
     /**
       * The ID of the file system for which the mount target is intended.
       */
-    var FileSystemId: FileSystemId
+    var FileSystemId: awsDashSdkLib.clientsEfsMod.EFSNs.FileSystemId
     /**
       * Address at which the file system can be mounted by using the mount target.
       */
@@ -335,11 +335,11 @@ object EFSNs extends js.Object {
     /**
       * Lifecycle state of the mount target.
       */
-    var LifeCycleState: LifeCycleState
+    var LifeCycleState: awsDashSdkLib.clientsEfsMod.EFSNs.LifeCycleState
     /**
       * System-assigned mount target ID.
       */
-    var MountTargetId: MountTargetId
+    var MountTargetId: awsDashSdkLib.clientsEfsMod.EFSNs.MountTargetId
     /**
       * The ID of the network interface that Amazon EFS created when it created the mount target.
       */
@@ -351,18 +351,18 @@ object EFSNs extends js.Object {
     /**
       * The ID of the mount target's subnet.
       */
-    var SubnetId: SubnetId
+    var SubnetId: awsDashSdkLib.clientsEfsMod.EFSNs.SubnetId
   }
   
   trait PutLifecycleConfigurationRequest extends js.Object {
     /**
       * The ID of the file system for which you are creating the LifecycleConfiguration object (String).
       */
-    var FileSystemId: FileSystemId
+    var FileSystemId: awsDashSdkLib.clientsEfsMod.EFSNs.FileSystemId
     /**
       * An array of LifecyclePolicy objects that define the file system's LifecycleConfiguration object. A LifecycleConfiguration object tells lifecycle management when to transition files from the Standard storage class to the Infrequent Access storage class.
       */
-    var LifecyclePolicies: LifecyclePolicies
+    var LifecyclePolicies: awsDashSdkLib.clientsEfsMod.EFSNs.LifecyclePolicies
   }
   
   trait Tag extends js.Object {
@@ -669,7 +669,7 @@ object EFSNs extends js.Object {
     /**
       * The ID of the file system that you want to update.
       */
-    var FileSystemId: FileSystemId
+    var FileSystemId: awsDashSdkLib.clientsEfsMod.EFSNs.FileSystemId
     /**
       * (Optional) The amount of throughput, in MiB/s, that you want to provision for your file system. If you're not updating the amount of provisioned throughput for your file system, you don't need to provide this value in your request.
       */

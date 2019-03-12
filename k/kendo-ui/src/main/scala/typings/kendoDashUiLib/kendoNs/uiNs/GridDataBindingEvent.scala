@@ -14,14 +14,14 @@ trait GridDataBindingEvent extends GridEvent {
 object GridDataBindingEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Grid,
     action: java.lang.String = null,
     index: scala.Int | scala.Double = null,
     items: js.Any = null
   ): GridDataBindingEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (action != null) __obj.updateDynamic("action")(action)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items)

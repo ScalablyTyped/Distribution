@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait MinifyOutput extends js.Object {
   var ast: js.UndefOr[AST_Node] = js.undefined
   var code: js.UndefOr[java.lang.String] = js.undefined
-  var error: js.UndefOr[nodeLib.Error] = js.undefined
+  var error: js.UndefOr[stdLib.Error] = js.undefined
   var map: js.UndefOr[java.lang.String] = js.undefined
   var warnings: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
@@ -18,7 +18,7 @@ object MinifyOutput {
   def apply(
     ast: AST_Node = null,
     code: java.lang.String = null,
-    error: nodeLib.Error = null,
+    error: stdLib.Error = null,
     map: java.lang.String = null,
     warnings: js.Array[java.lang.String] = null
   ): MinifyOutput = {

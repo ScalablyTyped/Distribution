@@ -737,73 +737,73 @@ object ^ extends js.Object {
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.3DMatrix>.
   			 */
-  def create3DMatrix(): titaniumLib.TitaniumNs.UINs.iOSNs.Matrix3D = js.native
-  def create3DMatrix(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.Matrix3D = js.native
+  def create3DMatrix(): Matrix3D = js.native
+  def create3DMatrix(parameters: js.Any): Matrix3D = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.AdView>.
   			 */
-  def createAdView(): titaniumLib.TitaniumNs.UINs.iOSNs.AdView = js.native
-  def createAdView(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.AdView = js.native
+  def createAdView(): AdView = js.native
+  def createAdView(parameters: js.Any): AdView = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.AnchorAttachmentBehavior>.
   			 */
-  def createAnchorAttachmentBehavior(): titaniumLib.TitaniumNs.UINs.iOSNs.AnchorAttachmentBehavior = js.native
-  def createAnchorAttachmentBehavior(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.AnchorAttachmentBehavior = js.native
+  def createAnchorAttachmentBehavior(): AnchorAttachmentBehavior = js.native
+  def createAnchorAttachmentBehavior(parameters: js.Any): AnchorAttachmentBehavior = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.Animator>.
   			 */
-  def createAnimator(): titaniumLib.TitaniumNs.UINs.iOSNs.Animator = js.native
-  def createAnimator(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.Animator = js.native
+  def createAnimator(): Animator = js.native
+  def createAnimator(parameters: js.Any): Animator = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.ApplicationShortcuts>.
   			 */
-  def createApplicationShortcuts(): titaniumLib.TitaniumNs.UINs.iOSNs.ApplicationShortcuts = js.native
-  def createApplicationShortcuts(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.ApplicationShortcuts = js.native
+  def createApplicationShortcuts(): ApplicationShortcuts = js.native
+  def createApplicationShortcuts(parameters: js.Any): ApplicationShortcuts = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.Attribute>.
   			 */
-  def createAttribute(): titaniumLib.TitaniumNs.UINs.iOSNs.Attribute = js.native
-  def createAttribute(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.Attribute = js.native
+  def createAttribute(): Attribute = js.native
+  def createAttribute(parameters: js.Any): Attribute = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.AttributedString>.
   			 */
-  def createAttributedString(): titaniumLib.TitaniumNs.UINs.iOSNs.AttributedString = js.native
-  def createAttributedString(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.AttributedString = js.native
+  def createAttributedString(): AttributedString = js.native
+  def createAttributedString(parameters: js.Any): AttributedString = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.BlurView>.
   			 */
-  def createBlurView(): titaniumLib.TitaniumNs.UINs.iOSNs.BlurView = js.native
-  def createBlurView(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.BlurView = js.native
+  def createBlurView(): BlurView = js.native
+  def createBlurView(parameters: js.Any): BlurView = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.CollisionBehavior>.
   			 */
-  def createCollisionBehavior(): titaniumLib.TitaniumNs.UINs.iOSNs.CollisionBehavior = js.native
-  def createCollisionBehavior(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.CollisionBehavior = js.native
+  def createCollisionBehavior(): CollisionBehavior = js.native
+  def createCollisionBehavior(parameters: js.Any): CollisionBehavior = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.CoverFlowView>.
   			 */
-  def createCoverFlowView(): titaniumLib.TitaniumNs.UINs.iOSNs.CoverFlowView = js.native
-  def createCoverFlowView(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.CoverFlowView = js.native
+  def createCoverFlowView(): CoverFlowView = js.native
+  def createCoverFlowView(parameters: js.Any): CoverFlowView = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.DocumentViewer>.
   			 */
-  def createDocumentViewer(): titaniumLib.TitaniumNs.UINs.iOSNs.DocumentViewer = js.native
-  def createDocumentViewer(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.DocumentViewer = js.native
+  def createDocumentViewer(): DocumentViewer = js.native
+  def createDocumentViewer(parameters: js.Any): DocumentViewer = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.DynamicItemBehavior>.
   			 */
-  def createDynamicItemBehavior(): titaniumLib.TitaniumNs.UINs.iOSNs.DynamicItemBehavior = js.native
-  def createDynamicItemBehavior(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.DynamicItemBehavior = js.native
+  def createDynamicItemBehavior(): DynamicItemBehavior = js.native
+  def createDynamicItemBehavior(parameters: js.Any): DynamicItemBehavior = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.FeedbackGenerator>.
   			 */
-  def createFeedbackGenerator(): titaniumLib.TitaniumNs.UINs.iOSNs.FeedbackGenerator = js.native
-  def createFeedbackGenerator(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.FeedbackGenerator = js.native
+  def createFeedbackGenerator(): FeedbackGenerator = js.native
+  def createFeedbackGenerator(parameters: js.Any): FeedbackGenerator = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.GravityBehavior>.
   			 */
-  def createGravityBehavior(): titaniumLib.TitaniumNs.UINs.iOSNs.GravityBehavior = js.native
-  def createGravityBehavior(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.GravityBehavior = js.native
+  def createGravityBehavior(): GravityBehavior = js.native
+  def createGravityBehavior(parameters: js.Any): GravityBehavior = js.native
   /**
   			 * Creates a live photo badge to be used together with the
   			 * <Titanium.UI.iOS.LivePhotoView> API.
@@ -812,63 +812,63 @@ object ^ extends js.Object {
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.LivePhotoView>.
   			 */
-  def createLivePhotoView(): titaniumLib.TitaniumNs.UINs.iOSNs.LivePhotoView = js.native
-  def createLivePhotoView(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.LivePhotoView = js.native
+  def createLivePhotoView(): LivePhotoView = js.native
+  def createLivePhotoView(parameters: js.Any): LivePhotoView = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.MenuPopup>.
   			 */
-  def createMenuPopup(): titaniumLib.TitaniumNs.UINs.iOSNs.MenuPopup = js.native
-  def createMenuPopup(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.MenuPopup = js.native
+  def createMenuPopup(): MenuPopup = js.native
+  def createMenuPopup(parameters: js.Any): MenuPopup = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.NavigationWindow>.
   			 */
-  def createNavigationWindow(): titaniumLib.TitaniumNs.UINs.iOSNs.NavigationWindow = js.native
-  def createNavigationWindow(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.NavigationWindow = js.native
+  def createNavigationWindow(): NavigationWindow = js.native
+  def createNavigationWindow(parameters: js.Any): NavigationWindow = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.PreviewAction>.
   			 */
-  def createPreviewAction(): titaniumLib.TitaniumNs.UINs.iOSNs.PreviewAction = js.native
-  def createPreviewAction(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.PreviewAction = js.native
+  def createPreviewAction(): PreviewAction = js.native
+  def createPreviewAction(parameters: js.Any): PreviewAction = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.PreviewActionGroup>.
   			 */
-  def createPreviewActionGroup(): titaniumLib.TitaniumNs.UINs.iOSNs.PreviewActionGroup = js.native
-  def createPreviewActionGroup(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.PreviewActionGroup = js.native
+  def createPreviewActionGroup(): PreviewActionGroup = js.native
+  def createPreviewActionGroup(parameters: js.Any): PreviewActionGroup = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.PreviewContext>.
   			 */
-  def createPreviewContext(): titaniumLib.TitaniumNs.UINs.iOSNs.PreviewContext = js.native
-  def createPreviewContext(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.PreviewContext = js.native
+  def createPreviewContext(): PreviewContext = js.native
+  def createPreviewContext(parameters: js.Any): PreviewContext = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.PushBehavior>.
   			 */
-  def createPushBehavior(): titaniumLib.TitaniumNs.UINs.iOSNs.PushBehavior = js.native
-  def createPushBehavior(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.PushBehavior = js.native
+  def createPushBehavior(): PushBehavior = js.native
+  def createPushBehavior(parameters: js.Any): PushBehavior = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.SnapBehavior>.
   			 */
-  def createSnapBehavior(): titaniumLib.TitaniumNs.UINs.iOSNs.SnapBehavior = js.native
-  def createSnapBehavior(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.SnapBehavior = js.native
+  def createSnapBehavior(): SnapBehavior = js.native
+  def createSnapBehavior(parameters: js.Any): SnapBehavior = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.SplitWindow>.
   			 */
-  def createSplitWindow(): titaniumLib.TitaniumNs.UINs.iOSNs.SplitWindow = js.native
-  def createSplitWindow(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.SplitWindow = js.native
+  def createSplitWindow(): SplitWindow = js.native
+  def createSplitWindow(parameters: js.Any): SplitWindow = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.Stepper>.
   			 */
-  def createStepper(): titaniumLib.TitaniumNs.UINs.iOSNs.Stepper = js.native
-  def createStepper(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.Stepper = js.native
+  def createStepper(): Stepper = js.native
+  def createStepper(parameters: js.Any): Stepper = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.TabbedBar>.
   			 */
-  def createTabbedBar(): titaniumLib.TitaniumNs.UINs.iOSNs.TabbedBar = js.native
-  def createTabbedBar(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.TabbedBar = js.native
+  def createTabbedBar(): TabbedBar = js.native
+  def createTabbedBar(parameters: js.Any): TabbedBar = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.Toolbar>.
   			 */
-  def createToolbar(): titaniumLib.TitaniumNs.UINs.iOSNs.Toolbar = js.native
-  def createToolbar(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.Toolbar = js.native
+  def createToolbar(): Toolbar = js.native
+  def createToolbar(parameters: js.Any): Toolbar = js.native
   /**
   			 * Creates a transition animation when opening or closing windows in a
   			 * <Titanium.UI.iOS.NavigationWindow> or <Titanium.UI.Tab>.
@@ -877,8 +877,8 @@ object ^ extends js.Object {
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.ViewAttachmentBehavior>.
   			 */
-  def createViewAttachmentBehavior(): titaniumLib.TitaniumNs.UINs.iOSNs.ViewAttachmentBehavior = js.native
-  def createViewAttachmentBehavior(parameters: js.Any): titaniumLib.TitaniumNs.UINs.iOSNs.ViewAttachmentBehavior = js.native
+  def createViewAttachmentBehavior(): ViewAttachmentBehavior = js.native
+  def createViewAttachmentBehavior(parameters: js.Any): ViewAttachmentBehavior = js.native
   /**
   			 * Fires a synthesized event to any registered listeners.
   			 */

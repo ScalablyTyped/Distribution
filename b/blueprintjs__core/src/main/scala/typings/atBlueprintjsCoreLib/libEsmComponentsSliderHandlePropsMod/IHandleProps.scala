@@ -41,8 +41,8 @@ object IHandleProps {
     intentAfter: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
     intentBefore: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
     interactionKind: HandleInteractionKind = null,
-    onChange: js.Function1[/* newValue */ scala.Double, scala.Unit] = null,
-    onRelease: js.Function1[/* newValue */ scala.Double, scala.Unit] = null,
+    onChange: /* newValue */ scala.Double => scala.Unit = null,
+    onRelease: /* newValue */ scala.Double => scala.Unit = null,
     `type`: HandleType = null
   ): IHandleProps = {
     val __obj = js.Dynamic.literal(value = value)
@@ -50,8 +50,8 @@ object IHandleProps {
     if (intentAfter != null) __obj.updateDynamic("intentAfter")(intentAfter)
     if (intentBefore != null) __obj.updateDynamic("intentBefore")(intentBefore)
     if (interactionKind != null) __obj.updateDynamic("interactionKind")(interactionKind)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onRelease != null) __obj.updateDynamic("onRelease")(onRelease)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onRelease != null) __obj.updateDynamic("onRelease")(js.Any.fromFunction1(onRelease))
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IHandleProps]
   }

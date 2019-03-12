@@ -12,8 +12,8 @@ trait ThemeColor extends js.Object {
 
 object ThemeColor {
   @scala.inline
-  def apply(getColorType: js.Function0[ColorType], getThemeColorType: js.Function0[ThemeColorType]): ThemeColor = {
-    val __obj = js.Dynamic.literal(getColorType = getColorType, getThemeColorType = getThemeColorType)
+  def apply(getColorType: () => ColorType, getThemeColorType: () => ThemeColorType): ThemeColor = {
+    val __obj = js.Dynamic.literal(getColorType = js.Any.fromFunction0(getColorType), getThemeColorType = js.Any.fromFunction0(getThemeColorType))
   
     __obj.asInstanceOf[ThemeColor]
   }

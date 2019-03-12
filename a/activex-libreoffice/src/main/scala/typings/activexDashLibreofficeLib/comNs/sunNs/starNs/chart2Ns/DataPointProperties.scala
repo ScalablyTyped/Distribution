@@ -117,7 +117,7 @@ trait DataPointProperties
   var ReferencePageSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size = js.native
   /** In case {@link ErrorBarX} and {@link ErrorBarY} both are set, and error bars are shown, a box spanning all error-indicators is rendered. */
   var ShowErrorBox: scala.Boolean = js.native
-  var Symbol: Symbol = js.native
+  var Symbol: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.Symbol = js.native
   /**
     * specifies if the text of a data label (caption) must be wrapped
     * @since LibreOffice 5.1

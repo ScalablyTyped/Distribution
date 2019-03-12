@@ -38,16 +38,16 @@ object XSheetAnnotation {
     Date: java.lang.String,
     IsVisible: scala.Boolean,
     Position: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress,
-    acquire: js.Function0[scala.Unit],
-    getAuthor: js.Function0[java.lang.String],
-    getDate: js.Function0[java.lang.String],
-    getIsVisible: js.Function0[scala.Boolean],
-    getPosition: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setIsVisible: js.Function1[scala.Boolean, scala.Unit]
+    acquire: () => scala.Unit,
+    getAuthor: () => java.lang.String,
+    getDate: () => java.lang.String,
+    getIsVisible: () => scala.Boolean,
+    getPosition: () => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setIsVisible: scala.Boolean => scala.Unit
   ): XSheetAnnotation = {
-    val __obj = js.Dynamic.literal(Author = Author, Date = Date, IsVisible = IsVisible, Position = Position, acquire = acquire, getAuthor = getAuthor, getDate = getDate, getIsVisible = getIsVisible, getPosition = getPosition, queryInterface = queryInterface, release = release, setIsVisible = setIsVisible)
+    val __obj = js.Dynamic.literal(Author = Author, Date = Date, IsVisible = IsVisible, Position = Position, acquire = js.Any.fromFunction0(acquire), getAuthor = js.Any.fromFunction0(getAuthor), getDate = js.Any.fromFunction0(getDate), getIsVisible = js.Any.fromFunction0(getIsVisible), getPosition = js.Any.fromFunction0(getPosition), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setIsVisible = js.Any.fromFunction1(setIsVisible))
   
     __obj.asInstanceOf[XSheetAnnotation]
   }

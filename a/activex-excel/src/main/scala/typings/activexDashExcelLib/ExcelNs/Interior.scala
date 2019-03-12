@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.Interior")
 @js.native
 class Interior protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var Color: XlRgbColor | scala.Double = js.native
   var ColorIndex: scala.Double | XlColorIndex = js.native
   val Creator: XlCreator = js.native

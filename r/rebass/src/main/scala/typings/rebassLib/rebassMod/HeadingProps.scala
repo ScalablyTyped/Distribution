@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<react.HTMLHeadingElement>, keyof rebass.rebass.HeadingKnownProps> ]: react.react.HTMLProps<react.HTMLHeadingElement>[P]} */ trait HeadingProps extends TextKnownProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLHeadingElement>, keyof rebass.rebass.HeadingKnownProps> ]: react.react.HTMLProps<std.HTMLHeadingElement>[P]} */ trait HeadingProps extends TextKnownProps
 
 object HeadingProps {
   @scala.inline

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): credentialLib.Anon_Callback = js.native
-  def apply(defaultOptions: credentialLib.credentialMod.defaultOptions): credentialLib.Anon_Callback = js.native
+  def apply(defaultOptions: defaultOptions): credentialLib.Anon_Callback = js.native
 }
 

@@ -50,21 +50,9 @@ object ResizableProps {
     lockAspectRatio: js.UndefOr[scala.Boolean] = js.undefined,
     maxConstraints: js.Tuple2[scala.Double, scala.Double] = null,
     minConstraints: js.Tuple2[scala.Double, scala.Double] = null,
-    onResize: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], 
-      /* data */ ResizeCallbackData, 
-      _
-    ] = null,
-    onResizeStart: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], 
-      /* data */ ResizeCallbackData, 
-      _
-    ] = null,
-    onResizeStop: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], 
-      /* data */ ResizeCallbackData, 
-      _
-    ] = null
+    onResize: (/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], /* data */ ResizeCallbackData) => _ = null,
+    onResizeStart: (/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], /* data */ ResizeCallbackData) => _ = null,
+    onResizeStop: (/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], /* data */ ResizeCallbackData) => _ = null
   ): ResizableProps = {
     val __obj = js.Dynamic.literal(height = height, width = width)
     if (axis != null) __obj.updateDynamic("axis")(axis)
@@ -74,9 +62,9 @@ object ResizableProps {
     if (!js.isUndefined(lockAspectRatio)) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio)
     if (maxConstraints != null) __obj.updateDynamic("maxConstraints")(maxConstraints)
     if (minConstraints != null) __obj.updateDynamic("minConstraints")(minConstraints)
-    if (onResize != null) __obj.updateDynamic("onResize")(onResize)
-    if (onResizeStart != null) __obj.updateDynamic("onResizeStart")(onResizeStart)
-    if (onResizeStop != null) __obj.updateDynamic("onResizeStop")(onResizeStop)
+    if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction2(onResize))
+    if (onResizeStart != null) __obj.updateDynamic("onResizeStart")(js.Any.fromFunction2(onResizeStart))
+    if (onResizeStop != null) __obj.updateDynamic("onResizeStop")(js.Any.fromFunction2(onResizeStop))
     __obj.asInstanceOf[ResizableProps]
   }
 }

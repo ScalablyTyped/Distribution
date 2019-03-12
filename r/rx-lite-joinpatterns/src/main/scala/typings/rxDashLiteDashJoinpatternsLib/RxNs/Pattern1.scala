@@ -13,10 +13,10 @@ trait Pattern1[T1] extends js.Object {
 object Pattern1 {
   @scala.inline
   def apply[T1](
-    and: js.Function1[Observable[js.Any], Pattern2[T1, js.Any]],
-    thenDo: js.Function1[js.Function1[/* item1 */ T1, js.Any], Plan[js.Any]]
+    and: Observable[js.Any] => Pattern2[T1, js.Any],
+    thenDo: js.Function1[/* item1 */ T1, js.Any] => Plan[js.Any]
   ): Pattern1[T1] = {
-    val __obj = js.Dynamic.literal(and = and, thenDo = thenDo)
+    val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), thenDo = js.Any.fromFunction1(thenDo))
   
     __obj.asInstanceOf[Pattern1[T1]]
   }

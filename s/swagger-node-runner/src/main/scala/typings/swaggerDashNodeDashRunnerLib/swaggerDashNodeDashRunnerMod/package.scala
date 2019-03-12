@@ -13,7 +13,7 @@ package object swaggerDashNodeDashRunnerMod {
     /* securityDefinition */ js.Any, 
     /* scopes */ js.Any, 
     /* callback */ js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | SwaggerToolsSecurityHandlerCallbackError], 
+      /* err */ js.UndefOr[stdLib.Error | SwaggerToolsSecurityHandlerCallbackError], 
       /* result */ js.UndefOr[js.Any], 
       scala.Unit
     ], 

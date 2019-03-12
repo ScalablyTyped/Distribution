@@ -24,21 +24,21 @@ trait Ray extends js.Object {
 object Ray {
   @scala.inline
   def apply(
-    callback: js.Function1[RaycastResult, scala.Unit],
+    callback: RaycastResult => scala.Unit,
     checkCollisionResponse: scala.Boolean,
     collisionGroup: scala.Double,
     collisionMask: scala.Double,
     direction: js.Tuple2[scala.Double, scala.Double],
     from: js.Tuple2[scala.Double, scala.Double],
-    getAABB: js.Function0[AABB],
-    intersectBodies: js.Function2[RaycastResult, js.Array[Body], scala.Unit],
+    getAABB: () => AABB,
+    intersectBodies: (RaycastResult, js.Array[Body]) => scala.Unit,
     length: scala.Double,
     mode: scala.Double,
     skipBackfaces: scala.Boolean,
     to: js.Tuple2[scala.Double, scala.Double],
-    update: js.Function0[scala.Unit]
+    update: () => scala.Unit
   ): Ray = {
-    val __obj = js.Dynamic.literal(callback = callback, checkCollisionResponse = checkCollisionResponse, collisionGroup = collisionGroup, collisionMask = collisionMask, direction = direction, from = from, getAABB = getAABB, intersectBodies = intersectBodies, length = length, mode = mode, skipBackfaces = skipBackfaces, to = to, update = update)
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), checkCollisionResponse = checkCollisionResponse, collisionGroup = collisionGroup, collisionMask = collisionMask, direction = direction, from = from, getAABB = js.Any.fromFunction0(getAABB), intersectBodies = js.Any.fromFunction2(intersectBodies), length = length, mode = mode, skipBackfaces = skipBackfaces, to = to, update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[Ray]
   }

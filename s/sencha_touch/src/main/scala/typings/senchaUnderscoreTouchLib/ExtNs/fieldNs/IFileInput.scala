@@ -60,44 +60,44 @@ object IFileInput {
   @scala.inline
   def apply(
     IInput: IInput = null,
-    applyCapture: js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit] = null,
-    getAccept: js.Function0[_] = null,
-    getCapture: js.Function0[_] = null,
-    getFiles: js.Function0[stdLib.FileList] = null,
-    getMultiple: js.Function0[scala.Boolean] = null,
-    getType: js.Function0[java.lang.String] = null,
-    getValue: js.Function0[java.lang.String] = null,
+    applyCapture: /* value */ js.UndefOr[js.Any] => scala.Unit = null,
+    getAccept: () => _ = null,
+    getCapture: () => _ = null,
+    getFiles: () => stdLib.FileList = null,
+    getMultiple: () => scala.Boolean = null,
+    getType: () => java.lang.String = null,
+    getValue: () => java.lang.String = null,
     me: js.Any = null,
     name: java.lang.String = null,
     newValue: js.Any = null,
-    setAccept: js.Function1[/* accept */ js.UndefOr[js.Any], scala.Unit] = null,
-    setCapture: js.Function1[/* capture */ js.UndefOr[js.Any], scala.Unit] = null,
-    setMultiple: js.Function1[/* multiple */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setName: js.Function1[/* name */ js.UndefOr[js.Any], scala.Unit] = null,
-    setType: js.Function1[/* type */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setAccept: /* accept */ js.UndefOr[js.Any] => scala.Unit = null,
+    setCapture: /* capture */ js.UndefOr[js.Any] => scala.Unit = null,
+    setMultiple: /* multiple */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setName: /* name */ js.UndefOr[js.Any] => scala.Unit = null,
+    setType: /* type */ js.UndefOr[java.lang.String] => scala.Unit = null,
     `type`: java.lang.String = null,
-    updateMultiple: js.Function0[scala.Unit] = null,
+    updateMultiple: () => scala.Unit = null,
     value: js.Any = null
   ): IFileInput = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IInput)
-    if (applyCapture != null) __obj.updateDynamic("applyCapture")(applyCapture)
-    if (getAccept != null) __obj.updateDynamic("getAccept")(getAccept)
-    if (getCapture != null) __obj.updateDynamic("getCapture")(getCapture)
-    if (getFiles != null) __obj.updateDynamic("getFiles")(getFiles)
-    if (getMultiple != null) __obj.updateDynamic("getMultiple")(getMultiple)
-    if (getType != null) __obj.updateDynamic("getType")(getType)
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
+    if (applyCapture != null) __obj.updateDynamic("applyCapture")(js.Any.fromFunction1(applyCapture))
+    if (getAccept != null) __obj.updateDynamic("getAccept")(js.Any.fromFunction0(getAccept))
+    if (getCapture != null) __obj.updateDynamic("getCapture")(js.Any.fromFunction0(getCapture))
+    if (getFiles != null) __obj.updateDynamic("getFiles")(js.Any.fromFunction0(getFiles))
+    if (getMultiple != null) __obj.updateDynamic("getMultiple")(js.Any.fromFunction0(getMultiple))
+    if (getType != null) __obj.updateDynamic("getType")(js.Any.fromFunction0(getType))
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
     if (me != null) __obj.updateDynamic("me")(me)
     if (name != null) __obj.updateDynamic("name")(name)
     if (newValue != null) __obj.updateDynamic("newValue")(newValue)
-    if (setAccept != null) __obj.updateDynamic("setAccept")(setAccept)
-    if (setCapture != null) __obj.updateDynamic("setCapture")(setCapture)
-    if (setMultiple != null) __obj.updateDynamic("setMultiple")(setMultiple)
-    if (setName != null) __obj.updateDynamic("setName")(setName)
-    if (setType != null) __obj.updateDynamic("setType")(setType)
+    if (setAccept != null) __obj.updateDynamic("setAccept")(js.Any.fromFunction1(setAccept))
+    if (setCapture != null) __obj.updateDynamic("setCapture")(js.Any.fromFunction1(setCapture))
+    if (setMultiple != null) __obj.updateDynamic("setMultiple")(js.Any.fromFunction1(setMultiple))
+    if (setName != null) __obj.updateDynamic("setName")(js.Any.fromFunction1(setName))
+    if (setType != null) __obj.updateDynamic("setType")(js.Any.fromFunction1(setType))
     if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (updateMultiple != null) __obj.updateDynamic("updateMultiple")(updateMultiple)
+    if (updateMultiple != null) __obj.updateDynamic("updateMultiple")(js.Any.fromFunction0(updateMultiple))
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[IFileInput]
   }

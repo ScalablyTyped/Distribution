@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Label protected () extends js.Object {
   var `Access.Label_typekey`: Label = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   var BackColor: scala.Double = js.native
   var BackShade: scala.Double = js.native
   var BackStyle: scala.Double = js.native
@@ -55,7 +55,7 @@ class Label protected () extends js.Object {
   var Height: scala.Double = js.native
   var HelpContextId: scala.Double = js.native
   var HorizontalAnchor: AcHorizontalAnchor = js.native
-  val Hyperlink: Hyperlink = js.native
+  val Hyperlink: activexDashAccessLib.AccessNs.Hyperlink = js.native
   var HyperlinkAddress: java.lang.String = js.native
   var HyperlinkSubAddress: java.lang.String = js.native
   var InSelection: scala.Boolean = js.native

@@ -43,8 +43,8 @@ object RequestRetryOptions {
     host: java.lang.String = null,
     jar: requestLib.requestMod.requestNs.CookieJar | scala.Boolean = null,
     json: js.Any = null,
-    jsonReplacer: js.Function2[/* key */ java.lang.String, /* value */ js.Any, _] = null,
-    jsonReviver: js.Function2[/* key */ java.lang.String, /* value */ js.Any, _] = null,
+    jsonReplacer: (/* key */ java.lang.String, /* value */ js.Any) => _ = null,
+    jsonReviver: (/* key */ java.lang.String, /* value */ js.Any) => _ = null,
     key: nodeLib.Buffer = null,
     localAddress: java.lang.String = null,
     maxAttempts: scala.Int | scala.Double = null,
@@ -57,7 +57,7 @@ object RequestRetryOptions {
     port: scala.Int | scala.Double = null,
     postambleCRLF: js.UndefOr[scala.Boolean] = js.undefined,
     preambleCRLF: js.UndefOr[scala.Boolean] = js.undefined,
-    promiseFactory: js.Function1[/* resolver */ js.Any, _] = null,
+    promiseFactory: /* resolver */ js.Any => _ = null,
     proxy: js.Any = null,
     qs: js.Any = null,
     qsParseOptions: js.Any = null,
@@ -100,8 +100,8 @@ object RequestRetryOptions {
     if (host != null) __obj.updateDynamic("host")(host)
     if (jar != null) __obj.updateDynamic("jar")(jar.asInstanceOf[js.Any])
     if (json != null) __obj.updateDynamic("json")(json)
-    if (jsonReplacer != null) __obj.updateDynamic("jsonReplacer")(jsonReplacer)
-    if (jsonReviver != null) __obj.updateDynamic("jsonReviver")(jsonReviver)
+    if (jsonReplacer != null) __obj.updateDynamic("jsonReplacer")(js.Any.fromFunction2(jsonReplacer))
+    if (jsonReviver != null) __obj.updateDynamic("jsonReviver")(js.Any.fromFunction2(jsonReviver))
     if (key != null) __obj.updateDynamic("key")(key)
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
     if (maxAttempts != null) __obj.updateDynamic("maxAttempts")(maxAttempts.asInstanceOf[js.Any])
@@ -114,7 +114,7 @@ object RequestRetryOptions {
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (!js.isUndefined(postambleCRLF)) __obj.updateDynamic("postambleCRLF")(postambleCRLF)
     if (!js.isUndefined(preambleCRLF)) __obj.updateDynamic("preambleCRLF")(preambleCRLF)
-    if (promiseFactory != null) __obj.updateDynamic("promiseFactory")(promiseFactory)
+    if (promiseFactory != null) __obj.updateDynamic("promiseFactory")(js.Any.fromFunction1(promiseFactory))
     if (proxy != null) __obj.updateDynamic("proxy")(proxy)
     if (qs != null) __obj.updateDynamic("qs")(qs)
     if (qsParseOptions != null) __obj.updateDynamic("qsParseOptions")(qsParseOptions)

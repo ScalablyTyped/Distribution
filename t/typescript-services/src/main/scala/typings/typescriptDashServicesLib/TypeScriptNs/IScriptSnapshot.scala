@@ -15,12 +15,12 @@ trait IScriptSnapshot extends js.Object {
 object IScriptSnapshot {
   @scala.inline
   def apply(
-    getLength: js.Function0[scala.Double],
-    getLineStartPositions: js.Function0[js.Array[scala.Double]],
-    getText: js.Function2[scala.Double, scala.Double, java.lang.String],
-    getTextChangeRangeSinceVersion: js.Function1[scala.Double, TextChangeRange]
+    getLength: () => scala.Double,
+    getLineStartPositions: () => js.Array[scala.Double],
+    getText: (scala.Double, scala.Double) => java.lang.String,
+    getTextChangeRangeSinceVersion: scala.Double => TextChangeRange
   ): IScriptSnapshot = {
-    val __obj = js.Dynamic.literal(getLength = getLength, getLineStartPositions = getLineStartPositions, getText = getText, getTextChangeRangeSinceVersion = getTextChangeRangeSinceVersion)
+    val __obj = js.Dynamic.literal(getLength = js.Any.fromFunction0(getLength), getLineStartPositions = js.Any.fromFunction0(getLineStartPositions), getText = js.Any.fromFunction2(getText), getTextChangeRangeSinceVersion = js.Any.fromFunction1(getTextChangeRangeSinceVersion))
   
     __obj.asInstanceOf[IScriptSnapshot]
   }

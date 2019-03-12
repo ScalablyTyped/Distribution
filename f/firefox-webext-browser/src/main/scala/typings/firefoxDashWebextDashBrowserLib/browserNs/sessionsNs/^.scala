@@ -32,23 +32,12 @@ object ^ extends js.Object {
     * Retrieves all devices with synced sessions.
     * @deprecated Unsupported on Firefox at this time.
     */
-  def getDevices(): js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.sessionsNs.Device]] = js.native
-  def getDevices(filter: firefoxDashWebextDashBrowserLib.browserNs.sessionsNs.Filter): js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.sessionsNs.Device]] = js.native
+  def getDevices(): js.Promise[js.Array[Device]] = js.native
+  def getDevices(filter: Filter): js.Promise[js.Array[Device]] = js.native
   /** Gets the list of recently closed tabs and/or windows. */
-  def getRecentlyClosed(
-    callback: js.Function1[
-      /* sessions */ js.Array[firefoxDashWebextDashBrowserLib.browserNs.sessionsNs.Session], 
-      scala.Unit
-    ]
-  ): js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.sessionsNs.Session]] = js.native
+  def getRecentlyClosed(callback: js.Function1[/* sessions */ js.Array[Session], scala.Unit]): js.Promise[js.Array[Session]] = js.native
   /** Gets the list of recently closed tabs and/or windows. */
-  def getRecentlyClosed(
-    filter: firefoxDashWebextDashBrowserLib.browserNs.sessionsNs.Filter,
-    callback: js.Function1[
-      /* sessions */ js.Array[firefoxDashWebextDashBrowserLib.browserNs.sessionsNs.Session], 
-      scala.Unit
-    ]
-  ): js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.sessionsNs.Session]] = js.native
+  def getRecentlyClosed(filter: Filter, callback: js.Function1[/* sessions */ js.Array[Session], scala.Unit]): js.Promise[js.Array[Session]] = js.native
   /**
     * Retrieve a value that was set for a given key on a given tab.
     * @param tabId The id of the tab whose value is being retrieved from.
@@ -78,15 +67,9 @@ object ^ extends js.Object {
     * @param [sessionId] The `windows.Window.sessionId`, or `tabs.Tab.sessionId` to restore. If this parameter is not
     *     specified, the most recently closed session is restored.
     */
-  def restore(): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.sessionsNs.Session] = js.native
-  def restore(sessionId: java.lang.String): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.sessionsNs.Session] = js.native
-  def restore(
-    sessionId: java.lang.String,
-    callback: js.Function1[
-      /* restoredSession */ firefoxDashWebextDashBrowserLib.browserNs.sessionsNs.Session, 
-      scala.Unit
-    ]
-  ): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.sessionsNs.Session] = js.native
+  def restore(): js.Promise[Session] = js.native
+  def restore(sessionId: java.lang.String): js.Promise[Session] = js.native
+  def restore(sessionId: java.lang.String, callback: js.Function1[/* restoredSession */ Session, scala.Unit]): js.Promise[Session] = js.native
   /**
     * Set a key/value pair on a given tab.
     * @param tabId The id of the tab that the key/value pair is being set on.

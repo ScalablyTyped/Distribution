@@ -14,11 +14,11 @@ trait ConnectOptions extends js.Object {
 object ConnectOptions {
   @scala.inline
   def apply(
-    onFailure: js.Function1[ibmDashMobilefirstLib.WLNs.FailureResponse, scala.Unit],
-    onSuccess: js.Function1[ibmDashMobilefirstLib.WLNs.ResponseBase, scala.Unit],
+    onFailure: ibmDashMobilefirstLib.WLNs.FailureResponse => scala.Unit,
+    onSuccess: ibmDashMobilefirstLib.WLNs.ResponseBase => scala.Unit,
     timeout: scala.Int | scala.Double = null
   ): ConnectOptions = {
-    val __obj = js.Dynamic.literal(onFailure = onFailure, onSuccess = onSuccess)
+    val __obj = js.Dynamic.literal(onFailure = js.Any.fromFunction1(onFailure), onSuccess = js.Any.fromFunction1(onSuccess))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectOptions]
   }

@@ -12,12 +12,9 @@ trait ObjectConstructor extends js.Object {
 object ObjectConstructor {
   @scala.inline
   def apply(
-    fromEntries: js.Function1[
-      apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[js.Tuple2[js.Any, js.Any]], 
-      stdLib.Record[js.Any, js.Any]
-    ]
+    fromEntries: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[js.Tuple2[js.Any, js.Any]] => stdLib.Record[js.Any, js.Any]
   ): ObjectConstructor = {
-    val __obj = js.Dynamic.literal(fromEntries = fromEntries)
+    val __obj = js.Dynamic.literal(fromEntries = js.Any.fromFunction1(fromEntries))
   
     __obj.asInstanceOf[ObjectConstructor]
   }

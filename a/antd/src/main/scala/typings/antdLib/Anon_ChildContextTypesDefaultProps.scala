@@ -11,7 +11,7 @@ trait Anon_ChildContextTypesDefaultProps
       /* props */ antdLib.libRadioInterfaceMod.RadioGroupProps, 
       antdLib.libRadioGroupMod.default
     ] {
-  var childContextTypes: Anon_RadioGroup = js.native
+  var childContextTypes: Anon_ComponentNameLocation = js.native
   var defaultProps: Anon_ButtonStyle = js.native
   def getDerivedStateFromProps(nextProps: antdLib.libRadioInterfaceMod.RadioGroupProps): Anon_ValueAny | scala.Null = js.native
 }

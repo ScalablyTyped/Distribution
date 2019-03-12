@@ -21,7 +21,7 @@ trait FeedMe
   @JSName("on")
   def on_error(
     event: feedmeLib.feedmeLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_finish(event: feedmeLib.feedmeLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native

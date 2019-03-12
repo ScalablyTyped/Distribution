@@ -88,12 +88,12 @@ trait Anon_1 extends js.Object {
   def ip4(str: java.lang.String, options: adoneLib.adoneNs.regexNs.INs.IPNs.Options): scala.Boolean = js.native
   def ip6(str: java.lang.String): scala.Boolean = js.native
   def ip6(str: java.lang.String, options: adoneLib.adoneNs.regexNs.INs.IPNs.Options): scala.Boolean = js.native
-  def iterable(obj: js.Any): /* is node.Iterable<any> */ scala.Boolean = js.native
+  def iterable(obj: js.Any): /* is std.Iterable<any> */ scala.Boolean = js.native
   def json(obj: js.Any): scala.Boolean = js.native
   def logger(obj: js.Any): scala.Boolean = js.native
   def long(obj: js.Any): /* is adone.adone.math.Long */ scala.Boolean = js.native
   def lowercase(str: java.lang.String): scala.Boolean = js.native
-  def map(obj: js.Any): /* is node.Map<any, any> */ scala.Boolean = js.native
+  def map(obj: js.Any): /* is std.Map<any, any> */ scala.Boolean = js.native
   def multiAddress(obj: js.Any): scala.Boolean = js.native
   def namespace(obj: js.Any): scala.Boolean = js.native
   def nan(obj: js.Any): scala.Boolean = js.native
@@ -130,7 +130,7 @@ trait Anon_1 extends js.Object {
   def regexp(obj: js.Any): /* is std.RegExp */ scala.Boolean = js.native
   def safeInteger(obj: js.Any): /* is number */ scala.Boolean = js.native
   def sameType(value: js.Any, other: js.Any): scala.Boolean = js.native
-  def set(obj: js.Any): /* is node.Set<any> */ scala.Boolean = js.native
+  def set(obj: js.Any): /* is std.Set<any> */ scala.Boolean = js.native
   def shallowEqual(left: js.Any, right: js.Any): scala.Boolean = js.native
   def stream(obj: js.Any): scala.Boolean = js.native
   def string(obj: js.Any): /* is string */ scala.Boolean = js.native

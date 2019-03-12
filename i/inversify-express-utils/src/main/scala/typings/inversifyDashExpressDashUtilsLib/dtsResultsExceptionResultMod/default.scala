@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("inversify-express-utils/dts/results/ExceptionResult", JSImport.Default)
 @js.native
 class default protected () extends ExceptionResult {
-  def this(error: nodeLib.Error, apiController: inversifyDashExpressDashUtilsLib.dtsBaseUnderscoreHttpUnderscoreControllerMod.BaseHttpController) = this()
+  def this(error: stdLib.Error, apiController: inversifyDashExpressDashUtilsLib.dtsBaseUnderscoreHttpUnderscoreControllerMod.BaseHttpController) = this()
   /* CompleteClass */
   override var apiController: js.Any = js.native
   /* CompleteClass */

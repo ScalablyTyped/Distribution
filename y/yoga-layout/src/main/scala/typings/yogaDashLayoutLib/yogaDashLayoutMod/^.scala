@@ -17,7 +17,7 @@ object ^ extends js.Object {
   val ALIGN_SPACE_AROUND: yogaDashLayoutLib.yogaDashLayoutLibNumbers.`7` = js.native
   val ALIGN_SPACE_BETWEEN: yogaDashLayoutLib.yogaDashLayoutLibNumbers.`6` = js.native
   val ALIGN_STRETCH: yogaDashLayoutLib.yogaDashLayoutLibNumbers.`4` = js.native
-  val Config: yogaDashLayoutLib.yogaDashLayoutMod.ConfigStatic = js.native
+  val Config: ConfigStatic = js.native
   val DIMENSION_COUNT: yogaDashLayoutLib.yogaDashLayoutLibNumbers.`2` = js.native
   val DIMENSION_HEIGHT: yogaDashLayoutLib.yogaDashLayoutLibNumbers.`1` = js.native
   val DIMENSION_WIDTH: yogaDashLayoutLib.yogaDashLayoutLibNumbers.`0` = js.native
@@ -66,7 +66,7 @@ object ^ extends js.Object {
   val NODE_TYPE_COUNT: yogaDashLayoutLib.yogaDashLayoutLibNumbers.`2` = js.native
   val NODE_TYPE_DEFAULT: yogaDashLayoutLib.yogaDashLayoutLibNumbers.`0` = js.native
   val NODE_TYPE_TEXT: yogaDashLayoutLib.yogaDashLayoutLibNumbers.`1` = js.native
-  val Node: yogaDashLayoutLib.yogaDashLayoutMod.NodeStatic = js.native
+  val Node: NodeStatic = js.native
   val OVERFLOW_COUNT: yogaDashLayoutLib.yogaDashLayoutLibNumbers.`3` = js.native
   val OVERFLOW_HIDDEN: yogaDashLayoutLib.yogaDashLayoutLibNumbers.`1` = js.native
   val OVERFLOW_SCROLL: yogaDashLayoutLib.yogaDashLayoutLibNumbers.`2` = js.native
@@ -87,6 +87,6 @@ object ^ extends js.Object {
   val WRAP_NO_WRAP: yogaDashLayoutLib.yogaDashLayoutLibNumbers.`0` = js.native
   val WRAP_WRAP: yogaDashLayoutLib.yogaDashLayoutLibNumbers.`1` = js.native
   val WRAP_WRAP_REVERSE: yogaDashLayoutLib.yogaDashLayoutLibNumbers.`2` = js.native
-  val default: yogaDashLayoutLib.yogaDashLayoutMod.YogaStatic = js.native
+  val default: YogaStatic = js.native
 }
 

@@ -69,7 +69,7 @@ object ReactWOWProps {
     animation: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 76 */ js.Any,
     children: reactLib.reactMod.Global.JSXNs.Element,
     animateClass: java.lang.String = null,
-    callback: js.Function0[scala.Unit] = null,
+    callback: () => scala.Unit = null,
     delay: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     duration: java.lang.String = null,
@@ -81,7 +81,7 @@ object ReactWOWProps {
   ): ReactWOWProps = {
     val __obj = js.Dynamic.literal(animation = animation, children = children)
     if (animateClass != null) __obj.updateDynamic("animateClass")(animateClass)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (delay != null) __obj.updateDynamic("delay")(delay)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (duration != null) __obj.updateDynamic("duration")(duration)

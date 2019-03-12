@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.ListFormat")
 @js.native
 class ListFormat protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
-  val List: List = js.native
+  val List: activexDashWordLib.WordNs.List = js.native
   var ListLevelNumber: scala.Double = js.native
   val ListPictureBullet: InlineShape = js.native
   val ListString: java.lang.String = js.native
-  val ListTemplate: ListTemplate = js.native
+  val ListTemplate: activexDashWordLib.WordNs.ListTemplate = js.native
   val ListType: WdListType = js.native
   val ListValue: scala.Double = js.native
   val Parent: js.Any = js.native

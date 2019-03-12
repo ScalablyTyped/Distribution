@@ -33,15 +33,15 @@ trait XModeChangeBroadcaster
 object XModeChangeBroadcaster {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addModeChangeApproveListener: js.Function1[XModeChangeApproveListener, scala.Unit],
-    addModeChangeListener: js.Function1[XModeChangeListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeModeChangeApproveListener: js.Function1[XModeChangeApproveListener, scala.Unit],
-    removeModeChangeListener: js.Function1[XModeChangeListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addModeChangeApproveListener: XModeChangeApproveListener => scala.Unit,
+    addModeChangeListener: XModeChangeListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeModeChangeApproveListener: XModeChangeApproveListener => scala.Unit,
+    removeModeChangeListener: XModeChangeListener => scala.Unit
   ): XModeChangeBroadcaster = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addModeChangeApproveListener = addModeChangeApproveListener, addModeChangeListener = addModeChangeListener, queryInterface = queryInterface, release = release, removeModeChangeApproveListener = removeModeChangeApproveListener, removeModeChangeListener = removeModeChangeListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addModeChangeApproveListener = js.Any.fromFunction1(addModeChangeApproveListener), addModeChangeListener = js.Any.fromFunction1(addModeChangeListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeModeChangeApproveListener = js.Any.fromFunction1(removeModeChangeApproveListener), removeModeChangeListener = js.Any.fromFunction1(removeModeChangeListener))
   
     __obj.asInstanceOf[XModeChangeBroadcaster]
   }

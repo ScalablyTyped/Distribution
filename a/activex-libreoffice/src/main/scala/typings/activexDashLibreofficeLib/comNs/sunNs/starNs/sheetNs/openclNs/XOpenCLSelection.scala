@@ -14,7 +14,7 @@ trait XOpenCLSelection
   val DeviceID: scala.Double
   var FormulaCellNumberLimit: scala.Double
   /** lists all OpenCL devices and platforms */
-  val OpenCLPlatforms: activexDashInteropLib.SafeArray[OpenCLPlatform]
+  val OpenCLPlatforms: stdLib.SafeArray[OpenCLPlatform]
   /**
     * returns the index of the platform of the currently selected device. This is an index into the sequence that getOpenCLPlatforms returns in the current
     * instance of LibreOffice (and not some a priori defined identifier for an OpenCL platform).
@@ -41,7 +41,7 @@ trait XOpenCLSelection
   def getDeviceID(): scala.Double
   def getFormulaCellNumberLimit(): scala.Double
   /** lists all OpenCL devices and platforms */
-  def getOpenCLPlatforms(): activexDashInteropLib.SafeArray[OpenCLPlatform]
+  def getOpenCLPlatforms(): stdLib.SafeArray[OpenCLPlatform]
   /**
     * returns the index of the platform of the currently selected device. This is an index into the sequence that getOpenCLPlatforms returns in the current
     * instance of LibreOffice (and not some a priori defined identifier for an OpenCL platform).
@@ -66,26 +66,26 @@ object XOpenCLSelection {
   def apply(
     DeviceID: scala.Double,
     FormulaCellNumberLimit: scala.Double,
-    OpenCLPlatforms: activexDashInteropLib.SafeArray[OpenCLPlatform],
+    OpenCLPlatforms: stdLib.SafeArray[OpenCLPlatform],
     PlatformID: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    disableAutomaticDeviceSelection: js.Function0[scala.Unit],
-    disableOpcodeSubsetTest: js.Function0[scala.Unit],
-    enableAutomaticDeviceSelection: js.Function1[scala.Boolean, scala.Unit],
-    enableOpcodeSubsetTest: js.Function0[scala.Unit],
-    enableOpenCL: js.Function1[scala.Boolean, scala.Unit],
-    getDeviceID: js.Function0[scala.Double],
-    getFormulaCellNumberLimit: js.Function0[scala.Double],
-    getOpenCLPlatforms: js.Function0[activexDashInteropLib.SafeArray[OpenCLPlatform]],
-    getPlatformID: js.Function0[scala.Double],
-    isOpcodeSubsetTested: js.Function0[scala.Boolean],
-    isOpenCLEnabled: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    selectOpenCLDevice: js.Function2[scala.Double, scala.Double, scala.Unit],
-    setFormulaCellNumberLimit: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    disableAutomaticDeviceSelection: () => scala.Unit,
+    disableOpcodeSubsetTest: () => scala.Unit,
+    enableAutomaticDeviceSelection: scala.Boolean => scala.Unit,
+    enableOpcodeSubsetTest: () => scala.Unit,
+    enableOpenCL: scala.Boolean => scala.Unit,
+    getDeviceID: () => scala.Double,
+    getFormulaCellNumberLimit: () => scala.Double,
+    getOpenCLPlatforms: () => stdLib.SafeArray[OpenCLPlatform],
+    getPlatformID: () => scala.Double,
+    isOpcodeSubsetTested: () => scala.Boolean,
+    isOpenCLEnabled: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    selectOpenCLDevice: (scala.Double, scala.Double) => scala.Unit,
+    setFormulaCellNumberLimit: scala.Double => scala.Unit
   ): XOpenCLSelection = {
-    val __obj = js.Dynamic.literal(DeviceID = DeviceID, FormulaCellNumberLimit = FormulaCellNumberLimit, OpenCLPlatforms = OpenCLPlatforms, PlatformID = PlatformID, acquire = acquire, disableAutomaticDeviceSelection = disableAutomaticDeviceSelection, disableOpcodeSubsetTest = disableOpcodeSubsetTest, enableAutomaticDeviceSelection = enableAutomaticDeviceSelection, enableOpcodeSubsetTest = enableOpcodeSubsetTest, enableOpenCL = enableOpenCL, getDeviceID = getDeviceID, getFormulaCellNumberLimit = getFormulaCellNumberLimit, getOpenCLPlatforms = getOpenCLPlatforms, getPlatformID = getPlatformID, isOpcodeSubsetTested = isOpcodeSubsetTested, isOpenCLEnabled = isOpenCLEnabled, queryInterface = queryInterface, release = release, selectOpenCLDevice = selectOpenCLDevice, setFormulaCellNumberLimit = setFormulaCellNumberLimit)
+    val __obj = js.Dynamic.literal(DeviceID = DeviceID, FormulaCellNumberLimit = FormulaCellNumberLimit, OpenCLPlatforms = OpenCLPlatforms, PlatformID = PlatformID, acquire = js.Any.fromFunction0(acquire), disableAutomaticDeviceSelection = js.Any.fromFunction0(disableAutomaticDeviceSelection), disableOpcodeSubsetTest = js.Any.fromFunction0(disableOpcodeSubsetTest), enableAutomaticDeviceSelection = js.Any.fromFunction1(enableAutomaticDeviceSelection), enableOpcodeSubsetTest = js.Any.fromFunction0(enableOpcodeSubsetTest), enableOpenCL = js.Any.fromFunction1(enableOpenCL), getDeviceID = js.Any.fromFunction0(getDeviceID), getFormulaCellNumberLimit = js.Any.fromFunction0(getFormulaCellNumberLimit), getOpenCLPlatforms = js.Any.fromFunction0(getOpenCLPlatforms), getPlatformID = js.Any.fromFunction0(getPlatformID), isOpcodeSubsetTested = js.Any.fromFunction0(isOpcodeSubsetTested), isOpenCLEnabled = js.Any.fromFunction0(isOpenCLEnabled), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), selectOpenCLDevice = js.Any.fromFunction2(selectOpenCLDevice), setFormulaCellNumberLimit = js.Any.fromFunction1(setFormulaCellNumberLimit))
   
     __obj.asInstanceOf[XOpenCLSelection]
   }

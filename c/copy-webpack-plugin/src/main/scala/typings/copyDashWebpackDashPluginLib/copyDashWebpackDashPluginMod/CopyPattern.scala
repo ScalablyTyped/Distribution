@@ -57,7 +57,7 @@ object CopyPattern {
     ignore: js.Array[java.lang.String | MiniMatchGlob] = null,
     to: java.lang.String = null,
     toType: copyDashWebpackDashPluginLib.copyDashWebpackDashPluginLibStrings.file | copyDashWebpackDashPluginLib.copyDashWebpackDashPluginLibStrings.dir | copyDashWebpackDashPluginLib.copyDashWebpackDashPluginLibStrings.template = null,
-    transform: js.Function2[/* content */ java.lang.String, /* path */ java.lang.String, java.lang.String] = null
+    transform: (/* content */ java.lang.String, /* path */ java.lang.String) => java.lang.String = null
   ): CopyPattern = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
@@ -68,7 +68,7 @@ object CopyPattern {
     if (ignore != null) __obj.updateDynamic("ignore")(ignore)
     if (to != null) __obj.updateDynamic("to")(to)
     if (toType != null) __obj.updateDynamic("toType")(toType.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction2(transform))
     __obj.asInstanceOf[CopyPattern]
   }
 }

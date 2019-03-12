@@ -265,23 +265,23 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    afterServiceInvoke: js.Function1[/* e */ AfterServiceInvokeEventArgs, scala.Unit] = null,
+    afterServiceInvoke: /* e */ AfterServiceInvokeEventArgs => scala.Unit = null,
     analysisMode: ejDotWebDotAllLib.ejNs.PivotNs.AnalysisMode | java.lang.String = null,
-    beforeExport: js.Function1[/* e */ BeforeExportEventArgs, scala.Unit] = null,
-    beforePivotEnginePopulate: js.Function1[/* e */ BeforePivotEnginePopulateEventArgs, scala.Unit] = null,
-    beforeServiceInvoke: js.Function1[/* e */ BeforeServiceInvokeEventArgs, scala.Unit] = null,
-    cellClick: js.Function1[/* e */ CellClickEventArgs, scala.Unit] = null,
-    cellContext: js.Function1[/* e */ CellContextEventArgs, scala.Unit] = null,
-    cellDoubleClick: js.Function1[/* e */ CellDoubleClickEventArgs, scala.Unit] = null,
-    cellEdit: js.Function1[/* e */ CellEditEventArgs, scala.Unit] = null,
-    cellSelection: js.Function1[/* e */ CellSelectionEventArgs, scala.Unit] = null,
+    beforeExport: /* e */ BeforeExportEventArgs => scala.Unit = null,
+    beforePivotEnginePopulate: /* e */ BeforePivotEnginePopulateEventArgs => scala.Unit = null,
+    beforeServiceInvoke: /* e */ BeforeServiceInvokeEventArgs => scala.Unit = null,
+    cellClick: /* e */ CellClickEventArgs => scala.Unit = null,
+    cellContext: /* e */ CellContextEventArgs => scala.Unit = null,
+    cellDoubleClick: /* e */ CellDoubleClickEventArgs => scala.Unit = null,
+    cellEdit: /* e */ CellEditEventArgs => scala.Unit = null,
+    cellSelection: /* e */ CellSelectionEventArgs => scala.Unit = null,
     collapsedMembers: js.Any = null,
-    columnHeaderHyperlinkClick: js.Function1[/* e */ ColumnHeaderHyperlinkClickEventArgs, scala.Unit] = null,
+    columnHeaderHyperlinkClick: /* e */ ColumnHeaderHyperlinkClickEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
     customObject: js.Any = null,
     dataSource: DataSource = null,
-    drillSuccess: js.Function1[/* e */ DrillSuccessEventArgs, scala.Unit] = null,
-    drillThrough: js.Function1[/* e */ DrillThroughEventArgs, scala.Unit] = null,
+    drillSuccess: /* e */ DrillSuccessEventArgs => scala.Unit = null,
+    drillThrough: /* e */ DrillThroughEventArgs => scala.Unit = null,
     enableAdvancedFilter: js.UndefOr[scala.Boolean] = js.undefined,
     enableCellClick: js.UndefOr[scala.Boolean] = js.undefined,
     enableCellContext: js.UndefOr[scala.Boolean] = js.undefined,
@@ -315,44 +315,44 @@ object Model {
     isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
     jsonRecords: java.lang.String = null,
     layout: Layout | java.lang.String = null,
-    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
-    loadReport: js.Function1[/* e */ LoadReportEventArgs, scala.Unit] = null,
+    load: /* e */ LoadEventArgs => scala.Unit = null,
+    loadReport: /* e */ LoadReportEventArgs => scala.Unit = null,
     locale: java.lang.String = null,
     maxNodeLimitInMemberEditor: scala.Int | scala.Double = null,
     memberEditorPageSize: scala.Int | scala.Double = null,
     operationalMode: ejDotWebDotAllLib.ejNs.PivotNs.OperationalMode | java.lang.String = null,
     pivotTableFieldListID: java.lang.String = null,
-    renderComplete: js.Function1[/* e */ RenderCompleteEventArgs, scala.Unit] = null,
-    renderFailure: js.Function1[/* e */ RenderFailureEventArgs, scala.Unit] = null,
-    renderSuccess: js.Function1[/* e */ RenderSuccessEventArgs, scala.Unit] = null,
+    renderComplete: /* e */ RenderCompleteEventArgs => scala.Unit = null,
+    renderFailure: /* e */ RenderFailureEventArgs => scala.Unit = null,
+    renderSuccess: /* e */ RenderSuccessEventArgs => scala.Unit = null,
     resizeColumnsToFit: js.UndefOr[scala.Boolean] = js.undefined,
-    rowHeaderHyperlinkClick: js.Function1[/* e */ RowHeaderHyperlinkClickEventArgs, scala.Unit] = null,
-    saveReport: js.Function1[/* e */ SaveReportEventArgs, scala.Unit] = null,
+    rowHeaderHyperlinkClick: /* e */ RowHeaderHyperlinkClickEventArgs => scala.Unit = null,
+    saveReport: /* e */ SaveReportEventArgs => scala.Unit = null,
     serviceMethodSettings: ServiceMethodSettings = null,
     showUniqueNameOnPivotButton: js.UndefOr[scala.Boolean] = js.undefined,
-    summaryCellHyperlinkClick: js.Function1[/* e */ SummaryCellHyperlinkClickEventArgs, scala.Unit] = null,
+    summaryCellHyperlinkClick: /* e */ SummaryCellHyperlinkClickEventArgs => scala.Unit = null,
     url: java.lang.String = null,
-    valueCellHyperlinkClick: js.Function1[/* e */ ValueCellHyperlinkClickEventArgs, scala.Unit] = null,
+    valueCellHyperlinkClick: /* e */ ValueCellHyperlinkClickEventArgs => scala.Unit = null,
     valueSortSettings: ValueSortSettings = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (afterServiceInvoke != null) __obj.updateDynamic("afterServiceInvoke")(afterServiceInvoke)
+    if (afterServiceInvoke != null) __obj.updateDynamic("afterServiceInvoke")(js.Any.fromFunction1(afterServiceInvoke))
     if (analysisMode != null) __obj.updateDynamic("analysisMode")(analysisMode.asInstanceOf[js.Any])
-    if (beforeExport != null) __obj.updateDynamic("beforeExport")(beforeExport)
-    if (beforePivotEnginePopulate != null) __obj.updateDynamic("beforePivotEnginePopulate")(beforePivotEnginePopulate)
-    if (beforeServiceInvoke != null) __obj.updateDynamic("beforeServiceInvoke")(beforeServiceInvoke)
-    if (cellClick != null) __obj.updateDynamic("cellClick")(cellClick)
-    if (cellContext != null) __obj.updateDynamic("cellContext")(cellContext)
-    if (cellDoubleClick != null) __obj.updateDynamic("cellDoubleClick")(cellDoubleClick)
-    if (cellEdit != null) __obj.updateDynamic("cellEdit")(cellEdit)
-    if (cellSelection != null) __obj.updateDynamic("cellSelection")(cellSelection)
+    if (beforeExport != null) __obj.updateDynamic("beforeExport")(js.Any.fromFunction1(beforeExport))
+    if (beforePivotEnginePopulate != null) __obj.updateDynamic("beforePivotEnginePopulate")(js.Any.fromFunction1(beforePivotEnginePopulate))
+    if (beforeServiceInvoke != null) __obj.updateDynamic("beforeServiceInvoke")(js.Any.fromFunction1(beforeServiceInvoke))
+    if (cellClick != null) __obj.updateDynamic("cellClick")(js.Any.fromFunction1(cellClick))
+    if (cellContext != null) __obj.updateDynamic("cellContext")(js.Any.fromFunction1(cellContext))
+    if (cellDoubleClick != null) __obj.updateDynamic("cellDoubleClick")(js.Any.fromFunction1(cellDoubleClick))
+    if (cellEdit != null) __obj.updateDynamic("cellEdit")(js.Any.fromFunction1(cellEdit))
+    if (cellSelection != null) __obj.updateDynamic("cellSelection")(js.Any.fromFunction1(cellSelection))
     if (collapsedMembers != null) __obj.updateDynamic("collapsedMembers")(collapsedMembers)
-    if (columnHeaderHyperlinkClick != null) __obj.updateDynamic("columnHeaderHyperlinkClick")(columnHeaderHyperlinkClick)
+    if (columnHeaderHyperlinkClick != null) __obj.updateDynamic("columnHeaderHyperlinkClick")(js.Any.fromFunction1(columnHeaderHyperlinkClick))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (customObject != null) __obj.updateDynamic("customObject")(customObject)
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (drillSuccess != null) __obj.updateDynamic("drillSuccess")(drillSuccess)
-    if (drillThrough != null) __obj.updateDynamic("drillThrough")(drillThrough)
+    if (drillSuccess != null) __obj.updateDynamic("drillSuccess")(js.Any.fromFunction1(drillSuccess))
+    if (drillThrough != null) __obj.updateDynamic("drillThrough")(js.Any.fromFunction1(drillThrough))
     if (!js.isUndefined(enableAdvancedFilter)) __obj.updateDynamic("enableAdvancedFilter")(enableAdvancedFilter)
     if (!js.isUndefined(enableCellClick)) __obj.updateDynamic("enableCellClick")(enableCellClick)
     if (!js.isUndefined(enableCellContext)) __obj.updateDynamic("enableCellContext")(enableCellContext)
@@ -386,24 +386,24 @@ object Model {
     if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
     if (jsonRecords != null) __obj.updateDynamic("jsonRecords")(jsonRecords)
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (load != null) __obj.updateDynamic("load")(load)
-    if (loadReport != null) __obj.updateDynamic("loadReport")(loadReport)
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
+    if (loadReport != null) __obj.updateDynamic("loadReport")(js.Any.fromFunction1(loadReport))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (maxNodeLimitInMemberEditor != null) __obj.updateDynamic("maxNodeLimitInMemberEditor")(maxNodeLimitInMemberEditor.asInstanceOf[js.Any])
     if (memberEditorPageSize != null) __obj.updateDynamic("memberEditorPageSize")(memberEditorPageSize.asInstanceOf[js.Any])
     if (operationalMode != null) __obj.updateDynamic("operationalMode")(operationalMode.asInstanceOf[js.Any])
     if (pivotTableFieldListID != null) __obj.updateDynamic("pivotTableFieldListID")(pivotTableFieldListID)
-    if (renderComplete != null) __obj.updateDynamic("renderComplete")(renderComplete)
-    if (renderFailure != null) __obj.updateDynamic("renderFailure")(renderFailure)
-    if (renderSuccess != null) __obj.updateDynamic("renderSuccess")(renderSuccess)
+    if (renderComplete != null) __obj.updateDynamic("renderComplete")(js.Any.fromFunction1(renderComplete))
+    if (renderFailure != null) __obj.updateDynamic("renderFailure")(js.Any.fromFunction1(renderFailure))
+    if (renderSuccess != null) __obj.updateDynamic("renderSuccess")(js.Any.fromFunction1(renderSuccess))
     if (!js.isUndefined(resizeColumnsToFit)) __obj.updateDynamic("resizeColumnsToFit")(resizeColumnsToFit)
-    if (rowHeaderHyperlinkClick != null) __obj.updateDynamic("rowHeaderHyperlinkClick")(rowHeaderHyperlinkClick)
-    if (saveReport != null) __obj.updateDynamic("saveReport")(saveReport)
+    if (rowHeaderHyperlinkClick != null) __obj.updateDynamic("rowHeaderHyperlinkClick")(js.Any.fromFunction1(rowHeaderHyperlinkClick))
+    if (saveReport != null) __obj.updateDynamic("saveReport")(js.Any.fromFunction1(saveReport))
     if (serviceMethodSettings != null) __obj.updateDynamic("serviceMethodSettings")(serviceMethodSettings)
     if (!js.isUndefined(showUniqueNameOnPivotButton)) __obj.updateDynamic("showUniqueNameOnPivotButton")(showUniqueNameOnPivotButton)
-    if (summaryCellHyperlinkClick != null) __obj.updateDynamic("summaryCellHyperlinkClick")(summaryCellHyperlinkClick)
+    if (summaryCellHyperlinkClick != null) __obj.updateDynamic("summaryCellHyperlinkClick")(js.Any.fromFunction1(summaryCellHyperlinkClick))
     if (url != null) __obj.updateDynamic("url")(url)
-    if (valueCellHyperlinkClick != null) __obj.updateDynamic("valueCellHyperlinkClick")(valueCellHyperlinkClick)
+    if (valueCellHyperlinkClick != null) __obj.updateDynamic("valueCellHyperlinkClick")(js.Any.fromFunction1(valueCellHyperlinkClick))
     if (valueSortSettings != null) __obj.updateDynamic("valueSortSettings")(valueSortSettings)
     __obj.asInstanceOf[Model]
   }

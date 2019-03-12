@@ -10,7 +10,7 @@ trait TinySliderProps extends js.Object {
     js.Function3[
       /* slideClicked */ scala.Double, 
       /* info */ java.lang.String, 
-      /* event */ reactLib.Event, 
+      /* event */ stdLib.Event, 
       scala.Unit
     ]
   ] = js.undefined
@@ -27,29 +27,24 @@ trait TinySliderProps extends js.Object {
 object TinySliderProps {
   @scala.inline
   def apply(
-    onClick: js.Function3[
-      /* slideClicked */ scala.Double, 
-      /* info */ java.lang.String, 
-      /* event */ reactLib.Event, 
-      scala.Unit
-    ] = null,
-    onIndexChanged: js.Function1[/* info */ TinySliderInfo, scala.Unit] = null,
-    onTouchEnd: js.Function1[/* info */ TinySliderInfo, scala.Unit] = null,
-    onTouchMove: js.Function1[/* info */ TinySliderInfo, scala.Unit] = null,
-    onTouchStart: js.Function1[/* info */ TinySliderInfo, scala.Unit] = null,
-    onTransitionEnd: js.Function1[/* info */ TinySliderInfo, scala.Unit] = null,
-    onTransitionStart: js.Function1[/* info */ TinySliderInfo, scala.Unit] = null,
+    onClick: (/* slideClicked */ scala.Double, /* info */ java.lang.String, /* event */ stdLib.Event) => scala.Unit = null,
+    onIndexChanged: /* info */ TinySliderInfo => scala.Unit = null,
+    onTouchEnd: /* info */ TinySliderInfo => scala.Unit = null,
+    onTouchMove: /* info */ TinySliderInfo => scala.Unit = null,
+    onTouchStart: /* info */ TinySliderInfo => scala.Unit = null,
+    onTransitionEnd: /* info */ TinySliderInfo => scala.Unit = null,
+    onTransitionStart: /* info */ TinySliderInfo => scala.Unit = null,
     settings: TinySliderSettings = null,
     startIndex: scala.Int | scala.Double = null
   ): TinySliderProps = {
     val __obj = js.Dynamic.literal()
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onIndexChanged != null) __obj.updateDynamic("onIndexChanged")(onIndexChanged)
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(onTransitionEnd)
-    if (onTransitionStart != null) __obj.updateDynamic("onTransitionStart")(onTransitionStart)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction3(onClick))
+    if (onIndexChanged != null) __obj.updateDynamic("onIndexChanged")(js.Any.fromFunction1(onIndexChanged))
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
+    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1(onTransitionEnd))
+    if (onTransitionStart != null) __obj.updateDynamic("onTransitionStart")(js.Any.fromFunction1(onTransitionStart))
     if (settings != null) __obj.updateDynamic("settings")(settings)
     if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[TinySliderProps]

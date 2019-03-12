@@ -23,10 +23,10 @@ trait CacheStrategy extends js.Object {
 object CacheStrategy {
   @scala.inline
   def apply(
-    handle: js.Function1[ICacheStrategyHandleOptions, js.Promise[stdLib.Response]],
-    makeRequest: js.Function1[ICacheStrategyMakeRequestOptions, js.Promise[stdLib.Response]]
+    handle: ICacheStrategyHandleOptions => js.Promise[stdLib.Response],
+    makeRequest: ICacheStrategyMakeRequestOptions => js.Promise[stdLib.Response]
   ): CacheStrategy = {
-    val __obj = js.Dynamic.literal(handle = handle, makeRequest = makeRequest)
+    val __obj = js.Dynamic.literal(handle = js.Any.fromFunction1(handle), makeRequest = js.Any.fromFunction1(makeRequest))
   
     __obj.asInstanceOf[CacheStrategy]
   }

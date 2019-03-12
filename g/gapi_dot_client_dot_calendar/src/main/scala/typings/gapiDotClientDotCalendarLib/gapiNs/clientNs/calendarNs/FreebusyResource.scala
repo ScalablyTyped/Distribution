@@ -13,12 +13,9 @@ trait FreebusyResource extends js.Object {
 object FreebusyResource {
   @scala.inline
   def apply(
-    query: js.Function1[
-      gapiDotClientDotCalendarLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FreeBusyResponse]
-    ]
+    query: gapiDotClientDotCalendarLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[FreeBusyResponse]
   ): FreebusyResource = {
-    val __obj = js.Dynamic.literal(query = query)
+    val __obj = js.Dynamic.literal(query = js.Any.fromFunction1(query))
   
     __obj.asInstanceOf[FreebusyResource]
   }

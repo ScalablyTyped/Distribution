@@ -41,11 +41,11 @@ trait IHotkeyProps
   /**
     * `keydown` event handler.
     */
-  var onKeyDown: js.UndefOr[js.Function1[/* e */ reactLib.KeyboardEvent, _]] = js.undefined
+  var onKeyDown: js.UndefOr[js.Function1[/* e */ stdLib.KeyboardEvent, _]] = js.undefined
   /**
     * `keyup` event handler.
     */
-  var onKeyUp: js.UndefOr[js.Function1[/* e */ reactLib.KeyboardEvent, _]] = js.undefined
+  var onKeyUp: js.UndefOr[js.Function1[/* e */ stdLib.KeyboardEvent, _]] = js.undefined
   /**
     * When `true`, invokes `event.preventDefault()` before the respective `onKeyDown` and
     * `onKeyUp` callbacks are invoked. Enabling this can simplify handler implementations.
@@ -70,8 +70,8 @@ object IHotkeyProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     global: js.UndefOr[scala.Boolean] = js.undefined,
     group: java.lang.String = null,
-    onKeyDown: js.Function1[/* e */ reactLib.KeyboardEvent, _] = null,
-    onKeyUp: js.Function1[/* e */ reactLib.KeyboardEvent, _] = null,
+    onKeyDown: /* e */ stdLib.KeyboardEvent => _ = null,
+    onKeyUp: /* e */ stdLib.KeyboardEvent => _ = null,
     preventDefault: js.UndefOr[scala.Boolean] = js.undefined,
     stopPropagation: js.UndefOr[scala.Boolean] = js.undefined
   ): IHotkeyProps = {
@@ -81,8 +81,8 @@ object IHotkeyProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
     if (group != null) __obj.updateDynamic("group")(group)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
+    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
     if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault)
     if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation)
     __obj.asInstanceOf[IHotkeyProps]

@@ -16,27 +16,27 @@ object IMarks {
   @scala.inline
   def apply(
     active: scala.Boolean,
-    add: js.Function1[java.lang.String, IAnnotation],
+    add: java.lang.String => IAnnotation,
     arrow: IArrow,
     bounds: IRectangle,
     chart: IChart,
-    clicked: js.Function1[IPoint, scala.Boolean],
-    draw: js.Function0[scala.Unit],
+    clicked: IPoint => scala.Boolean,
+    draw: () => scala.Unit,
     drawEvery: scala.Double,
     format: IFormat,
     items: js.Array[IAnnotation],
     margins: IMargins,
-    mousedown: js.Function1[js.Any, scala.Boolean],
-    mousemove: js.Function1[js.Any, scala.Boolean],
+    mousedown: js.Any => scala.Boolean,
+    mousemove: js.Any => scala.Boolean,
     position: IPoint,
-    resize: js.Function0[scala.Unit],
+    resize: () => scala.Unit,
     series: ISeries,
     style: java.lang.String,
     text: java.lang.String,
     transparent: scala.Boolean,
     visible: scala.Boolean
   ): IMarks = {
-    val __obj = js.Dynamic.literal(active = active, add = add, arrow = arrow, bounds = bounds, chart = chart, clicked = clicked, draw = draw, drawEvery = drawEvery, format = format, items = items, margins = margins, mousedown = mousedown, mousemove = mousemove, position = position, resize = resize, series = series, style = style, text = text, transparent = transparent, visible = visible)
+    val __obj = js.Dynamic.literal(active = active, add = js.Any.fromFunction1(add), arrow = arrow, bounds = bounds, chart = chart, clicked = js.Any.fromFunction1(clicked), draw = js.Any.fromFunction0(draw), drawEvery = drawEvery, format = format, items = items, margins = margins, mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), position = position, resize = js.Any.fromFunction0(resize), series = series, style = style, text = text, transparent = transparent, visible = visible)
   
     __obj.asInstanceOf[IMarks]
   }

@@ -100,7 +100,7 @@ object SeriesTooltipOptions {
     headerFormat: java.lang.String = null,
     hideDelay: scala.Int | scala.Double = null,
     pointFormat: java.lang.String = null,
-    pointFormatter: js.Function0[java.lang.String] = null,
+    pointFormatter: () => java.lang.String = null,
     valueDecimals: scala.Int | scala.Double = null,
     valuePrefix: java.lang.String = null,
     valueSuffix: java.lang.String = null,
@@ -114,7 +114,7 @@ object SeriesTooltipOptions {
     if (headerFormat != null) __obj.updateDynamic("headerFormat")(headerFormat)
     if (hideDelay != null) __obj.updateDynamic("hideDelay")(hideDelay.asInstanceOf[js.Any])
     if (pointFormat != null) __obj.updateDynamic("pointFormat")(pointFormat)
-    if (pointFormatter != null) __obj.updateDynamic("pointFormatter")(pointFormatter)
+    if (pointFormatter != null) __obj.updateDynamic("pointFormatter")(js.Any.fromFunction0(pointFormatter))
     if (valueDecimals != null) __obj.updateDynamic("valueDecimals")(valueDecimals.asInstanceOf[js.Any])
     if (valuePrefix != null) __obj.updateDynamic("valuePrefix")(valuePrefix)
     if (valueSuffix != null) __obj.updateDynamic("valueSuffix")(valueSuffix)

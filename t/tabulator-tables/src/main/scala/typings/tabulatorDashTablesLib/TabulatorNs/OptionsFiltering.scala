@@ -28,8 +28,8 @@ trait OptionsFiltering extends js.Object {
 object OptionsFiltering {
   @scala.inline
   def apply(
-    dataFiltered: js.Function2[/* filters */ js.Array[Filter], /* rows */ js.Array[RowComponent], scala.Unit] = null,
-    dataFiltering: js.Function1[/* filters */ js.Array[Filter], scala.Unit] = null,
+    dataFiltered: (/* filters */ js.Array[Filter], /* rows */ js.Array[RowComponent]) => scala.Unit = null,
+    dataFiltering: /* filters */ js.Array[Filter] => scala.Unit = null,
     initialFilter: js.Array[Filter] = null,
     initialHeaderFilter: js.Array[
       stdLib.Pick[
@@ -39,8 +39,8 @@ object OptionsFiltering {
     ] = null
   ): OptionsFiltering = {
     val __obj = js.Dynamic.literal()
-    if (dataFiltered != null) __obj.updateDynamic("dataFiltered")(dataFiltered)
-    if (dataFiltering != null) __obj.updateDynamic("dataFiltering")(dataFiltering)
+    if (dataFiltered != null) __obj.updateDynamic("dataFiltered")(js.Any.fromFunction2(dataFiltered))
+    if (dataFiltering != null) __obj.updateDynamic("dataFiltering")(js.Any.fromFunction1(dataFiltering))
     if (initialFilter != null) __obj.updateDynamic("initialFilter")(initialFilter)
     if (initialHeaderFilter != null) __obj.updateDynamic("initialHeaderFilter")(initialHeaderFilter)
     __obj.asInstanceOf[OptionsFiltering]

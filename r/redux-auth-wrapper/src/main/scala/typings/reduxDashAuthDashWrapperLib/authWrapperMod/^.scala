@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-auth-wrapper/authWrapper", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def default[OwnProps](config: reduxDashAuthDashWrapperLib.authWrapperMod.AuthWrapperConfig): reduxDashAuthDashWrapperLib.reduxDashAuthDashWrapperMod.AuthWrapperDecorator[OwnProps with reduxDashAuthDashWrapperLib.authWrapperMod.InjectedAuthProps] = js.native
+  def default[OwnProps](config: AuthWrapperConfig): reduxDashAuthDashWrapperLib.reduxDashAuthDashWrapperMod.AuthWrapperDecorator[OwnProps with InjectedAuthProps] = js.native
 }
 

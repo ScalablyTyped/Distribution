@@ -15,10 +15,10 @@ object AbstractIterator {
   @scala.inline
   def apply[K, V](
     db: AbstractLevelDOWN[K, V],
-    end: js.Function1[ErrorCallback, scala.Unit],
-    next: js.Function1[ErrorKeyValueCallback[K, V], AbstractIterator[K, V]]
+    end: ErrorCallback => scala.Unit,
+    next: ErrorKeyValueCallback[K, V] => AbstractIterator[K, V]
   ): AbstractIterator[K, V] = {
-    val __obj = js.Dynamic.literal(db = db, end = end, next = next)
+    val __obj = js.Dynamic.literal(db = db, end = js.Any.fromFunction1(end), next = js.Any.fromFunction1(next))
   
     __obj.asInstanceOf[AbstractIterator[K, V]]
   }

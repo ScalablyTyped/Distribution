@@ -145,34 +145,28 @@ trait Api extends js.Object {
 object Api {
   @scala.inline
   def apply(
-    conformance: js.Function1[js.Any, js.Promise[Response]],
-    create: js.Function1[Entry, js.Promise[Response]],
-    delete: js.Function1[Entry, js.Promise[Response]],
-    document: js.Function1[Entry, js.Promise[Response]],
-    drain: js.Function4[
-      SearchParams, 
-      js.Function1[/* entries */ js.Array[Entry], _], 
-      js.Function0[_], 
-      js.Function1[/* error */ js.Any, _], 
-      scala.Unit
-    ],
-    fetchAll: js.Function1[SearchParams, js.Promise[js.Array[Entry]]],
-    fetchAllWithReferences: js.Function2[SearchParams, js.Array[java.lang.String], js.Any],
-    history: js.Function1[HistoryParams, js.Promise[Response]],
-    nextPage: js.Function1[Bundle, js.Promise[Response]],
-    prevPage: js.Function1[Bundle, js.Promise[Response]],
-    profile: js.Function1[ResourceType, js.Promise[Response]],
-    read: js.Function1[ReadParams, js.Promise[Response]],
-    resolve: js.Function1[ResolveParams, js.Promise[Response]],
-    resourceHistory: js.Function1[HistoryParams, js.Promise[Response]],
-    search: js.Function1[SearchParams, js.Promise[Response]],
-    transaction: js.Function1[Bundle, js.Promise[Response]],
-    typeHistory: js.Function1[HistoryParams, js.Promise[Response]],
-    update: js.Function1[Entry, js.Promise[Response]],
-    validate: js.Function1[Entry, js.Promise[Response]],
-    vread: js.Function1[VersionReadParams, js.Promise[Response]]
+    conformance: js.Any => js.Promise[Response],
+    create: Entry => js.Promise[Response],
+    delete: Entry => js.Promise[Response],
+    document: Entry => js.Promise[Response],
+    drain: (SearchParams, js.Function1[/* entries */ js.Array[Entry], _], js.Function0[_], js.Function1[/* error */ js.Any, _]) => scala.Unit,
+    fetchAll: SearchParams => js.Promise[js.Array[Entry]],
+    fetchAllWithReferences: (SearchParams, js.Array[java.lang.String]) => js.Any,
+    history: HistoryParams => js.Promise[Response],
+    nextPage: Bundle => js.Promise[Response],
+    prevPage: Bundle => js.Promise[Response],
+    profile: ResourceType => js.Promise[Response],
+    read: ReadParams => js.Promise[Response],
+    resolve: ResolveParams => js.Promise[Response],
+    resourceHistory: HistoryParams => js.Promise[Response],
+    search: SearchParams => js.Promise[Response],
+    transaction: Bundle => js.Promise[Response],
+    typeHistory: HistoryParams => js.Promise[Response],
+    update: Entry => js.Promise[Response],
+    validate: Entry => js.Promise[Response],
+    vread: VersionReadParams => js.Promise[Response]
   ): Api = {
-    val __obj = js.Dynamic.literal(conformance = conformance, create = create, delete = delete, document = document, drain = drain, fetchAll = fetchAll, fetchAllWithReferences = fetchAllWithReferences, history = history, nextPage = nextPage, prevPage = prevPage, profile = profile, read = read, resolve = resolve, resourceHistory = resourceHistory, search = search, transaction = transaction, typeHistory = typeHistory, update = update, validate = validate, vread = vread)
+    val __obj = js.Dynamic.literal(conformance = js.Any.fromFunction1(conformance), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), document = js.Any.fromFunction1(document), drain = js.Any.fromFunction4(drain), fetchAll = js.Any.fromFunction1(fetchAll), fetchAllWithReferences = js.Any.fromFunction2(fetchAllWithReferences), history = js.Any.fromFunction1(history), nextPage = js.Any.fromFunction1(nextPage), prevPage = js.Any.fromFunction1(prevPage), profile = js.Any.fromFunction1(profile), read = js.Any.fromFunction1(read), resolve = js.Any.fromFunction1(resolve), resourceHistory = js.Any.fromFunction1(resourceHistory), search = js.Any.fromFunction1(search), transaction = js.Any.fromFunction1(transaction), typeHistory = js.Any.fromFunction1(typeHistory), update = js.Any.fromFunction1(update), validate = js.Any.fromFunction1(validate), vread = js.Any.fromFunction1(vread))
   
     __obj.asInstanceOf[Api]
   }

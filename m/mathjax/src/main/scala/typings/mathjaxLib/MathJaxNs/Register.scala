@@ -30,12 +30,12 @@ trait Register extends js.Object {
 object Register {
   @scala.inline
   def apply(
-    LoadHook: js.Function2[java.lang.String, js.Function, scala.Unit],
-    MessageHook: js.Function2[java.lang.String, js.Any, scala.Unit],
-    PreProcessor: js.Function1[js.Any, scala.Unit],
-    StartupHook: js.Function2[java.lang.String, js.Any, scala.Unit]
+    LoadHook: (java.lang.String, js.Function) => scala.Unit,
+    MessageHook: (java.lang.String, js.Any) => scala.Unit,
+    PreProcessor: js.Any => scala.Unit,
+    StartupHook: (java.lang.String, js.Any) => scala.Unit
   ): Register = {
-    val __obj = js.Dynamic.literal(LoadHook = LoadHook, MessageHook = MessageHook, PreProcessor = PreProcessor, StartupHook = StartupHook)
+    val __obj = js.Dynamic.literal(LoadHook = js.Any.fromFunction2(LoadHook), MessageHook = js.Any.fromFunction2(MessageHook), PreProcessor = js.Any.fromFunction1(PreProcessor), StartupHook = js.Any.fromFunction2(StartupHook))
   
     __obj.asInstanceOf[Register]
   }

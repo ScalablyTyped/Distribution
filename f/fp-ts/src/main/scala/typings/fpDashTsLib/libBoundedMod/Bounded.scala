@@ -15,11 +15,11 @@ object Bounded {
   @scala.inline
   def apply[A](
     bottom: A,
-    compare: js.Function2[A, A, fpDashTsLib.libOrderingMod.Ordering],
-    equals: js.Function2[A, A, scala.Boolean],
+    compare: (A, A) => fpDashTsLib.libOrderingMod.Ordering,
+    equals: (A, A) => scala.Boolean,
     top: A
   ): Bounded[A] = {
-    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], compare = compare, equals = equals, top = top.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], compare = js.Any.fromFunction2(compare), equals = js.Any.fromFunction2(equals), top = top.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Bounded[A]]
   }

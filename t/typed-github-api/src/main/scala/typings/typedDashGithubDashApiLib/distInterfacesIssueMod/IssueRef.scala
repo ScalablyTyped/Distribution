@@ -14,11 +14,11 @@ trait IssueRef extends js.Object {
 object IssueRef {
   @scala.inline
   def apply(
-    loadAsync: js.Function0[js.Promise[Issue | scala.Null]],
-    loadRepositoryAsync: js.Function0[js.Promise[typedDashGithubDashApiLib.distInterfacesRepositoryMod.Repository]],
+    loadAsync: () => js.Promise[Issue | scala.Null],
+    loadRepositoryAsync: () => js.Promise[typedDashGithubDashApiLib.distInterfacesRepositoryMod.Repository],
     number: scala.Double
   ): IssueRef = {
-    val __obj = js.Dynamic.literal(loadAsync = loadAsync, loadRepositoryAsync = loadRepositoryAsync, number = number)
+    val __obj = js.Dynamic.literal(loadAsync = js.Any.fromFunction0(loadAsync), loadRepositoryAsync = js.Any.fromFunction0(loadRepositoryAsync), number = number)
   
     __obj.asInstanceOf[IssueRef]
   }

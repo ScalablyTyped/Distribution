@@ -11,8 +11,8 @@ trait IBaseObject extends js.Object {
 
 object IBaseObject {
   @scala.inline
-  def apply(toJSON: js.Function0[js.Any]): IBaseObject = {
-    val __obj = js.Dynamic.literal(toJSON = toJSON)
+  def apply(toJSON: () => js.Any): IBaseObject = {
+    val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[IBaseObject]
   }

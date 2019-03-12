@@ -14,9 +14,9 @@ object ^ extends js.Object {
     * @param sourceRoot optional sourceRoot of the map to be generated
     * @return Combiner instance to which source maps can be added and later combined
     */
-  def create(): combineDashSourceDashMapLib.combineDashSourceDashMapMod.Combiner = js.native
-  def create(file: java.lang.String): combineDashSourceDashMapLib.combineDashSourceDashMapMod.Combiner = js.native
-  def create(file: java.lang.String, sourceRoot: java.lang.String): combineDashSourceDashMapLib.combineDashSourceDashMapMod.Combiner = js.native
+  def create(): Combiner = js.native
+  def create(file: java.lang.String): Combiner = js.native
+  def create(file: java.lang.String, sourceRoot: java.lang.String): Combiner = js.native
   /**
     * @return src with all sourceMappingUrl comments removed
     */

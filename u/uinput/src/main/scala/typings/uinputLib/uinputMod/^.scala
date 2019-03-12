@@ -684,29 +684,29 @@ object ^ extends js.Object {
   val SW_VIDEOOUT_INSERT: scala.Double = js.native
   def create(
     stream: nodeLib.fsMod.WriteStream,
-    options: uinputLib.uinputMod.CreateOptions,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    options: CreateOptions,
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def emit_combo(
     stream: nodeLib.fsMod.WriteStream,
     codes: js.Array[scala.Double],
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def key_event(
     stream: nodeLib.fsMod.WriteStream,
     code: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def send_event(
     stream: nodeLib.fsMod.WriteStream,
     typeParam: scala.Double,
     code: scala.Double,
     value: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def setup(
-    options: uinputLib.uinputMod.SetupOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* stream */ nodeLib.fsMod.WriteStream, scala.Unit]
+    options: SetupOptions,
+    callback: js.Function2[/* err */ stdLib.Error, /* stream */ nodeLib.fsMod.WriteStream, scala.Unit]
   ): scala.Unit = js.native
 }
 

@@ -20,16 +20,13 @@ object Iterator {
     binding: js.Any,
     cache: js.Any,
     db: abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractLevelDOWN[Bytes, Bytes],
-    end: js.Function1[abstractDashLeveldownLib.abstractDashLeveldownMod.ErrorCallback, scala.Unit],
+    end: abstractDashLeveldownLib.abstractDashLeveldownMod.ErrorCallback => scala.Unit,
     fastFuture: js.Any,
     finished: js.Any,
-    next: js.Function1[
-      abstractDashLeveldownLib.abstractDashLeveldownMod.ErrorKeyValueCallback[Bytes, Bytes], 
-      Iterator
-    ],
-    seek: js.Function1[Bytes, scala.Unit]
+    next: abstractDashLeveldownLib.abstractDashLeveldownMod.ErrorKeyValueCallback[Bytes, Bytes] => Iterator,
+    seek: Bytes => scala.Unit
   ): Iterator = {
-    val __obj = js.Dynamic.literal(binding = binding, cache = cache, db = db, end = end, fastFuture = fastFuture, finished = finished, next = next, seek = seek)
+    val __obj = js.Dynamic.literal(binding = binding, cache = cache, db = db, end = js.Any.fromFunction1(end), fastFuture = fastFuture, finished = finished, next = js.Any.fromFunction1(next), seek = js.Any.fromFunction1(seek))
   
     __obj.asInstanceOf[Iterator]
   }

@@ -18,13 +18,13 @@ object INotifyConfigProvider {
   @scala.inline
   def apply(
     $get: js.Any,
-    addOrUpdateNotifyConfig: js.Function2[java.lang.String, INotifyConfig, scala.Unit],
+    addOrUpdateNotifyConfig: (java.lang.String, INotifyConfig) => scala.Unit,
     defaultNotifyConfig: java.lang.String,
     defaultTargetContainerName: java.lang.String,
     notifyConfigs: js.Any,
-    optionsTransformer: js.Function2[INotifyOptions, angularLib.angularMod.angularNs.ISCEService, scala.Unit]
+    optionsTransformer: (INotifyOptions, angularLib.angularMod.angularNs.ISCEService) => scala.Unit
   ): INotifyConfigProvider = {
-    val __obj = js.Dynamic.literal($get = $get, addOrUpdateNotifyConfig = addOrUpdateNotifyConfig, defaultNotifyConfig = defaultNotifyConfig, defaultTargetContainerName = defaultTargetContainerName, notifyConfigs = notifyConfigs, optionsTransformer = optionsTransformer)
+    val __obj = js.Dynamic.literal($get = $get, addOrUpdateNotifyConfig = js.Any.fromFunction2(addOrUpdateNotifyConfig), defaultNotifyConfig = defaultNotifyConfig, defaultTargetContainerName = defaultTargetContainerName, notifyConfigs = notifyConfigs, optionsTransformer = js.Any.fromFunction2(optionsTransformer))
   
     __obj.asInstanceOf[INotifyConfigProvider]
   }

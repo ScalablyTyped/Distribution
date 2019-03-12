@@ -248,7 +248,7 @@ trait Ng1StateDeclaration
 object Ng1StateDeclaration {
   @scala.inline
   def apply(
-    $$state: js.Function0[atUirouterCoreLib.libStateStateObjectMod.StateObject] = null,
+    $$state: () => atUirouterCoreLib.libStateStateObjectMod.StateObject = null,
     $context: atUirouterCoreLib.libViewInterfaceMod.ViewContext = null,
     $name: java.lang.String = null,
     $type: java.lang.String = null,
@@ -263,11 +263,7 @@ object Ng1StateDeclaration {
     controllerProvider: atUirouterCoreLib.libCommonCommonMod.IInjectable = null,
     data: js.Any = null,
     dynamic: js.UndefOr[scala.Boolean] = js.undefined,
-    lazyLoad: js.Function2[
-      /* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, 
-      /* state */ atUirouterCoreLib.libStateInterfaceMod.StateDeclaration, 
-      js.Promise[atUirouterCoreLib.libStateInterfaceMod.LazyLoadResult]
-    ] = null,
+    lazyLoad: (/* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, /* state */ atUirouterCoreLib.libStateInterfaceMod.StateDeclaration) => js.Promise[atUirouterCoreLib.libStateInterfaceMod.LazyLoadResult] = null,
     name: java.lang.String = null,
     onEnter: Ng1StateTransitionHook | atUirouterCoreLib.libCommonCommonMod.IInjectable = null,
     onExit: Ng1StateTransitionHook | atUirouterCoreLib.libCommonCommonMod.IInjectable = null,
@@ -285,14 +281,14 @@ object Ng1StateDeclaration {
     resolve: js.Array[atUirouterCoreLib.libStateInterfaceMod.ResolveTypes] | org.scalablytyped.runtime.StringDictionary[atUirouterCoreLib.libCommonCommonMod.IInjectable] = null,
     resolveAs: java.lang.String = null,
     resolvePolicy: atUirouterCoreLib.libResolveInterfaceMod.ResolvePolicy = null,
-    template: angularLib.angularMod.Global.Function | java.lang.String = null,
+    template: js.Function | java.lang.String = null,
     templateProvider: atUirouterCoreLib.libCommonCommonMod.IInjectable = null,
-    templateUrl: java.lang.String | angularLib.angularMod.Global.Function = null,
+    templateUrl: java.lang.String | js.Function = null,
     url: java.lang.String = null,
     views: org.scalablytyped.runtime.StringDictionary[java.lang.String | Ng1ViewDeclaration] = null
   ): Ng1StateDeclaration = {
     val __obj = js.Dynamic.literal()
-    if ($$state != null) __obj.updateDynamic("$$state")($$state)
+    if ($$state != null) __obj.updateDynamic("$$state")(js.Any.fromFunction0($$state))
     if ($context != null) __obj.updateDynamic("$context")($context)
     if ($name != null) __obj.updateDynamic("$name")($name)
     if ($type != null) __obj.updateDynamic("$type")($type)
@@ -307,7 +303,7 @@ object Ng1StateDeclaration {
     if (controllerProvider != null) __obj.updateDynamic("controllerProvider")(controllerProvider.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)
     if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic)
-    if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(lazyLoad)
+    if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(js.Any.fromFunction2(lazyLoad))
     if (name != null) __obj.updateDynamic("name")(name)
     if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
     if (onExit != null) __obj.updateDynamic("onExit")(onExit.asInstanceOf[js.Any])

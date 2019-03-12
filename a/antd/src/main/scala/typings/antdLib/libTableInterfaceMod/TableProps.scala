@@ -60,7 +60,7 @@ trait TableProps[T] extends js.Object {
   ] = js.undefined
   var onRow: js.UndefOr[js.Function2[/* record */ T, /* index */ scala.Double, _]] = js.undefined
   var onRowClick: js.UndefOr[
-    js.Function3[/* record */ T, /* index */ scala.Double, /* event */ reactLib.Event, scala.Unit]
+    js.Function3[/* record */ T, /* index */ scala.Double, /* event */ stdLib.Event, scala.Unit]
   ] = js.undefined
   var pagination: js.UndefOr[
     antdLib.libPaginationPaginationMod.PaginationConfig | antdLib.antdLibNumbers.`false`
@@ -96,40 +96,25 @@ object TableProps {
     defaultExpandAllRows: js.UndefOr[scala.Boolean] = js.undefined,
     defaultExpandedRowKeys: js.Array[java.lang.String] | js.Array[scala.Double] = null,
     dropdownPrefixCls: java.lang.String = null,
-    expandIcon: js.Function1[/* props */ ExpandIconProps[T], reactLib.reactMod.ReactNs.ReactNode] = null,
+    expandIcon: /* props */ ExpandIconProps[T] => reactLib.reactMod.ReactNs.ReactNode = null,
     expandIconAsCell: js.UndefOr[scala.Boolean] = js.undefined,
     expandIconColumnIndex: scala.Int | scala.Double = null,
     expandRowByClick: js.UndefOr[scala.Boolean] = js.undefined,
     expandedRowKeys: js.Array[java.lang.String] | js.Array[scala.Double] = null,
-    expandedRowRender: js.Function4[
-      /* record */ T, 
-      /* index */ scala.Double, 
-      /* indent */ scala.Double, 
-      /* expanded */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
-    footer: js.Function1[/* currentPageData */ js.Array[js.Object], reactLib.reactMod.ReactNs.ReactNode] = null,
+    expandedRowRender: (/* record */ T, /* index */ scala.Double, /* indent */ scala.Double, /* expanded */ scala.Boolean) => reactLib.reactMod.ReactNs.ReactNode = null,
+    footer: /* currentPageData */ js.Array[js.Object] => reactLib.reactMod.ReactNs.ReactNode = null,
     indentSize: scala.Int | scala.Double = null,
     loading: scala.Boolean | antdLib.libSpinMod.SpinProps = null,
     locale: TableLocale = null,
-    onChange: js.Function4[
-      /* pagination */ antdLib.libPaginationPaginationMod.PaginationConfig, 
-      /* filters */ stdLib.Record[java.lang.String, js.Array[java.lang.String]], 
-      /* sorter */ SorterResult[T], 
-      /* extra */ TableCurrentDataSource[T], 
-      scala.Unit
-    ] = null,
-    onExpand: js.Function2[/* expanded */ scala.Boolean, /* record */ T, scala.Unit] = null,
-    onExpandedRowsChange: js.Function1[
-      /* expandedRowKeys */ js.Array[java.lang.String] | js.Array[scala.Double], 
-      scala.Unit
-    ] = null,
-    onHeaderRow: js.Function2[/* columns */ js.Array[ColumnProps[T]], /* index */ scala.Double, _] = null,
-    onRow: js.Function2[/* record */ T, /* index */ scala.Double, _] = null,
-    onRowClick: js.Function3[/* record */ T, /* index */ scala.Double, /* event */ reactLib.Event, scala.Unit] = null,
+    onChange: (/* pagination */ antdLib.libPaginationPaginationMod.PaginationConfig, /* filters */ stdLib.Record[java.lang.String, js.Array[java.lang.String]], /* sorter */ SorterResult[T], /* extra */ TableCurrentDataSource[T]) => scala.Unit = null,
+    onExpand: (/* expanded */ scala.Boolean, /* record */ T) => scala.Unit = null,
+    onExpandedRowsChange: /* expandedRowKeys */ js.Array[java.lang.String] | js.Array[scala.Double] => scala.Unit = null,
+    onHeaderRow: (/* columns */ js.Array[ColumnProps[T]], /* index */ scala.Double) => _ = null,
+    onRow: (/* record */ T, /* index */ scala.Double) => _ = null,
+    onRowClick: (/* record */ T, /* index */ scala.Double, /* event */ stdLib.Event) => scala.Unit = null,
     pagination: antdLib.libPaginationPaginationMod.PaginationConfig | antdLib.antdLibNumbers.`false` = null,
     prefixCls: java.lang.String = null,
-    rowClassName: js.Function2[/* record */ T, /* index */ scala.Double, java.lang.String] = null,
+    rowClassName: (/* record */ T, /* index */ scala.Double) => java.lang.String = null,
     rowKey: java.lang.String | (js.Function2[/* record */ T, /* index */ scala.Double, java.lang.String]) = null,
     rowSelection: TableRowSelection[T] = null,
     scroll: antdLib.Anon_X = null,
@@ -137,7 +122,7 @@ object TableProps {
     size: TableSize = null,
     sortDirections: js.Array[SortOrder] = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    title: js.Function1[/* currentPageData */ js.Array[js.Object], reactLib.reactMod.ReactNs.ReactNode] = null,
+    title: /* currentPageData */ js.Array[js.Object] => reactLib.reactMod.ReactNs.ReactNode = null,
     useFixedHeader: js.UndefOr[scala.Boolean] = js.undefined
   ): TableProps[T] = {
     val __obj = js.Dynamic.literal()
@@ -152,25 +137,25 @@ object TableProps {
     if (!js.isUndefined(defaultExpandAllRows)) __obj.updateDynamic("defaultExpandAllRows")(defaultExpandAllRows)
     if (defaultExpandedRowKeys != null) __obj.updateDynamic("defaultExpandedRowKeys")(defaultExpandedRowKeys.asInstanceOf[js.Any])
     if (dropdownPrefixCls != null) __obj.updateDynamic("dropdownPrefixCls")(dropdownPrefixCls)
-    if (expandIcon != null) __obj.updateDynamic("expandIcon")(expandIcon)
+    if (expandIcon != null) __obj.updateDynamic("expandIcon")(js.Any.fromFunction1(expandIcon))
     if (!js.isUndefined(expandIconAsCell)) __obj.updateDynamic("expandIconAsCell")(expandIconAsCell)
     if (expandIconColumnIndex != null) __obj.updateDynamic("expandIconColumnIndex")(expandIconColumnIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(expandRowByClick)) __obj.updateDynamic("expandRowByClick")(expandRowByClick)
     if (expandedRowKeys != null) __obj.updateDynamic("expandedRowKeys")(expandedRowKeys.asInstanceOf[js.Any])
-    if (expandedRowRender != null) __obj.updateDynamic("expandedRowRender")(expandedRowRender)
-    if (footer != null) __obj.updateDynamic("footer")(footer)
+    if (expandedRowRender != null) __obj.updateDynamic("expandedRowRender")(js.Any.fromFunction4(expandedRowRender))
+    if (footer != null) __obj.updateDynamic("footer")(js.Any.fromFunction1(footer))
     if (indentSize != null) __obj.updateDynamic("indentSize")(indentSize.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onExpand != null) __obj.updateDynamic("onExpand")(onExpand)
-    if (onExpandedRowsChange != null) __obj.updateDynamic("onExpandedRowsChange")(onExpandedRowsChange)
-    if (onHeaderRow != null) __obj.updateDynamic("onHeaderRow")(onHeaderRow)
-    if (onRow != null) __obj.updateDynamic("onRow")(onRow)
-    if (onRowClick != null) __obj.updateDynamic("onRowClick")(onRowClick)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction4(onChange))
+    if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction2(onExpand))
+    if (onExpandedRowsChange != null) __obj.updateDynamic("onExpandedRowsChange")(js.Any.fromFunction1(onExpandedRowsChange))
+    if (onHeaderRow != null) __obj.updateDynamic("onHeaderRow")(js.Any.fromFunction2(onHeaderRow))
+    if (onRow != null) __obj.updateDynamic("onRow")(js.Any.fromFunction2(onRow))
+    if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction3(onRowClick))
     if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (rowClassName != null) __obj.updateDynamic("rowClassName")(rowClassName)
+    if (rowClassName != null) __obj.updateDynamic("rowClassName")(js.Any.fromFunction2(rowClassName))
     if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey.asInstanceOf[js.Any])
     if (rowSelection != null) __obj.updateDynamic("rowSelection")(rowSelection)
     if (scroll != null) __obj.updateDynamic("scroll")(scroll)
@@ -178,7 +163,7 @@ object TableProps {
     if (size != null) __obj.updateDynamic("size")(size)
     if (sortDirections != null) __obj.updateDynamic("sortDirections")(sortDirections)
     if (style != null) __obj.updateDynamic("style")(style)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(js.Any.fromFunction1(title))
     if (!js.isUndefined(useFixedHeader)) __obj.updateDynamic("useFixedHeader")(useFixedHeader)
     __obj.asInstanceOf[TableProps[T]]
   }

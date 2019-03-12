@@ -103,43 +103,43 @@ trait Notification
 object Notification {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     bubbleParent: scala.Boolean,
     duration: scala.Double,
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getApiName: js.Function0[java.lang.String],
-    getBubbleParent: js.Function0[scala.Boolean],
-    getDuration: js.Function0[scala.Double],
-    getGravity: js.Function0[scala.Double],
-    getHorizontalMargin: js.Function0[scala.Double],
-    getMessage: js.Function0[java.lang.String],
-    getVerticalMargin: js.Function0[scala.Double],
-    getXOffset: js.Function0[scala.Double],
-    getYOffset: js.Function0[scala.Double],
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
+    getApiName: () => java.lang.String,
+    getBubbleParent: () => scala.Boolean,
+    getDuration: () => scala.Double,
+    getGravity: () => scala.Double,
+    getHorizontalMargin: () => scala.Double,
+    getMessage: () => java.lang.String,
+    getVerticalMargin: () => scala.Double,
+    getXOffset: () => scala.Double,
+    getYOffset: () => scala.Double,
     gravity: scala.Double,
     horizontalMargin: scala.Double,
     message: java.lang.String,
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
-    setDuration: js.Function1[scala.Double, scala.Unit],
-    setGravity: js.Function1[scala.Double, scala.Unit],
-    setHorizontalMargin: js.Function1[scala.Double, scala.Unit],
-    setMessage: js.Function1[java.lang.String, scala.Unit],
-    setVerticalMargin: js.Function1[scala.Double, scala.Unit],
-    setXOffset: js.Function1[scala.Double, scala.Unit],
-    setYOffset: js.Function1[scala.Double, scala.Unit],
-    show: js.Function0[scala.Unit],
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    setBubbleParent: scala.Boolean => scala.Unit,
+    setDuration: scala.Double => scala.Unit,
+    setGravity: scala.Double => scala.Unit,
+    setHorizontalMargin: scala.Double => scala.Unit,
+    setMessage: java.lang.String => scala.Unit,
+    setVerticalMargin: scala.Double => scala.Unit,
+    setXOffset: scala.Double => scala.Unit,
+    setYOffset: scala.Double => scala.Unit,
+    show: () => scala.Unit,
     verticalMargin: scala.Double,
     xOffset: scala.Double,
     yOffset: scala.Double,
-    getLifecycleContainer: js.Function0[Window | TabGroup] = null,
+    getLifecycleContainer: () => Window | TabGroup = null,
     lifecycleContainer: Window | TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, scala.Unit]) = null
   ): Notification = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, duration = duration, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, getDuration = getDuration, getGravity = getGravity, getHorizontalMargin = getHorizontalMargin, getMessage = getMessage, getVerticalMargin = getVerticalMargin, getXOffset = getXOffset, getYOffset = getYOffset, gravity = gravity, horizontalMargin = horizontalMargin, message = message, removeEventListener = removeEventListener, setBubbleParent = setBubbleParent, setDuration = setDuration, setGravity = setGravity, setHorizontalMargin = setHorizontalMargin, setMessage = setMessage, setVerticalMargin = setVerticalMargin, setXOffset = setXOffset, setYOffset = setYOffset, show = show, verticalMargin = verticalMargin, xOffset = xOffset, yOffset = yOffset)
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, duration = duration, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getDuration = js.Any.fromFunction0(getDuration), getGravity = js.Any.fromFunction0(getGravity), getHorizontalMargin = js.Any.fromFunction0(getHorizontalMargin), getMessage = js.Any.fromFunction0(getMessage), getVerticalMargin = js.Any.fromFunction0(getVerticalMargin), getXOffset = js.Any.fromFunction0(getXOffset), getYOffset = js.Any.fromFunction0(getYOffset), gravity = gravity, horizontalMargin = horizontalMargin, message = message, removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setDuration = js.Any.fromFunction1(setDuration), setGravity = js.Any.fromFunction1(setGravity), setHorizontalMargin = js.Any.fromFunction1(setHorizontalMargin), setMessage = js.Any.fromFunction1(setMessage), setVerticalMargin = js.Any.fromFunction1(setVerticalMargin), setXOffset = js.Any.fromFunction1(setXOffset), setYOffset = js.Any.fromFunction1(setYOffset), show = js.Any.fromFunction0(show), verticalMargin = verticalMargin, xOffset = xOffset, yOffset = yOffset)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
     __obj.asInstanceOf[Notification]

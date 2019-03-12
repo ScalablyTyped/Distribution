@@ -25,12 +25,12 @@ object PortalFeaturedGroups {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     owner: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     title: java.lang.String
   ): PortalFeaturedGroups = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, owner = owner, propertyIsEnumerable = propertyIsEnumerable, title = title)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), owner = owner, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), title = title)
   
     __obj.asInstanceOf[PortalFeaturedGroups]
   }

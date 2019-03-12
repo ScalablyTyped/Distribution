@@ -25,7 +25,7 @@ object ^ extends js.Object {
   def apply(
     image1: java.lang.String,
     image2: java.lang.String,
-    options: looksDashSameLib.looksDashSameMod.LooksSameOptions,
+    options: LooksSameOptions,
     callback: looksDashSameLib.LooksSameCallback
   ): scala.Unit = js.native
   /**
@@ -34,18 +34,11 @@ object ^ extends js.Object {
     * @param color2 The second color
     * @param options The options passed to looksSame.colors function
     */
-  def colors(
-    color1: looksDashSameLib.looksDashSameMod.LooksSameColor,
-    color2: looksDashSameLib.looksDashSameMod.LooksSameColor,
-    options: looksDashSameLib.Anon_Tolerance
-  ): scala.Unit = js.native
+  def colors(color1: LooksSameColor, color2: LooksSameColor, options: looksDashSameLib.Anon_Tolerance): scala.Unit = js.native
   def createDiff(
-    options: looksDashSameLib.looksDashSameMod.CreateDiffAsBufferOptions,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* buffer */ nodeLib.Buffer, _]
+    options: CreateDiffAsBufferOptions,
+    callback: js.Function2[/* error */ stdLib.Error | scala.Null, /* buffer */ nodeLib.Buffer, _]
   ): scala.Unit = js.native
-  def createDiff(
-    options: looksDashSameLib.looksDashSameMod.CreateDiffOptions,
-    callback: js.Function1[/* error */ nodeLib.Error | scala.Null, _]
-  ): scala.Unit = js.native
+  def createDiff(options: CreateDiffOptions, callback: js.Function1[/* error */ stdLib.Error | scala.Null, _]): scala.Unit = js.native
 }
 

@@ -3992,8 +3992,8 @@ trait LoDashStatic extends js.Object {
     * @param value The value to check.
     * @return Returns true if value is an object, else false.
     */
-  def isObject(): scala.Boolean = js.native
-  def isObject(value: js.Any): scala.Boolean = js.native
+  def isObject(): /* is object */ scala.Boolean = js.native
+  def isObject(value: js.Any): /* is object */ scala.Boolean = js.native
   /**
     * Checks if `value` is object-like. A value is object-like if it's not `null`
     * and has a `typeof` result of "object".

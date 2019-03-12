@@ -103,7 +103,7 @@ object TimePickerOptions {
     amPmText: js.Tuple2[java.lang.String, java.lang.String] = null,
     appendText: java.lang.String = null,
     atPosition: java.lang.String = null,
-    beforeShow: js.Function0[_] = null,
+    beforeShow: () => _ = null,
     button: java.lang.String = null,
     closeButtonText: java.lang.String = null,
     defaultTime: java.lang.String = null,
@@ -114,10 +114,10 @@ object TimePickerOptions {
     minutes: TimePickerMinutes = null,
     myPosition: java.lang.String = null,
     nowButtonText: java.lang.String = null,
-    onClose: js.Function2[/* timeText */ java.lang.String, /* inst */ js.Any, _] = null,
-    onHourShow: js.Function0[_] = null,
-    onMinuteShow: js.Function0[_] = null,
-    onSelect: js.Function2[/* timeText */ java.lang.String, /* inst */ js.Any, _] = null,
+    onClose: (/* timeText */ java.lang.String, /* inst */ js.Any) => _ = null,
+    onHourShow: () => _ = null,
+    onMinuteShow: () => _ = null,
+    onSelect: (/* timeText */ java.lang.String, /* inst */ js.Any) => _ = null,
     optionalMinutes: js.UndefOr[scala.Boolean] = js.undefined,
     periodSeparator: java.lang.String = null,
     rows: scala.Int | scala.Double = null,
@@ -140,7 +140,7 @@ object TimePickerOptions {
     if (amPmText != null) __obj.updateDynamic("amPmText")(amPmText)
     if (appendText != null) __obj.updateDynamic("appendText")(appendText)
     if (atPosition != null) __obj.updateDynamic("atPosition")(atPosition)
-    if (beforeShow != null) __obj.updateDynamic("beforeShow")(beforeShow)
+    if (beforeShow != null) __obj.updateDynamic("beforeShow")(js.Any.fromFunction0(beforeShow))
     if (button != null) __obj.updateDynamic("button")(button)
     if (closeButtonText != null) __obj.updateDynamic("closeButtonText")(closeButtonText)
     if (defaultTime != null) __obj.updateDynamic("defaultTime")(defaultTime)
@@ -151,10 +151,10 @@ object TimePickerOptions {
     if (minutes != null) __obj.updateDynamic("minutes")(minutes)
     if (myPosition != null) __obj.updateDynamic("myPosition")(myPosition)
     if (nowButtonText != null) __obj.updateDynamic("nowButtonText")(nowButtonText)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onHourShow != null) __obj.updateDynamic("onHourShow")(onHourShow)
-    if (onMinuteShow != null) __obj.updateDynamic("onMinuteShow")(onMinuteShow)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2(onClose))
+    if (onHourShow != null) __obj.updateDynamic("onHourShow")(js.Any.fromFunction0(onHourShow))
+    if (onMinuteShow != null) __obj.updateDynamic("onMinuteShow")(js.Any.fromFunction0(onMinuteShow))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
     if (!js.isUndefined(optionalMinutes)) __obj.updateDynamic("optionalMinutes")(optionalMinutes)
     if (periodSeparator != null) __obj.updateDynamic("periodSeparator")(periodSeparator)
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])

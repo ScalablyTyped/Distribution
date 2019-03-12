@@ -147,6 +147,6 @@ class default () extends Guide {
     * you might need to specify which which value axis should be used.
     */
   /* CompleteClass */
-  override var valueAxis: amchartsLib.valueaxisMod.default = js.native
+  override var valueAxis: amchartsLib.valueAxisMod.default = js.native
 }
 

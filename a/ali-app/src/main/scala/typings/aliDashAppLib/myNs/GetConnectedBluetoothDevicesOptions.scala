@@ -15,14 +15,14 @@ trait GetConnectedBluetoothDevicesOptions
 object GetConnectedBluetoothDevicesOptions {
   @scala.inline
   def apply(
-    success: js.Function1[aliDashAppLib.Anon_Devices with ErrMsgResponse, scala.Unit],
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
+    success: aliDashAppLib.Anon_Devices with ErrMsgResponse => scala.Unit,
+    complete: /* res */ js.Any => scala.Unit = null,
+    fail: js.Any => scala.Unit = null,
     services: js.Array[java.lang.String] = null
   ): GetConnectedBluetoothDevicesOptions = {
-    val __obj = js.Dynamic.literal(success = success)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (services != null) __obj.updateDynamic("services")(services)
     __obj.asInstanceOf[GetConnectedBluetoothDevicesOptions]
   }

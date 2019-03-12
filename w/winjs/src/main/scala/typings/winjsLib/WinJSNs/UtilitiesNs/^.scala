@@ -38,7 +38,7 @@ object ^ extends js.Object {
     * @param element The parent element.
     * @returns The collection of children of the element.
     **/
-  def children(element: stdLib.HTMLElement): winjsLib.WinJSNs.UtilitiesNs.QueryCollection[stdLib.HTMLElement] = js.native
+  def children(element: stdLib.HTMLElement): QueryCollection[stdLib.HTMLElement] = js.native
   /**
     * Converts a CSS positioning string for the specified element to pixels.
     * @param element The element.
@@ -109,7 +109,7 @@ object ^ extends js.Object {
     * @param element The element.
     * @returns An object that contains the left, top, width and height properties of the element.
     **/
-  def getPosition(element: stdLib.HTMLElement): winjsLib.WinJSNs.UtilitiesNs.IPosition = js.native
+  def getPosition(element: stdLib.HTMLElement): IPosition = js.native
   /**
     * Gets the left coordinate of the specified element relative to the specified parent.
     * @param element The element.
@@ -164,7 +164,7 @@ object ^ extends js.Object {
     * @param id The ID of the element (or elements).
     * @returns A collection of elements whose id matches the id parameter.
     **/
-  def id(id: java.lang.String): winjsLib.WinJSNs.UtilitiesNs.QueryCollection[stdLib.HTMLElement] = js.native
+  def id(id: java.lang.String): QueryCollection[stdLib.HTMLElement] = js.native
   /**
     * Calls insertAdjacentHTML on the specified element.
     * @param element The element on which insertAdjacentHTML is to be called.
@@ -198,8 +198,8 @@ object ^ extends js.Object {
     * @param element Optional. The root element at which to start the query. If this parameter is omitted, the scope of the query is the entire document.
     * @returns A QueryCollection with zero or one elements matching the specified selector query.
     **/
-  def query(query: js.Any): winjsLib.WinJSNs.UtilitiesNs.QueryCollection[stdLib.HTMLElement] = js.native
-  def query(query: js.Any, element: stdLib.HTMLElement): winjsLib.WinJSNs.UtilitiesNs.QueryCollection[stdLib.HTMLElement] = js.native
+  def query(query: js.Any): QueryCollection[stdLib.HTMLElement] = js.native
+  def query(query: js.Any, element: stdLib.HTMLElement): QueryCollection[stdLib.HTMLElement] = js.native
   /**
     * Ensures that the specified function executes only after the DOMContentLoaded event has fired for the current page. The DOMContentLoaded event occurs after the page has been parsed but before all the resources are loaded.
     * @param callback A function that executes after the DOMContentLoaded event has occurred.
@@ -257,7 +257,7 @@ object ^ extends js.Object {
     * @param options The tags for messages to log. Multiple tags should be separated by spaces. May contain type, tags, excludeTags and action properties.
     **/
   def startLog(): scala.Unit = js.native
-  def startLog(options: winjsLib.WinJSNs.UtilitiesNs.ILogOptions): scala.Unit = js.native
+  def startLog(options: ILogOptions): scala.Unit = js.native
   def startLog(tags: java.lang.String): scala.Unit = js.native
   /**
     * Removes the WinJS logger that had previously been set up.

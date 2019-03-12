@@ -46,7 +46,7 @@ object bardNs extends js.Object {
     * DO NOT USE IF YOU NEED THE REAL ROUTER SERVICES!
     * Fall back to `angular.mock.module(...)` or just `module(...)`
     */
-  def appModule(fns: (java.lang.String | angularLib.angularMod.Global.Function | chaiLib.Object)*): js.Function0[scala.Unit] = js.native
+  def appModule(fns: (java.lang.String | js.Function | js.Object)*): js.Function0[scala.Unit] = js.native
   /**
     * Assert a failure in mocha, without condition
     */
@@ -56,7 +56,7 @@ object bardNs extends js.Object {
     * Also adds fakeLogger to the end of the definition
     * Use it as you would the ngMocks#module method
     */
-  def asyncModule(fns: (java.lang.String | angularLib.angularMod.Global.Function | chaiLib.Object)*): js.Function0[scala.Unit] = js.native
+  def asyncModule(fns: (java.lang.String | js.Function | js.Object)*): js.Function0[scala.Unit] = js.native
   /**
     * Get or set bard debugging flag
     */
@@ -106,7 +106,7 @@ object bardNs extends js.Object {
     *    (...string) - string arguments turned into a string array
     */
   def inject(): scala.Unit = js.native
-  def inject(context: angularLib.angularMod.Global.Function, args: java.lang.String*): scala.Unit = js.native
+  def inject(context: js.Function, args: java.lang.String*): scala.Unit = js.native
   def inject(context: mochaLib.MochaNs.IHookCallbackContext, args: java.lang.String*): scala.Unit = js.native
   /**
     * Write to console if bard debugging flag is on
@@ -157,6 +157,6 @@ object bardNs extends js.Object {
     * The try/catch then calls the ambient "done" function
     * in the appropriate way for both success and failure
     */
-  def wrapWithDone(callback: angularLib.angularMod.Global.Function, done: angularLib.angularMod.Global.Function): angularLib.angularMod.Global.Function = js.native
+  def wrapWithDone(callback: js.Function, done: js.Function): js.Function = js.native
 }
 

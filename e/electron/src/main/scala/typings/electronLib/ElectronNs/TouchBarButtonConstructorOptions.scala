@@ -34,14 +34,14 @@ object TouchBarButtonConstructorOptions {
   @scala.inline
   def apply(
     backgroundColor: java.lang.String = null,
-    click: js.Function0[scala.Unit] = null,
+    click: () => scala.Unit = null,
     icon: NativeImage = null,
     iconPosition: electronLib.electronLibStrings.left | electronLib.electronLibStrings.right | electronLib.electronLibStrings.overlay = null,
     label: java.lang.String = null
   ): TouchBarButtonConstructorOptions = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (click != null) __obj.updateDynamic("click")(click)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction0(click))
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (iconPosition != null) __obj.updateDynamic("iconPosition")(iconPosition.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label)

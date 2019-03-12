@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   */
 trait ZipEntry extends js.Object {
   /** optional extra field data for entry */
-  var extra: activexDashInteropLib.SafeArray[scala.Double]
+  var extra: stdLib.SafeArray[scala.Double]
   /** uncompressed size of entry data */
   var nCompressedSize: scala.Double
   /** CRC-32 of entry data */
@@ -40,7 +40,7 @@ trait ZipEntry extends js.Object {
 object ZipEntry {
   @scala.inline
   def apply(
-    extra: activexDashInteropLib.SafeArray[scala.Double],
+    extra: stdLib.SafeArray[scala.Double],
     nCompressedSize: scala.Double,
     nCrc: scala.Double,
     nDiskNumber: scala.Double,

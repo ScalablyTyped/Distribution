@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var GrammarError: js.Any = js.native
-  def generate(grammar: java.lang.String): pegjsLib.pegjsMod.Parser = js.native
-  def generate(grammar: java.lang.String, options: pegjsLib.pegjsMod.OutputFormatAmdCommonjs): java.lang.String = js.native
-  def generate(grammar: java.lang.String, options: pegjsLib.pegjsMod.OutputFormatBare): java.lang.String = js.native
-  def generate(grammar: java.lang.String, options: pegjsLib.pegjsMod.OutputFormatGlobals): java.lang.String = js.native
-  def generate(grammar: java.lang.String, options: pegjsLib.pegjsMod.OutputFormatUmd): java.lang.String = js.native
-  def generate(grammar: java.lang.String, options: pegjsLib.pegjsMod.ParserBuildOptions): pegjsLib.pegjsMod.Parser = js.native
+  def generate(grammar: java.lang.String): Parser = js.native
+  def generate(grammar: java.lang.String, options: OutputFormatAmdCommonjs): java.lang.String = js.native
+  def generate(grammar: java.lang.String, options: OutputFormatBare): java.lang.String = js.native
+  def generate(grammar: java.lang.String, options: OutputFormatGlobals): java.lang.String = js.native
+  def generate(grammar: java.lang.String, options: OutputFormatUmd): java.lang.String = js.native
+  def generate(grammar: java.lang.String, options: ParserBuildOptions): Parser = js.native
 }
 

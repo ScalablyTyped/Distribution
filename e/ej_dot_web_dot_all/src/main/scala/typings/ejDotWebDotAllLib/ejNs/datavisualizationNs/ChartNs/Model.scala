@@ -279,169 +279,169 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    afterResize: js.Function1[/* e */ AfterResizeEventArgs, scala.Unit] = null,
-    animationComplete: js.Function1[/* e */ AnimationCompleteEventArgs, scala.Unit] = null,
-    annotationClick: js.Function1[/* e */ AnnotationClickEventArgs, scala.Unit] = null,
+    afterResize: /* e */ AfterResizeEventArgs => scala.Unit = null,
+    animationComplete: /* e */ AnimationCompleteEventArgs => scala.Unit = null,
+    annotationClick: /* e */ AnnotationClickEventArgs => scala.Unit = null,
     annotations: js.Array[Annotation] = null,
     axes: js.Array[Axis] = null,
-    axesLabelRendering: js.Function1[/* e */ AxesLabelRenderingEventArgs, scala.Unit] = null,
-    axesLabelsInitialize: js.Function1[/* e */ AxesLabelsInitializeEventArgs, scala.Unit] = null,
-    axesRangeCalculate: js.Function1[/* e */ AxesRangeCalculateEventArgs, scala.Unit] = null,
-    axesTitleRendering: js.Function1[/* e */ AxesTitleRenderingEventArgs, scala.Unit] = null,
-    axisLabelClick: js.Function1[/* e */ AxisLabelClickEventArgs, scala.Unit] = null,
-    axisLabelMouseMove: js.Function1[/* e */ AxisLabelMouseMoveEventArgs, scala.Unit] = null,
+    axesLabelRendering: /* e */ AxesLabelRenderingEventArgs => scala.Unit = null,
+    axesLabelsInitialize: /* e */ AxesLabelsInitializeEventArgs => scala.Unit = null,
+    axesRangeCalculate: /* e */ AxesRangeCalculateEventArgs => scala.Unit = null,
+    axesTitleRendering: /* e */ AxesTitleRenderingEventArgs => scala.Unit = null,
+    axisLabelClick: /* e */ AxisLabelClickEventArgs => scala.Unit = null,
+    axisLabelMouseMove: /* e */ AxisLabelMouseMoveEventArgs => scala.Unit = null,
     backGroundImageUrl: java.lang.String = null,
     background: java.lang.String = null,
-    beforeResize: js.Function1[/* e */ BeforeResizeEventArgs, scala.Unit] = null,
+    beforeResize: /* e */ BeforeResizeEventArgs => scala.Unit = null,
     border: Border = null,
     chartArea: ChartArea = null,
-    chartAreaBoundsCalculate: js.Function1[/* e */ ChartAreaBoundsCalculateEventArgs, scala.Unit] = null,
-    chartClick: js.Function1[/* e */ ChartClickEventArgs, scala.Unit] = null,
-    chartDoubleClick: js.Function1[/* e */ ChartDoubleClickEventArgs, scala.Unit] = null,
-    chartMouseLeave: js.Function1[/* e */ ChartMouseLeaveEventArgs, scala.Unit] = null,
-    chartMouseMove: js.Function1[/* e */ ChartMouseMoveEventArgs, scala.Unit] = null,
+    chartAreaBoundsCalculate: /* e */ ChartAreaBoundsCalculateEventArgs => scala.Unit = null,
+    chartClick: /* e */ ChartClickEventArgs => scala.Unit = null,
+    chartDoubleClick: /* e */ ChartDoubleClickEventArgs => scala.Unit = null,
+    chartMouseLeave: /* e */ ChartMouseLeaveEventArgs => scala.Unit = null,
+    chartMouseMove: /* e */ ChartMouseMoveEventArgs => scala.Unit = null,
     columnDefinitions: js.Array[ColumnDefinition] = null,
     commonSeriesOptions: CommonSeriesOptions = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     crosshair: Crosshair = null,
     depth: scala.Int | scala.Double = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
-    displayTextRendering: js.Function1[/* e */ DisplayTextRenderingEventArgs, scala.Unit] = null,
-    dragEnd: js.Function1[/* e */ DragEndEventArgs, scala.Unit] = null,
-    dragStart: js.Function1[/* e */ DragStartEventArgs, scala.Unit] = null,
-    dragging: js.Function1[/* e */ DraggingEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
+    displayTextRendering: /* e */ DisplayTextRenderingEventArgs => scala.Unit = null,
+    dragEnd: /* e */ DragEndEventArgs => scala.Unit = null,
+    dragStart: /* e */ DragStartEventArgs => scala.Unit = null,
+    dragging: /* e */ DraggingEventArgs => scala.Unit = null,
     enable3D: js.UndefOr[scala.Boolean] = js.undefined,
     enableCanvasRendering: js.UndefOr[scala.Boolean] = js.undefined,
     enableRotation: js.UndefOr[scala.Boolean] = js.undefined,
-    errorBarRendering: js.Function1[/* e */ ErrorBarRenderingEventArgs, scala.Unit] = null,
+    errorBarRendering: /* e */ ErrorBarRenderingEventArgs => scala.Unit = null,
     exportSettings: ExportSettings = null,
     indicators: js.Array[Indicator] = null,
     initSeriesRender: js.UndefOr[scala.Boolean] = js.undefined,
     isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
     legend: Legend = null,
-    legendBoundsCalculate: js.Function1[/* e */ LegendBoundsCalculateEventArgs, scala.Unit] = null,
-    legendItemClick: js.Function1[/* e */ LegendItemClickEventArgs, scala.Unit] = null,
-    legendItemMouseMove: js.Function1[/* e */ LegendItemMouseMoveEventArgs, scala.Unit] = null,
-    legendItemRendering: js.Function1[/* e */ LegendItemRenderingEventArgs, scala.Unit] = null,
-    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    legendBoundsCalculate: /* e */ LegendBoundsCalculateEventArgs => scala.Unit = null,
+    legendItemClick: /* e */ LegendItemClickEventArgs => scala.Unit = null,
+    legendItemMouseMove: /* e */ LegendItemMouseMoveEventArgs => scala.Unit = null,
+    legendItemRendering: /* e */ LegendItemRenderingEventArgs => scala.Unit = null,
+    load: /* e */ LoadEventArgs => scala.Unit = null,
     locale: java.lang.String = null,
     margin: Margin = null,
-    multiLevelLabelClick: js.Function1[/* e */ MultiLevelLabelClickEventArgs, scala.Unit] = null,
-    multiLevelLabelRendering: js.Function1[/* e */ MultiLevelLabelRenderingEventArgs, scala.Unit] = null,
+    multiLevelLabelClick: /* e */ MultiLevelLabelClickEventArgs => scala.Unit = null,
+    multiLevelLabelRendering: /* e */ MultiLevelLabelRenderingEventArgs => scala.Unit = null,
     palette: js.Array[_] = null,
     perspectiveAngle: scala.Int | scala.Double = null,
-    pointRegionClick: js.Function1[/* e */ PointRegionClickEventArgs, scala.Unit] = null,
-    pointRegionMouseMove: js.Function1[/* e */ PointRegionMouseMoveEventArgs, scala.Unit] = null,
-    preRender: js.Function1[/* e */ PreRenderEventArgs, scala.Unit] = null,
+    pointRegionClick: /* e */ PointRegionClickEventArgs => scala.Unit = null,
+    pointRegionMouseMove: /* e */ PointRegionMouseMoveEventArgs => scala.Unit = null,
+    preRender: /* e */ PreRenderEventArgs => scala.Unit = null,
     primaryXAxis: PrimaryXAxis = null,
     primaryYAxis: PrimaryYAxis = null,
-    rangeSelected: js.Function1[/* e */ RangeSelectedEventArgs, scala.Unit] = null,
+    rangeSelected: /* e */ RangeSelectedEventArgs => scala.Unit = null,
     rotation: scala.Int | scala.Double = null,
     rowDefinitions: js.Array[RowDefinition] = null,
-    scrollChanged: js.Function1[/* e */ ScrollChangedEventArgs, scala.Unit] = null,
-    scrollEnd: js.Function1[/* e */ ScrollEndEventArgs, scala.Unit] = null,
-    scrollStart: js.Function1[/* e */ ScrollStartEventArgs, scala.Unit] = null,
+    scrollChanged: /* e */ ScrollChangedEventArgs => scala.Unit = null,
+    scrollEnd: /* e */ ScrollEndEventArgs => scala.Unit = null,
+    scrollStart: /* e */ ScrollStartEventArgs => scala.Unit = null,
     selectedDataPointIndexes: js.Array[_] = null,
     series: js.Array[Series] = null,
-    seriesRegionClick: js.Function1[/* e */ SeriesRegionClickEventArgs, scala.Unit] = null,
-    seriesRendering: js.Function1[/* e */ SeriesRenderingEventArgs, scala.Unit] = null,
+    seriesRegionClick: /* e */ SeriesRegionClickEventArgs => scala.Unit = null,
+    seriesRendering: /* e */ SeriesRenderingEventArgs => scala.Unit = null,
     sideBySideSeriesPlacement: js.UndefOr[scala.Boolean] = js.undefined,
     size: Size = null,
-    subTitleRendering: js.Function1[/* e */ SubTitleRenderingEventArgs, scala.Unit] = null,
-    symbolRendering: js.Function1[/* e */ SymbolRenderingEventArgs, scala.Unit] = null,
+    subTitleRendering: /* e */ SubTitleRenderingEventArgs => scala.Unit = null,
+    symbolRendering: /* e */ SymbolRenderingEventArgs => scala.Unit = null,
     theme: Theme | java.lang.String = null,
     tilt: scala.Int | scala.Double = null,
     title: Title = null,
-    titleRendering: js.Function1[/* e */ TitleRenderingEventArgs, scala.Unit] = null,
-    toolTipInitialize: js.Function1[/* e */ ToolTipInitializeEventArgs, scala.Unit] = null,
-    trackAxisToolTip: js.Function1[/* e */ TrackAxisToolTipEventArgs, scala.Unit] = null,
-    trackToolTip: js.Function1[/* e */ TrackToolTipEventArgs, scala.Unit] = null,
-    trendlineRendering: js.Function1[/* e */ TrendlineRenderingEventArgs, scala.Unit] = null,
+    titleRendering: /* e */ TitleRenderingEventArgs => scala.Unit = null,
+    toolTipInitialize: /* e */ ToolTipInitializeEventArgs => scala.Unit = null,
+    trackAxisToolTip: /* e */ TrackAxisToolTipEventArgs => scala.Unit = null,
+    trackToolTip: /* e */ TrackToolTipEventArgs => scala.Unit = null,
+    trendlineRendering: /* e */ TrendlineRenderingEventArgs => scala.Unit = null,
     wallSize: scala.Int | scala.Double = null,
-    zoomed: js.Function1[/* e */ ZoomedEventArgs, scala.Unit] = null,
+    zoomed: /* e */ ZoomedEventArgs => scala.Unit = null,
     zooming: Zooming = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (afterResize != null) __obj.updateDynamic("afterResize")(afterResize)
-    if (animationComplete != null) __obj.updateDynamic("animationComplete")(animationComplete)
-    if (annotationClick != null) __obj.updateDynamic("annotationClick")(annotationClick)
+    if (afterResize != null) __obj.updateDynamic("afterResize")(js.Any.fromFunction1(afterResize))
+    if (animationComplete != null) __obj.updateDynamic("animationComplete")(js.Any.fromFunction1(animationComplete))
+    if (annotationClick != null) __obj.updateDynamic("annotationClick")(js.Any.fromFunction1(annotationClick))
     if (annotations != null) __obj.updateDynamic("annotations")(annotations)
     if (axes != null) __obj.updateDynamic("axes")(axes)
-    if (axesLabelRendering != null) __obj.updateDynamic("axesLabelRendering")(axesLabelRendering)
-    if (axesLabelsInitialize != null) __obj.updateDynamic("axesLabelsInitialize")(axesLabelsInitialize)
-    if (axesRangeCalculate != null) __obj.updateDynamic("axesRangeCalculate")(axesRangeCalculate)
-    if (axesTitleRendering != null) __obj.updateDynamic("axesTitleRendering")(axesTitleRendering)
-    if (axisLabelClick != null) __obj.updateDynamic("axisLabelClick")(axisLabelClick)
-    if (axisLabelMouseMove != null) __obj.updateDynamic("axisLabelMouseMove")(axisLabelMouseMove)
+    if (axesLabelRendering != null) __obj.updateDynamic("axesLabelRendering")(js.Any.fromFunction1(axesLabelRendering))
+    if (axesLabelsInitialize != null) __obj.updateDynamic("axesLabelsInitialize")(js.Any.fromFunction1(axesLabelsInitialize))
+    if (axesRangeCalculate != null) __obj.updateDynamic("axesRangeCalculate")(js.Any.fromFunction1(axesRangeCalculate))
+    if (axesTitleRendering != null) __obj.updateDynamic("axesTitleRendering")(js.Any.fromFunction1(axesTitleRendering))
+    if (axisLabelClick != null) __obj.updateDynamic("axisLabelClick")(js.Any.fromFunction1(axisLabelClick))
+    if (axisLabelMouseMove != null) __obj.updateDynamic("axisLabelMouseMove")(js.Any.fromFunction1(axisLabelMouseMove))
     if (backGroundImageUrl != null) __obj.updateDynamic("backGroundImageUrl")(backGroundImageUrl)
     if (background != null) __obj.updateDynamic("background")(background)
-    if (beforeResize != null) __obj.updateDynamic("beforeResize")(beforeResize)
+    if (beforeResize != null) __obj.updateDynamic("beforeResize")(js.Any.fromFunction1(beforeResize))
     if (border != null) __obj.updateDynamic("border")(border)
     if (chartArea != null) __obj.updateDynamic("chartArea")(chartArea)
-    if (chartAreaBoundsCalculate != null) __obj.updateDynamic("chartAreaBoundsCalculate")(chartAreaBoundsCalculate)
-    if (chartClick != null) __obj.updateDynamic("chartClick")(chartClick)
-    if (chartDoubleClick != null) __obj.updateDynamic("chartDoubleClick")(chartDoubleClick)
-    if (chartMouseLeave != null) __obj.updateDynamic("chartMouseLeave")(chartMouseLeave)
-    if (chartMouseMove != null) __obj.updateDynamic("chartMouseMove")(chartMouseMove)
+    if (chartAreaBoundsCalculate != null) __obj.updateDynamic("chartAreaBoundsCalculate")(js.Any.fromFunction1(chartAreaBoundsCalculate))
+    if (chartClick != null) __obj.updateDynamic("chartClick")(js.Any.fromFunction1(chartClick))
+    if (chartDoubleClick != null) __obj.updateDynamic("chartDoubleClick")(js.Any.fromFunction1(chartDoubleClick))
+    if (chartMouseLeave != null) __obj.updateDynamic("chartMouseLeave")(js.Any.fromFunction1(chartMouseLeave))
+    if (chartMouseMove != null) __obj.updateDynamic("chartMouseMove")(js.Any.fromFunction1(chartMouseMove))
     if (columnDefinitions != null) __obj.updateDynamic("columnDefinitions")(columnDefinitions)
     if (commonSeriesOptions != null) __obj.updateDynamic("commonSeriesOptions")(commonSeriesOptions)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (crosshair != null) __obj.updateDynamic("crosshair")(crosshair)
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (displayTextRendering != null) __obj.updateDynamic("displayTextRendering")(displayTextRendering)
-    if (dragEnd != null) __obj.updateDynamic("dragEnd")(dragEnd)
-    if (dragStart != null) __obj.updateDynamic("dragStart")(dragStart)
-    if (dragging != null) __obj.updateDynamic("dragging")(dragging)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
+    if (displayTextRendering != null) __obj.updateDynamic("displayTextRendering")(js.Any.fromFunction1(displayTextRendering))
+    if (dragEnd != null) __obj.updateDynamic("dragEnd")(js.Any.fromFunction1(dragEnd))
+    if (dragStart != null) __obj.updateDynamic("dragStart")(js.Any.fromFunction1(dragStart))
+    if (dragging != null) __obj.updateDynamic("dragging")(js.Any.fromFunction1(dragging))
     if (!js.isUndefined(enable3D)) __obj.updateDynamic("enable3D")(enable3D)
     if (!js.isUndefined(enableCanvasRendering)) __obj.updateDynamic("enableCanvasRendering")(enableCanvasRendering)
     if (!js.isUndefined(enableRotation)) __obj.updateDynamic("enableRotation")(enableRotation)
-    if (errorBarRendering != null) __obj.updateDynamic("errorBarRendering")(errorBarRendering)
+    if (errorBarRendering != null) __obj.updateDynamic("errorBarRendering")(js.Any.fromFunction1(errorBarRendering))
     if (exportSettings != null) __obj.updateDynamic("exportSettings")(exportSettings)
     if (indicators != null) __obj.updateDynamic("indicators")(indicators)
     if (!js.isUndefined(initSeriesRender)) __obj.updateDynamic("initSeriesRender")(initSeriesRender)
     if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
     if (legend != null) __obj.updateDynamic("legend")(legend)
-    if (legendBoundsCalculate != null) __obj.updateDynamic("legendBoundsCalculate")(legendBoundsCalculate)
-    if (legendItemClick != null) __obj.updateDynamic("legendItemClick")(legendItemClick)
-    if (legendItemMouseMove != null) __obj.updateDynamic("legendItemMouseMove")(legendItemMouseMove)
-    if (legendItemRendering != null) __obj.updateDynamic("legendItemRendering")(legendItemRendering)
-    if (load != null) __obj.updateDynamic("load")(load)
+    if (legendBoundsCalculate != null) __obj.updateDynamic("legendBoundsCalculate")(js.Any.fromFunction1(legendBoundsCalculate))
+    if (legendItemClick != null) __obj.updateDynamic("legendItemClick")(js.Any.fromFunction1(legendItemClick))
+    if (legendItemMouseMove != null) __obj.updateDynamic("legendItemMouseMove")(js.Any.fromFunction1(legendItemMouseMove))
+    if (legendItemRendering != null) __obj.updateDynamic("legendItemRendering")(js.Any.fromFunction1(legendItemRendering))
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (margin != null) __obj.updateDynamic("margin")(margin)
-    if (multiLevelLabelClick != null) __obj.updateDynamic("multiLevelLabelClick")(multiLevelLabelClick)
-    if (multiLevelLabelRendering != null) __obj.updateDynamic("multiLevelLabelRendering")(multiLevelLabelRendering)
+    if (multiLevelLabelClick != null) __obj.updateDynamic("multiLevelLabelClick")(js.Any.fromFunction1(multiLevelLabelClick))
+    if (multiLevelLabelRendering != null) __obj.updateDynamic("multiLevelLabelRendering")(js.Any.fromFunction1(multiLevelLabelRendering))
     if (palette != null) __obj.updateDynamic("palette")(palette)
     if (perspectiveAngle != null) __obj.updateDynamic("perspectiveAngle")(perspectiveAngle.asInstanceOf[js.Any])
-    if (pointRegionClick != null) __obj.updateDynamic("pointRegionClick")(pointRegionClick)
-    if (pointRegionMouseMove != null) __obj.updateDynamic("pointRegionMouseMove")(pointRegionMouseMove)
-    if (preRender != null) __obj.updateDynamic("preRender")(preRender)
+    if (pointRegionClick != null) __obj.updateDynamic("pointRegionClick")(js.Any.fromFunction1(pointRegionClick))
+    if (pointRegionMouseMove != null) __obj.updateDynamic("pointRegionMouseMove")(js.Any.fromFunction1(pointRegionMouseMove))
+    if (preRender != null) __obj.updateDynamic("preRender")(js.Any.fromFunction1(preRender))
     if (primaryXAxis != null) __obj.updateDynamic("primaryXAxis")(primaryXAxis)
     if (primaryYAxis != null) __obj.updateDynamic("primaryYAxis")(primaryYAxis)
-    if (rangeSelected != null) __obj.updateDynamic("rangeSelected")(rangeSelected)
+    if (rangeSelected != null) __obj.updateDynamic("rangeSelected")(js.Any.fromFunction1(rangeSelected))
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (rowDefinitions != null) __obj.updateDynamic("rowDefinitions")(rowDefinitions)
-    if (scrollChanged != null) __obj.updateDynamic("scrollChanged")(scrollChanged)
-    if (scrollEnd != null) __obj.updateDynamic("scrollEnd")(scrollEnd)
-    if (scrollStart != null) __obj.updateDynamic("scrollStart")(scrollStart)
+    if (scrollChanged != null) __obj.updateDynamic("scrollChanged")(js.Any.fromFunction1(scrollChanged))
+    if (scrollEnd != null) __obj.updateDynamic("scrollEnd")(js.Any.fromFunction1(scrollEnd))
+    if (scrollStart != null) __obj.updateDynamic("scrollStart")(js.Any.fromFunction1(scrollStart))
     if (selectedDataPointIndexes != null) __obj.updateDynamic("selectedDataPointIndexes")(selectedDataPointIndexes)
     if (series != null) __obj.updateDynamic("series")(series)
-    if (seriesRegionClick != null) __obj.updateDynamic("seriesRegionClick")(seriesRegionClick)
-    if (seriesRendering != null) __obj.updateDynamic("seriesRendering")(seriesRendering)
+    if (seriesRegionClick != null) __obj.updateDynamic("seriesRegionClick")(js.Any.fromFunction1(seriesRegionClick))
+    if (seriesRendering != null) __obj.updateDynamic("seriesRendering")(js.Any.fromFunction1(seriesRendering))
     if (!js.isUndefined(sideBySideSeriesPlacement)) __obj.updateDynamic("sideBySideSeriesPlacement")(sideBySideSeriesPlacement)
     if (size != null) __obj.updateDynamic("size")(size)
-    if (subTitleRendering != null) __obj.updateDynamic("subTitleRendering")(subTitleRendering)
-    if (symbolRendering != null) __obj.updateDynamic("symbolRendering")(symbolRendering)
+    if (subTitleRendering != null) __obj.updateDynamic("subTitleRendering")(js.Any.fromFunction1(subTitleRendering))
+    if (symbolRendering != null) __obj.updateDynamic("symbolRendering")(js.Any.fromFunction1(symbolRendering))
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (tilt != null) __obj.updateDynamic("tilt")(tilt.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
-    if (titleRendering != null) __obj.updateDynamic("titleRendering")(titleRendering)
-    if (toolTipInitialize != null) __obj.updateDynamic("toolTipInitialize")(toolTipInitialize)
-    if (trackAxisToolTip != null) __obj.updateDynamic("trackAxisToolTip")(trackAxisToolTip)
-    if (trackToolTip != null) __obj.updateDynamic("trackToolTip")(trackToolTip)
-    if (trendlineRendering != null) __obj.updateDynamic("trendlineRendering")(trendlineRendering)
+    if (titleRendering != null) __obj.updateDynamic("titleRendering")(js.Any.fromFunction1(titleRendering))
+    if (toolTipInitialize != null) __obj.updateDynamic("toolTipInitialize")(js.Any.fromFunction1(toolTipInitialize))
+    if (trackAxisToolTip != null) __obj.updateDynamic("trackAxisToolTip")(js.Any.fromFunction1(trackAxisToolTip))
+    if (trackToolTip != null) __obj.updateDynamic("trackToolTip")(js.Any.fromFunction1(trackToolTip))
+    if (trendlineRendering != null) __obj.updateDynamic("trendlineRendering")(js.Any.fromFunction1(trendlineRendering))
     if (wallSize != null) __obj.updateDynamic("wallSize")(wallSize.asInstanceOf[js.Any])
-    if (zoomed != null) __obj.updateDynamic("zoomed")(zoomed)
+    if (zoomed != null) __obj.updateDynamic("zoomed")(js.Any.fromFunction1(zoomed))
     if (zooming != null) __obj.updateDynamic("zooming")(zooming)
     __obj.asInstanceOf[Model]
   }

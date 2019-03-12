@@ -36,21 +36,17 @@ trait XTabListener
 object XTabListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    activated: js.Function1[scala.Double, scala.Unit],
-    changed: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
-      scala.Unit
-    ],
-    deactivated: js.Function1[scala.Double, scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    inserted: js.Function1[scala.Double, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removed: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    activated: scala.Double => scala.Unit,
+    changed: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]) => scala.Unit,
+    deactivated: scala.Double => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    inserted: scala.Double => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removed: scala.Double => scala.Unit
   ): XTabListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, activated = activated, changed = changed, deactivated = deactivated, disposing = disposing, inserted = inserted, queryInterface = queryInterface, release = release, removed = removed)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), activated = js.Any.fromFunction1(activated), changed = js.Any.fromFunction2(changed), deactivated = js.Any.fromFunction1(deactivated), disposing = js.Any.fromFunction1(disposing), inserted = js.Any.fromFunction1(inserted), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removed = js.Any.fromFunction1(removed))
   
     __obj.asInstanceOf[XTabListener]
   }

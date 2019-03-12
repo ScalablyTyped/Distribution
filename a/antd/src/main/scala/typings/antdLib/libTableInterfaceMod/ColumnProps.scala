@@ -65,17 +65,12 @@ object ColumnProps {
     filters: js.Array[ColumnFilterItem] = null,
     fixed: scala.Boolean | antdLib.antdLibStrings.left | antdLib.antdLibStrings.right = null,
     key: reactLib.reactMod.ReactNs.Key = null,
-    onCell: js.Function2[/* record */ T, /* rowIndex */ scala.Double, _] = null,
-    onCellClick: js.Function2[/* record */ T, /* event */ js.Any, scala.Unit] = null,
-    onFilter: js.Function2[/* value */ js.Any, /* record */ T, scala.Boolean] = null,
-    onFilterDropdownVisibleChange: js.Function1[/* visible */ scala.Boolean, scala.Unit] = null,
-    onHeaderCell: js.Function1[/* props */ ColumnProps[T], _] = null,
-    render: js.Function3[
-      /* text */ js.Any, 
-      /* record */ T, 
-      /* index */ scala.Double, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    onCell: (/* record */ T, /* rowIndex */ scala.Double) => _ = null,
+    onCellClick: (/* record */ T, /* event */ js.Any) => scala.Unit = null,
+    onFilter: (/* value */ js.Any, /* record */ T) => scala.Boolean = null,
+    onFilterDropdownVisibleChange: /* visible */ scala.Boolean => scala.Unit = null,
+    onHeaderCell: /* props */ ColumnProps[T] => _ = null,
+    render: (/* text */ js.Any, /* record */ T, /* index */ scala.Double) => reactLib.reactMod.ReactNs.ReactNode = null,
     sortDirections: js.Array[SortOrder] = null,
     sortOrder: SortOrder | scala.Boolean = null,
     sorter: scala.Boolean | CompareFn[T] = null,
@@ -97,12 +92,12 @@ object ColumnProps {
     if (filters != null) __obj.updateDynamic("filters")(filters)
     if (fixed != null) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (onCell != null) __obj.updateDynamic("onCell")(onCell)
-    if (onCellClick != null) __obj.updateDynamic("onCellClick")(onCellClick)
-    if (onFilter != null) __obj.updateDynamic("onFilter")(onFilter)
-    if (onFilterDropdownVisibleChange != null) __obj.updateDynamic("onFilterDropdownVisibleChange")(onFilterDropdownVisibleChange)
-    if (onHeaderCell != null) __obj.updateDynamic("onHeaderCell")(onHeaderCell)
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (onCell != null) __obj.updateDynamic("onCell")(js.Any.fromFunction2(onCell))
+    if (onCellClick != null) __obj.updateDynamic("onCellClick")(js.Any.fromFunction2(onCellClick))
+    if (onFilter != null) __obj.updateDynamic("onFilter")(js.Any.fromFunction2(onFilter))
+    if (onFilterDropdownVisibleChange != null) __obj.updateDynamic("onFilterDropdownVisibleChange")(js.Any.fromFunction1(onFilterDropdownVisibleChange))
+    if (onHeaderCell != null) __obj.updateDynamic("onHeaderCell")(js.Any.fromFunction1(onHeaderCell))
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction3(render))
     if (sortDirections != null) __obj.updateDynamic("sortDirections")(sortDirections)
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     if (sorter != null) __obj.updateDynamic("sorter")(sorter.asInstanceOf[js.Any])

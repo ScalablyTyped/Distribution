@@ -11,25 +11,25 @@ object ^ extends js.Object {
   var binding: js.Function3[
     /* data */ js.Any, 
     /* view */ stdLib.HTMLElement, 
-    /* instruction */ durandalLib.binderMod.BindingInstruction, 
+    /* instruction */ BindingInstruction, 
     scala.Unit
   ] = js.native
   var bindingComplete: js.Function3[
     /* data */ js.Any, 
     /* view */ stdLib.HTMLElement, 
-    /* instruction */ durandalLib.binderMod.BindingInstruction, 
+    /* instruction */ BindingInstruction, 
     scala.Unit
   ] = js.native
   var throwOnErrors: scala.Boolean = js.native
-  def bind(obj: js.Any, view: stdLib.HTMLElement): durandalLib.binderMod.BindingInstruction = js.native
-  def bindContext(bindingContext: knockoutLib.KnockoutBindingContext, view: stdLib.HTMLElement): durandalLib.binderMod.BindingInstruction = js.native
-  def bindContext(bindingContext: knockoutLib.KnockoutBindingContext, view: stdLib.HTMLElement, obj: js.Any): durandalLib.binderMod.BindingInstruction = js.native
+  def bind(obj: js.Any, view: stdLib.HTMLElement): BindingInstruction = js.native
+  def bindContext(bindingContext: knockoutLib.KnockoutBindingContext, view: stdLib.HTMLElement): BindingInstruction = js.native
+  def bindContext(bindingContext: knockoutLib.KnockoutBindingContext, view: stdLib.HTMLElement, obj: js.Any): BindingInstruction = js.native
   def bindContext(
     bindingContext: knockoutLib.KnockoutBindingContext,
     view: stdLib.HTMLElement,
     obj: js.Any,
     dataAlias: java.lang.String
-  ): durandalLib.binderMod.BindingInstruction = js.native
-  def getBindingInstruction(view: stdLib.HTMLElement): durandalLib.binderMod.BindingInstruction = js.native
+  ): BindingInstruction = js.native
+  def getBindingInstruction(view: stdLib.HTMLElement): BindingInstruction = js.native
 }
 

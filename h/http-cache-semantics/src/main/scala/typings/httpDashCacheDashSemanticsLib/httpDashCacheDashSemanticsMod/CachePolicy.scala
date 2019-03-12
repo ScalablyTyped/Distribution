@@ -68,29 +68,15 @@ trait CachePolicy extends js.Object {
 object CachePolicy {
   @scala.inline
   def apply(
-    responseHeaders: js.Function0[
-      httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Headers
-    ],
-    revalidatedPolicy: js.Function2[
-      httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Request, 
-      httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Response, 
-      httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.RevalidationPolicy
-    ],
-    revalidationHeaders: js.Function1[
-      httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Request, 
-      httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Headers
-    ],
-    satisfiesWithoutRevalidation: js.Function1[
-      httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Request, 
-      scala.Boolean
-    ],
-    storable: js.Function0[scala.Boolean],
-    timeToLive: js.Function0[scala.Double],
-    toObject: js.Function0[
-      httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.CachePolicyObject
-    ]
+    responseHeaders: () => httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Headers,
+    revalidatedPolicy: (httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Request, httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Response) => httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.RevalidationPolicy,
+    revalidationHeaders: httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Request => httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Headers,
+    satisfiesWithoutRevalidation: httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Request => scala.Boolean,
+    storable: () => scala.Boolean,
+    timeToLive: () => scala.Double,
+    toObject: () => httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.CachePolicyObject
   ): CachePolicy = {
-    val __obj = js.Dynamic.literal(responseHeaders = responseHeaders, revalidatedPolicy = revalidatedPolicy, revalidationHeaders = revalidationHeaders, satisfiesWithoutRevalidation = satisfiesWithoutRevalidation, storable = storable, timeToLive = timeToLive, toObject = toObject)
+    val __obj = js.Dynamic.literal(responseHeaders = js.Any.fromFunction0(responseHeaders), revalidatedPolicy = js.Any.fromFunction2(revalidatedPolicy), revalidationHeaders = js.Any.fromFunction1(revalidationHeaders), satisfiesWithoutRevalidation = js.Any.fromFunction1(satisfiesWithoutRevalidation), storable = js.Any.fromFunction0(storable), timeToLive = js.Any.fromFunction0(timeToLive), toObject = js.Any.fromFunction0(toObject))
   
     __obj.asInstanceOf[CachePolicy]
   }

@@ -50,20 +50,20 @@ trait SagaMonitor extends js.Object {
 object SagaMonitor {
   @scala.inline
   def apply(
-    actionDispatched: js.Function1[/* action */ reduxLib.reduxMod.Action[_], scala.Unit] = null,
-    effectCancelled: js.Function1[/* effectId */ scala.Double, scala.Unit] = null,
-    effectRejected: js.Function2[/* effectId */ scala.Double, /* error */ js.Any, scala.Unit] = null,
-    effectResolved: js.Function2[/* effectId */ scala.Double, /* result */ js.Any, scala.Unit] = null,
-    effectTriggered: js.Function1[/* options */ atReduxDashSagaCoreLib.Anon_Effect, scala.Unit] = null,
-    rootSagaStarted: js.Function1[/* options */ atReduxDashSagaCoreLib.Anon_Args, scala.Unit] = null
+    actionDispatched: /* action */ reduxLib.reduxMod.Action[_] => scala.Unit = null,
+    effectCancelled: /* effectId */ scala.Double => scala.Unit = null,
+    effectRejected: (/* effectId */ scala.Double, /* error */ js.Any) => scala.Unit = null,
+    effectResolved: (/* effectId */ scala.Double, /* result */ js.Any) => scala.Unit = null,
+    effectTriggered: /* options */ atReduxDashSagaCoreLib.Anon_Effect => scala.Unit = null,
+    rootSagaStarted: /* options */ atReduxDashSagaCoreLib.Anon_Args => scala.Unit = null
   ): SagaMonitor = {
     val __obj = js.Dynamic.literal()
-    if (actionDispatched != null) __obj.updateDynamic("actionDispatched")(actionDispatched)
-    if (effectCancelled != null) __obj.updateDynamic("effectCancelled")(effectCancelled)
-    if (effectRejected != null) __obj.updateDynamic("effectRejected")(effectRejected)
-    if (effectResolved != null) __obj.updateDynamic("effectResolved")(effectResolved)
-    if (effectTriggered != null) __obj.updateDynamic("effectTriggered")(effectTriggered)
-    if (rootSagaStarted != null) __obj.updateDynamic("rootSagaStarted")(rootSagaStarted)
+    if (actionDispatched != null) __obj.updateDynamic("actionDispatched")(js.Any.fromFunction1(actionDispatched))
+    if (effectCancelled != null) __obj.updateDynamic("effectCancelled")(js.Any.fromFunction1(effectCancelled))
+    if (effectRejected != null) __obj.updateDynamic("effectRejected")(js.Any.fromFunction2(effectRejected))
+    if (effectResolved != null) __obj.updateDynamic("effectResolved")(js.Any.fromFunction2(effectResolved))
+    if (effectTriggered != null) __obj.updateDynamic("effectTriggered")(js.Any.fromFunction1(effectTriggered))
+    if (rootSagaStarted != null) __obj.updateDynamic("rootSagaStarted")(js.Any.fromFunction1(rootSagaStarted))
     __obj.asInstanceOf[SagaMonitor]
   }
 }

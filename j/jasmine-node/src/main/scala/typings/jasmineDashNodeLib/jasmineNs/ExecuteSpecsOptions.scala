@@ -27,7 +27,7 @@ object ExecuteSpecsOptions {
     includeStackTrace: js.UndefOr[scala.Boolean] = js.undefined,
     isVerbose: js.UndefOr[scala.Boolean] = js.undefined,
     junitreport: jasmineDashNodeLib.Anon_Consolidate = null,
-    onComplete: js.Function1[/* runner */ jasmineLib.jasmineNs.Runner, scala.Unit] = null,
+    onComplete: /* runner */ jasmineLib.jasmineNs.Runner => scala.Unit = null,
     showColors: js.UndefOr[scala.Boolean] = js.undefined,
     teamcity: java.lang.String | scala.Boolean = null,
     useRequireJs: js.UndefOr[scala.Boolean] = js.undefined
@@ -37,7 +37,7 @@ object ExecuteSpecsOptions {
     if (!js.isUndefined(includeStackTrace)) __obj.updateDynamic("includeStackTrace")(includeStackTrace)
     if (!js.isUndefined(isVerbose)) __obj.updateDynamic("isVerbose")(isVerbose)
     if (junitreport != null) __obj.updateDynamic("junitreport")(junitreport)
-    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
     if (!js.isUndefined(showColors)) __obj.updateDynamic("showColors")(showColors)
     if (teamcity != null) __obj.updateDynamic("teamcity")(teamcity.asInstanceOf[js.Any])
     if (!js.isUndefined(useRequireJs)) __obj.updateDynamic("useRequireJs")(useRequireJs)

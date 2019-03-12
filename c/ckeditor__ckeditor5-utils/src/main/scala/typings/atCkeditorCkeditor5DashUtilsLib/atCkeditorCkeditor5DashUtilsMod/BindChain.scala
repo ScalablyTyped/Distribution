@@ -13,14 +13,10 @@ trait BindChain extends js.Object {
 object BindChain {
   @scala.inline
   def apply(
-    to: js.Function2[Observable, /* repeated */ Observable | java.lang.String | js.Function, scala.Unit],
-    toMany: js.Function2[
-      js.Array[Observable], 
-      /* repeated */ Observable | java.lang.String | js.Function, 
-      scala.Unit
-    ]
+    to: (Observable, /* repeated */ Observable | java.lang.String | js.Function) => scala.Unit,
+    toMany: (js.Array[Observable], /* repeated */ Observable | java.lang.String | js.Function) => scala.Unit
   ): BindChain = {
-    val __obj = js.Dynamic.literal(to = to, toMany = toMany)
+    val __obj = js.Dynamic.literal(to = js.Any.fromFunction2(to), toMany = js.Any.fromFunction2(toMany))
   
     __obj.asInstanceOf[BindChain]
   }

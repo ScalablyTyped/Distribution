@@ -27,7 +27,7 @@ object OverviewMapOptions {
     collapsible: js.UndefOr[scala.Boolean] = js.undefined,
     label: java.lang.String | stdLib.Node = null,
     layers: js.Array[openlayersLib.openlayersMod.layerNs.Layer] | openlayersLib.openlayersMod.Collection[openlayersLib.openlayersMod.layerNs.Layer] = null,
-    render: js.Function1[/* event */ openlayersLib.openlayersMod.MapEvent, _] = null,
+    render: /* event */ openlayersLib.openlayersMod.MapEvent => _ = null,
     target: stdLib.Element = null,
     tipLabel: java.lang.String = null,
     view: openlayersLib.openlayersMod.View = null
@@ -38,7 +38,7 @@ object OverviewMapOptions {
     if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (target != null) __obj.updateDynamic("target")(target)
     if (tipLabel != null) __obj.updateDynamic("tipLabel")(tipLabel)
     if (view != null) __obj.updateDynamic("view")(view)

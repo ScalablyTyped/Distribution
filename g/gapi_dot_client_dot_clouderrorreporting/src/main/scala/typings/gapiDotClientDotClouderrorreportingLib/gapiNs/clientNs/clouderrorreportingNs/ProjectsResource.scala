@@ -16,15 +16,12 @@ trait ProjectsResource extends js.Object {
 object ProjectsResource {
   @scala.inline
   def apply(
-    deleteEvents: js.Function1[
-      gapiDotClientDotClouderrorreportingLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
+    deleteEvents: gapiDotClientDotClouderrorreportingLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
     events: EventsResource,
     groupStats: GroupStatsResource,
     groups: GroupsResource
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal(deleteEvents = deleteEvents, events = events, groupStats = groupStats, groups = groups)
+    val __obj = js.Dynamic.literal(deleteEvents = js.Any.fromFunction1(deleteEvents), events = events, groupStats = groupStats, groups = groups)
   
     __obj.asInstanceOf[ProjectsResource]
   }

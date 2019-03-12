@@ -35,7 +35,7 @@ object ClientOptions {
     agent: nodeLib.httpMod.Agent = null,
     ca: CertMeta = null,
     cert: CertMeta = null,
-    checkServerIdentity: js.Function2[/* servername */ java.lang.String, /* cert */ CertMeta, scala.Boolean] = null,
+    checkServerIdentity: (/* servername */ java.lang.String, /* cert */ CertMeta) => scala.Boolean = null,
     ciphers: java.lang.String = null,
     family: scala.Int | scala.Double = null,
     handshakeTimeout: scala.Int | scala.Double = null,
@@ -56,7 +56,7 @@ object ClientOptions {
     if (agent != null) __obj.updateDynamic("agent")(agent)
     if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(checkServerIdentity)
+    if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(js.Any.fromFunction2(checkServerIdentity))
     if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
     if (handshakeTimeout != null) __obj.updateDynamic("handshakeTimeout")(handshakeTimeout.asInstanceOf[js.Any])

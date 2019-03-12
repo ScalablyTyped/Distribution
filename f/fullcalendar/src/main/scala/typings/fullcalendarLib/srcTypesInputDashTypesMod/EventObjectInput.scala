@@ -12,7 +12,7 @@ trait EventObjectInput
   var _id: js.UndefOr[java.lang.String] = js.undefined
   var allDay: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var source: js.UndefOr[fullcalendarLib.eventsourceMod.default] = js.undefined
+  var source: js.UndefOr[fullcalendarLib.eventSourceMod.default] = js.undefined
   var title: java.lang.String
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -35,7 +35,7 @@ object EventObjectInput {
     id: java.lang.String | scala.Double = null,
     overlap: js.UndefOr[scala.Boolean] = js.undefined,
     rendering: java.lang.String = null,
-    source: fullcalendarLib.eventsourceMod.default = null,
+    source: fullcalendarLib.eventSourceMod.default = null,
     start: MomentInput = null,
     startEditable: js.UndefOr[scala.Boolean] = js.undefined,
     textColor: java.lang.String = null,

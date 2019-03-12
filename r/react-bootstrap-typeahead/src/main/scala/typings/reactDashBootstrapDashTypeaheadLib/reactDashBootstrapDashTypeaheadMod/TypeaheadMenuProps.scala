@@ -14,7 +14,7 @@ object TypeaheadMenuProps {
     id: java.lang.String,
     className: java.lang.String = null,
     emptyLabel: java.lang.String = null,
-    innerRef: reactLib.reactMod.ReactNs.LegacyRef[reactLib.HTMLUListElement] = null,
+    innerRef: reactLib.reactMod.ReactNs.LegacyRef[stdLib.HTMLUListElement] = null,
     maxHeight: java.lang.String = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     text: java.lang.String = null

@@ -22,12 +22,8 @@ trait Anon_Any extends js.Object {
 
 object Anon_Any {
   @scala.inline
-  def apply(
-    any: js.Function1[js.Any, scala.Double],
-    cm: js.Function1[js.Any, scala.Double],
-    kg: js.Function1[js.Any, scala.Double]
-  ): Anon_Any = {
-    val __obj = js.Dynamic.literal(any = any, cm = cm, kg = kg)
+  def apply(any: js.Any => scala.Double, cm: js.Any => scala.Double, kg: js.Any => scala.Double): Anon_Any = {
+    val __obj = js.Dynamic.literal(any = js.Any.fromFunction1(any), cm = js.Any.fromFunction1(cm), kg = js.Any.fromFunction1(kg))
   
     __obj.asInstanceOf[Anon_Any]
   }

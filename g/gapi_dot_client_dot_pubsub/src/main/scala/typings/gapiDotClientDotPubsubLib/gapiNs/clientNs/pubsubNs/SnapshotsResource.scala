@@ -32,20 +32,11 @@ trait SnapshotsResource extends js.Object {
 object SnapshotsResource {
   @scala.inline
   def apply(
-    getIamPolicy: js.Function1[
-      gapiDotClientDotPubsubLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    setIamPolicy: js.Function1[
-      gapiDotClientDotPubsubLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    testIamPermissions: js.Function1[
-      gapiDotClientDotPubsubLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
-    ]
+    getIamPolicy: gapiDotClientDotPubsubLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    setIamPolicy: gapiDotClientDotPubsubLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    testIamPermissions: gapiDotClientDotPubsubLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
   ): SnapshotsResource = {
-    val __obj = js.Dynamic.literal(getIamPolicy = getIamPolicy, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions)
+    val __obj = js.Dynamic.literal(getIamPolicy = js.Any.fromFunction1(getIamPolicy), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions))
   
     __obj.asInstanceOf[SnapshotsResource]
   }

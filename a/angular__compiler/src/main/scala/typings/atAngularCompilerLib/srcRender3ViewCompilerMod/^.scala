@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/render3/view/compiler", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def compileBaseDefFromMetadata(meta: atAngularCompilerLib.srcRender3ViewCompilerMod.R3BaseRefMetaData): atAngularCompilerLib.Anon_ExpressionType = js.native
+  def compileBaseDefFromMetadata(meta: R3BaseRefMetaData): atAngularCompilerLib.Anon_ExpressionType = js.native
   def compileComponentFromMetadata(
     meta: atAngularCompilerLib.srcRender3ViewApiMod.R3ComponentMetadata,
     constantPool: atAngularCompilerLib.srcConstantUnderscorePoolMod.ConstantPool,

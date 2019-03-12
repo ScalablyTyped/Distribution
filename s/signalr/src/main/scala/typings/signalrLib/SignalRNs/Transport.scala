@@ -23,21 +23,16 @@ trait Transport extends js.Object {
 object Transport {
   @scala.inline
   def apply(
-    abort: js.Function2[Connection, scala.Boolean, scala.Unit],
-    lostConnection: js.Function1[Connection, scala.Unit],
+    abort: (Connection, scala.Boolean) => scala.Unit,
+    lostConnection: Connection => scala.Unit,
     name: java.lang.String,
-    reconnect: js.Function1[Connection, scala.Unit],
-    send: js.Function2[Connection, js.Any, scala.Unit],
-    start: js.Function3[
-      Connection, 
-      js.Function0[scala.Unit], 
-      js.Function1[/* error */ js.UndefOr[ConnectionError], scala.Unit], 
-      scala.Unit
-    ],
-    stop: js.Function1[Connection, scala.Unit],
-    supportsKeepAlive: js.Function0[scala.Boolean]
+    reconnect: Connection => scala.Unit,
+    send: (Connection, js.Any) => scala.Unit,
+    start: (Connection, js.Function0[scala.Unit], js.Function1[/* error */ js.UndefOr[ConnectionError], scala.Unit]) => scala.Unit,
+    stop: Connection => scala.Unit,
+    supportsKeepAlive: () => scala.Boolean
   ): Transport = {
-    val __obj = js.Dynamic.literal(abort = abort, lostConnection = lostConnection, name = name, reconnect = reconnect, send = send, start = start, stop = stop, supportsKeepAlive = supportsKeepAlive)
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction2(abort), lostConnection = js.Any.fromFunction1(lostConnection), name = name, reconnect = js.Any.fromFunction1(reconnect), send = js.Any.fromFunction2(send), start = js.Any.fromFunction3(start), stop = js.Any.fromFunction1(stop), supportsKeepAlive = js.Any.fromFunction0(supportsKeepAlive))
   
     __obj.asInstanceOf[Transport]
   }

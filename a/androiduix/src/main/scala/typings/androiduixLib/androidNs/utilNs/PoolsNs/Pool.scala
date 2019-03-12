@@ -12,8 +12,8 @@ trait Pool[T] extends js.Object {
 
 object Pool {
   @scala.inline
-  def apply[T](acquire: js.Function0[T], release: js.Function1[T, scala.Boolean]): Pool[T] = {
-    val __obj = js.Dynamic.literal(acquire = acquire, release = release)
+  def apply[T](acquire: () => T, release: T => scala.Boolean): Pool[T] = {
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), release = js.Any.fromFunction1(release))
   
     __obj.asInstanceOf[Pool[T]]
   }

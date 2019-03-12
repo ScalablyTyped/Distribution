@@ -55,11 +55,11 @@ object XLogFormatter {
   def apply(
     Head: java.lang.String,
     Tail: java.lang.String,
-    format: js.Function1[LogRecord, java.lang.String],
-    getHead: js.Function0[java.lang.String],
-    getTail: js.Function0[java.lang.String]
+    format: LogRecord => java.lang.String,
+    getHead: () => java.lang.String,
+    getTail: () => java.lang.String
   ): XLogFormatter = {
-    val __obj = js.Dynamic.literal(Head = Head, Tail = Tail, format = format, getHead = getHead, getTail = getTail)
+    val __obj = js.Dynamic.literal(Head = Head, Tail = Tail, format = js.Any.fromFunction1(format), getHead = js.Any.fromFunction0(getHead), getTail = js.Any.fromFunction0(getTail))
   
     __obj.asInstanceOf[XLogFormatter]
   }

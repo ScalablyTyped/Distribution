@@ -23,32 +23,14 @@ trait ClustersResource extends js.Object {
 object ClustersResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotDataprocLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotDataprocLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    diagnose: js.Function1[
-      gapiDotClientDotDataprocLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotDataprocLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Cluster]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDataprocLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListClustersResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotDataprocLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    create: gapiDotClientDotDataprocLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    delete: gapiDotClientDotDataprocLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    diagnose: gapiDotClientDotDataprocLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotDataprocLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[Cluster],
+    list: gapiDotClientDotDataprocLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ListClustersResponse],
+    patch: gapiDotClientDotDataprocLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): ClustersResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, diagnose = diagnose, get = get, list = list, patch = patch)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), diagnose = js.Any.fromFunction1(diagnose), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch))
   
     __obj.asInstanceOf[ClustersResource]
   }

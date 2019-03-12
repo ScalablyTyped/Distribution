@@ -16,9 +16,9 @@ trait removeFromCollectionOptions extends js.Object {
 
 object removeFromCollectionOptions {
   @scala.inline
-  def apply(query: js.Function0[scala.Unit] = null): removeFromCollectionOptions = {
+  def apply(query: () => scala.Unit = null): removeFromCollectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction0(query))
     __obj.asInstanceOf[removeFromCollectionOptions]
   }
 }

@@ -18,11 +18,11 @@ object ContentInfo {
   def apply(
     content: js.Any,
     contentType: java.lang.String,
-    fromSchema: js.Function1[js.Any, scala.Unit],
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    fromSchema: js.Any => scala.Unit,
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): ContentInfo = {
-    val __obj = js.Dynamic.literal(content = content, contentType = contentType, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(content = content, contentType = contentType, fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[ContentInfo]
   }

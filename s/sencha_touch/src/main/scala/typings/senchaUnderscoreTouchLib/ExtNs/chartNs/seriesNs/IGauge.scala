@@ -177,118 +177,326 @@ trait IGauge extends ISeries {
 object IGauge {
   @scala.inline
   def apply(
-    ISeries: ISeries = null,
+    addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    addEvents: /* eventNames */ js.UndefOr[js.Any] => scala.Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
+    alternateClassName: js.Any = null,
     angleField: java.lang.String = null,
+    animate: js.Any = null,
+    background: js.Any = null,
+    bubbleEvents: js.Any = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
+    clearListeners: () => scala.Unit = null,
     colors: senchaUnderscoreTouchLib.ExtNs.Array = null,
+    config: js.Any = null,
+    destroy: () => scala.Unit = null,
     donut: scala.Int | scala.Double = null,
+    enableBubble: /* events */ js.UndefOr[js.Any] => scala.Unit = null,
+    extend: java.lang.String = null,
     field: java.lang.String = null,
-    getAngleField: js.Function0[java.lang.String] = null,
-    getCenter: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getColors: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getDonut: js.Function0[scala.Double] = null,
-    getField: js.Function0[java.lang.String] = null,
-    getMaximum: js.Function0[scala.Double] = null,
-    getMinimum: js.Function0[scala.Double] = null,
-    getNeedle: js.Function0[scala.Boolean] = null,
-    getNeedleLength: js.Function0[scala.Double] = null,
-    getNeedleLengthRatio: js.Function0[scala.Double] = null,
-    getNeedleWidth: js.Function0[scala.Double] = null,
-    getRadius: js.Function0[scala.Double] = null,
-    getRegion: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getRotation: js.Function0[scala.Double] = null,
-    getSectors: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getShowInLegend: js.Function0[scala.Boolean] = null,
-    getSprites: js.Function0[scala.Unit] = null,
-    getTotalAngle: js.Function0[_] = null,
-    getValue: js.Function0[scala.Double] = null,
-    getWholeDisk: js.Function0[scala.Boolean] = null,
+    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => scala.Boolean = null,
+    getAngleField: () => java.lang.String = null,
+    getAnimate: () => _ = null,
+    getBackground: () => _ = null,
+    getBubbleEvents: () => _ = null,
+    getCenter: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getColors: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getDonut: () => scala.Double = null,
+    getField: () => java.lang.String = null,
+    getHidden: () => _ = null,
+    getHighlightCfg: () => _ = null,
+    getHighlightItem: () => _ = null,
+    getId: () => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getItemForPoint: (/* x */ js.UndefOr[scala.Double], /* y */ js.UndefOr[scala.Double], /* target */ js.UndefOr[js.Any]) => _ = null,
+    getItemInstancing: () => _ = null,
+    getLabel: () => _ = null,
+    getLabelField: () => _ = null,
+    getLabelOverflowPadding: () => scala.Double = null,
+    getListeners: () => _ = null,
+    getMarker: () => _ = null,
+    getMarkerSubStyle: () => _ = null,
+    getMaximum: () => scala.Double = null,
+    getMinimum: () => scala.Double = null,
+    getNeedle: () => scala.Boolean = null,
+    getNeedleLength: () => scala.Double = null,
+    getNeedleLengthRatio: () => scala.Double = null,
+    getNeedleWidth: () => scala.Double = null,
+    getOverlaySurface: () => _ = null,
+    getRadius: () => scala.Double = null,
+    getRegion: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getRenderer: () => _ = null,
+    getRotation: () => scala.Double = null,
+    getSectors: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getShowInLegend: () => scala.Boolean = null,
+    getSprites: () => scala.Unit = null,
+    getStyle: () => _ = null,
+    getSubStyle: () => _ = null,
+    getSurface: () => _ = null,
+    getTitle: () => java.lang.String = null,
+    getTotalAngle: () => _ = null,
+    getValue: () => scala.Double = null,
+    getWholeDisk: () => scala.Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[java.lang.String] => scala.Boolean = null,
+    hidden: js.Any = null,
+    highlightCfg: js.Any = null,
+    highlightItem: js.Any = null,
+    inheritableStatics: js.Any = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
+    itemInstancing: js.Any = null,
+    label: js.Any = null,
+    labelField: js.Any = null,
+    labelOverflowPadding: scala.Int | scala.Double = null,
+    listeners: js.Any = null,
+    marker: js.Any = null,
+    markerSubStyle: js.Any = null,
     maximum: scala.Int | scala.Double = null,
     minimum: scala.Int | scala.Double = null,
+    mixins: js.Any = null,
+    mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
     needle: js.UndefOr[scala.Boolean] = js.undefined,
     needleLength: scala.Int | scala.Double = null,
     needleLengthRatio: scala.Int | scala.Double = null,
     needleWidth: scala.Int | scala.Double = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    overlaySurface: js.Any = null,
+    platformConfig: js.Any = null,
+    provideLegendInfo: /* target */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
+    relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => senchaUnderscoreTouchLib.ExtNs.mixinNs.IObservable = null,
+    removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    renderer: js.Any = null,
+    resumeEvents: /* discardQueuedEvents */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     sectors: senchaUnderscoreTouchLib.ExtNs.Array = null,
+    self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
     seriesType: java.lang.String = null,
-    setAngleField: js.Function1[/* angleField */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setCenter: js.Function1[/* center */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
-    setColors: js.Function1[/* colors */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
-    setDonut: js.Function1[/* donut */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setField: js.Function1[/* field */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setMaximum: js.Function1[/* maximum */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setMinimum: js.Function1[/* minimum */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setNeedle: js.Function1[/* needle */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setNeedleLength: js.Function1[/* needleLength */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setNeedleLengthRatio: js.Function1[/* needleLengthRatio */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setNeedleWidth: js.Function1[/* needleWidth */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setRadius: js.Function1[/* radius */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setRegion: js.Function1[/* region */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
-    setRotation: js.Function1[/* rotation */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setSectors: js.Function1[/* sectors */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
-    setShowInLegend: js.Function1[/* showInLegend */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setTotalAngle: js.Function1[/* totalAngle */ js.UndefOr[js.Any], scala.Unit] = null,
-    setValue: js.Function1[/* value */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setWholeDisk: js.Function1[/* wholeDisk */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setAngleField: /* angleField */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setAnimate: /* animate */ js.UndefOr[js.Any] => scala.Unit = null,
+    setBackground: /* background */ js.UndefOr[js.Any] => scala.Unit = null,
+    setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => scala.Unit = null,
+    setCenter: /* center */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
+    setColors: /* colors */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
+    setDonut: /* donut */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setField: /* field */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setHidden: /* hidden */ js.UndefOr[js.Any] => scala.Unit = null,
+    setHiddenByIndex: (/* index */ js.UndefOr[scala.Double], /* value */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
+    setHighlightCfg: /* highlightCfg */ js.UndefOr[js.Any] => scala.Unit = null,
+    setHighlightItem: /* highlightItem */ js.UndefOr[js.Any] => scala.Unit = null,
+    setItemInstancing: /* itemInstancing */ js.UndefOr[js.Any] => scala.Unit = null,
+    setLabel: /* label */ js.UndefOr[js.Any] => _ = null,
+    setLabelField: /* labelField */ js.UndefOr[js.Any] => scala.Unit = null,
+    setLabelOverflowPadding: /* labelOverflowPadding */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setListeners: /* listeners */ js.UndefOr[js.Any] => scala.Unit = null,
+    setMarker: /* marker */ js.UndefOr[js.Any] => scala.Unit = null,
+    setMarkerSubStyle: /* markerSubStyle */ js.UndefOr[js.Any] => scala.Unit = null,
+    setMaximum: /* maximum */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setMinimum: /* minimum */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setNeedle: /* needle */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setNeedleLength: /* needleLength */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setNeedleLengthRatio: /* needleLengthRatio */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setNeedleWidth: /* needleWidth */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setOverlaySurface: /* overlaySurface */ js.UndefOr[js.Any] => scala.Unit = null,
+    setRadius: /* radius */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setRegion: /* region */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
+    setRenderer: /* renderer */ js.UndefOr[js.Any] => _ = null,
+    setRotation: /* rotation */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setSectors: /* sectors */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
+    setShowInLegend: /* showInLegend */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setStore: /* store */ js.UndefOr[js.Any] => scala.Unit = null,
+    setStyle: /* style */ js.UndefOr[js.Any] => scala.Unit = null,
+    setSubStyle: /* subStyle */ js.UndefOr[js.Any] => scala.Unit = null,
+    setSurface: /* surface */ js.UndefOr[js.Any] => scala.Unit = null,
+    setTitle: /* title */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setTotalAngle: /* totalAngle */ js.UndefOr[js.Any] => scala.Unit = null,
+    setValue: /* value */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setWholeDisk: /* wholeDisk */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     showInLegend: js.UndefOr[scala.Boolean] = js.undefined,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    statics: js.Any = null,
+    store: js.Any = null,
+    style: js.Any = null,
+    subStyle: js.Any = null,
+    surface: js.Any = null,
+    suspendEvents: () => scala.Unit = null,
+    title: java.lang.String = null,
     `type`: java.lang.String = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => scala.Unit = null,
+    unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    uses: senchaUnderscoreTouchLib.ExtNs.Array = null,
     value: scala.Int | scala.Double = null,
     wholeDisk: js.UndefOr[scala.Boolean] = js.undefined
   ): IGauge = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ISeries)
+    if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4(addAfterListener))
+    if (addBeforeListener != null) __obj.updateDynamic("addBeforeListener")(js.Any.fromFunction4(addBeforeListener))
+    if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
+    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction5(addListener))
+    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
     if (angleField != null) __obj.updateDynamic("angleField")(angleField)
+    if (animate != null) __obj.updateDynamic("animate")(animate)
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
+    if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
     if (colors != null) __obj.updateDynamic("colors")(colors)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (donut != null) __obj.updateDynamic("donut")(donut.asInstanceOf[js.Any])
+    if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
+    if (extend != null) __obj.updateDynamic("extend")(extend)
     if (field != null) __obj.updateDynamic("field")(field)
-    if (getAngleField != null) __obj.updateDynamic("getAngleField")(getAngleField)
-    if (getCenter != null) __obj.updateDynamic("getCenter")(getCenter)
-    if (getColors != null) __obj.updateDynamic("getColors")(getColors)
-    if (getDonut != null) __obj.updateDynamic("getDonut")(getDonut)
-    if (getField != null) __obj.updateDynamic("getField")(getField)
-    if (getMaximum != null) __obj.updateDynamic("getMaximum")(getMaximum)
-    if (getMinimum != null) __obj.updateDynamic("getMinimum")(getMinimum)
-    if (getNeedle != null) __obj.updateDynamic("getNeedle")(getNeedle)
-    if (getNeedleLength != null) __obj.updateDynamic("getNeedleLength")(getNeedleLength)
-    if (getNeedleLengthRatio != null) __obj.updateDynamic("getNeedleLengthRatio")(getNeedleLengthRatio)
-    if (getNeedleWidth != null) __obj.updateDynamic("getNeedleWidth")(getNeedleWidth)
-    if (getRadius != null) __obj.updateDynamic("getRadius")(getRadius)
-    if (getRegion != null) __obj.updateDynamic("getRegion")(getRegion)
-    if (getRotation != null) __obj.updateDynamic("getRotation")(getRotation)
-    if (getSectors != null) __obj.updateDynamic("getSectors")(getSectors)
-    if (getShowInLegend != null) __obj.updateDynamic("getShowInLegend")(getShowInLegend)
-    if (getSprites != null) __obj.updateDynamic("getSprites")(getSprites)
-    if (getTotalAngle != null) __obj.updateDynamic("getTotalAngle")(getTotalAngle)
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
-    if (getWholeDisk != null) __obj.updateDynamic("getWholeDisk")(getWholeDisk)
+    if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
+    if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
+    if (getAngleField != null) __obj.updateDynamic("getAngleField")(js.Any.fromFunction0(getAngleField))
+    if (getAnimate != null) __obj.updateDynamic("getAnimate")(js.Any.fromFunction0(getAnimate))
+    if (getBackground != null) __obj.updateDynamic("getBackground")(js.Any.fromFunction0(getBackground))
+    if (getBubbleEvents != null) __obj.updateDynamic("getBubbleEvents")(js.Any.fromFunction0(getBubbleEvents))
+    if (getCenter != null) __obj.updateDynamic("getCenter")(js.Any.fromFunction0(getCenter))
+    if (getColors != null) __obj.updateDynamic("getColors")(js.Any.fromFunction0(getColors))
+    if (getDonut != null) __obj.updateDynamic("getDonut")(js.Any.fromFunction0(getDonut))
+    if (getField != null) __obj.updateDynamic("getField")(js.Any.fromFunction0(getField))
+    if (getHidden != null) __obj.updateDynamic("getHidden")(js.Any.fromFunction0(getHidden))
+    if (getHighlightCfg != null) __obj.updateDynamic("getHighlightCfg")(js.Any.fromFunction0(getHighlightCfg))
+    if (getHighlightItem != null) __obj.updateDynamic("getHighlightItem")(js.Any.fromFunction0(getHighlightItem))
+    if (getId != null) __obj.updateDynamic("getId")(js.Any.fromFunction0(getId))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getItemForPoint != null) __obj.updateDynamic("getItemForPoint")(js.Any.fromFunction3(getItemForPoint))
+    if (getItemInstancing != null) __obj.updateDynamic("getItemInstancing")(js.Any.fromFunction0(getItemInstancing))
+    if (getLabel != null) __obj.updateDynamic("getLabel")(js.Any.fromFunction0(getLabel))
+    if (getLabelField != null) __obj.updateDynamic("getLabelField")(js.Any.fromFunction0(getLabelField))
+    if (getLabelOverflowPadding != null) __obj.updateDynamic("getLabelOverflowPadding")(js.Any.fromFunction0(getLabelOverflowPadding))
+    if (getListeners != null) __obj.updateDynamic("getListeners")(js.Any.fromFunction0(getListeners))
+    if (getMarker != null) __obj.updateDynamic("getMarker")(js.Any.fromFunction0(getMarker))
+    if (getMarkerSubStyle != null) __obj.updateDynamic("getMarkerSubStyle")(js.Any.fromFunction0(getMarkerSubStyle))
+    if (getMaximum != null) __obj.updateDynamic("getMaximum")(js.Any.fromFunction0(getMaximum))
+    if (getMinimum != null) __obj.updateDynamic("getMinimum")(js.Any.fromFunction0(getMinimum))
+    if (getNeedle != null) __obj.updateDynamic("getNeedle")(js.Any.fromFunction0(getNeedle))
+    if (getNeedleLength != null) __obj.updateDynamic("getNeedleLength")(js.Any.fromFunction0(getNeedleLength))
+    if (getNeedleLengthRatio != null) __obj.updateDynamic("getNeedleLengthRatio")(js.Any.fromFunction0(getNeedleLengthRatio))
+    if (getNeedleWidth != null) __obj.updateDynamic("getNeedleWidth")(js.Any.fromFunction0(getNeedleWidth))
+    if (getOverlaySurface != null) __obj.updateDynamic("getOverlaySurface")(js.Any.fromFunction0(getOverlaySurface))
+    if (getRadius != null) __obj.updateDynamic("getRadius")(js.Any.fromFunction0(getRadius))
+    if (getRegion != null) __obj.updateDynamic("getRegion")(js.Any.fromFunction0(getRegion))
+    if (getRenderer != null) __obj.updateDynamic("getRenderer")(js.Any.fromFunction0(getRenderer))
+    if (getRotation != null) __obj.updateDynamic("getRotation")(js.Any.fromFunction0(getRotation))
+    if (getSectors != null) __obj.updateDynamic("getSectors")(js.Any.fromFunction0(getSectors))
+    if (getShowInLegend != null) __obj.updateDynamic("getShowInLegend")(js.Any.fromFunction0(getShowInLegend))
+    if (getSprites != null) __obj.updateDynamic("getSprites")(js.Any.fromFunction0(getSprites))
+    if (getStyle != null) __obj.updateDynamic("getStyle")(js.Any.fromFunction0(getStyle))
+    if (getSubStyle != null) __obj.updateDynamic("getSubStyle")(js.Any.fromFunction0(getSubStyle))
+    if (getSurface != null) __obj.updateDynamic("getSurface")(js.Any.fromFunction0(getSurface))
+    if (getTitle != null) __obj.updateDynamic("getTitle")(js.Any.fromFunction0(getTitle))
+    if (getTotalAngle != null) __obj.updateDynamic("getTotalAngle")(js.Any.fromFunction0(getTotalAngle))
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
+    if (getWholeDisk != null) __obj.updateDynamic("getWholeDisk")(js.Any.fromFunction0(getWholeDisk))
+    if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
+    if (hidden != null) __obj.updateDynamic("hidden")(hidden)
+    if (highlightCfg != null) __obj.updateDynamic("highlightCfg")(highlightCfg)
+    if (highlightItem != null) __obj.updateDynamic("highlightItem")(highlightItem)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (itemInstancing != null) __obj.updateDynamic("itemInstancing")(itemInstancing)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (labelField != null) __obj.updateDynamic("labelField")(labelField)
+    if (labelOverflowPadding != null) __obj.updateDynamic("labelOverflowPadding")(labelOverflowPadding.asInstanceOf[js.Any])
+    if (listeners != null) __obj.updateDynamic("listeners")(listeners)
+    if (marker != null) __obj.updateDynamic("marker")(marker)
+    if (markerSubStyle != null) __obj.updateDynamic("markerSubStyle")(markerSubStyle)
     if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
     if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
+    if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
     if (!js.isUndefined(needle)) __obj.updateDynamic("needle")(needle)
     if (needleLength != null) __obj.updateDynamic("needleLength")(needleLength.asInstanceOf[js.Any])
     if (needleLengthRatio != null) __obj.updateDynamic("needleLengthRatio")(needleLengthRatio.asInstanceOf[js.Any])
     if (needleWidth != null) __obj.updateDynamic("needleWidth")(needleWidth.asInstanceOf[js.Any])
+    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
+    if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
+    if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
+    if (overlaySurface != null) __obj.updateDynamic("overlaySurface")(overlaySurface)
+    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
+    if (provideLegendInfo != null) __obj.updateDynamic("provideLegendInfo")(js.Any.fromFunction1(provideLegendInfo))
+    if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
+    if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4(removeAfterListener))
+    if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(js.Any.fromFunction4(removeBeforeListener))
+    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction5(removeListener))
+    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1(resumeEvents))
     if (sectors != null) __obj.updateDynamic("sectors")(sectors)
+    if (self != null) __obj.updateDynamic("self")(self)
     if (seriesType != null) __obj.updateDynamic("seriesType")(seriesType)
-    if (setAngleField != null) __obj.updateDynamic("setAngleField")(setAngleField)
-    if (setCenter != null) __obj.updateDynamic("setCenter")(setCenter)
-    if (setColors != null) __obj.updateDynamic("setColors")(setColors)
-    if (setDonut != null) __obj.updateDynamic("setDonut")(setDonut)
-    if (setField != null) __obj.updateDynamic("setField")(setField)
-    if (setMaximum != null) __obj.updateDynamic("setMaximum")(setMaximum)
-    if (setMinimum != null) __obj.updateDynamic("setMinimum")(setMinimum)
-    if (setNeedle != null) __obj.updateDynamic("setNeedle")(setNeedle)
-    if (setNeedleLength != null) __obj.updateDynamic("setNeedleLength")(setNeedleLength)
-    if (setNeedleLengthRatio != null) __obj.updateDynamic("setNeedleLengthRatio")(setNeedleLengthRatio)
-    if (setNeedleWidth != null) __obj.updateDynamic("setNeedleWidth")(setNeedleWidth)
-    if (setRadius != null) __obj.updateDynamic("setRadius")(setRadius)
-    if (setRegion != null) __obj.updateDynamic("setRegion")(setRegion)
-    if (setRotation != null) __obj.updateDynamic("setRotation")(setRotation)
-    if (setSectors != null) __obj.updateDynamic("setSectors")(setSectors)
-    if (setShowInLegend != null) __obj.updateDynamic("setShowInLegend")(setShowInLegend)
-    if (setTotalAngle != null) __obj.updateDynamic("setTotalAngle")(setTotalAngle)
-    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
-    if (setWholeDisk != null) __obj.updateDynamic("setWholeDisk")(setWholeDisk)
+    if (setAngleField != null) __obj.updateDynamic("setAngleField")(js.Any.fromFunction1(setAngleField))
+    if (setAnimate != null) __obj.updateDynamic("setAnimate")(js.Any.fromFunction1(setAnimate))
+    if (setBackground != null) __obj.updateDynamic("setBackground")(js.Any.fromFunction1(setBackground))
+    if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
+    if (setCenter != null) __obj.updateDynamic("setCenter")(js.Any.fromFunction1(setCenter))
+    if (setColors != null) __obj.updateDynamic("setColors")(js.Any.fromFunction1(setColors))
+    if (setDonut != null) __obj.updateDynamic("setDonut")(js.Any.fromFunction1(setDonut))
+    if (setField != null) __obj.updateDynamic("setField")(js.Any.fromFunction1(setField))
+    if (setHidden != null) __obj.updateDynamic("setHidden")(js.Any.fromFunction1(setHidden))
+    if (setHiddenByIndex != null) __obj.updateDynamic("setHiddenByIndex")(js.Any.fromFunction2(setHiddenByIndex))
+    if (setHighlightCfg != null) __obj.updateDynamic("setHighlightCfg")(js.Any.fromFunction1(setHighlightCfg))
+    if (setHighlightItem != null) __obj.updateDynamic("setHighlightItem")(js.Any.fromFunction1(setHighlightItem))
+    if (setItemInstancing != null) __obj.updateDynamic("setItemInstancing")(js.Any.fromFunction1(setItemInstancing))
+    if (setLabel != null) __obj.updateDynamic("setLabel")(js.Any.fromFunction1(setLabel))
+    if (setLabelField != null) __obj.updateDynamic("setLabelField")(js.Any.fromFunction1(setLabelField))
+    if (setLabelOverflowPadding != null) __obj.updateDynamic("setLabelOverflowPadding")(js.Any.fromFunction1(setLabelOverflowPadding))
+    if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
+    if (setMarker != null) __obj.updateDynamic("setMarker")(js.Any.fromFunction1(setMarker))
+    if (setMarkerSubStyle != null) __obj.updateDynamic("setMarkerSubStyle")(js.Any.fromFunction1(setMarkerSubStyle))
+    if (setMaximum != null) __obj.updateDynamic("setMaximum")(js.Any.fromFunction1(setMaximum))
+    if (setMinimum != null) __obj.updateDynamic("setMinimum")(js.Any.fromFunction1(setMinimum))
+    if (setNeedle != null) __obj.updateDynamic("setNeedle")(js.Any.fromFunction1(setNeedle))
+    if (setNeedleLength != null) __obj.updateDynamic("setNeedleLength")(js.Any.fromFunction1(setNeedleLength))
+    if (setNeedleLengthRatio != null) __obj.updateDynamic("setNeedleLengthRatio")(js.Any.fromFunction1(setNeedleLengthRatio))
+    if (setNeedleWidth != null) __obj.updateDynamic("setNeedleWidth")(js.Any.fromFunction1(setNeedleWidth))
+    if (setOverlaySurface != null) __obj.updateDynamic("setOverlaySurface")(js.Any.fromFunction1(setOverlaySurface))
+    if (setRadius != null) __obj.updateDynamic("setRadius")(js.Any.fromFunction1(setRadius))
+    if (setRegion != null) __obj.updateDynamic("setRegion")(js.Any.fromFunction1(setRegion))
+    if (setRenderer != null) __obj.updateDynamic("setRenderer")(js.Any.fromFunction1(setRenderer))
+    if (setRotation != null) __obj.updateDynamic("setRotation")(js.Any.fromFunction1(setRotation))
+    if (setSectors != null) __obj.updateDynamic("setSectors")(js.Any.fromFunction1(setSectors))
+    if (setShowInLegend != null) __obj.updateDynamic("setShowInLegend")(js.Any.fromFunction1(setShowInLegend))
+    if (setStore != null) __obj.updateDynamic("setStore")(js.Any.fromFunction1(setStore))
+    if (setStyle != null) __obj.updateDynamic("setStyle")(js.Any.fromFunction1(setStyle))
+    if (setSubStyle != null) __obj.updateDynamic("setSubStyle")(js.Any.fromFunction1(setSubStyle))
+    if (setSurface != null) __obj.updateDynamic("setSurface")(js.Any.fromFunction1(setSurface))
+    if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction1(setTitle))
+    if (setTotalAngle != null) __obj.updateDynamic("setTotalAngle")(js.Any.fromFunction1(setTotalAngle))
+    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
+    if (setWholeDisk != null) __obj.updateDynamic("setWholeDisk")(js.Any.fromFunction1(setWholeDisk))
     if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (store != null) __obj.updateDynamic("store")(store)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (subStyle != null) __obj.updateDynamic("subStyle")(subStyle)
+    if (surface != null) __obj.updateDynamic("surface")(surface)
+    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
+    if (title != null) __obj.updateDynamic("title")(title)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
+    if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
+    if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
+    if (uses != null) __obj.updateDynamic("uses")(uses)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (!js.isUndefined(wholeDisk)) __obj.updateDynamic("wholeDisk")(wholeDisk)
     __obj.asInstanceOf[IGauge]

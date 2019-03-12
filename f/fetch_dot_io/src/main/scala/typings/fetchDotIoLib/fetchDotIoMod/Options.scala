@@ -20,9 +20,9 @@ trait Options
 object Options {
   @scala.inline
   def apply(
-    afterJSON: js.Function1[/* body */ js.Any, scala.Unit] = null,
-    afterResponse: js.Function1[/* res */ stdLib.Response, scala.Unit] = null,
-    beforeRequest: js.Function2[/* url */ TUrl, /* body */ stdLib.BodyInit, scala.Boolean | scala.Unit] = null,
+    afterJSON: /* body */ js.Any => scala.Unit = null,
+    afterResponse: /* res */ stdLib.Response => scala.Unit = null,
+    beforeRequest: (/* url */ TUrl, /* body */ stdLib.BodyInit) => scala.Boolean | scala.Unit = null,
     body: stdLib.BodyInit = null,
     cache: stdLib.RequestCache = null,
     credentials: stdLib.RequestCredentials = null,
@@ -41,9 +41,9 @@ object Options {
     window: js.Any = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (afterJSON != null) __obj.updateDynamic("afterJSON")(afterJSON)
-    if (afterResponse != null) __obj.updateDynamic("afterResponse")(afterResponse)
-    if (beforeRequest != null) __obj.updateDynamic("beforeRequest")(beforeRequest)
+    if (afterJSON != null) __obj.updateDynamic("afterJSON")(js.Any.fromFunction1(afterJSON))
+    if (afterResponse != null) __obj.updateDynamic("afterResponse")(js.Any.fromFunction1(afterResponse))
+    if (beforeRequest != null) __obj.updateDynamic("beforeRequest")(js.Any.fromFunction2(beforeRequest))
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache)
     if (credentials != null) __obj.updateDynamic("credentials")(credentials)

@@ -63,17 +63,17 @@ object XDropTarget {
   @scala.inline
   def apply(
     DefaultActions: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addDropTargetListener: js.Function1[XDropTargetListener, scala.Unit],
-    getDefaultActions: js.Function0[scala.Double],
-    isActive: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeDropTargetListener: js.Function1[XDropTargetListener, scala.Unit],
-    setActive: js.Function1[scala.Boolean, scala.Unit],
-    setDefaultActions: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    addDropTargetListener: XDropTargetListener => scala.Unit,
+    getDefaultActions: () => scala.Double,
+    isActive: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeDropTargetListener: XDropTargetListener => scala.Unit,
+    setActive: scala.Boolean => scala.Unit,
+    setDefaultActions: scala.Double => scala.Unit
   ): XDropTarget = {
-    val __obj = js.Dynamic.literal(DefaultActions = DefaultActions, acquire = acquire, addDropTargetListener = addDropTargetListener, getDefaultActions = getDefaultActions, isActive = isActive, queryInterface = queryInterface, release = release, removeDropTargetListener = removeDropTargetListener, setActive = setActive, setDefaultActions = setDefaultActions)
+    val __obj = js.Dynamic.literal(DefaultActions = DefaultActions, acquire = js.Any.fromFunction0(acquire), addDropTargetListener = js.Any.fromFunction1(addDropTargetListener), getDefaultActions = js.Any.fromFunction0(getDefaultActions), isActive = js.Any.fromFunction0(isActive), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeDropTargetListener = js.Any.fromFunction1(removeDropTargetListener), setActive = js.Any.fromFunction1(setActive), setDefaultActions = js.Any.fromFunction1(setDefaultActions))
   
     __obj.asInstanceOf[XDropTarget]
   }

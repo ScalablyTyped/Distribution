@@ -15,7 +15,7 @@ trait ContextMenuCloseEvent extends ContextMenuEvent {
 object ContextMenuCloseEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: ContextMenu,
     event: kendoDashUiLib.JQueryEventObject = null,
@@ -23,7 +23,7 @@ object ContextMenuCloseEvent {
     target: stdLib.Element = null,
     `type`: java.lang.String = null
   ): ContextMenuCloseEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (event != null) __obj.updateDynamic("event")(event)
     if (item != null) __obj.updateDynamic("item")(item)
     if (target != null) __obj.updateDynamic("target")(target)

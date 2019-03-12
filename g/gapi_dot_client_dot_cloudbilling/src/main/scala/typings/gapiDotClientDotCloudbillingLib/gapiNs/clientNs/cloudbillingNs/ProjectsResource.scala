@@ -58,20 +58,11 @@ trait ProjectsResource extends js.Object {
 object ProjectsResource {
   @scala.inline
   def apply(
-    getBillingInfo: js.Function1[
-      gapiDotClientDotCloudbillingLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ProjectBillingInfo]
-    ],
-    list: js.Function1[
-      gapiDotClientDotCloudbillingLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListProjectBillingInfoResponse]
-    ],
-    updateBillingInfo: js.Function1[
-      gapiDotClientDotCloudbillingLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ProjectBillingInfo]
-    ]
+    getBillingInfo: gapiDotClientDotCloudbillingLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[ProjectBillingInfo],
+    list: gapiDotClientDotCloudbillingLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[ListProjectBillingInfoResponse],
+    updateBillingInfo: gapiDotClientDotCloudbillingLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[ProjectBillingInfo]
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal(getBillingInfo = getBillingInfo, list = list, updateBillingInfo = updateBillingInfo)
+    val __obj = js.Dynamic.literal(getBillingInfo = js.Any.fromFunction1(getBillingInfo), list = js.Any.fromFunction1(list), updateBillingInfo = js.Any.fromFunction1(updateBillingInfo))
   
     __obj.asInstanceOf[ProjectsResource]
   }

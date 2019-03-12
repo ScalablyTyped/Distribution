@@ -107,14 +107,7 @@ object JQueryJqGridColumn {
   def apply(
     name: java.lang.String,
     align: jqgridLib.jqgridLibStrings.left | jqgridLib.jqgridLibStrings.center | jqgridLib.jqgridLibStrings.right = null,
-    cellattr: js.Function5[
-      /* rowId */ js.Any, 
-      /* val */ js.Any, 
-      /* rowObject */ js.Any, 
-      /* cm */ js.Any, 
-      /* rdata */ js.Any, 
-      java.lang.String
-    ] = null,
+    cellattr: (/* rowId */ js.Any, /* val */ js.Any, /* rowObject */ js.Any, /* cm */ js.Any, /* rdata */ js.Any) => java.lang.String = null,
     classes: java.lang.String = null,
     datefmt: java.lang.String = null,
     editable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -129,7 +122,7 @@ object JQueryJqGridColumn {
   ): JQueryJqGridColumn = {
     val __obj = js.Dynamic.literal(name = name)
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (cellattr != null) __obj.updateDynamic("cellattr")(cellattr)
+    if (cellattr != null) __obj.updateDynamic("cellattr")(js.Any.fromFunction5(cellattr))
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (datefmt != null) __obj.updateDynamic("datefmt")(datefmt)
     if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)

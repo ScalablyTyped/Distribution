@@ -40,34 +40,24 @@ object CharacteristicOptions {
   def apply(
     uuid: java.lang.String,
     descriptors: js.Array[Descriptor] = null,
-    onIndicate: js.Function0[scala.Unit] = null,
-    onNotify: js.Function0[scala.Unit] = null,
-    onReadRequest: js.Function2[
-      /* offset */ scala.Double, 
-      /* callback */ js.Function2[/* result */ scala.Double, /* data */ js.UndefOr[nodeLib.Buffer], scala.Unit], 
-      scala.Unit
-    ] = null,
-    onSubscribe: js.Function2[/* maxValueSize */ scala.Double, /* updateValueCallback */ js.Any, scala.Unit] = null,
-    onUnsubscribe: js.Function0[scala.Unit] = null,
-    onWriteRequest: js.Function4[
-      /* data */ nodeLib.Buffer, 
-      /* offset */ scala.Double, 
-      /* withoutResponse */ scala.Boolean, 
-      /* callback */ js.Function1[/* result */ scala.Double, scala.Unit], 
-      scala.Unit
-    ] = null,
+    onIndicate: () => scala.Unit = null,
+    onNotify: () => scala.Unit = null,
+    onReadRequest: (/* offset */ scala.Double, /* callback */ js.Function2[/* result */ scala.Double, /* data */ js.UndefOr[nodeLib.Buffer], scala.Unit]) => scala.Unit = null,
+    onSubscribe: (/* maxValueSize */ scala.Double, /* updateValueCallback */ js.Any) => scala.Unit = null,
+    onUnsubscribe: () => scala.Unit = null,
+    onWriteRequest: (/* data */ nodeLib.Buffer, /* offset */ scala.Double, /* withoutResponse */ scala.Boolean, /* callback */ js.Function1[/* result */ scala.Double, scala.Unit]) => scala.Unit = null,
     properties: js.Array[blenoLib.Property] = null,
     secure: js.Array[blenoLib.Property] = null,
     value: nodeLib.Buffer = null
   ): CharacteristicOptions = {
     val __obj = js.Dynamic.literal(uuid = uuid)
     if (descriptors != null) __obj.updateDynamic("descriptors")(descriptors)
-    if (onIndicate != null) __obj.updateDynamic("onIndicate")(onIndicate)
-    if (onNotify != null) __obj.updateDynamic("onNotify")(onNotify)
-    if (onReadRequest != null) __obj.updateDynamic("onReadRequest")(onReadRequest)
-    if (onSubscribe != null) __obj.updateDynamic("onSubscribe")(onSubscribe)
-    if (onUnsubscribe != null) __obj.updateDynamic("onUnsubscribe")(onUnsubscribe)
-    if (onWriteRequest != null) __obj.updateDynamic("onWriteRequest")(onWriteRequest)
+    if (onIndicate != null) __obj.updateDynamic("onIndicate")(js.Any.fromFunction0(onIndicate))
+    if (onNotify != null) __obj.updateDynamic("onNotify")(js.Any.fromFunction0(onNotify))
+    if (onReadRequest != null) __obj.updateDynamic("onReadRequest")(js.Any.fromFunction2(onReadRequest))
+    if (onSubscribe != null) __obj.updateDynamic("onSubscribe")(js.Any.fromFunction2(onSubscribe))
+    if (onUnsubscribe != null) __obj.updateDynamic("onUnsubscribe")(js.Any.fromFunction0(onUnsubscribe))
+    if (onWriteRequest != null) __obj.updateDynamic("onWriteRequest")(js.Any.fromFunction4(onWriteRequest))
     if (properties != null) __obj.updateDynamic("properties")(properties)
     if (secure != null) __obj.updateDynamic("secure")(secure)
     if (value != null) __obj.updateDynamic("value")(value)

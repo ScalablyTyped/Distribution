@@ -24,12 +24,12 @@ object PromisifyAllOptions {
   @scala.inline
   def apply(
     context: js.Object = null,
-    filter: js.Function1[/* key */ java.lang.String, scala.Boolean] = null,
+    filter: /* key */ java.lang.String => scala.Boolean = null,
     suffix: java.lang.String = null
   ): PromisifyAllOptions = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (suffix != null) __obj.updateDynamic("suffix")(suffix)
     __obj.asInstanceOf[PromisifyAllOptions]
   }

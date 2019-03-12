@@ -210,7 +210,7 @@ trait ChartDataCommon extends js.Object {
 object ChartDataCommon {
   @scala.inline
   def apply(
-    click: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
+    click: /* event */ ChartEvent => scala.Unit = null,
     color: java.lang.String = null,
     highlightEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     indexLabel: java.lang.String = null,
@@ -220,7 +220,7 @@ object ChartDataCommon {
     indexLabelFontSize: scala.Int | scala.Double = null,
     indexLabelFontStyle: java.lang.String = null,
     indexLabelFontWeight: java.lang.String = null,
-    indexLabelFormatter: js.Function1[/* e */ canvasjsLib.Anon_ChartDataPoint, java.lang.String] = null,
+    indexLabelFormatter: /* e */ canvasjsLib.Anon_ChartDataPoint => java.lang.String = null,
     indexLabelLineColor: java.lang.String = null,
     indexLabelLineDashType: canvasjsLib.DashType = null,
     indexLabelLineThickness: scala.Int | scala.Double = null,
@@ -236,14 +236,14 @@ object ChartDataCommon {
     markerColor: java.lang.String = null,
     markerSize: scala.Int | scala.Double = null,
     markerType: java.lang.String = null,
-    mousemove: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
-    mouseout: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
-    mouseover: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
+    mousemove: /* event */ ChartEvent => scala.Unit = null,
+    mouseout: /* event */ ChartEvent => scala.Unit = null,
+    mouseover: /* event */ ChartEvent => scala.Unit = null,
     name: java.lang.String = null,
     toolTipContent: java.lang.String = null
   ): ChartDataCommon = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
     if (color != null) __obj.updateDynamic("color")(color)
     if (!js.isUndefined(highlightEnabled)) __obj.updateDynamic("highlightEnabled")(highlightEnabled)
     if (indexLabel != null) __obj.updateDynamic("indexLabel")(indexLabel)
@@ -253,7 +253,7 @@ object ChartDataCommon {
     if (indexLabelFontSize != null) __obj.updateDynamic("indexLabelFontSize")(indexLabelFontSize.asInstanceOf[js.Any])
     if (indexLabelFontStyle != null) __obj.updateDynamic("indexLabelFontStyle")(indexLabelFontStyle)
     if (indexLabelFontWeight != null) __obj.updateDynamic("indexLabelFontWeight")(indexLabelFontWeight)
-    if (indexLabelFormatter != null) __obj.updateDynamic("indexLabelFormatter")(indexLabelFormatter)
+    if (indexLabelFormatter != null) __obj.updateDynamic("indexLabelFormatter")(js.Any.fromFunction1(indexLabelFormatter))
     if (indexLabelLineColor != null) __obj.updateDynamic("indexLabelLineColor")(indexLabelLineColor)
     if (indexLabelLineDashType != null) __obj.updateDynamic("indexLabelLineDashType")(indexLabelLineDashType)
     if (indexLabelLineThickness != null) __obj.updateDynamic("indexLabelLineThickness")(indexLabelLineThickness.asInstanceOf[js.Any])
@@ -269,9 +269,9 @@ object ChartDataCommon {
     if (markerColor != null) __obj.updateDynamic("markerColor")(markerColor)
     if (markerSize != null) __obj.updateDynamic("markerSize")(markerSize.asInstanceOf[js.Any])
     if (markerType != null) __obj.updateDynamic("markerType")(markerType)
-    if (mousemove != null) __obj.updateDynamic("mousemove")(mousemove)
-    if (mouseout != null) __obj.updateDynamic("mouseout")(mouseout)
-    if (mouseover != null) __obj.updateDynamic("mouseover")(mouseover)
+    if (mousemove != null) __obj.updateDynamic("mousemove")(js.Any.fromFunction1(mousemove))
+    if (mouseout != null) __obj.updateDynamic("mouseout")(js.Any.fromFunction1(mouseout))
+    if (mouseover != null) __obj.updateDynamic("mouseover")(js.Any.fromFunction1(mouseover))
     if (name != null) __obj.updateDynamic("name")(name)
     if (toolTipContent != null) __obj.updateDynamic("toolTipContent")(toolTipContent)
     __obj.asInstanceOf[ChartDataCommon]

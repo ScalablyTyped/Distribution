@@ -57,18 +57,18 @@ trait HasChildQuery extends Query {
 object HasChildQuery {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    boost: js.Function1[scala.Double, HasChildQuery],
-    query: js.Function1[js.Object, HasChildQuery],
-    scope: js.Function1[java.lang.String, HasChildQuery],
-    scoreMode: js.Function1[java.lang.String, HasChildQuery],
-    scoreType: js.Function1[java.lang.String, HasChildQuery],
-    shortCircuitCutoff: js.Function1[scala.Double, HasChildQuery],
-    toJSON: js.Function0[js.Any],
-    `type`: js.Function1[java.lang.String, HasChildQuery]
+    _type: () => java.lang.String,
+    boost: scala.Double => HasChildQuery,
+    query: js.Object => HasChildQuery,
+    scope: java.lang.String => HasChildQuery,
+    scoreMode: java.lang.String => HasChildQuery,
+    scoreType: java.lang.String => HasChildQuery,
+    shortCircuitCutoff: scala.Double => HasChildQuery,
+    toJSON: () => js.Any,
+    `type`: java.lang.String => HasChildQuery
   ): HasChildQuery = {
-    val __obj = js.Dynamic.literal(_type = _type, boost = boost, query = query, scope = scope, scoreMode = scoreMode, scoreType = scoreType, shortCircuitCutoff = shortCircuitCutoff, toJSON = toJSON)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), boost = js.Any.fromFunction1(boost), query = js.Any.fromFunction1(query), scope = js.Any.fromFunction1(scope), scoreMode = js.Any.fromFunction1(scoreMode), scoreType = js.Any.fromFunction1(scoreType), shortCircuitCutoff = js.Any.fromFunction1(shortCircuitCutoff), toJSON = js.Any.fromFunction0(toJSON))
+    __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
     __obj.asInstanceOf[HasChildQuery]
   }
 }

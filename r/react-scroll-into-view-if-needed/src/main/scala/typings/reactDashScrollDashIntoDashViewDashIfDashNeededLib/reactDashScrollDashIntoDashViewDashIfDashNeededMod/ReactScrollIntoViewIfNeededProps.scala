@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReactScrollIntoViewIfNeededProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLElement] {
+  extends reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement] {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var elementType: js.UndefOr[
     /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any
@@ -19,7 +19,7 @@ trait ReactScrollIntoViewIfNeededProps
 object ReactScrollIntoViewIfNeededProps {
   @scala.inline
   def apply(
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLElement] = null,
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement] = null,
     active: js.UndefOr[scala.Boolean] = js.undefined,
     elementType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null,
     options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ScrollIntoViewIfNeeded.Options */ js.Any = null

@@ -1,0 +1,15 @@
+package typings
+package reactDashMediaLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashMediaLibComponents {
+  @scala.inline
+  def ReactDashMedia: reactLib.reactMod.ReactNs.ComponentType[reactDashMediaLib.reactDashMediaMod.MediaProps] = js.constructorOf[reactDashMediaLib.reactDashMediaMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMediaLib.reactDashMediaMod.MediaProps]]
+  @scala.inline
+  def MediaProps: reactDashMediaLib.reactDashMediaMod.MediaProps.type = reactDashMediaLib.reactDashMediaMod.MediaProps
+  type MediaProps = reactDashMediaLib.reactDashMediaMod.MediaProps
+}
+

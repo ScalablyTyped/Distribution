@@ -61,20 +61,20 @@ trait UISortableProperties[T] extends js.Object {
 object UISortableProperties {
   @scala.inline
   def apply[T](
-    cancel: js.Function0[scala.Unit],
+    cancel: () => scala.Unit,
     dropindex: scala.Double,
     droptarget: scala.Double,
     droptargetModel: js.Array[T],
     index: scala.Double,
-    isCanceled: js.Function0[scala.Boolean],
-    isCustomHelperUsed: js.Function0[scala.Boolean],
+    isCanceled: () => scala.Boolean,
+    isCustomHelperUsed: () => scala.Boolean,
     model: T,
     received: scala.Boolean,
     source: angularLib.angularMod.angularNs.IAugmentedJQuery,
     sourceModel: js.Array[T],
     moved: T = null
   ): UISortableProperties[T] = {
-    val __obj = js.Dynamic.literal(cancel = cancel, dropindex = dropindex, droptarget = droptarget, droptargetModel = droptargetModel, index = index, isCanceled = isCanceled, isCustomHelperUsed = isCustomHelperUsed, model = model.asInstanceOf[js.Any], received = received, source = source, sourceModel = sourceModel)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), dropindex = dropindex, droptarget = droptarget, droptargetModel = droptargetModel, index = index, isCanceled = js.Any.fromFunction0(isCanceled), isCustomHelperUsed = js.Any.fromFunction0(isCustomHelperUsed), model = model.asInstanceOf[js.Any], received = received, source = source, sourceModel = sourceModel)
     if (moved != null) __obj.updateDynamic("moved")(moved.asInstanceOf[js.Any])
     __obj.asInstanceOf[UISortableProperties[T]]
   }

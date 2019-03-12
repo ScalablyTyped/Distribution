@@ -43,14 +43,11 @@ object StackedAreaChartProps {
     numberOfTicks: scala.Int | scala.Double = null,
     offset: OffsetFunction = null,
     order: OrderFunction = null,
-    renderDecorator: js.Function0[js.Object] = null,
-    renderGradient: js.Function1[
-      /* props */ reactDashNativeDashSvgDashChartsLib.Anon_Color[T], 
-      reactLib.reactMod.Component[
-        reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.LinearGradientProps | reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.RadialGradientProps, 
-        js.Object, 
-        _
-      ]
+    renderDecorator: () => js.Object = null,
+    renderGradient: /* props */ reactDashNativeDashSvgDashChartsLib.Anon_Color[T] => reactLib.reactMod.Component[
+      reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.LinearGradientProps | reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.RadialGradientProps, 
+      js.Object, 
+      _
     ] = null,
     showGrid: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
@@ -74,8 +71,8 @@ object StackedAreaChartProps {
     if (numberOfTicks != null) __obj.updateDynamic("numberOfTicks")(numberOfTicks.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset)
     if (order != null) __obj.updateDynamic("order")(order)
-    if (renderDecorator != null) __obj.updateDynamic("renderDecorator")(renderDecorator)
-    if (renderGradient != null) __obj.updateDynamic("renderGradient")(renderGradient)
+    if (renderDecorator != null) __obj.updateDynamic("renderDecorator")(js.Any.fromFunction0(renderDecorator))
+    if (renderGradient != null) __obj.updateDynamic("renderGradient")(js.Any.fromFunction1(renderGradient))
     if (!js.isUndefined(showGrid)) __obj.updateDynamic("showGrid")(showGrid)
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (svg != null) __obj.updateDynamic("svg")(svg)

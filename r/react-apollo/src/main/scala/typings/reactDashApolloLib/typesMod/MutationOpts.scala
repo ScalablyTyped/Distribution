@@ -33,8 +33,8 @@ object MutationOpts {
     errorPolicy: apolloDashClientLib.coreWatchQueryOptionsMod.ErrorPolicy = null,
     fetchPolicy: apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy = null,
     notifyOnNetworkStatusChange: js.UndefOr[scala.Boolean] = js.undefined,
-    onCompleted: js.Function1[/* data */ TData, scala.Unit] = null,
-    onError: js.Function1[/* error */ apolloDashClientLib.apolloDashClientMod.ApolloError, scala.Unit] = null,
+    onCompleted: /* data */ TData => scala.Unit = null,
+    onError: /* error */ apolloDashClientLib.apolloDashClientMod.ApolloError => scala.Unit = null,
     optimisticResponse: TData = null,
     refetchQueries: (js.Array[java.lang.String | apolloDashClientLib.coreTypesMod.PureQueryOptions]) | RefetchQueriesProviderFn = null,
     update: apolloDashClientLib.coreWatchQueryOptionsMod.MutationUpdaterFn[TData] = null,
@@ -47,8 +47,8 @@ object MutationOpts {
     if (errorPolicy != null) __obj.updateDynamic("errorPolicy")(errorPolicy)
     if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy)
     if (!js.isUndefined(notifyOnNetworkStatusChange)) __obj.updateDynamic("notifyOnNetworkStatusChange")(notifyOnNetworkStatusChange)
-    if (onCompleted != null) __obj.updateDynamic("onCompleted")(onCompleted)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onCompleted != null) __obj.updateDynamic("onCompleted")(js.Any.fromFunction1(onCompleted))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse.asInstanceOf[js.Any])
     if (refetchQueries != null) __obj.updateDynamic("refetchQueries")(refetchQueries.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(update)

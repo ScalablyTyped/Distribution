@@ -17,13 +17,13 @@ trait Equalizer extends js.Object {
 object Equalizer {
   @scala.inline
   def apply(
-    applyHeight: js.Function1[js.Array[_], scala.Unit],
-    applyHeightByRow: js.Function1[js.Array[_], scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    getHeights: js.Function1[js.Function, js.Array[_]],
-    getHeightsByRow: js.Function1[js.Function, js.Array[_]]
+    applyHeight: js.Array[_] => scala.Unit,
+    applyHeightByRow: js.Array[_] => scala.Unit,
+    destroy: () => scala.Unit,
+    getHeights: js.Function => js.Array[_],
+    getHeightsByRow: js.Function => js.Array[_]
   ): Equalizer = {
-    val __obj = js.Dynamic.literal(applyHeight = applyHeight, applyHeightByRow = applyHeightByRow, destroy = destroy, getHeights = getHeights, getHeightsByRow = getHeightsByRow)
+    val __obj = js.Dynamic.literal(applyHeight = js.Any.fromFunction1(applyHeight), applyHeightByRow = js.Any.fromFunction1(applyHeightByRow), destroy = js.Any.fromFunction0(destroy), getHeights = js.Any.fromFunction1(getHeights), getHeightsByRow = js.Any.fromFunction1(getHeightsByRow))
   
     __obj.asInstanceOf[Equalizer]
   }

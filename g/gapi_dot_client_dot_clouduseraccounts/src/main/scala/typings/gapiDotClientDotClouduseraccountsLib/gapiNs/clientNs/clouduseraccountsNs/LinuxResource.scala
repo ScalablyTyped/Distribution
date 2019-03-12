@@ -15,16 +15,10 @@ trait LinuxResource extends js.Object {
 object LinuxResource {
   @scala.inline
   def apply(
-    getAuthorizedKeysView: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsInstance, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LinuxGetAuthorizedKeysViewResponse]
-    ],
-    getLinuxAccountViews: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LinuxGetLinuxAccountViewsResponse]
-    ]
+    getAuthorizedKeysView: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsInstance => gapiDotClientLib.gapiNs.clientNs.Request[LinuxGetAuthorizedKeysViewResponse],
+    getLinuxAccountViews: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsFilter => gapiDotClientLib.gapiNs.clientNs.Request[LinuxGetLinuxAccountViewsResponse]
   ): LinuxResource = {
-    val __obj = js.Dynamic.literal(getAuthorizedKeysView = getAuthorizedKeysView, getLinuxAccountViews = getLinuxAccountViews)
+    val __obj = js.Dynamic.literal(getAuthorizedKeysView = js.Any.fromFunction1(getAuthorizedKeysView), getLinuxAccountViews = js.Any.fromFunction1(getLinuxAccountViews))
   
     __obj.asInstanceOf[LinuxResource]
   }

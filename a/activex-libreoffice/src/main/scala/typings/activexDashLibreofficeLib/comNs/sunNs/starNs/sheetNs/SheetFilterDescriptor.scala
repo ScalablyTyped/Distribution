@@ -51,8 +51,8 @@ object SheetFilterDescriptor {
   def apply(
     ContainsHeader: scala.Boolean,
     CopyOutputData: scala.Boolean,
-    FilterFields: activexDashInteropLib.SafeArray[TableFilterField],
-    FilterFields2: activexDashInteropLib.SafeArray[TableFilterField2],
+    FilterFields: stdLib.SafeArray[TableFilterField],
+    FilterFields2: stdLib.SafeArray[TableFilterField2],
     IsCaseSensitive: scala.Boolean,
     MaxFieldCount: scala.Double,
     Orientation: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableOrientation,
@@ -61,38 +61,22 @@ object SheetFilterDescriptor {
     SaveOutputPosition: scala.Boolean,
     SkipDuplicates: scala.Boolean,
     UseRegularExpressions: scala.Boolean,
-    acquire: js.Function0[scala.Unit],
-    addPropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    addVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    getFilterFields: js.Function0[activexDashInteropLib.SafeArray[TableFilterField]],
-    getFilterFields2: js.Function0[activexDashInteropLib.SafeArray[TableFilterField2]],
-    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
-    getPropertyValue: js.Function1[java.lang.String, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removePropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    removeVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    setFilterFields: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TableFilterField], scala.Unit],
-    setFilterFields2: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TableFilterField2], scala.Unit],
-    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    addPropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    addVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    getFilterFields: () => stdLib.SafeArray[TableFilterField],
+    getFilterFields2: () => stdLib.SafeArray[TableFilterField2],
+    getPropertySetInfo: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    getPropertyValue: java.lang.String => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removePropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    removeVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    setFilterFields: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TableFilterField] => scala.Unit,
+    setFilterFields2: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TableFilterField2] => scala.Unit,
+    setPropertyValue: (java.lang.String, js.Any) => scala.Unit
   ): SheetFilterDescriptor = {
-    val __obj = js.Dynamic.literal(ContainsHeader = ContainsHeader, CopyOutputData = CopyOutputData, FilterFields = FilterFields, FilterFields2 = FilterFields2, IsCaseSensitive = IsCaseSensitive, MaxFieldCount = MaxFieldCount, Orientation = Orientation, OutputPosition = OutputPosition, PropertySetInfo = PropertySetInfo, SaveOutputPosition = SaveOutputPosition, SkipDuplicates = SkipDuplicates, UseRegularExpressions = UseRegularExpressions, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getFilterFields = getFilterFields, getFilterFields2 = getFilterFields2, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setFilterFields = setFilterFields, setFilterFields2 = setFilterFields2, setPropertyValue = setPropertyValue)
+    val __obj = js.Dynamic.literal(ContainsHeader = ContainsHeader, CopyOutputData = CopyOutputData, FilterFields = FilterFields, FilterFields2 = FilterFields2, IsCaseSensitive = IsCaseSensitive, MaxFieldCount = MaxFieldCount, Orientation = Orientation, OutputPosition = OutputPosition, PropertySetInfo = PropertySetInfo, SaveOutputPosition = SaveOutputPosition, SkipDuplicates = SkipDuplicates, UseRegularExpressions = UseRegularExpressions, acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getFilterFields = js.Any.fromFunction0(getFilterFields), getFilterFields2 = js.Any.fromFunction0(getFilterFields2), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setFilterFields = js.Any.fromFunction1(setFilterFields), setFilterFields2 = js.Any.fromFunction1(setFilterFields2), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
   
     __obj.asInstanceOf[SheetFilterDescriptor]
   }

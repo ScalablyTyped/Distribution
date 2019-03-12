@@ -16,12 +16,12 @@ trait UseFilePlugin extends js.Object {
 object UseFilePlugin {
   @scala.inline
   def apply(
-    apply: js.Function1[enhancedDashResolveLib.libResolverMod.namespaced, scala.Unit],
+    apply: enhancedDashResolveLib.libResolverMod.namespaced => scala.Unit,
     filename: java.lang.String,
     source: java.lang.String,
     target: java.lang.String
   ): UseFilePlugin = {
-    val __obj = js.Dynamic.literal(apply = apply, filename = filename, source = source, target = target)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), filename = filename, source = source, target = target)
   
     __obj.asInstanceOf[UseFilePlugin]
   }

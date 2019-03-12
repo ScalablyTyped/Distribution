@@ -44,14 +44,14 @@ object IQSelectionState {
   @scala.inline
   def apply(
     backCount: scala.Double,
-    clearAll: js.Function1[scala.Boolean, angularLib.angularMod.angularNs.IPromise[_]],
+    clearAll: scala.Boolean => angularLib.angularMod.angularNs.IPromise[_],
     forwardCount: scala.Double,
-    lockAll: js.Function0[angularLib.angularMod.angularNs.IPromise[_]],
+    lockAll: () => angularLib.angularMod.angularNs.IPromise[_],
     selections: IQFieldSelections,
     stateName: java.lang.String,
-    unlockAll: js.Function0[angularLib.angularMod.angularNs.IPromise[_]]
+    unlockAll: () => angularLib.angularMod.angularNs.IPromise[_]
   ): IQSelectionState = {
-    val __obj = js.Dynamic.literal(backCount = backCount, clearAll = clearAll, forwardCount = forwardCount, lockAll = lockAll, selections = selections, stateName = stateName, unlockAll = unlockAll)
+    val __obj = js.Dynamic.literal(backCount = backCount, clearAll = js.Any.fromFunction1(clearAll), forwardCount = forwardCount, lockAll = js.Any.fromFunction0(lockAll), selections = selections, stateName = stateName, unlockAll = js.Any.fromFunction0(unlockAll))
   
     __obj.asInstanceOf[IQSelectionState]
   }

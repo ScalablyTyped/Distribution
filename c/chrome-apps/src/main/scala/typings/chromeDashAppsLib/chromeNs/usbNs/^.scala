@@ -26,13 +26,13 @@ object ^ extends js.Object {
     * or through **getUserSelectedDevices**.
     * @since Chrome 42.
     */
-  val onDeviceAdded: chromeDashAppsLib.chromeNs.usbNs.DeviceEvent = js.native
+  val onDeviceAdded: DeviceEvent = js.native
   /**
     * Event generated when a device is removed from the system.
     * See **onDeviceAdded** for which events are delivered.
     * @since Chrome 42.
     */
-  val onDeviceRemoved: chromeDashAppsLib.chromeNs.usbNs.DeviceEvent = js.native
+  val onDeviceRemoved: DeviceEvent = js.native
   /**
     * @description Performs a bulk transfer on the specified device.
     * @param handle An open connection to the device.
@@ -40,9 +40,9 @@ object ^ extends js.Object {
     * @param callback
     */
   def bulkTransfer(
-    handle: chromeDashAppsLib.chromeNs.usbNs.ConnectionHandle,
-    transferInfo: chromeDashAppsLib.chromeNs.usbNs.GenericTransferInfo,
-    callback: js.Function1[/* info */ chromeDashAppsLib.chromeNs.usbNs.TransferResultInfo, scala.Unit]
+    handle: ConnectionHandle,
+    transferInfo: GenericTransferInfo,
+    callback: js.Function1[/* info */ TransferResultInfo, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Claims an interface on a USB device.
@@ -56,7 +56,7 @@ object ^ extends js.Object {
     * @param callback
     */
   def claimInterface(
-    handle: chromeDashAppsLib.chromeNs.usbNs.ConnectionHandle,
+    handle: ConnectionHandle,
     interfaceNumber: chromeDashAppsLib.chromeNs.integer,
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
@@ -66,8 +66,8 @@ object ^ extends js.Object {
     * @param handle The ConnectionHandle to close.
     * @param [callback]
     */
-  def closeDevice(handle: chromeDashAppsLib.chromeNs.usbNs.ConnectionHandle): scala.Unit = js.native
-  def closeDevice(handle: chromeDashAppsLib.chromeNs.usbNs.ConnectionHandle, callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  def closeDevice(handle: ConnectionHandle): scala.Unit = js.native
+  def closeDevice(handle: ConnectionHandle, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
     * Performs a control transfer on the specified device.
     * Control transfers refer to either the device, an interface or an endpoint.
@@ -77,9 +77,9 @@ object ^ extends js.Object {
     * @param callback
     */
   def controlTransfer(
-    handle: chromeDashAppsLib.chromeNs.usbNs.ConnectionHandle,
-    transferInfo: chromeDashAppsLib.chromeNs.usbNs.TransferInfo,
-    callback: js.Function1[/* info */ chromeDashAppsLib.chromeNs.usbNs.TransferResultInfo, scala.Unit]
+    handle: ConnectionHandle,
+    transferInfo: TransferInfo,
+    callback: js.Function1[/* info */ TransferResultInfo, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Finds USB devices specified by the vendor, product and (optionally) interface IDs and if permissions allow opens them for use.
@@ -94,10 +94,7 @@ object ^ extends js.Object {
     */
   def findDevices(
     options: chromeDashAppsLib.Anon_InterfaceId,
-    callback: js.Function1[
-      /* handles */ js.Array[chromeDashAppsLib.chromeNs.usbNs.ConnectionHandle], 
-      scala.Unit
-    ]
+    callback: js.Function1[/* handles */ js.Array[ConnectionHandle], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Finds USB devices specified by the vendor, product and (optionally) interface IDs and if permissions allow opens them for use.
@@ -110,10 +107,7 @@ object ^ extends js.Object {
     */
   def findDevices(
     options: chromeDashAppsLib.Anon_ProductId,
-    callback: js.Function1[
-      /* handles */ js.Array[chromeDashAppsLib.chromeNs.usbNs.ConnectionHandle], 
-      scala.Unit
-    ]
+    callback: js.Function1[/* handles */ js.Array[ConnectionHandle], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Gets the configuration descriptor for the currently selected configuration.
@@ -121,23 +115,14 @@ object ^ extends js.Object {
     * @param handle An open connection to the device.
     * @param callback
     */
-  def getConfiguration(
-    handle: chromeDashAppsLib.chromeNs.usbNs.ConnectionHandle,
-    callback: js.Function1[/* config */ chromeDashAppsLib.chromeNs.usbNs.ConfigDescriptor, scala.Unit]
-  ): scala.Unit = js.native
+  def getConfiguration(handle: ConnectionHandle, callback: js.Function1[/* config */ ConfigDescriptor, scala.Unit]): scala.Unit = js.native
   /**
     * Returns the full set of device configuration descriptors.
     * @since Chrome 47.
     * @param device The Device to fetch descriptors from.
     * @param callback
     */
-  def getConfigurations(
-    device: chromeDashAppsLib.chromeNs.usbNs.Device,
-    callback: js.Function1[
-      /* configs */ js.Array[chromeDashAppsLib.chromeNs.usbNs.ConfigDescriptor], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def getConfigurations(device: Device, callback: js.Function1[/* configs */ js.Array[ConfigDescriptor], scala.Unit]): scala.Unit = js.native
   /**
     * @description Enumerates connected USB devices.
     * @since Chrome 39.
@@ -146,7 +131,7 @@ object ^ extends js.Object {
     */
   def getDevices(
     options: chromeDashAppsLib.Anon_FiltersArray,
-    callback: js.Function1[/* devices */ js.Array[chromeDashAppsLib.chromeNs.usbNs.Device], scala.Unit]
+    callback: js.Function1[/* devices */ js.Array[Device], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Presents a device picker to the user and returns the Devices selected.
@@ -162,7 +147,7 @@ object ^ extends js.Object {
     */
   def getUserSelectedDevices(
     options: chromeDashAppsLib.Anon_FiltersMultiple,
-    callback: js.Function1[/* devices */ js.Array[chromeDashAppsLib.chromeNs.usbNs.Device], scala.Unit]
+    callback: js.Function1[/* devices */ js.Array[Device], scala.Unit]
   ): scala.Unit = js.native
   /**
     * @description Performs an interrupt transfer on the specified device.
@@ -171,9 +156,9 @@ object ^ extends js.Object {
     * @param callback
     */
   def interruptTransfer(
-    handle: chromeDashAppsLib.chromeNs.usbNs.ConnectionHandle,
-    transferInfo: chromeDashAppsLib.chromeNs.usbNs.GenericTransferInfo,
-    callback: js.Function1[/* info */ chromeDashAppsLib.chromeNs.usbNs.TransferResultInfo, scala.Unit]
+    handle: ConnectionHandle,
+    transferInfo: GenericTransferInfo,
+    callback: js.Function1[/* info */ TransferResultInfo, scala.Unit]
   ): scala.Unit = js.native
   /**
     * @description Performs an isochronous transfer on the specific device.
@@ -182,9 +167,9 @@ object ^ extends js.Object {
     * @param callback
     */
   def isochronousTransfer(
-    handle: chromeDashAppsLib.chromeNs.usbNs.ConnectionHandle,
-    transferInfo: chromeDashAppsLib.chromeNs.usbNs.IsochronousTransferInfo,
-    callback: js.Function1[/* info */ chromeDashAppsLib.chromeNs.usbNs.TransferResultInfo, scala.Unit]
+    handle: ConnectionHandle,
+    transferInfo: IsochronousTransferInfo,
+    callback: js.Function1[/* info */ TransferResultInfo, scala.Unit]
   ): scala.Unit = js.native
   /**
     * @description Lists all interfaces on a USB device.
@@ -192,11 +177,8 @@ object ^ extends js.Object {
     * @param callback
     */
   def listInterfaces(
-    handle: chromeDashAppsLib.chromeNs.usbNs.ConnectionHandle,
-    callback: js.Function1[
-      /* descriptors */ js.Array[chromeDashAppsLib.chromeNs.usbNs.InterfaceDescriptor], 
-      scala.Unit
-    ]
+    handle: ConnectionHandle,
+    callback: js.Function1[/* descriptors */ js.Array[InterfaceDescriptor], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Opens a USB device returned by *getDevices*
@@ -204,10 +186,7 @@ object ^ extends js.Object {
     * @param device The device to open.
     * @param callback
     */
-  def openDevice(
-    device: chromeDashAppsLib.chromeNs.usbNs.Device,
-    callback: js.Function1[/* handle */ chromeDashAppsLib.chromeNs.usbNs.ConnectionHandle, scala.Unit]
-  ): scala.Unit = js.native
+  def openDevice(device: Device, callback: js.Function1[/* handle */ ConnectionHandle, scala.Unit]): scala.Unit = js.native
   /**
     * @description Releases a claimed interface.
     * @param handle An open connection to the device.
@@ -215,7 +194,7 @@ object ^ extends js.Object {
     * @param callback
     */
   def releaseInterface(
-    handle: chromeDashAppsLib.chromeNs.usbNs.ConnectionHandle,
+    handle: ConnectionHandle,
     interfaceNumber: chromeDashAppsLib.chromeNs.integer,
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
@@ -224,7 +203,7 @@ object ^ extends js.Object {
     * @requires(CrOS) Chrome OS specific. This operation is now implicitly performed as a part of *openDevice*.
     */
   def requestAccess(
-    device: chromeDashAppsLib.chromeNs.usbNs.Device,
+    device: Device,
     interfaceId: chromeDashAppsLib.chromeNs.integer,
     callback: js.Function1[/* success */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
@@ -235,10 +214,7 @@ object ^ extends js.Object {
     * @param handle A connection handle to reset.
     * @param callback
     */
-  def resetDevice(
-    handle: chromeDashAppsLib.chromeNs.usbNs.ConnectionHandle,
-    callback: js.Function1[/* success */ scala.Boolean, scala.Unit]
-  ): scala.Unit = js.native
+  def resetDevice(handle: ConnectionHandle, callback: js.Function1[/* success */ scala.Boolean, scala.Unit]): scala.Unit = js.native
   /**
     * Select a device configuration.
     * This function effectively resets the device by selecting one of the
@@ -251,7 +227,7 @@ object ^ extends js.Object {
     * @param callback
     */
   def setConfiguration(
-    handle: chromeDashAppsLib.chromeNs.usbNs.ConnectionHandle,
+    handle: ConnectionHandle,
     configurationValue: chromeDashAppsLib.chromeNs.integer,
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
@@ -263,7 +239,7 @@ object ^ extends js.Object {
     * @param callback
     */
   def setInterfaceAlternateSetting(
-    handle: chromeDashAppsLib.chromeNs.usbNs.ConnectionHandle,
+    handle: ConnectionHandle,
     interfaceNumber: chromeDashAppsLib.chromeNs.integer,
     alternateSetting: chromeDashAppsLib.chromeNs.integer,
     callback: js.Function0[scala.Unit]

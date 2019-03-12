@@ -49,21 +49,9 @@ object TableRowColumnProps {
     columnNumber: scala.Int | scala.Double = null,
     hoverable: js.UndefOr[scala.Boolean] = js.undefined,
     key: java.lang.String = null,
-    onClick: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
-      /* column */ scala.Double, 
-      scala.Unit
-    ] = null,
-    onHover: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
-      /* column */ scala.Double, 
-      scala.Unit
-    ] = null,
-    onHoverExit: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
-      /* column */ scala.Double, 
-      scala.Unit
-    ] = null,
+    onClick: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* column */ scala.Double) => scala.Unit = null,
+    onHover: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* column */ scala.Double) => scala.Unit = null,
+    onHoverExit: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* column */ scala.Double) => scala.Unit = null,
     rowSpan: scala.Int | scala.Double = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): TableRowColumnProps = {
@@ -73,9 +61,9 @@ object TableRowColumnProps {
     if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
     if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable)
     if (key != null) __obj.updateDynamic("key")(key)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onHover != null) __obj.updateDynamic("onHover")(onHover)
-    if (onHoverExit != null) __obj.updateDynamic("onHoverExit")(onHoverExit)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
+    if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction2(onHover))
+    if (onHoverExit != null) __obj.updateDynamic("onHoverExit")(js.Any.fromFunction2(onHoverExit))
     if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[TableRowColumnProps]

@@ -17,14 +17,14 @@ trait MinaAnimation extends js.Object {
 object MinaAnimation {
   @scala.inline
   def apply(
-    duration: js.Function0[scala.Double],
-    easing: js.Function0[scala.Double],
+    duration: () => scala.Double,
+    easing: () => scala.Double,
     id: java.lang.String,
-    speed: js.Function0[scala.Double],
-    status: js.Function0[scala.Double],
-    stop: js.Function0[scala.Unit]
+    speed: () => scala.Double,
+    status: () => scala.Double,
+    stop: () => scala.Unit
   ): MinaAnimation = {
-    val __obj = js.Dynamic.literal(duration = duration, easing = easing, id = id, speed = speed, status = status, stop = stop)
+    val __obj = js.Dynamic.literal(duration = js.Any.fromFunction0(duration), easing = js.Any.fromFunction0(easing), id = id, speed = js.Any.fromFunction0(speed), status = js.Any.fromFunction0(status), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[MinaAnimation]
   }

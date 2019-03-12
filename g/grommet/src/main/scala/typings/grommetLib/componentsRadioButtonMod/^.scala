@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val RadioButton: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsRadioButtonMod.RadioButtonProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    RadioButtonProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
       reactLib.HTMLInputElement
     ]), 

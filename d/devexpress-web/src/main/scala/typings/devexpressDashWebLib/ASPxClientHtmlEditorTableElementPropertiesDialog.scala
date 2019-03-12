@@ -22,14 +22,14 @@ trait ASPxClientHtmlEditorTableElementPropertiesDialog extends ASPxClientHtmlEdi
 object ASPxClientHtmlEditorTableElementPropertiesDialog {
   @scala.inline
   def apply(
-    GetBackgroundColorColorEdit: js.Function0[ASPxClientColorEdit],
-    GetCancelButton: js.Function0[ASPxClientButton],
-    GetFormLayout: js.Function0[ASPxClientFormLayout],
-    GetHorizontalAlignmentComboBox: js.Function0[ASPxClientComboBox],
-    GetOkButton: js.Function0[ASPxClientButton],
-    GetVerticalAlignmentComboBox: js.Function0[ASPxClientComboBox]
+    GetBackgroundColorColorEdit: () => ASPxClientColorEdit,
+    GetCancelButton: () => ASPxClientButton,
+    GetFormLayout: () => ASPxClientFormLayout,
+    GetHorizontalAlignmentComboBox: () => ASPxClientComboBox,
+    GetOkButton: () => ASPxClientButton,
+    GetVerticalAlignmentComboBox: () => ASPxClientComboBox
   ): ASPxClientHtmlEditorTableElementPropertiesDialog = {
-    val __obj = js.Dynamic.literal(GetBackgroundColorColorEdit = GetBackgroundColorColorEdit, GetCancelButton = GetCancelButton, GetFormLayout = GetFormLayout, GetHorizontalAlignmentComboBox = GetHorizontalAlignmentComboBox, GetOkButton = GetOkButton, GetVerticalAlignmentComboBox = GetVerticalAlignmentComboBox)
+    val __obj = js.Dynamic.literal(GetBackgroundColorColorEdit = js.Any.fromFunction0(GetBackgroundColorColorEdit), GetCancelButton = js.Any.fromFunction0(GetCancelButton), GetFormLayout = js.Any.fromFunction0(GetFormLayout), GetHorizontalAlignmentComboBox = js.Any.fromFunction0(GetHorizontalAlignmentComboBox), GetOkButton = js.Any.fromFunction0(GetOkButton), GetVerticalAlignmentComboBox = js.Any.fromFunction0(GetVerticalAlignmentComboBox))
   
     __obj.asInstanceOf[ASPxClientHtmlEditorTableElementPropertiesDialog]
   }

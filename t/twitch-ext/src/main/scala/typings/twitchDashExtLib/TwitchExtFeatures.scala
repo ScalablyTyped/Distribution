@@ -30,15 +30,12 @@ object TwitchExtFeatures {
   def apply(
     isChatEnabled: scala.Boolean,
     onChanged_isChatEnabled: js.Function1[
-      js.Function1[
-        /* changed */ js.Array[twitchDashExtLib.twitchDashExtLibStrings.isChatEnabled], 
-        scala.Unit
-      ], 
+      /* changed */ js.Array[twitchDashExtLib.twitchDashExtLibStrings.isChatEnabled], 
       scala.Unit
-    ]
+    ] => scala.Unit
   ): TwitchExtFeatures = {
     val __obj = js.Dynamic.literal(isChatEnabled = isChatEnabled)
-    __obj.updateDynamic("onChanged")(onChanged_isChatEnabled)
+    __obj.updateDynamic("onChanged")(js.Any.fromFunction1(onChanged_isChatEnabled))
     __obj.asInstanceOf[TwitchExtFeatures]
   }
 }

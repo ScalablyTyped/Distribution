@@ -14,8 +14,8 @@ trait Semiring[A] extends js.Object {
 
 object Semiring {
   @scala.inline
-  def apply[A](add: js.Function2[A, A, A], mul: js.Function2[A, A, A], one: A, zero: A): Semiring[A] = {
-    val __obj = js.Dynamic.literal(add = add, mul = mul, one = one.asInstanceOf[js.Any], zero = zero.asInstanceOf[js.Any])
+  def apply[A](add: (A, A) => A, mul: (A, A) => A, one: A, zero: A): Semiring[A] = {
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), mul = js.Any.fromFunction2(mul), one = one.asInstanceOf[js.Any], zero = zero.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Semiring[A]]
   }

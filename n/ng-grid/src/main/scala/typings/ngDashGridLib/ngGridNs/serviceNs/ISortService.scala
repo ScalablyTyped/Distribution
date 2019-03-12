@@ -24,25 +24,21 @@ trait ISortService extends js.Object {
 object ISortService {
   @scala.inline
   def apply(
-    Sort: js.Function2[ISortInfo, js.Any, scala.Unit],
-    basicSort: js.Function2[js.Any, js.Any, scala.Double],
+    Sort: (ISortInfo, js.Any) => scala.Unit,
+    basicSort: (js.Any, js.Any) => scala.Double,
     colSortFnCache: js.Any,
-    getSortFn: js.Function2[
-      ngDashGridLib.ngGridNs.IColumn, 
-      js.Any, 
-      js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double]
-    ],
-    guessSortFn: js.Function1[js.Any, js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double]],
+    getSortFn: (ngDashGridLib.ngGridNs.IColumn, js.Any) => js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double],
+    guessSortFn: js.Any => js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double],
     isCustomSort: scala.Boolean,
     isSorting: scala.Boolean,
-    sortAlpha: js.Function2[java.lang.String, java.lang.String, scala.Double],
-    sortBool: js.Function2[scala.Boolean, scala.Boolean, scala.Double],
-    sortData: js.Function2[ISortInfo, js.Any, scala.Unit],
-    sortDate: js.Function2[stdLib.Date, stdLib.Date, scala.Double],
-    sortNumber: js.Function2[scala.Double, scala.Double, scala.Double],
-    sortNumberStr: js.Function2[java.lang.String, java.lang.String, scala.Double]
+    sortAlpha: (java.lang.String, java.lang.String) => scala.Double,
+    sortBool: (scala.Boolean, scala.Boolean) => scala.Double,
+    sortData: (ISortInfo, js.Any) => scala.Unit,
+    sortDate: (stdLib.Date, stdLib.Date) => scala.Double,
+    sortNumber: (scala.Double, scala.Double) => scala.Double,
+    sortNumberStr: (java.lang.String, java.lang.String) => scala.Double
   ): ISortService = {
-    val __obj = js.Dynamic.literal(Sort = Sort, basicSort = basicSort, colSortFnCache = colSortFnCache, getSortFn = getSortFn, guessSortFn = guessSortFn, isCustomSort = isCustomSort, isSorting = isSorting, sortAlpha = sortAlpha, sortBool = sortBool, sortData = sortData, sortDate = sortDate, sortNumber = sortNumber, sortNumberStr = sortNumberStr)
+    val __obj = js.Dynamic.literal(Sort = js.Any.fromFunction2(Sort), basicSort = js.Any.fromFunction2(basicSort), colSortFnCache = colSortFnCache, getSortFn = js.Any.fromFunction2(getSortFn), guessSortFn = js.Any.fromFunction1(guessSortFn), isCustomSort = isCustomSort, isSorting = isSorting, sortAlpha = js.Any.fromFunction2(sortAlpha), sortBool = js.Any.fromFunction2(sortBool), sortData = js.Any.fromFunction2(sortData), sortDate = js.Any.fromFunction2(sortDate), sortNumber = js.Any.fromFunction2(sortNumber), sortNumberStr = js.Any.fromFunction2(sortNumberStr))
   
     __obj.asInstanceOf[ISortService]
   }

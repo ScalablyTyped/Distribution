@@ -11,8 +11,8 @@ trait EventListenerObject[T /* <: ZeroClipboardEvent */] extends js.Object {
 
 object EventListenerObject {
   @scala.inline
-  def apply[T /* <: ZeroClipboardEvent */](handleEvent: js.Function1[T, scala.Unit]): EventListenerObject[T] = {
-    val __obj = js.Dynamic.literal(handleEvent = handleEvent)
+  def apply[T /* <: ZeroClipboardEvent */](handleEvent: T => scala.Unit): EventListenerObject[T] = {
+    val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
   
     __obj.asInstanceOf[EventListenerObject[T]]
   }

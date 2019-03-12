@@ -17,14 +17,14 @@ trait Popper extends js.Object {
 object Popper {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
-    disableEventListeners: js.Function0[scala.Unit],
-    enableEventListeners: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
+    disableEventListeners: () => scala.Unit,
+    enableEventListeners: () => scala.Unit,
     options: PopperOptions,
-    scheduleUpdate: js.Function0[scala.Unit],
-    update: js.Function0[scala.Unit]
+    scheduleUpdate: () => scala.Unit,
+    update: () => scala.Unit
   ): Popper = {
-    val __obj = js.Dynamic.literal(destroy = destroy, disableEventListeners = disableEventListeners, enableEventListeners = enableEventListeners, options = options, scheduleUpdate = scheduleUpdate, update = update)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), disableEventListeners = js.Any.fromFunction0(disableEventListeners), enableEventListeners = js.Any.fromFunction0(enableEventListeners), options = options, scheduleUpdate = js.Any.fromFunction0(scheduleUpdate), update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[Popper]
   }

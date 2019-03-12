@@ -175,7 +175,7 @@ object PlusWebviewWebviewTitleNViewButtonStyles {
     fontSize: java.lang.String = null,
     fontSrc: java.lang.String = null,
     fontWeight: html5plusLib.html5plusLibStrings.normal | html5plusLib.html5plusLibStrings.bold = null,
-    onclick: js.Function1[/* result */ js.Any, scala.Unit] = null,
+    onclick: /* result */ js.Any => scala.Unit = null,
     redDot: js.UndefOr[scala.Boolean] = js.undefined,
     select: js.UndefOr[scala.Boolean] = js.undefined,
     text: java.lang.String = null,
@@ -191,7 +191,7 @@ object PlusWebviewWebviewTitleNViewButtonStyles {
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize)
     if (fontSrc != null) __obj.updateDynamic("fontSrc")(fontSrc)
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (onclick != null) __obj.updateDynamic("onclick")(onclick)
+    if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction1(onclick))
     if (!js.isUndefined(redDot)) __obj.updateDynamic("redDot")(redDot)
     if (!js.isUndefined(select)) __obj.updateDynamic("select")(select)
     if (text != null) __obj.updateDynamic("text")(text)

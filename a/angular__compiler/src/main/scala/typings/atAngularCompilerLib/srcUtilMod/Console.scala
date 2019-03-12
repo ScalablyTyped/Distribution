@@ -12,8 +12,8 @@ trait Console extends js.Object {
 
 object Console {
   @scala.inline
-  def apply(log: js.Function1[java.lang.String, scala.Unit], warn: js.Function1[java.lang.String, scala.Unit]): Console = {
-    val __obj = js.Dynamic.literal(log = log, warn = warn)
+  def apply(log: java.lang.String => scala.Unit, warn: java.lang.String => scala.Unit): Console = {
+    val __obj = js.Dynamic.literal(log = js.Any.fromFunction1(log), warn = js.Any.fromFunction1(warn))
   
     __obj.asInstanceOf[Console]
   }

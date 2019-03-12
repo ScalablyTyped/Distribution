@@ -20,68 +20,39 @@ object XModel2 {
     Instances: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XSet,
     PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
     Submissions: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XSet,
-    acquire: js.Function0[scala.Unit],
-    addPropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    addVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    cloneBinding: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
-    ],
-    cloneSubmission: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, XSubmission],
-    createBinding: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    createSubmission: js.Function0[XSubmission],
-    getBinding: js.Function1[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
-    ],
-    getBindings: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XSet],
-    getDataTypeRepository: js.Function0[XDataTypeRepository],
-    getDefaultInstance: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XDocument],
-    getID: js.Function0[java.lang.String],
-    getInstanceDocument: js.Function1[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XDocument
-    ],
-    getInstances: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XSet],
-    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
-    getPropertyValue: js.Function1[java.lang.String, js.Any],
-    getSubmission: js.Function1[java.lang.String, XSubmission],
-    getSubmissions: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XSet],
-    initialize: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    rebuild: js.Function0[scala.Unit],
-    recalculate: js.Function0[scala.Unit],
-    refresh: js.Function0[scala.Unit],
-    release: js.Function0[scala.Unit],
-    removePropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    removeVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    revalidate: js.Function0[scala.Unit],
-    setID: js.Function1[java.lang.String, scala.Unit],
-    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
-    submit: js.Function1[java.lang.String, scala.Unit],
-    submitWithInteraction: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    addPropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    addVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    cloneBinding: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    cloneSubmission: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet => XSubmission,
+    createBinding: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    createSubmission: () => XSubmission,
+    getBinding: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    getBindings: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XSet,
+    getDataTypeRepository: () => XDataTypeRepository,
+    getDefaultInstance: () => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XDocument,
+    getID: () => java.lang.String,
+    getInstanceDocument: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XDocument,
+    getInstances: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XSet,
+    getPropertySetInfo: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    getPropertyValue: java.lang.String => js.Any,
+    getSubmission: java.lang.String => XSubmission,
+    getSubmissions: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XSet,
+    initialize: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    rebuild: () => scala.Unit,
+    recalculate: () => scala.Unit,
+    refresh: () => scala.Unit,
+    release: () => scala.Unit,
+    removePropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    removeVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    revalidate: () => scala.Unit,
+    setID: java.lang.String => scala.Unit,
+    setPropertyValue: (java.lang.String, js.Any) => scala.Unit,
+    submit: java.lang.String => scala.Unit,
+    submitWithInteraction: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler) => scala.Unit
   ): XModel2 = {
-    val __obj = js.Dynamic.literal(Bindings = Bindings, DataTypeRepository = DataTypeRepository, DefaultInstance = DefaultInstance, ID = ID, Instances = Instances, PropertySetInfo = PropertySetInfo, Submissions = Submissions, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, cloneBinding = cloneBinding, cloneSubmission = cloneSubmission, createBinding = createBinding, createSubmission = createSubmission, getBinding = getBinding, getBindings = getBindings, getDataTypeRepository = getDataTypeRepository, getDefaultInstance = getDefaultInstance, getID = getID, getInstanceDocument = getInstanceDocument, getInstances = getInstances, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getSubmission = getSubmission, getSubmissions = getSubmissions, initialize = initialize, queryInterface = queryInterface, rebuild = rebuild, recalculate = recalculate, refresh = refresh, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, revalidate = revalidate, setID = setID, setPropertyValue = setPropertyValue, submit = submit, submitWithInteraction = submitWithInteraction)
+    val __obj = js.Dynamic.literal(Bindings = Bindings, DataTypeRepository = DataTypeRepository, DefaultInstance = DefaultInstance, ID = ID, Instances = Instances, PropertySetInfo = PropertySetInfo, Submissions = Submissions, acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), cloneBinding = js.Any.fromFunction1(cloneBinding), cloneSubmission = js.Any.fromFunction1(cloneSubmission), createBinding = js.Any.fromFunction0(createBinding), createSubmission = js.Any.fromFunction0(createSubmission), getBinding = js.Any.fromFunction1(getBinding), getBindings = js.Any.fromFunction0(getBindings), getDataTypeRepository = js.Any.fromFunction0(getDataTypeRepository), getDefaultInstance = js.Any.fromFunction0(getDefaultInstance), getID = js.Any.fromFunction0(getID), getInstanceDocument = js.Any.fromFunction1(getInstanceDocument), getInstances = js.Any.fromFunction0(getInstances), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getSubmission = js.Any.fromFunction1(getSubmission), getSubmissions = js.Any.fromFunction0(getSubmissions), initialize = js.Any.fromFunction0(initialize), queryInterface = js.Any.fromFunction1(queryInterface), rebuild = js.Any.fromFunction0(rebuild), recalculate = js.Any.fromFunction0(recalculate), refresh = js.Any.fromFunction0(refresh), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), revalidate = js.Any.fromFunction0(revalidate), setID = js.Any.fromFunction1(setID), setPropertyValue = js.Any.fromFunction2(setPropertyValue), submit = js.Any.fromFunction1(submit), submitWithInteraction = js.Any.fromFunction2(submitWithInteraction))
   
     __obj.asInstanceOf[XModel2]
   }

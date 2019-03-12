@@ -49,9 +49,9 @@ object ^ extends js.Object {
   def enableCursor(): scala.Unit = js.native
   def eventDefsToEventInstances(eventDefs: js.Any, unzonedRange: js.Any): js.Array[_] = js.native
   def eventFootprintToComponentFootprint(eventFootprint: js.Any): js.Any = js.native
-  def eventInstanceToEventRange(eventInstance: js.Any): fullcalendarLib.eventrangeMod.default = js.native
+  def eventInstanceToEventRange(eventInstance: js.Any): fullcalendarLib.eventRangeMod.default = js.native
   def eventInstanceToUnzonedRange(eventInstance: js.Any): js.Any = js.native
-  def eventRangeToEventFootprint(eventRange: js.Any): fullcalendarLib.eventfootprintMod.default = js.native
+  def eventRangeToEventFootprint(eventRange: js.Any): fullcalendarLib.eventFootprintMod.default = js.native
   def firstDefined(args: js.Any*): js.Any = js.native
   def flexibleCompare(a: js.Any, b: js.Any): scala.Double = js.native
   def formatDate(date: js.Any, formatStr: js.Any): js.Any = js.native

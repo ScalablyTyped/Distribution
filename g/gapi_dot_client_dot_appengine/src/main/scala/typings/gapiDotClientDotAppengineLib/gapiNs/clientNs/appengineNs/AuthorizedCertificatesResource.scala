@@ -24,28 +24,13 @@ trait AuthorizedCertificatesResource extends js.Object {
 object AuthorizedCertificatesResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AuthorizedCertificate]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AuthorizedCertificate]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListAuthorizedCertificatesResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdAuthorizedCertificatesId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AuthorizedCertificate]
-    ]
+    create: gapiDotClientDotAppengineLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[AuthorizedCertificate],
+    delete: gapiDotClientDotAppengineLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsId => gapiDotClientLib.gapiNs.clientNs.Request[AuthorizedCertificate],
+    list: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ListAuthorizedCertificatesResponse],
+    patch: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdAuthorizedCertificatesId => gapiDotClientLib.gapiNs.clientNs.Request[AuthorizedCertificate]
   ): AuthorizedCertificatesResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, patch = patch)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch))
   
     __obj.asInstanceOf[AuthorizedCertificatesResource]
   }

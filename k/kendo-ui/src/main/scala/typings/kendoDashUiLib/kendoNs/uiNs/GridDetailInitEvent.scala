@@ -15,7 +15,7 @@ trait GridDetailInitEvent extends GridEvent {
 object GridDetailInitEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Grid,
     data: kendoDashUiLib.kendoNs.dataNs.ObservableObject = null,
@@ -23,7 +23,7 @@ object GridDetailInitEvent {
     detailRow: kendoDashUiLib.JQuery = null,
     masterRow: kendoDashUiLib.JQuery = null
   ): GridDetailInitEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (data != null) __obj.updateDynamic("data")(data)
     if (detailCell != null) __obj.updateDynamic("detailCell")(detailCell)
     if (detailRow != null) __obj.updateDynamic("detailRow")(detailRow)

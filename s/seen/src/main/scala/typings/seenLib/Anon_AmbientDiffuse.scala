@@ -15,12 +15,12 @@ trait Anon_AmbientDiffuse extends js.Object {
 object Anon_AmbientDiffuse {
   @scala.inline
   def apply(
-    ambient: js.Function0[seenLib.seenMod.Ambient],
-    diffuse: js.Function0[seenLib.seenMod.DiffusePhong],
-    flat: js.Function0[seenLib.seenMod.Flat],
-    phong: js.Function0[seenLib.seenMod.Phong]
+    ambient: () => seenLib.seenMod.Ambient,
+    diffuse: () => seenLib.seenMod.DiffusePhong,
+    flat: () => seenLib.seenMod.Flat,
+    phong: () => seenLib.seenMod.Phong
   ): Anon_AmbientDiffuse = {
-    val __obj = js.Dynamic.literal(ambient = ambient, diffuse = diffuse, flat = flat, phong = phong)
+    val __obj = js.Dynamic.literal(ambient = js.Any.fromFunction0(ambient), diffuse = js.Any.fromFunction0(diffuse), flat = js.Any.fromFunction0(flat), phong = js.Any.fromFunction0(phong))
   
     __obj.asInstanceOf[Anon_AmbientDiffuse]
   }

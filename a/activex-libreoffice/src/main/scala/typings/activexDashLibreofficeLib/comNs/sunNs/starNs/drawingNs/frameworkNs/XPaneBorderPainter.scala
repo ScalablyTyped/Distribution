@@ -83,38 +83,13 @@ trait XPaneBorderPainter extends js.Object {
 object XPaneBorderPainter {
   @scala.inline
   def apply(
-    addBorder: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, 
-      BorderType, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle
-    ],
-    getCalloutOffset: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point],
-    paintBorder: js.Function5[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, 
-      java.lang.String, 
-      scala.Unit
-    ],
-    paintBorderWithCallout: js.Function6[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, 
-      scala.Unit
-    ],
-    removeBorder: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, 
-      BorderType, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle
-    ]
+    addBorder: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, BorderType) => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    getCalloutOffset: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    paintBorder: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, java.lang.String) => scala.Unit,
+    paintBorderWithCallout: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point) => scala.Unit,
+    removeBorder: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, BorderType) => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle
   ): XPaneBorderPainter = {
-    val __obj = js.Dynamic.literal(addBorder = addBorder, getCalloutOffset = getCalloutOffset, paintBorder = paintBorder, paintBorderWithCallout = paintBorderWithCallout, removeBorder = removeBorder)
+    val __obj = js.Dynamic.literal(addBorder = js.Any.fromFunction3(addBorder), getCalloutOffset = js.Any.fromFunction1(getCalloutOffset), paintBorder = js.Any.fromFunction5(paintBorder), paintBorderWithCallout = js.Any.fromFunction6(paintBorderWithCallout), removeBorder = js.Any.fromFunction3(removeBorder))
   
     __obj.asInstanceOf[XPaneBorderPainter]
   }

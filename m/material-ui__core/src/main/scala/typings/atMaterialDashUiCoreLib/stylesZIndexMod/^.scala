@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/styles/zIndex", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: atMaterialDashUiCoreLib.stylesZIndexMod.ZIndex = js.native
+  val default: ZIndex = js.native
 }
 

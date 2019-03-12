@@ -44,36 +44,15 @@ trait ReposResource extends js.Object {
 object ReposResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotSourcerepoLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Repo]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotSourcerepoLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotSourcerepoLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Repo]
-    ],
-    getIamPolicy: js.Function1[
-      gapiDotClientDotSourcerepoLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    list: js.Function1[
-      gapiDotClientDotSourcerepoLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListReposResponse]
-    ],
-    setIamPolicy: js.Function1[
-      gapiDotClientDotSourcerepoLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    testIamPermissions: js.Function1[
-      gapiDotClientDotSourcerepoLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
-    ]
+    create: gapiDotClientDotSourcerepoLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Repo],
+    delete: gapiDotClientDotSourcerepoLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotSourcerepoLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[Repo],
+    getIamPolicy: gapiDotClientDotSourcerepoLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    list: gapiDotClientDotSourcerepoLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[ListReposResponse],
+    setIamPolicy: gapiDotClientDotSourcerepoLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    testIamPermissions: gapiDotClientDotSourcerepoLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
   ): ReposResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, getIamPolicy = getIamPolicy, list = list, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), list = js.Any.fromFunction1(list), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions))
   
     __obj.asInstanceOf[ReposResource]
   }

@@ -29,7 +29,7 @@ object TableProps {
     headerRow: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsCollectionsTableTableRowMod.TableRowProps] = null,
     inverted: js.UndefOr[scala.Boolean] = js.undefined,
     padded: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.very = null,
-    renderBodyRow: js.Function2[/* data */ js.Any, /* index */ scala.Double, _] = null,
+    renderBodyRow: (/* data */ js.Any, /* index */ scala.Double) => _ = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
     singleLine: js.UndefOr[scala.Boolean] = js.undefined,
     size: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.small | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.large = null,
@@ -60,7 +60,7 @@ object TableProps {
     if (headerRow != null) __obj.updateDynamic("headerRow")(headerRow.asInstanceOf[js.Any])
     if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted)
     if (padded != null) __obj.updateDynamic("padded")(padded.asInstanceOf[js.Any])
-    if (renderBodyRow != null) __obj.updateDynamic("renderBodyRow")(renderBodyRow)
+    if (renderBodyRow != null) __obj.updateDynamic("renderBodyRow")(js.Any.fromFunction2(renderBodyRow))
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
     if (!js.isUndefined(singleLine)) __obj.updateDynamic("singleLine")(singleLine)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

@@ -39,23 +39,19 @@ object Anon_CallbackCancelChooseDesktopMedia {
   @scala.inline
   def apply(
     DesktopCaptureSourceType: Anon_AUDIO,
-    cancelChooseDesktopMedia: js.Function1[chromeDashAppsLib.chromeNs.integer, scala.Unit],
-    chooseDesktopMedia: js.Function2[
-      js.Array[
-        chromeDashAppsLib.chromeNs.ToStringLiteral[
-          /* import warning: ImportType.apply Failed type conversion: typeof DesktopCaptureSourceType */ js.Any, 
+    cancelChooseDesktopMedia: chromeDashAppsLib.chromeNs.integer => scala.Unit,
+    chooseDesktopMedia: (js.Array[
+      chromeDashAppsLib.chromeNs.ToStringLiteral[
+        /* import warning: ImportType.apply Failed type conversion: typeof DesktopCaptureSourceType */ js.Any, 
+        java.lang.String, 
+        stdLib.Exclude[
           java.lang.String, 
-          stdLib.Exclude[
-            java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: typeof DesktopCaptureSourceType[keyof typeof DesktopCaptureSourceType] */ js.Any
-          ]
+          /* import warning: ImportType.apply Failed type conversion: typeof DesktopCaptureSourceType[keyof typeof DesktopCaptureSourceType] */ js.Any
         ]
-      ], 
-      js.Function1[/* streamId */ java.lang.String, scala.Unit], 
-      chromeDashAppsLib.chromeNs.integer
-    ]
+      ]
+    ], js.Function1[/* streamId */ java.lang.String, scala.Unit]) => chromeDashAppsLib.chromeNs.integer
   ): Anon_CallbackCancelChooseDesktopMedia = {
-    val __obj = js.Dynamic.literal(DesktopCaptureSourceType = DesktopCaptureSourceType, cancelChooseDesktopMedia = cancelChooseDesktopMedia, chooseDesktopMedia = chooseDesktopMedia)
+    val __obj = js.Dynamic.literal(DesktopCaptureSourceType = DesktopCaptureSourceType, cancelChooseDesktopMedia = js.Any.fromFunction1(cancelChooseDesktopMedia), chooseDesktopMedia = js.Any.fromFunction2(chooseDesktopMedia))
   
     __obj.asInstanceOf[Anon_CallbackCancelChooseDesktopMedia]
   }

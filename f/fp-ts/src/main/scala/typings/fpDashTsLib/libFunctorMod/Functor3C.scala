@@ -18,13 +18,9 @@ object Functor3C {
     URI: F,
     _L: L,
     _U: U,
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
-    ]
+    map: (fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
   ): Functor3C[F, U, L] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], map = map)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], map = js.Any.fromFunction2(map))
   
     __obj.asInstanceOf[Functor3C[F, U, L]]
   }

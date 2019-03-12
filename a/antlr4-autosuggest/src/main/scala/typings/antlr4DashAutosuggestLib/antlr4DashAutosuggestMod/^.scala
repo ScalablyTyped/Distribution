@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def autosuggester(
-    lexerCtr: antlr4DashAutosuggestLib.antlr4DashAutosuggestMod.Constructor[antlr4Lib.antlr4Mod.Lexer],
-    parserCtr: antlr4DashAutosuggestLib.antlr4DashAutosuggestMod.Constructor[antlr4Lib.antlr4Mod.Parser]
-  ): antlr4DashAutosuggestLib.antlr4DashAutosuggestMod.AutoSuggester = js.native
+    lexerCtr: Constructor[antlr4Lib.antlr4Mod.Lexer],
+    parserCtr: Constructor[antlr4Lib.antlr4Mod.Parser]
+  ): AutoSuggester = js.native
   def autosuggester(
-    lexerCtr: antlr4DashAutosuggestLib.antlr4DashAutosuggestMod.Constructor[antlr4Lib.antlr4Mod.Lexer],
-    parserCtr: antlr4DashAutosuggestLib.antlr4DashAutosuggestMod.Constructor[antlr4Lib.antlr4Mod.Parser],
-    casePref: antlr4DashAutosuggestLib.antlr4DashAutosuggestMod.CasePreference
-  ): antlr4DashAutosuggestLib.antlr4DashAutosuggestMod.AutoSuggester = js.native
+    lexerCtr: Constructor[antlr4Lib.antlr4Mod.Lexer],
+    parserCtr: Constructor[antlr4Lib.antlr4Mod.Parser],
+    casePref: CasePreference
+  ): AutoSuggester = js.native
 }
 

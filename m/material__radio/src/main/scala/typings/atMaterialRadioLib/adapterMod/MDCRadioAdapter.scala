@@ -14,13 +14,11 @@ trait MDCRadioAdapter extends js.Object {
 object MDCRadioAdapter {
   @scala.inline
   def apply(
-    addClass: js.Function1[java.lang.String, scala.Unit],
-    getNativeControl: js.Function0[
-      atMaterialSelectionDashControlLib.atMaterialSelectionDashControlMod.MDCSelectionControlState
-    ],
-    removeClass: js.Function1[java.lang.String, scala.Unit]
+    addClass: java.lang.String => scala.Unit,
+    getNativeControl: () => atMaterialSelectionDashControlLib.atMaterialSelectionDashControlMod.MDCSelectionControlState,
+    removeClass: java.lang.String => scala.Unit
   ): MDCRadioAdapter = {
-    val __obj = js.Dynamic.literal(addClass = addClass, getNativeControl = getNativeControl, removeClass = removeClass)
+    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), getNativeControl = js.Any.fromFunction0(getNativeControl), removeClass = js.Any.fromFunction1(removeClass))
   
     __obj.asInstanceOf[MDCRadioAdapter]
   }

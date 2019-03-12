@@ -16,10 +16,10 @@ object Arguments {
   def apply(
     data: nodeLib.Buffer,
     key: nodeLib.Buffer,
-    progress_hook: js.Function1[/* progress */ Progress, scala.Unit] = null
+    progress_hook: /* progress */ Progress => scala.Unit = null
   ): Arguments = {
     val __obj = js.Dynamic.literal(data = data, key = key)
-    if (progress_hook != null) __obj.updateDynamic("progress_hook")(progress_hook)
+    if (progress_hook != null) __obj.updateDynamic("progress_hook")(js.Any.fromFunction1(progress_hook))
     __obj.asInstanceOf[Arguments]
   }
 }

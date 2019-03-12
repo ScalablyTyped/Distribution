@@ -20,7 +20,7 @@ trait Settings extends js.Object {
 object Settings {
   @scala.inline
   def apply(
-    callback: js.Function2[/* error */ stdLib.Error | scala.Null, /* update */ js.UndefOr[UpdateInfo], _] = null,
+    callback: (/* error */ stdLib.Error | scala.Null, /* update */ js.UndefOr[UpdateInfo]) => _ = null,
     packageName: java.lang.String = null,
     packageVersion: java.lang.String = null,
     pkg: Package = null,
@@ -28,7 +28,7 @@ object Settings {
     updateCheckInterval: scala.Int | scala.Double = null
   ): Settings = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
     if (packageName != null) __obj.updateDynamic("packageName")(packageName)
     if (packageVersion != null) __obj.updateDynamic("packageVersion")(packageVersion)
     if (pkg != null) __obj.updateDynamic("pkg")(pkg)

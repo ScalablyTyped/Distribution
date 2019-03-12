@@ -64,7 +64,7 @@ object INotifyOption {
     notifyClick: js.Function = null,
     notifyClose: js.Function = null,
     notifyError: js.Function = null,
-    notifyShow: js.Function1[/* e */ stdLib.Event, _] = null,
+    notifyShow: /* e */ stdLib.Event => _ = null,
     permissionDenied: js.Function = null,
     permissionGranted: js.Function = null,
     requireInteraction: js.UndefOr[scala.Boolean] = js.undefined,
@@ -77,7 +77,7 @@ object INotifyOption {
     if (notifyClick != null) __obj.updateDynamic("notifyClick")(notifyClick)
     if (notifyClose != null) __obj.updateDynamic("notifyClose")(notifyClose)
     if (notifyError != null) __obj.updateDynamic("notifyError")(notifyError)
-    if (notifyShow != null) __obj.updateDynamic("notifyShow")(notifyShow)
+    if (notifyShow != null) __obj.updateDynamic("notifyShow")(js.Any.fromFunction1(notifyShow))
     if (permissionDenied != null) __obj.updateDynamic("permissionDenied")(permissionDenied)
     if (permissionGranted != null) __obj.updateDynamic("permissionGranted")(permissionGranted)
     if (!js.isUndefined(requireInteraction)) __obj.updateDynamic("requireInteraction")(requireInteraction)

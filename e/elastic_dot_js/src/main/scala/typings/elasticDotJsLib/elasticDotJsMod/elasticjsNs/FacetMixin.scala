@@ -47,16 +47,16 @@ trait FacetMixin extends js.Object {
 object FacetMixin {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cacheFilter: js.Function1[scala.Boolean, FacetMixin],
-    facetFilter: js.Function1[js.Object, FacetMixin],
-    global: js.Function1[scala.Boolean, FacetMixin],
-    mode: js.Function1[java.lang.String, FacetMixin],
-    nested: js.Function1[java.lang.String, FacetMixin],
-    scope: js.Function1[java.lang.String, FacetMixin],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    cacheFilter: scala.Boolean => FacetMixin,
+    facetFilter: js.Object => FacetMixin,
+    global: scala.Boolean => FacetMixin,
+    mode: java.lang.String => FacetMixin,
+    nested: java.lang.String => FacetMixin,
+    scope: java.lang.String => FacetMixin,
+    toJSON: () => js.Any
   ): FacetMixin = {
-    val __obj = js.Dynamic.literal(_type = _type, cacheFilter = cacheFilter, facetFilter = facetFilter, global = global, mode = mode, nested = nested, scope = scope, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cacheFilter = js.Any.fromFunction1(cacheFilter), facetFilter = js.Any.fromFunction1(facetFilter), global = js.Any.fromFunction1(global), mode = js.Any.fromFunction1(mode), nested = js.Any.fromFunction1(nested), scope = js.Any.fromFunction1(scope), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[FacetMixin]
   }

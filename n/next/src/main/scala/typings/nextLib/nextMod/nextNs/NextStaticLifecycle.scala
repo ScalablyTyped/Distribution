@@ -17,9 +17,9 @@ trait NextStaticLifecycle[IP, C] extends js.Object {
 
 object NextStaticLifecycle {
   @scala.inline
-  def apply[IP, C](getInitialProps: js.Function1[/* ctx */ C, js.Promise[IP] | IP] = null): NextStaticLifecycle[IP, C] = {
+  def apply[IP, C](getInitialProps: /* ctx */ C => js.Promise[IP] | IP = null): NextStaticLifecycle[IP, C] = {
     val __obj = js.Dynamic.literal()
-    if (getInitialProps != null) __obj.updateDynamic("getInitialProps")(getInitialProps)
+    if (getInitialProps != null) __obj.updateDynamic("getInitialProps")(js.Any.fromFunction1(getInitialProps))
     __obj.asInstanceOf[NextStaticLifecycle[IP, C]]
   }
 }

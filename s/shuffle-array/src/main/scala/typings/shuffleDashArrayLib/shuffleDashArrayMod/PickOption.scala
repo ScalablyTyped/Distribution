@@ -16,10 +16,10 @@ trait PickOption extends js.Object {
 
 object PickOption {
   @scala.inline
-  def apply(picks: scala.Int | scala.Double = null, rng: js.Function0[scala.Double] = null): PickOption = {
+  def apply(picks: scala.Int | scala.Double = null, rng: () => scala.Double = null): PickOption = {
     val __obj = js.Dynamic.literal()
     if (picks != null) __obj.updateDynamic("picks")(picks.asInstanceOf[js.Any])
-    if (rng != null) __obj.updateDynamic("rng")(rng)
+    if (rng != null) __obj.updateDynamic("rng")(js.Any.fromFunction0(rng))
     __obj.asInstanceOf[PickOption]
   }
 }

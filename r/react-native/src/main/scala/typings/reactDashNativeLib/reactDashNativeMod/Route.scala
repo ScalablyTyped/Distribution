@@ -33,7 +33,7 @@ object Route {
     id: java.lang.String = null,
     index: scala.Int | scala.Double = null,
     message: java.lang.String = null,
-    onRightButtonPress: js.Function0[scala.Unit] = null,
+    onRightButtonPress: () => scala.Unit = null,
     passProps: js.Object = null,
     rightButtonTitle: java.lang.String = null,
     title: java.lang.String = null,
@@ -47,7 +47,7 @@ object Route {
     if (id != null) __obj.updateDynamic("id")(id)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message)
-    if (onRightButtonPress != null) __obj.updateDynamic("onRightButtonPress")(onRightButtonPress)
+    if (onRightButtonPress != null) __obj.updateDynamic("onRightButtonPress")(js.Any.fromFunction0(onRightButtonPress))
     if (passProps != null) __obj.updateDynamic("passProps")(passProps)
     if (rightButtonTitle != null) __obj.updateDynamic("rightButtonTitle")(rightButtonTitle)
     if (title != null) __obj.updateDynamic("title")(title)

@@ -15,12 +15,12 @@ trait Action extends js.Object {
 object Action {
   @scala.inline
   def apply(
-    setFunctionName: js.Function1[java.lang.String, Action],
-    setLoadIndicator: js.Function1[LoadIndicator, Action],
-    setMethodName: js.Function1[java.lang.String, Action],
-    setParameters: js.Function1[js.Object, Action]
+    setFunctionName: java.lang.String => Action,
+    setLoadIndicator: LoadIndicator => Action,
+    setMethodName: java.lang.String => Action,
+    setParameters: js.Object => Action
   ): Action = {
-    val __obj = js.Dynamic.literal(setFunctionName = setFunctionName, setLoadIndicator = setLoadIndicator, setMethodName = setMethodName, setParameters = setParameters)
+    val __obj = js.Dynamic.literal(setFunctionName = js.Any.fromFunction1(setFunctionName), setLoadIndicator = js.Any.fromFunction1(setLoadIndicator), setMethodName = js.Any.fromFunction1(setMethodName), setParameters = js.Any.fromFunction1(setParameters))
   
     __obj.asInstanceOf[Action]
   }

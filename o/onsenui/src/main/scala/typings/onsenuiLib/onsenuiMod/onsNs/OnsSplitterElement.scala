@@ -19,7 +19,7 @@ trait OnsSplitterElement
   /**
     * @description Retrieve the back button handler.
     */
-  var onDeviceBackButton: coreDashJsLib.Function = js.native
+  var onDeviceBackButton: js.Function = js.native
   /**
     * @description Right `<ons-splitter-side>` element.
     */

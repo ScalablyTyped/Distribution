@@ -37,13 +37,13 @@ trait XControlAccess
 object XControlAccess {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getControlProperty: js.Function2[java.lang.String, java.lang.String, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setControlProperty: js.Function3[java.lang.String, java.lang.String, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    getControlProperty: (java.lang.String, java.lang.String) => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setControlProperty: (java.lang.String, java.lang.String, js.Any) => scala.Unit
   ): XControlAccess = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getControlProperty = getControlProperty, queryInterface = queryInterface, release = release, setControlProperty = setControlProperty)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getControlProperty = js.Any.fromFunction2(getControlProperty), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setControlProperty = js.Any.fromFunction3(setControlProperty))
   
     __obj.asInstanceOf[XControlAccess]
   }

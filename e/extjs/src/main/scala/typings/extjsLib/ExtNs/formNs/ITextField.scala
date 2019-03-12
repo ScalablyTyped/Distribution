@@ -99,46 +99,46 @@ object ITextField {
   @scala.inline
   def apply(
     IBase: extjsLib.ExtNs.formNs.fieldNs.IBase = null,
-    afterComponentLayout: js.Function0[scala.Unit] = null,
-    afterRender: js.Function0[scala.Unit] = null,
+    afterComponentLayout: () => scala.Unit = null,
+    afterRender: () => scala.Unit = null,
     allowBlank: js.UndefOr[scala.Boolean] = js.undefined,
     allowOnlyWhitespace: js.UndefOr[scala.Boolean] = js.undefined,
-    applyState: js.Function1[/* state */ js.UndefOr[js.Any], scala.Unit] = null,
-    autoSize: js.Function0[scala.Unit] = null,
-    beforeFocus: js.Function0[scala.Unit] = null,
+    applyState: /* state */ js.UndefOr[js.Any] => scala.Unit = null,
+    autoSize: () => scala.Unit = null,
+    beforeFocus: () => scala.Unit = null,
     blankText: java.lang.String = null,
     disableKeyFilter: js.UndefOr[scala.Boolean] = js.undefined,
     emptyCls: java.lang.String = null,
     emptyText: java.lang.String = null,
     enableKeyEvents: js.UndefOr[scala.Boolean] = js.undefined,
     enforceMaxLength: js.UndefOr[scala.Boolean] = js.undefined,
-    getErrors: js.Function1[/* value */ js.UndefOr[js.Any], extjsLib.ExtNs.Array] = null,
-    getRawValue: js.Function0[java.lang.String] = null,
-    getState: js.Function0[_] = null,
-    getSubTplData: js.Function0[_] = null,
+    getErrors: /* value */ js.UndefOr[js.Any] => extjsLib.ExtNs.Array = null,
+    getRawValue: () => java.lang.String = null,
+    getState: () => _ = null,
+    getSubTplData: () => _ = null,
     grow: js.UndefOr[scala.Boolean] = js.undefined,
     growAppend: java.lang.String = null,
     growMax: scala.Int | scala.Double = null,
     growMin: scala.Int | scala.Double = null,
-    initComponent: js.Function0[scala.Unit] = null,
-    initEvents: js.Function0[scala.Unit] = null,
+    initComponent: () => scala.Unit = null,
+    initEvents: () => scala.Unit = null,
     maskRe: stdLib.RegExp = null,
     maxLength: scala.Int | scala.Double = null,
     maxLengthText: java.lang.String = null,
     minLength: scala.Int | scala.Double = null,
     minLengthText: java.lang.String = null,
-    onDestroy: js.Function0[scala.Unit] = null,
-    onDisable: js.Function0[scala.Unit] = null,
-    onEnable: js.Function0[scala.Unit] = null,
-    postBlur: js.Function0[scala.Unit] = null,
-    processRawValue: js.Function1[/* value */ js.UndefOr[java.lang.String], java.lang.String] = null,
+    onDestroy: () => scala.Unit = null,
+    onDisable: () => scala.Unit = null,
+    onEnable: () => scala.Unit = null,
+    postBlur: () => scala.Unit = null,
+    processRawValue: /* value */ js.UndefOr[java.lang.String] => java.lang.String = null,
     regex: stdLib.RegExp = null,
     regexText: java.lang.String = null,
     requiredCls: java.lang.String = null,
-    reset: js.Function0[scala.Unit] = null,
+    reset: () => scala.Unit = null,
     selectOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
-    selectText: js.Function2[/* start */ js.UndefOr[scala.Double], /* end */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setValue: js.Function1[/* value */ js.UndefOr[js.Any], _] = null,
+    selectText: (/* start */ js.UndefOr[scala.Double], /* end */ js.UndefOr[scala.Double]) => scala.Unit = null,
+    setValue: /* value */ js.UndefOr[js.Any] => _ = null,
     size: scala.Int | scala.Double = null,
     stripCharsRe: stdLib.RegExp = null,
     validateBlank: js.UndefOr[scala.Boolean] = js.undefined,
@@ -148,46 +148,46 @@ object ITextField {
   ): ITextField = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IBase)
-    if (afterComponentLayout != null) __obj.updateDynamic("afterComponentLayout")(afterComponentLayout)
-    if (afterRender != null) __obj.updateDynamic("afterRender")(afterRender)
+    if (afterComponentLayout != null) __obj.updateDynamic("afterComponentLayout")(js.Any.fromFunction0(afterComponentLayout))
+    if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction0(afterRender))
     if (!js.isUndefined(allowBlank)) __obj.updateDynamic("allowBlank")(allowBlank)
     if (!js.isUndefined(allowOnlyWhitespace)) __obj.updateDynamic("allowOnlyWhitespace")(allowOnlyWhitespace)
-    if (applyState != null) __obj.updateDynamic("applyState")(applyState)
-    if (autoSize != null) __obj.updateDynamic("autoSize")(autoSize)
-    if (beforeFocus != null) __obj.updateDynamic("beforeFocus")(beforeFocus)
+    if (applyState != null) __obj.updateDynamic("applyState")(js.Any.fromFunction1(applyState))
+    if (autoSize != null) __obj.updateDynamic("autoSize")(js.Any.fromFunction0(autoSize))
+    if (beforeFocus != null) __obj.updateDynamic("beforeFocus")(js.Any.fromFunction0(beforeFocus))
     if (blankText != null) __obj.updateDynamic("blankText")(blankText)
     if (!js.isUndefined(disableKeyFilter)) __obj.updateDynamic("disableKeyFilter")(disableKeyFilter)
     if (emptyCls != null) __obj.updateDynamic("emptyCls")(emptyCls)
     if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText)
     if (!js.isUndefined(enableKeyEvents)) __obj.updateDynamic("enableKeyEvents")(enableKeyEvents)
     if (!js.isUndefined(enforceMaxLength)) __obj.updateDynamic("enforceMaxLength")(enforceMaxLength)
-    if (getErrors != null) __obj.updateDynamic("getErrors")(getErrors)
-    if (getRawValue != null) __obj.updateDynamic("getRawValue")(getRawValue)
-    if (getState != null) __obj.updateDynamic("getState")(getState)
-    if (getSubTplData != null) __obj.updateDynamic("getSubTplData")(getSubTplData)
+    if (getErrors != null) __obj.updateDynamic("getErrors")(js.Any.fromFunction1(getErrors))
+    if (getRawValue != null) __obj.updateDynamic("getRawValue")(js.Any.fromFunction0(getRawValue))
+    if (getState != null) __obj.updateDynamic("getState")(js.Any.fromFunction0(getState))
+    if (getSubTplData != null) __obj.updateDynamic("getSubTplData")(js.Any.fromFunction0(getSubTplData))
     if (!js.isUndefined(grow)) __obj.updateDynamic("grow")(grow)
     if (growAppend != null) __obj.updateDynamic("growAppend")(growAppend)
     if (growMax != null) __obj.updateDynamic("growMax")(growMax.asInstanceOf[js.Any])
     if (growMin != null) __obj.updateDynamic("growMin")(growMin.asInstanceOf[js.Any])
-    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
-    if (initEvents != null) __obj.updateDynamic("initEvents")(initEvents)
+    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
+    if (initEvents != null) __obj.updateDynamic("initEvents")(js.Any.fromFunction0(initEvents))
     if (maskRe != null) __obj.updateDynamic("maskRe")(maskRe)
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (maxLengthText != null) __obj.updateDynamic("maxLengthText")(maxLengthText)
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
     if (minLengthText != null) __obj.updateDynamic("minLengthText")(minLengthText)
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(onDestroy)
-    if (onDisable != null) __obj.updateDynamic("onDisable")(onDisable)
-    if (onEnable != null) __obj.updateDynamic("onEnable")(onEnable)
-    if (postBlur != null) __obj.updateDynamic("postBlur")(postBlur)
-    if (processRawValue != null) __obj.updateDynamic("processRawValue")(processRawValue)
+    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
+    if (onDisable != null) __obj.updateDynamic("onDisable")(js.Any.fromFunction0(onDisable))
+    if (onEnable != null) __obj.updateDynamic("onEnable")(js.Any.fromFunction0(onEnable))
+    if (postBlur != null) __obj.updateDynamic("postBlur")(js.Any.fromFunction0(postBlur))
+    if (processRawValue != null) __obj.updateDynamic("processRawValue")(js.Any.fromFunction1(processRawValue))
     if (regex != null) __obj.updateDynamic("regex")(regex)
     if (regexText != null) __obj.updateDynamic("regexText")(regexText)
     if (requiredCls != null) __obj.updateDynamic("requiredCls")(requiredCls)
-    if (reset != null) __obj.updateDynamic("reset")(reset)
+    if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
     if (!js.isUndefined(selectOnFocus)) __obj.updateDynamic("selectOnFocus")(selectOnFocus)
-    if (selectText != null) __obj.updateDynamic("selectText")(selectText)
-    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
+    if (selectText != null) __obj.updateDynamic("selectText")(js.Any.fromFunction2(selectText))
+    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (stripCharsRe != null) __obj.updateDynamic("stripCharsRe")(stripCharsRe)
     if (!js.isUndefined(validateBlank)) __obj.updateDynamic("validateBlank")(validateBlank)

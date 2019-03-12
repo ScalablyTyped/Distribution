@@ -28,17 +28,13 @@ trait RestlerResult extends js.Object {
 object RestlerResult {
   @scala.inline
   def apply(
-    on: js.Function2[
-      java.lang.String, 
-      js.Function2[
-        /* data */ js.UndefOr[js.Any], 
-        /* response */ js.UndefOr[nodeLib.httpMod.ServerResponse], 
-        scala.Unit
-      ], 
-      RestlerResult
-    ]
+    on: (java.lang.String, js.Function2[
+      /* data */ js.UndefOr[js.Any], 
+      /* response */ js.UndefOr[nodeLib.httpMod.ServerResponse], 
+      scala.Unit
+    ]) => RestlerResult
   ): RestlerResult = {
-    val __obj = js.Dynamic.literal(on = on)
+    val __obj = js.Dynamic.literal(on = js.Any.fromFunction2(on))
   
     __obj.asInstanceOf[RestlerResult]
   }

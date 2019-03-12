@@ -11,8 +11,8 @@ trait Element extends js.Object {
 
 object Element {
   @scala.inline
-  def apply(webkitRequestFullScreen: js.Function0[scala.Unit]): Element = {
-    val __obj = js.Dynamic.literal(webkitRequestFullScreen = webkitRequestFullScreen)
+  def apply(webkitRequestFullScreen: () => scala.Unit): Element = {
+    val __obj = js.Dynamic.literal(webkitRequestFullScreen = js.Any.fromFunction0(webkitRequestFullScreen))
   
     __obj.asInstanceOf[Element]
   }

@@ -11,8 +11,8 @@ trait IMouseDeviceStatics extends js.Object {
 
 object IMouseDeviceStatics {
   @scala.inline
-  def apply(getForCurrentView: js.Function0[MouseDevice]): IMouseDeviceStatics = {
-    val __obj = js.Dynamic.literal(getForCurrentView = getForCurrentView)
+  def apply(getForCurrentView: () => MouseDevice): IMouseDeviceStatics = {
+    val __obj = js.Dynamic.literal(getForCurrentView = js.Any.fromFunction0(getForCurrentView))
   
     __obj.asInstanceOf[IMouseDeviceStatics]
   }

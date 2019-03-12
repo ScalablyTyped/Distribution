@@ -37,7 +37,7 @@ object ^ extends js.Object {
   def className(name: java.lang.String): js.Function1[/* target */ js.Object, scala.Unit] = js.native
   def className(name: java.lang.String, module: java.lang.String): js.Function1[/* target */ js.Object, scala.Unit] = js.native
   def expandToProperty(callback: java.lang.String): js.Function2[/* target */ js.Any, /* propertyKey */ java.lang.String, scala.Unit] = js.native
-  def expandToProperty(callback: java.lang.String, targetKey: babylonjsLib.BABYLONNs.Nullable[java.lang.String]): js.Function2[/* target */ js.Any, /* propertyKey */ java.lang.String, scala.Unit] = js.native
+  def expandToProperty(callback: java.lang.String, targetKey: Nullable[java.lang.String]): js.Function2[/* target */ js.Any, /* propertyKey */ java.lang.String, scala.Unit] = js.native
   def serialize(): js.Function2[/* target */ js.Any, /* propertyKey */ java.lang.String | js.Symbol, scala.Unit] = js.native
   def serialize(sourceName: java.lang.String): js.Function2[/* target */ js.Any, /* propertyKey */ java.lang.String | js.Symbol, scala.Unit] = js.native
   /**

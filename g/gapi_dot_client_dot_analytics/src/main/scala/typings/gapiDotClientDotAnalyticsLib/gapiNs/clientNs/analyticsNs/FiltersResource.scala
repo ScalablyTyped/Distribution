@@ -23,32 +23,14 @@ trait FiltersResource extends js.Object {
 object FiltersResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsFilterId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Filter]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsFilterId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Filter]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Filter]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Filters]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsFilterId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Filter]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsFilterId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Filter]
-    ]
+    delete: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsFilterId => gapiDotClientLib.gapiNs.clientNs.Request[Filter],
+    get: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsFilterId => gapiDotClientLib.gapiNs.clientNs.Request[Filter],
+    insert: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFields => gapiDotClientLib.gapiNs.clientNs.Request[Filter],
+    list: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Filters],
+    patch: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsFilterId => gapiDotClientLib.gapiNs.clientNs.Request[Filter],
+    update: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsFilterId => gapiDotClientLib.gapiNs.clientNs.Request[Filter]
   ): FiltersResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[FiltersResource]
   }

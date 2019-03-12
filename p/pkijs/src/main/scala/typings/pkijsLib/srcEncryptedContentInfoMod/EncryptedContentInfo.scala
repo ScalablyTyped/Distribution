@@ -20,11 +20,11 @@ object EncryptedContentInfo {
     contentEncryptionAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
     eContentType: java.lang.String,
     encryptedContent: asn1jsLib.asn1jsMod.OctetString,
-    fromSchema: js.Function1[js.Any, scala.Unit],
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    fromSchema: js.Any => scala.Unit,
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): EncryptedContentInfo = {
-    val __obj = js.Dynamic.literal(contentEncryptionAlgorithm = contentEncryptionAlgorithm, eContentType = eContentType, encryptedContent = encryptedContent, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(contentEncryptionAlgorithm = contentEncryptionAlgorithm, eContentType = eContentType, encryptedContent = encryptedContent, fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[EncryptedContentInfo]
   }

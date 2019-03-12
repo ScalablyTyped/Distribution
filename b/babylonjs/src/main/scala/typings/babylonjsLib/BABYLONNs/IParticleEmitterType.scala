@@ -54,16 +54,16 @@ trait IParticleEmitterType extends js.Object {
 object IParticleEmitterType {
   @scala.inline
   def apply(
-    applyToShader: js.Function1[Effect, scala.Unit],
-    clone: js.Function0[IParticleEmitterType],
-    getClassName: js.Function0[java.lang.String],
-    getEffectDefines: js.Function0[java.lang.String],
-    parse: js.Function1[js.Any, scala.Unit],
-    serialize: js.Function0[js.Any],
-    startDirectionFunction: js.Function3[Matrix, Vector3, Particle, scala.Unit],
-    startPositionFunction: js.Function3[Matrix, Vector3, Particle, scala.Unit]
+    applyToShader: Effect => scala.Unit,
+    clone: () => IParticleEmitterType,
+    getClassName: () => java.lang.String,
+    getEffectDefines: () => java.lang.String,
+    parse: js.Any => scala.Unit,
+    serialize: () => js.Any,
+    startDirectionFunction: (Matrix, Vector3, Particle) => scala.Unit,
+    startPositionFunction: (Matrix, Vector3, Particle) => scala.Unit
   ): IParticleEmitterType = {
-    val __obj = js.Dynamic.literal(applyToShader = applyToShader, clone = clone, getClassName = getClassName, getEffectDefines = getEffectDefines, parse = parse, serialize = serialize, startDirectionFunction = startDirectionFunction, startPositionFunction = startPositionFunction)
+    val __obj = js.Dynamic.literal(applyToShader = js.Any.fromFunction1(applyToShader), clone = js.Any.fromFunction0(clone), getClassName = js.Any.fromFunction0(getClassName), getEffectDefines = js.Any.fromFunction0(getEffectDefines), parse = js.Any.fromFunction1(parse), serialize = js.Any.fromFunction0(serialize), startDirectionFunction = js.Any.fromFunction3(startDirectionFunction), startPositionFunction = js.Any.fromFunction3(startPositionFunction))
   
     __obj.asInstanceOf[IParticleEmitterType]
   }

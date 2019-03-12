@@ -29,11 +29,11 @@ trait NodeSingularMetadata extends js.Object {
 object NodeSingularMetadata {
   @scala.inline
   def apply(
-    degree: js.Function1[scala.Boolean, scala.Double],
-    indegree: js.Function1[scala.Boolean, scala.Double],
-    outdegree: js.Function1[scala.Boolean, scala.Double]
+    degree: scala.Boolean => scala.Double,
+    indegree: scala.Boolean => scala.Double,
+    outdegree: scala.Boolean => scala.Double
   ): NodeSingularMetadata = {
-    val __obj = js.Dynamic.literal(degree = degree, indegree = indegree, outdegree = outdegree)
+    val __obj = js.Dynamic.literal(degree = js.Any.fromFunction1(degree), indegree = js.Any.fromFunction1(indegree), outdegree = js.Any.fromFunction1(outdegree))
   
     __obj.asInstanceOf[NodeSingularMetadata]
   }

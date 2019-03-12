@@ -19,16 +19,10 @@ trait V1Resource extends js.Object {
 object V1Resource {
   @scala.inline
   def apply(
-    getLinkStats: js.Function1[
-      gapiDotClientDotFirebasedynamiclinksLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DynamicLinkStats]
-    ],
-    installAttribution: js.Function1[
-      gapiDotClientDotFirebasedynamiclinksLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GetIosPostInstallAttributionResponse]
-    ]
+    getLinkStats: gapiDotClientDotFirebasedynamiclinksLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[DynamicLinkStats],
+    installAttribution: gapiDotClientDotFirebasedynamiclinksLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[GetIosPostInstallAttributionResponse]
   ): V1Resource = {
-    val __obj = js.Dynamic.literal(getLinkStats = getLinkStats, installAttribution = installAttribution)
+    val __obj = js.Dynamic.literal(getLinkStats = js.Any.fromFunction1(getLinkStats), installAttribution = js.Any.fromFunction1(installAttribution))
   
     __obj.asInstanceOf[V1Resource]
   }

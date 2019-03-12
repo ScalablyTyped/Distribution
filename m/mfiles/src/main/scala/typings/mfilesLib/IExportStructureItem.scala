@@ -15,12 +15,12 @@ trait IExportStructureItem extends js.Object {
 object IExportStructureItem {
   @scala.inline
   def apply(
-    Clone: js.Function0[IExportStructureItem],
+    Clone: () => IExportStructureItem,
     StructureItemGUID: java.lang.String,
     StructureItemID: scala.Double,
     StructureItemType: mfilesLib.MFilesNs.MFMetadataStructureItem
   ): IExportStructureItem = {
-    val __obj = js.Dynamic.literal(Clone = Clone, StructureItemGUID = StructureItemGUID, StructureItemID = StructureItemID, StructureItemType = StructureItemType)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), StructureItemGUID = StructureItemGUID, StructureItemID = StructureItemID, StructureItemType = StructureItemType)
   
     __obj.asInstanceOf[IExportStructureItem]
   }

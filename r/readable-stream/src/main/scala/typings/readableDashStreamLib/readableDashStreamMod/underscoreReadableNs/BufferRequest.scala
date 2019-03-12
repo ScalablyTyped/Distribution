@@ -13,6 +13,6 @@ trait BufferRequest extends js.Object {
   var isBuf: scala.Boolean = js.native
   var next: BufferRequest | scala.Null = js.native
   def callback(): scala.Unit = js.native
-  def callback(error: nodeLib.Error): scala.Unit = js.native
+  def callback(error: stdLib.Error): scala.Unit = js.native
 }
 

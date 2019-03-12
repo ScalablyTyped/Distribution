@@ -9,7 +9,7 @@ trait DeleteBackupInput extends js.Object {
   /**
     * The ARN associated with the backup.
     */
-  var BackupArn: BackupArn
+  var BackupArn: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.BackupArn
 }
 
 object DeleteBackupInput {

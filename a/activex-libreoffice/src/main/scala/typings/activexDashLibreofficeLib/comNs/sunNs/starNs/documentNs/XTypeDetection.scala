@@ -49,19 +49,15 @@ trait XTypeDetection
 object XTypeDetection {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    queryTypeByDescriptor: js.Function2[
-      js.Array[
-        activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-      ], 
-      scala.Boolean, 
-      java.lang.String
-    ],
-    queryTypeByURL: js.Function1[java.lang.String, java.lang.String],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    queryTypeByDescriptor: (js.Array[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ], scala.Boolean) => java.lang.String,
+    queryTypeByURL: java.lang.String => java.lang.String,
+    release: () => scala.Unit
   ): XTypeDetection = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, queryTypeByDescriptor = queryTypeByDescriptor, queryTypeByURL = queryTypeByURL, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), queryTypeByDescriptor = js.Any.fromFunction2(queryTypeByDescriptor), queryTypeByURL = js.Any.fromFunction1(queryTypeByURL), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTypeDetection]
   }

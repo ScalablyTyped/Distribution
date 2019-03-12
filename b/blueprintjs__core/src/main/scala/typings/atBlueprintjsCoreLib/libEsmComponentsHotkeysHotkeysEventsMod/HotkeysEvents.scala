@@ -13,8 +13,8 @@ class HotkeysEvents protected () extends js.Object {
   var scope: js.Any = js.native
   def clear(): scala.Unit = js.native
   def count(): scala.Double = js.native
-  def handleKeyDown(e: reactLib.KeyboardEvent): scala.Unit = js.native
-  def handleKeyUp(e: reactLib.KeyboardEvent): scala.Unit = js.native
+  def handleKeyDown(e: stdLib.KeyboardEvent): scala.Unit = js.native
+  def handleKeyUp(e: stdLib.KeyboardEvent): scala.Unit = js.native
   /* private */ def invokeNamedCallbackIfComboRecognized(combo: js.Any, callbackName: js.Any, e: js.Any): js.Any = js.native
   /* private */ def isScope(props: js.Any): js.Any = js.native
   /* private */ def isTextInput(e: js.Any): js.Any = js.native

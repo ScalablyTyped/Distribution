@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.BuildingBlock")
 @js.native
 class BuildingBlock protected () extends js.Object {
-  val Application: Application = js.native
-  val Category: Category = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
+  val Category: activexDashWordLib.WordNs.Category = js.native
   val Creator: scala.Double = js.native
   var Description: java.lang.String = js.native
   val ID: java.lang.String = js.native

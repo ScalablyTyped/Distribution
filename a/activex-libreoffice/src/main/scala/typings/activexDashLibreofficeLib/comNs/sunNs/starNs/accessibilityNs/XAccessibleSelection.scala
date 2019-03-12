@@ -80,18 +80,18 @@ object XAccessibleSelection {
   @scala.inline
   def apply(
     SelectedAccessibleChildCount: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    clearAccessibleSelection: js.Function0[scala.Unit],
-    deselectAccessibleChild: js.Function1[scala.Double, scala.Unit],
-    getSelectedAccessibleChild: js.Function1[scala.Double, XAccessible],
-    getSelectedAccessibleChildCount: js.Function0[scala.Double],
-    isAccessibleChildSelected: js.Function1[scala.Double, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    selectAccessibleChild: js.Function1[scala.Double, scala.Unit],
-    selectAllAccessibleChildren: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    clearAccessibleSelection: () => scala.Unit,
+    deselectAccessibleChild: scala.Double => scala.Unit,
+    getSelectedAccessibleChild: scala.Double => XAccessible,
+    getSelectedAccessibleChildCount: () => scala.Double,
+    isAccessibleChildSelected: scala.Double => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    selectAccessibleChild: scala.Double => scala.Unit,
+    selectAllAccessibleChildren: () => scala.Unit
   ): XAccessibleSelection = {
-    val __obj = js.Dynamic.literal(SelectedAccessibleChildCount = SelectedAccessibleChildCount, acquire = acquire, clearAccessibleSelection = clearAccessibleSelection, deselectAccessibleChild = deselectAccessibleChild, getSelectedAccessibleChild = getSelectedAccessibleChild, getSelectedAccessibleChildCount = getSelectedAccessibleChildCount, isAccessibleChildSelected = isAccessibleChildSelected, queryInterface = queryInterface, release = release, selectAccessibleChild = selectAccessibleChild, selectAllAccessibleChildren = selectAllAccessibleChildren)
+    val __obj = js.Dynamic.literal(SelectedAccessibleChildCount = SelectedAccessibleChildCount, acquire = js.Any.fromFunction0(acquire), clearAccessibleSelection = js.Any.fromFunction0(clearAccessibleSelection), deselectAccessibleChild = js.Any.fromFunction1(deselectAccessibleChild), getSelectedAccessibleChild = js.Any.fromFunction1(getSelectedAccessibleChild), getSelectedAccessibleChildCount = js.Any.fromFunction0(getSelectedAccessibleChildCount), isAccessibleChildSelected = js.Any.fromFunction1(isAccessibleChildSelected), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), selectAccessibleChild = js.Any.fromFunction1(selectAccessibleChild), selectAllAccessibleChildren = js.Any.fromFunction0(selectAllAccessibleChildren))
   
     __obj.asInstanceOf[XAccessibleSelection]
   }

@@ -26,7 +26,7 @@ trait SliderOptions extends js.Object {
 object SliderOptions {
   @scala.inline
   def apply(
-    change: js.Function1[/* e */ SliderChangeEvent, scala.Unit] = null,
+    change: /* e */ SliderChangeEvent => scala.Unit = null,
     decreaseButtonTitle: java.lang.String = null,
     dragHandleTitle: java.lang.String = null,
     increaseButtonTitle: java.lang.String = null,
@@ -36,14 +36,14 @@ object SliderOptions {
     name: java.lang.String = null,
     orientation: java.lang.String = null,
     showButtons: js.UndefOr[scala.Boolean] = js.undefined,
-    slide: js.Function1[/* e */ SliderSlideEvent, scala.Unit] = null,
+    slide: /* e */ SliderSlideEvent => scala.Unit = null,
     smallStep: scala.Int | scala.Double = null,
     tickPlacement: java.lang.String = null,
     tooltip: SliderTooltip = null,
     value: scala.Int | scala.Double = null
   ): SliderOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (decreaseButtonTitle != null) __obj.updateDynamic("decreaseButtonTitle")(decreaseButtonTitle)
     if (dragHandleTitle != null) __obj.updateDynamic("dragHandleTitle")(dragHandleTitle)
     if (increaseButtonTitle != null) __obj.updateDynamic("increaseButtonTitle")(increaseButtonTitle)
@@ -53,7 +53,7 @@ object SliderOptions {
     if (name != null) __obj.updateDynamic("name")(name)
     if (orientation != null) __obj.updateDynamic("orientation")(orientation)
     if (!js.isUndefined(showButtons)) __obj.updateDynamic("showButtons")(showButtons)
-    if (slide != null) __obj.updateDynamic("slide")(slide)
+    if (slide != null) __obj.updateDynamic("slide")(js.Any.fromFunction1(slide))
     if (smallStep != null) __obj.updateDynamic("smallStep")(smallStep.asInstanceOf[js.Any])
     if (tickPlacement != null) __obj.updateDynamic("tickPlacement")(tickPlacement)
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)

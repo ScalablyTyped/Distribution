@@ -89,19 +89,19 @@ object TweenConfig {
     ease: Ease = null,
     immediateRender: js.UndefOr[scala.Boolean] = js.undefined,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
-    onComplete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    onComplete: /* repeated */ js.Any => scala.Unit = null,
     onCompleteParams: js.Array[_] = null,
     onCompleteScope: js.Object = null,
-    onOverwrite: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    onRepeat: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    onOverwrite: /* repeated */ js.Any => scala.Unit = null,
+    onRepeat: /* repeated */ js.Any => scala.Unit = null,
     onRepeatScope: js.Object = null,
-    onReverseComplete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    onReverseComplete: /* repeated */ js.Any => scala.Unit = null,
     onReverseCompleteParams: js.Array[_] = null,
     onReverseCompleteScope: js.Object = null,
-    onStart: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    onStart: /* repeated */ js.Any => scala.Unit = null,
     onStartParams: js.Array[_] = null,
     onStartScope: js.Object = null,
-    onUpdate: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    onUpdate: /* repeated */ js.Any => scala.Unit = null,
     onUpdateParams: js.Array[_] = null,
     onUpdateScope: js.Object = null,
     overwrite: java.lang.String | scala.Double = null,
@@ -120,19 +120,19 @@ object TweenConfig {
     if (ease != null) __obj.updateDynamic("ease")(ease)
     if (!js.isUndefined(immediateRender)) __obj.updateDynamic("immediateRender")(immediateRender)
     if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
-    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
     if (onCompleteParams != null) __obj.updateDynamic("onCompleteParams")(onCompleteParams)
     if (onCompleteScope != null) __obj.updateDynamic("onCompleteScope")(onCompleteScope)
-    if (onOverwrite != null) __obj.updateDynamic("onOverwrite")(onOverwrite)
-    if (onRepeat != null) __obj.updateDynamic("onRepeat")(onRepeat)
+    if (onOverwrite != null) __obj.updateDynamic("onOverwrite")(js.Any.fromFunction1(onOverwrite))
+    if (onRepeat != null) __obj.updateDynamic("onRepeat")(js.Any.fromFunction1(onRepeat))
     if (onRepeatScope != null) __obj.updateDynamic("onRepeatScope")(onRepeatScope)
-    if (onReverseComplete != null) __obj.updateDynamic("onReverseComplete")(onReverseComplete)
+    if (onReverseComplete != null) __obj.updateDynamic("onReverseComplete")(js.Any.fromFunction1(onReverseComplete))
     if (onReverseCompleteParams != null) __obj.updateDynamic("onReverseCompleteParams")(onReverseCompleteParams)
     if (onReverseCompleteScope != null) __obj.updateDynamic("onReverseCompleteScope")(onReverseCompleteScope)
-    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
+    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction1(onStart))
     if (onStartParams != null) __obj.updateDynamic("onStartParams")(onStartParams)
     if (onStartScope != null) __obj.updateDynamic("onStartScope")(onStartScope)
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
     if (onUpdateParams != null) __obj.updateDynamic("onUpdateParams")(onUpdateParams)
     if (onUpdateScope != null) __obj.updateDynamic("onUpdateScope")(onUpdateScope)
     if (overwrite != null) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])

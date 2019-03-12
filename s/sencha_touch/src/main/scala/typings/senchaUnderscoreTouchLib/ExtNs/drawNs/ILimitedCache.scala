@@ -53,29 +53,29 @@ object ILimitedCache {
   def apply(
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    clear: js.Function0[scala.Unit] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
+    clear: () => scala.Unit = null,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     extend: java.lang.String = null,
     feeder: js.Any = null,
-    get: js.Function2[/* id */ java.lang.String, /* repeated */ js.Any, _] = null,
-    getFeeder: js.Function0[_] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getLimit: js.Function0[scala.Double] = null,
-    getScope: js.Function0[_] = null,
+    get: (/* id */ java.lang.String, /* repeated */ js.Any) => _ = null,
+    getFeeder: () => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getLimit: () => scala.Double = null,
+    getScope: () => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     limit: scala.Int | scala.Double = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     scope: js.Any = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setFeeder: js.Function1[/* feeder */ js.UndefOr[js.Any], scala.Double] = null,
-    setLimit: js.Function1[/* limit */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setScope: js.Function1[/* scope */ js.UndefOr[js.Any], scala.Unit] = null,
+    setFeeder: /* feeder */ js.UndefOr[js.Any] => scala.Double = null,
+    setLimit: /* limit */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setScope: /* scope */ js.UndefOr[js.Any] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null
@@ -83,29 +83,29 @@ object ILimitedCache {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
-    if (clear != null) __obj.updateDynamic("clear")(clear)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
+    if (clear != null) __obj.updateDynamic("clear")(js.Any.fromFunction0(clear))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (extend != null) __obj.updateDynamic("extend")(extend)
     if (feeder != null) __obj.updateDynamic("feeder")(feeder)
-    if (get != null) __obj.updateDynamic("get")(get)
-    if (getFeeder != null) __obj.updateDynamic("getFeeder")(getFeeder)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getLimit != null) __obj.updateDynamic("getLimit")(getLimit)
-    if (getScope != null) __obj.updateDynamic("getScope")(getScope)
+    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction2(get))
+    if (getFeeder != null) __obj.updateDynamic("getFeeder")(js.Any.fromFunction0(getFeeder))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getLimit != null) __obj.updateDynamic("getLimit")(js.Any.fromFunction0(getLimit))
+    if (getScope != null) __obj.updateDynamic("getScope")(js.Any.fromFunction0(getScope))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
     if (scope != null) __obj.updateDynamic("scope")(scope)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setFeeder != null) __obj.updateDynamic("setFeeder")(setFeeder)
-    if (setLimit != null) __obj.updateDynamic("setLimit")(setLimit)
-    if (setScope != null) __obj.updateDynamic("setScope")(setScope)
+    if (setFeeder != null) __obj.updateDynamic("setFeeder")(js.Any.fromFunction1(setFeeder))
+    if (setLimit != null) __obj.updateDynamic("setLimit")(js.Any.fromFunction1(setLimit))
+    if (setScope != null) __obj.updateDynamic("setScope")(js.Any.fromFunction1(setScope))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (uses != null) __obj.updateDynamic("uses")(uses)

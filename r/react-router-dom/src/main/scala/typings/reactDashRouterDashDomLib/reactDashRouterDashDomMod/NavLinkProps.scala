@@ -27,11 +27,7 @@ object NavLinkProps {
     activeClassName: java.lang.String = null,
     activeStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     exact: js.UndefOr[scala.Boolean] = js.undefined,
-    isActive: js.Function2[
-      /* match */ reactDashRouterLib.reactDashRouterMod.`match`[_], 
-      /* location */ historyLib.historyMod.Location[historyLib.historyMod.LocationState], 
-      scala.Boolean
-    ] = null,
+    isActive: (/* match */ reactDashRouterLib.reactDashRouterMod.`match`[_], /* location */ historyLib.historyMod.Location[historyLib.historyMod.LocationState]) => scala.Boolean = null,
     location: historyLib.historyMod.Location[historyLib.historyMod.LocationState] = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined
   ): NavLinkProps = {
@@ -40,7 +36,7 @@ object NavLinkProps {
     if (activeClassName != null) __obj.updateDynamic("activeClassName")(activeClassName)
     if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle)
     if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
-    if (isActive != null) __obj.updateDynamic("isActive")(isActive)
+    if (isActive != null) __obj.updateDynamic("isActive")(js.Any.fromFunction2(isActive))
     if (location != null) __obj.updateDynamic("location")(location)
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
     __obj.asInstanceOf[NavLinkProps]

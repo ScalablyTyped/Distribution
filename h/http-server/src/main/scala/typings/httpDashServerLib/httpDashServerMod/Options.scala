@@ -21,7 +21,7 @@ trait Options extends js.Object {
     js.Function3[
       /* req */ nodeLib.httpMod.IncomingMessage, 
       /* res */ nodeLib.httpMod.ServerResponse, 
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       scala.Unit
     ]
   ] = js.undefined
@@ -45,12 +45,7 @@ object Options {
     gzip: js.UndefOr[scala.Boolean] = js.undefined,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     https: nodeLib.httpsMod.ServerOptions = null,
-    logFn: js.Function3[
-      /* req */ nodeLib.httpMod.IncomingMessage, 
-      /* res */ nodeLib.httpMod.ServerResponse, 
-      /* err */ nodeLib.Error, 
-      scala.Unit
-    ] = null,
+    logFn: (/* req */ nodeLib.httpMod.IncomingMessage, /* res */ nodeLib.httpMod.ServerResponse, /* err */ stdLib.Error) => scala.Unit = null,
     proxy: java.lang.String = null,
     robots: java.lang.String | httpDashServerLib.httpDashServerLibNumbers.`true` = null,
     root: java.lang.String = null,
@@ -68,7 +63,7 @@ object Options {
     if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (https != null) __obj.updateDynamic("https")(https)
-    if (logFn != null) __obj.updateDynamic("logFn")(logFn)
+    if (logFn != null) __obj.updateDynamic("logFn")(js.Any.fromFunction3(logFn))
     if (proxy != null) __obj.updateDynamic("proxy")(proxy)
     if (robots != null) __obj.updateDynamic("robots")(robots.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root)

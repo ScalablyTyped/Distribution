@@ -40,9 +40,9 @@ object IField {
   def apply(
     alias: extjsLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     convert: js.Any = null,
     dateFormat: java.lang.String = null,
@@ -50,9 +50,9 @@ object IField {
     dateWriteFormat: java.lang.String = null,
     defaultValue: js.Any = null,
     extend: java.lang.String = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IField] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IField = null,
     mapping: js.Any = null,
     mixins: js.Any = null,
     name: java.lang.String = null,
@@ -71,9 +71,9 @@ object IField {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
     if (convert != null) __obj.updateDynamic("convert")(convert)
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
@@ -81,9 +81,9 @@ object IField {
     if (dateWriteFormat != null) __obj.updateDynamic("dateWriteFormat")(dateWriteFormat)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mapping != null) __obj.updateDynamic("mapping")(mapping)
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (name != null) __obj.updateDynamic("name")(name)

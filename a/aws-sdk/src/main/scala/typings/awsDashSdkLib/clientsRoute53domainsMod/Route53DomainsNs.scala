@@ -35,7 +35,7 @@ object Route53DomainsNs extends js.Object {
     /**
       * The name of the domain that you want to get availability for. Constraints: The domain name can contain only the letters a through z, the numbers 0 through 9, and hyphen (-). Internationalized Domain Names are not supported.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
     /**
       * Reserved for future use.
       */
@@ -57,7 +57,7 @@ object Route53DomainsNs extends js.Object {
     /**
       * The name of the domain that you want to transfer to Amazon Route 53. Constraints: The domain name can contain only the letters a through z, the numbers 0 through 9, and hyphen (-). Internationalized Domain Names are not supported.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
   }
   
   trait CheckDomainTransferabilityResponse extends js.Object {
@@ -137,7 +137,7 @@ object Route53DomainsNs extends js.Object {
     /**
       * The domain for which you want to delete one or more tags.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
     /**
       * A list of tag keys to delete.
       */
@@ -150,7 +150,7 @@ object Route53DomainsNs extends js.Object {
     /**
       * The name of the domain that you want to disable automatic renewal for.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
   }
   
   trait DisableDomainAutoRenewResponse extends js.Object
@@ -159,14 +159,14 @@ object Route53DomainsNs extends js.Object {
     /**
       * The name of the domain that you want to remove the transfer lock for.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
   }
   
   trait DisableDomainTransferLockResponse extends js.Object {
     /**
       * Identifier for tracking the progress of the request. To use this ID to query the operation status, use GetOperationDetail.
       */
-    var OperationId: OperationId
+    var OperationId: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.OperationId
   }
   
   trait DomainSuggestion extends js.Object {
@@ -188,7 +188,7 @@ object Route53DomainsNs extends js.Object {
     /**
       * The name of the domain that the summary information applies to.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
     /**
       * Expiration date of the domain in Coordinated Universal Time (UTC).
       */
@@ -207,7 +207,7 @@ object Route53DomainsNs extends js.Object {
     /**
       * The name of the domain that you want to enable automatic renewal for.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
   }
   
   trait EnableDomainAutoRenewResponse extends js.Object
@@ -216,14 +216,14 @@ object Route53DomainsNs extends js.Object {
     /**
       * The name of the domain that you want to set the transfer lock for.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
   }
   
   trait EnableDomainTransferLockResponse extends js.Object {
     /**
       * Identifier for tracking the progress of the request. To use this ID to query the operation status, use GetOperationDetail.
       */
-    var OperationId: OperationId
+    var OperationId: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.OperationId
   }
   
   trait ExtraParam extends js.Object {
@@ -259,7 +259,7 @@ object Route53DomainsNs extends js.Object {
     /**
       * The name of the domain that you want to get detailed information about.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
   }
   
   trait GetDomainDetailResponse extends js.Object {
@@ -294,7 +294,7 @@ object Route53DomainsNs extends js.Object {
     /**
       * The name of a domain.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
     /**
       * The date when the registration for the domain is set to expire. The date and time is in Coordinated Universal time (UTC).
       */
@@ -353,7 +353,7 @@ object Route53DomainsNs extends js.Object {
     /**
       * A domain name that you want to use as the basis for a list of possible domain names. The domain name must contain a top-level domain (TLD), such as .com, that Amazon Route 53 supports. For a list of TLDs, see Domains that You Can Register with Amazon Route 53 in the Amazon Route 53 Developer Guide.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
     /**
       * If OnlyAvailable is true, Amazon Route 53 returns only domain names that are available. If OnlyAvailable is false, Amazon Route 53 returns domain names without checking whether they're available to be registered. To determine whether the domain is available, you can call checkDomainAvailability for each suggestion.
       */
@@ -375,7 +375,7 @@ object Route53DomainsNs extends js.Object {
     /**
       * The identifier for the operation for which you want to get the status. Amazon Route 53 returned the identifier in the response to the original request.
       */
-    var OperationId: OperationId
+    var OperationId: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.OperationId
   }
   
   trait GetOperationDetailResponse extends js.Object {
@@ -457,14 +457,14 @@ object Route53DomainsNs extends js.Object {
     /**
       * The domain for which you want to get a list of tags.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
   }
   
   trait ListTagsForDomainResponse extends js.Object {
     /**
       * A list of the tags that are associated with the specified domain.
       */
-    var TagList: TagList
+    var TagList: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.TagList
   }
   
   trait Nameserver extends js.Object {
@@ -482,7 +482,7 @@ object Route53DomainsNs extends js.Object {
     /**
       * Identifier returned to track the requested action.
       */
-    var OperationId: OperationId
+    var OperationId: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.OperationId
     /**
       * The current status of the requested operation in the system.
       */
@@ -509,11 +509,11 @@ object Route53DomainsNs extends js.Object {
     /**
       * The domain name that you want to register. Constraints: The domain name can contain only the letters a through z, the numbers 0 through 9, and hyphen (-). Internationalized Domain Names are not supported.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
     /**
       * The number of years that you want to register the domain for. Domains are registered for a minimum of one year. The maximum period depends on the top-level domain. For the range of valid values for your domain, see Domains that You Can Register with Amazon Route 53 in the Amazon Route 53 Developer Guide. Default: 1
       */
-    var DurationInYears: DurationInYears
+    var DurationInYears: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DurationInYears
     /**
       * Reserved for future use.
       */
@@ -544,18 +544,18 @@ object Route53DomainsNs extends js.Object {
     /**
       * Identifier for tracking the progress of the request. To use this ID to query the operation status, use GetOperationDetail.
       */
-    var OperationId: OperationId
+    var OperationId: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.OperationId
   }
   
   trait RenewDomainRequest extends js.Object {
     /**
       * The year when the registration for the domain is set to expire. This value must match the current expiration date for the domain.
       */
-    var CurrentExpiryYear: CurrentExpiryYear
+    var CurrentExpiryYear: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.CurrentExpiryYear
     /**
       * The name of the domain that you want to renew.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
     /**
       * The number of years that you want to renew the domain for. The maximum number of years depends on the top-level domain. For the range of valid values for your domain, see Domains that You Can Register with Amazon Route 53 in the Amazon Route 53 Developer Guide. Default: 1
       */
@@ -566,7 +566,7 @@ object Route53DomainsNs extends js.Object {
     /**
       * The identifier for tracking the progress of the request. To use this ID to query the operation status, use GetOperationDetail.
       */
-    var OperationId: OperationId
+    var OperationId: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.OperationId
   }
   
   trait ResendContactReachabilityEmailRequest extends js.Object {
@@ -595,7 +595,7 @@ object Route53DomainsNs extends js.Object {
     /**
       * The name of the domain that you want to get an authorization code for.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
   }
   
   trait RetrieveDomainAuthCodeResponse extends js.Object {
@@ -632,11 +632,11 @@ object Route53DomainsNs extends js.Object {
     /**
       * The name of the domain that you want to transfer to Amazon Route 53. Constraints: The domain name can contain only the letters a through z, the numbers 0 through 9, and hyphen (-). Internationalized Domain Names are not supported.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
     /**
       * The number of years that you want to register the domain for. Domains are registered for a minimum of one year. The maximum period depends on the top-level domain. Default: 1
       */
-    var DurationInYears: DurationInYears
+    var DurationInYears: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DurationInYears
     /**
       * Reserved for future use.
       */
@@ -671,7 +671,7 @@ object Route53DomainsNs extends js.Object {
     /**
       * Identifier for tracking the progress of the request. To use this ID to query the operation status, use GetOperationDetail.
       */
-    var OperationId: OperationId
+    var OperationId: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.OperationId
   }
   
   @js.native
@@ -1241,7 +1241,7 @@ object Route53DomainsNs extends js.Object {
     /**
       * The name of the domain that you want to update the privacy setting for.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
     /**
       * Whether you want to conceal contact information from WHOIS queries. If you specify true, WHOIS ("who is") queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If you specify false, WHOIS queries return the information that you entered for the registrant contact (domain owner).
       */
@@ -1256,7 +1256,7 @@ object Route53DomainsNs extends js.Object {
     /**
       * Identifier for tracking the progress of the request. To use this ID to query the operation status, use GetOperationDetail.
       */
-    var OperationId: OperationId
+    var OperationId: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.OperationId
   }
   
   trait UpdateDomainContactRequest extends js.Object {
@@ -1267,7 +1267,7 @@ object Route53DomainsNs extends js.Object {
     /**
       * The name of the domain that you want to update contact information for.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
     /**
       * Provides detailed contact information.
       */
@@ -1282,14 +1282,14 @@ object Route53DomainsNs extends js.Object {
     /**
       * Identifier for tracking the progress of the request. To use this ID to query the operation status, use GetOperationDetail.
       */
-    var OperationId: OperationId
+    var OperationId: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.OperationId
   }
   
   trait UpdateDomainNameserversRequest extends js.Object {
     /**
       * The name of the domain that you want to change name servers for.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
     /**
       * The authorization key for .fi domains
       */
@@ -1304,14 +1304,14 @@ object Route53DomainsNs extends js.Object {
     /**
       * Identifier for tracking the progress of the request. To use this ID to query the operation status, use GetOperationDetail.
       */
-    var OperationId: OperationId
+    var OperationId: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.OperationId
   }
   
   trait UpdateTagsForDomainRequest extends js.Object {
     /**
       * The domain for which you want to add or update tags.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.DomainName
     /**
       * A list of the tag keys and values that you want to add or update. If you specify a key that already exists, the corresponding value will be replaced.
       */

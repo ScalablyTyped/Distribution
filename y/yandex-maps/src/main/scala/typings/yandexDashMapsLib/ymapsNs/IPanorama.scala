@@ -23,20 +23,20 @@ trait IPanorama extends js.Object {
 object IPanorama {
   @scala.inline
   def apply(
-    getAngularBBox: js.Function0[js.Array[scala.Double]],
-    getConnectionArrows: js.Function0[js.Array[IPanoramaConnectionArrow]],
-    getConnectionMarkers: js.Function0[js.Array[IPanoramaConnectionMarker]],
-    getCoordSystem: js.Function0[ICoordSystem],
-    getDefaultDirection: js.Function0[js.Array[scala.Double]],
-    getDefaultSpan: js.Function0[js.Array[scala.Double]],
-    getGraph: js.Function0[IPanoramaGraph | scala.Null],
-    getMarkers: js.Function0[js.Array[IPanoramaMarker]],
-    getName: js.Function0[java.lang.String],
-    getPosition: js.Function0[js.Array[scala.Double]],
-    getTileLevels: js.Function0[js.Array[IPanoramaTileLevel]],
-    getTileSize: js.Function0[js.Array[scala.Double]]
+    getAngularBBox: () => js.Array[scala.Double],
+    getConnectionArrows: () => js.Array[IPanoramaConnectionArrow],
+    getConnectionMarkers: () => js.Array[IPanoramaConnectionMarker],
+    getCoordSystem: () => ICoordSystem,
+    getDefaultDirection: () => js.Array[scala.Double],
+    getDefaultSpan: () => js.Array[scala.Double],
+    getGraph: () => IPanoramaGraph | scala.Null,
+    getMarkers: () => js.Array[IPanoramaMarker],
+    getName: () => java.lang.String,
+    getPosition: () => js.Array[scala.Double],
+    getTileLevels: () => js.Array[IPanoramaTileLevel],
+    getTileSize: () => js.Array[scala.Double]
   ): IPanorama = {
-    val __obj = js.Dynamic.literal(getAngularBBox = getAngularBBox, getConnectionArrows = getConnectionArrows, getConnectionMarkers = getConnectionMarkers, getCoordSystem = getCoordSystem, getDefaultDirection = getDefaultDirection, getDefaultSpan = getDefaultSpan, getGraph = getGraph, getMarkers = getMarkers, getName = getName, getPosition = getPosition, getTileLevels = getTileLevels, getTileSize = getTileSize)
+    val __obj = js.Dynamic.literal(getAngularBBox = js.Any.fromFunction0(getAngularBBox), getConnectionArrows = js.Any.fromFunction0(getConnectionArrows), getConnectionMarkers = js.Any.fromFunction0(getConnectionMarkers), getCoordSystem = js.Any.fromFunction0(getCoordSystem), getDefaultDirection = js.Any.fromFunction0(getDefaultDirection), getDefaultSpan = js.Any.fromFunction0(getDefaultSpan), getGraph = js.Any.fromFunction0(getGraph), getMarkers = js.Any.fromFunction0(getMarkers), getName = js.Any.fromFunction0(getName), getPosition = js.Any.fromFunction0(getPosition), getTileLevels = js.Any.fromFunction0(getTileLevels), getTileSize = js.Any.fromFunction0(getTileSize))
   
     __obj.asInstanceOf[IPanorama]
   }

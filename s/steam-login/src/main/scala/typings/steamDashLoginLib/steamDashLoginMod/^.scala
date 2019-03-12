@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def authenticate(): expressLib.expressMod.eNs.RequestHandler = js.native
   def enforceLogin(redirect: java.lang.String): expressLib.expressMod.eNs.RequestHandler = js.native
-  def middleware(opts: steamDashLoginLib.steamDashLoginMod.MiddlewareOptions): expressLib.expressMod.eNs.RequestHandler = js.native
+  def middleware(opts: MiddlewareOptions): expressLib.expressMod.eNs.RequestHandler = js.native
   def verify(): expressLib.expressMod.eNs.RequestHandler = js.native
 }
 

@@ -23,11 +23,7 @@ trait JsftpOpts extends js.Object {
 object JsftpOpts {
   @scala.inline
   def apply(
-    createSocket: js.Function2[
-      /* hasPortHost */ jsftpLib.Anon_Host, 
-      /* firstAction */ js.Function0[js.Object], 
-      nodeLib.netMod.Socket
-    ] = null,
+    createSocket: (/* hasPortHost */ jsftpLib.Anon_Host, /* firstAction */ js.Function0[js.Object]) => nodeLib.netMod.Socket = null,
     host: java.lang.String = null,
     pass: java.lang.String = null,
     port: scala.Int | scala.Double = null,
@@ -35,7 +31,7 @@ object JsftpOpts {
     user: java.lang.String = null
   ): JsftpOpts = {
     val __obj = js.Dynamic.literal()
-    if (createSocket != null) __obj.updateDynamic("createSocket")(createSocket)
+    if (createSocket != null) __obj.updateDynamic("createSocket")(js.Any.fromFunction2(createSocket))
     if (host != null) __obj.updateDynamic("host")(host)
     if (pass != null) __obj.updateDynamic("pass")(pass)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

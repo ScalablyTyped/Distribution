@@ -15,7 +15,7 @@ object ^ extends js.Object {
   def waitForElement(
     wrapper: enzymeLib.enzymeMod.ReactWrapper[js.Object, js.Object, reactLib.reactMod.Component[js.Object, js.Object, _]],
     elementSelector: enzymeLib.enzymeMod.EnzymeSelector,
-    config: enzymeDashAsyncDashHelpersLib.enzymeDashAsyncDashHelpersMod.Config
+    config: Config
   ): js.Promise[scala.Unit] = js.native
   def waitForProps(
     wrapper: enzymeLib.enzymeMod.ReactWrapper[js.Object, js.Object, reactLib.reactMod.Component[js.Object, js.Object, _]],
@@ -24,7 +24,7 @@ object ^ extends js.Object {
   def waitForProps(
     wrapper: enzymeLib.enzymeMod.ReactWrapper[js.Object, js.Object, reactLib.reactMod.Component[js.Object, js.Object, _]],
     propsValidationFn: js.Function1[/* props */ js.Object, scala.Boolean],
-    config: enzymeDashAsyncDashHelpersLib.enzymeDashAsyncDashHelpersMod.Config
+    config: Config
   ): js.Promise[scala.Unit] = js.native
   def waitForState(
     wrapper: enzymeLib.enzymeMod.ReactWrapper[js.Object, js.Object, reactLib.reactMod.Component[js.Object, js.Object, _]],
@@ -33,7 +33,7 @@ object ^ extends js.Object {
   def waitForState(
     wrapper: enzymeLib.enzymeMod.ReactWrapper[js.Object, js.Object, reactLib.reactMod.Component[js.Object, js.Object, _]],
     stateValidationFn: js.Function1[/* state */ js.Object, scala.Boolean],
-    config: enzymeDashAsyncDashHelpersLib.enzymeDashAsyncDashHelpersMod.Config
+    config: Config
   ): js.Promise[scala.Unit] = js.native
 }
 

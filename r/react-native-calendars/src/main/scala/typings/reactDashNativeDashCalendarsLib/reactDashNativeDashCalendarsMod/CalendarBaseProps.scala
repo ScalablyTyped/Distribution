@@ -124,13 +124,10 @@ object CalendarBaseProps {
     onDayLongPress: DateCallbackHandler = null,
     onDayPress: DateCallbackHandler = null,
     onMonthChange: DateCallbackHandler = null,
-    onPressArrowLeft: js.Function1[/* substractMonth */ js.Function0[scala.Unit], scala.Unit] = null,
-    onPressArrowRight: js.Function1[/* addMonth */ js.Function0[scala.Unit], scala.Unit] = null,
-    onVisibleMonthsChange: js.Function1[/* months */ js.Array[DateObject], scala.Unit] = null,
-    renderArrow: js.Function1[
-      /* direction */ reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.left | reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.right, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    onPressArrowLeft: /* substractMonth */ js.Function0[scala.Unit] => scala.Unit = null,
+    onPressArrowRight: /* addMonth */ js.Function0[scala.Unit] => scala.Unit = null,
+    onVisibleMonthsChange: /* months */ js.Array[DateObject] => scala.Unit = null,
+    renderArrow: /* direction */ reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.left | reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.right => reactLib.reactMod.ReactNs.ReactNode = null,
     showWeekNumbers: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     theme: CalendarTheme = null
@@ -151,10 +148,10 @@ object CalendarBaseProps {
     if (onDayLongPress != null) __obj.updateDynamic("onDayLongPress")(onDayLongPress)
     if (onDayPress != null) __obj.updateDynamic("onDayPress")(onDayPress)
     if (onMonthChange != null) __obj.updateDynamic("onMonthChange")(onMonthChange)
-    if (onPressArrowLeft != null) __obj.updateDynamic("onPressArrowLeft")(onPressArrowLeft)
-    if (onPressArrowRight != null) __obj.updateDynamic("onPressArrowRight")(onPressArrowRight)
-    if (onVisibleMonthsChange != null) __obj.updateDynamic("onVisibleMonthsChange")(onVisibleMonthsChange)
-    if (renderArrow != null) __obj.updateDynamic("renderArrow")(renderArrow)
+    if (onPressArrowLeft != null) __obj.updateDynamic("onPressArrowLeft")(js.Any.fromFunction1(onPressArrowLeft))
+    if (onPressArrowRight != null) __obj.updateDynamic("onPressArrowRight")(js.Any.fromFunction1(onPressArrowRight))
+    if (onVisibleMonthsChange != null) __obj.updateDynamic("onVisibleMonthsChange")(js.Any.fromFunction1(onVisibleMonthsChange))
+    if (renderArrow != null) __obj.updateDynamic("renderArrow")(js.Any.fromFunction1(renderArrow))
     if (!js.isUndefined(showWeekNumbers)) __obj.updateDynamic("showWeekNumbers")(showWeekNumbers)
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme)

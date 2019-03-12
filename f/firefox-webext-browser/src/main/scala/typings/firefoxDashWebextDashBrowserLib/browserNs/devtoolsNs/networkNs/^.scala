@@ -18,12 +18,7 @@ object ^ extends js.Object {
     * Fired when a network request is finished and all request data are available.
     * @param request Description of a network request in the form of a HAR entry. See HAR specification for details.
     */
-  val onRequestFinished: firefoxDashWebextDashBrowserLib.WebExtEvent[
-    js.Function1[
-      /* request */ firefoxDashWebextDashBrowserLib.browserNs.devtoolsNs.networkNs.Request, 
-      scala.Unit
-    ]
-  ] = js.native
+  val onRequestFinished: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* request */ Request, scala.Unit]] = js.native
   /* devtools.network functions */
   /** Returns HAR log that contains all known network requests. */
   def getHAR(): js.Promise[_] = js.native

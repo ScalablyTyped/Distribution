@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SmartTag protected () extends js.Object {
   var `Access.SmartTag_typekey`: SmartTag = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   val IsMissing: scala.Boolean = js.native
   val Name: java.lang.String = js.native
   val Parent: js.Any = js.native

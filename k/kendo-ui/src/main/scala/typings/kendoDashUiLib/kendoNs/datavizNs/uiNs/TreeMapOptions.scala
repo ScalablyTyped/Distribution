@@ -26,9 +26,9 @@ object TreeMapOptions {
     autoBind: js.UndefOr[scala.Boolean] = js.undefined,
     colorField: java.lang.String = null,
     colors: js.Any = null,
-    dataBound: js.Function1[/* e */ TreeMapDataBoundEvent, scala.Unit] = null,
+    dataBound: /* e */ TreeMapDataBoundEvent => scala.Unit = null,
     dataSource: js.Any | kendoDashUiLib.kendoNs.dataNs.HierarchicalDataSource = null,
-    itemCreated: js.Function1[/* e */ TreeMapItemCreatedEvent, scala.Unit] = null,
+    itemCreated: /* e */ TreeMapItemCreatedEvent => scala.Unit = null,
     name: java.lang.String = null,
     template: java.lang.String | js.Function = null,
     textField: java.lang.String = null,
@@ -40,9 +40,9 @@ object TreeMapOptions {
     if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind)
     if (colorField != null) __obj.updateDynamic("colorField")(colorField)
     if (colors != null) __obj.updateDynamic("colors")(colors)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (itemCreated != null) __obj.updateDynamic("itemCreated")(itemCreated)
+    if (itemCreated != null) __obj.updateDynamic("itemCreated")(js.Any.fromFunction1(itemCreated))
     if (name != null) __obj.updateDynamic("name")(name)
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (textField != null) __obj.updateDynamic("textField")(textField)

@@ -9,7 +9,7 @@ trait DescribeTimeToLiveInput extends js.Object {
   /**
     * The name of the table to be described.
     */
-  var TableName: TableName
+  var TableName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TableName
 }
 
 object DescribeTimeToLiveInput {

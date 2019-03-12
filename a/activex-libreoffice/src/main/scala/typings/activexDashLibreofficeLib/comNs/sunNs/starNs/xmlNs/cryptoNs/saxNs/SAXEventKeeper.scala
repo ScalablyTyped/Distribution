@@ -17,50 +17,36 @@ object SAXEventKeeper {
   @scala.inline
   def apply(
     CurrentBlockingNode: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper,
-    acquire: js.Function0[scala.Unit],
-    addBlocker: js.Function0[scala.Double],
-    addElementCollector: js.Function0[scala.Double],
-    addReferenceResolvedListener: js.Function2[scala.Double, XReferenceResolvedListener, scala.Unit],
-    addSAXEventKeeperStatusChangeListener: js.Function1[XSAXEventKeeperStatusChangeListener, scala.Unit],
-    addSecurityElementCollector: js.Function2[ElementMarkPriority, scala.Boolean, scala.Double],
-    characters: js.Function1[java.lang.String, scala.Unit],
-    endDocument: js.Function0[scala.Unit],
-    endElement: js.Function1[java.lang.String, scala.Unit],
-    getCurrentBlockingNode: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper],
-    getElement: js.Function1[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper
-    ],
-    ignorableWhitespace: js.Function1[java.lang.String, scala.Unit],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    isBlocking: js.Function0[scala.Boolean],
-    printBufferNodeTree: js.Function0[java.lang.String],
-    processingInstruction: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeBlocker: js.Function1[scala.Double, scala.Unit],
-    removeElementCollector: js.Function1[scala.Double, scala.Unit],
-    removeReferenceResolvedListener: js.Function2[scala.Double, XReferenceResolvedListener, scala.Unit],
-    removeSAXEventKeeperStatusChangeListener: js.Function1[XSAXEventKeeperStatusChangeListener, scala.Unit],
-    setDocumentLocator: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XLocator, scala.Unit],
-    setElement: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper, 
-      scala.Unit
-    ],
-    setNextHandler: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler
-    ],
-    setSecurityId: js.Function2[scala.Double, scala.Double, scala.Unit],
-    startDocument: js.Function0[scala.Unit],
-    startElement: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XAttributeList, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    addBlocker: () => scala.Double,
+    addElementCollector: () => scala.Double,
+    addReferenceResolvedListener: (scala.Double, XReferenceResolvedListener) => scala.Unit,
+    addSAXEventKeeperStatusChangeListener: XSAXEventKeeperStatusChangeListener => scala.Unit,
+    addSecurityElementCollector: (ElementMarkPriority, scala.Boolean) => scala.Double,
+    characters: java.lang.String => scala.Unit,
+    endDocument: () => scala.Unit,
+    endElement: java.lang.String => scala.Unit,
+    getCurrentBlockingNode: () => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper,
+    getElement: scala.Double => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper,
+    ignorableWhitespace: java.lang.String => scala.Unit,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    isBlocking: () => scala.Boolean,
+    printBufferNodeTree: () => java.lang.String,
+    processingInstruction: (java.lang.String, java.lang.String) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeBlocker: scala.Double => scala.Unit,
+    removeElementCollector: scala.Double => scala.Unit,
+    removeReferenceResolvedListener: (scala.Double, XReferenceResolvedListener) => scala.Unit,
+    removeSAXEventKeeperStatusChangeListener: XSAXEventKeeperStatusChangeListener => scala.Unit,
+    setDocumentLocator: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XLocator => scala.Unit,
+    setElement: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper) => scala.Unit,
+    setNextHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler,
+    setSecurityId: (scala.Double, scala.Double) => scala.Unit,
+    startDocument: () => scala.Unit,
+    startElement: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XAttributeList) => scala.Unit
   ): SAXEventKeeper = {
-    val __obj = js.Dynamic.literal(CurrentBlockingNode = CurrentBlockingNode, acquire = acquire, addBlocker = addBlocker, addElementCollector = addElementCollector, addReferenceResolvedListener = addReferenceResolvedListener, addSAXEventKeeperStatusChangeListener = addSAXEventKeeperStatusChangeListener, addSecurityElementCollector = addSecurityElementCollector, characters = characters, endDocument = endDocument, endElement = endElement, getCurrentBlockingNode = getCurrentBlockingNode, getElement = getElement, ignorableWhitespace = ignorableWhitespace, initialize = initialize, isBlocking = isBlocking, printBufferNodeTree = printBufferNodeTree, processingInstruction = processingInstruction, queryInterface = queryInterface, release = release, removeBlocker = removeBlocker, removeElementCollector = removeElementCollector, removeReferenceResolvedListener = removeReferenceResolvedListener, removeSAXEventKeeperStatusChangeListener = removeSAXEventKeeperStatusChangeListener, setDocumentLocator = setDocumentLocator, setElement = setElement, setNextHandler = setNextHandler, setSecurityId = setSecurityId, startDocument = startDocument, startElement = startElement)
+    val __obj = js.Dynamic.literal(CurrentBlockingNode = CurrentBlockingNode, acquire = js.Any.fromFunction0(acquire), addBlocker = js.Any.fromFunction0(addBlocker), addElementCollector = js.Any.fromFunction0(addElementCollector), addReferenceResolvedListener = js.Any.fromFunction2(addReferenceResolvedListener), addSAXEventKeeperStatusChangeListener = js.Any.fromFunction1(addSAXEventKeeperStatusChangeListener), addSecurityElementCollector = js.Any.fromFunction2(addSecurityElementCollector), characters = js.Any.fromFunction1(characters), endDocument = js.Any.fromFunction0(endDocument), endElement = js.Any.fromFunction1(endElement), getCurrentBlockingNode = js.Any.fromFunction0(getCurrentBlockingNode), getElement = js.Any.fromFunction1(getElement), ignorableWhitespace = js.Any.fromFunction1(ignorableWhitespace), initialize = js.Any.fromFunction1(initialize), isBlocking = js.Any.fromFunction0(isBlocking), printBufferNodeTree = js.Any.fromFunction0(printBufferNodeTree), processingInstruction = js.Any.fromFunction2(processingInstruction), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeBlocker = js.Any.fromFunction1(removeBlocker), removeElementCollector = js.Any.fromFunction1(removeElementCollector), removeReferenceResolvedListener = js.Any.fromFunction2(removeReferenceResolvedListener), removeSAXEventKeeperStatusChangeListener = js.Any.fromFunction1(removeSAXEventKeeperStatusChangeListener), setDocumentLocator = js.Any.fromFunction1(setDocumentLocator), setElement = js.Any.fromFunction2(setElement), setNextHandler = js.Any.fromFunction1(setNextHandler), setSecurityId = js.Any.fromFunction2(setSecurityId), startDocument = js.Any.fromFunction0(startDocument), startElement = js.Any.fromFunction2(startElement))
   
     __obj.asInstanceOf[SAXEventKeeper]
   }

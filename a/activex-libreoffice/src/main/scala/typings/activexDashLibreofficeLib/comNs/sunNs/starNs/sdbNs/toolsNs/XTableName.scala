@@ -72,10 +72,10 @@ object XTableName {
     SchemaName: java.lang.String,
     Table: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
     TableName: java.lang.String,
-    getComposedName: js.Function2[scala.Double, scala.Boolean, java.lang.String],
-    setComposedName: js.Function2[java.lang.String, scala.Double, scala.Unit]
+    getComposedName: (scala.Double, scala.Boolean) => java.lang.String,
+    setComposedName: (java.lang.String, scala.Double) => scala.Unit
   ): XTableName = {
-    val __obj = js.Dynamic.literal(CatalogName = CatalogName, NameForSelect = NameForSelect, SchemaName = SchemaName, Table = Table, TableName = TableName, getComposedName = getComposedName, setComposedName = setComposedName)
+    val __obj = js.Dynamic.literal(CatalogName = CatalogName, NameForSelect = NameForSelect, SchemaName = SchemaName, Table = Table, TableName = TableName, getComposedName = js.Any.fromFunction2(getComposedName), setComposedName = js.Any.fromFunction2(setComposedName))
   
     __obj.asInstanceOf[XTableName]
   }

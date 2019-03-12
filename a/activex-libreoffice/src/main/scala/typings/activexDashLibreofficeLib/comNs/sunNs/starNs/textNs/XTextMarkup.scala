@@ -47,24 +47,11 @@ object XTextMarkup {
   @scala.inline
   def apply(
     MarkupInfoContainer: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap,
-    commitStringMarkup: js.Function5[
-      scala.Double, 
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap, 
-      scala.Unit
-    ],
-    commitTextRangeMarkup: js.Function4[
-      scala.Double, 
-      java.lang.String, 
-      XTextRange, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap, 
-      scala.Unit
-    ],
-    getMarkupInfoContainer: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap]
+    commitStringMarkup: (scala.Double, java.lang.String, scala.Double, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap) => scala.Unit,
+    commitTextRangeMarkup: (scala.Double, java.lang.String, XTextRange, activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap) => scala.Unit,
+    getMarkupInfoContainer: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap
   ): XTextMarkup = {
-    val __obj = js.Dynamic.literal(MarkupInfoContainer = MarkupInfoContainer, commitStringMarkup = commitStringMarkup, commitTextRangeMarkup = commitTextRangeMarkup, getMarkupInfoContainer = getMarkupInfoContainer)
+    val __obj = js.Dynamic.literal(MarkupInfoContainer = MarkupInfoContainer, commitStringMarkup = js.Any.fromFunction5(commitStringMarkup), commitTextRangeMarkup = js.Any.fromFunction4(commitTextRangeMarkup), getMarkupInfoContainer = js.Any.fromFunction0(getMarkupInfoContainer))
   
     __obj.asInstanceOf[XTextMarkup]
   }

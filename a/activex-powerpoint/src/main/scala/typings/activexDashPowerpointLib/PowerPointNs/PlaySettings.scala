@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PlaySettings protected () extends js.Object {
   var ActionVerb: java.lang.String = js.native
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   var HideWhileNotPlaying: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   var LoopUntilStopped: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   val Parent: js.Any = js.native

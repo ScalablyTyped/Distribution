@@ -27,13 +27,13 @@ trait XLayoutManagerEventBroadcaster
 object XLayoutManagerEventBroadcaster {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addLayoutManagerEventListener: js.Function1[XLayoutManagerListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeLayoutManagerEventListener: js.Function1[XLayoutManagerListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addLayoutManagerEventListener: XLayoutManagerListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeLayoutManagerEventListener: XLayoutManagerListener => scala.Unit
   ): XLayoutManagerEventBroadcaster = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addLayoutManagerEventListener = addLayoutManagerEventListener, queryInterface = queryInterface, release = release, removeLayoutManagerEventListener = removeLayoutManagerEventListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addLayoutManagerEventListener = js.Any.fromFunction1(addLayoutManagerEventListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeLayoutManagerEventListener = js.Any.fromFunction1(removeLayoutManagerEventListener))
   
     __obj.asInstanceOf[XLayoutManagerEventBroadcaster]
   }

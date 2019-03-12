@@ -19,7 +19,7 @@ trait Pool extends js.Object {
   def acquire(
     filename: java.lang.String,
     callback: js.Function2[
-      /* error */ nodeLib.Error | scala.Null, 
+      /* error */ stdLib.Error | scala.Null, 
       /* worker */ nodeLib.workerUnderscoreThreadsMod.Worker, 
       scala.Unit
     ]
@@ -28,7 +28,7 @@ trait Pool extends js.Object {
     filename: java.lang.String,
     options: nodeLib.workerUnderscoreThreadsMod.WorkerOptions,
     callback: js.Function2[
-      /* error */ nodeLib.Error | scala.Null, 
+      /* error */ stdLib.Error | scala.Null, 
       /* worker */ nodeLib.workerUnderscoreThreadsMod.Worker, 
       scala.Unit
     ]

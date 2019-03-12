@@ -45,13 +45,13 @@ object JobVersionInfo {
     constructor: js.Function,
     created: scala.Boolean,
     dataWorkspaceId: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     name: java.lang.String,
     owner: java.lang.String,
     parent: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): JobVersionInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor, created = created, dataWorkspaceId = dataWorkspaceId, hasOwnProperty = hasOwnProperty, name = name, owner = owner, parent = parent, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, created = created, dataWorkspaceId = dataWorkspaceId, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, owner = owner, parent = parent, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[JobVersionInfo]
   }

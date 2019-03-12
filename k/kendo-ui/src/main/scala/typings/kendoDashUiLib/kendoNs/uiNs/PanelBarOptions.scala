@@ -31,47 +31,47 @@ trait PanelBarOptions extends js.Object {
 object PanelBarOptions {
   @scala.inline
   def apply(
-    activate: js.Function1[/* e */ PanelBarActivateEvent, scala.Unit] = null,
+    activate: /* e */ PanelBarActivateEvent => scala.Unit = null,
     animation: scala.Boolean | PanelBarAnimation = null,
     autoBind: js.UndefOr[scala.Boolean] = js.undefined,
-    collapse: js.Function1[/* e */ PanelBarCollapseEvent, scala.Unit] = null,
-    contentLoad: js.Function1[/* e */ PanelBarContentLoadEvent, scala.Unit] = null,
+    collapse: /* e */ PanelBarCollapseEvent => scala.Unit = null,
+    contentLoad: /* e */ PanelBarContentLoadEvent => scala.Unit = null,
     contentUrls: js.Any = null,
-    dataBound: js.Function1[/* e */ PanelBarDataBoundEvent, scala.Unit] = null,
+    dataBound: /* e */ PanelBarDataBoundEvent => scala.Unit = null,
     dataImageUrlField: java.lang.String = null,
     dataSource: js.Any | kendoDashUiLib.kendoNs.dataNs.HierarchicalDataSource = null,
     dataSpriteCssClassField: java.lang.String = null,
     dataTextField: java.lang.String | js.Any = null,
     dataUrlField: java.lang.String = null,
-    error: js.Function1[/* e */ PanelBarErrorEvent, scala.Unit] = null,
-    expand: js.Function1[/* e */ PanelBarExpandEvent, scala.Unit] = null,
+    error: /* e */ PanelBarErrorEvent => scala.Unit = null,
+    expand: /* e */ PanelBarExpandEvent => scala.Unit = null,
     expandMode: java.lang.String = null,
     loadOnDemand: js.UndefOr[scala.Boolean] = js.undefined,
     messages: PanelBarMessages = null,
     name: java.lang.String = null,
-    select: js.Function1[/* e */ PanelBarSelectEvent, scala.Unit] = null,
+    select: /* e */ PanelBarSelectEvent => scala.Unit = null,
     template: java.lang.String | js.Function = null
   ): PanelBarOptions = {
     val __obj = js.Dynamic.literal()
-    if (activate != null) __obj.updateDynamic("activate")(activate)
+    if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction1(activate))
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind)
-    if (collapse != null) __obj.updateDynamic("collapse")(collapse)
-    if (contentLoad != null) __obj.updateDynamic("contentLoad")(contentLoad)
+    if (collapse != null) __obj.updateDynamic("collapse")(js.Any.fromFunction1(collapse))
+    if (contentLoad != null) __obj.updateDynamic("contentLoad")(js.Any.fromFunction1(contentLoad))
     if (contentUrls != null) __obj.updateDynamic("contentUrls")(contentUrls)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
     if (dataImageUrlField != null) __obj.updateDynamic("dataImageUrlField")(dataImageUrlField)
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (dataSpriteCssClassField != null) __obj.updateDynamic("dataSpriteCssClassField")(dataSpriteCssClassField)
     if (dataTextField != null) __obj.updateDynamic("dataTextField")(dataTextField.asInstanceOf[js.Any])
     if (dataUrlField != null) __obj.updateDynamic("dataUrlField")(dataUrlField)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
+    if (expand != null) __obj.updateDynamic("expand")(js.Any.fromFunction1(expand))
     if (expandMode != null) __obj.updateDynamic("expandMode")(expandMode)
     if (!js.isUndefined(loadOnDemand)) __obj.updateDynamic("loadOnDemand")(loadOnDemand)
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanelBarOptions]
   }

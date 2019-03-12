@@ -574,7 +574,7 @@ object Options {
     insertMode: js.UndefOr[scala.Boolean] = js.undefined,
     integerDigits: java.lang.String = null,
     integerOptional: js.UndefOr[scala.Boolean] = js.undefined,
-    isComplete: js.Function2[/* buffer */ js.Array[java.lang.String], /* opts */ Options, scala.Boolean] = null,
+    isComplete: (/* buffer */ js.Array[java.lang.String], /* opts */ Options) => scala.Boolean = null,
     jitMasking: js.UndefOr[scala.Boolean] = js.undefined,
     keepStatic: js.UndefOr[scala.Boolean] = js.undefined,
     mask: java.lang.String | js.Array[java.lang.String] | (js.Function1[Options, java.lang.String | js.Array[java.lang.String]]) = null,
@@ -584,51 +584,22 @@ object Options {
     noValuePatching: js.UndefOr[scala.Boolean] = js.undefined,
     nullable: js.UndefOr[scala.Boolean] = js.undefined,
     numericInput: js.UndefOr[scala.Boolean] = js.undefined,
-    onBeforeMask: js.Function2[/* initialValue */ java.lang.String, /* opts */ Options, java.lang.String] = null,
-    onBeforePaste: js.Function2[/* pastedValue */ java.lang.String, /* opts */ Options, java.lang.String] = null,
-    onBeforeWrite: js.Function4[
-      /* event */ stdLib.KeyboardEvent, 
-      /* buffer */ js.Array[java.lang.String], 
-      /* caretPos */ scala.Double, 
-      /* opts */ Options, 
-      CommandObject
-    ] = null,
-    onKeyDown: js.Function4[
-      /* event */ stdLib.KeyboardEvent, 
-      /* buffer */ js.Array[java.lang.String], 
-      /* caretPos */ scala.Double, 
-      /* opts */ Options, 
-      scala.Unit
-    ] = null,
-    onKeyValidation: js.Function2[/* key */ scala.Double, /* result */ scala.Boolean, scala.Unit] = null,
-    onUnMask: js.Function2[
-      /* maskedValue */ java.lang.String, 
-      /* unmaskedValue */ java.lang.String, 
-      java.lang.String
-    ] = null,
-    oncleared: js.Function0[scala.Unit] = null,
-    oncomplete: js.Function0[scala.Unit] = null,
-    onincomplete: js.Function0[scala.Unit] = null,
+    onBeforeMask: (/* initialValue */ java.lang.String, /* opts */ Options) => java.lang.String = null,
+    onBeforePaste: (/* pastedValue */ java.lang.String, /* opts */ Options) => java.lang.String = null,
+    onBeforeWrite: (/* event */ stdLib.KeyboardEvent, /* buffer */ js.Array[java.lang.String], /* caretPos */ scala.Double, /* opts */ Options) => CommandObject = null,
+    onKeyDown: (/* event */ stdLib.KeyboardEvent, /* buffer */ js.Array[java.lang.String], /* caretPos */ scala.Double, /* opts */ Options) => scala.Unit = null,
+    onKeyValidation: (/* key */ scala.Double, /* result */ scala.Boolean) => scala.Unit = null,
+    onUnMask: (/* maskedValue */ java.lang.String, /* unmaskedValue */ java.lang.String) => java.lang.String = null,
+    oncleared: () => scala.Unit = null,
+    oncomplete: () => scala.Unit = null,
+    onincomplete: () => scala.Unit = null,
     optionalmarker: Range = null,
     outputFormat: java.lang.String = null,
     placeholder: java.lang.String = null,
     positionCaretOnClick: PositionCaretOnClick = null,
     positionCaretOnTab: js.UndefOr[scala.Boolean] = js.undefined,
-    postValidation: js.Function4[
-      /* buffer */ js.Array[java.lang.String], 
-      /* pos */ scala.Double, 
-      /* currentResult */ CommandObject, 
-      /* opts */ Options, 
-      scala.Boolean | CommandObject
-    ] = null,
-    preValidation: js.Function5[
-      /* buffer */ js.Array[java.lang.String], 
-      /* pos */ scala.Double, 
-      /* char */ java.lang.String, 
-      /* isSelection */ scala.Boolean, 
-      /* opts */ Options, 
-      scala.Boolean | CommandObject
-    ] = null,
+    postValidation: (/* buffer */ js.Array[java.lang.String], /* pos */ scala.Double, /* currentResult */ CommandObject, /* opts */ Options) => scala.Boolean | CommandObject = null,
+    preValidation: (/* buffer */ js.Array[java.lang.String], /* pos */ scala.Double, /* char */ java.lang.String, /* isSelection */ scala.Boolean, /* opts */ Options) => scala.Boolean | CommandObject = null,
     prefix: java.lang.String = null,
     quantifiermarker: Range = null,
     radixPoint: java.lang.String = null,
@@ -676,7 +647,7 @@ object Options {
     if (!js.isUndefined(insertMode)) __obj.updateDynamic("insertMode")(insertMode)
     if (integerDigits != null) __obj.updateDynamic("integerDigits")(integerDigits)
     if (!js.isUndefined(integerOptional)) __obj.updateDynamic("integerOptional")(integerOptional)
-    if (isComplete != null) __obj.updateDynamic("isComplete")(isComplete)
+    if (isComplete != null) __obj.updateDynamic("isComplete")(js.Any.fromFunction2(isComplete))
     if (!js.isUndefined(jitMasking)) __obj.updateDynamic("jitMasking")(jitMasking)
     if (!js.isUndefined(keepStatic)) __obj.updateDynamic("keepStatic")(keepStatic)
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
@@ -686,22 +657,22 @@ object Options {
     if (!js.isUndefined(noValuePatching)) __obj.updateDynamic("noValuePatching")(noValuePatching)
     if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable)
     if (!js.isUndefined(numericInput)) __obj.updateDynamic("numericInput")(numericInput)
-    if (onBeforeMask != null) __obj.updateDynamic("onBeforeMask")(onBeforeMask)
-    if (onBeforePaste != null) __obj.updateDynamic("onBeforePaste")(onBeforePaste)
-    if (onBeforeWrite != null) __obj.updateDynamic("onBeforeWrite")(onBeforeWrite)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onKeyValidation != null) __obj.updateDynamic("onKeyValidation")(onKeyValidation)
-    if (onUnMask != null) __obj.updateDynamic("onUnMask")(onUnMask)
-    if (oncleared != null) __obj.updateDynamic("oncleared")(oncleared)
-    if (oncomplete != null) __obj.updateDynamic("oncomplete")(oncomplete)
-    if (onincomplete != null) __obj.updateDynamic("onincomplete")(onincomplete)
+    if (onBeforeMask != null) __obj.updateDynamic("onBeforeMask")(js.Any.fromFunction2(onBeforeMask))
+    if (onBeforePaste != null) __obj.updateDynamic("onBeforePaste")(js.Any.fromFunction2(onBeforePaste))
+    if (onBeforeWrite != null) __obj.updateDynamic("onBeforeWrite")(js.Any.fromFunction4(onBeforeWrite))
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction4(onKeyDown))
+    if (onKeyValidation != null) __obj.updateDynamic("onKeyValidation")(js.Any.fromFunction2(onKeyValidation))
+    if (onUnMask != null) __obj.updateDynamic("onUnMask")(js.Any.fromFunction2(onUnMask))
+    if (oncleared != null) __obj.updateDynamic("oncleared")(js.Any.fromFunction0(oncleared))
+    if (oncomplete != null) __obj.updateDynamic("oncomplete")(js.Any.fromFunction0(oncomplete))
+    if (onincomplete != null) __obj.updateDynamic("onincomplete")(js.Any.fromFunction0(onincomplete))
     if (optionalmarker != null) __obj.updateDynamic("optionalmarker")(optionalmarker.asInstanceOf[js.Any])
     if (outputFormat != null) __obj.updateDynamic("outputFormat")(outputFormat)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (positionCaretOnClick != null) __obj.updateDynamic("positionCaretOnClick")(positionCaretOnClick)
     if (!js.isUndefined(positionCaretOnTab)) __obj.updateDynamic("positionCaretOnTab")(positionCaretOnTab)
-    if (postValidation != null) __obj.updateDynamic("postValidation")(postValidation)
-    if (preValidation != null) __obj.updateDynamic("preValidation")(preValidation)
+    if (postValidation != null) __obj.updateDynamic("postValidation")(js.Any.fromFunction4(postValidation))
+    if (preValidation != null) __obj.updateDynamic("preValidation")(js.Any.fromFunction5(preValidation))
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (quantifiermarker != null) __obj.updateDynamic("quantifiermarker")(quantifiermarker.asInstanceOf[js.Any])
     if (radixPoint != null) __obj.updateDynamic("radixPoint")(radixPoint)

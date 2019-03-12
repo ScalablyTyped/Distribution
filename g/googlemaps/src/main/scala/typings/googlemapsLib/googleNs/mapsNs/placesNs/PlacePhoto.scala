@@ -15,12 +15,12 @@ trait PlacePhoto extends js.Object {
 object PlacePhoto {
   @scala.inline
   def apply(
-    getUrl: js.Function1[PhotoOptions, java.lang.String],
+    getUrl: PhotoOptions => java.lang.String,
     height: scala.Double,
     html_attributions: js.Array[java.lang.String],
     width: scala.Double
   ): PlacePhoto = {
-    val __obj = js.Dynamic.literal(getUrl = getUrl, height = height, html_attributions = html_attributions, width = width)
+    val __obj = js.Dynamic.literal(getUrl = js.Any.fromFunction1(getUrl), height = height, html_attributions = html_attributions, width = width)
   
     __obj.asInstanceOf[PlacePhoto]
   }

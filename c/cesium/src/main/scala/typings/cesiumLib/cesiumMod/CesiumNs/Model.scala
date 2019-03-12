@@ -39,22 +39,22 @@ object Model {
     boundingSphere: BoundingSphere,
     debugShowBoundingVolume: scala.Boolean,
     debugWireframe: scala.Boolean,
-    destroy: js.Function0[scala.Unit],
-    getMaterial: js.Function1[java.lang.String, ModelMaterial],
-    getMesh: js.Function1[java.lang.String, ModelMesh],
-    getNode: js.Function1[java.lang.String, ModelNode],
+    destroy: () => scala.Unit,
+    getMaterial: java.lang.String => ModelMaterial,
+    getMesh: java.lang.String => ModelMesh,
+    getNode: java.lang.String => ModelNode,
     gltf: js.Any,
     id: js.Any,
-    isDestroyed: js.Function0[scala.Boolean],
+    isDestroyed: () => scala.Boolean,
     minimumPixelSize: scala.Double,
     modelMatrix: Matrix4,
     ready: scala.Boolean,
     readyPromise: js.Promise[Model],
     scale: scala.Double,
     show: scala.Boolean,
-    update: js.Function0[scala.Unit]
+    update: () => scala.Unit
   ): Model = {
-    val __obj = js.Dynamic.literal(activeAnimations = activeAnimations, allowPicking = allowPicking, asynchronous = asynchronous, basePath = basePath, boundingSphere = boundingSphere, debugShowBoundingVolume = debugShowBoundingVolume, debugWireframe = debugWireframe, destroy = destroy, getMaterial = getMaterial, getMesh = getMesh, getNode = getNode, gltf = gltf, id = id, isDestroyed = isDestroyed, minimumPixelSize = minimumPixelSize, modelMatrix = modelMatrix, ready = ready, readyPromise = readyPromise, scale = scale, show = show, update = update)
+    val __obj = js.Dynamic.literal(activeAnimations = activeAnimations, allowPicking = allowPicking, asynchronous = asynchronous, basePath = basePath, boundingSphere = boundingSphere, debugShowBoundingVolume = debugShowBoundingVolume, debugWireframe = debugWireframe, destroy = js.Any.fromFunction0(destroy), getMaterial = js.Any.fromFunction1(getMaterial), getMesh = js.Any.fromFunction1(getMesh), getNode = js.Any.fromFunction1(getNode), gltf = gltf, id = id, isDestroyed = js.Any.fromFunction0(isDestroyed), minimumPixelSize = minimumPixelSize, modelMatrix = modelMatrix, ready = ready, readyPromise = readyPromise, scale = scale, show = show, update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[Model]
   }

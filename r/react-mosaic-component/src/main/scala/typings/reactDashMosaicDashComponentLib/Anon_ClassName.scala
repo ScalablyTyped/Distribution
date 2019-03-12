@@ -15,10 +15,10 @@ object Anon_ClassName {
   @scala.inline
   def apply(
     className: java.lang.String,
-    onChange: js.Function0[js.UndefOr[scala.Nothing]],
+    onChange: () => js.UndefOr[scala.Nothing],
     zeroStateView: reactLib.reactMod.Global.JSXNs.Element
   ): Anon_ClassName = {
-    val __obj = js.Dynamic.literal(className = className, onChange = onChange, zeroStateView = zeroStateView)
+    val __obj = js.Dynamic.literal(className = className, onChange = js.Any.fromFunction0(onChange), zeroStateView = zeroStateView)
   
     __obj.asInstanceOf[Anon_ClassName]
   }

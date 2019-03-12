@@ -14,14 +14,14 @@ trait UploadRemoveEvent extends UploadEvent {
 object UploadRemoveEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Upload,
     data: js.Any = null,
     files: js.Array[_] = null,
     headers: js.Any = null
   ): UploadRemoveEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (data != null) __obj.updateDynamic("data")(data)
     if (files != null) __obj.updateDynamic("files")(files)
     if (headers != null) __obj.updateDynamic("headers")(headers)

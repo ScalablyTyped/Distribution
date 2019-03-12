@@ -33,7 +33,7 @@ class FaxJobStatus protected () extends js.Object {
   /** Routing information */
   val RoutingInformation: java.lang.String = js.native
   /** The time the fax job is scheduled to be transmitted */
-  val ScheduledTime: activexDashInteropLib.VarDate = js.native
+  val ScheduledTime: stdLib.VarDate = js.native
   /** Size in bytes of TIFF file */
   val Size: scala.Double = js.native
   /** Current queue status of the job, a bit-wise combination of FAX_JOB_STATUS values */
@@ -41,8 +41,8 @@ class FaxJobStatus protected () extends js.Object {
   /** Transmitting Station ID */
   val TSID: java.lang.String = js.native
   /** The time the fax job finished its transmission */
-  val TransmissionEnd: activexDashInteropLib.VarDate = js.native
+  val TransmissionEnd: stdLib.VarDate = js.native
   /** The time the fax job started its transmission */
-  val TransmissionStart: activexDashInteropLib.VarDate = js.native
+  val TransmissionStart: stdLib.VarDate = js.native
 }
 

@@ -145,45 +145,45 @@ object IPicker {
   def apply(
     ISheet: senchaUnderscoreTouchLib.ExtNs.ISheet = null,
     activeCls: java.lang.String = null,
-    applyCancelButton: js.Function1[/* config */ js.UndefOr[js.Any], _] = null,
-    applyDoneButton: js.Function1[/* config */ js.UndefOr[js.Any], _] = null,
+    applyCancelButton: /* config */ js.UndefOr[js.Any] => _ = null,
+    applyDoneButton: /* config */ js.UndefOr[js.Any] => _ = null,
     baseCls: java.lang.String = null,
     bottom: js.Any = null,
     cancelButton: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     doneButton: js.Any = null,
-    getBaseCls: js.Function0[java.lang.String] = null,
-    getBottom: js.Function0[scala.Double] = null,
-    getCancelButton: js.Function0[_] = null,
-    getCard: js.Function0[_] = null,
-    getDoneButton: js.Function0[_] = null,
-    getLayout: js.Function0[_] = null,
-    getSlots: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getToolbar: js.Function0[_] = null,
-    getToolbarPosition: js.Function0[java.lang.String] = null,
-    getUseTitles: js.Function0[scala.Boolean] = null,
-    getValue: js.Function1[/* useDom */ js.UndefOr[js.Any], _] = null,
-    getValues: js.Function0[_] = null,
+    getBaseCls: () => java.lang.String = null,
+    getBottom: () => scala.Double = null,
+    getCancelButton: () => _ = null,
+    getCard: () => _ = null,
+    getDoneButton: () => _ = null,
+    getLayout: () => _ = null,
+    getSlots: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getToolbar: () => _ = null,
+    getToolbarPosition: () => java.lang.String = null,
+    getUseTitles: () => scala.Boolean = null,
+    getValue: /* useDom */ js.UndefOr[js.Any] => _ = null,
+    getValues: () => _ = null,
     height: scala.Int | scala.Double = null,
-    initialize: js.Function0[scala.Unit] = null,
+    initialize: () => scala.Unit = null,
     layout: js.Any = null,
     left: js.Any = null,
     right: js.Any = null,
-    setBaseCls: js.Function1[/* baseCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setBottom: js.Function1[/* bottom */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setCancelButton: js.Function1[/* cancelButton */ js.UndefOr[js.Any], scala.Unit] = null,
-    setCard: js.Function1[/* activeItem */ js.UndefOr[js.Any], scala.Unit] = null,
-    setDoneButton: js.Function1[/* doneButton */ js.UndefOr[js.Any], scala.Unit] = null,
-    setHeight: js.Function1[/* height */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setLayout: js.Function1[/* layout */ js.UndefOr[js.Any], scala.Unit] = null,
-    setLeft: js.Function1[/* left */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setRight: js.Function1[/* right */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setSlots: js.Function1[/* slots */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
-    setToolbar: js.Function1[/* toolbar */ js.UndefOr[js.Any], scala.Unit] = null,
-    setToolbarPosition: js.Function1[/* toolbarPosition */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setUseTitles: js.Function1[/* useTitles */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setValue: js.Function2[/* values */ js.UndefOr[js.Any], /* animated */ js.UndefOr[scala.Boolean], IPicker] = null,
-    show: js.Function0[senchaUnderscoreTouchLib.ExtNs.IComponent] = null,
+    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setBottom: /* bottom */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setCancelButton: /* cancelButton */ js.UndefOr[js.Any] => scala.Unit = null,
+    setCard: /* activeItem */ js.UndefOr[js.Any] => scala.Unit = null,
+    setDoneButton: /* doneButton */ js.UndefOr[js.Any] => scala.Unit = null,
+    setHeight: /* height */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setLayout: /* layout */ js.UndefOr[js.Any] => scala.Unit = null,
+    setLeft: /* left */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setRight: /* right */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setSlots: /* slots */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
+    setToolbar: /* toolbar */ js.UndefOr[js.Any] => scala.Unit = null,
+    setToolbarPosition: /* toolbarPosition */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setUseTitles: /* useTitles */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setValue: (/* values */ js.UndefOr[js.Any], /* animated */ js.UndefOr[scala.Boolean]) => IPicker = null,
+    show: () => senchaUnderscoreTouchLib.ExtNs.IComponent = null,
     slots: senchaUnderscoreTouchLib.ExtNs.Array = null,
     toolbar: js.Any = null,
     useTitles: js.UndefOr[scala.Boolean] = js.undefined,
@@ -192,45 +192,45 @@ object IPicker {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, ISheet)
     if (activeCls != null) __obj.updateDynamic("activeCls")(activeCls)
-    if (applyCancelButton != null) __obj.updateDynamic("applyCancelButton")(applyCancelButton)
-    if (applyDoneButton != null) __obj.updateDynamic("applyDoneButton")(applyDoneButton)
+    if (applyCancelButton != null) __obj.updateDynamic("applyCancelButton")(js.Any.fromFunction1(applyCancelButton))
+    if (applyDoneButton != null) __obj.updateDynamic("applyDoneButton")(js.Any.fromFunction1(applyDoneButton))
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
     if (bottom != null) __obj.updateDynamic("bottom")(bottom)
     if (cancelButton != null) __obj.updateDynamic("cancelButton")(cancelButton)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (doneButton != null) __obj.updateDynamic("doneButton")(doneButton)
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(getBaseCls)
-    if (getBottom != null) __obj.updateDynamic("getBottom")(getBottom)
-    if (getCancelButton != null) __obj.updateDynamic("getCancelButton")(getCancelButton)
-    if (getCard != null) __obj.updateDynamic("getCard")(getCard)
-    if (getDoneButton != null) __obj.updateDynamic("getDoneButton")(getDoneButton)
-    if (getLayout != null) __obj.updateDynamic("getLayout")(getLayout)
-    if (getSlots != null) __obj.updateDynamic("getSlots")(getSlots)
-    if (getToolbar != null) __obj.updateDynamic("getToolbar")(getToolbar)
-    if (getToolbarPosition != null) __obj.updateDynamic("getToolbarPosition")(getToolbarPosition)
-    if (getUseTitles != null) __obj.updateDynamic("getUseTitles")(getUseTitles)
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
-    if (getValues != null) __obj.updateDynamic("getValues")(getValues)
+    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
+    if (getBottom != null) __obj.updateDynamic("getBottom")(js.Any.fromFunction0(getBottom))
+    if (getCancelButton != null) __obj.updateDynamic("getCancelButton")(js.Any.fromFunction0(getCancelButton))
+    if (getCard != null) __obj.updateDynamic("getCard")(js.Any.fromFunction0(getCard))
+    if (getDoneButton != null) __obj.updateDynamic("getDoneButton")(js.Any.fromFunction0(getDoneButton))
+    if (getLayout != null) __obj.updateDynamic("getLayout")(js.Any.fromFunction0(getLayout))
+    if (getSlots != null) __obj.updateDynamic("getSlots")(js.Any.fromFunction0(getSlots))
+    if (getToolbar != null) __obj.updateDynamic("getToolbar")(js.Any.fromFunction0(getToolbar))
+    if (getToolbarPosition != null) __obj.updateDynamic("getToolbarPosition")(js.Any.fromFunction0(getToolbarPosition))
+    if (getUseTitles != null) __obj.updateDynamic("getUseTitles")(js.Any.fromFunction0(getUseTitles))
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction1(getValue))
+    if (getValues != null) __obj.updateDynamic("getValues")(js.Any.fromFunction0(getValues))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
+    if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction0(initialize))
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (left != null) __obj.updateDynamic("left")(left)
     if (right != null) __obj.updateDynamic("right")(right)
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(setBaseCls)
-    if (setBottom != null) __obj.updateDynamic("setBottom")(setBottom)
-    if (setCancelButton != null) __obj.updateDynamic("setCancelButton")(setCancelButton)
-    if (setCard != null) __obj.updateDynamic("setCard")(setCard)
-    if (setDoneButton != null) __obj.updateDynamic("setDoneButton")(setDoneButton)
-    if (setHeight != null) __obj.updateDynamic("setHeight")(setHeight)
-    if (setLayout != null) __obj.updateDynamic("setLayout")(setLayout)
-    if (setLeft != null) __obj.updateDynamic("setLeft")(setLeft)
-    if (setRight != null) __obj.updateDynamic("setRight")(setRight)
-    if (setSlots != null) __obj.updateDynamic("setSlots")(setSlots)
-    if (setToolbar != null) __obj.updateDynamic("setToolbar")(setToolbar)
-    if (setToolbarPosition != null) __obj.updateDynamic("setToolbarPosition")(setToolbarPosition)
-    if (setUseTitles != null) __obj.updateDynamic("setUseTitles")(setUseTitles)
-    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
+    if (setBottom != null) __obj.updateDynamic("setBottom")(js.Any.fromFunction1(setBottom))
+    if (setCancelButton != null) __obj.updateDynamic("setCancelButton")(js.Any.fromFunction1(setCancelButton))
+    if (setCard != null) __obj.updateDynamic("setCard")(js.Any.fromFunction1(setCard))
+    if (setDoneButton != null) __obj.updateDynamic("setDoneButton")(js.Any.fromFunction1(setDoneButton))
+    if (setHeight != null) __obj.updateDynamic("setHeight")(js.Any.fromFunction1(setHeight))
+    if (setLayout != null) __obj.updateDynamic("setLayout")(js.Any.fromFunction1(setLayout))
+    if (setLeft != null) __obj.updateDynamic("setLeft")(js.Any.fromFunction1(setLeft))
+    if (setRight != null) __obj.updateDynamic("setRight")(js.Any.fromFunction1(setRight))
+    if (setSlots != null) __obj.updateDynamic("setSlots")(js.Any.fromFunction1(setSlots))
+    if (setToolbar != null) __obj.updateDynamic("setToolbar")(js.Any.fromFunction1(setToolbar))
+    if (setToolbarPosition != null) __obj.updateDynamic("setToolbarPosition")(js.Any.fromFunction1(setToolbarPosition))
+    if (setUseTitles != null) __obj.updateDynamic("setUseTitles")(js.Any.fromFunction1(setUseTitles))
+    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction2(setValue))
+    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction0(show))
     if (slots != null) __obj.updateDynamic("slots")(slots)
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar)
     if (!js.isUndefined(useTitles)) __obj.updateDynamic("useTitles")(useTitles)

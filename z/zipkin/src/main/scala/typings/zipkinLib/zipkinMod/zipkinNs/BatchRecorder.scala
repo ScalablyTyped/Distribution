@@ -9,8 +9,8 @@ trait BatchRecorder extends Recorder
 
 object BatchRecorder {
   @scala.inline
-  def apply(record: js.Function1[Record, scala.Unit]): BatchRecorder = {
-    val __obj = js.Dynamic.literal(record = record)
+  def apply(record: Record => scala.Unit): BatchRecorder = {
+    val __obj = js.Dynamic.literal(record = js.Any.fromFunction1(record))
   
     __obj.asInstanceOf[BatchRecorder]
   }

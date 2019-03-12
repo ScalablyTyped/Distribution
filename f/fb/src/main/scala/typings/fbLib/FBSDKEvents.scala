@@ -15,10 +15,10 @@ trait FBSDKEvents extends js.Object {
 object FBSDKEvents {
   @scala.inline
   def apply(
-    subscribe: js.Function2[java.lang.String, js.Function1[/* fbResponseObject */ js.Object, _], scala.Unit],
-    unsubscribe: js.Function2[java.lang.String, js.Function1[/* fbResponseObject */ js.Object, _], scala.Unit]
+    subscribe: (java.lang.String, js.Function1[/* fbResponseObject */ js.Object, _]) => scala.Unit,
+    unsubscribe: (java.lang.String, js.Function1[/* fbResponseObject */ js.Object, _]) => scala.Unit
   ): FBSDKEvents = {
-    val __obj = js.Dynamic.literal(subscribe = subscribe, unsubscribe = unsubscribe)
+    val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction2(subscribe), unsubscribe = js.Any.fromFunction2(unsubscribe))
   
     __obj.asInstanceOf[FBSDKEvents]
   }

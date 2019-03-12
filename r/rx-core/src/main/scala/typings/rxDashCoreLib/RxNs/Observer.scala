@@ -12,8 +12,8 @@ trait Observer[T] extends js.Object {
 
 object Observer {
   @scala.inline
-  def apply[T](checked: js.Function0[Observer[_]]): Observer[T] = {
-    val __obj = js.Dynamic.literal(checked = checked)
+  def apply[T](checked: () => Observer[_]): Observer[T] = {
+    val __obj = js.Dynamic.literal(checked = js.Any.fromFunction0(checked))
   
     __obj.asInstanceOf[Observer[T]]
   }

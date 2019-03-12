@@ -11,6 +11,6 @@ object ^ extends js.Object {
   def setBubble(): scala.Unit = js.native
   def setBubble(count: java.lang.String): scala.Unit = js.native
   def setBubble(count: scala.Double): scala.Unit = js.native
-  def setOptions(options: tinyconLib.tinyconMod.TinyconOptions): scala.Unit = js.native
+  def setOptions(options: TinyconOptions): scala.Unit = js.native
 }
 

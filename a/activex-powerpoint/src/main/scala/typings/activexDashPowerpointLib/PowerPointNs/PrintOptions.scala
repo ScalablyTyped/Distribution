@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PrintOptions protected () extends js.Object {
   var ActivePrinter: java.lang.String = js.native
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   var Collate: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   var FitToPage: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   var FrameSlides: activexDashOfficeLib.OfficeNs.MsoTriState = js.native

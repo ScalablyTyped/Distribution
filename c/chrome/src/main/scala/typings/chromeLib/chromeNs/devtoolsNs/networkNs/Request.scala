@@ -22,12 +22,9 @@ trait Request extends js.Object {
 object Request {
   @scala.inline
   def apply(
-    getContent: js.Function1[
-      js.Function2[/* content */ java.lang.String, /* encoding */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ]
+    getContent: js.Function2[/* content */ java.lang.String, /* encoding */ java.lang.String, scala.Unit] => scala.Unit
   ): Request = {
-    val __obj = js.Dynamic.literal(getContent = getContent)
+    val __obj = js.Dynamic.literal(getContent = js.Any.fromFunction1(getContent))
   
     __obj.asInstanceOf[Request]
   }

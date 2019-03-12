@@ -14,7 +14,7 @@ trait KeyValueDiffer[K, V] extends js.Object {
     * @returns an object describing the difference. The return value is only valid until the next
     * `diff()` invocation.
     */
-  def diff(`object`: nodeLib.Map[K, V]): (KeyValueChanges[K, V]) | scala.Null = js.native
+  def diff(`object`: org.scalablytyped.runtime.StringDictionary[V]): (KeyValueChanges[java.lang.String, V]) | scala.Null = js.native
   /**
     * Compute a difference between the previous state and the new `object` state.
     *
@@ -22,6 +22,6 @@ trait KeyValueDiffer[K, V] extends js.Object {
     * @returns an object describing the difference. The return value is only valid until the next
     * `diff()` invocation.
     */
-  def diff(`object`: org.scalablytyped.runtime.StringDictionary[V]): (KeyValueChanges[java.lang.String, V]) | scala.Null = js.native
+  def diff(`object`: stdLib.Map[K, V]): (KeyValueChanges[K, V]) | scala.Null = js.native
 }
 

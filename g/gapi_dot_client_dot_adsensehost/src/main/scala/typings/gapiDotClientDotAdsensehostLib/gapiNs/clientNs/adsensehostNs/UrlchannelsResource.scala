@@ -17,20 +17,11 @@ trait UrlchannelsResource extends js.Object {
 object UrlchannelsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AdClientIdAltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UrlChannel]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AdClientId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UrlChannel]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAdsensehostLib.Anon_AdClientIdAltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UrlChannels]
-    ]
+    delete: gapiDotClientDotAdsensehostLib.Anon_AdClientIdAltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[UrlChannel],
+    insert: gapiDotClientDotAdsensehostLib.Anon_AdClientId => gapiDotClientLib.gapiNs.clientNs.Request[UrlChannel],
+    list: gapiDotClientDotAdsensehostLib.Anon_AdClientIdAltFields => gapiDotClientLib.gapiNs.clientNs.Request[UrlChannels]
   ): UrlchannelsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[UrlchannelsResource]
   }

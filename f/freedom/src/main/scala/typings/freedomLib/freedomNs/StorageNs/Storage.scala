@@ -22,13 +22,13 @@ trait Storage extends js.Object {
 object Storage {
   @scala.inline
   def apply(
-    clear: js.Function0[js.Promise[scala.Unit]],
-    get: js.Function1[java.lang.String, js.Promise[java.lang.String]],
-    keys: js.Function0[js.Promise[js.Array[java.lang.String]]],
-    remove: js.Function1[java.lang.String, js.Promise[java.lang.String]],
-    set: js.Function2[java.lang.String, java.lang.String, js.Promise[java.lang.String]]
+    clear: () => js.Promise[scala.Unit],
+    get: java.lang.String => js.Promise[java.lang.String],
+    keys: () => js.Promise[js.Array[java.lang.String]],
+    remove: java.lang.String => js.Promise[java.lang.String],
+    set: (java.lang.String, java.lang.String) => js.Promise[java.lang.String]
   ): Storage = {
-    val __obj = js.Dynamic.literal(clear = clear, get = get, keys = keys, remove = remove, set = set)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), get = js.Any.fromFunction1(get), keys = js.Any.fromFunction0(keys), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set))
   
     __obj.asInstanceOf[Storage]
   }

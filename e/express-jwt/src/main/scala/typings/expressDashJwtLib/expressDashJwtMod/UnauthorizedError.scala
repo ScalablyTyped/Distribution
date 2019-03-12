@@ -17,7 +17,10 @@ class UnauthorizedError protected ()
   /* CompleteClass */
   override var message: java.lang.String = js.native
   /* CompleteClass */
-  override var name: expressDashJwtLib.expressDashJwtLibStrings.UnauthorizedError = js.native
+  override var name: java.lang.String = js.native
+  /* CompleteClass */
+  @JSName("name")
+  override var name_UnauthorizedError: expressDashJwtLib.expressDashJwtLibStrings.UnauthorizedError = js.native
   /* CompleteClass */
   override var status: scala.Double = js.native
 }

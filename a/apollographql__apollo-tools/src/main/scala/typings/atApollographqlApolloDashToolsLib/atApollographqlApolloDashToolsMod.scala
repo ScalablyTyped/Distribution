@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object atApollographqlApolloDashToolsMod extends js.Object {
   def buildServiceDefinition(
-    modules: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
+    modules: js.Array[
       atApollographqlApolloDashToolsLib.libBuildServiceDefinitionMod.GraphQLSchemaModule
     ]
   ): atApollographqlApolloDashToolsLib.libBuildServiceDefinitionMod.GraphQLServiceDefinition = js.native

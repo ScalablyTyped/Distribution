@@ -37,7 +37,7 @@ object HelmetProps {
     link: js.Array[reactDashHelmetLib.LinkProps] = null,
     meta: js.Array[reactDashHelmetLib.MetaProps] = null,
     noscript: js.Array[_] = null,
-    onChangeClientState: js.Function1[/* newState */ js.Any, scala.Unit] = null,
+    onChangeClientState: /* newState */ js.Any => scala.Unit = null,
     script: js.Array[_] = null,
     style: js.Array[_] = null,
     title: java.lang.String = null,
@@ -55,7 +55,7 @@ object HelmetProps {
     if (link != null) __obj.updateDynamic("link")(link)
     if (meta != null) __obj.updateDynamic("meta")(meta)
     if (noscript != null) __obj.updateDynamic("noscript")(noscript)
-    if (onChangeClientState != null) __obj.updateDynamic("onChangeClientState")(onChangeClientState)
+    if (onChangeClientState != null) __obj.updateDynamic("onChangeClientState")(js.Any.fromFunction1(onChangeClientState))
     if (script != null) __obj.updateDynamic("script")(script)
     if (style != null) __obj.updateDynamic("style")(style)
     if (title != null) __obj.updateDynamic("title")(title)

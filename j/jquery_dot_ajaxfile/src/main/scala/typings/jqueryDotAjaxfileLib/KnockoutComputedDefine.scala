@@ -18,21 +18,21 @@ trait KnockoutComputedDefine[T] extends js.Object {
 object KnockoutComputedDefine {
   @scala.inline
   def apply[T](
-    read: js.Function0[T],
+    read: () => T,
     deferEvaluation: js.UndefOr[scala.Boolean] = js.undefined,
-    disposeWhen: js.Function0[scala.Boolean] = null,
+    disposeWhen: () => scala.Boolean = null,
     disposeWhenNodeIsRemoved: stdLib.Node = null,
     owner: js.Any = null,
     pure: js.UndefOr[scala.Boolean] = js.undefined,
-    write: js.Function1[/* value */ T, scala.Unit] = null
+    write: /* value */ T => scala.Unit = null
   ): KnockoutComputedDefine[T] = {
-    val __obj = js.Dynamic.literal(read = read)
+    val __obj = js.Dynamic.literal(read = js.Any.fromFunction0(read))
     if (!js.isUndefined(deferEvaluation)) __obj.updateDynamic("deferEvaluation")(deferEvaluation)
-    if (disposeWhen != null) __obj.updateDynamic("disposeWhen")(disposeWhen)
+    if (disposeWhen != null) __obj.updateDynamic("disposeWhen")(js.Any.fromFunction0(disposeWhen))
     if (disposeWhenNodeIsRemoved != null) __obj.updateDynamic("disposeWhenNodeIsRemoved")(disposeWhenNodeIsRemoved)
     if (owner != null) __obj.updateDynamic("owner")(owner)
     if (!js.isUndefined(pure)) __obj.updateDynamic("pure")(pure)
-    if (write != null) __obj.updateDynamic("write")(write)
+    if (write != null) __obj.updateDynamic("write")(js.Any.fromFunction1(write))
     __obj.asInstanceOf[KnockoutComputedDefine[T]]
   }
 }

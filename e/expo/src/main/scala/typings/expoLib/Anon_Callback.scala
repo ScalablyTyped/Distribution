@@ -17,13 +17,13 @@ object Anon_Callback {
   @scala.inline
   def apply(
     name: java.lang.String,
-    callback: js.Function0[_] = null,
+    callback: () => _ = null,
     description: java.lang.String = null,
     size: scala.Int | scala.Double = null,
     version: java.lang.String = null
   ): Anon_Callback = {
     val __obj = js.Dynamic.literal(name = name)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (description != null) __obj.updateDynamic("description")(description)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version)

@@ -92,12 +92,12 @@ object Options {
     hiddenName: js.UndefOr[scala.Boolean] = js.undefined,
     hiddenPrefix: java.lang.String = null,
     hiddenSuffix: java.lang.String = null,
-    onClose: js.Function1[/* event */ js.Any, scala.Unit] = null,
-    onOpen: js.Function1[/* event */ js.Any, scala.Unit] = null,
-    onRender: js.Function1[/* event */ js.Any, scala.Unit] = null,
-    onSet: js.Function1[/* event */ js.Any, scala.Unit] = null,
-    onStart: js.Function1[/* event */ js.Any, scala.Unit] = null,
-    onStop: js.Function1[/* event */ js.Any, scala.Unit] = null
+    onClose: /* event */ js.Any => scala.Unit = null,
+    onOpen: /* event */ js.Any => scala.Unit = null,
+    onRender: /* event */ js.Any => scala.Unit = null,
+    onSet: /* event */ js.Any => scala.Unit = null,
+    onStart: /* event */ js.Any => scala.Unit = null,
+    onStop: /* event */ js.Any => scala.Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (clear != null) __obj.updateDynamic("clear")(clear)
@@ -111,12 +111,12 @@ object Options {
     if (!js.isUndefined(hiddenName)) __obj.updateDynamic("hiddenName")(hiddenName)
     if (hiddenPrefix != null) __obj.updateDynamic("hiddenPrefix")(hiddenPrefix)
     if (hiddenSuffix != null) __obj.updateDynamic("hiddenSuffix")(hiddenSuffix)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
-    if (onRender != null) __obj.updateDynamic("onRender")(onRender)
-    if (onSet != null) __obj.updateDynamic("onSet")(onSet)
-    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
-    if (onStop != null) __obj.updateDynamic("onStop")(onStop)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
+    if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction1(onRender))
+    if (onSet != null) __obj.updateDynamic("onSet")(js.Any.fromFunction1(onSet))
+    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction1(onStart))
+    if (onStop != null) __obj.updateDynamic("onStop")(js.Any.fromFunction1(onStop))
     __obj.asInstanceOf[Options]
   }
 }

@@ -19,8 +19,8 @@ object FindOptions {
     invocationContext: js.Any = null,
     limit: scala.Int | scala.Double = null,
     offset: scala.Int | scala.Double = null,
-    onFailure: js.Function1[/* response */ ibmDashMobilefirstLib.WLNs.IResponse, scala.Unit] = null,
-    onSuccess: js.Function1[/* response */ ibmDashMobilefirstLib.WLNs.IResponse, scala.Unit] = null,
+    onFailure: /* response */ ibmDashMobilefirstLib.WLNs.IResponse => scala.Unit = null,
+    onSuccess: /* response */ ibmDashMobilefirstLib.WLNs.IResponse => scala.Unit = null,
     sort: js.Array[java.lang.String] = null
   ): FindOptions = {
     val __obj = js.Dynamic.literal()
@@ -29,8 +29,8 @@ object FindOptions {
     if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext)
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess)
+    if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction1(onFailure))
+    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction1(onSuccess))
     if (sort != null) __obj.updateDynamic("sort")(sort)
     __obj.asInstanceOf[FindOptions]
   }

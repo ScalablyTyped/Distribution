@@ -38,15 +38,15 @@ trait Task extends js.Object {
 object Task {
   @scala.inline
   def apply(
-    cancel: js.Function0[scala.Unit],
-    error: js.Function0[js.UndefOr[_]],
-    isCancelled: js.Function0[scala.Boolean],
-    isRunning: js.Function0[scala.Boolean],
-    result: js.Function0[js.UndefOr[js.Any]],
-    setContext: js.Function1[stdLib.Partial[js.Any], scala.Unit],
-    toPromise: js.Function0[js.Promise[js.Any]]
+    cancel: () => scala.Unit,
+    error: () => js.UndefOr[_],
+    isCancelled: () => scala.Boolean,
+    isRunning: () => scala.Boolean,
+    result: () => js.UndefOr[js.Any],
+    setContext: stdLib.Partial[js.Any] => scala.Unit,
+    toPromise: () => js.Promise[js.Any]
   ): Task = {
-    val __obj = js.Dynamic.literal(cancel = cancel, error = error, isCancelled = isCancelled, isRunning = isRunning, result = result, setContext = setContext, toPromise = toPromise)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), error = js.Any.fromFunction0(error), isCancelled = js.Any.fromFunction0(isCancelled), isRunning = js.Any.fromFunction0(isRunning), result = js.Any.fromFunction0(result), setContext = js.Any.fromFunction1(setContext), toPromise = js.Any.fromFunction0(toPromise))
   
     __obj.asInstanceOf[Task]
   }

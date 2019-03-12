@@ -28,7 +28,7 @@ object Anon_AccessKey {
     context: jpmLib.sdkContextDashMenuMod.Context | js.Array[jpmLib.sdkContextDashMenuMod.Context] = null,
     data: js.Any = null,
     image: java.lang.String = null,
-    onMessage: js.Function1[/* message */ js.UndefOr[js.Any], _] = null
+    onMessage: /* message */ js.UndefOr[js.Any] => _ = null
   ): Anon_AccessKey = {
     val __obj = js.Dynamic.literal(label = label)
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey)
@@ -37,7 +37,7 @@ object Anon_AccessKey {
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)
     if (image != null) __obj.updateDynamic("image")(image)
-    if (onMessage != null) __obj.updateDynamic("onMessage")(onMessage)
+    if (onMessage != null) __obj.updateDynamic("onMessage")(js.Any.fromFunction1(onMessage))
     __obj.asInstanceOf[Anon_AccessKey]
   }
 }

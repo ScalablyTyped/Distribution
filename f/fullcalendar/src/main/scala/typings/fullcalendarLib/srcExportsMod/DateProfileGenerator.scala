@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "DateProfileGenerator")
 @js.native
 class DateProfileGenerator protected ()
-  extends fullcalendarLib.dateprofilegeneratorMod.default {
+  extends fullcalendarLib.dateProfileGeneratorMod.default {
   def this(_view: js.Any) = this()
 }
 

@@ -14,7 +14,7 @@ trait RetryOptions extends js.Object {
   /**
     * Only retry a query if the error matches one of these strings.
     */
-  var `match`: js.UndefOr[js.Array[java.lang.String | stdLib.RegExp | nodeLib.Error]] = js.undefined
+  var `match`: js.UndefOr[js.Array[java.lang.String | stdLib.RegExp | stdLib.Error]] = js.undefined
   /**
     * How many times a failing query is automatically retried. Set to 0 to disable retrying on SQL_BUSY error.
     */
@@ -24,7 +24,7 @@ trait RetryOptions extends js.Object {
 object RetryOptions {
   @scala.inline
   def apply(
-    `match`: js.Array[java.lang.String | stdLib.RegExp | nodeLib.Error] = null,
+    `match`: js.Array[java.lang.String | stdLib.RegExp | stdLib.Error] = null,
     max: scala.Int | scala.Double = null
   ): RetryOptions = {
     val __obj = js.Dynamic.literal()

@@ -36,14 +36,14 @@ object MotionProps {
   @scala.inline
   def apply(
     style: Style,
-    children: js.Function1[/* interpolatedStyle */ PlainStyle, reactLib.reactMod.ReactNs.ReactElement[_]] = null,
+    children: /* interpolatedStyle */ PlainStyle => reactLib.reactMod.ReactNs.ReactElement[_] = null,
     defaultStyle: PlainStyle = null,
-    onRest: js.Function0[scala.Unit] = null
+    onRest: () => scala.Unit = null
   ): MotionProps = {
     val __obj = js.Dynamic.literal(style = style)
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle)
-    if (onRest != null) __obj.updateDynamic("onRest")(onRest)
+    if (onRest != null) __obj.updateDynamic("onRest")(js.Any.fromFunction0(onRest))
     __obj.asInstanceOf[MotionProps]
   }
 }

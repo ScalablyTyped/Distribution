@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 trait ParseError
   extends StdError
      with gotLib.gotMod.gotNs.GotError {
-  var name: gotLib.gotLibStrings.ParseError
+  @JSName("name")
+  var name_ParseError: gotLib.gotLibStrings.ParseError
   var statusCode: scala.Double
   var statusMessage: java.lang.String
 }
@@ -16,6 +17,7 @@ trait ParseError
 object ParseError {
   @scala.inline
   def apply(
+    message: java.lang.String,
     name: gotLib.gotLibStrings.ParseError,
     statusCode: scala.Double,
     statusMessage: java.lang.String,
@@ -29,7 +31,7 @@ object ParseError {
     stack: java.lang.String = null,
     url: java.lang.String = null
   ): ParseError = {
-    val __obj = js.Dynamic.literal(name = name, statusCode = statusCode, statusMessage = statusMessage)
+    val __obj = js.Dynamic.literal(message = message, name = name, statusCode = statusCode, statusMessage = statusMessage)
     if (code != null) __obj.updateDynamic("code")(code)
     if (host != null) __obj.updateDynamic("host")(host)
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)

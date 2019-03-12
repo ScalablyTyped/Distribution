@@ -53,13 +53,13 @@ object colorGetSchemesParams {
     basemap: java.lang.String | Basemap,
     constructor: js.Function,
     geometryType: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     theme: java.lang.String,
     view: SceneView = null,
     worldScale: js.UndefOr[scala.Boolean] = js.undefined
   ): colorGetSchemesParams = {
-    val __obj = js.Dynamic.literal(basemap = basemap.asInstanceOf[js.Any], constructor = constructor, geometryType = geometryType, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, theme = theme)
+    val __obj = js.Dynamic.literal(basemap = basemap.asInstanceOf[js.Any], constructor = constructor, geometryType = geometryType, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), theme = theme)
     if (view != null) __obj.updateDynamic("view")(view)
     if (!js.isUndefined(worldScale)) __obj.updateDynamic("worldScale")(worldScale)
     __obj.asInstanceOf[colorGetSchemesParams]

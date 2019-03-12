@@ -36,7 +36,7 @@ object NavDrawerProps {
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     clipped: js.UndefOr[scala.Boolean] = js.undefined,
     insideTree: js.UndefOr[scala.Boolean] = js.undefined,
-    onOverlayClick: coreDashJsLib.Function = null,
+    onOverlayClick: js.Function = null,
     permanentAt: reactDashToolboxLib.reactDashToolboxLibStrings.sm | reactDashToolboxLib.reactDashToolboxLibStrings.smTablet | reactDashToolboxLib.reactDashToolboxLibStrings.md | reactDashToolboxLib.reactDashToolboxLibStrings.lg | reactDashToolboxLib.reactDashToolboxLibStrings.lgTablet | reactDashToolboxLib.reactDashToolboxLibStrings.xl | reactDashToolboxLib.reactDashToolboxLibStrings.xxl | reactDashToolboxLib.reactDashToolboxLibStrings.xxxl = null,
     pinned: js.UndefOr[scala.Boolean] = js.undefined,
     theme: NavDrawerTheme = null,

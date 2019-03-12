@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@sindresorhus/is", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def default(value: js.Any): atSindresorhusIsLib.atSindresorhusIsMod.TypeName = js.native
+  def default(value: js.Any): TypeName = js.native
 }
 

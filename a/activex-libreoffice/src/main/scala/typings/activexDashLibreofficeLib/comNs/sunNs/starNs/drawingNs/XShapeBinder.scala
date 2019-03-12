@@ -24,13 +24,13 @@ trait XShapeBinder
 object XShapeBinder {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    bind: js.Function1[XShapes, XShape],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    unbind: js.Function1[XShape, scala.Unit]
+    acquire: () => scala.Unit,
+    bind: XShapes => XShape,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    unbind: XShape => scala.Unit
   ): XShapeBinder = {
-    val __obj = js.Dynamic.literal(acquire = acquire, bind = bind, queryInterface = queryInterface, release = release, unbind = unbind)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), bind = js.Any.fromFunction1(bind), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), unbind = js.Any.fromFunction1(unbind))
   
     __obj.asInstanceOf[XShapeBinder]
   }

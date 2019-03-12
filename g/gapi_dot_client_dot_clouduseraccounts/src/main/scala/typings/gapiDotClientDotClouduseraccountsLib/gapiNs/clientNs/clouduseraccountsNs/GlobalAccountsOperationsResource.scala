@@ -17,20 +17,11 @@ trait GlobalAccountsOperationsResource extends js.Object {
 object GlobalAccountsOperationsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotClouduseraccountsLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OperationList]
-    ]
+    delete: gapiDotClientDotClouduseraccountsLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotClouduseraccountsLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotClouduseraccountsLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[OperationList]
   ): GlobalAccountsOperationsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[GlobalAccountsOperationsResource]
   }

@@ -11,6 +11,10 @@ class InternalOAuthError protected ()
   extends passportDashOauth2Lib.passportDashOauth2Mod.OAuth2StrategyNs.InternalOAuthError {
   def this(message: java.lang.String, err: js.Any) = this()
   /* CompleteClass */
+  override var message: java.lang.String = js.native
+  /* CompleteClass */
+  override var name: java.lang.String = js.native
+  /* CompleteClass */
   override var oauthError: js.Any = js.native
 }
 

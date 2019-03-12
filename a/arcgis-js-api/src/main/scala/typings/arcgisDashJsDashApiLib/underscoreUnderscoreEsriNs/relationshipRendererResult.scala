@@ -45,13 +45,13 @@ object relationshipRendererResult {
     basemapId: java.lang.String,
     classBreaks: RendererResultClassBreaks,
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     relationshipScheme: RelationshipScheme,
     renderer: UniqueValueRenderer,
     uniqueValueInfos: js.Array[UniqueValueInfo]
   ): relationshipRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId, classBreaks = classBreaks, constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, relationshipScheme = relationshipScheme, renderer = renderer, uniqueValueInfos = uniqueValueInfos)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, classBreaks = classBreaks, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), relationshipScheme = relationshipScheme, renderer = renderer, uniqueValueInfos = uniqueValueInfos)
   
     __obj.asInstanceOf[relationshipRendererResult]
   }

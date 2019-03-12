@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ClearTextStream
   extends easyDashXDashHeadersLib.streamMod.Duplex {
   var address: easyDashXDashHeadersLib.Anon_Address = js.native
-  var authorizationError: nodeLib.Error = js.native
+  var authorizationError: stdLib.Error = js.native
   var authorized: scala.Boolean = js.native
   var getCipher: easyDashXDashHeadersLib.Anon_Name = js.native
   var remoteAddress: java.lang.String = js.native

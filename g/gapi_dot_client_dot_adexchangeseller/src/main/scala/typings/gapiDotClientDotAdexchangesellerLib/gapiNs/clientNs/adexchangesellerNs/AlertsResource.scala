@@ -13,12 +13,9 @@ trait AlertsResource extends js.Object {
 object AlertsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Alerts]
-    ]
+    list: gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAlt => gapiDotClientLib.gapiNs.clientNs.Request[Alerts]
   ): AlertsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[AlertsResource]
   }

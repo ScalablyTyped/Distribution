@@ -12,11 +12,8 @@ trait Anon_Level extends js.Object {
 
 object Anon_Level {
   @scala.inline
-  def apply(
-    releaseKeepAwake: js.Function0[scala.Unit],
-    requestKeepAwake: js.Function1[java.lang.String, scala.Unit]
-  ): Anon_Level = {
-    val __obj = js.Dynamic.literal(releaseKeepAwake = releaseKeepAwake, requestKeepAwake = requestKeepAwake)
+  def apply(releaseKeepAwake: () => scala.Unit, requestKeepAwake: java.lang.String => scala.Unit): Anon_Level = {
+    val __obj = js.Dynamic.literal(releaseKeepAwake = js.Any.fromFunction0(releaseKeepAwake), requestKeepAwake = js.Any.fromFunction1(requestKeepAwake))
   
     __obj.asInstanceOf[Anon_Level]
   }

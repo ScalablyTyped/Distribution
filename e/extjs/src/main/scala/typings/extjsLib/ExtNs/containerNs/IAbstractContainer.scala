@@ -204,71 +204,39 @@ object IAbstractContainer {
     IComponent: extjsLib.ExtNs.IComponent = null,
     IQueryable: extjsLib.ExtNs.IQueryable = null,
     activeItem: js.Any = null,
-    add: js.Function1[/* component */ js.UndefOr[js.Any], _] = null,
-    afterComponentLayout: js.Function0[scala.Unit] = null,
-    afterLayout: js.Function1[
-      /* layout */ js.UndefOr[extjsLib.ExtNs.layoutNs.containerNs.IContainer], 
-      scala.Unit
-    ] = null,
+    add: /* component */ js.UndefOr[js.Any] => _ = null,
+    afterComponentLayout: () => scala.Unit = null,
+    afterLayout: /* layout */ js.UndefOr[extjsLib.ExtNs.layoutNs.containerNs.IContainer] => scala.Unit = null,
     autoDestroy: js.UndefOr[scala.Boolean] = js.undefined,
     baseCls: java.lang.String = null,
     bubbleEvents: extjsLib.ExtNs.Array = null,
-    cascade: js.Function3[
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* args */ js.UndefOr[extjsLib.ExtNs.Array], 
-      extjsLib.ExtNs.IContainer
-    ] = null,
-    child: js.Function1[/* selector */ js.UndefOr[js.Any], _] = null,
-    contains: js.Function2[
-      /* comp */ js.UndefOr[extjsLib.ExtNs.IComponent], 
-      /* deep */ js.UndefOr[scala.Boolean], 
-      scala.Boolean
-    ] = null,
+    cascade: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* args */ js.UndefOr[extjsLib.ExtNs.Array]) => extjsLib.ExtNs.IContainer = null,
+    child: /* selector */ js.UndefOr[js.Any] => _ = null,
+    contains: (/* comp */ js.UndefOr[extjsLib.ExtNs.IComponent], /* deep */ js.UndefOr[scala.Boolean]) => scala.Boolean = null,
     defaultType: java.lang.String = null,
     defaults: js.Any = null,
     detachOnRemove: js.UndefOr[scala.Boolean] = js.undefined,
-    disable: js.Function0[IAbstractContainer] = null,
-    doLayout: js.Function0[IContainer] = null,
-    down: js.Function1[/* selector */ js.UndefOr[js.Any], _] = null,
-    getComponent: js.Function1[/* comp */ js.UndefOr[js.Any], extjsLib.ExtNs.IComponent] = null,
-    getLayout: js.Function0[extjsLib.ExtNs.layoutNs.containerNs.IContainer] = null,
-    getRefItems: js.Function1[/* deep */ js.UndefOr[js.Any], scala.Unit] = null,
-    insert: js.Function2[
-      /* index */ js.UndefOr[scala.Double], 
-      /* component */ js.UndefOr[js.Any], 
-      extjsLib.ExtNs.IComponent
-    ] = null,
-    isAncestor: js.Function1[/* possibleDescendant */ js.UndefOr[extjsLib.ExtNs.IComponent], scala.Unit] = null,
+    disable: () => IAbstractContainer = null,
+    doLayout: () => IContainer = null,
+    down: /* selector */ js.UndefOr[js.Any] => _ = null,
+    getComponent: /* comp */ js.UndefOr[js.Any] => extjsLib.ExtNs.IComponent = null,
+    getLayout: () => extjsLib.ExtNs.layoutNs.containerNs.IContainer = null,
+    getRefItems: /* deep */ js.UndefOr[js.Any] => scala.Unit = null,
+    insert: (/* index */ js.UndefOr[scala.Double], /* component */ js.UndefOr[js.Any]) => extjsLib.ExtNs.IComponent = null,
+    isAncestor: /* possibleDescendant */ js.UndefOr[extjsLib.ExtNs.IComponent] => scala.Unit = null,
     items: js.Any = null,
     layout: js.Any = null,
-    move: js.Function2[
-      /* fromIdx */ js.UndefOr[js.Any], 
-      /* toIdx */ js.UndefOr[scala.Double], 
-      extjsLib.ExtNs.IComponent
-    ] = null,
-    onAdd: js.Function2[
-      /* component */ js.UndefOr[extjsLib.ExtNs.IComponent], 
-      /* position */ js.UndefOr[scala.Double], 
-      scala.Unit
-    ] = null,
-    onBeforeAdd: js.Function1[/* item */ js.UndefOr[extjsLib.ExtNs.IComponent], scala.Unit] = null,
-    onPosition: js.Function0[scala.Unit] = null,
-    onRemove: js.Function2[
-      /* component */ js.UndefOr[extjsLib.ExtNs.IComponent], 
-      /* autoDestroy */ js.UndefOr[scala.Boolean], 
-      scala.Unit
-    ] = null,
-    onResize: js.Function0[scala.Unit] = null,
-    query: js.Function1[/* selector */ js.UndefOr[java.lang.String], extjsLib.ExtNs.Array] = null,
-    queryBy: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], extjsLib.ExtNs.Array] = null,
-    queryById: js.Function1[/* id */ js.UndefOr[java.lang.String], extjsLib.ExtNs.IComponent] = null,
-    remove: js.Function2[
-      /* component */ js.UndefOr[js.Any], 
-      /* autoDestroy */ js.UndefOr[scala.Boolean], 
-      extjsLib.ExtNs.IComponent
-    ] = null,
-    removeAll: js.Function1[/* autoDestroy */ js.UndefOr[scala.Boolean], extjsLib.ExtNs.Array] = null,
+    move: (/* fromIdx */ js.UndefOr[js.Any], /* toIdx */ js.UndefOr[scala.Double]) => extjsLib.ExtNs.IComponent = null,
+    onAdd: (/* component */ js.UndefOr[extjsLib.ExtNs.IComponent], /* position */ js.UndefOr[scala.Double]) => scala.Unit = null,
+    onBeforeAdd: /* item */ js.UndefOr[extjsLib.ExtNs.IComponent] => scala.Unit = null,
+    onPosition: () => scala.Unit = null,
+    onRemove: (/* component */ js.UndefOr[extjsLib.ExtNs.IComponent], /* autoDestroy */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
+    onResize: () => scala.Unit = null,
+    query: /* selector */ js.UndefOr[java.lang.String] => extjsLib.ExtNs.Array = null,
+    queryBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => extjsLib.ExtNs.Array = null,
+    queryById: /* id */ js.UndefOr[java.lang.String] => extjsLib.ExtNs.IComponent = null,
+    remove: (/* component */ js.UndefOr[js.Any], /* autoDestroy */ js.UndefOr[scala.Boolean]) => extjsLib.ExtNs.IComponent = null,
+    removeAll: /* autoDestroy */ js.UndefOr[scala.Boolean] => extjsLib.ExtNs.Array = null,
     renderTpl: js.Any = null,
     suspendLayout: js.UndefOr[scala.Boolean] = js.undefined
   ): IAbstractContainer = {
@@ -276,39 +244,39 @@ object IAbstractContainer {
     js.Dynamic.global.Object.assign(__obj, IComponent)
     js.Dynamic.global.Object.assign(__obj, IQueryable)
     if (activeItem != null) __obj.updateDynamic("activeItem")(activeItem)
-    if (add != null) __obj.updateDynamic("add")(add)
-    if (afterComponentLayout != null) __obj.updateDynamic("afterComponentLayout")(afterComponentLayout)
-    if (afterLayout != null) __obj.updateDynamic("afterLayout")(afterLayout)
+    if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction1(add))
+    if (afterComponentLayout != null) __obj.updateDynamic("afterComponentLayout")(js.Any.fromFunction0(afterComponentLayout))
+    if (afterLayout != null) __obj.updateDynamic("afterLayout")(js.Any.fromFunction1(afterLayout))
     if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy)
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
     if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents)
-    if (cascade != null) __obj.updateDynamic("cascade")(cascade)
-    if (child != null) __obj.updateDynamic("child")(child)
-    if (contains != null) __obj.updateDynamic("contains")(contains)
+    if (cascade != null) __obj.updateDynamic("cascade")(js.Any.fromFunction3(cascade))
+    if (child != null) __obj.updateDynamic("child")(js.Any.fromFunction1(child))
+    if (contains != null) __obj.updateDynamic("contains")(js.Any.fromFunction2(contains))
     if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
     if (defaults != null) __obj.updateDynamic("defaults")(defaults)
     if (!js.isUndefined(detachOnRemove)) __obj.updateDynamic("detachOnRemove")(detachOnRemove)
-    if (disable != null) __obj.updateDynamic("disable")(disable)
-    if (doLayout != null) __obj.updateDynamic("doLayout")(doLayout)
-    if (down != null) __obj.updateDynamic("down")(down)
-    if (getComponent != null) __obj.updateDynamic("getComponent")(getComponent)
-    if (getLayout != null) __obj.updateDynamic("getLayout")(getLayout)
-    if (getRefItems != null) __obj.updateDynamic("getRefItems")(getRefItems)
-    if (insert != null) __obj.updateDynamic("insert")(insert)
-    if (isAncestor != null) __obj.updateDynamic("isAncestor")(isAncestor)
+    if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction0(disable))
+    if (doLayout != null) __obj.updateDynamic("doLayout")(js.Any.fromFunction0(doLayout))
+    if (down != null) __obj.updateDynamic("down")(js.Any.fromFunction1(down))
+    if (getComponent != null) __obj.updateDynamic("getComponent")(js.Any.fromFunction1(getComponent))
+    if (getLayout != null) __obj.updateDynamic("getLayout")(js.Any.fromFunction0(getLayout))
+    if (getRefItems != null) __obj.updateDynamic("getRefItems")(js.Any.fromFunction1(getRefItems))
+    if (insert != null) __obj.updateDynamic("insert")(js.Any.fromFunction2(insert))
+    if (isAncestor != null) __obj.updateDynamic("isAncestor")(js.Any.fromFunction1(isAncestor))
     if (items != null) __obj.updateDynamic("items")(items)
     if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (move != null) __obj.updateDynamic("move")(move)
-    if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd)
-    if (onBeforeAdd != null) __obj.updateDynamic("onBeforeAdd")(onBeforeAdd)
-    if (onPosition != null) __obj.updateDynamic("onPosition")(onPosition)
-    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
-    if (onResize != null) __obj.updateDynamic("onResize")(onResize)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (queryBy != null) __obj.updateDynamic("queryBy")(queryBy)
-    if (queryById != null) __obj.updateDynamic("queryById")(queryById)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (removeAll != null) __obj.updateDynamic("removeAll")(removeAll)
+    if (move != null) __obj.updateDynamic("move")(js.Any.fromFunction2(move))
+    if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction2(onAdd))
+    if (onBeforeAdd != null) __obj.updateDynamic("onBeforeAdd")(js.Any.fromFunction1(onBeforeAdd))
+    if (onPosition != null) __obj.updateDynamic("onPosition")(js.Any.fromFunction0(onPosition))
+    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction2(onRemove))
+    if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction0(onResize))
+    if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction1(query))
+    if (queryBy != null) __obj.updateDynamic("queryBy")(js.Any.fromFunction2(queryBy))
+    if (queryById != null) __obj.updateDynamic("queryById")(js.Any.fromFunction1(queryById))
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction2(remove))
+    if (removeAll != null) __obj.updateDynamic("removeAll")(js.Any.fromFunction1(removeAll))
     if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
     if (!js.isUndefined(suspendLayout)) __obj.updateDynamic("suspendLayout")(suspendLayout)
     __obj.asInstanceOf[IAbstractContainer]

@@ -29,15 +29,15 @@ object Options {
     endpoint: java.lang.String,
     appending: java.lang.String = null,
     autoFormat: js.UndefOr[scala.Boolean] = js.undefined,
-    error: js.Function0[_] = null,
+    error: () => _ = null,
     format: java.lang.String = null,
     headers: js.Array[odataLib.Anon_Name] = null,
     isAsync: js.UndefOr[scala.Boolean] = js.undefined,
     isCors: js.UndefOr[scala.Boolean] = js.undefined,
     isHashRoute: js.UndefOr[scala.Boolean] = js.undefined,
     password: java.lang.String = null,
-    ready: js.Function0[_] = null,
-    start: js.Function0[_] = null,
+    ready: () => _ = null,
+    start: () => _ = null,
     strictMode: js.UndefOr[scala.Boolean] = js.undefined,
     username: java.lang.String = null,
     version: scala.Int | scala.Double = null
@@ -45,15 +45,15 @@ object Options {
     val __obj = js.Dynamic.literal(endpoint = endpoint)
     if (appending != null) __obj.updateDynamic("appending")(appending)
     if (!js.isUndefined(autoFormat)) __obj.updateDynamic("autoFormat")(autoFormat)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction0(error))
     if (format != null) __obj.updateDynamic("format")(format)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (!js.isUndefined(isAsync)) __obj.updateDynamic("isAsync")(isAsync)
     if (!js.isUndefined(isCors)) __obj.updateDynamic("isCors")(isCors)
     if (!js.isUndefined(isHashRoute)) __obj.updateDynamic("isHashRoute")(isHashRoute)
     if (password != null) __obj.updateDynamic("password")(password)
-    if (ready != null) __obj.updateDynamic("ready")(ready)
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction0(ready))
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction0(start))
     if (!js.isUndefined(strictMode)) __obj.updateDynamic("strictMode")(strictMode)
     if (username != null) __obj.updateDynamic("username")(username)
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])

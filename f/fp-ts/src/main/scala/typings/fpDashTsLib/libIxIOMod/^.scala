@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val URI: /* IxIO */ java.lang.String = js.native
-  val ixIO: fpDashTsLib.libIxMonadMod.IxMonad3[fpDashTsLib.libIxIOMod.URI] = js.native
+  val ixIO: fpDashTsLib.libIxMonadMod.IxMonad3[URI] = js.native
   def getMonad[I](): fpDashTsLib.libMonadMod.Monad3C[fpDashTsLib.fpDashTsLibStrings.IxIO, I, I] = js.native
-  def iof[I, A](a: A): fpDashTsLib.libIxIOMod.IxIO[I, I, A] = js.native
+  def iof[I, A](a: A): IxIO[I, I, A] = js.native
 }
 

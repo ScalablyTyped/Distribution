@@ -20,8 +20,8 @@ trait EditorSettings extends js.Object {
 object EditorSettings {
   @scala.inline
   def apply(
-    changed: js.Function1[/* e */ js.Any, _] = null,
-    changing: js.Function1[/* e */ js.Any, _] = null,
+    changed: /* e */ js.Any => _ = null,
+    changing: /* e */ js.Any => _ = null,
     height: scala.Double | java.lang.String = null,
     iconsLibrary: java.lang.String = null,
     locale: java.lang.String = null,
@@ -29,8 +29,8 @@ object EditorSettings {
     width: scala.Double | java.lang.String = null
   ): EditorSettings = {
     val __obj = js.Dynamic.literal()
-    if (changed != null) __obj.updateDynamic("changed")(changed)
-    if (changing != null) __obj.updateDynamic("changing")(changing)
+    if (changed != null) __obj.updateDynamic("changed")(js.Any.fromFunction1(changed))
+    if (changing != null) __obj.updateDynamic("changing")(js.Any.fromFunction1(changing))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (iconsLibrary != null) __obj.updateDynamic("iconsLibrary")(iconsLibrary)
     if (locale != null) __obj.updateDynamic("locale")(locale)

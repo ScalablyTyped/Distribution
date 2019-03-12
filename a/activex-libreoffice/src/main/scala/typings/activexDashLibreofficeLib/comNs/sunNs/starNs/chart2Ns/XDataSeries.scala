@@ -26,14 +26,14 @@ trait XDataSeries
 object XDataSeries {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getDataPointByIndex: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    resetAllDataPoints: js.Function0[scala.Unit],
-    resetDataPoint: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    getDataPointByIndex: scala.Double => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    resetAllDataPoints: () => scala.Unit,
+    resetDataPoint: scala.Double => scala.Unit
   ): XDataSeries = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getDataPointByIndex = getDataPointByIndex, queryInterface = queryInterface, release = release, resetAllDataPoints = resetAllDataPoints, resetDataPoint = resetDataPoint)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDataPointByIndex = js.Any.fromFunction1(getDataPointByIndex), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), resetAllDataPoints = js.Any.fromFunction0(resetAllDataPoints), resetDataPoint = js.Any.fromFunction1(resetDataPoint))
   
     __obj.asInstanceOf[XDataSeries]
   }

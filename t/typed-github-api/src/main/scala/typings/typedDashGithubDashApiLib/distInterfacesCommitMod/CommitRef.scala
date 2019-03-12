@@ -15,12 +15,12 @@ trait CommitRef extends js.Object {
 object CommitRef {
   @scala.inline
   def apply(
-    loadAsync: js.Function0[js.Promise[Commit | scala.Null]],
-    loadGitAsync: js.Function0[js.Promise[GitCommit | scala.Null]],
+    loadAsync: () => js.Promise[Commit | scala.Null],
+    loadGitAsync: () => js.Promise[GitCommit | scala.Null],
     repository: typedDashGithubDashApiLib.distInterfacesRepositoryMod.RepositoryRef,
     sha: java.lang.String
   ): CommitRef = {
-    val __obj = js.Dynamic.literal(loadAsync = loadAsync, loadGitAsync = loadGitAsync, repository = repository, sha = sha)
+    val __obj = js.Dynamic.literal(loadAsync = js.Any.fromFunction0(loadAsync), loadGitAsync = js.Any.fromFunction0(loadGitAsync), repository = repository, sha = sha)
   
     __obj.asInstanceOf[CommitRef]
   }

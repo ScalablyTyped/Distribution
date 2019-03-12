@@ -36,13 +36,13 @@ trait ASPxClientDashboardItemUnderlyingData extends js.Object {
 object ASPxClientDashboardItemUnderlyingData {
   @scala.inline
   def apply(
-    GetDataMembers: js.Function0[js.Array[java.lang.String]],
-    GetRequestDataError: js.Function0[java.lang.String],
-    GetRowCount: js.Function0[scala.Double],
-    GetRowValue: js.Function2[scala.Double, java.lang.String, js.Object],
-    IsDataReceived: js.Function0[scala.Boolean]
+    GetDataMembers: () => js.Array[java.lang.String],
+    GetRequestDataError: () => java.lang.String,
+    GetRowCount: () => scala.Double,
+    GetRowValue: (scala.Double, java.lang.String) => js.Object,
+    IsDataReceived: () => scala.Boolean
   ): ASPxClientDashboardItemUnderlyingData = {
-    val __obj = js.Dynamic.literal(GetDataMembers = GetDataMembers, GetRequestDataError = GetRequestDataError, GetRowCount = GetRowCount, GetRowValue = GetRowValue, IsDataReceived = IsDataReceived)
+    val __obj = js.Dynamic.literal(GetDataMembers = js.Any.fromFunction0(GetDataMembers), GetRequestDataError = js.Any.fromFunction0(GetRequestDataError), GetRowCount = js.Any.fromFunction0(GetRowCount), GetRowValue = js.Any.fromFunction2(GetRowValue), IsDataReceived = js.Any.fromFunction0(IsDataReceived))
   
     __obj.asInstanceOf[ASPxClientDashboardItemUnderlyingData]
   }

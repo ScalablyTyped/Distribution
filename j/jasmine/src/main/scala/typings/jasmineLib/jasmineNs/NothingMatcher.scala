@@ -11,8 +11,8 @@ trait NothingMatcher extends js.Object {
 
 object NothingMatcher {
   @scala.inline
-  def apply(nothing: js.Function0[scala.Unit]): NothingMatcher = {
-    val __obj = js.Dynamic.literal(nothing = nothing)
+  def apply(nothing: () => scala.Unit): NothingMatcher = {
+    val __obj = js.Dynamic.literal(nothing = js.Any.fromFunction0(nothing))
   
     __obj.asInstanceOf[NothingMatcher]
   }

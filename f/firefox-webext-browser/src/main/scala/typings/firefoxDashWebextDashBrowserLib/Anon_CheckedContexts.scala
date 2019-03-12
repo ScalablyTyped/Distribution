@@ -40,11 +40,7 @@ object Anon_CheckedContexts {
     documentUrlPatterns: js.Array[java.lang.String] = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     icons: org.scalablytyped.runtime.NumberDictionary[java.lang.String] = null,
-    onclick: js.Function2[
-      /* info */ firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.OnClickData, 
-      /* tab */ firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab, 
-      scala.Unit
-    ] = null,
+    onclick: (/* info */ firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.OnClickData, /* tab */ firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab) => scala.Unit = null,
     parentId: scala.Double | java.lang.String = null,
     targetUrlPatterns: js.Array[java.lang.String] = null,
     title: java.lang.String = null,
@@ -58,7 +54,7 @@ object Anon_CheckedContexts {
     if (documentUrlPatterns != null) __obj.updateDynamic("documentUrlPatterns")(documentUrlPatterns)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (icons != null) __obj.updateDynamic("icons")(icons)
-    if (onclick != null) __obj.updateDynamic("onclick")(onclick)
+    if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction2(onclick))
     if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
     if (targetUrlPatterns != null) __obj.updateDynamic("targetUrlPatterns")(targetUrlPatterns)
     if (title != null) __obj.updateDynamic("title")(title)

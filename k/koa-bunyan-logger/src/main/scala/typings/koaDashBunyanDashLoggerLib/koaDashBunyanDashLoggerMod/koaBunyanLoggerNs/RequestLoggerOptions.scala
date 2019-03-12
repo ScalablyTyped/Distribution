@@ -10,7 +10,7 @@ trait RequestLoggerOptions extends js.Object {
   var formatRequestMessage: js.UndefOr[js.Function1[/* requestData */ RequestData, java.lang.String]] = js.undefined
   var formatResponseMessage: js.UndefOr[js.Function1[/* responseData */ ResponseData, java.lang.String]] = js.undefined
   var levelFn: js.UndefOr[
-    js.Function2[/* status */ scala.Double, /* err */ nodeLib.Error, java.lang.String]
+    js.Function2[/* status */ scala.Double, /* err */ stdLib.Error, java.lang.String]
   ] = js.undefined
   var updateLogFields: js.UndefOr[js.Function1[/* data */ RequestData, RequestData]] = js.undefined
   var updateRequestLogFields: js.UndefOr[js.Function1[/* requestData */ RequestData, RequestData]] = js.undefined
@@ -21,21 +21,21 @@ object RequestLoggerOptions {
   @scala.inline
   def apply(
     durationField: java.lang.String = null,
-    formatRequestMessage: js.Function1[/* requestData */ RequestData, java.lang.String] = null,
-    formatResponseMessage: js.Function1[/* responseData */ ResponseData, java.lang.String] = null,
-    levelFn: js.Function2[/* status */ scala.Double, /* err */ nodeLib.Error, java.lang.String] = null,
-    updateLogFields: js.Function1[/* data */ RequestData, RequestData] = null,
-    updateRequestLogFields: js.Function1[/* requestData */ RequestData, RequestData] = null,
-    updateResponseLogFields: js.Function1[/* responseData */ ResponseData, ResponseData] = null
+    formatRequestMessage: /* requestData */ RequestData => java.lang.String = null,
+    formatResponseMessage: /* responseData */ ResponseData => java.lang.String = null,
+    levelFn: (/* status */ scala.Double, /* err */ stdLib.Error) => java.lang.String = null,
+    updateLogFields: /* data */ RequestData => RequestData = null,
+    updateRequestLogFields: /* requestData */ RequestData => RequestData = null,
+    updateResponseLogFields: /* responseData */ ResponseData => ResponseData = null
   ): RequestLoggerOptions = {
     val __obj = js.Dynamic.literal()
     if (durationField != null) __obj.updateDynamic("durationField")(durationField)
-    if (formatRequestMessage != null) __obj.updateDynamic("formatRequestMessage")(formatRequestMessage)
-    if (formatResponseMessage != null) __obj.updateDynamic("formatResponseMessage")(formatResponseMessage)
-    if (levelFn != null) __obj.updateDynamic("levelFn")(levelFn)
-    if (updateLogFields != null) __obj.updateDynamic("updateLogFields")(updateLogFields)
-    if (updateRequestLogFields != null) __obj.updateDynamic("updateRequestLogFields")(updateRequestLogFields)
-    if (updateResponseLogFields != null) __obj.updateDynamic("updateResponseLogFields")(updateResponseLogFields)
+    if (formatRequestMessage != null) __obj.updateDynamic("formatRequestMessage")(js.Any.fromFunction1(formatRequestMessage))
+    if (formatResponseMessage != null) __obj.updateDynamic("formatResponseMessage")(js.Any.fromFunction1(formatResponseMessage))
+    if (levelFn != null) __obj.updateDynamic("levelFn")(js.Any.fromFunction2(levelFn))
+    if (updateLogFields != null) __obj.updateDynamic("updateLogFields")(js.Any.fromFunction1(updateLogFields))
+    if (updateRequestLogFields != null) __obj.updateDynamic("updateRequestLogFields")(js.Any.fromFunction1(updateRequestLogFields))
+    if (updateResponseLogFields != null) __obj.updateDynamic("updateResponseLogFields")(js.Any.fromFunction1(updateResponseLogFields))
     __obj.asInstanceOf[RequestLoggerOptions]
   }
 }

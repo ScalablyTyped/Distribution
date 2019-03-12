@@ -15,14 +15,14 @@ trait AdCustomizerSource extends AdWordsEntity {
 object AdCustomizerSource {
   @scala.inline
   def apply(
-    adCustomizerItemBuilder: js.Function0[AdCustomizerItemBuilder[AdCustomizerItem]],
-    getAttributes: js.Function0[js.Object],
-    getName: js.Function0[java.lang.String],
-    items: js.Function0[AdWordsSelector[AdCustomizerItem]],
-    getEntityType: js.Function0[java.lang.String] = null
+    adCustomizerItemBuilder: () => AdCustomizerItemBuilder[AdCustomizerItem],
+    getAttributes: () => js.Object,
+    getName: () => java.lang.String,
+    items: () => AdWordsSelector[AdCustomizerItem],
+    getEntityType: () => java.lang.String = null
   ): AdCustomizerSource = {
-    val __obj = js.Dynamic.literal(adCustomizerItemBuilder = adCustomizerItemBuilder, getAttributes = getAttributes, getName = getName, items = items)
-    if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
+    val __obj = js.Dynamic.literal(adCustomizerItemBuilder = js.Any.fromFunction0(adCustomizerItemBuilder), getAttributes = js.Any.fromFunction0(getAttributes), getName = js.Any.fromFunction0(getName), items = js.Any.fromFunction0(items))
+    if (getEntityType != null) __obj.updateDynamic("getEntityType")(js.Any.fromFunction0(getEntityType))
     __obj.asInstanceOf[AdCustomizerSource]
   }
 }

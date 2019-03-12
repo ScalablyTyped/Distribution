@@ -20,12 +20,12 @@ object Rtm {
   def apply[T](
     calls: js.Array[RtmCall[T]],
     clients: js.Array[wsLib.wsMod.namespaced],
-    reset: js.Function0[scala.Unit],
-    send: js.Function2[java.lang.String, T, js.Promise[scala.Unit]],
-    startServer: js.Function1[java.lang.String, scala.Unit],
-    stopServer: js.Function1[java.lang.String, scala.Unit]
+    reset: () => scala.Unit,
+    send: (java.lang.String, T) => js.Promise[scala.Unit],
+    startServer: java.lang.String => scala.Unit,
+    stopServer: java.lang.String => scala.Unit
   ): Rtm[T] = {
-    val __obj = js.Dynamic.literal(calls = calls, clients = clients, reset = reset, send = send, startServer = startServer, stopServer = stopServer)
+    val __obj = js.Dynamic.literal(calls = calls, clients = clients, reset = js.Any.fromFunction0(reset), send = js.Any.fromFunction2(send), startServer = js.Any.fromFunction1(startServer), stopServer = js.Any.fromFunction1(stopServer))
   
     __obj.asInstanceOf[Rtm[T]]
   }

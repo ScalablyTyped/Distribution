@@ -19,8 +19,8 @@ trait IEnigmaClass extends js.Object {
 
 object IEnigmaClass {
   @scala.inline
-  def apply(create: js.Function1[enigmaDotJsLib.enigmaJSNs.IConfig, enigmaDotJsLib.enigmaJSNs.ISession]): IEnigmaClass = {
-    val __obj = js.Dynamic.literal(create = create)
+  def apply(create: enigmaDotJsLib.enigmaJSNs.IConfig => enigmaDotJsLib.enigmaJSNs.ISession): IEnigmaClass = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
   
     __obj.asInstanceOf[IEnigmaClass]
   }

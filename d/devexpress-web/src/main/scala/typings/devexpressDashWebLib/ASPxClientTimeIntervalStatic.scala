@@ -16,8 +16,8 @@ trait ASPxClientTimeIntervalStatic extends js.Object {
 
 object ASPxClientTimeIntervalStatic {
   @scala.inline
-  def apply(CalculateDuration: js.Function2[stdLib.Date, stdLib.Date, scala.Double]): ASPxClientTimeIntervalStatic = {
-    val __obj = js.Dynamic.literal(CalculateDuration = CalculateDuration)
+  def apply(CalculateDuration: (stdLib.Date, stdLib.Date) => scala.Double): ASPxClientTimeIntervalStatic = {
+    val __obj = js.Dynamic.literal(CalculateDuration = js.Any.fromFunction2(CalculateDuration))
   
     __obj.asInstanceOf[ASPxClientTimeIntervalStatic]
   }

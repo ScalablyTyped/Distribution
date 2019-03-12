@@ -23,17 +23,11 @@ trait BillingAccountsResource extends js.Object {
 object BillingAccountsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotCloudbillingLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BillingAccount]
-    ],
-    list: js.Function1[
-      gapiDotClientDotCloudbillingLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListBillingAccountsResponse]
-    ],
+    get: gapiDotClientDotCloudbillingLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[BillingAccount],
+    list: gapiDotClientDotCloudbillingLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ListBillingAccountsResponse],
     projects: ProjectsResource
   ): BillingAccountsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list, projects = projects)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), projects = projects)
   
     __obj.asInstanceOf[BillingAccountsResource]
   }

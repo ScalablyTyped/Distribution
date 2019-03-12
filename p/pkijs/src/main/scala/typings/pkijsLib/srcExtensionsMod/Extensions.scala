@@ -16,11 +16,11 @@ object Extensions {
   @scala.inline
   def apply(
     extensions: js.Array[pkijsLib.srcExtensionMod.default],
-    fromSchema: js.Function1[js.Any, scala.Unit],
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    fromSchema: js.Any => scala.Unit,
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): Extensions = {
-    val __obj = js.Dynamic.literal(extensions = extensions, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(extensions = extensions, fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[Extensions]
   }

@@ -11,16 +11,14 @@ import scala.scalajs.js.annotation._
 	 * see http://docs.angular-formly.com/docs/custom-templates#section-formlyconfig-settype-options
 	 */
 trait ITypeOptions extends js.Object {
-  var apiCheck: js.UndefOr[
-    org.scalablytyped.runtime.StringDictionary[angularLib.angularMod.Global.Function]
-  ] = js.undefined
+  var apiCheck: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Function]] = js.undefined
   var apiCheckFunction: js.UndefOr[java.lang.String] = js.undefined
    //'throw' or 'warn
   var apiCheckInstance: js.UndefOr[js.Any] = js.undefined
   var apiCheckOptions: js.UndefOr[js.Object] = js.undefined
-  var controller: js.UndefOr[angularLib.angularMod.Global.Function | java.lang.String | js.Array[_]] = js.undefined
+  var controller: js.UndefOr[js.Function | java.lang.String | js.Array[_]] = js.undefined
   var data: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-  var defaultOptions: js.UndefOr[IFieldConfigurationObject | angularLib.angularMod.Global.Function] = js.undefined
+  var defaultOptions: js.UndefOr[IFieldConfigurationObject | js.Function] = js.undefined
   var `extends`: js.UndefOr[java.lang.String] = js.undefined
   var link: js.UndefOr[
     angularLib.angularMod.angularNs.IDirectiveLinkFn[
@@ -32,9 +30,9 @@ trait ITypeOptions extends js.Object {
   ] = js.undefined
   var name: java.lang.String
   var overwriteOk: js.UndefOr[scala.Boolean] = js.undefined
-  var template: js.UndefOr[angularLib.angularMod.Global.Function | java.lang.String] = js.undefined
-  var templateUrl: js.UndefOr[angularLib.angularMod.Global.Function | java.lang.String] = js.undefined
-  var validateOptions: js.UndefOr[angularLib.angularMod.Global.Function] = js.undefined
+  var template: js.UndefOr[js.Function | java.lang.String] = js.undefined
+  var templateUrl: js.UndefOr[js.Function | java.lang.String] = js.undefined
+  var validateOptions: js.UndefOr[js.Function] = js.undefined
   var wrapper: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 
@@ -42,13 +40,13 @@ object ITypeOptions {
   @scala.inline
   def apply(
     name: java.lang.String,
-    apiCheck: org.scalablytyped.runtime.StringDictionary[angularLib.angularMod.Global.Function] = null,
+    apiCheck: org.scalablytyped.runtime.StringDictionary[js.Function] = null,
     apiCheckFunction: java.lang.String = null,
     apiCheckInstance: js.Any = null,
     apiCheckOptions: js.Object = null,
-    controller: angularLib.angularMod.Global.Function | java.lang.String | js.Array[_] = null,
+    controller: js.Function | java.lang.String | js.Array[_] = null,
     data: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    defaultOptions: IFieldConfigurationObject | angularLib.angularMod.Global.Function = null,
+    defaultOptions: IFieldConfigurationObject | js.Function = null,
     `extends`: java.lang.String = null,
     link: angularLib.angularMod.angularNs.IDirectiveLinkFn[
       angularLib.angularMod.angularNs.IScope, 
@@ -57,9 +55,9 @@ object ITypeOptions {
       angularLib.angularMod.angularNs.IController
     ] = null,
     overwriteOk: js.UndefOr[scala.Boolean] = js.undefined,
-    template: angularLib.angularMod.Global.Function | java.lang.String = null,
-    templateUrl: angularLib.angularMod.Global.Function | java.lang.String = null,
-    validateOptions: angularLib.angularMod.Global.Function = null,
+    template: js.Function | java.lang.String = null,
+    templateUrl: js.Function | java.lang.String = null,
+    validateOptions: js.Function = null,
     wrapper: java.lang.String | js.Array[java.lang.String] = null
   ): ITypeOptions = {
     val __obj = js.Dynamic.literal(name = name)

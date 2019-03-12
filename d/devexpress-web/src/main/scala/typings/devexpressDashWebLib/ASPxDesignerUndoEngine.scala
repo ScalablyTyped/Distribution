@@ -45,15 +45,15 @@ trait ASPxDesignerUndoEngine extends js.Object {
 object ASPxDesignerUndoEngine {
   @scala.inline
   def apply(
-    clearHistory: js.Function0[scala.Unit],
+    clearHistory: () => scala.Unit,
     isDirty: js.Any,
-    redo: js.Function0[scala.Unit],
+    redo: () => scala.Unit,
     redoEnabled: js.Any,
-    undo: js.Function0[scala.Unit],
-    undoAll: js.Function0[scala.Unit],
+    undo: () => scala.Unit,
+    undoAll: () => scala.Unit,
     undoEnabled: js.Any
   ): ASPxDesignerUndoEngine = {
-    val __obj = js.Dynamic.literal(clearHistory = clearHistory, isDirty = isDirty, redo = redo, redoEnabled = redoEnabled, undo = undo, undoAll = undoAll, undoEnabled = undoEnabled)
+    val __obj = js.Dynamic.literal(clearHistory = js.Any.fromFunction0(clearHistory), isDirty = isDirty, redo = js.Any.fromFunction0(redo), redoEnabled = redoEnabled, undo = js.Any.fromFunction0(undo), undoAll = js.Any.fromFunction0(undoAll), undoEnabled = undoEnabled)
   
     __obj.asInstanceOf[ASPxDesignerUndoEngine]
   }

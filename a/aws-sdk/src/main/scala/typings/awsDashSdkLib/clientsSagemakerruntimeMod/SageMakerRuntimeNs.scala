@@ -35,7 +35,7 @@ object SageMakerRuntimeNs extends js.Object {
     /**
       * The name of the endpoint that you specified when you created the endpoint using the CreateEndpoint API. 
       */
-    var EndpointName: EndpointName
+    var EndpointName: awsDashSdkLib.clientsSagemakerruntimeMod.SageMakerRuntimeNs.EndpointName
   }
   
   trait InvokeEndpointOutput extends js.Object {

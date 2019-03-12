@@ -13,24 +13,24 @@ trait IArrow extends IFormat {
 object IArrow {
   @scala.inline
   def apply(
-    drawText: js.Function2[IRectangle, java.lang.String, js.Any],
-    ellipse: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, js.Any],
+    drawText: (IRectangle, java.lang.String) => js.Any,
+    ellipse: (scala.Double, scala.Double, scala.Double, scala.Double) => js.Any,
     fill: java.lang.String,
     font: IFont,
     gradient: IGradient,
     image: IImage,
     length: scala.Double,
-    poligon: js.Function1[js.Array[IPoint], js.Any],
-    rectangle: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, js.Any],
+    poligon: js.Array[IPoint] => js.Any,
+    rectangle: (scala.Double, scala.Double, scala.Double, scala.Double) => js.Any,
     round: IPoint,
     shadow: IShadow,
     stroke: IStroke,
-    textHeight: js.Function1[java.lang.String, scala.Double],
-    textWidth: js.Function1[java.lang.String, scala.Double],
+    textHeight: java.lang.String => scala.Double,
+    textWidth: java.lang.String => scala.Double,
     transparency: scala.Double,
     underline: scala.Boolean
   ): IArrow = {
-    val __obj = js.Dynamic.literal(drawText = drawText, ellipse = ellipse, fill = fill, font = font, gradient = gradient, image = image, length = length, poligon = poligon, rectangle = rectangle, round = round, shadow = shadow, stroke = stroke, textHeight = textHeight, textWidth = textWidth, transparency = transparency, underline = underline)
+    val __obj = js.Dynamic.literal(drawText = js.Any.fromFunction2(drawText), ellipse = js.Any.fromFunction4(ellipse), fill = fill, font = font, gradient = gradient, image = image, length = length, poligon = js.Any.fromFunction1(poligon), rectangle = js.Any.fromFunction4(rectangle), round = round, shadow = shadow, stroke = stroke, textHeight = js.Any.fromFunction1(textHeight), textWidth = js.Any.fromFunction1(textWidth), transparency = transparency, underline = underline)
   
     __obj.asInstanceOf[IArrow]
   }

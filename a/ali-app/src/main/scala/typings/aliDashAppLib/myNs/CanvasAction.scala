@@ -18,8 +18,8 @@ trait CanvasAction extends js.Object {
 
 object CanvasAction {
   @scala.inline
-  def apply(addColorStop: js.Function2[scala.Double, Color, scala.Unit]): CanvasAction = {
-    val __obj = js.Dynamic.literal(addColorStop = addColorStop)
+  def apply(addColorStop: (scala.Double, Color) => scala.Unit): CanvasAction = {
+    val __obj = js.Dynamic.literal(addColorStop = js.Any.fromFunction2(addColorStop))
   
     __obj.asInstanceOf[CanvasAction]
   }

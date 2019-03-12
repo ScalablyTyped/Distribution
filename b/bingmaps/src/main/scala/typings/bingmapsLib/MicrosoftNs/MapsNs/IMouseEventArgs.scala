@@ -44,8 +44,8 @@ object IMouseEventArgs {
   @scala.inline
   def apply(
     eventName: java.lang.String,
-    getX: js.Function0[scala.Double],
-    getY: js.Function0[scala.Double],
+    getX: () => scala.Double,
+    getY: () => scala.Double,
     isPrimary: scala.Boolean,
     isSecondary: scala.Boolean,
     layer: Layer,
@@ -58,7 +58,7 @@ object IMouseEventArgs {
     targetType: java.lang.String,
     wheelDelta: scala.Double
   ): IMouseEventArgs = {
-    val __obj = js.Dynamic.literal(eventName = eventName, getX = getX, getY = getY, isPrimary = isPrimary, isSecondary = isSecondary, layer = layer, location = location, pageX = pageX, pageY = pageY, point = point, primitive = primitive, target = target.asInstanceOf[js.Any], targetType = targetType, wheelDelta = wheelDelta)
+    val __obj = js.Dynamic.literal(eventName = eventName, getX = js.Any.fromFunction0(getX), getY = js.Any.fromFunction0(getY), isPrimary = isPrimary, isSecondary = isSecondary, layer = layer, location = location, pageX = pageX, pageY = pageY, point = point, primitive = primitive, target = target.asInstanceOf[js.Any], targetType = targetType, wheelDelta = wheelDelta)
   
     __obj.asInstanceOf[IMouseEventArgs]
   }

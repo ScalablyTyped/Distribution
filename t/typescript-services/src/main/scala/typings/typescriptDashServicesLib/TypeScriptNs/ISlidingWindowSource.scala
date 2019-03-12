@@ -17,10 +17,8 @@ trait ISlidingWindowSource extends js.Object {
 
 object ISlidingWindowSource {
   @scala.inline
-  def apply(
-    fetchMoreItems: js.Function5[js.Any, scala.Double, js.Array[_], scala.Double, scala.Double, scala.Double]
-  ): ISlidingWindowSource = {
-    val __obj = js.Dynamic.literal(fetchMoreItems = fetchMoreItems)
+  def apply(fetchMoreItems: (js.Any, scala.Double, js.Array[_], scala.Double, scala.Double) => scala.Double): ISlidingWindowSource = {
+    val __obj = js.Dynamic.literal(fetchMoreItems = js.Any.fromFunction5(fetchMoreItems))
   
     __obj.asInstanceOf[ISlidingWindowSource]
   }

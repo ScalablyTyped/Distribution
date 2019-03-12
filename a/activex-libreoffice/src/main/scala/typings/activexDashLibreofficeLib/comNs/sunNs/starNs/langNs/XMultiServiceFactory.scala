@@ -13,7 +13,7 @@ trait XMultiServiceFactory
     * Provides the available names of the factory to be used to create instances.
     * @returns sequence of all names
     */
-  val AvailableServiceNames: activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  val AvailableServiceNames: stdLib.SafeArray[java.lang.String] = js.native
   /**
     * Creates an instance classified by the specified name.
     * @param aServiceSpecifier classified name of instance
@@ -33,6 +33,6 @@ trait XMultiServiceFactory
     * Provides the available names of the factory to be used to create instances.
     * @returns sequence of all names
     */
-  def getAvailableServiceNames(): activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  def getAvailableServiceNames(): stdLib.SafeArray[java.lang.String] = js.native
 }
 

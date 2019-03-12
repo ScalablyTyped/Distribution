@@ -23,22 +23,17 @@ trait Configuration extends XConfiguration {
 object Configuration {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addResource: js.Function1[XResourceId, scala.Unit],
-    create: js.Function0[scala.Unit],
-    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
-    getResources: js.Function3[
-      XResourceId, 
-      java.lang.String, 
-      AnchorBindingMode, 
-      activexDashInteropLib.SafeArray[XResourceId]
-    ],
-    hasResource: js.Function1[XResourceId, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeResource: js.Function1[XResourceId, scala.Unit]
+    acquire: () => scala.Unit,
+    addResource: XResourceId => scala.Unit,
+    create: () => scala.Unit,
+    createClone: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable,
+    getResources: (XResourceId, java.lang.String, AnchorBindingMode) => stdLib.SafeArray[XResourceId],
+    hasResource: XResourceId => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeResource: XResourceId => scala.Unit
   ): Configuration = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addResource = addResource, create = create, createClone = createClone, getResources = getResources, hasResource = hasResource, queryInterface = queryInterface, release = release, removeResource = removeResource)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addResource = js.Any.fromFunction1(addResource), create = js.Any.fromFunction0(create), createClone = js.Any.fromFunction0(createClone), getResources = js.Any.fromFunction3(getResources), hasResource = js.Any.fromFunction1(hasResource), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeResource = js.Any.fromFunction1(removeResource))
   
     __obj.asInstanceOf[Configuration]
   }

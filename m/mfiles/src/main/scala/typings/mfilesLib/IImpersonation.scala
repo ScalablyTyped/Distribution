@@ -16,11 +16,11 @@ object IImpersonation {
   @scala.inline
   def apply(
     Account: java.lang.String,
-    Clone: js.Function0[IImpersonation],
+    Clone: () => IImpersonation,
     ImpersonationType: mfilesLib.MFilesNs.MFImpersonationType,
     Password: java.lang.String
   ): IImpersonation = {
-    val __obj = js.Dynamic.literal(Account = Account, Clone = Clone, ImpersonationType = ImpersonationType, Password = Password)
+    val __obj = js.Dynamic.literal(Account = Account, Clone = js.Any.fromFunction0(Clone), ImpersonationType = ImpersonationType, Password = Password)
   
     __obj.asInstanceOf[IImpersonation]
   }

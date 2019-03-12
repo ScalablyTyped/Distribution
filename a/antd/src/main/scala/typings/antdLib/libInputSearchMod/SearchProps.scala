@@ -13,7 +13,7 @@ trait SearchProps
     js.Function2[
       /* value */ java.lang.String, 
       /* event */ js.UndefOr[
-        (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLInputElement]
+        (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLInputElement]
       ], 
       _
     ]
@@ -28,14 +28,10 @@ object SearchProps {
     allowClear: js.UndefOr[scala.Boolean] = js.undefined,
     enterButton: scala.Boolean | reactLib.reactMod.ReactNs.ReactNode = null,
     inputPrefixCls: java.lang.String = null,
-    onPressEnter: reactLib.reactMod.ReactNs.KeyboardEventHandler[reactLib.HTMLInputElement] = null,
-    onSearch: js.Function2[
-      /* value */ java.lang.String, 
-      /* event */ js.UndefOr[
-        (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLInputElement]
-      ], 
-      _
-    ] = null,
+    onPressEnter: reactLib.reactMod.ReactNs.KeyboardEventHandler[stdLib.HTMLInputElement] = null,
+    onSearch: (/* value */ java.lang.String, /* event */ js.UndefOr[
+      (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLInputElement]
+    ]) => _ = null,
     prefix: reactLib.reactMod.ReactNs.ReactNode = null,
     prefixCls: java.lang.String = null,
     size: /* import warning: ImportType.apply Failed type conversion: ['small', 'default', 'large'][number] */ js.Any = null,
@@ -48,7 +44,7 @@ object SearchProps {
     if (enterButton != null) __obj.updateDynamic("enterButton")(enterButton.asInstanceOf[js.Any])
     if (inputPrefixCls != null) __obj.updateDynamic("inputPrefixCls")(inputPrefixCls)
     if (onPressEnter != null) __obj.updateDynamic("onPressEnter")(onPressEnter)
-    if (onSearch != null) __obj.updateDynamic("onSearch")(onSearch)
+    if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction2(onSearch))
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (size != null) __obj.updateDynamic("size")(size)

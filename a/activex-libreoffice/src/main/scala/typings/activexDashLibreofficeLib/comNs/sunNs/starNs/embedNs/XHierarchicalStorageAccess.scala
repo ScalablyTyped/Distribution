@@ -60,11 +60,11 @@ trait XHierarchicalStorageAccess extends js.Object {
 object XHierarchicalStorageAccess {
   @scala.inline
   def apply(
-    openEncryptedStreamElementByHierarchicalName: js.Function3[java.lang.String, scala.Double, java.lang.String, XExtendedStorageStream],
-    openStreamElementByHierarchicalName: js.Function2[java.lang.String, scala.Double, XExtendedStorageStream],
-    removeStreamElementByHierarchicalName: js.Function1[java.lang.String, scala.Unit]
+    openEncryptedStreamElementByHierarchicalName: (java.lang.String, scala.Double, java.lang.String) => XExtendedStorageStream,
+    openStreamElementByHierarchicalName: (java.lang.String, scala.Double) => XExtendedStorageStream,
+    removeStreamElementByHierarchicalName: java.lang.String => scala.Unit
   ): XHierarchicalStorageAccess = {
-    val __obj = js.Dynamic.literal(openEncryptedStreamElementByHierarchicalName = openEncryptedStreamElementByHierarchicalName, openStreamElementByHierarchicalName = openStreamElementByHierarchicalName, removeStreamElementByHierarchicalName = removeStreamElementByHierarchicalName)
+    val __obj = js.Dynamic.literal(openEncryptedStreamElementByHierarchicalName = js.Any.fromFunction3(openEncryptedStreamElementByHierarchicalName), openStreamElementByHierarchicalName = js.Any.fromFunction2(openStreamElementByHierarchicalName), removeStreamElementByHierarchicalName = js.Any.fromFunction1(removeStreamElementByHierarchicalName))
   
     __obj.asInstanceOf[XHierarchicalStorageAccess]
   }

@@ -26,11 +26,11 @@ trait ViewportColumnsCalculator extends js.Object {
 object ViewportColumnsCalculator {
   @scala.inline
   def apply(
-    calculate: js.Function0[scala.Unit],
+    calculate: () => scala.Unit,
     count: scala.Double,
-    getStretchedColumnWidth: js.Function2[scala.Double, scala.Double, scala.Double | scala.Null],
+    getStretchedColumnWidth: (scala.Double, scala.Double) => scala.Double | scala.Null,
     needVerifyLastColumnWidth: scala.Boolean,
-    refreshStretching: js.Function1[scala.Double, scala.Unit],
+    refreshStretching: scala.Double => scala.Unit,
     startPosition: scala.Double,
     stretch: handsontableLib.handsontableLibStrings.none | handsontableLib.handsontableLibStrings.all | handsontableLib.handsontableLibStrings.last,
     stretchAllColumnsWidth: js.Array[scala.Double],
@@ -42,7 +42,7 @@ object ViewportColumnsCalculator {
     startColumn: scala.Int | scala.Double = null,
     startRow: scala.Int | scala.Double = null
   ): ViewportColumnsCalculator = {
-    val __obj = js.Dynamic.literal(calculate = calculate, count = count, getStretchedColumnWidth = getStretchedColumnWidth, needVerifyLastColumnWidth = needVerifyLastColumnWidth, refreshStretching = refreshStretching, startPosition = startPosition, stretch = stretch.asInstanceOf[js.Any], stretchAllColumnsWidth = stretchAllColumnsWidth, stretchAllRatio = stretchAllRatio, stretchLastWidth = stretchLastWidth, totalTargetWidth = totalTargetWidth)
+    val __obj = js.Dynamic.literal(calculate = js.Any.fromFunction0(calculate), count = count, getStretchedColumnWidth = js.Any.fromFunction2(getStretchedColumnWidth), needVerifyLastColumnWidth = needVerifyLastColumnWidth, refreshStretching = js.Any.fromFunction1(refreshStretching), startPosition = startPosition, stretch = stretch.asInstanceOf[js.Any], stretchAllColumnsWidth = stretchAllColumnsWidth, stretchAllRatio = stretchAllRatio, stretchLastWidth = stretchLastWidth, totalTargetWidth = totalTargetWidth)
     if (endColumn != null) __obj.updateDynamic("endColumn")(endColumn.asInstanceOf[js.Any])
     if (endRow != null) __obj.updateDynamic("endRow")(endRow.asInstanceOf[js.Any])
     if (startColumn != null) __obj.updateDynamic("startColumn")(startColumn.asInstanceOf[js.Any])

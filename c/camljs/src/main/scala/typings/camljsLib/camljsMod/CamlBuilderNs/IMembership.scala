@@ -18,11 +18,11 @@ trait IMembership extends js.Object {
 object IMembership {
   @scala.inline
   def apply(
-    CurrentUserGroups: js.Function0[IExpression],
-    SPGroup: js.Function1[scala.Double, IExpression],
+    CurrentUserGroups: () => IExpression,
+    SPGroup: scala.Double => IExpression,
     SPWeb: IMembershipSPWeb
   ): IMembership = {
-    val __obj = js.Dynamic.literal(CurrentUserGroups = CurrentUserGroups, SPGroup = SPGroup, SPWeb = SPWeb)
+    val __obj = js.Dynamic.literal(CurrentUserGroups = js.Any.fromFunction0(CurrentUserGroups), SPGroup = js.Any.fromFunction1(SPGroup), SPWeb = SPWeb)
   
     __obj.asInstanceOf[IMembership]
   }

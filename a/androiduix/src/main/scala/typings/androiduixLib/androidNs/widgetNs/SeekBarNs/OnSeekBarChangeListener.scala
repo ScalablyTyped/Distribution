@@ -14,11 +14,11 @@ trait OnSeekBarChangeListener extends js.Object {
 object OnSeekBarChangeListener {
   @scala.inline
   def apply(
-    onProgressChanged: js.Function3[androiduixLib.androidNs.widgetNs.SeekBar, scala.Double, scala.Boolean, scala.Unit],
-    onStartTrackingTouch: js.Function1[androiduixLib.androidNs.widgetNs.SeekBar, scala.Unit],
-    onStopTrackingTouch: js.Function1[androiduixLib.androidNs.widgetNs.SeekBar, scala.Unit]
+    onProgressChanged: (androiduixLib.androidNs.widgetNs.SeekBar, scala.Double, scala.Boolean) => scala.Unit,
+    onStartTrackingTouch: androiduixLib.androidNs.widgetNs.SeekBar => scala.Unit,
+    onStopTrackingTouch: androiduixLib.androidNs.widgetNs.SeekBar => scala.Unit
   ): OnSeekBarChangeListener = {
-    val __obj = js.Dynamic.literal(onProgressChanged = onProgressChanged, onStartTrackingTouch = onStartTrackingTouch, onStopTrackingTouch = onStopTrackingTouch)
+    val __obj = js.Dynamic.literal(onProgressChanged = js.Any.fromFunction3(onProgressChanged), onStartTrackingTouch = js.Any.fromFunction1(onStartTrackingTouch), onStopTrackingTouch = js.Any.fromFunction1(onStopTrackingTouch))
   
     __obj.asInstanceOf[OnSeekBarChangeListener]
   }

@@ -13,11 +13,11 @@ object JumpPointFinderOptions {
   @scala.inline
   def apply(
     diagonalMovement: DiagonalMovement = null,
-    heuristic: js.Function2[/* dx */ scala.Double, /* dy */ scala.Double, scala.Double] = null
+    heuristic: (/* dx */ scala.Double, /* dy */ scala.Double) => scala.Double = null
   ): JumpPointFinderOptions = {
     val __obj = js.Dynamic.literal()
     if (diagonalMovement != null) __obj.updateDynamic("diagonalMovement")(diagonalMovement)
-    if (heuristic != null) __obj.updateDynamic("heuristic")(heuristic)
+    if (heuristic != null) __obj.updateDynamic("heuristic")(js.Any.fromFunction2(heuristic))
     __obj.asInstanceOf[JumpPointFinderOptions]
   }
 }

@@ -24,8 +24,8 @@ trait FormSelector extends js.Object {
 
 object FormSelector {
   @scala.inline
-  def apply(getCurrentItem: js.Function0[FormItem], items: xrmLib.XrmNs.CollectionNs.ItemCollection[FormItem]): FormSelector = {
-    val __obj = js.Dynamic.literal(getCurrentItem = getCurrentItem, items = items)
+  def apply(getCurrentItem: () => FormItem, items: xrmLib.XrmNs.CollectionNs.ItemCollection[FormItem]): FormSelector = {
+    val __obj = js.Dynamic.literal(getCurrentItem = js.Any.fromFunction0(getCurrentItem), items = items)
   
     __obj.asInstanceOf[FormSelector]
   }

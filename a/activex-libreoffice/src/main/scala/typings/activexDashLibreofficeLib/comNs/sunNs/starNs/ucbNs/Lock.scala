@@ -14,7 +14,7 @@ trait Lock extends LockEntry {
     *
     * Each lock token is a URI.
     */
-  var LockTokens: activexDashInteropLib.SafeArray[java.lang.String]
+  var LockTokens: stdLib.SafeArray[java.lang.String]
   /**
     * the owner of the lock.
     *
@@ -35,7 +35,7 @@ object Lock {
   @scala.inline
   def apply(
     Depth: LockDepth,
-    LockTokens: activexDashInteropLib.SafeArray[java.lang.String],
+    LockTokens: stdLib.SafeArray[java.lang.String],
     Owner: js.Any,
     Scope: LockScope,
     Timeout: scala.Double,

@@ -29,16 +29,13 @@ object ^ extends js.Object {
     **/
   val ItemType: chromeDashAppsLib.Anon_CHECKBOX = js.native
   /** Fired when a context menu item is clicked. */
-  val onClicked: chromeDashAppsLib.chromeNs.contextMenusNs.MenuClickedEvent = js.native
+  val onClicked: MenuClickedEvent = js.native
   /**
     * Creates a new context menu item. Note that if an error occurs during creation, you may not find out until the creation callback fires (the details will be in chrome.runtime.lastError).
     * @param callback Called when the item has been created in the browser. If there were any problems creating the item, details will be available in chrome.runtime.lastError.
     */
-  def create(createProperties: chromeDashAppsLib.chromeNs.contextMenusNs.CreateProperties): scala.Unit = js.native
-  def create(
-    createProperties: chromeDashAppsLib.chromeNs.contextMenusNs.CreateProperties,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
+  def create(createProperties: CreateProperties): scala.Unit = js.native
+  def create(createProperties: CreateProperties, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
     * Removes a context menu item.
     * @param menuItemId The ID of the context menu item to remove.
@@ -60,20 +57,13 @@ object ^ extends js.Object {
     * @param updateProperties The properties to update. Accepts the same values as the create function.
     * @param callback Called when the context menu has been updated.
     */
+  def update(id: chromeDashAppsLib.chromeNs.integer, updateProperties: UpdateProperties): scala.Unit = js.native
   def update(
     id: chromeDashAppsLib.chromeNs.integer,
-    updateProperties: chromeDashAppsLib.chromeNs.contextMenusNs.UpdateProperties
-  ): scala.Unit = js.native
-  def update(
-    id: chromeDashAppsLib.chromeNs.integer,
-    updateProperties: chromeDashAppsLib.chromeNs.contextMenusNs.UpdateProperties,
+    updateProperties: UpdateProperties,
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
-  def update(id: java.lang.String, updateProperties: chromeDashAppsLib.chromeNs.contextMenusNs.UpdateProperties): scala.Unit = js.native
-  def update(
-    id: java.lang.String,
-    updateProperties: chromeDashAppsLib.chromeNs.contextMenusNs.UpdateProperties,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
+  def update(id: java.lang.String, updateProperties: UpdateProperties): scala.Unit = js.native
+  def update(id: java.lang.String, updateProperties: UpdateProperties, callback: js.Function0[scala.Unit]): scala.Unit = js.native
 }
 

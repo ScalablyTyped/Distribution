@@ -18,15 +18,15 @@ trait Logger extends js.Object {
 object Logger {
   @scala.inline
   def apply(
-    debug: js.Function1[/* repeated */ js.Any, scala.Unit],
-    error: js.Function1[/* repeated */ js.Any, scala.Unit],
-    fatal: js.Function1[/* repeated */ js.Any, scala.Unit],
-    info: js.Function1[/* repeated */ js.Any, scala.Unit],
-    level: js.Function1[LoggerLevel, scala.Unit],
-    trace: js.Function1[/* repeated */ js.Any, scala.Unit],
-    warn: js.Function1[/* repeated */ js.Any, scala.Unit]
+    debug: /* repeated */ js.Any => scala.Unit,
+    error: /* repeated */ js.Any => scala.Unit,
+    fatal: /* repeated */ js.Any => scala.Unit,
+    info: /* repeated */ js.Any => scala.Unit,
+    level: LoggerLevel => scala.Unit,
+    trace: /* repeated */ js.Any => scala.Unit,
+    warn: /* repeated */ js.Any => scala.Unit
   ): Logger = {
-    val __obj = js.Dynamic.literal(debug = debug, error = error, fatal = fatal, info = info, level = level, trace = trace, warn = warn)
+    val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), error = js.Any.fromFunction1(error), fatal = js.Any.fromFunction1(fatal), info = js.Any.fromFunction1(info), level = js.Any.fromFunction1(level), trace = js.Any.fromFunction1(trace), warn = js.Any.fromFunction1(warn))
   
     __obj.asInstanceOf[Logger]
   }

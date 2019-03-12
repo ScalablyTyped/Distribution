@@ -42,15 +42,7 @@ object VectorTileOptions {
     logo: java.lang.String | openlayersLib.openlayersMod.olxNs.LogoOptions = null,
     overlaps: js.UndefOr[scala.Boolean] = js.undefined,
     state: openlayersLib.openlayersMod.sourceNs.State = null,
-    tileClass: js.Function6[
-      /* n */ openlayersLib.openlayersMod.VectorTile, 
-      /* coords */ openlayersLib.openlayersMod.TileCoord, 
-      /* state */ openlayersLib.openlayersMod.TileNs.State, 
-      /* s */ java.lang.String, 
-      /* feature */ openlayersLib.openlayersMod.formatNs.Feature, 
-      /* type */ openlayersLib.openlayersMod.TileLoadFunctionType, 
-      _
-    ] = null,
+    tileClass: (/* n */ openlayersLib.openlayersMod.VectorTile, /* coords */ openlayersLib.openlayersMod.TileCoord, /* state */ openlayersLib.openlayersMod.TileNs.State, /* s */ java.lang.String, /* feature */ openlayersLib.openlayersMod.formatNs.Feature, /* type */ openlayersLib.openlayersMod.TileLoadFunctionType) => _ = null,
     tileGrid: openlayersLib.openlayersMod.tilegridNs.TileGrid = null,
     tileLoadFunction: openlayersLib.openlayersMod.TileLoadFunctionType = null,
     tileUrlFunction: openlayersLib.openlayersMod.TileUrlFunctionType = null,
@@ -65,7 +57,7 @@ object VectorTileOptions {
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
     if (!js.isUndefined(overlaps)) __obj.updateDynamic("overlaps")(overlaps)
     if (state != null) __obj.updateDynamic("state")(state)
-    if (tileClass != null) __obj.updateDynamic("tileClass")(tileClass)
+    if (tileClass != null) __obj.updateDynamic("tileClass")(js.Any.fromFunction6(tileClass))
     if (tileGrid != null) __obj.updateDynamic("tileGrid")(tileGrid)
     if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(tileLoadFunction)
     if (tileUrlFunction != null) __obj.updateDynamic("tileUrlFunction")(tileUrlFunction)

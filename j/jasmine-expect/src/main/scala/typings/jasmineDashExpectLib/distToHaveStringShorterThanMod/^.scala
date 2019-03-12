@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jasmine-expect/dist/toHaveStringShorterThan", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val toHaveStringShorterThan: jasmineDashExpectLib.distToHaveStringShorterThanMod.ToHaveStringShorterThan = js.native
+  val toHaveStringShorterThan: ToHaveStringShorterThan = js.native
 }
 

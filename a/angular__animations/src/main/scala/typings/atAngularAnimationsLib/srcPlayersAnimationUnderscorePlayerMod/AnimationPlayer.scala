@@ -86,25 +86,25 @@ trait AnimationPlayer extends js.Object {
 object AnimationPlayer {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
-    finish: js.Function0[scala.Unit],
-    getPosition: js.Function0[scala.Double],
-    hasStarted: js.Function0[scala.Boolean],
-    init: js.Function0[scala.Unit],
-    onDestroy: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    onDone: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    onStart: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    pause: js.Function0[scala.Unit],
-    play: js.Function0[scala.Unit],
-    reset: js.Function0[scala.Unit],
-    restart: js.Function0[scala.Unit],
-    setPosition: js.Function1[js.Any, scala.Unit],
+    destroy: () => scala.Unit,
+    finish: () => scala.Unit,
+    getPosition: () => scala.Double,
+    hasStarted: () => scala.Boolean,
+    init: () => scala.Unit,
+    onDestroy: js.Function0[scala.Unit] => scala.Unit,
+    onDone: js.Function0[scala.Unit] => scala.Unit,
+    onStart: js.Function0[scala.Unit] => scala.Unit,
+    pause: () => scala.Unit,
+    play: () => scala.Unit,
+    reset: () => scala.Unit,
+    restart: () => scala.Unit,
+    setPosition: js.Any => scala.Unit,
     totalTime: scala.Double,
-    beforeDestroy: js.Function0[_] = null,
+    beforeDestroy: () => _ = null,
     parentPlayer: AnimationPlayer = null
   ): AnimationPlayer = {
-    val __obj = js.Dynamic.literal(destroy = destroy, finish = finish, getPosition = getPosition, hasStarted = hasStarted, init = init, onDestroy = onDestroy, onDone = onDone, onStart = onStart, pause = pause, play = play, reset = reset, restart = restart, setPosition = setPosition, totalTime = totalTime)
-    if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(beforeDestroy)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), finish = js.Any.fromFunction0(finish), getPosition = js.Any.fromFunction0(getPosition), hasStarted = js.Any.fromFunction0(hasStarted), init = js.Any.fromFunction0(init), onDestroy = js.Any.fromFunction1(onDestroy), onDone = js.Any.fromFunction1(onDone), onStart = js.Any.fromFunction1(onStart), pause = js.Any.fromFunction0(pause), play = js.Any.fromFunction0(play), reset = js.Any.fromFunction0(reset), restart = js.Any.fromFunction0(restart), setPosition = js.Any.fromFunction1(setPosition), totalTime = totalTime)
+    if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(js.Any.fromFunction0(beforeDestroy))
     if (parentPlayer != null) __obj.updateDynamic("parentPlayer")(parentPlayer)
     __obj.asInstanceOf[AnimationPlayer]
   }

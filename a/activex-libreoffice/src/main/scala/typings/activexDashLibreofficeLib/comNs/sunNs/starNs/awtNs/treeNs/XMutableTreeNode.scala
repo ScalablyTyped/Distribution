@@ -69,25 +69,25 @@ object XMutableTreeNode {
     ExpandedGraphicURL: java.lang.String,
     NodeGraphicURL: java.lang.String,
     Parent: XTreeNode,
-    appendChild: js.Function1[XMutableTreeNode, scala.Unit],
-    getChildAt: js.Function1[scala.Double, XTreeNode],
-    getChildCount: js.Function0[scala.Double],
-    getCollapsedGraphicURL: js.Function0[java.lang.String],
-    getDisplayValue: js.Function0[js.Any],
-    getExpandedGraphicURL: js.Function0[java.lang.String],
-    getIndex: js.Function1[XTreeNode, scala.Double],
-    getNodeGraphicURL: js.Function0[java.lang.String],
-    getParent: js.Function0[XTreeNode],
-    hasChildrenOnDemand: js.Function0[scala.Boolean],
-    insertChildByIndex: js.Function2[scala.Double, XMutableTreeNode, scala.Unit],
-    removeChildByIndex: js.Function1[scala.Double, scala.Unit],
-    setCollapsedGraphicURL: js.Function1[java.lang.String, scala.Unit],
-    setDisplayValue: js.Function1[js.Any, scala.Unit],
-    setExpandedGraphicURL: js.Function1[java.lang.String, scala.Unit],
-    setHasChildrenOnDemand: js.Function1[scala.Boolean, scala.Unit],
-    setNodeGraphicURL: js.Function1[java.lang.String, scala.Unit]
+    appendChild: XMutableTreeNode => scala.Unit,
+    getChildAt: scala.Double => XTreeNode,
+    getChildCount: () => scala.Double,
+    getCollapsedGraphicURL: () => java.lang.String,
+    getDisplayValue: () => js.Any,
+    getExpandedGraphicURL: () => java.lang.String,
+    getIndex: XTreeNode => scala.Double,
+    getNodeGraphicURL: () => java.lang.String,
+    getParent: () => XTreeNode,
+    hasChildrenOnDemand: () => scala.Boolean,
+    insertChildByIndex: (scala.Double, XMutableTreeNode) => scala.Unit,
+    removeChildByIndex: scala.Double => scala.Unit,
+    setCollapsedGraphicURL: java.lang.String => scala.Unit,
+    setDisplayValue: js.Any => scala.Unit,
+    setExpandedGraphicURL: java.lang.String => scala.Unit,
+    setHasChildrenOnDemand: scala.Boolean => scala.Unit,
+    setNodeGraphicURL: java.lang.String => scala.Unit
   ): XMutableTreeNode = {
-    val __obj = js.Dynamic.literal(ChildCount = ChildCount, CollapsedGraphicURL = CollapsedGraphicURL, DataValue = DataValue, DisplayValue = DisplayValue, ExpandedGraphicURL = ExpandedGraphicURL, NodeGraphicURL = NodeGraphicURL, Parent = Parent, appendChild = appendChild, getChildAt = getChildAt, getChildCount = getChildCount, getCollapsedGraphicURL = getCollapsedGraphicURL, getDisplayValue = getDisplayValue, getExpandedGraphicURL = getExpandedGraphicURL, getIndex = getIndex, getNodeGraphicURL = getNodeGraphicURL, getParent = getParent, hasChildrenOnDemand = hasChildrenOnDemand, insertChildByIndex = insertChildByIndex, removeChildByIndex = removeChildByIndex, setCollapsedGraphicURL = setCollapsedGraphicURL, setDisplayValue = setDisplayValue, setExpandedGraphicURL = setExpandedGraphicURL, setHasChildrenOnDemand = setHasChildrenOnDemand, setNodeGraphicURL = setNodeGraphicURL)
+    val __obj = js.Dynamic.literal(ChildCount = ChildCount, CollapsedGraphicURL = CollapsedGraphicURL, DataValue = DataValue, DisplayValue = DisplayValue, ExpandedGraphicURL = ExpandedGraphicURL, NodeGraphicURL = NodeGraphicURL, Parent = Parent, appendChild = js.Any.fromFunction1(appendChild), getChildAt = js.Any.fromFunction1(getChildAt), getChildCount = js.Any.fromFunction0(getChildCount), getCollapsedGraphicURL = js.Any.fromFunction0(getCollapsedGraphicURL), getDisplayValue = js.Any.fromFunction0(getDisplayValue), getExpandedGraphicURL = js.Any.fromFunction0(getExpandedGraphicURL), getIndex = js.Any.fromFunction1(getIndex), getNodeGraphicURL = js.Any.fromFunction0(getNodeGraphicURL), getParent = js.Any.fromFunction0(getParent), hasChildrenOnDemand = js.Any.fromFunction0(hasChildrenOnDemand), insertChildByIndex = js.Any.fromFunction2(insertChildByIndex), removeChildByIndex = js.Any.fromFunction1(removeChildByIndex), setCollapsedGraphicURL = js.Any.fromFunction1(setCollapsedGraphicURL), setDisplayValue = js.Any.fromFunction1(setDisplayValue), setExpandedGraphicURL = js.Any.fromFunction1(setExpandedGraphicURL), setHasChildrenOnDemand = js.Any.fromFunction1(setHasChildrenOnDemand), setNodeGraphicURL = js.Any.fromFunction1(setNodeGraphicURL))
   
     __obj.asInstanceOf[XMutableTreeNode]
   }

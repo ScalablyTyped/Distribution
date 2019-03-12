@@ -13,12 +13,12 @@ trait IResourceInterceptor extends js.Object {
 object IResourceInterceptor {
   @scala.inline
   def apply(
-    response: js.Function1[/* response */ IResourceResponse, _] = null,
-    responseError: js.Function1[/* rejection */ js.Any, _] = null
+    response: /* response */ IResourceResponse => _ = null,
+    responseError: /* rejection */ js.Any => _ = null
   ): IResourceInterceptor = {
     val __obj = js.Dynamic.literal()
-    if (response != null) __obj.updateDynamic("response")(response)
-    if (responseError != null) __obj.updateDynamic("responseError")(responseError)
+    if (response != null) __obj.updateDynamic("response")(js.Any.fromFunction1(response))
+    if (responseError != null) __obj.updateDynamic("responseError")(js.Any.fromFunction1(responseError))
     __obj.asInstanceOf[IResourceInterceptor]
   }
 }

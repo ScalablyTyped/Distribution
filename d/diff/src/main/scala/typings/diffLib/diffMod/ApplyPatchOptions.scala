@@ -31,17 +31,11 @@ trait ApplyPatchOptions extends js.Object {
 object ApplyPatchOptions {
   @scala.inline
   def apply(
-    compareLine: js.Function4[
-      /* lineNumber */ scala.Double, 
-      /* line */ java.lang.String, 
-      /* operation */ diffLib.diffLibStrings.`-` | (diffLib.diffLibStrings.` `), 
-      /* patchContent */ java.lang.String, 
-      scala.Boolean
-    ] = null,
+    compareLine: (/* lineNumber */ scala.Double, /* line */ java.lang.String, /* operation */ diffLib.diffLibStrings.`-` | (diffLib.diffLibStrings.` `), /* patchContent */ java.lang.String) => scala.Boolean = null,
     fuzzFactor: scala.Int | scala.Double = null
   ): ApplyPatchOptions = {
     val __obj = js.Dynamic.literal()
-    if (compareLine != null) __obj.updateDynamic("compareLine")(compareLine)
+    if (compareLine != null) __obj.updateDynamic("compareLine")(js.Any.fromFunction4(compareLine))
     if (fuzzFactor != null) __obj.updateDynamic("fuzzFactor")(fuzzFactor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplyPatchOptions]
   }

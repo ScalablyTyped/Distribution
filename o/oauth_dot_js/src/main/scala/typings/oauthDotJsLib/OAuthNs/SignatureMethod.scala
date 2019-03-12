@@ -17,12 +17,12 @@ trait SignatureMethod extends js.Object {
 object SignatureMethod {
   @scala.inline
   def apply(
-    getSignature: js.Function1[java.lang.String, java.lang.String],
-    initialize: js.Function2[java.lang.String, Accessor, scala.Unit],
+    getSignature: java.lang.String => java.lang.String,
+    initialize: (java.lang.String, Accessor) => scala.Unit,
     key: java.lang.String,
-    sign: js.Function1[Message, java.lang.String]
+    sign: Message => java.lang.String
   ): SignatureMethod = {
-    val __obj = js.Dynamic.literal(getSignature = getSignature, initialize = initialize, key = key, sign = sign)
+    val __obj = js.Dynamic.literal(getSignature = js.Any.fromFunction1(getSignature), initialize = js.Any.fromFunction2(initialize), key = key, sign = js.Any.fromFunction1(sign))
   
     __obj.asInstanceOf[SignatureMethod]
   }

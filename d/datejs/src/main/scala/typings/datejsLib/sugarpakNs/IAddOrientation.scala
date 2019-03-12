@@ -27,24 +27,24 @@ trait IAddOrientation extends js.Object {
 object IAddOrientation {
   @scala.inline
   def apply(
-    day: js.Function0[datejsLib.Date],
-    days: js.Function0[datejsLib.Date],
-    hour: js.Function0[datejsLib.Date],
-    hours: js.Function0[datejsLib.Date],
-    millisecond: js.Function0[datejsLib.Date],
-    milliseconds: js.Function0[datejsLib.Date],
-    minute: js.Function0[datejsLib.Date],
-    minutes: js.Function0[datejsLib.Date],
-    month: js.Function0[datejsLib.Date],
-    months: js.Function0[datejsLib.Date],
-    second: js.Function0[datejsLib.Date],
-    seconds: js.Function0[datejsLib.Date],
-    week: js.Function0[datejsLib.Date],
-    weeks: js.Function0[datejsLib.Date],
-    year: js.Function0[datejsLib.Date],
-    years: js.Function0[datejsLib.Date]
+    day: () => datejsLib.Date,
+    days: () => datejsLib.Date,
+    hour: () => datejsLib.Date,
+    hours: () => datejsLib.Date,
+    millisecond: () => datejsLib.Date,
+    milliseconds: () => datejsLib.Date,
+    minute: () => datejsLib.Date,
+    minutes: () => datejsLib.Date,
+    month: () => datejsLib.Date,
+    months: () => datejsLib.Date,
+    second: () => datejsLib.Date,
+    seconds: () => datejsLib.Date,
+    week: () => datejsLib.Date,
+    weeks: () => datejsLib.Date,
+    year: () => datejsLib.Date,
+    years: () => datejsLib.Date
   ): IAddOrientation = {
-    val __obj = js.Dynamic.literal(day = day, days = days, hour = hour, hours = hours, millisecond = millisecond, milliseconds = milliseconds, minute = minute, minutes = minutes, month = month, months = months, second = second, seconds = seconds, week = week, weeks = weeks, year = year, years = years)
+    val __obj = js.Dynamic.literal(day = js.Any.fromFunction0(day), days = js.Any.fromFunction0(days), hour = js.Any.fromFunction0(hour), hours = js.Any.fromFunction0(hours), millisecond = js.Any.fromFunction0(millisecond), milliseconds = js.Any.fromFunction0(milliseconds), minute = js.Any.fromFunction0(minute), minutes = js.Any.fromFunction0(minutes), month = js.Any.fromFunction0(month), months = js.Any.fromFunction0(months), second = js.Any.fromFunction0(second), seconds = js.Any.fromFunction0(seconds), week = js.Any.fromFunction0(week), weeks = js.Any.fromFunction0(weeks), year = js.Any.fromFunction0(year), years = js.Any.fromFunction0(years))
   
     __obj.asInstanceOf[IAddOrientation]
   }

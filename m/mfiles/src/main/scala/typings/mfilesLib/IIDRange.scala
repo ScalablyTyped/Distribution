@@ -18,15 +18,15 @@ trait IIDRange extends js.Object {
 object IIDRange {
   @scala.inline
   def apply(
-    Clone: js.Function0[IIDRange],
+    Clone: () => IIDRange,
     MaxID: scala.Double,
     MaxID_32bit: java.lang.String,
     MinID: scala.Double,
     MinID_32bit: java.lang.String,
-    SetIDs: js.Function2[scala.Double, scala.Double, scala.Unit],
-    SetIDs_32bit: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    SetIDs: (scala.Double, scala.Double) => scala.Unit,
+    SetIDs_32bit: (java.lang.String, java.lang.String) => scala.Unit
   ): IIDRange = {
-    val __obj = js.Dynamic.literal(Clone = Clone, MaxID = MaxID, MaxID_32bit = MaxID_32bit, MinID = MinID, MinID_32bit = MinID_32bit, SetIDs = SetIDs, SetIDs_32bit = SetIDs_32bit)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), MaxID = MaxID, MaxID_32bit = MaxID_32bit, MinID = MinID, MinID_32bit = MinID_32bit, SetIDs = js.Any.fromFunction2(SetIDs), SetIDs_32bit = js.Any.fromFunction2(SetIDs_32bit))
   
     __obj.asInstanceOf[IIDRange]
   }

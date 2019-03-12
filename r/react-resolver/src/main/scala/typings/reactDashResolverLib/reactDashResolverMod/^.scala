@@ -27,10 +27,7 @@ object ^ extends js.Object {
     ], 
     reactLib.reactMod.ReactNs.StatelessComponent[OwnProps with MoreProps]
   ] = js.native
-  def resolve[OwnProps, K /* <: java.lang.String */, V, MoreProps](
-    prop: K,
-    resolveFn: reactDashResolverLib.reactDashResolverMod.ResolveFn[OwnProps with MoreProps, V]
-  ): js.Function1[
+  def resolve[OwnProps, K /* <: java.lang.String */, V, MoreProps](prop: K, resolveFn: ResolveFn[OwnProps with MoreProps, V]): js.Function1[
     /* component */ reactLib.reactMod.ReactNs.ComponentType[
       OwnProps with reactDashResolverLib.reactDashResolverLibStrings.resolve with js.Any
     ], 

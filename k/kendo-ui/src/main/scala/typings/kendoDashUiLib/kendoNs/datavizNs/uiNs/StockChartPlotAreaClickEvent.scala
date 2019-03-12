@@ -16,7 +16,7 @@ trait StockChartPlotAreaClickEvent extends StockChartEvent {
 object StockChartPlotAreaClickEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: StockChart,
     category: js.Any = null,
@@ -25,7 +25,7 @@ object StockChartPlotAreaClickEvent {
     x: js.Any = null,
     y: js.Any = null
   ): StockChartPlotAreaClickEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (category != null) __obj.updateDynamic("category")(category)
     if (element != null) __obj.updateDynamic("element")(element)
     if (value != null) __obj.updateDynamic("value")(value)

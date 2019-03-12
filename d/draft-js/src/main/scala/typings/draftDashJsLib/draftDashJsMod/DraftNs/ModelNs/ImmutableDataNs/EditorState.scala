@@ -42,25 +42,25 @@ import scala.scalajs.js.annotation._
 object EditorState {
   @scala.inline
   def apply(
-    getAllowUndo: js.Function0[scala.Boolean],
-    getBlockTree: js.Function1[java.lang.String, immutableLib.immutableMod.List[_]],
-    getCurrentContent: js.Function0[ContentState],
-    getCurrentInlineStyle: js.Function0[DraftInlineStyle],
-    getDecorator: js.Function0[draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.DecoratorsNs.DraftDecoratorType],
-    getDirectionMap: js.Function0[immutableLib.immutableMod.OrderedMap[_, _]],
-    getInlineStyleOverride: js.Function0[DraftInlineStyle],
-    getLastChangeType: js.Function0[EditorChangeType],
-    getNativelyRenderedContent: js.Function0[ContentState],
-    getRedoStack: js.Function0[immutableLib.immutableMod.Stack[ContentState]],
-    getSelection: js.Function0[SelectionState],
-    getUndoStack: js.Function0[immutableLib.immutableMod.Stack[ContentState]],
-    isInCompositionMode: js.Function0[scala.Boolean],
-    isSelectionAtEndOfContent: js.Function0[scala.Boolean],
-    isSelectionAtStartOfContent: js.Function0[scala.Boolean],
-    mustForceSelection: js.Function0[scala.Boolean],
-    toJS: js.Function0[js.Object]
+    getAllowUndo: () => scala.Boolean,
+    getBlockTree: java.lang.String => immutableLib.immutableMod.List[_],
+    getCurrentContent: () => ContentState,
+    getCurrentInlineStyle: () => DraftInlineStyle,
+    getDecorator: () => draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.DecoratorsNs.DraftDecoratorType,
+    getDirectionMap: () => immutableLib.immutableMod.OrderedMap[_, _],
+    getInlineStyleOverride: () => DraftInlineStyle,
+    getLastChangeType: () => EditorChangeType,
+    getNativelyRenderedContent: () => ContentState,
+    getRedoStack: () => immutableLib.immutableMod.Stack[ContentState],
+    getSelection: () => SelectionState,
+    getUndoStack: () => immutableLib.immutableMod.Stack[ContentState],
+    isInCompositionMode: () => scala.Boolean,
+    isSelectionAtEndOfContent: () => scala.Boolean,
+    isSelectionAtStartOfContent: () => scala.Boolean,
+    mustForceSelection: () => scala.Boolean,
+    toJS: () => js.Object
   ): EditorState = {
-    val __obj = js.Dynamic.literal(getAllowUndo = getAllowUndo, getBlockTree = getBlockTree, getCurrentContent = getCurrentContent, getCurrentInlineStyle = getCurrentInlineStyle, getDecorator = getDecorator, getDirectionMap = getDirectionMap, getInlineStyleOverride = getInlineStyleOverride, getLastChangeType = getLastChangeType, getNativelyRenderedContent = getNativelyRenderedContent, getRedoStack = getRedoStack, getSelection = getSelection, getUndoStack = getUndoStack, isInCompositionMode = isInCompositionMode, isSelectionAtEndOfContent = isSelectionAtEndOfContent, isSelectionAtStartOfContent = isSelectionAtStartOfContent, mustForceSelection = mustForceSelection, toJS = toJS)
+    val __obj = js.Dynamic.literal(getAllowUndo = js.Any.fromFunction0(getAllowUndo), getBlockTree = js.Any.fromFunction1(getBlockTree), getCurrentContent = js.Any.fromFunction0(getCurrentContent), getCurrentInlineStyle = js.Any.fromFunction0(getCurrentInlineStyle), getDecorator = js.Any.fromFunction0(getDecorator), getDirectionMap = js.Any.fromFunction0(getDirectionMap), getInlineStyleOverride = js.Any.fromFunction0(getInlineStyleOverride), getLastChangeType = js.Any.fromFunction0(getLastChangeType), getNativelyRenderedContent = js.Any.fromFunction0(getNativelyRenderedContent), getRedoStack = js.Any.fromFunction0(getRedoStack), getSelection = js.Any.fromFunction0(getSelection), getUndoStack = js.Any.fromFunction0(getUndoStack), isInCompositionMode = js.Any.fromFunction0(isInCompositionMode), isSelectionAtEndOfContent = js.Any.fromFunction0(isSelectionAtEndOfContent), isSelectionAtStartOfContent = js.Any.fromFunction0(isSelectionAtStartOfContent), mustForceSelection = js.Any.fromFunction0(mustForceSelection), toJS = js.Any.fromFunction0(toJS))
   
     __obj.asInstanceOf[EditorState]
   }

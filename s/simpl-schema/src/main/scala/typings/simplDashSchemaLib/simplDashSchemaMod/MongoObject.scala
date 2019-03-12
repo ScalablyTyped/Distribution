@@ -11,8 +11,8 @@ trait MongoObject extends js.Object {
 
 object MongoObject {
   @scala.inline
-  def apply(expandKey: js.Function3[js.Any, java.lang.String, js.Any, scala.Unit]): MongoObject = {
-    val __obj = js.Dynamic.literal(expandKey = expandKey)
+  def apply(expandKey: (js.Any, java.lang.String, js.Any) => scala.Unit): MongoObject = {
+    val __obj = js.Dynamic.literal(expandKey = js.Any.fromFunction3(expandKey))
   
     __obj.asInstanceOf[MongoObject]
   }

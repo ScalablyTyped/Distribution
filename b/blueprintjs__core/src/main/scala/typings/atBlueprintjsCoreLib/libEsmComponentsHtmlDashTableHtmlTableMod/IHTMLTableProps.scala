@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IHTMLTableProps
-  extends reactLib.reactMod.ReactNs.TableHTMLAttributes[reactLib.HTMLTableElement]
-     with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[reactLib.HTMLTableElement] {
+  extends reactLib.reactMod.ReactNs.TableHTMLAttributes[stdLib.HTMLTableElement]
+     with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLTableElement] {
   /** Enables borders between rows and cells. */
   var bordered: js.UndefOr[scala.Boolean] = js.undefined
   /** Use small, condensed appearance. */
@@ -26,8 +26,8 @@ trait IHTMLTableProps
 object IHTMLTableProps {
   @scala.inline
   def apply(
-    IElementRefProps: atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[reactLib.HTMLTableElement] = null,
-    TableHTMLAttributes: reactLib.reactMod.ReactNs.TableHTMLAttributes[reactLib.HTMLTableElement] = null,
+    IElementRefProps: atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLTableElement] = null,
+    TableHTMLAttributes: reactLib.reactMod.ReactNs.TableHTMLAttributes[stdLib.HTMLTableElement] = null,
     bordered: js.UndefOr[scala.Boolean] = js.undefined,
     condensed: js.UndefOr[scala.Boolean] = js.undefined,
     interactive: js.UndefOr[scala.Boolean] = js.undefined,

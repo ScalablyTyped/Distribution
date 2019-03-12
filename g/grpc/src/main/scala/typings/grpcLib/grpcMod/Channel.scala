@@ -112,7 +112,7 @@ class Channel protected () extends js.Object {
   def watchConnectivityState(
     currentState: connectivityState,
     deadline: scala.Double,
-    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* error */ js.UndefOr[stdLib.Error], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Watch for connectivity state changes.
@@ -126,7 +126,7 @@ class Channel protected () extends js.Object {
   def watchConnectivityState(
     currentState: connectivityState,
     deadline: stdLib.Date,
-    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* error */ js.UndefOr[stdLib.Error], scala.Unit]
   ): scala.Unit = js.native
 }
 

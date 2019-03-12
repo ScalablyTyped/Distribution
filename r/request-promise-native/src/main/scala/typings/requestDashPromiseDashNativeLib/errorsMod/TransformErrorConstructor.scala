@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TransformErrorConstructor
-  extends nodeLib.Error
+  extends stdLib.Error
      with org.scalablytyped.runtime.Instantiable3[
       /* cause */ js.Any, 
       /* options */ requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.Options, 

@@ -28,7 +28,7 @@ class Bulk protected () extends js.Object {
     options: BulkOptions,
     input: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* result */ js.Array[jsforceLib.recordDashResultMod.RecordResult] | js.Array[jsforceLib.batchMod.BatchResultInfo], 
       scala.Unit
     ]
@@ -45,7 +45,7 @@ class Bulk protected () extends js.Object {
     options: BulkOptions,
     input: js.Array[jsforceLib.recordMod.Record[_]],
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* result */ js.Array[jsforceLib.recordDashResultMod.RecordResult] | js.Array[jsforceLib.batchMod.BatchResultInfo], 
       scala.Unit
     ]
@@ -62,7 +62,7 @@ class Bulk protected () extends js.Object {
     options: BulkOptions,
     input: nodeLib.streamMod.Stream,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* result */ js.Array[jsforceLib.recordDashResultMod.RecordResult] | js.Array[jsforceLib.batchMod.BatchResultInfo], 
       scala.Unit
     ]

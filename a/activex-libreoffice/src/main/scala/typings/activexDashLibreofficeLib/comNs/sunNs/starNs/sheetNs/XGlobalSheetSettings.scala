@@ -73,7 +73,7 @@ trait XGlobalSheetSettings extends js.Object {
     *
     * Each string contains the members of a list, separated by commas.
     */
-  var UserLists: activexDashInteropLib.SafeArray[java.lang.String]
+  var UserLists: stdLib.SafeArray[java.lang.String]
 }
 
 object XGlobalSheetSettings {
@@ -96,7 +96,7 @@ object XGlobalSheetSettings {
     StatusBarFunction: scala.Double,
     UsePrinterMetrics: scala.Boolean,
     UseTabCol: scala.Boolean,
-    UserLists: activexDashInteropLib.SafeArray[java.lang.String]
+    UserLists: stdLib.SafeArray[java.lang.String]
   ): XGlobalSheetSettings = {
     val __obj = js.Dynamic.literal(DoAutoComplete = DoAutoComplete, EnterEdit = EnterEdit, ExpandReferences = ExpandReferences, ExtendFormat = ExtendFormat, LinkUpdateMode = LinkUpdateMode, MarkHeader = MarkHeader, Metric = Metric, MoveDirection = MoveDirection, MoveSelection = MoveSelection, PrintAllSheets = PrintAllSheets, PrintEmptyPages = PrintEmptyPages, RangeFinder = RangeFinder, ReplaceCellsWarning = ReplaceCellsWarning, Scale = Scale, StatusBarFunction = StatusBarFunction, UsePrinterMetrics = UsePrinterMetrics, UseTabCol = UseTabCol, UserLists = UserLists)
   

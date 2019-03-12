@@ -62,16 +62,16 @@ object ISlot {
   @scala.inline
   def apply(
     enabled: scala.Boolean,
-    execute: js.Function1[js.Array[_], scala.Unit],
-    execute0: js.Function0[scala.Unit],
-    execute1: js.Function1[js.Object, scala.Unit],
+    execute: js.Array[_] => scala.Unit,
+    execute0: () => scala.Unit,
+    execute1: js.Object => scala.Unit,
     listener: js.Function,
     once: scala.Boolean,
     params: js.Array[_],
     priority: scala.Double,
-    remove: js.Function0[scala.Unit]
+    remove: () => scala.Unit
   ): ISlot = {
-    val __obj = js.Dynamic.literal(enabled = enabled, execute = execute, execute0 = execute0, execute1 = execute1, listener = listener, once = once, params = params, priority = priority, remove = remove)
+    val __obj = js.Dynamic.literal(enabled = enabled, execute = js.Any.fromFunction1(execute), execute0 = js.Any.fromFunction0(execute0), execute1 = js.Any.fromFunction1(execute1), listener = listener, once = once, params = params, priority = priority, remove = js.Any.fromFunction0(remove))
   
     __obj.asInstanceOf[ISlot]
   }

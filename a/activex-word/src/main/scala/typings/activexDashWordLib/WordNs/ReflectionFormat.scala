@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.ReflectionFormat")
 @js.native
 class ReflectionFormat protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var Blur: scala.Double = js.native
   val Creator: scala.Double = js.native
   var Offset: scala.Double = js.native

@@ -30,14 +30,14 @@ object IopenLocation {
     longitude: scala.Double,
     name: java.lang.String,
     scale: scala.Double,
-    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    success: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+    complete: /* repeated */ js.Any => scala.Unit = null,
+    fail: /* repeated */ js.Any => scala.Unit = null,
+    success: /* repeated */ js.Any => scala.Unit = null
   ): IopenLocation = {
     val __obj = js.Dynamic.literal(address = address, infoUrl = infoUrl, latitude = latitude, longitude = longitude, name = name, scale = scale)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[IopenLocation]
   }
 }

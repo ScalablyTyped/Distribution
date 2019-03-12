@@ -88,6 +88,12 @@ object reactDashNativeDashSvgLibStrings {
     extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.AlignmentBaseline
   
   @js.native
+  sealed trait `box-none` extends js.Object
+  
+  @js.native
+  sealed trait `box-only` extends js.Object
+  
+  @js.native
   sealed trait butt
     extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.Linecap
   
@@ -102,6 +108,9 @@ object reactDashNativeDashSvgLibStrings {
   @js.native
   sealed trait condensed
     extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontStretch
+  
+  @js.native
+  sealed trait default extends js.Object
   
   @js.native
   sealed trait end
@@ -136,6 +145,9 @@ object reactDashNativeDashSvgLibStrings {
     extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.AlignmentBaseline
   
   @js.native
+  sealed trait inherit extends js.Object
+  
+  @js.native
   sealed trait italic
     extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontStyle
   
@@ -163,6 +175,12 @@ object reactDashNativeDashSvgLibStrings {
   @js.native
   sealed trait narrower
     extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontStretch
+  
+  @js.native
+  sealed trait `non-scaling-stroke` extends js.Object
+  
+  @js.native
+  sealed trait nonScalingStroke extends js.Object
   
   @js.native
   sealed trait none
@@ -279,6 +297,9 @@ object reactDashNativeDashSvgLibStrings {
     extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.TextDecoration
   
   @js.native
+  sealed trait uri extends js.Object
+  
+  @js.native
   sealed trait userSpaceOnUse
     extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.Units
   
@@ -327,6 +348,10 @@ object reactDashNativeDashSvgLibStrings {
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
+  def `box-none`: `box-none` = "box-none".asInstanceOf[`box-none`]
+  @scala.inline
+  def `box-only`: `box-only` = "box-only".asInstanceOf[`box-only`]
+  @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
@@ -334,6 +359,8 @@ object reactDashNativeDashSvgLibStrings {
   def central: central = "central".asInstanceOf[central]
   @scala.inline
   def condensed: condensed = "condensed".asInstanceOf[condensed]
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   @scala.inline
@@ -351,6 +378,8 @@ object reactDashNativeDashSvgLibStrings {
   @scala.inline
   def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
   @scala.inline
+  def inherit: inherit = "inherit".asInstanceOf[inherit]
+  @scala.inline
   def italic: italic = "italic".asInstanceOf[italic]
   @scala.inline
   def lighter: lighter = "lighter".asInstanceOf[lighter]
@@ -364,6 +393,10 @@ object reactDashNativeDashSvgLibStrings {
   def miter: miter = "miter".asInstanceOf[miter]
   @scala.inline
   def narrower: narrower = "narrower".asInstanceOf[narrower]
+  @scala.inline
+  def `non-scaling-stroke`: `non-scaling-stroke` = "non-scaling-stroke".asInstanceOf[`non-scaling-stroke`]
+  @scala.inline
+  def nonScalingStroke: nonScalingStroke = "nonScalingStroke".asInstanceOf[nonScalingStroke]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
@@ -418,6 +451,8 @@ object reactDashNativeDashSvgLibStrings {
   def `ultra-expanded`: `ultra-expanded` = "ultra-expanded".asInstanceOf[`ultra-expanded`]
   @scala.inline
   def underline: underline = "underline".asInstanceOf[underline]
+  @scala.inline
+  def uri: uri = "uri".asInstanceOf[uri]
   @scala.inline
   def userSpaceOnUse: userSpaceOnUse = "userSpaceOnUse".asInstanceOf[userSpaceOnUse]
   @scala.inline

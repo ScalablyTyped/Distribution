@@ -12,12 +12,9 @@ trait Anon_C extends js.Object {
 object Anon_C {
   @scala.inline
   def apply(
-    LOWER: js.Function1[
-      nodeDashSqlDash2Lib.sqlMod.Column[js.Any, java.lang.String], 
-      nodeDashSqlDash2Lib.sqlMod.Column[js.Any, java.lang.String]
-    ]
+    LOWER: nodeDashSqlDash2Lib.sqlMod.Column[js.Any, java.lang.String] => nodeDashSqlDash2Lib.sqlMod.Column[js.Any, java.lang.String]
   ): Anon_C = {
-    val __obj = js.Dynamic.literal(LOWER = LOWER)
+    val __obj = js.Dynamic.literal(LOWER = js.Any.fromFunction1(LOWER))
   
     __obj.asInstanceOf[Anon_C]
   }

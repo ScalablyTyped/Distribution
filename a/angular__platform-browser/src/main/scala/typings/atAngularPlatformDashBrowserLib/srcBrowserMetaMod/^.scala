@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/platform-browser/src/browser/meta", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def createMeta(): atAngularPlatformDashBrowserLib.srcBrowserMetaMod.Meta = js.native
+  def createMeta(): Meta = js.native
 }
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class namespaced protected () extends Sender {
   def this(config: applicationinsightsLib.outLibraryConfigMod.namespaced) = this()
   def this(config: applicationinsightsLib.outLibraryConfigMod.namespaced, onSuccess: js.Function1[/* response */ java.lang.String, scala.Unit]) = this()
-  def this(config: applicationinsightsLib.outLibraryConfigMod.namespaced, onSuccess: js.Function1[/* response */ java.lang.String, scala.Unit], onError: js.Function1[/* error */ nodeLib.Error, scala.Unit]) = this()
+  def this(config: applicationinsightsLib.outLibraryConfigMod.namespaced, onSuccess: js.Function1[/* response */ java.lang.String, scala.Unit], onError: js.Function1[/* error */ stdLib.Error, scala.Unit]) = this()
 }
 
 /* static members */

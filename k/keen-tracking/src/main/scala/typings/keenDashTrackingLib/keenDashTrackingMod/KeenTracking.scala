@@ -13,13 +13,10 @@ trait KeenTracking extends js.Object {
 object KeenTracking {
   @scala.inline
   def apply(
-    recordEvent: js.Function2[java.lang.String, js.Object, js.Promise[keenDashTrackingLib.Anon_Created]],
-    recordEvents: js.Function1[
-      org.scalablytyped.runtime.StringDictionary[js.Array[js.Object]], 
-      js.Promise[org.scalablytyped.runtime.StringDictionary[js.Array[scala.Boolean]]]
-    ]
+    recordEvent: (java.lang.String, js.Object) => js.Promise[keenDashTrackingLib.Anon_Created],
+    recordEvents: org.scalablytyped.runtime.StringDictionary[js.Array[js.Object]] => js.Promise[org.scalablytyped.runtime.StringDictionary[js.Array[scala.Boolean]]]
   ): KeenTracking = {
-    val __obj = js.Dynamic.literal(recordEvent = recordEvent, recordEvents = recordEvents)
+    val __obj = js.Dynamic.literal(recordEvent = js.Any.fromFunction2(recordEvent), recordEvents = js.Any.fromFunction1(recordEvents))
   
     __obj.asInstanceOf[KeenTracking]
   }

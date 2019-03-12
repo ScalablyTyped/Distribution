@@ -15,12 +15,12 @@ trait Logger extends js.Object {
 object Logger {
   @scala.inline
   def apply(
-    error: js.Function1[java.lang.String, scala.Unit],
-    info: js.Function1[java.lang.String, scala.Unit],
-    log: js.Function1[java.lang.String, scala.Unit],
-    warn: js.Function1[java.lang.String, scala.Unit]
+    error: java.lang.String => scala.Unit,
+    info: java.lang.String => scala.Unit,
+    log: java.lang.String => scala.Unit,
+    warn: java.lang.String => scala.Unit
   ): Logger = {
-    val __obj = js.Dynamic.literal(error = error, info = info, log = log, warn = warn)
+    val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), log = js.Any.fromFunction1(log), warn = js.Any.fromFunction1(warn))
   
     __obj.asInstanceOf[Logger]
   }

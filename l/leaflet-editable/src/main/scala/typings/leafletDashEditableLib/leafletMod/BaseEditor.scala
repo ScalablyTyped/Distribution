@@ -23,10 +23,10 @@ trait BaseEditor extends js.Object {
 object BaseEditor {
   @scala.inline
   def apply(
-    disable: js.Function0[MarkerEditor | PolylineEditor | PolygonEditor],
-    enable: js.Function0[MarkerEditor | PolylineEditor | PolygonEditor]
+    disable: () => MarkerEditor | PolylineEditor | PolygonEditor,
+    enable: () => MarkerEditor | PolylineEditor | PolygonEditor
   ): BaseEditor = {
-    val __obj = js.Dynamic.literal(disable = disable, enable = enable)
+    val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable))
   
     __obj.asInstanceOf[BaseEditor]
   }

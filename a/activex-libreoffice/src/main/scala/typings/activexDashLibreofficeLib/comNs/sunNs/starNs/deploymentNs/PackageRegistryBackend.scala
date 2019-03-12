@@ -29,21 +29,14 @@ trait PackageRegistryBackend extends XPackageRegistry {
 object PackageRegistryBackend {
   @scala.inline
   def apply(
-    SupportedPackageTypes: activexDashInteropLib.SafeArray[XPackageTypeInfo],
-    bindPackage: js.Function5[
-      java.lang.String, 
-      java.lang.String, 
-      scala.Boolean, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
-      XPackage
-    ],
-    createPersistent: js.Function3[java.lang.String, java.lang.String, scala.Boolean, scala.Unit],
-    createTransient: js.Function1[java.lang.String, scala.Unit],
-    getSupportedPackageTypes: js.Function0[activexDashInteropLib.SafeArray[XPackageTypeInfo]],
-    packageRemoved: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    SupportedPackageTypes: stdLib.SafeArray[XPackageTypeInfo],
+    bindPackage: (java.lang.String, java.lang.String, scala.Boolean, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment) => XPackage,
+    createPersistent: (java.lang.String, java.lang.String, scala.Boolean) => scala.Unit,
+    createTransient: java.lang.String => scala.Unit,
+    getSupportedPackageTypes: () => stdLib.SafeArray[XPackageTypeInfo],
+    packageRemoved: (java.lang.String, java.lang.String) => scala.Unit
   ): PackageRegistryBackend = {
-    val __obj = js.Dynamic.literal(SupportedPackageTypes = SupportedPackageTypes, bindPackage = bindPackage, createPersistent = createPersistent, createTransient = createTransient, getSupportedPackageTypes = getSupportedPackageTypes, packageRemoved = packageRemoved)
+    val __obj = js.Dynamic.literal(SupportedPackageTypes = SupportedPackageTypes, bindPackage = js.Any.fromFunction5(bindPackage), createPersistent = js.Any.fromFunction3(createPersistent), createTransient = js.Any.fromFunction1(createTransient), getSupportedPackageTypes = js.Any.fromFunction0(getSupportedPackageTypes), packageRemoved = js.Any.fromFunction2(packageRemoved))
   
     __obj.asInstanceOf[PackageRegistryBackend]
   }

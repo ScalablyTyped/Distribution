@@ -18,12 +18,12 @@ object XTextArea {
   @scala.inline
   def apply(
     TextLines: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getTextLines: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getTextLines: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTextArea = {
-    val __obj = js.Dynamic.literal(TextLines = TextLines, acquire = acquire, getTextLines = getTextLines, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(TextLines = TextLines, acquire = js.Any.fromFunction0(acquire), getTextLines = js.Any.fromFunction0(getTextLines), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTextArea]
   }

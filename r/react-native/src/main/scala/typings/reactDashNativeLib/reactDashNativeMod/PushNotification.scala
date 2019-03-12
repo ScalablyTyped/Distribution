@@ -44,16 +44,16 @@ trait PushNotification extends js.Object {
 object PushNotification {
   @scala.inline
   def apply(
-    finish: js.Function1[java.lang.String, scala.Unit],
-    getAlert: js.Function0[java.lang.String | js.Object],
-    getBadgeCount: js.Function0[scala.Double],
-    getCategory: js.Function0[java.lang.String],
-    getContentAvailable: js.Function0[scala.Double],
-    getData: js.Function0[js.Object],
-    getMessage: js.Function0[java.lang.String | js.Object],
-    getSound: js.Function0[java.lang.String]
+    finish: java.lang.String => scala.Unit,
+    getAlert: () => java.lang.String | js.Object,
+    getBadgeCount: () => scala.Double,
+    getCategory: () => java.lang.String,
+    getContentAvailable: () => scala.Double,
+    getData: () => js.Object,
+    getMessage: () => java.lang.String | js.Object,
+    getSound: () => java.lang.String
   ): PushNotification = {
-    val __obj = js.Dynamic.literal(finish = finish, getAlert = getAlert, getBadgeCount = getBadgeCount, getCategory = getCategory, getContentAvailable = getContentAvailable, getData = getData, getMessage = getMessage, getSound = getSound)
+    val __obj = js.Dynamic.literal(finish = js.Any.fromFunction1(finish), getAlert = js.Any.fromFunction0(getAlert), getBadgeCount = js.Any.fromFunction0(getBadgeCount), getCategory = js.Any.fromFunction0(getCategory), getContentAvailable = js.Any.fromFunction0(getContentAvailable), getData = js.Any.fromFunction0(getData), getMessage = js.Any.fromFunction0(getMessage), getSound = js.Any.fromFunction0(getSound))
   
     __obj.asInstanceOf[PushNotification]
   }

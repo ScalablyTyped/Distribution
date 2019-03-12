@@ -14,13 +14,6 @@ class Emitter[T] () extends js.Object {
   var _options: js.UndefOr[js.Any] = js.native
   def dispose(): scala.Unit = js.native
   /**
-    *
-    * @param listener The listener function will be call when the event happens.
-    * @param thisArgs The 'this' which will be used when calling the event listener.
-    * @param disposables An array to which a {{IDisposable}} will be added. The
-    * @return
-    */
-  /**
     * For the public to allow to subscribe
     * to events from this Emitter
     */

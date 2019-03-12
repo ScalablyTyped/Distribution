@@ -14,21 +14,18 @@ trait XAvailableLocales
     * @returns the list of locales supported by the whole of all registered implementations of that service. The sequence will be empty if there is no such lang
     * @see com.sun.star.linguistic2.XSupportedLocales
     */
-  def getAvailableLocales(aServiceName: java.lang.String): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+  def getAvailableLocales(aServiceName: java.lang.String): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
 }
 
 object XAvailableLocales {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getAvailableLocales: js.Function1[
-      java.lang.String, 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getAvailableLocales: java.lang.String => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAvailableLocales = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getAvailableLocales = getAvailableLocales, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getAvailableLocales = js.Any.fromFunction1(getAvailableLocales), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAvailableLocales]
   }

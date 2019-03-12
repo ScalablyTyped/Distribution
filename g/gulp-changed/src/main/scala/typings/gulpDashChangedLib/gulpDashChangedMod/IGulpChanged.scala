@@ -15,24 +15,12 @@ trait IGulpChanged extends js.Object {
   def apply(destination: IDestination, options: IOptions): nodeLib.NodeJSNs.ReadWriteStream = js.native
   def apply(destination: java.lang.String): nodeLib.NodeJSNs.ReadWriteStream = js.native
   def apply(destination: java.lang.String, options: IOptions): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  /**
-    * @param stream Should be used to queue sourceFile if it passes some comparison
-    * @param callback Should be called when done
-    * @param sourceFile File to operate on
-    * @param destPath Destination for sourceFile as an absolute path
-    */
   def compareLastModifiedTime(
     stream: nodeLib.streamMod.Transform,
     callback: js.Function,
     sourceFile: vinylLib.vinylMod.File,
     destPath: java.lang.String
   ): scala.Unit = js.native
-  /**
-    * @param stream Should be used to queue sourceFile if it passes some comparison
-    * @param callback Should be called when done
-    * @param sourceFile File to operate on
-    * @param destPath Destination for sourceFile as an absolute path
-    */
   def compareSha1Digest(
     stream: nodeLib.streamMod.Transform,
     callback: js.Function,

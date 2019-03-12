@@ -24,7 +24,7 @@ trait MimeNode extends js.Object {
   /** Appends an existing node to the mime tree. Removes the node from an existing tree if needed */
   def appendChild(childNode: MimeNode): MimeNode = js.native
   /** Generate the message and return it with a callback */
-  def build(callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]): scala.Unit = js.native
+  def build(callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]): scala.Unit = js.native
   /** Builds the header block for the mime node. Append \r\n\r\n before writing the content */
   def buildHeaders(): java.lang.String = js.native
   /** Creates and appends a child node.Arguments provided are passed to MimeNode constructor */
@@ -82,7 +82,7 @@ trait MimeNode extends js.Object {
   def stream(
     outputStream: nodeLib.streamMod.Readable,
     options: nodeLib.streamMod.internalNs.ReadableOptions,
-    done: js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    done: js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Appends a transform stream object to the transforms list. Final output

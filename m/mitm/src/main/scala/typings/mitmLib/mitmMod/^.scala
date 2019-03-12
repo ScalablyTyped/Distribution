@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("mitm", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): mitmLib.mitmMod.Mitm = js.native
+  def apply(): Mitm = js.native
 }
 

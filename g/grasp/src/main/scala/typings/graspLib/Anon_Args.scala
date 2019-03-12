@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Args extends js.Object {
   var args: js.Array[java.lang.String] | (stdLib.Record[java.lang.String, _]) | java.lang.String
   var callback: js.UndefOr[js.Function1[/* result */ java.lang.String, scala.Unit]] = js.undefined
-  var console: js.UndefOr[nodeLib.Console with stdLib.Console] = js.undefined
+  var console: js.UndefOr[stdLib.Console] = js.undefined
   var error: js.UndefOr[js.Function1[/* message */ java.lang.String, scala.Unit]] = js.undefined
   var exit: js.UndefOr[js.Function1[/* code */ scala.Double, scala.Unit]] = js.undefined
   // The following are "overrides" for defaults, such as console, cli-color,
@@ -28,20 +28,20 @@ object Anon_Args {
   @scala.inline
   def apply(
     args: js.Array[java.lang.String] | (stdLib.Record[java.lang.String, _]) | java.lang.String,
-    callback: js.Function1[/* result */ java.lang.String, scala.Unit] = null,
-    console: nodeLib.Console with stdLib.Console = null,
-    error: js.Function1[/* message */ java.lang.String, scala.Unit] = null,
-    exit: js.Function1[/* code */ scala.Double, scala.Unit] = null,
+    callback: /* result */ java.lang.String => scala.Unit = null,
+    console: stdLib.Console = null,
+    error: /* message */ java.lang.String => scala.Unit = null,
+    exit: /* code */ scala.Double => scala.Unit = null,
     fs: Anon_AccessAccessSync = null,
     input: java.lang.String = null,
     stdin: nodeLib.NodeJSNs.ReadStream = null,
     textFormat: Anon_M with cliDashColorLib.cliDashColorMod.mNs.Format = null
   ): Anon_Args = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (console != null) __obj.updateDynamic("console")(console)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (exit != null) __obj.updateDynamic("exit")(exit)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
+    if (exit != null) __obj.updateDynamic("exit")(js.Any.fromFunction1(exit))
     if (fs != null) __obj.updateDynamic("fs")(fs)
     if (input != null) __obj.updateDynamic("input")(input)
     if (stdin != null) __obj.updateDynamic("stdin")(stdin)

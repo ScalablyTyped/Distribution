@@ -32,14 +32,14 @@ object showAuthGuideOptions {
   @scala.inline
   def apply(
     authType: aliDashAppLib.aliDashAppLibStrings.BACKGROUNDER | aliDashAppLib.aliDashAppLibStrings.SHORTCUT | aliDashAppLib.aliDashAppLibStrings.MICROPHONE | aliDashAppLib.aliDashAppLibStrings.ADDRESSBOOK | aliDashAppLib.aliDashAppLibStrings.CAMERA | aliDashAppLib.aliDashAppLibStrings.PHOTO | aliDashAppLib.aliDashAppLibStrings.NOTIFICATION | aliDashAppLib.aliDashAppLibStrings.SELFSTARTING | aliDashAppLib.aliDashAppLibStrings.LBSSERVICE | aliDashAppLib.aliDashAppLibStrings.LBS,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
-    success: js.Function1[js.Any, scala.Unit] = null
+    complete: /* res */ js.Any => scala.Unit = null,
+    fail: js.Any => scala.Unit = null,
+    success: js.Any => scala.Unit = null
   ): showAuthGuideOptions = {
     val __obj = js.Dynamic.literal(authType = authType.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[showAuthGuideOptions]
   }
 }

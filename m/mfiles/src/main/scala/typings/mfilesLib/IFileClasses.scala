@@ -16,13 +16,13 @@ trait IFileClasses extends js.Object {
 object IFileClasses {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IFileClass, scala.Unit],
-    Clone: js.Function0[IFileClasses],
+    Add: (scala.Double, IFileClass) => scala.Unit,
+    Clone: () => IFileClasses,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IFileClass],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => IFileClass,
+    Remove: scala.Double => scala.Unit
   ): IFileClasses = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IFileClasses]
   }

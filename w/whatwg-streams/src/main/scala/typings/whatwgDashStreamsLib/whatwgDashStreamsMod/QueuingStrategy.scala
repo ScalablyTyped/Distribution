@@ -12,13 +12,10 @@ trait QueuingStrategy[T] extends js.Object {
 
 object QueuingStrategy {
   @scala.inline
-  def apply[T](
-    highWaterMark: scala.Int | scala.Double = null,
-    size: js.Function1[/* chunk */ T, scala.Double] = null
-  ): QueuingStrategy[T] = {
+  def apply[T](highWaterMark: scala.Int | scala.Double = null, size: /* chunk */ T => scala.Double = null): QueuingStrategy[T] = {
     val __obj = js.Dynamic.literal()
     if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (size != null) __obj.updateDynamic("size")(js.Any.fromFunction1(size))
     __obj.asInstanceOf[QueuingStrategy[T]]
   }
 }

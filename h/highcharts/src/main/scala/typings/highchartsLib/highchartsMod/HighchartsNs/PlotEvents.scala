@@ -76,24 +76,24 @@ trait PlotEvents extends js.Object {
 object PlotEvents {
   @scala.inline
   def apply(
-    afterAnimate: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
-    checkboxClick: js.Function1[/* event */ AreaCheckboxEvent, scala.Boolean | scala.Unit] = null,
-    click: js.Function1[/* event */ AreaClickEvent, scala.Unit] = null,
-    hide: js.Function0[scala.Unit] = null,
-    legendItemClick: js.Function1[/* event */ stdLib.Event, scala.Boolean | scala.Unit] = null,
-    mouseOut: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
-    mouseOver: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
-    show: js.Function0[scala.Unit] = null
+    afterAnimate: /* event */ stdLib.Event => scala.Unit = null,
+    checkboxClick: /* event */ AreaCheckboxEvent => scala.Boolean | scala.Unit = null,
+    click: /* event */ AreaClickEvent => scala.Unit = null,
+    hide: () => scala.Unit = null,
+    legendItemClick: /* event */ stdLib.Event => scala.Boolean | scala.Unit = null,
+    mouseOut: /* event */ stdLib.Event => scala.Unit = null,
+    mouseOver: /* event */ stdLib.Event => scala.Unit = null,
+    show: () => scala.Unit = null
   ): PlotEvents = {
     val __obj = js.Dynamic.literal()
-    if (afterAnimate != null) __obj.updateDynamic("afterAnimate")(afterAnimate)
-    if (checkboxClick != null) __obj.updateDynamic("checkboxClick")(checkboxClick)
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (hide != null) __obj.updateDynamic("hide")(hide)
-    if (legendItemClick != null) __obj.updateDynamic("legendItemClick")(legendItemClick)
-    if (mouseOut != null) __obj.updateDynamic("mouseOut")(mouseOut)
-    if (mouseOver != null) __obj.updateDynamic("mouseOver")(mouseOver)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (afterAnimate != null) __obj.updateDynamic("afterAnimate")(js.Any.fromFunction1(afterAnimate))
+    if (checkboxClick != null) __obj.updateDynamic("checkboxClick")(js.Any.fromFunction1(checkboxClick))
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
+    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction0(hide))
+    if (legendItemClick != null) __obj.updateDynamic("legendItemClick")(js.Any.fromFunction1(legendItemClick))
+    if (mouseOut != null) __obj.updateDynamic("mouseOut")(js.Any.fromFunction1(mouseOut))
+    if (mouseOver != null) __obj.updateDynamic("mouseOver")(js.Any.fromFunction1(mouseOver))
+    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction0(show))
     __obj.asInstanceOf[PlotEvents]
   }
 }

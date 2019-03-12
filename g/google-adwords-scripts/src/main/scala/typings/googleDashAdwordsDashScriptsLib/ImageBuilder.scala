@@ -13,11 +13,11 @@ trait ImageBuilder[Media] extends AdWordsBuilder[Media] {
 object ImageBuilder {
   @scala.inline
   def apply[Media](
-    build: js.Function0[AdWordsOperation[Media]],
-    withData: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob, ImageBuilder[Media]],
-    withName: js.Function1[java.lang.String, ImageBuilder[Media]]
+    build: () => AdWordsOperation[Media],
+    withData: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob => ImageBuilder[Media],
+    withName: java.lang.String => ImageBuilder[Media]
   ): ImageBuilder[Media] = {
-    val __obj = js.Dynamic.literal(build = build, withData = withData, withName = withName)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), withData = js.Any.fromFunction1(withData), withName = js.Any.fromFunction1(withName))
   
     __obj.asInstanceOf[ImageBuilder[Media]]
   }

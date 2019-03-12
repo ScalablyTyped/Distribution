@@ -31,7 +31,7 @@ trait CascaderProps extends js.Object {
   /** typo props name before antd@3.7.0 */
   var filedNames: js.UndefOr[FieldNamesType] = js.undefined
   var getPopupContainer: js.UndefOr[
-    js.Function1[/* triggerNode */ js.UndefOr[reactLib.HTMLElement], reactLib.HTMLElement]
+    js.Function1[/* triggerNode */ js.UndefOr[stdLib.HTMLElement], stdLib.HTMLElement]
   ] = js.undefined
   var inputPrefixCls: js.UndefOr[java.lang.String] = js.undefined
   var loadData: js.UndefOr[
@@ -77,24 +77,16 @@ object CascaderProps {
     className: java.lang.String = null,
     defaultValue: js.Array[java.lang.String] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    displayRender: js.Function2[
-      /* label */ js.Array[java.lang.String], 
-      /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]], 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    displayRender: (/* label */ js.Array[java.lang.String], /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]]) => reactLib.reactMod.ReactNs.ReactNode = null,
     expandTrigger: CascaderExpandTrigger = null,
     fieldNames: FieldNamesType = null,
     filedNames: FieldNamesType = null,
-    getPopupContainer: js.Function1[/* triggerNode */ js.UndefOr[reactLib.HTMLElement], reactLib.HTMLElement] = null,
+    getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.HTMLElement] => stdLib.HTMLElement = null,
     inputPrefixCls: java.lang.String = null,
-    loadData: js.Function1[/* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]], scala.Unit] = null,
+    loadData: /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]] => scala.Unit = null,
     notFoundContent: reactLib.reactMod.ReactNs.ReactNode = null,
-    onChange: js.Function2[
-      /* value */ js.Array[java.lang.String], 
-      /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]], 
-      scala.Unit
-    ] = null,
-    onPopupVisibleChange: js.Function1[/* popupVisible */ scala.Boolean, scala.Unit] = null,
+    onChange: (/* value */ js.Array[java.lang.String], /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]]) => scala.Unit = null,
+    onPopupVisibleChange: /* popupVisible */ scala.Boolean => scala.Unit = null,
     placeholder: java.lang.String = null,
     popupClassName: java.lang.String = null,
     popupPlacement: java.lang.String = null,
@@ -112,16 +104,16 @@ object CascaderProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (displayRender != null) __obj.updateDynamic("displayRender")(displayRender)
+    if (displayRender != null) __obj.updateDynamic("displayRender")(js.Any.fromFunction2(displayRender))
     if (expandTrigger != null) __obj.updateDynamic("expandTrigger")(expandTrigger)
     if (fieldNames != null) __obj.updateDynamic("fieldNames")(fieldNames)
     if (filedNames != null) __obj.updateDynamic("filedNames")(filedNames)
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer)
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (inputPrefixCls != null) __obj.updateDynamic("inputPrefixCls")(inputPrefixCls)
-    if (loadData != null) __obj.updateDynamic("loadData")(loadData)
+    if (loadData != null) __obj.updateDynamic("loadData")(js.Any.fromFunction1(loadData))
     if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onPopupVisibleChange != null) __obj.updateDynamic("onPopupVisibleChange")(onPopupVisibleChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onPopupVisibleChange != null) __obj.updateDynamic("onPopupVisibleChange")(js.Any.fromFunction1(onPopupVisibleChange))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (popupClassName != null) __obj.updateDynamic("popupClassName")(popupClassName)
     if (popupPlacement != null) __obj.updateDynamic("popupPlacement")(popupPlacement)

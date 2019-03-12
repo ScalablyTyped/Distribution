@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/iam/documents", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def assumeRolePolicyForPrincipal(principal: atPulumiAwsLib.iamDocumentsMod.Principal): atPulumiAwsLib.iamDocumentsMod.PolicyDocument = js.native
+  def assumeRolePolicyForPrincipal(principal: Principal): PolicyDocument = js.native
 }
 

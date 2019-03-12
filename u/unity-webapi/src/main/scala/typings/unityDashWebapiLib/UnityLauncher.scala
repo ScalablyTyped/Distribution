@@ -19,16 +19,16 @@ trait UnityLauncher extends js.Object {
 object UnityLauncher {
   @scala.inline
   def apply(
-    addAction: js.Function2[java.lang.String, js.Function, js.Any],
-    clearCount: js.Function0[js.Any],
-    clearProgress: js.Function0[js.Any],
-    removeAction: js.Function1[java.lang.String, js.Any],
-    removeActions: js.Function0[js.Any],
-    setCount: js.Function1[scala.Double, js.Any],
-    setProgress: js.Function1[scala.Double, js.Any],
-    setUrgent: js.Function1[scala.Boolean, js.Any]
+    addAction: (java.lang.String, js.Function) => js.Any,
+    clearCount: () => js.Any,
+    clearProgress: () => js.Any,
+    removeAction: java.lang.String => js.Any,
+    removeActions: () => js.Any,
+    setCount: scala.Double => js.Any,
+    setProgress: scala.Double => js.Any,
+    setUrgent: scala.Boolean => js.Any
   ): UnityLauncher = {
-    val __obj = js.Dynamic.literal(addAction = addAction, clearCount = clearCount, clearProgress = clearProgress, removeAction = removeAction, removeActions = removeActions, setCount = setCount, setProgress = setProgress, setUrgent = setUrgent)
+    val __obj = js.Dynamic.literal(addAction = js.Any.fromFunction2(addAction), clearCount = js.Any.fromFunction0(clearCount), clearProgress = js.Any.fromFunction0(clearProgress), removeAction = js.Any.fromFunction1(removeAction), removeActions = js.Any.fromFunction0(removeActions), setCount = js.Any.fromFunction1(setCount), setProgress = js.Any.fromFunction1(setProgress), setUrgent = js.Any.fromFunction1(setUrgent))
   
     __obj.asInstanceOf[UnityLauncher]
   }

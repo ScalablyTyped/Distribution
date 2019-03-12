@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebBrowserControl protected () extends js.Object {
   var `Access.WebBrowserControl_typekey`: WebBrowserControl = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   var BorderColor: scala.Double = js.native
   var BorderLineStyle: scala.Double = js.native
   var BorderShade: scala.Double = js.native
@@ -41,7 +41,7 @@ class WebBrowserControl protected () extends js.Object {
   var Height: scala.Double = js.native
   var HelpContextId: scala.Double = js.native
   var HorizontalAnchor: AcHorizontalAnchor = js.native
-  val Hyperlink: Hyperlink = js.native
+  val Hyperlink: activexDashAccessLib.AccessNs.Hyperlink = js.native
   var InSelection: scala.Boolean = js.native
   val Layout: AcLayoutType = js.native
   val LayoutID: scala.Double = js.native

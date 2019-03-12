@@ -12,8 +12,8 @@ trait WaveSurferPlugin extends js.Object {
 
 object WaveSurferPlugin {
   @scala.inline
-  def apply(destroy: js.Function0[scala.Unit], init: js.Function0[scala.Unit]): WaveSurferPlugin = {
-    val __obj = js.Dynamic.literal(destroy = destroy, init = init)
+  def apply(destroy: () => scala.Unit, init: () => scala.Unit): WaveSurferPlugin = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), init = js.Any.fromFunction0(init))
   
     __obj.asInstanceOf[WaveSurferPlugin]
   }

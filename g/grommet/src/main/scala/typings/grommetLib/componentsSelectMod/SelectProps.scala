@@ -54,7 +54,7 @@ object SelectProps {
     options: js.Array[java.lang.String | reactLib.reactMod.Global.JSXNs.Element | js.Object],
     a11yTitle: java.lang.String = null,
     alignSelf: grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.stretch = null,
-    children: js.Function1[/* repeated */ js.Any, _] = null,
+    children: /* repeated */ js.Any => _ = null,
     closeOnChange: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: scala.Boolean | (js.Array[scala.Double | java.lang.String | js.Object]) = null,
     disabledKey: java.lang.String | (js.Function1[/* repeated */ js.Any, _]) = null,
@@ -69,10 +69,10 @@ object SelectProps {
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null,
     messages: grommetLib.Anon_Multiple = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function1[/* repeated */ js.Any, _] = null,
-    onClose: js.Function1[/* repeated */ js.Any, _] = null,
-    onOpen: js.Function1[/* repeated */ js.Any, _] = null,
-    onSearch: js.Function1[/* repeated */ js.Any, _] = null,
+    onChange: /* repeated */ js.Any => _ = null,
+    onClose: /* repeated */ js.Any => _ = null,
+    onOpen: /* repeated */ js.Any => _ = null,
+    onSearch: /* repeated */ js.Any => _ = null,
     placeholder: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
     plain: js.UndefOr[scala.Boolean] = js.undefined,
     searchPlaceholder: java.lang.String = null,
@@ -85,7 +85,7 @@ object SelectProps {
     val __obj = js.Dynamic.literal(options = options)
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (!js.isUndefined(closeOnChange)) __obj.updateDynamic("closeOnChange")(closeOnChange)
     if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (disabledKey != null) __obj.updateDynamic("disabledKey")(disabledKey.asInstanceOf[js.Any])
@@ -100,10 +100,10 @@ object SelectProps {
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
-    if (onSearch != null) __obj.updateDynamic("onSearch")(onSearch)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
+    if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction1(onSearch))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
     if (searchPlaceholder != null) __obj.updateDynamic("searchPlaceholder")(searchPlaceholder)

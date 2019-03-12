@@ -21,28 +21,13 @@ trait User_permissionsResource extends js.Object {
 object User_permissionsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UserPermission]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UserPermission]
-    ],
-    list: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListUserPermissionsResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UserPermission]
-    ]
+    create: gapiDotClientDotTagmanagerLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[UserPermission],
+    delete: gapiDotClientDotTagmanagerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotTagmanagerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[UserPermission],
+    list: gapiDotClientDotTagmanagerLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[ListUserPermissionsResponse],
+    update: gapiDotClientDotTagmanagerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[UserPermission]
   ): User_permissionsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, update = update)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[User_permissionsResource]
   }

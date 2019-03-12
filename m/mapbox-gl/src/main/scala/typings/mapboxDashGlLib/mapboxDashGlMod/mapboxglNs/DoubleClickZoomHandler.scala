@@ -13,12 +13,8 @@ trait DoubleClickZoomHandler extends js.Object {
 
 object DoubleClickZoomHandler {
   @scala.inline
-  def apply(
-    disable: js.Function0[scala.Unit],
-    enable: js.Function0[scala.Unit],
-    isEnabled: js.Function0[scala.Boolean]
-  ): DoubleClickZoomHandler = {
-    val __obj = js.Dynamic.literal(disable = disable, enable = enable, isEnabled = isEnabled)
+  def apply(disable: () => scala.Unit, enable: () => scala.Unit, isEnabled: () => scala.Boolean): DoubleClickZoomHandler = {
+    val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), isEnabled = js.Any.fromFunction0(isEnabled))
   
     __obj.asInstanceOf[DoubleClickZoomHandler]
   }

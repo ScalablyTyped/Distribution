@@ -35,11 +35,7 @@ trait IDropOptions extends js.Object {
 object IDropOptions {
   @scala.inline
   def apply(
-    beforeClose: js.Function2[
-      /* event */ stdLib.Event, 
-      /* drop */ tetherDashDropLib.tetherDashDropMod.Drop, 
-      scala.Boolean
-    ] = null,
+    beforeClose: (/* event */ stdLib.Event, /* drop */ tetherDashDropLib.tetherDashDropMod.Drop) => scala.Boolean = null,
     blurDelay: scala.Int | scala.Double = null,
     classes: java.lang.String = null,
     closeDelay: scala.Int | scala.Double = null,
@@ -57,7 +53,7 @@ object IDropOptions {
     tetherOptions: tetherLib.tetherMod.TetherNs.ITetherOptions = null
   ): IDropOptions = {
     val __obj = js.Dynamic.literal()
-    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
+    if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction2(beforeClose))
     if (blurDelay != null) __obj.updateDynamic("blurDelay")(blurDelay.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (closeDelay != null) __obj.updateDynamic("closeDelay")(closeDelay.asInstanceOf[js.Any])

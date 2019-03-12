@@ -123,8 +123,8 @@ object SocialIconProps {
     iconStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     light: js.UndefOr[scala.Boolean] = js.undefined,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
-    onLongPress: js.Function0[scala.Unit] = null,
-    onPress: js.Function0[scala.Unit] = null,
+    onLongPress: () => scala.Unit = null,
+    onPress: () => scala.Unit = null,
     raised: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     title: java.lang.String = null,
@@ -143,8 +143,8 @@ object SocialIconProps {
     if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(light)) __obj.updateDynamic("light")(light)
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction0(onLongPress))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised)
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)

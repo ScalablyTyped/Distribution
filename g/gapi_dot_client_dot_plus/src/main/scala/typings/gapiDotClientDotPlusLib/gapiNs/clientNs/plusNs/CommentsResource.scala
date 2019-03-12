@@ -15,16 +15,10 @@ trait CommentsResource extends js.Object {
 object CommentsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotPlusLib.Anon_AltCommentId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Comment]
-    ],
-    list: js.Function1[
-      gapiDotClientDotPlusLib.Anon_ActivityIdAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CommentFeed]
-    ]
+    get: gapiDotClientDotPlusLib.Anon_AltCommentId => gapiDotClientLib.gapiNs.clientNs.Request[Comment],
+    list: gapiDotClientDotPlusLib.Anon_ActivityIdAlt => gapiDotClientLib.gapiNs.clientNs.Request[CommentFeed]
   ): CommentsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[CommentsResource]
   }

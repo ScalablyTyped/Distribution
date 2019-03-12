@@ -42,7 +42,7 @@ object AppSelectionOptions {
   @scala.inline
   def apply(
     androidTheme: scala.Int | scala.Double = null,
-    callback: js.Function1[/* app */ java.lang.String, scala.Unit] = null,
+    callback: /* app */ java.lang.String => scala.Unit = null,
     cancelButtonText: java.lang.String = null,
     dialogHeaderText: java.lang.String = null,
     list: js.Array[java.lang.String] = null,
@@ -50,7 +50,7 @@ object AppSelectionOptions {
   ): AppSelectionOptions = {
     val __obj = js.Dynamic.literal()
     if (androidTheme != null) __obj.updateDynamic("androidTheme")(androidTheme.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (cancelButtonText != null) __obj.updateDynamic("cancelButtonText")(cancelButtonText)
     if (dialogHeaderText != null) __obj.updateDynamic("dialogHeaderText")(dialogHeaderText)
     if (list != null) __obj.updateDynamic("list")(list)

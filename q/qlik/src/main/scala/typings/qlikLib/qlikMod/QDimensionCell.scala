@@ -19,10 +19,10 @@ object QDimensionCell {
     qElemNumber: scala.Double,
     qState: java.lang.String,
     qText: java.lang.String,
-    select: js.Function0[scala.Unit],
+    select: () => scala.Unit,
     qNum: scala.Int | scala.Double = null
   ): QDimensionCell = {
-    val __obj = js.Dynamic.literal(qElemNumber = qElemNumber, qState = qState, qText = qText, select = select)
+    val __obj = js.Dynamic.literal(qElemNumber = qElemNumber, qState = qState, qText = qText, select = js.Any.fromFunction0(select))
     if (qNum != null) __obj.updateDynamic("qNum")(qNum.asInstanceOf[js.Any])
     __obj.asInstanceOf[QDimensionCell]
   }

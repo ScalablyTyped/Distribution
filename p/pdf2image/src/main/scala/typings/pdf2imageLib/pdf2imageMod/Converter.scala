@@ -13,10 +13,10 @@ trait Converter extends js.Object {
 object Converter {
   @scala.inline
   def apply(
-    convertPDF: js.Function1[java.lang.String, js.Promise[js.Array[ConvertedFile]]],
-    convertPDFList: js.Function1[js.Array[java.lang.String], js.Promise[js.Array[ConvertedFile]]]
+    convertPDF: java.lang.String => js.Promise[js.Array[ConvertedFile]],
+    convertPDFList: js.Array[java.lang.String] => js.Promise[js.Array[ConvertedFile]]
   ): Converter = {
-    val __obj = js.Dynamic.literal(convertPDF = convertPDF, convertPDFList = convertPDFList)
+    val __obj = js.Dynamic.literal(convertPDF = js.Any.fromFunction1(convertPDF), convertPDFList = js.Any.fromFunction1(convertPDFList))
   
     __obj.asInstanceOf[Converter]
   }

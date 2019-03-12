@@ -10,6 +10,8 @@ trait TrunkInstance extends InstanceResource {
   var credentialLists: CredentialListResource = js.native
   var ipAccessControlLists: IPAccessControlListResource = js.native
   var originationUrls: OriginationURLResource = js.native
-  var phoneNumbers: PhoneNumberResource = js.native
+  @JSName("phoneNumbers")
+  var phoneNumbers_Original: PhoneNumberResource = js.native
+  def phoneNumbers(resourceSid: java.lang.String): PhoneNumberInstance = js.native
 }
 

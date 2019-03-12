@@ -15,12 +15,12 @@ trait StateTokenBuilder extends js.Object {
 object StateTokenBuilder {
   @scala.inline
   def apply(
-    createToken: js.Function0[java.lang.String],
-    withArgument: js.Function2[java.lang.String, java.lang.String, StateTokenBuilder],
-    withMethod: js.Function1[java.lang.String, StateTokenBuilder],
-    withTimeout: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, StateTokenBuilder]
+    createToken: () => java.lang.String,
+    withArgument: (java.lang.String, java.lang.String) => StateTokenBuilder,
+    withMethod: java.lang.String => StateTokenBuilder,
+    withTimeout: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => StateTokenBuilder
   ): StateTokenBuilder = {
-    val __obj = js.Dynamic.literal(createToken = createToken, withArgument = withArgument, withMethod = withMethod, withTimeout = withTimeout)
+    val __obj = js.Dynamic.literal(createToken = js.Any.fromFunction0(createToken), withArgument = js.Any.fromFunction2(withArgument), withMethod = js.Any.fromFunction1(withMethod), withTimeout = js.Any.fromFunction1(withTimeout))
   
     __obj.asInstanceOf[StateTokenBuilder]
   }

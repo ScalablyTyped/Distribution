@@ -12,7 +12,7 @@ trait KMLLayerViewMapImage
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html#MapImage)
     */
-  var Extent: Extent
+  var Extent: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.Extent
   /**
     * URL to the map image.
     *
@@ -38,13 +38,13 @@ object KMLLayerViewMapImage {
   def apply(
     Extent: Extent,
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     href: java.lang.String,
     id: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     rotation: scala.Double
   ): KMLLayerViewMapImage = {
-    val __obj = js.Dynamic.literal(Extent = Extent, constructor = constructor, hasOwnProperty = hasOwnProperty, href = href, id = id, propertyIsEnumerable = propertyIsEnumerable, rotation = rotation)
+    val __obj = js.Dynamic.literal(Extent = Extent, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), href = href, id = id, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), rotation = rotation)
   
     __obj.asInstanceOf[KMLLayerViewMapImage]
   }

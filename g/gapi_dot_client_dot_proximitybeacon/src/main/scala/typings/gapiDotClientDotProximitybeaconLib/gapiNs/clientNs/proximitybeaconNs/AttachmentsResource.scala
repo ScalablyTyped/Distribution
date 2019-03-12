@@ -70,24 +70,12 @@ trait AttachmentsResource extends js.Object {
 object AttachmentsResource {
   @scala.inline
   def apply(
-    batchDelete: js.Function1[
-      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DeleteAttachmentsResponse]
-    ],
-    create: js.Function1[
-      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BeaconAttachment]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltAttachmentName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    list: js.Function1[
-      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListBeaconAttachmentsResponse]
-    ]
+    batchDelete: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[DeleteAttachmentsResponse],
+    create: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName => gapiDotClientLib.gapiNs.clientNs.Request[BeaconAttachment],
+    delete: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltAttachmentName => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    list: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[ListBeaconAttachmentsResponse]
   ): AttachmentsResource = {
-    val __obj = js.Dynamic.literal(batchDelete = batchDelete, create = create, delete = delete, list = list)
+    val __obj = js.Dynamic.literal(batchDelete = js.Any.fromFunction1(batchDelete), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[AttachmentsResource]
   }

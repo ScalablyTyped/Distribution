@@ -36,7 +36,7 @@ class NgClass protected ()
   var _renderer: js.Any = js.native
   var _toggleClass: js.Any = js.native
   var klass: java.lang.String = js.native
-  var ngClass: java.lang.String | js.Array[java.lang.String] | nodeLib.Set[java.lang.String] | org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  var ngClass: java.lang.String | js.Array[java.lang.String] | stdLib.Set[java.lang.String] | org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
     * A callback method that performs change-detection, invoked
     * after the default change-detector runs.

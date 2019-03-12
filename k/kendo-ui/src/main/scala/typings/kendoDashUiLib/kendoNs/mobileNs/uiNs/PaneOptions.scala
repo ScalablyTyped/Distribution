@@ -25,10 +25,10 @@ object PaneOptions {
     layout: java.lang.String = null,
     loading: java.lang.String = null,
     name: java.lang.String = null,
-    navigate: js.Function1[/* e */ PaneNavigateEvent, scala.Unit] = null,
+    navigate: /* e */ PaneNavigateEvent => scala.Unit = null,
     portraitWidth: scala.Int | scala.Double = null,
     transition: java.lang.String = null,
-    viewShow: js.Function1[/* e */ PaneViewShowEvent, scala.Unit] = null
+    viewShow: /* e */ PaneViewShowEvent => scala.Unit = null
   ): PaneOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
@@ -36,10 +36,10 @@ object PaneOptions {
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (loading != null) __obj.updateDynamic("loading")(loading)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (navigate != null) __obj.updateDynamic("navigate")(navigate)
+    if (navigate != null) __obj.updateDynamic("navigate")(js.Any.fromFunction1(navigate))
     if (portraitWidth != null) __obj.updateDynamic("portraitWidth")(portraitWidth.asInstanceOf[js.Any])
     if (transition != null) __obj.updateDynamic("transition")(transition)
-    if (viewShow != null) __obj.updateDynamic("viewShow")(viewShow)
+    if (viewShow != null) __obj.updateDynamic("viewShow")(js.Any.fromFunction1(viewShow))
     __obj.asInstanceOf[PaneOptions]
   }
 }

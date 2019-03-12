@@ -17,14 +17,14 @@ trait ScrollbarThumb extends js.Object {
 object ScrollbarThumb {
   @scala.inline
   def apply(
-    attachTo: js.Function1[stdLib.HTMLElement, scala.Unit],
+    attachTo: stdLib.HTMLElement => scala.Unit,
     displaySize: scala.Double,
     element: stdLib.HTMLElement,
     offset: scala.Double,
     realSize: scala.Double,
-    update: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit]
+    update: (scala.Double, scala.Double, scala.Double) => scala.Unit
   ): ScrollbarThumb = {
-    val __obj = js.Dynamic.literal(attachTo = attachTo, displaySize = displaySize, element = element, offset = offset, realSize = realSize, update = update)
+    val __obj = js.Dynamic.literal(attachTo = js.Any.fromFunction1(attachTo), displaySize = displaySize, element = element, offset = offset, realSize = realSize, update = js.Any.fromFunction3(update))
   
     __obj.asInstanceOf[ScrollbarThumb]
   }

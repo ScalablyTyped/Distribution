@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class AccessProperty protected () extends js.Object {
   var `Access._AccessProperty_typekey`: AccessProperty = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   val Category: scala.Double = js.native
   val Inherited: scala.Boolean = js.native
   var Name: java.lang.String = js.native

@@ -85,18 +85,14 @@ object IChartOptions {
     nonRealtimeData: js.UndefOr[scala.Boolean] = js.undefined,
     responsive: js.UndefOr[scala.Boolean] = js.undefined,
     scaleSmoothing: scala.Int | scala.Double = null,
-    timestampFormatter: js.Function1[/* date */ stdLib.Date, java.lang.String] = null,
+    timestampFormatter: /* date */ stdLib.Date => java.lang.String = null,
     tooltip: js.UndefOr[scala.Boolean] = js.undefined,
-    tooltipFormatter: js.Function2[
-      /* timestamp */ scala.Double, 
-      /* data */ js.Array[smoothieLib.Anon_Index], 
-      java.lang.String
-    ] = null,
+    tooltipFormatter: (/* timestamp */ scala.Double, /* data */ js.Array[smoothieLib.Anon_Index]) => java.lang.String = null,
     tooltipLine: smoothieLib.Anon_LineWidth = null,
-    yIntermediateFormatter: js.Function2[/* intermediate */ scala.Double, /* precision */ scala.Double, java.lang.String] = null,
-    yMaxFormatter: js.Function2[/* max */ scala.Double, /* precision */ scala.Double, java.lang.String] = null,
-    yMinFormatter: js.Function2[/* min */ scala.Double, /* precision */ scala.Double, java.lang.String] = null,
-    yRangeFunction: js.Function1[/* range */ IRange, IRange] = null
+    yIntermediateFormatter: (/* intermediate */ scala.Double, /* precision */ scala.Double) => java.lang.String = null,
+    yMaxFormatter: (/* max */ scala.Double, /* precision */ scala.Double) => java.lang.String = null,
+    yMinFormatter: (/* min */ scala.Double, /* precision */ scala.Double) => java.lang.String = null,
+    yRangeFunction: /* range */ IRange => IRange = null
   ): IChartOptions = {
     val __obj = js.Dynamic.literal()
     if (displayDataFromPercentile != null) __obj.updateDynamic("displayDataFromPercentile")(displayDataFromPercentile.asInstanceOf[js.Any])
@@ -115,14 +111,14 @@ object IChartOptions {
     if (!js.isUndefined(nonRealtimeData)) __obj.updateDynamic("nonRealtimeData")(nonRealtimeData)
     if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
     if (scaleSmoothing != null) __obj.updateDynamic("scaleSmoothing")(scaleSmoothing.asInstanceOf[js.Any])
-    if (timestampFormatter != null) __obj.updateDynamic("timestampFormatter")(timestampFormatter)
+    if (timestampFormatter != null) __obj.updateDynamic("timestampFormatter")(js.Any.fromFunction1(timestampFormatter))
     if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip)
-    if (tooltipFormatter != null) __obj.updateDynamic("tooltipFormatter")(tooltipFormatter)
+    if (tooltipFormatter != null) __obj.updateDynamic("tooltipFormatter")(js.Any.fromFunction2(tooltipFormatter))
     if (tooltipLine != null) __obj.updateDynamic("tooltipLine")(tooltipLine)
-    if (yIntermediateFormatter != null) __obj.updateDynamic("yIntermediateFormatter")(yIntermediateFormatter)
-    if (yMaxFormatter != null) __obj.updateDynamic("yMaxFormatter")(yMaxFormatter)
-    if (yMinFormatter != null) __obj.updateDynamic("yMinFormatter")(yMinFormatter)
-    if (yRangeFunction != null) __obj.updateDynamic("yRangeFunction")(yRangeFunction)
+    if (yIntermediateFormatter != null) __obj.updateDynamic("yIntermediateFormatter")(js.Any.fromFunction2(yIntermediateFormatter))
+    if (yMaxFormatter != null) __obj.updateDynamic("yMaxFormatter")(js.Any.fromFunction2(yMaxFormatter))
+    if (yMinFormatter != null) __obj.updateDynamic("yMinFormatter")(js.Any.fromFunction2(yMinFormatter))
+    if (yRangeFunction != null) __obj.updateDynamic("yRangeFunction")(js.Any.fromFunction1(yRangeFunction))
     __obj.asInstanceOf[IChartOptions]
   }
 }

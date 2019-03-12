@@ -17,14 +17,14 @@ trait ItemResponse extends js.Object {
 object ItemResponse {
   @scala.inline
   def apply(
-    getFeedback: js.Function0[js.Object],
-    getItem: js.Function0[Item],
-    getResponse: js.Function0[js.Object],
-    getScore: js.Function0[js.Object],
-    setFeedback: js.Function1[js.Object, ItemResponse],
-    setScore: js.Function1[js.Object, ItemResponse]
+    getFeedback: () => js.Object,
+    getItem: () => Item,
+    getResponse: () => js.Object,
+    getScore: () => js.Object,
+    setFeedback: js.Object => ItemResponse,
+    setScore: js.Object => ItemResponse
   ): ItemResponse = {
-    val __obj = js.Dynamic.literal(getFeedback = getFeedback, getItem = getItem, getResponse = getResponse, getScore = getScore, setFeedback = setFeedback, setScore = setScore)
+    val __obj = js.Dynamic.literal(getFeedback = js.Any.fromFunction0(getFeedback), getItem = js.Any.fromFunction0(getItem), getResponse = js.Any.fromFunction0(getResponse), getScore = js.Any.fromFunction0(getScore), setFeedback = js.Any.fromFunction1(setFeedback), setScore = js.Any.fromFunction1(setScore))
   
     __obj.asInstanceOf[ItemResponse]
   }

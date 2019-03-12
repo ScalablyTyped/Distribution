@@ -29,17 +29,17 @@ trait INumberFieldExpression extends js.Object {
 object INumberFieldExpression {
   @scala.inline
   def apply(
-    EqualTo: js.Function1[scala.Double, IExpression],
-    GreaterThan: js.Function1[scala.Double, IExpression],
-    GreaterThanOrEqualTo: js.Function1[scala.Double, IExpression],
-    In: js.Function1[js.Array[scala.Double], IExpression],
-    IsNotNull: js.Function0[IExpression],
-    IsNull: js.Function0[IExpression],
-    LessThan: js.Function1[scala.Double, IExpression],
-    LessThanOrEqualTo: js.Function1[scala.Double, IExpression],
-    NotEqualTo: js.Function1[scala.Double, IExpression]
+    EqualTo: scala.Double => IExpression,
+    GreaterThan: scala.Double => IExpression,
+    GreaterThanOrEqualTo: scala.Double => IExpression,
+    In: js.Array[scala.Double] => IExpression,
+    IsNotNull: () => IExpression,
+    IsNull: () => IExpression,
+    LessThan: scala.Double => IExpression,
+    LessThanOrEqualTo: scala.Double => IExpression,
+    NotEqualTo: scala.Double => IExpression
   ): INumberFieldExpression = {
-    val __obj = js.Dynamic.literal(EqualTo = EqualTo, GreaterThan = GreaterThan, GreaterThanOrEqualTo = GreaterThanOrEqualTo, In = In, IsNotNull = IsNotNull, IsNull = IsNull, LessThan = LessThan, LessThanOrEqualTo = LessThanOrEqualTo, NotEqualTo = NotEqualTo)
+    val __obj = js.Dynamic.literal(EqualTo = js.Any.fromFunction1(EqualTo), GreaterThan = js.Any.fromFunction1(GreaterThan), GreaterThanOrEqualTo = js.Any.fromFunction1(GreaterThanOrEqualTo), In = js.Any.fromFunction1(In), IsNotNull = js.Any.fromFunction0(IsNotNull), IsNull = js.Any.fromFunction0(IsNull), LessThan = js.Any.fromFunction1(LessThan), LessThanOrEqualTo = js.Any.fromFunction1(LessThanOrEqualTo), NotEqualTo = js.Any.fromFunction1(NotEqualTo))
   
     __obj.asInstanceOf[INumberFieldExpression]
   }

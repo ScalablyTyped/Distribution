@@ -11,8 +11,8 @@ trait ISerializable extends js.Object {
 
 object ISerializable {
   @scala.inline
-  def apply(getSerializerType: js.Function0[java.lang.String]): ISerializable = {
-    val __obj = js.Dynamic.literal(getSerializerType = getSerializerType)
+  def apply(getSerializerType: () => java.lang.String): ISerializable = {
+    val __obj = js.Dynamic.literal(getSerializerType = js.Any.fromFunction0(getSerializerType))
   
     __obj.asInstanceOf[ISerializable]
   }

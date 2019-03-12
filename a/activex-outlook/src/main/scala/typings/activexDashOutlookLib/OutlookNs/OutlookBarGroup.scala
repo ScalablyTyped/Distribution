@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.OutlookBarGroup")
 @js.native
 class OutlookBarGroup protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   var Name: java.lang.String = js.native
   var `Outlook.OutlookBarGroup_typekey`: OutlookBarGroup = js.native

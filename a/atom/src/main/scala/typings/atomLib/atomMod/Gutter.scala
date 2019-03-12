@@ -32,15 +32,15 @@ trait Gutter extends js.Object {
 object Gutter {
   @scala.inline
   def apply(
-    decorateMarker: js.Function2[DisplayMarker, DecorationOptions, Decoration],
-    destroy: js.Function0[scala.Unit],
-    hide: js.Function0[scala.Unit],
-    isVisible: js.Function0[scala.Boolean],
-    onDidChangeVisible: js.Function1[js.Function1[Gutter, scala.Unit], Disposable],
-    onDidDestroy: js.Function1[js.Function0[scala.Unit], Disposable],
-    show: js.Function0[scala.Unit]
+    decorateMarker: (DisplayMarker, DecorationOptions) => Decoration,
+    destroy: () => scala.Unit,
+    hide: () => scala.Unit,
+    isVisible: () => scala.Boolean,
+    onDidChangeVisible: js.Function1[Gutter, scala.Unit] => Disposable,
+    onDidDestroy: js.Function0[scala.Unit] => Disposable,
+    show: () => scala.Unit
   ): Gutter = {
-    val __obj = js.Dynamic.literal(decorateMarker = decorateMarker, destroy = destroy, hide = hide, isVisible = isVisible, onDidChangeVisible = onDidChangeVisible, onDidDestroy = onDidDestroy, show = show)
+    val __obj = js.Dynamic.literal(decorateMarker = js.Any.fromFunction2(decorateMarker), destroy = js.Any.fromFunction0(destroy), hide = js.Any.fromFunction0(hide), isVisible = js.Any.fromFunction0(isVisible), onDidChangeVisible = js.Any.fromFunction1(onDidChangeVisible), onDidDestroy = js.Any.fromFunction1(onDidDestroy), show = js.Any.fromFunction0(show))
   
     __obj.asInstanceOf[Gutter]
   }

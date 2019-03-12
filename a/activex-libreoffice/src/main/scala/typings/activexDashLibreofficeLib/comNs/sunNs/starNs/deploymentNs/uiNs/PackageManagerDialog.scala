@@ -34,23 +34,16 @@ trait PackageManagerDialog
 object PackageManagerDialog {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    create: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
-      java.lang.String, 
-      scala.Unit
-    ],
-    createAndInstall: js.Function1[java.lang.String, scala.Unit],
-    createDefault: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setDialogTitle: js.Function1[java.lang.String, scala.Unit],
-    startExecuteModal: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.dialogsNs.XDialogClosedListener, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    create: (activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, java.lang.String) => scala.Unit,
+    createAndInstall: java.lang.String => scala.Unit,
+    createDefault: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setDialogTitle: java.lang.String => scala.Unit,
+    startExecuteModal: activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.dialogsNs.XDialogClosedListener => scala.Unit
   ): PackageManagerDialog = {
-    val __obj = js.Dynamic.literal(acquire = acquire, create = create, createAndInstall = createAndInstall, createDefault = createDefault, queryInterface = queryInterface, release = release, setDialogTitle = setDialogTitle, startExecuteModal = startExecuteModal)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), create = js.Any.fromFunction2(create), createAndInstall = js.Any.fromFunction1(createAndInstall), createDefault = js.Any.fromFunction0(createDefault), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDialogTitle = js.Any.fromFunction1(setDialogTitle), startExecuteModal = js.Any.fromFunction1(startExecuteModal))
   
     __obj.asInstanceOf[PackageManagerDialog]
   }

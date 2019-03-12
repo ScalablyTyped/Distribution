@@ -13,12 +13,8 @@ trait Anon_Calendar extends js.Object {
 
 object Anon_Calendar {
   @scala.inline
-  def apply(
-    parse: js.Function2[js.Any, js.Any, js.Any],
-    registerClass: js.Function1[js.Any, scala.Unit],
-    sourceClasses: js.Array[_]
-  ): Anon_Calendar = {
-    val __obj = js.Dynamic.literal(parse = parse, registerClass = registerClass, sourceClasses = sourceClasses)
+  def apply(parse: (js.Any, js.Any) => js.Any, registerClass: js.Any => scala.Unit, sourceClasses: js.Array[_]): Anon_Calendar = {
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction2(parse), registerClass = js.Any.fromFunction1(registerClass), sourceClasses = sourceClasses)
   
     __obj.asInstanceOf[Anon_Calendar]
   }

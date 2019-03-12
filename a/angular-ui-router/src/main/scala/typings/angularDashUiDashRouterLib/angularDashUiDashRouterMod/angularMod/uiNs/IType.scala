@@ -52,14 +52,14 @@ trait IType extends js.Object {
 object IType {
   @scala.inline
   def apply(
-    decode: js.Function2[java.lang.String, java.lang.String, js.Any],
-    encode: js.Function2[js.Any, java.lang.String, java.lang.String],
-    is: js.Function2[js.Any, java.lang.String, scala.Boolean],
-    equals: js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Boolean] = null,
+    decode: (java.lang.String, java.lang.String) => js.Any,
+    encode: (js.Any, java.lang.String) => java.lang.String,
+    is: (js.Any, java.lang.String) => scala.Boolean,
+    equals: (/* a */ js.Any, /* b */ js.Any) => scala.Boolean = null,
     pattern: stdLib.RegExp = null
   ): IType = {
-    val __obj = js.Dynamic.literal(decode = decode, encode = encode, is = is)
-    if (equals != null) __obj.updateDynamic("equals")(equals)
+    val __obj = js.Dynamic.literal(decode = js.Any.fromFunction2(decode), encode = js.Any.fromFunction2(encode), is = js.Any.fromFunction2(is))
+    if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction2(equals))
     if (pattern != null) __obj.updateDynamic("pattern")(pattern)
     __obj.asInstanceOf[IType]
   }

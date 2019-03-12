@@ -17,15 +17,15 @@ trait Anon_Basedir extends js.Object {
 object Anon_Basedir {
   @scala.inline
   def apply(
-    Buffer: js.Function0[java.lang.String],
-    `Buffer.isBuffer`: js.Function1[java.lang.String, java.lang.String],
-    __dirname: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    __filename: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    global: js.Function0[java.lang.String],
-    process: js.Function1[java.lang.String, java.lang.String]
+    Buffer: () => java.lang.String,
+    `Buffer.isBuffer`: java.lang.String => java.lang.String,
+    __dirname: (java.lang.String, java.lang.String) => java.lang.String,
+    __filename: (java.lang.String, java.lang.String) => java.lang.String,
+    global: () => java.lang.String,
+    process: java.lang.String => java.lang.String
   ): Anon_Basedir = {
-    val __obj = js.Dynamic.literal(Buffer = Buffer, __dirname = __dirname, __filename = __filename, global = global, process = process)
-    __obj.updateDynamic("Buffer.isBuffer")(`Buffer.isBuffer`)
+    val __obj = js.Dynamic.literal(Buffer = js.Any.fromFunction0(Buffer), __dirname = js.Any.fromFunction2(__dirname), __filename = js.Any.fromFunction2(__filename), global = js.Any.fromFunction0(global), process = js.Any.fromFunction1(process))
+    __obj.updateDynamic("Buffer.isBuffer")(js.Any.fromFunction1(`Buffer.isBuffer`))
     __obj.asInstanceOf[Anon_Basedir]
   }
 }

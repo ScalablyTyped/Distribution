@@ -16,18 +16,18 @@ trait NotVerboseLogModule extends CommonLogging[NotVerboseLogModule] {
 object NotVerboseLogModule {
   @scala.inline
   def apply(
-    error: js.Function1[java.lang.String, NotVerboseLogModule],
-    errorlns: js.Function1[java.lang.String, NotVerboseLogModule],
-    ok: js.Function1[java.lang.String, NotVerboseLogModule],
-    oklns: js.Function1[java.lang.String, NotVerboseLogModule],
+    error: java.lang.String => NotVerboseLogModule,
+    errorlns: java.lang.String => NotVerboseLogModule,
+    ok: java.lang.String => NotVerboseLogModule,
+    oklns: java.lang.String => NotVerboseLogModule,
     or: VerboseLogModule,
-    subhead: js.Function1[java.lang.String, NotVerboseLogModule],
-    warn: js.Function1[java.lang.String, NotVerboseLogModule],
-    write: js.Function1[java.lang.String, NotVerboseLogModule],
-    writeflags: js.Function1[js.Any, NotVerboseLogModule],
-    writeln: js.Function1[java.lang.String, NotVerboseLogModule]
+    subhead: java.lang.String => NotVerboseLogModule,
+    warn: java.lang.String => NotVerboseLogModule,
+    write: java.lang.String => NotVerboseLogModule,
+    writeflags: js.Any => NotVerboseLogModule,
+    writeln: java.lang.String => NotVerboseLogModule
   ): NotVerboseLogModule = {
-    val __obj = js.Dynamic.literal(error = error, errorlns = errorlns, ok = ok, oklns = oklns, or = or, subhead = subhead, warn = warn, write = write, writeflags = writeflags, writeln = writeln)
+    val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), errorlns = js.Any.fromFunction1(errorlns), ok = js.Any.fromFunction1(ok), oklns = js.Any.fromFunction1(oklns), or = or, subhead = js.Any.fromFunction1(subhead), warn = js.Any.fromFunction1(warn), write = js.Any.fromFunction1(write), writeflags = js.Any.fromFunction1(writeflags), writeln = js.Any.fromFunction1(writeln))
   
     __obj.asInstanceOf[NotVerboseLogModule]
   }

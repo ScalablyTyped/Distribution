@@ -11,8 +11,8 @@ trait I18n extends js.Object {
 
 object I18n {
   @scala.inline
-  def apply(t: js.Function2[java.lang.String, /* repeated */ js.Any, java.lang.String]): I18n = {
-    val __obj = js.Dynamic.literal(t = t)
+  def apply(t: (java.lang.String, /* repeated */ js.Any) => java.lang.String): I18n = {
+    val __obj = js.Dynamic.literal(t = js.Any.fromFunction2(t))
   
     __obj.asInstanceOf[I18n]
   }

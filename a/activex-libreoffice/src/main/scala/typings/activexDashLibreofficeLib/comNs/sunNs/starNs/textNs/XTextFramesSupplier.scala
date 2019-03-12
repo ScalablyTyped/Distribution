@@ -18,12 +18,12 @@ object XTextFramesSupplier {
   @scala.inline
   def apply(
     TextFrames: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
-    acquire: js.Function0[scala.Unit],
-    getTextFrames: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getTextFrames: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTextFramesSupplier = {
-    val __obj = js.Dynamic.literal(TextFrames = TextFrames, acquire = acquire, getTextFrames = getTextFrames, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(TextFrames = TextFrames, acquire = js.Any.fromFunction0(acquire), getTextFrames = js.Any.fromFunction0(getTextFrames), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTextFramesSupplier]
   }

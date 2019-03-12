@@ -49,8 +49,8 @@ object RequestInterceptor {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     after: AfterInterceptorCallback = null,
     before: BeforeInterceptorCallback = null,
     headers: js.Any = null,
@@ -58,7 +58,7 @@ object RequestInterceptor {
     responseData: js.Any = null,
     urls: java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp]) = null
   ): RequestInterceptor = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (after != null) __obj.updateDynamic("after")(after)
     if (before != null) __obj.updateDynamic("before")(before)
     if (headers != null) __obj.updateDynamic("headers")(headers)

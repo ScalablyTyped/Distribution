@@ -53,22 +53,14 @@ trait EventRegistration extends js.Object {
 object EventRegistration {
   @scala.inline
   def apply(
-    createCancelEvent: js.Function2[
-      stdLib.Error, 
-      atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path, 
-      atFirebaseDatabaseLib.distSrcCoreViewEventMod.CancelEvent | scala.Null
-    ],
-    createEvent: js.Function2[
-      atFirebaseDatabaseLib.distSrcCoreViewChangeMod.Change, 
-      atFirebaseDatabaseLib.distSrcApiQueryMod.Query, 
-      atFirebaseDatabaseLib.distSrcCoreViewEventMod.Event
-    ],
-    getEventRunner: js.Function1[atFirebaseDatabaseLib.distSrcCoreViewEventMod.Event, js.Function0[scala.Unit]],
-    hasAnyCallback: js.Function0[scala.Boolean],
-    matches: js.Function1[EventRegistration, scala.Boolean],
-    respondsTo: js.Function1[java.lang.String, scala.Boolean]
+    createCancelEvent: (stdLib.Error, atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path) => atFirebaseDatabaseLib.distSrcCoreViewEventMod.CancelEvent | scala.Null,
+    createEvent: (atFirebaseDatabaseLib.distSrcCoreViewChangeMod.Change, atFirebaseDatabaseLib.distSrcApiQueryMod.Query) => atFirebaseDatabaseLib.distSrcCoreViewEventMod.Event,
+    getEventRunner: atFirebaseDatabaseLib.distSrcCoreViewEventMod.Event => js.Function0[scala.Unit],
+    hasAnyCallback: () => scala.Boolean,
+    matches: EventRegistration => scala.Boolean,
+    respondsTo: java.lang.String => scala.Boolean
   ): EventRegistration = {
-    val __obj = js.Dynamic.literal(createCancelEvent = createCancelEvent, createEvent = createEvent, getEventRunner = getEventRunner, hasAnyCallback = hasAnyCallback, matches = matches, respondsTo = respondsTo)
+    val __obj = js.Dynamic.literal(createCancelEvent = js.Any.fromFunction2(createCancelEvent), createEvent = js.Any.fromFunction2(createEvent), getEventRunner = js.Any.fromFunction1(getEventRunner), hasAnyCallback = js.Any.fromFunction0(hasAnyCallback), matches = js.Any.fromFunction1(matches), respondsTo = js.Any.fromFunction1(respondsTo))
   
     __obj.asInstanceOf[EventRegistration]
   }

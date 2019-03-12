@@ -15,16 +15,10 @@ trait CountriesResource extends js.Object {
 object CountriesResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltDartId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Country]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CountriesListResponse]
-    ]
+    get: gapiDotClientDotDfareportingLib.Anon_AltDartId => gapiDotClientLib.gapiNs.clientNs.Request[Country],
+    list: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[CountriesListResponse]
   ): CountriesResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[CountriesResource]
   }

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("mui-datatables", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[muiDashDatatablesLib.muiDashDatatablesMod.MUIDataTableProps] = js.native
+  val default: reactLib.reactMod.ReactNs.ComponentType[MUIDataTableProps] = js.native
 }
 

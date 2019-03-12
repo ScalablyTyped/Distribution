@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-text-mask", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def conformToMask(
-    text: java.lang.String,
-    mask: reactDashTextDashMaskLib.reactDashTextDashMaskMod.maskArray,
-    config: js.Any
-  ): reactDashTextDashMaskLib.reactDashTextDashMaskMod.conformToMaskResult = js.native
+  def conformToMask(text: java.lang.String, mask: maskArray, config: js.Any): conformToMaskResult = js.native
 }
 

@@ -29,14 +29,14 @@ trait XColorSpace extends js.Object {
     *
     * **Remark**: For the standard RGB color space, ComponentTags consists of three elements, containing RGB_RED, RGB_GREEN and RGB_BLUE tags, respectively
     */
-  val ComponentTags: activexDashInteropLib.SafeArray[scala.Double]
+  val ComponentTags: stdLib.SafeArray[scala.Double]
   /**
     * Query various optional properties from the color space.
     *
     * If this color space has an ICC color profile, the sequence contains an element named ICCProfile. Some color spaces also have properties Gamma,
     * Whitepoint and Blackpoint. Background information for these is available [here]{@link url="http://en.wikipedia.org/wiki/Color_temperature"} .
     */
-  val Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  val Properties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * Query rendering intent of this color space.
     * @returns a value from the {@link RenderingIntent} constant group.
@@ -57,7 +57,7 @@ trait XColorSpace extends js.Object {
   def convertColorSpace(
     deviceColor: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent],
     targetColorSpace: XColorSpace
-  ): activexDashInteropLib.SafeArray[ColorComponent]
+  ): stdLib.SafeArray[ColorComponent]
   /**
     * Convert sRGB color with linear alpha into this color space.
     *
@@ -66,7 +66,7 @@ trait XColorSpace extends js.Object {
     * @returns the corresponding sequence of device colors.
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
-  def convertFromARGB(rgbColor: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ARGBColor]): activexDashInteropLib.SafeArray[ColorComponent]
+  def convertFromARGB(rgbColor: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ARGBColor]): stdLib.SafeArray[ColorComponent]
   /**
     * Convert premultiplied sRGB color with linear alpha into this color space.
     *
@@ -75,7 +75,7 @@ trait XColorSpace extends js.Object {
     * @returns the corresponding sequence of device colors.
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
-  def convertFromPARGB(rgbColor: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ARGBColor]): activexDashInteropLib.SafeArray[ColorComponent]
+  def convertFromPARGB(rgbColor: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ARGBColor]): stdLib.SafeArray[ColorComponent]
   /**
     * Convert sRGB color to a representation in this color space.
     *
@@ -84,7 +84,7 @@ trait XColorSpace extends js.Object {
     * @returns the corresponding sequence of device colors.
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
-  def convertFromRGB(rgbColor: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[RGBColor]): activexDashInteropLib.SafeArray[ColorComponent]
+  def convertFromRGB(rgbColor: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[RGBColor]): stdLib.SafeArray[ColorComponent]
   /**
     * Convert color value in this color space to sRGB color values, with linear alpha.
     *
@@ -93,7 +93,7 @@ trait XColorSpace extends js.Object {
     * @returns the corresponding sequence of colors in the sRGB color space.
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
-  def convertToARGB(deviceColor: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent]): activexDashInteropLib.SafeArray[ARGBColor]
+  def convertToARGB(deviceColor: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent]): stdLib.SafeArray[ARGBColor]
   /**
     * Convert color value in this color space to premultiplied sRGB color values, with linear alpha.
     *
@@ -103,7 +103,7 @@ trait XColorSpace extends js.Object {
     * @returns the corresponding sequence of colors in the sRGB color space.
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
-  def convertToPARGB(deviceColor: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent]): activexDashInteropLib.SafeArray[ARGBColor]
+  def convertToPARGB(deviceColor: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent]): stdLib.SafeArray[ARGBColor]
   /**
     * Convert color value in this color space to sRGB color values.
     *
@@ -113,7 +113,7 @@ trait XColorSpace extends js.Object {
     * @see convertToARGB()
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
-  def convertToRGB(deviceColor: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent]): activexDashInteropLib.SafeArray[RGBColor]
+  def convertToRGB(deviceColor: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent]): stdLib.SafeArray[RGBColor]
   /**
     * Query the kind for each color component.
     *
@@ -127,14 +127,14 @@ trait XColorSpace extends js.Object {
     *
     * **Remark**: For the standard RGB color space, ComponentTags consists of three elements, containing RGB_RED, RGB_GREEN and RGB_BLUE tags, respectively
     */
-  def getComponentTags(): activexDashInteropLib.SafeArray[scala.Double]
+  def getComponentTags(): stdLib.SafeArray[scala.Double]
   /**
     * Query various optional properties from the color space.
     *
     * If this color space has an ICC color profile, the sequence contains an element named ICCProfile. Some color spaces also have properties Gamma,
     * Whitepoint and Blackpoint. Background information for these is available [here]{@link url="http://en.wikipedia.org/wiki/Color_temperature"} .
     */
-  def getProperties(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  def getProperties(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * Query rendering intent of this color space.
     * @returns a value from the {@link RenderingIntent} constant group.
@@ -150,47 +150,23 @@ trait XColorSpace extends js.Object {
 object XColorSpace {
   @scala.inline
   def apply(
-    ComponentTags: activexDashInteropLib.SafeArray[scala.Double],
-    Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    ComponentTags: stdLib.SafeArray[scala.Double],
+    Properties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
     RenderingIntent: scala.Double,
     Type: scala.Double,
-    convertColorSpace: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], 
-      XColorSpace, 
-      activexDashInteropLib.SafeArray[ColorComponent]
-    ],
-    convertFromARGB: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ARGBColor], 
-      activexDashInteropLib.SafeArray[ColorComponent]
-    ],
-    convertFromPARGB: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ARGBColor], 
-      activexDashInteropLib.SafeArray[ColorComponent]
-    ],
-    convertFromRGB: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[RGBColor], 
-      activexDashInteropLib.SafeArray[ColorComponent]
-    ],
-    convertToARGB: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], 
-      activexDashInteropLib.SafeArray[ARGBColor]
-    ],
-    convertToPARGB: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], 
-      activexDashInteropLib.SafeArray[ARGBColor]
-    ],
-    convertToRGB: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], 
-      activexDashInteropLib.SafeArray[RGBColor]
-    ],
-    getComponentTags: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    getProperties: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    getRenderingIntent: js.Function0[scala.Double],
-    getType: js.Function0[scala.Double]
+    convertColorSpace: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], XColorSpace) => stdLib.SafeArray[ColorComponent],
+    convertFromARGB: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ARGBColor] => stdLib.SafeArray[ColorComponent],
+    convertFromPARGB: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ARGBColor] => stdLib.SafeArray[ColorComponent],
+    convertFromRGB: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[RGBColor] => stdLib.SafeArray[ColorComponent],
+    convertToARGB: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent] => stdLib.SafeArray[ARGBColor],
+    convertToPARGB: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent] => stdLib.SafeArray[ARGBColor],
+    convertToRGB: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent] => stdLib.SafeArray[RGBColor],
+    getComponentTags: () => stdLib.SafeArray[scala.Double],
+    getProperties: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    getRenderingIntent: () => scala.Double,
+    getType: () => scala.Double
   ): XColorSpace = {
-    val __obj = js.Dynamic.literal(ComponentTags = ComponentTags, Properties = Properties, RenderingIntent = RenderingIntent, Type = Type, convertColorSpace = convertColorSpace, convertFromARGB = convertFromARGB, convertFromPARGB = convertFromPARGB, convertFromRGB = convertFromRGB, convertToARGB = convertToARGB, convertToPARGB = convertToPARGB, convertToRGB = convertToRGB, getComponentTags = getComponentTags, getProperties = getProperties, getRenderingIntent = getRenderingIntent, getType = getType)
+    val __obj = js.Dynamic.literal(ComponentTags = ComponentTags, Properties = Properties, RenderingIntent = RenderingIntent, Type = Type, convertColorSpace = js.Any.fromFunction2(convertColorSpace), convertFromARGB = js.Any.fromFunction1(convertFromARGB), convertFromPARGB = js.Any.fromFunction1(convertFromPARGB), convertFromRGB = js.Any.fromFunction1(convertFromRGB), convertToARGB = js.Any.fromFunction1(convertToARGB), convertToPARGB = js.Any.fromFunction1(convertToPARGB), convertToRGB = js.Any.fromFunction1(convertToRGB), getComponentTags = js.Any.fromFunction0(getComponentTags), getProperties = js.Any.fromFunction0(getProperties), getRenderingIntent = js.Any.fromFunction0(getRenderingIntent), getType = js.Any.fromFunction0(getType))
   
     __obj.asInstanceOf[XColorSpace]
   }

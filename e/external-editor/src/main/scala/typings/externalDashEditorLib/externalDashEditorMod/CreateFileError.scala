@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CreateFileError protected ()
   extends externalDashEditorLib.mainErrorsCreateFileErrorMod.CreateFileError {
-  def this(originalError: nodeLib.Error) = this()
+  def this(originalError: stdLib.Error) = this()
 }
 

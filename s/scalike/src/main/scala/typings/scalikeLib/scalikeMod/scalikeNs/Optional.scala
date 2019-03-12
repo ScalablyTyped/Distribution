@@ -28,30 +28,25 @@ trait Optional[A] extends js.Object {
 object Optional {
   @scala.inline
   def apply[A](
-    apply1: js.Function2[Optional[js.Any], js.Function2[/* a */ A, js.Any, js.Any], Optional[js.Any]],
-    apply2: js.Function3[
-      Optional[js.Any], 
-      Optional[js.Any], 
-      js.Function3[/* a */ A, js.Any, js.Any, js.Any], 
-      Optional[js.Any]
-    ],
-    chain: js.Function1[Optional[js.Any], OptionalBuilder1[A, js.Any]],
-    contains: js.Function1[js.Any, scala.Boolean],
-    exists: js.Function1[js.Function1[/* a */ A, scala.Boolean], scala.Boolean],
-    filter: js.Function1[js.Function1[/* a */ A, scala.Boolean], Optional[A]],
-    flatMap: js.Function1[js.Function1[/* a */ A, Optional[js.Any]], Optional[js.Any]],
-    flatten: js.Function0[Optional[A]],
-    fold: js.Function2[js.Any, js.Function1[/* a */ A, js.Any], js.Any],
-    forall: js.Function1[js.Function1[/* a */ A, scala.Boolean], scala.Boolean],
-    foreach: js.Function1[js.Function1[/* a */ A, scala.Unit], scala.Unit],
-    get: js.Function0[A],
-    getOrElse: js.Function1[js.Any, A],
+    apply1: (Optional[js.Any], js.Function2[/* a */ A, js.Any, js.Any]) => Optional[js.Any],
+    apply2: (Optional[js.Any], Optional[js.Any], js.Function3[/* a */ A, js.Any, js.Any, js.Any]) => Optional[js.Any],
+    chain: Optional[js.Any] => OptionalBuilder1[A, js.Any],
+    contains: js.Any => scala.Boolean,
+    exists: js.Function1[/* a */ A, scala.Boolean] => scala.Boolean,
+    filter: js.Function1[/* a */ A, scala.Boolean] => Optional[A],
+    flatMap: js.Function1[/* a */ A, Optional[js.Any]] => Optional[js.Any],
+    flatten: () => Optional[A],
+    fold: (js.Any, js.Function1[/* a */ A, js.Any]) => js.Any,
+    forall: js.Function1[/* a */ A, scala.Boolean] => scala.Boolean,
+    foreach: js.Function1[/* a */ A, scala.Unit] => scala.Unit,
+    get: () => A,
+    getOrElse: js.Any => A,
     isEmpty: scala.Boolean,
-    map: js.Function1[js.Function1[/* a */ A, js.Any], Optional[js.Any]],
+    map: js.Function1[/* a */ A, js.Any] => Optional[js.Any],
     nonEmpty: scala.Boolean,
-    orElse: js.Function1[Optional[js.Any], Optional[A]]
+    orElse: Optional[js.Any] => Optional[A]
   ): Optional[A] = {
-    val __obj = js.Dynamic.literal(apply1 = apply1, apply2 = apply2, chain = chain, contains = contains, exists = exists, filter = filter, flatMap = flatMap, flatten = flatten, fold = fold, forall = forall, foreach = foreach, get = get, getOrElse = getOrElse, isEmpty = isEmpty, map = map, nonEmpty = nonEmpty, orElse = orElse)
+    val __obj = js.Dynamic.literal(apply1 = js.Any.fromFunction2(apply1), apply2 = js.Any.fromFunction3(apply2), chain = js.Any.fromFunction1(chain), contains = js.Any.fromFunction1(contains), exists = js.Any.fromFunction1(exists), filter = js.Any.fromFunction1(filter), flatMap = js.Any.fromFunction1(flatMap), flatten = js.Any.fromFunction0(flatten), fold = js.Any.fromFunction2(fold), forall = js.Any.fromFunction1(forall), foreach = js.Any.fromFunction1(foreach), get = js.Any.fromFunction0(get), getOrElse = js.Any.fromFunction1(getOrElse), isEmpty = isEmpty, map = js.Any.fromFunction1(map), nonEmpty = nonEmpty, orElse = js.Any.fromFunction1(orElse))
   
     __obj.asInstanceOf[Optional[A]]
   }

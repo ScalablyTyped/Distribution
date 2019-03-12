@@ -35,36 +35,32 @@ trait ExecutionOptions extends js.Object {
 object ExecutionOptions {
   @scala.inline
   def apply(
-    getCaptureStackTrace: js.Function0[scala.Boolean],
-    getConsistency: js.Function0[cassandraDashDriverLib.cassandraDashDriverMod.typesNs.consistencies],
-    getCustomPayload: js.Function0[org.scalablytyped.runtime.StringDictionary[js.Any]],
-    getFetchSize: js.Function0[scala.Double],
-    getFixedHost: js.Function0[Host],
-    getHints: js.Function0[js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]]],
-    getKeyspace: js.Function0[java.lang.String],
-    getLoadBalancingPolicy: js.Function0[
-      cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.loadBalancingNs.LoadBalancingPolicy
+    getCaptureStackTrace: () => scala.Boolean,
+    getConsistency: () => cassandraDashDriverLib.cassandraDashDriverMod.typesNs.consistencies,
+    getCustomPayload: () => org.scalablytyped.runtime.StringDictionary[js.Any],
+    getFetchSize: () => scala.Double,
+    getFixedHost: () => Host,
+    getHints: () => js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]],
+    getKeyspace: () => java.lang.String,
+    getLoadBalancingPolicy: () => cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.loadBalancingNs.LoadBalancingPolicy,
+    getPageState: () => nodeLib.Buffer,
+    getRawQueryOptions: () => QueryOptions,
+    getReadTimeout: () => scala.Double,
+    getRetryPolicy: () => cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.retryNs.RetryPolicy,
+    getRoutingKey: () => nodeLib.Buffer | js.Array[nodeLib.Buffer],
+    getSerialConsistency: () => cassandraDashDriverLib.cassandraDashDriverMod.typesNs.consistencies,
+    getTimestamp: () => js.UndefOr[
+      scala.Double | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Long */ js.Any) | scala.Null
     ],
-    getPageState: js.Function0[nodeLib.Buffer],
-    getRawQueryOptions: js.Function0[QueryOptions],
-    getReadTimeout: js.Function0[scala.Double],
-    getRetryPolicy: js.Function0[cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.retryNs.RetryPolicy],
-    getRoutingKey: js.Function0[nodeLib.Buffer | js.Array[nodeLib.Buffer]],
-    getSerialConsistency: js.Function0[cassandraDashDriverLib.cassandraDashDriverMod.typesNs.consistencies],
-    getTimestamp: js.Function0[
-      js.UndefOr[
-        scala.Double | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Long */ js.Any) | scala.Null
-      ]
-    ],
-    isAutoPage: js.Function0[scala.Boolean],
-    isBatchCounter: js.Function0[scala.Boolean],
-    isBatchLogged: js.Function0[scala.Boolean],
-    isIdempotent: js.Function0[scala.Boolean],
-    isPrepared: js.Function0[scala.Boolean],
-    isQueryTracing: js.Function0[scala.Boolean],
-    setHints: js.Function1[js.Array[java.lang.String], scala.Unit]
+    isAutoPage: () => scala.Boolean,
+    isBatchCounter: () => scala.Boolean,
+    isBatchLogged: () => scala.Boolean,
+    isIdempotent: () => scala.Boolean,
+    isPrepared: () => scala.Boolean,
+    isQueryTracing: () => scala.Boolean,
+    setHints: js.Array[java.lang.String] => scala.Unit
   ): ExecutionOptions = {
-    val __obj = js.Dynamic.literal(getCaptureStackTrace = getCaptureStackTrace, getConsistency = getConsistency, getCustomPayload = getCustomPayload, getFetchSize = getFetchSize, getFixedHost = getFixedHost, getHints = getHints, getKeyspace = getKeyspace, getLoadBalancingPolicy = getLoadBalancingPolicy, getPageState = getPageState, getRawQueryOptions = getRawQueryOptions, getReadTimeout = getReadTimeout, getRetryPolicy = getRetryPolicy, getRoutingKey = getRoutingKey, getSerialConsistency = getSerialConsistency, getTimestamp = getTimestamp, isAutoPage = isAutoPage, isBatchCounter = isBatchCounter, isBatchLogged = isBatchLogged, isIdempotent = isIdempotent, isPrepared = isPrepared, isQueryTracing = isQueryTracing, setHints = setHints)
+    val __obj = js.Dynamic.literal(getCaptureStackTrace = js.Any.fromFunction0(getCaptureStackTrace), getConsistency = js.Any.fromFunction0(getConsistency), getCustomPayload = js.Any.fromFunction0(getCustomPayload), getFetchSize = js.Any.fromFunction0(getFetchSize), getFixedHost = js.Any.fromFunction0(getFixedHost), getHints = js.Any.fromFunction0(getHints), getKeyspace = js.Any.fromFunction0(getKeyspace), getLoadBalancingPolicy = js.Any.fromFunction0(getLoadBalancingPolicy), getPageState = js.Any.fromFunction0(getPageState), getRawQueryOptions = js.Any.fromFunction0(getRawQueryOptions), getReadTimeout = js.Any.fromFunction0(getReadTimeout), getRetryPolicy = js.Any.fromFunction0(getRetryPolicy), getRoutingKey = js.Any.fromFunction0(getRoutingKey), getSerialConsistency = js.Any.fromFunction0(getSerialConsistency), getTimestamp = js.Any.fromFunction0(getTimestamp), isAutoPage = js.Any.fromFunction0(isAutoPage), isBatchCounter = js.Any.fromFunction0(isBatchCounter), isBatchLogged = js.Any.fromFunction0(isBatchLogged), isIdempotent = js.Any.fromFunction0(isIdempotent), isPrepared = js.Any.fromFunction0(isPrepared), isQueryTracing = js.Any.fromFunction0(isQueryTracing), setHints = js.Any.fromFunction1(setHints))
   
     __obj.asInstanceOf[ExecutionOptions]
   }

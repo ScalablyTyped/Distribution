@@ -81,7 +81,7 @@ object Model {
     previewHeight: scala.Int | scala.Double = null,
     previewOffset: js.Any = null,
     previewWidth: scala.Int | scala.Double = null,
-    selectionChange: js.Function1[/* e */ SelectionChangeEventArgs, scala.Unit] = null,
+    selectionChange: /* e */ SelectionChangeEventArgs => scala.Unit = null,
     showPaletteItemText: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Int | scala.Double = null
   ): Model = {
@@ -98,7 +98,7 @@ object Model {
     if (previewHeight != null) __obj.updateDynamic("previewHeight")(previewHeight.asInstanceOf[js.Any])
     if (previewOffset != null) __obj.updateDynamic("previewOffset")(previewOffset)
     if (previewWidth != null) __obj.updateDynamic("previewWidth")(previewWidth.asInstanceOf[js.Any])
-    if (selectionChange != null) __obj.updateDynamic("selectionChange")(selectionChange)
+    if (selectionChange != null) __obj.updateDynamic("selectionChange")(js.Any.fromFunction1(selectionChange))
     if (!js.isUndefined(showPaletteItemText)) __obj.updateDynamic("showPaletteItemText")(showPaletteItemText)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]

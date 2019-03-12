@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("ansicolors", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: ansicolorsLib.ansicolorsMod.Colors = js.native
+  val default: Colors = js.native
 }
 

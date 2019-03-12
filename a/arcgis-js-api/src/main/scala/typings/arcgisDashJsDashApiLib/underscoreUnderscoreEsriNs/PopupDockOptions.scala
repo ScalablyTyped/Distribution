@@ -46,13 +46,13 @@ object PopupDockOptions {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     breakpoint: scala.Boolean | PopupDockOptionsBreakpoint = null,
     buttonEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     position: java.lang.String | js.Function = null
   ): PopupDockOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (breakpoint != null) __obj.updateDynamic("breakpoint")(breakpoint.asInstanceOf[js.Any])
     if (!js.isUndefined(buttonEnabled)) __obj.updateDynamic("buttonEnabled")(buttonEnabled)
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])

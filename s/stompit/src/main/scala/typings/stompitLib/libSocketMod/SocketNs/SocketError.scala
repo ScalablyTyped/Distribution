@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SocketError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   def isApplicationError(): scala.Boolean
   def isProtocolError(): scala.Boolean
   def isTransportError(): scala.Boolean
@@ -15,12 +15,14 @@ trait SocketError
 object SocketError {
   @scala.inline
   def apply(
-    isApplicationError: js.Function0[scala.Boolean],
-    isProtocolError: js.Function0[scala.Boolean],
-    isTransportError: js.Function0[scala.Boolean],
+    isApplicationError: () => scala.Boolean,
+    isProtocolError: () => scala.Boolean,
+    isTransportError: () => scala.Boolean,
+    message: java.lang.String,
+    name: java.lang.String,
     stack: java.lang.String = null
   ): SocketError = {
-    val __obj = js.Dynamic.literal(isApplicationError = isApplicationError, isProtocolError = isProtocolError, isTransportError = isTransportError)
+    val __obj = js.Dynamic.literal(isApplicationError = js.Any.fromFunction0(isApplicationError), isProtocolError = js.Any.fromFunction0(isProtocolError), isTransportError = js.Any.fromFunction0(isTransportError), message = message, name = name)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[SocketError]
   }

@@ -90,17 +90,17 @@ trait BaseLayerView2D extends js.Object {
 object BaseLayerView2D {
   @scala.inline
   def apply(
-    attach: js.Function0[scala.Unit],
-    detach: js.Function0[scala.Unit],
-    hitTest: js.Function2[scala.Double, scala.Double, arcgisDashJsDashApiLib.IPromise[Graphic]],
+    attach: () => scala.Unit,
+    detach: () => scala.Unit,
+    hitTest: (scala.Double, scala.Double) => arcgisDashJsDashApiLib.IPromise[Graphic],
     layer: Layer,
-    render: js.Function1[BaseLayerView2DRenderRenderParameters, scala.Unit],
-    requestRender: js.Function0[scala.Unit],
+    render: BaseLayerView2DRenderRenderParameters => scala.Unit,
+    requestRender: () => scala.Unit,
     tiles: js.Array[Tile],
-    tilesChanged: js.Function2[js.Array[Tile], js.Array[Tile], scala.Unit],
+    tilesChanged: (js.Array[Tile], js.Array[Tile]) => scala.Unit,
     view: MapView
   ): BaseLayerView2D = {
-    val __obj = js.Dynamic.literal(attach = attach, detach = detach, hitTest = hitTest, layer = layer, render = render, requestRender = requestRender, tiles = tiles, tilesChanged = tilesChanged, view = view)
+    val __obj = js.Dynamic.literal(attach = js.Any.fromFunction0(attach), detach = js.Any.fromFunction0(detach), hitTest = js.Any.fromFunction2(hitTest), layer = layer, render = js.Any.fromFunction1(render), requestRender = js.Any.fromFunction0(requestRender), tiles = tiles, tilesChanged = js.Any.fromFunction2(tilesChanged), view = view)
   
     __obj.asInstanceOf[BaseLayerView2D]
   }

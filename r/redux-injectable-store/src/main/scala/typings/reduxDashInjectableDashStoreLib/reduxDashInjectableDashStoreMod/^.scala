@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-injectable-store", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val createInjectableStore: reduxDashInjectableDashStoreLib.reduxDashInjectableDashStoreMod.InjectableStoreCreator = js.native
+  val createInjectableStore: InjectableStoreCreator = js.native
 }
 

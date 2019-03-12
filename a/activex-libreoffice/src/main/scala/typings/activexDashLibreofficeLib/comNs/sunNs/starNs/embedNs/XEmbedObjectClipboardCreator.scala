@@ -36,17 +36,12 @@ trait XEmbedObjectClipboardCreator
 object XEmbedObjectClipboardCreator {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createInstanceInitFromClipboard: js.Function3[
-      XStorage, 
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      InsertedObjectInfo
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createInstanceInitFromClipboard: (XStorage, java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => InsertedObjectInfo,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XEmbedObjectClipboardCreator = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createInstanceInitFromClipboard = createInstanceInitFromClipboard, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createInstanceInitFromClipboard = js.Any.fromFunction3(createInstanceInitFromClipboard), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XEmbedObjectClipboardCreator]
   }

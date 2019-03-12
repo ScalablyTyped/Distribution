@@ -11,8 +11,8 @@ trait IPixelDataProvider extends js.Object {
 
 object IPixelDataProvider {
   @scala.inline
-  def apply(detachPixelData: js.Function0[stdLib.Uint8Array]): IPixelDataProvider = {
-    val __obj = js.Dynamic.literal(detachPixelData = detachPixelData)
+  def apply(detachPixelData: () => stdLib.Uint8Array): IPixelDataProvider = {
+    val __obj = js.Dynamic.literal(detachPixelData = js.Any.fromFunction0(detachPixelData))
   
     __obj.asInstanceOf[IPixelDataProvider]
   }

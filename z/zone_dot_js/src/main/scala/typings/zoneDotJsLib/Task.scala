@@ -83,22 +83,22 @@ object Task {
   @scala.inline
   def apply(
     callback: js.Function,
-    cancelScheduleRequest: js.Function0[scala.Unit],
+    cancelScheduleRequest: () => scala.Unit,
     invoke: js.Function,
     runCount: scala.Double,
     source: java.lang.String,
     state: TaskState,
     `type`: TaskType,
     zone: Zone,
-    cancelFn: js.Function1[/* task */ Task, scala.Unit] = null,
+    cancelFn: /* task */ Task => scala.Unit = null,
     data: TaskData = null,
-    scheduleFn: js.Function1[/* task */ Task, scala.Unit] = null
+    scheduleFn: /* task */ Task => scala.Unit = null
   ): Task = {
-    val __obj = js.Dynamic.literal(callback = callback, cancelScheduleRequest = cancelScheduleRequest, invoke = invoke, runCount = runCount, source = source, state = state, zone = zone)
+    val __obj = js.Dynamic.literal(callback = callback, cancelScheduleRequest = js.Any.fromFunction0(cancelScheduleRequest), invoke = invoke, runCount = runCount, source = source, state = state, zone = zone)
     __obj.updateDynamic("type")(`type`)
-    if (cancelFn != null) __obj.updateDynamic("cancelFn")(cancelFn)
+    if (cancelFn != null) __obj.updateDynamic("cancelFn")(js.Any.fromFunction1(cancelFn))
     if (data != null) __obj.updateDynamic("data")(data)
-    if (scheduleFn != null) __obj.updateDynamic("scheduleFn")(scheduleFn)
+    if (scheduleFn != null) __obj.updateDynamic("scheduleFn")(js.Any.fromFunction1(scheduleFn))
     __obj.asInstanceOf[Task]
   }
 }

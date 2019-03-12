@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@lingui/macro", "Select")
 @js.native
 class Select ()
-  extends atLinguiMacroLib.reactselectMod.Select
+  extends atLinguiMacroLib.reactSelectMod.Select
 

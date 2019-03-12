@@ -11,8 +11,8 @@ trait JoinSemilattice[A] extends js.Object {
 
 object JoinSemilattice {
   @scala.inline
-  def apply[A](join: js.Function2[A, A, A]): JoinSemilattice[A] = {
-    val __obj = js.Dynamic.literal(join = join)
+  def apply[A](join: (A, A) => A): JoinSemilattice[A] = {
+    val __obj = js.Dynamic.literal(join = js.Any.fromFunction2(join))
   
     __obj.asInstanceOf[JoinSemilattice[A]]
   }

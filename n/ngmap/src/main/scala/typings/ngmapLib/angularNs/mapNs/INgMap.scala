@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait INgMap extends js.Object {
+  def addMap(mapCtrl: js.Array[_]): scala.Unit = js.native
   /**
     	 * Add map to pool
     	 * @param {Function | any[]} mapCtrl Map controller
     	 */
-  def addMap(mapCtrl: angularLib.angularMod.Global.Function): scala.Unit = js.native
-  def addMap(mapCtrl: js.Array[_]): scala.Unit = js.native
+  def addMap(mapCtrl: js.Function): scala.Unit = js.native
   /**
   		 * Delete map from pool
   		 * @param {Function | any[]} mapCtrl Map controller optional. Defaults to last
   		 * controller in pool
   		 */
   def deleteMap(): scala.Unit = js.native
-  def deleteMap(mapCtrl: angularLib.angularMod.Global.Function): scala.Unit = js.native
   def deleteMap(mapCtrl: js.Array[_]): scala.Unit = js.native
+  def deleteMap(mapCtrl: js.Function): scala.Unit = js.native
   /**
   		 * Get map coordinates from address.
   		 * @param  {string}                               address Use 'current' to get users location

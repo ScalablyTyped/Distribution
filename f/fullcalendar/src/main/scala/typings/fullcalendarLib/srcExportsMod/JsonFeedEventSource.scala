@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "JsonFeedEventSource")
 @js.native
 class JsonFeedEventSource ()
-  extends fullcalendarLib.jsonfeedeventsourceMod.default
+  extends fullcalendarLib.jsonFeedEventSourceMod.default
 
 /* static members */
 @JSImport("fullcalendar/src/exports", "JsonFeedEventSource")

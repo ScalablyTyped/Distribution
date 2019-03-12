@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel")
 @js.native
 object ^ extends js.Object {
-  var icons: officeDashJsDashPreviewLib.ExcelNs.IconCollections = js.native
+  var icons: IconCollections = js.native
   /**
     *
     * Creates and opens a new workbook.  Optionally, the workbook can be pre-populated with a base64-encoded .xlsx file.
@@ -25,9 +25,7 @@ object ^ extends js.Object {
     * Executes a batch script that performs actions on the Excel object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
     */
-  def run[T](
-    batch: js.Function1[/* context */ officeDashJsDashPreviewLib.ExcelNs.RequestContext, js.Promise[T]]
-  ): js.Promise[T] = js.native
+  def run[T](batch: js.Function1[/* context */ RequestContext, js.Promise[T]]): js.Promise[T] = js.native
   /**
     * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     *
@@ -48,7 +46,7 @@ object ^ extends js.Object {
     */
   def run[T](
     context: officeDashJsDashPreviewLib.OfficeExtensionNs.ClientRequestContext,
-    batch: js.Function1[/* context */ officeDashJsDashPreviewLib.ExcelNs.RequestContext, js.Promise[T]]
+    batch: js.Function1[/* context */ RequestContext, js.Promise[T]]
   ): js.Promise[T] = js.native
   /**
     * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
@@ -57,7 +55,7 @@ object ^ extends js.Object {
     */
   def run[T](
     `object`: officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject,
-    batch: js.Function1[/* context */ officeDashJsDashPreviewLib.ExcelNs.RequestContext, js.Promise[T]]
+    batch: js.Function1[/* context */ RequestContext, js.Promise[T]]
   ): js.Promise[T] = js.native
   /**
     * Executes a batch script that performs actions on the Excel object model, using the RequestContext of previously-created API objects.
@@ -66,16 +64,13 @@ object ^ extends js.Object {
     */
   def run[T](
     objects: js.Array[officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject],
-    batch: js.Function1[/* context */ officeDashJsDashPreviewLib.ExcelNs.RequestContext, js.Promise[T]]
+    batch: js.Function1[/* context */ RequestContext, js.Promise[T]]
   ): js.Promise[T] = js.native
   /**
     * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     * @param options - The additional options for this Excel.run which specify previous objects, whether to delay the request for cell edit, session info, etc.
     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
     */
-  def run[T](
-    options: officeDashJsDashPreviewLib.ExcelNs.RunOptions,
-    batch: js.Function1[/* context */ officeDashJsDashPreviewLib.ExcelNs.RequestContext, js.Promise[T]]
-  ): js.Promise[T] = js.native
+  def run[T](options: RunOptions, batch: js.Function1[/* context */ RequestContext, js.Promise[T]]): js.Promise[T] = js.native
 }
 

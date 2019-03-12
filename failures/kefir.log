@@ -2,7 +2,7 @@
 [debug] PhaseRunner.scala:82 Success [id => kefir, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/kefir/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/kefir),TsIdentLibrarySimple(kefir)),TsIdentModule(None,List(kefir))) [id => kefir, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(kefir)) [id => kefir, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:200 Processing TsIdentLibrarySimple(kefir) [id => kefir, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:201 Processing TsIdentLibrarySimple(kefir) [id => kefir, phase => typescript] 
 [info ] ResolveTypeQueries.scala:138 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Observable)))) [id => kefir, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(kefir) / TsDeclVar(kefir))] 
 [info ] ResolveTypeQueries.scala:138 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Observable)))) [id => kefir, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(kefir) / TsDeclVar(kefir) / TsTypeObject() / TsMemberProperty(Observable) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:138 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Pool)))) [id => kefir, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(kefir) / TsDeclVar(kefir))] 
@@ -245,7 +245,7 @@
 [debug] PhaseRunner.scala:82 Success [id => kefir, phase => scala.js] 
 [error] Anon_0.scala:83 method combine_TArray is defined twice;
   the conflicting method combine_TArray was defined at line 81:7,   def combine_TArray[T /* <: js.Array[kefirLib.kefirMod.Observable[_, _]] */](obss: T): kefirLib.kefirMod.Stream[ [id => kefir, phase => build] 
-[error] ^.scala:42 method combine_TArray is defined twice;
-  the conflicting method combine_TArray was defined at line 40:7,   def combine_TArray[T /* <: js.Array[kefirLib.kefirMod.Observable[_, _]] */](obss: T): kefirLib.kefirMod.Stream[ [id => kefir, phase => build] 
+[error] ^.scala:39 method combine_TArray is defined twice;
+  the conflicting method combine_TArray was defined at line 37:7,   def combine_TArray[T /* <: js.Array[Observable[_, _]] */](obss: T): Stream[ [id => kefir, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [kefir => Compilation failed] [id => kefir, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [kefir => Compilation failed] [id => kefir, phase => publish] 

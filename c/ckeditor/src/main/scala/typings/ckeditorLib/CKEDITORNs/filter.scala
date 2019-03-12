@@ -14,7 +14,7 @@ class filter protected () extends js.Object {
   val customConfig: scala.Boolean = js.native
   val disabled: scala.Boolean = js.native
   val disallowedContent: js.Array[_] = js.native
-  val editor: editor = js.native
+  val editor: ckeditorLib.CKEDITORNs.editor = js.native
   val elementCallbacks: js.Array[
     js.Function1[/* element */ ckeditorLib.CKEDITORNs.htmlParserNs.element, scala.Double]
   ] = js.native

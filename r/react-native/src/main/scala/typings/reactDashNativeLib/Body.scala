@@ -17,14 +17,14 @@ trait Body extends js.Object {
 object Body {
   @scala.inline
   def apply(
-    arrayBuffer: js.Function0[js.Promise[stdLib.ArrayBuffer]],
-    blob: js.Function0[js.Promise[Blob]],
+    arrayBuffer: () => js.Promise[stdLib.ArrayBuffer],
+    blob: () => js.Promise[Blob],
     bodyUsed: scala.Boolean,
-    formData: js.Function0[js.Promise[FormData]],
-    json: js.Function0[js.Promise[_]],
-    text: js.Function0[js.Promise[java.lang.String]]
+    formData: () => js.Promise[FormData],
+    json: () => js.Promise[_],
+    text: () => js.Promise[java.lang.String]
   ): Body = {
-    val __obj = js.Dynamic.literal(arrayBuffer = arrayBuffer, blob = blob, bodyUsed = bodyUsed, formData = formData, json = json, text = text)
+    val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed, formData = js.Any.fromFunction0(formData), json = js.Any.fromFunction0(json), text = js.Any.fromFunction0(text))
   
     __obj.asInstanceOf[Body]
   }

@@ -14,20 +14,11 @@ trait Anon_CoverageMap extends js.Object {
 object Anon_CoverageMap {
   @scala.inline
   def apply(
-    flat: js.Function1[
-      istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageMap, 
-      istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Tree[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node]
-    ],
-    nested: js.Function1[
-      istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageMap, 
-      istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Tree[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node]
-    ],
-    pkg: js.Function1[
-      istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageMap, 
-      istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Tree[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node]
-    ]
+    flat: istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageMap => istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Tree[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node],
+    nested: istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageMap => istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Tree[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node],
+    pkg: istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageMap => istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Tree[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node]
   ): Anon_CoverageMap = {
-    val __obj = js.Dynamic.literal(flat = flat, nested = nested, pkg = pkg)
+    val __obj = js.Dynamic.literal(flat = js.Any.fromFunction1(flat), nested = js.Any.fromFunction1(nested), pkg = js.Any.fromFunction1(pkg))
   
     __obj.asInstanceOf[Anon_CoverageMap]
   }

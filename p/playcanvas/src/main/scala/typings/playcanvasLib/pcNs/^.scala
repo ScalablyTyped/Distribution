@@ -1841,8 +1841,8 @@ object ^ extends js.Object {
     * @return {pc.Mesh} A new box-shaped mesh.
     * @author Will Eastcott
     */
-  def createBox(device: playcanvasLib.pcNs.GraphicsDevice): playcanvasLib.pcNs.Mesh = js.native
-  def createBox(device: playcanvasLib.pcNs.GraphicsDevice, opts: playcanvasLib.Anon_HalfExtentsHeightSegments): playcanvasLib.pcNs.Mesh = js.native
+  def createBox(device: GraphicsDevice): Mesh = js.native
+  def createBox(device: GraphicsDevice, opts: playcanvasLib.Anon_HalfExtentsHeightSegments): Mesh = js.native
   /**
     * @function
     * @name pc.createCapsule
@@ -1861,8 +1861,8 @@ object ^ extends js.Object {
     * @returns {pc.Mesh} A new cylinder-shaped mesh.
     * @author Will Eastcott
     */
-  def createCapsule(device: playcanvasLib.pcNs.GraphicsDevice): playcanvasLib.pcNs.Mesh = js.native
-  def createCapsule(device: playcanvasLib.pcNs.GraphicsDevice, opts: playcanvasLib.Anon_HeightHeightSegments): playcanvasLib.pcNs.Mesh = js.native
+  def createCapsule(device: GraphicsDevice): Mesh = js.native
+  def createCapsule(device: GraphicsDevice, opts: playcanvasLib.Anon_HeightHeightSegments): Mesh = js.native
   /**
     * @function
     * @name pc.createCone
@@ -1882,8 +1882,8 @@ object ^ extends js.Object {
     * @returns {pc.Mesh} A new cone-shaped mesh.
     * @author Will Eastcott
     */
-  def createCone(device: playcanvasLib.pcNs.GraphicsDevice): playcanvasLib.pcNs.Mesh = js.native
-  def createCone(device: playcanvasLib.pcNs.GraphicsDevice, opts: playcanvasLib.Anon_BaseRadius): playcanvasLib.pcNs.Mesh = js.native
+  def createCone(device: GraphicsDevice): Mesh = js.native
+  def createCone(device: GraphicsDevice, opts: playcanvasLib.Anon_BaseRadius): Mesh = js.native
   /**
     * @function
     * @name pc.createCylinder
@@ -1902,8 +1902,8 @@ object ^ extends js.Object {
     * @returns {pc.Mesh} A new cylinder-shaped mesh.
     * @author Will Eastcott
     */
-  def createCylinder(device: playcanvasLib.pcNs.GraphicsDevice): playcanvasLib.pcNs.Mesh = js.native
-  def createCylinder(device: playcanvasLib.pcNs.GraphicsDevice, opts: playcanvasLib.Anon_CapSegments): playcanvasLib.pcNs.Mesh = js.native
+  def createCylinder(device: GraphicsDevice): Mesh = js.native
+  def createCylinder(device: GraphicsDevice, opts: playcanvasLib.Anon_CapSegments): Mesh = js.native
   /**
     * @function
     * @name pc.createMesh
@@ -1930,12 +1930,8 @@ object ^ extends js.Object {
     *     });
     * @author Will Eastcott
     */
-  def createMesh(device: playcanvasLib.pcNs.GraphicsDevice, positions: js.Array[scala.Double]): playcanvasLib.pcNs.Mesh = js.native
-  def createMesh(
-    device: playcanvasLib.pcNs.GraphicsDevice,
-    positions: js.Array[scala.Double],
-    opts: playcanvasLib.Anon_Colors
-  ): playcanvasLib.pcNs.Mesh = js.native
+  def createMesh(device: GraphicsDevice, positions: js.Array[scala.Double]): Mesh = js.native
+  def createMesh(device: GraphicsDevice, positions: js.Array[scala.Double], opts: playcanvasLib.Anon_Colors): Mesh = js.native
   /**
     * @function
     * @name pc.createPlane
@@ -1954,8 +1950,8 @@ object ^ extends js.Object {
     * @returns {pc.Mesh} A new plane-shaped mesh.
     * @author Will Eastcott
     */
-  def createPlane(device: playcanvasLib.pcNs.GraphicsDevice): playcanvasLib.pcNs.Mesh = js.native
-  def createPlane(device: playcanvasLib.pcNs.GraphicsDevice, opts: playcanvasLib.Anon_HalfExtents): playcanvasLib.pcNs.Mesh = js.native
+  def createPlane(device: GraphicsDevice): Mesh = js.native
+  def createPlane(device: GraphicsDevice, opts: playcanvasLib.Anon_HalfExtents): Mesh = js.native
   /**
     * @static
     * @function
@@ -1986,8 +1982,8 @@ object ^ extends js.Object {
     *     this.entity.rotate(0, this.speed * dt, 0);
     * };
     */
-  def createScript[Instance /* <: playcanvasLib.pcNs.ScriptType */, Class /* <: playcanvasLib.pcNs.ScriptTypeConstructor[Instance] */](name: java.lang.String): Class = js.native
-  def createScript[Instance /* <: playcanvasLib.pcNs.ScriptType */, Class /* <: playcanvasLib.pcNs.ScriptTypeConstructor[Instance] */](name: java.lang.String, app: playcanvasLib.pcNs.Application): Class = js.native
+  def createScript[Instance /* <: ScriptType */, Class /* <: ScriptTypeConstructor[Instance] */](name: java.lang.String): Class = js.native
+  def createScript[Instance /* <: ScriptType */, Class /* <: ScriptTypeConstructor[Instance] */](name: java.lang.String, app: Application): Class = js.native
   /**
     * @function
     * @name pc.createSphere
@@ -2004,8 +2000,8 @@ object ^ extends js.Object {
     * @returns {pc.Mesh} A new sphere-shaped mesh.
     * @author Will Eastcott
     */
-  def createSphere(device: playcanvasLib.pcNs.GraphicsDevice): playcanvasLib.pcNs.Mesh = js.native
-  def createSphere(device: playcanvasLib.pcNs.GraphicsDevice, opts: playcanvasLib.Anon_Radius): playcanvasLib.pcNs.Mesh = js.native
+  def createSphere(device: GraphicsDevice): Mesh = js.native
+  def createSphere(device: GraphicsDevice, opts: playcanvasLib.Anon_Radius): Mesh = js.native
   /**
     * @function
     * @name pc.createStyle
@@ -2036,8 +2032,8 @@ object ^ extends js.Object {
     * @returns {pc.Mesh} A new torus-shaped mesh.
     * @author Will Eastcott
     */
-  def createTorus(device: playcanvasLib.pcNs.GraphicsDevice): playcanvasLib.pcNs.Mesh = js.native
-  def createTorus(device: playcanvasLib.pcNs.GraphicsDevice, opts: playcanvasLib.Anon_RingRadius): playcanvasLib.pcNs.Mesh = js.native
+  def createTorus(device: GraphicsDevice): Mesh = js.native
+  def createTorus(device: GraphicsDevice, opts: playcanvasLib.Anon_RingRadius): Mesh = js.native
   /**
     * @private
     * @function

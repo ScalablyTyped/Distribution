@@ -60,12 +60,7 @@ object Props {
     content: reactLib.reactMod.ReactNs.ReactNode = null,
     lockScroll: js.UndefOr[scala.Boolean] = js.undefined,
     offset: java.lang.String = null,
-    onFlippedChange: js.Function3[
-      /* flipped */ scala.Boolean, 
-      /* actualPosition */ CSSPositionType, 
-      /* originalPosition */ CSSPositionType, 
-      scala.Unit
-    ] = null,
+    onFlippedChange: (/* flipped */ scala.Boolean, /* actualPosition */ CSSPositionType, /* originalPosition */ CSSPositionType) => scala.Unit = null,
     position: PositionType = null,
     zIndex: scala.Int | scala.Double = null
   ): Props = {
@@ -76,7 +71,7 @@ object Props {
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (!js.isUndefined(lockScroll)) __obj.updateDynamic("lockScroll")(lockScroll)
     if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (onFlippedChange != null) __obj.updateDynamic("onFlippedChange")(onFlippedChange)
+    if (onFlippedChange != null) __obj.updateDynamic("onFlippedChange")(js.Any.fromFunction3(onFlippedChange))
     if (position != null) __obj.updateDynamic("position")(position)
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]

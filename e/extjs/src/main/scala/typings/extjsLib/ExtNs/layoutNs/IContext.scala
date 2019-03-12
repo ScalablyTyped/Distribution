@@ -91,49 +91,27 @@ object IContext {
   def apply(
     alias: extjsLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     extend: java.lang.String = null,
-    flush: js.Function0[scala.Unit] = null,
-    getCmp: js.Function1[/* cmp */ js.UndefOr[extjsLib.ExtNs.IComponent], scala.Unit] = null,
-    getEl: js.Function2[
-      /* parent */ js.UndefOr[IContextItem], 
-      /* el */ js.UndefOr[extjsLib.ExtNs.domNs.IElement], 
-      scala.Unit
-    ] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    flush: () => scala.Unit = null,
+    getCmp: /* cmp */ js.UndefOr[extjsLib.ExtNs.IComponent] => scala.Unit = null,
+    getEl: (/* parent */ js.UndefOr[IContextItem], /* el */ js.UndefOr[extjsLib.ExtNs.domNs.IElement]) => scala.Unit = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IContext] = null,
-    invalidate: js.Function2[
-      /* components */ js.UndefOr[js.Any], 
-      /* full */ js.UndefOr[scala.Boolean], 
-      scala.Unit
-    ] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IContext = null,
+    invalidate: (/* components */ js.UndefOr[js.Any], /* full */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
     layoutQueue: extjsLib.ExtNs.utilNs.IQueue = null,
     mixins: js.Any = null,
-    removeEl: js.Function2[
-      /* parent */ js.UndefOr[IContextItem], 
-      /* el */ js.UndefOr[extjsLib.ExtNs.domNs.IElement], 
-      scala.Unit
-    ] = null,
+    removeEl: (/* parent */ js.UndefOr[IContextItem], /* el */ js.UndefOr[extjsLib.ExtNs.domNs.IElement]) => scala.Unit = null,
     requires: extjsLib.ExtNs.Array = null,
-    resetLayout: js.Function3[
-      /* layout */ js.UndefOr[js.Any], 
-      /* ownerContext */ js.UndefOr[js.Any], 
-      /* firstTime */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    run: js.Function0[scala.Boolean] = null,
-    runCycle: js.Function0[scala.Boolean] = null,
+    resetLayout: (/* layout */ js.UndefOr[js.Any], /* ownerContext */ js.UndefOr[js.Any], /* firstTime */ js.UndefOr[js.Any]) => scala.Unit = null,
+    run: () => scala.Boolean = null,
+    runCycle: () => scala.Boolean = null,
     self: extjsLib.ExtNs.IClass = null,
-    setItemSize: js.Function3[
-      /* items */ js.UndefOr[js.Any], 
-      /* width */ js.UndefOr[scala.Double], 
-      /* height */ js.UndefOr[scala.Double], 
-      scala.Unit
-    ] = null,
+    setItemSize: (/* items */ js.UndefOr[js.Any], /* width */ js.UndefOr[scala.Double], /* height */ js.UndefOr[scala.Double]) => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     state: scala.Int | scala.Double = null,
     statics: js.Any = null,
@@ -142,27 +120,27 @@ object IContext {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (flush != null) __obj.updateDynamic("flush")(flush)
-    if (getCmp != null) __obj.updateDynamic("getCmp")(getCmp)
-    if (getEl != null) __obj.updateDynamic("getEl")(getEl)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (flush != null) __obj.updateDynamic("flush")(js.Any.fromFunction0(flush))
+    if (getCmp != null) __obj.updateDynamic("getCmp")(js.Any.fromFunction1(getCmp))
+    if (getEl != null) __obj.updateDynamic("getEl")(js.Any.fromFunction2(getEl))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
-    if (invalidate != null) __obj.updateDynamic("invalidate")(invalidate)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (invalidate != null) __obj.updateDynamic("invalidate")(js.Any.fromFunction2(invalidate))
     if (layoutQueue != null) __obj.updateDynamic("layoutQueue")(layoutQueue)
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (removeEl != null) __obj.updateDynamic("removeEl")(removeEl)
+    if (removeEl != null) __obj.updateDynamic("removeEl")(js.Any.fromFunction2(removeEl))
     if (requires != null) __obj.updateDynamic("requires")(requires)
-    if (resetLayout != null) __obj.updateDynamic("resetLayout")(resetLayout)
-    if (run != null) __obj.updateDynamic("run")(run)
-    if (runCycle != null) __obj.updateDynamic("runCycle")(runCycle)
+    if (resetLayout != null) __obj.updateDynamic("resetLayout")(js.Any.fromFunction3(resetLayout))
+    if (run != null) __obj.updateDynamic("run")(js.Any.fromFunction0(run))
+    if (runCycle != null) __obj.updateDynamic("runCycle")(js.Any.fromFunction0(runCycle))
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setItemSize != null) __obj.updateDynamic("setItemSize")(setItemSize)
+    if (setItemSize != null) __obj.updateDynamic("setItemSize")(js.Any.fromFunction3(setItemSize))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics)

@@ -13,12 +13,9 @@ trait ImagesResource extends js.Object {
 object ImagesResource {
   @scala.inline
   def apply(
-    annotate: js.Function1[
-      gapiDotClientDotVisionLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BatchAnnotateImagesResponse]
-    ]
+    annotate: gapiDotClientDotVisionLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[BatchAnnotateImagesResponse]
   ): ImagesResource = {
-    val __obj = js.Dynamic.literal(annotate = annotate)
+    val __obj = js.Dynamic.literal(annotate = js.Any.fromFunction1(annotate))
   
     __obj.asInstanceOf[ImagesResource]
   }

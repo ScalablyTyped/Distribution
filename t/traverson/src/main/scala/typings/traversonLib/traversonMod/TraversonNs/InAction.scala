@@ -11,8 +11,8 @@ trait InAction extends js.Object {
 
 object InAction {
   @scala.inline
-  def apply(abort: js.Function0[scala.Unit]): InAction = {
-    val __obj = js.Dynamic.literal(abort = abort)
+  def apply(abort: () => scala.Unit): InAction = {
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort))
   
     __obj.asInstanceOf[InAction]
   }

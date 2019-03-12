@@ -15,11 +15,11 @@ object ExpandSettings {
   def apply(
     DefaultExpand: java.lang.String,
     Expand: java.lang.String,
-    isSet: js.Function0[scala.Boolean],
-    reset: js.Function0[scala.Unit],
-    toString: js.Function0[java.lang.String]
+    isSet: () => scala.Boolean,
+    reset: () => scala.Unit,
+    toString: () => java.lang.String
   ): ExpandSettings = {
-    val __obj = js.Dynamic.literal(DefaultExpand = DefaultExpand, Expand = Expand, isSet = isSet, reset = reset, toString = toString)
+    val __obj = js.Dynamic.literal(DefaultExpand = DefaultExpand, Expand = Expand, isSet = js.Any.fromFunction0(isSet), reset = js.Any.fromFunction0(reset), toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[ExpandSettings]
   }

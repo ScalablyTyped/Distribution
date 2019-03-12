@@ -25,3 +25,20 @@ trait RefinementListProvided extends js.Object {
   def searchForItems(args: js.Any*): js.Any
 }
 
+object RefinementListProvided {
+  @scala.inline
+  def apply(
+    canRefine: scala.Boolean,
+    createURL: /* repeated */ js.Any => js.Any,
+    currentRefinement: js.Array[java.lang.String],
+    isFromSearch: scala.Boolean,
+    items: js.Array[Hit[reactDashInstantsearchDashCoreLib.Anon_CountIsRefined]],
+    refine: js.Array[java.lang.String] => js.Any,
+    searchForItems: /* repeated */ js.Any => js.Any
+  ): RefinementListProvided = {
+    val __obj = js.Dynamic.literal(canRefine = canRefine, createURL = js.Any.fromFunction1(createURL), currentRefinement = currentRefinement, isFromSearch = isFromSearch, items = items, refine = js.Any.fromFunction1(refine), searchForItems = js.Any.fromFunction1(searchForItems))
+  
+    __obj.asInstanceOf[RefinementListProvided]
+  }
+}
+

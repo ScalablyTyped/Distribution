@@ -12,9 +12,9 @@ trait IPrintTaskOptionDetailsStatic extends js.Object {
 object IPrintTaskOptionDetailsStatic {
   @scala.inline
   def apply(
-    getFromPrintTaskOptions: js.Function1[winrtLib.WindowsNs.GraphicsNs.PrintingNs.PrintTaskOptions, PrintTaskOptionDetails]
+    getFromPrintTaskOptions: winrtLib.WindowsNs.GraphicsNs.PrintingNs.PrintTaskOptions => PrintTaskOptionDetails
   ): IPrintTaskOptionDetailsStatic = {
-    val __obj = js.Dynamic.literal(getFromPrintTaskOptions = getFromPrintTaskOptions)
+    val __obj = js.Dynamic.literal(getFromPrintTaskOptions = js.Any.fromFunction1(getFromPrintTaskOptions))
   
     __obj.asInstanceOf[IPrintTaskOptionDetailsStatic]
   }

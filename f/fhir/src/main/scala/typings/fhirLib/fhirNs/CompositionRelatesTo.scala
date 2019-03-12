@@ -16,7 +16,7 @@ trait CompositionRelatesTo extends BackboneElement {
   /**
     * replaces | transforms | signs | appends
     */
-  var code: code
+  var code: fhirLib.fhirNs.code
   /**
     * Target of the relationship
     */

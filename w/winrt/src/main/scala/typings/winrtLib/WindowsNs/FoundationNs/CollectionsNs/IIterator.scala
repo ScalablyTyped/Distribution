@@ -16,11 +16,11 @@ object IIterator {
   @scala.inline
   def apply[T](
     current: T,
-    getMany: js.Function0[winrtLib.Anon_Items[T]],
+    getMany: () => winrtLib.Anon_Items[T],
     hasCurrent: scala.Boolean,
-    moveNext: js.Function0[scala.Boolean]
+    moveNext: () => scala.Boolean
   ): IIterator[T] = {
-    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], getMany = getMany, hasCurrent = hasCurrent, moveNext = moveNext)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], getMany = js.Any.fromFunction0(getMany), hasCurrent = hasCurrent, moveNext = js.Any.fromFunction0(moveNext))
   
     __obj.asInstanceOf[IIterator[T]]
   }

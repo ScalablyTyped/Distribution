@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MenuItem ()
   extends reactLib.reactMod.PureComponent[
-      IMenuItemProps with reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement], 
+      IMenuItemProps with reactLib.reactMod.ReactNs.AnchorHTMLAttributes[stdLib.HTMLAnchorElement], 
       js.Object, 
       js.Any
     ] {

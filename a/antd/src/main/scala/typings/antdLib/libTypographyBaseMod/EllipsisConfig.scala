@@ -15,12 +15,12 @@ object EllipsisConfig {
   @scala.inline
   def apply(
     expandable: js.UndefOr[scala.Boolean] = js.undefined,
-    onExpand: js.Function0[scala.Unit] = null,
+    onExpand: () => scala.Unit = null,
     rows: scala.Int | scala.Double = null
   ): EllipsisConfig = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable)
-    if (onExpand != null) __obj.updateDynamic("onExpand")(onExpand)
+    if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction0(onExpand))
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[EllipsisConfig]
   }

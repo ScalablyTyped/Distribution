@@ -16,20 +16,20 @@ trait IJsonArray extends IJsonValue {
 object IJsonArray {
   @scala.inline
   def apply(
-    getArray: js.Function0[JsonArray],
-    getArrayAt: js.Function1[scala.Double, JsonArray],
-    getBoolean: js.Function0[scala.Boolean],
-    getBooleanAt: js.Function1[scala.Double, scala.Boolean],
-    getNumber: js.Function0[scala.Double],
-    getNumberAt: js.Function1[scala.Double, scala.Double],
-    getObject: js.Function0[JsonObject],
-    getObjectAt: js.Function1[scala.Double, JsonObject],
-    getString: js.Function0[java.lang.String],
-    getStringAt: js.Function1[scala.Double, java.lang.String],
-    stringify: js.Function0[java.lang.String],
+    getArray: () => JsonArray,
+    getArrayAt: scala.Double => JsonArray,
+    getBoolean: () => scala.Boolean,
+    getBooleanAt: scala.Double => scala.Boolean,
+    getNumber: () => scala.Double,
+    getNumberAt: scala.Double => scala.Double,
+    getObject: () => JsonObject,
+    getObjectAt: scala.Double => JsonObject,
+    getString: () => java.lang.String,
+    getStringAt: scala.Double => java.lang.String,
+    stringify: () => java.lang.String,
     valueType: JsonValueType
   ): IJsonArray = {
-    val __obj = js.Dynamic.literal(getArray = getArray, getArrayAt = getArrayAt, getBoolean = getBoolean, getBooleanAt = getBooleanAt, getNumber = getNumber, getNumberAt = getNumberAt, getObject = getObject, getObjectAt = getObjectAt, getString = getString, getStringAt = getStringAt, stringify = stringify, valueType = valueType)
+    val __obj = js.Dynamic.literal(getArray = js.Any.fromFunction0(getArray), getArrayAt = js.Any.fromFunction1(getArrayAt), getBoolean = js.Any.fromFunction0(getBoolean), getBooleanAt = js.Any.fromFunction1(getBooleanAt), getNumber = js.Any.fromFunction0(getNumber), getNumberAt = js.Any.fromFunction1(getNumberAt), getObject = js.Any.fromFunction0(getObject), getObjectAt = js.Any.fromFunction1(getObjectAt), getString = js.Any.fromFunction0(getString), getStringAt = js.Any.fromFunction1(getStringAt), stringify = js.Any.fromFunction0(stringify), valueType = valueType)
   
     __obj.asInstanceOf[IJsonArray]
   }

@@ -22,19 +22,19 @@ trait DictionaryBuilder extends js.Object {
 object DictionaryBuilder {
   @scala.inline
   def apply(
-    addTokenInfoDictionary: js.Function1[java.lang.String, DictionaryBuilder],
-    build: js.Function0[DynamicDictionaries],
-    buildConnectionCosts: js.Function0[ConnectionCosts],
-    buildDoubleArray: js.Function0[doublearrayLib.doublearrayNs.DoubleArray],
-    buildTokenInfoDictionary: js.Function0[kuromojiLib.Anon_Tokeninfodictionary],
-    buildUnknownDictionary: js.Function0[UnknownDictionary],
-    charDef: js.Function1[java.lang.String, DictionaryBuilder],
-    costMatrix: js.Function1[java.lang.String, DictionaryBuilder],
+    addTokenInfoDictionary: java.lang.String => DictionaryBuilder,
+    build: () => DynamicDictionaries,
+    buildConnectionCosts: () => ConnectionCosts,
+    buildDoubleArray: () => doublearrayLib.doublearrayNs.DoubleArray,
+    buildTokenInfoDictionary: () => kuromojiLib.Anon_Tokeninfodictionary,
+    buildUnknownDictionary: () => UnknownDictionary,
+    charDef: java.lang.String => DictionaryBuilder,
+    costMatrix: java.lang.String => DictionaryBuilder,
     tid_entries: js.Array[java.lang.String],
-    unkDef: js.Function1[java.lang.String, DictionaryBuilder],
+    unkDef: java.lang.String => DictionaryBuilder,
     unk_entries: js.Array[java.lang.String]
   ): DictionaryBuilder = {
-    val __obj = js.Dynamic.literal(addTokenInfoDictionary = addTokenInfoDictionary, build = build, buildConnectionCosts = buildConnectionCosts, buildDoubleArray = buildDoubleArray, buildTokenInfoDictionary = buildTokenInfoDictionary, buildUnknownDictionary = buildUnknownDictionary, charDef = charDef, costMatrix = costMatrix, tid_entries = tid_entries, unkDef = unkDef, unk_entries = unk_entries)
+    val __obj = js.Dynamic.literal(addTokenInfoDictionary = js.Any.fromFunction1(addTokenInfoDictionary), build = js.Any.fromFunction0(build), buildConnectionCosts = js.Any.fromFunction0(buildConnectionCosts), buildDoubleArray = js.Any.fromFunction0(buildDoubleArray), buildTokenInfoDictionary = js.Any.fromFunction0(buildTokenInfoDictionary), buildUnknownDictionary = js.Any.fromFunction0(buildUnknownDictionary), charDef = js.Any.fromFunction1(charDef), costMatrix = js.Any.fromFunction1(costMatrix), tid_entries = tid_entries, unkDef = js.Any.fromFunction1(unkDef), unk_entries = unk_entries)
   
     __obj.asInstanceOf[DictionaryBuilder]
   }

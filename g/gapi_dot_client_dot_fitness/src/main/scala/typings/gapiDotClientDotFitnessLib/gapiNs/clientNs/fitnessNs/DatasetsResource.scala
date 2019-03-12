@@ -29,20 +29,11 @@ trait DatasetsResource extends js.Object {
 object DatasetsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotFitnessLib.Anon_AltCurrentTimeMillis, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotFitnessLib.Anon_AltDataSourceId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotFitnessLib.Anon_AltCurrentTimeMillisDataSourceId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
-    ]
+    delete: gapiDotClientDotFitnessLib.Anon_AltCurrentTimeMillis => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotFitnessLib.Anon_AltDataSourceId => gapiDotClientLib.gapiNs.clientNs.Request[Dataset],
+    patch: gapiDotClientDotFitnessLib.Anon_AltCurrentTimeMillisDataSourceId => gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
   ): DatasetsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, patch = patch)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch))
   
     __obj.asInstanceOf[DatasetsResource]
   }

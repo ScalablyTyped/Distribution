@@ -13,12 +13,9 @@ trait SitesResource extends js.Object {
 object SitesResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotAdexperiencereportLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SiteSummaryResponse]
-    ]
+    get: gapiDotClientDotAdexperiencereportLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[SiteSummaryResponse]
   ): SitesResource = {
-    val __obj = js.Dynamic.literal(get = get)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[SitesResource]
   }

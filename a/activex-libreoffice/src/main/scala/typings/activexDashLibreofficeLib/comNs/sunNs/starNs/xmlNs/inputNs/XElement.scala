@@ -83,20 +83,20 @@ object XElement {
     LocalName: java.lang.String,
     Parent: XElement,
     Uid: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    characters: js.Function1[java.lang.String, scala.Unit],
-    endElement: js.Function0[scala.Unit],
-    getAttributes: js.Function0[XAttributes],
-    getLocalName: js.Function0[java.lang.String],
-    getParent: js.Function0[XElement],
-    getUid: js.Function0[scala.Double],
-    ignorableWhitespace: js.Function1[java.lang.String, scala.Unit],
-    processingInstruction: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    startChildElement: js.Function3[scala.Double, java.lang.String, XAttributes, XElement]
+    acquire: () => scala.Unit,
+    characters: java.lang.String => scala.Unit,
+    endElement: () => scala.Unit,
+    getAttributes: () => XAttributes,
+    getLocalName: () => java.lang.String,
+    getParent: () => XElement,
+    getUid: () => scala.Double,
+    ignorableWhitespace: java.lang.String => scala.Unit,
+    processingInstruction: (java.lang.String, java.lang.String) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    startChildElement: (scala.Double, java.lang.String, XAttributes) => XElement
   ): XElement = {
-    val __obj = js.Dynamic.literal(Attributes = Attributes, LocalName = LocalName, Parent = Parent, Uid = Uid, acquire = acquire, characters = characters, endElement = endElement, getAttributes = getAttributes, getLocalName = getLocalName, getParent = getParent, getUid = getUid, ignorableWhitespace = ignorableWhitespace, processingInstruction = processingInstruction, queryInterface = queryInterface, release = release, startChildElement = startChildElement)
+    val __obj = js.Dynamic.literal(Attributes = Attributes, LocalName = LocalName, Parent = Parent, Uid = Uid, acquire = js.Any.fromFunction0(acquire), characters = js.Any.fromFunction1(characters), endElement = js.Any.fromFunction0(endElement), getAttributes = js.Any.fromFunction0(getAttributes), getLocalName = js.Any.fromFunction0(getLocalName), getParent = js.Any.fromFunction0(getParent), getUid = js.Any.fromFunction0(getUid), ignorableWhitespace = js.Any.fromFunction1(ignorableWhitespace), processingInstruction = js.Any.fromFunction2(processingInstruction), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), startChildElement = js.Any.fromFunction3(startChildElement))
   
     __obj.asInstanceOf[XElement]
   }

@@ -87,39 +87,39 @@ trait CollisionBehavior
 object CollisionBehavior {
   @scala.inline
   def apply(
-    addBoundary: js.Function1[titaniumLib.BoundaryIdentifier, scala.Unit],
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    addItem: js.Function1[js.Any, scala.Unit],
+    addBoundary: titaniumLib.BoundaryIdentifier => scala.Unit,
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    addItem: js.Any => scala.Unit,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     boundaryIdentifiers: js.Array[titaniumLib.BoundaryIdentifier],
     bubbleParent: scala.Boolean,
     collisionMode: scala.Double,
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getApiName: js.Function0[java.lang.String],
-    getBoundaryIdentifiers: js.Function0[js.Array[titaniumLib.BoundaryIdentifier]],
-    getBubbleParent: js.Function0[scala.Boolean],
-    getCollisionMode: js.Function0[scala.Double],
-    getItems: js.Function0[js.Array[titaniumLib.TitaniumNs.UINs.View]],
-    getReferenceInsets: js.Function0[titaniumLib.ReferenceInsets],
-    getTreatReferenceAsBoundary: js.Function0[scala.Boolean],
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
+    getApiName: () => java.lang.String,
+    getBoundaryIdentifiers: () => js.Array[titaniumLib.BoundaryIdentifier],
+    getBubbleParent: () => scala.Boolean,
+    getCollisionMode: () => scala.Double,
+    getItems: () => js.Array[titaniumLib.TitaniumNs.UINs.View],
+    getReferenceInsets: () => titaniumLib.ReferenceInsets,
+    getTreatReferenceAsBoundary: () => scala.Boolean,
     items: js.Array[titaniumLib.TitaniumNs.UINs.View],
     referenceInsets: titaniumLib.ReferenceInsets,
-    removeAllBoundaries: js.Function0[scala.Unit],
-    removeBoundary: js.Function1[titaniumLib.BoundaryIdentifier, scala.Unit],
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    removeItem: js.Function1[js.Any, scala.Unit],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
-    setCollisionMode: js.Function1[scala.Double, scala.Unit],
-    setReferenceInsets: js.Function1[titaniumLib.ReferenceInsets, scala.Unit],
-    setTreatReferenceAsBoundary: js.Function1[scala.Boolean, scala.Unit],
+    removeAllBoundaries: () => scala.Unit,
+    removeBoundary: titaniumLib.BoundaryIdentifier => scala.Unit,
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    removeItem: js.Any => scala.Unit,
+    setBubbleParent: scala.Boolean => scala.Unit,
+    setCollisionMode: scala.Double => scala.Unit,
+    setReferenceInsets: titaniumLib.ReferenceInsets => scala.Unit,
+    setTreatReferenceAsBoundary: scala.Boolean => scala.Unit,
     treatReferenceAsBoundary: scala.Boolean,
-    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    getLifecycleContainer: () => titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
   ): CollisionBehavior = {
-    val __obj = js.Dynamic.literal(addBoundary = addBoundary, addEventListener = addEventListener, addItem = addItem, apiName = apiName, applyProperties = applyProperties, boundaryIdentifiers = boundaryIdentifiers, bubbleParent = bubbleParent, collisionMode = collisionMode, fireEvent = fireEvent, getApiName = getApiName, getBoundaryIdentifiers = getBoundaryIdentifiers, getBubbleParent = getBubbleParent, getCollisionMode = getCollisionMode, getItems = getItems, getReferenceInsets = getReferenceInsets, getTreatReferenceAsBoundary = getTreatReferenceAsBoundary, items = items, referenceInsets = referenceInsets, removeAllBoundaries = removeAllBoundaries, removeBoundary = removeBoundary, removeEventListener = removeEventListener, removeItem = removeItem, setBubbleParent = setBubbleParent, setCollisionMode = setCollisionMode, setReferenceInsets = setReferenceInsets, setTreatReferenceAsBoundary = setTreatReferenceAsBoundary, treatReferenceAsBoundary = treatReferenceAsBoundary)
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    val __obj = js.Dynamic.literal(addBoundary = js.Any.fromFunction1(addBoundary), addEventListener = js.Any.fromFunction2(addEventListener), addItem = js.Any.fromFunction1(addItem), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), boundaryIdentifiers = boundaryIdentifiers, bubbleParent = bubbleParent, collisionMode = collisionMode, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBoundaryIdentifiers = js.Any.fromFunction0(getBoundaryIdentifiers), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getCollisionMode = js.Any.fromFunction0(getCollisionMode), getItems = js.Any.fromFunction0(getItems), getReferenceInsets = js.Any.fromFunction0(getReferenceInsets), getTreatReferenceAsBoundary = js.Any.fromFunction0(getTreatReferenceAsBoundary), items = items, referenceInsets = referenceInsets, removeAllBoundaries = js.Any.fromFunction0(removeAllBoundaries), removeBoundary = js.Any.fromFunction1(removeBoundary), removeEventListener = js.Any.fromFunction2(removeEventListener), removeItem = js.Any.fromFunction1(removeItem), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setCollisionMode = js.Any.fromFunction1(setCollisionMode), setReferenceInsets = js.Any.fromFunction1(setReferenceInsets), setTreatReferenceAsBoundary = js.Any.fromFunction1(setTreatReferenceAsBoundary), treatReferenceAsBoundary = treatReferenceAsBoundary)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
     __obj.asInstanceOf[CollisionBehavior]

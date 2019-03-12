@@ -25,20 +25,20 @@ object Device {
   @scala.inline
   def apply(
     URI: java.lang.String,
-    columns: js.Function1[CbCallback, scala.Unit],
-    count: js.Function2[Query, CbCallback, scala.Unit],
-    create: js.Function2[js.Object, CbCallback, scala.Unit],
-    delete: js.Function2[Query, CbCallback, scala.Unit],
-    deleteDeviceByName: js.Function2[java.lang.String, CbCallback, scala.Unit],
-    fetch: js.Function2[Query, CbCallback, scala.Unit],
-    getDeviceByName: js.Function2[java.lang.String, CbCallback, scala.Unit],
+    columns: CbCallback => scala.Unit,
+    count: (Query, CbCallback) => scala.Unit,
+    create: (js.Object, CbCallback) => scala.Unit,
+    delete: (Query, CbCallback) => scala.Unit,
+    deleteDeviceByName: (java.lang.String, CbCallback) => scala.Unit,
+    fetch: (Query, CbCallback) => scala.Unit,
+    getDeviceByName: (java.lang.String, CbCallback) => scala.Unit,
     systemKey: java.lang.String,
     systemSecret: java.lang.String,
-    update: js.Function4[Query, js.Object, scala.Boolean, CbCallback, scala.Unit],
-    updateDeviceByName: js.Function4[java.lang.String, js.Object, scala.Boolean, CbCallback, scala.Unit],
+    update: (Query, js.Object, scala.Boolean, CbCallback) => scala.Unit,
+    updateDeviceByName: (java.lang.String, js.Object, scala.Boolean, CbCallback) => scala.Unit,
     user: APIUser
   ): Device = {
-    val __obj = js.Dynamic.literal(URI = URI, columns = columns, count = count, create = create, delete = delete, deleteDeviceByName = deleteDeviceByName, fetch = fetch, getDeviceByName = getDeviceByName, systemKey = systemKey, systemSecret = systemSecret, update = update, updateDeviceByName = updateDeviceByName, user = user)
+    val __obj = js.Dynamic.literal(URI = URI, columns = js.Any.fromFunction1(columns), count = js.Any.fromFunction2(count), create = js.Any.fromFunction2(create), delete = js.Any.fromFunction2(delete), deleteDeviceByName = js.Any.fromFunction2(deleteDeviceByName), fetch = js.Any.fromFunction2(fetch), getDeviceByName = js.Any.fromFunction2(getDeviceByName), systemKey = systemKey, systemSecret = systemSecret, update = js.Any.fromFunction4(update), updateDeviceByName = js.Any.fromFunction4(updateDeviceByName), user = user)
   
     __obj.asInstanceOf[Device]
   }

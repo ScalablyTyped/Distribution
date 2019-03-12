@@ -35,7 +35,7 @@ class Client ()
     */
   def exec(
     command: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* channel */ ClientChannel, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* channel */ ClientChannel, scala.Unit]
   ): scala.Boolean = js.native
   /**
     * Executes a command on the server.
@@ -49,7 +49,7 @@ class Client ()
   def exec(
     command: java.lang.String,
     options: ExecOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* channel */ ClientChannel, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* channel */ ClientChannel, scala.Unit]
   ): scala.Boolean = js.native
   /**
     * Bind to `remoteAddr` on `remotePort` on the server and forward incoming TCP connections.
@@ -74,7 +74,7 @@ class Client ()
   def forwardIn(
     remoteAddr: java.lang.String,
     remotePort: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.Error, /* bindPort */ scala.Double, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* bindPort */ scala.Double, scala.Unit]
   ): scala.Boolean = js.native
   /**
     * Open a connection with `srcIP` and `srcPort` as the originating address and port and
@@ -93,7 +93,7 @@ class Client ()
     srcPort: scala.Double,
     dstIP: java.lang.String,
     dstPort: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.Error, /* channel */ ClientChannel, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* channel */ ClientChannel, scala.Unit]
   ): scala.Boolean = js.native
   def on(event: java.lang.String, listener: js.Function): this.type = js.native
   def on(event: js.Symbol, listener: js.Function): this.type = js.native
@@ -152,7 +152,7 @@ class Client ()
   @JSName("on")
   def on_error(
     event: ssh2Lib.ssh2LibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error with ClientErrorExtensions, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error with ClientErrorExtensions, scala.Unit]
   ): this.type = js.native
   /**
     * Emitted when the server responds with a greeting message.
@@ -235,7 +235,7 @@ class Client ()
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def openssh_forwardInStreamLocal(socketPath: java.lang.String): scala.Boolean = js.native
-  def openssh_forwardInStreamLocal(socketPath: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Boolean = js.native
+  def openssh_forwardInStreamLocal(socketPath: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Boolean = js.native
   /**
     * OpenSSH extension that opens a connection to a UNIX domain socket at `socketPath` on
     * the server.
@@ -245,7 +245,7 @@ class Client ()
   def openssh_forwardOutStreamLocal(socketPath: java.lang.String): scala.Boolean = js.native
   def openssh_forwardOutStreamLocal(
     socketPath: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* channel */ ClientChannel, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* channel */ ClientChannel, scala.Unit]
   ): scala.Boolean = js.native
   /**
     * OpenSSH extension that sends a request to reject any new sessions (e.g. exec, shell,
@@ -254,7 +254,7 @@ class Client ()
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def openssh_noMoreSessions(): scala.Boolean = js.native
-  def openssh_noMoreSessions(callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Boolean = js.native
+  def openssh_noMoreSessions(callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Boolean = js.native
   /**
     * OpenSSH extension that unbinds from a UNIX domain socket at `socketPath` on the server
     * and stops forwarding incoming connections.
@@ -262,7 +262,7 @@ class Client ()
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def openssh_unforwardInStreamLocal(socketPath: java.lang.String): scala.Boolean = js.native
-  def openssh_unforwardInStreamLocal(socketPath: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Boolean = js.native
+  def openssh_unforwardInStreamLocal(socketPath: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Boolean = js.native
   /**
     * Starts an SFTP session.
     *
@@ -270,7 +270,7 @@ class Client ()
     *
     * @param callback The callback that is invoked when the SFTP session has started.
     */
-  def sftp(callback: js.Function2[/* err */ nodeLib.Error, /* sftp */ SFTPWrapper, scala.Unit]): scala.Boolean = js.native
+  def sftp(callback: js.Function2[/* err */ stdLib.Error, /* sftp */ SFTPWrapper, scala.Unit]): scala.Boolean = js.native
   /**
     * Starts an interactive shell session on the server.
     *
@@ -278,7 +278,7 @@ class Client ()
     *
     * @param callback The callback to execute when the channel has been created.
     */
-  def shell(callback: js.Function2[/* err */ nodeLib.Error, /* channel */ ClientChannel, scala.Unit]): scala.Boolean = js.native
+  def shell(callback: js.Function2[/* err */ stdLib.Error, /* channel */ ClientChannel, scala.Unit]): scala.Boolean = js.native
   /**
     * Starts an interactive shell session on the server.
     *
@@ -289,16 +289,16 @@ class Client ()
     */
   def shell(
     options: ShellOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* channel */ ClientChannel, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* channel */ ClientChannel, scala.Unit]
   ): scala.Boolean = js.native
   def shell(
     window: ssh2Lib.ssh2LibNumbers.`false`,
-    callback: js.Function2[/* err */ nodeLib.Error, /* channel */ ClientChannel, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* channel */ ClientChannel, scala.Unit]
   ): scala.Boolean = js.native
   def shell(
     window: ssh2Lib.ssh2LibNumbers.`false`,
     options: ShellOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* channel */ ClientChannel, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* channel */ ClientChannel, scala.Unit]
   ): scala.Boolean = js.native
   /**
     * Starts an interactive shell session on the server.
@@ -310,7 +310,7 @@ class Client ()
     */
   def shell(
     window: PseudoTtyOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* channel */ ClientChannel, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* channel */ ClientChannel, scala.Unit]
   ): scala.Boolean = js.native
   /**
     * Starts an interactive shell session on the server.
@@ -324,7 +324,7 @@ class Client ()
   def shell(
     window: PseudoTtyOptions,
     options: ShellOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* channel */ ClientChannel, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* channel */ ClientChannel, scala.Unit]
   ): scala.Boolean = js.native
   /**
     * Invokes `subsystem` on the server.
@@ -336,7 +336,7 @@ class Client ()
     */
   def subsys(
     subsystem: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* channel */ ClientChannel, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* channel */ ClientChannel, scala.Unit]
   ): scala.Boolean = js.native
   /**
     * Unbind from `remoteAddr` on `remotePort` on the server and stop forwarding incoming TCP
@@ -352,7 +352,7 @@ class Client ()
   def unforwardIn(
     remoteAddr: java.lang.String,
     remotePort: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Boolean = js.native
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.CustomerData")
 @js.native
 class CustomerData protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   val Count: scala.Double = js.native
   val Parent: js.Any = js.native
   var `PowerPoint.CustomerData_typekey`: CustomerData = js.native

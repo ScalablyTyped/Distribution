@@ -26,11 +26,11 @@ trait Util extends js.Object {
 object Util {
   @scala.inline
   def apply(
-    bytesToHexString: js.Function1[js.Array[scala.Double], java.lang.String],
-    bytesToString: js.Function1[js.Array[scala.Double], java.lang.String],
-    stringToBytes: js.Function1[java.lang.String, js.Array[scala.Double]]
+    bytesToHexString: js.Array[scala.Double] => java.lang.String,
+    bytesToString: js.Array[scala.Double] => java.lang.String,
+    stringToBytes: java.lang.String => js.Array[scala.Double]
   ): Util = {
-    val __obj = js.Dynamic.literal(bytesToHexString = bytesToHexString, bytesToString = bytesToString, stringToBytes = stringToBytes)
+    val __obj = js.Dynamic.literal(bytesToHexString = js.Any.fromFunction1(bytesToHexString), bytesToString = js.Any.fromFunction1(bytesToString), stringToBytes = js.Any.fromFunction1(stringToBytes))
   
     __obj.asInstanceOf[Util]
   }

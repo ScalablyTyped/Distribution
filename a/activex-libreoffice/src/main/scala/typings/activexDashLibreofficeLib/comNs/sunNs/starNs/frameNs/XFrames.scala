@@ -24,7 +24,7 @@ trait XFrames
     * @param nSearchFlags use combinations of {@link FrameSearchFlag} to specify which frames should be found
     * @returns all frames of this container and all available frames of the whole frame tree which match search parameter **SearchFlags**
     */
-  def queryFrames(nSearchFlags: scala.Double): activexDashInteropLib.SafeArray[XFrame]
+  def queryFrames(nSearchFlags: scala.Double): stdLib.SafeArray[XFrame]
   /**
     * removes the frame from its container.
     *
@@ -40,18 +40,18 @@ object XFrames {
   def apply(
     Count: scala.Double,
     ElementType: activexDashLibreofficeLib.`type`,
-    acquire: js.Function0[scala.Unit],
-    append: js.Function1[XFrame, scala.Unit],
-    getByIndex: js.Function1[scala.Double, js.Any],
-    getCount: js.Function0[scala.Double],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    hasElements: js.Function0[scala.Boolean],
-    queryFrames: js.Function1[scala.Double, activexDashInteropLib.SafeArray[XFrame]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    remove: js.Function1[XFrame, scala.Unit]
+    acquire: () => scala.Unit,
+    append: XFrame => scala.Unit,
+    getByIndex: scala.Double => js.Any,
+    getCount: () => scala.Double,
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    hasElements: () => scala.Boolean,
+    queryFrames: scala.Double => stdLib.SafeArray[XFrame],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    remove: XFrame => scala.Unit
   ): XFrames = {
-    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, acquire = acquire, append = append, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, hasElements = hasElements, queryFrames = queryFrames, queryInterface = queryInterface, release = release, remove = remove)
+    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, acquire = js.Any.fromFunction0(acquire), append = js.Any.fromFunction1(append), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), queryFrames = js.Any.fromFunction1(queryFrames), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), remove = js.Any.fromFunction1(remove))
   
     __obj.asInstanceOf[XFrames]
   }

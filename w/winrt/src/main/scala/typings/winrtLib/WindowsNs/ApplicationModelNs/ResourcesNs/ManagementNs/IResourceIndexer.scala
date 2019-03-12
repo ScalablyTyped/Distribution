@@ -15,15 +15,12 @@ trait IResourceIndexer extends js.Object {
 object IResourceIndexer {
   @scala.inline
   def apply(
-    indexFileContentsAsync: js.Function1[
-      winrtLib.WindowsNs.FoundationNs.Uri, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[
-        winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[IndexedResourceCandidate]
-      ]
+    indexFileContentsAsync: winrtLib.WindowsNs.FoundationNs.Uri => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[IndexedResourceCandidate]
     ],
-    indexFilePath: js.Function1[winrtLib.WindowsNs.FoundationNs.Uri, IndexedResourceCandidate]
+    indexFilePath: winrtLib.WindowsNs.FoundationNs.Uri => IndexedResourceCandidate
   ): IResourceIndexer = {
-    val __obj = js.Dynamic.literal(indexFileContentsAsync = indexFileContentsAsync, indexFilePath = indexFilePath)
+    val __obj = js.Dynamic.literal(indexFileContentsAsync = js.Any.fromFunction1(indexFileContentsAsync), indexFilePath = js.Any.fromFunction1(indexFilePath))
   
     __obj.asInstanceOf[IResourceIndexer]
   }

@@ -8,19 +8,16 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/hotkeyParser", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Aliases: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyMap = js.native
-  val KeyCodes: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCodeTable = js.native
-  val ModifierBitMasks: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCodeReverseTable = js.native
-  val Modifiers: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCodeTable = js.native
-  val ShiftKeys: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyMap = js.native
-  def comboMatches(
-    a: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo,
-    b: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo
-  ): scala.Boolean = js.native
-  def getKeyCombo(e: reactLib.KeyboardEvent): atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo = js.native
-  def getKeyComboString(e: reactLib.KeyboardEvent): java.lang.String = js.native
+  val Aliases: IKeyMap = js.native
+  val KeyCodes: IKeyCodeTable = js.native
+  val ModifierBitMasks: IKeyCodeReverseTable = js.native
+  val Modifiers: IKeyCodeTable = js.native
+  val ShiftKeys: IKeyMap = js.native
+  def comboMatches(a: IKeyCombo, b: IKeyCombo): scala.Boolean = js.native
+  def getKeyCombo(e: stdLib.KeyboardEvent): IKeyCombo = js.native
+  def getKeyComboString(e: stdLib.KeyboardEvent): java.lang.String = js.native
   def normalizeKeyCombo(combo: java.lang.String): js.Array[java.lang.String] = js.native
   def normalizeKeyCombo(combo: java.lang.String, platformOverride: java.lang.String): js.Array[java.lang.String] = js.native
-  def parseKeyCombo(combo: java.lang.String): atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo = js.native
+  def parseKeyCombo(combo: java.lang.String): IKeyCombo = js.native
 }
 

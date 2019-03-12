@@ -15,12 +15,12 @@ trait Anon_Interpolate extends js.Object {
 object Anon_Interpolate {
   @scala.inline
   def apply(
-    interpolate: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-    tangentCubicBezier: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-    tangentQuadraticBezier: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-    tangentSpline: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double]
+    interpolate: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => scala.Double,
+    tangentCubicBezier: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => scala.Double,
+    tangentQuadraticBezier: (scala.Double, scala.Double, scala.Double, scala.Double) => scala.Double,
+    tangentSpline: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => scala.Double
   ): Anon_Interpolate = {
-    val __obj = js.Dynamic.literal(interpolate = interpolate, tangentCubicBezier = tangentCubicBezier, tangentQuadraticBezier = tangentQuadraticBezier, tangentSpline = tangentSpline)
+    val __obj = js.Dynamic.literal(interpolate = js.Any.fromFunction5(interpolate), tangentCubicBezier = js.Any.fromFunction5(tangentCubicBezier), tangentQuadraticBezier = js.Any.fromFunction4(tangentQuadraticBezier), tangentSpline = js.Any.fromFunction5(tangentSpline))
   
     __obj.asInstanceOf[Anon_Interpolate]
   }

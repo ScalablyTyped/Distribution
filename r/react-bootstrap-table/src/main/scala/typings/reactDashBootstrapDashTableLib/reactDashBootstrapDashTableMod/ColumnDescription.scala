@@ -171,14 +171,8 @@ object ColumnDescription {
     expandable: scala.Boolean,
     export: scala.Boolean,
     filterFormatted: scala.Boolean,
-    filterValue: js.Function2[js.Any, TRow, js.Any],
-    format: js.Function4[
-      js.Any, 
-      TRow, 
-      js.Any, 
-      scala.Double, 
-      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
-    ],
+    filterValue: (js.Any, TRow) => js.Any,
+    format: (js.Any, TRow, js.Any, scala.Double) => java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_],
     formatExtraData: js.Any,
     hidden: scala.Boolean,
     hiddenOnInsert: scala.Boolean,
@@ -186,13 +180,13 @@ object ColumnDescription {
     name: java.lang.String,
     searchable: scala.Boolean,
     sort: scala.Boolean,
-    sortFunc: js.Function5[TRow, TRow, SortOrder, java.lang.String, js.Any, scala.Double],
+    sortFunc: (TRow, TRow, SortOrder, java.lang.String, js.Any) => scala.Double,
     sortFuncExtraData: js.Any,
     style: reactLib.reactMod.ReactNs.CSSProperties,
     text: java.lang.String | scala.Double | scala.Boolean | reactLib.reactMod.ReactNs.ReactElement[_],
     width: java.lang.String
   ): ColumnDescription[TRow] = {
-    val __obj = js.Dynamic.literal(align = align, attrs = attrs, className = className.asInstanceOf[js.Any], columnTitle = columnTitle, customEditor = customEditor, editAttrs = editAttrs, editClassName = editClassName.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], expandable = expandable, export = export, filterFormatted = filterFormatted, filterValue = filterValue, format = format, formatExtraData = formatExtraData, hidden = hidden, hiddenOnInsert = hiddenOnInsert, invalidEditColumnClassName = invalidEditColumnClassName.asInstanceOf[js.Any], name = name, searchable = searchable, sort = sort, sortFunc = sortFunc, sortFuncExtraData = sortFuncExtraData, style = style, text = text.asInstanceOf[js.Any], width = width)
+    val __obj = js.Dynamic.literal(align = align, attrs = attrs, className = className.asInstanceOf[js.Any], columnTitle = columnTitle, customEditor = customEditor, editAttrs = editAttrs, editClassName = editClassName.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], expandable = expandable, export = export, filterFormatted = filterFormatted, filterValue = js.Any.fromFunction2(filterValue), format = js.Any.fromFunction4(format), formatExtraData = formatExtraData, hidden = hidden, hiddenOnInsert = hiddenOnInsert, invalidEditColumnClassName = invalidEditColumnClassName.asInstanceOf[js.Any], name = name, searchable = searchable, sort = sort, sortFunc = js.Any.fromFunction5(sortFunc), sortFuncExtraData = sortFuncExtraData, style = style, text = text.asInstanceOf[js.Any], width = width)
   
     __obj.asInstanceOf[ColumnDescription[TRow]]
   }

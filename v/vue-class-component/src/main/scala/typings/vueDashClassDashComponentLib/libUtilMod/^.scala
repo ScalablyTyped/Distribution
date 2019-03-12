@@ -23,7 +23,7 @@ object ^ extends js.Object {
       /* index */ scala.Double, 
       scala.Unit
     ]
-  ): vueDashClassDashComponentLib.libUtilMod.VueDecorator = js.native
+  ): VueDecorator = js.native
   def isPrimitive(value: js.Any): scala.Boolean = js.native
   def mixins[A](CtorA: vueDashClassDashComponentLib.libDeclarationsMod.VueClass[A]): vueDashClassDashComponentLib.libDeclarationsMod.VueClass[A] = js.native
   def mixins[T](Ctors: vueDashClassDashComponentLib.libDeclarationsMod.VueClass[vueLib.typesVueMod.Vue]*): vueDashClassDashComponentLib.libDeclarationsMod.VueClass[T] = js.native

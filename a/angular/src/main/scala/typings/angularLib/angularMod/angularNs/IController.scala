@@ -61,21 +61,21 @@ trait IController
 object IController {
   @scala.inline
   def apply(
-    $doCheck: js.Function0[scala.Unit] = null,
-    $onChanges: js.Function1[/* onChangesObj */ IOnChangesObject, scala.Unit] = null,
-    $onDestroy: js.Function0[scala.Unit] = null,
-    $onInit: js.Function0[scala.Unit] = null,
-    $postLink: js.Function0[scala.Unit] = null,
+    $doCheck: () => scala.Unit = null,
+    $onChanges: /* onChangesObj */ IOnChangesObject => scala.Unit = null,
+    $onDestroy: () => scala.Unit = null,
+    $onInit: () => scala.Unit = null,
+    $postLink: () => scala.Unit = null,
     StringDictionary: // IController implementations frequently do not implement any of its methods.
   // A string indexer indicates to TypeScript not to issue a weak type error in this case.
   /* s */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): IController = {
     val __obj = js.Dynamic.literal()
-    if ($doCheck != null) __obj.updateDynamic("$doCheck")($doCheck)
-    if ($onChanges != null) __obj.updateDynamic("$onChanges")($onChanges)
-    if ($onDestroy != null) __obj.updateDynamic("$onDestroy")($onDestroy)
-    if ($onInit != null) __obj.updateDynamic("$onInit")($onInit)
-    if ($postLink != null) __obj.updateDynamic("$postLink")($postLink)
+    if ($doCheck != null) __obj.updateDynamic("$doCheck")(js.Any.fromFunction0($doCheck))
+    if ($onChanges != null) __obj.updateDynamic("$onChanges")(js.Any.fromFunction1($onChanges))
+    if ($onDestroy != null) __obj.updateDynamic("$onDestroy")(js.Any.fromFunction0($onDestroy))
+    if ($onInit != null) __obj.updateDynamic("$onInit")(js.Any.fromFunction0($onInit))
+    if ($postLink != null) __obj.updateDynamic("$postLink")(js.Any.fromFunction0($postLink))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IController]
   }

@@ -1,0 +1,18 @@
+package typings
+package reactDashNativeDashMaterialDashTextfieldLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashNativeDashMaterialDashTextfieldLibComponents {
+  @scala.inline
+  def TextField: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashNativeDashMaterialDashTextfieldLib.reactDashNativeDashMaterialDashTextfieldMod.TextFieldProps
+  ] = js.constructorOf[reactDashNativeDashMaterialDashTextfieldLib.reactDashNativeDashMaterialDashTextfieldMod.TextField].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashNativeDashMaterialDashTextfieldLib.reactDashNativeDashMaterialDashTextfieldMod.TextFieldProps]]
+  @scala.inline
+  def TextFieldProps: reactDashNativeDashMaterialDashTextfieldLib.reactDashNativeDashMaterialDashTextfieldMod.TextFieldProps.type = reactDashNativeDashMaterialDashTextfieldLib.reactDashNativeDashMaterialDashTextfieldMod.TextFieldProps
+  type TextFieldProps = reactDashNativeDashMaterialDashTextfieldLib.reactDashNativeDashMaterialDashTextfieldMod.TextFieldProps
+}
+

@@ -21,7 +21,7 @@ object Options {
   def apply(
     bgcolor: java.lang.String = null,
     cachebust: js.UndefOr[scala.Boolean] = js.undefined,
-    filter: js.Function1[/* node */ stdLib.Node, scala.Boolean] = null,
+    filter: /* node */ stdLib.Node => scala.Boolean = null,
     height: scala.Int | scala.Double = null,
     imagePlaceholder: java.lang.String = null,
     quality: scala.Int | scala.Double = null,
@@ -31,7 +31,7 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (bgcolor != null) __obj.updateDynamic("bgcolor")(bgcolor)
     if (!js.isUndefined(cachebust)) __obj.updateDynamic("cachebust")(cachebust)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (imagePlaceholder != null) __obj.updateDynamic("imagePlaceholder")(imagePlaceholder)
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])

@@ -16,12 +16,12 @@ trait GridEntity
 object GridEntity {
   @scala.inline
   def apply(
-    getEntityName: js.Function0[java.lang.String],
-    getEntityReference: js.Function0[xrmLib.XrmNs.LookupValue],
-    getId: js.Function0[java.lang.String],
-    getPrimaryAttributeValue: js.Function0[java.lang.String]
+    getEntityName: () => java.lang.String,
+    getEntityReference: () => xrmLib.XrmNs.LookupValue,
+    getId: () => java.lang.String,
+    getPrimaryAttributeValue: () => java.lang.String
   ): GridEntity = {
-    val __obj = js.Dynamic.literal(getEntityName = getEntityName, getEntityReference = getEntityReference, getId = getId, getPrimaryAttributeValue = getPrimaryAttributeValue)
+    val __obj = js.Dynamic.literal(getEntityName = js.Any.fromFunction0(getEntityName), getEntityReference = js.Any.fromFunction0(getEntityReference), getId = js.Any.fromFunction0(getId), getPrimaryAttributeValue = js.Any.fromFunction0(getPrimaryAttributeValue))
   
     __obj.asInstanceOf[GridEntity]
   }

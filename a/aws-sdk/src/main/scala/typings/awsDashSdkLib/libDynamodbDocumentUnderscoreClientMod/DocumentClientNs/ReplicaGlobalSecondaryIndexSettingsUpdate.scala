@@ -9,7 +9,7 @@ trait ReplicaGlobalSecondaryIndexSettingsUpdate extends js.Object {
   /**
     * The name of the global secondary index. The name must be unique among all other indexes on this table.
     */
-  var IndexName: IndexName
+  var IndexName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.IndexName
   /**
     * Autoscaling settings for managing a global secondary index replica's read capacity units.
     */

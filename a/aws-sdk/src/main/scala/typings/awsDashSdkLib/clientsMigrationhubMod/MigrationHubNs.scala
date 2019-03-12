@@ -12,7 +12,7 @@ object MigrationHubNs extends js.Object {
     /**
       * An ARN of the AWS resource related to the migration (e.g., AMI, EC2 instance, RDS instance, etc.) 
       */
-    var CreatedArtifact: CreatedArtifact
+    var CreatedArtifact: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.CreatedArtifact
     /**
       * Optional boolean flag to indicate whether any effect should take place. Used to test if the caller has permission to make the call.
       */
@@ -20,11 +20,11 @@ object MigrationHubNs extends js.Object {
     /**
       * Unique identifier that references the migration task.
       */
-    var MigrationTaskName: MigrationTaskName
+    var MigrationTaskName: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.MigrationTaskName
     /**
       * The name of the ProgressUpdateStream. 
       */
-    var ProgressUpdateStream: ProgressUpdateStream
+    var ProgressUpdateStream: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.ProgressUpdateStream
   }
   
   trait AssociateCreatedArtifactResult extends js.Object
@@ -33,7 +33,7 @@ object MigrationHubNs extends js.Object {
     /**
       * Object representing a Resource.
       */
-    var DiscoveredResource: DiscoveredResource
+    var DiscoveredResource: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.DiscoveredResource
     /**
       * Optional boolean flag to indicate whether any effect should take place. Used to test if the caller has permission to make the call.
       */
@@ -41,11 +41,11 @@ object MigrationHubNs extends js.Object {
     /**
       * The identifier given to the MigrationTask.
       */
-    var MigrationTaskName: MigrationTaskName
+    var MigrationTaskName: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.MigrationTaskName
     /**
       * The name of the ProgressUpdateStream.
       */
-    var ProgressUpdateStream: ProgressUpdateStream
+    var ProgressUpdateStream: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.ProgressUpdateStream
   }
   
   trait AssociateDiscoveredResourceResult extends js.Object
@@ -98,7 +98,7 @@ object MigrationHubNs extends js.Object {
     /**
       * The configurationId in ADS that uniquely identifies the grouped application.
       */
-    var ApplicationId: ApplicationId
+    var ApplicationId: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.ApplicationId
   }
   
   trait DescribeApplicationStateResult extends js.Object {
@@ -116,11 +116,11 @@ object MigrationHubNs extends js.Object {
     /**
       * The identifier given to the MigrationTask.
       */
-    var MigrationTaskName: MigrationTaskName
+    var MigrationTaskName: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.MigrationTaskName
     /**
       * The name of the ProgressUpdateStream. 
       */
-    var ProgressUpdateStream: ProgressUpdateStream
+    var ProgressUpdateStream: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.ProgressUpdateStream
   }
   
   trait DescribeMigrationTaskResult extends js.Object {
@@ -134,7 +134,7 @@ object MigrationHubNs extends js.Object {
     /**
       * An ARN of the AWS resource related to the migration (e.g., AMI, EC2 instance, RDS instance, etc.)
       */
-    var CreatedArtifactName: CreatedArtifactName
+    var CreatedArtifactName: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.CreatedArtifactName
     /**
       * Optional boolean flag to indicate whether any effect should take place. Used to test if the caller has permission to make the call.
       */
@@ -142,11 +142,11 @@ object MigrationHubNs extends js.Object {
     /**
       * Unique identifier that references the migration task to be disassociated with the artifact.
       */
-    var MigrationTaskName: MigrationTaskName
+    var MigrationTaskName: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.MigrationTaskName
     /**
       * The name of the ProgressUpdateStream. 
       */
-    var ProgressUpdateStream: ProgressUpdateStream
+    var ProgressUpdateStream: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.ProgressUpdateStream
   }
   
   trait DisassociateCreatedArtifactResult extends js.Object
@@ -155,7 +155,7 @@ object MigrationHubNs extends js.Object {
     /**
       * ConfigurationId of the ADS resource to be disassociated.
       */
-    var ConfigurationId: ConfigurationId
+    var ConfigurationId: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.ConfigurationId
     /**
       * Optional boolean flag to indicate whether any effect should take place. Used to test if the caller has permission to make the call.
       */
@@ -163,11 +163,11 @@ object MigrationHubNs extends js.Object {
     /**
       * The identifier given to the MigrationTask.
       */
-    var MigrationTaskName: MigrationTaskName
+    var MigrationTaskName: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.MigrationTaskName
     /**
       * The name of the ProgressUpdateStream.
       */
-    var ProgressUpdateStream: ProgressUpdateStream
+    var ProgressUpdateStream: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.ProgressUpdateStream
   }
   
   trait DisassociateDiscoveredResourceResult extends js.Object
@@ -176,7 +176,7 @@ object MigrationHubNs extends js.Object {
     /**
       * The configurationId in ADS that uniquely identifies the on-premise resource.
       */
-    var ConfigurationId: ConfigurationId
+    var ConfigurationId: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.ConfigurationId
     /**
       * A description that can be free-form text to record additional detail about the discovered resource for clarity or later reference.
       */
@@ -191,11 +191,11 @@ object MigrationHubNs extends js.Object {
     /**
       * Unique identifier that references the migration task.
       */
-    var MigrationTaskName: MigrationTaskName
+    var MigrationTaskName: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.MigrationTaskName
     /**
       * The name of the ProgressUpdateStream. 
       */
-    var ProgressUpdateStream: ProgressUpdateStream
+    var ProgressUpdateStream: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.ProgressUpdateStream
   }
   
   trait ImportMigrationTaskResult extends js.Object
@@ -208,7 +208,7 @@ object MigrationHubNs extends js.Object {
     /**
       * Unique identifier that references the migration task.
       */
-    var MigrationTaskName: MigrationTaskName
+    var MigrationTaskName: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.MigrationTaskName
     /**
       * If a NextToken was returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in NextToken.
       */
@@ -216,7 +216,7 @@ object MigrationHubNs extends js.Object {
     /**
       * The name of the ProgressUpdateStream. 
       */
-    var ProgressUpdateStream: ProgressUpdateStream
+    var ProgressUpdateStream: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.ProgressUpdateStream
   }
   
   trait ListCreatedArtifactsResult extends js.Object {
@@ -238,7 +238,7 @@ object MigrationHubNs extends js.Object {
     /**
       * The name of the MigrationTask.
       */
-    var MigrationTaskName: MigrationTaskName
+    var MigrationTaskName: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.MigrationTaskName
     /**
       * If a NextToken was returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in NextToken.
       */
@@ -246,7 +246,7 @@ object MigrationHubNs extends js.Object {
     /**
       * The name of the ProgressUpdateStream.
       */
-    var ProgressUpdateStream: ProgressUpdateStream
+    var ProgressUpdateStream: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.ProgressUpdateStream
   }
   
   trait ListDiscoveredResourcesResult extends js.Object {
@@ -362,7 +362,7 @@ object MigrationHubNs extends js.Object {
     /**
       * The configurationId in ADS that uniquely identifies the grouped application.
       */
-    var ApplicationId: ApplicationId
+    var ApplicationId: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.ApplicationId
     /**
       * Optional boolean flag to indicate whether any effect should take place. Used to test if the caller has permission to make the call.
       */
@@ -383,23 +383,23 @@ object MigrationHubNs extends js.Object {
     /**
       * Unique identifier that references the migration task.
       */
-    var MigrationTaskName: MigrationTaskName
+    var MigrationTaskName: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.MigrationTaskName
     /**
       * Number of seconds after the UpdateDateTime within which the Migration Hub can expect an update. If Migration Hub does not receive an update within the specified interval, then the migration task will be considered stale.
       */
-    var NextUpdateSeconds: NextUpdateSeconds
+    var NextUpdateSeconds: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.NextUpdateSeconds
     /**
       * The name of the ProgressUpdateStream. 
       */
-    var ProgressUpdateStream: ProgressUpdateStream
+    var ProgressUpdateStream: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.ProgressUpdateStream
     /**
       * Information about the task's progress and status.
       */
-    var Task: Task
+    var Task: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.Task
     /**
       * The timestamp when the task was gathered.
       */
-    var UpdateDateTime: UpdateDateTime
+    var UpdateDateTime: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.UpdateDateTime
   }
   
   trait NotifyMigrationTaskStateResult extends js.Object
@@ -419,15 +419,15 @@ object MigrationHubNs extends js.Object {
     /**
       * Unique identifier that references the migration task.
       */
-    var MigrationTaskName: MigrationTaskName
+    var MigrationTaskName: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.MigrationTaskName
     /**
       * The name of the ProgressUpdateStream. 
       */
-    var ProgressUpdateStream: ProgressUpdateStream
+    var ProgressUpdateStream: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.ProgressUpdateStream
     /**
       * Information about the resource that is being migrated. This data will be used to map the task to a resource in the Application Discovery Service (ADS)'s repository.  Takes the object array of ResourceAttribute where the Type field is reserved for the following values: IPV4_ADDRESS | IPV6_ADDRESS | MAC_ADDRESS | FQDN | VM_MANAGER_ID | VM_MANAGED_OBJECT_REFERENCE | VM_NAME | VM_PATH | BIOS_ID | MOTHERBOARD_SERIAL_NUMBER where the identifying value can be a string up to 256 characters.     If any "VM" related value is set for a ResourceAttribute object, it is required that VM_MANAGER_ID, as a minimum, is always set. If VM_MANAGER_ID is not set, then all "VM" fields will be discarded and "VM" fields will not be used for matching the migration task to a server in Application Discovery Service (ADS)'s repository. See the Example section below for a use case of specifying "VM" related values.    If a server you are trying to match has multiple IP or MAC addresses, you should provide as many as you know in separate type/value pairs passed to the ResourceAttributeList parameter to maximize the chances of matching.   
       */
-    var ResourceAttributeList: ResourceAttributeList
+    var ResourceAttributeList: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.ResourceAttributeList
   }
   
   trait PutResourceAttributesResult extends js.Object
@@ -451,7 +451,7 @@ object MigrationHubNs extends js.Object {
     /**
       * Status of the task - Not Started, In-Progress, Complete.
       */
-    var Status: Status
+    var Status: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.Status
     /**
       * Details of task status as notified by a migration tool. A tool might use this field to provide clarifying information about the status that is unique to that tool or that explains an error state.
       */

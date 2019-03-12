@@ -32,12 +32,12 @@ object DataSetEvaluator {
   def apply(
     constructor: js.Function,
     dataSetConfigurations: js.Array[DatasetConfiguration],
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     name: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     `type`: java.lang.String
   ): DataSetEvaluator = {
-    val __obj = js.Dynamic.literal(constructor = constructor, dataSetConfigurations = dataSetConfigurations, hasOwnProperty = hasOwnProperty, name = name, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, dataSetConfigurations = dataSetConfigurations, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DataSetEvaluator]
   }

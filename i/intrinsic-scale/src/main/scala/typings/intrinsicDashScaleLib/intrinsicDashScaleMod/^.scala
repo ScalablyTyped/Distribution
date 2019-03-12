@@ -13,12 +13,12 @@ object ^ extends js.Object {
     parentHeight: scala.Double,
     childWidth: scala.Double,
     childHeight: scala.Double
-  ): intrinsicDashScaleLib.intrinsicDashScaleMod.IntrinsicScale = js.native
+  ): IntrinsicScale = js.native
   def cover(
     parentWidth: scala.Double,
     parentHeight: scala.Double,
     childWidth: scala.Double,
     childHeight: scala.Double
-  ): intrinsicDashScaleLib.intrinsicDashScaleMod.IntrinsicScale = js.native
+  ): IntrinsicScale = js.native
 }
 

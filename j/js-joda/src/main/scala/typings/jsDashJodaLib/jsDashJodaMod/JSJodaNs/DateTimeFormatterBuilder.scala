@@ -29,26 +29,26 @@ trait DateTimeFormatterBuilder extends js.Object {
 object DateTimeFormatterBuilder {
   @scala.inline
   def apply(
-    append: js.Function1[DateTimeFormatter, DateTimeFormatterBuilder],
-    appendFraction: js.Function4[TemporalField, scala.Double, scala.Double, scala.Boolean, DateTimeFormatterBuilder],
-    appendInstant: js.Function1[scala.Double, DateTimeFormatterBuilder],
-    appendLiteral: js.Function1[js.Any, DateTimeFormatterBuilder],
-    appendOffset: js.Function2[java.lang.String, java.lang.String, DateTimeFormatterBuilder],
-    appendOffsetId: js.Function0[DateTimeFormatterBuilder],
-    appendPattern: js.Function1[java.lang.String, DateTimeFormatterBuilder],
-    appendValue: js.Function0[DateTimeFormatterBuilder],
-    appendValueReduced: js.Function0[DateTimeFormatterBuilder],
-    appendZoneId: js.Function0[DateTimeFormatterBuilder],
-    optionalEnd: js.Function0[DateTimeFormatterBuilder],
-    optionalStart: js.Function0[DateTimeFormatterBuilder],
-    padNext: js.Function0[DateTimeFormatterBuilder],
-    parseCaseInsensitive: js.Function0[DateTimeFormatterBuilder],
-    parseCaseSensitive: js.Function0[DateTimeFormatterBuilder],
-    parseLenient: js.Function0[DateTimeFormatterBuilder],
-    parseStrict: js.Function0[DateTimeFormatterBuilder],
-    toFormatter: js.Function1[ResolverStyle, DateTimeFormatter]
+    append: DateTimeFormatter => DateTimeFormatterBuilder,
+    appendFraction: (TemporalField, scala.Double, scala.Double, scala.Boolean) => DateTimeFormatterBuilder,
+    appendInstant: scala.Double => DateTimeFormatterBuilder,
+    appendLiteral: js.Any => DateTimeFormatterBuilder,
+    appendOffset: (java.lang.String, java.lang.String) => DateTimeFormatterBuilder,
+    appendOffsetId: () => DateTimeFormatterBuilder,
+    appendPattern: java.lang.String => DateTimeFormatterBuilder,
+    appendValue: () => DateTimeFormatterBuilder,
+    appendValueReduced: () => DateTimeFormatterBuilder,
+    appendZoneId: () => DateTimeFormatterBuilder,
+    optionalEnd: () => DateTimeFormatterBuilder,
+    optionalStart: () => DateTimeFormatterBuilder,
+    padNext: () => DateTimeFormatterBuilder,
+    parseCaseInsensitive: () => DateTimeFormatterBuilder,
+    parseCaseSensitive: () => DateTimeFormatterBuilder,
+    parseLenient: () => DateTimeFormatterBuilder,
+    parseStrict: () => DateTimeFormatterBuilder,
+    toFormatter: ResolverStyle => DateTimeFormatter
   ): DateTimeFormatterBuilder = {
-    val __obj = js.Dynamic.literal(append = append, appendFraction = appendFraction, appendInstant = appendInstant, appendLiteral = appendLiteral, appendOffset = appendOffset, appendOffsetId = appendOffsetId, appendPattern = appendPattern, appendValue = appendValue, appendValueReduced = appendValueReduced, appendZoneId = appendZoneId, optionalEnd = optionalEnd, optionalStart = optionalStart, padNext = padNext, parseCaseInsensitive = parseCaseInsensitive, parseCaseSensitive = parseCaseSensitive, parseLenient = parseLenient, parseStrict = parseStrict, toFormatter = toFormatter)
+    val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), appendFraction = js.Any.fromFunction4(appendFraction), appendInstant = js.Any.fromFunction1(appendInstant), appendLiteral = js.Any.fromFunction1(appendLiteral), appendOffset = js.Any.fromFunction2(appendOffset), appendOffsetId = js.Any.fromFunction0(appendOffsetId), appendPattern = js.Any.fromFunction1(appendPattern), appendValue = js.Any.fromFunction0(appendValue), appendValueReduced = js.Any.fromFunction0(appendValueReduced), appendZoneId = js.Any.fromFunction0(appendZoneId), optionalEnd = js.Any.fromFunction0(optionalEnd), optionalStart = js.Any.fromFunction0(optionalStart), padNext = js.Any.fromFunction0(padNext), parseCaseInsensitive = js.Any.fromFunction0(parseCaseInsensitive), parseCaseSensitive = js.Any.fromFunction0(parseCaseSensitive), parseLenient = js.Any.fromFunction0(parseLenient), parseStrict = js.Any.fromFunction0(parseStrict), toFormatter = js.Any.fromFunction1(toFormatter))
   
     __obj.asInstanceOf[DateTimeFormatterBuilder]
   }

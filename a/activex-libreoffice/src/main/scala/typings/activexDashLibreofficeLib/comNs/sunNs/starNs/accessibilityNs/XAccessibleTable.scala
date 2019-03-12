@@ -65,12 +65,12 @@ trait XAccessibleTable
     * Returns a list of the indices of completely selected columns in a table.
     * @returns The returned sequence contains indices of all completely selected columns in the table. This sequence is in ascending order. If no column is sele
     */
-  val SelectedAccessibleColumns: activexDashInteropLib.SafeArray[scala.Double]
+  val SelectedAccessibleColumns: stdLib.SafeArray[scala.Double]
   /**
     * Returns a list of the indices of completely selected rows in a table.
     * @returns The returned sequence contains indices of all completely selected rows in the table. This sequence is in ascending order. If no row is selected t
     */
-  val SelectedAccessibleRows: activexDashInteropLib.SafeArray[scala.Double]
+  val SelectedAccessibleRows: stdLib.SafeArray[scala.Double]
   /**
     * Returns the caption for the table.
     * @returns If the table has a caption then a reference to it is returned, else an empty reference is returned.
@@ -181,12 +181,12 @@ trait XAccessibleTable
     * Returns a list of the indices of completely selected columns in a table.
     * @returns The returned sequence contains indices of all completely selected columns in the table. This sequence is in ascending order. If no column is sele
     */
-  def getSelectedAccessibleColumns(): activexDashInteropLib.SafeArray[scala.Double]
+  def getSelectedAccessibleColumns(): stdLib.SafeArray[scala.Double]
   /**
     * Returns a list of the indices of completely selected rows in a table.
     * @returns The returned sequence contains indices of all completely selected rows in the table. This sequence is in ascending order. If no row is selected t
     */
-  def getSelectedAccessibleRows(): activexDashInteropLib.SafeArray[scala.Double]
+  def getSelectedAccessibleRows(): stdLib.SafeArray[scala.Double]
   /**
     * Returns a boolean value indicating whether the specified column is completely selected.
     * @param nColumn Index of the column for which to determine whether it is selected.
@@ -219,32 +219,32 @@ object XAccessibleTable {
     AccessibleRowCount: scala.Double,
     AccessibleRowHeaders: XAccessibleTable,
     AccessibleSummary: XAccessible,
-    SelectedAccessibleColumns: activexDashInteropLib.SafeArray[scala.Double],
-    SelectedAccessibleRows: activexDashInteropLib.SafeArray[scala.Double],
-    acquire: js.Function0[scala.Unit],
-    getAccessibleCaption: js.Function0[XAccessible],
-    getAccessibleCellAt: js.Function2[scala.Double, scala.Double, XAccessible],
-    getAccessibleColumn: js.Function1[scala.Double, scala.Double],
-    getAccessibleColumnCount: js.Function0[scala.Double],
-    getAccessibleColumnDescription: js.Function1[scala.Double, java.lang.String],
-    getAccessibleColumnExtentAt: js.Function2[scala.Double, scala.Double, scala.Double],
-    getAccessibleColumnHeaders: js.Function0[XAccessibleTable],
-    getAccessibleIndex: js.Function2[scala.Double, scala.Double, scala.Double],
-    getAccessibleRow: js.Function1[scala.Double, scala.Double],
-    getAccessibleRowCount: js.Function0[scala.Double],
-    getAccessibleRowDescription: js.Function1[scala.Double, java.lang.String],
-    getAccessibleRowExtentAt: js.Function2[scala.Double, scala.Double, scala.Double],
-    getAccessibleRowHeaders: js.Function0[XAccessibleTable],
-    getAccessibleSummary: js.Function0[XAccessible],
-    getSelectedAccessibleColumns: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    getSelectedAccessibleRows: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    isAccessibleColumnSelected: js.Function1[scala.Double, scala.Boolean],
-    isAccessibleRowSelected: js.Function1[scala.Double, scala.Boolean],
-    isAccessibleSelected: js.Function2[scala.Double, scala.Double, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    SelectedAccessibleColumns: stdLib.SafeArray[scala.Double],
+    SelectedAccessibleRows: stdLib.SafeArray[scala.Double],
+    acquire: () => scala.Unit,
+    getAccessibleCaption: () => XAccessible,
+    getAccessibleCellAt: (scala.Double, scala.Double) => XAccessible,
+    getAccessibleColumn: scala.Double => scala.Double,
+    getAccessibleColumnCount: () => scala.Double,
+    getAccessibleColumnDescription: scala.Double => java.lang.String,
+    getAccessibleColumnExtentAt: (scala.Double, scala.Double) => scala.Double,
+    getAccessibleColumnHeaders: () => XAccessibleTable,
+    getAccessibleIndex: (scala.Double, scala.Double) => scala.Double,
+    getAccessibleRow: scala.Double => scala.Double,
+    getAccessibleRowCount: () => scala.Double,
+    getAccessibleRowDescription: scala.Double => java.lang.String,
+    getAccessibleRowExtentAt: (scala.Double, scala.Double) => scala.Double,
+    getAccessibleRowHeaders: () => XAccessibleTable,
+    getAccessibleSummary: () => XAccessible,
+    getSelectedAccessibleColumns: () => stdLib.SafeArray[scala.Double],
+    getSelectedAccessibleRows: () => stdLib.SafeArray[scala.Double],
+    isAccessibleColumnSelected: scala.Double => scala.Boolean,
+    isAccessibleRowSelected: scala.Double => scala.Boolean,
+    isAccessibleSelected: (scala.Double, scala.Double) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAccessibleTable = {
-    val __obj = js.Dynamic.literal(AccessibleCaption = AccessibleCaption, AccessibleColumnCount = AccessibleColumnCount, AccessibleColumnHeaders = AccessibleColumnHeaders, AccessibleRowCount = AccessibleRowCount, AccessibleRowHeaders = AccessibleRowHeaders, AccessibleSummary = AccessibleSummary, SelectedAccessibleColumns = SelectedAccessibleColumns, SelectedAccessibleRows = SelectedAccessibleRows, acquire = acquire, getAccessibleCaption = getAccessibleCaption, getAccessibleCellAt = getAccessibleCellAt, getAccessibleColumn = getAccessibleColumn, getAccessibleColumnCount = getAccessibleColumnCount, getAccessibleColumnDescription = getAccessibleColumnDescription, getAccessibleColumnExtentAt = getAccessibleColumnExtentAt, getAccessibleColumnHeaders = getAccessibleColumnHeaders, getAccessibleIndex = getAccessibleIndex, getAccessibleRow = getAccessibleRow, getAccessibleRowCount = getAccessibleRowCount, getAccessibleRowDescription = getAccessibleRowDescription, getAccessibleRowExtentAt = getAccessibleRowExtentAt, getAccessibleRowHeaders = getAccessibleRowHeaders, getAccessibleSummary = getAccessibleSummary, getSelectedAccessibleColumns = getSelectedAccessibleColumns, getSelectedAccessibleRows = getSelectedAccessibleRows, isAccessibleColumnSelected = isAccessibleColumnSelected, isAccessibleRowSelected = isAccessibleRowSelected, isAccessibleSelected = isAccessibleSelected, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(AccessibleCaption = AccessibleCaption, AccessibleColumnCount = AccessibleColumnCount, AccessibleColumnHeaders = AccessibleColumnHeaders, AccessibleRowCount = AccessibleRowCount, AccessibleRowHeaders = AccessibleRowHeaders, AccessibleSummary = AccessibleSummary, SelectedAccessibleColumns = SelectedAccessibleColumns, SelectedAccessibleRows = SelectedAccessibleRows, acquire = js.Any.fromFunction0(acquire), getAccessibleCaption = js.Any.fromFunction0(getAccessibleCaption), getAccessibleCellAt = js.Any.fromFunction2(getAccessibleCellAt), getAccessibleColumn = js.Any.fromFunction1(getAccessibleColumn), getAccessibleColumnCount = js.Any.fromFunction0(getAccessibleColumnCount), getAccessibleColumnDescription = js.Any.fromFunction1(getAccessibleColumnDescription), getAccessibleColumnExtentAt = js.Any.fromFunction2(getAccessibleColumnExtentAt), getAccessibleColumnHeaders = js.Any.fromFunction0(getAccessibleColumnHeaders), getAccessibleIndex = js.Any.fromFunction2(getAccessibleIndex), getAccessibleRow = js.Any.fromFunction1(getAccessibleRow), getAccessibleRowCount = js.Any.fromFunction0(getAccessibleRowCount), getAccessibleRowDescription = js.Any.fromFunction1(getAccessibleRowDescription), getAccessibleRowExtentAt = js.Any.fromFunction2(getAccessibleRowExtentAt), getAccessibleRowHeaders = js.Any.fromFunction0(getAccessibleRowHeaders), getAccessibleSummary = js.Any.fromFunction0(getAccessibleSummary), getSelectedAccessibleColumns = js.Any.fromFunction0(getSelectedAccessibleColumns), getSelectedAccessibleRows = js.Any.fromFunction0(getSelectedAccessibleRows), isAccessibleColumnSelected = js.Any.fromFunction1(isAccessibleColumnSelected), isAccessibleRowSelected = js.Any.fromFunction1(isAccessibleRowSelected), isAccessibleSelected = js.Any.fromFunction2(isAccessibleSelected), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAccessibleTable]
   }

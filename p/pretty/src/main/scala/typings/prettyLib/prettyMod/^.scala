@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(str: java.lang.String): java.lang.String = js.native
-  def apply(str: java.lang.String, options: prettyLib.prettyMod.PrettyOptions): java.lang.String = js.native
+  def apply(str: java.lang.String, options: PrettyOptions): java.lang.String = js.native
 }
 

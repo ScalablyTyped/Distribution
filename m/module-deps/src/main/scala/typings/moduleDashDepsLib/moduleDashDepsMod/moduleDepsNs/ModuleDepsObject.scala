@@ -59,7 +59,7 @@ trait ModuleDepsObject
     id: java.lang.String,
     parent: moduleDashDepsLib.Anon_Id,
     cb: js.Function4[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* file */ js.UndefOr[java.lang.String], 
       /* pkg */ js.UndefOr[PackageObject], 
       /* fakePath */ js.UndefOr[js.Any], 
@@ -70,7 +70,7 @@ trait ModuleDepsObject
     id: java.lang.String,
     parent: moduleDashDepsLib.Anon_Modules,
     cb: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* file */ js.UndefOr[java.lang.String], 
       scala.Unit
     ]
@@ -79,7 +79,7 @@ trait ModuleDepsObject
     id: moduleDashDepsLib.Anon_Entry,
     parent: moduleDashDepsLib.Anon_Modules,
     cb: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* file */ js.UndefOr[java.lang.String], 
       scala.Unit
     ]

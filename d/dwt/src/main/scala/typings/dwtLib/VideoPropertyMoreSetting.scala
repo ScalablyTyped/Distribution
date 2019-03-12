@@ -16,13 +16,13 @@ trait VideoPropertyMoreSetting extends js.Object {
 object VideoPropertyMoreSetting {
   @scala.inline
   def apply(
-    GetDefaultValue: js.Function0[scala.Double],
-    GetIfAuto: js.Function0[scala.Boolean],
-    GetMaxValue: js.Function0[scala.Double],
-    GetMinValue: js.Function0[scala.Double],
-    GetSteppingDelta: js.Function0[scala.Double]
+    GetDefaultValue: () => scala.Double,
+    GetIfAuto: () => scala.Boolean,
+    GetMaxValue: () => scala.Double,
+    GetMinValue: () => scala.Double,
+    GetSteppingDelta: () => scala.Double
   ): VideoPropertyMoreSetting = {
-    val __obj = js.Dynamic.literal(GetDefaultValue = GetDefaultValue, GetIfAuto = GetIfAuto, GetMaxValue = GetMaxValue, GetMinValue = GetMinValue, GetSteppingDelta = GetSteppingDelta)
+    val __obj = js.Dynamic.literal(GetDefaultValue = js.Any.fromFunction0(GetDefaultValue), GetIfAuto = js.Any.fromFunction0(GetIfAuto), GetMaxValue = js.Any.fromFunction0(GetMaxValue), GetMinValue = js.Any.fromFunction0(GetMinValue), GetSteppingDelta = js.Any.fromFunction0(GetSteppingDelta))
   
     __obj.asInstanceOf[VideoPropertyMoreSetting]
   }

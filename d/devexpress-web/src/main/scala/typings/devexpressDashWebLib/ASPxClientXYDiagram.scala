@@ -19,16 +19,9 @@ trait ASPxClientXYDiagram extends ASPxClientXYDiagram2D {
 object ASPxClientXYDiagram {
   @scala.inline
   def apply(
-    DiagramToPoint: js.Function5[
-      js.Object, 
-      js.Object, 
-      ASPxClientAxis2D, 
-      ASPxClientAxis2D, 
-      ASPxClientXYDiagramPane, 
-      ASPxClientControlCoordinates
-    ],
-    PointToDiagram: js.Function2[scala.Double, scala.Double, ASPxClientDiagramCoordinates],
-    ShowCrosshair: js.Function2[scala.Double, scala.Double, scala.Unit],
+    DiagramToPoint: (js.Object, js.Object, ASPxClientAxis2D, ASPxClientAxis2D, ASPxClientXYDiagramPane) => ASPxClientControlCoordinates,
+    PointToDiagram: (scala.Double, scala.Double) => ASPxClientDiagramCoordinates,
+    ShowCrosshair: (scala.Double, scala.Double) => scala.Unit,
     axisX: ASPxClientAxisBase,
     axisY: ASPxClientAxisBase,
     chart: ASPxClientWebChart,
@@ -38,7 +31,7 @@ object ASPxClientXYDiagram {
     secondaryAxesX: js.Array[ASPxClientAxis],
     secondaryAxesY: js.Array[ASPxClientAxis]
   ): ASPxClientXYDiagram = {
-    val __obj = js.Dynamic.literal(DiagramToPoint = DiagramToPoint, PointToDiagram = PointToDiagram, ShowCrosshair = ShowCrosshair, axisX = axisX, axisY = axisY, chart = chart, defaultPane = defaultPane, panes = panes, rotated = rotated, secondaryAxesX = secondaryAxesX, secondaryAxesY = secondaryAxesY)
+    val __obj = js.Dynamic.literal(DiagramToPoint = js.Any.fromFunction5(DiagramToPoint), PointToDiagram = js.Any.fromFunction2(PointToDiagram), ShowCrosshair = js.Any.fromFunction2(ShowCrosshair), axisX = axisX, axisY = axisY, chart = chart, defaultPane = defaultPane, panes = panes, rotated = rotated, secondaryAxesX = secondaryAxesX, secondaryAxesY = secondaryAxesY)
   
     __obj.asInstanceOf[ASPxClientXYDiagram]
   }

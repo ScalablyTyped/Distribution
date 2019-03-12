@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ContextSession extends js.Object {
   var app: js.Any
   var ctx: koaDashSessionLib.koaDashSessionMod.koaMod.Context
-  var opts: opts
+  var opts: koaDashSessionLib.koaDashSessionMod.sessionNs.opts
   var prevHash: java.lang.String
   var session: Session | koaDashSessionLib.koaDashSessionLibNumbers.`false`
   var store: stores
@@ -35,17 +35,17 @@ object ContextSession {
   @scala.inline
   def apply(
     app: js.Any,
-    commit: js.Function0[js.Promise[scala.Unit]],
+    commit: () => js.Promise[scala.Unit],
     ctx: koaDashSessionLib.koaDashSessionMod.koaMod.Context,
-    get: js.Function0[Session],
-    initFromExternal: js.Function0[js.Promise[scala.Unit]],
+    get: () => Session,
+    initFromExternal: () => js.Promise[scala.Unit],
     opts: opts,
     prevHash: java.lang.String,
     session: Session | koaDashSessionLib.koaDashSessionLibNumbers.`false`,
-    set: js.Function1[js.Any, scala.Unit],
+    set: js.Any => scala.Unit,
     store: stores
   ): ContextSession = {
-    val __obj = js.Dynamic.literal(app = app, commit = commit, ctx = ctx, get = get, initFromExternal = initFromExternal, opts = opts, prevHash = prevHash, session = session.asInstanceOf[js.Any], set = set, store = store)
+    val __obj = js.Dynamic.literal(app = app, commit = js.Any.fromFunction0(commit), ctx = ctx, get = js.Any.fromFunction0(get), initFromExternal = js.Any.fromFunction0(initFromExternal), opts = opts, prevHash = prevHash, session = session.asInstanceOf[js.Any], set = js.Any.fromFunction1(set), store = store)
   
     __obj.asInstanceOf[ContextSession]
   }

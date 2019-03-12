@@ -14,11 +14,11 @@ trait SkewAnimation extends js.Object {
 object SkewAnimation {
   @scala.inline
   def apply(
-    skew: js.Function1[scala.Double, Animation],
-    skewX: js.Function1[scala.Double, Animation],
-    skewY: js.Function1[scala.Double, Animation]
+    skew: scala.Double => Animation,
+    skewX: scala.Double => Animation,
+    skewY: scala.Double => Animation
   ): SkewAnimation = {
-    val __obj = js.Dynamic.literal(skew = skew, skewX = skewX, skewY = skewY)
+    val __obj = js.Dynamic.literal(skew = js.Any.fromFunction1(skew), skewX = js.Any.fromFunction1(skewX), skewY = js.Any.fromFunction1(skewY))
   
     __obj.asInstanceOf[SkewAnimation]
   }

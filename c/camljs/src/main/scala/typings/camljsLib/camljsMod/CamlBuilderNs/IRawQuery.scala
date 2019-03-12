@@ -13,8 +13,8 @@ trait IRawQuery extends js.Object {
 
 object IRawQuery {
   @scala.inline
-  def apply(ModifyWhere: js.Function0[IRawQueryModify], ReplaceWhere: js.Function0[IFieldExpression]): IRawQuery = {
-    val __obj = js.Dynamic.literal(ModifyWhere = ModifyWhere, ReplaceWhere = ReplaceWhere)
+  def apply(ModifyWhere: () => IRawQueryModify, ReplaceWhere: () => IFieldExpression): IRawQuery = {
+    val __obj = js.Dynamic.literal(ModifyWhere = js.Any.fromFunction0(ModifyWhere), ReplaceWhere = js.Any.fromFunction0(ReplaceWhere))
   
     __obj.asInstanceOf[IRawQuery]
   }

@@ -50,7 +50,7 @@ object LambdaNs extends js.Object {
     /**
       * The name or Amazon Resource Name (ARN) of the layer.
       */
-    var LayerName: LayerName
+    var LayerName: awsDashSdkLib.clientsLambdaMod.LambdaNs.LayerName
     /**
       * With the principal set to *, grant permission to all accounts in the specified organization.
       */
@@ -66,7 +66,7 @@ object LambdaNs extends js.Object {
     /**
       * An identifier that distinguishes the policy from others on the same layer version.
       */
-    var StatementId: StatementId
+    var StatementId: awsDashSdkLib.clientsLambdaMod.LambdaNs.StatementId
     /**
       * The version number.
       */
@@ -88,7 +88,7 @@ object LambdaNs extends js.Object {
     /**
       * The action that the principal can use on the function. For example, lambda:InvokeFunction or lambda:GetFunction.
       */
-    var Action: Action
+    var Action: awsDashSdkLib.clientsLambdaMod.LambdaNs.Action
     /**
       * For Alexa Smart Home functions, a token that must be supplied by the invoker.
       */
@@ -96,11 +96,11 @@ object LambdaNs extends js.Object {
     /**
       * The name of the Lambda function, version, or alias.  Name formats     Function name - my-function (name-only), my-function:v1 (with alias).    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:my-function.    Partial ARN - 123456789012:function:my-function.   You can append a version number or alias to any of the formats. The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
-    var FunctionName: FunctionName
+    var FunctionName: awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionName
     /**
       * The AWS service or account that invokes the function. If you specify a service, use SourceArn or SourceAccount to limit who can invoke the function through that service.
       */
-    var Principal: Principal
+    var Principal: awsDashSdkLib.clientsLambdaMod.LambdaNs.Principal
     /**
       * Specify a version or alias to add permissions to a published version of the function.
       */
@@ -120,7 +120,7 @@ object LambdaNs extends js.Object {
     /**
       * A statement identifier that differentiates the statement from others in the same policy.
       */
-    var StatementId: StatementId
+    var StatementId: awsDashSdkLib.clientsLambdaMod.LambdaNs.StatementId
   }
   
   trait AddPermissionResponse extends js.Object {
@@ -189,7 +189,7 @@ object LambdaNs extends js.Object {
     /**
       * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
-    var FunctionName: FunctionName
+    var FunctionName: awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionName
     /**
       * The function version that the alias invokes.
       */
@@ -220,7 +220,7 @@ object LambdaNs extends js.Object {
     /**
       * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Version or Alias ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction:PROD.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it's limited to 64 characters in length.
       */
-    var FunctionName: FunctionName
+    var FunctionName: awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionName
     /**
       * The position in a stream from which to start reading. Required for Amazon Kinesis and Amazon DynamoDB Streams sources. AT_TIMESTAMP is only supported for Amazon Kinesis streams.
       */
@@ -251,11 +251,11 @@ object LambdaNs extends js.Object {
     /**
       * The name of the Lambda function.  Name formats     Function name - my-function.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:my-function.    Partial ARN - 123456789012:function:my-function.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
-    var FunctionName: FunctionName
+    var FunctionName: awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionName
     /**
       * The name of the method within your code that Lambda calls to execute your function. The format includes the file name. It can also include namespaces and other qualifiers, depending on the runtime. For more information, see Programming Model.
       */
-    var Handler: Handler
+    var Handler: awsDashSdkLib.clientsLambdaMod.LambdaNs.Handler
     /**
       * The ARN of the AWS Key Management Service (AWS KMS) key that's used to encrypt your function's environment variables. If it's not provided, AWS Lambda uses a default service key.
       */
@@ -279,7 +279,7 @@ object LambdaNs extends js.Object {
     /**
       * The identifier of the function's runtime.
       */
-    var Runtime: Runtime
+    var Runtime: awsDashSdkLib.clientsLambdaMod.LambdaNs.Runtime
     /**
       * A list of tags to apply to the function.
       */
@@ -309,7 +309,7 @@ object LambdaNs extends js.Object {
     /**
       * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
-    var FunctionName: FunctionName
+    var FunctionName: awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionName
     /**
       * The name of the alias.
       */
@@ -327,14 +327,14 @@ object LambdaNs extends js.Object {
     /**
       * The name of the Lambda function.  Name formats     Function name - my-function.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:my-function.    Partial ARN - 123456789012:function:my-function.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
-    var FunctionName: FunctionName
+    var FunctionName: awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionName
   }
   
   trait DeleteFunctionRequest extends js.Object {
     /**
       * The name of the Lambda function or version.  Name formats     Function name - my-function (name-only), my-function:1 (with version).    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:my-function.    Partial ARN - 123456789012:function:my-function.   You can append a version number or alias to any of the formats. The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
-    var FunctionName: FunctionName
+    var FunctionName: awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionName
     /**
       * Specify a version to delete. You can't delete a version that's referenced by an alias.
       */
@@ -345,7 +345,7 @@ object LambdaNs extends js.Object {
     /**
       * The name or Amazon Resource Name (ARN) of the layer.
       */
-    var LayerName: LayerName
+    var LayerName: awsDashSdkLib.clientsLambdaMod.LambdaNs.LayerName
     /**
       * The version number.
       */
@@ -549,7 +549,7 @@ object LambdaNs extends js.Object {
     /**
       * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
-    var FunctionName: FunctionName
+    var FunctionName: awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionName
     /**
       * The name of the alias.
       */
@@ -608,7 +608,7 @@ object LambdaNs extends js.Object {
     /**
       * The name or Amazon Resource Name (ARN) of the layer.
       */
-    var LayerName: LayerName
+    var LayerName: awsDashSdkLib.clientsLambdaMod.LambdaNs.LayerName
     /**
       * The version number.
       */
@@ -630,7 +630,7 @@ object LambdaNs extends js.Object {
     /**
       * The name or Amazon Resource Name (ARN) of the layer.
       */
-    var LayerName: LayerName
+    var LayerName: awsDashSdkLib.clientsLambdaMod.LambdaNs.LayerName
     /**
       * The version number.
       */
@@ -853,7 +853,7 @@ object LambdaNs extends js.Object {
     /**
       * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
-    var FunctionName: FunctionName
+    var FunctionName: awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionName
     /**
       * Specify a function version to only list aliases that invoke that version.
       */
@@ -947,7 +947,7 @@ object LambdaNs extends js.Object {
     /**
       * The name or Amazon Resource Name (ARN) of the layer.
       */
-    var LayerName: LayerName
+    var LayerName: awsDashSdkLib.clientsLambdaMod.LambdaNs.LayerName
     /**
       * A pagination token returned by a previous call.
       */
@@ -1051,7 +1051,7 @@ object LambdaNs extends js.Object {
     /**
       * The name or Amazon Resource Name (ARN) of the layer.
       */
-    var LayerName: LayerName
+    var LayerName: awsDashSdkLib.clientsLambdaMod.LambdaNs.LayerName
     /**
       * The layer's software license. It can be any of the following:   An SPDX license identifier. For example, MIT.   The URL of a license hosted on the internet. For example, https://opensource.org/licenses/MIT.   The full text of the license.  
       */
@@ -1105,7 +1105,7 @@ object LambdaNs extends js.Object {
     /**
       * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
-    var FunctionName: FunctionName
+    var FunctionName: awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionName
     /**
       * Only update the function if the revision ID matches the ID that's specified. Use this option to avoid publishing a version if the function configuration has changed since you last updated it.
       */
@@ -1116,18 +1116,18 @@ object LambdaNs extends js.Object {
     /**
       * The name of the Lambda function.  Name formats     Function name - my-function.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:my-function.    Partial ARN - 123456789012:function:my-function.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
-    var FunctionName: FunctionName
+    var FunctionName: awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionName
     /**
       * The number of simultaneous executions to reserve for the function.
       */
-    var ReservedConcurrentExecutions: ReservedConcurrentExecutions
+    var ReservedConcurrentExecutions: awsDashSdkLib.clientsLambdaMod.LambdaNs.ReservedConcurrentExecutions
   }
   
   trait RemoveLayerVersionPermissionRequest extends js.Object {
     /**
       * The name or Amazon Resource Name (ARN) of the layer.
       */
-    var LayerName: LayerName
+    var LayerName: awsDashSdkLib.clientsLambdaMod.LambdaNs.LayerName
     /**
       * Only update the policy if the revision ID matches the ID specified. Use this option to avoid modifying a policy that has changed since you last read it.
       */
@@ -1135,7 +1135,7 @@ object LambdaNs extends js.Object {
     /**
       * The identifier that was specified when the statement was added.
       */
-    var StatementId: StatementId
+    var StatementId: awsDashSdkLib.clientsLambdaMod.LambdaNs.StatementId
     /**
       * The version number.
       */
@@ -1146,7 +1146,7 @@ object LambdaNs extends js.Object {
     /**
       * The name of the Lambda function, version, or alias.  Name formats     Function name - my-function (name-only), my-function:v1 (with alias).    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:my-function.    Partial ARN - 123456789012:function:my-function.   You can append a version number or alias to any of the formats. The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
-    var FunctionName: FunctionName
+    var FunctionName: awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionName
     /**
       * Specify a version or alias to remove permissions from a published version of the function.
       */
@@ -1169,7 +1169,7 @@ object LambdaNs extends js.Object {
     /**
       * A list of tags to apply to the function.
       */
-    var Tags: Tags
+    var Tags: awsDashSdkLib.clientsLambdaMod.LambdaNs.Tags
   }
   
   trait Tags
@@ -2017,7 +2017,7 @@ object LambdaNs extends js.Object {
     /**
       * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
-    var FunctionName: FunctionName
+    var FunctionName: awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionName
     /**
       * The function version that the alias invokes.
       */
@@ -2063,7 +2063,7 @@ object LambdaNs extends js.Object {
     /**
       * The name of the Lambda function.  Name formats     Function name - my-function.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:my-function.    Partial ARN - 123456789012:function:my-function.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
-    var FunctionName: FunctionName
+    var FunctionName: awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionName
     /**
       * Set to true to publish a new version of the function after updating the code. This has the same effect as calling PublishVersion separately.
       */
@@ -2106,7 +2106,7 @@ object LambdaNs extends js.Object {
     /**
       * The name of the Lambda function.  Name formats     Function name - my-function.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:my-function.    Partial ARN - 123456789012:function:my-function.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
-    var FunctionName: FunctionName
+    var FunctionName: awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionName
     /**
       * The name of the method within your code that Lambda calls to execute your function. The format includes the file name. It can also include namespaces and other qualifiers, depending on the runtime. For more information, see Programming Model.
       */

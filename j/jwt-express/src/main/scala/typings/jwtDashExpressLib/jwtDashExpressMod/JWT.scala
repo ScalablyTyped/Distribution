@@ -82,18 +82,18 @@ object JWT {
     expired: scala.Boolean,
     options: JWTExpressOptions,
     payload: js.Any,
-    resign: js.Function0[JWT],
-    revoke: js.Function0[JWT],
+    resign: () => JWT,
+    revoke: () => JWT,
     secret: java.lang.String,
-    sign: js.Function1[js.Any, JWT],
+    sign: js.Any => JWT,
     stale: scala.Boolean,
-    store: js.Function1[expressLib.expressMod.eNs.Response, JWT],
-    toJSON: js.Function0[js.Any],
+    store: expressLib.expressMod.eNs.Response => JWT,
+    toJSON: () => js.Any,
     token: java.lang.String,
     valid: scala.Boolean,
-    verify: js.Function1[java.lang.String, JWT]
+    verify: java.lang.String => JWT
   ): JWT = {
-    val __obj = js.Dynamic.literal(expired = expired, options = options, payload = payload, resign = resign, revoke = revoke, secret = secret, sign = sign, stale = stale, store = store, toJSON = toJSON, token = token, valid = valid, verify = verify)
+    val __obj = js.Dynamic.literal(expired = expired, options = options, payload = payload, resign = js.Any.fromFunction0(resign), revoke = js.Any.fromFunction0(revoke), secret = secret, sign = js.Any.fromFunction1(sign), stale = stale, store = js.Any.fromFunction1(store), toJSON = js.Any.fromFunction0(toJSON), token = token, valid = valid, verify = js.Any.fromFunction1(verify))
   
     __obj.asInstanceOf[JWT]
   }

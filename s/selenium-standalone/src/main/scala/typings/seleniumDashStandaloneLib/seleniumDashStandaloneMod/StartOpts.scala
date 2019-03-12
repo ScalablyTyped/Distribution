@@ -9,7 +9,7 @@ trait StartOpts extends js.Object {
   var basePath: js.UndefOr[java.lang.String] = js.undefined
   var cb: js.UndefOr[
     js.Function2[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* child */ nodeLib.childUnderscoreProcessMod.ChildProcess, 
       scala.Unit
     ]
@@ -33,32 +33,25 @@ object StartOpts {
   @scala.inline
   def apply(
     basePath: java.lang.String = null,
-    cb: js.Function2[
-      /* error */ nodeLib.Error, 
-      /* child */ nodeLib.childUnderscoreProcessMod.ChildProcess, 
-      scala.Unit
-    ] = null,
+    cb: (/* error */ stdLib.Error, /* child */ nodeLib.childUnderscoreProcessMod.ChildProcess) => scala.Unit = null,
     drivers: org.scalablytyped.runtime.StringDictionary[seleniumDashStandaloneLib.Anon_Arch] = null,
     javaArgs: js.Array[java.lang.String] = null,
     javaPath: java.lang.String = null,
     requestOpts: nodeLib.httpMod.RequestOptions | java.lang.String | nodeLib.urlMod.URL = null,
     seleniumArgs: js.Array[java.lang.String] = null,
-    spawnCb: js.Function1[
-      /* selenium */ js.UndefOr[nodeLib.childUnderscoreProcessMod.ChildProcess], 
-      scala.Unit
-    ] = null,
+    spawnCb: /* selenium */ js.UndefOr[nodeLib.childUnderscoreProcessMod.ChildProcess] => scala.Unit = null,
     spawnOptions: nodeLib.childUnderscoreProcessMod.SpawnOptions = null,
     version: java.lang.String = null
   ): StartOpts = {
     val __obj = js.Dynamic.literal()
     if (basePath != null) __obj.updateDynamic("basePath")(basePath)
-    if (cb != null) __obj.updateDynamic("cb")(cb)
+    if (cb != null) __obj.updateDynamic("cb")(js.Any.fromFunction2(cb))
     if (drivers != null) __obj.updateDynamic("drivers")(drivers)
     if (javaArgs != null) __obj.updateDynamic("javaArgs")(javaArgs)
     if (javaPath != null) __obj.updateDynamic("javaPath")(javaPath)
     if (requestOpts != null) __obj.updateDynamic("requestOpts")(requestOpts.asInstanceOf[js.Any])
     if (seleniumArgs != null) __obj.updateDynamic("seleniumArgs")(seleniumArgs)
-    if (spawnCb != null) __obj.updateDynamic("spawnCb")(spawnCb)
+    if (spawnCb != null) __obj.updateDynamic("spawnCb")(js.Any.fromFunction1(spawnCb))
     if (spawnOptions != null) __obj.updateDynamic("spawnOptions")(spawnOptions)
     if (version != null) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[StartOpts]

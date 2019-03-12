@@ -22,24 +22,24 @@ object IRadio {
   def apply(
     ICheckbox: ICheckbox = null,
     focusCls: java.lang.String = null,
-    getGroupValue: js.Function0[java.lang.String] = null,
-    getModelData: js.Function0[_] = null,
-    getSubmitValue: js.Function0[_] = null,
+    getGroupValue: () => java.lang.String = null,
+    getModelData: () => _ = null,
+    getSubmitValue: () => _ = null,
     inputType: java.lang.String = null,
     isRadio: js.UndefOr[scala.Boolean] = js.undefined,
-    onRemoved: js.Function0[scala.Unit] = null,
-    setValue: js.Function1[/* value */ js.UndefOr[js.Any], IRadio] = null
+    onRemoved: () => scala.Unit = null,
+    setValue: /* value */ js.UndefOr[js.Any] => IRadio = null
   ): IRadio = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, ICheckbox)
     if (focusCls != null) __obj.updateDynamic("focusCls")(focusCls)
-    if (getGroupValue != null) __obj.updateDynamic("getGroupValue")(getGroupValue)
-    if (getModelData != null) __obj.updateDynamic("getModelData")(getModelData)
-    if (getSubmitValue != null) __obj.updateDynamic("getSubmitValue")(getSubmitValue)
+    if (getGroupValue != null) __obj.updateDynamic("getGroupValue")(js.Any.fromFunction0(getGroupValue))
+    if (getModelData != null) __obj.updateDynamic("getModelData")(js.Any.fromFunction0(getModelData))
+    if (getSubmitValue != null) __obj.updateDynamic("getSubmitValue")(js.Any.fromFunction0(getSubmitValue))
     if (inputType != null) __obj.updateDynamic("inputType")(inputType)
     if (!js.isUndefined(isRadio)) __obj.updateDynamic("isRadio")(isRadio)
-    if (onRemoved != null) __obj.updateDynamic("onRemoved")(onRemoved)
-    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
+    if (onRemoved != null) __obj.updateDynamic("onRemoved")(js.Any.fromFunction0(onRemoved))
+    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
     __obj.asInstanceOf[IRadio]
   }
 }

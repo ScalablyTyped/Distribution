@@ -15,12 +15,12 @@ trait ITextSnapshot extends js.Object {
 object ITextSnapshot {
   @scala.inline
   def apply(
-    getLineFromLineNumber: js.Function1[scala.Double, ITextSnapshotLine],
-    getLineFromPosition: js.Function1[scala.Double, ITextSnapshotLine],
-    getLineNumberFromPosition: js.Function1[scala.Double, scala.Double],
-    getText: js.Function1[typescriptDashServicesLib.TypeScriptNs.TextSpan, java.lang.String]
+    getLineFromLineNumber: scala.Double => ITextSnapshotLine,
+    getLineFromPosition: scala.Double => ITextSnapshotLine,
+    getLineNumberFromPosition: scala.Double => scala.Double,
+    getText: typescriptDashServicesLib.TypeScriptNs.TextSpan => java.lang.String
   ): ITextSnapshot = {
-    val __obj = js.Dynamic.literal(getLineFromLineNumber = getLineFromLineNumber, getLineFromPosition = getLineFromPosition, getLineNumberFromPosition = getLineNumberFromPosition, getText = getText)
+    val __obj = js.Dynamic.literal(getLineFromLineNumber = js.Any.fromFunction1(getLineFromLineNumber), getLineFromPosition = js.Any.fromFunction1(getLineFromPosition), getLineNumberFromPosition = js.Any.fromFunction1(getLineNumberFromPosition), getText = js.Any.fromFunction1(getText))
   
     __obj.asInstanceOf[ITextSnapshot]
   }

@@ -33,36 +33,15 @@ trait ImagesResource extends js.Object {
 object ImagesResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsImage, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    deprecate: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsImage, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsImageKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Image]
-    ],
-    getFromFamily: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFamily, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Image]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsForceCreate, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ImageList]
-    ],
-    setLabels: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserResource, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    delete: gapiDotClientDotComputeLib.Anon_AltFieldsImage => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    deprecate: gapiDotClientDotComputeLib.Anon_AltFieldsImage => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotComputeLib.Anon_AltFieldsImageKey => gapiDotClientLib.gapiNs.clientNs.Request[Image],
+    getFromFamily: gapiDotClientDotComputeLib.Anon_AltFamily => gapiDotClientLib.gapiNs.clientNs.Request[Image],
+    insert: gapiDotClientDotComputeLib.Anon_AltFieldsForceCreate => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ImageList],
+    setLabels: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserResource => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): ImagesResource = {
-    val __obj = js.Dynamic.literal(delete = delete, deprecate = deprecate, get = get, getFromFamily = getFromFamily, insert = insert, list = list, setLabels = setLabels)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), deprecate = js.Any.fromFunction1(deprecate), get = js.Any.fromFunction1(get), getFromFamily = js.Any.fromFunction1(getFromFamily), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), setLabels = js.Any.fromFunction1(setLabels))
   
     __obj.asInstanceOf[ImagesResource]
   }

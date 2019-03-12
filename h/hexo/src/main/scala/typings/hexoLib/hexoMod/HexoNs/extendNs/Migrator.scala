@@ -19,17 +19,13 @@ trait Migrator extends js.Object {
 object Migrator {
   @scala.inline
   def apply(
-    register: js.Function2[
-      java.lang.String, 
-      js.Function2[
-        /* args */ minimistLib.minimistMod.minimistNs.ParsedArgs, 
-        /* fn */ js.Function1[/* err */ js.Any, scala.Unit], 
-        scala.Unit
-      ], 
+    register: (java.lang.String, js.Function2[
+      /* args */ minimistLib.minimistMod.minimistNs.ParsedArgs, 
+      /* fn */ js.Function1[/* err */ js.Any, scala.Unit], 
       scala.Unit
-    ]
+    ]) => scala.Unit
   ): Migrator = {
-    val __obj = js.Dynamic.literal(register = register)
+    val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
   
     __obj.asInstanceOf[Migrator]
   }

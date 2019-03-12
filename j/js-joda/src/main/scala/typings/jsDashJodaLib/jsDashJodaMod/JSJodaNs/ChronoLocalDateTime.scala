@@ -15,15 +15,15 @@ trait ChronoLocalDateTime extends TemporalAccessor {
 object ChronoLocalDateTime {
   @scala.inline
   def apply(
-    adjustInto: js.Function1[js.Any, js.Any],
-    chronology: js.Function0[Chronology],
-    get: js.Function1[TemporalField, scala.Double],
-    query: js.Function1[TemporalQuery, js.Any],
-    range: js.Function1[TemporalField, ValueRange],
-    toEpochSecond: js.Function1[ZoneOffset, scala.Double],
-    toInstant: js.Function1[ZoneOffset, Instant]
+    adjustInto: js.Any => js.Any,
+    chronology: () => Chronology,
+    get: TemporalField => scala.Double,
+    query: TemporalQuery => js.Any,
+    range: TemporalField => ValueRange,
+    toEpochSecond: ZoneOffset => scala.Double,
+    toInstant: ZoneOffset => Instant
   ): ChronoLocalDateTime = {
-    val __obj = js.Dynamic.literal(adjustInto = adjustInto, chronology = chronology, get = get, query = query, range = range, toEpochSecond = toEpochSecond, toInstant = toInstant)
+    val __obj = js.Dynamic.literal(adjustInto = js.Any.fromFunction1(adjustInto), chronology = js.Any.fromFunction0(chronology), get = js.Any.fromFunction1(get), query = js.Any.fromFunction1(query), range = js.Any.fromFunction1(range), toEpochSecond = js.Any.fromFunction1(toEpochSecond), toInstant = js.Any.fromFunction1(toInstant))
   
     __obj.asInstanceOf[ChronoLocalDateTime]
   }

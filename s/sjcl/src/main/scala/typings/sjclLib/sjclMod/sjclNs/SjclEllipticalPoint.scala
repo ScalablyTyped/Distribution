@@ -17,14 +17,14 @@ trait SjclEllipticalPoint extends js.Object {
 object SjclEllipticalPoint {
   @scala.inline
   def apply(
-    isValid: js.Function0[scala.Boolean],
-    mult: js.Function1[BigNumber, SjclEllipticalPoint],
-    mult2: js.Function3[BigNumber, BigNumber, SjclEllipticalPoint, SjclEllipticalPoint],
-    multiples: js.Function0[js.Array[SjclEllipticalPoint]],
-    toBits: js.Function0[BitArray],
-    toJac: js.Function0[SjclPointJacobian]
+    isValid: () => scala.Boolean,
+    mult: BigNumber => SjclEllipticalPoint,
+    mult2: (BigNumber, BigNumber, SjclEllipticalPoint) => SjclEllipticalPoint,
+    multiples: () => js.Array[SjclEllipticalPoint],
+    toBits: () => BitArray,
+    toJac: () => SjclPointJacobian
   ): SjclEllipticalPoint = {
-    val __obj = js.Dynamic.literal(isValid = isValid, mult = mult, mult2 = mult2, multiples = multiples, toBits = toBits, toJac = toJac)
+    val __obj = js.Dynamic.literal(isValid = js.Any.fromFunction0(isValid), mult = js.Any.fromFunction1(mult), mult2 = js.Any.fromFunction3(mult2), multiples = js.Any.fromFunction0(multiples), toBits = js.Any.fromFunction0(toBits), toJac = js.Any.fromFunction0(toJac))
   
     __obj.asInstanceOf[SjclEllipticalPoint]
   }

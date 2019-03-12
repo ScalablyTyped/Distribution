@@ -18,9 +18,9 @@ object SharedAccessSignatureResult {
     baseUrl: java.lang.String,
     path: java.lang.String,
     queryString: azureLib.Anon_Se,
-    url: js.Function0[java.lang.String]
+    url: () => java.lang.String
   ): SharedAccessSignatureResult = {
-    val __obj = js.Dynamic.literal(baseUrl = baseUrl, path = path, queryString = queryString, url = url)
+    val __obj = js.Dynamic.literal(baseUrl = baseUrl, path = path, queryString = queryString, url = js.Any.fromFunction0(url))
   
     __obj.asInstanceOf[SharedAccessSignatureResult]
   }

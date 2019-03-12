@@ -66,14 +66,14 @@ object XAccessibleImage {
     AccessibleImageDescription: java.lang.String,
     AccessibleImageHeight: scala.Double,
     AccessibleImageWidth: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getAccessibleImageDescription: js.Function0[java.lang.String],
-    getAccessibleImageHeight: js.Function0[scala.Double],
-    getAccessibleImageWidth: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getAccessibleImageDescription: () => java.lang.String,
+    getAccessibleImageHeight: () => scala.Double,
+    getAccessibleImageWidth: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAccessibleImage = {
-    val __obj = js.Dynamic.literal(AccessibleImageDescription = AccessibleImageDescription, AccessibleImageHeight = AccessibleImageHeight, AccessibleImageWidth = AccessibleImageWidth, acquire = acquire, getAccessibleImageDescription = getAccessibleImageDescription, getAccessibleImageHeight = getAccessibleImageHeight, getAccessibleImageWidth = getAccessibleImageWidth, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(AccessibleImageDescription = AccessibleImageDescription, AccessibleImageHeight = AccessibleImageHeight, AccessibleImageWidth = AccessibleImageWidth, acquire = js.Any.fromFunction0(acquire), getAccessibleImageDescription = js.Any.fromFunction0(getAccessibleImageDescription), getAccessibleImageHeight = js.Any.fromFunction0(getAccessibleImageHeight), getAccessibleImageWidth = js.Any.fromFunction0(getAccessibleImageWidth), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAccessibleImage]
   }

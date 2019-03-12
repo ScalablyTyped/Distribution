@@ -32,12 +32,12 @@ object PointCloudUniqueValueRendererColorUniqueValueInfos {
   def apply(
     color: Color,
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     values: js.Array[java.lang.String],
     label: java.lang.String = null
   ): PointCloudUniqueValueRendererColorUniqueValueInfos = {
-    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, values = values)
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), values = values)
     if (label != null) __obj.updateDynamic("label")(label)
     __obj.asInstanceOf[PointCloudUniqueValueRendererColorUniqueValueInfos]
   }

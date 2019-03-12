@@ -124,32 +124,32 @@ trait ASPxClientTreeViewNode extends js.Object {
 object ASPxClientTreeViewNode {
   @scala.inline
   def apply(
-    GetCheckState: js.Function0[java.lang.String],
-    GetChecked: js.Function0[scala.Boolean],
-    GetEnabled: js.Function0[scala.Boolean],
-    GetExpanded: js.Function0[scala.Boolean],
-    GetHtmlElement: js.Function0[js.Object],
-    GetImageUrl: js.Function0[java.lang.String],
-    GetNavigateUrl: js.Function0[java.lang.String],
-    GetNode: js.Function1[scala.Double, ASPxClientTreeViewNode],
-    GetNodeByName: js.Function1[java.lang.String, ASPxClientTreeViewNode],
-    GetNodeByText: js.Function1[java.lang.String, ASPxClientTreeViewNode],
-    GetNodeCount: js.Function0[scala.Double],
-    GetText: js.Function0[java.lang.String],
-    GetVisible: js.Function0[scala.Boolean],
-    SetChecked: js.Function1[scala.Boolean, scala.Unit],
-    SetEnabled: js.Function1[scala.Boolean, scala.Unit],
-    SetExpanded: js.Function1[scala.Boolean, scala.Unit],
-    SetImageUrl: js.Function1[java.lang.String, scala.Unit],
-    SetNavigateUrl: js.Function1[java.lang.String, scala.Unit],
-    SetText: js.Function1[java.lang.String, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    GetCheckState: () => java.lang.String,
+    GetChecked: () => scala.Boolean,
+    GetEnabled: () => scala.Boolean,
+    GetExpanded: () => scala.Boolean,
+    GetHtmlElement: () => js.Object,
+    GetImageUrl: () => java.lang.String,
+    GetNavigateUrl: () => java.lang.String,
+    GetNode: scala.Double => ASPxClientTreeViewNode,
+    GetNodeByName: java.lang.String => ASPxClientTreeViewNode,
+    GetNodeByText: java.lang.String => ASPxClientTreeViewNode,
+    GetNodeCount: () => scala.Double,
+    GetText: () => java.lang.String,
+    GetVisible: () => scala.Boolean,
+    SetChecked: scala.Boolean => scala.Unit,
+    SetEnabled: scala.Boolean => scala.Unit,
+    SetExpanded: scala.Boolean => scala.Unit,
+    SetImageUrl: java.lang.String => scala.Unit,
+    SetNavigateUrl: java.lang.String => scala.Unit,
+    SetText: java.lang.String => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
     index: scala.Double,
     name: java.lang.String,
     parent: ASPxClientTreeViewNode,
     treeView: ASPxClientTreeView
   ): ASPxClientTreeViewNode = {
-    val __obj = js.Dynamic.literal(GetCheckState = GetCheckState, GetChecked = GetChecked, GetEnabled = GetEnabled, GetExpanded = GetExpanded, GetHtmlElement = GetHtmlElement, GetImageUrl = GetImageUrl, GetNavigateUrl = GetNavigateUrl, GetNode = GetNode, GetNodeByName = GetNodeByName, GetNodeByText = GetNodeByText, GetNodeCount = GetNodeCount, GetText = GetText, GetVisible = GetVisible, SetChecked = SetChecked, SetEnabled = SetEnabled, SetExpanded = SetExpanded, SetImageUrl = SetImageUrl, SetNavigateUrl = SetNavigateUrl, SetText = SetText, SetVisible = SetVisible, index = index, name = name, parent = parent, treeView = treeView)
+    val __obj = js.Dynamic.literal(GetCheckState = js.Any.fromFunction0(GetCheckState), GetChecked = js.Any.fromFunction0(GetChecked), GetEnabled = js.Any.fromFunction0(GetEnabled), GetExpanded = js.Any.fromFunction0(GetExpanded), GetHtmlElement = js.Any.fromFunction0(GetHtmlElement), GetImageUrl = js.Any.fromFunction0(GetImageUrl), GetNavigateUrl = js.Any.fromFunction0(GetNavigateUrl), GetNode = js.Any.fromFunction1(GetNode), GetNodeByName = js.Any.fromFunction1(GetNodeByName), GetNodeByText = js.Any.fromFunction1(GetNodeByText), GetNodeCount = js.Any.fromFunction0(GetNodeCount), GetText = js.Any.fromFunction0(GetText), GetVisible = js.Any.fromFunction0(GetVisible), SetChecked = js.Any.fromFunction1(SetChecked), SetEnabled = js.Any.fromFunction1(SetEnabled), SetExpanded = js.Any.fromFunction1(SetExpanded), SetImageUrl = js.Any.fromFunction1(SetImageUrl), SetNavigateUrl = js.Any.fromFunction1(SetNavigateUrl), SetText = js.Any.fromFunction1(SetText), SetVisible = js.Any.fromFunction1(SetVisible), index = index, name = name, parent = parent, treeView = treeView)
   
     __obj.asInstanceOf[ASPxClientTreeViewNode]
   }

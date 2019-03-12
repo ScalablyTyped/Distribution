@@ -52,16 +52,16 @@ trait ASPxClientToolTipBase extends js.Object {
 object ASPxClientToolTipBase {
   @scala.inline
   def apply(
-    CalculatePosition: js.Function1[js.Object, ASPxClientPoint],
-    CanShowToolTip: js.Function0[scala.Boolean],
-    Close: js.Function0[scala.Unit],
-    ConvertIntervalToString: js.Function1[ASPxClientTimeInterval, java.lang.String],
-    FinalizeUpdate: js.Function1[ASPxClientSchedulerToolTipData, scala.Unit],
-    ShowAppointmentMenu: js.Function1[js.Object, scala.Unit],
-    ShowViewMenu: js.Function1[js.Object, scala.Unit],
-    Update: js.Function1[ASPxClientSchedulerToolTipData, scala.Unit]
+    CalculatePosition: js.Object => ASPxClientPoint,
+    CanShowToolTip: () => scala.Boolean,
+    Close: () => scala.Unit,
+    ConvertIntervalToString: ASPxClientTimeInterval => java.lang.String,
+    FinalizeUpdate: ASPxClientSchedulerToolTipData => scala.Unit,
+    ShowAppointmentMenu: js.Object => scala.Unit,
+    ShowViewMenu: js.Object => scala.Unit,
+    Update: ASPxClientSchedulerToolTipData => scala.Unit
   ): ASPxClientToolTipBase = {
-    val __obj = js.Dynamic.literal(CalculatePosition = CalculatePosition, CanShowToolTip = CanShowToolTip, Close = Close, ConvertIntervalToString = ConvertIntervalToString, FinalizeUpdate = FinalizeUpdate, ShowAppointmentMenu = ShowAppointmentMenu, ShowViewMenu = ShowViewMenu, Update = Update)
+    val __obj = js.Dynamic.literal(CalculatePosition = js.Any.fromFunction1(CalculatePosition), CanShowToolTip = js.Any.fromFunction0(CanShowToolTip), Close = js.Any.fromFunction0(Close), ConvertIntervalToString = js.Any.fromFunction1(ConvertIntervalToString), FinalizeUpdate = js.Any.fromFunction1(FinalizeUpdate), ShowAppointmentMenu = js.Any.fromFunction1(ShowAppointmentMenu), ShowViewMenu = js.Any.fromFunction1(ShowViewMenu), Update = js.Any.fromFunction1(Update))
   
     __obj.asInstanceOf[ASPxClientToolTipBase]
   }

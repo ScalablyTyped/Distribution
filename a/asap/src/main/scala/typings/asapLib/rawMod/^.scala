@@ -12,7 +12,7 @@ object ^ extends js.Object {
     * Executes a task as soon as possible.
     * @param task Function or any object that implements `call()`.
     */
-  def apply(task: asapLib.rawMod.Task): scala.Unit = js.native
+  def apply(task: Task): scala.Unit = js.native
   /**
     * Flushes the event queue.
     */

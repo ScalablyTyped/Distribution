@@ -12,7 +12,7 @@ object googleDashP12DashPemMod extends js.Object {
   def getPem(
     filename: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* pem */ java.lang.String | scala.Null, 
       scala.Unit
     ]

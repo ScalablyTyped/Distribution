@@ -73,29 +73,21 @@ object XGalleryTheme {
     Count: scala.Double,
     ElementType: activexDashLibreofficeLib.`type`,
     Name: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getByIndex: js.Function1[scala.Double, js.Any],
-    getCount: js.Function0[scala.Double],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    getName: js.Function0[java.lang.String],
-    hasElements: js.Function0[scala.Boolean],
-    insertDrawingByIndex: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent, 
-      scala.Double, 
-      scala.Double
-    ],
-    insertGraphicByIndex: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic, 
-      scala.Double, 
-      scala.Double
-    ],
-    insertURLByIndex: js.Function2[java.lang.String, scala.Double, scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeByIndex: js.Function1[scala.Double, scala.Unit],
-    update: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getByIndex: scala.Double => js.Any,
+    getCount: () => scala.Double,
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    getName: () => java.lang.String,
+    hasElements: () => scala.Boolean,
+    insertDrawingByIndex: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent, scala.Double) => scala.Double,
+    insertGraphicByIndex: (activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic, scala.Double) => scala.Double,
+    insertURLByIndex: (java.lang.String, scala.Double) => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeByIndex: scala.Double => scala.Unit,
+    update: () => scala.Unit
   ): XGalleryTheme = {
-    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, Name = Name, acquire = acquire, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, getName = getName, hasElements = hasElements, insertDrawingByIndex = insertDrawingByIndex, insertGraphicByIndex = insertGraphicByIndex, insertURLByIndex = insertURLByIndex, queryInterface = queryInterface, release = release, removeByIndex = removeByIndex, update = update)
+    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, Name = Name, acquire = js.Any.fromFunction0(acquire), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), getName = js.Any.fromFunction0(getName), hasElements = js.Any.fromFunction0(hasElements), insertDrawingByIndex = js.Any.fromFunction2(insertDrawingByIndex), insertGraphicByIndex = js.Any.fromFunction2(insertGraphicByIndex), insertURLByIndex = js.Any.fromFunction2(insertURLByIndex), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByIndex = js.Any.fromFunction1(removeByIndex), update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[XGalleryTheme]
   }

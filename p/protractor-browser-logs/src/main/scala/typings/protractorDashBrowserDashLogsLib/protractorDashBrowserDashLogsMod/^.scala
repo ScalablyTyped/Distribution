@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def default(
     browser: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProtractorBrowser */ js.Any
-  ): protractorDashBrowserDashLogsLib.protractorDashBrowserDashLogsMod.BrowserLogs = js.native
+  ): BrowserLogs = js.native
   def default(
     browser: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProtractorBrowser */ js.Any,
-    options: protractorDashBrowserDashLogsLib.protractorDashBrowserDashLogsMod.BrowserLogOptions
-  ): protractorDashBrowserDashLogsLib.protractorDashBrowserDashLogsMod.BrowserLogs = js.native
+    options: BrowserLogOptions
+  ): BrowserLogs = js.native
 }
 

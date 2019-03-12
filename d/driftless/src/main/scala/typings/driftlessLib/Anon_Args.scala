@@ -11,9 +11,9 @@ trait Anon_Args extends js.Object {
 
 object Anon_Args {
   @scala.inline
-  def apply(customClearTimeout: js.Function1[/* repeated */ js.Any, scala.Unit] = null): Anon_Args = {
+  def apply(customClearTimeout: /* repeated */ js.Any => scala.Unit = null): Anon_Args = {
     val __obj = js.Dynamic.literal()
-    if (customClearTimeout != null) __obj.updateDynamic("customClearTimeout")(customClearTimeout)
+    if (customClearTimeout != null) __obj.updateDynamic("customClearTimeout")(js.Any.fromFunction1(customClearTimeout))
     __obj.asInstanceOf[Anon_Args]
   }
 }

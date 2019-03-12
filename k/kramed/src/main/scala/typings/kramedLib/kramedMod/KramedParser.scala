@@ -11,8 +11,8 @@ trait KramedParser extends js.Object {
 
 object KramedParser {
   @scala.inline
-  def apply(parse: js.Function1[js.Array[_], java.lang.String]): KramedParser = {
-    val __obj = js.Dynamic.literal(parse = parse)
+  def apply(parse: js.Array[_] => java.lang.String): KramedParser = {
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse))
   
     __obj.asInstanceOf[KramedParser]
   }

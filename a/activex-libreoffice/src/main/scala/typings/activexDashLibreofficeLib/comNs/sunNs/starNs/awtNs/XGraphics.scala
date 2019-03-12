@@ -159,118 +159,40 @@ object XGraphics {
   def apply(
     Device: XDevice,
     FontMetric: SimpleFontMetric,
-    acquire: js.Function0[scala.Unit],
-    copy: js.Function9[
-      XDevice, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ],
-    draw: js.Function9[
-      XDisplayBitmap, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ],
-    drawArc: js.Function8[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ],
-    drawChord: js.Function8[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ],
-    drawEllipse: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
-    drawGradient: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, Gradient, scala.Unit],
-    drawLine: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
-    drawPie: js.Function8[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ],
-    drawPixel: js.Function2[scala.Double, scala.Double, scala.Unit],
-    drawPolyLine: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      scala.Unit
-    ],
-    drawPolyPolygon: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      scala.Unit
-    ],
-    drawPolygon: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      scala.Unit
-    ],
-    drawRect: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
-    drawRoundedRect: js.Function6[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Unit
-    ],
-    drawText: js.Function3[scala.Double, scala.Double, java.lang.String, scala.Unit],
-    drawTextArray: js.Function4[
-      scala.Double, 
-      scala.Double, 
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      scala.Unit
-    ],
-    getDevice: js.Function0[XDevice],
-    getFontMetric: js.Function0[SimpleFontMetric],
-    intersectClipRegion: js.Function1[XRegion, scala.Unit],
-    pop: js.Function0[scala.Unit],
-    push: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    selectFont: js.Function1[FontDescriptor, scala.Unit],
-    setClipRegion: js.Function1[XRegion, scala.Unit],
-    setFillColor: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color, scala.Unit],
-    setFont: js.Function1[XFont, scala.Unit],
-    setLineColor: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color, scala.Unit],
-    setRasterOp: js.Function1[RasterOperation, scala.Unit],
-    setTextColor: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color, scala.Unit],
-    setTextFillColor: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color, scala.Unit]
+    acquire: () => scala.Unit,
+    copy: (XDevice, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    draw: (XDisplayBitmap, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    drawArc: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    drawChord: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    drawEllipse: (scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    drawGradient: (scala.Double, scala.Double, scala.Double, scala.Double, Gradient) => scala.Unit,
+    drawLine: (scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    drawPie: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    drawPixel: (scala.Double, scala.Double) => scala.Unit,
+    drawPolyLine: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]) => scala.Unit,
+    drawPolyPolygon: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]]) => scala.Unit,
+    drawPolygon: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]) => scala.Unit,
+    drawRect: (scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    drawRoundedRect: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    drawText: (scala.Double, scala.Double, java.lang.String) => scala.Unit,
+    drawTextArray: (scala.Double, scala.Double, java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]) => scala.Unit,
+    getDevice: () => XDevice,
+    getFontMetric: () => SimpleFontMetric,
+    intersectClipRegion: XRegion => scala.Unit,
+    pop: () => scala.Unit,
+    push: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    selectFont: FontDescriptor => scala.Unit,
+    setClipRegion: XRegion => scala.Unit,
+    setFillColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color => scala.Unit,
+    setFont: XFont => scala.Unit,
+    setLineColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color => scala.Unit,
+    setRasterOp: RasterOperation => scala.Unit,
+    setTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color => scala.Unit,
+    setTextFillColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color => scala.Unit
   ): XGraphics = {
-    val __obj = js.Dynamic.literal(Device = Device, FontMetric = FontMetric, acquire = acquire, copy = copy, draw = draw, drawArc = drawArc, drawChord = drawChord, drawEllipse = drawEllipse, drawGradient = drawGradient, drawLine = drawLine, drawPie = drawPie, drawPixel = drawPixel, drawPolyLine = drawPolyLine, drawPolyPolygon = drawPolyPolygon, drawPolygon = drawPolygon, drawRect = drawRect, drawRoundedRect = drawRoundedRect, drawText = drawText, drawTextArray = drawTextArray, getDevice = getDevice, getFontMetric = getFontMetric, intersectClipRegion = intersectClipRegion, pop = pop, push = push, queryInterface = queryInterface, release = release, selectFont = selectFont, setClipRegion = setClipRegion, setFillColor = setFillColor, setFont = setFont, setLineColor = setLineColor, setRasterOp = setRasterOp, setTextColor = setTextColor, setTextFillColor = setTextFillColor)
+    val __obj = js.Dynamic.literal(Device = Device, FontMetric = FontMetric, acquire = js.Any.fromFunction0(acquire), copy = js.Any.fromFunction9(copy), draw = js.Any.fromFunction9(draw), drawArc = js.Any.fromFunction8(drawArc), drawChord = js.Any.fromFunction8(drawChord), drawEllipse = js.Any.fromFunction4(drawEllipse), drawGradient = js.Any.fromFunction5(drawGradient), drawLine = js.Any.fromFunction4(drawLine), drawPie = js.Any.fromFunction8(drawPie), drawPixel = js.Any.fromFunction2(drawPixel), drawPolyLine = js.Any.fromFunction2(drawPolyLine), drawPolyPolygon = js.Any.fromFunction2(drawPolyPolygon), drawPolygon = js.Any.fromFunction2(drawPolygon), drawRect = js.Any.fromFunction4(drawRect), drawRoundedRect = js.Any.fromFunction6(drawRoundedRect), drawText = js.Any.fromFunction3(drawText), drawTextArray = js.Any.fromFunction4(drawTextArray), getDevice = js.Any.fromFunction0(getDevice), getFontMetric = js.Any.fromFunction0(getFontMetric), intersectClipRegion = js.Any.fromFunction1(intersectClipRegion), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction0(push), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), selectFont = js.Any.fromFunction1(selectFont), setClipRegion = js.Any.fromFunction1(setClipRegion), setFillColor = js.Any.fromFunction1(setFillColor), setFont = js.Any.fromFunction1(setFont), setLineColor = js.Any.fromFunction1(setLineColor), setRasterOp = js.Any.fromFunction1(setRasterOp), setTextColor = js.Any.fromFunction1(setTextColor), setTextFillColor = js.Any.fromFunction1(setTextFillColor))
   
     __obj.asInstanceOf[XGraphics]
   }

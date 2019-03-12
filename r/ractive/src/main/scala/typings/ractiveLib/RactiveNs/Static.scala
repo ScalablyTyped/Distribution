@@ -11,7 +11,7 @@ trait Static
   // Since 0.7.1
   var DEBUG: scala.Boolean = js.native
   // Undocumented method
-  var Promise: Promise = js.native
+  var Promise: ractiveLib.RactiveNs.Promise = js.native
   // TODO: undocumented
   var adaptors: AdaptorPlugins = js.native
   // TODO: undocumented

@@ -59,8 +59,8 @@ object decoratorsPropertyPropertyMetadata {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     aliasOf: java.lang.String = null,
     cast: js.Function = null,
     constructOnly: js.UndefOr[scala.Boolean] = js.undefined,
@@ -69,7 +69,7 @@ object decoratorsPropertyPropertyMetadata {
     `type`: js.Function = null,
     value: js.Any = null
   ): decoratorsPropertyPropertyMetadata = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (aliasOf != null) __obj.updateDynamic("aliasOf")(aliasOf)
     if (cast != null) __obj.updateDynamic("cast")(cast)
     if (!js.isUndefined(constructOnly)) __obj.updateDynamic("constructOnly")(constructOnly)

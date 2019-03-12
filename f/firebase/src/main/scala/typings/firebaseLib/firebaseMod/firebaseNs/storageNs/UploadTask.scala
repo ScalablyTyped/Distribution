@@ -23,7 +23,7 @@ trait UploadTask extends js.Object {
   /**
     * Equivalent to calling `then(null, onRejected)`.
     */
-  def `catch`(onRejected: js.Function1[/* a */ nodeLib.Error, _]): js.Promise[_] = js.native
+  def `catch`(onRejected: js.Function1[/* a */ stdLib.Error, _]): js.Promise[_] = js.native
   /**
     * Listens for events on this task.
     *
@@ -137,56 +137,56 @@ trait UploadTask extends js.Object {
     *     argument is passed, returns a function you can call to unregister the
     *     callbacks.
     */
-  def on(event: TaskEvent): coreDashJsLib.Function = js.native
-  def on(event: TaskEvent, nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error]): coreDashJsLib.Function = js.native
+  def on(event: TaskEvent): js.Function = js.native
+  def on(event: TaskEvent, nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error]): js.Function = js.native
   def on(
     event: TaskEvent,
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error],
-    error: js.Function1[/* a */ nodeLib.Error, _]
-  ): coreDashJsLib.Function = js.native
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error],
+    error: js.Function1[/* a */ stdLib.Error, _]
+  ): js.Function = js.native
   def on(
     event: TaskEvent,
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error],
-    error: js.Function1[/* a */ nodeLib.Error, _],
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error],
+    error: js.Function1[/* a */ stdLib.Error, _],
     complete: firebaseLib.firebaseMod.firebaseNs.Unsubscribe
-  ): coreDashJsLib.Function = js.native
+  ): js.Function = js.native
   def on(
     event: TaskEvent,
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error],
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error],
     error: scala.Null,
     complete: firebaseLib.firebaseMod.firebaseNs.Unsubscribe
-  ): coreDashJsLib.Function = js.native
-  def on(event: TaskEvent, nextOrObserver: js.Function1[/* a */ coreDashJsLib.Object, _]): coreDashJsLib.Function = js.native
+  ): js.Function = js.native
+  def on(event: TaskEvent, nextOrObserver: js.Function1[/* a */ js.Object, _]): js.Function = js.native
   def on(
     event: TaskEvent,
-    nextOrObserver: js.Function1[/* a */ coreDashJsLib.Object, _],
-    error: js.Function1[/* a */ nodeLib.Error, _]
-  ): coreDashJsLib.Function = js.native
+    nextOrObserver: js.Function1[/* a */ js.Object, _],
+    error: js.Function1[/* a */ stdLib.Error, _]
+  ): js.Function = js.native
   def on(
     event: TaskEvent,
-    nextOrObserver: js.Function1[/* a */ coreDashJsLib.Object, _],
-    error: js.Function1[/* a */ nodeLib.Error, _],
+    nextOrObserver: js.Function1[/* a */ js.Object, _],
+    error: js.Function1[/* a */ stdLib.Error, _],
     complete: firebaseLib.firebaseMod.firebaseNs.Unsubscribe
-  ): coreDashJsLib.Function = js.native
+  ): js.Function = js.native
   def on(
     event: TaskEvent,
-    nextOrObserver: js.Function1[/* a */ coreDashJsLib.Object, _],
+    nextOrObserver: js.Function1[/* a */ js.Object, _],
     error: scala.Null,
     complete: firebaseLib.firebaseMod.firebaseNs.Unsubscribe
-  ): coreDashJsLib.Function = js.native
-  def on(event: TaskEvent, nextOrObserver: scala.Null, error: js.Function1[/* a */ nodeLib.Error, _]): coreDashJsLib.Function = js.native
+  ): js.Function = js.native
+  def on(event: TaskEvent, nextOrObserver: scala.Null, error: js.Function1[/* a */ stdLib.Error, _]): js.Function = js.native
   def on(
     event: TaskEvent,
     nextOrObserver: scala.Null,
-    error: js.Function1[/* a */ nodeLib.Error, _],
+    error: js.Function1[/* a */ stdLib.Error, _],
     complete: firebaseLib.firebaseMod.firebaseNs.Unsubscribe
-  ): coreDashJsLib.Function = js.native
+  ): js.Function = js.native
   def on(
     event: TaskEvent,
     nextOrObserver: scala.Null,
     error: scala.Null,
     complete: firebaseLib.firebaseMod.firebaseNs.Unsubscribe
-  ): coreDashJsLib.Function = js.native
+  ): js.Function = js.native
   /**
     * Pauses a running task. Has no effect on a paused or failed task.
     * @return {boolean} True if the pause had an effect.
@@ -208,8 +208,8 @@ trait UploadTask extends js.Object {
   def `then`(onFulfilled: js.Function1[/* a */ UploadTaskSnapshot, _]): js.Promise[_] = js.native
   def `then`(
     onFulfilled: js.Function1[/* a */ UploadTaskSnapshot, _],
-    onRejected: js.Function1[/* a */ nodeLib.Error, _]
+    onRejected: js.Function1[/* a */ stdLib.Error, _]
   ): js.Promise[_] = js.native
-  def `then`(onFulfilled: scala.Null, onRejected: js.Function1[/* a */ nodeLib.Error, _]): js.Promise[_] = js.native
+  def `then`(onFulfilled: scala.Null, onRejected: js.Function1[/* a */ stdLib.Error, _]): js.Promise[_] = js.native
 }
 

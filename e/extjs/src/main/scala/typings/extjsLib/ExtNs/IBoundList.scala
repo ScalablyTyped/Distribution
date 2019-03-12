@@ -61,21 +61,21 @@ object IBoundList {
     IQueryable: IQueryable = null,
     IView: extjsLib.ExtNs.viewNs.IView = null,
     baseCls: java.lang.String = null,
-    bindStore: js.Function2[/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any], scala.Unit] = null,
-    child: js.Function1[/* selector */ js.UndefOr[js.Any], _] = null,
+    bindStore: (/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any]) => scala.Unit = null,
+    child: /* selector */ js.UndefOr[js.Any] => _ = null,
     componentLayout: js.Any = null,
     deferInitialRefresh: js.UndefOr[scala.Boolean] = js.undefined,
     displayField: java.lang.String = null,
-    down: js.Function1[/* selector */ js.UndefOr[js.Any], _] = null,
-    getInnerTpl: js.Function1[/* displayField */ js.UndefOr[java.lang.String], java.lang.String] = null,
+    down: /* selector */ js.UndefOr[js.Any] => _ = null,
+    getInnerTpl: /* displayField */ js.UndefOr[java.lang.String] => java.lang.String = null,
     itemCls: java.lang.String = null,
-    onDestroy: js.Function0[scala.Unit] = null,
+    onDestroy: () => scala.Unit = null,
     pageSize: scala.Int | scala.Double = null,
     pagingToolbar: extjsLib.ExtNs.toolbarNs.IPaging = null,
-    query: js.Function1[/* selector */ js.UndefOr[java.lang.String], Array] = null,
-    queryBy: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Array] = null,
-    queryById: js.Function1[/* id */ js.UndefOr[java.lang.String], IComponent] = null,
-    refresh: js.Function0[scala.Unit] = null,
+    query: /* selector */ js.UndefOr[java.lang.String] => Array = null,
+    queryBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Array = null,
+    queryById: /* id */ js.UndefOr[java.lang.String] => IComponent = null,
+    refresh: () => scala.Unit = null,
     renderTpl: js.Any = null,
     shadow: js.Any = null,
     tpl: js.Any = null,
@@ -85,21 +85,21 @@ object IBoundList {
     js.Dynamic.global.Object.assign(__obj, IQueryable)
     js.Dynamic.global.Object.assign(__obj, IView)
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (bindStore != null) __obj.updateDynamic("bindStore")(bindStore)
-    if (child != null) __obj.updateDynamic("child")(child)
+    if (bindStore != null) __obj.updateDynamic("bindStore")(js.Any.fromFunction2(bindStore))
+    if (child != null) __obj.updateDynamic("child")(js.Any.fromFunction1(child))
     if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
     if (!js.isUndefined(deferInitialRefresh)) __obj.updateDynamic("deferInitialRefresh")(deferInitialRefresh)
     if (displayField != null) __obj.updateDynamic("displayField")(displayField)
-    if (down != null) __obj.updateDynamic("down")(down)
-    if (getInnerTpl != null) __obj.updateDynamic("getInnerTpl")(getInnerTpl)
+    if (down != null) __obj.updateDynamic("down")(js.Any.fromFunction1(down))
+    if (getInnerTpl != null) __obj.updateDynamic("getInnerTpl")(js.Any.fromFunction1(getInnerTpl))
     if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls)
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(onDestroy)
+    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     if (pagingToolbar != null) __obj.updateDynamic("pagingToolbar")(pagingToolbar)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (queryBy != null) __obj.updateDynamic("queryBy")(queryBy)
-    if (queryById != null) __obj.updateDynamic("queryById")(queryById)
-    if (refresh != null) __obj.updateDynamic("refresh")(refresh)
+    if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction1(query))
+    if (queryBy != null) __obj.updateDynamic("queryBy")(js.Any.fromFunction2(queryBy))
+    if (queryById != null) __obj.updateDynamic("queryById")(js.Any.fromFunction1(queryById))
+    if (refresh != null) __obj.updateDynamic("refresh")(js.Any.fromFunction0(refresh))
     if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
     if (shadow != null) __obj.updateDynamic("shadow")(shadow)
     if (tpl != null) __obj.updateDynamic("tpl")(tpl)

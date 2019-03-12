@@ -18,7 +18,7 @@ trait XRegistryKey
     * @throws InvalidRegistryException if the registry is not open.
     * @throws InvalidValueException if the actual value is not of type ascii list.
     */
-  var AsciiListValue: activexDashInteropLib.SafeArray[java.lang.String]
+  var AsciiListValue: stdLib.SafeArray[java.lang.String]
   /**
     * @returns an ascii string value if the key contains one.
     * @throws InvalidRegistryException if the registry is not open.
@@ -30,7 +30,7 @@ trait XRegistryKey
     * @throws InvalidRegistryException if the registry is not open.
     * @throws InvalidValueException if the actual value is not of type binary.
     */
-  var BinaryValue: activexDashInteropLib.SafeArray[scala.Double]
+  var BinaryValue: stdLib.SafeArray[scala.Double]
   /**
     * This is the key of the entry relative to its parent.
     *
@@ -42,13 +42,13 @@ trait XRegistryKey
     * @returns a sequence with the names of all subkeys of the key. If the key has no subkeys, the function returns an empty sequence. If a subkey is a link, th
     * @throws InvalidRegistryException if the registry is not open.
     */
-  val KeyNames: activexDashInteropLib.SafeArray[java.lang.String]
+  val KeyNames: stdLib.SafeArray[java.lang.String]
   /**
     * @returns a sequence of longs if the key contains a long list value.
     * @throws InvalidRegistryException if the registry is not open.
     * @throws InvalidValueException if the actual value is not of type long list.
     */
-  var LongListValue: activexDashInteropLib.SafeArray[scala.Double]
+  var LongListValue: stdLib.SafeArray[scala.Double]
   /**
     * @returns a long value if the key contains one.
     * @throws InvalidRegistryException if the registry is not open.
@@ -60,7 +60,7 @@ trait XRegistryKey
     * @throws InvalidRegistryException if the registry is not open.
     * @throws InvalidValueException if the actual value is not of type string list.
     */
-  var StringListValue: activexDashInteropLib.SafeArray[java.lang.String]
+  var StringListValue: stdLib.SafeArray[java.lang.String]
   /**
     * @returns a unicode string value if the key contains one.
     * @throws InvalidRegistryException if the registry is not open.
@@ -111,7 +111,7 @@ trait XRegistryKey
     * @throws InvalidRegistryException if the registry is not open.
     * @throws InvalidValueException if the actual value is not of type ascii list.
     */
-  def getAsciiListValue(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getAsciiListValue(): stdLib.SafeArray[java.lang.String]
   /**
     * @returns an ascii string value if the key contains one.
     * @throws InvalidRegistryException if the registry is not open.
@@ -123,12 +123,12 @@ trait XRegistryKey
     * @throws InvalidRegistryException if the registry is not open.
     * @throws InvalidValueException if the actual value is not of type binary.
     */
-  def getBinaryValue(): activexDashInteropLib.SafeArray[scala.Double]
+  def getBinaryValue(): stdLib.SafeArray[scala.Double]
   /**
     * @returns a sequence with the names of all subkeys of the key. If the key has no subkeys, the function returns an empty sequence. If a subkey is a link, th
     * @throws InvalidRegistryException if the registry is not open.
     */
-  def getKeyNames(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getKeyNames(): stdLib.SafeArray[java.lang.String]
   /**
     * @param rKeyName specifies the relative path from the current key to the key of the type which will be returned.
     * @returns the type of the specified key.
@@ -146,7 +146,7 @@ trait XRegistryKey
     * @throws InvalidRegistryException if the registry is not open.
     * @throws InvalidValueException if the actual value is not of type long list.
     */
-  def getLongListValue(): activexDashInteropLib.SafeArray[scala.Double]
+  def getLongListValue(): stdLib.SafeArray[scala.Double]
   /**
     * @returns a long value if the key contains one.
     * @throws InvalidRegistryException if the registry is not open.
@@ -164,7 +164,7 @@ trait XRegistryKey
     * @throws InvalidRegistryException if the registry is not open.
     * @throws InvalidValueException if the actual value is not of type string list.
     */
-  def getStringListValue(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getStringListValue(): stdLib.SafeArray[java.lang.String]
   /**
     * @returns a unicode string value if the key contains one.
     * @throws InvalidRegistryException if the registry is not open.
@@ -197,7 +197,7 @@ trait XRegistryKey
     * @returns an empty sequence if the key has no subkeys.
     * @throws InvalidRegistryException if the registry is not open.
     */
-  def openKeys(): activexDashInteropLib.SafeArray[XRegistryKey]
+  def openKeys(): stdLib.SafeArray[XRegistryKey]
   /**
     * sets an ASCII string list value to the key.
     *
@@ -254,49 +254,49 @@ trait XRegistryKey
 object XRegistryKey {
   @scala.inline
   def apply(
-    AsciiListValue: activexDashInteropLib.SafeArray[java.lang.String],
+    AsciiListValue: stdLib.SafeArray[java.lang.String],
     AsciiValue: java.lang.String,
-    BinaryValue: activexDashInteropLib.SafeArray[scala.Double],
+    BinaryValue: stdLib.SafeArray[scala.Double],
     KeyName: java.lang.String,
-    KeyNames: activexDashInteropLib.SafeArray[java.lang.String],
-    LongListValue: activexDashInteropLib.SafeArray[scala.Double],
+    KeyNames: stdLib.SafeArray[java.lang.String],
+    LongListValue: stdLib.SafeArray[scala.Double],
     LongValue: scala.Double,
-    StringListValue: activexDashInteropLib.SafeArray[java.lang.String],
+    StringListValue: stdLib.SafeArray[java.lang.String],
     StringValue: java.lang.String,
     ValueType: RegistryValueType,
-    acquire: js.Function0[scala.Unit],
-    closeKey: js.Function0[scala.Unit],
-    createKey: js.Function1[java.lang.String, XRegistryKey],
-    createLink: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    deleteKey: js.Function1[java.lang.String, scala.Unit],
-    deleteLink: js.Function1[java.lang.String, scala.Unit],
-    getAsciiListValue: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getAsciiValue: js.Function0[java.lang.String],
-    getBinaryValue: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    getKeyNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getKeyType: js.Function1[java.lang.String, RegistryKeyType],
-    getLinkTarget: js.Function1[java.lang.String, java.lang.String],
-    getLongListValue: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    getLongValue: js.Function0[scala.Double],
-    getResolvedName: js.Function1[java.lang.String, java.lang.String],
-    getStringListValue: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getStringValue: js.Function0[java.lang.String],
-    getValueType: js.Function0[RegistryValueType],
-    isReadOnly: js.Function0[scala.Boolean],
-    isValid: js.Function0[scala.Boolean],
-    openKey: js.Function1[java.lang.String, XRegistryKey],
-    openKeys: js.Function0[activexDashInteropLib.SafeArray[XRegistryKey]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setAsciiListValue: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
-    setAsciiValue: js.Function1[java.lang.String, scala.Unit],
-    setBinaryValue: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
-    setLongListValue: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
-    setLongValue: js.Function1[scala.Double, scala.Unit],
-    setStringListValue: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
-    setStringValue: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    closeKey: () => scala.Unit,
+    createKey: java.lang.String => XRegistryKey,
+    createLink: (java.lang.String, java.lang.String) => scala.Boolean,
+    deleteKey: java.lang.String => scala.Unit,
+    deleteLink: java.lang.String => scala.Unit,
+    getAsciiListValue: () => stdLib.SafeArray[java.lang.String],
+    getAsciiValue: () => java.lang.String,
+    getBinaryValue: () => stdLib.SafeArray[scala.Double],
+    getKeyNames: () => stdLib.SafeArray[java.lang.String],
+    getKeyType: java.lang.String => RegistryKeyType,
+    getLinkTarget: java.lang.String => java.lang.String,
+    getLongListValue: () => stdLib.SafeArray[scala.Double],
+    getLongValue: () => scala.Double,
+    getResolvedName: java.lang.String => java.lang.String,
+    getStringListValue: () => stdLib.SafeArray[java.lang.String],
+    getStringValue: () => java.lang.String,
+    getValueType: () => RegistryValueType,
+    isReadOnly: () => scala.Boolean,
+    isValid: () => scala.Boolean,
+    openKey: java.lang.String => XRegistryKey,
+    openKeys: () => stdLib.SafeArray[XRegistryKey],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setAsciiListValue: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => scala.Unit,
+    setAsciiValue: java.lang.String => scala.Unit,
+    setBinaryValue: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => scala.Unit,
+    setLongListValue: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => scala.Unit,
+    setLongValue: scala.Double => scala.Unit,
+    setStringListValue: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => scala.Unit,
+    setStringValue: java.lang.String => scala.Unit
   ): XRegistryKey = {
-    val __obj = js.Dynamic.literal(AsciiListValue = AsciiListValue, AsciiValue = AsciiValue, BinaryValue = BinaryValue, KeyName = KeyName, KeyNames = KeyNames, LongListValue = LongListValue, LongValue = LongValue, StringListValue = StringListValue, StringValue = StringValue, ValueType = ValueType, acquire = acquire, closeKey = closeKey, createKey = createKey, createLink = createLink, deleteKey = deleteKey, deleteLink = deleteLink, getAsciiListValue = getAsciiListValue, getAsciiValue = getAsciiValue, getBinaryValue = getBinaryValue, getKeyNames = getKeyNames, getKeyType = getKeyType, getLinkTarget = getLinkTarget, getLongListValue = getLongListValue, getLongValue = getLongValue, getResolvedName = getResolvedName, getStringListValue = getStringListValue, getStringValue = getStringValue, getValueType = getValueType, isReadOnly = isReadOnly, isValid = isValid, openKey = openKey, openKeys = openKeys, queryInterface = queryInterface, release = release, setAsciiListValue = setAsciiListValue, setAsciiValue = setAsciiValue, setBinaryValue = setBinaryValue, setLongListValue = setLongListValue, setLongValue = setLongValue, setStringListValue = setStringListValue, setStringValue = setStringValue)
+    val __obj = js.Dynamic.literal(AsciiListValue = AsciiListValue, AsciiValue = AsciiValue, BinaryValue = BinaryValue, KeyName = KeyName, KeyNames = KeyNames, LongListValue = LongListValue, LongValue = LongValue, StringListValue = StringListValue, StringValue = StringValue, ValueType = ValueType, acquire = js.Any.fromFunction0(acquire), closeKey = js.Any.fromFunction0(closeKey), createKey = js.Any.fromFunction1(createKey), createLink = js.Any.fromFunction2(createLink), deleteKey = js.Any.fromFunction1(deleteKey), deleteLink = js.Any.fromFunction1(deleteLink), getAsciiListValue = js.Any.fromFunction0(getAsciiListValue), getAsciiValue = js.Any.fromFunction0(getAsciiValue), getBinaryValue = js.Any.fromFunction0(getBinaryValue), getKeyNames = js.Any.fromFunction0(getKeyNames), getKeyType = js.Any.fromFunction1(getKeyType), getLinkTarget = js.Any.fromFunction1(getLinkTarget), getLongListValue = js.Any.fromFunction0(getLongListValue), getLongValue = js.Any.fromFunction0(getLongValue), getResolvedName = js.Any.fromFunction1(getResolvedName), getStringListValue = js.Any.fromFunction0(getStringListValue), getStringValue = js.Any.fromFunction0(getStringValue), getValueType = js.Any.fromFunction0(getValueType), isReadOnly = js.Any.fromFunction0(isReadOnly), isValid = js.Any.fromFunction0(isValid), openKey = js.Any.fromFunction1(openKey), openKeys = js.Any.fromFunction0(openKeys), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setAsciiListValue = js.Any.fromFunction1(setAsciiListValue), setAsciiValue = js.Any.fromFunction1(setAsciiValue), setBinaryValue = js.Any.fromFunction1(setBinaryValue), setLongListValue = js.Any.fromFunction1(setLongListValue), setLongValue = js.Any.fromFunction1(setLongValue), setStringListValue = js.Any.fromFunction1(setStringListValue), setStringValue = js.Any.fromFunction1(setStringValue))
   
     __obj.asInstanceOf[XRegistryKey]
   }

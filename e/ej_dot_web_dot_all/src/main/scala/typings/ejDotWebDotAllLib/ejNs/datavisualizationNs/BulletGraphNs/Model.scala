@@ -123,68 +123,68 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    Click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
+    Click: /* e */ ClickEventArgs => scala.Unit = null,
     applyRangeStrokeToLabels: js.UndefOr[scala.Boolean] = js.undefined,
     applyRangeStrokeToTicks: js.UndefOr[scala.Boolean] = js.undefined,
     captionSettings: CaptionSettings = null,
     comparativeMeasureValue: scala.Int | scala.Double = null,
-    doubleClick: js.Function1[/* e */ DoubleClickEventArgs, scala.Unit] = null,
-    drawCaption: js.Function1[/* e */ DrawCaptionEventArgs, scala.Unit] = null,
-    drawCategory: js.Function1[/* e */ DrawCategoryEventArgs, scala.Unit] = null,
-    drawComparativeMeasureSymbol: js.Function1[/* e */ DrawComparativeMeasureSymbolEventArgs, scala.Unit] = null,
-    drawFeatureMeasureBar: js.Function1[/* e */ DrawFeatureMeasureBarEventArgs, scala.Unit] = null,
-    drawIndicator: js.Function1[/* e */ DrawIndicatorEventArgs, scala.Unit] = null,
-    drawLabels: js.Function1[/* e */ DrawLabelsEventArgs, scala.Unit] = null,
-    drawQualitativeRanges: js.Function1[/* e */ DrawQualitativeRangesEventArgs, scala.Unit] = null,
-    drawTicks: js.Function1[/* e */ DrawTicksEventArgs, scala.Unit] = null,
+    doubleClick: /* e */ DoubleClickEventArgs => scala.Unit = null,
+    drawCaption: /* e */ DrawCaptionEventArgs => scala.Unit = null,
+    drawCategory: /* e */ DrawCategoryEventArgs => scala.Unit = null,
+    drawComparativeMeasureSymbol: /* e */ DrawComparativeMeasureSymbolEventArgs => scala.Unit = null,
+    drawFeatureMeasureBar: /* e */ DrawFeatureMeasureBarEventArgs => scala.Unit = null,
+    drawIndicator: /* e */ DrawIndicatorEventArgs => scala.Unit = null,
+    drawLabels: /* e */ DrawLabelsEventArgs => scala.Unit = null,
+    drawQualitativeRanges: /* e */ DrawQualitativeRangesEventArgs => scala.Unit = null,
+    drawTicks: /* e */ DrawTicksEventArgs => scala.Unit = null,
     enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
     enableGroupSeparator: js.UndefOr[scala.Boolean] = js.undefined,
     enableResizing: js.UndefOr[scala.Boolean] = js.undefined,
     flowDirection: FlowDirection | java.lang.String = null,
     height: scala.Int | scala.Double = null,
     isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
-    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    load: /* e */ LoadEventArgs => scala.Unit = null,
     locale: java.lang.String = null,
     orientation: Orientation | java.lang.String = null,
     qualitativeRangeSize: scala.Int | scala.Double = null,
     qualitativeRanges: js.Array[QualitativeRange] = null,
     quantitativeScaleLength: scala.Int | scala.Double = null,
     quantitativeScaleSettings: QuantitativeScaleSettings = null,
-    rightClick: js.Function1[/* e */ RightClickEventArgs, scala.Unit] = null,
+    rightClick: /* e */ RightClickEventArgs => scala.Unit = null,
     theme: java.lang.String = null,
     tooltipSettings: TooltipSettings = null,
     value: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (Click != null) __obj.updateDynamic("Click")(Click)
+    if (Click != null) __obj.updateDynamic("Click")(js.Any.fromFunction1(Click))
     if (!js.isUndefined(applyRangeStrokeToLabels)) __obj.updateDynamic("applyRangeStrokeToLabels")(applyRangeStrokeToLabels)
     if (!js.isUndefined(applyRangeStrokeToTicks)) __obj.updateDynamic("applyRangeStrokeToTicks")(applyRangeStrokeToTicks)
     if (captionSettings != null) __obj.updateDynamic("captionSettings")(captionSettings)
     if (comparativeMeasureValue != null) __obj.updateDynamic("comparativeMeasureValue")(comparativeMeasureValue.asInstanceOf[js.Any])
-    if (doubleClick != null) __obj.updateDynamic("doubleClick")(doubleClick)
-    if (drawCaption != null) __obj.updateDynamic("drawCaption")(drawCaption)
-    if (drawCategory != null) __obj.updateDynamic("drawCategory")(drawCategory)
-    if (drawComparativeMeasureSymbol != null) __obj.updateDynamic("drawComparativeMeasureSymbol")(drawComparativeMeasureSymbol)
-    if (drawFeatureMeasureBar != null) __obj.updateDynamic("drawFeatureMeasureBar")(drawFeatureMeasureBar)
-    if (drawIndicator != null) __obj.updateDynamic("drawIndicator")(drawIndicator)
-    if (drawLabels != null) __obj.updateDynamic("drawLabels")(drawLabels)
-    if (drawQualitativeRanges != null) __obj.updateDynamic("drawQualitativeRanges")(drawQualitativeRanges)
-    if (drawTicks != null) __obj.updateDynamic("drawTicks")(drawTicks)
+    if (doubleClick != null) __obj.updateDynamic("doubleClick")(js.Any.fromFunction1(doubleClick))
+    if (drawCaption != null) __obj.updateDynamic("drawCaption")(js.Any.fromFunction1(drawCaption))
+    if (drawCategory != null) __obj.updateDynamic("drawCategory")(js.Any.fromFunction1(drawCategory))
+    if (drawComparativeMeasureSymbol != null) __obj.updateDynamic("drawComparativeMeasureSymbol")(js.Any.fromFunction1(drawComparativeMeasureSymbol))
+    if (drawFeatureMeasureBar != null) __obj.updateDynamic("drawFeatureMeasureBar")(js.Any.fromFunction1(drawFeatureMeasureBar))
+    if (drawIndicator != null) __obj.updateDynamic("drawIndicator")(js.Any.fromFunction1(drawIndicator))
+    if (drawLabels != null) __obj.updateDynamic("drawLabels")(js.Any.fromFunction1(drawLabels))
+    if (drawQualitativeRanges != null) __obj.updateDynamic("drawQualitativeRanges")(js.Any.fromFunction1(drawQualitativeRanges))
+    if (drawTicks != null) __obj.updateDynamic("drawTicks")(js.Any.fromFunction1(drawTicks))
     if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
     if (!js.isUndefined(enableGroupSeparator)) __obj.updateDynamic("enableGroupSeparator")(enableGroupSeparator)
     if (!js.isUndefined(enableResizing)) __obj.updateDynamic("enableResizing")(enableResizing)
     if (flowDirection != null) __obj.updateDynamic("flowDirection")(flowDirection.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
-    if (load != null) __obj.updateDynamic("load")(load)
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (qualitativeRangeSize != null) __obj.updateDynamic("qualitativeRangeSize")(qualitativeRangeSize.asInstanceOf[js.Any])
     if (qualitativeRanges != null) __obj.updateDynamic("qualitativeRanges")(qualitativeRanges)
     if (quantitativeScaleLength != null) __obj.updateDynamic("quantitativeScaleLength")(quantitativeScaleLength.asInstanceOf[js.Any])
     if (quantitativeScaleSettings != null) __obj.updateDynamic("quantitativeScaleSettings")(quantitativeScaleSettings)
-    if (rightClick != null) __obj.updateDynamic("rightClick")(rightClick)
+    if (rightClick != null) __obj.updateDynamic("rightClick")(js.Any.fromFunction1(rightClick))
     if (theme != null) __obj.updateDynamic("theme")(theme)
     if (tooltipSettings != null) __obj.updateDynamic("tooltipSettings")(tooltipSettings)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

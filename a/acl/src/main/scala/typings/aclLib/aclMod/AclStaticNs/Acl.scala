@@ -32,7 +32,7 @@ trait Acl extends js.Object {
   def hasRole(
     userId: aclLib.Value,
     role: java.lang.String,
-    cb: js.Function2[/* err */ nodeLib.Error, /* isInRole */ scala.Boolean, _]
+    cb: js.Function2[/* err */ stdLib.Error, /* isInRole */ scala.Boolean, _]
   ): bluebirdLib.bluebirdMod.namespaced[scala.Boolean] = js.native
   def isAllowed(userId: aclLib.Value, resources: aclLib.strings, permissions: aclLib.strings): bluebirdLib.bluebirdMod.namespaced[scala.Boolean] = js.native
   def isAllowed(
@@ -70,11 +70,11 @@ trait Acl extends js.Object {
   def removeUserRoles(userId: aclLib.Value, roles: aclLib.strings): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def removeUserRoles(userId: aclLib.Value, roles: aclLib.strings, cb: aclLib.Callback): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def roleUsers(role: aclLib.Value): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  def roleUsers(role: aclLib.Value, cb: js.Function2[/* err */ nodeLib.Error, /* users */ aclLib.Values, _]): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def roleUsers(role: aclLib.Value, cb: js.Function2[/* err */ stdLib.Error, /* users */ aclLib.Values, _]): bluebirdLib.bluebirdMod.namespaced[_] = js.native
   def userRoles(userId: aclLib.Value): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]] = js.native
   def userRoles(
     userId: aclLib.Value,
-    cb: js.Function2[/* err */ nodeLib.Error, /* roles */ js.Array[java.lang.String], _]
+    cb: js.Function2[/* err */ stdLib.Error, /* roles */ js.Array[java.lang.String], _]
   ): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]] = js.native
   def whatResources(roles: aclLib.strings): bluebirdLib.bluebirdMod.namespaced[_] = js.native
   def whatResources(roles: aclLib.strings, cb: aclLib.AnyCallback): bluebirdLib.bluebirdMod.namespaced[_] = js.native

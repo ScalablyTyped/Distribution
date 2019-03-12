@@ -20,11 +20,8 @@ trait XLExport extends js.Object {
 
 object XLExport {
   @scala.inline
-  def apply(
-    export: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    getExportProps: js.Function0[js.Any]
-  ): XLExport = {
-    val __obj = js.Dynamic.literal(export = export, getExportProps = getExportProps)
+  def apply(export: (java.lang.String, java.lang.String) => scala.Unit, getExportProps: () => js.Any): XLExport = {
+    val __obj = js.Dynamic.literal(export = js.Any.fromFunction2(export), getExportProps = js.Any.fromFunction0(getExportProps))
   
     __obj.asInstanceOf[XLExport]
   }

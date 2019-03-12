@@ -20,23 +20,11 @@ trait IMovieDB extends js.Object {
 object IMovieDB {
   @scala.inline
   def apply(
-    movieImages: js.Function2[
-      InfoOptions, 
-      js.Function2[/* err */ js.Any, /* images */ MovieImages, scala.Unit], 
-      scala.Unit
-    ],
-    movieInfo: js.Function2[
-      InfoOptions, 
-      js.Function2[/* err */ js.Any, /* curMovie */ Movie, scala.Unit], 
-      scala.Unit
-    ],
-    searchMovie: js.Function2[
-      SearchOptions, 
-      js.Function2[/* err */ js.Any, /* movies */ SearchResults, scala.Unit], 
-      scala.Unit
-    ]
+    movieImages: (InfoOptions, js.Function2[/* err */ js.Any, /* images */ MovieImages, scala.Unit]) => scala.Unit,
+    movieInfo: (InfoOptions, js.Function2[/* err */ js.Any, /* curMovie */ Movie, scala.Unit]) => scala.Unit,
+    searchMovie: (SearchOptions, js.Function2[/* err */ js.Any, /* movies */ SearchResults, scala.Unit]) => scala.Unit
   ): IMovieDB = {
-    val __obj = js.Dynamic.literal(movieImages = movieImages, movieInfo = movieInfo, searchMovie = searchMovie)
+    val __obj = js.Dynamic.literal(movieImages = js.Any.fromFunction2(movieImages), movieInfo = js.Any.fromFunction2(movieInfo), searchMovie = js.Any.fromFunction2(searchMovie))
   
     __obj.asInstanceOf[IMovieDB]
   }

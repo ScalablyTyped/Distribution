@@ -119,371 +119,225 @@ object ICompositeElement {
   @scala.inline
   def apply(
     ICompositeElementLite: senchaUnderscoreTouchLib.ExtNs.domNs.ICompositeElementLite = null,
-    add: js.Function2[
-      /* els */ js.UndefOr[js.Any], 
-      /* root */ js.UndefOr[js.Any], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.ICompositeElementLite
-    ] = null,
-    addCls: js.Function3[
-      /* names */ js.UndefOr[java.lang.String], 
-      /* prefix */ js.UndefOr[java.lang.String], 
-      /* suffix */ js.UndefOr[java.lang.String], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.IElement
-    ] = null,
-    addListener: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* handler */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* opt */ js.UndefOr[js.Any], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.ICompositeElementLite
-    ] = null,
-    appendChild: js.Function1[/* element */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    appendTo: js.Function1[/* el */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    applyStyles: js.Function1[/* styles */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    child: js.Function2[
-      /* selector */ js.UndefOr[java.lang.String], 
-      /* returnDom */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    clear: js.Function0[scala.Unit] = null,
-    contains: js.Function1[/* el */ js.UndefOr[js.Any], scala.Boolean] = null,
-    createChild: js.Function3[
-      /* config */ js.UndefOr[js.Any], 
-      /* insertBefore */ js.UndefOr[stdLib.HTMLElement], 
-      /* returnDom */ js.UndefOr[scala.Boolean], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.IElement
-    ] = null,
-    cssTranslate: js.Function0[scala.Unit] = null,
-    destroy: js.Function0[scala.Unit] = null,
-    down: js.Function2[
-      /* selector */ js.UndefOr[java.lang.String], 
-      /* returnDom */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    each: js.Function2[
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.ICompositeElementLite
-    ] = null,
+    add: (/* els */ js.UndefOr[js.Any], /* root */ js.UndefOr[js.Any]) => senchaUnderscoreTouchLib.ExtNs.domNs.ICompositeElementLite = null,
+    addCls: (/* names */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* opt */ js.UndefOr[js.Any]) => senchaUnderscoreTouchLib.ExtNs.domNs.ICompositeElementLite = null,
+    appendChild: /* element */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    appendTo: /* el */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    applyStyles: /* styles */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    child: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => _ = null,
+    clear: () => scala.Unit = null,
+    contains: /* el */ js.UndefOr[js.Any] => scala.Boolean = null,
+    createChild: (/* config */ js.UndefOr[js.Any], /* insertBefore */ js.UndefOr[stdLib.HTMLElement], /* returnDom */ js.UndefOr[scala.Boolean]) => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    cssTranslate: () => scala.Unit = null,
+    destroy: () => scala.Unit = null,
+    down: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => _ = null,
+    each: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => senchaUnderscoreTouchLib.ExtNs.domNs.ICompositeElementLite = null,
     elements: Array = null,
-    fill: js.Function1[
-      /* els */ js.UndefOr[js.Any], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.ICompositeElementLite
-    ] = null,
-    filter: js.Function1[
-      /* selector */ js.UndefOr[js.Any], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.ICompositeElementLite
-    ] = null,
-    findParent: js.Function3[
-      /* simpleSelector */ js.UndefOr[java.lang.String], 
-      /* maxDepth */ js.UndefOr[js.Any], 
-      /* returnEl */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    findParentNode: js.Function3[
-      /* simpleSelector */ js.UndefOr[java.lang.String], 
-      /* maxDepth */ js.UndefOr[js.Any], 
-      /* returnEl */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    getAlignToXY: js.Function3[
-      /* element */ js.UndefOr[js.Any], 
-      /* position */ js.UndefOr[java.lang.String], 
-      /* offsets */ js.UndefOr[Array], 
-      Array
-    ] = null,
-    getAnchorXY: js.Function3[
-      /* anchor */ js.UndefOr[java.lang.String], 
-      /* local */ js.UndefOr[scala.Boolean], 
-      /* size */ js.UndefOr[js.Any], 
-      Array
-    ] = null,
-    getAttribute: js.Function2[
-      /* name */ js.UndefOr[java.lang.String], 
-      /* namespace */ js.UndefOr[java.lang.String], 
-      java.lang.String
-    ] = null,
-    getBorderWidth: js.Function1[/* side */ js.UndefOr[java.lang.String], scala.Double] = null,
-    getBottom: js.Function0[scala.Double] = null,
-    getBox: js.Function2[/* contentBox */ js.UndefOr[scala.Boolean], /* local */ js.UndefOr[scala.Boolean], _] = null,
-    getCount: js.Function0[scala.Double] = null,
-    getHTML: js.Function0[java.lang.String] = null,
-    getHeight: js.Function1[/* contentHeight */ js.UndefOr[scala.Boolean], scala.Double] = null,
-    getHtml: js.Function0[java.lang.String] = null,
-    getLeft: js.Function0[scala.Double] = null,
-    getMargin: js.Function1[/* sides */ js.UndefOr[java.lang.String], _] = null,
-    getOffsetsTo: js.Function1[/* element */ js.UndefOr[js.Any], Array] = null,
-    getOuterHeight: js.Function0[scala.Unit] = null,
-    getOuterWidth: js.Function0[scala.Unit] = null,
-    getPadding: js.Function1[/* side */ js.UndefOr[java.lang.String], scala.Double] = null,
-    getPageBox: js.Function1[/* asRegion */ js.UndefOr[scala.Boolean], _] = null,
-    getRight: js.Function0[scala.Double] = null,
-    getScrollParent: js.Function0[scala.Unit] = null,
-    getSize: js.Function1[/* contentSize */ js.UndefOr[scala.Boolean], _] = null,
-    getStyle: js.Function1[/* prop */ js.UndefOr[java.lang.String], java.lang.String] = null,
-    getTop: js.Function0[scala.Double] = null,
-    getValue: js.Function1[/* asNumber */ js.UndefOr[scala.Boolean], _] = null,
-    getViewSize: js.Function0[_] = null,
-    getWidth: js.Function1[/* contentWidth */ js.UndefOr[scala.Boolean], scala.Double] = null,
-    getX: js.Function0[scala.Double] = null,
-    getXY: js.Function0[Array] = null,
-    getY: js.Function0[scala.Double] = null,
-    hasCls: js.Function1[/* name */ js.UndefOr[java.lang.String], scala.Boolean] = null,
-    hide: js.Function0[scala.Unit] = null,
-    indexOf: js.Function1[/* el */ js.UndefOr[js.Any], scala.Double] = null,
-    insertAfter: js.Function1[/* el */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    insertBefore: js.Function1[/* el */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    insertFirst: js.Function1[/* element */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    insertHtml: js.Function3[
-      /* where */ js.UndefOr[java.lang.String], 
-      /* html */ js.UndefOr[java.lang.String], 
-      /* returnEl */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    insertSibling: js.Function3[
-      /* el */ js.UndefOr[js.Any], 
-      /* where */ js.UndefOr[java.lang.String], 
-      /* returnDom */ js.UndefOr[scala.Boolean], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.IElement
-    ] = null,
-    is: js.Function1[/* selector */ js.UndefOr[java.lang.String], scala.Boolean] = null,
-    isDescendent: js.Function0[scala.Unit] = null,
-    isStyle: js.Function2[
-      /* style */ js.UndefOr[java.lang.String], 
-      /* value */ js.UndefOr[java.lang.String], 
-      scala.Boolean
-    ] = null,
-    isTransparent: js.Function1[/* prop */ js.UndefOr[java.lang.String], scala.Boolean] = null,
-    item: js.Function1[
-      /* index */ js.UndefOr[scala.Double], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.IElement
-    ] = null,
-    mask: js.Function0[scala.Unit] = null,
-    next: js.Function2[
-      /* selector */ js.UndefOr[java.lang.String], 
-      /* returnDom */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    parent: js.Function2[
-      /* selector */ js.UndefOr[java.lang.String], 
-      /* returnDom */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    prev: js.Function2[
-      /* selector */ js.UndefOr[java.lang.String], 
-      /* returnDom */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    purgeAllListeners: js.Function0[scala.Unit] = null,
-    query: js.Function1[/* selector */ js.UndefOr[java.lang.String], Array] = null,
-    radioCls: js.Function1[/* className */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    remove: js.Function0[scala.Unit] = null,
-    removeAllListeners: js.Function0[scala.Unit] = null,
-    removeCls: js.Function3[
-      /* names */ js.UndefOr[java.lang.String], 
-      /* prefix */ js.UndefOr[java.lang.String], 
-      /* suffix */ js.UndefOr[java.lang.String], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.IElement
-    ] = null,
-    removeElement: js.Function2[
-      /* el */ js.UndefOr[js.Any], 
-      /* removeDom */ js.UndefOr[scala.Boolean], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.ICompositeElementLite
-    ] = null,
-    repaint: js.Function0[senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    replace: js.Function1[/* element */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    replaceCls: js.Function4[
-      /* oldName */ js.UndefOr[java.lang.String], 
-      /* newName */ js.UndefOr[java.lang.String], 
-      /* prefix */ js.UndefOr[java.lang.String], 
-      /* suffix */ js.UndefOr[java.lang.String], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.IElement
-    ] = null,
-    replaceElement: js.Function3[
-      /* el */ js.UndefOr[js.Any], 
-      /* replacement */ js.UndefOr[js.Any], 
-      /* domReplace */ js.UndefOr[scala.Boolean], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.ICompositeElementLite
-    ] = null,
-    replaceWith: js.Function1[/* el */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    select: js.Function2[
-      /* selector */ js.UndefOr[js.Any], 
-      /* composite */ js.UndefOr[scala.Boolean], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.ICompositeElementLite
-    ] = null,
-    serializeForm: js.Function1[/* form */ js.UndefOr[js.Any], java.lang.String] = null,
-    set: js.Function2[
-      /* attributes */ js.UndefOr[js.Any], 
-      /* useSet */ js.UndefOr[scala.Boolean], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.IElement
-    ] = null,
-    setBottom: js.Function1[
-      /* bottom */ js.UndefOr[java.lang.String], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.IElement
-    ] = null,
-    setBox: js.Function1[/* box */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    setCls: js.Function1[/* className */ js.UndefOr[js.Any], scala.Unit] = null,
-    setHTML: js.Function1[/* html */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setHeight: js.Function1[/* height */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    setHtml: js.Function1[/* html */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setLeft: js.Function1[
-      /* left */ js.UndefOr[java.lang.String], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.IElement
-    ] = null,
-    setMaxHeight: js.Function1[/* height */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    setMaxWidth: js.Function1[/* width */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    setMinHeight: js.Function1[/* height */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    setMinWidth: js.Function1[/* width */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    setRight: js.Function1[
-      /* right */ js.UndefOr[java.lang.String], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.IElement
-    ] = null,
-    setSize: js.Function2[
-      /* width */ js.UndefOr[js.Any], 
-      /* height */ js.UndefOr[js.Any], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.IElement
-    ] = null,
-    setStyle: js.Function2[
-      /* property */ js.UndefOr[js.Any], 
-      /* value */ js.UndefOr[java.lang.String], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.IElement
-    ] = null,
-    setTop: js.Function1[
-      /* top */ js.UndefOr[java.lang.String], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.IElement
-    ] = null,
-    setTopLeft: js.Function0[scala.Unit] = null,
-    setVisibilityMode: js.Function1[/* mode */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    setVisible: js.Function1[/* visible */ js.UndefOr[scala.Boolean], IElement] = null,
-    setWidth: js.Function1[/* width */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    setX: js.Function1[/* x */ js.UndefOr[scala.Double], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    setXY: js.Function1[/* pos */ js.UndefOr[Array], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    setY: js.Function1[/* y */ js.UndefOr[scala.Double], senchaUnderscoreTouchLib.ExtNs.domNs.IElement] = null,
-    show: js.Function0[scala.Unit] = null,
-    toggleCls: js.Function1[
-      /* className */ js.UndefOr[java.lang.String], 
-      senchaUnderscoreTouchLib.ExtNs.domNs.IElement
-    ] = null,
-    translatePoints: js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[scala.Double], _] = null,
-    unmask: js.Function0[scala.Unit] = null,
-    up: js.Function2[
-      /* simpleSelector */ js.UndefOr[java.lang.String], 
-      /* maxDepth */ js.UndefOr[js.Any], 
-      _
-    ] = null,
-    update: js.Function1[/* html */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    wrap: js.Function2[/* config */ js.UndefOr[js.Any], /* domNode */ js.UndefOr[scala.Boolean], _] = null
+    fill: /* els */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.domNs.ICompositeElementLite = null,
+    filter: /* selector */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.domNs.ICompositeElementLite = null,
+    findParent: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[scala.Boolean]) => _ = null,
+    findParentNode: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[scala.Boolean]) => _ = null,
+    getAlignToXY: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[java.lang.String], /* offsets */ js.UndefOr[Array]) => Array = null,
+    getAnchorXY: (/* anchor */ js.UndefOr[java.lang.String], /* local */ js.UndefOr[scala.Boolean], /* size */ js.UndefOr[js.Any]) => Array = null,
+    getAttribute: (/* name */ js.UndefOr[java.lang.String], /* namespace */ js.UndefOr[java.lang.String]) => java.lang.String = null,
+    getBorderWidth: /* side */ js.UndefOr[java.lang.String] => scala.Double = null,
+    getBottom: () => scala.Double = null,
+    getBox: (/* contentBox */ js.UndefOr[scala.Boolean], /* local */ js.UndefOr[scala.Boolean]) => _ = null,
+    getCount: () => scala.Double = null,
+    getHTML: () => java.lang.String = null,
+    getHeight: /* contentHeight */ js.UndefOr[scala.Boolean] => scala.Double = null,
+    getHtml: () => java.lang.String = null,
+    getLeft: () => scala.Double = null,
+    getMargin: /* sides */ js.UndefOr[java.lang.String] => _ = null,
+    getOffsetsTo: /* element */ js.UndefOr[js.Any] => Array = null,
+    getOuterHeight: () => scala.Unit = null,
+    getOuterWidth: () => scala.Unit = null,
+    getPadding: /* side */ js.UndefOr[java.lang.String] => scala.Double = null,
+    getPageBox: /* asRegion */ js.UndefOr[scala.Boolean] => _ = null,
+    getRight: () => scala.Double = null,
+    getScrollParent: () => scala.Unit = null,
+    getSize: /* contentSize */ js.UndefOr[scala.Boolean] => _ = null,
+    getStyle: /* prop */ js.UndefOr[java.lang.String] => java.lang.String = null,
+    getTop: () => scala.Double = null,
+    getValue: /* asNumber */ js.UndefOr[scala.Boolean] => _ = null,
+    getViewSize: () => _ = null,
+    getWidth: /* contentWidth */ js.UndefOr[scala.Boolean] => scala.Double = null,
+    getX: () => scala.Double = null,
+    getXY: () => Array = null,
+    getY: () => scala.Double = null,
+    hasCls: /* name */ js.UndefOr[java.lang.String] => scala.Boolean = null,
+    hide: () => scala.Unit = null,
+    indexOf: /* el */ js.UndefOr[js.Any] => scala.Double = null,
+    insertAfter: /* el */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    insertBefore: /* el */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    insertFirst: /* element */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    insertHtml: (/* where */ js.UndefOr[java.lang.String], /* html */ js.UndefOr[java.lang.String], /* returnEl */ js.UndefOr[scala.Boolean]) => _ = null,
+    insertSibling: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    is: /* selector */ js.UndefOr[java.lang.String] => scala.Boolean = null,
+    isDescendent: () => scala.Unit = null,
+    isStyle: (/* style */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[java.lang.String]) => scala.Boolean = null,
+    isTransparent: /* prop */ js.UndefOr[java.lang.String] => scala.Boolean = null,
+    item: /* index */ js.UndefOr[scala.Double] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    mask: () => scala.Unit = null,
+    next: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => _ = null,
+    parent: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => _ = null,
+    prev: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[scala.Boolean]) => _ = null,
+    purgeAllListeners: () => scala.Unit = null,
+    query: /* selector */ js.UndefOr[java.lang.String] => Array = null,
+    radioCls: /* className */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    remove: () => scala.Unit = null,
+    removeAllListeners: () => scala.Unit = null,
+    removeCls: (/* names */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    removeElement: (/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[scala.Boolean]) => senchaUnderscoreTouchLib.ExtNs.domNs.ICompositeElementLite = null,
+    repaint: () => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    replace: /* element */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    replaceCls: (/* oldName */ js.UndefOr[java.lang.String], /* newName */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    replaceElement: (/* el */ js.UndefOr[js.Any], /* replacement */ js.UndefOr[js.Any], /* domReplace */ js.UndefOr[scala.Boolean]) => senchaUnderscoreTouchLib.ExtNs.domNs.ICompositeElementLite = null,
+    replaceWith: /* el */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    select: (/* selector */ js.UndefOr[js.Any], /* composite */ js.UndefOr[scala.Boolean]) => senchaUnderscoreTouchLib.ExtNs.domNs.ICompositeElementLite = null,
+    serializeForm: /* form */ js.UndefOr[js.Any] => java.lang.String = null,
+    set: (/* attributes */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[scala.Boolean]) => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    setBottom: /* bottom */ js.UndefOr[java.lang.String] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    setBox: /* box */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    setCls: /* className */ js.UndefOr[js.Any] => scala.Unit = null,
+    setHTML: /* html */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setHeight: /* height */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    setHtml: /* html */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setLeft: /* left */ js.UndefOr[java.lang.String] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    setMaxHeight: /* height */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    setMaxWidth: /* width */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    setMinHeight: /* height */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    setMinWidth: /* width */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    setRight: /* right */ js.UndefOr[java.lang.String] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    setSize: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any]) => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    setStyle: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    setTop: /* top */ js.UndefOr[java.lang.String] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    setTopLeft: () => scala.Unit = null,
+    setVisibilityMode: /* mode */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    setVisible: /* visible */ js.UndefOr[scala.Boolean] => IElement = null,
+    setWidth: /* width */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    setX: /* x */ js.UndefOr[scala.Double] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    setXY: /* pos */ js.UndefOr[Array] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    setY: /* y */ js.UndefOr[scala.Double] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    show: () => scala.Unit = null,
+    toggleCls: /* className */ js.UndefOr[java.lang.String] => senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    translatePoints: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[scala.Double]) => _ = null,
+    unmask: () => scala.Unit = null,
+    up: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any]) => _ = null,
+    update: /* html */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    wrap: (/* config */ js.UndefOr[js.Any], /* domNode */ js.UndefOr[scala.Boolean]) => _ = null
   ): ICompositeElement = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, ICompositeElementLite)
-    if (add != null) __obj.updateDynamic("add")(add)
-    if (addCls != null) __obj.updateDynamic("addCls")(addCls)
-    if (addListener != null) __obj.updateDynamic("addListener")(addListener)
-    if (appendChild != null) __obj.updateDynamic("appendChild")(appendChild)
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
-    if (applyStyles != null) __obj.updateDynamic("applyStyles")(applyStyles)
-    if (child != null) __obj.updateDynamic("child")(child)
-    if (clear != null) __obj.updateDynamic("clear")(clear)
-    if (contains != null) __obj.updateDynamic("contains")(contains)
-    if (createChild != null) __obj.updateDynamic("createChild")(createChild)
-    if (cssTranslate != null) __obj.updateDynamic("cssTranslate")(cssTranslate)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (down != null) __obj.updateDynamic("down")(down)
-    if (each != null) __obj.updateDynamic("each")(each)
+    if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction2(add))
+    if (addCls != null) __obj.updateDynamic("addCls")(js.Any.fromFunction3(addCls))
+    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction4(addListener))
+    if (appendChild != null) __obj.updateDynamic("appendChild")(js.Any.fromFunction1(appendChild))
+    if (appendTo != null) __obj.updateDynamic("appendTo")(js.Any.fromFunction1(appendTo))
+    if (applyStyles != null) __obj.updateDynamic("applyStyles")(js.Any.fromFunction1(applyStyles))
+    if (child != null) __obj.updateDynamic("child")(js.Any.fromFunction2(child))
+    if (clear != null) __obj.updateDynamic("clear")(js.Any.fromFunction0(clear))
+    if (contains != null) __obj.updateDynamic("contains")(js.Any.fromFunction1(contains))
+    if (createChild != null) __obj.updateDynamic("createChild")(js.Any.fromFunction3(createChild))
+    if (cssTranslate != null) __obj.updateDynamic("cssTranslate")(js.Any.fromFunction0(cssTranslate))
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
+    if (down != null) __obj.updateDynamic("down")(js.Any.fromFunction2(down))
+    if (each != null) __obj.updateDynamic("each")(js.Any.fromFunction2(each))
     if (elements != null) __obj.updateDynamic("elements")(elements)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (findParent != null) __obj.updateDynamic("findParent")(findParent)
-    if (findParentNode != null) __obj.updateDynamic("findParentNode")(findParentNode)
-    if (getAlignToXY != null) __obj.updateDynamic("getAlignToXY")(getAlignToXY)
-    if (getAnchorXY != null) __obj.updateDynamic("getAnchorXY")(getAnchorXY)
-    if (getAttribute != null) __obj.updateDynamic("getAttribute")(getAttribute)
-    if (getBorderWidth != null) __obj.updateDynamic("getBorderWidth")(getBorderWidth)
-    if (getBottom != null) __obj.updateDynamic("getBottom")(getBottom)
-    if (getBox != null) __obj.updateDynamic("getBox")(getBox)
-    if (getCount != null) __obj.updateDynamic("getCount")(getCount)
-    if (getHTML != null) __obj.updateDynamic("getHTML")(getHTML)
-    if (getHeight != null) __obj.updateDynamic("getHeight")(getHeight)
-    if (getHtml != null) __obj.updateDynamic("getHtml")(getHtml)
-    if (getLeft != null) __obj.updateDynamic("getLeft")(getLeft)
-    if (getMargin != null) __obj.updateDynamic("getMargin")(getMargin)
-    if (getOffsetsTo != null) __obj.updateDynamic("getOffsetsTo")(getOffsetsTo)
-    if (getOuterHeight != null) __obj.updateDynamic("getOuterHeight")(getOuterHeight)
-    if (getOuterWidth != null) __obj.updateDynamic("getOuterWidth")(getOuterWidth)
-    if (getPadding != null) __obj.updateDynamic("getPadding")(getPadding)
-    if (getPageBox != null) __obj.updateDynamic("getPageBox")(getPageBox)
-    if (getRight != null) __obj.updateDynamic("getRight")(getRight)
-    if (getScrollParent != null) __obj.updateDynamic("getScrollParent")(getScrollParent)
-    if (getSize != null) __obj.updateDynamic("getSize")(getSize)
-    if (getStyle != null) __obj.updateDynamic("getStyle")(getStyle)
-    if (getTop != null) __obj.updateDynamic("getTop")(getTop)
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
-    if (getViewSize != null) __obj.updateDynamic("getViewSize")(getViewSize)
-    if (getWidth != null) __obj.updateDynamic("getWidth")(getWidth)
-    if (getX != null) __obj.updateDynamic("getX")(getX)
-    if (getXY != null) __obj.updateDynamic("getXY")(getXY)
-    if (getY != null) __obj.updateDynamic("getY")(getY)
-    if (hasCls != null) __obj.updateDynamic("hasCls")(hasCls)
-    if (hide != null) __obj.updateDynamic("hide")(hide)
-    if (indexOf != null) __obj.updateDynamic("indexOf")(indexOf)
-    if (insertAfter != null) __obj.updateDynamic("insertAfter")(insertAfter)
-    if (insertBefore != null) __obj.updateDynamic("insertBefore")(insertBefore)
-    if (insertFirst != null) __obj.updateDynamic("insertFirst")(insertFirst)
-    if (insertHtml != null) __obj.updateDynamic("insertHtml")(insertHtml)
-    if (insertSibling != null) __obj.updateDynamic("insertSibling")(insertSibling)
-    if (is != null) __obj.updateDynamic("is")(is)
-    if (isDescendent != null) __obj.updateDynamic("isDescendent")(isDescendent)
-    if (isStyle != null) __obj.updateDynamic("isStyle")(isStyle)
-    if (isTransparent != null) __obj.updateDynamic("isTransparent")(isTransparent)
-    if (item != null) __obj.updateDynamic("item")(item)
-    if (mask != null) __obj.updateDynamic("mask")(mask)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (prev != null) __obj.updateDynamic("prev")(prev)
-    if (purgeAllListeners != null) __obj.updateDynamic("purgeAllListeners")(purgeAllListeners)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (radioCls != null) __obj.updateDynamic("radioCls")(radioCls)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (removeAllListeners != null) __obj.updateDynamic("removeAllListeners")(removeAllListeners)
-    if (removeCls != null) __obj.updateDynamic("removeCls")(removeCls)
-    if (removeElement != null) __obj.updateDynamic("removeElement")(removeElement)
-    if (repaint != null) __obj.updateDynamic("repaint")(repaint)
-    if (replace != null) __obj.updateDynamic("replace")(replace)
-    if (replaceCls != null) __obj.updateDynamic("replaceCls")(replaceCls)
-    if (replaceElement != null) __obj.updateDynamic("replaceElement")(replaceElement)
-    if (replaceWith != null) __obj.updateDynamic("replaceWith")(replaceWith)
-    if (select != null) __obj.updateDynamic("select")(select)
-    if (serializeForm != null) __obj.updateDynamic("serializeForm")(serializeForm)
-    if (set != null) __obj.updateDynamic("set")(set)
-    if (setBottom != null) __obj.updateDynamic("setBottom")(setBottom)
-    if (setBox != null) __obj.updateDynamic("setBox")(setBox)
-    if (setCls != null) __obj.updateDynamic("setCls")(setCls)
-    if (setHTML != null) __obj.updateDynamic("setHTML")(setHTML)
-    if (setHeight != null) __obj.updateDynamic("setHeight")(setHeight)
-    if (setHtml != null) __obj.updateDynamic("setHtml")(setHtml)
-    if (setLeft != null) __obj.updateDynamic("setLeft")(setLeft)
-    if (setMaxHeight != null) __obj.updateDynamic("setMaxHeight")(setMaxHeight)
-    if (setMaxWidth != null) __obj.updateDynamic("setMaxWidth")(setMaxWidth)
-    if (setMinHeight != null) __obj.updateDynamic("setMinHeight")(setMinHeight)
-    if (setMinWidth != null) __obj.updateDynamic("setMinWidth")(setMinWidth)
-    if (setRight != null) __obj.updateDynamic("setRight")(setRight)
-    if (setSize != null) __obj.updateDynamic("setSize")(setSize)
-    if (setStyle != null) __obj.updateDynamic("setStyle")(setStyle)
-    if (setTop != null) __obj.updateDynamic("setTop")(setTop)
-    if (setTopLeft != null) __obj.updateDynamic("setTopLeft")(setTopLeft)
-    if (setVisibilityMode != null) __obj.updateDynamic("setVisibilityMode")(setVisibilityMode)
-    if (setVisible != null) __obj.updateDynamic("setVisible")(setVisible)
-    if (setWidth != null) __obj.updateDynamic("setWidth")(setWidth)
-    if (setX != null) __obj.updateDynamic("setX")(setX)
-    if (setXY != null) __obj.updateDynamic("setXY")(setXY)
-    if (setY != null) __obj.updateDynamic("setY")(setY)
-    if (show != null) __obj.updateDynamic("show")(show)
-    if (toggleCls != null) __obj.updateDynamic("toggleCls")(toggleCls)
-    if (translatePoints != null) __obj.updateDynamic("translatePoints")(translatePoints)
-    if (unmask != null) __obj.updateDynamic("unmask")(unmask)
-    if (up != null) __obj.updateDynamic("up")(up)
-    if (update != null) __obj.updateDynamic("update")(update)
-    if (wrap != null) __obj.updateDynamic("wrap")(wrap)
+    if (fill != null) __obj.updateDynamic("fill")(js.Any.fromFunction1(fill))
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
+    if (findParent != null) __obj.updateDynamic("findParent")(js.Any.fromFunction3(findParent))
+    if (findParentNode != null) __obj.updateDynamic("findParentNode")(js.Any.fromFunction3(findParentNode))
+    if (getAlignToXY != null) __obj.updateDynamic("getAlignToXY")(js.Any.fromFunction3(getAlignToXY))
+    if (getAnchorXY != null) __obj.updateDynamic("getAnchorXY")(js.Any.fromFunction3(getAnchorXY))
+    if (getAttribute != null) __obj.updateDynamic("getAttribute")(js.Any.fromFunction2(getAttribute))
+    if (getBorderWidth != null) __obj.updateDynamic("getBorderWidth")(js.Any.fromFunction1(getBorderWidth))
+    if (getBottom != null) __obj.updateDynamic("getBottom")(js.Any.fromFunction0(getBottom))
+    if (getBox != null) __obj.updateDynamic("getBox")(js.Any.fromFunction2(getBox))
+    if (getCount != null) __obj.updateDynamic("getCount")(js.Any.fromFunction0(getCount))
+    if (getHTML != null) __obj.updateDynamic("getHTML")(js.Any.fromFunction0(getHTML))
+    if (getHeight != null) __obj.updateDynamic("getHeight")(js.Any.fromFunction1(getHeight))
+    if (getHtml != null) __obj.updateDynamic("getHtml")(js.Any.fromFunction0(getHtml))
+    if (getLeft != null) __obj.updateDynamic("getLeft")(js.Any.fromFunction0(getLeft))
+    if (getMargin != null) __obj.updateDynamic("getMargin")(js.Any.fromFunction1(getMargin))
+    if (getOffsetsTo != null) __obj.updateDynamic("getOffsetsTo")(js.Any.fromFunction1(getOffsetsTo))
+    if (getOuterHeight != null) __obj.updateDynamic("getOuterHeight")(js.Any.fromFunction0(getOuterHeight))
+    if (getOuterWidth != null) __obj.updateDynamic("getOuterWidth")(js.Any.fromFunction0(getOuterWidth))
+    if (getPadding != null) __obj.updateDynamic("getPadding")(js.Any.fromFunction1(getPadding))
+    if (getPageBox != null) __obj.updateDynamic("getPageBox")(js.Any.fromFunction1(getPageBox))
+    if (getRight != null) __obj.updateDynamic("getRight")(js.Any.fromFunction0(getRight))
+    if (getScrollParent != null) __obj.updateDynamic("getScrollParent")(js.Any.fromFunction0(getScrollParent))
+    if (getSize != null) __obj.updateDynamic("getSize")(js.Any.fromFunction1(getSize))
+    if (getStyle != null) __obj.updateDynamic("getStyle")(js.Any.fromFunction1(getStyle))
+    if (getTop != null) __obj.updateDynamic("getTop")(js.Any.fromFunction0(getTop))
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction1(getValue))
+    if (getViewSize != null) __obj.updateDynamic("getViewSize")(js.Any.fromFunction0(getViewSize))
+    if (getWidth != null) __obj.updateDynamic("getWidth")(js.Any.fromFunction1(getWidth))
+    if (getX != null) __obj.updateDynamic("getX")(js.Any.fromFunction0(getX))
+    if (getXY != null) __obj.updateDynamic("getXY")(js.Any.fromFunction0(getXY))
+    if (getY != null) __obj.updateDynamic("getY")(js.Any.fromFunction0(getY))
+    if (hasCls != null) __obj.updateDynamic("hasCls")(js.Any.fromFunction1(hasCls))
+    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction0(hide))
+    if (indexOf != null) __obj.updateDynamic("indexOf")(js.Any.fromFunction1(indexOf))
+    if (insertAfter != null) __obj.updateDynamic("insertAfter")(js.Any.fromFunction1(insertAfter))
+    if (insertBefore != null) __obj.updateDynamic("insertBefore")(js.Any.fromFunction1(insertBefore))
+    if (insertFirst != null) __obj.updateDynamic("insertFirst")(js.Any.fromFunction1(insertFirst))
+    if (insertHtml != null) __obj.updateDynamic("insertHtml")(js.Any.fromFunction3(insertHtml))
+    if (insertSibling != null) __obj.updateDynamic("insertSibling")(js.Any.fromFunction3(insertSibling))
+    if (is != null) __obj.updateDynamic("is")(js.Any.fromFunction1(is))
+    if (isDescendent != null) __obj.updateDynamic("isDescendent")(js.Any.fromFunction0(isDescendent))
+    if (isStyle != null) __obj.updateDynamic("isStyle")(js.Any.fromFunction2(isStyle))
+    if (isTransparent != null) __obj.updateDynamic("isTransparent")(js.Any.fromFunction1(isTransparent))
+    if (item != null) __obj.updateDynamic("item")(js.Any.fromFunction1(item))
+    if (mask != null) __obj.updateDynamic("mask")(js.Any.fromFunction0(mask))
+    if (next != null) __obj.updateDynamic("next")(js.Any.fromFunction2(next))
+    if (parent != null) __obj.updateDynamic("parent")(js.Any.fromFunction2(parent))
+    if (prev != null) __obj.updateDynamic("prev")(js.Any.fromFunction2(prev))
+    if (purgeAllListeners != null) __obj.updateDynamic("purgeAllListeners")(js.Any.fromFunction0(purgeAllListeners))
+    if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction1(query))
+    if (radioCls != null) __obj.updateDynamic("radioCls")(js.Any.fromFunction1(radioCls))
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction0(remove))
+    if (removeAllListeners != null) __obj.updateDynamic("removeAllListeners")(js.Any.fromFunction0(removeAllListeners))
+    if (removeCls != null) __obj.updateDynamic("removeCls")(js.Any.fromFunction3(removeCls))
+    if (removeElement != null) __obj.updateDynamic("removeElement")(js.Any.fromFunction2(removeElement))
+    if (repaint != null) __obj.updateDynamic("repaint")(js.Any.fromFunction0(repaint))
+    if (replace != null) __obj.updateDynamic("replace")(js.Any.fromFunction1(replace))
+    if (replaceCls != null) __obj.updateDynamic("replaceCls")(js.Any.fromFunction4(replaceCls))
+    if (replaceElement != null) __obj.updateDynamic("replaceElement")(js.Any.fromFunction3(replaceElement))
+    if (replaceWith != null) __obj.updateDynamic("replaceWith")(js.Any.fromFunction1(replaceWith))
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction2(select))
+    if (serializeForm != null) __obj.updateDynamic("serializeForm")(js.Any.fromFunction1(serializeForm))
+    if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction2(set))
+    if (setBottom != null) __obj.updateDynamic("setBottom")(js.Any.fromFunction1(setBottom))
+    if (setBox != null) __obj.updateDynamic("setBox")(js.Any.fromFunction1(setBox))
+    if (setCls != null) __obj.updateDynamic("setCls")(js.Any.fromFunction1(setCls))
+    if (setHTML != null) __obj.updateDynamic("setHTML")(js.Any.fromFunction1(setHTML))
+    if (setHeight != null) __obj.updateDynamic("setHeight")(js.Any.fromFunction1(setHeight))
+    if (setHtml != null) __obj.updateDynamic("setHtml")(js.Any.fromFunction1(setHtml))
+    if (setLeft != null) __obj.updateDynamic("setLeft")(js.Any.fromFunction1(setLeft))
+    if (setMaxHeight != null) __obj.updateDynamic("setMaxHeight")(js.Any.fromFunction1(setMaxHeight))
+    if (setMaxWidth != null) __obj.updateDynamic("setMaxWidth")(js.Any.fromFunction1(setMaxWidth))
+    if (setMinHeight != null) __obj.updateDynamic("setMinHeight")(js.Any.fromFunction1(setMinHeight))
+    if (setMinWidth != null) __obj.updateDynamic("setMinWidth")(js.Any.fromFunction1(setMinWidth))
+    if (setRight != null) __obj.updateDynamic("setRight")(js.Any.fromFunction1(setRight))
+    if (setSize != null) __obj.updateDynamic("setSize")(js.Any.fromFunction2(setSize))
+    if (setStyle != null) __obj.updateDynamic("setStyle")(js.Any.fromFunction2(setStyle))
+    if (setTop != null) __obj.updateDynamic("setTop")(js.Any.fromFunction1(setTop))
+    if (setTopLeft != null) __obj.updateDynamic("setTopLeft")(js.Any.fromFunction0(setTopLeft))
+    if (setVisibilityMode != null) __obj.updateDynamic("setVisibilityMode")(js.Any.fromFunction1(setVisibilityMode))
+    if (setVisible != null) __obj.updateDynamic("setVisible")(js.Any.fromFunction1(setVisible))
+    if (setWidth != null) __obj.updateDynamic("setWidth")(js.Any.fromFunction1(setWidth))
+    if (setX != null) __obj.updateDynamic("setX")(js.Any.fromFunction1(setX))
+    if (setXY != null) __obj.updateDynamic("setXY")(js.Any.fromFunction1(setXY))
+    if (setY != null) __obj.updateDynamic("setY")(js.Any.fromFunction1(setY))
+    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction0(show))
+    if (toggleCls != null) __obj.updateDynamic("toggleCls")(js.Any.fromFunction1(toggleCls))
+    if (translatePoints != null) __obj.updateDynamic("translatePoints")(js.Any.fromFunction2(translatePoints))
+    if (unmask != null) __obj.updateDynamic("unmask")(js.Any.fromFunction0(unmask))
+    if (up != null) __obj.updateDynamic("up")(js.Any.fromFunction2(up))
+    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction1(update))
+    if (wrap != null) __obj.updateDynamic("wrap")(js.Any.fromFunction2(wrap))
     __obj.asInstanceOf[ICompositeElement]
   }
 }

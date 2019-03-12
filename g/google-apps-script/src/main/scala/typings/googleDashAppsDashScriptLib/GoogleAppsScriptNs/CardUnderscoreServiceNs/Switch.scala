@@ -15,12 +15,12 @@ trait Switch extends js.Object {
 object Switch {
   @scala.inline
   def apply(
-    setFieldName: js.Function1[java.lang.String, Switch],
-    setOnChangeAction: js.Function1[Action, Switch],
-    setSelected: js.Function1[scala.Boolean, Switch],
-    setValue: js.Function1[java.lang.String, Switch]
+    setFieldName: java.lang.String => Switch,
+    setOnChangeAction: Action => Switch,
+    setSelected: scala.Boolean => Switch,
+    setValue: java.lang.String => Switch
   ): Switch = {
-    val __obj = js.Dynamic.literal(setFieldName = setFieldName, setOnChangeAction = setOnChangeAction, setSelected = setSelected, setValue = setValue)
+    val __obj = js.Dynamic.literal(setFieldName = js.Any.fromFunction1(setFieldName), setOnChangeAction = js.Any.fromFunction1(setOnChangeAction), setSelected = js.Any.fromFunction1(setSelected), setValue = js.Any.fromFunction1(setValue))
   
     __obj.asInstanceOf[Switch]
   }

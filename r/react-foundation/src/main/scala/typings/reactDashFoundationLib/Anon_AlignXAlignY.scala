@@ -5,46 +5,142 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_AlignXAlignY extends js.Object {
-  var alignX: propDashTypesLib.propDashTypesMod.Requireable[_]
-  var alignY: propDashTypesLib.propDashTypesMod.Requireable[_]
-  var centerAlign: propDashTypesLib.propDashTypesMod.Requireable[_]
-  var flexChild: propDashTypesLib.propDashTypesMod.Requireable[_]
-  var flexContainer: propDashTypesLib.propDashTypesMod.Requireable[_]
-  var flexDirCol: propDashTypesLib.propDashTypesMod.Requireable[_]
-  var flexDirColRev: propDashTypesLib.propDashTypesMod.Requireable[_]
-  var flexDirRow: propDashTypesLib.propDashTypesMod.Requireable[_]
-  var flexDirRowRev: propDashTypesLib.propDashTypesMod.Requireable[_]
-  var flexOrder: propDashTypesLib.propDashTypesMod.Requireable[_]
-  var flexOrderLarge: propDashTypesLib.propDashTypesMod.Requireable[_]
-  var flexOrderMedium: propDashTypesLib.propDashTypesMod.Requireable[_]
-  var flexOrderSmall: propDashTypesLib.propDashTypesMod.Requireable[_]
-  var selfAlignX: propDashTypesLib.propDashTypesMod.Requireable[_]
-  var selfAlignY: propDashTypesLib.propDashTypesMod.Requireable[_]
-}
-
-object Anon_AlignXAlignY {
-  @scala.inline
-  def apply(
-    alignX: propDashTypesLib.propDashTypesMod.Requireable[_],
-    alignY: propDashTypesLib.propDashTypesMod.Requireable[_],
-    centerAlign: propDashTypesLib.propDashTypesMod.Requireable[_],
-    flexChild: propDashTypesLib.propDashTypesMod.Requireable[_],
-    flexContainer: propDashTypesLib.propDashTypesMod.Requireable[_],
-    flexDirCol: propDashTypesLib.propDashTypesMod.Requireable[_],
-    flexDirColRev: propDashTypesLib.propDashTypesMod.Requireable[_],
-    flexDirRow: propDashTypesLib.propDashTypesMod.Requireable[_],
-    flexDirRowRev: propDashTypesLib.propDashTypesMod.Requireable[_],
-    flexOrder: propDashTypesLib.propDashTypesMod.Requireable[_],
-    flexOrderLarge: propDashTypesLib.propDashTypesMod.Requireable[_],
-    flexOrderMedium: propDashTypesLib.propDashTypesMod.Requireable[_],
-    flexOrderSmall: propDashTypesLib.propDashTypesMod.Requireable[_],
-    selfAlignX: propDashTypesLib.propDashTypesMod.Requireable[_],
-    selfAlignY: propDashTypesLib.propDashTypesMod.Requireable[_]
-  ): Anon_AlignXAlignY = {
-    val __obj = js.Dynamic.literal(alignX = alignX, alignY = alignY, centerAlign = centerAlign, flexChild = flexChild, flexContainer = flexContainer, flexDirCol = flexDirCol, flexDirColRev = flexDirColRev, flexDirRow = flexDirRow, flexDirRowRev = flexDirRowRev, flexOrder = flexOrder, flexOrderLarge = flexOrderLarge, flexOrderMedium = flexOrderMedium, flexOrderSmall = flexOrderSmall, selfAlignX = selfAlignX, selfAlignY = selfAlignY)
-  
-    __obj.asInstanceOf[Anon_AlignXAlignY]
-  }
+  @JSName("alignX")
+  var alignX_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("alignY")
+  var alignY_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("centerAlign")
+  var centerAlign_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexChild")
+  var flexChild_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexContainer")
+  var flexContainer_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexDirColRev")
+  var flexDirColRev_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexDirCol")
+  var flexDirCol_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexDirRowRev")
+  var flexDirRowRev_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexDirRow")
+  var flexDirRow_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexOrderLarge")
+  var flexOrderLarge_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexOrderMedium")
+  var flexOrderMedium_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexOrderSmall")
+  var flexOrderSmall_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexOrder")
+  var flexOrder_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("selfAlignX")
+  var selfAlignX_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("selfAlignY")
+  var selfAlignY_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  def alignX(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def alignY(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def centerAlign(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexChild(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexContainer(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexDirCol(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexDirColRev(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexDirRow(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexDirRowRev(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexOrder(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexOrderLarge(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexOrderMedium(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexOrderSmall(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def selfAlignX(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def selfAlignY(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
 }
 

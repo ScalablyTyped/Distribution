@@ -94,10 +94,7 @@ object MarkerClusterGroupOptions {
     chunkDelay: scala.Int | scala.Double = null,
     chunkedLoading: js.UndefOr[scala.Boolean] = js.undefined,
     disableClusteringAtZoom: scala.Int | scala.Double = null,
-    iconCreateFunction: js.Function1[
-      /* cluster */ MarkerCluster, 
-      leafletLib.leafletMod.Icon[leafletLib.leafletMod.IconOptions] | leafletLib.leafletMod.DivIcon
-    ] = null,
+    iconCreateFunction: /* cluster */ MarkerCluster => leafletLib.leafletMod.Icon[leafletLib.leafletMod.IconOptions] | leafletLib.leafletMod.DivIcon = null,
     maxClusterRadius: scala.Double | (js.Function1[/* zoom */ scala.Double, scala.Double]) = null,
     pane: java.lang.String = null,
     polygonOptions: leafletLib.leafletMod.PolylineOptions = null,
@@ -116,7 +113,7 @@ object MarkerClusterGroupOptions {
     if (chunkDelay != null) __obj.updateDynamic("chunkDelay")(chunkDelay.asInstanceOf[js.Any])
     if (!js.isUndefined(chunkedLoading)) __obj.updateDynamic("chunkedLoading")(chunkedLoading)
     if (disableClusteringAtZoom != null) __obj.updateDynamic("disableClusteringAtZoom")(disableClusteringAtZoom.asInstanceOf[js.Any])
-    if (iconCreateFunction != null) __obj.updateDynamic("iconCreateFunction")(iconCreateFunction)
+    if (iconCreateFunction != null) __obj.updateDynamic("iconCreateFunction")(js.Any.fromFunction1(iconCreateFunction))
     if (maxClusterRadius != null) __obj.updateDynamic("maxClusterRadius")(maxClusterRadius.asInstanceOf[js.Any])
     if (pane != null) __obj.updateDynamic("pane")(pane)
     if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions)

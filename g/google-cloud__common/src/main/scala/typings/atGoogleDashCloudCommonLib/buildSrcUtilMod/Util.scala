@@ -26,25 +26,6 @@ class Util () extends js.Object {
     */
   def getUserAgentFromPackageJson(packageJson: PackageJson): java.lang.String = js.native
   def handleResp(): scala.Unit = js.native
-  /**
-    * Uniformly process an API response.
-    *
-    * @param {*} err - Error value.
-    * @param {*} resp - Response value.
-    * @param {*} body - Body value.
-    * @param {function} callback - The callback function.
-    */
-  def handleResp(err: nodeLib.Error): scala.Unit = js.native
-  def handleResp(err: nodeLib.Error, resp: requestLib.requestMod.requestNs.Response): scala.Unit = js.native
-  def handleResp(err: nodeLib.Error, resp: requestLib.requestMod.requestNs.Response, body: ResponseBody): scala.Unit = js.native
-  def handleResp(
-    err: nodeLib.Error,
-    resp: requestLib.requestMod.requestNs.Response,
-    body: ResponseBody,
-    callback: BodyResponseCallback
-  ): scala.Unit = js.native
-  def handleResp(err: nodeLib.Error, resp: scala.Null, body: ResponseBody): scala.Unit = js.native
-  def handleResp(err: nodeLib.Error, resp: scala.Null, body: ResponseBody, callback: BodyResponseCallback): scala.Unit = js.native
   def handleResp(err: scala.Null, resp: requestLib.requestMod.requestNs.Response): scala.Unit = js.native
   def handleResp(err: scala.Null, resp: requestLib.requestMod.requestNs.Response, body: ResponseBody): scala.Unit = js.native
   def handleResp(
@@ -55,6 +36,25 @@ class Util () extends js.Object {
   ): scala.Unit = js.native
   def handleResp(err: scala.Null, resp: scala.Null, body: ResponseBody): scala.Unit = js.native
   def handleResp(err: scala.Null, resp: scala.Null, body: ResponseBody, callback: BodyResponseCallback): scala.Unit = js.native
+  /**
+    * Uniformly process an API response.
+    *
+    * @param {*} err - Error value.
+    * @param {*} resp - Response value.
+    * @param {*} body - Body value.
+    * @param {function} callback - The callback function.
+    */
+  def handleResp(err: stdLib.Error): scala.Unit = js.native
+  def handleResp(err: stdLib.Error, resp: requestLib.requestMod.requestNs.Response): scala.Unit = js.native
+  def handleResp(err: stdLib.Error, resp: requestLib.requestMod.requestNs.Response, body: ResponseBody): scala.Unit = js.native
+  def handleResp(
+    err: stdLib.Error,
+    resp: requestLib.requestMod.requestNs.Response,
+    body: ResponseBody,
+    callback: BodyResponseCallback
+  ): scala.Unit = js.native
+  def handleResp(err: stdLib.Error, resp: scala.Null, body: ResponseBody): scala.Unit = js.native
+  def handleResp(err: stdLib.Error, resp: scala.Null, body: ResponseBody, callback: BodyResponseCallback): scala.Unit = js.native
   def isCustomType(unknown: js.Any, module: java.lang.String): scala.Boolean = js.native
   /**
     * Get a function for making authenticated requests.

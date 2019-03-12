@@ -40,13 +40,13 @@ object HandleObject {
   @scala.inline
   def apply[TTarget, TData](
     data: TData,
-    handler: js.Function3[TTarget, TriggeredEvent[TTarget, TData, _, _], /* repeated */ js.Any, js.Any],
+    handler: (TTarget, TriggeredEvent[TTarget, TData, _, _], /* repeated */ js.Any) => js.Any,
     namespace: java.lang.String,
     origType: java.lang.String,
     `type`: java.lang.String,
     selector: java.lang.String = null
   ): HandleObject[TTarget, TData] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], handler = handler, namespace = namespace, origType = origType)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], handler = js.Any.fromFunction3(handler), namespace = namespace, origType = origType)
     __obj.updateDynamic("type")(`type`)
     if (selector != null) __obj.updateDynamic("selector")(selector)
     __obj.asInstanceOf[HandleObject[TTarget, TData]]

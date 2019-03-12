@@ -18,13 +18,9 @@ object Contravariant3C {
     URI: F,
     _L: L,
     _U: U,
-    contramap: js.Function2[
-      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
-    ]
+    contramap: (fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
   ): Contravariant3C[F, U, L] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], contramap = contramap)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], contramap = js.Any.fromFunction2(contramap))
   
     __obj.asInstanceOf[Contravariant3C[F, U, L]]
   }

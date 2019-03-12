@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait XDebugging
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** Returns the engine's stack trace of the current execute position. Line break is the delimiter. */
-  val StackTrace: activexDashInteropLib.SafeArray[java.lang.String]
+  val StackTrace: stdLib.SafeArray[java.lang.String]
   /** clears all breakpoints in the module set by "setBreakPoint". */
   def clearAllBreakPoints(aModuleName: java.lang.String): scala.Unit
   /** continues the program execution. */
@@ -32,7 +32,7 @@ trait XDebugging
     */
   def getContextInformation(nCallStackPos: scala.Double): ContextInformation
   /** Returns the engine's stack trace of the current execute position. Line break is the delimiter. */
-  def getStackTrace(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getStackTrace(): stdLib.SafeArray[java.lang.String]
   /** returns whether the given variable exists within the specified stack frame. */
   def isVariable(aVariableName: java.lang.String, nCallStackPos: scala.Double): scala.Boolean
   /**
@@ -72,25 +72,25 @@ trait XDebugging
 object XDebugging {
   @scala.inline
   def apply(
-    StackTrace: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    clearAllBreakPoints: js.Function1[java.lang.String, scala.Unit],
-    doContinue: js.Function0[scala.Unit],
-    dumpVariable: js.Function2[java.lang.String, scala.Double, java.lang.String],
-    eval: js.Function2[java.lang.String, scala.Double, java.lang.String],
-    getContextInformation: js.Function1[scala.Double, ContextInformation],
-    getStackTrace: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    isVariable: js.Function2[java.lang.String, scala.Double, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setBreakPoint: js.Function3[java.lang.String, scala.Double, scala.Boolean, scala.Double],
-    setVariable: js.Function3[java.lang.String, java.lang.String, scala.Double, scala.Unit],
-    stepIn: js.Function0[scala.Unit],
-    stepOut: js.Function0[scala.Unit],
-    stepOver: js.Function0[scala.Unit],
-    stop: js.Function0[scala.Unit]
+    StackTrace: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    clearAllBreakPoints: java.lang.String => scala.Unit,
+    doContinue: () => scala.Unit,
+    dumpVariable: (java.lang.String, scala.Double) => java.lang.String,
+    eval: (java.lang.String, scala.Double) => java.lang.String,
+    getContextInformation: scala.Double => ContextInformation,
+    getStackTrace: () => stdLib.SafeArray[java.lang.String],
+    isVariable: (java.lang.String, scala.Double) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setBreakPoint: (java.lang.String, scala.Double, scala.Boolean) => scala.Double,
+    setVariable: (java.lang.String, java.lang.String, scala.Double) => scala.Unit,
+    stepIn: () => scala.Unit,
+    stepOut: () => scala.Unit,
+    stepOver: () => scala.Unit,
+    stop: () => scala.Unit
   ): XDebugging = {
-    val __obj = js.Dynamic.literal(StackTrace = StackTrace, acquire = acquire, clearAllBreakPoints = clearAllBreakPoints, doContinue = doContinue, dumpVariable = dumpVariable, eval = eval, getContextInformation = getContextInformation, getStackTrace = getStackTrace, isVariable = isVariable, queryInterface = queryInterface, release = release, setBreakPoint = setBreakPoint, setVariable = setVariable, stepIn = stepIn, stepOut = stepOut, stepOver = stepOver, stop = stop)
+    val __obj = js.Dynamic.literal(StackTrace = StackTrace, acquire = js.Any.fromFunction0(acquire), clearAllBreakPoints = js.Any.fromFunction1(clearAllBreakPoints), doContinue = js.Any.fromFunction0(doContinue), dumpVariable = js.Any.fromFunction2(dumpVariable), eval = js.Any.fromFunction2(eval), getContextInformation = js.Any.fromFunction1(getContextInformation), getStackTrace = js.Any.fromFunction0(getStackTrace), isVariable = js.Any.fromFunction2(isVariable), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setBreakPoint = js.Any.fromFunction3(setBreakPoint), setVariable = js.Any.fromFunction3(setVariable), stepIn = js.Any.fromFunction0(stepIn), stepOut = js.Any.fromFunction0(stepOut), stepOver = js.Any.fromFunction0(stepOver), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[XDebugging]
   }

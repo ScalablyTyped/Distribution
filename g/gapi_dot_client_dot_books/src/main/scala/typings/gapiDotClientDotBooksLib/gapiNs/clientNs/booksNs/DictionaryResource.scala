@@ -13,12 +13,9 @@ trait DictionaryResource extends js.Object {
 object DictionaryResource {
   @scala.inline
   def apply(
-    listOfflineMetadata: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltCpksver, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Metadata]
-    ]
+    listOfflineMetadata: gapiDotClientDotBooksLib.Anon_AltCpksver => gapiDotClientLib.gapiNs.clientNs.Request[Metadata]
   ): DictionaryResource = {
-    val __obj = js.Dynamic.literal(listOfflineMetadata = listOfflineMetadata)
+    val __obj = js.Dynamic.literal(listOfflineMetadata = js.Any.fromFunction1(listOfflineMetadata))
   
     __obj.asInstanceOf[DictionaryResource]
   }

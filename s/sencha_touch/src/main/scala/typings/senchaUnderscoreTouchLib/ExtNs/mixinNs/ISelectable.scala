@@ -176,127 +176,100 @@ object ISelectable {
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     allowDeselect: js.UndefOr[scala.Boolean] = js.undefined,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    clearSelections: js.Function0[scala.Unit] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
+    clearSelections: () => scala.Unit = null,
     config: js.Any = null,
-    deselect: js.Function2[
-      /* records */ js.UndefOr[js.Any], 
-      /* suppressEvent */ js.UndefOr[scala.Boolean], 
-      scala.Unit
-    ] = null,
-    deselectAll: js.Function1[/* supress */ js.UndefOr[js.Any], scala.Unit] = null,
+    deselect: (/* records */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
+    deselectAll: /* supress */ js.UndefOr[js.Any] => scala.Unit = null,
     deselectOnContainerClick: js.UndefOr[scala.Boolean] = js.undefined,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     disableSelection: js.UndefOr[scala.Boolean] = js.undefined,
-    doDeselect: js.Function2[
-      /* records */ js.UndefOr[js.Any], 
-      /* suppressEvent */ js.UndefOr[scala.Boolean], 
-      scala.Unit
-    ] = null,
-    doSelect: js.Function3[
-      /* records */ js.UndefOr[js.Any], 
-      /* keepExisting */ js.UndefOr[scala.Boolean], 
-      /* suppressEvent */ js.UndefOr[scala.Boolean], 
-      scala.Unit
-    ] = null,
+    doDeselect: (/* records */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
+    doSelect: (/* records */ js.UndefOr[js.Any], /* keepExisting */ js.UndefOr[scala.Boolean], /* suppressEvent */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
     extend: java.lang.String = null,
-    getAllowDeselect: js.Function0[scala.Boolean] = null,
-    getCount: js.Function0[scala.Double] = null,
-    getDeselectOnContainerClick: js.Function0[scala.Boolean] = null,
-    getDisableSelection: js.Function0[scala.Boolean] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getLastSelected: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getMode: js.Function0[java.lang.String] = null,
-    getSelection: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getSelectionCount: js.Function0[scala.Double] = null,
-    getSelectionMode: js.Function0[java.lang.String] = null,
-    hasSelection: js.Function0[scala.Boolean] = null,
+    getAllowDeselect: () => scala.Boolean = null,
+    getCount: () => scala.Double = null,
+    getDeselectOnContainerClick: () => scala.Boolean = null,
+    getDisableSelection: () => scala.Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getLastSelected: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getMode: () => java.lang.String = null,
+    getSelection: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getSelectionCount: () => scala.Double = null,
+    getSelectionMode: () => java.lang.String = null,
+    hasSelection: () => scala.Boolean = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
-    isLocked: js.Function0[scala.Boolean] = null,
-    isSelected: js.Function1[/* record */ js.UndefOr[js.Any], scala.Boolean] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
+    isLocked: () => scala.Boolean = null,
+    isSelected: /* record */ js.UndefOr[js.Any] => scala.Boolean = null,
     locked: js.UndefOr[scala.Boolean] = js.undefined,
     mixins: js.Any = null,
     mode: java.lang.String = null,
     platformConfig: js.Any = null,
-    select: js.Function3[
-      /* records */ js.UndefOr[js.Any], 
-      /* keepExisting */ js.UndefOr[scala.Boolean], 
-      /* suppressEvent */ js.UndefOr[scala.Boolean], 
-      scala.Unit
-    ] = null,
-    selectAll: js.Function1[/* silent */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    selectRange: js.Function3[
-      /* startRecord */ js.UndefOr[scala.Double], 
-      /* endRecord */ js.UndefOr[scala.Double], 
-      /* keepExisting */ js.UndefOr[scala.Boolean], 
-      scala.Unit
-    ] = null,
+    select: (/* records */ js.UndefOr[js.Any], /* keepExisting */ js.UndefOr[scala.Boolean], /* suppressEvent */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
+    selectAll: /* silent */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    selectRange: (/* startRecord */ js.UndefOr[scala.Double], /* endRecord */ js.UndefOr[scala.Double], /* keepExisting */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setAllowDeselect: js.Function1[/* allowDeselect */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setDeselectOnContainerClick: js.Function1[/* deselectOnContainerClick */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setDisableSelection: js.Function1[/* disableSelection */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setLastFocused: js.Function0[scala.Unit] = null,
-    setMode: js.Function1[/* mode */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setAllowDeselect: /* allowDeselect */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setDeselectOnContainerClick: /* deselectOnContainerClick */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setDisableSelection: /* disableSelection */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setLastFocused: () => scala.Unit = null,
+    setMode: /* mode */ js.UndefOr[java.lang.String] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
-    updateLastFocused: js.Function2[
-      /* newRecord */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IRecord], 
-      /* oldRecord */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IRecord], 
-      scala.Unit
-    ] = null,
+    updateLastFocused: (/* newRecord */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IRecord], /* oldRecord */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IRecord]) => scala.Unit = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null
   ): ISelectable = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (!js.isUndefined(allowDeselect)) __obj.updateDynamic("allowDeselect")(allowDeselect)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
-    if (clearSelections != null) __obj.updateDynamic("clearSelections")(clearSelections)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
+    if (clearSelections != null) __obj.updateDynamic("clearSelections")(js.Any.fromFunction0(clearSelections))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (deselect != null) __obj.updateDynamic("deselect")(deselect)
-    if (deselectAll != null) __obj.updateDynamic("deselectAll")(deselectAll)
+    if (deselect != null) __obj.updateDynamic("deselect")(js.Any.fromFunction2(deselect))
+    if (deselectAll != null) __obj.updateDynamic("deselectAll")(js.Any.fromFunction1(deselectAll))
     if (!js.isUndefined(deselectOnContainerClick)) __obj.updateDynamic("deselectOnContainerClick")(deselectOnContainerClick)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (!js.isUndefined(disableSelection)) __obj.updateDynamic("disableSelection")(disableSelection)
-    if (doDeselect != null) __obj.updateDynamic("doDeselect")(doDeselect)
-    if (doSelect != null) __obj.updateDynamic("doSelect")(doSelect)
+    if (doDeselect != null) __obj.updateDynamic("doDeselect")(js.Any.fromFunction2(doDeselect))
+    if (doSelect != null) __obj.updateDynamic("doSelect")(js.Any.fromFunction3(doSelect))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getAllowDeselect != null) __obj.updateDynamic("getAllowDeselect")(getAllowDeselect)
-    if (getCount != null) __obj.updateDynamic("getCount")(getCount)
-    if (getDeselectOnContainerClick != null) __obj.updateDynamic("getDeselectOnContainerClick")(getDeselectOnContainerClick)
-    if (getDisableSelection != null) __obj.updateDynamic("getDisableSelection")(getDisableSelection)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getLastSelected != null) __obj.updateDynamic("getLastSelected")(getLastSelected)
-    if (getMode != null) __obj.updateDynamic("getMode")(getMode)
-    if (getSelection != null) __obj.updateDynamic("getSelection")(getSelection)
-    if (getSelectionCount != null) __obj.updateDynamic("getSelectionCount")(getSelectionCount)
-    if (getSelectionMode != null) __obj.updateDynamic("getSelectionMode")(getSelectionMode)
-    if (hasSelection != null) __obj.updateDynamic("hasSelection")(hasSelection)
+    if (getAllowDeselect != null) __obj.updateDynamic("getAllowDeselect")(js.Any.fromFunction0(getAllowDeselect))
+    if (getCount != null) __obj.updateDynamic("getCount")(js.Any.fromFunction0(getCount))
+    if (getDeselectOnContainerClick != null) __obj.updateDynamic("getDeselectOnContainerClick")(js.Any.fromFunction0(getDeselectOnContainerClick))
+    if (getDisableSelection != null) __obj.updateDynamic("getDisableSelection")(js.Any.fromFunction0(getDisableSelection))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getLastSelected != null) __obj.updateDynamic("getLastSelected")(js.Any.fromFunction0(getLastSelected))
+    if (getMode != null) __obj.updateDynamic("getMode")(js.Any.fromFunction0(getMode))
+    if (getSelection != null) __obj.updateDynamic("getSelection")(js.Any.fromFunction0(getSelection))
+    if (getSelectionCount != null) __obj.updateDynamic("getSelectionCount")(js.Any.fromFunction0(getSelectionCount))
+    if (getSelectionMode != null) __obj.updateDynamic("getSelectionMode")(js.Any.fromFunction0(getSelectionMode))
+    if (hasSelection != null) __obj.updateDynamic("hasSelection")(js.Any.fromFunction0(hasSelection))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
-    if (isLocked != null) __obj.updateDynamic("isLocked")(isLocked)
-    if (isSelected != null) __obj.updateDynamic("isSelected")(isSelected)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (isLocked != null) __obj.updateDynamic("isLocked")(js.Any.fromFunction0(isLocked))
+    if (isSelected != null) __obj.updateDynamic("isSelected")(js.Any.fromFunction1(isSelected))
     if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked)
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
-    if (select != null) __obj.updateDynamic("select")(select)
-    if (selectAll != null) __obj.updateDynamic("selectAll")(selectAll)
-    if (selectRange != null) __obj.updateDynamic("selectRange")(selectRange)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction3(select))
+    if (selectAll != null) __obj.updateDynamic("selectAll")(js.Any.fromFunction1(selectAll))
+    if (selectRange != null) __obj.updateDynamic("selectRange")(js.Any.fromFunction3(selectRange))
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setAllowDeselect != null) __obj.updateDynamic("setAllowDeselect")(setAllowDeselect)
-    if (setDeselectOnContainerClick != null) __obj.updateDynamic("setDeselectOnContainerClick")(setDeselectOnContainerClick)
-    if (setDisableSelection != null) __obj.updateDynamic("setDisableSelection")(setDisableSelection)
-    if (setLastFocused != null) __obj.updateDynamic("setLastFocused")(setLastFocused)
-    if (setMode != null) __obj.updateDynamic("setMode")(setMode)
+    if (setAllowDeselect != null) __obj.updateDynamic("setAllowDeselect")(js.Any.fromFunction1(setAllowDeselect))
+    if (setDeselectOnContainerClick != null) __obj.updateDynamic("setDeselectOnContainerClick")(js.Any.fromFunction1(setDeselectOnContainerClick))
+    if (setDisableSelection != null) __obj.updateDynamic("setDisableSelection")(js.Any.fromFunction1(setDisableSelection))
+    if (setLastFocused != null) __obj.updateDynamic("setLastFocused")(js.Any.fromFunction0(setLastFocused))
+    if (setMode != null) __obj.updateDynamic("setMode")(js.Any.fromFunction1(setMode))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
-    if (updateLastFocused != null) __obj.updateDynamic("updateLastFocused")(updateLastFocused)
+    if (updateLastFocused != null) __obj.updateDynamic("updateLastFocused")(js.Any.fromFunction2(updateLastFocused))
     if (uses != null) __obj.updateDynamic("uses")(uses)
     __obj.asInstanceOf[ISelectable]
   }

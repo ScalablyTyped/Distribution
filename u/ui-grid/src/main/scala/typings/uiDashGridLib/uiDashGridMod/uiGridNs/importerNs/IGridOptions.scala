@@ -68,7 +68,7 @@ trait IGridOptions[TEntity] extends js.Object {
     * Defaults to a vanilla javascript object
     * @default {}
     */
-  var importerNewObject: js.UndefOr[angularLib.angularMod.Global.Function] = js.undefined
+  var importerNewObject: js.UndefOr[js.Function] = js.undefined
   /**
     * A callback that massages the data for each object.
     * For example, you might have data stored as a code value, but display the decode.
@@ -124,40 +124,22 @@ object IGridOptions {
   @scala.inline
   def apply[TEntity](
     enableImporter: js.UndefOr[scala.Boolean] = js.undefined,
-    importerDataAddCallback: js.Function2[
-      /* grid */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridInstanceOf[TEntity], 
-      /* newObjects */ js.Array[TEntity], 
-      scala.Unit
-    ] = null,
-    importerErrorCallback: js.Function4[
-      /* grid */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridInstanceOf[TEntity], 
-      /* errorKey */ java.lang.String, 
-      /* consoleMessage */ java.lang.String, 
-      /* context */ js.Any, 
-      scala.Unit
-    ] = null,
-    importerHeaderFilter: js.Function1[/* displayName */ java.lang.String, java.lang.String] = null,
-    importerNewObject: angularLib.angularMod.Global.Function = null,
-    importerObjectCallback: js.Function2[
-      /* grid */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridInstanceOf[TEntity], 
-      /* newObject */ TEntity, 
-      TEntity
-    ] = null,
-    importerProcessHeaders: js.Function2[
-      /* grid */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridInstanceOf[TEntity], 
-      /* headerArray */ js.Array[java.lang.String], 
-      js.Array[java.lang.String]
-    ] = null,
+    importerDataAddCallback: (/* grid */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridInstanceOf[TEntity], /* newObjects */ js.Array[TEntity]) => scala.Unit = null,
+    importerErrorCallback: (/* grid */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridInstanceOf[TEntity], /* errorKey */ java.lang.String, /* consoleMessage */ java.lang.String, /* context */ js.Any) => scala.Unit = null,
+    importerHeaderFilter: /* displayName */ java.lang.String => java.lang.String = null,
+    importerNewObject: js.Function = null,
+    importerObjectCallback: (/* grid */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridInstanceOf[TEntity], /* newObject */ TEntity) => TEntity = null,
+    importerProcessHeaders: (/* grid */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridInstanceOf[TEntity], /* headerArray */ js.Array[java.lang.String]) => js.Array[java.lang.String] = null,
     importerShowMenu: js.UndefOr[scala.Boolean] = js.undefined
   ): IGridOptions[TEntity] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(enableImporter)) __obj.updateDynamic("enableImporter")(enableImporter)
-    if (importerDataAddCallback != null) __obj.updateDynamic("importerDataAddCallback")(importerDataAddCallback)
-    if (importerErrorCallback != null) __obj.updateDynamic("importerErrorCallback")(importerErrorCallback)
-    if (importerHeaderFilter != null) __obj.updateDynamic("importerHeaderFilter")(importerHeaderFilter)
+    if (importerDataAddCallback != null) __obj.updateDynamic("importerDataAddCallback")(js.Any.fromFunction2(importerDataAddCallback))
+    if (importerErrorCallback != null) __obj.updateDynamic("importerErrorCallback")(js.Any.fromFunction4(importerErrorCallback))
+    if (importerHeaderFilter != null) __obj.updateDynamic("importerHeaderFilter")(js.Any.fromFunction1(importerHeaderFilter))
     if (importerNewObject != null) __obj.updateDynamic("importerNewObject")(importerNewObject)
-    if (importerObjectCallback != null) __obj.updateDynamic("importerObjectCallback")(importerObjectCallback)
-    if (importerProcessHeaders != null) __obj.updateDynamic("importerProcessHeaders")(importerProcessHeaders)
+    if (importerObjectCallback != null) __obj.updateDynamic("importerObjectCallback")(js.Any.fromFunction2(importerObjectCallback))
+    if (importerProcessHeaders != null) __obj.updateDynamic("importerProcessHeaders")(js.Any.fromFunction2(importerProcessHeaders))
     if (!js.isUndefined(importerShowMenu)) __obj.updateDynamic("importerShowMenu")(importerShowMenu)
     __obj.asInstanceOf[IGridOptions[TEntity]]
   }

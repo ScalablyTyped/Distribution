@@ -16,11 +16,11 @@ object WorkMailNs extends js.Object {
     /**
       * The organization under which the resource exists.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
     /**
       * The resource for which members are associated.
       */
-    var ResourceId: ResourceId
+    var ResourceId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.ResourceId
   }
   
   trait AssociateDelegateToResourceResponse extends js.Object
@@ -37,7 +37,7 @@ object WorkMailNs extends js.Object {
     /**
       * The organization under which the group exists.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
   }
   
   trait AssociateMemberToGroupResponse extends js.Object
@@ -76,7 +76,7 @@ object WorkMailNs extends js.Object {
     /**
       * The organization under which the member exists.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
   }
   
   trait CreateAliasResponse extends js.Object
@@ -89,7 +89,7 @@ object WorkMailNs extends js.Object {
     /**
       * The organization under which the group is to be created.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
   }
   
   trait CreateGroupResponse extends js.Object {
@@ -107,7 +107,7 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier associated with the organization for which the resource is created.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
     /**
       * The type of the created resource.
       */
@@ -133,11 +133,11 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier of the organization for which the user is created.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
     /**
       * The password for the user to be created.
       */
-    var Password: Password
+    var Password: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.Password
   }
   
   trait CreateUserResponse extends js.Object {
@@ -170,7 +170,7 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier for the organization under which the user exists.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
   }
   
   trait DeleteAliasResponse extends js.Object
@@ -183,7 +183,7 @@ object WorkMailNs extends js.Object {
     /**
       * The organization that contains the group.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
   }
   
   trait DeleteGroupResponse extends js.Object
@@ -200,7 +200,7 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier of the organization under which the entity (user or group) exists.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
   }
   
   trait DeleteMailboxPermissionsResponse extends js.Object
@@ -209,11 +209,11 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier associated with the organization for which the resource is deleted.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
     /**
       * The identifier of the resource to be deleted.
       */
-    var ResourceId: ResourceId
+    var ResourceId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.ResourceId
   }
   
   trait DeleteResourceResponse extends js.Object
@@ -222,7 +222,7 @@ object WorkMailNs extends js.Object {
     /**
       * The organization that contains the user.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
     /**
       * The identifier of the user to be deleted.
       */
@@ -239,7 +239,7 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier for the organization under which the Amazon WorkMail entity exists.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
   }
   
   trait DeregisterFromWorkMailResponse extends js.Object
@@ -252,7 +252,7 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier for the organization under which the group exists.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
   }
   
   trait DescribeGroupResponse extends js.Object {
@@ -286,7 +286,7 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier for the organization to be described.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
   }
   
   trait DescribeOrganizationResponse extends js.Object {
@@ -328,11 +328,11 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier associated with the organization for which the resource is described.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
     /**
       * The identifier of the resource to be described.
       */
-    var ResourceId: ResourceId
+    var ResourceId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.ResourceId
   }
   
   trait DescribeResourceResponse extends js.Object {
@@ -374,7 +374,7 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier for the organization under which the user exists.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
     /**
       * The identifier for the user to be described.
       */
@@ -424,11 +424,11 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier for the organization under which the resource exists.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
     /**
       * The identifier of the resource from which delegates' set members are removed. 
       */
-    var ResourceId: ResourceId
+    var ResourceId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.ResourceId
   }
   
   trait DisassociateDelegateFromResourceResponse extends js.Object
@@ -445,7 +445,7 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier for the organization under which the group exists.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
   }
   
   trait DisassociateMemberFromGroupResponse extends js.Object
@@ -493,7 +493,7 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier for the organization under which the entity exists.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
   }
   
   trait ListAliasesResponse extends js.Object {
@@ -523,7 +523,7 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier for the organization under which the group exists.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
   }
   
   trait ListGroupMembersResponse extends js.Object {
@@ -549,7 +549,7 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier for the organization under which the groups exist.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
   }
   
   trait ListGroupsResponse extends js.Object {
@@ -579,7 +579,7 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier of the organization under which the entity (user or group) exists.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
   }
   
   trait ListMailboxPermissionsResponse extends js.Object {
@@ -627,7 +627,7 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier for the organization that contains the resource for which delegates are listed.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
     /**
       * The identifier for the resource whose delegates are listed.
       */
@@ -657,7 +657,7 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier for the organization under which the resources exist.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
   }
   
   trait ListResourcesResponse extends js.Object {
@@ -683,7 +683,7 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier for the organization under which the users exist.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
   }
   
   trait ListUsersResponse extends js.Object {
@@ -755,7 +755,7 @@ object WorkMailNs extends js.Object {
     /**
       * The permissions granted to the grantee. SEND_AS allows the grantee to send email as the owner of the mailbox (the grantee is not mentioned on these emails). SEND_ON_BEHALF allows the grantee to send email on behalf of the owner of the mailbox (the grantee is not mentioned as the physical sender of these emails). FULL_ACCESS allows the grantee full access to the mailbox, irrespective of other folder-level permissions set on the mailbox.
       */
-    var PermissionValues: PermissionValues
+    var PermissionValues: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.PermissionValues
   }
   
   trait PutMailboxPermissionsRequest extends js.Object {
@@ -770,11 +770,11 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier of the organization under which the entity (user or group) exists.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
     /**
       * The permissions granted to the grantee. SEND_AS allows the grantee to send email as the owner of the mailbox (the grantee is not mentioned on these emails). SEND_ON_BEHALF allows the grantee to send email on behalf of the owner of the mailbox (the grantee is not mentioned as the physical sender of these emails). FULL_ACCESS allows the grantee full access to the mailbox, irrespective of other folder-level permissions set on the mailbox.
       */
-    var PermissionValues: PermissionValues
+    var PermissionValues: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.PermissionValues
   }
   
   trait PutMailboxPermissionsResponse extends js.Object
@@ -791,7 +791,7 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier for the organization under which the Amazon WorkMail entity exists.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
   }
   
   trait RegisterToWorkMailResponse extends js.Object
@@ -800,11 +800,11 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier of the organization that contains the user for which the password is reset.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
     /**
       * The new password for the user.
       */
-    var Password: Password
+    var Password: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.Password
     /**
       * The identifier of the user for whom the password is reset.
       */
@@ -1576,7 +1576,7 @@ object WorkMailNs extends js.Object {
     /**
       * The organization that contains the entity to update.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
   }
   
   trait UpdatePrimaryEmailAddressResponse extends js.Object
@@ -1593,11 +1593,11 @@ object WorkMailNs extends js.Object {
     /**
       * The identifier associated with the organization for which the resource is updated.
       */
-    var OrganizationId: OrganizationId
+    var OrganizationId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.OrganizationId
     /**
       * The identifier of the resource to be updated.
       */
-    var ResourceId: ResourceId
+    var ResourceId: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.ResourceId
   }
   
   trait UpdateResourceResponse extends js.Object

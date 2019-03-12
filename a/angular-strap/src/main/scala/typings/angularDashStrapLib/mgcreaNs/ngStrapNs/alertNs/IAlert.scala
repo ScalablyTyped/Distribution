@@ -17,11 +17,11 @@ object IAlert {
   @scala.inline
   def apply(
     $promise: angularLib.angularMod.angularNs.IPromise[scala.Unit],
-    hide: js.Function0[scala.Unit],
-    show: js.Function0[scala.Unit],
-    toggle: js.Function0[scala.Unit]
+    hide: () => scala.Unit,
+    show: () => scala.Unit,
+    toggle: () => scala.Unit
   ): IAlert = {
-    val __obj = js.Dynamic.literal($promise = $promise, hide = hide, show = show, toggle = toggle)
+    val __obj = js.Dynamic.literal($promise = $promise, hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
   
     __obj.asInstanceOf[IAlert]
   }

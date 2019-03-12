@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("aphrodite", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var StyleSheet: aphroditeLib.aphroditeMod.StyleSheetStatic = js.native
-  var StyleSheetServer: aphroditeLib.aphroditeMod.StyleSheetServerStatic = js.native
-  var StyleSheetTestUtils: aphroditeLib.aphroditeMod.StyleSheetTestUtilsStatic = js.native
+  var StyleSheet: StyleSheetStatic = js.native
+  var StyleSheetServer: StyleSheetServerStatic = js.native
+  var StyleSheetTestUtils: StyleSheetTestUtilsStatic = js.native
   def css(styles: js.Any*): java.lang.String = js.native
 }
 

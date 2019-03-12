@@ -12,9 +12,15 @@ trait DeflateRaw
      with ZlibReset
      with ZlibParams {
   /* InferMemberOverrides */
-  override def _destroy(error: nodeLib.Error, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
+  override def _destroy(
+    error: nodeLib.Error,
+    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+  ): scala.Unit = js.native
   /* InferMemberOverrides */
-  override def _destroy(error: scala.Null, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
+  override def _destroy(
+    error: scala.Null,
+    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Event emitter
     * The defined events on documents including:

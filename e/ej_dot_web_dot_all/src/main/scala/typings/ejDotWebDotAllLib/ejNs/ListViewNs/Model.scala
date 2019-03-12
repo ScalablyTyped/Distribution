@@ -150,11 +150,11 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    ajaxBeforeLoad: js.Function1[/* e */ AjaxBeforeLoadEventArgs, scala.Unit] = null,
-    ajaxComplete: js.Function1[/* e */ AjaxCompleteEventArgs, scala.Unit] = null,
-    ajaxError: js.Function1[/* e */ AjaxErrorEventArgs, scala.Unit] = null,
+    ajaxBeforeLoad: /* e */ AjaxBeforeLoadEventArgs => scala.Unit = null,
+    ajaxComplete: /* e */ AjaxCompleteEventArgs => scala.Unit = null,
+    ajaxError: /* e */ AjaxErrorEventArgs => scala.Unit = null,
     ajaxSettings: AjaxSettings = null,
-    ajaxSuccess: js.Function1[/* e */ AjaxSuccessEventArgs, scala.Unit] = null,
+    ajaxSuccess: /* e */ AjaxSuccessEventArgs => scala.Unit = null,
     allowVirtualScrolling: js.UndefOr[scala.Boolean] = js.undefined,
     checkedIndices: js.Array[_] = null,
     cssClass: java.lang.String = null,
@@ -171,11 +171,11 @@ object Model {
     height: java.lang.String | scala.Double = null,
     itemRequestCount: scala.Int | scala.Double = null,
     items: js.Array[_] = null,
-    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
-    loadComplete: js.Function1[/* e */ LoadCompleteEventArgs, scala.Unit] = null,
+    load: /* e */ LoadEventArgs => scala.Unit = null,
+    loadComplete: /* e */ LoadCompleteEventArgs => scala.Unit = null,
     locale: java.lang.String = null,
-    mouseDown: js.Function1[/* e */ MouseDownEventArgs, scala.Unit] = null,
-    mouseUp: js.Function1[/* e */ MouseUpEventArgs, scala.Unit] = null,
+    mouseDown: /* e */ MouseDownEventArgs => scala.Unit = null,
+    mouseUp: /* e */ MouseUpEventArgs => scala.Unit = null,
     persistSelection: js.UndefOr[scala.Boolean] = js.undefined,
     preventSelection: js.UndefOr[scala.Boolean] = js.undefined,
     query: js.Any = null,
@@ -189,11 +189,11 @@ object Model {
     width: java.lang.String | scala.Double = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (ajaxBeforeLoad != null) __obj.updateDynamic("ajaxBeforeLoad")(ajaxBeforeLoad)
-    if (ajaxComplete != null) __obj.updateDynamic("ajaxComplete")(ajaxComplete)
-    if (ajaxError != null) __obj.updateDynamic("ajaxError")(ajaxError)
+    if (ajaxBeforeLoad != null) __obj.updateDynamic("ajaxBeforeLoad")(js.Any.fromFunction1(ajaxBeforeLoad))
+    if (ajaxComplete != null) __obj.updateDynamic("ajaxComplete")(js.Any.fromFunction1(ajaxComplete))
+    if (ajaxError != null) __obj.updateDynamic("ajaxError")(js.Any.fromFunction1(ajaxError))
     if (ajaxSettings != null) __obj.updateDynamic("ajaxSettings")(ajaxSettings)
-    if (ajaxSuccess != null) __obj.updateDynamic("ajaxSuccess")(ajaxSuccess)
+    if (ajaxSuccess != null) __obj.updateDynamic("ajaxSuccess")(js.Any.fromFunction1(ajaxSuccess))
     if (!js.isUndefined(allowVirtualScrolling)) __obj.updateDynamic("allowVirtualScrolling")(allowVirtualScrolling)
     if (checkedIndices != null) __obj.updateDynamic("checkedIndices")(checkedIndices)
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
@@ -210,11 +210,11 @@ object Model {
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (itemRequestCount != null) __obj.updateDynamic("itemRequestCount")(itemRequestCount.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items)
-    if (load != null) __obj.updateDynamic("load")(load)
-    if (loadComplete != null) __obj.updateDynamic("loadComplete")(loadComplete)
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
+    if (loadComplete != null) __obj.updateDynamic("loadComplete")(js.Any.fromFunction1(loadComplete))
     if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (mouseDown != null) __obj.updateDynamic("mouseDown")(mouseDown)
-    if (mouseUp != null) __obj.updateDynamic("mouseUp")(mouseUp)
+    if (mouseDown != null) __obj.updateDynamic("mouseDown")(js.Any.fromFunction1(mouseDown))
+    if (mouseUp != null) __obj.updateDynamic("mouseUp")(js.Any.fromFunction1(mouseUp))
     if (!js.isUndefined(persistSelection)) __obj.updateDynamic("persistSelection")(persistSelection)
     if (!js.isUndefined(preventSelection)) __obj.updateDynamic("preventSelection")(preventSelection)
     if (query != null) __obj.updateDynamic("query")(query)

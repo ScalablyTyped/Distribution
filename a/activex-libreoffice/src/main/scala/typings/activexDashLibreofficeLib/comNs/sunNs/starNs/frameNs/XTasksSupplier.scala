@@ -38,13 +38,13 @@ object XTasksSupplier {
   def apply(
     ActiveTask: XTask,
     Tasks: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess,
-    acquire: js.Function0[scala.Unit],
-    getActiveTask: js.Function0[XTask],
-    getTasks: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getActiveTask: () => XTask,
+    getTasks: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTasksSupplier = {
-    val __obj = js.Dynamic.literal(ActiveTask = ActiveTask, Tasks = Tasks, acquire = acquire, getActiveTask = getActiveTask, getTasks = getTasks, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ActiveTask = ActiveTask, Tasks = Tasks, acquire = js.Any.fromFunction0(acquire), getActiveTask = js.Any.fromFunction0(getActiveTask), getTasks = js.Any.fromFunction0(getTasks), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTasksSupplier]
   }

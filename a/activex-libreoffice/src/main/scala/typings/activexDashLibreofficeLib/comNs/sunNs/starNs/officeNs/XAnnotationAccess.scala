@@ -18,11 +18,11 @@ trait XAnnotationAccess extends js.Object {
 object XAnnotationAccess {
   @scala.inline
   def apply(
-    createAndInsertAnnotation: js.Function0[XAnnotation],
-    createAnnotationEnumeration: js.Function0[XAnnotationEnumeration],
-    removeAnnotation: js.Function1[XAnnotation, scala.Unit]
+    createAndInsertAnnotation: () => XAnnotation,
+    createAnnotationEnumeration: () => XAnnotationEnumeration,
+    removeAnnotation: XAnnotation => scala.Unit
   ): XAnnotationAccess = {
-    val __obj = js.Dynamic.literal(createAndInsertAnnotation = createAndInsertAnnotation, createAnnotationEnumeration = createAnnotationEnumeration, removeAnnotation = removeAnnotation)
+    val __obj = js.Dynamic.literal(createAndInsertAnnotation = js.Any.fromFunction0(createAndInsertAnnotation), createAnnotationEnumeration = js.Any.fromFunction0(createAnnotationEnumeration), removeAnnotation = js.Any.fromFunction1(removeAnnotation))
   
     __obj.asInstanceOf[XAnnotationAccess]
   }

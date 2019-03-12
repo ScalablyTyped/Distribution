@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SyncObjects protected () extends js.Object {
   val AppFolders: SyncObject = js.native
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: scala.Double = js.native
   var `Outlook.SyncObjects_typekey`: SyncObjects = js.native

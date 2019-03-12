@@ -13,12 +13,9 @@ trait AttachmentsResource extends js.Object {
 object AttachmentsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFieldsId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[MessagePartBody]
-    ]
+    get: gapiDotClientDotGmailLib.Anon_AltFieldsId => gapiDotClientLib.gapiNs.clientNs.Request[MessagePartBody]
   ): AttachmentsResource = {
-    val __obj = js.Dynamic.literal(get = get)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[AttachmentsResource]
   }

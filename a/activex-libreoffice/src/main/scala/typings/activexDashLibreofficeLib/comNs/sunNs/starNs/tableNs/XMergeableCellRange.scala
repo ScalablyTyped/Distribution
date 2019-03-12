@@ -28,14 +28,14 @@ trait XMergeableCellRange
 object XMergeableCellRange {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    isMergeable: js.Function0[scala.Boolean],
-    merge: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    split: js.Function2[scala.Double, scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    isMergeable: () => scala.Boolean,
+    merge: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    split: (scala.Double, scala.Double) => scala.Unit
   ): XMergeableCellRange = {
-    val __obj = js.Dynamic.literal(acquire = acquire, isMergeable = isMergeable, merge = merge, queryInterface = queryInterface, release = release, split = split)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), isMergeable = js.Any.fromFunction0(isMergeable), merge = js.Any.fromFunction0(merge), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), split = js.Any.fromFunction2(split))
   
     __obj.asInstanceOf[XMergeableCellRange]
   }

@@ -24,11 +24,8 @@ trait NodeRequire extends js.Object {
 
 object NodeRequire {
   @scala.inline
-  def apply(
-    requireActual: js.Function1[java.lang.String, js.Any],
-    requireMock: js.Function1[java.lang.String, js.Any]
-  ): NodeRequire = {
-    val __obj = js.Dynamic.literal(requireActual = requireActual, requireMock = requireMock)
+  def apply(requireActual: java.lang.String => js.Any, requireMock: java.lang.String => js.Any): NodeRequire = {
+    val __obj = js.Dynamic.literal(requireActual = js.Any.fromFunction1(requireActual), requireMock = js.Any.fromFunction1(requireMock))
   
     __obj.asInstanceOf[NodeRequire]
   }

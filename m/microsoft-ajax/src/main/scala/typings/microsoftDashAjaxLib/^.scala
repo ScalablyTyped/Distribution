@@ -82,21 +82,15 @@ object ^ extends js.Object {
   * @returns A new instance of a component that uses the specified parameters.
   */
   @JSName("$create")
-  def $create(`type`: microsoftDashAjaxLib.Type): microsoftDashAjaxLib.SysNs.Component = js.native
+  def $create(`type`: Type): microsoftDashAjaxLib.SysNs.Component = js.native
   @JSName("$create")
-  def $create(`type`: microsoftDashAjaxLib.Type, properties: js.Any): microsoftDashAjaxLib.SysNs.Component = js.native
+  def $create(`type`: Type, properties: js.Any): microsoftDashAjaxLib.SysNs.Component = js.native
   @JSName("$create")
-  def $create(`type`: microsoftDashAjaxLib.Type, properties: js.Any, events: js.Any): microsoftDashAjaxLib.SysNs.Component = js.native
+  def $create(`type`: Type, properties: js.Any, events: js.Any): microsoftDashAjaxLib.SysNs.Component = js.native
   @JSName("$create")
-  def $create(`type`: microsoftDashAjaxLib.Type, properties: js.Any, events: js.Any, references: js.Any): microsoftDashAjaxLib.SysNs.Component = js.native
+  def $create(`type`: Type, properties: js.Any, events: js.Any, references: js.Any): microsoftDashAjaxLib.SysNs.Component = js.native
   @JSName("$create")
-  def $create(
-    `type`: microsoftDashAjaxLib.Type,
-    properties: js.Any,
-    events: js.Any,
-    references: js.Any,
-    element: stdLib.HTMLElement
-  ): microsoftDashAjaxLib.SysNs.Component = js.native
+  def $create(`type`: Type, properties: js.Any, events: js.Any, references: js.Any, element: stdLib.HTMLElement): microsoftDashAjaxLib.SysNs.Component = js.native
   /**
   * Returns the specified Component object. This member is static and can be invoked without creating an instance of the class.
   * @see {@link http://msdn.microsoft.com/en-us/library/bb397441(v=vs.100).aspx}

@@ -13,12 +13,7 @@ object ^ extends js.Object {
     * Fired when a new theme has been applied
     * @param updateInfo Details of the theme update
     */
-  val onUpdated: firefoxDashWebextDashBrowserLib.WebExtEvent[
-    js.Function1[
-      /* updateInfo */ firefoxDashWebextDashBrowserLib.browserNs.themeNs.ThemeUpdateInfo, 
-      scala.Unit
-    ]
-  ] = js.native
+  val onUpdated: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* updateInfo */ ThemeUpdateInfo, scala.Unit]] = js.native
   /* theme functions */
   /**
     * Returns the current theme for the specified window or the last focused window.

@@ -12,8 +12,8 @@ trait CommandOptionRegex extends js.Object {
 
 object CommandOptionRegex {
   @scala.inline
-  def apply(callback: js.Function0[scala.Unit], regexp: stdLib.RegExp): CommandOptionRegex = {
-    val __obj = js.Dynamic.literal(callback = callback, regexp = regexp)
+  def apply(callback: () => scala.Unit, regexp: stdLib.RegExp): CommandOptionRegex = {
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), regexp = regexp)
   
     __obj.asInstanceOf[CommandOptionRegex]
   }

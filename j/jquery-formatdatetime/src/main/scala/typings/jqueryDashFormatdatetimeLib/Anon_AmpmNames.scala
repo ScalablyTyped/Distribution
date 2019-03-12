@@ -52,12 +52,12 @@ object Anon_AmpmNames {
     dayNames: js.Array[java.lang.String],
     dayNamesShort: js.Array[java.lang.String],
     formatAttribute: java.lang.String,
-    getSuffix: js.Function1[scala.Double, java.lang.String],
+    getSuffix: scala.Double => java.lang.String,
     monthNames: js.Array[java.lang.String],
     monthNamesShort: js.Array[java.lang.String],
     utc: scala.Boolean
   ): Anon_AmpmNames = {
-    val __obj = js.Dynamic.literal(ampmNames = ampmNames, attribute = attribute, dayNames = dayNames, dayNamesShort = dayNamesShort, formatAttribute = formatAttribute, getSuffix = getSuffix, monthNames = monthNames, monthNamesShort = monthNamesShort, utc = utc)
+    val __obj = js.Dynamic.literal(ampmNames = ampmNames, attribute = attribute, dayNames = dayNames, dayNamesShort = dayNamesShort, formatAttribute = formatAttribute, getSuffix = js.Any.fromFunction1(getSuffix), monthNames = monthNames, monthNamesShort = monthNamesShort, utc = utc)
   
     __obj.asInstanceOf[Anon_AmpmNames]
   }

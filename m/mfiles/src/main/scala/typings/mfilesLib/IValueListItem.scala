@@ -28,12 +28,12 @@ object IValueListItem {
   @scala.inline
   def apply(
     AutomaticPermissionsForObjects: IAutomaticPermissions,
-    Clone: js.Function0[IValueListItem],
-    CloneFrom: js.Function1[IValueListItem, scala.Unit],
+    Clone: () => IValueListItem,
+    CloneFrom: IValueListItem => scala.Unit,
     Deleted: scala.Boolean,
     DisplayID: java.lang.String,
     DisplayIDAvailable: scala.Boolean,
-    GetIconAsPNG: js.Function2[scala.Double, scala.Double, js.Array[scala.Double]],
+    GetIconAsPNG: (scala.Double, scala.Double) => js.Array[scala.Double],
     HasOwner: scala.Boolean,
     HasParent: scala.Boolean,
     ID: scala.Double,
@@ -44,7 +44,7 @@ object IValueListItem {
     ParentID: scala.Double,
     ValueListID: mfilesLib.MFilesNs.MFBuiltInValueList | scala.Double
   ): IValueListItem = {
-    val __obj = js.Dynamic.literal(AutomaticPermissionsForObjects = AutomaticPermissionsForObjects, Clone = Clone, CloneFrom = CloneFrom, Deleted = Deleted, DisplayID = DisplayID, DisplayIDAvailable = DisplayIDAvailable, GetIconAsPNG = GetIconAsPNG, HasOwner = HasOwner, HasParent = HasParent, ID = ID, Icon = Icon, ItemGUID = ItemGUID, Name = Name, OwnerID = OwnerID, ParentID = ParentID, ValueListID = ValueListID.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AutomaticPermissionsForObjects = AutomaticPermissionsForObjects, Clone = js.Any.fromFunction0(Clone), CloneFrom = js.Any.fromFunction1(CloneFrom), Deleted = Deleted, DisplayID = DisplayID, DisplayIDAvailable = DisplayIDAvailable, GetIconAsPNG = js.Any.fromFunction2(GetIconAsPNG), HasOwner = HasOwner, HasParent = HasParent, ID = ID, Icon = Icon, ItemGUID = ItemGUID, Name = Name, OwnerID = OwnerID, ParentID = ParentID, ValueListID = ValueListID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IValueListItem]
   }

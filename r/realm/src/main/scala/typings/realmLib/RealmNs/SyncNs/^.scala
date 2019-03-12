@@ -9,25 +9,19 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def addListener(
-    config: realmLib.RealmNs.SyncNs.RealmListenerConfiguration,
-    eventName: realmLib.RealmNs.SyncNs.RealmListenerEventName,
-    changeCallback: js.Function1[
-      /* changeEvent */ realmLib.RealmNs.SyncNs.ChangeEvent, 
-      js.Promise[scala.Unit] | scala.Unit
-    ]
+    config: RealmListenerConfiguration,
+    eventName: RealmListenerEventName,
+    changeCallback: js.Function1[/* changeEvent */ ChangeEvent, js.Promise[scala.Unit] | scala.Unit]
   ): scala.Unit = js.native
   /**
     * @deprecated, to be removed in future versions
     */
   def addListener(
     serverURL: java.lang.String,
-    adminUser: realmLib.RealmNs.SyncNs.User,
+    adminUser: User,
     regex: java.lang.String,
-    name: realmLib.RealmNs.SyncNs.RealmListenerEventName,
-    changeCallback: js.Function1[
-      /* changeEvent */ realmLib.RealmNs.SyncNs.ChangeEvent, 
-      js.Promise[scala.Unit] | scala.Unit
-    ]
+    name: RealmListenerEventName,
+    changeCallback: js.Function1[/* changeEvent */ ChangeEvent, js.Promise[scala.Unit] | scala.Unit]
   ): scala.Unit = js.native
   def initiateClientReset(path: java.lang.String): scala.Unit = js.native
   def reconnect(): scala.Unit = js.native
@@ -35,7 +29,7 @@ object ^ extends js.Object {
   def removeListener(
     regex: java.lang.String,
     name: java.lang.String,
-    changeCallback: js.Function1[/* changeEvent */ realmLib.RealmNs.SyncNs.ChangeEvent, scala.Unit]
+    changeCallback: js.Function1[/* changeEvent */ ChangeEvent, scala.Unit]
   ): js.Promise[scala.Unit] = js.native
   /**
     * @deprecated, to be removed in future versions

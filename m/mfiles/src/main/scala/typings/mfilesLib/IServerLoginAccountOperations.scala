@@ -20,17 +20,17 @@ trait IServerLoginAccountOperations extends js.Object {
 object IServerLoginAccountOperations {
   @scala.inline
   def apply(
-    AddLoginAccount: js.Function2[ILoginAccount, java.lang.String, scala.Unit],
-    ForceLogout: js.Function1[IStrings, scala.Unit],
-    GetLoginAccount: js.Function1[java.lang.String, ILoginAccount],
-    GetLoginAccounts: js.Function0[ILoginAccounts],
-    GetLoginAccountsWithSessions: js.Function0[ILoginAccounts],
-    GetPersonalInformationFromDomain: js.Function1[java.lang.String, ILoginAccountPersonalInformation],
-    ModifyLoginAccount: js.Function1[ILoginAccount, scala.Unit],
-    RemoveLoginAccount: js.Function1[java.lang.String, scala.Unit],
-    UpdateLoginPassword: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    AddLoginAccount: (ILoginAccount, java.lang.String) => scala.Unit,
+    ForceLogout: IStrings => scala.Unit,
+    GetLoginAccount: java.lang.String => ILoginAccount,
+    GetLoginAccounts: () => ILoginAccounts,
+    GetLoginAccountsWithSessions: () => ILoginAccounts,
+    GetPersonalInformationFromDomain: java.lang.String => ILoginAccountPersonalInformation,
+    ModifyLoginAccount: ILoginAccount => scala.Unit,
+    RemoveLoginAccount: java.lang.String => scala.Unit,
+    UpdateLoginPassword: (java.lang.String, java.lang.String) => scala.Unit
   ): IServerLoginAccountOperations = {
-    val __obj = js.Dynamic.literal(AddLoginAccount = AddLoginAccount, ForceLogout = ForceLogout, GetLoginAccount = GetLoginAccount, GetLoginAccounts = GetLoginAccounts, GetLoginAccountsWithSessions = GetLoginAccountsWithSessions, GetPersonalInformationFromDomain = GetPersonalInformationFromDomain, ModifyLoginAccount = ModifyLoginAccount, RemoveLoginAccount = RemoveLoginAccount, UpdateLoginPassword = UpdateLoginPassword)
+    val __obj = js.Dynamic.literal(AddLoginAccount = js.Any.fromFunction2(AddLoginAccount), ForceLogout = js.Any.fromFunction1(ForceLogout), GetLoginAccount = js.Any.fromFunction1(GetLoginAccount), GetLoginAccounts = js.Any.fromFunction0(GetLoginAccounts), GetLoginAccountsWithSessions = js.Any.fromFunction0(GetLoginAccountsWithSessions), GetPersonalInformationFromDomain = js.Any.fromFunction1(GetPersonalInformationFromDomain), ModifyLoginAccount = js.Any.fromFunction1(ModifyLoginAccount), RemoveLoginAccount = js.Any.fromFunction1(RemoveLoginAccount), UpdateLoginPassword = js.Any.fromFunction2(UpdateLoginPassword))
   
     __obj.asInstanceOf[IServerLoginAccountOperations]
   }

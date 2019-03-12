@@ -11,8 +11,8 @@ trait SVGAnalyzer extends js.Object {
 
 object SVGAnalyzer {
   @scala.inline
-  def apply(isStandardSvgAttribute: js.Function2[java.lang.String, java.lang.String, scala.Boolean]): SVGAnalyzer = {
-    val __obj = js.Dynamic.literal(isStandardSvgAttribute = isStandardSvgAttribute)
+  def apply(isStandardSvgAttribute: (java.lang.String, java.lang.String) => scala.Boolean): SVGAnalyzer = {
+    val __obj = js.Dynamic.literal(isStandardSvgAttribute = js.Any.fromFunction2(isStandardSvgAttribute))
   
     __obj.asInstanceOf[SVGAnalyzer]
   }

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Command extends js.Object {
-  var canExecute: knockoutLib.KnockoutComputed[scala.Boolean] = js.native
+  @JSName("canExecute")
+  var canExecute_Original: knockoutLib.KnockoutComputed[scala.Boolean] = js.native
   @JSName("completed")
   var completed_Original: knockoutLib.KnockoutObservable[scala.Boolean] = js.native
   @JSName("failed")
@@ -20,6 +21,8 @@ trait Command extends js.Object {
   // execute the command
   def apply(): scala.Unit = js.native
   def always(callback: js.Function): Command = js.native
+  def canExecute(): scala.Boolean = js.native
+  def canExecute(value: scala.Boolean): scala.Unit = js.native
   def completed(): scala.Boolean = js.native
   def completed(value: scala.Boolean): scala.Unit = js.native
   //

@@ -17,12 +17,9 @@ trait ActivitiesResource extends js.Object {
 object ActivitiesResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotAppsactivityLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListActivitiesResponse]
-    ]
+    list: gapiDotClientDotAppsactivityLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ListActivitiesResponse]
   ): ActivitiesResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ActivitiesResource]
   }

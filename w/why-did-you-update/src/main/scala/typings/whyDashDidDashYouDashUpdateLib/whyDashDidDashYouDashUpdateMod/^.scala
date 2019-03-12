@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def whyDidYouUpdate(react: whyDashDidDashYouDashUpdateLib.Anon_A): scala.Unit = js.native
-  def whyDidYouUpdate(
-    react: whyDashDidDashYouDashUpdateLib.Anon_A,
-    options: whyDashDidDashYouDashUpdateLib.whyDashDidDashYouDashUpdateMod.Options
-  ): scala.Unit = js.native
+  def whyDidYouUpdate(react: whyDashDidDashYouDashUpdateLib.Anon_A, options: Options): scala.Unit = js.native
 }
 

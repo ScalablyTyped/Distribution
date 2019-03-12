@@ -23,7 +23,7 @@ trait FormulaParser
     * documents. The sequence must be in the order of indices used. Note that indices are 1-based, the sequence must start with an empty element.
     * @since OOo 3.1
     */
-  var ExternalLinks: activexDashInteropLib.SafeArray[ExternalLinkInfo] = js.native
+  var ExternalLinks: stdLib.SafeArray[ExternalLinkInfo] = js.native
   /**
     * specifies which address reference style convention to use when parsing a formula string.
     * @see AddressConvention
@@ -35,7 +35,7 @@ trait FormulaParser
     *
     * Names and symbols not defined here lead to a parser/print error.
     */
-  var OpCodeMap: activexDashInteropLib.SafeArray[FormulaOpCodeMapEntry] = js.native
+  var OpCodeMap: stdLib.SafeArray[FormulaOpCodeMapEntry] = js.native
   var ParameterSeparator: java.lang.String = js.native
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object to which this interface belongs. NULL is returned if the obj

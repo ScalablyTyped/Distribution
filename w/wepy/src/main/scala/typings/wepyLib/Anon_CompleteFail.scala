@@ -14,11 +14,11 @@ trait Anon_CompleteFail extends js.Object {
 object Anon_CompleteFail {
   @scala.inline
   def apply(
-    complete: js.Function0[scala.Unit],
-    fail: js.Function0[scala.Unit],
-    success: js.Function1[wepyLib.wxUnderscoreEnhancedMod.LagLng, scala.Unit]
+    complete: () => scala.Unit,
+    fail: () => scala.Unit,
+    success: wepyLib.wxUnderscoreEnhancedMod.LagLng => scala.Unit
   ): Anon_CompleteFail = {
-    val __obj = js.Dynamic.literal(complete = complete, fail = fail, success = success)
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), fail = js.Any.fromFunction0(fail), success = js.Any.fromFunction1(success))
   
     __obj.asInstanceOf[Anon_CompleteFail]
   }

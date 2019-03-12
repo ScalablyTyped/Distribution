@@ -42,13 +42,13 @@ class Socket ()
   def addListener_timeout(event: nodeLib.nodeLibStrings.timeout, listener: js.Function0[scala.Unit]): this.type = js.native
   def address(): AddressInfo | java.lang.String = js.native
   def connect(options: SocketConnectOpts): this.type = js.native
-  def connect(options: SocketConnectOpts, connectionListener: js.Function): this.type = js.native
+  def connect(options: SocketConnectOpts, connectionListener: js.Function0[scala.Unit]): this.type = js.native
   def connect(path: java.lang.String): this.type = js.native
-  def connect(path: java.lang.String, connectionListener: js.Function): this.type = js.native
+  def connect(path: java.lang.String, connectionListener: js.Function0[scala.Unit]): this.type = js.native
   def connect(port: scala.Double): this.type = js.native
-  def connect(port: scala.Double, connectionListener: js.Function): this.type = js.native
+  def connect(port: scala.Double, connectionListener: js.Function0[scala.Unit]): this.type = js.native
   def connect(port: scala.Double, host: java.lang.String): this.type = js.native
-  def connect(port: scala.Double, host: java.lang.String, connectionListener: js.Function): this.type = js.native
+  def connect(port: scala.Double, host: java.lang.String, connectionListener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("emit")
   def emit_close(event: nodeLib.nodeLibStrings.close, had_error: scala.Boolean): scala.Boolean = js.native
   @JSName("emit")
@@ -73,6 +73,10 @@ class Socket ()
   ): scala.Boolean = js.native
   @JSName("emit")
   def emit_timeout(event: nodeLib.nodeLibStrings.timeout): scala.Boolean = js.native
+  def end(str: nodeLib.Buffer, encoding: java.lang.String): scala.Unit = js.native
+  def end(str: nodeLib.Buffer, encoding: java.lang.String, cb: js.Function0[scala.Unit]): scala.Unit = js.native
+  def end(str: stdLib.Uint8Array, encoding: java.lang.String): scala.Unit = js.native
+  def end(str: stdLib.Uint8Array, encoding: java.lang.String, cb: js.Function0[scala.Unit]): scala.Unit = js.native
   @JSName("on")
   def on_close(
     event: nodeLib.nodeLibStrings.close,
@@ -161,9 +165,19 @@ class Socket ()
   def setNoDelay(): this.type = js.native
   def setNoDelay(noDelay: scala.Boolean): this.type = js.native
   def setTimeout(timeout: scala.Double): this.type = js.native
-  def setTimeout(timeout: scala.Double, callback: js.Function): this.type = js.native
+  def setTimeout(timeout: scala.Double, callback: js.Function0[scala.Unit]): this.type = js.native
   def unref(): scala.Unit = js.native
-  def write(data: js.Any, encoding: java.lang.String, callback: js.Function): scala.Unit = js.native
-  def write(str: java.lang.String, encoding: java.lang.String, fd: java.lang.String): scala.Boolean = js.native
+  def write(str: nodeLib.Buffer, encoding: java.lang.String): scala.Boolean = js.native
+  def write(
+    str: nodeLib.Buffer,
+    encoding: java.lang.String,
+    cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+  ): scala.Boolean = js.native
+  def write(str: stdLib.Uint8Array, encoding: java.lang.String): scala.Boolean = js.native
+  def write(
+    str: stdLib.Uint8Array,
+    encoding: java.lang.String,
+    cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+  ): scala.Boolean = js.native
 }
 

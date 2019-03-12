@@ -56,7 +56,7 @@ object CreateComponentOptions {
     playerHandler: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerHandler = null,
     rendererFactory: atAngularCoreLib.srcRender3InterfacesRendererMod.RendererFactory3 = null,
     sanitizer: atAngularCoreLib.srcSanitizationSecurityMod.Sanitizer = null,
-    scheduler: js.Function1[/* work */ js.Function0[scala.Unit], scala.Unit] = null
+    scheduler: /* work */ js.Function0[scala.Unit] => scala.Unit = null
   ): CreateComponentOptions = {
     val __obj = js.Dynamic.literal()
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
@@ -65,7 +65,7 @@ object CreateComponentOptions {
     if (playerHandler != null) __obj.updateDynamic("playerHandler")(playerHandler)
     if (rendererFactory != null) __obj.updateDynamic("rendererFactory")(rendererFactory)
     if (sanitizer != null) __obj.updateDynamic("sanitizer")(sanitizer)
-    if (scheduler != null) __obj.updateDynamic("scheduler")(scheduler)
+    if (scheduler != null) __obj.updateDynamic("scheduler")(js.Any.fromFunction1(scheduler))
     __obj.asInstanceOf[CreateComponentOptions]
   }
 }

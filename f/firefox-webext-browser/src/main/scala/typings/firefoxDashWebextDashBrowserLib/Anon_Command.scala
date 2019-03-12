@@ -29,16 +29,14 @@ trait Anon_Command extends js.Object {
 object Anon_Command {
   @scala.inline
   def apply(
-    getAll: js.Function0[
-      js.Promise[
-        js.UndefOr[js.Array[firefoxDashWebextDashBrowserLib.browserNs.commandsNs.Command]]
-      ]
+    getAll: () => js.Promise[
+      js.UndefOr[js.Array[firefoxDashWebextDashBrowserLib.browserNs.commandsNs.Command]]
     ],
     onCommand: WebExtEvent[js.Function1[/* command */ java.lang.String, scala.Unit]],
-    reset: js.Function1[java.lang.String, js.Promise[scala.Unit]],
-    update: js.Function1[Anon_Description, js.Promise[scala.Unit]]
+    reset: java.lang.String => js.Promise[scala.Unit],
+    update: Anon_Description => js.Promise[scala.Unit]
   ): Anon_Command = {
-    val __obj = js.Dynamic.literal(getAll = getAll, onCommand = onCommand, reset = reset, update = update)
+    val __obj = js.Dynamic.literal(getAll = js.Any.fromFunction0(getAll), onCommand = onCommand, reset = js.Any.fromFunction1(reset), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[Anon_Command]
   }

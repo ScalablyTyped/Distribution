@@ -63,18 +63,18 @@ trait GeoShapeFilter extends Filter {
 object GeoShapeFilter {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cache: js.Function1[scala.Boolean, GeoShapeFilter],
-    cacheKey: js.Function1[java.lang.String, GeoShapeFilter],
-    field: js.Function1[java.lang.String, GeoShapeFilter],
-    indexedShape: js.Function1[java.lang.String, GeoShapeFilter],
-    name: js.Function1[java.lang.String, GeoShapeFilter],
-    relation: js.Function1[java.lang.String, GeoShapeFilter],
-    shape: js.Function1[java.lang.String, GeoShapeFilter],
-    strategy: js.Function1[java.lang.String, GeoShapeFilter],
-    toJSON: js.Function0[GeoShapeFilter]
+    _type: () => java.lang.String,
+    cache: scala.Boolean => GeoShapeFilter,
+    cacheKey: java.lang.String => GeoShapeFilter,
+    field: java.lang.String => GeoShapeFilter,
+    indexedShape: java.lang.String => GeoShapeFilter,
+    name: java.lang.String => GeoShapeFilter,
+    relation: java.lang.String => GeoShapeFilter,
+    shape: java.lang.String => GeoShapeFilter,
+    strategy: java.lang.String => GeoShapeFilter,
+    toJSON: () => GeoShapeFilter
   ): GeoShapeFilter = {
-    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, field = field, indexedShape = indexedShape, name = name, relation = relation, shape = shape, strategy = strategy, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), field = js.Any.fromFunction1(field), indexedShape = js.Any.fromFunction1(indexedShape), name = js.Any.fromFunction1(name), relation = js.Any.fromFunction1(relation), shape = js.Any.fromFunction1(shape), strategy = js.Any.fromFunction1(strategy), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[GeoShapeFilter]
   }

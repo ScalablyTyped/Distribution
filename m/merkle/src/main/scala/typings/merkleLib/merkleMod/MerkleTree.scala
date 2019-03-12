@@ -16,13 +16,13 @@ trait MerkleTree extends js.Object {
 object MerkleTree {
   @scala.inline
   def apply(
-    depth: js.Function0[scala.Double],
-    level: js.Function1[scala.Double, js.UndefOr[scala.Double]],
-    levels: js.Function0[scala.Double],
-    nodes: js.Function0[scala.Double],
-    root: js.Function0[java.lang.String]
+    depth: () => scala.Double,
+    level: scala.Double => js.UndefOr[scala.Double],
+    levels: () => scala.Double,
+    nodes: () => scala.Double,
+    root: () => java.lang.String
   ): MerkleTree = {
-    val __obj = js.Dynamic.literal(depth = depth, level = level, levels = levels, nodes = nodes, root = root)
+    val __obj = js.Dynamic.literal(depth = js.Any.fromFunction0(depth), level = js.Any.fromFunction1(level), levels = js.Any.fromFunction0(levels), nodes = js.Any.fromFunction0(nodes), root = js.Any.fromFunction0(root))
   
     __obj.asInstanceOf[MerkleTree]
   }

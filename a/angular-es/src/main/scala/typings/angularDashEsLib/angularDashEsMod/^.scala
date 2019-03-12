@@ -15,11 +15,11 @@ object ^ extends js.Object {
     *
     * @returns {ngESDecorator} - decorated class
     */
-  def Component(component: angularDashEsLib.angularDashEsMod.iComponent): angularDashEsLib.angularDashEsMod.ngESDecorator = js.native
+  def Component(component: iComponent): ngESDecorator = js.native
   /**
     * Register config block
     */
-  def Config(): angularDashEsLib.angularDashEsMod.ngESDecorator = js.native
+  def Config(): ngESDecorator = js.native
   /**
     * Register constant
     *
@@ -27,7 +27,7 @@ object ^ extends js.Object {
     *
     * @returns {ngESDecorator} - decorated class
     */
-  def Constant(name: java.lang.String): angularDashEsLib.angularDashEsMod.ngESDecorator = js.native
+  def Constant(name: java.lang.String): ngESDecorator = js.native
   /**
     * Register controller
     *
@@ -35,7 +35,7 @@ object ^ extends js.Object {
     *
     * @returns {ngESDecorator} - decorated class
     */
-  def Controller(name: java.lang.String): angularDashEsLib.angularDashEsMod.ngESDecorator = js.native
+  def Controller(name: java.lang.String): ngESDecorator = js.native
   /**
     * Register decorator
     *
@@ -43,7 +43,7 @@ object ^ extends js.Object {
     *
     * @returns {ngESDecorator} - decorated class
     */
-  def Decorator(name: java.lang.String): angularDashEsLib.angularDashEsMod.ngESDecorator = js.native
+  def Decorator(name: java.lang.String): ngESDecorator = js.native
   /**
     * Register directive
     *
@@ -51,7 +51,7 @@ object ^ extends js.Object {
     *
     * @returns {ngESDecorator} - decorated class
     */
-  def Directive(name: java.lang.String): angularDashEsLib.angularDashEsMod.ngESDecorator = js.native
+  def Directive(name: java.lang.String): ngESDecorator = js.native
   /**
     * Register factory
     *
@@ -59,7 +59,7 @@ object ^ extends js.Object {
     *
     * @returns {ngESDecorator} - decorated class
     */
-  def Factory(name: java.lang.String): angularDashEsLib.angularDashEsMod.ngESDecorator = js.native
+  def Factory(name: java.lang.String): ngESDecorator = js.native
   /**
     * Register filter
     *
@@ -67,7 +67,7 @@ object ^ extends js.Object {
     *
     * @returns {ngESDecorator} - decorated class
     */
-  def Filter(name: java.lang.String): angularDashEsLib.angularDashEsMod.ngESDecorator = js.native
+  def Filter(name: java.lang.String): ngESDecorator = js.native
   /**
     * Add $inject property to target
     *
@@ -75,7 +75,7 @@ object ^ extends js.Object {
     *
     * @returns {ngESDecorator} - decorated class
     */
-  def Inject(dependencies: java.lang.String*): angularDashEsLib.angularDashEsMod.ngESDecorator = js.native
+  def Inject(dependencies: java.lang.String*): ngESDecorator = js.native
   /**
     * Inject dependencies as properties to target
     *
@@ -83,7 +83,7 @@ object ^ extends js.Object {
     *
     * @returns {ngESDecorator} - decorated class
     */
-  def InjectAsProperty(dependencies: java.lang.String*): angularDashEsLib.angularDashEsMod.ngESDecorator = js.native
+  def InjectAsProperty(dependencies: java.lang.String*): ngESDecorator = js.native
   /**
     * Attach target to the specified module
     *
@@ -91,7 +91,7 @@ object ^ extends js.Object {
     *
     * @returns {ngESDecorator} - decorated class
     */
-  def Module(name: java.lang.String): angularDashEsLib.angularDashEsMod.ngESDecorator = js.native
+  def Module(name: java.lang.String): ngESDecorator = js.native
   /**
     * Register provider
     *
@@ -99,13 +99,13 @@ object ^ extends js.Object {
     *
     * @returns {ngESDecorator} - decorated class
     */
-  def Provider(name: java.lang.String): angularDashEsLib.angularDashEsMod.ngESDecorator = js.native
+  def Provider(name: java.lang.String): ngESDecorator = js.native
   /**
     * Register run block
     *
     * @returns {ngESDecorator} - decorated class
     */
-  def Run(): angularDashEsLib.angularDashEsMod.ngESDecorator = js.native
+  def Run(): ngESDecorator = js.native
   /**
     * Register service
     *
@@ -113,7 +113,7 @@ object ^ extends js.Object {
     *
     * @returns {ngESDecorator} - decorated class
     */
-  def Service(name: java.lang.String): angularDashEsLib.angularDashEsMod.ngESDecorator = js.native
+  def Service(name: java.lang.String): ngESDecorator = js.native
   /**
     * Register value
     *
@@ -121,6 +121,6 @@ object ^ extends js.Object {
     *
     * @returns {ngESDecorator} - decorated class
     */
-  def Value(name: java.lang.String): angularDashEsLib.angularDashEsMod.ngESDecorator = js.native
+  def Value(name: java.lang.String): ngESDecorator = js.native
 }
 

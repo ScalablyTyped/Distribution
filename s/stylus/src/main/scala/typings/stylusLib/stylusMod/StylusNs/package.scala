@@ -13,7 +13,7 @@ package object StylusNs {
     scala.Unit
   ]
   type RenderCallback = js.Function3[
-    /* err */ nodeLib.Error, 
+    /* err */ stdLib.Error, 
     /* css */ java.lang.String, 
     /* js */ java.lang.String, 
     scala.Unit

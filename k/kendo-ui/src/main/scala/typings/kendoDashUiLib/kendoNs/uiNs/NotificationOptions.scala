@@ -31,11 +31,11 @@ object NotificationOptions {
     autoHideAfter: scala.Int | scala.Double = null,
     button: js.UndefOr[scala.Boolean] = js.undefined,
     height: scala.Double | java.lang.String = null,
-    hide: js.Function1[/* e */ NotificationHideEvent, scala.Unit] = null,
+    hide: /* e */ NotificationHideEvent => scala.Unit = null,
     hideOnClick: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
     position: NotificationPosition = null,
-    show: js.Function1[/* e */ NotificationShowEvent, scala.Unit] = null,
+    show: /* e */ NotificationShowEvent => scala.Unit = null,
     stacking: java.lang.String = null,
     templates: js.Array[NotificationTemplate] = null,
     width: scala.Double | java.lang.String = null
@@ -47,11 +47,11 @@ object NotificationOptions {
     if (autoHideAfter != null) __obj.updateDynamic("autoHideAfter")(autoHideAfter.asInstanceOf[js.Any])
     if (!js.isUndefined(button)) __obj.updateDynamic("button")(button)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
     if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick)
     if (name != null) __obj.updateDynamic("name")(name)
     if (position != null) __obj.updateDynamic("position")(position)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
     if (stacking != null) __obj.updateDynamic("stacking")(stacking)
     if (templates != null) __obj.updateDynamic("templates")(templates)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

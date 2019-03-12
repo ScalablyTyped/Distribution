@@ -28,20 +28,20 @@ object ^ extends js.Object {
   def enable(): js.Promise[scala.Unit] = js.native
   def enable(tabId: scala.Double): js.Promise[scala.Unit] = js.native
   /** Gets the background color of the browser action badge. */
-  def getBadgeBackgroundColor(details: firefoxDashWebextDashBrowserLib.browserNs.browserActionNs.Details): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.browserActionNs.ColorArray] = js.native
+  def getBadgeBackgroundColor(details: Details): js.Promise[ColorArray] = js.native
   /**
     * Gets the badge text of the browser action. If no tab nor window is specified is specified, the global badge text
     * is returned.
     */
-  def getBadgeText(details: firefoxDashWebextDashBrowserLib.browserNs.browserActionNs.Details): js.Promise[java.lang.String] = js.native
+  def getBadgeText(details: Details): js.Promise[java.lang.String] = js.native
   /** Gets the text color of the browser action badge. */
-  def getBadgeTextColor(details: firefoxDashWebextDashBrowserLib.browserNs.browserActionNs.Details): js.Promise[_] = js.native
+  def getBadgeTextColor(details: Details): js.Promise[_] = js.native
   /** Gets the html document set as the popup for this browser action. */
-  def getPopup(details: firefoxDashWebextDashBrowserLib.browserNs.browserActionNs.Details): js.Promise[java.lang.String] = js.native
+  def getPopup(details: Details): js.Promise[java.lang.String] = js.native
   /** Gets the title of the browser action. */
-  def getTitle(details: firefoxDashWebextDashBrowserLib.browserNs.browserActionNs.Details): js.Promise[java.lang.String] = js.native
+  def getTitle(details: Details): js.Promise[java.lang.String] = js.native
   /** Checks whether the browser action is enabled. */
-  def isEnabled(details: firefoxDashWebextDashBrowserLib.browserNs.browserActionNs.Details): js.Promise[_] = js.native
+  def isEnabled(details: Details): js.Promise[_] = js.native
   /** Opens the extension popup window in the active window. */
   def openPopup(): js.Promise[scala.Unit] = js.native
   /**

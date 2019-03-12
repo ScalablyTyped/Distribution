@@ -14,11 +14,11 @@ trait Anon_DisabledOption extends js.Object {
 object Anon_DisabledOption {
   @scala.inline
   def apply(
-    toggleOption: js.Function1[antdLib.libCheckboxGroupMod.CheckboxOptionType, scala.Unit],
+    toggleOption: antdLib.libCheckboxGroupMod.CheckboxOptionType => scala.Unit,
     value: js.Any,
     disabled: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_DisabledOption = {
-    val __obj = js.Dynamic.literal(toggleOption = toggleOption, value = value)
+    val __obj = js.Dynamic.literal(toggleOption = js.Any.fromFunction1(toggleOption), value = value)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     __obj.asInstanceOf[Anon_DisabledOption]
   }

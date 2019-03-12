@@ -30,17 +30,10 @@ trait FormatLocaleObject extends js.Object {
 object FormatLocaleObject {
   @scala.inline
   def apply(
-    format: js.Function1[
-      java.lang.String, 
-      js.Function1[/* n */ scala.Double | d3DashFormatLib.Anon_ValueOf, java.lang.String]
-    ],
-    formatPrefix: js.Function2[
-      java.lang.String, 
-      scala.Double, 
-      js.Function1[/* n */ scala.Double | d3DashFormatLib.Anon_ValueOf, java.lang.String]
-    ]
+    format: java.lang.String => js.Function1[/* n */ scala.Double | d3DashFormatLib.Anon_ValueOf, java.lang.String],
+    formatPrefix: (java.lang.String, scala.Double) => js.Function1[/* n */ scala.Double | d3DashFormatLib.Anon_ValueOf, java.lang.String]
   ): FormatLocaleObject = {
-    val __obj = js.Dynamic.literal(format = format, formatPrefix = formatPrefix)
+    val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format), formatPrefix = js.Any.fromFunction2(formatPrefix))
   
     __obj.asInstanceOf[FormatLocaleObject]
   }

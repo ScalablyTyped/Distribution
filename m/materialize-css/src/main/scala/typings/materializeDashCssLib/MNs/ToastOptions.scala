@@ -45,13 +45,13 @@ object ToastOptions {
   def apply(
     activationPercent: scala.Double,
     classes: java.lang.String,
-    completeCallback: js.Function0[scala.Unit],
+    completeCallback: () => scala.Unit,
     displayLength: scala.Double,
     html: java.lang.String,
     inDuration: scala.Double,
     outDuration: scala.Double
   ): ToastOptions = {
-    val __obj = js.Dynamic.literal(activationPercent = activationPercent, classes = classes, completeCallback = completeCallback, displayLength = displayLength, html = html, inDuration = inDuration, outDuration = outDuration)
+    val __obj = js.Dynamic.literal(activationPercent = activationPercent, classes = classes, completeCallback = js.Any.fromFunction0(completeCallback), displayLength = displayLength, html = html, inDuration = inDuration, outDuration = outDuration)
   
     __obj.asInstanceOf[ToastOptions]
   }

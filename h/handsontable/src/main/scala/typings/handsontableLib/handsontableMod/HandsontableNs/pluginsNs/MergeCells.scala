@@ -18,28 +18,28 @@ trait MergeCells extends Base {
 object MergeCells {
   @scala.inline
   def apply(
-    addHook: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit],
+    addHook: (java.lang.String, js.Function0[scala.Unit]) => scala.Unit,
     autofillCalculations: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.MergeCellsPluginNs.AutofillCalculations,
-    callOnPluginsReady: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    clearCollections: js.Function0[scala.Unit],
-    clearHooks: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    disablePlugin: js.Function0[scala.Unit],
-    enablePlugin: js.Function0[scala.Unit],
+    callOnPluginsReady: js.Function0[scala.Unit] => scala.Unit,
+    clearCollections: () => scala.Unit,
+    clearHooks: () => scala.Unit,
+    destroy: () => scala.Unit,
+    disablePlugin: () => scala.Unit,
+    enablePlugin: () => scala.Unit,
     enabled: scala.Boolean,
-    init: js.Function0[scala.Unit],
+    init: () => scala.Unit,
     initialized: scala.Boolean,
     isPluginsReady: scala.Boolean,
-    merge: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
-    mergeSelection: js.Function1[handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange, scala.Unit],
+    merge: (scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    mergeSelection: handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange => scala.Unit,
     mergedCellsCollection: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.MergeCellsPluginNs.MergedCellsCollection,
     pluginName: java.lang.String,
     pluginsInitializedCallback: js.Array[_],
-    removeHook: js.Function1[java.lang.String, scala.Unit],
+    removeHook: java.lang.String => scala.Unit,
     selectionCalculations: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.MergeCellsPluginNs.SelectionCalculations,
-    unmerge: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit]
+    unmerge: (scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit
   ): MergeCells = {
-    val __obj = js.Dynamic.literal(addHook = addHook, autofillCalculations = autofillCalculations, callOnPluginsReady = callOnPluginsReady, clearCollections = clearCollections, clearHooks = clearHooks, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, init = init, initialized = initialized, isPluginsReady = isPluginsReady, merge = merge, mergeSelection = mergeSelection, mergedCellsCollection = mergedCellsCollection, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook, selectionCalculations = selectionCalculations, unmerge = unmerge)
+    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), autofillCalculations = autofillCalculations, callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearCollections = js.Any.fromFunction0(clearCollections), clearHooks = js.Any.fromFunction0(clearHooks), destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, merge = js.Any.fromFunction4(merge), mergeSelection = js.Any.fromFunction1(mergeSelection), mergedCellsCollection = mergedCellsCollection, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = js.Any.fromFunction1(removeHook), selectionCalculations = selectionCalculations, unmerge = js.Any.fromFunction4(unmerge))
   
     __obj.asInstanceOf[MergeCells]
   }

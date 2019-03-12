@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class DefaultWebOptions protected () extends js.Object {
   var AllowPNG: scala.Boolean = js.native
   var AlwaysSaveInDefaultEncoding: scala.Boolean = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var BrowserLevel: WdBrowserLevel = js.native
   var CheckIfOfficeIsHTMLEditor: scala.Boolean = js.native
   var CheckIfWordIsDefaultHTMLEditor: scala.Boolean = js.native

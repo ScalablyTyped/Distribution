@@ -28,7 +28,7 @@ object RangyClassApplierOptions {
     elementTagName: java.lang.String = null,
     ignoreWhiteSpace: js.UndefOr[scala.Boolean] = js.undefined,
     normalize: js.UndefOr[scala.Boolean] = js.undefined,
-    onElementCreate: js.Function2[/* element */ stdLib.Element, /* classApplier */ RangyClassApplier, scala.Unit] = null,
+    onElementCreate: (/* element */ stdLib.Element, /* classApplier */ RangyClassApplier) => scala.Unit = null,
     tagNames: java.lang.String | js.Array[java.lang.String] = null,
     useExistingElements: js.UndefOr[scala.Boolean] = js.undefined
   ): RangyClassApplierOptions = {
@@ -39,7 +39,7 @@ object RangyClassApplierOptions {
     if (elementTagName != null) __obj.updateDynamic("elementTagName")(elementTagName)
     if (!js.isUndefined(ignoreWhiteSpace)) __obj.updateDynamic("ignoreWhiteSpace")(ignoreWhiteSpace)
     if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize)
-    if (onElementCreate != null) __obj.updateDynamic("onElementCreate")(onElementCreate)
+    if (onElementCreate != null) __obj.updateDynamic("onElementCreate")(js.Any.fromFunction2(onElementCreate))
     if (tagNames != null) __obj.updateDynamic("tagNames")(tagNames.asInstanceOf[js.Any])
     if (!js.isUndefined(useExistingElements)) __obj.updateDynamic("useExistingElements")(useExistingElements)
     __obj.asInstanceOf[RangyClassApplierOptions]

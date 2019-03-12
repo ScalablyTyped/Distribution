@@ -30,15 +30,8 @@ trait IValidationMessages extends js.Object {
 object IValidationMessages {
   @scala.inline
   def apply(
-    addStringMessage: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    addTemplateOptionValueMessage: js.Function5[
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      scala.Unit
-    ],
+    addStringMessage: (java.lang.String, java.lang.String) => scala.Unit,
+    addTemplateOptionValueMessage: (java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String) => scala.Unit,
     messages: org.scalablytyped.runtime.StringDictionary[
       js.Function3[
         /* $viewValue */ js.Any, 
@@ -48,7 +41,7 @@ object IValidationMessages {
       ]
     ]
   ): IValidationMessages = {
-    val __obj = js.Dynamic.literal(addStringMessage = addStringMessage, addTemplateOptionValueMessage = addTemplateOptionValueMessage, messages = messages)
+    val __obj = js.Dynamic.literal(addStringMessage = js.Any.fromFunction2(addStringMessage), addTemplateOptionValueMessage = js.Any.fromFunction5(addTemplateOptionValueMessage), messages = messages)
   
     __obj.asInstanceOf[IValidationMessages]
   }

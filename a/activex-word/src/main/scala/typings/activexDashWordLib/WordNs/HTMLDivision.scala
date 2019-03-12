@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.HTMLDivision")
 @js.native
 class HTMLDivision protected () extends js.Object {
-  val Application: Application = js.native
-  val Borders: Borders = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
+  val Borders: activexDashWordLib.WordNs.Borders = js.native
   val Creator: scala.Double = js.native
-  val HTMLDivisions: HTMLDivisions = js.native
+  val HTMLDivisions: activexDashWordLib.WordNs.HTMLDivisions = js.native
   var LeftIndent: scala.Double = js.native
   val Parent: js.Any = js.native
-  val Range: Range = js.native
+  val Range: activexDashWordLib.WordNs.Range = js.native
   var RightIndent: scala.Double = js.native
   var SpaceAfter: scala.Double = js.native
   var SpaceBefore: scala.Double = js.native

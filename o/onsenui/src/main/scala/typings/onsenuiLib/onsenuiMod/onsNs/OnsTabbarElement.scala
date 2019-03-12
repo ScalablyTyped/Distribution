@@ -16,7 +16,7 @@ trait OnsTabbarElement
     * @param {Object} animationOptions Object containing duration and timing.
     * @description Hook called whenever the user slides the tabbar.
     **/
-  var onSwipe: js.UndefOr[coreDashJsLib.Function] = js.native
+  var onSwipe: js.UndefOr[js.Function] = js.native
   /**
     * @description true if the tabbar is swipeable.
     **/

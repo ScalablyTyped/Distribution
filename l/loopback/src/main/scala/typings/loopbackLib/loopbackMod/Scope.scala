@@ -37,7 +37,7 @@ object Scope extends js.Object {
     property: java.lang.String,
     accessType: java.lang.String,
     callback: js.Function2[
-      /* err */ java.lang.String | nodeLib.Error, 
+      /* err */ java.lang.String | stdLib.Error, 
       /* result */ loopbackLib.loopbackMod.lNs.AccessRequest, 
       scala.Unit
     ]

@@ -203,13 +203,13 @@ object GridCoreProps {
     deferredMeasurementCache: reactDashVirtualizedLib.distEsCellMeasurerMod.CellMeasurerCache = null,
     estimatedColumnSize: scala.Int | scala.Double = null,
     estimatedRowSize: scala.Int | scala.Double = null,
-    getScrollbarSize: js.Function0[scala.Double] = null,
+    getScrollbarSize: () => scala.Double = null,
     id: java.lang.String = null,
     isScrolling: js.UndefOr[scala.Boolean] = js.undefined,
-    noContentRenderer: js.Function0[reactLib.reactMod.ReactNs.ReactNode] = null,
-    onScroll: js.Function1[/* params */ ScrollParams, _] = null,
-    onScrollbarPresenceChange: js.Function1[/* params */ ScrollbarPresenceParams, _] = null,
-    onSectionRendered: js.Function1[/* params */ SectionRenderedParams, _] = null,
+    noContentRenderer: () => reactLib.reactMod.ReactNs.ReactNode = null,
+    onScroll: /* params */ ScrollParams => _ = null,
+    onScrollbarPresenceChange: /* params */ ScrollbarPresenceParams => _ = null,
+    onSectionRendered: /* params */ SectionRenderedParams => _ = null,
     overscanColumnCount: scala.Int | scala.Double = null,
     overscanIndicesGetter: OverscanIndicesGetter = null,
     overscanRowCount: scala.Int | scala.Double = null,
@@ -238,13 +238,13 @@ object GridCoreProps {
     if (deferredMeasurementCache != null) __obj.updateDynamic("deferredMeasurementCache")(deferredMeasurementCache)
     if (estimatedColumnSize != null) __obj.updateDynamic("estimatedColumnSize")(estimatedColumnSize.asInstanceOf[js.Any])
     if (estimatedRowSize != null) __obj.updateDynamic("estimatedRowSize")(estimatedRowSize.asInstanceOf[js.Any])
-    if (getScrollbarSize != null) __obj.updateDynamic("getScrollbarSize")(getScrollbarSize)
+    if (getScrollbarSize != null) __obj.updateDynamic("getScrollbarSize")(js.Any.fromFunction0(getScrollbarSize))
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(isScrolling)) __obj.updateDynamic("isScrolling")(isScrolling)
-    if (noContentRenderer != null) __obj.updateDynamic("noContentRenderer")(noContentRenderer)
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
-    if (onScrollbarPresenceChange != null) __obj.updateDynamic("onScrollbarPresenceChange")(onScrollbarPresenceChange)
-    if (onSectionRendered != null) __obj.updateDynamic("onSectionRendered")(onSectionRendered)
+    if (noContentRenderer != null) __obj.updateDynamic("noContentRenderer")(js.Any.fromFunction0(noContentRenderer))
+    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
+    if (onScrollbarPresenceChange != null) __obj.updateDynamic("onScrollbarPresenceChange")(js.Any.fromFunction1(onScrollbarPresenceChange))
+    if (onSectionRendered != null) __obj.updateDynamic("onSectionRendered")(js.Any.fromFunction1(onSectionRendered))
     if (overscanColumnCount != null) __obj.updateDynamic("overscanColumnCount")(overscanColumnCount.asInstanceOf[js.Any])
     if (overscanIndicesGetter != null) __obj.updateDynamic("overscanIndicesGetter")(overscanIndicesGetter)
     if (overscanRowCount != null) __obj.updateDynamic("overscanRowCount")(overscanRowCount.asInstanceOf[js.Any])

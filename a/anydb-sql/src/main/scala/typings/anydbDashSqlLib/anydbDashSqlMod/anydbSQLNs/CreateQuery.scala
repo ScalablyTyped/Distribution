@@ -13,16 +13,16 @@ trait CreateQuery
 object CreateQuery {
   @scala.inline
   def apply(
-    all: js.Function0[bluebirdLib.bluebirdMod.namespaced[js.Array[scala.Unit]]],
-    allWithin: js.Function1[DatabaseConnection, bluebirdLib.bluebirdMod.namespaced[js.Array[scala.Unit]]],
-    exec: js.Function0[bluebirdLib.bluebirdMod.namespaced[scala.Unit]],
-    execWithin: js.Function1[DatabaseConnection, bluebirdLib.bluebirdMod.namespaced[scala.Unit]],
-    get: js.Function0[bluebirdLib.bluebirdMod.namespaced[scala.Unit]],
-    getWithin: js.Function1[DatabaseConnection, bluebirdLib.bluebirdMod.namespaced[scala.Unit]],
-    ifNotExists: js.Function0[Executable[scala.Unit]],
-    toQuery: js.Function0[QueryLike]
+    all: () => bluebirdLib.bluebirdMod.namespaced[js.Array[scala.Unit]],
+    allWithin: DatabaseConnection => bluebirdLib.bluebirdMod.namespaced[js.Array[scala.Unit]],
+    exec: () => bluebirdLib.bluebirdMod.namespaced[scala.Unit],
+    execWithin: DatabaseConnection => bluebirdLib.bluebirdMod.namespaced[scala.Unit],
+    get: () => bluebirdLib.bluebirdMod.namespaced[scala.Unit],
+    getWithin: DatabaseConnection => bluebirdLib.bluebirdMod.namespaced[scala.Unit],
+    ifNotExists: () => Executable[scala.Unit],
+    toQuery: () => QueryLike
   ): CreateQuery = {
-    val __obj = js.Dynamic.literal(all = all, allWithin = allWithin, exec = exec, execWithin = execWithin, get = get, getWithin = getWithin, ifNotExists = ifNotExists, toQuery = toQuery)
+    val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all), allWithin = js.Any.fromFunction1(allWithin), exec = js.Any.fromFunction0(exec), execWithin = js.Any.fromFunction1(execWithin), get = js.Any.fromFunction0(get), getWithin = js.Any.fromFunction1(getWithin), ifNotExists = js.Any.fromFunction0(ifNotExists), toQuery = js.Any.fromFunction0(toQuery))
   
     __obj.asInstanceOf[CreateQuery]
   }

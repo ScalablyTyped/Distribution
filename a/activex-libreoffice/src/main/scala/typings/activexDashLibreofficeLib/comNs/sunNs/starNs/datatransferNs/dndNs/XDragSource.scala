@@ -53,22 +53,14 @@ trait XDragSource
 object XDragSource {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getDefaultCursor: js.Function1[scala.Double, scala.Double],
-    isDragImageSupported: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    startDrag: js.Function6[
-      DragGestureEvent, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable, 
-      XDragSourceListener, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    getDefaultCursor: scala.Double => scala.Double,
+    isDragImageSupported: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    startDrag: (DragGestureEvent, scala.Double, scala.Double, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable, XDragSourceListener) => scala.Unit
   ): XDragSource = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getDefaultCursor = getDefaultCursor, isDragImageSupported = isDragImageSupported, queryInterface = queryInterface, release = release, startDrag = startDrag)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDefaultCursor = js.Any.fromFunction1(getDefaultCursor), isDragImageSupported = js.Any.fromFunction0(isDragImageSupported), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), startDrag = js.Any.fromFunction6(startDrag))
   
     __obj.asInstanceOf[XDragSource]
   }

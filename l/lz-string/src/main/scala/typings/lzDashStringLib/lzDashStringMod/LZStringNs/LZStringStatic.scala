@@ -82,18 +82,18 @@ trait LZStringStatic extends js.Object {
 object LZStringStatic {
   @scala.inline
   def apply(
-    compress: js.Function1[java.lang.String, java.lang.String],
-    compressToBase64: js.Function1[java.lang.String, java.lang.String],
-    compressToEncodedURIComponent: js.Function1[java.lang.String, java.lang.String],
-    compressToUTF16: js.Function1[java.lang.String, java.lang.String],
-    compressToUint8Array: js.Function1[java.lang.String, stdLib.Uint8Array],
-    decompress: js.Function1[java.lang.String, java.lang.String],
-    decompressFromBase64: js.Function1[java.lang.String, java.lang.String],
-    decompressFromEncodedURIComponent: js.Function1[java.lang.String, java.lang.String],
-    decompressFromUTF16: js.Function1[java.lang.String, java.lang.String],
-    decompressFromUint8Array: js.Function1[stdLib.Uint8Array, java.lang.String]
+    compress: java.lang.String => java.lang.String,
+    compressToBase64: java.lang.String => java.lang.String,
+    compressToEncodedURIComponent: java.lang.String => java.lang.String,
+    compressToUTF16: java.lang.String => java.lang.String,
+    compressToUint8Array: java.lang.String => stdLib.Uint8Array,
+    decompress: java.lang.String => java.lang.String,
+    decompressFromBase64: java.lang.String => java.lang.String,
+    decompressFromEncodedURIComponent: java.lang.String => java.lang.String,
+    decompressFromUTF16: java.lang.String => java.lang.String,
+    decompressFromUint8Array: stdLib.Uint8Array => java.lang.String
   ): LZStringStatic = {
-    val __obj = js.Dynamic.literal(compress = compress, compressToBase64 = compressToBase64, compressToEncodedURIComponent = compressToEncodedURIComponent, compressToUTF16 = compressToUTF16, compressToUint8Array = compressToUint8Array, decompress = decompress, decompressFromBase64 = decompressFromBase64, decompressFromEncodedURIComponent = decompressFromEncodedURIComponent, decompressFromUTF16 = decompressFromUTF16, decompressFromUint8Array = decompressFromUint8Array)
+    val __obj = js.Dynamic.literal(compress = js.Any.fromFunction1(compress), compressToBase64 = js.Any.fromFunction1(compressToBase64), compressToEncodedURIComponent = js.Any.fromFunction1(compressToEncodedURIComponent), compressToUTF16 = js.Any.fromFunction1(compressToUTF16), compressToUint8Array = js.Any.fromFunction1(compressToUint8Array), decompress = js.Any.fromFunction1(decompress), decompressFromBase64 = js.Any.fromFunction1(decompressFromBase64), decompressFromEncodedURIComponent = js.Any.fromFunction1(decompressFromEncodedURIComponent), decompressFromUTF16 = js.Any.fromFunction1(decompressFromUTF16), decompressFromUint8Array = js.Any.fromFunction1(decompressFromUint8Array))
   
     __obj.asInstanceOf[LZStringStatic]
   }

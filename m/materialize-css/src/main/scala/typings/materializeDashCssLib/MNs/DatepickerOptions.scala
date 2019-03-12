@@ -114,7 +114,7 @@ object DatepickerOptions {
     autoClose: scala.Boolean,
     container: stdLib.Element,
     defaultDate: stdLib.Date,
-    disableDayFn: js.Function1[stdLib.Date, scala.Boolean],
+    disableDayFn: stdLib.Date => scala.Boolean,
     disableWeekends: scala.Boolean,
     events: js.Array[java.lang.String],
     firstDay: scala.Double,
@@ -123,18 +123,18 @@ object DatepickerOptions {
     isRTL: scala.Boolean,
     maxDate: stdLib.Date,
     minDate: stdLib.Date,
-    onClose: js.Function1[Datepicker, scala.Unit],
-    onDraw: js.Function1[Datepicker, scala.Unit],
-    onOpen: js.Function1[Datepicker, scala.Unit],
-    onSelect: js.Function2[Datepicker, stdLib.Date, scala.Unit],
-    parse: js.Function2[java.lang.String, java.lang.String, stdLib.Date],
+    onClose: Datepicker => scala.Unit,
+    onDraw: Datepicker => scala.Unit,
+    onOpen: Datepicker => scala.Unit,
+    onSelect: (Datepicker, stdLib.Date) => scala.Unit,
+    parse: (java.lang.String, java.lang.String) => stdLib.Date,
     setDefaultDate: scala.Boolean,
     showClearBtn: scala.Boolean,
     showDaysInNextAndPreviousMonths: scala.Boolean,
     showMonthAfterYear: scala.Boolean,
     yearRange: scala.Double | js.Array[scala.Double]
   ): DatepickerOptions = {
-    val __obj = js.Dynamic.literal(autoClose = autoClose, container = container, defaultDate = defaultDate, disableDayFn = disableDayFn, disableWeekends = disableWeekends, events = events, firstDay = firstDay, format = format, i18n = i18n, isRTL = isRTL, maxDate = maxDate, minDate = minDate, onClose = onClose, onDraw = onDraw, onOpen = onOpen, onSelect = onSelect, parse = parse, setDefaultDate = setDefaultDate, showClearBtn = showClearBtn, showDaysInNextAndPreviousMonths = showDaysInNextAndPreviousMonths, showMonthAfterYear = showMonthAfterYear, yearRange = yearRange.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autoClose = autoClose, container = container, defaultDate = defaultDate, disableDayFn = js.Any.fromFunction1(disableDayFn), disableWeekends = disableWeekends, events = events, firstDay = firstDay, format = format, i18n = i18n, isRTL = isRTL, maxDate = maxDate, minDate = minDate, onClose = js.Any.fromFunction1(onClose), onDraw = js.Any.fromFunction1(onDraw), onOpen = js.Any.fromFunction1(onOpen), onSelect = js.Any.fromFunction2(onSelect), parse = js.Any.fromFunction2(parse), setDefaultDate = setDefaultDate, showClearBtn = showClearBtn, showDaysInNextAndPreviousMonths = showDaysInNextAndPreviousMonths, showMonthAfterYear = showMonthAfterYear, yearRange = yearRange.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DatepickerOptions]
   }

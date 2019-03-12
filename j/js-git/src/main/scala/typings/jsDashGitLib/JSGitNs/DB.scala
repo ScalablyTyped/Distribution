@@ -48,27 +48,15 @@ trait DB extends js.Object {
 object DB {
   @scala.inline
   def apply(
-    clear: js.Function1[js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
-    del: js.Function2[java.lang.String, js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
-    get: js.Function2[
-      java.lang.String, 
-      js.Function2[/* err */ js.Any, /* value */ js.Any, scala.Unit], 
-      scala.Unit
-    ],
-    has: js.Function2[
-      java.lang.String, 
-      js.Function2[/* err */ js.Any, /* hasKey */ scala.Boolean, scala.Unit], 
-      scala.Unit
-    ],
-    init: js.Function1[js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
-    keys: js.Function2[
-      java.lang.String, 
-      js.Function2[/* err */ js.Any, /* keys */ js.Array[java.lang.String], scala.Unit], 
-      scala.Unit
-    ],
-    set: js.Function3[java.lang.String, js.Any, js.Function1[/* err */ js.Any, scala.Unit], scala.Unit]
+    clear: js.Function1[/* err */ js.Any, scala.Unit] => scala.Unit,
+    del: (java.lang.String, js.Function1[/* err */ js.Any, scala.Unit]) => scala.Unit,
+    get: (java.lang.String, js.Function2[/* err */ js.Any, /* value */ js.Any, scala.Unit]) => scala.Unit,
+    has: (java.lang.String, js.Function2[/* err */ js.Any, /* hasKey */ scala.Boolean, scala.Unit]) => scala.Unit,
+    init: js.Function1[/* err */ js.Any, scala.Unit] => scala.Unit,
+    keys: (java.lang.String, js.Function2[/* err */ js.Any, /* keys */ js.Array[java.lang.String], scala.Unit]) => scala.Unit,
+    set: (java.lang.String, js.Any, js.Function1[/* err */ js.Any, scala.Unit]) => scala.Unit
   ): DB = {
-    val __obj = js.Dynamic.literal(clear = clear, del = del, get = get, has = has, init = init, keys = keys, set = set)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear), del = js.Any.fromFunction2(del), get = js.Any.fromFunction2(get), has = js.Any.fromFunction2(has), init = js.Any.fromFunction1(init), keys = js.Any.fromFunction2(keys), set = js.Any.fromFunction3(set))
   
     __obj.asInstanceOf[DB]
   }

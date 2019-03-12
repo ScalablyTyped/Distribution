@@ -81,7 +81,7 @@ object OpenParameters {
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     height: scala.Int | scala.Double = null,
     hideHeader: js.UndefOr[scala.Boolean] = js.undefined,
-    messageListener: js.Function1[/* eventData */ MessageEvent, scala.Unit] = null,
+    messageListener: /* eventData */ MessageEvent => scala.Unit = null,
     redirectUrl: java.lang.String = null,
     requester: java.lang.String = null,
     skipDomainVerification: js.UndefOr[scala.Boolean] = js.undefined,
@@ -96,7 +96,7 @@ object OpenParameters {
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(hideHeader)) __obj.updateDynamic("hideHeader")(hideHeader)
-    if (messageListener != null) __obj.updateDynamic("messageListener")(messageListener)
+    if (messageListener != null) __obj.updateDynamic("messageListener")(js.Any.fromFunction1(messageListener))
     if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl)
     if (requester != null) __obj.updateDynamic("requester")(requester)
     if (!js.isUndefined(skipDomainVerification)) __obj.updateDynamic("skipDomainVerification")(skipDomainVerification)

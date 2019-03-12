@@ -11,8 +11,8 @@ trait Context extends js.Object {
 
 object Context {
   @scala.inline
-  def apply(getBusyContext: js.Function0[BusyContext]): Context = {
-    val __obj = js.Dynamic.literal(getBusyContext = getBusyContext)
+  def apply(getBusyContext: () => BusyContext): Context = {
+    val __obj = js.Dynamic.literal(getBusyContext = js.Any.fromFunction0(getBusyContext))
   
     __obj.asInstanceOf[Context]
   }

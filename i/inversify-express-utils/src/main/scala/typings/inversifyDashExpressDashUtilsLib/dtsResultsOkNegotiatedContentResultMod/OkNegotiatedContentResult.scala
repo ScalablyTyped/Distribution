@@ -16,11 +16,9 @@ object OkNegotiatedContentResult {
   def apply[T](
     apiController: js.Any,
     content: js.Any,
-    executeAsync: js.Function0[
-      js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
-    ]
+    executeAsync: () => js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
   ): OkNegotiatedContentResult[T] = {
-    val __obj = js.Dynamic.literal(apiController = apiController, content = content, executeAsync = executeAsync)
+    val __obj = js.Dynamic.literal(apiController = apiController, content = content, executeAsync = js.Any.fromFunction0(executeAsync))
   
     __obj.asInstanceOf[OkNegotiatedContentResult[T]]
   }

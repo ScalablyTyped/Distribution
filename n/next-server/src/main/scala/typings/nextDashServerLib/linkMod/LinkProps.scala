@@ -23,7 +23,7 @@ object LinkProps {
     children: reactLib.reactMod.ReactNs.ReactElement[_],
     as: java.lang.String | nextDashServerLib.routerMod.UrlLike = null,
     href: java.lang.String | nextDashServerLib.routerMod.UrlLike = null,
-    onError: js.Function1[/* error */ js.Any, scala.Unit] = null,
+    onError: /* error */ js.Any => scala.Unit = null,
     passHref: js.UndefOr[scala.Boolean] = js.undefined,
     prefetch: js.UndefOr[scala.Boolean] = js.undefined,
     replace: js.UndefOr[scala.Boolean] = js.undefined,
@@ -33,7 +33,7 @@ object LinkProps {
     val __obj = js.Dynamic.literal(children = children)
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (!js.isUndefined(passHref)) __obj.updateDynamic("passHref")(passHref)
     if (!js.isUndefined(prefetch)) __obj.updateDynamic("prefetch")(prefetch)
     if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)

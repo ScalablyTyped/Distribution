@@ -88,21 +88,21 @@ trait DurandalViewEngineModule extends js.Object {
 object DurandalViewEngineModule {
   @scala.inline
   def apply(
-    convertViewIdToRequirePath: js.Function1[java.lang.String, java.lang.String],
-    convertViewUrlToViewId: js.Function1[java.lang.String, java.lang.String],
-    createFallbackView: js.Function3[java.lang.String, java.lang.String, stdLib.Error, DurandalPromise[stdLib.HTMLElement]],
-    createView: js.Function1[java.lang.String, DurandalPromise[stdLib.HTMLElement]],
-    ensureSingleElement: js.Function1[js.Array[stdLib.Node], stdLib.HTMLElement],
-    isViewUrl: js.Function1[java.lang.String, scala.Boolean],
-    parseMarkup: js.Function1[java.lang.String, js.Array[stdLib.Node]],
-    processMarkup: js.Function1[java.lang.String, stdLib.HTMLElement],
-    putViewInCache: js.Function2[java.lang.String, stdLib.HTMLElement, scala.Unit],
-    tryGetViewFromCache: js.Function1[java.lang.String, stdLib.HTMLElement],
+    convertViewIdToRequirePath: java.lang.String => java.lang.String,
+    convertViewUrlToViewId: java.lang.String => java.lang.String,
+    createFallbackView: (java.lang.String, java.lang.String, stdLib.Error) => DurandalPromise[stdLib.HTMLElement],
+    createView: java.lang.String => DurandalPromise[stdLib.HTMLElement],
+    ensureSingleElement: js.Array[stdLib.Node] => stdLib.HTMLElement,
+    isViewUrl: java.lang.String => scala.Boolean,
+    parseMarkup: java.lang.String => js.Array[stdLib.Node],
+    processMarkup: java.lang.String => stdLib.HTMLElement,
+    putViewInCache: (java.lang.String, stdLib.HTMLElement) => scala.Unit,
+    tryGetViewFromCache: java.lang.String => stdLib.HTMLElement,
     viewExtension: java.lang.String,
     viewPlugin: java.lang.String,
     viewPluginParameters: java.lang.String
   ): DurandalViewEngineModule = {
-    val __obj = js.Dynamic.literal(convertViewIdToRequirePath = convertViewIdToRequirePath, convertViewUrlToViewId = convertViewUrlToViewId, createFallbackView = createFallbackView, createView = createView, ensureSingleElement = ensureSingleElement, isViewUrl = isViewUrl, parseMarkup = parseMarkup, processMarkup = processMarkup, putViewInCache = putViewInCache, tryGetViewFromCache = tryGetViewFromCache, viewExtension = viewExtension, viewPlugin = viewPlugin, viewPluginParameters = viewPluginParameters)
+    val __obj = js.Dynamic.literal(convertViewIdToRequirePath = js.Any.fromFunction1(convertViewIdToRequirePath), convertViewUrlToViewId = js.Any.fromFunction1(convertViewUrlToViewId), createFallbackView = js.Any.fromFunction3(createFallbackView), createView = js.Any.fromFunction1(createView), ensureSingleElement = js.Any.fromFunction1(ensureSingleElement), isViewUrl = js.Any.fromFunction1(isViewUrl), parseMarkup = js.Any.fromFunction1(parseMarkup), processMarkup = js.Any.fromFunction1(processMarkup), putViewInCache = js.Any.fromFunction2(putViewInCache), tryGetViewFromCache = js.Any.fromFunction1(tryGetViewFromCache), viewExtension = viewExtension, viewPlugin = viewPlugin, viewPluginParameters = viewPluginParameters)
   
     __obj.asInstanceOf[DurandalViewEngineModule]
   }

@@ -29,10 +29,10 @@ trait XStringRepresentation extends js.Object {
 object XStringRepresentation {
   @scala.inline
   def apply(
-    convertToControlValue: js.Function1[js.Any, java.lang.String],
-    convertToPropertyValue: js.Function2[java.lang.String, activexDashLibreofficeLib.`type`, js.Any]
+    convertToControlValue: js.Any => java.lang.String,
+    convertToPropertyValue: (java.lang.String, activexDashLibreofficeLib.`type`) => js.Any
   ): XStringRepresentation = {
-    val __obj = js.Dynamic.literal(convertToControlValue = convertToControlValue, convertToPropertyValue = convertToPropertyValue)
+    val __obj = js.Dynamic.literal(convertToControlValue = js.Any.fromFunction1(convertToControlValue), convertToPropertyValue = js.Any.fromFunction2(convertToPropertyValue))
   
     __obj.asInstanceOf[XStringRepresentation]
   }

@@ -11,10 +11,8 @@ trait FetchMoreOptions[TData, TVariables] extends js.Object {
 
 object FetchMoreOptions {
   @scala.inline
-  def apply[TData, TVariables](
-    updateQuery: js.Function2[TData, apolloDashClientLib.Anon_FetchMoreResult[TData, TVariables], TData]
-  ): FetchMoreOptions[TData, TVariables] = {
-    val __obj = js.Dynamic.literal(updateQuery = updateQuery)
+  def apply[TData, TVariables](updateQuery: (TData, apolloDashClientLib.Anon_FetchMoreResult[TData, TVariables]) => TData): FetchMoreOptions[TData, TVariables] = {
+    val __obj = js.Dynamic.literal(updateQuery = js.Any.fromFunction2(updateQuery))
   
     __obj.asInstanceOf[FetchMoreOptions[TData, TVariables]]
   }

@@ -10,6 +10,6 @@ trait MeasuredComponentProps extends js.Object {
   var contentRect: ContentRect = js.native
   def measure(): scala.Unit = js.native
   def measureRef(): scala.Unit = js.native
-  def measureRef(ref: reactLib.Element): scala.Unit = js.native
+  def measureRef(ref: stdLib.Element): scala.Unit = js.native
 }
 

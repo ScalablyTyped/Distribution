@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.PictureFormat")
 @js.native
 class PictureFormat protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var Brightness: scala.Double = js.native
   var ColorType: activexDashOfficeLib.OfficeNs.MsoPictureColorType = js.native
   var Contrast: scala.Double = js.native

@@ -27,12 +27,12 @@ trait ParamMap extends js.Object {
 object ParamMap {
   @scala.inline
   def apply(
-    get: js.Function1[java.lang.String, java.lang.String | scala.Null],
-    getAll: js.Function1[java.lang.String, js.Array[java.lang.String]],
-    has: js.Function1[java.lang.String, scala.Boolean],
+    get: java.lang.String => java.lang.String | scala.Null,
+    getAll: java.lang.String => js.Array[java.lang.String],
+    has: java.lang.String => scala.Boolean,
     keys: js.Array[java.lang.String]
   ): ParamMap = {
-    val __obj = js.Dynamic.literal(get = get, getAll = getAll, has = has, keys = keys)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), getAll = js.Any.fromFunction1(getAll), has = js.Any.fromFunction1(has), keys = keys)
   
     __obj.asInstanceOf[ParamMap]
   }

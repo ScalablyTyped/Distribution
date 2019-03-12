@@ -17,13 +17,13 @@ object PageTransitionOptions {
   def apply(
     animation: NavigatorAnimationTypes = null,
     animationOptions: AnimationOptions = null,
-    callback: js.Function0[scala.Unit] = null,
+    callback: () => scala.Unit = null,
     data: js.Any = null
   ): PageTransitionOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (data != null) __obj.updateDynamic("data")(data)
     __obj.asInstanceOf[PageTransitionOptions]
   }

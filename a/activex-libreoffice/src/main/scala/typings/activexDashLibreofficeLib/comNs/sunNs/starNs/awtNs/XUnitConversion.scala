@@ -44,15 +44,15 @@ trait XUnitConversion
 object XUnitConversion {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    convertPointToLogic: js.Function2[Point, scala.Double, Point],
-    convertPointToPixel: js.Function2[Point, scala.Double, Point],
-    convertSizeToLogic: js.Function2[Size, scala.Double, Size],
-    convertSizeToPixel: js.Function2[Size, scala.Double, Size],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    convertPointToLogic: (Point, scala.Double) => Point,
+    convertPointToPixel: (Point, scala.Double) => Point,
+    convertSizeToLogic: (Size, scala.Double) => Size,
+    convertSizeToPixel: (Size, scala.Double) => Size,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XUnitConversion = {
-    val __obj = js.Dynamic.literal(acquire = acquire, convertPointToLogic = convertPointToLogic, convertPointToPixel = convertPointToPixel, convertSizeToLogic = convertSizeToLogic, convertSizeToPixel = convertSizeToPixel, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), convertPointToLogic = js.Any.fromFunction2(convertPointToLogic), convertPointToPixel = js.Any.fromFunction2(convertPointToPixel), convertSizeToLogic = js.Any.fromFunction2(convertSizeToLogic), convertSizeToPixel = js.Any.fromFunction2(convertSizeToPixel), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XUnitConversion]
   }

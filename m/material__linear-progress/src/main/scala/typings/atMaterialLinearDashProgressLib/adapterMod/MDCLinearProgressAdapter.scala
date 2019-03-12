@@ -17,14 +17,14 @@ trait MDCLinearProgressAdapter extends js.Object {
 object MDCLinearProgressAdapter {
   @scala.inline
   def apply(
-    addClass: js.Function1[java.lang.String, scala.Unit],
-    getBuffer: js.Function0[stdLib.Element],
-    getPrimaryBar: js.Function0[stdLib.Element],
-    hasClass: js.Function1[java.lang.String, scala.Boolean],
-    removeClass: js.Function1[java.lang.String, scala.Unit],
-    setStyle: js.Function3[stdLib.Element, java.lang.String, scala.Double, scala.Unit]
+    addClass: java.lang.String => scala.Unit,
+    getBuffer: () => stdLib.Element,
+    getPrimaryBar: () => stdLib.Element,
+    hasClass: java.lang.String => scala.Boolean,
+    removeClass: java.lang.String => scala.Unit,
+    setStyle: (stdLib.Element, java.lang.String, scala.Double) => scala.Unit
   ): MDCLinearProgressAdapter = {
-    val __obj = js.Dynamic.literal(addClass = addClass, getBuffer = getBuffer, getPrimaryBar = getPrimaryBar, hasClass = hasClass, removeClass = removeClass, setStyle = setStyle)
+    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), getBuffer = js.Any.fromFunction0(getBuffer), getPrimaryBar = js.Any.fromFunction0(getPrimaryBar), hasClass = js.Any.fromFunction1(hasClass), removeClass = js.Any.fromFunction1(removeClass), setStyle = js.Any.fromFunction3(setStyle))
   
     __obj.asInstanceOf[MDCLinearProgressAdapter]
   }

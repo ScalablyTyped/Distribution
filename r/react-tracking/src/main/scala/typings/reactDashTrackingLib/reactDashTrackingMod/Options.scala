@@ -39,14 +39,14 @@ trait Options[T] extends js.Object {
 object Options {
   @scala.inline
   def apply[T](
-    dispatch: js.Function1[/* data */ T, _] = null,
+    dispatch: /* data */ T => _ = null,
     dispatchOnMount: scala.Boolean | (js.Function1[/* contextData */ T, T]) = null,
-    process: js.Function1[/* ownTrackingData */ T, T | reactDashTrackingLib.Falsy] = null
+    process: /* ownTrackingData */ T => T | reactDashTrackingLib.Falsy = null
   ): Options[T] = {
     val __obj = js.Dynamic.literal()
-    if (dispatch != null) __obj.updateDynamic("dispatch")(dispatch)
+    if (dispatch != null) __obj.updateDynamic("dispatch")(js.Any.fromFunction1(dispatch))
     if (dispatchOnMount != null) __obj.updateDynamic("dispatchOnMount")(dispatchOnMount.asInstanceOf[js.Any])
-    if (process != null) __obj.updateDynamic("process")(process)
+    if (process != null) __obj.updateDynamic("process")(js.Any.fromFunction1(process))
     __obj.asInstanceOf[Options[T]]
   }
 }

@@ -13,10 +13,10 @@ trait KnockoutObservableFunctions[T] extends js.Object {
 object KnockoutObservableFunctions {
   @scala.inline
   def apply[T](
-    toObservableWithReplyLatest: js.Function0[knockoutDotRxLib.RxNs.Observable[T]],
-    toSubject: js.Function0[rxDashCoreDashBindingLib.RxNs.ISubject[T]]
+    toObservableWithReplyLatest: () => knockoutDotRxLib.RxNs.Observable[T],
+    toSubject: () => rxDashCoreDashBindingLib.RxNs.ISubject[T]
   ): KnockoutObservableFunctions[T] = {
-    val __obj = js.Dynamic.literal(toObservableWithReplyLatest = toObservableWithReplyLatest, toSubject = toSubject)
+    val __obj = js.Dynamic.literal(toObservableWithReplyLatest = js.Any.fromFunction0(toObservableWithReplyLatest), toSubject = js.Any.fromFunction0(toSubject))
   
     __obj.asInstanceOf[KnockoutObservableFunctions[T]]
   }

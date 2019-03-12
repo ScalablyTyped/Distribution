@@ -14,12 +14,12 @@ trait AvatarEditorProps extends js.Object {
   var disableDrop: js.UndefOr[scala.Boolean] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var image: java.lang.String | stdLib.File
-  var onDropFile: js.UndefOr[js.Function1[/* event */ reactLib.DragEvent, scala.Unit]] = js.undefined
+  var onDropFile: js.UndefOr[js.Function1[/* event */ stdLib.DragEvent, scala.Unit]] = js.undefined
   var onImageChange: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onImageReady: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
-  var onLoadFailure: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
+  var onImageReady: js.UndefOr[js.Function1[/* event */ stdLib.Event, scala.Unit]] = js.undefined
+  var onLoadFailure: js.UndefOr[js.Function1[/* event */ stdLib.Event, scala.Unit]] = js.undefined
   var onLoadSuccess: js.UndefOr[js.Function1[/* imgInfo */ ImageState, scala.Unit]] = js.undefined
-  var onMouseMove: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
+  var onMouseMove: js.UndefOr[js.Function1[/* event */ stdLib.Event, scala.Unit]] = js.undefined
   var onMouseUp: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onPositionChange: js.UndefOr[js.Function1[/* position */ Position, scala.Unit]] = js.undefined
   var position: js.UndefOr[Position] = js.undefined
@@ -40,14 +40,14 @@ object AvatarEditorProps {
     crossOrigin: java.lang.String = null,
     disableDrop: js.UndefOr[scala.Boolean] = js.undefined,
     height: scala.Int | scala.Double = null,
-    onDropFile: js.Function1[/* event */ reactLib.DragEvent, scala.Unit] = null,
-    onImageChange: js.Function0[scala.Unit] = null,
-    onImageReady: js.Function1[/* event */ reactLib.Event, scala.Unit] = null,
-    onLoadFailure: js.Function1[/* event */ reactLib.Event, scala.Unit] = null,
-    onLoadSuccess: js.Function1[/* imgInfo */ ImageState, scala.Unit] = null,
-    onMouseMove: js.Function1[/* event */ reactLib.Event, scala.Unit] = null,
-    onMouseUp: js.Function0[scala.Unit] = null,
-    onPositionChange: js.Function1[/* position */ Position, scala.Unit] = null,
+    onDropFile: /* event */ stdLib.DragEvent => scala.Unit = null,
+    onImageChange: () => scala.Unit = null,
+    onImageReady: /* event */ stdLib.Event => scala.Unit = null,
+    onLoadFailure: /* event */ stdLib.Event => scala.Unit = null,
+    onLoadSuccess: /* imgInfo */ ImageState => scala.Unit = null,
+    onMouseMove: /* event */ stdLib.Event => scala.Unit = null,
+    onMouseUp: () => scala.Unit = null,
+    onPositionChange: /* position */ Position => scala.Unit = null,
     position: Position = null,
     rotate: scala.Int | scala.Double = null,
     scale: scala.Int | scala.Double = null,
@@ -62,14 +62,14 @@ object AvatarEditorProps {
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)
     if (!js.isUndefined(disableDrop)) __obj.updateDynamic("disableDrop")(disableDrop)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (onDropFile != null) __obj.updateDynamic("onDropFile")(onDropFile)
-    if (onImageChange != null) __obj.updateDynamic("onImageChange")(onImageChange)
-    if (onImageReady != null) __obj.updateDynamic("onImageReady")(onImageReady)
-    if (onLoadFailure != null) __obj.updateDynamic("onLoadFailure")(onLoadFailure)
-    if (onLoadSuccess != null) __obj.updateDynamic("onLoadSuccess")(onLoadSuccess)
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
-    if (onPositionChange != null) __obj.updateDynamic("onPositionChange")(onPositionChange)
+    if (onDropFile != null) __obj.updateDynamic("onDropFile")(js.Any.fromFunction1(onDropFile))
+    if (onImageChange != null) __obj.updateDynamic("onImageChange")(js.Any.fromFunction0(onImageChange))
+    if (onImageReady != null) __obj.updateDynamic("onImageReady")(js.Any.fromFunction1(onImageReady))
+    if (onLoadFailure != null) __obj.updateDynamic("onLoadFailure")(js.Any.fromFunction1(onLoadFailure))
+    if (onLoadSuccess != null) __obj.updateDynamic("onLoadSuccess")(js.Any.fromFunction1(onLoadSuccess))
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
+    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction0(onMouseUp))
+    if (onPositionChange != null) __obj.updateDynamic("onPositionChange")(js.Any.fromFunction1(onPositionChange))
     if (position != null) __obj.updateDynamic("position")(position)
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])

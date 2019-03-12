@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("history/createTransitionManager", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def default(): historyLib.createTransitionManagerMod.TransitionManager = js.native
+  def default(): TransitionManager = js.native
 }
 

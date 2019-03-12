@@ -25,21 +25,21 @@ object ChooseVideoOptions {
   @scala.inline
   def apply(
     camera: CameraDevice = null,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    complete: /* res */ js.Any => scala.Unit = null,
     compressed: js.UndefOr[scala.Boolean] = js.undefined,
-    fail: js.Function1[js.Any, scala.Unit] = null,
+    fail: js.Any => scala.Unit = null,
     maxDuration: scala.Int | scala.Double = null,
     sourceType: js.Array[VideoSourceType] = null,
-    success: js.Function1[/* res */ VideoData, scala.Unit] = null
+    success: /* res */ VideoData => scala.Unit = null
   ): ChooseVideoOptions = {
     val __obj = js.Dynamic.literal()
     if (camera != null) __obj.updateDynamic("camera")(camera)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (!js.isUndefined(compressed)) __obj.updateDynamic("compressed")(compressed)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (maxDuration != null) __obj.updateDynamic("maxDuration")(maxDuration.asInstanceOf[js.Any])
     if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ChooseVideoOptions]
   }
 }

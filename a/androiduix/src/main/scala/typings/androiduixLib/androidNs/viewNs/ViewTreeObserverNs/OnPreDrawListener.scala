@@ -11,8 +11,8 @@ trait OnPreDrawListener extends js.Object {
 
 object OnPreDrawListener {
   @scala.inline
-  def apply(onPreDraw: js.Function0[scala.Boolean]): OnPreDrawListener = {
-    val __obj = js.Dynamic.literal(onPreDraw = onPreDraw)
+  def apply(onPreDraw: () => scala.Boolean): OnPreDrawListener = {
+    val __obj = js.Dynamic.literal(onPreDraw = js.Any.fromFunction0(onPreDraw))
   
     __obj.asInstanceOf[OnPreDrawListener]
   }

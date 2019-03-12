@@ -24,28 +24,13 @@ trait MyconfigResource extends js.Object {
 object MyconfigResource {
   @scala.inline
   def apply(
-    getUserSettings: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserUserIpBoolean, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Usersettings]
-    ],
-    releaseDownloadAccess: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltCpksverFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DownloadAccesses]
-    ],
-    requestAccess: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltCpksverFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RequestAccess]
-    ],
-    syncVolumeLicenses: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltCpksverFeatures, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Volumes]
-    ],
-    updateUserSettings: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserUserIpBoolean, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Usersettings]
-    ]
+    getUserSettings: gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserUserIpBoolean => gapiDotClientLib.gapiNs.clientNs.Request[Usersettings],
+    releaseDownloadAccess: gapiDotClientDotBooksLib.Anon_AltCpksverFields => gapiDotClientLib.gapiNs.clientNs.Request[DownloadAccesses],
+    requestAccess: gapiDotClientDotBooksLib.Anon_AltCpksverFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[RequestAccess],
+    syncVolumeLicenses: gapiDotClientDotBooksLib.Anon_AltCpksverFeatures => gapiDotClientLib.gapiNs.clientNs.Request[Volumes],
+    updateUserSettings: gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserUserIpBoolean => gapiDotClientLib.gapiNs.clientNs.Request[Usersettings]
   ): MyconfigResource = {
-    val __obj = js.Dynamic.literal(getUserSettings = getUserSettings, releaseDownloadAccess = releaseDownloadAccess, requestAccess = requestAccess, syncVolumeLicenses = syncVolumeLicenses, updateUserSettings = updateUserSettings)
+    val __obj = js.Dynamic.literal(getUserSettings = js.Any.fromFunction1(getUserSettings), releaseDownloadAccess = js.Any.fromFunction1(releaseDownloadAccess), requestAccess = js.Any.fromFunction1(requestAccess), syncVolumeLicenses = js.Any.fromFunction1(syncVolumeLicenses), updateUserSettings = js.Any.fromFunction1(updateUserSettings))
   
     __obj.asInstanceOf[MyconfigResource]
   }

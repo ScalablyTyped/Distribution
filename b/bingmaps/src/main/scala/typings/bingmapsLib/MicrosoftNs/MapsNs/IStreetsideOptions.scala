@@ -42,8 +42,8 @@ object IStreetsideOptions {
   def apply(
     disablePanoramaNavigation: js.UndefOr[scala.Boolean] = js.undefined,
     locationToLookAt: Location = null,
-    onErrorLoading: js.Function0[scala.Unit] = null,
-    onSuccessLoading: js.Function0[scala.Unit] = null,
+    onErrorLoading: () => scala.Unit = null,
+    onSuccessLoading: () => scala.Unit = null,
     overviewMapMode: OverviewMapMode = null,
     panoramaInfo: IPanoramaInfo = null,
     panoramaLookupRadius: scala.Int | scala.Double = null,
@@ -56,8 +56,8 @@ object IStreetsideOptions {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(disablePanoramaNavigation)) __obj.updateDynamic("disablePanoramaNavigation")(disablePanoramaNavigation)
     if (locationToLookAt != null) __obj.updateDynamic("locationToLookAt")(locationToLookAt)
-    if (onErrorLoading != null) __obj.updateDynamic("onErrorLoading")(onErrorLoading)
-    if (onSuccessLoading != null) __obj.updateDynamic("onSuccessLoading")(onSuccessLoading)
+    if (onErrorLoading != null) __obj.updateDynamic("onErrorLoading")(js.Any.fromFunction0(onErrorLoading))
+    if (onSuccessLoading != null) __obj.updateDynamic("onSuccessLoading")(js.Any.fromFunction0(onSuccessLoading))
     if (overviewMapMode != null) __obj.updateDynamic("overviewMapMode")(overviewMapMode)
     if (panoramaInfo != null) __obj.updateDynamic("panoramaInfo")(panoramaInfo)
     if (panoramaLookupRadius != null) __obj.updateDynamic("panoramaLookupRadius")(panoramaLookupRadius.asInstanceOf[js.Any])

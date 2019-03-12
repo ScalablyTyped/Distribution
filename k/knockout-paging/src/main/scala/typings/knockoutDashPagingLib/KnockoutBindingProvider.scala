@@ -20,16 +20,12 @@ trait KnockoutBindingProvider extends js.Object {
 object KnockoutBindingProvider {
   @scala.inline
   def apply(
-    getBindings: js.Function2[stdLib.Node, KnockoutBindingContext, js.Object],
-    nodeHasBindings: js.Function1[stdLib.Node, scala.Boolean],
-    getBindingAccessors: js.Function2[
-      /* node */ stdLib.Node, 
-      /* bindingContext */ KnockoutBindingContext, 
-      org.scalablytyped.runtime.StringDictionary[java.lang.String]
-    ] = null
+    getBindings: (stdLib.Node, KnockoutBindingContext) => js.Object,
+    nodeHasBindings: stdLib.Node => scala.Boolean,
+    getBindingAccessors: (/* node */ stdLib.Node, /* bindingContext */ KnockoutBindingContext) => org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): KnockoutBindingProvider = {
-    val __obj = js.Dynamic.literal(getBindings = getBindings, nodeHasBindings = nodeHasBindings)
-    if (getBindingAccessors != null) __obj.updateDynamic("getBindingAccessors")(getBindingAccessors)
+    val __obj = js.Dynamic.literal(getBindings = js.Any.fromFunction2(getBindings), nodeHasBindings = js.Any.fromFunction1(nodeHasBindings))
+    if (getBindingAccessors != null) __obj.updateDynamic("getBindingAccessors")(js.Any.fromFunction2(getBindingAccessors))
     __obj.asInstanceOf[KnockoutBindingProvider]
   }
 }

@@ -46,7 +46,7 @@ object RenderMathInElementSpecificOptions {
   @scala.inline
   def apply(
     delimiters: js.Array[RenderMathInElementSpecificOptionsDelimiters] = null,
-    errorCallback: js.Function2[/* msg */ java.lang.String, /* err */ stdLib.Error, scala.Unit] = null,
+    errorCallback: (/* msg */ java.lang.String, /* err */ stdLib.Error) => scala.Unit = null,
     ignoredClasses: js.Array[java.lang.String] = null,
     ignoredTags: js.Array[
       /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any
@@ -54,7 +54,7 @@ object RenderMathInElementSpecificOptions {
   ): RenderMathInElementSpecificOptions = {
     val __obj = js.Dynamic.literal()
     if (delimiters != null) __obj.updateDynamic("delimiters")(delimiters)
-    if (errorCallback != null) __obj.updateDynamic("errorCallback")(errorCallback)
+    if (errorCallback != null) __obj.updateDynamic("errorCallback")(js.Any.fromFunction2(errorCallback))
     if (ignoredClasses != null) __obj.updateDynamic("ignoredClasses")(ignoredClasses)
     if (ignoredTags != null) __obj.updateDynamic("ignoredTags")(ignoredTags)
     __obj.asInstanceOf[RenderMathInElementSpecificOptions]

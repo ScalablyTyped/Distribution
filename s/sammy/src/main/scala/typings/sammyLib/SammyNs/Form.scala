@@ -11,8 +11,8 @@ trait Form extends js.Object {
 
 object Form {
   @scala.inline
-  def apply(formFor: js.Function3[java.lang.String, js.Any, js.Function, FormBuilder]): Form = {
-    val __obj = js.Dynamic.literal(formFor = formFor)
+  def apply(formFor: (java.lang.String, js.Any, js.Function) => FormBuilder): Form = {
+    val __obj = js.Dynamic.literal(formFor = js.Any.fromFunction3(formFor))
   
     __obj.asInstanceOf[Form]
   }

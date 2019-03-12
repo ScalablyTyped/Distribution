@@ -11,8 +11,8 @@ trait AttachmentCardClickEvent extends js.Object {
 
 object AttachmentCardClickEvent {
   @scala.inline
-  def apply(getDownloadURL: js.Function0[js.Promise[java.lang.String]]): AttachmentCardClickEvent = {
-    val __obj = js.Dynamic.literal(getDownloadURL = getDownloadURL)
+  def apply(getDownloadURL: () => js.Promise[java.lang.String]): AttachmentCardClickEvent = {
+    val __obj = js.Dynamic.literal(getDownloadURL = js.Any.fromFunction0(getDownloadURL))
   
     __obj.asInstanceOf[AttachmentCardClickEvent]
   }

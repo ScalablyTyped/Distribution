@@ -12,11 +12,8 @@ trait Notyf extends js.Object {
 
 object Notyf {
   @scala.inline
-  def apply(
-    alert: js.Function1[java.lang.String, scala.Unit],
-    confirm: js.Function1[java.lang.String, scala.Unit]
-  ): Notyf = {
-    val __obj = js.Dynamic.literal(alert = alert, confirm = confirm)
+  def apply(alert: java.lang.String => scala.Unit, confirm: java.lang.String => scala.Unit): Notyf = {
+    val __obj = js.Dynamic.literal(alert = js.Any.fromFunction1(alert), confirm = js.Any.fromFunction1(confirm))
   
     __obj.asInstanceOf[Notyf]
   }

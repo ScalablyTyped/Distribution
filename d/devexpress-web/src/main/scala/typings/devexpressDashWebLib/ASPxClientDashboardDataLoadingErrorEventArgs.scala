@@ -32,12 +32,12 @@ trait ASPxClientDashboardDataLoadingErrorEventArgs extends ASPxClientEventArgs {
 object ASPxClientDashboardDataLoadingErrorEventArgs {
   @scala.inline
   def apply(
-    GetError: js.Function0[java.lang.String],
-    IsErrorMessageShown: js.Function0[scala.Boolean],
-    SetError: js.Function1[java.lang.String, scala.Unit],
-    ShowErrorMessage: js.Function1[scala.Boolean, scala.Unit]
+    GetError: () => java.lang.String,
+    IsErrorMessageShown: () => scala.Boolean,
+    SetError: java.lang.String => scala.Unit,
+    ShowErrorMessage: scala.Boolean => scala.Unit
   ): ASPxClientDashboardDataLoadingErrorEventArgs = {
-    val __obj = js.Dynamic.literal(GetError = GetError, IsErrorMessageShown = IsErrorMessageShown, SetError = SetError, ShowErrorMessage = ShowErrorMessage)
+    val __obj = js.Dynamic.literal(GetError = js.Any.fromFunction0(GetError), IsErrorMessageShown = js.Any.fromFunction0(IsErrorMessageShown), SetError = js.Any.fromFunction1(SetError), ShowErrorMessage = js.Any.fromFunction1(ShowErrorMessage))
   
     __obj.asInstanceOf[ASPxClientDashboardDataLoadingErrorEventArgs]
   }

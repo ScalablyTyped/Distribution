@@ -25,36 +25,15 @@ trait TrainedmodelsResource extends js.Object {
 object TrainedmodelsResource {
   @scala.inline
   def apply(
-    analyze: js.Function1[
-      gapiDotClientDotPredictionLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Analyze]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotPredictionLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotPredictionLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Insert2]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotPredictionLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Insert2]
-    ],
-    list: js.Function1[
-      gapiDotClientDotPredictionLib.Anon_AltFieldsKeyMaxResults, 
-      gapiDotClientLib.gapiNs.clientNs.Request[List]
-    ],
-    predict: js.Function1[
-      gapiDotClientDotPredictionLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Output]
-    ],
-    update: js.Function1[
-      gapiDotClientDotPredictionLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Insert2]
-    ]
+    analyze: gapiDotClientDotPredictionLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Analyze],
+    delete: gapiDotClientDotPredictionLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotPredictionLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Insert2],
+    insert: gapiDotClientDotPredictionLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Insert2],
+    list: gapiDotClientDotPredictionLib.Anon_AltFieldsKeyMaxResults => gapiDotClientLib.gapiNs.clientNs.Request[List],
+    predict: gapiDotClientDotPredictionLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Output],
+    update: gapiDotClientDotPredictionLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Insert2]
   ): TrainedmodelsResource = {
-    val __obj = js.Dynamic.literal(analyze = analyze, delete = delete, get = get, insert = insert, list = list, predict = predict, update = update)
+    val __obj = js.Dynamic.literal(analyze = js.Any.fromFunction1(analyze), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), predict = js.Any.fromFunction1(predict), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[TrainedmodelsResource]
   }

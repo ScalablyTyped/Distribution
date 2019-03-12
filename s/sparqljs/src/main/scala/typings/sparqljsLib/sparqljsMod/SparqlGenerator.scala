@@ -11,8 +11,8 @@ trait SparqlGenerator extends js.Object {
 
 object SparqlGenerator {
   @scala.inline
-  def apply(stringify: js.Function1[SparqlQuery, java.lang.String]): SparqlGenerator = {
-    val __obj = js.Dynamic.literal(stringify = stringify)
+  def apply(stringify: SparqlQuery => java.lang.String): SparqlGenerator = {
+    val __obj = js.Dynamic.literal(stringify = js.Any.fromFunction1(stringify))
   
     __obj.asInstanceOf[SparqlGenerator]
   }

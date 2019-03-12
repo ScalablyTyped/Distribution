@@ -17,20 +17,13 @@ object ^ extends js.Object {
   val onInputChanged: firefoxDashWebextDashBrowserLib.WebExtEvent[
     js.Function2[
       /* text */ java.lang.String, 
-      /* suggest */ js.Function1[
-        /* suggestResults */ js.Array[firefoxDashWebextDashBrowserLib.browserNs.omniboxNs.SuggestResult], 
-        scala.Unit
-      ], 
+      /* suggest */ js.Function1[/* suggestResults */ js.Array[SuggestResult], scala.Unit], 
       scala.Unit
     ]
   ] = js.native
   /** User has accepted what is typed into the omnibox. */
   val onInputEntered: firefoxDashWebextDashBrowserLib.WebExtEvent[
-    js.Function2[
-      /* text */ java.lang.String, 
-      /* disposition */ firefoxDashWebextDashBrowserLib.browserNs.omniboxNs.OnInputEnteredDisposition, 
-      scala.Unit
-    ]
+    js.Function2[/* text */ java.lang.String, /* disposition */ OnInputEnteredDisposition, scala.Unit]
   ] = js.native
   /* omnibox events */
   /**
@@ -44,6 +37,6 @@ object ^ extends js.Object {
     * displayed in the first suggestion row underneath the URL bar.
     * @param suggestion A partial SuggestResult object, without the 'content' parameter.
     */
-  def setDefaultSuggestion(suggestion: firefoxDashWebextDashBrowserLib.browserNs.omniboxNs.DefaultSuggestResult): scala.Unit = js.native
+  def setDefaultSuggestion(suggestion: DefaultSuggestResult): scala.Unit = js.native
 }
 

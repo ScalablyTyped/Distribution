@@ -49,21 +49,10 @@ trait Anon_Contains extends js.Object {
 object Anon_Contains {
   @scala.inline
   def apply(
-    contains: js.Function1[
-      firefoxDashWebextDashBrowserLib.browserNs.permissionsNs.AnyPermissions, 
-      js.Promise[scala.Boolean]
-    ],
-    getAll: js.Function0[
-      js.Promise[firefoxDashWebextDashBrowserLib.browserNs.permissionsNs.AnyPermissions]
-    ],
-    remove: js.Function1[
-      firefoxDashWebextDashBrowserLib.browserNs.permissionsNs.Permissions, 
-      js.Promise[scala.Unit]
-    ],
-    request: js.Function1[
-      firefoxDashWebextDashBrowserLib.browserNs.permissionsNs.Permissions, 
-      js.Promise[scala.Boolean]
-    ],
+    contains: firefoxDashWebextDashBrowserLib.browserNs.permissionsNs.AnyPermissions => js.Promise[scala.Boolean],
+    getAll: () => js.Promise[firefoxDashWebextDashBrowserLib.browserNs.permissionsNs.AnyPermissions],
+    remove: firefoxDashWebextDashBrowserLib.browserNs.permissionsNs.Permissions => js.Promise[scala.Unit],
+    request: firefoxDashWebextDashBrowserLib.browserNs.permissionsNs.Permissions => js.Promise[scala.Boolean],
     onAdded: WebExtEvent[
       js.Function1[
         /* permissions */ firefoxDashWebextDashBrowserLib.browserNs.permissionsNs.Permissions, 
@@ -77,7 +66,7 @@ object Anon_Contains {
       ]
     ] = null
   ): Anon_Contains = {
-    val __obj = js.Dynamic.literal(contains = contains, getAll = getAll, remove = remove, request = request)
+    val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), getAll = js.Any.fromFunction0(getAll), remove = js.Any.fromFunction1(remove), request = js.Any.fromFunction1(request))
     if (onAdded != null) __obj.updateDynamic("onAdded")(onAdded)
     if (onRemoved != null) __obj.updateDynamic("onRemoved")(onRemoved)
     __obj.asInstanceOf[Anon_Contains]

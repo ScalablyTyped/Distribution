@@ -35,33 +35,29 @@ trait FileUpload extends js.Object {
 object FileUpload {
   @scala.inline
   def apply(
-    addChangeHandler: js.Function1[Handler, FileUpload],
-    addStyleDependentName: js.Function1[java.lang.String, FileUpload],
-    addStyleName: js.Function1[java.lang.String, FileUpload],
-    getId: js.Function0[java.lang.String],
-    getTag: js.Function0[java.lang.String],
-    getType: js.Function0[java.lang.String],
-    setEnabled: js.Function1[scala.Boolean, FileUpload],
-    setHeight: js.Function1[java.lang.String, FileUpload],
-    setId: js.Function1[java.lang.String, FileUpload],
-    setLayoutData: js.Function1[js.Object, FileUpload],
-    setName: js.Function1[java.lang.String, FileUpload],
-    setPixelSize: js.Function2[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      FileUpload
-    ],
-    setSize: js.Function2[java.lang.String, java.lang.String, FileUpload],
-    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, FileUpload],
-    setStyleAttributes: js.Function1[js.Object, FileUpload],
-    setStyleName: js.Function1[java.lang.String, FileUpload],
-    setStylePrimaryName: js.Function1[java.lang.String, FileUpload],
-    setTag: js.Function1[java.lang.String, FileUpload],
-    setTitle: js.Function1[java.lang.String, FileUpload],
-    setVisible: js.Function1[scala.Boolean, FileUpload],
-    setWidth: js.Function1[java.lang.String, FileUpload]
+    addChangeHandler: Handler => FileUpload,
+    addStyleDependentName: java.lang.String => FileUpload,
+    addStyleName: java.lang.String => FileUpload,
+    getId: () => java.lang.String,
+    getTag: () => java.lang.String,
+    getType: () => java.lang.String,
+    setEnabled: scala.Boolean => FileUpload,
+    setHeight: java.lang.String => FileUpload,
+    setId: java.lang.String => FileUpload,
+    setLayoutData: js.Object => FileUpload,
+    setName: java.lang.String => FileUpload,
+    setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => FileUpload,
+    setSize: (java.lang.String, java.lang.String) => FileUpload,
+    setStyleAttribute: (java.lang.String, java.lang.String) => FileUpload,
+    setStyleAttributes: js.Object => FileUpload,
+    setStyleName: java.lang.String => FileUpload,
+    setStylePrimaryName: java.lang.String => FileUpload,
+    setTag: java.lang.String => FileUpload,
+    setTitle: java.lang.String => FileUpload,
+    setVisible: scala.Boolean => FileUpload,
+    setWidth: java.lang.String => FileUpload
   ): FileUpload = {
-    val __obj = js.Dynamic.literal(addChangeHandler = addChangeHandler, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, getId = getId, getTag = getTag, getType = getType, setEnabled = setEnabled, setHeight = setHeight, setId = setId, setLayoutData = setLayoutData, setName = setName, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setTitle = setTitle, setVisible = setVisible, setWidth = setWidth)
+    val __obj = js.Dynamic.literal(addChangeHandler = js.Any.fromFunction1(addChangeHandler), addStyleDependentName = js.Any.fromFunction1(addStyleDependentName), addStyleName = js.Any.fromFunction1(addStyleName), getId = js.Any.fromFunction0(getId), getTag = js.Any.fromFunction0(getTag), getType = js.Any.fromFunction0(getType), setEnabled = js.Any.fromFunction1(setEnabled), setHeight = js.Any.fromFunction1(setHeight), setId = js.Any.fromFunction1(setId), setLayoutData = js.Any.fromFunction1(setLayoutData), setName = js.Any.fromFunction1(setName), setPixelSize = js.Any.fromFunction2(setPixelSize), setSize = js.Any.fromFunction2(setSize), setStyleAttribute = js.Any.fromFunction2(setStyleAttribute), setStyleAttributes = js.Any.fromFunction1(setStyleAttributes), setStyleName = js.Any.fromFunction1(setStyleName), setStylePrimaryName = js.Any.fromFunction1(setStylePrimaryName), setTag = js.Any.fromFunction1(setTag), setTitle = js.Any.fromFunction1(setTitle), setVisible = js.Any.fromFunction1(setVisible), setWidth = js.Any.fromFunction1(setWidth))
   
     __obj.asInstanceOf[FileUpload]
   }

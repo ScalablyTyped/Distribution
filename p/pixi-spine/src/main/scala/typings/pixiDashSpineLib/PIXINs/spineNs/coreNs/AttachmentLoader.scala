@@ -17,14 +17,14 @@ trait AttachmentLoader extends js.Object {
 object AttachmentLoader {
   @scala.inline
   def apply(
-    newBoundingBoxAttachment: js.Function2[Skin, java.lang.String, BoundingBoxAttachment],
-    newClippingAttachment: js.Function2[Skin, java.lang.String, ClippingAttachment],
-    newMeshAttachment: js.Function3[Skin, java.lang.String, java.lang.String, MeshAttachment],
-    newPathAttachment: js.Function2[Skin, java.lang.String, PathAttachment],
-    newPointAttachment: js.Function2[Skin, java.lang.String, PointAttachment],
-    newRegionAttachment: js.Function3[Skin, java.lang.String, java.lang.String, RegionAttachment]
+    newBoundingBoxAttachment: (Skin, java.lang.String) => BoundingBoxAttachment,
+    newClippingAttachment: (Skin, java.lang.String) => ClippingAttachment,
+    newMeshAttachment: (Skin, java.lang.String, java.lang.String) => MeshAttachment,
+    newPathAttachment: (Skin, java.lang.String) => PathAttachment,
+    newPointAttachment: (Skin, java.lang.String) => PointAttachment,
+    newRegionAttachment: (Skin, java.lang.String, java.lang.String) => RegionAttachment
   ): AttachmentLoader = {
-    val __obj = js.Dynamic.literal(newBoundingBoxAttachment = newBoundingBoxAttachment, newClippingAttachment = newClippingAttachment, newMeshAttachment = newMeshAttachment, newPathAttachment = newPathAttachment, newPointAttachment = newPointAttachment, newRegionAttachment = newRegionAttachment)
+    val __obj = js.Dynamic.literal(newBoundingBoxAttachment = js.Any.fromFunction2(newBoundingBoxAttachment), newClippingAttachment = js.Any.fromFunction2(newClippingAttachment), newMeshAttachment = js.Any.fromFunction3(newMeshAttachment), newPathAttachment = js.Any.fromFunction2(newPathAttachment), newPointAttachment = js.Any.fromFunction2(newPointAttachment), newRegionAttachment = js.Any.fromFunction3(newRegionAttachment))
   
     __obj.asInstanceOf[AttachmentLoader]
   }

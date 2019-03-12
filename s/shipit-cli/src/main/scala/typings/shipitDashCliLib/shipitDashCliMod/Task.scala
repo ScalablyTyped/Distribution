@@ -17,10 +17,10 @@ object Task {
   def apply(
     blocking: scala.Boolean,
     dep: js.Array[java.lang.String],
-    fn: js.Function0[scala.Unit],
+    fn: () => scala.Unit,
     name: java.lang.String
   ): Task = {
-    val __obj = js.Dynamic.literal(blocking = blocking, dep = dep, fn = fn, name = name)
+    val __obj = js.Dynamic.literal(blocking = blocking, dep = dep, fn = js.Any.fromFunction0(fn), name = name)
   
     __obj.asInstanceOf[Task]
   }

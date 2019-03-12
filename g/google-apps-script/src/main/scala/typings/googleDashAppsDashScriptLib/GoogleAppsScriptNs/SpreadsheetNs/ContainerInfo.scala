@@ -15,12 +15,12 @@ trait ContainerInfo extends js.Object {
 object ContainerInfo {
   @scala.inline
   def apply(
-    getAnchorColumn: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getAnchorRow: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getOffsetX: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getOffsetY: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer]
+    getAnchorColumn: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getAnchorRow: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getOffsetX: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getOffsetY: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): ContainerInfo = {
-    val __obj = js.Dynamic.literal(getAnchorColumn = getAnchorColumn, getAnchorRow = getAnchorRow, getOffsetX = getOffsetX, getOffsetY = getOffsetY)
+    val __obj = js.Dynamic.literal(getAnchorColumn = js.Any.fromFunction0(getAnchorColumn), getAnchorRow = js.Any.fromFunction0(getAnchorRow), getOffsetX = js.Any.fromFunction0(getOffsetX), getOffsetY = js.Any.fromFunction0(getOffsetY))
   
     __obj.asInstanceOf[ContainerInfo]
   }

@@ -12,12 +12,12 @@ trait GridColumnLockEvent extends GridEvent {
 object GridColumnLockEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Grid,
     column: js.Any = null
   ): GridColumnLockEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (column != null) __obj.updateDynamic("column")(column)
     __obj.asInstanceOf[GridColumnLockEvent]
   }

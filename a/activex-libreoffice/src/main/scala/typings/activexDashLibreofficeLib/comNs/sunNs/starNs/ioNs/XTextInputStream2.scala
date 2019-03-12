@@ -17,34 +17,22 @@ object XTextInputStream2 {
   @scala.inline
   def apply(
     InputStream: XInputStream,
-    acquire: js.Function0[scala.Unit],
-    available: js.Function0[scala.Double],
-    closeInput: js.Function0[scala.Unit],
-    getInputStream: js.Function0[XInputStream],
-    isEOF: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    readBytes: js.Function2[
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      scala.Double, 
-      scala.Double
-    ],
-    readLine: js.Function0[java.lang.String],
-    readSomeBytes: js.Function2[
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
-      scala.Double, 
-      scala.Double
-    ],
-    readString: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      scala.Boolean, 
-      java.lang.String
-    ],
-    release: js.Function0[scala.Unit],
-    setEncoding: js.Function1[java.lang.String, scala.Unit],
-    setInputStream: js.Function1[XInputStream, scala.Unit],
-    skipBytes: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    available: () => scala.Double,
+    closeInput: () => scala.Unit,
+    getInputStream: () => XInputStream,
+    isEOF: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    readBytes: (js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], scala.Double) => scala.Double,
+    readLine: () => java.lang.String,
+    readSomeBytes: (js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], scala.Double) => scala.Double,
+    readString: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Boolean) => java.lang.String,
+    release: () => scala.Unit,
+    setEncoding: java.lang.String => scala.Unit,
+    setInputStream: XInputStream => scala.Unit,
+    skipBytes: scala.Double => scala.Unit
   ): XTextInputStream2 = {
-    val __obj = js.Dynamic.literal(InputStream = InputStream, acquire = acquire, available = available, closeInput = closeInput, getInputStream = getInputStream, isEOF = isEOF, queryInterface = queryInterface, readBytes = readBytes, readLine = readLine, readSomeBytes = readSomeBytes, readString = readString, release = release, setEncoding = setEncoding, setInputStream = setInputStream, skipBytes = skipBytes)
+    val __obj = js.Dynamic.literal(InputStream = InputStream, acquire = js.Any.fromFunction0(acquire), available = js.Any.fromFunction0(available), closeInput = js.Any.fromFunction0(closeInput), getInputStream = js.Any.fromFunction0(getInputStream), isEOF = js.Any.fromFunction0(isEOF), queryInterface = js.Any.fromFunction1(queryInterface), readBytes = js.Any.fromFunction2(readBytes), readLine = js.Any.fromFunction0(readLine), readSomeBytes = js.Any.fromFunction2(readSomeBytes), readString = js.Any.fromFunction2(readString), release = js.Any.fromFunction0(release), setEncoding = js.Any.fromFunction1(setEncoding), setInputStream = js.Any.fromFunction1(setInputStream), skipBytes = js.Any.fromFunction1(skipBytes))
   
     __obj.asInstanceOf[XTextInputStream2]
   }

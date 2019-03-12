@@ -18,18 +18,18 @@ trait ObserveChangesCallbacks extends js.Object {
 object ObserveChangesCallbacks {
   @scala.inline
   def apply(
-    added: js.Function2[/* id */ java.lang.String, /* fields */ js.Object, scala.Unit] = null,
-    addedBefore: js.Function3[/* id */ java.lang.String, /* fields */ js.Object, /* before */ js.Object, scala.Unit] = null,
-    changed: js.Function2[/* id */ java.lang.String, /* fields */ js.Object, scala.Unit] = null,
-    movedBefore: js.Function2[/* id */ java.lang.String, /* before */ js.Object, scala.Unit] = null,
-    removed: js.Function1[/* id */ java.lang.String, scala.Unit] = null
+    added: (/* id */ java.lang.String, /* fields */ js.Object) => scala.Unit = null,
+    addedBefore: (/* id */ java.lang.String, /* fields */ js.Object, /* before */ js.Object) => scala.Unit = null,
+    changed: (/* id */ java.lang.String, /* fields */ js.Object) => scala.Unit = null,
+    movedBefore: (/* id */ java.lang.String, /* before */ js.Object) => scala.Unit = null,
+    removed: /* id */ java.lang.String => scala.Unit = null
   ): ObserveChangesCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (added != null) __obj.updateDynamic("added")(added)
-    if (addedBefore != null) __obj.updateDynamic("addedBefore")(addedBefore)
-    if (changed != null) __obj.updateDynamic("changed")(changed)
-    if (movedBefore != null) __obj.updateDynamic("movedBefore")(movedBefore)
-    if (removed != null) __obj.updateDynamic("removed")(removed)
+    if (added != null) __obj.updateDynamic("added")(js.Any.fromFunction2(added))
+    if (addedBefore != null) __obj.updateDynamic("addedBefore")(js.Any.fromFunction3(addedBefore))
+    if (changed != null) __obj.updateDynamic("changed")(js.Any.fromFunction2(changed))
+    if (movedBefore != null) __obj.updateDynamic("movedBefore")(js.Any.fromFunction2(movedBefore))
+    if (removed != null) __obj.updateDynamic("removed")(js.Any.fromFunction1(removed))
     __obj.asInstanceOf[ObserveChangesCallbacks]
   }
 }

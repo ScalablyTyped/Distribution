@@ -19,12 +19,12 @@ object Client {
   def apply(
     checkout: CheckoutResource,
     collection: CollectionResource,
-    fetchNextPage: js.Function1[js.Array[js.Any], js.Array[js.Any]],
+    fetchNextPage: js.Array[js.Any] => js.Array[js.Any],
     image: Image,
     product: ProductResource,
     shop: ShopResource
   ): Client = {
-    val __obj = js.Dynamic.literal(checkout = checkout, collection = collection, fetchNextPage = fetchNextPage, image = image, product = product, shop = shop)
+    val __obj = js.Dynamic.literal(checkout = checkout, collection = collection, fetchNextPage = js.Any.fromFunction1(fetchNextPage), image = image, product = product, shop = shop)
   
     __obj.asInstanceOf[Client]
   }

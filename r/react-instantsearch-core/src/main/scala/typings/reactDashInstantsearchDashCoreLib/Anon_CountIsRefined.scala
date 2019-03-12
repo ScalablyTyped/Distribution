@@ -12,3 +12,17 @@ trait Anon_CountIsRefined extends js.Object {
   var value: js.Array[java.lang.String]
 }
 
+object Anon_CountIsRefined {
+  @scala.inline
+  def apply(
+    count: scala.Double,
+    isRefined: scala.Boolean,
+    label: java.lang.String,
+    value: js.Array[java.lang.String]
+  ): Anon_CountIsRefined = {
+    val __obj = js.Dynamic.literal(count = count, isRefined = isRefined, label = label, value = value)
+  
+    __obj.asInstanceOf[Anon_CountIsRefined]
+  }
+}
+

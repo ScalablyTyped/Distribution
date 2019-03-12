@@ -11,8 +11,8 @@ trait Matchers[R] extends js.Object {
 
 object Matchers {
   @scala.inline
-  def apply[R](toMatchSpecificSnapshot: js.Function1[java.lang.String, R]): Matchers[R] = {
-    val __obj = js.Dynamic.literal(toMatchSpecificSnapshot = toMatchSpecificSnapshot)
+  def apply[R](toMatchSpecificSnapshot: java.lang.String => R): Matchers[R] = {
+    val __obj = js.Dynamic.literal(toMatchSpecificSnapshot = js.Any.fromFunction1(toMatchSpecificSnapshot))
   
     __obj.asInstanceOf[Matchers[R]]
   }

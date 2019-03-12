@@ -13,7 +13,7 @@ trait DefaultLinkProps
   var pointAdded: js.UndefOr[
     js.Function2[
       /* point */ stormDashReactDashDiagramsLib.distSrcModelsPointModelMod.PointModel, 
-      /* event */ reactLib.MouseEvent, 
+      /* event */ stdLib.MouseEvent, 
       _
     ]
   ] = js.undefined
@@ -30,11 +30,7 @@ object DefaultLinkProps {
     className: java.lang.String = null,
     color: java.lang.String = null,
     extraProps: js.Any = null,
-    pointAdded: js.Function2[
-      /* point */ stormDashReactDashDiagramsLib.distSrcModelsPointModelMod.PointModel, 
-      /* event */ reactLib.MouseEvent, 
-      _
-    ] = null,
+    pointAdded: (/* point */ stormDashReactDashDiagramsLib.distSrcModelsPointModelMod.PointModel, /* event */ stdLib.MouseEvent) => _ = null,
     smooth: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Int | scala.Double = null
   ): DefaultLinkProps = {
@@ -43,7 +39,7 @@ object DefaultLinkProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (color != null) __obj.updateDynamic("color")(color)
     if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps)
-    if (pointAdded != null) __obj.updateDynamic("pointAdded")(pointAdded)
+    if (pointAdded != null) __obj.updateDynamic("pointAdded")(js.Any.fromFunction2(pointAdded))
     if (!js.isUndefined(smooth)) __obj.updateDynamic("smooth")(smooth)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultLinkProps]

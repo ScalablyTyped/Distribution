@@ -24,57 +24,21 @@ trait Anon_Copy extends js.Object {
 object Anon_Copy {
   @scala.inline
   def apply(
-    copy: js.Function1[
-      gapiDotDriveLib.gapiNs.clientNs.driveNs.CopyParameters, 
-      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.FileResource]
-    ],
-    delete: js.Function1[
-      gapiDotDriveLib.gapiNs.clientNs.driveNs.DeleteParameters, 
-      gapiLib.gapiNs.clientNs.HttpRequest[_]
-    ],
-    emptyTrash: js.Function0[gapiLib.gapiNs.clientNs.HttpRequest[_]],
-    export: js.Function1[
-      gapiDotDriveLib.gapiNs.clientNs.driveNs.ExportParameters, 
-      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.FileResource]
-    ],
-    generateIds: js.Function1[
-      gapiDotDriveLib.gapiNs.clientNs.driveNs.GenerateIdsParameters, 
-      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.IdsResource]
-    ],
-    get: js.Function1[
-      gapiDotDriveLib.gapiNs.clientNs.driveNs.GetParameters, 
-      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.FileResource]
-    ],
-    insert: js.Function1[
-      gapiDotDriveLib.gapiNs.clientNs.driveNs.InsertParameters, 
-      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.FileResource]
-    ],
-    list: js.Function1[
-      gapiDotDriveLib.gapiNs.clientNs.driveNs.ListParameters, 
-      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.FileListResource]
-    ],
-    patch: js.Function1[
-      gapiDotDriveLib.gapiNs.clientNs.driveNs.PatchParameters, 
-      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.FileResource]
-    ],
-    touch: js.Function1[
-      gapiDotDriveLib.gapiNs.clientNs.driveNs.TouchParameters, 
-      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.FileResource]
-    ],
-    trash: js.Function1[
-      gapiDotDriveLib.gapiNs.clientNs.driveNs.TrashParameters, 
-      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.FileResource]
-    ],
-    untrash: js.Function1[
-      gapiDotDriveLib.gapiNs.clientNs.driveNs.UntrashParameters, 
-      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.FileResource]
-    ],
-    watch: js.Function1[
-      gapiDotDriveLib.gapiNs.clientNs.driveNs.WatchParameters, 
-      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.ChannelResource]
-    ]
+    copy: gapiDotDriveLib.gapiNs.clientNs.driveNs.CopyParameters => gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.FileResource],
+    delete: gapiDotDriveLib.gapiNs.clientNs.driveNs.DeleteParameters => gapiLib.gapiNs.clientNs.HttpRequest[_],
+    emptyTrash: () => gapiLib.gapiNs.clientNs.HttpRequest[_],
+    export: gapiDotDriveLib.gapiNs.clientNs.driveNs.ExportParameters => gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.FileResource],
+    generateIds: gapiDotDriveLib.gapiNs.clientNs.driveNs.GenerateIdsParameters => gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.IdsResource],
+    get: gapiDotDriveLib.gapiNs.clientNs.driveNs.GetParameters => gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.FileResource],
+    insert: gapiDotDriveLib.gapiNs.clientNs.driveNs.InsertParameters => gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.FileResource],
+    list: gapiDotDriveLib.gapiNs.clientNs.driveNs.ListParameters => gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.FileListResource],
+    patch: gapiDotDriveLib.gapiNs.clientNs.driveNs.PatchParameters => gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.FileResource],
+    touch: gapiDotDriveLib.gapiNs.clientNs.driveNs.TouchParameters => gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.FileResource],
+    trash: gapiDotDriveLib.gapiNs.clientNs.driveNs.TrashParameters => gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.FileResource],
+    untrash: gapiDotDriveLib.gapiNs.clientNs.driveNs.UntrashParameters => gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.FileResource],
+    watch: gapiDotDriveLib.gapiNs.clientNs.driveNs.WatchParameters => gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.ChannelResource]
   ): Anon_Copy = {
-    val __obj = js.Dynamic.literal(copy = copy, delete = delete, emptyTrash = emptyTrash, export = export, generateIds = generateIds, get = get, insert = insert, list = list, patch = patch, touch = touch, trash = trash, untrash = untrash, watch = watch)
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction1(copy), delete = js.Any.fromFunction1(delete), emptyTrash = js.Any.fromFunction0(emptyTrash), export = js.Any.fromFunction1(export), generateIds = js.Any.fromFunction1(generateIds), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), touch = js.Any.fromFunction1(touch), trash = js.Any.fromFunction1(trash), untrash = js.Any.fromFunction1(untrash), watch = js.Any.fromFunction1(watch))
   
     __obj.asInstanceOf[Anon_Copy]
   }

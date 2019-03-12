@@ -20,14 +20,14 @@ trait XUpdatable2 extends XUpdatable {
 object XUpdatable2 {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    update: js.Function0[scala.Unit],
-    updateHard: js.Function0[scala.Unit],
-    updateSoft: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    update: () => scala.Unit,
+    updateHard: () => scala.Unit,
+    updateSoft: () => scala.Unit
   ): XUpdatable2 = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, update = update, updateHard = updateHard, updateSoft = updateSoft)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), update = js.Any.fromFunction0(update), updateHard = js.Any.fromFunction0(updateHard), updateSoft = js.Any.fromFunction0(updateSoft))
   
     __obj.asInstanceOf[XUpdatable2]
   }

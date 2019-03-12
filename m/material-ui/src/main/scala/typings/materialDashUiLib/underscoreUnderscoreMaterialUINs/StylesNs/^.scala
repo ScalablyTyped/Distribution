@@ -13,10 +13,10 @@ object ^ extends js.Object {
   var ThemePalette: materialDashUiLib.underscoreUnderscoreMaterialUINs.StylesNs.ThemePalette = js.native
   var Transitions: materialDashUiLib.underscoreUnderscoreMaterialUINs.StylesNs.Transitions = js.native
   var Typography: materialDashUiLib.underscoreUnderscoreMaterialUINs.StylesNs.Typography = js.native
-  var darkBaseTheme: materialDashUiLib.underscoreUnderscoreMaterialUINs.StylesNs.RawTheme = js.native
-  var lightBaseTheme: materialDashUiLib.underscoreUnderscoreMaterialUINs.StylesNs.RawTheme = js.native
+  var darkBaseTheme: RawTheme = js.native
+  var lightBaseTheme: RawTheme = js.native
   var zIndex: materialDashUiLib.underscoreUnderscoreMaterialUINs.StylesNs.zIndex = js.native
-  def getMuiTheme(muiTheme: materialDashUiLib.underscoreUnderscoreMaterialUINs.StylesNs.MuiTheme*): materialDashUiLib.underscoreUnderscoreMaterialUINs.StylesNs.MuiTheme = js.native
+  def getMuiTheme(muiTheme: MuiTheme*): MuiTheme = js.native
   def muiThemeable(): js.Function1[
     /* component */ (reactLib.reactMod.ReactNs.ComponentClass[materialDashUiLib.Anon_MuiTheme, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[materialDashUiLib.Anon_MuiTheme], 
     (reactLib.reactMod.ReactNs.ComponentClass[materialDashUiLib.Anon_MuiTheme, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[materialDashUiLib.Anon_MuiTheme]

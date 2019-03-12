@@ -11,9 +11,9 @@ trait IntrinsicClassAttributes[T] extends js.Object {
 
 object IntrinsicClassAttributes {
   @scala.inline
-  def apply[T](ref: js.Function1[/* ref */ T | scala.Null, scala.Unit] = null): IntrinsicClassAttributes[T] = {
+  def apply[T](ref: /* ref */ T | scala.Null => scala.Unit = null): IntrinsicClassAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    if (ref != null) __obj.updateDynamic("ref")(js.Any.fromFunction1(ref))
     __obj.asInstanceOf[IntrinsicClassAttributes[T]]
   }
 }

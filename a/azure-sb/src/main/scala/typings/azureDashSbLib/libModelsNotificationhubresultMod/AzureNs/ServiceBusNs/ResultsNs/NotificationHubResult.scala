@@ -13,13 +13,10 @@ trait NotificationHubResult extends js.Object {
 object NotificationHubResult {
   @scala.inline
   def apply(
-    parse: js.Function1[js.Object, js.Object | js.Array[js.Object]],
-    serialize: js.Function1[
-      azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.CreateNotificationHubOptions, 
-      java.lang.String
-    ]
+    parse: js.Object => js.Object | js.Array[js.Object],
+    serialize: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.CreateNotificationHubOptions => java.lang.String
   ): NotificationHubResult = {
-    val __obj = js.Dynamic.literal(parse = parse, serialize = serialize)
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), serialize = js.Any.fromFunction1(serialize))
   
     __obj.asInstanceOf[NotificationHubResult]
   }

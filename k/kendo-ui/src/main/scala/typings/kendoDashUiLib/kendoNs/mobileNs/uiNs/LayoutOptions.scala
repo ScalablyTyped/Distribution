@@ -17,20 +17,20 @@ trait LayoutOptions extends js.Object {
 object LayoutOptions {
   @scala.inline
   def apply(
-    hide: js.Function1[/* e */ LayoutHideEvent, scala.Unit] = null,
+    hide: /* e */ LayoutHideEvent => scala.Unit = null,
     id: java.lang.String = null,
-    init: js.Function1[/* e */ LayoutInitEvent, scala.Unit] = null,
+    init: /* e */ LayoutInitEvent => scala.Unit = null,
     name: java.lang.String = null,
     platform: java.lang.String = null,
-    show: js.Function1[/* e */ LayoutShowEvent, scala.Unit] = null
+    show: /* e */ LayoutShowEvent => scala.Unit = null
   ): LayoutOptions = {
     val __obj = js.Dynamic.literal()
-    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
     if (id != null) __obj.updateDynamic("id")(id)
-    if (init != null) __obj.updateDynamic("init")(init)
+    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (name != null) __obj.updateDynamic("name")(name)
     if (platform != null) __obj.updateDynamic("platform")(platform)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
     __obj.asInstanceOf[LayoutOptions]
   }
 }

@@ -15,18 +15,12 @@ trait SimpleEventEmitter extends js.Object {
 object SimpleEventEmitter {
   @scala.inline
   def apply(
-    emit: js.Function1[/* repeated */ js.Any, js.Any],
+    emit: /* repeated */ js.Any => js.Any,
     listeners: js.Array[mobservableLib.Anon_Data],
-    on: js.Function1[
-      js.Function1[/* repeated */ js.Any, scala.Unit], 
-      mobservableLib.libInterfacesMod.Lambda
-    ],
-    once: js.Function1[
-      js.Function1[/* repeated */ js.Any, scala.Unit], 
-      mobservableLib.libInterfacesMod.Lambda
-    ]
+    on: js.Function1[/* repeated */ js.Any, scala.Unit] => mobservableLib.libInterfacesMod.Lambda,
+    once: js.Function1[/* repeated */ js.Any, scala.Unit] => mobservableLib.libInterfacesMod.Lambda
   ): SimpleEventEmitter = {
-    val __obj = js.Dynamic.literal(emit = emit, listeners = listeners, on = on, once = once)
+    val __obj = js.Dynamic.literal(emit = js.Any.fromFunction1(emit), listeners = listeners, on = js.Any.fromFunction1(on), once = js.Any.fromFunction1(once))
   
     __obj.asInstanceOf[SimpleEventEmitter]
   }

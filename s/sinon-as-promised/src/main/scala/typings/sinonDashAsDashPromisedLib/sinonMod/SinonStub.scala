@@ -26,10 +26,10 @@ trait SinonStub extends js.Object {
 object SinonStub {
   @scala.inline
   def apply(
-    rejects: js.Function1[js.Any, sinonLib.sinonMod.SinonNs.SinonStub],
-    resolves: js.Function1[js.Any, sinonLib.sinonMod.SinonNs.SinonStub]
+    rejects: js.Any => sinonLib.sinonMod.SinonNs.SinonStub,
+    resolves: js.Any => sinonLib.sinonMod.SinonNs.SinonStub
   ): SinonStub = {
-    val __obj = js.Dynamic.literal(rejects = rejects, resolves = resolves)
+    val __obj = js.Dynamic.literal(rejects = js.Any.fromFunction1(rejects), resolves = js.Any.fromFunction1(resolves))
   
     __obj.asInstanceOf[SinonStub]
   }

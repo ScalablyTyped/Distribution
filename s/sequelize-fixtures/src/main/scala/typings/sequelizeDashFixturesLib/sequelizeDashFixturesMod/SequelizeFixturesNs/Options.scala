@@ -17,17 +17,17 @@ object Options {
   @scala.inline
   def apply(
     encoding: java.lang.String = null,
-    log: js.Function1[/* message */ java.lang.String, scala.Unit] = null,
-    modifyFixtureDataFn: js.Function1[/* data */ js.Any, _] = null,
+    log: /* message */ java.lang.String => scala.Unit = null,
+    modifyFixtureDataFn: /* data */ js.Any => _ = null,
     transaction: sequelizeLib.sequelizeMod.sequelizeNs.Transaction = null,
-    transformFixtureDataFn: js.Function1[/* data */ js.Any, _] = null
+    transformFixtureDataFn: /* data */ js.Any => _ = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (log != null) __obj.updateDynamic("log")(log)
-    if (modifyFixtureDataFn != null) __obj.updateDynamic("modifyFixtureDataFn")(modifyFixtureDataFn)
+    if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction1(log))
+    if (modifyFixtureDataFn != null) __obj.updateDynamic("modifyFixtureDataFn")(js.Any.fromFunction1(modifyFixtureDataFn))
     if (transaction != null) __obj.updateDynamic("transaction")(transaction)
-    if (transformFixtureDataFn != null) __obj.updateDynamic("transformFixtureDataFn")(transformFixtureDataFn)
+    if (transformFixtureDataFn != null) __obj.updateDynamic("transformFixtureDataFn")(js.Any.fromFunction1(transformFixtureDataFn))
     __obj.asInstanceOf[Options]
   }
 }

@@ -15,12 +15,12 @@ trait JQueryColorpickerInstance extends js.Object {
 object JQueryColorpickerInstance {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    open: js.Function0[scala.Unit],
-    setColor: js.Function1[js.Any, scala.Unit]
+    close: () => scala.Unit,
+    destroy: () => scala.Unit,
+    open: () => scala.Unit,
+    setColor: js.Any => scala.Unit
   ): JQueryColorpickerInstance = {
-    val __obj = js.Dynamic.literal(close = close, destroy = destroy, open = open, setColor = setColor)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), open = js.Any.fromFunction0(open), setColor = js.Any.fromFunction1(setColor))
   
     __obj.asInstanceOf[JQueryColorpickerInstance]
   }

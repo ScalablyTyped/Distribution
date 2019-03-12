@@ -31,7 +31,7 @@ object ELBNs extends js.Object {
     /**
       * The Availability Zones. These must be in the same region as the load balancer.
       */
-    var AvailabilityZones: AvailabilityZones
+    var AvailabilityZones: awsDashSdkLib.clientsElbMod.ELBNs.AvailabilityZones
     /**
       * The name of the load balancer.
       */
@@ -49,7 +49,7 @@ object ELBNs extends js.Object {
     /**
       * The name of the load balancer. You can specify one load balancer only.
       */
-    var LoadBalancerNames: LoadBalancerNames
+    var LoadBalancerNames: awsDashSdkLib.clientsElbMod.ELBNs.LoadBalancerNames
     /**
       * The tags.
       */
@@ -88,7 +88,7 @@ object ELBNs extends js.Object {
     /**
       * The IDs of the security groups to associate with the load balancer. Note that you cannot specify the name of the security group.
       */
-    var SecurityGroups: SecurityGroups
+    var SecurityGroups: awsDashSdkLib.clientsElbMod.ELBNs.SecurityGroups
   }
   
   trait ApplySecurityGroupsToLoadBalancerOutput extends js.Object {
@@ -106,7 +106,7 @@ object ELBNs extends js.Object {
     /**
       * The IDs of the subnets to add. You can add only one subnet per Availability Zone.
       */
-    var Subnets: Subnets
+    var Subnets: awsDashSdkLib.clientsElbMod.ELBNs.Subnets
   }
   
   trait AttachLoadBalancerToSubnetsOutput extends js.Object {
@@ -138,7 +138,7 @@ object ELBNs extends js.Object {
     /**
       * The configuration information.
       */
-    var HealthCheck: HealthCheck
+    var HealthCheck: awsDashSdkLib.clientsElbMod.ELBNs.HealthCheck
     /**
       * The name of the load balancer.
       */
@@ -167,7 +167,7 @@ object ELBNs extends js.Object {
     /**
       * The time, in seconds, that the connection is allowed to be idle (no data has been sent over the connection) before it is closed by the load balancer.
       */
-    var IdleTimeout: IdleTimeout
+    var IdleTimeout: awsDashSdkLib.clientsElbMod.ELBNs.IdleTimeout
   }
   
   trait CreateAccessPointInput extends js.Object {
@@ -178,7 +178,7 @@ object ELBNs extends js.Object {
     /**
       * The listeners. For more information, see Listeners for Your Classic Load Balancer in the Classic Load Balancers Guide.
       */
-    var Listeners: Listeners
+    var Listeners: awsDashSdkLib.clientsElbMod.ELBNs.Listeners
     /**
       * The name of the load balancer. This name must be unique within your set of load balancers for the region, must have a maximum of 32 characters, must contain only alphanumeric characters or hyphens, and cannot begin or end with a hyphen.
       */
@@ -212,7 +212,7 @@ object ELBNs extends js.Object {
     /**
       * The name of the application cookie used for stickiness.
       */
-    var CookieName: CookieName
+    var CookieName: awsDashSdkLib.clientsElbMod.ELBNs.CookieName
     /**
       * The name of the load balancer.
       */
@@ -220,7 +220,7 @@ object ELBNs extends js.Object {
     /**
       * The name of the policy being created. Policy names must consist of alphanumeric characters and dashes (-). This name must be unique within the set of policies for this load balancer.
       */
-    var PolicyName: PolicyName
+    var PolicyName: awsDashSdkLib.clientsElbMod.ELBNs.PolicyName
   }
   
   trait CreateAppCookieStickinessPolicyOutput extends js.Object
@@ -237,7 +237,7 @@ object ELBNs extends js.Object {
     /**
       * The name of the policy being created. Policy names must consist of alphanumeric characters and dashes (-). This name must be unique within the set of policies for this load balancer.
       */
-    var PolicyName: PolicyName
+    var PolicyName: awsDashSdkLib.clientsElbMod.ELBNs.PolicyName
   }
   
   trait CreateLBCookieStickinessPolicyOutput extends js.Object
@@ -246,7 +246,7 @@ object ELBNs extends js.Object {
     /**
       * The listeners.
       */
-    var Listeners: Listeners
+    var Listeners: awsDashSdkLib.clientsElbMod.ELBNs.Listeners
     /**
       * The name of the load balancer.
       */
@@ -267,11 +267,11 @@ object ELBNs extends js.Object {
     /**
       * The name of the load balancer policy to be created. This name must be unique within the set of policies for this load balancer.
       */
-    var PolicyName: PolicyName
+    var PolicyName: awsDashSdkLib.clientsElbMod.ELBNs.PolicyName
     /**
       * The name of the base policy type. To get the list of policy types, use DescribeLoadBalancerPolicyTypes.
       */
-    var PolicyTypeName: PolicyTypeName
+    var PolicyTypeName: awsDashSdkLib.clientsElbMod.ELBNs.PolicyTypeName
   }
   
   trait CreateLoadBalancerPolicyOutput extends js.Object
@@ -313,7 +313,7 @@ object ELBNs extends js.Object {
     /**
       * The name of the policy.
       */
-    var PolicyName: PolicyName
+    var PolicyName: awsDashSdkLib.clientsElbMod.ELBNs.PolicyName
   }
   
   trait DeleteLoadBalancerPolicyOutput extends js.Object
@@ -322,7 +322,7 @@ object ELBNs extends js.Object {
     /**
       * The IDs of the instances.
       */
-    var Instances: Instances
+    var Instances: awsDashSdkLib.clientsElbMod.ELBNs.Instances
     /**
       * The name of the load balancer.
       */
@@ -470,7 +470,7 @@ object ELBNs extends js.Object {
     /**
       * The IDs of the subnets.
       */
-    var Subnets: Subnets
+    var Subnets: awsDashSdkLib.clientsElbMod.ELBNs.Subnets
   }
   
   trait DetachLoadBalancerFromSubnetsOutput extends js.Object {
@@ -484,7 +484,7 @@ object ELBNs extends js.Object {
     /**
       * The number of consecutive health checks successes required before moving the instance to the Healthy state.
       */
-    var HealthyThreshold: HealthyThreshold
+    var HealthyThreshold: awsDashSdkLib.clientsElbMod.ELBNs.HealthyThreshold
     /**
       * The approximate interval, in seconds, between health checks of an individual instance.
       */
@@ -500,7 +500,7 @@ object ELBNs extends js.Object {
     /**
       * The number of consecutive health check failures required before moving the instance to the Unhealthy state.
       */
-    var UnhealthyThreshold: UnhealthyThreshold
+    var UnhealthyThreshold: awsDashSdkLib.clientsElbMod.ELBNs.UnhealthyThreshold
   }
   
   trait Instance extends js.Object {
@@ -555,7 +555,7 @@ object ELBNs extends js.Object {
     /**
       * The port on which the instance is listening.
       */
-    var InstancePort: InstancePort
+    var InstancePort: awsDashSdkLib.clientsElbMod.ELBNs.InstancePort
     /**
       * The protocol to use for routing traffic to instances: HTTP, HTTPS, TCP, or SSL. If the front-end protocol is HTTP, HTTPS, TCP, or SSL, InstanceProtocol must be at the same protocol. If there is another listener with the same InstancePort whose InstanceProtocol is secure, (HTTPS or SSL), the listener's InstanceProtocol must also be secure. If there is another listener with the same InstancePort whose InstanceProtocol is HTTP or TCP, the listener's InstanceProtocol must be HTTP or TCP.
       */
@@ -567,7 +567,7 @@ object ELBNs extends js.Object {
     /**
       * The load balancer transport protocol to use for routing: HTTP, HTTPS, TCP, or SSL.
       */
-    var Protocol: Protocol
+    var Protocol: awsDashSdkLib.clientsElbMod.ELBNs.Protocol
     /**
       * The Amazon Resource Name (ARN) of the server certificate.
       */
@@ -679,7 +679,7 @@ object ELBNs extends js.Object {
     /**
       * The attributes for the load balancer.
       */
-    var LoadBalancerAttributes: LoadBalancerAttributes
+    var LoadBalancerAttributes: awsDashSdkLib.clientsElbMod.ELBNs.LoadBalancerAttributes
     /**
       * The name of the load balancer.
       */
@@ -791,7 +791,7 @@ object ELBNs extends js.Object {
     /**
       * The IDs of the instances.
       */
-    var Instances: Instances
+    var Instances: awsDashSdkLib.clientsElbMod.ELBNs.Instances
     /**
       * The name of the load balancer.
       */
@@ -809,7 +809,7 @@ object ELBNs extends js.Object {
     /**
       * The Availability Zones.
       */
-    var AvailabilityZones: AvailabilityZones
+    var AvailabilityZones: awsDashSdkLib.clientsElbMod.ELBNs.AvailabilityZones
     /**
       * The name of the load balancer.
       */
@@ -827,7 +827,7 @@ object ELBNs extends js.Object {
     /**
       * The name of the load balancer. You can specify a maximum of one load balancer name.
       */
-    var LoadBalancerNames: LoadBalancerNames
+    var LoadBalancerNames: awsDashSdkLib.clientsElbMod.ELBNs.LoadBalancerNames
     /**
       * The list of tag keys to remove.
       */
@@ -848,7 +848,7 @@ object ELBNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the SSL certificate.
       */
-    var SSLCertificateId: SSLCertificateId
+    var SSLCertificateId: awsDashSdkLib.clientsElbMod.ELBNs.SSLCertificateId
   }
   
   trait SetLoadBalancerListenerSSLCertificateOutput extends js.Object
@@ -865,7 +865,7 @@ object ELBNs extends js.Object {
     /**
       * The names of the policies. If the list is empty, then all current polices are removed from the EC2 instance.
       */
-    var PolicyNames: PolicyNames
+    var PolicyNames: awsDashSdkLib.clientsElbMod.ELBNs.PolicyNames
   }
   
   trait SetLoadBalancerPoliciesForBackendServerOutput extends js.Object
@@ -882,7 +882,7 @@ object ELBNs extends js.Object {
     /**
       * The names of the policies. This list must include all policies to be enabled. If you omit a policy that is currently enabled, it is disabled. If the list is empty, all current policies are disabled.
       */
-    var PolicyNames: PolicyNames
+    var PolicyNames: awsDashSdkLib.clientsElbMod.ELBNs.PolicyNames
   }
   
   trait SetLoadBalancerPoliciesOfListenerOutput extends js.Object

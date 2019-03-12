@@ -16,6 +16,6 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BaseError
-  extends nodeLib.Error
-     with nodeLib.ErrorConstructor
+  extends stdLib.Error
+     with stdLib.ErrorConstructor
 

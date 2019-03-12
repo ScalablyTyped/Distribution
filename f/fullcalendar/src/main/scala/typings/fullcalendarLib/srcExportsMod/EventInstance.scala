@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "EventInstance")
 @js.native
 class EventInstance protected ()
-  extends fullcalendarLib.eventinstanceMod.default {
+  extends fullcalendarLib.eventInstanceMod.default {
   def this(`def`: js.Any, dateProfile: js.Any) = this()
 }
 

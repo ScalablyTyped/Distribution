@@ -16,17 +16,10 @@ trait Password extends js.Object {
 object Password {
   @scala.inline
   def apply(
-    hash: js.Function1[
-      js.Function2[/* error */ java.lang.String, /* hash */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ],
-    verifyAgainst: js.Function2[
-      java.lang.String, 
-      js.Function2[/* error */ java.lang.String, /* verified */ scala.Boolean, scala.Unit], 
-      scala.Unit
-    ]
+    hash: js.Function2[/* error */ java.lang.String, /* hash */ java.lang.String, scala.Unit] => scala.Unit,
+    verifyAgainst: (java.lang.String, js.Function2[/* error */ java.lang.String, /* verified */ scala.Boolean, scala.Unit]) => scala.Unit
   ): Password = {
-    val __obj = js.Dynamic.literal(hash = hash, verifyAgainst = verifyAgainst)
+    val __obj = js.Dynamic.literal(hash = js.Any.fromFunction1(hash), verifyAgainst = js.Any.fromFunction2(verifyAgainst))
   
     __obj.asInstanceOf[Password]
   }

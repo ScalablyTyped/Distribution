@@ -8,28 +8,28 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.NoteItem")
 @js.native
 class NoteItem protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val AutoResolvedWinner: scala.Boolean = js.native
   var Body: java.lang.String = js.native
   var Categories: java.lang.String = js.native
   val Class: OlObjectClass = js.native
   var Color: OlNoteColor = js.native
-  val Conflicts: Conflicts = js.native
-  val CreationTime: activexDashInteropLib.VarDate = js.native
+  val Conflicts: activexDashOutlookLib.OutlookNs.Conflicts = js.native
+  val CreationTime: stdLib.VarDate = js.native
   val DownloadState: OlDownloadState = js.native
   val EntryID: java.lang.String = js.native
   val GetInspector: Inspector = js.native
   var Height: scala.Double = js.native
   val IsConflict: scala.Boolean = js.native
-  val ItemProperties: ItemProperties = js.native
-  val LastModificationTime: activexDashInteropLib.VarDate = js.native
+  val ItemProperties: activexDashOutlookLib.OutlookNs.ItemProperties = js.native
+  val LastModificationTime: stdLib.VarDate = js.native
   var Left: scala.Double = js.native
-  val Links: Links = js.native
+  val Links: activexDashOutlookLib.OutlookNs.Links = js.native
   var MarkForDownload: OlRemoteStatus = js.native
   var MessageClass: java.lang.String = js.native
   var `Outlook.NoteItem_typekey`: NoteItem = js.native
   val Parent: js.Any = js.native
-  val PropertyAccessor: PropertyAccessor = js.native
+  val PropertyAccessor: activexDashOutlookLib.OutlookNs.PropertyAccessor = js.native
   val Saved: scala.Boolean = js.native
   val Session: NameSpace = js.native
   val Size: scala.Double = js.native

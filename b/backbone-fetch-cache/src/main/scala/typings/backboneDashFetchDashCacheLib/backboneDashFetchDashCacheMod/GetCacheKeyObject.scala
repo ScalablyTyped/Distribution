@@ -13,12 +13,12 @@ trait GetCacheKeyObject extends js.Object {
 object GetCacheKeyObject {
   @scala.inline
   def apply(
-    getCacheKey: js.Function1[/* opts */ js.UndefOr[GetCacheOptions], java.lang.String] = null,
-    url: js.Function0[java.lang.String] = null
+    getCacheKey: /* opts */ js.UndefOr[GetCacheOptions] => java.lang.String = null,
+    url: () => java.lang.String = null
   ): GetCacheKeyObject = {
     val __obj = js.Dynamic.literal()
-    if (getCacheKey != null) __obj.updateDynamic("getCacheKey")(getCacheKey)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (getCacheKey != null) __obj.updateDynamic("getCacheKey")(js.Any.fromFunction1(getCacheKey))
+    if (url != null) __obj.updateDynamic("url")(js.Any.fromFunction0(url))
     __obj.asInstanceOf[GetCacheKeyObject]
   }
 }

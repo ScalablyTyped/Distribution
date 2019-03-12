@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation._
 
 package object buildSrcNotificationMod {
   type DeleteNotificationCallback = js.Function2[
-    /* err */ nodeLib.Error | scala.Null, 
+    /* err */ stdLib.Error | scala.Null, 
     /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
     scala.Unit
   ]
   type GetNotificationCallback = js.Function3[
-    /* err */ nodeLib.Error | scala.Null, 
+    /* err */ stdLib.Error | scala.Null, 
     /* notification */ js.UndefOr[Notification | scala.Null], 
     /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
     scala.Unit
   ]
   type GetNotificationMetadataCallback = js.Function3[
-    /* err */ nodeLib.Error | scala.Null, 
+    /* err */ stdLib.Error | scala.Null, 
     /* metadata */ js.UndefOr[atGoogleDashCloudCommonLib.buildSrcUtilMod.ResponseBody], 
     /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
     scala.Unit

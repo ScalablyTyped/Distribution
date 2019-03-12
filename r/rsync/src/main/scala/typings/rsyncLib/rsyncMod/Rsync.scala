@@ -28,7 +28,7 @@ trait Rsync extends js.Object {
   def executableShell(e: java.lang.String): Rsync = js.native
   def execute(
     callback: js.Function3[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* code */ scala.Double, 
       /* cmd */ java.lang.String, 
       scala.Unit
@@ -36,7 +36,7 @@ trait Rsync extends js.Object {
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
   def execute(
     callback: js.Function3[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* code */ scala.Double, 
       /* cmd */ java.lang.String, 
       scala.Unit

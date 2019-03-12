@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 class Hyperlink protected () extends js.Object {
   var Address: java.lang.String = js.native
   val AddressOld: java.lang.String = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
   var EmailSubject: java.lang.String = js.native
   val ExtraInfoRequired: scala.Boolean = js.native
   val Name: java.lang.String = js.native
   val Parent: js.Any = js.native
-  val Range: Range = js.native
+  val Range: activexDashWordLib.WordNs.Range = js.native
   var ScreenTip: java.lang.String = js.native
-  val Shape: Shape = js.native
+  val Shape: activexDashWordLib.WordNs.Shape = js.native
   var SubAddress: java.lang.String = js.native
   val SubAddressOld: java.lang.String = js.native
   var Target: java.lang.String = js.native

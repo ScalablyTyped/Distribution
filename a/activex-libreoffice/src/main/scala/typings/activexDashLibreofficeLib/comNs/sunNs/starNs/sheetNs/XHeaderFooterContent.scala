@@ -50,14 +50,14 @@ object XHeaderFooterContent {
     CenterText: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText,
     LeftText: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText,
     RightText: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText,
-    acquire: js.Function0[scala.Unit],
-    getCenterText: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText],
-    getLeftText: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText],
-    getRightText: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getCenterText: () => activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText,
+    getLeftText: () => activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText,
+    getRightText: () => activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XHeaderFooterContent = {
-    val __obj = js.Dynamic.literal(CenterText = CenterText, LeftText = LeftText, RightText = RightText, acquire = acquire, getCenterText = getCenterText, getLeftText = getLeftText, getRightText = getRightText, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(CenterText = CenterText, LeftText = LeftText, RightText = RightText, acquire = js.Any.fromFunction0(acquire), getCenterText = js.Any.fromFunction0(getCenterText), getLeftText = js.Any.fromFunction0(getLeftText), getRightText = js.Any.fromFunction0(getRightText), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XHeaderFooterContent]
   }

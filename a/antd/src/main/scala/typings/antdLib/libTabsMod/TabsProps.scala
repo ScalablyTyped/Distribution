@@ -14,7 +14,7 @@ trait TabsProps extends js.Object {
   var onChange: js.UndefOr[js.Function1[/* activeKey */ java.lang.String, scala.Unit]] = js.undefined
   var onEdit: js.UndefOr[
     js.Function2[
-      /* targetKey */ java.lang.String | (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]), 
+      /* targetKey */ java.lang.String | (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]), 
       /* action */ js.Any, 
       scala.Unit
     ]
@@ -49,21 +49,13 @@ object TabsProps {
     className: java.lang.String = null,
     defaultActiveKey: java.lang.String = null,
     hideAdd: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function1[/* activeKey */ java.lang.String, scala.Unit] = null,
-    onEdit: js.Function2[
-      /* targetKey */ java.lang.String | (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]), 
-      /* action */ js.Any, 
-      scala.Unit
-    ] = null,
+    onChange: /* activeKey */ java.lang.String => scala.Unit = null,
+    onEdit: (/* targetKey */ java.lang.String | (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]), /* action */ js.Any) => scala.Unit = null,
     onNextClick: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
     onPrevClick: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
     onTabClick: js.Function = null,
     prefixCls: java.lang.String = null,
-    renderTabBar: js.Function2[
-      /* props */ TabsProps, 
-      /* DefaultTabBar */ reactLib.reactMod.ReactNs.ReactNode, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
-    ] = null,
+    renderTabBar: (/* props */ TabsProps, /* DefaultTabBar */ reactLib.reactMod.ReactNs.ReactNode) => reactLib.reactMod.ReactNs.ReactElement[_] = null,
     size: antdLib.antdLibStrings.large | antdLib.antdLibStrings.default | antdLib.antdLibStrings.small = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     tabBarExtraContent: reactLib.reactMod.ReactNs.ReactNode = null,
@@ -78,13 +70,13 @@ object TabsProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (defaultActiveKey != null) __obj.updateDynamic("defaultActiveKey")(defaultActiveKey)
     if (!js.isUndefined(hideAdd)) __obj.updateDynamic("hideAdd")(hideAdd)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onEdit != null) __obj.updateDynamic("onEdit")(onEdit)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onEdit != null) __obj.updateDynamic("onEdit")(js.Any.fromFunction2(onEdit))
     if (onNextClick != null) __obj.updateDynamic("onNextClick")(onNextClick)
     if (onPrevClick != null) __obj.updateDynamic("onPrevClick")(onPrevClick)
     if (onTabClick != null) __obj.updateDynamic("onTabClick")(onTabClick)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (renderTabBar != null) __obj.updateDynamic("renderTabBar")(renderTabBar)
+    if (renderTabBar != null) __obj.updateDynamic("renderTabBar")(js.Any.fromFunction2(renderTabBar))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (tabBarExtraContent != null) __obj.updateDynamic("tabBarExtraContent")(tabBarExtraContent.asInstanceOf[js.Any])

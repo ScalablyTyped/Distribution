@@ -55,7 +55,7 @@ object SSMNs extends js.Object {
     /**
       * The resource ID you want to tag. Use the ID of the resource. Here are some examples: ManagedInstance: mi-012345abcde MaintenanceWindow: mw-012345abcde PatchBaseline: pb-012345abcde For the Document and Parameter values, use the name of the resource.  The ManagedInstance type for this API action is only for on-premises managed instances. You must specify the the name of the managed instance in the following format: mi-ID_number. For example, mi-1a2b3c4d5e6f. 
       */
-    var ResourceId: ResourceId
+    var ResourceId: awsDashSdkLib.clientsSsmMod.SSMNs.ResourceId
     /**
       * Specifies the type of resource you are tagging.  The ManagedInstance type for this API action is for on-premises managed instances. You must specify the the name of the managed instance in the following format: mi-ID_number. For example, mi-1a2b3c4d5e6f. 
       */
@@ -650,7 +650,7 @@ object SSMNs extends js.Object {
     /**
       * The ID of the command you want to cancel.
       */
-    var CommandId: CommandId
+    var CommandId: awsDashSdkLib.clientsSsmMod.SSMNs.CommandId
     /**
       * (Optional) A list of instance IDs on which you want to cancel the command. If not provided, the command is canceled on every instance on which it was requested.
       */
@@ -1049,7 +1049,7 @@ object SSMNs extends js.Object {
     /**
       * The Amazon Identity and Access Management (IAM) role that you want to assign to the managed instance. 
       */
-    var IamRole: IamRole
+    var IamRole: awsDashSdkLib.clientsSsmMod.SSMNs.IamRole
     /**
       * Specify the maximum number of managed instances you want to register. The default value is 1 instance.
       */
@@ -1373,7 +1373,7 @@ object SSMNs extends js.Object {
     /**
       * The ID of the activation that you want to delete.
       */
-    var ActivationId: ActivationId
+    var ActivationId: awsDashSdkLib.clientsSsmMod.SSMNs.ActivationId
   }
   
   trait DeleteActivationResult extends js.Object
@@ -1483,7 +1483,7 @@ object SSMNs extends js.Object {
     /**
       * The ID of the patch baseline to delete.
       */
-    var BaselineId: BaselineId
+    var BaselineId: awsDashSdkLib.clientsSsmMod.SSMNs.BaselineId
   }
   
   trait DeletePatchBaselineResult extends js.Object {
@@ -1515,11 +1515,11 @@ object SSMNs extends js.Object {
     /**
       * The ID of the patch baseline to deregister the patch group from.
       */
-    var BaselineId: BaselineId
+    var BaselineId: awsDashSdkLib.clientsSsmMod.SSMNs.BaselineId
     /**
       * The name of the patch group that should be deregistered from the patch baseline.
       */
-    var PatchGroup: PatchGroup
+    var PatchGroup: awsDashSdkLib.clientsSsmMod.SSMNs.PatchGroup
   }
   
   trait DeregisterPatchBaselineForPatchGroupResult extends js.Object {
@@ -1622,7 +1622,7 @@ object SSMNs extends js.Object {
     /**
       * The association ID that includes the execution for which you want to view details.
       */
-    var AssociationId: AssociationId
+    var AssociationId: awsDashSdkLib.clientsSsmMod.SSMNs.AssociationId
     /**
       * The execution ID for which you want to view details.
       */
@@ -1656,7 +1656,7 @@ object SSMNs extends js.Object {
     /**
       * The association ID for which you want to view execution history details.
       */
-    var AssociationId: AssociationId
+    var AssociationId: awsDashSdkLib.clientsSsmMod.SSMNs.AssociationId
     /**
       * Filters for the request. You can specify the following filters and values. ExecutionId (EQUAL) Status (EQUAL) CreatedTime (EQUAL, GREATER_THAN, LESS_THAN)
       */
@@ -1738,7 +1738,7 @@ object SSMNs extends js.Object {
     /**
       * The Automation execution ID for which you want step execution descriptions.
       */
-    var AutomationExecutionId: AutomationExecutionId
+    var AutomationExecutionId: awsDashSdkLib.clientsSsmMod.SSMNs.AutomationExecutionId
     /**
       * One or more filters to limit the number of step executions returned by the request.
       */
@@ -1838,7 +1838,7 @@ object SSMNs extends js.Object {
     /**
       * The instance ID for which you want to view all associations.
       */
-    var InstanceId: InstanceId
+    var InstanceId: awsDashSdkLib.clientsSsmMod.SSMNs.InstanceId
     /**
       * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
       */
@@ -1864,7 +1864,7 @@ object SSMNs extends js.Object {
     /**
       * The ID of the patch baseline to retrieve the effective patches for.
       */
-    var BaselineId: BaselineId
+    var BaselineId: awsDashSdkLib.clientsSsmMod.SSMNs.BaselineId
     /**
       * The maximum number of patches to return (per page).
       */
@@ -1890,7 +1890,7 @@ object SSMNs extends js.Object {
     /**
       * The instance IDs for which you want association status information.
       */
-    var InstanceId: InstanceId
+    var InstanceId: awsDashSdkLib.clientsSsmMod.SSMNs.InstanceId
     /**
       * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
       */
@@ -1958,7 +1958,7 @@ object SSMNs extends js.Object {
     /**
       * The name of the patch group for which the patch state information should be retrieved.
       */
-    var PatchGroup: PatchGroup
+    var PatchGroup: awsDashSdkLib.clientsSsmMod.SSMNs.PatchGroup
   }
   
   trait DescribeInstancePatchStatesForPatchGroupResult extends js.Object {
@@ -2006,7 +2006,7 @@ object SSMNs extends js.Object {
     /**
       * The ID of the instance whose patch state information should be retrieved.
       */
-    var InstanceId: InstanceId
+    var InstanceId: awsDashSdkLib.clientsSsmMod.SSMNs.InstanceId
     /**
       * The maximum number of patches to return (per page).
       */
@@ -2262,7 +2262,7 @@ object SSMNs extends js.Object {
     /**
       * The instance ID or key/value pair to retrieve information about.
       */
-    var Targets: Targets
+    var Targets: awsDashSdkLib.clientsSsmMod.SSMNs.Targets
   }
   
   trait DescribeMaintenanceWindowsForTargetResult extends js.Object {
@@ -2362,7 +2362,7 @@ object SSMNs extends js.Object {
     /**
       * The name of the patch group whose patch snapshot should be retrieved.
       */
-    var PatchGroup: PatchGroup
+    var PatchGroup: awsDashSdkLib.clientsSsmMod.SSMNs.PatchGroup
   }
   
   trait DescribePatchGroupStateResult extends js.Object {
@@ -2718,7 +2718,7 @@ object SSMNs extends js.Object {
     /**
       * The unique identifier for an existing automation execution to examine. The execution ID is returned by StartAutomationExecution when the execution of an Automation document is initiated.
       */
-    var AutomationExecutionId: AutomationExecutionId
+    var AutomationExecutionId: awsDashSdkLib.clientsSsmMod.SSMNs.AutomationExecutionId
   }
   
   trait GetAutomationExecutionResult extends js.Object {
@@ -2732,11 +2732,11 @@ object SSMNs extends js.Object {
     /**
       * (Required) The parent command ID of the invocation plugin.
       */
-    var CommandId: CommandId
+    var CommandId: awsDashSdkLib.clientsSsmMod.SSMNs.CommandId
     /**
       * (Required) The ID of the managed instance targeted by the command. A managed instance can be an Amazon EC2 instance or an instance in your hybrid environment that is configured for Systems Manager.
       */
-    var InstanceId: InstanceId
+    var InstanceId: awsDashSdkLib.clientsSsmMod.SSMNs.InstanceId
     /**
       * (Optional) The name of the plugin for which you want detailed results. If the document contains only one plugin, the name can be omitted and the details will be returned.
       */
@@ -2854,11 +2854,11 @@ object SSMNs extends js.Object {
     /**
       * The ID of the instance for which the appropriate patch snapshot should be retrieved.
       */
-    var InstanceId: InstanceId
+    var InstanceId: awsDashSdkLib.clientsSsmMod.SSMNs.InstanceId
     /**
       * The user-defined snapshot ID.
       */
-    var SnapshotId: SnapshotId
+    var SnapshotId: awsDashSdkLib.clientsSsmMod.SSMNs.SnapshotId
   }
   
   trait GetDeployablePatchSnapshotForInstanceResult extends js.Object {
@@ -3424,7 +3424,7 @@ object SSMNs extends js.Object {
     /**
       * The name of the patch group whose patch baseline should be retrieved.
       */
-    var PatchGroup: PatchGroup
+    var PatchGroup: awsDashSdkLib.clientsSsmMod.SSMNs.PatchGroup
   }
   
   trait GetPatchBaselineForPatchGroupResult extends js.Object {
@@ -3446,7 +3446,7 @@ object SSMNs extends js.Object {
     /**
       * The ID of the patch baseline to retrieve.
       */
-    var BaselineId: BaselineId
+    var BaselineId: awsDashSdkLib.clientsSsmMod.SSMNs.BaselineId
   }
   
   trait GetPatchBaselineResult extends js.Object {
@@ -3729,7 +3729,7 @@ object SSMNs extends js.Object {
     /**
       * The ID of the patch baseline used to patch the instance.
       */
-    var BaselineId: BaselineId
+    var BaselineId: awsDashSdkLib.clientsSsmMod.SSMNs.BaselineId
     /**
       * The number of patches from the patch baseline that were attempted to be installed during the last patching operation, but failed to install.
       */
@@ -3753,7 +3753,7 @@ object SSMNs extends js.Object {
     /**
       * The ID of the managed instance the high-level patch compliance information was collected for.
       */
-    var InstanceId: InstanceId
+    var InstanceId: awsDashSdkLib.clientsSsmMod.SSMNs.InstanceId
     /**
       * The number of patches from the patch baseline that are applicable for the instance but aren't currently installed.
       */
@@ -3781,7 +3781,7 @@ object SSMNs extends js.Object {
     /**
       * The name of the patch group the managed instance belongs to.
       */
-    var PatchGroup: PatchGroup
+    var PatchGroup: awsDashSdkLib.clientsSsmMod.SSMNs.PatchGroup
     /**
       * The ID of the patch baseline snapshot used during the patching operation when this compliance data was collected.
       */
@@ -4031,7 +4031,7 @@ object SSMNs extends js.Object {
     /**
       * The association ID for which you want to view all versions.
       */
-    var AssociationId: AssociationId
+    var AssociationId: awsDashSdkLib.clientsSsmMod.SSMNs.AssociationId
     /**
       * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
       */
@@ -4275,7 +4275,7 @@ object SSMNs extends js.Object {
     /**
       * The instance ID for which you want inventory information.
       */
-    var InstanceId: InstanceId
+    var InstanceId: awsDashSdkLib.clientsSsmMod.SSMNs.InstanceId
     /**
       * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
       */
@@ -4369,7 +4369,7 @@ object SSMNs extends js.Object {
     /**
       * The resource ID for which you want to see a list of tags.
       */
-    var ResourceId: ResourceId
+    var ResourceId: awsDashSdkLib.clientsSsmMod.SSMNs.ResourceId
     /**
       * Returns a list of tags for a specific resource type.
       */
@@ -4387,7 +4387,7 @@ object SSMNs extends js.Object {
     /**
       * The name of an Amazon S3 bucket where execution logs are stored .
       */
-    var S3BucketName: S3BucketName
+    var S3BucketName: awsDashSdkLib.clientsSsmMod.SSMNs.S3BucketName
     /**
       * (Optional) The Amazon S3 bucket subfolder. 
       */
@@ -4395,7 +4395,7 @@ object SSMNs extends js.Object {
     /**
       * The region where the Amazon S3 bucket is located.
       */
-    var S3Region: S3Region
+    var S3Region: awsDashSdkLib.clientsSsmMod.SSMNs.S3Region
   }
   
   trait MaintenanceWindowAutomationParameters extends js.Object {
@@ -5123,7 +5123,7 @@ object SSMNs extends js.Object {
     /**
       * The number of days after the release date of each patch matched by the rule that the patch is marked as approved in the patch baseline. For example, a value of 7 means that patches are approved seven days after they are released. 
       */
-    var ApproveAfterDays: ApproveAfterDays
+    var ApproveAfterDays: awsDashSdkLib.clientsSsmMod.SSMNs.ApproveAfterDays
     /**
       * A compliance severity level for all approved patches in a patch baseline. Valid compliance severity levels include the following: Unspecified, Critical, High, Medium, Low, and Informational.
       */
@@ -5135,7 +5135,7 @@ object SSMNs extends js.Object {
     /**
       * The patch filter group that defines the criteria for the rule.
       */
-    var PatchFilterGroup: PatchFilterGroup
+    var PatchFilterGroup: awsDashSdkLib.clientsSsmMod.SSMNs.PatchFilterGroup
   }
   
   trait PatchRuleGroup extends js.Object {
@@ -5231,7 +5231,7 @@ object SSMNs extends js.Object {
     /**
       * One or more instance IDs where you want to add or update inventory items.
       */
-    var InstanceId: InstanceId
+    var InstanceId: awsDashSdkLib.clientsSsmMod.SSMNs.InstanceId
     /**
       * The inventory items that you want to add or update on instances.
       */
@@ -5291,7 +5291,7 @@ object SSMNs extends js.Object {
     /**
       * The ID of the patch baseline that should be the default patch baseline.
       */
-    var BaselineId: BaselineId
+    var BaselineId: awsDashSdkLib.clientsSsmMod.SSMNs.BaselineId
   }
   
   trait RegisterDefaultPatchBaselineResult extends js.Object {
@@ -5305,11 +5305,11 @@ object SSMNs extends js.Object {
     /**
       * The ID of the patch baseline to register the patch group with.
       */
-    var BaselineId: BaselineId
+    var BaselineId: awsDashSdkLib.clientsSsmMod.SSMNs.BaselineId
     /**
       * The name of the patch group that should be registered with the patch baseline.
       */
-    var PatchGroup: PatchGroup
+    var PatchGroup: awsDashSdkLib.clientsSsmMod.SSMNs.PatchGroup
   }
   
   trait RegisterPatchBaselineForPatchGroupResult extends js.Object {
@@ -5347,7 +5347,7 @@ object SSMNs extends js.Object {
     /**
       * The targets (either instances or tags).  Specify instances using the following format:  Key=InstanceIds,Values=&lt;instance-id-1&gt;,&lt;instance-id-2&gt;  Specify tags using either of the following formats:  Key=tag:&lt;tag-key&gt;,Values=&lt;tag-value-1&gt;,&lt;tag-value-2&gt;   Key=tag-key,Values=&lt;tag-key-1&gt;,&lt;tag-key-2&gt; 
       */
-    var Targets: Targets
+    var Targets: awsDashSdkLib.clientsSsmMod.SSMNs.Targets
     /**
       * The ID of the Maintenance Window the target should be registered with.
       */
@@ -5377,11 +5377,11 @@ object SSMNs extends js.Object {
     /**
       * The maximum number of targets this task can be run for in parallel.
       */
-    var MaxConcurrency: MaxConcurrency
+    var MaxConcurrency: awsDashSdkLib.clientsSsmMod.SSMNs.MaxConcurrency
     /**
       * The maximum number of errors allowed before this task stops being scheduled.
       */
-    var MaxErrors: MaxErrors
+    var MaxErrors: awsDashSdkLib.clientsSsmMod.SSMNs.MaxErrors
     /**
       * An optional name for the task.
       */
@@ -5397,7 +5397,7 @@ object SSMNs extends js.Object {
     /**
       * The targets (either instances or Maintenance Window targets). Specify instances using the following format:   Key=InstanceIds,Values=&lt;instance-id-1&gt;,&lt;instance-id-2&gt;  Specify Maintenance Window targets using the following format:  Key=&lt;WindowTargetIds&gt;,Values=&lt;window-target-id-1&gt;,&lt;window-target-id-2&gt; 
       */
-    var Targets: Targets
+    var Targets: awsDashSdkLib.clientsSsmMod.SSMNs.Targets
     /**
       * The ARN of the task to execute 
       */
@@ -5431,7 +5431,7 @@ object SSMNs extends js.Object {
     /**
       * The resource ID for which you want to remove tags. Use the ID of the resource. Here are some examples: ManagedInstance: mi-012345abcde MaintenanceWindow: mw-012345abcde PatchBaseline: pb-012345abcde For the Document and Parameter values, use the name of the resource.  The ManagedInstance type for this API action is only for on-premises managed instances. You must specify the the name of the managed instance in the following format: mi-ID_number. For example, mi-1a2b3c4d5e6f. 
       */
-    var ResourceId: ResourceId
+    var ResourceId: awsDashSdkLib.clientsSsmMod.SSMNs.ResourceId
     /**
       * The type of resource of which you want to remove a tag.  The ManagedInstance type for this API action is only for on-premises managed instances. You must specify the the name of the managed instance in the following format: mi-ID_number. For example, mi-1a2b3c4d5e6f. 
       */
@@ -5569,7 +5569,7 @@ object SSMNs extends js.Object {
     /**
       * The ID of the disconnected session to resume.
       */
-    var SessionId: SessionId
+    var SessionId: awsDashSdkLib.clientsSsmMod.SSMNs.SessionId
   }
   
   trait ResumeSessionResponse extends js.Object {
@@ -5628,7 +5628,7 @@ object SSMNs extends js.Object {
     /**
       * The unique identifier for an existing Automation execution that you want to send the signal to.
       */
-    var AutomationExecutionId: AutomationExecutionId
+    var AutomationExecutionId: awsDashSdkLib.clientsSsmMod.SSMNs.AutomationExecutionId
     /**
       * The data sent with the signal. The data schema depends on the type of signal used in the request. 
       */
@@ -5636,7 +5636,7 @@ object SSMNs extends js.Object {
     /**
       * The type of signal. Valid signal types include the following: Approve and Reject 
       */
-    var SignalType: SignalType
+    var SignalType: awsDashSdkLib.clientsSsmMod.SSMNs.SignalType
   }
   
   trait SendAutomationSignalResult extends js.Object
@@ -6036,7 +6036,7 @@ object SSMNs extends js.Object {
     /**
       * The execution ID of the Automation to stop.
       */
-    var AutomationExecutionId: AutomationExecutionId
+    var AutomationExecutionId: awsDashSdkLib.clientsSsmMod.SSMNs.AutomationExecutionId
     /**
       * The stop request type. Valid types include the following: Cancel and Complete. The default type is Cancel.
       */
@@ -6097,7 +6097,7 @@ object SSMNs extends js.Object {
     /**
       * The ID of the session to terminate.
       */
-    var SessionId: SessionId
+    var SessionId: awsDashSdkLib.clientsSsmMod.SSMNs.SessionId
   }
   
   trait TerminateSessionResponse extends js.Object {
@@ -8764,7 +8764,7 @@ object SSMNs extends js.Object {
     /**
       * The ID of the association you want to update. 
       */
-    var AssociationId: AssociationId
+    var AssociationId: awsDashSdkLib.clientsSsmMod.SSMNs.AssociationId
     /**
       * The name of the association that you want to update.
       */
@@ -8826,11 +8826,11 @@ object SSMNs extends js.Object {
     /**
       * The association status.
       */
-    var AssociationStatus: AssociationStatus
+    var AssociationStatus: awsDashSdkLib.clientsSsmMod.SSMNs.AssociationStatus
     /**
       * The ID of the instance.
       */
-    var InstanceId: InstanceId
+    var InstanceId: awsDashSdkLib.clientsSsmMod.SSMNs.InstanceId
     /**
       * The name of the Systems Manager document.
       */
@@ -9174,7 +9174,7 @@ object SSMNs extends js.Object {
     /**
       * The IAM role you want to assign or change.
       */
-    var IamRole: IamRole
+    var IamRole: awsDashSdkLib.clientsSsmMod.SSMNs.IamRole
     /**
       * The ID of the managed instance where you want to update the role.
       */
@@ -9203,7 +9203,7 @@ object SSMNs extends js.Object {
     /**
       * The ID of the patch baseline to update.
       */
-    var BaselineId: BaselineId
+    var BaselineId: awsDashSdkLib.clientsSsmMod.SSMNs.BaselineId
     /**
       * A description of the patch baseline.
       */

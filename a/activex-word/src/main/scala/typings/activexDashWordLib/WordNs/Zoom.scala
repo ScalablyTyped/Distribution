@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.Zoom")
 @js.native
 class Zoom protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
   var PageColumns: scala.Double = js.native
   var PageFit: WdPageFit = js.native

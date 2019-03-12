@@ -28,28 +28,16 @@ trait IHashTable[T] extends js.Object {
 object IHashTable {
   @scala.inline
   def apply[T](
-    add: js.Function2[java.lang.String, T, scala.Boolean],
-    addOrUpdate: js.Function2[java.lang.String, T, scala.Boolean],
-    count: js.Function0[scala.Double],
-    every: js.Function2[
-      js.Function3[/* k */ java.lang.String, /* value */ T, /* context */ js.Any, scala.Unit], 
-      js.Any, 
-      scala.Boolean
-    ],
-    getAllKeys: js.Function0[js.Array[java.lang.String]],
-    lookup: js.Function1[java.lang.String, T],
-    map: js.Function2[
-      js.Function3[/* k */ java.lang.String, /* value */ T, /* context */ js.Any, scala.Unit], 
-      js.Any, 
-      scala.Unit
-    ],
-    some: js.Function2[
-      js.Function3[/* k */ java.lang.String, /* value */ T, /* context */ js.Any, scala.Unit], 
-      js.Any, 
-      scala.Boolean
-    ]
+    add: (java.lang.String, T) => scala.Boolean,
+    addOrUpdate: (java.lang.String, T) => scala.Boolean,
+    count: () => scala.Double,
+    every: (js.Function3[/* k */ java.lang.String, /* value */ T, /* context */ js.Any, scala.Unit], js.Any) => scala.Boolean,
+    getAllKeys: () => js.Array[java.lang.String],
+    lookup: java.lang.String => T,
+    map: (js.Function3[/* k */ java.lang.String, /* value */ T, /* context */ js.Any, scala.Unit], js.Any) => scala.Unit,
+    some: (js.Function3[/* k */ java.lang.String, /* value */ T, /* context */ js.Any, scala.Unit], js.Any) => scala.Boolean
   ): IHashTable[T] = {
-    val __obj = js.Dynamic.literal(add = add, addOrUpdate = addOrUpdate, count = count, every = every, getAllKeys = getAllKeys, lookup = lookup, map = map, some = some)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), addOrUpdate = js.Any.fromFunction2(addOrUpdate), count = js.Any.fromFunction0(count), every = js.Any.fromFunction2(every), getAllKeys = js.Any.fromFunction0(getAllKeys), lookup = js.Any.fromFunction1(lookup), map = js.Any.fromFunction2(map), some = js.Any.fromFunction2(some))
   
     __obj.asInstanceOf[IHashTable[T]]
   }

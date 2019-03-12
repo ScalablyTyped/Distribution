@@ -13,12 +13,9 @@ trait ApplicationsResource extends js.Object {
 object ApplicationsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotAndroidmanagementLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Application]
-    ]
+    get: gapiDotClientDotAndroidmanagementLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Application]
   ): ApplicationsResource = {
-    val __obj = js.Dynamic.literal(get = get)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[ApplicationsResource]
   }

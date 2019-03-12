@@ -29,26 +29,16 @@ trait Svg4everybodyOpts extends js.Object {
 object Svg4everybodyOpts {
   @scala.inline
   def apply(
-    fallback: js.Function3[
-      /* src */ java.lang.String, 
-      /* svg */ stdLib.SVGElement, 
-      /* use */ stdLib.SVGUseElement, 
-      java.lang.String
-    ] = null,
+    fallback: (/* src */ java.lang.String, /* svg */ stdLib.SVGElement, /* use */ stdLib.SVGUseElement) => java.lang.String = null,
     nosvg: js.UndefOr[scala.Boolean] = js.undefined,
     polyfill: js.UndefOr[scala.Boolean] = js.undefined,
-    validate: js.Function3[
-      /* src */ java.lang.String, 
-      /* svg */ stdLib.SVGElement, 
-      /* use */ stdLib.SVGUseElement, 
-      scala.Boolean
-    ] = null
+    validate: (/* src */ java.lang.String, /* svg */ stdLib.SVGElement, /* use */ stdLib.SVGUseElement) => scala.Boolean = null
   ): Svg4everybodyOpts = {
     val __obj = js.Dynamic.literal()
-    if (fallback != null) __obj.updateDynamic("fallback")(fallback)
+    if (fallback != null) __obj.updateDynamic("fallback")(js.Any.fromFunction3(fallback))
     if (!js.isUndefined(nosvg)) __obj.updateDynamic("nosvg")(nosvg)
     if (!js.isUndefined(polyfill)) __obj.updateDynamic("polyfill")(polyfill)
-    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction3(validate))
     __obj.asInstanceOf[Svg4everybodyOpts]
   }
 }

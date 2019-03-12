@@ -34,12 +34,12 @@ object Anon_Details {
     onError: WebExtEvent[js.Function1[/* error */ js.Object, scala.Unit]],
     onProxyError: WebExtEvent[js.Function1[/* error */ js.Object, scala.Unit]],
     onRequest: firefoxDashWebextDashBrowserLib.browserNs.proxyNs._ProxyOnRequestEvent[js.Function1[/* details */ Anon_DocumentUrl, scala.Unit]],
-    register: js.Function1[java.lang.String, js.Promise[scala.Unit]],
-    registerProxyScript: js.Function1[java.lang.String, js.Promise[_]],
+    register: java.lang.String => js.Promise[scala.Unit],
+    registerProxyScript: java.lang.String => js.Promise[_],
     settings: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
-    unregister: js.Function0[js.Promise[scala.Unit]]
+    unregister: () => js.Promise[scala.Unit]
   ): Anon_Details = {
-    val __obj = js.Dynamic.literal(onError = onError, onProxyError = onProxyError, onRequest = onRequest, register = register, registerProxyScript = registerProxyScript, settings = settings, unregister = unregister)
+    val __obj = js.Dynamic.literal(onError = onError, onProxyError = onProxyError, onRequest = onRequest, register = js.Any.fromFunction1(register), registerProxyScript = js.Any.fromFunction1(registerProxyScript), settings = settings, unregister = js.Any.fromFunction0(unregister))
   
     __obj.asInstanceOf[Anon_Details]
   }

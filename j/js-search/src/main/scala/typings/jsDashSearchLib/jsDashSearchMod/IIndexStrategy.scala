@@ -11,8 +11,8 @@ trait IIndexStrategy extends js.Object {
 
 object IIndexStrategy {
   @scala.inline
-  def apply(expandToken: js.Function1[java.lang.String, js.Array[java.lang.String]]): IIndexStrategy = {
-    val __obj = js.Dynamic.literal(expandToken = expandToken)
+  def apply(expandToken: java.lang.String => js.Array[java.lang.String]): IIndexStrategy = {
+    val __obj = js.Dynamic.literal(expandToken = js.Any.fromFunction1(expandToken))
   
     __obj.asInstanceOf[IIndexStrategy]
   }

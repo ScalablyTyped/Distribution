@@ -10,7 +10,7 @@ package object tapeNs {
   	 * Options for the createStream function.
   	 */
   type StreamOptions = tapeLib.tapeMod.tapeNs.StreamOptions
-  type TestCase = js.Function1[/* test */ Test, scala.Unit | nodeLib.Iterator[js.Any] | js.Thenable[scala.Unit]]
+  type TestCase = js.Function1[/* test */ Test, scala.Unit | stdLib.Iterator[js.Any] | js.Thenable[scala.Unit]]
   /**
   	 * Available opts options for the tape function.
   	 */

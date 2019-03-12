@@ -19,13 +19,13 @@ object XNodeList {
   @scala.inline
   def apply(
     Length: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getLength: js.Function0[scala.Double],
-    item: js.Function1[scala.Double, XNode],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getLength: () => scala.Double,
+    item: scala.Double => XNode,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XNodeList = {
-    val __obj = js.Dynamic.literal(Length = Length, acquire = acquire, getLength = getLength, item = item, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Length = Length, acquire = js.Any.fromFunction0(acquire), getLength = js.Any.fromFunction0(getLength), item = js.Any.fromFunction1(item), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XNodeList]
   }

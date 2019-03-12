@@ -20,12 +20,12 @@ trait Core extends js.Object {
 object Core {
   @scala.inline
   def apply(
-    bindChannel: js.Function1[java.lang.String, js.Promise[Channel]],
-    createChannel: js.Function0[js.Promise[ChannelSpecifier]],
-    getId: js.Function0[js.Promise[js.Array[java.lang.String]]],
-    getLogger: js.Function1[java.lang.String, js.Promise[Logger]]
+    bindChannel: java.lang.String => js.Promise[Channel],
+    createChannel: () => js.Promise[ChannelSpecifier],
+    getId: () => js.Promise[js.Array[java.lang.String]],
+    getLogger: java.lang.String => js.Promise[Logger]
   ): Core = {
-    val __obj = js.Dynamic.literal(bindChannel = bindChannel, createChannel = createChannel, getId = getId, getLogger = getLogger)
+    val __obj = js.Dynamic.literal(bindChannel = js.Any.fromFunction1(bindChannel), createChannel = js.Any.fromFunction0(createChannel), getId = js.Any.fromFunction0(getId), getLogger = js.Any.fromFunction1(getLogger))
   
     __obj.asInstanceOf[Core]
   }

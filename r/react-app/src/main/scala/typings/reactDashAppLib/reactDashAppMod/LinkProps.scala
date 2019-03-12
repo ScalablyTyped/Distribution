@@ -13,10 +13,10 @@ trait LinkProps extends js.Object {
 
 object LinkProps {
   @scala.inline
-  def apply(to: java.lang.String, className: java.lang.String = null, onClick: js.Function0[scala.Unit] = null): LinkProps = {
+  def apply(to: java.lang.String, className: java.lang.String = null, onClick: () => scala.Unit = null): LinkProps = {
     val __obj = js.Dynamic.literal(to = to)
     if (className != null) __obj.updateDynamic("className")(className)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
     __obj.asInstanceOf[LinkProps]
   }
 }

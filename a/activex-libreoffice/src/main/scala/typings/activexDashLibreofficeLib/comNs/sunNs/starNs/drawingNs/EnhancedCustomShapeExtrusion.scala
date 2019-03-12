@@ -35,7 +35,7 @@ trait EnhancedCustomShapeExtrusion extends js.Object {
   /** This attribute specifies the origin within the bounding box of the shape in terms of the shape size fractions. */
   var Origin: EnhancedCustomShapeParameterPair
   /** This property defines the projection mode. */
-  var ProjectionMode: ProjectionMode
+  var ProjectionMode: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.ProjectionMode
   /**
     * This attributes specifies the rotation angle about the x-axis in grad. The order of rotation is: z-axis, y-axis and then x-axis. The z-axis is
     * specified by the draw:rotate-angle.
@@ -53,7 +53,7 @@ trait EnhancedCustomShapeExtrusion extends js.Object {
   /** Specifies the intensity for the second light in percent. */
   var SecondLightLevel: scala.Double
   /** This property defines the shade mode. */
-  var ShadeMode: ShadeMode
+  var ShadeMode: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.ShadeMode
   /** The draw:extrusion-shininess specifies the shininess of a mirror in percent. */
   var Shininess: scala.Double
   /**

@@ -18,11 +18,11 @@ object RavenTransportOptions {
   def apply(
     auth: ravenDashJsLib.Anon_Sentryclient,
     data: js.Any,
-    onError: js.Function1[stdLib.Error with ravenDashJsLib.Anon_Request, scala.Unit],
-    onSuccess: js.Function0[scala.Unit],
+    onError: stdLib.Error with ravenDashJsLib.Anon_Request => scala.Unit,
+    onSuccess: () => scala.Unit,
     url: java.lang.String
   ): RavenTransportOptions = {
-    val __obj = js.Dynamic.literal(auth = auth, data = data, onError = onError, onSuccess = onSuccess, url = url)
+    val __obj = js.Dynamic.literal(auth = auth, data = data, onError = js.Any.fromFunction1(onError), onSuccess = js.Any.fromFunction0(onSuccess), url = url)
   
     __obj.asInstanceOf[RavenTransportOptions]
   }

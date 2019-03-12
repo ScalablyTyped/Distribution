@@ -17,14 +17,14 @@ trait request extends js.Object {
 object request {
   @scala.inline
   def apply(
-    callback: js.Function0[scala.Unit],
-    cancel: js.Function0[scala.Unit],
-    errorCallback: js.Function1[java.lang.String, scala.Unit],
+    callback: () => scala.Unit,
+    cancel: () => scala.Unit,
+    errorCallback: java.lang.String => scala.Unit,
     response: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     task: ckeditorLib.CKEDITORNs.pluginsNs.notificationAggregatorNs.task,
     url: java.lang.String
   ): request = {
-    val __obj = js.Dynamic.literal(callback = callback, cancel = cancel, errorCallback = errorCallback, response = response, task = task, url = url)
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), cancel = js.Any.fromFunction0(cancel), errorCallback = js.Any.fromFunction1(errorCallback), response = response, task = task, url = url)
   
     __obj.asInstanceOf[request]
   }

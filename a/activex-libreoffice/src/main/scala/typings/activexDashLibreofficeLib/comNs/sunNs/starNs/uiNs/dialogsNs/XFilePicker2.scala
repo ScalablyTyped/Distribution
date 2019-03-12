@@ -20,7 +20,7 @@ trait XFilePicker2 extends XFilePicker {
     *  Instead to the method {@link getFiles()} of base interface {@link XFilePicker} the new method return full qualified URLs for every selected file.
     * @returns A list of all selected file as complete URLs.  ;   **Notes for the implementation of a FileSave dialog:** If there exists a checkbox "Automatic F
     */
-  val SelectedFiles: activexDashInteropLib.SafeArray[java.lang.String]
+  val SelectedFiles: stdLib.SafeArray[java.lang.String]
   /**
     * Returns a sequence of the selected files including path information in URL format, conforming to [Rfc1738]{@link
     * url="http://www.w3.org/Addressing/rfc1738.txt"} .
@@ -34,28 +34,28 @@ trait XFilePicker2 extends XFilePicker {
     *  Instead to the method {@link getFiles()} of base interface {@link XFilePicker} the new method return full qualified URLs for every selected file.
     * @returns A list of all selected file as complete URLs.  ;   **Notes for the implementation of a FileSave dialog:** If there exists a checkbox "Automatic F
     */
-  def getSelectedFiles(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getSelectedFiles(): stdLib.SafeArray[java.lang.String]
 }
 
 object XFilePicker2 {
   @scala.inline
   def apply(
     DisplayDirectory: java.lang.String,
-    Files: activexDashInteropLib.SafeArray[java.lang.String],
-    SelectedFiles: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    execute: js.Function0[scala.Double],
-    getDisplayDirectory: js.Function0[java.lang.String],
-    getFiles: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getSelectedFiles: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setDefaultName: js.Function1[java.lang.String, scala.Unit],
-    setDisplayDirectory: js.Function1[java.lang.String, scala.Unit],
-    setMultiSelectionMode: js.Function1[scala.Boolean, scala.Unit],
-    setTitle: js.Function1[java.lang.String, scala.Unit]
+    Files: stdLib.SafeArray[java.lang.String],
+    SelectedFiles: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    execute: () => scala.Double,
+    getDisplayDirectory: () => java.lang.String,
+    getFiles: () => stdLib.SafeArray[java.lang.String],
+    getSelectedFiles: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setDefaultName: java.lang.String => scala.Unit,
+    setDisplayDirectory: java.lang.String => scala.Unit,
+    setMultiSelectionMode: scala.Boolean => scala.Unit,
+    setTitle: java.lang.String => scala.Unit
   ): XFilePicker2 = {
-    val __obj = js.Dynamic.literal(DisplayDirectory = DisplayDirectory, Files = Files, SelectedFiles = SelectedFiles, acquire = acquire, execute = execute, getDisplayDirectory = getDisplayDirectory, getFiles = getFiles, getSelectedFiles = getSelectedFiles, queryInterface = queryInterface, release = release, setDefaultName = setDefaultName, setDisplayDirectory = setDisplayDirectory, setMultiSelectionMode = setMultiSelectionMode, setTitle = setTitle)
+    val __obj = js.Dynamic.literal(DisplayDirectory = DisplayDirectory, Files = Files, SelectedFiles = SelectedFiles, acquire = js.Any.fromFunction0(acquire), execute = js.Any.fromFunction0(execute), getDisplayDirectory = js.Any.fromFunction0(getDisplayDirectory), getFiles = js.Any.fromFunction0(getFiles), getSelectedFiles = js.Any.fromFunction0(getSelectedFiles), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDefaultName = js.Any.fromFunction1(setDefaultName), setDisplayDirectory = js.Any.fromFunction1(setDisplayDirectory), setMultiSelectionMode = js.Any.fromFunction1(setMultiSelectionMode), setTitle = js.Any.fromFunction1(setTitle))
   
     __obj.asInstanceOf[XFilePicker2]
   }

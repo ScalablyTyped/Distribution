@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RequestPromise
   extends requestLib.requestMod.requestNs.Request {
-  var cancel: js.Function0[scala.Unit] = js.native
+  @JSName("cancel")
+  var cancel_Original: js.Function0[scala.Unit] = js.native
   var `catch`: (js.Function1[
     /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
     bluebirdLib.bluebirdMod.Bluebird[_]
@@ -217,7 +218,8 @@ trait RequestPromise
     /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
     bluebirdLib.bluebirdMod.Bluebird[_]
   ]) = js.native
-  var `finally`: js.Function1[
+  @JSName("finally")
+  var finally_Original: js.Function1[
     /* handler */ js.Function0[bluebirdLib.Resolvable[_]], 
     bluebirdLib.bluebirdMod.Bluebird[_]
   ] = js.native
@@ -248,6 +250,8 @@ trait RequestPromise
     /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
     js.Thenable[_]
   ]) = js.native
+  def cancel(): scala.Unit = js.native
+  def `finally`(handler: js.Function0[bluebirdLib.Resolvable[_]]): bluebirdLib.bluebirdMod.Bluebird[_] = js.native
   def promise(): bluebirdLib.bluebirdMod.namespaced[_] = js.native
 }
 

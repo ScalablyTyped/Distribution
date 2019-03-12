@@ -29,14 +29,14 @@ trait DecompressOptions extends js.Object {
 object DecompressOptions {
   @scala.inline
   def apply(
-    filter: js.Function1[/* file */ File, scala.Boolean] = null,
-    map: js.Function1[/* file */ File, File] = null,
+    filter: /* file */ File => scala.Boolean = null,
+    map: /* file */ File => File = null,
     plugins: js.Array[_] = null,
     strip: scala.Int | scala.Double = null
   ): DecompressOptions = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (map != null) __obj.updateDynamic("map")(map)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
+    if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)
     if (strip != null) __obj.updateDynamic("strip")(strip.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecompressOptions]

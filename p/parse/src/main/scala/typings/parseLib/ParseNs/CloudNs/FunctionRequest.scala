@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FunctionRequest extends js.Object {
-  var installationId: js.UndefOr[nodeLib.String] = js.undefined
+  var installationId: js.UndefOr[java.lang.String] = js.undefined
   var master: js.UndefOr[scala.Boolean] = js.undefined
   var params: js.UndefOr[js.Any] = js.undefined
   var user: js.UndefOr[parseLib.ParseNs.User] = js.undefined
@@ -15,7 +15,7 @@ trait FunctionRequest extends js.Object {
 object FunctionRequest {
   @scala.inline
   def apply(
-    installationId: nodeLib.String = null,
+    installationId: java.lang.String = null,
     master: js.UndefOr[scala.Boolean] = js.undefined,
     params: js.Any = null,
     user: parseLib.ParseNs.User = null

@@ -17,8 +17,8 @@ trait _IPush[T] extends js.Object {
 
 object _IPush {
   @scala.inline
-  def apply[T](push: js.Function1[/* repeated */ T, scala.Double]): _IPush[T] = {
-    val __obj = js.Dynamic.literal(push = push)
+  def apply[T](push: /* repeated */ T => scala.Double): _IPush[T] = {
+    val __obj = js.Dynamic.literal(push = js.Any.fromFunction1(push))
   
     __obj.asInstanceOf[_IPush[T]]
   }

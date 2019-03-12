@@ -11,10 +11,8 @@ trait OnPhotoTapListener extends js.Object {
 
 object OnPhotoTapListener {
   @scala.inline
-  def apply(
-    onPhotoTap: js.Function3[androiduixLib.androidNs.viewNs.View, scala.Double, scala.Double, scala.Unit]
-  ): OnPhotoTapListener = {
-    val __obj = js.Dynamic.literal(onPhotoTap = onPhotoTap)
+  def apply(onPhotoTap: (androiduixLib.androidNs.viewNs.View, scala.Double, scala.Double) => scala.Unit): OnPhotoTapListener = {
+    val __obj = js.Dynamic.literal(onPhotoTap = js.Any.fromFunction3(onPhotoTap))
   
     __obj.asInstanceOf[OnPhotoTapListener]
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "ArrayEventSource")
 @js.native
 class ArrayEventSource protected ()
-  extends fullcalendarLib.arrayeventsourceMod.default {
+  extends fullcalendarLib.arrayEventSourceMod.default {
   def this(calendar: js.Any) = this()
 }
 

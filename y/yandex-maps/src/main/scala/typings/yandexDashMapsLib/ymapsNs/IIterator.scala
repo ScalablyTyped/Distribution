@@ -11,8 +11,8 @@ trait IIterator extends js.Object {
 
 object IIterator {
   @scala.inline
-  def apply(getNext: js.Function0[js.Object | scala.Null]): IIterator = {
-    val __obj = js.Dynamic.literal(getNext = getNext)
+  def apply(getNext: () => js.Object | scala.Null): IIterator = {
+    val __obj = js.Dynamic.literal(getNext = js.Any.fromFunction0(getNext))
   
     __obj.asInstanceOf[IIterator]
   }

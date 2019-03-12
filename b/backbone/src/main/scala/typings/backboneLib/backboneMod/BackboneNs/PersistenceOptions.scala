@@ -30,27 +30,17 @@ trait PersistenceOptions extends js.Object {
 object PersistenceOptions {
   @scala.inline
   def apply(
-    beforeSend: js.Function1[/* jqxhr */ jqueryLib.JQueryXHR, scala.Unit] = null,
+    beforeSend: /* jqxhr */ jqueryLib.JQueryXHR => scala.Unit = null,
     data: js.Any = null,
-    error: js.Function3[
-      /* modelOrCollection */ js.UndefOr[js.Any], 
-      /* jqxhr */ js.UndefOr[jqueryLib.JQueryXHR], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    success: js.Function3[
-      /* modelOrCollection */ js.UndefOr[js.Any], 
-      /* response */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
+    error: (/* modelOrCollection */ js.UndefOr[js.Any], /* jqxhr */ js.UndefOr[jqueryLib.JQueryXHR], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    success: (/* modelOrCollection */ js.UndefOr[js.Any], /* response */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     url: java.lang.String = null
   ): PersistenceOptions = {
     val __obj = js.Dynamic.literal()
-    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)
+    if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction1(beforeSend))
     if (data != null) __obj.updateDynamic("data")(data)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction3(error))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction3(success))
     if (url != null) __obj.updateDynamic("url")(url)
     __obj.asInstanceOf[PersistenceOptions]
   }

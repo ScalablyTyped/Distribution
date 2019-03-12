@@ -20,11 +20,11 @@ object IKeyboardEventData {
     ctrlKey: scala.Double,
     keyCode: scala.Double,
     metaKey: scala.Double,
-    preventDefault: js.Function0[scala.Unit],
+    preventDefault: () => scala.Unit,
     returnValue: scala.Boolean,
     shiftKey: scala.Double
   ): IKeyboardEventData = {
-    val __obj = js.Dynamic.literal(altKey = altKey, ctrlKey = ctrlKey, keyCode = keyCode, metaKey = metaKey, preventDefault = preventDefault, returnValue = returnValue, shiftKey = shiftKey)
+    val __obj = js.Dynamic.literal(altKey = altKey, ctrlKey = ctrlKey, keyCode = keyCode, metaKey = metaKey, preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue, shiftKey = shiftKey)
   
     __obj.asInstanceOf[IKeyboardEventData]
   }

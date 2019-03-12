@@ -53,7 +53,7 @@ trait XPasswordContainer
     * Get all records from the file.
     * @returns List of url-records.
     */
-  def getAllPersistent(Handler: XInteractionHandler): activexDashInteropLib.SafeArray[UrlRecord]
+  def getAllPersistent(Handler: XInteractionHandler): stdLib.SafeArray[UrlRecord]
   /**
     * Remove passwords for the url pattern and username.
     * @param Url URL-pattern to remove passwords for.
@@ -73,31 +73,19 @@ trait XPasswordContainer
 object XPasswordContainer {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    add: js.Function4[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      XInteractionHandler, 
-      scala.Unit
-    ],
-    addPersistent: js.Function4[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      XInteractionHandler, 
-      scala.Unit
-    ],
-    find: js.Function2[java.lang.String, XInteractionHandler, UrlRecord],
-    findForName: js.Function3[java.lang.String, java.lang.String, XInteractionHandler, UrlRecord],
-    getAllPersistent: js.Function1[XInteractionHandler, activexDashInteropLib.SafeArray[UrlRecord]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    remove: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    removeAllPersistent: js.Function0[scala.Unit],
-    removePersistent: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    add: (java.lang.String, java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], XInteractionHandler) => scala.Unit,
+    addPersistent: (java.lang.String, java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], XInteractionHandler) => scala.Unit,
+    find: (java.lang.String, XInteractionHandler) => UrlRecord,
+    findForName: (java.lang.String, java.lang.String, XInteractionHandler) => UrlRecord,
+    getAllPersistent: XInteractionHandler => stdLib.SafeArray[UrlRecord],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    remove: (java.lang.String, java.lang.String) => scala.Unit,
+    removeAllPersistent: () => scala.Unit,
+    removePersistent: (java.lang.String, java.lang.String) => scala.Unit
   ): XPasswordContainer = {
-    val __obj = js.Dynamic.literal(acquire = acquire, add = add, addPersistent = addPersistent, find = find, findForName = findForName, getAllPersistent = getAllPersistent, queryInterface = queryInterface, release = release, remove = remove, removeAllPersistent = removeAllPersistent, removePersistent = removePersistent)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), add = js.Any.fromFunction4(add), addPersistent = js.Any.fromFunction4(addPersistent), find = js.Any.fromFunction2(find), findForName = js.Any.fromFunction3(findForName), getAllPersistent = js.Any.fromFunction1(getAllPersistent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), remove = js.Any.fromFunction2(remove), removeAllPersistent = js.Any.fromFunction0(removeAllPersistent), removePersistent = js.Any.fromFunction2(removePersistent))
   
     __obj.asInstanceOf[XPasswordContainer]
   }

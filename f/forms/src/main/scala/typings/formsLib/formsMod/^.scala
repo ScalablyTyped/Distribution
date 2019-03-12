@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("forms", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def create(fields: formsLib.formsMod.FormFields): formsLib.formsMod.Form = js.native
-  def create(fields: formsLib.formsMod.FormFields, options: formsLib.Anon_ValidatePastFirstError): formsLib.formsMod.Form = js.native
+  def create(fields: FormFields): Form = js.native
+  def create(fields: FormFields, options: formsLib.Anon_ValidatePastFirstError): Form = js.native
 }
 

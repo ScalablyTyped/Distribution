@@ -15,6 +15,6 @@ object ^ extends js.Object {
     * @return  File URL.
     */
   def apply(path: java.lang.String): java.lang.String = js.native
-  def apply(path: java.lang.String, options: fileDashUrlLib.fileDashUrlMod.FileUrlOptions): java.lang.String = js.native
+  def apply(path: java.lang.String, options: FileUrlOptions): java.lang.String = js.native
 }
 

@@ -24,8 +24,8 @@ trait DropDownSettings extends js.Object {
 object DropDownSettings {
   @scala.inline
   def apply(
-    change: js.Function1[/* e */ js.Any, _] = null,
-    dataBound: js.Function1[/* e */ js.Any, _] = null,
+    change: /* e */ js.Any => _ = null,
+    dataBound: /* e */ js.Any => _ = null,
     dataSource: js.Any = null,
     icons: DropDownIcons = null,
     iconsLibrary: java.lang.String = null,
@@ -38,8 +38,8 @@ object DropDownSettings {
     width: scala.Int | scala.Double = null
   ): DropDownSettings = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
     if (icons != null) __obj.updateDynamic("icons")(icons)
     if (iconsLibrary != null) __obj.updateDynamic("iconsLibrary")(iconsLibrary)

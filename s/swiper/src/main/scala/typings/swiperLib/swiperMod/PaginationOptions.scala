@@ -129,17 +129,17 @@ object PaginationOptions {
     currentClass: java.lang.String = null,
     dynamicBullets: js.UndefOr[scala.Boolean] = js.undefined,
     dynamicMainBullets: scala.Int | scala.Double = null,
-    formatFractionCurrent: js.Function1[/* number */ scala.Double, scala.Double] = null,
-    formatFractionTotal: js.Function1[/* number */ scala.Double, scala.Double] = null,
+    formatFractionCurrent: /* number */ scala.Double => scala.Double = null,
+    formatFractionTotal: /* number */ scala.Double => scala.Double = null,
     hiddenClass: java.lang.String = null,
     hideOnClick: js.UndefOr[scala.Boolean] = js.undefined,
     modifierClass: java.lang.String = null,
     progressbarFillClass: java.lang.String = null,
     progressbarOpposite: js.UndefOr[scala.Boolean] = js.undefined,
-    renderBullet: js.Function2[/* index */ scala.Double, /* className */ java.lang.String, scala.Unit] = null,
-    renderCustom: js.Function3[/* swiper */ Swiper, /* current */ scala.Double, /* total */ scala.Double, scala.Unit] = null,
-    renderFraction: js.Function2[/* currentClass */ java.lang.String, /* totalClass */ java.lang.String, scala.Unit] = null,
-    renderProgressbar: js.Function1[/* progressbarFillClass */ java.lang.String, scala.Unit] = null,
+    renderBullet: (/* index */ scala.Double, /* className */ java.lang.String) => scala.Unit = null,
+    renderCustom: (/* swiper */ Swiper, /* current */ scala.Double, /* total */ scala.Double) => scala.Unit = null,
+    renderFraction: (/* currentClass */ java.lang.String, /* totalClass */ java.lang.String) => scala.Unit = null,
+    renderProgressbar: /* progressbarFillClass */ java.lang.String => scala.Unit = null,
     totalClass: java.lang.String = null,
     `type`: swiperLib.swiperLibStrings.bullets | swiperLib.swiperLibStrings.fraction | swiperLib.swiperLibStrings.progressbar | swiperLib.swiperLibStrings.custom = null
   ): PaginationOptions = {
@@ -152,17 +152,17 @@ object PaginationOptions {
     if (currentClass != null) __obj.updateDynamic("currentClass")(currentClass)
     if (!js.isUndefined(dynamicBullets)) __obj.updateDynamic("dynamicBullets")(dynamicBullets)
     if (dynamicMainBullets != null) __obj.updateDynamic("dynamicMainBullets")(dynamicMainBullets.asInstanceOf[js.Any])
-    if (formatFractionCurrent != null) __obj.updateDynamic("formatFractionCurrent")(formatFractionCurrent)
-    if (formatFractionTotal != null) __obj.updateDynamic("formatFractionTotal")(formatFractionTotal)
+    if (formatFractionCurrent != null) __obj.updateDynamic("formatFractionCurrent")(js.Any.fromFunction1(formatFractionCurrent))
+    if (formatFractionTotal != null) __obj.updateDynamic("formatFractionTotal")(js.Any.fromFunction1(formatFractionTotal))
     if (hiddenClass != null) __obj.updateDynamic("hiddenClass")(hiddenClass)
     if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick)
     if (modifierClass != null) __obj.updateDynamic("modifierClass")(modifierClass)
     if (progressbarFillClass != null) __obj.updateDynamic("progressbarFillClass")(progressbarFillClass)
     if (!js.isUndefined(progressbarOpposite)) __obj.updateDynamic("progressbarOpposite")(progressbarOpposite)
-    if (renderBullet != null) __obj.updateDynamic("renderBullet")(renderBullet)
-    if (renderCustom != null) __obj.updateDynamic("renderCustom")(renderCustom)
-    if (renderFraction != null) __obj.updateDynamic("renderFraction")(renderFraction)
-    if (renderProgressbar != null) __obj.updateDynamic("renderProgressbar")(renderProgressbar)
+    if (renderBullet != null) __obj.updateDynamic("renderBullet")(js.Any.fromFunction2(renderBullet))
+    if (renderCustom != null) __obj.updateDynamic("renderCustom")(js.Any.fromFunction3(renderCustom))
+    if (renderFraction != null) __obj.updateDynamic("renderFraction")(js.Any.fromFunction2(renderFraction))
+    if (renderProgressbar != null) __obj.updateDynamic("renderProgressbar")(js.Any.fromFunction1(renderProgressbar))
     if (totalClass != null) __obj.updateDynamic("totalClass")(totalClass)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationOptions]

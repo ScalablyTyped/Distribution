@@ -58,25 +58,20 @@ trait EnvelopedData extends js.Object {
 object EnvelopedData {
   @scala.inline
   def apply(
-    addRecipientByCertificate: js.Function3[
-      pkijsLib.srcCertificateMod.default, 
-      pkijsLib.Anon_KdfAlgorithm, 
-      scala.Double, 
-      scala.Boolean
-    ],
-    addRecipientByPreDefinedData: js.Function3[stdLib.ArrayBuffer, pkijsLib.Anon_HmacHashAlgorithm, scala.Double, scala.Boolean],
-    decrypt: js.Function2[scala.Double, pkijsLib.Anon_RecipientCertificate, js.Thenable[stdLib.ArrayBuffer]],
-    encrypt: js.Function2[stdLib.Algorithm, stdLib.ArrayBuffer, js.Thenable[stdLib.ArrayBuffer]],
+    addRecipientByCertificate: (pkijsLib.srcCertificateMod.default, pkijsLib.Anon_KdfAlgorithm, scala.Double) => scala.Boolean,
+    addRecipientByPreDefinedData: (stdLib.ArrayBuffer, pkijsLib.Anon_HmacHashAlgorithm, scala.Double) => scala.Boolean,
+    decrypt: (scala.Double, pkijsLib.Anon_RecipientCertificate) => js.Thenable[stdLib.ArrayBuffer],
+    encrypt: (stdLib.Algorithm, stdLib.ArrayBuffer) => js.Thenable[stdLib.ArrayBuffer],
     encryptedContentInfo: pkijsLib.srcEncryptedContentInfoMod.default,
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     recipientInfos: js.Array[pkijsLib.srcRecipientInfoMod.default],
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     version: scala.Double,
     originatorInfo: pkijsLib.srcOriginatorInfoMod.default = null,
     unprotectedAttrs: js.Array[pkijsLib.srcAttributeMod.default] = null
   ): EnvelopedData = {
-    val __obj = js.Dynamic.literal(addRecipientByCertificate = addRecipientByCertificate, addRecipientByPreDefinedData = addRecipientByPreDefinedData, decrypt = decrypt, encrypt = encrypt, encryptedContentInfo = encryptedContentInfo, fromSchema = fromSchema, recipientInfos = recipientInfos, toJSON = toJSON, toSchema = toSchema, version = version)
+    val __obj = js.Dynamic.literal(addRecipientByCertificate = js.Any.fromFunction3(addRecipientByCertificate), addRecipientByPreDefinedData = js.Any.fromFunction3(addRecipientByPreDefinedData), decrypt = js.Any.fromFunction2(decrypt), encrypt = js.Any.fromFunction2(encrypt), encryptedContentInfo = encryptedContentInfo, fromSchema = js.Any.fromFunction1(fromSchema), recipientInfos = recipientInfos, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), version = version)
     if (originatorInfo != null) __obj.updateDynamic("originatorInfo")(originatorInfo)
     if (unprotectedAttrs != null) __obj.updateDynamic("unprotectedAttrs")(unprotectedAttrs)
     __obj.asInstanceOf[EnvelopedData]

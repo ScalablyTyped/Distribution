@@ -293,7 +293,7 @@ object IconProps {
   def apply(
     name: java.lang.String,
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] = null,
     prefix: java.lang.String = null
   ): IconProps = {
     val __obj = js.Dynamic.literal(name = name)

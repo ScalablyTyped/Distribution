@@ -25,27 +25,24 @@ object ToolbarController {
   @scala.inline
   def apply(
     SubToolbarName: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    click: js.Function0[scala.Unit],
-    createItemWindow: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow
-    ],
-    createPopupWindow: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    doubleClick: js.Function0[scala.Unit],
-    execute: js.Function1[scala.Double, scala.Unit],
-    functionSelected: js.Function1[java.lang.String, scala.Unit],
-    getSubToolbarName: js.Function0[java.lang.String],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    opensSubToolbar: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    statusChanged: js.Function1[FeatureStateEvent, scala.Unit],
-    update: js.Function0[scala.Unit],
-    updateImage: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    click: () => scala.Unit,
+    createItemWindow: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    createPopupWindow: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    doubleClick: () => scala.Unit,
+    execute: scala.Double => scala.Unit,
+    functionSelected: java.lang.String => scala.Unit,
+    getSubToolbarName: () => java.lang.String,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    opensSubToolbar: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    statusChanged: FeatureStateEvent => scala.Unit,
+    update: () => scala.Unit,
+    updateImage: () => scala.Unit
   ): ToolbarController = {
-    val __obj = js.Dynamic.literal(SubToolbarName = SubToolbarName, acquire = acquire, click = click, createItemWindow = createItemWindow, createPopupWindow = createPopupWindow, disposing = disposing, doubleClick = doubleClick, execute = execute, functionSelected = functionSelected, getSubToolbarName = getSubToolbarName, initialize = initialize, opensSubToolbar = opensSubToolbar, queryInterface = queryInterface, release = release, statusChanged = statusChanged, update = update, updateImage = updateImage)
+    val __obj = js.Dynamic.literal(SubToolbarName = SubToolbarName, acquire = js.Any.fromFunction0(acquire), click = js.Any.fromFunction0(click), createItemWindow = js.Any.fromFunction1(createItemWindow), createPopupWindow = js.Any.fromFunction0(createPopupWindow), disposing = js.Any.fromFunction1(disposing), doubleClick = js.Any.fromFunction0(doubleClick), execute = js.Any.fromFunction1(execute), functionSelected = js.Any.fromFunction1(functionSelected), getSubToolbarName = js.Any.fromFunction0(getSubToolbarName), initialize = js.Any.fromFunction1(initialize), opensSubToolbar = js.Any.fromFunction0(opensSubToolbar), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), statusChanged = js.Any.fromFunction1(statusChanged), update = js.Any.fromFunction0(update), updateImage = js.Any.fromFunction0(updateImage))
   
     __obj.asInstanceOf[ToolbarController]
   }

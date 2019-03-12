@@ -8,20 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("babel-generator", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def default(ast: babelDashTypesLib.babelDashTypesMod.Node): babelDashGeneratorLib.babelDashGeneratorMod.GeneratorResult = js.native
+  def default(ast: babelDashTypesLib.babelDashTypesMod.Node): GeneratorResult = js.native
+  def default(ast: babelDashTypesLib.babelDashTypesMod.Node, opts: GeneratorOptions): GeneratorResult = js.native
+  def default(ast: babelDashTypesLib.babelDashTypesMod.Node, opts: GeneratorOptions, code: java.lang.String): GeneratorResult = js.native
   def default(
     ast: babelDashTypesLib.babelDashTypesMod.Node,
-    opts: babelDashGeneratorLib.babelDashGeneratorMod.GeneratorOptions
-  ): babelDashGeneratorLib.babelDashGeneratorMod.GeneratorResult = js.native
-  def default(
-    ast: babelDashTypesLib.babelDashTypesMod.Node,
-    opts: babelDashGeneratorLib.babelDashGeneratorMod.GeneratorOptions,
-    code: java.lang.String
-  ): babelDashGeneratorLib.babelDashGeneratorMod.GeneratorResult = js.native
-  def default(
-    ast: babelDashTypesLib.babelDashTypesMod.Node,
-    opts: babelDashGeneratorLib.babelDashGeneratorMod.GeneratorOptions,
+    opts: GeneratorOptions,
     code: org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  ): babelDashGeneratorLib.babelDashGeneratorMod.GeneratorResult = js.native
+  ): GeneratorResult = js.native
 }
 

@@ -29,7 +29,7 @@ trait StrictBreadcrumbSectionProps extends js.Object {
     */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
       /* data */ BreadcrumbSectionProps, 
       scala.Unit
     ]
@@ -46,11 +46,7 @@ object StrictBreadcrumbSectionProps {
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     href: java.lang.String = null,
     link: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
-      /* data */ BreadcrumbSectionProps, 
-      scala.Unit
-    ] = null
+    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ BreadcrumbSectionProps) => scala.Unit = null
   ): StrictBreadcrumbSectionProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
@@ -60,7 +56,7 @@ object StrictBreadcrumbSectionProps {
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href)
     if (!js.isUndefined(link)) __obj.updateDynamic("link")(link)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     __obj.asInstanceOf[StrictBreadcrumbSectionProps]
   }
 }

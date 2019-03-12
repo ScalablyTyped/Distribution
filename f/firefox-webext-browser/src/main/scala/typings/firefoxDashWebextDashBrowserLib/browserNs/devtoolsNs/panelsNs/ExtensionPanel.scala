@@ -58,15 +58,10 @@ object ExtensionPanel {
       ]
     ],
     onShown: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* window */ js.Object, scala.Unit]],
-    createStatusBarButton: js.Function3[
-      /* iconPath */ java.lang.String, 
-      /* tooltipText */ java.lang.String, 
-      /* disabled */ scala.Boolean, 
-      Button
-    ] = null
+    createStatusBarButton: (/* iconPath */ java.lang.String, /* tooltipText */ java.lang.String, /* disabled */ scala.Boolean) => Button = null
   ): ExtensionPanel = {
     val __obj = js.Dynamic.literal(onHidden = onHidden, onSearch = onSearch, onShown = onShown)
-    if (createStatusBarButton != null) __obj.updateDynamic("createStatusBarButton")(createStatusBarButton)
+    if (createStatusBarButton != null) __obj.updateDynamic("createStatusBarButton")(js.Any.fromFunction3(createStatusBarButton))
     __obj.asInstanceOf[ExtensionPanel]
   }
 }

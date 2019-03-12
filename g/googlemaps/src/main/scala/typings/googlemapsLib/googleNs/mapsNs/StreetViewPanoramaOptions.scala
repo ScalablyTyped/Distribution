@@ -55,7 +55,7 @@ object StreetViewPanoramaOptions {
     panControl: js.UndefOr[scala.Boolean] = js.undefined,
     panControlOptions: PanControlOptions = null,
     pano: java.lang.String = null,
-    panoProvider: js.Function1[/* input */ java.lang.String, StreetViewPanoramaData] = null,
+    panoProvider: /* input */ java.lang.String => StreetViewPanoramaData = null,
     position: LatLng | LatLngLiteral = null,
     pov: StreetViewPov = null,
     scrollwheel: js.UndefOr[scala.Boolean] = js.undefined,
@@ -82,7 +82,7 @@ object StreetViewPanoramaOptions {
     if (!js.isUndefined(panControl)) __obj.updateDynamic("panControl")(panControl)
     if (panControlOptions != null) __obj.updateDynamic("panControlOptions")(panControlOptions)
     if (pano != null) __obj.updateDynamic("pano")(pano)
-    if (panoProvider != null) __obj.updateDynamic("panoProvider")(panoProvider)
+    if (panoProvider != null) __obj.updateDynamic("panoProvider")(js.Any.fromFunction1(panoProvider))
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (pov != null) __obj.updateDynamic("pov")(pov)
     if (!js.isUndefined(scrollwheel)) __obj.updateDynamic("scrollwheel")(scrollwheel)

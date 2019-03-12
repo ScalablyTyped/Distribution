@@ -14,12 +14,9 @@ trait Anon_AlertIfHuaweiDevice extends js.Object {
 object Anon_AlertIfHuaweiDevice {
   @scala.inline
   def apply(
-    AlertIfHuaweiDevice: js.Function1[
-      reactDashNativeDashHuaweiDashProtectedDashAppsLib.reactDashNativeDashHuaweiDashProtectedDashAppsMod.HuaweiProtectedAppsConfig, 
-      scala.Unit
-    ]
+    AlertIfHuaweiDevice: reactDashNativeDashHuaweiDashProtectedDashAppsLib.reactDashNativeDashHuaweiDashProtectedDashAppsMod.HuaweiProtectedAppsConfig => scala.Unit
   ): Anon_AlertIfHuaweiDevice = {
-    val __obj = js.Dynamic.literal(AlertIfHuaweiDevice = AlertIfHuaweiDevice)
+    val __obj = js.Dynamic.literal(AlertIfHuaweiDevice = js.Any.fromFunction1(AlertIfHuaweiDevice))
   
     __obj.asInstanceOf[Anon_AlertIfHuaweiDevice]
   }

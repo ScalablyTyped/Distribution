@@ -17,14 +17,14 @@ trait BasicProfile extends js.Object {
 object BasicProfile {
   @scala.inline
   def apply(
-    getEmail: js.Function0[java.lang.String],
-    getFamilyName: js.Function0[java.lang.String],
-    getGivenName: js.Function0[java.lang.String],
-    getId: js.Function0[java.lang.String],
-    getImageUrl: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String]
+    getEmail: () => java.lang.String,
+    getFamilyName: () => java.lang.String,
+    getGivenName: () => java.lang.String,
+    getId: () => java.lang.String,
+    getImageUrl: () => java.lang.String,
+    getName: () => java.lang.String
   ): BasicProfile = {
-    val __obj = js.Dynamic.literal(getEmail = getEmail, getFamilyName = getFamilyName, getGivenName = getGivenName, getId = getId, getImageUrl = getImageUrl, getName = getName)
+    val __obj = js.Dynamic.literal(getEmail = js.Any.fromFunction0(getEmail), getFamilyName = js.Any.fromFunction0(getFamilyName), getGivenName = js.Any.fromFunction0(getGivenName), getId = js.Any.fromFunction0(getId), getImageUrl = js.Any.fromFunction0(getImageUrl), getName = js.Any.fromFunction0(getName))
   
     __obj.asInstanceOf[BasicProfile]
   }

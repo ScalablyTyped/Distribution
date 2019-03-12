@@ -68,13 +68,13 @@ object XPackageTypeInfo {
     FileFilter: java.lang.String,
     MediaType: java.lang.String,
     ShortDescription: java.lang.String,
-    getDescription: js.Function0[java.lang.String],
-    getFileFilter: js.Function0[java.lang.String],
-    getIcon: js.Function2[scala.Boolean, scala.Boolean, js.Any],
-    getMediaType: js.Function0[java.lang.String],
-    getShortDescription: js.Function0[java.lang.String]
+    getDescription: () => java.lang.String,
+    getFileFilter: () => java.lang.String,
+    getIcon: (scala.Boolean, scala.Boolean) => js.Any,
+    getMediaType: () => java.lang.String,
+    getShortDescription: () => java.lang.String
   ): XPackageTypeInfo = {
-    val __obj = js.Dynamic.literal(Description = Description, FileFilter = FileFilter, MediaType = MediaType, ShortDescription = ShortDescription, getDescription = getDescription, getFileFilter = getFileFilter, getIcon = getIcon, getMediaType = getMediaType, getShortDescription = getShortDescription)
+    val __obj = js.Dynamic.literal(Description = Description, FileFilter = FileFilter, MediaType = MediaType, ShortDescription = ShortDescription, getDescription = js.Any.fromFunction0(getDescription), getFileFilter = js.Any.fromFunction0(getFileFilter), getIcon = js.Any.fromFunction2(getIcon), getMediaType = js.Any.fromFunction0(getMediaType), getShortDescription = js.Any.fromFunction0(getShortDescription))
   
     __obj.asInstanceOf[XPackageTypeInfo]
   }

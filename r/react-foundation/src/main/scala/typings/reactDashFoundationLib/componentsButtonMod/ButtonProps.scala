@@ -290,7 +290,7 @@ object ButtonProps {
   @scala.inline
   def apply(
     ButtonPropsCommon: ButtonPropsCommon = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
     color: reactDashFoundationLib.enumsMod.ButtonColors = null
   ): ButtonProps = {
     val __obj = js.Dynamic.literal()

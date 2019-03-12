@@ -19,11 +19,9 @@ trait IRequestInterceptors extends js.Object {
 
 object IRequestInterceptors {
   @scala.inline
-  def apply(
-    onFulfilled: js.Function3[/* session */ ISession, /* request */ js.Any, /* result */ js.Any, _] = null
-  ): IRequestInterceptors = {
+  def apply(onFulfilled: (/* session */ ISession, /* request */ js.Any, /* result */ js.Any) => _ = null): IRequestInterceptors = {
     val __obj = js.Dynamic.literal()
-    if (onFulfilled != null) __obj.updateDynamic("onFulfilled")(onFulfilled)
+    if (onFulfilled != null) __obj.updateDynamic("onFulfilled")(js.Any.fromFunction3(onFulfilled))
     __obj.asInstanceOf[IRequestInterceptors]
   }
 }

@@ -25,25 +25,22 @@ trait View extends js.Object {
 object View {
   @scala.inline
   def apply(
-    autorun: js.Function1[
-      js.Function1[/* computation */ meteorDashTypingsLib.TrackerNs.Computation, scala.Unit], 
-      meteorDashTypingsLib.TrackerNs.Computation
-    ],
-    firstNode: js.Function0[stdLib.Node],
+    autorun: js.Function1[/* computation */ meteorDashTypingsLib.TrackerNs.Computation, scala.Unit] => meteorDashTypingsLib.TrackerNs.Computation,
+    firstNode: () => stdLib.Node,
     isCreated: scala.Boolean,
     isDestroyed: scala.Boolean,
     isRendered: scala.Boolean,
-    lastNode: js.Function0[stdLib.Node],
+    lastNode: () => stdLib.Node,
     name: java.lang.String,
-    onViewCreated: js.Function1[js.Function, scala.Unit],
-    onViewDestroyed: js.Function1[js.Function, scala.Unit],
-    onViewReady: js.Function1[js.Function, scala.Unit],
+    onViewCreated: js.Function => scala.Unit,
+    onViewDestroyed: js.Function => scala.Unit,
+    onViewReady: js.Function => scala.Unit,
     parentView: View,
     renderCount: scala.Double,
     template: Template,
-    templateInstance: js.Function0[TemplateInstance]
+    templateInstance: () => TemplateInstance
   ): View = {
-    val __obj = js.Dynamic.literal(autorun = autorun, firstNode = firstNode, isCreated = isCreated, isDestroyed = isDestroyed, isRendered = isRendered, lastNode = lastNode, name = name, onViewCreated = onViewCreated, onViewDestroyed = onViewDestroyed, onViewReady = onViewReady, parentView = parentView, renderCount = renderCount, template = template, templateInstance = templateInstance)
+    val __obj = js.Dynamic.literal(autorun = js.Any.fromFunction1(autorun), firstNode = js.Any.fromFunction0(firstNode), isCreated = isCreated, isDestroyed = isDestroyed, isRendered = isRendered, lastNode = js.Any.fromFunction0(lastNode), name = name, onViewCreated = js.Any.fromFunction1(onViewCreated), onViewDestroyed = js.Any.fromFunction1(onViewDestroyed), onViewReady = js.Any.fromFunction1(onViewReady), parentView = parentView, renderCount = renderCount, template = template, templateInstance = js.Any.fromFunction0(templateInstance))
   
     __obj.asInstanceOf[View]
   }

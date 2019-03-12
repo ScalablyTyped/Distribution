@@ -86,22 +86,22 @@ trait SortsHeaders extends js.Object {
 object SortsHeaders {
   @scala.inline
   def apply(
-    appendArrowDown: js.Function1[dynatableLib.JQuery, scala.Unit],
-    appendArrowUp: js.Function1[dynatableLib.JQuery, scala.Unit],
-    attach: js.Function0[scala.Unit],
-    attachOne: js.Function1[stdLib.Element, scala.Unit],
-    create: js.Function1[stdLib.Element, dynatableLib.JQuery],
-    init: js.Function0[scala.Unit],
-    initOnLoad: js.Function0[scala.Boolean],
-    removeAll: js.Function0[scala.Unit],
-    removeAllArrows: js.Function0[scala.Unit],
-    removeArrow: js.Function1[dynatableLib.JQuery, scala.Unit],
-    removeOne: js.Function1[stdLib.Element, scala.Unit],
-    sortedByColumn: js.Function2[dynatableLib.JQuery, Column, scala.Boolean],
-    sortedByColumnValue: js.Function1[Column, scala.Double],
-    toggleSort: js.Function3[stdLib.Event, dynatableLib.JQuery, Column, scala.Unit]
+    appendArrowDown: dynatableLib.JQuery => scala.Unit,
+    appendArrowUp: dynatableLib.JQuery => scala.Unit,
+    attach: () => scala.Unit,
+    attachOne: stdLib.Element => scala.Unit,
+    create: stdLib.Element => dynatableLib.JQuery,
+    init: () => scala.Unit,
+    initOnLoad: () => scala.Boolean,
+    removeAll: () => scala.Unit,
+    removeAllArrows: () => scala.Unit,
+    removeArrow: dynatableLib.JQuery => scala.Unit,
+    removeOne: stdLib.Element => scala.Unit,
+    sortedByColumn: (dynatableLib.JQuery, Column) => scala.Boolean,
+    sortedByColumnValue: Column => scala.Double,
+    toggleSort: (stdLib.Event, dynatableLib.JQuery, Column) => scala.Unit
   ): SortsHeaders = {
-    val __obj = js.Dynamic.literal(appendArrowDown = appendArrowDown, appendArrowUp = appendArrowUp, attach = attach, attachOne = attachOne, create = create, init = init, initOnLoad = initOnLoad, removeAll = removeAll, removeAllArrows = removeAllArrows, removeArrow = removeArrow, removeOne = removeOne, sortedByColumn = sortedByColumn, sortedByColumnValue = sortedByColumnValue, toggleSort = toggleSort)
+    val __obj = js.Dynamic.literal(appendArrowDown = js.Any.fromFunction1(appendArrowDown), appendArrowUp = js.Any.fromFunction1(appendArrowUp), attach = js.Any.fromFunction0(attach), attachOne = js.Any.fromFunction1(attachOne), create = js.Any.fromFunction1(create), init = js.Any.fromFunction0(init), initOnLoad = js.Any.fromFunction0(initOnLoad), removeAll = js.Any.fromFunction0(removeAll), removeAllArrows = js.Any.fromFunction0(removeAllArrows), removeArrow = js.Any.fromFunction1(removeArrow), removeOne = js.Any.fromFunction1(removeOne), sortedByColumn = js.Any.fromFunction2(sortedByColumn), sortedByColumnValue = js.Any.fromFunction1(sortedByColumnValue), toggleSort = js.Any.fromFunction3(toggleSort))
   
     __obj.asInstanceOf[SortsHeaders]
   }

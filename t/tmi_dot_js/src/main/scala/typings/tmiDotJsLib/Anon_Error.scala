@@ -14,14 +14,14 @@ trait Anon_Error extends js.Object {
 object Anon_Error {
   @scala.inline
   def apply(
-    error: js.Function1[/* message */ java.lang.String, _] = null,
-    info: js.Function1[/* message */ java.lang.String, _] = null,
-    warn: js.Function1[/* message */ java.lang.String, _] = null
+    error: /* message */ java.lang.String => _ = null,
+    info: /* message */ java.lang.String => _ = null,
+    warn: /* message */ java.lang.String => _ = null
   ): Anon_Error = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (warn != null) __obj.updateDynamic("warn")(warn)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
+    if (info != null) __obj.updateDynamic("info")(js.Any.fromFunction1(info))
+    if (warn != null) __obj.updateDynamic("warn")(js.Any.fromFunction1(warn))
     __obj.asInstanceOf[Anon_Error]
   }
 }

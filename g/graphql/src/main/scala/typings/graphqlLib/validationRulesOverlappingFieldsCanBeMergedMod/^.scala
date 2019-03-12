@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def OverlappingFieldsCanBeMerged(context: graphqlLib.validationValidationContextMod.ValidationContext): graphqlLib.languageVisitorMod.ASTVisitor = js.native
-  def fieldsConflictMessage(
-    responseName: java.lang.String,
-    reason: graphqlLib.validationRulesOverlappingFieldsCanBeMergedMod.ConflictReasonMessage
-  ): java.lang.String = js.native
+  def fieldsConflictMessage(responseName: java.lang.String, reason: ConflictReasonMessage): java.lang.String = js.native
 }
 

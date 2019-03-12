@@ -14,8 +14,8 @@ trait FlashSwfPanel extends js.Object {
 
 object FlashSwfPanel {
   @scala.inline
-  def apply(call: js.Function0[js.Any], name: js.Any, path: js.Any, setFocus: js.Function0[js.Any]): FlashSwfPanel = {
-    val __obj = js.Dynamic.literal(call = call, name = name, path = path, setFocus = setFocus)
+  def apply(call: () => js.Any, name: js.Any, path: js.Any, setFocus: () => js.Any): FlashSwfPanel = {
+    val __obj = js.Dynamic.literal(call = js.Any.fromFunction0(call), name = name, path = path, setFocus = js.Any.fromFunction0(setFocus))
   
     __obj.asInstanceOf[FlashSwfPanel]
   }

@@ -40,11 +40,11 @@ trait Transaction
     * statement completes. The transaction object itself will be unusable after calling commit().
     */
   def commit(): scala.Unit = js.native
-  def commit(callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def commit(callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /**
     * The same as Transaction.commit but issues a ROLLBACK. Again, the transaction will be unusable after calling this method.
     */
   def rollback(): scala.Unit = js.native
-  def rollback(callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def rollback(callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
 }
 

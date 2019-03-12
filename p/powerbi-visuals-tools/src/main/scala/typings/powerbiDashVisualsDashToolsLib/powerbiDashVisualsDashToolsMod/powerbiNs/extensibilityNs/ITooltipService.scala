@@ -15,12 +15,12 @@ trait ITooltipService extends js.Object {
 object ITooltipService {
   @scala.inline
   def apply(
-    enabled: js.Function0[scala.Boolean],
-    hide: js.Function1[TooltipHideOptions, scala.Unit],
-    move: js.Function1[TooltipMoveOptions, scala.Unit],
-    show: js.Function1[TooltipShowOptions, scala.Unit]
+    enabled: () => scala.Boolean,
+    hide: TooltipHideOptions => scala.Unit,
+    move: TooltipMoveOptions => scala.Unit,
+    show: TooltipShowOptions => scala.Unit
   ): ITooltipService = {
-    val __obj = js.Dynamic.literal(enabled = enabled, hide = hide, move = move, show = show)
+    val __obj = js.Dynamic.literal(enabled = js.Any.fromFunction0(enabled), hide = js.Any.fromFunction1(hide), move = js.Any.fromFunction1(move), show = js.Any.fromFunction1(show))
   
     __obj.asInstanceOf[ITooltipService]
   }

@@ -26,8 +26,8 @@ trait XConfigurationChangeRequest extends js.Object {
 
 object XConfigurationChangeRequest {
   @scala.inline
-  def apply(execute: js.Function1[XConfiguration, scala.Unit]): XConfigurationChangeRequest = {
-    val __obj = js.Dynamic.literal(execute = execute)
+  def apply(execute: XConfiguration => scala.Unit): XConfigurationChangeRequest = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute))
   
     __obj.asInstanceOf[XConfigurationChangeRequest]
   }

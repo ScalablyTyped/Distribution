@@ -83,17 +83,11 @@ object OverlayProps {
     fullScreen: js.UndefOr[scala.Boolean] = js.undefined,
     hardwareAccelerated: js.UndefOr[scala.Boolean] = js.undefined,
     height: scala.Double | java.lang.String = null,
-    onBackdropPress: js.Function0[scala.Unit] = null,
-    onDismiss: js.Function0[scala.Unit] = null,
-    onOrientationChange: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[_], 
-      scala.Unit
-    ] = null,
-    onRequestClose: js.Function0[scala.Unit] = null,
-    onShow: js.Function1[
-      /* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[_], 
-      scala.Unit
-    ] = null,
+    onBackdropPress: () => scala.Unit = null,
+    onDismiss: () => scala.Unit = null,
+    onOrientationChange: /* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[_] => scala.Unit = null,
+    onRequestClose: () => scala.Unit = null,
+    onShow: /* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[_] => scala.Unit = null,
     overlayBackgroundColor: java.lang.String = null,
     overlayStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     presentationStyle: reactDashNativeLib.reactDashNativeLibStrings.fullScreen | reactDashNativeLib.reactDashNativeLibStrings.pageSheet | reactDashNativeLib.reactDashNativeLibStrings.formSheet | reactDashNativeLib.reactDashNativeLibStrings.overFullScreen = null,
@@ -113,11 +107,11 @@ object OverlayProps {
     if (!js.isUndefined(fullScreen)) __obj.updateDynamic("fullScreen")(fullScreen)
     if (!js.isUndefined(hardwareAccelerated)) __obj.updateDynamic("hardwareAccelerated")(hardwareAccelerated)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (onBackdropPress != null) __obj.updateDynamic("onBackdropPress")(onBackdropPress)
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss)
-    if (onOrientationChange != null) __obj.updateDynamic("onOrientationChange")(onOrientationChange)
-    if (onRequestClose != null) __obj.updateDynamic("onRequestClose")(onRequestClose)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onBackdropPress != null) __obj.updateDynamic("onBackdropPress")(js.Any.fromFunction0(onBackdropPress))
+    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
+    if (onOrientationChange != null) __obj.updateDynamic("onOrientationChange")(js.Any.fromFunction1(onOrientationChange))
+    if (onRequestClose != null) __obj.updateDynamic("onRequestClose")(js.Any.fromFunction0(onRequestClose))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (overlayBackgroundColor != null) __obj.updateDynamic("overlayBackgroundColor")(overlayBackgroundColor)
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
     if (presentationStyle != null) __obj.updateDynamic("presentationStyle")(presentationStyle.asInstanceOf[js.Any])

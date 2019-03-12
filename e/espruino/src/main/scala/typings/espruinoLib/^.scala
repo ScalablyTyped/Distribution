@@ -12,61 +12,61 @@ object ^ extends js.Object {
   * 
   * @url http://www.espruino.com/Reference#l__global_BTNA
   */
-  var BTNA: espruinoLib.Pin = js.native
+  var BTNA: Pin = js.native
   /**
   * 
   * @url http://www.espruino.com/Reference#l__global_BTNB
   */
-  var BTNB: espruinoLib.Pin = js.native
+  var BTNB: Pin = js.native
   /**
   * 
   * @url http://www.espruino.com/Reference#l__global_BTND
   */
-  var BTND: espruinoLib.Pin = js.native
+  var BTND: Pin = js.native
   /**
   * 
   * @url http://www.espruino.com/Reference#l__global_BTNL
   */
-  var BTNL: espruinoLib.Pin = js.native
+  var BTNL: Pin = js.native
   /**
   * 
   * @url http://www.espruino.com/Reference#l__global_BTNR
   */
-  var BTNR: espruinoLib.Pin = js.native
+  var BTNR: Pin = js.native
   /**
   * 
   * @url http://www.espruino.com/Reference#l__global_BTNU
   */
-  var BTNU: espruinoLib.Pin = js.native
+  var BTNU: Pin = js.native
   /**
   * <p>The Bluetooth Serial port - used when data is sent or received over Bluetooth Smart on nRF51/nRF52 chips.</p>
   * 
   * @url http://www.espruino.com/Reference#l__global_Bluetooth
   */
-  var Bluetooth: espruinoLib.Serial = js.native
-  var D0: espruinoLib.Pin = js.native
-  var D1: espruinoLib.Pin = js.native
-  var D10: espruinoLib.Pin = js.native
-  var D11: espruinoLib.Pin = js.native
-  var D12: espruinoLib.Pin = js.native
-  var D13: espruinoLib.Pin = js.native
-  var D14: espruinoLib.Pin = js.native
-  var D15: espruinoLib.Pin = js.native
-  var D16: espruinoLib.Pin = js.native
-  var D17: espruinoLib.Pin = js.native
-  var D18: espruinoLib.Pin = js.native
-  var D19: espruinoLib.Pin = js.native
-  var D2: espruinoLib.Pin = js.native
-  var D20: espruinoLib.Pin = js.native
-  var D21: espruinoLib.Pin = js.native
-  var D22: espruinoLib.Pin = js.native
-  var D3: espruinoLib.Pin = js.native
-  var D4: espruinoLib.Pin = js.native
-  var D5: espruinoLib.Pin = js.native
-  var D6: espruinoLib.Pin = js.native
-  var D7: espruinoLib.Pin = js.native
-  var D8: espruinoLib.Pin = js.native
-  var D9: espruinoLib.Pin = js.native
+  var Bluetooth: Serial = js.native
+  var D0: Pin = js.native
+  var D1: Pin = js.native
+  var D10: Pin = js.native
+  var D11: Pin = js.native
+  var D12: Pin = js.native
+  var D13: Pin = js.native
+  var D14: Pin = js.native
+  var D15: Pin = js.native
+  var D16: Pin = js.native
+  var D17: Pin = js.native
+  var D18: Pin = js.native
+  var D19: Pin = js.native
+  var D2: Pin = js.native
+  var D20: Pin = js.native
+  var D21: Pin = js.native
+  var D22: Pin = js.native
+  var D3: Pin = js.native
+  var D4: Pin = js.native
+  var D5: Pin = js.native
+  var D6: Pin = js.native
+  var D7: Pin = js.native
+  var D8: Pin = js.native
+  var D9: Pin = js.native
   /**
   * 
   * @url http://www.espruino.com/Reference#l__global_HIGH
@@ -77,19 +77,19 @@ object ^ extends js.Object {
   * 
   * @url http://www.espruino.com/Reference#l__global_I2C1
   */
-  var I2C1: espruinoLib.I2C = js.native
+  var I2C1: I2C = js.native
   /**
   * <p>The second I2C port</p>
   * 
   * @url http://www.espruino.com/Reference#l__global_I2C2
   */
-  var I2C2: espruinoLib.I2C = js.native
+  var I2C2: I2C = js.native
   /**
   * <p>The third I2C port</p>
   * 
   * @url http://www.espruino.com/Reference#l__global_I2C3
   */
-  var I2C3: espruinoLib.I2C = js.native
+  var I2C3: I2C = js.native
   /**
   * 
   * @url http://www.espruino.com/Reference#l__global_LOW
@@ -100,73 +100,73 @@ object ^ extends js.Object {
   * 
   * @url http://www.espruino.com/Reference#l__global_LoopbackA
   */
-  var LoopbackA: espruinoLib.Serial = js.native
+  var LoopbackA: Serial = js.native
   /**
   * <p>A loopback serial device. Data sent to LoopbackA comes out of LoopbackB and vice versa</p>
   * 
   * @url http://www.espruino.com/Reference#l__global_LoopbackB
   */
-  var LoopbackB: espruinoLib.Serial = js.native
+  var LoopbackB: Serial = js.native
   /**
   * <p>The first SPI port</p>
   * 
   * @url http://www.espruino.com/Reference#l__global_SPI1
   */
-  var SPI1: espruinoLib.SPI = js.native
+  var SPI1: SPI = js.native
   /**
   * <p>The second SPI port</p>
   * 
   * @url http://www.espruino.com/Reference#l__global_SPI2
   */
-  var SPI2: espruinoLib.SPI = js.native
+  var SPI2: SPI = js.native
   /**
   * <p>The third SPI port</p>
   * 
   * @url http://www.espruino.com/Reference#l__global_SPI3
   */
-  var SPI3: espruinoLib.SPI = js.native
+  var SPI3: SPI = js.native
   /**
   * <p>The first Serial (USART) port</p>
   * 
   * @url http://www.espruino.com/Reference#l__global_Serial1
   */
-  var Serial1: espruinoLib.Serial = js.native
+  var Serial1: Serial = js.native
   /**
   * <p>The second Serial (USART) port</p>
   * 
   * @url http://www.espruino.com/Reference#l__global_Serial2
   */
-  var Serial2: espruinoLib.Serial = js.native
+  var Serial2: Serial = js.native
   /**
   * <p>The third Serial (USART) port</p>
   * 
   * @url http://www.espruino.com/Reference#l__global_Serial3
   */
-  var Serial3: espruinoLib.Serial = js.native
+  var Serial3: Serial = js.native
   /**
   * <p>The fourth Serial (USART) port</p>
   * 
   * @url http://www.espruino.com/Reference#l__global_Serial4
   */
-  var Serial4: espruinoLib.Serial = js.native
+  var Serial4: Serial = js.native
   /**
   * <p>The fifth Serial (USART) port</p>
   * 
   * @url http://www.espruino.com/Reference#l__global_Serial5
   */
-  var Serial5: espruinoLib.Serial = js.native
+  var Serial5: Serial = js.native
   /**
   * <p>The sixth Serial (USART) port</p>
   * 
   * @url http://www.espruino.com/Reference#l__global_Serial6
   */
-  var Serial6: espruinoLib.Serial = js.native
+  var Serial6: Serial = js.native
   /**
   * <p>The USB Serial port</p>
   * 
   * @url http://www.espruino.com/Reference#l__global_USB
   */
-  var USB: espruinoLib.Serial = js.native
+  var USB: Serial = js.native
   /**
   * <p>A variable containing the arguments given to the function</p>
   * 
@@ -197,7 +197,7 @@ object ^ extends js.Object {
   * @return  
   * @url http://www.espruino.com/Reference#l__global_analogRead
   */
-  def analogRead(pin: espruinoLib.Pin): scala.Double = js.native
+  def analogRead(pin: Pin): scala.Double = js.native
   /**
   * <p>Set the analog Value of a pin. It will be output using PWM.</p>
   * <p>Objects can contain:</p>
@@ -214,7 +214,7 @@ object ^ extends js.Object {
   * @param options 
   * @url http://www.espruino.com/Reference#l__global_analogWrite
   */
-  def analogWrite(pin: espruinoLib.Pin, value: scala.Double, options: js.Any): scala.Unit = js.native
+  def analogWrite(pin: Pin, value: scala.Double, options: js.Any): scala.Unit = js.native
   /**
   * <p>Decode the supplied base64 string into a normal string</p>
   * 
@@ -298,7 +298,7 @@ object ^ extends js.Object {
   * @param time 
   * @url http://www.espruino.com/Reference#l__global_digitalPulse
   */
-  def digitalPulse(pin: espruinoLib.Pin, value: scala.Boolean, time: js.Any): scala.Unit = js.native
+  def digitalPulse(pin: Pin, value: scala.Boolean, time: js.Any): scala.Unit = js.native
   /**
   * <p>Get the digital value of the given pin.</p>
   * <p> <strong>Note:</strong> if you didn&#39;t call <code>pinMode</code> beforehand then this function will also reset pin&#39;s state to <code>&quot;input&quot;</code></p>
@@ -309,8 +309,8 @@ object ^ extends js.Object {
   * @return  
   * @url http://www.espruino.com/Reference#l__global_digitalRead
   */
-  def digitalRead(pin: espruinoLib.Pin): scala.Double = js.native
-  def digitalWrite(pin: espruinoLib.Pin, value: scala.Boolean): scala.Unit = js.native
+  def digitalRead(pin: Pin): scala.Double = js.native
+  def digitalWrite(pin: Pin, value: scala.Boolean): scala.Unit = js.native
   /**
   * <p>Set the digital value of the given pin.</p>
   * <p> <strong>Note:</strong> if you didn&#39;t call <code>pinMode</code> beforehand then this function will also reset pin&#39;s state to <code>&quot;output&quot;</code></p>
@@ -324,7 +324,7 @@ object ^ extends js.Object {
   * @param value 
   * @url http://www.espruino.com/Reference#l__global_digitalWrite
   */
-  def digitalWrite(pin: espruinoLib.Pin, value: scala.Double): scala.Unit = js.native
+  def digitalWrite(pin: Pin, value: scala.Double): scala.Unit = js.native
   /**
   * <p>Output current interpreter state in a text form such that it can be copied to a new device</p>
   * <p>Note: &#39;Internal&#39; functions are currently not handled correctly. You will need to recreate these in the <code>onInit</code> function.</p>
@@ -379,7 +379,7 @@ object ^ extends js.Object {
   * @return  
   * @url http://www.espruino.com/Reference#l__global_getPinMode
   */
-  def getPinMode(pin: espruinoLib.Pin): js.Any = js.native
+  def getPinMode(pin: Pin): js.Any = js.native
   /**
   * <p>Get the serial number of this board</p>
   * 
@@ -518,7 +518,7 @@ object ^ extends js.Object {
   * @param automatic 
   * @url http://www.espruino.com/Reference#l__global_pinMode
   */
-  def pinMode(pin: espruinoLib.Pin, mode: js.Any, automatic: scala.Boolean): scala.Unit = js.native
+  def pinMode(pin: Pin, mode: js.Any, automatic: scala.Boolean): scala.Unit = js.native
   /**
   * <p>Write 16 bits of memory at the given location - VERY DANGEROUS!</p>
   * 
@@ -589,7 +589,7 @@ object ^ extends js.Object {
   * @param pin 
   * @url http://www.espruino.com/Reference#l__global_setBusyIndicator
   */
-  def setBusyIndicator(pin: espruinoLib.Pin): scala.Unit = js.native
+  def setBusyIndicator(pin: Pin): scala.Unit = js.native
   /**
   * <p>Set whether we can enter deep sleep mode, which reduces power consumption to around 100uA. This only works on STM32 Espruino Boards.</p>
   * <p>Please see <a href="http://www.espruino.com/Power+Consumption">http://www.espruino.com/Power+Consumption</a> for more details on this.</p>
@@ -605,7 +605,7 @@ object ^ extends js.Object {
   * @param pin 
   * @url http://www.espruino.com/Reference#l__global_setSleepIndicator
   */
-  def setSleepIndicator(pin: espruinoLib.Pin): scala.Unit = js.native
+  def setSleepIndicator(pin: Pin): scala.Unit = js.native
   /**
   * <p>Set the current system time in seconds (to the nearest second)</p>
   * 
@@ -637,7 +637,7 @@ object ^ extends js.Object {
   * @return  
   * @url http://www.espruino.com/Reference#l__global_setWatch
   */
-  def setWatch(f: js.Function1[/* a */ js.UndefOr[js.Any], _], pin: espruinoLib.Pin, options: js.Any): js.Any = js.native
+  def setWatch(f: js.Function1[/* a */ js.UndefOr[js.Any], _], pin: Pin, options: js.Any): js.Any = js.native
   /**
   * <p>This library allows you to create TCPIP servers and clients using TLS encryption</p>
   * <p>In order to use this, you will need an extra module to get network connectivity.</p>

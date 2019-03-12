@@ -20,3 +20,17 @@ trait NumericMenuProvided extends js.Object {
   def refine(args: js.Any*): js.Any
 }
 
+object NumericMenuProvided {
+  @scala.inline
+  def apply(
+    createURL: /* repeated */ js.Any => js.Any,
+    currentRefinement: java.lang.String,
+    items: js.Array[reactDashInstantsearchDashCoreLib.Anon_IsRefined],
+    refine: /* repeated */ js.Any => js.Any
+  ): NumericMenuProvided = {
+    val __obj = js.Dynamic.literal(createURL = js.Any.fromFunction1(createURL), currentRefinement = currentRefinement, items = items, refine = js.Any.fromFunction1(refine))
+  
+    __obj.asInstanceOf[NumericMenuProvided]
+  }
+}
+

@@ -35,38 +35,32 @@ trait PushNotification extends js.Object {
 object PushNotification {
   @scala.inline
   def apply(
-    abandonPermissions: js.Function0[scala.Unit],
+    abandonPermissions: () => scala.Unit,
     alert: js.Object,
     badge: scala.Double,
-    cancelAllLocalNotifications: js.Function0[scala.Unit],
-    cancelLocalNotifications: js.Function1[js.Object, scala.Unit],
-    checkPermissions: js.Function1[
-      js.Function1[/* permissions */ PushNotificationPermissions, scala.Unit], 
-      scala.Unit
-    ],
-    clearAllNotifications: js.Function0[scala.Unit],
-    configure: js.Function1[PushNotificationOptions, scala.Unit],
+    cancelAllLocalNotifications: () => scala.Unit,
+    cancelLocalNotifications: js.Object => scala.Unit,
+    checkPermissions: js.Function1[/* permissions */ PushNotificationPermissions, scala.Unit] => scala.Unit,
+    clearAllNotifications: () => scala.Unit,
+    configure: PushNotificationOptions => scala.Unit,
     data: js.Object,
-    finish: js.Function1[java.lang.String, scala.Unit],
+    finish: java.lang.String => scala.Unit,
     foreground: scala.Boolean,
-    getApplicationIconBadgeNumber: js.Function1[js.Function1[/* badgeCount */ scala.Double, scala.Unit], scala.Unit],
-    localNotification: js.Function1[PushNotificationObject, scala.Unit],
-    localNotificationSchedule: js.Function1[PushNotificationScheduleObject, scala.Unit],
+    getApplicationIconBadgeNumber: js.Function1[/* badgeCount */ scala.Double, scala.Unit] => scala.Unit,
+    localNotification: PushNotificationObject => scala.Unit,
+    localNotificationSchedule: PushNotificationScheduleObject => scala.Unit,
     message: java.lang.String | js.Object,
-    popInitialNotification: js.Function1[
-      js.Function1[/* notification */ PushNotification | scala.Null, scala.Unit], 
-      scala.Unit
-    ],
-    presentLocalNotification: js.Function1[PushNotificationObject, scala.Unit],
-    registerNotificationActions: js.Function1[js.Array[java.lang.String], scala.Unit],
-    requestPermissions: js.Function0[scala.Unit],
-    scheduleLocalNotification: js.Function1[PushNotificationScheduleObject, scala.Unit],
-    setApplicationIconBadgeNumber: js.Function1[scala.Double, scala.Unit],
+    popInitialNotification: js.Function1[/* notification */ PushNotification | scala.Null, scala.Unit] => scala.Unit,
+    presentLocalNotification: PushNotificationObject => scala.Unit,
+    registerNotificationActions: js.Array[java.lang.String] => scala.Unit,
+    requestPermissions: () => scala.Unit,
+    scheduleLocalNotification: PushNotificationScheduleObject => scala.Unit,
+    setApplicationIconBadgeNumber: scala.Double => scala.Unit,
     sound: java.lang.String,
-    unregister: js.Function0[scala.Unit],
+    unregister: () => scala.Unit,
     userInteraction: scala.Boolean
   ): PushNotification = {
-    val __obj = js.Dynamic.literal(abandonPermissions = abandonPermissions, alert = alert, badge = badge, cancelAllLocalNotifications = cancelAllLocalNotifications, cancelLocalNotifications = cancelLocalNotifications, checkPermissions = checkPermissions, clearAllNotifications = clearAllNotifications, configure = configure, data = data, finish = finish, foreground = foreground, getApplicationIconBadgeNumber = getApplicationIconBadgeNumber, localNotification = localNotification, localNotificationSchedule = localNotificationSchedule, message = message.asInstanceOf[js.Any], popInitialNotification = popInitialNotification, presentLocalNotification = presentLocalNotification, registerNotificationActions = registerNotificationActions, requestPermissions = requestPermissions, scheduleLocalNotification = scheduleLocalNotification, setApplicationIconBadgeNumber = setApplicationIconBadgeNumber, sound = sound, unregister = unregister, userInteraction = userInteraction)
+    val __obj = js.Dynamic.literal(abandonPermissions = js.Any.fromFunction0(abandonPermissions), alert = alert, badge = badge, cancelAllLocalNotifications = js.Any.fromFunction0(cancelAllLocalNotifications), cancelLocalNotifications = js.Any.fromFunction1(cancelLocalNotifications), checkPermissions = js.Any.fromFunction1(checkPermissions), clearAllNotifications = js.Any.fromFunction0(clearAllNotifications), configure = js.Any.fromFunction1(configure), data = data, finish = js.Any.fromFunction1(finish), foreground = foreground, getApplicationIconBadgeNumber = js.Any.fromFunction1(getApplicationIconBadgeNumber), localNotification = js.Any.fromFunction1(localNotification), localNotificationSchedule = js.Any.fromFunction1(localNotificationSchedule), message = message.asInstanceOf[js.Any], popInitialNotification = js.Any.fromFunction1(popInitialNotification), presentLocalNotification = js.Any.fromFunction1(presentLocalNotification), registerNotificationActions = js.Any.fromFunction1(registerNotificationActions), requestPermissions = js.Any.fromFunction0(requestPermissions), scheduleLocalNotification = js.Any.fromFunction1(scheduleLocalNotification), setApplicationIconBadgeNumber = js.Any.fromFunction1(setApplicationIconBadgeNumber), sound = sound, unregister = js.Any.fromFunction0(unregister), userInteraction = userInteraction)
   
     __obj.asInstanceOf[PushNotification]
   }

@@ -12,8 +12,8 @@ trait JsonEncoder extends js.Object {
 
 object JsonEncoder {
   @scala.inline
-  def apply(encode: js.Function1[zipkinLib.zipkinMod.zipkinNs.modelNs.Span, java.lang.String]): JsonEncoder = {
-    val __obj = js.Dynamic.literal(encode = encode)
+  def apply(encode: zipkinLib.zipkinMod.zipkinNs.modelNs.Span => java.lang.String): JsonEncoder = {
+    val __obj = js.Dynamic.literal(encode = js.Any.fromFunction1(encode))
   
     __obj.asInstanceOf[JsonEncoder]
   }

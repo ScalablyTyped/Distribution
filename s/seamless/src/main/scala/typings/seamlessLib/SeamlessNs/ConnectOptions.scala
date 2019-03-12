@@ -72,8 +72,8 @@ object ConnectOptions {
     cookieFallbackAfterMsg: java.lang.String = null,
     cookieFallbackLinkMsg: java.lang.String = null,
     cookieFallbackMsg: java.lang.String = null,
-    onConnect: js.Function1[/* data */ js.Any, scala.Unit] = null,
-    onUpdate: js.Function1[/* data */ js.Any, scala.Unit] = null,
+    onConnect: /* data */ js.Any => scala.Unit = null,
+    onUpdate: /* data */ js.Any => scala.Unit = null,
     requireCookies: js.UndefOr[scala.Boolean] = js.undefined,
     update: scala.Int | scala.Double = null,
     url: java.lang.String = null
@@ -85,8 +85,8 @@ object ConnectOptions {
     if (cookieFallbackAfterMsg != null) __obj.updateDynamic("cookieFallbackAfterMsg")(cookieFallbackAfterMsg)
     if (cookieFallbackLinkMsg != null) __obj.updateDynamic("cookieFallbackLinkMsg")(cookieFallbackLinkMsg)
     if (cookieFallbackMsg != null) __obj.updateDynamic("cookieFallbackMsg")(cookieFallbackMsg)
-    if (onConnect != null) __obj.updateDynamic("onConnect")(onConnect)
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (onConnect != null) __obj.updateDynamic("onConnect")(js.Any.fromFunction1(onConnect))
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
     if (!js.isUndefined(requireCookies)) __obj.updateDynamic("requireCookies")(requireCookies)
     if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url)

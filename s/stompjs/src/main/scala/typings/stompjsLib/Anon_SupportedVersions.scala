@@ -18,9 +18,9 @@ object Anon_SupportedVersions {
     V1_0: java.lang.String,
     V1_1: java.lang.String,
     V1_2: java.lang.String,
-    supportedVersions: js.Function0[js.Array[java.lang.String]]
+    supportedVersions: () => js.Array[java.lang.String]
   ): Anon_SupportedVersions = {
-    val __obj = js.Dynamic.literal(V1_0 = V1_0, V1_1 = V1_1, V1_2 = V1_2, supportedVersions = supportedVersions)
+    val __obj = js.Dynamic.literal(V1_0 = V1_0, V1_1 = V1_1, V1_2 = V1_2, supportedVersions = js.Any.fromFunction0(supportedVersions))
   
     __obj.asInstanceOf[Anon_SupportedVersions]
   }

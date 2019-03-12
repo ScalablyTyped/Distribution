@@ -15,12 +15,12 @@ trait IMetadataCardCommentHistoryItem extends js.Object {
 object IMetadataCardCommentHistoryItem {
   @scala.inline
   def apply(
-    GetCommentAuthor: js.Function0[java.lang.String],
-    GetCommentText: js.Function0[java.lang.String],
-    GetCommentTimestamp: js.Function0[js.Any],
-    GetCommentVersion: js.Function0[scala.Double]
+    GetCommentAuthor: () => java.lang.String,
+    GetCommentText: () => java.lang.String,
+    GetCommentTimestamp: () => js.Any,
+    GetCommentVersion: () => scala.Double
   ): IMetadataCardCommentHistoryItem = {
-    val __obj = js.Dynamic.literal(GetCommentAuthor = GetCommentAuthor, GetCommentText = GetCommentText, GetCommentTimestamp = GetCommentTimestamp, GetCommentVersion = GetCommentVersion)
+    val __obj = js.Dynamic.literal(GetCommentAuthor = js.Any.fromFunction0(GetCommentAuthor), GetCommentText = js.Any.fromFunction0(GetCommentText), GetCommentTimestamp = js.Any.fromFunction0(GetCommentTimestamp), GetCommentVersion = js.Any.fromFunction0(GetCommentVersion))
   
     __obj.asInstanceOf[IMetadataCardCommentHistoryItem]
   }

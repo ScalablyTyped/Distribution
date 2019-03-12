@@ -11,8 +11,8 @@ trait IDataProviderDeferral extends js.Object {
 
 object IDataProviderDeferral {
   @scala.inline
-  def apply(complete: js.Function0[scala.Unit]): IDataProviderDeferral = {
-    val __obj = js.Dynamic.literal(complete = complete)
+  def apply(complete: () => scala.Unit): IDataProviderDeferral = {
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
   
     __obj.asInstanceOf[IDataProviderDeferral]
   }

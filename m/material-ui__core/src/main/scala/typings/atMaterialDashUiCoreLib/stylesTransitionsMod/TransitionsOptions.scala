@@ -21,20 +21,16 @@ trait TransitionsOptions extends js.Object {
 object TransitionsOptions {
   @scala.inline
   def apply(
-    create: js.Function2[
-      /* props */ java.lang.String | js.Array[java.lang.String], 
-      /* options */ js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.Anon_Delay]], 
-      java.lang.String
-    ] = null,
+    create: (/* props */ java.lang.String | js.Array[java.lang.String], /* options */ js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.Anon_Delay]]) => java.lang.String = null,
     duration: stdLib.Partial[Duration] = null,
     easing: stdLib.Partial[Easing] = null,
-    getAutoHeightDuration: js.Function1[/* height */ scala.Double, scala.Double] = null
+    getAutoHeightDuration: /* height */ scala.Double => scala.Double = null
   ): TransitionsOptions = {
     val __obj = js.Dynamic.literal()
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
     if (duration != null) __obj.updateDynamic("duration")(duration)
     if (easing != null) __obj.updateDynamic("easing")(easing)
-    if (getAutoHeightDuration != null) __obj.updateDynamic("getAutoHeightDuration")(getAutoHeightDuration)
+    if (getAutoHeightDuration != null) __obj.updateDynamic("getAutoHeightDuration")(js.Any.fromFunction1(getAutoHeightDuration))
     __obj.asInstanceOf[TransitionsOptions]
   }
 }

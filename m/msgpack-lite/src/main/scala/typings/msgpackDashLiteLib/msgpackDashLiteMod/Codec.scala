@@ -30,19 +30,10 @@ trait Codec extends js.Object {
 object Codec {
   @scala.inline
   def apply(
-    addExtPacker: js.Function3[
-      scala.Double, 
-      org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any], 
-      js.Function1[js.Any, nodeLib.Buffer | stdLib.Uint8Array], 
-      scala.Unit
-    ],
-    addExtUnpacker: js.Function2[
-      scala.Double, 
-      js.Function1[/* data */ nodeLib.Buffer | stdLib.Uint8Array, js.Any], 
-      scala.Unit
-    ]
+    addExtPacker: (scala.Double, org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any], js.Function1[js.Any, nodeLib.Buffer | stdLib.Uint8Array]) => scala.Unit,
+    addExtUnpacker: (scala.Double, js.Function1[/* data */ nodeLib.Buffer | stdLib.Uint8Array, js.Any]) => scala.Unit
   ): Codec = {
-    val __obj = js.Dynamic.literal(addExtPacker = addExtPacker, addExtUnpacker = addExtUnpacker)
+    val __obj = js.Dynamic.literal(addExtPacker = js.Any.fromFunction3(addExtPacker), addExtUnpacker = js.Any.fromFunction2(addExtUnpacker))
   
     __obj.asInstanceOf[Codec]
   }

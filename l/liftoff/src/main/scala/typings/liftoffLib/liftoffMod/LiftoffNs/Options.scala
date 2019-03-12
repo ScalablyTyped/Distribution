@@ -68,7 +68,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    completions: js.Function1[/* completion */ java.lang.String, _] = null,
+    completions: /* completion */ java.lang.String => _ = null,
     configFiles: org.scalablytyped.runtime.StringDictionary[
       org.scalablytyped.runtime.StringDictionary[java.lang.String | finedLib.finedMod.finedNs.PathSpec]
     ] = null,
@@ -83,7 +83,7 @@ object Options {
     ]) = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (completions != null) __obj.updateDynamic("completions")(completions)
+    if (completions != null) __obj.updateDynamic("completions")(js.Any.fromFunction1(completions))
     if (configFiles != null) __obj.updateDynamic("configFiles")(configFiles)
     if (configName != null) __obj.updateDynamic("configName")(configName)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)

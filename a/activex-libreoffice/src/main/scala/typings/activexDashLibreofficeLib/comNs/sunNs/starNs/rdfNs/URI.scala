@@ -39,11 +39,11 @@ object URI {
     LocalName: java.lang.String,
     Namespace: java.lang.String,
     StringValue: java.lang.String,
-    create: js.Function1[java.lang.String, scala.Unit],
-    createKnown: js.Function1[scala.Double, scala.Unit],
-    createNS: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    create: java.lang.String => scala.Unit,
+    createKnown: scala.Double => scala.Unit,
+    createNS: (java.lang.String, java.lang.String) => scala.Unit
   ): URI = {
-    val __obj = js.Dynamic.literal(LocalName = LocalName, Namespace = Namespace, StringValue = StringValue, create = create, createKnown = createKnown, createNS = createNS)
+    val __obj = js.Dynamic.literal(LocalName = LocalName, Namespace = Namespace, StringValue = StringValue, create = js.Any.fromFunction1(create), createKnown = js.Any.fromFunction1(createKnown), createNS = js.Any.fromFunction2(createNS))
   
     __obj.asInstanceOf[URI]
   }

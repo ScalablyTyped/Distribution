@@ -11,8 +11,8 @@ trait IDataWriterFactory extends js.Object {
 
 object IDataWriterFactory {
   @scala.inline
-  def apply(createDataWriter: js.Function1[IOutputStream, DataWriter]): IDataWriterFactory = {
-    val __obj = js.Dynamic.literal(createDataWriter = createDataWriter)
+  def apply(createDataWriter: IOutputStream => DataWriter): IDataWriterFactory = {
+    val __obj = js.Dynamic.literal(createDataWriter = js.Any.fromFunction1(createDataWriter))
   
     __obj.asInstanceOf[IDataWriterFactory]
   }

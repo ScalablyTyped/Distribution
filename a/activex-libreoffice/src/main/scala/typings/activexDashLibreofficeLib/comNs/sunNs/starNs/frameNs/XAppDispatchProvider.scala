@@ -13,24 +13,16 @@ trait XAppDispatchProvider
 object XAppDispatchProvider {
   @scala.inline
   def apply(
-    SupportedCommandGroups: activexDashInteropLib.SafeArray[scala.Double],
-    acquire: js.Function0[scala.Unit],
-    getConfigurableDispatchInformation: js.Function1[scala.Double, activexDashInteropLib.SafeArray[DispatchInformation]],
-    getSupportedCommandGroups: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    queryDispatch: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
-      java.lang.String, 
-      scala.Double, 
-      XDispatch
-    ],
-    queryDispatches: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DispatchDescriptor], 
-      activexDashInteropLib.SafeArray[XDispatch]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    SupportedCommandGroups: stdLib.SafeArray[scala.Double],
+    acquire: () => scala.Unit,
+    getConfigurableDispatchInformation: scala.Double => stdLib.SafeArray[DispatchInformation],
+    getSupportedCommandGroups: () => stdLib.SafeArray[scala.Double],
+    queryDispatch: (activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, java.lang.String, scala.Double) => XDispatch,
+    queryDispatches: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DispatchDescriptor] => stdLib.SafeArray[XDispatch],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAppDispatchProvider = {
-    val __obj = js.Dynamic.literal(SupportedCommandGroups = SupportedCommandGroups, acquire = acquire, getConfigurableDispatchInformation = getConfigurableDispatchInformation, getSupportedCommandGroups = getSupportedCommandGroups, queryDispatch = queryDispatch, queryDispatches = queryDispatches, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(SupportedCommandGroups = SupportedCommandGroups, acquire = js.Any.fromFunction0(acquire), getConfigurableDispatchInformation = js.Any.fromFunction1(getConfigurableDispatchInformation), getSupportedCommandGroups = js.Any.fromFunction0(getSupportedCommandGroups), queryDispatch = js.Any.fromFunction3(queryDispatch), queryDispatches = js.Any.fromFunction1(queryDispatches), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAppDispatchProvider]
   }

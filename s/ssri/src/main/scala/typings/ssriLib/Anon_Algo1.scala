@@ -15,11 +15,11 @@ trait Anon_Algo1 extends js.Object {
 object Anon_Algo1 {
   @scala.inline
   def apply(
-    pickAlgorithm: js.Function2[/* algo1 */ java.lang.String, /* algo2 */ java.lang.String, java.lang.String] = null,
+    pickAlgorithm: (/* algo1 */ java.lang.String, /* algo2 */ java.lang.String) => java.lang.String = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Algo1 = {
     val __obj = js.Dynamic.literal()
-    if (pickAlgorithm != null) __obj.updateDynamic("pickAlgorithm")(pickAlgorithm)
+    if (pickAlgorithm != null) __obj.updateDynamic("pickAlgorithm")(js.Any.fromFunction2(pickAlgorithm))
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
     __obj.asInstanceOf[Anon_Algo1]
   }

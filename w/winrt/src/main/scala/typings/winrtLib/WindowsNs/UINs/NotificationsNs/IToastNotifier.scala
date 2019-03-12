@@ -17,16 +17,14 @@ trait IToastNotifier extends js.Object {
 object IToastNotifier {
   @scala.inline
   def apply(
-    addToSchedule: js.Function1[ScheduledToastNotification, scala.Unit],
-    getScheduledToastNotifications: js.Function0[
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ScheduledToastNotification]
-    ],
-    hide: js.Function1[ToastNotification, scala.Unit],
-    removeFromSchedule: js.Function1[ScheduledToastNotification, scala.Unit],
+    addToSchedule: ScheduledToastNotification => scala.Unit,
+    getScheduledToastNotifications: () => winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ScheduledToastNotification],
+    hide: ToastNotification => scala.Unit,
+    removeFromSchedule: ScheduledToastNotification => scala.Unit,
     setting: NotificationSetting,
-    show: js.Function1[ToastNotification, scala.Unit]
+    show: ToastNotification => scala.Unit
   ): IToastNotifier = {
-    val __obj = js.Dynamic.literal(addToSchedule = addToSchedule, getScheduledToastNotifications = getScheduledToastNotifications, hide = hide, removeFromSchedule = removeFromSchedule, setting = setting, show = show)
+    val __obj = js.Dynamic.literal(addToSchedule = js.Any.fromFunction1(addToSchedule), getScheduledToastNotifications = js.Any.fromFunction0(getScheduledToastNotifications), hide = js.Any.fromFunction1(hide), removeFromSchedule = js.Any.fromFunction1(removeFromSchedule), setting = setting, show = js.Any.fromFunction1(show))
   
     __obj.asInstanceOf[IToastNotifier]
   }

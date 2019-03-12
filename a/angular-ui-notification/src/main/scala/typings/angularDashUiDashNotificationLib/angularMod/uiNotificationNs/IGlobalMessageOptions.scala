@@ -27,7 +27,7 @@ object IGlobalMessageOptions {
     delay: scala.Int | scala.Double = null,
     horizontalSpacing: scala.Int | scala.Double = null,
     maxCount: scala.Int | scala.Double = null,
-    onClose: js.Function1[/* element */ js.Any, _] = null,
+    onClose: /* element */ js.Any => _ = null,
     positionX: XPosition = null,
     positionY: YPosition = null,
     replaceMessage: js.UndefOr[scala.Boolean] = js.undefined,
@@ -41,7 +41,7 @@ object IGlobalMessageOptions {
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (horizontalSpacing != null) __obj.updateDynamic("horizontalSpacing")(horizontalSpacing.asInstanceOf[js.Any])
     if (maxCount != null) __obj.updateDynamic("maxCount")(maxCount.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (positionX != null) __obj.updateDynamic("positionX")(positionX)
     if (positionY != null) __obj.updateDynamic("positionY")(positionY)
     if (!js.isUndefined(replaceMessage)) __obj.updateDynamic("replaceMessage")(replaceMessage)

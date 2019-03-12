@@ -44,7 +44,7 @@ object IToastProps {
     className: java.lang.String = null,
     icon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
     intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
-    onDismiss: js.Function1[/* didTimeoutExpire */ scala.Boolean, scala.Unit] = null,
+    onDismiss: /* didTimeoutExpire */ scala.Boolean => scala.Unit = null,
     timeout: scala.Int | scala.Double = null
   ): IToastProps = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
@@ -52,7 +52,7 @@ object IToastProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (intent != null) __obj.updateDynamic("intent")(intent)
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss)
+    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction1(onDismiss))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToastProps]
   }

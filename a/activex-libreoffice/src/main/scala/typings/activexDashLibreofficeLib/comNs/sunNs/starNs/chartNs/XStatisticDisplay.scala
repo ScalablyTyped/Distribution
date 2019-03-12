@@ -52,14 +52,14 @@ object XStatisticDisplay {
     DownBar: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
     MinMaxLine: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
     UpBar: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
-    acquire: js.Function0[scala.Unit],
-    getDownBar: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    getMinMaxLine: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    getUpBar: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDownBar: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    getMinMaxLine: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    getUpBar: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XStatisticDisplay = {
-    val __obj = js.Dynamic.literal(DownBar = DownBar, MinMaxLine = MinMaxLine, UpBar = UpBar, acquire = acquire, getDownBar = getDownBar, getMinMaxLine = getMinMaxLine, getUpBar = getUpBar, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(DownBar = DownBar, MinMaxLine = MinMaxLine, UpBar = UpBar, acquire = js.Any.fromFunction0(acquire), getDownBar = js.Any.fromFunction0(getDownBar), getMinMaxLine = js.Any.fromFunction0(getMinMaxLine), getUpBar = js.Any.fromFunction0(getUpBar), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XStatisticDisplay]
   }

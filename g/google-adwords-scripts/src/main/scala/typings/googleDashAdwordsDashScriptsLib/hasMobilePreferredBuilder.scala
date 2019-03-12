@@ -11,8 +11,8 @@ trait hasMobilePreferredBuilder[B] extends js.Object {
 
 object hasMobilePreferredBuilder {
   @scala.inline
-  def apply[B](withMobilePreferred: js.Function0[B]): hasMobilePreferredBuilder[B] = {
-    val __obj = js.Dynamic.literal(withMobilePreferred = withMobilePreferred)
+  def apply[B](withMobilePreferred: () => B): hasMobilePreferredBuilder[B] = {
+    val __obj = js.Dynamic.literal(withMobilePreferred = js.Any.fromFunction0(withMobilePreferred))
   
     __obj.asInstanceOf[hasMobilePreferredBuilder[B]]
   }

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react/dist/commonjs/modules/Rating/Rating", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: semanticDashUiDashReactLib.distCommonjsModulesRatingRatingMod.RatingComponent = js.native
+  val default: RatingComponent = js.native
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("VBIDE.Component")
 @js.native
 class Component protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashVbideLib.VBIDENs.Application = js.native
   var IsDirty: scala.Boolean = js.native
   var Name: java.lang.String = js.native
   @JSName("Parent")

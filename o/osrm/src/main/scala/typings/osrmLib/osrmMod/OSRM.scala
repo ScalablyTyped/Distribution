@@ -19,7 +19,7 @@ trait OSRM extends js.Object {
   def `match`(
     options: osrmLib.osrmMod.OSRMNs.MatchOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* results */ osrmLib.osrmMod.OSRMNs.MatchResults, 
       scala.Unit
     ]
@@ -30,7 +30,7 @@ trait OSRM extends js.Object {
   def nearest(
     options: osrmLib.osrmMod.OSRMNs.NearestOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* results */ osrmLib.osrmMod.OSRMNs.NearestResults, 
       scala.Unit
     ]
@@ -41,7 +41,7 @@ trait OSRM extends js.Object {
   def route(
     options: osrmLib.osrmMod.OSRMNs.RouteOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* results */ osrmLib.osrmMod.OSRMNs.RouteResults, 
       scala.Unit
     ]
@@ -52,7 +52,7 @@ trait OSRM extends js.Object {
   def table(
     options: osrmLib.osrmMod.OSRMNs.TableOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* results */ osrmLib.osrmMod.OSRMNs.TableResults, 
       scala.Unit
     ]
@@ -62,22 +62,18 @@ trait OSRM extends js.Object {
     */
   def tile(
     options: osrmLib.osrmMod.OSRMNs.TileOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* results */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* results */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def tile(
     options: osrmLib.osrmMod.OSRMNs.Tile,
-    callback: js.Function2[/* err */ nodeLib.Error, /* results */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* results */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Compute the shortest trip between given coordinates
     */
   def trip(
     options: osrmLib.osrmMod.OSRMNs.TripOptions,
-    callback: js.Function2[
-      /* err */ nodeLib.Error, 
-      /* results */ osrmLib.osrmMod.OSRMNs.TripResults, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* err */ stdLib.Error, /* results */ osrmLib.osrmMod.OSRMNs.TripResults, scala.Unit]
   ): scala.Unit = js.native
 }
 

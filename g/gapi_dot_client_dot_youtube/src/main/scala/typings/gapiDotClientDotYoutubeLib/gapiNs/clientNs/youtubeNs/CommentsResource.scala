@@ -26,32 +26,14 @@ trait CommentsResource extends js.Object {
 object CommentsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Comment]
-    ],
-    list: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyMaxResults, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CommentListResponse]
-    ],
-    markAsSpam: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    setModerationStatus: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltBanAuthor, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    update: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Comment]
-    ]
+    delete: gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    insert: gapiDotClientDotYoutubeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Comment],
+    list: gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyMaxResults => gapiDotClientLib.gapiNs.clientNs.Request[CommentListResponse],
+    markAsSpam: gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    setModerationStatus: gapiDotClientDotYoutubeLib.Anon_AltBanAuthor => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    update: gapiDotClientDotYoutubeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Comment]
   ): CommentsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list, markAsSpam = markAsSpam, setModerationStatus = setModerationStatus, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), markAsSpam = js.Any.fromFunction1(markAsSpam), setModerationStatus = js.Any.fromFunction1(setModerationStatus), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[CommentsResource]
   }

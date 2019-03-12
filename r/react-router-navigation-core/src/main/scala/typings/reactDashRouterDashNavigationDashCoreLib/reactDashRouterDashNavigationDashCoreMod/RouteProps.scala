@@ -42,10 +42,7 @@ object RouteProps {
     ] = null,
     exact: js.UndefOr[scala.Boolean] = js.undefined,
     path: java.lang.String = null,
-    render: js.Function1[
-      /* props */ reactDashRouterLib.reactDashRouterMod.RouterProps, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    render: /* props */ reactDashRouterLib.reactDashRouterMod.RouterProps => reactLib.reactMod.ReactNs.ReactNode = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined
   ): RouteProps = {
     val __obj = js.Dynamic.literal()
@@ -53,7 +50,7 @@ object RouteProps {
     if (component != null) __obj.updateDynamic("component")(component)
     if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
     if (path != null) __obj.updateDynamic("path")(path)
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
     __obj.asInstanceOf[RouteProps]
   }

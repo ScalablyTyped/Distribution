@@ -12,8 +12,8 @@ trait ISessionChannel extends js.Object {
 
 object ISessionChannel {
   @scala.inline
-  def apply(onSession: js.Function1[Session, js.Any], sendSession: js.Function1[Session, scala.Unit]): ISessionChannel = {
-    val __obj = js.Dynamic.literal(onSession = onSession, sendSession = sendSession)
+  def apply(onSession: Session => js.Any, sendSession: Session => scala.Unit): ISessionChannel = {
+    val __obj = js.Dynamic.literal(onSession = js.Any.fromFunction1(onSession), sendSession = js.Any.fromFunction1(sendSession))
   
     __obj.asInstanceOf[ISessionChannel]
   }

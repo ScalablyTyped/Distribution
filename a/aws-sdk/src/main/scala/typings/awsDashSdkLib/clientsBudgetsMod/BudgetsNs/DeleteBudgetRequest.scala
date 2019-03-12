@@ -9,11 +9,11 @@ trait DeleteBudgetRequest extends js.Object {
   /**
     * The accountId that is associated with the budget that you want to delete.
     */
-  var AccountId: AccountId
+  var AccountId: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.AccountId
   /**
     * The name of the budget that you want to delete.
     */
-  var BudgetName: BudgetName
+  var BudgetName: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.BudgetName
 }
 
 object DeleteBudgetRequest {

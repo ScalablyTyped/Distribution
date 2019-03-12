@@ -17,10 +17,10 @@ object TabsRendererProps {
   def apply(
     loadedTabs: js.Array[java.lang.String],
     navigationState: NavigationState[reactDashRouterDashNavigationDashCoreLib.Anon_TestID],
-    onIndexChange: js.Function1[scala.Double, scala.Unit],
+    onIndexChange: scala.Double => scala.Unit,
     tabs: js.Array[Tab]
   ): TabsRendererProps = {
-    val __obj = js.Dynamic.literal(loadedTabs = loadedTabs, navigationState = navigationState, onIndexChange = onIndexChange, tabs = tabs)
+    val __obj = js.Dynamic.literal(loadedTabs = loadedTabs, navigationState = navigationState, onIndexChange = js.Any.fromFunction1(onIndexChange), tabs = tabs)
   
     __obj.asInstanceOf[TabsRendererProps]
   }

@@ -11,8 +11,8 @@ trait IParentOnMap extends js.Object {
 
 object IParentOnMap {
   @scala.inline
-  def apply(getMap: js.Function0[Map]): IParentOnMap = {
-    val __obj = js.Dynamic.literal(getMap = getMap)
+  def apply(getMap: () => Map): IParentOnMap = {
+    val __obj = js.Dynamic.literal(getMap = js.Any.fromFunction0(getMap))
   
     __obj.asInstanceOf[IParentOnMap]
   }

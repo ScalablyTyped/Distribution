@@ -11,8 +11,8 @@ trait HostCancellationToken extends js.Object {
 
 object HostCancellationToken {
   @scala.inline
-  def apply(isCancellationRequested: js.Function0[scala.Boolean]): HostCancellationToken = {
-    val __obj = js.Dynamic.literal(isCancellationRequested = isCancellationRequested)
+  def apply(isCancellationRequested: () => scala.Boolean): HostCancellationToken = {
+    val __obj = js.Dynamic.literal(isCancellationRequested = js.Any.fromFunction0(isCancellationRequested))
   
     __obj.asInstanceOf[HostCancellationToken]
   }

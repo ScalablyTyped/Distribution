@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Vector[TItem] extends js.Object {
   /** Returns/Sets the Vector of Bytes as an array of bytes */
-  var BinaryData: activexDashInteropLib.SafeArray[_] = js.native
+  var BinaryData: stdLib.SafeArray[_] = js.native
   /** Returns the number of members in the vector */
   val Count: scala.Double = js.native
   /** Returns/Sets the Vector of Integers from a Date */
-  var Date: activexDashInteropLib.VarDate = js.native
+  var Date: stdLib.VarDate = js.native
   /** Returns the specified item in the vector by position */
   def apply(Index: scala.Double): TItem = js.native
   /**
@@ -34,9 +34,9 @@ trait Vector[TItem] extends js.Object {
     * @param number [Width=0]
     * @param number [Height=0]
     */
-  def ImageFile(): ImageFile = js.native
-  def ImageFile(Width: scala.Double): ImageFile = js.native
-  def ImageFile(Width: scala.Double, Height: scala.Double): ImageFile = js.native
+  def ImageFile(): activexDashWiaLib.WIANs.ImageFile = js.native
+  def ImageFile(Width: scala.Double): activexDashWiaLib.WIANs.ImageFile = js.native
+  def ImageFile(Width: scala.Double, Height: scala.Double): activexDashWiaLib.WIANs.ImageFile = js.native
   /** Returns the specified item in the vector by position */
   def Item(Index: scala.Double): TItem = js.native
   /**

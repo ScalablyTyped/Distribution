@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object transitionMod {
-  type EndHandler = js.Function2[/* node */ reactLib.HTMLElement, /* done */ js.Function0[scala.Unit], scala.Unit]
-  type EnterHandler = js.Function2[/* node */ reactLib.HTMLElement, /* isAppearing */ scala.Boolean, scala.Unit]
-  type ExitHandler = js.Function1[/* node */ reactLib.HTMLElement, scala.Unit]
+  type EndHandler = js.Function2[/* node */ stdLib.HTMLElement, /* done */ js.Function0[scala.Unit], scala.Unit]
+  type EnterHandler = js.Function2[/* node */ stdLib.HTMLElement, /* isAppearing */ scala.Boolean, scala.Unit]
+  type ExitHandler = js.Function1[/* node */ stdLib.HTMLElement, scala.Unit]
   /**
     * The Transition component lets you describe a transition from one component
     * state to another _over time_ with a simple declarative API. Most commonly

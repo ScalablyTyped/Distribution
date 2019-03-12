@@ -12,8 +12,8 @@ trait XAnimationNodeSupplier extends js.Object {
 
 object XAnimationNodeSupplier {
   @scala.inline
-  def apply(AnimationNode: XAnimationNode, getAnimationNode: js.Function0[XAnimationNode]): XAnimationNodeSupplier = {
-    val __obj = js.Dynamic.literal(AnimationNode = AnimationNode, getAnimationNode = getAnimationNode)
+  def apply(AnimationNode: XAnimationNode, getAnimationNode: () => XAnimationNode): XAnimationNodeSupplier = {
+    val __obj = js.Dynamic.literal(AnimationNode = AnimationNode, getAnimationNode = js.Any.fromFunction0(getAnimationNode))
   
     __obj.asInstanceOf[XAnimationNodeSupplier]
   }

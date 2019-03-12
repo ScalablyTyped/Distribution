@@ -11,8 +11,8 @@ trait ICoreWindowResizeManager extends js.Object {
 
 object ICoreWindowResizeManager {
   @scala.inline
-  def apply(notifyLayoutCompleted: js.Function0[scala.Unit]): ICoreWindowResizeManager = {
-    val __obj = js.Dynamic.literal(notifyLayoutCompleted = notifyLayoutCompleted)
+  def apply(notifyLayoutCompleted: () => scala.Unit): ICoreWindowResizeManager = {
+    val __obj = js.Dynamic.literal(notifyLayoutCompleted = js.Any.fromFunction0(notifyLayoutCompleted))
   
     __obj.asInstanceOf[ICoreWindowResizeManager]
   }

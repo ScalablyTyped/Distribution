@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/Slide/Slide", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.slideSlideMod.SlideProps] = js.native
+  val default: reactLib.reactMod.ReactNs.ComponentType[SlideProps] = js.native
 }
 

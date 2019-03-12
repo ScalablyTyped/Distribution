@@ -42,28 +42,24 @@ object ISortable {
   def apply(
     alias: extjsLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     defaultSortDirection: java.lang.String = null,
     extend: java.lang.String = null,
-    generateComparator: js.Function0[scala.Unit] = null,
-    getFirstSorter: js.Function0[ISorter] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    generateComparator: () => scala.Unit = null,
+    getFirstSorter: () => ISorter = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], ISortable] = null,
-    initSortable: js.Function0[scala.Unit] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => ISortable = null,
+    initSortable: () => scala.Unit = null,
     isSortable: js.UndefOr[scala.Boolean] = js.undefined,
     mixins: js.Any = null,
     requires: extjsLib.ExtNs.Array = null,
     self: extjsLib.ExtNs.IClass = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
-    sort: js.Function2[
-      /* sorters */ js.UndefOr[js.Any], 
-      /* direction */ js.UndefOr[java.lang.String], 
-      extjsLib.ExtNs.Array
-    ] = null,
+    sort: (/* sorters */ js.UndefOr[js.Any], /* direction */ js.UndefOr[java.lang.String]) => extjsLib.ExtNs.Array = null,
     sortRoot: java.lang.String = null,
     sorters: js.Any = null,
     statics: js.Any = null,
@@ -72,24 +68,24 @@ object ISortable {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
     if (defaultSortDirection != null) __obj.updateDynamic("defaultSortDirection")(defaultSortDirection)
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (generateComparator != null) __obj.updateDynamic("generateComparator")(generateComparator)
-    if (getFirstSorter != null) __obj.updateDynamic("getFirstSorter")(getFirstSorter)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (generateComparator != null) __obj.updateDynamic("generateComparator")(js.Any.fromFunction0(generateComparator))
+    if (getFirstSorter != null) __obj.updateDynamic("getFirstSorter")(js.Any.fromFunction0(getFirstSorter))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
-    if (initSortable != null) __obj.updateDynamic("initSortable")(initSortable)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (initSortable != null) __obj.updateDynamic("initSortable")(js.Any.fromFunction0(initSortable))
     if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable)
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (requires != null) __obj.updateDynamic("requires")(requires)
     if (self != null) __obj.updateDynamic("self")(self)
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
     if (sortRoot != null) __obj.updateDynamic("sortRoot")(sortRoot)
     if (sorters != null) __obj.updateDynamic("sorters")(sorters)
     if (statics != null) __obj.updateDynamic("statics")(statics)

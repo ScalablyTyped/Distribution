@@ -14,8 +14,8 @@ trait Task extends js.Object {
 
 object Task {
   @scala.inline
-  def apply(call: js.Function0[scala.Unit]): Task = {
-    val __obj = js.Dynamic.literal(call = call)
+  def apply(call: () => scala.Unit): Task = {
+    val __obj = js.Dynamic.literal(call = js.Any.fromFunction0(call))
   
     __obj.asInstanceOf[Task]
   }

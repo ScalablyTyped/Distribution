@@ -51,18 +51,18 @@ trait IGlideApi extends js.Object {
 object IGlideApi {
   @scala.inline
   def apply(
-    arrows: js.Function1[java.lang.String, scala.Unit],
-    current: js.Function0[scala.Double],
-    destroy: js.Function0[scala.Unit],
-    jump: js.Function2[scala.Double, js.Function, scala.Unit],
-    nav: js.Function1[java.lang.String, scala.Unit],
-    next: js.Function1[js.Function, scala.Unit],
-    pause: js.Function0[scala.Unit],
-    play: js.Function0[scala.Unit],
-    prev: js.Function1[js.Function, scala.Unit],
-    reinit: js.Function0[scala.Unit]
+    arrows: java.lang.String => scala.Unit,
+    current: () => scala.Double,
+    destroy: () => scala.Unit,
+    jump: (scala.Double, js.Function) => scala.Unit,
+    nav: java.lang.String => scala.Unit,
+    next: js.Function => scala.Unit,
+    pause: () => scala.Unit,
+    play: () => scala.Unit,
+    prev: js.Function => scala.Unit,
+    reinit: () => scala.Unit
   ): IGlideApi = {
-    val __obj = js.Dynamic.literal(arrows = arrows, current = current, destroy = destroy, jump = jump, nav = nav, next = next, pause = pause, play = play, prev = prev, reinit = reinit)
+    val __obj = js.Dynamic.literal(arrows = js.Any.fromFunction1(arrows), current = js.Any.fromFunction0(current), destroy = js.Any.fromFunction0(destroy), jump = js.Any.fromFunction2(jump), nav = js.Any.fromFunction1(nav), next = js.Any.fromFunction1(next), pause = js.Any.fromFunction0(pause), play = js.Any.fromFunction0(play), prev = js.Any.fromFunction1(prev), reinit = js.Any.fromFunction0(reinit))
   
     __obj.asInstanceOf[IGlideApi]
   }

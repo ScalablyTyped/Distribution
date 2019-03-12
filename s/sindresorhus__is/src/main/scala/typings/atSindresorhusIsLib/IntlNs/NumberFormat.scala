@@ -12,11 +12,8 @@ trait NumberFormat extends js.Object {
 
 object NumberFormat {
   @scala.inline
-  def apply(
-    format: js.Function1[scala.Double, java.lang.String],
-    resolvedOptions: js.Function0[ResolvedNumberFormatOptions]
-  ): NumberFormat = {
-    val __obj = js.Dynamic.literal(format = format, resolvedOptions = resolvedOptions)
+  def apply(format: scala.Double => java.lang.String, resolvedOptions: () => ResolvedNumberFormatOptions): NumberFormat = {
+    val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format), resolvedOptions = js.Any.fromFunction0(resolvedOptions))
   
     __obj.asInstanceOf[NumberFormat]
   }

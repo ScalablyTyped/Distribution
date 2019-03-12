@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.MediaFormat")
 @js.native
 class MediaFormat protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   val AudioCompressionType: java.lang.String = js.native
   val AudioSamplingRate: scala.Double = js.native
   var EndPoint: scala.Double = js.native
@@ -17,7 +17,7 @@ class MediaFormat protected () extends js.Object {
   val IsEmbedded: scala.Boolean = js.native
   val IsLinked: scala.Boolean = js.native
   val Length: scala.Double = js.native
-  val MediaBookmarks: MediaBookmarks = js.native
+  val MediaBookmarks: activexDashPowerpointLib.PowerPointNs.MediaBookmarks = js.native
   var Muted: scala.Boolean = js.native
   val Parent: js.Any = js.native
   var `PowerPoint.MediaFormat_typekey`: MediaFormat = js.native

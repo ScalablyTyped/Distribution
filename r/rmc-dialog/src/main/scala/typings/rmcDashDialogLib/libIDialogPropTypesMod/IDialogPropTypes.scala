@@ -35,7 +35,7 @@ trait IDialogPropTypes extends js.Object {
 object IDialogPropTypes {
   @scala.inline
   def apply(
-    afterClose: js.Function0[scala.Unit] = null,
+    afterClose: () => scala.Unit = null,
     animation: js.Any = null,
     bodyStyle: js.Object = null,
     children: js.Any = null,
@@ -48,8 +48,8 @@ object IDialogPropTypes {
     maskProps: js.Any = null,
     maskStyle: js.Object = null,
     maskTransitionName: java.lang.String = null,
-    onAnimateLeave: js.Function0[scala.Unit] = null,
-    onClose: js.Function1[/* e */ js.Any, scala.Unit] = null,
+    onAnimateLeave: () => scala.Unit = null,
+    onClose: /* e */ js.Any => scala.Unit = null,
     prefixCls: java.lang.String = null,
     style: js.Object = null,
     title: reactLib.reactMod.ReactNs.ReactNode = null,
@@ -61,7 +61,7 @@ object IDialogPropTypes {
     zIndex: scala.Int | scala.Double = null
   ): IDialogPropTypes = {
     val __obj = js.Dynamic.literal()
-    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose)
+    if (afterClose != null) __obj.updateDynamic("afterClose")(js.Any.fromFunction0(afterClose))
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle)
     if (children != null) __obj.updateDynamic("children")(children)
@@ -74,8 +74,8 @@ object IDialogPropTypes {
     if (maskProps != null) __obj.updateDynamic("maskProps")(maskProps)
     if (maskStyle != null) __obj.updateDynamic("maskStyle")(maskStyle)
     if (maskTransitionName != null) __obj.updateDynamic("maskTransitionName")(maskTransitionName)
-    if (onAnimateLeave != null) __obj.updateDynamic("onAnimateLeave")(onAnimateLeave)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onAnimateLeave != null) __obj.updateDynamic("onAnimateLeave")(js.Any.fromFunction0(onAnimateLeave))
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (style != null) __obj.updateDynamic("style")(style)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

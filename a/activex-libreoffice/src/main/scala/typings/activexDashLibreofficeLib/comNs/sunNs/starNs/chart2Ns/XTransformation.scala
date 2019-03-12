@@ -25,7 +25,7 @@ trait XTransformation
     * @returns the transformed data tuple. The length of this sequence is equal to the dimension of the output coordinate system.
     * @throws com::sun::star::lang::IllegalArgumentException if the dimension of the input vector is not equal to the dimension given in {@link getSourceDimens
     */
-  def transform(aValues: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]): activexDashInteropLib.SafeArray[scala.Double]
+  def transform(aValues: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]): stdLib.SafeArray[scala.Double]
 }
 
 object XTransformation {
@@ -33,17 +33,14 @@ object XTransformation {
   def apply(
     SourceDimension: scala.Double,
     TargetDimension: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getSourceDimension: js.Function0[scala.Double],
-    getTargetDimension: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    transform: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      activexDashInteropLib.SafeArray[scala.Double]
-    ]
+    acquire: () => scala.Unit,
+    getSourceDimension: () => scala.Double,
+    getTargetDimension: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    transform: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double] => stdLib.SafeArray[scala.Double]
   ): XTransformation = {
-    val __obj = js.Dynamic.literal(SourceDimension = SourceDimension, TargetDimension = TargetDimension, acquire = acquire, getSourceDimension = getSourceDimension, getTargetDimension = getTargetDimension, queryInterface = queryInterface, release = release, transform = transform)
+    val __obj = js.Dynamic.literal(SourceDimension = SourceDimension, TargetDimension = TargetDimension, acquire = js.Any.fromFunction0(acquire), getSourceDimension = js.Any.fromFunction0(getSourceDimension), getTargetDimension = js.Any.fromFunction0(getTargetDimension), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), transform = js.Any.fromFunction1(transform))
   
     __obj.asInstanceOf[XTransformation]
   }

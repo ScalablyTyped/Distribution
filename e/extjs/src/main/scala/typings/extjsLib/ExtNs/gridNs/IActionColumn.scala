@@ -84,26 +84,13 @@ object IActionColumn {
   def apply(
     IColumn: extjsLib.ExtNs.gridNs.columnNs.IColumn = null,
     altText: java.lang.String = null,
-    cascade: js.Function2[
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      extjsLib.ExtNs.IContainer
-    ] = null,
-    defaultRenderer: js.Function7[
-      /* v */ js.UndefOr[js.Any], 
-      /* meta */ js.UndefOr[js.Any], 
-      /* record */ js.UndefOr[js.Any], 
-      /* rowIdx */ js.UndefOr[js.Any], 
-      /* colIdx */ js.UndefOr[js.Any], 
-      /* store */ js.UndefOr[js.Any], 
-      /* view */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    disableAction: js.Function2[/* index */ js.UndefOr[js.Any], /* silent */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    cascade: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => extjsLib.ExtNs.IContainer = null,
+    defaultRenderer: (/* v */ js.UndefOr[js.Any], /* meta */ js.UndefOr[js.Any], /* record */ js.UndefOr[js.Any], /* rowIdx */ js.UndefOr[js.Any], /* colIdx */ js.UndefOr[js.Any], /* store */ js.UndefOr[js.Any], /* view */ js.UndefOr[js.Any]) => scala.Unit = null,
+    disableAction: (/* index */ js.UndefOr[js.Any], /* silent */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    enableAction: js.Function2[/* index */ js.UndefOr[js.Any], /* silent */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    enableAction: (/* index */ js.UndefOr[js.Any], /* silent */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
     getClass: js.Any = null,
-    getRefItems: js.Function0[scala.Unit] = null,
+    getRefItems: () => scala.Unit = null,
     getTip: js.Any = null,
     handler: js.Any = null,
     icon: java.lang.String = null,
@@ -118,13 +105,13 @@ object IActionColumn {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IColumn)
     if (altText != null) __obj.updateDynamic("altText")(altText)
-    if (cascade != null) __obj.updateDynamic("cascade")(cascade)
-    if (defaultRenderer != null) __obj.updateDynamic("defaultRenderer")(defaultRenderer)
-    if (disableAction != null) __obj.updateDynamic("disableAction")(disableAction)
+    if (cascade != null) __obj.updateDynamic("cascade")(js.Any.fromFunction2(cascade))
+    if (defaultRenderer != null) __obj.updateDynamic("defaultRenderer")(js.Any.fromFunction7(defaultRenderer))
+    if (disableAction != null) __obj.updateDynamic("disableAction")(js.Any.fromFunction2(disableAction))
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (enableAction != null) __obj.updateDynamic("enableAction")(enableAction)
+    if (enableAction != null) __obj.updateDynamic("enableAction")(js.Any.fromFunction2(enableAction))
     if (getClass != null) __obj.updateDynamic("getClass")(getClass)
-    if (getRefItems != null) __obj.updateDynamic("getRefItems")(getRefItems)
+    if (getRefItems != null) __obj.updateDynamic("getRefItems")(js.Any.fromFunction0(getRefItems))
     if (getTip != null) __obj.updateDynamic("getTip")(getTip)
     if (handler != null) __obj.updateDynamic("handler")(handler)
     if (icon != null) __obj.updateDynamic("icon")(icon)

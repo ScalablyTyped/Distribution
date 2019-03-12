@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.KeyBinding")
 @js.native
 class KeyBinding protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Command: java.lang.String = js.native
   val CommandParameter: java.lang.String = js.native
   val Context: js.Any = js.native

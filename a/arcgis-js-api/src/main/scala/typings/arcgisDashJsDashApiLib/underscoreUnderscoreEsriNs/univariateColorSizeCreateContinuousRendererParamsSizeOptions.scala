@@ -25,12 +25,12 @@ object univariateColorSizeCreateContinuousRendererParamsSizeOptions {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     legendOptions: univariateColorSizeCreateContinuousRendererParamsSizeOptionsLegendOptions = null,
     sizeScheme: SizeScheme = null
   ): univariateColorSizeCreateContinuousRendererParamsSizeOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
     if (sizeScheme != null) __obj.updateDynamic("sizeScheme")(sizeScheme)
     __obj.asInstanceOf[univariateColorSizeCreateContinuousRendererParamsSizeOptions]

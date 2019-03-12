@@ -13,10 +13,10 @@ trait Anon_DomPUpdate[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Sc
 object Anon_DomPUpdate {
   @scala.inline
   def apply[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
-    update: js.Function1[prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], scala.Boolean],
+    update: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S] => scala.Boolean,
     dom: stdLib.DocumentFragment = null
   ): Anon_DomPUpdate[S] = {
-    val __obj = js.Dynamic.literal(update = update)
+    val __obj = js.Dynamic.literal(update = js.Any.fromFunction1(update))
     if (dom != null) __obj.updateDynamic("dom")(dom)
     __obj.asInstanceOf[Anon_DomPUpdate[S]]
   }

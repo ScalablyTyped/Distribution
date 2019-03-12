@@ -15,12 +15,12 @@ trait Menu extends js.Object {
 object Menu {
   @scala.inline
   def apply(
-    addItem: js.Function2[java.lang.String, java.lang.String, Menu],
-    addSeparator: js.Function0[Menu],
-    addSubMenu: js.Function1[Menu, Menu],
-    addToUi: js.Function0[scala.Unit]
+    addItem: (java.lang.String, java.lang.String) => Menu,
+    addSeparator: () => Menu,
+    addSubMenu: Menu => Menu,
+    addToUi: () => scala.Unit
   ): Menu = {
-    val __obj = js.Dynamic.literal(addItem = addItem, addSeparator = addSeparator, addSubMenu = addSubMenu, addToUi = addToUi)
+    val __obj = js.Dynamic.literal(addItem = js.Any.fromFunction2(addItem), addSeparator = js.Any.fromFunction0(addSeparator), addSubMenu = js.Any.fromFunction1(addSubMenu), addToUi = js.Any.fromFunction0(addToUi))
   
     __obj.asInstanceOf[Menu]
   }

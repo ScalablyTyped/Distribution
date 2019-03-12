@@ -38,12 +38,9 @@ trait ReadsResource extends js.Object {
 object ReadsResource {
   @scala.inline
   def apply(
-    search: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SearchReadsResponse]
-    ]
+    search: gapiDotClientDotGenomicsLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[SearchReadsResponse]
   ): ReadsResource = {
-    val __obj = js.Dynamic.literal(search = search)
+    val __obj = js.Dynamic.literal(search = js.Any.fromFunction1(search))
   
     __obj.asInstanceOf[ReadsResource]
   }

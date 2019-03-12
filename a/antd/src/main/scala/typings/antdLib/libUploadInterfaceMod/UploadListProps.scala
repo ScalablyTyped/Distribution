@@ -23,8 +23,8 @@ object UploadListProps {
     locale: UploadLocale,
     items: js.Array[UploadFile] = null,
     listType: UploadListType = null,
-    onPreview: js.Function1[/* file */ UploadFile, scala.Unit] = null,
-    onRemove: js.Function1[/* file */ UploadFile, scala.Unit | scala.Boolean] = null,
+    onPreview: /* file */ UploadFile => scala.Unit = null,
+    onRemove: /* file */ UploadFile => scala.Unit | scala.Boolean = null,
     prefixCls: java.lang.String = null,
     progressAttr: js.Object = null,
     showPreviewIcon: js.UndefOr[scala.Boolean] = js.undefined,
@@ -33,8 +33,8 @@ object UploadListProps {
     val __obj = js.Dynamic.literal(locale = locale)
     if (items != null) __obj.updateDynamic("items")(items)
     if (listType != null) __obj.updateDynamic("listType")(listType)
-    if (onPreview != null) __obj.updateDynamic("onPreview")(onPreview)
-    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
+    if (onPreview != null) __obj.updateDynamic("onPreview")(js.Any.fromFunction1(onPreview))
+    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (progressAttr != null) __obj.updateDynamic("progressAttr")(progressAttr)
     if (!js.isUndefined(showPreviewIcon)) __obj.updateDynamic("showPreviewIcon")(showPreviewIcon)

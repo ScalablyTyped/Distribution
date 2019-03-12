@@ -49,13 +49,13 @@ object DurandalActivatorSettings {
   @scala.inline
   def apply(
     affirmations: js.Array[java.lang.String],
-    afterDeactivate: js.Function3[js.Any, scala.Boolean, js.Function, scala.Unit],
-    areSameItem: js.Function4[js.Any, js.Any, js.Any, js.Any, scala.Boolean],
-    beforeActivate: js.Function1[js.Any, js.Any],
+    afterDeactivate: (js.Any, scala.Boolean, js.Function) => scala.Unit,
+    areSameItem: (js.Any, js.Any, js.Any, js.Any) => scala.Boolean,
+    beforeActivate: js.Any => js.Any,
     closeOnDeactivate: scala.Boolean,
-    interpretResponse: js.Function1[js.Any, scala.Boolean]
+    interpretResponse: js.Any => scala.Boolean
   ): DurandalActivatorSettings = {
-    val __obj = js.Dynamic.literal(affirmations = affirmations, afterDeactivate = afterDeactivate, areSameItem = areSameItem, beforeActivate = beforeActivate, closeOnDeactivate = closeOnDeactivate, interpretResponse = interpretResponse)
+    val __obj = js.Dynamic.literal(affirmations = affirmations, afterDeactivate = js.Any.fromFunction3(afterDeactivate), areSameItem = js.Any.fromFunction4(areSameItem), beforeActivate = js.Any.fromFunction1(beforeActivate), closeOnDeactivate = closeOnDeactivate, interpretResponse = js.Any.fromFunction1(interpretResponse))
   
     __obj.asInstanceOf[DurandalActivatorSettings]
   }

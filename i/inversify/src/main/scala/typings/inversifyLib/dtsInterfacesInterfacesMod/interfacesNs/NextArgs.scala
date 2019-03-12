@@ -19,14 +19,14 @@ object NextArgs {
   @scala.inline
   def apply(
     avoidConstraints: scala.Boolean,
-    contextInterceptor: js.Function1[Context, Context],
+    contextInterceptor: Context => Context,
     isMultiInject: scala.Boolean,
     serviceIdentifier: ServiceIdentifier[_],
     targetType: TargetType,
     key: java.lang.String | scala.Double | js.Symbol = null,
     value: js.Any = null
   ): NextArgs = {
-    val __obj = js.Dynamic.literal(avoidConstraints = avoidConstraints, contextInterceptor = contextInterceptor, isMultiInject = isMultiInject, serviceIdentifier = serviceIdentifier.asInstanceOf[js.Any], targetType = targetType)
+    val __obj = js.Dynamic.literal(avoidConstraints = avoidConstraints, contextInterceptor = js.Any.fromFunction1(contextInterceptor), isMultiInject = isMultiInject, serviceIdentifier = serviceIdentifier.asInstanceOf[js.Any], targetType = targetType)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[NextArgs]

@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.Reminder")
 @js.native
 class Reminder protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Caption: java.lang.String = js.native
   val Class: OlObjectClass = js.native
   val IsVisible: scala.Boolean = js.native
   val Item: js.Any = js.native
-  val NextReminderDate: activexDashInteropLib.VarDate = js.native
-  val OriginalReminderDate: activexDashInteropLib.VarDate = js.native
+  val NextReminderDate: stdLib.VarDate = js.native
+  val OriginalReminderDate: stdLib.VarDate = js.native
   var `Outlook.Reminder_typekey`: Reminder = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native

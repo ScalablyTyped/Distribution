@@ -25,12 +25,12 @@ trait XDriverAccess
 object XDriverAccess {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getDriverByURL: js.Function1[java.lang.String, XDriver],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDriverByURL: java.lang.String => XDriver,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDriverAccess = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getDriverByURL = getDriverByURL, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDriverByURL = js.Any.fromFunction1(getDriverByURL), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDriverAccess]
   }

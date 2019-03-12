@@ -13,13 +13,13 @@ trait ToolBarClickEvent extends ToolBarEvent {
 object ToolBarClickEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: ToolBar,
     id: java.lang.String = null,
     target: kendoDashUiLib.JQuery = null
   ): ToolBarClickEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (id != null) __obj.updateDynamic("id")(id)
     if (target != null) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[ToolBarClickEvent]

@@ -27,16 +27,13 @@ trait ChoosePhoneContactOptions
 object ChoosePhoneContactOptions {
   @scala.inline
   def apply(
-    success: js.Function1[aliDashAppLib.Anon_Mobile, scala.Unit],
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
-    fail: js.Function1[
-      /* error */ aliDashAppLib.aliDashAppLibNumbers.`10` | aliDashAppLib.aliDashAppLibNumbers.`11`, 
-      scala.Unit
-    ] = null
+    success: aliDashAppLib.Anon_Mobile => scala.Unit,
+    complete: /* res */ js.Any => scala.Unit = null,
+    fail: /* error */ aliDashAppLib.aliDashAppLibNumbers.`10` | aliDashAppLib.aliDashAppLibNumbers.`11` => scala.Unit = null
   ): ChoosePhoneContactOptions = {
-    val __obj = js.Dynamic.literal(success = success)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[ChoosePhoneContactOptions]
   }
 }

@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.DiagramNode")
 @js.native
 class DiagramNode protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Children: DiagramNodeChildren = js.native
   val Creator: scala.Double = js.native
-  val Diagram: Diagram = js.native
+  val Diagram: activexDashWordLib.WordNs.Diagram = js.native
   var Layout: activexDashOfficeLib.OfficeNs.MsoOrgChartLayoutType = js.native
   val Parent: js.Any = js.native
   val Root: DiagramNode = js.native
-  val Shape: Shape = js.native
+  val Shape: activexDashWordLib.WordNs.Shape = js.native
   val TextShape: Shape = js.native
   var `Word.DiagramNode_typekey`: DiagramNode = js.native
   /**

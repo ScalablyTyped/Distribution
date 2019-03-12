@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "MonthView")
 @js.native
 class MonthView ()
-  extends fullcalendarLib.monthviewMod.default
+  extends fullcalendarLib.monthViewMod.default
 

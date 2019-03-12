@@ -5,30 +5,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IntlFormat extends js.Object {
-  var formatDate: reactLib.reactMod.ReactNs.Requireable[_]
-  var formatHTMLMessage: reactLib.reactMod.ReactNs.Requireable[_]
-  var formatMessage: reactLib.reactMod.ReactNs.Requireable[_]
-  var formatNumber: reactLib.reactMod.ReactNs.Requireable[_]
-  var formatPlural: reactLib.reactMod.ReactNs.Requireable[_]
-  var formatRelative: reactLib.reactMod.ReactNs.Requireable[_]
-  var formatTime: reactLib.reactMod.ReactNs.Requireable[_]
-}
-
-object IntlFormat {
-  @scala.inline
-  def apply(
-    formatDate: reactLib.reactMod.ReactNs.Requireable[_],
-    formatHTMLMessage: reactLib.reactMod.ReactNs.Requireable[_],
-    formatMessage: reactLib.reactMod.ReactNs.Requireable[_],
-    formatNumber: reactLib.reactMod.ReactNs.Requireable[_],
-    formatPlural: reactLib.reactMod.ReactNs.Requireable[_],
-    formatRelative: reactLib.reactMod.ReactNs.Requireable[_],
-    formatTime: reactLib.reactMod.ReactNs.Requireable[_]
-  ): IntlFormat = {
-    val __obj = js.Dynamic.literal(formatDate = formatDate, formatHTMLMessage = formatHTMLMessage, formatMessage = formatMessage, formatNumber = formatNumber, formatPlural = formatPlural, formatRelative = formatRelative, formatTime = formatTime)
-  
-    __obj.asInstanceOf[IntlFormat]
-  }
+  @JSName("formatDate")
+  var formatDate_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  @JSName("formatHTMLMessage")
+  var formatHTMLMessage_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  @JSName("formatMessage")
+  var formatMessage_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  @JSName("formatNumber")
+  var formatNumber_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  @JSName("formatPlural")
+  var formatPlural_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  @JSName("formatRelative")
+  var formatRelative_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  @JSName("formatTime")
+  var formatTime_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  def formatDate(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def formatHTMLMessage(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def formatMessage(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def formatNumber(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def formatPlural(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def formatRelative(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def formatTime(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
 }
 

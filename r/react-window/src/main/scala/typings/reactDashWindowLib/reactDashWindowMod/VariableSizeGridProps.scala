@@ -35,10 +35,10 @@ object VariableSizeGridProps {
   def apply(
     children: reactLib.reactMod.ReactNs.ComponentType[GridChildComponentProps],
     columnCount: scala.Double,
-    columnWidth: js.Function1[scala.Double, scala.Double],
+    columnWidth: scala.Double => scala.Double,
     height: scala.Double,
     rowCount: scala.Double,
-    rowHeight: js.Function1[scala.Double, scala.Double],
+    rowHeight: scala.Double => scala.Double,
     width: scala.Double,
     className: java.lang.String = null,
     estimatedColumnWidth: scala.Int | scala.Double = null,
@@ -50,8 +50,8 @@ object VariableSizeGridProps {
     innerTagName: java.lang.String = null,
     itemData: js.Any = null,
     itemKey: GridItemKeySelector = null,
-    onItemsRendered: js.Function1[/* props */ GridOnItemsRenderedProps, _] = null,
-    onScroll: js.Function1[/* props */ GridOnScrollProps, _] = null,
+    onItemsRendered: /* props */ GridOnItemsRenderedProps => _ = null,
+    onScroll: /* props */ GridOnScrollProps => _ = null,
     outerElementType: ReactElementType = null,
     outerRef: reactLib.reactMod.ReactNs.Ref[_] = null,
     outerTagName: java.lang.String = null,
@@ -61,7 +61,7 @@ object VariableSizeGridProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     useIsScrolling: js.UndefOr[scala.Boolean] = js.undefined
   ): VariableSizeGridProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], columnCount = columnCount, columnWidth = columnWidth, height = height, rowCount = rowCount, rowHeight = rowHeight, width = width)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], columnCount = columnCount, columnWidth = js.Any.fromFunction1(columnWidth), height = height, rowCount = rowCount, rowHeight = js.Any.fromFunction1(rowHeight), width = width)
     if (className != null) __obj.updateDynamic("className")(className)
     if (estimatedColumnWidth != null) __obj.updateDynamic("estimatedColumnWidth")(estimatedColumnWidth.asInstanceOf[js.Any])
     if (estimatedRowHeight != null) __obj.updateDynamic("estimatedRowHeight")(estimatedRowHeight.asInstanceOf[js.Any])
@@ -72,8 +72,8 @@ object VariableSizeGridProps {
     if (innerTagName != null) __obj.updateDynamic("innerTagName")(innerTagName)
     if (itemData != null) __obj.updateDynamic("itemData")(itemData)
     if (itemKey != null) __obj.updateDynamic("itemKey")(itemKey)
-    if (onItemsRendered != null) __obj.updateDynamic("onItemsRendered")(onItemsRendered)
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
+    if (onItemsRendered != null) __obj.updateDynamic("onItemsRendered")(js.Any.fromFunction1(onItemsRendered))
+    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (outerElementType != null) __obj.updateDynamic("outerElementType")(outerElementType.asInstanceOf[js.Any])
     if (outerRef != null) __obj.updateDynamic("outerRef")(outerRef.asInstanceOf[js.Any])
     if (outerTagName != null) __obj.updateDynamic("outerTagName")(outerTagName)

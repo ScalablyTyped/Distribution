@@ -12,9 +12,9 @@ trait ICredentialFactory extends js.Object {
 object ICredentialFactory {
   @scala.inline
   def apply(
-    createPasswordCredential: js.Function3[java.lang.String, java.lang.String, java.lang.String, PasswordCredential]
+    createPasswordCredential: (java.lang.String, java.lang.String, java.lang.String) => PasswordCredential
   ): ICredentialFactory = {
-    val __obj = js.Dynamic.literal(createPasswordCredential = createPasswordCredential)
+    val __obj = js.Dynamic.literal(createPasswordCredential = js.Any.fromFunction3(createPasswordCredential))
   
     __obj.asInstanceOf[ICredentialFactory]
   }

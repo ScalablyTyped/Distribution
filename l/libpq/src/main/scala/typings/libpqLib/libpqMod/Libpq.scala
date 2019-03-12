@@ -35,7 +35,7 @@ trait Libpq
     *                   number, it is returned as a string to mirror libpq's behavior.
     */
   def cmdTuples(): java.lang.String = js.native
-  def connect(callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]): scala.Unit = js.native
+  def connect(callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]): scala.Unit = js.native
   /**
     * (async) Connects to a PostgreSQL backend server process.
     *
@@ -53,7 +53,7 @@ trait Libpq
     */
   def connect(
     connectParams: java.lang.String,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): scala.Unit = js.native
   /**
     * (sync) Attempts to connect to a PostgreSQL server. BLOCKS until it either succeedes, or

@@ -17,14 +17,14 @@ trait IVaultServerDataPushOperations extends js.Object {
 object IVaultServerDataPushOperations {
   @scala.inline
   def apply(
-    CloneVaultForServerDataPush: js.Function1[IServerDataPushSink, IVault],
-    SendCancel: js.Function1[scala.Double, scala.Unit],
-    SendError: js.Function2[scala.Double, java.lang.String, scala.Unit],
-    SendHeartbeat: js.Function1[scala.Double, scala.Unit],
-    SendResponse: js.Function2[scala.Double, java.lang.String, scala.Unit],
-    SetServerDataPushSink: js.Function1[IServerDataPushSink, scala.Unit]
+    CloneVaultForServerDataPush: IServerDataPushSink => IVault,
+    SendCancel: scala.Double => scala.Unit,
+    SendError: (scala.Double, java.lang.String) => scala.Unit,
+    SendHeartbeat: scala.Double => scala.Unit,
+    SendResponse: (scala.Double, java.lang.String) => scala.Unit,
+    SetServerDataPushSink: IServerDataPushSink => scala.Unit
   ): IVaultServerDataPushOperations = {
-    val __obj = js.Dynamic.literal(CloneVaultForServerDataPush = CloneVaultForServerDataPush, SendCancel = SendCancel, SendError = SendError, SendHeartbeat = SendHeartbeat, SendResponse = SendResponse, SetServerDataPushSink = SetServerDataPushSink)
+    val __obj = js.Dynamic.literal(CloneVaultForServerDataPush = js.Any.fromFunction1(CloneVaultForServerDataPush), SendCancel = js.Any.fromFunction1(SendCancel), SendError = js.Any.fromFunction2(SendError), SendHeartbeat = js.Any.fromFunction1(SendHeartbeat), SendResponse = js.Any.fromFunction2(SendResponse), SetServerDataPushSink = js.Any.fromFunction1(SetServerDataPushSink))
   
     __obj.asInstanceOf[IVaultServerDataPushOperations]
   }

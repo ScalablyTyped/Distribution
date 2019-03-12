@@ -81,22 +81,22 @@ trait IgUploadMethods extends js.Object {
 object IgUploadMethods {
   @scala.inline
   def apply(
-    addDataField: js.Function2[js.Object, js.Object, scala.Unit],
-    addDataFields: js.Function2[js.Object, js.Array[_], scala.Unit],
-    cancelAll: js.Function0[scala.Unit],
-    cancelUpload: js.Function1[scala.Double, scala.Unit],
-    changeGlobalLanguage: js.Function0[scala.Unit],
-    changeGlobalRegional: js.Function0[scala.Unit],
-    changeLocale: js.Function0[scala.Unit],
-    clearAll: js.Function0[scala.Unit],
-    container: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    getFileInfo: js.Function1[scala.Double, js.Object],
-    getFileInfoData: js.Function0[js.Object],
-    startUpload: js.Function1[scala.Double, scala.Unit],
-    widget: js.Function0[scala.Unit]
+    addDataField: (js.Object, js.Object) => scala.Unit,
+    addDataFields: (js.Object, js.Array[_]) => scala.Unit,
+    cancelAll: () => scala.Unit,
+    cancelUpload: scala.Double => scala.Unit,
+    changeGlobalLanguage: () => scala.Unit,
+    changeGlobalRegional: () => scala.Unit,
+    changeLocale: () => scala.Unit,
+    clearAll: () => scala.Unit,
+    container: () => scala.Unit,
+    destroy: () => scala.Unit,
+    getFileInfo: scala.Double => js.Object,
+    getFileInfoData: () => js.Object,
+    startUpload: scala.Double => scala.Unit,
+    widget: () => scala.Unit
   ): IgUploadMethods = {
-    val __obj = js.Dynamic.literal(addDataField = addDataField, addDataFields = addDataFields, cancelAll = cancelAll, cancelUpload = cancelUpload, changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, clearAll = clearAll, container = container, destroy = destroy, getFileInfo = getFileInfo, getFileInfoData = getFileInfoData, startUpload = startUpload, widget = widget)
+    val __obj = js.Dynamic.literal(addDataField = js.Any.fromFunction2(addDataField), addDataFields = js.Any.fromFunction2(addDataFields), cancelAll = js.Any.fromFunction0(cancelAll), cancelUpload = js.Any.fromFunction1(cancelUpload), changeGlobalLanguage = js.Any.fromFunction0(changeGlobalLanguage), changeGlobalRegional = js.Any.fromFunction0(changeGlobalRegional), changeLocale = js.Any.fromFunction0(changeLocale), clearAll = js.Any.fromFunction0(clearAll), container = js.Any.fromFunction0(container), destroy = js.Any.fromFunction0(destroy), getFileInfo = js.Any.fromFunction1(getFileInfo), getFileInfoData = js.Any.fromFunction0(getFileInfoData), startUpload = js.Any.fromFunction1(startUpload), widget = js.Any.fromFunction0(widget))
   
     __obj.asInstanceOf[IgUploadMethods]
   }

@@ -20,17 +20,12 @@ trait TypeDefinition extends js.Object {
 object TypeDefinition {
   @scala.inline
   def apply(
-    forClient: js.Function1[/* body */ js.Any, arangodbLib.Anon_Data] = null,
-    fromClient: js.Function3[
-      /* body */ java.lang.String | nodeLib.Buffer, 
-      /* req */ Request, 
-      /* type */ MediaType, 
-      _
-    ] = null
+    forClient: /* body */ js.Any => arangodbLib.Anon_Data = null,
+    fromClient: (/* body */ java.lang.String | nodeLib.Buffer, /* req */ Request, /* type */ MediaType) => _ = null
   ): TypeDefinition = {
     val __obj = js.Dynamic.literal()
-    if (forClient != null) __obj.updateDynamic("forClient")(forClient)
-    if (fromClient != null) __obj.updateDynamic("fromClient")(fromClient)
+    if (forClient != null) __obj.updateDynamic("forClient")(js.Any.fromFunction1(forClient))
+    if (fromClient != null) __obj.updateDynamic("fromClient")(js.Any.fromFunction3(fromClient))
     __obj.asInstanceOf[TypeDefinition]
   }
 }

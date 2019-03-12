@@ -41,24 +41,24 @@ object XTextCursor {
     End: XTextRange,
     Start: XTextRange,
     String: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    collapseToEnd: js.Function0[scala.Unit],
-    collapseToStart: js.Function0[scala.Unit],
-    getEnd: js.Function0[XTextRange],
-    getStart: js.Function0[XTextRange],
-    getString: js.Function0[java.lang.String],
-    getText: js.Function0[XText],
-    goLeft: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
-    goRight: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
-    gotoEnd: js.Function1[scala.Boolean, scala.Unit],
-    gotoRange: js.Function2[XTextRange, scala.Boolean, scala.Unit],
-    gotoStart: js.Function1[scala.Boolean, scala.Unit],
-    isCollapsed: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setString: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    collapseToEnd: () => scala.Unit,
+    collapseToStart: () => scala.Unit,
+    getEnd: () => XTextRange,
+    getStart: () => XTextRange,
+    getString: () => java.lang.String,
+    getText: () => XText,
+    goLeft: (scala.Double, scala.Boolean) => scala.Boolean,
+    goRight: (scala.Double, scala.Boolean) => scala.Boolean,
+    gotoEnd: scala.Boolean => scala.Unit,
+    gotoRange: (XTextRange, scala.Boolean) => scala.Unit,
+    gotoStart: scala.Boolean => scala.Unit,
+    isCollapsed: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setString: java.lang.String => scala.Unit
   ): XTextCursor = {
-    val __obj = js.Dynamic.literal(End = End, Start = Start, String = String, acquire = acquire, collapseToEnd = collapseToEnd, collapseToStart = collapseToStart, getEnd = getEnd, getStart = getStart, getString = getString, getText = getText, goLeft = goLeft, goRight = goRight, gotoEnd = gotoEnd, gotoRange = gotoRange, gotoStart = gotoStart, isCollapsed = isCollapsed, queryInterface = queryInterface, release = release, setString = setString)
+    val __obj = js.Dynamic.literal(End = End, Start = Start, String = String, acquire = js.Any.fromFunction0(acquire), collapseToEnd = js.Any.fromFunction0(collapseToEnd), collapseToStart = js.Any.fromFunction0(collapseToStart), getEnd = js.Any.fromFunction0(getEnd), getStart = js.Any.fromFunction0(getStart), getString = js.Any.fromFunction0(getString), getText = js.Any.fromFunction0(getText), goLeft = js.Any.fromFunction2(goLeft), goRight = js.Any.fromFunction2(goRight), gotoEnd = js.Any.fromFunction1(gotoEnd), gotoRange = js.Any.fromFunction2(gotoRange), gotoStart = js.Any.fromFunction1(gotoStart), isCollapsed = js.Any.fromFunction0(isCollapsed), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setString = js.Any.fromFunction1(setString))
   
     __obj.asInstanceOf[XTextCursor]
   }

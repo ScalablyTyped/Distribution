@@ -6,25 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InputProps
-  extends reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] {
+  extends reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement] {
   var floatingLabel: js.UndefOr[scala.Boolean] = js.undefined
   var hint: js.UndefOr[java.lang.String] = js.undefined
-  var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[reactLib.HTMLInputElement]] = js.undefined
+  var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[stdLib.HTMLInputElement]] = js.undefined
   var invalid: js.UndefOr[scala.Boolean] = js.undefined
   var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var onLabelClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLInputElement]] = js.undefined
+  var onLabelClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLInputElement]] = js.undefined
 }
 
 object InputProps {
   @scala.inline
   def apply(
-    InputHTMLAttributes: reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] = null,
+    InputHTMLAttributes: reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement] = null,
     floatingLabel: js.UndefOr[scala.Boolean] = js.undefined,
     hint: java.lang.String = null,
-    inputRef: reactLib.reactMod.ReactNs.Ref[reactLib.HTMLInputElement] = null,
+    inputRef: reactLib.reactMod.ReactNs.Ref[stdLib.HTMLInputElement] = null,
     invalid: js.UndefOr[scala.Boolean] = js.undefined,
     label: reactLib.reactMod.ReactNs.ReactNode = null,
-    onLabelClick: reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLInputElement] = null
+    onLabelClick: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLInputElement] = null
   ): InputProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, InputHTMLAttributes)

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("vue-chartkick", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: vueDashChartkickLib.vueDashChartkickMod.VueChartkickPlugin = js.native
+  val default: VueChartkickPlugin = js.native
 }
 

@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.Trendline")
 @js.native
 class Trendline protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var Backward: scala.Double = js.native
   var Backward2: scala.Double = js.native
-  val Border: Border = js.native
+  val Border: activexDashExcelLib.ExcelNs.Border = js.native
   val Creator: XlCreator = js.native
-  val DataLabel: DataLabel = js.native
+  val DataLabel: activexDashExcelLib.ExcelNs.DataLabel = js.native
   var DisplayEquation: scala.Boolean = js.native
   var DisplayRSquared: scala.Boolean = js.native
   var `Excel.Trendline_typekey`: Trendline = js.native

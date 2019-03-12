@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait XPrinterServer
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** returns a list of all available printer names. */
-  val PrinterNames: activexDashInteropLib.SafeArray[java.lang.String]
+  val PrinterNames: stdLib.SafeArray[java.lang.String]
   /**
     * creates a new information printer.
     *
@@ -23,21 +23,21 @@ trait XPrinterServer
     */
   def createPrinter(printerName: java.lang.String): XPrinter
   /** returns a list of all available printer names. */
-  def getPrinterNames(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getPrinterNames(): stdLib.SafeArray[java.lang.String]
 }
 
 object XPrinterServer {
   @scala.inline
   def apply(
-    PrinterNames: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    createInfoPrinter: js.Function1[java.lang.String, XInfoPrinter],
-    createPrinter: js.Function1[java.lang.String, XPrinter],
-    getPrinterNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    PrinterNames: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    createInfoPrinter: java.lang.String => XInfoPrinter,
+    createPrinter: java.lang.String => XPrinter,
+    getPrinterNames: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XPrinterServer = {
-    val __obj = js.Dynamic.literal(PrinterNames = PrinterNames, acquire = acquire, createInfoPrinter = createInfoPrinter, createPrinter = createPrinter, getPrinterNames = getPrinterNames, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(PrinterNames = PrinterNames, acquire = js.Any.fromFunction0(acquire), createInfoPrinter = js.Any.fromFunction1(createInfoPrinter), createPrinter = js.Any.fromFunction1(createPrinter), getPrinterNames = js.Any.fromFunction0(getPrinterNames), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XPrinterServer]
   }

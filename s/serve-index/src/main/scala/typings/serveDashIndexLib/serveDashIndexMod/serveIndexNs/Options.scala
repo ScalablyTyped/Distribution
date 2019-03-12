@@ -27,13 +27,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    filter: js.Function4[
-      /* filename */ java.lang.String, 
-      /* index */ scala.Double, 
-      /* files */ js.Array[File], 
-      /* dir */ java.lang.String, 
-      scala.Boolean
-    ] = null,
+    filter: (/* filename */ java.lang.String, /* index */ scala.Double, /* files */ js.Array[File], /* dir */ java.lang.String) => scala.Boolean = null,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
     icons: js.UndefOr[scala.Boolean] = js.undefined,
     stylesheet: java.lang.String = null,
@@ -41,7 +35,7 @@ object Options {
     view: java.lang.String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction4(filter))
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (!js.isUndefined(icons)) __obj.updateDynamic("icons")(icons)
     if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet)

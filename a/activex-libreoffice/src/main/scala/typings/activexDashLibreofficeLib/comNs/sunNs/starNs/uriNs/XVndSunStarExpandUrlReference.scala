@@ -24,32 +24,29 @@ object XVndSunStarExpandUrlReference {
     Scheme: java.lang.String,
     SchemeSpecificPart: java.lang.String,
     UriReference: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    clearFragment: js.Function0[scala.Unit],
-    expand: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XMacroExpander, 
-      java.lang.String
-    ],
-    getAuthority: js.Function0[java.lang.String],
-    getFragment: js.Function0[java.lang.String],
-    getPath: js.Function0[java.lang.String],
-    getPathSegment: js.Function1[scala.Double, java.lang.String],
-    getPathSegmentCount: js.Function0[scala.Double],
-    getQuery: js.Function0[java.lang.String],
-    getScheme: js.Function0[java.lang.String],
-    getSchemeSpecificPart: js.Function0[java.lang.String],
-    getUriReference: js.Function0[java.lang.String],
-    hasAuthority: js.Function0[scala.Boolean],
-    hasFragment: js.Function0[scala.Boolean],
-    hasQuery: js.Function0[scala.Boolean],
-    hasRelativePath: js.Function0[scala.Boolean],
-    isAbsolute: js.Function0[scala.Boolean],
-    isHierarchical: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setFragment: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    clearFragment: () => scala.Unit,
+    expand: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XMacroExpander => java.lang.String,
+    getAuthority: () => java.lang.String,
+    getFragment: () => java.lang.String,
+    getPath: () => java.lang.String,
+    getPathSegment: scala.Double => java.lang.String,
+    getPathSegmentCount: () => scala.Double,
+    getQuery: () => java.lang.String,
+    getScheme: () => java.lang.String,
+    getSchemeSpecificPart: () => java.lang.String,
+    getUriReference: () => java.lang.String,
+    hasAuthority: () => scala.Boolean,
+    hasFragment: () => scala.Boolean,
+    hasQuery: () => scala.Boolean,
+    hasRelativePath: () => scala.Boolean,
+    isAbsolute: () => scala.Boolean,
+    isHierarchical: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setFragment: java.lang.String => scala.Unit
   ): XVndSunStarExpandUrlReference = {
-    val __obj = js.Dynamic.literal(Authority = Authority, Fragment = Fragment, Path = Path, PathSegmentCount = PathSegmentCount, Query = Query, Scheme = Scheme, SchemeSpecificPart = SchemeSpecificPart, UriReference = UriReference, acquire = acquire, clearFragment = clearFragment, expand = expand, getAuthority = getAuthority, getFragment = getFragment, getPath = getPath, getPathSegment = getPathSegment, getPathSegmentCount = getPathSegmentCount, getQuery = getQuery, getScheme = getScheme, getSchemeSpecificPart = getSchemeSpecificPart, getUriReference = getUriReference, hasAuthority = hasAuthority, hasFragment = hasFragment, hasQuery = hasQuery, hasRelativePath = hasRelativePath, isAbsolute = isAbsolute, isHierarchical = isHierarchical, queryInterface = queryInterface, release = release, setFragment = setFragment)
+    val __obj = js.Dynamic.literal(Authority = Authority, Fragment = Fragment, Path = Path, PathSegmentCount = PathSegmentCount, Query = Query, Scheme = Scheme, SchemeSpecificPart = SchemeSpecificPart, UriReference = UriReference, acquire = js.Any.fromFunction0(acquire), clearFragment = js.Any.fromFunction0(clearFragment), expand = js.Any.fromFunction1(expand), getAuthority = js.Any.fromFunction0(getAuthority), getFragment = js.Any.fromFunction0(getFragment), getPath = js.Any.fromFunction0(getPath), getPathSegment = js.Any.fromFunction1(getPathSegment), getPathSegmentCount = js.Any.fromFunction0(getPathSegmentCount), getQuery = js.Any.fromFunction0(getQuery), getScheme = js.Any.fromFunction0(getScheme), getSchemeSpecificPart = js.Any.fromFunction0(getSchemeSpecificPart), getUriReference = js.Any.fromFunction0(getUriReference), hasAuthority = js.Any.fromFunction0(hasAuthority), hasFragment = js.Any.fromFunction0(hasFragment), hasQuery = js.Any.fromFunction0(hasQuery), hasRelativePath = js.Any.fromFunction0(hasRelativePath), isAbsolute = js.Any.fromFunction0(isAbsolute), isHierarchical = js.Any.fromFunction0(isHierarchical), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setFragment = js.Any.fromFunction1(setFragment))
   
     __obj.asInstanceOf[XVndSunStarExpandUrlReference]
   }

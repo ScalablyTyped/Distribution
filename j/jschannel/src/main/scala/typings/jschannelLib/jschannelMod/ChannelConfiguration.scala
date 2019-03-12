@@ -25,18 +25,18 @@ object ChannelConfiguration {
     scope: java.lang.String,
     window: stdLib.Window,
     debugOutput: js.UndefOr[scala.Boolean] = js.undefined,
-    gotMessageObserver: js.Function2[/* origin */ java.lang.String, /* message */ Message, scala.Unit] = null,
-    onReady: js.Function1[/* channel */ MessagingChannel, scala.Unit] = null,
-    postMessageObserver: js.Function2[/* origin */ java.lang.String, /* message */ Message, scala.Unit] = null,
+    gotMessageObserver: (/* origin */ java.lang.String, /* message */ Message) => scala.Unit = null,
+    onReady: /* channel */ MessagingChannel => scala.Unit = null,
+    postMessageObserver: (/* origin */ java.lang.String, /* message */ Message) => scala.Unit = null,
     publish: js.UndefOr[scala.Boolean] = js.undefined,
     reconnect: js.UndefOr[scala.Boolean] = js.undefined,
     remote: java.lang.String | js.Array[java.lang.String] = null
   ): ChannelConfiguration = {
     val __obj = js.Dynamic.literal(origin = origin, scope = scope, window = window)
     if (!js.isUndefined(debugOutput)) __obj.updateDynamic("debugOutput")(debugOutput)
-    if (gotMessageObserver != null) __obj.updateDynamic("gotMessageObserver")(gotMessageObserver)
-    if (onReady != null) __obj.updateDynamic("onReady")(onReady)
-    if (postMessageObserver != null) __obj.updateDynamic("postMessageObserver")(postMessageObserver)
+    if (gotMessageObserver != null) __obj.updateDynamic("gotMessageObserver")(js.Any.fromFunction2(gotMessageObserver))
+    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction1(onReady))
+    if (postMessageObserver != null) __obj.updateDynamic("postMessageObserver")(js.Any.fromFunction2(postMessageObserver))
     if (!js.isUndefined(publish)) __obj.updateDynamic("publish")(publish)
     if (!js.isUndefined(reconnect)) __obj.updateDynamic("reconnect")(reconnect)
     if (remote != null) __obj.updateDynamic("remote")(remote.asInstanceOf[js.Any])

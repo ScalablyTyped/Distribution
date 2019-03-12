@@ -13,12 +13,9 @@ trait ChannelsResource extends js.Object {
 object ChannelsResource {
   @scala.inline
   def apply(
-    stop: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ]
+    stop: gapiDotClientDotStorageLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   ): ChannelsResource = {
-    val __obj = js.Dynamic.literal(stop = stop)
+    val __obj = js.Dynamic.literal(stop = js.Any.fromFunction1(stop))
   
     __obj.asInstanceOf[ChannelsResource]
   }

@@ -16,14 +16,10 @@ object SecureClientSessionOptions {
     NPNProtocols: js.Array[java.lang.String] | js.Array[nodeLib.Buffer] | js.Array[stdLib.Uint8Array] | nodeLib.Buffer | stdLib.Uint8Array = null,
     ca: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
     cert: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
-    checkServerIdentity: js.Function2[
-      /* host */ java.lang.String, 
-      /* cert */ nodeLib.tlsMod.PeerCertificate, 
-      js.UndefOr[nodeLib.Error]
-    ] = null,
+    checkServerIdentity: (/* host */ java.lang.String, /* cert */ nodeLib.tlsMod.PeerCertificate) => js.UndefOr[nodeLib.Error] = null,
     ciphers: java.lang.String = null,
     clientCertEngine: java.lang.String = null,
-    createConnection: js.Function1[/* option */ SessionOptions, nodeLib.streamMod.Duplex] = null,
+    createConnection: /* option */ SessionOptions => nodeLib.streamMod.Duplex = null,
     crl: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
     dhparam: java.lang.String | nodeLib.Buffer = null,
     ecdhCurve: java.lang.String = null,
@@ -47,7 +43,7 @@ object SecureClientSessionOptions {
     secureContext: nodeLib.tlsMod.SecureContext = null,
     secureOptions: scala.Int | scala.Double = null,
     secureProtocol: java.lang.String = null,
-    selectPadding: js.Function2[/* frameLen */ scala.Double, /* maxFrameLen */ scala.Double, scala.Double] = null,
+    selectPadding: (/* frameLen */ scala.Double, /* maxFrameLen */ scala.Double) => scala.Double = null,
     servername: java.lang.String = null,
     session: nodeLib.Buffer = null,
     sessionIdContext: java.lang.String = null,
@@ -60,10 +56,10 @@ object SecureClientSessionOptions {
     if (NPNProtocols != null) __obj.updateDynamic("NPNProtocols")(NPNProtocols.asInstanceOf[js.Any])
     if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(checkServerIdentity)
+    if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(js.Any.fromFunction2(checkServerIdentity))
     if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)
     if (clientCertEngine != null) __obj.updateDynamic("clientCertEngine")(clientCertEngine)
-    if (createConnection != null) __obj.updateDynamic("createConnection")(createConnection)
+    if (createConnection != null) __obj.updateDynamic("createConnection")(js.Any.fromFunction1(createConnection))
     if (crl != null) __obj.updateDynamic("crl")(crl.asInstanceOf[js.Any])
     if (dhparam != null) __obj.updateDynamic("dhparam")(dhparam.asInstanceOf[js.Any])
     if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve)
@@ -87,7 +83,7 @@ object SecureClientSessionOptions {
     if (secureContext != null) __obj.updateDynamic("secureContext")(secureContext)
     if (secureOptions != null) __obj.updateDynamic("secureOptions")(secureOptions.asInstanceOf[js.Any])
     if (secureProtocol != null) __obj.updateDynamic("secureProtocol")(secureProtocol)
-    if (selectPadding != null) __obj.updateDynamic("selectPadding")(selectPadding)
+    if (selectPadding != null) __obj.updateDynamic("selectPadding")(js.Any.fromFunction2(selectPadding))
     if (servername != null) __obj.updateDynamic("servername")(servername)
     if (session != null) __obj.updateDynamic("session")(session)
     if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext)

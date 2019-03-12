@@ -25,22 +25,22 @@ trait UITreeBase extends js.Object {
 object UITreeBase {
   @scala.inline
   def apply(
-    appendNode: js.Function1[/* repeated */ js.Any, UITreeNode],
-    foldNode: js.Function1[java.lang.String, scala.Unit],
-    foldNodeAll: js.Function1[java.lang.String, scala.Unit],
-    getNode: js.Function1[java.lang.String, UITreeNode],
-    getNodeAll: js.Function1[java.lang.String, js.Array[UITreeNode]],
-    getNodeParent: js.Function1[java.lang.String, UITreeNode],
-    getRoot: js.Function0[UITreeNode],
-    insertNode: js.Function2[java.lang.String, js.Any, UITreeNode],
-    moveNode: js.Function2[java.lang.String, scala.Double, scala.Unit],
-    openNode: js.Function1[java.lang.String, scala.Unit],
-    openNodeAll: js.Function1[java.lang.String, scala.Unit],
-    removeNode: js.Function1[java.lang.String, scala.Unit],
-    removeNodes: js.Function0[scala.Unit],
-    updateNode: js.Function2[java.lang.String, js.Any, UITreeNode]
+    appendNode: /* repeated */ js.Any => UITreeNode,
+    foldNode: java.lang.String => scala.Unit,
+    foldNodeAll: java.lang.String => scala.Unit,
+    getNode: java.lang.String => UITreeNode,
+    getNodeAll: java.lang.String => js.Array[UITreeNode],
+    getNodeParent: java.lang.String => UITreeNode,
+    getRoot: () => UITreeNode,
+    insertNode: (java.lang.String, js.Any) => UITreeNode,
+    moveNode: (java.lang.String, scala.Double) => scala.Unit,
+    openNode: java.lang.String => scala.Unit,
+    openNodeAll: java.lang.String => scala.Unit,
+    removeNode: java.lang.String => scala.Unit,
+    removeNodes: () => scala.Unit,
+    updateNode: (java.lang.String, js.Any) => UITreeNode
   ): UITreeBase = {
-    val __obj = js.Dynamic.literal(appendNode = appendNode, foldNode = foldNode, foldNodeAll = foldNodeAll, getNode = getNode, getNodeAll = getNodeAll, getNodeParent = getNodeParent, getRoot = getRoot, insertNode = insertNode, moveNode = moveNode, openNode = openNode, openNodeAll = openNodeAll, removeNode = removeNode, removeNodes = removeNodes, updateNode = updateNode)
+    val __obj = js.Dynamic.literal(appendNode = js.Any.fromFunction1(appendNode), foldNode = js.Any.fromFunction1(foldNode), foldNodeAll = js.Any.fromFunction1(foldNodeAll), getNode = js.Any.fromFunction1(getNode), getNodeAll = js.Any.fromFunction1(getNodeAll), getNodeParent = js.Any.fromFunction1(getNodeParent), getRoot = js.Any.fromFunction0(getRoot), insertNode = js.Any.fromFunction2(insertNode), moveNode = js.Any.fromFunction2(moveNode), openNode = js.Any.fromFunction1(openNode), openNodeAll = js.Any.fromFunction1(openNodeAll), removeNode = js.Any.fromFunction1(removeNode), removeNodes = js.Any.fromFunction0(removeNodes), updateNode = js.Any.fromFunction2(updateNode))
   
     __obj.asInstanceOf[UITreeBase]
   }

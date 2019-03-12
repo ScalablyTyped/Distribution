@@ -10,7 +10,7 @@ trait Anon_A extends js.Object {
   def concat[T](array: stdLib.ArrayLike[T], items: (Array[T] | T)*): Array[T] = js.native
   def copyWithin[T](array: stdLib.ArrayLike[T], target: scala.Double, start: scala.Double): Array[T] = js.native
   def copyWithin[T](array: stdLib.ArrayLike[T], target: scala.Double, start: scala.Double, end: scala.Double): Array[T] = js.native
-  def entries[T](array: stdLib.ArrayLike[T]): nodeLib.IterableIterator[js.Tuple2[scala.Double, T]] = js.native
+  def entries[T](array: stdLib.ArrayLike[T]): stdLib.IterableIterator[js.Tuple2[scala.Double, T]] = js.native
   def every[T](
     array: stdLib.ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ scala.Double, /* array */ Array[T], scala.Boolean]
@@ -52,17 +52,17 @@ trait Anon_A extends js.Object {
     callbackfn: js.Function3[/* value */ T, /* index */ scala.Double, /* array */ Array[T], scala.Unit],
     thisArg: js.Any
   ): scala.Unit = js.native
-  def from[T](arrayLike: nodeLib.Iterable[T]): Array[T] = js.native
   def from[T](arrayLike: stdLib.ArrayLike[T]): Array[T] = js.native
-  def from[T, U](arrayLike: nodeLib.Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ scala.Double, U]): Array[U] = js.native
-  def from[T, U](
-    arrayLike: nodeLib.Iterable[T],
-    mapfn: js.Function2[/* v */ T, /* k */ scala.Double, U],
-    thisArg: js.Any
-  ): Array[U] = js.native
+  def from[T](arrayLike: stdLib.Iterable[T]): Array[T] = js.native
   def from[T, U](arrayLike: stdLib.ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ scala.Double, U]): Array[U] = js.native
   def from[T, U](
     arrayLike: stdLib.ArrayLike[T],
+    mapfn: js.Function2[/* v */ T, /* k */ scala.Double, U],
+    thisArg: js.Any
+  ): Array[U] = js.native
+  def from[T, U](arrayLike: stdLib.Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ scala.Double, U]): Array[U] = js.native
+  def from[T, U](
+    arrayLike: stdLib.Iterable[T],
     mapfn: js.Function2[/* v */ T, /* k */ scala.Double, U],
     thisArg: js.Any
   ): Array[U] = js.native
@@ -73,7 +73,7 @@ trait Anon_A extends js.Object {
   def isArray(arg: js.Any): /* is core-js.Array<any> */ scala.Boolean = js.native
   def join[T](array: stdLib.ArrayLike[T]): java.lang.String = js.native
   def join[T](array: stdLib.ArrayLike[T], separator: java.lang.String): java.lang.String = js.native
-  def keys[T](array: stdLib.ArrayLike[T]): nodeLib.IterableIterator[scala.Double] = js.native
+  def keys[T](array: stdLib.ArrayLike[T]): stdLib.IterableIterator[scala.Double] = js.native
   def lastIndexOf[T](array: stdLib.ArrayLike[T], earchElement: T): scala.Double = js.native
   def lastIndexOf[T](array: stdLib.ArrayLike[T], earchElement: T, fromIndex: scala.Double): scala.Double = js.native
   def map[T, U](
@@ -204,6 +204,6 @@ trait Anon_A extends js.Object {
     callbackfn: js.Function4[/* memo */ U, /* value */ T, /* index */ scala.Double, /* array */ Array[T], scala.Unit]
   ): U = js.native
   def unshift[T](array: stdLib.ArrayLike[T], items: T*): scala.Double = js.native
-  def values[T](array: stdLib.ArrayLike[T]): nodeLib.IterableIterator[T] = js.native
+  def values[T](array: stdLib.ArrayLike[T]): stdLib.IterableIterator[T] = js.native
 }
 

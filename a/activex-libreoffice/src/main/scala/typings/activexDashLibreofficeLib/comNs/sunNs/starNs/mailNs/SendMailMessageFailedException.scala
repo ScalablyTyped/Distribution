@@ -14,21 +14,21 @@ import scala.scalajs.js.annotation._
 trait SendMailMessageFailedException
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Exception {
   /** The addresses which are invalid because they do not conform to [RFC   822]{@link url="http://www.ietf.org/rfc/rfc822.txt"} . */
-  var InvalidAddresses: activexDashInteropLib.SafeArray[java.lang.String]
+  var InvalidAddresses: stdLib.SafeArray[java.lang.String]
   /** The addresses to which the mail message was sent successfully. */
-  var ValidSentAddresses: activexDashInteropLib.SafeArray[java.lang.String]
+  var ValidSentAddresses: stdLib.SafeArray[java.lang.String]
   /** The addresses which are valid but to which the message was not sent. */
-  var ValidUnsentAddresses: activexDashInteropLib.SafeArray[java.lang.String]
+  var ValidUnsentAddresses: stdLib.SafeArray[java.lang.String]
 }
 
 object SendMailMessageFailedException {
   @scala.inline
   def apply(
     Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
-    InvalidAddresses: activexDashInteropLib.SafeArray[java.lang.String],
+    InvalidAddresses: stdLib.SafeArray[java.lang.String],
     Message: java.lang.String,
-    ValidSentAddresses: activexDashInteropLib.SafeArray[java.lang.String],
-    ValidUnsentAddresses: activexDashInteropLib.SafeArray[java.lang.String]
+    ValidSentAddresses: stdLib.SafeArray[java.lang.String],
+    ValidUnsentAddresses: stdLib.SafeArray[java.lang.String]
   ): SendMailMessageFailedException = {
     val __obj = js.Dynamic.literal(Context = Context, InvalidAddresses = InvalidAddresses, Message = Message, ValidSentAddresses = ValidSentAddresses, ValidUnsentAddresses = ValidUnsentAddresses)
   

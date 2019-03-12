@@ -23,32 +23,14 @@ trait ForwardingRulesResource extends js.Object {
 object ForwardingRulesResource {
   @scala.inline
   def apply(
-    aggregatedList: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ForwardingRuleAggregatedList]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRule, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRuleKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ForwardingRule]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ForwardingRuleList]
-    ],
-    setTarget: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRule, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    aggregatedList: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ForwardingRuleAggregatedList],
+    delete: gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRule => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRuleKey => gapiDotClientLib.gapiNs.clientNs.Request[ForwardingRule],
+    insert: gapiDotClientDotComputeLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotComputeLib.Anon_AltFieldsFilter => gapiDotClientLib.gapiNs.clientNs.Request[ForwardingRuleList],
+    setTarget: gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRule => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): ForwardingRulesResource = {
-    val __obj = js.Dynamic.literal(aggregatedList = aggregatedList, delete = delete, get = get, insert = insert, list = list, setTarget = setTarget)
+    val __obj = js.Dynamic.literal(aggregatedList = js.Any.fromFunction1(aggregatedList), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), setTarget = js.Any.fromFunction1(setTarget))
   
     __obj.asInstanceOf[ForwardingRulesResource]
   }

@@ -299,7 +299,7 @@ object CellProps {
   @scala.inline
   def apply(
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
     auto: reactDashFoundationLib.enumsMod.ExtendedBreakpoints = null,
     large: scala.Int | scala.Double = null,
     medium: scala.Int | scala.Double = null,

@@ -51,9 +51,9 @@ trait Assertion extends LanguageChains {
     * Assert that the target throws an error
     */
   def Throw(): this.type = js.native
-  def Throw(errorLike: nodeLib.Error): this.type = js.native
-  def Throw(errorLike: nodeLib.Error, errMsgMatcher: java.lang.String): this.type = js.native
-  def Throw(errorLike: nodeLib.Error, errMsgMatcher: stdLib.RegExp): this.type = js.native
+  def Throw(errorLike: stdLib.Error): this.type = js.native
+  def Throw(errorLike: stdLib.Error, errMsgMatcher: java.lang.String): this.type = js.native
+  def Throw(errorLike: stdLib.Error, errMsgMatcher: stdLib.RegExp): this.type = js.native
   /**
     * Asserts that the target's type is `type`
     */

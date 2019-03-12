@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var Config: yandexDashMoneyDashSdkLib.yandexDashMoneyDashSdkMod.Config = js.native
-  var ExternalPayment: yandexDashMoneyDashSdkLib.yandexDashMoneyDashSdkMod.ExternalPaymentStatic = js.native
-  var Wallet: yandexDashMoneyDashSdkLib.yandexDashMoneyDashSdkMod.WalletStatic = js.native
+  var ExternalPayment: ExternalPaymentStatic = js.native
+  var Wallet: WalletStatic = js.native
 }
 

@@ -50,8 +50,8 @@ trait ReactTagsProps extends js.Object {
 object ReactTagsProps {
   @scala.inline
   def apply(
-    handleAddition: js.Function1[reactDashTagDashInputLib.Anon_Id, scala.Unit],
-    handleDelete: js.Function1[scala.Double, scala.Unit],
+    handleAddition: reactDashTagDashInputLib.Anon_Id => scala.Unit,
+    handleDelete: scala.Double => scala.Unit,
     allowDeleteFromEmptyInput: js.UndefOr[scala.Boolean] = js.undefined,
     allowDragDrop: js.UndefOr[scala.Boolean] = js.undefined,
     allowUnique: js.UndefOr[scala.Boolean] = js.undefined,
@@ -59,21 +59,12 @@ object ReactTagsProps {
     autofocus: js.UndefOr[scala.Boolean] = js.undefined,
     classNames: reactDashTagDashInputLib.Anon_ActiveSuggestion = null,
     delimiters: js.Array[scala.Double] = null,
-    handleDrag: js.Function3[
-      /* tag */ reactDashTagDashInputLib.Anon_Id, 
-      /* currPos */ scala.Double, 
-      /* newPos */ scala.Double, 
-      scala.Unit
-    ] = null,
-    handleFilterSuggestions: js.Function2[
-      /* textInputValue */ java.lang.String, 
-      /* possibleSuggestionsArray */ js.Array[reactDashTagDashInputLib.Anon_Id], 
-      js.Array[reactDashTagDashInputLib.Anon_Id]
-    ] = null,
-    handleInputBlur: js.Function1[/* textInputValue */ java.lang.String, scala.Unit] = null,
-    handleInputChange: js.Function1[/* value */ java.lang.String, scala.Unit] = null,
-    handleInputFocus: js.Function1[/* value */ java.lang.String, scala.Unit] = null,
-    handleTagClick: js.Function1[/* i */ scala.Double, scala.Unit] = null,
+    handleDrag: (/* tag */ reactDashTagDashInputLib.Anon_Id, /* currPos */ scala.Double, /* newPos */ scala.Double) => scala.Unit = null,
+    handleFilterSuggestions: (/* textInputValue */ java.lang.String, /* possibleSuggestionsArray */ js.Array[reactDashTagDashInputLib.Anon_Id]) => js.Array[reactDashTagDashInputLib.Anon_Id] = null,
+    handleInputBlur: /* textInputValue */ java.lang.String => scala.Unit = null,
+    handleInputChange: /* value */ java.lang.String => scala.Unit = null,
+    handleInputFocus: /* value */ java.lang.String => scala.Unit = null,
+    handleTagClick: /* i */ scala.Double => scala.Unit = null,
     id: java.lang.String = null,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
     labelField: java.lang.String = null,
@@ -86,7 +77,7 @@ object ReactTagsProps {
     suggestions: js.Array[reactDashTagDashInputLib.Anon_Id] = null,
     tags: js.Array[reactDashTagDashInputLib.Anon_Id] = null
   ): ReactTagsProps = {
-    val __obj = js.Dynamic.literal(handleAddition = handleAddition, handleDelete = handleDelete)
+    val __obj = js.Dynamic.literal(handleAddition = js.Any.fromFunction1(handleAddition), handleDelete = js.Any.fromFunction1(handleDelete))
     if (!js.isUndefined(allowDeleteFromEmptyInput)) __obj.updateDynamic("allowDeleteFromEmptyInput")(allowDeleteFromEmptyInput)
     if (!js.isUndefined(allowDragDrop)) __obj.updateDynamic("allowDragDrop")(allowDragDrop)
     if (!js.isUndefined(allowUnique)) __obj.updateDynamic("allowUnique")(allowUnique)
@@ -94,12 +85,12 @@ object ReactTagsProps {
     if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus)
     if (classNames != null) __obj.updateDynamic("classNames")(classNames)
     if (delimiters != null) __obj.updateDynamic("delimiters")(delimiters)
-    if (handleDrag != null) __obj.updateDynamic("handleDrag")(handleDrag)
-    if (handleFilterSuggestions != null) __obj.updateDynamic("handleFilterSuggestions")(handleFilterSuggestions)
-    if (handleInputBlur != null) __obj.updateDynamic("handleInputBlur")(handleInputBlur)
-    if (handleInputChange != null) __obj.updateDynamic("handleInputChange")(handleInputChange)
-    if (handleInputFocus != null) __obj.updateDynamic("handleInputFocus")(handleInputFocus)
-    if (handleTagClick != null) __obj.updateDynamic("handleTagClick")(handleTagClick)
+    if (handleDrag != null) __obj.updateDynamic("handleDrag")(js.Any.fromFunction3(handleDrag))
+    if (handleFilterSuggestions != null) __obj.updateDynamic("handleFilterSuggestions")(js.Any.fromFunction2(handleFilterSuggestions))
+    if (handleInputBlur != null) __obj.updateDynamic("handleInputBlur")(js.Any.fromFunction1(handleInputBlur))
+    if (handleInputChange != null) __obj.updateDynamic("handleInputChange")(js.Any.fromFunction1(handleInputChange))
+    if (handleInputFocus != null) __obj.updateDynamic("handleInputFocus")(js.Any.fromFunction1(handleInputFocus))
+    if (handleTagClick != null) __obj.updateDynamic("handleTagClick")(js.Any.fromFunction1(handleTagClick))
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
     if (labelField != null) __obj.updateDynamic("labelField")(labelField)

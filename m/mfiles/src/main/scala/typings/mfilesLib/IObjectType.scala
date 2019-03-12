@@ -41,18 +41,18 @@ object IObjectType {
     AllowAdding: scala.Boolean,
     AllowedAsGroupingLevel: scala.Boolean,
     CanHaveFiles: scala.Boolean,
-    CanHaveItemIcons: js.Function0[scala.Boolean],
-    Clone: js.Function0[IObjectType],
+    CanHaveItemIcons: () => scala.Boolean,
+    Clone: () => IObjectType,
     DefaultAccessControlList: IAccessControlList,
     DefaultPropertyDef: scala.Double,
     External: scala.Boolean,
     GUID: java.lang.String,
-    GetIconAsPNG: js.Function2[scala.Double, scala.Double, js.Array[scala.Double]],
+    GetIconAsPNG: (scala.Double, scala.Double) => js.Array[scala.Double],
     HasOwnerType: scala.Boolean,
     Hierarchical: scala.Boolean,
     ID: scala.Double,
     Icon: js.Array[scala.Double],
-    IsAddingAllowedForUser: js.Function1[ISessionInfo, scala.Boolean],
+    IsAddingAllowedForUser: ISessionInfo => scala.Boolean,
     NamePlural: java.lang.String,
     NameSingular: java.lang.String,
     ObjectTypeTargetsForBrowsing: IObjectTypeTargetsForBrowsing,
@@ -64,7 +64,7 @@ object IObjectType {
     ShowCreationCommandInTaskPane: scala.Boolean,
     Translatable: scala.Boolean
   ): IObjectType = {
-    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, AllowAdding = AllowAdding, AllowedAsGroupingLevel = AllowedAsGroupingLevel, CanHaveFiles = CanHaveFiles, CanHaveItemIcons = CanHaveItemIcons, Clone = Clone, DefaultAccessControlList = DefaultAccessControlList, DefaultPropertyDef = DefaultPropertyDef, External = External, GUID = GUID, GetIconAsPNG = GetIconAsPNG, HasOwnerType = HasOwnerType, Hierarchical = Hierarchical, ID = ID, Icon = Icon, IsAddingAllowedForUser = IsAddingAllowedForUser, NamePlural = NamePlural, NameSingular = NameSingular, ObjectTypeTargetsForBrowsing = ObjectTypeTargetsForBrowsing, OwnerPropertyDef = OwnerPropertyDef, OwnerType = OwnerType, ReadOnlyPropertiesDuringInsert = ReadOnlyPropertiesDuringInsert, ReadOnlyPropertiesDuringUpdate = ReadOnlyPropertiesDuringUpdate, RealObjectType = RealObjectType, ShowCreationCommandInTaskPane = ShowCreationCommandInTaskPane, Translatable = Translatable)
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, AllowAdding = AllowAdding, AllowedAsGroupingLevel = AllowedAsGroupingLevel, CanHaveFiles = CanHaveFiles, CanHaveItemIcons = js.Any.fromFunction0(CanHaveItemIcons), Clone = js.Any.fromFunction0(Clone), DefaultAccessControlList = DefaultAccessControlList, DefaultPropertyDef = DefaultPropertyDef, External = External, GUID = GUID, GetIconAsPNG = js.Any.fromFunction2(GetIconAsPNG), HasOwnerType = HasOwnerType, Hierarchical = Hierarchical, ID = ID, Icon = Icon, IsAddingAllowedForUser = js.Any.fromFunction1(IsAddingAllowedForUser), NamePlural = NamePlural, NameSingular = NameSingular, ObjectTypeTargetsForBrowsing = ObjectTypeTargetsForBrowsing, OwnerPropertyDef = OwnerPropertyDef, OwnerType = OwnerType, ReadOnlyPropertiesDuringInsert = ReadOnlyPropertiesDuringInsert, ReadOnlyPropertiesDuringUpdate = ReadOnlyPropertiesDuringUpdate, RealObjectType = RealObjectType, ShowCreationCommandInTaskPane = ShowCreationCommandInTaskPane, Translatable = Translatable)
   
     __obj.asInstanceOf[IObjectType]
   }

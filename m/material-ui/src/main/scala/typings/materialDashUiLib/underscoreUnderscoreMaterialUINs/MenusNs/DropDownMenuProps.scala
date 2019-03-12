@@ -67,19 +67,11 @@ object DropDownMenuProps {
     menuItemStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     menuStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function3[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
-      /* index */ scala.Double, 
-      /* menuItemValue */ js.Any, 
-      scala.Unit
-    ] = null,
-    onClose: js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
-      scala.Unit
-    ] = null,
+    onChange: (/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], /* index */ scala.Double, /* menuItemValue */ js.Any) => scala.Unit = null,
+    onClose: /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event] => scala.Unit = null,
     openImmediately: js.UndefOr[scala.Boolean] = js.undefined,
     selectedMenuItemStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    selectionRenderer: js.Function2[/* value */ js.Any, /* menuItem */ js.Any, scala.Unit] = null,
+    selectionRenderer: (/* value */ js.Any, /* menuItem */ js.Any) => scala.Unit = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     targetOrigin: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin = null,
     underlineStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -99,11 +91,11 @@ object DropDownMenuProps {
     if (menuItemStyle != null) __obj.updateDynamic("menuItemStyle")(menuItemStyle)
     if (menuStyle != null) __obj.updateDynamic("menuStyle")(menuStyle)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3(onChange))
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (!js.isUndefined(openImmediately)) __obj.updateDynamic("openImmediately")(openImmediately)
     if (selectedMenuItemStyle != null) __obj.updateDynamic("selectedMenuItemStyle")(selectedMenuItemStyle)
-    if (selectionRenderer != null) __obj.updateDynamic("selectionRenderer")(selectionRenderer)
+    if (selectionRenderer != null) __obj.updateDynamic("selectionRenderer")(js.Any.fromFunction2(selectionRenderer))
     if (style != null) __obj.updateDynamic("style")(style)
     if (targetOrigin != null) __obj.updateDynamic("targetOrigin")(targetOrigin)
     if (underlineStyle != null) __obj.updateDynamic("underlineStyle")(underlineStyle)

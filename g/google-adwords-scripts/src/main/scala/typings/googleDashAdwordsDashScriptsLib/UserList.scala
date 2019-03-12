@@ -35,31 +35,31 @@ trait UserList extends js.Object {
 object UserList {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
-    excludedAdGroups: js.Function0[AdWordsSelector[AdGroup]],
-    excludedCampaigns: js.Function0[AdWordsSelector[Campaign]],
-    getDescription: js.Function0[java.lang.String],
-    getId: js.Function0[scala.Double],
-    getMembershipLifeSpan: js.Function0[scala.Double],
-    getName: js.Function0[java.lang.String],
-    getSizeForDisplay: js.Function0[scala.Double],
-    getSizeForSearch: js.Function0[scala.Double],
-    getSizeRangeForDisplay: js.Function0[UserListSizeRange],
-    getSizeRangeForSearch: js.Function0[UserListSizeRange],
-    getType: js.Function0[UserListType],
-    isClosed: js.Function0[scala.Boolean],
-    isEligibleForDisplay: js.Function0[scala.Boolean],
-    isEligibleForSearch: js.Function0[scala.Boolean],
-    isOpen: js.Function0[scala.Boolean],
-    isReadOnly: js.Function0[scala.Boolean],
-    open: js.Function0[scala.Unit],
-    setDescription: js.Function1[java.lang.String, scala.Unit],
-    setMembershipLifeSpan: js.Function1[scala.Double, scala.Unit],
-    setName: js.Function1[java.lang.String, scala.Unit],
-    targetedAdGroups: js.Function0[AdWordsSelector[AdGroup]],
-    targetedCampaigns: js.Function0[AdWordsSelector[Campaign]]
+    close: () => scala.Unit,
+    excludedAdGroups: () => AdWordsSelector[AdGroup],
+    excludedCampaigns: () => AdWordsSelector[Campaign],
+    getDescription: () => java.lang.String,
+    getId: () => scala.Double,
+    getMembershipLifeSpan: () => scala.Double,
+    getName: () => java.lang.String,
+    getSizeForDisplay: () => scala.Double,
+    getSizeForSearch: () => scala.Double,
+    getSizeRangeForDisplay: () => UserListSizeRange,
+    getSizeRangeForSearch: () => UserListSizeRange,
+    getType: () => UserListType,
+    isClosed: () => scala.Boolean,
+    isEligibleForDisplay: () => scala.Boolean,
+    isEligibleForSearch: () => scala.Boolean,
+    isOpen: () => scala.Boolean,
+    isReadOnly: () => scala.Boolean,
+    open: () => scala.Unit,
+    setDescription: java.lang.String => scala.Unit,
+    setMembershipLifeSpan: scala.Double => scala.Unit,
+    setName: java.lang.String => scala.Unit,
+    targetedAdGroups: () => AdWordsSelector[AdGroup],
+    targetedCampaigns: () => AdWordsSelector[Campaign]
   ): UserList = {
-    val __obj = js.Dynamic.literal(close = close, excludedAdGroups = excludedAdGroups, excludedCampaigns = excludedCampaigns, getDescription = getDescription, getId = getId, getMembershipLifeSpan = getMembershipLifeSpan, getName = getName, getSizeForDisplay = getSizeForDisplay, getSizeForSearch = getSizeForSearch, getSizeRangeForDisplay = getSizeRangeForDisplay, getSizeRangeForSearch = getSizeRangeForSearch, getType = getType, isClosed = isClosed, isEligibleForDisplay = isEligibleForDisplay, isEligibleForSearch = isEligibleForSearch, isOpen = isOpen, isReadOnly = isReadOnly, open = open, setDescription = setDescription, setMembershipLifeSpan = setMembershipLifeSpan, setName = setName, targetedAdGroups = targetedAdGroups, targetedCampaigns = targetedCampaigns)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), excludedAdGroups = js.Any.fromFunction0(excludedAdGroups), excludedCampaigns = js.Any.fromFunction0(excludedCampaigns), getDescription = js.Any.fromFunction0(getDescription), getId = js.Any.fromFunction0(getId), getMembershipLifeSpan = js.Any.fromFunction0(getMembershipLifeSpan), getName = js.Any.fromFunction0(getName), getSizeForDisplay = js.Any.fromFunction0(getSizeForDisplay), getSizeForSearch = js.Any.fromFunction0(getSizeForSearch), getSizeRangeForDisplay = js.Any.fromFunction0(getSizeRangeForDisplay), getSizeRangeForSearch = js.Any.fromFunction0(getSizeRangeForSearch), getType = js.Any.fromFunction0(getType), isClosed = js.Any.fromFunction0(isClosed), isEligibleForDisplay = js.Any.fromFunction0(isEligibleForDisplay), isEligibleForSearch = js.Any.fromFunction0(isEligibleForSearch), isOpen = js.Any.fromFunction0(isOpen), isReadOnly = js.Any.fromFunction0(isReadOnly), open = js.Any.fromFunction0(open), setDescription = js.Any.fromFunction1(setDescription), setMembershipLifeSpan = js.Any.fromFunction1(setMembershipLifeSpan), setName = js.Any.fromFunction1(setName), targetedAdGroups = js.Any.fromFunction0(targetedAdGroups), targetedCampaigns = js.Any.fromFunction0(targetedCampaigns))
   
     __obj.asInstanceOf[UserList]
   }

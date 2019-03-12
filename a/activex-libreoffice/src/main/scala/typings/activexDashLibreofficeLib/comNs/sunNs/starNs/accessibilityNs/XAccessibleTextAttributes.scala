@@ -18,7 +18,7 @@ trait XAccessibleTextAttributes extends js.Object {
     * @param RequestedAttributes This string sequence defines the set of attributes that the caller is interested in. When there are requested attributes that
     * @returns Returns the requested attributes of the text. Each attribute is represented by a {@link com.sun.star.beans.PropertyValue} object.
     */
-  def getDefaultAttributes(RequestedAttributes: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  def getDefaultAttributes(RequestedAttributes: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * Get the run attribute set for the specified position.
     *
@@ -32,23 +32,16 @@ trait XAccessibleTextAttributes extends js.Object {
   def getRunAttributes(
     Index: scala.Double,
     RequestedAttributes: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]
-  ): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  ): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
 }
 
 object XAccessibleTextAttributes {
   @scala.inline
   def apply(
-    getDefaultAttributes: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    getRunAttributes: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ]
+    getDefaultAttributes: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    getRunAttributes: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]) => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   ): XAccessibleTextAttributes = {
-    val __obj = js.Dynamic.literal(getDefaultAttributes = getDefaultAttributes, getRunAttributes = getRunAttributes)
+    val __obj = js.Dynamic.literal(getDefaultAttributes = js.Any.fromFunction1(getDefaultAttributes), getRunAttributes = js.Any.fromFunction2(getRunAttributes))
   
     __obj.asInstanceOf[XAccessibleTextAttributes]
   }

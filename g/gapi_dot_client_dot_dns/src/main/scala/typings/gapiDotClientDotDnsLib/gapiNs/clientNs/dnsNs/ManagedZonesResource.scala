@@ -19,24 +19,12 @@ trait ManagedZonesResource extends js.Object {
 object ManagedZonesResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotDnsLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ManagedZone]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotDnsLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotDnsLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ManagedZone]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDnsLib.Anon_AltDnsName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ManagedZonesListResponse]
-    ]
+    create: gapiDotClientDotDnsLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[ManagedZone],
+    delete: gapiDotClientDotDnsLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotDnsLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ManagedZone],
+    list: gapiDotClientDotDnsLib.Anon_AltDnsName => gapiDotClientLib.gapiNs.clientNs.Request[ManagedZonesListResponse]
   ): ManagedZonesResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ManagedZonesResource]
   }

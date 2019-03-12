@@ -18,10 +18,10 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(
-    format: js.Function2[java.lang.String, /* repeated */ java.lang.String, java.lang.String],
+    format: (java.lang.String, /* repeated */ java.lang.String) => java.lang.String,
     validator: jqueryDotValidationLib.JQueryValidationNs.ValidatorStatic
   ): JQueryStatic = {
-    val __obj = js.Dynamic.literal(format = format, validator = validator)
+    val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format), validator = validator)
   
     __obj.asInstanceOf[JQueryStatic]
   }

@@ -150,15 +150,15 @@ object EditorConfiguration {
     indentUnit: scala.Int | scala.Double = null,
     indentWithTabs: js.UndefOr[scala.Boolean] = js.undefined,
     keyMap: java.lang.String = null,
-    lineNumberFormatter: js.Function1[/* line */ scala.Double, java.lang.String] = null,
+    lineNumberFormatter: /* line */ scala.Double => java.lang.String = null,
     lineNumbers: js.UndefOr[scala.Boolean] = js.undefined,
     lineWrapping: js.UndefOr[scala.Boolean] = js.undefined,
     lint: scala.Boolean | LintOptions = null,
     matchBrackets: js.UndefOr[scala.Boolean] = js.undefined,
     maxHighlightLength: scala.Int | scala.Double = null,
     mode: js.Any = null,
-    onDragEvent: js.Function2[/* instance */ Editor, /* event */ stdLib.Event, scala.Boolean] = null,
-    onKeyEvent: js.Function2[/* instance */ Editor, /* event */ stdLib.Event, scala.Boolean] = null,
+    onDragEvent: (/* instance */ Editor, /* event */ stdLib.Event) => scala.Boolean = null,
+    onKeyEvent: (/* instance */ Editor, /* event */ stdLib.Event) => scala.Boolean = null,
     placeholder: java.lang.String = null,
     pollInterval: scala.Int | scala.Double = null,
     readOnly: js.Any = null,
@@ -193,15 +193,15 @@ object EditorConfiguration {
     if (indentUnit != null) __obj.updateDynamic("indentUnit")(indentUnit.asInstanceOf[js.Any])
     if (!js.isUndefined(indentWithTabs)) __obj.updateDynamic("indentWithTabs")(indentWithTabs)
     if (keyMap != null) __obj.updateDynamic("keyMap")(keyMap)
-    if (lineNumberFormatter != null) __obj.updateDynamic("lineNumberFormatter")(lineNumberFormatter)
+    if (lineNumberFormatter != null) __obj.updateDynamic("lineNumberFormatter")(js.Any.fromFunction1(lineNumberFormatter))
     if (!js.isUndefined(lineNumbers)) __obj.updateDynamic("lineNumbers")(lineNumbers)
     if (!js.isUndefined(lineWrapping)) __obj.updateDynamic("lineWrapping")(lineWrapping)
     if (lint != null) __obj.updateDynamic("lint")(lint.asInstanceOf[js.Any])
     if (!js.isUndefined(matchBrackets)) __obj.updateDynamic("matchBrackets")(matchBrackets)
     if (maxHighlightLength != null) __obj.updateDynamic("maxHighlightLength")(maxHighlightLength.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (onDragEvent != null) __obj.updateDynamic("onDragEvent")(onDragEvent)
-    if (onKeyEvent != null) __obj.updateDynamic("onKeyEvent")(onKeyEvent)
+    if (onDragEvent != null) __obj.updateDynamic("onDragEvent")(js.Any.fromFunction2(onDragEvent))
+    if (onKeyEvent != null) __obj.updateDynamic("onKeyEvent")(js.Any.fromFunction2(onKeyEvent))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
     if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly)

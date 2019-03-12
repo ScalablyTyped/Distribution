@@ -24,8 +24,8 @@ trait PlusNativeUINativeUIObj extends js.Object {
 
 object PlusNativeUINativeUIObj {
   @scala.inline
-  def apply(close: js.Function0[scala.Unit]): PlusNativeUINativeUIObj = {
-    val __obj = js.Dynamic.literal(close = close)
+  def apply(close: () => scala.Unit): PlusNativeUINativeUIObj = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
   
     __obj.asInstanceOf[PlusNativeUINativeUIObj]
   }

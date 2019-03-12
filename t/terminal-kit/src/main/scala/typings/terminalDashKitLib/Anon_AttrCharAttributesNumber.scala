@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_AttrCharAttributesNumber extends js.Object {
-  var attr: terminalDashKitLib.screenbufferhdMod.ScreenBufferHDNs.Attributes | scala.Double
+  var attr: terminalDashKitLib.screenBufferHDMod.ScreenBufferHDNs.Attributes | scala.Double
   var char: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Anon_AttrCharAttributesNumber {
   @scala.inline
   def apply(
-    attr: terminalDashKitLib.screenbufferhdMod.ScreenBufferHDNs.Attributes | scala.Double,
+    attr: terminalDashKitLib.screenBufferHDMod.ScreenBufferHDNs.Attributes | scala.Double,
     char: java.lang.String = null
   ): Anon_AttrCharAttributesNumber = {
     val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any])

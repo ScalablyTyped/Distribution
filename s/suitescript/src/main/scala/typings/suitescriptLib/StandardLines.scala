@@ -12,8 +12,8 @@ trait StandardLines extends js.Object {
 
 object StandardLines {
   @scala.inline
-  def apply(getCount: js.Function0[scala.Double], getLine: js.Function1[scala.Double, StandardLine]): StandardLines = {
-    val __obj = js.Dynamic.literal(getCount = getCount, getLine = getLine)
+  def apply(getCount: () => scala.Double, getLine: scala.Double => StandardLine): StandardLines = {
+    val __obj = js.Dynamic.literal(getCount = js.Any.fromFunction0(getCount), getLine = js.Any.fromFunction1(getLine))
   
     __obj.asInstanceOf[StandardLines]
   }

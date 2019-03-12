@@ -16,12 +16,12 @@ trait DescriptionFilePlugin extends js.Object {
 object DescriptionFilePlugin {
   @scala.inline
   def apply(
-    apply: js.Function1[enhancedDashResolveLib.libResolverMod.namespaced, scala.Unit],
+    apply: enhancedDashResolveLib.libResolverMod.namespaced => scala.Unit,
     filenames: js.Array[java.lang.String],
     source: java.lang.String,
     target: java.lang.String
   ): DescriptionFilePlugin = {
-    val __obj = js.Dynamic.literal(apply = apply, filenames = filenames, source = source, target = target)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), filenames = filenames, source = source, target = target)
   
     __obj.asInstanceOf[DescriptionFilePlugin]
   }

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /** Queries basic CPU information of the system. */
-  def getInfo(callback: js.Function1[/* info */ chromeDashAppsLib.chromeNs.systemNs.cpuNs.CpuInfo, scala.Unit]): scala.Unit = js.native
+  def getInfo(callback: js.Function1[/* info */ CpuInfo, scala.Unit]): scala.Unit = js.native
 }
 

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("d3")
 @js.native
 object ^ extends js.Object {
-  def tip(): d3DashTipLib.d3Mod.Tooltip = js.native
+  def tip(): Tooltip = js.native
 }
 

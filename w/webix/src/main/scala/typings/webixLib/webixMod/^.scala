@@ -22,16 +22,16 @@ object ^ extends js.Object {
   var CopyPaste: webixLib.webixMod.CopyPaste = js.native
   var CustomPrint: webixLib.webixMod.CustomPrint = js.native
   var CustomScroll: webixLib.webixMod.CustomScroll = js.native
-  var DataCollection: webixLib.webixMod.DataCollectionFactory = js.native
+  var DataCollection: DataCollectionFactory = js.native
   var DataDriver: webixLib.webixMod.DataDriver = js.native
   var DataLoader: webixLib.webixMod.DataLoader = js.native
   var DataMarks: webixLib.webixMod.DataMarks = js.native
   var DataMove: webixLib.webixMod.DataMove = js.native
   var DataProcessor: webixLib.webixMod.DataProcessor = js.native
-  var DataRecord: webixLib.webixMod.DataRecordFactory = js.native
+  var DataRecord: DataRecordFactory = js.native
   var DataState: webixLib.webixMod.DataState = js.native
   var DataStore: webixLib.webixMod.DataStore = js.native
-  var DataValue: webixLib.webixMod.DataValueFactory = js.native
+  var DataValue: DataValueFactory = js.native
   var Date: webixLib.webixMod.Date = js.native
   var Destruction: webixLib.webixMod.Destruction = js.native
   var DragControl: webixLib.webixMod.DragControl = js.native
@@ -70,7 +70,7 @@ object ^ extends js.Object {
   var Touch: webixLib.webixMod.Touch = js.native
   var TreeAPI: webixLib.webixMod.TreeAPI = js.native
   var TreeClick: webixLib.webixMod.TreeClick = js.native
-  var TreeCollection: webixLib.webixMod.TreeCollectionFactory = js.native
+  var TreeCollection: TreeCollectionFactory = js.native
   var TreeDataLoader: webixLib.webixMod.TreeDataLoader = js.native
   var TreeDataMove: webixLib.webixMod.TreeDataMove = js.native
   var TreeRenderStack: webixLib.webixMod.TreeRenderStack = js.native
@@ -109,7 +109,7 @@ object ^ extends js.Object {
   def $$(id: stdLib.Event): webixLib.webixMod.uiNs.baseview = js.native
   @JSName("$$")
   def $$(id: stdLib.HTMLElement): webixLib.webixMod.uiNs.baseview = js.native
-  def ajax(): webixLib.webixMod._ajax = js.native
+  def ajax(): _ajax = js.native
   def alert(text: js.Any): stdLib.HTMLElement = js.native
   def alert(text: js.Any, `type`: java.lang.String): stdLib.HTMLElement = js.native
   def alert(text: js.Any, `type`: java.lang.String, callback: webixLib.WebixCallback): stdLib.HTMLElement = js.native

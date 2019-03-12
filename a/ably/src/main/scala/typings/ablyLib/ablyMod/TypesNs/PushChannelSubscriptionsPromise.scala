@@ -16,16 +16,13 @@ trait PushChannelSubscriptionsPromise extends js.Object {
 object PushChannelSubscriptionsPromise {
   @scala.inline
   def apply(
-    list: js.Function1[
-      PushChannelSubscriptionParams, 
-      js.Promise[PaginatedResult[PushChannelSubscription]]
-    ],
-    listChannels: js.Function1[PushChannelsParams, js.Promise[PaginatedResult[java.lang.String]]],
-    remove: js.Function1[PushChannelSubscription, js.Promise[scala.Unit]],
-    removeWhere: js.Function1[PushChannelSubscriptionParams, js.Promise[scala.Unit]],
-    save: js.Function1[PushChannelSubscription, js.Promise[PushChannelSubscription]]
+    list: PushChannelSubscriptionParams => js.Promise[PaginatedResult[PushChannelSubscription]],
+    listChannels: PushChannelsParams => js.Promise[PaginatedResult[java.lang.String]],
+    remove: PushChannelSubscription => js.Promise[scala.Unit],
+    removeWhere: PushChannelSubscriptionParams => js.Promise[scala.Unit],
+    save: PushChannelSubscription => js.Promise[PushChannelSubscription]
   ): PushChannelSubscriptionsPromise = {
-    val __obj = js.Dynamic.literal(list = list, listChannels = listChannels, remove = remove, removeWhere = removeWhere, save = save)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), listChannels = js.Any.fromFunction1(listChannels), remove = js.Any.fromFunction1(remove), removeWhere = js.Any.fromFunction1(removeWhere), save = js.Any.fromFunction1(save))
   
     __obj.asInstanceOf[PushChannelSubscriptionsPromise]
   }

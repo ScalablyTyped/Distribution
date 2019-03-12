@@ -21,18 +21,18 @@ trait Matchers extends js.Object {
 object Matchers {
   @scala.inline
   def apply(
-    toBe: js.Function1[js.Any, scala.Unit],
-    toBeDefined: js.Function0[scala.Unit],
-    toBeFalsy: js.Function0[scala.Unit],
-    toBeGreaterThan: js.Function1[js.Any, scala.Unit],
-    toBeLessThan: js.Function1[js.Any, scala.Unit],
-    toBeNull: js.Function0[scala.Unit],
-    toBeTruthy: js.Function0[scala.Unit],
-    toContain: js.Function1[js.Any, scala.Unit],
-    toEqual: js.Function1[js.Any, scala.Unit],
-    toMatch: js.Function1[js.Any, scala.Unit]
+    toBe: js.Any => scala.Unit,
+    toBeDefined: () => scala.Unit,
+    toBeFalsy: () => scala.Unit,
+    toBeGreaterThan: js.Any => scala.Unit,
+    toBeLessThan: js.Any => scala.Unit,
+    toBeNull: () => scala.Unit,
+    toBeTruthy: () => scala.Unit,
+    toContain: js.Any => scala.Unit,
+    toEqual: js.Any => scala.Unit,
+    toMatch: js.Any => scala.Unit
   ): Matchers = {
-    val __obj = js.Dynamic.literal(toBe = toBe, toBeDefined = toBeDefined, toBeFalsy = toBeFalsy, toBeGreaterThan = toBeGreaterThan, toBeLessThan = toBeLessThan, toBeNull = toBeNull, toBeTruthy = toBeTruthy, toContain = toContain, toEqual = toEqual, toMatch = toMatch)
+    val __obj = js.Dynamic.literal(toBe = js.Any.fromFunction1(toBe), toBeDefined = js.Any.fromFunction0(toBeDefined), toBeFalsy = js.Any.fromFunction0(toBeFalsy), toBeGreaterThan = js.Any.fromFunction1(toBeGreaterThan), toBeLessThan = js.Any.fromFunction1(toBeLessThan), toBeNull = js.Any.fromFunction0(toBeNull), toBeTruthy = js.Any.fromFunction0(toBeTruthy), toContain = js.Any.fromFunction1(toContain), toEqual = js.Any.fromFunction1(toEqual), toMatch = js.Any.fromFunction1(toMatch))
   
     __obj.asInstanceOf[Matchers]
   }

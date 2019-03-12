@@ -43,37 +43,27 @@ object XMutationEvent {
     Target: XEventTarget,
     TimeStamp: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
     Type: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getAttrChange: js.Function0[AttrChangeType],
-    getAttrName: js.Function0[java.lang.String],
-    getBubbles: js.Function0[scala.Boolean],
-    getCancelable: js.Function0[scala.Boolean],
-    getCurrentTarget: js.Function0[XEventTarget],
-    getEventPhase: js.Function0[PhaseType],
-    getNewValue: js.Function0[java.lang.String],
-    getPrevValue: js.Function0[java.lang.String],
-    getRelatedNode: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode],
-    getTarget: js.Function0[XEventTarget],
-    getTimeStamp: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time],
-    getType: js.Function0[java.lang.String],
-    initEvent: js.Function3[java.lang.String, scala.Boolean, scala.Boolean, scala.Unit],
-    initMutationEvent: js.Function8[
-      java.lang.String, 
-      scala.Boolean, 
-      scala.Boolean, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      AttrChangeType, 
-      scala.Unit
-    ],
-    preventDefault: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    stopPropagation: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getAttrChange: () => AttrChangeType,
+    getAttrName: () => java.lang.String,
+    getBubbles: () => scala.Boolean,
+    getCancelable: () => scala.Boolean,
+    getCurrentTarget: () => XEventTarget,
+    getEventPhase: () => PhaseType,
+    getNewValue: () => java.lang.String,
+    getPrevValue: () => java.lang.String,
+    getRelatedNode: () => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode,
+    getTarget: () => XEventTarget,
+    getTimeStamp: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
+    getType: () => java.lang.String,
+    initEvent: (java.lang.String, scala.Boolean, scala.Boolean) => scala.Unit,
+    initMutationEvent: (java.lang.String, scala.Boolean, scala.Boolean, activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, java.lang.String, java.lang.String, java.lang.String, AttrChangeType) => scala.Unit,
+    preventDefault: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    stopPropagation: () => scala.Unit
   ): XMutationEvent = {
-    val __obj = js.Dynamic.literal(AttrChange = AttrChange, AttrName = AttrName, Bubbles = Bubbles, Cancelable = Cancelable, CurrentTarget = CurrentTarget, EventPhase = EventPhase, NewValue = NewValue, PrevValue = PrevValue, RelatedNode = RelatedNode, Target = Target, TimeStamp = TimeStamp, Type = Type, acquire = acquire, getAttrChange = getAttrChange, getAttrName = getAttrName, getBubbles = getBubbles, getCancelable = getCancelable, getCurrentTarget = getCurrentTarget, getEventPhase = getEventPhase, getNewValue = getNewValue, getPrevValue = getPrevValue, getRelatedNode = getRelatedNode, getTarget = getTarget, getTimeStamp = getTimeStamp, getType = getType, initEvent = initEvent, initMutationEvent = initMutationEvent, preventDefault = preventDefault, queryInterface = queryInterface, release = release, stopPropagation = stopPropagation)
+    val __obj = js.Dynamic.literal(AttrChange = AttrChange, AttrName = AttrName, Bubbles = Bubbles, Cancelable = Cancelable, CurrentTarget = CurrentTarget, EventPhase = EventPhase, NewValue = NewValue, PrevValue = PrevValue, RelatedNode = RelatedNode, Target = Target, TimeStamp = TimeStamp, Type = Type, acquire = js.Any.fromFunction0(acquire), getAttrChange = js.Any.fromFunction0(getAttrChange), getAttrName = js.Any.fromFunction0(getAttrName), getBubbles = js.Any.fromFunction0(getBubbles), getCancelable = js.Any.fromFunction0(getCancelable), getCurrentTarget = js.Any.fromFunction0(getCurrentTarget), getEventPhase = js.Any.fromFunction0(getEventPhase), getNewValue = js.Any.fromFunction0(getNewValue), getPrevValue = js.Any.fromFunction0(getPrevValue), getRelatedNode = js.Any.fromFunction0(getRelatedNode), getTarget = js.Any.fromFunction0(getTarget), getTimeStamp = js.Any.fromFunction0(getTimeStamp), getType = js.Any.fromFunction0(getType), initEvent = js.Any.fromFunction3(initEvent), initMutationEvent = js.Any.fromFunction8(initMutationEvent), preventDefault = js.Any.fromFunction0(preventDefault), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), stopPropagation = js.Any.fromFunction0(stopPropagation))
   
     __obj.asInstanceOf[XMutationEvent]
   }

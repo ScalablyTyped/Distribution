@@ -16,9 +16,9 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def dir(config: tmpLib.tmpMod.Options): scala.Unit = js.native
+  def dir(config: Options): scala.Unit = js.native
   def dir(
-    config: tmpLib.tmpMod.Options,
+    config: Options,
     callback: js.Function3[
       /* err */ js.Any, 
       /* path */ java.lang.String, 
@@ -26,8 +26,8 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def dirSync(): tmpLib.tmpMod.SynchrounousResult = js.native
-  def dirSync(config: tmpLib.tmpMod.Options): tmpLib.tmpMod.SynchrounousResult = js.native
+  def dirSync(): SynchrounousResult = js.native
+  def dirSync(config: Options): SynchrounousResult = js.native
   def file(
     callback: js.Function4[
       /* err */ js.Any, 
@@ -37,9 +37,9 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def file(config: tmpLib.tmpMod.Options): scala.Unit = js.native
+  def file(config: Options): scala.Unit = js.native
   def file(
-    config: tmpLib.tmpMod.Options,
+    config: Options,
     callback: js.Function4[
       /* err */ js.Any, 
       /* path */ java.lang.String, 
@@ -48,16 +48,16 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def fileSync(): tmpLib.tmpMod.SynchrounousResult = js.native
-  def fileSync(config: tmpLib.tmpMod.Options): tmpLib.tmpMod.SynchrounousResult = js.native
+  def fileSync(): SynchrounousResult = js.native
+  def fileSync(config: Options): SynchrounousResult = js.native
   def setGracefulCleanup(): scala.Unit = js.native
   def tmpName(callback: js.Function2[/* err */ js.Any, /* path */ java.lang.String, scala.Unit]): scala.Unit = js.native
-  def tmpName(config: tmpLib.tmpMod.SimpleOptions): scala.Unit = js.native
+  def tmpName(config: SimpleOptions): scala.Unit = js.native
   def tmpName(
-    config: tmpLib.tmpMod.SimpleOptions,
+    config: SimpleOptions,
     callback: js.Function2[/* err */ js.Any, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def tmpNameSync(): java.lang.String = js.native
-  def tmpNameSync(config: tmpLib.tmpMod.SimpleOptions): java.lang.String = js.native
+  def tmpNameSync(config: SimpleOptions): java.lang.String = js.native
 }
 

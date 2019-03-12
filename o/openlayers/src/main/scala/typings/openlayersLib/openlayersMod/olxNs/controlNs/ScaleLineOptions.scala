@@ -18,14 +18,14 @@ object ScaleLineOptions {
   def apply(
     className: java.lang.String = null,
     minWidth: scala.Int | scala.Double = null,
-    render: js.Function1[/* event */ openlayersLib.openlayersMod.MapEvent, _] = null,
+    render: /* event */ openlayersLib.openlayersMod.MapEvent => _ = null,
     target: stdLib.Element = null,
     units: openlayersLib.openlayersMod.controlNs.ScaleLineNs.Units | java.lang.String = null
   ): ScaleLineOptions = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (target != null) __obj.updateDynamic("target")(target)
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleLineOptions]

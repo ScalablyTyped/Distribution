@@ -13,12 +13,9 @@ trait JQuery extends js.Object {
 object JQuery {
   @scala.inline
   def apply(
-    window: js.Function1[
-      jqueryDotWindowLib.JQueryWindowNs.WindowOptions, 
-      jqueryDotWindowLib.JQueryWindowNs.Window
-    ]
+    window: jqueryDotWindowLib.JQueryWindowNs.WindowOptions => jqueryDotWindowLib.JQueryWindowNs.Window
   ): JQuery = {
-    val __obj = js.Dynamic.literal(window = window)
+    val __obj = js.Dynamic.literal(window = js.Any.fromFunction1(window))
   
     __obj.asInstanceOf[JQuery]
   }

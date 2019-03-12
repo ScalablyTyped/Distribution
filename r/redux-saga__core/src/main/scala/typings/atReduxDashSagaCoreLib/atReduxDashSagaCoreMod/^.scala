@@ -13,20 +13,17 @@ object ^ extends js.Object {
   val buffers: atReduxDashSagaCoreLib.Anon_Dropping = js.native
   def channel[T](): atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Channel[T] = js.native
   def channel[T](buffer: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Buffer[T]): atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Channel[T] = js.native
-  def default[C /* <: js.Object */](): atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.SagaMiddleware[C] = js.native
-  def default[C /* <: js.Object */](options: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.SagaMiddlewareOptions[C]): atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.SagaMiddleware[C] = js.native
+  def default[C /* <: js.Object */](): SagaMiddleware[C] = js.native
+  def default[C /* <: js.Object */](options: SagaMiddlewareOptions[C]): SagaMiddleware[C] = js.native
   def detach(forkEffect: atReduxDashSagaCoreLib.effectsMod.ForkEffect): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
-  def eventChannel[T](subscribe: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.Subscribe[T]): atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.EventChannel[T] = js.native
-  def eventChannel[T](
-    subscribe: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.Subscribe[T],
-    buffer: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Buffer[T]
-  ): atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.EventChannel[T] = js.native
-  def multicastChannel[T](): atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.MulticastChannel[T] = js.native
+  def eventChannel[T](subscribe: Subscribe[T]): EventChannel[T] = js.native
+  def eventChannel[T](subscribe: Subscribe[T], buffer: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Buffer[T]): EventChannel[T] = js.native
+  def multicastChannel[T](): MulticastChannel[T] = js.native
   def runSaga[Action, State, S /* <: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Saga[js.Array[_]] */](
-    options: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.RunSagaOptions[Action, State],
+    options: RunSagaOptions[Action, State],
     saga: S,
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<S> is not an array type */ args: stdLib.Parameters[S]
   ): atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Task = js.native
-  def stdChannel[T](): atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.MulticastChannel[T] = js.native
+  def stdChannel[T](): MulticastChannel[T] = js.native
 }
 

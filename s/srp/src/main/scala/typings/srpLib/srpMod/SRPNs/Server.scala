@@ -15,12 +15,12 @@ trait Server extends js.Object {
 object Server {
   @scala.inline
   def apply(
-    checkM1: js.Function1[nodeLib.Buffer, nodeLib.Buffer],
-    computeB: js.Function0[nodeLib.Buffer],
-    computeK: js.Function0[nodeLib.Buffer],
-    setA: js.Function1[nodeLib.Buffer, scala.Unit]
+    checkM1: nodeLib.Buffer => nodeLib.Buffer,
+    computeB: () => nodeLib.Buffer,
+    computeK: () => nodeLib.Buffer,
+    setA: nodeLib.Buffer => scala.Unit
   ): Server = {
-    val __obj = js.Dynamic.literal(checkM1 = checkM1, computeB = computeB, computeK = computeK, setA = setA)
+    val __obj = js.Dynamic.literal(checkM1 = js.Any.fromFunction1(checkM1), computeB = js.Any.fromFunction0(computeB), computeK = js.Any.fromFunction0(computeK), setA = js.Any.fromFunction1(setA))
   
     __obj.asInstanceOf[Server]
   }

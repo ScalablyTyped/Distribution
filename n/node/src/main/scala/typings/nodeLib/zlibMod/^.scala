@@ -128,95 +128,59 @@ object ^ extends js.Object {
     * @deprecated
     */
   val Z_VERSION_ERROR: scala.Double = js.native
-  def brotliCompress(buf: nodeLib.zlibMod.InputType, callback: nodeLib.zlibMod.CompressCallback): scala.Unit = js.native
-  def brotliCompress(
-    buf: nodeLib.zlibMod.InputType,
-    options: nodeLib.zlibMod.BrotliOptions,
-    callback: nodeLib.zlibMod.CompressCallback
-  ): scala.Unit = js.native
-  def brotliCompressSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
-  def brotliCompressSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.BrotliOptions): nodeLib.Buffer = js.native
-  def brotliDecompress(buf: nodeLib.zlibMod.InputType, callback: nodeLib.zlibMod.CompressCallback): scala.Unit = js.native
-  def brotliDecompress(
-    buf: nodeLib.zlibMod.InputType,
-    options: nodeLib.zlibMod.BrotliOptions,
-    callback: nodeLib.zlibMod.CompressCallback
-  ): scala.Unit = js.native
-  def brotliDecompressSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
-  def brotliDecompressSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.BrotliOptions): nodeLib.Buffer = js.native
-  def createBrotliCompress(): nodeLib.zlibMod.BrotliCompress = js.native
-  def createBrotliCompress(options: nodeLib.zlibMod.BrotliOptions): nodeLib.zlibMod.BrotliCompress = js.native
-  def createBrotliDecompress(): nodeLib.zlibMod.BrotliDecompress = js.native
-  def createBrotliDecompress(options: nodeLib.zlibMod.BrotliOptions): nodeLib.zlibMod.BrotliDecompress = js.native
-  def createDeflate(): nodeLib.zlibMod.Deflate = js.native
-  def createDeflate(options: nodeLib.zlibMod.ZlibOptions): nodeLib.zlibMod.Deflate = js.native
-  def createDeflateRaw(): nodeLib.zlibMod.DeflateRaw = js.native
-  def createDeflateRaw(options: nodeLib.zlibMod.ZlibOptions): nodeLib.zlibMod.DeflateRaw = js.native
-  def createGunzip(): nodeLib.zlibMod.Gunzip = js.native
-  def createGunzip(options: nodeLib.zlibMod.ZlibOptions): nodeLib.zlibMod.Gunzip = js.native
-  def createGzip(): nodeLib.zlibMod.Gzip = js.native
-  def createGzip(options: nodeLib.zlibMod.ZlibOptions): nodeLib.zlibMod.Gzip = js.native
-  def createInflate(): nodeLib.zlibMod.Inflate = js.native
-  def createInflate(options: nodeLib.zlibMod.ZlibOptions): nodeLib.zlibMod.Inflate = js.native
-  def createInflateRaw(): nodeLib.zlibMod.InflateRaw = js.native
-  def createInflateRaw(options: nodeLib.zlibMod.ZlibOptions): nodeLib.zlibMod.InflateRaw = js.native
-  def createUnzip(): nodeLib.zlibMod.Unzip = js.native
-  def createUnzip(options: nodeLib.zlibMod.ZlibOptions): nodeLib.zlibMod.Unzip = js.native
-  def deflate(buf: nodeLib.zlibMod.InputType, callback: nodeLib.zlibMod.CompressCallback): scala.Unit = js.native
-  def deflate(
-    buf: nodeLib.zlibMod.InputType,
-    options: nodeLib.zlibMod.ZlibOptions,
-    callback: nodeLib.zlibMod.CompressCallback
-  ): scala.Unit = js.native
-  def deflateRaw(buf: nodeLib.zlibMod.InputType, callback: nodeLib.zlibMod.CompressCallback): scala.Unit = js.native
-  def deflateRaw(
-    buf: nodeLib.zlibMod.InputType,
-    options: nodeLib.zlibMod.ZlibOptions,
-    callback: nodeLib.zlibMod.CompressCallback
-  ): scala.Unit = js.native
-  def deflateRawSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
-  def deflateRawSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
-  def deflateSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
-  def deflateSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
-  def gunzip(buf: nodeLib.zlibMod.InputType, callback: nodeLib.zlibMod.CompressCallback): scala.Unit = js.native
-  def gunzip(
-    buf: nodeLib.zlibMod.InputType,
-    options: nodeLib.zlibMod.ZlibOptions,
-    callback: nodeLib.zlibMod.CompressCallback
-  ): scala.Unit = js.native
-  def gunzipSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
-  def gunzipSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
-  def gzip(buf: nodeLib.zlibMod.InputType, callback: nodeLib.zlibMod.CompressCallback): scala.Unit = js.native
-  def gzip(
-    buf: nodeLib.zlibMod.InputType,
-    options: nodeLib.zlibMod.ZlibOptions,
-    callback: nodeLib.zlibMod.CompressCallback
-  ): scala.Unit = js.native
-  def gzipSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
-  def gzipSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
-  def inflate(buf: nodeLib.zlibMod.InputType, callback: nodeLib.zlibMod.CompressCallback): scala.Unit = js.native
-  def inflate(
-    buf: nodeLib.zlibMod.InputType,
-    options: nodeLib.zlibMod.ZlibOptions,
-    callback: nodeLib.zlibMod.CompressCallback
-  ): scala.Unit = js.native
-  def inflateRaw(buf: nodeLib.zlibMod.InputType, callback: nodeLib.zlibMod.CompressCallback): scala.Unit = js.native
-  def inflateRaw(
-    buf: nodeLib.zlibMod.InputType,
-    options: nodeLib.zlibMod.ZlibOptions,
-    callback: nodeLib.zlibMod.CompressCallback
-  ): scala.Unit = js.native
-  def inflateRawSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
-  def inflateRawSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
-  def inflateSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
-  def inflateSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
-  def unzip(buf: nodeLib.zlibMod.InputType, callback: nodeLib.zlibMod.CompressCallback): scala.Unit = js.native
-  def unzip(
-    buf: nodeLib.zlibMod.InputType,
-    options: nodeLib.zlibMod.ZlibOptions,
-    callback: nodeLib.zlibMod.CompressCallback
-  ): scala.Unit = js.native
-  def unzipSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
-  def unzipSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
+  def brotliCompress(buf: InputType, callback: CompressCallback): scala.Unit = js.native
+  def brotliCompress(buf: InputType, options: BrotliOptions, callback: CompressCallback): scala.Unit = js.native
+  def brotliCompressSync(buf: InputType): nodeLib.Buffer = js.native
+  def brotliCompressSync(buf: InputType, options: BrotliOptions): nodeLib.Buffer = js.native
+  def brotliDecompress(buf: InputType, callback: CompressCallback): scala.Unit = js.native
+  def brotliDecompress(buf: InputType, options: BrotliOptions, callback: CompressCallback): scala.Unit = js.native
+  def brotliDecompressSync(buf: InputType): nodeLib.Buffer = js.native
+  def brotliDecompressSync(buf: InputType, options: BrotliOptions): nodeLib.Buffer = js.native
+  def createBrotliCompress(): BrotliCompress = js.native
+  def createBrotliCompress(options: BrotliOptions): BrotliCompress = js.native
+  def createBrotliDecompress(): BrotliDecompress = js.native
+  def createBrotliDecompress(options: BrotliOptions): BrotliDecompress = js.native
+  def createDeflate(): Deflate = js.native
+  def createDeflate(options: ZlibOptions): Deflate = js.native
+  def createDeflateRaw(): DeflateRaw = js.native
+  def createDeflateRaw(options: ZlibOptions): DeflateRaw = js.native
+  def createGunzip(): Gunzip = js.native
+  def createGunzip(options: ZlibOptions): Gunzip = js.native
+  def createGzip(): Gzip = js.native
+  def createGzip(options: ZlibOptions): Gzip = js.native
+  def createInflate(): Inflate = js.native
+  def createInflate(options: ZlibOptions): Inflate = js.native
+  def createInflateRaw(): InflateRaw = js.native
+  def createInflateRaw(options: ZlibOptions): InflateRaw = js.native
+  def createUnzip(): Unzip = js.native
+  def createUnzip(options: ZlibOptions): Unzip = js.native
+  def deflate(buf: InputType, callback: CompressCallback): scala.Unit = js.native
+  def deflate(buf: InputType, options: ZlibOptions, callback: CompressCallback): scala.Unit = js.native
+  def deflateRaw(buf: InputType, callback: CompressCallback): scala.Unit = js.native
+  def deflateRaw(buf: InputType, options: ZlibOptions, callback: CompressCallback): scala.Unit = js.native
+  def deflateRawSync(buf: InputType): nodeLib.Buffer = js.native
+  def deflateRawSync(buf: InputType, options: ZlibOptions): nodeLib.Buffer = js.native
+  def deflateSync(buf: InputType): nodeLib.Buffer = js.native
+  def deflateSync(buf: InputType, options: ZlibOptions): nodeLib.Buffer = js.native
+  def gunzip(buf: InputType, callback: CompressCallback): scala.Unit = js.native
+  def gunzip(buf: InputType, options: ZlibOptions, callback: CompressCallback): scala.Unit = js.native
+  def gunzipSync(buf: InputType): nodeLib.Buffer = js.native
+  def gunzipSync(buf: InputType, options: ZlibOptions): nodeLib.Buffer = js.native
+  def gzip(buf: InputType, callback: CompressCallback): scala.Unit = js.native
+  def gzip(buf: InputType, options: ZlibOptions, callback: CompressCallback): scala.Unit = js.native
+  def gzipSync(buf: InputType): nodeLib.Buffer = js.native
+  def gzipSync(buf: InputType, options: ZlibOptions): nodeLib.Buffer = js.native
+  def inflate(buf: InputType, callback: CompressCallback): scala.Unit = js.native
+  def inflate(buf: InputType, options: ZlibOptions, callback: CompressCallback): scala.Unit = js.native
+  def inflateRaw(buf: InputType, callback: CompressCallback): scala.Unit = js.native
+  def inflateRaw(buf: InputType, options: ZlibOptions, callback: CompressCallback): scala.Unit = js.native
+  def inflateRawSync(buf: InputType): nodeLib.Buffer = js.native
+  def inflateRawSync(buf: InputType, options: ZlibOptions): nodeLib.Buffer = js.native
+  def inflateSync(buf: InputType): nodeLib.Buffer = js.native
+  def inflateSync(buf: InputType, options: ZlibOptions): nodeLib.Buffer = js.native
+  def unzip(buf: InputType, callback: CompressCallback): scala.Unit = js.native
+  def unzip(buf: InputType, options: ZlibOptions, callback: CompressCallback): scala.Unit = js.native
+  def unzipSync(buf: InputType): nodeLib.Buffer = js.native
+  def unzipSync(buf: InputType, options: ZlibOptions): nodeLib.Buffer = js.native
 }
 

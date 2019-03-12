@@ -14,11 +14,11 @@ trait IActionSetPermissions extends js.Object {
 object IActionSetPermissions {
   @scala.inline
   def apply(
-    Clone: js.Function0[IActionSetPermissions],
+    Clone: () => IActionSetPermissions,
     DiscardsAutomaticPermissions: scala.Boolean,
     Permissions: IAccessControlList
   ): IActionSetPermissions = {
-    val __obj = js.Dynamic.literal(Clone = Clone, DiscardsAutomaticPermissions = DiscardsAutomaticPermissions, Permissions = Permissions)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), DiscardsAutomaticPermissions = DiscardsAutomaticPermissions, Permissions = Permissions)
   
     __obj.asInstanceOf[IActionSetPermissions]
   }

@@ -38,17 +38,14 @@ object ojCheckboxsetSettableProperties {
     value: js.Array[_],
     describedBy: java.lang.String = null,
     labelledBy: java.lang.String = null,
-    optionRenderer: js.Function1[
-      /* param0 */ atOracleOraclejetLib.ojcheckboxsetMod.ojCheckboxsetNs.OptionContext[D], 
-      stdLib.Element
-    ] = null,
+    optionRenderer: /* param0 */ atOracleOraclejetLib.ojcheckboxsetMod.ojCheckboxsetNs.OptionContext[D] => stdLib.Element = null,
     options: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null,
     optionsKeys: atOracleOraclejetLib.ojcheckboxsetMod.ojCheckboxsetNs.OptionsKeys = null
   ): ojCheckboxsetSettableProperties[K, D] = {
     val __obj = js.Dynamic.literal(disabled = disabled, displayOptions = displayOptions, help = help, helpHints = helpHints, labelHint = labelHint, messagesCustom = messagesCustom, required = required, translations = translations, valid = valid.asInstanceOf[js.Any], value = value)
     if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
     if (labelledBy != null) __obj.updateDynamic("labelledBy")(labelledBy)
-    if (optionRenderer != null) __obj.updateDynamic("optionRenderer")(optionRenderer)
+    if (optionRenderer != null) __obj.updateDynamic("optionRenderer")(js.Any.fromFunction1(optionRenderer))
     if (options != null) __obj.updateDynamic("options")(options)
     if (optionsKeys != null) __obj.updateDynamic("optionsKeys")(optionsKeys)
     __obj.asInstanceOf[ojCheckboxsetSettableProperties[K, D]]

@@ -13,10 +13,10 @@ trait IVaultExtensionMethodOperations extends js.Object {
 object IVaultExtensionMethodOperations {
   @scala.inline
   def apply(
-    DoesActiveVaultExtensionMethodExist: js.Function1[java.lang.String, scala.Boolean],
-    ExecuteVaultExtensionMethod: js.Function2[java.lang.String, java.lang.String, java.lang.String]
+    DoesActiveVaultExtensionMethodExist: java.lang.String => scala.Boolean,
+    ExecuteVaultExtensionMethod: (java.lang.String, java.lang.String) => java.lang.String
   ): IVaultExtensionMethodOperations = {
-    val __obj = js.Dynamic.literal(DoesActiveVaultExtensionMethodExist = DoesActiveVaultExtensionMethodExist, ExecuteVaultExtensionMethod = ExecuteVaultExtensionMethod)
+    val __obj = js.Dynamic.literal(DoesActiveVaultExtensionMethodExist = js.Any.fromFunction1(DoesActiveVaultExtensionMethodExist), ExecuteVaultExtensionMethod = js.Any.fromFunction2(ExecuteVaultExtensionMethod))
   
     __obj.asInstanceOf[IVaultExtensionMethodOperations]
   }

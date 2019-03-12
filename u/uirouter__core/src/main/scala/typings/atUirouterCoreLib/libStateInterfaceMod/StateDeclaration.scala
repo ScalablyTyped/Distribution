@@ -595,15 +595,11 @@ trait StateDeclaration
 object StateDeclaration {
   @scala.inline
   def apply(
-    $$state: js.Function0[atUirouterCoreLib.libStateStateObjectMod.StateObject] = null,
+    $$state: () => atUirouterCoreLib.libStateStateObjectMod.StateObject = null,
     `abstract`: js.UndefOr[scala.Boolean] = js.undefined,
     data: js.Any = null,
     dynamic: js.UndefOr[scala.Boolean] = js.undefined,
-    lazyLoad: js.Function2[
-      /* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, 
-      /* state */ StateDeclaration, 
-      js.Promise[LazyLoadResult]
-    ] = null,
+    lazyLoad: (/* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, /* state */ StateDeclaration) => js.Promise[LazyLoadResult] = null,
     name: java.lang.String = null,
     onEnter: atUirouterCoreLib.libTransitionInterfaceMod.TransitionStateHookFn = null,
     onExit: atUirouterCoreLib.libTransitionInterfaceMod.TransitionStateHookFn = null,
@@ -624,11 +620,11 @@ object StateDeclaration {
     views: org.scalablytyped.runtime.StringDictionary[_ViewDeclaration] = null
   ): StateDeclaration = {
     val __obj = js.Dynamic.literal()
-    if ($$state != null) __obj.updateDynamic("$$state")($$state)
+    if ($$state != null) __obj.updateDynamic("$$state")(js.Any.fromFunction0($$state))
     if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`)
     if (data != null) __obj.updateDynamic("data")(data)
     if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic)
-    if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(lazyLoad)
+    if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(js.Any.fromFunction2(lazyLoad))
     if (name != null) __obj.updateDynamic("name")(name)
     if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
     if (onExit != null) __obj.updateDynamic("onExit")(onExit)

@@ -43,13 +43,13 @@ object Context {
     accesType: java.lang.String,
     accessToken: AccessToken,
     method: java.lang.String,
-    model: js.Function0[scala.Unit],
+    model: () => scala.Unit,
     modelId: java.lang.String,
     modelName: java.lang.String,
     principals: js.Array[Principal],
     property: java.lang.String
   ): Context = {
-    val __obj = js.Dynamic.literal(accesType = accesType, accessToken = accessToken, method = method, model = model, modelId = modelId, modelName = modelName, principals = principals, property = property)
+    val __obj = js.Dynamic.literal(accesType = accesType, accessToken = accessToken, method = method, model = js.Any.fromFunction0(model), modelId = modelId, modelName = modelName, principals = principals, property = property)
   
     __obj.asInstanceOf[Context]
   }

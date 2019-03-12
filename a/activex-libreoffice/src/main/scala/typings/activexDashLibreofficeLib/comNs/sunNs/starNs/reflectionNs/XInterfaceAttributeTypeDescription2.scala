@@ -16,22 +16,22 @@ trait XInterfaceAttributeTypeDescription2 extends XInterfaceAttributeTypeDescrip
     * Returns the exceptions that can be raised by the attribute's getter.
     * @returns the reflections of all the exceptions that are listed in the `raises` specification of the attribute's getter (if any), in no particular order; a
     */
-  val GetExceptions: activexDashInteropLib.SafeArray[XCompoundTypeDescription]
+  val GetExceptions: stdLib.SafeArray[XCompoundTypeDescription]
   /**
     * Returns the exceptions that can be raised by the attribute's setter.
     * @returns the reflections of all the exceptions that are listed in the `raises` specification of the attribute's setter (if any), in no particular order; a
     */
-  val SetExceptions: activexDashInteropLib.SafeArray[XCompoundTypeDescription]
+  val SetExceptions: stdLib.SafeArray[XCompoundTypeDescription]
   /**
     * Returns the exceptions that can be raised by the attribute's getter.
     * @returns the reflections of all the exceptions that are listed in the `raises` specification of the attribute's getter (if any), in no particular order; a
     */
-  def getGetExceptions(): activexDashInteropLib.SafeArray[XCompoundTypeDescription]
+  def getGetExceptions(): stdLib.SafeArray[XCompoundTypeDescription]
   /**
     * Returns the exceptions that can be raised by the attribute's setter.
     * @returns the reflections of all the exceptions that are listed in the `raises` specification of the attribute's setter (if any), in no particular order; a
     */
-  def getSetExceptions(): activexDashInteropLib.SafeArray[XCompoundTypeDescription]
+  def getSetExceptions(): stdLib.SafeArray[XCompoundTypeDescription]
   /**
     * Returns whether this object reflects a bound attribute.
     * @returns `TRUE` iff this object reflects a bound attribute
@@ -42,27 +42,27 @@ trait XInterfaceAttributeTypeDescription2 extends XInterfaceAttributeTypeDescrip
 object XInterfaceAttributeTypeDescription2 {
   @scala.inline
   def apply(
-    GetExceptions: activexDashInteropLib.SafeArray[XCompoundTypeDescription],
+    GetExceptions: stdLib.SafeArray[XCompoundTypeDescription],
     MemberName: java.lang.String,
     Name: java.lang.String,
     Position: scala.Double,
-    SetExceptions: activexDashInteropLib.SafeArray[XCompoundTypeDescription],
+    SetExceptions: stdLib.SafeArray[XCompoundTypeDescription],
     Type: XTypeDescription,
     TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
-    acquire: js.Function0[scala.Unit],
-    getGetExceptions: js.Function0[activexDashInteropLib.SafeArray[XCompoundTypeDescription]],
-    getMemberName: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getPosition: js.Function0[scala.Double],
-    getSetExceptions: js.Function0[activexDashInteropLib.SafeArray[XCompoundTypeDescription]],
-    getType: js.Function0[XTypeDescription],
-    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
-    isBound: js.Function0[scala.Boolean],
-    isReadOnly: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getGetExceptions: () => stdLib.SafeArray[XCompoundTypeDescription],
+    getMemberName: () => java.lang.String,
+    getName: () => java.lang.String,
+    getPosition: () => scala.Double,
+    getSetExceptions: () => stdLib.SafeArray[XCompoundTypeDescription],
+    getType: () => XTypeDescription,
+    getTypeClass: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    isBound: () => scala.Boolean,
+    isReadOnly: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XInterfaceAttributeTypeDescription2 = {
-    val __obj = js.Dynamic.literal(GetExceptions = GetExceptions, MemberName = MemberName, Name = Name, Position = Position, SetExceptions = SetExceptions, Type = Type, TypeClass = TypeClass, acquire = acquire, getGetExceptions = getGetExceptions, getMemberName = getMemberName, getName = getName, getPosition = getPosition, getSetExceptions = getSetExceptions, getType = getType, getTypeClass = getTypeClass, isBound = isBound, isReadOnly = isReadOnly, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(GetExceptions = GetExceptions, MemberName = MemberName, Name = Name, Position = Position, SetExceptions = SetExceptions, Type = Type, TypeClass = TypeClass, acquire = js.Any.fromFunction0(acquire), getGetExceptions = js.Any.fromFunction0(getGetExceptions), getMemberName = js.Any.fromFunction0(getMemberName), getName = js.Any.fromFunction0(getName), getPosition = js.Any.fromFunction0(getPosition), getSetExceptions = js.Any.fromFunction0(getSetExceptions), getType = js.Any.fromFunction0(getType), getTypeClass = js.Any.fromFunction0(getTypeClass), isBound = js.Any.fromFunction0(isBound), isReadOnly = js.Any.fromFunction0(isReadOnly), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XInterfaceAttributeTypeDescription2]
   }

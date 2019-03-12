@@ -15,13 +15,9 @@ trait IPercentFormatterFactory extends js.Object {
 object IPercentFormatterFactory {
   @scala.inline
   def apply(
-    createPercentFormatter: js.Function2[
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], 
-      java.lang.String, 
-      PercentFormatter
-    ]
+    createPercentFormatter: (winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], java.lang.String) => PercentFormatter
   ): IPercentFormatterFactory = {
-    val __obj = js.Dynamic.literal(createPercentFormatter = createPercentFormatter)
+    val __obj = js.Dynamic.literal(createPercentFormatter = js.Any.fromFunction2(createPercentFormatter))
   
     __obj.asInstanceOf[IPercentFormatterFactory]
   }

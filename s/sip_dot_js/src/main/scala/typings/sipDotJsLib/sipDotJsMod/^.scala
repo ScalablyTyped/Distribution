@@ -14,7 +14,7 @@ object ^ extends js.Object {
   def sanityCheck(): js.Function3[
     /* message */ sipDotJsLib.typesSipDashMessageMod.IncomingRequest | sipDotJsLib.typesSipDashMessageMod.IncomingResponse, 
     /* ua */ sipDotJsLib.typesUaMod.UA, 
-    /* transport */ sipDotJsLib.sipDotJsMod.Transport, 
+    /* transport */ Transport, 
     scala.Boolean
   ] = js.native
 }

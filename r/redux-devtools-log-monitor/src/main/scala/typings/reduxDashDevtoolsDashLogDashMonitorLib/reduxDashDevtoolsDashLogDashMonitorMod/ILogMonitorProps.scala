@@ -48,14 +48,14 @@ object ILogMonitorProps {
     expandActionRoot: js.UndefOr[scala.Boolean] = js.undefined,
     expandStateRoot: js.UndefOr[scala.Boolean] = js.undefined,
     preserveScrollTop: js.UndefOr[scala.Boolean] = js.undefined,
-    select: js.Function1[/* state */ js.Any, _] = null,
+    select: /* state */ js.Any => _ = null,
     theme: java.lang.String | base16Lib.base16Mod.ColorScheme = null
   ): ILogMonitorProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(expandActionRoot)) __obj.updateDynamic("expandActionRoot")(expandActionRoot)
     if (!js.isUndefined(expandStateRoot)) __obj.updateDynamic("expandStateRoot")(expandStateRoot)
     if (!js.isUndefined(preserveScrollTop)) __obj.updateDynamic("preserveScrollTop")(preserveScrollTop)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILogMonitorProps]
   }

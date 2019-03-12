@@ -31,16 +31,16 @@ object ImageProps {
     src: java.lang.String,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     fit: gestaltLib.gestaltLibStrings.cover | gestaltLib.gestaltLibStrings.contain | gestaltLib.gestaltLibStrings.none = null,
-    onError: js.Function0[scala.Unit] = null,
-    onLoad: js.Function0[scala.Unit] = null,
+    onError: () => scala.Unit = null,
+    onLoad: () => scala.Unit = null,
     size: java.lang.String = null,
     srcSet: java.lang.String = null
   ): ImageProps = {
     val __obj = js.Dynamic.literal(alt = alt, color = color, naturalHeight = naturalHeight, naturalWidth = naturalWidth, src = src)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (fit != null) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction0(onError))
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
     if (size != null) __obj.updateDynamic("size")(size)
     if (srcSet != null) __obj.updateDynamic("srcSet")(srcSet)
     __obj.asInstanceOf[ImageProps]

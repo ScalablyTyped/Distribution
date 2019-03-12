@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.Axis")
 @js.native
 class Axis protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var AxisBetweenCategories: scala.Boolean = js.native
   val AxisGroup: XlAxisGroup = js.native
-  val AxisTitle: AxisTitle = js.native
+  val AxisTitle: activexDashExcelLib.ExcelNs.AxisTitle = js.native
   var BaseUnit: XlTimeUnit = js.native
   var BaseUnitIsAuto: scala.Boolean = js.native
-  val Border: Border = js.native
-  var CategoryNames: activexDashInteropLib.SafeArray[java.lang.String] | Range = js.native
+  val Border: activexDashExcelLib.ExcelNs.Border = js.native
+  var CategoryNames: stdLib.SafeArray[java.lang.String] | Range = js.native
   var CategoryType: XlCategoryType = js.native
   val Creator: XlCreator = js.native
   var Crosses: XlAxisCrosses = js.native
   var CrossesAt: scala.Double = js.native
   var DisplayUnit: XlDisplayUnit = js.native
   var DisplayUnitCustom: scala.Double = js.native
-  val DisplayUnitLabel: DisplayUnitLabel = js.native
+  val DisplayUnitLabel: activexDashExcelLib.ExcelNs.DisplayUnitLabel = js.native
   var `Excel.Axis_typekey`: Axis = js.native
   val Format: ChartFormat = js.native
   var HasDisplayUnitLabel: scala.Boolean = js.native
@@ -52,7 +52,7 @@ class Axis protected () extends js.Object {
   var TickLabelPosition: XlTickLabelPosition = js.native
   var TickLabelSpacing: scala.Double = js.native
   var TickLabelSpacingIsAuto: scala.Boolean = js.native
-  val TickLabels: TickLabels = js.native
+  val TickLabels: activexDashExcelLib.ExcelNs.TickLabels = js.native
   var TickMarkSpacing: scala.Double = js.native
   val Top: scala.Double = js.native
   var Type: XlAxisType = js.native

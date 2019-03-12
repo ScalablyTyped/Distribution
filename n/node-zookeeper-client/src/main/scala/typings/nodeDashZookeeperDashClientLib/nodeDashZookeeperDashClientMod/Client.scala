@@ -44,97 +44,97 @@ trait Client
   def connect(): scala.Unit = js.native
   def create(
     path: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def create(
     path: java.lang.String,
     dataOrAclsOrmode1: nodeLib.Buffer | js.Array[ACL] | scala.Double,
     dataOrAclsOrmode2: nodeLib.Buffer | js.Array[ACL] | scala.Double,
     dataOrAclsOrmode3: nodeLib.Buffer | js.Array[ACL] | scala.Double,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def create(
     path: java.lang.String,
     dataOrAclsOrmode1: js.Array[ACL],
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def create(
     path: java.lang.String,
     dataOrAclsOrmode1: js.Array[ACL],
     dataOrAclsOrmode2: js.Array[ACL],
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def create(
     path: java.lang.String,
     dataOrAclsOrmode1: js.Array[ACL],
     dataOrAclsOrmode2: nodeLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def create(
     path: java.lang.String,
     dataOrAclsOrmode1: js.Array[ACL],
     dataOrAclsOrmode2: scala.Double,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def create(
     path: java.lang.String,
     dataOrAclsOrmode1: nodeLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def create(
     path: java.lang.String,
     dataOrAclsOrmode1: nodeLib.Buffer,
     dataOrAclsOrmode2: js.Array[ACL],
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def create(
     path: java.lang.String,
     dataOrAclsOrmode1: nodeLib.Buffer,
     dataOrAclsOrmode2: nodeLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def create(
     path: java.lang.String,
     dataOrAclsOrmode1: nodeLib.Buffer,
     dataOrAclsOrmode2: scala.Double,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def create(
     path: java.lang.String,
     dataOrAclsOrmode1: scala.Double,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def create(
     path: java.lang.String,
     dataOrAclsOrmode1: scala.Double,
     dataOrAclsOrmode2: js.Array[ACL],
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def create(
     path: java.lang.String,
     dataOrAclsOrmode1: scala.Double,
     dataOrAclsOrmode2: nodeLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def create(
     path: java.lang.String,
     dataOrAclsOrmode1: scala.Double,
     dataOrAclsOrmode2: scala.Double,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def exists(
     path: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* stat */ Stat, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* stat */ Stat, scala.Unit]
   ): scala.Unit = js.native
   def exists(
     path: java.lang.String,
     watcher: js.Function1[/* event */ Event, scala.Unit],
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* stat */ Stat, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* stat */ Stat, scala.Unit]
   ): scala.Unit = js.native
   def getACL(
     path: java.lang.String,
     callback: js.Function3[
-      /* error */ nodeLib.Error | Exception, 
+      /* error */ stdLib.Error | Exception, 
       /* acls */ js.Array[ACL], 
       /* stat */ Stat, 
       scala.Unit
@@ -143,7 +143,7 @@ trait Client
   def getChildren(
     path: java.lang.String,
     callback: js.Function3[
-      /* error */ nodeLib.Error | Exception, 
+      /* error */ stdLib.Error | Exception, 
       /* children */ js.Array[java.lang.String], 
       /* stat */ Stat, 
       scala.Unit
@@ -153,7 +153,7 @@ trait Client
     path: java.lang.String,
     watcher: js.Function1[/* event */ Event, scala.Unit],
     callback: js.Function3[
-      /* error */ nodeLib.Error | Exception, 
+      /* error */ stdLib.Error | Exception, 
       /* children */ js.Array[java.lang.String], 
       /* stat */ Stat, 
       scala.Unit
@@ -162,7 +162,7 @@ trait Client
   def getData(
     path: java.lang.String,
     callback: js.Function3[
-      /* error */ nodeLib.Error | Exception, 
+      /* error */ stdLib.Error | Exception, 
       /* data */ nodeLib.Buffer, 
       /* stat */ Stat, 
       scala.Unit
@@ -172,7 +172,7 @@ trait Client
     path: java.lang.String,
     watcher: js.Function1[/* event */ Event, scala.Unit],
     callback: js.Function3[
-      /* error */ nodeLib.Error | Exception, 
+      /* error */ stdLib.Error | Exception, 
       /* data */ nodeLib.Buffer, 
       /* stat */ Stat, 
       scala.Unit
@@ -184,83 +184,83 @@ trait Client
   def getState(): State = js.native
   def mkdirp(
     path: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def mkdirp(
     path: java.lang.String,
     dataOrAclsOrmode1: nodeLib.Buffer | js.Array[ACL] | scala.Double,
     dataOrAclsOrmode2: nodeLib.Buffer | js.Array[ACL] | scala.Double,
     dataOrAclsOrmode3: nodeLib.Buffer | js.Array[ACL] | scala.Double,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def mkdirp(
     path: java.lang.String,
     dataOrAclsOrmode1: js.Array[ACL],
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def mkdirp(
     path: java.lang.String,
     dataOrAclsOrmode1: js.Array[ACL],
     dataOrAclsOrmode2: js.Array[ACL],
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def mkdirp(
     path: java.lang.String,
     dataOrAclsOrmode1: js.Array[ACL],
     dataOrAclsOrmode2: nodeLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def mkdirp(
     path: java.lang.String,
     dataOrAclsOrmode1: js.Array[ACL],
     dataOrAclsOrmode2: scala.Double,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def mkdirp(
     path: java.lang.String,
     dataOrAclsOrmode1: nodeLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def mkdirp(
     path: java.lang.String,
     dataOrAclsOrmode1: nodeLib.Buffer,
     dataOrAclsOrmode2: js.Array[ACL],
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def mkdirp(
     path: java.lang.String,
     dataOrAclsOrmode1: nodeLib.Buffer,
     dataOrAclsOrmode2: nodeLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def mkdirp(
     path: java.lang.String,
     dataOrAclsOrmode1: nodeLib.Buffer,
     dataOrAclsOrmode2: scala.Double,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def mkdirp(
     path: java.lang.String,
     dataOrAclsOrmode1: scala.Double,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def mkdirp(
     path: java.lang.String,
     dataOrAclsOrmode1: scala.Double,
     dataOrAclsOrmode2: js.Array[ACL],
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def mkdirp(
     path: java.lang.String,
     dataOrAclsOrmode1: scala.Double,
     dataOrAclsOrmode2: nodeLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def mkdirp(
     path: java.lang.String,
     dataOrAclsOrmode1: scala.Double,
     dataOrAclsOrmode2: scala.Double,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def on(event: java.lang.String, cb: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
@@ -324,44 +324,44 @@ trait Client
     event: nodeDashZookeeperDashClientLib.nodeDashZookeeperDashClientLibStrings.state,
     cb: js.Function1[/* state */ State, scala.Unit]
   ): this.type = js.native
-  def remove(path: java.lang.String, callback: js.Function1[/* error */ nodeLib.Error | Exception, scala.Unit]): scala.Unit = js.native
+  def remove(path: java.lang.String, callback: js.Function1[/* error */ stdLib.Error | Exception, scala.Unit]): scala.Unit = js.native
   def remove(
     path: java.lang.String,
     version: scala.Double,
-    callback: js.Function1[/* error */ nodeLib.Error | Exception, scala.Unit]
+    callback: js.Function1[/* error */ stdLib.Error | Exception, scala.Unit]
   ): scala.Unit = js.native
   def setACL(
     path: java.lang.String,
     acls: js.Array[ACL],
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* stat */ Stat, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* stat */ Stat, scala.Unit]
   ): scala.Unit = js.native
   def setACL(
     path: java.lang.String,
     acls: js.Array[ACL],
     version: scala.Double,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* stat */ Stat, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* stat */ Stat, scala.Unit]
   ): scala.Unit = js.native
   def setData(
     path: java.lang.String,
     data: nodeLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* stat */ Stat, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* stat */ Stat, scala.Unit]
   ): scala.Unit = js.native
   def setData(
     path: java.lang.String,
     data: nodeLib.Buffer,
     version: scala.Double,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* stat */ Stat, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* stat */ Stat, scala.Unit]
   ): scala.Unit = js.native
   def setData(
     path: java.lang.String,
     data: scala.Null,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* stat */ Stat, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* stat */ Stat, scala.Unit]
   ): scala.Unit = js.native
   def setData(
     path: java.lang.String,
     data: scala.Null,
     version: scala.Double,
-    callback: js.Function2[/* error */ nodeLib.Error | Exception, /* stat */ Stat, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | Exception, /* stat */ Stat, scala.Unit]
   ): scala.Unit = js.native
   def transaction(): Transaction = js.native
 }

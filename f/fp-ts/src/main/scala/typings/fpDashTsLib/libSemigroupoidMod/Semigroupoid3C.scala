@@ -16,13 +16,9 @@ object Semigroupoid3C {
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS3 */, U](
     URI: F,
     _U: U,
-    compose: js.Function2[
-      fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any]
-    ]
+    compose: (fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any], fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any]
   ): Semigroupoid3C[F, U] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], compose = compose)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], compose = js.Any.fromFunction2(compose))
   
     __obj.asInstanceOf[Semigroupoid3C[F, U]]
   }

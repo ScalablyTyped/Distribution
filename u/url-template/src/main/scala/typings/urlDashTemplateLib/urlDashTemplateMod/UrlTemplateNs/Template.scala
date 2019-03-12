@@ -11,8 +11,8 @@ trait Template extends js.Object {
 
 object Template {
   @scala.inline
-  def apply(expand: js.Function1[js.Any, java.lang.String]): Template = {
-    val __obj = js.Dynamic.literal(expand = expand)
+  def apply(expand: js.Any => java.lang.String): Template = {
+    val __obj = js.Dynamic.literal(expand = js.Any.fromFunction1(expand))
   
     __obj.asInstanceOf[Template]
   }

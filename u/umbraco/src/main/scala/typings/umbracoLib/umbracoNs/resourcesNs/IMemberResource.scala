@@ -121,19 +121,14 @@ trait IMemberResource extends js.Object {
 object IMemberResource {
   @scala.inline
   def apply(
-    deleteByKey: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
-    getByKey: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
-    getListNode: js.Function1[java.lang.String, js.Any],
-    getPagedResults: js.Function2[java.lang.String, js.Any, js.Any],
-    getScaffold: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
-    save: js.Function3[
-      js.Object, 
-      scala.Boolean, 
-      js.Array[_], 
-      angularLib.angularMod.angularNs.IPromise[IResourcePromise]
-    ]
+    deleteByKey: java.lang.String => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
+    getByKey: java.lang.String => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
+    getListNode: java.lang.String => js.Any,
+    getPagedResults: (java.lang.String, js.Any) => js.Any,
+    getScaffold: java.lang.String => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
+    save: (js.Object, scala.Boolean, js.Array[_]) => angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   ): IMemberResource = {
-    val __obj = js.Dynamic.literal(deleteByKey = deleteByKey, getByKey = getByKey, getListNode = getListNode, getPagedResults = getPagedResults, getScaffold = getScaffold, save = save)
+    val __obj = js.Dynamic.literal(deleteByKey = js.Any.fromFunction1(deleteByKey), getByKey = js.Any.fromFunction1(getByKey), getListNode = js.Any.fromFunction1(getListNode), getPagedResults = js.Any.fromFunction2(getPagedResults), getScaffold = js.Any.fromFunction1(getScaffold), save = js.Any.fromFunction3(save))
   
     __obj.asInstanceOf[IMemberResource]
   }

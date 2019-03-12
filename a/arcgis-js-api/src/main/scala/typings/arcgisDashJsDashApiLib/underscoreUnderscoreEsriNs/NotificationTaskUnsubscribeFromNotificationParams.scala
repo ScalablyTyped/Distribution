@@ -32,12 +32,12 @@ object NotificationTaskUnsubscribeFromNotificationParams {
   def apply(
     constructor: js.Function,
     email: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     notificationTypeId: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     user: java.lang.String
   ): NotificationTaskUnsubscribeFromNotificationParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, email = email, hasOwnProperty = hasOwnProperty, notificationTypeId = notificationTypeId, propertyIsEnumerable = propertyIsEnumerable, user = user)
+    val __obj = js.Dynamic.literal(constructor = constructor, email = email, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), notificationTypeId = notificationTypeId, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user)
   
     __obj.asInstanceOf[NotificationTaskUnsubscribeFromNotificationParams]
   }

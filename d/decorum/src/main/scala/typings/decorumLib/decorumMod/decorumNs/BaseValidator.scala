@@ -46,14 +46,14 @@ trait BaseValidator extends js.Object {
 object BaseValidator {
   @scala.inline
   def apply(
-    getCustomMessage: js.Function1[IMessageOpts, java.lang.String],
-    getKey: js.Function0[java.lang.String],
-    getMessage: js.Function1[IMessageOpts, java.lang.String],
+    getCustomMessage: IMessageOpts => java.lang.String,
+    getKey: () => java.lang.String,
+    getMessage: IMessageOpts => java.lang.String,
     hasCustomMessage: scala.Boolean,
-    isValid: js.Function2[js.Any, js.Any, scala.Boolean],
-    validatesEmptyValue: js.Function0[scala.Boolean]
+    isValid: (js.Any, js.Any) => scala.Boolean,
+    validatesEmptyValue: () => scala.Boolean
   ): BaseValidator = {
-    val __obj = js.Dynamic.literal(getCustomMessage = getCustomMessage, getKey = getKey, getMessage = getMessage, hasCustomMessage = hasCustomMessage, isValid = isValid, validatesEmptyValue = validatesEmptyValue)
+    val __obj = js.Dynamic.literal(getCustomMessage = js.Any.fromFunction1(getCustomMessage), getKey = js.Any.fromFunction0(getKey), getMessage = js.Any.fromFunction1(getMessage), hasCustomMessage = hasCustomMessage, isValid = js.Any.fromFunction2(isValid), validatesEmptyValue = js.Any.fromFunction0(validatesEmptyValue))
   
     __obj.asInstanceOf[BaseValidator]
   }

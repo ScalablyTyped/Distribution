@@ -45,20 +45,11 @@ trait TestMatricesResource extends js.Object {
 object TestMatricesResource {
   @scala.inline
   def apply(
-    cancel: js.Function1[
-      gapiDotClientDotTestingLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CancelTestMatrixResponse]
-    ],
-    create: js.Function1[
-      gapiDotClientDotTestingLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TestMatrix]
-    ],
-    get: js.Function1[
-      gapiDotClientDotTestingLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TestMatrix]
-    ]
+    cancel: gapiDotClientDotTestingLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[CancelTestMatrixResponse],
+    create: gapiDotClientDotTestingLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[TestMatrix],
+    get: gapiDotClientDotTestingLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[TestMatrix]
   ): TestMatricesResource = {
-    val __obj = js.Dynamic.literal(cancel = cancel, create = create, get = get)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[TestMatricesResource]
   }

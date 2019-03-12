@@ -13,7 +13,7 @@ object ^ extends js.Object {
   def format(format: js.Any, param: js.Any*): java.lang.String = js.native
   def inherits(constructor: js.Any, superConstructor: js.Any): scala.Unit = js.native
   def inspect(`object`: js.Any): java.lang.String = js.native
-  def inspect(`object`: js.Any, options: easyDashXapiDashSupertestLib.utilMod.InspectOptions): java.lang.String = js.native
+  def inspect(`object`: js.Any, options: InspectOptions): java.lang.String = js.native
   def inspect(`object`: js.Any, showHidden: scala.Boolean): java.lang.String = js.native
   def inspect(`object`: js.Any, showHidden: scala.Boolean, depth: scala.Double): java.lang.String = js.native
   def inspect(`object`: js.Any, showHidden: scala.Boolean, depth: scala.Double, color: scala.Boolean): java.lang.String = js.native

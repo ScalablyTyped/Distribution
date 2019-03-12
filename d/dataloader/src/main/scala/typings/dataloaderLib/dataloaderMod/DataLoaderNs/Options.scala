@@ -43,14 +43,14 @@ object Options {
   def apply[K, V](
     batch: js.UndefOr[scala.Boolean] = js.undefined,
     cache: js.UndefOr[scala.Boolean] = js.undefined,
-    cacheKeyFn: js.Function1[/* key */ js.Any, _] = null,
+    cacheKeyFn: /* key */ js.Any => _ = null,
     cacheMap: CacheMap[K, js.Promise[V]] = null,
     maxBatchSize: scala.Int | scala.Double = null
   ): Options[K, V] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(batch)) __obj.updateDynamic("batch")(batch)
     if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (cacheKeyFn != null) __obj.updateDynamic("cacheKeyFn")(cacheKeyFn)
+    if (cacheKeyFn != null) __obj.updateDynamic("cacheKeyFn")(js.Any.fromFunction1(cacheKeyFn))
     if (cacheMap != null) __obj.updateDynamic("cacheMap")(cacheMap)
     if (maxBatchSize != null) __obj.updateDynamic("maxBatchSize")(maxBatchSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[K, V]]

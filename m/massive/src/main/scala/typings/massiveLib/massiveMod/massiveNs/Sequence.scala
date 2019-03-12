@@ -23,11 +23,11 @@ trait Sequence extends js.Object {
 object Sequence {
   @scala.inline
   def apply(
-    lastValue: js.Function0[js.Promise[java.lang.String]],
-    nextValue: js.Function0[js.Promise[java.lang.String]],
-    reset: js.Function1[scala.Double, js.Promise[scala.Unit]]
+    lastValue: () => js.Promise[java.lang.String],
+    nextValue: () => js.Promise[java.lang.String],
+    reset: scala.Double => js.Promise[scala.Unit]
   ): Sequence = {
-    val __obj = js.Dynamic.literal(lastValue = lastValue, nextValue = nextValue, reset = reset)
+    val __obj = js.Dynamic.literal(lastValue = js.Any.fromFunction0(lastValue), nextValue = js.Any.fromFunction0(nextValue), reset = js.Any.fromFunction1(reset))
   
     __obj.asInstanceOf[Sequence]
   }

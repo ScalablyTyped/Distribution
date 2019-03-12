@@ -46,15 +46,15 @@ trait XViewCursor
 object XViewCursor {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    goDown: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
-    goLeft: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
-    goRight: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
-    goUp: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    goDown: (scala.Double, scala.Boolean) => scala.Boolean,
+    goLeft: (scala.Double, scala.Boolean) => scala.Boolean,
+    goRight: (scala.Double, scala.Boolean) => scala.Boolean,
+    goUp: (scala.Double, scala.Boolean) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XViewCursor = {
-    val __obj = js.Dynamic.literal(acquire = acquire, goDown = goDown, goLeft = goLeft, goRight = goRight, goUp = goUp, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), goDown = js.Any.fromFunction2(goDown), goLeft = js.Any.fromFunction2(goLeft), goRight = js.Any.fromFunction2(goRight), goUp = js.Any.fromFunction2(goUp), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XViewCursor]
   }

@@ -19,7 +19,7 @@ class Window protected () extends js.Object {
   val LinkedWindows_Original: LinkedWindows = js.native
   var Top: scala.Double = js.native
   val Type: vbext_WindowType = js.native
-  val VBE: VBE = js.native
+  val VBE: activexDashVbideLib.VBIDENs.VBE = js.native
   var `VBIDE.Window_typekey`: Window = js.native
   var Visible: scala.Boolean = js.native
   var Width: scala.Double = js.native

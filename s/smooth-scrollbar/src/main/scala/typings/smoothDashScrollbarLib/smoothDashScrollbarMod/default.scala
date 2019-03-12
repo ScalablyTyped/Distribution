@@ -44,7 +44,7 @@ object default extends js.Object {
   /**
     * Returns an array that contains all scrollbar instances
     */
-  def getAll(): coreDashJsLib.Array[smoothDashScrollbarLib.scrollbarMod.Scrollbar] = js.native
+  def getAll(): js.Array[smoothDashScrollbarLib.scrollbarMod.Scrollbar] = js.native
   /**
     * Check if there is a scrollbar on given element
     *
@@ -67,8 +67,8 @@ object default extends js.Object {
     *
     * @param options Initial options
     */
-  def initAll(): coreDashJsLib.Array[smoothDashScrollbarLib.scrollbarMod.Scrollbar] = js.native
-  def initAll(options: stdLib.Partial[smoothDashScrollbarLib.interfacesScrollbarMod.ScrollbarOptions]): coreDashJsLib.Array[smoothDashScrollbarLib.scrollbarMod.Scrollbar] = js.native
+  def initAll(): js.Array[smoothDashScrollbarLib.scrollbarMod.Scrollbar] = js.native
+  def initAll(options: stdLib.Partial[smoothDashScrollbarLib.interfacesScrollbarMod.ScrollbarOptions]): js.Array[smoothDashScrollbarLib.scrollbarMod.Scrollbar] = js.native
   /**
     * Attaches plugins to scrollbars
     *

@@ -33,49 +33,49 @@ trait ListBoxOptions extends js.Object {
 object ListBoxOptions {
   @scala.inline
   def apply(
-    add: js.Function1[/* e */ ListBoxAddEvent, scala.Unit] = null,
+    add: /* e */ ListBoxAddEvent => scala.Unit = null,
     autoBind: js.UndefOr[scala.Boolean] = js.undefined,
-    change: js.Function1[/* e */ ListBoxEvent, scala.Unit] = null,
+    change: /* e */ ListBoxEvent => scala.Unit = null,
     connectWith: java.lang.String = null,
-    dataBound: js.Function1[/* e */ ListBoxEvent, scala.Unit] = null,
+    dataBound: /* e */ ListBoxEvent => scala.Unit = null,
     dataSource: js.Any | kendoDashUiLib.kendoNs.dataNs.DataSource = null,
     dataTextField: java.lang.String = null,
     dataValueField: java.lang.String = null,
-    drag: js.Function1[/* e */ ListBoxDragEvent, scala.Unit] = null,
-    dragend: js.Function1[/* e */ ListBoxDragendEvent, scala.Unit] = null,
+    drag: /* e */ ListBoxDragEvent => scala.Unit = null,
+    dragend: /* e */ ListBoxDragendEvent => scala.Unit = null,
     draggable: scala.Boolean | ListBoxDraggable = null,
-    dragstart: js.Function1[/* e */ ListBoxDragstartEvent, scala.Unit] = null,
-    drop: js.Function1[/* e */ ListBoxDropEvent, scala.Unit] = null,
+    dragstart: /* e */ ListBoxDragstartEvent => scala.Unit = null,
+    drop: /* e */ ListBoxDropEvent => scala.Unit = null,
     dropSources: js.Any = null,
     messages: ListBoxMessages = null,
     name: java.lang.String = null,
     navigatable: js.UndefOr[scala.Boolean] = js.undefined,
-    remove: js.Function1[/* e */ ListBoxRemoveEvent, scala.Unit] = null,
-    reorder: js.Function1[/* e */ ListBoxReorderEvent, scala.Unit] = null,
+    remove: /* e */ ListBoxRemoveEvent => scala.Unit = null,
+    reorder: /* e */ ListBoxReorderEvent => scala.Unit = null,
     selectable: java.lang.String = null,
     template: java.lang.String | js.Function = null,
     toolbar: ListBoxToolbar = null
   ): ListBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (add != null) __obj.updateDynamic("add")(add)
+    if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction1(add))
     if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind)
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (connectWith != null) __obj.updateDynamic("connectWith")(connectWith)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (dataTextField != null) __obj.updateDynamic("dataTextField")(dataTextField)
     if (dataValueField != null) __obj.updateDynamic("dataValueField")(dataValueField)
-    if (drag != null) __obj.updateDynamic("drag")(drag)
-    if (dragend != null) __obj.updateDynamic("dragend")(dragend)
+    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1(drag))
+    if (dragend != null) __obj.updateDynamic("dragend")(js.Any.fromFunction1(dragend))
     if (draggable != null) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (dragstart != null) __obj.updateDynamic("dragstart")(dragstart)
-    if (drop != null) __obj.updateDynamic("drop")(drop)
+    if (dragstart != null) __obj.updateDynamic("dragstart")(js.Any.fromFunction1(dragstart))
+    if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction1(drop))
     if (dropSources != null) __obj.updateDynamic("dropSources")(dropSources)
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (reorder != null) __obj.updateDynamic("reorder")(reorder)
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
+    if (reorder != null) __obj.updateDynamic("reorder")(js.Any.fromFunction1(reorder))
     if (selectable != null) __obj.updateDynamic("selectable")(selectable)
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar)

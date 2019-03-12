@@ -12,9 +12,7 @@ object ^ extends js.Object {
   /** Fired when a registered command is activated using a keyboard shortcut. */
   val onCommand: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* command */ java.lang.String, scala.Unit]] = js.native
   /** Returns all the registered extension commands for this extension and their shortcut (if active). */
-  def getAll(): js.Promise[
-    js.UndefOr[js.Array[firefoxDashWebextDashBrowserLib.browserNs.commandsNs.Command]]
-  ] = js.native
+  def getAll(): js.Promise[js.UndefOr[js.Array[Command]]] = js.native
   /**
     * Reset a command's details to what is specified in the manifest.
     * @param name The name of the command.

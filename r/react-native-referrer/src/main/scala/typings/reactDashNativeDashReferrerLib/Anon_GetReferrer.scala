@@ -11,8 +11,8 @@ trait Anon_GetReferrer extends js.Object {
 
 object Anon_GetReferrer {
   @scala.inline
-  def apply(getReferrer: js.Function0[js.Promise[java.lang.String]]): Anon_GetReferrer = {
-    val __obj = js.Dynamic.literal(getReferrer = getReferrer)
+  def apply(getReferrer: () => js.Promise[java.lang.String]): Anon_GetReferrer = {
+    val __obj = js.Dynamic.literal(getReferrer = js.Any.fromFunction0(getReferrer))
   
     __obj.asInstanceOf[Anon_GetReferrer]
   }

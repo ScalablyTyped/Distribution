@@ -34,29 +34,29 @@ trait ASPxClientHtmlEditorFlashDialog extends ASPxClientHtmlEditorMediaDialogBas
 object ASPxClientHtmlEditorFlashDialog {
   @scala.inline
   def apply(
-    GetAllowFullscreenCheckBox: js.Function0[ASPxClientCheckBox],
-    GetAutoPlayCheckBox: js.Function0[ASPxClientCheckBox],
-    GetBorderColorColorEdit: js.Function0[ASPxClientColorEdit],
-    GetBorderStyleComboBox: js.Function0[ASPxClientComboBox],
-    GetBorderWidthSpinEdit: js.Function0[ASPxClientSpinEdit],
-    GetBottomMarginTextBox: js.Function0[ASPxClientTextBox],
-    GetCancelButton: js.Function0[ASPxClientButton],
-    GetCssClassNameComboBox: js.Function0[ASPxClientComboBox],
-    GetEnableFlashMenuCheckBox: js.Function0[ASPxClientCheckBox],
-    GetFormLayout: js.Function0[ASPxClientFormLayout],
-    GetHeightSpinEdit: js.Function0[ASPxClientSpinEdit],
-    GetLeftMarginTextBox: js.Function0[ASPxClientTextBox],
-    GetLoopCheckBox: js.Function0[ASPxClientCheckBox],
-    GetMediaFileSelector: js.Function0[ASPxClientMediaFileSelector],
-    GetMoreOptionsCheckBox: js.Function0[ASPxClientCheckBox],
-    GetOkButton: js.Function0[ASPxClientButton],
-    GetPositionComboBox: js.Function0[ASPxClientComboBox],
-    GetQualityComboBox: js.Function0[ASPxClientComboBox],
-    GetRightMarginTextBox: js.Function0[ASPxClientTextBox],
-    GetTopMarginTextBox: js.Function0[ASPxClientTextBox],
-    GetWidthSpinEdit: js.Function0[ASPxClientSpinEdit]
+    GetAllowFullscreenCheckBox: () => ASPxClientCheckBox,
+    GetAutoPlayCheckBox: () => ASPxClientCheckBox,
+    GetBorderColorColorEdit: () => ASPxClientColorEdit,
+    GetBorderStyleComboBox: () => ASPxClientComboBox,
+    GetBorderWidthSpinEdit: () => ASPxClientSpinEdit,
+    GetBottomMarginTextBox: () => ASPxClientTextBox,
+    GetCancelButton: () => ASPxClientButton,
+    GetCssClassNameComboBox: () => ASPxClientComboBox,
+    GetEnableFlashMenuCheckBox: () => ASPxClientCheckBox,
+    GetFormLayout: () => ASPxClientFormLayout,
+    GetHeightSpinEdit: () => ASPxClientSpinEdit,
+    GetLeftMarginTextBox: () => ASPxClientTextBox,
+    GetLoopCheckBox: () => ASPxClientCheckBox,
+    GetMediaFileSelector: () => ASPxClientMediaFileSelector,
+    GetMoreOptionsCheckBox: () => ASPxClientCheckBox,
+    GetOkButton: () => ASPxClientButton,
+    GetPositionComboBox: () => ASPxClientComboBox,
+    GetQualityComboBox: () => ASPxClientComboBox,
+    GetRightMarginTextBox: () => ASPxClientTextBox,
+    GetTopMarginTextBox: () => ASPxClientTextBox,
+    GetWidthSpinEdit: () => ASPxClientSpinEdit
   ): ASPxClientHtmlEditorFlashDialog = {
-    val __obj = js.Dynamic.literal(GetAllowFullscreenCheckBox = GetAllowFullscreenCheckBox, GetAutoPlayCheckBox = GetAutoPlayCheckBox, GetBorderColorColorEdit = GetBorderColorColorEdit, GetBorderStyleComboBox = GetBorderStyleComboBox, GetBorderWidthSpinEdit = GetBorderWidthSpinEdit, GetBottomMarginTextBox = GetBottomMarginTextBox, GetCancelButton = GetCancelButton, GetCssClassNameComboBox = GetCssClassNameComboBox, GetEnableFlashMenuCheckBox = GetEnableFlashMenuCheckBox, GetFormLayout = GetFormLayout, GetHeightSpinEdit = GetHeightSpinEdit, GetLeftMarginTextBox = GetLeftMarginTextBox, GetLoopCheckBox = GetLoopCheckBox, GetMediaFileSelector = GetMediaFileSelector, GetMoreOptionsCheckBox = GetMoreOptionsCheckBox, GetOkButton = GetOkButton, GetPositionComboBox = GetPositionComboBox, GetQualityComboBox = GetQualityComboBox, GetRightMarginTextBox = GetRightMarginTextBox, GetTopMarginTextBox = GetTopMarginTextBox, GetWidthSpinEdit = GetWidthSpinEdit)
+    val __obj = js.Dynamic.literal(GetAllowFullscreenCheckBox = js.Any.fromFunction0(GetAllowFullscreenCheckBox), GetAutoPlayCheckBox = js.Any.fromFunction0(GetAutoPlayCheckBox), GetBorderColorColorEdit = js.Any.fromFunction0(GetBorderColorColorEdit), GetBorderStyleComboBox = js.Any.fromFunction0(GetBorderStyleComboBox), GetBorderWidthSpinEdit = js.Any.fromFunction0(GetBorderWidthSpinEdit), GetBottomMarginTextBox = js.Any.fromFunction0(GetBottomMarginTextBox), GetCancelButton = js.Any.fromFunction0(GetCancelButton), GetCssClassNameComboBox = js.Any.fromFunction0(GetCssClassNameComboBox), GetEnableFlashMenuCheckBox = js.Any.fromFunction0(GetEnableFlashMenuCheckBox), GetFormLayout = js.Any.fromFunction0(GetFormLayout), GetHeightSpinEdit = js.Any.fromFunction0(GetHeightSpinEdit), GetLeftMarginTextBox = js.Any.fromFunction0(GetLeftMarginTextBox), GetLoopCheckBox = js.Any.fromFunction0(GetLoopCheckBox), GetMediaFileSelector = js.Any.fromFunction0(GetMediaFileSelector), GetMoreOptionsCheckBox = js.Any.fromFunction0(GetMoreOptionsCheckBox), GetOkButton = js.Any.fromFunction0(GetOkButton), GetPositionComboBox = js.Any.fromFunction0(GetPositionComboBox), GetQualityComboBox = js.Any.fromFunction0(GetQualityComboBox), GetRightMarginTextBox = js.Any.fromFunction0(GetRightMarginTextBox), GetTopMarginTextBox = js.Any.fromFunction0(GetTopMarginTextBox), GetWidthSpinEdit = js.Any.fromFunction0(GetWidthSpinEdit))
   
     __obj.asInstanceOf[ASPxClientHtmlEditorFlashDialog]
   }

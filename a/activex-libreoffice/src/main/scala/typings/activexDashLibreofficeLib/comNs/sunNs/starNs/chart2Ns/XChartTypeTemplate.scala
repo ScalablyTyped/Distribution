@@ -90,29 +90,20 @@ object XChartTypeTemplate {
   @scala.inline
   def apply(
     DataInterpreter: XDataInterpreter,
-    acquire: js.Function0[scala.Unit],
-    applyStyle: js.Function4[XDataSeries, scala.Double, scala.Double, scala.Double, scala.Unit],
-    changeDiagram: js.Function1[XDiagram, scala.Unit],
-    changeDiagramData: js.Function3[
-      XDiagram, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    createDiagramByDataSource: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      XDiagram
-    ],
-    getChartTypeForNewSeries: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XChartType], XChartType],
-    getDataInterpreter: js.Function0[XDataInterpreter],
-    matchesTemplate: js.Function2[XDiagram, scala.Boolean, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    resetStyles: js.Function1[XDiagram, scala.Unit],
-    supportsCategories: js.Function0[scala.Boolean]
+    acquire: () => scala.Unit,
+    applyStyle: (XDataSeries, scala.Double, scala.Double, scala.Double) => scala.Unit,
+    changeDiagram: XDiagram => scala.Unit,
+    changeDiagramData: (XDiagram, activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    createDiagramByDataSource: (activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => XDiagram,
+    getChartTypeForNewSeries: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XChartType] => XChartType,
+    getDataInterpreter: () => XDataInterpreter,
+    matchesTemplate: (XDiagram, scala.Boolean) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    resetStyles: XDiagram => scala.Unit,
+    supportsCategories: () => scala.Boolean
   ): XChartTypeTemplate = {
-    val __obj = js.Dynamic.literal(DataInterpreter = DataInterpreter, acquire = acquire, applyStyle = applyStyle, changeDiagram = changeDiagram, changeDiagramData = changeDiagramData, createDiagramByDataSource = createDiagramByDataSource, getChartTypeForNewSeries = getChartTypeForNewSeries, getDataInterpreter = getDataInterpreter, matchesTemplate = matchesTemplate, queryInterface = queryInterface, release = release, resetStyles = resetStyles, supportsCategories = supportsCategories)
+    val __obj = js.Dynamic.literal(DataInterpreter = DataInterpreter, acquire = js.Any.fromFunction0(acquire), applyStyle = js.Any.fromFunction4(applyStyle), changeDiagram = js.Any.fromFunction1(changeDiagram), changeDiagramData = js.Any.fromFunction3(changeDiagramData), createDiagramByDataSource = js.Any.fromFunction2(createDiagramByDataSource), getChartTypeForNewSeries = js.Any.fromFunction1(getChartTypeForNewSeries), getDataInterpreter = js.Any.fromFunction0(getDataInterpreter), matchesTemplate = js.Any.fromFunction2(matchesTemplate), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), resetStyles = js.Any.fromFunction1(resetStyles), supportsCategories = js.Any.fromFunction0(supportsCategories))
   
     __obj.asInstanceOf[XChartTypeTemplate]
   }

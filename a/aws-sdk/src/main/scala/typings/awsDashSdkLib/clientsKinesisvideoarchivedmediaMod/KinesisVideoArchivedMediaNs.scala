@@ -42,11 +42,11 @@ object KinesisVideoArchivedMediaNs extends js.Object {
     /**
       * The origin of the timestamps to use (Server or Producer).
       */
-    var FragmentSelectorType: FragmentSelectorType
+    var FragmentSelectorType: awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.KinesisVideoArchivedMediaNs.FragmentSelectorType
     /**
       * The range of timestamps to return.
       */
-    var TimestampRange: TimestampRange
+    var TimestampRange: awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.KinesisVideoArchivedMediaNs.TimestampRange
   }
   
   trait GetHLSStreamingSessionURLInput extends js.Object {
@@ -103,7 +103,7 @@ object KinesisVideoArchivedMediaNs extends js.Object {
     /**
       * The name of the stream from which to retrieve fragment media.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.KinesisVideoArchivedMediaNs.StreamName
   }
   
   trait GetMediaForFragmentListOutput extends js.Object {
@@ -155,7 +155,7 @@ object KinesisVideoArchivedMediaNs extends js.Object {
     /**
       * The name of the stream from which to retrieve a fragment list.
       */
-    var StreamName: StreamName
+    var StreamName: awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.KinesisVideoArchivedMediaNs.StreamName
   }
   
   trait ListFragmentsOutput extends js.Object {

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("VBIDE.VBProject")
 @js.native
 class VBProject protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashVbideLib.VBIDENs.Application = js.native
   var BuildFileName: java.lang.String = js.native
   @JSName("Collection")
   val Collection_Original: VBProjects = js.native
@@ -26,7 +26,7 @@ class VBProject protected () extends js.Object {
   val Type: vbext_ProjectType = js.native
   @JSName("VBComponents")
   val VBComponents_Original: VBComponents = js.native
-  val VBE: VBE = js.native
+  val VBE: activexDashVbideLib.VBIDENs.VBE = js.native
   var `VBIDE.VBProject_typekey`: VBProject = js.native
   def Collection(index: js.Any): VBProject = js.native
   def MakeCompiledFile(): scala.Unit = js.native

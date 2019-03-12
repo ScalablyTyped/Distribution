@@ -61,17 +61,17 @@ object IOwlCarouselOptions {
   @scala.inline
   def apply(
     addClassActive: js.UndefOr[scala.Boolean] = js.undefined,
-    afterAction: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
-    afterInit: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
-    afterLazyLoad: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
-    afterMove: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
-    afterUpdate: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
+    afterAction: /* params */ js.UndefOr[js.Any] => scala.Unit = null,
+    afterInit: /* params */ js.UndefOr[js.Any] => scala.Unit = null,
+    afterLazyLoad: /* params */ js.UndefOr[js.Any] => scala.Unit = null,
+    afterMove: /* params */ js.UndefOr[js.Any] => scala.Unit = null,
+    afterUpdate: /* params */ js.UndefOr[js.Any] => scala.Unit = null,
     autoHeight: js.UndefOr[scala.Boolean] = js.undefined,
     autoPlay: js.Any = null,
     baseClass: java.lang.String = null,
-    beforeInit: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
-    beforeMove: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
-    beforeUpdate: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
+    beforeInit: /* params */ js.UndefOr[js.Any] => scala.Unit = null,
+    beforeMove: /* params */ js.UndefOr[js.Any] => scala.Unit = null,
+    beforeUpdate: /* params */ js.UndefOr[js.Any] => scala.Unit = null,
     dragBeforeAnimFinish: js.UndefOr[scala.Boolean] = js.undefined,
     items: scala.Int | scala.Double = null,
     itemsCustom: js.Any = null,
@@ -82,7 +82,7 @@ object IOwlCarouselOptions {
     itemsTablet: js.Array[scala.Double] = null,
     itemsTabletSmall: js.Any = null,
     jsonPath: js.Any = null,
-    jsonSuccess: js.Function1[/* data */ js.Any, scala.Unit] = null,
+    jsonSuccess: /* data */ js.Any => scala.Unit = null,
     lazyEffect: js.Any = null,
     lazyFollow: js.UndefOr[scala.Boolean] = js.undefined,
     lazyLoad: js.UndefOr[scala.Boolean] = js.undefined,
@@ -102,7 +102,7 @@ object IOwlCarouselOptions {
     scrollPerPage: js.UndefOr[scala.Boolean] = js.undefined,
     singleItem: js.UndefOr[scala.Boolean] = js.undefined,
     slideSpeed: scala.Int | scala.Double = null,
-    startDragging: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
+    startDragging: /* params */ js.UndefOr[js.Any] => scala.Unit = null,
     stopOnHover: js.UndefOr[scala.Boolean] = js.undefined,
     theme: java.lang.String = null,
     touchDrag: js.UndefOr[scala.Boolean] = js.undefined,
@@ -110,17 +110,17 @@ object IOwlCarouselOptions {
   ): IOwlCarouselOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(addClassActive)) __obj.updateDynamic("addClassActive")(addClassActive)
-    if (afterAction != null) __obj.updateDynamic("afterAction")(afterAction)
-    if (afterInit != null) __obj.updateDynamic("afterInit")(afterInit)
-    if (afterLazyLoad != null) __obj.updateDynamic("afterLazyLoad")(afterLazyLoad)
-    if (afterMove != null) __obj.updateDynamic("afterMove")(afterMove)
-    if (afterUpdate != null) __obj.updateDynamic("afterUpdate")(afterUpdate)
+    if (afterAction != null) __obj.updateDynamic("afterAction")(js.Any.fromFunction1(afterAction))
+    if (afterInit != null) __obj.updateDynamic("afterInit")(js.Any.fromFunction1(afterInit))
+    if (afterLazyLoad != null) __obj.updateDynamic("afterLazyLoad")(js.Any.fromFunction1(afterLazyLoad))
+    if (afterMove != null) __obj.updateDynamic("afterMove")(js.Any.fromFunction1(afterMove))
+    if (afterUpdate != null) __obj.updateDynamic("afterUpdate")(js.Any.fromFunction1(afterUpdate))
     if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
     if (autoPlay != null) __obj.updateDynamic("autoPlay")(autoPlay)
     if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass)
-    if (beforeInit != null) __obj.updateDynamic("beforeInit")(beforeInit)
-    if (beforeMove != null) __obj.updateDynamic("beforeMove")(beforeMove)
-    if (beforeUpdate != null) __obj.updateDynamic("beforeUpdate")(beforeUpdate)
+    if (beforeInit != null) __obj.updateDynamic("beforeInit")(js.Any.fromFunction1(beforeInit))
+    if (beforeMove != null) __obj.updateDynamic("beforeMove")(js.Any.fromFunction1(beforeMove))
+    if (beforeUpdate != null) __obj.updateDynamic("beforeUpdate")(js.Any.fromFunction1(beforeUpdate))
     if (!js.isUndefined(dragBeforeAnimFinish)) __obj.updateDynamic("dragBeforeAnimFinish")(dragBeforeAnimFinish)
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (itemsCustom != null) __obj.updateDynamic("itemsCustom")(itemsCustom)
@@ -131,7 +131,7 @@ object IOwlCarouselOptions {
     if (itemsTablet != null) __obj.updateDynamic("itemsTablet")(itemsTablet)
     if (itemsTabletSmall != null) __obj.updateDynamic("itemsTabletSmall")(itemsTabletSmall)
     if (jsonPath != null) __obj.updateDynamic("jsonPath")(jsonPath)
-    if (jsonSuccess != null) __obj.updateDynamic("jsonSuccess")(jsonSuccess)
+    if (jsonSuccess != null) __obj.updateDynamic("jsonSuccess")(js.Any.fromFunction1(jsonSuccess))
     if (lazyEffect != null) __obj.updateDynamic("lazyEffect")(lazyEffect)
     if (!js.isUndefined(lazyFollow)) __obj.updateDynamic("lazyFollow")(lazyFollow)
     if (!js.isUndefined(lazyLoad)) __obj.updateDynamic("lazyLoad")(lazyLoad)
@@ -151,7 +151,7 @@ object IOwlCarouselOptions {
     if (!js.isUndefined(scrollPerPage)) __obj.updateDynamic("scrollPerPage")(scrollPerPage)
     if (!js.isUndefined(singleItem)) __obj.updateDynamic("singleItem")(singleItem)
     if (slideSpeed != null) __obj.updateDynamic("slideSpeed")(slideSpeed.asInstanceOf[js.Any])
-    if (startDragging != null) __obj.updateDynamic("startDragging")(startDragging)
+    if (startDragging != null) __obj.updateDynamic("startDragging")(js.Any.fromFunction1(startDragging))
     if (!js.isUndefined(stopOnHover)) __obj.updateDynamic("stopOnHover")(stopOnHover)
     if (theme != null) __obj.updateDynamic("theme")(theme)
     if (!js.isUndefined(touchDrag)) __obj.updateDynamic("touchDrag")(touchDrag)

@@ -22,27 +22,19 @@ object XDatabaseAccess {
   @scala.inline
   def apply(
     LoginTimeout: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addDatabaseAccessListener: js.Function1[XDatabaseAccessListener, scala.Unit],
-    getConnection: js.Function2[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection
-    ],
-    getIsolatedConnection: js.Function2[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection
-    ],
-    getLoginTimeout: js.Function0[scala.Double],
-    hasConnections: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeDatabaseAccessListener: js.Function1[XDatabaseAccessListener, scala.Unit],
-    setLoginTimeout: js.Function1[scala.Double, scala.Unit],
-    suspendConnections: js.Function0[scala.Boolean]
+    acquire: () => scala.Unit,
+    addDatabaseAccessListener: XDatabaseAccessListener => scala.Unit,
+    getConnection: (java.lang.String, java.lang.String) => activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
+    getIsolatedConnection: (java.lang.String, java.lang.String) => activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
+    getLoginTimeout: () => scala.Double,
+    hasConnections: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeDatabaseAccessListener: XDatabaseAccessListener => scala.Unit,
+    setLoginTimeout: scala.Double => scala.Unit,
+    suspendConnections: () => scala.Boolean
   ): XDatabaseAccess = {
-    val __obj = js.Dynamic.literal(LoginTimeout = LoginTimeout, acquire = acquire, addDatabaseAccessListener = addDatabaseAccessListener, getConnection = getConnection, getIsolatedConnection = getIsolatedConnection, getLoginTimeout = getLoginTimeout, hasConnections = hasConnections, queryInterface = queryInterface, release = release, removeDatabaseAccessListener = removeDatabaseAccessListener, setLoginTimeout = setLoginTimeout, suspendConnections = suspendConnections)
+    val __obj = js.Dynamic.literal(LoginTimeout = LoginTimeout, acquire = js.Any.fromFunction0(acquire), addDatabaseAccessListener = js.Any.fromFunction1(addDatabaseAccessListener), getConnection = js.Any.fromFunction2(getConnection), getIsolatedConnection = js.Any.fromFunction2(getIsolatedConnection), getLoginTimeout = js.Any.fromFunction0(getLoginTimeout), hasConnections = js.Any.fromFunction0(hasConnections), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeDatabaseAccessListener = js.Any.fromFunction1(removeDatabaseAccessListener), setLoginTimeout = js.Any.fromFunction1(setLoginTimeout), suspendConnections = js.Any.fromFunction0(suspendConnections))
   
     __obj.asInstanceOf[XDatabaseAccess]
   }

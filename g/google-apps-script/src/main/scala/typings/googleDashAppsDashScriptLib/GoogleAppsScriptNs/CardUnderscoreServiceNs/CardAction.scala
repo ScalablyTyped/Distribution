@@ -17,14 +17,14 @@ trait CardAction extends js.Object {
 object CardAction {
   @scala.inline
   def apply(
-    setAuthorizationAction: js.Function1[AuthorizationAction, CardAction],
-    setComposeAction: js.Function2[Action, ComposedEmailType, CardAction],
-    setOnClickAction: js.Function1[Action, CardAction],
-    setOnClickOpenLinkAction: js.Function1[Action, CardAction],
-    setOpenLink: js.Function1[OpenLink, CardAction],
-    setText: js.Function1[java.lang.String, CardAction]
+    setAuthorizationAction: AuthorizationAction => CardAction,
+    setComposeAction: (Action, ComposedEmailType) => CardAction,
+    setOnClickAction: Action => CardAction,
+    setOnClickOpenLinkAction: Action => CardAction,
+    setOpenLink: OpenLink => CardAction,
+    setText: java.lang.String => CardAction
   ): CardAction = {
-    val __obj = js.Dynamic.literal(setAuthorizationAction = setAuthorizationAction, setComposeAction = setComposeAction, setOnClickAction = setOnClickAction, setOnClickOpenLinkAction = setOnClickOpenLinkAction, setOpenLink = setOpenLink, setText = setText)
+    val __obj = js.Dynamic.literal(setAuthorizationAction = js.Any.fromFunction1(setAuthorizationAction), setComposeAction = js.Any.fromFunction2(setComposeAction), setOnClickAction = js.Any.fromFunction1(setOnClickAction), setOnClickOpenLinkAction = js.Any.fromFunction1(setOnClickOpenLinkAction), setOpenLink = js.Any.fromFunction1(setOpenLink), setText = js.Any.fromFunction1(setText))
   
     __obj.asInstanceOf[CardAction]
   }

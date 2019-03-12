@@ -53,7 +53,7 @@ trait StrictCardProps extends js.Object {
     */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
       /* data */ CardProps, 
       scala.Unit
     ]
@@ -81,11 +81,7 @@ object StrictCardProps {
     image: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsImageImageMod.ImageProps] = null,
     link: js.UndefOr[scala.Boolean] = js.undefined,
     meta: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsViewsCardCardMetaMod.CardMetaProps] = null,
-    onClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
-      /* data */ CardProps, 
-      scala.Unit
-    ] = null,
+    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ CardProps) => scala.Unit = null,
     raised: js.UndefOr[scala.Boolean] = js.undefined
   ): StrictCardProps = {
     val __obj = js.Dynamic.literal()
@@ -103,7 +99,7 @@ object StrictCardProps {
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (!js.isUndefined(link)) __obj.updateDynamic("link")(link)
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised)
     __obj.asInstanceOf[StrictCardProps]
   }

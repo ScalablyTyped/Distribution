@@ -19,20 +19,20 @@ trait XMeaning
   /** @returns the meaning represented by this object. */
   def getMeaning(): java.lang.String
   /** @returns a sequence of strings where each entry is a synonym of the current objects meaning. */
-  def querySynonyms(): activexDashInteropLib.SafeArray[java.lang.String]
+  def querySynonyms(): stdLib.SafeArray[java.lang.String]
 }
 
 object XMeaning {
   @scala.inline
   def apply(
     Meaning: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getMeaning: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    querySynonyms: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getMeaning: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    querySynonyms: () => stdLib.SafeArray[java.lang.String],
+    release: () => scala.Unit
   ): XMeaning = {
-    val __obj = js.Dynamic.literal(Meaning = Meaning, acquire = acquire, getMeaning = getMeaning, queryInterface = queryInterface, querySynonyms = querySynonyms, release = release)
+    val __obj = js.Dynamic.literal(Meaning = Meaning, acquire = js.Any.fromFunction0(acquire), getMeaning = js.Any.fromFunction0(getMeaning), queryInterface = js.Any.fromFunction1(queryInterface), querySynonyms = js.Any.fromFunction0(querySynonyms), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XMeaning]
   }

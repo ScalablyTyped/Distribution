@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 object ResolveProjectReferencePathHost {
   @scala.inline
-  def apply(fileExists: js.Function1[java.lang.String, scala.Boolean]): ResolveProjectReferencePathHost = {
-    val __obj = js.Dynamic.literal(fileExists = fileExists)
+  def apply(fileExists: java.lang.String => scala.Boolean): ResolveProjectReferencePathHost = {
+    val __obj = js.Dynamic.literal(fileExists = js.Any.fromFunction1(fileExists))
   
     __obj.asInstanceOf[ResolveProjectReferencePathHost]
   }

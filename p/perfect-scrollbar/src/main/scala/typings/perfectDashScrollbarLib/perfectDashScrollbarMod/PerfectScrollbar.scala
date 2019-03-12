@@ -13,12 +13,8 @@ trait PerfectScrollbar extends js.Object {
 
 object PerfectScrollbar {
   @scala.inline
-  def apply(
-    destroy: js.Function0[scala.Unit],
-    reach: perfectDashScrollbarLib.Anon_End,
-    update: js.Function0[scala.Unit]
-  ): PerfectScrollbar = {
-    val __obj = js.Dynamic.literal(destroy = destroy, reach = reach, update = update)
+  def apply(destroy: () => scala.Unit, reach: perfectDashScrollbarLib.Anon_End, update: () => scala.Unit): PerfectScrollbar = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), reach = reach, update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[PerfectScrollbar]
   }

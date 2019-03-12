@@ -18,7 +18,7 @@ trait XGridColumnFactory
     * returns a list of available column types.
     * @returns a list of column types.
     */
-  val ColumnTypes: activexDashInteropLib.SafeArray[java.lang.String]
+  val ColumnTypes: stdLib.SafeArray[java.lang.String]
   /**
     * creates a new column object
     * @param aColumnType the type of column to be created
@@ -30,23 +30,20 @@ trait XGridColumnFactory
     * returns a list of available column types.
     * @returns a list of column types.
     */
-  def getColumnTypes(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getColumnTypes(): stdLib.SafeArray[java.lang.String]
 }
 
 object XGridColumnFactory {
   @scala.inline
   def apply(
-    ColumnTypes: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    createColumn: js.Function1[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
-    ],
-    getColumnTypes: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    ColumnTypes: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    createColumn: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    getColumnTypes: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XGridColumnFactory = {
-    val __obj = js.Dynamic.literal(ColumnTypes = ColumnTypes, acquire = acquire, createColumn = createColumn, getColumnTypes = getColumnTypes, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ColumnTypes = ColumnTypes, acquire = js.Any.fromFunction0(acquire), createColumn = js.Any.fromFunction1(createColumn), getColumnTypes = js.Any.fromFunction0(getColumnTypes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XGridColumnFactory]
   }

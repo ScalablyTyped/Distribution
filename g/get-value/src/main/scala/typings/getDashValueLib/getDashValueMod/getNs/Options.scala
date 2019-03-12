@@ -56,23 +56,19 @@ object Options {
   @scala.inline
   def apply(
     default: js.Any = null,
-    isValid: js.Function2[
-      /* key */ java.lang.String, 
-      /* object */ stdLib.Record[java.lang.String, _], 
-      scala.Boolean
-    ] = null,
-    join: js.Function1[/* segs */ js.Array[java.lang.String], java.lang.String] = null,
+    isValid: (/* key */ java.lang.String, /* object */ stdLib.Record[java.lang.String, _]) => scala.Boolean = null,
+    join: /* segs */ js.Array[java.lang.String] => java.lang.String = null,
     joinChar: java.lang.String = null,
     separator: java.lang.String | stdLib.RegExp = null,
-    split: js.Function1[/* s */ java.lang.String, js.Array[java.lang.String]] = null
+    split: /* s */ java.lang.String => js.Array[java.lang.String] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (default != null) __obj.updateDynamic("default")(default)
-    if (isValid != null) __obj.updateDynamic("isValid")(isValid)
-    if (join != null) __obj.updateDynamic("join")(join)
+    if (isValid != null) __obj.updateDynamic("isValid")(js.Any.fromFunction2(isValid))
+    if (join != null) __obj.updateDynamic("join")(js.Any.fromFunction1(join))
     if (joinChar != null) __obj.updateDynamic("joinChar")(joinChar)
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (split != null) __obj.updateDynamic("split")(split)
+    if (split != null) __obj.updateDynamic("split")(js.Any.fromFunction1(split))
     __obj.asInstanceOf[Options]
   }
 }

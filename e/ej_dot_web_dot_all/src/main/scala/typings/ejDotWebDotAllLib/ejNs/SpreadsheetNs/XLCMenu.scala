@@ -60,15 +60,15 @@ trait XLCMenu extends js.Object {
 object XLCMenu {
   @scala.inline
   def apply(
-    addItem: js.Function4[java.lang.String, js.Array[_], java.lang.String, scala.Double, scala.Unit],
-    changeDataSource: js.Function2[java.lang.String, js.Array[_], scala.Unit],
-    disableItem: js.Function2[java.lang.String, js.Array[_], scala.Unit],
-    enableItem: js.Function2[java.lang.String, js.Array[_], scala.Unit],
-    hideItem: js.Function2[java.lang.String, js.Array[_], scala.Unit],
-    removeItem: js.Function2[java.lang.String, js.Array[_], scala.Unit],
-    showItem: js.Function2[java.lang.String, js.Array[_], scala.Unit]
+    addItem: (java.lang.String, js.Array[_], java.lang.String, scala.Double) => scala.Unit,
+    changeDataSource: (java.lang.String, js.Array[_]) => scala.Unit,
+    disableItem: (java.lang.String, js.Array[_]) => scala.Unit,
+    enableItem: (java.lang.String, js.Array[_]) => scala.Unit,
+    hideItem: (java.lang.String, js.Array[_]) => scala.Unit,
+    removeItem: (java.lang.String, js.Array[_]) => scala.Unit,
+    showItem: (java.lang.String, js.Array[_]) => scala.Unit
   ): XLCMenu = {
-    val __obj = js.Dynamic.literal(addItem = addItem, changeDataSource = changeDataSource, disableItem = disableItem, enableItem = enableItem, hideItem = hideItem, removeItem = removeItem, showItem = showItem)
+    val __obj = js.Dynamic.literal(addItem = js.Any.fromFunction4(addItem), changeDataSource = js.Any.fromFunction2(changeDataSource), disableItem = js.Any.fromFunction2(disableItem), enableItem = js.Any.fromFunction2(enableItem), hideItem = js.Any.fromFunction2(hideItem), removeItem = js.Any.fromFunction2(removeItem), showItem = js.Any.fromFunction2(showItem))
   
     __obj.asInstanceOf[XLCMenu]
   }

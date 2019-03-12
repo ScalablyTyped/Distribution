@@ -29,21 +29,21 @@ import scala.scalajs.js.annotation._
 object SelectionState {
   @scala.inline
   def apply(
-    getAnchorKey: js.Function0[java.lang.String],
-    getAnchorOffset: js.Function0[scala.Double],
-    getEndKey: js.Function0[java.lang.String],
-    getEndOffset: js.Function0[scala.Double],
-    getFocusKey: js.Function0[java.lang.String],
-    getFocusOffset: js.Function0[scala.Double],
-    getHasFocus: js.Function0[scala.Boolean],
-    getIsBackward: js.Function0[scala.Boolean],
-    getStartKey: js.Function0[java.lang.String],
-    getStartOffset: js.Function0[scala.Double],
-    hasEdgeWithin: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Boolean],
-    isCollapsed: js.Function0[scala.Boolean],
-    serialize: js.Function0[java.lang.String]
+    getAnchorKey: () => java.lang.String,
+    getAnchorOffset: () => scala.Double,
+    getEndKey: () => java.lang.String,
+    getEndOffset: () => scala.Double,
+    getFocusKey: () => java.lang.String,
+    getFocusOffset: () => scala.Double,
+    getHasFocus: () => scala.Boolean,
+    getIsBackward: () => scala.Boolean,
+    getStartKey: () => java.lang.String,
+    getStartOffset: () => scala.Double,
+    hasEdgeWithin: (java.lang.String, scala.Double, scala.Double) => scala.Boolean,
+    isCollapsed: () => scala.Boolean,
+    serialize: () => java.lang.String
   ): SelectionState = {
-    val __obj = js.Dynamic.literal(getAnchorKey = getAnchorKey, getAnchorOffset = getAnchorOffset, getEndKey = getEndKey, getEndOffset = getEndOffset, getFocusKey = getFocusKey, getFocusOffset = getFocusOffset, getHasFocus = getHasFocus, getIsBackward = getIsBackward, getStartKey = getStartKey, getStartOffset = getStartOffset, hasEdgeWithin = hasEdgeWithin, isCollapsed = isCollapsed, serialize = serialize)
+    val __obj = js.Dynamic.literal(getAnchorKey = js.Any.fromFunction0(getAnchorKey), getAnchorOffset = js.Any.fromFunction0(getAnchorOffset), getEndKey = js.Any.fromFunction0(getEndKey), getEndOffset = js.Any.fromFunction0(getEndOffset), getFocusKey = js.Any.fromFunction0(getFocusKey), getFocusOffset = js.Any.fromFunction0(getFocusOffset), getHasFocus = js.Any.fromFunction0(getHasFocus), getIsBackward = js.Any.fromFunction0(getIsBackward), getStartKey = js.Any.fromFunction0(getStartKey), getStartOffset = js.Any.fromFunction0(getStartOffset), hasEdgeWithin = js.Any.fromFunction3(hasEdgeWithin), isCollapsed = js.Any.fromFunction0(isCollapsed), serialize = js.Any.fromFunction0(serialize))
   
     __obj.asInstanceOf[SelectionState]
   }

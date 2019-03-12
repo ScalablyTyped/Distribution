@@ -93,11 +93,11 @@ trait DocumentReference extends js.Object {
   def onSnapshot(onNext: js.Function1[/* snapshot */ DocumentSnapshot, scala.Unit]): js.Function0[scala.Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ DocumentSnapshot, scala.Unit],
-    onError: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    onError: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): js.Function0[scala.Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ DocumentSnapshot, scala.Unit],
-    onError: js.Function1[/* error */ nodeLib.Error, scala.Unit],
+    onError: js.Function1[/* error */ stdLib.Error, scala.Unit],
     onCompletion: js.Function0[scala.Unit]
   ): js.Function0[scala.Unit] = js.native
   /**
@@ -134,12 +134,12 @@ trait DocumentReference extends js.Object {
   def onSnapshot(
     options: SnapshotListenOptions,
     onNext: js.Function1[/* snapshot */ DocumentSnapshot, scala.Unit],
-    onError: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    onError: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): js.Function0[scala.Unit] = js.native
   def onSnapshot(
     options: SnapshotListenOptions,
     onNext: js.Function1[/* snapshot */ DocumentSnapshot, scala.Unit],
-    onError: js.Function1[/* error */ nodeLib.Error, scala.Unit],
+    onError: js.Function1[/* error */ stdLib.Error, scala.Unit],
     onCompletion: js.Function0[scala.Unit]
   ): js.Function0[scala.Unit] = js.native
   /**

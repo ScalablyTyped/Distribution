@@ -48,7 +48,7 @@ object SSH2StreamConfig {
   def apply(
     algorithms: Algorithms = null,
     banner: java.lang.String = null,
-    debug: js.Function1[/* information */ java.lang.String, _] = null,
+    debug: /* information */ java.lang.String => _ = null,
     highWaterMark: scala.Int | scala.Double = null,
     hostKeys: HostKeys = null,
     ident: java.lang.String = null,
@@ -58,7 +58,7 @@ object SSH2StreamConfig {
     val __obj = js.Dynamic.literal()
     if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms)
     if (banner != null) __obj.updateDynamic("banner")(banner)
-    if (debug != null) __obj.updateDynamic("debug")(debug)
+    if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction1(debug))
     if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
     if (hostKeys != null) __obj.updateDynamic("hostKeys")(hostKeys)
     if (ident != null) __obj.updateDynamic("ident")(ident)

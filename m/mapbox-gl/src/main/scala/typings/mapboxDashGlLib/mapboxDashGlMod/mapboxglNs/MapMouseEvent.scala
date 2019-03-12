@@ -22,11 +22,11 @@ object MapMouseEvent {
     lngLat: LngLat,
     originalEvent: stdLib.MouseEvent,
     point: Point,
-    preventDefault: js.Function0[scala.Unit],
+    preventDefault: () => scala.Unit,
     target: Map,
     `type`: mapboxDashGlLib.mapboxDashGlLibStrings.mousedown | mapboxDashGlLib.mapboxDashGlLibStrings.mouseup | mapboxDashGlLib.mapboxDashGlLibStrings.click | mapboxDashGlLib.mapboxDashGlLibStrings.dblclick | mapboxDashGlLib.mapboxDashGlLibStrings.mousemove | mapboxDashGlLib.mapboxDashGlLibStrings.mouseover | mapboxDashGlLib.mapboxDashGlLibStrings.mouseenter | mapboxDashGlLib.mapboxDashGlLibStrings.mouseleave | mapboxDashGlLib.mapboxDashGlLibStrings.mouseout | mapboxDashGlLib.mapboxDashGlLibStrings.contextmenu
   ): MapMouseEvent = {
-    val __obj = js.Dynamic.literal(defaultPrevented = defaultPrevented, lngLat = lngLat, originalEvent = originalEvent, point = point, preventDefault = preventDefault, target = target)
+    val __obj = js.Dynamic.literal(defaultPrevented = defaultPrevented, lngLat = lngLat, originalEvent = originalEvent, point = point, preventDefault = js.Any.fromFunction0(preventDefault), target = target)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapMouseEvent]
   }

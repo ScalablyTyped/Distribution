@@ -18,11 +18,7 @@ object ModalActionsProps {
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
-    onActionClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsElementsButtonButtonMod.ButtonProps, 
-      scala.Unit
-    ] = null
+    onActionClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsElementsButtonButtonMod.ButtonProps) => scala.Unit = null
   ): ModalActionsProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -31,7 +27,7 @@ object ModalActionsProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (onActionClick != null) __obj.updateDynamic("onActionClick")(onActionClick)
+    if (onActionClick != null) __obj.updateDynamic("onActionClick")(js.Any.fromFunction2(onActionClick))
     __obj.asInstanceOf[ModalActionsProps]
   }
 }

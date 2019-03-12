@@ -19,7 +19,7 @@ trait IPropertyValueForDisplay extends js.Object {
 object IPropertyValueForDisplay {
   @scala.inline
   def apply(
-    Clone: js.Function0[IPropertyValueForDisplay],
+    Clone: () => IPropertyValueForDisplay,
     ContentType: mfilesLib.MFilesNs.MFContentType,
     DataType: mfilesLib.MFilesNs.MFDataType,
     DisplayValue: java.lang.String,
@@ -28,7 +28,7 @@ object IPropertyValueForDisplay {
     PropertyValue: IPropertyValue,
     ReadOnly: scala.Boolean
   ): IPropertyValueForDisplay = {
-    val __obj = js.Dynamic.literal(Clone = Clone, ContentType = ContentType, DataType = DataType, DisplayValue = DisplayValue, PropertyDef = PropertyDef.asInstanceOf[js.Any], PropertyDefName = PropertyDefName, PropertyValue = PropertyValue, ReadOnly = ReadOnly)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), ContentType = ContentType, DataType = DataType, DisplayValue = DisplayValue, PropertyDef = PropertyDef.asInstanceOf[js.Any], PropertyDefName = PropertyDefName, PropertyValue = PropertyValue, ReadOnly = ReadOnly)
   
     __obj.asInstanceOf[IPropertyValueForDisplay]
   }

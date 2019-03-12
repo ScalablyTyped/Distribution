@@ -19,16 +19,16 @@ trait TextStyleBuilder extends js.Object {
 object TextStyleBuilder {
   @scala.inline
   def apply(
-    build: js.Function0[TextStyle],
-    setBold: js.Function1[scala.Boolean, TextStyleBuilder],
-    setFontFamily: js.Function1[java.lang.String, TextStyleBuilder],
-    setFontSize: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, TextStyleBuilder],
-    setForegroundColor: js.Function1[java.lang.String, TextStyleBuilder],
-    setItalic: js.Function1[scala.Boolean, TextStyleBuilder],
-    setStrikethrough: js.Function1[scala.Boolean, TextStyleBuilder],
-    setUnderline: js.Function1[scala.Boolean, TextStyleBuilder]
+    build: () => TextStyle,
+    setBold: scala.Boolean => TextStyleBuilder,
+    setFontFamily: java.lang.String => TextStyleBuilder,
+    setFontSize: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => TextStyleBuilder,
+    setForegroundColor: java.lang.String => TextStyleBuilder,
+    setItalic: scala.Boolean => TextStyleBuilder,
+    setStrikethrough: scala.Boolean => TextStyleBuilder,
+    setUnderline: scala.Boolean => TextStyleBuilder
   ): TextStyleBuilder = {
-    val __obj = js.Dynamic.literal(build = build, setBold = setBold, setFontFamily = setFontFamily, setFontSize = setFontSize, setForegroundColor = setForegroundColor, setItalic = setItalic, setStrikethrough = setStrikethrough, setUnderline = setUnderline)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setBold = js.Any.fromFunction1(setBold), setFontFamily = js.Any.fromFunction1(setFontFamily), setFontSize = js.Any.fromFunction1(setFontSize), setForegroundColor = js.Any.fromFunction1(setForegroundColor), setItalic = js.Any.fromFunction1(setItalic), setStrikethrough = js.Any.fromFunction1(setStrikethrough), setUnderline = js.Any.fromFunction1(setUnderline))
   
     __obj.asInstanceOf[TextStyleBuilder]
   }

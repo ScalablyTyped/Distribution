@@ -13,12 +13,8 @@ trait Animatable extends js.Object {
 
 object Animatable {
   @scala.inline
-  def apply(
-    isRunning: js.Function0[scala.Boolean],
-    start: js.Function0[scala.Unit],
-    stop: js.Function0[scala.Unit]
-  ): Animatable = {
-    val __obj = js.Dynamic.literal(isRunning = isRunning, start = start, stop = stop)
+  def apply(isRunning: () => scala.Boolean, start: () => scala.Unit, stop: () => scala.Unit): Animatable = {
+    val __obj = js.Dynamic.literal(isRunning = js.Any.fromFunction0(isRunning), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[Animatable]
   }

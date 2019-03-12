@@ -141,7 +141,7 @@ object ChartStripLinesOptions {
     labelFontSize: scala.Int | scala.Double = null,
     labelFontStyle: java.lang.String = null,
     labelFontWeight: java.lang.String = null,
-    labelFormatter: js.Function1[/* e */ js.UndefOr[canvasjsLib.Anon_Axis], java.lang.String] = null,
+    labelFormatter: /* e */ js.UndefOr[canvasjsLib.Anon_Axis] => java.lang.String = null,
     labelPlacement: java.lang.String = null,
     lineDashType: canvasjsLib.DashType = null,
     opacity: scala.Int | scala.Double = null,
@@ -161,7 +161,7 @@ object ChartStripLinesOptions {
     if (labelFontSize != null) __obj.updateDynamic("labelFontSize")(labelFontSize.asInstanceOf[js.Any])
     if (labelFontStyle != null) __obj.updateDynamic("labelFontStyle")(labelFontStyle)
     if (labelFontWeight != null) __obj.updateDynamic("labelFontWeight")(labelFontWeight)
-    if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(labelFormatter)
+    if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(js.Any.fromFunction1(labelFormatter))
     if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement)
     if (lineDashType != null) __obj.updateDynamic("lineDashType")(lineDashType)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])

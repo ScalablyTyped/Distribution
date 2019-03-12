@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jasmine-expect/dist/toThrowErrorOfType", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val toThrowErrorOfType: jasmineDashExpectLib.distToThrowErrorOfTypeMod.ToThrowErrorOfType = js.native
+  val toThrowErrorOfType: ToThrowErrorOfType = js.native
 }
 

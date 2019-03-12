@@ -64,14 +64,14 @@ object XSQLData {
   @scala.inline
   def apply(
     SQLTypeName: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getSQLTypeName: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    readSQL: js.Function2[XSQLInput, java.lang.String, scala.Unit],
-    release: js.Function0[scala.Unit],
-    writeSQL: js.Function1[XSQLOutput, scala.Unit]
+    acquire: () => scala.Unit,
+    getSQLTypeName: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    readSQL: (XSQLInput, java.lang.String) => scala.Unit,
+    release: () => scala.Unit,
+    writeSQL: XSQLOutput => scala.Unit
   ): XSQLData = {
-    val __obj = js.Dynamic.literal(SQLTypeName = SQLTypeName, acquire = acquire, getSQLTypeName = getSQLTypeName, queryInterface = queryInterface, readSQL = readSQL, release = release, writeSQL = writeSQL)
+    val __obj = js.Dynamic.literal(SQLTypeName = SQLTypeName, acquire = js.Any.fromFunction0(acquire), getSQLTypeName = js.Any.fromFunction0(getSQLTypeName), queryInterface = js.Any.fromFunction1(queryInterface), readSQL = js.Any.fromFunction2(readSQL), release = js.Any.fromFunction0(release), writeSQL = js.Any.fromFunction1(writeSQL))
   
     __obj.asInstanceOf[XSQLData]
   }

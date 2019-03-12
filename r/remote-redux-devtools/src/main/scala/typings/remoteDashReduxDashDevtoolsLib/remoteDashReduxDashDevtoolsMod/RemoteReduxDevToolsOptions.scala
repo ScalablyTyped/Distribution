@@ -111,7 +111,7 @@ object RemoteReduxDevToolsOptions {
   @scala.inline
   def apply(
     actionCreators: js.Array[reduxLib.reduxMod.ActionCreator[_]] | reduxLib.reduxMod.ActionCreatorsMapObject[_] = null,
-    actionSanitizer: js.Function1[/* action */ js.Any, _] = null,
+    actionSanitizer: /* action */ js.Any => _ = null,
     actionsBlacklist: java.lang.String | js.Array[java.lang.String] = null,
     actionsWhitelist: java.lang.String | js.Array[java.lang.String] = null,
     hostname: java.lang.String = null,
@@ -129,12 +129,12 @@ object RemoteReduxDevToolsOptions {
     shouldRecordChanges: js.UndefOr[scala.Boolean] = js.undefined,
     shouldStartLocked: js.UndefOr[scala.Boolean] = js.undefined,
     startOn: java.lang.String | js.Array[java.lang.String] = null,
-    stateSanitizer: js.Function1[/* state */ js.Any, _] = null,
+    stateSanitizer: /* state */ js.Any => _ = null,
     stopOn: java.lang.String | js.Array[java.lang.String] = null
   ): RemoteReduxDevToolsOptions = {
     val __obj = js.Dynamic.literal()
     if (actionCreators != null) __obj.updateDynamic("actionCreators")(actionCreators.asInstanceOf[js.Any])
-    if (actionSanitizer != null) __obj.updateDynamic("actionSanitizer")(actionSanitizer)
+    if (actionSanitizer != null) __obj.updateDynamic("actionSanitizer")(js.Any.fromFunction1(actionSanitizer))
     if (actionsBlacklist != null) __obj.updateDynamic("actionsBlacklist")(actionsBlacklist.asInstanceOf[js.Any])
     if (actionsWhitelist != null) __obj.updateDynamic("actionsWhitelist")(actionsWhitelist.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)
@@ -152,7 +152,7 @@ object RemoteReduxDevToolsOptions {
     if (!js.isUndefined(shouldRecordChanges)) __obj.updateDynamic("shouldRecordChanges")(shouldRecordChanges)
     if (!js.isUndefined(shouldStartLocked)) __obj.updateDynamic("shouldStartLocked")(shouldStartLocked)
     if (startOn != null) __obj.updateDynamic("startOn")(startOn.asInstanceOf[js.Any])
-    if (stateSanitizer != null) __obj.updateDynamic("stateSanitizer")(stateSanitizer)
+    if (stateSanitizer != null) __obj.updateDynamic("stateSanitizer")(js.Any.fromFunction1(stateSanitizer))
     if (stopOn != null) __obj.updateDynamic("stopOn")(stopOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteReduxDevToolsOptions]
   }

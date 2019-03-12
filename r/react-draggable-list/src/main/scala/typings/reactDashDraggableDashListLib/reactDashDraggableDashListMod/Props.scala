@@ -10,7 +10,7 @@ trait Props[I, C, T] extends js.Object {
   var autoScrollRegionSize: js.UndefOr[scala.Double] = js.undefined
   var commonProps: js.UndefOr[C] = js.undefined
   var constrainDrag: js.UndefOr[scala.Boolean] = js.undefined
-  var container: js.UndefOr[js.Function0[js.UndefOr[reactLib.HTMLElement | scala.Null]]] = js.undefined
+  var container: js.UndefOr[js.Function0[js.UndefOr[stdLib.HTMLElement | scala.Null]]] = js.undefined
   var itemKey: java.lang.String | (js.Function1[/* item */ I, java.lang.String])
   var list: js.Array[I]
   var onMoveEnd: js.UndefOr[
@@ -38,14 +38,8 @@ object Props {
     autoScrollRegionSize: scala.Int | scala.Double = null,
     commonProps: C = null,
     constrainDrag: js.UndefOr[scala.Boolean] = js.undefined,
-    container: js.Function0[js.UndefOr[reactLib.HTMLElement | scala.Null]] = null,
-    onMoveEnd: js.Function4[
-      /* newList */ js.Array[I], 
-      /* movedItem */ I, 
-      /* oldIndex */ scala.Double, 
-      /* newIndex */ scala.Double, 
-      scala.Unit
-    ] = null,
+    container: () => js.UndefOr[stdLib.HTMLElement | scala.Null] = null,
+    onMoveEnd: (/* newList */ js.Array[I], /* movedItem */ I, /* oldIndex */ scala.Double, /* newIndex */ scala.Double) => scala.Unit = null,
     padding: scala.Int | scala.Double = null,
     springConfig: js.Object = null,
     unsetZIndex: js.UndefOr[scala.Boolean] = js.undefined
@@ -55,8 +49,8 @@ object Props {
     if (autoScrollRegionSize != null) __obj.updateDynamic("autoScrollRegionSize")(autoScrollRegionSize.asInstanceOf[js.Any])
     if (commonProps != null) __obj.updateDynamic("commonProps")(commonProps.asInstanceOf[js.Any])
     if (!js.isUndefined(constrainDrag)) __obj.updateDynamic("constrainDrag")(constrainDrag)
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (onMoveEnd != null) __obj.updateDynamic("onMoveEnd")(onMoveEnd)
+    if (container != null) __obj.updateDynamic("container")(js.Any.fromFunction0(container))
+    if (onMoveEnd != null) __obj.updateDynamic("onMoveEnd")(js.Any.fromFunction4(onMoveEnd))
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (springConfig != null) __obj.updateDynamic("springConfig")(springConfig)
     if (!js.isUndefined(unsetZIndex)) __obj.updateDynamic("unsetZIndex")(unsetZIndex)

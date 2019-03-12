@@ -18,20 +18,20 @@ object ^ extends js.Object {
   def process(address: java.lang.String): ipaddrDotJsLib.ipaddrDotJsMod.AddressNs.IPv4 | ipaddrDotJsLib.ipaddrDotJsMod.AddressNs.IPv6 = js.native
   def subnetMatch(
     addr: ipaddrDotJsLib.ipaddrDotJsMod.AddressNs.IPv4,
-    rangeList: ipaddrDotJsLib.ipaddrDotJsMod.RangeList[ipaddrDotJsLib.ipaddrDotJsMod.AddressNs.IPv4]
+    rangeList: RangeList[ipaddrDotJsLib.ipaddrDotJsMod.AddressNs.IPv4]
   ): java.lang.String = js.native
   def subnetMatch(
     addr: ipaddrDotJsLib.ipaddrDotJsMod.AddressNs.IPv4,
-    rangeList: ipaddrDotJsLib.ipaddrDotJsMod.RangeList[ipaddrDotJsLib.ipaddrDotJsMod.AddressNs.IPv4],
+    rangeList: RangeList[ipaddrDotJsLib.ipaddrDotJsMod.AddressNs.IPv4],
     defaultName: java.lang.String
   ): java.lang.String = js.native
   def subnetMatch(
     addr: ipaddrDotJsLib.ipaddrDotJsMod.AddressNs.IPv6,
-    rangeList: ipaddrDotJsLib.ipaddrDotJsMod.RangeList[ipaddrDotJsLib.ipaddrDotJsMod.AddressNs.IPv6]
+    rangeList: RangeList[ipaddrDotJsLib.ipaddrDotJsMod.AddressNs.IPv6]
   ): java.lang.String = js.native
   def subnetMatch(
     addr: ipaddrDotJsLib.ipaddrDotJsMod.AddressNs.IPv6,
-    rangeList: ipaddrDotJsLib.ipaddrDotJsMod.RangeList[ipaddrDotJsLib.ipaddrDotJsMod.AddressNs.IPv6],
+    rangeList: RangeList[ipaddrDotJsLib.ipaddrDotJsMod.AddressNs.IPv6],
     defaultName: java.lang.String
   ): java.lang.String = js.native
 }

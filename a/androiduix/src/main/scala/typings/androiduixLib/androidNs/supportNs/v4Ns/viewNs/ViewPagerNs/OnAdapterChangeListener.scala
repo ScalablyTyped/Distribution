@@ -15,13 +15,9 @@ trait OnAdapterChangeListener extends js.Object {
 object OnAdapterChangeListener {
   @scala.inline
   def apply(
-    onAdapterChanged: js.Function2[
-      androiduixLib.androidNs.supportNs.v4Ns.viewNs.PagerAdapter, 
-      androiduixLib.androidNs.supportNs.v4Ns.viewNs.PagerAdapter, 
-      scala.Unit
-    ]
+    onAdapterChanged: (androiduixLib.androidNs.supportNs.v4Ns.viewNs.PagerAdapter, androiduixLib.androidNs.supportNs.v4Ns.viewNs.PagerAdapter) => scala.Unit
   ): OnAdapterChangeListener = {
-    val __obj = js.Dynamic.literal(onAdapterChanged = onAdapterChanged)
+    val __obj = js.Dynamic.literal(onAdapterChanged = js.Any.fromFunction2(onAdapterChanged))
   
     __obj.asInstanceOf[OnAdapterChangeListener]
   }

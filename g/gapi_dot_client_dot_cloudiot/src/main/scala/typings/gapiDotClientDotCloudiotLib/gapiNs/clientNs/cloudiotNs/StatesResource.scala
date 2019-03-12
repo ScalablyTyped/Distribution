@@ -16,12 +16,9 @@ trait StatesResource extends js.Object {
 object StatesResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotCloudiotLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListDeviceStatesResponse]
-    ]
+    list: gapiDotClientDotCloudiotLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[ListDeviceStatesResponse]
   ): StatesResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[StatesResource]
   }

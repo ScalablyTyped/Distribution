@@ -11,8 +11,8 @@ trait Middleware extends js.Object {
 
 object Middleware {
   @scala.inline
-  def apply(applyMiddleware: js.Function2[OperationOptions, js.Function, scala.Unit]): Middleware = {
-    val __obj = js.Dynamic.literal(applyMiddleware = applyMiddleware)
+  def apply(applyMiddleware: (OperationOptions, js.Function) => scala.Unit): Middleware = {
+    val __obj = js.Dynamic.literal(applyMiddleware = js.Any.fromFunction2(applyMiddleware))
   
     __obj.asInstanceOf[Middleware]
   }

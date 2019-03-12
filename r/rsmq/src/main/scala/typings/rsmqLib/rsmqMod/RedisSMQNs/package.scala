@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object RedisSMQNs {
-  type CallbackT[R] = js.Function2[/* e */ js.UndefOr[nodeLib.Error], /* res */ js.UndefOr[R], scala.Unit]
+  type CallbackT[R] = js.Function2[/* e */ js.UndefOr[stdLib.Error], /* res */ js.UndefOr[R], scala.Unit]
 }

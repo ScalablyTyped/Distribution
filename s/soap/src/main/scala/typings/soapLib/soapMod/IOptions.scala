@@ -43,13 +43,9 @@ object IOptions {
     ignoreBaseNameSpaces: js.UndefOr[scala.Boolean] = js.undefined,
     ignoredNamespaces: scala.Boolean | js.Array[java.lang.String] | soapLib.Anon_Namespaces = null,
     overrideRootElement: soapLib.Anon_Namespace = null,
-    request: js.Function2[
-      /* options */ js.Any, 
-      /* callback */ js.UndefOr[
-        js.Function3[/* error */ js.Any, /* res */ js.Any, /* body */ js.Any, scala.Unit]
-      ], 
-      scala.Unit
-    ] = null,
+    request: (/* options */ js.Any, /* callback */ js.UndefOr[
+      js.Function3[/* error */ js.Any, /* res */ js.Any, /* body */ js.Any, scala.Unit]
+    ]) => scala.Unit = null,
     returnFault: js.UndefOr[scala.Boolean] = js.undefined,
     stream: js.UndefOr[scala.Boolean] = js.undefined,
     valueKey: java.lang.String = null,
@@ -71,7 +67,7 @@ object IOptions {
     if (!js.isUndefined(ignoreBaseNameSpaces)) __obj.updateDynamic("ignoreBaseNameSpaces")(ignoreBaseNameSpaces)
     if (ignoredNamespaces != null) __obj.updateDynamic("ignoredNamespaces")(ignoredNamespaces.asInstanceOf[js.Any])
     if (overrideRootElement != null) __obj.updateDynamic("overrideRootElement")(overrideRootElement)
-    if (request != null) __obj.updateDynamic("request")(request)
+    if (request != null) __obj.updateDynamic("request")(js.Any.fromFunction2(request))
     if (!js.isUndefined(returnFault)) __obj.updateDynamic("returnFault")(returnFault)
     if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream)
     if (valueKey != null) __obj.updateDynamic("valueKey")(valueKey)

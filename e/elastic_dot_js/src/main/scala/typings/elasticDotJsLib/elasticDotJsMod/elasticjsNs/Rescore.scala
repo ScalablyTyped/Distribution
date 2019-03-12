@@ -45,15 +45,15 @@ trait Rescore extends js.Object {
 object Rescore {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    queryWeight: js.Function1[stdLib.Number, Rescore],
-    rescoreQuery: js.Function1[Query, Rescore],
-    rescoreQueryWeight: js.Function1[stdLib.Number, Rescore],
-    scoreMode: js.Function1[java.lang.String, Rescore],
-    toJSON: js.Function0[js.Any],
-    windowSize: js.Function1[stdLib.Number, Rescore]
+    _type: () => java.lang.String,
+    queryWeight: stdLib.Number => Rescore,
+    rescoreQuery: Query => Rescore,
+    rescoreQueryWeight: stdLib.Number => Rescore,
+    scoreMode: java.lang.String => Rescore,
+    toJSON: () => js.Any,
+    windowSize: stdLib.Number => Rescore
   ): Rescore = {
-    val __obj = js.Dynamic.literal(_type = _type, queryWeight = queryWeight, rescoreQuery = rescoreQuery, rescoreQueryWeight = rescoreQueryWeight, scoreMode = scoreMode, toJSON = toJSON, windowSize = windowSize)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), queryWeight = js.Any.fromFunction1(queryWeight), rescoreQuery = js.Any.fromFunction1(rescoreQuery), rescoreQueryWeight = js.Any.fromFunction1(rescoreQueryWeight), scoreMode = js.Any.fromFunction1(scoreMode), toJSON = js.Any.fromFunction0(toJSON), windowSize = js.Any.fromFunction1(windowSize))
   
     __obj.asInstanceOf[Rescore]
   }

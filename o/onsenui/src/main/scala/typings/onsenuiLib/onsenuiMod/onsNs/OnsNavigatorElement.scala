@@ -17,7 +17,7 @@ trait OnsNavigatorElement
     * @param {Object} animationOptions Object containing duration and timing.
     * @description Hook called whenever the user slides the navigator.
     **/
-  var onSwipe: js.UndefOr[coreDashJsLib.Function] = js.native
+  var onSwipe: js.UndefOr[js.Function] = js.native
   /**
     * @description Default options object. Attributes have priority over this property.
     */
@@ -40,7 +40,7 @@ trait OnsNavigatorElement
     * @description Page URL or index of an existing page in navigator's stack.
     */
   def bringPageTop(item: js.Any): js.Promise[stdLib.HTMLElement] = js.native
-  def bringPageTop(item: js.Any, options: coreDashJsLib.Object): js.Promise[stdLib.HTMLElement] = js.native
+  def bringPageTop(item: js.Any, options: js.Object): js.Promise[stdLib.HTMLElement] = js.native
   /**
     * @param {Number} index The index where it should be inserted
     * @param {*} page Page URL. Can be either a HTML document or a <code>&lt;ons-template&gt;</code>

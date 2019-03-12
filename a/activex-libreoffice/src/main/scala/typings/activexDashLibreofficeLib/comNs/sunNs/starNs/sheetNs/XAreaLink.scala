@@ -42,15 +42,15 @@ object XAreaLink {
   def apply(
     DestArea: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
     SourceArea: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getDestArea: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
-    getSourceArea: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setDestArea: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit],
-    setSourceArea: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getDestArea: () => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
+    getSourceArea: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setDestArea: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress => scala.Unit,
+    setSourceArea: java.lang.String => scala.Unit
   ): XAreaLink = {
-    val __obj = js.Dynamic.literal(DestArea = DestArea, SourceArea = SourceArea, acquire = acquire, getDestArea = getDestArea, getSourceArea = getSourceArea, queryInterface = queryInterface, release = release, setDestArea = setDestArea, setSourceArea = setSourceArea)
+    val __obj = js.Dynamic.literal(DestArea = DestArea, SourceArea = SourceArea, acquire = js.Any.fromFunction0(acquire), getDestArea = js.Any.fromFunction0(getDestArea), getSourceArea = js.Any.fromFunction0(getSourceArea), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDestArea = js.Any.fromFunction1(setDestArea), setSourceArea = js.Any.fromFunction1(setSourceArea))
   
     __obj.asInstanceOf[XAreaLink]
   }

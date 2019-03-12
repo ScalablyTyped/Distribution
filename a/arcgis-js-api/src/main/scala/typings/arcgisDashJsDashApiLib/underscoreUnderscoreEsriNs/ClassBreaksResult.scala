@@ -38,13 +38,13 @@ object ClassBreaksResult {
   def apply(
     classBreaksInfos: js.Array[ClassBreaksResultClassBreaksInfos],
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     maxValue: scala.Double,
     minValue: scala.Double,
     normalizationTotal: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): ClassBreaksResult = {
-    val __obj = js.Dynamic.literal(classBreaksInfos = classBreaksInfos, constructor = constructor, hasOwnProperty = hasOwnProperty, maxValue = maxValue, minValue = minValue, normalizationTotal = normalizationTotal, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(classBreaksInfos = classBreaksInfos, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxValue = maxValue, minValue = minValue, normalizationTotal = normalizationTotal, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[ClassBreaksResult]
   }

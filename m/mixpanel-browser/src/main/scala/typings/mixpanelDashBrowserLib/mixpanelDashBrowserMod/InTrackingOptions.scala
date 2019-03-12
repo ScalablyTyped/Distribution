@@ -19,11 +19,11 @@ object InTrackingOptions {
     cross_subdomain_cookie: scala.Boolean,
     persistence_type: Persistence,
     secure_cookie: scala.Boolean,
-    track: js.Function0[scala.Unit],
+    track: () => scala.Unit,
     track_event_name: java.lang.String,
     track_event_properties: Dict
   ): InTrackingOptions = {
-    val __obj = js.Dynamic.literal(cookie_expiration = cookie_expiration, cookie_prefix = cookie_prefix, cross_subdomain_cookie = cross_subdomain_cookie, persistence_type = persistence_type, secure_cookie = secure_cookie, track = track, track_event_name = track_event_name, track_event_properties = track_event_properties)
+    val __obj = js.Dynamic.literal(cookie_expiration = cookie_expiration, cookie_prefix = cookie_prefix, cross_subdomain_cookie = cross_subdomain_cookie, persistence_type = persistence_type, secure_cookie = secure_cookie, track = js.Any.fromFunction0(track), track_event_name = track_event_name, track_event_properties = track_event_properties)
   
     __obj.asInstanceOf[InTrackingOptions]
   }

@@ -22,14 +22,14 @@ trait ISearchConditionEx extends js.Object {
 object ISearchConditionEx {
   @scala.inline
   def apply(
-    Clone: js.Function0[ISearchConditionEx],
+    Clone: () => ISearchConditionEx,
     Enabled: scala.Boolean,
     Ignored: scala.Boolean,
     SearchCondition: ISearchCondition,
-    Set: js.Function4[ISearchCondition, scala.Boolean, scala.Boolean, scala.Boolean, scala.Unit],
+    Set: (ISearchCondition, scala.Boolean, scala.Boolean, scala.Boolean) => scala.Unit,
     SpecialNULL: scala.Boolean
   ): ISearchConditionEx = {
-    val __obj = js.Dynamic.literal(Clone = Clone, Enabled = Enabled, Ignored = Ignored, SearchCondition = SearchCondition, Set = Set, SpecialNULL = SpecialNULL)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Enabled = Enabled, Ignored = Ignored, SearchCondition = SearchCondition, Set = js.Any.fromFunction4(Set), SpecialNULL = SpecialNULL)
   
     __obj.asInstanceOf[ISearchConditionEx]
   }

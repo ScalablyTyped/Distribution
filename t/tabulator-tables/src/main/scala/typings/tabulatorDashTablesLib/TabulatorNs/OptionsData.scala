@@ -71,7 +71,7 @@ object OptionsData {
   def apply(
     ajaxConfig: HttpMethod | AjaxConfig = null,
     ajaxContentType: tabulatorDashTablesLib.tabulatorDashTablesLibStrings.form | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.json | AjaxContentType = null,
-    ajaxError: js.Function3[/* xhr */ js.Any, /* textStatus */ js.Any, /* errorThrown */ js.Any, scala.Unit] = null,
+    ajaxError: (/* xhr */ js.Any, /* textStatus */ js.Any, /* errorThrown */ js.Any) => scala.Unit = null,
     ajaxFiltering: js.UndefOr[scala.Boolean] = js.undefined,
     ajaxLoader: scala.Boolean | js.Function0[scala.Boolean] = null,
     ajaxLoaderError: java.lang.String = null,
@@ -80,19 +80,19 @@ object OptionsData {
     ajaxProgressiveLoad: tabulatorDashTablesLib.tabulatorDashTablesLibStrings.load | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.scroll = null,
     ajaxProgressiveLoadDelay: scala.Int | scala.Double = null,
     ajaxProgressiveLoadScrollMargin: scala.Int | scala.Double = null,
-    ajaxRequestFunc: js.Function3[/* url */ java.lang.String, /* config */ js.Any, /* params */ js.Any, js.Promise[_]] = null,
-    ajaxRequesting: js.Function2[/* url */ java.lang.String, /* params */ js.Any, scala.Boolean] = null,
-    ajaxResponse: js.Function3[/* url */ java.lang.String, /* params */ js.Any, /* response */ js.Any, _] = null,
+    ajaxRequestFunc: (/* url */ java.lang.String, /* config */ js.Any, /* params */ js.Any) => js.Promise[_] = null,
+    ajaxRequesting: (/* url */ java.lang.String, /* params */ js.Any) => scala.Boolean = null,
+    ajaxResponse: (/* url */ java.lang.String, /* params */ js.Any, /* response */ js.Any) => _ = null,
     ajaxSorting: js.UndefOr[scala.Boolean] = js.undefined,
     ajaxURL: java.lang.String = null,
-    ajaxURLGenerator: js.Function3[/* url */ java.lang.String, /* config */ js.Any, /* params */ js.Any, java.lang.String] = null,
+    ajaxURLGenerator: (/* url */ java.lang.String, /* config */ js.Any, /* params */ js.Any) => java.lang.String = null,
     data: js.Array[_] = null,
     index: scala.Double | java.lang.String = null
   ): OptionsData = {
     val __obj = js.Dynamic.literal()
     if (ajaxConfig != null) __obj.updateDynamic("ajaxConfig")(ajaxConfig.asInstanceOf[js.Any])
     if (ajaxContentType != null) __obj.updateDynamic("ajaxContentType")(ajaxContentType.asInstanceOf[js.Any])
-    if (ajaxError != null) __obj.updateDynamic("ajaxError")(ajaxError)
+    if (ajaxError != null) __obj.updateDynamic("ajaxError")(js.Any.fromFunction3(ajaxError))
     if (!js.isUndefined(ajaxFiltering)) __obj.updateDynamic("ajaxFiltering")(ajaxFiltering)
     if (ajaxLoader != null) __obj.updateDynamic("ajaxLoader")(ajaxLoader.asInstanceOf[js.Any])
     if (ajaxLoaderError != null) __obj.updateDynamic("ajaxLoaderError")(ajaxLoaderError)
@@ -101,12 +101,12 @@ object OptionsData {
     if (ajaxProgressiveLoad != null) __obj.updateDynamic("ajaxProgressiveLoad")(ajaxProgressiveLoad.asInstanceOf[js.Any])
     if (ajaxProgressiveLoadDelay != null) __obj.updateDynamic("ajaxProgressiveLoadDelay")(ajaxProgressiveLoadDelay.asInstanceOf[js.Any])
     if (ajaxProgressiveLoadScrollMargin != null) __obj.updateDynamic("ajaxProgressiveLoadScrollMargin")(ajaxProgressiveLoadScrollMargin.asInstanceOf[js.Any])
-    if (ajaxRequestFunc != null) __obj.updateDynamic("ajaxRequestFunc")(ajaxRequestFunc)
-    if (ajaxRequesting != null) __obj.updateDynamic("ajaxRequesting")(ajaxRequesting)
-    if (ajaxResponse != null) __obj.updateDynamic("ajaxResponse")(ajaxResponse)
+    if (ajaxRequestFunc != null) __obj.updateDynamic("ajaxRequestFunc")(js.Any.fromFunction3(ajaxRequestFunc))
+    if (ajaxRequesting != null) __obj.updateDynamic("ajaxRequesting")(js.Any.fromFunction2(ajaxRequesting))
+    if (ajaxResponse != null) __obj.updateDynamic("ajaxResponse")(js.Any.fromFunction3(ajaxResponse))
     if (!js.isUndefined(ajaxSorting)) __obj.updateDynamic("ajaxSorting")(ajaxSorting)
     if (ajaxURL != null) __obj.updateDynamic("ajaxURL")(ajaxURL)
-    if (ajaxURLGenerator != null) __obj.updateDynamic("ajaxURLGenerator")(ajaxURLGenerator)
+    if (ajaxURLGenerator != null) __obj.updateDynamic("ajaxURLGenerator")(js.Any.fromFunction3(ajaxURLGenerator))
     if (data != null) __obj.updateDynamic("data")(data)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsData]

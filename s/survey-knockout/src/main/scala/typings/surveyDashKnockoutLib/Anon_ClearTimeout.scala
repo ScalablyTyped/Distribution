@@ -12,11 +12,8 @@ trait Anon_ClearTimeout extends js.Object {
 
 object Anon_ClearTimeout {
   @scala.inline
-  def apply(
-    clearTimeout: js.Function1[scala.Double, scala.Unit],
-    setTimeout: js.Function1[js.Function0[_], scala.Double]
-  ): Anon_ClearTimeout = {
-    val __obj = js.Dynamic.literal(clearTimeout = clearTimeout, setTimeout = setTimeout)
+  def apply(clearTimeout: scala.Double => scala.Unit, setTimeout: js.Function0[_] => scala.Double): Anon_ClearTimeout = {
+    val __obj = js.Dynamic.literal(clearTimeout = js.Any.fromFunction1(clearTimeout), setTimeout = js.Any.fromFunction1(setTimeout))
   
     __obj.asInstanceOf[Anon_ClearTimeout]
   }

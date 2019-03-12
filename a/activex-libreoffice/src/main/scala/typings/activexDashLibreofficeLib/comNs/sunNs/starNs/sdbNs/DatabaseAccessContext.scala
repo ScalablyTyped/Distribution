@@ -27,55 +27,30 @@ trait DatabaseAccessContext
 object DatabaseAccessContext {
   @scala.inline
   def apply(
-    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementNames: stdLib.SafeArray[java.lang.String],
     ElementType: activexDashLibreofficeLib.`type`,
     Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
-    acquire: js.Function0[scala.Unit],
-    bindAlias: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String, 
-      scala.Unit
-    ],
-    createEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
-    getByName: js.Function1[java.lang.String, js.Any],
-    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    getLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
-    hasByName: js.Function1[java.lang.String, scala.Boolean],
-    hasElements: js.Function0[scala.Boolean],
-    listAliases: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.AliasProgrammaticPair]
-    ],
-    lookupAlias: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String, 
-      java.lang.String
-    ],
-    lookupProgrammatic: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String, 
-      java.lang.String
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    rebindAliases: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    release: js.Function0[scala.Unit],
-    renameAlias: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String, 
-      java.lang.String, 
-      scala.Unit
-    ],
-    setLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit],
-    unbindAlias: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String, 
-      scala.Unit
-    ],
-    unbindAliases: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    bindAlias: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String) => scala.Unit,
+    createEnumeration: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration,
+    getByName: java.lang.String => js.Any,
+    getElementNames: () => stdLib.SafeArray[java.lang.String],
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    getLocale: () => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    hasByName: java.lang.String => scala.Boolean,
+    hasElements: () => scala.Boolean,
+    listAliases: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.AliasProgrammaticPair],
+    lookupAlias: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String) => java.lang.String,
+    lookupProgrammatic: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String) => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    rebindAliases: (java.lang.String, java.lang.String) => scala.Unit,
+    release: () => scala.Unit,
+    renameAlias: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String, java.lang.String) => scala.Unit,
+    setLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => scala.Unit,
+    unbindAlias: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String) => scala.Unit,
+    unbindAliases: java.lang.String => scala.Unit
   ): DatabaseAccessContext = {
-    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, Locale = Locale, acquire = acquire, bindAlias = bindAlias, createEnumeration = createEnumeration, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, getLocale = getLocale, hasByName = hasByName, hasElements = hasElements, listAliases = listAliases, lookupAlias = lookupAlias, lookupProgrammatic = lookupProgrammatic, queryInterface = queryInterface, rebindAliases = rebindAliases, release = release, renameAlias = renameAlias, setLocale = setLocale, unbindAlias = unbindAlias, unbindAliases = unbindAliases)
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, Locale = Locale, acquire = js.Any.fromFunction0(acquire), bindAlias = js.Any.fromFunction3(bindAlias), createEnumeration = js.Any.fromFunction0(createEnumeration), getByName = js.Any.fromFunction1(getByName), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), getLocale = js.Any.fromFunction0(getLocale), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), listAliases = js.Any.fromFunction1(listAliases), lookupAlias = js.Any.fromFunction2(lookupAlias), lookupProgrammatic = js.Any.fromFunction2(lookupProgrammatic), queryInterface = js.Any.fromFunction1(queryInterface), rebindAliases = js.Any.fromFunction2(rebindAliases), release = js.Any.fromFunction0(release), renameAlias = js.Any.fromFunction3(renameAlias), setLocale = js.Any.fromFunction1(setLocale), unbindAlias = js.Any.fromFunction2(unbindAlias), unbindAliases = js.Any.fromFunction1(unbindAliases))
   
     __obj.asInstanceOf[DatabaseAccessContext]
   }

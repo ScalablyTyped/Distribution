@@ -17,7 +17,7 @@ object FetchProps {
     url: java.lang.String,
     body: stdLib.BodyInit = null,
     cache: stdLib.RequestCache = null,
-    children: js.Function1[/* renderProps */ RenderProps[T], reactLib.reactMod.ReactNs.ReactNode] = null,
+    children: /* renderProps */ RenderProps[T] => reactLib.reactMod.ReactNs.ReactNode = null,
     credentials: stdLib.RequestCredentials = null,
     headers: stdLib.HeadersInit = null,
     integrity: java.lang.String = null,
@@ -34,7 +34,7 @@ object FetchProps {
     val __obj = js.Dynamic.literal(url = url)
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache)
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (credentials != null) __obj.updateDynamic("credentials")(credentials)
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (integrity != null) __obj.updateDynamic("integrity")(integrity)

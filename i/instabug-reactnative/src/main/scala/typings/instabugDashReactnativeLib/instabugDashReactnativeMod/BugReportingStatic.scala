@@ -14,11 +14,11 @@ trait BugReportingStatic extends js.Object {
 object BugReportingStatic {
   @scala.inline
   def apply(
-    setShakingThresholdForAndroid: js.Function1[scala.Double, scala.Unit],
-    setShakingThresholdForiPad: js.Function1[scala.Double, scala.Unit],
-    setShakingThresholdForiPhone: js.Function1[scala.Double, scala.Unit]
+    setShakingThresholdForAndroid: scala.Double => scala.Unit,
+    setShakingThresholdForiPad: scala.Double => scala.Unit,
+    setShakingThresholdForiPhone: scala.Double => scala.Unit
   ): BugReportingStatic = {
-    val __obj = js.Dynamic.literal(setShakingThresholdForAndroid = setShakingThresholdForAndroid, setShakingThresholdForiPad = setShakingThresholdForiPad, setShakingThresholdForiPhone = setShakingThresholdForiPhone)
+    val __obj = js.Dynamic.literal(setShakingThresholdForAndroid = js.Any.fromFunction1(setShakingThresholdForAndroid), setShakingThresholdForiPad = js.Any.fromFunction1(setShakingThresholdForiPad), setShakingThresholdForiPhone = js.Any.fromFunction1(setShakingThresholdForiPhone))
   
     __obj.asInstanceOf[BugReportingStatic]
   }

@@ -34,8 +34,7 @@ class Queue protected ()
   def inactive(fn: js.Function): Queue = js.native
   def inactiveCount(`type`: java.lang.String, fn: js.Function): Queue = js.native
   def process(`type`: java.lang.String): scala.Unit = js.native
-  def process(`type`: java.lang.String, n: ProcessCallback): scala.Unit = js.native
-  def process(`type`: java.lang.String, n: ProcessCallback, fn: ProcessCallback): scala.Unit = js.native
+  def process(`type`: java.lang.String, fn: ProcessCallback): scala.Unit = js.native
   def process(`type`: java.lang.String, n: scala.Double): scala.Unit = js.native
   def process(`type`: java.lang.String, n: scala.Double, fn: ProcessCallback): scala.Unit = js.native
   def promote(): scala.Unit = js.native

@@ -15,12 +15,12 @@ trait DragSource extends js.Object {
 object DragSource {
   @scala.inline
   def apply(
-    beginDrag: js.Function2[DragDropMonitor, Identifier, scala.Unit],
-    canDrag: js.Function2[DragDropMonitor, Identifier, scala.Boolean],
-    endDrag: js.Function2[DragDropMonitor, Identifier, scala.Unit],
-    isDragging: js.Function2[DragDropMonitor, Identifier, scala.Boolean]
+    beginDrag: (DragDropMonitor, Identifier) => scala.Unit,
+    canDrag: (DragDropMonitor, Identifier) => scala.Boolean,
+    endDrag: (DragDropMonitor, Identifier) => scala.Unit,
+    isDragging: (DragDropMonitor, Identifier) => scala.Boolean
   ): DragSource = {
-    val __obj = js.Dynamic.literal(beginDrag = beginDrag, canDrag = canDrag, endDrag = endDrag, isDragging = isDragging)
+    val __obj = js.Dynamic.literal(beginDrag = js.Any.fromFunction2(beginDrag), canDrag = js.Any.fromFunction2(canDrag), endDrag = js.Any.fromFunction2(endDrag), isDragging = js.Any.fromFunction2(isDragging))
   
     __obj.asInstanceOf[DragSource]
   }

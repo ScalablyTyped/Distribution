@@ -24,22 +24,18 @@ trait Consumer extends js.Object {
 object Consumer {
   @scala.inline
   def apply(
-    connect: js.Function0[js.Promise[scala.Unit]],
-    describeGroup: js.Function0[js.Promise[GroupMetadata]],
-    disconnect: js.Function0[js.Promise[scala.Unit]],
+    connect: () => js.Promise[scala.Unit],
+    describeGroup: () => js.Promise[GroupMetadata],
+    disconnect: () => js.Promise[scala.Unit],
     events: ConsumerEvents,
-    on: js.Function2[
-      kafkajsLib.kafkajsLibStrings.consumerDOTheartbeat | kafkajsLib.kafkajsLibStrings.consumerDOTcommit_offsets | kafkajsLib.kafkajsLibStrings.consumerDOTgroup_join | kafkajsLib.kafkajsLibStrings.consumerDOTfetch | kafkajsLib.kafkajsLibStrings.consumerDOTstart_batch_process | kafkajsLib.kafkajsLibStrings.consumnerDOTend_batch_process | kafkajsLib.kafkajsLibStrings.consumerDOTconnect | kafkajsLib.kafkajsLibStrings.consumerDOTdisconnect | kafkajsLib.kafkajsLibStrings.consumerDOTstop | kafkajsLib.kafkajsLibStrings.consumerDOTcrash | kafkajsLib.kafkajsLibStrings.consumerDOTrequest | kafkajsLib.kafkajsLibStrings.consumerDOTrequest_timeout | kafkajsLib.kafkajsLibStrings.consumerDOTrequest_queue_size, 
-      js.Function1[/* e */ InstrumentationEvent, scala.Unit], 
-      js.Function0[Consumer]
-    ],
-    pause: js.Function1[js.Array[kafkajsLib.Anon_Topic], scala.Unit],
-    resume: js.Function1[js.Array[kafkajsLib.Anon_Topic], scala.Unit],
-    run: js.Function1[ConsumerRunOptions, js.Promise[scala.Unit]],
-    seek: js.Function1[ConsumerSeekOptions, scala.Unit],
-    subscribe: js.Function1[ConsumerSubscribeOptions, js.Promise[scala.Unit]]
+    on: (kafkajsLib.kafkajsLibStrings.consumerDOTheartbeat | kafkajsLib.kafkajsLibStrings.consumerDOTcommit_offsets | kafkajsLib.kafkajsLibStrings.consumerDOTgroup_join | kafkajsLib.kafkajsLibStrings.consumerDOTfetch | kafkajsLib.kafkajsLibStrings.consumerDOTstart_batch_process | kafkajsLib.kafkajsLibStrings.consumnerDOTend_batch_process | kafkajsLib.kafkajsLibStrings.consumerDOTconnect | kafkajsLib.kafkajsLibStrings.consumerDOTdisconnect | kafkajsLib.kafkajsLibStrings.consumerDOTstop | kafkajsLib.kafkajsLibStrings.consumerDOTcrash | kafkajsLib.kafkajsLibStrings.consumerDOTrequest | kafkajsLib.kafkajsLibStrings.consumerDOTrequest_timeout | kafkajsLib.kafkajsLibStrings.consumerDOTrequest_queue_size, js.Function1[/* e */ InstrumentationEvent, scala.Unit]) => js.Function0[Consumer],
+    pause: js.Array[kafkajsLib.Anon_Topic] => scala.Unit,
+    resume: js.Array[kafkajsLib.Anon_Topic] => scala.Unit,
+    run: ConsumerRunOptions => js.Promise[scala.Unit],
+    seek: ConsumerSeekOptions => scala.Unit,
+    subscribe: ConsumerSubscribeOptions => js.Promise[scala.Unit]
   ): Consumer = {
-    val __obj = js.Dynamic.literal(connect = connect, describeGroup = describeGroup, disconnect = disconnect, events = events, on = on, pause = pause, resume = resume, run = run, seek = seek, subscribe = subscribe)
+    val __obj = js.Dynamic.literal(connect = js.Any.fromFunction0(connect), describeGroup = js.Any.fromFunction0(describeGroup), disconnect = js.Any.fromFunction0(disconnect), events = events, on = js.Any.fromFunction2(on), pause = js.Any.fromFunction1(pause), resume = js.Any.fromFunction1(resume), run = js.Any.fromFunction1(run), seek = js.Any.fromFunction1(seek), subscribe = js.Any.fromFunction1(subscribe))
   
     __obj.asInstanceOf[Consumer]
   }

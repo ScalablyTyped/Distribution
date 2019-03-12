@@ -92,17 +92,17 @@ object XDesktop {
     Components: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess,
     CurrentComponent: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent,
     CurrentFrame: XFrame,
-    acquire: js.Function0[scala.Unit],
-    addTerminateListener: js.Function1[XTerminateListener, scala.Unit],
-    getComponents: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess],
-    getCurrentComponent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent],
-    getCurrentFrame: js.Function0[XFrame],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeTerminateListener: js.Function1[XTerminateListener, scala.Unit],
-    terminate: js.Function0[scala.Boolean]
+    acquire: () => scala.Unit,
+    addTerminateListener: XTerminateListener => scala.Unit,
+    getComponents: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess,
+    getCurrentComponent: () => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent,
+    getCurrentFrame: () => XFrame,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeTerminateListener: XTerminateListener => scala.Unit,
+    terminate: () => scala.Boolean
   ): XDesktop = {
-    val __obj = js.Dynamic.literal(Components = Components, CurrentComponent = CurrentComponent, CurrentFrame = CurrentFrame, acquire = acquire, addTerminateListener = addTerminateListener, getComponents = getComponents, getCurrentComponent = getCurrentComponent, getCurrentFrame = getCurrentFrame, queryInterface = queryInterface, release = release, removeTerminateListener = removeTerminateListener, terminate = terminate)
+    val __obj = js.Dynamic.literal(Components = Components, CurrentComponent = CurrentComponent, CurrentFrame = CurrentFrame, acquire = js.Any.fromFunction0(acquire), addTerminateListener = js.Any.fromFunction1(addTerminateListener), getComponents = js.Any.fromFunction0(getComponents), getCurrentComponent = js.Any.fromFunction0(getCurrentComponent), getCurrentFrame = js.Any.fromFunction0(getCurrentFrame), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeTerminateListener = js.Any.fromFunction1(removeTerminateListener), terminate = js.Any.fromFunction0(terminate))
   
     __obj.asInstanceOf[XDesktop]
   }

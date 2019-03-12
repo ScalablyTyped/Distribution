@@ -11,7 +11,7 @@ trait DSResourceDefinition[T] extends js.Object {
     params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSFilterParams */ js.Any,
     scope: angularLib.angularMod.angularNs.IScope,
     expr: java.lang.String
-  ): angularLib.angularMod.Global.Function = js.native
+  ): js.Function = js.native
   def bindAll(
     params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSFilterParams */ js.Any,
     scope: angularLib.angularMod.angularNs.IScope,
@@ -23,8 +23,8 @@ trait DSResourceDefinition[T] extends js.Object {
       ], 
       scala.Unit
     ]
-  ): angularLib.angularMod.Global.Function = js.native
-  def bindOne(id: java.lang.String, scope: angularLib.angularMod.angularNs.IScope, expr: java.lang.String): angularLib.angularMod.Global.Function = js.native
+  ): js.Function = js.native
+  def bindOne(id: java.lang.String, scope: angularLib.angularMod.angularNs.IScope, expr: java.lang.String): js.Function = js.native
   def bindOne(
     id: java.lang.String,
     scope: angularLib.angularMod.angularNs.IScope,
@@ -34,8 +34,8 @@ trait DSResourceDefinition[T] extends js.Object {
       /* item */ T with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
       scala.Unit
     ]
-  ): angularLib.angularMod.Global.Function = js.native
-  def bindOne(id: scala.Double, scope: angularLib.angularMod.angularNs.IScope, expr: java.lang.String): angularLib.angularMod.Global.Function = js.native
+  ): js.Function = js.native
+  def bindOne(id: scala.Double, scope: angularLib.angularMod.angularNs.IScope, expr: java.lang.String): js.Function = js.native
   def bindOne(
     id: scala.Double,
     scope: angularLib.angularMod.angularNs.IScope,
@@ -45,6 +45,6 @@ trait DSResourceDefinition[T] extends js.Object {
       /* item */ T with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
       scala.Unit
     ]
-  ): angularLib.angularMod.Global.Function = js.native
+  ): js.Function = js.native
 }
 

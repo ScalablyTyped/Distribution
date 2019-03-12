@@ -19,28 +19,28 @@ import scala.scalajs.js.annotation._
   * @since LibreOffice 3.5
   */
 trait Calendar2 extends js.Object {
-  var Days: activexDashInteropLib.SafeArray[CalendarItem2]
+  var Days: stdLib.SafeArray[CalendarItem2]
   var Default: scala.Boolean
-  var Eras: activexDashInteropLib.SafeArray[CalendarItem2]
-  var GenitiveMonths: activexDashInteropLib.SafeArray[CalendarItem2]
+  var Eras: stdLib.SafeArray[CalendarItem2]
+  var GenitiveMonths: stdLib.SafeArray[CalendarItem2]
   var MinimumNumberOfDaysForFirstWeek: scala.Double
-  var Months: activexDashInteropLib.SafeArray[CalendarItem2]
+  var Months: stdLib.SafeArray[CalendarItem2]
   var Name: java.lang.String
-  var PartitiveMonths: activexDashInteropLib.SafeArray[CalendarItem2]
+  var PartitiveMonths: stdLib.SafeArray[CalendarItem2]
   var StartOfWeek: java.lang.String
 }
 
 object Calendar2 {
   @scala.inline
   def apply(
-    Days: activexDashInteropLib.SafeArray[CalendarItem2],
+    Days: stdLib.SafeArray[CalendarItem2],
     Default: scala.Boolean,
-    Eras: activexDashInteropLib.SafeArray[CalendarItem2],
-    GenitiveMonths: activexDashInteropLib.SafeArray[CalendarItem2],
+    Eras: stdLib.SafeArray[CalendarItem2],
+    GenitiveMonths: stdLib.SafeArray[CalendarItem2],
     MinimumNumberOfDaysForFirstWeek: scala.Double,
-    Months: activexDashInteropLib.SafeArray[CalendarItem2],
+    Months: stdLib.SafeArray[CalendarItem2],
     Name: java.lang.String,
-    PartitiveMonths: activexDashInteropLib.SafeArray[CalendarItem2],
+    PartitiveMonths: stdLib.SafeArray[CalendarItem2],
     StartOfWeek: java.lang.String
   ): Calendar2 = {
     val __obj = js.Dynamic.literal(Days = Days, Default = Default, Eras = Eras, GenitiveMonths = GenitiveMonths, MinimumNumberOfDaysForFirstWeek = MinimumNumberOfDaysForFirstWeek, Months = Months, Name = Name, PartitiveMonths = PartitiveMonths, StartOfWeek = StartOfWeek)

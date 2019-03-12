@@ -2587,6 +2587,526 @@ object Visitor {
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
       /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Program, _], 
       _
+    ] = null,
+    visitProperty: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Property, _], 
+      _
+    ] = null,
+    visitPropertyPattern: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.PropertyPattern, _], 
+      _
+    ] = null,
+    visitQualifiedTypeIdentifier: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.QualifiedTypeIdentifier, _], 
+      _
+    ] = null,
+    visitRegExpLiteral: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.RegExpLiteral, _], 
+      _
+    ] = null,
+    visitRestElement: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.RestElement, _], 
+      _
+    ] = null,
+    visitRestProperty: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.RestProperty, _], 
+      _
+    ] = null,
+    visitReturnStatement: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ReturnStatement, _], 
+      _
+    ] = null,
+    visitSequenceExpression: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SequenceExpression, _], 
+      _
+    ] = null,
+    visitSourceLocation: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SourceLocation, _], 
+      _
+    ] = null,
+    visitSpecifier: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Specifier, _], 
+      _
+    ] = null,
+    visitSpreadElement: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SpreadElement, _], 
+      _
+    ] = null,
+    visitSpreadElementPattern: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SpreadElementPattern, _], 
+      _
+    ] = null,
+    visitSpreadProperty: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SpreadProperty, _], 
+      _
+    ] = null,
+    visitSpreadPropertyPattern: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SpreadPropertyPattern, _], 
+      _
+    ] = null,
+    visitStatement: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Statement, _], 
+      _
+    ] = null,
+    visitStringLiteral: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.StringLiteral, _], 
+      _
+    ] = null,
+    visitStringLiteralTypeAnnotation: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.StringLiteralTypeAnnotation, _], 
+      _
+    ] = null,
+    visitStringTypeAnnotation: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.StringTypeAnnotation, _], 
+      _
+    ] = null,
+    visitSuper: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Super, _], 
+      _
+    ] = null,
+    visitSwitchCase: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SwitchCase, _], 
+      _
+    ] = null,
+    visitSwitchStatement: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SwitchStatement, _], 
+      _
+    ] = null,
+    visitTSAnyKeyword: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSAnyKeyword, _], 
+      _
+    ] = null,
+    visitTSArrayType: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSArrayType, _], 
+      _
+    ] = null,
+    visitTSAsExpression: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSAsExpression, _], 
+      _
+    ] = null,
+    visitTSBigIntKeyword: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSBigIntKeyword, _], 
+      _
+    ] = null,
+    visitTSBooleanKeyword: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSBooleanKeyword, _], 
+      _
+    ] = null,
+    visitTSCallSignatureDeclaration: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSCallSignatureDeclaration, _], 
+      _
+    ] = null,
+    visitTSConditionalType: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSConditionalType, _], 
+      _
+    ] = null,
+    visitTSConstructSignatureDeclaration: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSConstructSignatureDeclaration, _], 
+      _
+    ] = null,
+    visitTSConstructorType: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSConstructorType, _], 
+      _
+    ] = null,
+    visitTSDeclareFunction: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSDeclareFunction, _], 
+      _
+    ] = null,
+    visitTSDeclareMethod: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSDeclareMethod, _], 
+      _
+    ] = null,
+    visitTSEnumDeclaration: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSEnumDeclaration, _], 
+      _
+    ] = null,
+    visitTSEnumMember: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSEnumMember, _], 
+      _
+    ] = null,
+    visitTSExportAssignment: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSExportAssignment, _], 
+      _
+    ] = null,
+    visitTSExpressionWithTypeArguments: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSExpressionWithTypeArguments, _], 
+      _
+    ] = null,
+    visitTSExternalModuleReference: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSExternalModuleReference, _], 
+      _
+    ] = null,
+    visitTSFunctionType: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSFunctionType, _], 
+      _
+    ] = null,
+    visitTSHasOptionalTypeAnnotation: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSHasOptionalTypeAnnotation, _], 
+      _
+    ] = null,
+    visitTSHasOptionalTypeParameterInstantiation: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSHasOptionalTypeParameterInstantiation, _], 
+      _
+    ] = null,
+    visitTSHasOptionalTypeParameters: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSHasOptionalTypeParameters, _], 
+      _
+    ] = null,
+    visitTSImportEqualsDeclaration: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSImportEqualsDeclaration, _], 
+      _
+    ] = null,
+    visitTSImportType: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSImportType, _], 
+      _
+    ] = null,
+    visitTSIndexSignature: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSIndexSignature, _], 
+      _
+    ] = null,
+    visitTSIndexedAccessType: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSIndexedAccessType, _], 
+      _
+    ] = null,
+    visitTSInferType: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSInferType, _], 
+      _
+    ] = null,
+    visitTSInterfaceBody: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSInterfaceBody, _], 
+      _
+    ] = null,
+    visitTSInterfaceDeclaration: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSInterfaceDeclaration, _], 
+      _
+    ] = null,
+    visitTSIntersectionType: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSIntersectionType, _], 
+      _
+    ] = null,
+    visitTSLiteralType: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSLiteralType, _], 
+      _
+    ] = null,
+    visitTSMappedType: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSMappedType, _], 
+      _
+    ] = null,
+    visitTSMethodSignature: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSMethodSignature, _], 
+      _
+    ] = null,
+    visitTSModuleBlock: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSModuleBlock, _], 
+      _
+    ] = null,
+    visitTSModuleDeclaration: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSModuleDeclaration, _], 
+      _
+    ] = null,
+    visitTSNamespaceExportDeclaration: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSNamespaceExportDeclaration, _], 
+      _
+    ] = null,
+    visitTSNeverKeyword: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSNeverKeyword, _], 
+      _
+    ] = null,
+    visitTSNonNullExpression: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSNonNullExpression, _], 
+      _
+    ] = null,
+    visitTSNullKeyword: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSNullKeyword, _], 
+      _
+    ] = null,
+    visitTSNumberKeyword: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSNumberKeyword, _], 
+      _
+    ] = null,
+    visitTSObjectKeyword: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSObjectKeyword, _], 
+      _
+    ] = null,
+    visitTSOptionalType: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSOptionalType, _], 
+      _
+    ] = null,
+    visitTSParameterProperty: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSParameterProperty, _], 
+      _
+    ] = null,
+    visitTSParenthesizedType: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSParenthesizedType, _], 
+      _
+    ] = null,
+    visitTSPropertySignature: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSPropertySignature, _], 
+      _
+    ] = null,
+    visitTSQualifiedName: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSQualifiedName, _], 
+      _
+    ] = null,
+    visitTSRestType: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSRestType, _], 
+      _
+    ] = null,
+    visitTSStringKeyword: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSStringKeyword, _], 
+      _
+    ] = null,
+    visitTSSymbolKeyword: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSSymbolKeyword, _], 
+      _
+    ] = null,
+    visitTSThisType: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSThisType, _], 
+      _
+    ] = null,
+    visitTSTupleType: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTupleType, _], 
+      _
+    ] = null,
+    visitTSType: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSType, _], 
+      _
+    ] = null,
+    visitTSTypeAliasDeclaration: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeAliasDeclaration, _], 
+      _
+    ] = null,
+    visitTSTypeAnnotation: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeAnnotation, _], 
+      _
+    ] = null,
+    visitTSTypeAssertion: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeAssertion, _], 
+      _
+    ] = null,
+    visitTSTypeLiteral: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeLiteral, _], 
+      _
+    ] = null,
+    visitTSTypeOperator: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeOperator, _], 
+      _
+    ] = null,
+    visitTSTypeParameter: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeParameter, _], 
+      _
+    ] = null,
+    visitTSTypeParameterDeclaration: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeParameterDeclaration, _], 
+      _
+    ] = null,
+    visitTSTypeParameterInstantiation: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeParameterInstantiation, _], 
+      _
+    ] = null,
+    visitTSTypePredicate: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypePredicate, _], 
+      _
+    ] = null,
+    visitTSTypeQuery: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeQuery, _], 
+      _
+    ] = null,
+    visitTSTypeReference: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeReference, _], 
+      _
+    ] = null,
+    visitTSUndefinedKeyword: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSUndefinedKeyword, _], 
+      _
+    ] = null,
+    visitTSUnionType: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSUnionType, _], 
+      _
+    ] = null,
+    visitTSUnknownKeyword: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSUnknownKeyword, _], 
+      _
+    ] = null,
+    visitTSVoidKeyword: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSVoidKeyword, _], 
+      _
+    ] = null,
+    visitTaggedTemplateExpression: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TaggedTemplateExpression, _], 
+      _
+    ] = null,
+    visitTemplateElement: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TemplateElement, _], 
+      _
+    ] = null,
+    visitTemplateLiteral: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TemplateLiteral, _], 
+      _
+    ] = null,
+    visitThisExpression: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ThisExpression, _], 
+      _
+    ] = null,
+    visitThisTypeAnnotation: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ThisTypeAnnotation, _], 
+      _
+    ] = null,
+    visitThrowStatement: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ThrowStatement, _], 
+      _
+    ] = null,
+    visitTryStatement: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TryStatement, _], 
+      _
+    ] = null,
+    visitTupleTypeAnnotation: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TupleTypeAnnotation, _], 
+      _
+    ] = null,
+    visitTypeAlias: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeAlias, _], 
+      _
+    ] = null,
+    visitTypeAnnotation: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeAnnotation, _], 
+      _
+    ] = null,
+    visitTypeCastExpression: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeCastExpression, _], 
+      _
+    ] = null,
+    visitTypeParameter: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeParameter, _], 
+      _
+    ] = null,
+    visitTypeParameterDeclaration: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeParameterDeclaration, _], 
+      _
+    ] = null,
+    visitTypeParameterInstantiation: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeParameterInstantiation, _], 
+      _
+    ] = null,
+    visitTypeofTypeAnnotation: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeofTypeAnnotation, _], 
+      _
+    ] = null,
+    visitUnaryExpression: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.UnaryExpression, _], 
+      _
+    ] = null,
+    visitUnionTypeAnnotation: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.UnionTypeAnnotation, _], 
+      _
+    ] = null,
+    visitUpdateExpression: js.ThisFunction1[
+      /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.UpdateExpression, _], 
+      _
     ] = null
   ): Visitor[M] = {
     val __obj = js.Dynamic.literal()
@@ -2740,6 +3260,110 @@ object Visitor {
     if (visitPrintable != null) __obj.updateDynamic("visitPrintable")(visitPrintable)
     if (visitPrivateName != null) __obj.updateDynamic("visitPrivateName")(visitPrivateName)
     if (visitProgram != null) __obj.updateDynamic("visitProgram")(visitProgram)
+    if (visitProperty != null) __obj.updateDynamic("visitProperty")(visitProperty)
+    if (visitPropertyPattern != null) __obj.updateDynamic("visitPropertyPattern")(visitPropertyPattern)
+    if (visitQualifiedTypeIdentifier != null) __obj.updateDynamic("visitQualifiedTypeIdentifier")(visitQualifiedTypeIdentifier)
+    if (visitRegExpLiteral != null) __obj.updateDynamic("visitRegExpLiteral")(visitRegExpLiteral)
+    if (visitRestElement != null) __obj.updateDynamic("visitRestElement")(visitRestElement)
+    if (visitRestProperty != null) __obj.updateDynamic("visitRestProperty")(visitRestProperty)
+    if (visitReturnStatement != null) __obj.updateDynamic("visitReturnStatement")(visitReturnStatement)
+    if (visitSequenceExpression != null) __obj.updateDynamic("visitSequenceExpression")(visitSequenceExpression)
+    if (visitSourceLocation != null) __obj.updateDynamic("visitSourceLocation")(visitSourceLocation)
+    if (visitSpecifier != null) __obj.updateDynamic("visitSpecifier")(visitSpecifier)
+    if (visitSpreadElement != null) __obj.updateDynamic("visitSpreadElement")(visitSpreadElement)
+    if (visitSpreadElementPattern != null) __obj.updateDynamic("visitSpreadElementPattern")(visitSpreadElementPattern)
+    if (visitSpreadProperty != null) __obj.updateDynamic("visitSpreadProperty")(visitSpreadProperty)
+    if (visitSpreadPropertyPattern != null) __obj.updateDynamic("visitSpreadPropertyPattern")(visitSpreadPropertyPattern)
+    if (visitStatement != null) __obj.updateDynamic("visitStatement")(visitStatement)
+    if (visitStringLiteral != null) __obj.updateDynamic("visitStringLiteral")(visitStringLiteral)
+    if (visitStringLiteralTypeAnnotation != null) __obj.updateDynamic("visitStringLiteralTypeAnnotation")(visitStringLiteralTypeAnnotation)
+    if (visitStringTypeAnnotation != null) __obj.updateDynamic("visitStringTypeAnnotation")(visitStringTypeAnnotation)
+    if (visitSuper != null) __obj.updateDynamic("visitSuper")(visitSuper)
+    if (visitSwitchCase != null) __obj.updateDynamic("visitSwitchCase")(visitSwitchCase)
+    if (visitSwitchStatement != null) __obj.updateDynamic("visitSwitchStatement")(visitSwitchStatement)
+    if (visitTSAnyKeyword != null) __obj.updateDynamic("visitTSAnyKeyword")(visitTSAnyKeyword)
+    if (visitTSArrayType != null) __obj.updateDynamic("visitTSArrayType")(visitTSArrayType)
+    if (visitTSAsExpression != null) __obj.updateDynamic("visitTSAsExpression")(visitTSAsExpression)
+    if (visitTSBigIntKeyword != null) __obj.updateDynamic("visitTSBigIntKeyword")(visitTSBigIntKeyword)
+    if (visitTSBooleanKeyword != null) __obj.updateDynamic("visitTSBooleanKeyword")(visitTSBooleanKeyword)
+    if (visitTSCallSignatureDeclaration != null) __obj.updateDynamic("visitTSCallSignatureDeclaration")(visitTSCallSignatureDeclaration)
+    if (visitTSConditionalType != null) __obj.updateDynamic("visitTSConditionalType")(visitTSConditionalType)
+    if (visitTSConstructSignatureDeclaration != null) __obj.updateDynamic("visitTSConstructSignatureDeclaration")(visitTSConstructSignatureDeclaration)
+    if (visitTSConstructorType != null) __obj.updateDynamic("visitTSConstructorType")(visitTSConstructorType)
+    if (visitTSDeclareFunction != null) __obj.updateDynamic("visitTSDeclareFunction")(visitTSDeclareFunction)
+    if (visitTSDeclareMethod != null) __obj.updateDynamic("visitTSDeclareMethod")(visitTSDeclareMethod)
+    if (visitTSEnumDeclaration != null) __obj.updateDynamic("visitTSEnumDeclaration")(visitTSEnumDeclaration)
+    if (visitTSEnumMember != null) __obj.updateDynamic("visitTSEnumMember")(visitTSEnumMember)
+    if (visitTSExportAssignment != null) __obj.updateDynamic("visitTSExportAssignment")(visitTSExportAssignment)
+    if (visitTSExpressionWithTypeArguments != null) __obj.updateDynamic("visitTSExpressionWithTypeArguments")(visitTSExpressionWithTypeArguments)
+    if (visitTSExternalModuleReference != null) __obj.updateDynamic("visitTSExternalModuleReference")(visitTSExternalModuleReference)
+    if (visitTSFunctionType != null) __obj.updateDynamic("visitTSFunctionType")(visitTSFunctionType)
+    if (visitTSHasOptionalTypeAnnotation != null) __obj.updateDynamic("visitTSHasOptionalTypeAnnotation")(visitTSHasOptionalTypeAnnotation)
+    if (visitTSHasOptionalTypeParameterInstantiation != null) __obj.updateDynamic("visitTSHasOptionalTypeParameterInstantiation")(visitTSHasOptionalTypeParameterInstantiation)
+    if (visitTSHasOptionalTypeParameters != null) __obj.updateDynamic("visitTSHasOptionalTypeParameters")(visitTSHasOptionalTypeParameters)
+    if (visitTSImportEqualsDeclaration != null) __obj.updateDynamic("visitTSImportEqualsDeclaration")(visitTSImportEqualsDeclaration)
+    if (visitTSImportType != null) __obj.updateDynamic("visitTSImportType")(visitTSImportType)
+    if (visitTSIndexSignature != null) __obj.updateDynamic("visitTSIndexSignature")(visitTSIndexSignature)
+    if (visitTSIndexedAccessType != null) __obj.updateDynamic("visitTSIndexedAccessType")(visitTSIndexedAccessType)
+    if (visitTSInferType != null) __obj.updateDynamic("visitTSInferType")(visitTSInferType)
+    if (visitTSInterfaceBody != null) __obj.updateDynamic("visitTSInterfaceBody")(visitTSInterfaceBody)
+    if (visitTSInterfaceDeclaration != null) __obj.updateDynamic("visitTSInterfaceDeclaration")(visitTSInterfaceDeclaration)
+    if (visitTSIntersectionType != null) __obj.updateDynamic("visitTSIntersectionType")(visitTSIntersectionType)
+    if (visitTSLiteralType != null) __obj.updateDynamic("visitTSLiteralType")(visitTSLiteralType)
+    if (visitTSMappedType != null) __obj.updateDynamic("visitTSMappedType")(visitTSMappedType)
+    if (visitTSMethodSignature != null) __obj.updateDynamic("visitTSMethodSignature")(visitTSMethodSignature)
+    if (visitTSModuleBlock != null) __obj.updateDynamic("visitTSModuleBlock")(visitTSModuleBlock)
+    if (visitTSModuleDeclaration != null) __obj.updateDynamic("visitTSModuleDeclaration")(visitTSModuleDeclaration)
+    if (visitTSNamespaceExportDeclaration != null) __obj.updateDynamic("visitTSNamespaceExportDeclaration")(visitTSNamespaceExportDeclaration)
+    if (visitTSNeverKeyword != null) __obj.updateDynamic("visitTSNeverKeyword")(visitTSNeverKeyword)
+    if (visitTSNonNullExpression != null) __obj.updateDynamic("visitTSNonNullExpression")(visitTSNonNullExpression)
+    if (visitTSNullKeyword != null) __obj.updateDynamic("visitTSNullKeyword")(visitTSNullKeyword)
+    if (visitTSNumberKeyword != null) __obj.updateDynamic("visitTSNumberKeyword")(visitTSNumberKeyword)
+    if (visitTSObjectKeyword != null) __obj.updateDynamic("visitTSObjectKeyword")(visitTSObjectKeyword)
+    if (visitTSOptionalType != null) __obj.updateDynamic("visitTSOptionalType")(visitTSOptionalType)
+    if (visitTSParameterProperty != null) __obj.updateDynamic("visitTSParameterProperty")(visitTSParameterProperty)
+    if (visitTSParenthesizedType != null) __obj.updateDynamic("visitTSParenthesizedType")(visitTSParenthesizedType)
+    if (visitTSPropertySignature != null) __obj.updateDynamic("visitTSPropertySignature")(visitTSPropertySignature)
+    if (visitTSQualifiedName != null) __obj.updateDynamic("visitTSQualifiedName")(visitTSQualifiedName)
+    if (visitTSRestType != null) __obj.updateDynamic("visitTSRestType")(visitTSRestType)
+    if (visitTSStringKeyword != null) __obj.updateDynamic("visitTSStringKeyword")(visitTSStringKeyword)
+    if (visitTSSymbolKeyword != null) __obj.updateDynamic("visitTSSymbolKeyword")(visitTSSymbolKeyword)
+    if (visitTSThisType != null) __obj.updateDynamic("visitTSThisType")(visitTSThisType)
+    if (visitTSTupleType != null) __obj.updateDynamic("visitTSTupleType")(visitTSTupleType)
+    if (visitTSType != null) __obj.updateDynamic("visitTSType")(visitTSType)
+    if (visitTSTypeAliasDeclaration != null) __obj.updateDynamic("visitTSTypeAliasDeclaration")(visitTSTypeAliasDeclaration)
+    if (visitTSTypeAnnotation != null) __obj.updateDynamic("visitTSTypeAnnotation")(visitTSTypeAnnotation)
+    if (visitTSTypeAssertion != null) __obj.updateDynamic("visitTSTypeAssertion")(visitTSTypeAssertion)
+    if (visitTSTypeLiteral != null) __obj.updateDynamic("visitTSTypeLiteral")(visitTSTypeLiteral)
+    if (visitTSTypeOperator != null) __obj.updateDynamic("visitTSTypeOperator")(visitTSTypeOperator)
+    if (visitTSTypeParameter != null) __obj.updateDynamic("visitTSTypeParameter")(visitTSTypeParameter)
+    if (visitTSTypeParameterDeclaration != null) __obj.updateDynamic("visitTSTypeParameterDeclaration")(visitTSTypeParameterDeclaration)
+    if (visitTSTypeParameterInstantiation != null) __obj.updateDynamic("visitTSTypeParameterInstantiation")(visitTSTypeParameterInstantiation)
+    if (visitTSTypePredicate != null) __obj.updateDynamic("visitTSTypePredicate")(visitTSTypePredicate)
+    if (visitTSTypeQuery != null) __obj.updateDynamic("visitTSTypeQuery")(visitTSTypeQuery)
+    if (visitTSTypeReference != null) __obj.updateDynamic("visitTSTypeReference")(visitTSTypeReference)
+    if (visitTSUndefinedKeyword != null) __obj.updateDynamic("visitTSUndefinedKeyword")(visitTSUndefinedKeyword)
+    if (visitTSUnionType != null) __obj.updateDynamic("visitTSUnionType")(visitTSUnionType)
+    if (visitTSUnknownKeyword != null) __obj.updateDynamic("visitTSUnknownKeyword")(visitTSUnknownKeyword)
+    if (visitTSVoidKeyword != null) __obj.updateDynamic("visitTSVoidKeyword")(visitTSVoidKeyword)
+    if (visitTaggedTemplateExpression != null) __obj.updateDynamic("visitTaggedTemplateExpression")(visitTaggedTemplateExpression)
+    if (visitTemplateElement != null) __obj.updateDynamic("visitTemplateElement")(visitTemplateElement)
+    if (visitTemplateLiteral != null) __obj.updateDynamic("visitTemplateLiteral")(visitTemplateLiteral)
+    if (visitThisExpression != null) __obj.updateDynamic("visitThisExpression")(visitThisExpression)
+    if (visitThisTypeAnnotation != null) __obj.updateDynamic("visitThisTypeAnnotation")(visitThisTypeAnnotation)
+    if (visitThrowStatement != null) __obj.updateDynamic("visitThrowStatement")(visitThrowStatement)
+    if (visitTryStatement != null) __obj.updateDynamic("visitTryStatement")(visitTryStatement)
+    if (visitTupleTypeAnnotation != null) __obj.updateDynamic("visitTupleTypeAnnotation")(visitTupleTypeAnnotation)
+    if (visitTypeAlias != null) __obj.updateDynamic("visitTypeAlias")(visitTypeAlias)
+    if (visitTypeAnnotation != null) __obj.updateDynamic("visitTypeAnnotation")(visitTypeAnnotation)
+    if (visitTypeCastExpression != null) __obj.updateDynamic("visitTypeCastExpression")(visitTypeCastExpression)
+    if (visitTypeParameter != null) __obj.updateDynamic("visitTypeParameter")(visitTypeParameter)
+    if (visitTypeParameterDeclaration != null) __obj.updateDynamic("visitTypeParameterDeclaration")(visitTypeParameterDeclaration)
+    if (visitTypeParameterInstantiation != null) __obj.updateDynamic("visitTypeParameterInstantiation")(visitTypeParameterInstantiation)
+    if (visitTypeofTypeAnnotation != null) __obj.updateDynamic("visitTypeofTypeAnnotation")(visitTypeofTypeAnnotation)
+    if (visitUnaryExpression != null) __obj.updateDynamic("visitUnaryExpression")(visitUnaryExpression)
+    if (visitUnionTypeAnnotation != null) __obj.updateDynamic("visitUnionTypeAnnotation")(visitUnionTypeAnnotation)
+    if (visitUpdateExpression != null) __obj.updateDynamic("visitUpdateExpression")(visitUpdateExpression)
     __obj.asInstanceOf[Visitor[M]]
   }
 }

@@ -42,7 +42,7 @@ trait Hotkey extends js.Object {
 object Hotkey {
   @scala.inline
   def apply(
-    callback: js.Function2[stdLib.Event, Hotkey, scala.Unit],
+    callback: (stdLib.Event, Hotkey) => scala.Unit,
     combo: java.lang.String | js.Array[java.lang.String],
     action: java.lang.String = null,
     allowIn: js.Array[
@@ -51,7 +51,7 @@ object Hotkey {
     description: java.lang.String = null,
     persistent: js.UndefOr[scala.Boolean] = js.undefined
   ): Hotkey = {
-    val __obj = js.Dynamic.literal(callback = callback, combo = combo.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), combo = combo.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action)
     if (allowIn != null) __obj.updateDynamic("allowIn")(allowIn)
     if (description != null) __obj.updateDynamic("description")(description)

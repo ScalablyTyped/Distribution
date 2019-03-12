@@ -26,23 +26,23 @@ trait Wizard extends js.Object {
 object Wizard {
   @scala.inline
   def apply(
-    activeTab: js.Function0[js.Any],
-    currentIndex: js.Function0[scala.Double],
-    first: js.Function0[scala.Unit],
-    firstIndex: js.Function0[scala.Double],
-    getIndex: js.Function1[js.Any, scala.Double],
-    last: js.Function0[scala.Unit],
-    lastIndex: js.Function0[scala.Double],
-    navigationLength: js.Function0[scala.Double],
-    next: js.Function0[scala.Unit],
-    nextIndex: js.Function0[scala.Double],
-    nextTab: js.Function0[js.Any],
-    previous: js.Function0[scala.Unit],
-    previousIndex: js.Function0[scala.Double],
-    previousTab: js.Function0[js.Any],
-    show: js.Function1[scala.Double, js.Any]
+    activeTab: () => js.Any,
+    currentIndex: () => scala.Double,
+    first: () => scala.Unit,
+    firstIndex: () => scala.Double,
+    getIndex: js.Any => scala.Double,
+    last: () => scala.Unit,
+    lastIndex: () => scala.Double,
+    navigationLength: () => scala.Double,
+    next: () => scala.Unit,
+    nextIndex: () => scala.Double,
+    nextTab: () => js.Any,
+    previous: () => scala.Unit,
+    previousIndex: () => scala.Double,
+    previousTab: () => js.Any,
+    show: scala.Double => js.Any
   ): Wizard = {
-    val __obj = js.Dynamic.literal(activeTab = activeTab, currentIndex = currentIndex, first = first, firstIndex = firstIndex, getIndex = getIndex, last = last, lastIndex = lastIndex, navigationLength = navigationLength, next = next, nextIndex = nextIndex, nextTab = nextTab, previous = previous, previousIndex = previousIndex, previousTab = previousTab, show = show)
+    val __obj = js.Dynamic.literal(activeTab = js.Any.fromFunction0(activeTab), currentIndex = js.Any.fromFunction0(currentIndex), first = js.Any.fromFunction0(first), firstIndex = js.Any.fromFunction0(firstIndex), getIndex = js.Any.fromFunction1(getIndex), last = js.Any.fromFunction0(last), lastIndex = js.Any.fromFunction0(lastIndex), navigationLength = js.Any.fromFunction0(navigationLength), next = js.Any.fromFunction0(next), nextIndex = js.Any.fromFunction0(nextIndex), nextTab = js.Any.fromFunction0(nextTab), previous = js.Any.fromFunction0(previous), previousIndex = js.Any.fromFunction0(previousIndex), previousTab = js.Any.fromFunction0(previousTab), show = js.Any.fromFunction1(show))
   
     __obj.asInstanceOf[Wizard]
   }

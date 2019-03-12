@@ -12,12 +12,12 @@ trait ViewAfterShowEvent extends ViewEvent {
 object ViewAfterShowEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: View,
     view: View = null
   ): ViewAfterShowEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (view != null) __obj.updateDynamic("view")(view)
     __obj.asInstanceOf[ViewAfterShowEvent]
   }

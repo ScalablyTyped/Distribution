@@ -18,15 +18,15 @@ trait AdTypeSpace extends js.Object {
 object AdTypeSpace {
   @scala.inline
   def apply(
-    expandedTextAd: js.Function0[scala.Boolean],
-    gmailImageAd: js.Function0[scala.Boolean],
-    gmailMultiProductAd: js.Function0[scala.Boolean],
-    gmailSinglePromotionAd: js.Function0[scala.Boolean],
-    html5Ad: js.Function0[scala.Boolean],
-    imageAd: js.Function0[scala.Boolean],
-    responsiveDisplayAd: js.Function0[scala.Boolean]
+    expandedTextAd: () => scala.Boolean,
+    gmailImageAd: () => scala.Boolean,
+    gmailMultiProductAd: () => scala.Boolean,
+    gmailSinglePromotionAd: () => scala.Boolean,
+    html5Ad: () => scala.Boolean,
+    imageAd: () => scala.Boolean,
+    responsiveDisplayAd: () => scala.Boolean
   ): AdTypeSpace = {
-    val __obj = js.Dynamic.literal(expandedTextAd = expandedTextAd, gmailImageAd = gmailImageAd, gmailMultiProductAd = gmailMultiProductAd, gmailSinglePromotionAd = gmailSinglePromotionAd, html5Ad = html5Ad, imageAd = imageAd, responsiveDisplayAd = responsiveDisplayAd)
+    val __obj = js.Dynamic.literal(expandedTextAd = js.Any.fromFunction0(expandedTextAd), gmailImageAd = js.Any.fromFunction0(gmailImageAd), gmailMultiProductAd = js.Any.fromFunction0(gmailMultiProductAd), gmailSinglePromotionAd = js.Any.fromFunction0(gmailSinglePromotionAd), html5Ad = js.Any.fromFunction0(html5Ad), imageAd = js.Any.fromFunction0(imageAd), responsiveDisplayAd = js.Any.fromFunction0(responsiveDisplayAd))
   
     __obj.asInstanceOf[AdTypeSpace]
   }

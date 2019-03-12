@@ -54,13 +54,13 @@ object ChipsOptions {
     autocompleteOptions: stdLib.Partial[AutocompleteOptions],
     data: js.Array[ChipData],
     limit: scala.Double,
-    onChipAdd: js.Function3[Chips, stdLib.Element, stdLib.Element, scala.Unit],
-    onChipDelete: js.Function3[Chips, stdLib.Element, stdLib.Element, scala.Unit],
-    onChipSelect: js.Function3[Chips, stdLib.Element, stdLib.Element, scala.Unit],
+    onChipAdd: (Chips, stdLib.Element, stdLib.Element) => scala.Unit,
+    onChipDelete: (Chips, stdLib.Element, stdLib.Element) => scala.Unit,
+    onChipSelect: (Chips, stdLib.Element, stdLib.Element) => scala.Unit,
     placeholder: java.lang.String,
     secondaryPlaceholder: java.lang.String
   ): ChipsOptions = {
-    val __obj = js.Dynamic.literal(autocompleteOptions = autocompleteOptions, data = data, limit = limit, onChipAdd = onChipAdd, onChipDelete = onChipDelete, onChipSelect = onChipSelect, placeholder = placeholder, secondaryPlaceholder = secondaryPlaceholder)
+    val __obj = js.Dynamic.literal(autocompleteOptions = autocompleteOptions, data = data, limit = limit, onChipAdd = js.Any.fromFunction3(onChipAdd), onChipDelete = js.Any.fromFunction3(onChipDelete), onChipSelect = js.Any.fromFunction3(onChipSelect), placeholder = placeholder, secondaryPlaceholder = secondaryPlaceholder)
   
     __obj.asInstanceOf[ChipsOptions]
   }

@@ -18,8 +18,8 @@ trait Messenger extends js.Object {
 
 object Messenger {
   @scala.inline
-  def apply(hideAll: js.Function0[scala.Unit], post: js.Function1[MessageOptions, Message]): Messenger = {
-    val __obj = js.Dynamic.literal(hideAll = hideAll, post = post)
+  def apply(hideAll: () => scala.Unit, post: MessageOptions => Message): Messenger = {
+    val __obj = js.Dynamic.literal(hideAll = js.Any.fromFunction0(hideAll), post = js.Any.fromFunction1(post))
   
     __obj.asInstanceOf[Messenger]
   }

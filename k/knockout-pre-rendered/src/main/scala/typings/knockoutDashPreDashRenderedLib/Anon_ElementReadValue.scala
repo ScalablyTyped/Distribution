@@ -12,11 +12,8 @@ trait Anon_ElementReadValue extends js.Object {
 
 object Anon_ElementReadValue {
   @scala.inline
-  def apply(
-    readValue: js.Function1[stdLib.HTMLElement, js.Any],
-    writeValue: js.Function2[stdLib.HTMLElement, js.Any, scala.Unit]
-  ): Anon_ElementReadValue = {
-    val __obj = js.Dynamic.literal(readValue = readValue, writeValue = writeValue)
+  def apply(readValue: stdLib.HTMLElement => js.Any, writeValue: (stdLib.HTMLElement, js.Any) => scala.Unit): Anon_ElementReadValue = {
+    val __obj = js.Dynamic.literal(readValue = js.Any.fromFunction1(readValue), writeValue = js.Any.fromFunction2(writeValue))
   
     __obj.asInstanceOf[Anon_ElementReadValue]
   }

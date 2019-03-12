@@ -15,11 +15,11 @@ trait ICollisionDetector extends js.Object {
 object ICollisionDetector {
   @scala.inline
   def apply(
-    onCollision: js.Function1[CollidePayload, scala.Unit],
-    onInit: js.Function1[InitPayload, scala.Unit],
-    onUpdate: js.Function1[UpdatePayload, scala.Unit]
+    onCollision: CollidePayload => scala.Unit,
+    onInit: InitPayload => scala.Unit,
+    onUpdate: UpdatePayload => scala.Unit
   ): ICollisionDetector = {
-    val __obj = js.Dynamic.literal(onCollision = onCollision, onInit = onInit, onUpdate = onUpdate)
+    val __obj = js.Dynamic.literal(onCollision = js.Any.fromFunction1(onCollision), onInit = js.Any.fromFunction1(onInit), onUpdate = js.Any.fromFunction1(onUpdate))
   
     __obj.asInstanceOf[ICollisionDetector]
   }

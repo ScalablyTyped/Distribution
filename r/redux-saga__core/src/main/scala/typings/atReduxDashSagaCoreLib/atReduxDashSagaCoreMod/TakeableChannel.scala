@@ -11,8 +11,8 @@ trait TakeableChannel[T] extends js.Object {
 
 object TakeableChannel {
   @scala.inline
-  def apply[T](take: js.Function1[js.Function1[/* message */ T | END, scala.Unit], scala.Unit]): TakeableChannel[T] = {
-    val __obj = js.Dynamic.literal(take = take)
+  def apply[T](take: js.Function1[/* message */ T | END, scala.Unit] => scala.Unit): TakeableChannel[T] = {
+    val __obj = js.Dynamic.literal(take = js.Any.fromFunction1(take))
   
     __obj.asInstanceOf[TakeableChannel[T]]
   }

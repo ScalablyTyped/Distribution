@@ -72,12 +72,12 @@ trait IFormHelper extends js.Object {
 object IFormHelper {
   @scala.inline
   def apply(
-    handleError: js.Function1[js.Object, scala.Unit],
-    handleServerValidation: js.Function1[IModelState, scala.Unit],
-    resetForm: js.Function1[/* repeated */ js.Any, scala.Unit],
-    submitForm: js.Function1[/* repeated */ js.Any, scala.Unit]
+    handleError: js.Object => scala.Unit,
+    handleServerValidation: IModelState => scala.Unit,
+    resetForm: /* repeated */ js.Any => scala.Unit,
+    submitForm: /* repeated */ js.Any => scala.Unit
   ): IFormHelper = {
-    val __obj = js.Dynamic.literal(handleError = handleError, handleServerValidation = handleServerValidation, resetForm = resetForm, submitForm = submitForm)
+    val __obj = js.Dynamic.literal(handleError = js.Any.fromFunction1(handleError), handleServerValidation = js.Any.fromFunction1(handleServerValidation), resetForm = js.Any.fromFunction1(resetForm), submitForm = js.Any.fromFunction1(submitForm))
   
     __obj.asInstanceOf[IFormHelper]
   }

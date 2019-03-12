@@ -16,16 +16,13 @@ trait HoldableConfig extends js.Object {
 object HoldableConfig {
   @scala.inline
   def apply(
-    holdComplete: js.Function1[js.Function0[scala.Unit], js.Function0[js.Function0[scala.Unit]]],
-    holdProgress: js.Function1[
-      js.Function0[scala.Unit], 
-      js.Function1[
-        /* updateState */ js.Function1[/* holdLength */ scala.Double, scala.Unit], 
-        js.Function0[scala.Unit]
-      ]
+    holdComplete: js.Function0[scala.Unit] => js.Function0[js.Function0[scala.Unit]],
+    holdProgress: js.Function0[scala.Unit] => js.Function1[
+      /* updateState */ js.Function1[/* holdLength */ scala.Double, scala.Unit], 
+      js.Function0[scala.Unit]
     ]
   ): HoldableConfig = {
-    val __obj = js.Dynamic.literal(holdComplete = holdComplete, holdProgress = holdProgress)
+    val __obj = js.Dynamic.literal(holdComplete = js.Any.fromFunction1(holdComplete), holdProgress = js.Any.fromFunction1(holdProgress))
   
     __obj.asInstanceOf[HoldableConfig]
   }

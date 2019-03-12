@@ -41,18 +41,14 @@ trait XCommonEmbedPersist
 object XCommonEmbedPersist {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    isReadonly: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    reload: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    storeOwn: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    isReadonly: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    reload: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    storeOwn: () => scala.Unit
   ): XCommonEmbedPersist = {
-    val __obj = js.Dynamic.literal(acquire = acquire, isReadonly = isReadonly, queryInterface = queryInterface, release = release, reload = reload, storeOwn = storeOwn)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), isReadonly = js.Any.fromFunction0(isReadonly), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), reload = js.Any.fromFunction2(reload), storeOwn = js.Any.fromFunction0(storeOwn))
   
     __obj.asInstanceOf[XCommonEmbedPersist]
   }

@@ -26,11 +26,11 @@ object DistanceMeasurement2DViewModelMeasurement {
   def apply(
     constructor: js.Function,
     geometry: js.Any,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     length: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): DistanceMeasurement2DViewModelMeasurement = {
-    val __obj = js.Dynamic.literal(constructor = constructor, geometry = geometry, hasOwnProperty = hasOwnProperty, length = length, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, geometry = geometry, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), length = length, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[DistanceMeasurement2DViewModelMeasurement]
   }

@@ -17,14 +17,14 @@ object Anon_Caption {
   @scala.inline
   def apply(
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
-    placeholderParser: js.Function2[/* index */ scala.Double, /* data */ Anon_Label, scala.Unit] = null,
+    placeholderParser: (/* index */ scala.Double, /* data */ Anon_Label) => scala.Unit = null,
     string: java.lang.String = null,
     styles: Anon_BackgroundColor = null,
     `type`: d3pieLib.d3pieLibStrings.placeholder | d3pieLib.d3pieLibStrings.caption = null
   ): Anon_Caption = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (placeholderParser != null) __obj.updateDynamic("placeholderParser")(placeholderParser)
+    if (placeholderParser != null) __obj.updateDynamic("placeholderParser")(js.Any.fromFunction2(placeholderParser))
     if (string != null) __obj.updateDynamic("string")(string)
     if (styles != null) __obj.updateDynamic("styles")(styles)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -11,9 +11,9 @@ trait NotifyMethods extends js.Object {
 
 object NotifyMethods {
   @scala.inline
-  def apply(remove: js.Function0[_] = null): NotifyMethods = {
+  def apply(remove: () => _ = null): NotifyMethods = {
     val __obj = js.Dynamic.literal()
-    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction0(remove))
     __obj.asInstanceOf[NotifyMethods]
   }
 }

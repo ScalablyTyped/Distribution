@@ -13,12 +13,9 @@ trait SpansResource extends js.Object {
 object SpansResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotCloudtraceLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Span]
-    ]
+    create: gapiDotClientDotCloudtraceLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Span]
   ): SpansResource = {
-    val __obj = js.Dynamic.literal(create = create)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
   
     __obj.asInstanceOf[SpansResource]
   }

@@ -9,11 +9,15 @@ import scala.scalajs.js.annotation._
 trait JQuery extends js.Object {
   @JSName("ajaxForm")
   var ajaxForm_Original: JQueryForm = js.native
-  var ajaxSubmit: JQueryFormWithDebug = js.native
+  @JSName("ajaxSubmit")
+  var ajaxSubmit_Original: JQueryFormWithDebug = js.native
   def ajaxForm(): JQuery = js.native
   def ajaxForm(callback: js.Function): JQuery = js.native
   def ajaxForm(options: JQueryFormOptions): JQuery = js.native
   def ajaxFormUnbind(): JQuery = js.native
+  def ajaxSubmit(): JQuery = js.native
+  def ajaxSubmit(callback: js.Function): JQuery = js.native
+  def ajaxSubmit(options: JQueryFormOptions): JQuery = js.native
   def clearFields(): JQuery = js.native
   def clearForm(): JQuery = js.native
   def enable(): JQuery = js.native

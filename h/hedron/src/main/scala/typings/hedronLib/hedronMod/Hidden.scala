@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Hidden ()
   extends reactLib.reactMod.Component[
-      HiddenProps with reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLElement], 
+      HiddenProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement], 
       js.Object, 
       js.Any
     ]

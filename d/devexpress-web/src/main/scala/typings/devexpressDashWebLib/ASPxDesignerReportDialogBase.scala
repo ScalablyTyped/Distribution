@@ -70,18 +70,18 @@ object ASPxDesignerReportDialogBase {
   @scala.inline
   def apply(
     buttons: js.Array[js.Object],
-    cancel: js.Function0[scala.Unit],
-    customize: js.Function2[java.lang.String, ASPxDesignerDialogModel, scala.Unit],
+    cancel: () => scala.Unit,
+    customize: (java.lang.String, ASPxDesignerDialogModel) => scala.Unit,
     height: js.Any,
     model: js.Any,
-    show: js.Function1[ASPxDesignerNavigateTab, scala.Unit],
+    show: ASPxDesignerNavigateTab => scala.Unit,
     tab: js.Any,
     template: js.Any,
     title: java.lang.String,
     visible: js.Any,
     width: js.Any
   ): ASPxDesignerReportDialogBase = {
-    val __obj = js.Dynamic.literal(buttons = buttons, cancel = cancel, customize = customize, height = height, model = model, show = show, tab = tab, template = template, title = title, visible = visible, width = width)
+    val __obj = js.Dynamic.literal(buttons = buttons, cancel = js.Any.fromFunction0(cancel), customize = js.Any.fromFunction2(customize), height = height, model = model, show = js.Any.fromFunction1(show), tab = tab, template = template, title = title, visible = visible, width = width)
   
     __obj.asInstanceOf[ASPxDesignerReportDialogBase]
   }

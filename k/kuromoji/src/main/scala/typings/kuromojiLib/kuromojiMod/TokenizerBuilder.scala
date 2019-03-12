@@ -12,12 +12,9 @@ trait TokenizerBuilder[T] extends js.Object {
 object TokenizerBuilder {
   @scala.inline
   def apply[T](
-    build: js.Function1[
-      js.Function2[/* err */ stdLib.Error, /* tokenizer */ Tokenizer[T], scala.Unit], 
-      scala.Unit
-    ]
+    build: js.Function2[/* err */ stdLib.Error, /* tokenizer */ Tokenizer[T], scala.Unit] => scala.Unit
   ): TokenizerBuilder[T] = {
-    val __obj = js.Dynamic.literal(build = build)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction1(build))
   
     __obj.asInstanceOf[TokenizerBuilder[T]]
   }

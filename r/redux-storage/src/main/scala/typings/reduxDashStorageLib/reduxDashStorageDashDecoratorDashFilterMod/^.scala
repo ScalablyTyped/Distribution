@@ -9,14 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def default(engine: reduxDashStorageLib.reduxDashStorageMod.StorageEngine): reduxDashStorageLib.reduxDashStorageMod.StorageEngine = js.native
+  def default(engine: reduxDashStorageLib.reduxDashStorageMod.StorageEngine, whitelist: FilterList): reduxDashStorageLib.reduxDashStorageMod.StorageEngine = js.native
   def default(
     engine: reduxDashStorageLib.reduxDashStorageMod.StorageEngine,
-    whitelist: reduxDashStorageLib.reduxDashStorageDashDecoratorDashFilterMod.FilterList
-  ): reduxDashStorageLib.reduxDashStorageMod.StorageEngine = js.native
-  def default(
-    engine: reduxDashStorageLib.reduxDashStorageMod.StorageEngine,
-    whitelist: reduxDashStorageLib.reduxDashStorageDashDecoratorDashFilterMod.FilterList,
-    blacklist: reduxDashStorageLib.reduxDashStorageDashDecoratorDashFilterMod.FilterList
+    whitelist: FilterList,
+    blacklist: FilterList
   ): reduxDashStorageLib.reduxDashStorageMod.StorageEngine = js.native
 }
 

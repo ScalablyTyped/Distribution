@@ -25,12 +25,12 @@ object FeatureViewModelFormattedAttributes {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     content: js.Any = null,
     global: js.Any = null
   ): FeatureViewModelFormattedAttributes = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (content != null) __obj.updateDynamic("content")(content)
     if (global != null) __obj.updateDynamic("global")(global)
     __obj.asInstanceOf[FeatureViewModelFormattedAttributes]

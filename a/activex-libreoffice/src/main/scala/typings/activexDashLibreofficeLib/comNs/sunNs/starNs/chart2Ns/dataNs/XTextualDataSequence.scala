@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
 trait XTextualDataSequence
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** retrieves the data as strings */
-  val TextualData: activexDashInteropLib.SafeArray[java.lang.String]
+  val TextualData: stdLib.SafeArray[java.lang.String]
   /** retrieves the data as strings */
-  def getTextualData(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getTextualData(): stdLib.SafeArray[java.lang.String]
 }
 
 object XTextualDataSequence {
   @scala.inline
   def apply(
-    TextualData: activexDashInteropLib.SafeArray[java.lang.String],
-    acquire: js.Function0[scala.Unit],
-    getTextualData: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    TextualData: stdLib.SafeArray[java.lang.String],
+    acquire: () => scala.Unit,
+    getTextualData: () => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTextualDataSequence = {
-    val __obj = js.Dynamic.literal(TextualData = TextualData, acquire = acquire, getTextualData = getTextualData, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(TextualData = TextualData, acquire = js.Any.fromFunction0(acquire), getTextualData = js.Any.fromFunction0(getTextualData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTextualDataSequence]
   }

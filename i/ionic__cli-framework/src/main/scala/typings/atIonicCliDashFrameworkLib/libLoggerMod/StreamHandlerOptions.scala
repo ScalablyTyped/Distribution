@@ -15,11 +15,11 @@ object StreamHandlerOptions {
   @scala.inline
   def apply(
     stream: nodeLib.NodeJSNs.WritableStream,
-    filter: js.Function1[/* record */ LogRecord, scala.Boolean] = null,
+    filter: /* record */ LogRecord => scala.Boolean = null,
     formatter: LoggerFormatter = null
   ): StreamHandlerOptions = {
     val __obj = js.Dynamic.literal(stream = stream)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (formatter != null) __obj.updateDynamic("formatter")(formatter)
     __obj.asInstanceOf[StreamHandlerOptions]
   }

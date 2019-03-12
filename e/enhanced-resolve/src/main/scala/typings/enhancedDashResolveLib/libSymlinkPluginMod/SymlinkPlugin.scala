@@ -15,11 +15,11 @@ trait SymlinkPlugin extends js.Object {
 object SymlinkPlugin {
   @scala.inline
   def apply(
-    apply: js.Function1[enhancedDashResolveLib.libResolverMod.namespaced, scala.Unit],
+    apply: enhancedDashResolveLib.libResolverMod.namespaced => scala.Unit,
     source: java.lang.String,
     target: java.lang.String
   ): SymlinkPlugin = {
-    val __obj = js.Dynamic.literal(apply = apply, source = source, target = target)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), source = source, target = target)
   
     __obj.asInstanceOf[SymlinkPlugin]
   }

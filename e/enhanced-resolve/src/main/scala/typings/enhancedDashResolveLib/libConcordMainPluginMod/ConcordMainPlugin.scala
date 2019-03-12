@@ -16,12 +16,12 @@ trait ConcordMainPlugin extends js.Object {
 object ConcordMainPlugin {
   @scala.inline
   def apply(
-    apply: js.Function1[enhancedDashResolveLib.libResolverMod.namespaced, scala.Unit],
+    apply: enhancedDashResolveLib.libResolverMod.namespaced => scala.Unit,
     options: enhancedDashResolveLib.libConcordMod.Dictionary[_],
     source: java.lang.String,
     target: java.lang.String
   ): ConcordMainPlugin = {
-    val __obj = js.Dynamic.literal(apply = apply, options = options, source = source, target = target)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), options = options, source = source, target = target)
   
     __obj.asInstanceOf[ConcordMainPlugin]
   }

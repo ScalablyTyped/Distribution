@@ -24,8 +24,8 @@ trait SubscribableMixin extends js.Object {
 
 object SubscribableMixin {
   @scala.inline
-  def apply(addListenerOn: js.Function4[js.Any, java.lang.String, js.Function0[_], js.Any, scala.Unit]): SubscribableMixin = {
-    val __obj = js.Dynamic.literal(addListenerOn = addListenerOn)
+  def apply(addListenerOn: (js.Any, java.lang.String, js.Function0[_], js.Any) => scala.Unit): SubscribableMixin = {
+    val __obj = js.Dynamic.literal(addListenerOn = js.Any.fromFunction4(addListenerOn))
   
     __obj.asInstanceOf[SubscribableMixin]
   }

@@ -23,20 +23,20 @@ trait Logger extends js.Object {
 object Logger {
   @scala.inline
   def apply(
-    error: js.Function1[/* repeated */ js.Any, scala.Unit],
-    fine: js.Function1[/* repeated */ js.Any, scala.Unit],
-    getLogLevel: js.Function0[scala.Double],
-    getParent: js.Function0[Logger],
-    getWatchers: js.Function0[js.Array[js.Function]],
-    info: js.Function1[/* repeated */ js.Any, scala.Unit],
-    isLoggable: js.Function1[scala.Double, scala.Boolean],
-    log: js.Function2[scala.Double, /* repeated */ js.Any, scala.Unit],
-    registerWatcher: js.Function1[js.Function1[/* logRecord */ java.lang.String, scala.Unit], scala.Unit],
-    setLogLevel: js.Function1[scala.Double, scala.Unit],
-    setParent: js.Function1[Logger, scala.Unit],
-    warn: js.Function1[/* repeated */ js.Any, scala.Unit]
+    error: /* repeated */ js.Any => scala.Unit,
+    fine: /* repeated */ js.Any => scala.Unit,
+    getLogLevel: () => scala.Double,
+    getParent: () => Logger,
+    getWatchers: () => js.Array[js.Function],
+    info: /* repeated */ js.Any => scala.Unit,
+    isLoggable: scala.Double => scala.Boolean,
+    log: (scala.Double, /* repeated */ js.Any) => scala.Unit,
+    registerWatcher: js.Function1[/* logRecord */ java.lang.String, scala.Unit] => scala.Unit,
+    setLogLevel: scala.Double => scala.Unit,
+    setParent: Logger => scala.Unit,
+    warn: /* repeated */ js.Any => scala.Unit
   ): Logger = {
-    val __obj = js.Dynamic.literal(error = error, fine = fine, getLogLevel = getLogLevel, getParent = getParent, getWatchers = getWatchers, info = info, isLoggable = isLoggable, log = log, registerWatcher = registerWatcher, setLogLevel = setLogLevel, setParent = setParent, warn = warn)
+    val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), fine = js.Any.fromFunction1(fine), getLogLevel = js.Any.fromFunction0(getLogLevel), getParent = js.Any.fromFunction0(getParent), getWatchers = js.Any.fromFunction0(getWatchers), info = js.Any.fromFunction1(info), isLoggable = js.Any.fromFunction1(isLoggable), log = js.Any.fromFunction2(log), registerWatcher = js.Any.fromFunction1(registerWatcher), setLogLevel = js.Any.fromFunction1(setLogLevel), setParent = js.Any.fromFunction1(setParent), warn = js.Any.fromFunction1(warn))
   
     __obj.asInstanceOf[Logger]
   }

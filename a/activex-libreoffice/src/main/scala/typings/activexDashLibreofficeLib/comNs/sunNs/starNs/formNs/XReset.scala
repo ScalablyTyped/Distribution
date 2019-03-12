@@ -29,14 +29,14 @@ trait XReset
 object XReset {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addResetListener: js.Function1[XResetListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeResetListener: js.Function1[XResetListener, scala.Unit],
-    reset: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addResetListener: XResetListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeResetListener: XResetListener => scala.Unit,
+    reset: () => scala.Unit
   ): XReset = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addResetListener = addResetListener, queryInterface = queryInterface, release = release, removeResetListener = removeResetListener, reset = reset)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addResetListener = js.Any.fromFunction1(addResetListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeResetListener = js.Any.fromFunction1(removeResetListener), reset = js.Any.fromFunction0(reset))
   
     __obj.asInstanceOf[XReset]
   }

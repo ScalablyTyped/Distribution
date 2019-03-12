@@ -21,10 +21,10 @@ object KDBush {
     ids: js.Array[scala.Double],
     nodeSize: scala.Double,
     points: js.Array[T],
-    range: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, js.Array[scala.Double]],
-    within: js.Function3[scala.Double, scala.Double, scala.Double, js.Array[scala.Double]]
+    range: (scala.Double, scala.Double, scala.Double, scala.Double) => js.Array[scala.Double],
+    within: (scala.Double, scala.Double, scala.Double) => js.Array[scala.Double]
   ): KDBush[T] = {
-    val __obj = js.Dynamic.literal(coords = coords, ids = ids, nodeSize = nodeSize, points = points, range = range, within = within)
+    val __obj = js.Dynamic.literal(coords = coords, ids = ids, nodeSize = nodeSize, points = points, range = js.Any.fromFunction4(range), within = js.Any.fromFunction3(within))
   
     __obj.asInstanceOf[KDBush[T]]
   }

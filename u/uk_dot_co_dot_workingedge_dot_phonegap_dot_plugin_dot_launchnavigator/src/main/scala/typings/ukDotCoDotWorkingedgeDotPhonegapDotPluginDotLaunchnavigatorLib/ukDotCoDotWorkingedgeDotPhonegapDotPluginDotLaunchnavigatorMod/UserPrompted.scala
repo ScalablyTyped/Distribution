@@ -26,11 +26,11 @@ trait UserPrompted extends js.Object {
 object UserPrompted {
   @scala.inline
   def apply(
-    clear: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    get: js.Function1[js.Function1[/* exists */ scala.Boolean, scala.Unit], scala.Unit],
-    set: js.Function1[js.Function0[scala.Unit], scala.Unit]
+    clear: js.Function0[scala.Unit] => scala.Unit,
+    get: js.Function1[/* exists */ scala.Boolean, scala.Unit] => scala.Unit,
+    set: js.Function0[scala.Unit] => scala.Unit
   ): UserPrompted = {
-    val __obj = js.Dynamic.literal(clear = clear, get = get, set = set)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear), get = js.Any.fromFunction1(get), set = js.Any.fromFunction1(set))
   
     __obj.asInstanceOf[UserPrompted]
   }

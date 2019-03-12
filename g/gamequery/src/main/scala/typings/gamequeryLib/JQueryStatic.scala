@@ -13,8 +13,8 @@ trait JQueryStatic extends js.Object {
 
 object JQueryStatic {
   @scala.inline
-  def apply(gQ: GameQuery, gameQuery: GameQuery, playground: js.Function0[JQuery]): JQueryStatic = {
-    val __obj = js.Dynamic.literal(gQ = gQ, gameQuery = gameQuery, playground = playground)
+  def apply(gQ: GameQuery, gameQuery: GameQuery, playground: () => JQuery): JQueryStatic = {
+    val __obj = js.Dynamic.literal(gQ = gQ, gameQuery = gameQuery, playground = js.Any.fromFunction0(playground))
   
     __obj.asInstanceOf[JQueryStatic]
   }

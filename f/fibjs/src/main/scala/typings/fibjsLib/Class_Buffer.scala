@@ -170,7 +170,7 @@ class Class_Buffer () extends Class__object {
   	 * 
   	 * 
   	 */
-  def entries(): nodeLib.Iterable[_] = js.native
+  def entries(): stdLib.Iterable[_] = js.native
   /**
   	 * 
   	 * @brief 比较当前对象与给定的对象是否相等
@@ -287,7 +287,7 @@ class Class_Buffer () extends Class__object {
   	 * 
   	 * 
   	 */
-  def keys(): nodeLib.Iterable[_] = js.native
+  def keys(): stdLib.Iterable[_] = js.native
   /**
   	 * 
   	 * @brief 从缓存对象读取一个双精度浮点数，以高字节序的存储方式
@@ -619,7 +619,7 @@ class Class_Buffer () extends Class__object {
   	 * 
   	 * 
   	 */
-  def values(): nodeLib.Iterable[_] = js.native
+  def values(): stdLib.Iterable[_] = js.native
   /**
   	 * 
   	 * @brief 向缓存对象写入指定字符串，字符串默认为utf-8，越界时只写入部分数据

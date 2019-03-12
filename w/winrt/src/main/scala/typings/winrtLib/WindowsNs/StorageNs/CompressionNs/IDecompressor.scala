@@ -13,16 +13,11 @@ trait IDecompressor
 object IDecompressor {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
-    detachStream: js.Function0[winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream],
-    readAsync: js.Function3[
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      scala.Double, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.InputStreamOptions, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, scala.Double]
-    ]
+    close: () => scala.Unit,
+    detachStream: () => winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream,
+    readAsync: (winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, scala.Double, winrtLib.WindowsNs.StorageNs.StreamsNs.InputStreamOptions) => winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, scala.Double]
   ): IDecompressor = {
-    val __obj = js.Dynamic.literal(close = close, detachStream = detachStream, readAsync = readAsync)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), detachStream = js.Any.fromFunction0(detachStream), readAsync = js.Any.fromFunction3(readAsync))
   
     __obj.asInstanceOf[IDecompressor]
   }

@@ -14,13 +14,13 @@ trait SharedExcludedPlacement extends AdWordsEntity {
 object SharedExcludedPlacement {
   @scala.inline
   def apply(
-    getExcludedPlacementList: js.Function0[ExcludedPlacementList],
-    getUrl: js.Function0[java.lang.String],
-    remove: js.Function0[scala.Unit],
-    getEntityType: js.Function0[java.lang.String] = null
+    getExcludedPlacementList: () => ExcludedPlacementList,
+    getUrl: () => java.lang.String,
+    remove: () => scala.Unit,
+    getEntityType: () => java.lang.String = null
   ): SharedExcludedPlacement = {
-    val __obj = js.Dynamic.literal(getExcludedPlacementList = getExcludedPlacementList, getUrl = getUrl, remove = remove)
-    if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
+    val __obj = js.Dynamic.literal(getExcludedPlacementList = js.Any.fromFunction0(getExcludedPlacementList), getUrl = js.Any.fromFunction0(getUrl), remove = js.Any.fromFunction0(remove))
+    if (getEntityType != null) __obj.updateDynamic("getEntityType")(js.Any.fromFunction0(getEntityType))
     __obj.asInstanceOf[SharedExcludedPlacement]
   }
 }

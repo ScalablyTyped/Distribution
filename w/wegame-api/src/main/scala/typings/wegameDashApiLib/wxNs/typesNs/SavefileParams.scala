@@ -17,16 +17,16 @@ object SavefileParams {
   @scala.inline
   def apply(
     tempFilePath: java.lang.String,
-    complete: js.Function0[scala.Unit] = null,
-    fail: js.Function1[/* res */ wegameDashApiLib.Anon_ErrMsg, scala.Unit] = null,
+    complete: () => scala.Unit = null,
+    fail: /* res */ wegameDashApiLib.Anon_ErrMsg => scala.Unit = null,
     filePath: java.lang.String = null,
-    success: js.Function1[/* res */ wegameDashApiLib.Anon_SavedFilePath, scala.Unit] = null
+    success: /* res */ wegameDashApiLib.Anon_SavedFilePath => scala.Unit = null
   ): SavefileParams = {
     val __obj = js.Dynamic.literal(tempFilePath = tempFilePath)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (filePath != null) __obj.updateDynamic("filePath")(filePath)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[SavefileParams]
   }
 }

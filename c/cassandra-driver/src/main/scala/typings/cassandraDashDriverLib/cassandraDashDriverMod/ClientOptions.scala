@@ -51,13 +51,10 @@ object ClientOptions {
     pooling: cassandraDashDriverLib.Anon_CoreConnectionsPerHost = null,
     prepareOnAllHosts: js.UndefOr[scala.Boolean] = js.undefined,
     profiles: js.Array[ExecutionProfile] = null,
-    promiseFactory: js.Function1[
-      /* handler */ js.Function1[
-        /* callback */ js.Function2[/* err */ js.UndefOr[js.Any], /* result */ js.UndefOr[js.Any], scala.Unit], 
-        scala.Unit
-      ], 
-      js.Promise[_]
-    ] = null,
+    promiseFactory: /* handler */ js.Function1[
+      /* callback */ js.Function2[/* err */ js.UndefOr[js.Any], /* result */ js.UndefOr[js.Any], scala.Unit], 
+      scala.Unit
+    ] => js.Promise[_] = null,
     protocolOptions: cassandraDashDriverLib.Anon_MaxSchemaAgreementWaitSeconds = null,
     queryOptions: QueryOptions = null,
     rePrepareOnUp: js.UndefOr[scala.Boolean] = js.undefined,
@@ -78,7 +75,7 @@ object ClientOptions {
     if (pooling != null) __obj.updateDynamic("pooling")(pooling)
     if (!js.isUndefined(prepareOnAllHosts)) __obj.updateDynamic("prepareOnAllHosts")(prepareOnAllHosts)
     if (profiles != null) __obj.updateDynamic("profiles")(profiles)
-    if (promiseFactory != null) __obj.updateDynamic("promiseFactory")(promiseFactory)
+    if (promiseFactory != null) __obj.updateDynamic("promiseFactory")(js.Any.fromFunction1(promiseFactory))
     if (protocolOptions != null) __obj.updateDynamic("protocolOptions")(protocolOptions)
     if (queryOptions != null) __obj.updateDynamic("queryOptions")(queryOptions)
     if (!js.isUndefined(rePrepareOnUp)) __obj.updateDynamic("rePrepareOnUp")(rePrepareOnUp)

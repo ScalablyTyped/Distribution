@@ -27,26 +27,14 @@ trait OnGestureListener extends js.Object {
 object OnGestureListener {
   @scala.inline
   def apply(
-    onDown: js.Function1[androiduixLib.androidNs.viewNs.MotionEvent, scala.Boolean],
-    onFling: js.Function4[
-      androiduixLib.androidNs.viewNs.MotionEvent, 
-      androiduixLib.androidNs.viewNs.MotionEvent, 
-      scala.Double, 
-      scala.Double, 
-      scala.Boolean
-    ],
-    onLongPress: js.Function1[androiduixLib.androidNs.viewNs.MotionEvent, scala.Unit],
-    onScroll: js.Function4[
-      androiduixLib.androidNs.viewNs.MotionEvent, 
-      androiduixLib.androidNs.viewNs.MotionEvent, 
-      scala.Double, 
-      scala.Double, 
-      scala.Boolean
-    ],
-    onShowPress: js.Function1[androiduixLib.androidNs.viewNs.MotionEvent, scala.Unit],
-    onSingleTapUp: js.Function1[androiduixLib.androidNs.viewNs.MotionEvent, scala.Boolean]
+    onDown: androiduixLib.androidNs.viewNs.MotionEvent => scala.Boolean,
+    onFling: (androiduixLib.androidNs.viewNs.MotionEvent, androiduixLib.androidNs.viewNs.MotionEvent, scala.Double, scala.Double) => scala.Boolean,
+    onLongPress: androiduixLib.androidNs.viewNs.MotionEvent => scala.Unit,
+    onScroll: (androiduixLib.androidNs.viewNs.MotionEvent, androiduixLib.androidNs.viewNs.MotionEvent, scala.Double, scala.Double) => scala.Boolean,
+    onShowPress: androiduixLib.androidNs.viewNs.MotionEvent => scala.Unit,
+    onSingleTapUp: androiduixLib.androidNs.viewNs.MotionEvent => scala.Boolean
   ): OnGestureListener = {
-    val __obj = js.Dynamic.literal(onDown = onDown, onFling = onFling, onLongPress = onLongPress, onScroll = onScroll, onShowPress = onShowPress, onSingleTapUp = onSingleTapUp)
+    val __obj = js.Dynamic.literal(onDown = js.Any.fromFunction1(onDown), onFling = js.Any.fromFunction4(onFling), onLongPress = js.Any.fromFunction1(onLongPress), onScroll = js.Any.fromFunction4(onScroll), onShowPress = js.Any.fromFunction1(onShowPress), onSingleTapUp = js.Any.fromFunction1(onSingleTapUp))
   
     __obj.asInstanceOf[OnGestureListener]
   }

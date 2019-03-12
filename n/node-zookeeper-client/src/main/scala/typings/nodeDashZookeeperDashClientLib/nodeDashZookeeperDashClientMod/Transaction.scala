@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Transaction extends js.Object {
   def check(path: java.lang.String): this.type = js.native
   def check(path: java.lang.String, version: scala.Double): this.type = js.native
-  def commit(callback: js.Function2[/* error */ nodeLib.Error | Exception, /* results */ js.Any, scala.Unit]): scala.Unit = js.native
+  def commit(callback: js.Function2[/* error */ stdLib.Error | Exception, /* results */ js.Any, scala.Unit]): scala.Unit = js.native
   def create(path: java.lang.String): this.type = js.native
   def create(path: java.lang.String, dataOrAclsOrmode1: nodeLib.Buffer | js.Array[ACL] | scala.Double): this.type = js.native
   def create(

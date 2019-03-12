@@ -21,16 +21,16 @@ object GridProps {
     direction: GridDirection = null,
     svg: stdLib.Partial[reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.LineProps] = null,
     ticks: js.Array[T] = null,
-    x: js.Function1[/* t */ T, scala.Double] = null,
-    y: js.Function1[/* t */ T, scala.Double] = null
+    x: /* t */ T => scala.Double = null,
+    y: /* t */ T => scala.Double = null
   ): GridProps[T] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(belowChart)) __obj.updateDynamic("belowChart")(belowChart)
     if (direction != null) __obj.updateDynamic("direction")(direction)
     if (svg != null) __obj.updateDynamic("svg")(svg)
     if (ticks != null) __obj.updateDynamic("ticks")(ticks)
-    if (x != null) __obj.updateDynamic("x")(x)
-    if (y != null) __obj.updateDynamic("y")(y)
+    if (x != null) __obj.updateDynamic("x")(js.Any.fromFunction1(x))
+    if (y != null) __obj.updateDynamic("y")(js.Any.fromFunction1(y))
     __obj.asInstanceOf[GridProps[T]]
   }
 }

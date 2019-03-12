@@ -14,15 +14,11 @@ trait ExecutionContext extends js.Object {
 object ExecutionContext {
   @scala.inline
   def apply(
-    evaluate: js.Function2[
-      js.Any, 
-      /* repeated */ SerializableOrJSHandle, 
-      js.Promise[EvaluateFnReturnType[js.Any]]
-    ],
-    evaluateHandle: js.Function2[EvaluateFn, /* repeated */ SerializableOrJSHandle, js.Promise[JSHandle]],
-    queryObjects: js.Function1[JSHandle, JSHandle]
+    evaluate: (js.Any, /* repeated */ SerializableOrJSHandle) => js.Promise[EvaluateFnReturnType[js.Any]],
+    evaluateHandle: (EvaluateFn, /* repeated */ SerializableOrJSHandle) => js.Promise[JSHandle],
+    queryObjects: JSHandle => JSHandle
   ): ExecutionContext = {
-    val __obj = js.Dynamic.literal(evaluate = evaluate, evaluateHandle = evaluateHandle, queryObjects = queryObjects)
+    val __obj = js.Dynamic.literal(evaluate = js.Any.fromFunction2(evaluate), evaluateHandle = js.Any.fromFunction2(evaluateHandle), queryObjects = js.Any.fromFunction1(queryObjects))
   
     __obj.asInstanceOf[ExecutionContext]
   }

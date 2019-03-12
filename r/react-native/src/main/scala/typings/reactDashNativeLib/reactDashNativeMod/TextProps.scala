@@ -100,11 +100,11 @@ object TextProps {
     minimumFontScale: scala.Int | scala.Double = null,
     nativeID: java.lang.String = null,
     numberOfLines: scala.Int | scala.Double = null,
-    onAccessibilityTap: js.Function0[scala.Unit] = null,
-    onLayout: js.Function1[/* event */ LayoutChangeEvent, scala.Unit] = null,
-    onLongPress: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
-    onMagicTap: js.Function0[scala.Unit] = null,
-    onPress: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
+    onAccessibilityTap: () => scala.Unit = null,
+    onLayout: /* event */ LayoutChangeEvent => scala.Unit = null,
+    onLongPress: /* event */ GestureResponderEvent => scala.Unit = null,
+    onMagicTap: () => scala.Unit = null,
+    onPress: /* event */ GestureResponderEvent => scala.Unit = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
     selectionColor: java.lang.String = null,
     style: StyleProp[TextStyle] = null,
@@ -131,11 +131,11 @@ object TextProps {
     if (minimumFontScale != null) __obj.updateDynamic("minimumFontScale")(minimumFontScale.asInstanceOf[js.Any])
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
     if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(onAccessibilityTap)
-    if (onLayout != null) __obj.updateDynamic("onLayout")(onLayout)
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(onMagicTap)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
+    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
+    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
     if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor)
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

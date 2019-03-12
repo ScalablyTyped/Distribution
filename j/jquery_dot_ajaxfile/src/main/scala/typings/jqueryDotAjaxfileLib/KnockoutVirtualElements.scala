@@ -20,15 +20,15 @@ object KnockoutVirtualElements {
   @scala.inline
   def apply(
     allowedBindings: /* import warning: ImportType.apply Failed type conversion: {[bindingName: string] : boolean, [bindingName: string] : boolean} */ js.Any,
-    childNodes: js.Function1[KnockoutVirtualElement, js.Array[stdLib.Node]],
-    emptyNode: js.Function1[KnockoutVirtualElement, scala.Unit],
-    firstChild: js.Function1[KnockoutVirtualElement, KnockoutVirtualElement],
-    insertAfter: js.Function3[KnockoutVirtualElement, stdLib.Node, stdLib.Node, scala.Unit],
-    nextSibling: js.Function1[KnockoutVirtualElement, stdLib.Node],
-    prepend: js.Function2[KnockoutVirtualElement, stdLib.Node, scala.Unit],
-    setDomNodeChildren: js.Function2[KnockoutVirtualElement, Anon_Index, scala.Unit]
+    childNodes: KnockoutVirtualElement => js.Array[stdLib.Node],
+    emptyNode: KnockoutVirtualElement => scala.Unit,
+    firstChild: KnockoutVirtualElement => KnockoutVirtualElement,
+    insertAfter: (KnockoutVirtualElement, stdLib.Node, stdLib.Node) => scala.Unit,
+    nextSibling: KnockoutVirtualElement => stdLib.Node,
+    prepend: (KnockoutVirtualElement, stdLib.Node) => scala.Unit,
+    setDomNodeChildren: (KnockoutVirtualElement, Anon_Index) => scala.Unit
   ): KnockoutVirtualElements = {
-    val __obj = js.Dynamic.literal(allowedBindings = allowedBindings, childNodes = childNodes, emptyNode = emptyNode, firstChild = firstChild, insertAfter = insertAfter, nextSibling = nextSibling, prepend = prepend, setDomNodeChildren = setDomNodeChildren)
+    val __obj = js.Dynamic.literal(allowedBindings = allowedBindings, childNodes = js.Any.fromFunction1(childNodes), emptyNode = js.Any.fromFunction1(emptyNode), firstChild = js.Any.fromFunction1(firstChild), insertAfter = js.Any.fromFunction3(insertAfter), nextSibling = js.Any.fromFunction1(nextSibling), prepend = js.Any.fromFunction2(prepend), setDomNodeChildren = js.Any.fromFunction2(setDomNodeChildren))
   
     __obj.asInstanceOf[KnockoutVirtualElements]
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ColumnFormat protected () extends js.Object {
   var Align: OlAlign = js.native
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   var FieldFormat: scala.Double = js.native
   val FieldType: OlUserPropertyType = js.native

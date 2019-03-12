@@ -46,7 +46,7 @@ object Props {
   def apply(
     steps: js.Array[Step],
     beaconComponent: reactLib.reactMod.ReactNs.ReactNode = null,
-    callback: js.Function1[/* data */ State, _] = null,
+    callback: /* data */ State => _ = null,
     continuous: js.UndefOr[scala.Boolean] = js.undefined,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     disableCloseOnEsc: js.UndefOr[scala.Boolean] = js.undefined,
@@ -69,7 +69,7 @@ object Props {
   ): Props = {
     val __obj = js.Dynamic.literal(steps = steps)
     if (beaconComponent != null) __obj.updateDynamic("beaconComponent")(beaconComponent.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (!js.isUndefined(disableCloseOnEsc)) __obj.updateDynamic("disableCloseOnEsc")(disableCloseOnEsc)

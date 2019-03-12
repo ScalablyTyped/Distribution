@@ -18,11 +18,11 @@ object Response {
   def apply[R](
     `match`: stdLib.RegExpMatchArray,
     message: Message,
-    random: js.Function1[js.Array[js.Any], js.Any],
-    reply: js.Function1[/* repeated */ java.lang.String, scala.Unit],
-    send: js.Function1[/* repeated */ java.lang.String, scala.Unit]
+    random: js.Array[js.Any] => js.Any,
+    reply: /* repeated */ java.lang.String => scala.Unit,
+    send: /* repeated */ java.lang.String => scala.Unit
   ): Response[R] = {
-    val __obj = js.Dynamic.literal(message = message, random = random, reply = reply, send = send)
+    val __obj = js.Dynamic.literal(message = message, random = js.Any.fromFunction1(random), reply = js.Any.fromFunction1(reply), send = js.Any.fromFunction1(send))
     __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[Response[R]]
   }

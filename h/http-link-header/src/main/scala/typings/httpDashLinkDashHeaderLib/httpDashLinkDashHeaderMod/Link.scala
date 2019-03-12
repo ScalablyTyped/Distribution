@@ -16,13 +16,13 @@ trait Link extends js.Object {
 object Link {
   @scala.inline
   def apply(
-    get: js.Function2[java.lang.String, java.lang.String, Reference],
-    has: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    get: (java.lang.String, java.lang.String) => Reference,
+    has: (java.lang.String, java.lang.String) => scala.Boolean,
     refs: js.Array[Reference],
-    rel: js.Function1[java.lang.String, Reference],
-    set: js.Function1[Reference, Reference]
+    rel: java.lang.String => Reference,
+    set: Reference => Reference
   ): Link = {
-    val __obj = js.Dynamic.literal(get = get, has = has, refs = refs, rel = rel, set = set)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), has = js.Any.fromFunction2(has), refs = refs, rel = js.Any.fromFunction1(rel), set = js.Any.fromFunction1(set))
   
     __obj.asInstanceOf[Link]
   }

@@ -17,14 +17,14 @@ trait PageHooks extends js.Object {
 object PageHooks {
   @scala.inline
   def apply(
-    beforeLoad: js.Function1[Page, scala.Unit],
-    onHide: js.Function1[Page, scala.Unit],
-    onLoad: js.Function1[Page, scala.Unit],
-    onReady: js.Function1[Page, scala.Unit],
-    onShow: js.Function1[Page, scala.Unit],
-    onUnload: js.Function1[Page, scala.Unit]
+    beforeLoad: Page => scala.Unit,
+    onHide: Page => scala.Unit,
+    onLoad: Page => scala.Unit,
+    onReady: Page => scala.Unit,
+    onShow: Page => scala.Unit,
+    onUnload: Page => scala.Unit
   ): PageHooks = {
-    val __obj = js.Dynamic.literal(beforeLoad = beforeLoad, onHide = onHide, onLoad = onLoad, onReady = onReady, onShow = onShow, onUnload = onUnload)
+    val __obj = js.Dynamic.literal(beforeLoad = js.Any.fromFunction1(beforeLoad), onHide = js.Any.fromFunction1(onHide), onLoad = js.Any.fromFunction1(onLoad), onReady = js.Any.fromFunction1(onReady), onShow = js.Any.fromFunction1(onShow), onUnload = js.Any.fromFunction1(onUnload))
   
     __obj.asInstanceOf[PageHooks]
   }

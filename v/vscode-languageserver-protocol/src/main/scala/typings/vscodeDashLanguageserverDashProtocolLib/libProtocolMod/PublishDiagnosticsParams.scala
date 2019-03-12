@@ -16,10 +16,6 @@ trait PublishDiagnosticsParams extends js.Object {
     * The URI for which diagnostic information is reported.
     */
   var uri: java.lang.String
-  /**
-    * Optional the version number of the document the diagnostics are published for.
-    */
-  var version: js.UndefOr[scala.Double] = js.undefined
 }
 
 object PublishDiagnosticsParams {
@@ -28,11 +24,10 @@ object PublishDiagnosticsParams {
     diagnostics: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Diagnostic
     ],
-    uri: java.lang.String,
-    version: scala.Int | scala.Double = null
+    uri: java.lang.String
   ): PublishDiagnosticsParams = {
     val __obj = js.Dynamic.literal(diagnostics = diagnostics, uri = uri)
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PublishDiagnosticsParams]
   }
 }

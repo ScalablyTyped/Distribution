@@ -293,7 +293,7 @@ object PaginationItemProps {
   @scala.inline
   def apply(
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLLIElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLLIElement] = null,
     isCurrent: js.UndefOr[scala.Boolean] = js.undefined,
     isDisabled: js.UndefOr[scala.Boolean] = js.undefined
   ): PaginationItemProps = {

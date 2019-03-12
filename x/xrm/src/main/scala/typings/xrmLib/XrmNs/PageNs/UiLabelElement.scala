@@ -14,8 +14,8 @@ trait UiLabelElement
 
 object UiLabelElement {
   @scala.inline
-  def apply(getLabel: js.Function0[java.lang.String], setLabel: js.Function1[java.lang.String, scala.Unit]): UiLabelElement = {
-    val __obj = js.Dynamic.literal(getLabel = getLabel, setLabel = setLabel)
+  def apply(getLabel: () => java.lang.String, setLabel: java.lang.String => scala.Unit): UiLabelElement = {
+    val __obj = js.Dynamic.literal(getLabel = js.Any.fromFunction0(getLabel), setLabel = js.Any.fromFunction1(setLabel))
   
     __obj.asInstanceOf[UiLabelElement]
   }

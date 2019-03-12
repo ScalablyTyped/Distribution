@@ -4466,7 +4466,7 @@ object IotNs extends js.Object {
       */
     var certificatePem: CertificatePem
     /**
-      * A boolean value that specifies if the CA certificate is set to active.
+      * A boolean value that specifies if the certificate is set to active.
       */
     var setAsActive: js.UndefOr[SetAsActiveFlag] = js.undefined
     /**
@@ -6093,7 +6093,7 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a thing record in the registry.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
+      * Creates a thing record in the registry. If this call is made multiple times using the same thing name and configuration, the call will succeed. If this call is made with the same thing name but different configuration a ResourceAlreadyExistsException is thrown.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
       */
     def createThing(): awsDashSdkLib.libRequestMod.Request[CreateThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createThing(
@@ -6104,7 +6104,7 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a thing record in the registry.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
+      * Creates a thing record in the registry. If this call is made multiple times using the same thing name and configuration, the call will succeed. If this call is made with the same thing name but different configuration a ResourceAlreadyExistsException is thrown.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
       */
     def createThing(params: CreateThingRequest): awsDashSdkLib.libRequestMod.Request[CreateThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createThing(

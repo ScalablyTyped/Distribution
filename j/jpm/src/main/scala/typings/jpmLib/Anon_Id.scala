@@ -22,19 +22,19 @@ object Anon_Id {
     title: java.lang.String,
     url: java.lang.String,
     id: java.lang.String = null,
-    onAttach: js.Function1[/* worker */ jpmLib.sdkUiSidebarMod.SidebarWorker, _] = null,
-    onDetach: js.Function0[_] = null,
-    onHide: js.Function0[_] = null,
-    onReady: js.Function1[/* worker */ jpmLib.sdkUiSidebarMod.SidebarWorker, _] = null,
-    onShow: js.Function0[_] = null
+    onAttach: /* worker */ jpmLib.sdkUiSidebarMod.SidebarWorker => _ = null,
+    onDetach: () => _ = null,
+    onHide: () => _ = null,
+    onReady: /* worker */ jpmLib.sdkUiSidebarMod.SidebarWorker => _ = null,
+    onShow: () => _ = null
   ): Anon_Id = {
     val __obj = js.Dynamic.literal(title = title, url = url)
     if (id != null) __obj.updateDynamic("id")(id)
-    if (onAttach != null) __obj.updateDynamic("onAttach")(onAttach)
-    if (onDetach != null) __obj.updateDynamic("onDetach")(onDetach)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onReady != null) __obj.updateDynamic("onReady")(onReady)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onAttach != null) __obj.updateDynamic("onAttach")(js.Any.fromFunction1(onAttach))
+    if (onDetach != null) __obj.updateDynamic("onDetach")(js.Any.fromFunction0(onDetach))
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))
+    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction1(onReady))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     __obj.asInstanceOf[Anon_Id]
   }
 }

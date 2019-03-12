@@ -28,12 +28,12 @@ object QHeader {
   def apply(
     col: scala.Double,
     isOrderedBy: scala.Boolean,
-    orderBy: js.Function0[scala.Unit],
+    orderBy: () => scala.Unit,
     qFallbackTitle: java.lang.String,
     qReverseSort: scala.Boolean,
     qSortIndicator: qlikLib.qlikLibStrings.A | qlikLib.qlikLibStrings.B,
-    reverseOrder: js.Function0[scala.Unit],
-    selectRange: js.Function4[scala.Double, scala.Double, scala.Boolean, scala.Boolean, js.Promise[_]],
+    reverseOrder: () => scala.Unit,
+    selectRange: (scala.Double, scala.Double, scala.Boolean, scala.Boolean) => js.Promise[_],
     errorCode: scala.Int | scala.Double = null,
     errorMessage: scala.Int | scala.Double = null,
     qCardinal: scala.Int | scala.Double = null,
@@ -41,7 +41,7 @@ object QHeader {
     qMin: scala.Int | scala.Double = null,
     qStateCounts: org.scalablytyped.runtime.StringDictionary[scala.Double] = null
   ): QHeader = {
-    val __obj = js.Dynamic.literal(col = col, isOrderedBy = isOrderedBy, orderBy = orderBy, qFallbackTitle = qFallbackTitle, qReverseSort = qReverseSort, qSortIndicator = qSortIndicator.asInstanceOf[js.Any], reverseOrder = reverseOrder, selectRange = selectRange)
+    val __obj = js.Dynamic.literal(col = col, isOrderedBy = isOrderedBy, orderBy = js.Any.fromFunction0(orderBy), qFallbackTitle = qFallbackTitle, qReverseSort = qReverseSort, qSortIndicator = qSortIndicator.asInstanceOf[js.Any], reverseOrder = js.Any.fromFunction0(reverseOrder), selectRange = js.Any.fromFunction4(selectRange))
     if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
     if (qCardinal != null) __obj.updateDynamic("qCardinal")(qCardinal.asInstanceOf[js.Any])

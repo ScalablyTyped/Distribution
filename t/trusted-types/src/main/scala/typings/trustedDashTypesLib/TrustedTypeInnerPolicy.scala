@@ -15,12 +15,12 @@ trait TrustedTypeInnerPolicy extends js.Object {
 object TrustedTypeInnerPolicy {
   @scala.inline
   def apply(
-    createHTML: js.Function1[java.lang.String, java.lang.String],
-    createScript: js.Function1[java.lang.String, java.lang.String],
-    createScriptURL: js.Function1[java.lang.String, java.lang.String],
-    createURL: js.Function1[java.lang.String, java.lang.String]
+    createHTML: java.lang.String => java.lang.String,
+    createScript: java.lang.String => java.lang.String,
+    createScriptURL: java.lang.String => java.lang.String,
+    createURL: java.lang.String => java.lang.String
   ): TrustedTypeInnerPolicy = {
-    val __obj = js.Dynamic.literal(createHTML = createHTML, createScript = createScript, createScriptURL = createScriptURL, createURL = createURL)
+    val __obj = js.Dynamic.literal(createHTML = js.Any.fromFunction1(createHTML), createScript = js.Any.fromFunction1(createScript), createScriptURL = js.Any.fromFunction1(createScriptURL), createURL = js.Any.fromFunction1(createURL))
   
     __obj.asInstanceOf[TrustedTypeInnerPolicy]
   }

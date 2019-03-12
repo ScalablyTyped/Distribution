@@ -20,18 +20,18 @@ trait LoadingOptions
 object LoadingOptions {
   @scala.inline
   def apply(
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    complete: /* res */ js.Any => scala.Unit = null,
     content: java.lang.String = null,
     delay: scala.Int | scala.Double = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
-    success: js.Function1[js.Any, scala.Unit] = null
+    fail: js.Any => scala.Unit = null,
+    success: js.Any => scala.Unit = null
   ): LoadingOptions = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (content != null) __obj.updateDynamic("content")(content)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[LoadingOptions]
   }
 }

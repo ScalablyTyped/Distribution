@@ -13,8 +13,8 @@ trait LinkedNode extends js.Object {
 
 object LinkedNode {
   @scala.inline
-  def apply(length: js.Function0[scala.Double], next: LinkedNode = null, prev: LinkedNode = null): LinkedNode = {
-    val __obj = js.Dynamic.literal(length = length)
+  def apply(length: () => scala.Double, next: LinkedNode = null, prev: LinkedNode = null): LinkedNode = {
+    val __obj = js.Dynamic.literal(length = js.Any.fromFunction0(length))
     if (next != null) __obj.updateDynamic("next")(next)
     if (prev != null) __obj.updateDynamic("prev")(prev)
     __obj.asInstanceOf[LinkedNode]

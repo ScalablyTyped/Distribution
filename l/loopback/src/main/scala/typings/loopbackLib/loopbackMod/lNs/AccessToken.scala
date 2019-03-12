@@ -37,6 +37,6 @@ trait AccessToken extends PersistedModel {
     * @param {Error} err
     * @param {boolean} isValid
     */
-  def validate(callback: js.Function2[/* err */ nodeLib.Error, /* isValid */ scala.Boolean, scala.Unit]): scala.Unit = js.native
+  def validate(callback: js.Function2[/* err */ stdLib.Error, /* isValid */ scala.Boolean, scala.Unit]): scala.Unit = js.native
 }
 

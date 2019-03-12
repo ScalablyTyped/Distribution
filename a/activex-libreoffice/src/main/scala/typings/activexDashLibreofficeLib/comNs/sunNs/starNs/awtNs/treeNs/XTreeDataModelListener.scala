@@ -51,16 +51,16 @@ trait XTreeDataModelListener
 object XTreeDataModelListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    treeNodesChanged: js.Function1[TreeDataModelEvent, scala.Unit],
-    treeNodesInserted: js.Function1[TreeDataModelEvent, scala.Unit],
-    treeNodesRemoved: js.Function1[TreeDataModelEvent, scala.Unit],
-    treeStructureChanged: js.Function1[TreeDataModelEvent, scala.Unit]
+    acquire: () => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    treeNodesChanged: TreeDataModelEvent => scala.Unit,
+    treeNodesInserted: TreeDataModelEvent => scala.Unit,
+    treeNodesRemoved: TreeDataModelEvent => scala.Unit,
+    treeStructureChanged: TreeDataModelEvent => scala.Unit
   ): XTreeDataModelListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, treeNodesChanged = treeNodesChanged, treeNodesInserted = treeNodesInserted, treeNodesRemoved = treeNodesRemoved, treeStructureChanged = treeStructureChanged)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), treeNodesChanged = js.Any.fromFunction1(treeNodesChanged), treeNodesInserted = js.Any.fromFunction1(treeNodesInserted), treeNodesRemoved = js.Any.fromFunction1(treeNodesRemoved), treeStructureChanged = js.Any.fromFunction1(treeStructureChanged))
   
     __obj.asInstanceOf[XTreeDataModelListener]
   }

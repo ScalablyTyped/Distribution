@@ -31,7 +31,7 @@ trait ReactDatePickerProps extends js.Object {
   var dropdownMode: js.UndefOr[
     reactDashDatepickerLib.reactDashDatepickerLibStrings.scroll | reactDashDatepickerLib.reactDashDatepickerLibStrings.select
   ] = js.native
-  var endDate: js.UndefOr[stdLib.Date] = js.native
+  var endDate: js.UndefOr[stdLib.Date | scala.Null] = js.native
   var excludeDates: js.UndefOr[js.Array[stdLib.Date]] = js.native
   var excludeTimes: js.UndefOr[js.Array[stdLib.Date]] = js.native
   var filterDate: js.UndefOr[js.Function1[/* date */ stdLib.Date, scala.Boolean]] = js.native
@@ -47,34 +47,34 @@ trait ReactDatePickerProps extends js.Object {
   var `inline`: js.UndefOr[scala.Boolean] = js.native
   var isClearable: js.UndefOr[scala.Boolean] = js.native
   var locale: js.UndefOr[java.lang.String] = js.native
-  var maxDate: js.UndefOr[stdLib.Date] = js.native
+  var maxDate: js.UndefOr[stdLib.Date | scala.Null] = js.native
   var maxTime: js.UndefOr[stdLib.Date] = js.native
-  var minDate: js.UndefOr[stdLib.Date] = js.native
+  var minDate: js.UndefOr[stdLib.Date | scala.Null] = js.native
   var minTime: js.UndefOr[stdLib.Date] = js.native
   var monthsShown: js.UndefOr[scala.Double] = js.native
   var name: js.UndefOr[java.lang.String] = js.native
   var nextMonthButtonLabel: js.UndefOr[java.lang.String] = js.native
   var onBlur: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLInputElement], 
+      /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLInputElement], 
       scala.Unit
     ]
   ] = js.native
   var onChangeRaw: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLInputElement], 
+      /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLInputElement], 
       scala.Unit
     ]
   ] = js.native
   var onClickOutside: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.native
   var onFocus: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLInputElement], 
+      /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLInputElement], 
       scala.Unit
     ]
   ] = js.native
@@ -82,7 +82,7 @@ trait ReactDatePickerProps extends js.Object {
   var onInputError: js.UndefOr[js.Function1[/* err */ reactDashDatepickerLib.Anon_Code, scala.Unit]] = js.native
   var onKeyDown: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLDivElement], 
+      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLDivElement], 
       scala.Unit
     ]
   ] = js.native
@@ -141,7 +141,7 @@ trait ReactDatePickerProps extends js.Object {
   var showTimeSelectOnly: js.UndefOr[scala.Boolean] = js.native
   var showWeekNumbers: js.UndefOr[scala.Boolean] = js.native
   var showYearDropdown: js.UndefOr[scala.Boolean] = js.native
-  var startDate: js.UndefOr[stdLib.Date] = js.native
+  var startDate: js.UndefOr[stdLib.Date | scala.Null] = js.native
   var startOpen: js.UndefOr[scala.Boolean] = js.native
   var tabIndex: js.UndefOr[scala.Double] = js.native
   var timeCaption: js.UndefOr[java.lang.String] = js.native

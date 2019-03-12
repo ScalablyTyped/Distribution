@@ -20,7 +20,7 @@ object Anon_Columns {
   @scala.inline
   def apply(
     columns: js.Array[c3Lib.c3Mod.PrimitiveArray] = null,
-    done: js.Function0[_] = null,
+    done: () => _ = null,
     duration: scala.Int | scala.Double = null,
     json: js.Object = null,
     keys: Anon_Value = null,
@@ -30,7 +30,7 @@ object Anon_Columns {
   ): Anon_Columns = {
     val __obj = js.Dynamic.literal()
     if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (done != null) __obj.updateDynamic("done")(done)
+    if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction0(done))
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (json != null) __obj.updateDynamic("json")(json)
     if (keys != null) __obj.updateDynamic("keys")(keys)

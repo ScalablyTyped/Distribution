@@ -10,17 +10,12 @@ import scala.scalajs.js.annotation._
 class LargeObjectManager protected () extends js.Object {
   def this(options: js.Object) = this()
   def this(options: LargeObjectManagerSettings) = this()
-  def create(callback: js.Function2[/* error */ nodeLib.Error, /* oid */ scala.Double, scala.Unit]): scala.Unit = js.native
+  def create(callback: js.Function2[/* error */ stdLib.Error, /* oid */ scala.Double, scala.Unit]): scala.Unit = js.native
   def createAndWritableStream(): scala.Unit = js.native
   def createAndWritableStream(bufferSize: scala.Double): scala.Unit = js.native
   def createAndWritableStream(
     bufferSize: scala.Double,
-    callback: js.Function3[
-      /* error */ nodeLib.Error, 
-      /* oid */ scala.Double, 
-      /* stream */ WriteStream, 
-      scala.Unit
-    ]
+    callback: js.Function3[/* error */ stdLib.Error, /* oid */ scala.Double, /* stream */ WriteStream, scala.Unit]
   ): scala.Unit = js.native
   def createAndWritableStreamAsync(): js.Promise[js.Tuple2[scala.Double, WriteStream]] = js.native
   def createAndWritableStreamAsync(bufferSize: scala.Double): js.Promise[js.Tuple2[scala.Double, WriteStream]] = js.native
@@ -28,23 +23,18 @@ class LargeObjectManager protected () extends js.Object {
   def open(
     oid: scala.Double,
     mode: scala.Double,
-    callback: js.Function2[/* error */ nodeLib.Error, /* result */ LargeObject, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* result */ LargeObject, scala.Unit]
   ): scala.Unit = js.native
   def openAndReadableStream(
     oid: scala.Double,
     bufferSize: scala.Double,
-    callback: js.Function3[
-      /* error */ nodeLib.Error, 
-      /* size */ scala.Double, 
-      /* stream */ ReadStream, 
-      scala.Unit
-    ]
+    callback: js.Function3[/* error */ stdLib.Error, /* size */ scala.Double, /* stream */ ReadStream, scala.Unit]
   ): scala.Unit = js.native
   def openAndReadableStreamAsync(oid: scala.Double): js.Promise[js.Tuple2[scala.Double, ReadStream]] = js.native
   def openAndReadableStreamAsync(oid: scala.Double, bufferSize: scala.Double): js.Promise[js.Tuple2[scala.Double, ReadStream]] = js.native
   def openAsync(oid: scala.Double, mode: scala.Double): js.Promise[LargeObject] = js.native
   def unlink(oid: scala.Double): scala.Unit = js.native
-  def unlink(oid: scala.Double, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def unlink(oid: scala.Double, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def unlinkAsync(oid: scala.Double): js.Promise[_] = js.native
 }
 

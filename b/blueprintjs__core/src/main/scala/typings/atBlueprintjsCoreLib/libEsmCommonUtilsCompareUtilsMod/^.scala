@@ -21,10 +21,10 @@ object ^ extends js.Object {
   def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[atBlueprintjsCoreLib.Anon_KeyValueA[T]] = js.native
   def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: js.Array[java.lang.String]): js.Array[atBlueprintjsCoreLib.Anon_KeyValueA[T]] = js.native
   def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[atBlueprintjsCoreLib.Anon_Key] = js.native
-  def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: atBlueprintjsCoreLib.libEsmCommonUtilsCompareUtilsMod.IKeyBlacklist[T]): js.Array[atBlueprintjsCoreLib.Anon_Key] = js.native
-  def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: atBlueprintjsCoreLib.libEsmCommonUtilsCompareUtilsMod.IKeyWhitelist[T]): js.Array[atBlueprintjsCoreLib.Anon_Key] = js.native
+  def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: IKeyBlacklist[T]): js.Array[atBlueprintjsCoreLib.Anon_Key] = js.native
+  def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: IKeyWhitelist[T]): js.Array[atBlueprintjsCoreLib.Anon_Key] = js.native
   def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T): scala.Boolean = js.native
-  def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: atBlueprintjsCoreLib.libEsmCommonUtilsCompareUtilsMod.IKeyBlacklist[T]): scala.Boolean = js.native
-  def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: atBlueprintjsCoreLib.libEsmCommonUtilsCompareUtilsMod.IKeyWhitelist[T]): scala.Boolean = js.native
+  def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: IKeyBlacklist[T]): scala.Boolean = js.native
+  def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: IKeyWhitelist[T]): scala.Boolean = js.native
 }
 

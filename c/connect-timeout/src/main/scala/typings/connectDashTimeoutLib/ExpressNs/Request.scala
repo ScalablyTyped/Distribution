@@ -18,8 +18,8 @@ trait Request extends js.Object {
 
 object Request {
   @scala.inline
-  def apply(clearTimeout: js.Function0[scala.Unit], timedout: scala.Boolean): Request = {
-    val __obj = js.Dynamic.literal(clearTimeout = clearTimeout, timedout = timedout)
+  def apply(clearTimeout: () => scala.Unit, timedout: scala.Boolean): Request = {
+    val __obj = js.Dynamic.literal(clearTimeout = js.Any.fromFunction0(clearTimeout), timedout = timedout)
   
     __obj.asInstanceOf[Request]
   }

@@ -16,18 +16,12 @@ trait IBitmapProperties extends IBitmapPropertiesView {
 object IBitmapProperties {
   @scala.inline
   def apply(
-    getPropertiesAsync: js.Function1[
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], 
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[BitmapPropertySet]
-    ],
-    setPropertiesAsync: js.Function1[
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[
-        winrtLib.WindowsNs.FoundationNs.CollectionsNs.IKeyValuePair[java.lang.String, BitmapTypedValue]
-      ], 
-      winrtLib.WindowsNs.FoundationNs.IAsyncAction
-    ]
+    getPropertiesAsync: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String] => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[BitmapPropertySet],
+    setPropertiesAsync: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IKeyValuePair[java.lang.String, BitmapTypedValue]
+    ] => winrtLib.WindowsNs.FoundationNs.IAsyncAction
   ): IBitmapProperties = {
-    val __obj = js.Dynamic.literal(getPropertiesAsync = getPropertiesAsync, setPropertiesAsync = setPropertiesAsync)
+    val __obj = js.Dynamic.literal(getPropertiesAsync = js.Any.fromFunction1(getPropertiesAsync), setPropertiesAsync = js.Any.fromFunction1(setPropertiesAsync))
   
     __obj.asInstanceOf[IBitmapProperties]
   }

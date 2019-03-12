@@ -13,10 +13,10 @@ trait ConvexHullGrahamScan extends js.Object {
 object ConvexHullGrahamScan {
   @scala.inline
   def apply(
-    addPoint: js.Function2[scala.Double, scala.Double, scala.Unit],
-    getHull: js.Function0[js.Array[grahamUnderscoreScanLib.Anon_X]]
+    addPoint: (scala.Double, scala.Double) => scala.Unit,
+    getHull: () => js.Array[grahamUnderscoreScanLib.Anon_X]
   ): ConvexHullGrahamScan = {
-    val __obj = js.Dynamic.literal(addPoint = addPoint, getHull = getHull)
+    val __obj = js.Dynamic.literal(addPoint = js.Any.fromFunction2(addPoint), getHull = js.Any.fromFunction0(getHull))
   
     __obj.asInstanceOf[ConvexHullGrahamScan]
   }

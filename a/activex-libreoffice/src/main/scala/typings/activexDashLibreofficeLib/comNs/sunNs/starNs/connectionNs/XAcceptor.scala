@@ -30,13 +30,13 @@ trait XAcceptor
 object XAcceptor {
   @scala.inline
   def apply(
-    accept: js.Function1[java.lang.String, XConnection],
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    stopAccepting: js.Function0[scala.Unit]
+    accept: java.lang.String => XConnection,
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    stopAccepting: () => scala.Unit
   ): XAcceptor = {
-    val __obj = js.Dynamic.literal(accept = accept, acquire = acquire, queryInterface = queryInterface, release = release, stopAccepting = stopAccepting)
+    val __obj = js.Dynamic.literal(accept = js.Any.fromFunction1(accept), acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), stopAccepting = js.Any.fromFunction0(stopAccepting))
   
     __obj.asInstanceOf[XAcceptor]
   }

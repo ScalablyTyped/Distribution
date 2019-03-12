@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SassOptions extends js.Object {
   var data: js.UndefOr[java.lang.String] = js.undefined
-  var error: js.UndefOr[js.Function1[/* err */ nodeLib.Error, _]] = js.undefined
+  var error: js.UndefOr[js.Function1[/* err */ stdLib.Error, _]] = js.undefined
   var file: js.UndefOr[java.lang.String] = js.undefined
   var imagePaths: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var includePaths: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -27,7 +27,7 @@ object SassOptions {
   @scala.inline
   def apply(
     data: java.lang.String = null,
-    error: js.Function1[/* err */ nodeLib.Error, _] = null,
+    error: /* err */ stdLib.Error => _ = null,
     file: java.lang.String = null,
     imagePaths: js.Array[java.lang.String] = null,
     includePaths: js.Array[java.lang.String] = null,
@@ -40,11 +40,11 @@ object SassOptions {
     sourceMap: scala.Boolean | java.lang.String = null,
     sourceMapContents: js.UndefOr[scala.Boolean] = js.undefined,
     sourceMapEmbed: js.UndefOr[scala.Boolean] = js.undefined,
-    success: js.Function1[/* results */ SassResults, _] = null
+    success: /* results */ SassResults => _ = null
   ): SassOptions = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (file != null) __obj.updateDynamic("file")(file)
     if (imagePaths != null) __obj.updateDynamic("imagePaths")(imagePaths)
     if (includePaths != null) __obj.updateDynamic("includePaths")(includePaths)
@@ -57,7 +57,7 @@ object SassOptions {
     if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
     if (!js.isUndefined(sourceMapContents)) __obj.updateDynamic("sourceMapContents")(sourceMapContents)
     if (!js.isUndefined(sourceMapEmbed)) __obj.updateDynamic("sourceMapEmbed")(sourceMapEmbed)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[SassOptions]
   }
 }

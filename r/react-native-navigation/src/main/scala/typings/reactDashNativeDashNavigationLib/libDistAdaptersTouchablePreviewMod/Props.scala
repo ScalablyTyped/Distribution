@@ -22,17 +22,17 @@ object Props {
   @scala.inline
   def apply(
     children: reactLib.reactMod.ReactNs.ReactNode,
-    onPeekIn: js.Function0[scala.Unit] = null,
-    onPeekOut: js.Function0[scala.Unit] = null,
-    onPress: js.Function0[scala.Unit] = null,
-    onPressIn: js.Function1[/* payload */ reactDashNativeDashNavigationLib.Anon_ReactTag, scala.Unit] = null,
+    onPeekIn: () => scala.Unit = null,
+    onPeekOut: () => scala.Unit = null,
+    onPress: () => scala.Unit = null,
+    onPressIn: /* payload */ reactDashNativeDashNavigationLib.Anon_ReactTag => scala.Unit = null,
     touchableComponent: reactDashNativeLib.reactDashNativeMod.TouchableHighlight | reactDashNativeLib.reactDashNativeMod.TouchableOpacity | reactDashNativeLib.reactDashNativeMod.TouchableNativeFeedback | reactDashNativeLib.reactDashNativeMod.TouchableWithoutFeedback | reactLib.reactMod.ReactNs.ReactNode = null
   ): Props = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    if (onPeekIn != null) __obj.updateDynamic("onPeekIn")(onPeekIn)
-    if (onPeekOut != null) __obj.updateDynamic("onPeekOut")(onPeekOut)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
-    if (onPressIn != null) __obj.updateDynamic("onPressIn")(onPressIn)
+    if (onPeekIn != null) __obj.updateDynamic("onPeekIn")(js.Any.fromFunction0(onPeekIn))
+    if (onPeekOut != null) __obj.updateDynamic("onPeekOut")(js.Any.fromFunction0(onPeekOut))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
+    if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction1(onPressIn))
     if (touchableComponent != null) __obj.updateDynamic("touchableComponent")(touchableComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }

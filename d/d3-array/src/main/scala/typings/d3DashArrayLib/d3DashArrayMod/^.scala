@@ -10,11 +10,8 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val bisect: d3DashArrayLib.Anon_Array = js.native
   def ascending(): scala.Double = js.native
-  def ascending(
-    a: d3DashArrayLib.d3DashArrayMod.Primitive | js.UndefOr[scala.Nothing],
-    b: d3DashArrayLib.d3DashArrayMod.Primitive
-  ): scala.Double = js.native
-  def ascending(a: d3DashArrayLib.d3DashArrayMod.Primitive): scala.Double = js.native
+  def ascending(a: Primitive | js.UndefOr[scala.Nothing], b: Primitive): scala.Double = js.native
+  def ascending(a: Primitive): scala.Double = js.native
   def bisectLeft(array: stdLib.ArrayLike[java.lang.String], x: java.lang.String): scala.Double = js.native
   def bisectLeft(array: stdLib.ArrayLike[java.lang.String], x: java.lang.String, lo: scala.Double): scala.Double = js.native
   def bisectLeft(array: stdLib.ArrayLike[java.lang.String], x: java.lang.String, lo: scala.Double, hi: scala.Double): scala.Double = js.native
@@ -33,17 +30,14 @@ object ^ extends js.Object {
   def bisectRight(array: stdLib.ArrayLike[stdLib.Date], x: stdLib.Date): scala.Double = js.native
   def bisectRight(array: stdLib.ArrayLike[stdLib.Date], x: stdLib.Date, lo: scala.Double): scala.Double = js.native
   def bisectRight(array: stdLib.ArrayLike[stdLib.Date], x: stdLib.Date, lo: scala.Double, hi: scala.Double): scala.Double = js.native
-  def bisector[T, U](accessor: js.Function1[/* x */ T, U]): d3DashArrayLib.d3DashArrayMod.Bisector[T, U] = js.native
-  def bisector[T, U](comparator: js.Function2[/* a */ T, /* b */ U, scala.Double]): d3DashArrayLib.d3DashArrayMod.Bisector[T, U] = js.native
+  def bisector[T, U](accessor: js.Function1[/* x */ T, U]): Bisector[T, U] = js.native
+  def bisector[T, U](comparator: js.Function2[/* a */ T, /* b */ U, scala.Double]): Bisector[T, U] = js.native
   def cross[S, T](a: stdLib.ArrayLike[S], b: stdLib.ArrayLike[T]): js.Array[js.Tuple2[S, T]] = js.native
   def cross[S, T, U](a: stdLib.ArrayLike[S], b: stdLib.ArrayLike[T], reducer: js.Function2[/* a */ S, /* b */ T, U]): js.Array[U] = js.native
   def descending(): scala.Double = js.native
-  def descending(
-    a: d3DashArrayLib.d3DashArrayMod.Primitive | js.UndefOr[scala.Nothing],
-    b: d3DashArrayLib.d3DashArrayMod.Primitive
-  ): scala.Double = js.native
-  def descending(a: d3DashArrayLib.d3DashArrayMod.Primitive): scala.Double = js.native
-  def deviation[T /* <: d3DashArrayLib.d3DashArrayMod.Numeric */](array: stdLib.ArrayLike[js.UndefOr[T | scala.Null]]): js.UndefOr[scala.Double] = js.native
+  def descending(a: Primitive | js.UndefOr[scala.Nothing], b: Primitive): scala.Double = js.native
+  def descending(a: Primitive): scala.Double = js.native
+  def deviation[T /* <: Numeric */](array: stdLib.ArrayLike[js.UndefOr[T | scala.Null]]): js.UndefOr[scala.Double] = js.native
   def deviation[T](
     array: stdLib.ArrayLike[T],
     accessor: js.Function3[
@@ -64,9 +58,9 @@ object ^ extends js.Object {
     ]
   ): (js.Tuple2[java.lang.String, java.lang.String]) | (js.Tuple2[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]]) = js.native
   @JSName("extent")
-  def extent_TNumeric[T /* <: d3DashArrayLib.d3DashArrayMod.Numeric */](array: stdLib.ArrayLike[T]): (js.Tuple2[T, T]) | (js.Tuple2[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]]) = js.native
+  def extent_TNumeric[T /* <: Numeric */](array: stdLib.ArrayLike[T]): (js.Tuple2[T, T]) | (js.Tuple2[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]]) = js.native
   @JSName("extent")
-  def extent_TUNumeric[T, U /* <: d3DashArrayLib.d3DashArrayMod.Numeric */](
+  def extent_TUNumeric[T, U /* <: Numeric */](
     array: stdLib.ArrayLike[T],
     accessor: js.Function3[
       /* datum */ T, 
@@ -75,13 +69,13 @@ object ^ extends js.Object {
       js.UndefOr[U | scala.Null]
     ]
   ): (js.Tuple2[U, U]) | (js.Tuple2[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]]) = js.native
-  def histogram(): d3DashArrayLib.d3DashArrayMod.HistogramGeneratorNumber[scala.Double, scala.Double] = js.native
+  def histogram(): HistogramGeneratorNumber[scala.Double, scala.Double] = js.native
   @JSName("histogram")
-  def histogram_DatumValueUndefOr[Datum, Value /* <: js.UndefOr[scala.Double] */](): d3DashArrayLib.d3DashArrayMod.HistogramGeneratorNumber[Datum, Value] = js.native
+  def histogram_DatumValueUndefOr[Datum, Value /* <: js.UndefOr[scala.Double] */](): HistogramGeneratorNumber[Datum, Value] = js.native
   @JSName("histogram")
-  def histogram_DatumValueUndefOrHistogramGenerator[Datum, Value /* <: js.UndefOr[scala.Double | stdLib.Date] */](): d3DashArrayLib.d3DashArrayMod.HistogramGenerator[Datum, Value] = js.native
+  def histogram_DatumValueUndefOrHistogramGenerator[Datum, Value /* <: js.UndefOr[scala.Double | stdLib.Date] */](): HistogramGenerator[Datum, Value] = js.native
   @JSName("histogram")
-  def histogram_DatumValueUndefOrHistogramGeneratorDate[Datum, Value /* <: js.UndefOr[stdLib.Date] */](): d3DashArrayLib.d3DashArrayMod.HistogramGeneratorDate[Datum, Value] = js.native
+  def histogram_DatumValueUndefOrHistogramGeneratorDate[Datum, Value /* <: js.UndefOr[stdLib.Date] */](): HistogramGeneratorDate[Datum, Value] = js.native
   def max(array: stdLib.ArrayLike[java.lang.String]): js.UndefOr[java.lang.String] = js.native
   def max[T](
     array: stdLib.ArrayLike[T],
@@ -93,9 +87,9 @@ object ^ extends js.Object {
     ]
   ): js.UndefOr[java.lang.String] = js.native
   @JSName("max")
-  def max_TNumeric[T /* <: d3DashArrayLib.d3DashArrayMod.Numeric */](array: stdLib.ArrayLike[T]): js.UndefOr[T] = js.native
+  def max_TNumeric[T /* <: Numeric */](array: stdLib.ArrayLike[T]): js.UndefOr[T] = js.native
   @JSName("max")
-  def max_TUNumeric[T, U /* <: d3DashArrayLib.d3DashArrayMod.Numeric */](
+  def max_TUNumeric[T, U /* <: Numeric */](
     array: stdLib.ArrayLike[T],
     accessor: js.Function3[
       /* datum */ T, 
@@ -104,7 +98,7 @@ object ^ extends js.Object {
       js.UndefOr[U | scala.Null]
     ]
   ): js.UndefOr[U] = js.native
-  def mean[T /* <: d3DashArrayLib.d3DashArrayMod.Numeric */](array: stdLib.ArrayLike[js.UndefOr[T | scala.Null]]): js.UndefOr[scala.Double] = js.native
+  def mean[T /* <: Numeric */](array: stdLib.ArrayLike[js.UndefOr[T | scala.Null]]): js.UndefOr[scala.Double] = js.native
   def mean[T](
     array: stdLib.ArrayLike[T],
     accessor: js.Function3[
@@ -114,7 +108,7 @@ object ^ extends js.Object {
       js.UndefOr[scala.Double | scala.Null]
     ]
   ): js.UndefOr[scala.Double] = js.native
-  def median[T /* <: d3DashArrayLib.d3DashArrayMod.Numeric */](array: stdLib.ArrayLike[js.UndefOr[T | scala.Null]]): js.UndefOr[scala.Double] = js.native
+  def median[T /* <: Numeric */](array: stdLib.ArrayLike[js.UndefOr[T | scala.Null]]): js.UndefOr[scala.Double] = js.native
   def median[T](
     array: stdLib.ArrayLike[T],
     accessor: js.Function3[
@@ -136,9 +130,9 @@ object ^ extends js.Object {
     ]
   ): js.UndefOr[java.lang.String] = js.native
   @JSName("min")
-  def min_TNumeric[T /* <: d3DashArrayLib.d3DashArrayMod.Numeric */](array: stdLib.ArrayLike[T]): js.UndefOr[T] = js.native
+  def min_TNumeric[T /* <: Numeric */](array: stdLib.ArrayLike[T]): js.UndefOr[T] = js.native
   @JSName("min")
-  def min_TUNumeric[T, U /* <: d3DashArrayLib.d3DashArrayMod.Numeric */](
+  def min_TUNumeric[T, U /* <: Numeric */](
     array: stdLib.ArrayLike[T],
     accessor: js.Function3[
       /* datum */ T, 
@@ -151,7 +145,7 @@ object ^ extends js.Object {
   def pairs[T, U](array: stdLib.ArrayLike[T], reducer: js.Function2[/* a */ T, /* b */ T, U]): js.Array[U] = js.native
   def permute[T](array: org.scalablytyped.runtime.NumberDictionary[T], keys: stdLib.ArrayLike[scala.Double]): js.Array[T] = js.native
   def permute[T, K /* <: java.lang.String */](`object`: T, keys: stdLib.ArrayLike[K]): js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
-  def quantile[T /* <: d3DashArrayLib.d3DashArrayMod.Numeric */](array: stdLib.ArrayLike[js.UndefOr[T | scala.Null]], p: scala.Double): js.UndefOr[scala.Double] = js.native
+  def quantile[T /* <: Numeric */](array: stdLib.ArrayLike[js.UndefOr[T | scala.Null]], p: scala.Double): js.UndefOr[scala.Double] = js.native
   def quantile[T](
     array: stdLib.ArrayLike[T],
     p: scala.Double,
@@ -202,7 +196,7 @@ object ^ extends js.Object {
   def shuffle[T](array: js.Array[T]): js.Array[T] = js.native
   def shuffle[T](array: js.Array[T], lo: scala.Double): js.Array[T] = js.native
   def shuffle[T](array: js.Array[T], lo: scala.Double, hi: scala.Double): js.Array[T] = js.native
-  def sum[T /* <: d3DashArrayLib.d3DashArrayMod.Numeric */](array: stdLib.ArrayLike[js.UndefOr[T | scala.Null]]): scala.Double = js.native
+  def sum[T /* <: Numeric */](array: stdLib.ArrayLike[js.UndefOr[T | scala.Null]]): scala.Double = js.native
   def sum[T](
     array: stdLib.ArrayLike[T],
     accessor: js.Function3[
@@ -219,7 +213,7 @@ object ^ extends js.Object {
   def tickStep(start: scala.Double, stop: scala.Double, count: scala.Double): scala.Double = js.native
   def ticks(start: scala.Double, stop: scala.Double, count: scala.Double): js.Array[scala.Double] = js.native
   def transpose[T](matrix: stdLib.ArrayLike[stdLib.ArrayLike[T]]): js.Array[js.Array[T]] = js.native
-  def variance[T /* <: d3DashArrayLib.d3DashArrayMod.Numeric */](array: stdLib.ArrayLike[js.UndefOr[T | scala.Null]]): js.UndefOr[scala.Double] = js.native
+  def variance[T /* <: Numeric */](array: stdLib.ArrayLike[js.UndefOr[T | scala.Null]]): js.UndefOr[scala.Double] = js.native
   def variance[T](
     array: stdLib.ArrayLike[T],
     accessor: js.Function3[

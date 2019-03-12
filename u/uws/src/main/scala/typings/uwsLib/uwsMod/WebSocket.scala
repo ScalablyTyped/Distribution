@@ -31,7 +31,7 @@ trait WebSocket
   @JSName("addEventListener")
   def addEventListener_error(method: uwsLib.uwsLibStrings.error): scala.Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_error(method: uwsLib.uwsLibStrings.error, cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def addEventListener_error(method: uwsLib.uwsLibStrings.error, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   // HTML5 WebSocket events
   @JSName("addEventListener")
   def addEventListener_message(method: uwsLib.uwsLibStrings.message): scala.Unit = js.native
@@ -53,7 +53,7 @@ trait WebSocket
     cb: js.Function2[/* code */ scala.Double, /* message */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_error(event: uwsLib.uwsLibStrings.error, cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def addListener_error(event: uwsLib.uwsLibStrings.error, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_message(
     event: uwsLib.uwsLibStrings.message,
@@ -92,7 +92,7 @@ trait WebSocket
   @JSName("on")
   def on_error(
     event: uwsLib.uwsLibStrings.error,
-    cb: js.ThisFunction1[/* this */ this.type, /* err */ nodeLib.Error, scala.Unit]
+    cb: js.ThisFunction1[/* this */ this.type, /* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_message(
@@ -127,7 +127,7 @@ trait WebSocket
     ]
   ): this.type = js.native
   def onclose(event: uwsLib.Anon_Code): scala.Unit = js.native
-  def onerror(err: nodeLib.Error): scala.Unit = js.native
+  def onerror(err: stdLib.Error): scala.Unit = js.native
   def onmessage(event: uwsLib.Anon_Data): scala.Unit = js.native
   def onopen(event: uwsLib.Anon_Target): scala.Unit = js.native
   def pause(): scala.Unit = js.native
@@ -141,15 +141,15 @@ trait WebSocket
   def pong(data: js.Any, options: uwsLib.Anon_Binary, dontFail: scala.Boolean): scala.Unit = js.native
   def resume(): scala.Unit = js.native
   def send(data: js.Any): scala.Unit = js.native
-  def send(data: js.Any, cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def send(data: js.Any, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def send(data: js.Any, options: uwsLib.Anon_Binary): scala.Unit = js.native
-  def send(data: js.Any, options: uwsLib.Anon_Binary, cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def send(data: js.Any, options: uwsLib.Anon_Binary, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def stream(): scala.Unit = js.native
-  def stream(cb: js.Function2[/* err */ nodeLib.Error, /* final */ scala.Boolean, scala.Unit]): scala.Unit = js.native
+  def stream(cb: js.Function2[/* err */ stdLib.Error, /* final */ scala.Boolean, scala.Unit]): scala.Unit = js.native
   def stream(options: uwsLib.Anon_Binary): scala.Unit = js.native
   def stream(
     options: uwsLib.Anon_Binary,
-    cb: js.Function2[/* err */ nodeLib.Error, /* final */ scala.Boolean, scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* final */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   def terminate(): scala.Unit = js.native
 }

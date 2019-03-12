@@ -42,10 +42,10 @@ object NotifySettings {
     mouse_over: java.lang.String = null,
     newest_on_top: js.UndefOr[scala.Boolean] = js.undefined,
     offset: scala.Double | Anon_X = null,
-    onClose: js.Function1[/* $ele */ jqueryLib.JQuery[stdLib.HTMLElement], scala.Unit] = null,
-    onClosed: js.Function1[/* $ele */ jqueryLib.JQuery[stdLib.HTMLElement], scala.Unit] = null,
-    onShow: js.Function1[/* $ele */ jqueryLib.JQuery[stdLib.HTMLElement], scala.Unit] = null,
-    onShown: js.Function1[/* $ele */ jqueryLib.JQuery[stdLib.HTMLElement], scala.Unit] = null,
+    onClose: /* $ele */ jqueryLib.JQuery[stdLib.HTMLElement] => scala.Unit = null,
+    onClosed: /* $ele */ jqueryLib.JQuery[stdLib.HTMLElement] => scala.Unit = null,
+    onShow: /* $ele */ jqueryLib.JQuery[stdLib.HTMLElement] => scala.Unit = null,
+    onShown: /* $ele */ jqueryLib.JQuery[stdLib.HTMLElement] => scala.Unit = null,
     placement: Anon_Align = null,
     position: java.lang.String = null,
     showProgressbar: js.UndefOr[scala.Boolean] = js.undefined,
@@ -66,10 +66,10 @@ object NotifySettings {
     if (mouse_over != null) __obj.updateDynamic("mouse_over")(mouse_over)
     if (!js.isUndefined(newest_on_top)) __obj.updateDynamic("newest_on_top")(newest_on_top)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onClosed != null) __obj.updateDynamic("onClosed")(onClosed)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
-    if (onShown != null) __obj.updateDynamic("onShown")(onShown)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
+    if (onClosed != null) __obj.updateDynamic("onClosed")(js.Any.fromFunction1(onClosed))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
+    if (onShown != null) __obj.updateDynamic("onShown")(js.Any.fromFunction1(onShown))
     if (placement != null) __obj.updateDynamic("placement")(placement)
     if (position != null) __obj.updateDynamic("position")(position)
     if (!js.isUndefined(showProgressbar)) __obj.updateDynamic("showProgressbar")(showProgressbar)

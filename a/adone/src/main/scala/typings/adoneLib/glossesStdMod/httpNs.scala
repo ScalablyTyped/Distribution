@@ -59,9 +59,6 @@ object httpNs extends js.Object {
     * Defaults to 8KB. Configurable using the [`--max-http-header-size`][] CLI option.
     */
   val maxHeaderSize: scala.Double = js.native
-  def createClient(): js.Any = js.native
-  def createClient(port: scala.Double): js.Any = js.native
-  def createClient(port: scala.Double, host: java.lang.String): js.Any = js.native
   def createServer(): nodeLib.httpMod.Server = js.native
   def createServer(options: nodeLib.httpMod.ServerOptions): nodeLib.httpMod.Server = js.native
   def createServer(options: nodeLib.httpMod.ServerOptions, requestListener: nodeLib.httpMod.RequestListener): nodeLib.httpMod.Server = js.native

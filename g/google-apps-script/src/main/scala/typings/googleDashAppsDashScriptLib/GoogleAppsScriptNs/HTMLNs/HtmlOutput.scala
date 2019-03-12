@@ -31,28 +31,28 @@ trait HtmlOutput extends js.Object {
 object HtmlOutput {
   @scala.inline
   def apply(
-    addMetaTag: js.Function2[java.lang.String, java.lang.String, HtmlOutput],
-    append: js.Function1[java.lang.String, HtmlOutput],
-    appendUntrusted: js.Function1[java.lang.String, HtmlOutput],
-    asTemplate: js.Function0[HtmlTemplate],
-    clear: js.Function0[HtmlOutput],
-    getAs: js.Function1[java.lang.String, googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob],
-    getBlob: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob],
-    getContent: js.Function0[java.lang.String],
-    getFaviconUrl: js.Function0[java.lang.String],
-    getHeight: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getMetaTags: js.Function0[js.Array[HtmlOutputMetaTag]],
-    getTitle: js.Function0[java.lang.String],
-    getWidth: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    setContent: js.Function1[java.lang.String, HtmlOutput],
-    setFaviconUrl: js.Function1[java.lang.String, HtmlOutput],
-    setHeight: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, HtmlOutput],
-    setSandboxMode: js.Function1[SandboxMode, HtmlOutput],
-    setTitle: js.Function1[java.lang.String, HtmlOutput],
-    setWidth: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, HtmlOutput],
-    setXFrameOptionsMode: js.Function1[XFrameOptionsMode, HtmlOutput]
+    addMetaTag: (java.lang.String, java.lang.String) => HtmlOutput,
+    append: java.lang.String => HtmlOutput,
+    appendUntrusted: java.lang.String => HtmlOutput,
+    asTemplate: () => HtmlTemplate,
+    clear: () => HtmlOutput,
+    getAs: java.lang.String => googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob,
+    getBlob: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob,
+    getContent: () => java.lang.String,
+    getFaviconUrl: () => java.lang.String,
+    getHeight: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getMetaTags: () => js.Array[HtmlOutputMetaTag],
+    getTitle: () => java.lang.String,
+    getWidth: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    setContent: java.lang.String => HtmlOutput,
+    setFaviconUrl: java.lang.String => HtmlOutput,
+    setHeight: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => HtmlOutput,
+    setSandboxMode: SandboxMode => HtmlOutput,
+    setTitle: java.lang.String => HtmlOutput,
+    setWidth: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => HtmlOutput,
+    setXFrameOptionsMode: XFrameOptionsMode => HtmlOutput
   ): HtmlOutput = {
-    val __obj = js.Dynamic.literal(addMetaTag = addMetaTag, append = append, appendUntrusted = appendUntrusted, asTemplate = asTemplate, clear = clear, getAs = getAs, getBlob = getBlob, getContent = getContent, getFaviconUrl = getFaviconUrl, getHeight = getHeight, getMetaTags = getMetaTags, getTitle = getTitle, getWidth = getWidth, setContent = setContent, setFaviconUrl = setFaviconUrl, setHeight = setHeight, setSandboxMode = setSandboxMode, setTitle = setTitle, setWidth = setWidth, setXFrameOptionsMode = setXFrameOptionsMode)
+    val __obj = js.Dynamic.literal(addMetaTag = js.Any.fromFunction2(addMetaTag), append = js.Any.fromFunction1(append), appendUntrusted = js.Any.fromFunction1(appendUntrusted), asTemplate = js.Any.fromFunction0(asTemplate), clear = js.Any.fromFunction0(clear), getAs = js.Any.fromFunction1(getAs), getBlob = js.Any.fromFunction0(getBlob), getContent = js.Any.fromFunction0(getContent), getFaviconUrl = js.Any.fromFunction0(getFaviconUrl), getHeight = js.Any.fromFunction0(getHeight), getMetaTags = js.Any.fromFunction0(getMetaTags), getTitle = js.Any.fromFunction0(getTitle), getWidth = js.Any.fromFunction0(getWidth), setContent = js.Any.fromFunction1(setContent), setFaviconUrl = js.Any.fromFunction1(setFaviconUrl), setHeight = js.Any.fromFunction1(setHeight), setSandboxMode = js.Any.fromFunction1(setSandboxMode), setTitle = js.Any.fromFunction1(setTitle), setWidth = js.Any.fromFunction1(setWidth), setXFrameOptionsMode = js.Any.fromFunction1(setXFrameOptionsMode))
   
     __obj.asInstanceOf[HtmlOutput]
   }

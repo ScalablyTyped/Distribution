@@ -18,8 +18,8 @@ trait ValueObject extends js.Object {
 
 object ValueObject {
   @scala.inline
-  def apply(equals: js.Function1[js.Any, scala.Boolean], hashCode: js.Function0[scala.Double]): ValueObject = {
-    val __obj = js.Dynamic.literal(equals = equals, hashCode = hashCode)
+  def apply(equals: js.Any => scala.Boolean, hashCode: () => scala.Double): ValueObject = {
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), hashCode = js.Any.fromFunction0(hashCode))
   
     __obj.asInstanceOf[ValueObject]
   }

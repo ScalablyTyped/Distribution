@@ -31,11 +31,11 @@ trait ObjectConstructor extends js.Object {
 object ObjectConstructor {
   @scala.inline
   def apply(
-    assign: js.Function2[js.Any, /* repeated */ js.Any, js.Any],
-    is: js.Function2[js.Any, js.Any, scala.Boolean],
-    setPrototypeOf: js.Function2[js.Any, js.Any, js.Any]
+    assign: (js.Any, /* repeated */ js.Any) => js.Any,
+    is: (js.Any, js.Any) => scala.Boolean,
+    setPrototypeOf: (js.Any, js.Any) => js.Any
   ): ObjectConstructor = {
-    val __obj = js.Dynamic.literal(assign = assign, is = is, setPrototypeOf = setPrototypeOf)
+    val __obj = js.Dynamic.literal(assign = js.Any.fromFunction2(assign), is = js.Any.fromFunction2(is), setPrototypeOf = js.Any.fromFunction2(setPrototypeOf))
   
     __obj.asInstanceOf[ObjectConstructor]
   }

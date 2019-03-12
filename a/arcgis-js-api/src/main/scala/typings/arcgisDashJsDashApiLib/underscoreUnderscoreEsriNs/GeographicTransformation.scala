@@ -24,8 +24,8 @@ trait GeographicTransformation extends js.Object {
 
 object GeographicTransformation {
   @scala.inline
-  def apply(getInverse: js.Function0[GeographicTransformation], steps: js.Array[GeographicTransformationStep]): GeographicTransformation = {
-    val __obj = js.Dynamic.literal(getInverse = getInverse, steps = steps)
+  def apply(getInverse: () => GeographicTransformation, steps: js.Array[GeographicTransformationStep]): GeographicTransformation = {
+    val __obj = js.Dynamic.literal(getInverse = js.Any.fromFunction0(getInverse), steps = steps)
   
     __obj.asInstanceOf[GeographicTransformation]
   }

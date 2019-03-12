@@ -13,12 +13,9 @@ trait DeobfuscationfilesResource extends js.Object {
 object DeobfuscationfilesResource {
   @scala.inline
   def apply(
-    upload: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltApkVersionCodeDeobfuscationFileType, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DeobfuscationFilesUploadResponse]
-    ]
+    upload: gapiDotClientDotAndroidpublisherLib.Anon_AltApkVersionCodeDeobfuscationFileType => gapiDotClientLib.gapiNs.clientNs.Request[DeobfuscationFilesUploadResponse]
   ): DeobfuscationfilesResource = {
-    val __obj = js.Dynamic.literal(upload = upload)
+    val __obj = js.Dynamic.literal(upload = js.Any.fromFunction1(upload))
   
     __obj.asInstanceOf[DeobfuscationfilesResource]
   }

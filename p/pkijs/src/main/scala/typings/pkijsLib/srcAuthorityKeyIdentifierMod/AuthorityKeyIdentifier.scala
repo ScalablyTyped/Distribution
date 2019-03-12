@@ -19,12 +19,12 @@ object AuthorityKeyIdentifier {
   def apply(
     authorityCertIssuer: js.Array[pkijsLib.srcAccessDescriptionMod.default],
     authorityCertSerialNumber: asn1jsLib.asn1jsMod.Integer,
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     keyIdentifier: asn1jsLib.asn1jsMod.OctetString,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): AuthorityKeyIdentifier = {
-    val __obj = js.Dynamic.literal(authorityCertIssuer = authorityCertIssuer, authorityCertSerialNumber = authorityCertSerialNumber, fromSchema = fromSchema, keyIdentifier = keyIdentifier, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(authorityCertIssuer = authorityCertIssuer, authorityCertSerialNumber = authorityCertSerialNumber, fromSchema = js.Any.fromFunction1(fromSchema), keyIdentifier = keyIdentifier, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[AuthorityKeyIdentifier]
   }

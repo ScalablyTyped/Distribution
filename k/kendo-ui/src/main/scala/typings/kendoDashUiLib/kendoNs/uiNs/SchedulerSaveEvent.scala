@@ -13,13 +13,13 @@ trait SchedulerSaveEvent extends SchedulerEvent {
 object SchedulerSaveEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Scheduler,
     container: kendoDashUiLib.JQuery = null,
     event: kendoDashUiLib.kendoNs.dataNs.SchedulerEvent = null
   ): SchedulerSaveEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (container != null) __obj.updateDynamic("container")(container)
     if (event != null) __obj.updateDynamic("event")(event)
     __obj.asInstanceOf[SchedulerSaveEvent]

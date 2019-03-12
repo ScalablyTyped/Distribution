@@ -13,12 +13,9 @@ trait CreativeAssetsResource extends js.Object {
 object CreativeAssetsResource {
   @scala.inline
   def apply(
-    insert: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AdvertiserId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CreativeAssetMetadata]
-    ]
+    insert: gapiDotClientDotDfareportingLib.Anon_AdvertiserId => gapiDotClientLib.gapiNs.clientNs.Request[CreativeAssetMetadata]
   ): CreativeAssetsResource = {
-    val __obj = js.Dynamic.literal(insert = insert)
+    val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert))
   
     __obj.asInstanceOf[CreativeAssetsResource]
   }

@@ -69,18 +69,18 @@ trait FuzzyQuery extends Query {
 object FuzzyQuery {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    boost: js.Function1[scala.Double, FuzzyQuery],
-    field: js.Function1[java.lang.String, FuzzyQuery],
-    maxExpansions: js.Function1[scala.Double, FuzzyQuery],
-    minSimilarity: js.Function1[scala.Double, FuzzyQuery],
-    prefixLength: js.Function1[scala.Double, FuzzyQuery],
-    rewrite: js.Function1[java.lang.String, FuzzyQuery],
-    toJSON: js.Function0[js.Any],
-    transpositions: js.Function1[scala.Boolean, FuzzyQuery],
-    value: js.Function1[java.lang.String, FuzzyQuery]
+    _type: () => java.lang.String,
+    boost: scala.Double => FuzzyQuery,
+    field: java.lang.String => FuzzyQuery,
+    maxExpansions: scala.Double => FuzzyQuery,
+    minSimilarity: scala.Double => FuzzyQuery,
+    prefixLength: scala.Double => FuzzyQuery,
+    rewrite: java.lang.String => FuzzyQuery,
+    toJSON: () => js.Any,
+    transpositions: scala.Boolean => FuzzyQuery,
+    value: java.lang.String => FuzzyQuery
   ): FuzzyQuery = {
-    val __obj = js.Dynamic.literal(_type = _type, boost = boost, field = field, maxExpansions = maxExpansions, minSimilarity = minSimilarity, prefixLength = prefixLength, rewrite = rewrite, toJSON = toJSON, transpositions = transpositions, value = value)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), boost = js.Any.fromFunction1(boost), field = js.Any.fromFunction1(field), maxExpansions = js.Any.fromFunction1(maxExpansions), minSimilarity = js.Any.fromFunction1(minSimilarity), prefixLength = js.Any.fromFunction1(prefixLength), rewrite = js.Any.fromFunction1(rewrite), toJSON = js.Any.fromFunction0(toJSON), transpositions = js.Any.fromFunction1(transpositions), value = js.Any.fromFunction1(value))
   
     __obj.asInstanceOf[FuzzyQuery]
   }

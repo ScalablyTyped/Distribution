@@ -10,7 +10,7 @@ trait OnDropData extends js.Object {
   var dragNodesKeys: js.Array[java.lang.String]
   var dropPosition: scala.Double
   var dropToGap: js.UndefOr[scala.Boolean] = js.undefined
-  var event: reactLib.Event
+  var event: stdLib.Event
   var node: InternalTreeNode
 }
 
@@ -20,7 +20,7 @@ object OnDropData {
     dragNode: InternalTreeNode,
     dragNodesKeys: js.Array[java.lang.String],
     dropPosition: scala.Double,
-    event: reactLib.Event,
+    event: stdLib.Event,
     node: InternalTreeNode,
     dropToGap: js.UndefOr[scala.Boolean] = js.undefined
   ): OnDropData = {

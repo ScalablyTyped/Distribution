@@ -11,17 +11,14 @@ import scala.scalajs.js.annotation._
   */
 trait ClipboardFormats extends js.Object {
   /** specifies a sequence of format IDs which are contained in the system clipboard. */
-  var Identifiers: activexDashInteropLib.SafeArray[scala.Double]
+  var Identifiers: stdLib.SafeArray[scala.Double]
   /** specifies a sequence of format names which are contained in the system clipboard. */
-  var Names: activexDashInteropLib.SafeArray[java.lang.String]
+  var Names: stdLib.SafeArray[java.lang.String]
 }
 
 object ClipboardFormats {
   @scala.inline
-  def apply(
-    Identifiers: activexDashInteropLib.SafeArray[scala.Double],
-    Names: activexDashInteropLib.SafeArray[java.lang.String]
-  ): ClipboardFormats = {
+  def apply(Identifiers: stdLib.SafeArray[scala.Double], Names: stdLib.SafeArray[java.lang.String]): ClipboardFormats = {
     val __obj = js.Dynamic.literal(Identifiers = Identifiers, Names = Names)
   
     __obj.asInstanceOf[ClipboardFormats]

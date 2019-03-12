@@ -15,11 +15,7 @@ object ^ extends js.Object {
     */
   val onSignInChanged: js.UndefOr[
     firefoxDashWebextDashBrowserLib.WebExtEvent[
-      js.Function2[
-        /* account */ firefoxDashWebextDashBrowserLib.browserNs.identityNs.AccountInfo, 
-        /* signedIn */ scala.Boolean, 
-        scala.Unit
-      ]
+      js.Function2[/* account */ AccountInfo, /* signedIn */ scala.Boolean, scala.Unit]
     ]
   ] = js.native
   /* identity functions */
@@ -27,17 +23,13 @@ object ^ extends js.Object {
     * Retrieves a list of AccountInfo objects describing the accounts present on the profile.
     * @deprecated Unsupported on Firefox at this time.
     */
-  def getAccounts(): js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.identityNs.AccountInfo]] = js.native
+  def getAccounts(): js.Promise[js.Array[AccountInfo]] = js.native
   /**
     * Gets an OAuth2 access token using the client ID and scopes specified in the oauth2 section of manifest.json.
     * @deprecated Unsupported on Firefox at this time.
     */
-  def getAuthToken(): js.Promise[
-    js.UndefOr[js.Array[firefoxDashWebextDashBrowserLib.browserNs.identityNs.AccountInfo]]
-  ] = js.native
-  def getAuthToken(details: firefoxDashWebextDashBrowserLib.Anon_Account): js.Promise[
-    js.UndefOr[js.Array[firefoxDashWebextDashBrowserLib.browserNs.identityNs.AccountInfo]]
-  ] = js.native
+  def getAuthToken(): js.Promise[js.UndefOr[js.Array[AccountInfo]]] = js.native
+  def getAuthToken(details: firefoxDashWebextDashBrowserLib.Anon_Account): js.Promise[js.UndefOr[js.Array[AccountInfo]]] = js.native
   /**
     * Retrieves email address and obfuscated gaia id of the user signed into a profile.
     * @deprecated Unsupported on Firefox at this time.

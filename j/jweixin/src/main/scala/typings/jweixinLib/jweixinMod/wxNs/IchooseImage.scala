@@ -23,18 +23,18 @@ trait IchooseImage extends BaseParams {
 object IchooseImage {
   @scala.inline
   def apply(
-    cancel: js.Function0[scala.Unit],
-    success: js.Function1[jweixinLib.Anon_ErrMsgLocalIds, scala.Unit],
-    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    cancel: () => scala.Unit,
+    success: jweixinLib.Anon_ErrMsgLocalIds => scala.Unit,
+    complete: /* repeated */ js.Any => scala.Unit = null,
     count: scala.Int | scala.Double = null,
-    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    fail: /* repeated */ js.Any => scala.Unit = null,
     sizeType: js.Array[ImageSizeType] = null,
     sourceType: js.Array[ImageSourceType] = null
   ): IchooseImage = {
-    val __obj = js.Dynamic.literal(cancel = cancel, success = success)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), success = js.Any.fromFunction1(success))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (sizeType != null) __obj.updateDynamic("sizeType")(sizeType)
     if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType)
     __obj.asInstanceOf[IchooseImage]

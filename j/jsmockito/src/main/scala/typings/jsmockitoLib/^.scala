@@ -47,7 +47,7 @@ object ^ extends js.Object {
     * @param Obj {function} the constructor for the object to be mocked
     * @return {object} a mock object
     */
-  def mock[T](Obj: jsmockitoLib.Anon_T[T]): T = js.native
+  def mock[T](Obj: Anon_T[T]): T = js.native
   /**
     * Create a mockable and stubbable anonymous function.
     *

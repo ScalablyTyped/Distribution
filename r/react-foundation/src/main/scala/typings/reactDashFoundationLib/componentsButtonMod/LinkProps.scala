@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 object LinkProps {
   @scala.inline
   def apply(
-    AnchorHTMLAttributes: reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement] = null,
+    AnchorHTMLAttributes: reactLib.reactMod.ReactNs.AnchorHTMLAttributes[stdLib.HTMLAnchorElement] = null,
     ButtonPropsCommon: ButtonPropsCommon = null,
     color: reactDashFoundationLib.enumsMod.ButtonColors = null
   ): LinkProps = {

@@ -21,7 +21,7 @@ trait JSHandle extends SerializableOrJSHandle {
   /**
     * Returns a map with property names as keys and JSHandle instances for the property values.
     */
-  def getProperties(): js.Promise[nodeLib.Map[java.lang.String, JSHandle]]
+  def getProperties(): js.Promise[stdLib.Map[java.lang.String, JSHandle]]
   /**
     * Fetches a single property from the objectHandle.
     * @param propertyName The property to get.
@@ -38,14 +38,14 @@ trait JSHandle extends SerializableOrJSHandle {
 object JSHandle {
   @scala.inline
   def apply(
-    asElement: js.Function0[ElementHandle[stdLib.Element] | scala.Null],
-    dispose: js.Function0[js.Promise[scala.Unit]],
-    executionContext: js.Function0[ExecutionContext],
-    getProperties: js.Function0[js.Promise[nodeLib.Map[java.lang.String, JSHandle]]],
-    getProperty: js.Function1[java.lang.String, js.Promise[JSHandle]],
-    jsonValue: js.Function0[js.Promise[_]]
+    asElement: () => ElementHandle[stdLib.Element] | scala.Null,
+    dispose: () => js.Promise[scala.Unit],
+    executionContext: () => ExecutionContext,
+    getProperties: () => js.Promise[stdLib.Map[java.lang.String, JSHandle]],
+    getProperty: java.lang.String => js.Promise[JSHandle],
+    jsonValue: () => js.Promise[_]
   ): JSHandle = {
-    val __obj = js.Dynamic.literal(asElement = asElement, dispose = dispose, executionContext = executionContext, getProperties = getProperties, getProperty = getProperty, jsonValue = jsonValue)
+    val __obj = js.Dynamic.literal(asElement = js.Any.fromFunction0(asElement), dispose = js.Any.fromFunction0(dispose), executionContext = js.Any.fromFunction0(executionContext), getProperties = js.Any.fromFunction0(getProperties), getProperty = js.Any.fromFunction1(getProperty), jsonValue = js.Any.fromFunction0(jsonValue))
   
     __obj.asInstanceOf[JSHandle]
   }

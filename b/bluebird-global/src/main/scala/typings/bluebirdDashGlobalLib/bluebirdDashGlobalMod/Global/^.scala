@@ -15,6 +15,6 @@ object ^ extends js.Object {
     *
     * @todo See the comment near the top of the file about code marked with #std-lib-copy&paste-to-remove
     */
-  var Promise: bluebirdDashGlobalLib.bluebirdDashGlobalMod.Global.PromiseConstructor = js.native
+  var Promise: PromiseConstructor = js.native
 }
 

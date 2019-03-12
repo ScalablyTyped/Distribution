@@ -22,12 +22,12 @@ trait XModuleUIConfigurationManagerSupplier
 object XModuleUIConfigurationManagerSupplier {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getUIConfigurationManager: js.Function1[java.lang.String, XUIConfigurationManager],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getUIConfigurationManager: java.lang.String => XUIConfigurationManager,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XModuleUIConfigurationManagerSupplier = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getUIConfigurationManager = getUIConfigurationManager, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getUIConfigurationManager = js.Any.fromFunction1(getUIConfigurationManager), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XModuleUIConfigurationManagerSupplier]
   }

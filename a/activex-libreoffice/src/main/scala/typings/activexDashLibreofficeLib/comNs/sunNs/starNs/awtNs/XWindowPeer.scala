@@ -33,19 +33,19 @@ object XWindowPeer {
   @scala.inline
   def apply(
     Toolkit: XToolkit,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    getToolkit: js.Function0[XToolkit],
-    invalidate: js.Function1[scala.Double, scala.Unit],
-    invalidateRect: js.Function2[Rectangle, scala.Double, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    setBackground: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color, scala.Unit],
-    setPointer: js.Function1[XPointer, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    dispose: () => scala.Unit,
+    getToolkit: () => XToolkit,
+    invalidate: scala.Double => scala.Unit,
+    invalidateRect: (Rectangle, scala.Double) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    setBackground: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color => scala.Unit,
+    setPointer: XPointer => scala.Unit
   ): XWindowPeer = {
-    val __obj = js.Dynamic.literal(Toolkit = Toolkit, acquire = acquire, addEventListener = addEventListener, dispose = dispose, getToolkit = getToolkit, invalidate = invalidate, invalidateRect = invalidateRect, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setBackground = setBackground, setPointer = setPointer)
+    val __obj = js.Dynamic.literal(Toolkit = Toolkit, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), dispose = js.Any.fromFunction0(dispose), getToolkit = js.Any.fromFunction0(getToolkit), invalidate = js.Any.fromFunction1(invalidate), invalidateRect = js.Any.fromFunction2(invalidateRect), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), setBackground = js.Any.fromFunction1(setBackground), setPointer = js.Any.fromFunction1(setPointer))
   
     __obj.asInstanceOf[XWindowPeer]
   }

@@ -17,11 +17,11 @@ trait DynamicLibrary extends js.Object {
 object DynamicLibrary {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Double],
-    error: js.Function0[java.lang.String],
-    get: js.Function1[java.lang.String, ffiDashNapiLib.Buffer]
+    close: () => scala.Double,
+    error: () => java.lang.String,
+    get: java.lang.String => ffiDashNapiLib.Buffer
   ): DynamicLibrary = {
-    val __obj = js.Dynamic.literal(close = close, error = error, get = get)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), error = js.Any.fromFunction0(error), get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[DynamicLibrary]
   }

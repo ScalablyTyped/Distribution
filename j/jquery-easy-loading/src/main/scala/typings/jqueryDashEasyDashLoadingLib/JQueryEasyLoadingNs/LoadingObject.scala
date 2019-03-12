@@ -60,18 +60,18 @@ trait LoadingObject extends js.Object {
 object LoadingObject {
   @scala.inline
   def apply(
-    active: js.Function0[scala.Boolean],
-    attachMethodsToExternalEvents: js.Function0[scala.Unit],
-    attachOptionsHandlers: js.Function0[scala.Unit],
-    calcZIndex: js.Function0[scala.Double],
-    createOerlay: js.Function0[jqueryDashEasyDashLoadingLib.JQuery],
-    init: js.Function0[scala.Unit],
-    resize: js.Function0[scala.Unit],
-    start: js.Function0[scala.Unit],
-    stop: js.Function0[scala.Unit],
-    toggle: js.Function0[scala.Unit]
+    active: () => scala.Boolean,
+    attachMethodsToExternalEvents: () => scala.Unit,
+    attachOptionsHandlers: () => scala.Unit,
+    calcZIndex: () => scala.Double,
+    createOerlay: () => jqueryDashEasyDashLoadingLib.JQuery,
+    init: () => scala.Unit,
+    resize: () => scala.Unit,
+    start: () => scala.Unit,
+    stop: () => scala.Unit,
+    toggle: () => scala.Unit
   ): LoadingObject = {
-    val __obj = js.Dynamic.literal(active = active, attachMethodsToExternalEvents = attachMethodsToExternalEvents, attachOptionsHandlers = attachOptionsHandlers, calcZIndex = calcZIndex, createOerlay = createOerlay, init = init, resize = resize, start = start, stop = stop, toggle = toggle)
+    val __obj = js.Dynamic.literal(active = js.Any.fromFunction0(active), attachMethodsToExternalEvents = js.Any.fromFunction0(attachMethodsToExternalEvents), attachOptionsHandlers = js.Any.fromFunction0(attachOptionsHandlers), calcZIndex = js.Any.fromFunction0(calcZIndex), createOerlay = js.Any.fromFunction0(createOerlay), init = js.Any.fromFunction0(init), resize = js.Any.fromFunction0(resize), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), toggle = js.Any.fromFunction0(toggle))
   
     __obj.asInstanceOf[LoadingObject]
   }

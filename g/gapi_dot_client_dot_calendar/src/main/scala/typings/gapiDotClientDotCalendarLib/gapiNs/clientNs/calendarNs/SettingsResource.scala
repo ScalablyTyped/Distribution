@@ -17,20 +17,11 @@ trait SettingsResource extends js.Object {
 object SettingsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotCalendarLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Setting]
-    ],
-    list: js.Function1[
-      gapiDotClientDotCalendarLib.Anon_AltFieldsKeyMaxResults, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Settings]
-    ],
-    watch: js.Function1[
-      gapiDotClientDotCalendarLib.Anon_AltFieldsKeyMaxResults, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Channel]
-    ]
+    get: gapiDotClientDotCalendarLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Setting],
+    list: gapiDotClientDotCalendarLib.Anon_AltFieldsKeyMaxResults => gapiDotClientLib.gapiNs.clientNs.Request[Settings],
+    watch: gapiDotClientDotCalendarLib.Anon_AltFieldsKeyMaxResults => gapiDotClientLib.gapiNs.clientNs.Request[Channel]
   ): SettingsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list, watch = watch)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), watch = js.Any.fromFunction1(watch))
   
     __obj.asInstanceOf[SettingsResource]
   }

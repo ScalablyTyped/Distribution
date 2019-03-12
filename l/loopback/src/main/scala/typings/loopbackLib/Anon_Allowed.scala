@@ -29,7 +29,7 @@ trait Anon_Allowed
     modelId: js.Any,
     sharedMethod: js.Any,
     ctx: js.Any,
-    callback: js.Function2[/* err */ java.lang.String | nodeLib.Error, /* allowed */ scala.Boolean, scala.Unit]
+    callback: js.Function2[/* err */ java.lang.String | stdLib.Error, /* allowed */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Disable remote invocation for the method with the given name
@@ -54,7 +54,7 @@ trait Anon_Allowed
     */
   def getApp(
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* app */ loopbackLib.loopbackMod.lNs.Application, 
       scala.Unit
     ]

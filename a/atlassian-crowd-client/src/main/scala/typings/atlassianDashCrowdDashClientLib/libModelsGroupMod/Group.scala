@@ -19,10 +19,10 @@ object Group {
     active: scala.Boolean,
     description: java.lang.String,
     groupname: java.lang.String,
-    toCrowd: js.Function0[GroupObj],
+    toCrowd: () => GroupObj,
     attributes: js.Any = null
   ): Group = {
-    val __obj = js.Dynamic.literal(active = active, description = description, groupname = groupname, toCrowd = toCrowd)
+    val __obj = js.Dynamic.literal(active = active, description = description, groupname = groupname, toCrowd = js.Any.fromFunction0(toCrowd))
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     __obj.asInstanceOf[Group]
   }

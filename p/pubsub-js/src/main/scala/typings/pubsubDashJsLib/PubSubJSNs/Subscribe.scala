@@ -11,8 +11,8 @@ trait Subscribe extends js.Object {
 
 object Subscribe {
   @scala.inline
-  def apply(subscribe: js.Function2[js.Any, js.Function, js.Any]): Subscribe = {
-    val __obj = js.Dynamic.literal(subscribe = subscribe)
+  def apply(subscribe: (js.Any, js.Function) => js.Any): Subscribe = {
+    val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction2(subscribe))
   
     __obj.asInstanceOf[Subscribe]
   }

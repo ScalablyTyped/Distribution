@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.loaders")
 @js.native
 object ^ extends js.Object {
-  val shared: pixiDotJsLib.PIXINs.loadersNs.Loader = js.native
+  val shared: Loader = js.native
 }
 

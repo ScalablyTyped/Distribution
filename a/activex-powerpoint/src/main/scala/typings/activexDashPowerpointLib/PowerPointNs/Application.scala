@@ -14,11 +14,11 @@ class Application protected () extends js.Object {
   val ActivePrinter: java.lang.String = js.native
   val ActiveProtectedViewWindow: ProtectedViewWindow = js.native
   val ActiveWindow: DocumentWindow = js.native
-  val AddIns: AddIns = js.native
+  val AddIns: activexDashPowerpointLib.PowerPointNs.AddIns = js.native
   val AnswerWizard: activexDashOfficeLib.OfficeNs.AnswerWizard = js.native
   val Assistance: activexDashOfficeLib.OfficeNs.IAssistance = js.native
   val Assistant: activexDashOfficeLib.OfficeNs.Assistant = js.native
-  val AutoCorrect: AutoCorrect = js.native
+  val AutoCorrect: activexDashPowerpointLib.PowerPointNs.AutoCorrect = js.native
   var AutomationSecurity: activexDashOfficeLib.OfficeNs.MsoAutomationSecurity = js.native
   val Build: java.lang.String = js.native
   @JSName("COMAddIns")
@@ -27,13 +27,13 @@ class Application protected () extends js.Object {
   @JSName("CommandBars")
   val CommandBars_Original: activexDashOfficeLib.OfficeNs.CommandBars = js.native
   val Creator: scala.Double = js.native
-  val DefaultWebOptions: DefaultWebOptions = js.native
+  val DefaultWebOptions: activexDashPowerpointLib.PowerPointNs.DefaultWebOptions = js.native
   val Dialogs: js.Any = js.native
   var DisplayAlerts: PpAlertLevel = js.native
   var DisplayDocumentInformationPanel: scala.Boolean = js.native
   var DisplayGridLines: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   var FeatureInstall: activexDashOfficeLib.OfficeNs.MsoFeatureInstall = js.native
-  val FileConverters: FileConverters = js.native
+  val FileConverters: activexDashPowerpointLib.PowerPointNs.FileConverters = js.native
   val FileFind: activexDashOfficeLib.OfficeNs.IFind = js.native
   val FileSearch: activexDashOfficeLib.OfficeNs.FileSearch = js.native
   var FileValidation: activexDashOfficeLib.OfficeNs.MsoFileValidationMode = js.native
@@ -46,16 +46,16 @@ class Application protected () extends js.Object {
   val Name: java.lang.String = js.native
   val NewPresentation: activexDashOfficeLib.OfficeNs.NewFile = js.native
   val OperatingSystem: java.lang.String = js.native
-  val Options: Options = js.native
+  val Options: activexDashPowerpointLib.PowerPointNs.Options = js.native
   val Path: java.lang.String = js.native
   var `PowerPoint.Application_typekey`: Application = js.native
-  val Presentations: Presentations = js.native
+  val Presentations: activexDashPowerpointLib.PowerPointNs.Presentations = js.native
   val ProductCode: java.lang.String = js.native
-  val ProtectedViewWindows: ProtectedViewWindows = js.native
-  val ResampleMediaTasks: ResampleMediaTasks = js.native
+  val ProtectedViewWindows: activexDashPowerpointLib.PowerPointNs.ProtectedViewWindows = js.native
+  val ResampleMediaTasks: activexDashPowerpointLib.PowerPointNs.ResampleMediaTasks = js.native
   var ShowStartupDialog: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   var ShowWindowsInTaskbar: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
-  val SlideShowWindows: SlideShowWindows = js.native
+  val SlideShowWindows: activexDashPowerpointLib.PowerPointNs.SlideShowWindows = js.native
   @JSName("SmartArtColors")
   val SmartArtColors_Original: activexDashOfficeLib.OfficeNs.SmartArtColors = js.native
   @JSName("SmartArtLayouts")

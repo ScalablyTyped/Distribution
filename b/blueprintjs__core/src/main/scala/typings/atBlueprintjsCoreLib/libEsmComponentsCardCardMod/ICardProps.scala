@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because var conflicts: className. Inlined  */ trait ICardProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] {
   /**
     * Controls the intensity of the drop shadow beneath the card: the higher
     * the elevation, the higher the drop shadow. At elevation `0`, no drop
@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation._
   @JSName("onClick")
   var onClick_ICardProps: js.UndefOr[
     js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -42,21 +42,18 @@ import scala.scalajs.js.annotation._
 object ICardProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
     IProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps = null,
     elevation: atBlueprintjsCoreLib.libEsmCommonElevationMod.Elevation = null,
     interactive: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null
+    onClick: /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent] => scala.Unit = null
   ): ICardProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     js.Dynamic.global.Object.assign(__obj, IProps)
     if (elevation != null) __obj.updateDynamic("elevation")(elevation)
     if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     __obj.asInstanceOf[ICardProps]
   }
 }

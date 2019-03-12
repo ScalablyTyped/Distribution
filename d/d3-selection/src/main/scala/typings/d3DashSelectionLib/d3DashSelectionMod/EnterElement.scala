@@ -17,14 +17,14 @@ trait EnterElement extends js.Object {
 object EnterElement {
   @scala.inline
   def apply(
-    appendChild: js.Function1[stdLib.Node, stdLib.Node],
-    insertBefore: js.Function2[stdLib.Node, stdLib.Node, stdLib.Node],
+    appendChild: stdLib.Node => stdLib.Node,
+    insertBefore: (stdLib.Node, stdLib.Node) => stdLib.Node,
     namespaceURI: java.lang.String,
     ownerDocument: stdLib.Document,
-    querySelector: js.Function1[java.lang.String, stdLib.Element],
-    querySelectorAll: js.Function1[java.lang.String, stdLib.NodeListOf[stdLib.Element]]
+    querySelector: java.lang.String => stdLib.Element,
+    querySelectorAll: java.lang.String => stdLib.NodeListOf[stdLib.Element]
   ): EnterElement = {
-    val __obj = js.Dynamic.literal(appendChild = appendChild, insertBefore = insertBefore, namespaceURI = namespaceURI, ownerDocument = ownerDocument, querySelector = querySelector, querySelectorAll = querySelectorAll)
+    val __obj = js.Dynamic.literal(appendChild = js.Any.fromFunction1(appendChild), insertBefore = js.Any.fromFunction2(insertBefore), namespaceURI = namespaceURI, ownerDocument = ownerDocument, querySelector = js.Any.fromFunction1(querySelector), querySelectorAll = js.Any.fromFunction1(querySelectorAll))
   
     __obj.asInstanceOf[EnterElement]
   }

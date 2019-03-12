@@ -90,53 +90,31 @@ trait TernOptions extends js.Object {
 object TernOptions {
   @scala.inline
   def apply(
-    completionTip: js.Function1[
-      /* data */ ternLib.libTernMod.CompletionsQueryResult, 
-      java.lang.String | stdLib.HTMLElement | scala.Null
-    ] = null,
+    completionTip: /* data */ ternLib.libTernMod.CompletionsQueryResult => java.lang.String | stdLib.HTMLElement | scala.Null = null,
     defs: js.Array[ternLib.libTernMod.Def] = null,
-    fileFilter: js.Function3[
-      /* value */ java.lang.String, 
-      /* docName */ java.lang.String, 
-      /* doc */ Doc, 
-      java.lang.String
-    ] = null,
-    getFile: js.Function2[
-      /* name */ java.lang.String, 
-      /* callback */ js.Function1[/* doc */ Doc | scala.Null, _], 
-      _
-    ] = null,
+    fileFilter: (/* value */ java.lang.String, /* docName */ java.lang.String, /* doc */ Doc) => java.lang.String = null,
+    getFile: (/* name */ java.lang.String, /* callback */ js.Function1[/* doc */ Doc | scala.Null, _]) => _ = null,
     plugins: org.scalablytyped.runtime.StringDictionary[js.Object] = null,
-    responseFilter: js.Function5[
-      /* doc */ Doc, 
-      /* query */ ternLib.libTernMod.Query, 
-      /* request */ ternLib.libTernMod.Document, 
-      /* error */ js.UndefOr[stdLib.Error], 
-      /* data */ js.UndefOr[
-        /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[any]['result'] */ js.Any
-      ], 
-      _
-    ] = null,
-    showError: js.Function2[/* editor */ Editor, /* message */ stdLib.Error, _] = null,
-    switchToDoc: js.Function2[/* name */ java.lang.String, /* doc */ Doc, _] = null,
-    typeTip: js.Function1[
-      /* data */ ternLib.libTernMod.TypeQueryResult, 
-      java.lang.String | stdLib.HTMLElement | scala.Null
-    ] = null,
+    responseFilter: (/* doc */ Doc, /* query */ ternLib.libTernMod.Query, /* request */ ternLib.libTernMod.Document, /* error */ js.UndefOr[stdLib.Error], /* data */ js.UndefOr[
+      /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[any]['result'] */ js.Any
+    ]) => _ = null,
+    showError: (/* editor */ Editor, /* message */ stdLib.Error) => _ = null,
+    switchToDoc: (/* name */ java.lang.String, /* doc */ Doc) => _ = null,
+    typeTip: /* data */ ternLib.libTernMod.TypeQueryResult => java.lang.String | stdLib.HTMLElement | scala.Null = null,
     useWorker: js.UndefOr[scala.Boolean] = js.undefined,
     workerDeps: js.Array[java.lang.String] = null,
     workerScript: java.lang.String = null
   ): TernOptions = {
     val __obj = js.Dynamic.literal()
-    if (completionTip != null) __obj.updateDynamic("completionTip")(completionTip)
+    if (completionTip != null) __obj.updateDynamic("completionTip")(js.Any.fromFunction1(completionTip))
     if (defs != null) __obj.updateDynamic("defs")(defs)
-    if (fileFilter != null) __obj.updateDynamic("fileFilter")(fileFilter)
-    if (getFile != null) __obj.updateDynamic("getFile")(getFile)
+    if (fileFilter != null) __obj.updateDynamic("fileFilter")(js.Any.fromFunction3(fileFilter))
+    if (getFile != null) __obj.updateDynamic("getFile")(js.Any.fromFunction2(getFile))
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (responseFilter != null) __obj.updateDynamic("responseFilter")(responseFilter)
-    if (showError != null) __obj.updateDynamic("showError")(showError)
-    if (switchToDoc != null) __obj.updateDynamic("switchToDoc")(switchToDoc)
-    if (typeTip != null) __obj.updateDynamic("typeTip")(typeTip)
+    if (responseFilter != null) __obj.updateDynamic("responseFilter")(js.Any.fromFunction5(responseFilter))
+    if (showError != null) __obj.updateDynamic("showError")(js.Any.fromFunction2(showError))
+    if (switchToDoc != null) __obj.updateDynamic("switchToDoc")(js.Any.fromFunction2(switchToDoc))
+    if (typeTip != null) __obj.updateDynamic("typeTip")(js.Any.fromFunction1(typeTip))
     if (!js.isUndefined(useWorker)) __obj.updateDynamic("useWorker")(useWorker)
     if (workerDeps != null) __obj.updateDynamic("workerDeps")(workerDeps)
     if (workerScript != null) __obj.updateDynamic("workerScript")(workerScript)

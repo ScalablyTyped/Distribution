@@ -15,12 +15,12 @@ trait ITransports extends js.Object {
 object ITransports {
   @scala.inline
   def apply(
-    get: js.Function1[java.lang.String, js.Any],
-    isRegistered: js.Function1[java.lang.String, scala.Boolean],
-    list: js.Function0[js.Array[java.lang.String]],
-    register: js.Function2[java.lang.String, js.Any, scala.Unit]
+    get: java.lang.String => js.Any,
+    isRegistered: java.lang.String => scala.Boolean,
+    list: () => js.Array[java.lang.String],
+    register: (java.lang.String, js.Any) => scala.Unit
   ): ITransports = {
-    val __obj = js.Dynamic.literal(get = get, isRegistered = isRegistered, list = list, register = register)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), isRegistered = js.Any.fromFunction1(isRegistered), list = js.Any.fromFunction0(list), register = js.Any.fromFunction2(register))
   
     __obj.asInstanceOf[ITransports]
   }

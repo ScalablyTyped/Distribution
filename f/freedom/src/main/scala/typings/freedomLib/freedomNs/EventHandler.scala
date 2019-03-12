@@ -18,11 +18,11 @@ trait EventHandler extends js.Object {
 object EventHandler {
   @scala.inline
   def apply(
-    off: js.Function2[java.lang.String, js.Function, scala.Unit],
-    on: js.Function2[java.lang.String, js.Function, scala.Unit],
-    once: js.Function2[java.lang.String, js.Function, scala.Unit]
+    off: (java.lang.String, js.Function) => scala.Unit,
+    on: (java.lang.String, js.Function) => scala.Unit,
+    once: (java.lang.String, js.Function) => scala.Unit
   ): EventHandler = {
-    val __obj = js.Dynamic.literal(off = off, on = on, once = once)
+    val __obj = js.Dynamic.literal(off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), once = js.Any.fromFunction2(once))
   
     __obj.asInstanceOf[EventHandler]
   }

@@ -42,7 +42,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The unique identifier of the skill.
       */
-    var SkillId: SkillId
+    var SkillId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillId
   }
   
   trait ApproveSkillResponse extends js.Object
@@ -94,7 +94,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The unique identifier of the skill.
       */
-    var SkillId: SkillId
+    var SkillId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillId
   }
   
   trait AssociateSkillWithSkillGroupResponse extends js.Object
@@ -103,7 +103,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The private skill ID you want to make available to enrolled users.
       */
-    var SkillId: SkillId
+    var SkillId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillId
   }
   
   trait AssociateSkillWithUsersResponse extends js.Object
@@ -360,11 +360,11 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The name of the conference provider.
       */
-    var ConferenceProviderName: ConferenceProviderName
+    var ConferenceProviderName: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ConferenceProviderName
     /**
       * Represents a type within a list of predefined types.
       */
-    var ConferenceProviderType: ConferenceProviderType
+    var ConferenceProviderType: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ConferenceProviderType
     /**
       * The IP endpoint and protocol for calling.
       */
@@ -372,7 +372,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The meeting settings for the conference provider.
       */
-    var MeetingSetting: MeetingSetting
+    var MeetingSetting: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.MeetingSetting
     /**
       * The information for PSTN conferencing.
       */
@@ -420,7 +420,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The valid address for the room.
       */
-    var Address: Address
+    var Address: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Address
     /**
       * The user-specified token that is used during the creation of a profile.
       */
@@ -428,7 +428,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The distance unit to be used by devices in the profile.
       */
-    var DistanceUnit: DistanceUnit
+    var DistanceUnit: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DistanceUnit
     /**
       * The maximum volume limit for a room profile.
       */
@@ -440,7 +440,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The name of a room profile.
       */
-    var ProfileName: ProfileName
+    var ProfileName: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ProfileName
     /**
       * Whether room profile setup is enabled.
       */
@@ -448,15 +448,15 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The temperature unit to be used by devices in the profile.
       */
-    var TemperatureUnit: TemperatureUnit
+    var TemperatureUnit: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.TemperatureUnit
     /**
       * The time zone used by a room profile.
       */
-    var Timezone: Timezone
+    var Timezone: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Timezone
     /**
       * A wake word for Alexa, Echo, Amazon, or a computer.
       */
-    var WakeWord: WakeWord
+    var WakeWord: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.WakeWord
   }
   
   trait CreateProfileResponse extends js.Object {
@@ -486,7 +486,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The name for the room.
       */
-    var RoomName: RoomName
+    var RoomName: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RoomName
     /**
       * The tags for the room.
       */
@@ -512,7 +512,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The name for the skill group.
       */
-    var SkillGroupName: SkillGroupName
+    var SkillGroupName: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillGroupName
   }
   
   trait CreateSkillGroupResponse extends js.Object {
@@ -631,7 +631,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The ID of the skill from which to remove the room skill parameter details.
       */
-    var SkillId: SkillId
+    var SkillId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillId
   }
   
   trait DeleteRoomSkillParameterResponse extends js.Object
@@ -644,7 +644,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The unique identifier of a skill.
       */
-    var SkillId: SkillId
+    var SkillId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillId
   }
   
   trait DeleteSkillAuthorizationResponse extends js.Object
@@ -662,7 +662,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The ARN of the user's enrollment in the organization. Required.
       */
-    var EnrollmentId: EnrollmentId
+    var EnrollmentId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.EnrollmentId
     /**
       * The ARN of the user to delete in the organization. Required.
       */
@@ -835,7 +835,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The ARN of a skill group to associate to a skill.
       */
-    var SkillId: SkillId
+    var SkillId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillId
   }
   
   trait DisassociateSkillFromSkillGroupResponse extends js.Object
@@ -844,7 +844,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       *  The private skill ID you want to make unavailable for enrolled users.
       */
-    var SkillId: SkillId
+    var SkillId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillId
   }
   
   trait DisassociateSkillFromUsersResponse extends js.Object
@@ -1004,7 +1004,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The ARN of the skill from which to get the room skill parameter details. Required.
       */
-    var SkillId: SkillId
+    var SkillId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillId
   }
   
   trait GetRoomSkillParameterResponse extends js.Object {
@@ -1032,11 +1032,11 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The protocol, including SIP, SIPS, and H323.
       */
-    var CommsProtocol: CommsProtocol
+    var CommsProtocol: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CommsProtocol
     /**
       * The IP address.
       */
-    var Endpoint: Endpoint
+    var Endpoint: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Endpoint
   }
   
   trait ListBusinessReportSchedulesRequest extends js.Object {
@@ -1173,7 +1173,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The category ID for which the skills are being retrieved from the skill store.
       */
-    var CategoryId: CategoryId
+    var CategoryId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CategoryId
     /**
       * The maximum number of skills returned per paginated calls.
       */
@@ -1225,7 +1225,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The ARN of the specified resource for which to list tags.
       */
-    var Arn: Arn
+    var Arn: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Arn
     /**
       * The maximum number of results to include in the response. If more results exist than the specified MaxResults value, a token is included in the response so that the remaining results can be retrieved.
       */
@@ -1251,22 +1251,22 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The values that indicate whether the pin is always required.
       */
-    var RequirePin: RequirePin
+    var RequirePin: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RequirePin
   }
   
   trait PSTNDialIn extends js.Object {
     /**
       * The zip code.
       */
-    var CountryCode: CountryCode
+    var CountryCode: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CountryCode
     /**
       * The delay duration before Alexa enters the conference ID with dual-tone multi-frequency (DTMF). Each number on the dial pad corresponds to a DTMF tone, which is how we send data over the telephone network.
       */
-    var OneClickIdDelay: OneClickIdDelay
+    var OneClickIdDelay: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.OneClickIdDelay
     /**
       * The delay duration before Alexa enters the conference pin with dual-tone multi-frequency (DTMF). Each number on the dial pad corresponds to a DTMF tone, which is how we send data over the telephone network.
       */
-    var OneClickPinDelay: OneClickPinDelay
+    var OneClickPinDelay: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.OneClickPinDelay
     /**
       * The phone number to call to join the conference.
       */
@@ -1363,7 +1363,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The conference preference of a specific conference provider.
       */
-    var ConferencePreference: ConferencePreference
+    var ConferencePreference: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ConferencePreference
   }
   
   trait PutConferencePreferenceResponse extends js.Object
@@ -1376,7 +1376,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The name of the organization sending the enrollment invite to a user.
       */
-    var OrganizationName: OrganizationName
+    var OrganizationName: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.OrganizationName
     /**
       * The list of private skill IDs that you want to recommend to the user to enable in the invitation.
       */
@@ -1393,11 +1393,11 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The updated room skill parameter. Required.
       */
-    var RoomSkillParameter: RoomSkillParameter
+    var RoomSkillParameter: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RoomSkillParameter
     /**
       * The ARN of the skill associated with the room skill parameter. Required.
       */
-    var SkillId: SkillId
+    var SkillId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillId
   }
   
   trait PutRoomSkillParameterResponse extends js.Object
@@ -1406,7 +1406,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The authorization result specific to OAUTH code grant output. "Code” must be populated in the AuthorizationResult map to establish the authorization.
       */
-    var AuthorizationResult: AuthorizationResult
+    var AuthorizationResult: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.AuthorizationResult
     /**
       * The room that the skill is authorized for.
       */
@@ -1414,7 +1414,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The unique identifier of a skill.
       */
-    var SkillId: SkillId
+    var SkillId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillId
   }
   
   trait PutSkillAuthorizationResponse extends js.Object
@@ -1423,11 +1423,11 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The device type ID for your AVS device generated by Amazon when the OEM creates a new product on Amazon's Developer Console.
       */
-    var AmazonId: AmazonId
+    var AmazonId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.AmazonId
     /**
       * The client ID of the OEM used for code-based linking authorization on an AVS device.
       */
-    var ClientId: ClientId
+    var ClientId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ClientId
     /**
       * The key generated by the OEM that uniquely identifies a specified instance of your AVS device.
       */
@@ -1435,11 +1435,11 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The product ID used to identify your AVS device during authorization.
       */
-    var ProductId: ProductId
+    var ProductId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ProductId
     /**
       * The code that is obtained after your AVS device has made a POST request to LWA as a part of the Device Authorization Request component of the OAuth code-based linking specification.
       */
-    var UserCode: UserCode
+    var UserCode: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UserCode
   }
   
   trait RegisterAVSDeviceResponse extends js.Object {
@@ -1453,7 +1453,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The unique identifier of the skill.
       */
-    var SkillId: SkillId
+    var SkillId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillId
   }
   
   trait RejectSkillResponse extends js.Object
@@ -1462,11 +1462,11 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The ARN of the skill that was requested. Required.
       */
-    var SkillId: SkillId
+    var SkillId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillId
     /**
       * The ARN of the user. Required.
       */
-    var UserId: UserId
+    var UserId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UserId
   }
   
   trait ResolveRoomResponse extends js.Object {
@@ -1969,7 +1969,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * Request structure to start the device sync. Required.
       */
-    var Features: Features
+    var Features: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Features
     /**
       * The ARN of the room with which the device to sync is associated. Required.
       */
@@ -2002,7 +2002,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The ARN of the resource to which to add metadata tags. Required. 
       */
-    var Arn: Arn
+    var Arn: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Arn
     /**
       * The tags to be added to the specified resource. Do not provide system tags. Required. 
       */
@@ -3785,7 +3785,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The ARN of the resource from which to remove metadata tags. Required. 
       */
-    var Arn: Arn
+    var Arn: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Arn
     /**
       * The tags to be removed from the specified resource. Do not provide system tags. Required. 
       */
@@ -3848,7 +3848,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The type of the conference provider.
       */
-    var ConferenceProviderType: ConferenceProviderType
+    var ConferenceProviderType: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ConferenceProviderType
     /**
       * The IP endpoint and protocol for calling.
       */
@@ -3856,7 +3856,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
       * The meeting settings for the conference provider.
       */
-    var MeetingSetting: MeetingSetting
+    var MeetingSetting: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.MeetingSetting
     /**
       * The information for PSTN conferencing.
       */

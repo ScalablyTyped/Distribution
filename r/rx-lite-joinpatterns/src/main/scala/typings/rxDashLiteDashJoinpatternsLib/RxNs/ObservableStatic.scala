@@ -11,8 +11,8 @@ trait ObservableStatic extends js.Object {
 
 object ObservableStatic {
   @scala.inline
-  def apply(when: js.Function1[Plan[js.Any], Observable[js.Any]]): ObservableStatic = {
-    val __obj = js.Dynamic.literal(when = when)
+  def apply(when: Plan[js.Any] => Observable[js.Any]): ObservableStatic = {
+    val __obj = js.Dynamic.literal(when = js.Any.fromFunction1(when))
   
     __obj.asInstanceOf[ObservableStatic]
   }

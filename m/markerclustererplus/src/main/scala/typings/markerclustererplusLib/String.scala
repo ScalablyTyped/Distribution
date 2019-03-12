@@ -11,8 +11,8 @@ trait String extends js.Object {
 
 object String {
   @scala.inline
-  def apply(trim: js.Function0[java.lang.String]): String = {
-    val __obj = js.Dynamic.literal(trim = trim)
+  def apply(trim: () => java.lang.String): String = {
+    val __obj = js.Dynamic.literal(trim = js.Any.fromFunction0(trim))
   
     __obj.asInstanceOf[String]
   }

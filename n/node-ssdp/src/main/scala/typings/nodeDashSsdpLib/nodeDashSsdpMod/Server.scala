@@ -41,7 +41,7 @@ class Server () extends Base {
   	 * @returns promise when socket.bind is ready
   	 */
   def start(): scala.Unit | js.Promise[scala.Unit] = js.native
-  def start(cb: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit | js.Promise[scala.Unit] = js.native
+  def start(cb: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit | js.Promise[scala.Unit] = js.native
   /**
   	 * Advertise shutdown and close UDP socket.
   	 */

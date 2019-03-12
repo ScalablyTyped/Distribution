@@ -33,19 +33,19 @@ trait IRecord extends js.Object {
 object IRecord {
   @scala.inline
   def apply(
-    AddFieldValue: js.Function2[java.lang.String, js.Any, scala.Unit],
-    GetDataValue: js.Function1[java.lang.String, js.Any],
-    GetLocalizedValue: js.Function1[java.lang.String, java.lang.String],
-    GetProp: js.Function1[java.lang.String, IPropertyBase],
-    HasDataValue: js.Function1[java.lang.String, scala.Boolean],
-    HasLocalizedValue: js.Function1[java.lang.String, scala.Boolean],
-    RemoveFieldValue: js.Function1[java.lang.String, scala.Unit],
-    SetProp: js.Function2[java.lang.String, IPropertyBase, scala.Unit],
+    AddFieldValue: (java.lang.String, js.Any) => scala.Unit,
+    GetDataValue: java.lang.String => js.Any,
+    GetLocalizedValue: java.lang.String => java.lang.String,
+    GetProp: java.lang.String => IPropertyBase,
+    HasDataValue: java.lang.String => scala.Boolean,
+    HasLocalizedValue: java.lang.String => scala.Boolean,
+    RemoveFieldValue: java.lang.String => scala.Unit,
+    SetProp: (java.lang.String, IPropertyBase) => scala.Unit,
     bIsNewRow: scala.Boolean,
-    key: js.Function0[scala.Double],
+    key: () => scala.Double,
     properties: org.scalablytyped.runtime.StringDictionary[IPropertyBase]
   ): IRecord = {
-    val __obj = js.Dynamic.literal(AddFieldValue = AddFieldValue, GetDataValue = GetDataValue, GetLocalizedValue = GetLocalizedValue, GetProp = GetProp, HasDataValue = HasDataValue, HasLocalizedValue = HasLocalizedValue, RemoveFieldValue = RemoveFieldValue, SetProp = SetProp, bIsNewRow = bIsNewRow, key = key, properties = properties)
+    val __obj = js.Dynamic.literal(AddFieldValue = js.Any.fromFunction2(AddFieldValue), GetDataValue = js.Any.fromFunction1(GetDataValue), GetLocalizedValue = js.Any.fromFunction1(GetLocalizedValue), GetProp = js.Any.fromFunction1(GetProp), HasDataValue = js.Any.fromFunction1(HasDataValue), HasLocalizedValue = js.Any.fromFunction1(HasLocalizedValue), RemoveFieldValue = js.Any.fromFunction1(RemoveFieldValue), SetProp = js.Any.fromFunction2(SetProp), bIsNewRow = bIsNewRow, key = js.Any.fromFunction0(key), properties = properties)
   
     __obj.asInstanceOf[IRecord]
   }

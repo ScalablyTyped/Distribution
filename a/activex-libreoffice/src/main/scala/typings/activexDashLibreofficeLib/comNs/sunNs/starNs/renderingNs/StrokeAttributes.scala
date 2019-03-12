@@ -19,7 +19,7 @@ trait StrokeAttributes extends js.Object {
     * forth. Give zero elements here for solid strokes. This array always have an even number of elements, with zero, as usual, counting as even here.
     * Furthermore, each entry in this array must have a value that is positive (or 0.0)
     */
-  var DashArray: activexDashInteropLib.SafeArray[scala.Double]
+  var DashArray: stdLib.SafeArray[scala.Double]
   /**
     * The end shape of the stroke.
     *
@@ -44,7 +44,7 @@ trait StrokeAttributes extends js.Object {
     * path to the end point. The second element specifies the space between the first line and the second line, and so forth. If the array ends with a
     * spacing, this spacing is included in the total width of the multiple-line stroke. That is, the stroke becomes asymmetric.
     */
-  var LineArray: activexDashInteropLib.SafeArray[scala.Double]
+  var LineArray: stdLib.SafeArray[scala.Double]
   /**
     * Determines the maximal length of the diagonal in mitered corners.
     *
@@ -74,10 +74,10 @@ trait StrokeAttributes extends js.Object {
 object StrokeAttributes {
   @scala.inline
   def apply(
-    DashArray: activexDashInteropLib.SafeArray[scala.Double],
+    DashArray: stdLib.SafeArray[scala.Double],
     EndCapType: scala.Double,
     JoinType: scala.Double,
-    LineArray: activexDashInteropLib.SafeArray[scala.Double],
+    LineArray: stdLib.SafeArray[scala.Double],
     MiterLimit: scala.Double,
     StartCapType: scala.Double,
     StrokeWidth: scala.Double

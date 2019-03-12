@@ -35,13 +35,13 @@ trait XDispatchProviderInterception
 object XDispatchProviderInterception {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerDispatchProviderInterceptor: js.Function1[XDispatchProviderInterceptor, scala.Unit],
-    release: js.Function0[scala.Unit],
-    releaseDispatchProviderInterceptor: js.Function1[XDispatchProviderInterceptor, scala.Unit]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerDispatchProviderInterceptor: XDispatchProviderInterceptor => scala.Unit,
+    release: () => scala.Unit,
+    releaseDispatchProviderInterceptor: XDispatchProviderInterceptor => scala.Unit
   ): XDispatchProviderInterception = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, registerDispatchProviderInterceptor = registerDispatchProviderInterceptor, release = release, releaseDispatchProviderInterceptor = releaseDispatchProviderInterceptor)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), registerDispatchProviderInterceptor = js.Any.fromFunction1(registerDispatchProviderInterceptor), release = js.Any.fromFunction0(release), releaseDispatchProviderInterceptor = js.Any.fromFunction1(releaseDispatchProviderInterceptor))
   
     __obj.asInstanceOf[XDispatchProviderInterception]
   }

@@ -21,19 +21,19 @@ trait XMasterPasswordHandling2 extends XMasterPasswordHandling {
 object XMasterPasswordHandling2 {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    allowPersistentStoring: js.Function1[scala.Boolean, scala.Boolean],
-    authorizateWithMasterPassword: js.Function1[XInteractionHandler, scala.Boolean],
-    changeMasterPassword: js.Function1[XInteractionHandler, scala.Boolean],
-    hasMasterPassword: js.Function0[scala.Boolean],
-    isDefaultMasterPasswordUsed: js.Function0[scala.Boolean],
-    isPersistentStoringAllowed: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeMasterPassword: js.Function0[scala.Unit],
-    useDefaultMasterPassword: js.Function1[XInteractionHandler, scala.Boolean]
+    acquire: () => scala.Unit,
+    allowPersistentStoring: scala.Boolean => scala.Boolean,
+    authorizateWithMasterPassword: XInteractionHandler => scala.Boolean,
+    changeMasterPassword: XInteractionHandler => scala.Boolean,
+    hasMasterPassword: () => scala.Boolean,
+    isDefaultMasterPasswordUsed: () => scala.Boolean,
+    isPersistentStoringAllowed: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeMasterPassword: () => scala.Unit,
+    useDefaultMasterPassword: XInteractionHandler => scala.Boolean
   ): XMasterPasswordHandling2 = {
-    val __obj = js.Dynamic.literal(acquire = acquire, allowPersistentStoring = allowPersistentStoring, authorizateWithMasterPassword = authorizateWithMasterPassword, changeMasterPassword = changeMasterPassword, hasMasterPassword = hasMasterPassword, isDefaultMasterPasswordUsed = isDefaultMasterPasswordUsed, isPersistentStoringAllowed = isPersistentStoringAllowed, queryInterface = queryInterface, release = release, removeMasterPassword = removeMasterPassword, useDefaultMasterPassword = useDefaultMasterPassword)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), allowPersistentStoring = js.Any.fromFunction1(allowPersistentStoring), authorizateWithMasterPassword = js.Any.fromFunction1(authorizateWithMasterPassword), changeMasterPassword = js.Any.fromFunction1(changeMasterPassword), hasMasterPassword = js.Any.fromFunction0(hasMasterPassword), isDefaultMasterPasswordUsed = js.Any.fromFunction0(isDefaultMasterPasswordUsed), isPersistentStoringAllowed = js.Any.fromFunction0(isPersistentStoringAllowed), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeMasterPassword = js.Any.fromFunction0(removeMasterPassword), useDefaultMasterPassword = js.Any.fromFunction1(useDefaultMasterPassword))
   
     __obj.asInstanceOf[XMasterPasswordHandling2]
   }

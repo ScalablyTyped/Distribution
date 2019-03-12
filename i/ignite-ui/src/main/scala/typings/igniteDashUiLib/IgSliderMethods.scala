@@ -15,12 +15,12 @@ trait IgSliderMethods extends js.Object {
 object IgSliderMethods {
   @scala.inline
   def apply(
-    clearBookmarks: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    value: js.Function1[js.Object, scala.Unit],
-    widget: js.Function0[scala.Unit]
+    clearBookmarks: () => scala.Unit,
+    destroy: () => scala.Unit,
+    value: js.Object => scala.Unit,
+    widget: () => scala.Unit
   ): IgSliderMethods = {
-    val __obj = js.Dynamic.literal(clearBookmarks = clearBookmarks, destroy = destroy, value = value, widget = widget)
+    val __obj = js.Dynamic.literal(clearBookmarks = js.Any.fromFunction0(clearBookmarks), destroy = js.Any.fromFunction0(destroy), value = js.Any.fromFunction1(value), widget = js.Any.fromFunction0(widget))
   
     __obj.asInstanceOf[IgSliderMethods]
   }

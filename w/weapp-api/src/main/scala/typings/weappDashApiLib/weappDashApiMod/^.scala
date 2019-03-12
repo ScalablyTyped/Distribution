@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("weapp-api", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var App: weappDashApiLib.weappDashApiMod.AppConstructor = js.native
-  var Page: weappDashApiLib.weappDashApiMod.PageConstructor = js.native
+  var App: AppConstructor = js.native
+  var Page: PageConstructor = js.native
   /**
     * 取消由 setInterval 设置的定时器。
     * @param timeoutID 要取消的定时器的ID
@@ -23,7 +23,7 @@ object ^ extends js.Object {
   /**
     * 我们提供了全局的 getApp() 函数，可以获取到小程序实例。
     */
-  def getApp(): weappDashApiLib.weappDashApiMod.App = js.native
+  def getApp(): App = js.native
   /**
     * 设定一个定时器。按照指定的周期（以毫秒计）来执行注册的回调函数
     * @param callback

@@ -16,12 +16,8 @@ trait Parser extends js.Object {
 
 object Parser {
   @scala.inline
-  def apply(
-    abort: js.Function0[scala.Unit],
-    getCharIndex: js.Function0[scala.Double],
-    parse: js.Function1[java.lang.String, js.Any]
-  ): Parser = {
-    val __obj = js.Dynamic.literal(abort = abort, getCharIndex = getCharIndex, parse = parse)
+  def apply(abort: () => scala.Unit, getCharIndex: () => scala.Double, parse: java.lang.String => js.Any): Parser = {
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), getCharIndex = js.Any.fromFunction0(getCharIndex), parse = js.Any.fromFunction1(parse))
   
     __obj.asInstanceOf[Parser]
   }

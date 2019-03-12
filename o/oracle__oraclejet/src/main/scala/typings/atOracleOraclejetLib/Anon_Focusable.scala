@@ -33,10 +33,7 @@ object Anon_Focusable {
       /* param0 */ atOracleOraclejetLib.ojlistviewMod.ojListViewNs.ItemContext[K, D], 
       scala.Boolean
     ]) | scala.Boolean = null,
-    renderer: js.Function1[
-      /* param0 */ atOracleOraclejetLib.ojlistviewMod.ojListViewNs.ItemContext[K, D], 
-      js.UndefOr[Anon_Insert]
-    ] = null,
+    renderer: /* param0 */ atOracleOraclejetLib.ojlistviewMod.ojListViewNs.ItemContext[K, D] => js.UndefOr[Anon_Insert] = null,
     selectable: (js.Function1[
       /* param0 */ atOracleOraclejetLib.ojlistviewMod.ojListViewNs.ItemContext[K, D], 
       scala.Boolean
@@ -44,7 +41,7 @@ object Anon_Focusable {
   ): Anon_Focusable[K, D] = {
     val __obj = js.Dynamic.literal()
     if (focusable != null) __obj.updateDynamic("focusable")(focusable.asInstanceOf[js.Any])
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (renderer != null) __obj.updateDynamic("renderer")(js.Any.fromFunction1(renderer))
     if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Focusable[K, D]]
   }

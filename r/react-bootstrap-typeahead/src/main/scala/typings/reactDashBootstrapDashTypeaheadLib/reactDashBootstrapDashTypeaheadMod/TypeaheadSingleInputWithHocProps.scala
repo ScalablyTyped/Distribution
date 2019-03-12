@@ -18,17 +18,17 @@ object TypeaheadSingleInputWithHocProps {
     `aria-owns`: java.lang.String,
     autoComplete: java.lang.String,
     disabled: scala.Boolean,
-    inputRef: reactLib.reactMod.ReactNs.LegacyRef[reactLib.HTMLInputElement],
-    onBlur: js.Function1[reactLib.Event, scala.Unit],
-    onChange: js.Function1[js.Array[T], scala.Unit],
-    onClick: js.Function1[reactLib.Event, scala.Unit],
-    onFocus: js.Function1[reactLib.Event, scala.Unit],
-    onKeyDown: js.Function1[reactLib.Event, scala.Unit],
+    inputRef: reactLib.reactMod.ReactNs.LegacyRef[stdLib.HTMLInputElement],
+    onBlur: stdLib.Event => scala.Unit,
+    onChange: js.Array[T] => scala.Unit,
+    onClick: stdLib.Event => scala.Unit,
+    onFocus: stdLib.Event => scala.Unit,
+    onKeyDown: stdLib.Event => scala.Unit,
     role: reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.combobox,
     value: java.lang.String,
     placeholder: java.lang.String = null
   ): TypeaheadSingleInputWithHocProps[T] = {
-    val __obj = js.Dynamic.literal(autoComplete = autoComplete, disabled = disabled, inputRef = inputRef.asInstanceOf[js.Any], onBlur = onBlur, onChange = onChange, onClick = onClick, onFocus = onFocus, onKeyDown = onKeyDown, role = role, value = value)
+    val __obj = js.Dynamic.literal(autoComplete = autoComplete, disabled = disabled, inputRef = inputRef.asInstanceOf[js.Any], onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), onClick = js.Any.fromFunction1(onClick), onFocus = js.Any.fromFunction1(onFocus), onKeyDown = js.Any.fromFunction1(onKeyDown), role = role, value = value)
     __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`)
     __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
     __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])

@@ -19,10 +19,7 @@ object Props {
   @scala.inline
   def apply(
     value: scala.Double,
-    children: js.Function1[
-      /* formattedPlural */ reactLib.reactMod.ReactNs.ReactNode, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    children: /* formattedPlural */ reactLib.reactMod.ReactNs.ReactNode => reactLib.reactMod.ReactNs.ReactNode = null,
     few: js.Any = null,
     many: js.Any = null,
     one: js.Any = null,
@@ -32,7 +29,7 @@ object Props {
     zero: js.Any = null
   ): Props = {
     val __obj = js.Dynamic.literal(value = value)
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (few != null) __obj.updateDynamic("few")(few)
     if (many != null) __obj.updateDynamic("many")(many)
     if (one != null) __obj.updateDynamic("one")(one)

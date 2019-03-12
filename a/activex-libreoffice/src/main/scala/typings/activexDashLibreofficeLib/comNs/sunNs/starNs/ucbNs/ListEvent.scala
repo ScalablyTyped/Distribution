@@ -12,13 +12,13 @@ trait ListEvent
     * If you apply the given ListActions one after the other to the old version of an result set in given order, you will get the positions in the new
     * version.
     */
-  var Changes: activexDashInteropLib.SafeArray[ListAction]
+  var Changes: stdLib.SafeArray[ListAction]
 }
 
 object ListEvent {
   @scala.inline
   def apply(
-    Changes: activexDashInteropLib.SafeArray[ListAction],
+    Changes: stdLib.SafeArray[ListAction],
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): ListEvent = {
     val __obj = js.Dynamic.literal(Changes = Changes, Source = Source)

@@ -11,8 +11,8 @@ trait Anon_GetValue extends js.Object {
 
 object Anon_GetValue {
   @scala.inline
-  def apply(getValue: js.Function0[xrmLib.XrmEnumNs.StageCategory]): Anon_GetValue = {
-    val __obj = js.Dynamic.literal(getValue = getValue)
+  def apply(getValue: () => xrmLib.XrmEnumNs.StageCategory): Anon_GetValue = {
+    val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction0(getValue))
   
     __obj.asInstanceOf[Anon_GetValue]
   }

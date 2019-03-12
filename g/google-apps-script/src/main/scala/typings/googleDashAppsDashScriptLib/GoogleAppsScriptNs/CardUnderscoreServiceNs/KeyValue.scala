@@ -25,22 +25,22 @@ trait KeyValue extends js.Object {
 object KeyValue {
   @scala.inline
   def apply(
-    setAuthorizationAction: js.Function1[AuthorizationAction, KeyValue],
-    setBottomLabel: js.Function1[java.lang.String, KeyValue],
-    setButton: js.Function1[Button, KeyValue],
-    setComposeAction: js.Function2[Action, ComposedEmailType, KeyValue],
-    setContent: js.Function1[java.lang.String, KeyValue],
-    setIcon: js.Function1[Icon, KeyValue],
-    setIconAltText: js.Function1[java.lang.String, KeyValue],
-    setIconUrl: js.Function1[java.lang.String, KeyValue],
-    setMultiline: js.Function1[scala.Boolean, KeyValue],
-    setOnClickAction: js.Function1[Action, KeyValue],
-    setOnClickOpenLinkAction: js.Function1[Action, KeyValue],
-    setOpenLink: js.Function1[OpenLink, KeyValue],
-    setSwitch: js.Function1[Switch, KeyValue],
-    setTopLabel: js.Function1[java.lang.String, KeyValue]
+    setAuthorizationAction: AuthorizationAction => KeyValue,
+    setBottomLabel: java.lang.String => KeyValue,
+    setButton: Button => KeyValue,
+    setComposeAction: (Action, ComposedEmailType) => KeyValue,
+    setContent: java.lang.String => KeyValue,
+    setIcon: Icon => KeyValue,
+    setIconAltText: java.lang.String => KeyValue,
+    setIconUrl: java.lang.String => KeyValue,
+    setMultiline: scala.Boolean => KeyValue,
+    setOnClickAction: Action => KeyValue,
+    setOnClickOpenLinkAction: Action => KeyValue,
+    setOpenLink: OpenLink => KeyValue,
+    setSwitch: Switch => KeyValue,
+    setTopLabel: java.lang.String => KeyValue
   ): KeyValue = {
-    val __obj = js.Dynamic.literal(setAuthorizationAction = setAuthorizationAction, setBottomLabel = setBottomLabel, setButton = setButton, setComposeAction = setComposeAction, setContent = setContent, setIcon = setIcon, setIconAltText = setIconAltText, setIconUrl = setIconUrl, setMultiline = setMultiline, setOnClickAction = setOnClickAction, setOnClickOpenLinkAction = setOnClickOpenLinkAction, setOpenLink = setOpenLink, setSwitch = setSwitch, setTopLabel = setTopLabel)
+    val __obj = js.Dynamic.literal(setAuthorizationAction = js.Any.fromFunction1(setAuthorizationAction), setBottomLabel = js.Any.fromFunction1(setBottomLabel), setButton = js.Any.fromFunction1(setButton), setComposeAction = js.Any.fromFunction2(setComposeAction), setContent = js.Any.fromFunction1(setContent), setIcon = js.Any.fromFunction1(setIcon), setIconAltText = js.Any.fromFunction1(setIconAltText), setIconUrl = js.Any.fromFunction1(setIconUrl), setMultiline = js.Any.fromFunction1(setMultiline), setOnClickAction = js.Any.fromFunction1(setOnClickAction), setOnClickOpenLinkAction = js.Any.fromFunction1(setOnClickOpenLinkAction), setOpenLink = js.Any.fromFunction1(setOpenLink), setSwitch = js.Any.fromFunction1(setSwitch), setTopLabel = js.Any.fromFunction1(setTopLabel))
   
     __obj.asInstanceOf[KeyValue]
   }

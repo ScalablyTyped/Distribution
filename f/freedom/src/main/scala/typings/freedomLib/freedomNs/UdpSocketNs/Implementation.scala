@@ -20,18 +20,12 @@ trait Implementation extends js.Object {
 object Implementation {
   @scala.inline
   def apply(
-    bind: js.Function3[java.lang.String, scala.Double, js.Function0[scala.Unit], scala.Unit],
-    destroy: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    getInfo: js.Function1[js.Function1[/* socketInfo */ SocketInfo, scala.Unit], scala.Unit],
-    sendTo: js.Function4[
-      stdLib.ArrayBuffer, 
-      java.lang.String, 
-      scala.Double, 
-      js.Function1[/* bytesWritten */ scala.Double, scala.Unit], 
-      scala.Unit
-    ]
+    bind: (java.lang.String, scala.Double, js.Function0[scala.Unit]) => scala.Unit,
+    destroy: js.Function0[scala.Unit] => scala.Unit,
+    getInfo: js.Function1[/* socketInfo */ SocketInfo, scala.Unit] => scala.Unit,
+    sendTo: (stdLib.ArrayBuffer, java.lang.String, scala.Double, js.Function1[/* bytesWritten */ scala.Double, scala.Unit]) => scala.Unit
   ): Implementation = {
-    val __obj = js.Dynamic.literal(bind = bind, destroy = destroy, getInfo = getInfo, sendTo = sendTo)
+    val __obj = js.Dynamic.literal(bind = js.Any.fromFunction3(bind), destroy = js.Any.fromFunction1(destroy), getInfo = js.Any.fromFunction1(getInfo), sendTo = js.Any.fromFunction4(sendTo))
   
     __obj.asInstanceOf[Implementation]
   }

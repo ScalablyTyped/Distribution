@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Cluster
   extends nodeLib.eventsMod.EventEmitter {
-  var Worker: Worker = js.native
+  var Worker: nodeLib.clusterMod.Worker = js.native
   var isMaster: scala.Boolean = js.native
   var isWorker: scala.Boolean = js.native
   // TODO: cluster.schedulingPolicy
@@ -48,9 +48,12 @@ trait Cluster
   @JSName("addListener")
   def addListener_online(event: nodeLib.nodeLibStrings.online, listener: js.Function1[/* worker */ Worker, scala.Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_setup(event: nodeLib.nodeLibStrings.setup, listener: js.Function1[/* settings */ js.Any, scala.Unit]): this.type = js.native
+  def addListener_setup(
+    event: nodeLib.nodeLibStrings.setup,
+    listener: js.Function1[/* settings */ ClusterSettings, scala.Unit]
+  ): this.type = js.native
   def disconnect(): scala.Unit = js.native
-  def disconnect(callback: js.Function): scala.Unit = js.native
+  def disconnect(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   @JSName("emit")
   def emit_disconnect(event: nodeLib.nodeLibStrings.disconnect, worker: Worker): scala.Boolean = js.native
   @JSName("emit")
@@ -76,7 +79,7 @@ trait Cluster
   @JSName("emit")
   def emit_online(event: nodeLib.nodeLibStrings.online, worker: Worker): scala.Boolean = js.native
   @JSName("emit")
-  def emit_setup(event: nodeLib.nodeLibStrings.setup, settings: js.Any): scala.Boolean = js.native
+  def emit_setup(event: nodeLib.nodeLibStrings.setup, settings: ClusterSettings): scala.Boolean = js.native
   def fork(): Worker = js.native
   def fork(env: js.Any): Worker = js.native
   @JSName("on")
@@ -112,7 +115,10 @@ trait Cluster
   @JSName("on")
   def on_online(event: nodeLib.nodeLibStrings.online, listener: js.Function1[/* worker */ Worker, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_setup(event: nodeLib.nodeLibStrings.setup, listener: js.Function1[/* settings */ js.Any, scala.Unit]): this.type = js.native
+  def on_setup(
+    event: nodeLib.nodeLibStrings.setup,
+    listener: js.Function1[/* settings */ ClusterSettings, scala.Unit]
+  ): this.type = js.native
   @JSName("once")
   def once_disconnect(event: nodeLib.nodeLibStrings.disconnect, listener: js.Function1[/* worker */ Worker, scala.Unit]): this.type = js.native
   @JSName("once")
@@ -146,7 +152,10 @@ trait Cluster
   @JSName("once")
   def once_online(event: nodeLib.nodeLibStrings.online, listener: js.Function1[/* worker */ Worker, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_setup(event: nodeLib.nodeLibStrings.setup, listener: js.Function1[/* settings */ js.Any, scala.Unit]): this.type = js.native
+  def once_setup(
+    event: nodeLib.nodeLibStrings.setup,
+    listener: js.Function1[/* settings */ ClusterSettings, scala.Unit]
+  ): this.type = js.native
   @JSName("prependListener")
   def prependListener_disconnect(event: nodeLib.nodeLibStrings.disconnect, listener: js.Function1[/* worker */ Worker, scala.Unit]): this.type = js.native
   @JSName("prependListener")
@@ -180,7 +189,10 @@ trait Cluster
   @JSName("prependListener")
   def prependListener_online(event: nodeLib.nodeLibStrings.online, listener: js.Function1[/* worker */ Worker, scala.Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_setup(event: nodeLib.nodeLibStrings.setup, listener: js.Function1[/* settings */ js.Any, scala.Unit]): this.type = js.native
+  def prependListener_setup(
+    event: nodeLib.nodeLibStrings.setup,
+    listener: js.Function1[/* settings */ ClusterSettings, scala.Unit]
+  ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_disconnect(event: nodeLib.nodeLibStrings.disconnect, listener: js.Function1[/* worker */ Worker, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -214,7 +226,10 @@ trait Cluster
   @JSName("prependOnceListener")
   def prependOnceListener_online(event: nodeLib.nodeLibStrings.online, listener: js.Function1[/* worker */ Worker, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_setup(event: nodeLib.nodeLibStrings.setup, listener: js.Function1[/* settings */ js.Any, scala.Unit]): this.type = js.native
+  def prependOnceListener_setup(
+    event: nodeLib.nodeLibStrings.setup,
+    listener: js.Function1[/* settings */ ClusterSettings, scala.Unit]
+  ): this.type = js.native
   def setupMaster(): scala.Unit = js.native
   def setupMaster(settings: ClusterSettings): scala.Unit = js.native
 }

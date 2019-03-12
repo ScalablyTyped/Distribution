@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class SubForm protected () extends js.Object {
   var `Access.SubForm_typekey`: SubForm = js.native
   var AddColon: scala.Boolean = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   var AutoLabel: scala.Boolean = js.native
   var BorderColor: scala.Double = js.native
   var BorderLineStyle: scala.Double = js.native
@@ -30,7 +30,7 @@ class SubForm protected () extends js.Object {
   var Enabled: scala.Boolean = js.native
   var EventProcPrefix: java.lang.String = js.native
   var FilterOnEmptyMaster: scala.Boolean = js.native
-  val Form: Form = js.native
+  val Form: activexDashAccessLib.AccessNs.Form = js.native
   var GridlineColor: scala.Double = js.native
   var GridlineShade: scala.Double = js.native
   var GridlineStyleBottom: scala.Double = js.native
@@ -66,7 +66,7 @@ class SubForm protected () extends js.Object {
   val Parent: js.Any = js.native
   @JSName("Properties")
   val Properties_Original: Properties = js.native
-  val Report: Report = js.native
+  val Report: activexDashAccessLib.AccessNs.Report = js.native
   var RightPadding: scala.Double = js.native
   var Section: scala.Double = js.native
   var SourceObject: java.lang.String = js.native

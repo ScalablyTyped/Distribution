@@ -16,7 +16,7 @@ trait Walker
   @JSName("on")
   def on_end(event: klawLib.klawLibStrings.end, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_error(event: klawLib.klawLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def on_error(event: klawLib.klawLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_readable(event: klawLib.klawLibStrings.readable, listener: js.Function0[scala.Unit]): this.type = js.native
 }

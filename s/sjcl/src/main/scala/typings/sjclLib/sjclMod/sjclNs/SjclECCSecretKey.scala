@@ -11,8 +11,8 @@ trait SjclECCSecretKey extends js.Object {
 
 object SjclECCSecretKey {
   @scala.inline
-  def apply(get: js.Function0[BitArray]): SjclECCSecretKey = {
-    val __obj = js.Dynamic.literal(get = get)
+  def apply(get: () => BitArray): SjclECCSecretKey = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get))
   
     __obj.asInstanceOf[SjclECCSecretKey]
   }

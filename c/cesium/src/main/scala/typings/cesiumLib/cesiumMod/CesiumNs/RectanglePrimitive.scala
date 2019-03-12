@@ -27,20 +27,20 @@ object RectanglePrimitive {
   def apply(
     asynchronous: scala.Boolean,
     debugShowBoundingVolume: scala.Boolean,
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     ellipsoid: Ellipsoid,
     granularity: scala.Double,
     height: scala.Double,
     id: js.Any,
-    isDestroyed: js.Function0[scala.Boolean],
+    isDestroyed: () => scala.Boolean,
     material: Material,
     rectangle: Rectangle,
     rotation: scala.Double,
     show: scala.Boolean,
     textureRotationAngle: scala.Double,
-    update: js.Function0[scala.Unit]
+    update: () => scala.Unit
   ): RectanglePrimitive = {
-    val __obj = js.Dynamic.literal(asynchronous = asynchronous, debugShowBoundingVolume = debugShowBoundingVolume, destroy = destroy, ellipsoid = ellipsoid, granularity = granularity, height = height, id = id, isDestroyed = isDestroyed, material = material, rectangle = rectangle, rotation = rotation, show = show, textureRotationAngle = textureRotationAngle, update = update)
+    val __obj = js.Dynamic.literal(asynchronous = asynchronous, debugShowBoundingVolume = debugShowBoundingVolume, destroy = js.Any.fromFunction0(destroy), ellipsoid = ellipsoid, granularity = granularity, height = height, id = id, isDestroyed = js.Any.fromFunction0(isDestroyed), material = material, rectangle = rectangle, rotation = rotation, show = show, textureRotationAngle = textureRotationAngle, update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[RectanglePrimitive]
   }

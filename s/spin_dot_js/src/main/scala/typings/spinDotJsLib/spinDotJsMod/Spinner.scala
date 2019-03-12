@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("spin.js", "Spinner")
 @js.native
 class Spinner () extends js.Object {
-  def this(opts: spinDotJsLib.spinneroptionsMod.SpinnerOptions) = this()
+  def this(opts: spinDotJsLib.spinnerOptionsMod.SpinnerOptions) = this()
   var animateId: js.Any = js.native
   /**
     * The Spinner's HTML element - can be used to manually insert the spinner into the DOM

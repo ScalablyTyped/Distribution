@@ -11,20 +11,20 @@ trait JenkinsAPI extends js.Object {
   var node: jenkinsLib.Anon_CallbackConfig
   var queue: jenkinsLib.Anon_CallbackCancel
   var view: jenkinsLib.Anon_Add
-  def info(callback: js.Function2[/* err */ nodeLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit
+  def info(callback: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit
 }
 
 object JenkinsAPI {
   @scala.inline
   def apply(
     build: jenkinsLib.Anon_Callback,
-    info: js.Function1[js.Function2[/* err */ nodeLib.Error, /* data */ js.Any, scala.Unit], scala.Unit],
+    info: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit] => scala.Unit,
     job: jenkinsLib.Anon_Build,
     node: jenkinsLib.Anon_CallbackConfig,
     queue: jenkinsLib.Anon_CallbackCancel,
     view: jenkinsLib.Anon_Add
   ): JenkinsAPI = {
-    val __obj = js.Dynamic.literal(build = build, info = info, job = job, node = node, queue = queue, view = view)
+    val __obj = js.Dynamic.literal(build = build, info = js.Any.fromFunction1(info), job = job, node = node, queue = queue, view = view)
   
     __obj.asInstanceOf[JenkinsAPI]
   }

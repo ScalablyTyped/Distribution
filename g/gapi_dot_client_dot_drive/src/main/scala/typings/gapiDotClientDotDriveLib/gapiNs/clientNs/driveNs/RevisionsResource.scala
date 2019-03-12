@@ -19,24 +19,12 @@ trait RevisionsResource extends js.Object {
 object RevisionsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AcknowledgeAbuseAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Revision]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyOauthtokenPageSizePageToken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RevisionList]
-    ],
-    update: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Revision]
-    ]
+    delete: gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotDriveLib.Anon_AcknowledgeAbuseAlt => gapiDotClientLib.gapiNs.clientNs.Request[Revision],
+    list: gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyOauthtokenPageSizePageToken => gapiDotClientLib.gapiNs.clientNs.Request[RevisionList],
+    update: gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Revision]
   ): RevisionsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[RevisionsResource]
   }

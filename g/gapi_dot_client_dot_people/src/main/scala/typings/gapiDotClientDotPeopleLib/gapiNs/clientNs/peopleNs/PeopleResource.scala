@@ -51,28 +51,13 @@ object PeopleResource {
   @scala.inline
   def apply(
     connections: ConnectionsResource,
-    createContact: js.Function1[
-      gapiDotClientDotPeopleLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenParent, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Person]
-    ],
-    deleteContact: js.Function1[
-      gapiDotClientDotPeopleLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotPeopleLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPersonFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Person]
-    ],
-    getBatchGet: js.Function1[
-      gapiDotClientDotPeopleLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPersonFieldsPp, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GetPeopleResponse]
-    ],
-    updateContact: js.Function1[
-      gapiDotClientDotPeopleLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Person]
-    ]
+    createContact: gapiDotClientDotPeopleLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenParent => gapiDotClientLib.gapiNs.clientNs.Request[Person],
+    deleteContact: gapiDotClientDotPeopleLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotPeopleLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPersonFields => gapiDotClientLib.gapiNs.clientNs.Request[Person],
+    getBatchGet: gapiDotClientDotPeopleLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPersonFieldsPp => gapiDotClientLib.gapiNs.clientNs.Request[GetPeopleResponse],
+    updateContact: gapiDotClientDotPeopleLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp => gapiDotClientLib.gapiNs.clientNs.Request[Person]
   ): PeopleResource = {
-    val __obj = js.Dynamic.literal(connections = connections, createContact = createContact, deleteContact = deleteContact, get = get, getBatchGet = getBatchGet, updateContact = updateContact)
+    val __obj = js.Dynamic.literal(connections = connections, createContact = js.Any.fromFunction1(createContact), deleteContact = js.Any.fromFunction1(deleteContact), get = js.Any.fromFunction1(get), getBatchGet = js.Any.fromFunction1(getBatchGet), updateContact = js.Any.fromFunction1(updateContact))
   
     __obj.asInstanceOf[PeopleResource]
   }

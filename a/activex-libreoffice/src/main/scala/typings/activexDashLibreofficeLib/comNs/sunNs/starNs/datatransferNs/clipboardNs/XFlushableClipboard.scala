@@ -18,12 +18,12 @@ trait XFlushableClipboard
 object XFlushableClipboard {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    flushClipboard: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    flushClipboard: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XFlushableClipboard = {
-    val __obj = js.Dynamic.literal(acquire = acquire, flushClipboard = flushClipboard, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), flushClipboard = js.Any.fromFunction0(flushClipboard), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XFlushableClipboard]
   }

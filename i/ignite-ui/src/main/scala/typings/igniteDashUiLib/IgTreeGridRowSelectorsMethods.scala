@@ -61,18 +61,18 @@ trait IgTreeGridRowSelectorsMethods extends js.Object {
 object IgTreeGridRowSelectorsMethods {
   @scala.inline
   def apply(
-    changeCheckState: js.Function2[scala.Double, scala.Boolean, scala.Unit],
-    changeCheckStateById: js.Function2[js.Object, scala.Boolean, scala.Unit],
-    changeLocale: js.Function0[scala.Unit],
-    checkStateById: js.Function1[js.Object, java.lang.String],
-    checkedRows: js.Function0[js.Array[_]],
-    destroy: js.Function0[scala.Unit],
-    partiallyCheckedRows: js.Function0[js.Array[_]],
-    toggleCheckState: js.Function1[scala.Double, scala.Unit],
-    toggleCheckStateById: js.Function1[js.Object, scala.Unit],
-    uncheckedRows: js.Function0[js.Array[_]]
+    changeCheckState: (scala.Double, scala.Boolean) => scala.Unit,
+    changeCheckStateById: (js.Object, scala.Boolean) => scala.Unit,
+    changeLocale: () => scala.Unit,
+    checkStateById: js.Object => java.lang.String,
+    checkedRows: () => js.Array[_],
+    destroy: () => scala.Unit,
+    partiallyCheckedRows: () => js.Array[_],
+    toggleCheckState: scala.Double => scala.Unit,
+    toggleCheckStateById: js.Object => scala.Unit,
+    uncheckedRows: () => js.Array[_]
   ): IgTreeGridRowSelectorsMethods = {
-    val __obj = js.Dynamic.literal(changeCheckState = changeCheckState, changeCheckStateById = changeCheckStateById, changeLocale = changeLocale, checkStateById = checkStateById, checkedRows = checkedRows, destroy = destroy, partiallyCheckedRows = partiallyCheckedRows, toggleCheckState = toggleCheckState, toggleCheckStateById = toggleCheckStateById, uncheckedRows = uncheckedRows)
+    val __obj = js.Dynamic.literal(changeCheckState = js.Any.fromFunction2(changeCheckState), changeCheckStateById = js.Any.fromFunction2(changeCheckStateById), changeLocale = js.Any.fromFunction0(changeLocale), checkStateById = js.Any.fromFunction1(checkStateById), checkedRows = js.Any.fromFunction0(checkedRows), destroy = js.Any.fromFunction0(destroy), partiallyCheckedRows = js.Any.fromFunction0(partiallyCheckedRows), toggleCheckState = js.Any.fromFunction1(toggleCheckState), toggleCheckStateById = js.Any.fromFunction1(toggleCheckStateById), uncheckedRows = js.Any.fromFunction0(uncheckedRows))
   
     __obj.asInstanceOf[IgTreeGridRowSelectorsMethods]
   }

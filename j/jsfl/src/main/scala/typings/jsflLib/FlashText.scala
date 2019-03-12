@@ -29,12 +29,12 @@ object FlashText {
     border: scala.Boolean,
     description: java.lang.String,
     embeddedCharacters: java.lang.String,
-    getTextAttr: js.Function0[js.Any],
-    getTextString: js.Function0[js.Any],
-    setTextAttr: js.Function0[js.Any],
-    setTextString: js.Function0[js.Any]
+    getTextAttr: () => js.Any,
+    getTextString: () => js.Any,
+    setTextAttr: () => js.Any,
+    setTextString: () => js.Any
   ): FlashText = {
-    val __obj = js.Dynamic.literal(accName = accName, antiAliasSharpness = antiAliasSharpness, antiAliasThickness = antiAliasThickness, autoExpand = autoExpand, border = border, description = description, embeddedCharacters = embeddedCharacters, getTextAttr = getTextAttr, getTextString = getTextString, setTextAttr = setTextAttr, setTextString = setTextString)
+    val __obj = js.Dynamic.literal(accName = accName, antiAliasSharpness = antiAliasSharpness, antiAliasThickness = antiAliasThickness, autoExpand = autoExpand, border = border, description = description, embeddedCharacters = embeddedCharacters, getTextAttr = js.Any.fromFunction0(getTextAttr), getTextString = js.Any.fromFunction0(getTextString), setTextAttr = js.Any.fromFunction0(setTextAttr), setTextString = js.Any.fromFunction0(setTextString))
   
     __obj.asInstanceOf[FlashText]
   }

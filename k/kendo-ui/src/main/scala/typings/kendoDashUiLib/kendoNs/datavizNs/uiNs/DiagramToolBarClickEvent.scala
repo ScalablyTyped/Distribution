@@ -15,7 +15,7 @@ trait DiagramToolBarClickEvent extends DiagramEvent {
 object DiagramToolBarClickEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Diagram,
     action: java.lang.String = null,
@@ -23,7 +23,7 @@ object DiagramToolBarClickEvent {
     shapes: js.Any = null,
     target: kendoDashUiLib.JQuery = null
   ): DiagramToolBarClickEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (action != null) __obj.updateDynamic("action")(action)
     if (connections != null) __obj.updateDynamic("connections")(connections)
     if (shapes != null) __obj.updateDynamic("shapes")(shapes)

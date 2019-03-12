@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
   */
 trait IMediaPickerOptions extends js.Object {
   /*callback function*/
-  var callback: angularLib.angularMod.Global.Function
+  var callback: js.Function
   /*Only display files that have an image file-extension*/
   var onlyImages: scala.Boolean
 }
 
 object IMediaPickerOptions {
   @scala.inline
-  def apply(callback: angularLib.angularMod.Global.Function, onlyImages: scala.Boolean): IMediaPickerOptions = {
+  def apply(callback: js.Function, onlyImages: scala.Boolean): IMediaPickerOptions = {
     val __obj = js.Dynamic.literal(callback = callback, onlyImages = onlyImages)
   
     __obj.asInstanceOf[IMediaPickerOptions]

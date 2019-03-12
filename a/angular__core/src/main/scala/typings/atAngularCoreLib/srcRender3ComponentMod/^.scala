@@ -21,7 +21,7 @@ object ^ extends js.Object {
     componentDef: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentDef[T],
     rootView: atAngularCoreLib.srcRender3InterfacesViewMod.LView,
     rootContext: atAngularCoreLib.srcRender3InterfacesViewMod.RootContext,
-    hostFeatures: js.Array[atAngularCoreLib.srcRender3ComponentMod.HostFeature]
+    hostFeatures: js.Array[HostFeature]
   ): js.Any = js.native
   def createRootComponentView(
     rNode: atAngularCoreLib.srcRender3InterfacesRendererMod.RElement,
@@ -62,13 +62,10 @@ object ^ extends js.Object {
   def renderComponent[T](componentType: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentType[T]): T = js.native
   def renderComponent[T](
     componentType: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentType[T],
-    opts: atAngularCoreLib.srcRender3ComponentMod.CreateComponentOptions
+    opts: CreateComponentOptions
   ): T = js.native
   def renderComponent[T](componentType: atAngularCoreLib.srcTypeMod.Type[T]): T = js.native
-  def renderComponent[T](
-    componentType: atAngularCoreLib.srcTypeMod.Type[T],
-    opts: atAngularCoreLib.srcRender3ComponentMod.CreateComponentOptions
-  ): T = js.native
+  def renderComponent[T](componentType: atAngularCoreLib.srcTypeMod.Type[T], opts: CreateComponentOptions): T = js.native
   def whenRendered(component: js.Any): js.Promise[scala.Null] = js.native
 }
 

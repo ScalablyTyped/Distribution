@@ -11,8 +11,8 @@ trait IFileUpdateRequestDeferral extends js.Object {
 
 object IFileUpdateRequestDeferral {
   @scala.inline
-  def apply(complete: js.Function0[scala.Unit]): IFileUpdateRequestDeferral = {
-    val __obj = js.Dynamic.literal(complete = complete)
+  def apply(complete: () => scala.Unit): IFileUpdateRequestDeferral = {
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
   
     __obj.asInstanceOf[IFileUpdateRequestDeferral]
   }

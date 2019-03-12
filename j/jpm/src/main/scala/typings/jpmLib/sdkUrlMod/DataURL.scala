@@ -19,9 +19,9 @@ object DataURL {
     data: java.lang.String,
     mimeType: java.lang.String,
     parameters: js.Object,
-    toString: js.Function0[java.lang.String]
+    toString: () => java.lang.String
   ): DataURL = {
-    val __obj = js.Dynamic.literal(base64 = base64, data = data, mimeType = mimeType, parameters = parameters, toString = toString)
+    val __obj = js.Dynamic.literal(base64 = base64, data = data, mimeType = mimeType, parameters = parameters, toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[DataURL]
   }

@@ -10,7 +10,7 @@ trait Events extends js.Object {
   var accessRole: AccessRole
   var defaultReminders: js.Array[gapiDotCalendarLib.Anon_Method]
   var description: java.lang.String
-  var etag: etag
+  var etag: gapiDotCalendarLib.gapiNs.clientNs.calendarNs.etag
   var items: js.Array[Event]
   var kind: gapiDotCalendarLib.gapiDotCalendarLibStrings.`calendar#events`
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined

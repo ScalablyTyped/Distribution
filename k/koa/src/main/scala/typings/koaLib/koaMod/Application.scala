@@ -71,7 +71,7 @@ trait Application[StateT, CustomT]
     *
     * @api private
     */
-  def onerror(err: nodeLib.Error): scala.Unit = js.native
+  def onerror(err: stdLib.Error): scala.Unit = js.native
   /**
     * Return JSON representation.
     * We only bother showing settings.

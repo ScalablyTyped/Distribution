@@ -27,20 +27,20 @@ object MergedCellCoords {
   def apply(
     col: scala.Double,
     colspan: scala.Double,
-    getLastColumn: js.Function0[scala.Double],
-    getLastRow: js.Function0[scala.Double],
-    getRange: js.Function0[handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange],
-    includes: js.Function2[scala.Double, scala.Double, scala.Boolean],
-    includesHorizontally: js.Function1[scala.Double, scala.Boolean],
-    includesVertically: js.Function1[scala.Double, scala.Boolean],
-    isFarther: js.Function2[MergedCellCoords, java.lang.String, scala.Boolean | scala.Unit],
-    normalize: js.Function1[handsontableLib.handsontableMod.underscoreHandsontableNs.Core, scala.Unit],
+    getLastColumn: () => scala.Double,
+    getLastRow: () => scala.Double,
+    getRange: () => handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange,
+    includes: (scala.Double, scala.Double) => scala.Boolean,
+    includesHorizontally: scala.Double => scala.Boolean,
+    includesVertically: scala.Double => scala.Boolean,
+    isFarther: (MergedCellCoords, java.lang.String) => scala.Boolean | scala.Unit,
+    normalize: handsontableLib.handsontableMod.underscoreHandsontableNs.Core => scala.Unit,
     removed: scala.Boolean,
     row: scala.Double,
     rowspan: scala.Double,
-    shift: js.Function2[js.Array[scala.Double], scala.Double, scala.Boolean]
+    shift: (js.Array[scala.Double], scala.Double) => scala.Boolean
   ): MergedCellCoords = {
-    val __obj = js.Dynamic.literal(col = col, colspan = colspan, getLastColumn = getLastColumn, getLastRow = getLastRow, getRange = getRange, includes = includes, includesHorizontally = includesHorizontally, includesVertically = includesVertically, isFarther = isFarther, normalize = normalize, removed = removed, row = row, rowspan = rowspan, shift = shift)
+    val __obj = js.Dynamic.literal(col = col, colspan = colspan, getLastColumn = js.Any.fromFunction0(getLastColumn), getLastRow = js.Any.fromFunction0(getLastRow), getRange = js.Any.fromFunction0(getRange), includes = js.Any.fromFunction2(includes), includesHorizontally = js.Any.fromFunction1(includesHorizontally), includesVertically = js.Any.fromFunction1(includesVertically), isFarther = js.Any.fromFunction2(isFarther), normalize = js.Any.fromFunction1(normalize), removed = removed, row = row, rowspan = rowspan, shift = js.Any.fromFunction2(shift))
   
     __obj.asInstanceOf[MergedCellCoords]
   }

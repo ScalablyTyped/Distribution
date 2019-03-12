@@ -48,14 +48,14 @@ trait XStringSubstitution
 object XStringSubstitution {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getSubstituteVariableValue: js.Function1[java.lang.String, java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    reSubstituteVariables: js.Function1[java.lang.String, java.lang.String],
-    release: js.Function0[scala.Unit],
-    substituteVariables: js.Function2[java.lang.String, scala.Boolean, java.lang.String]
+    acquire: () => scala.Unit,
+    getSubstituteVariableValue: java.lang.String => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    reSubstituteVariables: java.lang.String => java.lang.String,
+    release: () => scala.Unit,
+    substituteVariables: (java.lang.String, scala.Boolean) => java.lang.String
   ): XStringSubstitution = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getSubstituteVariableValue = getSubstituteVariableValue, queryInterface = queryInterface, reSubstituteVariables = reSubstituteVariables, release = release, substituteVariables = substituteVariables)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getSubstituteVariableValue = js.Any.fromFunction1(getSubstituteVariableValue), queryInterface = js.Any.fromFunction1(queryInterface), reSubstituteVariables = js.Any.fromFunction1(reSubstituteVariables), release = js.Any.fromFunction0(release), substituteVariables = js.Any.fromFunction2(substituteVariables))
   
     __obj.asInstanceOf[XStringSubstitution]
   }

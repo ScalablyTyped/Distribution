@@ -45,13 +45,13 @@ object typeRendererResult {
     basemapId: java.lang.String,
     constructor: js.Function,
     excludedUniqueValueInfos: js.Array[_],
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     renderer: UniqueValueRenderer,
     typeScheme: TypeScheme,
     uniqueValueInfos: js.Array[UniqueValueInfo]
   ): typeRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, excludedUniqueValueInfos = excludedUniqueValueInfos, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer, typeScheme = typeScheme, uniqueValueInfos = uniqueValueInfos)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, excludedUniqueValueInfos = excludedUniqueValueInfos, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer, typeScheme = typeScheme, uniqueValueInfos = uniqueValueInfos)
   
     __obj.asInstanceOf[typeRendererResult]
   }

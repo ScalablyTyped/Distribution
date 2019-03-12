@@ -24,7 +24,7 @@ trait MessageDefinitionFocus extends BackboneElement {
   /**
     * Type of resource
     */
-  var code: code
+  var code: fhirLib.fhirNs.code
   /**
     * Maximum number of focuses of this type
     */

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("breeze.DataServiceAdapter")
 @js.native
 class DataServiceAdapter () extends js.Object {
-  var JsonResultsAdapter: JsonResultsAdapter = js.native
+  var JsonResultsAdapter: breezeLib.breezeNs.JsonResultsAdapter = js.native
   def checkForRecomposition(interfaceInitializedArgs: breezeLib.Anon_InterfaceName): scala.Unit = js.native
   def executeQuery(mappingContext: breezeLib.Anon_DataService): js.Promise[_] = js.native
   def fetchMetadata(metadataStore: MetadataStore, dataService: DataService): js.Promise[_] = js.native

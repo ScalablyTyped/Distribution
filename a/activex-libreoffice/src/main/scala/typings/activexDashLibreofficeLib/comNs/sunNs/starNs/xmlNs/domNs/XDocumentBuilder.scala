@@ -32,22 +32,19 @@ object XDocumentBuilder {
   @scala.inline
   def apply(
     DOMImplementation: XDOMImplementation,
-    acquire: js.Function0[scala.Unit],
-    getDOMImplementation: js.Function0[XDOMImplementation],
-    isNamespaceAware: js.Function0[scala.Boolean],
-    isValidating: js.Function0[scala.Boolean],
-    newDocument: js.Function0[XDocument],
-    parse: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, XDocument],
-    parseURI: js.Function1[java.lang.String, XDocument],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setEntityResolver: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XEntityResolver, 
-      scala.Unit
-    ],
-    setErrorHandler: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XErrorHandler, scala.Unit]
+    acquire: () => scala.Unit,
+    getDOMImplementation: () => XDOMImplementation,
+    isNamespaceAware: () => scala.Boolean,
+    isValidating: () => scala.Boolean,
+    newDocument: () => XDocument,
+    parse: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream => XDocument,
+    parseURI: java.lang.String => XDocument,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setEntityResolver: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XEntityResolver => scala.Unit,
+    setErrorHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XErrorHandler => scala.Unit
   ): XDocumentBuilder = {
-    val __obj = js.Dynamic.literal(DOMImplementation = DOMImplementation, acquire = acquire, getDOMImplementation = getDOMImplementation, isNamespaceAware = isNamespaceAware, isValidating = isValidating, newDocument = newDocument, parse = parse, parseURI = parseURI, queryInterface = queryInterface, release = release, setEntityResolver = setEntityResolver, setErrorHandler = setErrorHandler)
+    val __obj = js.Dynamic.literal(DOMImplementation = DOMImplementation, acquire = js.Any.fromFunction0(acquire), getDOMImplementation = js.Any.fromFunction0(getDOMImplementation), isNamespaceAware = js.Any.fromFunction0(isNamespaceAware), isValidating = js.Any.fromFunction0(isValidating), newDocument = js.Any.fromFunction0(newDocument), parse = js.Any.fromFunction1(parse), parseURI = js.Any.fromFunction1(parseURI), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setEntityResolver = js.Any.fromFunction1(setEntityResolver), setErrorHandler = js.Any.fromFunction1(setErrorHandler))
   
     __obj.asInstanceOf[XDocumentBuilder]
   }

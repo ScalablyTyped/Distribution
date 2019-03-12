@@ -15,14 +15,14 @@ trait Stage
 object Stage {
   @scala.inline
   def apply(
-    getCategory: js.Function0[xrmLib.Anon_GetValue],
-    getEntityName: js.Function0[java.lang.String],
-    getId: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getStatus: js.Function0[xrmLib.XrmNs.ProcessFlowNs.StageStatus],
-    getSteps: js.Function0[js.Array[xrmLib.XrmNs.ProcessFlowNs.Step]]
+    getCategory: () => xrmLib.Anon_GetValue,
+    getEntityName: () => java.lang.String,
+    getId: () => java.lang.String,
+    getName: () => java.lang.String,
+    getStatus: () => xrmLib.XrmNs.ProcessFlowNs.StageStatus,
+    getSteps: () => js.Array[xrmLib.XrmNs.ProcessFlowNs.Step]
   ): Stage = {
-    val __obj = js.Dynamic.literal(getCategory = getCategory, getEntityName = getEntityName, getId = getId, getName = getName, getStatus = getStatus, getSteps = getSteps)
+    val __obj = js.Dynamic.literal(getCategory = js.Any.fromFunction0(getCategory), getEntityName = js.Any.fromFunction0(getEntityName), getId = js.Any.fromFunction0(getId), getName = js.Any.fromFunction0(getName), getStatus = js.Any.fromFunction0(getStatus), getSteps = js.Any.fromFunction0(getSteps))
   
     __obj.asInstanceOf[Stage]
   }

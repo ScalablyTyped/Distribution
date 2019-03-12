@@ -12,9 +12,9 @@ trait ISerializableObject extends js.Object {
 
 object ISerializableObject {
   @scala.inline
-  def apply(toString: js.Function0[java.lang.String] = null): ISerializableObject = {
+  def apply(toString: () => java.lang.String = null): ISerializableObject = {
     val __obj = js.Dynamic.literal()
-    if (toString != null) __obj.updateDynamic("toString")(toString)
+    if (toString != null) __obj.updateDynamic("toString")(js.Any.fromFunction0(toString))
     __obj.asInstanceOf[ISerializableObject]
   }
 }

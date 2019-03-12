@@ -49,7 +49,7 @@ object ArraySet extends js.Object {
     *
     * @param allowDuplicates Whether to allow duplicates in the set, false by default
     */
-  def from[T](iterable: nodeLib.Iterable[T]): adoneLib.adoneNs.collectionNs.ArraySet[T] = js.native
-  def from[T](iterable: nodeLib.Iterable[T], allowDuplicates: scala.Boolean): adoneLib.adoneNs.collectionNs.ArraySet[T] = js.native
+  def from[T](iterable: stdLib.Iterable[T]): adoneLib.adoneNs.collectionNs.ArraySet[T] = js.native
+  def from[T](iterable: stdLib.Iterable[T], allowDuplicates: scala.Boolean): adoneLib.adoneNs.collectionNs.ArraySet[T] = js.native
 }
 

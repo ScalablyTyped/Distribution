@@ -52,18 +52,14 @@ trait MiscUtil extends js.Object {
 object MiscUtil {
   @scala.inline
   def apply(
-    contains: js.Function2[js.Array[_], js.Any, scala.Boolean],
-    defineProperty: js.Function4[js.Any, java.lang.String, js.Any, js.Any, js.Any],
-    each: js.Function2[
-      js.Any, 
-      js.Function2[/* item */ js.Any, /* index */ scala.Double, scala.Unit], 
-      scala.Unit
-    ],
-    extend: js.Function1[/* repeated */ js.Any, js.Any],
-    startsWith: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    toCamel: js.Function1[java.lang.String, java.lang.String]
+    contains: (js.Array[_], js.Any) => scala.Boolean,
+    defineProperty: (js.Any, java.lang.String, js.Any, js.Any) => js.Any,
+    each: (js.Any, js.Function2[/* item */ js.Any, /* index */ scala.Double, scala.Unit]) => scala.Unit,
+    extend: /* repeated */ js.Any => js.Any,
+    startsWith: (java.lang.String, java.lang.String) => scala.Boolean,
+    toCamel: java.lang.String => java.lang.String
   ): MiscUtil = {
-    val __obj = js.Dynamic.literal(contains = contains, defineProperty = defineProperty, each = each, extend = extend, startsWith = startsWith, toCamel = toCamel)
+    val __obj = js.Dynamic.literal(contains = js.Any.fromFunction2(contains), defineProperty = js.Any.fromFunction4(defineProperty), each = js.Any.fromFunction2(each), extend = js.Any.fromFunction1(extend), startsWith = js.Any.fromFunction2(startsWith), toCamel = js.Any.fromFunction1(toCamel))
   
     __obj.asInstanceOf[MiscUtil]
   }

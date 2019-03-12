@@ -107,18 +107,18 @@ trait IAppState extends js.Object {
 object IAppState {
   @scala.inline
   def apply(
-    getGlobalState: js.Function1[java.lang.String, IGlobalState],
-    getMenuState: js.Function1[java.lang.String, IStateObject],
-    getSectionState: js.Function1[java.lang.String, ISectionState],
-    getState: js.Function3[IStateObject, java.lang.String, java.lang.String, IStateObject],
-    getTreeState: js.Function1[java.lang.String, ITreeState],
-    setGlobalState: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
-    setMenuState: js.Function2[java.lang.String, IMenuState, scala.Unit],
-    setSectionState: js.Function2[java.lang.String, ISectionState, scala.Unit],
-    setState: js.Function4[IStateObject, java.lang.String, js.Any, java.lang.String, scala.Unit],
-    setTreeState: js.Function2[java.lang.String, ITreeState, scala.Unit]
+    getGlobalState: java.lang.String => IGlobalState,
+    getMenuState: java.lang.String => IStateObject,
+    getSectionState: java.lang.String => ISectionState,
+    getState: (IStateObject, java.lang.String, java.lang.String) => IStateObject,
+    getTreeState: java.lang.String => ITreeState,
+    setGlobalState: (java.lang.String, scala.Boolean) => scala.Unit,
+    setMenuState: (java.lang.String, IMenuState) => scala.Unit,
+    setSectionState: (java.lang.String, ISectionState) => scala.Unit,
+    setState: (IStateObject, java.lang.String, js.Any, java.lang.String) => scala.Unit,
+    setTreeState: (java.lang.String, ITreeState) => scala.Unit
   ): IAppState = {
-    val __obj = js.Dynamic.literal(getGlobalState = getGlobalState, getMenuState = getMenuState, getSectionState = getSectionState, getState = getState, getTreeState = getTreeState, setGlobalState = setGlobalState, setMenuState = setMenuState, setSectionState = setSectionState, setState = setState, setTreeState = setTreeState)
+    val __obj = js.Dynamic.literal(getGlobalState = js.Any.fromFunction1(getGlobalState), getMenuState = js.Any.fromFunction1(getMenuState), getSectionState = js.Any.fromFunction1(getSectionState), getState = js.Any.fromFunction3(getState), getTreeState = js.Any.fromFunction1(getTreeState), setGlobalState = js.Any.fromFunction2(setGlobalState), setMenuState = js.Any.fromFunction2(setMenuState), setSectionState = js.Any.fromFunction2(setSectionState), setState = js.Any.fromFunction4(setState), setTreeState = js.Any.fromFunction2(setTreeState))
   
     __obj.asInstanceOf[IAppState]
   }

@@ -21,7 +21,7 @@ object DataSourceTransportWithObjectOperations {
   def apply(
     create: DataSourceTransportCreate = null,
     destroy: DataSourceTransportDestroy = null,
-    parameterMap: js.Function2[/* data */ DataSourceTransportParameterMapData, /* type */ java.lang.String, _] = null,
+    parameterMap: (/* data */ DataSourceTransportParameterMapData, /* type */ java.lang.String) => _ = null,
     push: js.Function = null,
     read: DataSourceTransportRead = null,
     signalr: DataSourceTransportSignalr | (js.Function1[/* options */ DataSourceTransportOptions, scala.Unit]) = null,
@@ -31,7 +31,7 @@ object DataSourceTransportWithObjectOperations {
     val __obj = js.Dynamic.literal()
     if (create != null) __obj.updateDynamic("create")(create)
     if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (parameterMap != null) __obj.updateDynamic("parameterMap")(parameterMap)
+    if (parameterMap != null) __obj.updateDynamic("parameterMap")(js.Any.fromFunction2(parameterMap))
     if (push != null) __obj.updateDynamic("push")(push)
     if (read != null) __obj.updateDynamic("read")(read)
     if (signalr != null) __obj.updateDynamic("signalr")(signalr.asInstanceOf[js.Any])

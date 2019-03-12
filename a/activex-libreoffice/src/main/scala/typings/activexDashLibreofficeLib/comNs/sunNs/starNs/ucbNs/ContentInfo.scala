@@ -36,7 +36,7 @@ trait ContentInfo extends js.Object {
     *
     * booleancharbytestringshortlonghyperfloatdouble
     */
-  var Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
+  var Properties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
   /**
     * A type identifier string for a content.
     *
@@ -50,7 +50,7 @@ object ContentInfo {
   @scala.inline
   def apply(
     Attributes: scala.Double,
-    Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
+    Properties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
     Type: java.lang.String
   ): ContentInfo = {
     val __obj = js.Dynamic.literal(Attributes = Attributes, Properties = Properties, Type = Type)

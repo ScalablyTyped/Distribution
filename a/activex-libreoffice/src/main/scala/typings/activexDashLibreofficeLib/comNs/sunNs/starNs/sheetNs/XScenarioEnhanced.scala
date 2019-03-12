@@ -15,23 +15,21 @@ import scala.scalajs.js.annotation._
 trait XScenarioEnhanced
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** gets the ranges to the scenario. */
-  val Ranges: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
+  val Ranges: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
   /** gets the ranges to the scenario. */
-  def getRanges(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
+  def getRanges(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
 }
 
 object XScenarioEnhanced {
   @scala.inline
   def apply(
-    Ranges: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
-    acquire: js.Function0[scala.Unit],
-    getRanges: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    Ranges: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    acquire: () => scala.Unit,
+    getRanges: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XScenarioEnhanced = {
-    val __obj = js.Dynamic.literal(Ranges = Ranges, acquire = acquire, getRanges = getRanges, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Ranges = Ranges, acquire = js.Any.fromFunction0(acquire), getRanges = js.Any.fromFunction0(getRanges), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XScenarioEnhanced]
   }

@@ -28,7 +28,7 @@ object AposModuleOptions {
     label: java.lang.String,
     addFields: js.Array[Field] = null,
     arrangeFields: js.Array[apostropheLib.Anon_Fields] = null,
-    beforeConstruct: js.Function2[/* self */ js.Any, /* options */ js.Any, _] = null,
+    beforeConstruct: (/* self */ js.Any, /* options */ js.Any) => _ = null,
     defer: js.UndefOr[scala.Boolean] = js.undefined,
     filters: apostropheLib.Anon_Key = null,
     name: java.lang.String = null,
@@ -40,7 +40,7 @@ object AposModuleOptions {
     val __obj = js.Dynamic.literal(extend = extend.asInstanceOf[js.Any], label = label)
     if (addFields != null) __obj.updateDynamic("addFields")(addFields)
     if (arrangeFields != null) __obj.updateDynamic("arrangeFields")(arrangeFields)
-    if (beforeConstruct != null) __obj.updateDynamic("beforeConstruct")(beforeConstruct)
+    if (beforeConstruct != null) __obj.updateDynamic("beforeConstruct")(js.Any.fromFunction2(beforeConstruct))
     if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer)
     if (filters != null) __obj.updateDynamic("filters")(filters)
     if (name != null) __obj.updateDynamic("name")(name)

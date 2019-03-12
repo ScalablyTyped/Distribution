@@ -30,7 +30,7 @@ trait DataStoreOptions extends js.Object {
   var nodeWebkitAppName: js.UndefOr[scala.Boolean] = js.undefined
    // Optional, defaults to false
   // Optional, if autoload is used this will be called after the load database with the error object as parameter. If you don't pass it the error will be thrown
-  var onload: js.UndefOr[js.Function1[/* error */ nodeLib.Error, _]] = js.undefined
+  var onload: js.UndefOr[js.Function1[/* error */ stdLib.Error, _]] = js.undefined
   // (optional, defaults to false)
   // timestamp the insertion and last update of all documents, with the fields createdAt and updatedAt. User-specified values override automatic generation, usually useful for testing.
   var timestampData: js.UndefOr[scala.Boolean] = js.undefined
@@ -39,25 +39,25 @@ trait DataStoreOptions extends js.Object {
 object DataStoreOptions {
   @scala.inline
   def apply(
-    afterSerialization: js.Function1[/* line */ java.lang.String, java.lang.String] = null,
+    afterSerialization: /* line */ java.lang.String => java.lang.String = null,
     autoload: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeDeserialization: js.Function1[/* line */ java.lang.String, java.lang.String] = null,
+    beforeDeserialization: /* line */ java.lang.String => java.lang.String = null,
     corruptAlertThreshold: scala.Int | scala.Double = null,
     filename: java.lang.String = null,
     inMemoryOnly: js.UndefOr[scala.Boolean] = js.undefined,
     nodeWebkitAppName: js.UndefOr[scala.Boolean] = js.undefined,
-    onload: js.Function1[/* error */ nodeLib.Error, _] = null,
+    onload: /* error */ stdLib.Error => _ = null,
     timestampData: js.UndefOr[scala.Boolean] = js.undefined
   ): DataStoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterSerialization != null) __obj.updateDynamic("afterSerialization")(afterSerialization)
+    if (afterSerialization != null) __obj.updateDynamic("afterSerialization")(js.Any.fromFunction1(afterSerialization))
     if (!js.isUndefined(autoload)) __obj.updateDynamic("autoload")(autoload)
-    if (beforeDeserialization != null) __obj.updateDynamic("beforeDeserialization")(beforeDeserialization)
+    if (beforeDeserialization != null) __obj.updateDynamic("beforeDeserialization")(js.Any.fromFunction1(beforeDeserialization))
     if (corruptAlertThreshold != null) __obj.updateDynamic("corruptAlertThreshold")(corruptAlertThreshold.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (!js.isUndefined(inMemoryOnly)) __obj.updateDynamic("inMemoryOnly")(inMemoryOnly)
     if (!js.isUndefined(nodeWebkitAppName)) __obj.updateDynamic("nodeWebkitAppName")(nodeWebkitAppName)
-    if (onload != null) __obj.updateDynamic("onload")(onload)
+    if (onload != null) __obj.updateDynamic("onload")(js.Any.fromFunction1(onload))
     if (!js.isUndefined(timestampData)) __obj.updateDynamic("timestampData")(timestampData)
     __obj.asInstanceOf[DataStoreOptions]
   }

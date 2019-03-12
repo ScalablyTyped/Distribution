@@ -40,14 +40,14 @@ trait Anchor extends js.Object {
 object Anchor {
   @scala.inline
   def apply(
-    detach: js.Function0[scala.Unit],
-    getDocument: js.Function0[Document],
-    getPosition: js.Function0[Position],
-    on: js.Function2[java.lang.String, js.Function1[/* e */ js.Any, _], scala.Unit],
-    onChange: js.Function1[js.Any, scala.Unit],
-    setPosition: js.Function3[scala.Double, scala.Double, scala.Boolean, scala.Unit]
+    detach: () => scala.Unit,
+    getDocument: () => Document,
+    getPosition: () => Position,
+    on: (java.lang.String, js.Function1[/* e */ js.Any, _]) => scala.Unit,
+    onChange: js.Any => scala.Unit,
+    setPosition: (scala.Double, scala.Double, scala.Boolean) => scala.Unit
   ): Anchor = {
-    val __obj = js.Dynamic.literal(detach = detach, getDocument = getDocument, getPosition = getPosition, on = on, onChange = onChange, setPosition = setPosition)
+    val __obj = js.Dynamic.literal(detach = js.Any.fromFunction0(detach), getDocument = js.Any.fromFunction0(getDocument), getPosition = js.Any.fromFunction0(getPosition), on = js.Any.fromFunction2(on), onChange = js.Any.fromFunction1(onChange), setPosition = js.Any.fromFunction3(setPosition))
   
     __obj.asInstanceOf[Anchor]
   }

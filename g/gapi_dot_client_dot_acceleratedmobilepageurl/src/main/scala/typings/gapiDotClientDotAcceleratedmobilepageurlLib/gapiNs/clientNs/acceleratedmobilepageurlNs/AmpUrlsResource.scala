@@ -16,12 +16,9 @@ trait AmpUrlsResource extends js.Object {
 object AmpUrlsResource {
   @scala.inline
   def apply(
-    batchGet: js.Function1[
-      gapiDotClientDotAcceleratedmobilepageurlLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BatchGetAmpUrlsResponse]
-    ]
+    batchGet: gapiDotClientDotAcceleratedmobilepageurlLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[BatchGetAmpUrlsResponse]
   ): AmpUrlsResource = {
-    val __obj = js.Dynamic.literal(batchGet = batchGet)
+    val __obj = js.Dynamic.literal(batchGet = js.Any.fromFunction1(batchGet))
   
     __obj.asInstanceOf[AmpUrlsResource]
   }

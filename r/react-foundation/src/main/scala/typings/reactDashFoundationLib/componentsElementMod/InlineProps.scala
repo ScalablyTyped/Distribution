@@ -291,7 +291,7 @@ object InlineProps {
   @scala.inline
   def apply(
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLSpanElement] = null
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLSpanElement] = null
   ): InlineProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)

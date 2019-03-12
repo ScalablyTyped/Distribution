@@ -17,14 +17,14 @@ object Section {
   @scala.inline
   def apply(
     controls: xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.Control],
-    getLabel: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getParent: js.Function0[xrmLib.XrmNs.ControlsNs.Tab],
-    getVisible: js.Function0[scala.Boolean],
-    setLabel: js.Function1[java.lang.String, scala.Unit],
-    setVisible: js.Function1[scala.Boolean, scala.Unit]
+    getLabel: () => java.lang.String,
+    getName: () => java.lang.String,
+    getParent: () => xrmLib.XrmNs.ControlsNs.Tab,
+    getVisible: () => scala.Boolean,
+    setLabel: java.lang.String => scala.Unit,
+    setVisible: scala.Boolean => scala.Unit
   ): Section = {
-    val __obj = js.Dynamic.literal(controls = controls, getLabel = getLabel, getName = getName, getParent = getParent, getVisible = getVisible, setLabel = setLabel, setVisible = setVisible)
+    val __obj = js.Dynamic.literal(controls = controls, getLabel = js.Any.fromFunction0(getLabel), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getVisible = js.Any.fromFunction0(getVisible), setLabel = js.Any.fromFunction1(setLabel), setVisible = js.Any.fromFunction1(setVisible))
   
     __obj.asInstanceOf[Section]
   }

@@ -57,7 +57,7 @@ object ISchema {
   def apply[T](
     `type`: Types | js.Array[Types],
     allowEmpty: js.UndefOr[scala.Boolean] = js.undefined,
-    conform: js.Function2[/* value */ js.Any, /* data */ js.UndefOr[T], scala.Boolean] = null,
+    conform: (/* value */ js.Any, /* data */ js.UndefOr[T]) => scala.Boolean = null,
     default: js.Any = null,
     dependencies: java.lang.String = null,
     description: java.lang.String = null,
@@ -81,7 +81,7 @@ object ISchema {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty)
-    if (conform != null) __obj.updateDynamic("conform")(conform)
+    if (conform != null) __obj.updateDynamic("conform")(js.Any.fromFunction2(conform))
     if (default != null) __obj.updateDynamic("default")(default)
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
     if (description != null) __obj.updateDynamic("description")(description)

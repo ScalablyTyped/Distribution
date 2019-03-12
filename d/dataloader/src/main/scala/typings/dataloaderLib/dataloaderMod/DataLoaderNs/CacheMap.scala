@@ -14,13 +14,8 @@ trait CacheMap[K, V] extends js.Object {
 
 object CacheMap {
   @scala.inline
-  def apply[K, V](
-    clear: js.Function0[js.Any],
-    delete: js.Function1[K, js.Any],
-    get: js.Function1[K, V | scala.Unit],
-    set: js.Function2[K, V, js.Any]
-  ): CacheMap[K, V] = {
-    val __obj = js.Dynamic.literal(clear = clear, delete = delete, get = get, set = set)
+  def apply[K, V](clear: () => js.Any, delete: K => js.Any, get: K => V | scala.Unit, set: (K, V) => js.Any): CacheMap[K, V] = {
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
   
     __obj.asInstanceOf[CacheMap[K, V]]
   }

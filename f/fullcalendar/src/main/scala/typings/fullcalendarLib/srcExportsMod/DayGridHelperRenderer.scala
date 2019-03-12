@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "DayGridHelperRenderer")
 @js.native
 class DayGridHelperRenderer ()
-  extends fullcalendarLib.daygridhelperrendererMod.default
+  extends fullcalendarLib.dayGridHelperRendererMod.default
 

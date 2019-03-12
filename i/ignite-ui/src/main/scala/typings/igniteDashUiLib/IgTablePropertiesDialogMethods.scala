@@ -12,8 +12,8 @@ trait IgTablePropertiesDialogMethods extends js.Object {
 
 object IgTablePropertiesDialogMethods {
   @scala.inline
-  def apply(hide: js.Function0[scala.Unit], show: js.Function1[js.Object, scala.Unit]): IgTablePropertiesDialogMethods = {
-    val __obj = js.Dynamic.literal(hide = hide, show = show)
+  def apply(hide: () => scala.Unit, show: js.Object => scala.Unit): IgTablePropertiesDialogMethods = {
+    val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction1(show))
   
     __obj.asInstanceOf[IgTablePropertiesDialogMethods]
   }

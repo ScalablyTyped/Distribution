@@ -17,13 +17,13 @@ object RequestSettings {
   def apply(
     resourceId: java.lang.String,
     data: js.Any = null,
-    error: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    success: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+    error: /* repeated */ js.Any => scala.Unit = null,
+    success: /* repeated */ js.Any => scala.Unit = null
   ): RequestSettings = {
     val __obj = js.Dynamic.literal(resourceId = resourceId)
     if (data != null) __obj.updateDynamic("data")(data)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[RequestSettings]
   }
 }

@@ -25,23 +25,20 @@ trait GenericCollection[T] extends js.Object {
 object GenericCollection {
   @scala.inline
   def apply[T](
-    each: js.Function1[
-      js.Function3[
-        /* element */ T, 
-        /* index */ js.UndefOr[scala.Double], 
-        /* elements */ js.UndefOr[js.Array[T]], 
-        scala.Unit
-      ], 
-      js.Any
-    ],
+    each: js.Function3[
+      /* element */ T, 
+      /* index */ js.UndefOr[scala.Double], 
+      /* elements */ js.UndefOr[js.Array[T]], 
+      scala.Unit
+    ] => js.Any,
     elements: js.Array[T],
-    randomize: js.Function1[js.Any, GenericCollection[T]],
-    rename: js.Function1[java.lang.String, GenericCollection[T]],
-    select: js.Function0[GenericCollection[T]],
-    toGrid: js.Function2[scala.Double, scala.Double, GenericCollection[T]],
-    update: js.Function0[GenericCollection[T]]
+    randomize: js.Any => GenericCollection[T],
+    rename: java.lang.String => GenericCollection[T],
+    select: () => GenericCollection[T],
+    toGrid: (scala.Double, scala.Double) => GenericCollection[T],
+    update: () => GenericCollection[T]
   ): GenericCollection[T] = {
-    val __obj = js.Dynamic.literal(each = each, elements = elements, randomize = randomize, rename = rename, select = select, toGrid = toGrid, update = update)
+    val __obj = js.Dynamic.literal(each = js.Any.fromFunction1(each), elements = elements, randomize = js.Any.fromFunction1(randomize), rename = js.Any.fromFunction1(rename), select = js.Any.fromFunction0(select), toGrid = js.Any.fromFunction2(toGrid), update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[GenericCollection[T]]
   }

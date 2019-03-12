@@ -25,37 +25,22 @@ trait keyword extends js.Object {
 object keyword {
   @scala.inline
   def apply(
-    ansi16: js.Function1[
-      colorDashConvertLib.conversionsMod.KEYWORD, 
-      colorDashConvertLib.conversionsMod.ANSI16
-    ],
-    ansi256: js.Function1[
-      colorDashConvertLib.conversionsMod.KEYWORD, 
-      colorDashConvertLib.conversionsMod.ANSI256
-    ],
-    apple: js.Function1[
-      colorDashConvertLib.conversionsMod.KEYWORD, 
-      colorDashConvertLib.conversionsMod.APPLE
-    ],
-    cmyk: js.Function1[
-      colorDashConvertLib.conversionsMod.KEYWORD, 
-      colorDashConvertLib.conversionsMod.CMYK
-    ],
-    gray: js.Function1[
-      colorDashConvertLib.conversionsMod.KEYWORD, 
-      colorDashConvertLib.conversionsMod.GRAY
-    ],
-    hcg: js.Function1[colorDashConvertLib.conversionsMod.KEYWORD, colorDashConvertLib.conversionsMod.HCG],
-    hex: js.Function1[colorDashConvertLib.conversionsMod.KEYWORD, colorDashConvertLib.conversionsMod.HEX],
-    hsl: js.Function1[colorDashConvertLib.conversionsMod.KEYWORD, colorDashConvertLib.conversionsMod.HSL],
-    hsv: js.Function1[colorDashConvertLib.conversionsMod.KEYWORD, colorDashConvertLib.conversionsMod.HSV],
-    hwb: js.Function1[colorDashConvertLib.conversionsMod.KEYWORD, colorDashConvertLib.conversionsMod.HWB],
-    lab: js.Function1[colorDashConvertLib.conversionsMod.KEYWORD, colorDashConvertLib.conversionsMod.LAB],
-    lch: js.Function1[colorDashConvertLib.conversionsMod.KEYWORD, colorDashConvertLib.conversionsMod.LCH],
-    rgb: js.Function1[colorDashConvertLib.conversionsMod.KEYWORD, colorDashConvertLib.conversionsMod.RGB],
-    xyz: js.Function1[colorDashConvertLib.conversionsMod.KEYWORD, colorDashConvertLib.conversionsMod.XYZ]
+    ansi16: colorDashConvertLib.conversionsMod.KEYWORD => colorDashConvertLib.conversionsMod.ANSI16,
+    ansi256: colorDashConvertLib.conversionsMod.KEYWORD => colorDashConvertLib.conversionsMod.ANSI256,
+    apple: colorDashConvertLib.conversionsMod.KEYWORD => colorDashConvertLib.conversionsMod.APPLE,
+    cmyk: colorDashConvertLib.conversionsMod.KEYWORD => colorDashConvertLib.conversionsMod.CMYK,
+    gray: colorDashConvertLib.conversionsMod.KEYWORD => colorDashConvertLib.conversionsMod.GRAY,
+    hcg: colorDashConvertLib.conversionsMod.KEYWORD => colorDashConvertLib.conversionsMod.HCG,
+    hex: colorDashConvertLib.conversionsMod.KEYWORD => colorDashConvertLib.conversionsMod.HEX,
+    hsl: colorDashConvertLib.conversionsMod.KEYWORD => colorDashConvertLib.conversionsMod.HSL,
+    hsv: colorDashConvertLib.conversionsMod.KEYWORD => colorDashConvertLib.conversionsMod.HSV,
+    hwb: colorDashConvertLib.conversionsMod.KEYWORD => colorDashConvertLib.conversionsMod.HWB,
+    lab: colorDashConvertLib.conversionsMod.KEYWORD => colorDashConvertLib.conversionsMod.LAB,
+    lch: colorDashConvertLib.conversionsMod.KEYWORD => colorDashConvertLib.conversionsMod.LCH,
+    rgb: colorDashConvertLib.conversionsMod.KEYWORD => colorDashConvertLib.conversionsMod.RGB,
+    xyz: colorDashConvertLib.conversionsMod.KEYWORD => colorDashConvertLib.conversionsMod.XYZ
   ): keyword = {
-    val __obj = js.Dynamic.literal(ansi16 = ansi16, ansi256 = ansi256, apple = apple, cmyk = cmyk, gray = gray, hcg = hcg, hex = hex, hsl = hsl, hsv = hsv, hwb = hwb, lab = lab, lch = lch, rgb = rgb, xyz = xyz)
+    val __obj = js.Dynamic.literal(ansi16 = js.Any.fromFunction1(ansi16), ansi256 = js.Any.fromFunction1(ansi256), apple = js.Any.fromFunction1(apple), cmyk = js.Any.fromFunction1(cmyk), gray = js.Any.fromFunction1(gray), hcg = js.Any.fromFunction1(hcg), hex = js.Any.fromFunction1(hex), hsl = js.Any.fromFunction1(hsl), hsv = js.Any.fromFunction1(hsv), hwb = js.Any.fromFunction1(hwb), lab = js.Any.fromFunction1(lab), lch = js.Any.fromFunction1(lch), rgb = js.Any.fromFunction1(rgb), xyz = js.Any.fromFunction1(xyz))
   
     __obj.asInstanceOf[keyword]
   }

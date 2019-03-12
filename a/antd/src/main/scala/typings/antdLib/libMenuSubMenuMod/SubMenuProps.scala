@@ -21,9 +21,9 @@ object SubMenuProps {
   def apply(
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    onTitleClick: js.Function1[/* e */ TitleEventEntity, scala.Unit] = null,
-    onTitleMouseEnter: js.Function1[/* e */ TitleEventEntity, scala.Unit] = null,
-    onTitleMouseLeave: js.Function1[/* e */ TitleEventEntity, scala.Unit] = null,
+    onTitleClick: /* e */ TitleEventEntity => scala.Unit = null,
+    onTitleMouseEnter: /* e */ TitleEventEntity => scala.Unit = null,
+    onTitleMouseLeave: /* e */ TitleEventEntity => scala.Unit = null,
     rootPrefixCls: java.lang.String = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     title: reactLib.reactMod.ReactNs.ReactNode = null
@@ -31,9 +31,9 @@ object SubMenuProps {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (onTitleClick != null) __obj.updateDynamic("onTitleClick")(onTitleClick)
-    if (onTitleMouseEnter != null) __obj.updateDynamic("onTitleMouseEnter")(onTitleMouseEnter)
-    if (onTitleMouseLeave != null) __obj.updateDynamic("onTitleMouseLeave")(onTitleMouseLeave)
+    if (onTitleClick != null) __obj.updateDynamic("onTitleClick")(js.Any.fromFunction1(onTitleClick))
+    if (onTitleMouseEnter != null) __obj.updateDynamic("onTitleMouseEnter")(js.Any.fromFunction1(onTitleMouseEnter))
+    if (onTitleMouseLeave != null) __obj.updateDynamic("onTitleMouseLeave")(js.Any.fromFunction1(onTitleMouseLeave))
     if (rootPrefixCls != null) __obj.updateDynamic("rootPrefixCls")(rootPrefixCls)
     if (style != null) __obj.updateDynamic("style")(style)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

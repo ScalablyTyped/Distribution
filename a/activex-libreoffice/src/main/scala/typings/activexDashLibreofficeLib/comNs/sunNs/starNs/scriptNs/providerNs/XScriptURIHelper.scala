@@ -38,14 +38,14 @@ object XScriptURIHelper {
   @scala.inline
   def apply(
     RootStorageURI: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getRootStorageURI: js.Function0[java.lang.String],
-    getScriptURI: js.Function1[java.lang.String, java.lang.String],
-    getStorageURI: js.Function1[java.lang.String, java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getRootStorageURI: () => java.lang.String,
+    getScriptURI: java.lang.String => java.lang.String,
+    getStorageURI: java.lang.String => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XScriptURIHelper = {
-    val __obj = js.Dynamic.literal(RootStorageURI = RootStorageURI, acquire = acquire, getRootStorageURI = getRootStorageURI, getScriptURI = getScriptURI, getStorageURI = getStorageURI, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(RootStorageURI = RootStorageURI, acquire = js.Any.fromFunction0(acquire), getRootStorageURI = js.Any.fromFunction0(getRootStorageURI), getScriptURI = js.Any.fromFunction1(getScriptURI), getStorageURI = js.Any.fromFunction1(getStorageURI), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XScriptURIHelper]
   }

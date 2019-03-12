@@ -22,13 +22,13 @@ trait XConfirmDeleteListener
 object XConfirmDeleteListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    confirmDelete: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbNs.RowChangeEvent, scala.Boolean],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    confirmDelete: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbNs.RowChangeEvent => scala.Boolean,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XConfirmDeleteListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, confirmDelete = confirmDelete, disposing = disposing, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), confirmDelete = js.Any.fromFunction1(confirmDelete), disposing = js.Any.fromFunction1(disposing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XConfirmDeleteListener]
   }

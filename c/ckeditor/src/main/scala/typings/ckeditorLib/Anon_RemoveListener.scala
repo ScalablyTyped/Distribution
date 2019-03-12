@@ -11,8 +11,8 @@ trait Anon_RemoveListener extends js.Object {
 
 object Anon_RemoveListener {
   @scala.inline
-  def apply(removeListener: js.Function0[scala.Unit]): Anon_RemoveListener = {
-    val __obj = js.Dynamic.literal(removeListener = removeListener)
+  def apply(removeListener: () => scala.Unit): Anon_RemoveListener = {
+    val __obj = js.Dynamic.literal(removeListener = js.Any.fromFunction0(removeListener))
   
     __obj.asInstanceOf[Anon_RemoveListener]
   }

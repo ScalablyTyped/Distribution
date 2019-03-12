@@ -11,10 +11,8 @@ trait IMediaExtension extends js.Object {
 
 object IMediaExtension {
   @scala.inline
-  def apply(
-    setProperties: js.Function1[winrtLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet, scala.Unit]
-  ): IMediaExtension = {
-    val __obj = js.Dynamic.literal(setProperties = setProperties)
+  def apply(setProperties: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet => scala.Unit): IMediaExtension = {
+    val __obj = js.Dynamic.literal(setProperties = js.Any.fromFunction1(setProperties))
   
     __obj.asInstanceOf[IMediaExtension]
   }

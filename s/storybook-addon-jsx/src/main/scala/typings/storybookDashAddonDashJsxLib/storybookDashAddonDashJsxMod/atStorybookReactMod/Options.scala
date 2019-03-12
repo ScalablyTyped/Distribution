@@ -19,13 +19,13 @@ object Options {
   def apply(
     displayName: java.lang.String | storybookDashAddonDashJsxLib.storybookDashAddonDashJsxMod.displayNameFunc = null,
     enableBeautify: js.UndefOr[scala.Boolean] = js.undefined,
-    onBeforeRender: js.Function1[/* domString */ java.lang.String, java.lang.String] = null,
+    onBeforeRender: /* domString */ java.lang.String => java.lang.String = null,
     skip: scala.Int | scala.Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (!js.isUndefined(enableBeautify)) __obj.updateDynamic("enableBeautify")(enableBeautify)
-    if (onBeforeRender != null) __obj.updateDynamic("onBeforeRender")(onBeforeRender)
+    if (onBeforeRender != null) __obj.updateDynamic("onBeforeRender")(js.Any.fromFunction1(onBeforeRender))
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

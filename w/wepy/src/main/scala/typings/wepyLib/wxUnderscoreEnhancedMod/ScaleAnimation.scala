@@ -16,13 +16,13 @@ trait ScaleAnimation extends js.Object {
 object ScaleAnimation {
   @scala.inline
   def apply(
-    scale: js.Function1[scala.Double, Animation],
-    scale3d: js.Function0[Animation],
-    scaleX: js.Function1[scala.Double, Animation],
-    scaleY: js.Function1[scala.Double, Animation],
-    scaleZ: js.Function1[scala.Double, Animation]
+    scale: scala.Double => Animation,
+    scale3d: () => Animation,
+    scaleX: scala.Double => Animation,
+    scaleY: scala.Double => Animation,
+    scaleZ: scala.Double => Animation
   ): ScaleAnimation = {
-    val __obj = js.Dynamic.literal(scale = scale, scale3d = scale3d, scaleX = scaleX, scaleY = scaleY, scaleZ = scaleZ)
+    val __obj = js.Dynamic.literal(scale = js.Any.fromFunction1(scale), scale3d = js.Any.fromFunction0(scale3d), scaleX = js.Any.fromFunction1(scaleX), scaleY = js.Any.fromFunction1(scaleY), scaleZ = js.Any.fromFunction1(scaleZ))
   
     __obj.asInstanceOf[ScaleAnimation]
   }

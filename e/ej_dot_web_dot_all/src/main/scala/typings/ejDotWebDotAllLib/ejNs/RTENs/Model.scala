@@ -293,14 +293,14 @@ object Model {
     allowKeyboardNavigation: js.UndefOr[scala.Boolean] = js.undefined,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     autoHeight: js.UndefOr[scala.Boolean] = js.undefined,
-    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    change: /* e */ ChangeEventArgs => scala.Unit = null,
     colorCode: js.Any = null,
     colorPaletteColumns: scala.Int | scala.Double = null,
     colorPaletteRows: scala.Int | scala.Double = null,
-    contextMenuClick: js.Function1[/* e */ ContextMenuClickEventArgs, scala.Unit] = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    contextMenuClick: /* e */ ContextMenuClickEventArgs => scala.Unit = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     enableHtmlEncode: js.UndefOr[scala.Boolean] = js.undefined,
     enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
@@ -308,7 +308,7 @@ object Model {
     enableTabKeyNavigation: js.UndefOr[scala.Boolean] = js.undefined,
     enableXHTML: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
-    execute: js.Function1[/* e */ ExecuteEventArgs, scala.Unit] = null,
+    execute: /* e */ ExecuteEventArgs => scala.Unit = null,
     exportToPdfSettings: ExportToPdfSettings = null,
     exportToWordSettings: ExportToWordSettings = null,
     externalCSS: java.lang.String = null,
@@ -322,8 +322,8 @@ object Model {
     imageBrowser: ImageBrowser = null,
     importSettings: ImportSettings = null,
     isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
-    keydown: js.Function1[/* e */ KeydownEventArgs, scala.Unit] = null,
-    keyup: js.Function1[/* e */ KeyupEventArgs, scala.Unit] = null,
+    keydown: /* e */ KeydownEventArgs => scala.Unit = null,
+    keyup: /* e */ KeyupEventArgs => scala.Unit = null,
     locale: java.lang.String = null,
     maxHeight: java.lang.String | scala.Double = null,
     maxLength: scala.Int | scala.Double = null,
@@ -332,8 +332,8 @@ object Model {
     minWidth: java.lang.String | scala.Double = null,
     name: java.lang.String = null,
     pasteCleanupSettings: PasteCleanupSettings = null,
-    preRender: js.Function1[/* e */ PreRenderEventArgs, scala.Unit] = null,
-    select: js.Function1[/* e */ SelectEventArgs, scala.Unit] = null,
+    preRender: /* e */ PreRenderEventArgs => scala.Unit = null,
+    select: /* e */ SelectEventArgs => scala.Unit = null,
     showCharCount: js.UndefOr[scala.Boolean] = js.undefined,
     showClearAll: js.UndefOr[scala.Boolean] = js.undefined,
     showClearFormat: js.UndefOr[scala.Boolean] = js.undefined,
@@ -365,14 +365,14 @@ object Model {
     if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation)
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (colorCode != null) __obj.updateDynamic("colorCode")(colorCode)
     if (colorPaletteColumns != null) __obj.updateDynamic("colorPaletteColumns")(colorPaletteColumns.asInstanceOf[js.Any])
     if (colorPaletteRows != null) __obj.updateDynamic("colorPaletteRows")(colorPaletteRows.asInstanceOf[js.Any])
-    if (contextMenuClick != null) __obj.updateDynamic("contextMenuClick")(contextMenuClick)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (contextMenuClick != null) __obj.updateDynamic("contextMenuClick")(js.Any.fromFunction1(contextMenuClick))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(enableHtmlEncode)) __obj.updateDynamic("enableHtmlEncode")(enableHtmlEncode)
     if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
@@ -380,7 +380,7 @@ object Model {
     if (!js.isUndefined(enableTabKeyNavigation)) __obj.updateDynamic("enableTabKeyNavigation")(enableTabKeyNavigation)
     if (!js.isUndefined(enableXHTML)) __obj.updateDynamic("enableXHTML")(enableXHTML)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (execute != null) __obj.updateDynamic("execute")(execute)
+    if (execute != null) __obj.updateDynamic("execute")(js.Any.fromFunction1(execute))
     if (exportToPdfSettings != null) __obj.updateDynamic("exportToPdfSettings")(exportToPdfSettings)
     if (exportToWordSettings != null) __obj.updateDynamic("exportToWordSettings")(exportToWordSettings)
     if (externalCSS != null) __obj.updateDynamic("externalCSS")(externalCSS)
@@ -394,8 +394,8 @@ object Model {
     if (imageBrowser != null) __obj.updateDynamic("imageBrowser")(imageBrowser)
     if (importSettings != null) __obj.updateDynamic("importSettings")(importSettings)
     if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
-    if (keydown != null) __obj.updateDynamic("keydown")(keydown)
-    if (keyup != null) __obj.updateDynamic("keyup")(keyup)
+    if (keydown != null) __obj.updateDynamic("keydown")(js.Any.fromFunction1(keydown))
+    if (keyup != null) __obj.updateDynamic("keyup")(js.Any.fromFunction1(keyup))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
@@ -404,8 +404,8 @@ object Model {
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (pasteCleanupSettings != null) __obj.updateDynamic("pasteCleanupSettings")(pasteCleanupSettings)
-    if (preRender != null) __obj.updateDynamic("preRender")(preRender)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (preRender != null) __obj.updateDynamic("preRender")(js.Any.fromFunction1(preRender))
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (!js.isUndefined(showCharCount)) __obj.updateDynamic("showCharCount")(showCharCount)
     if (!js.isUndefined(showClearAll)) __obj.updateDynamic("showClearAll")(showClearAll)
     if (!js.isUndefined(showClearFormat)) __obj.updateDynamic("showClearFormat")(showClearFormat)

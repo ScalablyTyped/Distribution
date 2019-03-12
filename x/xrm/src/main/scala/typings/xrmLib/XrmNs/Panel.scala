@@ -22,8 +22,8 @@ trait Panel extends js.Object {
 
 object Panel {
   @scala.inline
-  def apply(loadPanel: js.Function2[java.lang.String, java.lang.String, scala.Unit]): Panel = {
-    val __obj = js.Dynamic.literal(loadPanel = loadPanel)
+  def apply(loadPanel: (java.lang.String, java.lang.String) => scala.Unit): Panel = {
+    val __obj = js.Dynamic.literal(loadPanel = js.Any.fromFunction2(loadPanel))
   
     __obj.asInstanceOf[Panel]
   }

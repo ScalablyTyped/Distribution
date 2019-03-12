@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.Graphic")
 @js.native
 class Graphic protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var Brightness: scala.Double = js.native
   var ColorType: activexDashOfficeLib.OfficeNs.MsoPictureColorType = js.native
   var Contrast: scala.Double = js.native

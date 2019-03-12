@@ -50,19 +50,19 @@ object confirmOptions {
     columnClass: java.lang.String = null,
     containerFluid: js.UndefOr[scala.Boolean] = js.undefined,
     content: js.Any = null,
-    contentLoaded: js.Function0[scala.Unit] = null,
+    contentLoaded: () => scala.Unit = null,
     dragWindowBorder: js.UndefOr[scala.Boolean] = js.undefined,
     dragWindowGap: scala.Int | scala.Double = null,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
     escapeKey: java.lang.String | scala.Boolean = null,
     icon: java.lang.String = null,
     lazyOpen: js.UndefOr[scala.Boolean] = js.undefined,
-    onAction: js.Function0[scala.Unit] = null,
-    onClose: js.Function0[scala.Unit] = null,
+    onAction: () => scala.Unit = null,
+    onClose: () => scala.Unit = null,
     onContentReady: js.Any = null,
-    onDestroy: js.Function0[scala.Unit] = null,
-    onOpen: js.Function0[scala.Unit] = null,
-    onOpenBefore: js.Function0[scala.Unit] = null,
+    onDestroy: () => scala.Unit = null,
+    onOpen: () => scala.Unit = null,
+    onOpenBefore: () => scala.Unit = null,
     title: java.lang.String | scala.Boolean = null,
     `type`: java.lang.String = null,
     typeAnimated: js.UndefOr[scala.Boolean] = js.undefined,
@@ -80,19 +80,19 @@ object confirmOptions {
     if (columnClass != null) __obj.updateDynamic("columnClass")(columnClass)
     if (!js.isUndefined(containerFluid)) __obj.updateDynamic("containerFluid")(containerFluid)
     if (content != null) __obj.updateDynamic("content")(content)
-    if (contentLoaded != null) __obj.updateDynamic("contentLoaded")(contentLoaded)
+    if (contentLoaded != null) __obj.updateDynamic("contentLoaded")(js.Any.fromFunction0(contentLoaded))
     if (!js.isUndefined(dragWindowBorder)) __obj.updateDynamic("dragWindowBorder")(dragWindowBorder)
     if (dragWindowGap != null) __obj.updateDynamic("dragWindowGap")(dragWindowGap.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
     if (escapeKey != null) __obj.updateDynamic("escapeKey")(escapeKey.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (!js.isUndefined(lazyOpen)) __obj.updateDynamic("lazyOpen")(lazyOpen)
-    if (onAction != null) __obj.updateDynamic("onAction")(onAction)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onAction != null) __obj.updateDynamic("onAction")(js.Any.fromFunction0(onAction))
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     if (onContentReady != null) __obj.updateDynamic("onContentReady")(onContentReady)
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(onDestroy)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
-    if (onOpenBefore != null) __obj.updateDynamic("onOpenBefore")(onOpenBefore)
+    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
+    if (onOpenBefore != null) __obj.updateDynamic("onOpenBefore")(js.Any.fromFunction0(onOpenBefore))
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(typeAnimated)) __obj.updateDynamic("typeAnimated")(typeAnimated)

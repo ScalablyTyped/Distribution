@@ -18,16 +18,10 @@ trait CampaignCreativeAssociationsResource extends js.Object {
 object CampaignCreativeAssociationsResource {
   @scala.inline
   def apply(
-    insert: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltCampaignId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CampaignCreativeAssociation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltCampaignIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CampaignCreativeAssociationsListResponse]
-    ]
+    insert: gapiDotClientDotDfareportingLib.Anon_AltCampaignId => gapiDotClientLib.gapiNs.clientNs.Request[CampaignCreativeAssociation],
+    list: gapiDotClientDotDfareportingLib.Anon_AltCampaignIdFields => gapiDotClientLib.gapiNs.clientNs.Request[CampaignCreativeAssociationsListResponse]
   ): CampaignCreativeAssociationsResource = {
-    val __obj = js.Dynamic.literal(insert = insert, list = list)
+    val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[CampaignCreativeAssociationsResource]
   }

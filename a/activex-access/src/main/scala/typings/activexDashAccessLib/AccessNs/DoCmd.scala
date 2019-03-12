@@ -99,15 +99,6 @@ class DoCmd protected () extends js.Object {
   def Echo(EchoOn: scala.Boolean): scala.Unit = js.native
   def Echo(EchoOn: scala.Boolean, StatusBarText: java.lang.String): scala.Unit = js.native
   def FindNext(): scala.Unit = js.native
-  def FindRecord(
-    FindWhat: activexDashInteropLib.VarDate,
-    Match: js.UndefOr[AcFindMatch],
-    MatchCase: js.UndefOr[scala.Boolean],
-    Search: js.UndefOr[AcSearchDirection],
-    SearchAsFormatted: js.UndefOr[scala.Boolean],
-    OnlyCurrentField: js.UndefOr[AcFindField],
-    FindFirst: js.UndefOr[scala.Boolean]
-  ): scala.Unit = js.native
   /**
     * @param Match [Match=1]
     * @param MatchCase [MatchCase=false]
@@ -126,6 +117,15 @@ class DoCmd protected () extends js.Object {
   ): scala.Unit = js.native
   def FindRecord(
     FindWhat: scala.Double,
+    Match: js.UndefOr[AcFindMatch],
+    MatchCase: js.UndefOr[scala.Boolean],
+    Search: js.UndefOr[AcSearchDirection],
+    SearchAsFormatted: js.UndefOr[scala.Boolean],
+    OnlyCurrentField: js.UndefOr[AcFindField],
+    FindFirst: js.UndefOr[scala.Boolean]
+  ): scala.Unit = js.native
+  def FindRecord(
+    FindWhat: stdLib.VarDate,
     Match: js.UndefOr[AcFindMatch],
     MatchCase: js.UndefOr[scala.Boolean],
     Search: js.UndefOr[AcSearchDirection],

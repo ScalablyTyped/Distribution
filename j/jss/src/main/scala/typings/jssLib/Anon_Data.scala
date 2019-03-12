@@ -17,19 +17,14 @@ trait Anon_Data extends js.Object {
 object Anon_Data {
   @scala.inline
   def apply(
-    onChangeValue: js.Function3[js.Any, java.lang.String, jssLib.jssMod.Rule, js.Any],
-    onCreateRule: js.Function3[java.lang.String, jssLib.cssMod.Style, jssLib.jssMod.RuleOptions, jssLib.jssMod.Rule],
-    onProcessRule: js.Function2[jssLib.jssMod.Rule, jssLib.jssMod.StyleSheet[_], scala.Unit],
-    onProcessSheet: js.Function1[jssLib.jssMod.StyleSheet[_], scala.Unit],
-    onProcessStyle: js.Function3[
-      jssLib.cssMod.Style, 
-      jssLib.jssMod.Rule, 
-      jssLib.jssMod.StyleSheet[_], 
-      jssLib.cssMod.Style
-    ],
-    onUpdate: js.Function3[js.Object, jssLib.jssMod.Rule, jssLib.jssMod.StyleSheet[_], scala.Unit]
+    onChangeValue: (js.Any, java.lang.String, jssLib.jssMod.Rule) => js.Any,
+    onCreateRule: (java.lang.String, jssLib.cssMod.Style, jssLib.jssMod.RuleOptions) => jssLib.jssMod.Rule,
+    onProcessRule: (jssLib.jssMod.Rule, jssLib.jssMod.StyleSheet[_]) => scala.Unit,
+    onProcessSheet: jssLib.jssMod.StyleSheet[_] => scala.Unit,
+    onProcessStyle: (jssLib.cssMod.Style, jssLib.jssMod.Rule, jssLib.jssMod.StyleSheet[_]) => jssLib.cssMod.Style,
+    onUpdate: (js.Object, jssLib.jssMod.Rule, jssLib.jssMod.StyleSheet[_]) => scala.Unit
   ): Anon_Data = {
-    val __obj = js.Dynamic.literal(onChangeValue = onChangeValue, onCreateRule = onCreateRule, onProcessRule = onProcessRule, onProcessSheet = onProcessSheet, onProcessStyle = onProcessStyle, onUpdate = onUpdate)
+    val __obj = js.Dynamic.literal(onChangeValue = js.Any.fromFunction3(onChangeValue), onCreateRule = js.Any.fromFunction3(onCreateRule), onProcessRule = js.Any.fromFunction2(onProcessRule), onProcessSheet = js.Any.fromFunction1(onProcessSheet), onProcessStyle = js.Any.fromFunction3(onProcessStyle), onUpdate = js.Any.fromFunction3(onUpdate))
   
     __obj.asInstanceOf[Anon_Data]
   }

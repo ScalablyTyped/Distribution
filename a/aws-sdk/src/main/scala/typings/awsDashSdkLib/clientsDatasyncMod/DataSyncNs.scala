@@ -27,7 +27,7 @@ object DataSyncNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the task execution to cancel.
       */
-    var TaskExecutionArn: TaskExecutionArn
+    var TaskExecutionArn: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.TaskExecutionArn
   }
   
   trait CancelTaskExecutionResponse extends js.Object
@@ -43,7 +43,7 @@ object DataSyncNs extends js.Object {
     /**
       * Your agent activation key. You can get the activation key either by sending an HTTP GET request with redirects that enable you to get the agent IP address (port 80). Alternatively, you can get it from the AWS DataSync console.  The redirect URL returned in the response provides you the activation key for your agent in the query string parameter activationKey. It might also include other activation-related parameters; however, these are merely defaults. The arguments you pass to this API call determine the actual configuration of your agent. For more information, see Activating a Sync Agent in the AWS DataSync User Guide. 
       */
-    var ActivationKey: ActivationKey
+    var ActivationKey: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.ActivationKey
     /**
       * The name you configured for your agent. This value is a text reference that is used to identify the agent in the console.
       */
@@ -65,15 +65,15 @@ object DataSyncNs extends js.Object {
     /**
       * The subnet and security group that the Amazon EFS file system uses.
       */
-    var Ec2Config: Ec2Config
+    var Ec2Config: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.Ec2Config
     /**
       * The Amazon Resource Name (ARN) for the Amazon EFS file system.
       */
-    var EfsFilesystemArn: EfsFilesystemArn
+    var EfsFilesystemArn: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.EfsFilesystemArn
     /**
       * A subdirectory in the location’s path. This subdirectory in the EFS file system is used to read data from the EFS source location or write data to the EFS destination. By default, AWS DataSync uses the root directory.
       */
-    var Subdirectory: Subdirectory
+    var Subdirectory: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.Subdirectory
     /**
       * The key-value pair that represents a tag that you want to add to the resource. The value can be an empty string. This value helps you manage, filter, and search for your resources. We recommend that you create a name tag for your location.
       */
@@ -91,15 +91,15 @@ object DataSyncNs extends js.Object {
     /**
       * Contains a list of Amazon Resource Names (ARNs) of agents that are used to connect to an NFS server.
       */
-    var OnPremConfig: OnPremConfig
+    var OnPremConfig: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.OnPremConfig
     /**
       * The name of the NFS server. This value is the IP address or Domain Name Service (DNS) name of the NFS server. An agent that is installed on-premises uses this host name to mount the NFS server in a network.   This name must either be DNS-compliant or must be an IP version 4 (IPv4) address. 
       */
-    var ServerHostname: ServerHostname
+    var ServerHostname: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.ServerHostname
     /**
       * The subdirectory in the NFS file system that is used to read data from the NFS source location or write data to the NFS destination. The NFS path should be a path that's exported by the NFS server, or a subdirectory of that path. The path should be such that it can be mounted by other NFS clients in your network.  To see all the paths exported by your NFS server. run "showmount -e nfs-server-name" from an NFS client that has access to your server. You can specify any directory that appears in the results, and any subdirectory of that directory. Ensure that the NFS export is accessible without Kerberos authentication.  To transfer all the data in the folder you specified, DataSync needs to have permissions to read all the data. To ensure this, either configure the NFS export with no_root_squash, or ensure that the permissions for all of the files that you want sync allow read access for all users. Doing either enables the agent to read the files. For the agent to access directories, you must additionally enable all execute access. For information about NFS export configuration, see 18.7. The /etc/exports Configuration File in the Centos documentation. 
       */
-    var Subdirectory: Subdirectory
+    var Subdirectory: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.Subdirectory
     /**
       * The key-value pair that represents the tag that you want to add to the location. The value can be an empty string. We recommend using tags to name your resources.
       */
@@ -117,12 +117,12 @@ object DataSyncNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the Amazon S3 bucket.
       */
-    var S3BucketArn: S3BucketArn
-    var S3Config: S3Config
+    var S3BucketArn: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.S3BucketArn
+    var S3Config: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.S3Config
     /**
       * A subdirectory in the Amazon S3 bucket. This subdirectory in Amazon S3 is used to read data from the S3 source location or write data to the S3 destination.
       */
-    var Subdirectory: Subdirectory
+    var Subdirectory: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.Subdirectory
     /**
       * The key-value pair that represents the tag that you want to add to the location. The value can be an empty string. We recommend using tags to name your resources.
       */
@@ -174,7 +174,7 @@ object DataSyncNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the agent to delete. Use the ListAgents operation to return a list of agents for your account and AWS Region.
       */
-    var AgentArn: AgentArn
+    var AgentArn: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.AgentArn
   }
   
   trait DeleteAgentResponse extends js.Object
@@ -183,7 +183,7 @@ object DataSyncNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the location to delete.
       */
-    var LocationArn: LocationArn
+    var LocationArn: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.LocationArn
   }
   
   trait DeleteLocationResponse extends js.Object
@@ -192,7 +192,7 @@ object DataSyncNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the task to delete.
       */
-    var TaskArn: TaskArn
+    var TaskArn: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.TaskArn
   }
   
   trait DeleteTaskResponse extends js.Object
@@ -201,7 +201,7 @@ object DataSyncNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the agent to describe.
       */
-    var AgentArn: AgentArn
+    var AgentArn: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.AgentArn
   }
   
   trait DescribeAgentResponse extends js.Object {
@@ -231,7 +231,7 @@ object DataSyncNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the EFS location to describe.
       */
-    var LocationArn: LocationArn
+    var LocationArn: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.LocationArn
   }
   
   trait DescribeLocationEfsResponse extends js.Object {
@@ -254,7 +254,7 @@ object DataSyncNs extends js.Object {
     /**
       * The Amazon resource Name (ARN) of the NFS location to describe.
       */
-    var LocationArn: LocationArn
+    var LocationArn: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.LocationArn
   }
   
   trait DescribeLocationNfsResponse extends js.Object {
@@ -277,7 +277,7 @@ object DataSyncNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the Amazon S3 bucket location to describe.
       */
-    var LocationArn: LocationArn
+    var LocationArn: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.LocationArn
   }
   
   trait DescribeLocationS3Response extends js.Object {
@@ -300,7 +300,7 @@ object DataSyncNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the task that is being executed.
       */
-    var TaskExecutionArn: TaskExecutionArn
+    var TaskExecutionArn: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.TaskExecutionArn
   }
   
   trait DescribeTaskExecutionResponse extends js.Object {
@@ -347,7 +347,7 @@ object DataSyncNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the task to describe.
       */
-    var TaskArn: TaskArn
+    var TaskArn: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.TaskArn
   }
   
   trait DescribeTaskResponse extends js.Object {
@@ -595,7 +595,7 @@ object DataSyncNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the task to start.
       */
-    var TaskArn: TaskArn
+    var TaskArn: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.TaskArn
   }
   
   trait StartTaskExecutionResponse extends js.Object {
@@ -1289,7 +1289,7 @@ object DataSyncNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the agent to update.
       */
-    var AgentArn: AgentArn
+    var AgentArn: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.AgentArn
     /**
       * The name that you want to use to configure the agent.
       */
@@ -1307,7 +1307,7 @@ object DataSyncNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the resource name of the task to update.
       */
-    var TaskArn: TaskArn
+    var TaskArn: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.TaskArn
   }
   
   trait UpdateTaskResponse extends js.Object

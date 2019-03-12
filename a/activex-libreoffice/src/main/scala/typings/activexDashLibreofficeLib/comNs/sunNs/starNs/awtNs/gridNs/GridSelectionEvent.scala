@@ -13,16 +13,16 @@ import scala.scalajs.js.annotation._
 trait GridSelectionEvent
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject {
   /** denotes the indexes of the columns being selected at the time the event was fired. */
-  var SelectedColumnIndexes: activexDashInteropLib.SafeArray[scala.Double]
+  var SelectedColumnIndexes: stdLib.SafeArray[scala.Double]
   /** denotes the indexes of the rows being selected at the time the event was fired. */
-  var SelectedRowIndexes: activexDashInteropLib.SafeArray[scala.Double]
+  var SelectedRowIndexes: stdLib.SafeArray[scala.Double]
 }
 
 object GridSelectionEvent {
   @scala.inline
   def apply(
-    SelectedColumnIndexes: activexDashInteropLib.SafeArray[scala.Double],
-    SelectedRowIndexes: activexDashInteropLib.SafeArray[scala.Double],
+    SelectedColumnIndexes: stdLib.SafeArray[scala.Double],
+    SelectedRowIndexes: stdLib.SafeArray[scala.Double],
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): GridSelectionEvent = {
     val __obj = js.Dynamic.literal(SelectedColumnIndexes = SelectedColumnIndexes, SelectedRowIndexes = SelectedRowIndexes, Source = Source)

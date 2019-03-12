@@ -42,12 +42,12 @@ object GMXMLHttpRequestOptions {
     context: js.Any = null,
     data: java.lang.String = null,
     headers: js.Object = null,
-    onabort: js.Function1[/* response */ GMXMLHttpRequestResponse, _] = null,
-    onerror: js.Function1[/* response */ GMXMLHttpRequestResponse, _] = null,
-    onload: js.Function1[/* response */ GMXMLHttpRequestResponse, _] = null,
-    onprogress: js.Function1[/* response */ GMXMLHttpRequestProgressResponse, _] = null,
-    onreadystatechange: js.Function1[/* response */ GMXMLHttpRequestResponse, _] = null,
-    ontimeout: js.Function1[/* response */ GMXMLHttpRequestResponse, _] = null,
+    onabort: /* response */ GMXMLHttpRequestResponse => _ = null,
+    onerror: /* response */ GMXMLHttpRequestResponse => _ = null,
+    onload: /* response */ GMXMLHttpRequestResponse => _ = null,
+    onprogress: /* response */ GMXMLHttpRequestProgressResponse => _ = null,
+    onreadystatechange: /* response */ GMXMLHttpRequestResponse => _ = null,
+    ontimeout: /* response */ GMXMLHttpRequestResponse => _ = null,
     overrideMimeType: java.lang.String = null,
     password: java.lang.String = null,
     synchronous: js.UndefOr[scala.Boolean] = js.undefined,
@@ -60,12 +60,12 @@ object GMXMLHttpRequestOptions {
     if (context != null) __obj.updateDynamic("context")(context)
     if (data != null) __obj.updateDynamic("data")(data)
     if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (onabort != null) __obj.updateDynamic("onabort")(onabort)
-    if (onerror != null) __obj.updateDynamic("onerror")(onerror)
-    if (onload != null) __obj.updateDynamic("onload")(onload)
-    if (onprogress != null) __obj.updateDynamic("onprogress")(onprogress)
-    if (onreadystatechange != null) __obj.updateDynamic("onreadystatechange")(onreadystatechange)
-    if (ontimeout != null) __obj.updateDynamic("ontimeout")(ontimeout)
+    if (onabort != null) __obj.updateDynamic("onabort")(js.Any.fromFunction1(onabort))
+    if (onerror != null) __obj.updateDynamic("onerror")(js.Any.fromFunction1(onerror))
+    if (onload != null) __obj.updateDynamic("onload")(js.Any.fromFunction1(onload))
+    if (onprogress != null) __obj.updateDynamic("onprogress")(js.Any.fromFunction1(onprogress))
+    if (onreadystatechange != null) __obj.updateDynamic("onreadystatechange")(js.Any.fromFunction1(onreadystatechange))
+    if (ontimeout != null) __obj.updateDynamic("ontimeout")(js.Any.fromFunction1(ontimeout))
     if (overrideMimeType != null) __obj.updateDynamic("overrideMimeType")(overrideMimeType)
     if (password != null) __obj.updateDynamic("password")(password)
     if (!js.isUndefined(synchronous)) __obj.updateDynamic("synchronous")(synchronous)

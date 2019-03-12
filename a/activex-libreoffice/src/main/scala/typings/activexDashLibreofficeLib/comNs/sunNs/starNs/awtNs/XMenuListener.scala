@@ -21,16 +21,16 @@ trait XMenuListener
 object XMenuListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    itemActivated: js.Function1[MenuEvent, scala.Unit],
-    itemDeactivated: js.Function1[MenuEvent, scala.Unit],
-    itemHighlighted: js.Function1[MenuEvent, scala.Unit],
-    itemSelected: js.Function1[MenuEvent, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    itemActivated: MenuEvent => scala.Unit,
+    itemDeactivated: MenuEvent => scala.Unit,
+    itemHighlighted: MenuEvent => scala.Unit,
+    itemSelected: MenuEvent => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XMenuListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, itemActivated = itemActivated, itemDeactivated = itemDeactivated, itemHighlighted = itemHighlighted, itemSelected = itemSelected, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), itemActivated = js.Any.fromFunction1(itemActivated), itemDeactivated = js.Any.fromFunction1(itemDeactivated), itemHighlighted = js.Any.fromFunction1(itemHighlighted), itemSelected = js.Any.fromFunction1(itemSelected), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XMenuListener]
   }

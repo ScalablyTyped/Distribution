@@ -13,14 +13,14 @@ trait Delete extends Builder {
 object Delete {
   @scala.inline
   def apply(
-    bind: js.Function1[/* repeated */ js.Any, Builder],
-    exec: js.Function0[js.Promise[js.Array[js.Object]]],
-    explain: js.Function0[java.lang.String],
-    from: js.Function1[lovefieldLib.lovefieldMod.lfNs.schemaNs.Table, Delete],
-    toSql: js.Function0[java.lang.String],
-    where: js.Function1[lovefieldLib.lovefieldMod.lfNs.Predicate, Delete]
+    bind: /* repeated */ js.Any => Builder,
+    exec: () => js.Promise[js.Array[js.Object]],
+    explain: () => java.lang.String,
+    from: lovefieldLib.lovefieldMod.lfNs.schemaNs.Table => Delete,
+    toSql: () => java.lang.String,
+    where: lovefieldLib.lovefieldMod.lfNs.Predicate => Delete
   ): Delete = {
-    val __obj = js.Dynamic.literal(bind = bind, exec = exec, explain = explain, from = from, toSql = toSql, where = where)
+    val __obj = js.Dynamic.literal(bind = js.Any.fromFunction1(bind), exec = js.Any.fromFunction0(exec), explain = js.Any.fromFunction0(explain), from = js.Any.fromFunction1(from), toSql = js.Any.fromFunction0(toSql), where = js.Any.fromFunction1(where))
   
     __obj.asInstanceOf[Delete]
   }

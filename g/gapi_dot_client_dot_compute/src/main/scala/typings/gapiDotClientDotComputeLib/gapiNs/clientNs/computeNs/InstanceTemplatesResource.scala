@@ -25,24 +25,12 @@ trait InstanceTemplatesResource extends js.Object {
 object InstanceTemplatesResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceTemplate, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceTemplateKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InstanceTemplate]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InstanceTemplateList]
-    ]
+    delete: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceTemplate => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceTemplateKey => gapiDotClientLib.gapiNs.clientNs.Request[InstanceTemplate],
+    insert: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[InstanceTemplateList]
   ): InstanceTemplatesResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[InstanceTemplatesResource]
   }

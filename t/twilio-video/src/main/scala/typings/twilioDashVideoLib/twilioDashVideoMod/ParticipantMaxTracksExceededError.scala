@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ParticipantMaxTracksExceededError () extends TwilioError {
   @JSName("code")
   var code_ParticipantMaxTracksExceededError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53203` = js.native
-  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Participant has too many Tracks` = js.native
+  @JSName("message")
+  var message_ParticipantMaxTracksExceededError: twilioDashVideoLib.twilioDashVideoLibStrings.`Participant has too many Tracks` = js.native
 }
 

@@ -13,7 +13,7 @@ class CanvasDrawer protected ()
     * @param _context The context for a canvas that this drawer will draw to.
     * @param _drawStep The draw step logic that actually draws.
     */
-  def this(_context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D, _drawStep: CanvasDrawStep) = this()
+  def this(_context: stdLib.CanvasRenderingContext2D, _drawStep: CanvasDrawStep) = this()
   var _context: js.Any = js.native
   var _drawStep: js.Any = js.native
   /**

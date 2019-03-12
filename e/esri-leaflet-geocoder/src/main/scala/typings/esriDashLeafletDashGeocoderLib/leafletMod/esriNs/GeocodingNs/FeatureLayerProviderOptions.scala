@@ -18,7 +18,7 @@ object FeatureLayerProviderOptions {
     url: java.lang.String,
     attribution: java.lang.String = null,
     bufferRadius: scala.Int | scala.Double = null,
-    formatSuggestion: js.Function1[/* featureInformation */ js.Any, java.lang.String] = null,
+    formatSuggestion: /* featureInformation */ js.Any => java.lang.String = null,
     label: java.lang.String = null,
     maxResults: scala.Int | scala.Double = null,
     searchFields: java.lang.String | js.Array[java.lang.String] = null,
@@ -27,7 +27,7 @@ object FeatureLayerProviderOptions {
     val __obj = js.Dynamic.literal(url = url)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (bufferRadius != null) __obj.updateDynamic("bufferRadius")(bufferRadius.asInstanceOf[js.Any])
-    if (formatSuggestion != null) __obj.updateDynamic("formatSuggestion")(formatSuggestion)
+    if (formatSuggestion != null) __obj.updateDynamic("formatSuggestion")(js.Any.fromFunction1(formatSuggestion))
     if (label != null) __obj.updateDynamic("label")(label)
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (searchFields != null) __obj.updateDynamic("searchFields")(searchFields.asInstanceOf[js.Any])

@@ -118,7 +118,7 @@ object ListItem {
     actionsOpen: scala.Boolean,
     actionsSections: Collection[Collection[ActionButton | ActionToggle]],
     children: Collection[ListItem],
-    clone: js.Function0[ListItem],
+    clone: () => ListItem,
     error: Error,
     layer: Layer,
     layerView: LayerView,
@@ -132,7 +132,7 @@ object ListItem {
     visible: scala.Boolean,
     visibleAtCurrentScale: scala.Boolean
   ): ListItem = {
-    val __obj = js.Dynamic.literal(actionsOpen = actionsOpen, actionsSections = actionsSections, children = children, clone = clone, error = error, layer = layer, layerView = layerView, open = open, panel = panel, parent = parent, title = title, updating = updating, view = view.asInstanceOf[js.Any], visibilityMode = visibilityMode, visible = visible, visibleAtCurrentScale = visibleAtCurrentScale)
+    val __obj = js.Dynamic.literal(actionsOpen = actionsOpen, actionsSections = actionsSections, children = children, clone = js.Any.fromFunction0(clone), error = error, layer = layer, layerView = layerView, open = open, panel = panel, parent = parent, title = title, updating = updating, view = view.asInstanceOf[js.Any], visibilityMode = visibilityMode, visible = visible, visibleAtCurrentScale = visibleAtCurrentScale)
   
     __obj.asInstanceOf[ListItem]
   }

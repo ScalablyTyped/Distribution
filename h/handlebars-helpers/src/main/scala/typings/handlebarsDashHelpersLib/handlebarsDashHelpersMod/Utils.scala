@@ -35,15 +35,11 @@ trait Utils extends js.Object {
 object Utils {
   @scala.inline
   def apply(
-    changecase: js.Function2[
-      java.lang.String, 
-      js.Function1[/* str */ java.lang.String, java.lang.String], 
-      java.lang.String
-    ],
-    chop: js.Function1[java.lang.String, java.lang.String],
-    contains: js.Function3[js.Array[js.Any], js.Any, scala.Double, scala.Boolean]
+    changecase: (java.lang.String, js.Function1[/* str */ java.lang.String, java.lang.String]) => java.lang.String,
+    chop: java.lang.String => java.lang.String,
+    contains: (js.Array[js.Any], js.Any, scala.Double) => scala.Boolean
   ): Utils = {
-    val __obj = js.Dynamic.literal(changecase = changecase, chop = chop, contains = contains)
+    val __obj = js.Dynamic.literal(changecase = js.Any.fromFunction2(changecase), chop = js.Any.fromFunction1(chop), contains = js.Any.fromFunction3(contains))
   
     __obj.asInstanceOf[Utils]
   }

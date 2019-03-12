@@ -11,6 +11,6 @@ object ^ extends js.Object {
   val LEVEL: java.lang.String = js.native
   val MESSAGE: java.lang.String = js.native
   val SPLAT: java.lang.String = js.native
-  val configs: tripleDashBeamLib.tripleDashBeamMod.Configs = js.native
+  val configs: Configs = js.native
 }
 

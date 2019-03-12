@@ -13,8 +13,8 @@ trait Select extends js.Object {
 
 object Select {
   @scala.inline
-  def apply(format: js.Function0[java.lang.String]): Select = {
-    val __obj = js.Dynamic.literal(format = format)
+  def apply(format: () => java.lang.String): Select = {
+    val __obj = js.Dynamic.literal(format = js.Any.fromFunction0(format))
   
     __obj.asInstanceOf[Select]
   }

@@ -12,12 +12,12 @@ trait SchedulerAddEvent extends SchedulerEvent {
 object SchedulerAddEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Scheduler,
     event: js.Any = null
   ): SchedulerAddEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (event != null) __obj.updateDynamic("event")(event)
     __obj.asInstanceOf[SchedulerAddEvent]
   }

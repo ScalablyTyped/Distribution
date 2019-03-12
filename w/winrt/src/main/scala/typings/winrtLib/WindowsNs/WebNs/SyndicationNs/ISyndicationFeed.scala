@@ -39,7 +39,7 @@ object ISyndicationFeed {
     elementExtensions: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[ISyndicationNode],
     firstUri: winrtLib.WindowsNs.FoundationNs.Uri,
     generator: SyndicationGenerator,
-    getXmlDocument: js.Function1[SyndicationFormat, winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument],
+    getXmlDocument: SyndicationFormat => winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument,
     iconUri: winrtLib.WindowsNs.FoundationNs.Uri,
     id: java.lang.String,
     imageUri: winrtLib.WindowsNs.FoundationNs.Uri,
@@ -48,8 +48,8 @@ object ISyndicationFeed {
     lastUpdatedTime: stdLib.Date,
     lastUri: winrtLib.WindowsNs.FoundationNs.Uri,
     links: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[SyndicationLink],
-    load: js.Function1[java.lang.String, scala.Unit],
-    loadFromXml: js.Function1[winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument, scala.Unit],
+    load: java.lang.String => scala.Unit,
+    loadFromXml: winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument => scala.Unit,
     nextUri: winrtLib.WindowsNs.FoundationNs.Uri,
     nodeName: java.lang.String,
     nodeNamespace: java.lang.String,
@@ -60,7 +60,7 @@ object ISyndicationFeed {
     subtitle: ISyndicationText,
     title: ISyndicationText
   ): ISyndicationFeed = {
-    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions, authors = authors, baseUri = baseUri, categories = categories, contributors = contributors, elementExtensions = elementExtensions, firstUri = firstUri, generator = generator, getXmlDocument = getXmlDocument, iconUri = iconUri, id = id, imageUri = imageUri, items = items, language = language, lastUpdatedTime = lastUpdatedTime, lastUri = lastUri, links = links, load = load, loadFromXml = loadFromXml, nextUri = nextUri, nodeName = nodeName, nodeNamespace = nodeNamespace, nodeValue = nodeValue, previousUri = previousUri, rights = rights, sourceFormat = sourceFormat, subtitle = subtitle, title = title)
+    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions, authors = authors, baseUri = baseUri, categories = categories, contributors = contributors, elementExtensions = elementExtensions, firstUri = firstUri, generator = generator, getXmlDocument = js.Any.fromFunction1(getXmlDocument), iconUri = iconUri, id = id, imageUri = imageUri, items = items, language = language, lastUpdatedTime = lastUpdatedTime, lastUri = lastUri, links = links, load = js.Any.fromFunction1(load), loadFromXml = js.Any.fromFunction1(loadFromXml), nextUri = nextUri, nodeName = nodeName, nodeNamespace = nodeNamespace, nodeValue = nodeValue, previousUri = previousUri, rights = rights, sourceFormat = sourceFormat, subtitle = subtitle, title = title)
   
     __obj.asInstanceOf[ISyndicationFeed]
   }

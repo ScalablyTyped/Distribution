@@ -13,7 +13,7 @@ object ^ extends js.Object {
     */
   val onExecute: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function2[
-      /* id */ chromeDashAppsLib.chromeNs.fileBrowserHandlerNs.FileBrowserHandleExecuteId, 
+      /* id */ FileBrowserHandleExecuteId, 
       /* details */ chromeDashAppsLib.Anon_Entries, 
       scala.Unit
     ]
@@ -28,12 +28,6 @@ object ^ extends js.Object {
     * @param params Parameters that will be used while selecting the file.
     * @param callback Function called upon completion.
     */
-  def selectFile(
-    params: chromeDashAppsLib.chromeNs.fileBrowserHandlerNs.SelectFileParameters,
-    callback: js.Function1[
-      /* result */ chromeDashAppsLib.chromeNs.fileBrowserHandlerNs.SelectionResult, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def selectFile(params: SelectFileParameters, callback: js.Function1[/* result */ SelectionResult, scala.Unit]): scala.Unit = js.native
 }
 

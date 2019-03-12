@@ -35,36 +35,28 @@ trait Email extends Model {
 object Email {
   @scala.inline
   def apply(
-    afterRemote: js.Function2[
-      java.lang.String, 
-      js.Function3[
-        /* ctx */ Context, 
-        /* modelInstanceOrNext */ Email | expressLib.expressMod.eNs.NextFunction, 
-        /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
-        scala.Unit
-      ], 
+    afterRemote: (java.lang.String, js.Function3[
+      /* ctx */ Context, 
+      /* modelInstanceOrNext */ Email | expressLib.expressMod.eNs.NextFunction, 
+      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
       scala.Unit
-    ],
-    afterRemoteError: js.Function2[java.lang.String, expressLib.expressMod.eNs.NextFunction, scala.Unit],
-    beforeRemote: js.Function2[
-      java.lang.String, 
-      js.Function3[
-        /* ctx */ Context, 
-        /* modelInstanceOrNext */ Email | expressLib.expressMod.eNs.NextFunction, 
-        /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
-        scala.Unit
-      ], 
+    ]) => scala.Unit,
+    afterRemoteError: (java.lang.String, expressLib.expressMod.eNs.NextFunction) => scala.Unit,
+    beforeRemote: (java.lang.String, js.Function3[
+      /* ctx */ Context, 
+      /* modelInstanceOrNext */ Email | expressLib.expressMod.eNs.NextFunction, 
+      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
       scala.Unit
-    ],
+    ]) => scala.Unit,
     from: java.lang.String,
     html: java.lang.String,
-    send: js.Function0[scala.Unit],
+    send: () => scala.Unit,
     settings: Settings,
     subject: java.lang.String,
     text: java.lang.String,
     to: java.lang.String
   ): Email = {
-    val __obj = js.Dynamic.literal(afterRemote = afterRemote, afterRemoteError = afterRemoteError, beforeRemote = beforeRemote, from = from, html = html, send = send, settings = settings, subject = subject, text = text, to = to)
+    val __obj = js.Dynamic.literal(afterRemote = js.Any.fromFunction2(afterRemote), afterRemoteError = js.Any.fromFunction2(afterRemoteError), beforeRemote = js.Any.fromFunction2(beforeRemote), from = from, html = html, send = js.Any.fromFunction0(send), settings = settings, subject = subject, text = text, to = to)
   
     __obj.asInstanceOf[Email]
   }

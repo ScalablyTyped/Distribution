@@ -22,7 +22,7 @@ trait OnsSplitterSideElement
     * @param {Object} animationOptions Object containing duration and timing.
     * @description Hook called whenever the user slides the splitter.
     **/
-  var onSwipe: js.UndefOr[coreDashJsLib.Function] = js.native
+  var onSwipe: js.UndefOr[js.Function] = js.native
   /**
     * @description Page element loaded in the splitter side.
     */

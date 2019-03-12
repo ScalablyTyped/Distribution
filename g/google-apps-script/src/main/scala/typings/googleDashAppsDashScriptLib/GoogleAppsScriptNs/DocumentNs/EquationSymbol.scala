@@ -22,19 +22,19 @@ trait EquationSymbol extends js.Object {
 object EquationSymbol {
   @scala.inline
   def apply(
-    copy: js.Function0[EquationSymbol],
-    getAttributes: js.Function0[js.Object],
-    getCode: js.Function0[java.lang.String],
-    getNextSibling: js.Function0[Element],
-    getParent: js.Function0[ContainerElement],
-    getPreviousSibling: js.Function0[Element],
-    getType: js.Function0[ElementType],
-    isAtDocumentEnd: js.Function0[scala.Boolean],
-    merge: js.Function0[EquationSymbol],
-    removeFromParent: js.Function0[EquationSymbol],
-    setAttributes: js.Function1[js.Object, EquationSymbol]
+    copy: () => EquationSymbol,
+    getAttributes: () => js.Object,
+    getCode: () => java.lang.String,
+    getNextSibling: () => Element,
+    getParent: () => ContainerElement,
+    getPreviousSibling: () => Element,
+    getType: () => ElementType,
+    isAtDocumentEnd: () => scala.Boolean,
+    merge: () => EquationSymbol,
+    removeFromParent: () => EquationSymbol,
+    setAttributes: js.Object => EquationSymbol
   ): EquationSymbol = {
-    val __obj = js.Dynamic.literal(copy = copy, getAttributes = getAttributes, getCode = getCode, getNextSibling = getNextSibling, getParent = getParent, getPreviousSibling = getPreviousSibling, getType = getType, isAtDocumentEnd = isAtDocumentEnd, merge = merge, removeFromParent = removeFromParent, setAttributes = setAttributes)
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), getAttributes = js.Any.fromFunction0(getAttributes), getCode = js.Any.fromFunction0(getCode), getNextSibling = js.Any.fromFunction0(getNextSibling), getParent = js.Any.fromFunction0(getParent), getPreviousSibling = js.Any.fromFunction0(getPreviousSibling), getType = js.Any.fromFunction0(getType), isAtDocumentEnd = js.Any.fromFunction0(isAtDocumentEnd), merge = js.Any.fromFunction0(merge), removeFromParent = js.Any.fromFunction0(removeFromParent), setAttributes = js.Any.fromFunction1(setAttributes))
   
     __obj.asInstanceOf[EquationSymbol]
   }

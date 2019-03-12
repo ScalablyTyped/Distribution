@@ -36,7 +36,7 @@ trait XArray
     * @returns an sequence that contains the ordered elements of the SQL array designated by this object.
     * @throws SQLException if an error occurs while attempting to access the array.
     */
-  def getArray(typeMap: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess): activexDashInteropLib.SafeArray[_]
+  def getArray(typeMap: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess): stdLib.SafeArray[_]
   /**
     * returns an array containing a slice of the SQL array, beginning with the specified `index` and containing up to `count` successive elements of the SQL
     * array.
@@ -50,7 +50,7 @@ trait XArray
     index: scala.Double,
     count: scala.Double,
     typeMap: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
-  ): activexDashInteropLib.SafeArray[_]
+  ): stdLib.SafeArray[_]
   /**
     * returns the SDBC type of the elements in the array designated by this `Array` object.
     * @returns a constant from the SDBC types that is the type code for the elements in the array designated by this Array object.
@@ -105,30 +105,17 @@ object XArray {
   def apply(
     BaseType: scala.Double,
     BaseTypeName: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getArray: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess, 
-      activexDashInteropLib.SafeArray[_]
-    ],
-    getArrayAtIndex: js.Function3[
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess, 
-      activexDashInteropLib.SafeArray[_]
-    ],
-    getBaseType: js.Function0[scala.Double],
-    getBaseTypeName: js.Function0[java.lang.String],
-    getResultSet: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess, XResultSet],
-    getResultSetAtIndex: js.Function3[
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess, 
-      XResultSet
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getArray: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess => stdLib.SafeArray[_],
+    getArrayAtIndex: (scala.Double, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess) => stdLib.SafeArray[_],
+    getBaseType: () => scala.Double,
+    getBaseTypeName: () => java.lang.String,
+    getResultSet: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess => XResultSet,
+    getResultSetAtIndex: (scala.Double, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess) => XResultSet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XArray = {
-    val __obj = js.Dynamic.literal(BaseType = BaseType, BaseTypeName = BaseTypeName, acquire = acquire, getArray = getArray, getArrayAtIndex = getArrayAtIndex, getBaseType = getBaseType, getBaseTypeName = getBaseTypeName, getResultSet = getResultSet, getResultSetAtIndex = getResultSetAtIndex, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(BaseType = BaseType, BaseTypeName = BaseTypeName, acquire = js.Any.fromFunction0(acquire), getArray = js.Any.fromFunction1(getArray), getArrayAtIndex = js.Any.fromFunction3(getArrayAtIndex), getBaseType = js.Any.fromFunction0(getBaseType), getBaseTypeName = js.Any.fromFunction0(getBaseTypeName), getResultSet = js.Any.fromFunction1(getResultSet), getResultSetAtIndex = js.Any.fromFunction3(getResultSetAtIndex), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XArray]
   }

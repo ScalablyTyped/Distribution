@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CRLRef
   extends xmlDashCoreLib.xmlDashCoreMod.XmlObject {
-  var CRLIdentifier: CRLIdentifier = js.native
+  var CRLIdentifier: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.CRLIdentifier = js.native
   var DigestAlgAndValue: DigestAlgAndValueType = js.native
 }
 

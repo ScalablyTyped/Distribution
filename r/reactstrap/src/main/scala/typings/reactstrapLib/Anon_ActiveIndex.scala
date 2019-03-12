@@ -24,25 +24,25 @@ trait Anon_ActiveIndex extends js.Object {
 object Anon_ActiveIndex {
   @scala.inline
   def apply(
-    next: js.Function0[scala.Unit],
-    previous: js.Function0[scala.Unit],
+    next: () => scala.Unit,
+    previous: () => scala.Unit,
     activeIndex: scala.Int | scala.Double = null,
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
     interval: scala.Double | java.lang.String | scala.Boolean = null,
     keyboard: js.UndefOr[scala.Boolean] = js.undefined,
-    mouseEnter: js.Function0[scala.Unit] = null,
-    mouseExit: js.Function0[scala.Unit] = null,
+    mouseEnter: () => scala.Unit = null,
+    mouseExit: () => scala.Unit = null,
     pause: reactstrapLib.reactstrapLibStrings.hover | reactstrapLib.reactstrapLibNumbers.`false` = null,
     ride: reactstrapLib.reactstrapLibStrings.carousel = null,
     slide: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ActiveIndex = {
-    val __obj = js.Dynamic.literal(next = next, previous = previous)
+    val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next), previous = js.Any.fromFunction0(previous))
     if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
-    if (mouseEnter != null) __obj.updateDynamic("mouseEnter")(mouseEnter)
-    if (mouseExit != null) __obj.updateDynamic("mouseExit")(mouseExit)
+    if (mouseEnter != null) __obj.updateDynamic("mouseEnter")(js.Any.fromFunction0(mouseEnter))
+    if (mouseExit != null) __obj.updateDynamic("mouseExit")(js.Any.fromFunction0(mouseExit))
     if (pause != null) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
     if (ride != null) __obj.updateDynamic("ride")(ride)
     if (!js.isUndefined(slide)) __obj.updateDynamic("slide")(slide)

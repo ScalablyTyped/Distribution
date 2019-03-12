@@ -45,23 +45,11 @@ trait ITileLayer extends js.Object {
 object ITileLayer {
   @scala.inline
   def apply(
-    cancelTile: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
-    requestTile: js.Function4[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Boolean, 
-      heremapsLib.HNs.mapNs.providerNs.Tile | scala.Unit
-    ],
-    requestTiles: js.Function4[
-      heremapsLib.HNs.geoNs.Rect, 
-      scala.Double, 
-      scala.Boolean, 
-      heremapsLib.HNs.mathNs.Point, 
-      heremapsLib.HNs.mapNs.layerNs.ITileLayerNs.Response
-    ]
+    cancelTile: (scala.Double, scala.Double, scala.Double) => scala.Unit,
+    requestTile: (scala.Double, scala.Double, scala.Double, scala.Boolean) => heremapsLib.HNs.mapNs.providerNs.Tile | scala.Unit,
+    requestTiles: (heremapsLib.HNs.geoNs.Rect, scala.Double, scala.Boolean, heremapsLib.HNs.mathNs.Point) => heremapsLib.HNs.mapNs.layerNs.ITileLayerNs.Response
   ): ITileLayer = {
-    val __obj = js.Dynamic.literal(cancelTile = cancelTile, requestTile = requestTile, requestTiles = requestTiles)
+    val __obj = js.Dynamic.literal(cancelTile = js.Any.fromFunction3(cancelTile), requestTile = js.Any.fromFunction4(requestTile), requestTiles = js.Any.fromFunction4(requestTiles))
   
     __obj.asInstanceOf[ITileLayer]
   }

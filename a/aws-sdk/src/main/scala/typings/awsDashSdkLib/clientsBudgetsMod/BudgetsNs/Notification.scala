@@ -9,7 +9,7 @@ trait Notification extends js.Object {
   /**
     * The comparison that is used for this notification.
     */
-  var ComparisonOperator: ComparisonOperator
+  var ComparisonOperator: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.ComparisonOperator
   /**
     * Whether this notification is in alarm. If a budget notification is in the ALARM state, you have passed the set threshold for the budget.
     */
@@ -17,7 +17,7 @@ trait Notification extends js.Object {
   /**
     * Whether the notification is for how much you have spent (ACTUAL) or for how much you're forecasted to spend (FORECASTED).
     */
-  var NotificationType: NotificationType
+  var NotificationType: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.NotificationType
   /**
     * The threshold that is associated with a notification. Thresholds are always a percentage.
     */

@@ -45,7 +45,7 @@ object SliderProps {
     label: java.lang.String = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
-    onChange: js.Function1[/* value */ scala.Double, scala.Unit] = null,
+    onChange: /* value */ scala.Double => scala.Unit = null,
     row: scala.Int | scala.Double = null,
     span: protonDashNativeLib.Anon_X = null,
     stretchy: js.UndefOr[scala.Boolean] = js.undefined,
@@ -60,7 +60,7 @@ object SliderProps {
     if (label != null) __obj.updateDynamic("label")(label)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     if (span != null) __obj.updateDynamic("span")(span)
     if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy)

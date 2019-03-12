@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def VennDiagram(): vennLib.vennMod.VennDiagram = js.native
-  def bestInitialLayout(areas: js.Array[vennLib.vennMod.Area], params: vennLib.vennMod.LayoutParameter): js.Array[vennLib.vennMod.Circle] = js.native
-  def circleFromPath(path: java.lang.String): vennLib.vennMod.Circle = js.native
+  def bestInitialLayout(areas: js.Array[Area], params: LayoutParameter): js.Array[Circle] = js.native
+  def circleFromPath(path: java.lang.String): Circle = js.native
   def circleOverlap(r1: scala.Double, r2: scala.Double, d: scala.Double): scala.Double = js.native
-  def distance(p1: vennLib.vennMod.Point, p2: vennLib.vennMod.Point): scala.Double = js.native
+  def distance(p1: Point, p2: Point): scala.Double = js.native
   def intersectionArea(circles: js.Array[js.Object]): scala.Double = js.native
   def intersectionArea(circles: js.Array[js.Object], stats: js.Object): scala.Double = js.native
   def sortAreas(
@@ -22,8 +22,8 @@ object ^ extends js.Object {
       d3DashSelectionLib.d3DashSelectionMod.BaseType, 
       js.UndefOr[js.Object]
     ],
-    relativeTo: vennLib.vennMod.Area
+    relativeTo: Area
   ): scala.Unit = js.native
-  def venn(areas: js.Array[vennLib.vennMod.Area], parameters: js.Object): js.Array[vennLib.vennMod.Circle] = js.native
+  def venn(areas: js.Array[Area], parameters: js.Object): js.Array[Circle] = js.native
 }
 

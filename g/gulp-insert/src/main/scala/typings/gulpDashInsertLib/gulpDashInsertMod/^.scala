@@ -25,7 +25,7 @@ object ^ extends js.Object {
     * @param {Transformer} transformer
     * @returns {NodeJS.ReadWriteStream}
     */
-  def transform(transformer: gulpDashInsertLib.gulpDashInsertMod.Transformer): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def transform(transformer: Transformer): nodeLib.NodeJSNs.ReadWriteStream = js.native
   /**
     * Wraps the contents with two strings
     * @param {string} prepend

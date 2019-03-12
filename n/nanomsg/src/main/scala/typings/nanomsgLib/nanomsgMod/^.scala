@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("nanomsg", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def socket(`type`: java.lang.String): nanomsgLib.nanomsgMod.Socket = js.native
-  def socket(`type`: java.lang.String, opts: nanomsgLib.nanomsgMod.Options): nanomsgLib.nanomsgMod.Socket = js.native
+  def socket(`type`: java.lang.String): Socket = js.native
+  def socket(`type`: java.lang.String, opts: Options): Socket = js.native
 }
 

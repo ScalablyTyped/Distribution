@@ -45,16 +45,16 @@ trait Anon_AfterBreaks extends js.Object {
 object Anon_AfterBreaks {
   @scala.inline
   def apply(
-    afterBreaks: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
-    afterSetExtremes: js.Function1[/* event */ highchartsLib.highchartsMod.HighchartsNs.AxisEvent, scala.Unit] = null,
-    pointBreak: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
-    setExtremes: js.Function1[/* event */ highchartsLib.highchartsMod.HighchartsNs.AxisEvent, scala.Unit] = null
+    afterBreaks: /* event */ stdLib.Event => scala.Unit = null,
+    afterSetExtremes: /* event */ highchartsLib.highchartsMod.HighchartsNs.AxisEvent => scala.Unit = null,
+    pointBreak: /* event */ stdLib.Event => scala.Unit = null,
+    setExtremes: /* event */ highchartsLib.highchartsMod.HighchartsNs.AxisEvent => scala.Unit = null
   ): Anon_AfterBreaks = {
     val __obj = js.Dynamic.literal()
-    if (afterBreaks != null) __obj.updateDynamic("afterBreaks")(afterBreaks)
-    if (afterSetExtremes != null) __obj.updateDynamic("afterSetExtremes")(afterSetExtremes)
-    if (pointBreak != null) __obj.updateDynamic("pointBreak")(pointBreak)
-    if (setExtremes != null) __obj.updateDynamic("setExtremes")(setExtremes)
+    if (afterBreaks != null) __obj.updateDynamic("afterBreaks")(js.Any.fromFunction1(afterBreaks))
+    if (afterSetExtremes != null) __obj.updateDynamic("afterSetExtremes")(js.Any.fromFunction1(afterSetExtremes))
+    if (pointBreak != null) __obj.updateDynamic("pointBreak")(js.Any.fromFunction1(pointBreak))
+    if (setExtremes != null) __obj.updateDynamic("setExtremes")(js.Any.fromFunction1(setExtremes))
     __obj.asInstanceOf[Anon_AfterBreaks]
   }
 }

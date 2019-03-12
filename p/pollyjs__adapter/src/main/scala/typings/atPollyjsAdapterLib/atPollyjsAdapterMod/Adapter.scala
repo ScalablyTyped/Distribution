@@ -12,8 +12,8 @@ trait Adapter extends js.Object {
 
 object Adapter {
   @scala.inline
-  def apply(connect: js.Function0[scala.Unit], disconnect: js.Function0[scala.Unit]): Adapter = {
-    val __obj = js.Dynamic.literal(connect = connect, disconnect = disconnect)
+  def apply(connect: () => scala.Unit, disconnect: () => scala.Unit): Adapter = {
+    val __obj = js.Dynamic.literal(connect = js.Any.fromFunction0(connect), disconnect = js.Any.fromFunction0(disconnect))
   
     __obj.asInstanceOf[Adapter]
   }

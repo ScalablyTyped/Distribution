@@ -21,8 +21,8 @@ trait IFileRequest extends js.Object {
 
 object IFileRequest {
   @scala.inline
-  def apply(abort: js.Function0[scala.Unit], onCompleteObservable: Observable[IFileRequest]): IFileRequest = {
-    val __obj = js.Dynamic.literal(abort = abort, onCompleteObservable = onCompleteObservable)
+  def apply(abort: () => scala.Unit, onCompleteObservable: Observable[IFileRequest]): IFileRequest = {
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), onCompleteObservable = onCompleteObservable)
   
     __obj.asInstanceOf[IFileRequest]
   }

@@ -20,7 +20,7 @@ object ISyndicationLink {
     attributeExtensions: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[SyndicationAttribute],
     baseUri: winrtLib.WindowsNs.FoundationNs.Uri,
     elementExtensions: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[ISyndicationNode],
-    getXmlDocument: js.Function1[SyndicationFormat, winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument],
+    getXmlDocument: SyndicationFormat => winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument,
     language: java.lang.String,
     length: scala.Double,
     mediaType: java.lang.String,
@@ -32,7 +32,7 @@ object ISyndicationLink {
     title: java.lang.String,
     uri: winrtLib.WindowsNs.FoundationNs.Uri
   ): ISyndicationLink = {
-    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions, baseUri = baseUri, elementExtensions = elementExtensions, getXmlDocument = getXmlDocument, language = language, length = length, mediaType = mediaType, nodeName = nodeName, nodeNamespace = nodeNamespace, nodeValue = nodeValue, relationship = relationship, resourceLanguage = resourceLanguage, title = title, uri = uri)
+    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions, baseUri = baseUri, elementExtensions = elementExtensions, getXmlDocument = js.Any.fromFunction1(getXmlDocument), language = language, length = length, mediaType = mediaType, nodeName = nodeName, nodeNamespace = nodeNamespace, nodeValue = nodeValue, relationship = relationship, resourceLanguage = resourceLanguage, title = title, uri = uri)
   
     __obj.asInstanceOf[ISyndicationLink]
   }

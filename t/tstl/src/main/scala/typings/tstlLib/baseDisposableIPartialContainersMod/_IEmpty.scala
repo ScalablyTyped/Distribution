@@ -14,8 +14,8 @@ trait _IEmpty extends js.Object {
 
 object _IEmpty {
   @scala.inline
-  def apply(empty: js.Function0[scala.Boolean]): _IEmpty = {
-    val __obj = js.Dynamic.literal(empty = empty)
+  def apply(empty: () => scala.Boolean): _IEmpty = {
+    val __obj = js.Dynamic.literal(empty = js.Any.fromFunction0(empty))
   
     __obj.asInstanceOf[_IEmpty]
   }

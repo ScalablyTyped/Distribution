@@ -9,7 +9,7 @@ trait CordovaPlugins extends js.Object {
   /**
     * cordova-plugin-device-name interface
     */
-  var CanvasCamera: CanvasCamera
+  var CanvasCamera: cordovaDashPluginDashCanvascameraLib.CanvasCamera
 }
 
 object CordovaPlugins {

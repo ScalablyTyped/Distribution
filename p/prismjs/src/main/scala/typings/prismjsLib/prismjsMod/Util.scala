@@ -19,13 +19,13 @@ trait Util extends js.Object {
 object Util {
   @scala.inline
   def apply(
-    clone: js.Function1[LanguageDefinition, LanguageDefinition],
-    encode: js.Function1[TokenNode, TokenNode],
-    objId: js.Function1[js.Any, Identifier],
-    `type`: js.Function1[js.Any, java.lang.String]
+    clone: LanguageDefinition => LanguageDefinition,
+    encode: TokenNode => TokenNode,
+    objId: js.Any => Identifier,
+    `type`: js.Any => java.lang.String
   ): Util = {
-    val __obj = js.Dynamic.literal(clone = clone, encode = encode, objId = objId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction1(clone), encode = js.Any.fromFunction1(encode), objId = js.Any.fromFunction1(objId))
+    __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
     __obj.asInstanceOf[Util]
   }
 }

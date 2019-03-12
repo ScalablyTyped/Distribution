@@ -12,11 +12,11 @@ trait INotificationEvent extends ICloseNotificationEvent {
 object INotificationEvent {
   @scala.inline
   def apply(
-    closeNotification: js.Function1[js.Any, scala.Unit],
+    closeNotification: js.Any => scala.Unit,
     event: electronDashNotifyLib.electronDashNotifyLibStrings.close | electronDashNotifyLib.electronDashNotifyLibStrings.show | electronDashNotifyLib.electronDashNotifyLibStrings.click,
     id: scala.Double
   ): INotificationEvent = {
-    val __obj = js.Dynamic.literal(closeNotification = closeNotification, event = event.asInstanceOf[js.Any], id = id)
+    val __obj = js.Dynamic.literal(closeNotification = js.Any.fromFunction1(closeNotification), event = event.asInstanceOf[js.Any], id = id)
   
     __obj.asInstanceOf[INotificationEvent]
   }

@@ -13,10 +13,10 @@ trait NodeStringDecoder extends js.Object {
 object NodeStringDecoder {
   @scala.inline
   def apply(
-    detectIncompleteChar: js.Function1[easyDashXapiDashSupertestLib.Buffer, scala.Double],
-    write: js.Function1[easyDashXapiDashSupertestLib.Buffer, java.lang.String]
+    detectIncompleteChar: easyDashXapiDashSupertestLib.Buffer => scala.Double,
+    write: easyDashXapiDashSupertestLib.Buffer => java.lang.String
   ): NodeStringDecoder = {
-    val __obj = js.Dynamic.literal(detectIncompleteChar = detectIncompleteChar, write = write)
+    val __obj = js.Dynamic.literal(detectIncompleteChar = js.Any.fromFunction1(detectIncompleteChar), write = js.Any.fromFunction1(write))
   
     __obj.asInstanceOf[NodeStringDecoder]
   }

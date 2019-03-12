@@ -37,14 +37,14 @@ object SafariExtensionContextMenuEvent {
     currentTarget: SafariExtensionContextMenuItem,
     defaultPrevented: scala.Boolean,
     eventPhase: scala.Double,
-    preventDefault: js.Function0[scala.Unit],
-    stopPropagation: js.Function0[scala.Unit],
+    preventDefault: () => scala.Unit,
+    stopPropagation: () => scala.Unit,
     target: SafariExtensionContextMenuItem,
     timestamp: scala.Double,
     `type`: java.lang.String,
     userInfo: js.Any
   ): SafariExtensionContextMenuEvent = {
-    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelable = cancelable, contextMenu = contextMenu, currentTarget = currentTarget, defaultPrevented = defaultPrevented, eventPhase = eventPhase, preventDefault = preventDefault, stopPropagation = stopPropagation, target = target, timestamp = timestamp, userInfo = userInfo)
+    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelable = cancelable, contextMenu = contextMenu, currentTarget = currentTarget, defaultPrevented = defaultPrevented, eventPhase = eventPhase, preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target, timestamp = timestamp, userInfo = userInfo)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SafariExtensionContextMenuEvent]
   }

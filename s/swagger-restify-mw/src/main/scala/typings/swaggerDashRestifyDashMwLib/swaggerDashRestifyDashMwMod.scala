@@ -11,7 +11,7 @@ object swaggerDashRestifyDashMwMod extends js.Object {
   def create(
     config: swaggerDashNodeDashRunnerLib.swaggerDashNodeDashRunnerMod.Config,
     cb: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[stdLib.Error], 
       /* middleware */ swaggerDashNodeDashRunnerLib.swaggerDashNodeDashRunnerMod.RestifyMiddleware, 
       scala.Unit
     ]

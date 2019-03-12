@@ -41,52 +41,15 @@ trait ICryptographicEngineStatics extends js.Object {
 object ICryptographicEngineStatics {
   @scala.inline
   def apply(
-    decrypt: js.Function3[
-      CryptographicKey, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer
-    ],
-    decryptAndAuthenticate: js.Function5[
-      CryptographicKey, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer
-    ],
-    deriveKeyMaterial: js.Function3[
-      CryptographicKey, 
-      KeyDerivationParameters, 
-      scala.Double, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer
-    ],
-    encrypt: js.Function3[
-      CryptographicKey, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer
-    ],
-    encryptAndAuthenticate: js.Function4[
-      CryptographicKey, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      EncryptedAndAuthenticatedData
-    ],
-    sign: js.Function2[
-      CryptographicKey, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer
-    ],
-    verifySignature: js.Function3[
-      CryptographicKey, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      scala.Boolean
-    ]
+    decrypt: (CryptographicKey, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer) => winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
+    decryptAndAuthenticate: (CryptographicKey, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer) => winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
+    deriveKeyMaterial: (CryptographicKey, KeyDerivationParameters, scala.Double) => winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
+    encrypt: (CryptographicKey, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer) => winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
+    encryptAndAuthenticate: (CryptographicKey, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer) => EncryptedAndAuthenticatedData,
+    sign: (CryptographicKey, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer) => winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
+    verifySignature: (CryptographicKey, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer) => scala.Boolean
   ): ICryptographicEngineStatics = {
-    val __obj = js.Dynamic.literal(decrypt = decrypt, decryptAndAuthenticate = decryptAndAuthenticate, deriveKeyMaterial = deriveKeyMaterial, encrypt = encrypt, encryptAndAuthenticate = encryptAndAuthenticate, sign = sign, verifySignature = verifySignature)
+    val __obj = js.Dynamic.literal(decrypt = js.Any.fromFunction3(decrypt), decryptAndAuthenticate = js.Any.fromFunction5(decryptAndAuthenticate), deriveKeyMaterial = js.Any.fromFunction3(deriveKeyMaterial), encrypt = js.Any.fromFunction3(encrypt), encryptAndAuthenticate = js.Any.fromFunction4(encryptAndAuthenticate), sign = js.Any.fromFunction2(sign), verifySignature = js.Any.fromFunction3(verifySignature))
   
     __obj.asInstanceOf[ICryptographicEngineStatics]
   }

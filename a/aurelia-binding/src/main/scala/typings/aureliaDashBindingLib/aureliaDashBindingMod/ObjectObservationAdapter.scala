@@ -12,14 +12,9 @@ trait ObjectObservationAdapter extends js.Object {
 object ObjectObservationAdapter {
   @scala.inline
   def apply(
-    getObserver: js.Function3[
-      js.Any, 
-      java.lang.String, 
-      stdLib.PropertyDescriptor, 
-      js.UndefOr[InternalPropertyObserver | scala.Null]
-    ]
+    getObserver: (js.Any, java.lang.String, stdLib.PropertyDescriptor) => js.UndefOr[InternalPropertyObserver | scala.Null]
   ): ObjectObservationAdapter = {
-    val __obj = js.Dynamic.literal(getObserver = getObserver)
+    val __obj = js.Dynamic.literal(getObserver = js.Any.fromFunction3(getObserver))
   
     __obj.asInstanceOf[ObjectObservationAdapter]
   }

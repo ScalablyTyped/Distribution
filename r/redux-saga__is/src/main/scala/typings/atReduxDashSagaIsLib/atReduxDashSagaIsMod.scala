@@ -13,8 +13,8 @@ object atReduxDashSagaIsMod extends js.Object {
   val channel: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.GuardPredicate[atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Channel[js.Any], js.Any] = js.native
   val effect: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.GuardPredicate[atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Effect[js.Any], js.Any] = js.native
   val func: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.GuardPredicate[js.Function, js.Any] = js.native
-  val iterable: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.GuardPredicate[nodeLib.Iterable[js.Any], js.Any] = js.native
-  val iterator: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.GuardPredicate[nodeLib.Iterator[js.Any], js.Any] = js.native
+  val iterable: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.GuardPredicate[stdLib.Iterable[js.Any], js.Any] = js.native
+  val iterator: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.GuardPredicate[stdLib.Iterator[js.Any], js.Any] = js.native
   val notUndef: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.GuardPredicate[js.Any, js.Any] = js.native
   val number: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.GuardPredicate[scala.Double, js.Any] = js.native
   val `object`: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.GuardPredicate[js.Object, js.Any] = js.native

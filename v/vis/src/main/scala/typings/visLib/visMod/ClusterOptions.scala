@@ -54,19 +54,14 @@ object ClusterOptions {
   def apply(
     clusterEdgeProperties: EdgeOptions = null,
     clusterNodeProperties: NodeOptions = null,
-    joinCondition: js.Function1[/* nodeOptions */ js.Any, scala.Boolean] = null,
-    processProperties: js.Function3[
-      /* clusterOptions */ js.Any, 
-      /* childNodesOptions */ js.Array[_], 
-      /* childEdgesOptions */ js.Array[_], 
-      _
-    ] = null
+    joinCondition: /* nodeOptions */ js.Any => scala.Boolean = null,
+    processProperties: (/* clusterOptions */ js.Any, /* childNodesOptions */ js.Array[_], /* childEdgesOptions */ js.Array[_]) => _ = null
   ): ClusterOptions = {
     val __obj = js.Dynamic.literal()
     if (clusterEdgeProperties != null) __obj.updateDynamic("clusterEdgeProperties")(clusterEdgeProperties)
     if (clusterNodeProperties != null) __obj.updateDynamic("clusterNodeProperties")(clusterNodeProperties)
-    if (joinCondition != null) __obj.updateDynamic("joinCondition")(joinCondition)
-    if (processProperties != null) __obj.updateDynamic("processProperties")(processProperties)
+    if (joinCondition != null) __obj.updateDynamic("joinCondition")(js.Any.fromFunction1(joinCondition))
+    if (processProperties != null) __obj.updateDynamic("processProperties")(js.Any.fromFunction3(processProperties))
     __obj.asInstanceOf[ClusterOptions]
   }
 }

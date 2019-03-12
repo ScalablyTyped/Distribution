@@ -29,27 +29,23 @@ trait TimeItem extends js.Object {
 object TimeItem {
   @scala.inline
   def apply(
-    createResponse: js.Function2[
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
-      ItemResponse
-    ],
-    duplicate: js.Function0[TimeItem],
-    getGeneralFeedback: js.Function0[QuizFeedback],
-    getHelpText: js.Function0[java.lang.String],
-    getId: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getPoints: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getTitle: js.Function0[java.lang.String],
-    getType: js.Function0[ItemType],
-    isRequired: js.Function0[scala.Boolean],
-    setGeneralFeedback: js.Function1[QuizFeedback, TimeItem],
-    setHelpText: js.Function1[java.lang.String, TimeItem],
-    setPoints: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, TimeItem],
-    setRequired: js.Function1[scala.Boolean, TimeItem],
-    setTitle: js.Function1[java.lang.String, TimeItem]
+    createResponse: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => ItemResponse,
+    duplicate: () => TimeItem,
+    getGeneralFeedback: () => QuizFeedback,
+    getHelpText: () => java.lang.String,
+    getId: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getIndex: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getPoints: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getTitle: () => java.lang.String,
+    getType: () => ItemType,
+    isRequired: () => scala.Boolean,
+    setGeneralFeedback: QuizFeedback => TimeItem,
+    setHelpText: java.lang.String => TimeItem,
+    setPoints: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => TimeItem,
+    setRequired: scala.Boolean => TimeItem,
+    setTitle: java.lang.String => TimeItem
   ): TimeItem = {
-    val __obj = js.Dynamic.literal(createResponse = createResponse, duplicate = duplicate, getGeneralFeedback = getGeneralFeedback, getHelpText = getHelpText, getId = getId, getIndex = getIndex, getPoints = getPoints, getTitle = getTitle, getType = getType, isRequired = isRequired, setGeneralFeedback = setGeneralFeedback, setHelpText = setHelpText, setPoints = setPoints, setRequired = setRequired, setTitle = setTitle)
+    val __obj = js.Dynamic.literal(createResponse = js.Any.fromFunction2(createResponse), duplicate = js.Any.fromFunction0(duplicate), getGeneralFeedback = js.Any.fromFunction0(getGeneralFeedback), getHelpText = js.Any.fromFunction0(getHelpText), getId = js.Any.fromFunction0(getId), getIndex = js.Any.fromFunction0(getIndex), getPoints = js.Any.fromFunction0(getPoints), getTitle = js.Any.fromFunction0(getTitle), getType = js.Any.fromFunction0(getType), isRequired = js.Any.fromFunction0(isRequired), setGeneralFeedback = js.Any.fromFunction1(setGeneralFeedback), setHelpText = js.Any.fromFunction1(setHelpText), setPoints = js.Any.fromFunction1(setPoints), setRequired = js.Any.fromFunction1(setRequired), setTitle = js.Any.fromFunction1(setTitle))
   
     __obj.asInstanceOf[TimeItem]
   }

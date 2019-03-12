@@ -50,13 +50,13 @@ object Model {
   def apply(
     autoOpen: js.UndefOr[scala.Boolean] = js.undefined,
     backImageClass: java.lang.String = null,
-    click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
-    close: js.Function1[/* e */ CloseEventArgs, scala.Unit] = null,
+    click: /* e */ ClickEventArgs => scala.Unit = null,
+    close: /* e */ CloseEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
     enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
     imageClass: java.lang.String = null,
     items: js.Array[Item] = null,
-    open: js.Function1[/* e */ OpenEventArgs, scala.Unit] = null,
+    open: /* e */ OpenEventArgs => scala.Unit = null,
     position: js.Any = null,
     radius: scala.Int | scala.Double = null,
     targetElementId: java.lang.String = null
@@ -64,13 +64,13 @@ object Model {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen)
     if (backImageClass != null) __obj.updateDynamic("backImageClass")(backImageClass)
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
     if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass)
     if (items != null) __obj.updateDynamic("items")(items)
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (position != null) __obj.updateDynamic("position")(position)
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (targetElementId != null) __obj.updateDynamic("targetElementId")(targetElementId)

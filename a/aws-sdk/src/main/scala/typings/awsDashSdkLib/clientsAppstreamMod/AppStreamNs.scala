@@ -169,7 +169,7 @@ object AppStreamNs extends js.Object {
     /**
       * The fully qualified name of the directory (for example, corp.example.com).
       */
-    var DirectoryName: DirectoryName
+    var DirectoryName: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.DirectoryName
     /**
       * The distinguished names of the organizational units for computer accounts.
       */
@@ -177,7 +177,7 @@ object AppStreamNs extends js.Object {
     /**
       * The credentials for the service account used by the streaming instance to connect to the directory.
       */
-    var ServiceAccountCredentials: ServiceAccountCredentials
+    var ServiceAccountCredentials: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.ServiceAccountCredentials
   }
   
   trait CreateDirectoryConfigResult extends js.Object {
@@ -191,7 +191,7 @@ object AppStreamNs extends js.Object {
     /**
       * The desired capacity for the fleet.
       */
-    var ComputeCapacity: ComputeCapacity
+    var ComputeCapacity: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.ComputeCapacity
     /**
       * The description to display.
       */
@@ -235,7 +235,7 @@ object AppStreamNs extends js.Object {
     /**
       * A unique name for the fleet.
       */
-    var Name: Name
+    var Name: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.Name
     /**
       * The tags to associate with the fleet. A tag is a key-value pair, and the value is optional. For example, Environment=Test. If you do not specify a value, Environment=.  If you do not specify a value, the value is set to an empty string. For more information, see Tagging Your Resources in the Amazon AppStream 2.0 Developer Guide.
       */
@@ -289,7 +289,7 @@ object AppStreamNs extends js.Object {
     /**
       * A unique name for the image builder.
       */
-    var Name: Name
+    var Name: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.Name
     /**
       * The tags to associate with the image builder. A tag is a key-value pair, and the value is optional. For example, Environment=Test. If you do not specify a value, Environment=.  If you do not specify a value, the value is set to an empty string. For more information about tags, see Tagging Your Resources in the Amazon AppStream 2.0 Developer Guide.
       */
@@ -349,7 +349,7 @@ object AppStreamNs extends js.Object {
     /**
       * The name of the stack.
       */
-    var Name: Name
+    var Name: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.Name
     /**
       * The URL that users are redirected to after their streaming session ends.
       */
@@ -417,7 +417,7 @@ object AppStreamNs extends js.Object {
     /**
       * The authentication type for the user. You must specify USERPOOL. 
       */
-    var AuthenticationType: AuthenticationType
+    var AuthenticationType: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.AuthenticationType
     /**
       * The first name, or given name, of the user.
       */
@@ -442,7 +442,7 @@ object AppStreamNs extends js.Object {
     /**
       * The name of the directory configuration.
       */
-    var DirectoryName: DirectoryName
+    var DirectoryName: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.DirectoryName
   }
   
   trait DeleteDirectoryConfigResult extends js.Object
@@ -460,7 +460,7 @@ object AppStreamNs extends js.Object {
     /**
       * The name of the image builder.
       */
-    var Name: Name
+    var Name: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.Name
   }
   
   trait DeleteImageBuilderResult extends js.Object {
@@ -474,7 +474,7 @@ object AppStreamNs extends js.Object {
     /**
       * The name of the private image.
       */
-    var Name: Name
+    var Name: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.Name
     /**
       * The 12-digit identifier of the AWS account for which to delete image permissions.
       */
@@ -487,7 +487,7 @@ object AppStreamNs extends js.Object {
     /**
       * The name of the image.
       */
-    var Name: Name
+    var Name: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.Name
   }
   
   trait DeleteImageResult extends js.Object {
@@ -510,7 +510,7 @@ object AppStreamNs extends js.Object {
     /**
       * The authentication type for the user. You must specify USERPOOL.
       */
-    var AuthenticationType: AuthenticationType
+    var AuthenticationType: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.AuthenticationType
     /**
       * The email address of the user.
       */
@@ -601,7 +601,7 @@ object AppStreamNs extends js.Object {
     /**
       * The name of the private image for which to describe permissions. The image must be one that you own. 
       */
-    var Name: Name
+    var Name: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.Name
     /**
       * The pagination token to use to retrieve the next page of results for this operation. If this value is null, it retrieves the first page.
       */
@@ -759,7 +759,7 @@ object AppStreamNs extends js.Object {
     /**
       * The authentication type for the users in the user pool to describe. You must specify USERPOOL.
       */
-    var AuthenticationType: AuthenticationType
+    var AuthenticationType: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.AuthenticationType
     /**
       * The maximum size of each page of results.
       */
@@ -789,7 +789,7 @@ object AppStreamNs extends js.Object {
     /**
       * The fully qualified name of the directory (for example, corp.example.com).
       */
-    var DirectoryName: DirectoryName
+    var DirectoryName: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.DirectoryName
     /**
       * The distinguished names of the organizational units for computer accounts.
       */
@@ -804,7 +804,7 @@ object AppStreamNs extends js.Object {
     /**
       * The authentication type for the user. You must specify USERPOOL.
       */
-    var AuthenticationType: AuthenticationType
+    var AuthenticationType: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.AuthenticationType
     /**
       * The email address of the user.
       */
@@ -841,7 +841,7 @@ object AppStreamNs extends js.Object {
     /**
       * The authentication type for the user. You must specify USERPOOL.
       */
-    var AuthenticationType: AuthenticationType
+    var AuthenticationType: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.AuthenticationType
     /**
       * The email address of the user.
       */
@@ -863,11 +863,11 @@ object AppStreamNs extends js.Object {
     /**
       * The ARN for the fleet.
       */
-    var Arn: Arn
+    var Arn: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.Arn
     /**
       * The capacity status for the fleet.
       */
-    var ComputeCapacityStatus: ComputeCapacityStatus
+    var ComputeCapacityStatus: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.ComputeCapacityStatus
     /**
       * The time the fleet was created.
       */
@@ -1191,11 +1191,11 @@ object AppStreamNs extends js.Object {
     /**
       * The user name of the account. This account must have the following privileges: create computer objects, join computers to the domain, and change/reset the password on descendant computer objects for the organizational units specified.
       */
-    var AccountName: AccountName
+    var AccountName: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.AccountName
     /**
       * The password for the account.
       */
-    var AccountPassword: AccountPassword
+    var AccountPassword: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.AccountPassword
   }
   
   trait Session extends js.Object {
@@ -1238,7 +1238,7 @@ object AppStreamNs extends js.Object {
     /**
       * The identifier of the user for whom the session was created.
       */
-    var UserId: UserId
+    var UserId: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.UserId
   }
   
   trait SharedImagePermissions extends js.Object {
@@ -1383,7 +1383,7 @@ object AppStreamNs extends js.Object {
     /**
       * The tags to associate. A tag is a key-value pair, and the value is optional. For example, Environment=Test. If you do not specify a value, Environment=.  If you do not specify a value, the value is set to an empty string.
       */
-    var Tags: Tags
+    var Tags: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.Tags
   }
   
   trait TagResourceResponse extends js.Object
@@ -2483,7 +2483,7 @@ object AppStreamNs extends js.Object {
     /**
       * The name of the Directory Config object.
       */
-    var DirectoryName: DirectoryName
+    var DirectoryName: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.DirectoryName
     /**
       * The distinguished names of the organizational units for computer accounts.
       */
@@ -2571,11 +2571,11 @@ object AppStreamNs extends js.Object {
     /**
       * The permissions for the image.
       */
-    var ImagePermissions: ImagePermissions
+    var ImagePermissions: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.ImagePermissions
     /**
       * The name of the private image.
       */
-    var Name: Name
+    var Name: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.Name
     /**
       * The 12-digit identifier of the AWS account for which you want add or update image permissions.
       */
@@ -2642,7 +2642,7 @@ object AppStreamNs extends js.Object {
     /**
       * The authentication type for the user.
       */
-    var AuthenticationType: AuthenticationType
+    var AuthenticationType: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.AuthenticationType
     /**
       * The date and time the user was created in the user pool.
       */
@@ -2673,18 +2673,18 @@ object AppStreamNs extends js.Object {
     /**
       * The action that is enabled or disabled.
       */
-    var Action: Action
+    var Action: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.Action
     /**
       * Indicates whether the action is enabled or disabled.
       */
-    var Permission: Permission
+    var Permission: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.Permission
   }
   
   trait UserStackAssociation extends js.Object {
     /**
       * The authentication type for the user.
       */
-    var AuthenticationType: AuthenticationType
+    var AuthenticationType: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.AuthenticationType
     /**
       * Specifies whether a welcome email is sent to a user after the user is created in the user pool.
       */

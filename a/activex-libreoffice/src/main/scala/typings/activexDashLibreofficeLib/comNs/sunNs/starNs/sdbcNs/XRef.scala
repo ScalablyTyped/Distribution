@@ -29,12 +29,12 @@ object XRef {
   @scala.inline
   def apply(
     BaseTypeName: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getBaseTypeName: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getBaseTypeName: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XRef = {
-    val __obj = js.Dynamic.literal(BaseTypeName = BaseTypeName, acquire = acquire, getBaseTypeName = getBaseTypeName, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(BaseTypeName = BaseTypeName, acquire = js.Any.fromFunction0(acquire), getBaseTypeName = js.Any.fromFunction0(getBaseTypeName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XRef]
   }

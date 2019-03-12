@@ -64,15 +64,15 @@ object XBackendEntities {
   def apply(
     AdminEntity: java.lang.String,
     OwnerEntity: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getAdminEntity: js.Function0[java.lang.String],
-    getOwnerEntity: js.Function0[java.lang.String],
-    isEqualEntity: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    supportsEntity: js.Function1[java.lang.String, scala.Boolean]
+    acquire: () => scala.Unit,
+    getAdminEntity: () => java.lang.String,
+    getOwnerEntity: () => java.lang.String,
+    isEqualEntity: (java.lang.String, java.lang.String) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    supportsEntity: java.lang.String => scala.Boolean
   ): XBackendEntities = {
-    val __obj = js.Dynamic.literal(AdminEntity = AdminEntity, OwnerEntity = OwnerEntity, acquire = acquire, getAdminEntity = getAdminEntity, getOwnerEntity = getOwnerEntity, isEqualEntity = isEqualEntity, queryInterface = queryInterface, release = release, supportsEntity = supportsEntity)
+    val __obj = js.Dynamic.literal(AdminEntity = AdminEntity, OwnerEntity = OwnerEntity, acquire = js.Any.fromFunction0(acquire), getAdminEntity = js.Any.fromFunction0(getAdminEntity), getOwnerEntity = js.Any.fromFunction0(getOwnerEntity), isEqualEntity = js.Any.fromFunction2(isEqualEntity), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), supportsEntity = js.Any.fromFunction1(supportsEntity))
   
     __obj.asInstanceOf[XBackendEntities]
   }

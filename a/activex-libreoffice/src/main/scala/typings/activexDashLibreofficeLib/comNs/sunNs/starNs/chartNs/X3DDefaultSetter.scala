@@ -25,14 +25,14 @@ trait X3DDefaultSetter
 object X3DDefaultSetter {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    set3DSettingsToDefault: js.Function0[scala.Unit],
-    setDefaultIllumination: js.Function0[scala.Unit],
-    setDefaultRotation: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    set3DSettingsToDefault: () => scala.Unit,
+    setDefaultIllumination: () => scala.Unit,
+    setDefaultRotation: () => scala.Unit
   ): X3DDefaultSetter = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, set3DSettingsToDefault = set3DSettingsToDefault, setDefaultIllumination = setDefaultIllumination, setDefaultRotation = setDefaultRotation)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), set3DSettingsToDefault = js.Any.fromFunction0(set3DSettingsToDefault), setDefaultIllumination = js.Any.fromFunction0(setDefaultIllumination), setDefaultRotation = js.Any.fromFunction0(setDefaultRotation))
   
     __obj.asInstanceOf[X3DDefaultSetter]
   }

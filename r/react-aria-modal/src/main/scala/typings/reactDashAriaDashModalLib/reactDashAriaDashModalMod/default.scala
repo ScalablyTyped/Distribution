@@ -14,6 +14,6 @@ class default () extends AriaModal
 @js.native
 object default extends js.Object {
   def renderTo(node: java.lang.String): scala.Unit = js.native
-  def renderTo(node: reactLib.HTMLElement): scala.Unit = js.native
+  def renderTo(node: stdLib.HTMLElement): scala.Unit = js.native
 }
 

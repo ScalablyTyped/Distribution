@@ -13,10 +13,10 @@ trait Anon_Array extends js.Object {
 object Anon_Array {
   @scala.inline
   def apply(
-    decode: js.Function1[java.lang.String, js.Array[scala.Double]],
-    encode: js.Function1[js.Array[scala.Double], java.lang.String]
+    decode: java.lang.String => js.Array[scala.Double],
+    encode: js.Array[scala.Double] => java.lang.String
   ): Anon_Array = {
-    val __obj = js.Dynamic.literal(decode = decode, encode = encode)
+    val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
   
     __obj.asInstanceOf[Anon_Array]
   }

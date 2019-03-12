@@ -131,76 +131,76 @@ object ICheckboxGroup {
     IField: extjsLib.ExtNs.formNs.fieldNs.IField = null,
     IFieldContainer: IFieldContainer = null,
     allowBlank: js.UndefOr[scala.Boolean] = js.undefined,
-    batchChanges: js.Function1[/* fn */ js.UndefOr[js.Any], scala.Unit] = null,
-    beforeReset: js.Function0[scala.Unit] = null,
+    batchChanges: /* fn */ js.UndefOr[js.Any] => scala.Unit = null,
+    beforeReset: () => scala.Unit = null,
     blankText: java.lang.String = null,
-    checkChange: js.Function0[scala.Unit] = null,
-    checkDirty: js.Function0[scala.Unit] = null,
-    clearInvalid: js.Function0[scala.Unit] = null,
+    checkChange: () => scala.Unit = null,
+    checkDirty: () => scala.Unit = null,
+    clearInvalid: () => scala.Unit = null,
     columns: js.Any = null,
     componentCls: java.lang.String = null,
     defaultType: java.lang.String = null,
-    extractFileInput: js.Function0[stdLib.HTMLElement] = null,
-    getChecked: js.Function0[extjsLib.ExtNs.Array] = null,
-    getErrors: js.Function0[extjsLib.ExtNs.Array] = null,
-    getModelData: js.Function0[_] = null,
-    getName: js.Function0[java.lang.String] = null,
-    getSubmitData: js.Function0[_] = null,
-    getValue: js.Function0[scala.Unit] = null,
-    initField: js.Function0[scala.Unit] = null,
-    initValue: js.Function0[scala.Unit] = null,
-    isDirty: js.Function0[scala.Boolean] = null,
-    isEqual: js.Function2[/* value1 */ js.UndefOr[js.Any], /* value2 */ js.UndefOr[js.Any], scala.Boolean] = null,
-    isFileUpload: js.Function0[scala.Boolean] = null,
-    isValid: js.Function0[scala.Boolean] = null,
+    extractFileInput: () => stdLib.HTMLElement = null,
+    getChecked: () => extjsLib.ExtNs.Array = null,
+    getErrors: () => extjsLib.ExtNs.Array = null,
+    getModelData: () => _ = null,
+    getName: () => java.lang.String = null,
+    getSubmitData: () => _ = null,
+    getValue: () => scala.Unit = null,
+    initField: () => scala.Unit = null,
+    initValue: () => scala.Unit = null,
+    isDirty: () => scala.Boolean = null,
+    isEqual: (/* value1 */ js.UndefOr[js.Any], /* value2 */ js.UndefOr[js.Any]) => scala.Boolean = null,
+    isFileUpload: () => scala.Boolean = null,
+    isValid: () => scala.Boolean = null,
     items: js.Any = null,
     layout: js.Any = null,
-    markInvalid: js.Function1[/* errors */ js.UndefOr[js.Any], scala.Unit] = null,
-    onAdd: js.Function1[/* field */ js.UndefOr[js.Any], scala.Unit] = null,
-    onRemove: js.Function1[/* item */ js.UndefOr[js.Any], scala.Unit] = null,
-    reset: js.Function0[scala.Unit] = null,
-    resetOriginalValue: js.Function0[scala.Unit] = null,
-    setValue: js.Function1[/* value */ js.UndefOr[js.Any], ICheckboxGroup] = null,
-    transformOriginalValue: js.Function1[/* value */ js.UndefOr[js.Any], _] = null,
-    validate: js.Function0[scala.Boolean] = null,
+    markInvalid: /* errors */ js.UndefOr[js.Any] => scala.Unit = null,
+    onAdd: /* field */ js.UndefOr[js.Any] => scala.Unit = null,
+    onRemove: /* item */ js.UndefOr[js.Any] => scala.Unit = null,
+    reset: () => scala.Unit = null,
+    resetOriginalValue: () => scala.Unit = null,
+    setValue: /* value */ js.UndefOr[js.Any] => ICheckboxGroup = null,
+    transformOriginalValue: /* value */ js.UndefOr[js.Any] => _ = null,
+    validate: () => scala.Boolean = null,
     vertical: js.UndefOr[scala.Boolean] = js.undefined
   ): ICheckboxGroup = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IField)
     js.Dynamic.global.Object.assign(__obj, IFieldContainer)
     if (!js.isUndefined(allowBlank)) __obj.updateDynamic("allowBlank")(allowBlank)
-    if (batchChanges != null) __obj.updateDynamic("batchChanges")(batchChanges)
-    if (beforeReset != null) __obj.updateDynamic("beforeReset")(beforeReset)
+    if (batchChanges != null) __obj.updateDynamic("batchChanges")(js.Any.fromFunction1(batchChanges))
+    if (beforeReset != null) __obj.updateDynamic("beforeReset")(js.Any.fromFunction0(beforeReset))
     if (blankText != null) __obj.updateDynamic("blankText")(blankText)
-    if (checkChange != null) __obj.updateDynamic("checkChange")(checkChange)
-    if (checkDirty != null) __obj.updateDynamic("checkDirty")(checkDirty)
-    if (clearInvalid != null) __obj.updateDynamic("clearInvalid")(clearInvalid)
+    if (checkChange != null) __obj.updateDynamic("checkChange")(js.Any.fromFunction0(checkChange))
+    if (checkDirty != null) __obj.updateDynamic("checkDirty")(js.Any.fromFunction0(checkDirty))
+    if (clearInvalid != null) __obj.updateDynamic("clearInvalid")(js.Any.fromFunction0(clearInvalid))
     if (columns != null) __obj.updateDynamic("columns")(columns)
     if (componentCls != null) __obj.updateDynamic("componentCls")(componentCls)
     if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
-    if (extractFileInput != null) __obj.updateDynamic("extractFileInput")(extractFileInput)
-    if (getChecked != null) __obj.updateDynamic("getChecked")(getChecked)
-    if (getErrors != null) __obj.updateDynamic("getErrors")(getErrors)
-    if (getModelData != null) __obj.updateDynamic("getModelData")(getModelData)
-    if (getName != null) __obj.updateDynamic("getName")(getName)
-    if (getSubmitData != null) __obj.updateDynamic("getSubmitData")(getSubmitData)
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
-    if (initField != null) __obj.updateDynamic("initField")(initField)
-    if (initValue != null) __obj.updateDynamic("initValue")(initValue)
-    if (isDirty != null) __obj.updateDynamic("isDirty")(isDirty)
-    if (isEqual != null) __obj.updateDynamic("isEqual")(isEqual)
-    if (isFileUpload != null) __obj.updateDynamic("isFileUpload")(isFileUpload)
-    if (isValid != null) __obj.updateDynamic("isValid")(isValid)
+    if (extractFileInput != null) __obj.updateDynamic("extractFileInput")(js.Any.fromFunction0(extractFileInput))
+    if (getChecked != null) __obj.updateDynamic("getChecked")(js.Any.fromFunction0(getChecked))
+    if (getErrors != null) __obj.updateDynamic("getErrors")(js.Any.fromFunction0(getErrors))
+    if (getModelData != null) __obj.updateDynamic("getModelData")(js.Any.fromFunction0(getModelData))
+    if (getName != null) __obj.updateDynamic("getName")(js.Any.fromFunction0(getName))
+    if (getSubmitData != null) __obj.updateDynamic("getSubmitData")(js.Any.fromFunction0(getSubmitData))
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
+    if (initField != null) __obj.updateDynamic("initField")(js.Any.fromFunction0(initField))
+    if (initValue != null) __obj.updateDynamic("initValue")(js.Any.fromFunction0(initValue))
+    if (isDirty != null) __obj.updateDynamic("isDirty")(js.Any.fromFunction0(isDirty))
+    if (isEqual != null) __obj.updateDynamic("isEqual")(js.Any.fromFunction2(isEqual))
+    if (isFileUpload != null) __obj.updateDynamic("isFileUpload")(js.Any.fromFunction0(isFileUpload))
+    if (isValid != null) __obj.updateDynamic("isValid")(js.Any.fromFunction0(isValid))
     if (items != null) __obj.updateDynamic("items")(items)
     if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (markInvalid != null) __obj.updateDynamic("markInvalid")(markInvalid)
-    if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd)
-    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
-    if (reset != null) __obj.updateDynamic("reset")(reset)
-    if (resetOriginalValue != null) __obj.updateDynamic("resetOriginalValue")(resetOriginalValue)
-    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
-    if (transformOriginalValue != null) __obj.updateDynamic("transformOriginalValue")(transformOriginalValue)
-    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (markInvalid != null) __obj.updateDynamic("markInvalid")(js.Any.fromFunction1(markInvalid))
+    if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction1(onAdd))
+    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
+    if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
+    if (resetOriginalValue != null) __obj.updateDynamic("resetOriginalValue")(js.Any.fromFunction0(resetOriginalValue))
+    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
+    if (transformOriginalValue != null) __obj.updateDynamic("transformOriginalValue")(js.Any.fromFunction1(transformOriginalValue))
+    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction0(validate))
     if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
     __obj.asInstanceOf[ICheckboxGroup]
   }

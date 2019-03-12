@@ -14,12 +14,12 @@ trait XUniqueIDFactory
 object XUniqueIDFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createUniqueID: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createUniqueID: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XUniqueIDFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createUniqueID = createUniqueID, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createUniqueID = js.Any.fromFunction0(createUniqueID), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XUniqueIDFactory]
   }

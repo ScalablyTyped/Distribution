@@ -12,8 +12,8 @@ trait Extension extends js.Object {
 
 object Extension {
   @scala.inline
-  def apply(parse: js.Function3[js.Any, js.Any, js.Any, js.Any], tags: js.Array[java.lang.String]): Extension = {
-    val __obj = js.Dynamic.literal(parse = parse, tags = tags)
+  def apply(parse: (js.Any, js.Any, js.Any) => js.Any, tags: js.Array[java.lang.String]): Extension = {
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction3(parse), tags = tags)
   
     __obj.asInstanceOf[Extension]
   }

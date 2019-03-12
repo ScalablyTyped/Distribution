@@ -19,20 +19,12 @@ trait Anon_CreateEnumerable extends js.Object {
 object Anon_CreateEnumerable {
   @scala.inline
   def apply(
-    createEnumerable: js.Function1[
-      js.Function0[linqLib.linqMod.EnumerableNs.IEnumerator[js.Any]], 
-      linqLib.linqMod.EnumerableNs.IEnumerable[js.Any]
-    ],
-    createEnumerator: js.Function3[
-      js.Function0[scala.Unit], 
-      js.Function0[scala.Boolean], 
-      js.Function0[scala.Unit], 
-      linqLib.linqMod.EnumerableNs.IEnumerator[js.Any]
-    ],
-    createLambda: js.Function1[js.Any, js.Function1[/* repeated */ js.Any, _]],
-    extendTo: js.Function1[js.Any, scala.Unit]
+    createEnumerable: js.Function0[linqLib.linqMod.EnumerableNs.IEnumerator[js.Any]] => linqLib.linqMod.EnumerableNs.IEnumerable[js.Any],
+    createEnumerator: (js.Function0[scala.Unit], js.Function0[scala.Boolean], js.Function0[scala.Unit]) => linqLib.linqMod.EnumerableNs.IEnumerator[js.Any],
+    createLambda: js.Any => js.Function1[/* repeated */ js.Any, _],
+    extendTo: js.Any => scala.Unit
   ): Anon_CreateEnumerable = {
-    val __obj = js.Dynamic.literal(createEnumerable = createEnumerable, createEnumerator = createEnumerator, createLambda = createLambda, extendTo = extendTo)
+    val __obj = js.Dynamic.literal(createEnumerable = js.Any.fromFunction1(createEnumerable), createEnumerator = js.Any.fromFunction3(createEnumerator), createLambda = js.Any.fromFunction1(createLambda), extendTo = js.Any.fromFunction1(extendTo))
   
     __obj.asInstanceOf[Anon_CreateEnumerable]
   }

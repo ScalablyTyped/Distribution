@@ -21,7 +21,7 @@ class CancellationToken ()
   def createPromise[R](
     callback: js.Function3[
       /* resolve */ js.Function1[/* thenableOrResult */ js.UndefOr[R], scala.Unit], 
-      /* reject */ js.Function1[/* error */ nodeLib.Error, scala.Unit], 
+      /* reject */ js.Function1[/* error */ stdLib.Error, scala.Unit], 
       /* onCancel */ js.Function1[/* callback */ js.Function0[scala.Unit], scala.Unit], 
       scala.Unit
     ]

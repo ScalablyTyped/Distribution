@@ -293,7 +293,7 @@ object WorkDocsNs extends js.Object {
     /**
       * The notification type.
       */
-    var SubscriptionType: SubscriptionType
+    var SubscriptionType: awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.SubscriptionType
   }
   
   trait CreateNotificationSubscriptionResponse extends js.Object {

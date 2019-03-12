@@ -21,28 +21,13 @@ trait ConversionResource extends js.Object {
 object ConversionResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotDoubleclicksearchLib.Anon_AdGroupIdAdId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ConversionList]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotDoubleclicksearchLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ConversionList]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotDoubleclicksearchLib.Anon_AdvertiserId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ConversionList]
-    ],
-    update: js.Function1[
-      gapiDotClientDotDoubleclicksearchLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ConversionList]
-    ],
-    updateAvailability: js.Function1[
-      gapiDotClientDotDoubleclicksearchLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[UpdateAvailabilityResponse]
-    ]
+    get: gapiDotClientDotDoubleclicksearchLib.Anon_AdGroupIdAdId => gapiDotClientLib.gapiNs.clientNs.Request[ConversionList],
+    insert: gapiDotClientDotDoubleclicksearchLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ConversionList],
+    patch: gapiDotClientDotDoubleclicksearchLib.Anon_AdvertiserId => gapiDotClientLib.gapiNs.clientNs.Request[ConversionList],
+    update: gapiDotClientDotDoubleclicksearchLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ConversionList],
+    updateAvailability: gapiDotClientDotDoubleclicksearchLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[UpdateAvailabilityResponse]
   ): ConversionResource = {
-    val __obj = js.Dynamic.literal(get = get, insert = insert, patch = patch, update = update, updateAvailability = updateAvailability)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update), updateAvailability = js.Any.fromFunction1(updateAvailability))
   
     __obj.asInstanceOf[ConversionResource]
   }

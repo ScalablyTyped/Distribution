@@ -25,7 +25,7 @@ trait XTolerantMultiPropertySet
     * @param aPropertyNames specifies the names of the properties. The property names must be sorted ascending.  If the names are not sorted the behaviour of
     * @returns a sequence of type {@link com.sun.star.beans.GetDirectPropertyTolerantResult} but only for those properties supplied whoms state is com::sun::sta
     */
-  def getDirectPropertyValuesTolerant(aPropertyNames: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): activexDashInteropLib.SafeArray[GetDirectPropertyTolerantResult]
+  def getDirectPropertyValuesTolerant(aPropertyNames: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): stdLib.SafeArray[GetDirectPropertyTolerantResult]
   /**
     * retrieve the values of the specified properties
     *
@@ -33,7 +33,7 @@ trait XTolerantMultiPropertySet
     * @param aPropertyNames specifies the names of the properties. The property names must be sorted ascending.  If the names are not sorted the behaviour of
     * @returns a sequence of type {@link com.sun.star.beans.GetPropertyTolerantResult} for each of the properties listed in **aPropertyNames** .
     */
-  def getPropertyValuesTolerant(aPropertyNames: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): activexDashInteropLib.SafeArray[GetPropertyTolerantResult]
+  def getPropertyValuesTolerant(aPropertyNames: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): stdLib.SafeArray[GetPropertyTolerantResult]
   /**
     * sets the values to the properties with the specified names.
     * @param aPropertyNames specifies the names of the properties. The property names must be sorted ascending.  If the names are not sorted the behaviour of
@@ -44,30 +44,20 @@ trait XTolerantMultiPropertySet
   def setPropertyValuesTolerant(
     aPropertyNames: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String],
     aValues: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]
-  ): activexDashInteropLib.SafeArray[SetPropertyTolerantFailed]
+  ): stdLib.SafeArray[SetPropertyTolerantFailed]
 }
 
 object XTolerantMultiPropertySet {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getDirectPropertyValuesTolerant: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashInteropLib.SafeArray[GetDirectPropertyTolerantResult]
-    ],
-    getPropertyValuesTolerant: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashInteropLib.SafeArray[GetPropertyTolerantResult]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setPropertyValuesTolerant: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
-      activexDashInteropLib.SafeArray[SetPropertyTolerantFailed]
-    ]
+    acquire: () => scala.Unit,
+    getDirectPropertyValuesTolerant: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => stdLib.SafeArray[GetDirectPropertyTolerantResult],
+    getPropertyValuesTolerant: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => stdLib.SafeArray[GetPropertyTolerantResult],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setPropertyValuesTolerant: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]) => stdLib.SafeArray[SetPropertyTolerantFailed]
   ): XTolerantMultiPropertySet = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getDirectPropertyValuesTolerant = getDirectPropertyValuesTolerant, getPropertyValuesTolerant = getPropertyValuesTolerant, queryInterface = queryInterface, release = release, setPropertyValuesTolerant = setPropertyValuesTolerant)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDirectPropertyValuesTolerant = js.Any.fromFunction1(getDirectPropertyValuesTolerant), getPropertyValuesTolerant = js.Any.fromFunction1(getPropertyValuesTolerant), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setPropertyValuesTolerant = js.Any.fromFunction2(setPropertyValuesTolerant))
   
     __obj.asInstanceOf[XTolerantMultiPropertySet]
   }

@@ -15,15 +15,15 @@ trait Component extends js.Object {
 object Component {
   @scala.inline
   def apply(
-    render: js.Function1[Model, dekuLib.dekuMod.dekuNs.VirtualElement],
-    onCreate: js.Function1[/* model */ Model, _] = null,
-    onRemove: js.Function1[/* model */ Model, _] = null,
-    onUpdate: js.Function1[/* model */ Model, _] = null
+    render: Model => dekuLib.dekuMod.dekuNs.VirtualElement,
+    onCreate: /* model */ Model => _ = null,
+    onRemove: /* model */ Model => _ = null,
+    onUpdate: /* model */ Model => _ = null
   ): Component = {
-    val __obj = js.Dynamic.literal(render = render)
-    if (onCreate != null) __obj.updateDynamic("onCreate")(onCreate)
-    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
+    if (onCreate != null) __obj.updateDynamic("onCreate")(js.Any.fromFunction1(onCreate))
+    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
     __obj.asInstanceOf[Component]
   }
 }

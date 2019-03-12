@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait AFrame extends js.Object {
   var AComponent: Component[_, System[_]]
   var AEntity: Entity[ObjectMap[Component[_, System[_]]]]
-  var ANode: ANode
+  var ANode: aframeLib.aframeMod.ANode
   var AScene: Scene
   var THREE: ThreeLib
   var TWEEN: TweenLib
@@ -41,12 +41,12 @@ object AFrame {
     components: ObjectMap[ComponentDescriptor[Component[_, System[_]]]],
     geometries: ObjectMap[GeometryDescriptor[Geometry[_]]],
     primitives: aframeLib.Anon_GetMeshMixin,
-    registerComponent: js.Function2[java.lang.String, ComponentDefinition[js.Any], ComponentConstructor[js.Any]],
-    registerElement: js.Function2[java.lang.String, js.Object, scala.Unit],
-    registerGeometry: js.Function2[java.lang.String, GeometryDefinition[js.Any, _], GeometryConstructor[js.Any]],
-    registerPrimitive: js.Function2[java.lang.String, PrimitiveDefinition, scala.Unit],
-    registerShader: js.Function2[java.lang.String, ShaderDefinition[js.Any], ShaderConstructor[js.Any]],
-    registerSystem: js.Function2[java.lang.String, SystemDefinition[js.Any], SystemConstructor[js.Any]],
+    registerComponent: (java.lang.String, ComponentDefinition[js.Any]) => ComponentConstructor[js.Any],
+    registerElement: (java.lang.String, js.Object) => scala.Unit,
+    registerGeometry: (java.lang.String, GeometryDefinition[js.Any, _]) => GeometryConstructor[js.Any],
+    registerPrimitive: (java.lang.String, PrimitiveDefinition) => scala.Unit,
+    registerShader: (java.lang.String, ShaderDefinition[js.Any]) => ShaderConstructor[js.Any],
+    registerSystem: (java.lang.String, SystemDefinition[js.Any]) => SystemConstructor[js.Any],
     scenes: js.Array[Scene],
     schema: SchemaUtils,
     shaders: ObjectMap[ShaderDescriptor[Shader]],
@@ -54,7 +54,7 @@ object AFrame {
     utils: Utils,
     version: java.lang.String
   ): AFrame = {
-    val __obj = js.Dynamic.literal(AComponent = AComponent, AEntity = AEntity, ANode = ANode, AScene = AScene, THREE = THREE, TWEEN = TWEEN, components = components, geometries = geometries, primitives = primitives, registerComponent = registerComponent, registerElement = registerElement, registerGeometry = registerGeometry, registerPrimitive = registerPrimitive, registerShader = registerShader, registerSystem = registerSystem, scenes = scenes, schema = schema, shaders = shaders, systems = systems, utils = utils, version = version)
+    val __obj = js.Dynamic.literal(AComponent = AComponent, AEntity = AEntity, ANode = ANode, AScene = AScene, THREE = THREE, TWEEN = TWEEN, components = components, geometries = geometries, primitives = primitives, registerComponent = js.Any.fromFunction2(registerComponent), registerElement = js.Any.fromFunction2(registerElement), registerGeometry = js.Any.fromFunction2(registerGeometry), registerPrimitive = js.Any.fromFunction2(registerPrimitive), registerShader = js.Any.fromFunction2(registerShader), registerSystem = js.Any.fromFunction2(registerSystem), scenes = scenes, schema = schema, shaders = shaders, systems = systems, utils = utils, version = version)
   
     __obj.asInstanceOf[AFrame]
   }

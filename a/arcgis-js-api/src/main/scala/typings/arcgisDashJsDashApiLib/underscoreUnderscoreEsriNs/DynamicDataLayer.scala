@@ -33,11 +33,11 @@ object DynamicDataLayer {
     constructor: js.Function,
     dataSource: TableDataSource | QueryTableDataSource | RasterDataSource | JoinTableDataSource,
     fields: js.Array[DynamicDataLayerFields],
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     `type`: java.lang.String
   ): DynamicDataLayer = {
-    val __obj = js.Dynamic.literal(constructor = constructor, dataSource = dataSource.asInstanceOf[js.Any], fields = fields, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, dataSource = dataSource.asInstanceOf[js.Any], fields = fields, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DynamicDataLayer]
   }

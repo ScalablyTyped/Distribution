@@ -67,34 +67,34 @@ trait GravityBehavior
 object GravityBehavior {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    addItem: js.Function1[js.Any, scala.Unit],
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    addItem: js.Any => scala.Unit,
     angle: scala.Double,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     bubbleParent: scala.Boolean,
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getAngle: js.Function0[scala.Double],
-    getApiName: js.Function0[java.lang.String],
-    getBubbleParent: js.Function0[scala.Boolean],
-    getGravityDirection: js.Function0[titaniumLib.Point],
-    getItems: js.Function0[js.Array[titaniumLib.TitaniumNs.UINs.View]],
-    getMagnitude: js.Function0[scala.Double],
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
+    getAngle: () => scala.Double,
+    getApiName: () => java.lang.String,
+    getBubbleParent: () => scala.Boolean,
+    getGravityDirection: () => titaniumLib.Point,
+    getItems: () => js.Array[titaniumLib.TitaniumNs.UINs.View],
+    getMagnitude: () => scala.Double,
     gravityDirection: titaniumLib.Point,
     items: js.Array[titaniumLib.TitaniumNs.UINs.View],
     magnitude: scala.Double,
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    removeItem: js.Function1[js.Any, scala.Unit],
-    setAngle: js.Function1[scala.Double, scala.Unit],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
-    setGravityDirection: js.Function1[titaniumLib.Point, scala.Unit],
-    setMagnitude: js.Function1[scala.Double, scala.Unit],
-    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    removeItem: js.Any => scala.Unit,
+    setAngle: scala.Double => scala.Unit,
+    setBubbleParent: scala.Boolean => scala.Unit,
+    setGravityDirection: titaniumLib.Point => scala.Unit,
+    setMagnitude: scala.Double => scala.Unit,
+    getLifecycleContainer: () => titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
   ): GravityBehavior = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, addItem = addItem, angle = angle, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, getAngle = getAngle, getApiName = getApiName, getBubbleParent = getBubbleParent, getGravityDirection = getGravityDirection, getItems = getItems, getMagnitude = getMagnitude, gravityDirection = gravityDirection, items = items, magnitude = magnitude, removeEventListener = removeEventListener, removeItem = removeItem, setAngle = setAngle, setBubbleParent = setBubbleParent, setGravityDirection = setGravityDirection, setMagnitude = setMagnitude)
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), addItem = js.Any.fromFunction1(addItem), angle = angle, apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, fireEvent = js.Any.fromFunction2(fireEvent), getAngle = js.Any.fromFunction0(getAngle), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getGravityDirection = js.Any.fromFunction0(getGravityDirection), getItems = js.Any.fromFunction0(getItems), getMagnitude = js.Any.fromFunction0(getMagnitude), gravityDirection = gravityDirection, items = items, magnitude = magnitude, removeEventListener = js.Any.fromFunction2(removeEventListener), removeItem = js.Any.fromFunction1(removeItem), setAngle = js.Any.fromFunction1(setAngle), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setGravityDirection = js.Any.fromFunction1(setGravityDirection), setMagnitude = js.Any.fromFunction1(setMagnitude))
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
     __obj.asInstanceOf[GravityBehavior]

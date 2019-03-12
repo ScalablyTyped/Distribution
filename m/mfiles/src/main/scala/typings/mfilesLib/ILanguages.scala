@@ -12,8 +12,8 @@ trait ILanguages extends js.Object {
 
 object ILanguages {
   @scala.inline
-  def apply(Count: scala.Double, Item: js.Function1[scala.Double, ILanguage]): ILanguages = {
-    val __obj = js.Dynamic.literal(Count = Count, Item = Item)
+  def apply(Count: scala.Double, Item: scala.Double => ILanguage): ILanguages = {
+    val __obj = js.Dynamic.literal(Count = Count, Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[ILanguages]
   }

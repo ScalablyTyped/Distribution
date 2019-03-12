@@ -30,13 +30,13 @@ trait XDataFormatTranslator
 object XDataFormatTranslator {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getDataFlavorFromSystemDataType: js.Function1[js.Any, DataFlavor],
-    getSystemDataTypeFromDataFlavor: js.Function1[DataFlavor, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDataFlavorFromSystemDataType: js.Any => DataFlavor,
+    getSystemDataTypeFromDataFlavor: DataFlavor => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDataFormatTranslator = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getDataFlavorFromSystemDataType = getDataFlavorFromSystemDataType, getSystemDataTypeFromDataFlavor = getSystemDataTypeFromDataFlavor, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDataFlavorFromSystemDataType = js.Any.fromFunction1(getDataFlavorFromSystemDataType), getSystemDataTypeFromDataFlavor = js.Any.fromFunction1(getSystemDataTypeFromDataFlavor), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDataFormatTranslator]
   }

@@ -63,18 +63,18 @@ object Anon_AB {
   def apply(
     EPSILON: scala.Double,
     INs: js.Any,
-    equals: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    equals: (scala.Double, scala.Double) => scala.Boolean,
     mat2Ns: Anon_AAddAdjoint,
     mat2dNs: Anon_AAddB,
     mat3Ns: Anon_AAddAdjointB,
     mat4Ns: Anon_AAddAdjointAspect,
     quatNs: Anon_AAddAxis,
-    toRadian: js.Function1[scala.Double, scala.Double],
+    toRadian: scala.Double => scala.Double,
     vec2Ns: Anon_AAdd,
     vec3Ns: Anon_AAddAngle,
     vec4Ns: Anon_AAddArg
   ): Anon_AB = {
-    val __obj = js.Dynamic.literal(EPSILON = EPSILON, INs = INs, equals = equals, mat2Ns = mat2Ns, mat2dNs = mat2dNs, mat3Ns = mat3Ns, mat4Ns = mat4Ns, quatNs = quatNs, toRadian = toRadian, vec2Ns = vec2Ns, vec3Ns = vec3Ns, vec4Ns = vec4Ns)
+    val __obj = js.Dynamic.literal(EPSILON = EPSILON, INs = INs, equals = js.Any.fromFunction2(equals), mat2Ns = mat2Ns, mat2dNs = mat2dNs, mat3Ns = mat3Ns, mat4Ns = mat4Ns, quatNs = quatNs, toRadian = js.Any.fromFunction1(toRadian), vec2Ns = vec2Ns, vec3Ns = vec3Ns, vec4Ns = vec4Ns)
   
     __obj.asInstanceOf[Anon_AB]
   }

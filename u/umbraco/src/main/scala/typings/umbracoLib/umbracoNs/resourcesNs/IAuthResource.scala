@@ -119,17 +119,13 @@ trait IAuthResource extends js.Object {
 object IAuthResource {
   @scala.inline
   def apply(
-    getCurrentUser: js.Function0[angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
-    getRemainingTimeoutSeconds: js.Function0[angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
-    isAuthenticated: js.Function0[angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
-    performLogin: js.Function2[
-      java.lang.String, 
-      java.lang.String, 
-      angularLib.angularMod.angularNs.IPromise[IResourcePromise]
-    ],
-    performLogout: js.Function0[angularLib.angularMod.angularNs.IPromise[IResourcePromise]]
+    getCurrentUser: () => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
+    getRemainingTimeoutSeconds: () => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
+    isAuthenticated: () => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
+    performLogin: (java.lang.String, java.lang.String) => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
+    performLogout: () => angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   ): IAuthResource = {
-    val __obj = js.Dynamic.literal(getCurrentUser = getCurrentUser, getRemainingTimeoutSeconds = getRemainingTimeoutSeconds, isAuthenticated = isAuthenticated, performLogin = performLogin, performLogout = performLogout)
+    val __obj = js.Dynamic.literal(getCurrentUser = js.Any.fromFunction0(getCurrentUser), getRemainingTimeoutSeconds = js.Any.fromFunction0(getRemainingTimeoutSeconds), isAuthenticated = js.Any.fromFunction0(isAuthenticated), performLogin = js.Any.fromFunction2(performLogin), performLogout = js.Any.fromFunction0(performLogout))
   
     __obj.asInstanceOf[IAuthResource]
   }

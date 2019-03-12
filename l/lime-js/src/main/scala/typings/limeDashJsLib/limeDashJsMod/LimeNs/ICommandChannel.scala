@@ -12,8 +12,8 @@ trait ICommandChannel extends js.Object {
 
 object ICommandChannel {
   @scala.inline
-  def apply(onCommand: js.Function1[Command, js.Any], sendCommand: js.Function1[Command, scala.Unit]): ICommandChannel = {
-    val __obj = js.Dynamic.literal(onCommand = onCommand, sendCommand = sendCommand)
+  def apply(onCommand: Command => js.Any, sendCommand: Command => scala.Unit): ICommandChannel = {
+    val __obj = js.Dynamic.literal(onCommand = js.Any.fromFunction1(onCommand), sendCommand = js.Any.fromFunction1(sendCommand))
   
     __obj.asInstanceOf[ICommandChannel]
   }

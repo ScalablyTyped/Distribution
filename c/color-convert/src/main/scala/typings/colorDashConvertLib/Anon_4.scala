@@ -16,9 +16,9 @@ object Anon_4 {
   def apply(
     channels: colorDashConvertLib.colorDashConvertLibNumbers.`4`,
     labels: colorDashConvertLib.colorDashConvertLibStrings.cmyk,
-    rgb: js.Function1[colorDashConvertLib.conversionsMod.CMYK, colorDashConvertLib.conversionsMod.RGB]
+    rgb: colorDashConvertLib.conversionsMod.CMYK => colorDashConvertLib.conversionsMod.RGB
   ): Anon_4 = {
-    val __obj = js.Dynamic.literal(channels = channels, labels = labels, rgb = rgb)
+    val __obj = js.Dynamic.literal(channels = channels, labels = labels, rgb = js.Any.fromFunction1(rgb))
   
     __obj.asInstanceOf[Anon_4]
   }

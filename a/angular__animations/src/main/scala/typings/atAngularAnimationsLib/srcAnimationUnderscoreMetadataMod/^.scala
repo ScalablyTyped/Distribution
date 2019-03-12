@@ -9,117 +9,46 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val AUTO_STYLE: /* * */ java.lang.String = js.native
-  def animate(timings: java.lang.String): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationAnimateMetadata = js.native
-  def animate(
-    timings: java.lang.String,
-    styles: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationKeyframesSequenceMetadata
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationAnimateMetadata = js.native
-  def animate(
-    timings: java.lang.String,
-    styles: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStyleMetadata
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationAnimateMetadata = js.native
-  def animate(timings: scala.Double): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationAnimateMetadata = js.native
-  def animate(
-    timings: scala.Double,
-    styles: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationKeyframesSequenceMetadata
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationAnimateMetadata = js.native
-  def animate(
-    timings: scala.Double,
-    styles: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStyleMetadata
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationAnimateMetadata = js.native
-  def animateChild(): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationAnimateChildMetadata = js.native
-  def animateChild(options: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimateChildOptions): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationAnimateChildMetadata = js.native
-  def animation(steps: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationReferenceMetadata = js.native
-  def animation(
-    steps: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata,
-    options: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationOptions
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationReferenceMetadata = js.native
-  def animation(steps: js.Array[atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata]): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationReferenceMetadata = js.native
-  def animation(
-    steps: js.Array[atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata],
-    options: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationOptions
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationReferenceMetadata = js.native
-  def group(steps: js.Array[atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata]): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationGroupMetadata = js.native
-  def group(
-    steps: js.Array[atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata],
-    options: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationOptions
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationGroupMetadata = js.native
-  def keyframes(steps: js.Array[atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStyleMetadata]): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationKeyframesSequenceMetadata = js.native
-  def query(
-    selector: java.lang.String,
-    animation: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationQueryMetadata = js.native
-  def query(
-    selector: java.lang.String,
-    animation: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata,
-    options: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationQueryOptions
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationQueryMetadata = js.native
-  def query(
-    selector: java.lang.String,
-    animation: js.Array[atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata]
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationQueryMetadata = js.native
-  def query(
-    selector: java.lang.String,
-    animation: js.Array[atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata],
-    options: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationQueryOptions
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationQueryMetadata = js.native
-  def sequence(steps: js.Array[atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata]): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationSequenceMetadata = js.native
-  def sequence(
-    steps: js.Array[atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata],
-    options: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationOptions
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationSequenceMetadata = js.native
-  def stagger(
-    timings: java.lang.String,
-    animation: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStaggerMetadata = js.native
-  def stagger(
-    timings: java.lang.String,
-    animation: js.Array[atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata]
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStaggerMetadata = js.native
-  def stagger(
-    timings: scala.Double,
-    animation: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStaggerMetadata = js.native
-  def stagger(
-    timings: scala.Double,
-    animation: js.Array[atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata]
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStaggerMetadata = js.native
-  def state(
-    name: java.lang.String,
-    styles: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStyleMetadata
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStateMetadata = js.native
-  def state(
-    name: java.lang.String,
-    styles: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStyleMetadata,
-    options: atAngularAnimationsLib.Anon_Name
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStateMetadata = js.native
-  def style(tokens: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStyleMetadata = js.native
+  def animate(timings: java.lang.String): AnimationAnimateMetadata = js.native
+  def animate(timings: java.lang.String, styles: AnimationKeyframesSequenceMetadata): AnimationAnimateMetadata = js.native
+  def animate(timings: java.lang.String, styles: AnimationStyleMetadata): AnimationAnimateMetadata = js.native
+  def animate(timings: scala.Double): AnimationAnimateMetadata = js.native
+  def animate(timings: scala.Double, styles: AnimationKeyframesSequenceMetadata): AnimationAnimateMetadata = js.native
+  def animate(timings: scala.Double, styles: AnimationStyleMetadata): AnimationAnimateMetadata = js.native
+  def animateChild(): AnimationAnimateChildMetadata = js.native
+  def animateChild(options: AnimateChildOptions): AnimationAnimateChildMetadata = js.native
+  def animation(steps: AnimationMetadata): AnimationReferenceMetadata = js.native
+  def animation(steps: AnimationMetadata, options: AnimationOptions): AnimationReferenceMetadata = js.native
+  def animation(steps: js.Array[AnimationMetadata]): AnimationReferenceMetadata = js.native
+  def animation(steps: js.Array[AnimationMetadata], options: AnimationOptions): AnimationReferenceMetadata = js.native
+  def group(steps: js.Array[AnimationMetadata]): AnimationGroupMetadata = js.native
+  def group(steps: js.Array[AnimationMetadata], options: AnimationOptions): AnimationGroupMetadata = js.native
+  def keyframes(steps: js.Array[AnimationStyleMetadata]): AnimationKeyframesSequenceMetadata = js.native
+  def query(selector: java.lang.String, animation: AnimationMetadata): AnimationQueryMetadata = js.native
+  def query(selector: java.lang.String, animation: AnimationMetadata, options: AnimationQueryOptions): AnimationQueryMetadata = js.native
+  def query(selector: java.lang.String, animation: js.Array[AnimationMetadata]): AnimationQueryMetadata = js.native
+  def query(selector: java.lang.String, animation: js.Array[AnimationMetadata], options: AnimationQueryOptions): AnimationQueryMetadata = js.native
+  def sequence(steps: js.Array[AnimationMetadata]): AnimationSequenceMetadata = js.native
+  def sequence(steps: js.Array[AnimationMetadata], options: AnimationOptions): AnimationSequenceMetadata = js.native
+  def stagger(timings: java.lang.String, animation: AnimationMetadata): AnimationStaggerMetadata = js.native
+  def stagger(timings: java.lang.String, animation: js.Array[AnimationMetadata]): AnimationStaggerMetadata = js.native
+  def stagger(timings: scala.Double, animation: AnimationMetadata): AnimationStaggerMetadata = js.native
+  def stagger(timings: scala.Double, animation: js.Array[AnimationMetadata]): AnimationStaggerMetadata = js.native
+  def state(name: java.lang.String, styles: AnimationStyleMetadata): AnimationStateMetadata = js.native
+  def state(name: java.lang.String, styles: AnimationStyleMetadata, options: atAngularAnimationsLib.Anon_Name): AnimationStateMetadata = js.native
+  def style(tokens: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]): AnimationStyleMetadata = js.native
   @JSName("style")
-  def `style_*`(tokens: atAngularAnimationsLib.atAngularAnimationsLibStrings.`*`): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStyleMetadata = js.native
+  def `style_*`(tokens: atAngularAnimationsLib.atAngularAnimationsLibStrings.`*`): AnimationStyleMetadata = js.native
   @JSName("style")
   def `style_*`(
     tokens: js.Array[
       atAngularAnimationsLib.atAngularAnimationsLibStrings.`*` | (org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double])
     ]
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStyleMetadata = js.native
-  def transition(
-    stateChangeExpr: java.lang.String,
-    steps: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationTransitionMetadata = js.native
-  def transition(
-    stateChangeExpr: java.lang.String,
-    steps: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata,
-    options: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationOptions
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationTransitionMetadata = js.native
-  def transition(
-    stateChangeExpr: java.lang.String,
-    steps: js.Array[atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata]
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationTransitionMetadata = js.native
-  def transition(
-    stateChangeExpr: java.lang.String,
-    steps: js.Array[atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata],
-    options: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationOptions
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationTransitionMetadata = js.native
+  ): AnimationStyleMetadata = js.native
+  def transition(stateChangeExpr: java.lang.String, steps: AnimationMetadata): AnimationTransitionMetadata = js.native
+  def transition(stateChangeExpr: java.lang.String, steps: AnimationMetadata, options: AnimationOptions): AnimationTransitionMetadata = js.native
+  def transition(stateChangeExpr: java.lang.String, steps: js.Array[AnimationMetadata]): AnimationTransitionMetadata = js.native
+  def transition(stateChangeExpr: java.lang.String, steps: js.Array[AnimationMetadata], options: AnimationOptions): AnimationTransitionMetadata = js.native
   def transition(
     stateChangeExpr: js.Function4[
       /* fromState */ java.lang.String, 
@@ -128,8 +57,8 @@ object ^ extends js.Object {
       /* params */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
       scala.Boolean
     ],
-    steps: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationTransitionMetadata = js.native
+    steps: AnimationMetadata
+  ): AnimationTransitionMetadata = js.native
   def transition(
     stateChangeExpr: js.Function4[
       /* fromState */ java.lang.String, 
@@ -138,9 +67,9 @@ object ^ extends js.Object {
       /* params */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
       scala.Boolean
     ],
-    steps: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata,
-    options: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationOptions
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationTransitionMetadata = js.native
+    steps: AnimationMetadata,
+    options: AnimationOptions
+  ): AnimationTransitionMetadata = js.native
   def transition(
     stateChangeExpr: js.Function4[
       /* fromState */ java.lang.String, 
@@ -149,8 +78,8 @@ object ^ extends js.Object {
       /* params */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
       scala.Boolean
     ],
-    steps: js.Array[atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata]
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationTransitionMetadata = js.native
+    steps: js.Array[AnimationMetadata]
+  ): AnimationTransitionMetadata = js.native
   def transition(
     stateChangeExpr: js.Function4[
       /* fromState */ java.lang.String, 
@@ -159,17 +88,11 @@ object ^ extends js.Object {
       /* params */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
       scala.Boolean
     ],
-    steps: js.Array[atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata],
-    options: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationOptions
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationTransitionMetadata = js.native
-  def trigger(
-    name: java.lang.String,
-    definitions: js.Array[atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata]
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationTriggerMetadata = js.native
-  def useAnimation(animation: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationReferenceMetadata): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationAnimateRefMetadata = js.native
-  def useAnimation(
-    animation: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationReferenceMetadata,
-    options: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationOptions
-  ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationAnimateRefMetadata = js.native
+    steps: js.Array[AnimationMetadata],
+    options: AnimationOptions
+  ): AnimationTransitionMetadata = js.native
+  def trigger(name: java.lang.String, definitions: js.Array[AnimationMetadata]): AnimationTriggerMetadata = js.native
+  def useAnimation(animation: AnimationReferenceMetadata): AnimationAnimateRefMetadata = js.native
+  def useAnimation(animation: AnimationReferenceMetadata, options: AnimationOptions): AnimationAnimateRefMetadata = js.native
 }
 

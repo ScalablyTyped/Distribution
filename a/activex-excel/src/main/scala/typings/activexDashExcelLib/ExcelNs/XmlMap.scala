@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class XmlMap protected () extends js.Object {
   var AdjustColumnWidth: scala.Boolean = js.native
   var AppendOnImport: scala.Boolean = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Creator: XlCreator = js.native
   val DataBinding: XmlDataBinding = js.native
   var `Excel.XmlMap_typekey`: XmlMap = js.native
@@ -25,7 +25,7 @@ class XmlMap protected () extends js.Object {
   @JSName("Schemas")
   val Schemas_Original: XmlSchemas = js.native
   var ShowImportExportValidationErrors: scala.Boolean = js.native
-  val WorkbookConnection: WorkbookConnection = js.native
+  val WorkbookConnection: activexDashExcelLib.ExcelNs.WorkbookConnection = js.native
   val _Default: java.lang.String = js.native
   def Delete(): scala.Unit = js.native
   def Export(Url: java.lang.String): XlXmlExportResult = js.native

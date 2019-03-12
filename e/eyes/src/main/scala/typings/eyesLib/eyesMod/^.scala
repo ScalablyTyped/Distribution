@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def inspect(thing: js.Any): scala.Unit = js.native
   def inspect(thing: js.Any, label: java.lang.String): scala.Unit = js.native
-  def inspector(): eyesLib.eyesMod.InspectorFunction = js.native
-  def inspector(options: eyesLib.eyesMod.EyesOptions): eyesLib.eyesMod.InspectorFunction = js.native
+  def inspector(): InspectorFunction = js.native
+  def inspector(options: EyesOptions): InspectorFunction = js.native
 }
 

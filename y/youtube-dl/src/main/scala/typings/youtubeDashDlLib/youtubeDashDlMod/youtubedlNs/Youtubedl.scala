@@ -13,10 +13,10 @@ trait Youtubedl extends js.Object {
 object Youtubedl {
   @scala.inline
   def apply(
-    on: js.Function2[java.lang.String, js.Function1[/* info */ Info, scala.Unit], Youtubedl],
-    pipe: js.Function1[nodeLib.fsMod.WriteStream, Youtubedl]
+    on: (java.lang.String, js.Function1[/* info */ Info, scala.Unit]) => Youtubedl,
+    pipe: nodeLib.fsMod.WriteStream => Youtubedl
   ): Youtubedl = {
-    val __obj = js.Dynamic.literal(on = on, pipe = pipe)
+    val __obj = js.Dynamic.literal(on = js.Any.fromFunction2(on), pipe = js.Any.fromFunction1(pipe))
   
     __obj.asInstanceOf[Youtubedl]
   }

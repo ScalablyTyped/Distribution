@@ -16,7 +16,7 @@ trait PolyPolygonBezierDescriptor extends js.Object {
   /** These are the Bezier points of this polygon. */
   var PolyPolygonBezier: PolyPolygonBezierCoords
   /** This is the type of this polygon. */
-  var PolygonKind: PolygonKind
+  var PolygonKind: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.PolygonKind
 }
 
 object PolyPolygonBezierDescriptor {

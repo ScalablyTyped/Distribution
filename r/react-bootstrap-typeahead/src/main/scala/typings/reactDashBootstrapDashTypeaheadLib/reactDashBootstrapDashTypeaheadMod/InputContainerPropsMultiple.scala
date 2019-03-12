@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   var labelKey: TypeaheadLabelKey[T]
   var role: reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.Empty
   var selected: js.Array[T]
-  def onRemove(e: reactLib.Event): scala.Unit
+  def onRemove(e: stdLib.Event): scala.Unit
   def renderToken(selectedItem: T, props: TypeaheadMenuProps[T], index: scala.Double): reactLib.reactMod.ReactNs.ReactNode
 }
 
@@ -20,12 +20,12 @@ object InputContainerPropsMultiple {
   def apply[T /* <: TypeaheadModel */](
     inputClassName: java.lang.String,
     labelKey: TypeaheadLabelKey[T],
-    onRemove: js.Function1[reactLib.Event, scala.Unit],
-    renderToken: js.Function3[T, TypeaheadMenuProps[T], scala.Double, reactLib.reactMod.ReactNs.ReactNode],
+    onRemove: stdLib.Event => scala.Unit,
+    renderToken: (T, TypeaheadMenuProps[T], scala.Double) => reactLib.reactMod.ReactNs.ReactNode,
     role: reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.Empty,
     selected: js.Array[T]
   ): InputContainerPropsMultiple[T] = {
-    val __obj = js.Dynamic.literal(inputClassName = inputClassName, labelKey = labelKey.asInstanceOf[js.Any], onRemove = onRemove, renderToken = renderToken, role = role, selected = selected)
+    val __obj = js.Dynamic.literal(inputClassName = inputClassName, labelKey = labelKey.asInstanceOf[js.Any], onRemove = js.Any.fromFunction1(onRemove), renderToken = js.Any.fromFunction3(renderToken), role = role, selected = selected)
   
     __obj.asInstanceOf[InputContainerPropsMultiple[T]]
   }

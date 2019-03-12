@@ -31,10 +31,10 @@ object ReactHeadroomProps {
     disable: js.UndefOr[scala.Boolean] = js.undefined,
     disableInlineStyles: js.UndefOr[scala.Boolean] = js.undefined,
     downTolerance: scala.Int | scala.Double = null,
-    onPin: js.Function0[scala.Unit] = null,
-    onUnfix: js.Function0[scala.Unit] = null,
-    onUnpin: js.Function0[scala.Unit] = null,
-    parent: js.Function0[_] = null,
+    onPin: () => scala.Unit = null,
+    onUnfix: () => scala.Unit = null,
+    onUnpin: () => scala.Unit = null,
+    parent: () => _ = null,
     pinStart: scala.Int | scala.Double = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     upTolerance: scala.Int | scala.Double = null,
@@ -46,10 +46,10 @@ object ReactHeadroomProps {
     if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
     if (!js.isUndefined(disableInlineStyles)) __obj.updateDynamic("disableInlineStyles")(disableInlineStyles)
     if (downTolerance != null) __obj.updateDynamic("downTolerance")(downTolerance.asInstanceOf[js.Any])
-    if (onPin != null) __obj.updateDynamic("onPin")(onPin)
-    if (onUnfix != null) __obj.updateDynamic("onUnfix")(onUnfix)
-    if (onUnpin != null) __obj.updateDynamic("onUnpin")(onUnpin)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (onPin != null) __obj.updateDynamic("onPin")(js.Any.fromFunction0(onPin))
+    if (onUnfix != null) __obj.updateDynamic("onUnfix")(js.Any.fromFunction0(onUnfix))
+    if (onUnpin != null) __obj.updateDynamic("onUnpin")(js.Any.fromFunction0(onUnpin))
+    if (parent != null) __obj.updateDynamic("parent")(js.Any.fromFunction0(parent))
     if (pinStart != null) __obj.updateDynamic("pinStart")(pinStart.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (upTolerance != null) __obj.updateDynamic("upTolerance")(upTolerance.asInstanceOf[js.Any])

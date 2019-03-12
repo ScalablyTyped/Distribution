@@ -18,11 +18,11 @@ object markup {
   def apply(
     attribute: js.Any,
     dataTag: js.Any,
-    init: js.Function2[java.lang.String, java.lang.String, webixLib.webixMod.uiNs.baseview],
+    init: (java.lang.String, java.lang.String) => webixLib.webixMod.uiNs.baseview,
     namespace: js.Any,
-    parse: js.Function2[js.Any, java.lang.String, scala.Unit]
+    parse: (js.Any, java.lang.String) => scala.Unit
   ): markup = {
-    val __obj = js.Dynamic.literal(attribute = attribute, dataTag = dataTag, init = init, namespace = namespace, parse = parse)
+    val __obj = js.Dynamic.literal(attribute = attribute, dataTag = dataTag, init = js.Any.fromFunction2(init), namespace = namespace, parse = js.Any.fromFunction2(parse))
   
     __obj.asInstanceOf[markup]
   }

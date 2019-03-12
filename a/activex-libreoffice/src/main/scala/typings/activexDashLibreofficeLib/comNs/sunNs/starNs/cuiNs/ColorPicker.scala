@@ -14,14 +14,14 @@ trait ColorPicker
 object ColorPicker {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createWithParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, scala.Unit],
-    execute: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setTitle: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    createWithParent: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow => scala.Unit,
+    execute: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setTitle: java.lang.String => scala.Unit
   ): ColorPicker = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createWithParent = createWithParent, execute = execute, queryInterface = queryInterface, release = release, setTitle = setTitle)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createWithParent = js.Any.fromFunction1(createWithParent), execute = js.Any.fromFunction0(execute), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setTitle = js.Any.fromFunction1(setTitle))
   
     __obj.asInstanceOf[ColorPicker]
   }

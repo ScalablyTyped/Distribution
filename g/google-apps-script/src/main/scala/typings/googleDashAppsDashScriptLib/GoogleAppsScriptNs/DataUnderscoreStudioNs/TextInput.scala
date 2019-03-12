@@ -16,13 +16,13 @@ trait TextInput extends js.Object {
 object TextInput {
   @scala.inline
   def apply(
-    setAllowOverride: js.Function1[scala.Boolean, TextInput],
-    setHelpText: js.Function1[java.lang.String, TextInput],
-    setId: js.Function1[java.lang.String, TextInput],
-    setName: js.Function1[java.lang.String, TextInput],
-    setPlaceholder: js.Function1[java.lang.String, TextInput]
+    setAllowOverride: scala.Boolean => TextInput,
+    setHelpText: java.lang.String => TextInput,
+    setId: java.lang.String => TextInput,
+    setName: java.lang.String => TextInput,
+    setPlaceholder: java.lang.String => TextInput
   ): TextInput = {
-    val __obj = js.Dynamic.literal(setAllowOverride = setAllowOverride, setHelpText = setHelpText, setId = setId, setName = setName, setPlaceholder = setPlaceholder)
+    val __obj = js.Dynamic.literal(setAllowOverride = js.Any.fromFunction1(setAllowOverride), setHelpText = js.Any.fromFunction1(setHelpText), setId = js.Any.fromFunction1(setId), setName = js.Any.fromFunction1(setName), setPlaceholder = js.Any.fromFunction1(setPlaceholder))
   
     __obj.asInstanceOf[TextInput]
   }

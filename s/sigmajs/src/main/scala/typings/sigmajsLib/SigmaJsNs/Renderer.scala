@@ -17,12 +17,12 @@ object Renderer {
   @scala.inline
   def apply(
     container: stdLib.HTMLElement,
-    refresh: js.Function0[Sigma],
-    render: js.Function0[Sigma],
-    resize: js.Function0[Sigma],
-    settings: js.Function1[Settings, scala.Unit]
+    refresh: () => Sigma,
+    render: () => Sigma,
+    resize: () => Sigma,
+    settings: Settings => scala.Unit
   ): Renderer = {
-    val __obj = js.Dynamic.literal(container = container, refresh = refresh, render = render, resize = resize, settings = settings)
+    val __obj = js.Dynamic.literal(container = container, refresh = js.Any.fromFunction0(refresh), render = js.Any.fromFunction0(render), resize = js.Any.fromFunction0(resize), settings = js.Any.fromFunction1(settings))
   
     __obj.asInstanceOf[Renderer]
   }

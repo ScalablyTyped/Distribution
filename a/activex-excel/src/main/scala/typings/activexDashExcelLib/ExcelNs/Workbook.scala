@@ -13,7 +13,7 @@ class Workbook protected () extends js.Object {
   val ActiveChart: Chart = js.native
   val ActiveSheet: Sheet = js.native
   val ActiveSlicer: Slicer = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var Author: java.lang.String = js.native
   var AutoUpdateFrequency: scala.Double = js.native
   var AutoUpdateSaveChanges: scala.Boolean = js.native
@@ -26,7 +26,7 @@ class Workbook protected () extends js.Object {
   var CheckCompatibility: scala.Boolean = js.native
   val CodeName: java.lang.String = js.native
   @JSName("Colors")
-  var Colors_Original: activexDashInteropLib.SafeArray[scala.Double] with (js.Function1[/* Index */ scala.Double, scala.Double]) = js.native
+  var Colors_Original: stdLib.SafeArray[scala.Double] with (js.Function1[/* Index */ scala.Double, scala.Double]) = js.native
   @JSName("CommandBars")
   val CommandBars_Original: activexDashOfficeLib.OfficeNs.CommandBars = js.native
   var Comments: java.lang.String = js.native
@@ -86,7 +86,7 @@ class Workbook protected () extends js.Object {
   var KeepChangeHistory: scala.Boolean = js.native
   var Keywords: java.lang.String = js.native
   var ListChangesOnNewSheet: scala.Boolean = js.native
-  val Mailer: Mailer = js.native
+  val Mailer: activexDashExcelLib.ExcelNs.Mailer = js.native
   @JSName("Modules")
   val Modules_Original: Sheets[Sheet] = js.native
   val MultiUserEditing: scala.Boolean = js.native
@@ -115,10 +115,10 @@ class Workbook protected () extends js.Object {
   val ReadOnly: scala.Boolean = js.native
   var ReadOnlyRecommended: scala.Boolean = js.native
   var RemovePersonalInformation: scala.Boolean = js.native
-  val Research: Research = js.native
+  val Research: activexDashExcelLib.ExcelNs.Research = js.native
   val RevisionNumber: scala.Double = js.native
   val Routed: scala.Boolean = js.native
-  val RoutingSlip: RoutingSlip = js.native
+  val RoutingSlip: activexDashExcelLib.ExcelNs.RoutingSlip = js.native
   var SaveLinkValues: scala.Boolean = js.native
   var Saved: scala.Boolean = js.native
   @JSName("ServerPolicy")
@@ -136,7 +136,7 @@ class Workbook protected () extends js.Object {
   @JSName("SlicerCaches")
   val SlicerCaches_Original: SlicerCaches = js.native
   val SmartDocument: activexDashOfficeLib.OfficeNs.SmartDocument = js.native
-  val SmartTagOptions: SmartTagOptions = js.native
+  val SmartTagOptions: activexDashExcelLib.ExcelNs.SmartTagOptions = js.native
   @JSName("Styles")
   val Styles_Original: Styles = js.native
   var Subject: java.lang.String = js.native
@@ -149,10 +149,10 @@ class Workbook protected () extends js.Object {
   var UpdateLinks: XlUpdateLinks = js.native
   var UpdateRemoteReferences: scala.Boolean = js.native
   var UserControl: scala.Boolean = js.native
-  val UserStatus: activexDashInteropLib.SafeArray[_] = js.native
+  val UserStatus: stdLib.SafeArray[_] = js.native
   val VBASigned: scala.Boolean = js.native
   val VBProject: activexDashVbideLib.VBIDENs.VBProject = js.native
-  val WebOptions: WebOptions = js.native
+  val WebOptions: activexDashExcelLib.ExcelNs.WebOptions = js.native
   @JSName("Windows")
   val Windows_Original: Windows = js.native
   @JSName("Worksheets")
@@ -183,7 +183,7 @@ class Workbook protected () extends js.Object {
   /** @param Type [Type=1] */
   def ChangeLink(Name: java.lang.String, NewName: java.lang.String): scala.Unit = js.native
   def ChangeLink(Name: java.lang.String, NewName: java.lang.String, Type: XlLinkType): scala.Unit = js.native
-  def Charts(Indexes: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): Sheets[Chart] = js.native
+  def Charts(Indexes: stdLib.SafeArray[java.lang.String | scala.Double]): Sheets[Chart] = js.native
   def Charts(Index: java.lang.String): Chart = js.native
   def Charts(Index: scala.Double): Chart = js.native
   def CheckIn(): scala.Unit = js.native
@@ -223,7 +223,7 @@ class Workbook protected () extends js.Object {
   def CustomXMLParts(Index: java.lang.String): activexDashOfficeLib.OfficeNs.CustomXMLPart = js.native
   def CustomXMLParts(Index: scala.Double): activexDashOfficeLib.OfficeNs.CustomXMLPart = js.native
   def DeleteNumberFormat(NumberFormat: java.lang.String): scala.Unit = js.native
-  def DialogSheets(Indexes: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): Sheets[DialogSheet] = js.native
+  def DialogSheets(Indexes: stdLib.SafeArray[java.lang.String | scala.Double]): Sheets[DialogSheet] = js.native
   def DialogSheets(Index: java.lang.String): DialogSheet = js.native
   def DialogSheets(Index: scala.Double): DialogSheet = js.native
   def DocumentInspectors(Index: scala.Double): activexDashOfficeLib.OfficeNs.DocumentInspector = js.native
@@ -234,10 +234,10 @@ class Workbook protected () extends js.Object {
   def Dummy27(): scala.Unit = js.native
   def EnableConnections(): scala.Unit = js.native
   def EndReview(): scala.Unit = js.native
-  def Excel4IntlMacroSheets(Indexes: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): Sheets[Sheet] = js.native
+  def Excel4IntlMacroSheets(Indexes: stdLib.SafeArray[java.lang.String | scala.Double]): Sheets[Sheet] = js.native
   def Excel4IntlMacroSheets(Index: java.lang.String): Sheet = js.native
   def Excel4IntlMacroSheets(Index: scala.Double): Sheet = js.native
-  def Excel4MacroSheets(Indexes: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): Sheets[Sheet] = js.native
+  def Excel4MacroSheets(Indexes: stdLib.SafeArray[java.lang.String | scala.Double]): Sheets[Sheet] = js.native
   def Excel4MacroSheets(Index: java.lang.String): Sheet = js.native
   def Excel4MacroSheets(Index: scala.Double): Sheet = js.native
   def ExclusiveAccess(): scala.Boolean = js.native
@@ -291,11 +291,11 @@ class Workbook protected () extends js.Object {
   def LinkInfo(Name: java.lang.String, LinkInfo: XlLinkInfo): js.Any = js.native
   def LinkInfo(Name: java.lang.String, LinkInfo: XlLinkInfo, Type: XlLinkInfoType): js.Any = js.native
   def LinkInfo(Name: java.lang.String, LinkInfo: XlLinkInfo, Type: XlLinkInfoType, EditionRef: java.lang.String): js.Any = js.native
-  def LinkSources(): activexDashInteropLib.SafeArray[java.lang.String] = js.native
-  def LinkSources(Type: XlLink): activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  def LinkSources(): stdLib.SafeArray[java.lang.String] = js.native
+  def LinkSources(Type: XlLink): stdLib.SafeArray[java.lang.String] = js.native
   def LockServerFile(): scala.Unit = js.native
   def MergeWorkbook(Filename: java.lang.String): scala.Unit = js.native
-  def Modules(Indexes: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): Sheets[Sheet] = js.native
+  def Modules(Indexes: stdLib.SafeArray[java.lang.String | scala.Double]): Sheets[Sheet] = js.native
   def Modules(Index: java.lang.String): Sheet = js.native
   def Modules(Index: scala.Double): Sheet = js.native
   def Names(Index: java.lang.String): Name = js.native
@@ -311,7 +311,7 @@ class Workbook protected () extends js.Object {
   def OpenLinks(Name: java.lang.String, ReadOnly: scala.Boolean): scala.Unit = js.native
   def OpenLinks(Name: java.lang.String, ReadOnly: scala.Boolean, Type: XlLink): scala.Unit = js.native
   def Permission(Index: js.Any): activexDashOfficeLib.OfficeNs.UserPermission = js.native
-  def PivotCaches(): PivotCaches = js.native
+  def PivotCaches(): activexDashExcelLib.ExcelNs.PivotCaches = js.native
   def PivotTableWizard(): scala.Unit = js.native
   def PivotTableWizard[TSourceType](
     SourceType: TSourceType,
@@ -409,16 +409,16 @@ class Workbook protected () extends js.Object {
     ShowMessage: scala.Boolean,
     IncludeAttachment: scala.Boolean
   ): scala.Unit = js.native
-  def SendMail(Recipients: activexDashInteropLib.SafeArray[java.lang.String]): scala.Unit = js.native
-  def SendMail(Recipients: activexDashInteropLib.SafeArray[java.lang.String], Subject: java.lang.String): scala.Unit = js.native
-  def SendMail(
-    Recipients: activexDashInteropLib.SafeArray[java.lang.String],
-    Subject: java.lang.String,
-    ReturnReceipt: scala.Boolean
-  ): scala.Unit = js.native
   def SendMail(Recipients: java.lang.String): scala.Unit = js.native
   def SendMail(Recipients: java.lang.String, Subject: java.lang.String): scala.Unit = js.native
   def SendMail(Recipients: java.lang.String, Subject: java.lang.String, ReturnReceipt: scala.Boolean): scala.Unit = js.native
+  def SendMail(Recipients: stdLib.SafeArray[java.lang.String]): scala.Unit = js.native
+  def SendMail(Recipients: stdLib.SafeArray[java.lang.String], Subject: java.lang.String): scala.Unit = js.native
+  def SendMail(
+    Recipients: stdLib.SafeArray[java.lang.String],
+    Subject: java.lang.String,
+    ReturnReceipt: scala.Boolean
+  ): scala.Unit = js.native
   /**
     * Macintosh only
     *
@@ -445,7 +445,7 @@ class Workbook protected () extends js.Object {
     PasswordEncryptionKeyLength: scala.Double,
     PasswordEncryptionFileProperties: scala.Boolean
   ): scala.Unit = js.native
-  def Sheets(Indexes: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): Sheets[Sheet] = js.native
+  def Sheets(Indexes: stdLib.SafeArray[java.lang.String | scala.Double]): activexDashExcelLib.ExcelNs.Sheets[activexDashExcelLib.ExcelNs.Sheet] = js.native
   def Sheets(Index: java.lang.String): Sheet = js.native
   def Sheets(Index: scala.Double): Sheet = js.native
   def Signatures(iSig: scala.Double): activexDashOfficeLib.OfficeNs.Signature = js.native
@@ -466,7 +466,7 @@ class Workbook protected () extends js.Object {
   def WebPagePreview(): scala.Unit = js.native
   def Windows(Index: java.lang.String): Window = js.native
   def Windows(Index: scala.Double): Window = js.native
-  def Worksheets(Indexes: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): Sheets[Worksheet] = js.native
+  def Worksheets(Indexes: stdLib.SafeArray[java.lang.String | scala.Double]): Sheets[Worksheet] = js.native
   def Worksheets(Index: java.lang.String): Worksheet = js.native
   def Worksheets(Index: scala.Double): Worksheet = js.native
   def XmlImport(Url: java.lang.String, ImportMap: XmlMap): XlXmlImportResult = js.native

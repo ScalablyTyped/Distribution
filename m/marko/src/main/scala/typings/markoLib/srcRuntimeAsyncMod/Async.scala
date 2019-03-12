@@ -14,7 +14,7 @@ trait Async
   def c(componentDef: js.Any, key: js.Any, customEvents: js.Any): scala.Unit = js.native
   def createOut(): this.type = js.native
   def endElement(): scala.Unit = js.native
-  def error(e: nodeLib.Error): this.type = js.native
+  def error(e: stdLib.Error): this.type = js.native
   def flush(): scala.Unit = js.native
   def isSync(): scala.Boolean = js.native
   def onLast(callback: js.Any): this.type = js.native

@@ -20,28 +20,28 @@ object DropdownMenu {
   @scala.inline
   def apply(
     SEPARATOR: SeparatorObject,
-    addHook: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit],
-    callOnPluginsReady: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    clearHooks: js.Function0[scala.Unit],
-    close: js.Function0[scala.Unit],
+    addHook: (java.lang.String, js.Function0[scala.Unit]) => scala.Unit,
+    callOnPluginsReady: js.Function0[scala.Unit] => scala.Unit,
+    clearHooks: () => scala.Unit,
+    close: () => scala.Unit,
     commandExecutor: CommandExecutor,
-    destroy: js.Function0[scala.Unit],
-    disablePlugin: js.Function0[scala.Unit],
-    enablePlugin: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
+    disablePlugin: () => scala.Unit,
+    enablePlugin: () => scala.Unit,
     enabled: scala.Boolean,
     eventManager: EventManager,
-    executeCommand: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Unit],
-    init: js.Function0[scala.Unit],
+    executeCommand: (java.lang.String, /* repeated */ js.Any) => scala.Unit,
+    init: () => scala.Unit,
     initialized: scala.Boolean,
     isPluginsReady: scala.Boolean,
     itemsFactory: ItemsFactory | scala.Unit,
     menu: Menu | scala.Unit,
-    open: js.Function1[stdLib.Event, scala.Unit],
+    open: stdLib.Event => scala.Unit,
     pluginName: java.lang.String,
     pluginsInitializedCallback: js.Array[_],
-    removeHook: js.Function1[java.lang.String, scala.Unit]
+    removeHook: java.lang.String => scala.Unit
   ): DropdownMenu = {
-    val __obj = js.Dynamic.literal(SEPARATOR = SEPARATOR, addHook = addHook, callOnPluginsReady = callOnPluginsReady, clearHooks = clearHooks, close = close, commandExecutor = commandExecutor, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, eventManager = eventManager, executeCommand = executeCommand, init = init, initialized = initialized, isPluginsReady = isPluginsReady, itemsFactory = itemsFactory.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], open = open, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook)
+    val __obj = js.Dynamic.literal(SEPARATOR = SEPARATOR, addHook = js.Any.fromFunction2(addHook), callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), close = js.Any.fromFunction0(close), commandExecutor = commandExecutor, destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, eventManager = eventManager, executeCommand = js.Any.fromFunction2(executeCommand), init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, itemsFactory = itemsFactory.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], open = js.Any.fromFunction1(open), pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = js.Any.fromFunction1(removeHook))
   
     __obj.asInstanceOf[DropdownMenu]
   }

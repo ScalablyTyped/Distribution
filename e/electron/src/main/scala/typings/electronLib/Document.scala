@@ -12,11 +12,9 @@ trait Document extends js.Object {
 
 object Document {
   @scala.inline
-  def apply(
-    createElement_webview: js.Function1[electronLib.electronLibStrings.webview, electronLib.ElectronNs.WebviewTag]
-  ): Document = {
+  def apply(createElement_webview: electronLib.electronLibStrings.webview => electronLib.ElectronNs.WebviewTag): Document = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createElement")(createElement_webview)
+    __obj.updateDynamic("createElement")(js.Any.fromFunction1(createElement_webview))
     __obj.asInstanceOf[Document]
   }
 }

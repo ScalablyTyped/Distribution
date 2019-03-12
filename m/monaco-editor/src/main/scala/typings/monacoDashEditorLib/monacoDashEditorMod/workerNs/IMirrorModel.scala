@@ -14,11 +14,11 @@ trait IMirrorModel extends js.Object {
 object IMirrorModel {
   @scala.inline
   def apply(
-    getValue: js.Function0[java.lang.String],
+    getValue: () => java.lang.String,
     uri: monacoDashEditorLib.monacoDashEditorMod.Uri,
     version: scala.Double
   ): IMirrorModel = {
-    val __obj = js.Dynamic.literal(getValue = getValue, uri = uri, version = version)
+    val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction0(getValue), uri = uri, version = version)
   
     __obj.asInstanceOf[IMirrorModel]
   }

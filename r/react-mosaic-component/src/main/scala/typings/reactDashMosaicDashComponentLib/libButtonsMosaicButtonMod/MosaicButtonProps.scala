@@ -11,9 +11,9 @@ trait MosaicButtonProps extends js.Object {
 
 object MosaicButtonProps {
   @scala.inline
-  def apply(onClick: js.Function0[scala.Unit] = null): MosaicButtonProps = {
+  def apply(onClick: () => scala.Unit = null): MosaicButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
     __obj.asInstanceOf[MosaicButtonProps]
   }
 }

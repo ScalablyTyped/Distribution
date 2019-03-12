@@ -33,20 +33,17 @@ trait XRangeSelection
 object XRangeSelection {
   @scala.inline
   def apply(
-    abortRangeSelection: js.Function0[scala.Unit],
-    acquire: js.Function0[scala.Unit],
-    addRangeSelectionChangeListener: js.Function1[XRangeSelectionChangeListener, scala.Unit],
-    addRangeSelectionListener: js.Function1[XRangeSelectionListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeRangeSelectionChangeListener: js.Function1[XRangeSelectionChangeListener, scala.Unit],
-    removeRangeSelectionListener: js.Function1[XRangeSelectionListener, scala.Unit],
-    startRangeSelection: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ]
+    abortRangeSelection: () => scala.Unit,
+    acquire: () => scala.Unit,
+    addRangeSelectionChangeListener: XRangeSelectionChangeListener => scala.Unit,
+    addRangeSelectionListener: XRangeSelectionListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeRangeSelectionChangeListener: XRangeSelectionChangeListener => scala.Unit,
+    removeRangeSelectionListener: XRangeSelectionListener => scala.Unit,
+    startRangeSelection: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] => scala.Unit
   ): XRangeSelection = {
-    val __obj = js.Dynamic.literal(abortRangeSelection = abortRangeSelection, acquire = acquire, addRangeSelectionChangeListener = addRangeSelectionChangeListener, addRangeSelectionListener = addRangeSelectionListener, queryInterface = queryInterface, release = release, removeRangeSelectionChangeListener = removeRangeSelectionChangeListener, removeRangeSelectionListener = removeRangeSelectionListener, startRangeSelection = startRangeSelection)
+    val __obj = js.Dynamic.literal(abortRangeSelection = js.Any.fromFunction0(abortRangeSelection), acquire = js.Any.fromFunction0(acquire), addRangeSelectionChangeListener = js.Any.fromFunction1(addRangeSelectionChangeListener), addRangeSelectionListener = js.Any.fromFunction1(addRangeSelectionListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeRangeSelectionChangeListener = js.Any.fromFunction1(removeRangeSelectionChangeListener), removeRangeSelectionListener = js.Any.fromFunction1(removeRangeSelectionListener), startRangeSelection = js.Any.fromFunction1(startRangeSelection))
   
     __obj.asInstanceOf[XRangeSelection]
   }

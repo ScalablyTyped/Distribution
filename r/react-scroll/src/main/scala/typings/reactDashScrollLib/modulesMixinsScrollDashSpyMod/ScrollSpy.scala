@@ -23,20 +23,20 @@ trait ScrollSpy extends js.Object {
 object ScrollSpy {
   @scala.inline
   def apply(
-    addSpyHandler: js.Function2[js.Any, js.Any, scala.Unit],
-    addStateHandler: js.Function1[js.Any, scala.Unit],
-    currentPositionY: js.Function1[js.Any, scala.Double],
-    isMounted: js.Function1[js.Any, scala.Boolean],
-    mount: js.Function1[js.Any, scala.Unit],
-    scrollHandler: js.Function1[js.Any, scala.Unit],
+    addSpyHandler: (js.Any, js.Any) => scala.Unit,
+    addStateHandler: js.Any => scala.Unit,
+    currentPositionY: js.Any => scala.Double,
+    isMounted: js.Any => scala.Boolean,
+    mount: js.Any => scala.Unit,
+    scrollHandler: js.Any => scala.Unit,
     scrollSpyContainers: js.Array[_],
     spyCallbacks: js.Array[_],
     spySetState: js.Array[_],
-    unmount: js.Function2[js.Any, js.Any, scala.Unit],
-    update: js.Function0[scala.Unit],
-    updateStates: js.Function0[scala.Unit]
+    unmount: (js.Any, js.Any) => scala.Unit,
+    update: () => scala.Unit,
+    updateStates: () => scala.Unit
   ): ScrollSpy = {
-    val __obj = js.Dynamic.literal(addSpyHandler = addSpyHandler, addStateHandler = addStateHandler, currentPositionY = currentPositionY, isMounted = isMounted, mount = mount, scrollHandler = scrollHandler, scrollSpyContainers = scrollSpyContainers, spyCallbacks = spyCallbacks, spySetState = spySetState, unmount = unmount, update = update, updateStates = updateStates)
+    val __obj = js.Dynamic.literal(addSpyHandler = js.Any.fromFunction2(addSpyHandler), addStateHandler = js.Any.fromFunction1(addStateHandler), currentPositionY = js.Any.fromFunction1(currentPositionY), isMounted = js.Any.fromFunction1(isMounted), mount = js.Any.fromFunction1(mount), scrollHandler = js.Any.fromFunction1(scrollHandler), scrollSpyContainers = scrollSpyContainers, spyCallbacks = spyCallbacks, spySetState = spySetState, unmount = js.Any.fromFunction2(unmount), update = js.Any.fromFunction0(update), updateStates = js.Any.fromFunction0(updateStates))
   
     __obj.asInstanceOf[ScrollSpy]
   }

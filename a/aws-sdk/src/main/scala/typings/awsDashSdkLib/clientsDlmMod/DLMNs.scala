@@ -23,11 +23,11 @@ object DLMNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the IAM role used to run the operations specified by the lifecycle policy.
       */
-    var ExecutionRoleArn: ExecutionRoleArn
+    var ExecutionRoleArn: awsDashSdkLib.clientsDlmMod.DLMNs.ExecutionRoleArn
     /**
       * The configuration details of the lifecycle policy. Target tags cannot be re-used across lifecycle policies.
       */
-    var PolicyDetails: PolicyDetails
+    var PolicyDetails: awsDashSdkLib.clientsDlmMod.DLMNs.PolicyDetails
     /**
       * The desired activation state of the lifecycle policy after creation.
       */
@@ -45,7 +45,7 @@ object DLMNs extends js.Object {
     /**
       * The interval. The supported values are 12 and 24.
       */
-    var Interval: Interval
+    var Interval: awsDashSdkLib.clientsDlmMod.DLMNs.Interval
     /**
       * The interval unit.
       */
@@ -60,7 +60,7 @@ object DLMNs extends js.Object {
     /**
       * The identifier of the lifecycle policy.
       */
-    var PolicyId: PolicyId
+    var PolicyId: awsDashSdkLib.clientsDlmMod.DLMNs.PolicyId
   }
   
   trait DeleteLifecyclePolicyResponse extends js.Object
@@ -99,7 +99,7 @@ object DLMNs extends js.Object {
     /**
       * The identifier of the lifecycle policy.
       */
-    var PolicyId: PolicyId
+    var PolicyId: awsDashSdkLib.clientsDlmMod.DLMNs.PolicyId
   }
   
   trait GetLifecyclePolicyResponse extends js.Object {
@@ -174,7 +174,7 @@ object DLMNs extends js.Object {
     /**
       * The number of snapshots to keep for each volume, up to a maximum of 1000.
       */
-    var Count: Count
+    var Count: awsDashSdkLib.clientsDlmMod.DLMNs.Count
   }
   
   trait Schedule extends js.Object {
@@ -346,7 +346,7 @@ object DLMNs extends js.Object {
     /**
       * The identifier of the lifecycle policy.
       */
-    var PolicyId: PolicyId
+    var PolicyId: awsDashSdkLib.clientsDlmMod.DLMNs.PolicyId
     /**
       * The desired activation state of the lifecycle policy after creation.
       */

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("d3-hexbin", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def hexbin[T](): d3DashHexbinLib.d3DashHexbinMod.Hexbin[T] = js.native
+  def hexbin[T](): Hexbin[T] = js.native
 }
 

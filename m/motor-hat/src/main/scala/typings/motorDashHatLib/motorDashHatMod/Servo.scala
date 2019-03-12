@@ -25,10 +25,10 @@ trait Servo extends js.Object {
 object Servo {
   @scala.inline
   def apply(
-    calibrate: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
-    moveTo: js.Function1[scala.Double, scala.Unit]
+    calibrate: (scala.Double, scala.Double, scala.Double) => scala.Unit,
+    moveTo: scala.Double => scala.Unit
   ): Servo = {
-    val __obj = js.Dynamic.literal(calibrate = calibrate, moveTo = moveTo)
+    val __obj = js.Dynamic.literal(calibrate = js.Any.fromFunction3(calibrate), moveTo = js.Any.fromFunction1(moveTo))
   
     __obj.asInstanceOf[Servo]
   }

@@ -203,11 +203,7 @@ class Model protected () extends js.Object {
     *   The first parameter is always an error callback.
     */
   def include(
-    callback: js.Function2[
-      /* err */ nodeLib.Error, 
-      /* repeated */ this.type | ModelArray[this.type], 
-      scala.Unit
-    ]
+    callback: js.Function2[/* err */ stdLib.Error, /* repeated */ this.type | ModelArray[this.type], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Determine whether or not this field is an Array (PostgreSQL supports this)

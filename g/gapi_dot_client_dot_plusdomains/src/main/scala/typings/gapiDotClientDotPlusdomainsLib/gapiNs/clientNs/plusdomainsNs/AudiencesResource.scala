@@ -13,12 +13,9 @@ trait AudiencesResource extends js.Object {
 object AudiencesResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotPlusdomainsLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AudiencesFeed]
-    ]
+    list: gapiDotClientDotPlusdomainsLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[AudiencesFeed]
   ): AudiencesResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[AudiencesResource]
   }

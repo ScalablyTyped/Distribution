@@ -38,7 +38,7 @@ trait PickerProps extends js.Object {
   var onClick: js.UndefOr[
     js.Function2[
       /* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -81,30 +81,17 @@ object PickerProps {
     emoji: java.lang.String = null,
     emojiSize: scala.Int | scala.Double = null,
     emojiTooltip: js.UndefOr[scala.Boolean] = js.undefined,
-    emojisToShowFilter: js.Function1[
-      /* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, 
-      scala.Boolean
-    ] = null,
+    emojisToShowFilter: /* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData => scala.Boolean = null,
     exclude: js.Array[CategoryName] = null,
     i18n: PartialI18n = null,
     icons: CustomIcons = null,
     include: js.Array[CategoryName] = null,
     native: js.UndefOr[scala.Boolean] = js.undefined,
-    notFound: js.Function0[reactLib.reactMod.Component[js.Object, js.Object, _]] = null,
+    notFound: () => reactLib.reactMod.Component[js.Object, js.Object, _] = null,
     notFoundEmoji: java.lang.String = null,
-    onClick: js.Function2[
-      /* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
-    onSelect: js.Function1[
-      /* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, 
-      scala.Unit
-    ] = null,
-    onSkinChange: js.Function1[
-      /* skin */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiSkin, 
-      scala.Unit
-    ] = null,
+    onClick: (/* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onSelect: /* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData => scala.Unit = null,
+    onSkinChange: /* skin */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiSkin => scala.Unit = null,
     perLine: scala.Int | scala.Double = null,
     recent: js.Array[java.lang.String] = null,
     set: EmojiSet = null,
@@ -125,17 +112,17 @@ object PickerProps {
     if (emoji != null) __obj.updateDynamic("emoji")(emoji)
     if (emojiSize != null) __obj.updateDynamic("emojiSize")(emojiSize.asInstanceOf[js.Any])
     if (!js.isUndefined(emojiTooltip)) __obj.updateDynamic("emojiTooltip")(emojiTooltip)
-    if (emojisToShowFilter != null) __obj.updateDynamic("emojisToShowFilter")(emojisToShowFilter)
+    if (emojisToShowFilter != null) __obj.updateDynamic("emojisToShowFilter")(js.Any.fromFunction1(emojisToShowFilter))
     if (exclude != null) __obj.updateDynamic("exclude")(exclude)
     if (i18n != null) __obj.updateDynamic("i18n")(i18n)
     if (icons != null) __obj.updateDynamic("icons")(icons)
     if (include != null) __obj.updateDynamic("include")(include)
     if (!js.isUndefined(native)) __obj.updateDynamic("native")(native)
-    if (notFound != null) __obj.updateDynamic("notFound")(notFound)
+    if (notFound != null) __obj.updateDynamic("notFound")(js.Any.fromFunction0(notFound))
     if (notFoundEmoji != null) __obj.updateDynamic("notFoundEmoji")(notFoundEmoji)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (onSkinChange != null) __obj.updateDynamic("onSkinChange")(onSkinChange)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
+    if (onSkinChange != null) __obj.updateDynamic("onSkinChange")(js.Any.fromFunction1(onSkinChange))
     if (perLine != null) __obj.updateDynamic("perLine")(perLine.asInstanceOf[js.Any])
     if (recent != null) __obj.updateDynamic("recent")(recent)
     if (set != null) __obj.updateDynamic("set")(set)

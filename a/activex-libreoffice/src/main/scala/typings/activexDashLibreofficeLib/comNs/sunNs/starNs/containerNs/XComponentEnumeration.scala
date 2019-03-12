@@ -17,14 +17,14 @@ trait XComponentEnumeration extends XEnumeration {
 object XComponentEnumeration {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    hasMoreElements: js.Function0[scala.Boolean],
-    nextComponent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent],
-    nextElement: js.Function0[js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    hasMoreElements: () => scala.Boolean,
+    nextComponent: () => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent,
+    nextElement: () => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XComponentEnumeration = {
-    val __obj = js.Dynamic.literal(acquire = acquire, hasMoreElements = hasMoreElements, nextComponent = nextComponent, nextElement = nextElement, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), hasMoreElements = js.Any.fromFunction0(hasMoreElements), nextComponent = js.Any.fromFunction0(nextComponent), nextElement = js.Any.fromFunction0(nextElement), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XComponentEnumeration]
   }

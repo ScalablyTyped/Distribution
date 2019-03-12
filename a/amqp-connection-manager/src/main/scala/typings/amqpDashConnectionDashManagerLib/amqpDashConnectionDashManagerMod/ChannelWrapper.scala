@@ -29,7 +29,7 @@ trait ChannelWrapper
   def addListener_error(
     event: amqpDashConnectionDashManagerLib.amqpDashConnectionDashManagerLibStrings.error,
     listener: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* info */ amqpDashConnectionDashManagerLib.Anon_Name, 
       scala.Unit
     ]
@@ -72,7 +72,7 @@ trait ChannelWrapper
   def on_error(
     event: amqpDashConnectionDashManagerLib.amqpDashConnectionDashManagerLibStrings.error,
     listener: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* info */ amqpDashConnectionDashManagerLib.Anon_Name, 
       scala.Unit
     ]
@@ -91,7 +91,7 @@ trait ChannelWrapper
   def once_error(
     event: amqpDashConnectionDashManagerLib.amqpDashConnectionDashManagerLibStrings.error,
     listener: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* info */ amqpDashConnectionDashManagerLib.Anon_Name, 
       scala.Unit
     ]
@@ -110,7 +110,7 @@ trait ChannelWrapper
   def prependListener_error(
     event: amqpDashConnectionDashManagerLib.amqpDashConnectionDashManagerLibStrings.error,
     listener: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* info */ amqpDashConnectionDashManagerLib.Anon_Name, 
       scala.Unit
     ]
@@ -129,7 +129,7 @@ trait ChannelWrapper
   def prependOnceListener_error(
     event: amqpDashConnectionDashManagerLib.amqpDashConnectionDashManagerLibStrings.error,
     listener: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* info */ amqpDashConnectionDashManagerLib.Anon_Name, 
       scala.Unit
     ]

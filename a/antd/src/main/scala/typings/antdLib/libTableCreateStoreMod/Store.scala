@@ -14,11 +14,11 @@ trait Store extends js.Object {
 object Store {
   @scala.inline
   def apply(
-    getState: js.Function0[js.Any],
-    setState: js.Function1[js.Object, scala.Unit],
-    subscribe: js.Function1[js.Function0[scala.Unit], js.Function0[scala.Unit]]
+    getState: () => js.Any,
+    setState: js.Object => scala.Unit,
+    subscribe: js.Function0[scala.Unit] => js.Function0[scala.Unit]
   ): Store = {
-    val __obj = js.Dynamic.literal(getState = getState, setState = setState, subscribe = subscribe)
+    val __obj = js.Dynamic.literal(getState = js.Any.fromFunction0(getState), setState = js.Any.fromFunction1(setState), subscribe = js.Any.fromFunction1(subscribe))
   
     __obj.asInstanceOf[Store]
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val isEquals: js.Any = js.native
-  def default[T, C /* <: immutabilityDashHelperLib.immutabilityDashHelperMod.CustomCommands[js.Object] */](`object`: T, $spec: immutabilityDashHelperLib.immutabilityDashHelperMod.Spec[T, C]): T = js.native
+  def default[T, C /* <: CustomCommands[js.Object] */](`object`: T, $spec: Spec[T, C]): T = js.native
   def extend[T](directive: java.lang.String, fn: js.Function2[/* param */ js.Any, /* old */ T, T]): scala.Unit = js.native
 }
 

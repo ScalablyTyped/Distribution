@@ -12,8 +12,8 @@ trait INamedACLs extends js.Object {
 
 object INamedACLs {
   @scala.inline
-  def apply(Count: scala.Double, Item: js.Function1[scala.Double, INamedACL]): INamedACLs = {
-    val __obj = js.Dynamic.literal(Count = Count, Item = Item)
+  def apply(Count: scala.Double, Item: scala.Double => INamedACL): INamedACLs = {
+    val __obj = js.Dynamic.literal(Count = Count, Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[INamedACLs]
   }

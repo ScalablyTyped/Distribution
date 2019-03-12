@@ -23,18 +23,18 @@ object Decoder {
   @scala.inline
   def apply(
     bufferish: js.Any,
-    decode: js.Function1[js.Any, scala.Unit],
-    end: js.Function1[js.Any, scala.Unit],
-    fetch: js.Function0[scala.Unit],
-    flush: js.Function0[scala.Unit],
+    decode: js.Any => scala.Unit,
+    end: js.Any => scala.Unit,
+    fetch: () => scala.Unit,
+    flush: () => scala.Unit,
     offset: scala.Double,
-    pull: js.Function0[scala.Double],
-    push: js.Function1[js.Any, scala.Unit],
-    read: js.Function0[scala.Double],
-    reserve: js.Function1[scala.Double, scala.Double],
-    write: js.Function1[js.Any, scala.Unit]
+    pull: () => scala.Double,
+    push: js.Any => scala.Unit,
+    read: () => scala.Double,
+    reserve: scala.Double => scala.Double,
+    write: js.Any => scala.Unit
   ): Decoder = {
-    val __obj = js.Dynamic.literal(bufferish = bufferish, decode = decode, end = end, fetch = fetch, flush = flush, offset = offset, pull = pull, push = push, read = read, reserve = reserve, write = write)
+    val __obj = js.Dynamic.literal(bufferish = bufferish, decode = js.Any.fromFunction1(decode), end = js.Any.fromFunction1(end), fetch = js.Any.fromFunction0(fetch), flush = js.Any.fromFunction0(flush), offset = offset, pull = js.Any.fromFunction0(pull), push = js.Any.fromFunction1(push), read = js.Any.fromFunction0(read), reserve = js.Any.fromFunction1(reserve), write = js.Any.fromFunction1(write))
   
     __obj.asInstanceOf[Decoder]
   }

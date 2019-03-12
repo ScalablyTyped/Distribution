@@ -27,24 +27,12 @@ trait DevicesResource extends js.Object {
 object DevicesResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Device]
-    ],
-    getState: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DeviceState]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DevicesListResponse]
-    ],
-    setState: js.Function1[
-      gapiDotClientDotAndroidenterpriseLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DeviceState]
-    ]
+    get: gapiDotClientDotAndroidenterpriseLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Device],
+    getState: gapiDotClientDotAndroidenterpriseLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[DeviceState],
+    list: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseId => gapiDotClientLib.gapiNs.clientNs.Request[DevicesListResponse],
+    setState: gapiDotClientDotAndroidenterpriseLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[DeviceState]
   ): DevicesResource = {
-    val __obj = js.Dynamic.literal(get = get, getState = getState, list = list, setState = setState)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), getState = js.Any.fromFunction1(getState), list = js.Any.fromFunction1(list), setState = js.Any.fromFunction1(setState))
   
     __obj.asInstanceOf[DevicesResource]
   }

@@ -41,7 +41,7 @@ trait DirectoryHandlerRouteObject extends js.Object {
     * * a function with the signature function(request) which returns the path string or an array of path strings.
     *   If the function returns an error, the error is passed back to the client in the response.
     */
-  var path: java.lang.String | js.Array[java.lang.String] | (RequestHandler[java.lang.String | js.Array[java.lang.String] | nodeLib.Error])
+  var path: java.lang.String | js.Array[java.lang.String] | (RequestHandler[java.lang.String | js.Array[java.lang.String] | stdLib.Error])
   /**
     * redirectToSlash - optional boolean, determines if requests for a directory without a trailing slash are redirected to the same path with the missing slash.
     * Useful for ensuring relative links inside the response are resolved correctly.
@@ -57,7 +57,7 @@ trait DirectoryHandlerRouteObject extends js.Object {
 object DirectoryHandlerRouteObject {
   @scala.inline
   def apply(
-    path: java.lang.String | js.Array[java.lang.String] | (RequestHandler[java.lang.String | js.Array[java.lang.String] | nodeLib.Error]),
+    path: java.lang.String | js.Array[java.lang.String] | (RequestHandler[java.lang.String | js.Array[java.lang.String] | stdLib.Error]),
     defaultExtension: java.lang.String = null,
     etagMethod: inertLib.inertLibStrings.hash | inertLib.inertLibStrings.simple | inertLib.inertLibNumbers.`false` = null,
     index: scala.Boolean | java.lang.String | js.Array[java.lang.String] = null,

@@ -16,13 +16,13 @@ trait IObjectClasses extends js.Object {
 object IObjectClasses {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IObjectClass, scala.Unit],
-    Clone: js.Function0[IObjectClasses],
+    Add: (scala.Double, IObjectClass) => scala.Unit,
+    Clone: () => IObjectClasses,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IObjectClass],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => IObjectClass,
+    Remove: scala.Double => scala.Unit
   ): IObjectClasses = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IObjectClasses]
   }

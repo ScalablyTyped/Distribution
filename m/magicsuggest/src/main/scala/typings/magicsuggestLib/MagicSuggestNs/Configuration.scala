@@ -287,7 +287,7 @@ object Configuration {
     allowDuplicates: js.UndefOr[scala.Boolean] = js.undefined,
     allowFreeEntries: js.UndefOr[scala.Boolean] = js.undefined,
     autoSelect: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeSend: js.Function0[scala.Unit] = null,
+    beforeSend: () => scala.Unit = null,
     cls: java.lang.String = null,
     data: js.Any = null,
     dataUrlParams: js.Object = null,
@@ -307,19 +307,19 @@ object Configuration {
     matchCase: js.UndefOr[scala.Boolean] = js.undefined,
     maxDropHeight: scala.Int | scala.Double = null,
     maxEntryLength: scala.Int | scala.Double = null,
-    maxEntryRenderer: js.Function1[/* v */ js.UndefOr[scala.Double], scala.Unit] = null,
+    maxEntryRenderer: /* v */ js.UndefOr[scala.Double] => scala.Unit = null,
     maxSelection: scala.Int | scala.Double = null,
-    maxSelectionRenderer: js.Function1[/* v */ scala.Double, scala.Unit] = null,
+    maxSelectionRenderer: /* v */ scala.Double => scala.Unit = null,
     maxSuggestions: scala.Int | scala.Double = null,
     method: java.lang.String = null,
     minChars: scala.Int | scala.Double = null,
-    minCharsRenderer: js.Function1[/* v */ scala.Double, scala.Unit] = null,
+    minCharsRenderer: /* v */ scala.Double => scala.Unit = null,
     mode: java.lang.String = null,
     name: java.lang.String = null,
     noSuggestionText: java.lang.String = null,
     placeholder: java.lang.String = null,
     queryParam: java.lang.String = null,
-    renderer: js.Function1[/* item */ js.Any, scala.Unit] = null,
+    renderer: /* item */ js.Any => scala.Unit = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
     resultAsString: js.UndefOr[scala.Boolean] = js.undefined,
     resultAsStringDelimiter: java.lang.String = null,
@@ -328,7 +328,7 @@ object Configuration {
     selectionCls: java.lang.String = null,
     selectionContainer: magicsuggestLib.JQuery = null,
     selectionPosition: java.lang.String = null,
-    selectionRenderer: js.Function1[/* item */ js.Any, scala.Unit] = null,
+    selectionRenderer: /* item */ js.Any => scala.Unit = null,
     selectionStacked: js.UndefOr[scala.Boolean] = js.undefined,
     sortDir: java.lang.String = null,
     sortOrder: java.lang.String = null,
@@ -349,7 +349,7 @@ object Configuration {
     if (!js.isUndefined(allowDuplicates)) __obj.updateDynamic("allowDuplicates")(allowDuplicates)
     if (!js.isUndefined(allowFreeEntries)) __obj.updateDynamic("allowFreeEntries")(allowFreeEntries)
     if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect)
-    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)
+    if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction0(beforeSend))
     if (cls != null) __obj.updateDynamic("cls")(cls)
     if (data != null) __obj.updateDynamic("data")(data)
     if (dataUrlParams != null) __obj.updateDynamic("dataUrlParams")(dataUrlParams)
@@ -369,19 +369,19 @@ object Configuration {
     if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase)
     if (maxDropHeight != null) __obj.updateDynamic("maxDropHeight")(maxDropHeight.asInstanceOf[js.Any])
     if (maxEntryLength != null) __obj.updateDynamic("maxEntryLength")(maxEntryLength.asInstanceOf[js.Any])
-    if (maxEntryRenderer != null) __obj.updateDynamic("maxEntryRenderer")(maxEntryRenderer)
+    if (maxEntryRenderer != null) __obj.updateDynamic("maxEntryRenderer")(js.Any.fromFunction1(maxEntryRenderer))
     if (maxSelection != null) __obj.updateDynamic("maxSelection")(maxSelection.asInstanceOf[js.Any])
-    if (maxSelectionRenderer != null) __obj.updateDynamic("maxSelectionRenderer")(maxSelectionRenderer)
+    if (maxSelectionRenderer != null) __obj.updateDynamic("maxSelectionRenderer")(js.Any.fromFunction1(maxSelectionRenderer))
     if (maxSuggestions != null) __obj.updateDynamic("maxSuggestions")(maxSuggestions.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method)
     if (minChars != null) __obj.updateDynamic("minChars")(minChars.asInstanceOf[js.Any])
-    if (minCharsRenderer != null) __obj.updateDynamic("minCharsRenderer")(minCharsRenderer)
+    if (minCharsRenderer != null) __obj.updateDynamic("minCharsRenderer")(js.Any.fromFunction1(minCharsRenderer))
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (name != null) __obj.updateDynamic("name")(name)
     if (noSuggestionText != null) __obj.updateDynamic("noSuggestionText")(noSuggestionText)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (queryParam != null) __obj.updateDynamic("queryParam")(queryParam)
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (renderer != null) __obj.updateDynamic("renderer")(js.Any.fromFunction1(renderer))
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
     if (!js.isUndefined(resultAsString)) __obj.updateDynamic("resultAsString")(resultAsString)
     if (resultAsStringDelimiter != null) __obj.updateDynamic("resultAsStringDelimiter")(resultAsStringDelimiter)
@@ -390,7 +390,7 @@ object Configuration {
     if (selectionCls != null) __obj.updateDynamic("selectionCls")(selectionCls)
     if (selectionContainer != null) __obj.updateDynamic("selectionContainer")(selectionContainer)
     if (selectionPosition != null) __obj.updateDynamic("selectionPosition")(selectionPosition)
-    if (selectionRenderer != null) __obj.updateDynamic("selectionRenderer")(selectionRenderer)
+    if (selectionRenderer != null) __obj.updateDynamic("selectionRenderer")(js.Any.fromFunction1(selectionRenderer))
     if (!js.isUndefined(selectionStacked)) __obj.updateDynamic("selectionStacked")(selectionStacked)
     if (sortDir != null) __obj.updateDynamic("sortDir")(sortDir)
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)

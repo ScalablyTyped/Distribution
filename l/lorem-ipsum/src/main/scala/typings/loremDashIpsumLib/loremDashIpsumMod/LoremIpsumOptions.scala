@@ -59,7 +59,7 @@ object LoremIpsumOptions {
     format: loremDashIpsumLib.loremDashIpsumLibStrings.plain | loremDashIpsumLib.loremDashIpsumLibStrings.html = null,
     paragraphLowerBound: scala.Int | scala.Double = null,
     paragraphUpperBound: scala.Int | scala.Double = null,
-    random: js.Function0[scala.Double] = null,
+    random: () => scala.Double = null,
     sentenceLowerBound: scala.Int | scala.Double = null,
     sentenceUpperBound: scala.Int | scala.Double = null,
     suffix: java.lang.String = null,
@@ -71,7 +71,7 @@ object LoremIpsumOptions {
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (paragraphLowerBound != null) __obj.updateDynamic("paragraphLowerBound")(paragraphLowerBound.asInstanceOf[js.Any])
     if (paragraphUpperBound != null) __obj.updateDynamic("paragraphUpperBound")(paragraphUpperBound.asInstanceOf[js.Any])
-    if (random != null) __obj.updateDynamic("random")(random)
+    if (random != null) __obj.updateDynamic("random")(js.Any.fromFunction0(random))
     if (sentenceLowerBound != null) __obj.updateDynamic("sentenceLowerBound")(sentenceLowerBound.asInstanceOf[js.Any])
     if (sentenceUpperBound != null) __obj.updateDynamic("sentenceUpperBound")(sentenceUpperBound.asInstanceOf[js.Any])
     if (suffix != null) __obj.updateDynamic("suffix")(suffix)

@@ -39,7 +39,7 @@ object ProcessImageProps {
   @scala.inline
   def apply(
     image: java.lang.String,
-    onProcessFinish: js.Function0[scala.Unit],
+    onProcessFinish: () => scala.Unit,
     blur: scala.Int | scala.Double = null,
     brightness: scala.Int | scala.Double = null,
     colors: reactDashImgproLib.Anon_Blue = null,
@@ -66,7 +66,7 @@ object ProcessImageProps {
     sepia: js.UndefOr[scala.Boolean] = js.undefined,
     storage: js.UndefOr[scala.Boolean] = js.undefined
   ): ProcessImageProps = {
-    val __obj = js.Dynamic.literal(image = image, onProcessFinish = onProcessFinish)
+    val __obj = js.Dynamic.literal(image = image, onProcessFinish = js.Any.fromFunction0(onProcessFinish))
     if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
     if (brightness != null) __obj.updateDynamic("brightness")(brightness.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors)

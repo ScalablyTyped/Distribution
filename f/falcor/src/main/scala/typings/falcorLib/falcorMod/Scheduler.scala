@@ -13,11 +13,11 @@ trait Scheduler extends js.Object {
 object Scheduler {
   @scala.inline
   def apply(
-    `catch`: js.Function1[js.Function1[/* exception */ js.Any, scala.Boolean], Scheduler],
-    catchException: js.Function1[js.Function1[/* exception */ js.Any, scala.Boolean], Scheduler]
+    `catch`: js.Function1[/* exception */ js.Any, scala.Boolean] => Scheduler,
+    catchException: js.Function1[/* exception */ js.Any, scala.Boolean] => Scheduler
   ): Scheduler = {
-    val __obj = js.Dynamic.literal(catchException = catchException)
-    __obj.updateDynamic("catch")(`catch`)
+    val __obj = js.Dynamic.literal(catchException = js.Any.fromFunction1(catchException))
+    __obj.updateDynamic("catch")(js.Any.fromFunction1(`catch`))
     __obj.asInstanceOf[Scheduler]
   }
 }

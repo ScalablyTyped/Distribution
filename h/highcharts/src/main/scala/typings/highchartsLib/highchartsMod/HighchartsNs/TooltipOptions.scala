@@ -181,19 +181,14 @@ object TooltipOptions {
     followPointer: js.UndefOr[scala.Boolean] = js.undefined,
     followTouchMove: js.UndefOr[scala.Boolean] = js.undefined,
     footerFormat: java.lang.String = null,
-    formatter: js.Function0[scala.Boolean | java.lang.String] = null,
+    formatter: () => scala.Boolean | java.lang.String = null,
     headerFormat: java.lang.String = null,
     hideDelay: scala.Int | scala.Double = null,
     outside: js.UndefOr[scala.Boolean] = js.undefined,
     padding: scala.Int | scala.Double = null,
     pointFormat: java.lang.String = null,
-    pointFormatter: js.Function0[java.lang.String] = null,
-    positioner: js.Function3[
-      /* labelWidth */ scala.Double, 
-      /* labelHeight */ scala.Double, 
-      /* point */ PlotPoint, 
-      highchartsLib.Anon_X
-    ] = null,
+    pointFormatter: () => java.lang.String = null,
+    positioner: (/* labelWidth */ scala.Double, /* labelHeight */ scala.Double, /* point */ PlotPoint) => highchartsLib.Anon_X = null,
     shadow: js.UndefOr[scala.Boolean] = js.undefined,
     shape: java.lang.String = null,
     shared: js.UndefOr[scala.Boolean] = js.undefined,
@@ -218,14 +213,14 @@ object TooltipOptions {
     if (!js.isUndefined(followPointer)) __obj.updateDynamic("followPointer")(followPointer)
     if (!js.isUndefined(followTouchMove)) __obj.updateDynamic("followTouchMove")(followTouchMove)
     if (footerFormat != null) __obj.updateDynamic("footerFormat")(footerFormat)
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction0(formatter))
     if (headerFormat != null) __obj.updateDynamic("headerFormat")(headerFormat)
     if (hideDelay != null) __obj.updateDynamic("hideDelay")(hideDelay.asInstanceOf[js.Any])
     if (!js.isUndefined(outside)) __obj.updateDynamic("outside")(outside)
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (pointFormat != null) __obj.updateDynamic("pointFormat")(pointFormat)
-    if (pointFormatter != null) __obj.updateDynamic("pointFormatter")(pointFormatter)
-    if (positioner != null) __obj.updateDynamic("positioner")(positioner)
+    if (pointFormatter != null) __obj.updateDynamic("pointFormatter")(js.Any.fromFunction0(pointFormatter))
+    if (positioner != null) __obj.updateDynamic("positioner")(js.Any.fromFunction3(positioner))
     if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow)
     if (shape != null) __obj.updateDynamic("shape")(shape)
     if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared)

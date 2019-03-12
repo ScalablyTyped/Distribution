@@ -14,11 +14,11 @@ trait YogaConfig extends js.Object {
 object YogaConfig {
   @scala.inline
   def apply(
-    isExperimentalFeatureEnabled: js.Function1[YogaExperimentalFeature, scala.Boolean],
-    setExperimentalFeatureEnabled: js.Function2[YogaExperimentalFeature, scala.Boolean, scala.Unit],
-    setPointScaleFactor: js.Function1[scala.Double, scala.Unit]
+    isExperimentalFeatureEnabled: YogaExperimentalFeature => scala.Boolean,
+    setExperimentalFeatureEnabled: (YogaExperimentalFeature, scala.Boolean) => scala.Unit,
+    setPointScaleFactor: scala.Double => scala.Unit
   ): YogaConfig = {
-    val __obj = js.Dynamic.literal(isExperimentalFeatureEnabled = isExperimentalFeatureEnabled, setExperimentalFeatureEnabled = setExperimentalFeatureEnabled, setPointScaleFactor = setPointScaleFactor)
+    val __obj = js.Dynamic.literal(isExperimentalFeatureEnabled = js.Any.fromFunction1(isExperimentalFeatureEnabled), setExperimentalFeatureEnabled = js.Any.fromFunction2(setExperimentalFeatureEnabled), setPointScaleFactor = js.Any.fromFunction1(setPointScaleFactor))
   
     __obj.asInstanceOf[YogaConfig]
   }

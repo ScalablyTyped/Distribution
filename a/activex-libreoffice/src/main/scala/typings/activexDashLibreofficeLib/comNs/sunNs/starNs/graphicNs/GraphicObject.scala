@@ -30,13 +30,13 @@ object GraphicObject {
   def apply(
     Graphic: XGraphic,
     UniqueID: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    create: js.Function0[scala.Unit],
-    createWithId: js.Function1[java.lang.String, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    create: () => scala.Unit,
+    createWithId: java.lang.String => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): GraphicObject = {
-    val __obj = js.Dynamic.literal(Graphic = Graphic, UniqueID = UniqueID, acquire = acquire, create = create, createWithId = createWithId, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Graphic = Graphic, UniqueID = UniqueID, acquire = js.Any.fromFunction0(acquire), create = js.Any.fromFunction0(create), createWithId = js.Any.fromFunction1(createWithId), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[GraphicObject]
   }

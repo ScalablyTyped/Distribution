@@ -56,10 +56,7 @@ object ojComboboxOneSettableProperties {
     valueOption: atOracleOraclejetLib.Anon_LabelValue,
     converter: atOracleOraclejetLib.ojvalidationDashBaseMod.Converter[_] | atOracleOraclejetLib.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter = null,
     describedBy: java.lang.String = null,
-    optionRenderer: js.Function1[
-      /* param0 */ atOracleOraclejetLib.ojselectcomboboxMod.ojComboboxNs.OptionContext, 
-      stdLib.Element
-    ] = null,
+    optionRenderer: /* param0 */ atOracleOraclejetLib.ojselectcomboboxMod.ojComboboxNs.OptionContext => stdLib.Element = null,
     options: (js.Array[
       atOracleOraclejetLib.ojselectcomboboxMod.ojComboboxNs.Option | atOracleOraclejetLib.ojselectcomboboxMod.ojComboboxNs.Optgroup
     ]) | (atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D]) = null,
@@ -72,7 +69,7 @@ object ojComboboxOneSettableProperties {
     val __obj = js.Dynamic.literal(asyncValidators = asyncValidators, disabled = disabled, displayOptions = displayOptions, filterOnOpen = filterOnOpen.asInstanceOf[js.Any], help = help, helpHints = helpHints, labelHint = labelHint, messagesCustom = messagesCustom, minLength = minLength, optionsKeys = optionsKeys, pickerAttributes = pickerAttributes, readOnly = readOnly, required = required, translations = translations, valid = valid.asInstanceOf[js.Any], value = value, valueOption = valueOption)
     if (converter != null) __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
     if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
-    if (optionRenderer != null) __obj.updateDynamic("optionRenderer")(optionRenderer)
+    if (optionRenderer != null) __obj.updateDynamic("optionRenderer")(js.Any.fromFunction1(optionRenderer))
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue)

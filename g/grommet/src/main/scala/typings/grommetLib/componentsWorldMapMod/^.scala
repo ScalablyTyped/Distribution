@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val WorldMap: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsWorldMapMod.WorldMapProps with reactLib.reactMod.ReactNs.SVGProps[reactLib.SVGSVGElement], 
+    WorldMapProps with reactLib.reactMod.ReactNs.SVGProps[reactLib.SVGSVGElement], 
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
 }

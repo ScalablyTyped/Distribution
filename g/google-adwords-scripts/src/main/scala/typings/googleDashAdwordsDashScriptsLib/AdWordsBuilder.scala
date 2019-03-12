@@ -11,8 +11,8 @@ trait AdWordsBuilder[E] extends js.Object {
 
 object AdWordsBuilder {
   @scala.inline
-  def apply[E](build: js.Function0[AdWordsOperation[E]]): AdWordsBuilder[E] = {
-    val __obj = js.Dynamic.literal(build = build)
+  def apply[E](build: () => AdWordsOperation[E]): AdWordsBuilder[E] = {
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build))
   
     __obj.asInstanceOf[AdWordsBuilder[E]]
   }

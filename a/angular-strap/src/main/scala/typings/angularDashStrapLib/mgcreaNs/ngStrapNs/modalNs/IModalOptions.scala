@@ -47,10 +47,10 @@ object IModalOptions {
     id: java.lang.String = null,
     keyboard: js.UndefOr[scala.Boolean] = js.undefined,
     locals: js.Any = null,
-    onBeforeHide: js.Function1[/* modal */ IModal, scala.Unit] = null,
-    onBeforeShow: js.Function1[/* modal */ IModal, scala.Unit] = null,
-    onHide: js.Function1[/* modal */ IModal, scala.Unit] = null,
-    onShow: js.Function1[/* modal */ IModal, scala.Unit] = null,
+    onBeforeHide: /* modal */ IModal => scala.Unit = null,
+    onBeforeShow: /* modal */ IModal => scala.Unit = null,
+    onHide: /* modal */ IModal => scala.Unit = null,
+    onShow: /* modal */ IModal => scala.Unit = null,
     placement: java.lang.String = null,
     prefixEvent: java.lang.String = null,
     resolve: js.Any = null,
@@ -73,10 +73,10 @@ object IModalOptions {
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
     if (locals != null) __obj.updateDynamic("locals")(locals)
-    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(onBeforeHide)
-    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(onBeforeShow)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(js.Any.fromFunction1(onBeforeHide))
+    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(js.Any.fromFunction1(onBeforeShow))
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction1(onHide))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (placement != null) __obj.updateDynamic("placement")(placement)
     if (prefixEvent != null) __obj.updateDynamic("prefixEvent")(prefixEvent)
     if (resolve != null) __obj.updateDynamic("resolve")(resolve)

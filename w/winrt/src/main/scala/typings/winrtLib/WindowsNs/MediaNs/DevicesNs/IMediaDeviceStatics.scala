@@ -18,15 +18,15 @@ trait IMediaDeviceStatics extends js.Object {
 object IMediaDeviceStatics {
   @scala.inline
   def apply(
-    getAudioCaptureSelector: js.Function0[java.lang.String],
-    getAudioRenderSelector: js.Function0[java.lang.String],
-    getDefaultAudioCaptureId: js.Function1[AudioDeviceRole, java.lang.String],
-    getDefaultAudioRenderId: js.Function1[AudioDeviceRole, java.lang.String],
-    getVideoCaptureSelector: js.Function0[java.lang.String],
+    getAudioCaptureSelector: () => java.lang.String,
+    getAudioRenderSelector: () => java.lang.String,
+    getDefaultAudioCaptureId: AudioDeviceRole => java.lang.String,
+    getDefaultAudioRenderId: AudioDeviceRole => java.lang.String,
+    getVideoCaptureSelector: () => java.lang.String,
     ondefaultaudiocapturedevicechanged: js.Any,
     ondefaultaudiorenderdevicechanged: js.Any
   ): IMediaDeviceStatics = {
-    val __obj = js.Dynamic.literal(getAudioCaptureSelector = getAudioCaptureSelector, getAudioRenderSelector = getAudioRenderSelector, getDefaultAudioCaptureId = getDefaultAudioCaptureId, getDefaultAudioRenderId = getDefaultAudioRenderId, getVideoCaptureSelector = getVideoCaptureSelector, ondefaultaudiocapturedevicechanged = ondefaultaudiocapturedevicechanged, ondefaultaudiorenderdevicechanged = ondefaultaudiorenderdevicechanged)
+    val __obj = js.Dynamic.literal(getAudioCaptureSelector = js.Any.fromFunction0(getAudioCaptureSelector), getAudioRenderSelector = js.Any.fromFunction0(getAudioRenderSelector), getDefaultAudioCaptureId = js.Any.fromFunction1(getDefaultAudioCaptureId), getDefaultAudioRenderId = js.Any.fromFunction1(getDefaultAudioRenderId), getVideoCaptureSelector = js.Any.fromFunction0(getVideoCaptureSelector), ondefaultaudiocapturedevicechanged = ondefaultaudiocapturedevicechanged, ondefaultaudiorenderdevicechanged = ondefaultaudiorenderdevicechanged)
   
     __obj.asInstanceOf[IMediaDeviceStatics]
   }

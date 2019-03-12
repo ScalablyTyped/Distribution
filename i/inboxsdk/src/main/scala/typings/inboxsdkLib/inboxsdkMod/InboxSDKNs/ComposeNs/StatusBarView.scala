@@ -13,14 +13,14 @@ trait StatusBarView
 object StatusBarView {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     destroyed: scala.Boolean,
     el: stdLib.HTMLElement,
-    on_destroy: js.Function2[inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit], scala.Unit],
-    setHeight: js.Function1[scala.Double, scala.Unit]
+    on_destroy: (inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit]) => scala.Unit,
+    setHeight: scala.Double => scala.Unit
   ): StatusBarView = {
-    val __obj = js.Dynamic.literal(destroy = destroy, destroyed = destroyed, el = el, setHeight = setHeight)
-    __obj.updateDynamic("on")(on_destroy)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), destroyed = destroyed, el = el, setHeight = js.Any.fromFunction1(setHeight))
+    __obj.updateDynamic("on")(js.Any.fromFunction2(on_destroy))
     __obj.asInstanceOf[StatusBarView]
   }
 }

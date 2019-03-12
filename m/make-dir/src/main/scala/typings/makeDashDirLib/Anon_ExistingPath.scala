@@ -16,8 +16,8 @@ trait Anon_ExistingPath extends js.Object {
 
 object Anon_ExistingPath {
   @scala.inline
-  def apply(link: js.Function2[nodeLib.fsMod.PathLike, nodeLib.fsMod.PathLike, js.Promise[scala.Unit]]): Anon_ExistingPath = {
-    val __obj = js.Dynamic.literal(link = link)
+  def apply(link: (nodeLib.fsMod.PathLike, nodeLib.fsMod.PathLike) => js.Promise[scala.Unit]): Anon_ExistingPath = {
+    val __obj = js.Dynamic.literal(link = js.Any.fromFunction2(link))
   
     __obj.asInstanceOf[Anon_ExistingPath]
   }

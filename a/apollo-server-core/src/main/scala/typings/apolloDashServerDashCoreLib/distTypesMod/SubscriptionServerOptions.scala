@@ -9,7 +9,7 @@ trait SubscriptionServerOptions extends js.Object {
   var keepAlive: js.UndefOr[scala.Double] = js.undefined
   var onConnect: js.UndefOr[
     js.Function3[
-      /* connectionParams */ coreDashJsLib.Object, 
+      /* connectionParams */ js.Object, 
       /* websocket */ wsLib.wsMod.namespaced, 
       /* context */ subscriptionsDashTransportDashWsLib.distServerMod.ConnectionContext, 
       _
@@ -30,22 +30,13 @@ object SubscriptionServerOptions {
   def apply(
     path: java.lang.String,
     keepAlive: scala.Int | scala.Double = null,
-    onConnect: js.Function3[
-      /* connectionParams */ coreDashJsLib.Object, 
-      /* websocket */ wsLib.wsMod.namespaced, 
-      /* context */ subscriptionsDashTransportDashWsLib.distServerMod.ConnectionContext, 
-      _
-    ] = null,
-    onDisconnect: js.Function2[
-      /* websocket */ wsLib.wsMod.namespaced, 
-      /* context */ subscriptionsDashTransportDashWsLib.distServerMod.ConnectionContext, 
-      _
-    ] = null
+    onConnect: (/* connectionParams */ js.Object, /* websocket */ wsLib.wsMod.namespaced, /* context */ subscriptionsDashTransportDashWsLib.distServerMod.ConnectionContext) => _ = null,
+    onDisconnect: (/* websocket */ wsLib.wsMod.namespaced, /* context */ subscriptionsDashTransportDashWsLib.distServerMod.ConnectionContext) => _ = null
   ): SubscriptionServerOptions = {
     val __obj = js.Dynamic.literal(path = path)
     if (keepAlive != null) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
-    if (onConnect != null) __obj.updateDynamic("onConnect")(onConnect)
-    if (onDisconnect != null) __obj.updateDynamic("onDisconnect")(onDisconnect)
+    if (onConnect != null) __obj.updateDynamic("onConnect")(js.Any.fromFunction3(onConnect))
+    if (onDisconnect != null) __obj.updateDynamic("onDisconnect")(js.Any.fromFunction2(onDisconnect))
     __obj.asInstanceOf[SubscriptionServerOptions]
   }
 }

@@ -63,7 +63,7 @@ object LocatorSearchSource {
   def apply(
     autoNavigate: scala.Boolean,
     categories: js.Array[java.lang.String],
-    clone: js.Function0[LocatorSearchSource],
+    clone: () => LocatorSearchSource,
     countryCode: java.lang.String,
     filter: SearchSourceFilter,
     localSearchOptions: LocatorSearchSourceLocalSearchOptions,
@@ -84,11 +84,11 @@ object LocatorSearchSource {
     singleLineFieldName: java.lang.String,
     suffix: java.lang.String,
     suggestionsEnabled: scala.Boolean,
-    toJSON: js.Function0[js.Any],
+    toJSON: () => js.Any,
     withinViewEnabled: scala.Boolean,
     zoomScale: scala.Double
   ): LocatorSearchSource = {
-    val __obj = js.Dynamic.literal(autoNavigate = autoNavigate, categories = categories, clone = clone, countryCode = countryCode, filter = filter, localSearchOptions = localSearchOptions, locationToAddressDistance = locationToAddressDistance, locator = locator, maxResults = maxResults, maxSuggestions = maxSuggestions, minSuggestCharacters = minSuggestCharacters, name = name, outFields = outFields, placeholder = placeholder, popupEnabled = popupEnabled, popupTemplate = popupTemplate, prefix = prefix, resultGraphicEnabled = resultGraphicEnabled, resultSymbol = resultSymbol, searchTemplate = searchTemplate, singleLineFieldName = singleLineFieldName, suffix = suffix, suggestionsEnabled = suggestionsEnabled, toJSON = toJSON, withinViewEnabled = withinViewEnabled, zoomScale = zoomScale)
+    val __obj = js.Dynamic.literal(autoNavigate = autoNavigate, categories = categories, clone = js.Any.fromFunction0(clone), countryCode = countryCode, filter = filter, localSearchOptions = localSearchOptions, locationToAddressDistance = locationToAddressDistance, locator = locator, maxResults = maxResults, maxSuggestions = maxSuggestions, minSuggestCharacters = minSuggestCharacters, name = name, outFields = outFields, placeholder = placeholder, popupEnabled = popupEnabled, popupTemplate = popupTemplate, prefix = prefix, resultGraphicEnabled = resultGraphicEnabled, resultSymbol = resultSymbol, searchTemplate = searchTemplate, singleLineFieldName = singleLineFieldName, suffix = suffix, suggestionsEnabled = suggestionsEnabled, toJSON = js.Any.fromFunction0(toJSON), withinViewEnabled = withinViewEnabled, zoomScale = zoomScale)
   
     __obj.asInstanceOf[LocatorSearchSource]
   }

@@ -23,14 +23,14 @@ trait Port extends js.Object {
 object Port {
   @scala.inline
   def apply(
-    disconnect: js.Function0[scala.Unit],
+    disconnect: () => scala.Unit,
     name: java.lang.String,
     onDisconnect: PortDisconnectEvent,
     onMessage: PortMessageEvent,
-    postMessage: js.Function1[js.Object, scala.Unit],
+    postMessage: js.Object => scala.Unit,
     sender: MessageSender = null
   ): Port = {
-    val __obj = js.Dynamic.literal(disconnect = disconnect, name = name, onDisconnect = onDisconnect, onMessage = onMessage, postMessage = postMessage)
+    val __obj = js.Dynamic.literal(disconnect = js.Any.fromFunction0(disconnect), name = name, onDisconnect = onDisconnect, onMessage = onMessage, postMessage = js.Any.fromFunction1(postMessage))
     if (sender != null) __obj.updateDynamic("sender")(sender)
     __obj.asInstanceOf[Port]
   }

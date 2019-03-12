@@ -5,28 +5,61 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IntlConfig extends js.Object {
-  var defaultFormats: reactLib.reactMod.ReactNs.Requireable[_]
-  var defaultLocale: reactLib.reactMod.ReactNs.Requireable[_]
-  var formats: reactLib.reactMod.ReactNs.Requireable[_]
-  var locale: reactLib.reactMod.ReactNs.Requireable[_]
-  var messages: reactLib.reactMod.ReactNs.Requireable[_]
-  var onError: reactLib.reactMod.ReactNs.Requireable[_]
-}
-
-object IntlConfig {
-  @scala.inline
-  def apply(
-    defaultFormats: reactLib.reactMod.ReactNs.Requireable[_],
-    defaultLocale: reactLib.reactMod.ReactNs.Requireable[_],
-    formats: reactLib.reactMod.ReactNs.Requireable[_],
-    locale: reactLib.reactMod.ReactNs.Requireable[_],
-    messages: reactLib.reactMod.ReactNs.Requireable[_],
-    onError: reactLib.reactMod.ReactNs.Requireable[_]
-  ): IntlConfig = {
-    val __obj = js.Dynamic.literal(defaultFormats = defaultFormats, defaultLocale = defaultLocale, formats = formats, locale = locale, messages = messages, onError = onError)
-  
-    __obj.asInstanceOf[IntlConfig]
-  }
+  @JSName("defaultFormats")
+  var defaultFormats_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  @JSName("defaultLocale")
+  var defaultLocale_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  @JSName("formats")
+  var formats_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  @JSName("locale")
+  var locale_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  @JSName("messages")
+  var messages_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  @JSName("onError")
+  var onError_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  def defaultFormats(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def defaultLocale(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def formats(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def locale(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def messages(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def onError(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
 }
 

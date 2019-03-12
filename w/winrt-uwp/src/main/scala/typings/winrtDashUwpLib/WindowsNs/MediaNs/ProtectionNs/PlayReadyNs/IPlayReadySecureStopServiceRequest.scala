@@ -22,11 +22,11 @@ trait IPlayReadySecureStopServiceRequest extends IPlayReadyServiceRequest {
 object IPlayReadySecureStopServiceRequest {
   @scala.inline
   def apply(
-    beginServiceRequest: js.Function0[winrtDashUwpLib.WindowsNs.FoundationNs.IAsyncAction],
+    beginServiceRequest: () => winrtDashUwpLib.WindowsNs.FoundationNs.IAsyncAction,
     challengeCustomData: java.lang.String,
-    generateManualEnablingChallenge: js.Function0[PlayReadySoapMessage],
-    nextServiceRequest: js.Function0[IPlayReadyServiceRequest],
-    processManualEnablingResponse: js.Function1[js.Array[scala.Double], winrtDashUwpLib.WindowsNs.WinRTError],
+    generateManualEnablingChallenge: () => PlayReadySoapMessage,
+    nextServiceRequest: () => IPlayReadyServiceRequest,
+    processManualEnablingResponse: js.Array[scala.Double] => winrtDashUwpLib.WindowsNs.WinRTError,
     protectionSystem: java.lang.String,
     publisherCertificate: scala.Double,
     responseCustomData: java.lang.String,
@@ -37,7 +37,7 @@ object IPlayReadySecureStopServiceRequest {
     updateTime: stdLib.Date,
     uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri
   ): IPlayReadySecureStopServiceRequest = {
-    val __obj = js.Dynamic.literal(beginServiceRequest = beginServiceRequest, challengeCustomData = challengeCustomData, generateManualEnablingChallenge = generateManualEnablingChallenge, nextServiceRequest = nextServiceRequest, processManualEnablingResponse = processManualEnablingResponse, protectionSystem = protectionSystem, publisherCertificate = publisherCertificate, responseCustomData = responseCustomData, sessionID = sessionID, startTime = startTime, stopped = stopped, updateTime = updateTime, uri = uri)
+    val __obj = js.Dynamic.literal(beginServiceRequest = js.Any.fromFunction0(beginServiceRequest), challengeCustomData = challengeCustomData, generateManualEnablingChallenge = js.Any.fromFunction0(generateManualEnablingChallenge), nextServiceRequest = js.Any.fromFunction0(nextServiceRequest), processManualEnablingResponse = js.Any.fromFunction1(processManualEnablingResponse), protectionSystem = protectionSystem, publisherCertificate = publisherCertificate, responseCustomData = responseCustomData, sessionID = sessionID, startTime = startTime, stopped = stopped, updateTime = updateTime, uri = uri)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IPlayReadySecureStopServiceRequest]
   }

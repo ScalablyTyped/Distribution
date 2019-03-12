@@ -23,32 +23,14 @@ trait PretargetingConfigResource extends js.Object {
 object PretargetingConfigResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltConfigId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltConfigId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PretargetingConfig]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PretargetingConfig]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PretargetingConfigList]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltConfigId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PretargetingConfig]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltConfigId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PretargetingConfig]
-    ]
+    delete: gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltConfigId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltConfigId => gapiDotClientLib.gapiNs.clientNs.Request[PretargetingConfig],
+    insert: gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltFields => gapiDotClientLib.gapiNs.clientNs.Request[PretargetingConfig],
+    list: gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltFields => gapiDotClientLib.gapiNs.clientNs.Request[PretargetingConfigList],
+    patch: gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltConfigId => gapiDotClientLib.gapiNs.clientNs.Request[PretargetingConfig],
+    update: gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltConfigId => gapiDotClientLib.gapiNs.clientNs.Request[PretargetingConfig]
   ): PretargetingConfigResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[PretargetingConfigResource]
   }

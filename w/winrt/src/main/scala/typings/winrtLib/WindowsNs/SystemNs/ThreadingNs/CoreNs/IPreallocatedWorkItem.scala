@@ -11,8 +11,8 @@ trait IPreallocatedWorkItem extends js.Object {
 
 object IPreallocatedWorkItem {
   @scala.inline
-  def apply(runAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncAction]): IPreallocatedWorkItem = {
-    val __obj = js.Dynamic.literal(runAsync = runAsync)
+  def apply(runAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncAction): IPreallocatedWorkItem = {
+    val __obj = js.Dynamic.literal(runAsync = js.Any.fromFunction0(runAsync))
   
     __obj.asInstanceOf[IPreallocatedWorkItem]
   }

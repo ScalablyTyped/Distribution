@@ -22,20 +22,20 @@ trait ModuleResolutionHost extends js.Object {
 object ModuleResolutionHost {
   @scala.inline
   def apply(
-    fileExists: js.Function1[java.lang.String, scala.Boolean],
-    readFile: js.Function1[java.lang.String, js.UndefOr[java.lang.String]],
-    directoryExists: js.Function1[/* directoryName */ java.lang.String, scala.Boolean] = null,
-    getCurrentDirectory: js.Function0[java.lang.String] = null,
-    getDirectories: js.Function1[/* path */ java.lang.String, js.Array[java.lang.String]] = null,
-    realpath: js.Function1[/* path */ java.lang.String, java.lang.String] = null,
-    trace: js.Function1[/* s */ java.lang.String, scala.Unit] = null
+    fileExists: java.lang.String => scala.Boolean,
+    readFile: java.lang.String => js.UndefOr[java.lang.String],
+    directoryExists: /* directoryName */ java.lang.String => scala.Boolean = null,
+    getCurrentDirectory: () => java.lang.String = null,
+    getDirectories: /* path */ java.lang.String => js.Array[java.lang.String] = null,
+    realpath: /* path */ java.lang.String => java.lang.String = null,
+    trace: /* s */ java.lang.String => scala.Unit = null
   ): ModuleResolutionHost = {
-    val __obj = js.Dynamic.literal(fileExists = fileExists, readFile = readFile)
-    if (directoryExists != null) __obj.updateDynamic("directoryExists")(directoryExists)
-    if (getCurrentDirectory != null) __obj.updateDynamic("getCurrentDirectory")(getCurrentDirectory)
-    if (getDirectories != null) __obj.updateDynamic("getDirectories")(getDirectories)
-    if (realpath != null) __obj.updateDynamic("realpath")(realpath)
-    if (trace != null) __obj.updateDynamic("trace")(trace)
+    val __obj = js.Dynamic.literal(fileExists = js.Any.fromFunction1(fileExists), readFile = js.Any.fromFunction1(readFile))
+    if (directoryExists != null) __obj.updateDynamic("directoryExists")(js.Any.fromFunction1(directoryExists))
+    if (getCurrentDirectory != null) __obj.updateDynamic("getCurrentDirectory")(js.Any.fromFunction0(getCurrentDirectory))
+    if (getDirectories != null) __obj.updateDynamic("getDirectories")(js.Any.fromFunction1(getDirectories))
+    if (realpath != null) __obj.updateDynamic("realpath")(js.Any.fromFunction1(realpath))
+    if (trace != null) __obj.updateDynamic("trace")(js.Any.fromFunction1(trace))
     __obj.asInstanceOf[ModuleResolutionHost]
   }
 }

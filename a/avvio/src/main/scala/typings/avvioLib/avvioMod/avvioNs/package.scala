@@ -10,7 +10,7 @@ package object avvioNs {
   type Plugin[O, I] = js.Function3[
     /* server */ context[I], 
     /* options */ O, 
-    /* done */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
+    /* done */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
     scala.Unit
   ]
   type Use[I, C] = js.Function2[/* fn */ Plugin[js.Any, I], /* options */ js.UndefOr[js.Any], C]

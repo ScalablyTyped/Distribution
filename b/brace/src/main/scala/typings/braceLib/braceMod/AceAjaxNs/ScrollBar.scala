@@ -35,13 +35,13 @@ trait ScrollBar extends js.Object {
 object ScrollBar {
   @scala.inline
   def apply(
-    getWidth: js.Function0[scala.Double],
-    onScroll: js.Function1[js.Any, scala.Unit],
-    setHeight: js.Function1[scala.Double, scala.Unit],
-    setInnerHeight: js.Function1[scala.Double, scala.Unit],
-    setScrollTop: js.Function1[scala.Double, scala.Unit]
+    getWidth: () => scala.Double,
+    onScroll: js.Any => scala.Unit,
+    setHeight: scala.Double => scala.Unit,
+    setInnerHeight: scala.Double => scala.Unit,
+    setScrollTop: scala.Double => scala.Unit
   ): ScrollBar = {
-    val __obj = js.Dynamic.literal(getWidth = getWidth, onScroll = onScroll, setHeight = setHeight, setInnerHeight = setInnerHeight, setScrollTop = setScrollTop)
+    val __obj = js.Dynamic.literal(getWidth = js.Any.fromFunction0(getWidth), onScroll = js.Any.fromFunction1(onScroll), setHeight = js.Any.fromFunction1(setHeight), setInnerHeight = js.Any.fromFunction1(setInnerHeight), setScrollTop = js.Any.fromFunction1(setScrollTop))
   
     __obj.asInstanceOf[ScrollBar]
   }

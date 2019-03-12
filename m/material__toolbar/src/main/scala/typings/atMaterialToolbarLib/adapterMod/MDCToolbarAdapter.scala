@@ -27,24 +27,24 @@ trait MDCToolbarAdapter extends js.Object {
 object MDCToolbarAdapter {
   @scala.inline
   def apply(
-    addClass: js.Function1[java.lang.String, scala.Unit],
-    deregisterResizeHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    deregisterScrollHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    getFirstRowElementOffsetHeight: js.Function0[scala.Double],
-    getOffsetHeight: js.Function0[scala.Double],
-    getViewportScrollY: js.Function0[scala.Double],
-    getViewportWidth: js.Function0[scala.Double],
-    hasClass: js.Function1[java.lang.String, scala.Boolean],
-    notifyChange: js.Function1[atMaterialToolbarLib.Anon_FlexibleExpansionRatio, scala.Unit],
-    registerResizeHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    registerScrollHandler: js.Function1[stdLib.EventListener, scala.Unit],
-    removeClass: js.Function1[java.lang.String, scala.Unit],
-    setStyle: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    setStyleForFixedAdjustElement: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    setStyleForFlexibleRowElement: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    setStyleForTitleElement: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    addClass: java.lang.String => scala.Unit,
+    deregisterResizeHandler: stdLib.EventListener => scala.Unit,
+    deregisterScrollHandler: stdLib.EventListener => scala.Unit,
+    getFirstRowElementOffsetHeight: () => scala.Double,
+    getOffsetHeight: () => scala.Double,
+    getViewportScrollY: () => scala.Double,
+    getViewportWidth: () => scala.Double,
+    hasClass: java.lang.String => scala.Boolean,
+    notifyChange: atMaterialToolbarLib.Anon_FlexibleExpansionRatio => scala.Unit,
+    registerResizeHandler: stdLib.EventListener => scala.Unit,
+    registerScrollHandler: stdLib.EventListener => scala.Unit,
+    removeClass: java.lang.String => scala.Unit,
+    setStyle: (java.lang.String, java.lang.String) => scala.Unit,
+    setStyleForFixedAdjustElement: (java.lang.String, java.lang.String) => scala.Unit,
+    setStyleForFlexibleRowElement: (java.lang.String, java.lang.String) => scala.Unit,
+    setStyleForTitleElement: (java.lang.String, java.lang.String) => scala.Unit
   ): MDCToolbarAdapter = {
-    val __obj = js.Dynamic.literal(addClass = addClass, deregisterResizeHandler = deregisterResizeHandler, deregisterScrollHandler = deregisterScrollHandler, getFirstRowElementOffsetHeight = getFirstRowElementOffsetHeight, getOffsetHeight = getOffsetHeight, getViewportScrollY = getViewportScrollY, getViewportWidth = getViewportWidth, hasClass = hasClass, notifyChange = notifyChange, registerResizeHandler = registerResizeHandler, registerScrollHandler = registerScrollHandler, removeClass = removeClass, setStyle = setStyle, setStyleForFixedAdjustElement = setStyleForFixedAdjustElement, setStyleForFlexibleRowElement = setStyleForFlexibleRowElement, setStyleForTitleElement = setStyleForTitleElement)
+    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), deregisterResizeHandler = js.Any.fromFunction1(deregisterResizeHandler), deregisterScrollHandler = js.Any.fromFunction1(deregisterScrollHandler), getFirstRowElementOffsetHeight = js.Any.fromFunction0(getFirstRowElementOffsetHeight), getOffsetHeight = js.Any.fromFunction0(getOffsetHeight), getViewportScrollY = js.Any.fromFunction0(getViewportScrollY), getViewportWidth = js.Any.fromFunction0(getViewportWidth), hasClass = js.Any.fromFunction1(hasClass), notifyChange = js.Any.fromFunction1(notifyChange), registerResizeHandler = js.Any.fromFunction1(registerResizeHandler), registerScrollHandler = js.Any.fromFunction1(registerScrollHandler), removeClass = js.Any.fromFunction1(removeClass), setStyle = js.Any.fromFunction2(setStyle), setStyleForFixedAdjustElement = js.Any.fromFunction2(setStyleForFixedAdjustElement), setStyleForFlexibleRowElement = js.Any.fromFunction2(setStyleForFlexibleRowElement), setStyleForTitleElement = js.Any.fromFunction2(setStyleForTitleElement))
   
     __obj.asInstanceOf[MDCToolbarAdapter]
   }

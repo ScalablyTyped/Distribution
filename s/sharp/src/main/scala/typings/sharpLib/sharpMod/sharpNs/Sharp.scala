@@ -195,7 +195,7 @@ trait Sharp
     * Fast access to (uncached) image metadata without decoding any compressed image data.
     * @returns A sharp instance that can be used to chain operations
     */
-  def metadata(callback: js.Function2[/* err */ nodeLib.Error, /* metadata */ Metadata, scala.Unit]): Sharp = js.native
+  def metadata(callback: js.Function2[/* err */ stdLib.Error, /* metadata */ Metadata, scala.Unit]): Sharp = js.native
   /**
     * Produce the "negative" of the image.
     * @param negate true to enable and false to disable (defaults to true)
@@ -355,7 +355,7 @@ trait Sharp
     * Access to pixel-derived image statistics for every channel in the image.
     * @returns A sharp instance that can be used to chain operations
     */
-  def stats(callback: js.Function2[/* err */ nodeLib.Error, /* stats */ Stats, scala.Unit]): Sharp = js.native
+  def stats(callback: js.Function2[/* err */ stdLib.Error, /* stats */ Stats, scala.Unit]): Sharp = js.native
   /**
     * Any pixel value greather than or equal to the threshold value will be set to 255, otherwise it will be set to 0.
     * @param threshold a value in the range 0-255 representing the level at which the threshold will be applied. (optional, default 128)
@@ -410,12 +410,7 @@ trait Sharp
     * @returns A sharp instance that can be used to chain operations
     */
   def toBuffer(
-    callback: js.Function3[
-      /* err */ nodeLib.Error, 
-      /* buffer */ nodeLib.Buffer, 
-      /* info */ OutputInfo, 
-      scala.Unit
-    ]
+    callback: js.Function3[/* err */ stdLib.Error, /* buffer */ nodeLib.Buffer, /* info */ OutputInfo, scala.Unit]
   ): Sharp = js.native
   def toBuffer(options: sharpLib.Anon_False): js.Promise[nodeLib.Buffer] = js.native
   /**
@@ -462,7 +457,7 @@ trait Sharp
     */
   def toFile(
     fileOut: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* info */ OutputInfo, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* info */ OutputInfo, scala.Unit]
   ): Sharp = js.native
   /**
     * Force output to a given format.

@@ -41,17 +41,17 @@ object XCoordinateSystem {
     CoordinateSystemType: java.lang.String,
     Dimension: scala.Double,
     ViewServiceName: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getAxisByDimension: js.Function2[scala.Double, scala.Double, XAxis],
-    getCoordinateSystemType: js.Function0[java.lang.String],
-    getDimension: js.Function0[scala.Double],
-    getMaximumAxisIndexByDimension: js.Function1[scala.Double, scala.Double],
-    getViewServiceName: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setAxisByDimension: js.Function3[scala.Double, XAxis, scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    getAxisByDimension: (scala.Double, scala.Double) => XAxis,
+    getCoordinateSystemType: () => java.lang.String,
+    getDimension: () => scala.Double,
+    getMaximumAxisIndexByDimension: scala.Double => scala.Double,
+    getViewServiceName: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setAxisByDimension: (scala.Double, XAxis, scala.Double) => scala.Unit
   ): XCoordinateSystem = {
-    val __obj = js.Dynamic.literal(CoordinateSystemType = CoordinateSystemType, Dimension = Dimension, ViewServiceName = ViewServiceName, acquire = acquire, getAxisByDimension = getAxisByDimension, getCoordinateSystemType = getCoordinateSystemType, getDimension = getDimension, getMaximumAxisIndexByDimension = getMaximumAxisIndexByDimension, getViewServiceName = getViewServiceName, queryInterface = queryInterface, release = release, setAxisByDimension = setAxisByDimension)
+    val __obj = js.Dynamic.literal(CoordinateSystemType = CoordinateSystemType, Dimension = Dimension, ViewServiceName = ViewServiceName, acquire = js.Any.fromFunction0(acquire), getAxisByDimension = js.Any.fromFunction2(getAxisByDimension), getCoordinateSystemType = js.Any.fromFunction0(getCoordinateSystemType), getDimension = js.Any.fromFunction0(getDimension), getMaximumAxisIndexByDimension = js.Any.fromFunction1(getMaximumAxisIndexByDimension), getViewServiceName = js.Any.fromFunction0(getViewServiceName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setAxisByDimension = js.Any.fromFunction3(setAxisByDimension))
   
     __obj.asInstanceOf[XCoordinateSystem]
   }

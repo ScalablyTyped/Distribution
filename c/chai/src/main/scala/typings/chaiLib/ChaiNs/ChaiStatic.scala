@@ -5,43 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChaiStatic extends js.Object {
   var AssertionError: org.scalablytyped.runtime.Instantiable3[
     /* message */ java.lang.String, 
     /* _props */ js.UndefOr[/* _props */ js.Any], 
     /* ssf */ js.UndefOr[/* ssf */ js.Function], 
     AssertionError
-  ]
-  var assert: AssertStatic
-  var config: Config
-  var expect: ExpectStatic
-  var version: java.lang.String
-  def should(): Should
+  ] = js.native
+  @JSName("assert")
+  var assert_Original: AssertStatic = js.native
+  var config: Config = js.native
+  var expect: ExpectStatic = js.native
+  var version: java.lang.String = js.native
+  /**
+    * @param expression    Expression to test for truthiness.
+    * @param message    Message to display on error.
+    */
+  def assert(expression: js.Any): scala.Unit = js.native
+  def assert(expression: js.Any, message: java.lang.String): scala.Unit = js.native
+  def should(): Should = js.native
   /**
     * Provides a way to extend the internals of Chai
     */
-  def use(fn: js.Function2[/* chai */ js.Any, /* utils */ js.Any, scala.Unit]): ChaiStatic
-}
-
-object ChaiStatic {
-  @scala.inline
-  def apply(
-    AssertionError: org.scalablytyped.runtime.Instantiable3[
-      /* message */ java.lang.String, 
-      /* _props */ js.UndefOr[/* _props */ js.Any], 
-      /* ssf */ js.UndefOr[/* ssf */ js.Function], 
-      AssertionError
-    ],
-    assert: AssertStatic,
-    config: Config,
-    expect: ExpectStatic,
-    should: js.Function0[Should],
-    use: js.Function1[js.Function2[/* chai */ js.Any, /* utils */ js.Any, scala.Unit], ChaiStatic],
-    version: java.lang.String
-  ): ChaiStatic = {
-    val __obj = js.Dynamic.literal(AssertionError = AssertionError, assert = assert, config = config, expect = expect, should = should, use = use, version = version)
-  
-    __obj.asInstanceOf[ChaiStatic]
-  }
+  def use(fn: js.Function2[/* chai */ js.Any, /* utils */ js.Any, scala.Unit]): ChaiStatic = js.native
 }
 

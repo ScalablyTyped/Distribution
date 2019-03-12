@@ -37,17 +37,17 @@ trait XTreeExpansionListener
 object XTreeExpansionListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    requestChildNodes: js.Function1[TreeExpansionEvent, scala.Unit],
-    treeCollapsed: js.Function1[TreeExpansionEvent, scala.Unit],
-    treeCollapsing: js.Function1[TreeExpansionEvent, scala.Unit],
-    treeExpanded: js.Function1[TreeExpansionEvent, scala.Unit],
-    treeExpanding: js.Function1[TreeExpansionEvent, scala.Unit]
+    acquire: () => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    requestChildNodes: TreeExpansionEvent => scala.Unit,
+    treeCollapsed: TreeExpansionEvent => scala.Unit,
+    treeCollapsing: TreeExpansionEvent => scala.Unit,
+    treeExpanded: TreeExpansionEvent => scala.Unit,
+    treeExpanding: TreeExpansionEvent => scala.Unit
   ): XTreeExpansionListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, requestChildNodes = requestChildNodes, treeCollapsed = treeCollapsed, treeCollapsing = treeCollapsing, treeExpanded = treeExpanded, treeExpanding = treeExpanding)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), requestChildNodes = js.Any.fromFunction1(requestChildNodes), treeCollapsed = js.Any.fromFunction1(treeCollapsed), treeCollapsing = js.Any.fromFunction1(treeCollapsing), treeExpanded = js.Any.fromFunction1(treeExpanded), treeExpanding = js.Any.fromFunction1(treeExpanding))
   
     __obj.asInstanceOf[XTreeExpansionListener]
   }

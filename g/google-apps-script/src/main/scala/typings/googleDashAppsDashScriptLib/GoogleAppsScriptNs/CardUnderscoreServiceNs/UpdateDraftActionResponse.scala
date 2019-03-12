@@ -11,8 +11,8 @@ trait UpdateDraftActionResponse extends js.Object {
 
 object UpdateDraftActionResponse {
   @scala.inline
-  def apply(printJson: js.Function0[java.lang.String]): UpdateDraftActionResponse = {
-    val __obj = js.Dynamic.literal(printJson = printJson)
+  def apply(printJson: () => java.lang.String): UpdateDraftActionResponse = {
+    val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson))
   
     __obj.asInstanceOf[UpdateDraftActionResponse]
   }

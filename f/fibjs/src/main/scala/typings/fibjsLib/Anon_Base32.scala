@@ -15,10 +15,10 @@ object Anon_Base32 {
   @scala.inline
   def apply(
     base32Ns: js.Any,
-    decode: js.Function1[java.lang.String, Class_Buffer],
-    encode: js.Function1[Class_Buffer, java.lang.String]
+    decode: java.lang.String => Class_Buffer,
+    encode: Class_Buffer => java.lang.String
   ): Anon_Base32 = {
-    val __obj = js.Dynamic.literal(base32Ns = base32Ns, decode = decode, encode = encode)
+    val __obj = js.Dynamic.literal(base32Ns = base32Ns, decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
   
     __obj.asInstanceOf[Anon_Base32]
   }

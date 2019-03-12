@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ModeStatic extends js.Object {
-  var CBC: CBC
-  var CFB: CFB
-  var CTR: CTR
-  var CTRGladman: CTRGladman
-  var ECB: ECB
-  var OFB: OFB
+  var CBC: cryptojsLib.CryptoJSNs.modeNs.CBC
+  var CFB: cryptojsLib.CryptoJSNs.modeNs.CFB
+  var CTR: cryptojsLib.CryptoJSNs.modeNs.CTR
+  var CTRGladman: cryptojsLib.CryptoJSNs.modeNs.CTRGladman
+  var ECB: cryptojsLib.CryptoJSNs.modeNs.ECB
+  var OFB: cryptojsLib.CryptoJSNs.modeNs.OFB
 }
 
 object ModeStatic {

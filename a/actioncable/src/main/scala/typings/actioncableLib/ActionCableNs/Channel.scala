@@ -14,11 +14,11 @@ trait Channel extends js.Object {
 object Channel {
   @scala.inline
   def apply(
-    perform: js.Function2[java.lang.String, js.Object, scala.Unit],
-    send: js.Function1[js.Any, scala.Boolean],
-    unsubscribe: js.Function0[scala.Unit]
+    perform: (java.lang.String, js.Object) => scala.Unit,
+    send: js.Any => scala.Boolean,
+    unsubscribe: () => scala.Unit
   ): Channel = {
-    val __obj = js.Dynamic.literal(perform = perform, send = send, unsubscribe = unsubscribe)
+    val __obj = js.Dynamic.literal(perform = js.Any.fromFunction2(perform), send = js.Any.fromFunction1(send), unsubscribe = js.Any.fromFunction0(unsubscribe))
   
     __obj.asInstanceOf[Channel]
   }

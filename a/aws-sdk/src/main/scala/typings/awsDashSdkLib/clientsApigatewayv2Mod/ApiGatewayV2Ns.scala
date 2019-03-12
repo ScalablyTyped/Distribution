@@ -54,7 +54,7 @@ object ApiGatewayV2Ns extends js.Object {
     /**
       * The API protocol: Currently only WEBSOCKET is supported.
       */
-    var ProtocolType: ProtocolType
+    var ProtocolType: awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.ProtocolType
     /**
       * The route selection expression for the API.
       */
@@ -223,7 +223,7 @@ object ApiGatewayV2Ns extends js.Object {
     /**
       * The API protocol: Currently only WEBSOCKET is supported.
       */
-    var ProtocolType: ProtocolType
+    var ProtocolType: awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.ProtocolType
     /**
       * The route selection expression for the API.
       */
@@ -307,7 +307,7 @@ object ApiGatewayV2Ns extends js.Object {
       * The authorizer type. Currently the only valid value is REQUEST, for a
       Lambda function using incoming request parameters.
       */
-    var AuthorizerType: AuthorizerType
+    var AuthorizerType: awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.AuthorizerType
     /**
       * The authorizer's Uniform Resource Identifier (URI). For
       REQUEST authorizers, this must be a
@@ -557,7 +557,7 @@ object ApiGatewayV2Ns extends js.Object {
       MOCK: for integrating the route or method request with API Gateway as a
       "loopback" endpoint without invoking any backend.
       */
-    var IntegrationType: IntegrationType
+    var IntegrationType: awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.IntegrationType
     /**
       * For a Lambda proxy integration, this is the URI of the Lambda function.
       */

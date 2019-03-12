@@ -1,7 +1,7 @@
 [debug] PhaseRunner.scala:82 Success [id => postmate, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/postmate/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/postmate),TsIdentLibrarySimple(postmate)),TsIdentModule(None,List(postmate))) [id => postmate, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(postmate)) [id => postmate, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:200 Processing TsIdentLibrarySimple(postmate) [id => postmate, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:201 Processing TsIdentLibrarySimple(postmate) [id => postmate, phase => typescript] 
 [info ] PreferTypeAlias.scala:122 Could not simplify Postmate to function type alias because of circular references Vector(TsIdentNamespace(Postmate)) [id => postmate, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(postmate) / TsDeclInterface(Postmate))] 
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => postmate, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(postmate) / TsDeclNamespace(Postmate) / TsDeclInterface(Model))] 
 [debug] PhaseRunner.scala:82 Success [id => postmate, phase => typescript] 

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react/dist/commonjs/elements/Placeholder/PlaceholderImage", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: semanticDashUiDashReactLib.distCommonjsElementsPlaceholderPlaceholderImageMod.PlaceholderImageComponent = js.native
+  val default: PlaceholderImageComponent = js.native
 }
 

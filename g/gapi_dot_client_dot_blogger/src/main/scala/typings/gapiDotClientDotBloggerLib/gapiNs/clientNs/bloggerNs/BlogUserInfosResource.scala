@@ -12,13 +12,8 @@ trait BlogUserInfosResource extends js.Object {
 
 object BlogUserInfosResource {
   @scala.inline
-  def apply(
-    get: js.Function1[
-      gapiDotClientDotBloggerLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BlogUserInfo]
-    ]
-  ): BlogUserInfosResource = {
-    val __obj = js.Dynamic.literal(get = get)
+  def apply(get: gapiDotClientDotBloggerLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[BlogUserInfo]): BlogUserInfosResource = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[BlogUserInfosResource]
   }

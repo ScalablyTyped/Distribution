@@ -15,12 +15,12 @@ trait Delegator extends js.Object {
 object Delegator {
   @scala.inline
   def apply(
-    access: js.Function1[java.lang.String, Delegator],
-    getter: js.Function1[java.lang.String, Delegator],
-    method: js.Function1[java.lang.String, Delegator],
-    setter: js.Function1[java.lang.String, Delegator]
+    access: java.lang.String => Delegator,
+    getter: java.lang.String => Delegator,
+    method: java.lang.String => Delegator,
+    setter: java.lang.String => Delegator
   ): Delegator = {
-    val __obj = js.Dynamic.literal(access = access, getter = getter, method = method, setter = setter)
+    val __obj = js.Dynamic.literal(access = js.Any.fromFunction1(access), getter = js.Any.fromFunction1(getter), method = js.Any.fromFunction1(method), setter = js.Any.fromFunction1(setter))
   
     __obj.asInstanceOf[Delegator]
   }

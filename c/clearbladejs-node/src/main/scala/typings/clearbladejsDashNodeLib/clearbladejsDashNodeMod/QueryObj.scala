@@ -36,29 +36,29 @@ object QueryObj {
   def apply(
     OR: js.Array[Query],
     URI: java.lang.String,
-    ascending: js.Function1[java.lang.String, Query],
-    descending: js.Function1[java.lang.String, Query],
+    ascending: java.lang.String => Query,
+    descending: java.lang.String => Query,
     endpoint: java.lang.String,
-    equalTo: js.Function2[java.lang.String, QueryValue, Query],
-    fetch: js.Function1[CbCallback, scala.Unit],
-    greaterThan: js.Function2[java.lang.String, QueryValue, Query],
-    greaterThanEqualTo: js.Function2[java.lang.String, QueryValue, Query],
-    lessThan: js.Function2[java.lang.String, QueryValue, Query],
-    lessThanEqualTo: js.Function2[java.lang.String, QueryValue, Query],
+    equalTo: (java.lang.String, QueryValue) => Query,
+    fetch: CbCallback => scala.Unit,
+    greaterThan: (java.lang.String, QueryValue) => Query,
+    greaterThanEqualTo: (java.lang.String, QueryValue) => Query,
+    lessThan: (java.lang.String, QueryValue) => Query,
+    lessThanEqualTo: (java.lang.String, QueryValue) => Query,
     limit: scala.Double,
-    matches: js.Function2[java.lang.String, java.lang.String, Query],
-    notEqualTo: js.Function2[java.lang.String, QueryValue, Query],
+    matches: (java.lang.String, java.lang.String) => Query,
+    notEqualTo: (java.lang.String, QueryValue) => Query,
     offset: scala.Double,
-    or: js.Function1[QueryObj, Query],
+    or: QueryObj => Query,
     query: Query,
-    remove: js.Function1[CbCallback, scala.Unit],
-    setPage: js.Function2[scala.Double, scala.Double, Query],
+    remove: CbCallback => scala.Unit,
+    setPage: (scala.Double, scala.Double) => Query,
     systemKey: java.lang.String,
     systemSecret: java.lang.String,
-    update: js.Function2[js.Object, CbCallback, scala.Unit],
+    update: (js.Object, CbCallback) => scala.Unit,
     user: APIUser
   ): QueryObj = {
-    val __obj = js.Dynamic.literal(OR = OR, URI = URI, ascending = ascending, descending = descending, endpoint = endpoint, equalTo = equalTo, fetch = fetch, greaterThan = greaterThan, greaterThanEqualTo = greaterThanEqualTo, lessThan = lessThan, lessThanEqualTo = lessThanEqualTo, limit = limit, matches = matches, notEqualTo = notEqualTo, offset = offset, or = or, query = query, remove = remove, setPage = setPage, systemKey = systemKey, systemSecret = systemSecret, update = update, user = user)
+    val __obj = js.Dynamic.literal(OR = OR, URI = URI, ascending = js.Any.fromFunction1(ascending), descending = js.Any.fromFunction1(descending), endpoint = endpoint, equalTo = js.Any.fromFunction2(equalTo), fetch = js.Any.fromFunction1(fetch), greaterThan = js.Any.fromFunction2(greaterThan), greaterThanEqualTo = js.Any.fromFunction2(greaterThanEqualTo), lessThan = js.Any.fromFunction2(lessThan), lessThanEqualTo = js.Any.fromFunction2(lessThanEqualTo), limit = limit, matches = js.Any.fromFunction2(matches), notEqualTo = js.Any.fromFunction2(notEqualTo), offset = offset, or = js.Any.fromFunction1(or), query = query, remove = js.Any.fromFunction1(remove), setPage = js.Any.fromFunction2(setPage), systemKey = systemKey, systemSecret = systemSecret, update = js.Any.fromFunction2(update), user = user)
   
     __obj.asInstanceOf[QueryObj]
   }

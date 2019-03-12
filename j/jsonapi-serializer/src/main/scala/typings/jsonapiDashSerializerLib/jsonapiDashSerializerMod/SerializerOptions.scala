@@ -41,7 +41,7 @@ object SerializerOptions {
     relationshipLinks: js.Object = null,
     relationshipMeta: js.Object = null,
     topLevelLinks: js.Array[java.lang.String] | js.Array[js.Function0[scala.Unit]] = null,
-    transform: js.Function0[scala.Unit] = null,
+    transform: () => scala.Unit = null,
     typeForAttribute: TypeForAttribute = null
   ): SerializerOptions = {
     val __obj = js.Dynamic.literal()
@@ -59,7 +59,7 @@ object SerializerOptions {
     if (relationshipLinks != null) __obj.updateDynamic("relationshipLinks")(relationshipLinks)
     if (relationshipMeta != null) __obj.updateDynamic("relationshipMeta")(relationshipMeta)
     if (topLevelLinks != null) __obj.updateDynamic("topLevelLinks")(topLevelLinks.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction0(transform))
     if (typeForAttribute != null) __obj.updateDynamic("typeForAttribute")(typeForAttribute)
     __obj.asInstanceOf[SerializerOptions]
   }

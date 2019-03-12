@@ -30,10 +30,10 @@ object RuntimeOptions {
     highlight: js.Array[stdLib.Date],
     itemName: js.Array[java.lang.String],
     legendMargin: js.Array[scala.Double],
-    afterLoad: js.Function0[scala.Unit] = null,
-    afterLoadData: js.Function1[/* data */ js.Any, DataFormat] = null,
-    afterLoadNextDomain: js.Function1[/* date */ stdLib.Date, scala.Unit] = null,
-    afterLoadPreviousDomain: js.Function1[/* date */ stdLib.Date, scala.Unit] = null,
+    afterLoad: () => scala.Unit = null,
+    afterLoadData: /* data */ js.Any => DataFormat = null,
+    afterLoadNextDomain: /* date */ stdLib.Date => scala.Unit = null,
+    afterLoadPreviousDomain: /* date */ stdLib.Date => scala.Unit = null,
     animationDuration: scala.Int | scala.Double = null,
     cellPadding: scala.Int | scala.Double = null,
     cellRadius: scala.Int | scala.Double = null,
@@ -61,10 +61,10 @@ object RuntimeOptions {
     maxDate: stdLib.Date = null,
     minDate: stdLib.Date = null,
     nextSelector: java.lang.String | stdLib.HTMLElement = null,
-    onClick: js.Function2[/* date */ stdLib.Date, /* value */ scala.Double, scala.Unit] = null,
-    onComplete: js.Function0[scala.Unit] = null,
-    onMaxDomainReached: js.Function1[/* reached */ scala.Boolean, scala.Unit] = null,
-    onMinDomainReached: js.Function1[/* reached */ scala.Boolean, scala.Unit] = null,
+    onClick: (/* date */ stdLib.Date, /* value */ scala.Double) => scala.Unit = null,
+    onComplete: () => scala.Unit = null,
+    onMaxDomainReached: /* reached */ scala.Boolean => scala.Unit = null,
+    onMinDomainReached: /* reached */ scala.Boolean => scala.Unit = null,
     previousSelector: java.lang.String | stdLib.HTMLElement = null,
     range: scala.Int | scala.Double = null,
     rowLimit: scala.Int | scala.Double = null,
@@ -78,10 +78,10 @@ object RuntimeOptions {
     weekStartOnMonday: js.UndefOr[scala.Boolean] = js.undefined
   ): RuntimeOptions = {
     val __obj = js.Dynamic.literal(domainMargin = domainMargin, highlight = highlight, itemName = itemName, legendMargin = legendMargin)
-    if (afterLoad != null) __obj.updateDynamic("afterLoad")(afterLoad)
-    if (afterLoadData != null) __obj.updateDynamic("afterLoadData")(afterLoadData)
-    if (afterLoadNextDomain != null) __obj.updateDynamic("afterLoadNextDomain")(afterLoadNextDomain)
-    if (afterLoadPreviousDomain != null) __obj.updateDynamic("afterLoadPreviousDomain")(afterLoadPreviousDomain)
+    if (afterLoad != null) __obj.updateDynamic("afterLoad")(js.Any.fromFunction0(afterLoad))
+    if (afterLoadData != null) __obj.updateDynamic("afterLoadData")(js.Any.fromFunction1(afterLoadData))
+    if (afterLoadNextDomain != null) __obj.updateDynamic("afterLoadNextDomain")(js.Any.fromFunction1(afterLoadNextDomain))
+    if (afterLoadPreviousDomain != null) __obj.updateDynamic("afterLoadPreviousDomain")(js.Any.fromFunction1(afterLoadPreviousDomain))
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (cellPadding != null) __obj.updateDynamic("cellPadding")(cellPadding.asInstanceOf[js.Any])
     if (cellRadius != null) __obj.updateDynamic("cellRadius")(cellRadius.asInstanceOf[js.Any])
@@ -109,10 +109,10 @@ object RuntimeOptions {
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
     if (minDate != null) __obj.updateDynamic("minDate")(minDate)
     if (nextSelector != null) __obj.updateDynamic("nextSelector")(nextSelector.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
-    if (onMaxDomainReached != null) __obj.updateDynamic("onMaxDomainReached")(onMaxDomainReached)
-    if (onMinDomainReached != null) __obj.updateDynamic("onMinDomainReached")(onMinDomainReached)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
+    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction0(onComplete))
+    if (onMaxDomainReached != null) __obj.updateDynamic("onMaxDomainReached")(js.Any.fromFunction1(onMaxDomainReached))
+    if (onMinDomainReached != null) __obj.updateDynamic("onMinDomainReached")(js.Any.fromFunction1(onMinDomainReached))
     if (previousSelector != null) __obj.updateDynamic("previousSelector")(previousSelector.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (rowLimit != null) __obj.updateDynamic("rowLimit")(rowLimit.asInstanceOf[js.Any])

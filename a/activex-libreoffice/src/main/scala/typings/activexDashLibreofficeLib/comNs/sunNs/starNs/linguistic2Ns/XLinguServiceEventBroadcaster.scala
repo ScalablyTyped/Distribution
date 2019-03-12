@@ -33,13 +33,13 @@ trait XLinguServiceEventBroadcaster
 object XLinguServiceEventBroadcaster {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addLinguServiceEventListener: js.Function1[XLinguServiceEventListener, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeLinguServiceEventListener: js.Function1[XLinguServiceEventListener, scala.Boolean]
+    acquire: () => scala.Unit,
+    addLinguServiceEventListener: XLinguServiceEventListener => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeLinguServiceEventListener: XLinguServiceEventListener => scala.Boolean
   ): XLinguServiceEventBroadcaster = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addLinguServiceEventListener = addLinguServiceEventListener, queryInterface = queryInterface, release = release, removeLinguServiceEventListener = removeLinguServiceEventListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addLinguServiceEventListener = js.Any.fromFunction1(addLinguServiceEventListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeLinguServiceEventListener = js.Any.fromFunction1(removeLinguServiceEventListener))
   
     __obj.asInstanceOf[XLinguServiceEventBroadcaster]
   }

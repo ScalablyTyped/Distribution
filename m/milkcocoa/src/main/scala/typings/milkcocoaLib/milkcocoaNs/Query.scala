@@ -16,12 +16,12 @@ trait Query extends js.Object {
 object Query {
   @scala.inline
   def apply(
-    done: js.Function1[js.Function1[/* data */ js.Any, scala.Unit], scala.Unit],
-    limit: js.Function1[scala.Double, Query],
-    skip: js.Function1[scala.Double, Query],
-    sort: js.Function1[java.lang.String, Query]
+    done: js.Function1[/* data */ js.Any, scala.Unit] => scala.Unit,
+    limit: scala.Double => Query,
+    skip: scala.Double => Query,
+    sort: java.lang.String => Query
   ): Query = {
-    val __obj = js.Dynamic.literal(done = done, limit = limit, skip = skip, sort = sort)
+    val __obj = js.Dynamic.literal(done = js.Any.fromFunction1(done), limit = js.Any.fromFunction1(limit), skip = js.Any.fromFunction1(skip), sort = js.Any.fromFunction1(sort))
   
     __obj.asInstanceOf[Query]
   }

@@ -51,15 +51,15 @@ trait ITransformableScale extends js.Object {
 object ITransformableScale {
   @scala.inline
   def apply(
-    getTransformationDomain: js.Function0[js.Tuple2[scala.Double, scala.Double]],
-    getTransformationExtent: js.Function0[js.Tuple2[scala.Double, scala.Double]],
-    invertedTransformation: js.Function1[scala.Double, scala.Double],
-    pan: js.Function1[scala.Double, scala.Unit],
-    scaleTransformation: js.Function1[scala.Double, scala.Double],
-    setTransformationDomain: js.Function1[js.Tuple2[scala.Double, scala.Double], scala.Unit],
-    zoom: js.Function2[scala.Double, scala.Double, scala.Unit]
+    getTransformationDomain: () => js.Tuple2[scala.Double, scala.Double],
+    getTransformationExtent: () => js.Tuple2[scala.Double, scala.Double],
+    invertedTransformation: scala.Double => scala.Double,
+    pan: scala.Double => scala.Unit,
+    scaleTransformation: scala.Double => scala.Double,
+    setTransformationDomain: js.Tuple2[scala.Double, scala.Double] => scala.Unit,
+    zoom: (scala.Double, scala.Double) => scala.Unit
   ): ITransformableScale = {
-    val __obj = js.Dynamic.literal(getTransformationDomain = getTransformationDomain, getTransformationExtent = getTransformationExtent, invertedTransformation = invertedTransformation, pan = pan, scaleTransformation = scaleTransformation, setTransformationDomain = setTransformationDomain, zoom = zoom)
+    val __obj = js.Dynamic.literal(getTransformationDomain = js.Any.fromFunction0(getTransformationDomain), getTransformationExtent = js.Any.fromFunction0(getTransformationExtent), invertedTransformation = js.Any.fromFunction1(invertedTransformation), pan = js.Any.fromFunction1(pan), scaleTransformation = js.Any.fromFunction1(scaleTransformation), setTransformationDomain = js.Any.fromFunction1(setTransformationDomain), zoom = js.Any.fromFunction2(zoom))
   
     __obj.asInstanceOf[ITransformableScale]
   }

@@ -50,30 +50,30 @@ trait Colorer
 object Colorer {
   @scala.inline
   def apply(
-    _setColorCode: js.Function1[java.lang.String, Colorer],
-    black: js.Function0[Cursor],
-    blue: js.Function0[Cursor],
-    brightBlack: js.Function0[Cursor],
-    brightBlue: js.Function0[Cursor],
-    brightCyan: js.Function0[Cursor],
-    brightGreen: js.Function0[Cursor],
-    brightMagenta: js.Function0[Cursor],
-    brightRed: js.Function0[Cursor],
-    brightWhite: js.Function0[Cursor],
-    brightYellow: js.Function0[Cursor],
-    cyan: js.Function0[Cursor],
-    green: js.Function0[Cursor],
-    grey: js.Function0[Cursor],
-    hex: js.Function1[java.lang.String, Cursor],
-    magenta: js.Function0[Cursor],
-    red: js.Function0[Cursor],
-    reset: js.Function0[Cursor],
-    rgb: js.Function3[scala.Double, scala.Double, scala.Double, Cursor],
-    white: js.Function0[Cursor],
-    yellow: js.Function0[Cursor],
+    _setColorCode: java.lang.String => Colorer,
+    black: () => Cursor,
+    blue: () => Cursor,
+    brightBlack: () => Cursor,
+    brightBlue: () => Cursor,
+    brightCyan: () => Cursor,
+    brightGreen: () => Cursor,
+    brightMagenta: () => Cursor,
+    brightRed: () => Cursor,
+    brightWhite: () => Cursor,
+    brightYellow: () => Cursor,
+    cyan: () => Cursor,
+    green: () => Cursor,
+    grey: () => Cursor,
+    hex: java.lang.String => Cursor,
+    magenta: () => Cursor,
+    red: () => Cursor,
+    reset: () => Cursor,
+    rgb: (scala.Double, scala.Double, scala.Double) => Cursor,
+    white: () => Cursor,
+    yellow: () => Cursor,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ js.Any, Cursor | Colorer]] = null
   ): Colorer = {
-    val __obj = js.Dynamic.literal(_setColorCode = _setColorCode, black = black, blue = blue, brightBlack = brightBlack, brightBlue = brightBlue, brightCyan = brightCyan, brightGreen = brightGreen, brightMagenta = brightMagenta, brightRed = brightRed, brightWhite = brightWhite, brightYellow = brightYellow, cyan = cyan, green = green, grey = grey, hex = hex, magenta = magenta, red = red, reset = reset, rgb = rgb, white = white, yellow = yellow)
+    val __obj = js.Dynamic.literal(_setColorCode = js.Any.fromFunction1(_setColorCode), black = js.Any.fromFunction0(black), blue = js.Any.fromFunction0(blue), brightBlack = js.Any.fromFunction0(brightBlack), brightBlue = js.Any.fromFunction0(brightBlue), brightCyan = js.Any.fromFunction0(brightCyan), brightGreen = js.Any.fromFunction0(brightGreen), brightMagenta = js.Any.fromFunction0(brightMagenta), brightRed = js.Any.fromFunction0(brightRed), brightWhite = js.Any.fromFunction0(brightWhite), brightYellow = js.Any.fromFunction0(brightYellow), cyan = js.Any.fromFunction0(cyan), green = js.Any.fromFunction0(green), grey = js.Any.fromFunction0(grey), hex = js.Any.fromFunction1(hex), magenta = js.Any.fromFunction0(magenta), red = js.Any.fromFunction0(red), reset = js.Any.fromFunction0(reset), rgb = js.Any.fromFunction3(rgb), white = js.Any.fromFunction0(white), yellow = js.Any.fromFunction0(yellow))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Colorer]
   }

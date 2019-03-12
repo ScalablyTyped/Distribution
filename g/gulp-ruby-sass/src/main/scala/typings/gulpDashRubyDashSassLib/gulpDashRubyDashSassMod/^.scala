@@ -14,6 +14,6 @@ object ^ extends js.Object {
     * @param {Options} options - Additional processing rules/options
     */
   def apply(source: java.lang.String): nodeLib.NodeJSNs.ReadableStream = js.native
-  def apply(source: java.lang.String, options: gulpDashRubyDashSassLib.gulpDashRubyDashSassMod.Options): nodeLib.NodeJSNs.ReadableStream = js.native
+  def apply(source: java.lang.String, options: Options): nodeLib.NodeJSNs.ReadableStream = js.native
 }
 

@@ -197,14 +197,14 @@ object firestoreNs extends js.Object {
           /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot, 
           scala.Unit
         ],
-      onError: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+      onError: js.Function1[/* error */ stdLib.Error, scala.Unit]
     ): js.Function0[scala.Unit] = js.native
     def onSnapshot(
       onNext: js.Function1[
           /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot, 
           scala.Unit
         ],
-      onError: js.Function1[/* error */ nodeLib.Error, scala.Unit],
+      onError: js.Function1[/* error */ stdLib.Error, scala.Unit],
       onCompletion: js.Function0[scala.Unit]
     ): js.Function0[scala.Unit] = js.native
     /**
@@ -253,7 +253,7 @@ object firestoreNs extends js.Object {
           /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot, 
           scala.Unit
         ],
-      onError: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+      onError: js.Function1[/* error */ stdLib.Error, scala.Unit]
     ): js.Function0[scala.Unit] = js.native
     def onSnapshot(
       options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotListenOptions,
@@ -261,7 +261,7 @@ object firestoreNs extends js.Object {
           /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot, 
           scala.Unit
         ],
-      onError: js.Function1[/* error */ nodeLib.Error, scala.Unit],
+      onError: js.Function1[/* error */ stdLib.Error, scala.Unit],
       onCompletion: js.Function0[scala.Unit]
     ): js.Function0[scala.Unit] = js.native
     /**
@@ -715,14 +715,14 @@ object firestoreNs extends js.Object {
           /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot, 
           scala.Unit
         ],
-      onError: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+      onError: js.Function1[/* error */ stdLib.Error, scala.Unit]
     ): js.Function0[scala.Unit] = js.native
     def onSnapshot(
       onNext: js.Function1[
           /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot, 
           scala.Unit
         ],
-      onError: js.Function1[/* error */ nodeLib.Error, scala.Unit],
+      onError: js.Function1[/* error */ stdLib.Error, scala.Unit],
       onCompletion: js.Function0[scala.Unit]
     ): js.Function0[scala.Unit] = js.native
     /**
@@ -773,7 +773,7 @@ object firestoreNs extends js.Object {
           /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot, 
           scala.Unit
         ],
-      onError: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+      onError: js.Function1[/* error */ stdLib.Error, scala.Unit]
     ): js.Function0[scala.Unit] = js.native
     def onSnapshot(
       options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotListenOptions,
@@ -781,7 +781,7 @@ object firestoreNs extends js.Object {
           /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot, 
           scala.Unit
         ],
-      onError: js.Function1[/* error */ nodeLib.Error, scala.Unit],
+      onError: js.Function1[/* error */ stdLib.Error, scala.Unit],
       onCompletion: js.Function0[scala.Unit]
     ): js.Function0[scala.Unit] = js.native
     def orderBy(fieldPath: firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldPath): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query = js.native
@@ -872,7 +872,7 @@ object firestoreNs extends js.Object {
   @js.native
   class QuerySnapshot protected () extends js.Object {
     /** An array of all the documents in the `QuerySnapshot`. */
-    val docs: coreDashJsLib.Array[firebaseLib.firebaseMod.firebaseNs.firestoreNs.QueryDocumentSnapshot] = js.native
+    val docs: js.Array[firebaseLib.firebaseMod.firebaseNs.firestoreNs.QueryDocumentSnapshot] = js.native
     /** True if there are no documents in the `QuerySnapshot`. */
     val empty: scala.Boolean = js.native
     /**
@@ -895,8 +895,8 @@ object firestoreNs extends js.Object {
       * changes (i.e. only `DocumentSnapshot.metadata` changed) should trigger
       * snapshot events.
       */
-    def docChanges(): coreDashJsLib.Array[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentChange] = js.native
-    def docChanges(options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotListenOptions): coreDashJsLib.Array[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentChange] = js.native
+    def docChanges(): js.Array[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentChange] = js.native
+    def docChanges(options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotListenOptions): js.Array[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentChange] = js.native
     /**
       * Enumerates all of the documents in the `QuerySnapshot`.
       *
@@ -939,7 +939,7 @@ object firestoreNs extends js.Object {
       * untouched.
       */
     val mergeFields: js.UndefOr[
-        coreDashJsLib.Array[java.lang.String | firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldPath]
+        js.Array[java.lang.String | firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldPath]
       ] = js.undefined
   }
   
@@ -1067,7 +1067,7 @@ object firestoreNs extends js.Object {
       * @return JavaScript `Date` object representing the same point in time as
       *     this `Timestamp`, with millisecond precision.
       */
-    def toDate(): coreDashJsLib.Date = js.native
+    def toDate(): stdLib.Date = js.native
     /**
       * Convert a timestamp to a numeric timestamp (in milliseconds since epoch).
       * This operation causes a loss of precision.
@@ -1320,7 +1320,7 @@ object firestoreNs extends js.Object {
       * @return A new `Timestamp` representing the same point in time as the given
       *     date.
       */
-    def fromDate(date: coreDashJsLib.Date): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Timestamp = js.native
+    def fromDate(date: stdLib.Date): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Timestamp = js.native
     /**
       * Creates a new timestamp from the given number of milliseconds.
       *

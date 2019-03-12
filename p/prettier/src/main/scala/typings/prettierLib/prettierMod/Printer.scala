@@ -41,37 +41,25 @@ trait Printer extends js.Object {
 object Printer {
   @scala.inline
   def apply(
-    print: js.Function3[FastPath[_], ParserOptions, js.Function1[/* path */ FastPath[_], Doc], Doc],
-    canAttachComment: js.Function1[/* node */ js.Any, scala.Boolean] = null,
-    embed: js.Function4[
-      /* path */ FastPath[_], 
-      /* print */ js.Function1[/* path */ FastPath[_], Doc], 
-      /* textToDoc */ js.Function2[/* text */ java.lang.String, /* options */ Options, Doc], 
-      /* options */ ParserOptions, 
-      Doc | scala.Null
-    ] = null,
+    print: (FastPath[_], ParserOptions, js.Function1[/* path */ FastPath[_], Doc]) => Doc,
+    canAttachComment: /* node */ js.Any => scala.Boolean = null,
+    embed: (/* path */ FastPath[_], /* print */ js.Function1[/* path */ FastPath[_], Doc], /* textToDoc */ js.Function2[/* text */ java.lang.String, /* options */ Options, Doc], /* options */ ParserOptions) => Doc | scala.Null = null,
     handleComments: prettierLib.Anon_Ast = null,
-    hasPrettierIgnore: js.Function1[/* path */ FastPath[_], scala.Boolean] = null,
-    insertPragma: js.Function1[/* text */ java.lang.String, java.lang.String] = null,
-    massageAstNode: js.Function3[/* node */ js.Any, /* newNode */ js.Any, /* parent */ js.Any, _] = null,
-    printComments: js.Function4[
-      /* path */ FastPath[_], 
-      /* print */ js.Function1[/* path */ FastPath[_], Doc], 
-      /* options */ ParserOptions, 
-      /* needsSemi */ scala.Boolean, 
-      Doc
-    ] = null,
-    willPrintOwnComments: js.Function1[/* path */ FastPath[_], scala.Boolean] = null
+    hasPrettierIgnore: /* path */ FastPath[_] => scala.Boolean = null,
+    insertPragma: /* text */ java.lang.String => java.lang.String = null,
+    massageAstNode: (/* node */ js.Any, /* newNode */ js.Any, /* parent */ js.Any) => _ = null,
+    printComments: (/* path */ FastPath[_], /* print */ js.Function1[/* path */ FastPath[_], Doc], /* options */ ParserOptions, /* needsSemi */ scala.Boolean) => Doc = null,
+    willPrintOwnComments: /* path */ FastPath[_] => scala.Boolean = null
   ): Printer = {
-    val __obj = js.Dynamic.literal(print = print)
-    if (canAttachComment != null) __obj.updateDynamic("canAttachComment")(canAttachComment)
-    if (embed != null) __obj.updateDynamic("embed")(embed)
+    val __obj = js.Dynamic.literal(print = js.Any.fromFunction3(print))
+    if (canAttachComment != null) __obj.updateDynamic("canAttachComment")(js.Any.fromFunction1(canAttachComment))
+    if (embed != null) __obj.updateDynamic("embed")(js.Any.fromFunction4(embed))
     if (handleComments != null) __obj.updateDynamic("handleComments")(handleComments)
-    if (hasPrettierIgnore != null) __obj.updateDynamic("hasPrettierIgnore")(hasPrettierIgnore)
-    if (insertPragma != null) __obj.updateDynamic("insertPragma")(insertPragma)
-    if (massageAstNode != null) __obj.updateDynamic("massageAstNode")(massageAstNode)
-    if (printComments != null) __obj.updateDynamic("printComments")(printComments)
-    if (willPrintOwnComments != null) __obj.updateDynamic("willPrintOwnComments")(willPrintOwnComments)
+    if (hasPrettierIgnore != null) __obj.updateDynamic("hasPrettierIgnore")(js.Any.fromFunction1(hasPrettierIgnore))
+    if (insertPragma != null) __obj.updateDynamic("insertPragma")(js.Any.fromFunction1(insertPragma))
+    if (massageAstNode != null) __obj.updateDynamic("massageAstNode")(js.Any.fromFunction3(massageAstNode))
+    if (printComments != null) __obj.updateDynamic("printComments")(js.Any.fromFunction4(printComments))
+    if (willPrintOwnComments != null) __obj.updateDynamic("willPrintOwnComments")(js.Any.fromFunction1(willPrintOwnComments))
     __obj.asInstanceOf[Printer]
   }
 }

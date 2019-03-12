@@ -13,7 +13,7 @@ class Report protected () extends js.Object {
   var AllowDesignChanges: scala.Boolean = js.native
   var AllowLayoutView: scala.Boolean = js.native
   var AllowReportView: scala.Boolean = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   var AutoCenter: scala.Boolean = js.native
   var AutoResize: scala.Boolean = js.native
   var BorderStyle: scala.Double = js.native
@@ -70,7 +70,7 @@ class Report protected () extends js.Object {
   var MinButton: scala.Boolean = js.native
   var MinMaxButtons: scala.Double = js.native
   var Modal: scala.Boolean = js.native
-  val Module: Module = js.native
+  val Module: activexDashAccessLib.AccessNs.Module = js.native
   var MouseWheel: java.lang.String = js.native
   var MouseWheelMacro: java.lang.String = js.native
   var MoveLayout: scala.Boolean = js.native
@@ -150,7 +150,7 @@ class Report protected () extends js.Object {
   var PopUp: scala.Boolean = js.native
   var PrintCount: scala.Double = js.native
   var PrintSection: scala.Boolean = js.native
-  var Printer: Printer = js.native
+  var Printer: activexDashAccessLib.AccessNs.Printer = js.native
   @JSName("Properties")
   val Properties_Original: Properties = js.native
   var PrtDevMode: js.Any = js.native
@@ -160,7 +160,7 @@ class Report protected () extends js.Object {
   var RecordSource: java.lang.String = js.native
   var RecordSourceQualifier: java.lang.String = js.native
   var Recordset: activexDashDaoLib.DAONs.Recordset | activexDashAdodbLib.ADODBNs.Recordset | scala.Null = js.native
-  val Report: Report = js.native
+  val Report: activexDashAccessLib.AccessNs.Report = js.native
   var RibbonName: java.lang.String = js.native
   var ScaleHeight: scala.Double = js.native
   var ScaleLeft: scala.Double = js.native
@@ -200,7 +200,7 @@ class Report protected () extends js.Object {
   // tslint:disable-next-line:no-unnecessary-generics
   def Controls[T](Index: scala.Double): T = js.native
   def DefaultControl(ControlType: scala.Double): Control = js.native
-  def GroupLevel(Index: scala.Double): GroupLevel = js.native
+  def GroupLevel(Index: scala.Double): activexDashAccessLib.AccessNs.GroupLevel = js.native
   def Line(
     flags: scala.Double,
     x1: scala.Double,
@@ -219,8 +219,8 @@ class Report protected () extends js.Object {
   def Properties(Index: scala.Double): AccessProperty = js.native
   def Requery(): scala.Unit = js.native
   def Scale(flags: scala.Double, x1: scala.Double, y1: scala.Double, x2: scala.Double, y2: scala.Double): scala.Unit = js.native
-  def Section(Index: AcReportSection): Section = js.native
-  def Section(Index: java.lang.String): Section = js.native
+  def Section(Index: AcReportSection): activexDashAccessLib.AccessNs.Section = js.native
+  def Section(Index: java.lang.String): activexDashAccessLib.AccessNs.Section = js.native
   def SectionOld(Index: js.Any): Section = js.native
   def TextHeight(Expr: java.lang.String): scala.Double = js.native
   def TextWidth(Expr: java.lang.String): scala.Double = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Compilation
   extends tapableLib.tapableMod.Tapable {
-  var _modules: nodeLib.Map[_, _] = js.native
+  var _modules: stdLib.Map[_, _] = js.native
   var _preparedEntrypoints: js.Array[_] = js.native
   var additionalChunkAssets: js.Array[_] = js.native
   var assets: js.Any = js.native
@@ -21,14 +21,14 @@ trait Compilation
   var chunks: js.Array[_] = js.native
   var compiler: webpackLib.webpackMod.webpackNs.Compiler = js.native
   var contextDependencies: webpackLib.webpackMod.webpackNs.SortableSet[java.lang.String] = js.native
-  var contextTimestamps: nodeLib.Map[java.lang.String, scala.Double] = js.native
-  var dependencyFactories: nodeLib.Map[webpackLib.Anon_A, tapableLib.tapableMod.Tapable] = js.native
-  var dependencyTemplates: nodeLib.Map[webpackLib.Anon_A, tapableLib.tapableMod.Tapable] = js.native
+  var contextTimestamps: stdLib.Map[java.lang.String, scala.Double] = js.native
+  var dependencyFactories: stdLib.Map[webpackLib.Anon_A, tapableLib.tapableMod.Tapable] = js.native
+  var dependencyTemplates: stdLib.Map[webpackLib.Anon_A, tapableLib.tapableMod.Tapable] = js.native
   var entries: js.Array[_] = js.native
-  var entrypoints: nodeLib.Map[_, _] = js.native
+  var entrypoints: stdLib.Map[_, _] = js.native
   var errors: js.Array[_] = js.native
   var fileDependencies: webpackLib.webpackMod.webpackNs.SortableSet[java.lang.String] = js.native
-  var fileTimestamps: nodeLib.Map[java.lang.String, scala.Double] = js.native
+  var fileTimestamps: stdLib.Map[java.lang.String, scala.Double] = js.native
   var hash: js.UndefOr[java.lang.String] = js.native
   var hooks: CompilationHooks = js.native
   var hotUpdateChunkTemplate: HotUpdateChunkTemplate = js.native
@@ -37,8 +37,8 @@ trait Compilation
   var missingDependencies: webpackLib.webpackMod.webpackNs.SortableSet[java.lang.String] = js.native
   var moduleTemplates: webpackLib.Anon_Javascript = js.native
   var modules: js.Array[_] = js.native
-  var namedChunkGroups: nodeLib.Map[_, _] = js.native
-  var namedChunks: nodeLib.Map[_, _] = js.native
+  var namedChunkGroups: stdLib.Map[_, _] = js.native
+  var namedChunks: stdLib.Map[_, _] = js.native
   var nextFreeModuleIndex: js.Any = js.native
   var nextFreeModuleIndex2: js.Any = js.native
   var outputOptions: js.Any = js.native

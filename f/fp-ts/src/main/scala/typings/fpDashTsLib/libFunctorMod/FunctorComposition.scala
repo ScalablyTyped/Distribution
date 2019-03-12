@@ -12,13 +12,9 @@ trait FunctorComposition[F, G] extends js.Object {
 object FunctorComposition {
   @scala.inline
   def apply[F, G](
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]]
-    ]
+    map: (fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]]
   ): FunctorComposition[F, G] = {
-    val __obj = js.Dynamic.literal(map = map)
+    val __obj = js.Dynamic.literal(map = js.Any.fromFunction2(map))
   
     __obj.asInstanceOf[FunctorComposition[F, G]]
   }

@@ -20,12 +20,12 @@ object ThreadRowActionButtonDescriptor {
     `type`: inboxsdkLib.inboxsdkLibStrings.LINK,
     url: java.lang.String,
     className: java.lang.String = null,
-    onClick: js.Function1[/* event */ js.Any, scala.Unit] = null
+    onClick: /* event */ js.Any => scala.Unit = null
   ): ThreadRowActionButtonDescriptor = {
     val __obj = js.Dynamic.literal(title = title, url = url)
     __obj.updateDynamic("type")(`type`)
     if (className != null) __obj.updateDynamic("className")(className)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     __obj.asInstanceOf[ThreadRowActionButtonDescriptor]
   }
 }

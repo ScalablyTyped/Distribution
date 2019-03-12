@@ -1103,11 +1103,11 @@ object PinpointNs extends js.Object {
   }
   
   trait CreateAppRequest extends js.Object {
-    var CreateApplicationRequest: CreateApplicationRequest
+    var CreateApplicationRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.CreateApplicationRequest
   }
   
   trait CreateAppResponse extends js.Object {
-    var ApplicationResponse: ApplicationResponse
+    var ApplicationResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.ApplicationResponse
   }
   
   trait CreateApplicationRequest extends js.Object {
@@ -1126,11 +1126,11 @@ object PinpointNs extends js.Object {
       * The unique ID of your Amazon Pinpoint application.
       */
     var ApplicationId: __string
-    var WriteCampaignRequest: WriteCampaignRequest
+    var WriteCampaignRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.WriteCampaignRequest
   }
   
   trait CreateCampaignResponse extends js.Object {
-    var CampaignResponse: CampaignResponse
+    var CampaignResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.CampaignResponse
   }
   
   trait CreateExportJobRequest extends js.Object {
@@ -1138,11 +1138,11 @@ object PinpointNs extends js.Object {
       * The unique ID of your Amazon Pinpoint application.
       */
     var ApplicationId: __string
-    var ExportJobRequest: ExportJobRequest
+    var ExportJobRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.ExportJobRequest
   }
   
   trait CreateExportJobResponse extends js.Object {
-    var ExportJobResponse: ExportJobResponse
+    var ExportJobResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.ExportJobResponse
   }
   
   trait CreateImportJobRequest extends js.Object {
@@ -1150,11 +1150,11 @@ object PinpointNs extends js.Object {
       * The unique ID of your Amazon Pinpoint application.
       */
     var ApplicationId: __string
-    var ImportJobRequest: ImportJobRequest
+    var ImportJobRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.ImportJobRequest
   }
   
   trait CreateImportJobResponse extends js.Object {
-    var ImportJobResponse: ImportJobResponse
+    var ImportJobResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.ImportJobResponse
   }
   
   trait CreateSegmentRequest extends js.Object {
@@ -1162,11 +1162,11 @@ object PinpointNs extends js.Object {
       * The unique ID of your Amazon Pinpoint application.
       */
     var ApplicationId: __string
-    var WriteSegmentRequest: WriteSegmentRequest
+    var WriteSegmentRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.WriteSegmentRequest
   }
   
   trait CreateSegmentResponse extends js.Object {
-    var SegmentResponse: SegmentResponse
+    var SegmentResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.SegmentResponse
   }
   
   trait DefaultMessage extends js.Object {
@@ -1219,7 +1219,7 @@ object PinpointNs extends js.Object {
   }
   
   trait DeleteAdmChannelResponse extends js.Object {
-    var ADMChannelResponse: ADMChannelResponse
+    var ADMChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.ADMChannelResponse
   }
   
   trait DeleteApnsChannelRequest extends js.Object {
@@ -1230,7 +1230,7 @@ object PinpointNs extends js.Object {
   }
   
   trait DeleteApnsChannelResponse extends js.Object {
-    var APNSChannelResponse: APNSChannelResponse
+    var APNSChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.APNSChannelResponse
   }
   
   trait DeleteApnsSandboxChannelRequest extends js.Object {
@@ -1241,7 +1241,7 @@ object PinpointNs extends js.Object {
   }
   
   trait DeleteApnsSandboxChannelResponse extends js.Object {
-    var APNSSandboxChannelResponse: APNSSandboxChannelResponse
+    var APNSSandboxChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.APNSSandboxChannelResponse
   }
   
   trait DeleteApnsVoipChannelRequest extends js.Object {
@@ -1252,7 +1252,7 @@ object PinpointNs extends js.Object {
   }
   
   trait DeleteApnsVoipChannelResponse extends js.Object {
-    var APNSVoipChannelResponse: APNSVoipChannelResponse
+    var APNSVoipChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.APNSVoipChannelResponse
   }
   
   trait DeleteApnsVoipSandboxChannelRequest extends js.Object {
@@ -1263,7 +1263,7 @@ object PinpointNs extends js.Object {
   }
   
   trait DeleteApnsVoipSandboxChannelResponse extends js.Object {
-    var APNSVoipSandboxChannelResponse: APNSVoipSandboxChannelResponse
+    var APNSVoipSandboxChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.APNSVoipSandboxChannelResponse
   }
   
   trait DeleteAppRequest extends js.Object {
@@ -1274,7 +1274,7 @@ object PinpointNs extends js.Object {
   }
   
   trait DeleteAppResponse extends js.Object {
-    var ApplicationResponse: ApplicationResponse
+    var ApplicationResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.ApplicationResponse
   }
   
   trait DeleteBaiduChannelRequest extends js.Object {
@@ -1285,7 +1285,7 @@ object PinpointNs extends js.Object {
   }
   
   trait DeleteBaiduChannelResponse extends js.Object {
-    var BaiduChannelResponse: BaiduChannelResponse
+    var BaiduChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.BaiduChannelResponse
   }
   
   trait DeleteCampaignRequest extends js.Object {
@@ -1300,7 +1300,7 @@ object PinpointNs extends js.Object {
   }
   
   trait DeleteCampaignResponse extends js.Object {
-    var CampaignResponse: CampaignResponse
+    var CampaignResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.CampaignResponse
   }
   
   trait DeleteEmailChannelRequest extends js.Object {
@@ -1311,7 +1311,7 @@ object PinpointNs extends js.Object {
   }
   
   trait DeleteEmailChannelResponse extends js.Object {
-    var EmailChannelResponse: EmailChannelResponse
+    var EmailChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.EmailChannelResponse
   }
   
   trait DeleteEndpointRequest extends js.Object {
@@ -1326,7 +1326,7 @@ object PinpointNs extends js.Object {
   }
   
   trait DeleteEndpointResponse extends js.Object {
-    var EndpointResponse: EndpointResponse
+    var EndpointResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.EndpointResponse
   }
   
   trait DeleteEventStreamRequest extends js.Object {
@@ -1337,7 +1337,7 @@ object PinpointNs extends js.Object {
   }
   
   trait DeleteEventStreamResponse extends js.Object {
-    var EventStream: EventStream
+    var EventStream: awsDashSdkLib.clientsPinpointMod.PinpointNs.EventStream
   }
   
   trait DeleteGcmChannelRequest extends js.Object {
@@ -1348,7 +1348,7 @@ object PinpointNs extends js.Object {
   }
   
   trait DeleteGcmChannelResponse extends js.Object {
-    var GCMChannelResponse: GCMChannelResponse
+    var GCMChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.GCMChannelResponse
   }
   
   trait DeleteSegmentRequest extends js.Object {
@@ -1363,7 +1363,7 @@ object PinpointNs extends js.Object {
   }
   
   trait DeleteSegmentResponse extends js.Object {
-    var SegmentResponse: SegmentResponse
+    var SegmentResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.SegmentResponse
   }
   
   trait DeleteSmsChannelRequest extends js.Object {
@@ -1374,7 +1374,7 @@ object PinpointNs extends js.Object {
   }
   
   trait DeleteSmsChannelResponse extends js.Object {
-    var SMSChannelResponse: SMSChannelResponse
+    var SMSChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.SMSChannelResponse
   }
   
   trait DeleteUserEndpointsRequest extends js.Object {
@@ -1389,7 +1389,7 @@ object PinpointNs extends js.Object {
   }
   
   trait DeleteUserEndpointsResponse extends js.Object {
-    var EndpointsResponse: EndpointsResponse
+    var EndpointsResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.EndpointsResponse
   }
   
   trait DeleteVoiceChannelRequest extends js.Object {
@@ -1400,7 +1400,7 @@ object PinpointNs extends js.Object {
   }
   
   trait DeleteVoiceChannelResponse extends js.Object {
-    var VoiceChannelResponse: VoiceChannelResponse
+    var VoiceChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.VoiceChannelResponse
   }
   
   trait DirectMessageConfiguration extends js.Object {
@@ -2291,7 +2291,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetAdmChannelResponse extends js.Object {
-    var ADMChannelResponse: ADMChannelResponse
+    var ADMChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.ADMChannelResponse
   }
   
   trait GetApnsChannelRequest extends js.Object {
@@ -2302,7 +2302,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetApnsChannelResponse extends js.Object {
-    var APNSChannelResponse: APNSChannelResponse
+    var APNSChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.APNSChannelResponse
   }
   
   trait GetApnsSandboxChannelRequest extends js.Object {
@@ -2313,7 +2313,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetApnsSandboxChannelResponse extends js.Object {
-    var APNSSandboxChannelResponse: APNSSandboxChannelResponse
+    var APNSSandboxChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.APNSSandboxChannelResponse
   }
   
   trait GetApnsVoipChannelRequest extends js.Object {
@@ -2324,7 +2324,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetApnsVoipChannelResponse extends js.Object {
-    var APNSVoipChannelResponse: APNSVoipChannelResponse
+    var APNSVoipChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.APNSVoipChannelResponse
   }
   
   trait GetApnsVoipSandboxChannelRequest extends js.Object {
@@ -2335,7 +2335,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetApnsVoipSandboxChannelResponse extends js.Object {
-    var APNSVoipSandboxChannelResponse: APNSVoipSandboxChannelResponse
+    var APNSVoipSandboxChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.APNSVoipSandboxChannelResponse
   }
   
   trait GetAppRequest extends js.Object {
@@ -2346,7 +2346,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetAppResponse extends js.Object {
-    var ApplicationResponse: ApplicationResponse
+    var ApplicationResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.ApplicationResponse
   }
   
   trait GetApplicationSettingsRequest extends js.Object {
@@ -2357,7 +2357,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetApplicationSettingsResponse extends js.Object {
-    var ApplicationSettingsResource: ApplicationSettingsResource
+    var ApplicationSettingsResource: awsDashSdkLib.clientsPinpointMod.PinpointNs.ApplicationSettingsResource
   }
   
   trait GetAppsRequest extends js.Object {
@@ -2372,7 +2372,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetAppsResponse extends js.Object {
-    var ApplicationsResponse: ApplicationsResponse
+    var ApplicationsResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.ApplicationsResponse
   }
   
   trait GetBaiduChannelRequest extends js.Object {
@@ -2383,7 +2383,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetBaiduChannelResponse extends js.Object {
-    var BaiduChannelResponse: BaiduChannelResponse
+    var BaiduChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.BaiduChannelResponse
   }
   
   trait GetCampaignActivitiesRequest extends js.Object {
@@ -2406,7 +2406,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetCampaignActivitiesResponse extends js.Object {
-    var ActivitiesResponse: ActivitiesResponse
+    var ActivitiesResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.ActivitiesResponse
   }
   
   trait GetCampaignRequest extends js.Object {
@@ -2421,7 +2421,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetCampaignResponse extends js.Object {
-    var CampaignResponse: CampaignResponse
+    var CampaignResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.CampaignResponse
   }
   
   trait GetCampaignVersionRequest extends js.Object {
@@ -2440,7 +2440,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetCampaignVersionResponse extends js.Object {
-    var CampaignResponse: CampaignResponse
+    var CampaignResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.CampaignResponse
   }
   
   trait GetCampaignVersionsRequest extends js.Object {
@@ -2463,7 +2463,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetCampaignVersionsResponse extends js.Object {
-    var CampaignsResponse: CampaignsResponse
+    var CampaignsResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.CampaignsResponse
   }
   
   trait GetCampaignsRequest extends js.Object {
@@ -2482,7 +2482,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetCampaignsResponse extends js.Object {
-    var CampaignsResponse: CampaignsResponse
+    var CampaignsResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.CampaignsResponse
   }
   
   trait GetChannelsRequest extends js.Object {
@@ -2493,7 +2493,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetChannelsResponse extends js.Object {
-    var ChannelsResponse: ChannelsResponse
+    var ChannelsResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.ChannelsResponse
   }
   
   trait GetEmailChannelRequest extends js.Object {
@@ -2504,7 +2504,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetEmailChannelResponse extends js.Object {
-    var EmailChannelResponse: EmailChannelResponse
+    var EmailChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.EmailChannelResponse
   }
   
   trait GetEndpointRequest extends js.Object {
@@ -2519,7 +2519,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetEndpointResponse extends js.Object {
-    var EndpointResponse: EndpointResponse
+    var EndpointResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.EndpointResponse
   }
   
   trait GetEventStreamRequest extends js.Object {
@@ -2530,7 +2530,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetEventStreamResponse extends js.Object {
-    var EventStream: EventStream
+    var EventStream: awsDashSdkLib.clientsPinpointMod.PinpointNs.EventStream
   }
   
   trait GetExportJobRequest extends js.Object {
@@ -2545,7 +2545,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetExportJobResponse extends js.Object {
-    var ExportJobResponse: ExportJobResponse
+    var ExportJobResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.ExportJobResponse
   }
   
   trait GetExportJobsRequest extends js.Object {
@@ -2564,7 +2564,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetExportJobsResponse extends js.Object {
-    var ExportJobsResponse: ExportJobsResponse
+    var ExportJobsResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.ExportJobsResponse
   }
   
   trait GetGcmChannelRequest extends js.Object {
@@ -2575,7 +2575,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetGcmChannelResponse extends js.Object {
-    var GCMChannelResponse: GCMChannelResponse
+    var GCMChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.GCMChannelResponse
   }
   
   trait GetImportJobRequest extends js.Object {
@@ -2590,7 +2590,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetImportJobResponse extends js.Object {
-    var ImportJobResponse: ImportJobResponse
+    var ImportJobResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.ImportJobResponse
   }
   
   trait GetImportJobsRequest extends js.Object {
@@ -2609,7 +2609,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetImportJobsResponse extends js.Object {
-    var ImportJobsResponse: ImportJobsResponse
+    var ImportJobsResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.ImportJobsResponse
   }
   
   trait GetSegmentExportJobsRequest extends js.Object {
@@ -2632,7 +2632,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetSegmentExportJobsResponse extends js.Object {
-    var ExportJobsResponse: ExportJobsResponse
+    var ExportJobsResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.ExportJobsResponse
   }
   
   trait GetSegmentImportJobsRequest extends js.Object {
@@ -2655,7 +2655,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetSegmentImportJobsResponse extends js.Object {
-    var ImportJobsResponse: ImportJobsResponse
+    var ImportJobsResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.ImportJobsResponse
   }
   
   trait GetSegmentRequest extends js.Object {
@@ -2670,7 +2670,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetSegmentResponse extends js.Object {
-    var SegmentResponse: SegmentResponse
+    var SegmentResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.SegmentResponse
   }
   
   trait GetSegmentVersionRequest extends js.Object {
@@ -2689,7 +2689,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetSegmentVersionResponse extends js.Object {
-    var SegmentResponse: SegmentResponse
+    var SegmentResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.SegmentResponse
   }
   
   trait GetSegmentVersionsRequest extends js.Object {
@@ -2712,7 +2712,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetSegmentVersionsResponse extends js.Object {
-    var SegmentsResponse: SegmentsResponse
+    var SegmentsResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.SegmentsResponse
   }
   
   trait GetSegmentsRequest extends js.Object {
@@ -2731,7 +2731,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetSegmentsResponse extends js.Object {
-    var SegmentsResponse: SegmentsResponse
+    var SegmentsResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.SegmentsResponse
   }
   
   trait GetSmsChannelRequest extends js.Object {
@@ -2742,7 +2742,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetSmsChannelResponse extends js.Object {
-    var SMSChannelResponse: SMSChannelResponse
+    var SMSChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.SMSChannelResponse
   }
   
   trait GetUserEndpointsRequest extends js.Object {
@@ -2757,7 +2757,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetUserEndpointsResponse extends js.Object {
-    var EndpointsResponse: EndpointsResponse
+    var EndpointsResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.EndpointsResponse
   }
   
   trait GetVoiceChannelRequest extends js.Object {
@@ -2768,7 +2768,7 @@ object PinpointNs extends js.Object {
   }
   
   trait GetVoiceChannelResponse extends js.Object {
-    var VoiceChannelResponse: VoiceChannelResponse
+    var VoiceChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.VoiceChannelResponse
   }
   
   trait ImportJobRequest extends js.Object {
@@ -2929,7 +2929,7 @@ object PinpointNs extends js.Object {
   }
   
   trait ListTagsForResourceResponse extends js.Object {
-    var TagsModel: TagsModel
+    var TagsModel: awsDashSdkLib.clientsPinpointMod.PinpointNs.TagsModel
   }
   
   trait MapOfAddressConfiguration
@@ -3236,11 +3236,11 @@ object PinpointNs extends js.Object {
   }
   
   trait PhoneNumberValidateRequest extends js.Object {
-    var NumberValidateRequest: NumberValidateRequest
+    var NumberValidateRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.NumberValidateRequest
   }
   
   trait PhoneNumberValidateResponse extends js.Object {
-    var NumberValidateResponse: NumberValidateResponse
+    var NumberValidateResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.NumberValidateResponse
   }
   
   trait PublicEndpoint extends js.Object {
@@ -3298,11 +3298,11 @@ object PinpointNs extends js.Object {
       * The unique ID of your Amazon Pinpoint application.
       */
     var ApplicationId: __string
-    var WriteEventStream: WriteEventStream
+    var WriteEventStream: awsDashSdkLib.clientsPinpointMod.PinpointNs.WriteEventStream
   }
   
   trait PutEventStreamResponse extends js.Object {
-    var EventStream: EventStream
+    var EventStream: awsDashSdkLib.clientsPinpointMod.PinpointNs.EventStream
   }
   
   trait PutEventsRequest extends js.Object {
@@ -3310,11 +3310,11 @@ object PinpointNs extends js.Object {
       * The unique ID of your Amazon Pinpoint application.
       */
     var ApplicationId: __string
-    var EventsRequest: EventsRequest
+    var EventsRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.EventsRequest
   }
   
   trait PutEventsResponse extends js.Object {
-    var EventsResponse: EventsResponse
+    var EventsResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.EventsResponse
   }
   
   trait QuietTime extends js.Object {
@@ -3358,11 +3358,11 @@ object PinpointNs extends js.Object {
       * Type of attribute. Can be endpoint-custom-attributes, endpoint-custom-metrics, endpoint-user-attributes.
       */
     var AttributeType: __string
-    var UpdateAttributesRequest: UpdateAttributesRequest
+    var UpdateAttributesRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.UpdateAttributesRequest
   }
   
   trait RemoveAttributesResponse extends js.Object {
-    var AttributesResource: AttributesResource
+    var AttributesResource: awsDashSdkLib.clientsPinpointMod.PinpointNs.AttributesResource
   }
   
   trait SMSChannelRequest extends js.Object {
@@ -3752,11 +3752,11 @@ object PinpointNs extends js.Object {
       * The unique ID of your Amazon Pinpoint application.
       */
     var ApplicationId: __string
-    var MessageRequest: MessageRequest
+    var MessageRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.MessageRequest
   }
   
   trait SendMessagesResponse extends js.Object {
-    var MessageResponse: MessageResponse
+    var MessageResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.MessageResponse
   }
   
   trait SendUsersMessageRequest extends js.Object {
@@ -3798,11 +3798,11 @@ object PinpointNs extends js.Object {
       * The unique ID of your Amazon Pinpoint application.
       */
     var ApplicationId: __string
-    var SendUsersMessageRequest: SendUsersMessageRequest
+    var SendUsersMessageRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.SendUsersMessageRequest
   }
   
   trait SendUsersMessagesResponse extends js.Object {
-    var SendUsersMessageResponse: SendUsersMessageResponse
+    var SendUsersMessageResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.SendUsersMessageResponse
   }
   
   trait Session extends js.Object {
@@ -3865,7 +3865,7 @@ object PinpointNs extends js.Object {
   
   trait TagResourceRequest extends js.Object {
     var ResourceArn: __string
-    var TagsModel: TagsModel
+    var TagsModel: awsDashSdkLib.clientsPinpointMod.PinpointNs.TagsModel
   }
   
   trait TagsModel extends js.Object {
@@ -5658,7 +5658,7 @@ object PinpointNs extends js.Object {
   }
   
   trait UpdateAdmChannelRequest extends js.Object {
-    var ADMChannelRequest: ADMChannelRequest
+    var ADMChannelRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.ADMChannelRequest
     /**
       * The unique ID of your Amazon Pinpoint application.
       */
@@ -5666,11 +5666,11 @@ object PinpointNs extends js.Object {
   }
   
   trait UpdateAdmChannelResponse extends js.Object {
-    var ADMChannelResponse: ADMChannelResponse
+    var ADMChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.ADMChannelResponse
   }
   
   trait UpdateApnsChannelRequest extends js.Object {
-    var APNSChannelRequest: APNSChannelRequest
+    var APNSChannelRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.APNSChannelRequest
     /**
       * The unique ID of your Amazon Pinpoint application.
       */
@@ -5678,11 +5678,11 @@ object PinpointNs extends js.Object {
   }
   
   trait UpdateApnsChannelResponse extends js.Object {
-    var APNSChannelResponse: APNSChannelResponse
+    var APNSChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.APNSChannelResponse
   }
   
   trait UpdateApnsSandboxChannelRequest extends js.Object {
-    var APNSSandboxChannelRequest: APNSSandboxChannelRequest
+    var APNSSandboxChannelRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.APNSSandboxChannelRequest
     /**
       * The unique ID of your Amazon Pinpoint application.
       */
@@ -5690,11 +5690,11 @@ object PinpointNs extends js.Object {
   }
   
   trait UpdateApnsSandboxChannelResponse extends js.Object {
-    var APNSSandboxChannelResponse: APNSSandboxChannelResponse
+    var APNSSandboxChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.APNSSandboxChannelResponse
   }
   
   trait UpdateApnsVoipChannelRequest extends js.Object {
-    var APNSVoipChannelRequest: APNSVoipChannelRequest
+    var APNSVoipChannelRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.APNSVoipChannelRequest
     /**
       * The unique ID of your Amazon Pinpoint application.
       */
@@ -5702,11 +5702,11 @@ object PinpointNs extends js.Object {
   }
   
   trait UpdateApnsVoipChannelResponse extends js.Object {
-    var APNSVoipChannelResponse: APNSVoipChannelResponse
+    var APNSVoipChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.APNSVoipChannelResponse
   }
   
   trait UpdateApnsVoipSandboxChannelRequest extends js.Object {
-    var APNSVoipSandboxChannelRequest: APNSVoipSandboxChannelRequest
+    var APNSVoipSandboxChannelRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.APNSVoipSandboxChannelRequest
     /**
       * The unique ID of your Amazon Pinpoint application.
       */
@@ -5714,7 +5714,7 @@ object PinpointNs extends js.Object {
   }
   
   trait UpdateApnsVoipSandboxChannelResponse extends js.Object {
-    var APNSVoipSandboxChannelResponse: APNSVoipSandboxChannelResponse
+    var APNSVoipSandboxChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.APNSVoipSandboxChannelResponse
   }
   
   trait UpdateApplicationSettingsRequest extends js.Object {
@@ -5722,11 +5722,11 @@ object PinpointNs extends js.Object {
       * The unique ID of your Amazon Pinpoint application.
       */
     var ApplicationId: __string
-    var WriteApplicationSettingsRequest: WriteApplicationSettingsRequest
+    var WriteApplicationSettingsRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.WriteApplicationSettingsRequest
   }
   
   trait UpdateApplicationSettingsResponse extends js.Object {
-    var ApplicationSettingsResource: ApplicationSettingsResource
+    var ApplicationSettingsResource: awsDashSdkLib.clientsPinpointMod.PinpointNs.ApplicationSettingsResource
   }
   
   trait UpdateAttributesRequest extends js.Object {
@@ -5741,11 +5741,11 @@ object PinpointNs extends js.Object {
       * The unique ID of your Amazon Pinpoint application.
       */
     var ApplicationId: __string
-    var BaiduChannelRequest: BaiduChannelRequest
+    var BaiduChannelRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.BaiduChannelRequest
   }
   
   trait UpdateBaiduChannelResponse extends js.Object {
-    var BaiduChannelResponse: BaiduChannelResponse
+    var BaiduChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.BaiduChannelResponse
   }
   
   trait UpdateCampaignRequest extends js.Object {
@@ -5757,11 +5757,11 @@ object PinpointNs extends js.Object {
       * The unique ID of the campaign.
       */
     var CampaignId: __string
-    var WriteCampaignRequest: WriteCampaignRequest
+    var WriteCampaignRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.WriteCampaignRequest
   }
   
   trait UpdateCampaignResponse extends js.Object {
-    var CampaignResponse: CampaignResponse
+    var CampaignResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.CampaignResponse
   }
   
   trait UpdateEmailChannelRequest extends js.Object {
@@ -5769,11 +5769,11 @@ object PinpointNs extends js.Object {
       * The unique ID of your Amazon Pinpoint application.
       */
     var ApplicationId: __string
-    var EmailChannelRequest: EmailChannelRequest
+    var EmailChannelRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.EmailChannelRequest
   }
   
   trait UpdateEmailChannelResponse extends js.Object {
-    var EmailChannelResponse: EmailChannelResponse
+    var EmailChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.EmailChannelResponse
   }
   
   trait UpdateEndpointRequest extends js.Object {
@@ -5785,11 +5785,11 @@ object PinpointNs extends js.Object {
       * The unique ID of the endpoint.
       */
     var EndpointId: __string
-    var EndpointRequest: EndpointRequest
+    var EndpointRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.EndpointRequest
   }
   
   trait UpdateEndpointResponse extends js.Object {
-    var MessageBody: MessageBody
+    var MessageBody: awsDashSdkLib.clientsPinpointMod.PinpointNs.MessageBody
   }
   
   trait UpdateEndpointsBatchRequest extends js.Object {
@@ -5797,11 +5797,11 @@ object PinpointNs extends js.Object {
       * The unique ID of your Amazon Pinpoint application.
       */
     var ApplicationId: __string
-    var EndpointBatchRequest: EndpointBatchRequest
+    var EndpointBatchRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.EndpointBatchRequest
   }
   
   trait UpdateEndpointsBatchResponse extends js.Object {
-    var MessageBody: MessageBody
+    var MessageBody: awsDashSdkLib.clientsPinpointMod.PinpointNs.MessageBody
   }
   
   trait UpdateGcmChannelRequest extends js.Object {
@@ -5809,11 +5809,11 @@ object PinpointNs extends js.Object {
       * The unique ID of your Amazon Pinpoint application.
       */
     var ApplicationId: __string
-    var GCMChannelRequest: GCMChannelRequest
+    var GCMChannelRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.GCMChannelRequest
   }
   
   trait UpdateGcmChannelResponse extends js.Object {
-    var GCMChannelResponse: GCMChannelResponse
+    var GCMChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.GCMChannelResponse
   }
   
   trait UpdateSegmentRequest extends js.Object {
@@ -5825,11 +5825,11 @@ object PinpointNs extends js.Object {
       * The unique ID of the segment.
       */
     var SegmentId: __string
-    var WriteSegmentRequest: WriteSegmentRequest
+    var WriteSegmentRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.WriteSegmentRequest
   }
   
   trait UpdateSegmentResponse extends js.Object {
-    var SegmentResponse: SegmentResponse
+    var SegmentResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.SegmentResponse
   }
   
   trait UpdateSmsChannelRequest extends js.Object {
@@ -5837,11 +5837,11 @@ object PinpointNs extends js.Object {
       * The unique ID of your Amazon Pinpoint application.
       */
     var ApplicationId: __string
-    var SMSChannelRequest: SMSChannelRequest
+    var SMSChannelRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.SMSChannelRequest
   }
   
   trait UpdateSmsChannelResponse extends js.Object {
-    var SMSChannelResponse: SMSChannelResponse
+    var SMSChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.SMSChannelResponse
   }
   
   trait UpdateVoiceChannelRequest extends js.Object {
@@ -5849,11 +5849,11 @@ object PinpointNs extends js.Object {
       * The unique ID of your Amazon Pinpoint application.
       */
     var ApplicationId: __string
-    var VoiceChannelRequest: VoiceChannelRequest
+    var VoiceChannelRequest: awsDashSdkLib.clientsPinpointMod.PinpointNs.VoiceChannelRequest
   }
   
   trait UpdateVoiceChannelResponse extends js.Object {
-    var VoiceChannelResponse: VoiceChannelResponse
+    var VoiceChannelResponse: awsDashSdkLib.clientsPinpointMod.PinpointNs.VoiceChannelResponse
   }
   
   trait VoiceChannelRequest extends js.Object {

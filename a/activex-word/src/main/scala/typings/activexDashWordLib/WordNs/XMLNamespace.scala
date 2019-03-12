@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.XMLNamespace")
 @js.native
 class XMLNamespace protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
   val Parent: js.Any = js.native
   val URI: java.lang.String = js.native
   var `Word.XMLNamespace_typekey`: XMLNamespace = js.native
-  val XSLTransforms: XSLTransforms = js.native
+  val XSLTransforms: activexDashWordLib.WordNs.XSLTransforms = js.native
   /** @param boolean [AllUsers=false] */
   def Alias(): java.lang.String = js.native
   def Alias(AllUsers: scala.Boolean): java.lang.String = js.native

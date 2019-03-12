@@ -11,7 +11,7 @@ trait Slocket
      with org.scalablytyped.runtime.Instantiable2[
       /* lockFile */ java.lang.String, 
       /* cb */ js.Function2[
-        /* error */ nodeLib.Error | scala.Null, 
+        /* error */ stdLib.Error | scala.Null, 
         /* lock */ slocketLib.slocketMod.slocketNs.Lock, 
         scala.Unit
       ], 
@@ -21,7 +21,7 @@ trait Slocket
   def apply(
     lockFile: java.lang.String,
     cb: js.Function2[
-      /* error */ nodeLib.Error | scala.Null, 
+      /* error */ stdLib.Error | scala.Null, 
       /* lock */ slocketLib.slocketMod.slocketNs.Lock, 
       scala.Unit
     ]

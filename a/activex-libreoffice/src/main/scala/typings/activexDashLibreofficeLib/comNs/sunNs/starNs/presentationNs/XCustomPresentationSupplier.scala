@@ -22,12 +22,12 @@ object XCustomPresentationSupplier {
   @scala.inline
   def apply(
     CustomPresentations: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
-    acquire: js.Function0[scala.Unit],
-    getCustomPresentations: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getCustomPresentations: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCustomPresentationSupplier = {
-    val __obj = js.Dynamic.literal(CustomPresentations = CustomPresentations, acquire = acquire, getCustomPresentations = getCustomPresentations, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(CustomPresentations = CustomPresentations, acquire = js.Any.fromFunction0(acquire), getCustomPresentations = js.Any.fromFunction0(getCustomPresentations), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCustomPresentationSupplier]
   }

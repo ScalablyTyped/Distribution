@@ -157,73 +157,23 @@ object XSmartTagAction {
   @scala.inline
   def apply(
     SmartTagCount: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getActionCaptionFromID: js.Function8[
-      scala.Double, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap, 
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange, 
-      java.lang.String
-    ],
-    getActionCount: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap, 
-      scala.Double
-    ],
-    getActionID: js.Function3[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, 
-      scala.Double
-    ],
-    getActionNameFromID: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, 
-      java.lang.String
-    ],
-    getDescription: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String],
-    getName: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String],
-    getSmartTagCaption: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      java.lang.String
-    ],
-    getSmartTagName: js.Function1[scala.Double, java.lang.String],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    invokeAction: js.Function8[
-      scala.Double, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap, 
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Unit
-    ],
-    isCaptionDynamic: js.Function4[
-      scala.Double, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Boolean
-    ],
-    isShowSmartTagIndicator: js.Function4[
-      scala.Double, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Boolean
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getActionCaptionFromID: (scala.Double, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap, java.lang.String, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange) => java.lang.String,
+    getActionCount: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap) => scala.Double,
+    getActionID: (java.lang.String, scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController) => scala.Double,
+    getActionNameFromID: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController) => java.lang.String,
+    getDescription: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => java.lang.String,
+    getName: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => java.lang.String,
+    getSmartTagCaption: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => java.lang.String,
+    getSmartTagName: scala.Double => java.lang.String,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    invokeAction: (scala.Double, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextRange, activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap, java.lang.String, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => scala.Unit,
+    isCaptionDynamic: (scala.Double, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => scala.Boolean,
+    isShowSmartTagIndicator: (scala.Double, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSmartTagAction = {
-    val __obj = js.Dynamic.literal(SmartTagCount = SmartTagCount, acquire = acquire, getActionCaptionFromID = getActionCaptionFromID, getActionCount = getActionCount, getActionID = getActionID, getActionNameFromID = getActionNameFromID, getDescription = getDescription, getName = getName, getSmartTagCaption = getSmartTagCaption, getSmartTagName = getSmartTagName, initialize = initialize, invokeAction = invokeAction, isCaptionDynamic = isCaptionDynamic, isShowSmartTagIndicator = isShowSmartTagIndicator, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(SmartTagCount = SmartTagCount, acquire = js.Any.fromFunction0(acquire), getActionCaptionFromID = js.Any.fromFunction8(getActionCaptionFromID), getActionCount = js.Any.fromFunction3(getActionCount), getActionID = js.Any.fromFunction3(getActionID), getActionNameFromID = js.Any.fromFunction2(getActionNameFromID), getDescription = js.Any.fromFunction1(getDescription), getName = js.Any.fromFunction1(getName), getSmartTagCaption = js.Any.fromFunction2(getSmartTagCaption), getSmartTagName = js.Any.fromFunction1(getSmartTagName), initialize = js.Any.fromFunction1(initialize), invokeAction = js.Any.fromFunction8(invokeAction), isCaptionDynamic = js.Any.fromFunction4(isCaptionDynamic), isShowSmartTagIndicator = js.Any.fromFunction4(isShowSmartTagIndicator), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSmartTagAction]
   }

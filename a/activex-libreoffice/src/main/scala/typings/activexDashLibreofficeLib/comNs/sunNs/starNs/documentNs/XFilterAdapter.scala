@@ -24,19 +24,12 @@ trait XFilterAdapter
 object XFilterAdapter {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    convert: js.Function5[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream, 
-      scala.Boolean, 
-      java.lang.String, 
-      java.lang.String, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    convert: (activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream, scala.Boolean, java.lang.String, java.lang.String) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XFilterAdapter = {
-    val __obj = js.Dynamic.literal(acquire = acquire, convert = convert, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), convert = js.Any.fromFunction5(convert), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XFilterAdapter]
   }

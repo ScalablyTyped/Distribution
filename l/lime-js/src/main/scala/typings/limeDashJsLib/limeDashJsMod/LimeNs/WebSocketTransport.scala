@@ -12,22 +12,22 @@ trait WebSocketTransport extends Transport {
 object WebSocketTransport {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
+    close: () => scala.Unit,
     compression: java.lang.String,
     encryption: java.lang.String,
-    getSupportedCompression: js.Function0[js.Array[java.lang.String]],
-    getSupportedEncryption: js.Function0[js.Array[java.lang.String]],
-    onClose: js.Function0[scala.Unit],
-    onEnvelope: js.Function1[Envelope, scala.Unit],
-    onError: js.Function1[java.lang.String, scala.Unit],
-    onOpen: js.Function0[scala.Unit],
-    open: js.Function1[java.lang.String, scala.Unit],
-    send: js.Function1[Envelope, scala.Unit],
-    setCompression: js.Function1[java.lang.String, scala.Unit],
-    setEncryption: js.Function1[java.lang.String, scala.Unit],
+    getSupportedCompression: () => js.Array[java.lang.String],
+    getSupportedEncryption: () => js.Array[java.lang.String],
+    onClose: () => scala.Unit,
+    onEnvelope: Envelope => scala.Unit,
+    onError: java.lang.String => scala.Unit,
+    onOpen: () => scala.Unit,
+    open: java.lang.String => scala.Unit,
+    send: Envelope => scala.Unit,
+    setCompression: java.lang.String => scala.Unit,
+    setEncryption: java.lang.String => scala.Unit,
     webSocket: stdLib.WebSocket
   ): WebSocketTransport = {
-    val __obj = js.Dynamic.literal(close = close, compression = compression, encryption = encryption, getSupportedCompression = getSupportedCompression, getSupportedEncryption = getSupportedEncryption, onClose = onClose, onEnvelope = onEnvelope, onError = onError, onOpen = onOpen, open = open, send = send, setCompression = setCompression, setEncryption = setEncryption, webSocket = webSocket)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), compression = compression, encryption = encryption, getSupportedCompression = js.Any.fromFunction0(getSupportedCompression), getSupportedEncryption = js.Any.fromFunction0(getSupportedEncryption), onClose = js.Any.fromFunction0(onClose), onEnvelope = js.Any.fromFunction1(onEnvelope), onError = js.Any.fromFunction1(onError), onOpen = js.Any.fromFunction0(onOpen), open = js.Any.fromFunction1(open), send = js.Any.fromFunction1(send), setCompression = js.Any.fromFunction1(setCompression), setEncryption = js.Any.fromFunction1(setEncryption), webSocket = webSocket)
   
     __obj.asInstanceOf[WebSocketTransport]
   }

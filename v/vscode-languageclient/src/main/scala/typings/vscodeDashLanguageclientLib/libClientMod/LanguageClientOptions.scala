@@ -25,9 +25,6 @@ trait LanguageClientOptions extends js.Object {
     */
   var stdioEncoding: js.UndefOr[java.lang.String] = js.undefined
   var synchronize: js.UndefOr[SynchronizeOptions] = js.undefined
-  var traceOutputChannel: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OutputChannel */ js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OutputChannel */ js.Any
-  ] = js.undefined
   var uriConverters: js.UndefOr[vscodeDashLanguageclientLib.Anon_Code2Protocol] = js.undefined
   var workspaceFolder: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VWorkspaceFolder */ js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VWorkspaceFolder */ js.Any
@@ -48,7 +45,6 @@ object LanguageClientOptions {
     revealOutputChannelOn: RevealOutputChannelOn = null,
     stdioEncoding: java.lang.String = null,
     synchronize: SynchronizeOptions = null,
-    traceOutputChannel: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OutputChannel */ js.Any = null,
     uriConverters: vscodeDashLanguageclientLib.Anon_Code2Protocol = null,
     workspaceFolder: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VWorkspaceFolder */ js.Any = null
   ): LanguageClientOptions = {
@@ -64,7 +60,6 @@ object LanguageClientOptions {
     if (revealOutputChannelOn != null) __obj.updateDynamic("revealOutputChannelOn")(revealOutputChannelOn)
     if (stdioEncoding != null) __obj.updateDynamic("stdioEncoding")(stdioEncoding)
     if (synchronize != null) __obj.updateDynamic("synchronize")(synchronize)
-    if (traceOutputChannel != null) __obj.updateDynamic("traceOutputChannel")(traceOutputChannel)
     if (uriConverters != null) __obj.updateDynamic("uriConverters")(uriConverters)
     if (workspaceFolder != null) __obj.updateDynamic("workspaceFolder")(workspaceFolder)
     __obj.asInstanceOf[LanguageClientOptions]

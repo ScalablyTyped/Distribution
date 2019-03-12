@@ -9,8 +9,8 @@ trait Boolean extends js.Object
 
 object Boolean {
   @scala.inline
-  def apply(valueOf: js.Function0[scala.Boolean]): Boolean = {
-    val __obj = js.Dynamic.literal(valueOf = valueOf)
+  def apply(valueOf: () => scala.Boolean): Boolean = {
+    val __obj = js.Dynamic.literal(valueOf = js.Any.fromFunction0(valueOf))
   
     __obj.asInstanceOf[Boolean]
   }

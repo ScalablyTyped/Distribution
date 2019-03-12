@@ -1,5 +1,5 @@
 [debug] PhaseRunner.scala:90 Ignored [id => typed-undo, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:200 Processing TsIdentLibrarySimple(typed-undo) [id => typed-undo, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:201 Processing TsIdentLibrarySimple(typed-undo) [id => typed-undo, phase => typescript] 
 [debug] PhaseRunner.scala:82 Success [id => typed-undo, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing typed-undo [id => typed-undo, phase => scala.js] 
 [error] PhaseRes.scala:76 Caught exception: Expected code path [id => typed-undo, phase => scala.js] java.lang.RuntimeException: Expected code path
@@ -10,7 +10,7 @@
 	at com.olvind.tso.ts.CodePath.forceHasPath$(CodePath.scala:10)
 	at com.olvind.tso.ts.CodePath$NoPath$.forceHasPath(CodePath.scala:21)
 	at com.olvind.tso.importer.ImportTree$.apply(ImportTree.scala:27)
-	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$3(Phase2ToScalaJs.scala:60)
+	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$3(Phase2ToScalaJs.scala:61)
 	at com.olvind.tso.phases.PhaseRes.map(PhaseRes.scala:16)
 	at com.olvind.tso.phases.PhaseRes.map$(PhaseRes.scala:14)
 	at com.olvind.tso.phases.PhaseRes$Ok.map(PhaseRes.scala:30)

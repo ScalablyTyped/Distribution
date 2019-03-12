@@ -17,15 +17,15 @@ trait ITextLine extends js.Object {
 object ITextLine {
   @scala.inline
   def apply(
-    end: js.Function0[scala.Double],
-    endIncludingLineBreak: js.Function0[scala.Double],
-    extent: js.Function0[TextSpan],
-    extentIncludingLineBreak: js.Function0[TextSpan],
-    lineNumber: js.Function0[scala.Double],
-    start: js.Function0[scala.Double],
-    toString: js.Function0[java.lang.String]
+    end: () => scala.Double,
+    endIncludingLineBreak: () => scala.Double,
+    extent: () => TextSpan,
+    extentIncludingLineBreak: () => TextSpan,
+    lineNumber: () => scala.Double,
+    start: () => scala.Double,
+    toString: () => java.lang.String
   ): ITextLine = {
-    val __obj = js.Dynamic.literal(end = end, endIncludingLineBreak = endIncludingLineBreak, extent = extent, extentIncludingLineBreak = extentIncludingLineBreak, lineNumber = lineNumber, start = start, toString = toString)
+    val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), endIncludingLineBreak = js.Any.fromFunction0(endIncludingLineBreak), extent = js.Any.fromFunction0(extent), extentIncludingLineBreak = js.Any.fromFunction0(extentIncludingLineBreak), lineNumber = js.Any.fromFunction0(lineNumber), start = js.Any.fromFunction0(start), toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[ITextLine]
   }

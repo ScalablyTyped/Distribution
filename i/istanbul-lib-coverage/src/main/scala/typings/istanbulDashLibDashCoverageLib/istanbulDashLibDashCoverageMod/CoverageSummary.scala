@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CoverageSummary extends js.Object {
-  var branches: Totals
-  var functions: Totals
-  var lines: Totals
-  var statements: Totals
-}
-
-object CoverageSummary {
-  @scala.inline
-  def apply(branches: Totals, functions: Totals, lines: Totals, statements: Totals): CoverageSummary = {
-    val __obj = js.Dynamic.literal(branches = branches, functions = functions, lines = lines, statements = statements)
-  
-    __obj.asInstanceOf[CoverageSummary]
-  }
+@JSImport("istanbul-lib-coverage", "CoverageSummary")
+@js.native
+class CoverageSummary protected () extends js.Object {
+  def this(data: CoverageSummary) = this()
+  def this(data: CoverageSummaryData) = this()
+  var branches: Totals = js.native
+  var data: CoverageSummaryData = js.native
+  var functions: Totals = js.native
+  var lines: Totals = js.native
+  var statements: Totals = js.native
+  def isEmpty(): scala.Boolean = js.native
+  def merge(obj: CoverageSummary): CoverageSummary = js.native
+  def toJSON(): CoverageSummaryData = js.native
 }
 

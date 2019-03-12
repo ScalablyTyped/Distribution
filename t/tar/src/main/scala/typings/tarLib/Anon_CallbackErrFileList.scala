@@ -13,7 +13,7 @@ trait Anon_CallbackErrFileList extends js.Object {
   def apply(
     options: tarLib.tarMod.ListOptions,
     fileList: js.Array[java.lang.String],
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): nodeLib.streamMod.Writable = js.native
 }
 

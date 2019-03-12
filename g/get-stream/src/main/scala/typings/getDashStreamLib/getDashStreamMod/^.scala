@@ -15,7 +15,7 @@ object ^ extends js.Object {
     * The stream is switched to flowing mode.
     */
   def apply(stream: nodeLib.streamMod.Stream): js.Promise[java.lang.String] = js.native
-  def apply(stream: nodeLib.streamMod.Stream, options: getDashStreamLib.getDashStreamMod.Options): js.Promise[java.lang.String] = js.native
+  def apply(stream: nodeLib.streamMod.Stream, options: Options): js.Promise[java.lang.String] = js.native
   /**
     * Get the `stream` as an array of values.
     *
@@ -35,7 +35,7 @@ object ^ extends js.Object {
     *
     */
   def array[T](stream: nodeLib.streamMod.Stream): js.Promise[js.Array[T]] = js.native
-  def array[T](stream: nodeLib.streamMod.Stream, options: getDashStreamLib.getDashStreamMod.Options): js.Promise[js.Array[T]] = js.native
+  def array[T](stream: nodeLib.streamMod.Stream, options: Options): js.Promise[js.Array[T]] = js.native
   /**
     * Get the stream as a buffer.
     *
@@ -43,6 +43,6 @@ object ^ extends js.Object {
     * rather than string length.
     */
   def buffer(stream: nodeLib.streamMod.Stream): js.Promise[nodeLib.Buffer] = js.native
-  def buffer(stream: nodeLib.streamMod.Stream, options: getDashStreamLib.getDashStreamMod.Options): js.Promise[nodeLib.Buffer] = js.native
+  def buffer(stream: nodeLib.streamMod.Stream, options: Options): js.Promise[nodeLib.Buffer] = js.native
 }
 

@@ -20,6 +20,6 @@ trait Form
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.FormComponents
      with activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.FormComponent
      with activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XTabControllerModel {
-  def getPropertyValues(aPropertyNames: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): activexDashInteropLib.SafeArray[_] = js.native
+  def getPropertyValues(aPropertyNames: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): stdLib.SafeArray[_] = js.native
 }
 

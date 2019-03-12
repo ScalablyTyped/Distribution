@@ -27,20 +27,12 @@ object Options {
   @scala.inline
   def apply(
     relativeTo: java.lang.String,
-    preConnections: js.Function2[
-      /* Server */ hapiLib.hapiMod.Server, 
-      /* next */ js.Function1[/* err */ js.Any, scala.Unit], 
-      scala.Unit
-    ] = null,
-    preRegister: js.Function2[
-      /* Server */ hapiLib.hapiMod.Server, 
-      /* next */ js.Function1[/* err */ js.Any, scala.Unit], 
-      scala.Unit
-    ] = null
+    preConnections: (/* Server */ hapiLib.hapiMod.Server, /* next */ js.Function1[/* err */ js.Any, scala.Unit]) => scala.Unit = null,
+    preRegister: (/* Server */ hapiLib.hapiMod.Server, /* next */ js.Function1[/* err */ js.Any, scala.Unit]) => scala.Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal(relativeTo = relativeTo)
-    if (preConnections != null) __obj.updateDynamic("preConnections")(preConnections)
-    if (preRegister != null) __obj.updateDynamic("preRegister")(preRegister)
+    if (preConnections != null) __obj.updateDynamic("preConnections")(js.Any.fromFunction2(preConnections))
+    if (preRegister != null) __obj.updateDynamic("preRegister")(js.Any.fromFunction2(preRegister))
     __obj.asInstanceOf[Options]
   }
 }

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object libFormMod {
   type Form[T] = reactLib.reactMod.Component[FormProps[T], js.Object, js.Any]
-  type FormProps[T] = reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLFormElement] with reactstrapLib.Anon_ClassNameCssModuleInline with T
+  type FormProps[T] = reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLFormElement] with reactstrapLib.Anon_ClassNameCssModuleInline with T
 }

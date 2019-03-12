@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SmartTagAction protected () extends js.Object {
   val ActiveXControl: js.Any = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var CheckboxState: scala.Boolean = js.native
   val Creator: XlCreator = js.native
   var `Excel.SmartTagAction_typekey`: SmartTagAction = js.native

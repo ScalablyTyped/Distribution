@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("anymatch", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(matcher: anymatchLib.anymatchMod.anymatchNs.Matcher): anymatchLib.anymatchMod.CurrriedMatcher = js.native
+  def apply(matcher: anymatchLib.anymatchMod.anymatchNs.Matcher): CurrriedMatcher = js.native
   def apply(
     matcher: anymatchLib.anymatchMod.anymatchNs.Matcher,
     testString: java.lang.String | js.Array[java.lang.String]

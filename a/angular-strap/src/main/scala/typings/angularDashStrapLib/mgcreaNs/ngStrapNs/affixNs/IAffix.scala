@@ -15,12 +15,12 @@ trait IAffix extends js.Object {
 object IAffix {
   @scala.inline
   def apply(
-    checkPosition: js.Function0[scala.Unit],
-    checkPositionWithEventLoop: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    init: js.Function0[scala.Unit]
+    checkPosition: () => scala.Unit,
+    checkPositionWithEventLoop: () => scala.Unit,
+    destroy: () => scala.Unit,
+    init: () => scala.Unit
   ): IAffix = {
-    val __obj = js.Dynamic.literal(checkPosition = checkPosition, checkPositionWithEventLoop = checkPositionWithEventLoop, destroy = destroy, init = init)
+    val __obj = js.Dynamic.literal(checkPosition = js.Any.fromFunction0(checkPosition), checkPositionWithEventLoop = js.Any.fromFunction0(checkPositionWithEventLoop), destroy = js.Any.fromFunction0(destroy), init = js.Any.fromFunction0(init))
   
     __obj.asInstanceOf[IAffix]
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val TextArea: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsTextAreaMod.TextAreaProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    TextAreaProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.TextareaHTMLAttributes[reactLib.HTMLTextAreaElement], 
       reactLib.HTMLTextAreaElement
     ]), 

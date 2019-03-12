@@ -42,7 +42,7 @@ trait IOverlayableProps extends IOverlayLifecycleProps {
     */
   var onClose: js.UndefOr[
     js.Function1[
-      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
+      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -56,7 +56,7 @@ trait IOverlayableProps extends IOverlayLifecycleProps {
     * This prop is ignored if `usePortal` is `false`.
     * @default document.body
     */
-  var portalContainer: js.UndefOr[reactLib.HTMLElement] = js.undefined
+  var portalContainer: js.UndefOr[stdLib.HTMLElement] = js.undefined
   /**
     * Indicates how long (in milliseconds) the overlay's enter/leave transition takes.
     * This is used by React `CSSTransition` to know when a transition completes and must match
@@ -87,16 +87,13 @@ object IOverlayableProps {
     canEscapeKeyClose: js.UndefOr[scala.Boolean] = js.undefined,
     enforceFocus: js.UndefOr[scala.Boolean] = js.undefined,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
-    onClose: js.Function1[
-      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
-      scala.Unit
-    ] = null,
-    onClosed: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
-    onClosing: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
-    onOpened: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
-    onOpening: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
+    onClose: /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]] => scala.Unit = null,
+    onClosed: /* node */ stdLib.HTMLElement => scala.Unit = null,
+    onClosing: /* node */ stdLib.HTMLElement => scala.Unit = null,
+    onOpened: /* node */ stdLib.HTMLElement => scala.Unit = null,
+    onOpening: /* node */ stdLib.HTMLElement => scala.Unit = null,
     portalClassName: java.lang.String = null,
-    portalContainer: reactLib.HTMLElement = null,
+    portalContainer: stdLib.HTMLElement = null,
     transitionDuration: scala.Int | scala.Double = null,
     usePortal: js.UndefOr[scala.Boolean] = js.undefined
   ): IOverlayableProps = {
@@ -105,11 +102,11 @@ object IOverlayableProps {
     if (!js.isUndefined(canEscapeKeyClose)) __obj.updateDynamic("canEscapeKeyClose")(canEscapeKeyClose)
     if (!js.isUndefined(enforceFocus)) __obj.updateDynamic("enforceFocus")(enforceFocus)
     if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onClosed != null) __obj.updateDynamic("onClosed")(onClosed)
-    if (onClosing != null) __obj.updateDynamic("onClosing")(onClosing)
-    if (onOpened != null) __obj.updateDynamic("onOpened")(onOpened)
-    if (onOpening != null) __obj.updateDynamic("onOpening")(onOpening)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
+    if (onClosed != null) __obj.updateDynamic("onClosed")(js.Any.fromFunction1(onClosed))
+    if (onClosing != null) __obj.updateDynamic("onClosing")(js.Any.fromFunction1(onClosing))
+    if (onOpened != null) __obj.updateDynamic("onOpened")(js.Any.fromFunction1(onOpened))
+    if (onOpening != null) __obj.updateDynamic("onOpening")(js.Any.fromFunction1(onOpening))
     if (portalClassName != null) __obj.updateDynamic("portalClassName")(portalClassName)
     if (portalContainer != null) __obj.updateDynamic("portalContainer")(portalContainer)
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])

@@ -21,24 +21,24 @@ object SortableOption {
   @scala.inline
   def apply(
     dragCssClass: java.lang.String = null,
-    finish: js.Function1[/* e */ js.UndefOr[SortEvent], scala.Unit] = null,
+    finish: /* e */ js.UndefOr[SortEvent] => scala.Unit = null,
     mouseButton: java.lang.String = null,
-    order: js.Function1[/* e */ js.UndefOr[SortEvent], scala.Unit] = null,
+    order: /* e */ js.UndefOr[SortEvent] => scala.Unit = null,
     reverse: js.UndefOr[scala.Boolean] = js.undefined,
     selector: java.lang.String = null,
     sortingClass: java.lang.String = null,
-    start: js.Function1[/* e */ js.UndefOr[SortEvent], scala.Unit] = null,
+    start: /* e */ js.UndefOr[SortEvent] => scala.Unit = null,
     trigger: java.lang.String = null
   ): SortableOption = {
     val __obj = js.Dynamic.literal()
     if (dragCssClass != null) __obj.updateDynamic("dragCssClass")(dragCssClass)
-    if (finish != null) __obj.updateDynamic("finish")(finish)
+    if (finish != null) __obj.updateDynamic("finish")(js.Any.fromFunction1(finish))
     if (mouseButton != null) __obj.updateDynamic("mouseButton")(mouseButton)
-    if (order != null) __obj.updateDynamic("order")(order)
+    if (order != null) __obj.updateDynamic("order")(js.Any.fromFunction1(order))
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
     if (selector != null) __obj.updateDynamic("selector")(selector)
     if (sortingClass != null) __obj.updateDynamic("sortingClass")(sortingClass)
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
     if (trigger != null) __obj.updateDynamic("trigger")(trigger)
     __obj.asInstanceOf[SortableOption]
   }

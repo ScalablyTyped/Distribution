@@ -16,34 +16,19 @@ trait OptionT2[M /* <: fpDashTsLib.libHKTMod.URIS2 */]
 object OptionT2 {
   @scala.inline
   def apply[M /* <: fpDashTsLib.libHKTMod.URIS2 */](
-    ap: js.Function2[
-      fpDashTsLib.libHKTMod.Type2[
-        M, 
-        js.Any, 
-        fpDashTsLib.libHKTMod.Type[fpDashTsLib.libOptionMod.URI, js.Function1[js.Any, js.Any]]
-      ], 
-      fpDashTsLib.libHKTMod.Type2[M, js.Any, fpDashTsLib.libHKTMod.Type[fpDashTsLib.libOptionMod.URI, js.Any]], 
-      fpDashTsLib.libHKTMod.Type2[M, js.Any, fpDashTsLib.libHKTMod.Type[fpDashTsLib.libOptionMod.URI, js.Any]]
-    ],
-    chain: js.Function2[
-      js.Function1[
-        js.Any, 
-        fpDashTsLib.libHKTMod.Type2[M, js.Any, fpDashTsLib.libOptionMod.Option[js.Any]]
-      ], 
-      fpDashTsLib.libHKTMod.Type2[M, js.Any, fpDashTsLib.libOptionMod.Option[js.Any]], 
-      fpDashTsLib.libHKTMod.Type2[M, js.Any, fpDashTsLib.libOptionMod.Option[js.Any]]
-    ],
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.Type2[M, js.Any, fpDashTsLib.libHKTMod.Type[fpDashTsLib.libOptionMod.URI, js.Any]], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type2[M, js.Any, fpDashTsLib.libHKTMod.Type[fpDashTsLib.libOptionMod.URI, js.Any]]
-    ],
-    of: js.Function1[
+    ap: (fpDashTsLib.libHKTMod.Type2[
+      M, 
       js.Any, 
-      fpDashTsLib.libHKTMod.Type2[M, js.Any, fpDashTsLib.libHKTMod.Type[fpDashTsLib.libOptionMod.URI, js.Any]]
-    ]
+      fpDashTsLib.libHKTMod.Type[fpDashTsLib.libOptionMod.URI, js.Function1[js.Any, js.Any]]
+    ], fpDashTsLib.libHKTMod.Type2[M, js.Any, fpDashTsLib.libHKTMod.Type[fpDashTsLib.libOptionMod.URI, js.Any]]) => fpDashTsLib.libHKTMod.Type2[M, js.Any, fpDashTsLib.libHKTMod.Type[fpDashTsLib.libOptionMod.URI, js.Any]],
+    chain: (js.Function1[
+      js.Any, 
+      fpDashTsLib.libHKTMod.Type2[M, js.Any, fpDashTsLib.libOptionMod.Option[js.Any]]
+    ], fpDashTsLib.libHKTMod.Type2[M, js.Any, fpDashTsLib.libOptionMod.Option[js.Any]]) => fpDashTsLib.libHKTMod.Type2[M, js.Any, fpDashTsLib.libOptionMod.Option[js.Any]],
+    map: (fpDashTsLib.libHKTMod.Type2[M, js.Any, fpDashTsLib.libHKTMod.Type[fpDashTsLib.libOptionMod.URI, js.Any]], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type2[M, js.Any, fpDashTsLib.libHKTMod.Type[fpDashTsLib.libOptionMod.URI, js.Any]],
+    of: js.Any => fpDashTsLib.libHKTMod.Type2[M, js.Any, fpDashTsLib.libHKTMod.Type[fpDashTsLib.libOptionMod.URI, js.Any]]
   ): OptionT2[M] = {
-    val __obj = js.Dynamic.literal(ap = ap, chain = chain, map = map, of = of)
+    val __obj = js.Dynamic.literal(ap = js.Any.fromFunction2(ap), chain = js.Any.fromFunction2(chain), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of))
   
     __obj.asInstanceOf[OptionT2[M]]
   }

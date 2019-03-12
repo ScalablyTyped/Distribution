@@ -23,21 +23,21 @@ trait Visitor[Result] extends js.Object {
 object Visitor {
   @scala.inline
   def apply[Result](
-    visitBoundAttribute: js.Function1[BoundAttribute, Result],
-    visitBoundEvent: js.Function1[BoundEvent, Result],
-    visitBoundText: js.Function1[BoundText, Result],
-    visitContent: js.Function1[Content, Result],
-    visitElement: js.Function1[Element, Result],
-    visitIcu: js.Function1[Icu, Result],
-    visitReference: js.Function1[Reference, Result],
-    visitTemplate: js.Function1[Template, Result],
-    visitText: js.Function1[Text, Result],
-    visitTextAttribute: js.Function1[TextAttribute, Result],
-    visitVariable: js.Function1[Variable, Result],
-    visit: js.Function1[/* node */ Node, Result] = null
+    visitBoundAttribute: BoundAttribute => Result,
+    visitBoundEvent: BoundEvent => Result,
+    visitBoundText: BoundText => Result,
+    visitContent: Content => Result,
+    visitElement: Element => Result,
+    visitIcu: Icu => Result,
+    visitReference: Reference => Result,
+    visitTemplate: Template => Result,
+    visitText: Text => Result,
+    visitTextAttribute: TextAttribute => Result,
+    visitVariable: Variable => Result,
+    visit: /* node */ Node => Result = null
   ): Visitor[Result] = {
-    val __obj = js.Dynamic.literal(visitBoundAttribute = visitBoundAttribute, visitBoundEvent = visitBoundEvent, visitBoundText = visitBoundText, visitContent = visitContent, visitElement = visitElement, visitIcu = visitIcu, visitReference = visitReference, visitTemplate = visitTemplate, visitText = visitText, visitTextAttribute = visitTextAttribute, visitVariable = visitVariable)
-    if (visit != null) __obj.updateDynamic("visit")(visit)
+    val __obj = js.Dynamic.literal(visitBoundAttribute = js.Any.fromFunction1(visitBoundAttribute), visitBoundEvent = js.Any.fromFunction1(visitBoundEvent), visitBoundText = js.Any.fromFunction1(visitBoundText), visitContent = js.Any.fromFunction1(visitContent), visitElement = js.Any.fromFunction1(visitElement), visitIcu = js.Any.fromFunction1(visitIcu), visitReference = js.Any.fromFunction1(visitReference), visitTemplate = js.Any.fromFunction1(visitTemplate), visitText = js.Any.fromFunction1(visitText), visitTextAttribute = js.Any.fromFunction1(visitTextAttribute), visitVariable = js.Any.fromFunction1(visitVariable))
+    if (visit != null) __obj.updateDynamic("visit")(js.Any.fromFunction1(visit))
     __obj.asInstanceOf[Visitor[Result]]
   }
 }

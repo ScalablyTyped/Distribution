@@ -9,8 +9,8 @@ package object reactDashDynamicDashNumberMod {
   type BaseInputProps = stdLib.Partial[
     Omit[
       reactLib.reactMod.ReactNs.DetailedHTMLProps[
-        reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
-        reactLib.HTMLInputElement
+        reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement], 
+        stdLib.HTMLInputElement
       ], 
       reactDashDynamicDashNumberLib.reactDashDynamicDashNumberLibStrings.ref | reactDashDynamicDashNumberLib.reactDashDynamicDashNumberLibStrings.value | reactDashDynamicDashNumberLib.reactDashDynamicDashNumberLibStrings.onChange | reactDashDynamicDashNumberLib.reactDashDynamicDashNumberLibStrings.placeholder
     ]

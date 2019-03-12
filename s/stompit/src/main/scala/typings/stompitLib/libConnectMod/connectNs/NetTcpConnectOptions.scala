@@ -19,11 +19,7 @@ object NetTcpConnectOptions {
     port: scala.Double,
     allowHalfOpen: js.UndefOr[scala.Boolean] = js.undefined,
     commandHandlers: stompitLib.libSocketMod.SocketNs.CommandHandlers = null,
-    connect: js.Function2[
-      /* options */ ConnectOptions, 
-      /* connectionListener */ js.UndefOr[js.Function0[scala.Unit]], 
-      nodeLib.netMod.Socket
-    ] = null,
+    connect: (/* options */ ConnectOptions, /* connectionListener */ js.UndefOr[js.Function0[scala.Unit]]) => nodeLib.netMod.Socket = null,
     connectHeaders: ConnectHeaders = null,
     family: scala.Int | scala.Double = null,
     fd: scala.Int | scala.Double = null,
@@ -40,13 +36,13 @@ object NetTcpConnectOptions {
     resetDisconnect: js.UndefOr[scala.Boolean] = js.undefined,
     ssl: stompitLib.stompitLibNumbers.`false` = null,
     timeout: scala.Int | scala.Double = null,
-    unknownCommand: js.Function0[scala.Unit] = null,
+    unknownCommand: () => scala.Unit = null,
     writable: js.UndefOr[scala.Boolean] = js.undefined
   ): NetTcpConnectOptions = {
     val __obj = js.Dynamic.literal(port = port)
     if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen)
     if (commandHandlers != null) __obj.updateDynamic("commandHandlers")(commandHandlers)
-    if (connect != null) __obj.updateDynamic("connect")(connect)
+    if (connect != null) __obj.updateDynamic("connect")(js.Any.fromFunction2(connect))
     if (connectHeaders != null) __obj.updateDynamic("connectHeaders")(connectHeaders)
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
     if (fd != null) __obj.updateDynamic("fd")(fd.asInstanceOf[js.Any])
@@ -63,7 +59,7 @@ object NetTcpConnectOptions {
     if (!js.isUndefined(resetDisconnect)) __obj.updateDynamic("resetDisconnect")(resetDisconnect)
     if (ssl != null) __obj.updateDynamic("ssl")(ssl)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (unknownCommand != null) __obj.updateDynamic("unknownCommand")(unknownCommand)
+    if (unknownCommand != null) __obj.updateDynamic("unknownCommand")(js.Any.fromFunction0(unknownCommand))
     if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable)
     __obj.asInstanceOf[NetTcpConnectOptions]
   }

@@ -14,13 +14,13 @@ package object buildSrcServiceDashObjectMod {
   ]
   type CreateResponse[T] = js.Array[js.Any]
   type DeleteCallback = js.Function2[
-    /* err */ nodeLib.Error | scala.Null, 
+    /* err */ stdLib.Error | scala.Null, 
     /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
     scala.Unit
   ]
   type DeleteOptions = js.Object
   type ExistsCallback = js.Function2[
-    /* err */ nodeLib.Error | scala.Null, 
+    /* err */ stdLib.Error | scala.Null, 
     /* exists */ js.UndefOr[scala.Boolean], 
     scala.Unit
   ]
@@ -36,7 +36,7 @@ package object buildSrcServiceDashObjectMod {
   ]
   type Metadata = js.Any
   type MetadataCallback = js.Function3[
-    /* err */ nodeLib.Error | scala.Null, 
+    /* err */ stdLib.Error | scala.Null, 
     /* metadata */ js.UndefOr[Metadata], 
     /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
     scala.Unit
@@ -44,7 +44,7 @@ package object buildSrcServiceDashObjectMod {
   type MetadataResponse = js.Tuple2[Metadata, requestLib.requestMod.requestNs.Response]
   type RequestResponse = js.Tuple2[Metadata, requestLib.requestMod.requestNs.Response]
   type ResponseCallback = js.Function2[
-    /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+    /* err */ js.UndefOr[stdLib.Error | scala.Null], 
     /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
     scala.Unit
   ]

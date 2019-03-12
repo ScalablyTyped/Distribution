@@ -16,13 +16,13 @@ trait BigQueryDataSourceSpec extends js.Object {
 object BigQueryDataSourceSpec {
   @scala.inline
   def apply(
-    copy: js.Function0[DataSourceSpecBuilder],
-    getParameters: js.Function0[js.Array[DataSourceParameter]],
-    getProjectId: js.Function0[java.lang.String],
-    getRawQuery: js.Function0[java.lang.String],
-    getType: js.Function0[DataSourceType]
+    copy: () => DataSourceSpecBuilder,
+    getParameters: () => js.Array[DataSourceParameter],
+    getProjectId: () => java.lang.String,
+    getRawQuery: () => java.lang.String,
+    getType: () => DataSourceType
   ): BigQueryDataSourceSpec = {
-    val __obj = js.Dynamic.literal(copy = copy, getParameters = getParameters, getProjectId = getProjectId, getRawQuery = getRawQuery, getType = getType)
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), getParameters = js.Any.fromFunction0(getParameters), getProjectId = js.Any.fromFunction0(getProjectId), getRawQuery = js.Any.fromFunction0(getRawQuery), getType = js.Any.fromFunction0(getType))
   
     __obj.asInstanceOf[BigQueryDataSourceSpec]
   }

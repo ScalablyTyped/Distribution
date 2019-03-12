@@ -33,15 +33,15 @@ object ListViewOptions {
   def apply(
     appendOnRefresh: js.UndefOr[scala.Boolean] = js.undefined,
     autoBind: js.UndefOr[scala.Boolean] = js.undefined,
-    click: js.Function1[/* e */ ListViewClickEvent, scala.Unit] = null,
-    dataBinding: js.Function1[/* e */ ListViewEvent, scala.Unit] = null,
-    dataBound: js.Function1[/* e */ ListViewEvent, scala.Unit] = null,
+    click: /* e */ ListViewClickEvent => scala.Unit = null,
+    dataBinding: /* e */ ListViewEvent => scala.Unit = null,
+    dataBound: /* e */ ListViewEvent => scala.Unit = null,
     dataSource: kendoDashUiLib.kendoNs.dataNs.DataSource | js.Any = null,
     endlessScroll: js.UndefOr[scala.Boolean] = js.undefined,
     filterable: scala.Boolean | ListViewFilterable = null,
     fixedHeaders: js.UndefOr[scala.Boolean] = js.undefined,
     headerTemplate: java.lang.String | js.Function = null,
-    itemChange: js.Function1[/* e */ ListViewEvent, scala.Unit] = null,
+    itemChange: /* e */ ListViewEvent => scala.Unit = null,
     loadMore: js.UndefOr[scala.Boolean] = js.undefined,
     messages: ListViewMessages = null,
     name: java.lang.String = null,
@@ -55,15 +55,15 @@ object ListViewOptions {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(appendOnRefresh)) __obj.updateDynamic("appendOnRefresh")(appendOnRefresh)
     if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind)
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1(dataBinding))
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (!js.isUndefined(endlessScroll)) __obj.updateDynamic("endlessScroll")(endlessScroll)
     if (filterable != null) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
     if (!js.isUndefined(fixedHeaders)) __obj.updateDynamic("fixedHeaders")(fixedHeaders)
     if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
-    if (itemChange != null) __obj.updateDynamic("itemChange")(itemChange)
+    if (itemChange != null) __obj.updateDynamic("itemChange")(js.Any.fromFunction1(itemChange))
     if (!js.isUndefined(loadMore)) __obj.updateDynamic("loadMore")(loadMore)
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (name != null) __obj.updateDynamic("name")(name)

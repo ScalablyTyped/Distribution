@@ -47,15 +47,15 @@ trait Sorts extends js.Object {
 object Sorts {
   @scala.inline
   def apply(
-    add: js.Function2[java.lang.String, scala.Double, Dynatable],
-    clear: js.Function0[scala.Unit],
+    add: (java.lang.String, scala.Double) => Dynatable,
+    clear: () => scala.Unit,
     functions: SortsFunctions,
-    guessType: js.Function3[js.Any, js.Any, java.lang.String, java.lang.String],
-    init: js.Function0[scala.Unit],
-    initOnLoad: js.Function0[scala.Boolean],
-    remove: js.Function1[java.lang.String, Dynatable]
+    guessType: (js.Any, js.Any, java.lang.String) => java.lang.String,
+    init: () => scala.Unit,
+    initOnLoad: () => scala.Boolean,
+    remove: java.lang.String => Dynatable
   ): Sorts = {
-    val __obj = js.Dynamic.literal(add = add, clear = clear, functions = functions, guessType = guessType, init = init, initOnLoad = initOnLoad, remove = remove)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), clear = js.Any.fromFunction0(clear), functions = functions, guessType = js.Any.fromFunction3(guessType), init = js.Any.fromFunction0(init), initOnLoad = js.Any.fromFunction0(initOnLoad), remove = js.Any.fromFunction1(remove))
   
     __obj.asInstanceOf[Sorts]
   }

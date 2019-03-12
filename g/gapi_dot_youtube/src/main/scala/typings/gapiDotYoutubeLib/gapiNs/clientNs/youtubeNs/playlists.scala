@@ -29,26 +29,14 @@ trait playlists extends js.Object {
 object playlists {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotYoutubeLib.Anon_Id, 
-      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubePlaylistResource]
+    delete: gapiDotYoutubeLib.Anon_Id => gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubePlaylistResource],
+    insert: gapiDotYoutubeLib.Anon_Part => gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubePlaylistResource],
+    list: gapiDotYoutubeLib.Anon_ChannelIdId => gapiLib.gapiNs.clientNs.HttpRequest[
+      gapiDotYoutubeLib.GoogleApiYouTubePaginationInfo[gapiDotYoutubeLib.GoogleApiYouTubePlaylistResource]
     ],
-    insert: js.Function1[
-      gapiDotYoutubeLib.Anon_Part, 
-      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubePlaylistResource]
-    ],
-    list: js.Function1[
-      gapiDotYoutubeLib.Anon_ChannelIdId, 
-      gapiLib.gapiNs.clientNs.HttpRequest[
-        gapiDotYoutubeLib.GoogleApiYouTubePaginationInfo[gapiDotYoutubeLib.GoogleApiYouTubePlaylistResource]
-      ]
-    ],
-    update: js.Function1[
-      gapiDotYoutubeLib.Anon_Part, 
-      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubePlaylistResource]
-    ]
+    update: gapiDotYoutubeLib.Anon_Part => gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubePlaylistResource]
   ): playlists = {
-    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[playlists]
   }

@@ -78,11 +78,11 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
-    complete: js.Function1[/* e */ CompleteEventArgs, scala.Unit] = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    change: /* e */ ChangeEventArgs => scala.Unit = null,
+    complete: /* e */ CompleteEventArgs => scala.Unit = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -92,17 +92,17 @@ object Model {
     minValue: scala.Int | scala.Double = null,
     percentage: scala.Int | scala.Double = null,
     showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
-    start: js.Function1[/* e */ StartEventArgs, scala.Unit] = null,
+    start: /* e */ StartEventArgs => scala.Unit = null,
     text: java.lang.String = null,
     value: scala.Int | scala.Double = null,
     width: scala.Double | java.lang.String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
@@ -112,7 +112,7 @@ object Model {
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
     if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
     if (text != null) __obj.updateDynamic("text")(text)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

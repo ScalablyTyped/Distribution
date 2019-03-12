@@ -20,10 +20,10 @@ trait DraggableOption extends js.Object {
 object DraggableOption {
   @scala.inline
   def apply(
-    before: js.Function1[/* e */ js.UndefOr[DraggableEvent], scala.Boolean] = null,
+    before: /* e */ js.UndefOr[DraggableEvent] => scala.Boolean = null,
     container: java.lang.String = null,
-    drag: js.Function1[/* e */ DraggableEvent, scala.Unit] = null,
-    finish: js.Function1[/* e */ DraggableEvent, scala.Unit] = null,
+    drag: /* e */ DraggableEvent => scala.Unit = null,
+    finish: /* e */ DraggableEvent => scala.Unit = null,
     handle: java.lang.String = null,
     mouseButton: java.lang.String = null,
     move: js.UndefOr[scala.Boolean] = js.undefined,
@@ -31,10 +31,10 @@ object DraggableOption {
     stopPropagation: js.UndefOr[scala.Boolean] = js.undefined
   ): DraggableOption = {
     val __obj = js.Dynamic.literal()
-    if (before != null) __obj.updateDynamic("before")(before)
+    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction1(before))
     if (container != null) __obj.updateDynamic("container")(container)
-    if (drag != null) __obj.updateDynamic("drag")(drag)
-    if (finish != null) __obj.updateDynamic("finish")(finish)
+    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1(drag))
+    if (finish != null) __obj.updateDynamic("finish")(js.Any.fromFunction1(finish))
     if (handle != null) __obj.updateDynamic("handle")(handle)
     if (mouseButton != null) __obj.updateDynamic("mouseButton")(mouseButton)
     if (!js.isUndefined(move)) __obj.updateDynamic("move")(move)

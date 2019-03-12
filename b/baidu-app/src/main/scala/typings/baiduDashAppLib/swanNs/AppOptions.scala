@@ -49,19 +49,19 @@ object AppOptions {
   @scala.inline
   def apply(
     globalData: js.Object = null,
-    onError: js.Function1[/* msg */ java.lang.String, scala.Unit] = null,
-    onHide: js.Function0[scala.Unit] = null,
-    onLaunch: js.Function1[/* option */ LaunchOptions, scala.Unit] = null,
-    onShow: js.Function1[/* option */ LaunchOptions, scala.Unit] = null,
-    onUnlaunch: js.Function0[scala.Unit] = null
+    onError: /* msg */ java.lang.String => scala.Unit = null,
+    onHide: () => scala.Unit = null,
+    onLaunch: /* option */ LaunchOptions => scala.Unit = null,
+    onShow: /* option */ LaunchOptions => scala.Unit = null,
+    onUnlaunch: () => scala.Unit = null
   ): AppOptions = {
     val __obj = js.Dynamic.literal()
     if (globalData != null) __obj.updateDynamic("globalData")(globalData)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onLaunch != null) __obj.updateDynamic("onLaunch")(onLaunch)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
-    if (onUnlaunch != null) __obj.updateDynamic("onUnlaunch")(onUnlaunch)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))
+    if (onLaunch != null) __obj.updateDynamic("onLaunch")(js.Any.fromFunction1(onLaunch))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
+    if (onUnlaunch != null) __obj.updateDynamic("onUnlaunch")(js.Any.fromFunction0(onUnlaunch))
     __obj.asInstanceOf[AppOptions]
   }
 }

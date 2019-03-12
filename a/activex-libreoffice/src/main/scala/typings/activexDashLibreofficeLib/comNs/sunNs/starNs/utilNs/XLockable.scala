@@ -35,12 +35,8 @@ trait XLockable extends js.Object {
 
 object XLockable {
   @scala.inline
-  def apply(
-    isLocked: js.Function0[scala.Boolean],
-    lock: js.Function0[scala.Unit],
-    unlock: js.Function0[scala.Unit]
-  ): XLockable = {
-    val __obj = js.Dynamic.literal(isLocked = isLocked, lock = lock, unlock = unlock)
+  def apply(isLocked: () => scala.Boolean, lock: () => scala.Unit, unlock: () => scala.Unit): XLockable = {
+    val __obj = js.Dynamic.literal(isLocked = js.Any.fromFunction0(isLocked), lock = js.Any.fromFunction0(lock), unlock = js.Any.fromFunction0(unlock))
   
     __obj.asInstanceOf[XLockable]
   }

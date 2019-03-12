@@ -11,7 +11,7 @@ class ExchangeUser protected () extends js.Object {
   var Address: java.lang.String = js.native
   val AddressEntryUserType: OlAddressEntryUserType = js.native
   val Alias: java.lang.String = js.native
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   var AssistantName: java.lang.String = js.native
   var BusinessTelephoneNumber: java.lang.String = js.native
   var City: java.lang.String = js.native
@@ -34,7 +34,7 @@ class ExchangeUser protected () extends js.Object {
   val Parent: js.Any = js.native
   var PostalCode: java.lang.String = js.native
   val PrimarySmtpAddress: java.lang.String = js.native
-  val PropertyAccessor: PropertyAccessor = js.native
+  val PropertyAccessor: activexDashOutlookLib.OutlookNs.PropertyAccessor = js.native
   val Session: NameSpace = js.native
   var StateOrProvince: java.lang.String = js.native
   var StreetAddress: java.lang.String = js.native
@@ -52,8 +52,8 @@ class ExchangeUser protected () extends js.Object {
   def GetExchangeDistributionList(): ExchangeDistributionList = js.native
   def GetExchangeUser(): ExchangeUser = js.native
   def GetExchangeUserManager(): ExchangeUser = js.native
-  def GetFreeBusy(Start: activexDashInteropLib.VarDate, MinPerChar: scala.Double): java.lang.String = js.native
-  def GetFreeBusy(Start: activexDashInteropLib.VarDate, MinPerChar: scala.Double, CompleteFormat: js.Any): java.lang.String = js.native
+  def GetFreeBusy(Start: stdLib.VarDate, MinPerChar: scala.Double): java.lang.String = js.native
+  def GetFreeBusy(Start: stdLib.VarDate, MinPerChar: scala.Double, CompleteFormat: js.Any): java.lang.String = js.native
   def GetMemberOfList(): AddressEntries = js.native
   def GetPicture(): activexDashStdoleLib.stdoleNs.StdPicture = js.native
   def Update(): scala.Unit = js.native

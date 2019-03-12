@@ -26,8 +26,8 @@ object IOCRZone {
   @scala.inline
   def apply(
     Barcode: scala.Boolean,
-    ClearOCROptions: js.Function0[scala.Unit],
-    Clone: js.Function0[IOCRZone],
+    ClearOCROptions: () => scala.Unit,
+    Clone: () => IOCRZone,
     DataType: mfilesLib.MFilesNs.MFDataType,
     DimensionUnit: mfilesLib.MFilesNs.MFOCRDimensionUnit,
     HasOCROptions: scala.Boolean,
@@ -36,11 +36,11 @@ object IOCRZone {
     Left: scala.Double,
     Name: java.lang.String,
     OCROptions: IOCROptions,
-    SetOCROptions: js.Function1[IOCROptions, scala.Unit],
+    SetOCROptions: IOCROptions => scala.Unit,
     Top: scala.Double,
     Width: scala.Double
   ): IOCRZone = {
-    val __obj = js.Dynamic.literal(Barcode = Barcode, ClearOCROptions = ClearOCROptions, Clone = Clone, DataType = DataType, DimensionUnit = DimensionUnit, HasOCROptions = HasOCROptions, Height = Height, ID = ID, Left = Left, Name = Name, OCROptions = OCROptions, SetOCROptions = SetOCROptions, Top = Top, Width = Width)
+    val __obj = js.Dynamic.literal(Barcode = Barcode, ClearOCROptions = js.Any.fromFunction0(ClearOCROptions), Clone = js.Any.fromFunction0(Clone), DataType = DataType, DimensionUnit = DimensionUnit, HasOCROptions = HasOCROptions, Height = Height, ID = ID, Left = Left, Name = Name, OCROptions = OCROptions, SetOCROptions = js.Any.fromFunction1(SetOCROptions), Top = Top, Width = Width)
   
     __obj.asInstanceOf[IOCRZone]
   }

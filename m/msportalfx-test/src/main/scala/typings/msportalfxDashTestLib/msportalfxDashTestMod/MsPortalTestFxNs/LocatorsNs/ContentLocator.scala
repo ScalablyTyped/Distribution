@@ -12,12 +12,12 @@ trait ContentLocator extends Locator {
 object ContentLocator {
   @scala.inline
   def apply(
-    findElements: js.Function1[js.Any, js.Any],
+    findElements: js.Any => js.Any,
     locators: js.Array[Locator],
     seleniumLocator: js.Any,
-    toString: js.Function0[java.lang.String]
+    toString: () => java.lang.String
   ): ContentLocator = {
-    val __obj = js.Dynamic.literal(findElements = findElements, locators = locators, seleniumLocator = seleniumLocator, toString = toString)
+    val __obj = js.Dynamic.literal(findElements = js.Any.fromFunction1(findElements), locators = locators, seleniumLocator = seleniumLocator, toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[ContentLocator]
   }

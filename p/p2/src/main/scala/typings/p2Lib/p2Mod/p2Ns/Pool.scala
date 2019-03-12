@@ -14,13 +14,8 @@ trait Pool extends js.Object {
 
 object Pool {
   @scala.inline
-  def apply(
-    get: js.Function0[js.Any],
-    objects: js.Array[_],
-    release: js.Function1[js.Any, Pool],
-    resize: js.Function1[scala.Double, Pool]
-  ): Pool = {
-    val __obj = js.Dynamic.literal(get = get, objects = objects, release = release, resize = resize)
+  def apply(get: () => js.Any, objects: js.Array[_], release: js.Any => Pool, resize: scala.Double => Pool): Pool = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), objects = objects, release = js.Any.fromFunction1(release), resize = js.Any.fromFunction1(resize))
   
     __obj.asInstanceOf[Pool]
   }

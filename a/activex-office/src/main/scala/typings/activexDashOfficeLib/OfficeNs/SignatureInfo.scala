@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class SignatureInfo protected () extends js.Object {
   val Application: js.Any = js.native
-  val CertificateVerificationResults: CertificateVerificationResults = js.native
-  val ContentVerificationResults: ContentVerificationResults = js.native
+  val CertificateVerificationResults: activexDashOfficeLib.OfficeNs.CertificateVerificationResults = js.native
+  val ContentVerificationResults: activexDashOfficeLib.OfficeNs.ContentVerificationResults = js.native
   val Creator: scala.Double = js.native
   val IsCertificateExpired: scala.Boolean = js.native
   val IsCertificateRevoked: scala.Boolean = js.native

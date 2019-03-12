@@ -67,7 +67,7 @@ object ProductVariant {
   @scala.inline
   def apply(
     available: scala.Boolean,
-    checkoutUrl: js.Function1[scala.Double, java.lang.String],
+    checkoutUrl: scala.Double => java.lang.String,
     compareAtPrice: java.lang.String,
     formattedPrice: java.lang.String,
     grams: scala.Double,
@@ -82,7 +82,7 @@ object ProductVariant {
     attrs: js.Any = null,
     onlineStoreUrl: java.lang.String = null
   ): ProductVariant = {
-    val __obj = js.Dynamic.literal(available = available, checkoutUrl = checkoutUrl, compareAtPrice = compareAtPrice, formattedPrice = formattedPrice, grams = grams, id = id.asInstanceOf[js.Any], image = image, imageVariant = imageVariant, optionValues = optionValues, price = price, productId = productId.asInstanceOf[js.Any], productTitle = productTitle, title = title)
+    val __obj = js.Dynamic.literal(available = available, checkoutUrl = js.Any.fromFunction1(checkoutUrl), compareAtPrice = compareAtPrice, formattedPrice = formattedPrice, grams = grams, id = id.asInstanceOf[js.Any], image = image, imageVariant = imageVariant, optionValues = optionValues, price = price, productId = productId.asInstanceOf[js.Any], productTitle = productTitle, title = title)
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
     if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl)
     __obj.asInstanceOf[ProductVariant]

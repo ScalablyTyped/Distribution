@@ -12,8 +12,8 @@ trait IOCRPageResults extends js.Object {
 
 object IOCRPageResults {
   @scala.inline
-  def apply(Count: scala.Double, Item: js.Function1[scala.Double, IOCRPageResult]): IOCRPageResults = {
-    val __obj = js.Dynamic.literal(Count = Count, Item = Item)
+  def apply(Count: scala.Double, Item: scala.Double => IOCRPageResult): IOCRPageResults = {
+    val __obj = js.Dynamic.literal(Count = Count, Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[IOCRPageResults]
   }

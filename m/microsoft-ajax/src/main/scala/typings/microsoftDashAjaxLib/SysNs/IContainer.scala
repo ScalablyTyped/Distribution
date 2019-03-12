@@ -44,12 +44,12 @@ trait IContainer extends js.Object {
 object IContainer {
   @scala.inline
   def apply(
-    addComponent: js.Function1[Component, scala.Unit],
-    findComponent: js.Function1[java.lang.String, Component],
-    getComponents: js.Function0[js.Array[Component]],
-    removeComponent: js.Function1[Component, scala.Unit]
+    addComponent: Component => scala.Unit,
+    findComponent: java.lang.String => Component,
+    getComponents: () => js.Array[Component],
+    removeComponent: Component => scala.Unit
   ): IContainer = {
-    val __obj = js.Dynamic.literal(addComponent = addComponent, findComponent = findComponent, getComponents = getComponents, removeComponent = removeComponent)
+    val __obj = js.Dynamic.literal(addComponent = js.Any.fromFunction1(addComponent), findComponent = js.Any.fromFunction1(findComponent), getComponents = js.Any.fromFunction0(getComponents), removeComponent = js.Any.fromFunction1(removeComponent))
   
     __obj.asInstanceOf[IContainer]
   }

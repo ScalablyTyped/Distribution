@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-sound", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentClass[
-    reactDashSoundLib.reactDashSoundMod.ReactSoundProps, 
-    reactLib.reactMod.ReactNs.ComponentState
-  ] = js.native
+  val default: reactLib.reactMod.ReactNs.ComponentClass[ReactSoundProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
 }
 

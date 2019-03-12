@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/autoscaling/notificationType", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var InstanceLaunchErrorNotification: atPulumiAwsLib.autoscalingNotificationTypeMod.NotificationType = js.native
-  var InstanceLaunchNotification: atPulumiAwsLib.autoscalingNotificationTypeMod.NotificationType = js.native
-  var InstanceTerminateErrorNotification: atPulumiAwsLib.autoscalingNotificationTypeMod.NotificationType = js.native
-  var InstanceTerminateNotification: atPulumiAwsLib.autoscalingNotificationTypeMod.NotificationType = js.native
-  var TestNotification: atPulumiAwsLib.autoscalingNotificationTypeMod.NotificationType = js.native
+  var InstanceLaunchErrorNotification: NotificationType = js.native
+  var InstanceLaunchNotification: NotificationType = js.native
+  var InstanceTerminateErrorNotification: NotificationType = js.native
+  var InstanceTerminateNotification: NotificationType = js.native
+  var TestNotification: NotificationType = js.native
 }
 

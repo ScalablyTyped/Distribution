@@ -15,9 +15,7 @@ trait JQueryEasingFunctions
   var linear_Original: JQueryEasingFunction = js.native
   @JSName("swing")
   var swing_Original: JQueryEasingFunction = js.native
-  // tslint:disable-next-line:callable-types
   def linear(percent: scala.Double): scala.Double = js.native
-  // tslint:disable-next-line:callable-types
   def swing(percent: scala.Double): scala.Double = js.native
 }
 

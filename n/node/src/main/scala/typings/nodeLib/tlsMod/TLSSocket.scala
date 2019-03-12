@@ -84,13 +84,13 @@ class TLSSocket protected ()
     * Could be used to speed up handshake establishment when reconnecting to the server.
     * @returns ASN.1 encoded TLS session or undefined if none was negotiated.
     */
-  def getSession(): js.Any = js.native
+  def getSession(): js.UndefOr[nodeLib.Buffer] = js.native
   /**
     * NOTE: Works only with client TLS sockets.
     * Useful only for debugging, for session reuse provide session option to tls.connect().
     * @returns TLS session ticket or undefined if none was negotiated.
     */
-  def getTLSTicket(): js.Any = js.native
+  def getTLSTicket(): js.UndefOr[nodeLib.Buffer] = js.native
   @JSName("on")
   def on_OCSPResponse(
     event: nodeLib.nodeLibStrings.OCSPResponse,
@@ -148,11 +148,12 @@ class TLSSocket protected ()
     * requestCert (See tls.createServer() for details).
     * @param callback - callback(err) will be executed with null as err, once the renegotiation
     * is successfully completed.
+    * @return `undefined` when socket is destroy, `false` if negotiaion can't be initiated.
     */
   def renegotiate(
     options: nodeLib.Anon_RejectUnauthorizedRequestCert,
     callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
-  ): js.Any = js.native
+  ): js.UndefOr[scala.Boolean] = js.native
   /**
     * Set maximum TLS fragment size (default and maximum value is: 16384, minimum is: 512).
     * Smaller fragment size decreases buffering latency on the client: large fragments are buffered by

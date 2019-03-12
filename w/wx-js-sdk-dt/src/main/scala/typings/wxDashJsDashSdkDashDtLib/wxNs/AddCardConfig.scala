@@ -14,10 +14,10 @@ object AddCardConfig {
   @scala.inline
   def apply(
     cardList: js.Array[Card],
-    success: js.Function1[/* res */ wxDashJsDashSdkDashDtLib.Anon_CardList, scala.Unit] = null
+    success: /* res */ wxDashJsDashSdkDashDtLib.Anon_CardList => scala.Unit = null
   ): AddCardConfig = {
     val __obj = js.Dynamic.literal(cardList = cardList)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[AddCardConfig]
   }
 }

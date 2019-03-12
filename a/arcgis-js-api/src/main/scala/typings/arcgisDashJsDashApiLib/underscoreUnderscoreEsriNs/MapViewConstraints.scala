@@ -89,8 +89,8 @@ object MapViewConstraints {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     effectiveLODs: js.Array[LOD] = null,
     effectiveMaxScale: scala.Int | scala.Double = null,
     effectiveMaxZoom: scala.Int | scala.Double = null,
@@ -104,7 +104,7 @@ object MapViewConstraints {
     rotationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     snapToZoom: js.UndefOr[scala.Boolean] = js.undefined
   ): MapViewConstraints = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (effectiveLODs != null) __obj.updateDynamic("effectiveLODs")(effectiveLODs)
     if (effectiveMaxScale != null) __obj.updateDynamic("effectiveMaxScale")(effectiveMaxScale.asInstanceOf[js.Any])
     if (effectiveMaxZoom != null) __obj.updateDynamic("effectiveMaxZoom")(effectiveMaxZoom.asInstanceOf[js.Any])

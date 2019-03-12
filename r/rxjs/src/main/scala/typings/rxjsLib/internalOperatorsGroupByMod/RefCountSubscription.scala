@@ -18,9 +18,9 @@ object RefCountSubscription {
     attemptedToUnsubscribe: scala.Boolean,
     closed: scala.Boolean,
     count: scala.Double,
-    unsubscribe: js.Function0[scala.Unit]
+    unsubscribe: () => scala.Unit
   ): RefCountSubscription = {
-    val __obj = js.Dynamic.literal(attemptedToUnsubscribe = attemptedToUnsubscribe, closed = closed, count = count, unsubscribe = unsubscribe)
+    val __obj = js.Dynamic.literal(attemptedToUnsubscribe = attemptedToUnsubscribe, closed = closed, count = count, unsubscribe = js.Any.fromFunction0(unsubscribe))
   
     __obj.asInstanceOf[RefCountSubscription]
   }

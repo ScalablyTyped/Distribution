@@ -13,8 +13,8 @@ trait Update extends js.Object {
 
 object Update {
   @scala.inline
-  def apply(format: js.Function0[java.lang.String]): Update = {
-    val __obj = js.Dynamic.literal(format = format)
+  def apply(format: () => java.lang.String): Update = {
+    val __obj = js.Dynamic.literal(format = js.Any.fromFunction0(format))
   
     __obj.asInstanceOf[Update]
   }

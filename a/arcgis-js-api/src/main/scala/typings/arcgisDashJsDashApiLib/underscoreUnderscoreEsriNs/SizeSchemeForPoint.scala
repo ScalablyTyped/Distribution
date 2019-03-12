@@ -63,17 +63,17 @@ object SizeSchemeForPoint {
   def apply(
     color: Color,
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     maxSize: scala.Double,
     minSize: scala.Double,
     noDataColor: Color,
     noDataSize: scala.Double,
     opacity: scala.Double,
     outline: SizeSchemeForPointOutline,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     size: scala.Double
   ): SizeSchemeForPoint = {
-    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, maxSize = maxSize, minSize = minSize, noDataColor = noDataColor, noDataSize = noDataSize, opacity = opacity, outline = outline, propertyIsEnumerable = propertyIsEnumerable, size = size)
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxSize = maxSize, minSize = minSize, noDataColor = noDataColor, noDataSize = noDataSize, opacity = opacity, outline = outline, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size)
   
     __obj.asInstanceOf[SizeSchemeForPoint]
   }

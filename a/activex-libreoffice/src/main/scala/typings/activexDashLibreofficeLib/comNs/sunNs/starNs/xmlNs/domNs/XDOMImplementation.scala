@@ -32,14 +32,14 @@ trait XDOMImplementation
 object XDOMImplementation {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createDocument: js.Function3[java.lang.String, java.lang.String, XDocumentType, XDocument],
-    createDocumentType: js.Function3[java.lang.String, java.lang.String, java.lang.String, XDocumentType],
-    hasFeature: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createDocument: (java.lang.String, java.lang.String, XDocumentType) => XDocument,
+    createDocumentType: (java.lang.String, java.lang.String, java.lang.String) => XDocumentType,
+    hasFeature: (java.lang.String, java.lang.String) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDOMImplementation = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createDocument = createDocument, createDocumentType = createDocumentType, hasFeature = hasFeature, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createDocument = js.Any.fromFunction3(createDocument), createDocumentType = js.Any.fromFunction3(createDocumentType), hasFeature = js.Any.fromFunction2(hasFeature), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDOMImplementation]
   }

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs/internal/util/ObjectUnsubscribedError", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val ObjectUnsubscribedError: rxjsLib.internalUtilObjectUnsubscribedErrorMod.ObjectUnsubscribedErrorCtor = js.native
+  val ObjectUnsubscribedError: ObjectUnsubscribedErrorCtor = js.native
 }
 

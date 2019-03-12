@@ -13,8 +13,8 @@ trait Openable extends js.Object {
 
 object Openable {
   @scala.inline
-  def apply(close: js.Function0[scala.Unit], isOpen: scala.Boolean, open: js.Function0[scala.Unit]): Openable = {
-    val __obj = js.Dynamic.literal(close = close, isOpen = isOpen, open = open)
+  def apply(close: () => scala.Unit, isOpen: scala.Boolean, open: () => scala.Unit): Openable = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), isOpen = isOpen, open = js.Any.fromFunction0(open))
   
     __obj.asInstanceOf[Openable]
   }

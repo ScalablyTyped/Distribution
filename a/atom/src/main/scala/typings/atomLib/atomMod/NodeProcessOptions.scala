@@ -31,17 +31,17 @@ object NodeProcessOptions {
   def apply(
     command: java.lang.String,
     args: js.Array[java.lang.String] = null,
-    exit: js.Function1[/* code */ scala.Double, scala.Unit] = null,
+    exit: /* code */ scala.Double => scala.Unit = null,
     options: SpawnProcessOptions = null,
-    stderr: js.Function1[/* data */ java.lang.String, scala.Unit] = null,
-    stdout: js.Function1[/* data */ java.lang.String, scala.Unit] = null
+    stderr: /* data */ java.lang.String => scala.Unit = null,
+    stdout: /* data */ java.lang.String => scala.Unit = null
   ): NodeProcessOptions = {
     val __obj = js.Dynamic.literal(command = command)
     if (args != null) __obj.updateDynamic("args")(args)
-    if (exit != null) __obj.updateDynamic("exit")(exit)
+    if (exit != null) __obj.updateDynamic("exit")(js.Any.fromFunction1(exit))
     if (options != null) __obj.updateDynamic("options")(options)
-    if (stderr != null) __obj.updateDynamic("stderr")(stderr)
-    if (stdout != null) __obj.updateDynamic("stdout")(stdout)
+    if (stderr != null) __obj.updateDynamic("stderr")(js.Any.fromFunction1(stderr))
+    if (stdout != null) __obj.updateDynamic("stdout")(js.Any.fromFunction1(stdout))
     __obj.asInstanceOf[NodeProcessOptions]
   }
 }

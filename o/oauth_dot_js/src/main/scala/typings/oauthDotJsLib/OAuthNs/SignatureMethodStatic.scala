@@ -38,19 +38,16 @@ object SignatureMethodStatic {
   @scala.inline
   def apply(
     REGISTERED: org.scalablytyped.runtime.StringDictionary[oauthDotJsLib.Anon_SignatureMethod],
-    getBaseString: js.Function1[Message, java.lang.String],
-    makeSubclass: js.Function1[
-      js.Function1[/* baseString */ java.lang.String, java.lang.String], 
-      oauthDotJsLib.Anon_SignatureMethod
-    ],
-    newMethod: js.Function2[java.lang.String, Accessor, SignatureMethod],
-    normalizeParameters: js.Function1[ParameterListOrMap, java.lang.String],
-    normalizeUrl: js.Function1[java.lang.String, java.lang.String],
-    parseUri: js.Function1[java.lang.String, Uri],
-    registerMethodClass: js.Function2[js.Array[java.lang.String], oauthDotJsLib.Anon_SignatureMethod, scala.Unit],
-    sign: js.Function2[Message, Accessor, scala.Unit]
+    getBaseString: Message => java.lang.String,
+    makeSubclass: js.Function1[/* baseString */ java.lang.String, java.lang.String] => oauthDotJsLib.Anon_SignatureMethod,
+    newMethod: (java.lang.String, Accessor) => SignatureMethod,
+    normalizeParameters: ParameterListOrMap => java.lang.String,
+    normalizeUrl: java.lang.String => java.lang.String,
+    parseUri: java.lang.String => Uri,
+    registerMethodClass: (js.Array[java.lang.String], oauthDotJsLib.Anon_SignatureMethod) => scala.Unit,
+    sign: (Message, Accessor) => scala.Unit
   ): SignatureMethodStatic = {
-    val __obj = js.Dynamic.literal(REGISTERED = REGISTERED, getBaseString = getBaseString, makeSubclass = makeSubclass, newMethod = newMethod, normalizeParameters = normalizeParameters, normalizeUrl = normalizeUrl, parseUri = parseUri, registerMethodClass = registerMethodClass, sign = sign)
+    val __obj = js.Dynamic.literal(REGISTERED = REGISTERED, getBaseString = js.Any.fromFunction1(getBaseString), makeSubclass = js.Any.fromFunction1(makeSubclass), newMethod = js.Any.fromFunction2(newMethod), normalizeParameters = js.Any.fromFunction1(normalizeParameters), normalizeUrl = js.Any.fromFunction1(normalizeUrl), parseUri = js.Any.fromFunction1(parseUri), registerMethodClass = js.Any.fromFunction2(registerMethodClass), sign = js.Any.fromFunction2(sign))
   
     __obj.asInstanceOf[SignatureMethodStatic]
   }

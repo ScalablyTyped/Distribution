@@ -32,7 +32,7 @@ object Props {
     customLabels: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     defaultCountry: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    onSelect: js.Function1[/* countryCode */ java.lang.String, scala.Unit] = null,
+    onSelect: /* countryCode */ java.lang.String => scala.Unit = null,
     optionsSize: scala.Int | scala.Double = null,
     placeholder: java.lang.String = null,
     searchable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -48,7 +48,7 @@ object Props {
     if (customLabels != null) __obj.updateDynamic("customLabels")(customLabels)
     if (defaultCountry != null) __obj.updateDynamic("defaultCountry")(defaultCountry)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (optionsSize != null) __obj.updateDynamic("optionsSize")(optionsSize.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(searchable)) __obj.updateDynamic("searchable")(searchable)

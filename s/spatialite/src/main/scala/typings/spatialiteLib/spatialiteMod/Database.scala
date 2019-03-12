@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Database ()
   extends sqlite3Lib.sqlite3Mod.Database {
-  def spatialite(cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def spatialite(cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
 }
 

@@ -18,21 +18,21 @@ object MultiStratumBackend {
   def apply(
     AdminEntity: java.lang.String,
     OwnerEntity: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getAdminEntity: js.Function0[java.lang.String],
-    getComponentSchema: js.Function1[java.lang.String, XSchema],
-    getOwnUpdateHandler: js.Function1[java.lang.String, XUpdateHandler],
-    getOwnerEntity: js.Function0[java.lang.String],
-    getUpdateHandler: js.Function2[java.lang.String, java.lang.String, XUpdateHandler],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    isEqualEntity: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    listLayers: js.Function2[java.lang.String, java.lang.String, activexDashInteropLib.SafeArray[XLayer]],
-    listOwnLayers: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[XLayer]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    supportsEntity: js.Function1[java.lang.String, scala.Boolean]
+    acquire: () => scala.Unit,
+    getAdminEntity: () => java.lang.String,
+    getComponentSchema: java.lang.String => XSchema,
+    getOwnUpdateHandler: java.lang.String => XUpdateHandler,
+    getOwnerEntity: () => java.lang.String,
+    getUpdateHandler: (java.lang.String, java.lang.String) => XUpdateHandler,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    isEqualEntity: (java.lang.String, java.lang.String) => scala.Boolean,
+    listLayers: (java.lang.String, java.lang.String) => stdLib.SafeArray[XLayer],
+    listOwnLayers: java.lang.String => stdLib.SafeArray[XLayer],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    supportsEntity: java.lang.String => scala.Boolean
   ): MultiStratumBackend = {
-    val __obj = js.Dynamic.literal(AdminEntity = AdminEntity, OwnerEntity = OwnerEntity, acquire = acquire, getAdminEntity = getAdminEntity, getComponentSchema = getComponentSchema, getOwnUpdateHandler = getOwnUpdateHandler, getOwnerEntity = getOwnerEntity, getUpdateHandler = getUpdateHandler, initialize = initialize, isEqualEntity = isEqualEntity, listLayers = listLayers, listOwnLayers = listOwnLayers, queryInterface = queryInterface, release = release, supportsEntity = supportsEntity)
+    val __obj = js.Dynamic.literal(AdminEntity = AdminEntity, OwnerEntity = OwnerEntity, acquire = js.Any.fromFunction0(acquire), getAdminEntity = js.Any.fromFunction0(getAdminEntity), getComponentSchema = js.Any.fromFunction1(getComponentSchema), getOwnUpdateHandler = js.Any.fromFunction1(getOwnUpdateHandler), getOwnerEntity = js.Any.fromFunction0(getOwnerEntity), getUpdateHandler = js.Any.fromFunction2(getUpdateHandler), initialize = js.Any.fromFunction1(initialize), isEqualEntity = js.Any.fromFunction2(isEqualEntity), listLayers = js.Any.fromFunction2(listLayers), listOwnLayers = js.Any.fromFunction1(listOwnLayers), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), supportsEntity = js.Any.fromFunction1(supportsEntity))
   
     __obj.asInstanceOf[MultiStratumBackend]
   }

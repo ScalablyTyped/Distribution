@@ -16,13 +16,13 @@ trait ResizeObserverProps extends js.Object {
 object ResizeObserverProps {
   @scala.inline
   def apply(
-    onResize: js.Function1[ResizeParams, scala.Unit],
+    onResize: ResizeParams => scala.Unit,
     component: java.lang.String = null,
     target: java.lang.String | js.Object = null,
     watchHeight: js.UndefOr[scala.Boolean] = js.undefined,
     watchWidth: js.UndefOr[scala.Boolean] = js.undefined
   ): ResizeObserverProps = {
-    val __obj = js.Dynamic.literal(onResize = onResize)
+    val __obj = js.Dynamic.literal(onResize = js.Any.fromFunction1(onResize))
     if (component != null) __obj.updateDynamic("component")(component)
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (!js.isUndefined(watchHeight)) __obj.updateDynamic("watchHeight")(watchHeight)

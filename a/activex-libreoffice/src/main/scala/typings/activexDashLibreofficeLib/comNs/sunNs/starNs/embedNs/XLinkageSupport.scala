@@ -52,21 +52,17 @@ object XLinkageSupport {
   @scala.inline
   def apply(
     LinkURL: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    breakLink: js.Function2[XStorage, java.lang.String, scala.Unit],
-    getLinkURL: js.Function0[java.lang.String],
-    isLink: js.Function0[scala.Boolean],
-    isReadonly: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    reload: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    storeOwn: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    breakLink: (XStorage, java.lang.String) => scala.Unit,
+    getLinkURL: () => java.lang.String,
+    isLink: () => scala.Boolean,
+    isReadonly: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    reload: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]) => scala.Unit,
+    storeOwn: () => scala.Unit
   ): XLinkageSupport = {
-    val __obj = js.Dynamic.literal(LinkURL = LinkURL, acquire = acquire, breakLink = breakLink, getLinkURL = getLinkURL, isLink = isLink, isReadonly = isReadonly, queryInterface = queryInterface, release = release, reload = reload, storeOwn = storeOwn)
+    val __obj = js.Dynamic.literal(LinkURL = LinkURL, acquire = js.Any.fromFunction0(acquire), breakLink = js.Any.fromFunction2(breakLink), getLinkURL = js.Any.fromFunction0(getLinkURL), isLink = js.Any.fromFunction0(isLink), isReadonly = js.Any.fromFunction0(isReadonly), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), reload = js.Any.fromFunction2(reload), storeOwn = js.Any.fromFunction0(storeOwn))
   
     __obj.asInstanceOf[XLinkageSupport]
   }

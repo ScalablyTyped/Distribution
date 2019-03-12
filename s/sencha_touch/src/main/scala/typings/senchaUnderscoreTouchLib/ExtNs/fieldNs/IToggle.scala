@@ -67,49 +67,49 @@ object IToggle {
     ISlider: ISlider = null,
     activeLabel: java.lang.String = null,
     cls: java.lang.String = null,
-    getActiveLabel: js.Function0[java.lang.String] = null,
-    getCls: js.Function0[java.lang.String] = null,
-    getInactiveLabel: js.Function0[java.lang.String] = null,
-    getLabelAlign: js.Function0[java.lang.String] = null,
-    getMaxValueCls: js.Function0[java.lang.String] = null,
-    getMinValueCls: js.Function0[java.lang.String] = null,
-    getValue: js.Function0[_] = null,
+    getActiveLabel: () => java.lang.String = null,
+    getCls: () => java.lang.String = null,
+    getInactiveLabel: () => java.lang.String = null,
+    getLabelAlign: () => java.lang.String = null,
+    getMaxValueCls: () => java.lang.String = null,
+    getMinValueCls: () => java.lang.String = null,
+    getValue: () => _ = null,
     inactiveLabel: java.lang.String = null,
     labelAlign: java.lang.String = null,
     maxValueCls: java.lang.String = null,
     minValueCls: java.lang.String = null,
-    setActiveLabel: js.Function1[/* activeLabel */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setCls: js.Function1[/* cls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setInactiveLabel: js.Function1[/* inactiveLabel */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setLabelAlign: js.Function1[/* labelAlign */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setMaxValueCls: js.Function1[/* maxValueCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setMinValueCls: js.Function1[/* minValueCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setValue: js.Function1[/* newValue */ js.UndefOr[scala.Double], _] = null,
-    toggle: js.Function0[_] = null
+    setActiveLabel: /* activeLabel */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setCls: /* cls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setInactiveLabel: /* inactiveLabel */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setLabelAlign: /* labelAlign */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setMaxValueCls: /* maxValueCls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setMinValueCls: /* minValueCls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setValue: /* newValue */ js.UndefOr[scala.Double] => _ = null,
+    toggle: () => _ = null
   ): IToggle = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, ISlider)
     if (activeLabel != null) __obj.updateDynamic("activeLabel")(activeLabel)
     if (cls != null) __obj.updateDynamic("cls")(cls)
-    if (getActiveLabel != null) __obj.updateDynamic("getActiveLabel")(getActiveLabel)
-    if (getCls != null) __obj.updateDynamic("getCls")(getCls)
-    if (getInactiveLabel != null) __obj.updateDynamic("getInactiveLabel")(getInactiveLabel)
-    if (getLabelAlign != null) __obj.updateDynamic("getLabelAlign")(getLabelAlign)
-    if (getMaxValueCls != null) __obj.updateDynamic("getMaxValueCls")(getMaxValueCls)
-    if (getMinValueCls != null) __obj.updateDynamic("getMinValueCls")(getMinValueCls)
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
+    if (getActiveLabel != null) __obj.updateDynamic("getActiveLabel")(js.Any.fromFunction0(getActiveLabel))
+    if (getCls != null) __obj.updateDynamic("getCls")(js.Any.fromFunction0(getCls))
+    if (getInactiveLabel != null) __obj.updateDynamic("getInactiveLabel")(js.Any.fromFunction0(getInactiveLabel))
+    if (getLabelAlign != null) __obj.updateDynamic("getLabelAlign")(js.Any.fromFunction0(getLabelAlign))
+    if (getMaxValueCls != null) __obj.updateDynamic("getMaxValueCls")(js.Any.fromFunction0(getMaxValueCls))
+    if (getMinValueCls != null) __obj.updateDynamic("getMinValueCls")(js.Any.fromFunction0(getMinValueCls))
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
     if (inactiveLabel != null) __obj.updateDynamic("inactiveLabel")(inactiveLabel)
     if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign)
     if (maxValueCls != null) __obj.updateDynamic("maxValueCls")(maxValueCls)
     if (minValueCls != null) __obj.updateDynamic("minValueCls")(minValueCls)
-    if (setActiveLabel != null) __obj.updateDynamic("setActiveLabel")(setActiveLabel)
-    if (setCls != null) __obj.updateDynamic("setCls")(setCls)
-    if (setInactiveLabel != null) __obj.updateDynamic("setInactiveLabel")(setInactiveLabel)
-    if (setLabelAlign != null) __obj.updateDynamic("setLabelAlign")(setLabelAlign)
-    if (setMaxValueCls != null) __obj.updateDynamic("setMaxValueCls")(setMaxValueCls)
-    if (setMinValueCls != null) __obj.updateDynamic("setMinValueCls")(setMinValueCls)
-    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
-    if (toggle != null) __obj.updateDynamic("toggle")(toggle)
+    if (setActiveLabel != null) __obj.updateDynamic("setActiveLabel")(js.Any.fromFunction1(setActiveLabel))
+    if (setCls != null) __obj.updateDynamic("setCls")(js.Any.fromFunction1(setCls))
+    if (setInactiveLabel != null) __obj.updateDynamic("setInactiveLabel")(js.Any.fromFunction1(setInactiveLabel))
+    if (setLabelAlign != null) __obj.updateDynamic("setLabelAlign")(js.Any.fromFunction1(setLabelAlign))
+    if (setMaxValueCls != null) __obj.updateDynamic("setMaxValueCls")(js.Any.fromFunction1(setMaxValueCls))
+    if (setMinValueCls != null) __obj.updateDynamic("setMinValueCls")(js.Any.fromFunction1(setMinValueCls))
+    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
+    if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction0(toggle))
     __obj.asInstanceOf[IToggle]
   }
 }

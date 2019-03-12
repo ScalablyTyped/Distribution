@@ -15,12 +15,12 @@ trait TryBuilder1[A, B] extends js.Object {
 object TryBuilder1 {
   @scala.inline
   def apply[A, B](
-    chain: js.Function1[Try[js.Any], TryBuilder2[A, B, js.Any]],
+    chain: Try[js.Any] => TryBuilder2[A, B, js.Any],
     oa: js.Any,
     ob: js.Any,
-    run: js.Function1[js.Function2[/* a */ A, /* b */ B, js.Any], Try[js.Any]]
+    run: js.Function2[/* a */ A, /* b */ B, js.Any] => Try[js.Any]
   ): TryBuilder1[A, B] = {
-    val __obj = js.Dynamic.literal(chain = chain, oa = oa, ob = ob, run = run)
+    val __obj = js.Dynamic.literal(chain = js.Any.fromFunction1(chain), oa = oa, ob = ob, run = js.Any.fromFunction1(run))
   
     __obj.asInstanceOf[TryBuilder1[A, B]]
   }

@@ -17,10 +17,10 @@ object IPrintCustomOptionDetails {
     optionId: java.lang.String,
     optionType: PrintOptionType,
     state: PrintOptionStates,
-    trySetValue: js.Function1[js.Any, scala.Boolean],
+    trySetValue: js.Any => scala.Boolean,
     value: js.Any
   ): IPrintCustomOptionDetails = {
-    val __obj = js.Dynamic.literal(displayName = displayName, errorText = errorText, optionId = optionId, optionType = optionType, state = state, trySetValue = trySetValue, value = value)
+    val __obj = js.Dynamic.literal(displayName = displayName, errorText = errorText, optionId = optionId, optionType = optionType, state = state, trySetValue = js.Any.fromFunction1(trySetValue), value = value)
   
     __obj.asInstanceOf[IPrintCustomOptionDetails]
   }

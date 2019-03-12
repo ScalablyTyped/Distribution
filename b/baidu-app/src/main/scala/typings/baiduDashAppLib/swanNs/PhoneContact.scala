@@ -83,9 +83,9 @@ object PhoneContact {
     addressPostalCode: java.lang.String = null,
     addressState: java.lang.String = null,
     addressStreet: java.lang.String = null,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    complete: /* res */ js.Any => scala.Unit = null,
     email: java.lang.String = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
+    fail: js.Any => scala.Unit = null,
     homeAddressCity: java.lang.String = null,
     homeAddressCountry: java.lang.String = null,
     homeAddressPostalCode: java.lang.String = null,
@@ -101,7 +101,7 @@ object PhoneContact {
     organization: java.lang.String = null,
     photoFilePath: java.lang.String = null,
     remark: java.lang.String = null,
-    success: js.Function1[js.Any, scala.Unit] = null,
+    success: js.Any => scala.Unit = null,
     title: java.lang.String = null,
     url: java.lang.String = null,
     weChatNumber: java.lang.String = null,
@@ -119,9 +119,9 @@ object PhoneContact {
     if (addressPostalCode != null) __obj.updateDynamic("addressPostalCode")(addressPostalCode)
     if (addressState != null) __obj.updateDynamic("addressState")(addressState)
     if (addressStreet != null) __obj.updateDynamic("addressStreet")(addressStreet)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (email != null) __obj.updateDynamic("email")(email)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (homeAddressCity != null) __obj.updateDynamic("homeAddressCity")(homeAddressCity)
     if (homeAddressCountry != null) __obj.updateDynamic("homeAddressCountry")(homeAddressCountry)
     if (homeAddressPostalCode != null) __obj.updateDynamic("homeAddressPostalCode")(homeAddressPostalCode)
@@ -137,7 +137,7 @@ object PhoneContact {
     if (organization != null) __obj.updateDynamic("organization")(organization)
     if (photoFilePath != null) __obj.updateDynamic("photoFilePath")(photoFilePath)
     if (remark != null) __obj.updateDynamic("remark")(remark)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     if (title != null) __obj.updateDynamic("title")(title)
     if (url != null) __obj.updateDynamic("url")(url)
     if (weChatNumber != null) __obj.updateDynamic("weChatNumber")(weChatNumber)

@@ -22,8 +22,8 @@ object ^ extends js.Object {
   def getSecondaryColor(primaryColor: java.lang.String): java.lang.String = js.native
   def isIconDefinition(target: js.Any): /* is @ant-design/icons.@ant-design/icons/lib/types.IconDefinition */ scala.Boolean = js.native
   def log(message: java.lang.String): scala.Unit = js.native
-  def normalizeAttrs(): atAntDashDesignIconsDashReactLib.libUtilsMod.Attrs = js.native
-  def normalizeAttrs(attrs: atAntDashDesignIconsDashReactLib.libUtilsMod.Attrs): atAntDashDesignIconsDashReactLib.libUtilsMod.Attrs = js.native
+  def normalizeAttrs(): Attrs = js.native
+  def normalizeAttrs(attrs: Attrs): Attrs = js.native
   @JSName("withSuffix")
   def withSuffix_fill(
     name: java.lang.String,

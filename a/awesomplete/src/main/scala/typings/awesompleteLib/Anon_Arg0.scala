@@ -11,8 +11,8 @@ trait Anon_Arg0 extends js.Object {
 
 object Anon_Arg0 {
   @scala.inline
-  def apply(replace: js.Function2[stdLib.RegExp, java.lang.String, scala.Unit]): Anon_Arg0 = {
-    val __obj = js.Dynamic.literal(replace = replace)
+  def apply(replace: (stdLib.RegExp, java.lang.String) => scala.Unit): Anon_Arg0 = {
+    val __obj = js.Dynamic.literal(replace = js.Any.fromFunction2(replace))
   
     __obj.asInstanceOf[Anon_Arg0]
   }

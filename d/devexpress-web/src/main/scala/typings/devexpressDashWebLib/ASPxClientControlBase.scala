@@ -58,18 +58,18 @@ trait ASPxClientControlBase extends js.Object {
 object ASPxClientControlBase {
   @scala.inline
   def apply(
-    GetClientVisible: js.Function0[scala.Boolean],
-    GetMainElement: js.Function0[js.Object],
-    GetParentControl: js.Function0[js.Object],
-    GetVisible: js.Function0[scala.Boolean],
-    InCallback: js.Function0[scala.Boolean],
+    GetClientVisible: () => scala.Boolean,
+    GetMainElement: () => js.Object,
+    GetParentControl: () => js.Object,
+    GetVisible: () => scala.Boolean,
+    InCallback: () => scala.Boolean,
     Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
-    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
-    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    SendMessageToAssistiveTechnology: java.lang.String => scala.Unit,
+    SetClientVisible: scala.Boolean => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
     name: java.lang.String
   ): ASPxClientControlBase = {
-    val __obj = js.Dynamic.literal(GetClientVisible = GetClientVisible, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetVisible = GetVisible, InCallback = InCallback, Init = Init, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetVisible = SetVisible, name = name)
+    val __obj = js.Dynamic.literal(GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetVisible = js.Any.fromFunction0(GetVisible), InCallback = js.Any.fromFunction0(InCallback), Init = Init, SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetVisible = js.Any.fromFunction1(SetVisible), name = name)
   
     __obj.asInstanceOf[ASPxClientControlBase]
   }

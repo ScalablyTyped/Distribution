@@ -24,15 +24,15 @@ object PublicKeyInfo {
   @scala.inline
   def apply(
     algorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
-    fromJSON: js.Function1[stdLib.JsonWebKey, scala.Unit],
-    fromSchema: js.Function1[js.Any, scala.Unit],
-    importKey: js.Function1[stdLib.CryptoKey, js.Thenable[scala.Unit]],
+    fromJSON: stdLib.JsonWebKey => scala.Unit,
+    fromSchema: js.Any => scala.Unit,
+    importKey: stdLib.CryptoKey => js.Thenable[scala.Unit],
     subjectPublicKey: asn1jsLib.asn1jsMod.BitString,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     parsedKey: pkijsLib.srcECPublicKeyMod.default | pkijsLib.srcRSAPublicKeyMod.default = null
   ): PublicKeyInfo = {
-    val __obj = js.Dynamic.literal(algorithm = algorithm, fromJSON = fromJSON, fromSchema = fromSchema, importKey = importKey, subjectPublicKey = subjectPublicKey, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(algorithm = algorithm, fromJSON = js.Any.fromFunction1(fromJSON), fromSchema = js.Any.fromFunction1(fromSchema), importKey = js.Any.fromFunction1(importKey), subjectPublicKey = subjectPublicKey, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
     if (parsedKey != null) __obj.updateDynamic("parsedKey")(parsedKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyInfo]
   }

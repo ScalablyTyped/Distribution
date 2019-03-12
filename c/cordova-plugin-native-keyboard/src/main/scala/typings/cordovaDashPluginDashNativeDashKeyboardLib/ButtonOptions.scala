@@ -42,12 +42,12 @@ object ButtonOptions {
   @scala.inline
   def apply(
     color: java.lang.String,
-    onPress: js.Function0[scala.Unit],
+    onPress: () => scala.Unit,
     textStyle: java.lang.String = null,
     `type`: java.lang.String = null,
     value: java.lang.String = null
   ): ButtonOptions = {
-    val __obj = js.Dynamic.literal(color = color, onPress = onPress)
+    val __obj = js.Dynamic.literal(color = color, onPress = js.Any.fromFunction0(onPress))
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (value != null) __obj.updateDynamic("value")(value)

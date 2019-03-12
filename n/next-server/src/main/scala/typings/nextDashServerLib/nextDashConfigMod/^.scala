@@ -8,11 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("next-server/next-config", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def default(phase: java.lang.String, dir: java.lang.String): nextDashServerLib.nextDashConfigMod.NextConfig = js.native
-  def default(
-    phase: java.lang.String,
-    dir: java.lang.String,
-    customConfig: nextDashServerLib.nextDashConfigMod.NextConfig
-  ): nextDashServerLib.nextDashConfigMod.NextConfig = js.native
+  def default(phase: java.lang.String, dir: java.lang.String): NextConfig = js.native
+  def default(phase: java.lang.String, dir: java.lang.String, customConfig: NextConfig): NextConfig = js.native
 }
 

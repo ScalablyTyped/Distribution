@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val introspectionQuery: java.lang.String = js.native
   def getIntrospectionQuery(): java.lang.String = js.native
-  def getIntrospectionQuery(options: graphqlLib.utilitiesIntrospectionQueryMod.IntrospectionOptions): java.lang.String = js.native
+  def getIntrospectionQuery(options: IntrospectionOptions): java.lang.String = js.native
 }
 

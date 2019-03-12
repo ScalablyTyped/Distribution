@@ -15,10 +15,10 @@ object Settings {
   @scala.inline
   def apply(
     config: org.scalablytyped.runtime.StringDictionary[js.Any],
-    define: js.Function2[java.lang.String, js.Any, scala.Unit],
+    define: (java.lang.String, js.Any) => scala.Unit,
     name: java.lang.String
   ): Settings = {
-    val __obj = js.Dynamic.literal(config = config, define = define, name = name)
+    val __obj = js.Dynamic.literal(config = config, define = js.Any.fromFunction2(define), name = name)
   
     __obj.asInstanceOf[Settings]
   }

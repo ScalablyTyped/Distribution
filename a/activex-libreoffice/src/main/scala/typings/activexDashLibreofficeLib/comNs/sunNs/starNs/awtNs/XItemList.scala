@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /** provides convenient access to the list of items in a list box */
 trait XItemList extends js.Object {
   /** retrieves the texts and images of all items in the list */
-  val AllItems: activexDashInteropLib.SafeArray[
+  val AllItems: stdLib.SafeArray[
     activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[java.lang.String, java.lang.String]
   ]
   /** is the number of items in the list */
@@ -16,7 +16,7 @@ trait XItemList extends js.Object {
   /** registers a listener which is notified about changes in the item list. */
   def addItemListListener(Listener: XItemListListener): scala.Unit
   /** retrieves the texts and images of all items in the list */
-  def getAllItems(): activexDashInteropLib.SafeArray[
+  def getAllItems(): stdLib.SafeArray[
     activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[java.lang.String, java.lang.String]
   ]
   /**
@@ -114,35 +114,30 @@ trait XItemList extends js.Object {
 object XItemList {
   @scala.inline
   def apply(
-    AllItems: activexDashInteropLib.SafeArray[
+    AllItems: stdLib.SafeArray[
       activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[java.lang.String, java.lang.String]
     ],
     ItemCount: scala.Double,
-    addItemListListener: js.Function1[XItemListListener, scala.Unit],
-    getAllItems: js.Function0[
-      activexDashInteropLib.SafeArray[
-        activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[java.lang.String, java.lang.String]
-      ]
-    ],
-    getItemData: js.Function1[scala.Double, js.Any],
-    getItemImage: js.Function1[scala.Double, java.lang.String],
-    getItemText: js.Function1[scala.Double, java.lang.String],
-    getItemTextAndImage: js.Function1[
-      scala.Double, 
+    addItemListListener: XItemListListener => scala.Unit,
+    getAllItems: () => stdLib.SafeArray[
       activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[java.lang.String, java.lang.String]
     ],
-    insertItem: js.Function3[scala.Double, java.lang.String, java.lang.String, scala.Unit],
-    insertItemImage: js.Function2[scala.Double, java.lang.String, scala.Unit],
-    insertItemText: js.Function2[scala.Double, java.lang.String, scala.Unit],
-    removeAllItems: js.Function0[scala.Unit],
-    removeItem: js.Function1[scala.Double, scala.Unit],
-    removeItemListListener: js.Function1[XItemListListener, scala.Unit],
-    setItemData: js.Function2[scala.Double, js.Any, scala.Unit],
-    setItemImage: js.Function2[scala.Double, java.lang.String, scala.Unit],
-    setItemText: js.Function2[scala.Double, java.lang.String, scala.Unit],
-    setItemTextAndImage: js.Function3[scala.Double, java.lang.String, java.lang.String, scala.Unit]
+    getItemData: scala.Double => js.Any,
+    getItemImage: scala.Double => java.lang.String,
+    getItemText: scala.Double => java.lang.String,
+    getItemTextAndImage: scala.Double => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[java.lang.String, java.lang.String],
+    insertItem: (scala.Double, java.lang.String, java.lang.String) => scala.Unit,
+    insertItemImage: (scala.Double, java.lang.String) => scala.Unit,
+    insertItemText: (scala.Double, java.lang.String) => scala.Unit,
+    removeAllItems: () => scala.Unit,
+    removeItem: scala.Double => scala.Unit,
+    removeItemListListener: XItemListListener => scala.Unit,
+    setItemData: (scala.Double, js.Any) => scala.Unit,
+    setItemImage: (scala.Double, java.lang.String) => scala.Unit,
+    setItemText: (scala.Double, java.lang.String) => scala.Unit,
+    setItemTextAndImage: (scala.Double, java.lang.String, java.lang.String) => scala.Unit
   ): XItemList = {
-    val __obj = js.Dynamic.literal(AllItems = AllItems, ItemCount = ItemCount, addItemListListener = addItemListListener, getAllItems = getAllItems, getItemData = getItemData, getItemImage = getItemImage, getItemText = getItemText, getItemTextAndImage = getItemTextAndImage, insertItem = insertItem, insertItemImage = insertItemImage, insertItemText = insertItemText, removeAllItems = removeAllItems, removeItem = removeItem, removeItemListListener = removeItemListListener, setItemData = setItemData, setItemImage = setItemImage, setItemText = setItemText, setItemTextAndImage = setItemTextAndImage)
+    val __obj = js.Dynamic.literal(AllItems = AllItems, ItemCount = ItemCount, addItemListListener = js.Any.fromFunction1(addItemListListener), getAllItems = js.Any.fromFunction0(getAllItems), getItemData = js.Any.fromFunction1(getItemData), getItemImage = js.Any.fromFunction1(getItemImage), getItemText = js.Any.fromFunction1(getItemText), getItemTextAndImage = js.Any.fromFunction1(getItemTextAndImage), insertItem = js.Any.fromFunction3(insertItem), insertItemImage = js.Any.fromFunction2(insertItemImage), insertItemText = js.Any.fromFunction2(insertItemText), removeAllItems = js.Any.fromFunction0(removeAllItems), removeItem = js.Any.fromFunction1(removeItem), removeItemListListener = js.Any.fromFunction1(removeItemListListener), setItemData = js.Any.fromFunction2(setItemData), setItemImage = js.Any.fromFunction2(setItemImage), setItemText = js.Any.fromFunction2(setItemText), setItemTextAndImage = js.Any.fromFunction3(setItemTextAndImage))
   
     __obj.asInstanceOf[XItemList]
   }

@@ -15,13 +15,13 @@ object AdapterOptions {
   @scala.inline
   def apply[SchemaT](
     defaultValue: SchemaT = null,
-    deserialize: js.Function1[/* serializedData */ java.lang.String, SchemaT] = null,
-    serialize: js.Function1[/* data */ SchemaT, java.lang.String] = null
+    deserialize: /* serializedData */ java.lang.String => SchemaT = null,
+    serialize: /* data */ SchemaT => java.lang.String = null
   ): AdapterOptions[SchemaT] = {
     val __obj = js.Dynamic.literal()
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (deserialize != null) __obj.updateDynamic("deserialize")(deserialize)
-    if (serialize != null) __obj.updateDynamic("serialize")(serialize)
+    if (deserialize != null) __obj.updateDynamic("deserialize")(js.Any.fromFunction1(deserialize))
+    if (serialize != null) __obj.updateDynamic("serialize")(js.Any.fromFunction1(serialize))
     __obj.asInstanceOf[AdapterOptions[SchemaT]]
   }
 }

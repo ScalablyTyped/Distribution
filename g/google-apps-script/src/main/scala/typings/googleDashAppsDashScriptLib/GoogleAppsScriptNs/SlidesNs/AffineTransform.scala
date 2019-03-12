@@ -18,15 +18,15 @@ trait AffineTransform extends js.Object {
 object AffineTransform {
   @scala.inline
   def apply(
-    getScaleX: js.Function0[stdLib.Number],
-    getScaleY: js.Function0[stdLib.Number],
-    getShearX: js.Function0[stdLib.Number],
-    getShearY: js.Function0[stdLib.Number],
-    getTranslateX: js.Function0[stdLib.Number],
-    getTranslateY: js.Function0[stdLib.Number],
-    toBuilder: js.Function0[AffineTransformBuilder]
+    getScaleX: () => stdLib.Number,
+    getScaleY: () => stdLib.Number,
+    getShearX: () => stdLib.Number,
+    getShearY: () => stdLib.Number,
+    getTranslateX: () => stdLib.Number,
+    getTranslateY: () => stdLib.Number,
+    toBuilder: () => AffineTransformBuilder
   ): AffineTransform = {
-    val __obj = js.Dynamic.literal(getScaleX = getScaleX, getScaleY = getScaleY, getShearX = getShearX, getShearY = getShearY, getTranslateX = getTranslateX, getTranslateY = getTranslateY, toBuilder = toBuilder)
+    val __obj = js.Dynamic.literal(getScaleX = js.Any.fromFunction0(getScaleX), getScaleY = js.Any.fromFunction0(getScaleY), getShearX = js.Any.fromFunction0(getShearX), getShearY = js.Any.fromFunction0(getShearY), getTranslateX = js.Any.fromFunction0(getTranslateX), getTranslateY = js.Any.fromFunction0(getTranslateY), toBuilder = js.Any.fromFunction0(toBuilder))
   
     __obj.asInstanceOf[AffineTransform]
   }

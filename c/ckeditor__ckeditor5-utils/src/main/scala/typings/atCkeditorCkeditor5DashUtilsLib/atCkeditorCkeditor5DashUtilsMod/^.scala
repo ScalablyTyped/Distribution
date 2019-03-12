@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val DOCUMENTATION_URL: java.lang.String = js.native
-  val EmitterMixin: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Emitter = js.native
-  val ObservableMixin: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Observable = js.native
+  val EmitterMixin: Emitter = js.native
+  val ObservableMixin: Observable = js.native
   val keyCodes: atCkeditorCkeditor5DashUtilsLib.Anon_0 = js.native
   def add(
     language: java.lang.String,
@@ -18,7 +18,7 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def as(Class: js.Function): scala.Unit = js.native
   def attachLinkToDocumentation(message: java.lang.String): java.lang.String = js.native
-  def compareArrays[T](a: js.Array[T], b: js.Array[T]): scala.Double | atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.ArrayRelation = js.native
+  def compareArrays[T](a: js.Array[T], b: js.Array[T]): scala.Double | ArrayRelation = js.native
   def count(iterator: stdLib.Iterable[_]): scala.Double = js.native
   def createElement(doc: stdLib.Document, name: java.lang.String): stdLib.Element = js.native
   def createElement(doc: stdLib.Document, name: java.lang.String, attributes: js.Object): stdLib.Element = js.native
@@ -38,42 +38,30 @@ object ^ extends js.Object {
     children: js.Array[stdLib.Node | java.lang.String]
   ): stdLib.Element = js.native
   def createElement(doc: stdLib.Document, name: java.lang.String, attributes: scala.Null, children: stdLib.Node): stdLib.Element = js.native
-  def diff(a: java.lang.String, b: java.lang.String): js.Array[atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Change] = js.native
+  def diff(a: java.lang.String, b: java.lang.String): js.Array[Change] = js.native
   def diff(
     a: java.lang.String,
     b: java.lang.String,
     cmp: js.Function2[/* a */ java.lang.String, /* b */ java.lang.String, scala.Boolean]
-  ): js.Array[atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Change] = js.native
-  def diff(a: js.Array[java.lang.String], b: js.Array[java.lang.String]): js.Array[atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Change] = js.native
+  ): js.Array[Change] = js.native
+  def diff(a: js.Array[java.lang.String], b: js.Array[java.lang.String]): js.Array[Change] = js.native
   def diff(
     a: js.Array[java.lang.String],
     b: js.Array[java.lang.String],
     cmp: js.Function2[/* a */ java.lang.String, /* b */ java.lang.String, scala.Boolean]
-  ): js.Array[atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Change] = js.native
-  def diffToChanges(
-    diff: js.Array[atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Change],
-    output: java.lang.String
-  ): js.Array[
-    atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.DeleteChange | atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.InsertChange
-  ] = js.native
-  def diffToChanges(
-    diff: js.Array[atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Change],
-    output: js.Array[java.lang.String]
-  ): js.Array[
-    atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.DeleteChange | atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.InsertChange
-  ] = js.native
-  def fastDiff(oldText: java.lang.String, newText: java.lang.String): js.Array[
-    atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.DeleteChange | atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.InsertChange
-  ] = js.native
+  ): js.Array[Change] = js.native
+  def diffToChanges(diff: js.Array[Change], output: java.lang.String): js.Array[DeleteChange | InsertChange] = js.native
+  def diffToChanges(diff: js.Array[Change], output: js.Array[java.lang.String]): js.Array[DeleteChange | InsertChange] = js.native
+  def fastDiff(oldText: java.lang.String, newText: java.lang.String): js.Array[DeleteChange | InsertChange] = js.native
   def first[T](iterable: stdLib.Iterable[T]): T = js.native
   def getAncestors(node: stdLib.Node): js.Array[stdLib.Node | stdLib.DocumentFragment] = js.native
   def getBorderWidths(element: stdLib.HTMLElement): atCkeditorCkeditor5DashUtilsLib.Anon_Bottom = js.native
-  def getCode(key: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.KeystrokeInfo): scala.Double = js.native
+  def getCode(key: KeystrokeInfo): scala.Double = js.native
   def getCode(key: java.lang.String): scala.Double = js.native
   def getCommonAncestor(nodeA: stdLib.Node, nodeB: stdLib.Node): stdLib.Node | stdLib.DocumentFragment | stdLib.Document | scala.Null = js.native
   def getDataFromElement(el: stdLib.HTMLElement): java.lang.String = js.native
   def getEnvKeystrokeText(keystroke: java.lang.String): java.lang.String = js.native
-  def getOptimalPosition(options: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Options): atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Position = js.native
+  def getOptimalPosition(options: Options): Position = js.native
   def getPositionedAncestor(): stdLib.HTMLElement | scala.Null = js.native
   def getPositionedAncestor(element: stdLib.HTMLElement): stdLib.HTMLElement | scala.Null = js.native
   def indexOf(node: stdLib.Node): scala.Double = js.native

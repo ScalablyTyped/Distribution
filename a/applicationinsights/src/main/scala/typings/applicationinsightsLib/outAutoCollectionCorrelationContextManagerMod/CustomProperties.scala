@@ -22,10 +22,10 @@ trait CustomProperties extends js.Object {
 object CustomProperties {
   @scala.inline
   def apply(
-    getProperty: js.Function1[java.lang.String, java.lang.String],
-    setProperty: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    getProperty: java.lang.String => java.lang.String,
+    setProperty: (java.lang.String, java.lang.String) => scala.Unit
   ): CustomProperties = {
-    val __obj = js.Dynamic.literal(getProperty = getProperty, setProperty = setProperty)
+    val __obj = js.Dynamic.literal(getProperty = js.Any.fromFunction1(getProperty), setProperty = js.Any.fromFunction2(setProperty))
   
     __obj.asInstanceOf[CustomProperties]
   }

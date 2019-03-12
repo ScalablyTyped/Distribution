@@ -17,14 +17,14 @@ trait MSNavigatorDoNotTrack extends js.Object {
 object MSNavigatorDoNotTrack {
   @scala.inline
   def apply(
-    confirmSiteSpecificTrackingException: js.Function1[ConfirmSiteSpecificExceptionsInformation, scala.Boolean],
-    confirmWebWideTrackingException: js.Function1[ExceptionInformation, scala.Boolean],
-    removeSiteSpecificTrackingException: js.Function1[ExceptionInformation, scala.Unit],
-    removeWebWideTrackingException: js.Function1[ExceptionInformation, scala.Unit],
-    storeSiteSpecificTrackingException: js.Function1[StoreSiteSpecificExceptionsInformation, scala.Unit],
-    storeWebWideTrackingException: js.Function1[StoreExceptionsInformation, scala.Unit]
+    confirmSiteSpecificTrackingException: ConfirmSiteSpecificExceptionsInformation => scala.Boolean,
+    confirmWebWideTrackingException: ExceptionInformation => scala.Boolean,
+    removeSiteSpecificTrackingException: ExceptionInformation => scala.Unit,
+    removeWebWideTrackingException: ExceptionInformation => scala.Unit,
+    storeSiteSpecificTrackingException: StoreSiteSpecificExceptionsInformation => scala.Unit,
+    storeWebWideTrackingException: StoreExceptionsInformation => scala.Unit
   ): MSNavigatorDoNotTrack = {
-    val __obj = js.Dynamic.literal(confirmSiteSpecificTrackingException = confirmSiteSpecificTrackingException, confirmWebWideTrackingException = confirmWebWideTrackingException, removeSiteSpecificTrackingException = removeSiteSpecificTrackingException, removeWebWideTrackingException = removeWebWideTrackingException, storeSiteSpecificTrackingException = storeSiteSpecificTrackingException, storeWebWideTrackingException = storeWebWideTrackingException)
+    val __obj = js.Dynamic.literal(confirmSiteSpecificTrackingException = js.Any.fromFunction1(confirmSiteSpecificTrackingException), confirmWebWideTrackingException = js.Any.fromFunction1(confirmWebWideTrackingException), removeSiteSpecificTrackingException = js.Any.fromFunction1(removeSiteSpecificTrackingException), removeWebWideTrackingException = js.Any.fromFunction1(removeWebWideTrackingException), storeSiteSpecificTrackingException = js.Any.fromFunction1(storeSiteSpecificTrackingException), storeWebWideTrackingException = js.Any.fromFunction1(storeWebWideTrackingException))
   
     __obj.asInstanceOf[MSNavigatorDoNotTrack]
   }

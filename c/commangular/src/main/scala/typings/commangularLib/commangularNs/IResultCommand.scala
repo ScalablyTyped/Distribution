@@ -22,12 +22,8 @@ trait IResultCommand extends ICommand {
 
 object IResultCommand {
   @scala.inline
-  def apply(
-    execute: js.Function0[js.Any],
-    onError: js.Function1[stdLib.Error, scala.Unit],
-    onResult: js.Function1[js.Any, scala.Unit]
-  ): IResultCommand = {
-    val __obj = js.Dynamic.literal(execute = execute, onError = onError, onResult = onResult)
+  def apply(execute: () => js.Any, onError: stdLib.Error => scala.Unit, onResult: js.Any => scala.Unit): IResultCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), onError = js.Any.fromFunction1(onError), onResult = js.Any.fromFunction1(onResult))
   
     __obj.asInstanceOf[IResultCommand]
   }

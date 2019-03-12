@@ -14,8 +14,8 @@ trait GMXMLHttpRequestAsyncResult extends js.Object {
 
 object GMXMLHttpRequestAsyncResult {
   @scala.inline
-  def apply(abort: js.Function0[scala.Unit]): GMXMLHttpRequestAsyncResult = {
-    val __obj = js.Dynamic.literal(abort = abort)
+  def apply(abort: () => scala.Unit): GMXMLHttpRequestAsyncResult = {
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort))
   
     __obj.asInstanceOf[GMXMLHttpRequestAsyncResult]
   }

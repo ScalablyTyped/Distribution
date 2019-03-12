@@ -105,7 +105,7 @@ object ^ extends js.Object {
   val OLCSequentialWrite: java.lang.String = js.native
   val OLCStringsAsUTF8: java.lang.String = js.native
   val OLCTransactions: java.lang.String = js.native
-  val drivers: gdalLib.gdalMod.GDALDrivers = js.native
+  val drivers: GDALDrivers = js.native
   val lastError: gdalLib.Anon_Message = js.native
   val version: java.lang.String = js.native
   val wkb25DBit: scala.Double = js.native
@@ -132,18 +132,12 @@ object ^ extends js.Object {
   val wkbVariantOgc: java.lang.String = js.native
   val wkbVariantOldOgc: java.lang.String = js.native
   val wkbXDR: java.lang.String = js.native
-  def checksumImage(src: gdalLib.gdalMod.RasterBand): scala.Double = js.native
-  def checksumImage(src: gdalLib.gdalMod.RasterBand, x: scala.Double): scala.Double = js.native
-  def checksumImage(src: gdalLib.gdalMod.RasterBand, x: scala.Double, y: scala.Double): scala.Double = js.native
-  def checksumImage(src: gdalLib.gdalMod.RasterBand, x: scala.Double, y: scala.Double, w: scala.Double): scala.Double = js.native
-  def checksumImage(
-    src: gdalLib.gdalMod.RasterBand,
-    x: scala.Double,
-    y: scala.Double,
-    w: scala.Double,
-    h: scala.Double
-  ): scala.Double = js.native
-  def contourGenerate(options: gdalLib.gdalMod.ContourGenerateOptions): scala.Unit = js.native
+  def checksumImage(src: RasterBand): scala.Double = js.native
+  def checksumImage(src: RasterBand, x: scala.Double): scala.Double = js.native
+  def checksumImage(src: RasterBand, x: scala.Double, y: scala.Double): scala.Double = js.native
+  def checksumImage(src: RasterBand, x: scala.Double, y: scala.Double, w: scala.Double): scala.Double = js.native
+  def checksumImage(src: RasterBand, x: scala.Double, y: scala.Double, w: scala.Double, h: scala.Double): scala.Double = js.native
+  def contourGenerate(options: ContourGenerateOptions): scala.Unit = js.native
   @JSName("decToDMS")
   def decToDMS_lat(angle: scala.Double, axis: gdalLib.gdalLibStrings.lat): java.lang.String = js.native
   @JSName("decToDMS")
@@ -152,26 +146,26 @@ object ^ extends js.Object {
   def decToDMS_long(angle: scala.Double, axis: gdalLib.gdalLibStrings.long): java.lang.String = js.native
   @JSName("decToDMS")
   def decToDMS_long(angle: scala.Double, axis: gdalLib.gdalLibStrings.long, precision: scala.Double): java.lang.String = js.native
-  def fillNodata(options: gdalLib.gdalMod.FillNoDataOptions): scala.Unit = js.native
-  def open(path: java.lang.String): gdalLib.gdalMod.Dataset = js.native
+  def fillNodata(options: FillNoDataOptions): scala.Unit = js.native
+  def open(path: java.lang.String): Dataset = js.native
   @JSName("open")
-  def open_r(path: java.lang.String, mode: gdalLib.gdalLibStrings.r): gdalLib.gdalMod.Dataset = js.native
+  def open_r(path: java.lang.String, mode: gdalLib.gdalLibStrings.r): Dataset = js.native
   @JSName("open")
-  def open_r(path: java.lang.String, mode: gdalLib.gdalLibStrings.r, drivers: java.lang.String): gdalLib.gdalMod.Dataset = js.native
+  def open_r(path: java.lang.String, mode: gdalLib.gdalLibStrings.r, drivers: java.lang.String): Dataset = js.native
   @JSName("open")
-  def open_r(path: java.lang.String, mode: gdalLib.gdalLibStrings.r, drivers: js.Array[java.lang.String]): gdalLib.gdalMod.Dataset = js.native
+  def open_r(path: java.lang.String, mode: gdalLib.gdalLibStrings.r, drivers: js.Array[java.lang.String]): Dataset = js.native
   @JSName("open")
-  def `open_r+`(path: java.lang.String, mode: gdalLib.gdalLibStrings.`r+`): gdalLib.gdalMod.Dataset = js.native
+  def `open_r+`(path: java.lang.String, mode: gdalLib.gdalLibStrings.`r+`): Dataset = js.native
   @JSName("open")
-  def `open_r+`(path: java.lang.String, mode: gdalLib.gdalLibStrings.`r+`, drivers: java.lang.String): gdalLib.gdalMod.Dataset = js.native
+  def `open_r+`(path: java.lang.String, mode: gdalLib.gdalLibStrings.`r+`, drivers: java.lang.String): Dataset = js.native
   @JSName("open")
-  def `open_r+`(path: java.lang.String, mode: gdalLib.gdalLibStrings.`r+`, drivers: js.Array[java.lang.String]): gdalLib.gdalMod.Dataset = js.native
+  def `open_r+`(path: java.lang.String, mode: gdalLib.gdalLibStrings.`r+`, drivers: js.Array[java.lang.String]): Dataset = js.native
   @JSName("open")
-  def open_w(path: java.lang.String, mode: gdalLib.gdalLibStrings.w): gdalLib.gdalMod.Dataset = js.native
+  def open_w(path: java.lang.String, mode: gdalLib.gdalLibStrings.w): Dataset = js.native
   @JSName("open")
-  def open_w(path: java.lang.String, mode: gdalLib.gdalLibStrings.w, drivers: java.lang.String): gdalLib.gdalMod.Dataset = js.native
+  def open_w(path: java.lang.String, mode: gdalLib.gdalLibStrings.w, drivers: java.lang.String): Dataset = js.native
   @JSName("open")
-  def open_w(path: java.lang.String, mode: gdalLib.gdalLibStrings.w, drivers: js.Array[java.lang.String]): gdalLib.gdalMod.Dataset = js.native
+  def open_w(path: java.lang.String, mode: gdalLib.gdalLibStrings.w, drivers: js.Array[java.lang.String]): Dataset = js.native
   @JSName("open")
   def open_w(
     path: java.lang.String,
@@ -182,12 +176,12 @@ object ^ extends js.Object {
     band_count: js.UndefOr[scala.Double],
     data_type: js.UndefOr[scala.Double],
     creation_options: js.UndefOr[js.Array[java.lang.String] | js.Object]
-  ): gdalLib.gdalMod.Dataset = js.native
-  def polygonize(options: gdalLib.gdalMod.PolygonizeOptions): scala.Unit = js.native
+  ): Dataset = js.native
+  def polygonize(options: PolygonizeOptions): scala.Unit = js.native
   def quiet(): scala.Unit = js.native
-  def reprojectImage(options: gdalLib.gdalMod.ReprojectImageOptions): scala.Unit = js.native
-  def sieveFilter(options: gdalLib.gdalMod.SieveFilterOptions): scala.Unit = js.native
-  def suggestedWarpOutput(options: gdalLib.gdalMod.SuggestedWarpOutputOptions): gdalLib.Anon_GeoTransform = js.native
+  def reprojectImage(options: ReprojectImageOptions): scala.Unit = js.native
+  def sieveFilter(options: SieveFilterOptions): scala.Unit = js.native
+  def suggestedWarpOutput(options: SuggestedWarpOutputOptions): gdalLib.Anon_GeoTransform = js.native
   def verbose(): scala.Unit = js.native
 }
 

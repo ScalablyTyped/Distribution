@@ -32,11 +32,7 @@ object BlazyOptions {
   def apply(
     breakpoints: js.Array[Breakpoint] = null,
     container: java.lang.String = null,
-    error: js.Function2[
-      /* ele */ stdLib.Element | stdLib.HTMLElement, 
-      /* msg */ java.lang.String, 
-      scala.Unit
-    ] = null,
+    error: (/* ele */ stdLib.Element | stdLib.HTMLElement, /* msg */ java.lang.String) => scala.Unit = null,
     errorClass: java.lang.String = null,
     loadInvisible: js.UndefOr[scala.Boolean] = js.undefined,
     offset: scala.Int | scala.Double = null,
@@ -44,14 +40,14 @@ object BlazyOptions {
     selector: java.lang.String = null,
     separator: java.lang.String = null,
     src: java.lang.String = null,
-    success: js.Function1[/* ele */ stdLib.Element | stdLib.HTMLElement, scala.Unit] = null,
+    success: /* ele */ stdLib.Element | stdLib.HTMLElement => scala.Unit = null,
     successClass: java.lang.String = null,
     validateDelay: scala.Int | scala.Double = null
   ): BlazyOptions = {
     val __obj = js.Dynamic.literal()
     if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints)
     if (container != null) __obj.updateDynamic("container")(container)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction2(error))
     if (errorClass != null) __obj.updateDynamic("errorClass")(errorClass)
     if (!js.isUndefined(loadInvisible)) __obj.updateDynamic("loadInvisible")(loadInvisible)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
@@ -59,7 +55,7 @@ object BlazyOptions {
     if (selector != null) __obj.updateDynamic("selector")(selector)
     if (separator != null) __obj.updateDynamic("separator")(separator)
     if (src != null) __obj.updateDynamic("src")(src)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     if (successClass != null) __obj.updateDynamic("successClass")(successClass)
     if (validateDelay != null) __obj.updateDynamic("validateDelay")(validateDelay.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlazyOptions]

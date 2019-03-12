@@ -17,7 +17,7 @@ trait Slider
   var dataBackground: js.UndefOr[js.Object] = js.undefined
   var end: js.UndefOr[scala.Double] = js.undefined
   var endValue: js.UndefOr[scala.Double | java.lang.String | stdLib.Date] = js.undefined
-  var fillColor: js.UndefOr[java.lang.String] = js.undefined
+  var fillerColor: js.UndefOr[java.lang.String] = js.undefined
   var filterMode: js.UndefOr[
     echartsLib.echartsLibStrings.filter | echartsLib.echartsLibStrings.weakFilter | echartsLib.echartsLibStrings.empty | echartsLib.echartsLibStrings.none
   ] = js.undefined
@@ -63,7 +63,7 @@ object Slider {
     dataBackground: js.Object = null,
     end: scala.Int | scala.Double = null,
     endValue: scala.Double | java.lang.String | stdLib.Date = null,
-    fillColor: java.lang.String = null,
+    fillerColor: java.lang.String = null,
     filterMode: echartsLib.echartsLibStrings.filter | echartsLib.echartsLibStrings.weakFilter | echartsLib.echartsLibStrings.empty | echartsLib.echartsLibStrings.none = null,
     handleIcon: java.lang.String = null,
     handleSize: scala.Int | scala.Double = null,
@@ -104,7 +104,7 @@ object Slider {
     if (dataBackground != null) __obj.updateDynamic("dataBackground")(dataBackground)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (fillerColor != null) __obj.updateDynamic("fillerColor")(fillerColor)
     if (filterMode != null) __obj.updateDynamic("filterMode")(filterMode.asInstanceOf[js.Any])
     if (handleIcon != null) __obj.updateDynamic("handleIcon")(handleIcon)
     if (handleSize != null) __obj.updateDynamic("handleSize")(handleSize.asInstanceOf[js.Any])

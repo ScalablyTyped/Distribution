@@ -19,14 +19,14 @@ object Portal {
   @scala.inline
   def apply(
     URI: java.lang.String,
-    fetch: js.Function1[CbCallback, scala.Unit],
+    fetch: CbCallback => scala.Unit,
     name: java.lang.String,
     systemKey: java.lang.String,
     systemSecret: java.lang.String,
-    update: js.Function2[js.Object, CbCallback, scala.Unit],
+    update: (js.Object, CbCallback) => scala.Unit,
     user: APIUser
   ): Portal = {
-    val __obj = js.Dynamic.literal(URI = URI, fetch = fetch, name = name, systemKey = systemKey, systemSecret = systemSecret, update = update, user = user)
+    val __obj = js.Dynamic.literal(URI = URI, fetch = js.Any.fromFunction1(fetch), name = name, systemKey = systemKey, systemSecret = systemSecret, update = js.Any.fromFunction2(update), user = user)
   
     __obj.asInstanceOf[Portal]
   }

@@ -296,82 +296,60 @@ object INestedList {
     detailContainer: senchaUnderscoreTouchLib.ExtNs.IContainer = null,
     displayField: java.lang.String = null,
     emptyText: java.lang.String = null,
-    getAllowDeselect: js.Function0[scala.Boolean] = null,
-    getBackButton: js.Function0[_] = null,
-    getBackText: js.Function0[java.lang.String] = null,
-    getBaseCls: js.Function0[java.lang.String] = null,
-    getClearSelectionOnListChange: js.Function0[scala.Boolean] = null,
-    getDetailCard: js.Function0[senchaUnderscoreTouchLib.ExtNs.IComponent] = null,
-    getDetailContainer: js.Function0[senchaUnderscoreTouchLib.ExtNs.IContainer] = null,
-    getDisplayField: js.Function0[java.lang.String] = null,
-    getEmptyText: js.Function0[java.lang.String] = null,
-    getItemHeight: js.Function0[scala.Double] = null,
-    getItemTextTpl: js.Function1[
-      /* node */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IRecord], 
-      java.lang.String
-    ] = null,
-    getListConfig: js.Function0[_] = null,
-    getLoadingText: js.Function0[java.lang.String] = null,
-    getOnItemDisclosure: js.Function0[_] = null,
-    getStore: js.Function0[_] = null,
-    getSubList: js.Function0[scala.Unit] = null,
-    getTitle: js.Function0[java.lang.String] = null,
-    getTitleTextTpl: js.Function1[
-      /* node */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IRecord], 
-      java.lang.String
-    ] = null,
-    getToolbar: js.Function0[_] = null,
-    getUpdateTitleText: js.Function0[scala.Boolean] = null,
-    getUseSimpleItems: js.Function0[scala.Boolean] = null,
-    getUseTitleAsBackText: js.Function0[scala.Boolean] = null,
-    getUseToolbar: js.Function0[scala.Boolean] = null,
-    getVariableHeights: js.Function0[scala.Boolean] = null,
-    goToLeaf: js.Function1[
-      /* node */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.INodeInterface], 
-      scala.Unit
-    ] = null,
-    goToNode: js.Function1[
-      /* node */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.INodeInterface], 
-      scala.Unit
-    ] = null,
+    getAllowDeselect: () => scala.Boolean = null,
+    getBackButton: () => _ = null,
+    getBackText: () => java.lang.String = null,
+    getBaseCls: () => java.lang.String = null,
+    getClearSelectionOnListChange: () => scala.Boolean = null,
+    getDetailCard: () => senchaUnderscoreTouchLib.ExtNs.IComponent = null,
+    getDetailContainer: () => senchaUnderscoreTouchLib.ExtNs.IContainer = null,
+    getDisplayField: () => java.lang.String = null,
+    getEmptyText: () => java.lang.String = null,
+    getItemHeight: () => scala.Double = null,
+    getItemTextTpl: /* node */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IRecord] => java.lang.String = null,
+    getListConfig: () => _ = null,
+    getLoadingText: () => java.lang.String = null,
+    getOnItemDisclosure: () => _ = null,
+    getStore: () => _ = null,
+    getSubList: () => scala.Unit = null,
+    getTitle: () => java.lang.String = null,
+    getTitleTextTpl: /* node */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IRecord] => java.lang.String = null,
+    getToolbar: () => _ = null,
+    getUpdateTitleText: () => scala.Boolean = null,
+    getUseSimpleItems: () => scala.Boolean = null,
+    getUseTitleAsBackText: () => scala.Boolean = null,
+    getUseToolbar: () => scala.Boolean = null,
+    getVariableHeights: () => scala.Boolean = null,
+    goToLeaf: /* node */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.INodeInterface] => scala.Unit = null,
+    goToNode: /* node */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.INodeInterface] => scala.Unit = null,
     itemHeight: scala.Int | scala.Double = null,
     listConfig: js.Any = null,
     loadingText: java.lang.String = null,
-    onBackTap: js.Function0[scala.Unit] = null,
+    onBackTap: () => scala.Unit = null,
     onItemDisclosure: js.Any = null,
-    onItemTap: js.Function5[
-      /* list */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.IList], 
-      /* index */ js.UndefOr[scala.Double], 
-      /* target */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.IElement], 
-      /* record */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IRecord], 
-      /* e */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.eventNs.IEvent], 
-      scala.Unit
-    ] = null,
-    setAllowDeselect: js.Function1[/* allowDeselect */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setBackButton: js.Function1[/* backButton */ js.UndefOr[js.Any], scala.Unit] = null,
-    setBackText: js.Function1[/* backText */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setBaseCls: js.Function1[/* baseCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setClearSelectionOnListChange: js.Function1[/* clearSelectionOnListChange */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setDetailCard: js.Function1[/* detailCard */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.IComponent], scala.Unit] = null,
-    setDetailContainer: js.Function1[
-      /* detailContainer */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.IContainer], 
-      scala.Unit
-    ] = null,
-    setDisplayField: js.Function1[/* displayField */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setEmptyText: js.Function1[/* emptyText */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setItemHeight: js.Function1[/* itemHeight */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setListConfig: js.Function1[/* listConfig */ js.UndefOr[js.Any], scala.Unit] = null,
-    setLoadingText: js.Function1[/* loadingText */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setOnItemDisclosure: js.Function1[/* onItemDisclosure */ js.UndefOr[js.Any], scala.Unit] = null,
-    setStore: js.Function1[/* store */ js.UndefOr[js.Any], scala.Unit] = null,
-    setTitle: js.Function1[/* title */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setToolbar: js.Function1[/* toolbar */ js.UndefOr[js.Any], scala.Unit] = null,
-    setUi: js.Function1[/* ui */ js.UndefOr[js.Any], scala.Unit] = null,
-    setUpdateTitleText: js.Function1[/* updateTitleText */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setUseSimpleItems: js.Function1[/* useSimpleItems */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setUseTitleAsBackText: js.Function1[/* useTitleAsBackText */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setUseToolbar: js.Function1[/* useToolbar */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setVariableHeights: js.Function1[/* variableHeights */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    onItemTap: (/* list */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.IList], /* index */ js.UndefOr[scala.Double], /* target */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.IElement], /* record */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IRecord], /* e */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.eventNs.IEvent]) => scala.Unit = null,
+    setAllowDeselect: /* allowDeselect */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setBackButton: /* backButton */ js.UndefOr[js.Any] => scala.Unit = null,
+    setBackText: /* backText */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setClearSelectionOnListChange: /* clearSelectionOnListChange */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setDetailCard: /* detailCard */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.IComponent] => scala.Unit = null,
+    setDetailContainer: /* detailContainer */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.IContainer] => scala.Unit = null,
+    setDisplayField: /* displayField */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setEmptyText: /* emptyText */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setItemHeight: /* itemHeight */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setListConfig: /* listConfig */ js.UndefOr[js.Any] => scala.Unit = null,
+    setLoadingText: /* loadingText */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setOnItemDisclosure: /* onItemDisclosure */ js.UndefOr[js.Any] => scala.Unit = null,
+    setStore: /* store */ js.UndefOr[js.Any] => scala.Unit = null,
+    setTitle: /* title */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setToolbar: /* toolbar */ js.UndefOr[js.Any] => scala.Unit = null,
+    setUi: /* ui */ js.UndefOr[js.Any] => scala.Unit = null,
+    setUpdateTitleText: /* updateTitleText */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setUseSimpleItems: /* useSimpleItems */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setUseTitleAsBackText: /* useTitleAsBackText */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setUseToolbar: /* useToolbar */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setVariableHeights: /* variableHeights */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     store: js.Any = null,
     title: java.lang.String = null,
     toolbar: js.Any = null,
@@ -394,60 +372,60 @@ object INestedList {
     if (detailContainer != null) __obj.updateDynamic("detailContainer")(detailContainer)
     if (displayField != null) __obj.updateDynamic("displayField")(displayField)
     if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText)
-    if (getAllowDeselect != null) __obj.updateDynamic("getAllowDeselect")(getAllowDeselect)
-    if (getBackButton != null) __obj.updateDynamic("getBackButton")(getBackButton)
-    if (getBackText != null) __obj.updateDynamic("getBackText")(getBackText)
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(getBaseCls)
-    if (getClearSelectionOnListChange != null) __obj.updateDynamic("getClearSelectionOnListChange")(getClearSelectionOnListChange)
-    if (getDetailCard != null) __obj.updateDynamic("getDetailCard")(getDetailCard)
-    if (getDetailContainer != null) __obj.updateDynamic("getDetailContainer")(getDetailContainer)
-    if (getDisplayField != null) __obj.updateDynamic("getDisplayField")(getDisplayField)
-    if (getEmptyText != null) __obj.updateDynamic("getEmptyText")(getEmptyText)
-    if (getItemHeight != null) __obj.updateDynamic("getItemHeight")(getItemHeight)
-    if (getItemTextTpl != null) __obj.updateDynamic("getItemTextTpl")(getItemTextTpl)
-    if (getListConfig != null) __obj.updateDynamic("getListConfig")(getListConfig)
-    if (getLoadingText != null) __obj.updateDynamic("getLoadingText")(getLoadingText)
-    if (getOnItemDisclosure != null) __obj.updateDynamic("getOnItemDisclosure")(getOnItemDisclosure)
-    if (getStore != null) __obj.updateDynamic("getStore")(getStore)
-    if (getSubList != null) __obj.updateDynamic("getSubList")(getSubList)
-    if (getTitle != null) __obj.updateDynamic("getTitle")(getTitle)
-    if (getTitleTextTpl != null) __obj.updateDynamic("getTitleTextTpl")(getTitleTextTpl)
-    if (getToolbar != null) __obj.updateDynamic("getToolbar")(getToolbar)
-    if (getUpdateTitleText != null) __obj.updateDynamic("getUpdateTitleText")(getUpdateTitleText)
-    if (getUseSimpleItems != null) __obj.updateDynamic("getUseSimpleItems")(getUseSimpleItems)
-    if (getUseTitleAsBackText != null) __obj.updateDynamic("getUseTitleAsBackText")(getUseTitleAsBackText)
-    if (getUseToolbar != null) __obj.updateDynamic("getUseToolbar")(getUseToolbar)
-    if (getVariableHeights != null) __obj.updateDynamic("getVariableHeights")(getVariableHeights)
-    if (goToLeaf != null) __obj.updateDynamic("goToLeaf")(goToLeaf)
-    if (goToNode != null) __obj.updateDynamic("goToNode")(goToNode)
+    if (getAllowDeselect != null) __obj.updateDynamic("getAllowDeselect")(js.Any.fromFunction0(getAllowDeselect))
+    if (getBackButton != null) __obj.updateDynamic("getBackButton")(js.Any.fromFunction0(getBackButton))
+    if (getBackText != null) __obj.updateDynamic("getBackText")(js.Any.fromFunction0(getBackText))
+    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
+    if (getClearSelectionOnListChange != null) __obj.updateDynamic("getClearSelectionOnListChange")(js.Any.fromFunction0(getClearSelectionOnListChange))
+    if (getDetailCard != null) __obj.updateDynamic("getDetailCard")(js.Any.fromFunction0(getDetailCard))
+    if (getDetailContainer != null) __obj.updateDynamic("getDetailContainer")(js.Any.fromFunction0(getDetailContainer))
+    if (getDisplayField != null) __obj.updateDynamic("getDisplayField")(js.Any.fromFunction0(getDisplayField))
+    if (getEmptyText != null) __obj.updateDynamic("getEmptyText")(js.Any.fromFunction0(getEmptyText))
+    if (getItemHeight != null) __obj.updateDynamic("getItemHeight")(js.Any.fromFunction0(getItemHeight))
+    if (getItemTextTpl != null) __obj.updateDynamic("getItemTextTpl")(js.Any.fromFunction1(getItemTextTpl))
+    if (getListConfig != null) __obj.updateDynamic("getListConfig")(js.Any.fromFunction0(getListConfig))
+    if (getLoadingText != null) __obj.updateDynamic("getLoadingText")(js.Any.fromFunction0(getLoadingText))
+    if (getOnItemDisclosure != null) __obj.updateDynamic("getOnItemDisclosure")(js.Any.fromFunction0(getOnItemDisclosure))
+    if (getStore != null) __obj.updateDynamic("getStore")(js.Any.fromFunction0(getStore))
+    if (getSubList != null) __obj.updateDynamic("getSubList")(js.Any.fromFunction0(getSubList))
+    if (getTitle != null) __obj.updateDynamic("getTitle")(js.Any.fromFunction0(getTitle))
+    if (getTitleTextTpl != null) __obj.updateDynamic("getTitleTextTpl")(js.Any.fromFunction1(getTitleTextTpl))
+    if (getToolbar != null) __obj.updateDynamic("getToolbar")(js.Any.fromFunction0(getToolbar))
+    if (getUpdateTitleText != null) __obj.updateDynamic("getUpdateTitleText")(js.Any.fromFunction0(getUpdateTitleText))
+    if (getUseSimpleItems != null) __obj.updateDynamic("getUseSimpleItems")(js.Any.fromFunction0(getUseSimpleItems))
+    if (getUseTitleAsBackText != null) __obj.updateDynamic("getUseTitleAsBackText")(js.Any.fromFunction0(getUseTitleAsBackText))
+    if (getUseToolbar != null) __obj.updateDynamic("getUseToolbar")(js.Any.fromFunction0(getUseToolbar))
+    if (getVariableHeights != null) __obj.updateDynamic("getVariableHeights")(js.Any.fromFunction0(getVariableHeights))
+    if (goToLeaf != null) __obj.updateDynamic("goToLeaf")(js.Any.fromFunction1(goToLeaf))
+    if (goToNode != null) __obj.updateDynamic("goToNode")(js.Any.fromFunction1(goToNode))
     if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight.asInstanceOf[js.Any])
     if (listConfig != null) __obj.updateDynamic("listConfig")(listConfig)
     if (loadingText != null) __obj.updateDynamic("loadingText")(loadingText)
-    if (onBackTap != null) __obj.updateDynamic("onBackTap")(onBackTap)
+    if (onBackTap != null) __obj.updateDynamic("onBackTap")(js.Any.fromFunction0(onBackTap))
     if (onItemDisclosure != null) __obj.updateDynamic("onItemDisclosure")(onItemDisclosure)
-    if (onItemTap != null) __obj.updateDynamic("onItemTap")(onItemTap)
-    if (setAllowDeselect != null) __obj.updateDynamic("setAllowDeselect")(setAllowDeselect)
-    if (setBackButton != null) __obj.updateDynamic("setBackButton")(setBackButton)
-    if (setBackText != null) __obj.updateDynamic("setBackText")(setBackText)
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(setBaseCls)
-    if (setClearSelectionOnListChange != null) __obj.updateDynamic("setClearSelectionOnListChange")(setClearSelectionOnListChange)
-    if (setDetailCard != null) __obj.updateDynamic("setDetailCard")(setDetailCard)
-    if (setDetailContainer != null) __obj.updateDynamic("setDetailContainer")(setDetailContainer)
-    if (setDisplayField != null) __obj.updateDynamic("setDisplayField")(setDisplayField)
-    if (setEmptyText != null) __obj.updateDynamic("setEmptyText")(setEmptyText)
-    if (setItemHeight != null) __obj.updateDynamic("setItemHeight")(setItemHeight)
-    if (setListConfig != null) __obj.updateDynamic("setListConfig")(setListConfig)
-    if (setLoadingText != null) __obj.updateDynamic("setLoadingText")(setLoadingText)
-    if (setOnItemDisclosure != null) __obj.updateDynamic("setOnItemDisclosure")(setOnItemDisclosure)
-    if (setStore != null) __obj.updateDynamic("setStore")(setStore)
-    if (setTitle != null) __obj.updateDynamic("setTitle")(setTitle)
-    if (setToolbar != null) __obj.updateDynamic("setToolbar")(setToolbar)
-    if (setUi != null) __obj.updateDynamic("setUi")(setUi)
-    if (setUpdateTitleText != null) __obj.updateDynamic("setUpdateTitleText")(setUpdateTitleText)
-    if (setUseSimpleItems != null) __obj.updateDynamic("setUseSimpleItems")(setUseSimpleItems)
-    if (setUseTitleAsBackText != null) __obj.updateDynamic("setUseTitleAsBackText")(setUseTitleAsBackText)
-    if (setUseToolbar != null) __obj.updateDynamic("setUseToolbar")(setUseToolbar)
-    if (setVariableHeights != null) __obj.updateDynamic("setVariableHeights")(setVariableHeights)
+    if (onItemTap != null) __obj.updateDynamic("onItemTap")(js.Any.fromFunction5(onItemTap))
+    if (setAllowDeselect != null) __obj.updateDynamic("setAllowDeselect")(js.Any.fromFunction1(setAllowDeselect))
+    if (setBackButton != null) __obj.updateDynamic("setBackButton")(js.Any.fromFunction1(setBackButton))
+    if (setBackText != null) __obj.updateDynamic("setBackText")(js.Any.fromFunction1(setBackText))
+    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
+    if (setClearSelectionOnListChange != null) __obj.updateDynamic("setClearSelectionOnListChange")(js.Any.fromFunction1(setClearSelectionOnListChange))
+    if (setDetailCard != null) __obj.updateDynamic("setDetailCard")(js.Any.fromFunction1(setDetailCard))
+    if (setDetailContainer != null) __obj.updateDynamic("setDetailContainer")(js.Any.fromFunction1(setDetailContainer))
+    if (setDisplayField != null) __obj.updateDynamic("setDisplayField")(js.Any.fromFunction1(setDisplayField))
+    if (setEmptyText != null) __obj.updateDynamic("setEmptyText")(js.Any.fromFunction1(setEmptyText))
+    if (setItemHeight != null) __obj.updateDynamic("setItemHeight")(js.Any.fromFunction1(setItemHeight))
+    if (setListConfig != null) __obj.updateDynamic("setListConfig")(js.Any.fromFunction1(setListConfig))
+    if (setLoadingText != null) __obj.updateDynamic("setLoadingText")(js.Any.fromFunction1(setLoadingText))
+    if (setOnItemDisclosure != null) __obj.updateDynamic("setOnItemDisclosure")(js.Any.fromFunction1(setOnItemDisclosure))
+    if (setStore != null) __obj.updateDynamic("setStore")(js.Any.fromFunction1(setStore))
+    if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction1(setTitle))
+    if (setToolbar != null) __obj.updateDynamic("setToolbar")(js.Any.fromFunction1(setToolbar))
+    if (setUi != null) __obj.updateDynamic("setUi")(js.Any.fromFunction1(setUi))
+    if (setUpdateTitleText != null) __obj.updateDynamic("setUpdateTitleText")(js.Any.fromFunction1(setUpdateTitleText))
+    if (setUseSimpleItems != null) __obj.updateDynamic("setUseSimpleItems")(js.Any.fromFunction1(setUseSimpleItems))
+    if (setUseTitleAsBackText != null) __obj.updateDynamic("setUseTitleAsBackText")(js.Any.fromFunction1(setUseTitleAsBackText))
+    if (setUseToolbar != null) __obj.updateDynamic("setUseToolbar")(js.Any.fromFunction1(setUseToolbar))
+    if (setVariableHeights != null) __obj.updateDynamic("setVariableHeights")(js.Any.fromFunction1(setVariableHeights))
     if (store != null) __obj.updateDynamic("store")(store)
     if (title != null) __obj.updateDynamic("title")(title)
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar)

@@ -12,8 +12,8 @@ trait JobRequest extends js.Object {
 
 object JobRequest {
   @scala.inline
-  def apply(message: js.Function1[js.Any, scala.Unit], params: js.Any): JobRequest = {
-    val __obj = js.Dynamic.literal(message = message, params = params)
+  def apply(message: js.Any => scala.Unit, params: js.Any): JobRequest = {
+    val __obj = js.Dynamic.literal(message = js.Any.fromFunction1(message), params = params)
   
     __obj.asInstanceOf[JobRequest]
   }

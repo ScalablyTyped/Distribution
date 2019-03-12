@@ -18,12 +18,12 @@ object XTextGraphicObjectsSupplier {
   @scala.inline
   def apply(
     GraphicObjects: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
-    acquire: js.Function0[scala.Unit],
-    getGraphicObjects: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getGraphicObjects: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTextGraphicObjectsSupplier = {
-    val __obj = js.Dynamic.literal(GraphicObjects = GraphicObjects, acquire = acquire, getGraphicObjects = getGraphicObjects, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(GraphicObjects = GraphicObjects, acquire = js.Any.fromFunction0(acquire), getGraphicObjects = js.Any.fromFunction0(getGraphicObjects), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTextGraphicObjectsSupplier]
   }

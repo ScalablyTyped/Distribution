@@ -48,8 +48,8 @@ object ^ extends js.Object {
   def childrenHavePropXorChildren[T](prop: java.lang.String): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
   def childrenHavePropXorChildren[T](prop: js.Symbol): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
   def childrenOf[T, P](propType: propDashTypesLib.propDashTypesMod.Validator[P]): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
-  def childrenOfType[T](types: airbnbDashPropDashTypesLib.airbnbDashPropDashTypesMod.ReactTypeLike*): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
-  def childrenSequenceOf[T](specifiers: airbnbDashPropDashTypesLib.airbnbDashPropDashTypesMod.Specifier[_]*): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
+  def childrenOfType[T](types: ReactTypeLike*): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
+  def childrenSequenceOf[T](specifiers: Specifier[_]*): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
   def componentWithName[T](name: java.lang.String): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
   def componentWithName[T](name: java.lang.String, options: airbnbDashPropDashTypesLib.Anon_StripHOCs): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
   def componentWithName[T](name: stdLib.RegExp): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
@@ -59,7 +59,7 @@ object ^ extends js.Object {
     otherPropName: java.lang.String,
     otherPropType: propDashTypesLib.propDashTypesMod.Validator[_]
   ): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
-  def elementType[T](`type`: airbnbDashPropDashTypesLib.airbnbDashPropDashTypesMod.ReactTypeLike): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
+  def elementType[T](`type`: ReactTypeLike): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
   def explicitNull(): propDashTypesLib.propDashTypesMod.Requireable[js.UndefOr[scala.Null]] = js.native
   def forbidExtraProps[T /* <: js.Object */](propTypes: propDashTypesLib.propDashTypesMod.ValidationMap[T]): propDashTypesLib.propDashTypesMod.ValidationMap[T] = js.native
   def integer(): propDashTypesLib.propDashTypesMod.Requireable[scala.Double] = js.native
@@ -137,7 +137,7 @@ object ^ extends js.Object {
       js.UndefOr[java.lang.String | stdLib.Error]
     ]
   ): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
-  def sequenceOf[T](specifiers: airbnbDashPropDashTypesLib.airbnbDashPropDashTypesMod.Specifier[_]*): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
+  def sequenceOf[T](specifiers: Specifier[_]*): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
   def shape[T /* <: js.Object */](propTypes: propDashTypesLib.propDashTypesMod.ValidationMap[T]): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
   def stringStartsWith(string: java.lang.String): propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
   def uniqueArray[T](): propDashTypesLib.propDashTypesMod.Requireable[js.Array[T]] = js.native

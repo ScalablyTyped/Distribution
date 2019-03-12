@@ -27,7 +27,7 @@ object ColorButtonProps {
     column: scala.Int | scala.Double = null,
     expand: protonDashNativeLib.Anon_H = null,
     label: java.lang.String = null,
-    onChange: js.Function1[/* color */ protonDashNativeLib.Anon_A, scala.Unit] = null,
+    onChange: /* color */ protonDashNativeLib.Anon_A => scala.Unit = null,
     row: scala.Int | scala.Double = null,
     span: protonDashNativeLib.Anon_X = null,
     stretchy: js.UndefOr[scala.Boolean] = js.undefined
@@ -38,7 +38,7 @@ object ColorButtonProps {
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (label != null) __obj.updateDynamic("label")(label)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     if (span != null) __obj.updateDynamic("span")(span)
     if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy)

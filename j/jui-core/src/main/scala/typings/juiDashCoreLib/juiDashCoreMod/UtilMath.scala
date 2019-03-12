@@ -61,25 +61,25 @@ trait UtilMath extends js.Object {
 object UtilMath {
   @scala.inline
   def apply(
-    angle: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-    degree: js.Function1[scala.Double, scala.Double],
-    div: js.Function2[scala.Double, scala.Double, scala.Double],
-    interpolateNumber: js.Function2[scala.Double, scala.Double, js.Function0[scala.Unit]],
-    interpolateRound: js.Function2[scala.Double, scala.Double, js.Function0[scala.Unit]],
-    inverseMatrix3d: js.Function1[js.Array[_], js.Array[_]],
-    matrix: js.Function2[js.Array[js.Any], js.Array[js.Any], js.Array[js.Any]],
-    matrix3d: js.Function2[js.Array[js.Any], js.Array[js.Any], js.Array[js.Any]],
-    minus: js.Function2[scala.Double, scala.Double, scala.Double],
-    multi: js.Function2[scala.Double, scala.Double, scala.Double],
-    nice: js.Function4[scala.Double, scala.Double, scala.Double, scala.Boolean, js.Any],
-    plus: js.Function2[scala.Double, scala.Double, scala.Double],
-    radian: js.Function1[scala.Double, scala.Double],
-    remain: js.Function2[scala.Double, scala.Double, scala.Double],
-    resize: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, js.Any],
-    rotate: js.Function3[scala.Double, scala.Double, scala.Double, js.Any],
-    round: js.Function2[scala.Double, scala.Double, scala.Double]
+    angle: (scala.Double, scala.Double, scala.Double, scala.Double) => scala.Double,
+    degree: scala.Double => scala.Double,
+    div: (scala.Double, scala.Double) => scala.Double,
+    interpolateNumber: (scala.Double, scala.Double) => js.Function0[scala.Unit],
+    interpolateRound: (scala.Double, scala.Double) => js.Function0[scala.Unit],
+    inverseMatrix3d: js.Array[_] => js.Array[_],
+    matrix: (js.Array[js.Any], js.Array[js.Any]) => js.Array[js.Any],
+    matrix3d: (js.Array[js.Any], js.Array[js.Any]) => js.Array[js.Any],
+    minus: (scala.Double, scala.Double) => scala.Double,
+    multi: (scala.Double, scala.Double) => scala.Double,
+    nice: (scala.Double, scala.Double, scala.Double, scala.Boolean) => js.Any,
+    plus: (scala.Double, scala.Double) => scala.Double,
+    radian: scala.Double => scala.Double,
+    remain: (scala.Double, scala.Double) => scala.Double,
+    resize: (scala.Double, scala.Double, scala.Double, scala.Double) => js.Any,
+    rotate: (scala.Double, scala.Double, scala.Double) => js.Any,
+    round: (scala.Double, scala.Double) => scala.Double
   ): UtilMath = {
-    val __obj = js.Dynamic.literal(angle = angle, degree = degree, div = div, interpolateNumber = interpolateNumber, interpolateRound = interpolateRound, inverseMatrix3d = inverseMatrix3d, matrix = matrix, matrix3d = matrix3d, minus = minus, multi = multi, nice = nice, plus = plus, radian = radian, remain = remain, resize = resize, rotate = rotate, round = round)
+    val __obj = js.Dynamic.literal(angle = js.Any.fromFunction4(angle), degree = js.Any.fromFunction1(degree), div = js.Any.fromFunction2(div), interpolateNumber = js.Any.fromFunction2(interpolateNumber), interpolateRound = js.Any.fromFunction2(interpolateRound), inverseMatrix3d = js.Any.fromFunction1(inverseMatrix3d), matrix = js.Any.fromFunction2(matrix), matrix3d = js.Any.fromFunction2(matrix3d), minus = js.Any.fromFunction2(minus), multi = js.Any.fromFunction2(multi), nice = js.Any.fromFunction4(nice), plus = js.Any.fromFunction2(plus), radian = js.Any.fromFunction1(radian), remain = js.Any.fromFunction2(remain), resize = js.Any.fromFunction4(resize), rotate = js.Any.fromFunction3(rotate), round = js.Any.fromFunction2(round))
   
     __obj.asInstanceOf[UtilMath]
   }

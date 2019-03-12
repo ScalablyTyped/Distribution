@@ -88,26 +88,26 @@ trait Resource extends js.Object {
 object Resource {
   @scala.inline
   def apply(
-    allEmbeddedArrays: js.Function0[ResourceCollection],
-    allEmbeddedResourceArrays: js.Function0[ResourceCollection],
-    allEmbeddedResources: js.Function0[ResourceCollection],
-    allLinkArrays: js.Function0[LinkCollection],
-    allLinks: js.Function0[LinkCollection],
-    curie: js.Function1[java.lang.String, Link],
-    curieArray: js.Function0[js.Array[Link]],
-    embedded: js.Function1[java.lang.String, Resource],
-    embeddedArray: js.Function1[java.lang.String, js.Array[Resource]],
-    embeddedResource: js.Function1[java.lang.String, Resource],
-    embeddedResourceArray: js.Function1[java.lang.String, js.Array[Resource]],
-    hasCuries: js.Function0[scala.Boolean],
-    link: js.Function1[java.lang.String, Link],
-    linkArray: js.Function1[java.lang.String, js.Array[Link]],
-    original: js.Function0[js.Any],
-    reverseResolveCurie: js.Function1[java.lang.String, java.lang.String],
-    validation: js.Function0[js.Any],
-    validationIssues: js.Function0[js.Any]
+    allEmbeddedArrays: () => ResourceCollection,
+    allEmbeddedResourceArrays: () => ResourceCollection,
+    allEmbeddedResources: () => ResourceCollection,
+    allLinkArrays: () => LinkCollection,
+    allLinks: () => LinkCollection,
+    curie: java.lang.String => Link,
+    curieArray: () => js.Array[Link],
+    embedded: java.lang.String => Resource,
+    embeddedArray: java.lang.String => js.Array[Resource],
+    embeddedResource: java.lang.String => Resource,
+    embeddedResourceArray: java.lang.String => js.Array[Resource],
+    hasCuries: () => scala.Boolean,
+    link: java.lang.String => Link,
+    linkArray: java.lang.String => js.Array[Link],
+    original: () => js.Any,
+    reverseResolveCurie: java.lang.String => java.lang.String,
+    validation: () => js.Any,
+    validationIssues: () => js.Any
   ): Resource = {
-    val __obj = js.Dynamic.literal(allEmbeddedArrays = allEmbeddedArrays, allEmbeddedResourceArrays = allEmbeddedResourceArrays, allEmbeddedResources = allEmbeddedResources, allLinkArrays = allLinkArrays, allLinks = allLinks, curie = curie, curieArray = curieArray, embedded = embedded, embeddedArray = embeddedArray, embeddedResource = embeddedResource, embeddedResourceArray = embeddedResourceArray, hasCuries = hasCuries, link = link, linkArray = linkArray, original = original, reverseResolveCurie = reverseResolveCurie, validation = validation, validationIssues = validationIssues)
+    val __obj = js.Dynamic.literal(allEmbeddedArrays = js.Any.fromFunction0(allEmbeddedArrays), allEmbeddedResourceArrays = js.Any.fromFunction0(allEmbeddedResourceArrays), allEmbeddedResources = js.Any.fromFunction0(allEmbeddedResources), allLinkArrays = js.Any.fromFunction0(allLinkArrays), allLinks = js.Any.fromFunction0(allLinks), curie = js.Any.fromFunction1(curie), curieArray = js.Any.fromFunction0(curieArray), embedded = js.Any.fromFunction1(embedded), embeddedArray = js.Any.fromFunction1(embeddedArray), embeddedResource = js.Any.fromFunction1(embeddedResource), embeddedResourceArray = js.Any.fromFunction1(embeddedResourceArray), hasCuries = js.Any.fromFunction0(hasCuries), link = js.Any.fromFunction1(link), linkArray = js.Any.fromFunction1(linkArray), original = js.Any.fromFunction0(original), reverseResolveCurie = js.Any.fromFunction1(reverseResolveCurie), validation = js.Any.fromFunction0(validation), validationIssues = js.Any.fromFunction0(validationIssues))
   
     __obj.asInstanceOf[Resource]
   }

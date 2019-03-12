@@ -1,0 +1,18 @@
+package typings
+package reactDashNativeDashGoogleDashSigninLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashNativeDashGoogleDashSigninLibComponents {
+  @scala.inline
+  def GoogleSigninButton: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashNativeDashGoogleDashSigninLib.reactDashNativeDashGoogleDashSigninMod.GoogleSigninButtonProps
+  ] = js.constructorOf[reactDashNativeDashGoogleDashSigninLib.reactDashNativeDashGoogleDashSigninMod.GoogleSigninButton].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashNativeDashGoogleDashSigninLib.reactDashNativeDashGoogleDashSigninMod.GoogleSigninButtonProps]]
+  @scala.inline
+  def GoogleSigninButtonProps: reactDashNativeDashGoogleDashSigninLib.reactDashNativeDashGoogleDashSigninMod.GoogleSigninButtonProps.type = reactDashNativeDashGoogleDashSigninLib.reactDashNativeDashGoogleDashSigninMod.GoogleSigninButtonProps
+  type GoogleSigninButtonProps = reactDashNativeDashGoogleDashSigninLib.reactDashNativeDashGoogleDashSigninMod.GoogleSigninButtonProps
+}
+

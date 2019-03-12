@@ -31,8 +31,8 @@ object DateRangePickerOptions {
   @scala.inline
   def apply(
     ARIATemplate: java.lang.String = null,
-    change: js.Function1[/* e */ DateRangePickerChangeEvent, scala.Unit] = null,
-    close: js.Function1[/* e */ DateRangePickerCloseEvent, scala.Unit] = null,
+    change: /* e */ DateRangePickerChangeEvent => scala.Unit = null,
+    close: /* e */ DateRangePickerCloseEvent => scala.Unit = null,
     culture: java.lang.String = null,
     dates: js.Any = null,
     depth: java.lang.String = null,
@@ -45,15 +45,15 @@ object DateRangePickerOptions {
     min: stdLib.Date = null,
     month: DateRangePickerMonth = null,
     name: java.lang.String = null,
-    open: js.Function1[/* e */ DateRangePickerOpenEvent, scala.Unit] = null,
+    open: /* e */ DateRangePickerOpenEvent => scala.Unit = null,
     range: DateRangePickerRange = null,
     start: java.lang.String = null,
     weekNumber: js.UndefOr[scala.Boolean] = js.undefined
   ): DateRangePickerOptions = {
     val __obj = js.Dynamic.literal()
     if (ARIATemplate != null) __obj.updateDynamic("ARIATemplate")(ARIATemplate)
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (culture != null) __obj.updateDynamic("culture")(culture)
     if (dates != null) __obj.updateDynamic("dates")(dates)
     if (depth != null) __obj.updateDynamic("depth")(depth)
@@ -66,7 +66,7 @@ object DateRangePickerOptions {
     if (min != null) __obj.updateDynamic("min")(min)
     if (month != null) __obj.updateDynamic("month")(month)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (range != null) __obj.updateDynamic("range")(range)
     if (start != null) __obj.updateDynamic("start")(start)
     if (!js.isUndefined(weekNumber)) __obj.updateDynamic("weekNumber")(weekNumber)

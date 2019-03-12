@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Props extends js.Object {
   /* Set this to properly hide your application from assistive screenreaders and other assistive technologies while the modal is open. */
-  var appElement: js.UndefOr[reactLib.HTMLElement | js.Object] = js.undefined
+  var appElement: js.UndefOr[stdLib.HTMLElement | js.Object] = js.undefined
   /* Additional aria attributes. */
   var aria: js.UndefOr[Aria] = js.undefined
   /* Boolean indicating if the appElement should be hidden. Defaults to true. */
@@ -21,7 +21,7 @@ trait Props extends js.Object {
   /* String indicating how the content container should be announced to screenreaders. */
   var contentLabel: js.UndefOr[java.lang.String] = js.undefined
   /* Function accepting the ref for the content */
-  var contentRef: js.UndefOr[js.Function1[/* instance */ reactLib.HTMLDivElement, scala.Unit]] = js.undefined
+  var contentRef: js.UndefOr[js.Function1[/* instance */ stdLib.HTMLDivElement, scala.Unit]] = js.undefined
   /* Additional data attributes to be applied to to the modal content in the form of "data-*" */
   var data: js.UndefOr[js.Any] = js.undefined
   /* String className to be applied to the document.html. */
@@ -33,15 +33,13 @@ trait Props extends js.Object {
   /* Function that will be run after the modal has opened. */
   var onAfterOpen: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /* Function that will be run when the modal is requested to be closed, prior to actually closing. */
-  var onRequestClose: js.UndefOr[
-    js.Function1[/* event */ reactLib.MouseEvent | reactLib.KeyboardEvent, scala.Unit]
-  ] = js.undefined
+  var onRequestClose: js.UndefOr[js.Function1[/* event */ stdLib.MouseEvent | stdLib.KeyboardEvent, scala.Unit]] = js.undefined
   /* String or object className to be applied to the overlay. */
   var overlayClassName: js.UndefOr[java.lang.String | Classes] = js.undefined
   /* Function accepting the ref for the overlay */
-  var overlayRef: js.UndefOr[js.Function1[/* instance */ reactLib.HTMLDivElement, scala.Unit]] = js.undefined
+  var overlayRef: js.UndefOr[js.Function1[/* instance */ stdLib.HTMLDivElement, scala.Unit]] = js.undefined
   /* Function that will be called to get the parent element that the modal will be attached to. */
-  var parentSelector: js.UndefOr[js.Function0[reactLib.HTMLElement]] = js.undefined
+  var parentSelector: js.UndefOr[js.Function0[stdLib.HTMLElement]] = js.undefined
   /* String className to be applied to the portal. Defaults to "ReactModalPortal". */
   var portalClassName: js.UndefOr[java.lang.String] = js.undefined
   /* String indicating the role of the modal, allowing the 'dialog' role to be applied if desired. */
@@ -64,22 +62,22 @@ object Props {
   @scala.inline
   def apply(
     isOpen: scala.Boolean,
-    appElement: reactLib.HTMLElement | js.Object = null,
+    appElement: stdLib.HTMLElement | js.Object = null,
     aria: Aria = null,
     ariaHideApp: js.UndefOr[scala.Boolean] = js.undefined,
     bodyOpenClassName: java.lang.String = null,
     className: java.lang.String | Classes = null,
     closeTimeoutMS: scala.Int | scala.Double = null,
     contentLabel: java.lang.String = null,
-    contentRef: js.Function1[/* instance */ reactLib.HTMLDivElement, scala.Unit] = null,
+    contentRef: /* instance */ stdLib.HTMLDivElement => scala.Unit = null,
     data: js.Any = null,
     htmlOpenClassName: java.lang.String = null,
-    onAfterClose: js.Function0[scala.Unit] = null,
-    onAfterOpen: js.Function0[scala.Unit] = null,
-    onRequestClose: js.Function1[/* event */ reactLib.MouseEvent | reactLib.KeyboardEvent, scala.Unit] = null,
+    onAfterClose: () => scala.Unit = null,
+    onAfterOpen: () => scala.Unit = null,
+    onRequestClose: /* event */ stdLib.MouseEvent | stdLib.KeyboardEvent => scala.Unit = null,
     overlayClassName: java.lang.String | Classes = null,
-    overlayRef: js.Function1[/* instance */ reactLib.HTMLDivElement, scala.Unit] = null,
-    parentSelector: js.Function0[reactLib.HTMLElement] = null,
+    overlayRef: /* instance */ stdLib.HTMLDivElement => scala.Unit = null,
+    parentSelector: () => stdLib.HTMLElement = null,
     portalClassName: java.lang.String = null,
     role: java.lang.String = null,
     shouldCloseOnEsc: js.UndefOr[scala.Boolean] = js.undefined,
@@ -97,15 +95,15 @@ object Props {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (closeTimeoutMS != null) __obj.updateDynamic("closeTimeoutMS")(closeTimeoutMS.asInstanceOf[js.Any])
     if (contentLabel != null) __obj.updateDynamic("contentLabel")(contentLabel)
-    if (contentRef != null) __obj.updateDynamic("contentRef")(contentRef)
+    if (contentRef != null) __obj.updateDynamic("contentRef")(js.Any.fromFunction1(contentRef))
     if (data != null) __obj.updateDynamic("data")(data)
     if (htmlOpenClassName != null) __obj.updateDynamic("htmlOpenClassName")(htmlOpenClassName)
-    if (onAfterClose != null) __obj.updateDynamic("onAfterClose")(onAfterClose)
-    if (onAfterOpen != null) __obj.updateDynamic("onAfterOpen")(onAfterOpen)
-    if (onRequestClose != null) __obj.updateDynamic("onRequestClose")(onRequestClose)
+    if (onAfterClose != null) __obj.updateDynamic("onAfterClose")(js.Any.fromFunction0(onAfterClose))
+    if (onAfterOpen != null) __obj.updateDynamic("onAfterOpen")(js.Any.fromFunction0(onAfterOpen))
+    if (onRequestClose != null) __obj.updateDynamic("onRequestClose")(js.Any.fromFunction1(onRequestClose))
     if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName.asInstanceOf[js.Any])
-    if (overlayRef != null) __obj.updateDynamic("overlayRef")(overlayRef)
-    if (parentSelector != null) __obj.updateDynamic("parentSelector")(parentSelector)
+    if (overlayRef != null) __obj.updateDynamic("overlayRef")(js.Any.fromFunction1(overlayRef))
+    if (parentSelector != null) __obj.updateDynamic("parentSelector")(js.Any.fromFunction0(parentSelector))
     if (portalClassName != null) __obj.updateDynamic("portalClassName")(portalClassName)
     if (role != null) __obj.updateDynamic("role")(role)
     if (!js.isUndefined(shouldCloseOnEsc)) __obj.updateDynamic("shouldCloseOnEsc")(shouldCloseOnEsc)

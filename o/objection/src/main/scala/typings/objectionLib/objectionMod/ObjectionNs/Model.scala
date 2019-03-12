@@ -19,11 +19,11 @@ trait Model extends js.Object {
   @JSName("$afterValidate")
   def $afterValidate(json: Pojo, opt: ModelOptions): scala.Unit = js.native
   @JSName("$appendRelated")
-  def $appendRelated[T, RelatedM /* <: Model */](`this`: T, relation: nodeLib.String): T = js.native
+  def $appendRelated[T, RelatedM /* <: Model */](`this`: T, relation: java.lang.String): T = js.native
   @JSName("$appendRelated")
-  def $appendRelated[T, RelatedM /* <: Model */](`this`: T, relation: nodeLib.String, related: RelatedM): T = js.native
+  def $appendRelated[T, RelatedM /* <: Model */](`this`: T, relation: java.lang.String, related: RelatedM): T = js.native
   @JSName("$appendRelated")
-  def $appendRelated[T, RelatedM /* <: Model */](`this`: T, relation: nodeLib.String, related: js.Array[RelatedM]): T = js.native
+  def $appendRelated[T, RelatedM /* <: Model */](`this`: T, relation: java.lang.String, related: js.Array[RelatedM]): T = js.native
   @JSName("$appendRelated")
   def $appendRelated[T, RelatedM /* <: Model */](`this`: T, relation: Relation): T = js.native
   @JSName("$appendRelated")
@@ -123,11 +123,11 @@ trait Model extends js.Object {
   @JSName("$setJson")
   def $setJson[T](`this`: T, json: Pojo, opt: ModelOptions): T = js.native
   @JSName("$setRelated")
-  def $setRelated[T, RelatedM /* <: Model */](`this`: T, relation: nodeLib.String): T = js.native
+  def $setRelated[T, RelatedM /* <: Model */](`this`: T, relation: java.lang.String): T = js.native
   @JSName("$setRelated")
-  def $setRelated[T, RelatedM /* <: Model */](`this`: T, relation: nodeLib.String, related: RelatedM): T = js.native
+  def $setRelated[T, RelatedM /* <: Model */](`this`: T, relation: java.lang.String, related: RelatedM): T = js.native
   @JSName("$setRelated")
-  def $setRelated[T, RelatedM /* <: Model */](`this`: T, relation: nodeLib.String, related: js.Array[RelatedM]): T = js.native
+  def $setRelated[T, RelatedM /* <: Model */](`this`: T, relation: java.lang.String, related: js.Array[RelatedM]): T = js.native
   @JSName("$setRelated")
   def $setRelated[T, RelatedM /* <: Model */](`this`: T, relation: Relation): T = js.native
   @JSName("$setRelated")

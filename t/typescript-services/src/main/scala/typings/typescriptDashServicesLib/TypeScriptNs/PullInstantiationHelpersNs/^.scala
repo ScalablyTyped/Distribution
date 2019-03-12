@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def cleanUpTypeArgumentMap(
     symbol: typescriptDashServicesLib.TypeScriptNs.InstantiableSymbol,
-    mutableTypeArgumentMap: typescriptDashServicesLib.TypeScriptNs.PullInstantiationHelpersNs.MutableTypeArgumentMap
+    mutableTypeArgumentMap: MutableTypeArgumentMap
   ): scala.Unit = js.native
   def createTypeParameterArgumentMap(
     typeParameters: js.Array[typescriptDashServicesLib.TypeScriptNs.PullTypeParameterSymbol],
@@ -20,7 +20,7 @@ object ^ extends js.Object {
   def instantiateTypeArgument(
     resolver: typescriptDashServicesLib.TypeScriptNs.PullTypeResolver,
     symbol: typescriptDashServicesLib.TypeScriptNs.InstantiableSymbol,
-    mutableTypeParameterMap: typescriptDashServicesLib.TypeScriptNs.PullInstantiationHelpersNs.MutableTypeArgumentMap
+    mutableTypeParameterMap: MutableTypeArgumentMap
   ): scala.Unit = js.native
   def twoTypesAreInstantiationsOfSameNamedGenericType(
     type1: typescriptDashServicesLib.TypeScriptNs.PullTypeSymbol,
@@ -29,7 +29,7 @@ object ^ extends js.Object {
   def updateMutableTypeParameterArgumentMap(
     typeParameters: js.Array[typescriptDashServicesLib.TypeScriptNs.PullTypeParameterSymbol],
     typeArguments: js.Array[typescriptDashServicesLib.TypeScriptNs.PullTypeSymbol],
-    mutableMap: typescriptDashServicesLib.TypeScriptNs.PullInstantiationHelpersNs.MutableTypeArgumentMap
+    mutableMap: MutableTypeArgumentMap
   ): scala.Unit = js.native
   def updateTypeParameterArgumentMap(
     typeParameters: js.Array[typescriptDashServicesLib.TypeScriptNs.PullTypeParameterSymbol],

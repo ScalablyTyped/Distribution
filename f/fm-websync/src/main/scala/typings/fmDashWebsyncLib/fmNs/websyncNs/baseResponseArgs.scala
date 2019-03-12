@@ -9,7 +9,7 @@ trait baseResponseArgs extends baseArgs {
   /**
     * The singleton client.
     */
-  var client: client
+  var client: fmDashWebsyncLib.fmNs.websyncNs.client
   /**
     * The ID of the singleton client.
     */

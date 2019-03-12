@@ -204,11 +204,11 @@ object DynamoDBNs extends js.Object {
     /**
       * ARN associated with the backup.
       */
-    var BackupArn: BackupArn
+    var BackupArn: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.BackupArn
     /**
       * Time at which the backup was created. This is the request time of the backup. 
       */
-    var BackupCreationDateTime: BackupCreationDateTime
+    var BackupCreationDateTime: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.BackupCreationDateTime
     /**
       * Time at which the automatic on-demand backup created by DynamoDB will expire. This SYSTEM on-demand backup expires automatically 35 days after its creation.
       */
@@ -216,7 +216,7 @@ object DynamoDBNs extends js.Object {
     /**
       * Name of the requested backup.
       */
-    var BackupName: BackupName
+    var BackupName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.BackupName
     /**
       * Size of the backup in bytes.
       */
@@ -224,11 +224,11 @@ object DynamoDBNs extends js.Object {
     /**
       * Backup can be in one of the following states: CREATING, ACTIVE, DELETED. 
       */
-    var BackupStatus: BackupStatus
+    var BackupStatus: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.BackupStatus
     /**
       * BackupType:    USER - You create and manage these using the on-demand backup feature.    SYSTEM - If you delete a table with point-in-time recovery enabled, a SYSTEM backup is automatically created and is retained for 35 days (at no additional cost). System backups allow you to restore the deleted table to the state it was in just before the point of deletion.     AWS_BACKUP - On-demand backup created by you from AWS Backup service.  
       */
-    var BackupType: BackupType
+    var BackupType: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.BackupType
   }
   
   trait BackupSummary extends js.Object {
@@ -374,14 +374,14 @@ object DynamoDBNs extends js.Object {
     /**
       * A comparator for evaluating attributes. For example, equals, greater than, less than, etc. The following comparison operators are available:  EQ | NE | LE | LT | GE | GT | NOT_NULL | NULL | CONTAINS | NOT_CONTAINS | BEGINS_WITH | IN | BETWEEN  The following are descriptions of each comparison operator.    EQ : Equal. EQ is supported for all data types, including lists and maps.  AttributeValueList can contain only one AttributeValue element of type String, Number, Binary, String Set, Number Set, or Binary Set. If an item contains an AttributeValue element of a different type than the one provided in the request, the value does not match. For example, {"S":"6"} does not equal {"N":"6"}. Also, {"N":"6"} does not equal {"NS":["6", "2", "1"]}.     NE : Not equal. NE is supported for all data types, including lists and maps.  AttributeValueList can contain only one AttributeValue of type String, Number, Binary, String Set, Number Set, or Binary Set. If an item contains an AttributeValue of a different type than the one provided in the request, the value does not match. For example, {"S":"6"} does not equal {"N":"6"}. Also, {"N":"6"} does not equal {"NS":["6", "2", "1"]}.     LE : Less than or equal.   AttributeValueList can contain only one AttributeValue element of type String, Number, or Binary (not a set type). If an item contains an AttributeValue element of a different type than the one provided in the request, the value does not match. For example, {"S":"6"} does not equal {"N":"6"}. Also, {"N":"6"} does not compare to {"NS":["6", "2", "1"]}.     LT : Less than.   AttributeValueList can contain only one AttributeValue of type String, Number, or Binary (not a set type). If an item contains an AttributeValue element of a different type than the one provided in the request, the value does not match. For example, {"S":"6"} does not equal {"N":"6"}. Also, {"N":"6"} does not compare to {"NS":["6", "2", "1"]}.     GE : Greater than or equal.   AttributeValueList can contain only one AttributeValue element of type String, Number, or Binary (not a set type). If an item contains an AttributeValue element of a different type than the one provided in the request, the value does not match. For example, {"S":"6"} does not equal {"N":"6"}. Also, {"N":"6"} does not compare to {"NS":["6", "2", "1"]}.     GT : Greater than.   AttributeValueList can contain only one AttributeValue element of type String, Number, or Binary (not a set type). If an item contains an AttributeValue element of a different type than the one provided in the request, the value does not match. For example, {"S":"6"} does not equal {"N":"6"}. Also, {"N":"6"} does not compare to {"NS":["6", "2", "1"]}.     NOT_NULL : The attribute exists. NOT_NULL is supported for all data types, including lists and maps.  This operator tests for the existence of an attribute, not its data type. If the data type of attribute "a" is null, and you evaluate it using NOT_NULL, the result is a Boolean true. This result is because the attribute "a" exists; its data type is not relevant to the NOT_NULL comparison operator.     NULL : The attribute does not exist. NULL is supported for all data types, including lists and maps.  This operator tests for the nonexistence of an attribute, not its data type. If the data type of attribute "a" is null, and you evaluate it using NULL, the result is a Boolean false. This is because the attribute "a" exists; its data type is not relevant to the NULL comparison operator.     CONTAINS : Checks for a subsequence, or value in a set.  AttributeValueList can contain only one AttributeValue element of type String, Number, or Binary (not a set type). If the target attribute of the comparison is of type String, then the operator checks for a substring match. If the target attribute of the comparison is of type Binary, then the operator looks for a subsequence of the target that matches the input. If the target attribute of the comparison is a set ("SS", "NS", or "BS"), then the operator evaluates to true if it finds an exact match with any member of the set. CONTAINS is supported for lists: When evaluating "a CONTAINS b", "a" can be a list; however, "b" cannot be a set, a map, or a list.    NOT_CONTAINS : Checks for absence of a subsequence, or absence of a value in a set.  AttributeValueList can contain only one AttributeValue element of type String, Number, or Binary (not a set type). If the target attribute of the comparison is a String, then the operator checks for the absence of a substring match. If the target attribute of the comparison is Binary, then the operator checks for the absence of a subsequence of the target that matches the input. If the target attribute of the comparison is a set ("SS", "NS", or "BS"), then the operator evaluates to true if it does not find an exact match with any member of the set. NOT_CONTAINS is supported for lists: When evaluating "a NOT CONTAINS b", "a" can be a list; however, "b" cannot be a set, a map, or a list.    BEGINS_WITH : Checks for a prefix.   AttributeValueList can contain only one AttributeValue of type String or Binary (not a Number or a set type). The target attribute of the comparison must be of type String or Binary (not a Number or a set type).     IN : Checks for matching elements in a list.  AttributeValueList can contain one or more AttributeValue elements of type String, Number, or Binary. These attributes are compared against an existing attribute of an item. If any elements of the input are equal to the item attribute, the expression evaluates to true.    BETWEEN : Greater than or equal to the first value, and less than or equal to the second value.   AttributeValueList must contain two AttributeValue elements of the same type, either String, Number, or Binary (not a set type). A target attribute matches if the target value is greater than, or equal to, the first element and less than, or equal to, the second element. If an item contains an AttributeValue element of a different type than the one provided in the request, the value does not match. For example, {"S":"6"} does not compare to {"N":"6"}. Also, {"N":"6"} does not compare to {"NS":["6", "2", "1"]}    For usage examples of AttributeValueList and ComparisonOperator, see Legacy Conditional Parameters in the Amazon DynamoDB Developer Guide.
       */
-    var ComparisonOperator: ComparisonOperator
+    var ComparisonOperator: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ComparisonOperator
   }
   
   trait ConditionCheck extends js.Object {
     /**
       * A condition that must be satisfied in order for a conditional update to succeed.
       */
-    var ConditionExpression: ConditionExpression
+    var ConditionExpression: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ConditionExpression
     /**
       * One or more substitution tokens for attribute names in an expression.
       */
@@ -393,7 +393,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The primary key of the item to be checked. Each element consists of an attribute name and a value for that attribute.
       */
-    var Key: Key
+    var Key: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.Key
     /**
       * Use ReturnValuesOnConditionCheckFailure to get the item attributes if the ConditionCheck condition fails. For ReturnValuesOnConditionCheckFailure, the valid values are: NONE and ALL_OLD.
       */
@@ -401,7 +401,7 @@ object DynamoDBNs extends js.Object {
     /**
       * Name of the table for the check item request.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
   }
   
   trait ConsumedCapacity extends js.Object {
@@ -439,7 +439,7 @@ object DynamoDBNs extends js.Object {
     /**
       *  ContinuousBackupsStatus can be one of the following states: ENABLED, DISABLED
       */
-    var ContinuousBackupsStatus: ContinuousBackupsStatus
+    var ContinuousBackupsStatus: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ContinuousBackupsStatus
     /**
       * The description of the point in time recovery settings applied to the table.
       */
@@ -453,11 +453,11 @@ object DynamoDBNs extends js.Object {
     /**
       * Specified name for the backup.
       */
-    var BackupName: BackupName
+    var BackupName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.BackupName
     /**
       * The name of the table.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
   }
   
   trait CreateBackupOutput extends js.Object {
@@ -471,15 +471,15 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the global secondary index to be created.
       */
-    var IndexName: IndexName
+    var IndexName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.IndexName
     /**
       * The key schema for the global secondary index.
       */
-    var KeySchema: KeySchema
+    var KeySchema: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.KeySchema
     /**
       * Represents attributes that are copied (projected) from the table into an index. These are in addition to the primary key attributes and index key attributes, which are automatically projected.
       */
-    var Projection: Projection
+    var Projection: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.Projection
     /**
       * Represents the provisioned throughput settings for the specified global secondary index. For current minimum and maximum provisioned throughput values, see Limits in the Amazon DynamoDB Developer Guide.
       */
@@ -508,14 +508,14 @@ object DynamoDBNs extends js.Object {
     /**
       * The region of the replica to be added.
       */
-    var RegionName: RegionName
+    var RegionName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.RegionName
   }
   
   trait CreateTableInput extends js.Object {
     /**
       * An array of attributes that describe the key schema for the table and indexes.
       */
-    var AttributeDefinitions: AttributeDefinitions
+    var AttributeDefinitions: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeDefinitions
     /**
       * Controls how you are charged for read and write throughput and how you manage capacity. This setting can be changed later.    PROVISIONED - Sets the billing mode to PROVISIONED. We recommend using PROVISIONED for predictable workloads.    PAY_PER_REQUEST - Sets the billing mode to PAY_PER_REQUEST. We recommend using PAY_PER_REQUEST for unpredictable workloads.   
       */
@@ -527,7 +527,7 @@ object DynamoDBNs extends js.Object {
     /**
       * Specifies the attributes that make up the primary key for a table or an index. The attributes in KeySchema must also be defined in the AttributeDefinitions array. For more information, see Data Model in the Amazon DynamoDB Developer Guide. Each KeySchemaElement in the array is composed of:    AttributeName - The name of this key attribute.    KeyType - The role that the key attribute will assume:    HASH - partition key    RANGE - sort key      The partition key of an item is also known as its hash attribute. The term "hash attribute" derives from DynamoDB' usage of an internal hash function to evenly distribute data items across partitions, based on their partition key values. The sort key of an item is also known as its range attribute. The term "range attribute" derives from the way DynamoDB stores items with the same partition key physically close together, in sorted order by the sort key value.  For a simple primary key (partition key), you must provide exactly one element with a KeyType of HASH. For a composite primary key (partition key and sort key), you must provide exactly two elements, in this order: The first element must have a KeyType of HASH, and the second element must have a KeyType of RANGE. For more information, see Specifying the Primary Key in the Amazon DynamoDB Developer Guide.
       */
-    var KeySchema: KeySchema
+    var KeySchema: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.KeySchema
     /**
       * One or more local secondary indexes (the maximum is 5) to be created on the table. Each index is scoped to a given partition key value. There is a 10 GB size limit per partition key value; otherwise, the size of a local secondary index is unconstrained. Each local secondary index in the array includes the following:    IndexName - The name of the local secondary index. Must be unique only for this table.     KeySchema - Specifies the key schema for the local secondary index. The key schema must begin with the same partition key as the table.    Projection - Specifies attributes that are copied (projected) from the table into the index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. Each attribute specification is composed of:    ProjectionType - One of the following:    KEYS_ONLY - Only the index and primary keys are projected into the index.    INCLUDE - Only the specified table attributes are projected into the index. The list of projected attributes are in NonKeyAttributes.    ALL - All of the table attributes are projected into the index.      NonKeyAttributes - A list of one or more non-key attribute names that are projected into the secondary index. The total count of attributes provided in NonKeyAttributes, summed across all of the secondary indexes, must not exceed 100. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.    
       */
@@ -547,7 +547,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the table to create.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
   }
   
   trait CreateTableOutput extends js.Object {
@@ -573,7 +573,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The primary key of the item to be deleted. Each element consists of an attribute name and a value for that attribute.
       */
-    var Key: Key
+    var Key: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.Key
     /**
       * Use ReturnValuesOnConditionCheckFailure to get the item attributes if the Delete condition fails. For ReturnValuesOnConditionCheckFailure, the valid values are: NONE and ALL_OLD.
       */
@@ -581,14 +581,14 @@ object DynamoDBNs extends js.Object {
     /**
       * Name of the table in which the item to be deleted resides.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
   }
   
   trait DeleteBackupInput extends js.Object {
     /**
       * The ARN associated with the backup.
       */
-    var BackupArn: BackupArn
+    var BackupArn: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.BackupArn
   }
   
   trait DeleteBackupOutput extends js.Object {
@@ -602,7 +602,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the global secondary index to be deleted.
       */
-    var IndexName: IndexName
+    var IndexName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.IndexName
   }
   
   trait DeleteItemInput extends js.Object {
@@ -629,7 +629,7 @@ object DynamoDBNs extends js.Object {
     /**
       * A map of attribute names to AttributeValue objects, representing the primary key of the item to delete. For the primary key, you must provide all of the attributes. For example, with a simple primary key, you only need to provide a value for the partition key. For a composite primary key, you must provide values for both the partition key and the sort key.
       */
-    var Key: Key
+    var Key: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.Key
     var ReturnConsumedCapacity: js.UndefOr[ReturnConsumedCapacity] = js.undefined
     /**
       * Determines whether item collection metrics are returned. If set to SIZE, the response includes statistics about item collections, if any, that were modified during the operation are returned in the response. If set to NONE (the default), no statistics are returned.
@@ -642,7 +642,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the table from which to delete the item.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
   }
   
   trait DeleteItemOutput extends js.Object {
@@ -664,21 +664,21 @@ object DynamoDBNs extends js.Object {
     /**
       * The region of the replica to be removed.
       */
-    var RegionName: RegionName
+    var RegionName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.RegionName
   }
   
   trait DeleteRequest extends js.Object {
     /**
       * A map of attribute name to attribute values, representing the primary key of the item to delete. All of the table's primary key attributes must be specified, and their data types must match those of the table's key schema.
       */
-    var Key: Key
+    var Key: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.Key
   }
   
   trait DeleteTableInput extends js.Object {
     /**
       * The name of the table to delete.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
   }
   
   trait DeleteTableOutput extends js.Object {
@@ -692,7 +692,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The ARN associated with the backup.
       */
-    var BackupArn: BackupArn
+    var BackupArn: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.BackupArn
   }
   
   trait DescribeBackupOutput extends js.Object {
@@ -706,7 +706,7 @@ object DynamoDBNs extends js.Object {
     /**
       * Name of the table for which the customer wants to check the continuous backups and point in time recovery settings.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
   }
   
   trait DescribeContinuousBackupsOutput extends js.Object {
@@ -722,7 +722,7 @@ object DynamoDBNs extends js.Object {
     /**
       * List of endpoints.
       */
-    var Endpoints: Endpoints
+    var Endpoints: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.Endpoints
   }
   
   trait DescribeGlobalTableInput extends js.Object {
@@ -782,7 +782,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the table to describe.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
   }
   
   trait DescribeTableOutput extends js.Object {
@@ -796,7 +796,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the table to be described.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
   }
   
   trait DescribeTimeToLiveOutput extends js.Object {
@@ -1062,7 +1062,7 @@ object DynamoDBNs extends js.Object {
     /**
       * A map of attribute names to AttributeValue objects that specifies the primary key of the item to retrieve.
       */
-    var Key: Key
+    var Key: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.Key
     /**
       * A string that identifies one or more attributes of the specified item to retrieve from the table. The attributes in the expression must be separated by commas. If no attribute names are specified, then all attributes of the specified item are returned. If any of the requested attributes are not found, they do not appear in the result.
       */
@@ -1070,7 +1070,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the table from which to retrieve the specified item.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
   }
   
   trait GetItemInput extends js.Object {
@@ -1089,7 +1089,7 @@ object DynamoDBNs extends js.Object {
     /**
       * A map of attribute names to AttributeValue objects, representing the primary key of the item to retrieve. For the primary key, you must provide all of the attributes. For example, with a simple primary key, you only need to provide a value for the partition key. For a composite primary key, you must provide values for both the partition key and the sort key.
       */
-    var Key: Key
+    var Key: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.Key
     /**
       * A string that identifies one or more attributes to retrieve from the table. These attributes can include scalars, sets, or elements of a JSON document. The attributes in the expression must be separated by commas. If no attribute names are specified, then all attributes will be returned. If any of the requested attributes are not found, they will not appear in the result. For more information, see Accessing Item Attributes in the Amazon DynamoDB Developer Guide.
       */
@@ -1098,7 +1098,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the table containing the requested item.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
   }
   
   trait GetItemOutput extends js.Object {
@@ -1116,15 +1116,15 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the global secondary index. The name must be unique among all other indexes on this table.
       */
-    var IndexName: IndexName
+    var IndexName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.IndexName
     /**
       * The complete key schema for a global secondary index, which consists of one or more pairs of attribute names and key types:    HASH - partition key    RANGE - sort key    The partition key of an item is also known as its hash attribute. The term "hash attribute" derives from DynamoDB' usage of an internal hash function to evenly distribute data items across partitions, based on their partition key values. The sort key of an item is also known as its range attribute. The term "range attribute" derives from the way DynamoDB stores items with the same partition key physically close together, in sorted order by the sort key value. 
       */
-    var KeySchema: KeySchema
+    var KeySchema: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.KeySchema
     /**
       * Represents attributes that are copied (projected) from the table into the global secondary index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. 
       */
-    var Projection: Projection
+    var Projection: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.Projection
     /**
       * Represents the provisioned throughput settings for the specified global secondary index. For current minimum and maximum provisioned throughput values, see Limits in the Amazon DynamoDB Developer Guide.
       */
@@ -1242,7 +1242,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the global secondary index. The name must be unique among all other indexes on this table.
       */
-    var IndexName: IndexName
+    var IndexName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.IndexName
     /**
       * AutoScaling settings for managing a global secondary index's write capacity units.
       */
@@ -1291,7 +1291,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The role that this key attribute will assume:    HASH - partition key    RANGE - sort key    The partition key of an item is also known as its hash attribute. The term "hash attribute" derives from DynamoDB' usage of an internal hash function to evenly distribute data items across partitions, based on their partition key values. The sort key of an item is also known as its range attribute. The term "range attribute" derives from the way DynamoDB stores items with the same partition key physically close together, in sorted order by the sort key value. 
       */
-    var KeyType: KeyType
+    var KeyType: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.KeyType
   }
   
   trait KeysAndAttributes extends js.Object {
@@ -1429,15 +1429,15 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the local secondary index. The name must be unique among all other indexes on this table.
       */
-    var IndexName: IndexName
+    var IndexName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.IndexName
     /**
       * The complete key schema for the local secondary index, consisting of one or more pairs of attribute names and key types:    HASH - partition key    RANGE - sort key    The partition key of an item is also known as its hash attribute. The term "hash attribute" derives from DynamoDB' usage of an internal hash function to evenly distribute data items across partitions, based on their partition key values. The sort key of an item is also known as its range attribute. The term "range attribute" derives from the way DynamoDB stores items with the same partition key physically close together, in sorted order by the sort key value. 
       */
-    var KeySchema: KeySchema
+    var KeySchema: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.KeySchema
     /**
       * Represents attributes that are copied (projected) from the table into the local secondary index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. 
       */
-    var Projection: Projection
+    var Projection: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.Projection
   }
   
   trait LocalSecondaryIndexDescription extends js.Object {
@@ -1576,7 +1576,7 @@ object DynamoDBNs extends js.Object {
     /**
       * Name of the table in which to write the item.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
   }
   
   trait PutItemInput extends js.Object {
@@ -1616,7 +1616,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the table to contain the item.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
   }
   
   trait PutItemInputAttributeMap
@@ -1709,7 +1709,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the table containing the requested items.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
   }
   
   trait QueryOutput extends js.Object {
@@ -1753,7 +1753,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the global secondary index. The name must be unique among all other indexes on this table.
       */
-    var IndexName: IndexName
+    var IndexName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.IndexName
     /**
       *  The current status of the global secondary index:    CREATING - The global secondary index is being created.    UPDATING - The global secondary index is being updated.    DELETING - The global secondary index is being deleted.    ACTIVE - The global secondary index is ready for use.  
       */
@@ -1780,7 +1780,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the global secondary index. The name must be unique among all other indexes on this table.
       */
-    var IndexName: IndexName
+    var IndexName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.IndexName
     /**
       * Autoscaling settings for managing a global secondary index replica's read capacity units.
       */
@@ -1795,7 +1795,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The region name of the replica.
       */
-    var RegionName: RegionName
+    var RegionName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.RegionName
     /**
       * The read/write capacity mode of the replica.
       */
@@ -1830,7 +1830,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The region of the replica to be added.
       */
-    var RegionName: RegionName
+    var RegionName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.RegionName
     /**
       * Represents the settings of a global secondary index for a global table that will be modified.
       */
@@ -1864,7 +1864,7 @@ object DynamoDBNs extends js.Object {
     /**
       * Indicates if a restore is in progress or not.
       */
-    var RestoreInProgress: RestoreInProgress
+    var RestoreInProgress: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.RestoreInProgress
     /**
       * ARN of the backup from which the table was restored.
       */
@@ -1879,7 +1879,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The ARN associated with the backup.
       */
-    var BackupArn: BackupArn
+    var BackupArn: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.BackupArn
     /**
       * The name of the new table to which the backup must be restored.
       */
@@ -2006,7 +2006,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the table containing the requested items; or, if you provide IndexName, the name of the table to which that index belongs.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
     /**
       * For a parallel Scan request, TotalSegments represents the total number of segments into which the Scan operation will be divided. The value of TotalSegments corresponds to the number of application workers that will perform the parallel scan. For example, if you want to use four application threads to scan a table or an index, specify a TotalSegments value of 4. The value for TotalSegments must be greater than or equal to 1, and less than or equal to 1000000. If you specify a TotalSegments value of 1, the Scan operation will be sequential rather than parallel. If you specify TotalSegments, you must also specify Segment.
       */
@@ -2051,11 +2051,11 @@ object DynamoDBNs extends js.Object {
     /**
       * Schema of the table. 
       */
-    var KeySchema: KeySchema
+    var KeySchema: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.KeySchema
     /**
       * Read IOPs and Write IOPS on the table when the backup was created.
       */
-    var ProvisionedThroughput: ProvisionedThroughput
+    var ProvisionedThroughput: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ProvisionedThroughput
     /**
       * ARN of the table for which backup was created. 
       */
@@ -2063,15 +2063,15 @@ object DynamoDBNs extends js.Object {
     /**
       * Time when the source table was created. 
       */
-    var TableCreationDateTime: TableCreationDateTime
+    var TableCreationDateTime: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableCreationDateTime
     /**
       * Unique identifier for the table for which the backup was created. 
       */
-    var TableId: TableId
+    var TableId: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableId
     /**
       * The name of the table for which the backup was created. 
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
     /**
       * Size of the table in bytes. Please note this is an approximate value.
       */
@@ -2235,7 +2235,7 @@ object DynamoDBNs extends js.Object {
     /**
       * Contains the primary key that identifies the item to get, together with the name of the table that contains the item, and optionally the specific attributes of the item to retrieve.
       */
-    var Get: Get
+    var Get: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.Get
   }
   
   trait TransactGetItemsInput extends js.Object {
@@ -3184,7 +3184,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The primary key of the item to be updated. Each element consists of an attribute name and a value for that attribute.
       */
-    var Key: Key
+    var Key: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.Key
     /**
       * Use ReturnValuesOnConditionCheckFailure to get the item attributes if the Update condition fails. For ReturnValuesOnConditionCheckFailure, the valid values are: NONE, ALL_OLD, UPDATED_OLD, ALL_NEW, UPDATED_NEW.
       */
@@ -3192,22 +3192,22 @@ object DynamoDBNs extends js.Object {
     /**
       * Name of the table for the UpdateItem request.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
     /**
       * An expression that defines one or more attributes to be updated, the action to be performed on them, and new value(s) for them.
       */
-    var UpdateExpression: UpdateExpression
+    var UpdateExpression: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.UpdateExpression
   }
   
   trait UpdateContinuousBackupsInput extends js.Object {
     /**
       * Represents the settings used to enable point in time recovery.
       */
-    var PointInTimeRecoverySpecification: PointInTimeRecoverySpecification
+    var PointInTimeRecoverySpecification: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.PointInTimeRecoverySpecification
     /**
       * The name of the table.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
   }
   
   trait UpdateContinuousBackupsOutput extends js.Object {
@@ -3221,11 +3221,11 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the global secondary index to be updated.
       */
-    var IndexName: IndexName
+    var IndexName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.IndexName
     /**
       * Represents the provisioned throughput settings for the specified global secondary index. For current minimum and maximum provisioned throughput values, see Limits in the Amazon DynamoDB Developer Guide.
       */
-    var ProvisionedThroughput: ProvisionedThroughput
+    var ProvisionedThroughput: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ProvisionedThroughput
   }
   
   trait UpdateGlobalTableInput extends js.Object {
@@ -3312,7 +3312,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The primary key of the item to be updated. Each element consists of an attribute name and a value for that attribute. For the primary key, you must provide all of the attributes. For example, with a simple primary key, you only need to provide a value for the partition key. For a composite primary key, you must provide values for both the partition key and the sort key.
       */
-    var Key: Key
+    var Key: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.Key
     var ReturnConsumedCapacity: js.UndefOr[ReturnConsumedCapacity] = js.undefined
     /**
       * Determines whether item collection metrics are returned. If set to SIZE, the response includes statistics about item collections, if any, that were modified during the operation are returned in the response. If set to NONE (the default), no statistics are returned.
@@ -3325,7 +3325,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the table containing the item to update.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
     /**
       * An expression that defines one or more attributes to be updated, the action to be performed on them, and new value(s) for them. The following action values are available for UpdateExpression.    SET - Adds one or more attributes and values to an item. If any of these attribute already exist, they are replaced by the new values. You can also use SET to add or subtract from an attribute that is of type Number. For example: SET myNum = myNum + :val   SET supports the following functions:    if_not_exists (path, operand) - if the item does not contain an attribute at the specified path, then if_not_exists evaluates to operand; otherwise, it evaluates to path. You can use this function to avoid overwriting an attribute that may already be present in the item.    list_append (operand, operand) - evaluates to a list with a new element added to it. You can append the new element to the start or the end of the list by reversing the order of the operands.   These function names are case-sensitive.    REMOVE - Removes one or more attributes from an item.    ADD - Adds the specified value to the item, if the attribute does not already exist. If the attribute does exist, then the behavior of ADD depends on the data type of the attribute:   If the existing attribute is a number, and if Value is also a number, then Value is mathematically added to the existing attribute. If Value is a negative number, then it is subtracted from the existing attribute.  If you use ADD to increment or decrement a number value for an item that doesn't exist before the update, DynamoDB uses 0 as the initial value. Similarly, if you use ADD for an existing item to increment or decrement an attribute value that doesn't exist before the update, DynamoDB uses 0 as the initial value. For example, suppose that the item you want to update doesn't have an attribute named itemcount, but you decide to ADD the number 3 to this attribute anyway. DynamoDB will create the itemcount attribute, set its initial value to 0, and finally add 3 to it. The result will be a new itemcount attribute in the item, with a value of 3.    If the existing data type is a set and if Value is also a set, then Value is added to the existing set. For example, if the attribute value is the set [1,2], and the ADD action specified [3], then the final attribute value is [1,2,3]. An error occurs if an ADD action is specified for a set attribute and the attribute type specified does not match the existing set type.  Both sets must have the same primitive data type. For example, if the existing data type is a set of strings, the Value must also be a set of strings.    The ADD action only supports Number and set data types. In addition, ADD can only be used on top-level attributes, not nested attributes.     DELETE - Deletes an element from a set. If a set of values is specified, then those values are subtracted from the old set. For example, if the attribute value was the set [a,b,c] and the DELETE action specifies [a,c], then the final attribute value is [b]. Specifying an empty set is an error.  The DELETE action only supports set data types. In addition, DELETE can only be used on top-level attributes, not nested attributes.    You can have many actions in a single expression, such as the following: SET a=:value1, b=:value2 DELETE :value3, :value4, :value5  For more information on update expressions, see Modifying Items and Attributes in the Amazon DynamoDB Developer Guide.
       */
@@ -3375,7 +3375,7 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the table to be updated.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
   }
   
   trait UpdateTableOutput extends js.Object {
@@ -3389,11 +3389,11 @@ object DynamoDBNs extends js.Object {
     /**
       * The name of the table to be configured.
       */
-    var TableName: TableName
+    var TableName: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TableName
     /**
       * Represents the settings used to enable or disable Time to Live for the specified table.
       */
-    var TimeToLiveSpecification: TimeToLiveSpecification
+    var TimeToLiveSpecification: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TimeToLiveSpecification
   }
   
   trait UpdateTimeToLiveOutput extends js.Object {

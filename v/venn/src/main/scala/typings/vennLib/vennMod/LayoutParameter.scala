@@ -19,15 +19,11 @@ trait LayoutParameter extends js.Object {
 object LayoutParameter {
   @scala.inline
   def apply(
-    lossFunction: js.Function2[
-      /* sets */ org.scalablytyped.runtime.StringDictionary[Circle], 
-      /* overlaps */ js.Array[Overlap], 
-      scala.Double
-    ] = null,
+    lossFunction: (/* sets */ org.scalablytyped.runtime.StringDictionary[Circle], /* overlaps */ js.Array[Overlap]) => scala.Double = null,
     restarts: scala.Int | scala.Double = null
   ): LayoutParameter = {
     val __obj = js.Dynamic.literal()
-    if (lossFunction != null) __obj.updateDynamic("lossFunction")(lossFunction)
+    if (lossFunction != null) __obj.updateDynamic("lossFunction")(js.Any.fromFunction2(lossFunction))
     if (restarts != null) __obj.updateDynamic("restarts")(restarts.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutParameter]
   }

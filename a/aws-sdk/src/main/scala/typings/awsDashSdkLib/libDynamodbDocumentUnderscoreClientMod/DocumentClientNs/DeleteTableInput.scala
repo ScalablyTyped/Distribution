@@ -9,7 +9,7 @@ trait DeleteTableInput extends js.Object {
   /**
     * The name of the table to delete.
     */
-  var TableName: TableName
+  var TableName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TableName
 }
 
 object DeleteTableInput {

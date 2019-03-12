@@ -39,11 +39,11 @@ object PullRequest {
     head: typedDashGithubDashApiLib.distInterfacesBranchMod.BranchSummary,
     htmlUri: java.lang.String,
     id: scala.Double,
-    loadAsync: js.Function0[js.Promise[PullRequest | scala.Null]],
-    loadIssueAsync: js.Function0[js.Promise[typedDashGithubDashApiLib.distInterfacesIssueMod.Issue]],
-    loadReviewCommentsAsync: js.Function0[js.Promise[js.Array[ReviewComment]]],
-    loadReviewRequestsAsync: js.Function0[js.Promise[ReviewRequests]],
-    loadReviewsAsync: js.Function0[js.Promise[js.Array[Review]]],
+    loadAsync: () => js.Promise[PullRequest | scala.Null],
+    loadIssueAsync: () => js.Promise[typedDashGithubDashApiLib.distInterfacesIssueMod.Issue],
+    loadReviewCommentsAsync: () => js.Promise[js.Array[ReviewComment]],
+    loadReviewRequestsAsync: () => js.Promise[ReviewRequests],
+    loadReviewsAsync: () => js.Promise[js.Array[Review]],
     locked: scala.Boolean,
     number: scala.Double,
     state: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.open | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.closed,
@@ -54,7 +54,7 @@ object PullRequest {
     mergedAt: momentLib.momentMod.momentNs.Moment = null,
     milestone: typedDashGithubDashApiLib.distInterfacesMilestoneMod.Milestone = null
   ): PullRequest = {
-    val __obj = js.Dynamic.literal(assignees = assignees, base = base, body = body, createdAt = createdAt, createdBy = createdBy, head = head, htmlUri = htmlUri, id = id, loadAsync = loadAsync, loadIssueAsync = loadIssueAsync, loadReviewCommentsAsync = loadReviewCommentsAsync, loadReviewRequestsAsync = loadReviewRequestsAsync, loadReviewsAsync = loadReviewsAsync, locked = locked, number = number, state = state.asInstanceOf[js.Any], title = title, updatedAt = updatedAt)
+    val __obj = js.Dynamic.literal(assignees = assignees, base = base, body = body, createdAt = createdAt, createdBy = createdBy, head = head, htmlUri = htmlUri, id = id, loadAsync = js.Any.fromFunction0(loadAsync), loadIssueAsync = js.Any.fromFunction0(loadIssueAsync), loadReviewCommentsAsync = js.Any.fromFunction0(loadReviewCommentsAsync), loadReviewRequestsAsync = js.Any.fromFunction0(loadReviewRequestsAsync), loadReviewsAsync = js.Any.fromFunction0(loadReviewsAsync), locked = locked, number = number, state = state.asInstanceOf[js.Any], title = title, updatedAt = updatedAt)
     if (assignee != null) __obj.updateDynamic("assignee")(assignee)
     if (closedAt != null) __obj.updateDynamic("closedAt")(closedAt)
     if (mergedAt != null) __obj.updateDynamic("mergedAt")(mergedAt)

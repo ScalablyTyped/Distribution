@@ -35,30 +35,30 @@ object IFlowFile {
   @scala.inline
   def apply(
     averageSpeed: scala.Double,
-    bootstrap: js.Function0[scala.Unit],
-    cancel: js.Function0[scala.Unit],
+    bootstrap: () => scala.Unit,
+    cancel: () => scala.Unit,
     chunks: js.Array[_],
     currentSpeed: scala.Double,
     error: scala.Boolean,
     file: stdLib.File,
     flowObj: IFlow,
-    getExtension: js.Function0[java.lang.String],
-    getType: js.Function0[java.lang.String],
-    isComplete: js.Function0[scala.Boolean],
-    isUploading: js.Function0[scala.Boolean],
+    getExtension: () => java.lang.String,
+    getType: () => java.lang.String,
+    isComplete: () => scala.Boolean,
+    isUploading: () => scala.Boolean,
     name: java.lang.String,
-    pause: js.Function0[scala.Unit],
+    pause: () => scala.Unit,
     paused: scala.Boolean,
-    progress: js.Function1[scala.Boolean, scala.Double],
+    progress: scala.Boolean => scala.Double,
     relativePath: java.lang.String,
-    resume: js.Function0[scala.Unit],
-    retry: js.Function0[scala.Unit],
+    resume: () => scala.Unit,
+    retry: () => scala.Unit,
     size: scala.Double,
-    sizeUploaded: js.Function0[scala.Double],
-    timeRemaining: js.Function0[scala.Double],
+    sizeUploaded: () => scala.Double,
+    timeRemaining: () => scala.Double,
     uniqueIdentifier: java.lang.String
   ): IFlowFile = {
-    val __obj = js.Dynamic.literal(averageSpeed = averageSpeed, bootstrap = bootstrap, cancel = cancel, chunks = chunks, currentSpeed = currentSpeed, error = error, file = file, flowObj = flowObj, getExtension = getExtension, getType = getType, isComplete = isComplete, isUploading = isUploading, name = name, pause = pause, paused = paused, progress = progress, relativePath = relativePath, resume = resume, retry = retry, size = size, sizeUploaded = sizeUploaded, timeRemaining = timeRemaining, uniqueIdentifier = uniqueIdentifier)
+    val __obj = js.Dynamic.literal(averageSpeed = averageSpeed, bootstrap = js.Any.fromFunction0(bootstrap), cancel = js.Any.fromFunction0(cancel), chunks = chunks, currentSpeed = currentSpeed, error = error, file = file, flowObj = flowObj, getExtension = js.Any.fromFunction0(getExtension), getType = js.Any.fromFunction0(getType), isComplete = js.Any.fromFunction0(isComplete), isUploading = js.Any.fromFunction0(isUploading), name = name, pause = js.Any.fromFunction0(pause), paused = paused, progress = js.Any.fromFunction1(progress), relativePath = relativePath, resume = js.Any.fromFunction0(resume), retry = js.Any.fromFunction0(retry), size = size, sizeUploaded = js.Any.fromFunction0(sizeUploaded), timeRemaining = js.Any.fromFunction0(timeRemaining), uniqueIdentifier = uniqueIdentifier)
   
     __obj.asInstanceOf[IFlowFile]
   }

@@ -12,36 +12,36 @@ object ^ extends js.Object {
   var ignorePermissions: scala.Boolean = js.native
   var tracking: js.Any = js.native
   var trackingDelegate: js.Any = js.native
-  def allocate(stream: emscriptenLib.FSNs.FSStream, offset: scala.Double, length: scala.Double): scala.Unit = js.native
+  def allocate(stream: FSStream, offset: scala.Double, length: scala.Double): scala.Unit = js.native
   def chdir(path: java.lang.String): scala.Unit = js.native
   def chmod(path: java.lang.String, mode: scala.Double): scala.Unit = js.native
   def chmod(path: java.lang.String, mode: scala.Double, dontFollow: scala.Boolean): scala.Unit = js.native
   def chown(path: java.lang.String, uid: scala.Double, gid: scala.Double): scala.Unit = js.native
   def chown(path: java.lang.String, uid: scala.Double, gid: scala.Double, dontFollow: scala.Boolean): scala.Unit = js.native
-  def close(stream: emscriptenLib.FSNs.FSStream): scala.Unit = js.native
+  def close(stream: FSStream): scala.Unit = js.native
   def createLazyFile(
-    parent: emscriptenLib.FSNs.FSNode,
+    parent: FSNode,
     name: java.lang.String,
     url: java.lang.String,
     canRead: scala.Boolean,
     canWrite: scala.Boolean
-  ): emscriptenLib.FSNs.FSNode = js.native
+  ): FSNode = js.native
   def createLazyFile(
     parent: java.lang.String,
     name: java.lang.String,
     url: java.lang.String,
     canRead: scala.Boolean,
     canWrite: scala.Boolean
-  ): emscriptenLib.FSNs.FSNode = js.native
+  ): FSNode = js.native
   def createPreloadedFile(
-    parent: emscriptenLib.FSNs.FSNode,
+    parent: FSNode,
     name: java.lang.String,
     url: java.lang.String,
     canRead: scala.Boolean,
     canWrite: scala.Boolean
   ): scala.Unit = js.native
   def createPreloadedFile(
-    parent: emscriptenLib.FSNs.FSNode,
+    parent: FSNode,
     name: java.lang.String,
     url: java.lang.String,
     canRead: scala.Boolean,
@@ -49,7 +49,7 @@ object ^ extends js.Object {
     onload: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   def createPreloadedFile(
-    parent: emscriptenLib.FSNs.FSNode,
+    parent: FSNode,
     name: java.lang.String,
     url: java.lang.String,
     canRead: scala.Boolean,
@@ -58,7 +58,7 @@ object ^ extends js.Object {
     onerror: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   def createPreloadedFile(
-    parent: emscriptenLib.FSNs.FSNode,
+    parent: FSNode,
     name: java.lang.String,
     url: java.lang.String,
     canRead: scala.Boolean,
@@ -68,7 +68,7 @@ object ^ extends js.Object {
     dontCreateFile: scala.Boolean
   ): scala.Unit = js.native
   def createPreloadedFile(
-    parent: emscriptenLib.FSNs.FSNode,
+    parent: FSNode,
     name: java.lang.String,
     url: java.lang.String,
     canRead: scala.Boolean,
@@ -130,13 +130,13 @@ object ^ extends js.Object {
   def fchmod(fd: scala.Double, mode: scala.Double): scala.Unit = js.native
   def fchown(fd: scala.Double, uid: scala.Double, gid: scala.Double): scala.Unit = js.native
   def ftruncate(fd: scala.Double, len: scala.Double): scala.Unit = js.native
-  def getPath(node: emscriptenLib.FSNs.FSNode): java.lang.String = js.native
+  def getPath(node: FSNode): java.lang.String = js.native
   def init(
     input: js.Function0[scala.Double],
     output: js.Function1[/* c */ scala.Double, _],
     error: js.Function1[/* c */ scala.Double, _]
   ): scala.Unit = js.native
-  def ioctl(stream: emscriptenLib.FSNs.FSStream, cmd: js.Any, arg: js.Any): js.Any = js.native
+  def ioctl(stream: FSStream, cmd: js.Any, arg: js.Any): js.Any = js.native
   def isBlkdev(mode: scala.Double): scala.Boolean = js.native
   def isChrdev(mode: scala.Double): scala.Boolean = js.native
   def isDir(mode: scala.Double): scala.Boolean = js.native
@@ -149,11 +149,11 @@ object ^ extends js.Object {
   def isSocket(mode: scala.Double): scala.Boolean = js.native
   def lchmod(path: java.lang.String, mode: scala.Double): scala.Unit = js.native
   def lchown(path: java.lang.String, uid: scala.Double, gid: scala.Double): scala.Unit = js.native
-  def llseek(stream: emscriptenLib.FSNs.FSStream, offset: scala.Double, whence: scala.Double): js.Any = js.native
+  def llseek(stream: FSStream, offset: scala.Double, whence: scala.Double): js.Any = js.native
   //
   // paths
   //
-  def lookupPath(path: java.lang.String, opts: js.Any): emscriptenLib.FSNs.Lookup = js.native
+  def lookupPath(path: java.lang.String, opts: js.Any): Lookup = js.native
   def lstat(path: java.lang.String): js.Any = js.native
   //
   // devices
@@ -167,7 +167,7 @@ object ^ extends js.Object {
   def mkdir(path: java.lang.String): js.Any = js.native
   def mkdir(path: java.lang.String, mode: scala.Double): js.Any = js.native
   def mmap(
-    stream: emscriptenLib.FSNs.FSStream,
+    stream: FSStream,
     buffer: stdLib.ArrayBufferView,
     offset: scala.Double,
     length: scala.Double,
@@ -176,24 +176,19 @@ object ^ extends js.Object {
     flags: scala.Double
   ): js.Any = js.native
   def mount(`type`: emscriptenLib.EmscriptenNs.FileSystemType, opts: js.Any, mountpoint: java.lang.String): js.Any = js.native
-  def open(path: java.lang.String, flags: java.lang.String): emscriptenLib.FSNs.FSStream = js.native
-  def open(path: java.lang.String, flags: java.lang.String, mode: scala.Double): emscriptenLib.FSNs.FSStream = js.native
-  def open(path: java.lang.String, flags: java.lang.String, mode: scala.Double, fd_start: scala.Double): emscriptenLib.FSNs.FSStream = js.native
+  def open(path: java.lang.String, flags: java.lang.String): FSStream = js.native
+  def open(path: java.lang.String, flags: java.lang.String, mode: scala.Double): FSStream = js.native
+  def open(path: java.lang.String, flags: java.lang.String, mode: scala.Double, fd_start: scala.Double): FSStream = js.native
   def open(
     path: java.lang.String,
     flags: java.lang.String,
     mode: scala.Double,
     fd_start: scala.Double,
     fd_end: scala.Double
-  ): emscriptenLib.FSNs.FSStream = js.native
+  ): FSStream = js.native
+  def read(stream: FSStream, buffer: stdLib.ArrayBufferView, offset: scala.Double, length: scala.Double): scala.Double = js.native
   def read(
-    stream: emscriptenLib.FSNs.FSStream,
-    buffer: stdLib.ArrayBufferView,
-    offset: scala.Double,
-    length: scala.Double
-  ): scala.Double = js.native
-  def read(
-    stream: emscriptenLib.FSNs.FSStream,
+    stream: FSStream,
     buffer: stdLib.ArrayBufferView,
     offset: scala.Double,
     length: scala.Double,
@@ -219,21 +214,16 @@ object ^ extends js.Object {
   def unlink(path: java.lang.String): scala.Unit = js.native
   def unmount(mountpoint: java.lang.String): scala.Unit = js.native
   def utime(path: java.lang.String, atime: scala.Double, mtime: scala.Double): scala.Unit = js.native
+  def write(stream: FSStream, buffer: stdLib.ArrayBufferView, offset: scala.Double, length: scala.Double): scala.Double = js.native
   def write(
-    stream: emscriptenLib.FSNs.FSStream,
-    buffer: stdLib.ArrayBufferView,
-    offset: scala.Double,
-    length: scala.Double
-  ): scala.Double = js.native
-  def write(
-    stream: emscriptenLib.FSNs.FSStream,
+    stream: FSStream,
     buffer: stdLib.ArrayBufferView,
     offset: scala.Double,
     length: scala.Double,
     position: scala.Double
   ): scala.Double = js.native
   def write(
-    stream: emscriptenLib.FSNs.FSStream,
+    stream: FSStream,
     buffer: stdLib.ArrayBufferView,
     offset: scala.Double,
     length: scala.Double,

@@ -37,14 +37,14 @@ object WorkflowTaskMoveToNextStepParams {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     jobId: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     returnCode: scala.Double,
     stepId: scala.Double,
     user: java.lang.String
   ): WorkflowTaskMoveToNextStepParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, returnCode = returnCode, stepId = stepId, user = user)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobId = jobId, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), returnCode = returnCode, stepId = stepId, user = user)
   
     __obj.asInstanceOf[WorkflowTaskMoveToNextStepParams]
   }

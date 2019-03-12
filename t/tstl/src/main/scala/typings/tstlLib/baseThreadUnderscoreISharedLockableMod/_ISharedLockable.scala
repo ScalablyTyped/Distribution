@@ -23,11 +23,11 @@ trait _ISharedLockable extends js.Object {
 object _ISharedLockable {
   @scala.inline
   def apply(
-    lock_shared: js.Function0[js.Promise[scala.Unit]],
-    try_lock_shared: js.Function0[js.Promise[scala.Boolean]],
-    unlock_shared: js.Function0[js.Promise[scala.Unit]]
+    lock_shared: () => js.Promise[scala.Unit],
+    try_lock_shared: () => js.Promise[scala.Boolean],
+    unlock_shared: () => js.Promise[scala.Unit]
   ): _ISharedLockable = {
-    val __obj = js.Dynamic.literal(lock_shared = lock_shared, try_lock_shared = try_lock_shared, unlock_shared = unlock_shared)
+    val __obj = js.Dynamic.literal(lock_shared = js.Any.fromFunction0(lock_shared), try_lock_shared = js.Any.fromFunction0(try_lock_shared), unlock_shared = js.Any.fromFunction0(unlock_shared))
   
     __obj.asInstanceOf[_ISharedLockable]
   }

@@ -14,12 +14,12 @@ trait Factory[T] extends js.Object {
 object Factory {
   @scala.inline
   def apply[T](
-    create: js.Function0[js.Thenable[T]],
-    destroy: js.Function1[T, js.Thenable[scala.Unit]],
-    validate: js.Function1[/* client */ T, js.Thenable[scala.Boolean]] = null
+    create: () => js.Thenable[T],
+    destroy: T => js.Thenable[scala.Unit],
+    validate: /* client */ T => js.Thenable[scala.Boolean] = null
   ): Factory[T] = {
-    val __obj = js.Dynamic.literal(create = create, destroy = destroy)
-    if (validate != null) __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), destroy = js.Any.fromFunction1(destroy))
+    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction1(validate))
     __obj.asInstanceOf[Factory[T]]
   }
 }

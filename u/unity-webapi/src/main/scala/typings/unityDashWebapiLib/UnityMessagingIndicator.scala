@@ -21,16 +21,16 @@ trait UnityMessagingIndicator extends js.Object {
 object UnityMessagingIndicator {
   @scala.inline
   def apply(
-    addAction: js.Function2[java.lang.String, js.Function, js.Any],
-    clearIndicator: js.Function1[java.lang.String, js.Any],
-    clearIndicators: js.Function0[js.Any],
-    onPresenceChanged: js.Function1[js.Function, js.Any],
+    addAction: (java.lang.String, js.Function) => js.Any,
+    clearIndicator: java.lang.String => js.Any,
+    clearIndicators: () => js.Any,
+    onPresenceChanged: js.Function => js.Any,
     presence: java.lang.String,
-    removeAction: js.Function1[java.lang.String, js.Any],
-    removeActions: js.Function0[js.Any],
-    showIndicator: js.Function2[java.lang.String, UnityIndicatorProperties, js.Any]
+    removeAction: java.lang.String => js.Any,
+    removeActions: () => js.Any,
+    showIndicator: (java.lang.String, UnityIndicatorProperties) => js.Any
   ): UnityMessagingIndicator = {
-    val __obj = js.Dynamic.literal(addAction = addAction, clearIndicator = clearIndicator, clearIndicators = clearIndicators, onPresenceChanged = onPresenceChanged, presence = presence, removeAction = removeAction, removeActions = removeActions, showIndicator = showIndicator)
+    val __obj = js.Dynamic.literal(addAction = js.Any.fromFunction2(addAction), clearIndicator = js.Any.fromFunction1(clearIndicator), clearIndicators = js.Any.fromFunction0(clearIndicators), onPresenceChanged = js.Any.fromFunction1(onPresenceChanged), presence = presence, removeAction = js.Any.fromFunction1(removeAction), removeActions = js.Any.fromFunction0(removeActions), showIndicator = js.Any.fromFunction2(showIndicator))
   
     __obj.asInstanceOf[UnityMessagingIndicator]
   }

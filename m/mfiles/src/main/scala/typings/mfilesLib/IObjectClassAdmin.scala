@@ -26,7 +26,7 @@ object IObjectClassAdmin {
     AdditionalClassInfo: IAdditionalClassInfo,
     AssociatedPropertyDefs: IAssociatedPropertyDefs,
     AutomaticPermissionsForObjects: IAutomaticPermissions,
-    Clone: js.Function0[IObjectClassAdmin],
+    Clone: () => IObjectClassAdmin,
     ForceWorkflow: scala.Boolean,
     ID: scala.Double,
     Name: java.lang.String,
@@ -36,7 +36,7 @@ object IObjectClassAdmin {
     SemanticAliases: ISemanticAliases,
     Workflow: scala.Double
   ): IObjectClassAdmin = {
-    val __obj = js.Dynamic.literal(AdditionalClassInfo = AdditionalClassInfo, AssociatedPropertyDefs = AssociatedPropertyDefs, AutomaticPermissionsForObjects = AutomaticPermissionsForObjects, Clone = Clone, ForceWorkflow = ForceWorkflow, ID = ID, Name = Name, NamePropertyDef = NamePropertyDef, ObjectType = ObjectType.asInstanceOf[js.Any], Predefined = Predefined, SemanticAliases = SemanticAliases, Workflow = Workflow)
+    val __obj = js.Dynamic.literal(AdditionalClassInfo = AdditionalClassInfo, AssociatedPropertyDefs = AssociatedPropertyDefs, AutomaticPermissionsForObjects = AutomaticPermissionsForObjects, Clone = js.Any.fromFunction0(Clone), ForceWorkflow = ForceWorkflow, ID = ID, Name = Name, NamePropertyDef = NamePropertyDef, ObjectType = ObjectType.asInstanceOf[js.Any], Predefined = Predefined, SemanticAliases = SemanticAliases, Workflow = Workflow)
   
     __obj.asInstanceOf[IObjectClassAdmin]
   }

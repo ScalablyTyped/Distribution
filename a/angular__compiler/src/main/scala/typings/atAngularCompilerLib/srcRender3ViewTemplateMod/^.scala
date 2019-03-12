@@ -13,11 +13,7 @@ object ^ extends js.Object {
     interpolationConfig: atAngularCompilerLib.srcMlUnderscoreParserInterpolationUnderscoreConfigMod.InterpolationConfig
   ): atAngularCompilerLib.srcTemplateUnderscoreParserBindingUnderscoreParserMod.BindingParser = js.native
   def parseTemplate(template: java.lang.String, templateUrl: java.lang.String): atAngularCompilerLib.Anon_Errors = js.native
-  def parseTemplate(
-    template: java.lang.String,
-    templateUrl: java.lang.String,
-    options: atAngularCompilerLib.srcRender3ViewTemplateMod.ParseTemplateOptions
-  ): atAngularCompilerLib.Anon_Errors = js.native
+  def parseTemplate(template: java.lang.String, templateUrl: java.lang.String, options: ParseTemplateOptions): atAngularCompilerLib.Anon_Errors = js.native
   def renderFlagCheckIfStmt(
     flags: atAngularCompilerLib.srcCoreMod.RenderFlags,
     statements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement]

@@ -16,12 +16,12 @@ object Options {
   def apply(
     scope: js.Any = null,
     timeout: scala.Int | scala.Double = null,
-    timeoutCallback: js.Function0[scala.Unit] = null
+    timeoutCallback: () => scala.Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (scope != null) __obj.updateDynamic("scope")(scope)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (timeoutCallback != null) __obj.updateDynamic("timeoutCallback")(timeoutCallback)
+    if (timeoutCallback != null) __obj.updateDynamic("timeoutCallback")(js.Any.fromFunction0(timeoutCallback))
     __obj.asInstanceOf[Options]
   }
 }

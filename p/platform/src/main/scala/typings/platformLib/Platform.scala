@@ -21,8 +21,8 @@ trait Platform extends js.Object {
 object Platform {
   @scala.inline
   def apply(
-    parse: js.Function1[java.lang.String, Platform],
-    toString: js.Function0[java.lang.String],
+    parse: java.lang.String => Platform,
+    toString: () => java.lang.String,
     description: java.lang.String = null,
     layout: java.lang.String = null,
     manufacturer: java.lang.String = null,
@@ -33,7 +33,7 @@ object Platform {
     ua: java.lang.String = null,
     version: java.lang.String = null
   ): Platform = {
-    val __obj = js.Dynamic.literal(parse = parse, toString = toString)
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), toString = js.Any.fromFunction0(toString))
     if (description != null) __obj.updateDynamic("description")(description)
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer)

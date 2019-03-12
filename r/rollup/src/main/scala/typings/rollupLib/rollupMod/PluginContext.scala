@@ -10,7 +10,7 @@ trait PluginContext extends MinimalPluginContext {
   var cache: PluginCache = js.native
   @JSName("isExternal")
   var isExternal_Original: IsExternal = js.native
-  var moduleIds: nodeLib.IterableIterator[java.lang.String] = js.native
+  var moduleIds: stdLib.IterableIterator[java.lang.String] = js.native
   @JSName("resolveId")
   var resolveId_Original: ResolveIdHook = js.native
   /** @deprecated */

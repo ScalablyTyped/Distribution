@@ -35,7 +35,7 @@ object FakerStatic {
     company: fakerLib.Anon_Bs,
     database: fakerLib.Anon_Collation,
     date: fakerLib.Anon_Between,
-    fake: js.Function1[java.lang.String, java.lang.String],
+    fake: java.lang.String => java.lang.String,
     finance: fakerLib.Anon_Account,
     hacker: fakerLib.Anon_Abbreviation,
     helpers: fakerLib.Anon_Args,
@@ -46,11 +46,11 @@ object FakerStatic {
     name: fakerLib.Anon_FindName,
     phone: fakerLib.Anon_Format,
     random: fakerLib.Anon_AlphaNumeric,
-    seed: js.Function1[scala.Double, scala.Unit],
-    setLocale: js.Function1[java.lang.String, scala.Unit],
+    seed: scala.Double => scala.Unit,
+    setLocale: java.lang.String => scala.Unit,
     system: fakerLib.Anon_CommonFileExt
   ): FakerStatic = {
-    val __obj = js.Dynamic.literal(address = address, commerce = commerce, company = company, database = database, date = date, fake = fake, finance = finance, hacker = hacker, helpers = helpers, image = image, internet = internet, locale = locale, lorem = lorem, name = name, phone = phone, random = random, seed = seed, setLocale = setLocale, system = system)
+    val __obj = js.Dynamic.literal(address = address, commerce = commerce, company = company, database = database, date = date, fake = js.Any.fromFunction1(fake), finance = finance, hacker = hacker, helpers = helpers, image = image, internet = internet, locale = locale, lorem = lorem, name = name, phone = phone, random = random, seed = js.Any.fromFunction1(seed), setLocale = js.Any.fromFunction1(setLocale), system = system)
   
     __obj.asInstanceOf[FakerStatic]
   }

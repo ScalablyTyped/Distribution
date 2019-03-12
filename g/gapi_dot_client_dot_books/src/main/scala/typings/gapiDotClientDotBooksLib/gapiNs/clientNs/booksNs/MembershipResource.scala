@@ -13,12 +13,9 @@ trait MembershipResource extends js.Object {
 object MembershipResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPagesize, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Seriesmembership]
-    ]
+    get: gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPagesize => gapiDotClientLib.gapiNs.clientNs.Request[Seriesmembership]
   ): MembershipResource = {
-    val __obj = js.Dynamic.literal(get = get)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[MembershipResource]
   }

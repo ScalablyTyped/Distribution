@@ -9,30 +9,25 @@ import scala.scalajs.js.annotation._
 trait FileUploadProps
   extends reactDashMdLib.libFileInputsFileInputMod.FileInputProps {
   var maxSize: js.UndefOr[scala.Double] = js.native
-  var onAbort: js.UndefOr[js.Function2[/* file */ stdLib.File, /* event */ reactLib.Event, scala.Unit]] = js.native
+  var onAbort: js.UndefOr[js.Function2[/* file */ stdLib.File, /* event */ stdLib.Event, scala.Unit]] = js.native
   var onError: js.UndefOr[
-    js.Function3[
-      /* file */ stdLib.File, 
-      /* error */ nodeLib.Error, 
-      /* event */ reactLib.Event, 
-      scala.Unit
-    ]
+    js.Function3[/* file */ stdLib.File, /* error */ stdLib.Error, /* event */ stdLib.Event, scala.Unit]
   ] = js.native
   var onLoad: js.UndefOr[
     js.Function3[
       /* file */ stdLib.File, 
       /* result */ java.lang.String | stdLib.ArrayBuffer, 
-      /* event */ reactLib.Event, 
+      /* event */ stdLib.Event, 
       scala.Unit
     ]
   ] = js.native
-  var onLoadEnd: js.UndefOr[js.Function2[/* file */ stdLib.File, /* event */ reactLib.Event, scala.Unit]] = js.native
-  var onLoadStart: js.UndefOr[js.Function2[/* file */ stdLib.File, /* event */ reactLib.Event, scala.Unit]] = js.native
+  var onLoadEnd: js.UndefOr[js.Function2[/* file */ stdLib.File, /* event */ stdLib.Event, scala.Unit]] = js.native
+  var onLoadStart: js.UndefOr[js.Function2[/* file */ stdLib.File, /* event */ stdLib.Event, scala.Unit]] = js.native
   var onProgress: js.UndefOr[
     js.Function3[
       /* file */ stdLib.File, 
       /* progress */ scala.Double, 
-      /* event */ reactLib.Event, 
+      /* event */ stdLib.Event, 
       scala.Unit
     ]
   ] = js.native

@@ -14,14 +14,14 @@ trait Observer[T] extends js.Object {
 object Observer {
   @scala.inline
   def apply[T](
-    onCompleted: js.Function0[scala.Unit] = null,
-    onError: js.Function1[/* error */ stdLib.Error, scala.Unit] = null,
-    onNext: js.Function1[/* value */ T, scala.Unit] = null
+    onCompleted: () => scala.Unit = null,
+    onError: /* error */ stdLib.Error => scala.Unit = null,
+    onNext: /* value */ T => scala.Unit = null
   ): Observer[T] = {
     val __obj = js.Dynamic.literal()
-    if (onCompleted != null) __obj.updateDynamic("onCompleted")(onCompleted)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onNext != null) __obj.updateDynamic("onNext")(onNext)
+    if (onCompleted != null) __obj.updateDynamic("onCompleted")(js.Any.fromFunction0(onCompleted))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onNext != null) __obj.updateDynamic("onNext")(js.Any.fromFunction1(onNext))
     __obj.asInstanceOf[Observer[T]]
   }
 }

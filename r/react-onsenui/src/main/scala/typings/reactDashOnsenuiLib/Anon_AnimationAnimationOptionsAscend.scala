@@ -26,21 +26,21 @@ object Anon_AnimationAnimationOptionsAscend {
     animation: reactDashOnsenuiLib.reactDashOnsenuiLibStrings.default | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.ascend | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.lift | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.fall | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.fade | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.none = null,
     animationOptions: reactDashOnsenuiLib.reactDashOnsenuiMod.AnimationOptions = null,
     modifier: java.lang.String = null,
-    onDeviceBackButton: js.Function0[scala.Unit] = null,
-    onPostHide: js.Function0[scala.Unit] = null,
-    onPostShow: js.Function0[scala.Unit] = null,
-    onPreHide: js.Function0[scala.Unit] = null,
-    onPreShow: js.Function0[scala.Unit] = null
+    onDeviceBackButton: () => scala.Unit = null,
+    onPostHide: () => scala.Unit = null,
+    onPostShow: () => scala.Unit = null,
+    onPreHide: () => scala.Unit = null,
+    onPreShow: () => scala.Unit = null
   ): Anon_AnimationAnimationOptionsAscend = {
     val __obj = js.Dynamic.literal(isOpen = isOpen)
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions)
     if (modifier != null) __obj.updateDynamic("modifier")(modifier)
-    if (onDeviceBackButton != null) __obj.updateDynamic("onDeviceBackButton")(onDeviceBackButton)
-    if (onPostHide != null) __obj.updateDynamic("onPostHide")(onPostHide)
-    if (onPostShow != null) __obj.updateDynamic("onPostShow")(onPostShow)
-    if (onPreHide != null) __obj.updateDynamic("onPreHide")(onPreHide)
-    if (onPreShow != null) __obj.updateDynamic("onPreShow")(onPreShow)
+    if (onDeviceBackButton != null) __obj.updateDynamic("onDeviceBackButton")(js.Any.fromFunction0(onDeviceBackButton))
+    if (onPostHide != null) __obj.updateDynamic("onPostHide")(js.Any.fromFunction0(onPostHide))
+    if (onPostShow != null) __obj.updateDynamic("onPostShow")(js.Any.fromFunction0(onPostShow))
+    if (onPreHide != null) __obj.updateDynamic("onPreHide")(js.Any.fromFunction0(onPreHide))
+    if (onPreShow != null) __obj.updateDynamic("onPreShow")(js.Any.fromFunction0(onPreShow))
     __obj.asInstanceOf[Anon_AnimationAnimationOptionsAscend]
   }
 }

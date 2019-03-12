@@ -28,37 +28,30 @@ trait XSimpleFileAccess3 extends XSimpleFileAccess2 {
 object XSimpleFileAccess3 {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    copy: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    createFolder: js.Function1[java.lang.String, scala.Unit],
-    exists: js.Function1[java.lang.String, scala.Boolean],
-    getContentType: js.Function1[java.lang.String, java.lang.String],
-    getDateTimeModified: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime],
-    getFolderContents: js.Function2[java.lang.String, scala.Boolean, activexDashInteropLib.SafeArray[java.lang.String]],
-    getSize: js.Function1[java.lang.String, scala.Double],
-    isFolder: js.Function1[java.lang.String, scala.Boolean],
-    isHidden: js.Function1[java.lang.String, scala.Boolean],
-    isReadOnly: js.Function1[java.lang.String, scala.Boolean],
-    kill: js.Function1[java.lang.String, scala.Unit],
-    move: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    openFileRead: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
-    openFileReadWrite: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream],
-    openFileWrite: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setHidden: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
-    setInteractionHandler: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler, 
-      scala.Unit
-    ],
-    setReadOnly: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
-    writeFile: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      scala.Unit
-    ]
+    acquire: () => scala.Unit,
+    copy: (java.lang.String, java.lang.String) => scala.Unit,
+    createFolder: java.lang.String => scala.Unit,
+    exists: java.lang.String => scala.Boolean,
+    getContentType: java.lang.String => java.lang.String,
+    getDateTimeModified: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime,
+    getFolderContents: (java.lang.String, scala.Boolean) => stdLib.SafeArray[java.lang.String],
+    getSize: java.lang.String => scala.Double,
+    isFolder: java.lang.String => scala.Boolean,
+    isHidden: java.lang.String => scala.Boolean,
+    isReadOnly: java.lang.String => scala.Boolean,
+    kill: java.lang.String => scala.Unit,
+    move: (java.lang.String, java.lang.String) => scala.Unit,
+    openFileRead: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    openFileReadWrite: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream,
+    openFileWrite: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setHidden: (java.lang.String, scala.Boolean) => scala.Unit,
+    setInteractionHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler => scala.Unit,
+    setReadOnly: (java.lang.String, scala.Boolean) => scala.Unit,
+    writeFile: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream) => scala.Unit
   ): XSimpleFileAccess3 = {
-    val __obj = js.Dynamic.literal(acquire = acquire, copy = copy, createFolder = createFolder, exists = exists, getContentType = getContentType, getDateTimeModified = getDateTimeModified, getFolderContents = getFolderContents, getSize = getSize, isFolder = isFolder, isHidden = isHidden, isReadOnly = isReadOnly, kill = kill, move = move, openFileRead = openFileRead, openFileReadWrite = openFileReadWrite, openFileWrite = openFileWrite, queryInterface = queryInterface, release = release, setHidden = setHidden, setInteractionHandler = setInteractionHandler, setReadOnly = setReadOnly, writeFile = writeFile)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), copy = js.Any.fromFunction2(copy), createFolder = js.Any.fromFunction1(createFolder), exists = js.Any.fromFunction1(exists), getContentType = js.Any.fromFunction1(getContentType), getDateTimeModified = js.Any.fromFunction1(getDateTimeModified), getFolderContents = js.Any.fromFunction2(getFolderContents), getSize = js.Any.fromFunction1(getSize), isFolder = js.Any.fromFunction1(isFolder), isHidden = js.Any.fromFunction1(isHidden), isReadOnly = js.Any.fromFunction1(isReadOnly), kill = js.Any.fromFunction1(kill), move = js.Any.fromFunction2(move), openFileRead = js.Any.fromFunction1(openFileRead), openFileReadWrite = js.Any.fromFunction1(openFileReadWrite), openFileWrite = js.Any.fromFunction1(openFileWrite), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setHidden = js.Any.fromFunction2(setHidden), setInteractionHandler = js.Any.fromFunction1(setInteractionHandler), setReadOnly = js.Any.fromFunction2(setReadOnly), writeFile = js.Any.fromFunction2(writeFile))
   
     __obj.asInstanceOf[XSimpleFileAccess3]
   }

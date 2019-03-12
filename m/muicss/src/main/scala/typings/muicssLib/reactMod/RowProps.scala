@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RowProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] {
   var lg: js.UndefOr[scala.Double] = js.undefined
   var md: js.UndefOr[scala.Double] = js.undefined
   var sm: js.UndefOr[scala.Double] = js.undefined
@@ -16,7 +16,7 @@ trait RowProps
 object RowProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
     lg: scala.Int | scala.Double = null,
     md: scala.Int | scala.Double = null,
     sm: scala.Int | scala.Double = null,

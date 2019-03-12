@@ -12,7 +12,7 @@ object ^ extends js.Object {
     future: atAngularRouterLib.srcRouterUnderscoreStateMod.RouterStateSnapshot,
     curr: atAngularRouterLib.srcRouterUnderscoreStateMod.RouterStateSnapshot,
     parentContexts: atAngularRouterLib.srcRouterUnderscoreOutletUnderscoreContextMod.ChildrenOutletContexts
-  ): atAngularRouterLib.srcUtilsPreactivationMod.Checks = js.native
+  ): Checks = js.native
   def getCanActivateChild(p: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot): atAngularRouterLib.Anon_Guards | scala.Null = js.native
   def getToken(
     token: js.Any,

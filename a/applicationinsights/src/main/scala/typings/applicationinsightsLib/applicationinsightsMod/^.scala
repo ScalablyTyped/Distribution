@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("applicationinsights", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var defaultClient: applicationinsightsLib.applicationinsightsMod.TelemetryClient = js.native
+  var defaultClient: TelemetryClient = js.native
   def dispose(): scala.Unit = js.native
   def getCorrelationContext(): applicationinsightsLib.outAutoCollectionCorrelationContextManagerMod.CorrelationContext = js.native
   def setup(): applicationinsightsLib.Anon_CollectConsoleLog = js.native

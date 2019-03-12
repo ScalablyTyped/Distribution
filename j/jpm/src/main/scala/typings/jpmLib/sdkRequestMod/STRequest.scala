@@ -14,16 +14,16 @@ object STRequest {
   def apply[ResponseType](
     content: java.lang.String,
     contentType: java.lang.String,
-    delete: js.Function0[scala.Unit],
-    get: js.Function0[scala.Unit],
-    head: js.Function0[scala.Unit],
+    delete: () => scala.Unit,
+    get: () => scala.Unit,
+    head: () => scala.Unit,
     headers: js.Object,
-    post: js.Function0[scala.Unit],
-    put: js.Function0[scala.Unit],
+    post: () => scala.Unit,
+    put: () => scala.Unit,
     response: STResponse[ResponseType],
     url: java.lang.String | jpmLib.FFAddonSDKNs.SDKURL
   ): STRequest[ResponseType] = {
-    val __obj = js.Dynamic.literal(content = content, contentType = contentType, delete = delete, get = get, head = head, headers = headers, post = post, put = put, response = response, url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content, contentType = contentType, delete = js.Any.fromFunction0(delete), get = js.Any.fromFunction0(get), head = js.Any.fromFunction0(head), headers = headers, post = js.Any.fromFunction0(post), put = js.Any.fromFunction0(put), response = response, url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[STRequest[ResponseType]]
   }

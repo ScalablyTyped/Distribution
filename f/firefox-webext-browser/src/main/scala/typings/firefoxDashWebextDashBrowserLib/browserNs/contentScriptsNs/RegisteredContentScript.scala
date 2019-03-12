@@ -13,8 +13,8 @@ trait RegisteredContentScript extends js.Object {
 
 object RegisteredContentScript {
   @scala.inline
-  def apply(unregister: js.Function0[js.Promise[_]]): RegisteredContentScript = {
-    val __obj = js.Dynamic.literal(unregister = unregister)
+  def apply(unregister: () => js.Promise[_]): RegisteredContentScript = {
+    val __obj = js.Dynamic.literal(unregister = js.Any.fromFunction0(unregister))
   
     __obj.asInstanceOf[RegisteredContentScript]
   }

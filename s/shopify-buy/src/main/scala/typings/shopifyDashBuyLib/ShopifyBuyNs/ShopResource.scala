@@ -12,8 +12,8 @@ trait ShopResource extends js.Object {
 
 object ShopResource {
   @scala.inline
-  def apply(fetchInfo: js.Function0[js.Promise[Shop]], fetchPolicies: js.Function0[js.Promise[Shop]]): ShopResource = {
-    val __obj = js.Dynamic.literal(fetchInfo = fetchInfo, fetchPolicies = fetchPolicies)
+  def apply(fetchInfo: () => js.Promise[Shop], fetchPolicies: () => js.Promise[Shop]): ShopResource = {
+    val __obj = js.Dynamic.literal(fetchInfo = js.Any.fromFunction0(fetchInfo), fetchPolicies = js.Any.fromFunction0(fetchPolicies))
   
     __obj.asInstanceOf[ShopResource]
   }

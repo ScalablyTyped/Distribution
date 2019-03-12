@@ -21,13 +21,13 @@ trait IModStatFieldExpression extends js.Object {
 object IModStatFieldExpression {
   @scala.inline
   def apply(
-    IsApproved: js.Function0[IExpression],
-    IsPending: js.Function0[IExpression],
-    IsRejected: js.Function0[IExpression],
-    ModStatId: js.Function0[INumberFieldExpression],
-    ValueAsText: js.Function0[ITextFieldExpression]
+    IsApproved: () => IExpression,
+    IsPending: () => IExpression,
+    IsRejected: () => IExpression,
+    ModStatId: () => INumberFieldExpression,
+    ValueAsText: () => ITextFieldExpression
   ): IModStatFieldExpression = {
-    val __obj = js.Dynamic.literal(IsApproved = IsApproved, IsPending = IsPending, IsRejected = IsRejected, ModStatId = ModStatId, ValueAsText = ValueAsText)
+    val __obj = js.Dynamic.literal(IsApproved = js.Any.fromFunction0(IsApproved), IsPending = js.Any.fromFunction0(IsPending), IsRejected = js.Any.fromFunction0(IsRejected), ModStatId = js.Any.fromFunction0(ModStatId), ValueAsText = js.Any.fromFunction0(ValueAsText))
   
     __obj.asInstanceOf[IModStatFieldExpression]
   }

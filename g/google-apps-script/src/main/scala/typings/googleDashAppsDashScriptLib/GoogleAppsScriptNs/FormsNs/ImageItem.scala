@@ -25,22 +25,22 @@ trait ImageItem extends js.Object {
 object ImageItem {
   @scala.inline
   def apply(
-    duplicate: js.Function0[ImageItem],
-    getAlignment: js.Function0[Alignment],
-    getHelpText: js.Function0[java.lang.String],
-    getId: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getImage: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob],
-    getIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getTitle: js.Function0[java.lang.String],
-    getType: js.Function0[ItemType],
-    getWidth: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    setAlignment: js.Function1[Alignment, ImageItem],
-    setHelpText: js.Function1[java.lang.String, ImageItem],
-    setImage: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.BlobSource, ImageItem],
-    setTitle: js.Function1[java.lang.String, ImageItem],
-    setWidth: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ImageItem]
+    duplicate: () => ImageItem,
+    getAlignment: () => Alignment,
+    getHelpText: () => java.lang.String,
+    getId: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getImage: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob,
+    getIndex: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getTitle: () => java.lang.String,
+    getType: () => ItemType,
+    getWidth: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    setAlignment: Alignment => ImageItem,
+    setHelpText: java.lang.String => ImageItem,
+    setImage: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.BlobSource => ImageItem,
+    setTitle: java.lang.String => ImageItem,
+    setWidth: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => ImageItem
   ): ImageItem = {
-    val __obj = js.Dynamic.literal(duplicate = duplicate, getAlignment = getAlignment, getHelpText = getHelpText, getId = getId, getImage = getImage, getIndex = getIndex, getTitle = getTitle, getType = getType, getWidth = getWidth, setAlignment = setAlignment, setHelpText = setHelpText, setImage = setImage, setTitle = setTitle, setWidth = setWidth)
+    val __obj = js.Dynamic.literal(duplicate = js.Any.fromFunction0(duplicate), getAlignment = js.Any.fromFunction0(getAlignment), getHelpText = js.Any.fromFunction0(getHelpText), getId = js.Any.fromFunction0(getId), getImage = js.Any.fromFunction0(getImage), getIndex = js.Any.fromFunction0(getIndex), getTitle = js.Any.fromFunction0(getTitle), getType = js.Any.fromFunction0(getType), getWidth = js.Any.fromFunction0(getWidth), setAlignment = js.Any.fromFunction1(setAlignment), setHelpText = js.Any.fromFunction1(setHelpText), setImage = js.Any.fromFunction1(setImage), setTitle = js.Any.fromFunction1(setTitle), setWidth = js.Any.fromFunction1(setWidth))
   
     __obj.asInstanceOf[ImageItem]
   }

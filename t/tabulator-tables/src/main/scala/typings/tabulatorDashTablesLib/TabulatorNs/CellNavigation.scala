@@ -24,14 +24,14 @@ trait CellNavigation extends js.Object {
 object CellNavigation {
   @scala.inline
   def apply(
-    down: js.Function0[scala.Unit],
-    left: js.Function0[scala.Boolean],
-    next: js.Function0[scala.Boolean],
-    prev: js.Function0[scala.Boolean],
-    right: js.Function0[scala.Boolean],
-    up: js.Function0[scala.Unit]
+    down: () => scala.Unit,
+    left: () => scala.Boolean,
+    next: () => scala.Boolean,
+    prev: () => scala.Boolean,
+    right: () => scala.Boolean,
+    up: () => scala.Unit
   ): CellNavigation = {
-    val __obj = js.Dynamic.literal(down = down, left = left, next = next, prev = prev, right = right, up = up)
+    val __obj = js.Dynamic.literal(down = js.Any.fromFunction0(down), left = js.Any.fromFunction0(left), next = js.Any.fromFunction0(next), prev = js.Any.fromFunction0(prev), right = js.Any.fromFunction0(right), up = js.Any.fromFunction0(up))
   
     __obj.asInstanceOf[CellNavigation]
   }

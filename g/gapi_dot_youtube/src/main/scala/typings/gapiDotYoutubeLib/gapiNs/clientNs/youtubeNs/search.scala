@@ -17,14 +17,11 @@ trait search extends js.Object {
 object search {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotYoutubeLib.Anon_ChannelIdChannelType, 
-      gapiLib.gapiNs.clientNs.HttpRequest[
-        gapiDotYoutubeLib.GoogleApiYouTubePaginationInfo[gapiDotYoutubeLib.GoogleApiYouTubeSearchResource]
-      ]
+    list: gapiDotYoutubeLib.Anon_ChannelIdChannelType => gapiLib.gapiNs.clientNs.HttpRequest[
+      gapiDotYoutubeLib.GoogleApiYouTubePaginationInfo[gapiDotYoutubeLib.GoogleApiYouTubeSearchResource]
     ]
   ): search = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[search]
   }

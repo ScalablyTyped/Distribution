@@ -29,16 +29,12 @@ object Anon_LocationState {
   @scala.inline
   def apply(
     manual: js.UndefOr[scala.Boolean] = js.undefined,
-    shouldUpdateScroll: js.Function2[
-      /* prev */ reduxDashFirstDashRouterLib.reduxDashFirstDashRouterMod.LocationState[js.Object, _], 
-      /* locationState */ reduxDashFirstDashRouterLib.reduxDashFirstDashRouterMod.LocationState[js.Object, _], 
-      scala.Boolean | reduxDashFirstDashRouterDashRestoreDashScrollLib.reduxDashFirstDashRouterDashRestoreDashScrollLibStrings.`profile-box` | (js.Tuple2[scala.Double, scala.Double])
-    ] = null,
+    shouldUpdateScroll: (/* prev */ reduxDashFirstDashRouterLib.reduxDashFirstDashRouterMod.LocationState[js.Object, _], /* locationState */ reduxDashFirstDashRouterLib.reduxDashFirstDashRouterMod.LocationState[js.Object, _]) => scala.Boolean | reduxDashFirstDashRouterDashRestoreDashScrollLib.reduxDashFirstDashRouterDashRestoreDashScrollLibStrings.`profile-box` | (js.Tuple2[scala.Double, scala.Double]) = null,
     stateStorage: Anon_Key = null
   ): Anon_LocationState = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(manual)) __obj.updateDynamic("manual")(manual)
-    if (shouldUpdateScroll != null) __obj.updateDynamic("shouldUpdateScroll")(shouldUpdateScroll)
+    if (shouldUpdateScroll != null) __obj.updateDynamic("shouldUpdateScroll")(js.Any.fromFunction2(shouldUpdateScroll))
     if (stateStorage != null) __obj.updateDynamic("stateStorage")(stateStorage)
     __obj.asInstanceOf[Anon_LocationState]
   }

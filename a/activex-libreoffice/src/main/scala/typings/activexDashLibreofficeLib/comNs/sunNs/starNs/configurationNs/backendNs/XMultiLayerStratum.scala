@@ -44,7 +44,7 @@ trait XMultiLayerStratum
   def getLayers(
     aLayerIds: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String],
     aTimestamp: java.lang.String
-  ): activexDashInteropLib.SafeArray[XLayer]
+  ): stdLib.SafeArray[XLayer]
   /**
     * retrieves the layers associated to a series of layer ids, if newer than indicated for each layer.
     *
@@ -60,7 +60,7 @@ trait XMultiLayerStratum
   def getMultipleLayers(
     aLayerIds: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String],
     aTimestamps: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]
-  ): activexDashInteropLib.SafeArray[XLayer]
+  ): stdLib.SafeArray[XLayer]
   /**
     * retrieves a writable representation of the layer associated to a layer id.
     * @param aLayerId identifier of the layer to be accessed for writing. A layer id for writing can be obtained from {@link XMultiLayerStratum.getUpdateLayer
@@ -96,35 +96,23 @@ trait XMultiLayerStratum
     * @throws com::sun::star::lang::IllegalArgumentException if the component identifier is invalid or if the entity doesn't exist.
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the data.
     */
-  def listLayerIds(aComponent: java.lang.String, aEntity: java.lang.String): activexDashInteropLib.SafeArray[java.lang.String]
+  def listLayerIds(aComponent: java.lang.String, aEntity: java.lang.String): stdLib.SafeArray[java.lang.String]
 }
 
 object XMultiLayerStratum {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getLayer: js.Function2[java.lang.String, java.lang.String, XLayer],
-    getLayers: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      java.lang.String, 
-      activexDashInteropLib.SafeArray[XLayer]
-    ],
-    getMultipleLayers: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashInteropLib.SafeArray[XLayer]
-    ],
-    getUpdatableLayer: js.Function1[java.lang.String, XUpdatableLayer],
-    getUpdateLayerId: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    listLayerIds: js.Function2[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashInteropLib.SafeArray[java.lang.String]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getLayer: (java.lang.String, java.lang.String) => XLayer,
+    getLayers: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], java.lang.String) => stdLib.SafeArray[XLayer],
+    getMultipleLayers: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]) => stdLib.SafeArray[XLayer],
+    getUpdatableLayer: java.lang.String => XUpdatableLayer,
+    getUpdateLayerId: (java.lang.String, java.lang.String) => java.lang.String,
+    listLayerIds: (java.lang.String, java.lang.String) => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XMultiLayerStratum = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getLayer = getLayer, getLayers = getLayers, getMultipleLayers = getMultipleLayers, getUpdatableLayer = getUpdatableLayer, getUpdateLayerId = getUpdateLayerId, listLayerIds = listLayerIds, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getLayer = js.Any.fromFunction2(getLayer), getLayers = js.Any.fromFunction2(getLayers), getMultipleLayers = js.Any.fromFunction2(getMultipleLayers), getUpdatableLayer = js.Any.fromFunction1(getUpdatableLayer), getUpdateLayerId = js.Any.fromFunction2(getUpdateLayerId), listLayerIds = js.Any.fromFunction2(listLayerIds), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XMultiLayerStratum]
   }

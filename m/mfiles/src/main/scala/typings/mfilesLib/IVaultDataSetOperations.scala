@@ -15,12 +15,12 @@ trait IVaultDataSetOperations extends js.Object {
 object IVaultDataSetOperations {
   @scala.inline
   def apply(
-    GetDataSetExportingStatus: js.Function1[scala.Double, IDataSetExportingStatus],
-    GetDataSets: js.Function0[IDataSets],
-    GetReportAccessCredentials: js.Function0[IReportAccessCredentials],
-    StartDataSetExport: js.Function1[scala.Double, scala.Unit]
+    GetDataSetExportingStatus: scala.Double => IDataSetExportingStatus,
+    GetDataSets: () => IDataSets,
+    GetReportAccessCredentials: () => IReportAccessCredentials,
+    StartDataSetExport: scala.Double => scala.Unit
   ): IVaultDataSetOperations = {
-    val __obj = js.Dynamic.literal(GetDataSetExportingStatus = GetDataSetExportingStatus, GetDataSets = GetDataSets, GetReportAccessCredentials = GetReportAccessCredentials, StartDataSetExport = StartDataSetExport)
+    val __obj = js.Dynamic.literal(GetDataSetExportingStatus = js.Any.fromFunction1(GetDataSetExportingStatus), GetDataSets = js.Any.fromFunction0(GetDataSets), GetReportAccessCredentials = js.Any.fromFunction0(GetReportAccessCredentials), StartDataSetExport = js.Any.fromFunction1(StartDataSetExport))
   
     __obj.asInstanceOf[IVaultDataSetOperations]
   }

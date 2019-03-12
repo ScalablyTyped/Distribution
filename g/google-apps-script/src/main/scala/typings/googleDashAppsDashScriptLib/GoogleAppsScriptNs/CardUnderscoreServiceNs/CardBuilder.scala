@@ -16,13 +16,13 @@ trait CardBuilder extends js.Object {
 object CardBuilder {
   @scala.inline
   def apply(
-    addCardAction: js.Function1[CardAction, CardBuilder],
-    addSection: js.Function1[CardSection, CardBuilder],
-    build: js.Function0[Card],
-    setHeader: js.Function1[CardHeader, CardBuilder],
-    setName: js.Function1[java.lang.String, CardBuilder]
+    addCardAction: CardAction => CardBuilder,
+    addSection: CardSection => CardBuilder,
+    build: () => Card,
+    setHeader: CardHeader => CardBuilder,
+    setName: java.lang.String => CardBuilder
   ): CardBuilder = {
-    val __obj = js.Dynamic.literal(addCardAction = addCardAction, addSection = addSection, build = build, setHeader = setHeader, setName = setName)
+    val __obj = js.Dynamic.literal(addCardAction = js.Any.fromFunction1(addCardAction), addSection = js.Any.fromFunction1(addSection), build = js.Any.fromFunction0(build), setHeader = js.Any.fromFunction1(setHeader), setName = js.Any.fromFunction1(setName))
   
     __obj.asInstanceOf[CardBuilder]
   }

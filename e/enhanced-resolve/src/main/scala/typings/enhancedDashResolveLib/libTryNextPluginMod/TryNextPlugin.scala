@@ -16,12 +16,12 @@ trait TryNextPlugin extends js.Object {
 object TryNextPlugin {
   @scala.inline
   def apply(
-    apply: js.Function1[enhancedDashResolveLib.libResolverMod.namespaced, scala.Unit],
+    apply: enhancedDashResolveLib.libResolverMod.namespaced => scala.Unit,
     source: java.lang.String,
     target: java.lang.String,
     message: java.lang.String = null
   ): TryNextPlugin = {
-    val __obj = js.Dynamic.literal(apply = apply, source = source, target = target)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), source = source, target = target)
     if (message != null) __obj.updateDynamic("message")(message)
     __obj.asInstanceOf[TryNextPlugin]
   }

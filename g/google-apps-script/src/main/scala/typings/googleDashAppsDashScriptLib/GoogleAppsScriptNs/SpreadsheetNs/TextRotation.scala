@@ -13,10 +13,10 @@ trait TextRotation extends js.Object {
 object TextRotation {
   @scala.inline
   def apply(
-    getDegrees: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    isVertical: js.Function0[scala.Boolean]
+    getDegrees: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    isVertical: () => scala.Boolean
   ): TextRotation = {
-    val __obj = js.Dynamic.literal(getDegrees = getDegrees, isVertical = isVertical)
+    val __obj = js.Dynamic.literal(getDegrees = js.Any.fromFunction0(getDegrees), isVertical = js.Any.fromFunction0(isVertical))
   
     __obj.asInstanceOf[TextRotation]
   }

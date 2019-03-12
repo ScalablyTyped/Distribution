@@ -14,7 +14,7 @@ object RestifyRestErrorOptions {
   def apply(
     cause: stdLib.Error = null,
     code: java.lang.String = null,
-    constructorOpt: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    constructorOpt: /* repeated */ js.Any => scala.Unit = null,
     context: js.Any = null,
     info: verrorLib.verrorMod.VErrorNs.Info = null,
     message: java.lang.String = null,
@@ -26,7 +26,7 @@ object RestifyRestErrorOptions {
     val __obj = js.Dynamic.literal()
     if (cause != null) __obj.updateDynamic("cause")(cause)
     if (code != null) __obj.updateDynamic("code")(code)
-    if (constructorOpt != null) __obj.updateDynamic("constructorOpt")(constructorOpt)
+    if (constructorOpt != null) __obj.updateDynamic("constructorOpt")(js.Any.fromFunction1(constructorOpt))
     if (context != null) __obj.updateDynamic("context")(context)
     if (info != null) __obj.updateDynamic("info")(info)
     if (message != null) __obj.updateDynamic("message")(message)

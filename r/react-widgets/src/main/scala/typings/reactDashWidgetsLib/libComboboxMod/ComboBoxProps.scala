@@ -179,9 +179,9 @@ object ComboBoxProps {
     messages: ComboBoxMessages = null,
     minLength: scala.Int | scala.Double = null,
     name: java.lang.String = null,
-    onChange: js.Function1[/* value */ js.Any, scala.Unit] = null,
-    onSelect: js.Function1[/* value */ js.Any, scala.Unit] = null,
-    onToggle: js.Function1[/* isOpen */ scala.Boolean, scala.Unit] = null,
+    onChange: /* value */ js.Any => scala.Unit = null,
+    onSelect: /* value */ js.Any => scala.Unit = null,
+    onToggle: /* isOpen */ scala.Boolean => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     placeholder: java.lang.String = null,
     popupTransition: reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String = null,
@@ -217,9 +217,9 @@ object ComboBoxProps {
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (onToggle != null) __obj.updateDynamic("onToggle")(onToggle)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
+    if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction1(onToggle))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (popupTransition != null) __obj.updateDynamic("popupTransition")(popupTransition.asInstanceOf[js.Any])

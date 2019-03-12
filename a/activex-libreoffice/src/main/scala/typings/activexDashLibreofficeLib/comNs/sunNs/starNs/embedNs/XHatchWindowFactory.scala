@@ -26,17 +26,12 @@ trait XHatchWindowFactory
 object XHatchWindowFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createHatchWindowInstance: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindowPeer, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, 
-      XHatchWindow
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createHatchWindowInstance: (activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindowPeer, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size) => XHatchWindow,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XHatchWindowFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createHatchWindowInstance = createHatchWindowInstance, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createHatchWindowInstance = js.Any.fromFunction3(createHatchWindowInstance), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XHatchWindowFactory]
   }

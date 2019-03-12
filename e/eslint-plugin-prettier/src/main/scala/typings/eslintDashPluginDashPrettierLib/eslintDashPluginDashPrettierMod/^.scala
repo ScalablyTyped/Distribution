@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val rules: js.Any = js.native
-  def generateDifferences(source: java.lang.String, formatted: java.lang.String): js.Array[eslintDashPluginDashPrettierLib.eslintDashPluginDashPrettierMod.Difference] = js.native
+  def generateDifferences(source: java.lang.String, formatted: java.lang.String): js.Array[Difference] = js.native
   def showInvisibles(str: java.lang.String): java.lang.String = js.native
 }
 

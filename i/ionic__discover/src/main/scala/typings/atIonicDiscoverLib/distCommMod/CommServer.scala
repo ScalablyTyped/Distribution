@@ -16,7 +16,7 @@ class CommServer protected ()
     * Port of communication server.
     */
   port: scala.Double) = this()
-  val clients: nodeLib.Set[wsLib.wsMod.namespaced] = js.native
+  val clients: stdLib.Set[wsLib.wsMod.namespaced] = js.native
   /**
     * Unique identifier of the publisher.
     */
@@ -36,7 +36,7 @@ class CommServer protected ()
   @JSName("on")
   def on_error(
     event: atIonicDiscoverLib.atIonicDiscoverLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   def start(): js.Promise[scala.Unit] = js.native
   def stop(): js.Promise[scala.Unit] = js.native

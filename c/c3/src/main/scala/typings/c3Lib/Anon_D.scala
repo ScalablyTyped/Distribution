@@ -19,14 +19,14 @@ object Anon_D {
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     grouped: js.UndefOr[scala.Boolean] = js.undefined,
-    isselectable: js.Function1[/* d */ js.UndefOr[js.Any], scala.Boolean] = null,
+    isselectable: /* d */ js.UndefOr[js.Any] => scala.Boolean = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_D = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (!js.isUndefined(grouped)) __obj.updateDynamic("grouped")(grouped)
-    if (isselectable != null) __obj.updateDynamic("isselectable")(isselectable)
+    if (isselectable != null) __obj.updateDynamic("isselectable")(js.Any.fromFunction1(isselectable))
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     __obj.asInstanceOf[Anon_D]
   }

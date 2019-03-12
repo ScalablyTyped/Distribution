@@ -35,26 +35,26 @@ trait SearchableIndex
 object SearchableIndex {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    addToDefaultSearchableIndex: js.Function2[js.Array[SearchableItem], js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    addToDefaultSearchableIndex: (js.Array[SearchableItem], js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     bubbleParent: scala.Boolean,
-    deleteAllSearchableItemByDomainIdenifiers: js.Function2[js.Array[java.lang.String], js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    deleteAllSearchableItems: js.Function1[js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    deleteSearchableItemsByIdentifiers: js.Function2[js.Array[java.lang.String], js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getApiName: js.Function0[java.lang.String],
-    getBubbleParent: js.Function0[scala.Boolean],
-    isSupported: js.Function0[scala.Boolean],
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
-    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    deleteAllSearchableItemByDomainIdenifiers: (js.Array[java.lang.String], js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    deleteAllSearchableItems: js.Function1[/* param0 */ js.Any, _] => scala.Unit,
+    deleteSearchableItemsByIdentifiers: (js.Array[java.lang.String], js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
+    getApiName: () => java.lang.String,
+    getBubbleParent: () => scala.Boolean,
+    isSupported: () => scala.Boolean,
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    setBubbleParent: scala.Boolean => scala.Unit,
+    getLifecycleContainer: () => titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
   ): SearchableIndex = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, addToDefaultSearchableIndex = addToDefaultSearchableIndex, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, deleteAllSearchableItemByDomainIdenifiers = deleteAllSearchableItemByDomainIdenifiers, deleteAllSearchableItems = deleteAllSearchableItems, deleteSearchableItemsByIdentifiers = deleteSearchableItemsByIdentifiers, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, isSupported = isSupported, removeEventListener = removeEventListener, setBubbleParent = setBubbleParent)
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), addToDefaultSearchableIndex = js.Any.fromFunction2(addToDefaultSearchableIndex), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, deleteAllSearchableItemByDomainIdenifiers = js.Any.fromFunction2(deleteAllSearchableItemByDomainIdenifiers), deleteAllSearchableItems = js.Any.fromFunction1(deleteAllSearchableItems), deleteSearchableItemsByIdentifiers = js.Any.fromFunction2(deleteSearchableItemsByIdentifiers), fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), isSupported = js.Any.fromFunction0(isSupported), removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent))
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
     __obj.asInstanceOf[SearchableIndex]

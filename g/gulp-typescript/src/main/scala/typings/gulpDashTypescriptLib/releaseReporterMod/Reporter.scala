@@ -19,16 +19,12 @@ trait Reporter extends js.Object {
 object Reporter {
   @scala.inline
   def apply(
-    error: js.Function2[
-      /* error */ TypeScriptError, 
-      /* typescript */ gulpDashTypescriptLib.Anon_08, 
-      scala.Unit
-    ] = null,
-    finish: js.Function1[/* results */ CompilationResult, scala.Unit] = null
+    error: (/* error */ TypeScriptError, /* typescript */ gulpDashTypescriptLib.Anon_08) => scala.Unit = null,
+    finish: /* results */ CompilationResult => scala.Unit = null
   ): Reporter = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (finish != null) __obj.updateDynamic("finish")(finish)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction2(error))
+    if (finish != null) __obj.updateDynamic("finish")(js.Any.fromFunction1(finish))
     __obj.asInstanceOf[Reporter]
   }
 }

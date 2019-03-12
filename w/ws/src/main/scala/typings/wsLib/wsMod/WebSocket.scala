@@ -53,7 +53,7 @@ trait WebSocket
     listener: js.Function2[/* code */ scala.Double, /* message */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_error(event: wsLib.wsLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def addListener_error(event: wsLib.wsLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_message(
     event: wsLib.wsLibStrings.message,
@@ -104,7 +104,7 @@ trait WebSocket
   @JSName("on")
   def on_error(
     event: wsLib.wsLibStrings.error,
-    listener: js.ThisFunction1[/* this */ this.type, /* err */ nodeLib.Error, scala.Unit]
+    listener: js.ThisFunction1[/* this */ this.type, /* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_message(
@@ -145,11 +145,11 @@ trait WebSocket
   def ping(): scala.Unit = js.native
   def ping(data: js.Any): scala.Unit = js.native
   def ping(data: js.Any, mask: scala.Boolean): scala.Unit = js.native
-  def ping(data: js.Any, mask: scala.Boolean, cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def ping(data: js.Any, mask: scala.Boolean, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def pong(): scala.Unit = js.native
   def pong(data: js.Any): scala.Unit = js.native
   def pong(data: js.Any, mask: scala.Boolean): scala.Unit = js.native
-  def pong(data: js.Any, mask: scala.Boolean, cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def pong(data: js.Any, mask: scala.Boolean, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def removeEventListener(method: java.lang.String): scala.Unit = js.native
   def removeEventListener(method: java.lang.String, listener: js.Function0[scala.Unit]): scala.Unit = js.native
   @JSName("removeEventListener")
@@ -183,7 +183,7 @@ trait WebSocket
     listener: js.Function2[/* code */ scala.Double, /* message */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_error(event: wsLib.wsLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def removeListener_error(event: wsLib.wsLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_message(
     event: wsLib.wsLibStrings.message,
@@ -210,12 +210,12 @@ trait WebSocket
     listener: js.Function1[/* request */ nodeLib.httpMod.IncomingMessage, scala.Unit]
   ): this.type = js.native
   def send(data: js.Any): scala.Unit = js.native
-  def send(data: js.Any, cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]): scala.Unit = js.native
+  def send(data: js.Any, cb: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]): scala.Unit = js.native
   def send(data: js.Any, options: wsLib.Anon_Binary): scala.Unit = js.native
   def send(
     data: js.Any,
     options: wsLib.Anon_Binary,
-    cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    cb: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): scala.Unit = js.native
   def terminate(): scala.Unit = js.native
 }

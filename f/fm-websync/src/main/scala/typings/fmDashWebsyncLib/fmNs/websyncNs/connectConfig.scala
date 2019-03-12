@@ -44,11 +44,11 @@ object connectConfig {
   @scala.inline
   def apply(
     meta: js.Any = null,
-    onComplete: js.Function1[/* args */ connectCompleteArgs, scala.Unit] = null,
-    onFailure: js.Function1[/* args */ connectFailureArgs, scala.Unit] = null,
-    onStreamFailure: js.Function1[/* args */ streamFailureArgs, scala.Unit] = null,
-    onSuccess: js.Function1[/* args */ connectSuccessArgs, scala.Unit] = null,
-    onUnhandledReceive: js.Function1[/* args */ receiveArgs, scala.Unit] = null,
+    onComplete: /* args */ connectCompleteArgs => scala.Unit = null,
+    onFailure: /* args */ connectFailureArgs => scala.Unit = null,
+    onStreamFailure: /* args */ streamFailureArgs => scala.Unit = null,
+    onSuccess: /* args */ connectSuccessArgs => scala.Unit = null,
+    onUnhandledReceive: /* args */ receiveArgs => scala.Unit = null,
     requestUrl: java.lang.String = null,
     stayConnected: js.UndefOr[scala.Boolean] = js.undefined,
     suppressErrors: js.UndefOr[scala.Boolean] = js.undefined,
@@ -56,11 +56,11 @@ object connectConfig {
   ): connectConfig = {
     val __obj = js.Dynamic.literal()
     if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
-    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
-    if (onStreamFailure != null) __obj.updateDynamic("onStreamFailure")(onStreamFailure)
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess)
-    if (onUnhandledReceive != null) __obj.updateDynamic("onUnhandledReceive")(onUnhandledReceive)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
+    if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction1(onFailure))
+    if (onStreamFailure != null) __obj.updateDynamic("onStreamFailure")(js.Any.fromFunction1(onStreamFailure))
+    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction1(onSuccess))
+    if (onUnhandledReceive != null) __obj.updateDynamic("onUnhandledReceive")(js.Any.fromFunction1(onUnhandledReceive))
     if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl)
     if (!js.isUndefined(stayConnected)) __obj.updateDynamic("stayConnected")(stayConnected)
     if (!js.isUndefined(suppressErrors)) __obj.updateDynamic("suppressErrors")(suppressErrors)

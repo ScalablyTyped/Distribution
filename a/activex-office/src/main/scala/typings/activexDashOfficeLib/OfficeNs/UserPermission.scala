@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class UserPermission protected () extends js.Object {
   val Application: js.Any = js.native
   val Creator: scala.Double = js.native
-  var ExpirationDate: activexDashInteropLib.VarDate = js.native
+  var ExpirationDate: stdLib.VarDate = js.native
   var `Office.UserPermission_typekey`: UserPermission = js.native
   val Parent: js.Any = js.native
   var Permission: scala.Double = js.native

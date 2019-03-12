@@ -32,32 +32,14 @@ trait TablesResource extends js.Object {
 object TablesResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AltDatasetIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AltDatasetIdFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Table]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AltDatasetId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Table]
-    ],
-    list: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AltDatasetIdFieldsKeyMaxResults, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TableList]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AltDatasetIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Table]
-    ],
-    update: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AltDatasetIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Table]
-    ]
+    delete: gapiDotClientDotBigqueryLib.Anon_AltDatasetIdFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotBigqueryLib.Anon_AltDatasetIdFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Table],
+    insert: gapiDotClientDotBigqueryLib.Anon_AltDatasetId => gapiDotClientLib.gapiNs.clientNs.Request[Table],
+    list: gapiDotClientDotBigqueryLib.Anon_AltDatasetIdFieldsKeyMaxResults => gapiDotClientLib.gapiNs.clientNs.Request[TableList],
+    patch: gapiDotClientDotBigqueryLib.Anon_AltDatasetIdFields => gapiDotClientLib.gapiNs.clientNs.Request[Table],
+    update: gapiDotClientDotBigqueryLib.Anon_AltDatasetIdFields => gapiDotClientLib.gapiNs.clientNs.Request[Table]
   ): TablesResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[TablesResource]
   }

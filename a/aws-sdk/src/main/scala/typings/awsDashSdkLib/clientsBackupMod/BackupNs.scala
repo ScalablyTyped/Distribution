@@ -83,7 +83,7 @@ object BackupNs extends js.Object {
     /**
       * The display name of a backup plan.
       */
-    var BackupPlanName: BackupPlanName
+    var BackupPlanName: awsDashSdkLib.clientsBackupMod.BackupNs.BackupPlanName
     /**
       * An array of BackupRule objects, each of which specifies a scheduled task that is used to back up a selection of resources.
       */
@@ -94,7 +94,7 @@ object BackupNs extends js.Object {
     /**
       * The display name of a backup plan.
       */
-    var BackupPlanName: BackupPlanName
+    var BackupPlanName: awsDashSdkLib.clientsBackupMod.BackupNs.BackupPlanName
     /**
       * An array of BackupRule objects, each of which specifies a scheduled task that is used to back up a selection of resources.
       */
@@ -308,15 +308,15 @@ object BackupNs extends js.Object {
     /**
       * The key in a key-value pair. For example, in "ec2:ResourceTag/Department": "accounting", "ec2:ResourceTag/Department" is the key.
       */
-    var ConditionKey: ConditionKey
+    var ConditionKey: awsDashSdkLib.clientsBackupMod.BackupNs.ConditionKey
     /**
       * An operation, such as StringEquals, that is applied to a key-value pair used to filter resources in a selection.
       */
-    var ConditionType: ConditionType
+    var ConditionType: awsDashSdkLib.clientsBackupMod.BackupNs.ConditionType
     /**
       * The value in a key-value pair. For example, in "ec2:ResourceTag/Department": "accounting", "accounting" is the value.
       */
-    var ConditionValue: ConditionValue
+    var ConditionValue: awsDashSdkLib.clientsBackupMod.BackupNs.ConditionValue
   }
   
   trait CreateBackupPlanInput extends js.Object {
@@ -361,7 +361,7 @@ object BackupNs extends js.Object {
     /**
       * Specifies the body of a request to assign a set of resources to a backup plan. It includes an array of resources, an optional array of patterns to exclude resources, an optional role to provide access to the AWS service the resource belongs to, and an optional array of tags used to identify a set of resources.
       */
-    var BackupSelection: BackupSelection
+    var BackupSelection: awsDashSdkLib.clientsBackupMod.BackupNs.BackupSelection
     /**
       * A unique string that identifies the request and allows failed requests to be retried without the risk of executing the operation twice.
       */
@@ -387,7 +387,7 @@ object BackupNs extends js.Object {
     /**
       * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
       */
-    var BackupVaultName: BackupVaultName
+    var BackupVaultName: awsDashSdkLib.clientsBackupMod.BackupNs.BackupVaultName
     /**
       * Metadata that you can assign to help organize the resources that you create. Each tag is a key-value pair.
       */
@@ -458,7 +458,7 @@ object BackupNs extends js.Object {
     /**
       * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
       */
-    var BackupVaultName: BackupVaultName
+    var BackupVaultName: awsDashSdkLib.clientsBackupMod.BackupNs.BackupVaultName
   }
   
   trait DeleteBackupVaultInput extends js.Object {
@@ -472,14 +472,14 @@ object BackupNs extends js.Object {
     /**
       * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the Region where they are created. They consist of lowercase letters, numbers, and hyphens.
       */
-    var BackupVaultName: BackupVaultName
+    var BackupVaultName: awsDashSdkLib.clientsBackupMod.BackupNs.BackupVaultName
   }
   
   trait DeleteRecoveryPointInput extends js.Object {
     /**
       * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
       */
-    var BackupVaultName: BackupVaultName
+    var BackupVaultName: awsDashSdkLib.clientsBackupMod.BackupNs.BackupVaultName
     /**
       * An Amazon Resource Name (ARN) that uniquely identifies a recovery point; for example, arn:aws:backup:us-east-1:123456789012:recovery-point:1EB3B5E7-9EB0-435A-A80B-108B488B0D45.
       */
@@ -624,7 +624,7 @@ object BackupNs extends js.Object {
     /**
       * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
       */
-    var BackupVaultName: BackupVaultName
+    var BackupVaultName: awsDashSdkLib.clientsBackupMod.BackupNs.BackupVaultName
     /**
       * An Amazon Resource Name (ARN) that uniquely identifies a recovery point; for example, arn:aws:backup:us-east-1:123456789012:recovery-point:1EB3B5E7-9EB0-435A-A80B-108B488B0D45.
       */
@@ -706,7 +706,7 @@ object BackupNs extends js.Object {
     /**
       * Uniquely identifies the job that restores a recovery point.
       */
-    var RestoreJobId: RestoreJobId
+    var RestoreJobId: awsDashSdkLib.clientsBackupMod.BackupNs.RestoreJobId
   }
   
   trait DescribeRestoreJobOutput extends js.Object {
@@ -882,7 +882,7 @@ object BackupNs extends js.Object {
     /**
       * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
       */
-    var BackupVaultName: BackupVaultName
+    var BackupVaultName: awsDashSdkLib.clientsBackupMod.BackupNs.BackupVaultName
   }
   
   trait GetBackupVaultAccessPolicyOutput extends js.Object {
@@ -904,7 +904,7 @@ object BackupNs extends js.Object {
     /**
       * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
       */
-    var BackupVaultName: BackupVaultName
+    var BackupVaultName: awsDashSdkLib.clientsBackupMod.BackupNs.BackupVaultName
   }
   
   trait GetBackupVaultNotificationsOutput extends js.Object {
@@ -930,7 +930,7 @@ object BackupNs extends js.Object {
     /**
       * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
       */
-    var BackupVaultName: BackupVaultName
+    var BackupVaultName: awsDashSdkLib.clientsBackupMod.BackupNs.BackupVaultName
     /**
       * An Amazon Resource Name (ARN) that uniquely identifies a recovery point; for example, arn:aws:backup:us-east-1:123456789012:recovery-point:1EB3B5E7-9EB0-435A-A80B-108B488B0D45.
       */
@@ -1164,7 +1164,7 @@ object BackupNs extends js.Object {
     /**
       * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
       */
-    var BackupVaultName: BackupVaultName
+    var BackupVaultName: awsDashSdkLib.clientsBackupMod.BackupNs.BackupVaultName
     /**
       * Returns only recovery points that match the specified backup plan ID.
       */
@@ -1302,7 +1302,7 @@ object BackupNs extends js.Object {
     /**
       * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
       */
-    var BackupVaultName: BackupVaultName
+    var BackupVaultName: awsDashSdkLib.clientsBackupMod.BackupNs.BackupVaultName
     /**
       * The backup vault access policy document in JSON format.
       */
@@ -1313,11 +1313,11 @@ object BackupNs extends js.Object {
     /**
       * An array of events that indicate the status of jobs to back up resources to the backup vault.
       */
-    var BackupVaultEvents: BackupVaultEvents
+    var BackupVaultEvents: awsDashSdkLib.clientsBackupMod.BackupNs.BackupVaultEvents
     /**
       * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
       */
-    var BackupVaultName: BackupVaultName
+    var BackupVaultName: awsDashSdkLib.clientsBackupMod.BackupNs.BackupVaultName
     /**
       * The Amazon Resource Name (ARN) that specifies the topic for a backup vault’s events; for example, arn:aws:sns:us-west-2:111122223333:MyVaultTopic.
       */
@@ -1488,7 +1488,7 @@ object BackupNs extends js.Object {
     /**
       * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
       */
-    var BackupVaultName: BackupVaultName
+    var BackupVaultName: awsDashSdkLib.clientsBackupMod.BackupNs.BackupVaultName
     /**
       * The amount of time AWS Backup attempts a backup before canceling the job and returning an error.
       */
@@ -1546,7 +1546,7 @@ object BackupNs extends js.Object {
     /**
       * A set of metadata key-value pairs. Lists the metadata that the recovery point was created with.
       */
-    var Metadata: Metadata
+    var Metadata: awsDashSdkLib.clientsBackupMod.BackupNs.Metadata
     /**
       * An ARN that uniquely identifies a recovery point; for example, arn:aws:backup:us-east-1:123456789012:recovery-point:1EB3B5E7-9EB0-435A-A80B-108B488B0D45.
       */
@@ -1579,7 +1579,7 @@ object BackupNs extends js.Object {
     /**
       * Key-value pairs that are used to help organize your resources. You can assign your own metadata to the resources you create. 
       */
-    var Tags: Tags
+    var Tags: awsDashSdkLib.clientsBackupMod.BackupNs.Tags
   }
   
   trait Tags
@@ -2489,7 +2489,7 @@ object BackupNs extends js.Object {
     /**
       * A list of keys to identify which key-value tags to remove from a resource.
       */
-    var TagKeyList: TagKeyList
+    var TagKeyList: awsDashSdkLib.clientsBackupMod.BackupNs.TagKeyList
   }
   
   trait UpdateBackupPlanInput extends js.Object {
@@ -2526,7 +2526,7 @@ object BackupNs extends js.Object {
     /**
       * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
       */
-    var BackupVaultName: BackupVaultName
+    var BackupVaultName: awsDashSdkLib.clientsBackupMod.BackupNs.BackupVaultName
     /**
       * The lifecycle defines when a protected resource is transitioned to cold storage and when it expires. AWS Backup transitions and expires backups automatically according to the lifecycle that you define.  Backups transitioned to cold storage must be stored in cold storage for a minimum of 90 days. Therefore, the “expire after days” setting must be 90 days greater than the “transition to cold after days” setting. The “transition to cold after days” setting cannot be changed after a backup has been transitioned to cold. 
       */

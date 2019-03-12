@@ -16,13 +16,13 @@ object CliThemeConfig {
   @scala.inline
   def apply(
     delimiter: atFrctlFractalLib.Anon_Format = null,
-    `delimiter.format`: js.Function1[/* str */ java.lang.String, java.lang.String] = null,
+    `delimiter.format`: /* str */ java.lang.String => java.lang.String = null,
     `delimiter.text`: java.lang.String = null,
     styles: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): CliThemeConfig = {
     val __obj = js.Dynamic.literal()
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
-    if (`delimiter.format` != null) __obj.updateDynamic("delimiter.format")(`delimiter.format`)
+    if (`delimiter.format` != null) __obj.updateDynamic("delimiter.format")(js.Any.fromFunction1(`delimiter.format`))
     if (`delimiter.text` != null) __obj.updateDynamic("delimiter.text")(`delimiter.text`)
     if (styles != null) __obj.updateDynamic("styles")(styles)
     __obj.asInstanceOf[CliThemeConfig]

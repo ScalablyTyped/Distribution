@@ -17,15 +17,9 @@ trait OnItemLongClickListener extends js.Object {
 object OnItemLongClickListener {
   @scala.inline
   def apply(
-    onItemLongClick: js.Function4[
-      androiduixLib.androidNs.widgetNs.AdapterView[_], 
-      androiduixLib.androidNs.viewNs.View, 
-      scala.Double, 
-      scala.Double, 
-      scala.Boolean
-    ]
+    onItemLongClick: (androiduixLib.androidNs.widgetNs.AdapterView[_], androiduixLib.androidNs.viewNs.View, scala.Double, scala.Double) => scala.Boolean
   ): OnItemLongClickListener = {
-    val __obj = js.Dynamic.literal(onItemLongClick = onItemLongClick)
+    val __obj = js.Dynamic.literal(onItemLongClick = js.Any.fromFunction4(onItemLongClick))
   
     __obj.asInstanceOf[OnItemLongClickListener]
   }

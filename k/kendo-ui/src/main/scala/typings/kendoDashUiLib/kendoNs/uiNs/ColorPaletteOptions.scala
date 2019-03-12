@@ -17,7 +17,7 @@ trait ColorPaletteOptions extends js.Object {
 object ColorPaletteOptions {
   @scala.inline
   def apply(
-    change: js.Function1[/* e */ ColorPaletteEvent, scala.Unit] = null,
+    change: /* e */ ColorPaletteEvent => scala.Unit = null,
     columns: scala.Int | scala.Double = null,
     name: java.lang.String = null,
     palette: java.lang.String | js.Any = null,
@@ -25,7 +25,7 @@ object ColorPaletteOptions {
     value: java.lang.String = null
   ): ColorPaletteOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])

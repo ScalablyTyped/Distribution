@@ -56,29 +56,13 @@ trait Cookies extends js.Object {
 object Cookies {
   @scala.inline
   def apply(
-    get: js.Function2[
-      CookiesGetDetails, 
-      js.Function1[/* cookie */ js.UndefOr[Cookie], scala.Unit], 
-      scala.Unit
-    ],
-    getAll: js.Function2[
-      CookiesGetAllDetails, 
-      js.Function1[/* cookies */ js.UndefOr[js.Array[Cookie]], scala.Unit], 
-      scala.Unit
-    ],
+    get: (CookiesGetDetails, js.Function1[/* cookie */ js.UndefOr[Cookie], scala.Unit]) => scala.Unit,
+    getAll: (CookiesGetAllDetails, js.Function1[/* cookies */ js.UndefOr[js.Array[Cookie]], scala.Unit]) => scala.Unit,
     onChanged: nwDotJsLib.Anon_AddListener,
-    remove: js.Function2[
-      CookiesRemoveDetails, 
-      js.Function1[/* details */ js.UndefOr[CookiesRemovedDetails], scala.Unit], 
-      scala.Unit
-    ],
-    set: js.Function2[
-      CookiesSetDetails, 
-      js.Function1[/* cookie */ js.UndefOr[Cookie], scala.Unit], 
-      scala.Unit
-    ]
+    remove: (CookiesRemoveDetails, js.Function1[/* details */ js.UndefOr[CookiesRemovedDetails], scala.Unit]) => scala.Unit,
+    set: (CookiesSetDetails, js.Function1[/* cookie */ js.UndefOr[Cookie], scala.Unit]) => scala.Unit
   ): Cookies = {
-    val __obj = js.Dynamic.literal(get = get, getAll = getAll, onChanged = onChanged, remove = remove, set = set)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), getAll = js.Any.fromFunction2(getAll), onChanged = onChanged, remove = js.Any.fromFunction2(remove), set = js.Any.fromFunction2(set))
   
     __obj.asInstanceOf[Cookies]
   }

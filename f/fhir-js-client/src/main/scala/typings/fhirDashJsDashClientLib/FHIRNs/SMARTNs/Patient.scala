@@ -27,8 +27,8 @@ trait Patient extends js.Object {
 
 object Patient {
   @scala.inline
-  def apply(api: Api, id: java.lang.String, read: js.Function0[js.Promise[Response]]): Patient = {
-    val __obj = js.Dynamic.literal(api = api, id = id, read = read)
+  def apply(api: Api, id: java.lang.String, read: () => js.Promise[Response]): Patient = {
+    val __obj = js.Dynamic.literal(api = api, id = id, read = js.Any.fromFunction0(read))
   
     __obj.asInstanceOf[Patient]
   }

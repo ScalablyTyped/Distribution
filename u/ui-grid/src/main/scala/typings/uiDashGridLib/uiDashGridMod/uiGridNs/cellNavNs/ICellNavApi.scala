@@ -36,13 +36,13 @@ trait ICellNavApi[TEntity] extends js.Object {
 object ICellNavApi {
   @scala.inline
   def apply[TEntity](
-    getCurrentSelection: js.Function0[js.Array[IRowCol[TEntity]]],
-    getFocusedCell: js.Function0[IRowCol[TEntity]],
+    getCurrentSelection: () => js.Array[IRowCol[TEntity]],
+    getFocusedCell: () => IRowCol[TEntity],
     on: uiDashGridLib.Anon_Handler[TEntity],
-    rowColSelectIndex: js.Function1[IRowCol[TEntity], scala.Double],
-    scrollToFocus: js.Function2[TEntity, IColumnDef, angularLib.angularMod.angularNs.IPromise[_]]
+    rowColSelectIndex: IRowCol[TEntity] => scala.Double,
+    scrollToFocus: (TEntity, IColumnDef) => angularLib.angularMod.angularNs.IPromise[_]
   ): ICellNavApi[TEntity] = {
-    val __obj = js.Dynamic.literal(getCurrentSelection = getCurrentSelection, getFocusedCell = getFocusedCell, on = on, rowColSelectIndex = rowColSelectIndex, scrollToFocus = scrollToFocus)
+    val __obj = js.Dynamic.literal(getCurrentSelection = js.Any.fromFunction0(getCurrentSelection), getFocusedCell = js.Any.fromFunction0(getFocusedCell), on = on, rowColSelectIndex = js.Any.fromFunction1(rowColSelectIndex), scrollToFocus = js.Any.fromFunction2(scrollToFocus))
   
     __obj.asInstanceOf[ICellNavApi[TEntity]]
   }

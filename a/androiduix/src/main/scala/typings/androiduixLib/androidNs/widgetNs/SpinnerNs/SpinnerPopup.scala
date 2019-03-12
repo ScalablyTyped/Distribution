@@ -23,20 +23,20 @@ trait SpinnerPopup extends js.Object {
 object SpinnerPopup {
   @scala.inline
   def apply(
-    dismiss: js.Function0[scala.Unit],
-    getBackground: js.Function0[androiduixLib.androidNs.graphicsNs.drawableNs.Drawable],
-    getHintText: js.Function0[java.lang.String],
-    getHorizontalOffset: js.Function0[scala.Double],
-    getVerticalOffset: js.Function0[scala.Double],
-    isShowing: js.Function0[scala.Boolean],
-    setAdapter: js.Function1[androiduixLib.androidNs.widgetNs.ListAdapter, scala.Unit],
-    setBackgroundDrawable: js.Function1[androiduixLib.androidNs.graphicsNs.drawableNs.Drawable, scala.Unit],
-    setHorizontalOffset: js.Function1[scala.Double, scala.Unit],
-    setPromptText: js.Function1[java.lang.String, scala.Unit],
-    setVerticalOffset: js.Function1[scala.Double, scala.Unit],
-    showPopup: js.Function2[scala.Double, scala.Double, scala.Unit]
+    dismiss: () => scala.Unit,
+    getBackground: () => androiduixLib.androidNs.graphicsNs.drawableNs.Drawable,
+    getHintText: () => java.lang.String,
+    getHorizontalOffset: () => scala.Double,
+    getVerticalOffset: () => scala.Double,
+    isShowing: () => scala.Boolean,
+    setAdapter: androiduixLib.androidNs.widgetNs.ListAdapter => scala.Unit,
+    setBackgroundDrawable: androiduixLib.androidNs.graphicsNs.drawableNs.Drawable => scala.Unit,
+    setHorizontalOffset: scala.Double => scala.Unit,
+    setPromptText: java.lang.String => scala.Unit,
+    setVerticalOffset: scala.Double => scala.Unit,
+    showPopup: (scala.Double, scala.Double) => scala.Unit
   ): SpinnerPopup = {
-    val __obj = js.Dynamic.literal(dismiss = dismiss, getBackground = getBackground, getHintText = getHintText, getHorizontalOffset = getHorizontalOffset, getVerticalOffset = getVerticalOffset, isShowing = isShowing, setAdapter = setAdapter, setBackgroundDrawable = setBackgroundDrawable, setHorizontalOffset = setHorizontalOffset, setPromptText = setPromptText, setVerticalOffset = setVerticalOffset, showPopup = showPopup)
+    val __obj = js.Dynamic.literal(dismiss = js.Any.fromFunction0(dismiss), getBackground = js.Any.fromFunction0(getBackground), getHintText = js.Any.fromFunction0(getHintText), getHorizontalOffset = js.Any.fromFunction0(getHorizontalOffset), getVerticalOffset = js.Any.fromFunction0(getVerticalOffset), isShowing = js.Any.fromFunction0(isShowing), setAdapter = js.Any.fromFunction1(setAdapter), setBackgroundDrawable = js.Any.fromFunction1(setBackgroundDrawable), setHorizontalOffset = js.Any.fromFunction1(setHorizontalOffset), setPromptText = js.Any.fromFunction1(setPromptText), setVerticalOffset = js.Any.fromFunction1(setVerticalOffset), showPopup = js.Any.fromFunction2(showPopup))
   
     __obj.asInstanceOf[SpinnerPopup]
   }

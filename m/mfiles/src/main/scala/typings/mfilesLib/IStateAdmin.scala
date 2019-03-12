@@ -54,7 +54,7 @@ object IStateAdmin {
     ActionSetProperties: scala.Boolean,
     ActionSetPropertiesDefinition: IActionSetProperties,
     CheckInOutPermissions: scala.Boolean,
-    Clone: js.Function0[IStateAdmin],
+    Clone: () => IStateAdmin,
     Description: java.lang.String,
     ID: scala.Double,
     InOutPermissions: IAccessControlList,
@@ -64,7 +64,7 @@ object IStateAdmin {
     SemanticAliases: ISemanticAliases,
     TransitionsRequireEditAccessToObject: scala.Boolean
   ): IStateAdmin = {
-    val __obj = js.Dynamic.literal(ActionAssignToUser = ActionAssignToUser, ActionAssignToUserDefinition = ActionAssignToUserDefinition, ActionConvertToPDF = ActionConvertToPDF, ActionConvertToPDFDefinition = ActionConvertToPDFDefinition, ActionCreateSeparateAssignment = ActionCreateSeparateAssignment, ActionDefinitions = ActionDefinitions, ActionDelete = ActionDelete, ActionMarkForArchiving = ActionMarkForArchiving, ActionRunVBScript = ActionRunVBScript, ActionRunVBScriptDefinition = ActionRunVBScriptDefinition, ActionSendNotification = ActionSendNotification, ActionSendNotificationDefinition = ActionSendNotificationDefinition, ActionSetPermissions = ActionSetPermissions, ActionSetPermissionsDetailedDefinition = ActionSetPermissionsDetailedDefinition, ActionSetProperties = ActionSetProperties, ActionSetPropertiesDefinition = ActionSetPropertiesDefinition, CheckInOutPermissions = CheckInOutPermissions, Clone = Clone, Description = Description, ID = ID, InOutPermissions = InOutPermissions, Name = Name, Postconditions = Postconditions, Preconditions = Preconditions, SemanticAliases = SemanticAliases, TransitionsRequireEditAccessToObject = TransitionsRequireEditAccessToObject)
+    val __obj = js.Dynamic.literal(ActionAssignToUser = ActionAssignToUser, ActionAssignToUserDefinition = ActionAssignToUserDefinition, ActionConvertToPDF = ActionConvertToPDF, ActionConvertToPDFDefinition = ActionConvertToPDFDefinition, ActionCreateSeparateAssignment = ActionCreateSeparateAssignment, ActionDefinitions = ActionDefinitions, ActionDelete = ActionDelete, ActionMarkForArchiving = ActionMarkForArchiving, ActionRunVBScript = ActionRunVBScript, ActionRunVBScriptDefinition = ActionRunVBScriptDefinition, ActionSendNotification = ActionSendNotification, ActionSendNotificationDefinition = ActionSendNotificationDefinition, ActionSetPermissions = ActionSetPermissions, ActionSetPermissionsDetailedDefinition = ActionSetPermissionsDetailedDefinition, ActionSetProperties = ActionSetProperties, ActionSetPropertiesDefinition = ActionSetPropertiesDefinition, CheckInOutPermissions = CheckInOutPermissions, Clone = js.Any.fromFunction0(Clone), Description = Description, ID = ID, InOutPermissions = InOutPermissions, Name = Name, Postconditions = Postconditions, Preconditions = Preconditions, SemanticAliases = SemanticAliases, TransitionsRequireEditAccessToObject = TransitionsRequireEditAccessToObject)
   
     __obj.asInstanceOf[IStateAdmin]
   }

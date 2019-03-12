@@ -44,7 +44,7 @@ trait SESTransport
   @JSName("verify")
   def verify_MSESTransport(
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       nodemailerLib.nodemailerLibNumbers.`true`, 
       scala.Unit
     ]

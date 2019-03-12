@@ -8,357 +8,345 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Foxx")
 @js.native
 object ^ extends js.Object {
-  def route(handler: arangodbLib.FoxxNs.Handler): arangodbLib.FoxxNs.Endpoint = js.native
-  def route(handler: arangodbLib.FoxxNs.Handler, name: java.lang.String): arangodbLib.FoxxNs.Endpoint = js.native
-  def route(pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware, handler: arangodbLib.FoxxNs.Handler): arangodbLib.FoxxNs.Endpoint = js.native
+  def route(handler: Handler): Endpoint = js.native
+  def route(handler: Handler, name: java.lang.String): Endpoint = js.native
+  def route(pathOrMiddleware: SimpleMiddleware, handler: Handler): Endpoint = js.native
+  def route(pathOrMiddleware: SimpleMiddleware, handler: Handler, name: java.lang.String): Endpoint = js.native
   def route(
-    pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler,
+    pathOrMiddleware: SimpleMiddleware,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    handler: Handler
+  ): Endpoint = js.native
+  def route(
+    pathOrMiddleware: SimpleMiddleware,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    handler: Handler,
     name: java.lang.String
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+  ): Endpoint = js.native
   def route(
-    pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+    pathOrMiddleware: SimpleMiddleware,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    handler: Handler
+  ): Endpoint = js.native
   def route(
-    pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler,
+    pathOrMiddleware: SimpleMiddleware,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    handler: Handler,
     name: java.lang.String
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+  ): Endpoint = js.native
   def route(
-    pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+    pathOrMiddleware: SimpleMiddleware,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    handler: Handler
+  ): Endpoint = js.native
   def route(
-    pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler,
+    pathOrMiddleware: SimpleMiddleware,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    handler: Handler,
     name: java.lang.String
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+  ): Endpoint = js.native
   def route(
-    pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+    pathOrMiddleware: SimpleMiddleware,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    handler: Handler
+  ): Endpoint = js.native
   def route(
-    pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler,
+    pathOrMiddleware: SimpleMiddleware,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    handler: Handler,
     name: java.lang.String
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+  ): Endpoint = js.native
   def route(
-    pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+    pathOrMiddleware: SimpleMiddleware,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    middleware6: SimpleMiddleware,
+    handler: Handler
+  ): Endpoint = js.native
   def route(
-    pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler,
+    pathOrMiddleware: SimpleMiddleware,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    middleware6: SimpleMiddleware,
+    handler: Handler,
     name: java.lang.String
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+  ): Endpoint = js.native
   def route(
-    pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware6: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+    pathOrMiddleware: SimpleMiddleware,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    middleware6: SimpleMiddleware,
+    middleware7: SimpleMiddleware,
+    handler: Handler
+  ): Endpoint = js.native
   def route(
-    pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware6: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler,
+    pathOrMiddleware: SimpleMiddleware,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    middleware6: SimpleMiddleware,
+    middleware7: SimpleMiddleware,
+    handler: Handler,
     name: java.lang.String
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+  ): Endpoint = js.native
   def route(
-    pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware6: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware7: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+    pathOrMiddleware: SimpleMiddleware,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    middleware6: SimpleMiddleware,
+    middleware7: SimpleMiddleware,
+    middleware8: SimpleMiddleware,
+    handler: Handler
+  ): Endpoint = js.native
   def route(
-    pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware6: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware7: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler,
+    pathOrMiddleware: SimpleMiddleware,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    middleware6: SimpleMiddleware,
+    middleware7: SimpleMiddleware,
+    middleware8: SimpleMiddleware,
+    handler: Handler,
     name: java.lang.String
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+  ): Endpoint = js.native
   def route(
-    pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware6: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware7: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware8: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+    pathOrMiddleware: SimpleMiddleware,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    middleware6: SimpleMiddleware,
+    middleware7: SimpleMiddleware,
+    middleware8: SimpleMiddleware,
+    middleware9: SimpleMiddleware,
+    handler: Handler
+  ): Endpoint = js.native
   def route(
-    pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware6: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware7: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware8: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler,
+    pathOrMiddleware: SimpleMiddleware,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    middleware6: SimpleMiddleware,
+    middleware7: SimpleMiddleware,
+    middleware8: SimpleMiddleware,
+    middleware9: SimpleMiddleware,
+    handler: Handler,
     name: java.lang.String
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+  ): Endpoint = js.native
+  def route(pathOrMiddleware: SimpleMiddleware, middleware: SimpleMiddleware, handler: Handler): Endpoint = js.native
   def route(
-    pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware6: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware7: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware8: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware9: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler
-  ): arangodbLib.FoxxNs.Endpoint = js.native
-  def route(
-    pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware6: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware7: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware8: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware9: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler,
+    pathOrMiddleware: SimpleMiddleware,
+    middleware: SimpleMiddleware,
+    handler: Handler,
     name: java.lang.String
-  ): arangodbLib.FoxxNs.Endpoint = js.native
-  def route(
-    pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler
-  ): arangodbLib.FoxxNs.Endpoint = js.native
-  def route(
-    pathOrMiddleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler,
-    name: java.lang.String
-  ): arangodbLib.FoxxNs.Endpoint = js.native
-  def route(pathOrMiddleware: java.lang.String, handler: arangodbLib.FoxxNs.Handler): arangodbLib.FoxxNs.Endpoint = js.native
-  def route(pathOrMiddleware: java.lang.String, handler: arangodbLib.FoxxNs.Handler, name: java.lang.String): arangodbLib.FoxxNs.Endpoint = js.native
+  ): Endpoint = js.native
+  def route(pathOrMiddleware: java.lang.String, handler: Handler): Endpoint = js.native
+  def route(pathOrMiddleware: java.lang.String, handler: Handler, name: java.lang.String): Endpoint = js.native
   def route(
     pathOrMiddleware: java.lang.String,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    handler: Handler
+  ): Endpoint = js.native
   def route(
     pathOrMiddleware: java.lang.String,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    handler: Handler,
     name: java.lang.String
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+  ): Endpoint = js.native
   def route(
     pathOrMiddleware: java.lang.String,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    handler: Handler
+  ): Endpoint = js.native
   def route(
     pathOrMiddleware: java.lang.String,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    handler: Handler,
     name: java.lang.String
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+  ): Endpoint = js.native
   def route(
     pathOrMiddleware: java.lang.String,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    handler: Handler
+  ): Endpoint = js.native
   def route(
     pathOrMiddleware: java.lang.String,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    handler: Handler,
     name: java.lang.String
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+  ): Endpoint = js.native
   def route(
     pathOrMiddleware: java.lang.String,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    handler: Handler
+  ): Endpoint = js.native
   def route(
     pathOrMiddleware: java.lang.String,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    handler: Handler,
     name: java.lang.String
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+  ): Endpoint = js.native
   def route(
     pathOrMiddleware: java.lang.String,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware6: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    middleware6: SimpleMiddleware,
+    handler: Handler
+  ): Endpoint = js.native
   def route(
     pathOrMiddleware: java.lang.String,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware6: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    middleware6: SimpleMiddleware,
+    handler: Handler,
     name: java.lang.String
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+  ): Endpoint = js.native
   def route(
     pathOrMiddleware: java.lang.String,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware6: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware7: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    middleware6: SimpleMiddleware,
+    middleware7: SimpleMiddleware,
+    handler: Handler
+  ): Endpoint = js.native
   def route(
     pathOrMiddleware: java.lang.String,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware6: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware7: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    middleware6: SimpleMiddleware,
+    middleware7: SimpleMiddleware,
+    handler: Handler,
     name: java.lang.String
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+  ): Endpoint = js.native
   def route(
     pathOrMiddleware: java.lang.String,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware6: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware7: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware8: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    middleware6: SimpleMiddleware,
+    middleware7: SimpleMiddleware,
+    middleware8: SimpleMiddleware,
+    handler: Handler
+  ): Endpoint = js.native
   def route(
     pathOrMiddleware: java.lang.String,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware6: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware7: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware8: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    middleware6: SimpleMiddleware,
+    middleware7: SimpleMiddleware,
+    middleware8: SimpleMiddleware,
+    handler: Handler,
     name: java.lang.String
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+  ): Endpoint = js.native
   def route(
     pathOrMiddleware: java.lang.String,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware6: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware7: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware8: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware9: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    middleware6: SimpleMiddleware,
+    middleware7: SimpleMiddleware,
+    middleware8: SimpleMiddleware,
+    middleware9: SimpleMiddleware,
+    handler: Handler
+  ): Endpoint = js.native
   def route(
     pathOrMiddleware: java.lang.String,
-    middleware1: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware2: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware3: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware4: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware5: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware6: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware7: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware8: arangodbLib.FoxxNs.SimpleMiddleware,
-    middleware9: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler,
+    middleware1: SimpleMiddleware,
+    middleware2: SimpleMiddleware,
+    middleware3: SimpleMiddleware,
+    middleware4: SimpleMiddleware,
+    middleware5: SimpleMiddleware,
+    middleware6: SimpleMiddleware,
+    middleware7: SimpleMiddleware,
+    middleware8: SimpleMiddleware,
+    middleware9: SimpleMiddleware,
+    handler: Handler,
     name: java.lang.String
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+  ): Endpoint = js.native
+  def route(pathOrMiddleware: java.lang.String, middleware: SimpleMiddleware, handler: Handler): Endpoint = js.native
   def route(
     pathOrMiddleware: java.lang.String,
-    middleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler
-  ): arangodbLib.FoxxNs.Endpoint = js.native
-  def route(
-    pathOrMiddleware: java.lang.String,
-    middleware: arangodbLib.FoxxNs.SimpleMiddleware,
-    handler: arangodbLib.FoxxNs.Handler,
+    middleware: SimpleMiddleware,
+    handler: Handler,
     name: java.lang.String
-  ): arangodbLib.FoxxNs.Endpoint = js.native
+  ): Endpoint = js.native
 }
 

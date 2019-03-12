@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Borders extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var Color: XlRgbColor | scala.Double = js.native
   var ColorIndex: scala.Double | XlColorIndex | scala.Null = js.native
   val Count: scala.Double = js.native
   val Creator: XlCreator = js.native
-  var LineStyle: LineStyle = js.native
+  var LineStyle: activexDashExcelLib.ExcelNs.LineStyle = js.native
   val Parent: js.Any = js.native
   var ThemeColor: XlThemeColor = js.native
   var TintAndShade: scala.Double = js.native

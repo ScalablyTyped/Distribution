@@ -17,15 +17,15 @@ trait TooltipProps
   /**
     * Callback to be invoked when Component is clicked.
     */
-  var onClick: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onClick: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback called when the mouse enters the Component.
     */
-  var onMouseEnter: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onMouseEnter: js.UndefOr[js.Function] = js.undefined
   /**
     * Callback called when the mouse leaves the Component.
     */
-  var onMouseLeave: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onMouseLeave: js.UndefOr[js.Function] = js.undefined
   /**
     * Classnames object defining the component style.
     */
@@ -66,9 +66,9 @@ object TooltipProps {
     */
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     className: java.lang.String = null,
-    onClick: coreDashJsLib.Function = null,
-    onMouseEnter: coreDashJsLib.Function = null,
-    onMouseLeave: coreDashJsLib.Function = null,
+    onClick: js.Function = null,
+    onMouseEnter: js.Function = null,
+    onMouseLeave: js.Function = null,
     theme: TooltipTheme = null,
     tooltip: reactLib.reactMod.ReactNs.ReactNode = null,
     tooltipDelay: scala.Int | scala.Double = null,

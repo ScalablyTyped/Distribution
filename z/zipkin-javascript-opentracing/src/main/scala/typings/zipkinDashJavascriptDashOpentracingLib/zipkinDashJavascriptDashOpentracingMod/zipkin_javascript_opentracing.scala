@@ -14,11 +14,11 @@ trait zipkin_javascript_opentracing extends js.Object {
 object zipkin_javascript_opentracing {
   @scala.inline
   def apply(
-    extract: js.Function2[js.Any, js.Any, js.Any],
-    inject: js.Function3[js.Any, js.Any, js.Any, scala.Unit],
-    startSpan: js.Function2[js.Any, /* repeated */ js.Any, js.Any]
+    extract: (js.Any, js.Any) => js.Any,
+    inject: (js.Any, js.Any, js.Any) => scala.Unit,
+    startSpan: (js.Any, /* repeated */ js.Any) => js.Any
   ): zipkin_javascript_opentracing = {
-    val __obj = js.Dynamic.literal(extract = extract, inject = inject, startSpan = startSpan)
+    val __obj = js.Dynamic.literal(extract = js.Any.fromFunction2(extract), inject = js.Any.fromFunction3(inject), startSpan = js.Any.fromFunction2(startSpan))
   
     __obj.asInstanceOf[zipkin_javascript_opentracing]
   }

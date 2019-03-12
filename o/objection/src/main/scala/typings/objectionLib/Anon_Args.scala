@@ -38,8 +38,8 @@ trait Anon_Args
   var virtualAttributes: js.Array[java.lang.String] = js.native
   def bindKnex[M](`this`: M, knex: knexLib.knexMod.Knex): M = js.native
   def bindTransaction[M](`this`: M, transaction: objectionLib.objectionMod.ObjectionNs.Transaction): M = js.native
-  def createNotFoundError(): nodeLib.Error = js.native
-  def createValidationError(args: objectionLib.objectionMod.ObjectionNs.CreateValidationErrorArgs): nodeLib.Error = js.native
+  def createNotFoundError(): stdLib.Error = js.native
+  def createValidationError(args: objectionLib.objectionMod.ObjectionNs.CreateValidationErrorArgs): stdLib.Error = js.native
   def createValidator(): objectionLib.objectionMod.ObjectionNs.Validator = js.native
   def fetchTableMetadata(): js.Promise[objectionLib.objectionMod.ObjectionNs.TableMetadata] = js.native
   def fetchTableMetadata(opt: objectionLib.objectionMod.ObjectionNs.FetchTableMetadataOptions): js.Promise[objectionLib.objectionMod.ObjectionNs.TableMetadata] = js.native

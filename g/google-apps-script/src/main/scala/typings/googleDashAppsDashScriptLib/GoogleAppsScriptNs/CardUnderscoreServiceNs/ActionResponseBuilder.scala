@@ -16,13 +16,13 @@ trait ActionResponseBuilder extends js.Object {
 object ActionResponseBuilder {
   @scala.inline
   def apply(
-    build: js.Function0[ActionResponse],
-    setNavigation: js.Function1[Navigation, ActionResponseBuilder],
-    setNotification: js.Function1[Notification, ActionResponseBuilder],
-    setOpenLink: js.Function1[OpenLink, ActionResponseBuilder],
-    setStateChanged: js.Function1[scala.Boolean, ActionResponseBuilder]
+    build: () => ActionResponse,
+    setNavigation: Navigation => ActionResponseBuilder,
+    setNotification: Notification => ActionResponseBuilder,
+    setOpenLink: OpenLink => ActionResponseBuilder,
+    setStateChanged: scala.Boolean => ActionResponseBuilder
   ): ActionResponseBuilder = {
-    val __obj = js.Dynamic.literal(build = build, setNavigation = setNavigation, setNotification = setNotification, setOpenLink = setOpenLink, setStateChanged = setStateChanged)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setNavigation = js.Any.fromFunction1(setNavigation), setNotification = js.Any.fromFunction1(setNotification), setOpenLink = js.Any.fromFunction1(setOpenLink), setStateChanged = js.Any.fromFunction1(setStateChanged))
   
     __obj.asInstanceOf[ActionResponseBuilder]
   }

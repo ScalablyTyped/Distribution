@@ -15,12 +15,12 @@ trait TemporalAmount extends js.Object {
 object TemporalAmount {
   @scala.inline
   def apply(
-    addTo: js.Function1[js.Any, js.Any],
-    get: js.Function1[TemporalUnit, scala.Double],
-    subtractFrom: js.Function1[js.Any, js.Any],
-    units: js.Function0[js.Array[TemporalUnit]]
+    addTo: js.Any => js.Any,
+    get: TemporalUnit => scala.Double,
+    subtractFrom: js.Any => js.Any,
+    units: () => js.Array[TemporalUnit]
   ): TemporalAmount = {
-    val __obj = js.Dynamic.literal(addTo = addTo, get = get, subtractFrom = subtractFrom, units = units)
+    val __obj = js.Dynamic.literal(addTo = js.Any.fromFunction1(addTo), get = js.Any.fromFunction1(get), subtractFrom = js.Any.fromFunction1(subtractFrom), units = js.Any.fromFunction0(units))
   
     __obj.asInstanceOf[TemporalAmount]
   }

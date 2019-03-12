@@ -72,17 +72,17 @@ object Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCURLDOWN {
     FLIP_FROM_LEFT: scala.Double,
     FLIP_FROM_RIGHT: scala.Double,
     NONE: scala.Double,
-    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
     apiName: java.lang.String,
-    applyProperties: js.Function1[js.Any, scala.Unit],
+    applyProperties: js.Any => scala.Unit,
     bubbleParent: scala.Boolean,
-    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
-    getApiName: js.Function0[java.lang.String],
-    getBubbleParent: js.Function0[scala.Boolean],
-    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
-    setBubbleParent: js.Function1[scala.Boolean, scala.Unit]
+    fireEvent: (java.lang.String, js.Any) => scala.Unit,
+    getApiName: () => java.lang.String,
+    getBubbleParent: () => scala.Boolean,
+    removeEventListener: (java.lang.String, js.Function1[/* param0 */ js.Any, _]) => scala.Unit,
+    setBubbleParent: scala.Boolean => scala.Unit
   ): Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCURLDOWN = {
-    val __obj = js.Dynamic.literal(CURL_DOWN = CURL_DOWN, CURL_UP = CURL_UP, FLIP_FROM_LEFT = FLIP_FROM_LEFT, FLIP_FROM_RIGHT = FLIP_FROM_RIGHT, NONE = NONE, addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, removeEventListener = removeEventListener, setBubbleParent = setBubbleParent)
+    val __obj = js.Dynamic.literal(CURL_DOWN = CURL_DOWN, CURL_UP = CURL_UP, FLIP_FROM_LEFT = FLIP_FROM_LEFT, FLIP_FROM_RIGHT = FLIP_FROM_RIGHT, NONE = NONE, addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent))
   
     __obj.asInstanceOf[Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCURLDOWN]
   }

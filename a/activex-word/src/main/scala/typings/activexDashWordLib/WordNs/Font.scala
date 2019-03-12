@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 class Font protected () extends js.Object {
   var AllCaps: scala.Boolean | WdConstants = js.native
   var Animation: WdAnimation = js.native
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var Bold: scala.Boolean | WdConstants = js.native
   var BoldBi: scala.Boolean | WdConstants = js.native
-  var Borders: Borders = js.native
+  var Borders: activexDashWordLib.WordNs.Borders = js.native
   var Color: WdColor = js.native
   var ColorIndex: WdColorIndex = js.native
   var ColorIndexBi: WdColorIndex = js.native
@@ -46,7 +46,7 @@ class Font protected () extends js.Object {
   var Position: scala.Double = js.native
   var Reflection: ReflectionFormat = js.native
   var Scaling: scala.Double = js.native
-  val Shading: Shading = js.native
+  val Shading: activexDashWordLib.WordNs.Shading = js.native
   var Shadow: scala.Double = js.native
   var Size: scala.Double = js.native
   var SizeBi: scala.Double = js.native

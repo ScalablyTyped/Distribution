@@ -32,12 +32,12 @@ object VersionInfo {
   def apply(
     access: java.lang.String,
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     name: java.lang.String,
     parent: java.lang.String,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): VersionInfo = {
-    val __obj = js.Dynamic.literal(access = access, constructor = constructor, hasOwnProperty = hasOwnProperty, name = name, parent = parent, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(access = access, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, parent = parent, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[VersionInfo]
   }

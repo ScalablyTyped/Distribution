@@ -16,13 +16,13 @@ trait Anon_BackoffConnected extends js.Object {
 object Anon_BackoffConnected {
   @scala.inline
   def apply(
-    backoff: js.Function0[scala.Unit],
-    connected: js.Function1[js.Any, scala.Unit],
-    refused: js.Function0[scala.Unit],
-    retry: js.Function0[scala.Unit],
-    ssl_only: js.Function0[scala.Unit]
+    backoff: () => scala.Unit,
+    connected: js.Any => scala.Unit,
+    refused: () => scala.Unit,
+    retry: () => scala.Unit,
+    ssl_only: () => scala.Unit
   ): Anon_BackoffConnected = {
-    val __obj = js.Dynamic.literal(backoff = backoff, connected = connected, refused = refused, retry = retry, ssl_only = ssl_only)
+    val __obj = js.Dynamic.literal(backoff = js.Any.fromFunction0(backoff), connected = js.Any.fromFunction1(connected), refused = js.Any.fromFunction0(refused), retry = js.Any.fromFunction0(retry), ssl_only = js.Any.fromFunction0(ssl_only))
   
     __obj.asInstanceOf[Anon_BackoffConnected]
   }

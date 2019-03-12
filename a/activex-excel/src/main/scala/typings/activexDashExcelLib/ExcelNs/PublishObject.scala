@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.PublishObject")
 @js.native
 class PublishObject protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var AutoRepublish: scala.Boolean = js.native
   val Creator: XlCreator = js.native
   val DivID: java.lang.String = js.native

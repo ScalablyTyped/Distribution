@@ -25,24 +25,12 @@ trait Anon_Action extends js.Object {
 object Anon_Action {
   @scala.inline
   def apply(
-    addEventListener: js.Function4[
-      stdLib.HTMLElement, 
-      java.lang.String, 
-      js.Function1[/* event */ js.UndefOr[stdLib.Event], scala.Unit], 
-      scala.Boolean, 
-      js.Function1[/* event */ js.UndefOr[stdLib.Event], scala.Unit]
-    ],
-    preventDefault: js.Function1[stdLib.Event, scala.Unit],
-    removeEventListener: js.Function4[
-      stdLib.HTMLElement, 
-      java.lang.String, 
-      js.Function1[/* event */ js.UndefOr[stdLib.Event], scala.Unit], 
-      scala.Boolean, 
-      scala.Unit
-    ],
-    stopPropagation: js.Function1[stdLib.Event, scala.Unit]
+    addEventListener: (stdLib.HTMLElement, java.lang.String, js.Function1[/* event */ js.UndefOr[stdLib.Event], scala.Unit], scala.Boolean) => js.Function1[/* event */ js.UndefOr[stdLib.Event], scala.Unit],
+    preventDefault: stdLib.Event => scala.Unit,
+    removeEventListener: (stdLib.HTMLElement, java.lang.String, js.Function1[/* event */ js.UndefOr[stdLib.Event], scala.Unit], scala.Boolean) => scala.Unit,
+    stopPropagation: stdLib.Event => scala.Unit
   ): Anon_Action = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, preventDefault = preventDefault, removeEventListener = removeEventListener, stopPropagation = stopPropagation)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction4(addEventListener), preventDefault = js.Any.fromFunction1(preventDefault), removeEventListener = js.Any.fromFunction4(removeEventListener), stopPropagation = js.Any.fromFunction1(stopPropagation))
   
     __obj.asInstanceOf[Anon_Action]
   }

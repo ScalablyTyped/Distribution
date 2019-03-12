@@ -29,44 +29,17 @@ trait DevicesResource extends js.Object {
 object DevicesResource {
   @scala.inline
   def apply(
-    claim: js.Function1[
-      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ClaimDeviceResponse]
-    ],
-    claimAsync: js.Function1[
-      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    findByIdentifier: js.Function1[
-      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FindDevicesByDeviceIdentifierResponse]
-    ],
-    findByOwner: js.Function1[
-      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FindDevicesByOwnerResponse]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Device]
-    ],
-    metadata: js.Function1[
-      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DeviceMetadata]
-    ],
-    unclaim: js.Function1[
-      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    unclaimAsync: js.Function1[
-      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    updateMetadataAsync: js.Function1[
-      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    claim: gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ClaimDeviceResponse],
+    claimAsync: gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    findByIdentifier: gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[FindDevicesByDeviceIdentifierResponse],
+    findByOwner: gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[FindDevicesByOwnerResponse],
+    get: gapiDotClientDotAndroiddeviceprovisioningLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Device],
+    metadata: gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[DeviceMetadata],
+    unclaim: gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    unclaimAsync: gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    updateMetadataAsync: gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): DevicesResource = {
-    val __obj = js.Dynamic.literal(claim = claim, claimAsync = claimAsync, findByIdentifier = findByIdentifier, findByOwner = findByOwner, get = get, metadata = metadata, unclaim = unclaim, unclaimAsync = unclaimAsync, updateMetadataAsync = updateMetadataAsync)
+    val __obj = js.Dynamic.literal(claim = js.Any.fromFunction1(claim), claimAsync = js.Any.fromFunction1(claimAsync), findByIdentifier = js.Any.fromFunction1(findByIdentifier), findByOwner = js.Any.fromFunction1(findByOwner), get = js.Any.fromFunction1(get), metadata = js.Any.fromFunction1(metadata), unclaim = js.Any.fromFunction1(unclaim), unclaimAsync = js.Any.fromFunction1(unclaimAsync), updateMetadataAsync = js.Any.fromFunction1(updateMetadataAsync))
   
     __obj.asInstanceOf[DevicesResource]
   }

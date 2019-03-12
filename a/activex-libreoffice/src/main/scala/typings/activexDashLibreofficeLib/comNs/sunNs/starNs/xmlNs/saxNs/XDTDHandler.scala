@@ -30,13 +30,13 @@ trait XDTDHandler
 object XDTDHandler {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    notationDecl: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    unparsedEntityDecl: js.Function4[java.lang.String, java.lang.String, java.lang.String, java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    notationDecl: (java.lang.String, java.lang.String, java.lang.String) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    unparsedEntityDecl: (java.lang.String, java.lang.String, java.lang.String, java.lang.String) => scala.Unit
   ): XDTDHandler = {
-    val __obj = js.Dynamic.literal(acquire = acquire, notationDecl = notationDecl, queryInterface = queryInterface, release = release, unparsedEntityDecl = unparsedEntityDecl)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), notationDecl = js.Any.fromFunction3(notationDecl), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), unparsedEntityDecl = js.Any.fromFunction4(unparsedEntityDecl))
   
     __obj.asInstanceOf[XDTDHandler]
   }

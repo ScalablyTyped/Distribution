@@ -25,24 +25,16 @@ trait Assertion extends js.Object {
 object Assertion {
   @scala.inline
   def apply(
-    afterDate: js.Function1[chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, Assertion],
-    afterTime: js.Function1[chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, Assertion],
-    beforeDate: js.Function1[chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, Assertion],
-    beforeTime: js.Function1[chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, Assertion],
-    equalDate: js.Function1[chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, Assertion],
-    equalTime: js.Function1[chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, Assertion],
-    withinDate: js.Function2[
-      chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, 
-      chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, 
-      Assertion
-    ],
-    withinTime: js.Function2[
-      chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, 
-      chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, 
-      Assertion
-    ]
+    afterDate: chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date => Assertion,
+    afterTime: chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date => Assertion,
+    beforeDate: chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date => Assertion,
+    beforeTime: chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date => Assertion,
+    equalDate: chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date => Assertion,
+    equalTime: chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date => Assertion,
+    withinDate: (chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date) => Assertion,
+    withinTime: (chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date) => Assertion
   ): Assertion = {
-    val __obj = js.Dynamic.literal(afterDate = afterDate, afterTime = afterTime, beforeDate = beforeDate, beforeTime = beforeTime, equalDate = equalDate, equalTime = equalTime, withinDate = withinDate, withinTime = withinTime)
+    val __obj = js.Dynamic.literal(afterDate = js.Any.fromFunction1(afterDate), afterTime = js.Any.fromFunction1(afterTime), beforeDate = js.Any.fromFunction1(beforeDate), beforeTime = js.Any.fromFunction1(beforeTime), equalDate = js.Any.fromFunction1(equalDate), equalTime = js.Any.fromFunction1(equalTime), withinDate = js.Any.fromFunction2(withinDate), withinTime = js.Any.fromFunction2(withinTime))
   
     __obj.asInstanceOf[Assertion]
   }

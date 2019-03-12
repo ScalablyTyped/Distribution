@@ -14,14 +14,14 @@ trait XHierarchicalNameReplace extends XHierarchicalNameAccess {
 object XHierarchicalNameReplace {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getByHierarchicalName: js.Function1[java.lang.String, js.Any],
-    hasByHierarchicalName: js.Function1[java.lang.String, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    replaceByHierarchicalName: js.Function2[java.lang.String, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    getByHierarchicalName: java.lang.String => js.Any,
+    hasByHierarchicalName: java.lang.String => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    replaceByHierarchicalName: (java.lang.String, js.Any) => scala.Unit
   ): XHierarchicalNameReplace = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getByHierarchicalName = getByHierarchicalName, hasByHierarchicalName = hasByHierarchicalName, queryInterface = queryInterface, release = release, replaceByHierarchicalName = replaceByHierarchicalName)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getByHierarchicalName = js.Any.fromFunction1(getByHierarchicalName), hasByHierarchicalName = js.Any.fromFunction1(hasByHierarchicalName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), replaceByHierarchicalName = js.Any.fromFunction2(replaceByHierarchicalName))
   
     __obj.asInstanceOf[XHierarchicalNameReplace]
   }

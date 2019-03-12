@@ -14,11 +14,11 @@ trait JdbcSQLXML extends js.Object {
 object JdbcSQLXML {
   @scala.inline
   def apply(
-    free: js.Function0[scala.Unit],
-    getString: js.Function0[java.lang.String],
-    setString: js.Function1[java.lang.String, scala.Unit]
+    free: () => scala.Unit,
+    getString: () => java.lang.String,
+    setString: java.lang.String => scala.Unit
   ): JdbcSQLXML = {
-    val __obj = js.Dynamic.literal(free = free, getString = getString, setString = setString)
+    val __obj = js.Dynamic.literal(free = js.Any.fromFunction0(free), getString = js.Any.fromFunction0(getString), setString = js.Any.fromFunction1(setString))
   
     __obj.asInstanceOf[JdbcSQLXML]
   }

@@ -12,12 +12,9 @@ trait Anon_Format extends js.Object {
 
 object Anon_Format {
   @scala.inline
-  def apply(
-    format: js.Function1[/* str */ java.lang.String, java.lang.String] = null,
-    text: java.lang.String = null
-  ): Anon_Format = {
+  def apply(format: /* str */ java.lang.String => java.lang.String = null, text: java.lang.String = null): Anon_Format = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction1(format))
     if (text != null) __obj.updateDynamic("text")(text)
     __obj.asInstanceOf[Anon_Format]
   }

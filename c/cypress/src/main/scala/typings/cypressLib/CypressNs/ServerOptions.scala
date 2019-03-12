@@ -32,15 +32,15 @@ object ServerOptions {
     force404: scala.Boolean,
     headers: js.Object,
     method: HttpMethod,
-    onAbort: js.Function1[/* repeated */ js.Any, scala.Unit],
-    onRequest: js.Function1[/* repeated */ js.Any, scala.Unit],
-    onResponse: js.Function1[/* repeated */ js.Any, scala.Unit],
+    onAbort: /* repeated */ js.Any => scala.Unit,
+    onRequest: /* repeated */ js.Any => scala.Unit,
+    onResponse: /* repeated */ js.Any => scala.Unit,
     response: js.Any,
     status: scala.Double,
     urlMatchingOptions: js.Object,
-    whitelist: js.Function1[stdLib.Request, scala.Unit]
+    whitelist: stdLib.Request => scala.Unit
   ): ServerOptions = {
-    val __obj = js.Dynamic.literal(delay = delay, enable = enable, force404 = force404, headers = headers, method = method, onAbort = onAbort, onRequest = onRequest, onResponse = onResponse, response = response, status = status, urlMatchingOptions = urlMatchingOptions, whitelist = whitelist)
+    val __obj = js.Dynamic.literal(delay = delay, enable = enable, force404 = force404, headers = headers, method = method, onAbort = js.Any.fromFunction1(onAbort), onRequest = js.Any.fromFunction1(onRequest), onResponse = js.Any.fromFunction1(onResponse), response = response, status = status, urlMatchingOptions = urlMatchingOptions, whitelist = js.Any.fromFunction1(whitelist))
   
     __obj.asInstanceOf[ServerOptions]
   }

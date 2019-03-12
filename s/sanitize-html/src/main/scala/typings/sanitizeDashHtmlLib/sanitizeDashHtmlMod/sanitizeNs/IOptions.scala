@@ -42,7 +42,7 @@ object IOptions {
     allowedSchemesByTag: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] | scala.Boolean = null,
     allowedStyles: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Array[stdLib.RegExp]]] = null,
     allowedTags: js.Array[java.lang.String] | scala.Boolean = null,
-    exclusiveFilter: js.Function1[/* frame */ IFrame, scala.Boolean] = null,
+    exclusiveFilter: /* frame */ IFrame => scala.Boolean = null,
     nonTextTags: js.Array[java.lang.String] = null,
     parser: htmlparser2Lib.htmlparser2Mod.Options = null,
     selfClosing: js.Array[java.lang.String] = null,
@@ -58,7 +58,7 @@ object IOptions {
     if (allowedSchemesByTag != null) __obj.updateDynamic("allowedSchemesByTag")(allowedSchemesByTag.asInstanceOf[js.Any])
     if (allowedStyles != null) __obj.updateDynamic("allowedStyles")(allowedStyles)
     if (allowedTags != null) __obj.updateDynamic("allowedTags")(allowedTags.asInstanceOf[js.Any])
-    if (exclusiveFilter != null) __obj.updateDynamic("exclusiveFilter")(exclusiveFilter)
+    if (exclusiveFilter != null) __obj.updateDynamic("exclusiveFilter")(js.Any.fromFunction1(exclusiveFilter))
     if (nonTextTags != null) __obj.updateDynamic("nonTextTags")(nonTextTags)
     if (parser != null) __obj.updateDynamic("parser")(parser)
     if (selfClosing != null) __obj.updateDynamic("selfClosing")(selfClosing)

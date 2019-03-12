@@ -14,13 +14,13 @@ object XUniversalShapeDescriptor {
   @scala.inline
   def apply(
     ShapeType: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getShapeType: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setShapeType: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getShapeType: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setShapeType: java.lang.String => scala.Unit
   ): XUniversalShapeDescriptor = {
-    val __obj = js.Dynamic.literal(ShapeType = ShapeType, acquire = acquire, getShapeType = getShapeType, queryInterface = queryInterface, release = release, setShapeType = setShapeType)
+    val __obj = js.Dynamic.literal(ShapeType = ShapeType, acquire = js.Any.fromFunction0(acquire), getShapeType = js.Any.fromFunction0(getShapeType), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setShapeType = js.Any.fromFunction1(setShapeType))
   
     __obj.asInstanceOf[XUniversalShapeDescriptor]
   }

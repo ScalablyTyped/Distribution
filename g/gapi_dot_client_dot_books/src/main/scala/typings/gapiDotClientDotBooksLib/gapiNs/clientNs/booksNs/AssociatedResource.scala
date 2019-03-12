@@ -13,12 +13,9 @@ trait AssociatedResource extends js.Object {
 object AssociatedResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltAssociation, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Volumes]
-    ]
+    list: gapiDotClientDotBooksLib.Anon_AltAssociation => gapiDotClientLib.gapiNs.clientNs.Request[Volumes]
   ): AssociatedResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[AssociatedResource]
   }

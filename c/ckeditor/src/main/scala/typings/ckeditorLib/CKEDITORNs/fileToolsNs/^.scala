@@ -9,12 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var isFileUploadSupported: scala.Boolean = js.native
-  def addUploadWidget(
-    editor: ckeditorLib.CKEDITORNs.editor,
-    name: java.lang.String,
-    `def`: ckeditorLib.CKEDITORNs.fileToolsNs.uploadWidgetDefinition
-  ): scala.Unit = js.native
-  def bindNotification(editor: ckeditorLib.CKEDITORNs.editor, fileLoader: ckeditorLib.CKEDITORNs.fileToolsNs.fileLoader): scala.Unit = js.native
+  def addUploadWidget(editor: ckeditorLib.CKEDITORNs.editor, name: java.lang.String, `def`: uploadWidgetDefinition): scala.Unit = js.native
+  def bindNotification(editor: ckeditorLib.CKEDITORNs.editor, fileLoader: fileLoader): scala.Unit = js.native
   def getUploadUrl(config: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
   def getUploadUrl(config: org.scalablytyped.runtime.StringDictionary[js.Any], `type`: java.lang.String): java.lang.String = js.native
   def isTypeSupported(file: stdLib.Blob, supportedTypes: stdLib.RegExp): scala.Boolean = js.native

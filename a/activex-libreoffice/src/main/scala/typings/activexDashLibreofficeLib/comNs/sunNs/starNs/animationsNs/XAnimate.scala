@@ -50,7 +50,7 @@ trait XAnimate extends XAnimationNode {
     * @see http://www.w3.org/TR/smil20/animation.html#adef-from
     */
   var From: js.Any
-  var KeyTimes: activexDashInteropLib.SafeArray[scala.Double]
+  var KeyTimes: stdLib.SafeArray[scala.Double]
   /**
     * This attribute specifies an optional subitem from the target element that should be animated. ;  A value of zero should always be the default and
     * animate the complete target. ;  See documentation of used animation engine for supported subitems.
@@ -59,7 +59,7 @@ trait XAnimate extends XAnimationNode {
   /** This attribute specifies the target element to be animated. ;  See documentation of used animation engine for supported targets. */
   var Target: js.Any
   /** todo: timeFilter="0,0; 0.14,0.36; 0.43,0.73; 0.71,0.91; 1.0,1.0" ? */
-  var TimeFilter: activexDashInteropLib.SafeArray[TimeFilterPair]
+  var TimeFilter: stdLib.SafeArray[TimeFilterPair]
   /**
     * Specifies the ending value of the animation. ;  Must be a legal value for the specified attribute. Ignored if the {@link Values} attribute is
     * specified.
@@ -72,7 +72,7 @@ trait XAnimate extends XAnimationNode {
     * A sequence of one or more values, each of which must be a legal value for the specified attribute.
     * @see http://www.w3.org/TR/smil20/animation.html#adef-values
     */
-  var Values: activexDashInteropLib.SafeArray[_]
+  var Values: stdLib.SafeArray[_]
 }
 
 object XAnimate {
@@ -94,7 +94,7 @@ object XAnimate {
     FillDefault: scala.Double,
     Formula: java.lang.String,
     From: js.Any,
-    KeyTimes: activexDashInteropLib.SafeArray[scala.Double],
+    KeyTimes: stdLib.SafeArray[scala.Double],
     Parent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     RepeatCount: js.Any,
     RepeatDuration: js.Any,
@@ -102,19 +102,19 @@ object XAnimate {
     RestartDefault: scala.Double,
     SubItem: scala.Double,
     Target: js.Any,
-    TimeFilter: activexDashInteropLib.SafeArray[TimeFilterPair],
+    TimeFilter: stdLib.SafeArray[TimeFilterPair],
     To: js.Any,
     Type: scala.Double,
-    UserData: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    UserData: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
     ValueType: scala.Double,
-    Values: activexDashInteropLib.SafeArray[_],
-    acquire: js.Function0[scala.Unit],
-    getParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
+    Values: stdLib.SafeArray[_],
+    acquire: () => scala.Unit,
+    getParent: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setParent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => scala.Unit
   ): XAnimate = {
-    val __obj = js.Dynamic.literal(Acceleration = Acceleration, Accumulate = Accumulate, Additive = Additive, AttributeName = AttributeName, AutoReverse = AutoReverse, Begin = Begin, By = By, CalcMode = CalcMode, Decelerate = Decelerate, Duration = Duration, End = End, EndSync = EndSync, Fill = Fill, FillDefault = FillDefault, Formula = Formula, From = From, KeyTimes = KeyTimes, Parent = Parent, RepeatCount = RepeatCount, RepeatDuration = RepeatDuration, Restart = Restart, RestartDefault = RestartDefault, SubItem = SubItem, Target = Target, TimeFilter = TimeFilter, To = To, Type = Type, UserData = UserData, ValueType = ValueType, Values = Values, acquire = acquire, getParent = getParent, queryInterface = queryInterface, release = release, setParent = setParent)
+    val __obj = js.Dynamic.literal(Acceleration = Acceleration, Accumulate = Accumulate, Additive = Additive, AttributeName = AttributeName, AutoReverse = AutoReverse, Begin = Begin, By = By, CalcMode = CalcMode, Decelerate = Decelerate, Duration = Duration, End = End, EndSync = EndSync, Fill = Fill, FillDefault = FillDefault, Formula = Formula, From = From, KeyTimes = KeyTimes, Parent = Parent, RepeatCount = RepeatCount, RepeatDuration = RepeatDuration, Restart = Restart, RestartDefault = RestartDefault, SubItem = SubItem, Target = Target, TimeFilter = TimeFilter, To = To, Type = Type, UserData = UserData, ValueType = ValueType, Values = Values, acquire = js.Any.fromFunction0(acquire), getParent = js.Any.fromFunction0(getParent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setParent = js.Any.fromFunction1(setParent))
   
     __obj.asInstanceOf[XAnimate]
   }

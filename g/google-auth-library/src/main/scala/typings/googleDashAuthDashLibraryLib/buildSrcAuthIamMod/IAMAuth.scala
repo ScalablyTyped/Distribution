@@ -39,7 +39,7 @@ class IAMAuth protected () extends js.Object {
   def getRequestMetadata(
     unusedUri: java.lang.String,
     metadataFn: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* metadata */ js.UndefOr[RequestMetadata], 
       scala.Unit
     ]
@@ -47,7 +47,7 @@ class IAMAuth protected () extends js.Object {
   def getRequestMetadata(
     unusedUri: scala.Null,
     metadataFn: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* metadata */ js.UndefOr[RequestMetadata], 
       scala.Unit
     ]

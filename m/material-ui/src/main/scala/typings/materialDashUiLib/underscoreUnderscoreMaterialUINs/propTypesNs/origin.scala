@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait origin extends js.Object {
-  var horizontal: horizontal
-  var vertical: vertical
+  var horizontal: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.horizontal
+  var vertical: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.vertical
 }
 
 object origin {

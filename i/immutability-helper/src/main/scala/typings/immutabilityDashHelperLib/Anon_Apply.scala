@@ -13,8 +13,8 @@ trait Anon_Apply[T]
 
 object Anon_Apply {
   @scala.inline
-  def apply[T]($apply: js.Function1[T, T]): Anon_Apply[T] = {
-    val __obj = js.Dynamic.literal($apply = $apply)
+  def apply[T]($apply: T => T): Anon_Apply[T] = {
+    val __obj = js.Dynamic.literal($apply = js.Any.fromFunction1($apply))
   
     __obj.asInstanceOf[Anon_Apply[T]]
   }

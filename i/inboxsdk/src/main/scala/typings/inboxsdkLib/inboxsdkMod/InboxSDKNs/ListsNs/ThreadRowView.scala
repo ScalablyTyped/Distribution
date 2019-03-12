@@ -36,26 +36,26 @@ trait ThreadRowView extends js.Object {
 object ThreadRowView {
   @scala.inline
   def apply(
-    addActionButton: js.Function1[ThreadRowActionButtonDescriptor, scala.Unit],
-    addAttachmentIcon: js.Function1[ThreadRowAttachmentIconDescriptor, scala.Unit],
-    addButton: js.Function1[ThreadRowButtonDescriptor, scala.Unit],
-    addImage: js.Function1[ImageDescriptor, scala.Unit],
-    addLabel: js.Function1[LabelDescriptor, scala.Unit],
+    addActionButton: ThreadRowActionButtonDescriptor => scala.Unit,
+    addAttachmentIcon: ThreadRowAttachmentIconDescriptor => scala.Unit,
+    addButton: ThreadRowButtonDescriptor => scala.Unit,
+    addImage: ImageDescriptor => scala.Unit,
+    addLabel: LabelDescriptor => scala.Unit,
     destroyed: scala.Boolean,
-    getContacts: js.Function0[js.Array[inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.Contact]],
-    getDateString: js.Function0[java.lang.String],
-    getDraftID: js.Function0[js.Promise[java.lang.String]],
-    getSubject: js.Function0[java.lang.String],
-    getThreadIDAsync: js.Function0[js.Promise[java.lang.String]],
-    getThreadIDIfStableAsync: js.Function0[js.Promise[java.lang.String | scala.Null]],
-    getVisibleDraftCount: js.Function0[scala.Double],
-    getVisibleMessageCount: js.Function0[scala.Double],
-    on_destroy: js.Function2[inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit], scala.Unit],
-    replaceDate: js.Function1[ThreadRowDateDescriptor, scala.Unit],
-    replaceDraftLabel: js.Function1[ThreadRowDraftLabelDescriptor, scala.Unit]
+    getContacts: () => js.Array[inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.Contact],
+    getDateString: () => java.lang.String,
+    getDraftID: () => js.Promise[java.lang.String],
+    getSubject: () => java.lang.String,
+    getThreadIDAsync: () => js.Promise[java.lang.String],
+    getThreadIDIfStableAsync: () => js.Promise[java.lang.String | scala.Null],
+    getVisibleDraftCount: () => scala.Double,
+    getVisibleMessageCount: () => scala.Double,
+    on_destroy: (inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit]) => scala.Unit,
+    replaceDate: ThreadRowDateDescriptor => scala.Unit,
+    replaceDraftLabel: ThreadRowDraftLabelDescriptor => scala.Unit
   ): ThreadRowView = {
-    val __obj = js.Dynamic.literal(addActionButton = addActionButton, addAttachmentIcon = addAttachmentIcon, addButton = addButton, addImage = addImage, addLabel = addLabel, destroyed = destroyed, getContacts = getContacts, getDateString = getDateString, getDraftID = getDraftID, getSubject = getSubject, getThreadIDAsync = getThreadIDAsync, getThreadIDIfStableAsync = getThreadIDIfStableAsync, getVisibleDraftCount = getVisibleDraftCount, getVisibleMessageCount = getVisibleMessageCount, replaceDate = replaceDate, replaceDraftLabel = replaceDraftLabel)
-    __obj.updateDynamic("on")(on_destroy)
+    val __obj = js.Dynamic.literal(addActionButton = js.Any.fromFunction1(addActionButton), addAttachmentIcon = js.Any.fromFunction1(addAttachmentIcon), addButton = js.Any.fromFunction1(addButton), addImage = js.Any.fromFunction1(addImage), addLabel = js.Any.fromFunction1(addLabel), destroyed = destroyed, getContacts = js.Any.fromFunction0(getContacts), getDateString = js.Any.fromFunction0(getDateString), getDraftID = js.Any.fromFunction0(getDraftID), getSubject = js.Any.fromFunction0(getSubject), getThreadIDAsync = js.Any.fromFunction0(getThreadIDAsync), getThreadIDIfStableAsync = js.Any.fromFunction0(getThreadIDIfStableAsync), getVisibleDraftCount = js.Any.fromFunction0(getVisibleDraftCount), getVisibleMessageCount = js.Any.fromFunction0(getVisibleMessageCount), replaceDate = js.Any.fromFunction1(replaceDate), replaceDraftLabel = js.Any.fromFunction1(replaceDraftLabel))
+    __obj.updateDynamic("on")(js.Any.fromFunction2(on_destroy))
     __obj.asInstanceOf[ThreadRowView]
   }
 }

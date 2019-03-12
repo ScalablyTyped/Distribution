@@ -15,16 +15,10 @@ trait ConversionsResource extends js.Object {
 object ConversionsResource {
   @scala.inline
   def apply(
-    batchinsert: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ConversionsBatchInsertResponse]
-    ],
-    batchupdate: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ConversionsBatchUpdateResponse]
-    ]
+    batchinsert: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[ConversionsBatchInsertResponse],
+    batchupdate: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[ConversionsBatchUpdateResponse]
   ): ConversionsResource = {
-    val __obj = js.Dynamic.literal(batchinsert = batchinsert, batchupdate = batchupdate)
+    val __obj = js.Dynamic.literal(batchinsert = js.Any.fromFunction1(batchinsert), batchupdate = js.Any.fromFunction1(batchupdate))
   
     __obj.asInstanceOf[ConversionsResource]
   }

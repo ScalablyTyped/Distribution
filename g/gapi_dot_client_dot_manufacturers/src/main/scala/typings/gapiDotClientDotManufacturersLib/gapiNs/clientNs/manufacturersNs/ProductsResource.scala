@@ -40,24 +40,12 @@ trait ProductsResource extends js.Object {
 object ProductsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotManufacturersLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotManufacturersLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Product]
-    ],
-    list: js.Function1[
-      gapiDotClientDotManufacturersLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListProductsResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotManufacturersLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Product]
-    ]
+    delete: gapiDotClientDotManufacturersLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotManufacturersLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Product],
+    list: gapiDotClientDotManufacturersLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[ListProductsResponse],
+    update: gapiDotClientDotManufacturersLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Product]
   ): ProductsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[ProductsResource]
   }

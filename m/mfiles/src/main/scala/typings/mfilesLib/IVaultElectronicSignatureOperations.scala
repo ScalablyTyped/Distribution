@@ -21,14 +21,14 @@ trait IVaultElectronicSignatureOperations extends js.Object {
 object IVaultElectronicSignatureOperations {
   @scala.inline
   def apply(
-    AddEmptySignature: js.Function2[IObjVer, java.lang.String, IObjectVersionAndProperties],
-    AddEmptySignatures: js.Function1[IObjVer, IObjectVersionAndProperties],
-    DisconnectSignature: js.Function2[IObjVer, java.lang.String, IObjectVersionAndProperties],
-    DisconnectSignatureEx: js.Function3[IObjVer, java.lang.String, scala.Boolean, IObjectVersionAndProperties],
-    DisconnectSignatures: js.Function1[IObjVer, IObjectVersionAndProperties],
-    DisconnectSignaturesEx: js.Function2[IObjVer, scala.Boolean, IObjectVersionAndProperties]
+    AddEmptySignature: (IObjVer, java.lang.String) => IObjectVersionAndProperties,
+    AddEmptySignatures: IObjVer => IObjectVersionAndProperties,
+    DisconnectSignature: (IObjVer, java.lang.String) => IObjectVersionAndProperties,
+    DisconnectSignatureEx: (IObjVer, java.lang.String, scala.Boolean) => IObjectVersionAndProperties,
+    DisconnectSignatures: IObjVer => IObjectVersionAndProperties,
+    DisconnectSignaturesEx: (IObjVer, scala.Boolean) => IObjectVersionAndProperties
   ): IVaultElectronicSignatureOperations = {
-    val __obj = js.Dynamic.literal(AddEmptySignature = AddEmptySignature, AddEmptySignatures = AddEmptySignatures, DisconnectSignature = DisconnectSignature, DisconnectSignatureEx = DisconnectSignatureEx, DisconnectSignatures = DisconnectSignatures, DisconnectSignaturesEx = DisconnectSignaturesEx)
+    val __obj = js.Dynamic.literal(AddEmptySignature = js.Any.fromFunction2(AddEmptySignature), AddEmptySignatures = js.Any.fromFunction1(AddEmptySignatures), DisconnectSignature = js.Any.fromFunction2(DisconnectSignature), DisconnectSignatureEx = js.Any.fromFunction3(DisconnectSignatureEx), DisconnectSignatures = js.Any.fromFunction1(DisconnectSignatures), DisconnectSignaturesEx = js.Any.fromFunction2(DisconnectSignaturesEx))
   
     __obj.asInstanceOf[IVaultElectronicSignatureOperations]
   }

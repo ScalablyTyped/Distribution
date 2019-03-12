@@ -12,13 +12,8 @@ trait CseResource extends js.Object {
 
 object CseResource {
   @scala.inline
-  def apply(
-    list: js.Function1[
-      gapiDotClientDotCustomsearchLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Search]
-    ]
-  ): CseResource = {
-    val __obj = js.Dynamic.literal(list = list)
+  def apply(list: gapiDotClientDotCustomsearchLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Search]): CseResource = {
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[CseResource]
   }

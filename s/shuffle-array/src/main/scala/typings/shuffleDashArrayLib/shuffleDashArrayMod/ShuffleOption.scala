@@ -12,10 +12,10 @@ trait ShuffleOption extends js.Object {
 
 object ShuffleOption {
   @scala.inline
-  def apply(copy: js.UndefOr[scala.Boolean] = js.undefined, rng: js.Function0[scala.Double] = null): ShuffleOption = {
+  def apply(copy: js.UndefOr[scala.Boolean] = js.undefined, rng: () => scala.Double = null): ShuffleOption = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(copy)) __obj.updateDynamic("copy")(copy)
-    if (rng != null) __obj.updateDynamic("rng")(rng)
+    if (rng != null) __obj.updateDynamic("rng")(js.Any.fromFunction0(rng))
     __obj.asInstanceOf[ShuffleOption]
   }
 }

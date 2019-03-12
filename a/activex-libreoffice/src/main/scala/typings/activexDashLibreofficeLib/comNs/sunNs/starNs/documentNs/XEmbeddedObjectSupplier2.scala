@@ -32,13 +32,13 @@ object XEmbeddedObjectSupplier2 {
     EmbeddedObject: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent,
     ExtendedControlOverEmbeddedObject: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XEmbeddedObject,
     ReplacementGraphic: activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic,
-    acquire: js.Function0[scala.Unit],
-    getEmbeddedObject: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent],
-    getExtendedControlOverEmbeddedObject: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XEmbeddedObject],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getEmbeddedObject: () => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent,
+    getExtendedControlOverEmbeddedObject: () => activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XEmbeddedObject,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XEmbeddedObjectSupplier2 = {
-    val __obj = js.Dynamic.literal(Aspect = Aspect, EmbeddedObject = EmbeddedObject, ExtendedControlOverEmbeddedObject = ExtendedControlOverEmbeddedObject, ReplacementGraphic = ReplacementGraphic, acquire = acquire, getEmbeddedObject = getEmbeddedObject, getExtendedControlOverEmbeddedObject = getExtendedControlOverEmbeddedObject, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Aspect = Aspect, EmbeddedObject = EmbeddedObject, ExtendedControlOverEmbeddedObject = ExtendedControlOverEmbeddedObject, ReplacementGraphic = ReplacementGraphic, acquire = js.Any.fromFunction0(acquire), getEmbeddedObject = js.Any.fromFunction0(getEmbeddedObject), getExtendedControlOverEmbeddedObject = js.Any.fromFunction0(getExtendedControlOverEmbeddedObject), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XEmbeddedObjectSupplier2]
   }

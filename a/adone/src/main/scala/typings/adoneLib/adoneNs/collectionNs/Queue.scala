@@ -37,7 +37,7 @@ class Queue[S, T] () extends js.Object {
 @JSGlobal("adone.collection.Queue")
 @js.native
 object Queue extends js.Object {
-  def from[T](iterable: nodeLib.Iterable[T]): adoneLib.adoneNs.collectionNs.Queue[T, T] = js.native
-  def from[T](iterable: nodeLib.Iterable[T], length: scala.Double): adoneLib.adoneNs.collectionNs.Queue[T, T] = js.native
+  def from[T](iterable: stdLib.Iterable[T]): adoneLib.adoneNs.collectionNs.Queue[T, T] = js.native
+  def from[T](iterable: stdLib.Iterable[T], length: scala.Double): adoneLib.adoneNs.collectionNs.Queue[T, T] = js.native
 }
 

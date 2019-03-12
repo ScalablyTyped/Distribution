@@ -12,11 +12,8 @@ trait DomUtilityService extends js.Object {
 
 object DomUtilityService {
   @scala.inline
-  def apply(
-    BuildStyles: js.Function1[Grid[_], scala.Unit],
-    UpdateGridLayout: js.Function1[Grid[_], scala.Unit]
-  ): DomUtilityService = {
-    val __obj = js.Dynamic.literal(BuildStyles = BuildStyles, UpdateGridLayout = UpdateGridLayout)
+  def apply(BuildStyles: Grid[_] => scala.Unit, UpdateGridLayout: Grid[_] => scala.Unit): DomUtilityService = {
+    val __obj = js.Dynamic.literal(BuildStyles = js.Any.fromFunction1(BuildStyles), UpdateGridLayout = js.Any.fromFunction1(UpdateGridLayout))
   
     __obj.asInstanceOf[DomUtilityService]
   }

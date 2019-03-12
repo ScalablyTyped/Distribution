@@ -33,7 +33,7 @@ trait Hot extends js.Object {
     */
   def accept(dependency: java.lang.String): scala.Unit = js.native
   def accept(dependency: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
-  def accept(errHandler: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def accept(errHandler: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /**
     * Add a one time handler, which is executed when the current module code is replaced.
     * Here you should destroy/remove any persistent resource you have claimed/created.
@@ -53,7 +53,7 @@ trait Hot extends js.Object {
     */
   @JSName("apply")
   def apply(
-    callback: js.Function2[/* err */ nodeLib.Error, /* outdatedModules */ js.Array[ModuleId], scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* outdatedModules */ js.Array[ModuleId], scala.Unit]
   ): scala.Unit = js.native
   /**
     * If status() != "ready" it throws an error.
@@ -64,7 +64,7 @@ trait Hot extends js.Object {
   @JSName("apply")
   def apply(
     options: AcceptOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* outdatedModules */ js.Array[ModuleId], scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* outdatedModules */ js.Array[ModuleId], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Throws an exceptions if status() is not idle.
@@ -78,7 +78,7 @@ trait Hot extends js.Object {
     */
   def check(
     autoApply: scala.Boolean,
-    callback: js.Function2[/* err */ nodeLib.Error, /* outdatedModules */ js.Array[ModuleId], scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* outdatedModules */ js.Array[ModuleId], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Throws an exceptions if status() is not idle.
@@ -88,7 +88,7 @@ trait Hot extends js.Object {
     * @param callback
     */
   def check(
-    callback: js.Function2[/* err */ nodeLib.Error, /* outdatedModules */ js.Array[ModuleId], scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* outdatedModules */ js.Array[ModuleId], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Flag the current module as not update-able. If updated the update code would fail with code "decline".

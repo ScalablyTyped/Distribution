@@ -35,10 +35,10 @@ object IAlertOptions {
     controllerAs: java.lang.String = null,
     dismissable: js.UndefOr[scala.Boolean] = js.undefined,
     duration: scala.Double | scala.Boolean = null,
-    onBeforeHide: js.Function1[/* alert */ IAlert, scala.Unit] = null,
-    onBeforeShow: js.Function1[/* alert */ IAlert, scala.Unit] = null,
-    onHide: js.Function1[/* alert */ IAlert, scala.Unit] = null,
-    onShow: js.Function1[/* alert */ IAlert, scala.Unit] = null,
+    onBeforeHide: /* alert */ IAlert => scala.Unit = null,
+    onBeforeShow: /* alert */ IAlert => scala.Unit = null,
+    onHide: /* alert */ IAlert => scala.Unit = null,
+    onShow: /* alert */ IAlert => scala.Unit = null,
     placement: java.lang.String = null,
     show: js.UndefOr[scala.Boolean] = js.undefined,
     template: java.lang.String = null,
@@ -54,10 +54,10 @@ object IAlertOptions {
     if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs)
     if (!js.isUndefined(dismissable)) __obj.updateDynamic("dismissable")(dismissable)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(onBeforeHide)
-    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(onBeforeShow)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(js.Any.fromFunction1(onBeforeHide))
+    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(js.Any.fromFunction1(onBeforeShow))
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction1(onHide))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (placement != null) __obj.updateDynamic("placement")(placement)
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
     if (template != null) __obj.updateDynamic("template")(template)

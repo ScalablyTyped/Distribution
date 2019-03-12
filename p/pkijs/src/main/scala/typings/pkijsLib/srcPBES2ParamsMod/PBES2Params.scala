@@ -17,12 +17,12 @@ object PBES2Params {
   @scala.inline
   def apply(
     encryptionScheme: pkijsLib.srcAlgorithmIdentifierMod.default,
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     keyDerivationFunc: pkijsLib.srcAlgorithmIdentifierMod.default,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): PBES2Params = {
-    val __obj = js.Dynamic.literal(encryptionScheme = encryptionScheme, fromSchema = fromSchema, keyDerivationFunc = keyDerivationFunc, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(encryptionScheme = encryptionScheme, fromSchema = js.Any.fromFunction1(fromSchema), keyDerivationFunc = keyDerivationFunc, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[PBES2Params]
   }

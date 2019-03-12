@@ -39,14 +39,14 @@ object XStarBasicModuleInfo {
     Language: java.lang.String,
     Name: java.lang.String,
     Source: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getLanguage: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getSource: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getLanguage: () => java.lang.String,
+    getName: () => java.lang.String,
+    getSource: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XStarBasicModuleInfo = {
-    val __obj = js.Dynamic.literal(Language = Language, Name = Name, Source = Source, acquire = acquire, getLanguage = getLanguage, getName = getName, getSource = getSource, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Language = Language, Name = Name, Source = Source, acquire = js.Any.fromFunction0(acquire), getLanguage = js.Any.fromFunction0(getLanguage), getName = js.Any.fromFunction0(getName), getSource = js.Any.fromFunction0(getSource), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XStarBasicModuleInfo]
   }

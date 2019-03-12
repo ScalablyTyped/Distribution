@@ -31,13 +31,13 @@ trait Cubehelix extends js.Object {
 object Cubehelix {
   @scala.inline
   def apply(
-    gamma: js.Function1[scala.Double, Cubehelix],
-    lightness: js.Function1[js.Array[scala.Double], Cubehelix],
-    rotations: js.Function1[scala.Double, Cubehelix],
-    scale: js.Function0[Scale[Color]],
-    start: js.Function1[scala.Double, Cubehelix]
+    gamma: scala.Double => Cubehelix,
+    lightness: js.Array[scala.Double] => Cubehelix,
+    rotations: scala.Double => Cubehelix,
+    scale: () => Scale[Color],
+    start: scala.Double => Cubehelix
   ): Cubehelix = {
-    val __obj = js.Dynamic.literal(gamma = gamma, lightness = lightness, rotations = rotations, scale = scale, start = start)
+    val __obj = js.Dynamic.literal(gamma = js.Any.fromFunction1(gamma), lightness = js.Any.fromFunction1(lightness), rotations = js.Any.fromFunction1(rotations), scale = js.Any.fromFunction0(scale), start = js.Any.fromFunction1(start))
   
     __obj.asInstanceOf[Cubehelix]
   }

@@ -70,21 +70,21 @@ trait UICore extends js.Object {
 object UICore {
   @scala.inline
   def apply(
-    addValid: js.Function2[java.lang.String, js.Array[_], scala.Unit],
-    callAfter: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit],
-    callBefore: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit],
-    callDelay: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    emit: js.Function2[java.lang.String, js.Function0[scala.Unit], js.Any],
-    off: js.Function1[java.lang.String, scala.Unit],
-    on: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit],
-    setOption: js.Function2[java.lang.String, js.Any, scala.Unit],
-    setTpl: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    addValid: (java.lang.String, js.Array[_]) => scala.Unit,
+    callAfter: (java.lang.String, js.Function0[scala.Unit]) => scala.Unit,
+    callBefore: (java.lang.String, js.Function0[scala.Unit]) => scala.Unit,
+    callDelay: (java.lang.String, js.Function0[scala.Unit]) => scala.Unit,
+    destroy: () => scala.Unit,
+    emit: (java.lang.String, js.Function0[scala.Unit]) => js.Any,
+    off: java.lang.String => scala.Unit,
+    on: (java.lang.String, js.Function0[scala.Unit]) => scala.Unit,
+    setOption: (java.lang.String, js.Any) => scala.Unit,
+    setTpl: (java.lang.String, java.lang.String) => scala.Unit,
     event: js.Any = null,
     root: js.Any = null,
     tpl: js.Any = null
   ): UICore = {
-    val __obj = js.Dynamic.literal(addValid = addValid, callAfter = callAfter, callBefore = callBefore, callDelay = callDelay, destroy = destroy, emit = emit, off = off, on = on, setOption = setOption, setTpl = setTpl)
+    val __obj = js.Dynamic.literal(addValid = js.Any.fromFunction2(addValid), callAfter = js.Any.fromFunction2(callAfter), callBefore = js.Any.fromFunction2(callBefore), callDelay = js.Any.fromFunction2(callDelay), destroy = js.Any.fromFunction0(destroy), emit = js.Any.fromFunction2(emit), off = js.Any.fromFunction1(off), on = js.Any.fromFunction2(on), setOption = js.Any.fromFunction2(setOption), setTpl = js.Any.fromFunction2(setTpl))
     if (event != null) __obj.updateDynamic("event")(event)
     if (root != null) __obj.updateDynamic("root")(root)
     if (tpl != null) __obj.updateDynamic("tpl")(tpl)

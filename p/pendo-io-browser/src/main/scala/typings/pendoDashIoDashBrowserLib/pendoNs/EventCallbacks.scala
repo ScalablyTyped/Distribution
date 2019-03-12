@@ -14,14 +14,14 @@ trait EventCallbacks extends js.Object {
 object EventCallbacks {
   @scala.inline
   def apply(
-    guidesFailed: js.Function0[scala.Unit] = null,
-    guidesLoaded: js.Function0[scala.Unit] = null,
-    ready: js.Function0[scala.Unit] = null
+    guidesFailed: () => scala.Unit = null,
+    guidesLoaded: () => scala.Unit = null,
+    ready: () => scala.Unit = null
   ): EventCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (guidesFailed != null) __obj.updateDynamic("guidesFailed")(guidesFailed)
-    if (guidesLoaded != null) __obj.updateDynamic("guidesLoaded")(guidesLoaded)
-    if (ready != null) __obj.updateDynamic("ready")(ready)
+    if (guidesFailed != null) __obj.updateDynamic("guidesFailed")(js.Any.fromFunction0(guidesFailed))
+    if (guidesLoaded != null) __obj.updateDynamic("guidesLoaded")(js.Any.fromFunction0(guidesLoaded))
+    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction0(ready))
     __obj.asInstanceOf[EventCallbacks]
   }
 }

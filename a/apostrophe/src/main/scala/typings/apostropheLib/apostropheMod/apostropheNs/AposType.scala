@@ -17,14 +17,14 @@ object AposType {
   @scala.inline
   def apply(
     converters: apostropheLib.Anon_CallbackData,
-    index: js.Function3[js.Any, js.Any, js.Any, scala.Unit],
+    index: (js.Any, js.Any, js.Any) => scala.Unit,
     name: java.lang.String,
-    bless: js.Function2[/* req */ js.Any, /* field */ js.Any, scala.Unit] = null,
-    empty: js.Function2[/* field */ js.Any, /* value */ js.Any, scala.Unit] = null
+    bless: (/* req */ js.Any, /* field */ js.Any) => scala.Unit = null,
+    empty: (/* field */ js.Any, /* value */ js.Any) => scala.Unit = null
   ): AposType = {
-    val __obj = js.Dynamic.literal(converters = converters, index = index, name = name)
-    if (bless != null) __obj.updateDynamic("bless")(bless)
-    if (empty != null) __obj.updateDynamic("empty")(empty)
+    val __obj = js.Dynamic.literal(converters = converters, index = js.Any.fromFunction3(index), name = name)
+    if (bless != null) __obj.updateDynamic("bless")(js.Any.fromFunction2(bless))
+    if (empty != null) __obj.updateDynamic("empty")(js.Any.fromFunction2(empty))
     __obj.asInstanceOf[AposType]
   }
 }

@@ -14,7 +14,7 @@ trait Cache extends js.Object {
   def initialize(opts: js.Object): js.Object
   def isOpening(cacheIndex: js.Object): scala.Boolean
   def isPending(cacheIndex: js.Object): scala.Boolean
-  def reject(cacheIndex: js.Object, err: nodeLib.Error): scala.Unit
+  def reject(cacheIndex: js.Object, err: stdLib.Error): scala.Unit
   def remove(cacheIndex: js.Object): scala.Unit
   def resolve(cacheIndex: js.Object, db: mongodbLib.mongodbMod.Db, client: mongodbLib.mongodbMod.MongoClient): scala.Unit
   def set(cacheIndex: js.Object, value: js.Object): scala.Unit
@@ -24,21 +24,21 @@ trait Cache extends js.Object {
 object Cache {
   @scala.inline
   def apply(
-    clear: js.Function0[scala.Unit],
-    connections: js.Function0[scala.Double],
-    findUri: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    get: js.Function1[js.Object, js.Object],
-    has: js.Function1[js.Object, scala.Boolean],
-    initialize: js.Function1[js.Object, js.Object],
-    isOpening: js.Function1[js.Object, scala.Boolean],
-    isPending: js.Function1[js.Object, scala.Boolean],
-    reject: js.Function2[js.Object, nodeLib.Error, scala.Unit],
-    remove: js.Function1[js.Object, scala.Unit],
-    resolve: js.Function3[js.Object, mongodbLib.mongodbMod.Db, mongodbLib.mongodbMod.MongoClient, scala.Unit],
-    set: js.Function2[js.Object, js.Object, scala.Unit],
-    waitFor: js.Function1[js.Object, js.Promise[js.Object]]
+    clear: () => scala.Unit,
+    connections: () => scala.Double,
+    findUri: (java.lang.String, java.lang.String) => java.lang.String,
+    get: js.Object => js.Object,
+    has: js.Object => scala.Boolean,
+    initialize: js.Object => js.Object,
+    isOpening: js.Object => scala.Boolean,
+    isPending: js.Object => scala.Boolean,
+    reject: (js.Object, stdLib.Error) => scala.Unit,
+    remove: js.Object => scala.Unit,
+    resolve: (js.Object, mongodbLib.mongodbMod.Db, mongodbLib.mongodbMod.MongoClient) => scala.Unit,
+    set: (js.Object, js.Object) => scala.Unit,
+    waitFor: js.Object => js.Promise[js.Object]
   ): Cache = {
-    val __obj = js.Dynamic.literal(clear = clear, connections = connections, findUri = findUri, get = get, has = has, initialize = initialize, isOpening = isOpening, isPending = isPending, reject = reject, remove = remove, resolve = resolve, set = set, waitFor = waitFor)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), connections = js.Any.fromFunction0(connections), findUri = js.Any.fromFunction2(findUri), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), initialize = js.Any.fromFunction1(initialize), isOpening = js.Any.fromFunction1(isOpening), isPending = js.Any.fromFunction1(isPending), reject = js.Any.fromFunction2(reject), remove = js.Any.fromFunction1(remove), resolve = js.Any.fromFunction3(resolve), set = js.Any.fromFunction2(set), waitFor = js.Any.fromFunction1(waitFor))
   
     __obj.asInstanceOf[Cache]
   }

@@ -23,22 +23,14 @@ trait RelayProfiler extends js.Object {
 object RelayProfiler {
   @scala.inline
   def apply(
-    attachAggregateHandler: js.Function2[
-      java.lang.String, 
-      js.Function2[/* name */ java.lang.String, /* callback */ js.Function0[scala.Unit], scala.Unit], 
-      scala.Unit
-    ],
-    attachProfileHandler: js.Function2[
-      java.lang.String, 
-      js.Function2[
-        /* name */ java.lang.String, 
-        /* state */ js.UndefOr[js.Any], 
-        js.Function0[scala.Unit]
-      ], 
-      scala.Unit
-    ]
+    attachAggregateHandler: (java.lang.String, js.Function2[/* name */ java.lang.String, /* callback */ js.Function0[scala.Unit], scala.Unit]) => scala.Unit,
+    attachProfileHandler: (java.lang.String, js.Function2[
+      /* name */ java.lang.String, 
+      /* state */ js.UndefOr[js.Any], 
+      js.Function0[scala.Unit]
+    ]) => scala.Unit
   ): RelayProfiler = {
-    val __obj = js.Dynamic.literal(attachAggregateHandler = attachAggregateHandler, attachProfileHandler = attachProfileHandler)
+    val __obj = js.Dynamic.literal(attachAggregateHandler = js.Any.fromFunction2(attachAggregateHandler), attachProfileHandler = js.Any.fromFunction2(attachProfileHandler))
   
     __obj.asInstanceOf[RelayProfiler]
   }

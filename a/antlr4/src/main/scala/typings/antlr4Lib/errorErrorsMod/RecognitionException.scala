@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class RecognitionException ()
   extends stdLib.Error {
-  var ctx: antlr4Lib.parserrulecontextMod.ParserRuleContext = js.native
-  var input: antlr4Lib.inputstreamMod.InputStream = js.native
+  var ctx: antlr4Lib.parserRuleContextMod.ParserRuleContext = js.native
+  var input: antlr4Lib.inputStreamMod.InputStream = js.native
   /* CompleteClass */
   override var message: java.lang.String = js.native
   /* CompleteClass */

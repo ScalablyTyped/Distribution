@@ -13,12 +13,8 @@ trait IValidator extends js.Object {
 
 object IValidator {
   @scala.inline
-  def apply(
-    func: js.Function3[js.Any, js.Any, js.Function, scala.Unit],
-    help: java.lang.String,
-    name: java.lang.String
-  ): IValidator = {
-    val __obj = js.Dynamic.literal(func = func, help = help, name = name)
+  def apply(func: (js.Any, js.Any, js.Function) => scala.Unit, help: java.lang.String, name: java.lang.String): IValidator = {
+    val __obj = js.Dynamic.literal(func = js.Any.fromFunction3(func), help = help, name = name)
   
     __obj.asInstanceOf[IValidator]
   }

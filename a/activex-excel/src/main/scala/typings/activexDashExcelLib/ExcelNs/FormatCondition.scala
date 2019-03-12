@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.FormatCondition")
 @js.native
 class FormatCondition protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   @JSName("AppliesTo")
   val AppliesTo_Original: Range = js.native
   @JSName("Borders")
@@ -16,10 +16,10 @@ class FormatCondition protected () extends js.Object {
   val Creator: XlCreator = js.native
   var DateOperator: XlTimePeriods = js.native
   var `Excel.FormatCondition_typekey`: FormatCondition = js.native
-  val Font: Font = js.native
+  val Font: activexDashExcelLib.ExcelNs.Font = js.native
   val Formula1: java.lang.String = js.native
   val Formula2: java.lang.String = js.native
-  val Interior: Interior = js.native
+  val Interior: activexDashExcelLib.ExcelNs.Interior = js.native
   var NumberFormat: java.lang.String = js.native
   val Operator: scala.Double = js.native
   val PTCondition: scala.Boolean = js.native

@@ -23,32 +23,14 @@ trait ApklistingsResource extends js.Object {
 object ApklistingsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    deleteall: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltApkVersionCode, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ApkListing]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_AltApkVersionCode, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ApkListingsListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ApkListing]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAndroidpublisherLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ApkListing]
-    ]
+    delete: gapiDotClientDotAndroidpublisherLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    deleteall: gapiDotClientDotAndroidpublisherLib.Anon_AltApkVersionCode => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotAndroidpublisherLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ApkListing],
+    list: gapiDotClientDotAndroidpublisherLib.Anon_AltApkVersionCode => gapiDotClientLib.gapiNs.clientNs.Request[ApkListingsListResponse],
+    patch: gapiDotClientDotAndroidpublisherLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ApkListing],
+    update: gapiDotClientDotAndroidpublisherLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ApkListing]
   ): ApklistingsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, deleteall = deleteall, get = get, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), deleteall = js.Any.fromFunction1(deleteall), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[ApklistingsResource]
   }

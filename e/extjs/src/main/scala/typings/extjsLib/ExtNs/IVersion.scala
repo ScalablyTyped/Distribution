@@ -90,42 +90,42 @@ trait IVersion extends js.Object {
 object IVersion {
   @scala.inline
   def apply(
-    equals: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
-    getBuild: js.Function0[scala.Double] = null,
-    getMajor: js.Function0[scala.Double] = null,
-    getMinor: js.Function0[scala.Double] = null,
-    getPatch: js.Function0[scala.Double] = null,
-    getRelease: js.Function0[scala.Double] = null,
-    getShortVersion: js.Function0[java.lang.String] = null,
-    gt: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
-    gtEq: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
-    isGreaterThan: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
-    isGreaterThanOrEqual: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
-    isLessThan: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
-    isLessThanOrEqual: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
-    lt: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
-    ltEq: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
-    `match`: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
-    toArray: js.Function0[Array] = null
+    equals: /* target */ js.UndefOr[js.Any] => scala.Boolean = null,
+    getBuild: () => scala.Double = null,
+    getMajor: () => scala.Double = null,
+    getMinor: () => scala.Double = null,
+    getPatch: () => scala.Double = null,
+    getRelease: () => scala.Double = null,
+    getShortVersion: () => java.lang.String = null,
+    gt: /* target */ js.UndefOr[js.Any] => scala.Boolean = null,
+    gtEq: /* target */ js.UndefOr[js.Any] => scala.Boolean = null,
+    isGreaterThan: /* target */ js.UndefOr[js.Any] => scala.Boolean = null,
+    isGreaterThanOrEqual: /* target */ js.UndefOr[js.Any] => scala.Boolean = null,
+    isLessThan: /* target */ js.UndefOr[js.Any] => scala.Boolean = null,
+    isLessThanOrEqual: /* target */ js.UndefOr[js.Any] => scala.Boolean = null,
+    lt: /* target */ js.UndefOr[js.Any] => scala.Boolean = null,
+    ltEq: /* target */ js.UndefOr[js.Any] => scala.Boolean = null,
+    `match`: /* target */ js.UndefOr[js.Any] => scala.Boolean = null,
+    toArray: () => Array = null
   ): IVersion = {
     val __obj = js.Dynamic.literal()
-    if (equals != null) __obj.updateDynamic("equals")(equals)
-    if (getBuild != null) __obj.updateDynamic("getBuild")(getBuild)
-    if (getMajor != null) __obj.updateDynamic("getMajor")(getMajor)
-    if (getMinor != null) __obj.updateDynamic("getMinor")(getMinor)
-    if (getPatch != null) __obj.updateDynamic("getPatch")(getPatch)
-    if (getRelease != null) __obj.updateDynamic("getRelease")(getRelease)
-    if (getShortVersion != null) __obj.updateDynamic("getShortVersion")(getShortVersion)
-    if (gt != null) __obj.updateDynamic("gt")(gt)
-    if (gtEq != null) __obj.updateDynamic("gtEq")(gtEq)
-    if (isGreaterThan != null) __obj.updateDynamic("isGreaterThan")(isGreaterThan)
-    if (isGreaterThanOrEqual != null) __obj.updateDynamic("isGreaterThanOrEqual")(isGreaterThanOrEqual)
-    if (isLessThan != null) __obj.updateDynamic("isLessThan")(isLessThan)
-    if (isLessThanOrEqual != null) __obj.updateDynamic("isLessThanOrEqual")(isLessThanOrEqual)
-    if (lt != null) __obj.updateDynamic("lt")(lt)
-    if (ltEq != null) __obj.updateDynamic("ltEq")(ltEq)
-    if (`match` != null) __obj.updateDynamic("match")(`match`)
-    if (toArray != null) __obj.updateDynamic("toArray")(toArray)
+    if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction1(equals))
+    if (getBuild != null) __obj.updateDynamic("getBuild")(js.Any.fromFunction0(getBuild))
+    if (getMajor != null) __obj.updateDynamic("getMajor")(js.Any.fromFunction0(getMajor))
+    if (getMinor != null) __obj.updateDynamic("getMinor")(js.Any.fromFunction0(getMinor))
+    if (getPatch != null) __obj.updateDynamic("getPatch")(js.Any.fromFunction0(getPatch))
+    if (getRelease != null) __obj.updateDynamic("getRelease")(js.Any.fromFunction0(getRelease))
+    if (getShortVersion != null) __obj.updateDynamic("getShortVersion")(js.Any.fromFunction0(getShortVersion))
+    if (gt != null) __obj.updateDynamic("gt")(js.Any.fromFunction1(gt))
+    if (gtEq != null) __obj.updateDynamic("gtEq")(js.Any.fromFunction1(gtEq))
+    if (isGreaterThan != null) __obj.updateDynamic("isGreaterThan")(js.Any.fromFunction1(isGreaterThan))
+    if (isGreaterThanOrEqual != null) __obj.updateDynamic("isGreaterThanOrEqual")(js.Any.fromFunction1(isGreaterThanOrEqual))
+    if (isLessThan != null) __obj.updateDynamic("isLessThan")(js.Any.fromFunction1(isLessThan))
+    if (isLessThanOrEqual != null) __obj.updateDynamic("isLessThanOrEqual")(js.Any.fromFunction1(isLessThanOrEqual))
+    if (lt != null) __obj.updateDynamic("lt")(js.Any.fromFunction1(lt))
+    if (ltEq != null) __obj.updateDynamic("ltEq")(js.Any.fromFunction1(ltEq))
+    if (`match` != null) __obj.updateDynamic("match")(js.Any.fromFunction1(`match`))
+    if (toArray != null) __obj.updateDynamic("toArray")(js.Any.fromFunction0(toArray))
     __obj.asInstanceOf[IVersion]
   }
 }

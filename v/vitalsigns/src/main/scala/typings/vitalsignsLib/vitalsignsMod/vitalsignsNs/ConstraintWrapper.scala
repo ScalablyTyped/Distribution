@@ -16,15 +16,15 @@ trait ConstraintWrapper extends js.Object {
 object ConstraintWrapper {
   @scala.inline
   def apply(
-    equals: js.Function1[/* num */ scala.Double, ConstraintWrapper] = null,
-    greaterThan: js.Function1[/* num */ scala.Double, ConstraintWrapper] = null,
-    lessThan: js.Function1[/* num */ scala.Double, ConstraintWrapper] = null,
+    equals: /* num */ scala.Double => ConstraintWrapper = null,
+    greaterThan: /* num */ scala.Double => ConstraintWrapper = null,
+    lessThan: /* num */ scala.Double => ConstraintWrapper = null,
     not: ConstraintWrapper = null
   ): ConstraintWrapper = {
     val __obj = js.Dynamic.literal()
-    if (equals != null) __obj.updateDynamic("equals")(equals)
-    if (greaterThan != null) __obj.updateDynamic("greaterThan")(greaterThan)
-    if (lessThan != null) __obj.updateDynamic("lessThan")(lessThan)
+    if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction1(equals))
+    if (greaterThan != null) __obj.updateDynamic("greaterThan")(js.Any.fromFunction1(greaterThan))
+    if (lessThan != null) __obj.updateDynamic("lessThan")(js.Any.fromFunction1(lessThan))
     if (not != null) __obj.updateDynamic("not")(not)
     __obj.asInstanceOf[ConstraintWrapper]
   }

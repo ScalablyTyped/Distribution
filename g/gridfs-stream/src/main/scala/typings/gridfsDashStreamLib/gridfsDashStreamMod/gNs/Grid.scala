@@ -19,15 +19,15 @@ trait Grid extends js.Object {
   def createWriteStream(options: java.lang.String): gridfsDashStreamLib.gridfsDashStreamMod.GridFSStreamNs.WriteStream = js.native
   def exist(
     options: gridfsDashStreamLib.gridfsDashStreamMod.GridFSStreamNs.Options,
-    callback: js.Function2[/* err */ nodeLib.Error, /* found */ scala.Boolean, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* found */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   def findOne(
     options: gridfsDashStreamLib.gridfsDashStreamMod.GridFSStreamNs.Options,
-    callback: js.Function2[/* err */ nodeLib.Error, /* record */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* record */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def remove(
     options: gridfsDashStreamLib.gridfsDashStreamMod.GridFSStreamNs.Options,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
 }
 

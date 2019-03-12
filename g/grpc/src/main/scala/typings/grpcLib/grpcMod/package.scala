@@ -11,7 +11,7 @@ package object grpcMod {
     */
   type Call = ClientUnaryCall | ClientReadableStream[js.Any] | ClientWritableStream[js.Any] | (ClientDuplexStream[js.Any, js.Any])
   type CancelRequester = js.Function1[/* next */ js.Function, scala.Unit]
-  type CheckServerIdentityCallback = js.Function2[/* hostname */ java.lang.String, /* cert */ Certificate, js.UndefOr[nodeLib.Error]]
+  type CheckServerIdentityCallback = js.Function2[/* hostname */ java.lang.String, /* cert */ Certificate, js.UndefOr[stdLib.Error]]
   type CloseRequester = js.Function1[/* next */ js.Function, scala.Unit]
   type Deadline = scala.Double | stdLib.Date
   type Filename = java.lang.String | grpcLib.Anon_File
@@ -59,7 +59,7 @@ package object grpcMod {
   type metadataGenerator = js.Function2[
     /* params */ grpcLib.Anon_Serviceurl, 
     /* callback */ js.Function2[
-      /* error */ nodeLib.Error | scala.Null, 
+      /* error */ stdLib.Error | scala.Null, 
       /* metadata */ js.UndefOr[Metadata], 
       scala.Unit
     ], 

@@ -11,7 +11,7 @@ trait XTabController
   /** returns the control container. */
   var Container: XControlContainer
   /** returns all controls of the control container. */
-  val Controls: activexDashInteropLib.SafeArray[XControl]
+  val Controls: stdLib.SafeArray[XControl]
   /** sets the focus to the first control that can be reached with the TAB key. */
   def activateFirst(): scala.Unit
   /** sets the focus to the last control that can be reached with the TAB key. */
@@ -23,7 +23,7 @@ trait XTabController
   /** returns the control container. */
   def getContainer(): XControlContainer
   /** returns all controls of the control container. */
-  def getControls(): activexDashInteropLib.SafeArray[XControl]
+  def getControls(): stdLib.SafeArray[XControl]
   /** returns the tab controller model. */
   def getModel(): XTabControllerModel
   /** set the control container. */
@@ -36,21 +36,21 @@ object XTabController {
   @scala.inline
   def apply(
     Container: XControlContainer,
-    Controls: activexDashInteropLib.SafeArray[XControl],
-    acquire: js.Function0[scala.Unit],
-    activateFirst: js.Function0[scala.Unit],
-    activateLast: js.Function0[scala.Unit],
-    activateTabOrder: js.Function0[scala.Unit],
-    autoTabOrder: js.Function0[scala.Unit],
-    getContainer: js.Function0[XControlContainer],
-    getControls: js.Function0[activexDashInteropLib.SafeArray[XControl]],
-    getModel: js.Function0[XTabControllerModel],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setContainer: js.Function1[XControlContainer, scala.Unit],
-    setModel: js.Function1[XTabControllerModel, scala.Unit]
+    Controls: stdLib.SafeArray[XControl],
+    acquire: () => scala.Unit,
+    activateFirst: () => scala.Unit,
+    activateLast: () => scala.Unit,
+    activateTabOrder: () => scala.Unit,
+    autoTabOrder: () => scala.Unit,
+    getContainer: () => XControlContainer,
+    getControls: () => stdLib.SafeArray[XControl],
+    getModel: () => XTabControllerModel,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setContainer: XControlContainer => scala.Unit,
+    setModel: XTabControllerModel => scala.Unit
   ): XTabController = {
-    val __obj = js.Dynamic.literal(Container = Container, Controls = Controls, acquire = acquire, activateFirst = activateFirst, activateLast = activateLast, activateTabOrder = activateTabOrder, autoTabOrder = autoTabOrder, getContainer = getContainer, getControls = getControls, getModel = getModel, queryInterface = queryInterface, release = release, setContainer = setContainer, setModel = setModel)
+    val __obj = js.Dynamic.literal(Container = Container, Controls = Controls, acquire = js.Any.fromFunction0(acquire), activateFirst = js.Any.fromFunction0(activateFirst), activateLast = js.Any.fromFunction0(activateLast), activateTabOrder = js.Any.fromFunction0(activateTabOrder), autoTabOrder = js.Any.fromFunction0(autoTabOrder), getContainer = js.Any.fromFunction0(getContainer), getControls = js.Any.fromFunction0(getControls), getModel = js.Any.fromFunction0(getModel), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setContainer = js.Any.fromFunction1(setContainer), setModel = js.Any.fromFunction1(setModel))
   
     __obj.asInstanceOf[XTabController]
   }

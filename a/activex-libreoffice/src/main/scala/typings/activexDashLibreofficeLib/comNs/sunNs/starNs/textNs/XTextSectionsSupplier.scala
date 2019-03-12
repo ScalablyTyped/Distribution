@@ -18,12 +18,12 @@ object XTextSectionsSupplier {
   @scala.inline
   def apply(
     TextSections: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
-    acquire: js.Function0[scala.Unit],
-    getTextSections: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getTextSections: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTextSectionsSupplier = {
-    val __obj = js.Dynamic.literal(TextSections = TextSections, acquire = acquire, getTextSections = getTextSections, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(TextSections = TextSections, acquire = js.Any.fromFunction0(acquire), getTextSections = js.Any.fromFunction0(getTextSections), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTextSectionsSupplier]
   }

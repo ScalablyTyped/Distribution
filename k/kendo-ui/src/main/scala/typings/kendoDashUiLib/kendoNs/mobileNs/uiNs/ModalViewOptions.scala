@@ -19,23 +19,23 @@ trait ModalViewOptions extends js.Object {
 object ModalViewOptions {
   @scala.inline
   def apply(
-    beforeOpen: js.Function1[/* e */ ModalViewBeforeOpenEvent, scala.Unit] = null,
-    close: js.Function1[/* e */ ModalViewCloseEvent, scala.Unit] = null,
+    beforeOpen: /* e */ ModalViewBeforeOpenEvent => scala.Unit = null,
+    close: /* e */ ModalViewCloseEvent => scala.Unit = null,
     height: scala.Int | scala.Double = null,
-    init: js.Function1[/* e */ ModalViewInitEvent, scala.Unit] = null,
+    init: /* e */ ModalViewInitEvent => scala.Unit = null,
     modal: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
-    open: js.Function1[/* e */ ModalViewOpenEvent, scala.Unit] = null,
+    open: /* e */ ModalViewOpenEvent => scala.Unit = null,
     width: scala.Int | scala.Double = null
   ): ModalViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen)
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(js.Any.fromFunction1(beforeOpen))
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (init != null) __obj.updateDynamic("init")(init)
+    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalViewOptions]
   }

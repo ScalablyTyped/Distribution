@@ -60,8 +60,6 @@ trait Response
     * third argument.
     */
   def app(req: Request, res: Response): js.Any = js.native
-  // tslint:disable-next-line callable-types (This is extended from and can't extend from a type alias in ts<2.2
-  def app(req: Request, res: Response, next: NextFunction): js.Any = js.native
   def app(req: Request, res: nodeLib.httpMod.ServerResponse): js.Any = js.native
   def app(req: nodeLib.httpMod.IncomingMessage, res: Response): js.Any = js.native
   def app(req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse): js.Any = js.native
@@ -284,13 +282,13 @@ trait Response
   def render(view: java.lang.String): scala.Unit = js.native
   def render(
     view: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* html */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* html */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def render(view: java.lang.String, options: js.Object): scala.Unit = js.native
   def render(
     view: java.lang.String,
     options: js.Object,
-    callback: js.Function2[/* err */ nodeLib.Error, /* html */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* html */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Send a response.

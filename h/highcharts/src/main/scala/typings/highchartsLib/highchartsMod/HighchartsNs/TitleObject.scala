@@ -16,7 +16,7 @@ trait TitleObject extends TitleOptions {
 object TitleObject {
   @scala.inline
   def apply(
-    update: js.Function1[TitleOptions, scala.Unit],
+    update: TitleOptions => scala.Unit,
     align: java.lang.String = null,
     floating: js.UndefOr[scala.Boolean] = js.undefined,
     margin: scala.Int | scala.Double = null,
@@ -27,7 +27,7 @@ object TitleObject {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): TitleObject = {
-    val __obj = js.Dynamic.literal(update = update)
+    val __obj = js.Dynamic.literal(update = js.Any.fromFunction1(update))
     if (align != null) __obj.updateDynamic("align")(align)
     if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating)
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])

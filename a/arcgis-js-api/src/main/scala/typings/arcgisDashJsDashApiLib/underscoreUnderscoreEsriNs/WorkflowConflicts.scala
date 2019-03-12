@@ -37,14 +37,14 @@ object WorkflowConflicts {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     jobID: scala.Double,
     options: js.Array[WorkflowOption],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     spawnsConcurrency: scala.Boolean,
     stepId: scala.Double
   ): WorkflowConflicts = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobID = jobID, options = options, propertyIsEnumerable = propertyIsEnumerable, spawnsConcurrency = spawnsConcurrency, stepId = stepId)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobID = jobID, options = options, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), spawnsConcurrency = spawnsConcurrency, stepId = stepId)
   
     __obj.asInstanceOf[WorkflowConflicts]
   }

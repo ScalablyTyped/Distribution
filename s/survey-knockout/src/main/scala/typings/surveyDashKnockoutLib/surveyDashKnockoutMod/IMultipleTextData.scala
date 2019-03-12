@@ -19,33 +19,33 @@ trait IMultipleTextData
 object IMultipleTextData {
   @scala.inline
   def apply(
-    addElement: js.Function2[IElement, scala.Double, js.Any],
-    elementWidthChanged: js.Function1[IElement, js.Any],
-    getAllValues: js.Function0[js.Any],
-    getChildrenLayoutType: js.Function0[java.lang.String],
-    getIsRequiredText: js.Function0[java.lang.String],
-    getLocale: js.Function0[java.lang.String],
-    getMarkdownHtml: js.Function1[java.lang.String, java.lang.String],
-    getMultipleTextValue: js.Function1[java.lang.String, js.Any],
-    getProcessedText: js.Function1[java.lang.String, java.lang.String],
-    getQuestionTitleLocation: js.Function0[java.lang.String],
-    getSurvey: js.Function0[ISurvey],
-    getTextProcessor: js.Function0[ITextProcessor],
-    getType: js.Function0[java.lang.String],
+    addElement: (IElement, scala.Double) => js.Any,
+    elementWidthChanged: IElement => js.Any,
+    getAllValues: () => js.Any,
+    getChildrenLayoutType: () => java.lang.String,
+    getIsRequiredText: () => java.lang.String,
+    getLocale: () => java.lang.String,
+    getMarkdownHtml: java.lang.String => java.lang.String,
+    getMultipleTextValue: java.lang.String => js.Any,
+    getProcessedText: java.lang.String => java.lang.String,
+    getQuestionTitleLocation: () => java.lang.String,
+    getSurvey: () => ISurvey,
+    getTextProcessor: () => ITextProcessor,
+    getType: () => java.lang.String,
     isPage: scala.Boolean,
     isReadOnly: scala.Boolean,
     isVisible: scala.Boolean,
-    locStrsChanged: js.Function0[js.Any],
+    locStrsChanged: () => js.Any,
     name: java.lang.String,
-    onFirstRendering: js.Function0[js.Any],
-    onSurveyLoad: js.Function0[js.Any],
+    onFirstRendering: () => js.Any,
+    onSurveyLoad: () => js.Any,
     parent: IPanel,
-    removeElement: js.Function1[IElement, scala.Boolean],
-    setMultipleTextValue: js.Function2[java.lang.String, js.Any, js.Any],
-    setSurveyImpl: js.Function1[ISurveyImpl, js.Any],
-    setVisibleIndex: js.Function1[scala.Double, scala.Double]
+    removeElement: IElement => scala.Boolean,
+    setMultipleTextValue: (java.lang.String, js.Any) => js.Any,
+    setSurveyImpl: ISurveyImpl => js.Any,
+    setVisibleIndex: scala.Double => scala.Double
   ): IMultipleTextData = {
-    val __obj = js.Dynamic.literal(addElement = addElement, elementWidthChanged = elementWidthChanged, getAllValues = getAllValues, getChildrenLayoutType = getChildrenLayoutType, getIsRequiredText = getIsRequiredText, getLocale = getLocale, getMarkdownHtml = getMarkdownHtml, getMultipleTextValue = getMultipleTextValue, getProcessedText = getProcessedText, getQuestionTitleLocation = getQuestionTitleLocation, getSurvey = getSurvey, getTextProcessor = getTextProcessor, getType = getType, isPage = isPage, isReadOnly = isReadOnly, isVisible = isVisible, locStrsChanged = locStrsChanged, name = name, onFirstRendering = onFirstRendering, onSurveyLoad = onSurveyLoad, parent = parent, removeElement = removeElement, setMultipleTextValue = setMultipleTextValue, setSurveyImpl = setSurveyImpl, setVisibleIndex = setVisibleIndex)
+    val __obj = js.Dynamic.literal(addElement = js.Any.fromFunction2(addElement), elementWidthChanged = js.Any.fromFunction1(elementWidthChanged), getAllValues = js.Any.fromFunction0(getAllValues), getChildrenLayoutType = js.Any.fromFunction0(getChildrenLayoutType), getIsRequiredText = js.Any.fromFunction0(getIsRequiredText), getLocale = js.Any.fromFunction0(getLocale), getMarkdownHtml = js.Any.fromFunction1(getMarkdownHtml), getMultipleTextValue = js.Any.fromFunction1(getMultipleTextValue), getProcessedText = js.Any.fromFunction1(getProcessedText), getQuestionTitleLocation = js.Any.fromFunction0(getQuestionTitleLocation), getSurvey = js.Any.fromFunction0(getSurvey), getTextProcessor = js.Any.fromFunction0(getTextProcessor), getType = js.Any.fromFunction0(getType), isPage = isPage, isReadOnly = isReadOnly, isVisible = isVisible, locStrsChanged = js.Any.fromFunction0(locStrsChanged), name = name, onFirstRendering = js.Any.fromFunction0(onFirstRendering), onSurveyLoad = js.Any.fromFunction0(onSurveyLoad), parent = parent, removeElement = js.Any.fromFunction1(removeElement), setMultipleTextValue = js.Any.fromFunction2(setMultipleTextValue), setSurveyImpl = js.Any.fromFunction1(setSurveyImpl), setVisibleIndex = js.Any.fromFunction1(setVisibleIndex))
   
     __obj.asInstanceOf[IMultipleTextData]
   }

@@ -26,20 +26,20 @@ object ocrIdCardOptions {
   @scala.inline
   def apply(
     image: java.lang.String,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    complete: /* res */ js.Any => scala.Unit = null,
     detect_direction: js.UndefOr[scala.Boolean] = js.undefined,
     detect_risk: js.UndefOr[scala.Boolean] = js.undefined,
-    fail: js.Function1[js.Any, scala.Unit] = null,
+    fail: js.Any => scala.Unit = null,
     id_card_side: java.lang.String = null,
-    success: js.Function1[/* res */ ocrIdCardResponse, scala.Unit] = null
+    success: /* res */ ocrIdCardResponse => scala.Unit = null
   ): ocrIdCardOptions = {
     val __obj = js.Dynamic.literal(image = image)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction)
     if (!js.isUndefined(detect_risk)) __obj.updateDynamic("detect_risk")(detect_risk)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (id_card_side != null) __obj.updateDynamic("id_card_side")(id_card_side)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ocrIdCardOptions]
   }
 }

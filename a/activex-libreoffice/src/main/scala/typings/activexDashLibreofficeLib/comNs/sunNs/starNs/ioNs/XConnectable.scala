@@ -35,15 +35,15 @@ object XConnectable {
   def apply(
     Predecessor: XConnectable,
     Successor: XConnectable,
-    acquire: js.Function0[scala.Unit],
-    getPredecessor: js.Function0[XConnectable],
-    getSuccessor: js.Function0[XConnectable],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setPredecessor: js.Function1[XConnectable, scala.Unit],
-    setSuccessor: js.Function1[XConnectable, scala.Unit]
+    acquire: () => scala.Unit,
+    getPredecessor: () => XConnectable,
+    getSuccessor: () => XConnectable,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setPredecessor: XConnectable => scala.Unit,
+    setSuccessor: XConnectable => scala.Unit
   ): XConnectable = {
-    val __obj = js.Dynamic.literal(Predecessor = Predecessor, Successor = Successor, acquire = acquire, getPredecessor = getPredecessor, getSuccessor = getSuccessor, queryInterface = queryInterface, release = release, setPredecessor = setPredecessor, setSuccessor = setSuccessor)
+    val __obj = js.Dynamic.literal(Predecessor = Predecessor, Successor = Successor, acquire = js.Any.fromFunction0(acquire), getPredecessor = js.Any.fromFunction0(getPredecessor), getSuccessor = js.Any.fromFunction0(getSuccessor), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setPredecessor = js.Any.fromFunction1(setPredecessor), setSuccessor = js.Any.fromFunction1(setSuccessor))
   
     __obj.asInstanceOf[XConnectable]
   }

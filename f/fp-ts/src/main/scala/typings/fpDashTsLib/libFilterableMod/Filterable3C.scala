@@ -32,50 +32,24 @@ object Filterable3C {
     URI: F,
     _L: L,
     _U: U,
-    compact: js.Function1[
-      fpDashTsLib.libHKTMod.Type3[F, U, L, fpDashTsLib.libOptionMod.Option[js.Any]], 
+    compact: fpDashTsLib.libHKTMod.Type3[F, U, L, fpDashTsLib.libOptionMod.Option[js.Any]] => fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any],
+    filter: (fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], fpDashTsLib.libFunctionMod.Predicate[js.Any]) => fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any],
+    filterMap: (fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], js.Function1[js.Any, fpDashTsLib.libOptionMod.Option[js.Any]]) => fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any],
+    map: (fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any],
+    partition: (fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], fpDashTsLib.libFunctionMod.Predicate[js.Any]) => fpDashTsLib.libCompactableMod.Separated[
+      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
       fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
     ],
-    filter: js.Function2[
+    partitionMap: (fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], js.Function1[js.Any, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]]) => fpDashTsLib.libCompactableMod.Separated[
       fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
-      fpDashTsLib.libFunctionMod.Predicate[js.Any], 
       fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
     ],
-    filterMap: js.Function2[
+    separate: fpDashTsLib.libHKTMod.Type3[F, U, L, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]] => fpDashTsLib.libCompactableMod.Separated[
       fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
-      js.Function1[js.Any, fpDashTsLib.libOptionMod.Option[js.Any]], 
       fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
-    ],
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
-    ],
-    partition: js.Function2[
-      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
-      fpDashTsLib.libFunctionMod.Predicate[js.Any], 
-      fpDashTsLib.libCompactableMod.Separated[
-        fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
-        fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
-      ]
-    ],
-    partitionMap: js.Function2[
-      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
-      js.Function1[js.Any, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]], 
-      fpDashTsLib.libCompactableMod.Separated[
-        fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
-        fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
-      ]
-    ],
-    separate: js.Function1[
-      fpDashTsLib.libHKTMod.Type3[F, U, L, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]], 
-      fpDashTsLib.libCompactableMod.Separated[
-        fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
-        fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
-      ]
     ]
   ): Filterable3C[F, U, L] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], compact = compact, filter = filter, filterMap = filterMap, map = map, partition = partition, partitionMap = partitionMap, separate = separate)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], compact = js.Any.fromFunction1(compact), filter = js.Any.fromFunction2(filter), filterMap = js.Any.fromFunction2(filterMap), map = js.Any.fromFunction2(map), partition = js.Any.fromFunction2(partition), partitionMap = js.Any.fromFunction2(partitionMap), separate = js.Any.fromFunction1(separate))
   
     __obj.asInstanceOf[Filterable3C[F, U, L]]
   }

@@ -14,8 +14,8 @@ trait DynamicComponentGetViewStrategy extends js.Object {
 
 object DynamicComponentGetViewStrategy {
   @scala.inline
-  def apply(getViewStrategy: js.Function0[java.lang.String | ViewStrategy]): DynamicComponentGetViewStrategy = {
-    val __obj = js.Dynamic.literal(getViewStrategy = getViewStrategy)
+  def apply(getViewStrategy: () => java.lang.String | ViewStrategy): DynamicComponentGetViewStrategy = {
+    val __obj = js.Dynamic.literal(getViewStrategy = js.Any.fromFunction0(getViewStrategy))
   
     __obj.asInstanceOf[DynamicComponentGetViewStrategy]
   }

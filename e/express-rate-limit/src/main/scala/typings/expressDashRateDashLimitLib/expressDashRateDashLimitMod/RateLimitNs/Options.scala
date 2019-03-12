@@ -98,31 +98,13 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    handler: js.Function3[
-      /* req */ expressLib.expressMod.eNs.Request, 
-      /* res */ expressLib.expressMod.eNs.Response, 
-      /* next */ expressLib.expressMod.eNs.NextFunction, 
-      _
-    ] = null,
+    handler: (/* req */ expressLib.expressMod.eNs.Request, /* res */ expressLib.expressMod.eNs.Response, /* next */ expressLib.expressMod.eNs.NextFunction) => _ = null,
     headers: js.UndefOr[scala.Boolean] = js.undefined,
-    keyGenerator: js.Function2[
-      /* req */ expressLib.expressMod.eNs.Request, 
-      /* res */ expressLib.expressMod.eNs.Response, 
-      java.lang.String
-    ] = null,
+    keyGenerator: (/* req */ expressLib.expressMod.eNs.Request, /* res */ expressLib.expressMod.eNs.Response) => java.lang.String = null,
     max: scala.Double | MaxValueFn = null,
     message: java.lang.String | nodeLib.Buffer | Message = null,
-    onLimitReached: js.Function3[
-      /* req */ expressLib.expressMod.eNs.Request, 
-      /* res */ expressLib.expressMod.eNs.Response, 
-      Options, 
-      scala.Unit
-    ] = null,
-    skip: js.Function2[
-      /* req */ expressLib.expressMod.eNs.Request, 
-      /* res */ expressLib.expressMod.eNs.Response, 
-      scala.Boolean
-    ] = null,
+    onLimitReached: (/* req */ expressLib.expressMod.eNs.Request, /* res */ expressLib.expressMod.eNs.Response, Options) => scala.Unit = null,
+    skip: (/* req */ expressLib.expressMod.eNs.Request, /* res */ expressLib.expressMod.eNs.Response) => scala.Boolean = null,
     skipFailedRequests: js.UndefOr[scala.Boolean] = js.undefined,
     skipSuccessfulRequests: js.UndefOr[scala.Boolean] = js.undefined,
     statusCode: scala.Int | scala.Double = null,
@@ -130,13 +112,13 @@ object Options {
     windowMs: scala.Int | scala.Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (handler != null) __obj.updateDynamic("handler")(handler)
+    if (handler != null) __obj.updateDynamic("handler")(js.Any.fromFunction3(handler))
     if (!js.isUndefined(headers)) __obj.updateDynamic("headers")(headers)
-    if (keyGenerator != null) __obj.updateDynamic("keyGenerator")(keyGenerator)
+    if (keyGenerator != null) __obj.updateDynamic("keyGenerator")(js.Any.fromFunction2(keyGenerator))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (onLimitReached != null) __obj.updateDynamic("onLimitReached")(onLimitReached)
-    if (skip != null) __obj.updateDynamic("skip")(skip)
+    if (onLimitReached != null) __obj.updateDynamic("onLimitReached")(js.Any.fromFunction3(onLimitReached))
+    if (skip != null) __obj.updateDynamic("skip")(js.Any.fromFunction2(skip))
     if (!js.isUndefined(skipFailedRequests)) __obj.updateDynamic("skipFailedRequests")(skipFailedRequests)
     if (!js.isUndefined(skipSuccessfulRequests)) __obj.updateDynamic("skipSuccessfulRequests")(skipSuccessfulRequests)
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])

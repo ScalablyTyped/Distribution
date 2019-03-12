@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def decode(s: java.lang.String): java.lang.String = js.native
   def encode(s: java.lang.String): java.lang.String = js.native
-  def encode(s: java.lang.String, opts: entLib.entMod.EntOpts): java.lang.String = js.native
+  def encode(s: java.lang.String, opts: EntOpts): java.lang.String = js.native
 }
 

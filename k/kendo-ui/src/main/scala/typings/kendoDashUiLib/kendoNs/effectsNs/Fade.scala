@@ -14,16 +14,16 @@ trait Fade extends Effect {
 object Fade {
   @scala.inline
   def apply(
-    add: js.Function1[Effect, Fade],
-    direction: js.Function1[java.lang.String, Fade],
-    duration: js.Function1[scala.Double, Fade],
-    endValue: js.Function1[scala.Double, Fade],
-    play: js.Function0[kendoDashUiLib.JQueryPromise[_]],
-    reverse: js.Function0[kendoDashUiLib.JQueryPromise[_]],
-    startValue: js.Function1[scala.Double, Fade],
-    stop: js.Function0[Fade]
+    add: Effect => Fade,
+    direction: java.lang.String => Fade,
+    duration: scala.Double => Fade,
+    endValue: scala.Double => Fade,
+    play: () => kendoDashUiLib.JQueryPromise[_],
+    reverse: () => kendoDashUiLib.JQueryPromise[_],
+    startValue: scala.Double => Fade,
+    stop: () => Fade
   ): Fade = {
-    val __obj = js.Dynamic.literal(add = add, direction = direction, duration = duration, endValue = endValue, play = play, reverse = reverse, startValue = startValue, stop = stop)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), direction = js.Any.fromFunction1(direction), duration = js.Any.fromFunction1(duration), endValue = js.Any.fromFunction1(endValue), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), startValue = js.Any.fromFunction1(startValue), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[Fade]
   }

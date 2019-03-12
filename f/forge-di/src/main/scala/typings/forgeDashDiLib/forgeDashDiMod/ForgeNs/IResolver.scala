@@ -15,8 +15,8 @@ trait IResolver extends js.Object {
 
 object IResolver {
   @scala.inline
-  def apply(resolve: js.Function0[js.Any]): IResolver = {
-    val __obj = js.Dynamic.literal(resolve = resolve)
+  def apply(resolve: () => js.Any): IResolver = {
+    val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction0(resolve))
   
     __obj.asInstanceOf[IResolver]
   }

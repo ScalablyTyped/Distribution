@@ -30,7 +30,7 @@ trait ArrayConstructor extends js.Object {
   /**
     * Returns an array of key, value pairs for every entry in the array
     */
-  def entries[T](array: stdLib.ArrayLike[T]): nodeLib.IterableIterator[js.Tuple2[scala.Double, T]] = js.native
+  def entries[T](array: stdLib.ArrayLike[T]): stdLib.IterableIterator[js.Tuple2[scala.Double, T]] = js.native
   /**
     * Determines whether all the members of an array satisfy the specified test.
     * @param callbackfn  A function that accepts up to three arguments.
@@ -132,7 +132,7 @@ trait ArrayConstructor extends js.Object {
   /**
     * Returns an list of keys in the array
     */
-  def keys[T](array: stdLib.ArrayLike[T]): nodeLib.IterableIterator[scala.Double] = js.native
+  def keys[T](array: stdLib.ArrayLike[T]): stdLib.IterableIterator[scala.Double] = js.native
   /**
     * Returns the index of the last occurrence of a specified value in an array.
     * @param searchElement The value to locate in the array.
@@ -341,6 +341,6 @@ trait ArrayConstructor extends js.Object {
   /**
     * Returns an list of values in the array
     */
-  def values[T](array: stdLib.ArrayLike[T]): nodeLib.IterableIterator[T] = js.native
+  def values[T](array: stdLib.ArrayLike[T]): stdLib.IterableIterator[T] = js.native
 }
 

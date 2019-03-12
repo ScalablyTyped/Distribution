@@ -11,7 +11,7 @@ object ^ extends js.Object {
   val SwapStrategies: js.Any = js.native
   val animationEvent: js.Any = js.native
   val viewStrategy: js.Function = js.native
-  def behavior(`override`: aureliaDashTemplatingLib.aureliaDashTemplatingMod.HtmlBehaviorResource): js.Any = js.native
+  def behavior(`override`: HtmlBehaviorResource): js.Any = js.native
   def behavior(`override`: js.Object): js.Any = js.native
   def bindable(): js.Any = js.native
   def bindable(nameOrConfigOrTarget: java.lang.String): js.Any = js.native
@@ -58,7 +58,7 @@ object ^ extends js.Object {
   def useView(path: java.lang.String): js.Any = js.native
   def useViewStrategy(strategy: js.Object): js.Any = js.native
   def validateBehaviorName(name: java.lang.String, `type`: java.lang.String): js.Any = js.native
-  def view(templateOrConfig: aureliaDashTemplatingLib.aureliaDashTemplatingMod.IStaticViewStrategyConfig): js.Any = js.native
+  def view(templateOrConfig: IStaticViewStrategyConfig): js.Any = js.native
   def view(templateOrConfig: java.lang.String): js.Any = js.native
   def view(templateOrConfig: stdLib.HTMLTemplateElement): js.Any = js.native
   def viewEngineHooks(): js.Any = js.native

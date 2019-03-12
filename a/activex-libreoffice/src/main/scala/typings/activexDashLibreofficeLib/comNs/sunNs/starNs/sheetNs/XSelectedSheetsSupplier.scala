@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
 trait XSelectedSheetsSupplier
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** returns the indices of currently selected sheets. Sheet indices are 0-based. */
-  val SelectedSheets: activexDashInteropLib.SafeArray[scala.Double]
+  val SelectedSheets: stdLib.SafeArray[scala.Double]
   /** returns the indices of currently selected sheets. Sheet indices are 0-based. */
-  def getSelectedSheets(): activexDashInteropLib.SafeArray[scala.Double]
+  def getSelectedSheets(): stdLib.SafeArray[scala.Double]
 }
 
 object XSelectedSheetsSupplier {
   @scala.inline
   def apply(
-    SelectedSheets: activexDashInteropLib.SafeArray[scala.Double],
-    acquire: js.Function0[scala.Unit],
-    getSelectedSheets: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    SelectedSheets: stdLib.SafeArray[scala.Double],
+    acquire: () => scala.Unit,
+    getSelectedSheets: () => stdLib.SafeArray[scala.Double],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSelectedSheetsSupplier = {
-    val __obj = js.Dynamic.literal(SelectedSheets = SelectedSheets, acquire = acquire, getSelectedSheets = getSelectedSheets, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(SelectedSheets = SelectedSheets, acquire = js.Any.fromFunction0(acquire), getSelectedSheets = js.Any.fromFunction0(getSelectedSheets), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSelectedSheetsSupplier]
   }

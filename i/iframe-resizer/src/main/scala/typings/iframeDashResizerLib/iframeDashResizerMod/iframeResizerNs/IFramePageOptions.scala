@@ -34,15 +34,15 @@ object IFramePageOptions {
   @scala.inline
   def apply(
     heightCalculationMethod: HeightCalculationMethod | js.Function0[scala.Double] = null,
-    messageCallback: js.Function1[/* message */ js.Any, scala.Unit] = null,
-    readyCallback: js.Function0[scala.Unit] = null,
+    messageCallback: /* message */ js.Any => scala.Unit = null,
+    readyCallback: () => scala.Unit = null,
     targetOrigin: java.lang.String = null,
     widthCalculationMethod: WidthCalculationMethod | js.Function0[scala.Double] = null
   ): IFramePageOptions = {
     val __obj = js.Dynamic.literal()
     if (heightCalculationMethod != null) __obj.updateDynamic("heightCalculationMethod")(heightCalculationMethod.asInstanceOf[js.Any])
-    if (messageCallback != null) __obj.updateDynamic("messageCallback")(messageCallback)
-    if (readyCallback != null) __obj.updateDynamic("readyCallback")(readyCallback)
+    if (messageCallback != null) __obj.updateDynamic("messageCallback")(js.Any.fromFunction1(messageCallback))
+    if (readyCallback != null) __obj.updateDynamic("readyCallback")(js.Any.fromFunction0(readyCallback))
     if (targetOrigin != null) __obj.updateDynamic("targetOrigin")(targetOrigin)
     if (widthCalculationMethod != null) __obj.updateDynamic("widthCalculationMethod")(widthCalculationMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFramePageOptions]

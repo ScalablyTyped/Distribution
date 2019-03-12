@@ -34,24 +34,24 @@ trait Anon_CompleteFailSendMessageImg extends js.Object {
 object Anon_CompleteFailSendMessageImg {
   @scala.inline
   def apply(
-    complete: js.Function0[scala.Unit] = null,
-    fail: js.Function0[scala.Unit] = null,
+    complete: () => scala.Unit = null,
+    fail: () => scala.Unit = null,
     sendMessageImg: java.lang.String = null,
     sendMessagePath: java.lang.String = null,
     sendMessageTitle: java.lang.String = null,
     sessionFrom: java.lang.String = null,
     showMessageCard: js.UndefOr[scala.Boolean] = js.undefined,
-    success: js.Function0[scala.Unit] = null
+    success: () => scala.Unit = null
   ): Anon_CompleteFailSendMessageImg = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (sendMessageImg != null) __obj.updateDynamic("sendMessageImg")(sendMessageImg)
     if (sendMessagePath != null) __obj.updateDynamic("sendMessagePath")(sendMessagePath)
     if (sendMessageTitle != null) __obj.updateDynamic("sendMessageTitle")(sendMessageTitle)
     if (sessionFrom != null) __obj.updateDynamic("sessionFrom")(sessionFrom)
     if (!js.isUndefined(showMessageCard)) __obj.updateDynamic("showMessageCard")(showMessageCard)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[Anon_CompleteFailSendMessageImg]
   }
 }

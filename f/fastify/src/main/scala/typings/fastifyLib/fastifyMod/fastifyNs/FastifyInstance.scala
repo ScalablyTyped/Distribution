@@ -140,7 +140,7 @@ trait FastifyInstance[HttpServer, HttpRequest, HttpResponse] extends js.Object {
       /* req */ FastifyRequest[HttpRequest, DefaultQuery, DefaultParams, DefaultHeaders, DefaultBody], 
       /* reply */ FastifyReply[HttpResponse], 
       /* payload */ js.Any, 
-      /* done */ js.Function2[/* err */ js.UndefOr[nodeLib.Error], /* value */ js.UndefOr[js.Any], scala.Unit], 
+      /* done */ js.Function2[/* err */ js.UndefOr[stdLib.Error], /* value */ js.UndefOr[js.Any], scala.Unit], 
       scala.Unit
     ]
   ): FastifyInstance[HttpServer, HttpRequest, HttpResponse] = js.native
@@ -218,11 +218,11 @@ trait FastifyInstance[HttpServer, HttpRequest, HttpResponse] extends js.Object {
     * `Register a callback that will be executed just after a register.
     * It can take up to three parameters
     */
-  def after(afterListener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
-  def after(afterListener: js.Function2[/* err */ nodeLib.Error, /* done */ js.Function, scala.Unit]): scala.Unit = js.native
+  def after(afterListener: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  def after(afterListener: js.Function2[/* err */ stdLib.Error, /* done */ js.Function, scala.Unit]): scala.Unit = js.native
   def after(
     afterListener: js.Function3[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* context */ FastifyInstance[HttpServer, HttpRequest, HttpResponse], 
       /* done */ js.Function, 
       scala.Unit
@@ -340,19 +340,19 @@ trait FastifyInstance[HttpServer, HttpRequest, HttpResponse] extends js.Object {
     */
   def inject(
     opts: HTTPInjectOptions,
-    cb: js.Function2[/* err */ nodeLib.Error, /* res */ HTTPInjectResponse, scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* res */ HTTPInjectResponse, scala.Unit]
   ): scala.Unit = js.native
   def inject(opts: java.lang.String): js.Promise[HTTPInjectResponse] = js.native
   def inject(
     opts: java.lang.String,
-    cb: js.Function2[/* err */ nodeLib.Error, /* res */ HTTPInjectResponse, scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* res */ HTTPInjectResponse, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Starts the server on the given port after all the plugins are loaded,
     * internally waits for the .ready() event. The callback is the same as the
     * Node core.
     */
-  def listen(callback: js.Function2[/* err */ nodeLib.Error, /* address */ java.lang.String, scala.Unit]): scala.Unit = js.native
+  def listen(callback: js.Function2[/* err */ stdLib.Error, /* address */ java.lang.String, scala.Unit]): scala.Unit = js.native
   def listen(port: scala.Double): js.Promise[java.lang.String] = js.native
   def listen(port: scala.Double, address: java.lang.String): js.Promise[java.lang.String] = js.native
   def listen(port: scala.Double, address: java.lang.String, backlog: scala.Double): js.Promise[java.lang.String] = js.native
@@ -360,21 +360,21 @@ trait FastifyInstance[HttpServer, HttpRequest, HttpResponse] extends js.Object {
     port: scala.Double,
     address: java.lang.String,
     backlog: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.Error, /* address */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* address */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def listen(
     port: scala.Double,
     address: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* address */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* address */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def listen(
     port: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.Error, /* address */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* address */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def listen(sockFile: java.lang.String): js.Promise[java.lang.String] = js.native
   def listen(
     sockFile: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* address */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* address */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Defines a OPTIONS route with the given mount path and handler
@@ -445,11 +445,11 @@ trait FastifyInstance[HttpServer, HttpRequest, HttpResponse] extends js.Object {
     * been loaded. It receives an error parameter if something went wrong.
     */
   def ready(): js.Promise[FastifyInstance[HttpServer, HttpRequest, HttpResponse]] = js.native
-  def ready(readyListener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
-  def ready(readyListener: js.Function2[/* err */ nodeLib.Error, /* done */ js.Function, scala.Unit]): scala.Unit = js.native
+  def ready(readyListener: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  def ready(readyListener: js.Function2[/* err */ stdLib.Error, /* done */ js.Function, scala.Unit]): scala.Unit = js.native
   def ready(
     readyListener: js.Function3[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* context */ FastifyInstance[HttpServer, HttpRequest, HttpResponse], 
       /* done */ js.Function, 
       scala.Unit

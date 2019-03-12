@@ -19,16 +19,16 @@ trait Dom extends js.Object {
 object Dom {
   @scala.inline
   def apply(
-    clear: js.Function0[scala.Unit],
-    create: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
+    clear: () => scala.Unit,
+    create: () => scala.Unit,
+    destroy: () => scala.Unit,
     exposedProperties: js.Tuple3[
       mochaccinoLib.mochaccinoLibStrings.window, 
       mochaccinoLib.mochaccinoLibStrings.navigator, 
       mochaccinoLib.mochaccinoLibStrings.document
     ]
   ): Dom = {
-    val __obj = js.Dynamic.literal(clear = clear, create = create, destroy = destroy, exposedProperties = exposedProperties)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), create = js.Any.fromFunction0(create), destroy = js.Any.fromFunction0(destroy), exposedProperties = exposedProperties)
   
     __obj.asInstanceOf[Dom]
   }

@@ -22,19 +22,19 @@ trait IObjVer extends js.Object {
 object IObjVer {
   @scala.inline
   def apply(
-    Clone: js.Function0[IObjVer],
-    CloneFrom: js.Function1[IObjVer, scala.Unit],
+    Clone: () => IObjVer,
+    CloneFrom: IObjVer => scala.Unit,
     ID: scala.Double,
     ObjID: IObjID,
-    Serialize: js.Function0[js.Array[scala.Double]],
-    SetIDs: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
-    SetObjIDAndVersion: js.Function2[IObjID, scala.Double, scala.Unit],
-    ToJSON: js.Function0[java.lang.String],
+    Serialize: () => js.Array[scala.Double],
+    SetIDs: (scala.Double, scala.Double, scala.Double) => scala.Unit,
+    SetObjIDAndVersion: (IObjID, scala.Double) => scala.Unit,
+    ToJSON: () => java.lang.String,
     Type: scala.Double,
-    Unserialize: js.Function1[js.Array[scala.Double], scala.Unit],
+    Unserialize: js.Array[scala.Double] => scala.Unit,
     Version: scala.Double
   ): IObjVer = {
-    val __obj = js.Dynamic.literal(Clone = Clone, CloneFrom = CloneFrom, ID = ID, ObjID = ObjID, Serialize = Serialize, SetIDs = SetIDs, SetObjIDAndVersion = SetObjIDAndVersion, ToJSON = ToJSON, Type = Type, Unserialize = Unserialize, Version = Version)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), CloneFrom = js.Any.fromFunction1(CloneFrom), ID = ID, ObjID = ObjID, Serialize = js.Any.fromFunction0(Serialize), SetIDs = js.Any.fromFunction3(SetIDs), SetObjIDAndVersion = js.Any.fromFunction2(SetObjIDAndVersion), ToJSON = js.Any.fromFunction0(ToJSON), Type = Type, Unserialize = js.Any.fromFunction1(Unserialize), Version = Version)
   
     __obj.asInstanceOf[IObjVer]
   }

@@ -11,8 +11,8 @@ trait CommandArray extends js.Object {
 
 object CommandArray {
   @scala.inline
-  def apply(push: js.Function1[js.Function0[scala.Unit], scala.Double]): CommandArray = {
-    val __obj = js.Dynamic.literal(push = push)
+  def apply(push: js.Function0[scala.Unit] => scala.Double): CommandArray = {
+    val __obj = js.Dynamic.literal(push = js.Any.fromFunction1(push))
   
     __obj.asInstanceOf[CommandArray]
   }

@@ -18,12 +18,12 @@ object Graph2dDrawPointsOption {
   def apply(
     style: Graph2dDrawPointsStyle,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
-    onRender: js.Function0[scala.Boolean] = null,
+    onRender: () => scala.Boolean = null,
     size: scala.Int | scala.Double = null
   ): Graph2dDrawPointsOption = {
     val __obj = js.Dynamic.literal(style = style)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (onRender != null) __obj.updateDynamic("onRender")(onRender)
+    if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction0(onRender))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Graph2dDrawPointsOption]
   }

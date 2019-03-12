@@ -54,15 +54,7 @@ object WMTSOptions {
     logo: java.lang.String | openlayersLib.openlayersMod.olxNs.LogoOptions = null,
     reprojectionErrorThreshold: scala.Int | scala.Double = null,
     requestEncoding: openlayersLib.openlayersMod.sourceNs.WMTSRequestEncoding | java.lang.String = null,
-    tileClass: js.Function6[
-      /* n */ openlayersLib.openlayersMod.ImageTile, 
-      /* coords */ openlayersLib.openlayersMod.TileCoord, 
-      /* state */ openlayersLib.openlayersMod.TileNs.State, 
-      /* s1 */ java.lang.String, 
-      /* s2 */ java.lang.String, 
-      /* type */ openlayersLib.openlayersMod.TileLoadFunctionType, 
-      _
-    ] = null,
+    tileClass: (/* n */ openlayersLib.openlayersMod.ImageTile, /* coords */ openlayersLib.openlayersMod.TileCoord, /* state */ openlayersLib.openlayersMod.TileNs.State, /* s1 */ java.lang.String, /* s2 */ java.lang.String, /* type */ openlayersLib.openlayersMod.TileLoadFunctionType) => _ = null,
     tileLoadFunction: openlayersLib.openlayersMod.TileLoadFunctionType = null,
     tilePixelRatio: scala.Int | scala.Double = null,
     url: java.lang.String = null,
@@ -79,7 +71,7 @@ object WMTSOptions {
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
     if (reprojectionErrorThreshold != null) __obj.updateDynamic("reprojectionErrorThreshold")(reprojectionErrorThreshold.asInstanceOf[js.Any])
     if (requestEncoding != null) __obj.updateDynamic("requestEncoding")(requestEncoding.asInstanceOf[js.Any])
-    if (tileClass != null) __obj.updateDynamic("tileClass")(tileClass)
+    if (tileClass != null) __obj.updateDynamic("tileClass")(js.Any.fromFunction6(tileClass))
     if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(tileLoadFunction)
     if (tilePixelRatio != null) __obj.updateDynamic("tilePixelRatio")(tilePixelRatio.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url)

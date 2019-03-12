@@ -16,8 +16,8 @@ trait OptimizedResize extends js.Object {
 
 object OptimizedResize {
   @scala.inline
-  def apply(init: js.Function1[js.Function0[scala.Unit], scala.Unit]): OptimizedResize = {
-    val __obj = js.Dynamic.literal(init = init)
+  def apply(init: js.Function0[scala.Unit] => scala.Unit): OptimizedResize = {
+    val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init))
   
     __obj.asInstanceOf[OptimizedResize]
   }

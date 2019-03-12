@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("match-media-mock", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def create(): matchDashMediaDashMockLib.matchDashMediaDashMockMod.MatchMediaMock = js.native
+  def create(): MatchMediaMock = js.native
 }
 

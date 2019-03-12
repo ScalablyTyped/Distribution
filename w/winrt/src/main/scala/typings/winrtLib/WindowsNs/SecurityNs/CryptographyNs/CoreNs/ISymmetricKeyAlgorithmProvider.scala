@@ -16,9 +16,9 @@ object ISymmetricKeyAlgorithmProvider {
   def apply(
     algorithmName: java.lang.String,
     blockLength: scala.Double,
-    createSymmetricKey: js.Function1[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, CryptographicKey]
+    createSymmetricKey: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer => CryptographicKey
   ): ISymmetricKeyAlgorithmProvider = {
-    val __obj = js.Dynamic.literal(algorithmName = algorithmName, blockLength = blockLength, createSymmetricKey = createSymmetricKey)
+    val __obj = js.Dynamic.literal(algorithmName = algorithmName, blockLength = blockLength, createSymmetricKey = js.Any.fromFunction1(createSymmetricKey))
   
     __obj.asInstanceOf[ISymmetricKeyAlgorithmProvider]
   }

@@ -87,25 +87,21 @@ object IContainer {
     defaultWidth: scala.Int | scala.Double = null,
     detachOnRemove: js.UndefOr[scala.Boolean] = js.undefined,
     enableColumnHide: js.UndefOr[scala.Boolean] = js.undefined,
-    getColumnCount: js.Function0[scala.Unit] = null,
-    getColumnMenu: js.Function1[/* headerContainer */ js.UndefOr[js.Any], scala.Unit] = null,
-    getFullWidth: js.Function0[scala.Unit] = null,
-    getGridColumns: js.Function2[
-      /* inResult */ js.UndefOr[js.Any], 
-      /* hiddenAncestor */ js.UndefOr[js.Any], 
-      extjsLib.ExtNs.Array
-    ] = null,
-    getHeaderAtIndex: js.Function1[/* index */ js.UndefOr[scala.Double], scala.Unit] = null,
-    getHeaderIndex: js.Function1[/* header */ js.UndefOr[extjsLib.ExtNs.gridNs.columnNs.IColumn], scala.Double] = null,
-    getMenuItems: js.Function0[extjsLib.ExtNs.Array] = null,
-    getVisibleGridColumns: js.Function0[extjsLib.ExtNs.Array] = null,
-    getVisibleHeaderClosestToIndex: js.Function1[/* index */ js.UndefOr[scala.Double], scala.Unit] = null,
+    getColumnCount: () => scala.Unit = null,
+    getColumnMenu: /* headerContainer */ js.UndefOr[js.Any] => scala.Unit = null,
+    getFullWidth: () => scala.Unit = null,
+    getGridColumns: (/* inResult */ js.UndefOr[js.Any], /* hiddenAncestor */ js.UndefOr[js.Any]) => extjsLib.ExtNs.Array = null,
+    getHeaderAtIndex: /* index */ js.UndefOr[scala.Double] => scala.Unit = null,
+    getHeaderIndex: /* header */ js.UndefOr[extjsLib.ExtNs.gridNs.columnNs.IColumn] => scala.Double = null,
+    getMenuItems: () => extjsLib.ExtNs.Array = null,
+    getVisibleGridColumns: () => extjsLib.ExtNs.Array = null,
+    getVisibleHeaderClosestToIndex: /* index */ js.UndefOr[scala.Double] => scala.Unit = null,
     isGroupHeader: js.UndefOr[scala.Boolean] = js.undefined,
-    isLayoutRoot: js.Function0[scala.Unit] = null,
-    onAdd: js.Function1[/* c */ js.UndefOr[js.Any], scala.Unit] = null,
-    onDestroy: js.Function0[scala.Unit] = null,
-    onRemove: js.Function1[/* c */ js.UndefOr[js.Any], scala.Unit] = null,
-    onShow: js.Function0[scala.Unit] = null,
+    isLayoutRoot: () => scala.Unit = null,
+    onAdd: /* c */ js.UndefOr[js.Any] => scala.Unit = null,
+    onDestroy: () => scala.Unit = null,
+    onRemove: /* c */ js.UndefOr[js.Any] => scala.Unit = null,
+    onShow: () => scala.Unit = null,
     `sealed`: js.UndefOr[scala.Boolean] = js.undefined,
     sortable: js.UndefOr[scala.Boolean] = js.undefined,
     weight: scala.Int | scala.Double = null
@@ -118,21 +114,21 @@ object IContainer {
     if (defaultWidth != null) __obj.updateDynamic("defaultWidth")(defaultWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(detachOnRemove)) __obj.updateDynamic("detachOnRemove")(detachOnRemove)
     if (!js.isUndefined(enableColumnHide)) __obj.updateDynamic("enableColumnHide")(enableColumnHide)
-    if (getColumnCount != null) __obj.updateDynamic("getColumnCount")(getColumnCount)
-    if (getColumnMenu != null) __obj.updateDynamic("getColumnMenu")(getColumnMenu)
-    if (getFullWidth != null) __obj.updateDynamic("getFullWidth")(getFullWidth)
-    if (getGridColumns != null) __obj.updateDynamic("getGridColumns")(getGridColumns)
-    if (getHeaderAtIndex != null) __obj.updateDynamic("getHeaderAtIndex")(getHeaderAtIndex)
-    if (getHeaderIndex != null) __obj.updateDynamic("getHeaderIndex")(getHeaderIndex)
-    if (getMenuItems != null) __obj.updateDynamic("getMenuItems")(getMenuItems)
-    if (getVisibleGridColumns != null) __obj.updateDynamic("getVisibleGridColumns")(getVisibleGridColumns)
-    if (getVisibleHeaderClosestToIndex != null) __obj.updateDynamic("getVisibleHeaderClosestToIndex")(getVisibleHeaderClosestToIndex)
+    if (getColumnCount != null) __obj.updateDynamic("getColumnCount")(js.Any.fromFunction0(getColumnCount))
+    if (getColumnMenu != null) __obj.updateDynamic("getColumnMenu")(js.Any.fromFunction1(getColumnMenu))
+    if (getFullWidth != null) __obj.updateDynamic("getFullWidth")(js.Any.fromFunction0(getFullWidth))
+    if (getGridColumns != null) __obj.updateDynamic("getGridColumns")(js.Any.fromFunction2(getGridColumns))
+    if (getHeaderAtIndex != null) __obj.updateDynamic("getHeaderAtIndex")(js.Any.fromFunction1(getHeaderAtIndex))
+    if (getHeaderIndex != null) __obj.updateDynamic("getHeaderIndex")(js.Any.fromFunction1(getHeaderIndex))
+    if (getMenuItems != null) __obj.updateDynamic("getMenuItems")(js.Any.fromFunction0(getMenuItems))
+    if (getVisibleGridColumns != null) __obj.updateDynamic("getVisibleGridColumns")(js.Any.fromFunction0(getVisibleGridColumns))
+    if (getVisibleHeaderClosestToIndex != null) __obj.updateDynamic("getVisibleHeaderClosestToIndex")(js.Any.fromFunction1(getVisibleHeaderClosestToIndex))
     if (!js.isUndefined(isGroupHeader)) __obj.updateDynamic("isGroupHeader")(isGroupHeader)
-    if (isLayoutRoot != null) __obj.updateDynamic("isLayoutRoot")(isLayoutRoot)
-    if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd)
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(onDestroy)
-    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (isLayoutRoot != null) __obj.updateDynamic("isLayoutRoot")(js.Any.fromFunction0(isLayoutRoot))
+    if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction1(onAdd))
+    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
+    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     if (!js.isUndefined(`sealed`)) __obj.updateDynamic("sealed")(`sealed`)
     if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])

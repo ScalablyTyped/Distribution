@@ -13,7 +13,7 @@ object ^ extends js.Object {
     */
   var ALWAYS: java.lang.String = js.native
   var NEVER: java.lang.String = js.native
-  def addCachedAuthorizationHeader(request: ibmDashMobilefirstLib.WLAuthorizationManagerNs.RequestObject): jqueryLib.JQueryDeferred[ibmDashMobilefirstLib.WLAuthorizationManagerNs.RequestObject] = js.native
+  def addCachedAuthorizationHeader(request: RequestObject): jqueryLib.JQueryDeferred[RequestObject] = js.native
   def getAppIdentity(): jqueryLib.JQueryDeferred[_] = js.native
   def getAuthorizationScope(responseAuthenticationHeader: java.lang.String): java.lang.String = js.native
   /**

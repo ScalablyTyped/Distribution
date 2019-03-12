@@ -17,7 +17,7 @@ trait NavigatorOptions extends js.Object {
   /**
     * @description Function that is called when the transition has ended.
     */
-  var callback: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var callback: js.UndefOr[js.Function] = js.undefined
 }
 
 object NavigatorOptions {
@@ -25,7 +25,7 @@ object NavigatorOptions {
   def apply(
     animation: java.lang.String = null,
     animationOptions: java.lang.String = null,
-    callback: coreDashJsLib.Function = null
+    callback: js.Function = null
   ): NavigatorOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation)

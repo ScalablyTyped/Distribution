@@ -11,10 +11,8 @@ trait IHardwareIdentificationStatics extends js.Object {
 
 object IHardwareIdentificationStatics {
   @scala.inline
-  def apply(
-    getPackageSpecificToken: js.Function1[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, HardwareToken]
-  ): IHardwareIdentificationStatics = {
-    val __obj = js.Dynamic.literal(getPackageSpecificToken = getPackageSpecificToken)
+  def apply(getPackageSpecificToken: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer => HardwareToken): IHardwareIdentificationStatics = {
+    val __obj = js.Dynamic.literal(getPackageSpecificToken = js.Any.fromFunction1(getPackageSpecificToken))
   
     __obj.asInstanceOf[IHardwareIdentificationStatics]
   }

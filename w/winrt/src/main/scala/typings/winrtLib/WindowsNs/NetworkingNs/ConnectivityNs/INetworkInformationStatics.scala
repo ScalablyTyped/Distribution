@@ -21,24 +21,15 @@ trait INetworkInformationStatics extends js.Object {
 object INetworkInformationStatics {
   @scala.inline
   def apply(
-    getConnectionProfiles: js.Function0[winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ConnectionProfile]],
-    getHostNames: js.Function0[
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtLib.WindowsNs.NetworkingNs.HostName]
-    ],
-    getInternetConnectionProfile: js.Function0[ConnectionProfile],
-    getLanIdentifiers: js.Function0[winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[LanIdentifier]],
-    getProxyConfigurationAsync: js.Function1[
-      winrtLib.WindowsNs.FoundationNs.Uri, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[ProxyConfiguration]
-    ],
-    getSortedEndpointPairs: js.Function2[
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[winrtLib.WindowsNs.NetworkingNs.EndpointPair], 
-      winrtLib.WindowsNs.NetworkingNs.HostNameSortOptions, 
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtLib.WindowsNs.NetworkingNs.EndpointPair]
-    ],
+    getConnectionProfiles: () => winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ConnectionProfile],
+    getHostNames: () => winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtLib.WindowsNs.NetworkingNs.HostName],
+    getInternetConnectionProfile: () => ConnectionProfile,
+    getLanIdentifiers: () => winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[LanIdentifier],
+    getProxyConfigurationAsync: winrtLib.WindowsNs.FoundationNs.Uri => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[ProxyConfiguration],
+    getSortedEndpointPairs: (winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[winrtLib.WindowsNs.NetworkingNs.EndpointPair], winrtLib.WindowsNs.NetworkingNs.HostNameSortOptions) => winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtLib.WindowsNs.NetworkingNs.EndpointPair],
     onnetworkstatuschanged: js.Any
   ): INetworkInformationStatics = {
-    val __obj = js.Dynamic.literal(getConnectionProfiles = getConnectionProfiles, getHostNames = getHostNames, getInternetConnectionProfile = getInternetConnectionProfile, getLanIdentifiers = getLanIdentifiers, getProxyConfigurationAsync = getProxyConfigurationAsync, getSortedEndpointPairs = getSortedEndpointPairs, onnetworkstatuschanged = onnetworkstatuschanged)
+    val __obj = js.Dynamic.literal(getConnectionProfiles = js.Any.fromFunction0(getConnectionProfiles), getHostNames = js.Any.fromFunction0(getHostNames), getInternetConnectionProfile = js.Any.fromFunction0(getInternetConnectionProfile), getLanIdentifiers = js.Any.fromFunction0(getLanIdentifiers), getProxyConfigurationAsync = js.Any.fromFunction1(getProxyConfigurationAsync), getSortedEndpointPairs = js.Any.fromFunction2(getSortedEndpointPairs), onnetworkstatuschanged = onnetworkstatuschanged)
   
     __obj.asInstanceOf[INetworkInformationStatics]
   }

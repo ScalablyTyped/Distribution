@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class ListDataFormat protected () extends js.Object {
   val AllowFillIn: scala.Boolean = js.native
-  val Application: Application = js.native
-  val Choices: activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
+  val Choices: stdLib.SafeArray[java.lang.String] = js.native
   val Creator: XlCreator = js.native
   val DecimalPlaces: scala.Double = js.native
   val DefaultValue: js.Any = js.native

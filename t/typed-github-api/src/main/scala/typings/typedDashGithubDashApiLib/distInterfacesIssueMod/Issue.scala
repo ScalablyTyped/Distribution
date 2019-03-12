@@ -42,20 +42,20 @@ object Issue {
     isOpen: scala.Boolean,
     isPullRequest: scala.Boolean,
     labels: js.Array[typedDashGithubDashApiLib.distInterfacesLabelMod.Label],
-    loadAsync: js.Function0[js.Promise[Issue | scala.Null]],
-    loadRepositoryAsync: js.Function0[js.Promise[typedDashGithubDashApiLib.distInterfacesRepositoryMod.Repository]],
+    loadAsync: () => js.Promise[Issue | scala.Null],
+    loadRepositoryAsync: () => js.Promise[typedDashGithubDashApiLib.distInterfacesRepositoryMod.Repository],
     locked: scala.Boolean,
     number: scala.Double,
     state: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.open | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.closed,
     title: java.lang.String,
     updated: momentLib.momentMod.momentNs.Moment,
-    wasOpen: js.Function1[momentLib.momentMod.momentNs.Moment, scala.Boolean],
+    wasOpen: momentLib.momentMod.momentNs.Moment => scala.Boolean,
     assignee: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary = null,
     closed: momentLib.momentMod.momentNs.Moment = null,
     closedBy: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary = null,
     milestone: typedDashGithubDashApiLib.distInterfacesMilestoneMod.Milestone = null
   ): Issue = {
-    val __obj = js.Dynamic.literal(age = age, assignees = assignees, body = body, comments = comments, created = created, createdBy = createdBy, htmlUri = htmlUri, id = id, isOpen = isOpen, isPullRequest = isPullRequest, labels = labels, loadAsync = loadAsync, loadRepositoryAsync = loadRepositoryAsync, locked = locked, number = number, state = state.asInstanceOf[js.Any], title = title, updated = updated, wasOpen = wasOpen)
+    val __obj = js.Dynamic.literal(age = age, assignees = assignees, body = body, comments = comments, created = created, createdBy = createdBy, htmlUri = htmlUri, id = id, isOpen = isOpen, isPullRequest = isPullRequest, labels = labels, loadAsync = js.Any.fromFunction0(loadAsync), loadRepositoryAsync = js.Any.fromFunction0(loadRepositoryAsync), locked = locked, number = number, state = state.asInstanceOf[js.Any], title = title, updated = updated, wasOpen = js.Any.fromFunction1(wasOpen))
     if (assignee != null) __obj.updateDynamic("assignee")(assignee)
     if (closed != null) __obj.updateDynamic("closed")(closed)
     if (closedBy != null) __obj.updateDynamic("closedBy")(closedBy)

@@ -44,18 +44,13 @@ object CopyOptions {
     clobber: js.UndefOr[scala.Boolean] = js.undefined,
     filter: stdLib.RegExp | (js.Function2[/* src */ java.lang.String, /* dst */ java.lang.String, scala.Boolean]) = null,
     overwrite: js.UndefOr[scala.Boolean] = js.undefined,
-    transform: js.Function3[
-      /* readStream */ nodeLib.NodeJSNs.ReadableStream, 
-      /* writeStream */ nodeLib.NodeJSNs.WritableStream, 
-      /* file */ adoneLib.Anon_AtimeMode, 
-      scala.Unit
-    ] = null
+    transform: (/* readStream */ nodeLib.NodeJSNs.ReadableStream, /* writeStream */ nodeLib.NodeJSNs.WritableStream, /* file */ adoneLib.Anon_AtimeMode) => scala.Unit = null
   ): CopyOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(clobber)) __obj.updateDynamic("clobber")(clobber)
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction3(transform))
     __obj.asInstanceOf[CopyOptions]
   }
 }

@@ -59,7 +59,7 @@ object Route53ResolverNs extends js.Object {
     /**
       * A unique string that identifies the request and that allows failed requests to be retried without the risk of executing the operation twice. CreatorRequestId can be any unique string, for example, a date/time stamp. 
       */
-    var CreatorRequestId: CreatorRequestId
+    var CreatorRequestId: awsDashSdkLib.clientsRoute53resolverMod.Route53ResolverNs.CreatorRequestId
     /**
       * Specify the applicable value:    INBOUND: Resolver forwards DNS queries to the DNS service for a VPC from your network or another VPC    OUTBOUND: Resolver forwards DNS queries from the DNS service for a VPC to your network or another VPC  
       */
@@ -75,7 +75,7 @@ object Route53ResolverNs extends js.Object {
     /**
       * The ID of one or more security groups that you want to use to control access to this VPC. The security group that you specify must include one or more inbound rules (for inbound resolver endpoints) or outbound rules (for outbound resolver endpoints).
       */
-    var SecurityGroupIds: SecurityGroupIds
+    var SecurityGroupIds: awsDashSdkLib.clientsRoute53resolverMod.Route53ResolverNs.SecurityGroupIds
     /**
       * A list of the tag keys and values that you want to associate with the endpoint.
       */
@@ -93,11 +93,11 @@ object Route53ResolverNs extends js.Object {
     /**
       * A unique string that identifies the request and that allows failed requests to be retried without the risk of executing the operation twice. CreatorRequestId can be any unique string, for example, a date/time stamp. 
       */
-    var CreatorRequestId: CreatorRequestId
+    var CreatorRequestId: awsDashSdkLib.clientsRoute53resolverMod.Route53ResolverNs.CreatorRequestId
     /**
       * DNS queries for this domain name are forwarded to the IP addresses that you specify in TargetIps. If a query matches multiple resolver rules (example.com and www.example.com), outbound DNS queries are routed using the resolver rule that contains the most specific domain name (www.example.com).
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsRoute53resolverMod.Route53ResolverNs.DomainName
     /**
       * A friendly name that lets you easily find a rule in the Resolver dashboard in the Route 53 console.
       */
@@ -234,7 +234,7 @@ object Route53ResolverNs extends js.Object {
     /**
       * The ID of the resolver rule policy that you want to get information about.
       */
-    var Arn: Arn
+    var Arn: awsDashSdkLib.clientsRoute53resolverMod.Route53ResolverNs.Arn
   }
   
   trait GetResolverRulePolicyResponse extends js.Object {
@@ -266,7 +266,7 @@ object Route53ResolverNs extends js.Object {
     /**
       * The subnet that contains the IP address.
       */
-    var SubnetId: SubnetId
+    var SubnetId: awsDashSdkLib.clientsRoute53resolverMod.Route53ResolverNs.SubnetId
   }
   
   trait IpAddressResponse extends js.Object {
@@ -465,11 +465,11 @@ object Route53ResolverNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the account that you want to grant permissions to.
       */
-    var Arn: Arn
+    var Arn: awsDashSdkLib.clientsRoute53resolverMod.Route53ResolverNs.Arn
     /**
       * An AWS Identity and Access Management policy statement that lists the permissions that you want to grant to another AWS account.
       */
-    var ResolverRulePolicy: ResolverRulePolicy
+    var ResolverRulePolicy: awsDashSdkLib.clientsRoute53resolverMod.Route53ResolverNs.ResolverRulePolicy
   }
   
   trait PutResolverRulePolicyResponse extends js.Object {
@@ -651,7 +651,7 @@ object Route53ResolverNs extends js.Object {
     /**
       * One IP address that you want to forward DNS queries to. You can specify only IPv4 addresses.
       */
-    var Ip: Ip
+    var Ip: awsDashSdkLib.clientsRoute53resolverMod.Route53ResolverNs.Ip
     /**
       * The port at Ip that you want to forward DNS queries to.
       */

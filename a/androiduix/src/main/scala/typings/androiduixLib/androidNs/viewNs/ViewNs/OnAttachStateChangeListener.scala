@@ -13,10 +13,10 @@ trait OnAttachStateChangeListener extends js.Object {
 object OnAttachStateChangeListener {
   @scala.inline
   def apply(
-    onViewAttachedToWindow: js.Function1[androiduixLib.androidNs.viewNs.View, js.Any],
-    onViewDetachedFromWindow: js.Function1[androiduixLib.androidNs.viewNs.View, js.Any]
+    onViewAttachedToWindow: androiduixLib.androidNs.viewNs.View => js.Any,
+    onViewDetachedFromWindow: androiduixLib.androidNs.viewNs.View => js.Any
   ): OnAttachStateChangeListener = {
-    val __obj = js.Dynamic.literal(onViewAttachedToWindow = onViewAttachedToWindow, onViewDetachedFromWindow = onViewDetachedFromWindow)
+    val __obj = js.Dynamic.literal(onViewAttachedToWindow = js.Any.fromFunction1(onViewAttachedToWindow), onViewDetachedFromWindow = js.Any.fromFunction1(onViewDetachedFromWindow))
   
     __obj.asInstanceOf[OnAttachStateChangeListener]
   }

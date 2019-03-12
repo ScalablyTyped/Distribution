@@ -25,15 +25,15 @@ trait IUserMultiFieldExpression extends js.Object {
 object IUserMultiFieldExpression {
   @scala.inline
   def apply(
-    EqualTo: js.Function1[js.Any, IExpression],
-    Includes: js.Function1[js.Any, IExpression],
-    IncludesSuchItemThat: js.Function0[IUserFieldExpression],
-    IsNotNull: js.Function0[IExpression],
-    IsNull: js.Function0[IExpression],
-    NotEqualTo: js.Function1[js.Any, IExpression],
-    NotIncludes: js.Function1[js.Any, IExpression]
+    EqualTo: js.Any => IExpression,
+    Includes: js.Any => IExpression,
+    IncludesSuchItemThat: () => IUserFieldExpression,
+    IsNotNull: () => IExpression,
+    IsNull: () => IExpression,
+    NotEqualTo: js.Any => IExpression,
+    NotIncludes: js.Any => IExpression
   ): IUserMultiFieldExpression = {
-    val __obj = js.Dynamic.literal(EqualTo = EqualTo, Includes = Includes, IncludesSuchItemThat = IncludesSuchItemThat, IsNotNull = IsNotNull, IsNull = IsNull, NotEqualTo = NotEqualTo, NotIncludes = NotIncludes)
+    val __obj = js.Dynamic.literal(EqualTo = js.Any.fromFunction1(EqualTo), Includes = js.Any.fromFunction1(Includes), IncludesSuchItemThat = js.Any.fromFunction0(IncludesSuchItemThat), IsNotNull = js.Any.fromFunction0(IsNotNull), IsNull = js.Any.fromFunction0(IsNull), NotEqualTo = js.Any.fromFunction1(NotEqualTo), NotIncludes = js.Any.fromFunction1(NotIncludes))
   
     __obj.asInstanceOf[IUserMultiFieldExpression]
   }

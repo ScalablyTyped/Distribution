@@ -12,11 +12,8 @@ trait hasMobilePreferred extends js.Object {
 
 object hasMobilePreferred {
   @scala.inline
-  def apply(
-    isMobilePreferred: js.Function0[scala.Boolean],
-    setMobilePreferred: js.Function1[scala.Boolean, scala.Unit]
-  ): hasMobilePreferred = {
-    val __obj = js.Dynamic.literal(isMobilePreferred = isMobilePreferred, setMobilePreferred = setMobilePreferred)
+  def apply(isMobilePreferred: () => scala.Boolean, setMobilePreferred: scala.Boolean => scala.Unit): hasMobilePreferred = {
+    val __obj = js.Dynamic.literal(isMobilePreferred = js.Any.fromFunction0(isMobilePreferred), setMobilePreferred = js.Any.fromFunction1(setMobilePreferred))
   
     __obj.asInstanceOf[hasMobilePreferred]
   }

@@ -27,7 +27,7 @@ object DrawersNs extends js.Object {
       * @param _context The context for a canvas that this drawer will draw to.
       * @param _drawStep The draw step logic that actually draws.
       */
-    def this(_context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D, _drawStep: plottableLib.buildSrcDrawersCanvasDrawerMod.CanvasDrawStep) = this()
+    def this(_context: stdLib.CanvasRenderingContext2D, _drawStep: plottableLib.buildSrcDrawersCanvasDrawerMod.CanvasDrawStep) = this()
   }
   
   @js.native
@@ -45,7 +45,7 @@ object DrawersNs extends js.Object {
       * @param _canvasDrawStep The DrawStep to be fed into a new CanvasDrawer whenever useCanvas is called
       */
     def this(_svgDrawerFactory: js.Function0[plottableLib.buildSrcDrawersSvgDrawerMod.SVGDrawer], _canvasDrawerFactory: js.Function1[
-          /* ctx */ d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D, 
+          /* ctx */ stdLib.CanvasRenderingContext2D, 
           plottableLib.buildSrcDrawersCanvasDrawerMod.CanvasDrawer
         ]) = this()
   }
@@ -53,7 +53,7 @@ object DrawersNs extends js.Object {
   @js.native
   class RectangleCanvasDrawer protected ()
     extends plottableLib.buildSrcDrawersMod.RectangleCanvasDrawer {
-    def this(ctx: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D) = this()
+    def this(ctx: stdLib.CanvasRenderingContext2D) = this()
   }
   
   @js.native
@@ -106,21 +106,18 @@ object DrawersNs extends js.Object {
     stepBuffer: plottableLib.buildSrcDrawersCanvasBufferMod.CanvasBuffer
   ): plottableLib.buildSrcDrawersCanvasDrawerMod.CanvasDrawStep = js.native
   def renderArea(
-    context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D,
+    context: stdLib.CanvasRenderingContext2D,
     d3Area: d3DashShapeLib.d3DashShapeMod.Area[_],
     data: js.Array[_],
     style: plottableLib.buildSrcDrawersCanvasDrawerMod.IFillStyle with plottableLib.buildSrcDrawersCanvasDrawerMod.IStrokeStyle
   ): scala.Unit = js.native
   def renderLine(
-    context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D,
+    context: stdLib.CanvasRenderingContext2D,
     d3Line: d3DashShapeLib.d3DashShapeMod.Line[_],
     data: js.Array[_],
     style: plottableLib.buildSrcDrawersCanvasDrawerMod.IStrokeStyle
   ): scala.Unit = js.native
-  def renderPathWithStyle(
-    context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D,
-    style: stdLib.Record[java.lang.String, _]
-  ): scala.Unit = js.native
+  def renderPathWithStyle(context: stdLib.CanvasRenderingContext2D, style: stdLib.Record[java.lang.String, _]): scala.Unit = js.native
   def resolveAttributes(
     projector: plottableLib.buildSrcCoreInterfacesMod.AttributeToAppliedProjector,
     attrKeys: js.Array[java.lang.String],

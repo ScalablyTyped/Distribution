@@ -19,12 +19,12 @@ trait XAnyCompareFactory
 object XAnyCompareFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createAnyCompareByName: js.Function1[java.lang.String, XAnyCompare],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createAnyCompareByName: java.lang.String => XAnyCompare,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XAnyCompareFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createAnyCompareByName = createAnyCompareByName, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createAnyCompareByName = js.Any.fromFunction1(createAnyCompareByName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XAnyCompareFactory]
   }

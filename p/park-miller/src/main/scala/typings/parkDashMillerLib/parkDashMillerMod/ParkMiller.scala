@@ -16,13 +16,13 @@ trait ParkMiller extends js.Object {
 object ParkMiller {
   @scala.inline
   def apply(
-    boolean: js.Function0[scala.Boolean],
-    float: js.Function0[scala.Double],
-    floatInRange: js.Function2[scala.Double, scala.Double, scala.Double],
-    integer: js.Function0[scala.Double],
-    integerInRange: js.Function2[scala.Double, scala.Double, scala.Double]
+    boolean: () => scala.Boolean,
+    float: () => scala.Double,
+    floatInRange: (scala.Double, scala.Double) => scala.Double,
+    integer: () => scala.Double,
+    integerInRange: (scala.Double, scala.Double) => scala.Double
   ): ParkMiller = {
-    val __obj = js.Dynamic.literal(boolean = boolean, float = float, floatInRange = floatInRange, integer = integer, integerInRange = integerInRange)
+    val __obj = js.Dynamic.literal(boolean = js.Any.fromFunction0(boolean), float = js.Any.fromFunction0(float), floatInRange = js.Any.fromFunction2(floatInRange), integer = js.Any.fromFunction0(integer), integerInRange = js.Any.fromFunction2(integerInRange))
   
     __obj.asInstanceOf[ParkMiller]
   }

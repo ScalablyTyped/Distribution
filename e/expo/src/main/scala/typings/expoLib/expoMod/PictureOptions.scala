@@ -17,13 +17,13 @@ object PictureOptions {
   def apply(
     base64: js.UndefOr[scala.Boolean] = js.undefined,
     exif: js.UndefOr[scala.Boolean] = js.undefined,
-    onPictureSaved: js.Function1[/* data */ PictureResponse, scala.Unit] = null,
+    onPictureSaved: /* data */ PictureResponse => scala.Unit = null,
     quality: scala.Int | scala.Double = null
   ): PictureOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(base64)) __obj.updateDynamic("base64")(base64)
     if (!js.isUndefined(exif)) __obj.updateDynamic("exif")(exif)
-    if (onPictureSaved != null) __obj.updateDynamic("onPictureSaved")(onPictureSaved)
+    if (onPictureSaved != null) __obj.updateDynamic("onPictureSaved")(js.Any.fromFunction1(onPictureSaved))
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     __obj.asInstanceOf[PictureOptions]
   }

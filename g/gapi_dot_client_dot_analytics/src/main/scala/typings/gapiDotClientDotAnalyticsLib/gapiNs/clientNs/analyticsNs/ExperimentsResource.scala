@@ -23,32 +23,14 @@ trait ExperimentsResource extends js.Object {
 object ExperimentsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltExperimentId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltExperimentId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Experiment]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Experiment]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresultsOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Experiments]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltExperimentId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Experiment]
-    ],
-    update: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltExperimentId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Experiment]
-    ]
+    delete: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltExperimentId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltExperimentId => gapiDotClientLib.gapiNs.clientNs.Request[Experiment],
+    insert: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Experiment],
+    list: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresultsOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Experiments],
+    patch: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltExperimentId => gapiDotClientLib.gapiNs.clientNs.Request[Experiment],
+    update: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltExperimentId => gapiDotClientLib.gapiNs.clientNs.Request[Experiment]
   ): ExperimentsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[ExperimentsResource]
   }

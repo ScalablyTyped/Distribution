@@ -47,13 +47,8 @@ object JQueryFormOptions {
       JQueryFormOptions, 
       jqueryLib.jqueryLibNumbers.`false` | scala.Unit
     ] = null,
-    beforeSerialize: js.Function2[/* $form */ JQuery, /* options */ JQueryFormOptions, scala.Boolean] = null,
-    beforeSubmit: js.Function3[
-      /* formData */ js.Array[_], 
-      /* $form */ JQuery, 
-      /* options */ JQueryFormOptions, 
-      scala.Boolean
-    ] = null,
+    beforeSerialize: (/* $form */ JQuery, /* options */ JQueryFormOptions) => scala.Boolean = null,
+    beforeSubmit: (/* formData */ js.Array[_], /* $form */ JQuery, /* options */ JQueryFormOptions) => scala.Boolean = null,
     cache: js.UndefOr[scala.Boolean] = js.undefined,
     clearForm: js.UndefOr[scala.Boolean] = js.undefined,
     complete: jqueryLib.JQueryNs.TypeOrArray[jqueryLib.JQueryNs.AjaxNs.CompleteCallback[js.Any]] = null,
@@ -63,7 +58,7 @@ object JQueryFormOptions {
     converters: jqueryLib.JQueryNs.PlainObject[(js.Function1[/* value */ _, _]) | jqueryLib.jqueryLibNumbers.`true`] = null,
     crossDomain: js.UndefOr[scala.Boolean] = js.undefined,
     data: jqueryLib.JQueryNs.PlainObject[_] | java.lang.String = null,
-    dataFilter: js.Function2[/* data */ java.lang.String, /* type */ java.lang.String, _] = null,
+    dataFilter: (/* data */ java.lang.String, /* type */ java.lang.String) => _ = null,
     dataType: jqueryLib.jqueryLibStrings.xml | jqueryLib.jqueryLibStrings.html | jqueryLib.jqueryLibStrings.script | jqueryLib.jqueryLibStrings.json | jqueryLib.jqueryLibStrings.jsonp | jqueryLib.jqueryLibStrings.text | java.lang.String = null,
     error: jqueryLib.JQueryNs.TypeOrArray[jqueryLib.JQueryNs.AjaxNs.ErrorCallback[js.Any]] = null,
     forceSync: js.UndefOr[scala.Boolean] = js.undefined,
@@ -90,24 +85,18 @@ object JQueryFormOptions {
     timeout: scala.Int | scala.Double = null,
     traditional: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: java.lang.String = null,
-    uploadProgress: js.Function4[
-      /* event */ stdLib.ProgressEvent, 
-      /* position */ scala.Double, 
-      /* total */ scala.Double, 
-      /* percentComplete */ scala.Double, 
-      scala.Unit
-    ] = null,
+    uploadProgress: (/* event */ stdLib.ProgressEvent, /* position */ scala.Double, /* total */ scala.Double, /* percentComplete */ scala.Double) => scala.Unit = null,
     url: java.lang.String = null,
     username: java.lang.String = null,
-    xhr: js.Function0[stdLib.XMLHttpRequest] = null,
+    xhr: () => stdLib.XMLHttpRequest = null,
     xhrFields: jqueryLib.JQueryNs.AjaxNs.XHRFields = null
   ): JQueryFormOptions = {
     val __obj = js.Dynamic.literal()
     if (accepts != null) __obj.updateDynamic("accepts")(accepts)
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
     if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)
-    if (beforeSerialize != null) __obj.updateDynamic("beforeSerialize")(beforeSerialize)
-    if (beforeSubmit != null) __obj.updateDynamic("beforeSubmit")(beforeSubmit)
+    if (beforeSerialize != null) __obj.updateDynamic("beforeSerialize")(js.Any.fromFunction2(beforeSerialize))
+    if (beforeSubmit != null) __obj.updateDynamic("beforeSubmit")(js.Any.fromFunction3(beforeSubmit))
     if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
     if (!js.isUndefined(clearForm)) __obj.updateDynamic("clearForm")(clearForm)
     if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
@@ -117,7 +106,7 @@ object JQueryFormOptions {
     if (converters != null) __obj.updateDynamic("converters")(converters)
     if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataFilter != null) __obj.updateDynamic("dataFilter")(dataFilter)
+    if (dataFilter != null) __obj.updateDynamic("dataFilter")(js.Any.fromFunction2(dataFilter))
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (!js.isUndefined(forceSync)) __obj.updateDynamic("forceSync")(forceSync)
@@ -144,10 +133,10 @@ object JQueryFormOptions {
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (!js.isUndefined(traditional)) __obj.updateDynamic("traditional")(traditional)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (uploadProgress != null) __obj.updateDynamic("uploadProgress")(uploadProgress)
+    if (uploadProgress != null) __obj.updateDynamic("uploadProgress")(js.Any.fromFunction4(uploadProgress))
     if (url != null) __obj.updateDynamic("url")(url)
     if (username != null) __obj.updateDynamic("username")(username)
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    if (xhr != null) __obj.updateDynamic("xhr")(js.Any.fromFunction0(xhr))
     if (xhrFields != null) __obj.updateDynamic("xhrFields")(xhrFields)
     __obj.asInstanceOf[JQueryFormOptions]
   }

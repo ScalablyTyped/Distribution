@@ -46,19 +46,19 @@ object ITrigger {
     IText: IText = null,
     componentLayout: js.Any = null,
     editable: js.UndefOr[scala.Boolean] = js.undefined,
-    getLabelableRenderData: js.Function0[_] = null,
-    getSubTplData: js.Function0[_] = null,
-    getTriggerWidth: js.Function0[scala.Double] = null,
+    getLabelableRenderData: () => _ = null,
+    getSubTplData: () => _ = null,
+    getTriggerWidth: () => scala.Double = null,
     hideTrigger: js.UndefOr[scala.Boolean] = js.undefined,
-    initComponent: js.Function0[scala.Unit] = null,
+    initComponent: () => scala.Unit = null,
     inputCell: extjsLib.ExtNs.IElement = null,
-    onRender: js.Function0[scala.Unit] = null,
-    onTriggerClick: js.Function1[/* e */ js.UndefOr[extjsLib.ExtNs.IEventObject], scala.Unit] = null,
+    onRender: () => scala.Unit = null,
+    onTriggerClick: /* e */ js.UndefOr[extjsLib.ExtNs.IEventObject] => scala.Unit = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     repeatTriggerClick: js.UndefOr[scala.Boolean] = js.undefined,
     selectOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
-    setEditable: js.Function1[/* editable */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setReadOnly: js.Function1[/* readOnly */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setEditable: /* editable */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setReadOnly: /* readOnly */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     triggerBaseCls: java.lang.String = null,
     triggerCls: java.lang.String = null,
     triggerEl: extjsLib.ExtNs.ICompositeElement = null,
@@ -70,19 +70,19 @@ object ITrigger {
     js.Dynamic.global.Object.assign(__obj, IText)
     if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
     if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
-    if (getLabelableRenderData != null) __obj.updateDynamic("getLabelableRenderData")(getLabelableRenderData)
-    if (getSubTplData != null) __obj.updateDynamic("getSubTplData")(getSubTplData)
-    if (getTriggerWidth != null) __obj.updateDynamic("getTriggerWidth")(getTriggerWidth)
+    if (getLabelableRenderData != null) __obj.updateDynamic("getLabelableRenderData")(js.Any.fromFunction0(getLabelableRenderData))
+    if (getSubTplData != null) __obj.updateDynamic("getSubTplData")(js.Any.fromFunction0(getSubTplData))
+    if (getTriggerWidth != null) __obj.updateDynamic("getTriggerWidth")(js.Any.fromFunction0(getTriggerWidth))
     if (!js.isUndefined(hideTrigger)) __obj.updateDynamic("hideTrigger")(hideTrigger)
-    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
+    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
     if (inputCell != null) __obj.updateDynamic("inputCell")(inputCell)
-    if (onRender != null) __obj.updateDynamic("onRender")(onRender)
-    if (onTriggerClick != null) __obj.updateDynamic("onTriggerClick")(onTriggerClick)
+    if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction0(onRender))
+    if (onTriggerClick != null) __obj.updateDynamic("onTriggerClick")(js.Any.fromFunction1(onTriggerClick))
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (!js.isUndefined(repeatTriggerClick)) __obj.updateDynamic("repeatTriggerClick")(repeatTriggerClick)
     if (!js.isUndefined(selectOnFocus)) __obj.updateDynamic("selectOnFocus")(selectOnFocus)
-    if (setEditable != null) __obj.updateDynamic("setEditable")(setEditable)
-    if (setReadOnly != null) __obj.updateDynamic("setReadOnly")(setReadOnly)
+    if (setEditable != null) __obj.updateDynamic("setEditable")(js.Any.fromFunction1(setEditable))
+    if (setReadOnly != null) __obj.updateDynamic("setReadOnly")(js.Any.fromFunction1(setReadOnly))
     if (triggerBaseCls != null) __obj.updateDynamic("triggerBaseCls")(triggerBaseCls)
     if (triggerCls != null) __obj.updateDynamic("triggerCls")(triggerCls)
     if (triggerEl != null) __obj.updateDynamic("triggerEl")(triggerEl)

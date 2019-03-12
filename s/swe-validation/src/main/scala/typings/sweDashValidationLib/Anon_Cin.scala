@@ -13,10 +13,10 @@ trait Anon_Cin extends js.Object {
 object Anon_Cin {
   @scala.inline
   def apply(
-    cin: js.Function1[scala.Double, sweDashValidationLib.sweDashValidationMod.cin],
-    ssn: js.Function1[scala.Double, sweDashValidationLib.sweDashValidationMod.ssn]
+    cin: scala.Double => sweDashValidationLib.sweDashValidationMod.cin,
+    ssn: scala.Double => sweDashValidationLib.sweDashValidationMod.ssn
   ): Anon_Cin = {
-    val __obj = js.Dynamic.literal(cin = cin, ssn = ssn)
+    val __obj = js.Dynamic.literal(cin = js.Any.fromFunction1(cin), ssn = js.Any.fromFunction1(ssn))
   
     __obj.asInstanceOf[Anon_Cin]
   }

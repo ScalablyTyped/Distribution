@@ -17,12 +17,12 @@ trait XErrorQuery
 object XErrorQuery {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    hasError: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    hasError: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XErrorQuery = {
-    val __obj = js.Dynamic.literal(acquire = acquire, hasError = hasError, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), hasError = js.Any.fromFunction0(hasError), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XErrorQuery]
   }

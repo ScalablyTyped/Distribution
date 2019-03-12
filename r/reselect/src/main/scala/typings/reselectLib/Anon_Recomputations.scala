@@ -13,12 +13,8 @@ trait Anon_Recomputations[C] extends js.Object {
 
 object Anon_Recomputations {
   @scala.inline
-  def apply[C](
-    recomputations: js.Function0[scala.Double],
-    resetRecomputations: js.Function0[scala.Double],
-    resultFunc: C
-  ): Anon_Recomputations[C] = {
-    val __obj = js.Dynamic.literal(recomputations = recomputations, resetRecomputations = resetRecomputations, resultFunc = resultFunc.asInstanceOf[js.Any])
+  def apply[C](recomputations: () => scala.Double, resetRecomputations: () => scala.Double, resultFunc: C): Anon_Recomputations[C] = {
+    val __obj = js.Dynamic.literal(recomputations = js.Any.fromFunction0(recomputations), resetRecomputations = js.Any.fromFunction0(resetRecomputations), resultFunc = resultFunc.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Recomputations[C]]
   }

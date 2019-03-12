@@ -23,12 +23,12 @@ trait Event extends js.Object {
 object Event {
   @scala.inline
   def apply(
-    getEventRunner: js.Function0[js.Function0[scala.Unit]],
-    getEventType: js.Function0[java.lang.String],
-    getPath: js.Function0[atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path],
-    toString: js.Function0[java.lang.String]
+    getEventRunner: () => js.Function0[scala.Unit],
+    getEventType: () => java.lang.String,
+    getPath: () => atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path,
+    toString: () => java.lang.String
   ): Event = {
-    val __obj = js.Dynamic.literal(getEventRunner = getEventRunner, getEventType = getEventType, getPath = getPath, toString = toString)
+    val __obj = js.Dynamic.literal(getEventRunner = js.Any.fromFunction0(getEventRunner), getEventType = js.Any.fromFunction0(getEventType), getPath = js.Any.fromFunction0(getPath), toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[Event]
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def createJSFL(
-    jsfl: nodeDashJsflDashRunnerLib.nodeDashJsflDashRunnerMod.JSFL,
+    jsfl: JSFL,
     fileName: java.lang.String,
     initParams: js.Array[_],
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]

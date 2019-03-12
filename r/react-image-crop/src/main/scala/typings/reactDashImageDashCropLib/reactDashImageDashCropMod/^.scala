@@ -14,7 +14,7 @@ object ^ extends js.Object {
     imageAspect: scala.Double
   ): reactDashImageDashCropLib.reactDashImageDashCropMod.ReactCropNs.Crop = js.native
   def getPixelCrop(
-    image: reactLib.HTMLImageElement,
+    image: stdLib.HTMLImageElement,
     percentCrop: reactDashImageDashCropLib.reactDashImageDashCropMod.ReactCropNs.Crop
   ): reactDashImageDashCropLib.reactDashImageDashCropMod.ReactCropNs.Crop = js.native
   def makeAspectCrop(

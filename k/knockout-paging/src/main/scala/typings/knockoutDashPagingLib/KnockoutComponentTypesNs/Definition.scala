@@ -16,10 +16,10 @@ object Definition {
   @scala.inline
   def apply(
     template: js.Array[stdLib.Node],
-    createViewModel: js.Function2[/* params */ js.Any, /* options */ knockoutDashPagingLib.Anon_ElementNode, _] = null
+    createViewModel: (/* params */ js.Any, /* options */ knockoutDashPagingLib.Anon_ElementNode) => _ = null
   ): Definition = {
     val __obj = js.Dynamic.literal(template = template)
-    if (createViewModel != null) __obj.updateDynamic("createViewModel")(createViewModel)
+    if (createViewModel != null) __obj.updateDynamic("createViewModel")(js.Any.fromFunction2(createViewModel))
     __obj.asInstanceOf[Definition]
   }
 }

@@ -243,36 +243,36 @@ object IInput {
     autoComplete: js.UndefOr[scala.Boolean] = js.undefined,
     autoCorrect: js.UndefOr[scala.Boolean] = js.undefined,
     baseCls: java.lang.String = null,
-    blur: js.Function0[IInput] = null,
+    blur: () => IInput = null,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     cls: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     fastFocus: js.UndefOr[scala.Boolean] = js.undefined,
-    focus: js.Function0[IInput] = null,
+    focus: () => IInput = null,
     focusCls: java.lang.String = null,
-    getAutoCapitalize: js.Function0[scala.Boolean] = null,
-    getAutoComplete: js.Function0[scala.Boolean] = null,
-    getAutoCorrect: js.Function0[scala.Boolean] = null,
-    getBaseCls: js.Function0[java.lang.String] = null,
-    getChecked: js.Function0[_] = null,
-    getCls: js.Function0[java.lang.String] = null,
-    getDisabled: js.Function0[scala.Boolean] = null,
-    getFastFocus: js.Function0[scala.Boolean] = null,
-    getFocusCls: js.Function0[java.lang.String] = null,
-    getMaxLength: js.Function0[scala.Double] = null,
-    getMaxRows: js.Function0[scala.Double] = null,
-    getMaxValue: js.Function0[scala.Double] = null,
-    getMinValue: js.Function0[scala.Double] = null,
-    getName: js.Function0[java.lang.String] = null,
-    getPattern: js.Function0[java.lang.String] = null,
-    getPlaceHolder: js.Function0[java.lang.String] = null,
-    getReadOnly: js.Function0[scala.Boolean] = null,
-    getStartValue: js.Function0[_] = null,
-    getStepValue: js.Function0[scala.Double] = null,
-    getTabIndex: js.Function0[scala.Double] = null,
-    getType: js.Function0[java.lang.String] = null,
-    getValue: js.Function0[_] = null,
-    isDirty: js.Function0[scala.Boolean] = null,
+    getAutoCapitalize: () => scala.Boolean = null,
+    getAutoComplete: () => scala.Boolean = null,
+    getAutoCorrect: () => scala.Boolean = null,
+    getBaseCls: () => java.lang.String = null,
+    getChecked: () => _ = null,
+    getCls: () => java.lang.String = null,
+    getDisabled: () => scala.Boolean = null,
+    getFastFocus: () => scala.Boolean = null,
+    getFocusCls: () => java.lang.String = null,
+    getMaxLength: () => scala.Double = null,
+    getMaxRows: () => scala.Double = null,
+    getMaxValue: () => scala.Double = null,
+    getMinValue: () => scala.Double = null,
+    getName: () => java.lang.String = null,
+    getPattern: () => java.lang.String = null,
+    getPlaceHolder: () => java.lang.String = null,
+    getReadOnly: () => scala.Boolean = null,
+    getStartValue: () => _ = null,
+    getStepValue: () => scala.Double = null,
+    getTabIndex: () => scala.Double = null,
+    getType: () => java.lang.String = null,
+    getValue: () => _ = null,
+    isDirty: () => scala.Boolean = null,
     isFocused: js.UndefOr[scala.Boolean] = js.undefined,
     maxLength: scala.Int | scala.Double = null,
     maxRows: scala.Int | scala.Double = null,
@@ -282,34 +282,34 @@ object IInput {
     pattern: java.lang.String = null,
     placeHolder: java.lang.String = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
-    reset: js.Function0[scala.Unit] = null,
-    select: js.Function0[IInput] = null,
-    setAutoCapitalize: js.Function1[/* autoCapitalize */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setAutoComplete: js.Function1[/* autoComplete */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setAutoCorrect: js.Function1[/* autoCorrect */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setBaseCls: js.Function1[/* baseCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setCls: js.Function1[/* cls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setDisabled: js.Function1[/* disabled */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setFastFocus: js.Function1[/* fastFocus */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setFocusCls: js.Function1[/* focusCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setMaxLength: js.Function1[/* maxLength */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setMaxRows: js.Function1[/* maxRows */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setMaxValue: js.Function1[/* maxValue */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setMinValue: js.Function1[/* minValue */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setName: js.Function1[/* name */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setPattern: js.Function1[/* pattern */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setPlaceHolder: js.Function1[/* placeHolder */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setReadOnly: js.Function1[/* readOnly */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setStartValue: js.Function1[/* startValue */ js.UndefOr[js.Any], scala.Unit] = null,
-    setStepValue: js.Function1[/* stepValue */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setTabIndex: js.Function1[/* tabIndex */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setType: js.Function1[/* type */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    reset: () => scala.Unit = null,
+    select: () => IInput = null,
+    setAutoCapitalize: /* autoCapitalize */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setAutoComplete: /* autoComplete */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setAutoCorrect: /* autoCorrect */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setCls: /* cls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setDisabled: /* disabled */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setFastFocus: /* fastFocus */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setFocusCls: /* focusCls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setMaxLength: /* maxLength */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setMaxRows: /* maxRows */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setMaxValue: /* maxValue */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setMinValue: /* minValue */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setName: /* name */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setPattern: /* pattern */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setPlaceHolder: /* placeHolder */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setReadOnly: /* readOnly */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setStartValue: /* startValue */ js.UndefOr[js.Any] => scala.Unit = null,
+    setStepValue: /* stepValue */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setTabIndex: /* tabIndex */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setType: /* type */ js.UndefOr[java.lang.String] => scala.Unit = null,
     startValue: js.Any = null,
     stepValue: scala.Int | scala.Double = null,
     tabIndex: scala.Int | scala.Double = null,
     `type`: java.lang.String = null,
-    updateCls: js.Function2[/* newCls */ js.UndefOr[js.Any], /* oldCls */ js.UndefOr[js.Any], scala.Unit] = null,
-    updateUseMask: js.Function1[/* newUseMask */ js.UndefOr[js.Any], scala.Unit] = null,
+    updateCls: (/* newCls */ js.UndefOr[js.Any], /* oldCls */ js.UndefOr[js.Any]) => scala.Unit = null,
+    updateUseMask: /* newUseMask */ js.UndefOr[js.Any] => scala.Unit = null,
     value: js.Any = null
   ): IInput = {
     val __obj = js.Dynamic.literal()
@@ -318,36 +318,36 @@ object IInput {
     if (!js.isUndefined(autoComplete)) __obj.updateDynamic("autoComplete")(autoComplete)
     if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect)
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (blur != null) __obj.updateDynamic("blur")(blur)
+    if (blur != null) __obj.updateDynamic("blur")(js.Any.fromFunction0(blur))
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (cls != null) __obj.updateDynamic("cls")(cls)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(fastFocus)) __obj.updateDynamic("fastFocus")(fastFocus)
-    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction0(focus))
     if (focusCls != null) __obj.updateDynamic("focusCls")(focusCls)
-    if (getAutoCapitalize != null) __obj.updateDynamic("getAutoCapitalize")(getAutoCapitalize)
-    if (getAutoComplete != null) __obj.updateDynamic("getAutoComplete")(getAutoComplete)
-    if (getAutoCorrect != null) __obj.updateDynamic("getAutoCorrect")(getAutoCorrect)
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(getBaseCls)
-    if (getChecked != null) __obj.updateDynamic("getChecked")(getChecked)
-    if (getCls != null) __obj.updateDynamic("getCls")(getCls)
-    if (getDisabled != null) __obj.updateDynamic("getDisabled")(getDisabled)
-    if (getFastFocus != null) __obj.updateDynamic("getFastFocus")(getFastFocus)
-    if (getFocusCls != null) __obj.updateDynamic("getFocusCls")(getFocusCls)
-    if (getMaxLength != null) __obj.updateDynamic("getMaxLength")(getMaxLength)
-    if (getMaxRows != null) __obj.updateDynamic("getMaxRows")(getMaxRows)
-    if (getMaxValue != null) __obj.updateDynamic("getMaxValue")(getMaxValue)
-    if (getMinValue != null) __obj.updateDynamic("getMinValue")(getMinValue)
-    if (getName != null) __obj.updateDynamic("getName")(getName)
-    if (getPattern != null) __obj.updateDynamic("getPattern")(getPattern)
-    if (getPlaceHolder != null) __obj.updateDynamic("getPlaceHolder")(getPlaceHolder)
-    if (getReadOnly != null) __obj.updateDynamic("getReadOnly")(getReadOnly)
-    if (getStartValue != null) __obj.updateDynamic("getStartValue")(getStartValue)
-    if (getStepValue != null) __obj.updateDynamic("getStepValue")(getStepValue)
-    if (getTabIndex != null) __obj.updateDynamic("getTabIndex")(getTabIndex)
-    if (getType != null) __obj.updateDynamic("getType")(getType)
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
-    if (isDirty != null) __obj.updateDynamic("isDirty")(isDirty)
+    if (getAutoCapitalize != null) __obj.updateDynamic("getAutoCapitalize")(js.Any.fromFunction0(getAutoCapitalize))
+    if (getAutoComplete != null) __obj.updateDynamic("getAutoComplete")(js.Any.fromFunction0(getAutoComplete))
+    if (getAutoCorrect != null) __obj.updateDynamic("getAutoCorrect")(js.Any.fromFunction0(getAutoCorrect))
+    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
+    if (getChecked != null) __obj.updateDynamic("getChecked")(js.Any.fromFunction0(getChecked))
+    if (getCls != null) __obj.updateDynamic("getCls")(js.Any.fromFunction0(getCls))
+    if (getDisabled != null) __obj.updateDynamic("getDisabled")(js.Any.fromFunction0(getDisabled))
+    if (getFastFocus != null) __obj.updateDynamic("getFastFocus")(js.Any.fromFunction0(getFastFocus))
+    if (getFocusCls != null) __obj.updateDynamic("getFocusCls")(js.Any.fromFunction0(getFocusCls))
+    if (getMaxLength != null) __obj.updateDynamic("getMaxLength")(js.Any.fromFunction0(getMaxLength))
+    if (getMaxRows != null) __obj.updateDynamic("getMaxRows")(js.Any.fromFunction0(getMaxRows))
+    if (getMaxValue != null) __obj.updateDynamic("getMaxValue")(js.Any.fromFunction0(getMaxValue))
+    if (getMinValue != null) __obj.updateDynamic("getMinValue")(js.Any.fromFunction0(getMinValue))
+    if (getName != null) __obj.updateDynamic("getName")(js.Any.fromFunction0(getName))
+    if (getPattern != null) __obj.updateDynamic("getPattern")(js.Any.fromFunction0(getPattern))
+    if (getPlaceHolder != null) __obj.updateDynamic("getPlaceHolder")(js.Any.fromFunction0(getPlaceHolder))
+    if (getReadOnly != null) __obj.updateDynamic("getReadOnly")(js.Any.fromFunction0(getReadOnly))
+    if (getStartValue != null) __obj.updateDynamic("getStartValue")(js.Any.fromFunction0(getStartValue))
+    if (getStepValue != null) __obj.updateDynamic("getStepValue")(js.Any.fromFunction0(getStepValue))
+    if (getTabIndex != null) __obj.updateDynamic("getTabIndex")(js.Any.fromFunction0(getTabIndex))
+    if (getType != null) __obj.updateDynamic("getType")(js.Any.fromFunction0(getType))
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
+    if (isDirty != null) __obj.updateDynamic("isDirty")(js.Any.fromFunction0(isDirty))
     if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused)
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
@@ -357,34 +357,34 @@ object IInput {
     if (pattern != null) __obj.updateDynamic("pattern")(pattern)
     if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (reset != null) __obj.updateDynamic("reset")(reset)
-    if (select != null) __obj.updateDynamic("select")(select)
-    if (setAutoCapitalize != null) __obj.updateDynamic("setAutoCapitalize")(setAutoCapitalize)
-    if (setAutoComplete != null) __obj.updateDynamic("setAutoComplete")(setAutoComplete)
-    if (setAutoCorrect != null) __obj.updateDynamic("setAutoCorrect")(setAutoCorrect)
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(setBaseCls)
-    if (setCls != null) __obj.updateDynamic("setCls")(setCls)
-    if (setDisabled != null) __obj.updateDynamic("setDisabled")(setDisabled)
-    if (setFastFocus != null) __obj.updateDynamic("setFastFocus")(setFastFocus)
-    if (setFocusCls != null) __obj.updateDynamic("setFocusCls")(setFocusCls)
-    if (setMaxLength != null) __obj.updateDynamic("setMaxLength")(setMaxLength)
-    if (setMaxRows != null) __obj.updateDynamic("setMaxRows")(setMaxRows)
-    if (setMaxValue != null) __obj.updateDynamic("setMaxValue")(setMaxValue)
-    if (setMinValue != null) __obj.updateDynamic("setMinValue")(setMinValue)
-    if (setName != null) __obj.updateDynamic("setName")(setName)
-    if (setPattern != null) __obj.updateDynamic("setPattern")(setPattern)
-    if (setPlaceHolder != null) __obj.updateDynamic("setPlaceHolder")(setPlaceHolder)
-    if (setReadOnly != null) __obj.updateDynamic("setReadOnly")(setReadOnly)
-    if (setStartValue != null) __obj.updateDynamic("setStartValue")(setStartValue)
-    if (setStepValue != null) __obj.updateDynamic("setStepValue")(setStepValue)
-    if (setTabIndex != null) __obj.updateDynamic("setTabIndex")(setTabIndex)
-    if (setType != null) __obj.updateDynamic("setType")(setType)
+    if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction0(select))
+    if (setAutoCapitalize != null) __obj.updateDynamic("setAutoCapitalize")(js.Any.fromFunction1(setAutoCapitalize))
+    if (setAutoComplete != null) __obj.updateDynamic("setAutoComplete")(js.Any.fromFunction1(setAutoComplete))
+    if (setAutoCorrect != null) __obj.updateDynamic("setAutoCorrect")(js.Any.fromFunction1(setAutoCorrect))
+    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
+    if (setCls != null) __obj.updateDynamic("setCls")(js.Any.fromFunction1(setCls))
+    if (setDisabled != null) __obj.updateDynamic("setDisabled")(js.Any.fromFunction1(setDisabled))
+    if (setFastFocus != null) __obj.updateDynamic("setFastFocus")(js.Any.fromFunction1(setFastFocus))
+    if (setFocusCls != null) __obj.updateDynamic("setFocusCls")(js.Any.fromFunction1(setFocusCls))
+    if (setMaxLength != null) __obj.updateDynamic("setMaxLength")(js.Any.fromFunction1(setMaxLength))
+    if (setMaxRows != null) __obj.updateDynamic("setMaxRows")(js.Any.fromFunction1(setMaxRows))
+    if (setMaxValue != null) __obj.updateDynamic("setMaxValue")(js.Any.fromFunction1(setMaxValue))
+    if (setMinValue != null) __obj.updateDynamic("setMinValue")(js.Any.fromFunction1(setMinValue))
+    if (setName != null) __obj.updateDynamic("setName")(js.Any.fromFunction1(setName))
+    if (setPattern != null) __obj.updateDynamic("setPattern")(js.Any.fromFunction1(setPattern))
+    if (setPlaceHolder != null) __obj.updateDynamic("setPlaceHolder")(js.Any.fromFunction1(setPlaceHolder))
+    if (setReadOnly != null) __obj.updateDynamic("setReadOnly")(js.Any.fromFunction1(setReadOnly))
+    if (setStartValue != null) __obj.updateDynamic("setStartValue")(js.Any.fromFunction1(setStartValue))
+    if (setStepValue != null) __obj.updateDynamic("setStepValue")(js.Any.fromFunction1(setStepValue))
+    if (setTabIndex != null) __obj.updateDynamic("setTabIndex")(js.Any.fromFunction1(setTabIndex))
+    if (setType != null) __obj.updateDynamic("setType")(js.Any.fromFunction1(setType))
     if (startValue != null) __obj.updateDynamic("startValue")(startValue)
     if (stepValue != null) __obj.updateDynamic("stepValue")(stepValue.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (updateCls != null) __obj.updateDynamic("updateCls")(updateCls)
-    if (updateUseMask != null) __obj.updateDynamic("updateUseMask")(updateUseMask)
+    if (updateCls != null) __obj.updateDynamic("updateCls")(js.Any.fromFunction2(updateCls))
+    if (updateUseMask != null) __obj.updateDynamic("updateUseMask")(js.Any.fromFunction1(updateUseMask))
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[IInput]
   }

@@ -16,13 +16,13 @@ trait OtherCertificateFormat extends js.Object {
 object OtherCertificateFormat {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     otherCert: js.Any,
     otherCertFormat: java.lang.String,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): OtherCertificateFormat = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, otherCert = otherCert, otherCertFormat = otherCertFormat, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), otherCert = otherCert, otherCertFormat = otherCertFormat, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[OtherCertificateFormat]
   }

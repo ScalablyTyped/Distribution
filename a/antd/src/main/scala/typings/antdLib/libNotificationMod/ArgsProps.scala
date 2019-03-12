@@ -31,8 +31,8 @@ object ArgsProps {
     duration: scala.Int | scala.Double = null,
     icon: reactLib.reactMod.ReactNs.ReactNode = null,
     key: java.lang.String = null,
-    onClick: js.Function0[scala.Unit] = null,
-    onClose: js.Function0[scala.Unit] = null,
+    onClick: () => scala.Unit = null,
+    onClose: () => scala.Unit = null,
     placement: NotificationPlacement = null,
     prefixCls: java.lang.String = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -45,8 +45,8 @@ object ArgsProps {
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     if (placement != null) __obj.updateDynamic("placement")(placement)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (style != null) __obj.updateDynamic("style")(style)

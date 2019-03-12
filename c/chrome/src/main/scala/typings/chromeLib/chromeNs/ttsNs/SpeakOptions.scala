@@ -53,7 +53,7 @@ object SpeakOptions {
     extensionId: java.lang.String = null,
     gender: java.lang.String = null,
     lang: java.lang.String = null,
-    onEvent: js.Function1[/* event */ TtsEvent, scala.Unit] = null,
+    onEvent: /* event */ TtsEvent => scala.Unit = null,
     pitch: scala.Int | scala.Double = null,
     rate: scala.Int | scala.Double = null,
     requiredEventTypes: js.Array[java.lang.String] = null,
@@ -66,7 +66,7 @@ object SpeakOptions {
     if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId)
     if (gender != null) __obj.updateDynamic("gender")(gender)
     if (lang != null) __obj.updateDynamic("lang")(lang)
-    if (onEvent != null) __obj.updateDynamic("onEvent")(onEvent)
+    if (onEvent != null) __obj.updateDynamic("onEvent")(js.Any.fromFunction1(onEvent))
     if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
     if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
     if (requiredEventTypes != null) __obj.updateDynamic("requiredEventTypes")(requiredEventTypes)

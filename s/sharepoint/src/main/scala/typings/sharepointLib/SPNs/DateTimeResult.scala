@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SP.DateTimeResult")
 @js.native
 class DateTimeResult () extends js.Object {
-  def get_value(): microsoftDashAjaxLib.Date = js.native
+  def get_value(): stdLib.Date = js.native
 }
 

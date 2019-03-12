@@ -38,14 +38,14 @@ object ^ extends js.Object {
     * @param data An object that contains registration data for 1+ events. Each property name is the category name,
     *     and the corresponding property value is an object of EventData type.
     */
-  def registerEvents(category: java.lang.String, data: firefoxDashWebextDashBrowserLib.browserNs.telemetryNs.EventData): js.Promise[_] = js.native
+  def registerEvents(category: java.lang.String, data: EventData): js.Promise[_] = js.native
   /**
     * Register new scalars to record them from addons. See nsITelemetry.idl for more details.
     * @param category The unique category the scalars are registered in.
     * @param data An object that contains registration data for multiple scalars. Each property name is the scalar
     *     name, and the corresponding property value is an object of ScalarData type.
     */
-  def registerScalars(category: java.lang.String, data: firefoxDashWebextDashBrowserLib.browserNs.telemetryNs.ScalarData): js.Promise[_] = js.native
+  def registerScalars(category: java.lang.String, data: ScalarData): js.Promise[_] = js.native
   /**
     * Adds the value to the given scalar.
     * @param name The scalar name.

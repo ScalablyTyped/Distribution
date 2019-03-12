@@ -43,14 +43,14 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(
-    afterClose: js.Function1[/* event */ jqueryLib.JQueryEventObject, _] = null,
-    afterContent: js.Function1[/* event */ jqueryLib.JQueryEventObject, _] = null,
-    afterOpen: js.Function1[/* event */ jqueryLib.JQueryEventObject, _] = null,
+    afterClose: /* event */ jqueryLib.JQueryEventObject => _ = null,
+    afterContent: /* event */ jqueryLib.JQueryEventObject => _ = null,
+    afterOpen: /* event */ jqueryLib.JQueryEventObject => _ = null,
     ajax: java.lang.String = null,
     background: java.lang.String = null,
-    beforeClose: js.Function1[/* event */ jqueryLib.JQueryEventObject, _] = null,
-    beforeContent: js.Function1[/* event */ jqueryLib.JQueryEventObject, _] = null,
-    beforeOpen: js.Function1[/* event */ jqueryLib.JQueryEventObject, _] = null,
+    beforeClose: /* event */ jqueryLib.JQueryEventObject => _ = null,
+    beforeContent: /* event */ jqueryLib.JQueryEventObject => _ = null,
+    beforeOpen: /* event */ jqueryLib.JQueryEventObject => _ = null,
     closeIcon: java.lang.String = null,
     closeOnClick: scala.Boolean | java.lang.String = null,
     closeOnEsc: js.UndefOr[scala.Boolean] = js.undefined,
@@ -63,8 +63,8 @@ object Config {
     jquery: featherlightLib.JQuery = null,
     loading: java.lang.String = null,
     namespace: java.lang.String = null,
-    onKeyUp: js.Function1[/* event */ jqueryLib.JQueryEventObject, _] = null,
-    onResize: js.Function1[/* event */ jqueryLib.JQueryEventObject, _] = null,
+    onKeyUp: /* event */ jqueryLib.JQueryEventObject => _ = null,
+    onResize: /* event */ jqueryLib.JQueryEventObject => _ = null,
     openSpeed: scala.Double | java.lang.String = null,
     openTrigger: java.lang.String = null,
     otherClose: java.lang.String = null,
@@ -77,14 +77,14 @@ object Config {
     variant: java.lang.String = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose)
-    if (afterContent != null) __obj.updateDynamic("afterContent")(afterContent)
-    if (afterOpen != null) __obj.updateDynamic("afterOpen")(afterOpen)
+    if (afterClose != null) __obj.updateDynamic("afterClose")(js.Any.fromFunction1(afterClose))
+    if (afterContent != null) __obj.updateDynamic("afterContent")(js.Any.fromFunction1(afterContent))
+    if (afterOpen != null) __obj.updateDynamic("afterOpen")(js.Any.fromFunction1(afterOpen))
     if (ajax != null) __obj.updateDynamic("ajax")(ajax)
     if (background != null) __obj.updateDynamic("background")(background)
-    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
-    if (beforeContent != null) __obj.updateDynamic("beforeContent")(beforeContent)
-    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen)
+    if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction1(beforeClose))
+    if (beforeContent != null) __obj.updateDynamic("beforeContent")(js.Any.fromFunction1(beforeContent))
+    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(js.Any.fromFunction1(beforeOpen))
     if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon)
     if (closeOnClick != null) __obj.updateDynamic("closeOnClick")(closeOnClick.asInstanceOf[js.Any])
     if (!js.isUndefined(closeOnEsc)) __obj.updateDynamic("closeOnEsc")(closeOnEsc)
@@ -97,8 +97,8 @@ object Config {
     if (jquery != null) __obj.updateDynamic("jquery")(jquery)
     if (loading != null) __obj.updateDynamic("loading")(loading)
     if (namespace != null) __obj.updateDynamic("namespace")(namespace)
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
-    if (onResize != null) __obj.updateDynamic("onResize")(onResize)
+    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
+    if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction1(onResize))
     if (openSpeed != null) __obj.updateDynamic("openSpeed")(openSpeed.asInstanceOf[js.Any])
     if (openTrigger != null) __obj.updateDynamic("openTrigger")(openTrigger)
     if (otherClose != null) __obj.updateDynamic("otherClose")(otherClose)

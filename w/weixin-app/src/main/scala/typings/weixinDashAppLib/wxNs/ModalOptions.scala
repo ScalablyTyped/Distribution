@@ -46,22 +46,22 @@ object ModalOptions {
     title: java.lang.String,
     cancelColor: java.lang.String = null,
     cancelText: java.lang.String = null,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    complete: /* res */ js.Any => scala.Unit = null,
     confirmColor: java.lang.String = null,
     confirmText: java.lang.String = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
+    fail: js.Any => scala.Unit = null,
     showCancel: js.UndefOr[scala.Boolean] = js.undefined,
-    success: js.Function1[/* res */ weixinDashAppLib.Anon_Cancel, scala.Unit] = null
+    success: /* res */ weixinDashAppLib.Anon_Cancel => scala.Unit = null
   ): ModalOptions = {
     val __obj = js.Dynamic.literal(content = content, title = title)
     if (cancelColor != null) __obj.updateDynamic("cancelColor")(cancelColor)
     if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (confirmColor != null) __obj.updateDynamic("confirmColor")(confirmColor)
     if (confirmText != null) __obj.updateDynamic("confirmText")(confirmText)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (!js.isUndefined(showCancel)) __obj.updateDynamic("showCancel")(showCancel)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ModalOptions]
   }
 }

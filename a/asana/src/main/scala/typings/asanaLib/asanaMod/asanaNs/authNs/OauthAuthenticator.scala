@@ -19,11 +19,11 @@ trait OauthAuthenticator extends Authenticator {
 object OauthAuthenticator {
   @scala.inline
   def apply(
-    authenticateRequest: js.Function1[OauthAuthenticatorRequest, OauthAuthenticatorRequest],
-    establishCredentials: js.Function0[bluebirdLib.bluebirdMod.namespaced[scala.Unit]],
-    refreshCredentials: js.Function0[bluebirdLib.bluebirdMod.namespaced[scala.Boolean]]
+    authenticateRequest: OauthAuthenticatorRequest => OauthAuthenticatorRequest,
+    establishCredentials: () => bluebirdLib.bluebirdMod.namespaced[scala.Unit],
+    refreshCredentials: () => bluebirdLib.bluebirdMod.namespaced[scala.Boolean]
   ): OauthAuthenticator = {
-    val __obj = js.Dynamic.literal(authenticateRequest = authenticateRequest, establishCredentials = establishCredentials, refreshCredentials = refreshCredentials)
+    val __obj = js.Dynamic.literal(authenticateRequest = js.Any.fromFunction1(authenticateRequest), establishCredentials = js.Any.fromFunction0(establishCredentials), refreshCredentials = js.Any.fromFunction0(refreshCredentials))
   
     __obj.asInstanceOf[OauthAuthenticator]
   }

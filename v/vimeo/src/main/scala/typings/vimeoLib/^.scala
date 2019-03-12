@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   @JSName("$f")
-  var $f: vimeoLib.VimeoPlayerAPI = js.native
-  var Froogaloop: vimeoLib.VimeoPlayerAPI = js.native
+  var $f: VimeoPlayerAPI = js.native
+  var Froogaloop: VimeoPlayerAPI = js.native
 }
 

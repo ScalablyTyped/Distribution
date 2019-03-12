@@ -15,12 +15,12 @@ trait MediaQuery extends js.Object {
 object MediaQuery {
   @scala.inline
   def apply(
-    atLeast: js.Function1[java.lang.String, scala.Boolean],
+    atLeast: java.lang.String => scala.Boolean,
     current: java.lang.String,
-    get: js.Function1[java.lang.String, java.lang.String],
+    get: java.lang.String => java.lang.String,
     queries: js.Array[java.lang.String]
   ): MediaQuery = {
-    val __obj = js.Dynamic.literal(atLeast = atLeast, current = current, get = get, queries = queries)
+    val __obj = js.Dynamic.literal(atLeast = js.Any.fromFunction1(atLeast), current = current, get = js.Any.fromFunction1(get), queries = queries)
   
     __obj.asInstanceOf[MediaQuery]
   }

@@ -55,17 +55,17 @@ trait ASPxClientDashboardItemVisualInteractivityEventArgs extends ASPxClientEven
 object ASPxClientDashboardItemVisualInteractivityEventArgs {
   @scala.inline
   def apply(
-    EnableHighlighting: js.Function1[scala.Boolean, scala.Unit],
-    GetDefaultSelection: js.Function0[js.Array[ASPxClientDashboardItemDataAxisPointTuple]],
-    GetSelectionMode: js.Function0[java.lang.String],
-    GetTargetAxes: js.Function0[js.Array[java.lang.String]],
-    IsHighlightingEnabled: js.Function0[scala.Boolean],
+    EnableHighlighting: scala.Boolean => scala.Unit,
+    GetDefaultSelection: () => js.Array[ASPxClientDashboardItemDataAxisPointTuple],
+    GetSelectionMode: () => java.lang.String,
+    GetTargetAxes: () => js.Array[java.lang.String],
+    IsHighlightingEnabled: () => scala.Boolean,
     ItemName: java.lang.String,
-    SetDefaultSelection: js.Function1[js.Array[ASPxClientDashboardItemDataAxisPointTuple], scala.Unit],
-    SetSelectionMode: js.Function1[java.lang.String, scala.Unit],
-    SetTargetAxes: js.Function1[js.Array[java.lang.String], scala.Unit]
+    SetDefaultSelection: js.Array[ASPxClientDashboardItemDataAxisPointTuple] => scala.Unit,
+    SetSelectionMode: java.lang.String => scala.Unit,
+    SetTargetAxes: js.Array[java.lang.String] => scala.Unit
   ): ASPxClientDashboardItemVisualInteractivityEventArgs = {
-    val __obj = js.Dynamic.literal(EnableHighlighting = EnableHighlighting, GetDefaultSelection = GetDefaultSelection, GetSelectionMode = GetSelectionMode, GetTargetAxes = GetTargetAxes, IsHighlightingEnabled = IsHighlightingEnabled, ItemName = ItemName, SetDefaultSelection = SetDefaultSelection, SetSelectionMode = SetSelectionMode, SetTargetAxes = SetTargetAxes)
+    val __obj = js.Dynamic.literal(EnableHighlighting = js.Any.fromFunction1(EnableHighlighting), GetDefaultSelection = js.Any.fromFunction0(GetDefaultSelection), GetSelectionMode = js.Any.fromFunction0(GetSelectionMode), GetTargetAxes = js.Any.fromFunction0(GetTargetAxes), IsHighlightingEnabled = js.Any.fromFunction0(IsHighlightingEnabled), ItemName = ItemName, SetDefaultSelection = js.Any.fromFunction1(SetDefaultSelection), SetSelectionMode = js.Any.fromFunction1(SetSelectionMode), SetTargetAxes = js.Any.fromFunction1(SetTargetAxes))
   
     __obj.asInstanceOf[ASPxClientDashboardItemVisualInteractivityEventArgs]
   }

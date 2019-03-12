@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @JSImport("mongoose-paginate-v2", "mongoose")
 @js.native
 object ^ extends js.Object {
-  def model(name: java.lang.String): mongooseDashPaginateDashV2Lib.mongooseDashPaginateDashV2Mod.mongooseMod.PaginateModel[_] = js.native
-  def model(name: java.lang.String, schema: mongooseLib.mongooseMod.Schema[_]): mongooseDashPaginateDashV2Lib.mongooseDashPaginateDashV2Mod.mongooseMod.PaginateModel[_] = js.native
-  def model(name: java.lang.String, schema: mongooseLib.mongooseMod.Schema[_], collection: java.lang.String): mongooseDashPaginateDashV2Lib.mongooseDashPaginateDashV2Mod.mongooseMod.PaginateModel[_] = js.native
+  def model(name: java.lang.String): PaginateModel[_] = js.native
+  def model(name: java.lang.String, schema: mongooseLib.mongooseMod.Schema[_]): PaginateModel[_] = js.native
+  def model(name: java.lang.String, schema: mongooseLib.mongooseMod.Schema[_], collection: java.lang.String): PaginateModel[_] = js.native
   def model(
     name: java.lang.String,
     schema: mongooseLib.mongooseMod.Schema[_],
     collection: java.lang.String,
     skipInit: scala.Boolean
-  ): mongooseDashPaginateDashV2Lib.mongooseDashPaginateDashV2Mod.mongooseMod.PaginateModel[_] = js.native
+  ): PaginateModel[_] = js.native
 }
 

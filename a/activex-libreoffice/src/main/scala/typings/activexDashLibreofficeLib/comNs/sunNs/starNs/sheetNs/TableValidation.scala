@@ -73,42 +73,26 @@ object TableValidation {
     ShowList: scala.Double,
     SourcePosition: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress,
     Type: ValidationType,
-    acquire: js.Function0[scala.Unit],
-    addPropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    addVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    getFormula1: js.Function0[java.lang.String],
-    getFormula2: js.Function0[java.lang.String],
-    getOperator: js.Function0[ConditionOperator],
-    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
-    getPropertyValue: js.Function1[java.lang.String, js.Any],
-    getSourcePosition: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removePropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    removeVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    setFormula1: js.Function1[java.lang.String, scala.Unit],
-    setFormula2: js.Function1[java.lang.String, scala.Unit],
-    setOperator: js.Function1[ConditionOperator, scala.Unit],
-    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
-    setSourcePosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Unit]
+    acquire: () => scala.Unit,
+    addPropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    addVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    getFormula1: () => java.lang.String,
+    getFormula2: () => java.lang.String,
+    getOperator: () => ConditionOperator,
+    getPropertySetInfo: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    getPropertyValue: java.lang.String => js.Any,
+    getSourcePosition: () => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removePropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    removeVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    setFormula1: java.lang.String => scala.Unit,
+    setFormula2: java.lang.String => scala.Unit,
+    setOperator: ConditionOperator => scala.Unit,
+    setPropertyValue: (java.lang.String, js.Any) => scala.Unit,
+    setSourcePosition: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress => scala.Unit
   ): TableValidation = {
-    val __obj = js.Dynamic.literal(ErrorAlertStyle = ErrorAlertStyle, ErrorMessage = ErrorMessage, ErrorTitle = ErrorTitle, Formula1 = Formula1, Formula2 = Formula2, IgnoreBlankCells = IgnoreBlankCells, InputMessage = InputMessage, InputTitle = InputTitle, Operator = Operator, PropertySetInfo = PropertySetInfo, ShowErrorMessage = ShowErrorMessage, ShowInputMessage = ShowInputMessage, ShowList = ShowList, SourcePosition = SourcePosition, Type = Type, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getFormula1 = getFormula1, getFormula2 = getFormula2, getOperator = getOperator, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getSourcePosition = getSourcePosition, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setFormula1 = setFormula1, setFormula2 = setFormula2, setOperator = setOperator, setPropertyValue = setPropertyValue, setSourcePosition = setSourcePosition)
+    val __obj = js.Dynamic.literal(ErrorAlertStyle = ErrorAlertStyle, ErrorMessage = ErrorMessage, ErrorTitle = ErrorTitle, Formula1 = Formula1, Formula2 = Formula2, IgnoreBlankCells = IgnoreBlankCells, InputMessage = InputMessage, InputTitle = InputTitle, Operator = Operator, PropertySetInfo = PropertySetInfo, ShowErrorMessage = ShowErrorMessage, ShowInputMessage = ShowInputMessage, ShowList = ShowList, SourcePosition = SourcePosition, Type = Type, acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getFormula1 = js.Any.fromFunction0(getFormula1), getFormula2 = js.Any.fromFunction0(getFormula2), getOperator = js.Any.fromFunction0(getOperator), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getSourcePosition = js.Any.fromFunction0(getSourcePosition), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setFormula1 = js.Any.fromFunction1(setFormula1), setFormula2 = js.Any.fromFunction1(setFormula2), setOperator = js.Any.fromFunction1(setOperator), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setSourcePosition = js.Any.fromFunction1(setSourcePosition))
   
     __obj.asInstanceOf[TableValidation]
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Siesta.Harness")
 @js.native
 object ^ extends js.Object {
-  var Browser: siestaLib.SiestaNs.HarnessNs.IBrowserSingleton = js.native
-  var NodeJS: siestaLib.SiestaNs.HarnessNs.IHarnessNodeJS = js.native
+  var Browser: IBrowserSingleton = js.native
+  var NodeJS: IHarnessNodeJS = js.native
 }
 

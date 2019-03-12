@@ -40,15 +40,15 @@ trait ConstantScoreQuery extends Query {
 object ConstantScoreQuery {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    boost: js.Function1[scala.Double, ConstantScoreQuery],
-    cache: js.Function1[scala.Boolean, ConstantScoreQuery],
-    cacheKey: js.Function1[java.lang.String, ConstantScoreQuery],
-    filter: js.Function1[js.Object, ConstantScoreQuery],
-    query: js.Function1[js.Object, ConstantScoreQuery],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    boost: scala.Double => ConstantScoreQuery,
+    cache: scala.Boolean => ConstantScoreQuery,
+    cacheKey: java.lang.String => ConstantScoreQuery,
+    filter: js.Object => ConstantScoreQuery,
+    query: js.Object => ConstantScoreQuery,
+    toJSON: () => js.Any
   ): ConstantScoreQuery = {
-    val __obj = js.Dynamic.literal(_type = _type, boost = boost, cache = cache, cacheKey = cacheKey, filter = filter, query = query, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), boost = js.Any.fromFunction1(boost), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), filter = js.Any.fromFunction1(filter), query = js.Any.fromFunction1(query), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[ConstantScoreQuery]
   }

@@ -11,8 +11,8 @@ trait OnFocusChangeListener extends js.Object {
 
 object OnFocusChangeListener {
   @scala.inline
-  def apply(onFocusChange: js.Function2[androiduixLib.androidNs.viewNs.View, scala.Boolean, scala.Unit]): OnFocusChangeListener = {
-    val __obj = js.Dynamic.literal(onFocusChange = onFocusChange)
+  def apply(onFocusChange: (androiduixLib.androidNs.viewNs.View, scala.Boolean) => scala.Unit): OnFocusChangeListener = {
+    val __obj = js.Dynamic.literal(onFocusChange = js.Any.fromFunction2(onFocusChange))
   
     __obj.asInstanceOf[OnFocusChangeListener]
   }

@@ -56,12 +56,7 @@ object ThingShadowOptions {
     secretKey: java.lang.String = null,
     servers: js.Array[mqttLib.Anon_Host] = null,
     sessionToken: java.lang.String = null,
-    transformWsUrl: js.Function3[
-      /* url */ java.lang.String, 
-      /* options */ mqttLib.typesLibClientDashOptionsMod.IClientOptions, 
-      /* client */ mqttLib.typesLibClientMod.MqttClient, 
-      java.lang.String
-    ] = null,
+    transformWsUrl: (/* url */ java.lang.String, /* options */ mqttLib.typesLibClientDashOptionsMod.IClientOptions, /* client */ mqttLib.typesLibClientMod.MqttClient) => java.lang.String = null,
     username: java.lang.String = null,
     websocketOptions: wsLib.wsMod.WebSocketNs.ClientOptions = null,
     will: mqttLib.Anon_Payload = null,
@@ -111,7 +106,7 @@ object ThingShadowOptions {
     if (secretKey != null) __obj.updateDynamic("secretKey")(secretKey)
     if (servers != null) __obj.updateDynamic("servers")(servers)
     if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken)
-    if (transformWsUrl != null) __obj.updateDynamic("transformWsUrl")(transformWsUrl)
+    if (transformWsUrl != null) __obj.updateDynamic("transformWsUrl")(js.Any.fromFunction3(transformWsUrl))
     if (username != null) __obj.updateDynamic("username")(username)
     if (websocketOptions != null) __obj.updateDynamic("websocketOptions")(websocketOptions)
     if (will != null) __obj.updateDynamic("will")(will)

@@ -43,10 +43,7 @@ object Anon_ClassNameContextLabel {
       /* context */ atOracleOraclejetLib.ojdatagridMod.ojDataGridNs.HeaderContext[K, D], 
       java.lang.String | scala.Unit | scala.Null
     ]) | java.lang.String = null,
-    renderer: js.Function1[
-      /* context */ atOracleOraclejetLib.ojdatagridMod.ojDataGridNs.HeaderContext[K, D], 
-      Anon_InsertHTMLElement | scala.Unit | scala.Null
-    ] = null,
+    renderer: /* context */ atOracleOraclejetLib.ojdatagridMod.ojDataGridNs.HeaderContext[K, D] => Anon_InsertHTMLElement | scala.Unit | scala.Null = null,
     sortable: (js.Function1[
       /* context */ atOracleOraclejetLib.ojdatagridMod.ojDataGridNs.HeaderContext[K, D], 
       java.lang.String
@@ -58,7 +55,7 @@ object Anon_ClassNameContextLabel {
   ): Anon_ClassNameContextLabel[K, D] = {
     val __obj = js.Dynamic.literal(label = label, resizable = resizable)
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (renderer != null) __obj.updateDynamic("renderer")(js.Any.fromFunction1(renderer))
     if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClassNameContextLabel[K, D]]

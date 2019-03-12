@@ -31,18 +31,18 @@ trait GroupComponent extends js.Object {
 object GroupComponent {
   @scala.inline
   def apply(
-    getElement: js.Function0[stdLib.HTMLElement],
-    getKey: js.Function0[js.Any],
-    getParentGroup: js.Function0[GroupComponent | tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`false`],
-    getRows: js.Function0[js.Array[RowComponent]],
-    getSubGroups: js.Function0[js.Array[GroupComponent]],
-    getTable: js.Function0[tabulatorDashTablesLib.Tabulator],
-    getVisibility: js.Function0[scala.Boolean],
-    hide: js.Function0[scala.Unit],
-    show: js.Function0[scala.Unit],
-    toggle: js.Function0[scala.Unit]
+    getElement: () => stdLib.HTMLElement,
+    getKey: () => js.Any,
+    getParentGroup: () => GroupComponent | tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`false`,
+    getRows: () => js.Array[RowComponent],
+    getSubGroups: () => js.Array[GroupComponent],
+    getTable: () => tabulatorDashTablesLib.Tabulator,
+    getVisibility: () => scala.Boolean,
+    hide: () => scala.Unit,
+    show: () => scala.Unit,
+    toggle: () => scala.Unit
   ): GroupComponent = {
-    val __obj = js.Dynamic.literal(getElement = getElement, getKey = getKey, getParentGroup = getParentGroup, getRows = getRows, getSubGroups = getSubGroups, getTable = getTable, getVisibility = getVisibility, hide = hide, show = show, toggle = toggle)
+    val __obj = js.Dynamic.literal(getElement = js.Any.fromFunction0(getElement), getKey = js.Any.fromFunction0(getKey), getParentGroup = js.Any.fromFunction0(getParentGroup), getRows = js.Any.fromFunction0(getRows), getSubGroups = js.Any.fromFunction0(getSubGroups), getTable = js.Any.fromFunction0(getTable), getVisibility = js.Any.fromFunction0(getVisibility), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
   
     __obj.asInstanceOf[GroupComponent]
   }

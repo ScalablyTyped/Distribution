@@ -23,14 +23,14 @@ trait TextStreamWriter extends TextStreamBase {
 object TextStreamWriter {
   @scala.inline
   def apply(
-    Close: js.Function0[scala.Unit],
+    Close: () => scala.Unit,
     Column: scala.Double,
     Line: scala.Double,
-    Write: js.Function1[java.lang.String, scala.Unit],
-    WriteBlankLines: js.Function1[scala.Double, scala.Unit],
-    WriteLine: js.Function1[java.lang.String, scala.Unit]
+    Write: java.lang.String => scala.Unit,
+    WriteBlankLines: scala.Double => scala.Unit,
+    WriteLine: java.lang.String => scala.Unit
   ): TextStreamWriter = {
-    val __obj = js.Dynamic.literal(Close = Close, Column = Column, Line = Line, Write = Write, WriteBlankLines = WriteBlankLines, WriteLine = WriteLine)
+    val __obj = js.Dynamic.literal(Close = js.Any.fromFunction0(Close), Column = Column, Line = Line, Write = js.Any.fromFunction1(Write), WriteBlankLines = js.Any.fromFunction1(WriteBlankLines), WriteLine = js.Any.fromFunction1(WriteLine))
   
     __obj.asInstanceOf[TextStreamWriter]
   }

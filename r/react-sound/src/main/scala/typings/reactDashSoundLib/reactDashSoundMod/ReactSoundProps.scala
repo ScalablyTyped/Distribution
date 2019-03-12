@@ -32,15 +32,15 @@ object ReactSoundProps {
     url: java.lang.String,
     autoLoad: js.UndefOr[scala.Boolean] = js.undefined,
     loop: js.UndefOr[scala.Boolean] = js.undefined,
-    onBufferChange: js.Function0[scala.Unit] = null,
-    onError: js.Function0[scala.Unit] = null,
-    onFinishedPlaying: js.Function0[scala.Unit] = null,
-    onLoad: js.Function0[scala.Unit] = null,
-    onLoading: js.Function0[scala.Unit] = null,
-    onPause: js.Function0[scala.Unit] = null,
-    onPlaying: js.Function0[scala.Unit] = null,
-    onResume: js.Function0[scala.Unit] = null,
-    onStop: js.Function0[scala.Unit] = null,
+    onBufferChange: () => scala.Unit = null,
+    onError: () => scala.Unit = null,
+    onFinishedPlaying: () => scala.Unit = null,
+    onLoad: () => scala.Unit = null,
+    onLoading: () => scala.Unit = null,
+    onPause: () => scala.Unit = null,
+    onPlaying: () => scala.Unit = null,
+    onResume: () => scala.Unit = null,
+    onStop: () => scala.Unit = null,
     playFromPosition: scala.Int | scala.Double = null,
     playbackRate: scala.Int | scala.Double = null,
     position: scala.Int | scala.Double = null,
@@ -49,15 +49,15 @@ object ReactSoundProps {
     val __obj = js.Dynamic.literal(playStatus = playStatus, url = url)
     if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad)
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
-    if (onBufferChange != null) __obj.updateDynamic("onBufferChange")(onBufferChange)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onFinishedPlaying != null) __obj.updateDynamic("onFinishedPlaying")(onFinishedPlaying)
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
-    if (onLoading != null) __obj.updateDynamic("onLoading")(onLoading)
-    if (onPause != null) __obj.updateDynamic("onPause")(onPause)
-    if (onPlaying != null) __obj.updateDynamic("onPlaying")(onPlaying)
-    if (onResume != null) __obj.updateDynamic("onResume")(onResume)
-    if (onStop != null) __obj.updateDynamic("onStop")(onStop)
+    if (onBufferChange != null) __obj.updateDynamic("onBufferChange")(js.Any.fromFunction0(onBufferChange))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction0(onError))
+    if (onFinishedPlaying != null) __obj.updateDynamic("onFinishedPlaying")(js.Any.fromFunction0(onFinishedPlaying))
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
+    if (onLoading != null) __obj.updateDynamic("onLoading")(js.Any.fromFunction0(onLoading))
+    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction0(onPause))
+    if (onPlaying != null) __obj.updateDynamic("onPlaying")(js.Any.fromFunction0(onPlaying))
+    if (onResume != null) __obj.updateDynamic("onResume")(js.Any.fromFunction0(onResume))
+    if (onStop != null) __obj.updateDynamic("onStop")(js.Any.fromFunction0(onStop))
     if (playFromPosition != null) __obj.updateDynamic("playFromPosition")(playFromPosition.asInstanceOf[js.Any])
     if (playbackRate != null) __obj.updateDynamic("playbackRate")(playbackRate.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])

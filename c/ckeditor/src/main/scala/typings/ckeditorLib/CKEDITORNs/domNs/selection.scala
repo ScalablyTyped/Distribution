@@ -13,7 +13,7 @@ class selection protected () extends js.Object {
   def this(target: element) = this()
   def this(target: selection) = this()
   val FILLING_CHAR_SEQUENCE: java.lang.String = js.native
-  val document: document = js.native
+  val document: ckeditorLib.CKEDITORNs.domNs.document = js.native
   val isFake: scala.Boolean = js.native
   val isLocked: scala.Boolean = js.native
   val rev: scala.Double = js.native

@@ -70,33 +70,15 @@ trait DragSourceSpec[Props, DragObject] extends js.Object {
 object DragSourceSpec {
   @scala.inline
   def apply[Props, DragObject](
-    beginDrag: js.Function3[
-      Props, 
-      reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor, 
-      js.Any, 
-      DragObject
-    ],
-    canDrag: js.Function2[
-      /* props */ Props, 
-      /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor, 
-      scala.Boolean
-    ] = null,
-    endDrag: js.Function3[
-      /* props */ Props, 
-      /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor, 
-      /* component */ js.Any, 
-      scala.Unit
-    ] = null,
-    isDragging: js.Function2[
-      /* props */ Props, 
-      /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor, 
-      scala.Boolean
-    ] = null
+    beginDrag: (Props, reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor, js.Any) => DragObject,
+    canDrag: (/* props */ Props, /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor) => scala.Boolean = null,
+    endDrag: (/* props */ Props, /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor, /* component */ js.Any) => scala.Unit = null,
+    isDragging: (/* props */ Props, /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor) => scala.Boolean = null
   ): DragSourceSpec[Props, DragObject] = {
-    val __obj = js.Dynamic.literal(beginDrag = beginDrag)
-    if (canDrag != null) __obj.updateDynamic("canDrag")(canDrag)
-    if (endDrag != null) __obj.updateDynamic("endDrag")(endDrag)
-    if (isDragging != null) __obj.updateDynamic("isDragging")(isDragging)
+    val __obj = js.Dynamic.literal(beginDrag = js.Any.fromFunction3(beginDrag))
+    if (canDrag != null) __obj.updateDynamic("canDrag")(js.Any.fromFunction2(canDrag))
+    if (endDrag != null) __obj.updateDynamic("endDrag")(js.Any.fromFunction3(endDrag))
+    if (isDragging != null) __obj.updateDynamic("isDragging")(js.Any.fromFunction2(isDragging))
     __obj.asInstanceOf[DragSourceSpec[Props, DragObject]]
   }
 }

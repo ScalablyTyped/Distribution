@@ -31,13 +31,13 @@ trait VanillaTilt extends js.Object {
 object VanillaTilt {
   @scala.inline
   def apply(
-    addEventListeners: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    getValues: js.Function0[TiltValues],
-    removeEventListener: js.Function0[scala.Unit],
-    reset: js.Function0[scala.Unit]
+    addEventListeners: () => scala.Unit,
+    destroy: () => scala.Unit,
+    getValues: () => TiltValues,
+    removeEventListener: () => scala.Unit,
+    reset: () => scala.Unit
   ): VanillaTilt = {
-    val __obj = js.Dynamic.literal(addEventListeners = addEventListeners, destroy = destroy, getValues = getValues, removeEventListener = removeEventListener, reset = reset)
+    val __obj = js.Dynamic.literal(addEventListeners = js.Any.fromFunction0(addEventListeners), destroy = js.Any.fromFunction0(destroy), getValues = js.Any.fromFunction0(getValues), removeEventListener = js.Any.fromFunction0(removeEventListener), reset = js.Any.fromFunction0(reset))
   
     __obj.asInstanceOf[VanillaTilt]
   }

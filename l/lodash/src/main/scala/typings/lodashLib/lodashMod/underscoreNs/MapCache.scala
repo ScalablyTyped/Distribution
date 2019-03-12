@@ -43,14 +43,14 @@ trait MapCache extends js.Object {
 object MapCache {
   @scala.inline
   def apply(
-    delete: js.Function1[js.Any, scala.Boolean],
-    get: js.Function1[js.Any, js.Any],
-    has: js.Function1[js.Any, scala.Boolean],
-    set: js.Function2[js.Any, js.Any, MapCache],
-    clear: js.Function0[scala.Unit] = null
+    delete: js.Any => scala.Boolean,
+    get: js.Any => js.Any,
+    has: js.Any => scala.Boolean,
+    set: (js.Any, js.Any) => MapCache,
+    clear: () => scala.Unit = null
   ): MapCache = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, has = has, set = set)
-    if (clear != null) __obj.updateDynamic("clear")(clear)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), set = js.Any.fromFunction2(set))
+    if (clear != null) __obj.updateDynamic("clear")(js.Any.fromFunction0(clear))
     __obj.asInstanceOf[MapCache]
   }
 }

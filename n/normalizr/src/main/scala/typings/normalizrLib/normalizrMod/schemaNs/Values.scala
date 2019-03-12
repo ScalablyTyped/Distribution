@@ -12,8 +12,8 @@ trait Values
 
 object Values {
   @scala.inline
-  def apply(define: js.Function1[normalizrLib.normalizrMod.Schema, scala.Unit]): Values = {
-    val __obj = js.Dynamic.literal(define = define)
+  def apply(define: normalizrLib.normalizrMod.Schema => scala.Unit): Values = {
+    val __obj = js.Dynamic.literal(define = js.Any.fromFunction1(define))
   
     __obj.asInstanceOf[Values]
   }

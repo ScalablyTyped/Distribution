@@ -62,29 +62,29 @@ object InnerAudioContext {
     autoplay: scala.Boolean,
     buffered: scala.Double,
     currentTime: scala.Double,
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     duration: scala.Double,
     loop: scala.Boolean,
     obeyMuteSwitch: scala.Boolean,
-    onCanplay: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
-    onEnded: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
-    onError: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
-    onPause: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
-    onPlay: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
-    onSeeked: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
-    onSeeking: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
-    onStop: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
-    onTimeUpdate: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
-    onWaiting: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
-    pause: js.Function0[scala.Unit],
+    onCanplay: js.Function1[/* res */ ErrCodeResponse, scala.Unit] => scala.Unit,
+    onEnded: js.Function1[/* res */ ErrCodeResponse, scala.Unit] => scala.Unit,
+    onError: js.Function1[/* res */ ErrCodeResponse, scala.Unit] => scala.Unit,
+    onPause: js.Function1[/* res */ ErrCodeResponse, scala.Unit] => scala.Unit,
+    onPlay: js.Function1[/* res */ ErrCodeResponse, scala.Unit] => scala.Unit,
+    onSeeked: js.Function1[/* res */ ErrCodeResponse, scala.Unit] => scala.Unit,
+    onSeeking: js.Function1[/* res */ ErrCodeResponse, scala.Unit] => scala.Unit,
+    onStop: js.Function1[/* res */ ErrCodeResponse, scala.Unit] => scala.Unit,
+    onTimeUpdate: js.Function1[/* res */ ErrCodeResponse, scala.Unit] => scala.Unit,
+    onWaiting: js.Function1[/* res */ ErrCodeResponse, scala.Unit] => scala.Unit,
+    pause: () => scala.Unit,
     paused: scala.Boolean,
-    play: js.Function0[scala.Unit],
-    seek: js.Function1[scala.Double, scala.Unit],
+    play: () => scala.Unit,
+    seek: scala.Double => scala.Unit,
     src: java.lang.String,
     startTime: scala.Double,
-    stop: js.Function0[scala.Unit]
+    stop: () => scala.Unit
   ): InnerAudioContext = {
-    val __obj = js.Dynamic.literal(autoplay = autoplay, buffered = buffered, currentTime = currentTime, destroy = destroy, duration = duration, loop = loop, obeyMuteSwitch = obeyMuteSwitch, onCanplay = onCanplay, onEnded = onEnded, onError = onError, onPause = onPause, onPlay = onPlay, onSeeked = onSeeked, onSeeking = onSeeking, onStop = onStop, onTimeUpdate = onTimeUpdate, onWaiting = onWaiting, pause = pause, paused = paused, play = play, seek = seek, src = src, startTime = startTime, stop = stop)
+    val __obj = js.Dynamic.literal(autoplay = autoplay, buffered = buffered, currentTime = currentTime, destroy = js.Any.fromFunction0(destroy), duration = duration, loop = loop, obeyMuteSwitch = obeyMuteSwitch, onCanplay = js.Any.fromFunction1(onCanplay), onEnded = js.Any.fromFunction1(onEnded), onError = js.Any.fromFunction1(onError), onPause = js.Any.fromFunction1(onPause), onPlay = js.Any.fromFunction1(onPlay), onSeeked = js.Any.fromFunction1(onSeeked), onSeeking = js.Any.fromFunction1(onSeeking), onStop = js.Any.fromFunction1(onStop), onTimeUpdate = js.Any.fromFunction1(onTimeUpdate), onWaiting = js.Any.fromFunction1(onWaiting), pause = js.Any.fromFunction0(pause), paused = paused, play = js.Any.fromFunction0(play), seek = js.Any.fromFunction1(seek), src = src, startTime = startTime, stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[InnerAudioContext]
   }

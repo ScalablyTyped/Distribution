@@ -64,11 +64,7 @@ trait GrammarRegistry extends js.Object {
     */
   def loadGrammar(
     grammarPath: java.lang.String,
-    callback: js.Function2[
-      /* error */ nodeLib.Error | scala.Null, 
-      /* grammar */ js.UndefOr[Grammar], 
-      scala.Unit
-    ]
+    callback: js.Function2[/* error */ stdLib.Error | scala.Null, /* grammar */ js.UndefOr[Grammar], scala.Unit]
   ): scala.Unit
   /**
     *  Read a grammar synchronously and add it to this registry.
@@ -112,11 +108,7 @@ trait GrammarRegistry extends js.Object {
     */
   def readGrammar(
     grammarPath: java.lang.String,
-    callback: js.Function2[
-      /* error */ nodeLib.Error | scala.Null, 
-      /* grammar */ js.UndefOr[Grammar], 
-      scala.Unit
-    ]
+    callback: js.Function2[/* error */ stdLib.Error | scala.Null, /* grammar */ js.UndefOr[Grammar], scala.Unit]
   ): scala.Unit
   /**
     *  Read a grammar synchronously but don't add it to the registry.
@@ -150,42 +142,26 @@ trait GrammarRegistry extends js.Object {
 object GrammarRegistry {
   @scala.inline
   def apply(
-    addGrammar: js.Function1[Grammar, Disposable],
-    assignLanguageMode: js.Function2[TextBuffer, java.lang.String, scala.Boolean],
-    autoAssignLanguageMode: js.Function1[TextBuffer, scala.Unit],
-    decodeTokens: js.Function2[java.lang.String, js.Array[scala.Double | java.lang.String], js.Array[GrammarToken]],
-    getGrammarScore: js.Function3[Grammar, java.lang.String, java.lang.String, scala.Double],
-    getGrammars: js.Function0[js.Array[Grammar]],
-    grammarForScopeName: js.Function1[java.lang.String, js.UndefOr[Grammar]],
-    loadGrammar: js.Function2[
-      java.lang.String, 
-      js.Function2[
-        /* error */ nodeLib.Error | scala.Null, 
-        /* grammar */ js.UndefOr[Grammar], 
-        scala.Unit
-      ], 
-      scala.Unit
-    ],
-    loadGrammarSync: js.Function1[java.lang.String, Grammar],
-    maintainLanguageMode: js.Function1[TextBuffer, Disposable],
-    onDidAddGrammar: js.Function1[js.Function1[/* grammar */ Grammar, scala.Unit], Disposable],
-    onDidRemoveGrammar: js.Function1[js.Function1[/* grammar */ Grammar, scala.Unit], Disposable],
-    onDidUpdateGrammar: js.Function1[js.Function1[/* grammar */ Grammar, scala.Unit], Disposable],
-    readGrammar: js.Function2[
-      java.lang.String, 
-      js.Function2[
-        /* error */ nodeLib.Error | scala.Null, 
-        /* grammar */ js.UndefOr[Grammar], 
-        scala.Unit
-      ], 
-      scala.Unit
-    ],
-    readGrammarSync: js.Function1[java.lang.String, Grammar],
-    removeGrammar: js.Function1[Grammar, scala.Unit],
-    removeGrammarForScopeName: js.Function1[java.lang.String, js.UndefOr[Grammar]],
-    selectGrammar: js.Function2[java.lang.String, java.lang.String, Grammar]
+    addGrammar: Grammar => Disposable,
+    assignLanguageMode: (TextBuffer, java.lang.String) => scala.Boolean,
+    autoAssignLanguageMode: TextBuffer => scala.Unit,
+    decodeTokens: (java.lang.String, js.Array[scala.Double | java.lang.String]) => js.Array[GrammarToken],
+    getGrammarScore: (Grammar, java.lang.String, java.lang.String) => scala.Double,
+    getGrammars: () => js.Array[Grammar],
+    grammarForScopeName: java.lang.String => js.UndefOr[Grammar],
+    loadGrammar: (java.lang.String, js.Function2[/* error */ stdLib.Error | scala.Null, /* grammar */ js.UndefOr[Grammar], scala.Unit]) => scala.Unit,
+    loadGrammarSync: java.lang.String => Grammar,
+    maintainLanguageMode: TextBuffer => Disposable,
+    onDidAddGrammar: js.Function1[/* grammar */ Grammar, scala.Unit] => Disposable,
+    onDidRemoveGrammar: js.Function1[/* grammar */ Grammar, scala.Unit] => Disposable,
+    onDidUpdateGrammar: js.Function1[/* grammar */ Grammar, scala.Unit] => Disposable,
+    readGrammar: (java.lang.String, js.Function2[/* error */ stdLib.Error | scala.Null, /* grammar */ js.UndefOr[Grammar], scala.Unit]) => scala.Unit,
+    readGrammarSync: java.lang.String => Grammar,
+    removeGrammar: Grammar => scala.Unit,
+    removeGrammarForScopeName: java.lang.String => js.UndefOr[Grammar],
+    selectGrammar: (java.lang.String, java.lang.String) => Grammar
   ): GrammarRegistry = {
-    val __obj = js.Dynamic.literal(addGrammar = addGrammar, assignLanguageMode = assignLanguageMode, autoAssignLanguageMode = autoAssignLanguageMode, decodeTokens = decodeTokens, getGrammarScore = getGrammarScore, getGrammars = getGrammars, grammarForScopeName = grammarForScopeName, loadGrammar = loadGrammar, loadGrammarSync = loadGrammarSync, maintainLanguageMode = maintainLanguageMode, onDidAddGrammar = onDidAddGrammar, onDidRemoveGrammar = onDidRemoveGrammar, onDidUpdateGrammar = onDidUpdateGrammar, readGrammar = readGrammar, readGrammarSync = readGrammarSync, removeGrammar = removeGrammar, removeGrammarForScopeName = removeGrammarForScopeName, selectGrammar = selectGrammar)
+    val __obj = js.Dynamic.literal(addGrammar = js.Any.fromFunction1(addGrammar), assignLanguageMode = js.Any.fromFunction2(assignLanguageMode), autoAssignLanguageMode = js.Any.fromFunction1(autoAssignLanguageMode), decodeTokens = js.Any.fromFunction2(decodeTokens), getGrammarScore = js.Any.fromFunction3(getGrammarScore), getGrammars = js.Any.fromFunction0(getGrammars), grammarForScopeName = js.Any.fromFunction1(grammarForScopeName), loadGrammar = js.Any.fromFunction2(loadGrammar), loadGrammarSync = js.Any.fromFunction1(loadGrammarSync), maintainLanguageMode = js.Any.fromFunction1(maintainLanguageMode), onDidAddGrammar = js.Any.fromFunction1(onDidAddGrammar), onDidRemoveGrammar = js.Any.fromFunction1(onDidRemoveGrammar), onDidUpdateGrammar = js.Any.fromFunction1(onDidUpdateGrammar), readGrammar = js.Any.fromFunction2(readGrammar), readGrammarSync = js.Any.fromFunction1(readGrammarSync), removeGrammar = js.Any.fromFunction1(removeGrammar), removeGrammarForScopeName = js.Any.fromFunction1(removeGrammarForScopeName), selectGrammar = js.Any.fromFunction2(selectGrammar))
   
     __obj.asInstanceOf[GrammarRegistry]
   }

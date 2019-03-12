@@ -60,7 +60,7 @@ object CleaveOptions {
     numeralThousandsGroupStyle: NumeralThousandsGroupStyleType = null,
     numericOnly: js.UndefOr[scala.Boolean] = js.undefined,
     onCreditCardTypeChanged: cleaveDotJsLib.optionsCreditCardMod.CreditCardTypeChangeHandler = null,
-    onValueChanged: js.Function1[/* event */ js.Any, scala.Unit] = null,
+    onValueChanged: /* event */ js.Any => scala.Unit = null,
     phone: js.UndefOr[scala.Boolean] = js.undefined,
     phoneRegionCode: java.lang.String = null,
     prefix: java.lang.String = null,
@@ -91,7 +91,7 @@ object CleaveOptions {
     if (numeralThousandsGroupStyle != null) __obj.updateDynamic("numeralThousandsGroupStyle")(numeralThousandsGroupStyle)
     if (!js.isUndefined(numericOnly)) __obj.updateDynamic("numericOnly")(numericOnly)
     if (onCreditCardTypeChanged != null) __obj.updateDynamic("onCreditCardTypeChanged")(onCreditCardTypeChanged)
-    if (onValueChanged != null) __obj.updateDynamic("onValueChanged")(onValueChanged)
+    if (onValueChanged != null) __obj.updateDynamic("onValueChanged")(js.Any.fromFunction1(onValueChanged))
     if (!js.isUndefined(phone)) __obj.updateDynamic("phone")(phone)
     if (phoneRegionCode != null) __obj.updateDynamic("phoneRegionCode")(phoneRegionCode)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)

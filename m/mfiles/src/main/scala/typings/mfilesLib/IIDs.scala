@@ -18,15 +18,15 @@ trait IIDs extends js.Object {
 object IIDs {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, scala.Double, scala.Unit],
-    Clone: js.Function0[IIDs],
+    Add: (scala.Double, scala.Double) => scala.Unit,
+    Clone: () => IIDs,
     Count: scala.Double,
-    IndexOf: js.Function1[scala.Double, scala.Double],
-    Item: js.Function1[scala.Double, scala.Double],
-    Remove: js.Function1[scala.Double, scala.Unit],
-    RemoveAll: js.Function1[scala.Double, scala.Double]
+    IndexOf: scala.Double => scala.Double,
+    Item: scala.Double => scala.Double,
+    Remove: scala.Double => scala.Unit,
+    RemoveAll: scala.Double => scala.Double
   ): IIDs = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, IndexOf = IndexOf, Item = Item, Remove = Remove, RemoveAll = RemoveAll)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count, IndexOf = js.Any.fromFunction1(IndexOf), Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove), RemoveAll = js.Any.fromFunction1(RemoveAll))
   
     __obj.asInstanceOf[IIDs]
   }

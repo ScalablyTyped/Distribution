@@ -33,12 +33,12 @@ object Consul {
     event: Event,
     health: Health,
     kv: Kv,
-    lock: js.Function1[consulLib.consulMod.ConsulNs.LockNs.Options, Lock],
+    lock: consulLib.consulMod.ConsulNs.LockNs.Options => Lock,
     session: Session,
     status: Status,
-    watch: js.Function1[consulLib.consulMod.ConsulNs.WatchNs.Options, Watch]
+    watch: consulLib.consulMod.ConsulNs.WatchNs.Options => Watch
   ): Consul = {
-    val __obj = js.Dynamic.literal(acl = acl, agent = agent, catalog = catalog, event = event, health = health, kv = kv, lock = lock, session = session, status = status, watch = watch)
+    val __obj = js.Dynamic.literal(acl = acl, agent = agent, catalog = catalog, event = event, health = health, kv = kv, lock = js.Any.fromFunction1(lock), session = session, status = status, watch = js.Any.fromFunction1(watch))
   
     __obj.asInstanceOf[Consul]
   }

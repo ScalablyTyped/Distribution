@@ -17,12 +17,12 @@ object Animation {
   def apply(
     attr: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | js.Any],
     duration: scala.Double,
-    callback: js.Function0[scala.Unit] = null,
-    easing: js.Function1[/* num */ scala.Double, scala.Double] = null
+    callback: () => scala.Unit = null,
+    easing: /* num */ scala.Double => scala.Double = null
   ): Animation = {
     val __obj = js.Dynamic.literal(attr = attr, duration = duration)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
+    if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
     __obj.asInstanceOf[Animation]
   }
 }

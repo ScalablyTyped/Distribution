@@ -11,11 +11,8 @@ trait SjclEcdsaPublicKey extends SjclECCPublicKey {
 
 object SjclEcdsaPublicKey {
   @scala.inline
-  def apply(
-    get: js.Function0[SjclECCPublicKeyData],
-    verify: js.Function3[BitArray, BitArray, scala.Boolean, scala.Boolean]
-  ): SjclEcdsaPublicKey = {
-    val __obj = js.Dynamic.literal(get = get, verify = verify)
+  def apply(get: () => SjclECCPublicKeyData, verify: (BitArray, BitArray, scala.Boolean) => scala.Boolean): SjclEcdsaPublicKey = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), verify = js.Any.fromFunction3(verify))
   
     __obj.asInstanceOf[SjclEcdsaPublicKey]
   }

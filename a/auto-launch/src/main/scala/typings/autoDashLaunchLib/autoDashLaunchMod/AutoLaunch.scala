@@ -23,11 +23,11 @@ trait AutoLaunch extends js.Object {
 object AutoLaunch {
   @scala.inline
   def apply(
-    disable: js.Function0[js.Promise[scala.Unit]],
-    enable: js.Function0[js.Promise[scala.Unit]],
-    isEnabled: js.Function0[js.Promise[scala.Boolean]]
+    disable: () => js.Promise[scala.Unit],
+    enable: () => js.Promise[scala.Unit],
+    isEnabled: () => js.Promise[scala.Boolean]
   ): AutoLaunch = {
-    val __obj = js.Dynamic.literal(disable = disable, enable = enable, isEnabled = isEnabled)
+    val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), isEnabled = js.Any.fromFunction0(isEnabled))
   
     __obj.asInstanceOf[AutoLaunch]
   }

@@ -215,7 +215,7 @@ object RekognitionNs extends js.Object {
     /**
       * ID for the collection that you are creating.
       */
-    var CollectionId: CollectionId
+    var CollectionId: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.CollectionId
   }
   
   trait CreateCollectionResponse extends js.Object {
@@ -249,7 +249,7 @@ object RekognitionNs extends js.Object {
     /**
       * ARN of the IAM role that allows access to the stream processor.
       */
-    var RoleArn: RoleArn
+    var RoleArn: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.RoleArn
     /**
       * Face recognition input parameters to be used by the stream processor. Includes the collection to use for face recognition and the face attributes to detect.
       */
@@ -267,7 +267,7 @@ object RekognitionNs extends js.Object {
     /**
       * ID of the collection to delete.
       */
-    var CollectionId: CollectionId
+    var CollectionId: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.CollectionId
   }
   
   trait DeleteCollectionResponse extends js.Object {
@@ -281,7 +281,7 @@ object RekognitionNs extends js.Object {
     /**
       * Collection from which to remove the specific faces.
       */
-    var CollectionId: CollectionId
+    var CollectionId: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.CollectionId
     /**
       * An array of face IDs to delete.
       */
@@ -308,7 +308,7 @@ object RekognitionNs extends js.Object {
     /**
       * The ID of the collection to describe.
       */
-    var CollectionId: CollectionId
+    var CollectionId: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.CollectionId
   }
   
   trait DescribeCollectionResponse extends js.Object {
@@ -388,7 +388,7 @@ object RekognitionNs extends js.Object {
     /**
       * The input image as base64-encoded bytes or an S3 object. If you use the AWS CLI to call Amazon Rekognition operations, passing base64-encoded image bytes is not supported.  If you are using an AWS SDK to call Amazon Rekognition, you might not need to base64-encode image bytes passed using the Bytes field. For more information, see Images in the Amazon Rekognition developer guide.
       */
-    var Image: Image
+    var Image: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.Image
   }
   
   trait DetectFacesResponse extends js.Object {
@@ -406,7 +406,7 @@ object RekognitionNs extends js.Object {
     /**
       * The input image as base64-encoded bytes or an S3 object. If you use the AWS CLI to call Amazon Rekognition operations, passing image bytes is not supported. Images stored in an S3 Bucket do not need to be base64-encoded. If you are using an AWS SDK to call Amazon Rekognition, you might not need to base64-encode image bytes passed using the Bytes field. For more information, see Images in the Amazon Rekognition developer guide.
       */
-    var Image: Image
+    var Image: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.Image
     /**
       * Maximum number of labels you want the service to return in the response. The service returns the specified number of highest confidence labels. 
       */
@@ -436,7 +436,7 @@ object RekognitionNs extends js.Object {
     /**
       * The input image as base64-encoded bytes or an S3 object. If you use the AWS CLI to call Amazon Rekognition operations, passing base64-encoded image bytes is not supported.  If you are using an AWS SDK to call Amazon Rekognition, you might not need to base64-encode image bytes passed using the Bytes field. For more information, see Images in the Amazon Rekognition developer guide.
       */
-    var Image: Image
+    var Image: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.Image
     /**
       * Specifies the minimum confidence level for the labels to return. Amazon Rekognition doesn't return any labels with a confidence level lower than this specified value. If you don't specify MinConfidence, the operation returns labels with confidence values greater than or equal to 50 percent.
       */
@@ -458,7 +458,7 @@ object RekognitionNs extends js.Object {
     /**
       * The input image as base64-encoded bytes or an Amazon S3 object. If you use the AWS CLI to call Amazon Rekognition operations, you can't pass image bytes.  If you are using an AWS SDK to call Amazon Rekognition, you might not need to base64-encode image bytes passed using the Bytes field. For more information, see Images in the Amazon Rekognition developer guide.
       */
-    var Image: Image
+    var Image: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.Image
   }
   
   trait DetectTextResponse extends js.Object {
@@ -675,7 +675,7 @@ object RekognitionNs extends js.Object {
     /**
       * Job identifier for the required celebrity recognition analysis. You can get the job identifer from a call to StartCelebrityRecognition.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.JobId
     /**
       * Maximum number of results to return per paginated call. The largest value you can specify is 1000. If you specify a value greater than 1000, a maximum of 1000 results is returned. The default value is 1000.
       */
@@ -717,7 +717,7 @@ object RekognitionNs extends js.Object {
     /**
       * The identifier for the content moderation job. Use JobId to identify the job in a subsequent call to GetContentModeration.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.JobId
     /**
       * Maximum number of results to return per paginated call. The largest value you can specify is 1000. If you specify a value greater than 1000, a maximum of 1000 results is returned. The default value is 1000.
       */
@@ -763,7 +763,7 @@ object RekognitionNs extends js.Object {
     /**
       * Unique identifier for the face detection job. The JobId is returned from StartFaceDetection.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.JobId
     /**
       * Maximum number of results to return per paginated call. The largest value you can specify is 1000. If you specify a value greater than 1000, a maximum of 1000 results is returned. The default value is 1000.
       */
@@ -801,7 +801,7 @@ object RekognitionNs extends js.Object {
     /**
       * The job identifer for the search request. You get the job identifier from an initial call to StartFaceSearch.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.JobId
     /**
       * Maximum number of results to return per paginated call. The largest value you can specify is 1000. If you specify a value greater than 1000, a maximum of 1000 results is returned. The default value is 1000.
       */
@@ -843,7 +843,7 @@ object RekognitionNs extends js.Object {
     /**
       * Job identifier for the label detection operation for which you want results returned. You get the job identifer from an initial call to StartlabelDetection.
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.JobId
     /**
       * Maximum number of results to return per paginated call. The largest value you can specify is 1000. If you specify a value greater than 1000, a maximum of 1000 results is returned. The default value is 1000.
       */
@@ -889,7 +889,7 @@ object RekognitionNs extends js.Object {
     /**
       * The identifier for a job that tracks persons in a video. You get the JobId from a call to StartPersonTracking. 
       */
-    var JobId: JobId
+    var JobId: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.JobId
     /**
       * Maximum number of results to return per paginated call. The largest value you can specify is 1000. If you specify a value greater than 1000, a maximum of 1000 results is returned. The default value is 1000.
       */
@@ -953,7 +953,7 @@ object RekognitionNs extends js.Object {
     /**
       * The ID of an existing collection to which you want to add the faces that are detected in the input images.
       */
-    var CollectionId: CollectionId
+    var CollectionId: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.CollectionId
     /**
       * An array of facial attributes that you want to be returned. This can be the default list of attributes or all attributes. If you don't specify a value for Attributes or if you specify ["DEFAULT"], the API returns the following subset of facial attributes: BoundingBox, Confidence, Pose, Quality, and Landmarks. If you provide ["ALL"], all facial attributes are returned, but the operation takes longer to complete. If you provide both, ["ALL", "DEFAULT"], the service uses a logical AND operator to determine which attributes to return (in this case, all attributes). 
       */
@@ -965,7 +965,7 @@ object RekognitionNs extends js.Object {
     /**
       * The input image as base64-encoded bytes or an S3 object. If you use the AWS CLI to call Amazon Rekognition operations, passing base64-encoded image bytes isn't supported.  If you are using an AWS SDK to call Amazon Rekognition, you might not need to base64-encode image bytes passed using the Bytes field. For more information, see Images in the Amazon Rekognition developer guide.
       */
-    var Image: Image
+    var Image: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.Image
     /**
       * The maximum number of faces to index. The value of MaxFaces must be greater than or equal to 1. IndexFaces returns no more than 100 detected faces in an image, even if you specify a larger value for MaxFaces. If IndexFaces detects more faces than the value of MaxFaces, the faces with the lowest quality are filtered out first. If there are still more faces than the value of MaxFaces, the faces with the smallest bounding boxes are filtered out (up to the number that's needed to satisfy the value of MaxFaces). Information about the unindexed faces is available in the UnindexedFaces array.  The faces that are returned by IndexFaces are sorted by the largest face bounding box size to the smallest size, in descending order.  MaxFaces can be used with a collection associated with any version of the face model.
       */
@@ -1095,7 +1095,7 @@ object RekognitionNs extends js.Object {
     /**
       * ID of the collection from which to list the faces.
       */
-    var CollectionId: CollectionId
+    var CollectionId: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.CollectionId
     /**
       * Maximum number of faces to return.
       */
@@ -1184,11 +1184,11 @@ object RekognitionNs extends js.Object {
     /**
       * The ARN of an IAM role that gives Amazon Rekognition publishing permissions to the Amazon SNS topic. 
       */
-    var RoleArn: RoleArn
+    var RoleArn: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.RoleArn
     /**
       * The Amazon SNS topic to which Amazon Rekognition to posts the completion status.
       */
-    var SNSTopicArn: SNSTopicArn
+    var SNSTopicArn: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.SNSTopicArn
   }
   
   trait Parent extends js.Object {
@@ -1269,7 +1269,7 @@ object RekognitionNs extends js.Object {
     /**
       * The input image as base64-encoded bytes or an S3 object. If you use the AWS CLI to call Amazon Rekognition operations, passing base64-encoded image bytes is not supported.  If you are using an AWS SDK to call Amazon Rekognition, you might not need to base64-encode image bytes passed using the Bytes field. For more information, see Images in the Amazon Rekognition developer guide.
       */
-    var Image: Image
+    var Image: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.Image
   }
   
   trait RecognizeCelebritiesResponse extends js.Object {
@@ -1306,7 +1306,7 @@ object RekognitionNs extends js.Object {
     /**
       * ID of the collection to search.
       */
-    var CollectionId: CollectionId
+    var CollectionId: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.CollectionId
     /**
       * (Optional) Specifies the minimum confidence in the face match to return. For example, don't return any matches where confidence in matches is less than 70%.
       */
@@ -1314,7 +1314,7 @@ object RekognitionNs extends js.Object {
     /**
       * The input image as base64-encoded bytes or an S3 object. If you use the AWS CLI to call Amazon Rekognition operations, passing base64-encoded image bytes is not supported.  If you are using an AWS SDK to call Amazon Rekognition, you might not need to base64-encode image bytes passed using the Bytes field. For more information, see Images in the Amazon Rekognition developer guide.
       */
-    var Image: Image
+    var Image: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.Image
     /**
       * Maximum number of faces to return. The operation returns the maximum number of faces with the highest confidence in the match.
       */
@@ -1344,11 +1344,11 @@ object RekognitionNs extends js.Object {
     /**
       * ID of the collection the face belongs to.
       */
-    var CollectionId: CollectionId
+    var CollectionId: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.CollectionId
     /**
       * ID of a face to find matches for in the collection.
       */
-    var FaceId: FaceId
+    var FaceId: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.FaceId
     /**
       * Optional value specifying the minimum confidence in the face match to return. For example, don't return any matches where confidence in matches is less than 70%.
       */
@@ -1401,7 +1401,7 @@ object RekognitionNs extends js.Object {
     /**
       * The video in which you want to recognize celebrities. The video must be stored in an Amazon S3 bucket.
       */
-    var Video: Video
+    var Video: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.Video
   }
   
   trait StartCelebrityRecognitionResponse extends js.Object {
@@ -1431,7 +1431,7 @@ object RekognitionNs extends js.Object {
     /**
       * The video in which you want to moderate content. The video must be stored in an Amazon S3 bucket.
       */
-    var Video: Video
+    var Video: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.Video
   }
   
   trait StartContentModerationResponse extends js.Object {
@@ -1461,7 +1461,7 @@ object RekognitionNs extends js.Object {
     /**
       * The video in which you want to detect faces. The video must be stored in an Amazon S3 bucket.
       */
-    var Video: Video
+    var Video: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.Video
   }
   
   trait StartFaceDetectionResponse extends js.Object {
@@ -1479,7 +1479,7 @@ object RekognitionNs extends js.Object {
     /**
       * ID of the collection that contains the faces you want to search for.
       */
-    var CollectionId: CollectionId
+    var CollectionId: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.CollectionId
     /**
       * The minimum confidence in the person match to return. For example, don't return any matches where confidence in matches is less than 70%. 
       */
@@ -1495,7 +1495,7 @@ object RekognitionNs extends js.Object {
     /**
       * The video you want to search. The video must be stored in an Amazon S3 bucket. 
       */
-    var Video: Video
+    var Video: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.Video
   }
   
   trait StartFaceSearchResponse extends js.Object {
@@ -1525,7 +1525,7 @@ object RekognitionNs extends js.Object {
     /**
       * The video in which you want to detect labels. The video must be stored in an Amazon S3 bucket.
       */
-    var Video: Video
+    var Video: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.Video
   }
   
   trait StartLabelDetectionResponse extends js.Object {
@@ -1551,7 +1551,7 @@ object RekognitionNs extends js.Object {
     /**
       * The video in which you want to detect people. The video must be stored in an Amazon S3 bucket.
       */
-    var Video: Video
+    var Video: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.Video
   }
   
   trait StartPersonTrackingResponse extends js.Object {
@@ -1977,7 +1977,7 @@ object RekognitionNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetCelebrityRecognitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Gets the content moderation analysis results for a Amazon Rekognition Video analysis started by StartContentModeration. Content moderation analysis of a video is an asynchronous operation. You start analysis by calling StartContentModeration. which returns a job identifier (JobId). When analysis finishes, Amazon Rekognition Video publishes a completion status to the Amazon Simple Notification Service topic registered in the initial call to StartContentModeration. To get the results of the content moderation analysis, first check that the status value published to the Amazon SNS topic is SUCCEEDED. If so, call GetCelebrityDetection and pass the job identifier (JobId) from the initial call to StartCelebrityDetection.  For more information, see Working with Stored Videos in the Amazon Rekognition Devlopers Guide.  GetContentModeration returns detected content moderation labels, and the time they are detected, in an array, ModerationLabels, of ContentModerationDetection objects.  By default, the moderated labels are returned sorted by time, in milliseconds from the start of the video. You can also sort them by moderated label by specifying NAME for the SortBy input parameter.  Since video analysis can return a large number of results, use the MaxResults parameter to limit the number of labels returned in a single call to GetContentModeration. If there are more results than specified in MaxResults, the value of NextToken in the operation response contains a pagination token for getting the next set of results. To get the next page of results, call GetContentModeration and populate the NextToken request parameter with the value of NextToken returned from the previous call to GetContentModeration. For more information, see Detecting Unsafe Content in the Amazon Rekognition Developer Guide.
+      * Gets the content moderation analysis results for a Amazon Rekognition Video analysis started by StartContentModeration. Content moderation analysis of a video is an asynchronous operation. You start analysis by calling StartContentModeration which returns a job identifier (JobId). When analysis finishes, Amazon Rekognition Video publishes a completion status to the Amazon Simple Notification Service topic registered in the initial call to StartContentModeration. To get the results of the content moderation analysis, first check that the status value published to the Amazon SNS topic is SUCCEEDED. If so, call GetContentModeration and pass the job identifier (JobId) from the initial call to StartContentModeration.  For more information, see Working with Stored Videos in the Amazon Rekognition Devlopers Guide.  GetContentModeration returns detected content moderation labels, and the time they are detected, in an array, ModerationLabels, of ContentModerationDetection objects.  By default, the moderated labels are returned sorted by time, in milliseconds from the start of the video. You can also sort them by moderated label by specifying NAME for the SortBy input parameter.  Since video analysis can return a large number of results, use the MaxResults parameter to limit the number of labels returned in a single call to GetContentModeration. If there are more results than specified in MaxResults, the value of NextToken in the operation response contains a pagination token for getting the next set of results. To get the next page of results, call GetContentModeration and populate the NextToken request parameter with the value of NextToken returned from the previous call to GetContentModeration. For more information, see Detecting Unsafe Content in the Amazon Rekognition Developer Guide.
       */
     def getContentModeration(): awsDashSdkLib.libRequestMod.Request[GetContentModerationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getContentModeration(
@@ -1988,7 +1988,7 @@ object RekognitionNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetContentModerationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Gets the content moderation analysis results for a Amazon Rekognition Video analysis started by StartContentModeration. Content moderation analysis of a video is an asynchronous operation. You start analysis by calling StartContentModeration. which returns a job identifier (JobId). When analysis finishes, Amazon Rekognition Video publishes a completion status to the Amazon Simple Notification Service topic registered in the initial call to StartContentModeration. To get the results of the content moderation analysis, first check that the status value published to the Amazon SNS topic is SUCCEEDED. If so, call GetCelebrityDetection and pass the job identifier (JobId) from the initial call to StartCelebrityDetection.  For more information, see Working with Stored Videos in the Amazon Rekognition Devlopers Guide.  GetContentModeration returns detected content moderation labels, and the time they are detected, in an array, ModerationLabels, of ContentModerationDetection objects.  By default, the moderated labels are returned sorted by time, in milliseconds from the start of the video. You can also sort them by moderated label by specifying NAME for the SortBy input parameter.  Since video analysis can return a large number of results, use the MaxResults parameter to limit the number of labels returned in a single call to GetContentModeration. If there are more results than specified in MaxResults, the value of NextToken in the operation response contains a pagination token for getting the next set of results. To get the next page of results, call GetContentModeration and populate the NextToken request parameter with the value of NextToken returned from the previous call to GetContentModeration. For more information, see Detecting Unsafe Content in the Amazon Rekognition Developer Guide.
+      * Gets the content moderation analysis results for a Amazon Rekognition Video analysis started by StartContentModeration. Content moderation analysis of a video is an asynchronous operation. You start analysis by calling StartContentModeration which returns a job identifier (JobId). When analysis finishes, Amazon Rekognition Video publishes a completion status to the Amazon Simple Notification Service topic registered in the initial call to StartContentModeration. To get the results of the content moderation analysis, first check that the status value published to the Amazon SNS topic is SUCCEEDED. If so, call GetContentModeration and pass the job identifier (JobId) from the initial call to StartContentModeration.  For more information, see Working with Stored Videos in the Amazon Rekognition Devlopers Guide.  GetContentModeration returns detected content moderation labels, and the time they are detected, in an array, ModerationLabels, of ContentModerationDetection objects.  By default, the moderated labels are returned sorted by time, in milliseconds from the start of the video. You can also sort them by moderated label by specifying NAME for the SortBy input parameter.  Since video analysis can return a large number of results, use the MaxResults parameter to limit the number of labels returned in a single call to GetContentModeration. If there are more results than specified in MaxResults, the value of NextToken in the operation response contains a pagination token for getting the next set of results. To get the next page of results, call GetContentModeration and populate the NextToken request parameter with the value of NextToken returned from the previous call to GetContentModeration. For more information, see Detecting Unsafe Content in the Amazon Rekognition Developer Guide.
       */
     def getContentModeration(params: GetContentModerationRequest): awsDashSdkLib.libRequestMod.Request[GetContentModerationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getContentModeration(

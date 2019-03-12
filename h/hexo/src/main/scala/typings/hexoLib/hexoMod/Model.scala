@@ -36,13 +36,13 @@ trait Model[T] extends js.Object {
 object Model {
   @scala.inline
   def apply[T](
-    count: js.Function0[scala.Double],
-    filter: js.Function1[js.Function2[/* v */ T, /* i */ scala.Double, scala.Boolean], Model[T]],
-    forEach: js.Function1[js.Function2[/* v */ T, /* i */ scala.Double, scala.Unit], scala.Unit],
-    map: js.Function1[js.Function2[/* v */ T, /* i */ scala.Double, js.Any], js.Array[js.Any]],
-    toArray: js.Function0[js.Array[T]]
+    count: () => scala.Double,
+    filter: js.Function2[/* v */ T, /* i */ scala.Double, scala.Boolean] => Model[T],
+    forEach: js.Function2[/* v */ T, /* i */ scala.Double, scala.Unit] => scala.Unit,
+    map: js.Function2[/* v */ T, /* i */ scala.Double, js.Any] => js.Array[js.Any],
+    toArray: () => js.Array[T]
   ): Model[T] = {
-    val __obj = js.Dynamic.literal(count = count, filter = filter, forEach = forEach, map = map, toArray = toArray)
+    val __obj = js.Dynamic.literal(count = js.Any.fromFunction0(count), filter = js.Any.fromFunction1(filter), forEach = js.Any.fromFunction1(forEach), map = js.Any.fromFunction1(map), toArray = js.Any.fromFunction0(toArray))
   
     __obj.asInstanceOf[Model[T]]
   }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def getEncoding(
     buffer: nodeLib.Buffer,
-    opts: istextorbinaryLib.istextorbinaryMod.Options,
+    opts: Options,
     next: js.Function2[
       /* err */ scala.Null, 
       /* result */ istextorbinaryLib.istextorbinaryLibStrings.utf8 | istextorbinaryLib.istextorbinaryLibStrings.binary, 
@@ -27,7 +27,7 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   def getEncodingSync(buffer: nodeLib.Buffer): istextorbinaryLib.istextorbinaryLibStrings.utf8 | istextorbinaryLib.istextorbinaryLibStrings.binary = js.native
-  def getEncodingSync(buffer: nodeLib.Buffer, opts: istextorbinaryLib.istextorbinaryMod.Options): istextorbinaryLib.istextorbinaryLibStrings.utf8 | istextorbinaryLib.istextorbinaryLibStrings.binary = js.native
+  def getEncodingSync(buffer: nodeLib.Buffer, opts: Options): istextorbinaryLib.istextorbinaryLibStrings.utf8 | istextorbinaryLib.istextorbinaryLibStrings.binary = js.native
   def isBinary(
     filename: java.lang.String,
     buffer: js.UndefOr[scala.Nothing],

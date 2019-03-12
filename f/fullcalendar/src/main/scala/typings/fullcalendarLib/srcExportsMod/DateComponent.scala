@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "DateComponent")
 @js.native
 abstract class DateComponent ()
-  extends fullcalendarLib.datecomponentMod.default {
+  extends fullcalendarLib.dateComponentMod.default {
   def this(_view: js.Any) = this()
   def this(_view: js.Any, _options: js.Any) = this()
 }

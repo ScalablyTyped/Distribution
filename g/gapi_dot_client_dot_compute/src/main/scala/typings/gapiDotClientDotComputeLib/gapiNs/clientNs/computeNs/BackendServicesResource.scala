@@ -37,40 +37,16 @@ trait BackendServicesResource extends js.Object {
 object BackendServicesResource {
   @scala.inline
   def apply(
-    aggregatedList: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BackendServiceAggregatedList]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltBackendService, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltBackendServiceFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BackendService]
-    ],
-    getHealth: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltBackendServiceFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BackendServiceGroupHealth]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BackendServiceList]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltBackendService, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    update: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltBackendService, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    aggregatedList: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[BackendServiceAggregatedList],
+    delete: gapiDotClientDotComputeLib.Anon_AltBackendService => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotComputeLib.Anon_AltBackendServiceFields => gapiDotClientLib.gapiNs.clientNs.Request[BackendService],
+    getHealth: gapiDotClientDotComputeLib.Anon_AltBackendServiceFields => gapiDotClientLib.gapiNs.clientNs.Request[BackendServiceGroupHealth],
+    insert: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[BackendServiceList],
+    patch: gapiDotClientDotComputeLib.Anon_AltBackendService => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    update: gapiDotClientDotComputeLib.Anon_AltBackendService => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): BackendServicesResource = {
-    val __obj = js.Dynamic.literal(aggregatedList = aggregatedList, delete = delete, get = get, getHealth = getHealth, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(aggregatedList = js.Any.fromFunction1(aggregatedList), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getHealth = js.Any.fromFunction1(getHealth), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[BackendServicesResource]
   }

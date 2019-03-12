@@ -13,13 +13,13 @@ trait ScrollViewRefreshEvent extends ScrollViewEvent {
 object ScrollViewRefreshEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: ScrollView,
     page: scala.Int | scala.Double = null,
     pageCount: scala.Int | scala.Double = null
   ): ScrollViewRefreshEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (pageCount != null) __obj.updateDynamic("pageCount")(pageCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollViewRefreshEvent]

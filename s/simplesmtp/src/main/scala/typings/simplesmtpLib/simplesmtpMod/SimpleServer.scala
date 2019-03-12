@@ -24,7 +24,7 @@ class SimpleServer ()
   def listen(
     port: scala.Double,
     host: java.lang.String,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
 }
 

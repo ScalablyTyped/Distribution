@@ -46,9 +46,9 @@ object PhoneAuthProvider_Instance {
   @scala.inline
   def apply(
     providerId: java.lang.String,
-    verifyPhoneNumber: js.Function2[java.lang.String, ApplicationVerifier, js.Promise[java.lang.String]]
+    verifyPhoneNumber: (java.lang.String, ApplicationVerifier) => js.Promise[java.lang.String]
   ): PhoneAuthProvider_Instance = {
-    val __obj = js.Dynamic.literal(providerId = providerId, verifyPhoneNumber = verifyPhoneNumber)
+    val __obj = js.Dynamic.literal(providerId = providerId, verifyPhoneNumber = js.Any.fromFunction2(verifyPhoneNumber))
   
     __obj.asInstanceOf[PhoneAuthProvider_Instance]
   }

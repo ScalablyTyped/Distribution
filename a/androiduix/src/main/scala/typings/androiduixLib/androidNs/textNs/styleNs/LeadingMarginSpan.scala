@@ -26,24 +26,10 @@ trait LeadingMarginSpan extends ParagraphStyle {
 object LeadingMarginSpan {
   @scala.inline
   def apply(
-    drawLeadingMargin: js.Function12[
-      androiduixLib.androidNs.graphicsNs.Canvas, 
-      androiduixLib.androidNs.graphicsNs.Paint, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      scala.Boolean, 
-      androiduixLib.androidNs.textNs.Layout, 
-      scala.Unit
-    ],
-    getLeadingMargin: js.Function1[scala.Boolean, scala.Double]
+    drawLeadingMargin: (androiduixLib.androidNs.graphicsNs.Canvas, androiduixLib.androidNs.graphicsNs.Paint, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, java.lang.String, scala.Double, scala.Double, scala.Boolean, androiduixLib.androidNs.textNs.Layout) => scala.Unit,
+    getLeadingMargin: scala.Boolean => scala.Double
   ): LeadingMarginSpan = {
-    val __obj = js.Dynamic.literal(drawLeadingMargin = drawLeadingMargin, getLeadingMargin = getLeadingMargin)
+    val __obj = js.Dynamic.literal(drawLeadingMargin = js.Any.fromFunction12(drawLeadingMargin), getLeadingMargin = js.Any.fromFunction1(getLeadingMargin))
   
     __obj.asInstanceOf[LeadingMarginSpan]
   }

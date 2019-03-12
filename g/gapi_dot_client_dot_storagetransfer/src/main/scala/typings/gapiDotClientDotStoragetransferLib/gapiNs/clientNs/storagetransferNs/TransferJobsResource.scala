@@ -23,24 +23,12 @@ trait TransferJobsResource extends js.Object {
 object TransferJobsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TransferJob]
-    ],
-    get: js.Function1[
-      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TransferJob]
-    ],
-    list: js.Function1[
-      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListTransferJobsResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TransferJob]
-    ]
+    create: gapiDotClientDotStoragetransferLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[TransferJob],
+    get: gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[TransferJob],
+    list: gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[ListTransferJobsResponse],
+    patch: gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[TransferJob]
   ): TransferJobsResource = {
-    val __obj = js.Dynamic.literal(create = create, get = get, list = list, patch = patch)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch))
   
     __obj.asInstanceOf[TransferJobsResource]
   }

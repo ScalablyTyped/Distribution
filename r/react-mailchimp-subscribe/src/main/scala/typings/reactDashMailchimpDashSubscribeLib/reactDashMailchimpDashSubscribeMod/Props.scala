@@ -16,10 +16,10 @@ object Props {
   @scala.inline
   def apply[FormFields](
     url: java.lang.String,
-    render: js.Function1[/* hooks */ FormHooks[FormFields], reactLib.reactMod.ReactNs.ReactNode] = null
+    render: /* hooks */ FormHooks[FormFields] => reactLib.reactMod.ReactNs.ReactNode = null
   ): Props[FormFields] = {
     val __obj = js.Dynamic.literal(url = url)
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     __obj.asInstanceOf[Props[FormFields]]
   }
 }

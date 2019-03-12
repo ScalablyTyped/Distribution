@@ -38,7 +38,7 @@ trait JDBCConnectionProperties extends ConnectionProperties {
     */
   var JavaDriverClassPath: java.lang.String
   /** specifies a set of properties to pass to `java.lang.System.setProperty` before loading the system's JDBC driver. */
-  var SystemProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
+  var SystemProperties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
   /**
     * specifies how the type info returned by {@link com.sun.star.sdbc.XDatabaseMetaData.getTypeInfo()} will be modified.
     *
@@ -50,7 +50,7 @@ trait JDBCConnectionProperties extends ConnectionProperties {
     * COLUMN(X) defines the column which will be compared and the column which will be replaced. In the example above column 2 will be compared with the
     * value -5. If this is true than column 6 will now return the value PRECISION.
     */
-  var TypeInfoSettings: activexDashInteropLib.SafeArray[_]
+  var TypeInfoSettings: stdLib.SafeArray[_]
 }
 
 object JDBCConnectionProperties {
@@ -60,8 +60,8 @@ object JDBCConnectionProperties {
     IsAutoRetrievingEnabled: scala.Boolean,
     JavaDriverClass: java.lang.String,
     JavaDriverClassPath: java.lang.String,
-    SystemProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
-    TypeInfoSettings: activexDashInteropLib.SafeArray[_],
+    SystemProperties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    TypeInfoSettings: stdLib.SafeArray[_],
     password: java.lang.String,
     user: java.lang.String
   ): JDBCConnectionProperties = {

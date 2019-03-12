@@ -26,11 +26,11 @@ object IRowCol {
   @scala.inline
   def apply[TEntity](
     col: uiDashGridLib.uiDashGridMod.uiGridNs.IGridColumnOf[TEntity],
-    getIntersectionValueFiltered: js.Function0[java.lang.String | stdLib.Number | js.Object],
-    getIntersectionValueRaw: js.Function0[java.lang.String | stdLib.Number | js.Object],
+    getIntersectionValueFiltered: () => java.lang.String | stdLib.Number | js.Object,
+    getIntersectionValueRaw: () => java.lang.String | stdLib.Number | js.Object,
     row: uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity]
   ): IRowCol[TEntity] = {
-    val __obj = js.Dynamic.literal(col = col, getIntersectionValueFiltered = getIntersectionValueFiltered, getIntersectionValueRaw = getIntersectionValueRaw, row = row)
+    val __obj = js.Dynamic.literal(col = col, getIntersectionValueFiltered = js.Any.fromFunction0(getIntersectionValueFiltered), getIntersectionValueRaw = js.Any.fromFunction0(getIntersectionValueRaw), row = row)
   
     __obj.asInstanceOf[IRowCol[TEntity]]
   }

@@ -361,50 +361,36 @@ trait I2cBus extends js.Object {
 object I2cBus {
   @scala.inline
   def apply(
-    close: js.Function1[i2cDashBusLib.CompletionCallback, scala.Unit],
-    closeSync: js.Function0[scala.Unit],
-    i2cFuncs: js.Function1[i2cDashBusLib.ResultCallback[I2cBusFuncs], scala.Unit],
-    i2cFuncsSync: js.Function0[I2cBusFuncs],
-    i2cRead: js.Function4[scala.Double, scala.Double, nodeLib.Buffer, i2cDashBusLib.BufferCallback, scala.Unit],
-    i2cReadSync: js.Function3[scala.Double, scala.Double, nodeLib.Buffer, scala.Double],
-    i2cWrite: js.Function4[scala.Double, scala.Double, nodeLib.Buffer, i2cDashBusLib.BufferCallback, scala.Unit],
-    i2cWriteSync: js.Function3[scala.Double, scala.Double, nodeLib.Buffer, scala.Double],
-    readByte: js.Function3[scala.Double, scala.Double, i2cDashBusLib.ResultCallback[scala.Double], scala.Unit],
-    readByteSync: js.Function2[scala.Double, scala.Double, scala.Double],
-    readI2cBlock: js.Function5[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      nodeLib.Buffer, 
-      i2cDashBusLib.BufferCallback, 
-      scala.Unit
-    ],
-    readI2cBlockSync: js.Function4[scala.Double, scala.Double, scala.Double, nodeLib.Buffer, scala.Double],
-    readWord: js.Function3[scala.Double, scala.Double, i2cDashBusLib.ResultCallback[scala.Double], scala.Unit],
-    readWordSync: js.Function2[scala.Double, scala.Double, scala.Double],
-    receiveByte: js.Function2[scala.Double, i2cDashBusLib.ResultCallback[scala.Double], scala.Unit],
-    receiveByteSync: js.Function1[scala.Double, scala.Double],
-    scan: js.Function1[i2cDashBusLib.ResultCallback[js.Array[scala.Double]], scala.Unit],
-    scanSync: js.Function0[js.Array[scala.Double]],
-    sendByte: js.Function3[scala.Double, scala.Double, i2cDashBusLib.CompletionCallback, scala.Unit],
-    sendByteSync: js.Function2[scala.Double, scala.Double, scala.Unit],
-    writeByte: js.Function4[scala.Double, scala.Double, scala.Double, i2cDashBusLib.CompletionCallback, scala.Unit],
-    writeByteSync: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
-    writeI2cBlock: js.Function5[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      nodeLib.Buffer, 
-      i2cDashBusLib.BufferCallback, 
-      scala.Unit
-    ],
-    writeI2cBlockSync: js.Function4[scala.Double, scala.Double, scala.Double, nodeLib.Buffer, scala.Double],
-    writeQuick: js.Function4[scala.Double, scala.Double, scala.Double, i2cDashBusLib.CompletionCallback, scala.Unit],
-    writeQuickSync: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
-    writeWord: js.Function4[scala.Double, scala.Double, scala.Double, i2cDashBusLib.CompletionCallback, scala.Unit],
-    writeWordSync: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit]
+    close: i2cDashBusLib.CompletionCallback => scala.Unit,
+    closeSync: () => scala.Unit,
+    i2cFuncs: i2cDashBusLib.ResultCallback[I2cBusFuncs] => scala.Unit,
+    i2cFuncsSync: () => I2cBusFuncs,
+    i2cRead: (scala.Double, scala.Double, nodeLib.Buffer, i2cDashBusLib.BufferCallback) => scala.Unit,
+    i2cReadSync: (scala.Double, scala.Double, nodeLib.Buffer) => scala.Double,
+    i2cWrite: (scala.Double, scala.Double, nodeLib.Buffer, i2cDashBusLib.BufferCallback) => scala.Unit,
+    i2cWriteSync: (scala.Double, scala.Double, nodeLib.Buffer) => scala.Double,
+    readByte: (scala.Double, scala.Double, i2cDashBusLib.ResultCallback[scala.Double]) => scala.Unit,
+    readByteSync: (scala.Double, scala.Double) => scala.Double,
+    readI2cBlock: (scala.Double, scala.Double, scala.Double, nodeLib.Buffer, i2cDashBusLib.BufferCallback) => scala.Unit,
+    readI2cBlockSync: (scala.Double, scala.Double, scala.Double, nodeLib.Buffer) => scala.Double,
+    readWord: (scala.Double, scala.Double, i2cDashBusLib.ResultCallback[scala.Double]) => scala.Unit,
+    readWordSync: (scala.Double, scala.Double) => scala.Double,
+    receiveByte: (scala.Double, i2cDashBusLib.ResultCallback[scala.Double]) => scala.Unit,
+    receiveByteSync: scala.Double => scala.Double,
+    scan: i2cDashBusLib.ResultCallback[js.Array[scala.Double]] => scala.Unit,
+    scanSync: () => js.Array[scala.Double],
+    sendByte: (scala.Double, scala.Double, i2cDashBusLib.CompletionCallback) => scala.Unit,
+    sendByteSync: (scala.Double, scala.Double) => scala.Unit,
+    writeByte: (scala.Double, scala.Double, scala.Double, i2cDashBusLib.CompletionCallback) => scala.Unit,
+    writeByteSync: (scala.Double, scala.Double, scala.Double) => scala.Unit,
+    writeI2cBlock: (scala.Double, scala.Double, scala.Double, nodeLib.Buffer, i2cDashBusLib.BufferCallback) => scala.Unit,
+    writeI2cBlockSync: (scala.Double, scala.Double, scala.Double, nodeLib.Buffer) => scala.Double,
+    writeQuick: (scala.Double, scala.Double, scala.Double, i2cDashBusLib.CompletionCallback) => scala.Unit,
+    writeQuickSync: (scala.Double, scala.Double, scala.Double) => scala.Unit,
+    writeWord: (scala.Double, scala.Double, scala.Double, i2cDashBusLib.CompletionCallback) => scala.Unit,
+    writeWordSync: (scala.Double, scala.Double, scala.Double) => scala.Unit
   ): I2cBus = {
-    val __obj = js.Dynamic.literal(close = close, closeSync = closeSync, i2cFuncs = i2cFuncs, i2cFuncsSync = i2cFuncsSync, i2cRead = i2cRead, i2cReadSync = i2cReadSync, i2cWrite = i2cWrite, i2cWriteSync = i2cWriteSync, readByte = readByte, readByteSync = readByteSync, readI2cBlock = readI2cBlock, readI2cBlockSync = readI2cBlockSync, readWord = readWord, readWordSync = readWordSync, receiveByte = receiveByte, receiveByteSync = receiveByteSync, scan = scan, scanSync = scanSync, sendByte = sendByte, sendByteSync = sendByteSync, writeByte = writeByte, writeByteSync = writeByteSync, writeI2cBlock = writeI2cBlock, writeI2cBlockSync = writeI2cBlockSync, writeQuick = writeQuick, writeQuickSync = writeQuickSync, writeWord = writeWord, writeWordSync = writeWordSync)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction1(close), closeSync = js.Any.fromFunction0(closeSync), i2cFuncs = js.Any.fromFunction1(i2cFuncs), i2cFuncsSync = js.Any.fromFunction0(i2cFuncsSync), i2cRead = js.Any.fromFunction4(i2cRead), i2cReadSync = js.Any.fromFunction3(i2cReadSync), i2cWrite = js.Any.fromFunction4(i2cWrite), i2cWriteSync = js.Any.fromFunction3(i2cWriteSync), readByte = js.Any.fromFunction3(readByte), readByteSync = js.Any.fromFunction2(readByteSync), readI2cBlock = js.Any.fromFunction5(readI2cBlock), readI2cBlockSync = js.Any.fromFunction4(readI2cBlockSync), readWord = js.Any.fromFunction3(readWord), readWordSync = js.Any.fromFunction2(readWordSync), receiveByte = js.Any.fromFunction2(receiveByte), receiveByteSync = js.Any.fromFunction1(receiveByteSync), scan = js.Any.fromFunction1(scan), scanSync = js.Any.fromFunction0(scanSync), sendByte = js.Any.fromFunction3(sendByte), sendByteSync = js.Any.fromFunction2(sendByteSync), writeByte = js.Any.fromFunction4(writeByte), writeByteSync = js.Any.fromFunction3(writeByteSync), writeI2cBlock = js.Any.fromFunction5(writeI2cBlock), writeI2cBlockSync = js.Any.fromFunction4(writeI2cBlockSync), writeQuick = js.Any.fromFunction4(writeQuick), writeQuickSync = js.Any.fromFunction3(writeQuickSync), writeWord = js.Any.fromFunction4(writeWord), writeWordSync = js.Any.fromFunction3(writeWordSync))
   
     __obj.asInstanceOf[I2cBus]
   }

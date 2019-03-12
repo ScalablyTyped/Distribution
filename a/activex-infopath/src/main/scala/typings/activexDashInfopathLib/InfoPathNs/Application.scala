@@ -18,7 +18,7 @@ class Application protected () extends js.Object {
   val User: UserObject = js.native
   val Version: java.lang.String = js.native
   val Windows: WindowsCollection = js.native
-  val XDocuments: XDocuments = js.native
+  val XDocuments: activexDashInfopathLib.InfoPathNs.XDocuments = js.native
   def CacheSolution(bstrSolutionURI: java.lang.String): scala.Unit = js.native
   def FormatString(varInput: js.Any, bstrCategory: java.lang.String, bstrOptions: java.lang.String): java.lang.String = js.native
   def IsDestinationReachable(bstrDestination: java.lang.String): scala.Boolean = js.native

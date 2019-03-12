@@ -16,9 +16,9 @@ trait ISyndicationAttributeFactory extends js.Object {
 object ISyndicationAttributeFactory {
   @scala.inline
   def apply(
-    createSyndicationAttribute: js.Function3[java.lang.String, java.lang.String, java.lang.String, SyndicationAttribute]
+    createSyndicationAttribute: (java.lang.String, java.lang.String, java.lang.String) => SyndicationAttribute
   ): ISyndicationAttributeFactory = {
-    val __obj = js.Dynamic.literal(createSyndicationAttribute = createSyndicationAttribute)
+    val __obj = js.Dynamic.literal(createSyndicationAttribute = js.Any.fromFunction3(createSyndicationAttribute))
   
     __obj.asInstanceOf[ISyndicationAttributeFactory]
   }

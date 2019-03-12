@@ -38,7 +38,7 @@ object TransferNs extends js.Object {
     /**
       * The service-assigned ID of the SFTP server that is created.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
   }
   
   trait CreateUserRequest extends js.Object {
@@ -53,11 +53,11 @@ object TransferNs extends js.Object {
     /**
       * The IAM role that controls your user’s access to your Amazon S3 bucket. The policies attached to this role will determine the level of access you want to provide your users when transferring files into and out of your Amazon S3 bucket or buckets. The IAM role should also contain a trust relationship that allows the SFTP server to access your resources when servicing your SFTP user’s transfer requests.
       */
-    var Role: Role
+    var Role: awsDashSdkLib.clientsTransferMod.TransferNs.Role
     /**
       * A system-assigned unique identifier for an SFTP server instance. This is the specific SFTP server that you added your user to.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
     /**
       * The public portion of the Secure Shall (SSH) key used to authenticate the user to the SFTP server.
       */
@@ -69,58 +69,58 @@ object TransferNs extends js.Object {
     /**
       * A unique string that identifies a user and is associated with a server as specified by the ServerId.
       */
-    var UserName: UserName
+    var UserName: awsDashSdkLib.clientsTransferMod.TransferNs.UserName
   }
   
   trait CreateUserResponse extends js.Object {
     /**
       * The ID of the SFTP server that the user is attached to.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
     /**
       * A unique string that identifies a user account associated with an SFTP server.
       */
-    var UserName: UserName
+    var UserName: awsDashSdkLib.clientsTransferMod.TransferNs.UserName
   }
   
   trait DeleteServerRequest extends js.Object {
     /**
       * A unique system-assigned identifier for an SFTP server instance.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
   }
   
   trait DeleteSshPublicKeyRequest extends js.Object {
     /**
       * A system-assigned unique identifier for a Secure File Transfer Protocol (SFTP) server instance that has the user assigned to it.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
     /**
       * A unique identifier used to reference your user’s specific SSH key.
       */
-    var SshPublicKeyId: SshPublicKeyId
+    var SshPublicKeyId: awsDashSdkLib.clientsTransferMod.TransferNs.SshPublicKeyId
     /**
       * A unique string that identifies a user whose public key is being deleted.
       */
-    var UserName: UserName
+    var UserName: awsDashSdkLib.clientsTransferMod.TransferNs.UserName
   }
   
   trait DeleteUserRequest extends js.Object {
     /**
       * A system-assigned unique identifier for an SFTP server instance that has the user assigned to it.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
     /**
       * A unique string that identifies a user that is being deleted from the server.
       */
-    var UserName: UserName
+    var UserName: awsDashSdkLib.clientsTransferMod.TransferNs.UserName
   }
   
   trait DescribeServerRequest extends js.Object {
     /**
       * A system-assigned unique identifier for an SFTP server.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
   }
   
   trait DescribeServerResponse extends js.Object {
@@ -134,18 +134,18 @@ object TransferNs extends js.Object {
     /**
       * A system-assigned unique identifier for an SFTP server that has this user assigned.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
     /**
       * The name of the user assigned to one or more servers. User names are part of the sign-in credentials to use the AWS Transfer service and perform file transfer tasks.
       */
-    var UserName: UserName
+    var UserName: awsDashSdkLib.clientsTransferMod.TransferNs.UserName
   }
   
   trait DescribeUserResponse extends js.Object {
     /**
       * A system-assigned unique identifier for an SFTP server that has this user assigned.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
     /**
       * An array containing the properties of the user account for the ServerID value that you specified.
       */
@@ -156,7 +156,7 @@ object TransferNs extends js.Object {
     /**
       * Specifies the unique Amazon Resource Name (ARN) for the server to be described.
       */
-    var Arn: Arn
+    var Arn: awsDashSdkLib.clientsTransferMod.TransferNs.Arn
     /**
       * Specifies information to call a customer-supplied authentication API. This field is not populated when the IdentityProviderType of the server is SERVICE_MANAGED&gt;.
       */
@@ -191,7 +191,7 @@ object TransferNs extends js.Object {
     /**
       * This property contains the unique Amazon Resource Name (ARN) for the user that was requested to be described.
       */
-    var Arn: Arn
+    var Arn: awsDashSdkLib.clientsTransferMod.TransferNs.Arn
     /**
       * This property specifies the landing directory (or folder) which is the location that files are written to or read from in an Amazon S3 bucket for the described user. An example would be: /bucket_name/home/username .
       */
@@ -233,30 +233,30 @@ object TransferNs extends js.Object {
     /**
       * A system-assigned unique identifier for an SFTP server.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
     /**
       * The public key portion of an SSH key pair.
       */
-    var SshPublicKeyBody: SshPublicKeyBody
+    var SshPublicKeyBody: awsDashSdkLib.clientsTransferMod.TransferNs.SshPublicKeyBody
     /**
       * The name of the user account that is assigned to one or more servers.
       */
-    var UserName: UserName
+    var UserName: awsDashSdkLib.clientsTransferMod.TransferNs.UserName
   }
   
   trait ImportSshPublicKeyResponse extends js.Object {
     /**
       * A system-assigned unique identifier for an SFTP server.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
     /**
       * This identifier is the name given to a public key by the system that was imported.
       */
-    var SshPublicKeyId: SshPublicKeyId
+    var SshPublicKeyId: awsDashSdkLib.clientsTransferMod.TransferNs.SshPublicKeyId
     /**
       * A user name assigned to the ServerID value that you specified.
       */
-    var UserName: UserName
+    var UserName: awsDashSdkLib.clientsTransferMod.TransferNs.UserName
   }
   
   trait ListServersRequest extends js.Object {
@@ -285,7 +285,7 @@ object TransferNs extends js.Object {
     /**
       * Requests the tags associated with a particular Amazon Resource Name (ARN). An ARN is an identifier for a specific AWS resource, such as a server, user, or role.
       */
-    var Arn: Arn
+    var Arn: awsDashSdkLib.clientsTransferMod.TransferNs.Arn
     /**
       * Specifies the number of tags to return as a response to the ListTagsForResource request.
       */
@@ -323,7 +323,7 @@ object TransferNs extends js.Object {
     /**
       * A system-assigned unique identifier for a Secure File Transfer Protocol (SFTP) server that has users are assigned to it.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
   }
   
   trait ListUsersResponse extends js.Object {
@@ -334,7 +334,7 @@ object TransferNs extends js.Object {
     /**
       * A system-assigned unique identifier for an SFTP server that the users are assigned to.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
     /**
       * Returns the user accounts and their properties for the ServerId value that you specify.
       */
@@ -345,7 +345,7 @@ object TransferNs extends js.Object {
     /**
       * The unique Amazon Resource Name (ARN) for the server to be listed.
       */
-    var Arn: Arn
+    var Arn: awsDashSdkLib.clientsTransferMod.TransferNs.Arn
     /**
       * The authentication method used to validate a user for the server that was specified. listed. This can include Secure Shell (SSH), user name and password combinations, or your own custom authentication method. Valid values include SERVICE_MANAGED or API_GATEWAY.
       */
@@ -372,7 +372,7 @@ object TransferNs extends js.Object {
     /**
       * This property is the unique Amazon Resource Name (ARN) for the user that you wish to learn about.
       */
-    var Arn: Arn
+    var Arn: awsDashSdkLib.clientsTransferMod.TransferNs.Arn
     /**
       * This value specifies the location that files are written to or read from an Amazon S3 bucket for the user you specify by their ARN.
       */
@@ -395,29 +395,29 @@ object TransferNs extends js.Object {
     /**
       * The date that the public key was added to the user account.
       */
-    var DateImported: DateImported
+    var DateImported: awsDashSdkLib.clientsTransferMod.TransferNs.DateImported
     /**
       * The content of the SSH public key as specified by the PublicKeyId.
       */
-    var SshPublicKeyBody: SshPublicKeyBody
+    var SshPublicKeyBody: awsDashSdkLib.clientsTransferMod.TransferNs.SshPublicKeyBody
     /**
       * The SshPublicKeyId parameter contains the identifier of the public key.
       */
-    var SshPublicKeyId: SshPublicKeyId
+    var SshPublicKeyId: awsDashSdkLib.clientsTransferMod.TransferNs.SshPublicKeyId
   }
   
   trait StartServerRequest extends js.Object {
     /**
       * A system-assigned unique identifier for an SFTP server that you start.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
   }
   
   trait StopServerRequest extends js.Object {
     /**
       * A system-assigned unique identifier for an SFTP server that you stopped.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
   }
   
   trait Tag extends js.Object {
@@ -435,22 +435,22 @@ object TransferNs extends js.Object {
     /**
       * An Amazon Resource Name (ARN) for a specific AWS resource, such as a server, user, or role.
       */
-    var Arn: Arn
+    var Arn: awsDashSdkLib.clientsTransferMod.TransferNs.Arn
     /**
       * Key-value pairs assigned to ARNs that you can use to group and search for resources by type. You can attach this metadata to user accounts for any purpose.
       */
-    var Tags: Tags
+    var Tags: awsDashSdkLib.clientsTransferMod.TransferNs.Tags
   }
   
   trait TestIdentityProviderRequest extends js.Object {
     /**
       * A system assigned identifier for a specific server. That server's user authentication method is tested with a user name and password.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
     /**
       * This request parameter is name of the user account to be tested.
       */
-    var UserName: UserName
+    var UserName: awsDashSdkLib.clientsTransferMod.TransferNs.UserName
     /**
       * The password of the user account to be tested.
       */
@@ -465,11 +465,11 @@ object TransferNs extends js.Object {
     /**
       * The HTTP status code that is the response from your API Gateway.
       */
-    var StatusCode: StatusCode
+    var StatusCode: awsDashSdkLib.clientsTransferMod.TransferNs.StatusCode
     /**
       * The endpoint of the service used to authenticate a user.
       */
-    var Url: Url
+    var Url: awsDashSdkLib.clientsTransferMod.TransferNs.Url
   }
   
   @js.native
@@ -841,11 +841,11 @@ object TransferNs extends js.Object {
     /**
       * This is the value of the resource that will have the tag removed. An Amazon Resource Name (ARN) is an identifier for a specific AWS resource, such as a server, user, or role.
       */
-    var Arn: Arn
+    var Arn: awsDashSdkLib.clientsTransferMod.TransferNs.Arn
     /**
       * TagKeys are key-value pairs assigned to ARNs that can be used to group and search for resources by type. This metadata can be attached to resources for any purpose.
       */
-    var TagKeys: TagKeys
+    var TagKeys: awsDashSdkLib.clientsTransferMod.TransferNs.TagKeys
   }
   
   trait UpdateServerRequest extends js.Object {
@@ -860,14 +860,14 @@ object TransferNs extends js.Object {
     /**
       * A system-assigned unique identifier for an SFTP server instance that the user account is assigned to.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
   }
   
   trait UpdateServerResponse extends js.Object {
     /**
       * A system-assigned unique identifier for an SFTP server that the user account is assigned to.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
   }
   
   trait UpdateUserRequest extends js.Object {
@@ -886,22 +886,22 @@ object TransferNs extends js.Object {
     /**
       * A system-assigned unique identifier for an SFTP server instance that the user account is assigned to.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
     /**
       * A unique string that identifies a user and is associated with a server as specified by the ServerId. This is the string that will be used by your user when they log in to your SFTP server.
       */
-    var UserName: UserName
+    var UserName: awsDashSdkLib.clientsTransferMod.TransferNs.UserName
   }
   
   trait UpdateUserResponse extends js.Object {
     /**
       * A system-assigned unique identifier for an SFTP server instance that the user account is assigned to.
       */
-    var ServerId: ServerId
+    var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
     /**
       * The unique identifier for a user that is assigned to the SFTP server instance that was specified in the request.
       */
-    var UserName: UserName
+    var UserName: awsDashSdkLib.clientsTransferMod.TransferNs.UserName
   }
   
   trait _IdentityProviderType extends js.Object

@@ -99,11 +99,11 @@ object pathNs extends js.Object {
     def extname(p: java.lang.String): java.lang.String = js.native
     def format(pP: nodeLib.pathMod.FormatInputPathObject): java.lang.String = js.native
     def isAbsolute(p: java.lang.String): scala.Boolean = js.native
-    def join(paths: js.Any*): java.lang.String = js.native
+    def join(paths: java.lang.String*): java.lang.String = js.native
     def normalize(p: java.lang.String): java.lang.String = js.native
     def parse(p: java.lang.String): nodeLib.pathMod.ParsedPath = js.native
     def relative(from: java.lang.String, to: java.lang.String): java.lang.String = js.native
-    def resolve(pathSegments: js.Any*): java.lang.String = js.native
+    def resolve(pathSegments: java.lang.String*): java.lang.String = js.native
   }
   
   @JSName("win32")
@@ -117,11 +117,11 @@ object pathNs extends js.Object {
     def extname(p: java.lang.String): java.lang.String = js.native
     def format(pP: nodeLib.pathMod.FormatInputPathObject): java.lang.String = js.native
     def isAbsolute(p: java.lang.String): scala.Boolean = js.native
-    def join(paths: js.Any*): java.lang.String = js.native
+    def join(paths: java.lang.String*): java.lang.String = js.native
     def normalize(p: java.lang.String): java.lang.String = js.native
     def parse(p: java.lang.String): nodeLib.pathMod.ParsedPath = js.native
     def relative(from: java.lang.String, to: java.lang.String): java.lang.String = js.native
-    def resolve(pathSegments: js.Any*): java.lang.String = js.native
+    def resolve(pathSegments: java.lang.String*): java.lang.String = js.native
   }
   
 }

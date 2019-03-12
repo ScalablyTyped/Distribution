@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 trait XPossibleHyphens
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** @returns an ascending sequence of numbers where each number is an offset within the original word which denotes a hyphenation position corresponding to on */
-  val HyphenationPositions: activexDashInteropLib.SafeArray[scala.Double]
+  val HyphenationPositions: stdLib.SafeArray[scala.Double]
   /**
     * @returns the language of the hyphenated word.
     * @see com.sun.star.lang.Locale
@@ -27,7 +27,7 @@ trait XPossibleHyphens
   /** @returns the word for which the information of possible hyphenation points was obtained. */
   val Word: java.lang.String
   /** @returns an ascending sequence of numbers where each number is an offset within the original word which denotes a hyphenation position corresponding to on */
-  def getHyphenationPositions(): activexDashInteropLib.SafeArray[scala.Double]
+  def getHyphenationPositions(): stdLib.SafeArray[scala.Double]
   /**
     * @returns the language of the hyphenated word.
     * @see com.sun.star.lang.Locale
@@ -42,19 +42,19 @@ trait XPossibleHyphens
 object XPossibleHyphens {
   @scala.inline
   def apply(
-    HyphenationPositions: activexDashInteropLib.SafeArray[scala.Double],
+    HyphenationPositions: stdLib.SafeArray[scala.Double],
     Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
     PossibleHyphens: java.lang.String,
     Word: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getHyphenationPositions: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    getLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
-    getPossibleHyphens: js.Function0[java.lang.String],
-    getWord: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getHyphenationPositions: () => stdLib.SafeArray[scala.Double],
+    getLocale: () => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    getPossibleHyphens: () => java.lang.String,
+    getWord: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XPossibleHyphens = {
-    val __obj = js.Dynamic.literal(HyphenationPositions = HyphenationPositions, Locale = Locale, PossibleHyphens = PossibleHyphens, Word = Word, acquire = acquire, getHyphenationPositions = getHyphenationPositions, getLocale = getLocale, getPossibleHyphens = getPossibleHyphens, getWord = getWord, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(HyphenationPositions = HyphenationPositions, Locale = Locale, PossibleHyphens = PossibleHyphens, Word = Word, acquire = js.Any.fromFunction0(acquire), getHyphenationPositions = js.Any.fromFunction0(getHyphenationPositions), getLocale = js.Any.fromFunction0(getLocale), getPossibleHyphens = js.Any.fromFunction0(getPossibleHyphens), getWord = js.Any.fromFunction0(getWord), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XPossibleHyphens]
   }

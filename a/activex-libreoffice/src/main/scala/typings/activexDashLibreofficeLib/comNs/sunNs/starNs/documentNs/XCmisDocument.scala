@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 /** The document can provide access to CMIS properties and versions through this interface. */
 trait XCmisDocument
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
-  val AllVersions: activexDashInteropLib.SafeArray[CmisVersion]
+  val AllVersions: stdLib.SafeArray[CmisVersion]
   /** Contains the properties values named after their CMIS ID. */
-  var CmisProperties: activexDashInteropLib.SafeArray[CmisProperty]
+  var CmisProperties: stdLib.SafeArray[CmisProperty]
   def canCancelCheckOut(): scala.Boolean
   def canCheckIn(): scala.Boolean
   def canCheckOut(): scala.Boolean
@@ -20,7 +20,7 @@ trait XCmisDocument
   def checkIn(isMajor: scala.Boolean, comment: java.lang.String): scala.Unit
   /** Check out the document into a private working copy on the server, and update the loaded document to reflect this change. */
   def checkOut(): scala.Unit
-  def getAllVersions(): activexDashInteropLib.SafeArray[CmisVersion]
+  def getAllVersions(): stdLib.SafeArray[CmisVersion]
   /** Tells whether a document can support versioning or not. */
   def isVersionable(): scala.Boolean
   def updateCmisProperties(cmisProperties: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[CmisProperty]): scala.Unit
@@ -29,22 +29,22 @@ trait XCmisDocument
 object XCmisDocument {
   @scala.inline
   def apply(
-    AllVersions: activexDashInteropLib.SafeArray[CmisVersion],
-    CmisProperties: activexDashInteropLib.SafeArray[CmisProperty],
-    acquire: js.Function0[scala.Unit],
-    canCancelCheckOut: js.Function0[scala.Boolean],
-    canCheckIn: js.Function0[scala.Boolean],
-    canCheckOut: js.Function0[scala.Boolean],
-    cancelCheckOut: js.Function0[scala.Unit],
-    checkIn: js.Function2[scala.Boolean, java.lang.String, scala.Unit],
-    checkOut: js.Function0[scala.Unit],
-    getAllVersions: js.Function0[activexDashInteropLib.SafeArray[CmisVersion]],
-    isVersionable: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    updateCmisProperties: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[CmisProperty], scala.Unit]
+    AllVersions: stdLib.SafeArray[CmisVersion],
+    CmisProperties: stdLib.SafeArray[CmisProperty],
+    acquire: () => scala.Unit,
+    canCancelCheckOut: () => scala.Boolean,
+    canCheckIn: () => scala.Boolean,
+    canCheckOut: () => scala.Boolean,
+    cancelCheckOut: () => scala.Unit,
+    checkIn: (scala.Boolean, java.lang.String) => scala.Unit,
+    checkOut: () => scala.Unit,
+    getAllVersions: () => stdLib.SafeArray[CmisVersion],
+    isVersionable: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    updateCmisProperties: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[CmisProperty] => scala.Unit
   ): XCmisDocument = {
-    val __obj = js.Dynamic.literal(AllVersions = AllVersions, CmisProperties = CmisProperties, acquire = acquire, canCancelCheckOut = canCancelCheckOut, canCheckIn = canCheckIn, canCheckOut = canCheckOut, cancelCheckOut = cancelCheckOut, checkIn = checkIn, checkOut = checkOut, getAllVersions = getAllVersions, isVersionable = isVersionable, queryInterface = queryInterface, release = release, updateCmisProperties = updateCmisProperties)
+    val __obj = js.Dynamic.literal(AllVersions = AllVersions, CmisProperties = CmisProperties, acquire = js.Any.fromFunction0(acquire), canCancelCheckOut = js.Any.fromFunction0(canCancelCheckOut), canCheckIn = js.Any.fromFunction0(canCheckIn), canCheckOut = js.Any.fromFunction0(canCheckOut), cancelCheckOut = js.Any.fromFunction0(cancelCheckOut), checkIn = js.Any.fromFunction2(checkIn), checkOut = js.Any.fromFunction0(checkOut), getAllVersions = js.Any.fromFunction0(getAllVersions), isVersionable = js.Any.fromFunction0(isVersionable), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), updateCmisProperties = js.Any.fromFunction1(updateCmisProperties))
   
     __obj.asInstanceOf[XCmisDocument]
   }

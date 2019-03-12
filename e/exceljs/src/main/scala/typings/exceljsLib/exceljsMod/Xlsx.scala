@@ -27,12 +27,12 @@ trait Xlsx extends js.Object {
 object Xlsx {
   @scala.inline
   def apply(
-    createInputStream: js.Function0[nodeLib.streamMod.Writable],
-    readFile: js.Function1[java.lang.String, js.Promise[scala.Unit]],
-    write: js.Function1[nodeLib.streamMod.Stream, js.Promise[scala.Unit]],
-    writeFile: js.Function1[java.lang.String, js.Promise[scala.Unit]]
+    createInputStream: () => nodeLib.streamMod.Writable,
+    readFile: java.lang.String => js.Promise[scala.Unit],
+    write: nodeLib.streamMod.Stream => js.Promise[scala.Unit],
+    writeFile: java.lang.String => js.Promise[scala.Unit]
   ): Xlsx = {
-    val __obj = js.Dynamic.literal(createInputStream = createInputStream, readFile = readFile, write = write, writeFile = writeFile)
+    val __obj = js.Dynamic.literal(createInputStream = js.Any.fromFunction0(createInputStream), readFile = js.Any.fromFunction1(readFile), write = js.Any.fromFunction1(write), writeFile = js.Any.fromFunction1(writeFile))
   
     __obj.asInstanceOf[Xlsx]
   }

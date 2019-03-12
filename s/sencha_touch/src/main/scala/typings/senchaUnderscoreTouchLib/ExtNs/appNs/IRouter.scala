@@ -52,27 +52,27 @@ object IRouter {
   def apply(
     alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    connect: js.Function2[/* url */ js.UndefOr[java.lang.String], /* params */ js.UndefOr[js.Any], scala.Unit] = null,
+    connect: (/* url */ js.UndefOr[java.lang.String], /* params */ js.UndefOr[js.Any]) => scala.Unit = null,
     defaults: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
-    draw: js.Function1[/* fn */ js.UndefOr[js.Any], scala.Unit] = null,
+    destroy: () => scala.Unit = null,
+    draw: /* fn */ js.UndefOr[js.Any] => scala.Unit = null,
     extend: java.lang.String = null,
-    getDefaults: js.Function0[_] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getRoutes: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
+    getDefaults: () => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getRoutes: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
-    recognize: js.Function1[/* url */ js.UndefOr[java.lang.String], _] = null,
+    recognize: /* url */ js.UndefOr[java.lang.String] => _ = null,
     routes: senchaUnderscoreTouchLib.ExtNs.Array = null,
     self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
-    setDefaults: js.Function1[/* defaults */ js.UndefOr[js.Any], scala.Unit] = null,
-    setRoutes: js.Function1[/* routes */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
+    setDefaults: /* defaults */ js.UndefOr[js.Any] => scala.Unit = null,
+    setRoutes: /* routes */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] => scala.Unit = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     uses: senchaUnderscoreTouchLib.ExtNs.Array = null
@@ -80,27 +80,27 @@ object IRouter {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (connect != null) __obj.updateDynamic("connect")(connect)
+    if (connect != null) __obj.updateDynamic("connect")(js.Any.fromFunction2(connect))
     if (defaults != null) __obj.updateDynamic("defaults")(defaults)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (draw != null) __obj.updateDynamic("draw")(draw)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
+    if (draw != null) __obj.updateDynamic("draw")(js.Any.fromFunction1(draw))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getDefaults != null) __obj.updateDynamic("getDefaults")(getDefaults)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getRoutes != null) __obj.updateDynamic("getRoutes")(getRoutes)
+    if (getDefaults != null) __obj.updateDynamic("getDefaults")(js.Any.fromFunction0(getDefaults))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getRoutes != null) __obj.updateDynamic("getRoutes")(js.Any.fromFunction0(getRoutes))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
-    if (recognize != null) __obj.updateDynamic("recognize")(recognize)
+    if (recognize != null) __obj.updateDynamic("recognize")(js.Any.fromFunction1(recognize))
     if (routes != null) __obj.updateDynamic("routes")(routes)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (setDefaults != null) __obj.updateDynamic("setDefaults")(setDefaults)
-    if (setRoutes != null) __obj.updateDynamic("setRoutes")(setRoutes)
+    if (setDefaults != null) __obj.updateDynamic("setDefaults")(js.Any.fromFunction1(setDefaults))
+    if (setRoutes != null) __obj.updateDynamic("setRoutes")(js.Any.fromFunction1(setRoutes))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (uses != null) __obj.updateDynamic("uses")(uses)

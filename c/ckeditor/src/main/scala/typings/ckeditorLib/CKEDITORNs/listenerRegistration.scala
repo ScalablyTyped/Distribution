@@ -11,8 +11,8 @@ trait listenerRegistration extends js.Object {
 
 object listenerRegistration {
   @scala.inline
-  def apply(removeListener: js.Function0[scala.Unit]): listenerRegistration = {
-    val __obj = js.Dynamic.literal(removeListener = removeListener)
+  def apply(removeListener: () => scala.Unit): listenerRegistration = {
+    val __obj = js.Dynamic.literal(removeListener = js.Any.fromFunction0(removeListener))
   
     __obj.asInstanceOf[listenerRegistration]
   }

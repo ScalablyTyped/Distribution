@@ -28,24 +28,12 @@ trait ForwardingAddressesResource extends js.Object {
 object ForwardingAddressesResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotGmailLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ForwardingAddress]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFieldsForwardingEmail, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFieldsForwardingEmail, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ForwardingAddress]
-    ],
-    list: js.Function1[
-      gapiDotClientDotGmailLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListForwardingAddressesResponse]
-    ]
+    create: gapiDotClientDotGmailLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ForwardingAddress],
+    delete: gapiDotClientDotGmailLib.Anon_AltFieldsForwardingEmail => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotGmailLib.Anon_AltFieldsForwardingEmail => gapiDotClientLib.gapiNs.clientNs.Request[ForwardingAddress],
+    list: gapiDotClientDotGmailLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ListForwardingAddressesResponse]
   ): ForwardingAddressesResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[ForwardingAddressesResource]
   }

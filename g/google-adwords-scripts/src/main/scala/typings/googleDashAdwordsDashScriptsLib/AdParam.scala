@@ -18,16 +18,16 @@ trait AdParam extends AdWordsEntity {
 object AdParam {
   @scala.inline
   def apply(
-    getAdGroup: js.Function0[AdGroup],
-    getInde: js.Function0[scala.Double],
-    getInsertionText: js.Function0[java.lang.String],
-    getKeyword: js.Function0[Keyword],
-    remove: js.Function0[scala.Unit],
-    setInsertionText: js.Function1[java.lang.String, scala.Unit],
-    getEntityType: js.Function0[java.lang.String] = null
+    getAdGroup: () => AdGroup,
+    getInde: () => scala.Double,
+    getInsertionText: () => java.lang.String,
+    getKeyword: () => Keyword,
+    remove: () => scala.Unit,
+    setInsertionText: java.lang.String => scala.Unit,
+    getEntityType: () => java.lang.String = null
   ): AdParam = {
-    val __obj = js.Dynamic.literal(getAdGroup = getAdGroup, getInde = getInde, getInsertionText = getInsertionText, getKeyword = getKeyword, remove = remove, setInsertionText = setInsertionText)
-    if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
+    val __obj = js.Dynamic.literal(getAdGroup = js.Any.fromFunction0(getAdGroup), getInde = js.Any.fromFunction0(getInde), getInsertionText = js.Any.fromFunction0(getInsertionText), getKeyword = js.Any.fromFunction0(getKeyword), remove = js.Any.fromFunction0(remove), setInsertionText = js.Any.fromFunction1(setInsertionText))
+    if (getEntityType != null) __obj.updateDynamic("getEntityType")(js.Any.fromFunction0(getEntityType))
     __obj.asInstanceOf[AdParam]
   }
 }

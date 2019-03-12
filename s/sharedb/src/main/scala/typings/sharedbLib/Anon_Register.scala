@@ -11,8 +11,8 @@ trait Anon_Register extends js.Object {
 
 object Anon_Register {
   @scala.inline
-  def apply(register: js.Function1[Anon_Key, scala.Unit]): Anon_Register = {
-    val __obj = js.Dynamic.literal(register = register)
+  def apply(register: Anon_Key => scala.Unit): Anon_Register = {
+    val __obj = js.Dynamic.literal(register = js.Any.fromFunction1(register))
   
     __obj.asInstanceOf[Anon_Register]
   }

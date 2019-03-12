@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-select/lib/Select", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val defaultProps: reactDashSelectLib.libSelectMod.Props[js.Any] = js.native
+  val defaultProps: Props[js.Any] = js.native
 }
 

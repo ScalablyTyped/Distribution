@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
   var getSocket: js.UndefOr[
     js.Function2[
       /* options */ this.type, 
-      /* callback */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* socketOptions */ js.Any, scala.Unit], 
+      /* callback */ js.Function2[/* err */ stdLib.Error | scala.Null, /* socketOptions */ js.Any, scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -89,11 +89,7 @@ object Options {
     encoding: java.lang.String = null,
     envelope: nodemailerLib.libMailerMod.MailNs.Envelope | nodemailerLib.libMimeDashNodeMod.MimeNodeNs.Envelope = null,
     from: java.lang.String | nodemailerLib.libMailerMod.MailNs.Address = null,
-    getSocket: js.Function2[
-      Options, 
-      /* callback */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* socketOptions */ js.Any, scala.Unit], 
-      scala.Unit
-    ] = null,
+    getSocket: (Options, /* callback */ js.Function2[/* err */ stdLib.Error | scala.Null, /* socketOptions */ js.Any, scala.Unit]) => scala.Unit = null,
     greetingTimeout: js.UndefOr[nodemailerLib.libSmtpDashConnectionMod.ms] = js.undefined,
     headers: nodemailerLib.libMailerMod.MailNs.Headers = null,
     host: java.lang.String = null,
@@ -108,7 +104,7 @@ object Options {
     maxMessages: scala.Int | scala.Double = null,
     messageId: java.lang.String = null,
     name: java.lang.String = null,
-    normalizeHeaderKey: js.Function1[/* key */ java.lang.String, java.lang.String] = null,
+    normalizeHeaderKey: /* key */ java.lang.String => java.lang.String = null,
     opportunisticTLS: js.UndefOr[scala.Boolean] = js.undefined,
     port: scala.Int | scala.Double = null,
     rateDelta: scala.Int | scala.Double = null,
@@ -150,7 +146,7 @@ object Options {
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (envelope != null) __obj.updateDynamic("envelope")(envelope.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (getSocket != null) __obj.updateDynamic("getSocket")(getSocket)
+    if (getSocket != null) __obj.updateDynamic("getSocket")(js.Any.fromFunction2(getSocket))
     if (!js.isUndefined(greetingTimeout)) __obj.updateDynamic("greetingTimeout")(greetingTimeout)
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host)
@@ -165,7 +161,7 @@ object Options {
     if (maxMessages != null) __obj.updateDynamic("maxMessages")(maxMessages.asInstanceOf[js.Any])
     if (messageId != null) __obj.updateDynamic("messageId")(messageId)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (normalizeHeaderKey != null) __obj.updateDynamic("normalizeHeaderKey")(normalizeHeaderKey)
+    if (normalizeHeaderKey != null) __obj.updateDynamic("normalizeHeaderKey")(js.Any.fromFunction1(normalizeHeaderKey))
     if (!js.isUndefined(opportunisticTLS)) __obj.updateDynamic("opportunisticTLS")(opportunisticTLS)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (rateDelta != null) __obj.updateDynamic("rateDelta")(rateDelta.asInstanceOf[js.Any])

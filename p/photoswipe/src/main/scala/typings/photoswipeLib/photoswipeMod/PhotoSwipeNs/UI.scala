@@ -14,8 +14,8 @@ trait UI[T /* <: Options */] extends js.Object {
 
 object UI {
   @scala.inline
-  def apply[T /* <: Options */](init: js.Function0[scala.Unit]): UI[T] = {
-    val __obj = js.Dynamic.literal(init = init)
+  def apply[T /* <: Options */](init: () => scala.Unit): UI[T] = {
+    val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init))
   
     __obj.asInstanceOf[UI[T]]
   }

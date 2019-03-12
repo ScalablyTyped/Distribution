@@ -89,14 +89,14 @@ object CreateOptions {
     L: js.UndefOr[scala.Boolean] = js.undefined,
     P: js.UndefOr[scala.Boolean] = js.undefined,
     cwd: java.lang.String = null,
-    filter: js.Function2[/* path */ java.lang.String, /* stat */ FileStat, scala.Boolean] = null,
+    filter: (/* path */ java.lang.String, /* stat */ FileStat) => scala.Boolean = null,
     follow: js.UndefOr[scala.Boolean] = js.undefined,
     gzip: scala.Boolean | nodeLib.zlibMod.ZlibOptions = null,
     h: js.UndefOr[scala.Boolean] = js.undefined,
     mode: scala.Int | scala.Double = null,
     noDirRecurse: js.UndefOr[scala.Boolean] = js.undefined,
     noPax: js.UndefOr[scala.Boolean] = js.undefined,
-    onwarn: js.Function2[/* message */ java.lang.String, /* data */ nodeLib.Buffer, scala.Unit] = null,
+    onwarn: (/* message */ java.lang.String, /* data */ nodeLib.Buffer) => scala.Unit = null,
     portable: js.UndefOr[scala.Boolean] = js.undefined,
     preservePaths: js.UndefOr[scala.Boolean] = js.undefined,
     strict: js.UndefOr[scala.Boolean] = js.undefined,
@@ -107,14 +107,14 @@ object CreateOptions {
     if (!js.isUndefined(L)) __obj.updateDynamic("L")(L)
     if (!js.isUndefined(P)) __obj.updateDynamic("P")(P)
     if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
     if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow)
     if (gzip != null) __obj.updateDynamic("gzip")(gzip.asInstanceOf[js.Any])
     if (!js.isUndefined(h)) __obj.updateDynamic("h")(h)
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (!js.isUndefined(noDirRecurse)) __obj.updateDynamic("noDirRecurse")(noDirRecurse)
     if (!js.isUndefined(noPax)) __obj.updateDynamic("noPax")(noPax)
-    if (onwarn != null) __obj.updateDynamic("onwarn")(onwarn)
+    if (onwarn != null) __obj.updateDynamic("onwarn")(js.Any.fromFunction2(onwarn))
     if (!js.isUndefined(portable)) __obj.updateDynamic("portable")(portable)
     if (!js.isUndefined(preservePaths)) __obj.updateDynamic("preservePaths")(preservePaths)
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)

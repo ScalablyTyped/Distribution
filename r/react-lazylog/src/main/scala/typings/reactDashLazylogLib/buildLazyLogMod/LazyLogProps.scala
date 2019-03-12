@@ -32,12 +32,12 @@ object LazyLogProps {
     containerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     fetchOptions: stdLib.RequestInit = null,
     follow: js.UndefOr[scala.Boolean] = js.undefined,
-    formatPart: js.Function1[/* text */ java.lang.String, reactLib.reactMod.ReactNs.ReactNode] = null,
+    formatPart: /* text */ java.lang.String => reactLib.reactMod.ReactNs.ReactNode = null,
     height: java.lang.String | scala.Double = null,
     highlight: scala.Double | js.Array[scala.Double] = null,
-    onError: js.Function1[/* error */ js.Any, _] = null,
-    onHighlight: js.Function1[/* range */ stdLib.Range, _] = null,
-    onLoad: js.Function0[_] = null,
+    onError: /* error */ js.Any => _ = null,
+    onHighlight: /* range */ stdLib.Range => _ = null,
+    onLoad: () => _ = null,
     overscanRowCount: scala.Int | scala.Double = null,
     rowHeight: scala.Int | scala.Double = null,
     scrollToLine: scala.Int | scala.Double = null,
@@ -50,12 +50,12 @@ object LazyLogProps {
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle)
     if (fetchOptions != null) __obj.updateDynamic("fetchOptions")(fetchOptions)
     if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow)
-    if (formatPart != null) __obj.updateDynamic("formatPart")(formatPart)
+    if (formatPart != null) __obj.updateDynamic("formatPart")(js.Any.fromFunction1(formatPart))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onHighlight != null) __obj.updateDynamic("onHighlight")(onHighlight)
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onHighlight != null) __obj.updateDynamic("onHighlight")(js.Any.fromFunction1(onHighlight))
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
     if (overscanRowCount != null) __obj.updateDynamic("overscanRowCount")(overscanRowCount.asInstanceOf[js.Any])
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
     if (scrollToLine != null) __obj.updateDynamic("scrollToLine")(scrollToLine.asInstanceOf[js.Any])

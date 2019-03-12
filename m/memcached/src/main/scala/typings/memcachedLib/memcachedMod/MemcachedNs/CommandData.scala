@@ -22,7 +22,7 @@ trait CommandData extends js.Object {
 object CommandData {
   @scala.inline
   def apply(
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    callback: /* repeated */ js.Any => js.Any,
     command: java.lang.String,
     execution: scala.Double,
     start: scala.Double,
@@ -34,7 +34,7 @@ object CommandData {
     redundancyEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     value: js.Any = null
   ): CommandData = {
-    val __obj = js.Dynamic.literal(callback = callback, command = command, execution = execution, start = start, validate = validate)
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), command = command, execution = execution, start = start, validate = validate)
     __obj.updateDynamic("type")(`type`)
     if (cas != null) __obj.updateDynamic("cas")(cas)
     if (key != null) __obj.updateDynamic("key")(key)

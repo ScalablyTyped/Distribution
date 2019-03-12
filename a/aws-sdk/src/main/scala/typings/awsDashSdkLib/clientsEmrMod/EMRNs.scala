@@ -74,7 +74,7 @@ object EMRNs extends js.Object {
     /**
       * The Amazon EMR resource identifier to which tags will be added. This value must be a cluster identifier.
       */
-    var ResourceId: ResourceId
+    var ResourceId: awsDashSdkLib.clientsEmrMod.EMRNs.ResourceId
     /**
       * A list of tags to associate with a cluster and propagate to EC2 instances. Tags are user-defined key/value pairs that consist of a required key string with a maximum of 128 characters, and an optional value string with a maximum of 256 characters.
       */
@@ -212,7 +212,7 @@ object EMRNs extends js.Object {
     /**
       * Determines how the metric specified by MetricName is compared to the value specified by Threshold.
       */
-    var ComparisonOperator: ComparisonOperator
+    var ComparisonOperator: awsDashSdkLib.clientsEmrMod.EMRNs.ComparisonOperator
     /**
       * A CloudWatch metric dimension.
       */
@@ -475,7 +475,7 @@ object EMRNs extends js.Object {
     /**
       * The identifier of the cluster to describe.
       */
-    var ClusterId: ClusterId
+    var ClusterId: awsDashSdkLib.clientsEmrMod.EMRNs.ClusterId
   }
   
   trait DescribeClusterOutput extends js.Object {
@@ -537,11 +537,11 @@ object EMRNs extends js.Object {
     /**
       * The identifier of the cluster with steps to describe.
       */
-    var ClusterId: ClusterId
+    var ClusterId: awsDashSdkLib.clientsEmrMod.EMRNs.ClusterId
     /**
       * The identifier of the step to describe.
       */
-    var StepId: StepId
+    var StepId: awsDashSdkLib.clientsEmrMod.EMRNs.StepId
   }
   
   trait DescribeStepOutput extends js.Object {
@@ -566,7 +566,7 @@ object EMRNs extends js.Object {
     /**
       * EBS volume specifications such as volume type, IOPS, and size (GiB) that will be requested for the EBS volume attached to an EC2 instance in the cluster.
       */
-    var VolumeSpecification: VolumeSpecification
+    var VolumeSpecification: awsDashSdkLib.clientsEmrMod.EMRNs.VolumeSpecification
     /**
       * Number of EBS volumes with a specific volume configuration that will be associated with every instance in the instance group
       */
@@ -793,7 +793,7 @@ object EMRNs extends js.Object {
     /**
       * The node type that the instance fleet hosts. Valid values are MASTER,CORE,and TASK.
       */
-    var InstanceFleetType: InstanceFleetType
+    var InstanceFleetType: awsDashSdkLib.clientsEmrMod.EMRNs.InstanceFleetType
     /**
       * The instance type configurations that define the EC2 instances in the instance fleet.
       */
@@ -820,7 +820,7 @@ object EMRNs extends js.Object {
     /**
       * A unique identifier for the instance fleet.
       */
-    var InstanceFleetId: InstanceFleetId
+    var InstanceFleetId: awsDashSdkLib.clientsEmrMod.EMRNs.InstanceFleetId
     /**
       * The target capacity of On-Demand units for the instance fleet. For more information see InstanceFleetConfig$TargetOnDemandCapacity.
       */
@@ -966,7 +966,7 @@ object EMRNs extends js.Object {
     /**
       * The EC2 instance type for all instances in the instance group.
       */
-    var InstanceType: InstanceType
+    var InstanceType: awsDashSdkLib.clientsEmrMod.EMRNs.InstanceType
     /**
       * Market type of the EC2 instances used to create a cluster node.
       */
@@ -1009,7 +1009,7 @@ object EMRNs extends js.Object {
     /**
       * EC2 instance type.
       */
-    var InstanceType: InstanceType
+    var InstanceType: awsDashSdkLib.clientsEmrMod.EMRNs.InstanceType
     /**
       * Details regarding the state of the instance group.
       */
@@ -1172,7 +1172,7 @@ object EMRNs extends js.Object {
     /**
       * An EC2 instance type, such as m3.xlarge. 
       */
-    var InstanceType: InstanceType
+    var InstanceType: awsDashSdkLib.clientsEmrMod.EMRNs.InstanceType
     /**
       * The number of units that a provisioned instance of this type provides toward fulfilling the target capacities defined in InstanceFleetConfig. This value is 1 for a master instance fleet, and must be 1 or greater for core and task instance fleets. Defaults to 1 if not specified. 
       */
@@ -1460,7 +1460,7 @@ object EMRNs extends js.Object {
     /**
       * The cluster identifier for the bootstrap actions to list.
       */
-    var ClusterId: ClusterId
+    var ClusterId: awsDashSdkLib.clientsEmrMod.EMRNs.ClusterId
     /**
       * The pagination token that indicates the next set of results to retrieve.
       */
@@ -1512,7 +1512,7 @@ object EMRNs extends js.Object {
     /**
       * The unique identifier of the cluster.
       */
-    var ClusterId: ClusterId
+    var ClusterId: awsDashSdkLib.clientsEmrMod.EMRNs.ClusterId
     /**
       * The pagination token that indicates the next set of results to retrieve.
       */
@@ -1534,7 +1534,7 @@ object EMRNs extends js.Object {
     /**
       * The identifier of the cluster for which to list the instance groups.
       */
-    var ClusterId: ClusterId
+    var ClusterId: awsDashSdkLib.clientsEmrMod.EMRNs.ClusterId
     /**
       * The pagination token that indicates the next set of results to retrieve.
       */
@@ -1556,7 +1556,7 @@ object EMRNs extends js.Object {
     /**
       * The identifier of the cluster for which to list the instances.
       */
-    var ClusterId: ClusterId
+    var ClusterId: awsDashSdkLib.clientsEmrMod.EMRNs.ClusterId
     /**
       * The unique identifier of the instance fleet.
       */
@@ -1616,7 +1616,7 @@ object EMRNs extends js.Object {
     /**
       * The identifier of the cluster for which to list the steps.
       */
-    var ClusterId: ClusterId
+    var ClusterId: awsDashSdkLib.clientsEmrMod.EMRNs.ClusterId
     /**
       * The pagination token that indicates the next set of results to retrieve.
       */
@@ -1657,7 +1657,7 @@ object EMRNs extends js.Object {
     /**
       * The unique identifier of the cluster.
       */
-    var ClusterId: ClusterId
+    var ClusterId: awsDashSdkLib.clientsEmrMod.EMRNs.ClusterId
     /**
       * The unique identifier of the instance fleet.
       */
@@ -1690,15 +1690,15 @@ object EMRNs extends js.Object {
     /**
       * Specifies the definition of the automatic scaling policy.
       */
-    var AutoScalingPolicy: AutoScalingPolicy
+    var AutoScalingPolicy: awsDashSdkLib.clientsEmrMod.EMRNs.AutoScalingPolicy
     /**
       * Specifies the ID of a cluster. The instance group to which the automatic scaling policy is applied is within this cluster.
       */
-    var ClusterId: ClusterId
+    var ClusterId: awsDashSdkLib.clientsEmrMod.EMRNs.ClusterId
     /**
       * Specifies the ID of the instance group to which the automatic scaling policy is applied.
       */
-    var InstanceGroupId: InstanceGroupId
+    var InstanceGroupId: awsDashSdkLib.clientsEmrMod.EMRNs.InstanceGroupId
   }
   
   trait PutAutoScalingPolicyOutput extends js.Object {
@@ -1720,11 +1720,11 @@ object EMRNs extends js.Object {
     /**
       * Specifies the ID of a cluster. The instance group to which the automatic scaling policy is applied is within this cluster.
       */
-    var ClusterId: ClusterId
+    var ClusterId: awsDashSdkLib.clientsEmrMod.EMRNs.ClusterId
     /**
       * Specifies the ID of the instance group to which the scaling policy is applied.
       */
-    var InstanceGroupId: InstanceGroupId
+    var InstanceGroupId: awsDashSdkLib.clientsEmrMod.EMRNs.InstanceGroupId
   }
   
   trait RemoveAutoScalingPolicyOutput extends js.Object
@@ -1733,7 +1733,7 @@ object EMRNs extends js.Object {
     /**
       * The Amazon EMR resource identifier from which tags will be removed. This value must be a cluster identifier.
       */
-    var ResourceId: ResourceId
+    var ResourceId: awsDashSdkLib.clientsEmrMod.EMRNs.ResourceId
     /**
       * A list of tag keys to remove from a resource.
       */
@@ -1852,7 +1852,7 @@ object EMRNs extends js.Object {
     /**
       * The type of adjustment the automatic scaling activity makes when triggered, and the periodicity of the adjustment.
       */
-    var SimpleScalingPolicyConfiguration: SimpleScalingPolicyConfiguration
+    var SimpleScalingPolicyConfiguration: awsDashSdkLib.clientsEmrMod.EMRNs.SimpleScalingPolicyConfiguration
   }
   
   trait ScalingConstraints extends js.Object {
@@ -1889,7 +1889,7 @@ object EMRNs extends js.Object {
     /**
       * The definition of a CloudWatch metric alarm. When the defined alarm conditions are met along with other trigger parameters, scaling activity begins.
       */
-    var CloudWatchAlarmDefinition: CloudWatchAlarmDefinition
+    var CloudWatchAlarmDefinition: awsDashSdkLib.clientsEmrMod.EMRNs.CloudWatchAlarmDefinition
   }
   
   trait ScriptBootstrapActionConfig extends js.Object {
@@ -2023,7 +2023,7 @@ object EMRNs extends js.Object {
     /**
       * The step configuration.
       */
-    var StepConfig: StepConfig
+    var StepConfig: awsDashSdkLib.clientsEmrMod.EMRNs.StepConfig
   }
   
   trait StepExecutionStatusDetail extends js.Object {

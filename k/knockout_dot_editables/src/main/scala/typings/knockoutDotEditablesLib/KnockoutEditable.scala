@@ -17,13 +17,13 @@ trait KnockoutEditable extends js.Object {
 object KnockoutEditable {
   @scala.inline
   def apply(
-    addEditable: js.Function1[js.Any, js.Any],
-    beginEdit: js.Function0[scala.Unit],
-    commit: js.Function0[scala.Unit],
-    hasChanges: js.Function0[scala.Boolean],
-    rollback: js.Function0[scala.Unit]
+    addEditable: js.Any => js.Any,
+    beginEdit: () => scala.Unit,
+    commit: () => scala.Unit,
+    hasChanges: () => scala.Boolean,
+    rollback: () => scala.Unit
   ): KnockoutEditable = {
-    val __obj = js.Dynamic.literal(addEditable = addEditable, beginEdit = beginEdit, commit = commit, hasChanges = hasChanges, rollback = rollback)
+    val __obj = js.Dynamic.literal(addEditable = js.Any.fromFunction1(addEditable), beginEdit = js.Any.fromFunction0(beginEdit), commit = js.Any.fromFunction0(commit), hasChanges = js.Any.fromFunction0(hasChanges), rollback = js.Any.fromFunction0(rollback))
   
     __obj.asInstanceOf[KnockoutEditable]
   }

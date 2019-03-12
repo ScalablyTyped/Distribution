@@ -11,6 +11,6 @@ object ^ extends js.Object {
   /**
     * @see createConnection() method will create Firebird Connection object for you
     */
-  def createConnection(): firebirdLib.firebirdMod.Connection = js.native
+  def createConnection(): Connection = js.native
 }
 

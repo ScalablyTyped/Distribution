@@ -18,7 +18,7 @@ trait OpenCommandArgument2 extends OpenCommandArgument {
     * The result set implementation may ignore this parameter, if it cannot sort the data by the given criteria in an efficient way (i.e. directly using the
     * underlying data source -> SQL-database -> ORDER BY).
     */
-  var SortingInfo: activexDashInteropLib.SafeArray[NumberedSortingInfo]
+  var SortingInfo: stdLib.SafeArray[NumberedSortingInfo]
 }
 
 object OpenCommandArgument2 {
@@ -26,9 +26,9 @@ object OpenCommandArgument2 {
   def apply(
     Mode: scala.Double,
     Priority: scala.Double,
-    Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
+    Properties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
     Sink: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
-    SortingInfo: activexDashInteropLib.SafeArray[NumberedSortingInfo]
+    SortingInfo: stdLib.SafeArray[NumberedSortingInfo]
   ): OpenCommandArgument2 = {
     val __obj = js.Dynamic.literal(Mode = Mode, Priority = Priority, Properties = Properties, Sink = Sink, SortingInfo = SortingInfo)
   

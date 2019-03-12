@@ -30,7 +30,7 @@ object Utility extends js.Object {
   def formatDateTime(
     context: sharepointLib.SPNs.ClientRuntimeContext,
     web: sharepointLib.SPNs.Web,
-    datetime: microsoftDashAjaxLib.Date,
+    datetime: stdLib.Date,
     format: sharepointLib.SPNs.UtilitiesNs.DateTimeFormat
   ): sharepointLib.SPNs.StringResult = js.native
   def getAppLicenseDeploymentId(context: sharepointLib.SPNs.ClientRuntimeContext): sharepointLib.SPNs.GuidResult = js.native

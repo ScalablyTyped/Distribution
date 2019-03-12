@@ -12,18 +12,16 @@ object ^ extends js.Object {
     * Retrieves the current context the frame is running in.
     * @param callback The callback to invoke when the {@link Context} object is retrieved.
     */
-  def getContext(callback: js.Function1[/* context */ microsoftteamsLib.microsoftTeamsNs.Context, scala.Unit]): scala.Unit = js.native
+  def getContext(callback: js.Function1[/* context */ Context, scala.Unit]): scala.Unit = js.native
   /**
     * Allows an app to retrieve the most recently used tabs for this user.
     * @param callback The callback to invoke when the {@link TabInformation} object is retrieved.
     * @param tabInstanceParameters OPTIONAL Ignored, kept for future use
     */
+  def getMruTabInstances(callback: js.Function1[/* tabInfo */ TabInformation, scala.Unit]): scala.Unit = js.native
   def getMruTabInstances(
-    callback: js.Function1[/* tabInfo */ microsoftteamsLib.microsoftTeamsNs.TabInformation, scala.Unit]
-  ): scala.Unit = js.native
-  def getMruTabInstances(
-    callback: js.Function1[/* tabInfo */ microsoftteamsLib.microsoftTeamsNs.TabInformation, scala.Unit],
-    tabInstanceParameters: microsoftteamsLib.microsoftTeamsNs.TabInstanceParameters
+    callback: js.Function1[/* tabInfo */ TabInformation, scala.Unit],
+    tabInstanceParameters: TabInstanceParameters
   ): scala.Unit = js.native
   /**
     * Allows an app to retrieve for this user tabs that are owned by this app.
@@ -31,12 +29,10 @@ object ^ extends js.Object {
     * @param callback The callback to invoke when the {@link TabInstanceParameters} object is retrieved.
     * @param tabInstanceParameters OPTIONAL Flags that specify whether to scope call to favorite teams or channels.
     */
+  def getTabInstances(callback: js.Function1[/* tabInfo */ TabInformation, scala.Unit]): scala.Unit = js.native
   def getTabInstances(
-    callback: js.Function1[/* tabInfo */ microsoftteamsLib.microsoftTeamsNs.TabInformation, scala.Unit]
-  ): scala.Unit = js.native
-  def getTabInstances(
-    callback: js.Function1[/* tabInfo */ microsoftteamsLib.microsoftTeamsNs.TabInformation, scala.Unit],
-    tabInstanceParameters: microsoftteamsLib.microsoftTeamsNs.TabInstanceParameters
+    callback: js.Function1[/* tabInfo */ TabInformation, scala.Unit],
+    tabInstanceParameters: TabInstanceParameters
   ): scala.Unit = js.native
   /**
     * Initializes the library. This must be called before any other SDK calls
@@ -56,7 +52,7 @@ object ^ extends js.Object {
     * Navigates the Microsoft Teams app to the specified tab instance.
     * @param tabInstance The tab instance to navigate to.
     */
-  def navigateToTab(tabInstance: microsoftteamsLib.microsoftTeamsNs.TabInstance): scala.Unit = js.native
+  def navigateToTab(tabInstance: TabInstance): scala.Unit = js.native
   /**
     * Registers a handler for changes from or to full-screen view for a tab.
     * Only one handler can be registered at a time. A subsequent registration replaces an existing registration.
@@ -73,6 +69,6 @@ object ^ extends js.Object {
     * Shares a deep link that a user can use to navigate back to a specific state in this page.
     * @param deepLinkParameters ID and label for the link and fallback URL.
     */
-  def shareDeepLink(deepLinkParameters: microsoftteamsLib.microsoftTeamsNs.DeepLinkParameters): scala.Unit = js.native
+  def shareDeepLink(deepLinkParameters: DeepLinkParameters): scala.Unit = js.native
 }
 

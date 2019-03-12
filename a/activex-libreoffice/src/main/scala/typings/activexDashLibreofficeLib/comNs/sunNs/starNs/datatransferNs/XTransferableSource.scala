@@ -21,12 +21,12 @@ object XTransferableSource {
   @scala.inline
   def apply(
     DataSourceDescription: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getDataSourceDescription: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDataSourceDescription: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTransferableSource = {
-    val __obj = js.Dynamic.literal(DataSourceDescription = DataSourceDescription, acquire = acquire, getDataSourceDescription = getDataSourceDescription, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(DataSourceDescription = DataSourceDescription, acquire = js.Any.fromFunction0(acquire), getDataSourceDescription = js.Any.fromFunction0(getDataSourceDescription), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTransferableSource]
   }

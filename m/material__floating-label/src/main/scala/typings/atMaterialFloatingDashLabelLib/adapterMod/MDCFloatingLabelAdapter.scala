@@ -31,13 +31,13 @@ trait MDCFloatingLabelAdapter extends js.Object {
 object MDCFloatingLabelAdapter {
   @scala.inline
   def apply(
-    addClass: js.Function1[java.lang.String, scala.Unit],
-    deregisterInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    getWidth: js.Function0[scala.Double],
-    registerInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    removeClass: js.Function1[java.lang.String, scala.Unit]
+    addClass: java.lang.String => scala.Unit,
+    deregisterInteractionHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    getWidth: () => scala.Double,
+    registerInteractionHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    removeClass: java.lang.String => scala.Unit
   ): MDCFloatingLabelAdapter = {
-    val __obj = js.Dynamic.literal(addClass = addClass, deregisterInteractionHandler = deregisterInteractionHandler, getWidth = getWidth, registerInteractionHandler = registerInteractionHandler, removeClass = removeClass)
+    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), deregisterInteractionHandler = js.Any.fromFunction2(deregisterInteractionHandler), getWidth = js.Any.fromFunction0(getWidth), registerInteractionHandler = js.Any.fromFunction2(registerInteractionHandler), removeClass = js.Any.fromFunction1(removeClass))
   
     __obj.asInstanceOf[MDCFloatingLabelAdapter]
   }

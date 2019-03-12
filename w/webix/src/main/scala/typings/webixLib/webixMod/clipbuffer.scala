@@ -15,12 +15,12 @@ trait clipbuffer extends js.Object {
 object clipbuffer {
   @scala.inline
   def apply(
-    destructor: js.Function0[scala.Unit],
-    focus: js.Function0[scala.Unit],
-    init: js.Function0[scala.Unit],
-    set: js.Function1[java.lang.String, scala.Unit]
+    destructor: () => scala.Unit,
+    focus: () => scala.Unit,
+    init: () => scala.Unit,
+    set: java.lang.String => scala.Unit
   ): clipbuffer = {
-    val __obj = js.Dynamic.literal(destructor = destructor, focus = focus, init = init, set = set)
+    val __obj = js.Dynamic.literal(destructor = js.Any.fromFunction0(destructor), focus = js.Any.fromFunction0(focus), init = js.Any.fromFunction0(init), set = js.Any.fromFunction1(set))
   
     __obj.asInstanceOf[clipbuffer]
   }

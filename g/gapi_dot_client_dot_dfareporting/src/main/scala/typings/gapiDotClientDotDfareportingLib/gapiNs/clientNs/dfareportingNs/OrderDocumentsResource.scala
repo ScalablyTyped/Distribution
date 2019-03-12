@@ -15,16 +15,10 @@ trait OrderDocumentsResource extends js.Object {
 object OrderDocumentsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrderDocument]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltApproved, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OrderDocumentsListResponse]
-    ]
+    get: gapiDotClientDotDfareportingLib.Anon_AltFieldsId => gapiDotClientLib.gapiNs.clientNs.Request[OrderDocument],
+    list: gapiDotClientDotDfareportingLib.Anon_AltApproved => gapiDotClientLib.gapiNs.clientNs.Request[OrderDocumentsListResponse]
   ): OrderDocumentsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[OrderDocumentsResource]
   }

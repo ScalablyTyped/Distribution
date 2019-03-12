@@ -61,12 +61,12 @@ object ConnectConfig {
     agentForward: js.UndefOr[scala.Boolean] = js.undefined,
     algorithms: ssh2DashStreamsLib.ssh2DashStreamsMod.Algorithms = null,
     compress: scala.Boolean | ssh2Lib.ssh2LibStrings.force = null,
-    debug: js.Function1[/* information */ java.lang.String, _] = null,
+    debug: /* information */ java.lang.String => _ = null,
     forceIPv4: js.UndefOr[scala.Boolean] = js.undefined,
     forceIPv6: js.UndefOr[scala.Boolean] = js.undefined,
     host: java.lang.String = null,
     hostHash: ssh2Lib.ssh2LibStrings.md5 | ssh2Lib.ssh2LibStrings.sha1 = null,
-    hostVerifier: js.Function1[/* keyHash */ java.lang.String, scala.Boolean] = null,
+    hostVerifier: /* keyHash */ java.lang.String => scala.Boolean = null,
     keepaliveCountMax: scala.Int | scala.Double = null,
     keepaliveInterval: scala.Int | scala.Double = null,
     localHostname: java.lang.String = null,
@@ -86,12 +86,12 @@ object ConnectConfig {
     if (!js.isUndefined(agentForward)) __obj.updateDynamic("agentForward")(agentForward)
     if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms)
     if (compress != null) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
-    if (debug != null) __obj.updateDynamic("debug")(debug)
+    if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction1(debug))
     if (!js.isUndefined(forceIPv4)) __obj.updateDynamic("forceIPv4")(forceIPv4)
     if (!js.isUndefined(forceIPv6)) __obj.updateDynamic("forceIPv6")(forceIPv6)
     if (host != null) __obj.updateDynamic("host")(host)
     if (hostHash != null) __obj.updateDynamic("hostHash")(hostHash.asInstanceOf[js.Any])
-    if (hostVerifier != null) __obj.updateDynamic("hostVerifier")(hostVerifier)
+    if (hostVerifier != null) __obj.updateDynamic("hostVerifier")(js.Any.fromFunction1(hostVerifier))
     if (keepaliveCountMax != null) __obj.updateDynamic("keepaliveCountMax")(keepaliveCountMax.asInstanceOf[js.Any])
     if (keepaliveInterval != null) __obj.updateDynamic("keepaliveInterval")(keepaliveInterval.asInstanceOf[js.Any])
     if (localHostname != null) __obj.updateDynamic("localHostname")(localHostname)

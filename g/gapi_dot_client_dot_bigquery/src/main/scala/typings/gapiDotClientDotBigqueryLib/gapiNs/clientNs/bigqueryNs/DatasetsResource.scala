@@ -32,32 +32,14 @@ trait DatasetsResource extends js.Object {
 object DatasetsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AltDatasetId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
-    ],
-    list: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_All, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DatasetList]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AltDatasetId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
-    ],
-    update: js.Function1[
-      gapiDotClientDotBigqueryLib.Anon_AltDatasetId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
-    ]
+    delete: gapiDotClientDotBigqueryLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotBigqueryLib.Anon_AltDatasetId => gapiDotClientLib.gapiNs.clientNs.Request[Dataset],
+    insert: gapiDotClientDotBigqueryLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Dataset],
+    list: gapiDotClientDotBigqueryLib.Anon_All => gapiDotClientLib.gapiNs.clientNs.Request[DatasetList],
+    patch: gapiDotClientDotBigqueryLib.Anon_AltDatasetId => gapiDotClientLib.gapiNs.clientNs.Request[Dataset],
+    update: gapiDotClientDotBigqueryLib.Anon_AltDatasetId => gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
   ): DatasetsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[DatasetsResource]
   }

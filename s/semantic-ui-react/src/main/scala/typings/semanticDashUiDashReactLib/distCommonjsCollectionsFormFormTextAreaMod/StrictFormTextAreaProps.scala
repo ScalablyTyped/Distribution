@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
     */
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLTextAreaElement], 
+      /* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLTextAreaElement], 
       /* data */ semanticDashUiDashReactLib.distCommonjsAddonsTextAreaTextAreaMod.TextAreaProps, 
       scala.Unit
     ]
@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation._
     */
   var onInput: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLTextAreaElement], 
+      /* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLTextAreaElement], 
       /* data */ semanticDashUiDashReactLib.distCommonjsAddonsTextAreaTextAreaMod.TextAreaProps, 
       scala.Unit
     ]
@@ -57,16 +57,8 @@ object StrictFormTextAreaProps {
     error: js.UndefOr[scala.Boolean] = js.undefined,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
     label: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsGenericMod.HtmlLabelProps] = null,
-    onChange: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLTextAreaElement], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsAddonsTextAreaTextAreaMod.TextAreaProps, 
-      scala.Unit
-    ] = null,
-    onInput: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLTextAreaElement], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsAddonsTextAreaTextAreaMod.TextAreaProps, 
-      scala.Unit
-    ] = null,
+    onChange: (/* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLTextAreaElement], /* data */ semanticDashUiDashReactLib.distCommonjsAddonsTextAreaTextAreaMod.TextAreaProps) => scala.Unit = null,
+    onInput: (/* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLTextAreaElement], /* data */ semanticDashUiDashReactLib.distCommonjsAddonsTextAreaTextAreaMod.TextAreaProps) => scala.Unit = null,
     required: js.Any = null,
     rows: scala.Double | java.lang.String = null,
     style: js.Object = null,
@@ -85,8 +77,8 @@ object StrictFormTextAreaProps {
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onInput != null) __obj.updateDynamic("onInput")(onInput)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction2(onInput))
     if (required != null) __obj.updateDynamic("required")(required)
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)

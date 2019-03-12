@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class AccessTokenSignatureInvalidError () extends TwilioError {
   @JSName("code")
   var code_AccessTokenSignatureInvalidError: twilioDashVideoLib.twilioDashVideoLibNumbers.`20107` = js.native
-  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Invalid Access Token signature` = js.native
+  @JSName("message")
+  var message_AccessTokenSignatureInvalidError: twilioDashVideoLib.twilioDashVideoLibStrings.`Invalid Access Token signature` = js.native
 }
 

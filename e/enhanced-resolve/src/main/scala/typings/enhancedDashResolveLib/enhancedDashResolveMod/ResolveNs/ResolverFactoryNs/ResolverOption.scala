@@ -38,10 +38,7 @@ object ResolverOption {
   def apply(
     alias: js.Array[AliasItem] | enhancedDashResolveLib.libConcordMod.Dictionary[java.lang.String] = null,
     aliasFields: js.Array[java.lang.String] = null,
-    cachePredicate: js.Function1[
-      /* val */ enhancedDashResolveLib.libCommonDashTypesMod.ResolverRequest, 
-      scala.Boolean
-    ] = null,
+    cachePredicate: /* val */ enhancedDashResolveLib.libCommonDashTypesMod.ResolverRequest => scala.Boolean = null,
     descriptionFiles: js.Array[java.lang.String] = null,
     enforceExtension: js.UndefOr[scala.Boolean] = js.undefined,
     enforceModuleExtension: js.UndefOr[scala.Boolean] = js.undefined,
@@ -61,7 +58,7 @@ object ResolverOption {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (aliasFields != null) __obj.updateDynamic("aliasFields")(aliasFields)
-    if (cachePredicate != null) __obj.updateDynamic("cachePredicate")(cachePredicate)
+    if (cachePredicate != null) __obj.updateDynamic("cachePredicate")(js.Any.fromFunction1(cachePredicate))
     if (descriptionFiles != null) __obj.updateDynamic("descriptionFiles")(descriptionFiles)
     if (!js.isUndefined(enforceExtension)) __obj.updateDynamic("enforceExtension")(enforceExtension)
     if (!js.isUndefined(enforceModuleExtension)) __obj.updateDynamic("enforceModuleExtension")(enforceModuleExtension)

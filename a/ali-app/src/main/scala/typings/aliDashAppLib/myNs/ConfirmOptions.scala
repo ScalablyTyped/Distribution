@@ -25,14 +25,14 @@ object ConfirmOptions {
     cancelButtonText: java.lang.String,
     confirmButtonText: java.lang.String,
     content: java.lang.String,
-    success: js.Function1[aliDashAppLib.Anon_Confirm, scala.Unit],
+    success: aliDashAppLib.Anon_Confirm => scala.Unit,
     title: java.lang.String,
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
-    fail: js.Function1[js.Any, scala.Unit] = null
+    complete: /* res */ js.Any => scala.Unit = null,
+    fail: js.Any => scala.Unit = null
   ): ConfirmOptions = {
-    val __obj = js.Dynamic.literal(cancelButtonText = cancelButtonText, confirmButtonText = confirmButtonText, content = content, success = success, title = title)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    val __obj = js.Dynamic.literal(cancelButtonText = cancelButtonText, confirmButtonText = confirmButtonText, content = content, success = js.Any.fromFunction1(success), title = title)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[ConfirmOptions]
   }
 }

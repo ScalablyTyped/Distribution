@@ -13,7 +13,7 @@ trait PageHeaderProps extends js.Object {
   var footer: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var onBack: js.UndefOr[
     js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -33,10 +33,7 @@ object PageHeaderProps {
     className: java.lang.String = null,
     extra: reactLib.reactMod.ReactNs.ReactNode = null,
     footer: reactLib.reactMod.ReactNs.ReactNode = null,
-    onBack: js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
+    onBack: /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
     prefixCls: java.lang.String = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     subTitle: reactLib.reactMod.ReactNs.ReactNode = null,
@@ -48,7 +45,7 @@ object PageHeaderProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (onBack != null) __obj.updateDynamic("onBack")(onBack)
+    if (onBack != null) __obj.updateDynamic("onBack")(js.Any.fromFunction1(onBack))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (style != null) __obj.updateDynamic("style")(style)
     if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle.asInstanceOf[js.Any])

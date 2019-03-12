@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Shapes extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Count: scala.Double = js.native
   val Creator: XlCreator = js.native
   val Parent: js.Any = js.native
@@ -36,7 +36,7 @@ trait Shapes extends js.Object {
     EndX: scala.Double,
     EndY: scala.Double
   ): Shape = js.native
-  def AddCurve(SafeArrayOfPoints: activexDashInteropLib.SafeArray[scala.Double]): Shape = js.native
+  def AddCurve(SafeArrayOfPoints: stdLib.SafeArray[scala.Double]): Shape = js.native
   def AddDiagram(
     Type: activexDashOfficeLib.OfficeNs.MsoDiagramType,
     Left: scala.Double,
@@ -94,7 +94,7 @@ trait Shapes extends js.Object {
     Width: scala.Double,
     Height: scala.Double
   ): Shape = js.native
-  def AddPolyline(SafeArrayOfPoints: activexDashInteropLib.SafeArray[scala.Double]): Shape = js.native
+  def AddPolyline(SafeArrayOfPoints: stdLib.SafeArray[scala.Double]): Shape = js.native
   def AddShape(
     Type: activexDashOfficeLib.OfficeNs.MsoAutoShapeType,
     Left: scala.Double,
@@ -138,9 +138,9 @@ trait Shapes extends js.Object {
   def BuildFreeform(EditingType: activexDashOfficeLib.OfficeNs.MsoEditingType, X1: scala.Double, Y1: scala.Double): FreeformBuilder = js.native
   def Item(Index: java.lang.String): Shape = js.native
   def Item(Index: scala.Double): Shape = js.native
-  def Range(Index: activexDashInteropLib.SafeArray[scala.Double | java.lang.String]): ShapeRange = js.native
   def Range(Index: java.lang.String): ShapeRange = js.native
   def Range(Index: scala.Double): ShapeRange = js.native
+  def Range(Index: stdLib.SafeArray[scala.Double | java.lang.String]): ShapeRange = js.native
   def SelectAll(): scala.Unit = js.native
   def _Default(Index: js.Any): Shape = js.native
 }

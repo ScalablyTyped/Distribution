@@ -30,7 +30,7 @@ object Anon_AggregateAlign {
     footer: reactLib.reactMod.ReactNs.ReactNode | Anon_Aggregate = null,
     header: java.lang.String | reactLib.reactMod.ReactNs.ReactNode | Anon_Aggregate = null,
     primary: js.UndefOr[scala.Boolean] = js.undefined,
-    render: js.Function1[/* repeated */ js.Any, _] = null,
+    render: /* repeated */ js.Any => _ = null,
     search: js.UndefOr[scala.Boolean] = js.undefined,
     sortable: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AggregateAlign = {
@@ -40,7 +40,7 @@ object Anon_AggregateAlign {
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (!js.isUndefined(search)) __obj.updateDynamic("search")(search)
     if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
     __obj.asInstanceOf[Anon_AggregateAlign]

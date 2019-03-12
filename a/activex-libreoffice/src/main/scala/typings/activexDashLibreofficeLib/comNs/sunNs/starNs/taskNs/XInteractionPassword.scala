@@ -31,14 +31,14 @@ object XInteractionPassword {
   @scala.inline
   def apply(
     Password: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getPassword: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    select: js.Function0[scala.Unit],
-    setPassword: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getPassword: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    select: () => scala.Unit,
+    setPassword: java.lang.String => scala.Unit
   ): XInteractionPassword = {
-    val __obj = js.Dynamic.literal(Password = Password, acquire = acquire, getPassword = getPassword, queryInterface = queryInterface, release = release, select = select, setPassword = setPassword)
+    val __obj = js.Dynamic.literal(Password = Password, acquire = js.Any.fromFunction0(acquire), getPassword = js.Any.fromFunction0(getPassword), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), select = js.Any.fromFunction0(select), setPassword = js.Any.fromFunction1(setPassword))
   
     __obj.asInstanceOf[XInteractionPassword]
   }

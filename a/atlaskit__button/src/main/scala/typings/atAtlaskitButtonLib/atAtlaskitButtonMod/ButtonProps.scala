@@ -39,7 +39,7 @@ trait ButtonProps extends js.Object {
   /** Change the style to indicate the button is selected. */
   val isSelected: js.UndefOr[scala.Boolean] = js.undefined
   /** Handler to be called on click. */
-  val onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLButtonElement]] = js.undefined
+  val onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLButtonElement]] = js.undefined
   /** Option to fit button width to its parent width */
   val shouldFitContainer: js.UndefOr[scala.Boolean] = js.undefined
   /** Set the amount of padding in the button. */
@@ -67,10 +67,10 @@ object ButtonProps {
     iconAfter: reactLib.reactMod.ReactNs.ReactElement[_] = null,
     iconBefore: reactLib.reactMod.ReactNs.ReactElement[_] = null,
     id: java.lang.String = null,
-    innerRef: js.Function1[/* instance */ js.Any, scala.Unit] = null,
+    innerRef: /* instance */ js.Any => scala.Unit = null,
     isDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     isSelected: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLButtonElement] = null,
+    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLButtonElement] = null,
     shouldFitContainer: js.UndefOr[scala.Boolean] = js.undefined,
     spacing: ButtonSpacing = null,
     tabIndex: scala.Int | scala.Double = null,
@@ -90,7 +90,7 @@ object ButtonProps {
     if (iconAfter != null) __obj.updateDynamic("iconAfter")(iconAfter)
     if (iconBefore != null) __obj.updateDynamic("iconBefore")(iconBefore)
     if (id != null) __obj.updateDynamic("id")(id)
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(js.Any.fromFunction1(innerRef))
     if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled)
     if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)

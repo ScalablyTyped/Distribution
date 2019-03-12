@@ -20,12 +20,12 @@ object XConditionEntry {
   @scala.inline
   def apply(
     Type: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getType: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getType: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XConditionEntry = {
-    val __obj = js.Dynamic.literal(Type = Type, acquire = acquire, getType = getType, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Type = Type, acquire = js.Any.fromFunction0(acquire), getType = js.Any.fromFunction0(getType), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XConditionEntry]
   }

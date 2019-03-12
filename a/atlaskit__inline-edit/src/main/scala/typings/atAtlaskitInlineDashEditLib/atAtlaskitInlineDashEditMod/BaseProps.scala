@@ -41,8 +41,8 @@ trait BaseProps extends js.Object {
 object BaseProps {
   @scala.inline
   def apply(
-    onCancel: js.Function0[scala.Unit],
-    onConfirm: js.Function0[scala.Unit],
+    onCancel: () => scala.Unit,
+    onConfirm: () => scala.Unit,
     readView: reactLib.reactMod.ReactNs.ReactElement[_],
     areActionButtonsHidden: js.UndefOr[scala.Boolean] = js.undefined,
     disableEditViewFieldBase: js.UndefOr[scala.Boolean] = js.undefined,
@@ -57,7 +57,7 @@ object BaseProps {
     labelHtmlFor: java.lang.String = null,
     shouldConfirmOnEnter: js.UndefOr[scala.Boolean] = js.undefined
   ): BaseProps = {
-    val __obj = js.Dynamic.literal(onCancel = onCancel, onConfirm = onConfirm, readView = readView)
+    val __obj = js.Dynamic.literal(onCancel = js.Any.fromFunction0(onCancel), onConfirm = js.Any.fromFunction0(onConfirm), readView = readView)
     if (!js.isUndefined(areActionButtonsHidden)) __obj.updateDynamic("areActionButtonsHidden")(areActionButtonsHidden)
     if (!js.isUndefined(disableEditViewFieldBase)) __obj.updateDynamic("disableEditViewFieldBase")(disableEditViewFieldBase)
     if (editView != null) __obj.updateDynamic("editView")(editView)

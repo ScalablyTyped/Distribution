@@ -11,8 +11,8 @@ trait Request extends js.Object {
 
 object Request {
   @scala.inline
-  def apply(csrfToken: js.Function0[java.lang.String]): Request = {
-    val __obj = js.Dynamic.literal(csrfToken = csrfToken)
+  def apply(csrfToken: () => java.lang.String): Request = {
+    val __obj = js.Dynamic.literal(csrfToken = js.Any.fromFunction0(csrfToken))
   
     __obj.asInstanceOf[Request]
   }

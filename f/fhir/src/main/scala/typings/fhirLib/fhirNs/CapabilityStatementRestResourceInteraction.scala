@@ -20,7 +20,7 @@ trait CapabilityStatementRestResourceInteraction extends BackboneElement {
   /**
     * read | vread | update | patch | delete | history-instance | history-type | create | search-type
     */
-  var code: code
+  var code: fhirLib.fhirNs.code
   /**
     * Anything special about operation behavior
     */

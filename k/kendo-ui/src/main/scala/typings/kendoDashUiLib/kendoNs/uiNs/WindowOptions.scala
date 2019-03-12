@@ -45,33 +45,33 @@ object WindowOptions {
   @scala.inline
   def apply(
     actions: js.Any = null,
-    activate: js.Function1[/* e */ WindowEvent, scala.Unit] = null,
+    activate: /* e */ WindowEvent => scala.Unit = null,
     animation: scala.Boolean | WindowAnimation = null,
     appendTo: js.Any | java.lang.String = null,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
-    close: js.Function1[/* e */ WindowCloseEvent, scala.Unit] = null,
+    close: /* e */ WindowCloseEvent => scala.Unit = null,
     content: java.lang.String | WindowContent = null,
-    deactivate: js.Function1[/* e */ WindowEvent, scala.Unit] = null,
-    dragend: js.Function1[/* e */ WindowEvent, scala.Unit] = null,
+    deactivate: /* e */ WindowEvent => scala.Unit = null,
+    dragend: /* e */ WindowEvent => scala.Unit = null,
     draggable: scala.Boolean | WindowDraggable = null,
-    dragstart: js.Function1[/* e */ WindowEvent, scala.Unit] = null,
-    error: js.Function1[/* e */ WindowErrorEvent, scala.Unit] = null,
+    dragstart: /* e */ WindowEvent => scala.Unit = null,
+    error: /* e */ WindowErrorEvent => scala.Unit = null,
     height: scala.Double | java.lang.String = null,
     iframe: js.UndefOr[scala.Boolean] = js.undefined,
     maxHeight: scala.Int | scala.Double = null,
     maxWidth: scala.Int | scala.Double = null,
-    maximize: js.Function1[/* e */ WindowEvent, scala.Unit] = null,
+    maximize: /* e */ WindowEvent => scala.Unit = null,
     minHeight: scala.Int | scala.Double = null,
     minWidth: scala.Int | scala.Double = null,
-    minimize: js.Function1[/* e */ WindowEvent, scala.Unit] = null,
+    minimize: /* e */ WindowEvent => scala.Unit = null,
     modal: scala.Boolean | WindowModal = null,
     name: java.lang.String = null,
-    open: js.Function1[/* e */ WindowEvent, scala.Unit] = null,
+    open: /* e */ WindowEvent => scala.Unit = null,
     pinned: js.UndefOr[scala.Boolean] = js.undefined,
     position: WindowPosition = null,
-    refresh: js.Function1[/* e */ WindowEvent, scala.Unit] = null,
+    refresh: /* e */ WindowEvent => scala.Unit = null,
     resizable: js.UndefOr[scala.Boolean] = js.undefined,
-    resize: js.Function1[/* e */ WindowEvent, scala.Unit] = null,
+    resize: /* e */ WindowEvent => scala.Unit = null,
     scrollable: js.UndefOr[scala.Boolean] = js.undefined,
     size: java.lang.String = null,
     title: java.lang.String | scala.Boolean = null,
@@ -80,33 +80,33 @@ object WindowOptions {
   ): WindowOptions = {
     val __obj = js.Dynamic.literal()
     if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (activate != null) __obj.updateDynamic("activate")(activate)
+    if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction1(activate))
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
-    if (close != null) __obj.updateDynamic("close")(close)
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (deactivate != null) __obj.updateDynamic("deactivate")(deactivate)
-    if (dragend != null) __obj.updateDynamic("dragend")(dragend)
+    if (deactivate != null) __obj.updateDynamic("deactivate")(js.Any.fromFunction1(deactivate))
+    if (dragend != null) __obj.updateDynamic("dragend")(js.Any.fromFunction1(dragend))
     if (draggable != null) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (dragstart != null) __obj.updateDynamic("dragstart")(dragstart)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (dragstart != null) __obj.updateDynamic("dragstart")(js.Any.fromFunction1(dragstart))
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(iframe)) __obj.updateDynamic("iframe")(iframe)
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (maximize != null) __obj.updateDynamic("maximize")(maximize)
+    if (maximize != null) __obj.updateDynamic("maximize")(js.Any.fromFunction1(maximize))
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (minimize != null) __obj.updateDynamic("minimize")(minimize)
+    if (minimize != null) __obj.updateDynamic("minimize")(js.Any.fromFunction1(minimize))
     if (modal != null) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned)
     if (position != null) __obj.updateDynamic("position")(position)
-    if (refresh != null) __obj.updateDynamic("refresh")(refresh)
+    if (refresh != null) __obj.updateDynamic("refresh")(js.Any.fromFunction1(refresh))
     if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
-    if (resize != null) __obj.updateDynamic("resize")(resize)
+    if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction1(resize))
     if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable)
     if (size != null) __obj.updateDynamic("size")(size)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

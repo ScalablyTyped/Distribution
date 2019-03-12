@@ -70,9 +70,9 @@ object WiiuGamePad {
     rStickY: scala.Double,
     tpTouch: scala.Boolean,
     tpValidity: scala.Double,
-    update: js.Function0[WiiuGamePad]
+    update: () => WiiuGamePad
   ): WiiuGamePad = {
-    val __obj = js.Dynamic.literal(accX = accX, accY = accY, accZ = accZ, angleX = angleX, angleY = angleY, angleZ = angleZ, contentX = contentX, contentY = contentY, dirXx = dirXx, dirXy = dirXy, dirXz = dirXz, dirYx = dirYx, dirYy = dirYy, dirYz = dirYz, dirZx = dirZx, dirZy = dirZy, dirZz = dirZz, gyroX = gyroX, gyroY = gyroY, gyroZ = gyroZ, hold = hold, isDataValid = isDataValid, isEnabled = isEnabled, lStickX = lStickX, lStickY = lStickY, rStickX = rStickX, rStickY = rStickY, tpTouch = tpTouch, tpValidity = tpValidity, update = update)
+    val __obj = js.Dynamic.literal(accX = accX, accY = accY, accZ = accZ, angleX = angleX, angleY = angleY, angleZ = angleZ, contentX = contentX, contentY = contentY, dirXx = dirXx, dirXy = dirXy, dirXz = dirXz, dirYx = dirYx, dirYy = dirYy, dirYz = dirYz, dirZx = dirZx, dirZy = dirZy, dirZz = dirZz, gyroX = gyroX, gyroY = gyroY, gyroZ = gyroZ, hold = hold, isDataValid = isDataValid, isEnabled = isEnabled, lStickX = lStickX, lStickY = lStickY, rStickX = rStickX, rStickY = rStickY, tpTouch = tpTouch, tpValidity = tpValidity, update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[WiiuGamePad]
   }

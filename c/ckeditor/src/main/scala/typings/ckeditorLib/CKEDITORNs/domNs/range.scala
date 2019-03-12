@@ -11,7 +11,7 @@ class range protected () extends js.Object {
   def this(root: document) = this()
   def this(root: element) = this()
   val collapsed: scala.Boolean = js.native
-  val document: document = js.native
+  val document: ckeditorLib.CKEDITORNs.domNs.document = js.native
   val endContainer: element | text = js.native
   val endOffset: scala.Double = js.native
   val root: element = js.native

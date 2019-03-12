@@ -22,17 +22,12 @@ object SparklinesLineProps {
   @scala.inline
   def apply(
     color: java.lang.String = null,
-    onMouseMove: js.Function3[
-      /* event */ reactDashSparklinesLib.reactDashSparklinesLibStrings.enter | reactDashSparklinesLib.reactDashSparklinesLibStrings.click, 
-      /* value */ scala.Double, 
-      /* point */ Point, 
-      scala.Unit
-    ] = null,
+    onMouseMove: (/* event */ reactDashSparklinesLib.reactDashSparklinesLibStrings.enter | reactDashSparklinesLib.reactDashSparklinesLibStrings.click, /* value */ scala.Double, /* point */ Point) => scala.Unit = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): SparklinesLineProps = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color)
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction3(onMouseMove))
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[SparklinesLineProps]
   }

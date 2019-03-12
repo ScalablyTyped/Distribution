@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait XMLHttpRequestUpload
-  extends reactLib.EventTarget
+  extends stdLib.EventTarget
      with XMLHttpRequestEventTarget
 
 @JSGlobal("XMLHttpRequestUpload")

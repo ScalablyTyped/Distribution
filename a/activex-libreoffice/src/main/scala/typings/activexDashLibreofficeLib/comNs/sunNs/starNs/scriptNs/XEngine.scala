@@ -70,31 +70,20 @@ object XEngine {
   @scala.inline
   def apply(
     Root: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
-    acquire: js.Function0[scala.Unit],
-    addEngineListener: js.Function1[XEngineListener, scala.Unit],
-    cancel: js.Function0[scala.Unit],
-    compile: js.Function3[java.lang.String, java.lang.String, scala.Boolean, scala.Boolean],
-    getRoot: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEngineListener: js.Function1[XEngineListener, scala.Unit],
-    run: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
-      js.Any
-    ],
-    runAsync: js.Function4[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
-      XEngineListener, 
-      scala.Unit
-    ],
-    setLibraryAccess: js.Function1[XLibraryAccess, scala.Unit],
-    setRoot: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
+    acquire: () => scala.Unit,
+    addEngineListener: XEngineListener => scala.Unit,
+    cancel: () => scala.Unit,
+    compile: (java.lang.String, java.lang.String, scala.Boolean) => scala.Boolean,
+    getRoot: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEngineListener: XEngineListener => scala.Unit,
+    run: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]) => js.Any,
+    runAsync: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], XEngineListener) => scala.Unit,
+    setLibraryAccess: XLibraryAccess => scala.Unit,
+    setRoot: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => scala.Unit
   ): XEngine = {
-    val __obj = js.Dynamic.literal(Root = Root, acquire = acquire, addEngineListener = addEngineListener, cancel = cancel, compile = compile, getRoot = getRoot, queryInterface = queryInterface, release = release, removeEngineListener = removeEngineListener, run = run, runAsync = runAsync, setLibraryAccess = setLibraryAccess, setRoot = setRoot)
+    val __obj = js.Dynamic.literal(Root = Root, acquire = js.Any.fromFunction0(acquire), addEngineListener = js.Any.fromFunction1(addEngineListener), cancel = js.Any.fromFunction0(cancel), compile = js.Any.fromFunction3(compile), getRoot = js.Any.fromFunction0(getRoot), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEngineListener = js.Any.fromFunction1(removeEngineListener), run = js.Any.fromFunction3(run), runAsync = js.Any.fromFunction4(runAsync), setLibraryAccess = js.Any.fromFunction1(setLibraryAccess), setRoot = js.Any.fromFunction1(setRoot))
   
     __obj.asInstanceOf[XEngine]
   }

@@ -22,21 +22,10 @@ trait Anon_AnErrorStringArgument[T] extends js.Object {
 object Anon_AnErrorStringArgument {
   @scala.inline
   def apply[T](
-    failure: js.Function4[
-      kiiDashCloudDashSdkLib.KiiCloudNs.KiiServerCodeEntry, 
-      T, 
-      kiiDashCloudDashSdkLib.KiiCloudNs.KiiServerCodeExecResult, 
-      java.lang.String, 
-      js.Any
-    ],
-    success: js.Function3[
-      kiiDashCloudDashSdkLib.KiiCloudNs.KiiServerCodeEntry, 
-      T, 
-      kiiDashCloudDashSdkLib.KiiCloudNs.KiiServerCodeExecResult, 
-      js.Any
-    ]
+    failure: (kiiDashCloudDashSdkLib.KiiCloudNs.KiiServerCodeEntry, T, kiiDashCloudDashSdkLib.KiiCloudNs.KiiServerCodeExecResult, java.lang.String) => js.Any,
+    success: (kiiDashCloudDashSdkLib.KiiCloudNs.KiiServerCodeEntry, T, kiiDashCloudDashSdkLib.KiiCloudNs.KiiServerCodeExecResult) => js.Any
   ): Anon_AnErrorStringArgument[T] = {
-    val __obj = js.Dynamic.literal(failure = failure, success = success)
+    val __obj = js.Dynamic.literal(failure = js.Any.fromFunction4(failure), success = js.Any.fromFunction3(success))
   
     __obj.asInstanceOf[Anon_AnErrorStringArgument[T]]
   }

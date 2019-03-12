@@ -12,17 +12,17 @@ trait XSimpleMailMessage
     * To get the attachment of a simple mail message.
     * @returns A sequence of file URLs specifying the files that should be attached to the mail or an empty sequence if no attachments have been specified. The
     */
-  var Attachement: activexDashInteropLib.SafeArray[java.lang.String]
+  var Attachement: stdLib.SafeArray[java.lang.String]
   /**
     * To get the BCC recipients of a simple mail message.
     * @returns A sequence with the email addresses of one or more BCC recipients. If no BCC recipients have been specified an empty sequence will be returned.
     */
-  var BccRecipient: activexDashInteropLib.SafeArray[java.lang.String]
+  var BccRecipient: stdLib.SafeArray[java.lang.String]
   /**
     * To get the cc recipients of a simple mail message.
     * @returns A sequence with the email addresses of one or more cc recipients. If no cc recipients have been specified an empty sequence will be returned.
     */
-  var CcRecipient: activexDashInteropLib.SafeArray[java.lang.String]
+  var CcRecipient: stdLib.SafeArray[java.lang.String]
   /**
     * To get the email address of the originator of a simple mail message.
     * @returns The email address of the originator of the mail. If no originator has been specified an empty string will be returned.
@@ -42,17 +42,17 @@ trait XSimpleMailMessage
     * To get the attachment of a simple mail message.
     * @returns A sequence of file URLs specifying the files that should be attached to the mail or an empty sequence if no attachments have been specified. The
     */
-  def getAttachement(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getAttachement(): stdLib.SafeArray[java.lang.String]
   /**
     * To get the BCC recipients of a simple mail message.
     * @returns A sequence with the email addresses of one or more BCC recipients. If no BCC recipients have been specified an empty sequence will be returned.
     */
-  def getBccRecipient(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getBccRecipient(): stdLib.SafeArray[java.lang.String]
   /**
     * To get the cc recipients of a simple mail message.
     * @returns A sequence with the email addresses of one or more cc recipients. If no cc recipients have been specified an empty sequence will be returned.
     */
-  def getCcRecipient(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getCcRecipient(): stdLib.SafeArray[java.lang.String]
   /**
     * To get the email address of the originator of a simple mail message.
     * @returns The email address of the originator of the mail. If no originator has been specified an empty string will be returned.
@@ -104,29 +104,29 @@ trait XSimpleMailMessage
 object XSimpleMailMessage {
   @scala.inline
   def apply(
-    Attachement: activexDashInteropLib.SafeArray[java.lang.String],
-    BccRecipient: activexDashInteropLib.SafeArray[java.lang.String],
-    CcRecipient: activexDashInteropLib.SafeArray[java.lang.String],
+    Attachement: stdLib.SafeArray[java.lang.String],
+    BccRecipient: stdLib.SafeArray[java.lang.String],
+    CcRecipient: stdLib.SafeArray[java.lang.String],
     Originator: java.lang.String,
     Recipient: java.lang.String,
     Subject: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getAttachement: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getBccRecipient: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getCcRecipient: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getOriginator: js.Function0[java.lang.String],
-    getRecipient: js.Function0[java.lang.String],
-    getSubject: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setAttachement: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
-    setBccRecipient: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
-    setCcRecipient: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
-    setOriginator: js.Function1[java.lang.String, scala.Unit],
-    setRecipient: js.Function1[java.lang.String, scala.Unit],
-    setSubject: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getAttachement: () => stdLib.SafeArray[java.lang.String],
+    getBccRecipient: () => stdLib.SafeArray[java.lang.String],
+    getCcRecipient: () => stdLib.SafeArray[java.lang.String],
+    getOriginator: () => java.lang.String,
+    getRecipient: () => java.lang.String,
+    getSubject: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setAttachement: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => scala.Unit,
+    setBccRecipient: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => scala.Unit,
+    setCcRecipient: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => scala.Unit,
+    setOriginator: java.lang.String => scala.Unit,
+    setRecipient: java.lang.String => scala.Unit,
+    setSubject: java.lang.String => scala.Unit
   ): XSimpleMailMessage = {
-    val __obj = js.Dynamic.literal(Attachement = Attachement, BccRecipient = BccRecipient, CcRecipient = CcRecipient, Originator = Originator, Recipient = Recipient, Subject = Subject, acquire = acquire, getAttachement = getAttachement, getBccRecipient = getBccRecipient, getCcRecipient = getCcRecipient, getOriginator = getOriginator, getRecipient = getRecipient, getSubject = getSubject, queryInterface = queryInterface, release = release, setAttachement = setAttachement, setBccRecipient = setBccRecipient, setCcRecipient = setCcRecipient, setOriginator = setOriginator, setRecipient = setRecipient, setSubject = setSubject)
+    val __obj = js.Dynamic.literal(Attachement = Attachement, BccRecipient = BccRecipient, CcRecipient = CcRecipient, Originator = Originator, Recipient = Recipient, Subject = Subject, acquire = js.Any.fromFunction0(acquire), getAttachement = js.Any.fromFunction0(getAttachement), getBccRecipient = js.Any.fromFunction0(getBccRecipient), getCcRecipient = js.Any.fromFunction0(getCcRecipient), getOriginator = js.Any.fromFunction0(getOriginator), getRecipient = js.Any.fromFunction0(getRecipient), getSubject = js.Any.fromFunction0(getSubject), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setAttachement = js.Any.fromFunction1(setAttachement), setBccRecipient = js.Any.fromFunction1(setBccRecipient), setCcRecipient = js.Any.fromFunction1(setCcRecipient), setOriginator = js.Any.fromFunction1(setOriginator), setRecipient = js.Any.fromFunction1(setRecipient), setSubject = js.Any.fromFunction1(setSubject))
   
     __obj.asInstanceOf[XSimpleMailMessage]
   }

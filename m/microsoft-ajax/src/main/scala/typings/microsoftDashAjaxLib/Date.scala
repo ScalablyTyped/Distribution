@@ -23,11 +23,8 @@ trait Date extends js.Object {
 
 object Date {
   @scala.inline
-  def apply(
-    format: js.Function1[java.lang.String, java.lang.String],
-    localeFormat: js.Function1[java.lang.String, java.lang.String]
-  ): Date = {
-    val __obj = js.Dynamic.literal(format = format, localeFormat = localeFormat)
+  def apply(format: java.lang.String => java.lang.String, localeFormat: java.lang.String => java.lang.String): Date = {
+    val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format), localeFormat = js.Any.fromFunction1(localeFormat))
   
     __obj.asInstanceOf[Date]
   }

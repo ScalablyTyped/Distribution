@@ -10,14 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(stream: endDashOfDashStreamLib.Stream): js.Function0[scala.Unit] = js.native
   def apply(stream: endDashOfDashStreamLib.Stream, callback: endDashOfDashStreamLib.Callback): js.Function0[scala.Unit] = js.native
-  def apply(
-    stream: endDashOfDashStreamLib.Stream,
-    options: endDashOfDashStreamLib.endDashOfDashStreamMod.Options
-  ): js.Function0[scala.Unit] = js.native
-  def apply(
-    stream: endDashOfDashStreamLib.Stream,
-    options: endDashOfDashStreamLib.endDashOfDashStreamMod.Options,
-    callback: endDashOfDashStreamLib.Callback
-  ): js.Function0[scala.Unit] = js.native
+  def apply(stream: endDashOfDashStreamLib.Stream, options: Options): js.Function0[scala.Unit] = js.native
+  def apply(stream: endDashOfDashStreamLib.Stream, options: Options, callback: endDashOfDashStreamLib.Callback): js.Function0[scala.Unit] = js.native
 }
 

@@ -14,9 +14,9 @@ trait IVisual extends js.Object {
 
 object IVisual {
   @scala.inline
-  def apply(destroy: js.Function0[scala.Unit] = null): IVisual = {
+  def apply(destroy: () => scala.Unit = null): IVisual = {
     val __obj = js.Dynamic.literal()
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     __obj.asInstanceOf[IVisual]
   }
 }

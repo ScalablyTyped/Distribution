@@ -20,13 +20,13 @@ trait MailComposer extends js.Object {
 object MailComposer {
   @scala.inline
   def apply(
-    compile: js.Function0[nodemailerLib.libMimeDashNodeMod.namespaced],
-    getAlternatives: js.Function0[js.Array[nodemailerLib.libMailerMod.MailNs.Attachment]],
-    getAttachments: js.Function1[scala.Boolean, js.Array[nodemailerLib.libMailerMod.MailNs.Attachment]],
+    compile: () => nodemailerLib.libMimeDashNodeMod.namespaced,
+    getAlternatives: () => js.Array[nodemailerLib.libMailerMod.MailNs.Attachment],
+    getAttachments: scala.Boolean => js.Array[nodemailerLib.libMailerMod.MailNs.Attachment],
     mail: nodemailerLib.libMailerMod.MailNs.Options,
     message: nodemailerLib.libMimeDashNodeMod.namespaced | nodemailerLib.nodemailerLibNumbers.`false`
   ): MailComposer = {
-    val __obj = js.Dynamic.literal(compile = compile, getAlternatives = getAlternatives, getAttachments = getAttachments, mail = mail, message = message.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(compile = js.Any.fromFunction0(compile), getAlternatives = js.Any.fromFunction0(getAlternatives), getAttachments = js.Any.fromFunction1(getAttachments), mail = mail, message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MailComposer]
   }

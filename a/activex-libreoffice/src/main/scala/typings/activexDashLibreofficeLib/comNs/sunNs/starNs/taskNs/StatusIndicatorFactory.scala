@@ -22,24 +22,14 @@ trait StatusIndicatorFactory extends XStatusIndicatorFactory {
 object StatusIndicatorFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createStatusIndicator: js.Function0[XStatusIndicator],
-    createWithFrame: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XFrame, 
-      scala.Boolean, 
-      scala.Boolean, 
-      scala.Unit
-    ],
-    createWithWindow: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
-      scala.Boolean, 
-      scala.Boolean, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createStatusIndicator: () => XStatusIndicator,
+    createWithFrame: (activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XFrame, scala.Boolean, scala.Boolean) => scala.Unit,
+    createWithWindow: (activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, scala.Boolean, scala.Boolean) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): StatusIndicatorFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createStatusIndicator = createStatusIndicator, createWithFrame = createWithFrame, createWithWindow = createWithWindow, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createStatusIndicator = js.Any.fromFunction0(createStatusIndicator), createWithFrame = js.Any.fromFunction3(createWithFrame), createWithWindow = js.Any.fromFunction3(createWithWindow), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[StatusIndicatorFactory]
   }

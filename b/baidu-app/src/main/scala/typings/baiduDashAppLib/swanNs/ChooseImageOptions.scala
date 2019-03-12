@@ -21,17 +21,17 @@ trait ChooseImageOptions
 object ChooseImageOptions {
   @scala.inline
   def apply(
-    success: js.Function1[TempFilesData, scala.Unit],
-    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    success: TempFilesData => scala.Unit,
+    complete: /* res */ js.Any => scala.Unit = null,
     count: scala.Int | scala.Double = null,
-    fail: js.Function1[js.Any, scala.Unit] = null,
+    fail: js.Any => scala.Unit = null,
     sizeType: js.Array[ImageSizeType] = null,
     sourceType: js.Array[ImageSourceType] = null
   ): ChooseImageOptions = {
-    val __obj = js.Dynamic.literal(success = success)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (sizeType != null) __obj.updateDynamic("sizeType")(sizeType)
     if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType)
     __obj.asInstanceOf[ChooseImageOptions]

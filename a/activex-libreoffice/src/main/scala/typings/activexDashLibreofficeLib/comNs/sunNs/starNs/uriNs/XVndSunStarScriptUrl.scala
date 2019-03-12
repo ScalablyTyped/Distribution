@@ -64,16 +64,16 @@ object XVndSunStarScriptUrl {
   @scala.inline
   def apply(
     Name: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getName: js.Function0[java.lang.String],
-    getParameter: js.Function1[java.lang.String, java.lang.String],
-    hasParameter: js.Function1[java.lang.String, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setName: js.Function1[java.lang.String, scala.Unit],
-    setParameter: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getName: () => java.lang.String,
+    getParameter: java.lang.String => java.lang.String,
+    hasParameter: java.lang.String => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setName: java.lang.String => scala.Unit,
+    setParameter: (java.lang.String, java.lang.String) => scala.Unit
   ): XVndSunStarScriptUrl = {
-    val __obj = js.Dynamic.literal(Name = Name, acquire = acquire, getName = getName, getParameter = getParameter, hasParameter = hasParameter, queryInterface = queryInterface, release = release, setName = setName, setParameter = setParameter)
+    val __obj = js.Dynamic.literal(Name = Name, acquire = js.Any.fromFunction0(acquire), getName = js.Any.fromFunction0(getName), getParameter = js.Any.fromFunction1(getParameter), hasParameter = js.Any.fromFunction1(hasParameter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setName = js.Any.fromFunction1(setName), setParameter = js.Any.fromFunction2(setParameter))
   
     __obj.asInstanceOf[XVndSunStarScriptUrl]
   }

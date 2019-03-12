@@ -16,13 +16,13 @@ object XFormattedString {
   @scala.inline
   def apply(
     String: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getString: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setString: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getString: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setString: java.lang.String => scala.Unit
   ): XFormattedString = {
-    val __obj = js.Dynamic.literal(String = String, acquire = acquire, getString = getString, queryInterface = queryInterface, release = release, setString = setString)
+    val __obj = js.Dynamic.literal(String = String, acquire = js.Any.fromFunction0(acquire), getString = js.Any.fromFunction0(getString), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setString = js.Any.fromFunction1(setString))
   
     __obj.asInstanceOf[XFormattedString]
   }

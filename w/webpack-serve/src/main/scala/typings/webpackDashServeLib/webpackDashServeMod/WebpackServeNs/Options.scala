@@ -54,12 +54,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    add: js.Function3[
-      /* app */ InitializedKoa, 
-      /* middleware */ Middleware, 
-      /* options */ Options, 
-      scala.Unit
-    ] = null,
+    add: (/* app */ InitializedKoa, /* middleware */ Middleware, /* options */ Options) => scala.Unit = null,
     clipboard: js.UndefOr[scala.Boolean] = js.undefined,
     compiler: webpackLib.webpackMod.Compiler = null,
     config: webpackDashServeLib.webpackDashServeMod.webpackMod.Configuration = null,
@@ -76,7 +71,7 @@ object Options {
     port: scala.Int | scala.Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (add != null) __obj.updateDynamic("add")(add)
+    if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction3(add))
     if (!js.isUndefined(clipboard)) __obj.updateDynamic("clipboard")(clipboard)
     if (compiler != null) __obj.updateDynamic("compiler")(compiler)
     if (config != null) __obj.updateDynamic("config")(config)

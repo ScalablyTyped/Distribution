@@ -53,10 +53,10 @@ object IDatepickerOptions {
     minDate: stdLib.Date = null,
     minView: scala.Int | scala.Double = null,
     modelDateFormat: java.lang.String = null,
-    onBeforeHide: js.Function1[/* datepicker */ IDatepicker, scala.Unit] = null,
-    onBeforeShow: js.Function1[/* datepicker */ IDatepicker, scala.Unit] = null,
-    onHide: js.Function1[/* datepicker */ IDatepicker, scala.Unit] = null,
-    onShow: js.Function1[/* datepicker */ IDatepicker, scala.Unit] = null,
+    onBeforeHide: /* datepicker */ IDatepicker => scala.Unit = null,
+    onBeforeShow: /* datepicker */ IDatepicker => scala.Unit = null,
+    onHide: /* datepicker */ IDatepicker => scala.Unit = null,
+    onShow: /* datepicker */ IDatepicker => scala.Unit = null,
     placement: java.lang.String = null,
     startDate: stdLib.Date = null,
     startView: scala.Int | scala.Double = null,
@@ -82,10 +82,10 @@ object IDatepickerOptions {
     if (minDate != null) __obj.updateDynamic("minDate")(minDate)
     if (minView != null) __obj.updateDynamic("minView")(minView.asInstanceOf[js.Any])
     if (modelDateFormat != null) __obj.updateDynamic("modelDateFormat")(modelDateFormat)
-    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(onBeforeHide)
-    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(onBeforeShow)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(js.Any.fromFunction1(onBeforeHide))
+    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(js.Any.fromFunction1(onBeforeShow))
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction1(onHide))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (placement != null) __obj.updateDynamic("placement")(placement)
     if (startDate != null) __obj.updateDynamic("startDate")(startDate)
     if (startView != null) __obj.updateDynamic("startView")(startView.asInstanceOf[js.Any])

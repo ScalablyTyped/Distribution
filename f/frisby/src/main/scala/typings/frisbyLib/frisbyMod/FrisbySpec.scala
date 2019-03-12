@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class FrisbySpec protected () extends js.Object {
   def this(args: js.Any*) = this()
   def `catch`(): FrisbySpec = js.native
-  def `catch`(onRejected: js.Function1[/* error */ nodeLib.Error, scala.Unit]): FrisbySpec = js.native
+  def `catch`(onRejected: js.Function1[/* error */ stdLib.Error, scala.Unit]): FrisbySpec = js.native
   def del(url: java.lang.String): FrisbySpec = js.native
   def del(url: java.lang.String, params: js.Object): FrisbySpec = js.native
   def done(doneFn: js.Function1[/* repeated */ js.Any, scala.Unit]): FrisbySpec = js.native

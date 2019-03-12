@@ -29,12 +29,12 @@ trait SVGInjectorOptions extends js.Object {
 object SVGInjectorOptions {
   @scala.inline
   def apply(
-    each: js.Function1[/* svg */ stdLib.SVGElement | java.lang.String, scala.Unit] = null,
+    each: /* svg */ stdLib.SVGElement | java.lang.String => scala.Unit = null,
     evalScripts: java.lang.String = null,
     pngFallback: java.lang.String = null
   ): SVGInjectorOptions = {
     val __obj = js.Dynamic.literal()
-    if (each != null) __obj.updateDynamic("each")(each)
+    if (each != null) __obj.updateDynamic("each")(js.Any.fromFunction1(each))
     if (evalScripts != null) __obj.updateDynamic("evalScripts")(evalScripts)
     if (pngFallback != null) __obj.updateDynamic("pngFallback")(pngFallback)
     __obj.asInstanceOf[SVGInjectorOptions]

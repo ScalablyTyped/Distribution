@@ -37,9 +37,9 @@ object Anon_AddressCommerce {
     companyNs: Anon_Bs,
     databaseNs: Anon_Collation,
     dateNs: Anon_Between,
-    fake: js.Function1[java.lang.String, java.lang.String],
+    fake: java.lang.String => java.lang.String,
     financeNs: Anon_Account,
-    getLocale: js.Function0[adoneLib.adoneNs.fakeNs.INs.Locale],
+    getLocale: () => adoneLib.adoneNs.fakeNs.INs.Locale,
     hackerNs: Anon_Abbreviation,
     helpersNs: Anon_ArgsArray,
     imageNs: Anon_Abstract,
@@ -48,11 +48,11 @@ object Anon_AddressCommerce {
     nameNs: Anon_FindName,
     phoneNs: Anon_Format,
     randomNs: Anon_AlphaNumeric,
-    seed: js.Function1[scala.Double, scala.Unit],
-    setLocale: js.Function1[adoneLib.adoneNs.fakeNs.INs.Locale, scala.Unit],
+    seed: scala.Double => scala.Unit,
+    setLocale: adoneLib.adoneNs.fakeNs.INs.Locale => scala.Unit,
     systemNs: Anon_CommonFileExt
   ): Anon_AddressCommerce = {
-    val __obj = js.Dynamic.literal(INs = INs, addressNs = addressNs, commerceNs = commerceNs, companyNs = companyNs, databaseNs = databaseNs, dateNs = dateNs, fake = fake, financeNs = financeNs, getLocale = getLocale, hackerNs = hackerNs, helpersNs = helpersNs, imageNs = imageNs, internetNs = internetNs, loremNs = loremNs, nameNs = nameNs, phoneNs = phoneNs, randomNs = randomNs, seed = seed, setLocale = setLocale, systemNs = systemNs)
+    val __obj = js.Dynamic.literal(INs = INs, addressNs = addressNs, commerceNs = commerceNs, companyNs = companyNs, databaseNs = databaseNs, dateNs = dateNs, fake = js.Any.fromFunction1(fake), financeNs = financeNs, getLocale = js.Any.fromFunction0(getLocale), hackerNs = hackerNs, helpersNs = helpersNs, imageNs = imageNs, internetNs = internetNs, loremNs = loremNs, nameNs = nameNs, phoneNs = phoneNs, randomNs = randomNs, seed = js.Any.fromFunction1(seed), setLocale = js.Any.fromFunction1(setLocale), systemNs = systemNs)
   
     __obj.asInstanceOf[Anon_AddressCommerce]
   }

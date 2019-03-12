@@ -25,13 +25,13 @@ object SelectableOptions {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     distance: scala.Int | scala.Double = null,
     filter: java.lang.String = null,
-    selected: js.Function2[/* event */ stdLib.Event, /* ui */ jqueryuiLib.Anon_Selected, scala.Unit] = null,
-    selecting: js.Function2[/* event */ stdLib.Event, /* ui */ jqueryuiLib.Anon_Selecting, scala.Unit] = null,
-    start: js.Function2[/* event */ stdLib.Event, /* ui */ js.Any, scala.Unit] = null,
-    stop: js.Function2[/* event */ stdLib.Event, /* ui */ js.Any, scala.Unit] = null,
+    selected: (/* event */ stdLib.Event, /* ui */ jqueryuiLib.Anon_Selected) => scala.Unit = null,
+    selecting: (/* event */ stdLib.Event, /* ui */ jqueryuiLib.Anon_Selecting) => scala.Unit = null,
+    start: (/* event */ stdLib.Event, /* ui */ js.Any) => scala.Unit = null,
+    stop: (/* event */ stdLib.Event, /* ui */ js.Any) => scala.Unit = null,
     tolerance: java.lang.String = null,
-    unselected: js.Function2[/* event */ stdLib.Event, /* ui */ jqueryuiLib.Anon_Unselected, scala.Unit] = null,
-    unselecting: js.Function2[/* event */ stdLib.Event, /* ui */ jqueryuiLib.Anon_Unselecting, scala.Unit] = null
+    unselected: (/* event */ stdLib.Event, /* ui */ jqueryuiLib.Anon_Unselected) => scala.Unit = null,
+    unselecting: (/* event */ stdLib.Event, /* ui */ jqueryuiLib.Anon_Unselecting) => scala.Unit = null
   ): SelectableOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoRefresh)) __obj.updateDynamic("autoRefresh")(autoRefresh)
@@ -40,13 +40,13 @@ object SelectableOptions {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (selected != null) __obj.updateDynamic("selected")(selected)
-    if (selecting != null) __obj.updateDynamic("selecting")(selecting)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (selected != null) __obj.updateDynamic("selected")(js.Any.fromFunction2(selected))
+    if (selecting != null) __obj.updateDynamic("selecting")(js.Any.fromFunction2(selecting))
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
     if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance)
-    if (unselected != null) __obj.updateDynamic("unselected")(unselected)
-    if (unselecting != null) __obj.updateDynamic("unselecting")(unselecting)
+    if (unselected != null) __obj.updateDynamic("unselected")(js.Any.fromFunction2(unselected))
+    if (unselecting != null) __obj.updateDynamic("unselecting")(js.Any.fromFunction2(unselecting))
     __obj.asInstanceOf[SelectableOptions]
   }
 }

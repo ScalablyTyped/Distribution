@@ -27,16 +27,16 @@ object DebugElement__POST_R3__ {
     nativeNode: js.Any,
     properties: org.scalablytyped.runtime.StringDictionary[js.Any],
     providerTokens: js.Array[_],
-    query: js.Function1[Predicate[DebugElement], DebugElement],
-    queryAll: js.Function1[Predicate[DebugElement], js.Array[DebugElement]],
-    queryAllNodes: js.Function1[Predicate[DebugNode], js.Array[DebugNode]],
+    query: Predicate[DebugElement] => DebugElement,
+    queryAll: Predicate[DebugElement] => js.Array[DebugElement],
+    queryAllNodes: Predicate[DebugNode] => js.Array[DebugNode],
     references: org.scalablytyped.runtime.StringDictionary[js.Any],
     styles: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null],
-    triggerEventHandler: js.Function2[java.lang.String, js.Any, scala.Unit],
+    triggerEventHandler: (java.lang.String, js.Any) => scala.Unit,
     nativeElement: stdLib.Element = null,
     parent: DebugElement = null
   ): DebugElement__POST_R3__ = {
-    val __obj = js.Dynamic.literal(attributes = attributes, childNodes = childNodes, children = children, classes = classes, componentInstance = componentInstance, context = context, injector = injector, listeners = listeners, name = name, nativeNode = nativeNode, properties = properties, providerTokens = providerTokens, query = query, queryAll = queryAll, queryAllNodes = queryAllNodes, references = references, styles = styles, triggerEventHandler = triggerEventHandler)
+    val __obj = js.Dynamic.literal(attributes = attributes, childNodes = childNodes, children = children, classes = classes, componentInstance = componentInstance, context = context, injector = injector, listeners = listeners, name = name, nativeNode = nativeNode, properties = properties, providerTokens = providerTokens, query = js.Any.fromFunction1(query), queryAll = js.Any.fromFunction1(queryAll), queryAllNodes = js.Any.fromFunction1(queryAllNodes), references = references, styles = styles, triggerEventHandler = js.Any.fromFunction2(triggerEventHandler))
     if (nativeElement != null) __obj.updateDynamic("nativeElement")(nativeElement)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     __obj.asInstanceOf[DebugElement__POST_R3__]

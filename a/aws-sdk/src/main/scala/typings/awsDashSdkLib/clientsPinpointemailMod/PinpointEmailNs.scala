@@ -55,15 +55,15 @@ object PinpointEmailNs extends js.Object {
     /**
       * The default value of the dimension that is published to Amazon CloudWatch if you don't provide the value of the dimension when you send an email. This value has to meet the following criteria:   It can only contain ASCII letters (a-z, A-Z), numbers (0-9), underscores (_), or dashes (-).   It can contain no more than 256 characters.  
       */
-    var DefaultDimensionValue: DefaultDimensionValue
+    var DefaultDimensionValue: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DefaultDimensionValue
     /**
       * The name of an Amazon CloudWatch dimension associated with an email sending metric. The name has to meet the following criteria:   It can only contain ASCII letters (a-z, A-Z), numbers (0-9), underscores (_), or dashes (-).   It can contain no more than 256 characters.  
       */
-    var DimensionName: DimensionName
+    var DimensionName: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DimensionName
     /**
       * The location where Amazon Pinpoint finds the value of a dimension to publish to Amazon CloudWatch. If you want Amazon Pinpoint to use the message tags that you specify using an X-SES-MESSAGE-TAGS header or a parameter to the SendEmail/SendRawEmail API, choose messageTag. If you want Amazon Pinpoint to use your own email headers, choose emailHeader. If you want Amazon Pinpoint to use link tags, choose linkTags.
       */
-    var DimensionValueSource: DimensionValueSource
+    var DimensionValueSource: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DimensionValueSource
   }
   
   trait Content extends js.Object {
@@ -81,7 +81,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * The name of the configuration set that you want to add an event destination to.
       */
-    var ConfigurationSetName: ConfigurationSetName
+    var ConfigurationSetName: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ConfigurationSetName
     /**
       * An object that defines the event destination.
       */
@@ -89,7 +89,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * A name that identifies the event destination within the configuration set.
       */
-    var EventDestinationName: EventDestinationName
+    var EventDestinationName: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.EventDestinationName
   }
   
   trait CreateConfigurationSetEventDestinationResponse extends js.Object
@@ -123,7 +123,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * The name of the dedicated IP pool.
       */
-    var PoolName: PoolName
+    var PoolName: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PoolName
   }
   
   trait CreateDedicatedIpPoolResponse extends js.Object
@@ -147,11 +147,11 @@ object PinpointEmailNs extends js.Object {
     /**
       * The status of the predictive inbox placement test. If the status is IN_PROGRESS, then the predictive inbox placement test is currently running. Predictive inbox placement tests are usually complete within 24 hours of creating the test. If the status is COMPLETE, then the test is finished, and you can use the GetDeliverabilityTestReport to view the results of the test.
       */
-    var DeliverabilityTestStatus: DeliverabilityTestStatus
+    var DeliverabilityTestStatus: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeliverabilityTestStatus
     /**
       * A unique string that identifies the predictive inbox placement test.
       */
-    var ReportId: ReportId
+    var ReportId: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ReportId
   }
   
   trait CreateEmailIdentityRequest extends js.Object {
@@ -195,7 +195,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * An IP address that is reserved for use by your Amazon Pinpoint account.
       */
-    var Ip: Ip
+    var Ip: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.Ip
     /**
       * The name of the dedicated IP pool that the IP address is associated with.
       */
@@ -207,18 +207,18 @@ object PinpointEmailNs extends js.Object {
     /**
       * The warm-up status of a dedicated IP address. The status can have one of the following values:    IN_PROGRESS – The IP address isn't ready to use because the dedicated IP warm-up process is ongoing.    DONE – The dedicated IP warm-up process is complete, and the IP address is ready to use.  
       */
-    var WarmupStatus: WarmupStatus
+    var WarmupStatus: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.WarmupStatus
   }
   
   trait DeleteConfigurationSetEventDestinationRequest extends js.Object {
     /**
       * The name of the configuration set that contains the event destination that you want to delete.
       */
-    var ConfigurationSetName: ConfigurationSetName
+    var ConfigurationSetName: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ConfigurationSetName
     /**
       * The name of the event destination that you want to delete.
       */
-    var EventDestinationName: EventDestinationName
+    var EventDestinationName: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.EventDestinationName
   }
   
   trait DeleteConfigurationSetEventDestinationResponse extends js.Object
@@ -227,7 +227,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * The name of the configuration set that you want to delete.
       */
-    var ConfigurationSetName: ConfigurationSetName
+    var ConfigurationSetName: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ConfigurationSetName
   }
   
   trait DeleteConfigurationSetResponse extends js.Object
@@ -236,7 +236,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * The name of the dedicated IP pool that you want to delete.
       */
-    var PoolName: PoolName
+    var PoolName: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PoolName
   }
   
   trait DeleteDedicatedIpPoolResponse extends js.Object
@@ -435,21 +435,21 @@ object PinpointEmailNs extends js.Object {
     /**
       * A list of IP addresses that you want to retrieve blacklist information about. You can only specify the dedicated IP addresses that you use to send email using Amazon Pinpoint or Amazon SES.
       */
-    var BlacklistItemNames: BlacklistItemNames
+    var BlacklistItemNames: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.BlacklistItemNames
   }
   
   trait GetBlacklistReportsResponse extends js.Object {
     /**
       * An object that contains information about a blacklist that one of your dedicated IP addresses appears on.
       */
-    var BlacklistReport: BlacklistReport
+    var BlacklistReport: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.BlacklistReport
   }
   
   trait GetConfigurationSetEventDestinationsRequest extends js.Object {
     /**
       * The name of the configuration set that contains the event destination.
       */
-    var ConfigurationSetName: ConfigurationSetName
+    var ConfigurationSetName: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ConfigurationSetName
   }
   
   trait GetConfigurationSetEventDestinationsResponse extends js.Object {
@@ -463,7 +463,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * The name of the configuration set that you want to obtain more information about.
       */
-    var ConfigurationSetName: ConfigurationSetName
+    var ConfigurationSetName: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ConfigurationSetName
   }
   
   trait GetConfigurationSetResponse extends js.Object {
@@ -493,7 +493,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * The IP address that you want to obtain more information about. The value you specify has to be a dedicated IP address that's assocaited with your Amazon Pinpoint account.
       */
-    var Ip: Ip
+    var Ip: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.Ip
   }
   
   trait GetDedicatedIpResponse extends js.Object {
@@ -542,18 +542,18 @@ object PinpointEmailNs extends js.Object {
     /**
       * A unique string that identifies the predictive inbox placement test.
       */
-    var ReportId: ReportId
+    var ReportId: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ReportId
   }
   
   trait GetDeliverabilityTestReportResponse extends js.Object {
     /**
       * An object that contains the results of the predictive inbox placement test.
       */
-    var DeliverabilityTestReport: DeliverabilityTestReport
+    var DeliverabilityTestReport: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeliverabilityTestReport
     /**
       * An object that describes how the test email was handled by several email providers, including Gmail, Hotmail, Yahoo, AOL, and others.
       */
-    var IspPlacements: IspPlacements
+    var IspPlacements: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.IspPlacements
     /**
       * An object that contains the message that you sent when you performed this predictive inbox placement test.
       */
@@ -583,11 +583,11 @@ object PinpointEmailNs extends js.Object {
     /**
       * An object that contains deliverability metrics for the domain that you specified. This object contains data for each day, starting on the StartDate and ending on the EndDate.
       */
-    var DailyVolumes: DailyVolumes
+    var DailyVolumes: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DailyVolumes
     /**
       * An object that contains deliverability metrics for the domain that you specified. The data in this object is a summary of all of the data that was collected from the StartDate to the EndDate.
       */
-    var OverallVolume: OverallVolume
+    var OverallVolume: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.OverallVolume
   }
   
   trait GetEmailIdentityRequest extends js.Object {
@@ -716,7 +716,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * An object that contains a lists of predictive inbox placement tests that you've performed.
       */
-    var DeliverabilityTestReports: DeliverabilityTestReports
+    var DeliverabilityTestReports: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeliverabilityTestReports
     /**
       * A token that indicates that there are additional predictive inbox placement tests to list. To view additional predictive inbox placement tests, issue another request to ListDeliverabilityTestReports, and pass this token in the NextToken parameter.
       */
@@ -749,7 +749,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * The action that Amazon Pinpoint to takes if it can't read the required MX record for a custom MAIL FROM domain. When you set this value to UseDefaultValue, Amazon Pinpoint uses amazonses.com as the MAIL FROM domain. When you set this value to RejectMessage, Amazon Pinpoint returns a MailFromDomainNotVerified error, and doesn't attempt to deliver the email. These behaviors are taken when the custom MAIL FROM domain configuration is in the Pending, Failed, and TemporaryFailure states.
       */
-    var BehaviorOnMxFailure: BehaviorOnMxFailure
+    var BehaviorOnMxFailure: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.BehaviorOnMxFailure
     /**
       * The name of a domain that an email identity uses as a custom MAIL FROM domain.
       */
@@ -757,14 +757,14 @@ object PinpointEmailNs extends js.Object {
     /**
       * The status of the MAIL FROM domain. This status can have the following values:    PENDING – Amazon Pinpoint hasn't started searching for the MX record yet.    SUCCESS – Amazon Pinpoint detected the required MX record for the MAIL FROM domain.    FAILED – Amazon Pinpoint can't find the required MX record, or the record no longer exists.    TEMPORARY_FAILURE – A temporary issue occurred, which prevented Amazon Pinpoint from determining the status of the MAIL FROM domain.  
       */
-    var MailFromDomainStatus: MailFromDomainStatus
+    var MailFromDomainStatus: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.MailFromDomainStatus
   }
   
   trait Message extends js.Object {
     /**
       * The body of the message. You can specify an HTML version of the message, a text-only version of the message, or both.
       */
-    var Body: Body
+    var Body: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.Body
     /**
       * The subject line of the email. The subject line can only contain 7-bit ASCII characters. However, you can specify non-ASCII characters in the subject line by using encoded-word syntax, as described in RFC 2047.
       */
@@ -849,7 +849,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * The name of the configuration set that you want to associate with a dedicated IP pool.
       */
-    var ConfigurationSetName: ConfigurationSetName
+    var ConfigurationSetName: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ConfigurationSetName
     /**
       * The name of the dedicated IP pool that you want to associate with the configuration set.
       */
@@ -862,7 +862,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * The name of the configuration set that you want to enable or disable reputation metric tracking for.
       */
-    var ConfigurationSetName: ConfigurationSetName
+    var ConfigurationSetName: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ConfigurationSetName
     /**
       * If true, tracking of reputation metrics is enabled for the configuration set. If false, tracking of reputation metrics is disabled for the configuration set.
       */
@@ -875,7 +875,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * The name of the configuration set that you want to enable or disable email sending for.
       */
-    var ConfigurationSetName: ConfigurationSetName
+    var ConfigurationSetName: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ConfigurationSetName
     /**
       * If true, email sending is enabled for the configuration set. If false, email sending is disabled for the configuration set.
       */
@@ -888,7 +888,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * The name of the configuration set that you want to add a custom tracking domain to.
       */
-    var ConfigurationSetName: ConfigurationSetName
+    var ConfigurationSetName: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ConfigurationSetName
     /**
       * The domain that you want to use to track open and click events.
       */
@@ -905,7 +905,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * The IP address that you want to move to the dedicated IP pool. The value you specify has to be a dedicated IP address that's associated with your Amazon Pinpoint account.
       */
-    var Ip: Ip
+    var Ip: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.Ip
   }
   
   trait PutDedicatedIpInPoolResponse extends js.Object
@@ -914,7 +914,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * The dedicated IP address that you want to update the warm-up attributes for.
       */
-    var Ip: Ip
+    var Ip: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.Ip
     /**
       * The warm-up percentage that you want to associate with the dedicated IP address.
       */
@@ -1005,7 +1005,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * An object that contains the recipients of the email message.
       */
-    var Destination: Destination
+    var Destination: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.Destination
     /**
       * A list of tags, in the form of name/value pairs, to apply to an email that you send using the SendEmail operation. Tags correspond to characteristics of the email that you define, so that you can publish email sending events. 
       */
@@ -1064,7 +1064,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * The domain that you want to use for tracking open and click events.
       */
-    var CustomRedirectDomain: CustomRedirectDomain
+    var CustomRedirectDomain: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CustomRedirectDomain
   }
   
   @js.native
@@ -1929,7 +1929,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * The name of the configuration set that contains the event destination that you want to modify.
       */
-    var ConfigurationSetName: ConfigurationSetName
+    var ConfigurationSetName: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ConfigurationSetName
     /**
       * An object that defines the event destination.
       */
@@ -1937,7 +1937,7 @@ object PinpointEmailNs extends js.Object {
     /**
       * The name of the event destination that you want to modify.
       */
-    var EventDestinationName: EventDestinationName
+    var EventDestinationName: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.EventDestinationName
   }
   
   trait UpdateConfigurationSetEventDestinationResponse extends js.Object

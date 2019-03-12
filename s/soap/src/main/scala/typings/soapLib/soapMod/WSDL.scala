@@ -54,11 +54,11 @@ class WSDL protected () extends js.Object {
     schemaObject: js.UndefOr[js.Any],
     nsContext: js.UndefOr[js.Any]
   ): java.lang.String = js.native
-  def onReady(callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def onReady(callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def processAttributes(child: js.Any, nsContext: js.Any): java.lang.String = js.native
-  def processIncludes(callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def processIncludes(callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def toXML(): java.lang.String = js.native
   def xmlToObject(xml: js.Any): js.Any = js.native
-  def xmlToObject(xml: js.Any, callback: js.Function2[/* err */ nodeLib.Error, /* result */ js.Any, scala.Unit]): js.Any = js.native
+  def xmlToObject(xml: js.Any, callback: js.Function2[/* err */ stdLib.Error, /* result */ js.Any, scala.Unit]): js.Any = js.native
 }
 

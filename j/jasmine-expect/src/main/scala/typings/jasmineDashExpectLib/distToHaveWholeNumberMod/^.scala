@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jasmine-expect/dist/toHaveWholeNumber", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val toHaveWholeNumber: jasmineDashExpectLib.distToHaveWholeNumberMod.ToHaveWholeNumber = js.native
+  val toHaveWholeNumber: ToHaveWholeNumber = js.native
 }
 

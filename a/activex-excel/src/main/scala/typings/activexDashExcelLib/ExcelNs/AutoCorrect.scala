@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.AutoCorrect")
 @js.native
 class AutoCorrect protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var AutoExpandListRange: scala.Boolean = js.native
   var AutoFillFormulasInLists: scala.Boolean = js.native
   var CapitalizeNamesOfDays: scala.Boolean = js.native
@@ -24,6 +24,6 @@ class AutoCorrect protected () extends js.Object {
   def AddReplacement(What: java.lang.String, Replacement: java.lang.String): java.lang.String = js.native
   /** @returns The string to be replaced */
   def DeleteReplacement(What: java.lang.String): java.lang.String = js.native
-  def ReplacementList(Index: scala.Double): activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  def ReplacementList(Index: scala.Double): stdLib.SafeArray[java.lang.String] = js.native
 }
 

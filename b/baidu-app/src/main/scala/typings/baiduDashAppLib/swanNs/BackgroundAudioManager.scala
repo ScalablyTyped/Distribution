@@ -58,19 +58,19 @@ object BackgroundAudioManager {
     buffered: scala.Double,
     currentTime: scala.Double,
     duration: scala.Double,
-    onCanplay: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
-    onEnded: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
-    onError: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
-    onPause: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
-    onPlay: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
-    onStop: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
-    onTimeUpdate: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
-    onWaiting: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
-    pause: js.Function0[scala.Unit],
+    onCanplay: js.Function1[/* res */ ErrCodeResponse, scala.Unit] => scala.Unit,
+    onEnded: js.Function1[/* res */ ErrCodeResponse, scala.Unit] => scala.Unit,
+    onError: js.Function1[/* res */ ErrCodeResponse, scala.Unit] => scala.Unit,
+    onPause: js.Function1[/* res */ ErrCodeResponse, scala.Unit] => scala.Unit,
+    onPlay: js.Function1[/* res */ ErrCodeResponse, scala.Unit] => scala.Unit,
+    onStop: js.Function1[/* res */ ErrCodeResponse, scala.Unit] => scala.Unit,
+    onTimeUpdate: js.Function1[/* res */ ErrCodeResponse, scala.Unit] => scala.Unit,
+    onWaiting: js.Function1[/* res */ ErrCodeResponse, scala.Unit] => scala.Unit,
+    pause: () => scala.Unit,
     paused: scala.Boolean,
-    play: js.Function0[scala.Unit],
-    seek: js.Function1[scala.Double, scala.Unit],
-    stop: js.Function0[scala.Unit],
+    play: () => scala.Unit,
+    seek: scala.Double => scala.Unit,
+    stop: () => scala.Unit,
     coverImgUrl: java.lang.String = null,
     epname: java.lang.String = null,
     singer: java.lang.String = null,
@@ -78,7 +78,7 @@ object BackgroundAudioManager {
     startTime: scala.Int | scala.Double = null,
     title: java.lang.String = null
   ): BackgroundAudioManager = {
-    val __obj = js.Dynamic.literal(buffered = buffered, currentTime = currentTime, duration = duration, onCanplay = onCanplay, onEnded = onEnded, onError = onError, onPause = onPause, onPlay = onPlay, onStop = onStop, onTimeUpdate = onTimeUpdate, onWaiting = onWaiting, pause = pause, paused = paused, play = play, seek = seek, stop = stop)
+    val __obj = js.Dynamic.literal(buffered = buffered, currentTime = currentTime, duration = duration, onCanplay = js.Any.fromFunction1(onCanplay), onEnded = js.Any.fromFunction1(onEnded), onError = js.Any.fromFunction1(onError), onPause = js.Any.fromFunction1(onPause), onPlay = js.Any.fromFunction1(onPlay), onStop = js.Any.fromFunction1(onStop), onTimeUpdate = js.Any.fromFunction1(onTimeUpdate), onWaiting = js.Any.fromFunction1(onWaiting), pause = js.Any.fromFunction0(pause), paused = paused, play = js.Any.fromFunction0(play), seek = js.Any.fromFunction1(seek), stop = js.Any.fromFunction0(stop))
     if (coverImgUrl != null) __obj.updateDynamic("coverImgUrl")(coverImgUrl)
     if (epname != null) __obj.updateDynamic("epname")(epname)
     if (singer != null) __obj.updateDynamic("singer")(singer)

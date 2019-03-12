@@ -12,8 +12,8 @@ trait XMarkingAccess extends js.Object {
 
 object XMarkingAccess {
   @scala.inline
-  def apply(invalidateMarkings: js.Function1[scala.Double, scala.Unit]): XMarkingAccess = {
-    val __obj = js.Dynamic.literal(invalidateMarkings = invalidateMarkings)
+  def apply(invalidateMarkings: scala.Double => scala.Unit): XMarkingAccess = {
+    val __obj = js.Dynamic.literal(invalidateMarkings = js.Any.fromFunction1(invalidateMarkings))
   
     __obj.asInstanceOf[XMarkingAccess]
   }

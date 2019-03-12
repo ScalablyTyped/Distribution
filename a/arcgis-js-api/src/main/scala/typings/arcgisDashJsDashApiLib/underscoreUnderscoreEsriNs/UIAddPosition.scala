@@ -25,12 +25,12 @@ object UIAddPosition {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     index: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     position: java.lang.String = null
   ): UIAddPosition = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, index = index, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), index = index, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (position != null) __obj.updateDynamic("position")(position)
     __obj.asInstanceOf[UIAddPosition]
   }

@@ -110,7 +110,7 @@ object Options {
     optimize: js.UndefOr[scala.Boolean] = js.undefined,
     quantifiers: js.UndefOr[scala.Boolean] = js.undefined,
     rangeLimit: scala.Int | scala.Double = null,
-    transform: js.Function1[/* str */ java.lang.String, java.lang.String] = null,
+    transform: /* str */ java.lang.String => java.lang.String = null,
     unescape: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
@@ -119,7 +119,7 @@ object Options {
     if (!js.isUndefined(optimize)) __obj.updateDynamic("optimize")(optimize)
     if (!js.isUndefined(quantifiers)) __obj.updateDynamic("quantifiers")(quantifiers)
     if (rangeLimit != null) __obj.updateDynamic("rangeLimit")(rangeLimit.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     if (!js.isUndefined(unescape)) __obj.updateDynamic("unescape")(unescape)
     __obj.asInstanceOf[Options]
   }

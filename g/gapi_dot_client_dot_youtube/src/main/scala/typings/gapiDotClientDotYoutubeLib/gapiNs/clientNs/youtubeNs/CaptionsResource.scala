@@ -27,28 +27,13 @@ trait CaptionsResource extends js.Object {
 object CaptionsResource {
   @scala.inline
   def apply(
-    delete: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    download: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFieldsId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Caption]
-    ],
-    list: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CaptionListResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotYoutubeLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Caption]
-    ]
+    delete: gapiDotClientDotYoutubeLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    download: gapiDotClientDotYoutubeLib.Anon_AltFieldsId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    insert: gapiDotClientDotYoutubeLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Caption],
+    list: gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKey => gapiDotClientLib.gapiNs.clientNs.Request[CaptionListResponse],
+    update: gapiDotClientDotYoutubeLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Caption]
   ): CaptionsResource = {
-    val __obj = js.Dynamic.literal(delete = delete, download = download, insert = insert, list = list, update = update)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), download = js.Any.fromFunction1(download), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[CaptionsResource]
   }

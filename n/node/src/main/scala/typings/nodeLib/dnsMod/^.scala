@@ -58,16 +58,16 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def lookup(
     hostname: java.lang.String,
-    options: nodeLib.dnsMod.LookupAllOptions,
+    options: LookupAllOptions,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* addresses */ js.Array[nodeLib.dnsMod.LookupAddress], 
+      /* addresses */ js.Array[LookupAddress], 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def lookup(
     hostname: java.lang.String,
-    options: nodeLib.dnsMod.LookupOneOptions,
+    options: LookupOneOptions,
     callback: js.Function3[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* address */ java.lang.String, 
@@ -77,10 +77,10 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def lookup(
     hostname: java.lang.String,
-    options: nodeLib.dnsMod.LookupOptions,
+    options: LookupOptions,
     callback: js.Function3[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* address */ java.lang.String | js.Array[nodeLib.dnsMod.LookupAddress], 
+      /* address */ java.lang.String | js.Array[LookupAddress], 
       /* family */ scala.Double, 
       scala.Unit
     ]
@@ -108,7 +108,7 @@ object ^ extends js.Object {
     rrtype: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* addresses */ js.Array[java.lang.String] | js.Array[nodeLib.dnsMod.MxRecord] | js.Array[nodeLib.dnsMod.NaptrRecord] | nodeLib.dnsMod.SoaRecord | js.Array[nodeLib.dnsMod.SrvRecord] | js.Array[js.Array[java.lang.String]] | js.Array[nodeLib.dnsMod.AnyRecord], 
+      /* addresses */ js.Array[java.lang.String] | js.Array[MxRecord] | js.Array[NaptrRecord] | SoaRecord | js.Array[SrvRecord] | js.Array[js.Array[java.lang.String]] | js.Array[AnyRecord], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -122,19 +122,19 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def resolve4(
     hostname: java.lang.String,
-    options: nodeLib.dnsMod.ResolveOptions,
+    options: ResolveOptions,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* addresses */ js.Array[java.lang.String] | js.Array[nodeLib.dnsMod.RecordWithTtl], 
+      /* addresses */ js.Array[java.lang.String] | js.Array[RecordWithTtl], 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def resolve4(
     hostname: java.lang.String,
-    options: nodeLib.dnsMod.ResolveWithTtlOptions,
+    options: ResolveWithTtlOptions,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* addresses */ js.Array[nodeLib.dnsMod.RecordWithTtl], 
+      /* addresses */ js.Array[RecordWithTtl], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -148,19 +148,19 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def resolve6(
     hostname: java.lang.String,
-    options: nodeLib.dnsMod.ResolveOptions,
+    options: ResolveOptions,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* addresses */ js.Array[java.lang.String] | js.Array[nodeLib.dnsMod.RecordWithTtl], 
+      /* addresses */ js.Array[java.lang.String] | js.Array[RecordWithTtl], 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def resolve6(
     hostname: java.lang.String,
-    options: nodeLib.dnsMod.ResolveWithTtlOptions,
+    options: ResolveWithTtlOptions,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* addresses */ js.Array[nodeLib.dnsMod.RecordWithTtl], 
+      /* addresses */ js.Array[RecordWithTtl], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -168,7 +168,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* addresses */ js.Array[nodeLib.dnsMod.AnyRecord], 
+      /* addresses */ js.Array[AnyRecord], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -184,7 +184,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* addresses */ js.Array[nodeLib.dnsMod.MxRecord], 
+      /* addresses */ js.Array[MxRecord], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -192,7 +192,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* addresses */ js.Array[nodeLib.dnsMod.NaptrRecord], 
+      /* addresses */ js.Array[NaptrRecord], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -214,17 +214,13 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def resolveSoa(
     hostname: java.lang.String,
-    callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* address */ nodeLib.dnsMod.SoaRecord, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* address */ SoaRecord, scala.Unit]
   ): scala.Unit = js.native
   def resolveSrv(
     hostname: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* addresses */ js.Array[nodeLib.dnsMod.SrvRecord], 
+      /* addresses */ js.Array[SrvRecord], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -262,7 +258,7 @@ object ^ extends js.Object {
     rrtype: nodeLib.nodeLibStrings.ANY,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* addresses */ js.Array[nodeLib.dnsMod.AnyRecord], 
+      /* addresses */ js.Array[AnyRecord], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -282,7 +278,7 @@ object ^ extends js.Object {
     rrtype: nodeLib.nodeLibStrings.MX,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* addresses */ js.Array[nodeLib.dnsMod.MxRecord], 
+      /* addresses */ js.Array[MxRecord], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -292,7 +288,7 @@ object ^ extends js.Object {
     rrtype: nodeLib.nodeLibStrings.NAPTR,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* addresses */ js.Array[nodeLib.dnsMod.NaptrRecord], 
+      /* addresses */ js.Array[NaptrRecord], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -320,11 +316,7 @@ object ^ extends js.Object {
   def resolve_SOA(
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.SOA,
-    callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* addresses */ nodeLib.dnsMod.SoaRecord, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* addresses */ SoaRecord, scala.Unit]
   ): scala.Unit = js.native
   @JSName("resolve")
   def resolve_SRV(
@@ -332,7 +324,7 @@ object ^ extends js.Object {
     rrtype: nodeLib.nodeLibStrings.SRV,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* addresses */ js.Array[nodeLib.dnsMod.SrvRecord], 
+      /* addresses */ js.Array[SrvRecord], 
       scala.Unit
     ]
   ): scala.Unit = js.native

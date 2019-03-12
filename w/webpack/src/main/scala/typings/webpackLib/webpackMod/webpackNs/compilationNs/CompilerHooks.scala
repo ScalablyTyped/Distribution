@@ -21,7 +21,7 @@ trait CompilerHooks extends js.Object {
   var emit: tapableLib.tapableMod.AsyncSeriesHook[Compilation, _, _]
   var entryOption: tapableLib.tapableMod.SyncBailHook[_, _, _, _]
   var environment: tapableLib.tapableMod.SyncHook[_, _, _]
-  var failed: tapableLib.tapableMod.SyncHook[nodeLib.Error, _, _]
+  var failed: tapableLib.tapableMod.SyncHook[stdLib.Error, _, _]
   var invalid: tapableLib.tapableMod.SyncHook[java.lang.String, stdLib.Date, _]
   var make: tapableLib.tapableMod.AsyncParallelHook[Compilation, _, _]
   var normalModuleFactory: tapableLib.tapableMod.SyncHook[NormalModuleFactory, _, _]
@@ -50,7 +50,7 @@ object CompilerHooks {
     emit: tapableLib.tapableMod.AsyncSeriesHook[Compilation, _, _],
     entryOption: tapableLib.tapableMod.SyncBailHook[_, _, _, _],
     environment: tapableLib.tapableMod.SyncHook[_, _, _],
-    failed: tapableLib.tapableMod.SyncHook[nodeLib.Error, _, _],
+    failed: tapableLib.tapableMod.SyncHook[stdLib.Error, _, _],
     invalid: tapableLib.tapableMod.SyncHook[java.lang.String, stdLib.Date, _],
     make: tapableLib.tapableMod.AsyncParallelHook[Compilation, _, _],
     normalModuleFactory: tapableLib.tapableMod.SyncHook[NormalModuleFactory, _, _],

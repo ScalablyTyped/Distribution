@@ -34,7 +34,7 @@ object HighChartsNGConfig {
   @scala.inline
   def apply(
     options: highchartsLib.highchartsMod.HighchartsNs.Options,
-    func: js.Function1[/* chart */ highchartsLib.highchartsMod.HighchartsNs.ChartObject, scala.Unit] = null,
+    func: /* chart */ highchartsLib.highchartsMod.HighchartsNs.ChartObject => scala.Unit = null,
     loading: scala.Boolean | java.lang.String = null,
     noData: java.lang.String = null,
     series: js.Array[highchartsLib.highchartsMod.HighchartsNs.IndividualSeriesOptions] = null,
@@ -44,7 +44,7 @@ object HighChartsNGConfig {
     xAxis: highchartsDashNgLib.Anon_CurrentMax = null
   ): HighChartsNGConfig = {
     val __obj = js.Dynamic.literal(options = options)
-    if (func != null) __obj.updateDynamic("func")(func)
+    if (func != null) __obj.updateDynamic("func")(js.Any.fromFunction1(func))
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (noData != null) __obj.updateDynamic("noData")(noData)
     if (series != null) __obj.updateDynamic("series")(series)

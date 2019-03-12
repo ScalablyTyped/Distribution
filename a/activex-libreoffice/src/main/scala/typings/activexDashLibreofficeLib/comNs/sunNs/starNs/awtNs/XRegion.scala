@@ -11,7 +11,7 @@ trait XRegion
   /** returns the bounding box of the shape. */
   val Bounds: Rectangle
   /** returns all rectangles which are making up this region. */
-  val Rectangles: activexDashInteropLib.SafeArray[Rectangle]
+  val Rectangles: stdLib.SafeArray[Rectangle]
   /** makes this region an empty region. */
   def clear(): scala.Unit
   /** removes the area of the specified rectangle from this region. */
@@ -21,7 +21,7 @@ trait XRegion
   /** returns the bounding box of the shape. */
   def getBounds(): Rectangle
   /** returns all rectangles which are making up this region. */
-  def getRectangles(): activexDashInteropLib.SafeArray[Rectangle]
+  def getRectangles(): stdLib.SafeArray[Rectangle]
   /** intersects the specified rectangle with the current region. */
   def intersectRectangle(Region: Rectangle): scala.Unit
   /** intersects the specified region with the current region. */
@@ -42,24 +42,24 @@ object XRegion {
   @scala.inline
   def apply(
     Bounds: Rectangle,
-    Rectangles: activexDashInteropLib.SafeArray[Rectangle],
-    acquire: js.Function0[scala.Unit],
-    clear: js.Function0[scala.Unit],
-    excludeRectangle: js.Function1[Rectangle, scala.Unit],
-    excludeRegion: js.Function1[XRegion, scala.Unit],
-    getBounds: js.Function0[Rectangle],
-    getRectangles: js.Function0[activexDashInteropLib.SafeArray[Rectangle]],
-    intersectRectangle: js.Function1[Rectangle, scala.Unit],
-    intersectRegion: js.Function1[XRegion, scala.Unit],
-    move: js.Function2[scala.Double, scala.Double, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    unionRectangle: js.Function1[Rectangle, scala.Unit],
-    unionRegion: js.Function1[XRegion, scala.Unit],
-    xOrRectangle: js.Function1[Rectangle, scala.Unit],
-    xOrRegion: js.Function1[XRegion, scala.Unit]
+    Rectangles: stdLib.SafeArray[Rectangle],
+    acquire: () => scala.Unit,
+    clear: () => scala.Unit,
+    excludeRectangle: Rectangle => scala.Unit,
+    excludeRegion: XRegion => scala.Unit,
+    getBounds: () => Rectangle,
+    getRectangles: () => stdLib.SafeArray[Rectangle],
+    intersectRectangle: Rectangle => scala.Unit,
+    intersectRegion: XRegion => scala.Unit,
+    move: (scala.Double, scala.Double) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    unionRectangle: Rectangle => scala.Unit,
+    unionRegion: XRegion => scala.Unit,
+    xOrRectangle: Rectangle => scala.Unit,
+    xOrRegion: XRegion => scala.Unit
   ): XRegion = {
-    val __obj = js.Dynamic.literal(Bounds = Bounds, Rectangles = Rectangles, acquire = acquire, clear = clear, excludeRectangle = excludeRectangle, excludeRegion = excludeRegion, getBounds = getBounds, getRectangles = getRectangles, intersectRectangle = intersectRectangle, intersectRegion = intersectRegion, move = move, queryInterface = queryInterface, release = release, unionRectangle = unionRectangle, unionRegion = unionRegion, xOrRectangle = xOrRectangle, xOrRegion = xOrRegion)
+    val __obj = js.Dynamic.literal(Bounds = Bounds, Rectangles = Rectangles, acquire = js.Any.fromFunction0(acquire), clear = js.Any.fromFunction0(clear), excludeRectangle = js.Any.fromFunction1(excludeRectangle), excludeRegion = js.Any.fromFunction1(excludeRegion), getBounds = js.Any.fromFunction0(getBounds), getRectangles = js.Any.fromFunction0(getRectangles), intersectRectangle = js.Any.fromFunction1(intersectRectangle), intersectRegion = js.Any.fromFunction1(intersectRegion), move = js.Any.fromFunction2(move), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), unionRectangle = js.Any.fromFunction1(unionRectangle), unionRegion = js.Any.fromFunction1(unionRegion), xOrRectangle = js.Any.fromFunction1(xOrRectangle), xOrRegion = js.Any.fromFunction1(xOrRegion))
   
     __obj.asInstanceOf[XRegion]
   }

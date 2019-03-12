@@ -18,7 +18,7 @@ object ButtonOptions {
   @scala.inline
   def apply(
     badge: java.lang.String = null,
-    click: js.Function1[/* e */ ButtonClickEvent, scala.Unit] = null,
+    click: /* e */ ButtonClickEvent => scala.Unit = null,
     clickOn: java.lang.String = null,
     enable: js.UndefOr[scala.Boolean] = js.undefined,
     icon: java.lang.String = null,
@@ -26,7 +26,7 @@ object ButtonOptions {
   ): ButtonOptions = {
     val __obj = js.Dynamic.literal()
     if (badge != null) __obj.updateDynamic("badge")(badge)
-    if (click != null) __obj.updateDynamic("click")(click)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
     if (clickOn != null) __obj.updateDynamic("clickOn")(clickOn)
     if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
     if (icon != null) __obj.updateDynamic("icon")(icon)

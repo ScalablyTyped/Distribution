@@ -56,11 +56,11 @@ object MultiSliderProps {
     markerStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
-    onToggleOne: js.Function0[scala.Unit] = null,
-    onToggleTwo: js.Function0[scala.Unit] = null,
-    onValuesChange: js.Function1[/* values */ js.Array[scala.Double], scala.Unit] = null,
-    onValuesChangeFinish: js.Function1[/* values */ js.Array[scala.Double], scala.Unit] = null,
-    onValuesChangeStart: js.Function0[scala.Unit] = null,
+    onToggleOne: () => scala.Unit = null,
+    onToggleTwo: () => scala.Unit = null,
+    onValuesChange: /* values */ js.Array[scala.Double] => scala.Unit = null,
+    onValuesChangeFinish: /* values */ js.Array[scala.Double] => scala.Unit = null,
+    onValuesChangeStart: () => scala.Unit = null,
     optionsArray: js.Array[scala.Double] = null,
     pressedMarkerStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
     selectedStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
@@ -89,11 +89,11 @@ object MultiSliderProps {
     if (markerStyle != null) __obj.updateDynamic("markerStyle")(markerStyle)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (onToggleOne != null) __obj.updateDynamic("onToggleOne")(onToggleOne)
-    if (onToggleTwo != null) __obj.updateDynamic("onToggleTwo")(onToggleTwo)
-    if (onValuesChange != null) __obj.updateDynamic("onValuesChange")(onValuesChange)
-    if (onValuesChangeFinish != null) __obj.updateDynamic("onValuesChangeFinish")(onValuesChangeFinish)
-    if (onValuesChangeStart != null) __obj.updateDynamic("onValuesChangeStart")(onValuesChangeStart)
+    if (onToggleOne != null) __obj.updateDynamic("onToggleOne")(js.Any.fromFunction0(onToggleOne))
+    if (onToggleTwo != null) __obj.updateDynamic("onToggleTwo")(js.Any.fromFunction0(onToggleTwo))
+    if (onValuesChange != null) __obj.updateDynamic("onValuesChange")(js.Any.fromFunction1(onValuesChange))
+    if (onValuesChangeFinish != null) __obj.updateDynamic("onValuesChangeFinish")(js.Any.fromFunction1(onValuesChangeFinish))
+    if (onValuesChangeStart != null) __obj.updateDynamic("onValuesChangeStart")(js.Any.fromFunction0(onValuesChangeStart))
     if (optionsArray != null) __obj.updateDynamic("optionsArray")(optionsArray)
     if (pressedMarkerStyle != null) __obj.updateDynamic("pressedMarkerStyle")(pressedMarkerStyle)
     if (selectedStyle != null) __obj.updateDynamic("selectedStyle")(selectedStyle)

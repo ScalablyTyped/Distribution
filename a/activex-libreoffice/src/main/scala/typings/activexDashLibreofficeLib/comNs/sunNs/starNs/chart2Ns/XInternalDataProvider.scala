@@ -17,7 +17,7 @@ trait XInternalDataProvider
   def deleteComplexCategoryLevel(nLevel: scala.Double): scala.Unit
   def deleteDataPointForAllSequences(nAtIndex: scala.Double): scala.Unit
   def deleteSequence(nAtIndex: scala.Double): scala.Unit
-  def getDataByRangeRepresentation(aRange: java.lang.String): activexDashInteropLib.SafeArray[_]
+  def getDataByRangeRepresentation(aRange: java.lang.String): stdLib.SafeArray[_]
   def hasDataByRangeRepresentation(aRange: java.lang.String): scala.Boolean
   /**
     * insert an additional sequence for categories nLevel>=1; categories at level 0 are always present and cannot be inserted or deleted
@@ -41,49 +41,30 @@ object XInternalDataProvider {
   @scala.inline
   def apply(
     RangeSelection: activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.XRangeSelection,
-    acquire: js.Function0[scala.Unit],
-    appendSequence: js.Function0[scala.Unit],
-    createDataSequenceByRangeRepresentation: js.Function1[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSequence
-    ],
-    createDataSequenceByRangeRepresentationPossible: js.Function1[java.lang.String, scala.Boolean],
-    createDataSequenceByValueArray: js.Function2[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSequence
-    ],
-    createDataSource: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource
-    ],
-    createDataSourcePossible: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Boolean
-    ],
-    deleteComplexCategoryLevel: js.Function1[scala.Double, scala.Unit],
-    deleteDataPointForAllSequences: js.Function1[scala.Double, scala.Unit],
-    deleteSequence: js.Function1[scala.Double, scala.Unit],
-    detectArguments: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource, 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    getDataByRangeRepresentation: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[_]],
-    getRangeSelection: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.XRangeSelection],
-    hasDataByRangeRepresentation: js.Function1[java.lang.String, scala.Boolean],
-    insertComplexCategoryLevel: js.Function1[scala.Double, scala.Unit],
-    insertDataPointForAllSequences: js.Function1[scala.Double, scala.Unit],
-    insertSequence: js.Function1[scala.Double, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerDataSequenceForChanges: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSequence, 
-      scala.Unit
-    ],
-    release: js.Function0[scala.Unit],
-    setDataByRangeRepresentation: js.Function2[java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    swapDataPointWithNextOneForAllSequences: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    appendSequence: () => scala.Unit,
+    createDataSequenceByRangeRepresentation: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSequence,
+    createDataSequenceByRangeRepresentationPossible: java.lang.String => scala.Boolean,
+    createDataSequenceByValueArray: (java.lang.String, java.lang.String) => activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSequence,
+    createDataSource: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] => activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource,
+    createDataSourcePossible: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] => scala.Boolean,
+    deleteComplexCategoryLevel: scala.Double => scala.Unit,
+    deleteDataPointForAllSequences: scala.Double => scala.Unit,
+    deleteSequence: scala.Double => scala.Unit,
+    detectArguments: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    getDataByRangeRepresentation: java.lang.String => stdLib.SafeArray[_],
+    getRangeSelection: () => activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.XRangeSelection,
+    hasDataByRangeRepresentation: java.lang.String => scala.Boolean,
+    insertComplexCategoryLevel: scala.Double => scala.Unit,
+    insertDataPointForAllSequences: scala.Double => scala.Unit,
+    insertSequence: scala.Double => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerDataSequenceForChanges: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSequence => scala.Unit,
+    release: () => scala.Unit,
+    setDataByRangeRepresentation: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]) => scala.Unit,
+    swapDataPointWithNextOneForAllSequences: scala.Double => scala.Unit
   ): XInternalDataProvider = {
-    val __obj = js.Dynamic.literal(RangeSelection = RangeSelection, acquire = acquire, appendSequence = appendSequence, createDataSequenceByRangeRepresentation = createDataSequenceByRangeRepresentation, createDataSequenceByRangeRepresentationPossible = createDataSequenceByRangeRepresentationPossible, createDataSequenceByValueArray = createDataSequenceByValueArray, createDataSource = createDataSource, createDataSourcePossible = createDataSourcePossible, deleteComplexCategoryLevel = deleteComplexCategoryLevel, deleteDataPointForAllSequences = deleteDataPointForAllSequences, deleteSequence = deleteSequence, detectArguments = detectArguments, getDataByRangeRepresentation = getDataByRangeRepresentation, getRangeSelection = getRangeSelection, hasDataByRangeRepresentation = hasDataByRangeRepresentation, insertComplexCategoryLevel = insertComplexCategoryLevel, insertDataPointForAllSequences = insertDataPointForAllSequences, insertSequence = insertSequence, queryInterface = queryInterface, registerDataSequenceForChanges = registerDataSequenceForChanges, release = release, setDataByRangeRepresentation = setDataByRangeRepresentation, swapDataPointWithNextOneForAllSequences = swapDataPointWithNextOneForAllSequences)
+    val __obj = js.Dynamic.literal(RangeSelection = RangeSelection, acquire = js.Any.fromFunction0(acquire), appendSequence = js.Any.fromFunction0(appendSequence), createDataSequenceByRangeRepresentation = js.Any.fromFunction1(createDataSequenceByRangeRepresentation), createDataSequenceByRangeRepresentationPossible = js.Any.fromFunction1(createDataSequenceByRangeRepresentationPossible), createDataSequenceByValueArray = js.Any.fromFunction2(createDataSequenceByValueArray), createDataSource = js.Any.fromFunction1(createDataSource), createDataSourcePossible = js.Any.fromFunction1(createDataSourcePossible), deleteComplexCategoryLevel = js.Any.fromFunction1(deleteComplexCategoryLevel), deleteDataPointForAllSequences = js.Any.fromFunction1(deleteDataPointForAllSequences), deleteSequence = js.Any.fromFunction1(deleteSequence), detectArguments = js.Any.fromFunction1(detectArguments), getDataByRangeRepresentation = js.Any.fromFunction1(getDataByRangeRepresentation), getRangeSelection = js.Any.fromFunction0(getRangeSelection), hasDataByRangeRepresentation = js.Any.fromFunction1(hasDataByRangeRepresentation), insertComplexCategoryLevel = js.Any.fromFunction1(insertComplexCategoryLevel), insertDataPointForAllSequences = js.Any.fromFunction1(insertDataPointForAllSequences), insertSequence = js.Any.fromFunction1(insertSequence), queryInterface = js.Any.fromFunction1(queryInterface), registerDataSequenceForChanges = js.Any.fromFunction1(registerDataSequenceForChanges), release = js.Any.fromFunction0(release), setDataByRangeRepresentation = js.Any.fromFunction2(setDataByRangeRepresentation), swapDataPointWithNextOneForAllSequences = js.Any.fromFunction1(swapDataPointWithNextOneForAllSequences))
   
     __obj.asInstanceOf[XInternalDataProvider]
   }

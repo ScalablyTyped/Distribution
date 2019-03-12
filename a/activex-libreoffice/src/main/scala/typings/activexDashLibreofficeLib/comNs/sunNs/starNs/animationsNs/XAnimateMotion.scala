@@ -38,7 +38,7 @@ object XAnimateMotion {
     FillDefault: scala.Double,
     Formula: java.lang.String,
     From: js.Any,
-    KeyTimes: activexDashInteropLib.SafeArray[scala.Double],
+    KeyTimes: stdLib.SafeArray[scala.Double],
     Origin: js.Any,
     Parent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     Path: js.Any,
@@ -48,19 +48,19 @@ object XAnimateMotion {
     RestartDefault: scala.Double,
     SubItem: scala.Double,
     Target: js.Any,
-    TimeFilter: activexDashInteropLib.SafeArray[TimeFilterPair],
+    TimeFilter: stdLib.SafeArray[TimeFilterPair],
     To: js.Any,
     Type: scala.Double,
-    UserData: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    UserData: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
     ValueType: scala.Double,
-    Values: activexDashInteropLib.SafeArray[_],
-    acquire: js.Function0[scala.Unit],
-    getParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
+    Values: stdLib.SafeArray[_],
+    acquire: () => scala.Unit,
+    getParent: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setParent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => scala.Unit
   ): XAnimateMotion = {
-    val __obj = js.Dynamic.literal(Acceleration = Acceleration, Accumulate = Accumulate, Additive = Additive, AttributeName = AttributeName, AutoReverse = AutoReverse, Begin = Begin, By = By, CalcMode = CalcMode, Decelerate = Decelerate, Duration = Duration, End = End, EndSync = EndSync, Fill = Fill, FillDefault = FillDefault, Formula = Formula, From = From, KeyTimes = KeyTimes, Origin = Origin, Parent = Parent, Path = Path, RepeatCount = RepeatCount, RepeatDuration = RepeatDuration, Restart = Restart, RestartDefault = RestartDefault, SubItem = SubItem, Target = Target, TimeFilter = TimeFilter, To = To, Type = Type, UserData = UserData, ValueType = ValueType, Values = Values, acquire = acquire, getParent = getParent, queryInterface = queryInterface, release = release, setParent = setParent)
+    val __obj = js.Dynamic.literal(Acceleration = Acceleration, Accumulate = Accumulate, Additive = Additive, AttributeName = AttributeName, AutoReverse = AutoReverse, Begin = Begin, By = By, CalcMode = CalcMode, Decelerate = Decelerate, Duration = Duration, End = End, EndSync = EndSync, Fill = Fill, FillDefault = FillDefault, Formula = Formula, From = From, KeyTimes = KeyTimes, Origin = Origin, Parent = Parent, Path = Path, RepeatCount = RepeatCount, RepeatDuration = RepeatDuration, Restart = Restart, RestartDefault = RestartDefault, SubItem = SubItem, Target = Target, TimeFilter = TimeFilter, To = To, Type = Type, UserData = UserData, ValueType = ValueType, Values = Values, acquire = js.Any.fromFunction0(acquire), getParent = js.Any.fromFunction0(getParent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setParent = js.Any.fromFunction1(setParent))
   
     __obj.asInstanceOf[XAnimateMotion]
   }

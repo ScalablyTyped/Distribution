@@ -15,13 +15,9 @@ import scala.scalajs.js.annotation._
   * @param callback callback that is called with each key when the timeout is passed
   */
 class TimeMap[K, V] ()
-  extends nodeLib.Map[K, V] {
+  extends stdLib.Map[K, V] {
   def this(timeout: scala.Double) = this()
   def this(timeout: scala.Double, callback: js.Function1[/* key */ K, scala.Unit]) = this()
-  /**
-    * Deletes the given key
-    */
-  def delete(key: K): scala.Boolean = js.native
   /**
     * Iterates over the map and calls the callback for each element
     */

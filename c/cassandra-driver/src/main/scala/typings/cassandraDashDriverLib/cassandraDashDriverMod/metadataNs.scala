@@ -32,7 +32,7 @@ object metadataNs extends js.Object {
   
   trait DataCollection extends js.Object {
     var bloomFilterFalsePositiveChance: scala.Double
-    var caching: caching
+    var caching: cassandraDashDriverLib.cassandraDashDriverMod.metadataNs.caching
     var clusterKeys: js.Array[cassandraDashDriverLib.Anon_C]
     var clusteringOrder: js.Array[java.lang.String]
     var columns: js.Array[ColumnInfo]
@@ -130,8 +130,8 @@ object metadataNs extends js.Object {
     def getTable(keyspaceName: java.lang.String, name: java.lang.String): js.Promise[TableMetadata] = js.native
      // TODO
     def getTable(keyspaceName: java.lang.String, name: java.lang.String, callback: MetadataCallback[TableMetadata]): scala.Unit = js.native
-    def getTokenRanges(): nodeLib.Set[cassandraDashDriverLib.cassandraDashDriverMod.tokenNs.TokenRange] = js.native
-    def getTokenRangesForHost(keyspaceName: java.lang.String, host: cassandraDashDriverLib.cassandraDashDriverMod.Host): nodeLib.Set[cassandraDashDriverLib.cassandraDashDriverMod.tokenNs.TokenRange] | scala.Null = js.native
+    def getTokenRanges(): stdLib.Set[cassandraDashDriverLib.cassandraDashDriverMod.tokenNs.TokenRange] = js.native
+    def getTokenRangesForHost(keyspaceName: java.lang.String, host: cassandraDashDriverLib.cassandraDashDriverMod.Host): stdLib.Set[cassandraDashDriverLib.cassandraDashDriverMod.tokenNs.TokenRange] | scala.Null = js.native
     def getTrace(traceId: cassandraDashDriverLib.cassandraDashDriverMod.typesNs.Uuid): js.Promise[QueryTrace] = js.native
     def getTrace(
       traceId: cassandraDashDriverLib.cassandraDashDriverMod.typesNs.Uuid,

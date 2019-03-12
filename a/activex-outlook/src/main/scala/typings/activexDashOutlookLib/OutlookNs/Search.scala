@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.Search")
 @js.native
 class Search protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   val Filter: java.lang.String = js.native
   val IsSynchronous: scala.Boolean = js.native
   var `Outlook.Search_typekey`: Search = js.native
   val Parent: js.Any = js.native
-  val Results: Results = js.native
+  val Results: activexDashOutlookLib.OutlookNs.Results = js.native
   val Scope: java.lang.String = js.native
   val SearchSubFolders: scala.Boolean = js.native
   val Session: NameSpace = js.native

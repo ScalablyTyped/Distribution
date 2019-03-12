@@ -71,7 +71,7 @@ object IColumnDef {
     pinnable: js.UndefOr[scala.Boolean] = js.undefined,
     pinned: js.UndefOr[scala.Boolean] = js.undefined,
     resizable: js.UndefOr[scala.Boolean] = js.undefined,
-    sortFn: js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = null,
+    sortFn: (/* a */ js.Any, /* b */ js.Any) => scala.Double = null,
     sortable: js.UndefOr[scala.Boolean] = js.undefined,
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     width: js.Any = null
@@ -93,7 +93,7 @@ object IColumnDef {
     if (!js.isUndefined(pinnable)) __obj.updateDynamic("pinnable")(pinnable)
     if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned)
     if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
-    if (sortFn != null) __obj.updateDynamic("sortFn")(sortFn)
+    if (sortFn != null) __obj.updateDynamic("sortFn")(js.Any.fromFunction2(sortFn))
     if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
     if (width != null) __obj.updateDynamic("width")(width)

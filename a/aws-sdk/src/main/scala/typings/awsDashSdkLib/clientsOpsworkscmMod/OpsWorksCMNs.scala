@@ -27,15 +27,15 @@ object OpsWorksCMNs extends js.Object {
     /**
       * Engine attributes used for associating the node.   Attributes accepted in a AssociateNode request for Chef     CHEF_ORGANIZATION: The Chef organization with which the node is associated. By default only one organization named default can exist.     CHEF_NODE_PUBLIC_KEY: A PEM-formatted public key. This key is required for the chef-client agent to access the Chef API.     Attributes accepted in a AssociateNode request for Puppet     PUPPET_NODE_CSR: A PEM-formatted certificate-signing request (CSR) that is created by the node.   
       */
-    var EngineAttributes: EngineAttributes
+    var EngineAttributes: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.EngineAttributes
     /**
       * The name of the node. 
       */
-    var NodeName: NodeName
+    var NodeName: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.NodeName
     /**
       * The name of the server with which to associate the node. 
       */
-    var ServerName: ServerName
+    var ServerName: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.ServerName
   }
   
   trait AssociateNodeResponse extends js.Object {
@@ -159,7 +159,7 @@ object OpsWorksCMNs extends js.Object {
     /**
       * The name of the server that you want to back up. 
       */
-    var ServerName: ServerName
+    var ServerName: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.ServerName
   }
   
   trait CreateBackupResponse extends js.Object {
@@ -205,7 +205,7 @@ object OpsWorksCMNs extends js.Object {
     /**
       *  The ARN of the instance profile that your Amazon EC2 instances use. Although the AWS OpsWorks console typically creates the instance profile for you, if you are using API commands instead, run the service-role-creation.yaml AWS CloudFormation template, located at https://s3.amazonaws.com/opsworks-cm-us-east-1-prod-default-assets/misc/opsworks-cm-roles.yaml. This template creates a CloudFormation stack that includes the instance profile you need. 
       */
-    var InstanceProfileArn: InstanceProfileArn
+    var InstanceProfileArn: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.InstanceProfileArn
     /**
       *  The Amazon EC2 instance type to use. For example, m4.large. Recommended instance types include t2.medium and greater, m4.*, or c4.xlarge and greater. 
       */
@@ -229,11 +229,11 @@ object OpsWorksCMNs extends js.Object {
     /**
       *  The name of the server. The server name must be unique within your AWS account, within each region. Server names must start with a letter; then letters, numbers, or hyphens (-) are allowed, up to a maximum of 40 characters. 
       */
-    var ServerName: ServerName
+    var ServerName: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.ServerName
     /**
       *  The service role that the AWS OpsWorks CM service backend uses to work with your account. Although the AWS OpsWorks management console typically creates the service role for you, if you are using the AWS CLI or API commands, run the service-role-creation.yaml AWS CloudFormation template, located at https://s3.amazonaws.com/opsworks-cm-us-east-1-prod-default-assets/misc/opsworks-cm-roles.yaml. This template creates a CloudFormation stack that includes the service role and instance profile that you need. 
       */
-    var ServiceRoleArn: ServiceRoleArn
+    var ServiceRoleArn: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.ServiceRoleArn
     /**
       *  The IDs of subnets in which to launch the server EC2 instance.   Amazon EC2-Classic customers: This field is required. All servers must run within a VPC. The VPC must have "Auto Assign Public IP" enabled.   EC2-VPC customers: This field is optional. If you do not specify subnet IDs, your EC2 instances are created in a default subnet that is selected by Amazon EC2. If you specify subnet IDs, the VPC must have "Auto Assign Public IP" enabled.  For more information about supported Amazon EC2 platforms, see Supported Platforms.
       */
@@ -251,7 +251,7 @@ object OpsWorksCMNs extends js.Object {
     /**
       * The ID of the backup to delete. Run the DescribeBackups command to get a list of backup IDs. Backup IDs are in the format ServerName-yyyyMMddHHmmssSSS. 
       */
-    var BackupId: BackupId
+    var BackupId: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.BackupId
   }
   
   trait DeleteBackupResponse extends js.Object
@@ -260,7 +260,7 @@ object OpsWorksCMNs extends js.Object {
     /**
       * The ID of the server to delete.
       */
-    var ServerName: ServerName
+    var ServerName: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.ServerName
   }
   
   trait DeleteServerResponse extends js.Object
@@ -316,7 +316,7 @@ object OpsWorksCMNs extends js.Object {
     /**
       * The name of the server for which you want to view events.
       */
-    var ServerName: ServerName
+    var ServerName: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.ServerName
   }
   
   trait DescribeEventsResponse extends js.Object {
@@ -334,11 +334,11 @@ object OpsWorksCMNs extends js.Object {
     /**
       * The token returned in either the AssociateNodeResponse or the DisassociateNodeResponse. 
       */
-    var NodeAssociationStatusToken: NodeAssociationStatusToken
+    var NodeAssociationStatusToken: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.NodeAssociationStatusToken
     /**
       * The name of the server from which to disassociate the node. 
       */
-    var ServerName: ServerName
+    var ServerName: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.ServerName
   }
   
   trait DescribeNodeAssociationStatusResponse extends js.Object {
@@ -386,11 +386,11 @@ object OpsWorksCMNs extends js.Object {
     /**
       * The name of the client node. 
       */
-    var NodeName: NodeName
+    var NodeName: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.NodeName
     /**
       * The name of the server from which to disassociate the node. 
       */
-    var ServerName: ServerName
+    var ServerName: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.ServerName
   }
   
   trait DisassociateNodeResponse extends js.Object {
@@ -423,7 +423,7 @@ object OpsWorksCMNs extends js.Object {
     /**
       * The name of the server from which you are exporting the attribute.
       */
-    var ServerName: ServerName
+    var ServerName: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.ServerName
   }
   
   trait ExportServerEngineAttributeResponse extends js.Object {
@@ -441,7 +441,7 @@ object OpsWorksCMNs extends js.Object {
     /**
       *  The ID of the backup that you want to use to restore a server. 
       */
-    var BackupId: BackupId
+    var BackupId: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.BackupId
     /**
       *  The type of the instance to create. Valid values must be specified in the following format: ^([cm][34]|t2).* For example, m4.large. Valid values are t2.medium, m4.large, and m4.2xlarge. If you do not specify this parameter, RestoreServer uses the instance type from the specified backup. 
       */
@@ -453,7 +453,7 @@ object OpsWorksCMNs extends js.Object {
     /**
       *  The name of the server that you want to restore. 
       */
-    var ServerName: ServerName
+    var ServerName: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.ServerName
   }
   
   trait RestoreServerResponse extends js.Object
@@ -580,7 +580,7 @@ object OpsWorksCMNs extends js.Object {
     /**
       * The name of the server on which to run maintenance. 
       */
-    var ServerName: ServerName
+    var ServerName: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.ServerName
   }
   
   trait StartMaintenanceResponse extends js.Object {
@@ -1001,7 +1001,7 @@ object OpsWorksCMNs extends js.Object {
     /**
       * The name of the engine attribute to update. 
       */
-    var AttributeName: AttributeName
+    var AttributeName: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.AttributeName
     /**
       * The value to set for the attribute. 
       */
@@ -1009,7 +1009,7 @@ object OpsWorksCMNs extends js.Object {
     /**
       * The name of the server to update. 
       */
-    var ServerName: ServerName
+    var ServerName: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.ServerName
   }
   
   trait UpdateServerEngineAttributesResponse extends js.Object {
@@ -1033,7 +1033,7 @@ object OpsWorksCMNs extends js.Object {
     /**
       * The name of the server to update. 
       */
-    var ServerName: ServerName
+    var ServerName: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.ServerName
   }
   
   trait UpdateServerResponse extends js.Object {

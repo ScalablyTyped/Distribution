@@ -68,23 +68,19 @@ object RemoteOptions {
   @scala.inline
   def apply[T](
     url: java.lang.String,
-    filter: js.Function1[/* response */ T, T] = null,
-    prepare: js.Function2[
-      /* query */ java.lang.String, 
-      /* settings */ jqueryLib.JQueryAjaxSettings, 
-      jqueryLib.JQueryAjaxSettings
-    ] = null,
+    filter: /* response */ T => T = null,
+    prepare: (/* query */ java.lang.String, /* settings */ jqueryLib.JQueryAjaxSettings) => jqueryLib.JQueryAjaxSettings = null,
     rateLimitWait: scala.Int | scala.Double = null,
     rateLimitby: java.lang.String = null,
-    transform: js.Function1[/* response */ T, T] = null,
+    transform: /* response */ T => T = null,
     wildcard: java.lang.String = null
   ): RemoteOptions[T] = {
     val __obj = js.Dynamic.literal(url = url)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (prepare != null) __obj.updateDynamic("prepare")(prepare)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
+    if (prepare != null) __obj.updateDynamic("prepare")(js.Any.fromFunction2(prepare))
     if (rateLimitWait != null) __obj.updateDynamic("rateLimitWait")(rateLimitWait.asInstanceOf[js.Any])
     if (rateLimitby != null) __obj.updateDynamic("rateLimitby")(rateLimitby)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     if (wildcard != null) __obj.updateDynamic("wildcard")(wildcard)
     __obj.asInstanceOf[RemoteOptions[T]]
   }

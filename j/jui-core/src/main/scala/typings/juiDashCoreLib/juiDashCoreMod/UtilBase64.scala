@@ -12,11 +12,8 @@ trait UtilBase64 extends js.Object {
 
 object UtilBase64 {
   @scala.inline
-  def apply(
-    decode: js.Function1[java.lang.String, java.lang.String],
-    encode: js.Function1[java.lang.String, java.lang.String]
-  ): UtilBase64 = {
-    val __obj = js.Dynamic.literal(decode = decode, encode = encode)
+  def apply(decode: java.lang.String => java.lang.String, encode: java.lang.String => java.lang.String): UtilBase64 = {
+    val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
   
     __obj.asInstanceOf[UtilBase64]
   }

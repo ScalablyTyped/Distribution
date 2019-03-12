@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.SortField")
 @js.native
 class SortField protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Creator: XlCreator = js.native
   var CustomOrder: js.Any = js.native
   var DataOption: XlSortDataOption = js.native

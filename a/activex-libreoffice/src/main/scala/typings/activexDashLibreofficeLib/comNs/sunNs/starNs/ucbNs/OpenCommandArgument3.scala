@@ -17,18 +17,18 @@ trait OpenCommandArgument3 extends OpenCommandArgument2 {
     *
     * WebDav e.g. uses "KeepAlive" to enable/disable the respective http feature.
     */
-  var OpeningFlags: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
+  var OpeningFlags: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
 }
 
 object OpenCommandArgument3 {
   @scala.inline
   def apply(
     Mode: scala.Double,
-    OpeningFlags: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    OpeningFlags: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
     Priority: scala.Double,
-    Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
+    Properties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
     Sink: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
-    SortingInfo: activexDashInteropLib.SafeArray[NumberedSortingInfo]
+    SortingInfo: stdLib.SafeArray[NumberedSortingInfo]
   ): OpenCommandArgument3 = {
     val __obj = js.Dynamic.literal(Mode = Mode, OpeningFlags = OpeningFlags, Priority = Priority, Properties = Properties, Sink = Sink, SortingInfo = SortingInfo)
   

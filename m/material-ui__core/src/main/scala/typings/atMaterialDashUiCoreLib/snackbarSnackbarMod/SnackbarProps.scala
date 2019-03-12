@@ -6,16 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<react.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, 'classes' | never> ]: react.react.HTMLAttributes<react.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, @material-ui/core.@material-ui/core/Snackbar/Snackbar.SnackbarClassKey, never>) */ trait SnackbarProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, @material-ui/core.@material-ui/core/Snackbar/Snackbar.SnackbarClassKey, never>) */ trait SnackbarProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SnackbarClassKey] {
   var ClickAwayListenerProps: js.UndefOr[
     stdLib.Partial[
-      atMaterialDashUiCoreLib.clickawaylistenerClickAwayListenerMod.ClickAwayListenerProps
+      atMaterialDashUiCoreLib.clickAwayListenerClickAwayListenerMod.ClickAwayListenerProps
     ]
   ] = js.undefined
   var ContentProps: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.snackbarcontentSnackbarContentMod.SnackbarContentProps]
+    stdLib.Partial[atMaterialDashUiCoreLib.snackbarContentSnackbarContentMod.SnackbarContentProps]
   ] = js.undefined
   var TransitionComponent: js.UndefOr[
     reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps]
@@ -47,9 +47,9 @@ object SnackbarProps {
   def apply(
     open: scala.Boolean,
     ClickAwayListenerProps: stdLib.Partial[
-      atMaterialDashUiCoreLib.clickawaylistenerClickAwayListenerMod.ClickAwayListenerProps
+      atMaterialDashUiCoreLib.clickAwayListenerClickAwayListenerMod.ClickAwayListenerProps
     ] = null,
-    ContentProps: stdLib.Partial[atMaterialDashUiCoreLib.snackbarcontentSnackbarContentMod.SnackbarContentProps] = null,
+    ContentProps: stdLib.Partial[atMaterialDashUiCoreLib.snackbarContentSnackbarContentMod.SnackbarContentProps] = null,
     TransitionComponent: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = null,
     TransitionProps: atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps = null,
     action: reactLib.reactMod.ReactNs.ReactNode = null,
@@ -60,11 +60,7 @@ object SnackbarProps {
     disableWindowBlurListener: js.UndefOr[scala.Boolean] = js.undefined,
     innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
     message: reactLib.reactMod.ReactNs.ReactNode = null,
-    onClose: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], 
-      /* reason */ java.lang.String, 
-      scala.Unit
-    ] = null,
+    onClose: (/* event */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], /* reason */ java.lang.String) => scala.Unit = null,
     onMouseEnter: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
     onMouseLeave: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
     resumeHideDuration: scala.Int | scala.Double = null,
@@ -84,7 +80,7 @@ object SnackbarProps {
     if (!js.isUndefined(disableWindowBlurListener)) __obj.updateDynamic("disableWindowBlurListener")(disableWindowBlurListener)
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2(onClose))
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
     if (resumeHideDuration != null) __obj.updateDynamic("resumeHideDuration")(resumeHideDuration.asInstanceOf[js.Any])

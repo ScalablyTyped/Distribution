@@ -13,29 +13,24 @@ object SpecPickerBlade {
   @scala.inline
   def apply(
     baseLocator: msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator,
-    click: js.Function0[qLib.qMod.QNs.Promise[scala.Unit]],
-    clickCommand: js.Function1[java.lang.String, qLib.qMod.QNs.Promise[Blade]],
-    getAttribute: js.Function1[java.lang.String, qLib.qMod.QNs.Promise[java.lang.String]],
-    getLocator: js.Function0[msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator],
-    getText: js.Function0[qLib.qMod.QNs.Promise[java.lang.String]],
-    getTiles: js.Function0[
-      qLib.qMod.QNs.Promise[
-        js.Array[msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.PartsNs.Tile]
-      ]
+    click: () => qLib.qMod.QNs.Promise[scala.Unit],
+    clickCommand: java.lang.String => qLib.qMod.QNs.Promise[Blade],
+    getAttribute: java.lang.String => qLib.qMod.QNs.Promise[java.lang.String],
+    getLocator: () => msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator,
+    getText: () => qLib.qMod.QNs.Promise[java.lang.String],
+    getTiles: () => qLib.qMod.QNs.Promise[
+      js.Array[msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.PartsNs.Tile]
     ],
-    isDisplayed: js.Function0[qLib.qMod.QNs.Promise[scala.Boolean]],
-    isElementPresent: js.Function1[
-      msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator, 
-      qLib.qMod.QNs.Promise[scala.Boolean]
-    ],
-    isPresent: js.Function0[qLib.qMod.QNs.Promise[scala.Boolean]],
+    isDisplayed: () => qLib.qMod.QNs.Promise[scala.Boolean],
+    isElementPresent: msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator => qLib.qMod.QNs.Promise[scala.Boolean],
+    isPresent: () => qLib.qMod.QNs.Promise[scala.Boolean],
     parentLocator: msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator,
-    pickSpec: js.Function1[java.lang.String, qLib.qMod.QNs.Promise[scala.Unit]],
-    rightClick: js.Function0[qLib.qMod.QNs.Promise[scala.Unit]],
-    sendKeys: js.Function1[/* repeated */ java.lang.String, qLib.qMod.QNs.Promise[scala.Unit]],
+    pickSpec: java.lang.String => qLib.qMod.QNs.Promise[scala.Unit],
+    rightClick: () => qLib.qMod.QNs.Promise[scala.Unit],
+    sendKeys: /* repeated */ java.lang.String => qLib.qMod.QNs.Promise[scala.Unit],
     title: java.lang.String
   ): SpecPickerBlade = {
-    val __obj = js.Dynamic.literal(baseLocator = baseLocator, click = click, clickCommand = clickCommand, getAttribute = getAttribute, getLocator = getLocator, getText = getText, getTiles = getTiles, isDisplayed = isDisplayed, isElementPresent = isElementPresent, isPresent = isPresent, parentLocator = parentLocator, pickSpec = pickSpec, rightClick = rightClick, sendKeys = sendKeys, title = title)
+    val __obj = js.Dynamic.literal(baseLocator = baseLocator, click = js.Any.fromFunction0(click), clickCommand = js.Any.fromFunction1(clickCommand), getAttribute = js.Any.fromFunction1(getAttribute), getLocator = js.Any.fromFunction0(getLocator), getText = js.Any.fromFunction0(getText), getTiles = js.Any.fromFunction0(getTiles), isDisplayed = js.Any.fromFunction0(isDisplayed), isElementPresent = js.Any.fromFunction1(isElementPresent), isPresent = js.Any.fromFunction0(isPresent), parentLocator = parentLocator, pickSpec = js.Any.fromFunction1(pickSpec), rightClick = js.Any.fromFunction0(rightClick), sendKeys = js.Any.fromFunction1(sendKeys), title = title)
   
     __obj.asInstanceOf[SpecPickerBlade]
   }

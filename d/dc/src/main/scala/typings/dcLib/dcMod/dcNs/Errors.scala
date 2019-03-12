@@ -12,11 +12,8 @@ trait Errors extends js.Object {
 
 object Errors {
   @scala.inline
-  def apply(
-    Exception: js.Function1[java.lang.String, scala.Unit],
-    InvalidStateException: js.Function1[java.lang.String, scala.Unit]
-  ): Errors = {
-    val __obj = js.Dynamic.literal(Exception = Exception, InvalidStateException = InvalidStateException)
+  def apply(Exception: java.lang.String => scala.Unit, InvalidStateException: java.lang.String => scala.Unit): Errors = {
+    val __obj = js.Dynamic.literal(Exception = js.Any.fromFunction1(Exception), InvalidStateException = js.Any.fromFunction1(InvalidStateException))
   
     __obj.asInstanceOf[Errors]
   }

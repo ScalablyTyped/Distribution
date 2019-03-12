@@ -26,11 +26,11 @@ object LabelClassLabelExpressionInfo {
   def apply(
     constructor: js.Function,
     expression: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     value: java.lang.String = null
   ): LabelClassLabelExpressionInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor, expression = expression, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, expression = expression, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[LabelClassLabelExpressionInfo]
   }

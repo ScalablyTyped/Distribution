@@ -15,12 +15,12 @@ trait Statement[T] extends js.Object {
 object Statement {
   @scala.inline
   def apply[T](
-    bind: js.Function2[java.lang.String, js.Any, scala.Unit],
-    execute: js.Function0[Cursor[T]],
-    getBatchSize: js.Function0[scala.Double],
-    setBatchSize: js.Function1[scala.Double, scala.Unit]
+    bind: (java.lang.String, js.Any) => scala.Unit,
+    execute: () => Cursor[T],
+    getBatchSize: () => scala.Double,
+    setBatchSize: scala.Double => scala.Unit
   ): Statement[T] = {
-    val __obj = js.Dynamic.literal(bind = bind, execute = execute, getBatchSize = getBatchSize, setBatchSize = setBatchSize)
+    val __obj = js.Dynamic.literal(bind = js.Any.fromFunction2(bind), execute = js.Any.fromFunction0(execute), getBatchSize = js.Any.fromFunction0(getBatchSize), setBatchSize = js.Any.fromFunction1(setBatchSize))
   
     __obj.asInstanceOf[Statement[T]]
   }

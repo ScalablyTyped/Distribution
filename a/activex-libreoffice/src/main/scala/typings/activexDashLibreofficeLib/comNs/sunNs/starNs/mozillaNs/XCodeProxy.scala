@@ -30,14 +30,14 @@ object XCodeProxy {
   def apply(
     ProductType: MozillaProductType,
     ProfileName: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getProductType: js.Function0[MozillaProductType],
-    getProfileName: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    run: js.Function0[scala.Double]
+    acquire: () => scala.Unit,
+    getProductType: () => MozillaProductType,
+    getProfileName: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    run: () => scala.Double
   ): XCodeProxy = {
-    val __obj = js.Dynamic.literal(ProductType = ProductType, ProfileName = ProfileName, acquire = acquire, getProductType = getProductType, getProfileName = getProfileName, queryInterface = queryInterface, release = release, run = run)
+    val __obj = js.Dynamic.literal(ProductType = ProductType, ProfileName = ProfileName, acquire = js.Any.fromFunction0(acquire), getProductType = js.Any.fromFunction0(getProductType), getProfileName = js.Any.fromFunction0(getProfileName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), run = js.Any.fromFunction0(run))
   
     __obj.asInstanceOf[XCodeProxy]
   }

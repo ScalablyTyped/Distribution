@@ -24,7 +24,7 @@ object i18nOptions {
     hideMissing: js.UndefOr[scala.Boolean] = js.undefined,
     hostUrl: java.lang.String = null,
     open: java.lang.String = null,
-    purify: js.Function0[scala.Unit] = null,
+    purify: () => scala.Unit = null,
     sameLocaleOnServerConnection: js.UndefOr[scala.Boolean] = js.undefined,
     translationsHeaders: nodeLib.httpMod.OutgoingHttpHeaders = null
   ): i18nOptions = {
@@ -34,7 +34,7 @@ object i18nOptions {
     if (!js.isUndefined(hideMissing)) __obj.updateDynamic("hideMissing")(hideMissing)
     if (hostUrl != null) __obj.updateDynamic("hostUrl")(hostUrl)
     if (open != null) __obj.updateDynamic("open")(open)
-    if (purify != null) __obj.updateDynamic("purify")(purify)
+    if (purify != null) __obj.updateDynamic("purify")(js.Any.fromFunction0(purify))
     if (!js.isUndefined(sameLocaleOnServerConnection)) __obj.updateDynamic("sameLocaleOnServerConnection")(sameLocaleOnServerConnection)
     if (translationsHeaders != null) __obj.updateDynamic("translationsHeaders")(translationsHeaders)
     __obj.asInstanceOf[i18nOptions]

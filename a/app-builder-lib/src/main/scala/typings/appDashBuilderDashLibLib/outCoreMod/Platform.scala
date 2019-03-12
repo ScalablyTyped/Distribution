@@ -12,21 +12,21 @@ class Platform protected () extends js.Object {
   var buildConfigurationKey: java.lang.String = js.native
   var name: java.lang.String = js.native
   var nodeName: nodeLib.NodeJSNs.Platform = js.native
-  def createTarget(): nodeLib.Map[
+  def createTarget(): stdLib.Map[
     Platform, 
-    nodeLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
+    stdLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
   ] = js.native
-  def createTarget(archs: builderDashUtilLib.outArchMod.Arch*): nodeLib.Map[
+  def createTarget(archs: builderDashUtilLib.outArchMod.Arch*): stdLib.Map[
     Platform, 
-    nodeLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
+    stdLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
   ] = js.native
-  def createTarget(`type`: java.lang.String, archs: builderDashUtilLib.outArchMod.Arch*): nodeLib.Map[
+  def createTarget(`type`: java.lang.String, archs: builderDashUtilLib.outArchMod.Arch*): stdLib.Map[
     Platform, 
-    nodeLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
+    stdLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
   ] = js.native
-  def createTarget(`type`: js.Array[java.lang.String], archs: builderDashUtilLib.outArchMod.Arch*): nodeLib.Map[
+  def createTarget(`type`: js.Array[java.lang.String], archs: builderDashUtilLib.outArchMod.Arch*): stdLib.Map[
     Platform, 
-    nodeLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
+    stdLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
   ] = js.native
 }
 

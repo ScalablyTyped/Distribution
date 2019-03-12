@@ -49,13 +49,13 @@ object ^ extends js.Object {
   def joinPoint(doc: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[_], pos: scala.Double): js.UndefOr[scala.Double | scala.Null] = js.native
   def joinPoint(doc: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[_], pos: scala.Double, dir: scala.Double): js.UndefOr[scala.Double | scala.Null] = js.native
   def liftTarget(range: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeRange[_]): js.UndefOr[scala.Double | scala.Null] = js.native
-  def replaceStep[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](doc: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S], from: scala.Double): js.UndefOr[prosemirrorDashTransformLib.prosemirrorDashTransformMod.Step[S] | scala.Null] = js.native
-  def replaceStep[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](doc: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S], from: scala.Double, to: scala.Double): js.UndefOr[prosemirrorDashTransformLib.prosemirrorDashTransformMod.Step[S] | scala.Null] = js.native
+  def replaceStep[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](doc: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S], from: scala.Double): js.UndefOr[Step[S] | scala.Null] = js.native
+  def replaceStep[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](doc: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S], from: scala.Double, to: scala.Double): js.UndefOr[Step[S] | scala.Null] = js.native
   def replaceStep[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     doc: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S],
     from: scala.Double,
     to: scala.Double,
     slice: prosemirrorDashModelLib.prosemirrorDashModelMod.Slice[S]
-  ): js.UndefOr[prosemirrorDashTransformLib.prosemirrorDashTransformMod.Step[S] | scala.Null] = js.native
+  ): js.UndefOr[Step[S] | scala.Null] = js.native
 }
 

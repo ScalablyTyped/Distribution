@@ -15,15 +15,15 @@ trait CompletionObserver[T] extends PartialObserver[T] {
 object CompletionObserver {
   @scala.inline
   def apply[T](
-    complete: js.Function0[scala.Unit],
+    complete: () => scala.Unit,
     closed: js.UndefOr[scala.Boolean] = js.undefined,
-    error: js.Function1[/* err */ js.Any, scala.Unit] = null,
-    next: js.Function1[/* value */ T, scala.Unit] = null
+    error: /* err */ js.Any => scala.Unit = null,
+    next: /* value */ T => scala.Unit = null
   ): CompletionObserver[T] = {
-    val __obj = js.Dynamic.literal(complete = complete)
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (next != null) __obj.updateDynamic("next")(next)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
+    if (next != null) __obj.updateDynamic("next")(js.Any.fromFunction1(next))
     __obj.asInstanceOf[CompletionObserver[T]]
   }
 }

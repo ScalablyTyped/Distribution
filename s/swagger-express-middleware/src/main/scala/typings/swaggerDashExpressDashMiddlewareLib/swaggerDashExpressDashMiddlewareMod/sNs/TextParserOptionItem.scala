@@ -50,20 +50,14 @@ object TextParserOptionItem {
     inflate: js.UndefOr[scala.Boolean] = js.undefined,
     limit: java.lang.String | scala.Double = null,
     `type`: (js.Function1[/* req */ expressLib.expressMod.eNs.Request, java.lang.String]) | java.lang.String = null,
-    verify: js.Function4[
-      /* req */ expressLib.expressMod.eNs.Request, 
-      /* res */ Response, 
-      /* buf */ nodeLib.Buffer, 
-      /* encoding */ java.lang.String, 
-      scala.Unit
-    ] = null
+    verify: (/* req */ expressLib.expressMod.eNs.Request, /* res */ Response, /* buf */ nodeLib.Buffer, /* encoding */ java.lang.String) => scala.Unit = null
   ): TextParserOptionItem = {
     val __obj = js.Dynamic.literal()
     if (defaultCharset != null) __obj.updateDynamic("defaultCharset")(defaultCharset)
     if (!js.isUndefined(inflate)) __obj.updateDynamic("inflate")(inflate)
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (verify != null) __obj.updateDynamic("verify")(verify)
+    if (verify != null) __obj.updateDynamic("verify")(js.Any.fromFunction4(verify))
     __obj.asInstanceOf[TextParserOptionItem]
   }
 }

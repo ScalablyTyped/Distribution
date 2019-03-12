@@ -35,28 +35,16 @@ trait XNumberFormatTypes
 object XNumberFormatTypes {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getFormatForLocale: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double
-    ],
-    getFormatIndex: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double
-    ],
-    getStandardFormat: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
-      scala.Double
-    ],
-    getStandardIndex: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double],
-    isTypeCompatible: js.Function2[scala.Double, scala.Double, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getFormatForLocale: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => scala.Double,
+    getFormatIndex: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => scala.Double,
+    getStandardFormat: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale) => scala.Double,
+    getStandardIndex: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale => scala.Double,
+    isTypeCompatible: (scala.Double, scala.Double) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XNumberFormatTypes = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getFormatForLocale = getFormatForLocale, getFormatIndex = getFormatIndex, getStandardFormat = getStandardFormat, getStandardIndex = getStandardIndex, isTypeCompatible = isTypeCompatible, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getFormatForLocale = js.Any.fromFunction2(getFormatForLocale), getFormatIndex = js.Any.fromFunction2(getFormatIndex), getStandardFormat = js.Any.fromFunction2(getStandardFormat), getStandardIndex = js.Any.fromFunction1(getStandardIndex), isTypeCompatible = js.Any.fromFunction2(isTypeCompatible), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XNumberFormatTypes]
   }

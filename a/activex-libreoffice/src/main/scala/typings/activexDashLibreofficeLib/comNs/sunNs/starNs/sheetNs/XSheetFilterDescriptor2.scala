@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation._
 trait XSheetFilterDescriptor2
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** returns the collection of filter fields. */
-  var FilterFields2: activexDashInteropLib.SafeArray[TableFilterField2]
+  var FilterFields2: stdLib.SafeArray[TableFilterField2]
   /** returns the collection of filter fields. */
-  def getFilterFields2(): activexDashInteropLib.SafeArray[TableFilterField2]
+  def getFilterFields2(): stdLib.SafeArray[TableFilterField2]
   /** sets a new collection of filter fields. */
   def setFilterFields2(aFilterFields: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TableFilterField2]): scala.Unit
 }
@@ -26,14 +26,14 @@ trait XSheetFilterDescriptor2
 object XSheetFilterDescriptor2 {
   @scala.inline
   def apply(
-    FilterFields2: activexDashInteropLib.SafeArray[TableFilterField2],
-    acquire: js.Function0[scala.Unit],
-    getFilterFields2: js.Function0[activexDashInteropLib.SafeArray[TableFilterField2]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setFilterFields2: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TableFilterField2], scala.Unit]
+    FilterFields2: stdLib.SafeArray[TableFilterField2],
+    acquire: () => scala.Unit,
+    getFilterFields2: () => stdLib.SafeArray[TableFilterField2],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setFilterFields2: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TableFilterField2] => scala.Unit
   ): XSheetFilterDescriptor2 = {
-    val __obj = js.Dynamic.literal(FilterFields2 = FilterFields2, acquire = acquire, getFilterFields2 = getFilterFields2, queryInterface = queryInterface, release = release, setFilterFields2 = setFilterFields2)
+    val __obj = js.Dynamic.literal(FilterFields2 = FilterFields2, acquire = js.Any.fromFunction0(acquire), getFilterFields2 = js.Any.fromFunction0(getFilterFields2), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setFilterFields2 = js.Any.fromFunction1(setFilterFields2))
   
     __obj.asInstanceOf[XSheetFilterDescriptor2]
   }

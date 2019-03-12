@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql-extensions", "GraphQLExtensionStack")
 @js.native
 class GraphQLExtensionStack[TContext] protected () extends js.Object {
-  def this(extensions: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[GraphQLExtension[TContext]]) = this()
+  def this(extensions: js.Array[GraphQLExtension[TContext]]) = this()
   var extensions: js.Any = js.native
   var fieldResolver: js.UndefOr[
     graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]
@@ -24,7 +24,7 @@ class GraphQLExtensionStack[TContext] protected () extends js.Object {
     args: org.scalablytyped.runtime.StringDictionary[js.Any],
     context: TContext,
     info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo
-  ): js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ js.UndefOr[js.Any], scala.Unit] = js.native
+  ): js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ js.UndefOr[js.Any], scala.Unit] = js.native
   def willSendResponse(o: graphqlDashExtensionsLib.Anon_ContextGraphqlResponse[TContext]): graphqlDashExtensionsLib.Anon_ContextGraphqlResponse[TContext] = js.native
 }
 

@@ -44,7 +44,7 @@ object functionsNs extends js.Object {
   }
   
   trait HttpsError
-    extends nodeLib.Error {
+    extends stdLib.Error {
     /**
       * A standard error code that will be returned to the client. This also
       * determines the HTTP status code of the response, as defined in code.proto.

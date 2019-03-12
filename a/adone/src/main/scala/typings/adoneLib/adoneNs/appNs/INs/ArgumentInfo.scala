@@ -41,7 +41,7 @@ object ArgumentInfo {
     nargs: scala.Double | adoneLib.adoneLibStrings.`+` | adoneLib.adoneLibStrings.`*` | adoneLib.adoneLibStrings.`?` = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: ArgumentType | js.Array[ArgumentType] = null,
-    verify: js.Function2[/* args */ js.Any, /* opts */ js.Any, scala.Boolean] = null
+    verify: (/* args */ js.Any, /* opts */ js.Any) => scala.Boolean = null
   ): ArgumentInfo = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
@@ -55,7 +55,7 @@ object ArgumentInfo {
     if (nargs != null) __obj.updateDynamic("nargs")(nargs.asInstanceOf[js.Any])
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (verify != null) __obj.updateDynamic("verify")(verify)
+    if (verify != null) __obj.updateDynamic("verify")(js.Any.fromFunction2(verify))
     __obj.asInstanceOf[ArgumentInfo]
   }
 }

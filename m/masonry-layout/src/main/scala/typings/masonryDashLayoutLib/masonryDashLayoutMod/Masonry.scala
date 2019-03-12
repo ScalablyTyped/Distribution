@@ -41,40 +41,40 @@ trait Masonry extends js.Object {
 object Masonry {
   @scala.inline
   def apply(
-    addItems: js.Function1[/* elements */ js.Array[_], scala.Unit] = null,
-    appended: js.Function1[/* elements */ js.Array[_], scala.Unit] = null,
-    data: js.Function1[/* element */ stdLib.Element, Masonry] = null,
-    destroy: js.Function0[scala.Unit] = null,
-    getItemElements: js.Function0[js.Array[_]] = null,
-    layout: js.Function0[scala.Unit] = null,
-    layoutItems: js.Function2[/* items */ js.Array[_], /* isStill */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    addItems: /* elements */ js.Array[_] => scala.Unit = null,
+    appended: /* elements */ js.Array[_] => scala.Unit = null,
+    data: /* element */ stdLib.Element => Masonry = null,
+    destroy: () => scala.Unit = null,
+    getItemElements: () => js.Array[_] = null,
+    layout: () => scala.Unit = null,
+    layoutItems: (/* items */ js.Array[_], /* isStill */ js.UndefOr[scala.Boolean]) => scala.Unit = null,
     masonry: js.Function0[scala.Unit] with (js.Function2[/* eventName */ java.lang.String, /* listener */ js.Any, scala.Unit]) = null,
-    off: js.Function2[/* eventName */ java.lang.String, /* listener */ js.Any, scala.Unit] = null,
-    on: js.Function2[/* eventName */ java.lang.String, /* listener */ js.Any, scala.Unit] = null,
-    once: js.Function2[/* eventName */ java.lang.String, /* listener */ js.Any, scala.Unit] = null,
-    prepended: js.Function1[/* elements */ js.Array[_], scala.Unit] = null,
-    reloadItems: js.Function0[scala.Unit] = null,
-    remove: js.Function1[/* elements */ js.Array[_], scala.Unit] = null,
-    stamp: js.Function1[/* elements */ js.Array[_], scala.Unit] = null,
-    unstamp: js.Function1[/* elements */ js.Array[_], scala.Unit] = null
+    off: (/* eventName */ java.lang.String, /* listener */ js.Any) => scala.Unit = null,
+    on: (/* eventName */ java.lang.String, /* listener */ js.Any) => scala.Unit = null,
+    once: (/* eventName */ java.lang.String, /* listener */ js.Any) => scala.Unit = null,
+    prepended: /* elements */ js.Array[_] => scala.Unit = null,
+    reloadItems: () => scala.Unit = null,
+    remove: /* elements */ js.Array[_] => scala.Unit = null,
+    stamp: /* elements */ js.Array[_] => scala.Unit = null,
+    unstamp: /* elements */ js.Array[_] => scala.Unit = null
   ): Masonry = {
     val __obj = js.Dynamic.literal()
-    if (addItems != null) __obj.updateDynamic("addItems")(addItems)
-    if (appended != null) __obj.updateDynamic("appended")(appended)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (getItemElements != null) __obj.updateDynamic("getItemElements")(getItemElements)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (layoutItems != null) __obj.updateDynamic("layoutItems")(layoutItems)
+    if (addItems != null) __obj.updateDynamic("addItems")(js.Any.fromFunction1(addItems))
+    if (appended != null) __obj.updateDynamic("appended")(js.Any.fromFunction1(appended))
+    if (data != null) __obj.updateDynamic("data")(js.Any.fromFunction1(data))
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
+    if (getItemElements != null) __obj.updateDynamic("getItemElements")(js.Any.fromFunction0(getItemElements))
+    if (layout != null) __obj.updateDynamic("layout")(js.Any.fromFunction0(layout))
+    if (layoutItems != null) __obj.updateDynamic("layoutItems")(js.Any.fromFunction2(layoutItems))
     if (masonry != null) __obj.updateDynamic("masonry")(masonry)
-    if (off != null) __obj.updateDynamic("off")(off)
-    if (on != null) __obj.updateDynamic("on")(on)
-    if (once != null) __obj.updateDynamic("once")(once)
-    if (prepended != null) __obj.updateDynamic("prepended")(prepended)
-    if (reloadItems != null) __obj.updateDynamic("reloadItems")(reloadItems)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (stamp != null) __obj.updateDynamic("stamp")(stamp)
-    if (unstamp != null) __obj.updateDynamic("unstamp")(unstamp)
+    if (off != null) __obj.updateDynamic("off")(js.Any.fromFunction2(off))
+    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction2(on))
+    if (once != null) __obj.updateDynamic("once")(js.Any.fromFunction2(once))
+    if (prepended != null) __obj.updateDynamic("prepended")(js.Any.fromFunction1(prepended))
+    if (reloadItems != null) __obj.updateDynamic("reloadItems")(js.Any.fromFunction0(reloadItems))
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
+    if (stamp != null) __obj.updateDynamic("stamp")(js.Any.fromFunction1(stamp))
+    if (unstamp != null) __obj.updateDynamic("unstamp")(js.Any.fromFunction1(unstamp))
     __obj.asInstanceOf[Masonry]
   }
 }

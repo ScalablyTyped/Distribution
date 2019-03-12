@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 trait XTabControllerModel
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** returns the control models. */
-  var ControlModels: activexDashInteropLib.SafeArray[XControlModel]
+  var ControlModels: stdLib.SafeArray[XControlModel]
   /** returns whether the control models are grouped together. */
   var GroupControl: scala.Boolean
   /** returns the number of control model groups. */
   val GroupCount: scala.Double
   /** returns the control models. */
-  def getControlModels(): activexDashInteropLib.SafeArray[XControlModel]
+  def getControlModels(): stdLib.SafeArray[XControlModel]
   /** returns a control model group. */
   def getGroup(
     nGroup: scala.Double,
@@ -45,35 +45,22 @@ trait XTabControllerModel
 object XTabControllerModel {
   @scala.inline
   def apply(
-    ControlModels: activexDashInteropLib.SafeArray[XControlModel],
+    ControlModels: stdLib.SafeArray[XControlModel],
     GroupControl: scala.Boolean,
     GroupCount: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getControlModels: js.Function0[activexDashInteropLib.SafeArray[XControlModel]],
-    getGroup: js.Function3[
-      scala.Double, 
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XControlModel]], 
-      js.Array[java.lang.String], 
-      scala.Unit
-    ],
-    getGroupByName: js.Function2[
-      java.lang.String, 
-      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XControlModel]], 
-      scala.Unit
-    ],
-    getGroupControl: js.Function0[scala.Boolean],
-    getGroupCount: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setControlModels: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XControlModel], scala.Unit],
-    setGroup: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XControlModel], 
-      java.lang.String, 
-      scala.Unit
-    ],
-    setGroupControl: js.Function1[scala.Boolean, scala.Unit]
+    acquire: () => scala.Unit,
+    getControlModels: () => stdLib.SafeArray[XControlModel],
+    getGroup: (scala.Double, js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XControlModel]], js.Array[java.lang.String]) => scala.Unit,
+    getGroupByName: (java.lang.String, js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XControlModel]]) => scala.Unit,
+    getGroupControl: () => scala.Boolean,
+    getGroupCount: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setControlModels: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XControlModel] => scala.Unit,
+    setGroup: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XControlModel], java.lang.String) => scala.Unit,
+    setGroupControl: scala.Boolean => scala.Unit
   ): XTabControllerModel = {
-    val __obj = js.Dynamic.literal(ControlModels = ControlModels, GroupControl = GroupControl, GroupCount = GroupCount, acquire = acquire, getControlModels = getControlModels, getGroup = getGroup, getGroupByName = getGroupByName, getGroupControl = getGroupControl, getGroupCount = getGroupCount, queryInterface = queryInterface, release = release, setControlModels = setControlModels, setGroup = setGroup, setGroupControl = setGroupControl)
+    val __obj = js.Dynamic.literal(ControlModels = ControlModels, GroupControl = GroupControl, GroupCount = GroupCount, acquire = js.Any.fromFunction0(acquire), getControlModels = js.Any.fromFunction0(getControlModels), getGroup = js.Any.fromFunction3(getGroup), getGroupByName = js.Any.fromFunction2(getGroupByName), getGroupControl = js.Any.fromFunction0(getGroupControl), getGroupCount = js.Any.fromFunction0(getGroupCount), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setControlModels = js.Any.fromFunction1(setControlModels), setGroup = js.Any.fromFunction2(setGroup), setGroupControl = js.Any.fromFunction1(setGroupControl))
   
     __obj.asInstanceOf[XTabControllerModel]
   }

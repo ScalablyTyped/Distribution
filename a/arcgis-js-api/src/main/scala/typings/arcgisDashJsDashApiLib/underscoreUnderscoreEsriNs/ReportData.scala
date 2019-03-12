@@ -40,11 +40,11 @@ object ReportData {
     constructor: js.Function,
     description: java.lang.String,
     groups: js.Array[ReportDataGroup],
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     title: java.lang.String
   ): ReportData = {
-    val __obj = js.Dynamic.literal(columns = columns, constructor = constructor, description = description, groups = groups, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, title = title)
+    val __obj = js.Dynamic.literal(columns = columns, constructor = constructor, description = description, groups = groups, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), title = title)
   
     __obj.asInstanceOf[ReportData]
   }

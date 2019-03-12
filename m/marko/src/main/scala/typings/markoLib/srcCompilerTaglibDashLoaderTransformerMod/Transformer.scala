@@ -19,7 +19,7 @@ trait Transformer extends js.Object {
 object Transformer {
   @scala.inline
   def apply(
-    getFunc: js.Function0[js.Any],
+    getFunc: () => js.Any,
     id: scala.Double,
     priority: js.Any,
     properties: js.Any,
@@ -28,7 +28,7 @@ object Transformer {
     path: java.lang.String = null,
     tag: markoLib.srcCompilerTaglibDashLoaderTagMod.namespaced = null
   ): Transformer = {
-    val __obj = js.Dynamic.literal(getFunc = getFunc, id = id, priority = priority, properties = properties, taglibId = taglibId)
+    val __obj = js.Dynamic.literal(getFunc = js.Any.fromFunction0(getFunc), id = id, priority = priority, properties = properties, taglibId = taglibId)
     if (name != null) __obj.updateDynamic("name")(name)
     if (path != null) __obj.updateDynamic("path")(path)
     if (tag != null) __obj.updateDynamic("tag")(tag)

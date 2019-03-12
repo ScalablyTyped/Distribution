@@ -21,14 +21,14 @@ object SingleResponse {
   def apply(
     certID: pkijsLib.srcCertIDMod.default,
     certStatus: js.Any,
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     singleExtensions: js.Array[pkijsLib.srcExtensionMod.default],
     thisUpdate: stdLib.Date,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any],
+    toJSON: () => js.Any,
+    toSchema: () => js.Any,
     nextUpdate: stdLib.Date = null
   ): SingleResponse = {
-    val __obj = js.Dynamic.literal(certID = certID, certStatus = certStatus, fromSchema = fromSchema, singleExtensions = singleExtensions, thisUpdate = thisUpdate, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(certID = certID, certStatus = certStatus, fromSchema = js.Any.fromFunction1(fromSchema), singleExtensions = singleExtensions, thisUpdate = thisUpdate, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
     if (nextUpdate != null) __obj.updateDynamic("nextUpdate")(nextUpdate)
     __obj.asInstanceOf[SingleResponse]
   }

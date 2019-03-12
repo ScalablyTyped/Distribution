@@ -33,23 +33,17 @@ object Route {
     path: java.lang.String,
     canActivate: ActivationFnFactory = null,
     children: js.Array[Route] = null,
-    decodeParams: js.Function1[
-      /* pathParams */ router5Lib.typesTypesBaseMod.Params, 
-      router5Lib.typesTypesBaseMod.Params
-    ] = null,
+    decodeParams: /* pathParams */ router5Lib.typesTypesBaseMod.Params => router5Lib.typesTypesBaseMod.Params = null,
     defaultParams: router5Lib.typesTypesBaseMod.Params = null,
-    encodeParams: js.Function1[
-      /* stateParams */ router5Lib.typesTypesBaseMod.Params, 
-      router5Lib.typesTypesBaseMod.Params
-    ] = null,
+    encodeParams: /* stateParams */ router5Lib.typesTypesBaseMod.Params => router5Lib.typesTypesBaseMod.Params = null,
     forwardTo: java.lang.String = null
   ): Route = {
     val __obj = js.Dynamic.literal(name = name, path = path)
     if (canActivate != null) __obj.updateDynamic("canActivate")(canActivate)
     if (children != null) __obj.updateDynamic("children")(children)
-    if (decodeParams != null) __obj.updateDynamic("decodeParams")(decodeParams)
+    if (decodeParams != null) __obj.updateDynamic("decodeParams")(js.Any.fromFunction1(decodeParams))
     if (defaultParams != null) __obj.updateDynamic("defaultParams")(defaultParams)
-    if (encodeParams != null) __obj.updateDynamic("encodeParams")(encodeParams)
+    if (encodeParams != null) __obj.updateDynamic("encodeParams")(js.Any.fromFunction1(encodeParams))
     if (forwardTo != null) __obj.updateDynamic("forwardTo")(forwardTo)
     __obj.asInstanceOf[Route]
   }

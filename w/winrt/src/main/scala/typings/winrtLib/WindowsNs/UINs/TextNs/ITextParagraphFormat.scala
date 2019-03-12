@@ -42,14 +42,14 @@ trait ITextParagraphFormat extends js.Object {
 object ITextParagraphFormat {
   @scala.inline
   def apply(
-    addTab: js.Function3[scala.Double, TabAlignment, TabLeader, scala.Unit],
+    addTab: (scala.Double, TabAlignment, TabLeader) => scala.Unit,
     alignment: ParagraphAlignment,
-    clearAllTabs: js.Function0[scala.Unit],
-    deleteTab: js.Function1[scala.Double, scala.Unit],
+    clearAllTabs: () => scala.Unit,
+    deleteTab: scala.Double => scala.Unit,
     firstLineIndent: scala.Double,
-    getClone: js.Function0[ITextParagraphFormat],
-    getTab: js.Function1[scala.Double, winrtLib.Anon_Align],
-    isEqual: js.Function1[ITextParagraphFormat, scala.Boolean],
+    getClone: () => ITextParagraphFormat,
+    getTab: scala.Double => winrtLib.Anon_Align,
+    isEqual: ITextParagraphFormat => scala.Boolean,
     keepTogether: FormatEffect,
     keepWithNext: FormatEffect,
     leftIndent: scala.Double,
@@ -65,16 +65,16 @@ object ITextParagraphFormat {
     pageBreakBefore: FormatEffect,
     rightIndent: scala.Double,
     rightToLeft: FormatEffect,
-    setClone: js.Function1[ITextParagraphFormat, scala.Unit],
-    setIndents: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
-    setLineSpacing: js.Function2[LineSpacingRule, scala.Double, scala.Unit],
+    setClone: ITextParagraphFormat => scala.Unit,
+    setIndents: (scala.Double, scala.Double, scala.Double) => scala.Unit,
+    setLineSpacing: (LineSpacingRule, scala.Double) => scala.Unit,
     spaceAfter: scala.Double,
     spaceBefore: scala.Double,
     style: ParagraphStyle,
     tabCount: scala.Double,
     widowControl: FormatEffect
   ): ITextParagraphFormat = {
-    val __obj = js.Dynamic.literal(addTab = addTab, alignment = alignment, clearAllTabs = clearAllTabs, deleteTab = deleteTab, firstLineIndent = firstLineIndent, getClone = getClone, getTab = getTab, isEqual = isEqual, keepTogether = keepTogether, keepWithNext = keepWithNext, leftIndent = leftIndent, lineSpacing = lineSpacing, lineSpacingRule = lineSpacingRule, listAlignment = listAlignment, listLevelIndex = listLevelIndex, listStart = listStart, listStyle = listStyle, listTab = listTab, listType = listType, noLineNumber = noLineNumber, pageBreakBefore = pageBreakBefore, rightIndent = rightIndent, rightToLeft = rightToLeft, setClone = setClone, setIndents = setIndents, setLineSpacing = setLineSpacing, spaceAfter = spaceAfter, spaceBefore = spaceBefore, style = style, tabCount = tabCount, widowControl = widowControl)
+    val __obj = js.Dynamic.literal(addTab = js.Any.fromFunction3(addTab), alignment = alignment, clearAllTabs = js.Any.fromFunction0(clearAllTabs), deleteTab = js.Any.fromFunction1(deleteTab), firstLineIndent = firstLineIndent, getClone = js.Any.fromFunction0(getClone), getTab = js.Any.fromFunction1(getTab), isEqual = js.Any.fromFunction1(isEqual), keepTogether = keepTogether, keepWithNext = keepWithNext, leftIndent = leftIndent, lineSpacing = lineSpacing, lineSpacingRule = lineSpacingRule, listAlignment = listAlignment, listLevelIndex = listLevelIndex, listStart = listStart, listStyle = listStyle, listTab = listTab, listType = listType, noLineNumber = noLineNumber, pageBreakBefore = pageBreakBefore, rightIndent = rightIndent, rightToLeft = rightToLeft, setClone = js.Any.fromFunction1(setClone), setIndents = js.Any.fromFunction3(setIndents), setLineSpacing = js.Any.fromFunction2(setLineSpacing), spaceAfter = spaceAfter, spaceBefore = spaceBefore, style = style, tabCount = tabCount, widowControl = widowControl)
   
     __obj.asInstanceOf[ITextParagraphFormat]
   }

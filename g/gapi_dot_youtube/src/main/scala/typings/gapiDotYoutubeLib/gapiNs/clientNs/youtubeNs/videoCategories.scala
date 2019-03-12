@@ -17,14 +17,11 @@ trait videoCategories extends js.Object {
 object videoCategories {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotYoutubeLib.Anon_Hl, 
-      gapiLib.gapiNs.clientNs.HttpRequest[
-        gapiDotYoutubeLib.GoogleApiYouTubePageInfo[gapiDotYoutubeLib.GoogleApiYouTubeVideoCategoryResource]
-      ]
+    list: gapiDotYoutubeLib.Anon_Hl => gapiLib.gapiNs.clientNs.HttpRequest[
+      gapiDotYoutubeLib.GoogleApiYouTubePageInfo[gapiDotYoutubeLib.GoogleApiYouTubeVideoCategoryResource]
     ]
   ): videoCategories = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[videoCategories]
   }

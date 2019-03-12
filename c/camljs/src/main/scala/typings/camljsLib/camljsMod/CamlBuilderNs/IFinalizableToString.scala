@@ -12,8 +12,8 @@ trait IFinalizableToString extends js.Object {
 
 object IFinalizableToString {
   @scala.inline
-  def apply(ToString: js.Function0[java.lang.String]): IFinalizableToString = {
-    val __obj = js.Dynamic.literal(ToString = ToString)
+  def apply(ToString: () => java.lang.String): IFinalizableToString = {
+    val __obj = js.Dynamic.literal(ToString = js.Any.fromFunction0(ToString))
   
     __obj.asInstanceOf[IFinalizableToString]
   }

@@ -15,22 +15,12 @@ trait PinBuilder extends js.Object {
 object PinBuilder {
   @scala.inline
   def apply(
-    fromColor: js.Function2[Color, scala.Double, stdLib.HTMLCanvasElement],
-    fromMakiIconId: js.Function3[
-      java.lang.String, 
-      Color, 
-      scala.Double, 
-      stdLib.HTMLCanvasElement | js.Promise[stdLib.HTMLCanvasElement]
-    ],
-    fromText: js.Function3[java.lang.String, Color, scala.Double, stdLib.HTMLCanvasElement],
-    fromUrl: js.Function3[
-      java.lang.String, 
-      Color, 
-      scala.Double, 
-      stdLib.HTMLCanvasElement | js.Promise[stdLib.HTMLCanvasElement]
-    ]
+    fromColor: (Color, scala.Double) => stdLib.HTMLCanvasElement,
+    fromMakiIconId: (java.lang.String, Color, scala.Double) => stdLib.HTMLCanvasElement | js.Promise[stdLib.HTMLCanvasElement],
+    fromText: (java.lang.String, Color, scala.Double) => stdLib.HTMLCanvasElement,
+    fromUrl: (java.lang.String, Color, scala.Double) => stdLib.HTMLCanvasElement | js.Promise[stdLib.HTMLCanvasElement]
   ): PinBuilder = {
-    val __obj = js.Dynamic.literal(fromColor = fromColor, fromMakiIconId = fromMakiIconId, fromText = fromText, fromUrl = fromUrl)
+    val __obj = js.Dynamic.literal(fromColor = js.Any.fromFunction2(fromColor), fromMakiIconId = js.Any.fromFunction3(fromMakiIconId), fromText = js.Any.fromFunction3(fromText), fromUrl = js.Any.fromFunction3(fromUrl))
   
     __obj.asInstanceOf[PinBuilder]
   }

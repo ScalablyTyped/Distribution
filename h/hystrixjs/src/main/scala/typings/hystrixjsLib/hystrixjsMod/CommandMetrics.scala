@@ -24,21 +24,21 @@ trait CommandMetrics extends js.Object {
 object CommandMetrics {
   @scala.inline
   def apply(
-    addExecutionTime: js.Function1[scala.Double, scala.Unit],
-    decrementExecutionCount: js.Function0[scala.Unit],
-    getCurrentExecutionCount: js.Function0[scala.Double],
-    getExecutionTime: js.Function1[js.Any, scala.Double],
-    getHealthCounts: js.Function0[HealthCounts],
-    getRollingCount: js.Function1[js.Any, scala.Double],
-    incrementExecutionCount: js.Function0[scala.Unit],
-    markFailure: js.Function0[scala.Unit],
-    markRejected: js.Function0[scala.Unit],
-    markShortCircuited: js.Function0[scala.Unit],
-    markSuccess: js.Function0[scala.Unit],
-    markTimeout: js.Function0[scala.Unit],
-    reset: js.Function0[scala.Unit]
+    addExecutionTime: scala.Double => scala.Unit,
+    decrementExecutionCount: () => scala.Unit,
+    getCurrentExecutionCount: () => scala.Double,
+    getExecutionTime: js.Any => scala.Double,
+    getHealthCounts: () => HealthCounts,
+    getRollingCount: js.Any => scala.Double,
+    incrementExecutionCount: () => scala.Unit,
+    markFailure: () => scala.Unit,
+    markRejected: () => scala.Unit,
+    markShortCircuited: () => scala.Unit,
+    markSuccess: () => scala.Unit,
+    markTimeout: () => scala.Unit,
+    reset: () => scala.Unit
   ): CommandMetrics = {
-    val __obj = js.Dynamic.literal(addExecutionTime = addExecutionTime, decrementExecutionCount = decrementExecutionCount, getCurrentExecutionCount = getCurrentExecutionCount, getExecutionTime = getExecutionTime, getHealthCounts = getHealthCounts, getRollingCount = getRollingCount, incrementExecutionCount = incrementExecutionCount, markFailure = markFailure, markRejected = markRejected, markShortCircuited = markShortCircuited, markSuccess = markSuccess, markTimeout = markTimeout, reset = reset)
+    val __obj = js.Dynamic.literal(addExecutionTime = js.Any.fromFunction1(addExecutionTime), decrementExecutionCount = js.Any.fromFunction0(decrementExecutionCount), getCurrentExecutionCount = js.Any.fromFunction0(getCurrentExecutionCount), getExecutionTime = js.Any.fromFunction1(getExecutionTime), getHealthCounts = js.Any.fromFunction0(getHealthCounts), getRollingCount = js.Any.fromFunction1(getRollingCount), incrementExecutionCount = js.Any.fromFunction0(incrementExecutionCount), markFailure = js.Any.fromFunction0(markFailure), markRejected = js.Any.fromFunction0(markRejected), markShortCircuited = js.Any.fromFunction0(markShortCircuited), markSuccess = js.Any.fromFunction0(markSuccess), markTimeout = js.Any.fromFunction0(markTimeout), reset = js.Any.fromFunction0(reset))
   
     __obj.asInstanceOf[CommandMetrics]
   }

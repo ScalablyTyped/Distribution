@@ -20,73 +20,47 @@ object XForms {
   @scala.inline
   def apply(
     Count: scala.Double,
-    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementNames: stdLib.SafeArray[java.lang.String],
     ElementType: activexDashLibreofficeLib.`type`,
     Parent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
-    acquire: js.Function0[scala.Unit],
-    addContainerListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
-      scala.Unit
-    ],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    addScriptListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.XScriptListener, scala.Unit],
-    attach: js.Function3[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      js.Any, 
-      scala.Unit
-    ],
-    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
-    createEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
-    detach: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      scala.Unit
-    ],
-    dispose: js.Function0[scala.Unit],
-    getByIndex: js.Function1[scala.Double, js.Any],
-    getByName: js.Function1[java.lang.String, js.Any],
-    getCount: js.Function0[scala.Double],
-    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    getParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    getScriptEvents: js.Function1[
-      scala.Double, 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.ScriptEventDescriptor]
-    ],
-    hasByName: js.Function1[java.lang.String, scala.Boolean],
-    hasElements: js.Function0[scala.Boolean],
-    insertByIndex: js.Function2[scala.Double, js.Any, scala.Unit],
-    insertByName: js.Function2[java.lang.String, js.Any, scala.Unit],
-    insertEntry: js.Function1[scala.Double, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerScriptEvent: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.ScriptEventDescriptor, 
-      scala.Unit
-    ],
-    registerScriptEvents: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.ScriptEventDescriptor], 
-      scala.Unit
-    ],
-    release: js.Function0[scala.Unit],
-    removeByIndex: js.Function1[scala.Double, scala.Unit],
-    removeByName: js.Function1[java.lang.String, scala.Unit],
-    removeContainerListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
-      scala.Unit
-    ],
-    removeEntry: js.Function1[scala.Double, scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    removeScriptListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.XScriptListener, scala.Unit],
-    replaceByIndex: js.Function2[scala.Double, js.Any, scala.Unit],
-    replaceByName: js.Function2[java.lang.String, js.Any, scala.Unit],
-    revokeScriptEvent: js.Function4[scala.Double, java.lang.String, java.lang.String, java.lang.String, scala.Unit],
-    revokeScriptEvents: js.Function1[scala.Double, scala.Unit],
-    setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
+    acquire: () => scala.Unit,
+    addContainerListener: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    addScriptListener: activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.XScriptListener => scala.Unit,
+    attach: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, js.Any) => scala.Unit,
+    createClone: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable,
+    createEnumeration: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration,
+    detach: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface) => scala.Unit,
+    dispose: () => scala.Unit,
+    getByIndex: scala.Double => js.Any,
+    getByName: java.lang.String => js.Any,
+    getCount: () => scala.Double,
+    getElementNames: () => stdLib.SafeArray[java.lang.String],
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    getParent: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    getScriptEvents: scala.Double => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.ScriptEventDescriptor],
+    hasByName: java.lang.String => scala.Boolean,
+    hasElements: () => scala.Boolean,
+    insertByIndex: (scala.Double, js.Any) => scala.Unit,
+    insertByName: (java.lang.String, js.Any) => scala.Unit,
+    insertEntry: scala.Double => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerScriptEvent: (scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.ScriptEventDescriptor) => scala.Unit,
+    registerScriptEvents: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.ScriptEventDescriptor]) => scala.Unit,
+    release: () => scala.Unit,
+    removeByIndex: scala.Double => scala.Unit,
+    removeByName: java.lang.String => scala.Unit,
+    removeContainerListener: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener => scala.Unit,
+    removeEntry: scala.Double => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    removeScriptListener: activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.XScriptListener => scala.Unit,
+    replaceByIndex: (scala.Double, js.Any) => scala.Unit,
+    replaceByName: (java.lang.String, js.Any) => scala.Unit,
+    revokeScriptEvent: (scala.Double, java.lang.String, java.lang.String, java.lang.String) => scala.Unit,
+    revokeScriptEvents: scala.Double => scala.Unit,
+    setParent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => scala.Unit
   ): XForms = {
-    val __obj = js.Dynamic.literal(Count = Count, ElementNames = ElementNames, ElementType = ElementType, Parent = Parent, acquire = acquire, addContainerListener = addContainerListener, addEventListener = addEventListener, addScriptListener = addScriptListener, attach = attach, createClone = createClone, createEnumeration = createEnumeration, detach = detach, dispose = dispose, getByIndex = getByIndex, getByName = getByName, getCount = getCount, getElementNames = getElementNames, getElementType = getElementType, getParent = getParent, getScriptEvents = getScriptEvents, hasByName = hasByName, hasElements = hasElements, insertByIndex = insertByIndex, insertByName = insertByName, insertEntry = insertEntry, queryInterface = queryInterface, registerScriptEvent = registerScriptEvent, registerScriptEvents = registerScriptEvents, release = release, removeByIndex = removeByIndex, removeByName = removeByName, removeContainerListener = removeContainerListener, removeEntry = removeEntry, removeEventListener = removeEventListener, removeScriptListener = removeScriptListener, replaceByIndex = replaceByIndex, replaceByName = replaceByName, revokeScriptEvent = revokeScriptEvent, revokeScriptEvents = revokeScriptEvents, setParent = setParent)
+    val __obj = js.Dynamic.literal(Count = Count, ElementNames = ElementNames, ElementType = ElementType, Parent = Parent, acquire = js.Any.fromFunction0(acquire), addContainerListener = js.Any.fromFunction1(addContainerListener), addEventListener = js.Any.fromFunction1(addEventListener), addScriptListener = js.Any.fromFunction1(addScriptListener), attach = js.Any.fromFunction3(attach), createClone = js.Any.fromFunction0(createClone), createEnumeration = js.Any.fromFunction0(createEnumeration), detach = js.Any.fromFunction2(detach), dispose = js.Any.fromFunction0(dispose), getByIndex = js.Any.fromFunction1(getByIndex), getByName = js.Any.fromFunction1(getByName), getCount = js.Any.fromFunction0(getCount), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), getParent = js.Any.fromFunction0(getParent), getScriptEvents = js.Any.fromFunction1(getScriptEvents), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), insertByIndex = js.Any.fromFunction2(insertByIndex), insertByName = js.Any.fromFunction2(insertByName), insertEntry = js.Any.fromFunction1(insertEntry), queryInterface = js.Any.fromFunction1(queryInterface), registerScriptEvent = js.Any.fromFunction2(registerScriptEvent), registerScriptEvents = js.Any.fromFunction2(registerScriptEvents), release = js.Any.fromFunction0(release), removeByIndex = js.Any.fromFunction1(removeByIndex), removeByName = js.Any.fromFunction1(removeByName), removeContainerListener = js.Any.fromFunction1(removeContainerListener), removeEntry = js.Any.fromFunction1(removeEntry), removeEventListener = js.Any.fromFunction1(removeEventListener), removeScriptListener = js.Any.fromFunction1(removeScriptListener), replaceByIndex = js.Any.fromFunction2(replaceByIndex), replaceByName = js.Any.fromFunction2(replaceByName), revokeScriptEvent = js.Any.fromFunction4(revokeScriptEvent), revokeScriptEvents = js.Any.fromFunction1(revokeScriptEvents), setParent = js.Any.fromFunction1(setParent))
   
     __obj.asInstanceOf[XForms]
   }

@@ -43,15 +43,15 @@ trait XActiveDataControl
 object XActiveDataControl {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addListener: js.Function1[XStreamListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeListener: js.Function1[XStreamListener, scala.Unit],
-    start: js.Function0[scala.Unit],
-    terminate: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addListener: XStreamListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeListener: XStreamListener => scala.Unit,
+    start: () => scala.Unit,
+    terminate: () => scala.Unit
   ): XActiveDataControl = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addListener = addListener, queryInterface = queryInterface, release = release, removeListener = removeListener, start = start, terminate = terminate)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addListener = js.Any.fromFunction1(addListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeListener = js.Any.fromFunction1(removeListener), start = js.Any.fromFunction0(start), terminate = js.Any.fromFunction0(terminate))
   
     __obj.asInstanceOf[XActiveDataControl]
   }

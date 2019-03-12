@@ -17,14 +17,14 @@ trait XDataTransferEventListener
 object XDataTransferEventListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    cancelled: js.Function1[DataTransferEvent, scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    finished: js.Function1[DataTransferEvent, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    cancelled: DataTransferEvent => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    finished: DataTransferEvent => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDataTransferEventListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, cancelled = cancelled, disposing = disposing, finished = finished, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), cancelled = js.Any.fromFunction1(cancelled), disposing = js.Any.fromFunction1(disposing), finished = js.Any.fromFunction1(finished), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDataTransferEventListener]
   }

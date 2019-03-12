@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.Comment")
 @js.native
 class Comment protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Author: java.lang.String = js.native
   val Creator: XlCreator = js.native
   var `Excel.Comment_typekey`: Comment = js.native
   val Parent: js.Any = js.native
-  val Shape: Shape = js.native
+  val Shape: activexDashExcelLib.ExcelNs.Shape = js.native
   var Visible: scala.Boolean = js.native
   def Delete(): scala.Unit = js.native
   def Next(): Comment = js.native

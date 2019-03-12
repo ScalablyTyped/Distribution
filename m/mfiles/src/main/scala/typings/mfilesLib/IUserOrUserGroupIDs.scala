@@ -18,15 +18,15 @@ trait IUserOrUserGroupIDs extends js.Object {
 object IUserOrUserGroupIDs {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IUserOrUserGroupID, scala.Unit],
-    Clone: js.Function0[IUserOrUserGroupIDs],
+    Add: (scala.Double, IUserOrUserGroupID) => scala.Unit,
+    Clone: () => IUserOrUserGroupIDs,
     Count: scala.Double,
-    GetUserOrUserGroupID: js.Function2[scala.Double, mfilesLib.MFilesNs.MFUserOrUserGroupType, IUserOrUserGroupID],
-    GetUserOrUserGroupIDIndex: js.Function2[scala.Double, mfilesLib.MFilesNs.MFUserOrUserGroupType, scala.Double],
-    Item: js.Function1[scala.Double, IUserOrUserGroupID],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    GetUserOrUserGroupID: (scala.Double, mfilesLib.MFilesNs.MFUserOrUserGroupType) => IUserOrUserGroupID,
+    GetUserOrUserGroupIDIndex: (scala.Double, mfilesLib.MFilesNs.MFUserOrUserGroupType) => scala.Double,
+    Item: scala.Double => IUserOrUserGroupID,
+    Remove: scala.Double => scala.Unit
   ): IUserOrUserGroupIDs = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, GetUserOrUserGroupID = GetUserOrUserGroupID, GetUserOrUserGroupIDIndex = GetUserOrUserGroupIDIndex, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count, GetUserOrUserGroupID = js.Any.fromFunction2(GetUserOrUserGroupID), GetUserOrUserGroupIDIndex = js.Any.fromFunction2(GetUserOrUserGroupIDIndex), Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IUserOrUserGroupIDs]
   }

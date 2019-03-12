@@ -43,60 +43,21 @@ trait ObjectsResource extends js.Object {
 object ObjectsResource {
   @scala.inline
   def apply(
-    compose: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltDestinationBucket, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Object]
-    ],
-    copy: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltDestinationBucketDestinationObject, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Object]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketFieldsGenerationIfGenerationMatch, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketFieldsGenerationIfGenerationMatchIfGenerationNotMatch, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Object]
-    ],
-    getIamPolicy: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketFieldsGeneration, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketContentEncoding, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Object]
-    ],
-    list: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketDelimiter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Objects]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketFieldsGenerationIfGenerationMatchIfGenerationNotMatchIfMetagenerationMatch, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Object]
-    ],
-    rewrite: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltDestinationBucketDestinationKmsKeyName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RewriteResponse]
-    ],
-    setIamPolicy: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketFieldsGeneration, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    testIamPermissions: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketFieldsGenerationKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketFieldsGenerationIfGenerationMatchIfGenerationNotMatchIfMetagenerationMatch, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Object]
-    ],
-    watchAll: js.Function1[
-      gapiDotClientDotStorageLib.Anon_AltBucketDelimiter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Channel]
-    ]
+    compose: gapiDotClientDotStorageLib.Anon_AltDestinationBucket => gapiDotClientLib.gapiNs.clientNs.Request[Object],
+    copy: gapiDotClientDotStorageLib.Anon_AltDestinationBucketDestinationObject => gapiDotClientLib.gapiNs.clientNs.Request[Object],
+    delete: gapiDotClientDotStorageLib.Anon_AltBucketFieldsGenerationIfGenerationMatch => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotStorageLib.Anon_AltBucketFieldsGenerationIfGenerationMatchIfGenerationNotMatch => gapiDotClientLib.gapiNs.clientNs.Request[Object],
+    getIamPolicy: gapiDotClientDotStorageLib.Anon_AltBucketFieldsGeneration => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    insert: gapiDotClientDotStorageLib.Anon_AltBucketContentEncoding => gapiDotClientLib.gapiNs.clientNs.Request[Object],
+    list: gapiDotClientDotStorageLib.Anon_AltBucketDelimiter => gapiDotClientLib.gapiNs.clientNs.Request[Objects],
+    patch: gapiDotClientDotStorageLib.Anon_AltBucketFieldsGenerationIfGenerationMatchIfGenerationNotMatchIfMetagenerationMatch => gapiDotClientLib.gapiNs.clientNs.Request[Object],
+    rewrite: gapiDotClientDotStorageLib.Anon_AltDestinationBucketDestinationKmsKeyName => gapiDotClientLib.gapiNs.clientNs.Request[RewriteResponse],
+    setIamPolicy: gapiDotClientDotStorageLib.Anon_AltBucketFieldsGeneration => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    testIamPermissions: gapiDotClientDotStorageLib.Anon_AltBucketFieldsGenerationKey => gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse],
+    update: gapiDotClientDotStorageLib.Anon_AltBucketFieldsGenerationIfGenerationMatchIfGenerationNotMatchIfMetagenerationMatch => gapiDotClientLib.gapiNs.clientNs.Request[Object],
+    watchAll: gapiDotClientDotStorageLib.Anon_AltBucketDelimiter => gapiDotClientLib.gapiNs.clientNs.Request[Channel]
   ): ObjectsResource = {
-    val __obj = js.Dynamic.literal(compose = compose, copy = copy, delete = delete, get = get, getIamPolicy = getIamPolicy, insert = insert, list = list, patch = patch, rewrite = rewrite, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions, update = update, watchAll = watchAll)
+    val __obj = js.Dynamic.literal(compose = js.Any.fromFunction1(compose), copy = js.Any.fromFunction1(copy), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), rewrite = js.Any.fromFunction1(rewrite), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions), update = js.Any.fromFunction1(update), watchAll = js.Any.fromFunction1(watchAll))
   
     __obj.asInstanceOf[ObjectsResource]
   }

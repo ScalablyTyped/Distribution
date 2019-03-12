@@ -11,8 +11,8 @@ trait IMFDocListCtrl extends js.Object {
 
 object IMFDocListCtrl {
   @scala.inline
-  def apply(AttachToListingWindow: js.Function1[js.Any, scala.Unit]): IMFDocListCtrl = {
-    val __obj = js.Dynamic.literal(AttachToListingWindow = AttachToListingWindow)
+  def apply(AttachToListingWindow: js.Any => scala.Unit): IMFDocListCtrl = {
+    val __obj = js.Dynamic.literal(AttachToListingWindow = js.Any.fromFunction1(AttachToListingWindow))
   
     __obj.asInstanceOf[IMFDocListCtrl]
   }

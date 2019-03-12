@@ -18,7 +18,7 @@ trait AsyncWriter extends js.Object {
   def emit(arg: js.Any): AsyncWriter = js.native
   def end(): AsyncWriter = js.native
   def end(data: js.Any): AsyncWriter = js.native
-  def error(e: nodeLib.Error): scala.Unit = js.native
+  def error(e: stdLib.Error): scala.Unit = js.native
   def flush(): scala.Unit = js.native
   def getAttribute(): js.Any = js.native
   def getAttributes(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native

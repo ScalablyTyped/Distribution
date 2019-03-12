@@ -37,15 +37,12 @@ object XPane2 {
   @scala.inline
   def apply(
     Accessible: activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible,
-    getAccessible: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible],
-    isVisible: js.Function0[scala.Boolean],
-    setAccessible: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible, 
-      scala.Unit
-    ],
-    setVisible: js.Function1[scala.Boolean, scala.Unit]
+    getAccessible: () => activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible,
+    isVisible: () => scala.Boolean,
+    setAccessible: activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible => scala.Unit,
+    setVisible: scala.Boolean => scala.Unit
   ): XPane2 = {
-    val __obj = js.Dynamic.literal(Accessible = Accessible, getAccessible = getAccessible, isVisible = isVisible, setAccessible = setAccessible, setVisible = setVisible)
+    val __obj = js.Dynamic.literal(Accessible = Accessible, getAccessible = js.Any.fromFunction0(getAccessible), isVisible = js.Any.fromFunction0(isVisible), setAccessible = js.Any.fromFunction1(setAccessible), setVisible = js.Any.fromFunction1(setVisible))
   
     __obj.asInstanceOf[XPane2]
   }

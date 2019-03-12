@@ -23,7 +23,7 @@ object ApiGatewayManagementApiNs extends js.Object {
     /**
       * The data to be sent to the client specified by its connection id.
       */
-    var Data: Data
+    var Data: awsDashSdkLib.clientsApigatewaymanagementapiMod.ApiGatewayManagementApiNs.Data
   }
   
   @js.native

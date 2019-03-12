@@ -12,7 +12,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the resource that you want to tag.
       */
-    var ResourceArn: ResourceArn
+    var ResourceArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ResourceArn
     /**
       * An array of Tag objects. Each tag is a key-value pair. Only the key parameter is required. If you don't specify a value, Amazon SageMaker sets the value to an empty string. 
       */
@@ -42,7 +42,7 @@ object SageMakerNs extends js.Object {
     /**
       * The input mode that the algorithm supports. For the input modes that Amazon SageMaker algorithms support, see Algorithms. If an algorithm supports the File input mode, Amazon SageMaker downloads the training data from S3 to the provisioned ML storage Volume, and mounts the directory to docker volume for training container. If an algorithm supports the Pipe input mode, Amazon SageMaker streams data directly from S3 to the container.   In File mode, make sure you provision ML storage volume with sufficient capacity to accommodate the data download from S3. In addition to the training data, the ML storage volume also stores the output model. The algorithm container use ML storage volume to also store intermediate information, if any.   For distributed algorithms using File mode, training data is distributed uniformly, and your training duration is predictable if the input data objects size is approximately same. Amazon SageMaker does not split the files any further for model training. If the object sizes are skewed, training won't be optimal as the data distribution is also skewed where one host in a training cluster is overloaded, thus becoming bottleneck in training. 
       */
-    var TrainingInputMode: TrainingInputMode
+    var TrainingInputMode: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingInputMode
   }
   
   trait AlgorithmStatusDetails extends js.Object {
@@ -75,7 +75,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the algorithm.
       */
-    var AlgorithmArn: AlgorithmArn
+    var AlgorithmArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.AlgorithmArn
     /**
       * A brief description of the algorithm.
       */
@@ -87,11 +87,11 @@ object SageMakerNs extends js.Object {
     /**
       * The overall status of the algorithm.
       */
-    var AlgorithmStatus: AlgorithmStatus
+    var AlgorithmStatus: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.AlgorithmStatus
     /**
       * A timestamp that shows when the algorithm was created.
       */
-    var CreationTime: CreationTime
+    var CreationTime: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreationTime
   }
   
   trait AlgorithmValidationProfile extends js.Object {
@@ -102,7 +102,7 @@ object SageMakerNs extends js.Object {
     /**
       * The TrainingJobDefinition object that describes the training job that Amazon SageMaker runs to validate your algorithm.
       */
-    var TrainingJobDefinition: TrainingJobDefinition
+    var TrainingJobDefinition: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingJobDefinition
     /**
       * The TransformJobDefinition object that describes the transform job that Amazon SageMaker runs to validate your algorithm.
       */
@@ -149,7 +149,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the channel. 
       */
-    var ChannelName: ChannelName
+    var ChannelName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ChannelName
     /**
       * If training data is compressed, the compression type. The default value is None. CompressionType is used only in Pipe input mode. In File mode, leave this field unset or set it to None.
       */
@@ -161,7 +161,7 @@ object SageMakerNs extends js.Object {
     /**
       * The location of the channel data.
       */
-    var DataSource: DataSource
+    var DataSource: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DataSource
     /**
       * (Optional) The input mode to use for the data channel in a training job. If you don't set a value for InputMode, Amazon SageMaker uses the value set for TrainingInputMode. Use this parameter to override the TrainingInputMode setting in a AlgorithmSpecification request when you have a channel that needs a different input mode from the training job's general setting. To download the data from Amazon Simple Storage Service (Amazon S3) to the provisioned ML storage volume, and mount the directory to a Docker volume, use File input mode. To stream data directly from Amazon S3 to the container, choose Pipe input mode. To use a model for incremental training, choose File input model.
       */
@@ -214,7 +214,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the Git repository.
       */
-    var CodeRepositoryArn: CodeRepositoryArn
+    var CodeRepositoryArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CodeRepositoryArn
     /**
       * The name of the Git repository.
       */
@@ -222,7 +222,7 @@ object SageMakerNs extends js.Object {
     /**
       * The date and time that the Git repository was created.
       */
-    var CreationTime: CreationTime
+    var CreationTime: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreationTime
     /**
       * Configuration details for the Git repository, including the URL where it is located and the ARN of the AWS Secrets Manager secret that contains the credentials used to access the repository.
       */
@@ -230,7 +230,7 @@ object SageMakerNs extends js.Object {
     /**
       * The date and time that the Git repository was last modified.
       */
-    var LastModifiedTime: LastModifiedTime
+    var LastModifiedTime: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.LastModifiedTime
   }
   
   trait CognitoMemberDefinition extends js.Object {
@@ -256,7 +256,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the model compilation job.
       */
-    var CompilationJobArn: CompilationJobArn
+    var CompilationJobArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CompilationJobArn
     /**
       * The name of the model compilation job that you want a summary for.
       */
@@ -264,7 +264,7 @@ object SageMakerNs extends js.Object {
     /**
       * The status of the model compilation job.
       */
-    var CompilationJobStatus: CompilationJobStatus
+    var CompilationJobStatus: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CompilationJobStatus
     /**
       * The time when the model compilation job started.
       */
@@ -276,7 +276,7 @@ object SageMakerNs extends js.Object {
     /**
       * The time when the model compilation job was created.
       */
-    var CreationTime: CreationTime
+    var CreationTime: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreationTime
     /**
       * The time when the model compilation job was last modified.
       */
@@ -352,7 +352,7 @@ object SageMakerNs extends js.Object {
     /**
       * Specifies details about training jobs run by this algorithm, including the following:   The Amazon ECR path of the container and the version digest of the algorithm.   The hyperparameters that the algorithm supports.   The instance types that the algorithm supports for training.   Whether the algorithm supports distributed training.   The metrics that the algorithm emits to Amazon CloudWatch.   Which metrics that the algorithm emits can be used as the objective metric for hyperparameter tuning jobs.   The input channels that the algorithm supports for training data. For example, an algorithm might support train, validation, and test channels.  
       */
-    var TrainingSpecification: TrainingSpecification
+    var TrainingSpecification: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingSpecification
     /**
       * Specifies configurations for one or more training jobs and that Amazon SageMaker runs to test the algorithm's training code and, optionally, one or more batch transform jobs that Amazon SageMaker runs to test the algorithm's inference code.
       */
@@ -363,7 +363,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the new algorithm.
       */
-    var AlgorithmArn: AlgorithmArn
+    var AlgorithmArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.AlgorithmArn
   }
   
   trait CreateCodeRepositoryInput extends js.Object {
@@ -374,14 +374,14 @@ object SageMakerNs extends js.Object {
     /**
       * Specifies details about the repository, including the URL where the repository is located, the default branch, and credentials to use to access the repository.
       */
-    var GitConfig: GitConfig
+    var GitConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.GitConfig
   }
   
   trait CreateCodeRepositoryOutput extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the new repository.
       */
-    var CodeRepositoryArn: CodeRepositoryArn
+    var CodeRepositoryArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CodeRepositoryArn
   }
   
   trait CreateCompilationJobRequest extends js.Object {
@@ -392,33 +392,33 @@ object SageMakerNs extends js.Object {
     /**
       * Provides information about the location of input model artifacts, the name and shape of the expected data inputs, and the framework in which the model was trained.
       */
-    var InputConfig: InputConfig
+    var InputConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.InputConfig
     /**
       * Provides information about the output location for the compiled model and the target device the model runs on.
       */
-    var OutputConfig: OutputConfig
+    var OutputConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.OutputConfig
     /**
       * The Amazon Resource Name (ARN) of an IIAMAM role that enables Amazon SageMaker to perform tasks on your behalf.  During model compilation, Amazon SageMaker needs your permission to:   Read input data from an S3 bucket   Write model artifacts to an S3 bucket   Write logs to Amazon CloudWatch Logs   Publish metrics to Amazon CloudWatch   You grant permissions for all of these tasks to an IAM role. To pass this role to Amazon SageMaker, the caller of this API must have the iam:PassRole permission. For more information, see Amazon SageMaker Roles. 
       */
-    var RoleArn: RoleArn
+    var RoleArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.RoleArn
     /**
       * The duration allowed for model compilation.
       */
-    var StoppingCondition: StoppingCondition
+    var StoppingCondition: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.StoppingCondition
   }
   
   trait CreateCompilationJobResponse extends js.Object {
     /**
       * If the action is successful, the service sends back an HTTP 200 response. Amazon SageMaker returns the following data in JSON format:    CompilationJobArn: The Amazon Resource Name (ARN) of the compiled job.  
       */
-    var CompilationJobArn: CompilationJobArn
+    var CompilationJobArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CompilationJobArn
   }
   
   trait CreateEndpointConfigInput extends js.Object {
     /**
       * The name of the endpoint configuration. You specify this name in a CreateEndpoint request. 
       */
-    var EndpointConfigName: EndpointConfigName
+    var EndpointConfigName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointConfigName
     /**
       * The Amazon Resource Name (ARN) of a AWS Key Management Service key that Amazon SageMaker uses to encrypt data on the storage volume attached to the ML compute instance that hosts the endpoint.
       */
@@ -437,18 +437,18 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the endpoint configuration. 
       */
-    var EndpointConfigArn: EndpointConfigArn
+    var EndpointConfigArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointConfigArn
   }
   
   trait CreateEndpointInput extends js.Object {
     /**
       * The name of an endpoint configuration. For more information, see CreateEndpointConfig. 
       */
-    var EndpointConfigName: EndpointConfigName
+    var EndpointConfigName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointConfigName
     /**
       * The name of the endpoint. The name must be unique within an AWS Region in your AWS account.
       */
-    var EndpointName: EndpointName
+    var EndpointName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointName
     /**
       * An array of key-value pairs. For more information, see Using Cost Allocation Tagsin the AWS Billing and Cost Management User Guide. 
       */
@@ -459,18 +459,18 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the endpoint.
       */
-    var EndpointArn: EndpointArn
+    var EndpointArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointArn
   }
   
   trait CreateHyperParameterTuningJobRequest extends js.Object {
     /**
       * The HyperParameterTuningJobConfig object that describes the tuning job, including the search strategy, the objective metric used to evaluate training jobs, ranges of parameters to search, and resource limits for the tuning job. For more information, see automatic-model-tuning 
       */
-    var HyperParameterTuningJobConfig: HyperParameterTuningJobConfig
+    var HyperParameterTuningJobConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.HyperParameterTuningJobConfig
     /**
       * The name of the tuning job. This name is the prefix for the names of all training jobs that this tuning job launches. The name must be unique within the same AWS account and AWS Region. The name must have { } to { } characters. Valid characters are a-z, A-Z, 0-9, and : + = @ _ % - (hyphen). The name is not case sensitive.
       */
-    var HyperParameterTuningJobName: HyperParameterTuningJobName
+    var HyperParameterTuningJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.HyperParameterTuningJobName
     /**
       * An array of key-value pairs. You can use tags to categorize your AWS resources in different ways, for example, by purpose, owner, or environment. For more information, see AWS Tagging Strategies. Tags that you specify for the tuning job are also added to all training jobs that the tuning job launches.
       */
@@ -489,14 +489,14 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the tuning job. Amazon SageMaker assigns an ARN to a hyperparameter tuning job when you create it.
       */
-    var HyperParameterTuningJobArn: HyperParameterTuningJobArn
+    var HyperParameterTuningJobArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.HyperParameterTuningJobArn
   }
   
   trait CreateLabelingJobRequest extends js.Object {
     /**
       * Configures the information required for human workers to complete a labeling task.
       */
-    var HumanTaskConfig: HumanTaskConfig
+    var HumanTaskConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.HumanTaskConfig
     /**
       * Input data for the labeling job, such as the Amazon S3 location of the data objects and the location of the manifest file that describes the data objects.
       */
@@ -504,7 +504,7 @@ object SageMakerNs extends js.Object {
     /**
       * The attribute name to use for the label in the output manifest file. This is the key for the key/value pair formed with the label that a worker assigns to the object. The name can't end with "-metadata". If you are running a semantic segmentation labeling job, the attribute name must end with "-ref". If you are running any other kind of labeling job, the attribute name must not end with "-ref".
       */
-    var LabelAttributeName: LabelAttributeName
+    var LabelAttributeName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.LabelAttributeName
     /**
       * The S3 URL of the file that defines the categories used to label the data objects. The file is a JSON structure in the following format:  {    "document-version": "2018-11-28"    "labels": [    {    "label": "label 1"    },    {    "label": "label 2"    },    ...    {    "label": "label n"    }    ]   } 
       */
@@ -516,7 +516,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the labeling job. This name is used to identify the job in a list of labeling jobs.
       */
-    var LabelingJobName: LabelingJobName
+    var LabelingJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.LabelingJobName
     /**
       * The location of the output data and the AWS Key Management Service key ID for the key used to encrypt the output data, if any.
       */
@@ -524,7 +524,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Number (ARN) that Amazon SageMaker assumes to perform tasks on your behalf during data labeling. You must grant this role the necessary permissions so that Amazon SageMaker can successfully complete data labeling.
       */
-    var RoleArn: RoleArn
+    var RoleArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.RoleArn
     /**
       * A set of conditions for stopping the labeling job. If any of the conditions are met, the job is automatically stopped. You can use these conditions to control the cost of data labeling.
       */
@@ -539,7 +539,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the labeling job. You use this ARN to identify the labeling job.
       */
-    var LabelingJobArn: LabelingJobArn
+    var LabelingJobArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.LabelingJobArn
   }
   
   trait CreateModelInput extends js.Object {
@@ -558,7 +558,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the new model.
       */
-    var ModelName: ModelName
+    var ModelName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelName
     /**
       * The location of the primary docker image containing inference code, associated artifacts, and custom environment map that the inference code uses when the model is deployed for predictions. 
       */
@@ -577,7 +577,7 @@ object SageMakerNs extends js.Object {
     /**
       * The ARN of the model created in Amazon SageMaker.
       */
-    var ModelArn: ModelArn
+    var ModelArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelArn
   }
   
   trait CreateModelPackageInput extends js.Object {
@@ -611,7 +611,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the new model package.
       */
-    var ModelPackageArn: ModelPackageArn
+    var ModelPackageArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelPackageArn
   }
   
   trait CreateNotebookInstanceInput extends js.Object {
@@ -634,7 +634,7 @@ object SageMakerNs extends js.Object {
     /**
       * The type of ML compute instance to launch for the notebook instance.
       */
-    var InstanceType: InstanceType
+    var InstanceType: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.InstanceType
     /**
       *  If you provide a AWS KMS key ID, Amazon SageMaker uses it to encrypt data at rest on the ML storage volume that is attached to your notebook instance. The KMS key you provide must be enabled. For information, see Enabling and Disabling Keys in the AWS Key Management Service Developer Guide.
       */
@@ -646,11 +646,11 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the new notebook instance.
       */
-    var NotebookInstanceName: NotebookInstanceName
+    var NotebookInstanceName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.NotebookInstanceName
     /**
       *  When you send any requests to AWS resources from the notebook instance, Amazon SageMaker assumes this role to perform tasks on your behalf. You must grant this role necessary permissions so Amazon SageMaker can perform these tasks. The policy must allow the Amazon SageMaker service principal (sagemaker.amazonaws.com) permissions to assume this role. For more information, see Amazon SageMaker Roles.   To be able to pass this role to Amazon SageMaker, the caller of this API must have the iam:PassRole permission. 
       */
-    var RoleArn: RoleArn
+    var RoleArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.RoleArn
     /**
       * Whether root access is enabled or disabled for users of the notebook instance. The default value is Enabled.  Lifecycle configurations need root access to be able to set up a notebook instance. Because of this, lifecycle configurations associated with a notebook instance always run with root access even if you disable root access for users. 
       */
@@ -677,7 +677,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the lifecycle configuration.
       */
-    var NotebookInstanceLifecycleConfigName: NotebookInstanceLifecycleConfigName
+    var NotebookInstanceLifecycleConfigName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.NotebookInstanceLifecycleConfigName
     /**
       * A shell script that runs only once, when you create a notebook instance. The shell script must be a base64-encoded string.
       */
@@ -706,7 +706,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the notebook instance.
       */
-    var NotebookInstanceName: NotebookInstanceName
+    var NotebookInstanceName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.NotebookInstanceName
     /**
       * The duration of the session, in seconds. The default is 12 hours.
       */
@@ -724,7 +724,7 @@ object SageMakerNs extends js.Object {
     /**
       * The registry path of the Docker image that contains the training algorithm and algorithm-specific metadata, including the input mode. For more information about algorithms provided by Amazon SageMaker, see Algorithms. For information about providing your own algorithms, see Using Your Own Algorithms with Amazon SageMaker. 
       */
-    var AlgorithmSpecification: AlgorithmSpecification
+    var AlgorithmSpecification: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.AlgorithmSpecification
     /**
       * To encrypt all communications between ML compute instances in distributed training, choose True. Encryption provides greater security for distributed training, but training might take longer. How long it takes depends on the amount of communication between compute instances, especially if you use a deep learning algorithm in distributed training. For more information, see Protect Communications Between ML Compute Instances in a Distributed Training Job.
       */
@@ -744,19 +744,19 @@ object SageMakerNs extends js.Object {
     /**
       * Specifies the path to the S3 bucket where you want to store model artifacts. Amazon SageMaker creates subfolders for the artifacts. 
       */
-    var OutputDataConfig: OutputDataConfig
+    var OutputDataConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.OutputDataConfig
     /**
       * The resources, including the ML compute instances and ML storage volumes, to use for model training.  ML storage volumes store model artifacts and incremental states. Training algorithms might also use ML storage volumes for scratch space. If you want Amazon SageMaker to use the ML storage volume to store the training data, choose File as the TrainingInputMode in the algorithm specification. For distributed training algorithms, specify an instance count greater than 1.
       */
-    var ResourceConfig: ResourceConfig
+    var ResourceConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ResourceConfig
     /**
       * The Amazon Resource Name (ARN) of an IAM role that Amazon SageMaker can assume to perform tasks on your behalf.  During model training, Amazon SageMaker needs your permission to read input data from an S3 bucket, download a Docker image that contains training code, write model artifacts to an S3 bucket, write logs to Amazon CloudWatch Logs, and publish metrics to Amazon CloudWatch. You grant permissions for all of these tasks to an IAM role. For more information, see Amazon SageMaker Roles.   To be able to pass this role to Amazon SageMaker, the caller of this API must have the iam:PassRole permission. 
       */
-    var RoleArn: RoleArn
+    var RoleArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.RoleArn
     /**
       * Sets a duration for training. Use this parameter to cap model training costs. To stop a job, Amazon SageMaker sends the algorithm the SIGTERM signal, which delays job termination for 120 seconds. Algorithms might use this 120-second window to save the model artifacts.  When Amazon SageMaker terminates a job because the stopping condition has been met, training algorithms provided by Amazon SageMaker save the intermediate results of the job. This intermediate data is a valid model artifact. You can use it to create a model using the CreateModel API. 
       */
-    var StoppingCondition: StoppingCondition
+    var StoppingCondition: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.StoppingCondition
     /**
       * An array of key-value pairs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide. 
       */
@@ -764,7 +764,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the training job. The name must be unique within an AWS Region in an AWS account. 
       */
-    var TrainingJobName: TrainingJobName
+    var TrainingJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingJobName
     /**
       * A VpcConfig object that specifies the VPC that you want your training job to connect to. Control access to and from your training container by configuring the VPC. For more information, see Protect Training Jobs by Using an Amazon Virtual Private Cloud.
       */
@@ -775,7 +775,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the training job.
       */
-    var TrainingJobArn: TrainingJobArn
+    var TrainingJobArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingJobArn
   }
   
   trait CreateTransformJobRequest extends js.Object {
@@ -798,7 +798,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the model that you want to use for the transform job. ModelName must be the name of an existing Amazon SageMaker model within an AWS Region in an AWS account.
       */
-    var ModelName: ModelName
+    var ModelName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelName
     /**
       * (Optional) An array of key-value pairs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide.
       */
@@ -806,26 +806,26 @@ object SageMakerNs extends js.Object {
     /**
       * Describes the input source and the way the transform job consumes it.
       */
-    var TransformInput: TransformInput
+    var TransformInput: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformInput
     /**
       * The name of the transform job. The name must be unique within an AWS Region in an AWS account. 
       */
-    var TransformJobName: TransformJobName
+    var TransformJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformJobName
     /**
       * Describes the results of the transform job.
       */
-    var TransformOutput: TransformOutput
+    var TransformOutput: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformOutput
     /**
       * Describes the resources, including ML instance types and ML instance count, to use for the transform job.
       */
-    var TransformResources: TransformResources
+    var TransformResources: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformResources
   }
   
   trait CreateTransformJobResponse extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the transform job.
       */
-    var TransformJobArn: TransformJobArn
+    var TransformJobArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformJobArn
   }
   
   trait CreateWorkteamRequest extends js.Object {
@@ -836,7 +836,7 @@ object SageMakerNs extends js.Object {
     /**
       * A list of MemberDefinition objects that contains objects that identify the Amazon Cognito user pool that makes up the work team. For more information, see Amazon Cognito User Pools. All of the CognitoMemberDefinition objects that make up the member definition must have the same ClientId and UserPool values.
       */
-    var MemberDefinitions: MemberDefinitions
+    var MemberDefinitions: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.MemberDefinitions
     /**
       * 
       */
@@ -844,7 +844,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the work team. Use this name to identify the work team.
       */
-    var WorkteamName: WorkteamName
+    var WorkteamName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.WorkteamName
   }
   
   trait CreateWorkteamResponse extends js.Object {
@@ -858,7 +858,7 @@ object SageMakerNs extends js.Object {
     /**
       * The S3 location of the data source that is associated with a channel.
       */
-    var S3DataSource: S3DataSource
+    var S3DataSource: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.S3DataSource
   }
   
   trait DeleteAlgorithmInput extends js.Object {
@@ -879,21 +879,21 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the endpoint configuration that you want to delete.
       */
-    var EndpointConfigName: EndpointConfigName
+    var EndpointConfigName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointConfigName
   }
   
   trait DeleteEndpointInput extends js.Object {
     /**
       * The name of the endpoint that you want to delete.
       */
-    var EndpointName: EndpointName
+    var EndpointName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointName
   }
   
   trait DeleteModelInput extends js.Object {
     /**
       * The name of the model to delete.
       */
-    var ModelName: ModelName
+    var ModelName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelName
   }
   
   trait DeleteModelPackageInput extends js.Object {
@@ -907,21 +907,21 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the Amazon SageMaker notebook instance to delete.
       */
-    var NotebookInstanceName: NotebookInstanceName
+    var NotebookInstanceName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.NotebookInstanceName
   }
   
   trait DeleteNotebookInstanceLifecycleConfigInput extends js.Object {
     /**
       * The name of the lifecycle configuration to delete.
       */
-    var NotebookInstanceLifecycleConfigName: NotebookInstanceLifecycleConfigName
+    var NotebookInstanceLifecycleConfigName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.NotebookInstanceLifecycleConfigName
   }
   
   trait DeleteTagsInput extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the resource whose tags you want to delete.
       */
-    var ResourceArn: ResourceArn
+    var ResourceArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ResourceArn
     /**
       * An array or one or more tag keys to delete.
       */
@@ -934,14 +934,14 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the work team to delete.
       */
-    var WorkteamName: WorkteamName
+    var WorkteamName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.WorkteamName
   }
   
   trait DeleteWorkteamResponse extends js.Object {
     /**
       * Returns true if the work team was successfully deleted; otherwise, returns false.
       */
-    var Success: Success
+    var Success: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.Success
   }
   
   trait DeployedImage extends js.Object {
@@ -970,7 +970,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the algorithm.
       */
-    var AlgorithmArn: AlgorithmArn
+    var AlgorithmArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.AlgorithmArn
     /**
       * A brief summary about the algorithm.
       */
@@ -982,11 +982,11 @@ object SageMakerNs extends js.Object {
     /**
       * The current status of the algorithm.
       */
-    var AlgorithmStatus: AlgorithmStatus
+    var AlgorithmStatus: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.AlgorithmStatus
     /**
       * Details about the current status of the algorithm.
       */
-    var AlgorithmStatusDetails: AlgorithmStatusDetails
+    var AlgorithmStatusDetails: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.AlgorithmStatusDetails
     /**
       * Whether the algorithm is certified to be listed in AWS Marketplace.
       */
@@ -994,7 +994,7 @@ object SageMakerNs extends js.Object {
     /**
       * A timestamp specifying when the algorithm was created.
       */
-    var CreationTime: CreationTime
+    var CreationTime: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreationTime
     /**
       * Details about inference jobs that the algorithm runs.
       */
@@ -1006,7 +1006,7 @@ object SageMakerNs extends js.Object {
     /**
       * Details about training jobs run by this algorithm.
       */
-    var TrainingSpecification: TrainingSpecification
+    var TrainingSpecification: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingSpecification
     /**
       * Details about configurations for one or more training jobs that Amazon SageMaker runs to test the algorithm.
       */
@@ -1024,7 +1024,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the Git repository.
       */
-    var CodeRepositoryArn: CodeRepositoryArn
+    var CodeRepositoryArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CodeRepositoryArn
     /**
       * The name of the Git repository.
       */
@@ -1032,7 +1032,7 @@ object SageMakerNs extends js.Object {
     /**
       * The date and time that the repository was created.
       */
-    var CreationTime: CreationTime
+    var CreationTime: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreationTime
     /**
       * Configuration details about the repository, including the URL where the repository is located, the default branch, and the Amazon Resource Name (ARN) of the AWS Secrets Manager secret that contains the credentials used to access the repository.
       */
@@ -1040,7 +1040,7 @@ object SageMakerNs extends js.Object {
     /**
       * The date and time that the repository was last changed.
       */
-    var LastModifiedTime: LastModifiedTime
+    var LastModifiedTime: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.LastModifiedTime
   }
   
   trait DescribeCompilationJobRequest extends js.Object {
@@ -1058,7 +1058,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of an IAM role that Amazon SageMaker assumes to perform the model compilation job.
       */
-    var CompilationJobArn: CompilationJobArn
+    var CompilationJobArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CompilationJobArn
     /**
       * The name of the model compilation job.
       */
@@ -1066,7 +1066,7 @@ object SageMakerNs extends js.Object {
     /**
       * The status of the model compilation job.
       */
-    var CompilationJobStatus: CompilationJobStatus
+    var CompilationJobStatus: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CompilationJobStatus
     /**
       * The time when the model compilation job started the CompilationJob instances.  You are billed for the time between this timestamp and the timestamp in the DescribeCompilationJobResponse$CompilationEndTime field. In Amazon CloudWatch Logs, the start time might be later than this time. That's because it takes time to download the compilation job, which depends on the size of the compilation job container. 
       */
@@ -1074,42 +1074,42 @@ object SageMakerNs extends js.Object {
     /**
       * The time that the model compilation job was created.
       */
-    var CreationTime: CreationTime
+    var CreationTime: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreationTime
     /**
       * If a model compilation job failed, the reason it failed. 
       */
-    var FailureReason: FailureReason
+    var FailureReason: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.FailureReason
     /**
       * Information about the location in Amazon S3 of the input model artifacts, the name and shape of the expected data inputs, and the framework in which the model was trained.
       */
-    var InputConfig: InputConfig
+    var InputConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.InputConfig
     /**
       * The time that the status of the model compilation job was last modified.
       */
-    var LastModifiedTime: LastModifiedTime
+    var LastModifiedTime: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.LastModifiedTime
     /**
       * Information about the location in Amazon S3 that has been configured for storing the model artifacts used in the compilation job.
       */
-    var ModelArtifacts: ModelArtifacts
+    var ModelArtifacts: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelArtifacts
     /**
       * Information about the output location for the compiled model and the target device that the model runs on.
       */
-    var OutputConfig: OutputConfig
+    var OutputConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.OutputConfig
     /**
       * The Amazon Resource Name (ARN) of the model compilation job.
       */
-    var RoleArn: RoleArn
+    var RoleArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.RoleArn
     /**
       * The duration allowed for model compilation.
       */
-    var StoppingCondition: StoppingCondition
+    var StoppingCondition: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.StoppingCondition
   }
   
   trait DescribeEndpointConfigInput extends js.Object {
     /**
       * The name of the endpoint configuration.
       */
-    var EndpointConfigName: EndpointConfigName
+    var EndpointConfigName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointConfigName
   }
   
   trait DescribeEndpointConfigOutput extends js.Object {
@@ -1120,11 +1120,11 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the endpoint configuration.
       */
-    var EndpointConfigArn: EndpointConfigArn
+    var EndpointConfigArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointConfigArn
     /**
       * Name of the Amazon SageMaker endpoint configuration.
       */
-    var EndpointConfigName: EndpointConfigName
+    var EndpointConfigName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointConfigName
     /**
       * AWS KMS key ID Amazon SageMaker uses to encrypt data when storing it on the ML storage volume attached to the instance.
       */
@@ -1139,7 +1139,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the endpoint.
       */
-    var EndpointName: EndpointName
+    var EndpointName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointName
   }
   
   trait DescribeEndpointOutput extends js.Object {
@@ -1150,19 +1150,19 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the endpoint.
       */
-    var EndpointArn: EndpointArn
+    var EndpointArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointArn
     /**
       * The name of the endpoint configuration associated with this endpoint.
       */
-    var EndpointConfigName: EndpointConfigName
+    var EndpointConfigName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointConfigName
     /**
       * Name of the endpoint.
       */
-    var EndpointName: EndpointName
+    var EndpointName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointName
     /**
       * The status of the endpoint.    OutOfService: Endpoint is not available to take incoming requests.    Creating: CreateEndpoint is executing.    Updating: UpdateEndpoint or UpdateEndpointWeightsAndCapacities is executing.    SystemUpdating: Endpoint is undergoing maintenance and cannot be updated or deleted or re-scaled until it has completed. This maintenance operation does not change any customer-specified values such as VPC config, KMS encryption, model, instance type, or instance count.    RollingBack: Endpoint fails to scale up or down or change its variant weight and is in the process of rolling back to its previous configuration. Once the rollback completes, endpoint returns to an InService status. This transitional status only applies to an endpoint that has autoscaling enabled and is undergoing variant weight or capacity changes as part of an UpdateEndpointWeightsAndCapacities call or when the UpdateEndpointWeightsAndCapacities operation is called explicitly.    InService: Endpoint is available to process incoming requests.    Deleting: DeleteEndpoint is executing.    Failed: Endpoint could not be created, updated, or re-scaled. Use DescribeEndpointOutput$FailureReason for information about the failure. DeleteEndpoint is the only operation that can be performed on a failed endpoint.  
       */
-    var EndpointStatus: EndpointStatus
+    var EndpointStatus: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointStatus
     /**
       * If the status of the endpoint is Failed, the reason why it failed. 
       */
@@ -1181,7 +1181,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the tuning job to describe.
       */
-    var HyperParameterTuningJobName: HyperParameterTuningJobName
+    var HyperParameterTuningJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.HyperParameterTuningJobName
   }
   
   trait DescribeHyperParameterTuningJobResponse extends js.Object {
@@ -1204,19 +1204,19 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the tuning job.
       */
-    var HyperParameterTuningJobArn: HyperParameterTuningJobArn
+    var HyperParameterTuningJobArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.HyperParameterTuningJobArn
     /**
       * The HyperParameterTuningJobConfig object that specifies the configuration of the tuning job.
       */
-    var HyperParameterTuningJobConfig: HyperParameterTuningJobConfig
+    var HyperParameterTuningJobConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.HyperParameterTuningJobConfig
     /**
       * The name of the tuning job.
       */
-    var HyperParameterTuningJobName: HyperParameterTuningJobName
+    var HyperParameterTuningJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.HyperParameterTuningJobName
     /**
       * The status of the tuning job: InProgress, Completed, Failed, Stopping, or Stopped.
       */
-    var HyperParameterTuningJobStatus: HyperParameterTuningJobStatus
+    var HyperParameterTuningJobStatus: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.HyperParameterTuningJobStatus
     /**
       * The date and time that the status of the tuning job was modified. 
       */
@@ -1224,7 +1224,7 @@ object SageMakerNs extends js.Object {
     /**
       * The ObjectiveStatusCounters object that specifies the number of training jobs, categorized by the status of their final objective metric, that this tuning job launched.
       */
-    var ObjectiveStatusCounters: ObjectiveStatusCounters
+    var ObjectiveStatusCounters: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ObjectiveStatusCounters
     /**
       * If the hyperparameter tuning job is an warm start tuning job with a WarmStartType of IDENTICAL_DATA_AND_ALGORITHM, this is the TrainingJobSummary for the training job with the best objective metric value of all training jobs launched by this tuning job and all parent jobs specified for the warm start tuning job.
       */
@@ -1236,7 +1236,7 @@ object SageMakerNs extends js.Object {
     /**
       * The TrainingJobStatusCounters object that specifies the number of training jobs, categorized by status, that this tuning job launched.
       */
-    var TrainingJobStatusCounters: TrainingJobStatusCounters
+    var TrainingJobStatusCounters: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingJobStatusCounters
     /**
       * The configuration for starting the hyperparameter parameter tuning job using one or more previous tuning jobs as a starting point. The results of previous tuning jobs are used to inform which combinations of hyperparameters to search over in the new tuning job.
       */
@@ -1247,7 +1247,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the labeling job to return information for.
       */
-    var LabelingJobName: LabelingJobName
+    var LabelingJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.LabelingJobName
   }
   
   trait DescribeLabelingJobResponse extends js.Object {
@@ -1262,7 +1262,7 @@ object SageMakerNs extends js.Object {
     /**
       * Configuration information required for human workers to complete a labeling task.
       */
-    var HumanTaskConfig: HumanTaskConfig
+    var HumanTaskConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.HumanTaskConfig
     /**
       * Input configuration information for the labeling job, such as the Amazon S3 location of the data objects and the location of the manifest file that describes the data objects.
       */
@@ -1270,7 +1270,7 @@ object SageMakerNs extends js.Object {
     /**
       * A unique identifier for work done as part of a labeling job.
       */
-    var JobReferenceCode: JobReferenceCode
+    var JobReferenceCode: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.JobReferenceCode
     /**
       * The attribute used as the label in the output manifest file.
       */
@@ -1282,7 +1282,7 @@ object SageMakerNs extends js.Object {
     /**
       * Provides a breakdown of the number of data objects labeled by humans, the number of objects labeled by machine, the number of objects than couldn't be labeled, and the total number of objects labeled. 
       */
-    var LabelCounters: LabelCounters
+    var LabelCounters: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.LabelCounters
     /**
       * Configuration information for automated data labeling.
       */
@@ -1290,11 +1290,11 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the labeling job.
       */
-    var LabelingJobArn: LabelingJobArn
+    var LabelingJobArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.LabelingJobArn
     /**
       * The name assigned to the labeling job when it was created.
       */
-    var LabelingJobName: LabelingJobName
+    var LabelingJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.LabelingJobName
     /**
       * The location of the output produced by the labeling job.
       */
@@ -1302,7 +1302,7 @@ object SageMakerNs extends js.Object {
     /**
       * The processing status of the labeling job. 
       */
-    var LabelingJobStatus: LabelingJobStatus
+    var LabelingJobStatus: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.LabelingJobStatus
     /**
       * The date and time that the labeling job was last updated.
       */
@@ -1314,7 +1314,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) that Amazon SageMaker assumes to perform tasks on your behalf during data labeling.
       */
-    var RoleArn: RoleArn
+    var RoleArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.RoleArn
     /**
       * A set of conditions for stopping a labeling job. If any of the conditions are met, the job is automatically stopped.
       */
@@ -1329,7 +1329,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the model.
       */
-    var ModelName: ModelName
+    var ModelName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelName
   }
   
   trait DescribeModelOutput extends js.Object {
@@ -1352,11 +1352,11 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the model.
       */
-    var ModelArn: ModelArn
+    var ModelArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelArn
     /**
       * Name of the Amazon SageMaker model.
       */
-    var ModelName: ModelName
+    var ModelName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelName
     /**
       * The location of the primary inference code, associated artifacts, and custom environment map that the inference code uses when it is deployed in production. 
       */
@@ -1382,7 +1382,7 @@ object SageMakerNs extends js.Object {
     /**
       * A timestamp specifying when the model package was created.
       */
-    var CreationTime: CreationTime
+    var CreationTime: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreationTime
     /**
       * Details about inference jobs that can be run with models based on this model package.
       */
@@ -1390,7 +1390,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the model package.
       */
-    var ModelPackageArn: ModelPackageArn
+    var ModelPackageArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelPackageArn
     /**
       * A brief summary of the model package.
       */
@@ -1402,11 +1402,11 @@ object SageMakerNs extends js.Object {
     /**
       * The current status of the model package.
       */
-    var ModelPackageStatus: ModelPackageStatus
+    var ModelPackageStatus: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelPackageStatus
     /**
       * Details about the current status of the model package.
       */
-    var ModelPackageStatusDetails: ModelPackageStatusDetails
+    var ModelPackageStatusDetails: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelPackageStatusDetails
     /**
       * Details about the algorithm that was used to create the model package.
       */
@@ -1421,14 +1421,14 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the notebook instance that you want information about.
       */
-    var NotebookInstanceName: NotebookInstanceName
+    var NotebookInstanceName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.NotebookInstanceName
   }
   
   trait DescribeNotebookInstanceLifecycleConfigInput extends js.Object {
     /**
       * The name of the lifecycle configuration to describe.
       */
-    var NotebookInstanceLifecycleConfigName: NotebookInstanceLifecycleConfigName
+    var NotebookInstanceLifecycleConfigName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.NotebookInstanceLifecycleConfigName
   }
   
   trait DescribeNotebookInstanceLifecycleConfigOutput extends js.Object {
@@ -1545,28 +1545,28 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the subscribed work team to describe.
       */
-    var WorkteamArn: WorkteamArn
+    var WorkteamArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.WorkteamArn
   }
   
   trait DescribeSubscribedWorkteamResponse extends js.Object {
     /**
       * A Workteam instance that contains information about the work team.
       */
-    var SubscribedWorkteam: SubscribedWorkteam
+    var SubscribedWorkteam: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.SubscribedWorkteam
   }
   
   trait DescribeTrainingJobRequest extends js.Object {
     /**
       * The name of the training job.
       */
-    var TrainingJobName: TrainingJobName
+    var TrainingJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingJobName
   }
   
   trait DescribeTrainingJobResponse extends js.Object {
     /**
       * Information about the algorithm used for training, and algorithm metadata. 
       */
-    var AlgorithmSpecification: AlgorithmSpecification
+    var AlgorithmSpecification: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.AlgorithmSpecification
     /**
       * A timestamp that indicates when the training job was created.
       */
@@ -1606,7 +1606,7 @@ object SageMakerNs extends js.Object {
     /**
       * Information about the Amazon S3 location that is configured for storing model artifacts. 
       */
-    var ModelArtifacts: ModelArtifacts
+    var ModelArtifacts: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelArtifacts
     /**
       * The S3 path where model artifacts that you configured when creating the job are stored. Amazon SageMaker creates subfolders for model artifacts. 
       */
@@ -1614,7 +1614,7 @@ object SageMakerNs extends js.Object {
     /**
       * Resources, including ML compute instances and ML storage volumes, that are configured for model training. 
       */
-    var ResourceConfig: ResourceConfig
+    var ResourceConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ResourceConfig
     /**
       * The AWS Identity and Access Management (IAM) role configured for the training job. 
       */
@@ -1622,7 +1622,7 @@ object SageMakerNs extends js.Object {
     /**
       *  Provides detailed information about the state of the training job. For detailed information on the secondary status of the training job, see StatusMessage under SecondaryStatusTransition. Amazon SageMaker provides primary statuses and secondary statuses that apply to each of them:  InProgress     Starting - Starting the training job.    Downloading - An optional stage for algorithms that support File training input mode. It indicates that data is being downloaded to the ML storage volumes.    Training - Training is in progress.    Uploading - Training is complete and the model artifacts are being uploaded to the S3 location.    Completed     Completed - The training job has completed.    Failed     Failed - The training job has failed. The reason for the failure is returned in the FailureReason field of DescribeTrainingJobResponse.    Stopped     MaxRuntimeExceeded - The job stopped because it exceeded the maximum allowed runtime.    Stopped - The training job has stopped.    Stopping     Stopping - Stopping the training job.      Valid values for SecondaryStatus are subject to change.   We no longer support the following secondary statuses:    LaunchingMLInstances     PreparingTrainingStack     DownloadingTrainingImage   
       */
-    var SecondaryStatus: SecondaryStatus
+    var SecondaryStatus: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.SecondaryStatus
     /**
       * A history of all of the secondary statuses that the training job has transitioned through.
       */
@@ -1630,7 +1630,7 @@ object SageMakerNs extends js.Object {
     /**
       * The condition under which to stop the training job. 
       */
-    var StoppingCondition: StoppingCondition
+    var StoppingCondition: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.StoppingCondition
     /**
       * Indicates the time when the training job ends on training instances. You are billed for the time interval between the value of TrainingStartTime and this time. For successful jobs and stopped jobs, this is the time after model artifacts are uploaded. For failed jobs, this is the time when Amazon SageMaker detects a job failure.
       */
@@ -1638,15 +1638,15 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the training job.
       */
-    var TrainingJobArn: TrainingJobArn
+    var TrainingJobArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingJobArn
     /**
       *  Name of the model training job. 
       */
-    var TrainingJobName: TrainingJobName
+    var TrainingJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingJobName
     /**
       * The status of the training job. Amazon SageMaker provides the following training job statuses:    InProgress - The training is in progress.    Completed - The training job has completed.    Failed - The training job has failed. To see the reason for the failure, see the FailureReason field in the response to a DescribeTrainingJobResponse call.    Stopping - The training job is stopping.    Stopped - The training job has stopped.   For more detailed information, see SecondaryStatus. 
       */
-    var TrainingJobStatus: TrainingJobStatus
+    var TrainingJobStatus: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingJobStatus
     /**
       * Indicates the time when the training job starts on training instances. You are billed for the time interval between this time and the value of TrainingEndTime. The start time in CloudWatch Logs might be later than this time. The difference is due to the time it takes to download the training data and to the size of the training container.
       */
@@ -1665,7 +1665,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the transform job that you want to view details of.
       */
-    var TransformJobName: TransformJobName
+    var TransformJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformJobName
   }
   
   trait DescribeTransformJobResponse extends js.Object {
@@ -1700,7 +1700,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the model used in the transform job.
       */
-    var ModelName: ModelName
+    var ModelName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelName
     /**
       * Indicates when the transform job has been completed, or has stopped or failed. You are billed for the time interval between this time and the value of TransformStartTime.
       */
@@ -1708,19 +1708,19 @@ object SageMakerNs extends js.Object {
     /**
       * Describes the dataset to be transformed and the Amazon S3 location where it is stored.
       */
-    var TransformInput: TransformInput
+    var TransformInput: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformInput
     /**
       * The Amazon Resource Name (ARN) of the transform job.
       */
-    var TransformJobArn: TransformJobArn
+    var TransformJobArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformJobArn
     /**
       * The name of the transform job.
       */
-    var TransformJobName: TransformJobName
+    var TransformJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformJobName
     /**
       * The status of the transform job. If the transform job failed, the reason is returned in the FailureReason field.
       */
-    var TransformJobStatus: TransformJobStatus
+    var TransformJobStatus: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformJobStatus
     /**
       * Identifies the Amazon S3 location where you want Amazon SageMaker to save the results from the transform job.
       */
@@ -1728,7 +1728,7 @@ object SageMakerNs extends js.Object {
     /**
       * Describes the resources, including ML instance types and ML instance count, to use for the transform job.
       */
-    var TransformResources: TransformResources
+    var TransformResources: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformResources
     /**
       * Indicates when the transform job starts on ML instances. You are billed for the time interval between this time and the value of TransformEndTime.
       */
@@ -1739,14 +1739,14 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the work team to return a description of.
       */
-    var WorkteamName: WorkteamName
+    var WorkteamName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.WorkteamName
   }
   
   trait DescribeWorkteamResponse extends js.Object {
     /**
       * A Workteam instance that contains information about the work team. 
       */
-    var Workteam: Workteam
+    var Workteam: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.Workteam
   }
   
   trait DesiredWeightAndCapacity extends js.Object {
@@ -1761,7 +1761,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the variant to update.
       */
-    var VariantName: VariantName
+    var VariantName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.VariantName
   }
   
   trait EndpointConfigSummary extends js.Object {
@@ -1772,11 +1772,11 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the endpoint configuration.
       */
-    var EndpointConfigArn: EndpointConfigArn
+    var EndpointConfigArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointConfigArn
     /**
       * The name of the endpoint configuration.
       */
-    var EndpointConfigName: EndpointConfigName
+    var EndpointConfigName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointConfigName
   }
   
   trait EndpointSummary extends js.Object {
@@ -1787,15 +1787,15 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the endpoint.
       */
-    var EndpointArn: EndpointArn
+    var EndpointArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointArn
     /**
       * The name of the endpoint.
       */
-    var EndpointName: EndpointName
+    var EndpointName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointName
     /**
       * The status of the endpoint.    OutOfService: Endpoint is not available to take incoming requests.    Creating: CreateEndpoint is executing.    Updating: UpdateEndpoint or UpdateEndpointWeightsAndCapacities is executing.    SystemUpdating: Endpoint is undergoing maintenance and cannot be updated or deleted or re-scaled until it has completed. This maintenance operation does not change any customer-specified values such as VPC config, KMS encryption, model, instance type, or instance count.    RollingBack: Endpoint fails to scale up or down or change its variant weight and is in the process of rolling back to its previous configuration. Once the rollback completes, endpoint returns to an InService status. This transitional status only applies to an endpoint that has autoscaling enabled and is undergoing variant weight or capacity changes as part of an UpdateEndpointWeightsAndCapacities call or when the UpdateEndpointWeightsAndCapacities operation is called explicitly.    InService: Endpoint is available to process incoming requests.    Deleting: DeleteEndpoint is executing.    Failed: Endpoint could not be created, updated, or re-scaled. Use DescribeEndpointOutput$FailureReason for information about the failure. DeleteEndpoint is the only operation that can be performed on a failed endpoint.   To get a list of endpoints with a specified status, use the ListEndpointsInput$StatusEquals filter.
       */
-    var EndpointStatus: EndpointStatus
+    var EndpointStatus: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointStatus
     /**
       * A timestamp that shows when the endpoint was last modified.
       */
@@ -1824,7 +1824,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the objective metric.
       */
-    var MetricName: MetricName
+    var MetricName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.MetricName
     /**
       * Whether to minimize or maximize the objective metric. Valid values are Minimize and Maximize.
       */
@@ -1879,7 +1879,7 @@ object SageMakerNs extends js.Object {
     /**
       * Configures how labels are consolidated across human workers.
       */
-    var AnnotationConsolidationConfig: AnnotationConsolidationConfig
+    var AnnotationConsolidationConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.AnnotationConsolidationConfig
     /**
       * Defines the maximum number of data objects that can be labeled by human workers at the same time. Each object may have more than one worker at one time.
       */
@@ -1887,7 +1887,7 @@ object SageMakerNs extends js.Object {
     /**
       * The number of human workers that will label an object. 
       */
-    var NumberOfHumanWorkersPerDataObject: NumberOfHumanWorkersPerDataObject
+    var NumberOfHumanWorkersPerDataObject: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.NumberOfHumanWorkersPerDataObject
     /**
       * The Amazon Resource Name (ARN) of a Lambda function that is run before a data object is sent to a human worker. Use this function to provide input to a custom labeling job. For the built-in bounding box, image classification, semantic segmentation, and text classification task types, Amazon SageMaker Ground Truth provides the following Lambda functions:  US East (Northern Virginia) (us-east-1):     arn:aws:lambda:us-east-1:432418664414:function:PRE-BoundingBox     arn:aws:lambda:us-east-1:432418664414:function:PRE-ImageMultiClass     arn:aws:lambda:us-east-1:432418664414:function:PRE-SemanticSegmentation     arn:aws:lambda:us-east-1:432418664414:function:PRE-TextMultiClass     US East (Ohio) (us-east-2):     arn:aws:lambda:us-east-2:266458841044:function:PRE-BoundingBox     arn:aws:lambda:us-east-2:266458841044:function:PRE-ImageMultiClass     arn:aws:lambda:us-east-2:266458841044:function:PRE-SemanticSegmentation     arn:aws:lambda:us-east-2:266458841044:function:PRE-TextMultiClass     US West (Oregon) (us-west-2):     arn:aws:lambda:us-west-2:081040173940:function:PRE-BoundingBox     arn:aws:lambda:us-west-2:081040173940:function:PRE-ImageMultiClass     arn:aws:lambda:us-west-2:081040173940:function:PRE-SemanticSegmentation     arn:aws:lambda:us-west-2:081040173940:function:PRE-TextMultiClass     EU (Ireland) (eu-west-1):     arn:aws:lambda:eu-west-1:568282634449:function:PRE-BoundingBox     arn:aws:lambda:eu-west-1:568282634449:function:PRE-ImageMultiClass     arn:aws:lambda:eu-west-1:568282634449:function:PRE-SemanticSegmentation     arn:aws:lambda:eu-west-1:568282634449:function:PRE-TextMultiClass     Asia Pacific (Tokyo (ap-northeast-1):     arn:aws:lambda:ap-northeast-1:477331159723:function:PRE-BoundingBox     arn:aws:lambda:ap-northeast-1:477331159723:function:PRE-ImageMultiClass     arn:aws:lambda:ap-northeast-1:477331159723:function:PRE-SemanticSegmentation     arn:aws:lambda:ap-northeast-1:477331159723:function:PRE-TextMultiClass   
       */
@@ -1903,7 +1903,7 @@ object SageMakerNs extends js.Object {
     /**
       * A description of the task for your human workers.
       */
-    var TaskDescription: TaskDescription
+    var TaskDescription: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TaskDescription
     /**
       * Keywords used to describe the task so that workers on Amazon Mechanical Turk can discover the task.
       */
@@ -1911,19 +1911,19 @@ object SageMakerNs extends js.Object {
     /**
       * The amount of time that a worker has to complete a task.
       */
-    var TaskTimeLimitInSeconds: TaskTimeLimitInSeconds
+    var TaskTimeLimitInSeconds: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TaskTimeLimitInSeconds
     /**
       * A title for the task for your human workers.
       */
-    var TaskTitle: TaskTitle
+    var TaskTitle: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TaskTitle
     /**
       * Information about the user interface that workers use to complete the labeling task.
       */
-    var UiConfig: UiConfig
+    var UiConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UiConfig
     /**
       * The Amazon Resource Name (ARN) of the work team assigned to complete the tasks.
       */
-    var WorkteamArn: WorkteamArn
+    var WorkteamArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.WorkteamArn
   }
   
   trait HyperParameterAlgorithmSpecification extends js.Object {
@@ -1942,7 +1942,7 @@ object SageMakerNs extends js.Object {
     /**
       * The input mode that the algorithm supports: File or Pipe. In File input mode, Amazon SageMaker downloads the training data from Amazon S3 to the storage volume that is attached to the training instance and mounts the directory to the Docker volume for the training container. In Pipe input mode, Amazon SageMaker streams data directly from Amazon S3 to the container.  If you specify File mode, make sure that you provision the storage volume that is attached to the training instance with enough capacity to accommodate the training data downloaded from Amazon S3, the model artifacts, and intermediate information.  For more information about input modes, see Algorithms. 
       */
-    var TrainingInputMode: TrainingInputMode
+    var TrainingInputMode: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingInputMode
   }
   
   trait HyperParameterSpecification extends js.Object {
@@ -1996,15 +1996,15 @@ object SageMakerNs extends js.Object {
     /**
       * Specifies the path to the Amazon S3 bucket where you store model artifacts from the training jobs that the tuning job launches.
       */
-    var OutputDataConfig: OutputDataConfig
+    var OutputDataConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.OutputDataConfig
     /**
       * The resources, including the compute instances and storage volumes, to use for the training jobs that the tuning job launches. Storage volumes store model artifacts and incremental states. Training algorithms might also use storage volumes for scratch space. If you want Amazon SageMaker to use the storage volume to store the training data, choose File as the TrainingInputMode in the algorithm specification. For distributed training algorithms, specify an instance count greater than 1.
       */
-    var ResourceConfig: ResourceConfig
+    var ResourceConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ResourceConfig
     /**
       * The Amazon Resource Name (ARN) of the IAM role associated with the training jobs that the tuning job launches.
       */
-    var RoleArn: RoleArn
+    var RoleArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.RoleArn
     /**
       * Specifies the values of hyperparameters that do not change for the tuning job.
       */
@@ -2012,7 +2012,7 @@ object SageMakerNs extends js.Object {
     /**
       * Sets a maximum duration for the training jobs that the tuning job launches. Use this parameter to limit model training costs.  To stop a job, Amazon SageMaker sends the algorithm the SIGTERM signal. This delays job termination for 120 seconds. Algorithms might use this 120-second window to save the model artifacts. When Amazon SageMaker terminates a job because the stopping condition has been met, training algorithms provided by Amazon SageMaker save the intermediate results of the job.
       */
-    var StoppingCondition: StoppingCondition
+    var StoppingCondition: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.StoppingCondition
     /**
       * The VpcConfig object that specifies the VPC that you want the training jobs that this hyperparameter tuning job launches to connect to. Control access to and from your training container by configuring the VPC. For more information, see Protect Training Jobs by Using an Amazon Virtual Private Cloud.
       */
@@ -2043,15 +2043,15 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the training job.
       */
-    var TrainingJobArn: TrainingJobArn
+    var TrainingJobArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingJobArn
     /**
       * The name of the training job.
       */
-    var TrainingJobName: TrainingJobName
+    var TrainingJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingJobName
     /**
       * The status of the training job.
       */
-    var TrainingJobStatus: TrainingJobStatus
+    var TrainingJobStatus: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingJobStatus
     /**
       * The date and time that the training job started.
       */
@@ -2070,15 +2070,15 @@ object SageMakerNs extends js.Object {
     /**
       * The HyperParameterTuningJobObjective object that specifies the objective metric for this tuning job.
       */
-    var HyperParameterTuningJobObjective: HyperParameterTuningJobObjective
+    var HyperParameterTuningJobObjective: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.HyperParameterTuningJobObjective
     /**
       * The ParameterRanges object that specifies the ranges of hyperparameters that this tuning job searches.
       */
-    var ParameterRanges: ParameterRanges
+    var ParameterRanges: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ParameterRanges
     /**
       * The ResourceLimits object that specifies the maximum number of training jobs and parallel training jobs for this tuning job.
       */
-    var ResourceLimits: ResourceLimits
+    var ResourceLimits: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ResourceLimits
     /**
       * Specifies the search strategy for hyperparameters. Currently, the only valid value is Bayesian.
       */
@@ -2093,7 +2093,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the metric to use for the objective metric.
       */
-    var MetricName: MetricName
+    var MetricName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.MetricName
     /**
       * Whether to minimize or maximize the objective metric.
       */
@@ -2112,15 +2112,15 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the tuning job.
       */
-    var HyperParameterTuningJobArn: HyperParameterTuningJobArn
+    var HyperParameterTuningJobArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.HyperParameterTuningJobArn
     /**
       * The name of the tuning job.
       */
-    var HyperParameterTuningJobName: HyperParameterTuningJobName
+    var HyperParameterTuningJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.HyperParameterTuningJobName
     /**
       * The status of the tuning job.
       */
-    var HyperParameterTuningJobStatus: HyperParameterTuningJobStatus
+    var HyperParameterTuningJobStatus: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.HyperParameterTuningJobStatus
     /**
       * The date and time that the tuning job was modified.
       */
@@ -2128,7 +2128,7 @@ object SageMakerNs extends js.Object {
     /**
       * The ObjectiveStatusCounters object that specifies the numbers of training jobs, categorized by objective metric status, that this tuning job launched.
       */
-    var ObjectiveStatusCounters: ObjectiveStatusCounters
+    var ObjectiveStatusCounters: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ObjectiveStatusCounters
     /**
       * The ResourceLimits object that specifies the maximum number of training jobs and parallel training jobs allowed for this tuning job.
       */
@@ -2140,14 +2140,14 @@ object SageMakerNs extends js.Object {
     /**
       * The TrainingJobStatusCounters object that specifies the numbers of training jobs, categorized by status, that this tuning job launched.
       */
-    var TrainingJobStatusCounters: TrainingJobStatusCounters
+    var TrainingJobStatusCounters: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingJobStatusCounters
   }
   
   trait HyperParameterTuningJobWarmStartConfig extends js.Object {
     /**
       * An array of hyperparameter tuning jobs that are used as the starting point for the new hyperparameter tuning job. For more information about warm starting a hyperparameter tuning job, see Using a Previous Hyperparameter Tuning Job as a Starting Point. Hyperparameter tuning jobs created before October 1, 2018 cannot be used as parent jobs for warm start tuning jobs.
       */
-    var ParentHyperParameterTuningJobs: ParentHyperParameterTuningJobs
+    var ParentHyperParameterTuningJobs: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ParentHyperParameterTuningJobs
     /**
       * Specifies one of the following:  IDENTICAL_DATA_AND_ALGORITHM  The new hyperparameter tuning job uses the same input data and training image as the parent tuning jobs. You can change the hyperparameter ranges to search and the maximum number of training jobs that the hyperparameter tuning job launches. You cannot use a new version of the training algorithm, unless the changes in the new version do not affect the algorithm itself. For example, changes that improve logging or adding support for a different data format are allowed. You can also change hyperparameters from tunable to static, and from static to tunable, but the total number of static plus tunable hyperparameters must remain the same as it is in all parent jobs. The objective metric for the new tuning job must be the same as for all parent jobs.  TRANSFER_LEARNING  The new hyperparameter tuning job can include input data, hyperparameter ranges, maximum number of concurrent training jobs, and maximum number of training jobs that are different than those of its parent hyperparameter tuning jobs. The training image can also be a different version from the version used in the parent hyperparameter tuning job. You can also change hyperparameters from tunable to static, and from static to tunable, but the total number of static plus tunable hyperparameters must remain the same as it is in all parent jobs. The objective metric for the new tuning job must be the same as for all parent jobs.  
       */
@@ -2184,15 +2184,15 @@ object SageMakerNs extends js.Object {
     /**
       * Specifies the name and shape of the expected data inputs for your trained model with a JSON dictionary form. The data inputs are InputConfig$Framework specific.     TensorFlow: You must specify the name and shape (NHWC format) of the expected data inputs using a dictionary format for your trained model. The dictionary formats required for the console and CLI are different.   Examples for one input:   If using the console, {"input":[1,1024,1024,3]}    If using the CLI, {\"input\":[1,1024,1024,3]}      Examples for two inputs:   If using the console, {"data1": [1,28,28,1], "data2":[1,28,28,1]}    If using the CLI, {\"data1\": [1,28,28,1], \"data2\":[1,28,28,1]}         MXNET/ONNX: You must specify the name and shape (NCHW format) of the expected data inputs in order using a dictionary format for your trained model. The dictionary formats required for the console and CLI are different.   Examples for one input:   If using the console, {"data":[1,3,1024,1024]}    If using the CLI, {\"data\":[1,3,1024,1024]}      Examples for two inputs:   If using the console, {"var1": [1,1,28,28], "var2":[1,1,28,28]}     If using the CLI, {\"var1\": [1,1,28,28], \"var2\":[1,1,28,28]}         PyTorch: You can either specify the name and shape (NCHW format) of expected data inputs in order using a dictionary format for your trained model or you can specify the shape only using a list format. The dictionary formats required for the console and CLI are different. The list formats for the console and CLI are the same.   Examples for one input in dictionary format:   If using the console, {"input0":[1,3,224,224]}    If using the CLI, {\"input0\":[1,3,224,224]}      Example for one input in list format: [[1,3,224,224]]    Examples for two inputs in dictionary format:   If using the console, {"input0":[1,3,224,224], "input1":[1,3,224,224]}    If using the CLI, {\"input0\":[1,3,224,224], \"input1\":[1,3,224,224]}       Example for two inputs in list format: [[1,3,224,224], [1,3,224,224]]       XGBOOST: input data name and shape are not needed.  
       */
-    var DataInputConfig: DataInputConfig
+    var DataInputConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DataInputConfig
     /**
       * Identifies the framework in which the model was trained. For example: TENSORFLOW.
       */
-    var Framework: Framework
+    var Framework: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.Framework
     /**
       * The S3 path where the model artifacts, which result from model training, are stored. This path must point to a single gzip compressed tar archive (.tar.gz suffix).
       */
-    var S3Uri: S3Uri
+    var S3Uri: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.S3Uri
   }
   
   trait IntegerParameterRange extends js.Object {
@@ -2267,7 +2267,7 @@ object SageMakerNs extends js.Object {
     /**
       * Specifies the Amazon Resource Name (ARN) of the algorithm used for auto-labeling. You must select one of the following ARNs:    Image classification   arn:aws:sagemaker:region:027400017018:labeling-job-algorithm-specification/image-classification     Text classification   arn:aws:sagemaker:region:027400017018:labeling-job-algorithm-specification/text-classification     Object detection   arn:aws:sagemaker:region:027400017018:labeling-job-algorithm-specification/object-detection   
       */
-    var LabelingJobAlgorithmSpecificationArn: LabelingJobAlgorithmSpecificationArn
+    var LabelingJobAlgorithmSpecificationArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.LabelingJobAlgorithmSpecificationArn
     /**
       * Provides configuration information for a labeling job.
       */
@@ -2296,7 +2296,7 @@ object SageMakerNs extends js.Object {
     /**
       * A unique identifier for a labeling job. You can use this to refer to a specific labeling job.
       */
-    var JobReferenceCode: JobReferenceCode
+    var JobReferenceCode: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.JobReferenceCode
     /**
       * Provides information about the progress of a labeling job.
       */
@@ -2389,15 +2389,15 @@ object SageMakerNs extends js.Object {
     /**
       * Counts showing the progress of the labeling job.
       */
-    var LabelCounters: LabelCounters
+    var LabelCounters: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.LabelCounters
     /**
       * The Amazon Resource Name (ARN) assigned to the labeling job when it was created.
       */
-    var LabelingJobArn: LabelingJobArn
+    var LabelingJobArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.LabelingJobArn
     /**
       * The name of the labeling job.
       */
-    var LabelingJobName: LabelingJobName
+    var LabelingJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.LabelingJobName
     /**
       * The location of the output produced by the labeling job.
       */
@@ -2405,7 +2405,7 @@ object SageMakerNs extends js.Object {
     /**
       * The current status of the labeling job. 
       */
-    var LabelingJobStatus: LabelingJobStatus
+    var LabelingJobStatus: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.LabelingJobStatus
     /**
       * The date and time that the job was last modified (timestamp).
       */
@@ -2417,7 +2417,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the work team assigned to the job.
       */
-    var WorkteamArn: WorkteamArn
+    var WorkteamArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.WorkteamArn
   }
   
   trait ListAlgorithmsInput extends js.Object {
@@ -2455,7 +2455,7 @@ object SageMakerNs extends js.Object {
     /**
       * &gt;An array of AlgorithmSummary objects, each of which lists an algorithm.
       */
-    var AlgorithmSummaryList: AlgorithmSummaryList
+    var AlgorithmSummaryList: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.AlgorithmSummaryList
     /**
       * If the response is truncated, Amazon SageMaker returns this token. To retrieve the next set of algorithms, use it in the subsequent request.
       */
@@ -2505,7 +2505,7 @@ object SageMakerNs extends js.Object {
     /**
       * Gets a list of summaries of the Git repositories. Each summary specifies the following values for the repository:    Name   Amazon Resource Name (ARN)   Creation time   Last modified time   Configuration information, including the URL location of the repository and the ARN of the AWS Secrets Manager secret that contains the credentials used to access the repository.  
       */
-    var CodeRepositorySummaryList: CodeRepositorySummaryList
+    var CodeRepositorySummaryList: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CodeRepositorySummaryList
     /**
       * If the result of a ListCodeRepositoriesOutput request was truncated, the response includes a NextToken. To get the next set of Git repositories, use the token in the next request.
       */
@@ -2559,7 +2559,7 @@ object SageMakerNs extends js.Object {
     /**
       * An array of CompilationJobSummary objects, each describing a model compilation job. 
       */
-    var CompilationJobSummaries: CompilationJobSummaries
+    var CompilationJobSummaries: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CompilationJobSummaries
     /**
       * If the response is truncated, Amazon SageMaker returns this NextToken. To retrieve the next set of model compilation jobs, use this token in the next request.
       */
@@ -2709,7 +2709,7 @@ object SageMakerNs extends js.Object {
     /**
       * A list of HyperParameterTuningJobSummary objects that describe the tuning jobs that the ListHyperParameterTuningJobs request returned.
       */
-    var HyperParameterTuningJobSummaries: HyperParameterTuningJobSummaries
+    var HyperParameterTuningJobSummaries: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.HyperParameterTuningJobSummaries
     /**
       * If the result of this ListHyperParameterTuningJobs request was truncated, the response includes a NextToken. To retrieve the next set of tuning jobs, use the token in the next request.
       */
@@ -2748,7 +2748,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the work team for which you want to see labeling jobs for.
       */
-    var WorkteamArn: WorkteamArn
+    var WorkteamArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.WorkteamArn
   }
   
   trait ListLabelingJobsForWorkteamResponse extends js.Object {
@@ -2851,7 +2851,7 @@ object SageMakerNs extends js.Object {
     /**
       * An array of ModelPackageSummary objects, each of which lists a model package.
       */
-    var ModelPackageSummaryList: ModelPackageSummaryList
+    var ModelPackageSummaryList: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelPackageSummaryList
     /**
       * If the response is truncated, Amazon SageMaker returns this token. To retrieve the next set of model packages, use it in the subsequent request.
       */
@@ -3039,7 +3039,7 @@ object SageMakerNs extends js.Object {
     /**
       * An array of Workteam objects, each describing a work team.
       */
-    var SubscribedWorkteams: SubscribedWorkteams
+    var SubscribedWorkteams: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.SubscribedWorkteams
   }
   
   trait ListTagsInput extends js.Object {
@@ -3054,7 +3054,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the resource whose tags you want to retrieve.
       */
-    var ResourceArn: ResourceArn
+    var ResourceArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ResourceArn
   }
   
   trait ListTagsOutput extends js.Object {
@@ -3072,7 +3072,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the tuning job whose training jobs you want to list.
       */
-    var HyperParameterTuningJobName: HyperParameterTuningJobName
+    var HyperParameterTuningJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.HyperParameterTuningJobName
     /**
       * The maximum number of training jobs to return. The default value is 10.
       */
@@ -3157,7 +3157,7 @@ object SageMakerNs extends js.Object {
     /**
       * An array of TrainingJobSummary objects, each listing a training job.
       */
-    var TrainingJobSummaries: TrainingJobSummaries
+    var TrainingJobSummaries: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingJobSummaries
   }
   
   trait ListTransformJobsRequest extends js.Object {
@@ -3211,7 +3211,7 @@ object SageMakerNs extends js.Object {
     /**
       * An array of TransformJobSummary objects.
       */
-    var TransformJobSummaries: TransformJobSummaries
+    var TransformJobSummaries: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformJobSummaries
   }
   
   trait ListWorkteamsRequest extends js.Object {
@@ -3245,7 +3245,7 @@ object SageMakerNs extends js.Object {
     /**
       * An array of Workteam objects, each describing a work team.
       */
-    var Workteams: Workteams
+    var Workteams: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.Workteams
   }
   
   trait MemberDefinition extends js.Object {
@@ -3296,7 +3296,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon EC2 Container Registry (Amazon ECR) path where inference code is stored. If you are using your own custom algorithm instead of an algorithm provided by Amazon SageMaker, the inference code must meet Amazon SageMaker requirements. Amazon SageMaker supports both registry/repository[:tag] and registry/repository[@digest] image path formats. For more information, see Using Your Own Algorithms with Amazon SageMaker.
       */
-    var Image: Image
+    var Image: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.Image
     /**
       * An MD5 hash of the training algorithm that identifies the Docker image used for training.
       */
@@ -3341,11 +3341,11 @@ object SageMakerNs extends js.Object {
     /**
       * A timestamp that shows when the model package was created.
       */
-    var CreationTime: CreationTime
+    var CreationTime: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreationTime
     /**
       * The Amazon Resource Name (ARN) of the model package.
       */
-    var ModelPackageArn: ModelPackageArn
+    var ModelPackageArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelPackageArn
     /**
       * A brief description of the model package.
       */
@@ -3357,7 +3357,7 @@ object SageMakerNs extends js.Object {
     /**
       * The overall status of the model package.
       */
-    var ModelPackageStatus: ModelPackageStatus
+    var ModelPackageStatus: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelPackageStatus
   }
   
   trait ModelPackageValidationProfile extends js.Object {
@@ -3368,7 +3368,7 @@ object SageMakerNs extends js.Object {
     /**
       * The TransformJobDefinition object that describes the transform job used for the validation of the model package.
       */
-    var TransformJobDefinition: TransformJobDefinition
+    var TransformJobDefinition: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformJobDefinition
   }
   
   trait ModelPackageValidationSpecification extends js.Object {
@@ -3390,11 +3390,11 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the model.
       */
-    var ModelArn: ModelArn
+    var ModelArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelArn
     /**
       * The name of the model that you want a summary for.
       */
-    var ModelName: ModelName
+    var ModelName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelName
   }
   
   trait NestedFilters extends js.Object {
@@ -3420,11 +3420,11 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the lifecycle configuration.
       */
-    var NotebookInstanceLifecycleConfigArn: NotebookInstanceLifecycleConfigArn
+    var NotebookInstanceLifecycleConfigArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.NotebookInstanceLifecycleConfigArn
     /**
       * The name of the lifecycle configuration.
       */
-    var NotebookInstanceLifecycleConfigName: NotebookInstanceLifecycleConfigName
+    var NotebookInstanceLifecycleConfigName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.NotebookInstanceLifecycleConfigName
   }
   
   trait NotebookInstanceLifecycleHook extends js.Object {
@@ -3458,7 +3458,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the notebook instance.
       */
-    var NotebookInstanceArn: NotebookInstanceArn
+    var NotebookInstanceArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.NotebookInstanceArn
     /**
       * The name of a notebook instance lifecycle configuration associated with this notebook instance. For information about notebook instance lifestyle configurations, see Step 2.1: (Optional) Customize a Notebook Instance.
       */
@@ -3466,7 +3466,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the notebook instance that you want a summary for.
       */
-    var NotebookInstanceName: NotebookInstanceName
+    var NotebookInstanceName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.NotebookInstanceName
     /**
       * The status of the notebook instance.
       */
@@ -3500,7 +3500,7 @@ object SageMakerNs extends js.Object {
     /**
       * Identifies the device that you want to run your model on after it has been compiled. For example: ml_c5.
       */
-    var TargetDevice: TargetDevice
+    var TargetDevice: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TargetDevice
   }
   
   trait OutputDataConfig extends js.Object {
@@ -3571,11 +3571,11 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the model that you want to host. This is the name that you specified when creating the model.
       */
-    var ModelName: ModelName
+    var ModelName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ModelName
     /**
       * The name of the production variant.
       */
-    var VariantName: VariantName
+    var VariantName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.VariantName
   }
   
   trait ProductionVariantSummary extends js.Object {
@@ -3602,14 +3602,14 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the variant.
       */
-    var VariantName: VariantName
+    var VariantName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.VariantName
   }
   
   trait PropertyNameQuery extends js.Object {
     /**
       * Text that is part of a property's name. The property names of hyperparameter, metric, and tag key names that begin with the specified text in the PropertyNameHint.
       */
-    var PropertyNameHint: PropertyNameHint
+    var PropertyNameHint: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.PropertyNameHint
   }
   
   trait PropertyNameSuggestion extends js.Object {
@@ -3630,7 +3630,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) that has access to the S3 objects that are used by the template.
       */
-    var RoleArn: RoleArn
+    var RoleArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.RoleArn
     /**
       * A RenderableTask object containing a representative task to render.
       */
@@ -3638,7 +3638,7 @@ object SageMakerNs extends js.Object {
     /**
       * A Template object containing the worker UI template to render.
       */
-    var UiTemplate: UiTemplate
+    var UiTemplate: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UiTemplate
   }
   
   trait RenderUiTemplateResponse extends js.Object {
@@ -3686,18 +3686,18 @@ object SageMakerNs extends js.Object {
     /**
       * The size of the ML storage volume that you want to provision.  ML storage volumes store model artifacts and incremental states. Training algorithms might also use the ML storage volume for scratch space. If you want to store the training data in the ML storage volume, choose File as the TrainingInputMode in the algorithm specification.  You must specify sufficient ML storage for your scenario.    Amazon SageMaker supports only the General Purpose SSD (gp2) ML storage volume type.  
       */
-    var VolumeSizeInGB: VolumeSizeInGB
+    var VolumeSizeInGB: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.VolumeSizeInGB
   }
   
   trait ResourceLimits extends js.Object {
     /**
       * The maximum number of training jobs that a hyperparameter tuning job can launch.
       */
-    var MaxNumberOfTrainingJobs: MaxNumberOfTrainingJobs
+    var MaxNumberOfTrainingJobs: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.MaxNumberOfTrainingJobs
     /**
       * The maximum number of concurrent training jobs that a hyperparameter tuning job can launch.
       */
-    var MaxParallelTrainingJobs: MaxParallelTrainingJobs
+    var MaxParallelTrainingJobs: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.MaxParallelTrainingJobs
   }
   
   trait S3DataSource extends js.Object {
@@ -3712,11 +3712,11 @@ object SageMakerNs extends js.Object {
     /**
       * If you choose S3Prefix, S3Uri identifies a key name prefix. Amazon SageMaker uses all objects that match the specified key name prefix for model training.  If you choose ManifestFile, S3Uri identifies an object that is a manifest file containing a list of object keys that you want Amazon SageMaker to use for model training.  If you choose AugmentedManifestFile, S3Uri identifies an object that is an augmented manifest file in JSON lines format. This file contains the data you want to use for model training. AugmentedManifestFile can only be used if the Channel's input mode is Pipe.
       */
-    var S3DataType: S3DataType
+    var S3DataType: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.S3DataType
     /**
       * Depending on the value specified for the S3DataType, identifies either a key name prefix or a manifest. For example:     A key name prefix might look like this: s3://bucketname/exampleprefix.     A manifest might look like this: s3://bucketname/example.manifest   The manifest is an S3 object which is a JSON file with the following format:   [    {"prefix": "s3://customer_bucket/some/prefix/"},    "relative/path/to/custdata-1",    "relative/path/custdata-2",    ...    ]   The preceding JSON matches the following s3Uris:   s3://customer_bucket/some/prefix/relative/path/to/custdata-1   s3://customer_bucket/some/prefix/relative/path/custdata-2   ...  The complete set of s3uris in this manifest is the input data for the channel for this datasource. The object that each s3uris points to must be readable by the IAM role that Amazon SageMaker uses to perform tasks on your behalf.   
       */
-    var S3Uri: S3Uri
+    var S3Uri: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.S3Uri
   }
   
   trait SearchExpression extends js.Object {
@@ -3806,7 +3806,7 @@ object SageMakerNs extends js.Object {
     /**
       * Determines the shuffling order in ShuffleConfig value.
       */
-    var Seed: Seed
+    var Seed: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.Seed
   }
   
   trait SourceAlgorithm extends js.Object {
@@ -3831,7 +3831,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the notebook instance to start.
       */
-    var NotebookInstanceName: NotebookInstanceName
+    var NotebookInstanceName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.NotebookInstanceName
   }
   
   trait StopCompilationJobRequest extends js.Object {
@@ -3845,35 +3845,35 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the tuning job to stop.
       */
-    var HyperParameterTuningJobName: HyperParameterTuningJobName
+    var HyperParameterTuningJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.HyperParameterTuningJobName
   }
   
   trait StopLabelingJobRequest extends js.Object {
     /**
       * The name of the labeling job to stop.
       */
-    var LabelingJobName: LabelingJobName
+    var LabelingJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.LabelingJobName
   }
   
   trait StopNotebookInstanceInput extends js.Object {
     /**
       * The name of the notebook instance to terminate.
       */
-    var NotebookInstanceName: NotebookInstanceName
+    var NotebookInstanceName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.NotebookInstanceName
   }
   
   trait StopTrainingJobRequest extends js.Object {
     /**
       * The name of the training job to stop.
       */
-    var TrainingJobName: TrainingJobName
+    var TrainingJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingJobName
   }
   
   trait StopTransformJobRequest extends js.Object {
     /**
       * The name of the transform job to stop.
       */
-    var TransformJobName: TransformJobName
+    var TransformJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformJobName
   }
   
   trait StoppingCondition extends js.Object {
@@ -3903,7 +3903,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the vendor that you have subscribed.
       */
-    var WorkteamArn: WorkteamArn
+    var WorkteamArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.WorkteamArn
   }
   
   trait SuggestionQuery extends js.Object {
@@ -4035,23 +4035,23 @@ object SageMakerNs extends js.Object {
     /**
       * An array of Channel objects, each of which specifies an input source.
       */
-    var InputDataConfig: InputDataConfig
+    var InputDataConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.InputDataConfig
     /**
       * the path to the S3 bucket where you want to store model artifacts. Amazon SageMaker creates subfolders for the artifacts.
       */
-    var OutputDataConfig: OutputDataConfig
+    var OutputDataConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.OutputDataConfig
     /**
       * The resources, including the ML compute instances and ML storage volumes, to use for model training.
       */
-    var ResourceConfig: ResourceConfig
+    var ResourceConfig: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ResourceConfig
     /**
       * Sets a duration for training. Use this parameter to cap model training costs. To stop a job, Amazon SageMaker sends the algorithm the SIGTERM signal, which delays job termination for 120 seconds. Algorithms might use this 120-second window to save the model artifacts.
       */
-    var StoppingCondition: StoppingCondition
+    var StoppingCondition: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.StoppingCondition
     /**
       * The input mode used by the algorithm for the training job. For the input modes that Amazon SageMaker algorithms support, see Algorithms. If an algorithm supports the File input mode, Amazon SageMaker downloads the training data from S3 to the provisioned ML storage Volume, and mounts the directory to docker volume for training container. If an algorithm supports the Pipe input mode, Amazon SageMaker streams data directly from S3 to the container.
       */
-    var TrainingInputMode: TrainingInputMode
+    var TrainingInputMode: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingInputMode
   }
   
   trait TrainingJobStatusCounters extends js.Object {
@@ -4093,15 +4093,15 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the training job.
       */
-    var TrainingJobArn: TrainingJobArn
+    var TrainingJobArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingJobArn
     /**
       * The name of the training job that you want a summary for.
       */
-    var TrainingJobName: TrainingJobName
+    var TrainingJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingJobName
     /**
       * The status of the training job.
       */
-    var TrainingJobStatus: TrainingJobStatus
+    var TrainingJobStatus: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TrainingJobStatus
   }
   
   trait TrainingSpecification extends js.Object {
@@ -4188,15 +4188,15 @@ object SageMakerNs extends js.Object {
     /**
       * A description of the input source and the way the transform job consumes it.
       */
-    var TransformInput: TransformInput
+    var TransformInput: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformInput
     /**
       * Identifies the Amazon S3 location where you want Amazon SageMaker to save the results from the transform job.
       */
-    var TransformOutput: TransformOutput
+    var TransformOutput: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformOutput
     /**
       * Identifies the ML compute instances for the transform job.
       */
-    var TransformResources: TransformResources
+    var TransformResources: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformResources
   }
   
   trait TransformJobSummary extends js.Object {
@@ -4219,15 +4219,15 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the transform job.
       */
-    var TransformJobArn: TransformJobArn
+    var TransformJobArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformJobArn
     /**
       * The name of the transform job.
       */
-    var TransformJobName: TransformJobName
+    var TransformJobName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformJobName
     /**
       * The status of the transform job.
       */
-    var TransformJobStatus: TransformJobStatus
+    var TransformJobStatus: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.TransformJobStatus
   }
   
   trait TransformOutput extends js.Object {
@@ -4268,11 +4268,11 @@ object SageMakerNs extends js.Object {
     /**
       * If you choose S3Prefix, S3Uri identifies a key name prefix. Amazon SageMaker uses all objects with the specified key name prefix for batch transform.  If you choose ManifestFile, S3Uri identifies an object that is a manifest file containing a list of object keys that you want Amazon SageMaker to use for batch transform. 
       */
-    var S3DataType: S3DataType
+    var S3DataType: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.S3DataType
     /**
       * Depending on the value specified for the S3DataType, identifies either a key name prefix or a manifest. For example:    A key name prefix might look like this: s3://bucketname/exampleprefix.     A manifest might look like this: s3://bucketname/example.manifest   The manifest is an S3 object which is a JSON file with the following format:   [    {"prefix": "s3://customer_bucket/some/prefix/"},    "relative/path/to/custdata-1",    "relative/path/custdata-2",    ...    ]   The preceding JSON matches the following S3Uris:   s3://customer_bucket/some/prefix/relative/path/to/custdata-1   s3://customer_bucket/some/prefix/relative/path/custdata-1   ...   The complete set of S3Uris in this manifest constitutes the input data for the channel for this datasource. The object that each S3Uris points to must be readable by the IAM role that Amazon SageMaker uses to perform tasks on your behalf.  
       */
-    var S3Uri: S3Uri
+    var S3Uri: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.S3Uri
   }
   
   @js.native
@@ -6143,25 +6143,25 @@ object SageMakerNs extends js.Object {
     /**
       * The ARN of the Git repository.
       */
-    var CodeRepositoryArn: CodeRepositoryArn
+    var CodeRepositoryArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CodeRepositoryArn
   }
   
   trait UpdateEndpointInput extends js.Object {
     /**
       * The name of the new endpoint configuration.
       */
-    var EndpointConfigName: EndpointConfigName
+    var EndpointConfigName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointConfigName
     /**
       * The name of the endpoint whose configuration you want to update.
       */
-    var EndpointName: EndpointName
+    var EndpointName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointName
   }
   
   trait UpdateEndpointOutput extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the endpoint.
       */
-    var EndpointArn: EndpointArn
+    var EndpointArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointArn
   }
   
   trait UpdateEndpointWeightsAndCapacitiesInput extends js.Object {
@@ -6172,14 +6172,14 @@ object SageMakerNs extends js.Object {
     /**
       * The name of an existing Amazon SageMaker endpoint.
       */
-    var EndpointName: EndpointName
+    var EndpointName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointName
   }
   
   trait UpdateEndpointWeightsAndCapacitiesOutput extends js.Object {
     /**
       * The Amazon Resource Name (ARN) of the updated endpoint.
       */
-    var EndpointArn: EndpointArn
+    var EndpointArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.EndpointArn
   }
   
   trait UpdateNotebookInstanceInput extends js.Object {
@@ -6222,7 +6222,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the notebook instance to update.
       */
-    var NotebookInstanceName: NotebookInstanceName
+    var NotebookInstanceName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.NotebookInstanceName
     /**
       * The Amazon Resource Name (ARN) of the IAM role that Amazon SageMaker can assume to access the notebook instance. For more information, see Amazon SageMaker Roles.   To be able to pass this role to Amazon SageMaker, the caller of this API must have the iam:PassRole permission. 
       */
@@ -6241,7 +6241,7 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the lifecycle configuration.
       */
-    var NotebookInstanceLifecycleConfigName: NotebookInstanceLifecycleConfigName
+    var NotebookInstanceLifecycleConfigName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.NotebookInstanceLifecycleConfigName
     /**
       * The shell script that runs only once, when you create a notebook instance
       */
@@ -6268,14 +6268,14 @@ object SageMakerNs extends js.Object {
     /**
       * The name of the work team to update.
       */
-    var WorkteamName: WorkteamName
+    var WorkteamName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.WorkteamName
   }
   
   trait UpdateWorkteamResponse extends js.Object {
     /**
       * A Workteam object that describes the updated work team.
       */
-    var Workteam: Workteam
+    var Workteam: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.Workteam
   }
   
   trait VpcConfig extends js.Object {
@@ -6286,7 +6286,7 @@ object SageMakerNs extends js.Object {
     /**
       * The ID of the subnets in the VPC to which you want to connect your training job or model. 
       */
-    var Subnets: Subnets
+    var Subnets: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.Subnets
   }
   
   trait Workteam extends js.Object {
@@ -6305,7 +6305,7 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Cognito user groups that make up the work team.
       */
-    var MemberDefinitions: MemberDefinitions
+    var MemberDefinitions: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.MemberDefinitions
     /**
       * The Amazon Marketplace identifier for a vendor's work team.
       */
@@ -6317,11 +6317,11 @@ object SageMakerNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) that identifies the work team.
       */
-    var WorkteamArn: WorkteamArn
+    var WorkteamArn: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.WorkteamArn
     /**
       * The name of the work team.
       */
-    var WorkteamName: WorkteamName
+    var WorkteamName: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.WorkteamName
   }
   
   trait _AlgorithmSortBy extends js.Object

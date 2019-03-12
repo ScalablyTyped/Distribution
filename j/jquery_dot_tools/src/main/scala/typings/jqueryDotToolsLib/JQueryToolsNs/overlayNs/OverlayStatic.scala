@@ -21,19 +21,14 @@ trait OverlayStatic extends js.Object {
 object OverlayStatic {
   @scala.inline
   def apply(
-    addEffect: js.Function3[
-      java.lang.String, 
-      js.ThisFunction2[
-        /* this */ Overlay, 
-        /* position */ CssOptions, 
-        /* done */ js.Function0[scala.Unit], 
-        scala.Unit
-      ], 
-      js.ThisFunction1[/* this */ Overlay, /* done */ js.Function0[scala.Unit], scala.Unit], 
+    addEffect: (java.lang.String, js.ThisFunction2[
+      /* this */ Overlay, 
+      /* position */ CssOptions, 
+      /* done */ js.Function0[scala.Unit], 
       scala.Unit
-    ]
+    ], js.ThisFunction1[/* this */ Overlay, /* done */ js.Function0[scala.Unit], scala.Unit]) => scala.Unit
   ): OverlayStatic = {
-    val __obj = js.Dynamic.literal(addEffect = addEffect)
+    val __obj = js.Dynamic.literal(addEffect = js.Any.fromFunction3(addEffect))
   
     __obj.asInstanceOf[OverlayStatic]
   }

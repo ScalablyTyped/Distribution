@@ -18,20 +18,20 @@ trait Encryptor
 object Encryptor {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addEncryptionResultListener: js.Function1[XEncryptionResultListener, scala.Unit],
-    endMission: js.Function0[scala.Boolean],
-    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    referenceResolved: js.Function1[scala.Double, scala.Unit],
-    release: js.Function0[scala.Unit],
-    removeEncryptionResultListener: js.Function1[XEncryptionResultListener, scala.Unit],
-    setBlockerId: js.Function1[scala.Double, scala.Unit],
-    setKeyId: js.Function1[scala.Double, scala.Unit],
-    setReferenceCount: js.Function1[scala.Double, scala.Unit],
-    setReferenceId: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    addEncryptionResultListener: XEncryptionResultListener => scala.Unit,
+    endMission: () => scala.Boolean,
+    initialize: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_] => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    referenceResolved: scala.Double => scala.Unit,
+    release: () => scala.Unit,
+    removeEncryptionResultListener: XEncryptionResultListener => scala.Unit,
+    setBlockerId: scala.Double => scala.Unit,
+    setKeyId: scala.Double => scala.Unit,
+    setReferenceCount: scala.Double => scala.Unit,
+    setReferenceId: scala.Double => scala.Unit
   ): Encryptor = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addEncryptionResultListener = addEncryptionResultListener, endMission = endMission, initialize = initialize, queryInterface = queryInterface, referenceResolved = referenceResolved, release = release, removeEncryptionResultListener = removeEncryptionResultListener, setBlockerId = setBlockerId, setKeyId = setKeyId, setReferenceCount = setReferenceCount, setReferenceId = setReferenceId)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addEncryptionResultListener = js.Any.fromFunction1(addEncryptionResultListener), endMission = js.Any.fromFunction0(endMission), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), referenceResolved = js.Any.fromFunction1(referenceResolved), release = js.Any.fromFunction0(release), removeEncryptionResultListener = js.Any.fromFunction1(removeEncryptionResultListener), setBlockerId = js.Any.fromFunction1(setBlockerId), setKeyId = js.Any.fromFunction1(setKeyId), setReferenceCount = js.Any.fromFunction1(setReferenceCount), setReferenceId = js.Any.fromFunction1(setReferenceId))
   
     __obj.asInstanceOf[Encryptor]
   }

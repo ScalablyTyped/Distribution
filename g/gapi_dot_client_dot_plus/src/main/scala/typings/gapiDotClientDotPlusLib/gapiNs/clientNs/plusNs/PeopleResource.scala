@@ -19,24 +19,12 @@ trait PeopleResource extends js.Object {
 object PeopleResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotPlusLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Person]
-    ],
-    list: js.Function1[
-      gapiDotClientDotPlusLib.Anon_AltCollection, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PeopleFeed]
-    ],
-    listByActivity: js.Function1[
-      gapiDotClientDotPlusLib.Anon_ActivityIdAltCollection, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PeopleFeed]
-    ],
-    search: js.Function1[
-      gapiDotClientDotPlusLib.Anon_AltFieldsKeyLanguage, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PeopleFeed]
-    ]
+    get: gapiDotClientDotPlusLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Person],
+    list: gapiDotClientDotPlusLib.Anon_AltCollection => gapiDotClientLib.gapiNs.clientNs.Request[PeopleFeed],
+    listByActivity: gapiDotClientDotPlusLib.Anon_ActivityIdAltCollection => gapiDotClientLib.gapiNs.clientNs.Request[PeopleFeed],
+    search: gapiDotClientDotPlusLib.Anon_AltFieldsKeyLanguage => gapiDotClientLib.gapiNs.clientNs.Request[PeopleFeed]
   ): PeopleResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list, listByActivity = listByActivity, search = search)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), listByActivity = js.Any.fromFunction1(listByActivity), search = js.Any.fromFunction1(search))
   
     __obj.asInstanceOf[PeopleResource]
   }

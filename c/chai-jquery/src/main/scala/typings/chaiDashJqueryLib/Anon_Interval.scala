@@ -27,10 +27,10 @@ object Anon_Interval {
     off: scala.Boolean,
     speeds: Anon_Fast,
     step: js.Any,
-    stop: js.Function0[scala.Unit],
-    tick: js.Function0[scala.Unit]
+    stop: () => scala.Unit,
+    tick: () => scala.Unit
   ): Anon_Interval = {
-    val __obj = js.Dynamic.literal(interval = interval, off = off, speeds = speeds, step = step, stop = stop, tick = tick)
+    val __obj = js.Dynamic.literal(interval = interval, off = off, speeds = speeds, step = step, stop = js.Any.fromFunction0(stop), tick = js.Any.fromFunction0(tick))
   
     __obj.asInstanceOf[Anon_Interval]
   }

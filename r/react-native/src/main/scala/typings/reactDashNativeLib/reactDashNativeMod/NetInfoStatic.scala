@@ -58,22 +58,14 @@ trait NetInfoStatic extends js.Object {
 object NetInfoStatic {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[
-      java.lang.String, 
-      js.Function1[/* result */ ConnectionInfo | ConnectionType, scala.Unit], 
-      scala.Unit
-    ],
-    fetch: js.Function0[js.Promise[ConnectionType]],
-    getConnectionInfo: js.Function0[js.Promise[ConnectionInfo]],
+    addEventListener: (java.lang.String, js.Function1[/* result */ ConnectionInfo | ConnectionType, scala.Unit]) => scala.Unit,
+    fetch: () => js.Promise[ConnectionType],
+    getConnectionInfo: () => js.Promise[ConnectionInfo],
     isConnected: reactDashNativeLib.Anon_AddEventListener,
-    isConnectionExpensive: js.Function0[js.Promise[scala.Boolean]],
-    removeEventListener: js.Function2[
-      java.lang.String, 
-      js.Function1[/* result */ ConnectionInfo | ConnectionType, scala.Unit], 
-      scala.Unit
-    ]
+    isConnectionExpensive: () => js.Promise[scala.Boolean],
+    removeEventListener: (java.lang.String, js.Function1[/* result */ ConnectionInfo | ConnectionType, scala.Unit]) => scala.Unit
   ): NetInfoStatic = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, fetch = fetch, getConnectionInfo = getConnectionInfo, isConnected = isConnected, isConnectionExpensive = isConnectionExpensive, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), fetch = js.Any.fromFunction0(fetch), getConnectionInfo = js.Any.fromFunction0(getConnectionInfo), isConnected = isConnected, isConnectionExpensive = js.Any.fromFunction0(isConnectionExpensive), removeEventListener = js.Any.fromFunction2(removeEventListener))
   
     __obj.asInstanceOf[NetInfoStatic]
   }

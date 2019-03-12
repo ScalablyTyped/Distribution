@@ -15,12 +15,12 @@ trait RangeElement extends js.Object {
 object RangeElement {
   @scala.inline
   def apply(
-    getElement: js.Function0[Element],
-    getEndOffsetInclusive: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    getStartOffset: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
-    isPartial: js.Function0[scala.Boolean]
+    getElement: () => Element,
+    getEndOffsetInclusive: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    getStartOffset: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
+    isPartial: () => scala.Boolean
   ): RangeElement = {
-    val __obj = js.Dynamic.literal(getElement = getElement, getEndOffsetInclusive = getEndOffsetInclusive, getStartOffset = getStartOffset, isPartial = isPartial)
+    val __obj = js.Dynamic.literal(getElement = js.Any.fromFunction0(getElement), getEndOffsetInclusive = js.Any.fromFunction0(getEndOffsetInclusive), getStartOffset = js.Any.fromFunction0(getStartOffset), isPartial = js.Any.fromFunction0(isPartial))
   
     __obj.asInstanceOf[RangeElement]
   }

@@ -18,7 +18,7 @@ trait ChartSeriesAddress extends js.Object {
     *
     * For XY (scatter) diagrams at least one series has a domain. Most of the other chart types use an empty sequence here.
     */
-  var DomainRangeAddresses: activexDashInteropLib.SafeArray[java.lang.String]
+  var DomainRangeAddresses: stdLib.SafeArray[java.lang.String]
   /** contains the cell address of label (i.e. name) of this series. */
   var LabelAddress: java.lang.String
 }
@@ -27,7 +27,7 @@ object ChartSeriesAddress {
   @scala.inline
   def apply(
     DataRangeAddress: java.lang.String,
-    DomainRangeAddresses: activexDashInteropLib.SafeArray[java.lang.String],
+    DomainRangeAddresses: stdLib.SafeArray[java.lang.String],
     LabelAddress: java.lang.String
   ): ChartSeriesAddress = {
     val __obj = js.Dynamic.literal(DataRangeAddress = DataRangeAddress, DomainRangeAddresses = DomainRangeAddresses, LabelAddress = LabelAddress)

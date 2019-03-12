@@ -36,13 +36,13 @@ trait ASPxClientDashboardItemDataAxis extends js.Object {
 object ASPxClientDashboardItemDataAxis {
   @scala.inline
   def apply(
-    GetDimensions: js.Function0[js.Array[ASPxClientDashboardItemDataDimension]],
-    GetPointByUniqueValues: js.Function1[js.Array[js.Object], ASPxClientDashboardItemDataAxisPoint],
-    GetPoints: js.Function0[js.Array[ASPxClientDashboardItemDataAxisPoint]],
-    GetPointsByDimension: js.Function1[java.lang.String, js.Array[ASPxClientDashboardItemDataAxisPoint]],
-    GetRootPoint: js.Function0[ASPxClientDashboardItemDataAxisPoint]
+    GetDimensions: () => js.Array[ASPxClientDashboardItemDataDimension],
+    GetPointByUniqueValues: js.Array[js.Object] => ASPxClientDashboardItemDataAxisPoint,
+    GetPoints: () => js.Array[ASPxClientDashboardItemDataAxisPoint],
+    GetPointsByDimension: java.lang.String => js.Array[ASPxClientDashboardItemDataAxisPoint],
+    GetRootPoint: () => ASPxClientDashboardItemDataAxisPoint
   ): ASPxClientDashboardItemDataAxis = {
-    val __obj = js.Dynamic.literal(GetDimensions = GetDimensions, GetPointByUniqueValues = GetPointByUniqueValues, GetPoints = GetPoints, GetPointsByDimension = GetPointsByDimension, GetRootPoint = GetRootPoint)
+    val __obj = js.Dynamic.literal(GetDimensions = js.Any.fromFunction0(GetDimensions), GetPointByUniqueValues = js.Any.fromFunction1(GetPointByUniqueValues), GetPoints = js.Any.fromFunction0(GetPoints), GetPointsByDimension = js.Any.fromFunction1(GetPointsByDimension), GetRootPoint = js.Any.fromFunction0(GetRootPoint))
   
     __obj.asInstanceOf[ASPxClientDashboardItemDataAxis]
   }

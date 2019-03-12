@@ -29,17 +29,17 @@ trait XUnionTypeDescription extends XTypeDescription {
     * Returns discriminants of all members in order of IDL declaration.
     * @returns discriminants of all members
     */
-  val Discriminants: activexDashInteropLib.SafeArray[_]
+  val Discriminants: stdLib.SafeArray[_]
   /**
     * Returns names of all members in order of IDL declaration.
     * @returns names of all members
     */
-  val MemberNames: activexDashInteropLib.SafeArray[java.lang.String]
+  val MemberNames: stdLib.SafeArray[java.lang.String]
   /**
     * Returns types of all members in order of IDL declaration.
     * @returns types of all members
     */
-  val MemberTypes: activexDashInteropLib.SafeArray[XTypeDescription]
+  val MemberTypes: stdLib.SafeArray[XTypeDescription]
   /**
     * Returns the default discriminant value.
     * @returns default discriminant value
@@ -59,17 +59,17 @@ trait XUnionTypeDescription extends XTypeDescription {
     * Returns discriminants of all members in order of IDL declaration.
     * @returns discriminants of all members
     */
-  def getDiscriminants(): activexDashInteropLib.SafeArray[_]
+  def getDiscriminants(): stdLib.SafeArray[_]
   /**
     * Returns names of all members in order of IDL declaration.
     * @returns names of all members
     */
-  def getMemberNames(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getMemberNames(): stdLib.SafeArray[java.lang.String]
   /**
     * Returns types of all members in order of IDL declaration.
     * @returns types of all members
     */
-  def getMemberTypes(): activexDashInteropLib.SafeArray[XTypeDescription]
+  def getMemberTypes(): stdLib.SafeArray[XTypeDescription]
 }
 
 object XUnionTypeDescription {
@@ -78,24 +78,24 @@ object XUnionTypeDescription {
     DefaultDiscriminant: js.Any,
     DefaultMemberType: XTypeDescription,
     DiscriminantType: XTypeDescription,
-    Discriminants: activexDashInteropLib.SafeArray[_],
-    MemberNames: activexDashInteropLib.SafeArray[java.lang.String],
-    MemberTypes: activexDashInteropLib.SafeArray[XTypeDescription],
+    Discriminants: stdLib.SafeArray[_],
+    MemberNames: stdLib.SafeArray[java.lang.String],
+    MemberTypes: stdLib.SafeArray[XTypeDescription],
     Name: java.lang.String,
     TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
-    acquire: js.Function0[scala.Unit],
-    getDefaultDiscriminant: js.Function0[js.Any],
-    getDefaultMemberType: js.Function0[XTypeDescription],
-    getDiscriminantType: js.Function0[XTypeDescription],
-    getDiscriminants: js.Function0[activexDashInteropLib.SafeArray[_]],
-    getMemberNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getMemberTypes: js.Function0[activexDashInteropLib.SafeArray[XTypeDescription]],
-    getName: js.Function0[java.lang.String],
-    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDefaultDiscriminant: () => js.Any,
+    getDefaultMemberType: () => XTypeDescription,
+    getDiscriminantType: () => XTypeDescription,
+    getDiscriminants: () => stdLib.SafeArray[_],
+    getMemberNames: () => stdLib.SafeArray[java.lang.String],
+    getMemberTypes: () => stdLib.SafeArray[XTypeDescription],
+    getName: () => java.lang.String,
+    getTypeClass: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XUnionTypeDescription = {
-    val __obj = js.Dynamic.literal(DefaultDiscriminant = DefaultDiscriminant, DefaultMemberType = DefaultMemberType, DiscriminantType = DiscriminantType, Discriminants = Discriminants, MemberNames = MemberNames, MemberTypes = MemberTypes, Name = Name, TypeClass = TypeClass, acquire = acquire, getDefaultDiscriminant = getDefaultDiscriminant, getDefaultMemberType = getDefaultMemberType, getDiscriminantType = getDiscriminantType, getDiscriminants = getDiscriminants, getMemberNames = getMemberNames, getMemberTypes = getMemberTypes, getName = getName, getTypeClass = getTypeClass, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(DefaultDiscriminant = DefaultDiscriminant, DefaultMemberType = DefaultMemberType, DiscriminantType = DiscriminantType, Discriminants = Discriminants, MemberNames = MemberNames, MemberTypes = MemberTypes, Name = Name, TypeClass = TypeClass, acquire = js.Any.fromFunction0(acquire), getDefaultDiscriminant = js.Any.fromFunction0(getDefaultDiscriminant), getDefaultMemberType = js.Any.fromFunction0(getDefaultMemberType), getDiscriminantType = js.Any.fromFunction0(getDiscriminantType), getDiscriminants = js.Any.fromFunction0(getDiscriminants), getMemberNames = js.Any.fromFunction0(getMemberNames), getMemberTypes = js.Any.fromFunction0(getMemberTypes), getName = js.Any.fromFunction0(getName), getTypeClass = js.Any.fromFunction0(getTypeClass), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XUnionTypeDescription]
   }

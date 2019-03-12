@@ -37,26 +37,14 @@ trait Helpers extends js.Object {
 object Helpers {
   @scala.inline
   def apply(
-    latLngToPixel: js.Function4[
-      /* latitude */ Latitude, 
-      /* longitude */ Longitude, 
-      /* z */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, 
-      /* tileSize */ TileSize, 
-      PixelCoordinates
-    ] = null,
-    parseCSV: js.Function1[/* obj */ js.Any, js.Array[_]] = null,
-    pixelToLatLng: js.Function4[
-      /* x */ PX, 
-      /* y */ PY, 
-      /* z */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, 
-      /* tileSize */ TileSize, 
-      GeoCoordinates
-    ] = null
+    latLngToPixel: (/* latitude */ Latitude, /* longitude */ Longitude, /* z */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, /* tileSize */ TileSize) => PixelCoordinates = null,
+    parseCSV: /* obj */ js.Any => js.Array[_] = null,
+    pixelToLatLng: (/* x */ PX, /* y */ PY, /* z */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, /* tileSize */ TileSize) => GeoCoordinates = null
   ): Helpers = {
     val __obj = js.Dynamic.literal()
-    if (latLngToPixel != null) __obj.updateDynamic("latLngToPixel")(latLngToPixel)
-    if (parseCSV != null) __obj.updateDynamic("parseCSV")(parseCSV)
-    if (pixelToLatLng != null) __obj.updateDynamic("pixelToLatLng")(pixelToLatLng)
+    if (latLngToPixel != null) __obj.updateDynamic("latLngToPixel")(js.Any.fromFunction4(latLngToPixel))
+    if (parseCSV != null) __obj.updateDynamic("parseCSV")(js.Any.fromFunction1(parseCSV))
+    if (pixelToLatLng != null) __obj.updateDynamic("pixelToLatLng")(js.Any.fromFunction4(pixelToLatLng))
     __obj.asInstanceOf[Helpers]
   }
 }

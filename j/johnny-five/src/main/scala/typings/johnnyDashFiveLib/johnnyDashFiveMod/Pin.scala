@@ -29,7 +29,7 @@ class Pin protected () extends js.Object {
   @JSName("on")
   def on_low(event: johnnyDashFiveLib.johnnyDashFiveLibStrings.low, cb: js.Function0[scala.Unit]): this.type = js.native
   def query(cb: js.Function1[/* pin */ PinState, scala.Unit]): scala.Unit = js.native
-  def read(cb: js.Function2[/* error */ nodeLib.Error, /* value */ scala.Double, scala.Unit]): scala.Unit = js.native
+  def read(cb: js.Function2[/* error */ stdLib.Error, /* value */ scala.Double, scala.Unit]): scala.Unit = js.native
   def write(value: scala.Double): scala.Unit = js.native
 }
 
@@ -37,10 +37,7 @@ class Pin protected () extends js.Object {
 @JSImport("johnny-five", "Pin")
 @js.native
 object Pin extends js.Object {
-  def read(
-    pin: scala.Double,
-    cb: js.Function2[/* error */ nodeLib.Error, /* data */ scala.Double, scala.Unit]
-  ): scala.Unit = js.native
+  def read(pin: scala.Double, cb: js.Function2[/* error */ stdLib.Error, /* data */ scala.Double, scala.Unit]): scala.Unit = js.native
   def write(pin: scala.Double, value: scala.Double): scala.Unit = js.native
 }
 

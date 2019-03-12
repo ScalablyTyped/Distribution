@@ -14,7 +14,7 @@ trait PaneProps extends js.Object {
   var maxWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var minHeight: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var minWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement]] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement]] = js.undefined
   var width: java.lang.String | scala.Double
 }
 
@@ -30,7 +30,7 @@ object PaneProps {
     maxWidth: java.lang.String | scala.Double = null,
     minHeight: java.lang.String | scala.Double = null,
     minWidth: java.lang.String | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] = null
+    style: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] = null
   ): PaneProps = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

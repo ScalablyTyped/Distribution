@@ -26,11 +26,11 @@ trait LayeredDigraphEdge extends LayoutEdge {
 object LayeredDigraphEdge {
   @scala.inline
   def apply(
-    commit: js.Function0[scala.Unit],
+    commit: () => scala.Unit,
     data: js.Any,
     forest: scala.Boolean,
     fromVertex: LayoutVertex,
-    getOtherVertex: js.Function1[LayoutVertex, scala.Unit],
+    getOtherVertex: LayoutVertex => scala.Unit,
     link: Link,
     network: LayoutNetwork,
     portFromColOffset: scala.Double,
@@ -41,7 +41,7 @@ object LayeredDigraphEdge {
     toVertex: LayoutVertex,
     valid: scala.Boolean
   ): LayeredDigraphEdge = {
-    val __obj = js.Dynamic.literal(commit = commit, data = data, forest = forest, fromVertex = fromVertex, getOtherVertex = getOtherVertex, link = link, network = network, portFromColOffset = portFromColOffset, portFromPos = portFromPos, portToColOffset = portToColOffset, portToPos = portToPos, rev = rev, toVertex = toVertex, valid = valid)
+    val __obj = js.Dynamic.literal(commit = js.Any.fromFunction0(commit), data = data, forest = forest, fromVertex = fromVertex, getOtherVertex = js.Any.fromFunction1(getOtherVertex), link = link, network = network, portFromColOffset = portFromColOffset, portFromPos = portFromPos, portToColOffset = portToColOffset, portToPos = portToPos, rev = rev, toVertex = toVertex, valid = valid)
   
     __obj.asInstanceOf[LayeredDigraphEdge]
   }

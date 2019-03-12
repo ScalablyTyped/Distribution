@@ -21,18 +21,18 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(
-    build: js.Function0[js.Object],
-    newCheckbox: js.Function0[Checkbox],
-    newInfo: js.Function0[Info],
-    newOptionBuilder: js.Function0[OptionBuilder],
-    newSelectMultiple: js.Function0[SelectMultiple],
-    newSelectSingle: js.Function0[SelectSingle],
-    newTextArea: js.Function0[TextArea],
-    newTextInput: js.Function0[TextInput],
-    printJson: js.Function0[java.lang.String],
-    setDateRangeRequired: js.Function1[scala.Boolean, Config]
+    build: () => js.Object,
+    newCheckbox: () => Checkbox,
+    newInfo: () => Info,
+    newOptionBuilder: () => OptionBuilder,
+    newSelectMultiple: () => SelectMultiple,
+    newSelectSingle: () => SelectSingle,
+    newTextArea: () => TextArea,
+    newTextInput: () => TextInput,
+    printJson: () => java.lang.String,
+    setDateRangeRequired: scala.Boolean => Config
   ): Config = {
-    val __obj = js.Dynamic.literal(build = build, newCheckbox = newCheckbox, newInfo = newInfo, newOptionBuilder = newOptionBuilder, newSelectMultiple = newSelectMultiple, newSelectSingle = newSelectSingle, newTextArea = newTextArea, newTextInput = newTextInput, printJson = printJson, setDateRangeRequired = setDateRangeRequired)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), newCheckbox = js.Any.fromFunction0(newCheckbox), newInfo = js.Any.fromFunction0(newInfo), newOptionBuilder = js.Any.fromFunction0(newOptionBuilder), newSelectMultiple = js.Any.fromFunction0(newSelectMultiple), newSelectSingle = js.Any.fromFunction0(newSelectSingle), newTextArea = js.Any.fromFunction0(newTextArea), newTextInput = js.Any.fromFunction0(newTextInput), printJson = js.Any.fromFunction0(printJson), setDateRangeRequired = js.Any.fromFunction1(setDateRangeRequired))
   
     __obj.asInstanceOf[Config]
   }

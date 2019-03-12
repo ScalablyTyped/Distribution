@@ -26,11 +26,11 @@ object AreaMeasurement2DViewModelMeasurementLabel {
   def apply(
     area: scala.Double,
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     perimeter: scala.Double,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): AreaMeasurement2DViewModelMeasurementLabel = {
-    val __obj = js.Dynamic.literal(area = area, constructor = constructor, hasOwnProperty = hasOwnProperty, perimeter = perimeter, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(area = area, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), perimeter = perimeter, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[AreaMeasurement2DViewModelMeasurementLabel]
   }

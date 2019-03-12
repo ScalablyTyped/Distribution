@@ -37,14 +37,14 @@ object RequestOptions {
   def apply(
     path: java.lang.String,
     body: js.Any = null,
-    callback: js.Function0[_] = null,
+    callback: () => _ = null,
     headers: js.Any = null,
     method: java.lang.String = null,
     params: js.Any = null
   ): RequestOptions = {
     val __obj = js.Dynamic.literal(path = path)
     if (body != null) __obj.updateDynamic("body")(body)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (method != null) __obj.updateDynamic("method")(method)
     if (params != null) __obj.updateDynamic("params")(params)

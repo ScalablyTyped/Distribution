@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.BulletFormat")
 @js.native
 class BulletFormat protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   var Character: scala.Double = js.native
-  val Font: Font = js.native
+  val Font: activexDashPowerpointLib.PowerPointNs.Font = js.native
   val Number: scala.Double = js.native
   val Parent: js.Any = js.native
   var `PowerPoint.BulletFormat_typekey`: BulletFormat = js.native

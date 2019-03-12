@@ -28,21 +28,18 @@ object ConsoleHandler {
     Formatter: XLogFormatter,
     Level: scala.Double,
     Threshold: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    create: js.Function0[scala.Unit],
-    createWithSettings: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
-      scala.Unit
-    ],
-    dispose: js.Function0[scala.Unit],
-    flush: js.Function0[scala.Unit],
-    publish: js.Function1[LogRecord, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    create: () => scala.Unit,
+    createWithSettings: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue] => scala.Unit,
+    dispose: () => scala.Unit,
+    flush: () => scala.Unit,
+    publish: LogRecord => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit
   ): ConsoleHandler = {
-    val __obj = js.Dynamic.literal(Encoding = Encoding, Formatter = Formatter, Level = Level, Threshold = Threshold, acquire = acquire, addEventListener = addEventListener, create = create, createWithSettings = createWithSettings, dispose = dispose, flush = flush, publish = publish, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+    val __obj = js.Dynamic.literal(Encoding = Encoding, Formatter = Formatter, Level = Level, Threshold = Threshold, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), create = js.Any.fromFunction0(create), createWithSettings = js.Any.fromFunction1(createWithSettings), dispose = js.Any.fromFunction0(dispose), flush = js.Any.fromFunction0(flush), publish = js.Any.fromFunction1(publish), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener))
   
     __obj.asInstanceOf[ConsoleHandler]
   }

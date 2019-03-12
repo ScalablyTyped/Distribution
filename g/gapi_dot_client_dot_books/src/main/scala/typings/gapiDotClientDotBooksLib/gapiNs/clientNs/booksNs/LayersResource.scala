@@ -18,17 +18,11 @@ object LayersResource {
   @scala.inline
   def apply(
     annotationData: AnnotationDataResource,
-    get: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltContentVersionFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Layersummary]
-    ],
-    list: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltContentVersionFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Layersummaries]
-    ],
+    get: gapiDotClientDotBooksLib.Anon_AltContentVersionFields => gapiDotClientLib.gapiNs.clientNs.Request[Layersummary],
+    list: gapiDotClientDotBooksLib.Anon_AltContentVersionFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Layersummaries],
     volumeAnnotations: VolumeAnnotationsResource
   ): LayersResource = {
-    val __obj = js.Dynamic.literal(annotationData = annotationData, get = get, list = list, volumeAnnotations = volumeAnnotations)
+    val __obj = js.Dynamic.literal(annotationData = annotationData, get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), volumeAnnotations = volumeAnnotations)
   
     __obj.asInstanceOf[LayersResource]
   }

@@ -43,17 +43,10 @@ object MosaicWindowProps {
     className: java.lang.String = null,
     createNode: reactDashMosaicDashComponentLib.libTypesMod.CreateNode[T] = null,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
-    onDragEnd: js.Function1[
-      /* type */ reactDashMosaicDashComponentLib.reactDashMosaicDashComponentLibStrings.drop | reactDashMosaicDashComponentLib.reactDashMosaicDashComponentLibStrings.reset, 
-      scala.Unit
-    ] = null,
-    onDragStart: js.Function0[scala.Unit] = null,
-    renderPreview: js.Function1[/* props */ MosaicWindowProps[T], reactLib.reactMod.Global.JSXNs.Element] = null,
-    renderToolbar: js.Function2[
-      /* props */ MosaicWindowProps[T], 
-      /* draggable */ js.UndefOr[scala.Boolean], 
-      reactLib.reactMod.Global.JSXNs.Element
-    ] = null,
+    onDragEnd: /* type */ reactDashMosaicDashComponentLib.reactDashMosaicDashComponentLibStrings.drop | reactDashMosaicDashComponentLib.reactDashMosaicDashComponentLibStrings.reset => scala.Unit = null,
+    onDragStart: () => scala.Unit = null,
+    renderPreview: /* props */ MosaicWindowProps[T] => reactLib.reactMod.Global.JSXNs.Element = null,
+    renderToolbar: (/* props */ MosaicWindowProps[T], /* draggable */ js.UndefOr[scala.Boolean]) => reactLib.reactMod.Global.JSXNs.Element = null,
     toolbarControls: reactLib.reactMod.ReactNs.ReactNode = null
   ): MosaicWindowProps[T] = {
     val __obj = js.Dynamic.literal(path = path, title = title)
@@ -62,10 +55,10 @@ object MosaicWindowProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (createNode != null) __obj.updateDynamic("createNode")(createNode)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd)
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
-    if (renderPreview != null) __obj.updateDynamic("renderPreview")(renderPreview)
-    if (renderToolbar != null) __obj.updateDynamic("renderToolbar")(renderToolbar)
+    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction0(onDragStart))
+    if (renderPreview != null) __obj.updateDynamic("renderPreview")(js.Any.fromFunction1(renderPreview))
+    if (renderToolbar != null) __obj.updateDynamic("renderToolbar")(js.Any.fromFunction2(renderToolbar))
     if (toolbarControls != null) __obj.updateDynamic("toolbarControls")(toolbarControls.asInstanceOf[js.Any])
     __obj.asInstanceOf[MosaicWindowProps[T]]
   }

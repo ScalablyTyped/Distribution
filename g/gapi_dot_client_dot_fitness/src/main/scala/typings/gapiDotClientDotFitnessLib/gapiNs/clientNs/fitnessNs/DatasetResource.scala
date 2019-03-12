@@ -16,12 +16,9 @@ trait DatasetResource extends js.Object {
 object DatasetResource {
   @scala.inline
   def apply(
-    aggregate: js.Function1[
-      gapiDotClientDotFitnessLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AggregateResponse]
-    ]
+    aggregate: gapiDotClientDotFitnessLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[AggregateResponse]
   ): DatasetResource = {
-    val __obj = js.Dynamic.literal(aggregate = aggregate)
+    val __obj = js.Dynamic.literal(aggregate = js.Any.fromFunction1(aggregate))
   
     __obj.asInstanceOf[DatasetResource]
   }

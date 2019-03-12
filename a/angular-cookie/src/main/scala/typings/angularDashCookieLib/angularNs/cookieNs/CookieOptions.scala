@@ -39,18 +39,18 @@ trait CookieOptions extends js.Object {
 object CookieOptions {
   @scala.inline
   def apply(
-    decode: js.Function1[/* value */ js.Any, _] = null,
+    decode: /* value */ js.Any => _ = null,
     domain: java.lang.String = null,
-    encode: js.Function1[/* value */ js.Any, _] = null,
+    encode: /* value */ js.Any => _ = null,
     expirationUnit: java.lang.String = null,
     expires: scala.Int | scala.Double = null,
     path: java.lang.String = null,
     secure: js.UndefOr[scala.Boolean] = js.undefined
   ): CookieOptions = {
     val __obj = js.Dynamic.literal()
-    if (decode != null) __obj.updateDynamic("decode")(decode)
+    if (decode != null) __obj.updateDynamic("decode")(js.Any.fromFunction1(decode))
     if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (encode != null) __obj.updateDynamic("encode")(encode)
+    if (encode != null) __obj.updateDynamic("encode")(js.Any.fromFunction1(encode))
     if (expirationUnit != null) __obj.updateDynamic("expirationUnit")(expirationUnit)
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path)

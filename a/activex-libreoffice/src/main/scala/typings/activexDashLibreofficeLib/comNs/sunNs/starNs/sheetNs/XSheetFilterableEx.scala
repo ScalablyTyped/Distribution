@@ -19,14 +19,14 @@ trait XSheetFilterableEx extends XSheetFilterable {
 object XSheetFilterableEx {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createFilterDescriptor: js.Function1[scala.Boolean, XSheetFilterDescriptor],
-    createFilterDescriptorByObject: js.Function1[XSheetFilterable, XSheetFilterDescriptor],
-    filter: js.Function1[XSheetFilterDescriptor, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createFilterDescriptor: scala.Boolean => XSheetFilterDescriptor,
+    createFilterDescriptorByObject: XSheetFilterable => XSheetFilterDescriptor,
+    filter: XSheetFilterDescriptor => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSheetFilterableEx = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createFilterDescriptor = createFilterDescriptor, createFilterDescriptorByObject = createFilterDescriptorByObject, filter = filter, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createFilterDescriptor = js.Any.fromFunction1(createFilterDescriptor), createFilterDescriptorByObject = js.Any.fromFunction1(createFilterDescriptorByObject), filter = js.Any.fromFunction1(filter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSheetFilterableEx]
   }

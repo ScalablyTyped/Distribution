@@ -12,9 +12,9 @@ trait OnValueChangeListener extends js.Object {
 object OnValueChangeListener {
   @scala.inline
   def apply(
-    onValueChange: js.Function3[androiduixLib.androidNs.widgetNs.NumberPicker, scala.Double, scala.Double, scala.Unit]
+    onValueChange: (androiduixLib.androidNs.widgetNs.NumberPicker, scala.Double, scala.Double) => scala.Unit
   ): OnValueChangeListener = {
-    val __obj = js.Dynamic.literal(onValueChange = onValueChange)
+    val __obj = js.Dynamic.literal(onValueChange = js.Any.fromFunction3(onValueChange))
   
     __obj.asInstanceOf[OnValueChangeListener]
   }

@@ -2436,7 +2436,7 @@ object WidgetsNs extends js.Object {
   class Tput protected () extends IHasOptions[TputsOptions] {
     def this(opts: TputsOptions) = this()
     var debug: scala.Boolean = js.native
-    var error: nodeLib.Error = js.native
+    var error: stdLib.Error = js.native
     var extended: scala.Boolean = js.native
     /* CompleteClass */
     override var options: TputsOptions = js.native

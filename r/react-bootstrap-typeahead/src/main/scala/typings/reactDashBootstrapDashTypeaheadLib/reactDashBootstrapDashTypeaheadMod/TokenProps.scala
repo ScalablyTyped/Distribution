@@ -16,12 +16,12 @@ object TokenProps {
   def apply(
     HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.div] = null,
     active: js.UndefOr[scala.Boolean] = js.undefined,
-    onRemove: js.Function0[scala.Unit] = null
+    onRemove: () => scala.Unit = null
   ): TokenProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
+    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction0(onRemove))
     __obj.asInstanceOf[TokenProps]
   }
 }

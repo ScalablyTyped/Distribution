@@ -48,11 +48,7 @@ object Options {
     max: scala.Int | scala.Double = null,
     minUptime: scala.Int | scala.Double = null,
     outFile: java.lang.String = null,
-    parser: js.Function2[
-      /* command */ java.lang.String, 
-      /* args */ js.Array[java.lang.String], 
-      foreverDashMonitorLib.Anon_Args
-    ] = null,
+    parser: (/* command */ java.lang.String, /* args */ js.Array[java.lang.String]) => foreverDashMonitorLib.Anon_Args = null,
     pidFile: java.lang.String = null,
     silent: js.UndefOr[scala.Boolean] = js.undefined,
     sourceDir: java.lang.String = null,
@@ -75,7 +71,7 @@ object Options {
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (minUptime != null) __obj.updateDynamic("minUptime")(minUptime.asInstanceOf[js.Any])
     if (outFile != null) __obj.updateDynamic("outFile")(outFile)
-    if (parser != null) __obj.updateDynamic("parser")(parser)
+    if (parser != null) __obj.updateDynamic("parser")(js.Any.fromFunction2(parser))
     if (pidFile != null) __obj.updateDynamic("pidFile")(pidFile)
     if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
     if (sourceDir != null) __obj.updateDynamic("sourceDir")(sourceDir)

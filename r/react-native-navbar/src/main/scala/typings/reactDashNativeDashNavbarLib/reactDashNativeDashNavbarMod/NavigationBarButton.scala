@@ -17,12 +17,12 @@ object NavigationBarButton {
   def apply(
     title: java.lang.String,
     disable: js.UndefOr[scala.Boolean] = js.undefined,
-    handler: js.Function0[scala.Unit] = null,
+    handler: () => scala.Unit = null,
     style: reactDashNativeLib.reactDashNativeMod.ViewStyle = null
   ): NavigationBarButton = {
     val __obj = js.Dynamic.literal(title = title)
     if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
-    if (handler != null) __obj.updateDynamic("handler")(handler)
+    if (handler != null) __obj.updateDynamic("handler")(js.Any.fromFunction0(handler))
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[NavigationBarButton]
   }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val CommandMapDefault: js.Symbol = js.native
   val DEFAULT_COLORS: atIonicCliDashFrameworkLib.libColorsMod.Colors = js.native
-  val DEFAULT_LOGGER_HANDLERS: nodeLib.ReadonlySet[atIonicCliDashFrameworkLib.libLoggerMod.StreamHandler] = js.native
+  val DEFAULT_LOGGER_HANDLERS: stdLib.ReadonlySet[atIonicCliDashFrameworkLib.libLoggerMod.StreamHandler] = js.native
   val ERROR_COMMAND_NOT_FOUND: /* ERR_ICF_COMMAND_NOT_FOUND */ java.lang.String = js.native
   val ERROR_INPUT_VALIDATION: /* ERR_ICF_INPUT_VALIDATION */ java.lang.String = js.native
   val ERROR_IPC_MODULE_INACCESSIBLE: /* ERR_ICF_IPC_MODULE_INACCESSIBLE */ java.lang.String = js.native

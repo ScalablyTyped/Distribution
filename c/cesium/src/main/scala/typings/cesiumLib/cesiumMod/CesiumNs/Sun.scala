@@ -15,12 +15,12 @@ trait Sun extends js.Object {
 object Sun {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     glowFactor: scala.Double,
-    isDestroyed: js.Function0[scala.Boolean],
+    isDestroyed: () => scala.Boolean,
     show: scala.Boolean
   ): Sun = {
-    val __obj = js.Dynamic.literal(destroy = destroy, glowFactor = glowFactor, isDestroyed = isDestroyed, show = show)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), glowFactor = glowFactor, isDestroyed = js.Any.fromFunction0(isDestroyed), show = show)
   
     __obj.asInstanceOf[Sun]
   }

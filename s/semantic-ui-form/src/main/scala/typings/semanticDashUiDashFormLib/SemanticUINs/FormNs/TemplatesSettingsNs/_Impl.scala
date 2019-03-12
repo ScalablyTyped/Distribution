@@ -13,10 +13,10 @@ trait _Impl extends js.Object {
 object _Impl {
   @scala.inline
   def apply(
-    error: js.Function1[js.Array[java.lang.String], semanticDashUiDashFormLib.JQuery],
-    prompt: js.Function1[js.Array[java.lang.String], semanticDashUiDashFormLib.JQuery]
+    error: js.Array[java.lang.String] => semanticDashUiDashFormLib.JQuery,
+    prompt: js.Array[java.lang.String] => semanticDashUiDashFormLib.JQuery
   ): _Impl = {
-    val __obj = js.Dynamic.literal(error = error, prompt = prompt)
+    val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), prompt = js.Any.fromFunction1(prompt))
   
     __obj.asInstanceOf[_Impl]
   }

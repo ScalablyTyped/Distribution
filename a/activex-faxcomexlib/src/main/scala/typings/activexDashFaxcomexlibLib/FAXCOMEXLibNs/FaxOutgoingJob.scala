@@ -31,7 +31,7 @@ class FaxOutgoingJob protected () extends js.Object {
   /** Unique job ID */
   val Id: java.lang.String = js.native
   /** Time the job was originally scheduled to be transmitted */
-  val OriginalScheduledTime: activexDashInteropLib.VarDate = js.native
+  val OriginalScheduledTime: stdLib.VarDate = js.native
   /** Total number of pages */
   val Pages: scala.Double = js.native
   /** Priority of the fax */
@@ -47,7 +47,7 @@ class FaxOutgoingJob protected () extends js.Object {
   /** When to send the fax */
   val ScheduleType: FAX_SCHEDULE_TYPE_ENUM = js.native
   /** The time the fax job is scheduled to be transmitted */
-  val ScheduledTime: activexDashInteropLib.VarDate = js.native
+  val ScheduledTime: stdLib.VarDate = js.native
   /** Sender information object */
   val Sender: FaxSender = js.native
   /** Size in bytes of TIFF file */
@@ -59,13 +59,13 @@ class FaxOutgoingJob protected () extends js.Object {
   /** Unique ID the submission process created for the Job */
   val SubmissionId: java.lang.String = js.native
   /** Time the job was submitted */
-  val SubmissionTime: activexDashInteropLib.VarDate = js.native
+  val SubmissionTime: stdLib.VarDate = js.native
   /** Transmitting Station ID */
   val TSID: java.lang.String = js.native
   /** The time the fax job finished its transmission */
-  val TransmissionEnd: activexDashInteropLib.VarDate = js.native
+  val TransmissionEnd: stdLib.VarDate = js.native
   /** The time the fax job started its transmission */
-  val TransmissionStart: activexDashInteropLib.VarDate = js.native
+  val TransmissionStart: stdLib.VarDate = js.native
   /** Cancel the outbound job */
   def Cancel(): scala.Unit = js.native
   /** Copy the job's TIFF image */

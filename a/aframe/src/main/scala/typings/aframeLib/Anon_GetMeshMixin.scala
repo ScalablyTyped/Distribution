@@ -17,14 +17,14 @@ trait Anon_GetMeshMixin extends js.Object {
 object Anon_GetMeshMixin {
   @scala.inline
   def apply(
-    getMeshMixin: js.Function0[Anon_DefaultComponents],
+    getMeshMixin: () => Anon_DefaultComponents,
     primitives: aframeLib.aframeMod.ObjectMap[
       aframeLib.aframeMod.Entity[
         aframeLib.aframeMod.ObjectMap[aframeLib.aframeMod.Component[_, aframeLib.aframeMod.System[_]]]
       ]
     ]
   ): Anon_GetMeshMixin = {
-    val __obj = js.Dynamic.literal(getMeshMixin = getMeshMixin, primitives = primitives)
+    val __obj = js.Dynamic.literal(getMeshMixin = js.Any.fromFunction0(getMeshMixin), primitives = primitives)
   
     __obj.asInstanceOf[Anon_GetMeshMixin]
   }

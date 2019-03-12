@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var humane: humaneLib.Humane = js.native
+  var humane: Humane = js.native
 }
 

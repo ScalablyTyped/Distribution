@@ -347,8 +347,8 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    actionBegin: js.Function1[/* e */ ActionBeginEventArgs, scala.Unit] = null,
-    actionComplete: js.Function1[/* e */ ActionCompleteEventArgs, scala.Unit] = null,
+    actionBegin: /* e */ ActionBeginEventArgs => scala.Unit = null,
+    actionComplete: /* e */ ActionCompleteEventArgs => scala.Unit = null,
     allowColumnReordering: js.UndefOr[scala.Boolean] = js.undefined,
     allowColumnResize: js.UndefOr[scala.Boolean] = js.undefined,
     allowDragAndDrop: js.UndefOr[scala.Boolean] = js.undefined,
@@ -361,34 +361,34 @@ object Model {
     allowSorting: js.UndefOr[scala.Boolean] = js.undefined,
     allowTextWrap: js.UndefOr[scala.Boolean] = js.undefined,
     altRowTemplateID: java.lang.String = null,
-    beforePrint: js.Function1[/* e */ BeforePrintEventArgs, scala.Unit] = null,
-    beginEdit: js.Function1[/* e */ BeginEditEventArgs, scala.Unit] = null,
-    cellSelected: js.Function1[/* e */ CellSelectedEventArgs, scala.Unit] = null,
-    cellSelecting: js.Function1[/* e */ CellSelectingEventArgs, scala.Unit] = null,
+    beforePrint: /* e */ BeforePrintEventArgs => scala.Unit = null,
+    beginEdit: /* e */ BeginEditEventArgs => scala.Unit = null,
+    cellSelected: /* e */ CellSelectedEventArgs => scala.Unit = null,
+    cellSelecting: /* e */ CellSelectingEventArgs => scala.Unit = null,
     cellTooltipTemplate: java.lang.String = null,
     childMapping: java.lang.String = null,
-    collapsed: js.Function1[/* e */ CollapsedEventArgs, scala.Unit] = null,
+    collapsed: /* e */ CollapsedEventArgs => scala.Unit = null,
     collapsibleTotalSummary: js.UndefOr[scala.Boolean] = js.undefined,
-    collapsing: js.Function1[/* e */ CollapsingEventArgs, scala.Unit] = null,
+    collapsing: /* e */ CollapsingEventArgs => scala.Unit = null,
     columnDialogFields: js.Array[_] = null,
-    columnDrag: js.Function1[/* e */ ColumnDragEventArgs, scala.Unit] = null,
-    columnDragStart: js.Function1[/* e */ ColumnDragStartEventArgs, scala.Unit] = null,
-    columnDrop: js.Function1[/* e */ ColumnDropEventArgs, scala.Unit] = null,
-    columnResizeEnd: js.Function1[/* e */ ColumnResizeEndEventArgs, scala.Unit] = null,
+    columnDrag: /* e */ ColumnDragEventArgs => scala.Unit = null,
+    columnDragStart: /* e */ ColumnDragStartEventArgs => scala.Unit = null,
+    columnDrop: /* e */ ColumnDropEventArgs => scala.Unit = null,
+    columnResizeEnd: /* e */ ColumnResizeEndEventArgs => scala.Unit = null,
     columnResizeSettings: ColumnResizeSettings = null,
-    columnResizeStart: js.Function1[/* e */ ColumnResizeStartEventArgs, scala.Unit] = null,
-    columnResized: js.Function1[/* e */ ColumnResizedEventArgs, scala.Unit] = null,
+    columnResizeStart: /* e */ ColumnResizeStartEventArgs => scala.Unit = null,
+    columnResized: /* e */ ColumnResizedEventArgs => scala.Unit = null,
     columns: js.Array[Column] = null,
     commonWidth: scala.Int | scala.Double = null,
-    contextMenuOpen: js.Function1[/* e */ ContextMenuOpenEventArgs, scala.Unit] = null,
+    contextMenuOpen: /* e */ ContextMenuOpenEventArgs => scala.Unit = null,
     contextMenuSettings: ContextMenuSettings = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
     dataSource: js.Array[_] = null,
-    detailsDataBound: js.Function1[/* e */ DetailsDataBoundEventArgs, scala.Unit] = null,
-    detailsHidden: js.Function1[/* e */ DetailsHiddenEventArgs, scala.Unit] = null,
+    detailsDataBound: /* e */ DetailsDataBoundEventArgs => scala.Unit = null,
+    detailsHidden: /* e */ DetailsHiddenEventArgs => scala.Unit = null,
     detailsRowHeight: scala.Int | scala.Double = null,
-    detailsShown: js.Function1[/* e */ DetailsShownEventArgs, scala.Unit] = null,
+    detailsShown: /* e */ DetailsShownEventArgs => scala.Unit = null,
     detailsTemplate: java.lang.String = null,
     dragTooltip: DragTooltip = null,
     editSettings: EditSettings = null,
@@ -397,31 +397,31 @@ object Model {
     enableLoadOnDemand: js.UndefOr[scala.Boolean] = js.undefined,
     enableResize: js.UndefOr[scala.Boolean] = js.undefined,
     enableVirtualization: js.UndefOr[scala.Boolean] = js.undefined,
-    endEdit: js.Function1[/* e */ EndEditEventArgs, scala.Unit] = null,
+    endEdit: /* e */ EndEditEventArgs => scala.Unit = null,
     expandStateMapping: java.lang.String = null,
-    expanded: js.Function1[/* e */ ExpandedEventArgs, scala.Unit] = null,
-    expanding: js.Function1[/* e */ ExpandingEventArgs, scala.Unit] = null,
+    expanded: /* e */ ExpandedEventArgs => scala.Unit = null,
+    expanding: /* e */ ExpandingEventArgs => scala.Unit = null,
     filterSettings: FilterSettings = null,
     headerTextOverflow: HeaderTextOverflow | java.lang.String = null,
     idMapping: java.lang.String = null,
     isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
-    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    load: /* e */ LoadEventArgs => scala.Unit = null,
     locale: java.lang.String = null,
     pageSettings: PageSettings = null,
     parentIdMapping: java.lang.String = null,
     parseRowTemplate: js.UndefOr[scala.Boolean] = js.undefined,
     query: js.Any = null,
-    queryCellInfo: js.Function1[/* e */ QueryCellInfoEventArgs, scala.Unit] = null,
-    recordClick: js.Function1[/* e */ RecordClickEventArgs, scala.Unit] = null,
-    recordDoubleClick: js.Function1[/* e */ RecordDoubleClickEventArgs, scala.Unit] = null,
-    rowDataBound: js.Function1[/* e */ RowDataBoundEventArgs, scala.Unit] = null,
-    rowDrag: js.Function1[/* e */ RowDragEventArgs, scala.Unit] = null,
-    rowDragStart: js.Function1[/* e */ RowDragStartEventArgs, scala.Unit] = null,
-    rowDragStop: js.Function1[/* e */ RowDragStopEventArgs, scala.Unit] = null,
-    rowDropActionBegin: js.Function1[/* e */ RowDropActionBeginEventArgs, scala.Unit] = null,
+    queryCellInfo: /* e */ QueryCellInfoEventArgs => scala.Unit = null,
+    recordClick: /* e */ RecordClickEventArgs => scala.Unit = null,
+    recordDoubleClick: /* e */ RecordDoubleClickEventArgs => scala.Unit = null,
+    rowDataBound: /* e */ RowDataBoundEventArgs => scala.Unit = null,
+    rowDrag: /* e */ RowDragEventArgs => scala.Unit = null,
+    rowDragStart: /* e */ RowDragStartEventArgs => scala.Unit = null,
+    rowDragStop: /* e */ RowDragStopEventArgs => scala.Unit = null,
+    rowDropActionBegin: /* e */ RowDropActionBeginEventArgs => scala.Unit = null,
     rowHeight: scala.Int | scala.Double = null,
-    rowSelected: js.Function1[/* e */ RowSelectedEventArgs, scala.Unit] = null,
-    rowSelecting: js.Function1[/* e */ RowSelectingEventArgs, scala.Unit] = null,
+    rowSelected: /* e */ RowSelectedEventArgs => scala.Unit = null,
+    rowSelecting: /* e */ RowSelectingEventArgs => scala.Unit = null,
     rowTemplateID: java.lang.String = null,
     searchSettings: SearchSettings = null,
     selectedCellIndexes: js.Array[SelectedCellIndex] = null,
@@ -440,14 +440,14 @@ object Model {
     sortSettings: SortSettings = null,
     stackedHeaderRows: js.Array[StackedHeaderRow] = null,
     summaryRows: js.Array[SummaryRow] = null,
-    toolbarClick: js.Function1[/* e */ ToolbarClickEventArgs, scala.Unit] = null,
+    toolbarClick: /* e */ ToolbarClickEventArgs => scala.Unit = null,
     toolbarSettings: ToolbarSettings = null,
     totalSummaryHeight: scala.Int | scala.Double = null,
     treeColumnIndex: scala.Int | scala.Double = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (actionBegin != null) __obj.updateDynamic("actionBegin")(actionBegin)
-    if (actionComplete != null) __obj.updateDynamic("actionComplete")(actionComplete)
+    if (actionBegin != null) __obj.updateDynamic("actionBegin")(js.Any.fromFunction1(actionBegin))
+    if (actionComplete != null) __obj.updateDynamic("actionComplete")(js.Any.fromFunction1(actionComplete))
     if (!js.isUndefined(allowColumnReordering)) __obj.updateDynamic("allowColumnReordering")(allowColumnReordering)
     if (!js.isUndefined(allowColumnResize)) __obj.updateDynamic("allowColumnResize")(allowColumnResize)
     if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop)
@@ -460,34 +460,34 @@ object Model {
     if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting)
     if (!js.isUndefined(allowTextWrap)) __obj.updateDynamic("allowTextWrap")(allowTextWrap)
     if (altRowTemplateID != null) __obj.updateDynamic("altRowTemplateID")(altRowTemplateID)
-    if (beforePrint != null) __obj.updateDynamic("beforePrint")(beforePrint)
-    if (beginEdit != null) __obj.updateDynamic("beginEdit")(beginEdit)
-    if (cellSelected != null) __obj.updateDynamic("cellSelected")(cellSelected)
-    if (cellSelecting != null) __obj.updateDynamic("cellSelecting")(cellSelecting)
+    if (beforePrint != null) __obj.updateDynamic("beforePrint")(js.Any.fromFunction1(beforePrint))
+    if (beginEdit != null) __obj.updateDynamic("beginEdit")(js.Any.fromFunction1(beginEdit))
+    if (cellSelected != null) __obj.updateDynamic("cellSelected")(js.Any.fromFunction1(cellSelected))
+    if (cellSelecting != null) __obj.updateDynamic("cellSelecting")(js.Any.fromFunction1(cellSelecting))
     if (cellTooltipTemplate != null) __obj.updateDynamic("cellTooltipTemplate")(cellTooltipTemplate)
     if (childMapping != null) __obj.updateDynamic("childMapping")(childMapping)
-    if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed)
+    if (collapsed != null) __obj.updateDynamic("collapsed")(js.Any.fromFunction1(collapsed))
     if (!js.isUndefined(collapsibleTotalSummary)) __obj.updateDynamic("collapsibleTotalSummary")(collapsibleTotalSummary)
-    if (collapsing != null) __obj.updateDynamic("collapsing")(collapsing)
+    if (collapsing != null) __obj.updateDynamic("collapsing")(js.Any.fromFunction1(collapsing))
     if (columnDialogFields != null) __obj.updateDynamic("columnDialogFields")(columnDialogFields)
-    if (columnDrag != null) __obj.updateDynamic("columnDrag")(columnDrag)
-    if (columnDragStart != null) __obj.updateDynamic("columnDragStart")(columnDragStart)
-    if (columnDrop != null) __obj.updateDynamic("columnDrop")(columnDrop)
-    if (columnResizeEnd != null) __obj.updateDynamic("columnResizeEnd")(columnResizeEnd)
+    if (columnDrag != null) __obj.updateDynamic("columnDrag")(js.Any.fromFunction1(columnDrag))
+    if (columnDragStart != null) __obj.updateDynamic("columnDragStart")(js.Any.fromFunction1(columnDragStart))
+    if (columnDrop != null) __obj.updateDynamic("columnDrop")(js.Any.fromFunction1(columnDrop))
+    if (columnResizeEnd != null) __obj.updateDynamic("columnResizeEnd")(js.Any.fromFunction1(columnResizeEnd))
     if (columnResizeSettings != null) __obj.updateDynamic("columnResizeSettings")(columnResizeSettings)
-    if (columnResizeStart != null) __obj.updateDynamic("columnResizeStart")(columnResizeStart)
-    if (columnResized != null) __obj.updateDynamic("columnResized")(columnResized)
+    if (columnResizeStart != null) __obj.updateDynamic("columnResizeStart")(js.Any.fromFunction1(columnResizeStart))
+    if (columnResized != null) __obj.updateDynamic("columnResized")(js.Any.fromFunction1(columnResized))
     if (columns != null) __obj.updateDynamic("columns")(columns)
     if (commonWidth != null) __obj.updateDynamic("commonWidth")(commonWidth.asInstanceOf[js.Any])
-    if (contextMenuOpen != null) __obj.updateDynamic("contextMenuOpen")(contextMenuOpen)
+    if (contextMenuOpen != null) __obj.updateDynamic("contextMenuOpen")(js.Any.fromFunction1(contextMenuOpen))
     if (contextMenuSettings != null) __obj.updateDynamic("contextMenuSettings")(contextMenuSettings)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (detailsDataBound != null) __obj.updateDynamic("detailsDataBound")(detailsDataBound)
-    if (detailsHidden != null) __obj.updateDynamic("detailsHidden")(detailsHidden)
+    if (detailsDataBound != null) __obj.updateDynamic("detailsDataBound")(js.Any.fromFunction1(detailsDataBound))
+    if (detailsHidden != null) __obj.updateDynamic("detailsHidden")(js.Any.fromFunction1(detailsHidden))
     if (detailsRowHeight != null) __obj.updateDynamic("detailsRowHeight")(detailsRowHeight.asInstanceOf[js.Any])
-    if (detailsShown != null) __obj.updateDynamic("detailsShown")(detailsShown)
+    if (detailsShown != null) __obj.updateDynamic("detailsShown")(js.Any.fromFunction1(detailsShown))
     if (detailsTemplate != null) __obj.updateDynamic("detailsTemplate")(detailsTemplate)
     if (dragTooltip != null) __obj.updateDynamic("dragTooltip")(dragTooltip)
     if (editSettings != null) __obj.updateDynamic("editSettings")(editSettings)
@@ -496,31 +496,31 @@ object Model {
     if (!js.isUndefined(enableLoadOnDemand)) __obj.updateDynamic("enableLoadOnDemand")(enableLoadOnDemand)
     if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize)
     if (!js.isUndefined(enableVirtualization)) __obj.updateDynamic("enableVirtualization")(enableVirtualization)
-    if (endEdit != null) __obj.updateDynamic("endEdit")(endEdit)
+    if (endEdit != null) __obj.updateDynamic("endEdit")(js.Any.fromFunction1(endEdit))
     if (expandStateMapping != null) __obj.updateDynamic("expandStateMapping")(expandStateMapping)
-    if (expanded != null) __obj.updateDynamic("expanded")(expanded)
-    if (expanding != null) __obj.updateDynamic("expanding")(expanding)
+    if (expanded != null) __obj.updateDynamic("expanded")(js.Any.fromFunction1(expanded))
+    if (expanding != null) __obj.updateDynamic("expanding")(js.Any.fromFunction1(expanding))
     if (filterSettings != null) __obj.updateDynamic("filterSettings")(filterSettings)
     if (headerTextOverflow != null) __obj.updateDynamic("headerTextOverflow")(headerTextOverflow.asInstanceOf[js.Any])
     if (idMapping != null) __obj.updateDynamic("idMapping")(idMapping)
     if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
-    if (load != null) __obj.updateDynamic("load")(load)
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (pageSettings != null) __obj.updateDynamic("pageSettings")(pageSettings)
     if (parentIdMapping != null) __obj.updateDynamic("parentIdMapping")(parentIdMapping)
     if (!js.isUndefined(parseRowTemplate)) __obj.updateDynamic("parseRowTemplate")(parseRowTemplate)
     if (query != null) __obj.updateDynamic("query")(query)
-    if (queryCellInfo != null) __obj.updateDynamic("queryCellInfo")(queryCellInfo)
-    if (recordClick != null) __obj.updateDynamic("recordClick")(recordClick)
-    if (recordDoubleClick != null) __obj.updateDynamic("recordDoubleClick")(recordDoubleClick)
-    if (rowDataBound != null) __obj.updateDynamic("rowDataBound")(rowDataBound)
-    if (rowDrag != null) __obj.updateDynamic("rowDrag")(rowDrag)
-    if (rowDragStart != null) __obj.updateDynamic("rowDragStart")(rowDragStart)
-    if (rowDragStop != null) __obj.updateDynamic("rowDragStop")(rowDragStop)
-    if (rowDropActionBegin != null) __obj.updateDynamic("rowDropActionBegin")(rowDropActionBegin)
+    if (queryCellInfo != null) __obj.updateDynamic("queryCellInfo")(js.Any.fromFunction1(queryCellInfo))
+    if (recordClick != null) __obj.updateDynamic("recordClick")(js.Any.fromFunction1(recordClick))
+    if (recordDoubleClick != null) __obj.updateDynamic("recordDoubleClick")(js.Any.fromFunction1(recordDoubleClick))
+    if (rowDataBound != null) __obj.updateDynamic("rowDataBound")(js.Any.fromFunction1(rowDataBound))
+    if (rowDrag != null) __obj.updateDynamic("rowDrag")(js.Any.fromFunction1(rowDrag))
+    if (rowDragStart != null) __obj.updateDynamic("rowDragStart")(js.Any.fromFunction1(rowDragStart))
+    if (rowDragStop != null) __obj.updateDynamic("rowDragStop")(js.Any.fromFunction1(rowDragStop))
+    if (rowDropActionBegin != null) __obj.updateDynamic("rowDropActionBegin")(js.Any.fromFunction1(rowDropActionBegin))
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (rowSelected != null) __obj.updateDynamic("rowSelected")(rowSelected)
-    if (rowSelecting != null) __obj.updateDynamic("rowSelecting")(rowSelecting)
+    if (rowSelected != null) __obj.updateDynamic("rowSelected")(js.Any.fromFunction1(rowSelected))
+    if (rowSelecting != null) __obj.updateDynamic("rowSelecting")(js.Any.fromFunction1(rowSelecting))
     if (rowTemplateID != null) __obj.updateDynamic("rowTemplateID")(rowTemplateID)
     if (searchSettings != null) __obj.updateDynamic("searchSettings")(searchSettings)
     if (selectedCellIndexes != null) __obj.updateDynamic("selectedCellIndexes")(selectedCellIndexes)
@@ -539,7 +539,7 @@ object Model {
     if (sortSettings != null) __obj.updateDynamic("sortSettings")(sortSettings)
     if (stackedHeaderRows != null) __obj.updateDynamic("stackedHeaderRows")(stackedHeaderRows)
     if (summaryRows != null) __obj.updateDynamic("summaryRows")(summaryRows)
-    if (toolbarClick != null) __obj.updateDynamic("toolbarClick")(toolbarClick)
+    if (toolbarClick != null) __obj.updateDynamic("toolbarClick")(js.Any.fromFunction1(toolbarClick))
     if (toolbarSettings != null) __obj.updateDynamic("toolbarSettings")(toolbarSettings)
     if (totalSummaryHeight != null) __obj.updateDynamic("totalSummaryHeight")(totalSummaryHeight.asInstanceOf[js.Any])
     if (treeColumnIndex != null) __obj.updateDynamic("treeColumnIndex")(treeColumnIndex.asInstanceOf[js.Any])

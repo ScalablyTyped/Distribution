@@ -55,8 +55,8 @@ object symbolPreviewRenderPreviewHTMLOptions {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     disableUpsampling: js.UndefOr[scala.Boolean] = js.undefined,
     maxSize: scala.Int | scala.Double = null,
     node: stdLib.HTMLElement = null,
@@ -65,7 +65,7 @@ object symbolPreviewRenderPreviewHTMLOptions {
     size: scala.Int | scala.Double = null,
     symbolConfig: java.lang.String = null
   ): symbolPreviewRenderPreviewHTMLOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (!js.isUndefined(disableUpsampling)) __obj.updateDynamic("disableUpsampling")(disableUpsampling)
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
     if (node != null) __obj.updateDynamic("node")(node)

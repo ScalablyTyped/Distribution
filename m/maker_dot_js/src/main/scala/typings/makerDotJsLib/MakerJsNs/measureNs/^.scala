@@ -14,7 +14,7 @@ object ^ extends js.Object {
     * @param modelToMeasure The model to measure.
     * @returns IBoundingHex object which is a hexagon model, with an additional radius property.
     */
-  def boundingHexagon(modelToMeasure: makerDotJsLib.MakerJsNs.IModel): makerDotJsLib.MakerJsNs.measureNs.IBoundingHex = js.native
+  def boundingHexagon(modelToMeasure: makerDotJsLib.MakerJsNs.IModel): IBoundingHex = js.native
   /**
     * Increase a measurement by an additional measurement.
     *
@@ -187,7 +187,7 @@ object ^ extends js.Object {
     * @returns object with low and high points.
     */
   def modelExtents(modelToMeasure: makerDotJsLib.MakerJsNs.IModel): makerDotJsLib.MakerJsNs.IMeasureWithCenter = js.native
-  def modelExtents(modelToMeasure: makerDotJsLib.MakerJsNs.IModel, atlas: makerDotJsLib.MakerJsNs.measureNs.Atlas): makerDotJsLib.MakerJsNs.IMeasureWithCenter = js.native
+  def modelExtents(modelToMeasure: makerDotJsLib.MakerJsNs.IModel, atlas: Atlas): makerDotJsLib.MakerJsNs.IMeasureWithCenter = js.native
   /**
     * Calculates the smallest rectangle which contains a path.
     *

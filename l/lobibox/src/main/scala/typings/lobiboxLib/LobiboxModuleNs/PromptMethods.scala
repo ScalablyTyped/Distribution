@@ -13,12 +13,12 @@ trait PromptMethods extends js.Object {
 object PromptMethods {
   @scala.inline
   def apply(
-    getValue: js.Function0[java.lang.String] = null,
-    setValue: js.Function1[/* val */ js.UndefOr[java.lang.String], PromptMethods] = null
+    getValue: () => java.lang.String = null,
+    setValue: /* val */ js.UndefOr[java.lang.String] => PromptMethods = null
   ): PromptMethods = {
     val __obj = js.Dynamic.literal()
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
-    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
+    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
     __obj.asInstanceOf[PromptMethods]
   }
 }

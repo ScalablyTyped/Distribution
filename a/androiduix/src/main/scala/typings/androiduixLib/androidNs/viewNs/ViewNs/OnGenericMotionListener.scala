@@ -12,13 +12,9 @@ trait OnGenericMotionListener extends js.Object {
 object OnGenericMotionListener {
   @scala.inline
   def apply(
-    onGenericMotion: js.Function2[
-      androiduixLib.androidNs.viewNs.View, 
-      androiduixLib.androidNs.viewNs.MotionEvent, 
-      js.Any
-    ]
+    onGenericMotion: (androiduixLib.androidNs.viewNs.View, androiduixLib.androidNs.viewNs.MotionEvent) => js.Any
   ): OnGenericMotionListener = {
-    val __obj = js.Dynamic.literal(onGenericMotion = onGenericMotion)
+    val __obj = js.Dynamic.literal(onGenericMotion = js.Any.fromFunction2(onGenericMotion))
   
     __obj.asInstanceOf[OnGenericMotionListener]
   }

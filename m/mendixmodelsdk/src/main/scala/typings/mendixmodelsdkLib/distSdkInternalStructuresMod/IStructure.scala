@@ -52,33 +52,27 @@ trait IStructure extends js.Object {
 object IStructure {
   @scala.inline
   def apply(
-    allProperties: js.Function0[
-      js.Array[
-        mendixmodelsdkLib.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[_, _]
-      ]
+    allProperties: () => js.Array[
+      mendixmodelsdkLib.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[_, _]
     ],
     id: java.lang.String,
     isLoaded: scala.Boolean,
-    loadedProperties: js.Function0[
-      js.Array[
-        mendixmodelsdkLib.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[_, _]
-      ]
+    loadedProperties: () => js.Array[
+      mendixmodelsdkLib.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[_, _]
     ],
     model: mendixmodelsdkLib.distSdkInternalAbstractDashModelMod.IAbstractModel,
-    publicProperties: js.Function0[
-      js.Array[
-        mendixmodelsdkLib.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[_, _]
-      ]
+    publicProperties: () => js.Array[
+      mendixmodelsdkLib.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[_, _]
     ],
     structureTypeName: java.lang.String,
-    toJSON: js.Function0[js.Object],
-    traverse: js.Function1[js.Function1[IStructure, scala.Unit], scala.Unit],
-    traverseFind: js.Function1[js.Function1[IStructure, js.Any], js.Any | scala.Null],
-    traversePublicParts: js.Function1[js.Function1[IStructure, scala.Unit], scala.Unit],
+    toJSON: () => js.Object,
+    traverse: js.Function1[IStructure, scala.Unit] => scala.Unit,
+    traverseFind: js.Function1[IStructure, js.Any] => js.Any | scala.Null,
+    traversePublicParts: js.Function1[IStructure, scala.Unit] => scala.Unit,
     unit: mendixmodelsdkLib.distSdkInternalUnitsMod.IAbstractUnit,
     container: mendixmodelsdkLib.distSdkInternalStructuresMod.aliasesNs.IContainer = null
   ): IStructure = {
-    val __obj = js.Dynamic.literal(allProperties = allProperties, id = id, isLoaded = isLoaded, loadedProperties = loadedProperties, model = model, publicProperties = publicProperties, structureTypeName = structureTypeName, toJSON = toJSON, traverse = traverse, traverseFind = traverseFind, traversePublicParts = traversePublicParts, unit = unit)
+    val __obj = js.Dynamic.literal(allProperties = js.Any.fromFunction0(allProperties), id = id, isLoaded = isLoaded, loadedProperties = js.Any.fromFunction0(loadedProperties), model = model, publicProperties = js.Any.fromFunction0(publicProperties), structureTypeName = structureTypeName, toJSON = js.Any.fromFunction0(toJSON), traverse = js.Any.fromFunction1(traverse), traverseFind = js.Any.fromFunction1(traverseFind), traversePublicParts = js.Any.fromFunction1(traversePublicParts), unit = unit)
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStructure]
   }

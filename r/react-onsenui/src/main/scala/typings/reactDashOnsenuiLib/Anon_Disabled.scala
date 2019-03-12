@@ -11,7 +11,7 @@ trait Anon_Disabled extends js.Object {
   var onClick: js.UndefOr[
     js.Function1[
       /* e */ js.UndefOr[
-        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+        reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]
       ], 
       scala.Unit
     ]
@@ -23,17 +23,14 @@ object Anon_Disabled {
   def apply(
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     modifier: java.lang.String = null,
-    onClick: js.Function1[
-      /* e */ js.UndefOr[
-        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
-      ], 
-      scala.Unit
-    ] = null
+    onClick: /* e */ js.UndefOr[
+      reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]
+    ] => scala.Unit = null
   ): Anon_Disabled = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (modifier != null) __obj.updateDynamic("modifier")(modifier)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     __obj.asInstanceOf[Anon_Disabled]
   }
 }

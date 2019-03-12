@@ -42,11 +42,11 @@ trait SaveEventArguments extends js.Object {
 object SaveEventArguments {
   @scala.inline
   def apply(
-    getSaveMode: js.Function0[xrmLib.XrmEnumNs.SaveMode],
-    isDefaultPrevented: js.Function0[scala.Boolean],
-    preventDefault: js.Function0[scala.Unit]
+    getSaveMode: () => xrmLib.XrmEnumNs.SaveMode,
+    isDefaultPrevented: () => scala.Boolean,
+    preventDefault: () => scala.Unit
   ): SaveEventArguments = {
-    val __obj = js.Dynamic.literal(getSaveMode = getSaveMode, isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault)
+    val __obj = js.Dynamic.literal(getSaveMode = js.Any.fromFunction0(getSaveMode), isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = js.Any.fromFunction0(preventDefault))
   
     __obj.asInstanceOf[SaveEventArguments]
   }

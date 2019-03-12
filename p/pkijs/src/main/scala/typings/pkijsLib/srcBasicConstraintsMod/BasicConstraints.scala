@@ -17,12 +17,12 @@ object BasicConstraints {
   @scala.inline
   def apply(
     cA: scala.Boolean,
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     pathLenConstraint: scala.Double | asn1jsLib.asn1jsMod.Integer,
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): BasicConstraints = {
-    val __obj = js.Dynamic.literal(cA = cA, fromSchema = fromSchema, pathLenConstraint = pathLenConstraint.asInstanceOf[js.Any], toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(cA = cA, fromSchema = js.Any.fromFunction1(fromSchema), pathLenConstraint = pathLenConstraint.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[BasicConstraints]
   }

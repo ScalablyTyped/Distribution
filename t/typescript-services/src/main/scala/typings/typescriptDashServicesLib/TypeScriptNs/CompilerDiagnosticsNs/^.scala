@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   var analysisPass: scala.Double = js.native
   var debug: scala.Boolean = js.native
-  var diagnosticWriter: typescriptDashServicesLib.TypeScriptNs.CompilerDiagnosticsNs.IDiagnosticWriter = js.native
+  var diagnosticWriter: IDiagnosticWriter = js.native
   def Alert(output: java.lang.String): scala.Unit = js.native
   def assert(condition: scala.Boolean, s: java.lang.String): scala.Unit = js.native
   def debugPrint(s: java.lang.String): scala.Unit = js.native

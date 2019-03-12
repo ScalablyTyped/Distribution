@@ -19,16 +19,16 @@ trait SOAPResponseV2 extends js.Object {
 object SOAPResponseV2 {
   @scala.inline
   def apply(
-    getBody: js.Function0[java.lang.String],
-    getErrorCode: js.Function0[scala.Double],
-    getErrorMessage: js.Function0[java.lang.String],
-    getHeader: js.Function1[java.lang.String, java.lang.String],
-    getHeaders: js.Function0[js.Object],
-    getStatusCode: js.Function0[scala.Double],
-    haveError: js.Function0[scala.Boolean],
-    waitForResponse: js.Function1[scala.Double, scala.Unit]
+    getBody: () => java.lang.String,
+    getErrorCode: () => scala.Double,
+    getErrorMessage: () => java.lang.String,
+    getHeader: java.lang.String => java.lang.String,
+    getHeaders: () => js.Object,
+    getStatusCode: () => scala.Double,
+    haveError: () => scala.Boolean,
+    waitForResponse: scala.Double => scala.Unit
   ): SOAPResponseV2 = {
-    val __obj = js.Dynamic.literal(getBody = getBody, getErrorCode = getErrorCode, getErrorMessage = getErrorMessage, getHeader = getHeader, getHeaders = getHeaders, getStatusCode = getStatusCode, haveError = haveError, waitForResponse = waitForResponse)
+    val __obj = js.Dynamic.literal(getBody = js.Any.fromFunction0(getBody), getErrorCode = js.Any.fromFunction0(getErrorCode), getErrorMessage = js.Any.fromFunction0(getErrorMessage), getHeader = js.Any.fromFunction1(getHeader), getHeaders = js.Any.fromFunction0(getHeaders), getStatusCode = js.Any.fromFunction0(getStatusCode), haveError = js.Any.fromFunction0(haveError), waitForResponse = js.Any.fromFunction1(waitForResponse))
   
     __obj.asInstanceOf[SOAPResponseV2]
   }

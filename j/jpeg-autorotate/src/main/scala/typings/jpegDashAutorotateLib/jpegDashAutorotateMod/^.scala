@@ -14,7 +14,7 @@ object ^ extends js.Object {
     path_or_buffer: java.lang.String,
     options: jpegDashAutorotateLib.Anon_Quality,
     module_callback: js.Function4[
-      /* error */ jpegDashAutorotateLib.jpegDashAutorotateMod.CustomError | scala.Null, 
+      /* error */ CustomError | scala.Null, 
       /* buffer */ nodeLib.Buffer | scala.Null, 
       /* orientation */ scala.Double | scala.Null, 
       /* dimensions */ jpegDashAutorotateLib.Anon_Height | scala.Null, 
@@ -27,7 +27,7 @@ object ^ extends js.Object {
     path_or_buffer: nodeLib.Buffer,
     options: jpegDashAutorotateLib.Anon_Quality,
     module_callback: js.Function4[
-      /* error */ jpegDashAutorotateLib.jpegDashAutorotateMod.CustomError | scala.Null, 
+      /* error */ CustomError | scala.Null, 
       /* buffer */ nodeLib.Buffer | scala.Null, 
       /* orientation */ scala.Double | scala.Null, 
       /* dimensions */ jpegDashAutorotateLib.Anon_Height | scala.Null, 

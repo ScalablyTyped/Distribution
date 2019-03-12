@@ -11,6 +11,6 @@ object ^ extends js.Object {
   val Cell: inkLib.inkMod.StatelessComponent[inkDashTableLib.Anon_Children, js.Object] = js.native
   val Header: inkLib.inkMod.StatelessComponent[inkDashTableLib.Anon_Children, js.Object] = js.native
   val Skeleton: inkLib.inkMod.StatelessComponent[inkDashTableLib.Anon_Children, js.Object] = js.native
-  val default: inkLib.inkMod.StatelessComponent[inkDashTableLib.inkDashTableMod.TableProps, js.Object] = js.native
+  val default: inkLib.inkMod.StatelessComponent[TableProps, js.Object] = js.native
 }
 

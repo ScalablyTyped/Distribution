@@ -15,16 +15,10 @@ trait InventoryItemsResource extends js.Object {
 object InventoryItemsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InventoryItem]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsIdsInPlan, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InventoryItemsListResponse]
-    ]
+    get: gapiDotClientDotDfareportingLib.Anon_AltFieldsId => gapiDotClientLib.gapiNs.clientNs.Request[InventoryItem],
+    list: gapiDotClientDotDfareportingLib.Anon_AltFieldsIdsInPlan => gapiDotClientLib.gapiNs.clientNs.Request[InventoryItemsListResponse]
   ): InventoryItemsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[InventoryItemsResource]
   }

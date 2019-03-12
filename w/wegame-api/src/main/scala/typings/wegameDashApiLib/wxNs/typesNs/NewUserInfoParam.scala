@@ -27,18 +27,18 @@ trait NewUserInfoParam extends js.Object {
 object NewUserInfoParam {
   @scala.inline
   def apply(
-    complete: js.Function0[scala.Unit] = null,
-    fail: js.Function0[scala.Unit] = null,
+    complete: () => scala.Unit = null,
+    fail: () => scala.Unit = null,
     lang: wegameDashApiLib.wegameDashApiLibStrings.en | wegameDashApiLib.wegameDashApiLibStrings.zh_CN | wegameDashApiLib.wegameDashApiLibStrings.zh_TW = null,
     openIdList: js.Array[java.lang.String] = null,
-    success: js.Function1[/* res */ wegameDashApiLib.Anon_DataArray, scala.Unit] = null
+    success: /* res */ wegameDashApiLib.Anon_DataArray => scala.Unit = null
   ): NewUserInfoParam = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (openIdList != null) __obj.updateDynamic("openIdList")(openIdList)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[NewUserInfoParam]
   }
 }

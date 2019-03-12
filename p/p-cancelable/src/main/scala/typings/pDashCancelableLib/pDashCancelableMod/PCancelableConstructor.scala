@@ -8,7 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PCancelableConstructor
   extends stdLib.PromiseConstructor {
-  val CancelError: pDashCancelableLib.pDashCancelableMod.PCancelableNs.CancelErrorConstructor = js.native
+  @JSName("CancelError")
+  val CancelError_Original: pDashCancelableLib.pDashCancelableMod.PCancelableNs.CancelErrorConstructor = js.native
+  def CancelError(): stdLib.Error = js.native
+  def CancelError(message: java.lang.String): stdLib.Error = js.native
   def fn[R](
     userFn: js.Function1[
       /* onCancel */ pDashCancelableLib.pDashCancelableMod.PCancelableNs.OnCancelFn, 

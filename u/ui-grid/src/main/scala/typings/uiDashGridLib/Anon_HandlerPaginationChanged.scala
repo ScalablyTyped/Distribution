@@ -20,13 +20,9 @@ trait Anon_HandlerPaginationChanged extends js.Object {
 object Anon_HandlerPaginationChanged {
   @scala.inline
   def apply(
-    paginationChanged: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      uiDashGridLib.uiDashGridMod.uiGridNs.paginationNs.paginationChangedHandler, 
-      scala.Unit
-    ]
+    paginationChanged: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.paginationNs.paginationChangedHandler) => scala.Unit
   ): Anon_HandlerPaginationChanged = {
-    val __obj = js.Dynamic.literal(paginationChanged = paginationChanged)
+    val __obj = js.Dynamic.literal(paginationChanged = js.Any.fromFunction2(paginationChanged))
   
     __obj.asInstanceOf[Anon_HandlerPaginationChanged]
   }

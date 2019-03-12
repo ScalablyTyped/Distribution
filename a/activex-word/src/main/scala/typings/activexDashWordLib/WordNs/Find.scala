@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.Find")
 @js.native
 class Find[TParent] protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var CorrectHangulEndings: scala.Boolean = js.native
   val Creator: scala.Double = js.native
-  var Font: Font = js.native
+  var Font: activexDashWordLib.WordNs.Font = js.native
   var Format: scala.Boolean = js.native
   var Forward: scala.Boolean = js.native
   val Found: scala.Boolean = js.native
-  val Frame: Frame = js.native
+  val Frame: activexDashWordLib.WordNs.Frame = js.native
   var HanjaPhoneticHangul: scala.Boolean = js.native
   var Highlight: scala.Double = js.native
   var IgnorePunct: scala.Boolean = js.native
@@ -38,9 +38,9 @@ class Find[TParent] protected () extends js.Object {
   var MatchWholeWord: scala.Boolean = js.native
   var MatchWildcards: scala.Boolean = js.native
   var NoProofing: scala.Double = js.native
-  var ParagraphFormat: ParagraphFormat = js.native
+  var ParagraphFormat: activexDashWordLib.WordNs.ParagraphFormat = js.native
   val Parent: TParent = js.native
-  val Replacement: Replacement = js.native
+  val Replacement: activexDashWordLib.WordNs.Replacement = js.native
   var Style: js.Any = js.native
   var Text: java.lang.String = js.native
   var `Word.Find_typekey`: Find[Range | Selection] = js.native

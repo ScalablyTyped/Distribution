@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object outputMod {
   type Input[T] = T | js.Promise[T] | OutputInstance[T]
   type Inputs = stdLib.Record[java.lang.String, Input[js.Any]]
-  type Lifted[T] = (LiftedObject[T, NonFunctionPropertyNames[T]]) | LiftedArray[js.Any] | (LiftedObject[nodeLib.String, NonFunctionPropertyNames[nodeLib.String]]) | js.Object
+  type Lifted[T] = (LiftedObject[T, NonFunctionPropertyNames[T]]) | LiftedArray[js.Any] | (LiftedObject[java.lang.String, NonFunctionPropertyNames[java.lang.String]]) | js.Object
   type LiftedObject[T, K /* <: java.lang.String */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in K ]: @pulumi/pulumi.@pulumi/pulumi/output.Output<T[P]>}
     */ atPulumiPulumiLib.atPulumiPulumiLibStrings.LiftedObject with T

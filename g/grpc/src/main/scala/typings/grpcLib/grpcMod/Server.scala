@@ -59,7 +59,7 @@ class Server () extends js.Object {
   def bindAsync(
     port: java.lang.String,
     creds: ServerCredentials,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* port */ scala.Double, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error | scala.Null, /* port */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Forcibly shuts down the server. The server will stop receiving new calls

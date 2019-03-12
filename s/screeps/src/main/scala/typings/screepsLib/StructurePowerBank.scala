@@ -24,13 +24,13 @@ trait StructurePowerBank
 object StructurePowerBank {
   @scala.inline
   def apply(
-    destroy: js.Function0[ScreepsReturnCode],
+    destroy: () => ScreepsReturnCode,
     hits: scala.Double,
     hitsMax: scala.Double,
     id: java.lang.String,
-    isActive: js.Function0[scala.Boolean],
+    isActive: () => scala.Boolean,
     my: scala.Boolean,
-    notifyWhenAttacked: js.Function1[scala.Boolean, ScreepsReturnCode],
+    notifyWhenAttacked: scala.Boolean => ScreepsReturnCode,
     owner: Owner,
     pos: RoomPosition,
     power: scala.Double,
@@ -38,7 +38,7 @@ object StructurePowerBank {
     structureType: STRUCTURE_POWER_BANK,
     ticksToDecay: scala.Double
   ): StructurePowerBank = {
-    val __obj = js.Dynamic.literal(destroy = destroy, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, my = my, notifyWhenAttacked = notifyWhenAttacked, owner = owner, pos = pos, power = power, room = room, structureType = structureType, ticksToDecay = ticksToDecay)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, power = power, room = room, structureType = structureType, ticksToDecay = ticksToDecay)
   
     __obj.asInstanceOf[StructurePowerBank]
   }

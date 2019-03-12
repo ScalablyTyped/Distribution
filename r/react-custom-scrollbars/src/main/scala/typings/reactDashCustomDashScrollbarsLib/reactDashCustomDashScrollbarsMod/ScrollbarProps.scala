@@ -43,10 +43,10 @@ object ScrollbarProps {
     autoHideTimeout: scala.Int | scala.Double = null,
     hideTracksWhenNotNeeded: js.UndefOr[scala.Boolean] = js.undefined,
     onScroll: reactLib.reactMod.ReactNs.UIEventHandler[_] = null,
-    onScrollFrame: js.Function1[/* values */ positionValues, scala.Unit] = null,
-    onScrollStart: js.Function0[scala.Unit] = null,
-    onScrollStop: js.Function0[scala.Unit] = null,
-    onUpdate: js.Function1[/* values */ positionValues, scala.Unit] = null,
+    onScrollFrame: /* values */ positionValues => scala.Unit = null,
+    onScrollStart: () => scala.Unit = null,
+    onScrollStop: () => scala.Unit = null,
+    onUpdate: /* values */ positionValues => scala.Unit = null,
     renderThumbHorizontal: reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
     renderThumbVertical: reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
     renderTrackHorizontal: reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
@@ -67,10 +67,10 @@ object ScrollbarProps {
     if (autoHideTimeout != null) __obj.updateDynamic("autoHideTimeout")(autoHideTimeout.asInstanceOf[js.Any])
     if (!js.isUndefined(hideTracksWhenNotNeeded)) __obj.updateDynamic("hideTracksWhenNotNeeded")(hideTracksWhenNotNeeded)
     if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
-    if (onScrollFrame != null) __obj.updateDynamic("onScrollFrame")(onScrollFrame)
-    if (onScrollStart != null) __obj.updateDynamic("onScrollStart")(onScrollStart)
-    if (onScrollStop != null) __obj.updateDynamic("onScrollStop")(onScrollStop)
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (onScrollFrame != null) __obj.updateDynamic("onScrollFrame")(js.Any.fromFunction1(onScrollFrame))
+    if (onScrollStart != null) __obj.updateDynamic("onScrollStart")(js.Any.fromFunction0(onScrollStart))
+    if (onScrollStop != null) __obj.updateDynamic("onScrollStop")(js.Any.fromFunction0(onScrollStop))
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
     if (renderThumbHorizontal != null) __obj.updateDynamic("renderThumbHorizontal")(renderThumbHorizontal)
     if (renderThumbVertical != null) __obj.updateDynamic("renderThumbVertical")(renderThumbVertical)
     if (renderTrackHorizontal != null) __obj.updateDynamic("renderTrackHorizontal")(renderTrackHorizontal)

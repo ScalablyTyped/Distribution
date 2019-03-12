@@ -97,7 +97,7 @@ object Options {
     cacheLocation: adalDashAngularLib.adalDashAngularLibStrings.localStorage | adalDashAngularLib.adalDashAngularLibStrings.sessionStorage = null,
     callback: TokenCallback = null,
     correlationId: java.lang.String = null,
-    displayCall: js.Function1[/* url */ java.lang.String, scala.Unit] = null,
+    displayCall: /* url */ java.lang.String => scala.Unit = null,
     endpoints: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     expireOffsetSeconds: scala.Int | scala.Double = null,
     extraQueryParameter: java.lang.String = null,
@@ -117,7 +117,7 @@ object Options {
     if (cacheLocation != null) __obj.updateDynamic("cacheLocation")(cacheLocation.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(callback)
     if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId)
-    if (displayCall != null) __obj.updateDynamic("displayCall")(displayCall)
+    if (displayCall != null) __obj.updateDynamic("displayCall")(js.Any.fromFunction1(displayCall))
     if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints)
     if (expireOffsetSeconds != null) __obj.updateDynamic("expireOffsetSeconds")(expireOffsetSeconds.asInstanceOf[js.Any])
     if (extraQueryParameter != null) __obj.updateDynamic("extraQueryParameter")(extraQueryParameter)

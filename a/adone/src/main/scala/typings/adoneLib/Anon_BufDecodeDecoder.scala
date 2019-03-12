@@ -61,13 +61,13 @@ object Anon_BufDecodeDecoder {
       /* initialCapacity */ js.UndefOr[/* initialCapacity */ scala.Double], 
       adoneLib.adoneNs.dataNs.mpakNs.Serializer
     ],
-    decode: js.Function1[adoneLib.adoneNs.collectionNs.INs.ByteArrayNs.Wrappable, js.Any],
-    encode: js.Function1[js.Any, nodeLib.Buffer],
-    registerCommonTypesFor: js.Function1[adoneLib.adoneNs.dataNs.mpakNs.Serializer, scala.Unit],
+    decode: adoneLib.adoneNs.collectionNs.INs.ByteArrayNs.Wrappable => js.Any,
+    encode: js.Any => nodeLib.Buffer,
+    registerCommonTypesFor: adoneLib.adoneNs.dataNs.mpakNs.Serializer => scala.Unit,
     serializer: adoneLib.adoneNs.dataNs.mpakNs.Serializer,
-    tryDecode: js.Function1[adoneLib.adoneNs.collectionNs.ByteArray, js.Any]
+    tryDecode: adoneLib.adoneNs.collectionNs.ByteArray => js.Any
   ): Anon_BufDecodeDecoder = {
-    val __obj = js.Dynamic.literal(Decoder = Decoder, Encoder = Encoder, INs = INs, Serializer = Serializer, decode = decode, encode = encode, registerCommonTypesFor = registerCommonTypesFor, serializer = serializer, tryDecode = tryDecode)
+    val __obj = js.Dynamic.literal(Decoder = Decoder, Encoder = Encoder, INs = INs, Serializer = Serializer, decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode), registerCommonTypesFor = js.Any.fromFunction1(registerCommonTypesFor), serializer = serializer, tryDecode = js.Any.fromFunction1(tryDecode))
   
     __obj.asInstanceOf[Anon_BufDecodeDecoder]
   }

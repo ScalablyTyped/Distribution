@@ -11,8 +11,8 @@ trait ITimeTriggerFactory extends js.Object {
 
 object ITimeTriggerFactory {
   @scala.inline
-  def apply(create: js.Function2[scala.Double, scala.Boolean, TimeTrigger]): ITimeTriggerFactory = {
-    val __obj = js.Dynamic.literal(create = create)
+  def apply(create: (scala.Double, scala.Boolean) => TimeTrigger): ITimeTriggerFactory = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create))
   
     __obj.asInstanceOf[ITimeTriggerFactory]
   }

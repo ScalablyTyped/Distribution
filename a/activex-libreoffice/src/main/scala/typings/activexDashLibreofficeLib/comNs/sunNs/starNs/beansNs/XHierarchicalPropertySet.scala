@@ -57,14 +57,14 @@ object XHierarchicalPropertySet {
   @scala.inline
   def apply(
     HierarchicalPropertySetInfo: XHierarchicalPropertySetInfo,
-    acquire: js.Function0[scala.Unit],
-    getHierarchicalPropertySetInfo: js.Function0[XHierarchicalPropertySetInfo],
-    getHierarchicalPropertyValue: js.Function1[java.lang.String, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setHierarchicalPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    getHierarchicalPropertySetInfo: () => XHierarchicalPropertySetInfo,
+    getHierarchicalPropertyValue: java.lang.String => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setHierarchicalPropertyValue: (java.lang.String, js.Any) => scala.Unit
   ): XHierarchicalPropertySet = {
-    val __obj = js.Dynamic.literal(HierarchicalPropertySetInfo = HierarchicalPropertySetInfo, acquire = acquire, getHierarchicalPropertySetInfo = getHierarchicalPropertySetInfo, getHierarchicalPropertyValue = getHierarchicalPropertyValue, queryInterface = queryInterface, release = release, setHierarchicalPropertyValue = setHierarchicalPropertyValue)
+    val __obj = js.Dynamic.literal(HierarchicalPropertySetInfo = HierarchicalPropertySetInfo, acquire = js.Any.fromFunction0(acquire), getHierarchicalPropertySetInfo = js.Any.fromFunction0(getHierarchicalPropertySetInfo), getHierarchicalPropertyValue = js.Any.fromFunction1(getHierarchicalPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setHierarchicalPropertyValue = js.Any.fromFunction2(setHierarchicalPropertyValue))
   
     __obj.asInstanceOf[XHierarchicalPropertySet]
   }

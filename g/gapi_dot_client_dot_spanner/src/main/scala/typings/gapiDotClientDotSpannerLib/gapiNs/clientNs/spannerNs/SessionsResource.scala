@@ -118,52 +118,19 @@ trait SessionsResource extends js.Object {
 object SessionsResource {
   @scala.inline
   def apply(
-    beginTransaction: js.Function1[
-      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Transaction]
-    ],
-    commit: js.Function1[
-      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CommitResponse]
-    ],
-    create: js.Function1[
-      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackDatabase, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Session]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotSpannerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    executeSql: js.Function1[
-      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ResultSet]
-    ],
-    executeStreamingSql: js.Function1[
-      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PartialResultSet]
-    ],
-    get: js.Function1[
-      gapiDotClientDotSpannerLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Session]
-    ],
-    list: js.Function1[
-      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackDatabaseFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListSessionsResponse]
-    ],
-    read: js.Function1[
-      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ResultSet]
-    ],
-    rollback: js.Function1[
-      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    streamingRead: js.Function1[
-      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PartialResultSet]
-    ]
+    beginTransaction: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[Transaction],
+    commit: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[CommitResponse],
+    create: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackDatabase => gapiDotClientLib.gapiNs.clientNs.Request[Session],
+    delete: gapiDotClientDotSpannerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    executeSql: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[ResultSet],
+    executeStreamingSql: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[PartialResultSet],
+    get: gapiDotClientDotSpannerLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Session],
+    list: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackDatabaseFields => gapiDotClientLib.gapiNs.clientNs.Request[ListSessionsResponse],
+    read: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[ResultSet],
+    rollback: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    streamingRead: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[PartialResultSet]
   ): SessionsResource = {
-    val __obj = js.Dynamic.literal(beginTransaction = beginTransaction, commit = commit, create = create, delete = delete, executeSql = executeSql, executeStreamingSql = executeStreamingSql, get = get, list = list, read = read, rollback = rollback, streamingRead = streamingRead)
+    val __obj = js.Dynamic.literal(beginTransaction = js.Any.fromFunction1(beginTransaction), commit = js.Any.fromFunction1(commit), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), executeSql = js.Any.fromFunction1(executeSql), executeStreamingSql = js.Any.fromFunction1(executeStreamingSql), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), read = js.Any.fromFunction1(read), rollback = js.Any.fromFunction1(rollback), streamingRead = js.Any.fromFunction1(streamingRead))
   
     __obj.asInstanceOf[SessionsResource]
   }

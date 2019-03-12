@@ -16,13 +16,13 @@ trait DataExecutionStatus extends js.Object {
 object DataExecutionStatus {
   @scala.inline
   def apply(
-    getErrorCode: js.Function0[DataExecutionErrorCode],
-    getErrorMessage: js.Function0[java.lang.String],
-    getExecutionState: js.Function0[DataExecutionState],
-    getLastRefreshedTime: js.Function0[stdLib.Date],
-    isTruncated: js.Function0[scala.Boolean]
+    getErrorCode: () => DataExecutionErrorCode,
+    getErrorMessage: () => java.lang.String,
+    getExecutionState: () => DataExecutionState,
+    getLastRefreshedTime: () => stdLib.Date,
+    isTruncated: () => scala.Boolean
   ): DataExecutionStatus = {
-    val __obj = js.Dynamic.literal(getErrorCode = getErrorCode, getErrorMessage = getErrorMessage, getExecutionState = getExecutionState, getLastRefreshedTime = getLastRefreshedTime, isTruncated = isTruncated)
+    val __obj = js.Dynamic.literal(getErrorCode = js.Any.fromFunction0(getErrorCode), getErrorMessage = js.Any.fromFunction0(getErrorMessage), getExecutionState = js.Any.fromFunction0(getExecutionState), getLastRefreshedTime = js.Any.fromFunction0(getLastRefreshedTime), isTruncated = js.Any.fromFunction0(isTruncated))
   
     __obj.asInstanceOf[DataExecutionStatus]
   }

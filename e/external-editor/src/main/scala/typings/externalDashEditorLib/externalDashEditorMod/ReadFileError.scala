@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ReadFileError protected ()
   extends externalDashEditorLib.mainErrorsReadFileErrorMod.ReadFileError {
-  def this(originalError: nodeLib.Error) = this()
+  def this(originalError: stdLib.Error) = this()
 }
 

@@ -11,8 +11,8 @@ trait IHostNameStatics extends js.Object {
 
 object IHostNameStatics {
   @scala.inline
-  def apply(compare: js.Function2[java.lang.String, java.lang.String, scala.Double]): IHostNameStatics = {
-    val __obj = js.Dynamic.literal(compare = compare)
+  def apply(compare: (java.lang.String, java.lang.String) => scala.Double): IHostNameStatics = {
+    val __obj = js.Dynamic.literal(compare = js.Any.fromFunction2(compare))
   
     __obj.asInstanceOf[IHostNameStatics]
   }

@@ -12,8 +12,8 @@ trait DataSource extends js.Object {
 
 object DataSource {
   @scala.inline
-  def apply(getSpec: js.Function0[DataSourceSpec], updateSpec: js.Function1[DataSourceSpec, DataSource]): DataSource = {
-    val __obj = js.Dynamic.literal(getSpec = getSpec, updateSpec = updateSpec)
+  def apply(getSpec: () => DataSourceSpec, updateSpec: DataSourceSpec => DataSource): DataSource = {
+    val __obj = js.Dynamic.literal(getSpec = js.Any.fromFunction0(getSpec), updateSpec = js.Any.fromFunction1(updateSpec))
   
     __obj.asInstanceOf[DataSource]
   }

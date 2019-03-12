@@ -15,12 +15,12 @@ trait SketchDocumentData extends js.Object {
 object SketchDocumentData {
   @scala.inline
   def apply(
-    assets: js.Function0[SketchAssetCollection],
-    layerStyles: js.Function0[scala.Unit],
-    layerSymbols: js.Function0[scala.Unit],
-    layerTextStyles: js.Function0[SketchSharedStyleContainer]
+    assets: () => SketchAssetCollection,
+    layerStyles: () => scala.Unit,
+    layerSymbols: () => scala.Unit,
+    layerTextStyles: () => SketchSharedStyleContainer
   ): SketchDocumentData = {
-    val __obj = js.Dynamic.literal(assets = assets, layerStyles = layerStyles, layerSymbols = layerSymbols, layerTextStyles = layerTextStyles)
+    val __obj = js.Dynamic.literal(assets = js.Any.fromFunction0(assets), layerStyles = js.Any.fromFunction0(layerStyles), layerSymbols = js.Any.fromFunction0(layerSymbols), layerTextStyles = js.Any.fromFunction0(layerTextStyles))
   
     __obj.asInstanceOf[SketchDocumentData]
   }

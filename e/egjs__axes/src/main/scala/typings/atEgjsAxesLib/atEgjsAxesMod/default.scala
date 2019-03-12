@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class default protected ()
   extends atEgjsAxesLib.axesMod.default {
-  def this(axis: org.scalablytyped.runtime.StringDictionary[atEgjsAxesLib.axismanagerMod.AxisOption], options: atEgjsAxesLib.axesMod.AxesOption) = this()
-  def this(axis: org.scalablytyped.runtime.StringDictionary[atEgjsAxesLib.axismanagerMod.AxisOption], options: atEgjsAxesLib.axesMod.AxesOption, startPos: atEgjsAxesLib.axismanagerMod.Axis) = this()
+  def this(axis: org.scalablytyped.runtime.StringDictionary[atEgjsAxesLib.axisManagerMod.AxisOption], options: atEgjsAxesLib.axesMod.AxesOption) = this()
+  def this(axis: org.scalablytyped.runtime.StringDictionary[atEgjsAxesLib.axisManagerMod.AxisOption], options: atEgjsAxesLib.axesMod.AxesOption, startPos: atEgjsAxesLib.axisManagerMod.Axis) = this()
 }
 
 /* static members */

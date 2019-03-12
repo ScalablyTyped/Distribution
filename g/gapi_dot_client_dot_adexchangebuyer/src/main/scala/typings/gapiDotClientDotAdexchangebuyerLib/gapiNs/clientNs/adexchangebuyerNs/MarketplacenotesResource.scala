@@ -15,16 +15,10 @@ trait MarketplacenotesResource extends js.Object {
 object MarketplacenotesResource {
   @scala.inline
   def apply(
-    insert: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AddOrderNotesResponse]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GetOrderNotesResponse]
-    ]
+    insert: gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[AddOrderNotesResponse],
+    list: gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[GetOrderNotesResponse]
   ): MarketplacenotesResource = {
-    val __obj = js.Dynamic.literal(insert = insert, list = list)
+    val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[MarketplacenotesResource]
   }

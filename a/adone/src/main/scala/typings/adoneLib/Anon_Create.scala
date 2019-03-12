@@ -14,9 +14,9 @@ object Anon_Create {
   @scala.inline
   def apply(
     Domain: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.domainNs.Domain],
-    create: js.Function0[nodeLib.domainMod.Domain]
+    create: () => nodeLib.domainMod.Domain
   ): Anon_Create = {
-    val __obj = js.Dynamic.literal(Domain = Domain, create = create)
+    val __obj = js.Dynamic.literal(Domain = Domain, create = js.Any.fromFunction0(create))
   
     __obj.asInstanceOf[Anon_Create]
   }

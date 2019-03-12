@@ -13,12 +13,9 @@ trait NotificationResource extends js.Object {
 object NotificationResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotBooksLib.Anon_AltFieldsKeyLocale, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Notification]
-    ]
+    get: gapiDotClientDotBooksLib.Anon_AltFieldsKeyLocale => gapiDotClientLib.gapiNs.clientNs.Request[Notification]
   ): NotificationResource = {
-    val __obj = js.Dynamic.literal(get = get)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
   
     __obj.asInstanceOf[NotificationResource]
   }

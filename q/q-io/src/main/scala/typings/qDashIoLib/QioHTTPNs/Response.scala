@@ -19,10 +19,10 @@ object Response {
     body: qDashIoLib.QioNs.Reader,
     headers: Headers,
     node: js.Any,
-    onclose: js.Function0[scala.Unit],
+    onclose: () => scala.Unit,
     status: scala.Double
   ): Response = {
-    val __obj = js.Dynamic.literal(body = body, headers = headers, node = node, onclose = onclose, status = status)
+    val __obj = js.Dynamic.literal(body = body, headers = headers, node = node, onclose = js.Any.fromFunction0(onclose), status = status)
   
     __obj.asInstanceOf[Response]
   }

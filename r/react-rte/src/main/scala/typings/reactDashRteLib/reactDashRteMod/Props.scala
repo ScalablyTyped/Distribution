@@ -39,18 +39,15 @@ object Props {
   def apply(
     value: EditorValue,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
-    blockStyleFn: js.Function1[
-      /* block */ draftDashJsLib.draftDashJsMod.ContentBlock, 
-      js.UndefOr[java.lang.String]
-    ] = null,
+    blockStyleFn: /* block */ draftDashJsLib.draftDashJsMod.ContentBlock => js.UndefOr[java.lang.String] = null,
     className: java.lang.String = null,
     customControls: js.Array[reactDashRteLib.CustomControl] = null,
     customStyleMap: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     editorClassName: java.lang.String = null,
     editorStyle: js.Object = null,
-    handleReturn: js.Function1[/* event */ js.Object, scala.Boolean] = null,
-    keyBindingFn: js.Function1[/* event */ js.Object, js.UndefOr[java.lang.String]] = null,
+    handleReturn: /* event */ js.Object => scala.Boolean = null,
+    keyBindingFn: /* event */ js.Object => js.UndefOr[java.lang.String] = null,
     onChange: reactDashRteLib.ChangeHandler = null,
     placeholder: java.lang.String = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
@@ -61,15 +58,15 @@ object Props {
   ): Props = {
     val __obj = js.Dynamic.literal(value = value)
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
-    if (blockStyleFn != null) __obj.updateDynamic("blockStyleFn")(blockStyleFn)
+    if (blockStyleFn != null) __obj.updateDynamic("blockStyleFn")(js.Any.fromFunction1(blockStyleFn))
     if (className != null) __obj.updateDynamic("className")(className)
     if (customControls != null) __obj.updateDynamic("customControls")(customControls)
     if (customStyleMap != null) __obj.updateDynamic("customStyleMap")(customStyleMap)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (editorClassName != null) __obj.updateDynamic("editorClassName")(editorClassName)
     if (editorStyle != null) __obj.updateDynamic("editorStyle")(editorStyle)
-    if (handleReturn != null) __obj.updateDynamic("handleReturn")(handleReturn)
-    if (keyBindingFn != null) __obj.updateDynamic("keyBindingFn")(keyBindingFn)
+    if (handleReturn != null) __obj.updateDynamic("handleReturn")(js.Any.fromFunction1(handleReturn))
+    if (keyBindingFn != null) __obj.updateDynamic("keyBindingFn")(js.Any.fromFunction1(keyBindingFn))
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)

@@ -53,15 +53,15 @@ trait IRison extends js.Object {
 object IRison {
   @scala.inline
   def apply(
-    decode: js.Function1[java.lang.String, js.Any],
-    decode_array: js.Function1[java.lang.String, js.Array[js.Any]],
-    decode_object: js.Function1[java.lang.String, js.Any],
-    encode: js.Function1[js.Any, java.lang.String],
-    encode_array: js.Function1[js.Array[js.Any], java.lang.String],
-    encode_object: js.Function1[js.Any, java.lang.String],
-    encode_uri: js.Function1[js.Any, java.lang.String]
+    decode: java.lang.String => js.Any,
+    decode_array: java.lang.String => js.Array[js.Any],
+    decode_object: java.lang.String => js.Any,
+    encode: js.Any => java.lang.String,
+    encode_array: js.Array[js.Any] => java.lang.String,
+    encode_object: js.Any => java.lang.String,
+    encode_uri: js.Any => java.lang.String
   ): IRison = {
-    val __obj = js.Dynamic.literal(decode = decode, decode_array = decode_array, decode_object = decode_object, encode = encode, encode_array = encode_array, encode_object = encode_object, encode_uri = encode_uri)
+    val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), decode_array = js.Any.fromFunction1(decode_array), decode_object = js.Any.fromFunction1(decode_object), encode = js.Any.fromFunction1(encode), encode_array = js.Any.fromFunction1(encode_array), encode_object = js.Any.fromFunction1(encode_object), encode_uri = js.Any.fromFunction1(encode_uri))
   
     __obj.asInstanceOf[IRison]
   }

@@ -23,7 +23,7 @@ trait MeasureProperties extends js.Object {
   /** This is the overhang of the two help lines. */
   var MeasureHelpLineOverhang: scala.Double
   /** This enumeration specifies the MeasureKind. */
-  var MeasureKind: MeasureKind
+  var MeasureKind: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.MeasureKind
   /** This is the distance from the reference edge to the measure line. */
   var MeasureLineDistance: scala.Double
   /** This is the overhang of the reference line over the help lines. */

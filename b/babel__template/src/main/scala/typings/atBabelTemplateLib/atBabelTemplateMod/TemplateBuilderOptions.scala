@@ -15,7 +15,7 @@ trait TemplateBuilderOptions
   /**
     * A set of placeholder names to automatically accept. Items in this list do not need to match the given placeholder pattern.
     */
-  var placeholderWhitelist: js.UndefOr[lodashLib.lodashMod.Global.Set[java.lang.String]] = js.undefined
+  var placeholderWhitelist: js.UndefOr[stdLib.Set[java.lang.String]] = js.undefined
   /**
     * Set this to `true` to preserve any comments from the `code` parameter.
     */
@@ -30,7 +30,7 @@ object TemplateBuilderOptions {
     allowReturnOutsideFunction: js.UndefOr[scala.Boolean] = js.undefined,
     allowSuperOutsideMethod: js.UndefOr[scala.Boolean] = js.undefined,
     placeholderPattern: stdLib.RegExp | atBabelTemplateLib.atBabelTemplateLibNumbers.`false` = null,
-    placeholderWhitelist: lodashLib.lodashMod.Global.Set[java.lang.String] = null,
+    placeholderWhitelist: stdLib.Set[java.lang.String] = null,
     plugins: js.Array[atBabelParserLib.atBabelParserMod.ParserPlugin] = null,
     preserveComments: js.UndefOr[scala.Boolean] = js.undefined,
     ranges: js.UndefOr[scala.Boolean] = js.undefined,

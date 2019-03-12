@@ -28,7 +28,7 @@ trait StrictDimmerInnerProps extends js.Object {
     */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       /* data */ DimmerInnerProps, 
       scala.Unit
     ]
@@ -41,7 +41,7 @@ trait StrictDimmerInnerProps extends js.Object {
     */
   var onClickOutside: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       /* data */ DimmerInnerProps, 
       scala.Unit
     ]
@@ -66,16 +66,8 @@ object StrictDimmerInnerProps {
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     inverted: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
-      /* data */ DimmerInnerProps, 
-      scala.Unit
-    ] = null,
-    onClickOutside: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
-      /* data */ DimmerInnerProps, 
-      scala.Unit
-    ] = null,
+    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ DimmerInnerProps) => scala.Unit = null,
+    onClickOutside: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ DimmerInnerProps) => scala.Unit = null,
     page: js.UndefOr[scala.Boolean] = js.undefined,
     simple: js.UndefOr[scala.Boolean] = js.undefined,
     verticalAlign: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top = null
@@ -88,8 +80,8 @@ object StrictDimmerInnerProps {
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onClickOutside != null) __obj.updateDynamic("onClickOutside")(onClickOutside)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
+    if (onClickOutside != null) __obj.updateDynamic("onClickOutside")(js.Any.fromFunction2(onClickOutside))
     if (!js.isUndefined(page)) __obj.updateDynamic("page")(page)
     if (!js.isUndefined(simple)) __obj.updateDynamic("simple")(simple)
     if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])

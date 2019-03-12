@@ -13,10 +13,10 @@ trait Collator extends js.Object {
 object Collator {
   @scala.inline
   def apply(
-    compare: js.Function2[java.lang.String, java.lang.String, scala.Double],
-    resolvedOptions: js.Function0[ResolvedCollatorOptions]
+    compare: (java.lang.String, java.lang.String) => scala.Double,
+    resolvedOptions: () => ResolvedCollatorOptions
   ): Collator = {
-    val __obj = js.Dynamic.literal(compare = compare, resolvedOptions = resolvedOptions)
+    val __obj = js.Dynamic.literal(compare = js.Any.fromFunction2(compare), resolvedOptions = js.Any.fromFunction0(resolvedOptions))
   
     __obj.asInstanceOf[Collator]
   }

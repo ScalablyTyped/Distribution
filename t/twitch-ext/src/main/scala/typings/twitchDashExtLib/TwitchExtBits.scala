@@ -71,14 +71,14 @@ trait TwitchExtBits extends js.Object {
 object TwitchExtBits {
   @scala.inline
   def apply(
-    getProducts: js.Function0[js.Promise[js.Array[TwitchExtBitsProduct]]],
-    onTransactionCancelled: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    onTransactionComplete: js.Function1[js.Function1[/* transaction */ TwitchExtBitsTransaction, scala.Unit], scala.Unit],
-    setUseLoopback: js.Function1[scala.Boolean, scala.Unit],
-    showBitsBalance: js.Function0[scala.Unit],
-    useBits: js.Function1[java.lang.String, scala.Unit]
+    getProducts: () => js.Promise[js.Array[TwitchExtBitsProduct]],
+    onTransactionCancelled: js.Function0[scala.Unit] => scala.Unit,
+    onTransactionComplete: js.Function1[/* transaction */ TwitchExtBitsTransaction, scala.Unit] => scala.Unit,
+    setUseLoopback: scala.Boolean => scala.Unit,
+    showBitsBalance: () => scala.Unit,
+    useBits: java.lang.String => scala.Unit
   ): TwitchExtBits = {
-    val __obj = js.Dynamic.literal(getProducts = getProducts, onTransactionCancelled = onTransactionCancelled, onTransactionComplete = onTransactionComplete, setUseLoopback = setUseLoopback, showBitsBalance = showBitsBalance, useBits = useBits)
+    val __obj = js.Dynamic.literal(getProducts = js.Any.fromFunction0(getProducts), onTransactionCancelled = js.Any.fromFunction1(onTransactionCancelled), onTransactionComplete = js.Any.fromFunction1(onTransactionComplete), setUseLoopback = js.Any.fromFunction1(setUseLoopback), showBitsBalance = js.Any.fromFunction0(showBitsBalance), useBits = js.Any.fromFunction1(useBits))
   
     __obj.asInstanceOf[TwitchExtBits]
   }

@@ -154,24 +154,12 @@ trait size extends js.Object {
 object size {
   @scala.inline
   def apply(
-    createAgeRenderer: js.Function1[
-      sizeCreateAgeRendererParams, 
-      arcgisDashJsDashApiLib.IPromise[sizeAgeRendererResult]
-    ],
-    createClassBreaksRenderer: js.Function1[
-      sizeCreateClassBreaksRendererParams, 
-      arcgisDashJsDashApiLib.IPromise[sizeClassBreaksRendererResult]
-    ],
-    createContinuousRenderer: js.Function1[
-      sizeCreateContinuousRendererParams, 
-      arcgisDashJsDashApiLib.IPromise[sizeContinuousRendererResult]
-    ],
-    createVisualVariables: js.Function1[
-      sizeCreateVisualVariablesParams, 
-      arcgisDashJsDashApiLib.IPromise[sizeVisualVariableResult]
-    ]
+    createAgeRenderer: sizeCreateAgeRendererParams => arcgisDashJsDashApiLib.IPromise[sizeAgeRendererResult],
+    createClassBreaksRenderer: sizeCreateClassBreaksRendererParams => arcgisDashJsDashApiLib.IPromise[sizeClassBreaksRendererResult],
+    createContinuousRenderer: sizeCreateContinuousRendererParams => arcgisDashJsDashApiLib.IPromise[sizeContinuousRendererResult],
+    createVisualVariables: sizeCreateVisualVariablesParams => arcgisDashJsDashApiLib.IPromise[sizeVisualVariableResult]
   ): size = {
-    val __obj = js.Dynamic.literal(createAgeRenderer = createAgeRenderer, createClassBreaksRenderer = createClassBreaksRenderer, createContinuousRenderer = createContinuousRenderer, createVisualVariables = createVisualVariables)
+    val __obj = js.Dynamic.literal(createAgeRenderer = js.Any.fromFunction1(createAgeRenderer), createClassBreaksRenderer = js.Any.fromFunction1(createClassBreaksRenderer), createContinuousRenderer = js.Any.fromFunction1(createContinuousRenderer), createVisualVariables = js.Any.fromFunction1(createVisualVariables))
   
     __obj.asInstanceOf[size]
   }

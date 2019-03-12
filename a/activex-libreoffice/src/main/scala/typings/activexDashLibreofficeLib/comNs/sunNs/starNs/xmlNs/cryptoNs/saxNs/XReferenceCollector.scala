@@ -27,13 +27,13 @@ trait XReferenceCollector
 object XReferenceCollector {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setReferenceCount: js.Function1[scala.Double, scala.Unit],
-    setReferenceId: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setReferenceCount: scala.Double => scala.Unit,
+    setReferenceId: scala.Double => scala.Unit
   ): XReferenceCollector = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, setReferenceCount = setReferenceCount, setReferenceId = setReferenceId)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setReferenceCount = js.Any.fromFunction1(setReferenceCount), setReferenceId = js.Any.fromFunction1(setReferenceId))
   
     __obj.asInstanceOf[XReferenceCollector]
   }

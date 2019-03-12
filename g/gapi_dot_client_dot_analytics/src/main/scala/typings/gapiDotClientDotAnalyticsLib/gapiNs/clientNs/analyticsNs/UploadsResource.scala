@@ -19,24 +19,12 @@ trait UploadsResource extends js.Object {
 object UploadsResource {
   @scala.inline
   def apply(
-    deleteUploadData: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDataSourceId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDataSourceIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Upload]
-    ],
-    list: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDataSourceIdFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Uploads]
-    ],
-    uploadData: js.Function1[
-      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDataSourceId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Upload]
-    ]
+    deleteUploadData: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDataSourceId => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDataSourceIdFields => gapiDotClientLib.gapiNs.clientNs.Request[Upload],
+    list: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDataSourceIdFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Uploads],
+    uploadData: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDataSourceId => gapiDotClientLib.gapiNs.clientNs.Request[Upload]
   ): UploadsResource = {
-    val __obj = js.Dynamic.literal(deleteUploadData = deleteUploadData, get = get, list = list, uploadData = uploadData)
+    val __obj = js.Dynamic.literal(deleteUploadData = js.Any.fromFunction1(deleteUploadData), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), uploadData = js.Any.fromFunction1(uploadData))
   
     __obj.asInstanceOf[UploadsResource]
   }

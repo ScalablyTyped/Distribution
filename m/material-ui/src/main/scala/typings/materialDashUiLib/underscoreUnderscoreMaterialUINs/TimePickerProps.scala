@@ -83,12 +83,12 @@ object TimePickerProps {
     name: java.lang.String = null,
     okLabel: reactLib.reactMod.ReactNs.ReactNode = null,
     onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onChange: js.Function2[/* e */ js.Any, /* time */ stdLib.Date, scala.Unit] = null,
+    onChange: (/* e */ js.Any, /* time */ stdLib.Date) => scala.Unit = null,
     onClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onDismiss: js.Function0[scala.Unit] = null,
+    onDismiss: () => scala.Unit = null,
     onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
     onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
-    onShow: js.Function0[scala.Unit] = null,
+    onShow: () => scala.Unit = null,
     pedantic: js.UndefOr[scala.Boolean] = js.undefined,
     rows: scala.Int | scala.Double = null,
     rowsMax: scala.Int | scala.Double = null,
@@ -128,12 +128,12 @@ object TimePickerProps {
     if (name != null) __obj.updateDynamic("name")(name)
     if (okLabel != null) __obj.updateDynamic("okLabel")(okLabel.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss)
+    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     if (!js.isUndefined(pedantic)) __obj.updateDynamic("pedantic")(pedantic)
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (rowsMax != null) __obj.updateDynamic("rowsMax")(rowsMax.asInstanceOf[js.Any])

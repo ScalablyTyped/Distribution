@@ -33,52 +33,19 @@ trait DeploymentsResource extends js.Object {
 object DeploymentsResource {
   @scala.inline
   def apply(
-    cancelPreview: js.Function1[
-      gapiDotClientDotDeploymentmanagerLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotDeploymentmanagerLib.Anon_AltDeletePolicy, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotDeploymentmanagerLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Deployment]
-    ],
-    getIamPolicy: js.Function1[
-      gapiDotClientDotDeploymentmanagerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotDeploymentmanagerLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDeploymentmanagerLib.Anon_AltFieldsFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DeploymentsListResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotDeploymentmanagerLib.Anon_AltCreatePolicy, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    setIamPolicy: js.Function1[
-      gapiDotClientDotDeploymentmanagerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    stop: js.Function1[
-      gapiDotClientDotDeploymentmanagerLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    testIamPermissions: js.Function1[
-      gapiDotClientDotDeploymentmanagerLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TestPermissionsResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotDeploymentmanagerLib.Anon_AltCreatePolicy, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    cancelPreview: gapiDotClientDotDeploymentmanagerLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    delete: gapiDotClientDotDeploymentmanagerLib.Anon_AltDeletePolicy => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotDeploymentmanagerLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Deployment],
+    getIamPolicy: gapiDotClientDotDeploymentmanagerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    insert: gapiDotClientDotDeploymentmanagerLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotDeploymentmanagerLib.Anon_AltFieldsFilter => gapiDotClientLib.gapiNs.clientNs.Request[DeploymentsListResponse],
+    patch: gapiDotClientDotDeploymentmanagerLib.Anon_AltCreatePolicy => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    setIamPolicy: gapiDotClientDotDeploymentmanagerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    stop: gapiDotClientDotDeploymentmanagerLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    testIamPermissions: gapiDotClientDotDeploymentmanagerLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[TestPermissionsResponse],
+    update: gapiDotClientDotDeploymentmanagerLib.Anon_AltCreatePolicy => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): DeploymentsResource = {
-    val __obj = js.Dynamic.literal(cancelPreview = cancelPreview, delete = delete, get = get, getIamPolicy = getIamPolicy, insert = insert, list = list, patch = patch, setIamPolicy = setIamPolicy, stop = stop, testIamPermissions = testIamPermissions, update = update)
+    val __obj = js.Dynamic.literal(cancelPreview = js.Any.fromFunction1(cancelPreview), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), setIamPolicy = js.Any.fromFunction1(setIamPolicy), stop = js.Any.fromFunction1(stop), testIamPermissions = js.Any.fromFunction1(testIamPermissions), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[DeploymentsResource]
   }

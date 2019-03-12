@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait XBridgeFactory
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** returns the sequence of all named and unnamed UNO interprocess bridges that are instantiated at the time the call is made. */
-  val ExistingBridges: activexDashInteropLib.SafeArray[XBridge]
+  val ExistingBridges: stdLib.SafeArray[XBridge]
   /**
     * tries to create a UNO interprocess bridge.
     * @param sName The name of the bridge. This allows other components to reuse an already created bridge (using getBridge). If empty, an anonymous bridge is
@@ -33,27 +33,21 @@ trait XBridgeFactory
     */
   def getBridge(sName: java.lang.String): XBridge
   /** returns the sequence of all named and unnamed UNO interprocess bridges that are instantiated at the time the call is made. */
-  def getExistingBridges(): activexDashInteropLib.SafeArray[XBridge]
+  def getExistingBridges(): stdLib.SafeArray[XBridge]
 }
 
 object XBridgeFactory {
   @scala.inline
   def apply(
-    ExistingBridges: activexDashInteropLib.SafeArray[XBridge],
-    acquire: js.Function0[scala.Unit],
-    createBridge: js.Function4[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.connectionNs.XConnection, 
-      XInstanceProvider, 
-      XBridge
-    ],
-    getBridge: js.Function1[java.lang.String, XBridge],
-    getExistingBridges: js.Function0[activexDashInteropLib.SafeArray[XBridge]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    ExistingBridges: stdLib.SafeArray[XBridge],
+    acquire: () => scala.Unit,
+    createBridge: (java.lang.String, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.connectionNs.XConnection, XInstanceProvider) => XBridge,
+    getBridge: java.lang.String => XBridge,
+    getExistingBridges: () => stdLib.SafeArray[XBridge],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XBridgeFactory = {
-    val __obj = js.Dynamic.literal(ExistingBridges = ExistingBridges, acquire = acquire, createBridge = createBridge, getBridge = getBridge, getExistingBridges = getExistingBridges, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ExistingBridges = ExistingBridges, acquire = js.Any.fromFunction0(acquire), createBridge = js.Any.fromFunction4(createBridge), getBridge = js.Any.fromFunction1(getBridge), getExistingBridges = js.Any.fromFunction0(getExistingBridges), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XBridgeFactory]
   }

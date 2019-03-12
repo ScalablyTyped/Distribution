@@ -18,13 +18,13 @@ trait TabStackProps extends js.Object {
 object TabStackProps {
   @scala.inline
   def apply(
-    render: js.Function1[TabsRendererProps, reactLib.reactMod.ReactNs.ReactNode],
+    render: TabsRendererProps => reactLib.reactMod.ReactNs.ReactNode,
     children: js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
     forceSync: js.UndefOr[scala.Boolean] = js.undefined,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
   ): TabStackProps = {
-    val __obj = js.Dynamic.literal(render = render)
+    val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
     if (children != null) __obj.updateDynamic("children")(children)
     if (!js.isUndefined(forceSync)) __obj.updateDynamic("forceSync")(forceSync)
     if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)

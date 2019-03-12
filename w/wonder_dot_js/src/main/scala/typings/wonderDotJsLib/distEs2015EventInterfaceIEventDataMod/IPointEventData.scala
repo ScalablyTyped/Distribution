@@ -30,7 +30,7 @@ object IPointEventData {
     clientY: scala.Double,
     pageX: scala.Double,
     pageY: scala.Double,
-    preventDefault: js.Function0[scala.Unit],
+    preventDefault: () => scala.Unit,
     returnValue: scala.Boolean,
     target: stdLib.HTMLElement,
     button: scala.Int | scala.Double = null,
@@ -44,7 +44,7 @@ object IPointEventData {
     webkitMovementY: scala.Int | scala.Double = null,
     wheelDelta: scala.Int | scala.Double = null
   ): IPointEventData = {
-    val __obj = js.Dynamic.literal(clientX = clientX, clientY = clientY, pageX = pageX, pageY = pageY, preventDefault = preventDefault, returnValue = returnValue, target = target)
+    val __obj = js.Dynamic.literal(clientX = clientX, clientY = clientY, pageX = pageX, pageY = pageY, preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue, target = target)
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
     if (currentTarget != null) __obj.updateDynamic("currentTarget")(currentTarget)
     if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])

@@ -12,7 +12,7 @@ trait DeclarationOption extends js.Object {
   var help: java.lang.String
   var hint: js.UndefOr[ParameterHint] = js.undefined
   var map: js.UndefOr[
-    typedocLib.typedocLibStrings.`object` | (nodeLib.Map[java.lang.String | scala.Double, _]) | org.scalablytyped.runtime.StringDictionary[js.Any]
+    typedocLib.typedocLibStrings.`object` | (stdLib.Map[java.lang.String | scala.Double, _]) | org.scalablytyped.runtime.StringDictionary[js.Any]
   ] = js.undefined
   var mapError: js.UndefOr[java.lang.String] = js.undefined
   var name: java.lang.String
@@ -27,10 +27,10 @@ object DeclarationOption {
     help: java.lang.String,
     name: java.lang.String,
     component: java.lang.String = null,
-    convert: js.Function2[/* param */ OptionDeclaration, /* value */ js.UndefOr[js.Any], _] = null,
+    convert: (/* param */ OptionDeclaration, /* value */ js.UndefOr[js.Any]) => _ = null,
     defaultValue: js.Any = null,
     hint: ParameterHint = null,
-    map: typedocLib.typedocLibStrings.`object` | (nodeLib.Map[java.lang.String | scala.Double, _]) | org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    map: typedocLib.typedocLibStrings.`object` | (stdLib.Map[java.lang.String | scala.Double, _]) | org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     mapError: java.lang.String = null,
     scope: ParameterScope = null,
     short: java.lang.String = null,
@@ -38,7 +38,7 @@ object DeclarationOption {
   ): DeclarationOption = {
     val __obj = js.Dynamic.literal(help = help, name = name)
     if (component != null) __obj.updateDynamic("component")(component)
-    if (convert != null) __obj.updateDynamic("convert")(convert)
+    if (convert != null) __obj.updateDynamic("convert")(js.Any.fromFunction2(convert))
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (hint != null) __obj.updateDynamic("hint")(hint)
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])

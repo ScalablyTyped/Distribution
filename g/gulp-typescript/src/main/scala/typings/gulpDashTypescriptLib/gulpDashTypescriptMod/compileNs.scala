@@ -79,7 +79,7 @@ object compileNs extends js.Object {
     }
     
     trait TypeScriptError
-      extends nodeLib.Error {
+      extends stdLib.Error {
       var diagnostic: typescriptLib.typescriptMod.tsNs.Diagnostic
       var endPosition: js.UndefOr[gulpDashTypescriptLib.Anon_Character] = js.undefined
       var file: js.UndefOr[gulpDashTypescriptLib.releaseTypesMod.VinylFile] = js.undefined

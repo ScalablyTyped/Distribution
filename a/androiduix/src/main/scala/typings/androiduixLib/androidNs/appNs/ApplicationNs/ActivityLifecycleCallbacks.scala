@@ -21,23 +21,15 @@ trait ActivityLifecycleCallbacks extends js.Object {
 object ActivityLifecycleCallbacks {
   @scala.inline
   def apply(
-    onActivityCreated: js.Function2[
-      androiduixLib.androidNs.appNs.Activity, 
-      androiduixLib.androidNs.osNs.Bundle, 
-      scala.Unit
-    ],
-    onActivityDestroyed: js.Function1[androiduixLib.androidNs.appNs.Activity, scala.Unit],
-    onActivityPaused: js.Function1[androiduixLib.androidNs.appNs.Activity, scala.Unit],
-    onActivityResumed: js.Function1[androiduixLib.androidNs.appNs.Activity, scala.Unit],
-    onActivitySaveInstanceState: js.Function2[
-      androiduixLib.androidNs.appNs.Activity, 
-      androiduixLib.androidNs.osNs.Bundle, 
-      scala.Unit
-    ],
-    onActivityStarted: js.Function1[androiduixLib.androidNs.appNs.Activity, scala.Unit],
-    onActivityStopped: js.Function1[androiduixLib.androidNs.appNs.Activity, scala.Unit]
+    onActivityCreated: (androiduixLib.androidNs.appNs.Activity, androiduixLib.androidNs.osNs.Bundle) => scala.Unit,
+    onActivityDestroyed: androiduixLib.androidNs.appNs.Activity => scala.Unit,
+    onActivityPaused: androiduixLib.androidNs.appNs.Activity => scala.Unit,
+    onActivityResumed: androiduixLib.androidNs.appNs.Activity => scala.Unit,
+    onActivitySaveInstanceState: (androiduixLib.androidNs.appNs.Activity, androiduixLib.androidNs.osNs.Bundle) => scala.Unit,
+    onActivityStarted: androiduixLib.androidNs.appNs.Activity => scala.Unit,
+    onActivityStopped: androiduixLib.androidNs.appNs.Activity => scala.Unit
   ): ActivityLifecycleCallbacks = {
-    val __obj = js.Dynamic.literal(onActivityCreated = onActivityCreated, onActivityDestroyed = onActivityDestroyed, onActivityPaused = onActivityPaused, onActivityResumed = onActivityResumed, onActivitySaveInstanceState = onActivitySaveInstanceState, onActivityStarted = onActivityStarted, onActivityStopped = onActivityStopped)
+    val __obj = js.Dynamic.literal(onActivityCreated = js.Any.fromFunction2(onActivityCreated), onActivityDestroyed = js.Any.fromFunction1(onActivityDestroyed), onActivityPaused = js.Any.fromFunction1(onActivityPaused), onActivityResumed = js.Any.fromFunction1(onActivityResumed), onActivitySaveInstanceState = js.Any.fromFunction2(onActivitySaveInstanceState), onActivityStarted = js.Any.fromFunction1(onActivityStarted), onActivityStopped = js.Any.fromFunction1(onActivityStopped))
   
     __obj.asInstanceOf[ActivityLifecycleCallbacks]
   }

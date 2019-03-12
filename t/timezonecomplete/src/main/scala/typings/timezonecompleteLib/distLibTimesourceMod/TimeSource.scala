@@ -14,8 +14,8 @@ trait TimeSource extends js.Object {
 
 object TimeSource {
   @scala.inline
-  def apply(now: js.Function0[stdLib.Date]): TimeSource = {
-    val __obj = js.Dynamic.literal(now = now)
+  def apply(now: () => stdLib.Date): TimeSource = {
+    val __obj = js.Dynamic.literal(now = js.Any.fromFunction0(now))
   
     __obj.asInstanceOf[TimeSource]
   }

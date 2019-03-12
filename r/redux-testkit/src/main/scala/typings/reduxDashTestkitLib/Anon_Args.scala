@@ -13,10 +13,10 @@ trait Anon_Args extends js.Object {
 object Anon_Args {
   @scala.inline
   def apply(
-    execute: js.Function2[js.Any, /* repeated */ js.Any, js.Any],
-    expect: js.Function2[js.Any, /* repeated */ js.Any, Anon_ExpectedToReturn]
+    execute: (js.Any, /* repeated */ js.Any) => js.Any,
+    expect: (js.Any, /* repeated */ js.Any) => Anon_ExpectedToReturn
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal(execute = execute, expect = expect)
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction2(execute), expect = js.Any.fromFunction2(expect))
   
     __obj.asInstanceOf[Anon_Args]
   }

@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.Presentation")
 @js.native
 class Presentation protected () extends js.Object {
-  val Application: Application = js.native
-  val Broadcast: Broadcast = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
+  val Broadcast: activexDashPowerpointLib.PowerPointNs.Broadcast = js.native
   val BuiltInDocumentProperties: js.Any = js.native
-  val Coauthoring: Coauthoring = js.native
-  val ColorSchemes: ColorSchemes = js.native
+  val Coauthoring: activexDashPowerpointLib.PowerPointNs.Coauthoring = js.native
+  val ColorSchemes: activexDashPowerpointLib.PowerPointNs.ColorSchemes = js.native
   @JSName("CommandBars")
   val CommandBars_Original: activexDashOfficeLib.OfficeNs.CommandBars = js.native
   val Container: js.Any = js.native
@@ -22,10 +22,10 @@ class Presentation protected () extends js.Object {
   val CustomDocumentProperties: js.Any = js.native
   @JSName("CustomXMLParts")
   val CustomXMLParts_Original: activexDashOfficeLib.OfficeNs.CustomXMLParts = js.native
-  val CustomerData: CustomerData = js.native
+  val CustomerData: activexDashPowerpointLib.PowerPointNs.CustomerData = js.native
   var DefaultLanguageID: activexDashOfficeLib.OfficeNs.MsoLanguageID = js.native
   val DefaultShape: Shape = js.native
-  val Designs: Designs = js.native
+  val Designs: activexDashPowerpointLib.PowerPointNs.Designs = js.native
   var DisplayComments: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   @JSName("DocumentInspectors")
   val DocumentInspectors_Original: activexDashOfficeLib.OfficeNs.DocumentInspectors = js.native
@@ -33,11 +33,11 @@ class Presentation protected () extends js.Object {
   val DocumentLibraryVersions_Original: activexDashOfficeLib.OfficeNs.DocumentLibraryVersions = js.native
   var EncryptionProvider: java.lang.String = js.native
   var EnvelopeVisible: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
-  val ExtraColors: ExtraColors = js.native
+  val ExtraColors: activexDashPowerpointLib.PowerPointNs.ExtraColors = js.native
   var FarEastLineBreakLanguage: activexDashOfficeLib.OfficeNs.MsoFarEastLineBreakLanguageID = js.native
   var FarEastLineBreakLevel: PpFarEastLineBreakLevel = js.native
   var Final: scala.Boolean = js.native
-  val Fonts: Fonts = js.native
+  val Fonts: activexDashPowerpointLib.PowerPointNs.Fonts = js.native
   val FullName: java.lang.String = js.native
   var GridDistance: scala.Double = js.native
   val HTMLProject: activexDashOfficeLib.OfficeNs.HTMLProject = js.native
@@ -54,7 +54,7 @@ class Presentation protected () extends js.Object {
   var NoLineBreakAfter: java.lang.String = js.native
   var NoLineBreakBefore: java.lang.String = js.native
   val NotesMaster: Master = js.native
-  val PageSetup: PageSetup = js.native
+  val PageSetup: activexDashPowerpointLib.PowerPointNs.PageSetup = js.native
   val Parent: js.Any = js.native
   var Password: java.lang.String = js.native
   val PasswordEncryptionAlgorithm: java.lang.String = js.native
@@ -65,31 +65,31 @@ class Presentation protected () extends js.Object {
   @JSName("Permission")
   val Permission_Original: activexDashOfficeLib.OfficeNs.Permission = js.native
   var `PowerPoint.Presentation_typekey`: Presentation = js.native
-  val PrintOptions: PrintOptions = js.native
-  val PublishObjects: PublishObjects = js.native
+  val PrintOptions: activexDashPowerpointLib.PowerPointNs.PrintOptions = js.native
+  val PublishObjects: activexDashPowerpointLib.PowerPointNs.PublishObjects = js.native
   val ReadOnly: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   var RemovePersonalInformation: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
-  val Research: Research = js.native
+  val Research: activexDashPowerpointLib.PowerPointNs.Research = js.native
   var Saved: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   val SectionCount: scala.Double = js.native
-  val SectionProperties: SectionProperties = js.native
+  val SectionProperties: activexDashPowerpointLib.PowerPointNs.SectionProperties = js.native
   @JSName("ServerPolicy")
   val ServerPolicy_Original: activexDashOfficeLib.OfficeNs.ServerPolicy = js.native
   val SharedWorkspace: activexDashOfficeLib.OfficeNs.SharedWorkspace = js.native
   @JSName("Signatures")
   val Signatures_Original: activexDashOfficeLib.OfficeNs.SignatureSet = js.native
   val SlideMaster: Master = js.native
-  val SlideShowSettings: SlideShowSettings = js.native
-  val SlideShowWindow: SlideShowWindow = js.native
-  val Slides: Slides = js.native
+  val SlideShowSettings: activexDashPowerpointLib.PowerPointNs.SlideShowSettings = js.native
+  val SlideShowWindow: activexDashPowerpointLib.PowerPointNs.SlideShowWindow = js.native
+  val Slides: activexDashPowerpointLib.PowerPointNs.Slides = js.native
   var SnapToGrid: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   val Sync: activexDashOfficeLib.OfficeNs.Sync = js.native
-  val Tags: Tags = js.native
+  val Tags: activexDashPowerpointLib.PowerPointNs.Tags = js.native
   val TemplateName: java.lang.String = js.native
   val TitleMaster: Master = js.native
   val VBASigned: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   val VBProject: activexDashVbideLib.VBIDENs.VBProject = js.native
-  val WebOptions: WebOptions = js.native
+  val WebOptions: activexDashPowerpointLib.PowerPointNs.WebOptions = js.native
   val Windows: DocumentWindows = js.native
   var WritePassword: java.lang.String = js.native
   def AcceptAll(): scala.Unit = js.native

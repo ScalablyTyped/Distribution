@@ -15,18 +15,18 @@ trait UnderscoreEscapedMap[T] extends ReadonlyUnderscoreEscapedMap[T] {
 object UnderscoreEscapedMap {
   @scala.inline
   def apply[T](
-    clear: js.Function0[scala.Unit],
-    delete: js.Function1[__String, scala.Boolean],
-    entries: js.Function0[Iterator[js.Tuple2[__String, T]]],
-    forEach: js.Function1[js.Function2[T, /* key */ __String, scala.Unit], scala.Unit],
-    get: js.Function1[__String, js.UndefOr[T]],
-    has: js.Function1[__String, scala.Boolean],
-    keys: js.Function0[Iterator[__String]],
-    set: js.Function2[__String, T, UnderscoreEscapedMap[T]],
+    clear: () => scala.Unit,
+    delete: __String => scala.Boolean,
+    entries: () => Iterator[js.Tuple2[__String, T]],
+    forEach: js.Function2[T, /* key */ __String, scala.Unit] => scala.Unit,
+    get: __String => js.UndefOr[T],
+    has: __String => scala.Boolean,
+    keys: () => Iterator[__String],
+    set: (__String, T) => UnderscoreEscapedMap[T],
     size: scala.Double,
-    values: js.Function0[Iterator[T]]
+    values: () => Iterator[T]
   ): UnderscoreEscapedMap[T] = {
-    val __obj = js.Dynamic.literal(clear = clear, delete = delete, entries = entries, forEach = forEach, get = get, has = has, keys = keys, set = set, size = size, values = values)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), delete = js.Any.fromFunction1(delete), entries = js.Any.fromFunction0(entries), forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), keys = js.Any.fromFunction0(keys), set = js.Any.fromFunction2(set), size = size, values = js.Any.fromFunction0(values))
   
     __obj.asInstanceOf[UnderscoreEscapedMap[T]]
   }

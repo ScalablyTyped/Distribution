@@ -65,20 +65,20 @@ trait RangeQuery extends Query {
 object RangeQuery {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    boost: js.Function1[scala.Double, RangeQuery],
-    field: js.Function1[java.lang.String, RangeQuery],
-    from: js.Function1[js.Any, RangeQuery],
-    gt: js.Function1[js.Any, RangeQuery],
-    gte: js.Function1[js.Any, RangeQuery],
-    includeLower: js.Function1[scala.Boolean, RangeQuery],
-    includeUpper: js.Function1[scala.Boolean, RangeQuery],
-    lt: js.Function1[js.Any, RangeQuery],
-    lte: js.Function1[js.Any, RangeQuery],
-    to: js.Function1[js.Any, RangeQuery],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    boost: scala.Double => RangeQuery,
+    field: java.lang.String => RangeQuery,
+    from: js.Any => RangeQuery,
+    gt: js.Any => RangeQuery,
+    gte: js.Any => RangeQuery,
+    includeLower: scala.Boolean => RangeQuery,
+    includeUpper: scala.Boolean => RangeQuery,
+    lt: js.Any => RangeQuery,
+    lte: js.Any => RangeQuery,
+    to: js.Any => RangeQuery,
+    toJSON: () => js.Any
   ): RangeQuery = {
-    val __obj = js.Dynamic.literal(_type = _type, boost = boost, field = field, from = from, gt = gt, gte = gte, includeLower = includeLower, includeUpper = includeUpper, lt = lt, lte = lte, to = to, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), boost = js.Any.fromFunction1(boost), field = js.Any.fromFunction1(field), from = js.Any.fromFunction1(from), gt = js.Any.fromFunction1(gt), gte = js.Any.fromFunction1(gte), includeLower = js.Any.fromFunction1(includeLower), includeUpper = js.Any.fromFunction1(includeUpper), lt = js.Any.fromFunction1(lt), lte = js.Any.fromFunction1(lte), to = js.Any.fromFunction1(to), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[RangeQuery]
   }

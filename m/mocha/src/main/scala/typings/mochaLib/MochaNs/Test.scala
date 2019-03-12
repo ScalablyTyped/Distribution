@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Test () extends Runnable {
    // added by reporters
-  var err: js.UndefOr[nodeLib.Error] = js.native
+  var err: js.UndefOr[stdLib.Error] = js.native
   var speed: js.UndefOr[
     mochaLib.mochaLibStrings.slow | mochaLib.mochaLibStrings.medium | mochaLib.mochaLibStrings.fast
   ] = js.native

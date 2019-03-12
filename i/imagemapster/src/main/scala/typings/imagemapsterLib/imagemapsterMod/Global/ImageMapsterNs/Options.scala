@@ -377,13 +377,13 @@ object Options {
     mapValue: java.lang.String = null,
     mouseoutDelay: scala.Int | scala.Double = null,
     noHrefIsMask: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: js.Function1[/* data */ OnClickData, scala.Unit] = null,
-    onConfigured: js.Function1[/* success */ scala.Boolean, scala.Unit] = null,
-    onGetList: js.Function1[/* data */ OnGetListData, imagemapsterLib.imagemapsterMod.Global.JQuery] = null,
-    onMouseout: js.Function1[/* data */ OnMouseData, scala.Unit] = null,
-    onMouseover: js.Function1[/* data */ OnMouseData, scala.Unit] = null,
-    onShowToolTip: js.Function1[/* data */ OnShowToolTipData, scala.Unit] = null,
-    onStateChange: js.Function1[/* data */ OnStateChangeData, scala.Unit] = null,
+    onClick: /* data */ OnClickData => scala.Unit = null,
+    onConfigured: /* success */ scala.Boolean => scala.Unit = null,
+    onGetList: /* data */ OnGetListData => imagemapsterLib.imagemapsterMod.Global.JQuery = null,
+    onMouseout: /* data */ OnMouseData => scala.Unit = null,
+    onMouseover: /* data */ OnMouseData => scala.Unit = null,
+    onShowToolTip: /* data */ OnShowToolTipData => scala.Unit = null,
+    onStateChange: /* data */ OnStateChangeData => scala.Unit = null,
     render_highlight: java.lang.String | RenderingOptions = null,
     render_select: java.lang.String | RenderingOptions = null,
     scaleMap: js.UndefOr[scala.Boolean] = js.undefined,
@@ -426,13 +426,13 @@ object Options {
     if (mapValue != null) __obj.updateDynamic("mapValue")(mapValue)
     if (mouseoutDelay != null) __obj.updateDynamic("mouseoutDelay")(mouseoutDelay.asInstanceOf[js.Any])
     if (!js.isUndefined(noHrefIsMask)) __obj.updateDynamic("noHrefIsMask")(noHrefIsMask)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onConfigured != null) __obj.updateDynamic("onConfigured")(onConfigured)
-    if (onGetList != null) __obj.updateDynamic("onGetList")(onGetList)
-    if (onMouseout != null) __obj.updateDynamic("onMouseout")(onMouseout)
-    if (onMouseover != null) __obj.updateDynamic("onMouseover")(onMouseover)
-    if (onShowToolTip != null) __obj.updateDynamic("onShowToolTip")(onShowToolTip)
-    if (onStateChange != null) __obj.updateDynamic("onStateChange")(onStateChange)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onConfigured != null) __obj.updateDynamic("onConfigured")(js.Any.fromFunction1(onConfigured))
+    if (onGetList != null) __obj.updateDynamic("onGetList")(js.Any.fromFunction1(onGetList))
+    if (onMouseout != null) __obj.updateDynamic("onMouseout")(js.Any.fromFunction1(onMouseout))
+    if (onMouseover != null) __obj.updateDynamic("onMouseover")(js.Any.fromFunction1(onMouseover))
+    if (onShowToolTip != null) __obj.updateDynamic("onShowToolTip")(js.Any.fromFunction1(onShowToolTip))
+    if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1(onStateChange))
     if (render_highlight != null) __obj.updateDynamic("render_highlight")(render_highlight.asInstanceOf[js.Any])
     if (render_select != null) __obj.updateDynamic("render_select")(render_select.asInstanceOf[js.Any])
     if (!js.isUndefined(scaleMap)) __obj.updateDynamic("scaleMap")(scaleMap)

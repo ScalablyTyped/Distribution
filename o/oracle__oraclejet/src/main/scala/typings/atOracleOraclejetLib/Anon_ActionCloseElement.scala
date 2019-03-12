@@ -17,10 +17,10 @@ object Anon_ActionCloseElement {
   def apply(
     action: atOracleOraclejetLib.atOracleOraclejetLibStrings.open | atOracleOraclejetLib.atOracleOraclejetLibStrings.close,
     element: stdLib.Element,
-    endCallback: js.Function0[scala.Unit],
+    endCallback: () => scala.Unit,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_ActionCloseElement = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], element = element, endCallback = endCallback)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], element = element, endCallback = js.Any.fromFunction0(endCallback))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_ActionCloseElement]
   }

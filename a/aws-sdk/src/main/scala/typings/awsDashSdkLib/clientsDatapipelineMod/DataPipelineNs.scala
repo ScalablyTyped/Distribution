@@ -321,7 +321,7 @@ object DataPipelineNs extends js.Object {
     /**
       * The ID of the object.
       */
-    var id: id
+    var id: awsDashSdkLib.clientsDatapipelineMod.DataPipelineNs.id
     /**
       * The name of the object.
       */
@@ -453,7 +453,7 @@ object DataPipelineNs extends js.Object {
     /**
       * The ID of the task assigned to the task runner. This value is provided in the response for PollForTask.
       */
-    var taskId: taskId
+    var taskId: awsDashSdkLib.clientsDatapipelineMod.DataPipelineNs.taskId
   }
   
   trait ReportTaskProgressOutput extends js.Object {
@@ -524,7 +524,7 @@ object DataPipelineNs extends js.Object {
     /**
       * The ID of the task assigned to the task runner. This value is provided in the response for PollForTask.
       */
-    var taskId: taskId
+    var taskId: awsDashSdkLib.clientsDatapipelineMod.DataPipelineNs.taskId
     /**
       * If FINISHED, the task successfully completed. If FAILED, the task ended unsuccessfully. Preconditions use false.
       */

@@ -25,22 +25,22 @@ object Searchable {
     autoCapitalize: reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiLibStrings.none | reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiLibStrings.sentences | reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiLibStrings.words | reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiLibStrings.characters = null,
     autoCorrect: js.UndefOr[scala.Boolean] = js.undefined,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
-    onChangeText: js.Function1[/* text */ java.lang.String, scala.Unit] = null,
-    onSearchCloseRequested: js.Function0[scala.Unit] = null,
-    onSearchClosed: js.Function0[scala.Unit] = null,
-    onSearchPressed: js.Function0[scala.Unit] = null,
-    onSubmitEditing: js.Function0[scala.Unit] = null,
+    onChangeText: /* text */ java.lang.String => scala.Unit = null,
+    onSearchCloseRequested: () => scala.Unit = null,
+    onSearchClosed: () => scala.Unit = null,
+    onSearchPressed: () => scala.Unit = null,
+    onSubmitEditing: () => scala.Unit = null,
     placeholder: java.lang.String = null
   ): Searchable = {
     val __obj = js.Dynamic.literal()
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect)
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
-    if (onChangeText != null) __obj.updateDynamic("onChangeText")(onChangeText)
-    if (onSearchCloseRequested != null) __obj.updateDynamic("onSearchCloseRequested")(onSearchCloseRequested)
-    if (onSearchClosed != null) __obj.updateDynamic("onSearchClosed")(onSearchClosed)
-    if (onSearchPressed != null) __obj.updateDynamic("onSearchPressed")(onSearchPressed)
-    if (onSubmitEditing != null) __obj.updateDynamic("onSubmitEditing")(onSubmitEditing)
+    if (onChangeText != null) __obj.updateDynamic("onChangeText")(js.Any.fromFunction1(onChangeText))
+    if (onSearchCloseRequested != null) __obj.updateDynamic("onSearchCloseRequested")(js.Any.fromFunction0(onSearchCloseRequested))
+    if (onSearchClosed != null) __obj.updateDynamic("onSearchClosed")(js.Any.fromFunction0(onSearchClosed))
+    if (onSearchPressed != null) __obj.updateDynamic("onSearchPressed")(js.Any.fromFunction0(onSearchPressed))
+    if (onSubmitEditing != null) __obj.updateDynamic("onSubmitEditing")(js.Any.fromFunction0(onSubmitEditing))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     __obj.asInstanceOf[Searchable]
   }

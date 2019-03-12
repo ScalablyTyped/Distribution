@@ -108,10 +108,10 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    afterServiceInvoke: js.Function1[/* e */ AfterServiceInvokeEventArgs, scala.Unit] = null,
+    afterServiceInvoke: /* e */ AfterServiceInvokeEventArgs => scala.Unit = null,
     analysisMode: ejDotWebDotAllLib.ejNs.PivotNs.AnalysisMode | java.lang.String = null,
-    beforePivotEnginePopulate: js.Function1[/* e */ BeforePivotEnginePopulateEventArgs, scala.Unit] = null,
-    beforeServiceInvoke: js.Function1[/* e */ BeforeServiceInvokeEventArgs, scala.Unit] = null,
+    beforePivotEnginePopulate: /* e */ BeforePivotEnginePopulateEventArgs => scala.Unit = null,
+    beforeServiceInvoke: /* e */ BeforeServiceInvokeEventArgs => scala.Unit = null,
     columnsCount: scala.Int | scala.Double = null,
     cssClass: java.lang.String = null,
     customObject: js.Any = null,
@@ -123,12 +123,12 @@ object Model {
     frame: Frame = null,
     isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
     labelFormatSettings: LabelFormatSettings = null,
-    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    load: /* e */ LoadEventArgs => scala.Unit = null,
     locale: java.lang.String = null,
     operationalMode: ejDotWebDotAllLib.ejNs.PivotNs.OperationalMode | java.lang.String = null,
-    renderComplete: js.Function1[/* e */ RenderCompleteEventArgs, scala.Unit] = null,
-    renderFailure: js.Function1[/* e */ RenderFailureEventArgs, scala.Unit] = null,
-    renderSuccess: js.Function1[/* e */ RenderSuccessEventArgs, scala.Unit] = null,
+    renderComplete: /* e */ RenderCompleteEventArgs => scala.Unit = null,
+    renderFailure: /* e */ RenderFailureEventArgs => scala.Unit = null,
+    renderSuccess: /* e */ RenderSuccessEventArgs => scala.Unit = null,
     rowsCount: scala.Int | scala.Double = null,
     scales: js.Any = null,
     serviceMethodSettings: ServiceMethodSettings = null,
@@ -136,10 +136,10 @@ object Model {
     url: java.lang.String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (afterServiceInvoke != null) __obj.updateDynamic("afterServiceInvoke")(afterServiceInvoke)
+    if (afterServiceInvoke != null) __obj.updateDynamic("afterServiceInvoke")(js.Any.fromFunction1(afterServiceInvoke))
     if (analysisMode != null) __obj.updateDynamic("analysisMode")(analysisMode.asInstanceOf[js.Any])
-    if (beforePivotEnginePopulate != null) __obj.updateDynamic("beforePivotEnginePopulate")(beforePivotEnginePopulate)
-    if (beforeServiceInvoke != null) __obj.updateDynamic("beforeServiceInvoke")(beforeServiceInvoke)
+    if (beforePivotEnginePopulate != null) __obj.updateDynamic("beforePivotEnginePopulate")(js.Any.fromFunction1(beforePivotEnginePopulate))
+    if (beforeServiceInvoke != null) __obj.updateDynamic("beforeServiceInvoke")(js.Any.fromFunction1(beforeServiceInvoke))
     if (columnsCount != null) __obj.updateDynamic("columnsCount")(columnsCount.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (customObject != null) __obj.updateDynamic("customObject")(customObject)
@@ -151,12 +151,12 @@ object Model {
     if (frame != null) __obj.updateDynamic("frame")(frame)
     if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
     if (labelFormatSettings != null) __obj.updateDynamic("labelFormatSettings")(labelFormatSettings)
-    if (load != null) __obj.updateDynamic("load")(load)
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (operationalMode != null) __obj.updateDynamic("operationalMode")(operationalMode.asInstanceOf[js.Any])
-    if (renderComplete != null) __obj.updateDynamic("renderComplete")(renderComplete)
-    if (renderFailure != null) __obj.updateDynamic("renderFailure")(renderFailure)
-    if (renderSuccess != null) __obj.updateDynamic("renderSuccess")(renderSuccess)
+    if (renderComplete != null) __obj.updateDynamic("renderComplete")(js.Any.fromFunction1(renderComplete))
+    if (renderFailure != null) __obj.updateDynamic("renderFailure")(js.Any.fromFunction1(renderFailure))
+    if (renderSuccess != null) __obj.updateDynamic("renderSuccess")(js.Any.fromFunction1(renderSuccess))
     if (rowsCount != null) __obj.updateDynamic("rowsCount")(rowsCount.asInstanceOf[js.Any])
     if (scales != null) __obj.updateDynamic("scales")(scales)
     if (serviceMethodSettings != null) __obj.updateDynamic("serviceMethodSettings")(serviceMethodSettings)

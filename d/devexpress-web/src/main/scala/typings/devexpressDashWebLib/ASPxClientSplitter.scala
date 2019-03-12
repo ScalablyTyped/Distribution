@@ -69,18 +69,18 @@ trait ASPxClientSplitter extends ASPxClientControl {
 object ASPxClientSplitter {
   @scala.inline
   def apply(
-    AdjustControl: js.Function0[scala.Unit],
-    GetClientVisible: js.Function0[scala.Boolean],
-    GetHeight: js.Function0[scala.Double],
-    GetLayoutData: js.Function0[java.lang.String],
-    GetMainElement: js.Function0[js.Object],
-    GetPane: js.Function1[scala.Double, ASPxClientSplitterPane],
-    GetPaneByName: js.Function1[java.lang.String, ASPxClientSplitterPane],
-    GetPaneCount: js.Function0[scala.Double],
-    GetParentControl: js.Function0[js.Object],
-    GetVisible: js.Function0[scala.Boolean],
-    GetWidth: js.Function0[scala.Double],
-    InCallback: js.Function0[scala.Boolean],
+    AdjustControl: () => scala.Unit,
+    GetClientVisible: () => scala.Boolean,
+    GetHeight: () => scala.Double,
+    GetLayoutData: () => java.lang.String,
+    GetMainElement: () => js.Object,
+    GetPane: scala.Double => ASPxClientSplitterPane,
+    GetPaneByName: java.lang.String => ASPxClientSplitterPane,
+    GetPaneCount: () => scala.Double,
+    GetParentControl: () => js.Object,
+    GetVisible: () => scala.Boolean,
+    GetWidth: () => scala.Double,
+    InCallback: () => scala.Boolean,
     Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
     PaneCollapsed: ASPxClientEvent[ASPxClientSplitterPaneEventHandler[ASPxClientSplitter]],
     PaneCollapsing: ASPxClientEvent[ASPxClientSplitterPaneCancelEventHandler[ASPxClientSplitter]],
@@ -90,15 +90,15 @@ object ASPxClientSplitter {
     PaneResizeCompleted: ASPxClientEvent[ASPxClientSplitterPaneEventHandler[ASPxClientSplitter]],
     PaneResized: ASPxClientEvent[ASPxClientSplitterPaneEventHandler[ASPxClientSplitter]],
     PaneResizing: ASPxClientEvent[ASPxClientSplitterPaneCancelEventHandler[ASPxClientSplitter]],
-    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
-    SetAllowResize: js.Function1[scala.Boolean, scala.Unit],
-    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetHeight: js.Function1[scala.Double, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
-    SetWidth: js.Function1[scala.Double, scala.Unit],
+    SendMessageToAssistiveTechnology: java.lang.String => scala.Unit,
+    SetAllowResize: scala.Boolean => scala.Unit,
+    SetClientVisible: scala.Boolean => scala.Unit,
+    SetHeight: scala.Double => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
+    SetWidth: scala.Double => scala.Unit,
     name: java.lang.String
   ): ASPxClientSplitter = {
-    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, GetClientVisible = GetClientVisible, GetHeight = GetHeight, GetLayoutData = GetLayoutData, GetMainElement = GetMainElement, GetPane = GetPane, GetPaneByName = GetPaneByName, GetPaneCount = GetPaneCount, GetParentControl = GetParentControl, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, PaneCollapsed = PaneCollapsed, PaneCollapsing = PaneCollapsing, PaneContentUrlLoaded = PaneContentUrlLoaded, PaneExpanded = PaneExpanded, PaneExpanding = PaneExpanding, PaneResizeCompleted = PaneResizeCompleted, PaneResized = PaneResized, PaneResizing = PaneResizing, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetAllowResize = SetAllowResize, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetVisible = SetVisible, SetWidth = SetWidth, name = name)
+    val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetHeight = js.Any.fromFunction0(GetHeight), GetLayoutData = js.Any.fromFunction0(GetLayoutData), GetMainElement = js.Any.fromFunction0(GetMainElement), GetPane = js.Any.fromFunction1(GetPane), GetPaneByName = js.Any.fromFunction1(GetPaneByName), GetPaneCount = js.Any.fromFunction0(GetPaneCount), GetParentControl = js.Any.fromFunction0(GetParentControl), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), InCallback = js.Any.fromFunction0(InCallback), Init = Init, PaneCollapsed = PaneCollapsed, PaneCollapsing = PaneCollapsing, PaneContentUrlLoaded = PaneContentUrlLoaded, PaneExpanded = PaneExpanded, PaneExpanding = PaneExpanding, PaneResizeCompleted = PaneResizeCompleted, PaneResized = PaneResized, PaneResizing = PaneResizing, SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetAllowResize = js.Any.fromFunction1(SetAllowResize), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetHeight = js.Any.fromFunction1(SetHeight), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), name = name)
   
     __obj.asInstanceOf[ASPxClientSplitter]
   }

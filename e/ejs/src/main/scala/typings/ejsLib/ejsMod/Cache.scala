@@ -13,10 +13,10 @@ trait Cache extends js.Object {
 object Cache {
   @scala.inline
   def apply(
-    get: js.Function1[java.lang.String, js.UndefOr[TemplateFunction]],
-    set: js.Function2[java.lang.String, TemplateFunction, scala.Unit]
+    get: java.lang.String => js.UndefOr[TemplateFunction],
+    set: (java.lang.String, TemplateFunction) => scala.Unit
   ): Cache = {
-    val __obj = js.Dynamic.literal(get = get, set = set)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
   
     __obj.asInstanceOf[Cache]
   }

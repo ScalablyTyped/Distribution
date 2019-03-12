@@ -22,16 +22,12 @@ trait GeographiesProps extends js.Object {
 object GeographiesProps {
   @scala.inline
   def apply(
-    children: js.Function2[
-      /* geographies */ js.Array[js.Object], 
-      /* projection */ d3DashGeoLib.d3DashGeoMod.GeoProjection, 
-      scala.Unit
-    ] = null,
+    children: (/* geographies */ js.Array[js.Object], /* projection */ d3DashGeoLib.d3DashGeoMod.GeoProjection) => scala.Unit = null,
     disableOptimization: js.UndefOr[scala.Boolean] = js.undefined,
     geography: java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any] | js.Array[java.lang.String] = null
   ): GeographiesProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction2(children))
     if (!js.isUndefined(disableOptimization)) __obj.updateDynamic("disableOptimization")(disableOptimization)
     if (geography != null) __obj.updateDynamic("geography")(geography.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeographiesProps]

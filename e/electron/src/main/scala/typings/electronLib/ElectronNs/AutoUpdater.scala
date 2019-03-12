@@ -14,7 +14,7 @@ trait AutoUpdater extends EventEmitter {
   @JSName("addListener")
   def addListener_error(
     event: electronLib.electronLibStrings.error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
   def `addListener_update-available`(event: electronLib.electronLibStrings.`update-available`, listener: js.Function): this.type = js.native
@@ -59,7 +59,7 @@ trait AutoUpdater extends EventEmitter {
   @JSName("on")
   def on_error(
     event: electronLib.electronLibStrings.error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /**
     * Emitted when there is an available update. The update is downloaded
@@ -97,7 +97,7 @@ trait AutoUpdater extends EventEmitter {
   @JSName("once")
   def once_error(
     event: electronLib.electronLibStrings.error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def `once_update-available`(event: electronLib.electronLibStrings.`update-available`, listener: js.Function): this.type = js.native
@@ -132,7 +132,7 @@ trait AutoUpdater extends EventEmitter {
   @JSName("removeListener")
   def removeListener_error(
     event: electronLib.electronLibStrings.error,
-    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def `removeListener_update-available`(event: electronLib.electronLibStrings.`update-available`, listener: js.Function): this.type = js.native

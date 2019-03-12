@@ -62,7 +62,7 @@ object FastifyRateLimitOptions {
   @scala.inline
   def apply[T](
     cache: scala.Int | scala.Double = null,
-    keyGenerator: js.Function1[/* req */ T, java.lang.String] = null,
+    keyGenerator: /* req */ T => java.lang.String = null,
     max: scala.Int | scala.Double = null,
     redis: ioredisLib.ioredisMod.IORedisNs.Redis = null,
     skipOnError: js.UndefOr[scala.Boolean] = js.undefined,
@@ -71,7 +71,7 @@ object FastifyRateLimitOptions {
   ): FastifyRateLimitOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (keyGenerator != null) __obj.updateDynamic("keyGenerator")(keyGenerator)
+    if (keyGenerator != null) __obj.updateDynamic("keyGenerator")(js.Any.fromFunction1(keyGenerator))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (redis != null) __obj.updateDynamic("redis")(redis)
     if (!js.isUndefined(skipOnError)) __obj.updateDynamic("skipOnError")(skipOnError)

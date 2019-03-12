@@ -32,8 +32,8 @@ object MailTransportOptions {
   def apply(
     to: java.lang.String,
     authentication: js.Array[java.lang.String] = null,
-    filter: js.Function1[/* obj */ winstonDashMailLib.Anon_Level, scala.Boolean] = null,
-    formatter: js.Function1[/* obj */ winstonDashMailLib.Anon_Level, java.lang.String] = null,
+    filter: /* obj */ winstonDashMailLib.Anon_Level => scala.Boolean = null,
+    formatter: /* obj */ winstonDashMailLib.Anon_Level => java.lang.String = null,
     from: java.lang.String = null,
     handleExceptions: js.UndefOr[scala.Boolean] = js.undefined,
     host: java.lang.String = null,
@@ -52,8 +52,8 @@ object MailTransportOptions {
   ): MailTransportOptions = {
     val __obj = js.Dynamic.literal(to = to)
     if (authentication != null) __obj.updateDynamic("authentication")(authentication)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
+    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
     if (from != null) __obj.updateDynamic("from")(from)
     if (!js.isUndefined(handleExceptions)) __obj.updateDynamic("handleExceptions")(handleExceptions)
     if (host != null) __obj.updateDynamic("host")(host)

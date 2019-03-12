@@ -11,8 +11,8 @@ trait Observable[T] extends js.Object {
 
 object Observable {
   @scala.inline
-  def apply[T](subscribe: js.Function1[Observer[T], subscriptionsDashTransportDashWsLib.Anon_Unsubscribe]): Observable[T] = {
-    val __obj = js.Dynamic.literal(subscribe = subscribe)
+  def apply[T](subscribe: Observer[T] => subscriptionsDashTransportDashWsLib.Anon_Unsubscribe): Observable[T] = {
+    val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
   
     __obj.asInstanceOf[Observable[T]]
   }

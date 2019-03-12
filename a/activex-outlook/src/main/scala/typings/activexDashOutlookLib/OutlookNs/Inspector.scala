@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.Inspector")
 @js.native
 class Inspector protected () extends js.Object {
-  val Application: Application = js.native
-  val AttachmentSelection: AttachmentSelection = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
+  val AttachmentSelection: activexDashOutlookLib.OutlookNs.AttachmentSelection = js.native
   val Caption: java.lang.String = js.native
   val Class: OlObjectClass = js.native
   val CommandBars: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.CommandBars */ js.Any = js.native
@@ -37,7 +37,7 @@ class Inspector protected () extends js.Object {
   def SaveFormRegion(Page: js.Any, FileName: java.lang.String): scala.Unit = js.native
   def SetControlItemProperty(Control: js.Any, PropertyName: java.lang.String): scala.Unit = js.native
   def SetCurrentFormPage(PageName: java.lang.String): scala.Unit = js.native
-  def SetSchedulingStartTime(Start: activexDashInteropLib.VarDate): scala.Unit = js.native
+  def SetSchedulingStartTime(Start: stdLib.VarDate): scala.Unit = js.native
   def ShowFormPage(PageName: java.lang.String): scala.Unit = js.native
 }
 

@@ -40,38 +40,30 @@ trait ITypedValue extends js.Object {
 object ITypedValue {
   @scala.inline
   def apply(
-    Clone: js.Function0[ITypedValue],
-    CloneFrom: js.Function1[ITypedValue, scala.Unit],
-    CompareTo: js.Function1[ITypedValue, scala.Double],
+    Clone: () => ITypedValue,
+    CloneFrom: ITypedValue => scala.Unit,
+    CompareTo: ITypedValue => scala.Double,
     DataType: mfilesLib.MFilesNs.MFDataType,
     DisplayValue: java.lang.String,
-    GetLookupID: js.Function0[scala.Double],
-    GetValueAsLocalizedText: js.Function0[java.lang.String],
-    GetValueAsLookup: js.Function0[ILookup],
-    GetValueAsLookups: js.Function0[ILookups],
-    GetValueAsText: js.Function6[
-      scala.Boolean, 
-      scala.Boolean, 
-      scala.Boolean, 
-      scala.Boolean, 
-      scala.Boolean, 
-      scala.Boolean, 
-      java.lang.String
-    ],
-    GetValueAsTextWithExpression: js.Function2[IExpression, scala.Double, java.lang.String],
-    GetValueAsTimestamp: js.Function0[ITimestamp],
-    GetValueAsUnlocalizedText: js.Function0[java.lang.String],
-    IsNULL: js.Function0[scala.Boolean],
-    IsUninitialized: js.Function0[scala.Boolean],
-    Serialize: js.Function0[js.Array[scala.Double]],
-    SetValue: js.Function2[mfilesLib.MFilesNs.MFDataType, js.Any, scala.Unit],
-    SetValueToLookup: js.Function1[ILookup, scala.Unit],
-    SetValueToMultiSelectLookup: js.Function1[ILookups, scala.Unit],
-    SetValueToNULL: js.Function1[mfilesLib.MFilesNs.MFDataType, scala.Unit],
-    Unserialize: js.Function2[js.Array[scala.Double], scala.Boolean, scala.Unit],
+    GetLookupID: () => scala.Double,
+    GetValueAsLocalizedText: () => java.lang.String,
+    GetValueAsLookup: () => ILookup,
+    GetValueAsLookups: () => ILookups,
+    GetValueAsText: (scala.Boolean, scala.Boolean, scala.Boolean, scala.Boolean, scala.Boolean, scala.Boolean) => java.lang.String,
+    GetValueAsTextWithExpression: (IExpression, scala.Double) => java.lang.String,
+    GetValueAsTimestamp: () => ITimestamp,
+    GetValueAsUnlocalizedText: () => java.lang.String,
+    IsNULL: () => scala.Boolean,
+    IsUninitialized: () => scala.Boolean,
+    Serialize: () => js.Array[scala.Double],
+    SetValue: (mfilesLib.MFilesNs.MFDataType, js.Any) => scala.Unit,
+    SetValueToLookup: ILookup => scala.Unit,
+    SetValueToMultiSelectLookup: ILookups => scala.Unit,
+    SetValueToNULL: mfilesLib.MFilesNs.MFDataType => scala.Unit,
+    Unserialize: (js.Array[scala.Double], scala.Boolean) => scala.Unit,
     Value: js.Any
   ): ITypedValue = {
-    val __obj = js.Dynamic.literal(Clone = Clone, CloneFrom = CloneFrom, CompareTo = CompareTo, DataType = DataType, DisplayValue = DisplayValue, GetLookupID = GetLookupID, GetValueAsLocalizedText = GetValueAsLocalizedText, GetValueAsLookup = GetValueAsLookup, GetValueAsLookups = GetValueAsLookups, GetValueAsText = GetValueAsText, GetValueAsTextWithExpression = GetValueAsTextWithExpression, GetValueAsTimestamp = GetValueAsTimestamp, GetValueAsUnlocalizedText = GetValueAsUnlocalizedText, IsNULL = IsNULL, IsUninitialized = IsUninitialized, Serialize = Serialize, SetValue = SetValue, SetValueToLookup = SetValueToLookup, SetValueToMultiSelectLookup = SetValueToMultiSelectLookup, SetValueToNULL = SetValueToNULL, Unserialize = Unserialize, Value = Value)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), CloneFrom = js.Any.fromFunction1(CloneFrom), CompareTo = js.Any.fromFunction1(CompareTo), DataType = DataType, DisplayValue = DisplayValue, GetLookupID = js.Any.fromFunction0(GetLookupID), GetValueAsLocalizedText = js.Any.fromFunction0(GetValueAsLocalizedText), GetValueAsLookup = js.Any.fromFunction0(GetValueAsLookup), GetValueAsLookups = js.Any.fromFunction0(GetValueAsLookups), GetValueAsText = js.Any.fromFunction6(GetValueAsText), GetValueAsTextWithExpression = js.Any.fromFunction2(GetValueAsTextWithExpression), GetValueAsTimestamp = js.Any.fromFunction0(GetValueAsTimestamp), GetValueAsUnlocalizedText = js.Any.fromFunction0(GetValueAsUnlocalizedText), IsNULL = js.Any.fromFunction0(IsNULL), IsUninitialized = js.Any.fromFunction0(IsUninitialized), Serialize = js.Any.fromFunction0(Serialize), SetValue = js.Any.fromFunction2(SetValue), SetValueToLookup = js.Any.fromFunction1(SetValueToLookup), SetValueToMultiSelectLookup = js.Any.fromFunction1(SetValueToMultiSelectLookup), SetValueToNULL = js.Any.fromFunction1(SetValueToNULL), Unserialize = js.Any.fromFunction2(Unserialize), Value = Value)
   
     __obj.asInstanceOf[ITypedValue]
   }

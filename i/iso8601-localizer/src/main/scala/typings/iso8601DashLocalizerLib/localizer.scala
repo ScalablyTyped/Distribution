@@ -14,11 +14,11 @@ trait localizer extends js.Object {
 object localizer {
   @scala.inline
   def apply(
-    localize: js.Function0[java.lang.String],
-    returnAs: js.Function1[java.lang.String, localizer],
-    to: js.Function1[scala.Double, localizer]
+    localize: () => java.lang.String,
+    returnAs: java.lang.String => localizer,
+    to: scala.Double => localizer
   ): localizer = {
-    val __obj = js.Dynamic.literal(localize = localize, returnAs = returnAs, to = to)
+    val __obj = js.Dynamic.literal(localize = js.Any.fromFunction0(localize), returnAs = js.Any.fromFunction1(returnAs), to = js.Any.fromFunction1(to))
   
     __obj.asInstanceOf[localizer]
   }

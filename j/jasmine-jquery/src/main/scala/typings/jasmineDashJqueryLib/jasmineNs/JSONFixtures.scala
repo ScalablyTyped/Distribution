@@ -18,15 +18,15 @@ trait JSONFixtures extends js.Object {
 object JSONFixtures {
   @scala.inline
   def apply(
-    clearCache: js.Function0[scala.Unit],
+    clearCache: () => scala.Unit,
     fixturesPath: java.lang.String,
-    getFixtureData_ : js.Function1[java.lang.String, js.Any],
-    load: js.Function1[/* repeated */ java.lang.String, scala.Unit],
-    loadFixtureIntoCache_ : js.Function1[java.lang.String, scala.Unit],
-    proxyCallTo_ : js.Function2[java.lang.String, js.Any, js.Any],
-    read: js.Function1[/* repeated */ java.lang.String, java.lang.String]
+    getFixtureData_ : java.lang.String => js.Any,
+    load: /* repeated */ java.lang.String => scala.Unit,
+    loadFixtureIntoCache_ : java.lang.String => scala.Unit,
+    proxyCallTo_ : (java.lang.String, js.Any) => js.Any,
+    read: /* repeated */ java.lang.String => java.lang.String
   ): JSONFixtures = {
-    val __obj = js.Dynamic.literal(clearCache = clearCache, fixturesPath = fixturesPath, getFixtureData_ = getFixtureData_, load = load, loadFixtureIntoCache_ = loadFixtureIntoCache_, proxyCallTo_ = proxyCallTo_, read = read)
+    val __obj = js.Dynamic.literal(clearCache = js.Any.fromFunction0(clearCache), fixturesPath = fixturesPath, getFixtureData_ = js.Any.fromFunction1(getFixtureData_), load = js.Any.fromFunction1(load), loadFixtureIntoCache_ = js.Any.fromFunction1(loadFixtureIntoCache_), proxyCallTo_ = js.Any.fromFunction2(proxyCallTo_), read = js.Any.fromFunction1(read))
   
     __obj.asInstanceOf[JSONFixtures]
   }

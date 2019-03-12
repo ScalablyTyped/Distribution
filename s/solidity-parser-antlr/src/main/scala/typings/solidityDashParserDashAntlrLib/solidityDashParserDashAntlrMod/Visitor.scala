@@ -93,172 +93,172 @@ trait Visitor extends js.Object {
 object Visitor {
   @scala.inline
   def apply(
-    AssemblyAssignment: js.Function1[/* node */ AssemblyAssignment, _] = null,
-    AssemblyBlock: js.Function1[/* node */ AssemblyBlock, _] = null,
-    AssemblyCall: js.Function1[/* node */ AssemblyCall, _] = null,
-    AssemblyCase: js.Function1[/* node */ AssemblyCase, _] = null,
-    AssemblyExpression: js.Function1[/* node */ AssemblyExpression, _] = null,
-    AssemblyFor: js.Function1[/* node */ AssemblyFor, _] = null,
-    AssemblyFunctionDefinition: js.Function1[/* node */ AssemblyFunctionDefinition, _] = null,
-    AssemblyFunctionReturns: js.Function1[/* node */ AssemblyFunctionReturns, _] = null,
-    AssemblyIdentifierList: js.Function1[/* node */ AssemblyIdentifierList, _] = null,
-    AssemblyIdentifierOrList: js.Function1[/* node */ AssemblyIdentifierOrList, _] = null,
-    AssemblyIf: js.Function1[/* node */ AssemblyIf, _] = null,
-    AssemblyItem: js.Function1[/* node */ AssemblyItem, _] = null,
-    AssemblyLiteral: js.Function1[/* node */ AssemblyLiteral, _] = null,
-    AssemblyLocalDefinition: js.Function1[/* node */ AssemblyLocalDefinition, _] = null,
-    AssemblyStackAssignment: js.Function1[/* node */ AssemblyStackAssignment, _] = null,
-    AssemblySwitch: js.Function1[/* node */ AssemblySwitch, _] = null,
-    BinaryOperation: js.Function1[/* node */ BinaryOperation, _] = null,
-    Block: js.Function1[/* node */ Block, _] = null,
-    BreakStatement: js.Function1[/* node */ BreakStatement, _] = null,
-    Conditional: js.Function1[/* node */ Conditional, _] = null,
-    ContinueStatement: js.Function1[/* node */ ContinueStatement, _] = null,
-    ContractDefinition: js.Function1[/* node */ ContractDefinition, _] = null,
-    ContractPart: js.Function1[/* node */ ContractPart, _] = null,
-    DoWhileStatement: js.Function1[/* node */ DoWhileStatement, _] = null,
-    ElementaryTypeName: js.Function1[/* node */ ElementaryTypeName, _] = null,
-    ElementaryTypeNameExpression: js.Function1[/* node */ ElementaryTypeNameExpression, _] = null,
-    EnumDefinition: js.Function1[/* node */ EnumDefinition, _] = null,
-    EnumValue: js.Function1[/* node */ EnumValue, _] = null,
-    EventDefinition: js.Function1[/* node */ EventDefinition, _] = null,
-    EventParameter: js.Function1[/* node */ EventParameter, _] = null,
-    EventParameterList: js.Function1[/* node */ EventParameterList, _] = null,
-    Expression: js.Function1[/* node */ Expression, _] = null,
-    ExpressionList: js.Function1[/* node */ ExpressionList, _] = null,
-    ExpressionStatement: js.Function1[/* node */ ExpressionStatement, _] = null,
-    ForStatement: js.Function1[/* node */ ForStatement, _] = null,
-    FunctionCallArguments: js.Function1[/* node */ FunctionCallArguments, _] = null,
-    FunctionDefinition: js.Function1[/* node */ FunctionDefinition, _] = null,
-    FunctionTypeName: js.Function1[/* node */ FunctionTypeName, _] = null,
-    FunctionTypeParameter: js.Function1[/* node */ FunctionTypeParameter, _] = null,
-    FunctionTypeParameterList: js.Function1[/* node */ FunctionTypeParameterList, _] = null,
-    Identifier: js.Function1[/* node */ Identifier, _] = null,
-    IdentifierList: js.Function1[/* node */ IdentifierList, _] = null,
-    IfStatement: js.Function1[/* node */ IfStatement, _] = null,
-    ImportDeclaration: js.Function1[/* node */ ImportDeclaration, _] = null,
-    ImportDirective: js.Function1[/* node */ ImportDirective, _] = null,
-    InheritanceSpecifier: js.Function1[/* node */ InheritanceSpecifier, _] = null,
-    InlineAssemblyStatement: js.Function1[/* node */ InlineAssemblyStatement, _] = null,
-    LabelDefinition: js.Function1[/* node */ LabelDefinition, _] = null,
-    Mapping: js.Function1[/* node */ Mapping, _] = null,
-    ModifierDefinition: js.Function1[/* node */ ModifierDefinition, _] = null,
-    ModifierInvocation: js.Function1[/* node */ ModifierInvocation, _] = null,
-    ModifierList: js.Function1[/* node */ ModifierList, _] = null,
-    NameValue: js.Function1[/* node */ NameValue, _] = null,
-    NameValueList: js.Function1[/* node */ NameValueList, _] = null,
-    NumberLiteral: js.Function1[/* node */ NumberLiteral, _] = null,
-    Parameter: js.Function1[/* node */ Parameter, _] = null,
-    ParameterList: js.Function1[/* node */ ParameterList, _] = null,
-    PragmaDirective: js.Function1[/* node */ PragmaDirective, _] = null,
-    PragmaName: js.Function1[/* node */ PragmaName, _] = null,
-    PragmaValue: js.Function1[/* node */ PragmaValue, _] = null,
-    PrimaryExpression: js.Function1[/* node */ PrimaryExpression, _] = null,
-    ReturnParameters: js.Function1[/* node */ ReturnParameters, _] = null,
-    ReturnStatement: js.Function1[/* node */ ReturnStatement, _] = null,
-    SimpleStatement: js.Function1[/* node */ SimpleStatement, _] = null,
-    SourceUnit: js.Function1[/* node */ SourceUnit, _] = null,
-    StateMutability: js.Function1[/* node */ StateMutability, _] = null,
-    StateVariableDeclaration: js.Function1[/* node */ StateVariableDeclaration, _] = null,
-    Statement: js.Function1[/* node */ Statement, _] = null,
-    StorageLocation: js.Function1[/* node */ StorageLocation, _] = null,
-    StructDefinition: js.Function1[/* node */ StructDefinition, _] = null,
-    SubAssembly: js.Function1[/* node */ SubAssembly, _] = null,
-    ThrowStatement: js.Function1[/* node */ ThrowStatement, _] = null,
-    TupleExpression: js.Function1[/* node */ TupleExpression, _] = null,
-    TypeName: js.Function1[/* node */ TypeName, _] = null,
-    UserDefinedTypeName: js.Function1[/* node */ UserDefinedTypeName, _] = null,
-    UsingForDeclaration: js.Function1[/* node */ UsingForDeclaration, _] = null,
-    VariableDeclaration: js.Function1[/* node */ VariableDeclaration, _] = null,
-    VariableDeclarationStatement: js.Function1[/* node */ VariableDeclarationStatement, _] = null,
-    Version: js.Function1[/* node */ Version, _] = null,
-    VersionConstraint: js.Function1[/* node */ VersionConstraint, _] = null,
-    VersionOperator: js.Function1[/* node */ VersionOperator, _] = null,
-    WhileStatement: js.Function1[/* node */ WhileStatement, _] = null
+    AssemblyAssignment: /* node */ AssemblyAssignment => _ = null,
+    AssemblyBlock: /* node */ AssemblyBlock => _ = null,
+    AssemblyCall: /* node */ AssemblyCall => _ = null,
+    AssemblyCase: /* node */ AssemblyCase => _ = null,
+    AssemblyExpression: /* node */ AssemblyExpression => _ = null,
+    AssemblyFor: /* node */ AssemblyFor => _ = null,
+    AssemblyFunctionDefinition: /* node */ AssemblyFunctionDefinition => _ = null,
+    AssemblyFunctionReturns: /* node */ AssemblyFunctionReturns => _ = null,
+    AssemblyIdentifierList: /* node */ AssemblyIdentifierList => _ = null,
+    AssemblyIdentifierOrList: /* node */ AssemblyIdentifierOrList => _ = null,
+    AssemblyIf: /* node */ AssemblyIf => _ = null,
+    AssemblyItem: /* node */ AssemblyItem => _ = null,
+    AssemblyLiteral: /* node */ AssemblyLiteral => _ = null,
+    AssemblyLocalDefinition: /* node */ AssemblyLocalDefinition => _ = null,
+    AssemblyStackAssignment: /* node */ AssemblyStackAssignment => _ = null,
+    AssemblySwitch: /* node */ AssemblySwitch => _ = null,
+    BinaryOperation: /* node */ BinaryOperation => _ = null,
+    Block: /* node */ Block => _ = null,
+    BreakStatement: /* node */ BreakStatement => _ = null,
+    Conditional: /* node */ Conditional => _ = null,
+    ContinueStatement: /* node */ ContinueStatement => _ = null,
+    ContractDefinition: /* node */ ContractDefinition => _ = null,
+    ContractPart: /* node */ ContractPart => _ = null,
+    DoWhileStatement: /* node */ DoWhileStatement => _ = null,
+    ElementaryTypeName: /* node */ ElementaryTypeName => _ = null,
+    ElementaryTypeNameExpression: /* node */ ElementaryTypeNameExpression => _ = null,
+    EnumDefinition: /* node */ EnumDefinition => _ = null,
+    EnumValue: /* node */ EnumValue => _ = null,
+    EventDefinition: /* node */ EventDefinition => _ = null,
+    EventParameter: /* node */ EventParameter => _ = null,
+    EventParameterList: /* node */ EventParameterList => _ = null,
+    Expression: /* node */ Expression => _ = null,
+    ExpressionList: /* node */ ExpressionList => _ = null,
+    ExpressionStatement: /* node */ ExpressionStatement => _ = null,
+    ForStatement: /* node */ ForStatement => _ = null,
+    FunctionCallArguments: /* node */ FunctionCallArguments => _ = null,
+    FunctionDefinition: /* node */ FunctionDefinition => _ = null,
+    FunctionTypeName: /* node */ FunctionTypeName => _ = null,
+    FunctionTypeParameter: /* node */ FunctionTypeParameter => _ = null,
+    FunctionTypeParameterList: /* node */ FunctionTypeParameterList => _ = null,
+    Identifier: /* node */ Identifier => _ = null,
+    IdentifierList: /* node */ IdentifierList => _ = null,
+    IfStatement: /* node */ IfStatement => _ = null,
+    ImportDeclaration: /* node */ ImportDeclaration => _ = null,
+    ImportDirective: /* node */ ImportDirective => _ = null,
+    InheritanceSpecifier: /* node */ InheritanceSpecifier => _ = null,
+    InlineAssemblyStatement: /* node */ InlineAssemblyStatement => _ = null,
+    LabelDefinition: /* node */ LabelDefinition => _ = null,
+    Mapping: /* node */ Mapping => _ = null,
+    ModifierDefinition: /* node */ ModifierDefinition => _ = null,
+    ModifierInvocation: /* node */ ModifierInvocation => _ = null,
+    ModifierList: /* node */ ModifierList => _ = null,
+    NameValue: /* node */ NameValue => _ = null,
+    NameValueList: /* node */ NameValueList => _ = null,
+    NumberLiteral: /* node */ NumberLiteral => _ = null,
+    Parameter: /* node */ Parameter => _ = null,
+    ParameterList: /* node */ ParameterList => _ = null,
+    PragmaDirective: /* node */ PragmaDirective => _ = null,
+    PragmaName: /* node */ PragmaName => _ = null,
+    PragmaValue: /* node */ PragmaValue => _ = null,
+    PrimaryExpression: /* node */ PrimaryExpression => _ = null,
+    ReturnParameters: /* node */ ReturnParameters => _ = null,
+    ReturnStatement: /* node */ ReturnStatement => _ = null,
+    SimpleStatement: /* node */ SimpleStatement => _ = null,
+    SourceUnit: /* node */ SourceUnit => _ = null,
+    StateMutability: /* node */ StateMutability => _ = null,
+    StateVariableDeclaration: /* node */ StateVariableDeclaration => _ = null,
+    Statement: /* node */ Statement => _ = null,
+    StorageLocation: /* node */ StorageLocation => _ = null,
+    StructDefinition: /* node */ StructDefinition => _ = null,
+    SubAssembly: /* node */ SubAssembly => _ = null,
+    ThrowStatement: /* node */ ThrowStatement => _ = null,
+    TupleExpression: /* node */ TupleExpression => _ = null,
+    TypeName: /* node */ TypeName => _ = null,
+    UserDefinedTypeName: /* node */ UserDefinedTypeName => _ = null,
+    UsingForDeclaration: /* node */ UsingForDeclaration => _ = null,
+    VariableDeclaration: /* node */ VariableDeclaration => _ = null,
+    VariableDeclarationStatement: /* node */ VariableDeclarationStatement => _ = null,
+    Version: /* node */ Version => _ = null,
+    VersionConstraint: /* node */ VersionConstraint => _ = null,
+    VersionOperator: /* node */ VersionOperator => _ = null,
+    WhileStatement: /* node */ WhileStatement => _ = null
   ): Visitor = {
     val __obj = js.Dynamic.literal()
-    if (AssemblyAssignment != null) __obj.updateDynamic("AssemblyAssignment")(AssemblyAssignment)
-    if (AssemblyBlock != null) __obj.updateDynamic("AssemblyBlock")(AssemblyBlock)
-    if (AssemblyCall != null) __obj.updateDynamic("AssemblyCall")(AssemblyCall)
-    if (AssemblyCase != null) __obj.updateDynamic("AssemblyCase")(AssemblyCase)
-    if (AssemblyExpression != null) __obj.updateDynamic("AssemblyExpression")(AssemblyExpression)
-    if (AssemblyFor != null) __obj.updateDynamic("AssemblyFor")(AssemblyFor)
-    if (AssemblyFunctionDefinition != null) __obj.updateDynamic("AssemblyFunctionDefinition")(AssemblyFunctionDefinition)
-    if (AssemblyFunctionReturns != null) __obj.updateDynamic("AssemblyFunctionReturns")(AssemblyFunctionReturns)
-    if (AssemblyIdentifierList != null) __obj.updateDynamic("AssemblyIdentifierList")(AssemblyIdentifierList)
-    if (AssemblyIdentifierOrList != null) __obj.updateDynamic("AssemblyIdentifierOrList")(AssemblyIdentifierOrList)
-    if (AssemblyIf != null) __obj.updateDynamic("AssemblyIf")(AssemblyIf)
-    if (AssemblyItem != null) __obj.updateDynamic("AssemblyItem")(AssemblyItem)
-    if (AssemblyLiteral != null) __obj.updateDynamic("AssemblyLiteral")(AssemblyLiteral)
-    if (AssemblyLocalDefinition != null) __obj.updateDynamic("AssemblyLocalDefinition")(AssemblyLocalDefinition)
-    if (AssemblyStackAssignment != null) __obj.updateDynamic("AssemblyStackAssignment")(AssemblyStackAssignment)
-    if (AssemblySwitch != null) __obj.updateDynamic("AssemblySwitch")(AssemblySwitch)
-    if (BinaryOperation != null) __obj.updateDynamic("BinaryOperation")(BinaryOperation)
-    if (Block != null) __obj.updateDynamic("Block")(Block)
-    if (BreakStatement != null) __obj.updateDynamic("BreakStatement")(BreakStatement)
-    if (Conditional != null) __obj.updateDynamic("Conditional")(Conditional)
-    if (ContinueStatement != null) __obj.updateDynamic("ContinueStatement")(ContinueStatement)
-    if (ContractDefinition != null) __obj.updateDynamic("ContractDefinition")(ContractDefinition)
-    if (ContractPart != null) __obj.updateDynamic("ContractPart")(ContractPart)
-    if (DoWhileStatement != null) __obj.updateDynamic("DoWhileStatement")(DoWhileStatement)
-    if (ElementaryTypeName != null) __obj.updateDynamic("ElementaryTypeName")(ElementaryTypeName)
-    if (ElementaryTypeNameExpression != null) __obj.updateDynamic("ElementaryTypeNameExpression")(ElementaryTypeNameExpression)
-    if (EnumDefinition != null) __obj.updateDynamic("EnumDefinition")(EnumDefinition)
-    if (EnumValue != null) __obj.updateDynamic("EnumValue")(EnumValue)
-    if (EventDefinition != null) __obj.updateDynamic("EventDefinition")(EventDefinition)
-    if (EventParameter != null) __obj.updateDynamic("EventParameter")(EventParameter)
-    if (EventParameterList != null) __obj.updateDynamic("EventParameterList")(EventParameterList)
-    if (Expression != null) __obj.updateDynamic("Expression")(Expression)
-    if (ExpressionList != null) __obj.updateDynamic("ExpressionList")(ExpressionList)
-    if (ExpressionStatement != null) __obj.updateDynamic("ExpressionStatement")(ExpressionStatement)
-    if (ForStatement != null) __obj.updateDynamic("ForStatement")(ForStatement)
-    if (FunctionCallArguments != null) __obj.updateDynamic("FunctionCallArguments")(FunctionCallArguments)
-    if (FunctionDefinition != null) __obj.updateDynamic("FunctionDefinition")(FunctionDefinition)
-    if (FunctionTypeName != null) __obj.updateDynamic("FunctionTypeName")(FunctionTypeName)
-    if (FunctionTypeParameter != null) __obj.updateDynamic("FunctionTypeParameter")(FunctionTypeParameter)
-    if (FunctionTypeParameterList != null) __obj.updateDynamic("FunctionTypeParameterList")(FunctionTypeParameterList)
-    if (Identifier != null) __obj.updateDynamic("Identifier")(Identifier)
-    if (IdentifierList != null) __obj.updateDynamic("IdentifierList")(IdentifierList)
-    if (IfStatement != null) __obj.updateDynamic("IfStatement")(IfStatement)
-    if (ImportDeclaration != null) __obj.updateDynamic("ImportDeclaration")(ImportDeclaration)
-    if (ImportDirective != null) __obj.updateDynamic("ImportDirective")(ImportDirective)
-    if (InheritanceSpecifier != null) __obj.updateDynamic("InheritanceSpecifier")(InheritanceSpecifier)
-    if (InlineAssemblyStatement != null) __obj.updateDynamic("InlineAssemblyStatement")(InlineAssemblyStatement)
-    if (LabelDefinition != null) __obj.updateDynamic("LabelDefinition")(LabelDefinition)
-    if (Mapping != null) __obj.updateDynamic("Mapping")(Mapping)
-    if (ModifierDefinition != null) __obj.updateDynamic("ModifierDefinition")(ModifierDefinition)
-    if (ModifierInvocation != null) __obj.updateDynamic("ModifierInvocation")(ModifierInvocation)
-    if (ModifierList != null) __obj.updateDynamic("ModifierList")(ModifierList)
-    if (NameValue != null) __obj.updateDynamic("NameValue")(NameValue)
-    if (NameValueList != null) __obj.updateDynamic("NameValueList")(NameValueList)
-    if (NumberLiteral != null) __obj.updateDynamic("NumberLiteral")(NumberLiteral)
-    if (Parameter != null) __obj.updateDynamic("Parameter")(Parameter)
-    if (ParameterList != null) __obj.updateDynamic("ParameterList")(ParameterList)
-    if (PragmaDirective != null) __obj.updateDynamic("PragmaDirective")(PragmaDirective)
-    if (PragmaName != null) __obj.updateDynamic("PragmaName")(PragmaName)
-    if (PragmaValue != null) __obj.updateDynamic("PragmaValue")(PragmaValue)
-    if (PrimaryExpression != null) __obj.updateDynamic("PrimaryExpression")(PrimaryExpression)
-    if (ReturnParameters != null) __obj.updateDynamic("ReturnParameters")(ReturnParameters)
-    if (ReturnStatement != null) __obj.updateDynamic("ReturnStatement")(ReturnStatement)
-    if (SimpleStatement != null) __obj.updateDynamic("SimpleStatement")(SimpleStatement)
-    if (SourceUnit != null) __obj.updateDynamic("SourceUnit")(SourceUnit)
-    if (StateMutability != null) __obj.updateDynamic("StateMutability")(StateMutability)
-    if (StateVariableDeclaration != null) __obj.updateDynamic("StateVariableDeclaration")(StateVariableDeclaration)
-    if (Statement != null) __obj.updateDynamic("Statement")(Statement)
-    if (StorageLocation != null) __obj.updateDynamic("StorageLocation")(StorageLocation)
-    if (StructDefinition != null) __obj.updateDynamic("StructDefinition")(StructDefinition)
-    if (SubAssembly != null) __obj.updateDynamic("SubAssembly")(SubAssembly)
-    if (ThrowStatement != null) __obj.updateDynamic("ThrowStatement")(ThrowStatement)
-    if (TupleExpression != null) __obj.updateDynamic("TupleExpression")(TupleExpression)
-    if (TypeName != null) __obj.updateDynamic("TypeName")(TypeName)
-    if (UserDefinedTypeName != null) __obj.updateDynamic("UserDefinedTypeName")(UserDefinedTypeName)
-    if (UsingForDeclaration != null) __obj.updateDynamic("UsingForDeclaration")(UsingForDeclaration)
-    if (VariableDeclaration != null) __obj.updateDynamic("VariableDeclaration")(VariableDeclaration)
-    if (VariableDeclarationStatement != null) __obj.updateDynamic("VariableDeclarationStatement")(VariableDeclarationStatement)
-    if (Version != null) __obj.updateDynamic("Version")(Version)
-    if (VersionConstraint != null) __obj.updateDynamic("VersionConstraint")(VersionConstraint)
-    if (VersionOperator != null) __obj.updateDynamic("VersionOperator")(VersionOperator)
-    if (WhileStatement != null) __obj.updateDynamic("WhileStatement")(WhileStatement)
+    if (AssemblyAssignment != null) __obj.updateDynamic("AssemblyAssignment")(js.Any.fromFunction1(AssemblyAssignment))
+    if (AssemblyBlock != null) __obj.updateDynamic("AssemblyBlock")(js.Any.fromFunction1(AssemblyBlock))
+    if (AssemblyCall != null) __obj.updateDynamic("AssemblyCall")(js.Any.fromFunction1(AssemblyCall))
+    if (AssemblyCase != null) __obj.updateDynamic("AssemblyCase")(js.Any.fromFunction1(AssemblyCase))
+    if (AssemblyExpression != null) __obj.updateDynamic("AssemblyExpression")(js.Any.fromFunction1(AssemblyExpression))
+    if (AssemblyFor != null) __obj.updateDynamic("AssemblyFor")(js.Any.fromFunction1(AssemblyFor))
+    if (AssemblyFunctionDefinition != null) __obj.updateDynamic("AssemblyFunctionDefinition")(js.Any.fromFunction1(AssemblyFunctionDefinition))
+    if (AssemblyFunctionReturns != null) __obj.updateDynamic("AssemblyFunctionReturns")(js.Any.fromFunction1(AssemblyFunctionReturns))
+    if (AssemblyIdentifierList != null) __obj.updateDynamic("AssemblyIdentifierList")(js.Any.fromFunction1(AssemblyIdentifierList))
+    if (AssemblyIdentifierOrList != null) __obj.updateDynamic("AssemblyIdentifierOrList")(js.Any.fromFunction1(AssemblyIdentifierOrList))
+    if (AssemblyIf != null) __obj.updateDynamic("AssemblyIf")(js.Any.fromFunction1(AssemblyIf))
+    if (AssemblyItem != null) __obj.updateDynamic("AssemblyItem")(js.Any.fromFunction1(AssemblyItem))
+    if (AssemblyLiteral != null) __obj.updateDynamic("AssemblyLiteral")(js.Any.fromFunction1(AssemblyLiteral))
+    if (AssemblyLocalDefinition != null) __obj.updateDynamic("AssemblyLocalDefinition")(js.Any.fromFunction1(AssemblyLocalDefinition))
+    if (AssemblyStackAssignment != null) __obj.updateDynamic("AssemblyStackAssignment")(js.Any.fromFunction1(AssemblyStackAssignment))
+    if (AssemblySwitch != null) __obj.updateDynamic("AssemblySwitch")(js.Any.fromFunction1(AssemblySwitch))
+    if (BinaryOperation != null) __obj.updateDynamic("BinaryOperation")(js.Any.fromFunction1(BinaryOperation))
+    if (Block != null) __obj.updateDynamic("Block")(js.Any.fromFunction1(Block))
+    if (BreakStatement != null) __obj.updateDynamic("BreakStatement")(js.Any.fromFunction1(BreakStatement))
+    if (Conditional != null) __obj.updateDynamic("Conditional")(js.Any.fromFunction1(Conditional))
+    if (ContinueStatement != null) __obj.updateDynamic("ContinueStatement")(js.Any.fromFunction1(ContinueStatement))
+    if (ContractDefinition != null) __obj.updateDynamic("ContractDefinition")(js.Any.fromFunction1(ContractDefinition))
+    if (ContractPart != null) __obj.updateDynamic("ContractPart")(js.Any.fromFunction1(ContractPart))
+    if (DoWhileStatement != null) __obj.updateDynamic("DoWhileStatement")(js.Any.fromFunction1(DoWhileStatement))
+    if (ElementaryTypeName != null) __obj.updateDynamic("ElementaryTypeName")(js.Any.fromFunction1(ElementaryTypeName))
+    if (ElementaryTypeNameExpression != null) __obj.updateDynamic("ElementaryTypeNameExpression")(js.Any.fromFunction1(ElementaryTypeNameExpression))
+    if (EnumDefinition != null) __obj.updateDynamic("EnumDefinition")(js.Any.fromFunction1(EnumDefinition))
+    if (EnumValue != null) __obj.updateDynamic("EnumValue")(js.Any.fromFunction1(EnumValue))
+    if (EventDefinition != null) __obj.updateDynamic("EventDefinition")(js.Any.fromFunction1(EventDefinition))
+    if (EventParameter != null) __obj.updateDynamic("EventParameter")(js.Any.fromFunction1(EventParameter))
+    if (EventParameterList != null) __obj.updateDynamic("EventParameterList")(js.Any.fromFunction1(EventParameterList))
+    if (Expression != null) __obj.updateDynamic("Expression")(js.Any.fromFunction1(Expression))
+    if (ExpressionList != null) __obj.updateDynamic("ExpressionList")(js.Any.fromFunction1(ExpressionList))
+    if (ExpressionStatement != null) __obj.updateDynamic("ExpressionStatement")(js.Any.fromFunction1(ExpressionStatement))
+    if (ForStatement != null) __obj.updateDynamic("ForStatement")(js.Any.fromFunction1(ForStatement))
+    if (FunctionCallArguments != null) __obj.updateDynamic("FunctionCallArguments")(js.Any.fromFunction1(FunctionCallArguments))
+    if (FunctionDefinition != null) __obj.updateDynamic("FunctionDefinition")(js.Any.fromFunction1(FunctionDefinition))
+    if (FunctionTypeName != null) __obj.updateDynamic("FunctionTypeName")(js.Any.fromFunction1(FunctionTypeName))
+    if (FunctionTypeParameter != null) __obj.updateDynamic("FunctionTypeParameter")(js.Any.fromFunction1(FunctionTypeParameter))
+    if (FunctionTypeParameterList != null) __obj.updateDynamic("FunctionTypeParameterList")(js.Any.fromFunction1(FunctionTypeParameterList))
+    if (Identifier != null) __obj.updateDynamic("Identifier")(js.Any.fromFunction1(Identifier))
+    if (IdentifierList != null) __obj.updateDynamic("IdentifierList")(js.Any.fromFunction1(IdentifierList))
+    if (IfStatement != null) __obj.updateDynamic("IfStatement")(js.Any.fromFunction1(IfStatement))
+    if (ImportDeclaration != null) __obj.updateDynamic("ImportDeclaration")(js.Any.fromFunction1(ImportDeclaration))
+    if (ImportDirective != null) __obj.updateDynamic("ImportDirective")(js.Any.fromFunction1(ImportDirective))
+    if (InheritanceSpecifier != null) __obj.updateDynamic("InheritanceSpecifier")(js.Any.fromFunction1(InheritanceSpecifier))
+    if (InlineAssemblyStatement != null) __obj.updateDynamic("InlineAssemblyStatement")(js.Any.fromFunction1(InlineAssemblyStatement))
+    if (LabelDefinition != null) __obj.updateDynamic("LabelDefinition")(js.Any.fromFunction1(LabelDefinition))
+    if (Mapping != null) __obj.updateDynamic("Mapping")(js.Any.fromFunction1(Mapping))
+    if (ModifierDefinition != null) __obj.updateDynamic("ModifierDefinition")(js.Any.fromFunction1(ModifierDefinition))
+    if (ModifierInvocation != null) __obj.updateDynamic("ModifierInvocation")(js.Any.fromFunction1(ModifierInvocation))
+    if (ModifierList != null) __obj.updateDynamic("ModifierList")(js.Any.fromFunction1(ModifierList))
+    if (NameValue != null) __obj.updateDynamic("NameValue")(js.Any.fromFunction1(NameValue))
+    if (NameValueList != null) __obj.updateDynamic("NameValueList")(js.Any.fromFunction1(NameValueList))
+    if (NumberLiteral != null) __obj.updateDynamic("NumberLiteral")(js.Any.fromFunction1(NumberLiteral))
+    if (Parameter != null) __obj.updateDynamic("Parameter")(js.Any.fromFunction1(Parameter))
+    if (ParameterList != null) __obj.updateDynamic("ParameterList")(js.Any.fromFunction1(ParameterList))
+    if (PragmaDirective != null) __obj.updateDynamic("PragmaDirective")(js.Any.fromFunction1(PragmaDirective))
+    if (PragmaName != null) __obj.updateDynamic("PragmaName")(js.Any.fromFunction1(PragmaName))
+    if (PragmaValue != null) __obj.updateDynamic("PragmaValue")(js.Any.fromFunction1(PragmaValue))
+    if (PrimaryExpression != null) __obj.updateDynamic("PrimaryExpression")(js.Any.fromFunction1(PrimaryExpression))
+    if (ReturnParameters != null) __obj.updateDynamic("ReturnParameters")(js.Any.fromFunction1(ReturnParameters))
+    if (ReturnStatement != null) __obj.updateDynamic("ReturnStatement")(js.Any.fromFunction1(ReturnStatement))
+    if (SimpleStatement != null) __obj.updateDynamic("SimpleStatement")(js.Any.fromFunction1(SimpleStatement))
+    if (SourceUnit != null) __obj.updateDynamic("SourceUnit")(js.Any.fromFunction1(SourceUnit))
+    if (StateMutability != null) __obj.updateDynamic("StateMutability")(js.Any.fromFunction1(StateMutability))
+    if (StateVariableDeclaration != null) __obj.updateDynamic("StateVariableDeclaration")(js.Any.fromFunction1(StateVariableDeclaration))
+    if (Statement != null) __obj.updateDynamic("Statement")(js.Any.fromFunction1(Statement))
+    if (StorageLocation != null) __obj.updateDynamic("StorageLocation")(js.Any.fromFunction1(StorageLocation))
+    if (StructDefinition != null) __obj.updateDynamic("StructDefinition")(js.Any.fromFunction1(StructDefinition))
+    if (SubAssembly != null) __obj.updateDynamic("SubAssembly")(js.Any.fromFunction1(SubAssembly))
+    if (ThrowStatement != null) __obj.updateDynamic("ThrowStatement")(js.Any.fromFunction1(ThrowStatement))
+    if (TupleExpression != null) __obj.updateDynamic("TupleExpression")(js.Any.fromFunction1(TupleExpression))
+    if (TypeName != null) __obj.updateDynamic("TypeName")(js.Any.fromFunction1(TypeName))
+    if (UserDefinedTypeName != null) __obj.updateDynamic("UserDefinedTypeName")(js.Any.fromFunction1(UserDefinedTypeName))
+    if (UsingForDeclaration != null) __obj.updateDynamic("UsingForDeclaration")(js.Any.fromFunction1(UsingForDeclaration))
+    if (VariableDeclaration != null) __obj.updateDynamic("VariableDeclaration")(js.Any.fromFunction1(VariableDeclaration))
+    if (VariableDeclarationStatement != null) __obj.updateDynamic("VariableDeclarationStatement")(js.Any.fromFunction1(VariableDeclarationStatement))
+    if (Version != null) __obj.updateDynamic("Version")(js.Any.fromFunction1(Version))
+    if (VersionConstraint != null) __obj.updateDynamic("VersionConstraint")(js.Any.fromFunction1(VersionConstraint))
+    if (VersionOperator != null) __obj.updateDynamic("VersionOperator")(js.Any.fromFunction1(VersionOperator))
+    if (WhileStatement != null) __obj.updateDynamic("WhileStatement")(js.Any.fromFunction1(WhileStatement))
     __obj.asInstanceOf[Visitor]
   }
 }

@@ -19,7 +19,7 @@ trait OverlayProps extends js.Object {
 object OverlayProps {
   @scala.inline
   def apply(
-    onPress: js.Function1[reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, scala.Unit],
+    onPress: reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit,
     animationDuration: scala.Int | scala.Double = null,
     backgroundColor: java.lang.String = null,
     opacity: scala.Int | scala.Double = null,
@@ -28,7 +28,7 @@ object OverlayProps {
     useNativeDriver: js.UndefOr[scala.Boolean] = js.undefined,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): OverlayProps = {
-    val __obj = js.Dynamic.literal(onPress = onPress)
+    val __obj = js.Dynamic.literal(onPress = js.Any.fromFunction1(onPress))
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])

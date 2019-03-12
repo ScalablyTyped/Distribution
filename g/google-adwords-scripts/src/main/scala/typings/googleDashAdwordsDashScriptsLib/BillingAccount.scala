@@ -16,12 +16,12 @@ trait BillingAccount extends js.Object {
 object BillingAccount {
   @scala.inline
   def apply(
-    getId: js.Function0[scala.Double],
-    getName: js.Function0[java.lang.String],
-    getPrimaryBillingId: js.Function0[java.lang.String],
-    getSecondaryBillingId: js.Function0[java.lang.String]
+    getId: () => scala.Double,
+    getName: () => java.lang.String,
+    getPrimaryBillingId: () => java.lang.String,
+    getSecondaryBillingId: () => java.lang.String
   ): BillingAccount = {
-    val __obj = js.Dynamic.literal(getId = getId, getName = getName, getPrimaryBillingId = getPrimaryBillingId, getSecondaryBillingId = getSecondaryBillingId)
+    val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId), getName = js.Any.fromFunction0(getName), getPrimaryBillingId = js.Any.fromFunction0(getPrimaryBillingId), getSecondaryBillingId = js.Any.fromFunction0(getSecondaryBillingId))
   
     __obj.asInstanceOf[BillingAccount]
   }

@@ -33,49 +33,49 @@ trait EditorOptions extends js.Object {
 object EditorOptions {
   @scala.inline
   def apply(
-    change: js.Function1[/* e */ EditorEvent, scala.Unit] = null,
+    change: /* e */ EditorEvent => scala.Unit = null,
     deserialization: EditorDeserialization = null,
     domain: java.lang.String = null,
     encoded: js.UndefOr[scala.Boolean] = js.undefined,
-    execute: js.Function1[/* e */ EditorExecuteEvent, scala.Unit] = null,
+    execute: /* e */ EditorExecuteEvent => scala.Unit = null,
     fileBrowser: EditorFileBrowser = null,
     imageBrowser: EditorImageBrowser = null,
     immutables: scala.Boolean | EditorImmutables = null,
-    keydown: js.Function1[/* e */ EditorEvent, scala.Unit] = null,
-    keyup: js.Function1[/* e */ EditorEvent, scala.Unit] = null,
+    keydown: /* e */ EditorEvent => scala.Unit = null,
+    keyup: /* e */ EditorEvent => scala.Unit = null,
     messages: EditorMessages = null,
     name: java.lang.String = null,
-    paste: js.Function1[/* e */ EditorPasteEvent, scala.Unit] = null,
+    paste: /* e */ EditorPasteEvent => scala.Unit = null,
     pasteCleanup: EditorPasteCleanup = null,
     pdf: EditorPdf = null,
-    pdfExport: js.Function1[/* e */ EditorPdfExportEvent, scala.Unit] = null,
+    pdfExport: /* e */ EditorPdfExportEvent => scala.Unit = null,
     placeholder: java.lang.String = null,
     resizable: scala.Boolean | EditorResizable = null,
-    select: js.Function1[/* e */ EditorEvent, scala.Unit] = null,
+    select: /* e */ EditorEvent => scala.Unit = null,
     serialization: EditorSerialization = null,
     stylesheets: js.Any = null,
     tools: js.Array[EditorTool] = null
   ): EditorOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (deserialization != null) __obj.updateDynamic("deserialization")(deserialization)
     if (domain != null) __obj.updateDynamic("domain")(domain)
     if (!js.isUndefined(encoded)) __obj.updateDynamic("encoded")(encoded)
-    if (execute != null) __obj.updateDynamic("execute")(execute)
+    if (execute != null) __obj.updateDynamic("execute")(js.Any.fromFunction1(execute))
     if (fileBrowser != null) __obj.updateDynamic("fileBrowser")(fileBrowser)
     if (imageBrowser != null) __obj.updateDynamic("imageBrowser")(imageBrowser)
     if (immutables != null) __obj.updateDynamic("immutables")(immutables.asInstanceOf[js.Any])
-    if (keydown != null) __obj.updateDynamic("keydown")(keydown)
-    if (keyup != null) __obj.updateDynamic("keyup")(keyup)
+    if (keydown != null) __obj.updateDynamic("keydown")(js.Any.fromFunction1(keydown))
+    if (keyup != null) __obj.updateDynamic("keyup")(js.Any.fromFunction1(keyup))
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (paste != null) __obj.updateDynamic("paste")(paste)
+    if (paste != null) __obj.updateDynamic("paste")(js.Any.fromFunction1(paste))
     if (pasteCleanup != null) __obj.updateDynamic("pasteCleanup")(pasteCleanup)
     if (pdf != null) __obj.updateDynamic("pdf")(pdf)
-    if (pdfExport != null) __obj.updateDynamic("pdfExport")(pdfExport)
+    if (pdfExport != null) __obj.updateDynamic("pdfExport")(js.Any.fromFunction1(pdfExport))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (resizable != null) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (serialization != null) __obj.updateDynamic("serialization")(serialization)
     if (stylesheets != null) __obj.updateDynamic("stylesheets")(stylesheets)
     if (tools != null) __obj.updateDynamic("tools")(tools)

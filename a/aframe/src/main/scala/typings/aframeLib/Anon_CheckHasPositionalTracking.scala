@@ -25,22 +25,22 @@ trait Anon_CheckHasPositionalTracking extends js.Object {
 object Anon_CheckHasPositionalTracking {
   @scala.inline
   def apply(
-    PolyfillControls: js.Function1[threeLib.threeMod.Object3D, scala.Unit],
-    checkHasPositionalTracking: js.Function0[scala.Boolean],
-    checkHeadsetConnected: js.Function0[scala.Boolean],
-    getVRDisplay: js.Function0[js.Array[stdLib.VRDisplay]],
-    isBrowserEnvironment: js.Function0[scala.Boolean],
-    isGearVR: js.Function0[scala.Boolean],
-    isIOS: js.Function0[scala.Boolean],
-    isLandscape: js.Function0[scala.Boolean],
-    isMobile: js.Function0[scala.Boolean],
-    isNodeEnvironment: js.Function0[scala.Boolean],
-    isOculusGo: js.Function0[scala.Boolean],
-    isR7: js.Function0[scala.Boolean],
-    isTablet: js.Function0[scala.Boolean],
+    PolyfillControls: threeLib.threeMod.Object3D => scala.Unit,
+    checkHasPositionalTracking: () => scala.Boolean,
+    checkHeadsetConnected: () => scala.Boolean,
+    getVRDisplay: () => js.Array[stdLib.VRDisplay],
+    isBrowserEnvironment: () => scala.Boolean,
+    isGearVR: () => scala.Boolean,
+    isIOS: () => scala.Boolean,
+    isLandscape: () => scala.Boolean,
+    isMobile: () => scala.Boolean,
+    isNodeEnvironment: () => scala.Boolean,
+    isOculusGo: () => scala.Boolean,
+    isR7: () => scala.Boolean,
+    isTablet: () => scala.Boolean,
     isWebXRAvailable: scala.Boolean
   ): Anon_CheckHasPositionalTracking = {
-    val __obj = js.Dynamic.literal(PolyfillControls = PolyfillControls, checkHasPositionalTracking = checkHasPositionalTracking, checkHeadsetConnected = checkHeadsetConnected, getVRDisplay = getVRDisplay, isBrowserEnvironment = isBrowserEnvironment, isGearVR = isGearVR, isIOS = isIOS, isLandscape = isLandscape, isMobile = isMobile, isNodeEnvironment = isNodeEnvironment, isOculusGo = isOculusGo, isR7 = isR7, isTablet = isTablet, isWebXRAvailable = isWebXRAvailable)
+    val __obj = js.Dynamic.literal(PolyfillControls = js.Any.fromFunction1(PolyfillControls), checkHasPositionalTracking = js.Any.fromFunction0(checkHasPositionalTracking), checkHeadsetConnected = js.Any.fromFunction0(checkHeadsetConnected), getVRDisplay = js.Any.fromFunction0(getVRDisplay), isBrowserEnvironment = js.Any.fromFunction0(isBrowserEnvironment), isGearVR = js.Any.fromFunction0(isGearVR), isIOS = js.Any.fromFunction0(isIOS), isLandscape = js.Any.fromFunction0(isLandscape), isMobile = js.Any.fromFunction0(isMobile), isNodeEnvironment = js.Any.fromFunction0(isNodeEnvironment), isOculusGo = js.Any.fromFunction0(isOculusGo), isR7 = js.Any.fromFunction0(isR7), isTablet = js.Any.fromFunction0(isTablet), isWebXRAvailable = isWebXRAvailable)
   
     __obj.asInstanceOf[Anon_CheckHasPositionalTracking]
   }

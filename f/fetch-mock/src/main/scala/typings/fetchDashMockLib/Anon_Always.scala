@@ -108,11 +108,7 @@ object Anon_Always {
     ] = null,
     Response: org.scalablytyped.runtime.Instantiable0[stdLib.Response] = null,
     fallbackToNetwork: scala.Boolean | fetchDashMockLib.fetchDashMockLibStrings.always = null,
-    fetch: js.Function2[
-      /* input */ js.UndefOr[java.lang.String | stdLib.Request], 
-      /* init */ js.UndefOr[stdLib.RequestInit], 
-      js.Promise[stdLib.Response]
-    ] = null,
+    fetch: (/* input */ js.UndefOr[java.lang.String | stdLib.Request], /* init */ js.UndefOr[stdLib.RequestInit]) => js.Promise[stdLib.Response] = null,
     includeContentLength: js.UndefOr[scala.Boolean] = js.undefined,
     overwriteRoutes: js.UndefOr[scala.Boolean] = js.undefined,
     sendAsJson: js.UndefOr[scala.Boolean] = js.undefined,
@@ -124,7 +120,7 @@ object Anon_Always {
     if (Request != null) __obj.updateDynamic("Request")(Request)
     if (Response != null) __obj.updateDynamic("Response")(Response)
     if (fallbackToNetwork != null) __obj.updateDynamic("fallbackToNetwork")(fallbackToNetwork.asInstanceOf[js.Any])
-    if (fetch != null) __obj.updateDynamic("fetch")(fetch)
+    if (fetch != null) __obj.updateDynamic("fetch")(js.Any.fromFunction2(fetch))
     if (!js.isUndefined(includeContentLength)) __obj.updateDynamic("includeContentLength")(includeContentLength)
     if (!js.isUndefined(overwriteRoutes)) __obj.updateDynamic("overwriteRoutes")(overwriteRoutes)
     if (!js.isUndefined(sendAsJson)) __obj.updateDynamic("sendAsJson")(sendAsJson)

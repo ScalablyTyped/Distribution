@@ -14,11 +14,11 @@ object Anon_Any {
   @scala.inline
   def apply(
     mergeStrategy: breezeLib.breezeNs.MergeStrategySymbol = null,
-    metadataVersionFn: js.Function1[/* any */ js.Any, scala.Unit] = null
+    metadataVersionFn: /* any */ js.Any => scala.Unit = null
   ): Anon_Any = {
     val __obj = js.Dynamic.literal()
     if (mergeStrategy != null) __obj.updateDynamic("mergeStrategy")(mergeStrategy)
-    if (metadataVersionFn != null) __obj.updateDynamic("metadataVersionFn")(metadataVersionFn)
+    if (metadataVersionFn != null) __obj.updateDynamic("metadataVersionFn")(js.Any.fromFunction1(metadataVersionFn))
     __obj.asInstanceOf[Anon_Any]
   }
 }

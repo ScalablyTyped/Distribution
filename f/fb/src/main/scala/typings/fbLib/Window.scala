@@ -11,8 +11,8 @@ trait Window extends js.Object {
 
 object Window {
   @scala.inline
-  def apply(fbAsyncInit: js.Function0[js.Any]): Window = {
-    val __obj = js.Dynamic.literal(fbAsyncInit = fbAsyncInit)
+  def apply(fbAsyncInit: () => js.Any): Window = {
+    val __obj = js.Dynamic.literal(fbAsyncInit = js.Any.fromFunction0(fbAsyncInit))
   
     __obj.asInstanceOf[Window]
   }

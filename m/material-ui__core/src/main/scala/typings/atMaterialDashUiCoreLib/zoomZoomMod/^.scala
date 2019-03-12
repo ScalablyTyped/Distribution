@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/Zoom/Zoom", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.zoomZoomMod.ZoomProps] = js.native
+  val default: reactLib.reactMod.ReactNs.ComponentType[ZoomProps] = js.native
 }
 

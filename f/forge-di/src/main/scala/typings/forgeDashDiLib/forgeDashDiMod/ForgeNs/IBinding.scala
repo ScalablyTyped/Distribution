@@ -44,10 +44,6 @@ trait IBinding extends js.Object {
     * @param {string} hint The hint to check against.
     */
   def matches(hint: java.lang.String): scala.Boolean = js.native
-  /**
-    * Returns whether or not the hit satisfies this predicate.
-    * @param {string} hint The hint to check against.
-    */
   /** The predicate associated with this binding. Used to support hints. */
   def predicate(hint: java.lang.String): scala.Boolean = js.native
   /**

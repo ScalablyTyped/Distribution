@@ -185,7 +185,7 @@ object SecurityHubNs extends js.Object {
     /**
       * A finding's severity.
       */
-    var Severity: Severity
+    var Severity: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.Severity
     /**
       * A URL that links to a page about the current finding in the security findings provider's solution.
       */
@@ -559,7 +559,7 @@ object SecurityHubNs extends js.Object {
     /**
       * The ARNS of the standards subscriptions that you want to disable.
       */
-    var StandardsSubscriptionArns: StandardsSubscriptionArns
+    var StandardsSubscriptionArns: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.StandardsSubscriptionArns
   }
   
   trait BatchDisableStandardsResponse extends js.Object {
@@ -573,7 +573,7 @@ object SecurityHubNs extends js.Object {
     /**
       * The list of standards that you want to enable.
       */
-    var StandardsSubscriptionRequests: StandardsSubscriptionRequests
+    var StandardsSubscriptionRequests: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.StandardsSubscriptionRequests
   }
   
   trait BatchEnableStandardsResponse extends js.Object {
@@ -870,7 +870,7 @@ object SecurityHubNs extends js.Object {
     /**
       * The insight results returned by the operation.
       */
-    var InsightResults: InsightResults
+    var InsightResults: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.InsightResults
   }
   
   trait GetInsightsRequest extends js.Object {
@@ -1415,7 +1415,7 @@ object SecurityHubNs extends js.Object {
     /**
       * The standard's status.
       */
-    var StandardsStatus: StandardsStatus
+    var StandardsStatus: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.StandardsStatus
     /**
       * The ARN of a resource that represents your subscription to a supported standard.
       */

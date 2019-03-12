@@ -23,7 +23,7 @@ trait Title
     *
     * If a relative position is given the title is not automatically placed, but instead is placed relative on the page.
     */
-  var RelativePosition: RelativePosition = js.native
+  var RelativePosition: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.RelativePosition = js.native
   /** writes the characters of the title on top of each other if set to `TRUE` . */
   var StackCharacters: scala.Boolean = js.native
   /** the rotation of the title's text in degrees in the range [0,360). */

@@ -37,30 +37,30 @@ object QueryObj {
   def apply(
     OR: js.Array[Query],
     URI: java.lang.String,
-    ascending: js.Function1[java.lang.String, scala.Unit],
-    columns: js.Function1[js.Array[java.lang.String], scala.Unit],
-    descending: js.Function1[java.lang.String, scala.Unit],
-    equalTo: js.Function2[java.lang.String, QueryValue, scala.Unit],
-    fetch: js.Function1[CbCallback, scala.Unit],
-    greaterThan: js.Function2[java.lang.String, QueryValue, scala.Unit],
-    greaterThanEqualTo: js.Function2[java.lang.String, QueryValue, scala.Unit],
+    ascending: java.lang.String => scala.Unit,
+    columns: js.Array[java.lang.String] => scala.Unit,
+    descending: java.lang.String => scala.Unit,
+    equalTo: (java.lang.String, QueryValue) => scala.Unit,
+    fetch: CbCallback => scala.Unit,
+    greaterThan: (java.lang.String, QueryValue) => scala.Unit,
+    greaterThanEqualTo: (java.lang.String, QueryValue) => scala.Unit,
     id: java.lang.String,
-    lessThan: js.Function2[java.lang.String, QueryValue, scala.Unit],
-    lessThanEqualTo: js.Function2[java.lang.String, QueryValue, scala.Unit],
+    lessThan: (java.lang.String, QueryValue) => scala.Unit,
+    lessThanEqualTo: (java.lang.String, QueryValue) => scala.Unit,
     limit: scala.Double,
-    matches: js.Function2[java.lang.String, QueryValue, scala.Unit],
-    notEqualTo: js.Function2[java.lang.String, QueryValue, scala.Unit],
+    matches: (java.lang.String, QueryValue) => scala.Unit,
+    notEqualTo: (java.lang.String, QueryValue) => scala.Unit,
     offset: scala.Double,
-    or: js.Function1[QueryObj, scala.Unit],
+    or: QueryObj => scala.Unit,
     query: Query,
-    remove: js.Function1[CbCallback, scala.Unit],
-    setPage: js.Function2[scala.Double, scala.Double, scala.Unit],
+    remove: CbCallback => scala.Unit,
+    setPage: (scala.Double, scala.Double) => scala.Unit,
     systemKey: java.lang.String,
     systemSecret: java.lang.String,
-    update: js.Function2[js.Object, CbCallback, scala.Unit],
+    update: (js.Object, CbCallback) => scala.Unit,
     user: APIUser
   ): QueryObj = {
-    val __obj = js.Dynamic.literal(OR = OR, URI = URI, ascending = ascending, columns = columns, descending = descending, equalTo = equalTo, fetch = fetch, greaterThan = greaterThan, greaterThanEqualTo = greaterThanEqualTo, id = id, lessThan = lessThan, lessThanEqualTo = lessThanEqualTo, limit = limit, matches = matches, notEqualTo = notEqualTo, offset = offset, or = or, query = query, remove = remove, setPage = setPage, systemKey = systemKey, systemSecret = systemSecret, update = update, user = user)
+    val __obj = js.Dynamic.literal(OR = OR, URI = URI, ascending = js.Any.fromFunction1(ascending), columns = js.Any.fromFunction1(columns), descending = js.Any.fromFunction1(descending), equalTo = js.Any.fromFunction2(equalTo), fetch = js.Any.fromFunction1(fetch), greaterThan = js.Any.fromFunction2(greaterThan), greaterThanEqualTo = js.Any.fromFunction2(greaterThanEqualTo), id = id, lessThan = js.Any.fromFunction2(lessThan), lessThanEqualTo = js.Any.fromFunction2(lessThanEqualTo), limit = limit, matches = js.Any.fromFunction2(matches), notEqualTo = js.Any.fromFunction2(notEqualTo), offset = offset, or = js.Any.fromFunction1(or), query = query, remove = js.Any.fromFunction1(remove), setPage = js.Any.fromFunction2(setPage), systemKey = systemKey, systemSecret = systemSecret, update = js.Any.fromFunction2(update), user = user)
   
     __obj.asInstanceOf[QueryObj]
   }

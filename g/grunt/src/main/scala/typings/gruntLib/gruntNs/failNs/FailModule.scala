@@ -12,15 +12,15 @@ trait FailModule extends js.Object {
     */
   def fatal(error: java.lang.String): scala.Unit = js.native
   def fatal(error: java.lang.String, errorCode: ErrorCode): scala.Unit = js.native
-  def fatal(error: nodeLib.Error): scala.Unit = js.native
-  def fatal(error: nodeLib.Error, errorCode: ErrorCode): scala.Unit = js.native
+  def fatal(error: stdLib.Error): scala.Unit = js.native
+  def fatal(error: stdLib.Error, errorCode: ErrorCode): scala.Unit = js.native
   /**
     * Display a warning and abort Grunt immediately.
     * Grunt will continue processing tasks if the --force command-line option was specified.
     */
   def warn(error: java.lang.String): scala.Unit = js.native
   def warn(error: java.lang.String, errorCode: ErrorCode): scala.Unit = js.native
-  def warn(error: nodeLib.Error): scala.Unit = js.native
-  def warn(error: nodeLib.Error, errorCode: ErrorCode): scala.Unit = js.native
+  def warn(error: stdLib.Error): scala.Unit = js.native
+  def warn(error: stdLib.Error, errorCode: ErrorCode): scala.Unit = js.native
 }
 

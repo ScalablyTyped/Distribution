@@ -23,8 +23,8 @@ trait StackMapper extends js.Object {
 
 object StackMapper {
   @scala.inline
-  def apply(map: js.Function1[js.Array[Callsite], js.Array[Callsite]]): StackMapper = {
-    val __obj = js.Dynamic.literal(map = map)
+  def apply(map: js.Array[Callsite] => js.Array[Callsite]): StackMapper = {
+    val __obj = js.Dynamic.literal(map = js.Any.fromFunction1(map))
   
     __obj.asInstanceOf[StackMapper]
   }

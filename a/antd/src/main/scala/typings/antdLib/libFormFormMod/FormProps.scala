@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FormProps
-  extends reactLib.reactMod.ReactNs.FormHTMLAttributes[reactLib.HTMLFormElement] {
+  extends reactLib.reactMod.ReactNs.FormHTMLAttributes[stdLib.HTMLFormElement] {
   /**
     * @since 3.15.0
     */
@@ -28,7 +28,7 @@ trait FormProps
 object FormProps {
   @scala.inline
   def apply(
-    FormHTMLAttributes: reactLib.reactMod.ReactNs.FormHTMLAttributes[reactLib.HTMLFormElement] = null,
+    FormHTMLAttributes: reactLib.reactMod.ReactNs.FormHTMLAttributes[stdLib.HTMLFormElement] = null,
     className: java.lang.String = null,
     colon: js.UndefOr[scala.Boolean] = js.undefined,
     form: WrappedFormUtils = null,

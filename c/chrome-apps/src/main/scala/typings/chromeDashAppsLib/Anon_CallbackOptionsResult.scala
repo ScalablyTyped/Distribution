@@ -23,16 +23,12 @@ trait Anon_CallbackOptionsResult extends js.Object {
 object Anon_CallbackOptionsResult {
   @scala.inline
   def apply(
-    scan: js.Function2[
-      chromeDashAppsLib.chromeNs.documentScanNs.DocumentScanOptions, 
-      js.Function1[
-        /* result */ chromeDashAppsLib.chromeNs.documentScanNs.DocumentScanCallbackArg, 
-        scala.Unit
-      ], 
+    scan: (chromeDashAppsLib.chromeNs.documentScanNs.DocumentScanOptions, js.Function1[
+      /* result */ chromeDashAppsLib.chromeNs.documentScanNs.DocumentScanCallbackArg, 
       scala.Unit
-    ]
+    ]) => scala.Unit
   ): Anon_CallbackOptionsResult = {
-    val __obj = js.Dynamic.literal(scan = scan)
+    val __obj = js.Dynamic.literal(scan = js.Any.fromFunction2(scan))
   
     __obj.asInstanceOf[Anon_CallbackOptionsResult]
   }

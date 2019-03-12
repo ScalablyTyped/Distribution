@@ -92,48 +92,21 @@ trait XXPathAPI
 object XXPathAPI {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    eval: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
-      java.lang.String, 
-      XXPathObject
-    ],
-    evalNS: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
-      XXPathObject
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerExtension: js.Function1[java.lang.String, scala.Unit],
-    registerExtensionInstance: js.Function1[XXPathExtension, scala.Unit],
-    registerNS: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    release: js.Function0[scala.Unit],
-    selectNodeList: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNodeList
-    ],
-    selectNodeListNS: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNodeList
-    ],
-    selectSingleNode: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode
-    ],
-    selectSingleNodeNS: js.Function3[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode
-    ],
-    unregisterNS: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    eval: (activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, java.lang.String) => XXPathObject,
+    evalNS: (activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode) => XXPathObject,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerExtension: java.lang.String => scala.Unit,
+    registerExtensionInstance: XXPathExtension => scala.Unit,
+    registerNS: (java.lang.String, java.lang.String) => scala.Unit,
+    release: () => scala.Unit,
+    selectNodeList: (activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, java.lang.String) => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNodeList,
+    selectNodeListNS: (activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode) => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNodeList,
+    selectSingleNode: (activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, java.lang.String) => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode,
+    selectSingleNodeNS: (activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode) => activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode,
+    unregisterNS: (java.lang.String, java.lang.String) => scala.Unit
   ): XXPathAPI = {
-    val __obj = js.Dynamic.literal(acquire = acquire, eval = eval, evalNS = evalNS, queryInterface = queryInterface, registerExtension = registerExtension, registerExtensionInstance = registerExtensionInstance, registerNS = registerNS, release = release, selectNodeList = selectNodeList, selectNodeListNS = selectNodeListNS, selectSingleNode = selectSingleNode, selectSingleNodeNS = selectSingleNodeNS, unregisterNS = unregisterNS)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), eval = js.Any.fromFunction2(eval), evalNS = js.Any.fromFunction3(evalNS), queryInterface = js.Any.fromFunction1(queryInterface), registerExtension = js.Any.fromFunction1(registerExtension), registerExtensionInstance = js.Any.fromFunction1(registerExtensionInstance), registerNS = js.Any.fromFunction2(registerNS), release = js.Any.fromFunction0(release), selectNodeList = js.Any.fromFunction2(selectNodeList), selectNodeListNS = js.Any.fromFunction3(selectNodeListNS), selectSingleNode = js.Any.fromFunction2(selectSingleNode), selectSingleNodeNS = js.Any.fromFunction3(selectSingleNodeNS), unregisterNS = js.Any.fromFunction2(unregisterNS))
   
     __obj.asInstanceOf[XXPathAPI]
   }

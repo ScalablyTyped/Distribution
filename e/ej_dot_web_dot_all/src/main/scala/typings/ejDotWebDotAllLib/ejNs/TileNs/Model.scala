@@ -90,8 +90,8 @@ object Model {
     imageUrl: java.lang.String = null,
     liveTile: LiveTile = null,
     locale: java.lang.String = null,
-    mouseDown: js.Function1[/* e */ MouseDownEventArgs, scala.Unit] = null,
-    mouseUp: js.Function1[/* e */ MouseUpEventArgs, scala.Unit] = null,
+    mouseDown: /* e */ MouseDownEventArgs => scala.Unit = null,
+    mouseUp: /* e */ MouseUpEventArgs => scala.Unit = null,
     showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
     tileSize: TileSize | java.lang.String = null,
     width: java.lang.String | scala.Double = null
@@ -110,8 +110,8 @@ object Model {
     if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
     if (liveTile != null) __obj.updateDynamic("liveTile")(liveTile)
     if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (mouseDown != null) __obj.updateDynamic("mouseDown")(mouseDown)
-    if (mouseUp != null) __obj.updateDynamic("mouseUp")(mouseUp)
+    if (mouseDown != null) __obj.updateDynamic("mouseDown")(js.Any.fromFunction1(mouseDown))
+    if (mouseUp != null) __obj.updateDynamic("mouseUp")(js.Any.fromFunction1(mouseUp))
     if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

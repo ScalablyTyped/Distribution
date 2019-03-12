@@ -18,13 +18,13 @@ object IObjectFiles {
   @scala.inline
   def apply(
     Count: scala.Double,
-    GetObjectFileByNameForFileSystem: js.Function1[java.lang.String, IObjectFile],
-    GetObjectFileIndexByNameForFileSystem: js.Function1[java.lang.String, scala.Double],
-    Item: js.Function1[scala.Double, IObjectFile],
-    Sort: js.Function1[IObjectFileComparer, scala.Unit],
-    ToJSON: js.Function0[java.lang.String]
+    GetObjectFileByNameForFileSystem: java.lang.String => IObjectFile,
+    GetObjectFileIndexByNameForFileSystem: java.lang.String => scala.Double,
+    Item: scala.Double => IObjectFile,
+    Sort: IObjectFileComparer => scala.Unit,
+    ToJSON: () => java.lang.String
   ): IObjectFiles = {
-    val __obj = js.Dynamic.literal(Count = Count, GetObjectFileByNameForFileSystem = GetObjectFileByNameForFileSystem, GetObjectFileIndexByNameForFileSystem = GetObjectFileIndexByNameForFileSystem, Item = Item, Sort = Sort, ToJSON = ToJSON)
+    val __obj = js.Dynamic.literal(Count = Count, GetObjectFileByNameForFileSystem = js.Any.fromFunction1(GetObjectFileByNameForFileSystem), GetObjectFileIndexByNameForFileSystem = js.Any.fromFunction1(GetObjectFileIndexByNameForFileSystem), Item = js.Any.fromFunction1(Item), Sort = js.Any.fromFunction1(Sort), ToJSON = js.Any.fromFunction0(ToJSON))
   
     __obj.asInstanceOf[IObjectFiles]
   }

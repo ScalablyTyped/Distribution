@@ -16,7 +16,7 @@ trait XDataSequence
     * retrieves the data stored in this component.
     * @returns a sequence containing the actual data. This sequence is a copy of the internal data. Therefore changing this object does not affect the content o
     */
-  val Data: activexDashInteropLib.SafeArray[_]
+  val Data: stdLib.SafeArray[_]
   /** returns the (UI) range representation string used by this {@link XDataSequence} . */
   val SourceRangeRepresentation: java.lang.String
   /**
@@ -31,12 +31,12 @@ trait XDataSequence
     * @param eLabelOrigin denotes what part of the range should be used for label generation. If you have, e.g., one cell only, the parameter COLUMN enables y
     * @returns Suitable labels for the given sequence depending on the range of the sequence and the parameter `eLabelOrigin` passed. In a spreadsheet this woul
     */
-  def generateLabel(eLabelOrigin: LabelOrigin): activexDashInteropLib.SafeArray[java.lang.String]
+  def generateLabel(eLabelOrigin: LabelOrigin): stdLib.SafeArray[java.lang.String]
   /**
     * retrieves the data stored in this component.
     * @returns a sequence containing the actual data. This sequence is a copy of the internal data. Therefore changing this object does not affect the content o
     */
-  def getData(): activexDashInteropLib.SafeArray[_]
+  def getData(): stdLib.SafeArray[_]
   /**
     * returns a number format key for the value at the given index in the data sequence. If nIndex is -1, a key for the entire sequence should be returned,
     * e.g. the most commonly used one.
@@ -54,17 +54,17 @@ trait XDataSequence
 object XDataSequence {
   @scala.inline
   def apply(
-    Data: activexDashInteropLib.SafeArray[_],
+    Data: stdLib.SafeArray[_],
     SourceRangeRepresentation: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    generateLabel: js.Function1[LabelOrigin, activexDashInteropLib.SafeArray[java.lang.String]],
-    getData: js.Function0[activexDashInteropLib.SafeArray[_]],
-    getNumberFormatKeyByIndex: js.Function1[scala.Double, scala.Double],
-    getSourceRangeRepresentation: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    generateLabel: LabelOrigin => stdLib.SafeArray[java.lang.String],
+    getData: () => stdLib.SafeArray[_],
+    getNumberFormatKeyByIndex: scala.Double => scala.Double,
+    getSourceRangeRepresentation: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XDataSequence = {
-    val __obj = js.Dynamic.literal(Data = Data, SourceRangeRepresentation = SourceRangeRepresentation, acquire = acquire, generateLabel = generateLabel, getData = getData, getNumberFormatKeyByIndex = getNumberFormatKeyByIndex, getSourceRangeRepresentation = getSourceRangeRepresentation, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Data = Data, SourceRangeRepresentation = SourceRangeRepresentation, acquire = js.Any.fromFunction0(acquire), generateLabel = js.Any.fromFunction1(generateLabel), getData = js.Any.fromFunction0(getData), getNumberFormatKeyByIndex = js.Any.fromFunction1(getNumberFormatKeyByIndex), getSourceRangeRepresentation = js.Any.fromFunction0(getSourceRangeRepresentation), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XDataSequence]
   }

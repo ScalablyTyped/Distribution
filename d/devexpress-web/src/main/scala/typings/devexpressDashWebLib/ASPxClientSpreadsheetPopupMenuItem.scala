@@ -82,10 +82,10 @@ trait ASPxClientSpreadsheetPopupMenuItem extends js.Object {
 object ASPxClientSpreadsheetPopupMenuItem {
   @scala.inline
   def apply(
-    GetItem: js.Function1[scala.Double, ASPxClientSpreadsheetPopupMenuItem],
-    GetItemByName: js.Function1[java.lang.String, ASPxClientSpreadsheetPopupMenuItem],
-    GetItemCount: js.Function0[scala.Double],
-    GetSubItems: js.Function0[ASPxClientSpreadsheetPopupMenuItemCollection],
+    GetItem: scala.Double => ASPxClientSpreadsheetPopupMenuItem,
+    GetItemByName: java.lang.String => ASPxClientSpreadsheetPopupMenuItem,
+    GetItemCount: () => scala.Double,
+    GetSubItems: () => ASPxClientSpreadsheetPopupMenuItemCollection,
     beginGroup: scala.Boolean,
     enabled: scala.Boolean,
     imageClassName: java.lang.String,
@@ -97,7 +97,7 @@ object ASPxClientSpreadsheetPopupMenuItem {
     text: java.lang.String,
     tooltip: java.lang.String
   ): ASPxClientSpreadsheetPopupMenuItem = {
-    val __obj = js.Dynamic.literal(GetItem = GetItem, GetItemByName = GetItemByName, GetItemCount = GetItemCount, GetSubItems = GetSubItems, beginGroup = beginGroup, enabled = enabled, imageClassName = imageClassName, imageUrl = imageUrl, name = name, navigateUrl = navigateUrl, parent = parent, target = target, text = text, tooltip = tooltip)
+    val __obj = js.Dynamic.literal(GetItem = js.Any.fromFunction1(GetItem), GetItemByName = js.Any.fromFunction1(GetItemByName), GetItemCount = js.Any.fromFunction0(GetItemCount), GetSubItems = js.Any.fromFunction0(GetSubItems), beginGroup = beginGroup, enabled = enabled, imageClassName = imageClassName, imageUrl = imageUrl, name = name, navigateUrl = navigateUrl, parent = parent, target = target, text = text, tooltip = tooltip)
   
     __obj.asInstanceOf[ASPxClientSpreadsheetPopupMenuItem]
   }

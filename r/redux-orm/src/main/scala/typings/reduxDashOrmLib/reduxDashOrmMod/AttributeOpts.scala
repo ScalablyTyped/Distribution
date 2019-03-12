@@ -11,9 +11,9 @@ trait AttributeOpts extends js.Object {
 
 object AttributeOpts {
   @scala.inline
-  def apply(getDefault: js.Function0[_] = null): AttributeOpts = {
+  def apply(getDefault: () => _ = null): AttributeOpts = {
     val __obj = js.Dynamic.literal()
-    if (getDefault != null) __obj.updateDynamic("getDefault")(getDefault)
+    if (getDefault != null) __obj.updateDynamic("getDefault")(js.Any.fromFunction0(getDefault))
     __obj.asInstanceOf[AttributeOpts]
   }
 }

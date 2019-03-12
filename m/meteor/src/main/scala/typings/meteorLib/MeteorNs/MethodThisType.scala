@@ -19,12 +19,12 @@ object MethodThisType {
   @scala.inline
   def apply(
     isSimulation: scala.Boolean,
-    setUserId: js.Function1[java.lang.String, scala.Unit],
-    unblock: js.Function0[scala.Unit],
+    setUserId: java.lang.String => scala.Unit,
+    unblock: () => scala.Unit,
     connection: Connection = null,
     userId: java.lang.String = null
   ): MethodThisType = {
-    val __obj = js.Dynamic.literal(isSimulation = isSimulation, setUserId = setUserId, unblock = unblock)
+    val __obj = js.Dynamic.literal(isSimulation = isSimulation, setUserId = js.Any.fromFunction1(setUserId), unblock = js.Any.fromFunction0(unblock))
     if (connection != null) __obj.updateDynamic("connection")(connection)
     if (userId != null) __obj.updateDynamic("userId")(userId)
     __obj.asInstanceOf[MethodThisType]

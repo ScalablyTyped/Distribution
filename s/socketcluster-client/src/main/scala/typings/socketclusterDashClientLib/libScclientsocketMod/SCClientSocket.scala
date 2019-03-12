@@ -27,7 +27,7 @@ trait SCClientSocket
   def authenticate(
     signedAuthToken: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* authStatus */ socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.AuthStatus, 
       scala.Unit
     ]
@@ -36,7 +36,7 @@ trait SCClientSocket
   def channel(channelName: java.lang.String, options: scDashChannelLib.scDashChannelMod.SCChannelOptions): scDashChannelLib.scDashChannelMod.SCChannel = js.native
   def connect(): scala.Unit = js.native
   def deauthenticate(): scala.Unit = js.native
-  def deauthenticate(callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def deauthenticate(callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def decode(message: js.Any): js.Any = js.native
   def decodeBase64(encodedString: java.lang.String): java.lang.String = js.native
   def destroy(): scala.Unit = js.native
@@ -52,7 +52,7 @@ trait SCClientSocket
   def emit(
     event: java.lang.String,
     data: js.Any,
-    callback: js.Function2[/* err */ nodeLib.Error, /* responseData */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* responseData */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def encode(`object`: js.Any): js.Any = js.native
   def encodeBase64(decodedString: java.lang.String): java.lang.String = js.native
@@ -112,7 +112,7 @@ trait SCClientSocket
   @JSName("on")
   def on_error(
     event: socketclusterDashClientLib.socketclusterDashClientLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_kickOut(
@@ -147,7 +147,7 @@ trait SCClientSocket
   def on_subscribeFail(
     event: socketclusterDashClientLib.socketclusterDashClientLibStrings.subscribeFail,
     listener: js.Function3[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* channelName */ java.lang.String, 
       /* subscriptionOptions */ scDashChannelLib.scDashChannelMod.SCChannelOptions, 
       scala.Unit
@@ -181,7 +181,7 @@ trait SCClientSocket
   def publish(
     channelName: java.lang.String,
     data: js.Any,
-    callback: js.Function2[/* err */ nodeLib.Error, /* ackData */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* ackData */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def reconnect(): scala.Unit = js.native
   def reconnect(code: scala.Double): scala.Unit = js.native

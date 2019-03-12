@@ -38,15 +38,15 @@ object FetchOptions {
   def apply(
     context: js.Object,
     asArray: js.UndefOr[scala.Boolean] = js.undefined,
-    onFailure: js.Function0[scala.Unit] = null,
+    onFailure: () => scala.Unit = null,
     queries: js.Object = null,
-    `then`: js.Function1[/* result */ js.Any, scala.Unit] = null
+    `then`: /* result */ js.Any => scala.Unit = null
   ): FetchOptions = {
     val __obj = js.Dynamic.literal(context = context)
     if (!js.isUndefined(asArray)) __obj.updateDynamic("asArray")(asArray)
-    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
+    if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction0(onFailure))
     if (queries != null) __obj.updateDynamic("queries")(queries)
-    if (`then` != null) __obj.updateDynamic("then")(`then`)
+    if (`then` != null) __obj.updateDynamic("then")(js.Any.fromFunction1(`then`))
     __obj.asInstanceOf[FetchOptions]
   }
 }

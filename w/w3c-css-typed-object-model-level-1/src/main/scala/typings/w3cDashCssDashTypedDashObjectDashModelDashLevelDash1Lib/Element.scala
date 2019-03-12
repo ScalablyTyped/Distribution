@@ -11,8 +11,8 @@ trait Element extends js.Object {
 
 object Element {
   @scala.inline
-  def apply(computedStyleMap: js.Function0[StylePropertyMapReadOnly]): Element = {
-    val __obj = js.Dynamic.literal(computedStyleMap = computedStyleMap)
+  def apply(computedStyleMap: () => StylePropertyMapReadOnly): Element = {
+    val __obj = js.Dynamic.literal(computedStyleMap = js.Any.fromFunction0(computedStyleMap))
   
     __obj.asInstanceOf[Element]
   }

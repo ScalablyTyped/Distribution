@@ -80,8 +80,8 @@ object Options {
     hiddenClass: java.lang.String = null,
     message: java.lang.String = null,
     onClick: js.Function = null,
-    onStart: js.Function1[/* loading */ LoadingObject, scala.Unit] = null,
-    onStop: js.Function1[/* loading */ LoadingObject, scala.Unit] = null,
+    onStart: /* loading */ LoadingObject => scala.Unit = null,
+    onStop: /* loading */ LoadingObject => scala.Unit = null,
     overlay: jqueryDashEasyDashLoadingLib.JQuery = null,
     shownClass: java.lang.String = null,
     start: js.UndefOr[scala.Boolean] = js.undefined,
@@ -93,8 +93,8 @@ object Options {
     if (hiddenClass != null) __obj.updateDynamic("hiddenClass")(hiddenClass)
     if (message != null) __obj.updateDynamic("message")(message)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
-    if (onStop != null) __obj.updateDynamic("onStop")(onStop)
+    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction1(onStart))
+    if (onStop != null) __obj.updateDynamic("onStop")(js.Any.fromFunction1(onStop))
     if (overlay != null) __obj.updateDynamic("overlay")(overlay)
     if (shownClass != null) __obj.updateDynamic("shownClass")(shownClass)
     if (!js.isUndefined(start)) __obj.updateDynamic("start")(start)

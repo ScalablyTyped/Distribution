@@ -24,7 +24,7 @@ trait Dicer
   @JSName("addListener")
   def addListener_drain(event: dicerLib.dicerLibStrings.drain, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def addListener_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_finish(event: dicerLib.dicerLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("addListener")
@@ -57,7 +57,7 @@ trait Dicer
   @JSName("on")
   def on_drain(event: dicerLib.dicerLibStrings.drain, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def on_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_finish(event: dicerLib.dicerLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
@@ -90,7 +90,7 @@ trait Dicer
   @JSName("once")
   def once_drain(event: dicerLib.dicerLibStrings.drain, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def once_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("once")
   def once_finish(event: dicerLib.dicerLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("once")
@@ -123,7 +123,7 @@ trait Dicer
   @JSName("prependListener")
   def prependListener_drain(event: dicerLib.dicerLibStrings.drain, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def prependListener_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_finish(event: dicerLib.dicerLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("prependListener")
@@ -156,7 +156,7 @@ trait Dicer
   @JSName("prependOnceListener")
   def prependOnceListener_drain(event: dicerLib.dicerLibStrings.drain, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def prependOnceListener_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_finish(event: dicerLib.dicerLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -189,7 +189,7 @@ trait Dicer
   @JSName("removeListener")
   def removeListener_drain(event: dicerLib.dicerLibStrings.drain, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def removeListener_error(event: dicerLib.dicerLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_finish(event: dicerLib.dicerLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("removeListener")

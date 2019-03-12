@@ -16,11 +16,11 @@ object Anon_DataTypes {
   @scala.inline
   def apply(
     dataTypes: java.lang.String | js.Array[java.lang.String],
-    drag: js.Function1[stdLib.Event, scala.Unit],
-    dragEnd: js.Function1[stdLib.Event, scala.Unit],
-    dragStart: js.Function2[stdLib.Event, js.Object, scala.Unit]
+    drag: stdLib.Event => scala.Unit,
+    dragEnd: stdLib.Event => scala.Unit,
+    dragStart: (stdLib.Event, js.Object) => scala.Unit
   ): Anon_DataTypes = {
-    val __obj = js.Dynamic.literal(dataTypes = dataTypes.asInstanceOf[js.Any], drag = drag, dragEnd = dragEnd, dragStart = dragStart)
+    val __obj = js.Dynamic.literal(dataTypes = dataTypes.asInstanceOf[js.Any], drag = js.Any.fromFunction1(drag), dragEnd = js.Any.fromFunction1(dragEnd), dragStart = js.Any.fromFunction2(dragStart))
   
     __obj.asInstanceOf[Anon_DataTypes]
   }

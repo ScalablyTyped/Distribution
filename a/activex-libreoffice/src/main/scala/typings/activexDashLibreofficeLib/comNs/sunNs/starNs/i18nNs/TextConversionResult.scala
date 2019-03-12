@@ -15,14 +15,14 @@ trait TextConversionResult extends js.Object {
     *
     * If there is no convertible word found in the text, **startPos** and **endPos** for {@link Boundary} equal 0.
     */
-  var Boundary: Boundary
+  var Boundary: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.Boundary
   /** A list of replacement candidates for the first convertible word found in the given text. */
-  var Candidates: activexDashInteropLib.SafeArray[java.lang.String]
+  var Candidates: stdLib.SafeArray[java.lang.String]
 }
 
 object TextConversionResult {
   @scala.inline
-  def apply(Boundary: Boundary, Candidates: activexDashInteropLib.SafeArray[java.lang.String]): TextConversionResult = {
+  def apply(Boundary: Boundary, Candidates: stdLib.SafeArray[java.lang.String]): TextConversionResult = {
     val __obj = js.Dynamic.literal(Boundary = Boundary, Candidates = Candidates)
   
     __obj.asInstanceOf[TextConversionResult]

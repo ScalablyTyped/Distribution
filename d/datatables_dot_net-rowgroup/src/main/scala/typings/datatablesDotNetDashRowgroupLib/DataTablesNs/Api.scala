@@ -11,8 +11,8 @@ trait Api extends js.Object {
 
 object Api {
   @scala.inline
-  def apply(rowGroup: js.Function0[RowGroupApi]): Api = {
-    val __obj = js.Dynamic.literal(rowGroup = rowGroup)
+  def apply(rowGroup: () => RowGroupApi): Api = {
+    val __obj = js.Dynamic.literal(rowGroup = js.Any.fromFunction0(rowGroup))
   
     __obj.asInstanceOf[Api]
   }

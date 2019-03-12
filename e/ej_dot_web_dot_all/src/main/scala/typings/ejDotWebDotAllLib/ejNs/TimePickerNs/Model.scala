@@ -140,21 +140,21 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    beforeChange: js.Function1[/* e */ BeforeChangeEventArgs, scala.Unit] = null,
-    beforeOpen: js.Function1[/* e */ BeforeOpenEventArgs, scala.Unit] = null,
-    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
-    close: js.Function1[/* e */ CloseEventArgs, scala.Unit] = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    beforeChange: /* e */ BeforeChangeEventArgs => scala.Unit = null,
+    beforeOpen: /* e */ BeforeOpenEventArgs => scala.Unit = null,
+    change: /* e */ ChangeEventArgs => scala.Unit = null,
+    close: /* e */ CloseEventArgs => scala.Unit = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     disableTimeRanges: js.Any = null,
     enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
     enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
     enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
     enableStrictMode: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
-    focusIn: js.Function1[/* e */ FocusInEventArgs, scala.Unit] = null,
-    focusOut: js.Function1[/* e */ FocusOutEventArgs, scala.Unit] = null,
+    focusIn: /* e */ FocusInEventArgs => scala.Unit = null,
+    focusOut: /* e */ FocusOutEventArgs => scala.Unit = null,
     height: java.lang.String | scala.Double = null,
     hourInterval: scala.Int | scala.Double = null,
     htmlAttributes: js.Any = null,
@@ -163,12 +163,12 @@ object Model {
     maxTime: java.lang.String = null,
     minTime: java.lang.String = null,
     minutesInterval: scala.Int | scala.Double = null,
-    open: js.Function1[/* e */ OpenEventArgs, scala.Unit] = null,
+    open: /* e */ OpenEventArgs => scala.Unit = null,
     popupHeight: java.lang.String | scala.Double = null,
     popupWidth: java.lang.String | scala.Double = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     secondsInterval: scala.Int | scala.Double = null,
-    select: js.Function1[/* e */ SelectEventArgs, scala.Unit] = null,
+    select: /* e */ SelectEventArgs => scala.Unit = null,
     showPopupButton: js.UndefOr[scala.Boolean] = js.undefined,
     showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
     timeFormat: java.lang.String = null,
@@ -177,21 +177,21 @@ object Model {
     width: java.lang.String | scala.Double = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (beforeChange != null) __obj.updateDynamic("beforeChange")(beforeChange)
-    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen)
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (beforeChange != null) __obj.updateDynamic("beforeChange")(js.Any.fromFunction1(beforeChange))
+    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(js.Any.fromFunction1(beforeOpen))
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (disableTimeRanges != null) __obj.updateDynamic("disableTimeRanges")(disableTimeRanges)
     if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
     if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
     if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
     if (!js.isUndefined(enableStrictMode)) __obj.updateDynamic("enableStrictMode")(enableStrictMode)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (focusIn != null) __obj.updateDynamic("focusIn")(focusIn)
-    if (focusOut != null) __obj.updateDynamic("focusOut")(focusOut)
+    if (focusIn != null) __obj.updateDynamic("focusIn")(js.Any.fromFunction1(focusIn))
+    if (focusOut != null) __obj.updateDynamic("focusOut")(js.Any.fromFunction1(focusOut))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hourInterval != null) __obj.updateDynamic("hourInterval")(hourInterval.asInstanceOf[js.Any])
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
@@ -200,12 +200,12 @@ object Model {
     if (maxTime != null) __obj.updateDynamic("maxTime")(maxTime)
     if (minTime != null) __obj.updateDynamic("minTime")(minTime)
     if (minutesInterval != null) __obj.updateDynamic("minutesInterval")(minutesInterval.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (popupHeight != null) __obj.updateDynamic("popupHeight")(popupHeight.asInstanceOf[js.Any])
     if (popupWidth != null) __obj.updateDynamic("popupWidth")(popupWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (secondsInterval != null) __obj.updateDynamic("secondsInterval")(secondsInterval.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (!js.isUndefined(showPopupButton)) __obj.updateDynamic("showPopupButton")(showPopupButton)
     if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
     if (timeFormat != null) __obj.updateDynamic("timeFormat")(timeFormat)

@@ -37,12 +37,12 @@ object XPane {
     Canvas: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas,
     ResourceId: XResourceId,
     Window: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
-    getCanvas: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas],
-    getResourceId: js.Function0[XResourceId],
-    getWindow: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow],
-    isAnchorOnly: js.Function0[scala.Boolean]
+    getCanvas: () => activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas,
+    getResourceId: () => XResourceId,
+    getWindow: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    isAnchorOnly: () => scala.Boolean
   ): XPane = {
-    val __obj = js.Dynamic.literal(Canvas = Canvas, ResourceId = ResourceId, Window = Window, getCanvas = getCanvas, getResourceId = getResourceId, getWindow = getWindow, isAnchorOnly = isAnchorOnly)
+    val __obj = js.Dynamic.literal(Canvas = Canvas, ResourceId = ResourceId, Window = Window, getCanvas = js.Any.fromFunction0(getCanvas), getResourceId = js.Any.fromFunction0(getResourceId), getWindow = js.Any.fromFunction0(getWindow), isAnchorOnly = js.Any.fromFunction0(isAnchorOnly))
   
     __obj.asInstanceOf[XPane]
   }

@@ -75,28 +75,13 @@ trait InvitationsResource extends js.Object {
 object InvitationsResource {
   @scala.inline
   def apply(
-    accept: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    create: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Invitation]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Invitation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListInvitationsResponse]
-    ]
+    accept: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    create: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[Invitation],
+    delete: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId => gapiDotClientLib.gapiNs.clientNs.Request[Invitation],
+    list: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[ListInvitationsResponse]
   ): InvitationsResource = {
-    val __obj = js.Dynamic.literal(accept = accept, create = create, delete = delete, get = get, list = list)
+    val __obj = js.Dynamic.literal(accept = js.Any.fromFunction1(accept), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[InvitationsResource]
   }

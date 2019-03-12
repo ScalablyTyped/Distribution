@@ -14,18 +14,18 @@ object ^ extends js.Object {
     datasets: js.Array[plottableLib.buildSrcCoreDatasetMod.Dataset],
     keyAccessor: plottableLib.buildSrcCoreInterfacesMod.IAccessor[_],
     valueAccessor: plottableLib.buildSrcCoreInterfacesMod.IAccessor[scala.Double]
-  ): plottableLib.buildSrcUtilsStackingUtilsMod.StackingResult = js.native
+  ): StackingResult = js.native
   def stack(
     datasets: js.Array[plottableLib.buildSrcCoreDatasetMod.Dataset],
     keyAccessor: plottableLib.buildSrcCoreInterfacesMod.IAccessor[_],
     valueAccessor: plottableLib.buildSrcCoreInterfacesMod.IAccessor[scala.Double],
-    stackingOrder: plottableLib.buildSrcUtilsStackingUtilsMod.IStackingOrder
-  ): plottableLib.buildSrcUtilsStackingUtilsMod.StackingResult = js.native
+    stackingOrder: IStackingOrder
+  ): StackingResult = js.native
   def stackedExtent(
-    stackingResult: plottableLib.buildSrcUtilsStackingUtilsMod.StackingResult,
+    stackingResult: StackingResult,
     keyAccessor: plottableLib.buildSrcCoreInterfacesMod.IAccessor[_],
     filter: plottableLib.buildSrcCoreInterfacesMod.IAccessor[scala.Boolean]
   ): js.Array[scala.Double] = js.native
-  def stackedExtents[D](stackingResult: plottableLib.buildSrcUtilsStackingUtilsMod.GenericStackingResult[D]): plottableLib.Anon_MaximumExtents[D] = js.native
+  def stackedExtents[D](stackingResult: GenericStackingResult[D]): plottableLib.Anon_MaximumExtents[D] = js.native
 }
 

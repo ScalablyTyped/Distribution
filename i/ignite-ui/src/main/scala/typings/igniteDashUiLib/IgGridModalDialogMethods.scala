@@ -30,17 +30,17 @@ trait IgGridModalDialogMethods extends js.Object {
 object IgGridModalDialogMethods {
   @scala.inline
   def apply(
-    changeGlobalLanguage: js.Function0[scala.Unit],
-    changeGlobalRegional: js.Function0[scala.Unit],
-    changeLocale: js.Function0[scala.Unit],
-    closeModalDialog: js.Function2[js.Object, js.Object, scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    getCaptionButtonContainer: js.Function0[scala.Unit],
-    getContent: js.Function0[scala.Unit],
-    getFooter: js.Function0[scala.Unit],
-    openModalDialog: js.Function0[scala.Unit]
+    changeGlobalLanguage: () => scala.Unit,
+    changeGlobalRegional: () => scala.Unit,
+    changeLocale: () => scala.Unit,
+    closeModalDialog: (js.Object, js.Object) => scala.Unit,
+    destroy: () => scala.Unit,
+    getCaptionButtonContainer: () => scala.Unit,
+    getContent: () => scala.Unit,
+    getFooter: () => scala.Unit,
+    openModalDialog: () => scala.Unit
   ): IgGridModalDialogMethods = {
-    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, closeModalDialog = closeModalDialog, destroy = destroy, getCaptionButtonContainer = getCaptionButtonContainer, getContent = getContent, getFooter = getFooter, openModalDialog = openModalDialog)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = js.Any.fromFunction0(changeGlobalLanguage), changeGlobalRegional = js.Any.fromFunction0(changeGlobalRegional), changeLocale = js.Any.fromFunction0(changeLocale), closeModalDialog = js.Any.fromFunction2(closeModalDialog), destroy = js.Any.fromFunction0(destroy), getCaptionButtonContainer = js.Any.fromFunction0(getCaptionButtonContainer), getContent = js.Any.fromFunction0(getContent), getFooter = js.Any.fromFunction0(getFooter), openModalDialog = js.Any.fromFunction0(openModalDialog))
   
     __obj.asInstanceOf[IgGridModalDialogMethods]
   }

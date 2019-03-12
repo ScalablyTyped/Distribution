@@ -39,26 +39,17 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    rowToMapObject: js.Function2[
-      Row, 
-      heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, 
-      heremapsLib.HNs.mapNs.Object
-    ],
+    rowToMapObject: (Row, heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom) => heremapsLib.HNs.mapNs.Object,
     clustering: Clustering = null,
     dataDomains: DataDomains = null,
-    dataToRows: js.Function1[/* data */ heredatalensLib.HNs.datalensNs.ServiceNs.Data, js.Array[Row]] = null,
-    rowToStyle: js.Function3[
-      /* row */ Row, 
-      /* z */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, 
-      /* styleState */ StyleState, 
-      ObjectStyleOptions
-    ] = null
+    dataToRows: /* data */ heredatalensLib.HNs.datalensNs.ServiceNs.Data => js.Array[Row] = null,
+    rowToStyle: (/* row */ Row, /* z */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, /* styleState */ StyleState) => ObjectStyleOptions = null
   ): Options = {
-    val __obj = js.Dynamic.literal(rowToMapObject = rowToMapObject)
+    val __obj = js.Dynamic.literal(rowToMapObject = js.Any.fromFunction2(rowToMapObject))
     if (clustering != null) __obj.updateDynamic("clustering")(clustering)
     if (dataDomains != null) __obj.updateDynamic("dataDomains")(dataDomains)
-    if (dataToRows != null) __obj.updateDynamic("dataToRows")(dataToRows)
-    if (rowToStyle != null) __obj.updateDynamic("rowToStyle")(rowToStyle)
+    if (dataToRows != null) __obj.updateDynamic("dataToRows")(js.Any.fromFunction1(dataToRows))
+    if (rowToStyle != null) __obj.updateDynamic("rowToStyle")(js.Any.fromFunction3(rowToStyle))
     __obj.asInstanceOf[Options]
   }
 }

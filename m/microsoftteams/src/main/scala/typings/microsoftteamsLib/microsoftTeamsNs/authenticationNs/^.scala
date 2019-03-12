@@ -12,17 +12,17 @@ object ^ extends js.Object {
     * Initiates an authentication request, which opens a new window with the specified settings.
     * @param authenticateParameters A set of values that configure the authentication pop-up.
     */
-  def authenticate(authenticateParameters: microsoftteamsLib.microsoftTeamsNs.authenticationNs.AuthenticateParameters): scala.Unit = js.native
+  def authenticate(authenticateParameters: AuthenticateParameters): scala.Unit = js.native
   /**
     * Requests an Azure AD token to be issued on behalf of the app. The token is acquired from the cache
     * if it is not expired. Otherwise a request is sent to Azure AD to obtain a new token.
     * @param authTokenRequest A set of values that configure the token request.
     */
-  def getAuthToken(authTokenRequest: microsoftteamsLib.microsoftTeamsNs.authenticationNs.AuthTokenRequest): scala.Unit = js.native
+  def getAuthToken(authTokenRequest: AuthTokenRequest): scala.Unit = js.native
   /**
     * Requests the decoded Azure AD user identity on behalf of the app.
     */
-  def getUser(userRequest: microsoftteamsLib.microsoftTeamsNs.authenticationNs.UserRequest): scala.Unit = js.native
+  def getUser(userRequest: UserRequest): scala.Unit = js.native
   /**
     * Notifies the frame that initiated this authentication request that the request failed.
     * This function is usable only on the authentication window.

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SignerRole
   extends xmlDashCoreLib.xmlDashCoreMod.XmlObject {
-  var CertifiedRoles: CertifiedRoles = js.native
-  var ClaimedRoles: ClaimedRoles = js.native
+  var CertifiedRoles: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.CertifiedRoles = js.native
+  var ClaimedRoles: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.ClaimedRoles = js.native
 }
 

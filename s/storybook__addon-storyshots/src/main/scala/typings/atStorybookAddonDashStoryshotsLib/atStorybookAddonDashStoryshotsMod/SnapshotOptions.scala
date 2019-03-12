@@ -11,9 +11,9 @@ trait SnapshotOptions extends js.Object {
 
 object SnapshotOptions {
   @scala.inline
-  def apply(createNodeMock: js.Function1[/* element */ js.Any, _] = null): SnapshotOptions = {
+  def apply(createNodeMock: /* element */ js.Any => _ = null): SnapshotOptions = {
     val __obj = js.Dynamic.literal()
-    if (createNodeMock != null) __obj.updateDynamic("createNodeMock")(createNodeMock)
+    if (createNodeMock != null) __obj.updateDynamic("createNodeMock")(js.Any.fromFunction1(createNodeMock))
     __obj.asInstanceOf[SnapshotOptions]
   }
 }

@@ -14,3 +14,16 @@ trait SearchBoxProvided extends js.Object {
   def refine(args: js.Any*): js.Any
 }
 
+object SearchBoxProvided {
+  @scala.inline
+  def apply(
+    currentRefinement: java.lang.String,
+    isSearchStalled: scala.Boolean,
+    refine: /* repeated */ js.Any => js.Any
+  ): SearchBoxProvided = {
+    val __obj = js.Dynamic.literal(currentRefinement = currentRefinement, isSearchStalled = isSearchStalled, refine = js.Any.fromFunction1(refine))
+  
+    __obj.asInstanceOf[SearchBoxProvided]
+  }
+}
+

@@ -27,7 +27,7 @@ object namespaced extends js.Object {
     port: scala.Double,
     host: java.lang.String,
     message: js.Any,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   /**
     * sends a single message, waits for a single response message from the server and closes the connection right after.
@@ -42,7 +42,7 @@ object namespaced extends js.Object {
     port: scala.Double,
     host: java.lang.String,
     message: js.Any,
-    callback: js.Function2[/* err */ nodeLib.Error, /* message */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* message */ js.Any, scala.Unit]
   ): scala.Unit = js.native
 }
 

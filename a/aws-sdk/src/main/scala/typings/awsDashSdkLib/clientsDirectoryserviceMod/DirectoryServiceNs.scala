@@ -26,11 +26,11 @@ object DirectoryServiceNs extends js.Object {
     /**
       * Identifier (ID) of the directory to which to add the address block.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * IP address blocks, using CIDR format, of the traffic to route. This is often the IP address block of the DNS server used for your on-premises domain.
       */
-    var IpRoutes: IpRoutes
+    var IpRoutes: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.IpRoutes
     /**
       * If set to true, updates the inbound and outbound rules of the security group that has the description: "AWS created security group for directory ID directory controllers." Following are the new rules:  Inbound:   Type: Custom UDP Rule, Protocol: UDP, Range: 88, Source: 0.0.0.0/0   Type: Custom UDP Rule, Protocol: UDP, Range: 123, Source: 0.0.0.0/0   Type: Custom UDP Rule, Protocol: UDP, Range: 138, Source: 0.0.0.0/0   Type: Custom UDP Rule, Protocol: UDP, Range: 389, Source: 0.0.0.0/0   Type: Custom UDP Rule, Protocol: UDP, Range: 464, Source: 0.0.0.0/0   Type: Custom UDP Rule, Protocol: UDP, Range: 445, Source: 0.0.0.0/0   Type: Custom TCP Rule, Protocol: TCP, Range: 88, Source: 0.0.0.0/0   Type: Custom TCP Rule, Protocol: TCP, Range: 135, Source: 0.0.0.0/0   Type: Custom TCP Rule, Protocol: TCP, Range: 445, Source: 0.0.0.0/0   Type: Custom TCP Rule, Protocol: TCP, Range: 464, Source: 0.0.0.0/0   Type: Custom TCP Rule, Protocol: TCP, Range: 636, Source: 0.0.0.0/0   Type: Custom TCP Rule, Protocol: TCP, Range: 1024-65535, Source: 0.0.0.0/0   Type: Custom TCP Rule, Protocol: TCP, Range: 3268-33269, Source: 0.0.0.0/0   Type: DNS (UDP), Protocol: UDP, Range: 53, Source: 0.0.0.0/0   Type: DNS (TCP), Protocol: TCP, Range: 53, Source: 0.0.0.0/0   Type: LDAP, Protocol: TCP, Range: 389, Source: 0.0.0.0/0   Type: All ICMP, Protocol: All, Range: N/A, Source: 0.0.0.0/0    Outbound:   Type: All traffic, Protocol: All, Range: All, Destination: 0.0.0.0/0   These security rules impact an internal network interface that is not exposed publicly.
       */
@@ -43,11 +43,11 @@ object DirectoryServiceNs extends js.Object {
     /**
       * Identifier (ID) for the directory to which to add the tag.
       */
-    var ResourceId: ResourceId
+    var ResourceId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.ResourceId
     /**
       * The tags to be assigned to the directory.
       */
-    var Tags: Tags
+    var Tags: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.Tags
   }
   
   trait AddTagsToResourceResult extends js.Object
@@ -67,11 +67,11 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The identifier of the directory whose schema extension will be canceled.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * The identifier of the schema extension that will be canceled.
       */
-    var SchemaExtensionId: SchemaExtensionId
+    var SchemaExtensionId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.SchemaExtensionId
   }
   
   trait CancelSchemaExtensionResult extends js.Object
@@ -159,7 +159,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The identifier of the directory for which to create the alias.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
   }
   
   trait CreateAliasResult extends js.Object {
@@ -181,11 +181,11 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The name of the computer account.
       */
-    var ComputerName: ComputerName
+    var ComputerName: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.ComputerName
     /**
       * The identifier of the directory in which to create the computer account.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * The fully-qualified distinguished name of the organizational unit to place the computer account in.
       */
@@ -207,15 +207,15 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The directory ID of the AWS directory for which you are creating the conditional forwarder.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * The IP addresses of the remote DNS server associated with RemoteDomainName.
       */
-    var DnsIpAddrs: DnsIpAddrs
+    var DnsIpAddrs: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DnsIpAddrs
     /**
       * The fully qualified domain name (FQDN) of the remote domain with which you will set up a trust relationship.
       */
-    var RemoteDomainName: RemoteDomainName
+    var RemoteDomainName: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.RemoteDomainName
   }
   
   trait CreateConditionalForwarderResult extends js.Object
@@ -232,7 +232,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The password for the directory administrator. The directory creation process creates a directory administrator account with the user name Administrator and this password.
       */
-    var Password: Password
+    var Password: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.Password
     /**
       * The short name of the directory, such as CORP.
       */
@@ -262,11 +262,11 @@ object DirectoryServiceNs extends js.Object {
     /**
       * Identifier (ID) of the directory to which you want to subscribe and receive real-time logs to your specified CloudWatch log group.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * The name of the CloudWatch log group where the real-time domain controller logs are forwarded.
       */
-    var LogGroupName: LogGroupName
+    var LogGroupName: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.LogGroupName
   }
   
   trait CreateLogSubscriptionResult extends js.Object
@@ -287,7 +287,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The password for the default administrative user named Admin.
       */
-    var Password: Password
+    var Password: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.Password
     /**
       * The NetBIOS name for your domain. A short identifier for your domain, such as CORP. If you don't specify a NetBIOS name, it will default to the first part of your directory DNS. For example, CORP for the directory DNS corp.example.com. 
       */
@@ -313,7 +313,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The identifier of the directory of which to take a snapshot.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * The descriptive name to apply to the snapshot.
       */
@@ -335,11 +335,11 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The Directory ID of the AWS Managed Microsoft AD directory for which to establish the trust relationship.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * The Fully Qualified Domain Name (FQDN) of the external domain for which to create the trust relationship.
       */
-    var RemoteDomainName: RemoteDomainName
+    var RemoteDomainName: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.RemoteDomainName
     /**
       * Optional parameter to enable selective authentication for the trust.
       */
@@ -347,11 +347,11 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The direction of the trust relationship.
       */
-    var TrustDirection: TrustDirection
+    var TrustDirection: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.TrustDirection
     /**
       * The trust password. The must be the same password that was used when creating the trust relationship on the external domain.
       */
-    var TrustPassword: TrustPassword
+    var TrustPassword: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.TrustPassword
     /**
       * The trust relationship type. Forest is the default.
       */
@@ -369,11 +369,11 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The directory ID for which you are deleting the conditional forwarder.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * The fully qualified domain name (FQDN) of the remote domain with which you are deleting the conditional forwarder.
       */
-    var RemoteDomainName: RemoteDomainName
+    var RemoteDomainName: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.RemoteDomainName
   }
   
   trait DeleteConditionalForwarderResult extends js.Object
@@ -382,7 +382,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The identifier of the directory to delete.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
   }
   
   trait DeleteDirectoryResult extends js.Object {
@@ -396,7 +396,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * Identifier (ID) of the directory whose log subscription you want to delete.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
   }
   
   trait DeleteLogSubscriptionResult extends js.Object
@@ -405,7 +405,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The identifier of the directory snapshot to be deleted.
       */
-    var SnapshotId: SnapshotId
+    var SnapshotId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.SnapshotId
   }
   
   trait DeleteSnapshotResult extends js.Object {
@@ -423,7 +423,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The Trust ID of the trust relationship to be deleted.
       */
-    var TrustId: TrustId
+    var TrustId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.TrustId
   }
   
   trait DeleteTrustResult extends js.Object {
@@ -437,11 +437,11 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The Directory ID to remove as a publisher. This directory will no longer send messages to the specified SNS topic.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * The name of the SNS topic from which to remove the directory as a publisher.
       */
-    var TopicName: TopicName
+    var TopicName: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.TopicName
   }
   
   trait DeregisterEventTopicResult extends js.Object
@@ -450,7 +450,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The directory ID for which to get the list of associated conditional forwarders.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * The fully qualified domain names (FQDN) of the remote domains for which to get the list of associated conditional forwarders. If this member is null, all conditional forwarders are returned.
       */
@@ -494,7 +494,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * Identifier of the directory for which to retrieve the domain controller information.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * A list of identifiers for the domain controllers whose information will be provided.
       */
@@ -640,11 +640,11 @@ object DirectoryServiceNs extends js.Object {
     /**
       * A list of subnet identifiers in the VPC in which the AD Connector is created.
       */
-    var SubnetIds: SubnetIds
+    var SubnetIds: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.SubnetIds
     /**
       * The identifier of the VPC in which the AD Connector is created.
       */
-    var VpcId: VpcId
+    var VpcId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.VpcId
   }
   
   trait DirectoryConnectSettingsDescription extends js.Object {
@@ -816,11 +816,11 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The identifiers of the subnets for the directory servers. The two subnets must be in different Availability Zones. AWS Directory Service creates a directory server and a DNS server in each of these subnets.
       */
-    var SubnetIds: SubnetIds
+    var SubnetIds: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.SubnetIds
     /**
       * The identifier of the VPC in which to create the directory.
       */
-    var VpcId: VpcId
+    var VpcId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.VpcId
   }
   
   trait DirectoryVpcSettingsDescription extends js.Object {
@@ -846,7 +846,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The identifier of the directory for which to disable MFA.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
   }
   
   trait DisableRadiusResult extends js.Object
@@ -855,7 +855,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The identifier of the directory for which to disable single-sign on.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * The password of an alternate account to use to disable single-sign on. This is only used for AD Connector directories. For more information, see the UserName parameter.
       */
@@ -915,11 +915,11 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The identifier of the directory for which to enable MFA.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * A RadiusSettings object that contains information about the RADIUS server.
       */
-    var RadiusSettings: RadiusSettings
+    var RadiusSettings: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.RadiusSettings
   }
   
   trait EnableRadiusResult extends js.Object
@@ -928,7 +928,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The identifier of the directory for which to enable single-sign on.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * The password of an alternate account to use to enable single-sign on. This is only used for AD Connector directories. For more information, see the UserName parameter.
       */
@@ -977,7 +977,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * Contains the identifier of the directory to obtain the limits for.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
   }
   
   trait GetSnapshotLimitsResult extends js.Object {
@@ -1029,7 +1029,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * Identifier (ID) of the directory for which you want to retrieve the IP addresses.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * Maximum number of items to return. If this value is zero, the maximum number of items is specified by the limitations of the operation.
       */
@@ -1081,7 +1081,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The identifier of the directory from which to retrieve the schema extension information.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * The maximum number of items to return.
       */
@@ -1115,7 +1115,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * Identifier (ID) of the directory for which you want to retrieve tags.
       */
-    var ResourceId: ResourceId
+    var ResourceId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.ResourceId
   }
   
   trait ListTagsForResourceResult extends js.Object {
@@ -1210,11 +1210,11 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The Directory ID that will publish status messages to the SNS topic.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * The SNS topic name to which the directory will publish status messages. This SNS topic must be in the same region as the specified Directory ID.
       */
-    var TopicName: TopicName
+    var TopicName: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.TopicName
   }
   
   trait RegisterEventTopicResult extends js.Object
@@ -1237,11 +1237,11 @@ object DirectoryServiceNs extends js.Object {
     /**
       * IP address blocks that you want to remove.
       */
-    var CidrIps: CidrIps
+    var CidrIps: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.CidrIps
     /**
       * Identifier (ID) of the directory from which you want to remove the IP addresses.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
   }
   
   trait RemoveIpRoutesResult extends js.Object
@@ -1250,11 +1250,11 @@ object DirectoryServiceNs extends js.Object {
     /**
       * Identifier (ID) of the directory from which to remove the tag.
       */
-    var ResourceId: ResourceId
+    var ResourceId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.ResourceId
     /**
       * The tag key (name) of the tag to be removed.
       */
-    var TagKeys: TagKeys
+    var TagKeys: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.TagKeys
   }
   
   trait RemoveTagsFromResourceResult extends js.Object
@@ -1263,7 +1263,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * Identifier of the AWS Managed Microsoft AD or Simple AD directory in which the user resides.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * The new password that will be reset.
       */
@@ -1280,7 +1280,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The identifier of the snapshot to restore from.
       */
-    var SnapshotId: SnapshotId
+    var SnapshotId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.SnapshotId
   }
   
   trait RestoreFromSnapshotResult extends js.Object
@@ -1320,11 +1320,11 @@ object DirectoryServiceNs extends js.Object {
     /**
       * Identifier of the AWS Managed Microsoft AD directory that you want to share with other AWS accounts.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * The method used when sharing a directory to determine whether the directory should be shared within your AWS organization (ORGANIZATIONS) or with any AWS account by sending a directory sharing request (HANDSHAKE).
       */
-    var ShareMethod: ShareMethod
+    var ShareMethod: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.ShareMethod
     /**
       * A directory share request that is sent by the directory owner to the directory consumer. The request includes a typed message to help the directory consumer administrator determine whether to approve or reject the share invitation.
       */
@@ -1332,7 +1332,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * Identifier for the directory consumer account with whom the directory is to be shared.
       */
-    var ShareTarget: ShareTarget
+    var ShareTarget: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.ShareTarget
   }
   
   trait ShareDirectoryResult extends js.Object {
@@ -1438,19 +1438,19 @@ object DirectoryServiceNs extends js.Object {
     /**
       * If true, creates a snapshot of the directory before applying the schema extension.
       */
-    var CreateSnapshotBeforeSchemaExtension: CreateSnapshotBeforeSchemaExtension
+    var CreateSnapshotBeforeSchemaExtension: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.CreateSnapshotBeforeSchemaExtension
     /**
       * A description of the schema extension.
       */
-    var Description: Description
+    var Description: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.Description
     /**
       * The identifier of the directory for which the schema extension will be applied to.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * The LDIF file represented as a string. To construct the LdifContent string, precede each line as it would be formatted in an ldif file with \n. See the example request below for more details. The file size can be no larger than 1MB.
       */
-    var LdifContent: LdifContent
+    var LdifContent: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.LdifContent
   }
   
   trait StartSchemaExtensionResult extends js.Object {
@@ -2671,11 +2671,11 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The identifier of the AWS Managed Microsoft AD directory that you want to stop sharing.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * Identifier for the directory consumer account with whom the directory has to be unshared.
       */
-    var UnshareTarget: UnshareTarget
+    var UnshareTarget: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.UnshareTarget
   }
   
   trait UnshareDirectoryResult extends js.Object {
@@ -2700,15 +2700,15 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The directory ID of the AWS directory for which to update the conditional forwarder.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * The updated IP addresses of the remote DNS server associated with the conditional forwarder.
       */
-    var DnsIpAddrs: DnsIpAddrs
+    var DnsIpAddrs: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DnsIpAddrs
     /**
       * The fully qualified domain name (FQDN) of the remote domain with which you will set up a trust relationship.
       */
-    var RemoteDomainName: RemoteDomainName
+    var RemoteDomainName: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.RemoteDomainName
   }
   
   trait UpdateConditionalForwarderResult extends js.Object
@@ -2721,7 +2721,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * Identifier of the directory to which the domain controllers will be added or removed.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
   }
   
   trait UpdateNumberOfDomainControllersResult extends js.Object
@@ -2730,11 +2730,11 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The identifier of the directory for which to update the RADIUS server information.
       */
-    var DirectoryId: DirectoryId
+    var DirectoryId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.DirectoryId
     /**
       * A RadiusSettings object that contains information about the RADIUS server.
       */
-    var RadiusSettings: RadiusSettings
+    var RadiusSettings: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.RadiusSettings
   }
   
   trait UpdateRadiusResult extends js.Object
@@ -2747,7 +2747,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * Identifier of the trust relationship.
       */
-    var TrustId: TrustId
+    var TrustId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.TrustId
   }
   
   trait UpdateTrustResult extends js.Object {
@@ -2762,7 +2762,7 @@ object DirectoryServiceNs extends js.Object {
     /**
       * The unique Trust ID of the trust relationship to verify.
       */
-    var TrustId: TrustId
+    var TrustId: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.TrustId
   }
   
   trait VerifyTrustResult extends js.Object {

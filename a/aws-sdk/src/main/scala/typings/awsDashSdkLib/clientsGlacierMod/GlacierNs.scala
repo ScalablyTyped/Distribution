@@ -555,7 +555,7 @@ object GlacierNs extends js.Object {
     /**
       * Type of grantee
       */
-    var Type: Type
+    var Type: awsDashSdkLib.clientsGlacierMod.GlacierNs.Type
     /**
       * URI of the grantee group.
       */

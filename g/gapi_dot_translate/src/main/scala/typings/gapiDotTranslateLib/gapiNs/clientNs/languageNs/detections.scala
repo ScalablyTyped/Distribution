@@ -15,12 +15,9 @@ trait detections extends js.Object {
 object detections {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotTranslateLib.Anon_Fields, 
-      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotTranslateLib.GoogleApiTranslateDetectionListResponse]
-    ]
+    list: gapiDotTranslateLib.Anon_Fields => gapiLib.gapiNs.clientNs.HttpRequest[gapiDotTranslateLib.GoogleApiTranslateDetectionListResponse]
   ): detections = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[detections]
   }

@@ -41,19 +41,19 @@ object XLayerManager {
   def apply(
     Count: scala.Double,
     ElementType: activexDashLibreofficeLib.`type`,
-    acquire: js.Function0[scala.Unit],
-    attachShapeToLayer: js.Function2[XShape, XLayer, scala.Unit],
-    getByIndex: js.Function1[scala.Double, js.Any],
-    getCount: js.Function0[scala.Double],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    getLayerForShape: js.Function1[XShape, XLayer],
-    hasElements: js.Function0[scala.Boolean],
-    insertNewByIndex: js.Function1[scala.Double, XLayer],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    remove: js.Function1[XLayer, scala.Unit]
+    acquire: () => scala.Unit,
+    attachShapeToLayer: (XShape, XLayer) => scala.Unit,
+    getByIndex: scala.Double => js.Any,
+    getCount: () => scala.Double,
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    getLayerForShape: XShape => XLayer,
+    hasElements: () => scala.Boolean,
+    insertNewByIndex: scala.Double => XLayer,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    remove: XLayer => scala.Unit
   ): XLayerManager = {
-    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, acquire = acquire, attachShapeToLayer = attachShapeToLayer, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, getLayerForShape = getLayerForShape, hasElements = hasElements, insertNewByIndex = insertNewByIndex, queryInterface = queryInterface, release = release, remove = remove)
+    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, acquire = js.Any.fromFunction0(acquire), attachShapeToLayer = js.Any.fromFunction2(attachShapeToLayer), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), getLayerForShape = js.Any.fromFunction1(getLayerForShape), hasElements = js.Any.fromFunction0(hasElements), insertNewByIndex = js.Any.fromFunction1(insertNewByIndex), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), remove = js.Any.fromFunction1(remove))
   
     __obj.asInstanceOf[XLayerManager]
   }

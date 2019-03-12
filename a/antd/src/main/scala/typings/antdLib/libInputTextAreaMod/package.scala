@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libInputTextAreaMod {
-  type HTMLTextareaProps = reactLib.reactMod.ReactNs.TextareaHTMLAttributes[reactLib.HTMLTextAreaElement]
+  type HTMLTextareaProps = reactLib.reactMod.ReactNs.TextareaHTMLAttributes[stdLib.HTMLTextAreaElement]
 }

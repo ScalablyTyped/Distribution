@@ -34,31 +34,31 @@ trait Color extends js.Object {
 object Color {
   @scala.inline
   def apply(
-    copy: js.Function0[Color],
-    distance: js.Function1[Color, scala.Double],
-    equals: js.Function1[Color, scala.Boolean],
-    getAlpha: js.Function0[scala.Double],
-    getCMYK: js.Function0[CMYK],
-    getChannels: js.Function0[jqueryDotColorpickerLib.Anon_AB],
-    getHSL: js.Function0[HSL],
-    getHSV: js.Function0[HSV],
-    getLAB: js.Function0[LAB],
-    getRGB: js.Function0[RGB],
-    getSpaces: js.Function0[jqueryDotColorpickerLib.Anon_Cmyk],
-    limit: js.Function1[scala.Double, scala.Unit],
-    normalize: js.Function0[Color],
+    copy: () => Color,
+    distance: Color => scala.Double,
+    equals: Color => scala.Boolean,
+    getAlpha: () => scala.Double,
+    getCMYK: () => CMYK,
+    getChannels: () => jqueryDotColorpickerLib.Anon_AB,
+    getHSL: () => HSL,
+    getHSV: () => HSV,
+    getLAB: () => LAB,
+    getRGB: () => RGB,
+    getSpaces: () => jqueryDotColorpickerLib.Anon_Cmyk,
+    limit: scala.Double => scala.Unit,
+    normalize: () => Color,
     set: scala.Boolean,
-    setAlpha: js.Function1[scala.Double, Color],
-    setCMYK: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, Color],
-    setHSL: js.Function3[scala.Double, scala.Double, scala.Double, Color],
-    setHSV: js.Function3[scala.Double, scala.Double, scala.Double, Color],
-    setLAB: js.Function3[scala.Double, scala.Double, scala.Double, Color],
-    setRGB: js.Function3[scala.Double, scala.Double, scala.Double, Color],
-    setSpaces: js.Function1[js.Any, Color],
-    toCSS: js.Function0[java.lang.String],
-    toHEX: js.Function0[java.lang.String]
+    setAlpha: scala.Double => Color,
+    setCMYK: (scala.Double, scala.Double, scala.Double, scala.Double) => Color,
+    setHSL: (scala.Double, scala.Double, scala.Double) => Color,
+    setHSV: (scala.Double, scala.Double, scala.Double) => Color,
+    setLAB: (scala.Double, scala.Double, scala.Double) => Color,
+    setRGB: (scala.Double, scala.Double, scala.Double) => Color,
+    setSpaces: js.Any => Color,
+    toCSS: () => java.lang.String,
+    toHEX: () => java.lang.String
   ): Color = {
-    val __obj = js.Dynamic.literal(copy = copy, distance = distance, equals = equals, getAlpha = getAlpha, getCMYK = getCMYK, getChannels = getChannels, getHSL = getHSL, getHSV = getHSV, getLAB = getLAB, getRGB = getRGB, getSpaces = getSpaces, limit = limit, normalize = normalize, set = set, setAlpha = setAlpha, setCMYK = setCMYK, setHSL = setHSL, setHSV = setHSV, setLAB = setLAB, setRGB = setRGB, setSpaces = setSpaces, toCSS = toCSS, toHEX = toHEX)
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), distance = js.Any.fromFunction1(distance), equals = js.Any.fromFunction1(equals), getAlpha = js.Any.fromFunction0(getAlpha), getCMYK = js.Any.fromFunction0(getCMYK), getChannels = js.Any.fromFunction0(getChannels), getHSL = js.Any.fromFunction0(getHSL), getHSV = js.Any.fromFunction0(getHSV), getLAB = js.Any.fromFunction0(getLAB), getRGB = js.Any.fromFunction0(getRGB), getSpaces = js.Any.fromFunction0(getSpaces), limit = js.Any.fromFunction1(limit), normalize = js.Any.fromFunction0(normalize), set = set, setAlpha = js.Any.fromFunction1(setAlpha), setCMYK = js.Any.fromFunction4(setCMYK), setHSL = js.Any.fromFunction3(setHSL), setHSV = js.Any.fromFunction3(setHSV), setLAB = js.Any.fromFunction3(setLAB), setRGB = js.Any.fromFunction3(setRGB), setSpaces = js.Any.fromFunction1(setSpaces), toCSS = js.Any.fromFunction0(toCSS), toHEX = js.Any.fromFunction0(toHEX))
   
     __obj.asInstanceOf[Color]
   }

@@ -30,7 +30,7 @@ trait XPropertyHandler
     *
     * If {@link getSupportedProperties()} returned an empty sequence, this method will not be called
     */
-  val ActuatingProperties: activexDashInteropLib.SafeArray[java.lang.String]
+  val ActuatingProperties: stdLib.SafeArray[java.lang.String]
   /**
     * returns the properties which are to be superseded by this handler
     *
@@ -56,7 +56,7 @@ trait XPropertyHandler
     * If {@link getSupportedProperties()} returned an empty sequence, this method will not be called.
     * @see XObjectInspectorModel.HandlerFactories
     */
-  val SupersededProperties: activexDashInteropLib.SafeArray[java.lang.String]
+  val SupersededProperties: stdLib.SafeArray[java.lang.String]
   /**
     * returns the properties which the handler can handle
     *
@@ -66,7 +66,7 @@ trait XPropertyHandler
     *
     * In the case of returning an empty sequence here, the property handler is ignored by all further processing in the object inspector.
     */
-  val SupportedProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
+  val SupportedProperties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
   /**
     * updates the UI of dependent properties when the value of a certain actuating property changed
     *
@@ -170,7 +170,7 @@ trait XPropertyHandler
     *
     * If {@link getSupportedProperties()} returned an empty sequence, this method will not be called
     */
-  def getActuatingProperties(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getActuatingProperties(): stdLib.SafeArray[java.lang.String]
   /**
     * returns the state of a property
     * @param PropertyName the name of the property whose state is to be retrieved
@@ -208,7 +208,7 @@ trait XPropertyHandler
     * If {@link getSupportedProperties()} returned an empty sequence, this method will not be called.
     * @see XObjectInspectorModel.HandlerFactories
     */
-  def getSupersededProperties(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getSupersededProperties(): stdLib.SafeArray[java.lang.String]
   /**
     * returns the properties which the handler can handle
     *
@@ -218,7 +218,7 @@ trait XPropertyHandler
     *
     * In the case of returning an empty sequence here, the property handler is ignored by all further processing in the object inspector.
     */
-  def getSupportedProperties(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
+  def getSupportedProperties(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
   /**
     * binds the property handler to a new component
     * @param Component the component to inspect. Must not be `NULL`
@@ -306,50 +306,33 @@ trait XPropertyHandler
 object XPropertyHandler {
   @scala.inline
   def apply(
-    ActuatingProperties: activexDashInteropLib.SafeArray[java.lang.String],
-    SupersededProperties: activexDashInteropLib.SafeArray[java.lang.String],
-    SupportedProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
-    acquire: js.Function0[scala.Unit],
-    actuatingPropertyChanged: js.Function5[java.lang.String, js.Any, js.Any, XObjectInspectorUI, scala.Boolean, scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    addPropertyChangeListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    convertToControlValue: js.Function3[java.lang.String, js.Any, activexDashLibreofficeLib.`type`, js.Any],
-    convertToPropertyValue: js.Function2[java.lang.String, js.Any, js.Any],
-    describePropertyLine: js.Function2[java.lang.String, XPropertyControlFactory, LineDescriptor],
-    dispose: js.Function0[scala.Unit],
-    getActuatingProperties: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getPropertyState: js.Function1[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState
-    ],
-    getPropertyValue: js.Function1[java.lang.String, js.Any],
-    getSupersededProperties: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getSupportedProperties: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
-    ],
-    inspect: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
-    isComposable: js.Function1[java.lang.String, scala.Boolean],
-    onInteractivePropertySelection: js.Function4[
-      java.lang.String, 
-      scala.Boolean, 
-      js.Array[_], 
-      XObjectInspectorUI, 
-      InteractiveSelectionResult
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    removePropertyChangeListener: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
-    suspend: js.Function1[scala.Boolean, scala.Boolean]
+    ActuatingProperties: stdLib.SafeArray[java.lang.String],
+    SupersededProperties: stdLib.SafeArray[java.lang.String],
+    SupportedProperties: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
+    acquire: () => scala.Unit,
+    actuatingPropertyChanged: (java.lang.String, js.Any, js.Any, XObjectInspectorUI, scala.Boolean) => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    addPropertyChangeListener: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener => scala.Unit,
+    convertToControlValue: (java.lang.String, js.Any, activexDashLibreofficeLib.`type`) => js.Any,
+    convertToPropertyValue: (java.lang.String, js.Any) => js.Any,
+    describePropertyLine: (java.lang.String, XPropertyControlFactory) => LineDescriptor,
+    dispose: () => scala.Unit,
+    getActuatingProperties: () => stdLib.SafeArray[java.lang.String],
+    getPropertyState: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState,
+    getPropertyValue: java.lang.String => js.Any,
+    getSupersededProperties: () => stdLib.SafeArray[java.lang.String],
+    getSupportedProperties: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
+    inspect: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => scala.Unit,
+    isComposable: java.lang.String => scala.Boolean,
+    onInteractivePropertySelection: (java.lang.String, scala.Boolean, js.Array[_], XObjectInspectorUI) => InteractiveSelectionResult,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    removePropertyChangeListener: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener => scala.Unit,
+    setPropertyValue: (java.lang.String, js.Any) => scala.Unit,
+    suspend: scala.Boolean => scala.Boolean
   ): XPropertyHandler = {
-    val __obj = js.Dynamic.literal(ActuatingProperties = ActuatingProperties, SupersededProperties = SupersededProperties, SupportedProperties = SupportedProperties, acquire = acquire, actuatingPropertyChanged = actuatingPropertyChanged, addEventListener = addEventListener, addPropertyChangeListener = addPropertyChangeListener, convertToControlValue = convertToControlValue, convertToPropertyValue = convertToPropertyValue, describePropertyLine = describePropertyLine, dispose = dispose, getActuatingProperties = getActuatingProperties, getPropertyState = getPropertyState, getPropertyValue = getPropertyValue, getSupersededProperties = getSupersededProperties, getSupportedProperties = getSupportedProperties, inspect = inspect, isComposable = isComposable, onInteractivePropertySelection = onInteractivePropertySelection, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removePropertyChangeListener = removePropertyChangeListener, setPropertyValue = setPropertyValue, suspend = suspend)
+    val __obj = js.Dynamic.literal(ActuatingProperties = ActuatingProperties, SupersededProperties = SupersededProperties, SupportedProperties = SupportedProperties, acquire = js.Any.fromFunction0(acquire), actuatingPropertyChanged = js.Any.fromFunction5(actuatingPropertyChanged), addEventListener = js.Any.fromFunction1(addEventListener), addPropertyChangeListener = js.Any.fromFunction1(addPropertyChangeListener), convertToControlValue = js.Any.fromFunction3(convertToControlValue), convertToPropertyValue = js.Any.fromFunction2(convertToPropertyValue), describePropertyLine = js.Any.fromFunction2(describePropertyLine), dispose = js.Any.fromFunction0(dispose), getActuatingProperties = js.Any.fromFunction0(getActuatingProperties), getPropertyState = js.Any.fromFunction1(getPropertyState), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getSupersededProperties = js.Any.fromFunction0(getSupersededProperties), getSupportedProperties = js.Any.fromFunction0(getSupportedProperties), inspect = js.Any.fromFunction1(inspect), isComposable = js.Any.fromFunction1(isComposable), onInteractivePropertySelection = js.Any.fromFunction4(onInteractivePropertySelection), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertyChangeListener = js.Any.fromFunction1(removePropertyChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), suspend = js.Any.fromFunction1(suspend))
   
     __obj.asInstanceOf[XPropertyHandler]
   }

@@ -36,9 +36,9 @@ object IUISettings {
     scrollBarArrowSize: winrtLib.WindowsNs.FoundationNs.Size,
     scrollBarSize: winrtLib.WindowsNs.FoundationNs.Size,
     scrollBarThumbBoxSize: winrtLib.WindowsNs.FoundationNs.Size,
-    uIElementColor: js.Function1[UIElementType, winrtLib.WindowsNs.UINs.Color]
+    uIElementColor: UIElementType => winrtLib.WindowsNs.UINs.Color
   ): IUISettings = {
-    val __obj = js.Dynamic.literal(animationsEnabled = animationsEnabled, caretBlinkRate = caretBlinkRate, caretBrowsingEnabled = caretBrowsingEnabled, caretWidth = caretWidth, cursorSize = cursorSize, doubleClickTime = doubleClickTime, handPreference = handPreference, messageDuration = messageDuration, mouseHoverTime = mouseHoverTime, scrollBarArrowSize = scrollBarArrowSize, scrollBarSize = scrollBarSize, scrollBarThumbBoxSize = scrollBarThumbBoxSize, uIElementColor = uIElementColor)
+    val __obj = js.Dynamic.literal(animationsEnabled = animationsEnabled, caretBlinkRate = caretBlinkRate, caretBrowsingEnabled = caretBrowsingEnabled, caretWidth = caretWidth, cursorSize = cursorSize, doubleClickTime = doubleClickTime, handPreference = handPreference, messageDuration = messageDuration, mouseHoverTime = mouseHoverTime, scrollBarArrowSize = scrollBarArrowSize, scrollBarSize = scrollBarSize, scrollBarThumbBoxSize = scrollBarThumbBoxSize, uIElementColor = js.Any.fromFunction1(uIElementColor))
   
     __obj.asInstanceOf[IUISettings]
   }

@@ -18,17 +18,17 @@ trait Anon_Array extends js.Object {
 object Anon_Array {
   @scala.inline
   def apply(
-    array: js.Function1[js.Any, scala.Boolean],
-    boolean: js.Function1[js.Any, scala.Boolean],
-    integer: js.Function1[js.Any, scala.Boolean],
-    `null`: js.Function1[js.Any, scala.Boolean],
-    number: js.Function1[js.Any, scala.Boolean],
-    `object`: js.Function1[js.Any, scala.Boolean],
-    string: js.Function1[js.Any, scala.Boolean]
+    array: js.Any => scala.Boolean,
+    boolean: js.Any => scala.Boolean,
+    integer: js.Any => scala.Boolean,
+    `null`: js.Any => scala.Boolean,
+    number: js.Any => scala.Boolean,
+    `object`: js.Any => scala.Boolean,
+    string: js.Any => scala.Boolean
   ): Anon_Array = {
-    val __obj = js.Dynamic.literal(array = array, boolean = boolean, integer = integer, number = number, string = string)
-    __obj.updateDynamic("null")(`null`)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(array = js.Any.fromFunction1(array), boolean = js.Any.fromFunction1(boolean), integer = js.Any.fromFunction1(integer), number = js.Any.fromFunction1(number), string = js.Any.fromFunction1(string))
+    __obj.updateDynamic("null")(js.Any.fromFunction1(`null`))
+    __obj.updateDynamic("object")(js.Any.fromFunction1(`object`))
     __obj.asInstanceOf[Anon_Array]
   }
 }

@@ -40,16 +40,16 @@ object XTextRange {
     End: XTextRange,
     Start: XTextRange,
     String: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getEnd: js.Function0[XTextRange],
-    getStart: js.Function0[XTextRange],
-    getString: js.Function0[java.lang.String],
-    getText: js.Function0[XText],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setString: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    getEnd: () => XTextRange,
+    getStart: () => XTextRange,
+    getString: () => java.lang.String,
+    getText: () => XText,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setString: java.lang.String => scala.Unit
   ): XTextRange = {
-    val __obj = js.Dynamic.literal(End = End, Start = Start, String = String, acquire = acquire, getEnd = getEnd, getStart = getStart, getString = getString, getText = getText, queryInterface = queryInterface, release = release, setString = setString)
+    val __obj = js.Dynamic.literal(End = End, Start = Start, String = String, acquire = js.Any.fromFunction0(acquire), getEnd = js.Any.fromFunction0(getEnd), getStart = js.Any.fromFunction0(getStart), getString = js.Any.fromFunction0(getString), getText = js.Any.fromFunction0(getText), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setString = js.Any.fromFunction1(setString))
   
     __obj.asInstanceOf[XTextRange]
   }

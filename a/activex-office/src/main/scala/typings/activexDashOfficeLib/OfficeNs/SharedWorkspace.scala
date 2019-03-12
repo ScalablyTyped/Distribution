@@ -15,7 +15,7 @@ class SharedWorkspace protected () extends js.Object {
   val Files_Original: SharedWorkspaceFiles = js.native
   @JSName("Folders")
   val Folders_Original: SharedWorkspaceFolders = js.native
-  val LastRefreshed: activexDashInteropLib.VarDate = js.native
+  val LastRefreshed: stdLib.VarDate = js.native
   @JSName("Links")
   val Links_Original: SharedWorkspaceLinks = js.native
   @JSName("Members")

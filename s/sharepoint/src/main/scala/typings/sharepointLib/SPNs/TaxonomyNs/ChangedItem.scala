@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class ChangedItem ()
   extends sharepointLib.SPNs.ClientObject {
   def get_changedBy(): java.lang.String = js.native
-  def get_changedTime(): microsoftDashAjaxLib.Date = js.native
+  def get_changedTime(): stdLib.Date = js.native
   def get_id(): sharepointLib.SPNs.Guid = js.native
   def get_itemType(): ChangeItemType = js.native
   def get_operation(): ChangeOperationType = js.native

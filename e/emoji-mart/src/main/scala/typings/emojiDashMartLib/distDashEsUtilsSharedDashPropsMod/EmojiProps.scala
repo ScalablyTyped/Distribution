@@ -22,21 +22,21 @@ trait EmojiProps extends js.Object {
   var onClick: js.UndefOr[
     js.Function2[
       /* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onLeave: js.UndefOr[
     js.Function2[
       /* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onOver: js.UndefOr[
     js.Function2[
       /* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -62,29 +62,13 @@ object EmojiProps {
     emoji: java.lang.String | emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData,
     size: scala.Double,
     backgroundImageFn: BackgroundImageFn = null,
-    fallback: js.Function2[
-      /* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, 
-      EmojiProps, 
-      reactLib.reactMod.Component[js.Object, js.Object, _]
-    ] = null,
+    fallback: (/* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, EmojiProps) => reactLib.reactMod.Component[js.Object, js.Object, _] = null,
     forceSize: js.UndefOr[scala.Boolean] = js.undefined,
     html: js.UndefOr[scala.Boolean] = js.undefined,
     native: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: js.Function2[
-      /* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
-    onLeave: js.Function2[
-      /* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
-    onOver: js.Function2[
-      /* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
+    onClick: (/* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onLeave: (/* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onOver: (/* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
     set: EmojiSet = null,
     sheetColumns: scala.Int | scala.Double = null,
     sheetRows: scala.Int | scala.Double = null,
@@ -94,13 +78,13 @@ object EmojiProps {
   ): EmojiProps = {
     val __obj = js.Dynamic.literal(emoji = emoji.asInstanceOf[js.Any], size = size)
     if (backgroundImageFn != null) __obj.updateDynamic("backgroundImageFn")(backgroundImageFn)
-    if (fallback != null) __obj.updateDynamic("fallback")(fallback)
+    if (fallback != null) __obj.updateDynamic("fallback")(js.Any.fromFunction2(fallback))
     if (!js.isUndefined(forceSize)) __obj.updateDynamic("forceSize")(forceSize)
     if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
     if (!js.isUndefined(native)) __obj.updateDynamic("native")(native)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onLeave != null) __obj.updateDynamic("onLeave")(onLeave)
-    if (onOver != null) __obj.updateDynamic("onOver")(onOver)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
+    if (onLeave != null) __obj.updateDynamic("onLeave")(js.Any.fromFunction2(onLeave))
+    if (onOver != null) __obj.updateDynamic("onOver")(js.Any.fromFunction2(onOver))
     if (set != null) __obj.updateDynamic("set")(set)
     if (sheetColumns != null) __obj.updateDynamic("sheetColumns")(sheetColumns.asInstanceOf[js.Any])
     if (sheetRows != null) __obj.updateDynamic("sheetRows")(sheetRows.asInstanceOf[js.Any])

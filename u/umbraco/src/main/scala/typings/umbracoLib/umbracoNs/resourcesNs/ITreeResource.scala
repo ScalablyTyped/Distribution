@@ -22,11 +22,11 @@ trait ITreeResource extends js.Object {
 object ITreeResource {
   @scala.inline
   def apply(
-    loadApplication: js.Function1[js.Any, scala.Unit],
-    loadMenu: js.Function1[js.Any, scala.Unit],
-    loadNodes: js.Function1[js.Any, scala.Unit]
+    loadApplication: js.Any => scala.Unit,
+    loadMenu: js.Any => scala.Unit,
+    loadNodes: js.Any => scala.Unit
   ): ITreeResource = {
-    val __obj = js.Dynamic.literal(loadApplication = loadApplication, loadMenu = loadMenu, loadNodes = loadNodes)
+    val __obj = js.Dynamic.literal(loadApplication = js.Any.fromFunction1(loadApplication), loadMenu = js.Any.fromFunction1(loadMenu), loadNodes = js.Any.fromFunction1(loadNodes))
   
     __obj.asInstanceOf[ITreeResource]
   }

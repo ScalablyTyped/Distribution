@@ -122,11 +122,7 @@ object Column {
     filterRenderer: reactLib.reactMod.ReactNs.ReactElement[_] | (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
     filterable: js.UndefOr[scala.Boolean] = js.undefined,
     formatter: reactLib.reactMod.ReactNs.ReactElement[_] | (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
-    getRowMetaData: js.Function2[
-      /* rowdata */ T, 
-      /* column */ js.UndefOr[reactDashDataDashGridLib.AdazzleReactDataGridNs.Column[T]], 
-      _
-    ] = null,
+    getRowMetaData: (/* rowdata */ T, /* column */ js.UndefOr[reactDashDataDashGridLib.AdazzleReactDataGridNs.Column[T]]) => _ = null,
     headerRenderer: reactLib.reactMod.ReactNs.ReactElement[_] | (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
     locked: js.UndefOr[scala.Boolean] = js.undefined,
     resizable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -142,7 +138,7 @@ object Column {
     if (filterRenderer != null) __obj.updateDynamic("filterRenderer")(filterRenderer.asInstanceOf[js.Any])
     if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable)
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (getRowMetaData != null) __obj.updateDynamic("getRowMetaData")(getRowMetaData)
+    if (getRowMetaData != null) __obj.updateDynamic("getRowMetaData")(js.Any.fromFunction2(getRowMetaData))
     if (headerRenderer != null) __obj.updateDynamic("headerRenderer")(headerRenderer.asInstanceOf[js.Any])
     if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked)
     if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)

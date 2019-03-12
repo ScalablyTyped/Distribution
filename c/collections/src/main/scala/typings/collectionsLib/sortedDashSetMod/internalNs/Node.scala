@@ -31,29 +31,21 @@ trait Node[T] extends js.Object {
 object Node {
   @scala.inline
   def apply[T](
-    checkIntegrity: js.Function1[/* repeated */ js.Any, scala.Double],
-    getNext: js.Function1[/* repeated */ js.Any, js.UndefOr[Node[T]]],
-    getPrevious: js.Function1[/* repeated */ js.Any, js.UndefOr[Node[T]]],
-    log: js.Function4[js.Any, js.Any, js.Any, js.Any, js.Any],
-    reduce: js.Function6[
-      js.Function4[
-        /* result */ js.UndefOr[js.Any], 
-        /* val */ js.UndefOr[js.Any], 
-        /* key */ js.UndefOr[js.Any], 
-        /* collection */ js.UndefOr[js.Any], 
-        _
-      ], 
-      js.Any, 
-      scala.Double, 
-      js.Any, 
-      js.Any, 
-      scala.Double, 
-      js.Any
-    ],
-    summary: js.Function1[/* repeated */ js.Any, java.lang.String],
-    touch: js.Function1[/* repeated */ js.Any, scala.Unit]
+    checkIntegrity: /* repeated */ js.Any => scala.Double,
+    getNext: /* repeated */ js.Any => js.UndefOr[Node[T]],
+    getPrevious: /* repeated */ js.Any => js.UndefOr[Node[T]],
+    log: (js.Any, js.Any, js.Any, js.Any) => js.Any,
+    reduce: (js.Function4[
+      /* result */ js.UndefOr[js.Any], 
+      /* val */ js.UndefOr[js.Any], 
+      /* key */ js.UndefOr[js.Any], 
+      /* collection */ js.UndefOr[js.Any], 
+      _
+    ], js.Any, scala.Double, js.Any, js.Any, scala.Double) => js.Any,
+    summary: /* repeated */ js.Any => java.lang.String,
+    touch: /* repeated */ js.Any => scala.Unit
   ): Node[T] = {
-    val __obj = js.Dynamic.literal(checkIntegrity = checkIntegrity, getNext = getNext, getPrevious = getPrevious, log = log, reduce = reduce, summary = summary, touch = touch)
+    val __obj = js.Dynamic.literal(checkIntegrity = js.Any.fromFunction1(checkIntegrity), getNext = js.Any.fromFunction1(getNext), getPrevious = js.Any.fromFunction1(getPrevious), log = js.Any.fromFunction4(log), reduce = js.Any.fromFunction6(reduce), summary = js.Any.fromFunction1(summary), touch = js.Any.fromFunction1(touch))
   
     __obj.asInstanceOf[Node[T]]
   }

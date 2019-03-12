@@ -14,13 +14,9 @@ object Functor4 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS4 */](
     URI: F,
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any]
-    ]
+    map: (fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any]
   ): Functor4[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], map = map)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], map = js.Any.fromFunction2(map))
   
     __obj.asInstanceOf[Functor4[F]]
   }

@@ -23,22 +23,16 @@ object Anon_Check {
   @scala.inline
   def apply(
     check: js.Function1[
-      js.Function1[
-        /* items */ js.Array[anydbDashSqlDashMigrationsLib.anydbDashSqlDashMigrationsMod.MigrationTask], 
-        _
-      ], 
-      bluebirdLib.bluebirdMod.namespaced[_]
-    ],
-    drop: js.Function0[bluebirdLib.bluebirdMod.namespaced[_]],
-    execMigrations: js.Function1[
-      anydbDashSqlDashMigrationsLib.anydbDashSqlDashMigrationsMod.MigrationOptions, 
-      bluebirdLib.bluebirdMod.namespaced[scala.Unit]
-    ],
-    migrate: js.Function0[bluebirdLib.bluebirdMod.namespaced[_]],
-    run: js.Function0[bluebirdLib.bluebirdMod.namespaced[_]],
-    undoLast: js.Function0[bluebirdLib.bluebirdMod.namespaced[_]]
+      /* items */ js.Array[anydbDashSqlDashMigrationsLib.anydbDashSqlDashMigrationsMod.MigrationTask], 
+      _
+    ] => bluebirdLib.bluebirdMod.namespaced[_],
+    drop: () => bluebirdLib.bluebirdMod.namespaced[_],
+    execMigrations: anydbDashSqlDashMigrationsLib.anydbDashSqlDashMigrationsMod.MigrationOptions => bluebirdLib.bluebirdMod.namespaced[scala.Unit],
+    migrate: () => bluebirdLib.bluebirdMod.namespaced[_],
+    run: () => bluebirdLib.bluebirdMod.namespaced[_],
+    undoLast: () => bluebirdLib.bluebirdMod.namespaced[_]
   ): Anon_Check = {
-    val __obj = js.Dynamic.literal(check = check, drop = drop, execMigrations = execMigrations, migrate = migrate, run = run, undoLast = undoLast)
+    val __obj = js.Dynamic.literal(check = js.Any.fromFunction1(check), drop = js.Any.fromFunction0(drop), execMigrations = js.Any.fromFunction1(execMigrations), migrate = js.Any.fromFunction0(migrate), run = js.Any.fromFunction0(run), undoLast = js.Any.fromFunction0(undoLast))
   
     __obj.asInstanceOf[Anon_Check]
   }

@@ -46,7 +46,7 @@ object ^ extends js.Object {
   ): scala.Boolean = js.native
   def walkPullTypeSymbolStructure(
     typeSymbol: typescriptDashServicesLib.TypeScriptNs.PullTypeSymbol,
-    walker: typescriptDashServicesLib.TypeScriptNs.PullHelpersNs.PullTypeSymbolStructureWalker
+    walker: PullTypeSymbolStructureWalker
   ): scala.Unit = js.native
 }
 

@@ -44,12 +44,12 @@ trait XUndoManager
     * returns the titles of all actions currently on the Redo stack, from top to bottom
     * @see XUndoAction.Title
     */
-  val AllRedoActionTitles: activexDashInteropLib.SafeArray[java.lang.String]
+  val AllRedoActionTitles: stdLib.SafeArray[java.lang.String]
   /**
     * returns the titles of all actions currently on the undo stack, from top to bottom
     * @see XUndoAction.Title
     */
-  val AllUndoActionTitles: activexDashInteropLib.SafeArray[java.lang.String]
+  val AllUndoActionTitles: stdLib.SafeArray[java.lang.String]
   /**
     * returns the title of the top-most action on the Redo stack
     * @see XUndoAction.Title
@@ -136,12 +136,12 @@ trait XUndoManager
     * returns the titles of all actions currently on the Redo stack, from top to bottom
     * @see XUndoAction.Title
     */
-  def getAllRedoActionTitles(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getAllRedoActionTitles(): stdLib.SafeArray[java.lang.String]
   /**
     * returns the titles of all actions currently on the undo stack, from top to bottom
     * @see XUndoAction.Title
     */
-  def getAllUndoActionTitles(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getAllUndoActionTitles(): stdLib.SafeArray[java.lang.String]
   /**
     * returns the title of the top-most action on the Redo stack
     * @see XUndoAction.Title
@@ -217,38 +217,38 @@ trait XUndoManager
 object XUndoManager {
   @scala.inline
   def apply(
-    AllRedoActionTitles: activexDashInteropLib.SafeArray[java.lang.String],
-    AllUndoActionTitles: activexDashInteropLib.SafeArray[java.lang.String],
+    AllRedoActionTitles: stdLib.SafeArray[java.lang.String],
+    AllUndoActionTitles: stdLib.SafeArray[java.lang.String],
     CurrentRedoActionTitle: java.lang.String,
     CurrentUndoActionTitle: java.lang.String,
     Parent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
-    acquire: js.Function0[scala.Unit],
-    addUndoAction: js.Function1[XUndoAction, scala.Unit],
-    addUndoManagerListener: js.Function1[XUndoManagerListener, scala.Unit],
-    clear: js.Function0[scala.Unit],
-    clearRedo: js.Function0[scala.Unit],
-    enterHiddenUndoContext: js.Function0[scala.Unit],
-    enterUndoContext: js.Function1[java.lang.String, scala.Unit],
-    getAllRedoActionTitles: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getAllUndoActionTitles: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getCurrentRedoActionTitle: js.Function0[java.lang.String],
-    getCurrentUndoActionTitle: js.Function0[java.lang.String],
-    getParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    isLocked: js.Function0[scala.Boolean],
-    isRedoPossible: js.Function0[scala.Boolean],
-    isUndoPossible: js.Function0[scala.Boolean],
-    leaveUndoContext: js.Function0[scala.Unit],
-    lock: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    redo: js.Function0[scala.Unit],
-    release: js.Function0[scala.Unit],
-    removeUndoManagerListener: js.Function1[XUndoManagerListener, scala.Unit],
-    reset: js.Function0[scala.Unit],
-    setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
-    undo: js.Function0[scala.Unit],
-    unlock: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addUndoAction: XUndoAction => scala.Unit,
+    addUndoManagerListener: XUndoManagerListener => scala.Unit,
+    clear: () => scala.Unit,
+    clearRedo: () => scala.Unit,
+    enterHiddenUndoContext: () => scala.Unit,
+    enterUndoContext: java.lang.String => scala.Unit,
+    getAllRedoActionTitles: () => stdLib.SafeArray[java.lang.String],
+    getAllUndoActionTitles: () => stdLib.SafeArray[java.lang.String],
+    getCurrentRedoActionTitle: () => java.lang.String,
+    getCurrentUndoActionTitle: () => java.lang.String,
+    getParent: () => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    isLocked: () => scala.Boolean,
+    isRedoPossible: () => scala.Boolean,
+    isUndoPossible: () => scala.Boolean,
+    leaveUndoContext: () => scala.Unit,
+    lock: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    redo: () => scala.Unit,
+    release: () => scala.Unit,
+    removeUndoManagerListener: XUndoManagerListener => scala.Unit,
+    reset: () => scala.Unit,
+    setParent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface => scala.Unit,
+    undo: () => scala.Unit,
+    unlock: () => scala.Unit
   ): XUndoManager = {
-    val __obj = js.Dynamic.literal(AllRedoActionTitles = AllRedoActionTitles, AllUndoActionTitles = AllUndoActionTitles, CurrentRedoActionTitle = CurrentRedoActionTitle, CurrentUndoActionTitle = CurrentUndoActionTitle, Parent = Parent, acquire = acquire, addUndoAction = addUndoAction, addUndoManagerListener = addUndoManagerListener, clear = clear, clearRedo = clearRedo, enterHiddenUndoContext = enterHiddenUndoContext, enterUndoContext = enterUndoContext, getAllRedoActionTitles = getAllRedoActionTitles, getAllUndoActionTitles = getAllUndoActionTitles, getCurrentRedoActionTitle = getCurrentRedoActionTitle, getCurrentUndoActionTitle = getCurrentUndoActionTitle, getParent = getParent, isLocked = isLocked, isRedoPossible = isRedoPossible, isUndoPossible = isUndoPossible, leaveUndoContext = leaveUndoContext, lock = lock, queryInterface = queryInterface, redo = redo, release = release, removeUndoManagerListener = removeUndoManagerListener, reset = reset, setParent = setParent, undo = undo, unlock = unlock)
+    val __obj = js.Dynamic.literal(AllRedoActionTitles = AllRedoActionTitles, AllUndoActionTitles = AllUndoActionTitles, CurrentRedoActionTitle = CurrentRedoActionTitle, CurrentUndoActionTitle = CurrentUndoActionTitle, Parent = Parent, acquire = js.Any.fromFunction0(acquire), addUndoAction = js.Any.fromFunction1(addUndoAction), addUndoManagerListener = js.Any.fromFunction1(addUndoManagerListener), clear = js.Any.fromFunction0(clear), clearRedo = js.Any.fromFunction0(clearRedo), enterHiddenUndoContext = js.Any.fromFunction0(enterHiddenUndoContext), enterUndoContext = js.Any.fromFunction1(enterUndoContext), getAllRedoActionTitles = js.Any.fromFunction0(getAllRedoActionTitles), getAllUndoActionTitles = js.Any.fromFunction0(getAllUndoActionTitles), getCurrentRedoActionTitle = js.Any.fromFunction0(getCurrentRedoActionTitle), getCurrentUndoActionTitle = js.Any.fromFunction0(getCurrentUndoActionTitle), getParent = js.Any.fromFunction0(getParent), isLocked = js.Any.fromFunction0(isLocked), isRedoPossible = js.Any.fromFunction0(isRedoPossible), isUndoPossible = js.Any.fromFunction0(isUndoPossible), leaveUndoContext = js.Any.fromFunction0(leaveUndoContext), lock = js.Any.fromFunction0(lock), queryInterface = js.Any.fromFunction1(queryInterface), redo = js.Any.fromFunction0(redo), release = js.Any.fromFunction0(release), removeUndoManagerListener = js.Any.fromFunction1(removeUndoManagerListener), reset = js.Any.fromFunction0(reset), setParent = js.Any.fromFunction1(setParent), undo = js.Any.fromFunction0(undo), unlock = js.Any.fromFunction0(unlock))
   
     __obj.asInstanceOf[XUndoManager]
   }

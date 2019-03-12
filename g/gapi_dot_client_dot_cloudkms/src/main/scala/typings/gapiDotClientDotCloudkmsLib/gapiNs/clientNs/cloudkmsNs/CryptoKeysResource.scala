@@ -54,49 +54,19 @@ trait CryptoKeysResource extends js.Object {
 object CryptoKeysResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackCryptoKeyId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey]
-    ],
+    create: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackCryptoKeyId => gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey],
     cryptoKeyVersions: CryptoKeyVersionsResource,
-    decrypt: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[DecryptResponse]
-    ],
-    encrypt: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[EncryptResponse]
-    ],
-    get: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey]
-    ],
-    getIamPolicy: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    list: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListCryptoKeysResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey]
-    ],
-    setIamPolicy: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    testIamPermissions: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
-    ],
-    updatePrimaryVersion: js.Function1[
-      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey]
-    ]
+    decrypt: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[DecryptResponse],
+    encrypt: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[EncryptResponse],
+    get: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey],
+    getIamPolicy: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    list: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[ListCryptoKeysResponse],
+    patch: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey],
+    setIamPolicy: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    testIamPermissions: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse],
+    updatePrimaryVersion: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt => gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey]
   ): CryptoKeysResource = {
-    val __obj = js.Dynamic.literal(create = create, cryptoKeyVersions = cryptoKeyVersions, decrypt = decrypt, encrypt = encrypt, get = get, getIamPolicy = getIamPolicy, list = list, patch = patch, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions, updatePrimaryVersion = updatePrimaryVersion)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), cryptoKeyVersions = cryptoKeyVersions, decrypt = js.Any.fromFunction1(decrypt), encrypt = js.Any.fromFunction1(encrypt), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions), updatePrimaryVersion = js.Any.fromFunction1(updatePrimaryVersion))
   
     __obj.asInstanceOf[CryptoKeysResource]
   }

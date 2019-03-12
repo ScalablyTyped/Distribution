@@ -19,13 +19,13 @@ object BaseCell {
   def apply(
     columnAbsolute: scala.Boolean,
     columnOffset: scala.Double,
-    isEqual: js.Function1[BaseCell, scala.Boolean],
+    isEqual: BaseCell => scala.Boolean,
     rowAbsolute: scala.Boolean,
     rowOffset: scala.Double,
-    toString: js.Function0[java.lang.String],
-    translateTo: js.Function2[scala.Double, scala.Double, scala.Unit]
+    toString: () => java.lang.String,
+    translateTo: (scala.Double, scala.Double) => scala.Unit
   ): BaseCell = {
-    val __obj = js.Dynamic.literal(columnAbsolute = columnAbsolute, columnOffset = columnOffset, isEqual = isEqual, rowAbsolute = rowAbsolute, rowOffset = rowOffset, toString = toString, translateTo = translateTo)
+    val __obj = js.Dynamic.literal(columnAbsolute = columnAbsolute, columnOffset = columnOffset, isEqual = js.Any.fromFunction1(isEqual), rowAbsolute = rowAbsolute, rowOffset = rowOffset, toString = js.Any.fromFunction0(toString), translateTo = js.Any.fromFunction2(translateTo))
   
     __obj.asInstanceOf[BaseCell]
   }

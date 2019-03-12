@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jasmine-expect/dist/toBeEvenNumber", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val toBeEvenNumber: jasmineDashExpectLib.distToBeEvenNumberMod.ToBeEvenNumber = js.native
+  val toBeEvenNumber: ToBeEvenNumber = js.native
 }
 

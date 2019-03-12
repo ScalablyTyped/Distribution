@@ -12,7 +12,8 @@ trait RestClient extends Client {
   var applications: ApplicationResource = js.native
   var authorizedConnectApps: AuthorizedConnectAppResource = js.native
   // Imported from AccountResource
-  var availablePhoneNumbers: AvailablePhoneNumberResource = js.native
+  @JSName("availablePhoneNumbers")
+  var availablePhoneNumbers_Original: AvailablePhoneNumberResource = js.native
   var calls: CallResource = js.native
   var conferences: ConferenceResource = js.native
   var connectApps: ConnectAppResource = js.native
@@ -55,6 +56,8 @@ trait RestClient extends Client {
   @JSName("update")
   var update_Original: RestMethod = js.native
   var usage: UsageIntermediary = js.native
+  // Imported from AccountResource
+  def availablePhoneNumbers(resourceSid: java.lang.String): AvailablePhoneNumberInstance = js.native
   def get(args: js.Any): qLib.qMod.QNs.Promise[_] = js.native
   def get(args: js.Any, callback: RequestCallback): qLib.qMod.QNs.Promise[_] = js.native
   def get(callback: RequestCallback): qLib.qMod.QNs.Promise[_] = js.native

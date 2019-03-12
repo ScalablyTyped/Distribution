@@ -16,17 +16,13 @@ object XPathExtension {
   @scala.inline
   def apply(
     Libxml2ExtensionHandle: Libxml2ExtensionHandle,
-    acquire: js.Function0[scala.Unit],
-    createWithModel: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xformsNs.XModel, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
-      scala.Unit
-    ],
-    getLibxml2ExtensionHandle: js.Function0[Libxml2ExtensionHandle],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createWithModel: (activexDashLibreofficeLib.comNs.sunNs.starNs.xformsNs.XModel, activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode) => scala.Unit,
+    getLibxml2ExtensionHandle: () => Libxml2ExtensionHandle,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XPathExtension = {
-    val __obj = js.Dynamic.literal(Libxml2ExtensionHandle = Libxml2ExtensionHandle, acquire = acquire, createWithModel = createWithModel, getLibxml2ExtensionHandle = getLibxml2ExtensionHandle, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Libxml2ExtensionHandle = Libxml2ExtensionHandle, acquire = js.Any.fromFunction0(acquire), createWithModel = js.Any.fromFunction2(createWithModel), getLibxml2ExtensionHandle = js.Any.fromFunction0(getLibxml2ExtensionHandle), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XPathExtension]
   }

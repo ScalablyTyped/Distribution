@@ -66,7 +66,7 @@ trait ServerStateCookieOptions extends js.Object {
 object ServerStateCookieOptions {
   @scala.inline
   def apply(
-    autoValue: js.Function1[/* request */ Request, scala.Unit] = null,
+    autoValue: /* request */ Request => scala.Unit = null,
     clearInvalid: js.UndefOr[scala.Boolean] = js.undefined,
     domain: java.lang.String = null,
     encoding: hapiLib.hapiLibStrings.none | hapiLib.hapiLibStrings.base64 | hapiLib.hapiLibStrings.base64json | hapiLib.hapiLibStrings.form | hapiLib.hapiLibStrings.iron = null,
@@ -83,7 +83,7 @@ object ServerStateCookieOptions {
     ttl: scala.Int | scala.Double = null
   ): ServerStateCookieOptions = {
     val __obj = js.Dynamic.literal()
-    if (autoValue != null) __obj.updateDynamic("autoValue")(autoValue)
+    if (autoValue != null) __obj.updateDynamic("autoValue")(js.Any.fromFunction1(autoValue))
     if (!js.isUndefined(clearInvalid)) __obj.updateDynamic("clearInvalid")(clearInvalid)
     if (domain != null) __obj.updateDynamic("domain")(domain)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])

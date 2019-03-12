@@ -11,7 +11,7 @@ trait Anon_Callback extends js.Object {
   def apply(
     options: tarLib.tarMod.CreateOptions,
     fileList: js.Array[java.lang.String],
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): nodeLib.streamMod.Readable = js.native
 }
 

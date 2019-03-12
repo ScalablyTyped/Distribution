@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("nise", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val fakeServer: niseLib.niseMod.FakeServerStatic = js.native
-  val fakeServerWithClock: niseLib.niseMod.FakeServerStatic = js.native
-  val fakeXhr: niseLib.niseMod.FakeXHR = js.native
+  val fakeServer: FakeServerStatic = js.native
+  val fakeServerWithClock: FakeServerStatic = js.native
+  val fakeXhr: FakeXHR = js.native
 }
 

@@ -126,9 +126,9 @@ object Anon_ActiveInputState {
       /* isMute */ scala.Boolean, 
       chromecastDashCafDashSenderLib.castNs.frameworkNs.VolumeEventData
     ],
-    setLoggerLevel: js.Function1[chromecastDashCafDashSenderLib.castNs.frameworkNs.LoggerLevel, scala.Unit]
+    setLoggerLevel: chromecastDashCafDashSenderLib.castNs.frameworkNs.LoggerLevel => scala.Unit
   ): Anon_ActiveInputState = {
-    val __obj = js.Dynamic.literal(ActiveInputStateEventData = ActiveInputStateEventData, ApplicationMetadata = ApplicationMetadata, ApplicationMetadataEventData = ApplicationMetadataEventData, ApplicationStatusEventData = ApplicationStatusEventData, CastContext = CastContext, CastSession = CastSession, CastStateEventData = CastStateEventData, EventData = EventData, MediaSessionEventData = MediaSessionEventData, RemotePlayer = RemotePlayer, RemotePlayerChangedEvent = RemotePlayerChangedEvent, RemotePlayerController = RemotePlayerController, SessionStateEventData = SessionStateEventData, VERSION = VERSION, VolumeEventData = VolumeEventData, setLoggerLevel = setLoggerLevel)
+    val __obj = js.Dynamic.literal(ActiveInputStateEventData = ActiveInputStateEventData, ApplicationMetadata = ApplicationMetadata, ApplicationMetadataEventData = ApplicationMetadataEventData, ApplicationStatusEventData = ApplicationStatusEventData, CastContext = CastContext, CastSession = CastSession, CastStateEventData = CastStateEventData, EventData = EventData, MediaSessionEventData = MediaSessionEventData, RemotePlayer = RemotePlayer, RemotePlayerChangedEvent = RemotePlayerChangedEvent, RemotePlayerController = RemotePlayerController, SessionStateEventData = SessionStateEventData, VERSION = VERSION, VolumeEventData = VolumeEventData, setLoggerLevel = js.Any.fromFunction1(setLoggerLevel))
   
     __obj.asInstanceOf[Anon_ActiveInputState]
   }

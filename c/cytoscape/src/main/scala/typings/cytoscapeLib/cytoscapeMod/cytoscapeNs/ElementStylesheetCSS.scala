@@ -13,10 +13,10 @@ object ElementStylesheetCSS {
   @scala.inline
   def apply(
     css: cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.Node | cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.Edge,
-    json: js.Function0[js.Any],
+    json: () => js.Any,
     selector: java.lang.String
   ): ElementStylesheetCSS = {
-    val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], json = json, selector = selector)
+    val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), selector = selector)
   
     __obj.asInstanceOf[ElementStylesheetCSS]
   }

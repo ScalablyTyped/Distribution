@@ -15,6 +15,6 @@ object ^ extends js.Object {
   def isLoggedIn(): expressLib.expressMod.eNs.RequestHandler = js.native
   def isLoggedIn(errorCallback: js.Function): expressLib.expressMod.eNs.RequestHandler = js.native
   def main(session: js.Any): expressLib.expressMod.eNs.RequestHandler = js.native
-  def main(session: js.Any, options: easyDashSessionLib.easyDashSessionMod.SessionOptions): expressLib.expressMod.eNs.RequestHandler = js.native
+  def main(session: js.Any, options: SessionOptions): expressLib.expressMod.eNs.RequestHandler = js.native
 }
 

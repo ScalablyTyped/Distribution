@@ -22,12 +22,12 @@ object XSheetAnnotationAnchor {
   @scala.inline
   def apply(
     Annotation: XSheetAnnotation,
-    acquire: js.Function0[scala.Unit],
-    getAnnotation: js.Function0[XSheetAnnotation],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getAnnotation: () => XSheetAnnotation,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSheetAnnotationAnchor = {
-    val __obj = js.Dynamic.literal(Annotation = Annotation, acquire = acquire, getAnnotation = getAnnotation, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Annotation = Annotation, acquire = js.Any.fromFunction0(acquire), getAnnotation = js.Any.fromFunction0(getAnnotation), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSheetAnnotationAnchor]
   }

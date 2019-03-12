@@ -9,7 +9,7 @@ trait CreateReplicaAction extends js.Object {
   /**
     * The region of the replica to be added.
     */
-  var RegionName: RegionName
+  var RegionName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.RegionName
 }
 
 object CreateReplicaAction {

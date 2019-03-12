@@ -25,22 +25,22 @@ trait SchedulerDateHelpers extends js.Object {
 object SchedulerDateHelpers {
   @scala.inline
   def apply(
-    add: js.Function3[stdLib.Date, scala.Double, java.lang.String, stdLib.Date],
-    convert_to_utc: js.Function1[stdLib.Date, stdLib.Date],
-    copy: js.Function1[stdLib.Date, stdLib.Date],
-    date_part: js.Function1[stdLib.Date, stdLib.Date],
-    date_to_str: js.Function1[java.lang.String, js.Any],
-    day_start: js.Function1[stdLib.Date, stdLib.Date],
-    getISOWeek: js.Function1[stdLib.Date, scala.Double],
-    getUTCISOWeek: js.Function1[stdLib.Date, scala.Double],
-    month_start: js.Function1[stdLib.Date, stdLib.Date],
-    str_to_date: js.Function1[java.lang.String, js.Any],
-    time_part: js.Function1[stdLib.Date, stdLib.Date],
-    to_fixed: js.Function1[scala.Double, java.lang.String],
-    week_start: js.Function1[stdLib.Date, stdLib.Date],
-    year_start: js.Function1[stdLib.Date, stdLib.Date]
+    add: (stdLib.Date, scala.Double, java.lang.String) => stdLib.Date,
+    convert_to_utc: stdLib.Date => stdLib.Date,
+    copy: stdLib.Date => stdLib.Date,
+    date_part: stdLib.Date => stdLib.Date,
+    date_to_str: java.lang.String => js.Any,
+    day_start: stdLib.Date => stdLib.Date,
+    getISOWeek: stdLib.Date => scala.Double,
+    getUTCISOWeek: stdLib.Date => scala.Double,
+    month_start: stdLib.Date => stdLib.Date,
+    str_to_date: java.lang.String => js.Any,
+    time_part: stdLib.Date => stdLib.Date,
+    to_fixed: scala.Double => java.lang.String,
+    week_start: stdLib.Date => stdLib.Date,
+    year_start: stdLib.Date => stdLib.Date
   ): SchedulerDateHelpers = {
-    val __obj = js.Dynamic.literal(add = add, convert_to_utc = convert_to_utc, copy = copy, date_part = date_part, date_to_str = date_to_str, day_start = day_start, getISOWeek = getISOWeek, getUTCISOWeek = getUTCISOWeek, month_start = month_start, str_to_date = str_to_date, time_part = time_part, to_fixed = to_fixed, week_start = week_start, year_start = year_start)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction3(add), convert_to_utc = js.Any.fromFunction1(convert_to_utc), copy = js.Any.fromFunction1(copy), date_part = js.Any.fromFunction1(date_part), date_to_str = js.Any.fromFunction1(date_to_str), day_start = js.Any.fromFunction1(day_start), getISOWeek = js.Any.fromFunction1(getISOWeek), getUTCISOWeek = js.Any.fromFunction1(getUTCISOWeek), month_start = js.Any.fromFunction1(month_start), str_to_date = js.Any.fromFunction1(str_to_date), time_part = js.Any.fromFunction1(time_part), to_fixed = js.Any.fromFunction1(to_fixed), week_start = js.Any.fromFunction1(week_start), year_start = js.Any.fromFunction1(year_start))
   
     __obj.asInstanceOf[SchedulerDateHelpers]
   }

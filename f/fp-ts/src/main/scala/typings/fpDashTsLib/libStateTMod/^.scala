@@ -96,14 +96,14 @@ object ^ extends js.Object {
   def get2v[F /* <: fpDashTsLib.libHKTMod.URIS */](F: fpDashTsLib.libApplicativeMod.Applicative1[F]): js.Function1[/* s */ js.Any, fpDashTsLib.libHKTMod.Type[F, js.Tuple2[_, _]]] = js.native
   def get2v[F /* <: fpDashTsLib.libHKTMod.URIS2 */](F: fpDashTsLib.libApplicativeMod.Applicative2[F]): js.Function1[/* s */ js.Any, fpDashTsLib.libHKTMod.Type2[F, _, js.Tuple2[_, _]]] = js.native
   def get2v[F /* <: fpDashTsLib.libHKTMod.URIS3 */](F: fpDashTsLib.libApplicativeMod.Applicative3[F]): js.Function1[/* s */ js.Any, fpDashTsLib.libHKTMod.Type3[F, _, _, js.Tuple2[_, _]]] = js.native
-  def getStateT[M](M: fpDashTsLib.libMonadMod.Monad[M]): fpDashTsLib.libStateTMod.StateT[M] = js.native
-  def getStateT[M /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libMonadMod.Monad1[M]): fpDashTsLib.libStateTMod.StateT1[M] = js.native
-  def getStateT[M /* <: fpDashTsLib.libHKTMod.URIS2 */](M: fpDashTsLib.libMonadMod.Monad2[M]): fpDashTsLib.libStateTMod.StateT2[M] = js.native
-  def getStateT[M /* <: fpDashTsLib.libHKTMod.URIS3 */](M: fpDashTsLib.libMonadMod.Monad3[M]): fpDashTsLib.libStateTMod.StateT3[M] = js.native
-  def getStateT2v[M](M: fpDashTsLib.libMonadMod.Monad[M]): fpDashTsLib.libStateTMod.StateT2v[M] = js.native
-  def getStateT2v[M /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libMonadMod.Monad1[M]): fpDashTsLib.libStateTMod.StateT2v1[M] = js.native
-  def getStateT2v[M /* <: fpDashTsLib.libHKTMod.URIS2 */](M: fpDashTsLib.libMonadMod.Monad2[M]): fpDashTsLib.libStateTMod.StateT2v2[M] = js.native
-  def getStateT2v[M /* <: fpDashTsLib.libHKTMod.URIS3 */](M: fpDashTsLib.libMonadMod.Monad3[M]): fpDashTsLib.libStateTMod.StateT2v3[M] = js.native
+  def getStateT[M](M: fpDashTsLib.libMonadMod.Monad[M]): StateT[M] = js.native
+  def getStateT[M /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libMonadMod.Monad1[M]): StateT1[M] = js.native
+  def getStateT[M /* <: fpDashTsLib.libHKTMod.URIS2 */](M: fpDashTsLib.libMonadMod.Monad2[M]): StateT2[M] = js.native
+  def getStateT[M /* <: fpDashTsLib.libHKTMod.URIS3 */](M: fpDashTsLib.libMonadMod.Monad3[M]): StateT3[M] = js.native
+  def getStateT2v[M](M: fpDashTsLib.libMonadMod.Monad[M]): StateT2v[M] = js.native
+  def getStateT2v[M /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libMonadMod.Monad1[M]): StateT2v1[M] = js.native
+  def getStateT2v[M /* <: fpDashTsLib.libHKTMod.URIS2 */](M: fpDashTsLib.libMonadMod.Monad2[M]): StateT2v2[M] = js.native
+  def getStateT2v[M /* <: fpDashTsLib.libHKTMod.URIS3 */](M: fpDashTsLib.libMonadMod.Monad3[M]): StateT2v3[M] = js.native
   def gets[F](F: fpDashTsLib.libApplicativeMod.Applicative[F]): js.Function1[
     /* f */ js.Function1[/* s */ js.Any, _], 
     js.Function1[/* s */ _, fpDashTsLib.libHKTMod.HKT[F, js.Tuple2[_, _]]]

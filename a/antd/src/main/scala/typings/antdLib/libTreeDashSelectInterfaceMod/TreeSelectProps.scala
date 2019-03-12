@@ -21,11 +21,11 @@ trait TreeSelectProps
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   @JSName("notFoundContent")
   var notFoundContent_TreeSelectProps: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var onBlur: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLInputElement]] = js.undefined
+  var onBlur: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[stdLib.HTMLInputElement]] = js.undefined
   var onChange: js.UndefOr[
     js.Function3[/* value */ js.Any, /* label */ js.Any, /* extra */ js.Any, scala.Unit]
   ] = js.undefined
-  var onFocus: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLInputElement]] = js.undefined
+  var onFocus: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[stdLib.HTMLInputElement]] = js.undefined
   @JSName("onSearch")
   var onSearch_TreeSelectProps: js.UndefOr[js.Function1[/* value */ js.Any, scala.Unit]] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* value */ js.Any, scala.Unit]] = js.undefined
@@ -64,34 +64,30 @@ object TreeSelectProps {
     dropdownClassName: java.lang.String = null,
     dropdownMatchSelectWidth: js.UndefOr[scala.Boolean] = js.undefined,
     dropdownMenuStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    dropdownRender: js.Function2[
-      /* menu */ js.UndefOr[reactLib.reactMod.ReactNs.ReactNode], 
-      /* props */ js.UndefOr[antdLib.libSelectMod.SelectProps[antdLib.libSelectMod.SelectValue]], 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    dropdownRender: (/* menu */ js.UndefOr[reactLib.reactMod.ReactNs.ReactNode], /* props */ js.UndefOr[antdLib.libSelectMod.SelectProps[antdLib.libSelectMod.SelectValue]]) => reactLib.reactMod.ReactNs.ReactNode = null,
     dropdownStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     filterOption: scala.Boolean | (js.Function2[
       /* inputValue */ java.lang.String, 
       /* option */ reactLib.reactMod.ReactNs.ReactElement[antdLib.libSelectMod.OptionProps], 
       _
     ]) = null,
-    filterTreeNode: js.Function2[/* inputValue */ java.lang.String, /* treeNode */ js.Any, scala.Boolean] = null,
-    getPopupContainer: js.Function1[/* triggerNode */ js.UndefOr[reactLib.Element], reactLib.HTMLElement] = null,
+    filterTreeNode: (/* inputValue */ java.lang.String, /* treeNode */ js.Any) => scala.Boolean = null,
+    getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.Element] => stdLib.HTMLElement = null,
     id: java.lang.String = null,
     labelInValue: js.UndefOr[scala.Boolean] = js.undefined,
-    loadData: js.Function1[/* node */ js.Any, scala.Unit] = null,
+    loadData: /* node */ js.Any => scala.Unit = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     maxTagCount: scala.Int | scala.Double = null,
     maxTagPlaceholder: reactLib.reactMod.ReactNs.ReactNode | (js.Function1[/* omittedValues */ js.Array[_], reactLib.reactMod.ReactNs.ReactNode]) = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     notFoundContent: reactLib.reactMod.ReactNs.ReactNode = null,
-    onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLInputElement] = null,
-    onChange: js.Function3[/* value */ js.Any, /* label */ js.Any, /* extra */ js.Any, scala.Unit] = null,
-    onDropdownVisibleChange: js.Function1[/* open */ scala.Boolean, scala.Unit] = null,
-    onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLInputElement] = null,
-    onSearch: js.Function1[/* value */ js.Any, scala.Unit] = null,
-    onSelect: js.Function1[/* value */ js.Any, scala.Unit] = null,
-    onTreeExpand: js.Function1[/* keys */ js.Array[java.lang.String], scala.Unit] = null,
+    onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[stdLib.HTMLInputElement] = null,
+    onChange: (/* value */ js.Any, /* label */ js.Any, /* extra */ js.Any) => scala.Unit = null,
+    onDropdownVisibleChange: /* open */ scala.Boolean => scala.Unit = null,
+    onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[stdLib.HTMLInputElement] = null,
+    onSearch: /* value */ js.Any => scala.Unit = null,
+    onSelect: /* value */ js.Any => scala.Unit = null,
+    onTreeExpand: /* keys */ js.Array[java.lang.String] => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     placeholder: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
     prefixCls: java.lang.String = null,
@@ -131,26 +127,26 @@ object TreeSelectProps {
     if (dropdownClassName != null) __obj.updateDynamic("dropdownClassName")(dropdownClassName)
     if (!js.isUndefined(dropdownMatchSelectWidth)) __obj.updateDynamic("dropdownMatchSelectWidth")(dropdownMatchSelectWidth)
     if (dropdownMenuStyle != null) __obj.updateDynamic("dropdownMenuStyle")(dropdownMenuStyle)
-    if (dropdownRender != null) __obj.updateDynamic("dropdownRender")(dropdownRender)
+    if (dropdownRender != null) __obj.updateDynamic("dropdownRender")(js.Any.fromFunction2(dropdownRender))
     if (dropdownStyle != null) __obj.updateDynamic("dropdownStyle")(dropdownStyle)
     if (filterOption != null) __obj.updateDynamic("filterOption")(filterOption.asInstanceOf[js.Any])
-    if (filterTreeNode != null) __obj.updateDynamic("filterTreeNode")(filterTreeNode)
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer)
+    if (filterTreeNode != null) __obj.updateDynamic("filterTreeNode")(js.Any.fromFunction2(filterTreeNode))
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(labelInValue)) __obj.updateDynamic("labelInValue")(labelInValue)
-    if (loadData != null) __obj.updateDynamic("loadData")(loadData)
+    if (loadData != null) __obj.updateDynamic("loadData")(js.Any.fromFunction1(loadData))
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
     if (maxTagCount != null) __obj.updateDynamic("maxTagCount")(maxTagCount.asInstanceOf[js.Any])
     if (maxTagPlaceholder != null) __obj.updateDynamic("maxTagPlaceholder")(maxTagPlaceholder.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onDropdownVisibleChange != null) __obj.updateDynamic("onDropdownVisibleChange")(onDropdownVisibleChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3(onChange))
+    if (onDropdownVisibleChange != null) __obj.updateDynamic("onDropdownVisibleChange")(js.Any.fromFunction1(onDropdownVisibleChange))
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onSearch != null) __obj.updateDynamic("onSearch")(onSearch)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (onTreeExpand != null) __obj.updateDynamic("onTreeExpand")(onTreeExpand)
+    if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction1(onSearch))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
+    if (onTreeExpand != null) __obj.updateDynamic("onTreeExpand")(js.Any.fromFunction1(onTreeExpand))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)

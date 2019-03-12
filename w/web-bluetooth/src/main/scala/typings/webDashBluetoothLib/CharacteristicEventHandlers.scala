@@ -11,8 +11,8 @@ trait CharacteristicEventHandlers extends js.Object {
 
 object CharacteristicEventHandlers {
   @scala.inline
-  def apply(oncharacteristicvaluechanged: js.Function2[CharacteristicEventHandlers, stdLib.Event, js.Any]): CharacteristicEventHandlers = {
-    val __obj = js.Dynamic.literal(oncharacteristicvaluechanged = oncharacteristicvaluechanged)
+  def apply(oncharacteristicvaluechanged: (CharacteristicEventHandlers, stdLib.Event) => js.Any): CharacteristicEventHandlers = {
+    val __obj = js.Dynamic.literal(oncharacteristicvaluechanged = js.Any.fromFunction2(oncharacteristicvaluechanged))
   
     __obj.asInstanceOf[CharacteristicEventHandlers]
   }

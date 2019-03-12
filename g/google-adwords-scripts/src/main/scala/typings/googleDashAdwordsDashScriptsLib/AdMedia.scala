@@ -16,12 +16,12 @@ trait AdMedia extends js.Object {
 object AdMedia {
   @scala.inline
   def apply(
-    media: js.Function0[AdWordsSelector[Media]],
-    newImageBuilder: js.Function0[ImageBuilder[Media]],
-    newMediaBundleBuilder: js.Function0[MediaBundleBuilder[Media]],
-    newVideoBuilder: js.Function0[VideoBuilder[Media]]
+    media: () => AdWordsSelector[Media],
+    newImageBuilder: () => ImageBuilder[Media],
+    newMediaBundleBuilder: () => MediaBundleBuilder[Media],
+    newVideoBuilder: () => VideoBuilder[Media]
   ): AdMedia = {
-    val __obj = js.Dynamic.literal(media = media, newImageBuilder = newImageBuilder, newMediaBundleBuilder = newMediaBundleBuilder, newVideoBuilder = newVideoBuilder)
+    val __obj = js.Dynamic.literal(media = js.Any.fromFunction0(media), newImageBuilder = js.Any.fromFunction0(newImageBuilder), newMediaBundleBuilder = js.Any.fromFunction0(newMediaBundleBuilder), newVideoBuilder = js.Any.fromFunction0(newVideoBuilder))
   
     __obj.asInstanceOf[AdMedia]
   }

@@ -15,23 +15,14 @@ object ConnectionTools {
   def apply(
     DataSourceMetaData: XDataSourceMetaData,
     ObjectNames: XObjectNames,
-    createTableName: js.Function0[XTableName],
-    createWithConnection: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection, scala.Unit],
-    getComposer: js.Function2[
-      scala.Double, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbNs.XSingleSelectQueryComposer
-    ],
-    getDataSourceMetaData: js.Function0[XDataSourceMetaData],
-    getFieldsByCommandDescriptor: js.Function3[
-      scala.Double, 
-      java.lang.String, 
-      js.Array[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
-    ],
-    getObjectNames: js.Function0[XObjectNames]
+    createTableName: () => XTableName,
+    createWithConnection: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection => scala.Unit,
+    getComposer: (scala.Double, java.lang.String) => activexDashLibreofficeLib.comNs.sunNs.starNs.sdbNs.XSingleSelectQueryComposer,
+    getDataSourceMetaData: () => XDataSourceMetaData,
+    getFieldsByCommandDescriptor: (scala.Double, java.lang.String, js.Array[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent]) => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    getObjectNames: () => XObjectNames
   ): ConnectionTools = {
-    val __obj = js.Dynamic.literal(DataSourceMetaData = DataSourceMetaData, ObjectNames = ObjectNames, createTableName = createTableName, createWithConnection = createWithConnection, getComposer = getComposer, getDataSourceMetaData = getDataSourceMetaData, getFieldsByCommandDescriptor = getFieldsByCommandDescriptor, getObjectNames = getObjectNames)
+    val __obj = js.Dynamic.literal(DataSourceMetaData = DataSourceMetaData, ObjectNames = ObjectNames, createTableName = js.Any.fromFunction0(createTableName), createWithConnection = js.Any.fromFunction1(createWithConnection), getComposer = js.Any.fromFunction2(getComposer), getDataSourceMetaData = js.Any.fromFunction0(getDataSourceMetaData), getFieldsByCommandDescriptor = js.Any.fromFunction3(getFieldsByCommandDescriptor), getObjectNames = js.Any.fromFunction0(getObjectNames))
   
     __obj.asInstanceOf[ConnectionTools]
   }

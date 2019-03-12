@@ -13,8 +13,8 @@ trait IValidation extends js.Object {
 
 object IValidation {
   @scala.inline
-  def apply(Clone: js.Function0[IValidation], RegularExpression: java.lang.String, VBScript: java.lang.String): IValidation = {
-    val __obj = js.Dynamic.literal(Clone = Clone, RegularExpression = RegularExpression, VBScript = VBScript)
+  def apply(Clone: () => IValidation, RegularExpression: java.lang.String, VBScript: java.lang.String): IValidation = {
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), RegularExpression = RegularExpression, VBScript = VBScript)
   
     __obj.asInstanceOf[IValidation]
   }

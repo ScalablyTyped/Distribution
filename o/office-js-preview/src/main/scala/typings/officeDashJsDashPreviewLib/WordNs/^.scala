@@ -20,7 +20,7 @@ object ^ extends js.Object {
     *
     * run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
     */
-  def run[T](batch: js.Function1[/* context */ officeDashJsDashPreviewLib.WordNs.RequestContext, js.Promise[T]]): js.Promise[T] = js.native
+  def run[T](batch: js.Function1[/* context */ RequestContext, js.Promise[T]]): js.Promise[T] = js.native
   /**
     * Executes a batch script that performs actions on the Word object model, using the RequestContext of a previously created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     * @param object - A previously created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
@@ -28,7 +28,7 @@ object ^ extends js.Object {
     */
   def run[T](
     `object`: officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject,
-    batch: js.Function1[/* context */ officeDashJsDashPreviewLib.WordNs.RequestContext, js.Promise[T]]
+    batch: js.Function1[/* context */ RequestContext, js.Promise[T]]
   ): js.Promise[T] = js.native
   /**
     * Executes a batch script that performs actions on the Word object model, using the RequestContext of previously created API objects.
@@ -37,7 +37,7 @@ object ^ extends js.Object {
     */
   def run[T](
     objects: js.Array[officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject],
-    batch: js.Function1[/* context */ officeDashJsDashPreviewLib.WordNs.RequestContext, js.Promise[T]]
+    batch: js.Function1[/* context */ RequestContext, js.Promise[T]]
   ): js.Promise[T] = js.native
 }
 

@@ -33,11 +33,11 @@ object PhaseEvent {
     constructor: js.Function,
     deltaTime: scala.Double,
     elapsedFrameTime: scala.Double,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     time: scala.Double
   ): PhaseEvent = {
-    val __obj = js.Dynamic.literal(constructor = constructor, deltaTime = deltaTime, elapsedFrameTime = elapsedFrameTime, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, time = time)
+    val __obj = js.Dynamic.literal(constructor = constructor, deltaTime = deltaTime, elapsedFrameTime = elapsedFrameTime, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), time = time)
   
     __obj.asInstanceOf[PhaseEvent]
   }

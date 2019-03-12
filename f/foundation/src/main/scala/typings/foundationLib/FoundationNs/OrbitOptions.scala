@@ -46,10 +46,10 @@ object OrbitOptions {
   @scala.inline
   def apply(
     active_slide_class: java.lang.String = null,
-    after_slide_change: js.Function0[_] = null,
+    after_slide_change: () => _ = null,
     animation: java.lang.String = null,
     animation_speed: scala.Int | scala.Double = null,
-    before_slide_change: js.Function0[_] = null,
+    before_slide_change: () => _ = null,
     bullets: js.UndefOr[scala.Boolean] = js.undefined,
     bullets_active_class: java.lang.String = null,
     bullets_container_class: java.lang.String = null,
@@ -81,10 +81,10 @@ object OrbitOptions {
   ): OrbitOptions = {
     val __obj = js.Dynamic.literal()
     if (active_slide_class != null) __obj.updateDynamic("active_slide_class")(active_slide_class)
-    if (after_slide_change != null) __obj.updateDynamic("after_slide_change")(after_slide_change)
+    if (after_slide_change != null) __obj.updateDynamic("after_slide_change")(js.Any.fromFunction0(after_slide_change))
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (animation_speed != null) __obj.updateDynamic("animation_speed")(animation_speed.asInstanceOf[js.Any])
-    if (before_slide_change != null) __obj.updateDynamic("before_slide_change")(before_slide_change)
+    if (before_slide_change != null) __obj.updateDynamic("before_slide_change")(js.Any.fromFunction0(before_slide_change))
     if (!js.isUndefined(bullets)) __obj.updateDynamic("bullets")(bullets)
     if (bullets_active_class != null) __obj.updateDynamic("bullets_active_class")(bullets_active_class)
     if (bullets_container_class != null) __obj.updateDynamic("bullets_container_class")(bullets_container_class)

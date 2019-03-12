@@ -33,17 +33,12 @@ trait XHierarchicalStorageAccess2 extends XHierarchicalStorageAccess {
 object XHierarchicalStorageAccess2 {
   @scala.inline
   def apply(
-    openEncryptedStreamByHierarchicalName: js.Function3[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
-      XExtendedStorageStream
-    ],
-    openEncryptedStreamElementByHierarchicalName: js.Function3[java.lang.String, scala.Double, java.lang.String, XExtendedStorageStream],
-    openStreamElementByHierarchicalName: js.Function2[java.lang.String, scala.Double, XExtendedStorageStream],
-    removeStreamElementByHierarchicalName: js.Function1[java.lang.String, scala.Unit]
+    openEncryptedStreamByHierarchicalName: (java.lang.String, scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]) => XExtendedStorageStream,
+    openEncryptedStreamElementByHierarchicalName: (java.lang.String, scala.Double, java.lang.String) => XExtendedStorageStream,
+    openStreamElementByHierarchicalName: (java.lang.String, scala.Double) => XExtendedStorageStream,
+    removeStreamElementByHierarchicalName: java.lang.String => scala.Unit
   ): XHierarchicalStorageAccess2 = {
-    val __obj = js.Dynamic.literal(openEncryptedStreamByHierarchicalName = openEncryptedStreamByHierarchicalName, openEncryptedStreamElementByHierarchicalName = openEncryptedStreamElementByHierarchicalName, openStreamElementByHierarchicalName = openStreamElementByHierarchicalName, removeStreamElementByHierarchicalName = removeStreamElementByHierarchicalName)
+    val __obj = js.Dynamic.literal(openEncryptedStreamByHierarchicalName = js.Any.fromFunction3(openEncryptedStreamByHierarchicalName), openEncryptedStreamElementByHierarchicalName = js.Any.fromFunction3(openEncryptedStreamElementByHierarchicalName), openStreamElementByHierarchicalName = js.Any.fromFunction2(openStreamElementByHierarchicalName), removeStreamElementByHierarchicalName = js.Any.fromFunction1(removeStreamElementByHierarchicalName))
   
     __obj.asInstanceOf[XHierarchicalStorageAccess2]
   }

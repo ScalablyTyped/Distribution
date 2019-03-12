@@ -40,14 +40,14 @@ trait XSchema
 object XSchema {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    readComponent: js.Function1[XSchemaHandler, scala.Unit],
-    readSchema: js.Function1[XSchemaHandler, scala.Unit],
-    readTemplates: js.Function1[XSchemaHandler, scala.Unit],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    readComponent: XSchemaHandler => scala.Unit,
+    readSchema: XSchemaHandler => scala.Unit,
+    readTemplates: XSchemaHandler => scala.Unit,
+    release: () => scala.Unit
   ): XSchema = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, readComponent = readComponent, readSchema = readSchema, readTemplates = readTemplates, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), readComponent = js.Any.fromFunction1(readComponent), readSchema = js.Any.fromFunction1(readSchema), readTemplates = js.Any.fromFunction1(readTemplates), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSchema]
   }

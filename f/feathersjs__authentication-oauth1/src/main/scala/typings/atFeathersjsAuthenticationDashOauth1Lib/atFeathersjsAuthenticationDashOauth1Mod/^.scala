@@ -9,9 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val default: (js.Function1[
-    /* options */ js.UndefOr[
-      atFeathersjsAuthenticationDashOauth1Lib.atFeathersjsAuthenticationDashOauth1Mod.FeathersAuthenticationOAuth1Options
-    ], 
+    /* options */ js.UndefOr[FeathersAuthenticationOAuth1Options], 
     js.Function0[scala.Unit]
   ]) with atFeathersjsAuthenticationDashOauth1Lib.Anon_App = js.native
 }

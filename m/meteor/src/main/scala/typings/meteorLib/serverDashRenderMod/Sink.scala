@@ -23,9 +23,9 @@ trait Sink extends js.Object {
 object Sink {
   @scala.inline
   def apply(
-    appendToBody: js.Function1[/* html */ java.lang.String, scala.Unit] = null,
-    appendToElementById: js.Function2[/* id */ java.lang.String, /* html */ java.lang.String, scala.Unit] = null,
-    appendToHead: js.Function1[/* html */ java.lang.String, scala.Unit] = null,
+    appendToBody: /* html */ java.lang.String => scala.Unit = null,
+    appendToElementById: (/* id */ java.lang.String, /* html */ java.lang.String) => scala.Unit = null,
+    appendToHead: /* html */ java.lang.String => scala.Unit = null,
     arch: java.lang.String = null,
     body: java.lang.String = null,
     head: java.lang.String = null,
@@ -35,9 +35,9 @@ object Sink {
     request: nodeLib.httpMod.IncomingMessage = null
   ): Sink = {
     val __obj = js.Dynamic.literal()
-    if (appendToBody != null) __obj.updateDynamic("appendToBody")(appendToBody)
-    if (appendToElementById != null) __obj.updateDynamic("appendToElementById")(appendToElementById)
-    if (appendToHead != null) __obj.updateDynamic("appendToHead")(appendToHead)
+    if (appendToBody != null) __obj.updateDynamic("appendToBody")(js.Any.fromFunction1(appendToBody))
+    if (appendToElementById != null) __obj.updateDynamic("appendToElementById")(js.Any.fromFunction2(appendToElementById))
+    if (appendToHead != null) __obj.updateDynamic("appendToHead")(js.Any.fromFunction1(appendToHead))
     if (arch != null) __obj.updateDynamic("arch")(arch)
     if (body != null) __obj.updateDynamic("body")(body)
     if (head != null) __obj.updateDynamic("head")(head)

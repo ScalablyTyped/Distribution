@@ -11,8 +11,8 @@ trait IAjaxFileJQueryExtension extends js.Object {
 
 object IAjaxFileJQueryExtension {
   @scala.inline
-  def apply(ajaxWithFile: js.Function1[IJQueryOption, jqueryDotAjaxfileLib.JQueryDeferred[_]]): IAjaxFileJQueryExtension = {
-    val __obj = js.Dynamic.literal(ajaxWithFile = ajaxWithFile)
+  def apply(ajaxWithFile: IJQueryOption => jqueryDotAjaxfileLib.JQueryDeferred[_]): IAjaxFileJQueryExtension = {
+    val __obj = js.Dynamic.literal(ajaxWithFile = js.Any.fromFunction1(ajaxWithFile))
   
     __obj.asInstanceOf[IAjaxFileJQueryExtension]
   }

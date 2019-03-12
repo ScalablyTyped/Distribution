@@ -12,7 +12,7 @@ class Events ()
   @JSName("on")
   def on_error(
     event: pgLib.pgLibStrings.error,
-    listener: js.Function2[/* err */ nodeLib.Error, /* client */ Client, scala.Unit]
+    listener: js.Function2[/* err */ stdLib.Error, /* client */ Client, scala.Unit]
   ): this.type = js.native
 }
 

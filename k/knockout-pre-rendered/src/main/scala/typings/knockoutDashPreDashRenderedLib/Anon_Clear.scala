@@ -15,12 +15,12 @@ trait Anon_Clear extends js.Object {
 object Anon_Clear {
   @scala.inline
   def apply(
-    clear: js.Function1[stdLib.Element, scala.Boolean],
-    get: js.Function2[stdLib.Element, java.lang.String, js.Any],
-    getAll: js.Function2[stdLib.Element, scala.Boolean, js.Any],
-    set: js.Function3[stdLib.Element, java.lang.String, js.Any, scala.Unit]
+    clear: stdLib.Element => scala.Boolean,
+    get: (stdLib.Element, java.lang.String) => js.Any,
+    getAll: (stdLib.Element, scala.Boolean) => js.Any,
+    set: (stdLib.Element, java.lang.String, js.Any) => scala.Unit
   ): Anon_Clear = {
-    val __obj = js.Dynamic.literal(clear = clear, get = get, getAll = getAll, set = set)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear), get = js.Any.fromFunction2(get), getAll = js.Any.fromFunction2(getAll), set = js.Any.fromFunction3(set))
   
     __obj.asInstanceOf[Anon_Clear]
   }

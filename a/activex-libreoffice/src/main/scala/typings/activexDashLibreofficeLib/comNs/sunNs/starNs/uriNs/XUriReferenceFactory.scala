@@ -54,20 +54,14 @@ trait XUriReferenceFactory
 object XUriReferenceFactory {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    makeAbsolute: js.Function4[
-      XUriReference, 
-      XUriReference, 
-      scala.Boolean, 
-      RelativeUriExcessParentSegments, 
-      XUriReference
-    ],
-    makeRelative: js.Function5[XUriReference, XUriReference, scala.Boolean, scala.Boolean, scala.Boolean, XUriReference],
-    parse: js.Function1[java.lang.String, XUriReference],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    makeAbsolute: (XUriReference, XUriReference, scala.Boolean, RelativeUriExcessParentSegments) => XUriReference,
+    makeRelative: (XUriReference, XUriReference, scala.Boolean, scala.Boolean, scala.Boolean) => XUriReference,
+    parse: java.lang.String => XUriReference,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XUriReferenceFactory = {
-    val __obj = js.Dynamic.literal(acquire = acquire, makeAbsolute = makeAbsolute, makeRelative = makeRelative, parse = parse, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), makeAbsolute = js.Any.fromFunction4(makeAbsolute), makeRelative = js.Any.fromFunction5(makeRelative), parse = js.Any.fromFunction1(parse), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XUriReferenceFactory]
   }

@@ -42,7 +42,7 @@ object ScrollAreaProps {
     horizontalScrollbarStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     key: reactLib.reactMod.ReactNs.Key = null,
     minScrollSize: scala.Int | scala.Double = null,
-    onScroll: js.Function1[/* value */ reactDashScrollbarLib.Anon_ContainerHeight, scala.Unit] = null,
+    onScroll: /* value */ reactDashScrollbarLib.Anon_ContainerHeight => scala.Unit = null,
     ownerDocument: js.Any = null,
     ref: reactLib.reactMod.ReactNs.LegacyRef[ScrollArea] = null,
     smoothScrolling: js.UndefOr[scala.Boolean] = js.undefined,
@@ -66,7 +66,7 @@ object ScrollAreaProps {
     if (horizontalScrollbarStyle != null) __obj.updateDynamic("horizontalScrollbarStyle")(horizontalScrollbarStyle)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (minScrollSize != null) __obj.updateDynamic("minScrollSize")(minScrollSize.asInstanceOf[js.Any])
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
+    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (ownerDocument != null) __obj.updateDynamic("ownerDocument")(ownerDocument)
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (!js.isUndefined(smoothScrolling)) __obj.updateDynamic("smoothScrolling")(smoothScrolling)

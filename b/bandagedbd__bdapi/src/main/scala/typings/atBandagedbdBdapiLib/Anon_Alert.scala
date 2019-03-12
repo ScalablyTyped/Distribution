@@ -42,7 +42,7 @@ trait Anon_Alert extends js.Object {
   /**
   	 * Gets the internal react instance for a particular node.
   	 */
-  def getInternalInstance(node: reactLib.HTMLElement): js.UndefOr[js.Object] = js.native
+  def getInternalInstance(node: stdLib.HTMLElement): js.UndefOr[js.Object] = js.native
   /**
   	 * Gets the instance of another plugin with the name `name`.
   	 */
@@ -75,7 +75,7 @@ trait Anon_Alert extends js.Object {
   /**
   	 * Adds a listener for when the node is removed from the document body.
   	 */
-  def onRemoved(node: reactLib.HTMLElement, callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  def onRemoved(node: stdLib.HTMLElement, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
   	 * Saved some `data` for plugin `pluginName` under `key` key. Gets saved in the plugins folder under `pluginName.config.json`. Data can be saved with [`loadData`](#loaddatapluginname-key).
   	 */

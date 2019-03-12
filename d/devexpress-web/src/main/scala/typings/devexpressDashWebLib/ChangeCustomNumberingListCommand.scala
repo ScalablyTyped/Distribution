@@ -25,10 +25,10 @@ trait ChangeCustomNumberingListCommand extends CommandBase {
 object ChangeCustomNumberingListCommand {
   @scala.inline
   def apply(
-    execute: js.Function2[scala.Double, js.Array[ListLevelSettings], scala.Boolean],
-    getState: js.Function1[scala.Double, js.Any]
+    execute: (scala.Double, js.Array[ListLevelSettings]) => scala.Boolean,
+    getState: scala.Double => js.Any
   ): ChangeCustomNumberingListCommand = {
-    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction2(execute), getState = js.Any.fromFunction1(getState))
   
     __obj.asInstanceOf[ChangeCustomNumberingListCommand]
   }

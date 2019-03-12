@@ -14,8 +14,8 @@ trait TransformContext[T] extends js.Object {
 
 object TransformContext {
   @scala.inline
-  def apply[T](push: js.Function1[T, scala.Boolean]): TransformContext[T] = {
-    val __obj = js.Dynamic.literal(push = push)
+  def apply[T](push: T => scala.Boolean): TransformContext[T] = {
+    val __obj = js.Dynamic.literal(push = js.Any.fromFunction1(push))
   
     __obj.asInstanceOf[TransformContext[T]]
   }

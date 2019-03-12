@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ResponseFailure extends js.Object {
   var device: java.lang.String
-  var error: js.UndefOr[nodeLib.Error] = js.undefined
+  var error: js.UndefOr[stdLib.Error] = js.undefined
   var response: js.UndefOr[apnLib.Anon_Reason] = js.undefined
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -16,7 +16,7 @@ object ResponseFailure {
   @scala.inline
   def apply(
     device: java.lang.String,
-    error: nodeLib.Error = null,
+    error: stdLib.Error = null,
     response: apnLib.Anon_Reason = null,
     status: java.lang.String = null
   ): ResponseFailure = {

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Accordion: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsAccordionMod.AccordionProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+    AccordionProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
       reactLib.HTMLDivElement
     ]), 

@@ -30,22 +30,22 @@ trait StructureRampart
 object StructureRampart {
   @scala.inline
   def apply(
-    destroy: js.Function0[ScreepsReturnCode],
+    destroy: () => ScreepsReturnCode,
     hits: scala.Double,
     hitsMax: scala.Double,
     id: java.lang.String,
-    isActive: js.Function0[scala.Boolean],
+    isActive: () => scala.Boolean,
     isPublic: scala.Boolean,
     my: scala.Boolean,
-    notifyWhenAttacked: js.Function1[scala.Boolean, ScreepsReturnCode],
+    notifyWhenAttacked: scala.Boolean => ScreepsReturnCode,
     owner: Owner,
     pos: RoomPosition,
     room: Room,
-    setPublic: js.Function1[scala.Boolean, js.UndefOr[scala.Nothing]],
+    setPublic: scala.Boolean => js.UndefOr[scala.Nothing],
     structureType: STRUCTURE_RAMPART,
     ticksToDecay: scala.Double
   ): StructureRampart = {
-    val __obj = js.Dynamic.literal(destroy = destroy, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, isPublic = isPublic, my = my, notifyWhenAttacked = notifyWhenAttacked, owner = owner, pos = pos, room = room, setPublic = setPublic, structureType = structureType, ticksToDecay = ticksToDecay)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), isPublic = isPublic, my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, room = room, setPublic = js.Any.fromFunction1(setPublic), structureType = structureType, ticksToDecay = ticksToDecay)
   
     __obj.asInstanceOf[StructureRampart]
   }

@@ -12,8 +12,8 @@ trait Observer[T] extends js.Object {
 
 object Observer {
   @scala.inline
-  def apply[T](complete: js.Function0[scala.Unit], next: js.Function1[T, scala.Unit]): Observer[T] = {
-    val __obj = js.Dynamic.literal(complete = complete, next = next)
+  def apply[T](complete: () => scala.Unit, next: T => scala.Unit): Observer[T] = {
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), next = js.Any.fromFunction1(next))
   
     __obj.asInstanceOf[Observer[T]]
   }

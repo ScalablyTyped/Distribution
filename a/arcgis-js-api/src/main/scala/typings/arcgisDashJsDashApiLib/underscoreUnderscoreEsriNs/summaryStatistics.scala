@@ -35,12 +35,9 @@ trait summaryStatistics extends js.Object {
 object summaryStatistics {
   @scala.inline
   def apply(
-    summaryStatistics: js.Function1[
-      summaryStatisticsSummaryStatisticsParams, 
-      arcgisDashJsDashApiLib.IPromise[SummaryStatisticsResult]
-    ]
+    summaryStatistics: summaryStatisticsSummaryStatisticsParams => arcgisDashJsDashApiLib.IPromise[SummaryStatisticsResult]
   ): summaryStatistics = {
-    val __obj = js.Dynamic.literal(summaryStatistics = summaryStatistics)
+    val __obj = js.Dynamic.literal(summaryStatistics = js.Any.fromFunction1(summaryStatistics))
   
     __obj.asInstanceOf[summaryStatistics]
   }

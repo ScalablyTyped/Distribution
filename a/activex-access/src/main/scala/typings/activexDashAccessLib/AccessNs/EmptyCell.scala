@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class EmptyCell protected () extends js.Object {
   var `Access.EmptyCell_typekey`: EmptyCell = js.native
-  val Application: Application = js.native
+  val Application: activexDashAccessLib.AccessNs.Application = js.native
   var BackColor: scala.Double = js.native
   var BackShade: scala.Double = js.native
   var BackStyle: scala.Double = js.native
@@ -35,7 +35,7 @@ class EmptyCell protected () extends js.Object {
   var Height: scala.Double = js.native
   var HelpContextId: scala.Double = js.native
   var HorizontalAnchor: AcHorizontalAnchor = js.native
-  val Hyperlink: Hyperlink = js.native
+  val Hyperlink: activexDashAccessLib.AccessNs.Hyperlink = js.native
   var InSelection: scala.Boolean = js.native
   var IsVisible: scala.Boolean = js.native
   val Layout: AcLayoutType = js.native

@@ -28,8 +28,8 @@ object Instance {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     announce: js.Array[java.lang.String] = null,
     created: stdLib.Date = null,
     createdBy: java.lang.String = null,
@@ -46,7 +46,7 @@ object Instance {
     `private`: js.UndefOr[scala.Boolean] = js.undefined,
     urlList: js.Array[java.lang.String] = null
   ): Instance = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (announce != null) __obj.updateDynamic("announce")(announce)
     if (created != null) __obj.updateDynamic("created")(created)
     if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy)

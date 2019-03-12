@@ -16,7 +16,8 @@ trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
   /**
     * The active item/screen based on the current navigation state.
     */
-  var activeItem: DurandalActivator[_] = js.native
+  @JSName("activeItem")
+  var activeItem_Original: DurandalActivator[_] = js.native
   /**
     * Inspects routes and modules before activation. Can be used to protect access by cancelling navigation or redirecting.
     * @param {object} instance The module instance that is about to be activated by the router.
@@ -37,11 +38,13 @@ trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
   /**
     * Indicates that the router (or a child router) is currently in the process of navigating.
     */
-  var isNavigating: knockoutLib.KnockoutComputed[scala.Boolean] = js.native
+  @JSName("isNavigating")
+  var isNavigating_Original: knockoutLib.KnockoutComputed[scala.Boolean] = js.native
   /**
     * The route configurations that have been designated as displayable in a nav ui (nav:true).
     */
-  var navigationModel: knockoutLib.KnockoutObservableArray[DurandalRouteConfiguration] = js.native
+  @JSName("navigationModel")
+  var navigationModel_Original: knockoutLib.KnockoutObservableArray[DurandalRouteConfiguration] = js.native
   /**
     * Parent router of the current child router.
     */
@@ -60,6 +63,14 @@ trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
     * The instruction object has `config`, `fragment`, `queryString`, `params` and `queryParams` properties.
     */
   def activeInstruction(value: DurandalRouteInstruction): scala.Unit = js.native
+  /**
+    * The active item/screen based on the current navigation state.
+    */
+  def activeItem(): js.Any = js.native
+  /**
+    * The active item/screen based on the current navigation state.
+    */
+  def activeItem(value: js.Any): scala.Unit = js.native
   /**
     * Builds an observable array designed to bind a navigation UI to. The model will exist in the `navigationModel` property.
     * @param {number} defaultOrder The default order to use for navigation visible routes that don't specify an order. The defualt is 100.
@@ -91,6 +102,14 @@ trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
     * @returns {Router} The child router.
     */
   def createChildRouter(): T = js.native
+  /**
+    * Indicates that the router (or a child router) is currently in the process of navigating.
+    */
+  def isNavigating(): scala.Boolean = js.native
+  /**
+    * Indicates that the router (or a child router) is currently in the process of navigating.
+    */
+  def isNavigating(value: scala.Boolean): scala.Unit = js.native
   /**
     * Attempt to load the specified URL fragment. If a route succeeds with a match, returns `true`. If no defined routes matches the fragment, returns `false`.
     * @param {string} fragment The URL fragment to find a match for.
@@ -210,6 +229,14 @@ trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
     * Navigates back in the browser history.
     */
   def navigateBack(): scala.Unit = js.native
+  /**
+    * The route configurations that have been designated as displayable in a nav ui (nav:true).
+    */
+  def navigationModel(): js.Array[DurandalRouteConfiguration] = js.native
+  /**
+    * The route configurations that have been designated as displayable in a nav ui (nav:true).
+    */
+  def navigationModel(value: js.Array[DurandalRouteConfiguration]): scala.Unit = js.native
   /**
     * Parses a query string into an object.
     * @param {string} queryString The query string to parse.

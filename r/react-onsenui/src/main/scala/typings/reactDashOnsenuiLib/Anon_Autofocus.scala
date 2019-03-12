@@ -27,7 +27,7 @@ object Anon_Autofocus {
     modifier: java.lang.String = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
-    onChange: js.Function1[/* e */ reactLib.reactMod.ReactNs.ChangeEvent[_], scala.Unit] = null,
+    onChange: /* e */ reactLib.reactMod.ReactNs.ChangeEvent[_] => scala.Unit = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
     size: java.lang.String = null,
     value: java.lang.String = null
@@ -39,7 +39,7 @@ object Anon_Autofocus {
     if (modifier != null) __obj.updateDynamic("modifier")(modifier)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
     if (size != null) __obj.updateDynamic("size")(size)
     if (value != null) __obj.updateDynamic("value")(value)

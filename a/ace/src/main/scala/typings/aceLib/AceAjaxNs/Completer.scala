@@ -31,11 +31,11 @@ trait Completer extends js.Object {
 object Completer {
   @scala.inline
   def apply(
-    getCompletions: js.Function5[Editor, IEditSession, Position, java.lang.String, CompletionCallback, scala.Unit],
-    getDocTooltip: js.Function1[/* item */ Completion, scala.Unit] = null
+    getCompletions: (Editor, IEditSession, Position, java.lang.String, CompletionCallback) => scala.Unit,
+    getDocTooltip: /* item */ Completion => scala.Unit = null
   ): Completer = {
-    val __obj = js.Dynamic.literal(getCompletions = getCompletions)
-    if (getDocTooltip != null) __obj.updateDynamic("getDocTooltip")(getDocTooltip)
+    val __obj = js.Dynamic.literal(getCompletions = js.Any.fromFunction5(getCompletions))
+    if (getDocTooltip != null) __obj.updateDynamic("getDocTooltip")(js.Any.fromFunction1(getDocTooltip))
     __obj.asInstanceOf[Completer]
   }
 }

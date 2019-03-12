@@ -18,15 +18,15 @@ trait IStrings extends js.Object {
 object IStrings {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, java.lang.String, scala.Unit],
-    Clone: js.Function0[IStrings],
-    CloneFrom: js.Function1[IStrings, scala.Unit],
+    Add: (scala.Double, java.lang.String) => scala.Unit,
+    Clone: () => IStrings,
+    CloneFrom: IStrings => scala.Unit,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, java.lang.String],
-    Join: js.Function1[java.lang.String, java.lang.String],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => java.lang.String,
+    Join: java.lang.String => java.lang.String,
+    Remove: scala.Double => scala.Unit
   ): IStrings = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, CloneFrom = CloneFrom, Count = Count, Item = Item, Join = Join, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), CloneFrom = js.Any.fromFunction1(CloneFrom), Count = Count, Item = js.Any.fromFunction1(Item), Join = js.Any.fromFunction1(Join), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IStrings]
   }

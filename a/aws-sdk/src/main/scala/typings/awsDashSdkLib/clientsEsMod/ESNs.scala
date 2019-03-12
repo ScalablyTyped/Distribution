@@ -23,11 +23,11 @@ object ESNs extends js.Object {
     /**
       *  Specify the ARN for which you want to add the tags.
       */
-    var ARN: ARN
+    var ARN: awsDashSdkLib.clientsEsMod.ESNs.ARN
     /**
       *  List of Tag that need to be added for the Elasticsearch domain. 
       */
-    var TagList: TagList
+    var TagList: awsDashSdkLib.clientsEsMod.ESNs.TagList
   }
   
   trait AdditionalLimit extends js.Object {
@@ -59,7 +59,7 @@ object ESNs extends js.Object {
     /**
       * The name of the domain that you want to stop the latest service software update on.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsEsMod.ESNs.DomainName
   }
   
   trait CancelElasticsearchServiceSoftwareUpdateResponse extends js.Object {
@@ -130,7 +130,7 @@ object ESNs extends js.Object {
     /**
       * The name of the Elasticsearch domain that you are creating. Domain names are unique across the domains owned by an account within an AWS region. Domain names must start with a letter or number and can contain the following characters: a-z (lowercase), 0-9, and - (hyphen).
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsEsMod.ESNs.DomainName
     /**
       * Options to enable, disable and specify the type and size of EBS storage volumes. 
       */
@@ -176,7 +176,7 @@ object ESNs extends js.Object {
     /**
       * The name of the Elasticsearch domain that you want to permanently delete.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsEsMod.ESNs.DomainName
   }
   
   trait DeleteElasticsearchDomainResponse extends js.Object {
@@ -190,7 +190,7 @@ object ESNs extends js.Object {
     /**
       * The Elasticsearch domain that you want to get information about.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsEsMod.ESNs.DomainName
   }
   
   trait DescribeElasticsearchDomainConfigResponse extends js.Object {
@@ -204,7 +204,7 @@ object ESNs extends js.Object {
     /**
       * The name of the Elasticsearch domain for which you want information.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsEsMod.ESNs.DomainName
   }
   
   trait DescribeElasticsearchDomainResponse extends js.Object {
@@ -429,7 +429,7 @@ object ESNs extends js.Object {
     /**
       * The Amazon resource name (ARN) of an Elasticsearch domain. See Identifiers for IAM Entities in Using AWS Identity and Access Management for more information.
       */
-    var ARN: ARN
+    var ARN: awsDashSdkLib.clientsEsMod.ESNs.ARN
     /**
       *  IAM access policy as a JSON-formatted string.
       */
@@ -453,11 +453,11 @@ object ESNs extends js.Object {
     /**
       * The unique identifier for the specified Elasticsearch domain.
       */
-    var DomainId: DomainId
+    var DomainId: awsDashSdkLib.clientsEsMod.ESNs.DomainId
     /**
       * The name of an Elasticsearch domain. Domain names are unique across the domains owned by an account within an AWS region. Domain names start with a letter or number and can contain the following characters: a-z (lowercase), 0-9, and - (hyphen).
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsEsMod.ESNs.DomainName
     /**
       * The EBSOptions for the specified domain. See Configuring EBS-based Storage for more information.
       */
@@ -465,7 +465,7 @@ object ESNs extends js.Object {
     /**
       * The type and number of instances in the domain cluster.
       */
-    var ElasticsearchClusterConfig: ElasticsearchClusterConfig
+    var ElasticsearchClusterConfig: awsDashSdkLib.clientsEsMod.ESNs.ElasticsearchClusterConfig
     var ElasticsearchVersion: js.UndefOr[ElasticsearchVersionString] = js.undefined
     /**
       *  Specifies the status of the EncryptionAtRestOptions.
@@ -557,7 +557,7 @@ object ESNs extends js.Object {
   }
   
   trait GetUpgradeHistoryRequest extends js.Object {
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsEsMod.ESNs.DomainName
     var MaxResults: js.UndefOr[MaxResults] = js.undefined
     var NextToken: js.UndefOr[NextToken] = js.undefined
   }
@@ -574,7 +574,7 @@ object ESNs extends js.Object {
   }
   
   trait GetUpgradeStatusRequest extends js.Object {
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsEsMod.ESNs.DomainName
   }
   
   trait GetUpgradeStatusResponse extends js.Object {
@@ -670,7 +670,7 @@ object ESNs extends js.Object {
     /**
       *  Specify the ARN for the Elasticsearch domain to which the tags are attached that you want to view.
       */
-    var ARN: ARN
+    var ARN: awsDashSdkLib.clientsEsMod.ESNs.ARN
   }
   
   trait ListTagsResponse extends js.Object {
@@ -784,7 +784,7 @@ object ESNs extends js.Object {
     /**
       * Specifies the ARN for the Elasticsearch domain from which you want to delete the specified tags.
       */
-    var ARN: ARN
+    var ARN: awsDashSdkLib.clientsEsMod.ESNs.ARN
     /**
       * Specifies the TagKey list which you want to remove from the Elasticsearch domain.
       */
@@ -934,7 +934,7 @@ object ESNs extends js.Object {
     /**
       * The name of the domain that you want to update to the latest service software.
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsEsMod.ESNs.DomainName
   }
   
   trait StartElasticsearchServiceSoftwareUpdateResponse extends js.Object {
@@ -1543,7 +1543,7 @@ object ESNs extends js.Object {
     /**
       * The name of the Elasticsearch domain that you are updating. 
       */
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsEsMod.ESNs.DomainName
     /**
       * Specify the type and size of the EBS volume that you want to use. 
       */
@@ -1574,7 +1574,7 @@ object ESNs extends js.Object {
   }
   
   trait UpgradeElasticsearchDomainRequest extends js.Object {
-    var DomainName: DomainName
+    var DomainName: awsDashSdkLib.clientsEsMod.ESNs.DomainName
     /**
       *  This flag, when set to True, indicates that an Upgrade Eligibility Check needs to be performed. This will not actually perform the Upgrade. 
       */

@@ -56,9 +56,9 @@ trait DatabaseListBox
     * @see com.sun.star.awt.UnoControlListBoxModel.SelectedItems
     * @see com.sun.star.form.XReset
     */
-  var DefaultSelection: activexDashInteropLib.SafeArray[scala.Double] = js.native
+  var DefaultSelection: stdLib.SafeArray[scala.Double] = js.native
   /** contains the values associated to the strings to be displayed (which are specified by {@link com.sun.star.awt.UnoControlListBoxModel.StringItemList} ) */
-  var ListSource: activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  var ListSource: stdLib.SafeArray[java.lang.String] = js.native
   /**
     * describes the kind of list source used.
     *
@@ -86,6 +86,6 @@ trait DatabaseListBox
   /** The selected value, if there is at most one. */
   var SelectedValue: js.Any = js.native
   /** The selected values. */
-  var SelectedValues: activexDashInteropLib.SafeArray[_] = js.native
+  var SelectedValues: stdLib.SafeArray[_] = js.native
 }
 

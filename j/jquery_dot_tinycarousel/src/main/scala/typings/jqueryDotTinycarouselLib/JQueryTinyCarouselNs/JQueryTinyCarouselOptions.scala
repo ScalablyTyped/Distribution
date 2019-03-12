@@ -59,7 +59,7 @@ object JQueryTinyCarouselOptions {
   def apply(
     animation: js.UndefOr[scala.Boolean] = js.undefined,
     axis: java.lang.String = null,
-    callback: js.Function2[/* element */ stdLib.HTMLElement, /* index */ scala.Double, scala.Unit] = null,
+    callback: (/* element */ stdLib.HTMLElement, /* index */ scala.Double) => scala.Unit = null,
     controls: js.UndefOr[scala.Boolean] = js.undefined,
     display: scala.Int | scala.Double = null,
     duration: scala.Int | scala.Double = null,
@@ -72,7 +72,7 @@ object JQueryTinyCarouselOptions {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
     if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
     if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls)
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])

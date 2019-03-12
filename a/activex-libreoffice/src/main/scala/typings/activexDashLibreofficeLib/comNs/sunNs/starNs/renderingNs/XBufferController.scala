@@ -56,15 +56,15 @@ trait XBufferController
 object XBufferController {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createBuffers: js.Function1[scala.Double, scala.Double],
-    destroyBuffers: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    showBuffer: js.Function1[scala.Boolean, scala.Boolean],
-    switchBuffer: js.Function1[scala.Boolean, scala.Boolean]
+    acquire: () => scala.Unit,
+    createBuffers: scala.Double => scala.Double,
+    destroyBuffers: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    showBuffer: scala.Boolean => scala.Boolean,
+    switchBuffer: scala.Boolean => scala.Boolean
   ): XBufferController = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createBuffers = createBuffers, destroyBuffers = destroyBuffers, queryInterface = queryInterface, release = release, showBuffer = showBuffer, switchBuffer = switchBuffer)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createBuffers = js.Any.fromFunction1(createBuffers), destroyBuffers = js.Any.fromFunction0(destroyBuffers), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), showBuffer = js.Any.fromFunction1(showBuffer), switchBuffer = js.Any.fromFunction1(switchBuffer))
   
     __obj.asInstanceOf[XBufferController]
   }

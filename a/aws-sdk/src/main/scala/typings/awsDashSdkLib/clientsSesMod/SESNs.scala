@@ -12,11 +12,11 @@ object SESNs extends js.Object {
     /**
       * The name of the header to add. Must be between 1 and 50 characters, inclusive, and consist of alphanumeric (a-z, A-Z, 0-9) characters and dashes only.
       */
-    var HeaderName: HeaderName
+    var HeaderName: awsDashSdkLib.clientsSesMod.SESNs.HeaderName
     /**
       * Must be less than 2048 characters, and must not contain newline characters ("\r" or "\n").
       */
-    var HeaderValue: HeaderValue
+    var HeaderValue: awsDashSdkLib.clientsSesMod.SESNs.HeaderValue
   }
   
   trait Body extends js.Object {
@@ -73,7 +73,7 @@ object SESNs extends js.Object {
   }
   
   trait BulkEmailDestination extends js.Object {
-    var Destination: Destination
+    var Destination: awsDashSdkLib.clientsSesMod.SESNs.Destination
     /**
       * A list of tags, in the form of name/value pairs, to apply to an email that you send using SendBulkTemplatedEmail. Tags correspond to characteristics of the email that you define, so that you can publish email sending events.
       */
@@ -130,15 +130,15 @@ object SESNs extends js.Object {
     /**
       * The default value of the dimension that is published to Amazon CloudWatch if you do not provide the value of the dimension when you send an email. The default value must:   This value can only contain ASCII letters (a-z, A-Z), numbers (0-9), underscores (_), or dashes (-).   Contain less than 256 characters.  
       */
-    var DefaultDimensionValue: DefaultDimensionValue
+    var DefaultDimensionValue: awsDashSdkLib.clientsSesMod.SESNs.DefaultDimensionValue
     /**
       * The name of an Amazon CloudWatch dimension associated with an email sending metric. The name must:   This value can only contain ASCII letters (a-z, A-Z), numbers (0-9), underscores (_), or dashes (-).   Contain less than 256 characters.  
       */
-    var DimensionName: DimensionName
+    var DimensionName: awsDashSdkLib.clientsSesMod.SESNs.DimensionName
     /**
       * The place where Amazon SES finds the value of a dimension to publish to Amazon CloudWatch. If you want Amazon SES to use the message tags that you specify using an X-SES-MESSAGE-TAGS header or a parameter to the SendEmail/SendRawEmail API, choose messageTag. If you want Amazon SES to use your own email headers, choose emailHeader.
       */
-    var DimensionValueSource: DimensionValueSource
+    var DimensionValueSource: awsDashSdkLib.clientsSesMod.SESNs.DimensionValueSource
   }
   
   trait ConfigurationSet extends js.Object {
@@ -163,11 +163,11 @@ object SESNs extends js.Object {
     /**
       * The name of the configuration set that the event destination should be associated with.
       */
-    var ConfigurationSetName: ConfigurationSetName
+    var ConfigurationSetName: awsDashSdkLib.clientsSesMod.SESNs.ConfigurationSetName
     /**
       * An object that describes the AWS service that email sending event information will be published to.
       */
-    var EventDestination: EventDestination
+    var EventDestination: awsDashSdkLib.clientsSesMod.SESNs.EventDestination
   }
   
   trait CreateConfigurationSetEventDestinationResponse extends js.Object
@@ -176,7 +176,7 @@ object SESNs extends js.Object {
     /**
       * A data structure that contains the name of the configuration set.
       */
-    var ConfigurationSet: ConfigurationSet
+    var ConfigurationSet: awsDashSdkLib.clientsSesMod.SESNs.ConfigurationSet
   }
   
   trait CreateConfigurationSetResponse extends js.Object
@@ -185,8 +185,8 @@ object SESNs extends js.Object {
     /**
       * The name of the configuration set that the tracking options should be associated with.
       */
-    var ConfigurationSetName: ConfigurationSetName
-    var TrackingOptions: TrackingOptions
+    var ConfigurationSetName: awsDashSdkLib.clientsSesMod.SESNs.ConfigurationSetName
+    var TrackingOptions: awsDashSdkLib.clientsSesMod.SESNs.TrackingOptions
   }
   
   trait CreateConfigurationSetTrackingOptionsResponse extends js.Object
@@ -195,7 +195,7 @@ object SESNs extends js.Object {
     /**
       * The URL that the recipient of the verification email is sent to if his or her address is not successfully verified.
       */
-    var FailureRedirectionURL: FailureRedirectionURL
+    var FailureRedirectionURL: awsDashSdkLib.clientsSesMod.SESNs.FailureRedirectionURL
     /**
       * The email address that the custom verification email is sent from.
       */
@@ -203,15 +203,15 @@ object SESNs extends js.Object {
     /**
       * The URL that the recipient of the verification email is sent to if his or her address is successfully verified.
       */
-    var SuccessRedirectionURL: SuccessRedirectionURL
+    var SuccessRedirectionURL: awsDashSdkLib.clientsSesMod.SESNs.SuccessRedirectionURL
     /**
       * The content of the custom verification email. The total size of the email must be less than 10 MB. The message body may contain HTML, with some limitations. For more information, see Custom Verification Email Frequently Asked Questions in the Amazon SES Developer Guide.
       */
-    var TemplateContent: TemplateContent
+    var TemplateContent: awsDashSdkLib.clientsSesMod.SESNs.TemplateContent
     /**
       * The name of the custom verification email template.
       */
-    var TemplateName: TemplateName
+    var TemplateName: awsDashSdkLib.clientsSesMod.SESNs.TemplateName
     /**
       * The subject line of the custom verification email.
       */
@@ -257,7 +257,7 @@ object SESNs extends js.Object {
     /**
       * The content of the email, composed of a subject line, an HTML part, and a text-only part.
       */
-    var Template: Template
+    var Template: awsDashSdkLib.clientsSesMod.SESNs.Template
   }
   
   trait CreateTemplateResponse extends js.Object
@@ -289,11 +289,11 @@ object SESNs extends js.Object {
     /**
       * The name of the configuration set from which to delete the event destination.
       */
-    var ConfigurationSetName: ConfigurationSetName
+    var ConfigurationSetName: awsDashSdkLib.clientsSesMod.SESNs.ConfigurationSetName
     /**
       * The name of the event destination to delete.
       */
-    var EventDestinationName: EventDestinationName
+    var EventDestinationName: awsDashSdkLib.clientsSesMod.SESNs.EventDestinationName
   }
   
   trait DeleteConfigurationSetEventDestinationResponse extends js.Object
@@ -302,7 +302,7 @@ object SESNs extends js.Object {
     /**
       * The name of the configuration set to delete.
       */
-    var ConfigurationSetName: ConfigurationSetName
+    var ConfigurationSetName: awsDashSdkLib.clientsSesMod.SESNs.ConfigurationSetName
   }
   
   trait DeleteConfigurationSetResponse extends js.Object
@@ -311,7 +311,7 @@ object SESNs extends js.Object {
     /**
       * The name of the configuration set from which you want to delete the tracking options.
       */
-    var ConfigurationSetName: ConfigurationSetName
+    var ConfigurationSetName: awsDashSdkLib.clientsSesMod.SESNs.ConfigurationSetName
   }
   
   trait DeleteConfigurationSetTrackingOptionsResponse extends js.Object
@@ -320,18 +320,18 @@ object SESNs extends js.Object {
     /**
       * The name of the custom verification email template that you want to delete.
       */
-    var TemplateName: TemplateName
+    var TemplateName: awsDashSdkLib.clientsSesMod.SESNs.TemplateName
   }
   
   trait DeleteIdentityPolicyRequest extends js.Object {
     /**
       * The identity that is associated with the policy that you want to delete. You can specify the identity by using its name or by using its Amazon Resource Name (ARN). Examples: user@example.com, example.com, arn:aws:ses:us-east-1:123456789012:identity/example.com. To successfully call this API, you must own the identity.
       */
-    var Identity: Identity
+    var Identity: awsDashSdkLib.clientsSesMod.SESNs.Identity
     /**
       * The name of the policy to be deleted.
       */
-    var PolicyName: PolicyName
+    var PolicyName: awsDashSdkLib.clientsSesMod.SESNs.PolicyName
   }
   
   trait DeleteIdentityPolicyResponse extends js.Object
@@ -340,7 +340,7 @@ object SESNs extends js.Object {
     /**
       * The identity to be removed from the list of identities for the AWS Account.
       */
-    var Identity: Identity
+    var Identity: awsDashSdkLib.clientsSesMod.SESNs.Identity
   }
   
   trait DeleteIdentityResponse extends js.Object
@@ -380,7 +380,7 @@ object SESNs extends js.Object {
     /**
       * The name of the template to be deleted.
       */
-    var TemplateName: TemplateName
+    var TemplateName: awsDashSdkLib.clientsSesMod.SESNs.TemplateName
   }
   
   trait DeleteTemplateResponse extends js.Object
@@ -413,7 +413,7 @@ object SESNs extends js.Object {
     /**
       * The name of the configuration set to describe.
       */
-    var ConfigurationSetName: ConfigurationSetName
+    var ConfigurationSetName: awsDashSdkLib.clientsSesMod.SESNs.ConfigurationSetName
   }
   
   trait DescribeConfigurationSetResponse extends js.Object {
@@ -538,7 +538,7 @@ object SESNs extends js.Object {
     /**
       * The name of the custom verification email template that you want to retrieve.
       */
-    var TemplateName: TemplateName
+    var TemplateName: awsDashSdkLib.clientsSesMod.SESNs.TemplateName
   }
   
   trait GetCustomVerificationEmailTemplateResponse extends js.Object {
@@ -579,7 +579,7 @@ object SESNs extends js.Object {
     /**
       * The DKIM attributes for an email address or a domain.
       */
-    var DkimAttributes: DkimAttributes
+    var DkimAttributes: awsDashSdkLib.clientsSesMod.SESNs.DkimAttributes
   }
   
   trait GetIdentityMailFromDomainAttributesRequest extends js.Object {
@@ -593,7 +593,7 @@ object SESNs extends js.Object {
     /**
       * A map of identities to custom MAIL FROM attributes.
       */
-    var MailFromDomainAttributes: MailFromDomainAttributes
+    var MailFromDomainAttributes: awsDashSdkLib.clientsSesMod.SESNs.MailFromDomainAttributes
   }
   
   trait GetIdentityNotificationAttributesRequest extends js.Object {
@@ -607,14 +607,14 @@ object SESNs extends js.Object {
     /**
       * A map of Identity to IdentityNotificationAttributes.
       */
-    var NotificationAttributes: NotificationAttributes
+    var NotificationAttributes: awsDashSdkLib.clientsSesMod.SESNs.NotificationAttributes
   }
   
   trait GetIdentityPoliciesRequest extends js.Object {
     /**
       * The identity for which the policies will be retrieved. You can specify an identity by using its name or by using its Amazon Resource Name (ARN). Examples: user@example.com, example.com, arn:aws:ses:us-east-1:123456789012:identity/example.com. To successfully call this API, you must own the identity.
       */
-    var Identity: Identity
+    var Identity: awsDashSdkLib.clientsSesMod.SESNs.Identity
     /**
       * A list of the names of policies to be retrieved. You can retrieve a maximum of 20 policies at a time. If you do not know the names of the policies that are attached to the identity, you can use ListIdentityPolicies.
       */
@@ -639,7 +639,7 @@ object SESNs extends js.Object {
     /**
       * A map of Identities to IdentityVerificationAttributes objects.
       */
-    var VerificationAttributes: VerificationAttributes
+    var VerificationAttributes: awsDashSdkLib.clientsSesMod.SESNs.VerificationAttributes
   }
   
   trait GetSendQuotaResponse extends js.Object {
@@ -668,7 +668,7 @@ object SESNs extends js.Object {
     /**
       * The name of the template you want to retrieve.
       */
-    var TemplateName: TemplateName
+    var TemplateName: awsDashSdkLib.clientsSesMod.SESNs.TemplateName
   }
   
   trait GetTemplateResponse extends js.Object {
@@ -694,7 +694,7 @@ object SESNs extends js.Object {
     /**
       * The action that Amazon SES takes if it cannot successfully read the required MX record when you send an email. A value of UseDefaultValue indicates that if Amazon SES cannot read the required MX record, it uses amazonses.com (or a subdomain of that) as the MAIL FROM domain. A value of RejectMessage indicates that if Amazon SES cannot read the required MX record, Amazon SES returns a MailFromDomainNotVerified error and does not send the email. The custom MAIL FROM setup states that result in this behavior are Pending, Failed, and TemporaryFailure.
       */
-    var BehaviorOnMXFailure: BehaviorOnMXFailure
+    var BehaviorOnMXFailure: awsDashSdkLib.clientsSesMod.SESNs.BehaviorOnMXFailure
     /**
       * The custom MAIL FROM domain that the identity is configured to use.
       */
@@ -740,7 +740,7 @@ object SESNs extends js.Object {
     /**
       * The verification status of the identity: "Pending", "Success", "Failed", or "TemporaryFailure".
       */
-    var VerificationStatus: VerificationStatus
+    var VerificationStatus: awsDashSdkLib.clientsSesMod.SESNs.VerificationStatus
     /**
       * The verification token for a domain identity. Null for email address identities.
       */
@@ -847,7 +847,7 @@ object SESNs extends js.Object {
     /**
       * The identity that is associated with the policy for which the policies will be listed. You can specify an identity by using its name or by using its Amazon Resource Name (ARN). Examples: user@example.com, example.com, arn:aws:ses:us-east-1:123456789012:identity/example.com. To successfully call this API, you must own the identity.
       */
-    var Identity: Identity
+    var Identity: awsDashSdkLib.clientsSesMod.SESNs.Identity
   }
   
   trait ListIdentityPoliciesResponse extends js.Object {
@@ -920,7 +920,7 @@ object SESNs extends js.Object {
     /**
       * The message body.
       */
-    var Body: Body
+    var Body: awsDashSdkLib.clientsSesMod.SESNs.Body
     /**
       * The subject of the message: A short summary of the content, which will appear in the recipient's inbox.
       */
@@ -939,7 +939,7 @@ object SESNs extends js.Object {
     /**
       * The reporting MTA that attempted to deliver the message, formatted as specified in RFC 3464 (mta-name-type; mta-name). The default value is dns; inbound-smtp.[region].amazonaws.com.
       */
-    var ReportingMta: ReportingMta
+    var ReportingMta: awsDashSdkLib.clientsSesMod.SESNs.ReportingMta
   }
   
   trait MessageTag extends js.Object {
@@ -963,15 +963,15 @@ object SESNs extends js.Object {
     /**
       * The identity that the policy will apply to. You can specify an identity by using its name or by using its Amazon Resource Name (ARN). Examples: user@example.com, example.com, arn:aws:ses:us-east-1:123456789012:identity/example.com. To successfully call this API, you must own the identity.
       */
-    var Identity: Identity
+    var Identity: awsDashSdkLib.clientsSesMod.SESNs.Identity
     /**
       * The text of the policy in JSON format. The policy cannot exceed 4 KB. For information about the syntax of sending authorization policies, see the Amazon SES Developer Guide. 
       */
-    var Policy: Policy
+    var Policy: awsDashSdkLib.clientsSesMod.SESNs.Policy
     /**
       * The name of the policy. The policy name cannot exceed 64 characters and can only include alphanumeric characters, dashes, and underscores.
       */
-    var PolicyName: PolicyName
+    var PolicyName: awsDashSdkLib.clientsSesMod.SESNs.PolicyName
   }
   
   trait PutIdentityPolicyResponse extends js.Object
@@ -1029,7 +1029,7 @@ object SESNs extends js.Object {
     /**
       * A single IP address or a range of IP addresses that you want to block or allow, specified in Classless Inter-Domain Routing (CIDR) notation. An example of a single email address is 10.0.0.1. An example of a range of IP addresses is 10.0.0.1/24. For more information about CIDR notation, see RFC 2317.
       */
-    var Cidr: Cidr
+    var Cidr: awsDashSdkLib.clientsSesMod.SESNs.Cidr
     /**
       * Indicates whether to block or allow incoming mail from the specified IP addresses.
       */
@@ -1182,7 +1182,7 @@ object SESNs extends js.Object {
     /**
       * A list of recipients of the bounced message, including the information required to create the Delivery Status Notifications (DSNs) for the recipients. You must specify at least one BouncedRecipientInfo in the list.
       */
-    var BouncedRecipientInfoList: BouncedRecipientInfoList
+    var BouncedRecipientInfoList: awsDashSdkLib.clientsSesMod.SESNs.BouncedRecipientInfoList
     /**
       * Human-readable text for the bounce message to explain the failure. If not specified, the text will be auto-generated based on the bounced recipient information.
       */
@@ -1270,7 +1270,7 @@ object SESNs extends js.Object {
     /**
       * The name of the custom verification email template to use when sending the verification email.
       */
-    var TemplateName: TemplateName
+    var TemplateName: awsDashSdkLib.clientsSesMod.SESNs.TemplateName
   }
   
   trait SendCustomVerificationEmailResponse extends js.Object {
@@ -1311,11 +1311,11 @@ object SESNs extends js.Object {
     /**
       * The destination for this email, composed of To:, CC:, and BCC: fields.
       */
-    var Destination: Destination
+    var Destination: awsDashSdkLib.clientsSesMod.SESNs.Destination
     /**
       * The message to be sent.
       */
-    var Message: Message
+    var Message: awsDashSdkLib.clientsSesMod.SESNs.Message
     /**
       * The reply-to email address(es) for the message. If the recipient replies to the message, each reply-to address will receive the reply.
       */
@@ -1346,7 +1346,7 @@ object SESNs extends js.Object {
     /**
       * The unique message identifier returned from the SendEmail action. 
       */
-    var MessageId: MessageId
+    var MessageId: awsDashSdkLib.clientsSesMod.SESNs.MessageId
   }
   
   trait SendRawEmailRequest extends js.Object {
@@ -1365,7 +1365,7 @@ object SESNs extends js.Object {
     /**
       * The raw email message itself. The message has to meet the following criteria:   The message has to contain a header and a body, separated by a blank line.   All of the required header fields must be present in the message.   Each part of a multipart MIME message must be formatted properly.   Attachments must be of a content type that Amazon SES supports. For a list on unsupported content types, see Unsupported Attachment Types in the Amazon SES Developer Guide.   The entire message must be base64-encoded.   If any of the MIME parts in your message contain content that is outside of the 7-bit ASCII character range, we highly recommend that you encode that content. For more information, see Sending Raw Email in the Amazon SES Developer Guide.   Per RFC 5321, the maximum length of each line of text, including the &lt;CRLF&gt;, must not exceed 1,000 characters.  
       */
-    var RawMessage: RawMessage
+    var RawMessage: awsDashSdkLib.clientsSesMod.SESNs.RawMessage
     /**
       * This parameter is used only for sending authorization. It is the ARN of the identity that is associated with the sending authorization policy that permits you to use the email address specified in the ReturnPath parameter. For example, if the owner of example.com (which has ARN arn:aws:ses:us-east-1:123456789012:identity/example.com) attaches a policy to it that authorizes you to use feedback@example.com, then you would specify the ReturnPathArn to be arn:aws:ses:us-east-1:123456789012:identity/example.com, and the ReturnPath to be feedback@example.com. Instead of using this parameter, you can use the X-header X-SES-RETURN-PATH-ARN in the raw message of the email. If you use both the ReturnPathArn parameter and the corresponding X-header, Amazon SES uses the value of the ReturnPathArn parameter.  For information about when to use this parameter, see the description of SendRawEmail in this guide, or see the Amazon SES Developer Guide. 
       */
@@ -1388,7 +1388,7 @@ object SESNs extends js.Object {
     /**
       * The unique message identifier returned from the SendRawEmail action. 
       */
-    var MessageId: MessageId
+    var MessageId: awsDashSdkLib.clientsSesMod.SESNs.MessageId
   }
   
   trait SendTemplatedEmailRequest extends js.Object {
@@ -1399,7 +1399,7 @@ object SESNs extends js.Object {
     /**
       * The destination for this email, composed of To:, CC:, and BCC: fields. A Destination can include up to 50 recipients across these three fields.
       */
-    var Destination: Destination
+    var Destination: awsDashSdkLib.clientsSesMod.SESNs.Destination
     /**
       * The reply-to email address(es) for the message. If the recipient replies to the message, each reply-to address will receive the reply.
       */
@@ -1435,14 +1435,14 @@ object SESNs extends js.Object {
     /**
       * A list of replacement values to apply to the template. This parameter is a JSON object, typically consisting of key-value pairs in which the keys correspond to replacement tags in the email template.
       */
-    var TemplateData: TemplateData
+    var TemplateData: awsDashSdkLib.clientsSesMod.SESNs.TemplateData
   }
   
   trait SendTemplatedEmailResponse extends js.Object {
     /**
       * The unique message identifier returned from the SendTemplatedEmail action. 
       */
-    var MessageId: MessageId
+    var MessageId: awsDashSdkLib.clientsSesMod.SESNs.MessageId
   }
   
   trait SetActiveReceiptRuleSetRequest extends js.Object {
@@ -1462,7 +1462,7 @@ object SESNs extends js.Object {
     /**
       * The identity for which DKIM signing should be enabled or disabled.
       */
-    var Identity: Identity
+    var Identity: awsDashSdkLib.clientsSesMod.SESNs.Identity
   }
   
   trait SetIdentityDkimEnabledResponse extends js.Object
@@ -1475,7 +1475,7 @@ object SESNs extends js.Object {
     /**
       * The identity for which to set bounce and complaint notification forwarding. Examples: user@example.com, example.com.
       */
-    var Identity: Identity
+    var Identity: awsDashSdkLib.clientsSesMod.SESNs.Identity
   }
   
   trait SetIdentityFeedbackForwardingEnabledResponse extends js.Object
@@ -1484,15 +1484,15 @@ object SESNs extends js.Object {
     /**
       * Sets whether Amazon SES includes the original email headers in Amazon SNS notifications of the specified notification type. A value of true specifies that Amazon SES will include headers in notifications, and a value of false specifies that Amazon SES will not include headers in notifications. This value can only be set when NotificationType is already set to use a particular Amazon SNS topic.
       */
-    var Enabled: Enabled
+    var Enabled: awsDashSdkLib.clientsSesMod.SESNs.Enabled
     /**
       * The identity for which to enable or disable headers in notifications. Examples: user@example.com, example.com.
       */
-    var Identity: Identity
+    var Identity: awsDashSdkLib.clientsSesMod.SESNs.Identity
     /**
       * The notification type for which to enable or disable headers in notifications. 
       */
-    var NotificationType: NotificationType
+    var NotificationType: awsDashSdkLib.clientsSesMod.SESNs.NotificationType
   }
   
   trait SetIdentityHeadersInNotificationsEnabledResponse extends js.Object
@@ -1505,7 +1505,7 @@ object SESNs extends js.Object {
     /**
       * The verified identity for which you want to enable or disable the specified custom MAIL FROM domain.
       */
-    var Identity: Identity
+    var Identity: awsDashSdkLib.clientsSesMod.SESNs.Identity
     /**
       * The custom MAIL FROM domain that you want the verified identity to use. The MAIL FROM domain must 1) be a subdomain of the verified identity, 2) not be used in a "From" address if the MAIL FROM domain is the destination of email feedback forwarding (for more information, see the Amazon SES Developer Guide), and 3) not be used to receive emails. A value of null disables the custom MAIL FROM setting for the identity.
       */
@@ -1518,11 +1518,11 @@ object SESNs extends js.Object {
     /**
       * The identity (email address or domain) that you want to set the Amazon SNS topic for.  You can only specify a verified identity for this parameter.  You can specify an identity by using its name or by using its Amazon Resource Name (ARN). The following examples are all valid identities: sender@example.com, example.com, arn:aws:ses:us-east-1:123456789012:identity/example.com.
       */
-    var Identity: Identity
+    var Identity: awsDashSdkLib.clientsSesMod.SESNs.Identity
     /**
       * The type of notifications that will be published to the specified Amazon SNS topic.
       */
-    var NotificationType: NotificationType
+    var NotificationType: awsDashSdkLib.clientsSesMod.SESNs.NotificationType
     /**
       * The Amazon Resource Name (ARN) of the Amazon SNS topic. If the parameter is omitted from the request or a null value is passed, SnsTopic is cleared and publishing is disabled.
       */
@@ -1571,7 +1571,7 @@ object SESNs extends js.Object {
     /**
       * The name of the template. You will refer to this name when you send email using the SendTemplatedEmail or SendBulkTemplatedEmail operations.
       */
-    var TemplateName: TemplateName
+    var TemplateName: awsDashSdkLib.clientsSesMod.SESNs.TemplateName
     /**
       * The email body that will be visible to recipients whose email clients do not display HTML.
       */
@@ -1593,11 +1593,11 @@ object SESNs extends js.Object {
     /**
       * A list of replacement values to apply to the template. This parameter is a JSON object, typically consisting of key-value pairs in which the keys correspond to replacement tags in the email template.
       */
-    var TemplateData: TemplateData
+    var TemplateData: awsDashSdkLib.clientsSesMod.SESNs.TemplateData
     /**
       * The name of the template that you want to render.
       */
-    var TemplateName: TemplateName
+    var TemplateName: awsDashSdkLib.clientsSesMod.SESNs.TemplateName
   }
   
   trait TestRenderTemplateResponse extends js.Object {
@@ -3174,11 +3174,11 @@ object SESNs extends js.Object {
     /**
       * The name of the configuration set that contains the event destination that you want to update.
       */
-    var ConfigurationSetName: ConfigurationSetName
+    var ConfigurationSetName: awsDashSdkLib.clientsSesMod.SESNs.ConfigurationSetName
     /**
       * The event destination object that you want to apply to the specified configuration set.
       */
-    var EventDestination: EventDestination
+    var EventDestination: awsDashSdkLib.clientsSesMod.SESNs.EventDestination
   }
   
   trait UpdateConfigurationSetEventDestinationResponse extends js.Object
@@ -3187,30 +3187,30 @@ object SESNs extends js.Object {
     /**
       * The name of the configuration set that you want to update.
       */
-    var ConfigurationSetName: ConfigurationSetName
+    var ConfigurationSetName: awsDashSdkLib.clientsSesMod.SESNs.ConfigurationSetName
     /**
       * Describes whether or not Amazon SES will publish reputation metrics for the configuration set, such as bounce and complaint rates, to Amazon CloudWatch.
       */
-    var Enabled: Enabled
+    var Enabled: awsDashSdkLib.clientsSesMod.SESNs.Enabled
   }
   
   trait UpdateConfigurationSetSendingEnabledRequest extends js.Object {
     /**
       * The name of the configuration set that you want to update.
       */
-    var ConfigurationSetName: ConfigurationSetName
+    var ConfigurationSetName: awsDashSdkLib.clientsSesMod.SESNs.ConfigurationSetName
     /**
       * Describes whether email sending is enabled or disabled for the configuration set. 
       */
-    var Enabled: Enabled
+    var Enabled: awsDashSdkLib.clientsSesMod.SESNs.Enabled
   }
   
   trait UpdateConfigurationSetTrackingOptionsRequest extends js.Object {
     /**
       * The name of the configuration set for which you want to update the custom tracking domain.
       */
-    var ConfigurationSetName: ConfigurationSetName
-    var TrackingOptions: TrackingOptions
+    var ConfigurationSetName: awsDashSdkLib.clientsSesMod.SESNs.ConfigurationSetName
+    var TrackingOptions: awsDashSdkLib.clientsSesMod.SESNs.TrackingOptions
   }
   
   trait UpdateConfigurationSetTrackingOptionsResponse extends js.Object
@@ -3235,7 +3235,7 @@ object SESNs extends js.Object {
     /**
       * The name of the custom verification email template that you want to update.
       */
-    var TemplateName: TemplateName
+    var TemplateName: awsDashSdkLib.clientsSesMod.SESNs.TemplateName
     /**
       * The subject line of the custom verification email.
       */
@@ -3256,7 +3256,7 @@ object SESNs extends js.Object {
   trait UpdateReceiptRuleResponse extends js.Object
   
   trait UpdateTemplateRequest extends js.Object {
-    var Template: Template
+    var Template: awsDashSdkLib.clientsSesMod.SESNs.Template
   }
   
   trait UpdateTemplateResponse extends js.Object
@@ -3268,7 +3268,7 @@ object SESNs extends js.Object {
     /**
       * The name of the domain to be verified for Easy DKIM signing.
       */
-    var Domain: Domain
+    var Domain: awsDashSdkLib.clientsSesMod.SESNs.Domain
   }
   
   trait VerifyDomainDkimResponse extends js.Object {
@@ -3282,14 +3282,14 @@ object SESNs extends js.Object {
     /**
       * The domain to be verified.
       */
-    var Domain: Domain
+    var Domain: awsDashSdkLib.clientsSesMod.SESNs.Domain
   }
   
   trait VerifyDomainIdentityResponse extends js.Object {
     /**
       * A TXT record that you must place in the DNS settings of the domain to complete domain verification with Amazon SES. As Amazon SES searches for the TXT record, the domain's verification status is "Pending". When Amazon SES detects the record, the domain's verification status changes to "Success". If Amazon SES is unable to detect the record within 72 hours, the domain's verification status changes to "Failed." In that case, if you still want to verify the domain, you must restart the verification process from the beginning.
       */
-    var VerificationToken: VerificationToken
+    var VerificationToken: awsDashSdkLib.clientsSesMod.SESNs.VerificationToken
   }
   
   trait VerifyEmailAddressRequest extends js.Object {

@@ -13,7 +13,7 @@ trait Get extends js.Object {
   /**
     * A map of attribute names to AttributeValue objects that specifies the primary key of the item to retrieve.
     */
-  var Key: Key
+  var Key: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.Key
   /**
     * A string that identifies one or more attributes of the specified item to retrieve from the table. The attributes in the expression must be separated by commas. If no attribute names are specified, then all attributes of the specified item are returned. If any of the requested attributes are not found, they do not appear in the result.
     */
@@ -21,7 +21,7 @@ trait Get extends js.Object {
   /**
     * The name of the table from which to retrieve the specified item.
     */
-  var TableName: TableName
+  var TableName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TableName
 }
 
 object Get {

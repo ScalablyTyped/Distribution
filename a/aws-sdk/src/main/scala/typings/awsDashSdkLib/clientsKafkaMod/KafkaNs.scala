@@ -128,7 +128,7 @@ object KafkaNs extends js.Object {
     /**
       * Information about the broker nodes in the cluster.
       */
-    var BrokerNodeGroupInfo: BrokerNodeGroupInfo
+    var BrokerNodeGroupInfo: awsDashSdkLib.clientsKafkaMod.KafkaNs.BrokerNodeGroupInfo
     /**
       * The name of the cluster.
       */

@@ -30,9 +30,9 @@ object OidcToken {
     scope: java.lang.String,
     scopes: js.Array[java.lang.String],
     session_state: js.Any,
-    toJSON: js.Function0[java.lang.String]
+    toJSON: () => java.lang.String
   ): OidcToken = {
-    val __obj = js.Dynamic.literal(access_token = access_token, expired = expired, expires_at = expires_at, expires_in = expires_in, id_token = id_token, profile = profile, scope = scope, scopes = scopes, session_state = session_state, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(access_token = access_token, expired = expired, expires_at = expires_at, expires_in = expires_in, id_token = id_token, profile = profile, scope = scope, scopes = scopes, session_state = session_state, toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[OidcToken]
   }

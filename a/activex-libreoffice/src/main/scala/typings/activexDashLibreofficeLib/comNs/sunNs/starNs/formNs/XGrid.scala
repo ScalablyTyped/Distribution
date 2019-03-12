@@ -30,13 +30,13 @@ object XGrid {
   @scala.inline
   def apply(
     CurrentColumnPosition: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getCurrentColumnPosition: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setCurrentColumnPosition: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    getCurrentColumnPosition: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setCurrentColumnPosition: scala.Double => scala.Unit
   ): XGrid = {
-    val __obj = js.Dynamic.literal(CurrentColumnPosition = CurrentColumnPosition, acquire = acquire, getCurrentColumnPosition = getCurrentColumnPosition, queryInterface = queryInterface, release = release, setCurrentColumnPosition = setCurrentColumnPosition)
+    val __obj = js.Dynamic.literal(CurrentColumnPosition = CurrentColumnPosition, acquire = js.Any.fromFunction0(acquire), getCurrentColumnPosition = js.Any.fromFunction0(getCurrentColumnPosition), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setCurrentColumnPosition = js.Any.fromFunction1(setCurrentColumnPosition))
   
     __obj.asInstanceOf[XGrid]
   }

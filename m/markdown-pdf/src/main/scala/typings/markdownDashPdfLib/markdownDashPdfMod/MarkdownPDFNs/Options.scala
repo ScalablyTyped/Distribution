@@ -44,8 +44,8 @@ object Options {
     paperFormat: PaperFormat = null,
     paperOrientation: PaperOrientation = null,
     phantomPath: java.lang.String = null,
-    preProcessHtml: js.Function0[_] = null,
-    preProcessMd: js.Function0[_] = null,
+    preProcessHtml: () => _ = null,
+    preProcessMd: () => _ = null,
     remarkable: js.Any = null,
     renderDelay: scala.Int | scala.Double = null,
     runningsPath: java.lang.String = null
@@ -59,8 +59,8 @@ object Options {
     if (paperFormat != null) __obj.updateDynamic("paperFormat")(paperFormat)
     if (paperOrientation != null) __obj.updateDynamic("paperOrientation")(paperOrientation)
     if (phantomPath != null) __obj.updateDynamic("phantomPath")(phantomPath)
-    if (preProcessHtml != null) __obj.updateDynamic("preProcessHtml")(preProcessHtml)
-    if (preProcessMd != null) __obj.updateDynamic("preProcessMd")(preProcessMd)
+    if (preProcessHtml != null) __obj.updateDynamic("preProcessHtml")(js.Any.fromFunction0(preProcessHtml))
+    if (preProcessMd != null) __obj.updateDynamic("preProcessMd")(js.Any.fromFunction0(preProcessMd))
     if (remarkable != null) __obj.updateDynamic("remarkable")(remarkable)
     if (renderDelay != null) __obj.updateDynamic("renderDelay")(renderDelay.asInstanceOf[js.Any])
     if (runningsPath != null) __obj.updateDynamic("runningsPath")(runningsPath)

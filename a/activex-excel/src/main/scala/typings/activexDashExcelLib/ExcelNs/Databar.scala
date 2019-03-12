@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.Databar")
 @js.native
 class Databar protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   @JSName("AppliesTo")
   val AppliesTo_Original: Range = js.native
   val AxisColor: FormatColor = js.native
@@ -22,7 +22,7 @@ class Databar protected () extends js.Object {
   var Formula: java.lang.String = js.native
   val MaxPoint: ConditionValue = js.native
   val MinPoint: ConditionValue = js.native
-  val NegativeBarFormat: NegativeBarFormat = js.native
+  val NegativeBarFormat: activexDashExcelLib.ExcelNs.NegativeBarFormat = js.native
   val PTCondition: scala.Boolean = js.native
   val Parent: js.Any = js.native
   var PercentMax: scala.Double = js.native

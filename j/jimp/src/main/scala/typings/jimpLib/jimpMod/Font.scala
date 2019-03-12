@@ -10,7 +10,7 @@ trait Font extends js.Object {
   var common: FontCommon
   var info: FontInfo
   var kernings: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[scala.Double]]
-  var pages: coreDashJsLib.Array[java.lang.String]
+  var pages: js.Array[java.lang.String]
 }
 
 object Font {
@@ -20,7 +20,7 @@ object Font {
     common: FontCommon,
     info: FontInfo,
     kernings: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[scala.Double]],
-    pages: coreDashJsLib.Array[java.lang.String]
+    pages: js.Array[java.lang.String]
   ): Font = {
     val __obj = js.Dynamic.literal(chars = chars, common = common, info = info, kernings = kernings, pages = pages)
   

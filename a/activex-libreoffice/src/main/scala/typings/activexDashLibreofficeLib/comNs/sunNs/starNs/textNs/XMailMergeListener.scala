@@ -25,12 +25,12 @@ trait XMailMergeListener
 object XMailMergeListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    notifyMailMergeEvent: js.Function1[MailMergeEvent, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    notifyMailMergeEvent: MailMergeEvent => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XMailMergeListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, notifyMailMergeEvent = notifyMailMergeEvent, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), notifyMailMergeEvent = js.Any.fromFunction1(notifyMailMergeEvent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XMailMergeListener]
   }

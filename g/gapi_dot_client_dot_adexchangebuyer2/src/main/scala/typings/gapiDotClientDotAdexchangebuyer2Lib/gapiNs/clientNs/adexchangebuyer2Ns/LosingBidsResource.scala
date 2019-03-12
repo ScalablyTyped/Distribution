@@ -18,12 +18,9 @@ trait LosingBidsResource extends js.Object {
 object LosingBidsResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListLosingBidsResponse]
-    ]
+    list: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetId => gapiDotClientLib.gapiNs.clientNs.Request[ListLosingBidsResponse]
   ): LosingBidsResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[LosingBidsResource]
   }

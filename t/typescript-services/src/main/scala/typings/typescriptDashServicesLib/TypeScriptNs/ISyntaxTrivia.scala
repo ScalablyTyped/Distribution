@@ -19,16 +19,16 @@ trait ISyntaxTrivia extends js.Object {
 object ISyntaxTrivia {
   @scala.inline
   def apply(
-    fullText: js.Function0[java.lang.String],
-    fullWidth: js.Function0[scala.Double],
-    isComment: js.Function0[scala.Boolean],
-    isNewLine: js.Function0[scala.Boolean],
-    isSkippedToken: js.Function0[scala.Boolean],
-    isWhitespace: js.Function0[scala.Boolean],
-    kind: js.Function0[SyntaxKind],
-    skippedToken: js.Function0[ISyntaxToken]
+    fullText: () => java.lang.String,
+    fullWidth: () => scala.Double,
+    isComment: () => scala.Boolean,
+    isNewLine: () => scala.Boolean,
+    isSkippedToken: () => scala.Boolean,
+    isWhitespace: () => scala.Boolean,
+    kind: () => SyntaxKind,
+    skippedToken: () => ISyntaxToken
   ): ISyntaxTrivia = {
-    val __obj = js.Dynamic.literal(fullText = fullText, fullWidth = fullWidth, isComment = isComment, isNewLine = isNewLine, isSkippedToken = isSkippedToken, isWhitespace = isWhitespace, kind = kind, skippedToken = skippedToken)
+    val __obj = js.Dynamic.literal(fullText = js.Any.fromFunction0(fullText), fullWidth = js.Any.fromFunction0(fullWidth), isComment = js.Any.fromFunction0(isComment), isNewLine = js.Any.fromFunction0(isNewLine), isSkippedToken = js.Any.fromFunction0(isSkippedToken), isWhitespace = js.Any.fromFunction0(isWhitespace), kind = js.Any.fromFunction0(kind), skippedToken = js.Any.fromFunction0(skippedToken))
   
     __obj.asInstanceOf[ISyntaxTrivia]
   }

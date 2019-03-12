@@ -22,7 +22,7 @@ object RangeInputProps {
     max: scala.Double | java.lang.String = null,
     min: scala.Double | java.lang.String = null,
     name: java.lang.String = null,
-    onChange: js.Function1[/* repeated */ js.Any, _] = null,
+    onChange: /* repeated */ js.Any => _ = null,
     step: scala.Int | scala.Double = null,
     value: scala.Double | java.lang.String = null
   ): RangeInputProps = {
@@ -31,7 +31,7 @@ object RangeInputProps {
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeInputProps]

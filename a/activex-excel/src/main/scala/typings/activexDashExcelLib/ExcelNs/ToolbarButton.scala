@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.ToolbarButton")
 @js.native
 class ToolbarButton protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val BuiltIn: scala.Boolean = js.native
   var BuiltInFace: scala.Boolean = js.native
   val Creator: XlCreator = js.native

@@ -105,8 +105,8 @@ trait ResponseToolkit extends js.Object {
     * There is no difference between throwing the error or passing it with the h.unauthenticated() method is no credentials are passed, but it might still be helpful for code clarity.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-hunauthenticatederror-data)
     */
-  def unauthenticated(error: nodeLib.Error): scala.Unit = js.native
-  def unauthenticated(error: nodeLib.Error, data: AuthenticationData): scala.Unit = js.native
+  def unauthenticated(error: stdLib.Error): scala.Unit = js.native
+  def unauthenticated(error: stdLib.Error, data: AuthenticationData): scala.Unit = js.native
   /**
     * Clears a response cookie using the same arguments as
     * @param name of the cookie

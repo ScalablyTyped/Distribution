@@ -18,7 +18,7 @@ object ^ extends js.Object {
     mergeProps: js.Function,
     options: js.Object
   ): js.Function = js.native
-  def default(): dvaLib.dvaMod.DvaInstance = js.native
-  def default(opts: dvaLib.dvaMod.DvaOption): dvaLib.dvaMod.DvaInstance = js.native
+  def default(): DvaInstance = js.native
+  def default(opts: DvaOption): DvaInstance = js.native
 }
 

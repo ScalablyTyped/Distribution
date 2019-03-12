@@ -15,12 +15,12 @@ trait ExtKeyUsage extends js.Object {
 object ExtKeyUsage {
   @scala.inline
   def apply(
-    fromSchema: js.Function1[js.Any, scala.Unit],
+    fromSchema: js.Any => scala.Unit,
     keyPurposes: js.Array[java.lang.String],
-    toJSON: js.Function0[js.Any],
-    toSchema: js.Function0[js.Any]
+    toJSON: () => js.Any,
+    toSchema: () => js.Any
   ): ExtKeyUsage = {
-    val __obj = js.Dynamic.literal(fromSchema = fromSchema, keyPurposes = keyPurposes, toJSON = toJSON, toSchema = toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), keyPurposes = keyPurposes, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[ExtKeyUsage]
   }

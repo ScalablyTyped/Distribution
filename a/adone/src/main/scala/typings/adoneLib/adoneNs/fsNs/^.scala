@@ -763,15 +763,15 @@ object ^ extends js.Object {
   /**
     * Creates a Watcher instance with the given options and starts watching the given paths
     */
-  def watch(paths: java.lang.String): adoneLib.adoneNs.fsNs.Watcher = js.native
-  def watch(paths: java.lang.String, options: adoneLib.adoneNs.fsNs.INs.WatcherNs.ConstructorOptions): adoneLib.adoneNs.fsNs.Watcher = js.native
-  def watch(paths: js.Array[java.lang.String]): adoneLib.adoneNs.fsNs.Watcher = js.native
-  def watch(paths: js.Array[java.lang.String], options: adoneLib.adoneNs.fsNs.INs.WatcherNs.ConstructorOptions): adoneLib.adoneNs.fsNs.Watcher = js.native
+  def watch(paths: java.lang.String): Watcher = js.native
+  def watch(paths: java.lang.String, options: adoneLib.adoneNs.fsNs.INs.WatcherNs.ConstructorOptions): Watcher = js.native
+  def watch(paths: js.Array[java.lang.String]): Watcher = js.native
+  def watch(paths: js.Array[java.lang.String], options: adoneLib.adoneNs.fsNs.INs.WatcherNs.ConstructorOptions): Watcher = js.native
   /**
     * Creates a new TailWatcher instance with the given arguments
     */
-  def watchTail(filename: java.lang.String): adoneLib.adoneNs.fsNs.TailWatcher = js.native
-  def watchTail(filename: java.lang.String, options: adoneLib.adoneNs.fsNs.INs.TailWatcherNs.ConstructorOptions): adoneLib.adoneNs.fsNs.TailWatcher = js.native
+  def watchTail(filename: java.lang.String): TailWatcher = js.native
+  def watchTail(filename: java.lang.String, options: adoneLib.adoneNs.fsNs.INs.TailWatcherNs.ConstructorOptions): TailWatcher = js.native
   /**
     * Finds instances of a specified executable in the PATH environment variable
     */

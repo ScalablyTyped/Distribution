@@ -17,13 +17,13 @@ trait XCellRangeData
     *
     * Each element of the result contains a `double` or a `string` .
     */
-  val DataArray: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]
+  val DataArray: stdLib.SafeArray[stdLib.SafeArray[_]]
   /**
     * gets an array from the contents of the cell range.
     *
     * Each element of the result contains a `double` or a `string` .
     */
-  def getDataArray(): activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]
+  def getDataArray(): stdLib.SafeArray[stdLib.SafeArray[_]]
   /**
     * fills the cell range with values from an array.
     *
@@ -38,17 +38,14 @@ trait XCellRangeData
 object XCellRangeData {
   @scala.inline
   def apply(
-    DataArray: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]],
-    acquire: js.Function0[scala.Unit],
-    getDataArray: js.Function0[activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setDataArray: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]], 
-      scala.Unit
-    ]
+    DataArray: stdLib.SafeArray[stdLib.SafeArray[_]],
+    acquire: () => scala.Unit,
+    getDataArray: () => stdLib.SafeArray[stdLib.SafeArray[_]],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setDataArray: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]] => scala.Unit
   ): XCellRangeData = {
-    val __obj = js.Dynamic.literal(DataArray = DataArray, acquire = acquire, getDataArray = getDataArray, queryInterface = queryInterface, release = release, setDataArray = setDataArray)
+    val __obj = js.Dynamic.literal(DataArray = DataArray, acquire = js.Any.fromFunction0(acquire), getDataArray = js.Any.fromFunction0(getDataArray), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDataArray = js.Any.fromFunction1(setDataArray))
   
     __obj.asInstanceOf[XCellRangeData]
   }

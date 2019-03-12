@@ -11,8 +11,8 @@ trait PreProcessor extends js.Object {
 
 object PreProcessor {
   @scala.inline
-  def apply(process: js.Function2[java.lang.String, PreProcessorExtraInfo, java.lang.String]): PreProcessor = {
-    val __obj = js.Dynamic.literal(process = process)
+  def apply(process: (java.lang.String, PreProcessorExtraInfo) => java.lang.String): PreProcessor = {
+    val __obj = js.Dynamic.literal(process = js.Any.fromFunction2(process))
   
     __obj.asInstanceOf[PreProcessor]
   }

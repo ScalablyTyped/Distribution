@@ -15,8 +15,8 @@ trait ModalBodyInterface[TRow /* <: js.Object */] extends js.Object {
 
 object ModalBodyInterface {
   @scala.inline
-  def apply[TRow /* <: js.Object */](getFieldValue: js.Function0[TRow]): ModalBodyInterface[TRow] = {
-    val __obj = js.Dynamic.literal(getFieldValue = getFieldValue)
+  def apply[TRow /* <: js.Object */](getFieldValue: () => TRow): ModalBodyInterface[TRow] = {
+    val __obj = js.Dynamic.literal(getFieldValue = js.Any.fromFunction0(getFieldValue))
   
     __obj.asInstanceOf[ModalBodyInterface[TRow]]
   }

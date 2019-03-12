@@ -15,12 +15,12 @@ trait Queryable[T] extends js.Object {
 object Queryable {
   @scala.inline
   def apply[T](
-    delete: js.Function0[ModifyingQuery],
-    select: js.Function1[/* repeated */ js.Any, Query[js.Any]],
-    selectDeep: js.Function1[/* repeated */ js.Any, Query[js.Any]],
-    where: js.Function1[/* repeated */ js.Any, Query[T]]
+    delete: () => ModifyingQuery,
+    select: /* repeated */ js.Any => Query[js.Any],
+    selectDeep: /* repeated */ js.Any => Query[js.Any],
+    where: /* repeated */ js.Any => Query[T]
   ): Queryable[T] = {
-    val __obj = js.Dynamic.literal(delete = delete, select = select, selectDeep = selectDeep, where = where)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), select = js.Any.fromFunction1(select), selectDeep = js.Any.fromFunction1(selectDeep), where = js.Any.fromFunction1(where))
   
     __obj.asInstanceOf[Queryable[T]]
   }

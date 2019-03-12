@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def default(socket: socketDotIoDashClientLib.SocketIOClientNs.Socket): js.Function0[scala.Unit] = js.native
-  def default(
-    socket: socketDotIoDashClientLib.SocketIOClientNs.Socket,
-    options: atFeathersjsSocketioDashClientLib.atFeathersjsSocketioDashClientMod.FeathersSocketIOClientOptions
-  ): js.Function0[scala.Unit] = js.native
+  def default(socket: socketDotIoDashClientLib.SocketIOClientNs.Socket, options: FeathersSocketIOClientOptions): js.Function0[scala.Unit] = js.native
 }
 

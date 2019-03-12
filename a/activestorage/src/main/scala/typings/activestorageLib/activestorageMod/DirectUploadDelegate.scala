@@ -13,12 +13,12 @@ trait DirectUploadDelegate extends js.Object {
 object DirectUploadDelegate {
   @scala.inline
   def apply(
-    directUploadWillCreateBlobWithXHR: js.Function1[/* xhr */ stdLib.XMLHttpRequest, scala.Unit] = null,
-    directUploadWillStoreFileWithXHR: js.Function1[/* xhr */ stdLib.XMLHttpRequest, scala.Unit] = null
+    directUploadWillCreateBlobWithXHR: /* xhr */ stdLib.XMLHttpRequest => scala.Unit = null,
+    directUploadWillStoreFileWithXHR: /* xhr */ stdLib.XMLHttpRequest => scala.Unit = null
   ): DirectUploadDelegate = {
     val __obj = js.Dynamic.literal()
-    if (directUploadWillCreateBlobWithXHR != null) __obj.updateDynamic("directUploadWillCreateBlobWithXHR")(directUploadWillCreateBlobWithXHR)
-    if (directUploadWillStoreFileWithXHR != null) __obj.updateDynamic("directUploadWillStoreFileWithXHR")(directUploadWillStoreFileWithXHR)
+    if (directUploadWillCreateBlobWithXHR != null) __obj.updateDynamic("directUploadWillCreateBlobWithXHR")(js.Any.fromFunction1(directUploadWillCreateBlobWithXHR))
+    if (directUploadWillStoreFileWithXHR != null) __obj.updateDynamic("directUploadWillStoreFileWithXHR")(js.Any.fromFunction1(directUploadWillStoreFileWithXHR))
     __obj.asInstanceOf[DirectUploadDelegate]
   }
 }

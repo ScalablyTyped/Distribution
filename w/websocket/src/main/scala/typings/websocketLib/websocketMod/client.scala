@@ -28,7 +28,7 @@ trait client
   @JSName("addListener")
   def addListener_connectFailed(
     event: websocketLib.websocketLibStrings.connectFailed,
-    cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    cb: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   def connect(requestUrl: java.lang.String): scala.Unit = js.native
   def connect(requestUrl: java.lang.String, protocols: java.lang.String): scala.Unit = js.native
@@ -110,7 +110,7 @@ trait client
   @JSName("on")
   def on_connectFailed(
     event: websocketLib.websocketLibStrings.connectFailed,
-    cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    cb: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
 }
 

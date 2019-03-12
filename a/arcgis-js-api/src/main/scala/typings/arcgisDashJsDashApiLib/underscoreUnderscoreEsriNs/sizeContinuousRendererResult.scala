@@ -51,14 +51,14 @@ object sizeContinuousRendererResult {
     basemapId: java.lang.String,
     constructor: js.Function,
     defaultValuesUsed: scala.Boolean,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     renderer: ClassBreaksRenderer,
     sizeScheme: SizeScheme,
     statistics: SummaryStatisticsResult,
     visualVariables: js.Array[SizeVariable]
   ): sizeContinuousRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer, sizeScheme = sizeScheme, statistics = statistics, visualVariables = visualVariables)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer, sizeScheme = sizeScheme, statistics = statistics, visualVariables = visualVariables)
   
     __obj.asInstanceOf[sizeContinuousRendererResult]
   }

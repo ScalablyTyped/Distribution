@@ -28,10 +28,10 @@ trait XVBAEventProcessor extends js.Object {
 object XVBAEventProcessor {
   @scala.inline
   def apply(
-    hasVbaEventHandler: js.Function2[scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Boolean],
-    processVbaEvent: js.Function2[scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Boolean]
+    hasVbaEventHandler: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]) => scala.Boolean,
+    processVbaEvent: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]) => scala.Boolean
   ): XVBAEventProcessor = {
-    val __obj = js.Dynamic.literal(hasVbaEventHandler = hasVbaEventHandler, processVbaEvent = processVbaEvent)
+    val __obj = js.Dynamic.literal(hasVbaEventHandler = js.Any.fromFunction2(hasVbaEventHandler), processVbaEvent = js.Any.fromFunction2(processVbaEvent))
   
     __obj.asInstanceOf[XVBAEventProcessor]
   }

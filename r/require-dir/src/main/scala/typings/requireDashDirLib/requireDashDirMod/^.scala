@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(directory: java.lang.String): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
-  def apply(directory: java.lang.String, options: requireDashDirLib.requireDashDirMod.options): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def apply(directory: java.lang.String, options: options): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 

@@ -934,11 +934,11 @@ object ^ extends js.Object {
   /**
   		 * Activity of the active context.
   		 */
-  val currentActivity: titaniumLib.TitaniumNs.AndroidNs.Activity = js.native
+  val currentActivity: Activity = js.native
   /**
   		 * Service in the active context.
   		 */
-  val currentService: titaniumLib.TitaniumNs.AndroidNs.Service = js.native
+  val currentService: Service = js.native
   /**
   		 * The Window or TabGroup whose Activity lifecycle should be triggered on the proxy.
   		 */
@@ -954,23 +954,23 @@ object ^ extends js.Object {
   /**
   		 * Creates and returns an instance of <Titanium.Android.BigPictureStyle>.
   		 */
-  def createBigPictureStyle(): titaniumLib.TitaniumNs.AndroidNs.BigPictureStyle = js.native
-  def createBigPictureStyle(parameters: js.Any): titaniumLib.TitaniumNs.AndroidNs.BigPictureStyle = js.native
+  def createBigPictureStyle(): BigPictureStyle = js.native
+  def createBigPictureStyle(parameters: js.Any): BigPictureStyle = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Android.BigTextStyle>.
   		 */
-  def createBigTextStyle(): titaniumLib.TitaniumNs.AndroidNs.BigTextStyle = js.native
-  def createBigTextStyle(parameters: js.Any): titaniumLib.TitaniumNs.AndroidNs.BigTextStyle = js.native
+  def createBigTextStyle(): BigTextStyle = js.native
+  def createBigTextStyle(parameters: js.Any): BigTextStyle = js.native
   /**
   		 * Create an `Intent` to be used in a broadcast.
   		 */
-  def createBroadcastIntent(): titaniumLib.TitaniumNs.AndroidNs.Intent = js.native
-  def createBroadcastIntent(parameters: js.Any): titaniumLib.TitaniumNs.AndroidNs.Intent = js.native
+  def createBroadcastIntent(): Intent = js.native
+  def createBroadcastIntent(parameters: js.Any): Intent = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Android.BroadcastReceiver>.
   		 */
-  def createBroadcastReceiver(): titaniumLib.TitaniumNs.AndroidNs.BroadcastReceiver = js.native
-  def createBroadcastReceiver(parameters: js.Any): titaniumLib.TitaniumNs.AndroidNs.BroadcastReceiver = js.native
+  def createBroadcastReceiver(): BroadcastReceiver = js.native
+  def createBroadcastReceiver(parameters: js.Any): BroadcastReceiver = js.native
   /**
   		 * Creates a [DrawerLayout](Titanium.UI.Android.DrawerLayout).
   		 */
@@ -979,47 +979,47 @@ object ^ extends js.Object {
   /**
   		 * Creates and returns an instance of <Titanium.Android.Intent>.
   		 */
-  def createIntent(): titaniumLib.TitaniumNs.AndroidNs.Intent = js.native
-  def createIntent(parameters: js.Any): titaniumLib.TitaniumNs.AndroidNs.Intent = js.native
+  def createIntent(): Intent = js.native
+  def createIntent(parameters: js.Any): Intent = js.native
   /**
   		 * Creates an activity chooser intent, used to allow the user to select a target activity
   		 * for an intent.
   		 */
-  def createIntentChooser(intent: titaniumLib.TitaniumNs.AndroidNs.Intent, title: java.lang.String): titaniumLib.TitaniumNs.AndroidNs.Intent = js.native
+  def createIntentChooser(intent: Intent, title: java.lang.String): Intent = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Android.Notification>.
   		 */
-  def createNotification(): titaniumLib.TitaniumNs.AndroidNs.Notification = js.native
-  def createNotification(parameters: js.Any): titaniumLib.TitaniumNs.AndroidNs.Notification = js.native
+  def createNotification(): Notification = js.native
+  def createNotification(parameters: js.Any): Notification = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Android.NotificationChannel>.
   		 */
-  def createNotificationChannel(): titaniumLib.TitaniumNs.AndroidNs.NotificationChannel = js.native
-  def createNotificationChannel(parameters: js.Any): titaniumLib.TitaniumNs.AndroidNs.NotificationChannel = js.native
+  def createNotificationChannel(): NotificationChannel = js.native
+  def createNotificationChannel(parameters: js.Any): NotificationChannel = js.native
   /**
   		 * Creates a [PendingIntent](Titanium.Android.PendingIntent) to be used inside a
   		 * [Notification](Titanium.Android.Notification).
   		 */
-  def createPendingIntent(): titaniumLib.TitaniumNs.AndroidNs.PendingIntent = js.native
-  def createPendingIntent(parameters: js.Any): titaniumLib.TitaniumNs.AndroidNs.PendingIntent = js.native
+  def createPendingIntent(): PendingIntent = js.native
+  def createPendingIntent(parameters: js.Any): PendingIntent = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Android.QuickSettingsService>.
   		 */
-  def createQuickSettingsService(): titaniumLib.TitaniumNs.AndroidNs.QuickSettingsService = js.native
-  def createQuickSettingsService(parameters: js.Any): titaniumLib.TitaniumNs.AndroidNs.QuickSettingsService = js.native
+  def createQuickSettingsService(): QuickSettingsService = js.native
+  def createQuickSettingsService(parameters: js.Any): QuickSettingsService = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Android.RemoteViews>.
   		 */
-  def createRemoteViews(): titaniumLib.TitaniumNs.AndroidNs.RemoteViews = js.native
-  def createRemoteViews(parameters: js.Any): titaniumLib.TitaniumNs.AndroidNs.RemoteViews = js.native
+  def createRemoteViews(): RemoteViews = js.native
+  def createRemoteViews(parameters: js.Any): RemoteViews = js.native
   /**
   		 * Create a <Titanium.Android.Service> so you can start/stop it and listen for events from it.
   		 */
-  def createService(intent: titaniumLib.TitaniumNs.AndroidNs.Intent): titaniumLib.TitaniumNs.AndroidNs.Service = js.native
+  def createService(intent: Intent): Service = js.native
   /**
   		 * Create an `Intent` to be used to start a service.
   		 */
-  def createServiceIntent(options: titaniumLib.ServiceIntentOptions): titaniumLib.TitaniumNs.AndroidNs.Intent = js.native
+  def createServiceIntent(options: titaniumLib.ServiceIntentOptions): Intent = js.native
   /**
   		 * Fires a synthesized event to any registered listeners.
   		 */
@@ -1047,14 +1047,11 @@ object ^ extends js.Object {
   /**
   		 * Check on state of Service.
   		 */
-  def isServiceRunning(intent: titaniumLib.TitaniumNs.AndroidNs.Intent): scala.Boolean = js.native
+  def isServiceRunning(intent: Intent): scala.Boolean = js.native
   /**
   		 * Registers broadcast receiver for the given actions
   		 */
-  def registerBroadcastReceiver(
-    broadcastReceiver: titaniumLib.TitaniumNs.AndroidNs.BroadcastReceiver,
-    actions: js.Array[java.lang.String]
-  ): scala.Unit = js.native
+  def registerBroadcastReceiver(broadcastReceiver: BroadcastReceiver, actions: js.Array[java.lang.String]): scala.Unit = js.native
   /**
   		 * Removes the specified callback as an event listener for the named event.
   		 */
@@ -1090,14 +1087,14 @@ object ^ extends js.Object {
   /**
   		 * Starts a simple service.
   		 */
-  def startService(intent: titaniumLib.TitaniumNs.AndroidNs.Intent): scala.Unit = js.native
+  def startService(intent: Intent): scala.Unit = js.native
   /**
   		 * Stop a simple service that was started with `startService`.
   		 */
-  def stopService(intent: titaniumLib.TitaniumNs.AndroidNs.Intent): scala.Unit = js.native
+  def stopService(intent: Intent): scala.Unit = js.native
   /**
   		 * Unregisters a broadcast receiver
   		 */
-  def unregisterBroadcastReceiver(broadcastReceiver: titaniumLib.TitaniumNs.AndroidNs.BroadcastReceiver): scala.Unit = js.native
+  def unregisterBroadcastReceiver(broadcastReceiver: BroadcastReceiver): scala.Unit = js.native
 }
 

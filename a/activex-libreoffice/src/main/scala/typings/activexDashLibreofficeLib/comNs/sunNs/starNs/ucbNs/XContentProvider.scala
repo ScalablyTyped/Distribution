@@ -33,13 +33,13 @@ trait XContentProvider
 object XContentProvider {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    compareContentIds: js.Function2[XContentIdentifier, XContentIdentifier, scala.Double],
-    queryContent: js.Function1[XContentIdentifier, XContent],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    compareContentIds: (XContentIdentifier, XContentIdentifier) => scala.Double,
+    queryContent: XContentIdentifier => XContent,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XContentProvider = {
-    val __obj = js.Dynamic.literal(acquire = acquire, compareContentIds = compareContentIds, queryContent = queryContent, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), compareContentIds = js.Any.fromFunction2(compareContentIds), queryContent = js.Any.fromFunction1(queryContent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XContentProvider]
   }

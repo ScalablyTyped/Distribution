@@ -14,34 +14,18 @@ object ^ extends js.Object {
     * Provides *devices*:
     * The array of all signed in devices.
     */
-  val onDeviceInfoChange: chromeDashAppsLib.chromeNs.eventsNs.Event[
-    js.Function1[
-      /* devices */ js.Array[chromeDashAppsLib.chromeNs.signedInDevicesNs.DeviceInfo], 
-      scala.Unit
-    ]
-  ] = js.native
+  val onDeviceInfoChange: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* devices */ js.Array[DeviceInfo], scala.Unit]] = js.native
   /**
     * Gets the array of signed in devices, signed into the same account as the current profile.
     * @param callback The callback to be invoked with the array of DeviceInfo objects.
     */
-  def get(
-    callback: js.Function1[
-      /* devices */ js.Array[chromeDashAppsLib.chromeNs.signedInDevicesNs.DeviceInfo], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def get(callback: js.Function1[/* devices */ js.Array[DeviceInfo], scala.Unit]): scala.Unit = js.native
   /**
     * Gets the array of signed in devices, signed into the same account as the current profile.
     * @param isLocal If true only return the information for the local device.
     * If false or omitted return the list of all devices including the local device.
     * @param callback The callback to be invoked with the array of DeviceInfo objects.
     */
-  def get(
-    isLocal: scala.Boolean,
-    callback: js.Function1[
-      /* devices */ js.Array[chromeDashAppsLib.chromeNs.signedInDevicesNs.DeviceInfo], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def get(isLocal: scala.Boolean, callback: js.Function1[/* devices */ js.Array[DeviceInfo], scala.Unit]): scala.Unit = js.native
 }
 

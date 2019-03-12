@@ -13,13 +13,13 @@ import scala.scalajs.js.annotation._
   */
 trait DatabaseDeleteEvent
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject {
-  var Bookmarks: activexDashInteropLib.SafeArray[_]
+  var Bookmarks: stdLib.SafeArray[_]
 }
 
 object DatabaseDeleteEvent {
   @scala.inline
   def apply(
-    Bookmarks: activexDashInteropLib.SafeArray[_],
+    Bookmarks: stdLib.SafeArray[_],
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): DatabaseDeleteEvent = {
     val __obj = js.Dynamic.literal(Bookmarks = Bookmarks, Source = Source)

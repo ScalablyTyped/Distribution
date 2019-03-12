@@ -11,8 +11,8 @@ trait ISocketErrorStatics extends js.Object {
 
 object ISocketErrorStatics {
   @scala.inline
-  def apply(getStatus: js.Function1[scala.Double, SocketErrorStatus]): ISocketErrorStatics = {
-    val __obj = js.Dynamic.literal(getStatus = getStatus)
+  def apply(getStatus: scala.Double => SocketErrorStatus): ISocketErrorStatics = {
+    val __obj = js.Dynamic.literal(getStatus = js.Any.fromFunction1(getStatus))
   
     __obj.asInstanceOf[ISocketErrorStatics]
   }

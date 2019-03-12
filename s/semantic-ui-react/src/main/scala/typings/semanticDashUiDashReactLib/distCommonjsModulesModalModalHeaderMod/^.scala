@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react/dist/commonjs/modules/Modal/ModalHeader", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.StatelessComponent[
-    semanticDashUiDashReactLib.distCommonjsModulesModalModalHeaderMod.ModalHeaderProps
-  ] = js.native
+  val default: reactLib.reactMod.ReactNs.StatelessComponent[ModalHeaderProps] = js.native
 }
 

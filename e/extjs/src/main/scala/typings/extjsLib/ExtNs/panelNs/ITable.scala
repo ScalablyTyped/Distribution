@@ -108,14 +108,14 @@ object ITable {
   def apply(
     ILockable: extjsLib.ExtNs.gridNs.lockingNs.ILockable = null,
     IPanel: IPanel = null,
-    afterCollapse: js.Function0[scala.Unit] = null,
-    afterExpand: js.Function0[scala.Unit] = null,
+    afterCollapse: () => scala.Unit = null,
+    afterExpand: () => scala.Unit = null,
     allowDeselect: js.UndefOr[scala.Boolean] = js.undefined,
-    applyState: js.Function1[/* state */ js.UndefOr[js.Any], scala.Unit] = null,
+    applyState: /* state */ js.UndefOr[js.Any] => scala.Unit = null,
     columnLines: js.UndefOr[scala.Boolean] = js.undefined,
     columns: js.Any = null,
     deferRowRender: js.UndefOr[scala.Boolean] = js.undefined,
-    determineScrollbars: js.Function0[scala.Unit] = null,
+    determineScrollbars: () => scala.Unit = null,
     disableSelection: js.UndefOr[scala.Boolean] = js.undefined,
     emptyText: java.lang.String = null,
     enableColumnHide: js.UndefOr[scala.Boolean] = js.undefined,
@@ -124,16 +124,16 @@ object ITable {
     enableLocking: js.UndefOr[scala.Boolean] = js.undefined,
     features: js.Any = null,
     forceFit: js.UndefOr[scala.Boolean] = js.undefined,
-    getSelectionModel: js.Function0[extjsLib.ExtNs.selectionNs.IModel] = null,
-    getState: js.Function0[_] = null,
-    getStore: js.Function0[extjsLib.ExtNs.dataNs.IStore] = null,
-    getView: js.Function0[ITable] = null,
+    getSelectionModel: () => extjsLib.ExtNs.selectionNs.IModel = null,
+    getState: () => _ = null,
+    getStore: () => extjsLib.ExtNs.dataNs.IStore = null,
+    getView: () => ITable = null,
     hasView: js.UndefOr[scala.Boolean] = js.undefined,
     hideHeaders: js.UndefOr[scala.Boolean] = js.undefined,
-    invalidateScroller: js.Function0[scala.Unit] = null,
+    invalidateScroller: () => scala.Unit = null,
     layout: js.Any = null,
     multiSelect: js.UndefOr[scala.Boolean] = js.undefined,
-    onDestroy: js.Function0[scala.Unit] = null,
+    onDestroy: () => scala.Unit = null,
     optimizedColumnMove: js.UndefOr[scala.Boolean] = js.undefined,
     rowLines: js.UndefOr[scala.Boolean] = js.undefined,
     scroll: js.Any = null,
@@ -143,7 +143,7 @@ object ITable {
     simpleSelect: js.UndefOr[scala.Boolean] = js.undefined,
     sortableColumns: js.UndefOr[scala.Boolean] = js.undefined,
     store: extjsLib.ExtNs.dataNs.IStore = null,
-    syncRowHeights: js.Function0[scala.Unit] = null,
+    syncRowHeights: () => scala.Unit = null,
     verticalScroller: js.Any = null,
     view: extjsLib.ExtNs.viewNs.ITable = null,
     viewConfig: js.Any = null,
@@ -152,14 +152,14 @@ object ITable {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, ILockable)
     js.Dynamic.global.Object.assign(__obj, IPanel)
-    if (afterCollapse != null) __obj.updateDynamic("afterCollapse")(afterCollapse)
-    if (afterExpand != null) __obj.updateDynamic("afterExpand")(afterExpand)
+    if (afterCollapse != null) __obj.updateDynamic("afterCollapse")(js.Any.fromFunction0(afterCollapse))
+    if (afterExpand != null) __obj.updateDynamic("afterExpand")(js.Any.fromFunction0(afterExpand))
     if (!js.isUndefined(allowDeselect)) __obj.updateDynamic("allowDeselect")(allowDeselect)
-    if (applyState != null) __obj.updateDynamic("applyState")(applyState)
+    if (applyState != null) __obj.updateDynamic("applyState")(js.Any.fromFunction1(applyState))
     if (!js.isUndefined(columnLines)) __obj.updateDynamic("columnLines")(columnLines)
     if (columns != null) __obj.updateDynamic("columns")(columns)
     if (!js.isUndefined(deferRowRender)) __obj.updateDynamic("deferRowRender")(deferRowRender)
-    if (determineScrollbars != null) __obj.updateDynamic("determineScrollbars")(determineScrollbars)
+    if (determineScrollbars != null) __obj.updateDynamic("determineScrollbars")(js.Any.fromFunction0(determineScrollbars))
     if (!js.isUndefined(disableSelection)) __obj.updateDynamic("disableSelection")(disableSelection)
     if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText)
     if (!js.isUndefined(enableColumnHide)) __obj.updateDynamic("enableColumnHide")(enableColumnHide)
@@ -168,16 +168,16 @@ object ITable {
     if (!js.isUndefined(enableLocking)) __obj.updateDynamic("enableLocking")(enableLocking)
     if (features != null) __obj.updateDynamic("features")(features)
     if (!js.isUndefined(forceFit)) __obj.updateDynamic("forceFit")(forceFit)
-    if (getSelectionModel != null) __obj.updateDynamic("getSelectionModel")(getSelectionModel)
-    if (getState != null) __obj.updateDynamic("getState")(getState)
-    if (getStore != null) __obj.updateDynamic("getStore")(getStore)
-    if (getView != null) __obj.updateDynamic("getView")(getView)
+    if (getSelectionModel != null) __obj.updateDynamic("getSelectionModel")(js.Any.fromFunction0(getSelectionModel))
+    if (getState != null) __obj.updateDynamic("getState")(js.Any.fromFunction0(getState))
+    if (getStore != null) __obj.updateDynamic("getStore")(js.Any.fromFunction0(getStore))
+    if (getView != null) __obj.updateDynamic("getView")(js.Any.fromFunction0(getView))
     if (!js.isUndefined(hasView)) __obj.updateDynamic("hasView")(hasView)
     if (!js.isUndefined(hideHeaders)) __obj.updateDynamic("hideHeaders")(hideHeaders)
-    if (invalidateScroller != null) __obj.updateDynamic("invalidateScroller")(invalidateScroller)
+    if (invalidateScroller != null) __obj.updateDynamic("invalidateScroller")(js.Any.fromFunction0(invalidateScroller))
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect)
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(onDestroy)
+    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
     if (!js.isUndefined(optimizedColumnMove)) __obj.updateDynamic("optimizedColumnMove")(optimizedColumnMove)
     if (!js.isUndefined(rowLines)) __obj.updateDynamic("rowLines")(rowLines)
     if (scroll != null) __obj.updateDynamic("scroll")(scroll)
@@ -187,7 +187,7 @@ object ITable {
     if (!js.isUndefined(simpleSelect)) __obj.updateDynamic("simpleSelect")(simpleSelect)
     if (!js.isUndefined(sortableColumns)) __obj.updateDynamic("sortableColumns")(sortableColumns)
     if (store != null) __obj.updateDynamic("store")(store)
-    if (syncRowHeights != null) __obj.updateDynamic("syncRowHeights")(syncRowHeights)
+    if (syncRowHeights != null) __obj.updateDynamic("syncRowHeights")(js.Any.fromFunction0(syncRowHeights))
     if (verticalScroller != null) __obj.updateDynamic("verticalScroller")(verticalScroller)
     if (view != null) __obj.updateDynamic("view")(view)
     if (viewConfig != null) __obj.updateDynamic("viewConfig")(viewConfig)

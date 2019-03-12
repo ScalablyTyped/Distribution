@@ -19,16 +19,16 @@ trait TextOutput extends js.Object {
 object TextOutput {
   @scala.inline
   def apply(
-    append: js.Function1[java.lang.String, TextOutput],
-    clear: js.Function0[TextOutput],
-    downloadAsFile: js.Function1[java.lang.String, TextOutput],
-    getContent: js.Function0[java.lang.String],
-    getFileName: js.Function0[java.lang.String],
-    getMimeType: js.Function0[MimeType],
-    setContent: js.Function1[java.lang.String, TextOutput],
-    setMimeType: js.Function1[MimeType, TextOutput]
+    append: java.lang.String => TextOutput,
+    clear: () => TextOutput,
+    downloadAsFile: java.lang.String => TextOutput,
+    getContent: () => java.lang.String,
+    getFileName: () => java.lang.String,
+    getMimeType: () => MimeType,
+    setContent: java.lang.String => TextOutput,
+    setMimeType: MimeType => TextOutput
   ): TextOutput = {
-    val __obj = js.Dynamic.literal(append = append, clear = clear, downloadAsFile = downloadAsFile, getContent = getContent, getFileName = getFileName, getMimeType = getMimeType, setContent = setContent, setMimeType = setMimeType)
+    val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), clear = js.Any.fromFunction0(clear), downloadAsFile = js.Any.fromFunction1(downloadAsFile), getContent = js.Any.fromFunction0(getContent), getFileName = js.Any.fromFunction0(getFileName), getMimeType = js.Any.fromFunction0(getMimeType), setContent = js.Any.fromFunction1(setContent), setMimeType = js.Any.fromFunction1(setMimeType))
   
     __obj.asInstanceOf[TextOutput]
   }

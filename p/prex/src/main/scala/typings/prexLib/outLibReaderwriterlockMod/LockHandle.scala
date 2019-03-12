@@ -14,8 +14,8 @@ trait LockHandle extends js.Object {
 
 object LockHandle {
   @scala.inline
-  def apply(release: js.Function0[scala.Unit]): LockHandle = {
-    val __obj = js.Dynamic.literal(release = release)
+  def apply(release: () => scala.Unit): LockHandle = {
+    val __obj = js.Dynamic.literal(release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[LockHandle]
   }

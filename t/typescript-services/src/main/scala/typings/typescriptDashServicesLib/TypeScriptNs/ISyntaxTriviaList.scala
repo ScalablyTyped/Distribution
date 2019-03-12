@@ -22,19 +22,19 @@ trait ISyntaxTriviaList extends js.Object {
 object ISyntaxTriviaList {
   @scala.inline
   def apply(
-    collectTextElements: js.Function1[js.Array[java.lang.String], scala.Unit],
-    concat: js.Function1[ISyntaxTriviaList, ISyntaxTriviaList],
-    count: js.Function0[scala.Double],
-    fullText: js.Function0[java.lang.String],
-    fullWidth: js.Function0[scala.Double],
-    hasComment: js.Function0[scala.Boolean],
-    hasNewLine: js.Function0[scala.Boolean],
-    hasSkippedToken: js.Function0[scala.Boolean],
-    last: js.Function0[ISyntaxTrivia],
-    syntaxTriviaAt: js.Function1[scala.Double, ISyntaxTrivia],
-    toArray: js.Function0[js.Array[ISyntaxTrivia]]
+    collectTextElements: js.Array[java.lang.String] => scala.Unit,
+    concat: ISyntaxTriviaList => ISyntaxTriviaList,
+    count: () => scala.Double,
+    fullText: () => java.lang.String,
+    fullWidth: () => scala.Double,
+    hasComment: () => scala.Boolean,
+    hasNewLine: () => scala.Boolean,
+    hasSkippedToken: () => scala.Boolean,
+    last: () => ISyntaxTrivia,
+    syntaxTriviaAt: scala.Double => ISyntaxTrivia,
+    toArray: () => js.Array[ISyntaxTrivia]
   ): ISyntaxTriviaList = {
-    val __obj = js.Dynamic.literal(collectTextElements = collectTextElements, concat = concat, count = count, fullText = fullText, fullWidth = fullWidth, hasComment = hasComment, hasNewLine = hasNewLine, hasSkippedToken = hasSkippedToken, last = last, syntaxTriviaAt = syntaxTriviaAt, toArray = toArray)
+    val __obj = js.Dynamic.literal(collectTextElements = js.Any.fromFunction1(collectTextElements), concat = js.Any.fromFunction1(concat), count = js.Any.fromFunction0(count), fullText = js.Any.fromFunction0(fullText), fullWidth = js.Any.fromFunction0(fullWidth), hasComment = js.Any.fromFunction0(hasComment), hasNewLine = js.Any.fromFunction0(hasNewLine), hasSkippedToken = js.Any.fromFunction0(hasSkippedToken), last = js.Any.fromFunction0(last), syntaxTriviaAt = js.Any.fromFunction1(syntaxTriviaAt), toArray = js.Any.fromFunction0(toArray))
   
     __obj.asInstanceOf[ISyntaxTriviaList]
   }

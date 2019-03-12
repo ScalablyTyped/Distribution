@@ -20,16 +20,16 @@ trait TypeInfo extends js.Object {
 object TypeInfo {
   @scala.inline
   def apply(
-    enter: js.Function1[Node, scala.Unit],
-    getArgument: js.Function0[GraphQLArgument],
-    getDirective: js.Function0[GraphQLDirective],
-    getFieldDef: js.Function0[GraphQLFieldDefinition],
-    getInputType: js.Function0[GraphQLInputType],
-    getParentType: js.Function0[GraphQLCompositeType],
-    getType: js.Function0[GraphQLOutputType],
-    leave: js.Function1[Node, scala.Unit]
+    enter: Node => scala.Unit,
+    getArgument: () => GraphQLArgument,
+    getDirective: () => GraphQLDirective,
+    getFieldDef: () => GraphQLFieldDefinition,
+    getInputType: () => GraphQLInputType,
+    getParentType: () => GraphQLCompositeType,
+    getType: () => GraphQLOutputType,
+    leave: Node => scala.Unit
   ): TypeInfo = {
-    val __obj = js.Dynamic.literal(enter = enter, getArgument = getArgument, getDirective = getDirective, getFieldDef = getFieldDef, getInputType = getInputType, getParentType = getParentType, getType = getType, leave = leave)
+    val __obj = js.Dynamic.literal(enter = js.Any.fromFunction1(enter), getArgument = js.Any.fromFunction0(getArgument), getDirective = js.Any.fromFunction0(getDirective), getFieldDef = js.Any.fromFunction0(getFieldDef), getInputType = js.Any.fromFunction0(getInputType), getParentType = js.Any.fromFunction0(getParentType), getType = js.Any.fromFunction0(getType), leave = js.Any.fromFunction1(leave))
   
     __obj.asInstanceOf[TypeInfo]
   }

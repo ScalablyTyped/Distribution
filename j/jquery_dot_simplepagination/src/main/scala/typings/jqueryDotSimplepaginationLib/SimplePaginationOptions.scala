@@ -147,8 +147,8 @@ object SimplePaginationOptions {
     listStyle: js.UndefOr[scala.Boolean] = js.undefined,
     nextAtFront: js.UndefOr[scala.Boolean] = js.undefined,
     nextText: java.lang.String = null,
-    onInit: js.Function0[scala.Unit] = null,
-    onPageClick: js.Function2[/* page */ scala.Double, /* event */ js.Any, scala.Unit] = null,
+    onInit: () => scala.Unit = null,
+    onPageClick: (/* page */ scala.Double, /* event */ js.Any) => scala.Unit = null,
     pages: scala.Int | scala.Double = null,
     prevText: java.lang.String = null,
     selectOnClick: js.UndefOr[scala.Boolean] = js.undefined,
@@ -172,8 +172,8 @@ object SimplePaginationOptions {
     if (!js.isUndefined(listStyle)) __obj.updateDynamic("listStyle")(listStyle)
     if (!js.isUndefined(nextAtFront)) __obj.updateDynamic("nextAtFront")(nextAtFront)
     if (nextText != null) __obj.updateDynamic("nextText")(nextText)
-    if (onInit != null) __obj.updateDynamic("onInit")(onInit)
-    if (onPageClick != null) __obj.updateDynamic("onPageClick")(onPageClick)
+    if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction0(onInit))
+    if (onPageClick != null) __obj.updateDynamic("onPageClick")(js.Any.fromFunction2(onPageClick))
     if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
     if (prevText != null) __obj.updateDynamic("prevText")(prevText)
     if (!js.isUndefined(selectOnClick)) __obj.updateDynamic("selectOnClick")(selectOnClick)

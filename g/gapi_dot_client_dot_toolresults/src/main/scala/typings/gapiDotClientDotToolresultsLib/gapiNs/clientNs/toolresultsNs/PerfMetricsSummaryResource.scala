@@ -17,12 +17,9 @@ trait PerfMetricsSummaryResource extends js.Object {
 object PerfMetricsSummaryResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PerfMetricsSummary]
-    ]
+    create: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields => gapiDotClientLib.gapiNs.clientNs.Request[PerfMetricsSummary]
   ): PerfMetricsSummaryResource = {
-    val __obj = js.Dynamic.literal(create = create)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
   
     __obj.asInstanceOf[PerfMetricsSummaryResource]
   }

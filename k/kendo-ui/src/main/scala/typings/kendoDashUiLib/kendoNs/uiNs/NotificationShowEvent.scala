@@ -12,12 +12,12 @@ trait NotificationShowEvent extends NotificationEvent {
 object NotificationShowEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Notification,
     element: kendoDashUiLib.JQuery = null
   ): NotificationShowEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (element != null) __obj.updateDynamic("element")(element)
     __obj.asInstanceOf[NotificationShowEvent]
   }

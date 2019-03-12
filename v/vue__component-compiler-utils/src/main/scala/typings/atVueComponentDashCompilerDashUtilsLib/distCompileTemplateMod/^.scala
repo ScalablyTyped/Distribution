@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@vue/component-compiler-utils/dist/compileTemplate", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def compileTemplate(options: atVueComponentDashCompilerDashUtilsLib.distCompileTemplateMod.TemplateCompileOptions): atVueComponentDashCompilerDashUtilsLib.distCompileTemplateMod.TemplateCompileResult = js.native
+  def compileTemplate(options: TemplateCompileOptions): TemplateCompileResult = js.native
 }
 

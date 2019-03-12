@@ -17,14 +17,14 @@ trait Cleave extends js.Object {
 object Cleave {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
-    getFormattedValue: js.Function0[java.lang.String],
-    getISOFormatDate: js.Function0[java.lang.String],
-    getRawValue: js.Function0[java.lang.String],
-    setPhoneRegionCode: js.Function1[java.lang.String, scala.Unit],
-    setRawValue: js.Function1[java.lang.String, scala.Unit]
+    destroy: () => scala.Unit,
+    getFormattedValue: () => java.lang.String,
+    getISOFormatDate: () => java.lang.String,
+    getRawValue: () => java.lang.String,
+    setPhoneRegionCode: java.lang.String => scala.Unit,
+    setRawValue: java.lang.String => scala.Unit
   ): Cleave = {
-    val __obj = js.Dynamic.literal(destroy = destroy, getFormattedValue = getFormattedValue, getISOFormatDate = getISOFormatDate, getRawValue = getRawValue, setPhoneRegionCode = setPhoneRegionCode, setRawValue = setRawValue)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getFormattedValue = js.Any.fromFunction0(getFormattedValue), getISOFormatDate = js.Any.fromFunction0(getISOFormatDate), getRawValue = js.Any.fromFunction0(getRawValue), setPhoneRegionCode = js.Any.fromFunction1(setPhoneRegionCode), setRawValue = js.Any.fromFunction1(setRawValue))
   
     __obj.asInstanceOf[Cleave]
   }

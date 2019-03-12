@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait StatusCodeErrorConstructor
-  extends nodeLib.Error
+  extends stdLib.Error
      with org.scalablytyped.runtime.Instantiable4[
       /* statusCode */ scala.Double, 
       /* body */ js.Any, 

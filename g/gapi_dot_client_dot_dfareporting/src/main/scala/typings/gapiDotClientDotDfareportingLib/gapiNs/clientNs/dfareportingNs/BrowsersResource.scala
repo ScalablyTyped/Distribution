@@ -13,12 +13,9 @@ trait BrowsersResource extends js.Object {
 object BrowsersResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BrowsersListResponse]
-    ]
+    list: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[BrowsersListResponse]
   ): BrowsersResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[BrowsersResource]
   }

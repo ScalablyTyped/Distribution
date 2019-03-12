@@ -50,7 +50,7 @@ trait SaneWatcher
     listener: js.Function2[/* path */ java.lang.String, /* root */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_error(event: saneLib.saneLibStrings.error, listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def addListener_error(event: saneLib.saneLibStrings.error, listener: js.Function1[/* error */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_ready(event: saneLib.saneLibStrings.ready, listener: js.Function0[scala.Unit]): this.type = js.native
   def close(): scala.Unit = js.native
@@ -87,7 +87,7 @@ trait SaneWatcher
   @JSName("emit")
   def emit_delete(event: saneLib.saneLibStrings.delete, path: java.lang.String, root: java.lang.String): scala.Boolean = js.native
   @JSName("emit")
-  def emit_error(event: saneLib.saneLibStrings.error, error: nodeLib.Error): scala.Boolean = js.native
+  def emit_error(event: saneLib.saneLibStrings.error, error: stdLib.Error): scala.Boolean = js.native
   @JSName("emit")
   def emit_ready(event: saneLib.saneLibStrings.ready): scala.Boolean = js.native
   def listenerCount(`type`: saneLib.EventType): scala.Double = js.native
@@ -130,7 +130,7 @@ trait SaneWatcher
     listener: js.Function2[/* path */ java.lang.String, /* root */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_error(event: saneLib.saneLibStrings.error, listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def on_error(event: saneLib.saneLibStrings.error, listener: js.Function1[/* error */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_ready(event: saneLib.saneLibStrings.ready, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("once")
@@ -170,7 +170,7 @@ trait SaneWatcher
     listener: js.Function2[/* path */ java.lang.String, /* root */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_error(event: saneLib.saneLibStrings.error, listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def once_error(event: saneLib.saneLibStrings.error, listener: js.Function1[/* error */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("once")
   def once_ready(event: saneLib.saneLibStrings.ready, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("prependListener")
@@ -210,7 +210,7 @@ trait SaneWatcher
     listener: js.Function2[/* path */ java.lang.String, /* root */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def prependListener_error(event: saneLib.saneLibStrings.error, listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def prependListener_error(event: saneLib.saneLibStrings.error, listener: js.Function1[/* error */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_ready(event: saneLib.saneLibStrings.ready, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -250,7 +250,7 @@ trait SaneWatcher
     listener: js.Function2[/* path */ java.lang.String, /* root */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_error(event: saneLib.saneLibStrings.error, listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def prependOnceListener_error(event: saneLib.saneLibStrings.error, listener: js.Function1[/* error */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_ready(event: saneLib.saneLibStrings.ready, listener: js.Function0[scala.Unit]): this.type = js.native
   def removeAllListeners(event: saneLib.EventType): this.type = js.native
@@ -291,7 +291,7 @@ trait SaneWatcher
     listener: js.Function2[/* path */ java.lang.String, /* root */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_error(event: saneLib.saneLibStrings.error, listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def removeListener_error(event: saneLib.saneLibStrings.error, listener: js.Function1[/* error */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_ready(event: saneLib.saneLibStrings.ready, listener: js.Function0[scala.Unit]): this.type = js.native
 }

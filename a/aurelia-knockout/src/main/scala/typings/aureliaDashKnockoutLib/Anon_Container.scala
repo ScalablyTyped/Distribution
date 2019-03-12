@@ -14,9 +14,9 @@ object Anon_Container {
   @scala.inline
   def apply(
     container: aureliaDashDependencyDashInjectionLib.aureliaDashDependencyDashInjectionMod.Container,
-    globalResources: js.Function1[/* repeated */ java.lang.String, js.Any]
+    globalResources: /* repeated */ java.lang.String => js.Any
   ): Anon_Container = {
-    val __obj = js.Dynamic.literal(container = container, globalResources = globalResources)
+    val __obj = js.Dynamic.literal(container = container, globalResources = js.Any.fromFunction1(globalResources))
   
     __obj.asInstanceOf[Anon_Container]
   }

@@ -27,10 +27,10 @@ trait Encoding extends js.Object {
 object Encoding {
   @scala.inline
   def apply(
-    xmlAttributeEncode: js.Function1[java.lang.String, java.lang.String],
-    xmlEncode: js.Function1[java.lang.String, java.lang.String]
+    xmlAttributeEncode: java.lang.String => java.lang.String,
+    xmlEncode: java.lang.String => java.lang.String
   ): Encoding = {
-    val __obj = js.Dynamic.literal(xmlAttributeEncode = xmlAttributeEncode, xmlEncode = xmlEncode)
+    val __obj = js.Dynamic.literal(xmlAttributeEncode = js.Any.fromFunction1(xmlAttributeEncode), xmlEncode = js.Any.fromFunction1(xmlEncode))
   
     __obj.asInstanceOf[Encoding]
   }

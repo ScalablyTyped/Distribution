@@ -35,14 +35,14 @@ trait NotFilter extends Filter {
 object NotFilter {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    cache: js.Function1[scala.Boolean, NotFilter],
-    cacheKey: js.Function1[java.lang.String, NotFilter],
-    filter: js.Function1[js.Object, NotFilter],
-    name: js.Function1[java.lang.String, NotFilter],
-    toJSON: js.Function0[NotFilter]
+    _type: () => java.lang.String,
+    cache: scala.Boolean => NotFilter,
+    cacheKey: java.lang.String => NotFilter,
+    filter: js.Object => NotFilter,
+    name: java.lang.String => NotFilter,
+    toJSON: () => NotFilter
   ): NotFilter = {
-    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, filter = filter, name = name, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), filter = js.Any.fromFunction1(filter), name = js.Any.fromFunction1(name), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[NotFilter]
   }

@@ -18,13 +18,13 @@ object Anon_ClassName {
   def apply(
     text: reactLib.reactMod.ReactNs.ReactNode,
     className: java.lang.String = null,
-    onPress: js.Function0[scala.Unit] = null,
+    onPress: () => scala.Unit = null,
     style: js.Any = null,
     `type`: js.Any = null
   ): Anon_ClassName = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (style != null) __obj.updateDynamic("style")(style)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_ClassName]

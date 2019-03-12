@@ -24,19 +24,13 @@ object ServerSubscriptionOptions {
   @scala.inline
   def apply(
     auth: scala.Boolean | ServerSubscriptionOptionsAuthOptions = null,
-    filter: js.Function4[
-      /* path */ java.lang.String, 
-      /* message */ js.Any, 
-      /* options */ ServerSubscriptionOptionsFilterOptions, 
-      /* next */ js.Function2[/* isMatch */ scala.Boolean, /* override */ js.UndefOr[js.Any], scala.Unit], 
-      scala.Unit
-    ] = null,
+    filter: (/* path */ java.lang.String, /* message */ js.Any, /* options */ ServerSubscriptionOptionsFilterOptions, /* next */ js.Function2[/* isMatch */ scala.Boolean, /* override */ js.UndefOr[js.Any], scala.Unit]) => scala.Unit = null,
     onSubscribe: ServerOnSubscribe = null,
     onUnsubscribe: ServerOnUnSubscribe = null
   ): ServerSubscriptionOptions = {
     val __obj = js.Dynamic.literal()
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction4(filter))
     if (onSubscribe != null) __obj.updateDynamic("onSubscribe")(onSubscribe.asInstanceOf[js.Any])
     if (onUnsubscribe != null) __obj.updateDynamic("onUnsubscribe")(onUnsubscribe.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerSubscriptionOptions]

@@ -21,7 +21,7 @@ trait AlertProps extends js.Object {
   /** Content of Alert */
   var message: reactLib.reactMod.ReactNs.ReactNode
   /** Callback when close Alert */
-  var onClose: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLAnchorElement]] = js.undefined
+  var onClose: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLAnchorElement]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   /** Whether to show icon */
   var showIcon: js.UndefOr[scala.Boolean] = js.undefined
@@ -38,7 +38,7 @@ object AlertProps {
   @scala.inline
   def apply(
     message: reactLib.reactMod.ReactNs.ReactNode,
-    afterClose: js.Function0[scala.Unit] = null,
+    afterClose: () => scala.Unit = null,
     banner: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     closable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -46,14 +46,14 @@ object AlertProps {
     description: reactLib.reactMod.ReactNs.ReactNode = null,
     icon: reactLib.reactMod.ReactNs.ReactNode = null,
     iconType: java.lang.String = null,
-    onClose: reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLAnchorElement] = null,
+    onClose: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLAnchorElement] = null,
     prefixCls: java.lang.String = null,
     showIcon: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     `type`: antdLib.antdLibStrings.success | antdLib.antdLibStrings.info | antdLib.antdLibStrings.warning | antdLib.antdLibStrings.error = null
   ): AlertProps = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose)
+    if (afterClose != null) __obj.updateDynamic("afterClose")(js.Any.fromFunction0(afterClose))
     if (!js.isUndefined(banner)) __obj.updateDynamic("banner")(banner)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)

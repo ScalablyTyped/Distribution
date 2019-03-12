@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.Design")
 @js.native
 class Design protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   val HasTitleMaster: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   val Index: scala.Double = js.native
   var Name: java.lang.String = js.native

@@ -31,15 +31,25 @@ trait Options extends js.Object {
   var style: js.Any = js.native
   var width: scala.Double | java.lang.String = js.native
   var z: scala.Double = js.native
-  def onDrag(e: reactLib.MouseEvent | reactLib.TouchEvent, data: DraggableData): scala.Unit | reactDashRndLib.reactDashRndLibNumbers.`false` = js.native
-  def onDragStart(e: reactLib.MouseEvent | reactLib.TouchEvent, data: DraggableData): scala.Unit | reactDashRndLib.reactDashRndLibNumbers.`false` = js.native
-  def onDragStop(e: reactLib.MouseEvent | reactLib.TouchEvent, data: DraggableData): scala.Unit | reactDashRndLib.reactDashRndLibNumbers.`false` = js.native
+  def onDrag(e: stdLib.MouseEvent, data: DraggableData): scala.Unit | reactDashRndLib.reactDashRndLibNumbers.`false` = js.native
+  def onDrag(e: stdLib.TouchEvent, data: DraggableData): scala.Unit | reactDashRndLib.reactDashRndLibNumbers.`false` = js.native
+  def onDragStart(e: stdLib.MouseEvent, data: DraggableData): scala.Unit | reactDashRndLib.reactDashRndLibNumbers.`false` = js.native
+  def onDragStart(e: stdLib.TouchEvent, data: DraggableData): scala.Unit | reactDashRndLib.reactDashRndLibNumbers.`false` = js.native
+  def onDragStop(e: stdLib.MouseEvent, data: DraggableData): scala.Unit | reactDashRndLib.reactDashRndLibNumbers.`false` = js.native
+  def onDragStop(e: stdLib.TouchEvent, data: DraggableData): scala.Unit | reactDashRndLib.reactDashRndLibNumbers.`false` = js.native
   def onResize(): scala.Unit = js.native
   def onResizeStart(): scala.Unit = js.native
   def onResizeStop(
-    e: reactLib.MouseEvent | reactLib.TouchEvent,
+    e: stdLib.MouseEvent,
     direction: Direction,
-    ref: reactLib.HTMLDivElement,
+    ref: stdLib.HTMLDivElement,
+    delta: Size,
+    position: Position
+  ): scala.Unit = js.native
+  def onResizeStop(
+    e: stdLib.TouchEvent,
+    direction: Direction,
+    ref: stdLib.HTMLDivElement,
     delta: Size,
     position: Position
   ): scala.Unit = js.native

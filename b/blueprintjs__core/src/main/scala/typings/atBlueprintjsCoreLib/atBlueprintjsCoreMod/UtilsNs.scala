@@ -23,7 +23,7 @@ object UtilsNs extends js.Object {
   def countDecimalPlaces(num: scala.Double): scala.Double = js.native
   def deepCompareKeys(objA: js.Any, objB: js.Any): scala.Boolean = js.native
   def deepCompareKeys(objA: js.Any, objB: js.Any, keys: js.Array[java.lang.String]): scala.Boolean = js.native
-  def elementIsOrContains(element: reactLib.HTMLElement, testElement: reactLib.HTMLElement): scala.Boolean = js.native
+  def elementIsOrContains(element: stdLib.HTMLElement, testElement: stdLib.HTMLElement): scala.Boolean = js.native
   def ensureElement(): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
   def ensureElement(
     child: reactLib.reactMod.ReactNs.ReactNode | js.UndefOr[scala.Nothing],
@@ -111,7 +111,7 @@ object UtilsNs extends js.Object {
   def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: atBlueprintjsCoreLib.libEsmCommonUtilsCompareUtilsMod.IKeyBlacklist[T]): scala.Boolean = js.native
   def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: atBlueprintjsCoreLib.libEsmCommonUtilsCompareUtilsMod.IKeyWhitelist[T]): scala.Boolean = js.native
   def throttle[T /* <: js.Function */](method: T): T = js.native
-  def throttleEvent(target: reactLib.EventTarget, eventName: java.lang.String, newEventName: java.lang.String): js.Function1[/* event */ reactLib.Event, scala.Unit] = js.native
+  def throttleEvent(target: stdLib.EventTarget, eventName: java.lang.String, newEventName: java.lang.String): js.Function1[/* event */ stdLib.Event, scala.Unit] = js.native
   def throttleReactEventCallback(
     callback: js.Function2[
       /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], 

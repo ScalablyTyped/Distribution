@@ -103,7 +103,7 @@ object Resolve {
   def apply(
     alias: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     aliasFields: js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]] = null,
-    cachePredicate: js.Function1[/* data */ webpackLib.Anon_Path, scala.Boolean] = null,
+    cachePredicate: /* data */ webpackLib.Anon_Path => scala.Boolean = null,
     cacheWithContext: js.UndefOr[scala.Boolean] = js.undefined,
     descriptionFiles: js.Array[java.lang.String] = null,
     enforceExtension: js.UndefOr[scala.Boolean] = js.undefined,
@@ -118,7 +118,7 @@ object Resolve {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (aliasFields != null) __obj.updateDynamic("aliasFields")(aliasFields.asInstanceOf[js.Any])
-    if (cachePredicate != null) __obj.updateDynamic("cachePredicate")(cachePredicate)
+    if (cachePredicate != null) __obj.updateDynamic("cachePredicate")(js.Any.fromFunction1(cachePredicate))
     if (!js.isUndefined(cacheWithContext)) __obj.updateDynamic("cacheWithContext")(cacheWithContext)
     if (descriptionFiles != null) __obj.updateDynamic("descriptionFiles")(descriptionFiles)
     if (!js.isUndefined(enforceExtension)) __obj.updateDynamic("enforceExtension")(enforceExtension)

@@ -12,13 +12,10 @@ trait ReadyOptions extends js.Object {
 
 object ReadyOptions {
   @scala.inline
-  def apply(
-    error: js.Function1[/* depsNotFound */ java.lang.String, scala.Unit] = null,
-    success: js.Function0[scala.Unit] = null
-  ): ReadyOptions = {
+  def apply(error: /* depsNotFound */ java.lang.String => scala.Unit = null, success: () => scala.Unit = null): ReadyOptions = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[ReadyOptions]
   }
 }

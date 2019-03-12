@@ -21,13 +21,10 @@ trait Anon_Context extends js.Object {
 object Anon_Context {
   @scala.inline
   def apply(
-    contextTransform: js.Function1[
-      /* context */ stdLib.Readonly[atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext], 
-      atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext
-    ] = null
+    contextTransform: /* context */ stdLib.Readonly[atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext] => atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext = null
   ): Anon_Context = {
     val __obj = js.Dynamic.literal()
-    if (contextTransform != null) __obj.updateDynamic("contextTransform")(contextTransform)
+    if (contextTransform != null) __obj.updateDynamic("contextTransform")(js.Any.fromFunction1(contextTransform))
     __obj.asInstanceOf[Anon_Context]
   }
 }

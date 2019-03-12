@@ -28,10 +28,8 @@ trait IDashboardResource extends js.Object {
 
 object IDashboardResource {
   @scala.inline
-  def apply(
-    getDashboard: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[IResourcePromise]]
-  ): IDashboardResource = {
-    val __obj = js.Dynamic.literal(getDashboard = getDashboard)
+  def apply(getDashboard: java.lang.String => angularLib.angularMod.angularNs.IPromise[IResourcePromise]): IDashboardResource = {
+    val __obj = js.Dynamic.literal(getDashboard = js.Any.fromFunction1(getDashboard))
   
     __obj.asInstanceOf[IDashboardResource]
   }

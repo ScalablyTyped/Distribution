@@ -11,8 +11,8 @@ trait Anon_DefaultsOptions extends js.Object {
 
 object Anon_DefaultsOptions {
   @scala.inline
-  def apply(defaults: js.Function1[stdLib.Partial[cypressLib.CypressNs.ScreenshotDefaultsOptions], scala.Unit]): Anon_DefaultsOptions = {
-    val __obj = js.Dynamic.literal(defaults = defaults)
+  def apply(defaults: stdLib.Partial[cypressLib.CypressNs.ScreenshotDefaultsOptions] => scala.Unit): Anon_DefaultsOptions = {
+    val __obj = js.Dynamic.literal(defaults = js.Any.fromFunction1(defaults))
   
     __obj.asInstanceOf[Anon_DefaultsOptions]
   }

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class AutoScroll protected ()
   extends atUifabricUtilitiesLib.libAutoScrollMod.AutoScroll {
-  def this(element: reactLib.HTMLElement) = this()
+  def this(element: stdLib.HTMLElement) = this()
 }
 

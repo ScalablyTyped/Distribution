@@ -30,12 +30,12 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    additionalHashContent: js.Function1[/* chunk */ js.Any, java.lang.String] = null,
+    additionalHashContent: /* chunk */ js.Any => java.lang.String = null,
     algorithm: java.lang.String = null,
     digest: webpackDashChunkDashHashLib.webpackDashChunkDashHashLibStrings.hex | webpackDashChunkDashHashLib.webpackDashChunkDashHashLibStrings.latin1 | webpackDashChunkDashHashLib.webpackDashChunkDashHashLibStrings.base64 = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (additionalHashContent != null) __obj.updateDynamic("additionalHashContent")(additionalHashContent)
+    if (additionalHashContent != null) __obj.updateDynamic("additionalHashContent")(js.Any.fromFunction1(additionalHashContent))
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
     if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

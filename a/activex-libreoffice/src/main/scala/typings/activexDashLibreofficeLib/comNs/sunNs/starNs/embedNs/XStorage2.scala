@@ -54,59 +54,37 @@ trait XStorage2 extends XStorage {
 object XStorage2 {
   @scala.inline
   def apply(
-    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementNames: stdLib.SafeArray[java.lang.String],
     ElementType: activexDashLibreofficeLib.`type`,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    cloneEncryptedStream: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream
-    ],
-    cloneEncryptedStreamElement: js.Function2[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream
-    ],
-    cloneStreamElement: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream],
-    copyElementTo: js.Function3[java.lang.String, XStorage, java.lang.String, scala.Unit],
-    copyLastCommitTo: js.Function1[XStorage, scala.Unit],
-    copyStorageElementLastCommitTo: js.Function2[java.lang.String, XStorage, scala.Unit],
-    copyToStorage: js.Function1[XStorage, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    getByName: js.Function1[java.lang.String, js.Any],
-    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
-    hasByName: js.Function1[java.lang.String, scala.Boolean],
-    hasElements: js.Function0[scala.Boolean],
-    isStorageElement: js.Function1[java.lang.String, scala.Boolean],
-    isStreamElement: js.Function1[java.lang.String, scala.Boolean],
-    moveElementTo: js.Function3[java.lang.String, XStorage, java.lang.String, scala.Unit],
-    openEncryptedStream: js.Function3[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream
-    ],
-    openEncryptedStreamElement: js.Function3[
-      java.lang.String, 
-      scala.Double, 
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream
-    ],
-    openStorageElement: js.Function2[java.lang.String, scala.Double, XStorage],
-    openStreamElement: js.Function2[
-      java.lang.String, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeElement: js.Function1[java.lang.String, scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    renameElement: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    cloneEncryptedStream: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]) => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream,
+    cloneEncryptedStreamElement: (java.lang.String, java.lang.String) => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream,
+    cloneStreamElement: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream,
+    copyElementTo: (java.lang.String, XStorage, java.lang.String) => scala.Unit,
+    copyLastCommitTo: XStorage => scala.Unit,
+    copyStorageElementLastCommitTo: (java.lang.String, XStorage) => scala.Unit,
+    copyToStorage: XStorage => scala.Unit,
+    dispose: () => scala.Unit,
+    getByName: java.lang.String => js.Any,
+    getElementNames: () => stdLib.SafeArray[java.lang.String],
+    getElementType: () => activexDashLibreofficeLib.`type`,
+    hasByName: java.lang.String => scala.Boolean,
+    hasElements: () => scala.Boolean,
+    isStorageElement: java.lang.String => scala.Boolean,
+    isStreamElement: java.lang.String => scala.Boolean,
+    moveElementTo: (java.lang.String, XStorage, java.lang.String) => scala.Unit,
+    openEncryptedStream: (java.lang.String, scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]) => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream,
+    openEncryptedStreamElement: (java.lang.String, scala.Double, java.lang.String) => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream,
+    openStorageElement: (java.lang.String, scala.Double) => XStorage,
+    openStreamElement: (java.lang.String, scala.Double) => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeElement: java.lang.String => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    renameElement: (java.lang.String, java.lang.String) => scala.Unit
   ): XStorage2 = {
-    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, addEventListener = addEventListener, cloneEncryptedStream = cloneEncryptedStream, cloneEncryptedStreamElement = cloneEncryptedStreamElement, cloneStreamElement = cloneStreamElement, copyElementTo = copyElementTo, copyLastCommitTo = copyLastCommitTo, copyStorageElementLastCommitTo = copyStorageElementLastCommitTo, copyToStorage = copyToStorage, dispose = dispose, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, isStorageElement = isStorageElement, isStreamElement = isStreamElement, moveElementTo = moveElementTo, openEncryptedStream = openEncryptedStream, openEncryptedStreamElement = openEncryptedStreamElement, openStorageElement = openStorageElement, openStreamElement = openStreamElement, queryInterface = queryInterface, release = release, removeElement = removeElement, removeEventListener = removeEventListener, renameElement = renameElement)
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), cloneEncryptedStream = js.Any.fromFunction2(cloneEncryptedStream), cloneEncryptedStreamElement = js.Any.fromFunction2(cloneEncryptedStreamElement), cloneStreamElement = js.Any.fromFunction1(cloneStreamElement), copyElementTo = js.Any.fromFunction3(copyElementTo), copyLastCommitTo = js.Any.fromFunction1(copyLastCommitTo), copyStorageElementLastCommitTo = js.Any.fromFunction2(copyStorageElementLastCommitTo), copyToStorage = js.Any.fromFunction1(copyToStorage), dispose = js.Any.fromFunction0(dispose), getByName = js.Any.fromFunction1(getByName), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), isStorageElement = js.Any.fromFunction1(isStorageElement), isStreamElement = js.Any.fromFunction1(isStreamElement), moveElementTo = js.Any.fromFunction3(moveElementTo), openEncryptedStream = js.Any.fromFunction3(openEncryptedStream), openEncryptedStreamElement = js.Any.fromFunction3(openEncryptedStreamElement), openStorageElement = js.Any.fromFunction2(openStorageElement), openStreamElement = js.Any.fromFunction2(openStreamElement), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeElement = js.Any.fromFunction1(removeElement), removeEventListener = js.Any.fromFunction1(removeEventListener), renameElement = js.Any.fromFunction2(renameElement))
   
     __obj.asInstanceOf[XStorage2]
   }

@@ -12,12 +12,12 @@ trait SpreadsheetSelectEvent extends SpreadsheetEvent {
 object SpreadsheetSelectEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Spreadsheet,
     range: kendoDashUiLib.kendoNs.spreadsheetNs.Range = null
   ): SpreadsheetSelectEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (range != null) __obj.updateDynamic("range")(range)
     __obj.asInstanceOf[SpreadsheetSelectEvent]
   }

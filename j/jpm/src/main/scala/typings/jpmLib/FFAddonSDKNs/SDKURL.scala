@@ -35,11 +35,11 @@ object SDKURL {
     protocol: java.lang.String,
     scheme: java.lang.String,
     search: java.lang.String,
-    toJSON: js.Function0[java.lang.String],
-    toString: js.Function0[java.lang.String],
+    toJSON: () => java.lang.String,
+    toString: () => java.lang.String,
     userPass: java.lang.String
   ): SDKURL = {
-    val __obj = js.Dynamic.literal(hash = hash, host = host, hostname = hostname, href = href, origin = origin, path = path, pathname = pathname, port = port, protocol = protocol, scheme = scheme, search = search, toJSON = toJSON, toString = toString, userPass = userPass)
+    val __obj = js.Dynamic.literal(hash = hash, host = host, hostname = hostname, href = href, origin = origin, path = path, pathname = pathname, port = port, protocol = protocol, scheme = scheme, search = search, toJSON = js.Any.fromFunction0(toJSON), toString = js.Any.fromFunction0(toString), userPass = userPass)
   
     __obj.asInstanceOf[SDKURL]
   }

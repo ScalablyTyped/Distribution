@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ActivatedBounceResult extends GenericResult {
-  var Bounce: Bounce
+  var Bounce: postmarkLib.postmarkMod.PostmarkNs.Bounce
 }
 
 object ActivatedBounceResult {

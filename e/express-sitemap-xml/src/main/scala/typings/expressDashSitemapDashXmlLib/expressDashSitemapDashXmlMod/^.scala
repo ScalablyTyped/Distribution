@@ -9,9 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def default(
-    getUrls: js.Function0[
-      js.Array[expressDashSitemapDashXmlLib.expressDashSitemapDashXmlMod.SitemapLeaf] | js.Promise[js.Array[expressDashSitemapDashXmlLib.expressDashSitemapDashXmlMod.SitemapLeaf]]
-    ],
+    getUrls: js.Function0[js.Array[SitemapLeaf] | js.Promise[js.Array[SitemapLeaf]]],
     base: java.lang.String
   ): expressLib.expressMod.eNs.RequestHandler = js.native
 }

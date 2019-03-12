@@ -11,8 +11,8 @@ trait FluxMixin extends js.Object {
 
 object FluxMixin {
   @scala.inline
-  def apply(getFlux: js.Function0[Flux]): FluxMixin = {
-    val __obj = js.Dynamic.literal(getFlux = getFlux)
+  def apply(getFlux: () => Flux): FluxMixin = {
+    val __obj = js.Dynamic.literal(getFlux = js.Any.fromFunction0(getFlux))
   
     __obj.asInstanceOf[FluxMixin]
   }

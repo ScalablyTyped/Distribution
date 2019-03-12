@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.AnchorHTMLAttributes<react.HTMLAnchorElement>, react.HTMLAnchorElement>, 'href'> ]: react.react.DetailedHTMLProps<react.react.AnchorHTMLAttributes<react.HTMLAnchorElement>, react.HTMLAnchorElement>[P]} */ trait LinkProps[TState] extends js.Object {
+- Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.AnchorHTMLAttributes<std.HTMLAnchorElement>, std.HTMLAnchorElement>, 'href'> ]: react.react.DetailedHTMLProps<react.react.AnchorHTMLAttributes<std.HTMLAnchorElement>, std.HTMLAnchorElement>[P]} */ trait LinkProps[TState] extends js.Object {
   var getProps: js.UndefOr[js.Function1[/* props */ LinkGetProps, js.Object]] = js.undefined
   var replace: js.UndefOr[scala.Boolean] = js.undefined
   var state: js.UndefOr[TState] = js.undefined
@@ -16,13 +16,13 @@ import scala.scalajs.js.annotation._
 object LinkProps {
   @scala.inline
   def apply[TState](
-    getProps: js.Function1[/* props */ LinkGetProps, js.Object] = null,
+    getProps: /* props */ LinkGetProps => js.Object = null,
     replace: js.UndefOr[scala.Boolean] = js.undefined,
     state: TState = null,
     to: java.lang.String = null
   ): LinkProps[TState] = {
     val __obj = js.Dynamic.literal()
-    if (getProps != null) __obj.updateDynamic("getProps")(getProps)
+    if (getProps != null) __obj.updateDynamic("getProps")(js.Any.fromFunction1(getProps))
     if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to)

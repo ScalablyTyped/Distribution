@@ -12,13 +12,13 @@ trait XImplementationRegistration
     * @param implementationName specifies the name of the checked implementation.
     * @returns a sequence with names of the missing services to create an instance of this implementation.
     */
-  def checkInstantiation(implementationName: java.lang.String): activexDashInteropLib.SafeArray[java.lang.String]
+  def checkInstantiation(implementationName: java.lang.String): stdLib.SafeArray[java.lang.String]
   /**
     * @param aImplementationLoader specifies the name of the needed loader for this type of implementation. For example, the loader "com.sun.star.loader.Share
     * @param aLocation specifies the location of the component with the URL.
     * @returns the names of the implementations registered by the url location.
     */
-  def getImplementations(aImplementationLoader: java.lang.String, aLocation: java.lang.String): activexDashInteropLib.SafeArray[java.lang.String]
+  def getImplementations(aImplementationLoader: java.lang.String, aLocation: java.lang.String): stdLib.SafeArray[java.lang.String]
   /**
     * registers a component which provides one or more implementations.
     * @param aImplementationLoader the URL of the implementation loader.
@@ -37,19 +37,15 @@ trait XImplementationRegistration
 object XImplementationRegistration {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    checkInstantiation: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[java.lang.String]],
-    getImplementations: js.Function2[
-      java.lang.String, 
-      java.lang.String, 
-      activexDashInteropLib.SafeArray[java.lang.String]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerImplementation: js.Function3[java.lang.String, java.lang.String, XSimpleRegistry, scala.Unit],
-    release: js.Function0[scala.Unit],
-    revokeImplementation: js.Function2[java.lang.String, XSimpleRegistry, scala.Boolean]
+    acquire: () => scala.Unit,
+    checkInstantiation: java.lang.String => stdLib.SafeArray[java.lang.String],
+    getImplementations: (java.lang.String, java.lang.String) => stdLib.SafeArray[java.lang.String],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerImplementation: (java.lang.String, java.lang.String, XSimpleRegistry) => scala.Unit,
+    release: () => scala.Unit,
+    revokeImplementation: (java.lang.String, XSimpleRegistry) => scala.Boolean
   ): XImplementationRegistration = {
-    val __obj = js.Dynamic.literal(acquire = acquire, checkInstantiation = checkInstantiation, getImplementations = getImplementations, queryInterface = queryInterface, registerImplementation = registerImplementation, release = release, revokeImplementation = revokeImplementation)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), checkInstantiation = js.Any.fromFunction1(checkInstantiation), getImplementations = js.Any.fromFunction2(getImplementations), queryInterface = js.Any.fromFunction1(queryInterface), registerImplementation = js.Any.fromFunction3(registerImplementation), release = js.Any.fromFunction0(release), revokeImplementation = js.Any.fromFunction2(revokeImplementation))
   
     __obj.asInstanceOf[XImplementationRegistration]
   }

@@ -49,16 +49,16 @@ object RequireDirectoryOptions {
     extensions: js.Array[java.lang.String] = null,
     include: stdLib.RegExp | CheckPathFn = null,
     recurse: js.UndefOr[scala.Boolean] = js.undefined,
-    rename: js.Function1[/* name */ java.lang.String, java.lang.String] = null,
-    visit: js.Function1[/* obj */ T, U | scala.Unit] = null
+    rename: /* name */ java.lang.String => java.lang.String = null,
+    visit: /* obj */ T => U | scala.Unit = null
   ): RequireDirectoryOptions[T, U] = {
     val __obj = js.Dynamic.literal()
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (!js.isUndefined(recurse)) __obj.updateDynamic("recurse")(recurse)
-    if (rename != null) __obj.updateDynamic("rename")(rename)
-    if (visit != null) __obj.updateDynamic("visit")(visit)
+    if (rename != null) __obj.updateDynamic("rename")(js.Any.fromFunction1(rename))
+    if (visit != null) __obj.updateDynamic("visit")(js.Any.fromFunction1(visit))
     __obj.asInstanceOf[RequireDirectoryOptions[T, U]]
   }
 }

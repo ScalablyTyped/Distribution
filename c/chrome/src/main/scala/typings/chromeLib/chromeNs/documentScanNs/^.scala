@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def scan(
-    options: chromeLib.chromeNs.documentScanNs.DocumentScanOptions,
-    callback: js.Function1[/* result */ chromeLib.chromeNs.documentScanNs.DocumentScanCallbackArg, scala.Unit]
+    options: DocumentScanOptions,
+    callback: js.Function1[/* result */ DocumentScanCallbackArg, scala.Unit]
   ): scala.Unit = js.native
 }
 

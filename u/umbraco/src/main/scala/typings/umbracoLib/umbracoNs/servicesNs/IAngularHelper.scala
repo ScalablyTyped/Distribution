@@ -71,23 +71,19 @@ trait IAngularHelper extends js.Object {
     * @description
     * This checks if a digest/apply is already occuring, if not it will force an apply call
     */
-  def safeApply(scope: angularLib.angularMod.angularNs.IScope, fn: angularLib.angularMod.Global.Function): scala.Unit
+  def safeApply(scope: angularLib.angularMod.angularNs.IScope, fn: js.Function): scala.Unit
 }
 
 object IAngularHelper {
   @scala.inline
   def apply(
-    getCurrentForm: js.Function1[angularLib.angularMod.angularNs.IScope, js.Any],
-    getNullForm: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IFormController],
-    getRequiredCurrentForm: js.Function1[angularLib.angularMod.angularNs.IScope, js.Object],
-    rejectedPromise: js.Function1[js.Object, scala.Unit],
-    safeApply: js.Function2[
-      angularLib.angularMod.angularNs.IScope, 
-      angularLib.angularMod.Global.Function, 
-      scala.Unit
-    ]
+    getCurrentForm: angularLib.angularMod.angularNs.IScope => js.Any,
+    getNullForm: java.lang.String => angularLib.angularMod.angularNs.IFormController,
+    getRequiredCurrentForm: angularLib.angularMod.angularNs.IScope => js.Object,
+    rejectedPromise: js.Object => scala.Unit,
+    safeApply: (angularLib.angularMod.angularNs.IScope, js.Function) => scala.Unit
   ): IAngularHelper = {
-    val __obj = js.Dynamic.literal(getCurrentForm = getCurrentForm, getNullForm = getNullForm, getRequiredCurrentForm = getRequiredCurrentForm, rejectedPromise = rejectedPromise, safeApply = safeApply)
+    val __obj = js.Dynamic.literal(getCurrentForm = js.Any.fromFunction1(getCurrentForm), getNullForm = js.Any.fromFunction1(getNullForm), getRequiredCurrentForm = js.Any.fromFunction1(getRequiredCurrentForm), rejectedPromise = js.Any.fromFunction1(rejectedPromise), safeApply = js.Any.fromFunction2(safeApply))
   
     __obj.asInstanceOf[IAngularHelper]
   }

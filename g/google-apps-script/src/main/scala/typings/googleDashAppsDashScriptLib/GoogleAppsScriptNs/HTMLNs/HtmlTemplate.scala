@@ -15,12 +15,12 @@ trait HtmlTemplate extends js.Object {
 object HtmlTemplate {
   @scala.inline
   def apply(
-    evaluate: js.Function0[HtmlOutput],
-    getCode: js.Function0[java.lang.String],
-    getCodeWithComments: js.Function0[java.lang.String],
-    getRawContent: js.Function0[java.lang.String]
+    evaluate: () => HtmlOutput,
+    getCode: () => java.lang.String,
+    getCodeWithComments: () => java.lang.String,
+    getRawContent: () => java.lang.String
   ): HtmlTemplate = {
-    val __obj = js.Dynamic.literal(evaluate = evaluate, getCode = getCode, getCodeWithComments = getCodeWithComments, getRawContent = getRawContent)
+    val __obj = js.Dynamic.literal(evaluate = js.Any.fromFunction0(evaluate), getCode = js.Any.fromFunction0(getCode), getCodeWithComments = js.Any.fromFunction0(getCodeWithComments), getRawContent = js.Any.fromFunction0(getRawContent))
   
     __obj.asInstanceOf[HtmlTemplate]
   }

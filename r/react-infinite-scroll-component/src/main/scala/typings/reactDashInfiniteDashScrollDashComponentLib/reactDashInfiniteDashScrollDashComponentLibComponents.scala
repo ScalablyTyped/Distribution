@@ -1,0 +1,18 @@
+package typings
+package reactDashInfiniteDashScrollDashComponentLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashInfiniteDashScrollDashComponentLibComponents {
+  @scala.inline
+  def ReactDashInfiniteDashScrollDashComponent: reactLib.reactMod.ReactNs.ComponentType[
+    reactDashInfiniteDashScrollDashComponentLib.reactDashInfiniteDashScrollDashComponentMod.InfiniteScrollNs.InfiniteScrollProps
+  ] = js.constructorOf[reactDashInfiniteDashScrollDashComponentLib.reactDashInfiniteDashScrollDashComponentMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  reactDashInfiniteDashScrollDashComponentLib.reactDashInfiniteDashScrollDashComponentMod.InfiniteScrollNs.InfiniteScrollProps]]
+  @scala.inline
+  def InfiniteScrollProps: reactDashInfiniteDashScrollDashComponentLib.reactDashInfiniteDashScrollDashComponentMod.InfiniteScrollNs.InfiniteScrollProps.type = reactDashInfiniteDashScrollDashComponentLib.reactDashInfiniteDashScrollDashComponentMod.InfiniteScrollNs.InfiniteScrollProps
+  type InfiniteScrollProps = reactDashInfiniteDashScrollDashComponentLib.reactDashInfiniteDashScrollDashComponentMod.InfiniteScrollNs.InfiniteScrollProps
+}
+

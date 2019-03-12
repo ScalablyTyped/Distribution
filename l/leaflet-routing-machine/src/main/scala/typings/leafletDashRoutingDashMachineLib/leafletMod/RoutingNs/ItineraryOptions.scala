@@ -27,7 +27,7 @@ object ItineraryOptions {
   @scala.inline
   def apply(
     alternativeClassName: java.lang.String = null,
-    collapseBtn: js.Function1[/* itinerary */ Itinerary, scala.Unit] = null,
+    collapseBtn: /* itinerary */ Itinerary => scala.Unit = null,
     collapseBtnClass: java.lang.String = null,
     collapsible: js.UndefOr[scala.Boolean] = js.undefined,
     containerClassName: java.lang.String = null,
@@ -44,7 +44,7 @@ object ItineraryOptions {
   ): ItineraryOptions = {
     val __obj = js.Dynamic.literal()
     if (alternativeClassName != null) __obj.updateDynamic("alternativeClassName")(alternativeClassName)
-    if (collapseBtn != null) __obj.updateDynamic("collapseBtn")(collapseBtn)
+    if (collapseBtn != null) __obj.updateDynamic("collapseBtn")(js.Any.fromFunction1(collapseBtn))
     if (collapseBtnClass != null) __obj.updateDynamic("collapseBtnClass")(collapseBtnClass)
     if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
     if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName)

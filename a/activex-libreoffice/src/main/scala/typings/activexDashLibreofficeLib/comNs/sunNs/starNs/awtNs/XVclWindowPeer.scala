@@ -39,34 +39,28 @@ object XVclWindowPeer {
   @scala.inline
   def apply(
     Toolkit: XToolkit,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    enableClipSiblings: js.Function1[scala.Boolean, scala.Unit],
-    getProperty: js.Function1[java.lang.String, js.Any],
-    getStyles: js.Function4[
-      scala.Double, 
-      js.Array[FontDescriptor], 
-      js.Array[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color], 
-      js.Array[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color], 
-      scala.Unit
-    ],
-    getToolkit: js.Function0[XToolkit],
-    invalidate: js.Function1[scala.Double, scala.Unit],
-    invalidateRect: js.Function2[Rectangle, scala.Double, scala.Unit],
-    isChild: js.Function1[XWindowPeer, scala.Boolean],
-    isDesignMode: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    setBackground: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color, scala.Unit],
-    setControlFont: js.Function1[FontDescriptor, scala.Unit],
-    setDesignMode: js.Function1[scala.Boolean, scala.Unit],
-    setForeground: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color, scala.Unit],
-    setPointer: js.Function1[XPointer, scala.Unit],
-    setProperty: js.Function2[java.lang.String, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    dispose: () => scala.Unit,
+    enableClipSiblings: scala.Boolean => scala.Unit,
+    getProperty: java.lang.String => js.Any,
+    getStyles: (scala.Double, js.Array[FontDescriptor], js.Array[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color], js.Array[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color]) => scala.Unit,
+    getToolkit: () => XToolkit,
+    invalidate: scala.Double => scala.Unit,
+    invalidateRect: (Rectangle, scala.Double) => scala.Unit,
+    isChild: XWindowPeer => scala.Boolean,
+    isDesignMode: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    setBackground: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color => scala.Unit,
+    setControlFont: FontDescriptor => scala.Unit,
+    setDesignMode: scala.Boolean => scala.Unit,
+    setForeground: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color => scala.Unit,
+    setPointer: XPointer => scala.Unit,
+    setProperty: (java.lang.String, js.Any) => scala.Unit
   ): XVclWindowPeer = {
-    val __obj = js.Dynamic.literal(Toolkit = Toolkit, acquire = acquire, addEventListener = addEventListener, dispose = dispose, enableClipSiblings = enableClipSiblings, getProperty = getProperty, getStyles = getStyles, getToolkit = getToolkit, invalidate = invalidate, invalidateRect = invalidateRect, isChild = isChild, isDesignMode = isDesignMode, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setBackground = setBackground, setControlFont = setControlFont, setDesignMode = setDesignMode, setForeground = setForeground, setPointer = setPointer, setProperty = setProperty)
+    val __obj = js.Dynamic.literal(Toolkit = Toolkit, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), dispose = js.Any.fromFunction0(dispose), enableClipSiblings = js.Any.fromFunction1(enableClipSiblings), getProperty = js.Any.fromFunction1(getProperty), getStyles = js.Any.fromFunction4(getStyles), getToolkit = js.Any.fromFunction0(getToolkit), invalidate = js.Any.fromFunction1(invalidate), invalidateRect = js.Any.fromFunction2(invalidateRect), isChild = js.Any.fromFunction1(isChild), isDesignMode = js.Any.fromFunction0(isDesignMode), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), setBackground = js.Any.fromFunction1(setBackground), setControlFont = js.Any.fromFunction1(setControlFont), setDesignMode = js.Any.fromFunction1(setDesignMode), setForeground = js.Any.fromFunction1(setForeground), setPointer = js.Any.fromFunction1(setPointer), setProperty = js.Any.fromFunction2(setProperty))
   
     __obj.asInstanceOf[XVclWindowPeer]
   }

@@ -9,7 +9,7 @@ trait ReplicaGlobalSecondaryIndexSettingsDescription extends js.Object {
   /**
     * The name of the global secondary index. The name must be unique among all other indexes on this table.
     */
-  var IndexName: IndexName
+  var IndexName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.IndexName
   /**
     *  The current status of the global secondary index:    CREATING - The global secondary index is being created.    UPDATING - The global secondary index is being updated.    DELETING - The global secondary index is being deleted.    ACTIVE - The global secondary index is ready for use.  
     */

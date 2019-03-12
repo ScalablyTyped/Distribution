@@ -340,52 +340,15 @@ object _Impl {
     name: java.lang.String,
     namespace: java.lang.String,
     on: java.lang.String,
-    onAdd: js.Function4[
-      semanticDashUiDashDropdownLib.JQuery, 
-      js.Any, 
-      java.lang.String, 
-      semanticDashUiDashDropdownLib.JQuery, 
-      scala.Unit
-    ],
-    onChange: js.Function4[
-      semanticDashUiDashDropdownLib.JQuery, 
-      js.Any, 
-      java.lang.String, 
-      semanticDashUiDashDropdownLib.JQuery, 
-      scala.Unit
-    ],
-    onHide: js.Function1[
-      semanticDashUiDashDropdownLib.JQuery, 
-      semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | scala.Unit
-    ],
-    onLabelCreate: js.Function3[
-      semanticDashUiDashDropdownLib.JQuery, 
-      js.Any, 
-      java.lang.String, 
-      semanticDashUiDashDropdownLib.JQuery
-    ],
-    onLabelRemove: js.Function2[
-      semanticDashUiDashDropdownLib.JQuery, 
-      js.Any, 
-      semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | scala.Unit
-    ],
-    onLabelSelect: js.Function2[
-      semanticDashUiDashDropdownLib.JQuery, 
-      semanticDashUiDashDropdownLib.JQuery, 
-      scala.Unit
-    ],
-    onNoResults: js.Function2[semanticDashUiDashDropdownLib.JQuery, js.Any, scala.Unit],
-    onRemove: js.Function4[
-      semanticDashUiDashDropdownLib.JQuery, 
-      js.Any, 
-      java.lang.String, 
-      semanticDashUiDashDropdownLib.JQuery, 
-      scala.Unit
-    ],
-    onShow: js.Function1[
-      semanticDashUiDashDropdownLib.JQuery, 
-      semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | scala.Unit
-    ],
+    onAdd: (semanticDashUiDashDropdownLib.JQuery, js.Any, java.lang.String, semanticDashUiDashDropdownLib.JQuery) => scala.Unit,
+    onChange: (semanticDashUiDashDropdownLib.JQuery, js.Any, java.lang.String, semanticDashUiDashDropdownLib.JQuery) => scala.Unit,
+    onHide: semanticDashUiDashDropdownLib.JQuery => semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | scala.Unit,
+    onLabelCreate: (semanticDashUiDashDropdownLib.JQuery, js.Any, java.lang.String) => semanticDashUiDashDropdownLib.JQuery,
+    onLabelRemove: (semanticDashUiDashDropdownLib.JQuery, js.Any) => semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | scala.Unit,
+    onLabelSelect: (semanticDashUiDashDropdownLib.JQuery, semanticDashUiDashDropdownLib.JQuery) => scala.Unit,
+    onNoResults: (semanticDashUiDashDropdownLib.JQuery, js.Any) => scala.Unit,
+    onRemove: (semanticDashUiDashDropdownLib.JQuery, js.Any, java.lang.String, semanticDashUiDashDropdownLib.JQuery) => scala.Unit,
+    onShow: semanticDashUiDashDropdownLib.JQuery => semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | scala.Unit,
     performance: scala.Boolean,
     placeholder: semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.auto | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.value | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false`,
     preserveHTML: scala.Boolean,
@@ -400,7 +363,7 @@ object _Impl {
     useLabels: scala.Boolean,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], allowAdditions = allowAdditions, allowCategorySelection = allowCategorySelection, allowReselection = allowReselection, allowTab = allowTab, apiSettings = apiSettings.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug, delay = delay.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], duration = duration, error = error.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], filterRemoteData = filterRemoteData, forceSelection = forceSelection, fullTextSearch = fullTextSearch.asInstanceOf[js.Any], glyphWidth = glyphWidth, hideAdditions = hideAdditions, keepOnScreen = keepOnScreen, keys = keys.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], maxSelections = maxSelections.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], minCharacters = minCharacters, name = name, namespace = namespace, on = on, onAdd = onAdd, onChange = onChange, onHide = onHide, onLabelCreate = onLabelCreate, onLabelRemove = onLabelRemove, onLabelSelect = onLabelSelect, onNoResults = onNoResults, onRemove = onRemove, onShow = onShow, performance = performance, placeholder = placeholder.asInstanceOf[js.Any], preserveHTML = preserveHTML, regExp = regExp, saveRemoteData = saveRemoteData, selectOnKeydown = selectOnKeydown, selector = selector.asInstanceOf[js.Any], showOnFocus = showOnFocus, silent = silent, sortSelect = sortSelect, transition = transition.asInstanceOf[js.Any], useLabels = useLabels, verbose = verbose)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], allowAdditions = allowAdditions, allowCategorySelection = allowCategorySelection, allowReselection = allowReselection, allowTab = allowTab, apiSettings = apiSettings.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug, delay = delay.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], duration = duration, error = error.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], filterRemoteData = filterRemoteData, forceSelection = forceSelection, fullTextSearch = fullTextSearch.asInstanceOf[js.Any], glyphWidth = glyphWidth, hideAdditions = hideAdditions, keepOnScreen = keepOnScreen, keys = keys.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], maxSelections = maxSelections.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], minCharacters = minCharacters, name = name, namespace = namespace, on = on, onAdd = js.Any.fromFunction4(onAdd), onChange = js.Any.fromFunction4(onChange), onHide = js.Any.fromFunction1(onHide), onLabelCreate = js.Any.fromFunction3(onLabelCreate), onLabelRemove = js.Any.fromFunction2(onLabelRemove), onLabelSelect = js.Any.fromFunction2(onLabelSelect), onNoResults = js.Any.fromFunction2(onNoResults), onRemove = js.Any.fromFunction4(onRemove), onShow = js.Any.fromFunction1(onShow), performance = performance, placeholder = placeholder.asInstanceOf[js.Any], preserveHTML = preserveHTML, regExp = regExp, saveRemoteData = saveRemoteData, selectOnKeydown = selectOnKeydown, selector = selector.asInstanceOf[js.Any], showOnFocus = showOnFocus, silent = silent, sortSelect = sortSelect, transition = transition.asInstanceOf[js.Any], useLabels = useLabels, verbose = verbose)
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Impl]
   }

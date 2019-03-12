@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(sourceBuffer: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
-  def apply(sourceBuffer: nodeLib.Buffer, opts: svg2pngLib.svg2pngMod.opts): js.Promise[nodeLib.Buffer] = js.native
+  def apply(sourceBuffer: nodeLib.Buffer, opts: opts): js.Promise[nodeLib.Buffer] = js.native
   def sync(sourceBuffer: nodeLib.Buffer): nodeLib.Buffer = js.native
-  def sync(sourceBuffer: nodeLib.Buffer, opts: svg2pngLib.svg2pngMod.opts): nodeLib.Buffer = js.native
+  def sync(sourceBuffer: nodeLib.Buffer, opts: opts): nodeLib.Buffer = js.native
 }
 

@@ -14,8 +14,8 @@ trait UiFocusable
 
 object UiFocusable {
   @scala.inline
-  def apply(setFocus: js.Function0[scala.Unit]): UiFocusable = {
-    val __obj = js.Dynamic.literal(setFocus = setFocus)
+  def apply(setFocus: () => scala.Unit): UiFocusable = {
+    val __obj = js.Dynamic.literal(setFocus = js.Any.fromFunction0(setFocus))
   
     __obj.asInstanceOf[UiFocusable]
   }

@@ -21,16 +21,16 @@ object Camera {
   @scala.inline
   def apply(
     angle: scala.Double,
-    cameraPosition: js.Function2[scala.Double, scala.Double, sigmajsLib.Anon_X],
-    goTo: js.Function1[org.scalablytyped.runtime.StringDictionary[js.Any], scala.Unit],
-    graphPosition: js.Function2[scala.Double, scala.Double, sigmajsLib.Anon_X],
+    cameraPosition: (scala.Double, scala.Double) => sigmajsLib.Anon_X,
+    goTo: org.scalablytyped.runtime.StringDictionary[js.Any] => scala.Unit,
+    graphPosition: (scala.Double, scala.Double) => sigmajsLib.Anon_X,
     ratio: scala.Double,
     readPrefix: java.lang.String,
-    settings: js.Function1[java.lang.String, js.Any],
+    settings: java.lang.String => js.Any,
     x: scala.Double,
     y: scala.Double
   ): Camera = {
-    val __obj = js.Dynamic.literal(angle = angle, cameraPosition = cameraPosition, goTo = goTo, graphPosition = graphPosition, ratio = ratio, readPrefix = readPrefix, settings = settings, x = x, y = y)
+    val __obj = js.Dynamic.literal(angle = angle, cameraPosition = js.Any.fromFunction2(cameraPosition), goTo = js.Any.fromFunction1(goTo), graphPosition = js.Any.fromFunction2(graphPosition), ratio = ratio, readPrefix = readPrefix, settings = js.Any.fromFunction1(settings), x = x, y = y)
   
     __obj.asInstanceOf[Camera]
   }

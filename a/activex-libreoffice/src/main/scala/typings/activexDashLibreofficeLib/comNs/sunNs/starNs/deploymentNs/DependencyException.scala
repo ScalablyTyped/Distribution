@@ -23,7 +23,7 @@ trait DependencyException
     *
     * The sequence must not be empty, and none of the elements may be `NULL` .
     */
-  var UnsatisfiedDependencies: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XElement]
+  var UnsatisfiedDependencies: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XElement]
 }
 
 object DependencyException {
@@ -31,7 +31,7 @@ object DependencyException {
   def apply(
     Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     Message: java.lang.String,
-    UnsatisfiedDependencies: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XElement]
+    UnsatisfiedDependencies: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XElement]
   ): DependencyException = {
     val __obj = js.Dynamic.literal(Context = Context, Message = Message, UnsatisfiedDependencies = UnsatisfiedDependencies)
   

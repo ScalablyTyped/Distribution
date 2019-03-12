@@ -20,7 +20,7 @@ trait XNumberingTypeInfo
     * returns the numbering type values that are supported by the component.
     * @see
     */
-  val SupportedNumberingTypes: activexDashInteropLib.SafeArray[scala.Double]
+  val SupportedNumberingTypes: stdLib.SafeArray[scala.Double]
   /** returns the corresponding identifier to a numbering type. */
   def getNumberingIdentifier(NumberingType: scala.Double): java.lang.String
   /** returns the corresponding numbering type to an identifier. */
@@ -29,7 +29,7 @@ trait XNumberingTypeInfo
     * returns the numbering type values that are supported by the component.
     * @see
     */
-  def getSupportedNumberingTypes(): activexDashInteropLib.SafeArray[scala.Double]
+  def getSupportedNumberingTypes(): stdLib.SafeArray[scala.Double]
   /** determines whether an identifier is supported. */
   def hasNumberingType(NumberingIdentifier: java.lang.String): scala.Boolean
 }
@@ -37,16 +37,16 @@ trait XNumberingTypeInfo
 object XNumberingTypeInfo {
   @scala.inline
   def apply(
-    SupportedNumberingTypes: activexDashInteropLib.SafeArray[scala.Double],
-    acquire: js.Function0[scala.Unit],
-    getNumberingIdentifier: js.Function1[scala.Double, java.lang.String],
-    getNumberingType: js.Function1[java.lang.String, scala.Double],
-    getSupportedNumberingTypes: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    hasNumberingType: js.Function1[java.lang.String, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    SupportedNumberingTypes: stdLib.SafeArray[scala.Double],
+    acquire: () => scala.Unit,
+    getNumberingIdentifier: scala.Double => java.lang.String,
+    getNumberingType: java.lang.String => scala.Double,
+    getSupportedNumberingTypes: () => stdLib.SafeArray[scala.Double],
+    hasNumberingType: java.lang.String => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XNumberingTypeInfo = {
-    val __obj = js.Dynamic.literal(SupportedNumberingTypes = SupportedNumberingTypes, acquire = acquire, getNumberingIdentifier = getNumberingIdentifier, getNumberingType = getNumberingType, getSupportedNumberingTypes = getSupportedNumberingTypes, hasNumberingType = hasNumberingType, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(SupportedNumberingTypes = SupportedNumberingTypes, acquire = js.Any.fromFunction0(acquire), getNumberingIdentifier = js.Any.fromFunction1(getNumberingIdentifier), getNumberingType = js.Any.fromFunction1(getNumberingType), getSupportedNumberingTypes = js.Any.fromFunction0(getSupportedNumberingTypes), hasNumberingType = js.Any.fromFunction1(hasNumberingType), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XNumberingTypeInfo]
   }

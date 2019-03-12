@@ -33,24 +33,24 @@ object ImageLoaderProps {
     className: java.lang.String = null,
     imgProps: js.Any = null,
     key: reactLib.reactMod.ReactNs.Key = null,
-    onError: js.Function1[/* event */ js.Any, scala.Unit] = null,
-    onLoad: js.Function1[/* event */ js.Any, scala.Unit] = null,
-    preloader: js.Function1[/* params */ js.Any, reactLib.reactMod.ReactNs.ReactElement[_]] = null,
+    onError: /* event */ js.Any => scala.Unit = null,
+    onLoad: /* event */ js.Any => scala.Unit = null,
+    preloader: /* params */ js.Any => reactLib.reactMod.ReactNs.ReactElement[_] = null,
     ref: reactLib.reactMod.ReactNs.LegacyRef[ImageLoader] = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    wrapper: js.Function1[/* props */ js.Any, reactLib.reactMod.ReactNs.ReactElement[_]] = null
+    wrapper: /* props */ js.Any => reactLib.reactMod.ReactNs.ReactElement[_] = null
   ): ImageLoaderProps = {
     val __obj = js.Dynamic.literal(src = src)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (imgProps != null) __obj.updateDynamic("imgProps")(imgProps)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
-    if (preloader != null) __obj.updateDynamic("preloader")(preloader)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
+    if (preloader != null) __obj.updateDynamic("preloader")(js.Any.fromFunction1(preloader))
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
+    if (wrapper != null) __obj.updateDynamic("wrapper")(js.Any.fromFunction1(wrapper))
     __obj.asInstanceOf[ImageLoaderProps]
   }
 }

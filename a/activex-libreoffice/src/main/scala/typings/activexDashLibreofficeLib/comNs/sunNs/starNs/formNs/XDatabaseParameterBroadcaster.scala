@@ -32,13 +32,13 @@ trait XDatabaseParameterBroadcaster
 object XDatabaseParameterBroadcaster {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addParameterListener: js.Function1[XDatabaseParameterListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeParameterListener: js.Function1[XDatabaseParameterListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addParameterListener: XDatabaseParameterListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeParameterListener: XDatabaseParameterListener => scala.Unit
   ): XDatabaseParameterBroadcaster = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addParameterListener = addParameterListener, queryInterface = queryInterface, release = release, removeParameterListener = removeParameterListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addParameterListener = js.Any.fromFunction1(addParameterListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeParameterListener = js.Any.fromFunction1(removeParameterListener))
   
     __obj.asInstanceOf[XDatabaseParameterBroadcaster]
   }

@@ -14,13 +14,13 @@ trait IPlugin extends js.Object {
 object IPlugin {
   @scala.inline
   def apply(
-    init: js.Function1[Client, js.Any],
+    init: Client => js.Any,
     configSchema: org.scalablytyped.runtime.StringDictionary[IConfigSchemaEntry] = null,
-    destroy: js.Function0[scala.Unit] = null
+    destroy: () => scala.Unit = null
   ): IPlugin = {
-    val __obj = js.Dynamic.literal(init = init)
+    val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init))
     if (configSchema != null) __obj.updateDynamic("configSchema")(configSchema)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     __obj.asInstanceOf[IPlugin]
   }
 }

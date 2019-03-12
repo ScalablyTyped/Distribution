@@ -81,9 +81,9 @@ object RavenOptions {
     allowDuplicates: js.UndefOr[scala.Boolean] = js.undefined,
     allowSecretKey: js.UndefOr[scala.Boolean] = js.undefined,
     autoBreadcrumbs: scala.Boolean | AutoBreadcrumbOptions = null,
-    breadcrumbCallback: js.Function1[/* data */ js.Any, _] = null,
+    breadcrumbCallback: /* data */ js.Any => _ = null,
     captureUnhandledRejections: js.UndefOr[scala.Boolean] = js.undefined,
-    dataCallback: js.Function1[/* data */ js.Any, _] = null,
+    dataCallback: /* data */ js.Any => _ = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     environment: java.lang.String = null,
     extra: js.Any = null,
@@ -103,19 +103,19 @@ object RavenOptions {
     sampleRate: scala.Int | scala.Double = null,
     sanitizeKeys: js.Array[stdLib.RegExp | java.lang.String] = null,
     serverName: java.lang.String = null,
-    shouldSendCallback: js.Function1[/* data */ js.Any, scala.Boolean] = null,
+    shouldSendCallback: /* data */ js.Any => scala.Boolean = null,
     stacktrace: js.UndefOr[scala.Boolean] = js.undefined,
     tags: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    transport: js.Function1[/* options */ RavenTransportOptions, scala.Unit] = null,
+    transport: /* options */ RavenTransportOptions => scala.Unit = null,
     whitelistUrls: js.Array[stdLib.RegExp | java.lang.String] = null
   ): RavenOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowDuplicates)) __obj.updateDynamic("allowDuplicates")(allowDuplicates)
     if (!js.isUndefined(allowSecretKey)) __obj.updateDynamic("allowSecretKey")(allowSecretKey)
     if (autoBreadcrumbs != null) __obj.updateDynamic("autoBreadcrumbs")(autoBreadcrumbs.asInstanceOf[js.Any])
-    if (breadcrumbCallback != null) __obj.updateDynamic("breadcrumbCallback")(breadcrumbCallback)
+    if (breadcrumbCallback != null) __obj.updateDynamic("breadcrumbCallback")(js.Any.fromFunction1(breadcrumbCallback))
     if (!js.isUndefined(captureUnhandledRejections)) __obj.updateDynamic("captureUnhandledRejections")(captureUnhandledRejections)
-    if (dataCallback != null) __obj.updateDynamic("dataCallback")(dataCallback)
+    if (dataCallback != null) __obj.updateDynamic("dataCallback")(js.Any.fromFunction1(dataCallback))
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (environment != null) __obj.updateDynamic("environment")(environment)
     if (extra != null) __obj.updateDynamic("extra")(extra)
@@ -135,10 +135,10 @@ object RavenOptions {
     if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
     if (sanitizeKeys != null) __obj.updateDynamic("sanitizeKeys")(sanitizeKeys)
     if (serverName != null) __obj.updateDynamic("serverName")(serverName)
-    if (shouldSendCallback != null) __obj.updateDynamic("shouldSendCallback")(shouldSendCallback)
+    if (shouldSendCallback != null) __obj.updateDynamic("shouldSendCallback")(js.Any.fromFunction1(shouldSendCallback))
     if (!js.isUndefined(stacktrace)) __obj.updateDynamic("stacktrace")(stacktrace)
     if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (transport != null) __obj.updateDynamic("transport")(transport)
+    if (transport != null) __obj.updateDynamic("transport")(js.Any.fromFunction1(transport))
     if (whitelistUrls != null) __obj.updateDynamic("whitelistUrls")(whitelistUrls)
     __obj.asInstanceOf[RavenOptions]
   }

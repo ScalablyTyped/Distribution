@@ -24,25 +24,16 @@ object UsersResource {
   @scala.inline
   def apply(
     drafts: DraftsResource,
-    getProfile: js.Function1[
-      gapiDotClientDotGmailLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Profile]
-    ],
+    getProfile: gapiDotClientDotGmailLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[Profile],
     history: HistoryResource,
     labels: LabelsResource,
     messages: MessagesResource,
     settings: SettingsResource,
-    stop: js.Function1[
-      gapiDotClientDotGmailLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
+    stop: gapiDotClientDotGmailLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
     threads: ThreadsResource,
-    watch: js.Function1[
-      gapiDotClientDotGmailLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[WatchResponse]
-    ]
+    watch: gapiDotClientDotGmailLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[WatchResponse]
   ): UsersResource = {
-    val __obj = js.Dynamic.literal(drafts = drafts, getProfile = getProfile, history = history, labels = labels, messages = messages, settings = settings, stop = stop, threads = threads, watch = watch)
+    val __obj = js.Dynamic.literal(drafts = drafts, getProfile = js.Any.fromFunction1(getProfile), history = history, labels = labels, messages = messages, settings = settings, stop = js.Any.fromFunction1(stop), threads = threads, watch = js.Any.fromFunction1(watch))
   
     __obj.asInstanceOf[UsersResource]
   }

@@ -53,13 +53,13 @@ trait XOutParameters
 object XOutParameters {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    registerNumericOutParameter: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
-    registerOutParameter: js.Function3[scala.Double, scala.Double, java.lang.String, scala.Unit],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    registerNumericOutParameter: (scala.Double, scala.Double, scala.Double) => scala.Unit,
+    registerOutParameter: (scala.Double, scala.Double, java.lang.String) => scala.Unit,
+    release: () => scala.Unit
   ): XOutParameters = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, registerNumericOutParameter = registerNumericOutParameter, registerOutParameter = registerOutParameter, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), registerNumericOutParameter = js.Any.fromFunction3(registerNumericOutParameter), registerOutParameter = js.Any.fromFunction3(registerOutParameter), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XOutParameters]
   }

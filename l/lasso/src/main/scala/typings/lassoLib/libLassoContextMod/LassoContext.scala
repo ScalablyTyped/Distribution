@@ -18,6 +18,8 @@ trait LassoContext
   var flags: js.Array[_] = js.native
   var lasso: lassoLib.libLassoMod.default = js.native
   var options: js.Any = js.native
-  var writer: lassoLib.libWritersMod.Writer = js.native
+  @JSName("writer")
+  var writer_Original: lassoLib.libWritersMod.Writer = js.native
+  def writer(impl: js.Any): lassoLib.libWritersWriterMod.Writer = js.native
 }
 

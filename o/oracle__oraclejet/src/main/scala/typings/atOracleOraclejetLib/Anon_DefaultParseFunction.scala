@@ -21,17 +21,11 @@ object Anon_DefaultParseFunction {
   @scala.inline
   def apply(
     metadata: atOracleOraclejetLib.ojcompositeMod.Metadata,
-    parseFunction: js.Function4[
-      java.lang.String, 
-      java.lang.String, 
-      js.Object, 
-      js.Function1[/* value */ java.lang.String, _], 
-      js.Any
-    ],
+    parseFunction: (java.lang.String, java.lang.String, js.Object, js.Function1[/* value */ java.lang.String, _]) => js.Any,
     view: java.lang.String,
-    viewModel: js.Function1[atOracleOraclejetLib.ojcompositeMod.ViewModelContext, scala.Unit | js.Object]
+    viewModel: atOracleOraclejetLib.ojcompositeMod.ViewModelContext => scala.Unit | js.Object
   ): Anon_DefaultParseFunction = {
-    val __obj = js.Dynamic.literal(metadata = metadata, parseFunction = parseFunction, view = view, viewModel = viewModel)
+    val __obj = js.Dynamic.literal(metadata = metadata, parseFunction = js.Any.fromFunction4(parseFunction), view = view, viewModel = js.Any.fromFunction1(viewModel))
   
     __obj.asInstanceOf[Anon_DefaultParseFunction]
   }

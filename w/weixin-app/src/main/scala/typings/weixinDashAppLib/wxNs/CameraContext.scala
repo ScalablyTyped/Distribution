@@ -17,11 +17,11 @@ trait CameraContext extends js.Object {
 object CameraContext {
   @scala.inline
   def apply(
-    startRecord: js.Function1[StartRecordOptions, scala.Unit],
-    stopRecord: js.Function1[StopRecordOptions, scala.Unit],
-    takePhoto: js.Function1[TakePhotoOptions, scala.Unit]
+    startRecord: StartRecordOptions => scala.Unit,
+    stopRecord: StopRecordOptions => scala.Unit,
+    takePhoto: TakePhotoOptions => scala.Unit
   ): CameraContext = {
-    val __obj = js.Dynamic.literal(startRecord = startRecord, stopRecord = stopRecord, takePhoto = takePhoto)
+    val __obj = js.Dynamic.literal(startRecord = js.Any.fromFunction1(startRecord), stopRecord = js.Any.fromFunction1(stopRecord), takePhoto = js.Any.fromFunction1(takePhoto))
   
     __obj.asInstanceOf[CameraContext]
   }

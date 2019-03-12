@@ -25,9 +25,9 @@ object SectionDescriptor {
     contentElement: stdLib.HTMLElement = null,
     footerLinkText: java.lang.String = null,
     hasDropdown: js.UndefOr[scala.Boolean] = js.undefined,
-    onDropdownClick: js.Function1[/* event */ SectionDropdownClickEvent, scala.Unit] = null,
-    onFooterLinkClick: js.Function1[/* event */ js.Any, scala.Unit] = null,
-    onTitleLinkClick: js.Function0[scala.Unit] = null,
+    onDropdownClick: /* event */ SectionDropdownClickEvent => scala.Unit = null,
+    onFooterLinkClick: /* event */ js.Any => scala.Unit = null,
+    onTitleLinkClick: () => scala.Unit = null,
     subtitle: java.lang.String = null,
     tableRows: js.Array[RowDescriptor] = null,
     titleLinkText: java.lang.String = null
@@ -36,9 +36,9 @@ object SectionDescriptor {
     if (contentElement != null) __obj.updateDynamic("contentElement")(contentElement)
     if (footerLinkText != null) __obj.updateDynamic("footerLinkText")(footerLinkText)
     if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown)
-    if (onDropdownClick != null) __obj.updateDynamic("onDropdownClick")(onDropdownClick)
-    if (onFooterLinkClick != null) __obj.updateDynamic("onFooterLinkClick")(onFooterLinkClick)
-    if (onTitleLinkClick != null) __obj.updateDynamic("onTitleLinkClick")(onTitleLinkClick)
+    if (onDropdownClick != null) __obj.updateDynamic("onDropdownClick")(js.Any.fromFunction1(onDropdownClick))
+    if (onFooterLinkClick != null) __obj.updateDynamic("onFooterLinkClick")(js.Any.fromFunction1(onFooterLinkClick))
+    if (onTitleLinkClick != null) __obj.updateDynamic("onTitleLinkClick")(js.Any.fromFunction0(onTitleLinkClick))
     if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
     if (tableRows != null) __obj.updateDynamic("tableRows")(tableRows)
     if (titleLinkText != null) __obj.updateDynamic("titleLinkText")(titleLinkText)

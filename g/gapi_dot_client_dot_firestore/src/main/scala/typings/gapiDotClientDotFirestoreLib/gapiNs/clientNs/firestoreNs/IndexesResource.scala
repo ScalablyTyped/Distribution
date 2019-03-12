@@ -33,24 +33,12 @@ trait IndexesResource extends js.Object {
 object IndexesResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyName, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Index]
-    ],
-    list: js.Function1[
-      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListIndexesResponse]
-    ]
+    create: gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    delete: gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyName => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyName => gapiDotClientLib.gapiNs.clientNs.Request[Index],
+    list: gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter => gapiDotClientLib.gapiNs.clientNs.Request[ListIndexesResponse]
   ): IndexesResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[IndexesResource]
   }

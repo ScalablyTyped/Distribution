@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("watchpack/Watcher", JSImport.Namespace)
 @js.native
 class namespaced protected () extends Watcher {
-  def this(directoryWatcher: watchpackLib.directorywatcherMod.namespaced, filePath: java.lang.String, startTime: scala.Double) = this()
+  def this(directoryWatcher: watchpackLib.directoryWatcherMod.namespaced, filePath: java.lang.String, startTime: scala.Double) = this()
 }
 

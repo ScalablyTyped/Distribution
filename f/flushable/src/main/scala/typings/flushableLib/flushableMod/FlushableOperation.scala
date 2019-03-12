@@ -16,12 +16,8 @@ trait FlushableOperation extends js.Object {
 
 object FlushableOperation {
   @scala.inline
-  def apply(
-    cancel: js.Function0[scala.Unit],
-    flush: js.Function0[scala.Unit],
-    pending: js.Function0[scala.Boolean]
-  ): FlushableOperation = {
-    val __obj = js.Dynamic.literal(cancel = cancel, flush = flush, pending = pending)
+  def apply(cancel: () => scala.Unit, flush: () => scala.Unit, pending: () => scala.Boolean): FlushableOperation = {
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), flush = js.Any.fromFunction0(flush), pending = js.Any.fromFunction0(pending))
   
     __obj.asInstanceOf[FlushableOperation]
   }

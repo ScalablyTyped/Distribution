@@ -16,7 +16,7 @@ class SingleValueStream protected ()
   /* private */ override def _transform(
     obj: massiveLib.massiveMod.massiveNs.AnyObject[_],
     encoding: java.lang.String,
-    cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    cb: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): scala.Unit = js.native
   /** Converts a single-key object into its value. */
   /* CompleteClass */

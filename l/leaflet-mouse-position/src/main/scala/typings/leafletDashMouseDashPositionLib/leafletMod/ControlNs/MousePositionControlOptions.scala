@@ -20,9 +20,9 @@ object MousePositionControlOptions {
   @scala.inline
   def apply(
     emptyString: java.lang.String = null,
-    latFormatter: js.Function1[/* lat */ scala.Double, java.lang.String] = null,
+    latFormatter: /* lat */ scala.Double => java.lang.String = null,
     lngFirst: js.UndefOr[scala.Boolean] = js.undefined,
-    lngFormatter: js.Function1[/* lng */ scala.Double, java.lang.String] = null,
+    lngFormatter: /* lng */ scala.Double => java.lang.String = null,
     numDigits: scala.Int | scala.Double = null,
     position: leafletLib.leafletMod.ControlPosition = null,
     prefix: java.lang.String = null,
@@ -30,9 +30,9 @@ object MousePositionControlOptions {
   ): MousePositionControlOptions = {
     val __obj = js.Dynamic.literal()
     if (emptyString != null) __obj.updateDynamic("emptyString")(emptyString)
-    if (latFormatter != null) __obj.updateDynamic("latFormatter")(latFormatter)
+    if (latFormatter != null) __obj.updateDynamic("latFormatter")(js.Any.fromFunction1(latFormatter))
     if (!js.isUndefined(lngFirst)) __obj.updateDynamic("lngFirst")(lngFirst)
-    if (lngFormatter != null) __obj.updateDynamic("lngFormatter")(lngFormatter)
+    if (lngFormatter != null) __obj.updateDynamic("lngFormatter")(js.Any.fromFunction1(lngFormatter))
     if (numDigits != null) __obj.updateDynamic("numDigits")(numDigits.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)

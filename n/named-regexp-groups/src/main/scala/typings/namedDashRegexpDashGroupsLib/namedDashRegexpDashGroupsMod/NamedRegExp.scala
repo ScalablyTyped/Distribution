@@ -33,20 +33,16 @@ trait NamedRegExp extends js.Object {
 object NamedRegExp {
   @scala.inline
   def apply(
-    exec: js.Function1[java.lang.String, NamedRegExpExecArray | scala.Null],
-    `match`: js.Function1[/* str */ java.lang.String, NamedRegExpExecArray],
-    replace: js.Function2[
-      /* str */ java.lang.String, 
-      /* replacement */ java.lang.String | (js.Function2[/* match */ java.lang.String, /* repeated */ java.lang.String, java.lang.String]), 
-      java.lang.String
-    ],
-    search: js.Function1[/* str */ java.lang.String, scala.Double],
-    split: js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]],
-    test: js.Function1[java.lang.String, scala.Boolean],
-    toString: js.Function0[java.lang.String]
+    exec: java.lang.String => NamedRegExpExecArray | scala.Null,
+    `match`: /* str */ java.lang.String => NamedRegExpExecArray,
+    replace: (/* str */ java.lang.String, /* replacement */ java.lang.String | (js.Function2[/* match */ java.lang.String, /* repeated */ java.lang.String, java.lang.String])) => java.lang.String,
+    search: /* str */ java.lang.String => scala.Double,
+    split: /* str */ java.lang.String => js.Array[java.lang.String],
+    test: java.lang.String => scala.Boolean,
+    toString: () => java.lang.String
   ): NamedRegExp = {
-    val __obj = js.Dynamic.literal(exec = exec, replace = replace, search = search, split = split, test = test, toString = toString)
-    __obj.updateDynamic("match")(`match`)
+    val __obj = js.Dynamic.literal(exec = js.Any.fromFunction1(exec), replace = js.Any.fromFunction2(replace), search = js.Any.fromFunction1(search), split = js.Any.fromFunction1(split), test = js.Any.fromFunction1(test), toString = js.Any.fromFunction0(toString))
+    __obj.updateDynamic("match")(js.Any.fromFunction1(`match`))
     __obj.asInstanceOf[NamedRegExp]
   }
 }

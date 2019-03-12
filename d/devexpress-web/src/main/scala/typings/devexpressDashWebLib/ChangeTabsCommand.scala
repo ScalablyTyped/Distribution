@@ -22,8 +22,8 @@ trait ChangeTabsCommand extends CommandBase {
 
 object ChangeTabsCommand {
   @scala.inline
-  def apply(execute: js.Function1[TabsSettings, scala.Boolean], getState: js.Function0[js.Any]): ChangeTabsCommand = {
-    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  def apply(execute: TabsSettings => scala.Boolean, getState: () => js.Any): ChangeTabsCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
   
     __obj.asInstanceOf[ChangeTabsCommand]
   }

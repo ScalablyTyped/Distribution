@@ -11,7 +11,7 @@ object ^ extends js.Object {
   val Strategy: passportDashOauth2Lib.Anon_AuthorizationError with (org.scalablytyped.runtime.Instantiable2[
     /* options */ passportDashOauth2Lib.passportDashOauth2Mod.OAuth2StrategyNs.StrategyOptions, 
     /* verify */ passportDashOauth2Lib.passportDashOauth2Mod.OAuth2StrategyNs.VerifyFunction, 
-    passportDashOauth2Lib.passportDashOauth2Mod.OAuth2Strategy
+    OAuth2Strategy
   ]) = js.native
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def default(): js.Any = js.native
-  def default(config: antdLib.libTooltipPlacementsMod.PlacementsConfig): js.Any = js.native
+  def default(config: PlacementsConfig): js.Any = js.native
   def getOverflowOptions(autoAdjustOverflow: js.Any): js.Any = js.native
 }
 

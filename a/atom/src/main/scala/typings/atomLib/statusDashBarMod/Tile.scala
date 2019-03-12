@@ -16,12 +16,8 @@ trait Tile extends js.Object {
 
 object Tile {
   @scala.inline
-  def apply(
-    destroy: js.Function0[scala.Unit],
-    getItem: js.Function0[js.Object],
-    getPriority: js.Function0[scala.Double]
-  ): Tile = {
-    val __obj = js.Dynamic.literal(destroy = destroy, getItem = getItem, getPriority = getPriority)
+  def apply(destroy: () => scala.Unit, getItem: () => js.Object, getPriority: () => scala.Double): Tile = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getItem = js.Any.fromFunction0(getItem), getPriority = js.Any.fromFunction0(getPriority))
   
     __obj.asInstanceOf[Tile]
   }

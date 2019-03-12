@@ -23,11 +23,11 @@ trait TestFunctions extends js.Object {
 object TestFunctions {
   @scala.inline
   def apply(
-    only: js.Function2[mochaLib.Mocha, mochaLib.MochaNs.Test, mochaLib.MochaNs.Test],
-    retries: js.Function1[scala.Double, scala.Unit],
-    skip: js.Function1[java.lang.String, scala.Unit]
+    only: (mochaLib.Mocha, mochaLib.MochaNs.Test) => mochaLib.MochaNs.Test,
+    retries: scala.Double => scala.Unit,
+    skip: java.lang.String => scala.Unit
   ): TestFunctions = {
-    val __obj = js.Dynamic.literal(only = only, retries = retries, skip = skip)
+    val __obj = js.Dynamic.literal(only = js.Any.fromFunction2(only), retries = js.Any.fromFunction1(retries), skip = js.Any.fromFunction1(skip))
   
     __obj.asInstanceOf[TestFunctions]
   }

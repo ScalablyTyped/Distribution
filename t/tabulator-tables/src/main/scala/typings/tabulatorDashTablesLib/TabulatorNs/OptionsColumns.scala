@@ -102,11 +102,11 @@ object OptionsColumns {
     columnCalcs: scala.Boolean | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.both | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.table | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.group = null,
     columnHeaderSortMulti: js.UndefOr[scala.Boolean] = js.undefined,
     columnMinWidth: scala.Int | scala.Double = null,
-    columnMoved: js.Function2[/* column */ ColumnComponent, /* columns */ js.Array[_], scala.Unit] = null,
-    columnResized: js.Function1[/* column */ ColumnComponent, scala.Unit] = null,
-    columnTitleChanged: js.Function1[/* column */ ColumnComponent, scala.Unit] = null,
+    columnMoved: (/* column */ ColumnComponent, /* columns */ js.Array[_]) => scala.Unit = null,
+    columnResized: /* column */ ColumnComponent => scala.Unit = null,
+    columnTitleChanged: /* column */ ColumnComponent => scala.Unit = null,
     columnVertAlign: tabulatorDashTablesLib.tabulatorDashTablesLibStrings.top | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.middle | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.bottom = null,
-    columnVisibilityChanged: js.Function2[/* column */ ColumnComponent, /* visible */ scala.Boolean, scala.Unit] = null,
+    columnVisibilityChanged: (/* column */ ColumnComponent, /* visible */ scala.Boolean) => scala.Unit = null,
     columns: js.Array[ColumnDefinition] = null,
     headerFilterPlaceholder: java.lang.String = null,
     layout: tabulatorDashTablesLib.tabulatorDashTablesLibStrings.fitData | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.fitColumns | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.fitDataFill = null,
@@ -115,7 +115,7 @@ object OptionsColumns {
     nestedFieldSeparator: java.lang.String | scala.Boolean = null,
     resizableColumns: tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`true` | tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`false` | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.header | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.cell = null,
     responsiveLayout: scala.Boolean | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.hide | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.collapse = null,
-    responsiveLayoutCollapseFormatter: js.Function1[/* data */ js.Array[_], _] = null,
+    responsiveLayoutCollapseFormatter: /* data */ js.Array[_] => _ = null,
     responsiveLayoutCollapseStartOpen: js.UndefOr[scala.Boolean] = js.undefined,
     responsiveLayoutCollapseUseFormatters: js.UndefOr[scala.Boolean] = js.undefined,
     scrollToColumnIfVisible: js.UndefOr[scala.Boolean] = js.undefined,
@@ -127,11 +127,11 @@ object OptionsColumns {
     if (columnCalcs != null) __obj.updateDynamic("columnCalcs")(columnCalcs.asInstanceOf[js.Any])
     if (!js.isUndefined(columnHeaderSortMulti)) __obj.updateDynamic("columnHeaderSortMulti")(columnHeaderSortMulti)
     if (columnMinWidth != null) __obj.updateDynamic("columnMinWidth")(columnMinWidth.asInstanceOf[js.Any])
-    if (columnMoved != null) __obj.updateDynamic("columnMoved")(columnMoved)
-    if (columnResized != null) __obj.updateDynamic("columnResized")(columnResized)
-    if (columnTitleChanged != null) __obj.updateDynamic("columnTitleChanged")(columnTitleChanged)
+    if (columnMoved != null) __obj.updateDynamic("columnMoved")(js.Any.fromFunction2(columnMoved))
+    if (columnResized != null) __obj.updateDynamic("columnResized")(js.Any.fromFunction1(columnResized))
+    if (columnTitleChanged != null) __obj.updateDynamic("columnTitleChanged")(js.Any.fromFunction1(columnTitleChanged))
     if (columnVertAlign != null) __obj.updateDynamic("columnVertAlign")(columnVertAlign.asInstanceOf[js.Any])
-    if (columnVisibilityChanged != null) __obj.updateDynamic("columnVisibilityChanged")(columnVisibilityChanged)
+    if (columnVisibilityChanged != null) __obj.updateDynamic("columnVisibilityChanged")(js.Any.fromFunction2(columnVisibilityChanged))
     if (columns != null) __obj.updateDynamic("columns")(columns)
     if (headerFilterPlaceholder != null) __obj.updateDynamic("headerFilterPlaceholder")(headerFilterPlaceholder)
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
@@ -140,7 +140,7 @@ object OptionsColumns {
     if (nestedFieldSeparator != null) __obj.updateDynamic("nestedFieldSeparator")(nestedFieldSeparator.asInstanceOf[js.Any])
     if (resizableColumns != null) __obj.updateDynamic("resizableColumns")(resizableColumns.asInstanceOf[js.Any])
     if (responsiveLayout != null) __obj.updateDynamic("responsiveLayout")(responsiveLayout.asInstanceOf[js.Any])
-    if (responsiveLayoutCollapseFormatter != null) __obj.updateDynamic("responsiveLayoutCollapseFormatter")(responsiveLayoutCollapseFormatter)
+    if (responsiveLayoutCollapseFormatter != null) __obj.updateDynamic("responsiveLayoutCollapseFormatter")(js.Any.fromFunction1(responsiveLayoutCollapseFormatter))
     if (!js.isUndefined(responsiveLayoutCollapseStartOpen)) __obj.updateDynamic("responsiveLayoutCollapseStartOpen")(responsiveLayoutCollapseStartOpen)
     if (!js.isUndefined(responsiveLayoutCollapseUseFormatters)) __obj.updateDynamic("responsiveLayoutCollapseUseFormatters")(responsiveLayoutCollapseUseFormatters)
     if (!js.isUndefined(scrollToColumnIfVisible)) __obj.updateDynamic("scrollToColumnIfVisible")(scrollToColumnIfVisible)

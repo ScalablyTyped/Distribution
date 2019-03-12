@@ -276,24 +276,24 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    actionBegin: js.Function1[/* e */ ActionBeginEventArgs, scala.Unit] = null,
-    actionComplete: js.Function1[/* e */ ActionCompleteEventArgs, scala.Unit] = null,
-    actionFailure: js.Function1[/* e */ ActionFailureEventArgs, scala.Unit] = null,
-    actionSuccess: js.Function1[/* e */ ActionSuccessEventArgs, scala.Unit] = null,
+    actionBegin: /* e */ ActionBeginEventArgs => scala.Unit = null,
+    actionComplete: /* e */ ActionCompleteEventArgs => scala.Unit = null,
+    actionFailure: /* e */ ActionFailureEventArgs => scala.Unit = null,
+    actionSuccess: /* e */ ActionSuccessEventArgs => scala.Unit = null,
     allowVirtualScrolling: js.UndefOr[scala.Boolean] = js.undefined,
-    beforePopupHide: js.Function1[/* e */ BeforePopupHideEventArgs, scala.Unit] = null,
-    beforePopupShown: js.Function1[/* e */ BeforePopupShownEventArgs, scala.Unit] = null,
-    cascade: js.Function1[/* e */ CascadeEventArgs, scala.Unit] = null,
+    beforePopupHide: /* e */ BeforePopupHideEventArgs => scala.Unit = null,
+    beforePopupShown: /* e */ BeforePopupShownEventArgs => scala.Unit = null,
+    cascade: /* e */ CascadeEventArgs => scala.Unit = null,
     cascadeTo: java.lang.String = null,
     caseSensitiveSearch: js.UndefOr[scala.Boolean] = js.undefined,
-    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
-    checkChange: js.Function1[/* e */ CheckChangeEventArgs, scala.Unit] = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    change: /* e */ ChangeEventArgs => scala.Unit = null,
+    checkChange: /* e */ CheckChangeEventArgs => scala.Unit = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
-    dataBound: js.Function1[/* e */ DataBoundEventArgs, scala.Unit] = null,
+    dataBound: /* e */ DataBoundEventArgs => scala.Unit = null,
     dataSource: js.Any = null,
     delimiterChar: java.lang.String = null,
-    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    destroy: /* e */ DestroyEventArgs => scala.Unit = null,
     enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
     enableFilterSearch: js.UndefOr[scala.Boolean] = js.undefined,
     enableIncrementalSearch: js.UndefOr[scala.Boolean] = js.undefined,
@@ -305,8 +305,8 @@ object Model {
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     fields: Fields = null,
     filterType: ejDotWebDotAllLib.ejNs.FilterType | java.lang.String = null,
-    focusIn: js.Function1[/* e */ FocusInEventArgs, scala.Unit] = null,
-    focusOut: js.Function1[/* e */ FocusOutEventArgs, scala.Unit] = null,
+    focusIn: /* e */ FocusInEventArgs => scala.Unit = null,
+    focusOut: /* e */ FocusOutEventArgs => scala.Unit = null,
     headerTemplate: java.lang.String = null,
     height: java.lang.String | scala.Double = null,
     htmlAttributes: js.Any = null,
@@ -319,16 +319,16 @@ object Model {
     minPopupWidth: java.lang.String | scala.Double = null,
     multiSelectMode: ejDotWebDotAllLib.ejNs.MultiSelectMode | java.lang.String = null,
     popupHeight: java.lang.String | scala.Double = null,
-    popupHide: js.Function1[/* e */ PopupHideEventArgs, scala.Unit] = null,
-    popupResize: js.Function1[/* e */ PopupResizeEventArgs, scala.Unit] = null,
-    popupResizeStart: js.Function1[/* e */ PopupResizeStartEventArgs, scala.Unit] = null,
-    popupResizeStop: js.Function1[/* e */ PopupResizeStopEventArgs, scala.Unit] = null,
-    popupShown: js.Function1[/* e */ PopupShownEventArgs, scala.Unit] = null,
+    popupHide: /* e */ PopupHideEventArgs => scala.Unit = null,
+    popupResize: /* e */ PopupResizeEventArgs => scala.Unit = null,
+    popupResizeStart: /* e */ PopupResizeStartEventArgs => scala.Unit = null,
+    popupResizeStop: /* e */ PopupResizeStopEventArgs => scala.Unit = null,
+    popupShown: /* e */ PopupShownEventArgs => scala.Unit = null,
     popupWidth: java.lang.String | scala.Double = null,
     query: js.Any = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
-    search: js.Function1[/* e */ SearchEventArgs, scala.Unit] = null,
-    select: js.Function1[/* e */ SelectEventArgs, scala.Unit] = null,
+    search: /* e */ SearchEventArgs => scala.Unit = null,
+    select: /* e */ SelectEventArgs => scala.Unit = null,
     selectedIndex: scala.Int | scala.Double = null,
     selectedIndices: js.Array[_] = null,
     showCheckbox: js.UndefOr[scala.Boolean] = js.undefined,
@@ -346,24 +346,24 @@ object Model {
     width: java.lang.String | scala.Double = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (actionBegin != null) __obj.updateDynamic("actionBegin")(actionBegin)
-    if (actionComplete != null) __obj.updateDynamic("actionComplete")(actionComplete)
-    if (actionFailure != null) __obj.updateDynamic("actionFailure")(actionFailure)
-    if (actionSuccess != null) __obj.updateDynamic("actionSuccess")(actionSuccess)
+    if (actionBegin != null) __obj.updateDynamic("actionBegin")(js.Any.fromFunction1(actionBegin))
+    if (actionComplete != null) __obj.updateDynamic("actionComplete")(js.Any.fromFunction1(actionComplete))
+    if (actionFailure != null) __obj.updateDynamic("actionFailure")(js.Any.fromFunction1(actionFailure))
+    if (actionSuccess != null) __obj.updateDynamic("actionSuccess")(js.Any.fromFunction1(actionSuccess))
     if (!js.isUndefined(allowVirtualScrolling)) __obj.updateDynamic("allowVirtualScrolling")(allowVirtualScrolling)
-    if (beforePopupHide != null) __obj.updateDynamic("beforePopupHide")(beforePopupHide)
-    if (beforePopupShown != null) __obj.updateDynamic("beforePopupShown")(beforePopupShown)
-    if (cascade != null) __obj.updateDynamic("cascade")(cascade)
+    if (beforePopupHide != null) __obj.updateDynamic("beforePopupHide")(js.Any.fromFunction1(beforePopupHide))
+    if (beforePopupShown != null) __obj.updateDynamic("beforePopupShown")(js.Any.fromFunction1(beforePopupShown))
+    if (cascade != null) __obj.updateDynamic("cascade")(js.Any.fromFunction1(cascade))
     if (cascadeTo != null) __obj.updateDynamic("cascadeTo")(cascadeTo)
     if (!js.isUndefined(caseSensitiveSearch)) __obj.updateDynamic("caseSensitiveSearch")(caseSensitiveSearch)
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (checkChange != null) __obj.updateDynamic("checkChange")(checkChange)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (checkChange != null) __obj.updateDynamic("checkChange")(js.Any.fromFunction1(checkChange))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
     if (delimiterChar != null) __obj.updateDynamic("delimiterChar")(delimiterChar)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
     if (!js.isUndefined(enableFilterSearch)) __obj.updateDynamic("enableFilterSearch")(enableFilterSearch)
     if (!js.isUndefined(enableIncrementalSearch)) __obj.updateDynamic("enableIncrementalSearch")(enableIncrementalSearch)
@@ -375,8 +375,8 @@ object Model {
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
-    if (focusIn != null) __obj.updateDynamic("focusIn")(focusIn)
-    if (focusOut != null) __obj.updateDynamic("focusOut")(focusOut)
+    if (focusIn != null) __obj.updateDynamic("focusIn")(js.Any.fromFunction1(focusIn))
+    if (focusOut != null) __obj.updateDynamic("focusOut")(js.Any.fromFunction1(focusOut))
     if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
@@ -389,16 +389,16 @@ object Model {
     if (minPopupWidth != null) __obj.updateDynamic("minPopupWidth")(minPopupWidth.asInstanceOf[js.Any])
     if (multiSelectMode != null) __obj.updateDynamic("multiSelectMode")(multiSelectMode.asInstanceOf[js.Any])
     if (popupHeight != null) __obj.updateDynamic("popupHeight")(popupHeight.asInstanceOf[js.Any])
-    if (popupHide != null) __obj.updateDynamic("popupHide")(popupHide)
-    if (popupResize != null) __obj.updateDynamic("popupResize")(popupResize)
-    if (popupResizeStart != null) __obj.updateDynamic("popupResizeStart")(popupResizeStart)
-    if (popupResizeStop != null) __obj.updateDynamic("popupResizeStop")(popupResizeStop)
-    if (popupShown != null) __obj.updateDynamic("popupShown")(popupShown)
+    if (popupHide != null) __obj.updateDynamic("popupHide")(js.Any.fromFunction1(popupHide))
+    if (popupResize != null) __obj.updateDynamic("popupResize")(js.Any.fromFunction1(popupResize))
+    if (popupResizeStart != null) __obj.updateDynamic("popupResizeStart")(js.Any.fromFunction1(popupResizeStart))
+    if (popupResizeStop != null) __obj.updateDynamic("popupResizeStop")(js.Any.fromFunction1(popupResizeStop))
+    if (popupShown != null) __obj.updateDynamic("popupShown")(js.Any.fromFunction1(popupShown))
     if (popupWidth != null) __obj.updateDynamic("popupWidth")(popupWidth.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (search != null) __obj.updateDynamic("search")(search)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (search != null) __obj.updateDynamic("search")(js.Any.fromFunction1(search))
+    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
     if (selectedIndices != null) __obj.updateDynamic("selectedIndices")(selectedIndices)
     if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox)

@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val ATTACK: screepsLib.screepsLibStrings.attack = js.native
   val ATTACK_POWER: screepsLib.screepsLibNumbers.`30` = js.native
-  val BODYPARTS_ALL: js.Array[screepsLib.BodyPartConstant] = js.native
-  val BODYPART_COST: stdLib.Record[screepsLib.BodyPartConstant, scala.Double] = js.native
+  val BODYPARTS_ALL: js.Array[BodyPartConstant] = js.native
+  val BODYPART_COST: stdLib.Record[BodyPartConstant, scala.Double] = js.native
   val BOTTOM: screepsLib.screepsLibNumbers.`5` = js.native
   val BOTTOM_LEFT: screepsLib.screepsLibNumbers.`6` = js.native
   val BOTTOM_RIGHT: screepsLib.screepsLibNumbers.`4` = js.native
@@ -19,7 +19,7 @@ object ^ extends js.Object {
   val CARRY: screepsLib.screepsLibStrings.carry = js.native
   val CARRY_CAPACITY: screepsLib.screepsLibNumbers.`50` = js.native
   val CLAIM: screepsLib.screepsLibStrings.claim = js.native
-  val COLORS_ALL: js.Array[screepsLib.ColorConstant] = js.native
+  val COLORS_ALL: js.Array[ColorConstant] = js.native
   val COLOR_BLUE: screepsLib.screepsLibNumbers.`3` = js.native
   val COLOR_BROWN: screepsLib.screepsLibNumbers.`8` = js.native
   val COLOR_CYAN: screepsLib.screepsLibNumbers.`4` = js.native
@@ -30,7 +30,7 @@ object ^ extends js.Object {
   val COLOR_RED: screepsLib.screepsLibNumbers.`1` = js.native
   val COLOR_WHITE: screepsLib.screepsLibNumbers.`10` = js.native
   val COLOR_YELLOW: screepsLib.screepsLibNumbers.`6` = js.native
-  val CONSTRUCTION_COST: stdLib.Record[screepsLib.BuildableStructureConstant, scala.Double] = js.native
+  val CONSTRUCTION_COST: stdLib.Record[BuildableStructureConstant, scala.Double] = js.native
   val CONSTRUCTION_COST_ROAD_SWAMP_RATIO: screepsLib.screepsLibNumbers.`5` = js.native
   val CONTAINER_CAPACITY: scala.Double = js.native
   val CONTAINER_DECAY: scala.Double = js.native
@@ -46,15 +46,15 @@ object ^ extends js.Object {
   val CONTROLLER_RESERVE: scala.Double = js.native
   val CONTROLLER_RESERVE_MAX: scala.Double = js.native
   val CONTROLLER_STRUCTURES: stdLib.Record[
-    screepsLib.BuildableStructureConstant, 
+    BuildableStructureConstant, 
     org.scalablytyped.runtime.NumberDictionary[scala.Double]
   ] = js.native
   val CREEP_CLAIM_LIFE_TIME: screepsLib.screepsLibNumbers.`600` = js.native
   val CREEP_CORPSE_RATE: screepsLib.screepsLibNumbers.`0DOT2` = js.native
   val CREEP_LIFE_TIME: screepsLib.screepsLibNumbers.`1500` = js.native
   val CREEP_SPAWN_TIME: screepsLib.screepsLibNumbers.`3` = js.native
-  val ConstructionSite: screepsLib.ConstructionSiteConstructor = js.native
-  val Creep: screepsLib.CreepConstructor = js.native
+  val ConstructionSite: ConstructionSiteConstructor = js.native
+  val Creep: CreepConstructor = js.native
   val DENSITY_HIGH: scala.Double = js.native
   val DENSITY_LOW: scala.Double = js.native
   val DENSITY_MODERATE: scala.Double = js.native
@@ -125,7 +125,7 @@ object ^ extends js.Object {
   val FIND_SOURCES_ACTIVE: screepsLib.screepsLibNumbers.`104` = js.native
   val FIND_STRUCTURES: screepsLib.screepsLibNumbers.`107` = js.native
   val FIND_TOMBSTONES: screepsLib.screepsLibNumbers.`118` = js.native
-  val Flag: screepsLib.FlagConstructor = js.native
+  val Flag: FlagConstructor = js.native
   val GCL_MULTIPLY: scala.Double = js.native
   val GCL_NOVICE: scala.Double = js.native
   val GCL_POW: scala.Double = js.native
@@ -162,7 +162,7 @@ object ^ extends js.Object {
   val MAX_CONSTRUCTION_SITES: scala.Double = js.native
   val MAX_CREEP_SIZE: scala.Double = js.native
   val MINERAL_DENSITY_CHANGE: scala.Double = js.native
-  val MINERAL_MIN_AMOUNT: stdLib.Record[screepsLib.MineralConstant, scala.Double] = js.native
+  val MINERAL_MIN_AMOUNT: stdLib.Record[MineralConstant, scala.Double] = js.native
   val MINERAL_RANDOM_FACTOR: scala.Double = js.native
   val MINERAL_REGEN_TIME: scala.Double = js.native
   val MODE_ARENA: java.lang.String = js.native
@@ -171,14 +171,14 @@ object ^ extends js.Object {
   val MODE_WORLD: java.lang.String = js.native
   val MOVE: screepsLib.screepsLibStrings.move = js.native
   val Memory: screepsLib.Memory = js.native
-  val Mineral: screepsLib.MineralConstructor = js.native
+  val Mineral: MineralConstructor = js.native
   val NUKER_COOLDOWN: scala.Double = js.native
   val NUKER_ENERGY_CAPACITY: scala.Double = js.native
   val NUKER_GHODIUM_CAPACITY: scala.Double = js.native
   val NUKER_HITS: scala.Double = js.native
   val NUKE_LAND_TIME: scala.Double = js.native
   val NUKE_RANGE: scala.Double = js.native
-  val Nuke: screepsLib.NukeConstructor = js.native
+  val Nuke: NukeConstructor = js.native
   val OBSERVER_HITS: scala.Double = js.native
   val OBSERVER_RANGE: scala.Double = js.native
   val OBSTACLE_OBJECT_TYPES: js.Tuple15[
@@ -201,7 +201,7 @@ object ^ extends js.Object {
   val OK: screepsLib.screepsLibNumbers.`0` = js.native
   val ORDER_BUY: screepsLib.screepsLibStrings.buy = js.native
   val ORDER_SELL: screepsLib.screepsLibStrings.sell = js.native
-  val OwnedStructure: screepsLib.OwnedStructureConstructor = js.native
+  val OwnedStructure: OwnedStructureConstructor = js.native
   val POWER_BANK_CAPACITY_CRIT: scala.Double = js.native
   val POWER_BANK_CAPACITY_MAX: scala.Double = js.native
   val POWER_BANK_CAPACITY_MIN: scala.Double = js.native
@@ -221,7 +221,7 @@ object ^ extends js.Object {
   val RANGED_HEAL_POWER: screepsLib.screepsLibNumbers.`4` = js.native
   val REPAIR_COST: screepsLib.screepsLibNumbers.`0DOT01` = js.native
   val REPAIR_POWER: screepsLib.screepsLibNumbers.`100` = js.native
-  val RESOURCES_ALL: js.Array[screepsLib.ResourceConstant] = js.native
+  val RESOURCES_ALL: js.Array[ResourceConstant] = js.native
   val RESOURCE_CATALYST: screepsLib.screepsLibStrings.X = js.native
   val RESOURCE_CATALYZED_GHODIUM_ACID: screepsLib.screepsLibStrings.XGH2O = js.native
   val RESOURCE_CATALYZED_GHODIUM_ALKALIDE: screepsLib.screepsLibStrings.XGHO2 = js.native
@@ -271,10 +271,10 @@ object ^ extends js.Object {
   val ROAD_HITS: screepsLib.screepsLibNumbers.`5000` = js.native
   val ROAD_WEAROUT: screepsLib.screepsLibNumbers.`1` = js.native
   val RawMemory: screepsLib.RawMemory = js.native
-  val Resource: screepsLib.ResourceConstructor = js.native
-  val Room: screepsLib.RoomConstructor = js.native
-  val RoomObject: screepsLib.RoomObjectConstructor = js.native
-  val RoomPosition: screepsLib.RoomPositionConstructor = js.native
+  val Resource: ResourceConstructor = js.native
+  val Room: RoomConstructor = js.native
+  val RoomObject: RoomObjectConstructor = js.native
+  val RoomPosition: RoomPositionConstructor = js.native
   val SAFE_MODE_COOLDOWN: screepsLib.screepsLibNumbers.`50000` = js.native
   val SAFE_MODE_COST: screepsLib.screepsLibNumbers.`1000` = js.native
   val SAFE_MODE_DURATION: screepsLib.screepsLibNumbers.`20000` = js.native
@@ -307,28 +307,28 @@ object ^ extends js.Object {
   val STRUCTURE_WALL: screepsLib.screepsLibStrings.constructedWall = js.native
   val SUBSCRIPTION_TOKEN: screepsLib.screepsLibStrings.token = js.native
   val SYSTEM_USERNAME: java.lang.String = js.native
-  val Source: screepsLib.SourceConstructor = js.native
-  val Spawn: screepsLib.StructureSpawnConstructor = js.native
-  val Structure: screepsLib.StructureConstructor = js.native
-  val StructureContainer: screepsLib.StructureContainerConstructor = js.native
-  val StructureController: screepsLib.StructureControllerConstructor = js.native
-  val StructureExtension: screepsLib.StructureExtensionConstructor = js.native
-  val StructureExtractor: screepsLib.StructureExtractorConstructor = js.native
-  val StructureKeeperLair: screepsLib.StructureKeeperLairConstructor = js.native
-  val StructureLab: screepsLib.StructureLabConstructor = js.native
-  val StructureLink: screepsLib.StructureLinkConstructor = js.native
-  val StructureNuker: screepsLib.StructureNukerConstructor = js.native
-  val StructureObserver: screepsLib.StructureObserverConstructor = js.native
-  val StructurePortal: screepsLib.StructurePortalConstructor = js.native
-  val StructurePowerBank: screepsLib.StructurePowerBankConstructor = js.native
-  val StructurePowerSpawn: screepsLib.StructurePowerSpawnConstructor = js.native
-  val StructureRampart: screepsLib.StructureRampartConstructor = js.native
-  val StructureRoad: screepsLib.StructureRoadConstructor = js.native
-  val StructureSpawn: screepsLib.StructureSpawnConstructor = js.native
-  val StructureStorage: screepsLib.StructureStorageConstructor = js.native
-  val StructureTerminal: screepsLib.StructureTerminalConstructor = js.native
-  val StructureTower: screepsLib.StructureTowerConstructor = js.native
-  val StructureWall: screepsLib.StructureWallConstructor = js.native
+  val Source: SourceConstructor = js.native
+  val Spawn: StructureSpawnConstructor = js.native
+  val Structure: StructureConstructor = js.native
+  val StructureContainer: StructureContainerConstructor = js.native
+  val StructureController: StructureControllerConstructor = js.native
+  val StructureExtension: StructureExtensionConstructor = js.native
+  val StructureExtractor: StructureExtractorConstructor = js.native
+  val StructureKeeperLair: StructureKeeperLairConstructor = js.native
+  val StructureLab: StructureLabConstructor = js.native
+  val StructureLink: StructureLinkConstructor = js.native
+  val StructureNuker: StructureNukerConstructor = js.native
+  val StructureObserver: StructureObserverConstructor = js.native
+  val StructurePortal: StructurePortalConstructor = js.native
+  val StructurePowerBank: StructurePowerBankConstructor = js.native
+  val StructurePowerSpawn: StructurePowerSpawnConstructor = js.native
+  val StructureRampart: StructureRampartConstructor = js.native
+  val StructureRoad: StructureRoadConstructor = js.native
+  val StructureSpawn: StructureSpawnConstructor = js.native
+  val StructureStorage: StructureStorageConstructor = js.native
+  val StructureTerminal: StructureTerminalConstructor = js.native
+  val StructureTower: StructureTowerConstructor = js.native
+  val StructureWall: StructureWallConstructor = js.native
   val TERMINAL_CAPACITY: scala.Double = js.native
   val TERMINAL_COOLDOWN: scala.Double = js.native
   val TERMINAL_HITS: scala.Double = js.native
@@ -351,7 +351,7 @@ object ^ extends js.Object {
   val TOWER_POWER_ATTACK: scala.Double = js.native
   val TOWER_POWER_HEAL: scala.Double = js.native
   val TOWER_POWER_REPAIR: scala.Double = js.native
-  val Tombstone: screepsLib.TombstoneConstructor = js.native
+  val Tombstone: TombstoneConstructor = js.native
   val UPGRADE_CONTROLLER_POWER: screepsLib.screepsLibNumbers.`1` = js.native
   val WALL_HITS: screepsLib.screepsLibNumbers.`1` = js.native
   val WALL_HITS_MAX: screepsLib.screepsLibNumbers.`300000000` = js.native

@@ -14,11 +14,11 @@ trait OverScrollLocker extends js.Object {
 object OverScrollLocker {
   @scala.inline
   def apply(
-    getScrollContentBottom: js.Function0[scala.Double],
-    lockOverScrollBottom: js.Function1[scala.Double, scala.Unit],
-    lockOverScrollTop: js.Function1[scala.Double, scala.Unit]
+    getScrollContentBottom: () => scala.Double,
+    lockOverScrollBottom: scala.Double => scala.Unit,
+    lockOverScrollTop: scala.Double => scala.Unit
   ): OverScrollLocker = {
-    val __obj = js.Dynamic.literal(getScrollContentBottom = getScrollContentBottom, lockOverScrollBottom = lockOverScrollBottom, lockOverScrollTop = lockOverScrollTop)
+    val __obj = js.Dynamic.literal(getScrollContentBottom = js.Any.fromFunction0(getScrollContentBottom), lockOverScrollBottom = js.Any.fromFunction1(lockOverScrollBottom), lockOverScrollTop = js.Any.fromFunction1(lockOverScrollTop))
   
     __obj.asInstanceOf[OverScrollLocker]
   }

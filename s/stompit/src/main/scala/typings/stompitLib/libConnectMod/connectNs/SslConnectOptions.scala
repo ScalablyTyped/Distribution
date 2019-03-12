@@ -21,19 +21,11 @@ object SslConnectOptions {
     NPNProtocols: js.Array[java.lang.String] | js.Array[nodeLib.Buffer] | js.Array[stdLib.Uint8Array] | nodeLib.Buffer | stdLib.Uint8Array = null,
     ca: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
     cert: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
-    checkServerIdentity: js.Function2[
-      /* host */ java.lang.String, 
-      /* cert */ nodeLib.tlsMod.PeerCertificate, 
-      js.UndefOr[nodeLib.Error]
-    ] = null,
+    checkServerIdentity: (/* host */ java.lang.String, /* cert */ nodeLib.tlsMod.PeerCertificate) => js.UndefOr[nodeLib.Error] = null,
     ciphers: java.lang.String = null,
     clientCertEngine: java.lang.String = null,
     commandHandlers: stompitLib.libSocketMod.SocketNs.CommandHandlers = null,
-    connect: js.Function2[
-      /* options */ ConnectOptions, 
-      /* connectionListener */ js.UndefOr[js.Function0[scala.Unit]], 
-      nodeLib.netMod.Socket
-    ] = null,
+    connect: (/* options */ ConnectOptions, /* connectionListener */ js.UndefOr[js.Function0[scala.Unit]]) => nodeLib.netMod.Socket = null,
     connectHeaders: ConnectHeaders = null,
     crl: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
     dhparam: java.lang.String | nodeLib.Buffer = null,
@@ -63,18 +55,18 @@ object SslConnectOptions {
     sessionIdContext: java.lang.String = null,
     socket: nodeLib.netMod.Socket = null,
     timeout: scala.Int | scala.Double = null,
-    unknownCommand: js.Function0[scala.Unit] = null
+    unknownCommand: () => scala.Unit = null
   ): SslConnectOptions = {
     val __obj = js.Dynamic.literal(ssl = ssl)
     if (ALPNProtocols != null) __obj.updateDynamic("ALPNProtocols")(ALPNProtocols.asInstanceOf[js.Any])
     if (NPNProtocols != null) __obj.updateDynamic("NPNProtocols")(NPNProtocols.asInstanceOf[js.Any])
     if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(checkServerIdentity)
+    if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(js.Any.fromFunction2(checkServerIdentity))
     if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)
     if (clientCertEngine != null) __obj.updateDynamic("clientCertEngine")(clientCertEngine)
     if (commandHandlers != null) __obj.updateDynamic("commandHandlers")(commandHandlers)
-    if (connect != null) __obj.updateDynamic("connect")(connect)
+    if (connect != null) __obj.updateDynamic("connect")(js.Any.fromFunction2(connect))
     if (connectHeaders != null) __obj.updateDynamic("connectHeaders")(connectHeaders)
     if (crl != null) __obj.updateDynamic("crl")(crl.asInstanceOf[js.Any])
     if (dhparam != null) __obj.updateDynamic("dhparam")(dhparam.asInstanceOf[js.Any])
@@ -104,7 +96,7 @@ object SslConnectOptions {
     if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext)
     if (socket != null) __obj.updateDynamic("socket")(socket)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (unknownCommand != null) __obj.updateDynamic("unknownCommand")(unknownCommand)
+    if (unknownCommand != null) __obj.updateDynamic("unknownCommand")(js.Any.fromFunction0(unknownCommand))
     __obj.asInstanceOf[SslConnectOptions]
   }
 }

@@ -16,14 +16,9 @@ trait OnEditorActionListener extends js.Object {
 object OnEditorActionListener {
   @scala.inline
   def apply(
-    onEditorAction: js.Function3[
-      androiduixLib.androidNs.widgetNs.TextView, 
-      scala.Double, 
-      androiduixLib.androidNs.viewNs.KeyEvent, 
-      scala.Boolean
-    ]
+    onEditorAction: (androiduixLib.androidNs.widgetNs.TextView, scala.Double, androiduixLib.androidNs.viewNs.KeyEvent) => scala.Boolean
   ): OnEditorActionListener = {
-    val __obj = js.Dynamic.literal(onEditorAction = onEditorAction)
+    val __obj = js.Dynamic.literal(onEditorAction = js.Any.fromFunction3(onEditorAction))
   
     __obj.asInstanceOf[OnEditorActionListener]
   }

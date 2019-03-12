@@ -42,18 +42,9 @@ trait Runner
 object Runner {
   @scala.inline
   def apply(
-    withFailureHandler: js.Function1[
-      js.Function2[/* error */ stdLib.Error, /* object */ js.UndefOr[js.Any], scala.Unit], 
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias google.script.client-side.google.script.Runner */ js.Object
-    ],
-    withSuccessHandler: js.Function1[
-      js.Function2[/* value */ js.UndefOr[js.Any], /* object */ js.UndefOr[js.Any], scala.Unit], 
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias google.script.client-side.google.script.Runner */ js.Object
-    ],
-    withUserObject: js.Function1[
-      js.Any, 
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias google.script.client-side.google.script.Runner */ js.Object
-    ],
+    withFailureHandler: js.Function2[/* error */ stdLib.Error, /* object */ js.UndefOr[js.Any], scala.Unit] => /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias google.script.client-side.google.script.Runner */ js.Object,
+    withSuccessHandler: js.Function2[/* value */ js.UndefOr[js.Any], /* object */ js.UndefOr[js.Any], scala.Unit] => /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias google.script.client-side.google.script.Runner */ js.Object,
+    withUserObject: js.Any => /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias google.script.client-side.google.script.Runner */ js.Object,
     StringDictionary: /**
     * Executes the server-side Apps Script function with the corresponding name.
     */
@@ -65,7 +56,7 @@ object Runner {
       ]
     ] = null
   ): Runner = {
-    val __obj = js.Dynamic.literal(withFailureHandler = withFailureHandler, withSuccessHandler = withSuccessHandler, withUserObject = withUserObject)
+    val __obj = js.Dynamic.literal(withFailureHandler = js.Any.fromFunction1(withFailureHandler), withSuccessHandler = js.Any.fromFunction1(withSuccessHandler), withUserObject = js.Any.fromFunction1(withUserObject))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Runner]
   }

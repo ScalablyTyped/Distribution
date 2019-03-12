@@ -30,7 +30,8 @@ trait QueryInterface extends js.Object {
   var columns_Original: Select = js.native
   @JSName("crossJoin")
   var crossJoin_Original: Join = js.native
-  var distinct: Distinct = js.native
+  @JSName("distinct")
+  var distinct_Original: Distinct = js.native
   // Others
   @JSName("first")
   var first_Original: Select = js.native
@@ -38,10 +39,11 @@ trait QueryInterface extends js.Object {
   var from_Original: Table = js.native
   @JSName("fullOuterJoin")
   var fullOuterJoin_Original: Join = js.native
-  // Group by
-  var groupBy: GroupBy = js.native
   @JSName("groupByRaw")
   var groupByRaw_Original: RawQueryBuilder = js.native
+  // Group by
+  @JSName("groupBy")
+  var groupBy_Original: GroupBy = js.native
   @JSName("havingIn")
   var havingIn_Original: HavingIn = js.native
   @JSName("havingRaw")
@@ -133,15 +135,15 @@ trait QueryInterface extends js.Object {
   // Wheres
   @JSName("where")
   var where_Original: Where = js.native
-  // Withs
-  var `with`: With = js.native
   @JSName("withRaw")
   var withRaw_Original: WithRaw = js.native
   @JSName("withSchema")
   var withSchema_Original: WithSchema = js.native
   @JSName("withWrapped")
   var withWrapped_Original: WithWrapped = js.native
-  def andHaving(callback: QueryCallback): QueryBuilder = js.native
+  // Withs
+  @JSName("with")
+  var with_Original: With = js.native
   def andHaving(raw: Raw): QueryBuilder = js.native
   def andHaving(sql: java.lang.String, bindings: (knexLib.Value | QueryBuilder)*): QueryBuilder = js.native
   def andHaving(sql: java.lang.String, bindings: js.Array[knexLib.Value | QueryBuilder]): QueryBuilder = js.native
@@ -250,6 +252,8 @@ trait QueryInterface extends js.Object {
   def delete(): QueryBuilder = js.native
   def delete(returning: java.lang.String): QueryBuilder = js.native
   def delete(returning: js.Array[java.lang.String]): QueryBuilder = js.native
+  def distinct(columnNames: knexLib.ColumnName*): QueryBuilder = js.native
+  def distinct(columnNames: js.Array[knexLib.ColumnName]): QueryBuilder = js.native
   // Others
   def first(aliases: org.scalablytyped.runtime.StringDictionary[java.lang.String]): QueryBuilder = js.native
   // Others
@@ -257,7 +261,6 @@ trait QueryInterface extends js.Object {
   // Others
   def first(columnNames: js.Array[knexLib.ColumnName]): QueryBuilder = js.native
   def from(tableName: js.Function): QueryBuilder = js.native
-  // tslint:disable-next-line ban-types
   def from(tableName: knexLib.TableName): QueryBuilder = js.native
   def from(tableName: knexLib.knexMod.Identifier): QueryBuilder = js.native
   def from(tableName: Raw): QueryBuilder = js.native
@@ -290,12 +293,21 @@ trait QueryInterface extends js.Object {
     columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   def fullOuterJoin(tableName: QueryCallback, raw: Raw): QueryBuilder = js.native
+  // Group by
+  def groupBy(columnNames: knexLib.ColumnName*): QueryBuilder = js.native
+  // Group by
+  def groupBy(columnNames: js.Array[knexLib.ColumnName]): QueryBuilder = js.native
+  // Group by
+  def groupBy(raw: Raw): QueryBuilder = js.native
+  // Group by
+  def groupBy(sql: java.lang.String, bindings: (knexLib.Value | QueryBuilder)*): QueryBuilder = js.native
+  // Group by
+  def groupBy(sql: java.lang.String, bindings: js.Array[knexLib.Value | QueryBuilder]): QueryBuilder = js.native
+  def groupBy(sql: java.lang.String, bindings: knexLib.knexMod.ValueMap): QueryBuilder = js.native
   def groupByRaw(raw: Raw): QueryBuilder = js.native
   def groupByRaw(sql: java.lang.String, bindings: (knexLib.Value | QueryBuilder)*): QueryBuilder = js.native
   def groupByRaw(sql: java.lang.String, bindings: js.Array[knexLib.Value | QueryBuilder]): QueryBuilder = js.native
   def groupByRaw(sql: java.lang.String, bindings: knexLib.knexMod.ValueMap): QueryBuilder = js.native
-  // Having
-  def having(callback: QueryCallback): QueryBuilder = js.native
   // Having
   def having(raw: Raw): QueryBuilder = js.native
   // Having
@@ -351,7 +363,6 @@ trait QueryInterface extends js.Object {
   def insert(data: js.Any, returning: java.lang.String): QueryBuilder = js.native
   def insert(data: js.Any, returning: js.Array[java.lang.String]): QueryBuilder = js.native
   def into(tableName: js.Function): QueryBuilder = js.native
-  // tslint:disable-next-line ban-types
   def into(tableName: knexLib.TableName): QueryBuilder = js.native
   def into(tableName: knexLib.knexMod.Identifier): QueryBuilder = js.native
   def into(tableName: Raw): QueryBuilder = js.native
@@ -461,7 +472,6 @@ trait QueryInterface extends js.Object {
   def modify(callback: QueryCallbackWithArgs, args: js.Any*): QueryBuilder = js.native
   // Paging
   def offset(offset: scala.Double): QueryBuilder = js.native
-  def orHaving(callback: QueryCallback): QueryBuilder = js.native
   def orHaving(raw: Raw): QueryBuilder = js.native
   def orHaving(sql: java.lang.String, bindings: (knexLib.Value | QueryBuilder)*): QueryBuilder = js.native
   def orHaving(sql: java.lang.String, bindings: js.Array[knexLib.Value | QueryBuilder]): QueryBuilder = js.native
@@ -638,7 +648,6 @@ trait QueryInterface extends js.Object {
   def sumDistinct(columnName: Raw): QueryBuilder = js.native
   def sumDistinct(columnName: stdLib.Record[java.lang.String, java.lang.String | Raw]): QueryBuilder = js.native
   def table(tableName: js.Function): QueryBuilder = js.native
-  // tslint:disable-next-line ban-types
   def table(tableName: knexLib.TableName): QueryBuilder = js.native
   def table(tableName: knexLib.knexMod.Identifier): QueryBuilder = js.native
   def table(tableName: Raw): QueryBuilder = js.native
@@ -727,6 +736,16 @@ trait QueryInterface extends js.Object {
   def whereRaw(sql: java.lang.String, bindings: js.Array[knexLib.Value | QueryBuilder]): QueryBuilder = js.native
   def whereRaw(sql: java.lang.String, bindings: knexLib.knexMod.ValueMap): QueryBuilder = js.native
   def whereWrapped(callback: QueryCallback): QueryBuilder = js.native
+  // Withs
+  def `with`(alias: java.lang.String, callback: js.Function1[/* queryBuilder */ QueryBuilder, _]): QueryBuilder = js.native
+  // Withs
+  def `with`(alias: java.lang.String, queryBuilder: QueryBuilder): QueryBuilder = js.native
+  // Withs
+  def `with`(alias: java.lang.String, raw: Raw): QueryBuilder = js.native
+  // Withs
+  def `with`(alias: java.lang.String, sql: java.lang.String): QueryBuilder = js.native
+  def `with`(alias: java.lang.String, sql: java.lang.String, bindings: js.Array[knexLib.Value]): QueryBuilder = js.native
+  def `with`(alias: java.lang.String, sql: java.lang.String, bindings: js.Object): QueryBuilder = js.native
   def withRaw(alias: java.lang.String, raw: Raw): QueryBuilder = js.native
   def withRaw(alias: java.lang.String, sql: java.lang.String): QueryBuilder = js.native
   def withRaw(alias: java.lang.String, sql: java.lang.String, bindings: js.Array[knexLib.Value]): QueryBuilder = js.native

@@ -21,12 +21,9 @@ trait AcceptDict extends js.Object {
 
 object AcceptDict {
   @scala.inline
-  def apply(
-    error: js.Function1[/* param0 */ ErrorCallbackArgs, _] = null,
-    timeout: scala.Int | scala.Double = null
-  ): AcceptDict = {
+  def apply(error: /* param0 */ ErrorCallbackArgs => _ = null, timeout: scala.Int | scala.Double = null): AcceptDict = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptDict]
   }

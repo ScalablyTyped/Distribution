@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ListItemProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] {
   var actions: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
   var extra: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var grid: js.UndefOr[antdLib.libListMod.ListGridType] = js.undefined
@@ -16,7 +16,7 @@ trait ListItemProps
 object ListItemProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
     actions: js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     className: java.lang.String = null,

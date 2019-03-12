@@ -67,27 +67,15 @@ trait Form extends js.Object {
 object Form {
   @scala.inline
   def apply(
-    addControl: js.Function1[atAngularFormsLib.srcDirectivesNgUnderscoreControlMod.NgControl, scala.Unit],
-    addFormGroup: js.Function1[
-      atAngularFormsLib.srcDirectivesAbstractUnderscoreFormUnderscoreGroupUnderscoreDirectiveMod.AbstractFormGroupDirective, 
-      scala.Unit
-    ],
-    getControl: js.Function1[
-      atAngularFormsLib.srcDirectivesNgUnderscoreControlMod.NgControl, 
-      atAngularFormsLib.srcModelMod.FormControl
-    ],
-    getFormGroup: js.Function1[
-      atAngularFormsLib.srcDirectivesAbstractUnderscoreFormUnderscoreGroupUnderscoreDirectiveMod.AbstractFormGroupDirective, 
-      atAngularFormsLib.srcModelMod.FormGroup
-    ],
-    removeControl: js.Function1[atAngularFormsLib.srcDirectivesNgUnderscoreControlMod.NgControl, scala.Unit],
-    removeFormGroup: js.Function1[
-      atAngularFormsLib.srcDirectivesAbstractUnderscoreFormUnderscoreGroupUnderscoreDirectiveMod.AbstractFormGroupDirective, 
-      scala.Unit
-    ],
-    updateModel: js.Function2[atAngularFormsLib.srcDirectivesNgUnderscoreControlMod.NgControl, js.Any, scala.Unit]
+    addControl: atAngularFormsLib.srcDirectivesNgUnderscoreControlMod.NgControl => scala.Unit,
+    addFormGroup: atAngularFormsLib.srcDirectivesAbstractUnderscoreFormUnderscoreGroupUnderscoreDirectiveMod.AbstractFormGroupDirective => scala.Unit,
+    getControl: atAngularFormsLib.srcDirectivesNgUnderscoreControlMod.NgControl => atAngularFormsLib.srcModelMod.FormControl,
+    getFormGroup: atAngularFormsLib.srcDirectivesAbstractUnderscoreFormUnderscoreGroupUnderscoreDirectiveMod.AbstractFormGroupDirective => atAngularFormsLib.srcModelMod.FormGroup,
+    removeControl: atAngularFormsLib.srcDirectivesNgUnderscoreControlMod.NgControl => scala.Unit,
+    removeFormGroup: atAngularFormsLib.srcDirectivesAbstractUnderscoreFormUnderscoreGroupUnderscoreDirectiveMod.AbstractFormGroupDirective => scala.Unit,
+    updateModel: (atAngularFormsLib.srcDirectivesNgUnderscoreControlMod.NgControl, js.Any) => scala.Unit
   ): Form = {
-    val __obj = js.Dynamic.literal(addControl = addControl, addFormGroup = addFormGroup, getControl = getControl, getFormGroup = getFormGroup, removeControl = removeControl, removeFormGroup = removeFormGroup, updateModel = updateModel)
+    val __obj = js.Dynamic.literal(addControl = js.Any.fromFunction1(addControl), addFormGroup = js.Any.fromFunction1(addFormGroup), getControl = js.Any.fromFunction1(getControl), getFormGroup = js.Any.fromFunction1(getFormGroup), removeControl = js.Any.fromFunction1(removeControl), removeFormGroup = js.Any.fromFunction1(removeFormGroup), updateModel = js.Any.fromFunction2(updateModel))
   
     __obj.asInstanceOf[Form]
   }

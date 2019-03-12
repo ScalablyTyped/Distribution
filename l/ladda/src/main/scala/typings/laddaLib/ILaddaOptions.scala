@@ -13,11 +13,11 @@ trait ILaddaOptions extends js.Object {
 object ILaddaOptions {
   @scala.inline
   def apply(
-    callback: js.Function1[/* instance */ ILaddaButton, scala.Unit] = null,
+    callback: /* instance */ ILaddaButton => scala.Unit = null,
     timeout: scala.Int | scala.Double = null
   ): ILaddaOptions = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILaddaOptions]
   }

@@ -31,13 +31,13 @@ trait Performance extends js.Object {
 object Performance {
   @scala.inline
   def apply(
-    assetFilter: js.Function1[/* assetFilename */ java.lang.String, scala.Boolean] = null,
+    assetFilter: /* assetFilename */ java.lang.String => scala.Boolean = null,
     hints: webpackLib.webpackLibStrings.warning | webpackLib.webpackLibStrings.error | webpackLib.webpackLibNumbers.`false` = null,
     maxAssetSize: scala.Int | scala.Double = null,
     maxEntrypointSize: scala.Int | scala.Double = null
   ): Performance = {
     val __obj = js.Dynamic.literal()
-    if (assetFilter != null) __obj.updateDynamic("assetFilter")(assetFilter)
+    if (assetFilter != null) __obj.updateDynamic("assetFilter")(js.Any.fromFunction1(assetFilter))
     if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
     if (maxAssetSize != null) __obj.updateDynamic("maxAssetSize")(maxAssetSize.asInstanceOf[js.Any])
     if (maxEntrypointSize != null) __obj.updateDynamic("maxEntrypointSize")(maxEntrypointSize.asInstanceOf[js.Any])

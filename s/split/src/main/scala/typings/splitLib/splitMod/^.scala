@@ -11,6 +11,6 @@ object ^ extends js.Object {
   def apply(): throughLib.throughMod.throughNs.ThroughStream = js.native
   def apply(matcher: js.Any): throughLib.throughMod.throughNs.ThroughStream = js.native
   def apply(matcher: js.Any, mapper: js.Any): throughLib.throughMod.throughNs.ThroughStream = js.native
-  def apply(matcher: js.Any, mapper: js.Any, options: splitLib.splitMod.SplitOptions): throughLib.throughMod.throughNs.ThroughStream = js.native
+  def apply(matcher: js.Any, mapper: js.Any, options: SplitOptions): throughLib.throughMod.throughNs.ThroughStream = js.native
 }
 

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jasmine-expect/dist/toBeRegExp", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val toBeRegExp: jasmineDashExpectLib.distToBeRegExpMod.ToBeRegExp = js.native
+  val toBeRegExp: ToBeRegExp = js.native
 }
 

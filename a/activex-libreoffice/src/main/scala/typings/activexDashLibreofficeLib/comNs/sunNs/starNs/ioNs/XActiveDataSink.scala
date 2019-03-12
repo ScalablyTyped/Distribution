@@ -28,13 +28,13 @@ object XActiveDataSink {
   @scala.inline
   def apply(
     InputStream: XInputStream,
-    acquire: js.Function0[scala.Unit],
-    getInputStream: js.Function0[XInputStream],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setInputStream: js.Function1[XInputStream, scala.Unit]
+    acquire: () => scala.Unit,
+    getInputStream: () => XInputStream,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setInputStream: XInputStream => scala.Unit
   ): XActiveDataSink = {
-    val __obj = js.Dynamic.literal(InputStream = InputStream, acquire = acquire, getInputStream = getInputStream, queryInterface = queryInterface, release = release, setInputStream = setInputStream)
+    val __obj = js.Dynamic.literal(InputStream = InputStream, acquire = js.Any.fromFunction0(acquire), getInputStream = js.Any.fromFunction0(getInputStream), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setInputStream = js.Any.fromFunction1(setInputStream))
   
     __obj.asInstanceOf[XActiveDataSink]
   }

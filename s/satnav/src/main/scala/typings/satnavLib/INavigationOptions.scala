@@ -14,12 +14,12 @@ trait INavigationOptions extends js.Object {
 object INavigationOptions {
   @scala.inline
   def apply(
-    directions: js.Function1[/* params */ js.Any, _] = null,
+    directions: /* params */ js.Any => _ = null,
     path: java.lang.String = null,
     title: java.lang.String | Callback = null
   ): INavigationOptions = {
     val __obj = js.Dynamic.literal()
-    if (directions != null) __obj.updateDynamic("directions")(directions)
+    if (directions != null) __obj.updateDynamic("directions")(js.Any.fromFunction1(directions))
     if (path != null) __obj.updateDynamic("path")(path)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[INavigationOptions]

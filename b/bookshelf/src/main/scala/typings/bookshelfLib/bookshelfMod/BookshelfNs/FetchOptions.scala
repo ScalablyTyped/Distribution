@@ -18,7 +18,8 @@ object FetchOptions {
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     require: js.UndefOr[scala.Boolean] = js.undefined,
     transacting: knexLib.knexMod.KnexNs.Transaction = null,
-    withRelated: js.Array[java.lang.String | WithRelatedQuery] = null
+    withRelated: js.Array[java.lang.String | WithRelatedQuery] = null,
+    withSchema: java.lang.String = null
   ): FetchOptions = {
     val __obj = js.Dynamic.literal()
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
@@ -26,6 +27,7 @@ object FetchOptions {
     if (!js.isUndefined(require)) __obj.updateDynamic("require")(require)
     if (transacting != null) __obj.updateDynamic("transacting")(transacting)
     if (withRelated != null) __obj.updateDynamic("withRelated")(withRelated)
+    if (withSchema != null) __obj.updateDynamic("withSchema")(withSchema)
     __obj.asInstanceOf[FetchOptions]
   }
 }

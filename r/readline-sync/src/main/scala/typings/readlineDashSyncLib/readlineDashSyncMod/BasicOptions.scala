@@ -62,11 +62,11 @@ object BasicOptions {
     mask: java.lang.String = null,
     max: js.Any = null,
     min: js.Any = null,
-    print: js.Function2[/* display */ java.lang.String, /* encoding */ java.lang.String, scala.Unit] = null,
+    print: (/* display */ java.lang.String, /* encoding */ java.lang.String) => scala.Unit = null,
     prompt: js.Any = null,
     trueValue: OptionType | js.Array[OptionType] = null,
     unmatchMessage: js.Any = null,
-    validate: js.Function1[/* path */ java.lang.String, scala.Boolean | java.lang.String] = null
+    validate: /* path */ java.lang.String => scala.Boolean | java.lang.String = null
   ): BasicOptions = {
     val __obj = js.Dynamic.literal()
     if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
@@ -91,11 +91,11 @@ object BasicOptions {
     if (mask != null) __obj.updateDynamic("mask")(mask)
     if (max != null) __obj.updateDynamic("max")(max)
     if (min != null) __obj.updateDynamic("min")(min)
-    if (print != null) __obj.updateDynamic("print")(print)
+    if (print != null) __obj.updateDynamic("print")(js.Any.fromFunction2(print))
     if (prompt != null) __obj.updateDynamic("prompt")(prompt)
     if (trueValue != null) __obj.updateDynamic("trueValue")(trueValue.asInstanceOf[js.Any])
     if (unmatchMessage != null) __obj.updateDynamic("unmatchMessage")(unmatchMessage)
-    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction1(validate))
     __obj.asInstanceOf[BasicOptions]
   }
 }

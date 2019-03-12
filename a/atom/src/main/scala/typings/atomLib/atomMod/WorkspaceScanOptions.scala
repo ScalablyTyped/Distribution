@@ -20,13 +20,13 @@ object WorkspaceScanOptions {
   @scala.inline
   def apply(
     leadingContextLineCount: scala.Int | scala.Double = null,
-    onPathsSearched: js.Function1[/* pathsSearched */ scala.Double, scala.Unit] = null,
+    onPathsSearched: /* pathsSearched */ scala.Double => scala.Unit = null,
     paths: js.Array[java.lang.String] = null,
     trailingContextLineCount: scala.Int | scala.Double = null
   ): WorkspaceScanOptions = {
     val __obj = js.Dynamic.literal()
     if (leadingContextLineCount != null) __obj.updateDynamic("leadingContextLineCount")(leadingContextLineCount.asInstanceOf[js.Any])
-    if (onPathsSearched != null) __obj.updateDynamic("onPathsSearched")(onPathsSearched)
+    if (onPathsSearched != null) __obj.updateDynamic("onPathsSearched")(js.Any.fromFunction1(onPathsSearched))
     if (paths != null) __obj.updateDynamic("paths")(paths)
     if (trailingContextLineCount != null) __obj.updateDynamic("trailingContextLineCount")(trailingContextLineCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceScanOptions]

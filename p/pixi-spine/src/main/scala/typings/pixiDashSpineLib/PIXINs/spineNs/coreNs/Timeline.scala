@@ -22,19 +22,10 @@ trait Timeline extends js.Object {
 object Timeline {
   @scala.inline
   def apply(
-    apply: js.Function7[
-      Skeleton, 
-      scala.Double, 
-      scala.Double, 
-      js.Array[Event], 
-      scala.Double, 
-      MixBlend, 
-      MixDirection, 
-      scala.Unit
-    ],
-    getPropertyId: js.Function0[scala.Double]
+    apply: (Skeleton, scala.Double, scala.Double, js.Array[Event], scala.Double, MixBlend, MixDirection) => scala.Unit,
+    getPropertyId: () => scala.Double
   ): Timeline = {
-    val __obj = js.Dynamic.literal(apply = apply, getPropertyId = getPropertyId)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction7(apply), getPropertyId = js.Any.fromFunction0(getPropertyId))
   
     __obj.asInstanceOf[Timeline]
   }

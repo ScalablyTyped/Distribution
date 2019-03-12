@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PendingMacrotask extends js.Object {
-  var creationLocation: nodeLib.Error
+  var creationLocation: stdLib.Error
   var data: TaskData
   var runCount: js.UndefOr[scala.Double] = js.undefined
   var source: java.lang.String
@@ -15,7 +15,7 @@ trait PendingMacrotask extends js.Object {
 object PendingMacrotask {
   @scala.inline
   def apply(
-    creationLocation: nodeLib.Error,
+    creationLocation: stdLib.Error,
     data: TaskData,
     source: java.lang.String,
     runCount: scala.Int | scala.Double = null

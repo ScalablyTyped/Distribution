@@ -150,7 +150,7 @@ object DataOptions {
   @scala.inline
   def apply(
     columns: js.Array[js.Array[java.lang.String | scala.Double]] = null,
-    complete: js.Function1[/* options */ Options, scala.Unit] = null,
+    complete: /* options */ Options => scala.Unit = null,
     csv: java.lang.String = null,
     dateFormat: java.lang.String = null,
     decimalPoint: java.lang.String = null,
@@ -161,11 +161,8 @@ object DataOptions {
     googleSpreadsheetWorksheet: java.lang.String = null,
     itemDelimiter: java.lang.String = null,
     lineDelimiter: java.lang.String = null,
-    parseDate: js.Function1[/* val */ js.Any, scala.Double] = null,
-    parsed: js.Function1[
-      /* columns */ js.Array[js.Array[java.lang.String | scala.Double]], 
-      scala.Boolean | scala.Unit
-    ] = null,
+    parseDate: /* val */ js.Any => scala.Double = null,
+    parsed: /* columns */ js.Array[js.Array[java.lang.String | scala.Double]] => scala.Boolean | scala.Unit = null,
     rows: js.Array[js.Array[java.lang.String | scala.Double]] = null,
     seriesMapping: js.Array[DataSeriesMapping] = null,
     startColumn: scala.Int | scala.Double = null,
@@ -175,7 +172,7 @@ object DataOptions {
   ): DataOptions = {
     val __obj = js.Dynamic.literal()
     if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (csv != null) __obj.updateDynamic("csv")(csv)
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
     if (decimalPoint != null) __obj.updateDynamic("decimalPoint")(decimalPoint)
@@ -186,8 +183,8 @@ object DataOptions {
     if (googleSpreadsheetWorksheet != null) __obj.updateDynamic("googleSpreadsheetWorksheet")(googleSpreadsheetWorksheet)
     if (itemDelimiter != null) __obj.updateDynamic("itemDelimiter")(itemDelimiter)
     if (lineDelimiter != null) __obj.updateDynamic("lineDelimiter")(lineDelimiter)
-    if (parseDate != null) __obj.updateDynamic("parseDate")(parseDate)
-    if (parsed != null) __obj.updateDynamic("parsed")(parsed)
+    if (parseDate != null) __obj.updateDynamic("parseDate")(js.Any.fromFunction1(parseDate))
+    if (parsed != null) __obj.updateDynamic("parsed")(js.Any.fromFunction1(parsed))
     if (rows != null) __obj.updateDynamic("rows")(rows)
     if (seriesMapping != null) __obj.updateDynamic("seriesMapping")(seriesMapping)
     if (startColumn != null) __obj.updateDynamic("startColumn")(startColumn.asInstanceOf[js.Any])

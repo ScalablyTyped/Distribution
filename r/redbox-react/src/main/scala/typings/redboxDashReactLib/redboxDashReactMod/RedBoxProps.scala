@@ -9,7 +9,7 @@ trait RedBoxProps
   extends reactLib.reactMod.ReactNs.Props[RedBoxError] {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var editorScheme: js.UndefOr[java.lang.String] = js.undefined
-  var error: nodeLib.Error
+  var error: stdLib.Error
   var filename: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var useColumns: js.UndefOr[scala.Boolean] = js.undefined
@@ -19,7 +19,7 @@ trait RedBoxProps
 object RedBoxProps {
   @scala.inline
   def apply(
-    error: nodeLib.Error,
+    error: stdLib.Error,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     className: java.lang.String = null,
     editorScheme: java.lang.String = null,

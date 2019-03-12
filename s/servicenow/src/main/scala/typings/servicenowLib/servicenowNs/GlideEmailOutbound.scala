@@ -17,14 +17,14 @@ trait GlideEmailOutbound extends js.Object {
 object GlideEmailOutbound {
   @scala.inline
   def apply(
-    addAddress: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Unit],
-    getSubject: js.Function0[java.lang.String],
-    setBody: js.Function1[java.lang.String, scala.Unit],
-    setFrom: js.Function1[java.lang.String, scala.Unit],
-    setReplyTo: js.Function1[java.lang.String, scala.Unit],
-    setSubject: js.Function1[java.lang.String, scala.Unit]
+    addAddress: (java.lang.String, java.lang.String, java.lang.String) => scala.Unit,
+    getSubject: () => java.lang.String,
+    setBody: java.lang.String => scala.Unit,
+    setFrom: java.lang.String => scala.Unit,
+    setReplyTo: java.lang.String => scala.Unit,
+    setSubject: java.lang.String => scala.Unit
   ): GlideEmailOutbound = {
-    val __obj = js.Dynamic.literal(addAddress = addAddress, getSubject = getSubject, setBody = setBody, setFrom = setFrom, setReplyTo = setReplyTo, setSubject = setSubject)
+    val __obj = js.Dynamic.literal(addAddress = js.Any.fromFunction3(addAddress), getSubject = js.Any.fromFunction0(getSubject), setBody = js.Any.fromFunction1(setBody), setFrom = js.Any.fromFunction1(setFrom), setReplyTo = js.Any.fromFunction1(setReplyTo), setSubject = js.Any.fromFunction1(setSubject))
   
     __obj.asInstanceOf[GlideEmailOutbound]
   }

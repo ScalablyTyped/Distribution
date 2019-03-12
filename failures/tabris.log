@@ -3,7 +3,7 @@
 [debug] PhaseRunner.scala:82 Success [id => tabris, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/tabris/tabris.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/tabris),TsIdentLibrarySimple(tabris)),TsIdentModule(None,List(tabris))) [id => tabris, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(tabris)) [id => tabris, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:200 Processing TsIdentLibrarySimple(tabris) [id => tabris, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:201 Processing TsIdentLibrarySimple(tabris) [id => tabris, phase => typescript] 
 [warn ] QualifyReferences.scala:32 Couldn't qualify NativeObject [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(Properties) / TsTypeParam() / TsTypeRef())] 
 [warn ] QualifyReferences.scala:32 Couldn't qualify Widget [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(SelectorFunction) / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeRef())] 
 [warn ] QualifyReferences.scala:32 Couldn't qualify _ActionSheetProperties [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ActionSheetProperties) / TsTypeRef() / TsTypeRef())] 
@@ -59,24 +59,43 @@
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(UIEvents))] 
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(_CanvasProperties))] 
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(CanvasEvents))] 
+[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(JSX) / TsDeclInterface(ElementClass))] 
+[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(JSX) / TsDeclInterface(FileSystemEvents))] 
+[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(JSX) / TsDeclInterface(PopupEvents))] 
+[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(JSX) / TsDeclInterface(PrinterEvents))] 
+[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(JSX) / TsDeclInterface(UIEvents))] 
+[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(JSX) / TsDeclInterface(CanvasEvents))] 
+[info ] PreferTypeAlias.scala:51 Simplified to function type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(EventListener))] 
+[info ] ExpandKeyOfTypeParams.scala:40 Expanding 1 members for TsIdentSimple(addEventListener) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(MessagePort))] 
+[info ] ExpandKeyOfTypeParams.scala:40 Expanding 4 members for TsIdentSimple(addEventListener) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(WebSocket))] 
+[info ] ExpandKeyOfTypeParams.scala:40 Expanding 7 members for TsIdentSimple(addEventListener) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(XMLHttpRequestEventTarget))] 
+[info ] ExpandKeyOfTypeParams.scala:40 Expanding 8 members for TsIdentSimple(addEventListener) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(XMLHttpRequest))] 
+[info ] ExpandKeyOfTypeParams.scala:40 Expanding 7 members for TsIdentSimple(addEventListener) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(XMLHttpRequestUpload))] 
 [error] PhaseRes.scala:79 StackOverflowError [id => tabris, phase => typescript] java.lang.StackOverflowError
-	at scala.collection.immutable.Nil$.equals(List.scala:435)
-	at com.olvind.tso.ts.TsTreeScope$.search(TsTreeScope.scala:348)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.local$1(TsTreeScope.scala:249)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupImpl(TsTreeScope.scala:319)
-	at com.olvind.tso.ts.TsTreeScope.lookupInternal(TsTreeScope.scala:88)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableOnce.addString(TraversableOnce.scala:360)
+	at scala.collection.TraversableOnce.addString$(TraversableOnce.scala:356)
+	at scala.collection.AbstractTraversable.addString(Traversable.scala:108)
+	at scala.collection.TraversableOnce.mkString(TraversableOnce.scala:326)
+	at scala.collection.TraversableOnce.mkString$(TraversableOnce.scala:325)
+	at scala.collection.AbstractTraversable.mkString(Traversable.scala:108)
+	at scala.collection.TraversableOnce.mkString(TraversableOnce.scala:328)
+	at scala.collection.TraversableOnce.mkString$(TraversableOnce.scala:328)
+	at scala.collection.AbstractTraversable.mkString(Traversable.scala:108)
+	at com.olvind.tso.ts.TsTreeScope.toString(TsTreeScope.scala:97)
+	at com.olvind.tso.ts.TsTreeScope.toString$(TsTreeScope.scala:96)
+	at com.olvind.tso.ts.TsTreeScope$Scoped.toString$lzycompute(TsTreeScope.scala:207)
+	at com.olvind.tso.ts.TsTreeScope$Scoped.toString(TsTreeScope.scala:207)
+	at com.olvind.tso.ts.TsTreeScope$LoopDetector.including(TsTreeScope.scala:129)
+	at com.olvind.tso.ts.TsTreeScope.lookupInternal(TsTreeScope.scala:82)
 	at com.olvind.tso.ts.TsTreeScope.lookupInternal$(TsTreeScope.scala:79)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupInternal(TsTreeScope.scala:200)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupImpl(TsTreeScope.scala:336)
-	at com.olvind.tso.ts.TsTreeScope.lookupInternal(TsTreeScope.scala:87)
-	at com.olvind.tso.ts.TsTreeScope.lookupInternal$(TsTreeScope.scala:79)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupInternal(TsTreeScope.scala:200)
+	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupInternal(TsTreeScope.scala:207)
 	at com.olvind.tso.ts.TsTreeScope.lookupBase(TsTreeScope.scala:69)
 	at com.olvind.tso.ts.TsTreeScope.lookupBase$(TsTreeScope.scala:63)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupBase(TsTreeScope.scala:200)
+	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupBase(TsTreeScope.scala:207)
 	at com.olvind.tso.ts.TsTreeScope.lookupTypeIncludeScope(TsTreeScope.scala:61)
 	at com.olvind.tso.ts.TsTreeScope.lookupTypeIncludeScope$(TsTreeScope.scala:60)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupTypeIncludeScope(TsTreeScope.scala:200)
+	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupTypeIncludeScope(TsTreeScope.scala:207)
 	at com.olvind.tso.ts.transforms.ExpandCallables$.callableTypes(ExpandCallables.scala:88)
 	at com.olvind.tso.ts.transforms.ExpandCallables$.$anonfun$callableTypes$1(ExpandCallables.scala:81)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
@@ -1077,13 +1096,6 @@
 	at com.olvind.tso.ts.transforms.ExpandCallables$$anonfun$callableTypes$2.applyOrElse(ExpandCallables.scala:90)
 	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:148)
 	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:135)
-	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
-	at com.olvind.tso.ts.transforms.ExpandCallables$.callableTypes(ExpandCallables.scala:90)
-	at com.olvind.tso.ts.transforms.ExpandCallables$.$anonfun$callableTypes$1(ExpandCallables.scala:81)
-	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
-	at scala.collection.immutable.List.foreach(List.scala:392)
-	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
-	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
 
 [error] PhaseRunner.scala:86 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => typescript] 
 [error] PhaseRunner.scala:86 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => scala.js] 

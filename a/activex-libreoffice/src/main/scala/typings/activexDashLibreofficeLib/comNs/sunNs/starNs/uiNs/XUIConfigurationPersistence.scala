@@ -47,16 +47,16 @@ trait XUIConfigurationPersistence
 object XUIConfigurationPersistence {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    isModified: js.Function0[scala.Boolean],
-    isReadOnly: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    reload: js.Function0[scala.Unit],
-    store: js.Function0[scala.Unit],
-    storeToStorage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, scala.Unit]
+    acquire: () => scala.Unit,
+    isModified: () => scala.Boolean,
+    isReadOnly: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    reload: () => scala.Unit,
+    store: () => scala.Unit,
+    storeToStorage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage => scala.Unit
   ): XUIConfigurationPersistence = {
-    val __obj = js.Dynamic.literal(acquire = acquire, isModified = isModified, isReadOnly = isReadOnly, queryInterface = queryInterface, release = release, reload = reload, store = store, storeToStorage = storeToStorage)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), isModified = js.Any.fromFunction0(isModified), isReadOnly = js.Any.fromFunction0(isReadOnly), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), reload = js.Any.fromFunction0(reload), store = js.Any.fromFunction0(store), storeToStorage = js.Any.fromFunction1(storeToStorage))
   
     __obj.asInstanceOf[XUIConfigurationPersistence]
   }

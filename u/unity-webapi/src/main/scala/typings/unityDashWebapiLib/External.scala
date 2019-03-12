@@ -11,8 +11,8 @@ trait External extends js.Object {
 
 object External {
   @scala.inline
-  def apply(getUnityObject: js.Function1[scala.Double, Unity]): External = {
-    val __obj = js.Dynamic.literal(getUnityObject = getUnityObject)
+  def apply(getUnityObject: scala.Double => Unity): External = {
+    val __obj = js.Dynamic.literal(getUnityObject = js.Any.fromFunction1(getUnityObject))
   
     __obj.asInstanceOf[External]
   }

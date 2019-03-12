@@ -15,8 +15,8 @@ trait Logger extends js.Object {
 
 object Logger {
   @scala.inline
-  def apply(error: js.Function1[js.Any, scala.Unit], log: js.Function1[js.Any, scala.Unit]): Logger = {
-    val __obj = js.Dynamic.literal(error = error, log = log)
+  def apply(error: js.Any => scala.Unit, log: js.Any => scala.Unit): Logger = {
+    val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), log = js.Any.fromFunction1(log))
   
     __obj.asInstanceOf[Logger]
   }

@@ -29,13 +29,13 @@ trait XShapeGrouper
 object XShapeGrouper {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    group: js.Function1[XShapes, XShapeGroup],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    ungroup: js.Function1[XShapeGroup, scala.Unit]
+    acquire: () => scala.Unit,
+    group: XShapes => XShapeGroup,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    ungroup: XShapeGroup => scala.Unit
   ): XShapeGrouper = {
-    val __obj = js.Dynamic.literal(acquire = acquire, group = group, queryInterface = queryInterface, release = release, ungroup = ungroup)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), group = js.Any.fromFunction1(group), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), ungroup = js.Any.fromFunction1(ungroup))
   
     __obj.asInstanceOf[XShapeGrouper]
   }

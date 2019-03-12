@@ -41,19 +41,16 @@ trait XToolbarController
 object XToolbarController {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    click: js.Function0[scala.Unit],
-    createItemWindow: js.Function1[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow
-    ],
-    createPopupWindow: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow],
-    doubleClick: js.Function0[scala.Unit],
-    execute: js.Function1[scala.Double, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    click: () => scala.Unit,
+    createItemWindow: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    createPopupWindow: () => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    doubleClick: () => scala.Unit,
+    execute: scala.Double => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XToolbarController = {
-    val __obj = js.Dynamic.literal(acquire = acquire, click = click, createItemWindow = createItemWindow, createPopupWindow = createPopupWindow, doubleClick = doubleClick, execute = execute, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), click = js.Any.fromFunction0(click), createItemWindow = js.Any.fromFunction1(createItemWindow), createPopupWindow = js.Any.fromFunction0(createPopupWindow), doubleClick = js.Any.fromFunction0(doubleClick), execute = js.Any.fromFunction1(execute), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XToolbarController]
   }

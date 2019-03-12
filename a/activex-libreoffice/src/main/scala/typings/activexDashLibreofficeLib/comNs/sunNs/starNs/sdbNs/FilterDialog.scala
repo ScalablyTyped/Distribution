@@ -22,20 +22,15 @@ trait FilterDialog
 object FilterDialog {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createDefault: js.Function0[scala.Unit],
-    createWithQuery: js.Function3[
-      XSingleSelectQueryComposer, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRowSet, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
-      scala.Unit
-    ],
-    execute: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setTitle: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    createDefault: () => scala.Unit,
+    createWithQuery: (XSingleSelectQueryComposer, activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRowSet, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow) => scala.Unit,
+    execute: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setTitle: java.lang.String => scala.Unit
   ): FilterDialog = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createDefault = createDefault, createWithQuery = createWithQuery, execute = execute, queryInterface = queryInterface, release = release, setTitle = setTitle)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createDefault = js.Any.fromFunction0(createDefault), createWithQuery = js.Any.fromFunction3(createWithQuery), execute = js.Any.fromFunction0(execute), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setTitle = js.Any.fromFunction1(setTitle))
   
     __obj.asInstanceOf[FilterDialog]
   }

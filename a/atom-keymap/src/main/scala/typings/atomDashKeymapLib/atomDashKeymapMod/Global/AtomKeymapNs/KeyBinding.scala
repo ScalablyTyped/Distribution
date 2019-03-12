@@ -31,17 +31,17 @@ object KeyBinding {
   @scala.inline
   def apply(
     command: java.lang.String,
-    compare: js.Function1[KeyBinding, scala.Double],
+    compare: KeyBinding => scala.Double,
     enabled: scala.Boolean,
     keystrokeArray: js.Array[java.lang.String],
     keystrokeCount: scala.Double,
     keystrokes: java.lang.String,
-    matches: js.Function1[java.lang.String, scala.Boolean],
+    matches: java.lang.String => scala.Boolean,
     selector: java.lang.String,
     source: java.lang.String,
     specificity: scala.Double
   ): KeyBinding = {
-    val __obj = js.Dynamic.literal(command = command, compare = compare, enabled = enabled, keystrokeArray = keystrokeArray, keystrokeCount = keystrokeCount, keystrokes = keystrokes, matches = matches, selector = selector, source = source, specificity = specificity)
+    val __obj = js.Dynamic.literal(command = command, compare = js.Any.fromFunction1(compare), enabled = enabled, keystrokeArray = keystrokeArray, keystrokeCount = keystrokeCount, keystrokes = keystrokes, matches = js.Any.fromFunction1(matches), selector = selector, source = source, specificity = specificity)
   
     __obj.asInstanceOf[KeyBinding]
   }

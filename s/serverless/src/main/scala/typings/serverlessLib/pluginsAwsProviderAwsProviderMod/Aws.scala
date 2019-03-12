@@ -15,12 +15,12 @@ trait Aws extends js.Object {
 object Aws {
   @scala.inline
   def apply(
-    getProviderName: js.Function0[java.lang.String],
-    getRegion: js.Function0[java.lang.String],
-    getServerlessDeploymentBucketName: js.Function0[java.lang.String],
-    getStage: js.Function0[java.lang.String]
+    getProviderName: () => java.lang.String,
+    getRegion: () => java.lang.String,
+    getServerlessDeploymentBucketName: () => java.lang.String,
+    getStage: () => java.lang.String
   ): Aws = {
-    val __obj = js.Dynamic.literal(getProviderName = getProviderName, getRegion = getRegion, getServerlessDeploymentBucketName = getServerlessDeploymentBucketName, getStage = getStage)
+    val __obj = js.Dynamic.literal(getProviderName = js.Any.fromFunction0(getProviderName), getRegion = js.Any.fromFunction0(getRegion), getServerlessDeploymentBucketName = js.Any.fromFunction0(getServerlessDeploymentBucketName), getStage = js.Any.fromFunction0(getStage))
   
     __obj.asInstanceOf[Aws]
   }

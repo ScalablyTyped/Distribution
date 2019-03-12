@@ -199,26 +199,26 @@ trait IDialogService extends js.Object {
 object IDialogService {
   @scala.inline
   def apply(
-    close: js.Function2[IDialog, /* repeated */ js.Any, scala.Unit],
-    closeAll: js.Function1[/* repeated */ js.Any, scala.Unit],
-    closeDialog: js.Function1[IDialog, scala.Unit],
-    contentPicker: js.Function1[IContentPickerOptions, IModal],
-    embedDialog: js.Function1[js.Any, scala.Unit],
-    iconPicker: js.Function1[IIconPickerOptions, IModal],
-    linkPicker: js.Function1[ILinkPickerOptions, IModal],
-    macroPicker: js.Function1[IMacroPickerOptions, IModal],
-    mediaPicker: js.Function1[IMediaPickerOptions, IModal],
-    memberGroupPicker: js.Function1[IMemberGroupPickerOptions, IModal],
-    memberPicker: js.Function1[IMemberPickerOptions, IModal],
-    open: js.Function1[IDialogRenderingOptions, IModal],
-    openDialog: js.Function1[IDialogRenderingOptions, IModal],
-    propertyDialog: js.Function1[IPropertyDialogOptions, IModal],
-    removeAllDialogs: js.Function1[/* repeated */ js.Any, scala.Unit],
-    treePicker: js.Function1[ITreePickerOptions, IModal],
-    ysodDialog: js.Function1[js.Any, scala.Unit],
+    close: (IDialog, /* repeated */ js.Any) => scala.Unit,
+    closeAll: /* repeated */ js.Any => scala.Unit,
+    closeDialog: IDialog => scala.Unit,
+    contentPicker: IContentPickerOptions => IModal,
+    embedDialog: js.Any => scala.Unit,
+    iconPicker: IIconPickerOptions => IModal,
+    linkPicker: ILinkPickerOptions => IModal,
+    macroPicker: IMacroPickerOptions => IModal,
+    mediaPicker: IMediaPickerOptions => IModal,
+    memberGroupPicker: IMemberGroupPickerOptions => IModal,
+    memberPicker: IMemberPickerOptions => IModal,
+    open: IDialogRenderingOptions => IModal,
+    openDialog: IDialogRenderingOptions => IModal,
+    propertyDialog: IPropertyDialogOptions => IModal,
+    removeAllDialogs: /* repeated */ js.Any => scala.Unit,
+    treePicker: ITreePickerOptions => IModal,
+    ysodDialog: js.Any => scala.Unit,
     dialogs: js.Array[_] = null
   ): IDialogService = {
-    val __obj = js.Dynamic.literal(close = close, closeAll = closeAll, closeDialog = closeDialog, contentPicker = contentPicker, embedDialog = embedDialog, iconPicker = iconPicker, linkPicker = linkPicker, macroPicker = macroPicker, mediaPicker = mediaPicker, memberGroupPicker = memberGroupPicker, memberPicker = memberPicker, open = open, openDialog = openDialog, propertyDialog = propertyDialog, removeAllDialogs = removeAllDialogs, treePicker = treePicker, ysodDialog = ysodDialog)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction2(close), closeAll = js.Any.fromFunction1(closeAll), closeDialog = js.Any.fromFunction1(closeDialog), contentPicker = js.Any.fromFunction1(contentPicker), embedDialog = js.Any.fromFunction1(embedDialog), iconPicker = js.Any.fromFunction1(iconPicker), linkPicker = js.Any.fromFunction1(linkPicker), macroPicker = js.Any.fromFunction1(macroPicker), mediaPicker = js.Any.fromFunction1(mediaPicker), memberGroupPicker = js.Any.fromFunction1(memberGroupPicker), memberPicker = js.Any.fromFunction1(memberPicker), open = js.Any.fromFunction1(open), openDialog = js.Any.fromFunction1(openDialog), propertyDialog = js.Any.fromFunction1(propertyDialog), removeAllDialogs = js.Any.fromFunction1(removeAllDialogs), treePicker = js.Any.fromFunction1(treePicker), ysodDialog = js.Any.fromFunction1(ysodDialog))
     if (dialogs != null) __obj.updateDynamic("dialogs")(dialogs)
     __obj.asInstanceOf[IDialogService]
   }

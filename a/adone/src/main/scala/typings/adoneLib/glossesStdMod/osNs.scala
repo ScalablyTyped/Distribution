@@ -40,7 +40,8 @@ object osNs extends js.Object {
   def totalmem(): scala.Double = js.native
   def `type`(): java.lang.String = js.native
   def uptime(): scala.Double = js.native
-  def userInfo(): nodeLib.Anon_Gid = js.native
-  def userInfo(options: nodeLib.Anon_EncodingString): nodeLib.Anon_Gid = js.native
+  def userInfo(): nodeLib.osMod.UserInfo[java.lang.String] = js.native
+  def userInfo(options: nodeLib.Anon_BufferEncoding): nodeLib.osMod.UserInfo[nodeLib.Buffer] = js.native
+  def userInfo(options: nodeLib.Anon_EncodingString): nodeLib.osMod.UserInfo[java.lang.String] = js.native
 }
 

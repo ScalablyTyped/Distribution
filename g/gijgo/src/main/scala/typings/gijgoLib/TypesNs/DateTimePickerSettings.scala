@@ -23,7 +23,7 @@ trait DateTimePickerSettings extends js.Object {
 object DateTimePickerSettings {
   @scala.inline
   def apply(
-    change: js.Function1[/* e */ js.Any, _] = null,
+    change: /* e */ js.Any => _ = null,
     datepicker: DatePickerSettings = null,
     footer: js.UndefOr[scala.Boolean] = js.undefined,
     format: java.lang.String = null,
@@ -35,7 +35,7 @@ object DateTimePickerSettings {
     width: scala.Int | scala.Double = null
   ): DateTimePickerSettings = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (datepicker != null) __obj.updateDynamic("datepicker")(datepicker)
     if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer)
     if (format != null) __obj.updateDynamic("format")(format)

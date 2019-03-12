@@ -83,7 +83,7 @@ object OutputOptions {
     sourcemap: scala.Boolean | rollupLib.rollupLibStrings.`inline` = null,
     sourcemapExcludeSources: js.UndefOr[scala.Boolean] = js.undefined,
     sourcemapFile: java.lang.String = null,
-    sourcemapPathTransform: js.Function1[/* sourcePath */ java.lang.String, java.lang.String] = null,
+    sourcemapPathTransform: /* sourcePath */ java.lang.String => java.lang.String = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined
   ): OutputOptions = {
     val __obj = js.Dynamic.literal()
@@ -115,7 +115,7 @@ object OutputOptions {
     if (sourcemap != null) __obj.updateDynamic("sourcemap")(sourcemap.asInstanceOf[js.Any])
     if (!js.isUndefined(sourcemapExcludeSources)) __obj.updateDynamic("sourcemapExcludeSources")(sourcemapExcludeSources)
     if (sourcemapFile != null) __obj.updateDynamic("sourcemapFile")(sourcemapFile)
-    if (sourcemapPathTransform != null) __obj.updateDynamic("sourcemapPathTransform")(sourcemapPathTransform)
+    if (sourcemapPathTransform != null) __obj.updateDynamic("sourcemapPathTransform")(js.Any.fromFunction1(sourcemapPathTransform))
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
     __obj.asInstanceOf[OutputOptions]
   }

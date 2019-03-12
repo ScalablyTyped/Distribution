@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class SharedStylesHost () extends js.Object {
   def addStyles(styles: js.Array[java.lang.String]): scala.Unit = js.native
   def getAllStyles(): js.Array[java.lang.String] = js.native
-  def onStylesAdded(additions: nodeLib.Set[java.lang.String]): scala.Unit = js.native
+  def onStylesAdded(additions: stdLib.Set[java.lang.String]): scala.Unit = js.native
 }
 

@@ -16,28 +16,28 @@ trait SelectUI extends BaseUI {
 object SelectUI {
   @scala.inline
   def apply(
-    build: js.Function0[scala.Unit],
+    build: () => scala.Unit,
     buildState: scala.Boolean,
-    closeOptions: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    element: js.Function0[stdLib.Element],
+    closeOptions: () => scala.Unit,
+    destroy: () => scala.Unit,
+    element: () => stdLib.Element,
     eventManager: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.EventManager,
-    focus: js.Function0[scala.Unit],
-    getValue: js.Function0[js.Any],
-    hide: js.Function0[scala.Unit],
+    focus: () => scala.Unit,
+    getValue: () => js.Any,
+    hide: () => scala.Unit,
     hot: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
-    isBuilt: js.Function0[scala.Boolean],
+    isBuilt: () => scala.Boolean,
     items: js.Array[_],
     menu: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.Menu | scala.Unit,
-    openOptions: js.Function0[scala.Unit],
+    openOptions: () => scala.Unit,
     options: js.Object,
-    reset: js.Function0[scala.Unit],
-    setItems: js.Function1[js.Array[_], scala.Unit],
-    setValue: js.Function1[js.Any, js.Any],
-    show: js.Function0[scala.Unit],
-    update: js.Function0[scala.Unit]
+    reset: () => scala.Unit,
+    setItems: js.Array[_] => scala.Unit,
+    setValue: js.Any => js.Any,
+    show: () => scala.Unit,
+    update: () => scala.Unit
   ): SelectUI = {
-    val __obj = js.Dynamic.literal(build = build, buildState = buildState, closeOptions = closeOptions, destroy = destroy, element = element, eventManager = eventManager, focus = focus, getValue = getValue, hide = hide, hot = hot, isBuilt = isBuilt, items = items, menu = menu.asInstanceOf[js.Any], openOptions = openOptions, options = options, reset = reset, setItems = setItems, setValue = setValue, show = show, update = update)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), buildState = buildState, closeOptions = js.Any.fromFunction0(closeOptions), destroy = js.Any.fromFunction0(destroy), element = js.Any.fromFunction0(element), eventManager = eventManager, focus = js.Any.fromFunction0(focus), getValue = js.Any.fromFunction0(getValue), hide = js.Any.fromFunction0(hide), hot = hot, isBuilt = js.Any.fromFunction0(isBuilt), items = items, menu = menu.asInstanceOf[js.Any], openOptions = js.Any.fromFunction0(openOptions), options = options, reset = js.Any.fromFunction0(reset), setItems = js.Any.fromFunction1(setItems), setValue = js.Any.fromFunction1(setValue), show = js.Any.fromFunction0(show), update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[SelectUI]
   }

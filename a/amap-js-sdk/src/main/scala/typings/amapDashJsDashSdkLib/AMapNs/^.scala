@@ -12,31 +12,19 @@ object ^ extends js.Object {
     * 坐标转换
     */
   def convertFrom(
-    lnglat: amapDashJsDashSdkLib.AMapNs.LngLat,
+    lnglat: LngLat,
     `type`: java.lang.String,
-    result: js.Function2[
-      /* status */ java.lang.String, 
-      /* result */ amapDashJsDashSdkLib.AMapNs.ConvertorResult, 
-      scala.Unit
-    ]
+    result: js.Function2[/* status */ java.lang.String, /* result */ ConvertorResult, scala.Unit]
   ): scala.Unit = js.native
   def convertFrom(
-    lnglat: js.Array[amapDashJsDashSdkLib.AMapNs.LngLat],
+    lnglat: js.Array[LngLat],
     `type`: java.lang.String,
-    result: js.Function2[
-      /* status */ java.lang.String, 
-      /* result */ amapDashJsDashSdkLib.AMapNs.ConvertorResult, 
-      scala.Unit
-    ]
+    result: js.Function2[/* status */ java.lang.String, /* result */ ConvertorResult, scala.Unit]
   ): scala.Unit = js.native
   def convertFrom(
     lnglat: js.Tuple2[scala.Double, scala.Double],
     `type`: java.lang.String,
-    result: js.Function2[
-      /* status */ java.lang.String, 
-      /* result */ amapDashJsDashSdkLib.AMapNs.ConvertorResult, 
-      scala.Unit
-    ]
+    result: js.Function2[/* status */ java.lang.String, /* result */ ConvertorResult, scala.Unit]
   ): scala.Unit = js.native
   /**
     * 加载插件

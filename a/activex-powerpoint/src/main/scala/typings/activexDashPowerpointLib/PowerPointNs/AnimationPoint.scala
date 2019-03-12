@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerPoint.AnimationPoint")
 @js.native
 class AnimationPoint protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashPowerpointLib.PowerPointNs.Application = js.native
   var Formula: java.lang.String = js.native
   val Parent: js.Any = js.native
   var `PowerPoint.AnimationPoint_typekey`: AnimationPoint = js.native

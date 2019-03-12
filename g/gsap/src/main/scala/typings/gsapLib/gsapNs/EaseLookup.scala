@@ -11,8 +11,8 @@ trait EaseLookup extends js.Object {
 
 object EaseLookup {
   @scala.inline
-  def apply(find: js.Function1[java.lang.String, Ease]): EaseLookup = {
-    val __obj = js.Dynamic.literal(find = find)
+  def apply(find: java.lang.String => Ease): EaseLookup = {
+    val __obj = js.Dynamic.literal(find = js.Any.fromFunction1(find))
   
     __obj.asInstanceOf[EaseLookup]
   }

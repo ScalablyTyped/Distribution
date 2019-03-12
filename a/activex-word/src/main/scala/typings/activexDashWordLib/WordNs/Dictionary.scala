@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.Dictionary")
 @js.native
 class Dictionary protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
   var LanguageID: WdLanguageID = js.native
   var LanguageSpecific: scala.Boolean = js.native

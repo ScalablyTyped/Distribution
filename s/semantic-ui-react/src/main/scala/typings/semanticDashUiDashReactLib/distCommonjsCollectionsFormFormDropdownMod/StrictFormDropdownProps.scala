@@ -83,7 +83,7 @@ import scala.scalajs.js.annotation._
     */
   var onAddItem: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement], 
       /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps, 
       scala.Unit
     ]
@@ -96,7 +96,7 @@ import scala.scalajs.js.annotation._
     */
   var onBlur: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement], 
       /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps, 
       scala.Unit
     ]
@@ -109,7 +109,7 @@ import scala.scalajs.js.annotation._
     */
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
       /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps, 
       scala.Unit
     ]
@@ -122,7 +122,7 @@ import scala.scalajs.js.annotation._
     */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement], 
       /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps, 
       scala.Unit
     ]
@@ -135,7 +135,7 @@ import scala.scalajs.js.annotation._
     */
   var onClose: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
       /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps, 
       scala.Unit
     ]
@@ -148,7 +148,7 @@ import scala.scalajs.js.annotation._
     */
   var onFocus: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
       /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps, 
       scala.Unit
     ]
@@ -161,7 +161,7 @@ import scala.scalajs.js.annotation._
     */
   var onLabelClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps, 
       scala.Unit
     ]
@@ -174,7 +174,7 @@ import scala.scalajs.js.annotation._
     */
   var onMouseDown: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps, 
       scala.Unit
     ]
@@ -187,7 +187,7 @@ import scala.scalajs.js.annotation._
     */
   var onOpen: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
       /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps, 
       scala.Unit
     ]
@@ -200,7 +200,7 @@ import scala.scalajs.js.annotation._
     */
   var onSearchChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
       /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownOnSearchChangeData, 
       scala.Unit
     ]
@@ -327,56 +327,16 @@ object StrictFormDropdownProps {
     minCharacters: scala.Int | scala.Double = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     noResultsMessage: reactLib.reactMod.ReactNs.ReactNode = null,
-    onAddItem: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps, 
-      scala.Unit
-    ] = null,
-    onBlur: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps, 
-      scala.Unit
-    ] = null,
-    onChange: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps, 
-      scala.Unit
-    ] = null,
-    onClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps, 
-      scala.Unit
-    ] = null,
-    onClose: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps, 
-      scala.Unit
-    ] = null,
-    onFocus: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps, 
-      scala.Unit
-    ] = null,
-    onLabelClick: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps, 
-      scala.Unit
-    ] = null,
-    onMouseDown: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps, 
-      scala.Unit
-    ] = null,
-    onOpen: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps, 
-      scala.Unit
-    ] = null,
-    onSearchChange: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
-      /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownOnSearchChangeData, 
-      scala.Unit
-    ] = null,
+    onAddItem: (/* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement], /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps) => scala.Unit = null,
+    onBlur: (/* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement], /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps) => scala.Unit = null,
+    onChange: (/* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps) => scala.Unit = null,
+    onClick: (/* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement], /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps) => scala.Unit = null,
+    onClose: (/* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps) => scala.Unit = null,
+    onFocus: (/* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps) => scala.Unit = null,
+    onLabelClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps) => scala.Unit = null,
+    onMouseDown: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps) => scala.Unit = null,
+    onOpen: (/* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps) => scala.Unit = null,
+    onSearchChange: (/* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownOnSearchChangeData) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     openOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
     options: js.Array[
@@ -384,12 +344,7 @@ object StrictFormDropdownProps {
     ] = null,
     placeholder: java.lang.String = null,
     pointing: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`top left`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`top right`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`bottom left`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`bottom right`) = null,
-    renderLabel: js.Function3[
-      /* item */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownItemMod.DropdownItemProps, 
-      /* index */ scala.Double, 
-      /* defaultLabelProps */ semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps, 
-      _
-    ] = null,
+    renderLabel: (/* item */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownItemMod.DropdownItemProps, /* index */ scala.Double, /* defaultLabelProps */ semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps) => _ = null,
     required: js.Any = null,
     scrolling: js.UndefOr[scala.Boolean] = js.undefined,
     search: scala.Boolean | (js.Function2[
@@ -454,22 +409,22 @@ object StrictFormDropdownProps {
     if (minCharacters != null) __obj.updateDynamic("minCharacters")(minCharacters.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (noResultsMessage != null) __obj.updateDynamic("noResultsMessage")(noResultsMessage.asInstanceOf[js.Any])
-    if (onAddItem != null) __obj.updateDynamic("onAddItem")(onAddItem)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onLabelClick != null) __obj.updateDynamic("onLabelClick")(onLabelClick)
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
-    if (onSearchChange != null) __obj.updateDynamic("onSearchChange")(onSearchChange)
+    if (onAddItem != null) __obj.updateDynamic("onAddItem")(js.Any.fromFunction2(onAddItem))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2(onBlur))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2(onClose))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction2(onFocus))
+    if (onLabelClick != null) __obj.updateDynamic("onLabelClick")(js.Any.fromFunction2(onLabelClick))
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction2(onMouseDown))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction2(onOpen))
+    if (onSearchChange != null) __obj.updateDynamic("onSearchChange")(js.Any.fromFunction2(onSearchChange))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (!js.isUndefined(openOnFocus)) __obj.updateDynamic("openOnFocus")(openOnFocus)
     if (options != null) __obj.updateDynamic("options")(options)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (pointing != null) __obj.updateDynamic("pointing")(pointing.asInstanceOf[js.Any])
-    if (renderLabel != null) __obj.updateDynamic("renderLabel")(renderLabel)
+    if (renderLabel != null) __obj.updateDynamic("renderLabel")(js.Any.fromFunction3(renderLabel))
     if (required != null) __obj.updateDynamic("required")(required)
     if (!js.isUndefined(scrolling)) __obj.updateDynamic("scrolling")(scrolling)
     if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])

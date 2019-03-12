@@ -14,10 +14,10 @@ trait ObservableLike[T] extends js.Object {
 object ObservableLike {
   @scala.inline
   def apply[T](
-    observable: js.Function0[zenDashObservableLib.zenDashObservableMod.Observable[T] | ObservableLike[T]],
+    observable: () => zenDashObservableLib.zenDashObservableMod.Observable[T] | ObservableLike[T],
     subscribe: Subscriber[T] = null
   ): ObservableLike[T] = {
-    val __obj = js.Dynamic.literal(observable = observable)
+    val __obj = js.Dynamic.literal(observable = js.Any.fromFunction0(observable))
     if (subscribe != null) __obj.updateDynamic("subscribe")(subscribe)
     __obj.asInstanceOf[ObservableLike[T]]
   }

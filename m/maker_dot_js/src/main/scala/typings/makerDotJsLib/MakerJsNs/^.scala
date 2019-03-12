@@ -151,7 +151,7 @@ object ^ extends js.Object {
     * @param routeKeyOrRoute String of a flattened route, or a string array of route segments.
     * @returns Model or Path object within the modelContext tree.
     */
-  def travel(modelContext: makerDotJsLib.MakerJsNs.IModel, routeKeyOrRoute: java.lang.String): makerDotJsLib.Anon_Offset = js.native
-  def travel(modelContext: makerDotJsLib.MakerJsNs.IModel, routeKeyOrRoute: js.Array[java.lang.String]): makerDotJsLib.Anon_Offset = js.native
+  def travel(modelContext: IModel, routeKeyOrRoute: java.lang.String): makerDotJsLib.Anon_Offset = js.native
+  def travel(modelContext: IModel, routeKeyOrRoute: js.Array[java.lang.String]): makerDotJsLib.Anon_Offset = js.native
 }
 

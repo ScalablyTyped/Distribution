@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("test-console", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val stderr: testDashConsoleLib.testDashConsoleMod.TestStream = js.native
-  val stdout: testDashConsoleLib.testDashConsoleMod.TestStream = js.native
+  val stderr: TestStream = js.native
+  val stdout: TestStream = js.native
 }
 

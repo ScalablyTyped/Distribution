@@ -27,13 +27,13 @@ object XTextFieldsSupplier {
   def apply(
     TextFieldMasters: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
     TextFields: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess,
-    acquire: js.Function0[scala.Unit],
-    getTextFieldMasters: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
-    getTextFields: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getTextFieldMasters: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    getTextFields: () => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XTextFieldsSupplier = {
-    val __obj = js.Dynamic.literal(TextFieldMasters = TextFieldMasters, TextFields = TextFields, acquire = acquire, getTextFieldMasters = getTextFieldMasters, getTextFields = getTextFields, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(TextFieldMasters = TextFieldMasters, TextFields = TextFields, acquire = js.Any.fromFunction0(acquire), getTextFieldMasters = js.Any.fromFunction0(getTextFieldMasters), getTextFields = js.Any.fromFunction0(getTextFields), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XTextFieldsSupplier]
   }

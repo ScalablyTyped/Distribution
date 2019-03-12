@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UnauthorizedError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   var code: ErrorCode
   var inner: expressDashJwtLib.Anon_Message
-  var message: java.lang.String
-  var name: expressDashJwtLib.expressDashJwtLibStrings.UnauthorizedError
+  @JSName("name")
+  var name_UnauthorizedError: expressDashJwtLib.expressDashJwtLibStrings.UnauthorizedError
   var status: scala.Double
 }
 

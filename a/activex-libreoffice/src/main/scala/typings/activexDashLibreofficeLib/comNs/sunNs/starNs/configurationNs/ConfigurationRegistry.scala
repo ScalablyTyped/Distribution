@@ -14,22 +14,22 @@ object ConfigurationRegistry {
   def apply(
     RootKey: activexDashLibreofficeLib.comNs.sunNs.starNs.registryNs.XRegistryKey,
     URL: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    addFlushListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XFlushListener, scala.Unit],
-    close: js.Function0[scala.Unit],
-    destroy: js.Function0[scala.Unit],
-    flush: js.Function0[scala.Unit],
-    getRootKey: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.registryNs.XRegistryKey],
-    getURL: js.Function0[java.lang.String],
-    isReadOnly: js.Function0[scala.Boolean],
-    isValid: js.Function0[scala.Boolean],
-    mergeKey: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    open: js.Function3[java.lang.String, scala.Boolean, scala.Boolean, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeFlushListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XFlushListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addFlushListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XFlushListener => scala.Unit,
+    close: () => scala.Unit,
+    destroy: () => scala.Unit,
+    flush: () => scala.Unit,
+    getRootKey: () => activexDashLibreofficeLib.comNs.sunNs.starNs.registryNs.XRegistryKey,
+    getURL: () => java.lang.String,
+    isReadOnly: () => scala.Boolean,
+    isValid: () => scala.Boolean,
+    mergeKey: (java.lang.String, java.lang.String) => scala.Unit,
+    open: (java.lang.String, scala.Boolean, scala.Boolean) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeFlushListener: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XFlushListener => scala.Unit
   ): ConfigurationRegistry = {
-    val __obj = js.Dynamic.literal(RootKey = RootKey, URL = URL, acquire = acquire, addFlushListener = addFlushListener, close = close, destroy = destroy, flush = flush, getRootKey = getRootKey, getURL = getURL, isReadOnly = isReadOnly, isValid = isValid, mergeKey = mergeKey, open = open, queryInterface = queryInterface, release = release, removeFlushListener = removeFlushListener)
+    val __obj = js.Dynamic.literal(RootKey = RootKey, URL = URL, acquire = js.Any.fromFunction0(acquire), addFlushListener = js.Any.fromFunction1(addFlushListener), close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), flush = js.Any.fromFunction0(flush), getRootKey = js.Any.fromFunction0(getRootKey), getURL = js.Any.fromFunction0(getURL), isReadOnly = js.Any.fromFunction0(isReadOnly), isValid = js.Any.fromFunction0(isValid), mergeKey = js.Any.fromFunction2(mergeKey), open = js.Any.fromFunction3(open), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeFlushListener = js.Any.fromFunction1(removeFlushListener))
   
     __obj.asInstanceOf[ConfigurationRegistry]
   }

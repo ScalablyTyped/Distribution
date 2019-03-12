@@ -21,7 +21,7 @@ object FlatColorPickerOptions {
   def apply(
     autoupdate: js.UndefOr[scala.Boolean] = js.undefined,
     buttons: js.UndefOr[scala.Boolean] = js.undefined,
-    change: js.Function1[/* e */ FlatColorPickerChangeEvent, scala.Unit] = null,
+    change: /* e */ FlatColorPickerChangeEvent => scala.Unit = null,
     messages: FlatColorPickerMessages = null,
     name: java.lang.String = null,
     opacity: js.UndefOr[scala.Boolean] = js.undefined,
@@ -31,7 +31,7 @@ object FlatColorPickerOptions {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoupdate)) __obj.updateDynamic("autoupdate")(autoupdate)
     if (!js.isUndefined(buttons)) __obj.updateDynamic("buttons")(buttons)
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity)

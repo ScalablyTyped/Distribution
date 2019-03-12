@@ -9,7 +9,7 @@ trait Anon_Fields extends js.Object {
   var fields: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var index: js.UndefOr[java.lang.String] = js.undefined
   var message: js.UndefOr[java.lang.String] = js.undefined
-  var parent: js.UndefOr[nodeLib.Error] = js.undefined
+  var parent: js.UndefOr[stdLib.Error] = js.undefined
   var table: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -19,7 +19,7 @@ object Anon_Fields {
     fields: js.Array[java.lang.String] = null,
     index: java.lang.String = null,
     message: java.lang.String = null,
-    parent: nodeLib.Error = null,
+    parent: stdLib.Error = null,
     table: java.lang.String = null
   ): Anon_Fields = {
     val __obj = js.Dynamic.literal()

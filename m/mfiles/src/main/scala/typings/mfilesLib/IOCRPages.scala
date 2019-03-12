@@ -16,13 +16,13 @@ trait IOCRPages extends js.Object {
 object IOCRPages {
   @scala.inline
   def apply(
-    Add: js.Function2[scala.Double, IOCRPage, scala.Unit],
-    Clone: js.Function0[IOCRPages],
+    Add: (scala.Double, IOCRPage) => scala.Unit,
+    Clone: () => IOCRPages,
     Count: scala.Double,
-    Item: js.Function1[scala.Double, IOCRPage],
-    Remove: js.Function1[scala.Double, scala.Unit]
+    Item: scala.Double => IOCRPage,
+    Remove: scala.Double => scala.Unit
   ): IOCRPages = {
-    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, Item = Item, Remove = Remove)
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IOCRPages]
   }

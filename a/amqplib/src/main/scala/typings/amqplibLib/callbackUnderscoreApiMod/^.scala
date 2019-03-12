@@ -9,29 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val credentials: amqplibLib.Anon_External = js.native
-  def connect(
-    callback: js.Function2[
-      /* err */ js.Any, 
-      /* connection */ amqplibLib.callbackUnderscoreApiMod.Connection, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def connect(callback: js.Function2[/* err */ js.Any, /* connection */ Connection, scala.Unit]): scala.Unit = js.native
   def connect(
     url: java.lang.String,
-    callback: js.Function2[
-      /* err */ js.Any, 
-      /* connection */ amqplibLib.callbackUnderscoreApiMod.Connection, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* err */ js.Any, /* connection */ Connection, scala.Unit]
   ): scala.Unit = js.native
   def connect(
     url: java.lang.String,
     socketOptions: js.Any,
-    callback: js.Function2[
-      /* err */ js.Any, 
-      /* connection */ amqplibLib.callbackUnderscoreApiMod.Connection, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* err */ js.Any, /* connection */ Connection, scala.Unit]
   ): scala.Unit = js.native
 }
 

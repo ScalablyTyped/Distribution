@@ -9,59 +9,38 @@ trait OutputFileSystem extends js.Object {
   def join(paths: java.lang.String*): java.lang.String
   def mkdir(
     path: java.lang.String,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit
   def mkdirp(
     path: java.lang.String,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit
   def rmdir(
     path: java.lang.String,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit
   def unlink(
     path: java.lang.String,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit
   def writeFile(
     path: java.lang.String,
     data: js.Any,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit
 }
 
 object OutputFileSystem {
   @scala.inline
   def apply(
-    join: js.Function1[/* repeated */ java.lang.String, java.lang.String],
-    mkdir: js.Function2[
-      java.lang.String, 
-      js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
-      scala.Unit
-    ],
-    mkdirp: js.Function2[
-      java.lang.String, 
-      js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
-      scala.Unit
-    ],
-    rmdir: js.Function2[
-      java.lang.String, 
-      js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
-      scala.Unit
-    ],
-    unlink: js.Function2[
-      java.lang.String, 
-      js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
-      scala.Unit
-    ],
-    writeFile: js.Function3[
-      java.lang.String, 
-      js.Any, 
-      js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
-      scala.Unit
-    ]
+    join: /* repeated */ java.lang.String => java.lang.String,
+    mkdir: (java.lang.String, js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]) => scala.Unit,
+    mkdirp: (java.lang.String, js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]) => scala.Unit,
+    rmdir: (java.lang.String, js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]) => scala.Unit,
+    unlink: (java.lang.String, js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]) => scala.Unit,
+    writeFile: (java.lang.String, js.Any, js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]) => scala.Unit
   ): OutputFileSystem = {
-    val __obj = js.Dynamic.literal(join = join, mkdir = mkdir, mkdirp = mkdirp, rmdir = rmdir, unlink = unlink, writeFile = writeFile)
+    val __obj = js.Dynamic.literal(join = js.Any.fromFunction1(join), mkdir = js.Any.fromFunction2(mkdir), mkdirp = js.Any.fromFunction2(mkdirp), rmdir = js.Any.fromFunction2(rmdir), unlink = js.Any.fromFunction2(unlink), writeFile = js.Any.fromFunction3(writeFile))
   
     __obj.asInstanceOf[OutputFileSystem]
   }

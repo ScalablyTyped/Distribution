@@ -12,8 +12,8 @@ trait Increment
 
 object Increment {
   @scala.inline
-  def apply(amount: scala.Double, toJSON: js.Function0[js.Any]): Increment = {
-    val __obj = js.Dynamic.literal(amount = amount, toJSON = toJSON)
+  def apply(amount: scala.Double, toJSON: () => js.Any): Increment = {
+    val __obj = js.Dynamic.literal(amount = amount, toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[Increment]
   }

@@ -14,11 +14,11 @@ trait JQuery extends js.Object {
 object JQuery {
   @scala.inline
   def apply(
-    data_gridstack: js.Function1[gridstackLib.gridstackLibStrings.gridstack, GridStack],
-    gridstack: js.Function1[IGridstackOptions, JQuery]
+    data_gridstack: gridstackLib.gridstackLibStrings.gridstack => GridStack,
+    gridstack: IGridstackOptions => JQuery
   ): JQuery = {
-    val __obj = js.Dynamic.literal(gridstack = gridstack)
-    __obj.updateDynamic("data")(data_gridstack)
+    val __obj = js.Dynamic.literal(gridstack = js.Any.fromFunction1(gridstack))
+    __obj.updateDynamic("data")(js.Any.fromFunction1(data_gridstack))
     __obj.asInstanceOf[JQuery]
   }
 }

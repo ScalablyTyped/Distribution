@@ -18,14 +18,14 @@ object TabOptions {
   @scala.inline
   def apply(
     active_class: java.lang.String = null,
-    callback: js.Function0[_] = null,
+    callback: () => _ = null,
     deep_linking: js.UndefOr[scala.Boolean] = js.undefined,
     is_hover: js.UndefOr[scala.Boolean] = js.undefined,
     scroll_to_content: js.UndefOr[scala.Boolean] = js.undefined
   ): TabOptions = {
     val __obj = js.Dynamic.literal()
     if (active_class != null) __obj.updateDynamic("active_class")(active_class)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (!js.isUndefined(deep_linking)) __obj.updateDynamic("deep_linking")(deep_linking)
     if (!js.isUndefined(is_hover)) __obj.updateDynamic("is_hover")(is_hover)
     if (!js.isUndefined(scroll_to_content)) __obj.updateDynamic("scroll_to_content")(scroll_to_content)

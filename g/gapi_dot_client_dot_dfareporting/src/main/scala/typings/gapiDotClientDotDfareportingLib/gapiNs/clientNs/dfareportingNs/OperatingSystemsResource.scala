@@ -15,16 +15,10 @@ trait OperatingSystemsResource extends js.Object {
 object OperatingSystemsResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltDartId, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OperatingSystem]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[OperatingSystemsListResponse]
-    ]
+    get: gapiDotClientDotDfareportingLib.Anon_AltDartId => gapiDotClientLib.gapiNs.clientNs.Request[OperatingSystem],
+    list: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[OperatingSystemsListResponse]
   ): OperatingSystemsResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[OperatingSystemsResource]
   }

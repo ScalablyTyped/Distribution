@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Database protected () extends js.Object {
   val CollatingOrder: scala.Double = js.native
   var Connect: java.lang.String = js.native
-  val Connection: Connection = js.native
+  val Connection: activexDashDaoLib.DAONs.Connection = js.native
   @JSName("Containers")
   val Containers_Original: Containers = js.native
   var `DAO.Database_typekey`: Database = js.native

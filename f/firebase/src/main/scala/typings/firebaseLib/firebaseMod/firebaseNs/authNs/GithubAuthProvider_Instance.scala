@@ -26,17 +26,17 @@ trait GithubAuthProvider_Instance extends AuthProvider {
     *     in the OAuth request.
     * @return {!firebase.auth.AuthProvider} The provider instance itself.
     */
-  def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): AuthProvider
+  def setCustomParameters(customOAuthParameters: js.Object): AuthProvider
 }
 
 object GithubAuthProvider_Instance {
   @scala.inline
   def apply(
-    addScope: js.Function1[java.lang.String, AuthProvider],
+    addScope: java.lang.String => AuthProvider,
     providerId: java.lang.String,
-    setCustomParameters: js.Function1[coreDashJsLib.Object, AuthProvider]
+    setCustomParameters: js.Object => AuthProvider
   ): GithubAuthProvider_Instance = {
-    val __obj = js.Dynamic.literal(addScope = addScope, providerId = providerId, setCustomParameters = setCustomParameters)
+    val __obj = js.Dynamic.literal(addScope = js.Any.fromFunction1(addScope), providerId = providerId, setCustomParameters = js.Any.fromFunction1(setCustomParameters))
   
     __obj.asInstanceOf[GithubAuthProvider_Instance]
   }

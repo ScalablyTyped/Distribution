@@ -14,18 +14,10 @@ object Extend {
   @scala.inline
   def apply[F](
     URI: F,
-    extend: js.Function2[
-      fpDashTsLib.libHKTMod.HKT[F, js.Any], 
-      js.Function1[/* fa */ fpDashTsLib.libHKTMod.HKT[F, js.Any], js.Any], 
-      fpDashTsLib.libHKTMod.HKT[F, js.Any]
-    ],
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.HKT[F, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.HKT[F, js.Any]
-    ]
+    extend: (fpDashTsLib.libHKTMod.HKT[F, js.Any], js.Function1[/* fa */ fpDashTsLib.libHKTMod.HKT[F, js.Any], js.Any]) => fpDashTsLib.libHKTMod.HKT[F, js.Any],
+    map: (fpDashTsLib.libHKTMod.HKT[F, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.HKT[F, js.Any]
   ): Extend[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], extend = extend, map = map)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], extend = js.Any.fromFunction2(extend), map = js.Any.fromFunction2(map))
   
     __obj.asInstanceOf[Extend[F]]
   }

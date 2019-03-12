@@ -13,10 +13,10 @@ trait IHtmlFormatHelperStatics extends js.Object {
 object IHtmlFormatHelperStatics {
   @scala.inline
   def apply(
-    createHtmlFormat: js.Function1[java.lang.String, java.lang.String],
-    getStaticFragment: js.Function1[java.lang.String, java.lang.String]
+    createHtmlFormat: java.lang.String => java.lang.String,
+    getStaticFragment: java.lang.String => java.lang.String
   ): IHtmlFormatHelperStatics = {
-    val __obj = js.Dynamic.literal(createHtmlFormat = createHtmlFormat, getStaticFragment = getStaticFragment)
+    val __obj = js.Dynamic.literal(createHtmlFormat = js.Any.fromFunction1(createHtmlFormat), getStaticFragment = js.Any.fromFunction1(getStaticFragment))
   
     __obj.asInstanceOf[IHtmlFormatHelperStatics]
   }

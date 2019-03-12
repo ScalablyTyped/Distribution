@@ -5,16 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Object extends js.Object {
-  var should: chaiLib.ChaiNs.Assertion
-}
-
-object Object {
-  @scala.inline
-  def apply(should: chaiLib.ChaiNs.Assertion): Object = {
-    val __obj = js.Dynamic.literal(should = should)
-  
-    __obj.asInstanceOf[Object]
-  }
+  @JSName("should")
+  var should_Original: chaiLib.ChaiNs.Assertion = js.native
+  def should(`type`: java.lang.String): chaiLib.ChaiNs.Assertion = js.native
+  def should(`type`: java.lang.String, message: java.lang.String): chaiLib.ChaiNs.Assertion = js.native
 }
 

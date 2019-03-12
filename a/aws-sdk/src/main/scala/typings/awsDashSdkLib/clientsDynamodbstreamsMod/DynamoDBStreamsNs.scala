@@ -73,7 +73,7 @@ object DynamoDBStreamsNs extends js.Object {
     /**
       * The Amazon Resource Name (ARN) for the stream.
       */
-    var StreamArn: StreamArn
+    var StreamArn: awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs.StreamArn
   }
   
   trait DescribeStreamOutput extends js.Object {
@@ -91,7 +91,7 @@ object DynamoDBStreamsNs extends js.Object {
     /**
       * A shard iterator that was retrieved from a previous GetShardIterator operation. This iterator can be used to access the stream records in this shard.
       */
-    var ShardIterator: ShardIterator
+    var ShardIterator: awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs.ShardIterator
   }
   
   trait GetRecordsOutput extends js.Object {
@@ -113,15 +113,15 @@ object DynamoDBStreamsNs extends js.Object {
     /**
       * The identifier of the shard. The iterator will be returned for this shard ID.
       */
-    var ShardId: ShardId
+    var ShardId: awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs.ShardId
     /**
       * Determines how the shard iterator is used to start reading stream records from the shard:    AT_SEQUENCE_NUMBER - Start reading exactly from the position denoted by a specific sequence number.    AFTER_SEQUENCE_NUMBER - Start reading right after the position denoted by a specific sequence number.    TRIM_HORIZON - Start reading at the last (untrimmed) stream record, which is the oldest record in the shard. In DynamoDB Streams, there is a 24 hour limit on data retention. Stream records whose age exceeds this limit are subject to removal (trimming) from the stream.    LATEST - Start reading just after the most recent stream record in the shard, so that you always read the most recent data in the shard.  
       */
-    var ShardIteratorType: ShardIteratorType
+    var ShardIteratorType: awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs.ShardIteratorType
     /**
       * The Amazon Resource Name (ARN) for the stream.
       */
-    var StreamArn: StreamArn
+    var StreamArn: awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs.StreamArn
   }
   
   trait GetShardIteratorOutput extends js.Object {
@@ -150,7 +150,7 @@ object DynamoDBStreamsNs extends js.Object {
     /**
       * The attribute data, consisting of the data type and the attribute value itself.
       */
-    var KeyType: KeyType
+    var KeyType: awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs.KeyType
   }
   
   trait ListStreamsInput extends js.Object {

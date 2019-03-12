@@ -12,8 +12,8 @@ trait ISignaturePromptInfoSelectable extends js.Object {
 
 object ISignaturePromptInfoSelectable {
   @scala.inline
-  def apply(Clone: js.Function0[ISignaturePromptInfoSelectable], PromptInfos: ISignaturePromptInfos): ISignaturePromptInfoSelectable = {
-    val __obj = js.Dynamic.literal(Clone = Clone, PromptInfos = PromptInfos)
+  def apply(Clone: () => ISignaturePromptInfoSelectable, PromptInfos: ISignaturePromptInfos): ISignaturePromptInfoSelectable = {
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), PromptInfos = PromptInfos)
   
     __obj.asInstanceOf[ISignaturePromptInfoSelectable]
   }

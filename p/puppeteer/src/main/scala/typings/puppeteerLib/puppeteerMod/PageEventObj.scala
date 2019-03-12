@@ -24,7 +24,7 @@ trait PageEventObj extends js.Object {
     */
   var domcontentloaded: scala.Nothing
   /** Emitted when the page crashes. */
-  var error: nodeLib.Error
+  var error: stdLib.Error
   /** Emitted when a frame is attached. */
   var frameattached: Frame
   /** Emitted when a frame is detached. */
@@ -39,7 +39,7 @@ trait PageEventObj extends js.Object {
     */
   var metrics: puppeteerLib.Anon_Metrics
   /** Emitted when an uncaught exception happens within the page. */
-  var pageerror: nodeLib.Error
+  var pageerror: stdLib.Error
   /** Emitted when the page opens a new tab or window. */
   var popup: Page
   /**
@@ -65,12 +65,12 @@ object PageEventObj {
     console: ConsoleMessage,
     dialog: Dialog,
     domcontentloaded: scala.Nothing,
-    error: nodeLib.Error,
+    error: stdLib.Error,
     frameattached: Frame,
     framedetached: Frame,
     framenavigated: Frame,
     metrics: puppeteerLib.Anon_Metrics,
-    pageerror: nodeLib.Error,
+    pageerror: stdLib.Error,
     popup: Page,
     request: Request,
     requestfailed: Request,

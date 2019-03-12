@@ -658,136 +658,55 @@ object Options {
   @scala.inline
   def apply(
     afterCellMetaReset: js.Function = null,
-    afterChange: js.Function2[/* changes */ js.Array[_], /* source */ java.lang.String, scala.Unit] = null,
-    afterColumnMove: js.Function2[/* oldIndex */ scala.Double, /* newIndex */ scala.Double, scala.Unit] = null,
-    afterColumnResize: js.Function2[/* col */ scala.Double, /* size */ scala.Double, scala.Unit] = null,
-    afterColumnSort: js.Function2[/* column */ scala.Double, /* order */ scala.Boolean, scala.Unit] = null,
-    afterCopyLimit: js.Function4[
-      /* selectedRowsCount */ scala.Double, 
-      /* selectedColsCount */ scala.Double, 
-      /* copyRowsLimit */ scala.Double, 
-      /* copyColsLimit */ scala.Double, 
-      scala.Unit
-    ] = null,
-    afterCreateCol: js.Function2[/* index */ scala.Double, /* amount */ scala.Double, scala.Unit] = null,
-    afterCreateRow: js.Function2[/* index */ scala.Double, /* amount */ scala.Double, scala.Unit] = null,
+    afterChange: (/* changes */ js.Array[_], /* source */ java.lang.String) => scala.Unit = null,
+    afterColumnMove: (/* oldIndex */ scala.Double, /* newIndex */ scala.Double) => scala.Unit = null,
+    afterColumnResize: (/* col */ scala.Double, /* size */ scala.Double) => scala.Unit = null,
+    afterColumnSort: (/* column */ scala.Double, /* order */ scala.Boolean) => scala.Unit = null,
+    afterCopyLimit: (/* selectedRowsCount */ scala.Double, /* selectedColsCount */ scala.Double, /* copyRowsLimit */ scala.Double, /* copyColsLimit */ scala.Double) => scala.Unit = null,
+    afterCreateCol: (/* index */ scala.Double, /* amount */ scala.Double) => scala.Unit = null,
+    afterCreateRow: (/* index */ scala.Double, /* amount */ scala.Double) => scala.Unit = null,
     afterDeselect: js.Function = null,
     afterDestroy: js.Function = null,
-    afterGetCellMeta: js.Function3[
-      /* row */ scala.Double, 
-      /* col */ scala.Double, 
-      /* cellProperties */ js.Object, 
-      scala.Unit
-    ] = null,
-    afterGetColHeader: js.Function2[/* col */ scala.Double, /* TH */ stdLib.HTMLTableHeaderCellElement, scala.Unit] = null,
-    afterGetColWidth: js.Function2[/* col */ scala.Double, /* response */ js.Object, scala.Unit] = null,
+    afterGetCellMeta: (/* row */ scala.Double, /* col */ scala.Double, /* cellProperties */ js.Object) => scala.Unit = null,
+    afterGetColHeader: (/* col */ scala.Double, /* TH */ stdLib.HTMLTableHeaderCellElement) => scala.Unit = null,
+    afterGetColWidth: (/* col */ scala.Double, /* response */ js.Object) => scala.Unit = null,
     afterInit: js.Function = null,
     afterLoadData: js.Function = null,
-    afterOnCellCornerMouseDown: js.Function1[/* event */ stdLib.MouseEvent, scala.Unit] = null,
-    afterOnCellMouseDown: js.Function3[
-      /* event */ stdLib.MouseEvent, 
-      /* coords */ CellPosition, 
-      /* TD */ stdLib.HTMLTableDataCellElement, 
-      scala.Unit
-    ] = null,
-    afterOnCellMouseOver: js.Function3[
-      /* event */ stdLib.MouseEvent, 
-      /* coords */ CellPosition, 
-      /* TD */ stdLib.HTMLTableDataCellElement, 
-      scala.Unit
-    ] = null,
-    afterRemoveCol: js.Function2[/* index */ scala.Double, /* amount */ scala.Double, scala.Unit] = null,
-    afterRemoveRow: js.Function2[/* index */ scala.Double, /* amount */ scala.Double, scala.Unit] = null,
-    afterRender: js.Function1[/* isForced */ scala.Boolean, scala.Unit] = null,
-    afterRenderer: js.Function6[
-      /* TD */ stdLib.HTMLTableDataCellElement, 
-      /* row */ scala.Double, 
-      /* col */ scala.Double, 
-      /* prop */ java.lang.String, 
-      /* value */ java.lang.String, 
-      /* cellProperties */ js.Object, 
-      scala.Unit
-    ] = null,
+    afterOnCellCornerMouseDown: /* event */ stdLib.MouseEvent => scala.Unit = null,
+    afterOnCellMouseDown: (/* event */ stdLib.MouseEvent, /* coords */ CellPosition, /* TD */ stdLib.HTMLTableDataCellElement) => scala.Unit = null,
+    afterOnCellMouseOver: (/* event */ stdLib.MouseEvent, /* coords */ CellPosition, /* TD */ stdLib.HTMLTableDataCellElement) => scala.Unit = null,
+    afterRemoveCol: (/* index */ scala.Double, /* amount */ scala.Double) => scala.Unit = null,
+    afterRemoveRow: (/* index */ scala.Double, /* amount */ scala.Double) => scala.Unit = null,
+    afterRender: /* isForced */ scala.Boolean => scala.Unit = null,
+    afterRenderer: (/* TD */ stdLib.HTMLTableDataCellElement, /* row */ scala.Double, /* col */ scala.Double, /* prop */ java.lang.String, /* value */ java.lang.String, /* cellProperties */ js.Object) => scala.Unit = null,
     afterScrollHorizontally: js.Function = null,
     afterScrollVertically: js.Function = null,
-    afterSelection: js.Function4[
-      /* r */ scala.Double, 
-      /* c */ scala.Double, 
-      /* r2 */ scala.Double, 
-      /* c2 */ scala.Double, 
-      scala.Unit
-    ] = null,
-    afterSelectionByProp: js.Function4[
-      /* r */ scala.Double, 
-      /* p */ java.lang.String, 
-      /* r2 */ scala.Double, 
-      /* p2 */ java.lang.String, 
-      scala.Unit
-    ] = null,
-    afterSelectionEnd: js.Function4[
-      /* r */ scala.Double, 
-      /* c */ scala.Double, 
-      /* r2 */ scala.Double, 
-      /* c2 */ scala.Double, 
-      scala.Unit
-    ] = null,
-    afterSelectionEndByProp: js.Function4[
-      /* r */ scala.Double, 
-      /* p */ java.lang.String, 
-      /* r2 */ scala.Double, 
-      /* p2 */ java.lang.String, 
-      scala.Unit
-    ] = null,
+    afterSelection: (/* r */ scala.Double, /* c */ scala.Double, /* r2 */ scala.Double, /* c2 */ scala.Double) => scala.Unit = null,
+    afterSelectionByProp: (/* r */ scala.Double, /* p */ java.lang.String, /* r2 */ scala.Double, /* p2 */ java.lang.String) => scala.Unit = null,
+    afterSelectionEnd: (/* r */ scala.Double, /* c */ scala.Double, /* r2 */ scala.Double, /* c2 */ scala.Double) => scala.Unit = null,
+    afterSelectionEndByProp: (/* r */ scala.Double, /* p */ java.lang.String, /* r2 */ scala.Double, /* p2 */ java.lang.String) => scala.Unit = null,
     afterSetCellMeta: js.Function = null,
     afterUpdateSettings: js.Function = null,
-    afterValidate: js.Function5[
-      /* isValid */ scala.Boolean, 
-      /* value */ js.Any, 
-      /* row */ scala.Double, 
-      /* prop */ java.lang.String, 
-      /* source */ java.lang.String, 
-      scala.Boolean
-    ] = null,
+    afterValidate: (/* isValid */ scala.Boolean, /* value */ js.Any, /* row */ scala.Double, /* prop */ java.lang.String, /* source */ java.lang.String) => scala.Boolean = null,
     autoColumnSize: scala.Boolean | js.Object = null,
     autoComplete: js.Array[_] = null,
     autoWrapCol: js.UndefOr[scala.Boolean] = js.undefined,
     autoWrapRow: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeAutofill: js.Function3[
-      /* start */ CellPosition, 
-      /* end */ CellPosition, 
-      /* data */ js.Array[js.Array[java.lang.String]], 
-      scala.Unit
-    ] = null,
-    beforeChange: js.Function2[/* changes */ js.Array[js.Array[_]], /* source */ java.lang.String, scala.Unit] = null,
+    beforeAutofill: (/* start */ CellPosition, /* end */ CellPosition, /* data */ js.Array[js.Array[java.lang.String]]) => scala.Unit = null,
+    beforeChange: (/* changes */ js.Array[js.Array[_]], /* source */ java.lang.String) => scala.Unit = null,
     beforeChangeRender: js.Function = null,
-    beforeColumnSort: js.Function2[/* column */ scala.Double, /* order */ scala.Boolean, scala.Unit] = null,
-    beforeGetCellMeta: js.Function3[
-      /* row */ scala.Double, 
-      /* col */ scala.Double, 
-      /* cellProperties */ js.Object, 
-      scala.Unit
-    ] = null,
+    beforeColumnSort: (/* column */ scala.Double, /* order */ scala.Boolean) => scala.Unit = null,
+    beforeGetCellMeta: (/* row */ scala.Double, /* col */ scala.Double, /* cellProperties */ js.Object) => scala.Unit = null,
     beforeInit: js.Function = null,
     beforeInitWalkontable: js.Function = null,
-    beforeKeyDown: js.Function1[/* event */ stdLib.KeyboardEvent, scala.Unit] = null,
-    beforeRemoveCol: js.Function2[/* index */ scala.Double, /* amount */ scala.Double, scala.Unit] = null,
-    beforeRemoveRow: js.Function2[/* index */ scala.Double, /* amount */ scala.Double, scala.Unit] = null,
-    beforeRender: js.Function1[/* isForced */ scala.Boolean, scala.Unit] = null,
-    beforeSet: js.Function1[/* v */ js.Object, scala.Unit] = null,
-    beforeSetRangeEnd: js.Function1[/* coords */ js.Array[_], scala.Unit] = null,
-    beforeValidate: js.Function4[
-      /* value */ js.Any, 
-      /* row */ scala.Double, 
-      /* prop */ java.lang.String, 
-      /* source */ java.lang.String, 
-      scala.Unit
-    ] = null,
-    cells: js.Function3[
-      /* row */ scala.Double, 
-      /* col */ scala.Double, 
-      /* prop */ java.lang.String, 
-      scala.Unit
-    ] = null,
+    beforeKeyDown: /* event */ stdLib.KeyboardEvent => scala.Unit = null,
+    beforeRemoveCol: (/* index */ scala.Double, /* amount */ scala.Double) => scala.Unit = null,
+    beforeRemoveRow: (/* index */ scala.Double, /* amount */ scala.Double) => scala.Unit = null,
+    beforeRender: /* isForced */ scala.Boolean => scala.Unit = null,
+    beforeSet: /* v */ js.Object => scala.Unit = null,
+    beforeSetRangeEnd: /* coords */ js.Array[_] => scala.Unit = null,
+    beforeValidate: (/* value */ js.Any, /* row */ scala.Double, /* prop */ java.lang.String, /* source */ java.lang.String) => scala.Unit = null,
+    cells: (/* row */ scala.Double, /* col */ scala.Double, /* prop */ java.lang.String) => scala.Unit = null,
     colHeaders: js.Any = null,
     colWidths: js.Any = null,
     columnSorting: js.UndefOr[scala.Boolean] = js.undefined,
@@ -809,8 +728,8 @@ object Options {
     fragmentSelection: js.UndefOr[scala.Boolean] = js.undefined,
     height: js.Any = null,
     invalidCellClassName: java.lang.String = null,
-    isEmptyCol: js.Function1[/* col */ scala.Double, scala.Boolean] = null,
-    isEmptyRow: js.Function1[/* row */ scala.Double, scala.Boolean] = null,
+    isEmptyCol: /* col */ scala.Double => scala.Boolean = null,
+    isEmptyRow: /* row */ scala.Double => scala.Boolean = null,
     manualColumnMove: js.Any = null,
     manualColumnResize: js.Any = null,
     manualRowMove: js.UndefOr[scala.Boolean] = js.undefined,
@@ -822,51 +741,21 @@ object Options {
     minRows: scala.Int | scala.Double = null,
     minSpareCols: scala.Int | scala.Double = null,
     minSpareRows: scala.Int | scala.Double = null,
-    modifyCol: js.Function1[/* col */ scala.Double, scala.Unit] = null,
-    modifyColWidth: js.Function2[/* width */ scala.Double, /* col */ scala.Double, scala.Unit] = null,
-    modifyRow: js.Function1[/* row */ scala.Double, scala.Unit] = null,
-    modifyRowHeight: js.Function2[/* height */ scala.Double, /* row */ scala.Double, scala.Unit] = null,
+    modifyCol: /* col */ scala.Double => scala.Unit = null,
+    modifyColWidth: (/* width */ scala.Double, /* col */ scala.Double) => scala.Unit = null,
+    modifyRow: /* row */ scala.Double => scala.Unit = null,
+    modifyRowHeight: (/* height */ scala.Double, /* row */ scala.Double) => scala.Unit = null,
     multiSelect: js.UndefOr[scala.Boolean] = js.undefined,
     noWordWrapClassName: java.lang.String = null,
     observeChanges: js.UndefOr[scala.Boolean] = js.undefined,
     observeDOMVisibility: js.UndefOr[scala.Boolean] = js.undefined,
-    onBeforeChange: js.Function2[/* changes */ js.Array[_], /* source */ java.lang.String, scala.Unit] = null,
-    onChange: js.Function2[/* changes */ js.Array[_], /* source */ java.lang.String, scala.Unit] = null,
-    onCopyLimit: js.Function4[
-      /* selectedRowsCount */ scala.Double, 
-      /* selectedColsCount */ scala.Double, 
-      /* copyRowsLimit */ scala.Double, 
-      /* copyColsLimit */ scala.Double, 
-      scala.Unit
-    ] = null,
-    onSelection: js.Function4[
-      /* r */ scala.Double, 
-      /* p */ scala.Double, 
-      /* r2 */ scala.Double, 
-      /* p2 */ scala.Double, 
-      scala.Unit
-    ] = null,
-    onSelectionByProp: js.Function4[
-      /* r */ scala.Double, 
-      /* p */ scala.Double, 
-      /* r2 */ scala.Double, 
-      /* p2 */ scala.Double, 
-      scala.Unit
-    ] = null,
-    onSelectionEnd: js.Function4[
-      /* r */ scala.Double, 
-      /* p */ scala.Double, 
-      /* r2 */ scala.Double, 
-      /* p2 */ scala.Double, 
-      scala.Unit
-    ] = null,
-    onSelectionEndByProp: js.Function4[
-      /* r */ scala.Double, 
-      /* p */ scala.Double, 
-      /* r2 */ scala.Double, 
-      /* p2 */ scala.Double, 
-      scala.Unit
-    ] = null,
+    onBeforeChange: (/* changes */ js.Array[_], /* source */ java.lang.String) => scala.Unit = null,
+    onChange: (/* changes */ js.Array[_], /* source */ java.lang.String) => scala.Unit = null,
+    onCopyLimit: (/* selectedRowsCount */ scala.Double, /* selectedColsCount */ scala.Double, /* copyRowsLimit */ scala.Double, /* copyColsLimit */ scala.Double) => scala.Unit = null,
+    onSelection: (/* r */ scala.Double, /* p */ scala.Double, /* r2 */ scala.Double, /* p2 */ scala.Double) => scala.Unit = null,
+    onSelectionByProp: (/* r */ scala.Double, /* p */ scala.Double, /* r2 */ scala.Double, /* p2 */ scala.Double) => scala.Unit = null,
+    onSelectionEnd: (/* r */ scala.Double, /* p */ scala.Double, /* r2 */ scala.Double, /* p2 */ scala.Double) => scala.Unit = null,
+    onSelectionEndByProp: (/* r */ scala.Double, /* p */ scala.Double, /* r2 */ scala.Double, /* p2 */ scala.Double) => scala.Unit = null,
     outsideClickDeselects: js.UndefOr[scala.Boolean] = js.undefined,
     pasteMode: java.lang.String = null,
     persistentState: js.UndefOr[scala.Boolean] = js.undefined,
@@ -885,55 +774,55 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (afterCellMetaReset != null) __obj.updateDynamic("afterCellMetaReset")(afterCellMetaReset)
-    if (afterChange != null) __obj.updateDynamic("afterChange")(afterChange)
-    if (afterColumnMove != null) __obj.updateDynamic("afterColumnMove")(afterColumnMove)
-    if (afterColumnResize != null) __obj.updateDynamic("afterColumnResize")(afterColumnResize)
-    if (afterColumnSort != null) __obj.updateDynamic("afterColumnSort")(afterColumnSort)
-    if (afterCopyLimit != null) __obj.updateDynamic("afterCopyLimit")(afterCopyLimit)
-    if (afterCreateCol != null) __obj.updateDynamic("afterCreateCol")(afterCreateCol)
-    if (afterCreateRow != null) __obj.updateDynamic("afterCreateRow")(afterCreateRow)
+    if (afterChange != null) __obj.updateDynamic("afterChange")(js.Any.fromFunction2(afterChange))
+    if (afterColumnMove != null) __obj.updateDynamic("afterColumnMove")(js.Any.fromFunction2(afterColumnMove))
+    if (afterColumnResize != null) __obj.updateDynamic("afterColumnResize")(js.Any.fromFunction2(afterColumnResize))
+    if (afterColumnSort != null) __obj.updateDynamic("afterColumnSort")(js.Any.fromFunction2(afterColumnSort))
+    if (afterCopyLimit != null) __obj.updateDynamic("afterCopyLimit")(js.Any.fromFunction4(afterCopyLimit))
+    if (afterCreateCol != null) __obj.updateDynamic("afterCreateCol")(js.Any.fromFunction2(afterCreateCol))
+    if (afterCreateRow != null) __obj.updateDynamic("afterCreateRow")(js.Any.fromFunction2(afterCreateRow))
     if (afterDeselect != null) __obj.updateDynamic("afterDeselect")(afterDeselect)
     if (afterDestroy != null) __obj.updateDynamic("afterDestroy")(afterDestroy)
-    if (afterGetCellMeta != null) __obj.updateDynamic("afterGetCellMeta")(afterGetCellMeta)
-    if (afterGetColHeader != null) __obj.updateDynamic("afterGetColHeader")(afterGetColHeader)
-    if (afterGetColWidth != null) __obj.updateDynamic("afterGetColWidth")(afterGetColWidth)
+    if (afterGetCellMeta != null) __obj.updateDynamic("afterGetCellMeta")(js.Any.fromFunction3(afterGetCellMeta))
+    if (afterGetColHeader != null) __obj.updateDynamic("afterGetColHeader")(js.Any.fromFunction2(afterGetColHeader))
+    if (afterGetColWidth != null) __obj.updateDynamic("afterGetColWidth")(js.Any.fromFunction2(afterGetColWidth))
     if (afterInit != null) __obj.updateDynamic("afterInit")(afterInit)
     if (afterLoadData != null) __obj.updateDynamic("afterLoadData")(afterLoadData)
-    if (afterOnCellCornerMouseDown != null) __obj.updateDynamic("afterOnCellCornerMouseDown")(afterOnCellCornerMouseDown)
-    if (afterOnCellMouseDown != null) __obj.updateDynamic("afterOnCellMouseDown")(afterOnCellMouseDown)
-    if (afterOnCellMouseOver != null) __obj.updateDynamic("afterOnCellMouseOver")(afterOnCellMouseOver)
-    if (afterRemoveCol != null) __obj.updateDynamic("afterRemoveCol")(afterRemoveCol)
-    if (afterRemoveRow != null) __obj.updateDynamic("afterRemoveRow")(afterRemoveRow)
-    if (afterRender != null) __obj.updateDynamic("afterRender")(afterRender)
-    if (afterRenderer != null) __obj.updateDynamic("afterRenderer")(afterRenderer)
+    if (afterOnCellCornerMouseDown != null) __obj.updateDynamic("afterOnCellCornerMouseDown")(js.Any.fromFunction1(afterOnCellCornerMouseDown))
+    if (afterOnCellMouseDown != null) __obj.updateDynamic("afterOnCellMouseDown")(js.Any.fromFunction3(afterOnCellMouseDown))
+    if (afterOnCellMouseOver != null) __obj.updateDynamic("afterOnCellMouseOver")(js.Any.fromFunction3(afterOnCellMouseOver))
+    if (afterRemoveCol != null) __obj.updateDynamic("afterRemoveCol")(js.Any.fromFunction2(afterRemoveCol))
+    if (afterRemoveRow != null) __obj.updateDynamic("afterRemoveRow")(js.Any.fromFunction2(afterRemoveRow))
+    if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction1(afterRender))
+    if (afterRenderer != null) __obj.updateDynamic("afterRenderer")(js.Any.fromFunction6(afterRenderer))
     if (afterScrollHorizontally != null) __obj.updateDynamic("afterScrollHorizontally")(afterScrollHorizontally)
     if (afterScrollVertically != null) __obj.updateDynamic("afterScrollVertically")(afterScrollVertically)
-    if (afterSelection != null) __obj.updateDynamic("afterSelection")(afterSelection)
-    if (afterSelectionByProp != null) __obj.updateDynamic("afterSelectionByProp")(afterSelectionByProp)
-    if (afterSelectionEnd != null) __obj.updateDynamic("afterSelectionEnd")(afterSelectionEnd)
-    if (afterSelectionEndByProp != null) __obj.updateDynamic("afterSelectionEndByProp")(afterSelectionEndByProp)
+    if (afterSelection != null) __obj.updateDynamic("afterSelection")(js.Any.fromFunction4(afterSelection))
+    if (afterSelectionByProp != null) __obj.updateDynamic("afterSelectionByProp")(js.Any.fromFunction4(afterSelectionByProp))
+    if (afterSelectionEnd != null) __obj.updateDynamic("afterSelectionEnd")(js.Any.fromFunction4(afterSelectionEnd))
+    if (afterSelectionEndByProp != null) __obj.updateDynamic("afterSelectionEndByProp")(js.Any.fromFunction4(afterSelectionEndByProp))
     if (afterSetCellMeta != null) __obj.updateDynamic("afterSetCellMeta")(afterSetCellMeta)
     if (afterUpdateSettings != null) __obj.updateDynamic("afterUpdateSettings")(afterUpdateSettings)
-    if (afterValidate != null) __obj.updateDynamic("afterValidate")(afterValidate)
+    if (afterValidate != null) __obj.updateDynamic("afterValidate")(js.Any.fromFunction5(afterValidate))
     if (autoColumnSize != null) __obj.updateDynamic("autoColumnSize")(autoColumnSize.asInstanceOf[js.Any])
     if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete)
     if (!js.isUndefined(autoWrapCol)) __obj.updateDynamic("autoWrapCol")(autoWrapCol)
     if (!js.isUndefined(autoWrapRow)) __obj.updateDynamic("autoWrapRow")(autoWrapRow)
-    if (beforeAutofill != null) __obj.updateDynamic("beforeAutofill")(beforeAutofill)
-    if (beforeChange != null) __obj.updateDynamic("beforeChange")(beforeChange)
+    if (beforeAutofill != null) __obj.updateDynamic("beforeAutofill")(js.Any.fromFunction3(beforeAutofill))
+    if (beforeChange != null) __obj.updateDynamic("beforeChange")(js.Any.fromFunction2(beforeChange))
     if (beforeChangeRender != null) __obj.updateDynamic("beforeChangeRender")(beforeChangeRender)
-    if (beforeColumnSort != null) __obj.updateDynamic("beforeColumnSort")(beforeColumnSort)
-    if (beforeGetCellMeta != null) __obj.updateDynamic("beforeGetCellMeta")(beforeGetCellMeta)
+    if (beforeColumnSort != null) __obj.updateDynamic("beforeColumnSort")(js.Any.fromFunction2(beforeColumnSort))
+    if (beforeGetCellMeta != null) __obj.updateDynamic("beforeGetCellMeta")(js.Any.fromFunction3(beforeGetCellMeta))
     if (beforeInit != null) __obj.updateDynamic("beforeInit")(beforeInit)
     if (beforeInitWalkontable != null) __obj.updateDynamic("beforeInitWalkontable")(beforeInitWalkontable)
-    if (beforeKeyDown != null) __obj.updateDynamic("beforeKeyDown")(beforeKeyDown)
-    if (beforeRemoveCol != null) __obj.updateDynamic("beforeRemoveCol")(beforeRemoveCol)
-    if (beforeRemoveRow != null) __obj.updateDynamic("beforeRemoveRow")(beforeRemoveRow)
-    if (beforeRender != null) __obj.updateDynamic("beforeRender")(beforeRender)
-    if (beforeSet != null) __obj.updateDynamic("beforeSet")(beforeSet)
-    if (beforeSetRangeEnd != null) __obj.updateDynamic("beforeSetRangeEnd")(beforeSetRangeEnd)
-    if (beforeValidate != null) __obj.updateDynamic("beforeValidate")(beforeValidate)
-    if (cells != null) __obj.updateDynamic("cells")(cells)
+    if (beforeKeyDown != null) __obj.updateDynamic("beforeKeyDown")(js.Any.fromFunction1(beforeKeyDown))
+    if (beforeRemoveCol != null) __obj.updateDynamic("beforeRemoveCol")(js.Any.fromFunction2(beforeRemoveCol))
+    if (beforeRemoveRow != null) __obj.updateDynamic("beforeRemoveRow")(js.Any.fromFunction2(beforeRemoveRow))
+    if (beforeRender != null) __obj.updateDynamic("beforeRender")(js.Any.fromFunction1(beforeRender))
+    if (beforeSet != null) __obj.updateDynamic("beforeSet")(js.Any.fromFunction1(beforeSet))
+    if (beforeSetRangeEnd != null) __obj.updateDynamic("beforeSetRangeEnd")(js.Any.fromFunction1(beforeSetRangeEnd))
+    if (beforeValidate != null) __obj.updateDynamic("beforeValidate")(js.Any.fromFunction4(beforeValidate))
+    if (cells != null) __obj.updateDynamic("cells")(js.Any.fromFunction3(cells))
     if (colHeaders != null) __obj.updateDynamic("colHeaders")(colHeaders)
     if (colWidths != null) __obj.updateDynamic("colWidths")(colWidths)
     if (!js.isUndefined(columnSorting)) __obj.updateDynamic("columnSorting")(columnSorting)
@@ -955,8 +844,8 @@ object Options {
     if (!js.isUndefined(fragmentSelection)) __obj.updateDynamic("fragmentSelection")(fragmentSelection)
     if (height != null) __obj.updateDynamic("height")(height)
     if (invalidCellClassName != null) __obj.updateDynamic("invalidCellClassName")(invalidCellClassName)
-    if (isEmptyCol != null) __obj.updateDynamic("isEmptyCol")(isEmptyCol)
-    if (isEmptyRow != null) __obj.updateDynamic("isEmptyRow")(isEmptyRow)
+    if (isEmptyCol != null) __obj.updateDynamic("isEmptyCol")(js.Any.fromFunction1(isEmptyCol))
+    if (isEmptyRow != null) __obj.updateDynamic("isEmptyRow")(js.Any.fromFunction1(isEmptyRow))
     if (manualColumnMove != null) __obj.updateDynamic("manualColumnMove")(manualColumnMove)
     if (manualColumnResize != null) __obj.updateDynamic("manualColumnResize")(manualColumnResize)
     if (!js.isUndefined(manualRowMove)) __obj.updateDynamic("manualRowMove")(manualRowMove)
@@ -968,21 +857,21 @@ object Options {
     if (minRows != null) __obj.updateDynamic("minRows")(minRows.asInstanceOf[js.Any])
     if (minSpareCols != null) __obj.updateDynamic("minSpareCols")(minSpareCols.asInstanceOf[js.Any])
     if (minSpareRows != null) __obj.updateDynamic("minSpareRows")(minSpareRows.asInstanceOf[js.Any])
-    if (modifyCol != null) __obj.updateDynamic("modifyCol")(modifyCol)
-    if (modifyColWidth != null) __obj.updateDynamic("modifyColWidth")(modifyColWidth)
-    if (modifyRow != null) __obj.updateDynamic("modifyRow")(modifyRow)
-    if (modifyRowHeight != null) __obj.updateDynamic("modifyRowHeight")(modifyRowHeight)
+    if (modifyCol != null) __obj.updateDynamic("modifyCol")(js.Any.fromFunction1(modifyCol))
+    if (modifyColWidth != null) __obj.updateDynamic("modifyColWidth")(js.Any.fromFunction2(modifyColWidth))
+    if (modifyRow != null) __obj.updateDynamic("modifyRow")(js.Any.fromFunction1(modifyRow))
+    if (modifyRowHeight != null) __obj.updateDynamic("modifyRowHeight")(js.Any.fromFunction2(modifyRowHeight))
     if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect)
     if (noWordWrapClassName != null) __obj.updateDynamic("noWordWrapClassName")(noWordWrapClassName)
     if (!js.isUndefined(observeChanges)) __obj.updateDynamic("observeChanges")(observeChanges)
     if (!js.isUndefined(observeDOMVisibility)) __obj.updateDynamic("observeDOMVisibility")(observeDOMVisibility)
-    if (onBeforeChange != null) __obj.updateDynamic("onBeforeChange")(onBeforeChange)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onCopyLimit != null) __obj.updateDynamic("onCopyLimit")(onCopyLimit)
-    if (onSelection != null) __obj.updateDynamic("onSelection")(onSelection)
-    if (onSelectionByProp != null) __obj.updateDynamic("onSelectionByProp")(onSelectionByProp)
-    if (onSelectionEnd != null) __obj.updateDynamic("onSelectionEnd")(onSelectionEnd)
-    if (onSelectionEndByProp != null) __obj.updateDynamic("onSelectionEndByProp")(onSelectionEndByProp)
+    if (onBeforeChange != null) __obj.updateDynamic("onBeforeChange")(js.Any.fromFunction2(onBeforeChange))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onCopyLimit != null) __obj.updateDynamic("onCopyLimit")(js.Any.fromFunction4(onCopyLimit))
+    if (onSelection != null) __obj.updateDynamic("onSelection")(js.Any.fromFunction4(onSelection))
+    if (onSelectionByProp != null) __obj.updateDynamic("onSelectionByProp")(js.Any.fromFunction4(onSelectionByProp))
+    if (onSelectionEnd != null) __obj.updateDynamic("onSelectionEnd")(js.Any.fromFunction4(onSelectionEnd))
+    if (onSelectionEndByProp != null) __obj.updateDynamic("onSelectionEndByProp")(js.Any.fromFunction4(onSelectionEndByProp))
     if (!js.isUndefined(outsideClickDeselects)) __obj.updateDynamic("outsideClickDeselects")(outsideClickDeselects)
     if (pasteMode != null) __obj.updateDynamic("pasteMode")(pasteMode)
     if (!js.isUndefined(persistentState)) __obj.updateDynamic("persistentState")(persistentState)

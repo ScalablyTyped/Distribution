@@ -38,16 +38,16 @@ object RendererOptions {
       ]
     ] = null,
     inject: js.UndefOr[scala.Boolean] = js.undefined,
-    shouldPrefetch: js.Function2[/* file */ java.lang.String, /* type */ java.lang.String, scala.Boolean] = null,
-    shouldPreload: js.Function2[/* file */ java.lang.String, /* type */ java.lang.String, scala.Boolean] = null,
+    shouldPrefetch: (/* file */ java.lang.String, /* type */ java.lang.String) => scala.Boolean = null,
+    shouldPreload: (/* file */ java.lang.String, /* type */ java.lang.String) => scala.Boolean = null,
     template: java.lang.String = null
   ): RendererOptions = {
     val __obj = js.Dynamic.literal()
     if (cache != null) __obj.updateDynamic("cache")(cache)
     if (directives != null) __obj.updateDynamic("directives")(directives)
     if (!js.isUndefined(inject)) __obj.updateDynamic("inject")(inject)
-    if (shouldPrefetch != null) __obj.updateDynamic("shouldPrefetch")(shouldPrefetch)
-    if (shouldPreload != null) __obj.updateDynamic("shouldPreload")(shouldPreload)
+    if (shouldPrefetch != null) __obj.updateDynamic("shouldPrefetch")(js.Any.fromFunction2(shouldPrefetch))
+    if (shouldPreload != null) __obj.updateDynamic("shouldPreload")(js.Any.fromFunction2(shouldPreload))
     if (template != null) __obj.updateDynamic("template")(template)
     __obj.asInstanceOf[RendererOptions]
   }

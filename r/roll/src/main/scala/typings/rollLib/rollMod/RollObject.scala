@@ -16,10 +16,10 @@ object RollObject {
   def apply(
     quantity: scala.Double,
     sides: scala.Double,
-    toString: js.Function0[java.lang.String],
+    toString: () => java.lang.String,
     transformations: js.Array[rollLib.RollTransformation]
   ): RollObject = {
-    val __obj = js.Dynamic.literal(quantity = quantity, sides = sides, toString = toString, transformations = transformations)
+    val __obj = js.Dynamic.literal(quantity = quantity, sides = sides, toString = js.Any.fromFunction0(toString), transformations = transformations)
   
     __obj.asInstanceOf[RollObject]
   }

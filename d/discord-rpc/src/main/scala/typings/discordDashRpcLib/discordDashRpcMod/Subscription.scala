@@ -11,8 +11,8 @@ trait Subscription extends js.Object {
 
 object Subscription {
   @scala.inline
-  def apply(unsubscribe: js.Function0[js.Promise[scala.Boolean]]): Subscription = {
-    val __obj = js.Dynamic.literal(unsubscribe = unsubscribe)
+  def apply(unsubscribe: () => js.Promise[scala.Boolean]): Subscription = {
+    val __obj = js.Dynamic.literal(unsubscribe = js.Any.fromFunction0(unsubscribe))
   
     __obj.asInstanceOf[Subscription]
   }

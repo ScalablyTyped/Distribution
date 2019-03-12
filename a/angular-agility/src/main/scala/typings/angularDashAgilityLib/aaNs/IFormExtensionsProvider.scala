@@ -29,7 +29,7 @@ object IFormExtensionsProvider {
   @scala.inline
   def apply(
     $get: js.Any,
-    confirmResetStrategy: js.Function0[scala.Boolean],
+    confirmResetStrategy: () => scala.Boolean,
     defaultFieldGroupStrategy: java.lang.String,
     defaultLabelStrategy: java.lang.String,
     defaultNotifyTarget: java.lang.String,
@@ -46,7 +46,7 @@ object IFormExtensionsProvider {
     validIconStrategy: IValidIconStrategy,
     validationMessages: IValidationMessages
   ): IFormExtensionsProvider = {
-    val __obj = js.Dynamic.literal($get = $get, confirmResetStrategy = confirmResetStrategy, defaultFieldGroupStrategy = defaultFieldGroupStrategy, defaultLabelStrategy = defaultLabelStrategy, defaultNotifyTarget = defaultNotifyTarget, defaultOnNavigateAwayStrategy = defaultOnNavigateAwayStrategy, defaultSpinnerClickStrategy = defaultSpinnerClickStrategy, defaultValMsgPlacementStrategy = defaultValMsgPlacementStrategy, fieldGroupStrategies = fieldGroupStrategies, globalSettings = globalSettings, labelStrategies = labelStrategies, onNavigateAwayStrategies = onNavigateAwayStrategies, spinnerClickStrategies = spinnerClickStrategies, valMsgForTemplate = valMsgForTemplate, valMsgPlacementStrategies = valMsgPlacementStrategies, validIconStrategy = validIconStrategy, validationMessages = validationMessages)
+    val __obj = js.Dynamic.literal($get = $get, confirmResetStrategy = js.Any.fromFunction0(confirmResetStrategy), defaultFieldGroupStrategy = defaultFieldGroupStrategy, defaultLabelStrategy = defaultLabelStrategy, defaultNotifyTarget = defaultNotifyTarget, defaultOnNavigateAwayStrategy = defaultOnNavigateAwayStrategy, defaultSpinnerClickStrategy = defaultSpinnerClickStrategy, defaultValMsgPlacementStrategy = defaultValMsgPlacementStrategy, fieldGroupStrategies = fieldGroupStrategies, globalSettings = globalSettings, labelStrategies = labelStrategies, onNavigateAwayStrategies = onNavigateAwayStrategies, spinnerClickStrategies = spinnerClickStrategies, valMsgForTemplate = valMsgForTemplate, valMsgPlacementStrategies = valMsgPlacementStrategies, validIconStrategy = validIconStrategy, validationMessages = validationMessages)
   
     __obj.asInstanceOf[IFormExtensionsProvider]
   }

@@ -124,60 +124,31 @@ object ITemplate {
   def apply(
     alias: Array = null,
     alternateClassName: js.Any = null,
-    append: js.Function3[
-      /* el */ js.UndefOr[js.Any], 
-      /* values */ js.UndefOr[js.Any], 
-      /* returnElement */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    apply: js.Function1[/* values */ js.UndefOr[js.Any], java.lang.String] = null,
-    applyOut: js.Function2[/* values */ js.UndefOr[js.Any], /* out */ js.UndefOr[Array], Array] = null,
-    applyTemplate: js.Function1[/* values */ js.UndefOr[js.Any], java.lang.String] = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    compile: js.Function0[ITemplate] = null,
+    append: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[scala.Boolean]) => _ = null,
+    apply: /* values */ js.UndefOr[js.Any] => java.lang.String = null,
+    applyOut: (/* values */ js.UndefOr[js.Any], /* out */ js.UndefOr[Array]) => Array = null,
+    applyTemplate: /* values */ js.UndefOr[js.Any] => java.lang.String = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
+    compile: () => ITemplate = null,
     compiled: js.UndefOr[scala.Boolean] = js.undefined,
     config: js.Any = null,
-    destroy: js.Function0[scala.Unit] = null,
+    destroy: () => scala.Unit = null,
     disableFormats: js.UndefOr[scala.Boolean] = js.undefined,
     extend: java.lang.String = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
-    insertAfter: js.Function3[
-      /* el */ js.UndefOr[js.Any], 
-      /* values */ js.UndefOr[js.Any], 
-      /* returnElement */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    insertBefore: js.Function3[
-      /* el */ js.UndefOr[js.Any], 
-      /* values */ js.UndefOr[js.Any], 
-      /* returnElement */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
-    insertFirst: js.Function3[
-      /* el */ js.UndefOr[js.Any], 
-      /* values */ js.UndefOr[js.Any], 
-      /* returnElement */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
+    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
+    insertAfter: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[scala.Boolean]) => _ = null,
+    insertBefore: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[scala.Boolean]) => _ = null,
+    insertFirst: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[scala.Boolean]) => _ = null,
     isTemplate: js.UndefOr[scala.Boolean] = js.undefined,
     mixins: js.Any = null,
-    overwrite: js.Function3[
-      /* el */ js.UndefOr[js.Any], 
-      /* values */ js.UndefOr[js.Any], 
-      /* returnElement */ js.UndefOr[scala.Boolean], 
-      _
-    ] = null,
+    overwrite: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[scala.Boolean]) => _ = null,
     platformConfig: js.Any = null,
     self: IClass = null,
-    set: js.Function2[
-      /* html */ js.UndefOr[java.lang.String], 
-      /* compile */ js.UndefOr[scala.Boolean], 
-      ITemplate
-    ] = null,
+    set: (/* html */ js.UndefOr[java.lang.String], /* compile */ js.UndefOr[scala.Boolean]) => ITemplate = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
     uses: Array = null
@@ -185,31 +156,31 @@ object ITemplate {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (append != null) __obj.updateDynamic("append")(append)
-    if (apply != null) __obj.updateDynamic("apply")(apply)
-    if (applyOut != null) __obj.updateDynamic("applyOut")(applyOut)
-    if (applyTemplate != null) __obj.updateDynamic("applyTemplate")(applyTemplate)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
-    if (compile != null) __obj.updateDynamic("compile")(compile)
+    if (append != null) __obj.updateDynamic("append")(js.Any.fromFunction3(append))
+    if (apply != null) __obj.updateDynamic("apply")(js.Any.fromFunction1(apply))
+    if (applyOut != null) __obj.updateDynamic("applyOut")(js.Any.fromFunction2(applyOut))
+    if (applyTemplate != null) __obj.updateDynamic("applyTemplate")(js.Any.fromFunction1(applyTemplate))
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
+    if (compile != null) __obj.updateDynamic("compile")(js.Any.fromFunction0(compile))
     if (!js.isUndefined(compiled)) __obj.updateDynamic("compiled")(compiled)
     if (config != null) __obj.updateDynamic("config")(config)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (!js.isUndefined(disableFormats)) __obj.updateDynamic("disableFormats")(disableFormats)
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
-    if (insertAfter != null) __obj.updateDynamic("insertAfter")(insertAfter)
-    if (insertBefore != null) __obj.updateDynamic("insertBefore")(insertBefore)
-    if (insertFirst != null) __obj.updateDynamic("insertFirst")(insertFirst)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (insertAfter != null) __obj.updateDynamic("insertAfter")(js.Any.fromFunction3(insertAfter))
+    if (insertBefore != null) __obj.updateDynamic("insertBefore")(js.Any.fromFunction3(insertBefore))
+    if (insertFirst != null) __obj.updateDynamic("insertFirst")(js.Any.fromFunction3(insertFirst))
     if (!js.isUndefined(isTemplate)) __obj.updateDynamic("isTemplate")(isTemplate)
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (overwrite != null) __obj.updateDynamic("overwrite")(overwrite)
+    if (overwrite != null) __obj.updateDynamic("overwrite")(js.Any.fromFunction3(overwrite))
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
     if (self != null) __obj.updateDynamic("self")(self)
-    if (set != null) __obj.updateDynamic("set")(set)
+    if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction2(set))
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
     if (uses != null) __obj.updateDynamic("uses")(uses)

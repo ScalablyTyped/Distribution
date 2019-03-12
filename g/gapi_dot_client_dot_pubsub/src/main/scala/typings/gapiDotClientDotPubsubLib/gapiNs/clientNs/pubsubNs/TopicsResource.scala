@@ -53,41 +53,17 @@ trait TopicsResource extends js.Object {
 object TopicsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotPubsubLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Topic]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotPubsubLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotPubsubLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Topic]
-    ],
-    getIamPolicy: js.Function1[
-      gapiDotClientDotPubsubLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
-    list: js.Function1[
-      gapiDotClientDotPubsubLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListTopicsResponse]
-    ],
-    publish: js.Function1[
-      gapiDotClientDotPubsubLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PublishResponse]
-    ],
-    setIamPolicy: js.Function1[
-      gapiDotClientDotPubsubLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
-    ],
+    create: gapiDotClientDotPubsubLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[Topic],
+    delete: gapiDotClientDotPubsubLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotPubsubLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Topic],
+    getIamPolicy: gapiDotClientDotPubsubLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
+    list: gapiDotClientDotPubsubLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[ListTopicsResponse],
+    publish: gapiDotClientDotPubsubLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[PublishResponse],
+    setIamPolicy: gapiDotClientDotPubsubLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Policy],
     subscriptions: SubscriptionsResource,
-    testIamPermissions: js.Function1[
-      gapiDotClientDotPubsubLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
-    ]
+    testIamPermissions: gapiDotClientDotPubsubLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
   ): TopicsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, getIamPolicy = getIamPolicy, list = list, publish = publish, setIamPolicy = setIamPolicy, subscriptions = subscriptions, testIamPermissions = testIamPermissions)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), list = js.Any.fromFunction1(list), publish = js.Any.fromFunction1(publish), setIamPolicy = js.Any.fromFunction1(setIamPolicy), subscriptions = subscriptions, testIamPermissions = js.Any.fromFunction1(testIamPermissions))
   
     __obj.asInstanceOf[TopicsResource]
   }

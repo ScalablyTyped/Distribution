@@ -11,8 +11,8 @@ trait IServerDataPushSink extends js.Object {
 
 object IServerDataPushSink {
   @scala.inline
-  def apply(OnServerDataPush: js.Function2[scala.Double, java.lang.String, scala.Unit]): IServerDataPushSink = {
-    val __obj = js.Dynamic.literal(OnServerDataPush = OnServerDataPush)
+  def apply(OnServerDataPush: (scala.Double, java.lang.String) => scala.Unit): IServerDataPushSink = {
+    val __obj = js.Dynamic.literal(OnServerDataPush = js.Any.fromFunction2(OnServerDataPush))
   
     __obj.asInstanceOf[IServerDataPushSink]
   }

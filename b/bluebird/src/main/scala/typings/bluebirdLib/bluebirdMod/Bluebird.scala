@@ -80,7 +80,8 @@ trait Bluebird[R]
     /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
     Bluebird[_ | R]
   ]) = js.native
-  var lastly: js.Function1[/* handler */ js.Function0[bluebirdLib.Resolvable[_]], Bluebird[R]] = js.native
+  @JSName("lastly")
+  var lastly_Original: js.Function1[/* handler */ js.Function0[bluebirdLib.Resolvable[_]], Bluebird[R]] = js.native
   /**
     * Same as calling `Promise.all(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
@@ -851,6 +852,7 @@ trait Bluebird[R]
     * See if this `promise` is resolved -> either fulfilled or rejected.
     */
   def isResolved(): scala.Boolean = js.native
+  def lastly(handler: js.Function0[bluebirdLib.Resolvable[_]]): Bluebird[R] = js.native
   /**
     * Same as calling `Bluebird.map(thisPromise, mapper)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */

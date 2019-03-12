@@ -20,17 +20,17 @@ trait ILaddaButton extends js.Object {
 object ILaddaButton {
   @scala.inline
   def apply(
-    disable: js.Function0[ILaddaButton],
-    enable: js.Function0[ILaddaButton],
-    isLoading: js.Function0[scala.Boolean],
-    remove: js.Function0[scala.Unit],
-    setProgress: js.Function1[scala.Double, ILaddaButton],
-    start: js.Function0[ILaddaButton],
-    startAfter: js.Function1[scala.Double, ILaddaButton],
-    stop: js.Function0[ILaddaButton],
-    toggle: js.Function0[ILaddaButton]
+    disable: () => ILaddaButton,
+    enable: () => ILaddaButton,
+    isLoading: () => scala.Boolean,
+    remove: () => scala.Unit,
+    setProgress: scala.Double => ILaddaButton,
+    start: () => ILaddaButton,
+    startAfter: scala.Double => ILaddaButton,
+    stop: () => ILaddaButton,
+    toggle: () => ILaddaButton
   ): ILaddaButton = {
-    val __obj = js.Dynamic.literal(disable = disable, enable = enable, isLoading = isLoading, remove = remove, setProgress = setProgress, start = start, startAfter = startAfter, stop = stop, toggle = toggle)
+    val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), isLoading = js.Any.fromFunction0(isLoading), remove = js.Any.fromFunction0(remove), setProgress = js.Any.fromFunction1(setProgress), start = js.Any.fromFunction0(start), startAfter = js.Any.fromFunction1(startAfter), stop = js.Any.fromFunction0(stop), toggle = js.Any.fromFunction0(toggle))
   
     __obj.asInstanceOf[ILaddaButton]
   }

@@ -10,14 +10,24 @@ import scala.scalajs.js.annotation._
 object PromiseNs extends js.Object {
   @js.native
   class CancellationError ()
-    extends nodeLib.Error {
-    var name: workerpoolLib.workerpoolLibStrings.CancellationError = js.native
+    extends stdLib.Error {
+    /* CompleteClass */
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
+    @JSName("name")
+    var name_CancellationError: workerpoolLib.workerpoolLibStrings.CancellationError = js.native
   }
   
   @js.native
   class TimeoutError ()
-    extends nodeLib.Error {
-    var name: workerpoolLib.workerpoolLibStrings.TimeoutError = js.native
+    extends stdLib.Error {
+    /* CompleteClass */
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
+    @JSName("name")
+    var name_TimeoutError: workerpoolLib.workerpoolLibStrings.TimeoutError = js.native
   }
   
 }

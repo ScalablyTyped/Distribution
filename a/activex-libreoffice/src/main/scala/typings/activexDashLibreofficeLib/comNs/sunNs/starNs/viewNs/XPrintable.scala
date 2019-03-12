@@ -12,12 +12,12 @@ trait XPrintable
     * @returns a descriptor of the current printer.  The attributes of the current printer are used for formatting.
     * @see PrinterDescriptor
     */
-  var Printer: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  var Printer: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * @returns a descriptor of the current printer.  The attributes of the current printer are used for formatting.
     * @see PrinterDescriptor
     */
-  def getPrinter(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  def getPrinter(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   /**
     * prints the object.
     * @param xOptions specifies the number of copies and some other values which do not affect formatting.
@@ -40,23 +40,15 @@ trait XPrintable
 object XPrintable {
   @scala.inline
   def apply(
-    Printer: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
-    acquire: js.Function0[scala.Unit],
-    getPrinter: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    print: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setPrinter: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
-      scala.Unit
-    ]
+    Printer: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    acquire: () => scala.Unit,
+    getPrinter: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    print: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setPrinter: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue] => scala.Unit
   ): XPrintable = {
-    val __obj = js.Dynamic.literal(Printer = Printer, acquire = acquire, getPrinter = getPrinter, print = print, queryInterface = queryInterface, release = release, setPrinter = setPrinter)
+    val __obj = js.Dynamic.literal(Printer = Printer, acquire = js.Any.fromFunction0(acquire), getPrinter = js.Any.fromFunction0(getPrinter), print = js.Any.fromFunction1(print), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setPrinter = js.Any.fromFunction1(setPrinter))
   
     __obj.asInstanceOf[XPrintable]
   }

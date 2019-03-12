@@ -50,31 +50,31 @@ trait BootstrapClientTab extends ASPxClientTab {
 object BootstrapClientTab {
   @scala.inline
   def apply(
-    GetActiveIconCssClass: js.Function0[java.lang.String],
-    GetActiveImageUrl: js.Function0[java.lang.String],
-    GetBadgeIconCssClass: js.Function0[java.lang.String],
-    GetBadgeText: js.Function0[java.lang.String],
-    GetEnabled: js.Function0[scala.Boolean],
-    GetIconCssClass: js.Function0[java.lang.String],
-    GetImageUrl: js.Function0[java.lang.String],
-    GetNavigateUrl: js.Function0[java.lang.String],
-    GetText: js.Function0[java.lang.String],
-    GetVisible: js.Function0[scala.Boolean],
-    SetActiveIconCssClass: js.Function1[java.lang.String, scala.Unit],
-    SetActiveImageUrl: js.Function1[java.lang.String, scala.Unit],
-    SetBadgeIconCssClass: js.Function1[java.lang.String, scala.Unit],
-    SetBadgeText: js.Function1[java.lang.String, scala.Unit],
-    SetEnabled: js.Function1[scala.Boolean, scala.Unit],
-    SetIconCssClass: js.Function1[java.lang.String, scala.Unit],
-    SetImageUrl: js.Function1[java.lang.String, scala.Unit],
-    SetNavigateUrl: js.Function1[java.lang.String, scala.Unit],
-    SetText: js.Function1[java.lang.String, scala.Unit],
-    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    GetActiveIconCssClass: () => java.lang.String,
+    GetActiveImageUrl: () => java.lang.String,
+    GetBadgeIconCssClass: () => java.lang.String,
+    GetBadgeText: () => java.lang.String,
+    GetEnabled: () => scala.Boolean,
+    GetIconCssClass: () => java.lang.String,
+    GetImageUrl: () => java.lang.String,
+    GetNavigateUrl: () => java.lang.String,
+    GetText: () => java.lang.String,
+    GetVisible: () => scala.Boolean,
+    SetActiveIconCssClass: java.lang.String => scala.Unit,
+    SetActiveImageUrl: java.lang.String => scala.Unit,
+    SetBadgeIconCssClass: java.lang.String => scala.Unit,
+    SetBadgeText: java.lang.String => scala.Unit,
+    SetEnabled: scala.Boolean => scala.Unit,
+    SetIconCssClass: java.lang.String => scala.Unit,
+    SetImageUrl: java.lang.String => scala.Unit,
+    SetNavigateUrl: java.lang.String => scala.Unit,
+    SetText: java.lang.String => scala.Unit,
+    SetVisible: scala.Boolean => scala.Unit,
     index: scala.Double,
     name: java.lang.String,
     tabControl: ASPxClientTabControlBase
   ): BootstrapClientTab = {
-    val __obj = js.Dynamic.literal(GetActiveIconCssClass = GetActiveIconCssClass, GetActiveImageUrl = GetActiveImageUrl, GetBadgeIconCssClass = GetBadgeIconCssClass, GetBadgeText = GetBadgeText, GetEnabled = GetEnabled, GetIconCssClass = GetIconCssClass, GetImageUrl = GetImageUrl, GetNavigateUrl = GetNavigateUrl, GetText = GetText, GetVisible = GetVisible, SetActiveIconCssClass = SetActiveIconCssClass, SetActiveImageUrl = SetActiveImageUrl, SetBadgeIconCssClass = SetBadgeIconCssClass, SetBadgeText = SetBadgeText, SetEnabled = SetEnabled, SetIconCssClass = SetIconCssClass, SetImageUrl = SetImageUrl, SetNavigateUrl = SetNavigateUrl, SetText = SetText, SetVisible = SetVisible, index = index, name = name, tabControl = tabControl)
+    val __obj = js.Dynamic.literal(GetActiveIconCssClass = js.Any.fromFunction0(GetActiveIconCssClass), GetActiveImageUrl = js.Any.fromFunction0(GetActiveImageUrl), GetBadgeIconCssClass = js.Any.fromFunction0(GetBadgeIconCssClass), GetBadgeText = js.Any.fromFunction0(GetBadgeText), GetEnabled = js.Any.fromFunction0(GetEnabled), GetIconCssClass = js.Any.fromFunction0(GetIconCssClass), GetImageUrl = js.Any.fromFunction0(GetImageUrl), GetNavigateUrl = js.Any.fromFunction0(GetNavigateUrl), GetText = js.Any.fromFunction0(GetText), GetVisible = js.Any.fromFunction0(GetVisible), SetActiveIconCssClass = js.Any.fromFunction1(SetActiveIconCssClass), SetActiveImageUrl = js.Any.fromFunction1(SetActiveImageUrl), SetBadgeIconCssClass = js.Any.fromFunction1(SetBadgeIconCssClass), SetBadgeText = js.Any.fromFunction1(SetBadgeText), SetEnabled = js.Any.fromFunction1(SetEnabled), SetIconCssClass = js.Any.fromFunction1(SetIconCssClass), SetImageUrl = js.Any.fromFunction1(SetImageUrl), SetNavigateUrl = js.Any.fromFunction1(SetNavigateUrl), SetText = js.Any.fromFunction1(SetText), SetVisible = js.Any.fromFunction1(SetVisible), index = index, name = name, tabControl = tabControl)
   
     __obj.asInstanceOf[BootstrapClientTab]
   }

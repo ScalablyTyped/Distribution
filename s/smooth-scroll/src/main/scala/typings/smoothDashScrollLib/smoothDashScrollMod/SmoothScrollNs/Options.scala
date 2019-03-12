@@ -33,7 +33,7 @@ object Options {
   @scala.inline
   def apply(
     clip: js.UndefOr[scala.Boolean] = js.undefined,
-    customEasing: js.Function1[/* time */ scala.Double, scala.Double] = null,
+    customEasing: /* time */ scala.Double => scala.Double = null,
     easing: Easing = null,
     emitEvents: js.UndefOr[scala.Boolean] = js.undefined,
     header: java.lang.String = null,
@@ -50,7 +50,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
-    if (customEasing != null) __obj.updateDynamic("customEasing")(customEasing)
+    if (customEasing != null) __obj.updateDynamic("customEasing")(js.Any.fromFunction1(customEasing))
     if (easing != null) __obj.updateDynamic("easing")(easing)
     if (!js.isUndefined(emitEvents)) __obj.updateDynamic("emitEvents")(emitEvents)
     if (header != null) __obj.updateDynamic("header")(header)

@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof react-dynamic-number.react-dynamic-number.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<react.HTMLInputElement>, react.HTMLInputElement>, 'ref' | 'value' | 'onChange' | 'placeholder'> ]:? react-dynamic-number.react-dynamic-number.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<react.HTMLInputElement>, react.HTMLInputElement>, 'ref' | 'value' | 'onChange' | 'placeholder'>[P]} */ trait DynamicNumberProps extends js.Object {
+- Dropped {[ P in keyof react-dynamic-number.react-dynamic-number.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>, 'ref' | 'value' | 'onChange' | 'placeholder'> ]:? react-dynamic-number.react-dynamic-number.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>, 'ref' | 'value' | 'onChange' | 'placeholder'>[P]} */ trait DynamicNumberProps extends js.Object {
   var fraction: js.UndefOr[scala.Double] = js.undefined
   var integer: js.UndefOr[scala.Double] = js.undefined
   var negative: js.UndefOr[scala.Boolean] = js.undefined
   var onChange: js.UndefOr[
     js.Function3[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement], 
+      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement], 
       /* modelValue */ scala.Double, 
       /* viewValue */ java.lang.String, 
       scala.Unit
@@ -37,12 +37,7 @@ object DynamicNumberProps {
     fraction: scala.Int | scala.Double = null,
     integer: scala.Int | scala.Double = null,
     negative: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: js.Function3[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement], 
-      /* modelValue */ scala.Double, 
-      /* viewValue */ java.lang.String, 
-      scala.Unit
-    ] = null,
+    onChange: (/* event */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement], /* modelValue */ scala.Double, /* viewValue */ java.lang.String) => scala.Unit = null,
     placeholder: java.lang.String = null,
     positive: js.UndefOr[scala.Boolean] = js.undefined,
     separator: reactDashDynamicDashNumberLib.reactDashDynamicDashNumberLibStrings.DOT | reactDashDynamicDashNumberLib.reactDashDynamicDashNumberLibStrings.`,` = null,
@@ -53,7 +48,7 @@ object DynamicNumberProps {
     if (fraction != null) __obj.updateDynamic("fraction")(fraction.asInstanceOf[js.Any])
     if (integer != null) __obj.updateDynamic("integer")(integer.asInstanceOf[js.Any])
     if (!js.isUndefined(negative)) __obj.updateDynamic("negative")(negative)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3(onChange))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive)
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])

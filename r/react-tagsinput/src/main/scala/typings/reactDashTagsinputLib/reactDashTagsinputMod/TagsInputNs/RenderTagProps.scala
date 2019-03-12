@@ -16,11 +16,11 @@ object RenderTagProps {
   @scala.inline
   def apply(
     disabled: scala.Boolean,
-    getTagDisplayValue: js.Function1[reactDashTagsinputLib.Tag, java.lang.String],
-    onRemove: js.Function1[scala.Double, scala.Unit],
+    getTagDisplayValue: reactDashTagsinputLib.Tag => java.lang.String,
+    onRemove: scala.Double => scala.Unit,
     tag: reactDashTagsinputLib.Tag
   ): RenderTagProps = {
-    val __obj = js.Dynamic.literal(disabled = disabled, getTagDisplayValue = getTagDisplayValue, onRemove = onRemove, tag = tag)
+    val __obj = js.Dynamic.literal(disabled = disabled, getTagDisplayValue = js.Any.fromFunction1(getTagDisplayValue), onRemove = js.Any.fromFunction1(onRemove), tag = tag)
   
     __obj.asInstanceOf[RenderTagProps]
   }

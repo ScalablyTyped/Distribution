@@ -29,18 +29,18 @@ trait XModifiable2 extends XModifiable {
 object XModifiable2 {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addModifyListener: js.Function1[XModifyListener, scala.Unit],
-    disableSetModified: js.Function0[scala.Boolean],
-    enableSetModified: js.Function0[scala.Boolean],
-    isModified: js.Function0[scala.Boolean],
-    isSetModifiedEnabled: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeModifyListener: js.Function1[XModifyListener, scala.Unit],
-    setModified: js.Function1[scala.Boolean, scala.Unit]
+    acquire: () => scala.Unit,
+    addModifyListener: XModifyListener => scala.Unit,
+    disableSetModified: () => scala.Boolean,
+    enableSetModified: () => scala.Boolean,
+    isModified: () => scala.Boolean,
+    isSetModifiedEnabled: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeModifyListener: XModifyListener => scala.Unit,
+    setModified: scala.Boolean => scala.Unit
   ): XModifiable2 = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addModifyListener = addModifyListener, disableSetModified = disableSetModified, enableSetModified = enableSetModified, isModified = isModified, isSetModifiedEnabled = isSetModifiedEnabled, queryInterface = queryInterface, release = release, removeModifyListener = removeModifyListener, setModified = setModified)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addModifyListener = js.Any.fromFunction1(addModifyListener), disableSetModified = js.Any.fromFunction0(disableSetModified), enableSetModified = js.Any.fromFunction0(enableSetModified), isModified = js.Any.fromFunction0(isModified), isSetModifiedEnabled = js.Any.fromFunction0(isSetModifiedEnabled), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeModifyListener = js.Any.fromFunction1(removeModifyListener), setModified = js.Any.fromFunction1(setModified))
   
     __obj.asInstanceOf[XModifiable2]
   }

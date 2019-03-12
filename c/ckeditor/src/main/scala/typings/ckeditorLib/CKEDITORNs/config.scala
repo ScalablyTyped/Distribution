@@ -323,13 +323,7 @@ object config {
     dataIndentationChars: java.lang.String = null,
     defaultLanguage: java.lang.String = null,
     devtools_styles: java.lang.String = null,
-    devtools_textCallback: js.Function4[
-      /* editor */ editor, 
-      /* dialog */ dialog, 
-      /* element */ ckeditorLib.CKEDITORNs.domNs.element, 
-      /* tabName */ java.lang.String, 
-      java.lang.String
-    ] = null,
+    devtools_textCallback: (/* editor */ editor, /* dialog */ dialog, /* element */ ckeditorLib.CKEDITORNs.domNs.element, /* tabName */ java.lang.String) => java.lang.String = null,
     dialog_backgroundCoverColor: java.lang.String = null,
     dialog_backgroundCoverOpacity: scala.Int | scala.Double = null,
     dialog_buttonsOrder: java.lang.String = null,
@@ -431,7 +425,107 @@ object config {
     magicline_holdDistance: scala.Int | scala.Double = null,
     magicline_keystrokeNext: scala.Int | scala.Double = null,
     magicline_keystrokePrevious: scala.Int | scala.Double = null,
-    magicline_tabuList: js.Array[java.lang.String] = null
+    magicline_tabuList: js.Array[java.lang.String] = null,
+    magicline_triggerOffset: scala.Int | scala.Double = null,
+    mathJaxClass: java.lang.String = null,
+    mathJaxLib: java.lang.String = null,
+    menu_groups: java.lang.String = null,
+    menu_subMenuDelay: scala.Int | scala.Double = null,
+    newpage_html: java.lang.String = null,
+    notification_duration: scala.Int | scala.Double = null,
+    on: ckeditorLib.CKEDITORNs.editorNs.eventObject = null,
+    pasteFilter: java.lang.String = null,
+    pasteFromWordCleanupFile: java.lang.String = null,
+    pasteFromWordNumberedHeadingToList: js.UndefOr[scala.Boolean] = js.undefined,
+    pasteFromWordPromptCleanup: js.UndefOr[scala.Boolean] = js.undefined,
+    pasteFromWordRemoveFontStyles: js.UndefOr[scala.Boolean] = js.undefined,
+    pasteFromWordRemoveStyles: js.UndefOr[scala.Boolean] = js.undefined,
+    pasteFromWord_heuristicsEdgeList: js.UndefOr[scala.Boolean] = js.undefined,
+    pasteFromWord_inlineImages: js.UndefOr[scala.Boolean] = js.undefined,
+    plugins: java.lang.String = null,
+    protectedSource: js.Array[stdLib.RegExp] = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    removeButtons: java.lang.String = null,
+    removeDialogTabs: java.lang.String = null,
+    removeFormatAttributes: java.lang.String = null,
+    removeFormatTags: java.lang.String = null,
+    removePlugins: java.lang.String = null,
+    resize_dir: java.lang.String = null,
+    resize_enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    resize_maxHeight: scala.Int | scala.Double = null,
+    resize_maxWidth: scala.Int | scala.Double = null,
+    resize_minHeight: scala.Int | scala.Double = null,
+    resize_minWidth: scala.Int | scala.Double = null,
+    scayt_autoStartup: js.UndefOr[scala.Boolean] = js.undefined,
+    scayt_contextCommands: java.lang.String = null,
+    scayt_contextMenuItemsOrder: java.lang.String = null,
+    scayt_customDictionaryIds: java.lang.String = null,
+    scayt_customerId: java.lang.String = null,
+    scayt_disableOptionsStorage: java.lang.String | js.Array[java.lang.String] = null,
+    scayt_elementsToIgnore: java.lang.String = null,
+    scayt_handleCheckDirty: java.lang.String = null,
+    scayt_handleUndoRedo: java.lang.String = null,
+    scayt_ignoreAllCapsWords: js.UndefOr[scala.Boolean] = js.undefined,
+    scayt_ignoreDomainNames: js.UndefOr[scala.Boolean] = js.undefined,
+    scayt_ignoreWordsWithMixedCases: js.UndefOr[scala.Boolean] = js.undefined,
+    scayt_ignoreWordsWithNumbers: js.UndefOr[scala.Boolean] = js.undefined,
+    scayt_inlineModeImmediateMarkup: js.UndefOr[scala.Boolean] = js.undefined,
+    scayt_maxSuggestions: scala.Int | scala.Double = null,
+    scayt_minWordLength: scala.Int | scala.Double = null,
+    scayt_moreSuggestions: java.lang.String = null,
+    scayt_multiLanguageMode: js.UndefOr[scala.Boolean] = js.undefined,
+    scayt_multiLanguageStyles: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    scayt_sLang: java.lang.String = null,
+    scayt_serviceHost: java.lang.String = null,
+    scayt_servicePath: java.lang.String = null,
+    scayt_servicePort: java.lang.String = null,
+    scayt_serviceProtocol: java.lang.String = null,
+    scayt_srcUrl: java.lang.String = null,
+    scayt_uiTabs: java.lang.String = null,
+    scayt_userDictionaryName: java.lang.String = null,
+    sharedSpaces: sharedSpace = null,
+    shiftEnterMode: scala.Int | scala.Double = null,
+    skin: java.lang.String = null,
+    smiley_columns: scala.Int | scala.Double = null,
+    smiley_descriptions: js.Array[java.lang.String] = null,
+    smiley_images: js.Array[java.lang.String] = null,
+    smiley_path: java.lang.String = null,
+    sourceAreaTabSize: scala.Int | scala.Double = null,
+    specialChars: js.Array[java.lang.String | (js.Tuple2[java.lang.String, java.lang.String])] = null,
+    startupFocus: java.lang.String | scala.Boolean = null,
+    startupMode: java.lang.String = null,
+    startupOutlineBlocks: js.UndefOr[scala.Boolean] = js.undefined,
+    startupShowBorders: js.UndefOr[scala.Boolean] = js.undefined,
+    stylesSet: java.lang.String | scala.Boolean | js.Array[ckeditorLib.CKEDITORNs.configNs.styleObject] = null,
+    stylesheetParser_skipSelectors: stdLib.RegExp = null,
+    stylesheetParser_validSelectors: stdLib.RegExp = null,
+    tabIndex: scala.Int | scala.Double = null,
+    tabSpaces: scala.Int | scala.Double = null,
+    templates: java.lang.String = null,
+    templates_files: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    templates_replaceContent: js.UndefOr[scala.Boolean] = js.undefined,
+    title: java.lang.String | scala.Boolean = null,
+    toolbar: java.lang.String | (js.Array[java.lang.String | js.Array[java.lang.String] | ckeditorLib.Anon_Groups]) = null,
+    toolbarCanCollapse: js.UndefOr[scala.Boolean] = js.undefined,
+    toolbarGroupCycling: js.UndefOr[scala.Boolean] = js.undefined,
+    toolbarGroups: js.Array[toolbarGroups | java.lang.String] = null,
+    toolbarLocation: java.lang.String = null,
+    toolbarStartupExpanded: js.UndefOr[scala.Boolean] = js.undefined,
+    uiColor: java.lang.String = null,
+    undoStackSize: scala.Int | scala.Double = null,
+    uploadUrl: java.lang.String = null,
+    useComputedState: js.UndefOr[scala.Boolean] = js.undefined,
+    width: java.lang.String | scala.Double = null,
+    wsc_cmd: java.lang.String = null,
+    wsc_customDictionaryIds: java.lang.String = null,
+    wsc_customLoaderScript: java.lang.String = null,
+    wsc_customerId: java.lang.String = null,
+    wsc_height: java.lang.String = null,
+    wsc_lang: java.lang.String = null,
+    wsc_left: java.lang.String = null,
+    wsc_top: java.lang.String = null,
+    wsc_userDictionaryName: java.lang.String = null,
+    wsc_width: java.lang.String = null
   ): config = {
     val __obj = js.Dynamic.literal()
     if (allowedContent != null) __obj.updateDynamic("allowedContent")(allowedContent.asInstanceOf[js.Any])
@@ -481,7 +575,7 @@ object config {
     if (dataIndentationChars != null) __obj.updateDynamic("dataIndentationChars")(dataIndentationChars)
     if (defaultLanguage != null) __obj.updateDynamic("defaultLanguage")(defaultLanguage)
     if (devtools_styles != null) __obj.updateDynamic("devtools_styles")(devtools_styles)
-    if (devtools_textCallback != null) __obj.updateDynamic("devtools_textCallback")(devtools_textCallback)
+    if (devtools_textCallback != null) __obj.updateDynamic("devtools_textCallback")(js.Any.fromFunction4(devtools_textCallback))
     if (dialog_backgroundCoverColor != null) __obj.updateDynamic("dialog_backgroundCoverColor")(dialog_backgroundCoverColor)
     if (dialog_backgroundCoverOpacity != null) __obj.updateDynamic("dialog_backgroundCoverOpacity")(dialog_backgroundCoverOpacity.asInstanceOf[js.Any])
     if (dialog_buttonsOrder != null) __obj.updateDynamic("dialog_buttonsOrder")(dialog_buttonsOrder)
@@ -584,6 +678,106 @@ object config {
     if (magicline_keystrokeNext != null) __obj.updateDynamic("magicline_keystrokeNext")(magicline_keystrokeNext.asInstanceOf[js.Any])
     if (magicline_keystrokePrevious != null) __obj.updateDynamic("magicline_keystrokePrevious")(magicline_keystrokePrevious.asInstanceOf[js.Any])
     if (magicline_tabuList != null) __obj.updateDynamic("magicline_tabuList")(magicline_tabuList)
+    if (magicline_triggerOffset != null) __obj.updateDynamic("magicline_triggerOffset")(magicline_triggerOffset.asInstanceOf[js.Any])
+    if (mathJaxClass != null) __obj.updateDynamic("mathJaxClass")(mathJaxClass)
+    if (mathJaxLib != null) __obj.updateDynamic("mathJaxLib")(mathJaxLib)
+    if (menu_groups != null) __obj.updateDynamic("menu_groups")(menu_groups)
+    if (menu_subMenuDelay != null) __obj.updateDynamic("menu_subMenuDelay")(menu_subMenuDelay.asInstanceOf[js.Any])
+    if (newpage_html != null) __obj.updateDynamic("newpage_html")(newpage_html)
+    if (notification_duration != null) __obj.updateDynamic("notification_duration")(notification_duration.asInstanceOf[js.Any])
+    if (on != null) __obj.updateDynamic("on")(on)
+    if (pasteFilter != null) __obj.updateDynamic("pasteFilter")(pasteFilter)
+    if (pasteFromWordCleanupFile != null) __obj.updateDynamic("pasteFromWordCleanupFile")(pasteFromWordCleanupFile)
+    if (!js.isUndefined(pasteFromWordNumberedHeadingToList)) __obj.updateDynamic("pasteFromWordNumberedHeadingToList")(pasteFromWordNumberedHeadingToList)
+    if (!js.isUndefined(pasteFromWordPromptCleanup)) __obj.updateDynamic("pasteFromWordPromptCleanup")(pasteFromWordPromptCleanup)
+    if (!js.isUndefined(pasteFromWordRemoveFontStyles)) __obj.updateDynamic("pasteFromWordRemoveFontStyles")(pasteFromWordRemoveFontStyles)
+    if (!js.isUndefined(pasteFromWordRemoveStyles)) __obj.updateDynamic("pasteFromWordRemoveStyles")(pasteFromWordRemoveStyles)
+    if (!js.isUndefined(pasteFromWord_heuristicsEdgeList)) __obj.updateDynamic("pasteFromWord_heuristicsEdgeList")(pasteFromWord_heuristicsEdgeList)
+    if (!js.isUndefined(pasteFromWord_inlineImages)) __obj.updateDynamic("pasteFromWord_inlineImages")(pasteFromWord_inlineImages)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (protectedSource != null) __obj.updateDynamic("protectedSource")(protectedSource)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (removeButtons != null) __obj.updateDynamic("removeButtons")(removeButtons)
+    if (removeDialogTabs != null) __obj.updateDynamic("removeDialogTabs")(removeDialogTabs)
+    if (removeFormatAttributes != null) __obj.updateDynamic("removeFormatAttributes")(removeFormatAttributes)
+    if (removeFormatTags != null) __obj.updateDynamic("removeFormatTags")(removeFormatTags)
+    if (removePlugins != null) __obj.updateDynamic("removePlugins")(removePlugins)
+    if (resize_dir != null) __obj.updateDynamic("resize_dir")(resize_dir)
+    if (!js.isUndefined(resize_enabled)) __obj.updateDynamic("resize_enabled")(resize_enabled)
+    if (resize_maxHeight != null) __obj.updateDynamic("resize_maxHeight")(resize_maxHeight.asInstanceOf[js.Any])
+    if (resize_maxWidth != null) __obj.updateDynamic("resize_maxWidth")(resize_maxWidth.asInstanceOf[js.Any])
+    if (resize_minHeight != null) __obj.updateDynamic("resize_minHeight")(resize_minHeight.asInstanceOf[js.Any])
+    if (resize_minWidth != null) __obj.updateDynamic("resize_minWidth")(resize_minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(scayt_autoStartup)) __obj.updateDynamic("scayt_autoStartup")(scayt_autoStartup)
+    if (scayt_contextCommands != null) __obj.updateDynamic("scayt_contextCommands")(scayt_contextCommands)
+    if (scayt_contextMenuItemsOrder != null) __obj.updateDynamic("scayt_contextMenuItemsOrder")(scayt_contextMenuItemsOrder)
+    if (scayt_customDictionaryIds != null) __obj.updateDynamic("scayt_customDictionaryIds")(scayt_customDictionaryIds)
+    if (scayt_customerId != null) __obj.updateDynamic("scayt_customerId")(scayt_customerId)
+    if (scayt_disableOptionsStorage != null) __obj.updateDynamic("scayt_disableOptionsStorage")(scayt_disableOptionsStorage.asInstanceOf[js.Any])
+    if (scayt_elementsToIgnore != null) __obj.updateDynamic("scayt_elementsToIgnore")(scayt_elementsToIgnore)
+    if (scayt_handleCheckDirty != null) __obj.updateDynamic("scayt_handleCheckDirty")(scayt_handleCheckDirty)
+    if (scayt_handleUndoRedo != null) __obj.updateDynamic("scayt_handleUndoRedo")(scayt_handleUndoRedo)
+    if (!js.isUndefined(scayt_ignoreAllCapsWords)) __obj.updateDynamic("scayt_ignoreAllCapsWords")(scayt_ignoreAllCapsWords)
+    if (!js.isUndefined(scayt_ignoreDomainNames)) __obj.updateDynamic("scayt_ignoreDomainNames")(scayt_ignoreDomainNames)
+    if (!js.isUndefined(scayt_ignoreWordsWithMixedCases)) __obj.updateDynamic("scayt_ignoreWordsWithMixedCases")(scayt_ignoreWordsWithMixedCases)
+    if (!js.isUndefined(scayt_ignoreWordsWithNumbers)) __obj.updateDynamic("scayt_ignoreWordsWithNumbers")(scayt_ignoreWordsWithNumbers)
+    if (!js.isUndefined(scayt_inlineModeImmediateMarkup)) __obj.updateDynamic("scayt_inlineModeImmediateMarkup")(scayt_inlineModeImmediateMarkup)
+    if (scayt_maxSuggestions != null) __obj.updateDynamic("scayt_maxSuggestions")(scayt_maxSuggestions.asInstanceOf[js.Any])
+    if (scayt_minWordLength != null) __obj.updateDynamic("scayt_minWordLength")(scayt_minWordLength.asInstanceOf[js.Any])
+    if (scayt_moreSuggestions != null) __obj.updateDynamic("scayt_moreSuggestions")(scayt_moreSuggestions)
+    if (!js.isUndefined(scayt_multiLanguageMode)) __obj.updateDynamic("scayt_multiLanguageMode")(scayt_multiLanguageMode)
+    if (scayt_multiLanguageStyles != null) __obj.updateDynamic("scayt_multiLanguageStyles")(scayt_multiLanguageStyles)
+    if (scayt_sLang != null) __obj.updateDynamic("scayt_sLang")(scayt_sLang)
+    if (scayt_serviceHost != null) __obj.updateDynamic("scayt_serviceHost")(scayt_serviceHost)
+    if (scayt_servicePath != null) __obj.updateDynamic("scayt_servicePath")(scayt_servicePath)
+    if (scayt_servicePort != null) __obj.updateDynamic("scayt_servicePort")(scayt_servicePort)
+    if (scayt_serviceProtocol != null) __obj.updateDynamic("scayt_serviceProtocol")(scayt_serviceProtocol)
+    if (scayt_srcUrl != null) __obj.updateDynamic("scayt_srcUrl")(scayt_srcUrl)
+    if (scayt_uiTabs != null) __obj.updateDynamic("scayt_uiTabs")(scayt_uiTabs)
+    if (scayt_userDictionaryName != null) __obj.updateDynamic("scayt_userDictionaryName")(scayt_userDictionaryName)
+    if (sharedSpaces != null) __obj.updateDynamic("sharedSpaces")(sharedSpaces)
+    if (shiftEnterMode != null) __obj.updateDynamic("shiftEnterMode")(shiftEnterMode.asInstanceOf[js.Any])
+    if (skin != null) __obj.updateDynamic("skin")(skin)
+    if (smiley_columns != null) __obj.updateDynamic("smiley_columns")(smiley_columns.asInstanceOf[js.Any])
+    if (smiley_descriptions != null) __obj.updateDynamic("smiley_descriptions")(smiley_descriptions)
+    if (smiley_images != null) __obj.updateDynamic("smiley_images")(smiley_images)
+    if (smiley_path != null) __obj.updateDynamic("smiley_path")(smiley_path)
+    if (sourceAreaTabSize != null) __obj.updateDynamic("sourceAreaTabSize")(sourceAreaTabSize.asInstanceOf[js.Any])
+    if (specialChars != null) __obj.updateDynamic("specialChars")(specialChars)
+    if (startupFocus != null) __obj.updateDynamic("startupFocus")(startupFocus.asInstanceOf[js.Any])
+    if (startupMode != null) __obj.updateDynamic("startupMode")(startupMode)
+    if (!js.isUndefined(startupOutlineBlocks)) __obj.updateDynamic("startupOutlineBlocks")(startupOutlineBlocks)
+    if (!js.isUndefined(startupShowBorders)) __obj.updateDynamic("startupShowBorders")(startupShowBorders)
+    if (stylesSet != null) __obj.updateDynamic("stylesSet")(stylesSet.asInstanceOf[js.Any])
+    if (stylesheetParser_skipSelectors != null) __obj.updateDynamic("stylesheetParser_skipSelectors")(stylesheetParser_skipSelectors)
+    if (stylesheetParser_validSelectors != null) __obj.updateDynamic("stylesheetParser_validSelectors")(stylesheetParser_validSelectors)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (tabSpaces != null) __obj.updateDynamic("tabSpaces")(tabSpaces.asInstanceOf[js.Any])
+    if (templates != null) __obj.updateDynamic("templates")(templates)
+    if (templates_files != null) __obj.updateDynamic("templates_files")(templates_files)
+    if (!js.isUndefined(templates_replaceContent)) __obj.updateDynamic("templates_replaceContent")(templates_replaceContent)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(toolbarCanCollapse)) __obj.updateDynamic("toolbarCanCollapse")(toolbarCanCollapse)
+    if (!js.isUndefined(toolbarGroupCycling)) __obj.updateDynamic("toolbarGroupCycling")(toolbarGroupCycling)
+    if (toolbarGroups != null) __obj.updateDynamic("toolbarGroups")(toolbarGroups)
+    if (toolbarLocation != null) __obj.updateDynamic("toolbarLocation")(toolbarLocation)
+    if (!js.isUndefined(toolbarStartupExpanded)) __obj.updateDynamic("toolbarStartupExpanded")(toolbarStartupExpanded)
+    if (uiColor != null) __obj.updateDynamic("uiColor")(uiColor)
+    if (undoStackSize != null) __obj.updateDynamic("undoStackSize")(undoStackSize.asInstanceOf[js.Any])
+    if (uploadUrl != null) __obj.updateDynamic("uploadUrl")(uploadUrl)
+    if (!js.isUndefined(useComputedState)) __obj.updateDynamic("useComputedState")(useComputedState)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (wsc_cmd != null) __obj.updateDynamic("wsc_cmd")(wsc_cmd)
+    if (wsc_customDictionaryIds != null) __obj.updateDynamic("wsc_customDictionaryIds")(wsc_customDictionaryIds)
+    if (wsc_customLoaderScript != null) __obj.updateDynamic("wsc_customLoaderScript")(wsc_customLoaderScript)
+    if (wsc_customerId != null) __obj.updateDynamic("wsc_customerId")(wsc_customerId)
+    if (wsc_height != null) __obj.updateDynamic("wsc_height")(wsc_height)
+    if (wsc_lang != null) __obj.updateDynamic("wsc_lang")(wsc_lang)
+    if (wsc_left != null) __obj.updateDynamic("wsc_left")(wsc_left)
+    if (wsc_top != null) __obj.updateDynamic("wsc_top")(wsc_top)
+    if (wsc_userDictionaryName != null) __obj.updateDynamic("wsc_userDictionaryName")(wsc_userDictionaryName)
+    if (wsc_width != null) __obj.updateDynamic("wsc_width")(wsc_width)
     __obj.asInstanceOf[config]
   }
 }

@@ -19,13 +19,13 @@ object Validatable {
   @scala.inline
   def apply[TValue](
     $: TValue,
-    enableAutoValidation: js.Function0[scala.Unit],
+    enableAutoValidation: () => scala.Unit,
     hasError: scala.Boolean,
-    validate: js.Function0[js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_False[TValue]]],
+    validate: () => js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_False[TValue]],
     validating: scala.Boolean,
     error: java.lang.String = null
   ): Validatable[TValue] = {
-    val __obj = js.Dynamic.literal($ = $.asInstanceOf[js.Any], enableAutoValidation = enableAutoValidation, hasError = hasError, validate = validate, validating = validating)
+    val __obj = js.Dynamic.literal($ = $.asInstanceOf[js.Any], enableAutoValidation = js.Any.fromFunction0(enableAutoValidation), hasError = hasError, validate = js.Any.fromFunction0(validate), validating = validating)
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[Validatable[TValue]]
   }

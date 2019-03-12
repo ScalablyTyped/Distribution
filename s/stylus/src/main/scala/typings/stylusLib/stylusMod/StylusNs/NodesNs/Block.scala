@@ -22,10 +22,10 @@ trait Block extends Node {
 object Block {
   @scala.inline
   def apply(
-    clone: js.Function0[Node],
-    coerce: js.Function1[Node, Node],
+    clone: () => Node,
+    coerce: Node => Node,
     column: scala.Double,
-    eval: js.Function0[Node],
+    eval: () => Node,
     filename: java.lang.String,
     first: Node,
     hasMedia: scala.Boolean,
@@ -36,16 +36,16 @@ object Block {
     node: Node,
     nodeName: java.lang.String,
     nodes: js.Array[Node],
-    operate: js.Function2[java.lang.String, Node, Node],
+    operate: (java.lang.String, Node) => Node,
     parent: Block,
-    push: js.Function1[Node, scala.Unit],
+    push: Node => scala.Unit,
     scope: scala.Boolean,
-    shouldCoerce: js.Function1[java.lang.String, scala.Boolean],
-    toBoolean: js.Function0[Boolean],
-    toExpression: js.Function0[Expression],
-    toJSON: js.Function0[stylusLib.Anon_ColumnFilenameLinenoNodes]
+    shouldCoerce: java.lang.String => scala.Boolean,
+    toBoolean: () => Boolean,
+    toExpression: () => Expression,
+    toJSON: () => stylusLib.Anon_ColumnFilenameLinenoNodes
   ): Block = {
-    val __obj = js.Dynamic.literal(clone = clone, coerce = coerce, column = column, eval = eval, filename = filename, first = first, hasMedia = hasMedia, hasProperties = hasProperties, hash = hash, isEmpty = isEmpty, lineno = lineno, node = node, nodeName = nodeName, nodes = nodes, operate = operate, parent = parent, push = push, scope = scope, shouldCoerce = shouldCoerce, toBoolean = toBoolean, toExpression = toExpression, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), coerce = js.Any.fromFunction1(coerce), column = column, eval = js.Any.fromFunction0(eval), filename = filename, first = first, hasMedia = hasMedia, hasProperties = hasProperties, hash = hash, isEmpty = isEmpty, lineno = lineno, node = node, nodeName = nodeName, nodes = nodes, operate = js.Any.fromFunction2(operate), parent = parent, push = js.Any.fromFunction1(push), scope = scope, shouldCoerce = js.Any.fromFunction1(shouldCoerce), toBoolean = js.Any.fromFunction0(toBoolean), toExpression = js.Any.fromFunction0(toExpression), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[Block]
   }

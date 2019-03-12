@@ -34,48 +34,18 @@ trait FilesResource extends js.Object {
 object FilesResource {
   @scala.inline
   def apply(
-    copy: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltFieldsFileIdIgnoreDefaultVisibility, 
-      gapiDotClientLib.gapiNs.clientNs.Request[File]
-    ],
-    create: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltFieldsIgnoreDefaultVisibility, 
-      gapiDotClientLib.gapiNs.clientNs.Request[File]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    emptyTrash: js.Function1[
-      gapiDotClientDotDriveLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    export: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyMimeType, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    generateIds: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltCount, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GeneratedIds]
-    ],
-    get: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AcknowledgeAbuse, 
-      gapiDotClientLib.gapiNs.clientNs.Request[File]
-    ],
-    list: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AltCorpora, 
-      gapiDotClientLib.gapiNs.clientNs.Request[FileList]
-    ],
-    update: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AddParents, 
-      gapiDotClientLib.gapiNs.clientNs.Request[File]
-    ],
-    watch: js.Function1[
-      gapiDotClientDotDriveLib.Anon_AcknowledgeAbuse, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Channel]
-    ]
+    copy: gapiDotClientDotDriveLib.Anon_AltFieldsFileIdIgnoreDefaultVisibility => gapiDotClientLib.gapiNs.clientNs.Request[File],
+    create: gapiDotClientDotDriveLib.Anon_AltFieldsIgnoreDefaultVisibility => gapiDotClientLib.gapiNs.clientNs.Request[File],
+    delete: gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKey => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    emptyTrash: gapiDotClientDotDriveLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    export: gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyMimeType => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    generateIds: gapiDotClientDotDriveLib.Anon_AltCount => gapiDotClientLib.gapiNs.clientNs.Request[GeneratedIds],
+    get: gapiDotClientDotDriveLib.Anon_AcknowledgeAbuse => gapiDotClientLib.gapiNs.clientNs.Request[File],
+    list: gapiDotClientDotDriveLib.Anon_AltCorpora => gapiDotClientLib.gapiNs.clientNs.Request[FileList],
+    update: gapiDotClientDotDriveLib.Anon_AddParents => gapiDotClientLib.gapiNs.clientNs.Request[File],
+    watch: gapiDotClientDotDriveLib.Anon_AcknowledgeAbuse => gapiDotClientLib.gapiNs.clientNs.Request[Channel]
   ): FilesResource = {
-    val __obj = js.Dynamic.literal(copy = copy, create = create, delete = delete, emptyTrash = emptyTrash, export = export, generateIds = generateIds, get = get, list = list, update = update, watch = watch)
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction1(copy), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), emptyTrash = js.Any.fromFunction1(emptyTrash), export = js.Any.fromFunction1(export), generateIds = js.Any.fromFunction1(generateIds), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update), watch = js.Any.fromFunction1(watch))
   
     __obj.asInstanceOf[FilesResource]
   }

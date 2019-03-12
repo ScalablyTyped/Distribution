@@ -25,15 +25,9 @@ trait Anon_Context extends js.Object {
 object Anon_Context {
   @scala.inline
   def apply(
-    createError: js.Function4[
-      java.lang.String, 
-      natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Context, 
-      natsDashHemeraLib.natsDashHemeraMod.HemeraNs.State, 
-      natsDashHemeraLib.natsDashHemeraMod.HemeraNs.ValidationOptions, 
-      natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Err
-    ]
+    createError: (java.lang.String, natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Context, natsDashHemeraLib.natsDashHemeraMod.HemeraNs.State, natsDashHemeraLib.natsDashHemeraMod.HemeraNs.ValidationOptions) => natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Err
   ): Anon_Context = {
-    val __obj = js.Dynamic.literal(createError = createError)
+    val __obj = js.Dynamic.literal(createError = js.Any.fromFunction4(createError))
   
     __obj.asInstanceOf[Anon_Context]
   }

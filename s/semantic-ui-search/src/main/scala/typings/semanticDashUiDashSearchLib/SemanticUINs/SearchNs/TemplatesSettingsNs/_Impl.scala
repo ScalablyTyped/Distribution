@@ -15,12 +15,12 @@ trait _Impl extends js.Object {
 object _Impl {
   @scala.inline
   def apply(
-    category: js.Function1[js.Any, java.lang.String],
-    escape: js.Function1[java.lang.String, java.lang.String],
-    message: js.Function2[java.lang.String, java.lang.String, java.lang.String],
-    standard: js.Function1[js.Any, java.lang.String]
+    category: js.Any => java.lang.String,
+    escape: java.lang.String => java.lang.String,
+    message: (java.lang.String, java.lang.String) => java.lang.String,
+    standard: js.Any => java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal(category = category, escape = escape, message = message, standard = standard)
+    val __obj = js.Dynamic.literal(category = js.Any.fromFunction1(category), escape = js.Any.fromFunction1(escape), message = js.Any.fromFunction2(message), standard = js.Any.fromFunction1(standard))
   
     __obj.asInstanceOf[_Impl]
   }

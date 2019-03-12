@@ -22,14 +22,14 @@ object RadioButtonProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
     label: reactLib.reactMod.ReactNs.ReactNode = null,
-    onChange: js.Function1[/* repeated */ js.Any, _] = null
+    onChange: /* repeated */ js.Any => _ = null
   ): RadioButtonProps = {
     val __obj = js.Dynamic.literal(name = name)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (id != null) __obj.updateDynamic("id")(id)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[RadioButtonProps]
   }
 }

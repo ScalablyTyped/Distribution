@@ -38,11 +38,11 @@ object DayPickerPhrases {
   @scala.inline
   def apply(
     calendarLabel: java.lang.String = null,
-    chooseAvailableDate: js.Function1[/* date */ java.lang.String, java.lang.String] = null,
-    chooseAvailableEndDate: js.Function1[/* date */ java.lang.String, java.lang.String] = null,
-    chooseAvailableStartDate: js.Function1[/* date */ java.lang.String, java.lang.String] = null,
-    dateIsSelected: js.Function1[/* date */ java.lang.String, java.lang.String] = null,
-    dateIsUnavailable: js.Function1[/* date */ java.lang.String, java.lang.String] = null,
+    chooseAvailableDate: /* date */ java.lang.String => java.lang.String = null,
+    chooseAvailableEndDate: /* date */ java.lang.String => java.lang.String = null,
+    chooseAvailableStartDate: /* date */ java.lang.String => java.lang.String = null,
+    dateIsSelected: /* date */ java.lang.String => java.lang.String = null,
+    dateIsUnavailable: /* date */ java.lang.String => java.lang.String = null,
     enterKey: java.lang.String = null,
     escape: java.lang.String = null,
     hideKeyboardShortcutsPanel: java.lang.String = null,
@@ -65,11 +65,11 @@ object DayPickerPhrases {
   ): DayPickerPhrases = {
     val __obj = js.Dynamic.literal()
     if (calendarLabel != null) __obj.updateDynamic("calendarLabel")(calendarLabel)
-    if (chooseAvailableDate != null) __obj.updateDynamic("chooseAvailableDate")(chooseAvailableDate)
-    if (chooseAvailableEndDate != null) __obj.updateDynamic("chooseAvailableEndDate")(chooseAvailableEndDate)
-    if (chooseAvailableStartDate != null) __obj.updateDynamic("chooseAvailableStartDate")(chooseAvailableStartDate)
-    if (dateIsSelected != null) __obj.updateDynamic("dateIsSelected")(dateIsSelected)
-    if (dateIsUnavailable != null) __obj.updateDynamic("dateIsUnavailable")(dateIsUnavailable)
+    if (chooseAvailableDate != null) __obj.updateDynamic("chooseAvailableDate")(js.Any.fromFunction1(chooseAvailableDate))
+    if (chooseAvailableEndDate != null) __obj.updateDynamic("chooseAvailableEndDate")(js.Any.fromFunction1(chooseAvailableEndDate))
+    if (chooseAvailableStartDate != null) __obj.updateDynamic("chooseAvailableStartDate")(js.Any.fromFunction1(chooseAvailableStartDate))
+    if (dateIsSelected != null) __obj.updateDynamic("dateIsSelected")(js.Any.fromFunction1(dateIsSelected))
+    if (dateIsUnavailable != null) __obj.updateDynamic("dateIsUnavailable")(js.Any.fromFunction1(dateIsUnavailable))
     if (enterKey != null) __obj.updateDynamic("enterKey")(enterKey)
     if (escape != null) __obj.updateDynamic("escape")(escape)
     if (hideKeyboardShortcutsPanel != null) __obj.updateDynamic("hideKeyboardShortcutsPanel")(hideKeyboardShortcutsPanel)

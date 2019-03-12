@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/exports", "EventDragging")
 @js.native
 class EventDragging protected ()
-  extends fullcalendarLib.eventdraggingMod.default {
+  extends fullcalendarLib.eventDraggingMod.default {
   def this(component: js.Any, eventPointing: js.Any) = this()
 }
 

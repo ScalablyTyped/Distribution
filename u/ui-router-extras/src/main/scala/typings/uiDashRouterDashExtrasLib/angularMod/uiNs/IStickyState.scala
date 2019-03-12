@@ -48,8 +48,8 @@ object IStickyState {
   def apply(
     deepStateRedirect: scala.Boolean | IDeepStateRedirectConfig = null,
     dsr: scala.Boolean | IDeepStateRedirectConfig = null,
-    onInactivate: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    onReactivate: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    onInactivate: /* repeated */ js.Any => scala.Unit = null,
+    onReactivate: /* repeated */ js.Any => scala.Unit = null,
     sticky: js.UndefOr[scala.Boolean] = js.undefined,
     views: org.scalablytyped.runtime.StringDictionary[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IState */ js.Any
@@ -58,8 +58,8 @@ object IStickyState {
     val __obj = js.Dynamic.literal()
     if (deepStateRedirect != null) __obj.updateDynamic("deepStateRedirect")(deepStateRedirect.asInstanceOf[js.Any])
     if (dsr != null) __obj.updateDynamic("dsr")(dsr.asInstanceOf[js.Any])
-    if (onInactivate != null) __obj.updateDynamic("onInactivate")(onInactivate)
-    if (onReactivate != null) __obj.updateDynamic("onReactivate")(onReactivate)
+    if (onInactivate != null) __obj.updateDynamic("onInactivate")(js.Any.fromFunction1(onInactivate))
+    if (onReactivate != null) __obj.updateDynamic("onReactivate")(js.Any.fromFunction1(onReactivate))
     if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky)
     if (views != null) __obj.updateDynamic("views")(views)
     __obj.asInstanceOf[IStickyState]

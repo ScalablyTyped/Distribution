@@ -30,33 +30,15 @@ trait ProjectsResource extends js.Object {
 object ProjectsResource {
   @scala.inline
   def apply(
-    allocateIds: js.Function1[
-      gapiDotClientDotDatastoreLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[AllocateIdsResponse]
-    ],
-    beginTransaction: js.Function1[
-      gapiDotClientDotDatastoreLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[BeginTransactionResponse]
-    ],
-    commit: js.Function1[
-      gapiDotClientDotDatastoreLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[CommitResponse]
-    ],
-    lookup: js.Function1[
-      gapiDotClientDotDatastoreLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[LookupResponse]
-    ],
+    allocateIds: gapiDotClientDotDatastoreLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[AllocateIdsResponse],
+    beginTransaction: gapiDotClientDotDatastoreLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[BeginTransactionResponse],
+    commit: gapiDotClientDotDatastoreLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[CommitResponse],
+    lookup: gapiDotClientDotDatastoreLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[LookupResponse],
     operations: OperationsResource,
-    rollback: js.Function1[
-      gapiDotClientDotDatastoreLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    runQuery: js.Function1[
-      gapiDotClientDotDatastoreLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RunQueryResponse]
-    ]
+    rollback: gapiDotClientDotDatastoreLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    runQuery: gapiDotClientDotDatastoreLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[RunQueryResponse]
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal(allocateIds = allocateIds, beginTransaction = beginTransaction, commit = commit, lookup = lookup, operations = operations, rollback = rollback, runQuery = runQuery)
+    val __obj = js.Dynamic.literal(allocateIds = js.Any.fromFunction1(allocateIds), beginTransaction = js.Any.fromFunction1(beginTransaction), commit = js.Any.fromFunction1(commit), lookup = js.Any.fromFunction1(lookup), operations = operations, rollback = js.Any.fromFunction1(rollback), runQuery = js.Any.fromFunction1(runQuery))
   
     __obj.asInstanceOf[ProjectsResource]
   }

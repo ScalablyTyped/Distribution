@@ -1095,21 +1095,13 @@ object ^ extends js.Object {
   def openSync(path: nodeLib.fsMod.PathLike, flags: scala.Double, mode: java.lang.String): scala.Double = js.native
   def openSync(path: nodeLib.fsMod.PathLike, flags: scala.Double, mode: scala.Double): scala.Double = js.native
   def outputFile(file: java.lang.String, data: java.lang.String): js.Promise[scala.Unit] = js.native
-  def outputFile(
-    file: java.lang.String,
-    data: java.lang.String,
-    options: fsDashPromiseLib.fsDashPromiseMod.WriteOptions
-  ): js.Promise[scala.Unit] = js.native
+  def outputFile(file: java.lang.String, data: java.lang.String, options: WriteOptions): js.Promise[scala.Unit] = js.native
   def outputFile(file: java.lang.String, data: nodeLib.Buffer): js.Promise[scala.Unit] = js.native
-  def outputFile(
-    file: java.lang.String,
-    data: nodeLib.Buffer,
-    options: fsDashPromiseLib.fsDashPromiseMod.WriteOptions
-  ): js.Promise[scala.Unit] = js.native
+  def outputFile(file: java.lang.String, data: nodeLib.Buffer, options: WriteOptions): js.Promise[scala.Unit] = js.native
   def outputJSON(file: java.lang.String, data: js.Any): js.Promise[scala.Unit] = js.native
-  def outputJSON(file: java.lang.String, data: js.Any, options: fsDashPromiseLib.fsDashPromiseMod.WriteJsonOptions): js.Promise[scala.Unit] = js.native
+  def outputJSON(file: java.lang.String, data: js.Any, options: WriteJsonOptions): js.Promise[scala.Unit] = js.native
   def outputJson(file: java.lang.String, data: js.Any): js.Promise[scala.Unit] = js.native
-  def outputJson(file: java.lang.String, data: js.Any, options: fsDashPromiseLib.fsDashPromiseMod.WriteJsonOptions): js.Promise[scala.Unit] = js.native
+  def outputJson(file: java.lang.String, data: js.Any, options: WriteJsonOptions): js.Promise[scala.Unit] = js.native
   def read(
     fd: scala.Double,
     buffer: nodeLib.Buffer,
@@ -1438,9 +1430,9 @@ object ^ extends js.Object {
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def readJSON(file: java.lang.String): js.Promise[_] = js.native
-  def readJSON(file: java.lang.String, options: fsDashPromiseLib.fsDashPromiseMod.ReadJsonOptions): js.Promise[_] = js.native
+  def readJSON(file: java.lang.String, options: ReadJsonOptions): js.Promise[_] = js.native
   def readJson(file: java.lang.String): js.Promise[_] = js.native
-  def readJson(file: java.lang.String, options: fsDashPromiseLib.fsDashPromiseMod.ReadJsonOptions): js.Promise[_] = js.native
+  def readJson(file: java.lang.String, options: ReadJsonOptions): js.Promise[_] = js.native
   def readSync(fd: scala.Double, buffer: nodeLib.fsMod.BinaryData, offset: scala.Double, length: scala.Double): scala.Double = js.native
   /**
     * Synchronously reads data from the file referenced by the supplied file descriptor, returning the number of bytes read.
@@ -2903,9 +2895,9 @@ object ^ extends js.Object {
   def writeFileSync(path: scala.Double, data: js.Any): scala.Unit = js.native
   def writeFileSync(path: scala.Double, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): scala.Unit = js.native
   def writeJSON(file: java.lang.String, data: js.Any): js.Promise[scala.Unit] = js.native
-  def writeJSON(file: java.lang.String, data: js.Any, options: fsDashPromiseLib.fsDashPromiseMod.WriteJsonOptions): js.Promise[scala.Unit] = js.native
+  def writeJSON(file: java.lang.String, data: js.Any, options: WriteJsonOptions): js.Promise[scala.Unit] = js.native
   def writeJson(file: java.lang.String, data: js.Any): js.Promise[scala.Unit] = js.native
-  def writeJson(file: java.lang.String, data: js.Any, options: fsDashPromiseLib.fsDashPromiseMod.WriteJsonOptions): js.Promise[scala.Unit] = js.native
+  def writeJson(file: java.lang.String, data: js.Any, options: WriteJsonOptions): js.Promise[scala.Unit] = js.native
   /**
     * Synchronously writes `buffer` to the file referenced by the supplied file descriptor, returning the number of bytes written.
     * @param fd A file descriptor.

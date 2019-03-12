@@ -40,12 +40,9 @@ object ProjectsResource {
   def apply(
     releases: ReleasesResource,
     rulesets: RulesetsResource,
-    test: js.Function1[
-      gapiDotClientDotFirebaserulesLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[TestRulesetResponse]
-    ]
+    test: gapiDotClientDotFirebaserulesLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[TestRulesetResponse]
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal(releases = releases, rulesets = rulesets, test = test)
+    val __obj = js.Dynamic.literal(releases = releases, rulesets = rulesets, test = js.Any.fromFunction1(test))
   
     __obj.asInstanceOf[ProjectsResource]
   }

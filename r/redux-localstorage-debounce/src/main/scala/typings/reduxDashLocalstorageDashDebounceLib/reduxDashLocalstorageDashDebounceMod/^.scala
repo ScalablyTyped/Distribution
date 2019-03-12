@@ -12,10 +12,7 @@ object ^ extends js.Object {
     /* adapter */ reduxDashLocalstorageLib.reduxDashLocalstorageMod.StorageAdapter[_], 
     reduxDashLocalstorageLib.reduxDashLocalstorageMod.StorageAdapter[_]
   ] = js.native
-  def default(
-    wait: scala.Double,
-    options: reduxDashLocalstorageDashDebounceLib.reduxDashLocalstorageDashDebounceMod.DebounceOptions
-  ): js.Function1[
+  def default(wait: scala.Double, options: DebounceOptions): js.Function1[
     /* adapter */ reduxDashLocalstorageLib.reduxDashLocalstorageMod.StorageAdapter[_], 
     reduxDashLocalstorageLib.reduxDashLocalstorageMod.StorageAdapter[_]
   ] = js.native

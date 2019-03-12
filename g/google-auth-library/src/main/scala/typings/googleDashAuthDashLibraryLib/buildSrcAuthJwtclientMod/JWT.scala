@@ -51,7 +51,7 @@ class JWT protected ()
   def authorize(): js.Promise[googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.Credentials] = js.native
   def authorize(
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* result */ js.UndefOr[googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.Credentials], 
       scala.Unit
     ]
@@ -89,7 +89,7 @@ class JWT protected ()
   def fromStream(inputStream: nodeLib.streamMod.Readable): js.Promise[scala.Unit] = js.native
   def fromStream(
     inputStream: nodeLib.streamMod.Readable,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Using the key or keyFile on the JWT client, obtain an object that contains

@@ -23,28 +23,28 @@ trait Element extends js.Object {
 object Element {
   @scala.inline
   def apply(
-    attached: js.Function0[scala.Unit] = null,
-    attributeChanged: js.Function3[/* attrName */ java.lang.String, /* oldVal */ js.Any, /* newVal */ js.Any, scala.Unit] = null,
+    attached: () => scala.Unit = null,
+    attributeChanged: (/* attrName */ java.lang.String, /* oldVal */ js.Any, /* newVal */ js.Any) => scala.Unit = null,
     behaviors: js.Array[js.Object] = null,
-    created: js.Function0[scala.Unit] = null,
-    detached: js.Function0[scala.Unit] = null,
-    factoryImpl: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    created: () => scala.Unit = null,
+    detached: () => scala.Unit = null,
+    factoryImpl: /* repeated */ js.Any => scala.Unit = null,
     listeners: js.Object = null,
     observers: js.Array[java.lang.String] = null,
     properties: js.Object = null,
-    ready: js.Function0[scala.Unit] = null
+    ready: () => scala.Unit = null
   ): Element = {
     val __obj = js.Dynamic.literal()
-    if (attached != null) __obj.updateDynamic("attached")(attached)
-    if (attributeChanged != null) __obj.updateDynamic("attributeChanged")(attributeChanged)
+    if (attached != null) __obj.updateDynamic("attached")(js.Any.fromFunction0(attached))
+    if (attributeChanged != null) __obj.updateDynamic("attributeChanged")(js.Any.fromFunction3(attributeChanged))
     if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (detached != null) __obj.updateDynamic("detached")(detached)
-    if (factoryImpl != null) __obj.updateDynamic("factoryImpl")(factoryImpl)
+    if (created != null) __obj.updateDynamic("created")(js.Any.fromFunction0(created))
+    if (detached != null) __obj.updateDynamic("detached")(js.Any.fromFunction0(detached))
+    if (factoryImpl != null) __obj.updateDynamic("factoryImpl")(js.Any.fromFunction1(factoryImpl))
     if (listeners != null) __obj.updateDynamic("listeners")(listeners)
     if (observers != null) __obj.updateDynamic("observers")(observers)
     if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (ready != null) __obj.updateDynamic("ready")(ready)
+    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction0(ready))
     __obj.asInstanceOf[Element]
   }
 }

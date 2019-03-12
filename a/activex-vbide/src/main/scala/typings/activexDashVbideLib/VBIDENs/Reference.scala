@@ -19,7 +19,7 @@ class Reference protected () extends js.Object {
   val Minor: scala.Double = js.native
   val Name: java.lang.String = js.native
   val Type: vbext_RefKind = js.native
-  val VBE: VBE = js.native
+  val VBE: activexDashVbideLib.VBIDENs.VBE = js.native
   var `VBIDE.Reference_typekey`: Reference = js.native
   def Collection(index: js.Any): Reference = js.native
 }

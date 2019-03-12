@@ -15,6 +15,6 @@ object ^ extends js.Object {
   @JSName("charset")
   def charset_numbers(name: voucherDashCodeDashGeneratorLib.voucherDashCodeDashGeneratorLibStrings.numbers): java.lang.String = js.native
   def generate(): js.Array[java.lang.String] = js.native
-  def generate(config: voucherDashCodeDashGeneratorLib.voucherDashCodeDashGeneratorMod.generatorConfig): js.Array[java.lang.String] = js.native
+  def generate(config: generatorConfig): js.Array[java.lang.String] = js.native
 }
 

@@ -12,8 +12,8 @@ trait Namespace extends js.Object {
 
 object Namespace {
   @scala.inline
-  def apply(getPrefix: js.Function0[java.lang.String], getURI: js.Function0[java.lang.String]): Namespace = {
-    val __obj = js.Dynamic.literal(getPrefix = getPrefix, getURI = getURI)
+  def apply(getPrefix: () => java.lang.String, getURI: () => java.lang.String): Namespace = {
+    val __obj = js.Dynamic.literal(getPrefix = js.Any.fromFunction0(getPrefix), getURI = js.Any.fromFunction0(getURI))
   
     __obj.asInstanceOf[Namespace]
   }

@@ -11,6 +11,8 @@ class SubscriptionClient protected () extends js.Object {
   def this(url: java.lang.String) = this()
   def this(url: java.lang.String, options: ClientOptions) = this()
   def this(url: java.lang.String, options: ClientOptions, webSocketImpl: js.Any) = this()
+  def this(url: java.lang.String, options: ClientOptions, webSocketImpl: js.Any, webSocketProtocols: java.lang.String) = this()
+  def this(url: java.lang.String, options: ClientOptions, webSocketImpl: js.Any, webSocketProtocols: js.Array[java.lang.String]) = this()
   var backoff: js.Any = js.native
   var buildMessage: js.Any = js.native
   var checkConnection: js.Any = js.native
@@ -57,6 +59,7 @@ class SubscriptionClient protected () extends js.Object {
   var url: js.Any = js.native
   var wasKeepAliveReceived: js.Any = js.native
   var wsImpl: js.Any = js.native
+  var wsProtocols: js.Any = js.native
   var wsTimeout: js.Any = js.native
   def applyMiddlewares(options: OperationOptions): js.Promise[OperationOptions] = js.native
   def close(): scala.Unit = js.native

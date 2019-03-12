@@ -71,14 +71,14 @@ object XMultipleResults {
     MoreResults: scala.Boolean,
     ResultSet: XResultSet,
     UpdateCount: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getMoreResults: js.Function0[scala.Boolean],
-    getResultSet: js.Function0[XResultSet],
-    getUpdateCount: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getMoreResults: () => scala.Boolean,
+    getResultSet: () => XResultSet,
+    getUpdateCount: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XMultipleResults = {
-    val __obj = js.Dynamic.literal(MoreResults = MoreResults, ResultSet = ResultSet, UpdateCount = UpdateCount, acquire = acquire, getMoreResults = getMoreResults, getResultSet = getResultSet, getUpdateCount = getUpdateCount, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(MoreResults = MoreResults, ResultSet = ResultSet, UpdateCount = UpdateCount, acquire = js.Any.fromFunction0(acquire), getMoreResults = js.Any.fromFunction0(getMoreResults), getResultSet = js.Any.fromFunction0(getResultSet), getUpdateCount = js.Any.fromFunction0(getUpdateCount), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XMultipleResults]
   }

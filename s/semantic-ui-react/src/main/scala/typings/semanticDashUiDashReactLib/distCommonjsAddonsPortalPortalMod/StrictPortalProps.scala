@@ -42,7 +42,7 @@ trait StrictPortalProps extends js.Object {
     */
   var onClose: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ PortalProps, 
       scala.Unit
     ]
@@ -62,7 +62,7 @@ trait StrictPortalProps extends js.Object {
     */
   var onOpen: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ PortalProps, 
       scala.Unit
     ]
@@ -89,7 +89,7 @@ trait StrictPortalProps extends js.Object {
     *
     * @param {HTMLElement} node - Referred node.
     */
-  var triggerRef: js.UndefOr[js.Function1[/* node */ reactLib.HTMLElement, scala.Unit]] = js.undefined
+  var triggerRef: js.UndefOr[js.Function1[/* node */ stdLib.HTMLElement, scala.Unit]] = js.undefined
 }
 
 object StrictPortalProps {
@@ -107,24 +107,16 @@ object StrictPortalProps {
     mountNode: js.Any = null,
     mouseEnterDelay: scala.Int | scala.Double = null,
     mouseLeaveDelay: scala.Int | scala.Double = null,
-    onClose: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ PortalProps, 
-      scala.Unit
-    ] = null,
-    onMount: js.Function2[/* nothing */ scala.Null, /* data */ PortalProps, scala.Unit] = null,
-    onOpen: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* data */ PortalProps, 
-      scala.Unit
-    ] = null,
-    onUnmount: js.Function2[/* nothing */ scala.Null, /* data */ PortalProps, scala.Unit] = null,
+    onClose: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ PortalProps) => scala.Unit = null,
+    onMount: (/* nothing */ scala.Null, /* data */ PortalProps) => scala.Unit = null,
+    onOpen: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ PortalProps) => scala.Unit = null,
+    onUnmount: (/* nothing */ scala.Null, /* data */ PortalProps) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     openOnTriggerClick: js.UndefOr[scala.Boolean] = js.undefined,
     openOnTriggerFocus: js.UndefOr[scala.Boolean] = js.undefined,
     openOnTriggerMouseEnter: js.UndefOr[scala.Boolean] = js.undefined,
     trigger: reactLib.reactMod.ReactNs.ReactNode = null,
-    triggerRef: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null
+    triggerRef: /* node */ stdLib.HTMLElement => scala.Unit = null
   ): StrictPortalProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
@@ -139,16 +131,16 @@ object StrictPortalProps {
     if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode)
     if (mouseEnterDelay != null) __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay.asInstanceOf[js.Any])
     if (mouseLeaveDelay != null) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onMount != null) __obj.updateDynamic("onMount")(onMount)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
-    if (onUnmount != null) __obj.updateDynamic("onUnmount")(onUnmount)
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2(onClose))
+    if (onMount != null) __obj.updateDynamic("onMount")(js.Any.fromFunction2(onMount))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction2(onOpen))
+    if (onUnmount != null) __obj.updateDynamic("onUnmount")(js.Any.fromFunction2(onUnmount))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (!js.isUndefined(openOnTriggerClick)) __obj.updateDynamic("openOnTriggerClick")(openOnTriggerClick)
     if (!js.isUndefined(openOnTriggerFocus)) __obj.updateDynamic("openOnTriggerFocus")(openOnTriggerFocus)
     if (!js.isUndefined(openOnTriggerMouseEnter)) __obj.updateDynamic("openOnTriggerMouseEnter")(openOnTriggerMouseEnter)
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
-    if (triggerRef != null) __obj.updateDynamic("triggerRef")(triggerRef)
+    if (triggerRef != null) __obj.updateDynamic("triggerRef")(js.Any.fromFunction1(triggerRef))
     __obj.asInstanceOf[StrictPortalProps]
   }
 }

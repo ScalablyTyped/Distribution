@@ -114,9 +114,9 @@ object sizeCreateVisualVariablesParams {
   def apply(
     constructor: js.Function,
     field: java.lang.String,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     layer: FeatureLayer | SceneLayer | CSVLayer,
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     axis: java.lang.String = null,
     basemap: java.lang.String | Basemap = null,
     legendOptions: sizeCreateVisualVariablesParamsLegendOptions = null,
@@ -132,7 +132,7 @@ object sizeCreateVisualVariablesParams {
     view: View = null,
     worldScale: js.UndefOr[scala.Boolean] = js.undefined
   ): sizeCreateVisualVariablesParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (axis != null) __obj.updateDynamic("axis")(axis)
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)

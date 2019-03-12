@@ -14,11 +14,11 @@ trait Anon_Cancel extends js.Object {
 object Anon_Cancel {
   @scala.inline
   def apply(
-    cancel: js.Function1[scala.Double, js.Promise[scala.Unit]],
-    item: js.Function1[scala.Double, js.Promise[_]],
-    list: js.Function0[js.Promise[_]]
+    cancel: scala.Double => js.Promise[scala.Unit],
+    item: scala.Double => js.Promise[_],
+    list: () => js.Promise[_]
   ): Anon_Cancel = {
-    val __obj = js.Dynamic.literal(cancel = cancel, item = item, list = list)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), item = js.Any.fromFunction1(item), list = js.Any.fromFunction0(list))
   
     __obj.asInstanceOf[Anon_Cancel]
   }

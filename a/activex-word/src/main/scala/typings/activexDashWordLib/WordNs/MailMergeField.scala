@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.MailMergeField")
 @js.native
 class MailMergeField protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   var Code: Range = js.native
   val Creator: scala.Double = js.native
   var Locked: scala.Boolean = js.native

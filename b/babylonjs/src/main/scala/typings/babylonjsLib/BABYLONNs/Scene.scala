@@ -550,7 +550,7 @@ class Scene protected () extends AbstractScene {
   /**
     * Gets the list of meshes imported to the scene through SceneLoader
     */
-  var importedMeshesFiles: js.Array[nodeLib.String] = js.native
+  var importedMeshesFiles: js.Array[java.lang.String] = js.native
   /** @hidden */
   val interFramePerfCounter: Nullable[PerfCounter] = js.native
   /**

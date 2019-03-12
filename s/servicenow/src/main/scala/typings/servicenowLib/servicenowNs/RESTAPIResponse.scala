@@ -19,16 +19,16 @@ trait RESTAPIResponse extends js.Object {
 object RESTAPIResponse {
   @scala.inline
   def apply(
-    getStreamWriter: js.Function0[RESTAPIResponseStream],
-    setBody: js.Function1[js.Any, scala.Unit],
-    setContentType: js.Function1[java.lang.String, scala.Unit],
-    setError: js.Function1[js.Any, scala.Unit],
-    setHeader: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    setHeaders: js.Function1[js.Any, scala.Unit],
-    setLocation: js.Function1[java.lang.String, scala.Unit],
-    setStatus: js.Function1[scala.Double, scala.Unit]
+    getStreamWriter: () => RESTAPIResponseStream,
+    setBody: js.Any => scala.Unit,
+    setContentType: java.lang.String => scala.Unit,
+    setError: js.Any => scala.Unit,
+    setHeader: (java.lang.String, java.lang.String) => scala.Unit,
+    setHeaders: js.Any => scala.Unit,
+    setLocation: java.lang.String => scala.Unit,
+    setStatus: scala.Double => scala.Unit
   ): RESTAPIResponse = {
-    val __obj = js.Dynamic.literal(getStreamWriter = getStreamWriter, setBody = setBody, setContentType = setContentType, setError = setError, setHeader = setHeader, setHeaders = setHeaders, setLocation = setLocation, setStatus = setStatus)
+    val __obj = js.Dynamic.literal(getStreamWriter = js.Any.fromFunction0(getStreamWriter), setBody = js.Any.fromFunction1(setBody), setContentType = js.Any.fromFunction1(setContentType), setError = js.Any.fromFunction1(setError), setHeader = js.Any.fromFunction2(setHeader), setHeaders = js.Any.fromFunction1(setHeaders), setLocation = js.Any.fromFunction1(setLocation), setStatus = js.Any.fromFunction1(setStatus))
   
     __obj.asInstanceOf[RESTAPIResponse]
   }

@@ -21,7 +21,7 @@ trait Update extends js.Object {
   /**
     * The primary key of the item to be updated. Each element consists of an attribute name and a value for that attribute.
     */
-  var Key: Key
+  var Key: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.Key
   /**
     * Use ReturnValuesOnConditionCheckFailure to get the item attributes if the Update condition fails. For ReturnValuesOnConditionCheckFailure, the valid values are: NONE, ALL_OLD, UPDATED_OLD, ALL_NEW, UPDATED_NEW.
     */
@@ -29,11 +29,11 @@ trait Update extends js.Object {
   /**
     * Name of the table for the UpdateItem request.
     */
-  var TableName: TableName
+  var TableName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TableName
   /**
     * An expression that defines one or more attributes to be updated, the action to be performed on them, and new value(s) for them.
     */
-  var UpdateExpression: UpdateExpression
+  var UpdateExpression: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.UpdateExpression
 }
 
 object Update {

@@ -36,6 +36,6 @@ object ^ extends js.Object {
     tags: js.Array[java.lang.String],
     timestamp: scala.Double
   ): scala.Unit = js.native
-  def init(options: datadogDashMetricsLib.datadogDashMetricsMod.BufferedMetricsLoggerOptions): scala.Unit = js.native
+  def init(options: BufferedMetricsLoggerOptions): scala.Unit = js.native
 }
 

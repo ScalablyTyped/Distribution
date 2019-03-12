@@ -11,8 +11,8 @@ trait IProvisioningAgentStaticMethods extends js.Object {
 
 object IProvisioningAgentStaticMethods {
   @scala.inline
-  def apply(createFromNetworkAccountId: js.Function1[java.lang.String, ProvisioningAgent]): IProvisioningAgentStaticMethods = {
-    val __obj = js.Dynamic.literal(createFromNetworkAccountId = createFromNetworkAccountId)
+  def apply(createFromNetworkAccountId: java.lang.String => ProvisioningAgent): IProvisioningAgentStaticMethods = {
+    val __obj = js.Dynamic.literal(createFromNetworkAccountId = js.Any.fromFunction1(createFromNetworkAccountId))
   
     __obj.asInstanceOf[IProvisioningAgentStaticMethods]
   }

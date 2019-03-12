@@ -12,10 +12,10 @@ trait RouterProps extends js.Object {
 
 object RouterProps {
   @scala.inline
-  def apply(onError: js.Function1[/* error */ js.Any, _] = null, onUpdate: js.Function0[_] = null): RouterProps = {
+  def apply(onError: /* error */ js.Any => _ = null, onUpdate: () => _ = null): RouterProps = {
     val __obj = js.Dynamic.literal()
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction0(onUpdate))
     __obj.asInstanceOf[RouterProps]
   }
 }

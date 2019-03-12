@@ -25,12 +25,8 @@ trait SinonMatcher extends js.Object {
 
 object SinonMatcher {
   @scala.inline
-  def apply(
-    and: js.Function1[SinonMatcher, SinonMatcher],
-    or: js.Function1[SinonMatcher, SinonMatcher],
-    test: js.Function1[js.Any, scala.Boolean]
-  ): SinonMatcher = {
-    val __obj = js.Dynamic.literal(and = and, or = or, test = test)
+  def apply(and: SinonMatcher => SinonMatcher, or: SinonMatcher => SinonMatcher, test: js.Any => scala.Boolean): SinonMatcher = {
+    val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), or = js.Any.fromFunction1(or), test = js.Any.fromFunction1(test))
   
     __obj.asInstanceOf[SinonMatcher]
   }

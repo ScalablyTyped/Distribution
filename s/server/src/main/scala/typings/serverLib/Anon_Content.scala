@@ -14,9 +14,9 @@ object Anon_Content {
   @scala.inline
   def apply(
     level: serverLib.typingsCommonMod.LogLevel,
-    report: js.Function2[java.lang.String, serverLib.typingsCommonMod.LogLevel, scala.Unit]
+    report: (java.lang.String, serverLib.typingsCommonMod.LogLevel) => scala.Unit
   ): Anon_Content = {
-    val __obj = js.Dynamic.literal(level = level, report = report)
+    val __obj = js.Dynamic.literal(level = level, report = js.Any.fromFunction2(report))
   
     __obj.asInstanceOf[Anon_Content]
   }

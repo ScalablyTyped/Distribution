@@ -17,9 +17,9 @@ object Anon_Anim {
     anim: scala.Double,
     name: java.lang.String,
     styles: java.lang.String,
-    toString: js.Function0[java.lang.String]
+    toString: () => java.lang.String
   ): Anon_Anim = {
-    val __obj = js.Dynamic.literal(anim = anim, name = name, styles = styles, toString = toString)
+    val __obj = js.Dynamic.literal(anim = anim, name = name, styles = styles, toString = js.Any.fromFunction0(toString))
   
     __obj.asInstanceOf[Anon_Anim]
   }

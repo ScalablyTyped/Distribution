@@ -13,7 +13,7 @@ trait Worker
   var queue: Queue = js.native
   var `type`: java.lang.String = js.native
   def emitJobEvent(event: js.Object, job: Job, arg1: js.Any, arg2: js.Any): scala.Unit = js.native
-  def error(err: nodeLib.Error, job: Job): Worker = js.native
+  def error(err: stdLib.Error, job: Job): Worker = js.native
   def failed(job: Job, theErr: js.Object): Worker = js.native
   def failed(job: Job, theErr: js.Object, fn: js.Function): Worker = js.native
   /* private */ def getJob(fn: js.Function): scala.Unit = js.native

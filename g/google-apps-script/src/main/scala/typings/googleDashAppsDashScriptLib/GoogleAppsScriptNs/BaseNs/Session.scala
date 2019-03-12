@@ -18,15 +18,15 @@ trait Session extends js.Object {
 object Session {
   @scala.inline
   def apply(
-    getActiveUser: js.Function0[User],
-    getActiveUserLocale: js.Function0[java.lang.String],
-    getEffectiveUser: js.Function0[User],
-    getScriptTimeZone: js.Function0[java.lang.String],
-    getTemporaryActiveUserKey: js.Function0[java.lang.String],
-    getTimeZone: js.Function0[java.lang.String],
-    getUser: js.Function0[User]
+    getActiveUser: () => User,
+    getActiveUserLocale: () => java.lang.String,
+    getEffectiveUser: () => User,
+    getScriptTimeZone: () => java.lang.String,
+    getTemporaryActiveUserKey: () => java.lang.String,
+    getTimeZone: () => java.lang.String,
+    getUser: () => User
   ): Session = {
-    val __obj = js.Dynamic.literal(getActiveUser = getActiveUser, getActiveUserLocale = getActiveUserLocale, getEffectiveUser = getEffectiveUser, getScriptTimeZone = getScriptTimeZone, getTemporaryActiveUserKey = getTemporaryActiveUserKey, getTimeZone = getTimeZone, getUser = getUser)
+    val __obj = js.Dynamic.literal(getActiveUser = js.Any.fromFunction0(getActiveUser), getActiveUserLocale = js.Any.fromFunction0(getActiveUserLocale), getEffectiveUser = js.Any.fromFunction0(getEffectiveUser), getScriptTimeZone = js.Any.fromFunction0(getScriptTimeZone), getTemporaryActiveUserKey = js.Any.fromFunction0(getTemporaryActiveUserKey), getTimeZone = js.Any.fromFunction0(getTimeZone), getUser = js.Any.fromFunction0(getUser))
   
     __obj.asInstanceOf[Session]
   }

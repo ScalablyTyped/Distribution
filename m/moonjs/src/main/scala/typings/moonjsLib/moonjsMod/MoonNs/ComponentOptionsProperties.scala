@@ -27,7 +27,7 @@ object ComponentOptionsProperties {
     methods: Methods = null,
     name: java.lang.String = null,
     props: js.Array[Props] = null,
-    render: js.Function2[/* h */ CreateElement, /* ctx */ js.Any, VDomElement] = null,
+    render: (/* h */ CreateElement, /* ctx */ js.Any) => VDomElement = null,
     template: java.lang.String = null
   ): ComponentOptionsProperties[Props, Data, Methods] = {
     val __obj = js.Dynamic.literal()
@@ -38,7 +38,7 @@ object ComponentOptionsProperties {
     if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (props != null) __obj.updateDynamic("props")(props)
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction2(render))
     if (template != null) __obj.updateDynamic("template")(template)
     __obj.asInstanceOf[ComponentOptionsProperties[Props, Data, Methods]]
   }

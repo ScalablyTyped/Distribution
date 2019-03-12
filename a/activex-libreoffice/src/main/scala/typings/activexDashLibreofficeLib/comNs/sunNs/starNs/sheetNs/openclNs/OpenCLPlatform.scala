@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OpenCLPlatform extends js.Object {
-  var Devices: activexDashInteropLib.SafeArray[OpenCLDevice]
+  var Devices: stdLib.SafeArray[OpenCLDevice]
   /** The name of the platform as returned by OpenCL */
   var Name: java.lang.String
   var Vendor: java.lang.String
@@ -14,11 +14,7 @@ trait OpenCLPlatform extends js.Object {
 
 object OpenCLPlatform {
   @scala.inline
-  def apply(
-    Devices: activexDashInteropLib.SafeArray[OpenCLDevice],
-    Name: java.lang.String,
-    Vendor: java.lang.String
-  ): OpenCLPlatform = {
+  def apply(Devices: stdLib.SafeArray[OpenCLDevice], Name: java.lang.String, Vendor: java.lang.String): OpenCLPlatform = {
     val __obj = js.Dynamic.literal(Devices = Devices, Name = Name, Vendor = Vendor)
   
     __obj.asInstanceOf[OpenCLPlatform]

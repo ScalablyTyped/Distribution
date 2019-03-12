@@ -15,16 +15,10 @@ trait RepresentativesResource extends js.Object {
 object RepresentativesResource {
   @scala.inline
   def apply(
-    representativeInfoByAddress: js.Function1[
-      gapiDotClientDotCivicinfoLib.Anon_AddressAlt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RepresentativeInfoResponse]
-    ],
-    representativeInfoByDivision: js.Function1[
-      gapiDotClientDotCivicinfoLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[RepresentativeInfoData]
-    ]
+    representativeInfoByAddress: gapiDotClientDotCivicinfoLib.Anon_AddressAlt => gapiDotClientLib.gapiNs.clientNs.Request[RepresentativeInfoResponse],
+    representativeInfoByDivision: gapiDotClientDotCivicinfoLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[RepresentativeInfoData]
   ): RepresentativesResource = {
-    val __obj = js.Dynamic.literal(representativeInfoByAddress = representativeInfoByAddress, representativeInfoByDivision = representativeInfoByDivision)
+    val __obj = js.Dynamic.literal(representativeInfoByAddress = js.Any.fromFunction1(representativeInfoByAddress), representativeInfoByDivision = js.Any.fromFunction1(representativeInfoByDivision))
   
     __obj.asInstanceOf[RepresentativesResource]
   }

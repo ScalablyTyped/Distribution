@@ -21,10 +21,10 @@ object Shape {
     bbox: BBox,
     endcap: BezierCap,
     forward: Bezier,
-    intersections: js.Function1[Shape, js.Array[js.Array[java.lang.String]] | js.Array[js.Array[scala.Double]]],
+    intersections: Shape => js.Array[js.Array[java.lang.String]] | js.Array[js.Array[scala.Double]],
     startcap: BezierCap
   ): Shape = {
-    val __obj = js.Dynamic.literal(back = back, bbox = bbox, endcap = endcap, forward = forward, intersections = intersections, startcap = startcap)
+    val __obj = js.Dynamic.literal(back = back, bbox = bbox, endcap = endcap, forward = forward, intersections = js.Any.fromFunction1(intersections), startcap = startcap)
   
     __obj.asInstanceOf[Shape]
   }

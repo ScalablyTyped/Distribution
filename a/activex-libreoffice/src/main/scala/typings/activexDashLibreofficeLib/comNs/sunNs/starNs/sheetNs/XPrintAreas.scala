@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait XPrintAreas
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** returns a sequence containing all print areas of the sheet. */
-  var PrintAreas: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
+  var PrintAreas: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
   /** returns, whether the title columns are repeated on all subsequent print pages to the right. */
   var PrintTitleColumns: scala.Boolean
   /** returns, whether the title rows are repeated on all subsequent print pages to the bottom. */
@@ -29,7 +29,7 @@ trait XPrintAreas
     */
   var TitleRows: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress
   /** returns a sequence containing all print areas of the sheet. */
-  def getPrintAreas(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
+  def getPrintAreas(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
   /** returns, whether the title columns are repeated on all subsequent print pages to the right. */
   def getPrintTitleColumns(): scala.Boolean
   /** returns, whether the title rows are repeated on all subsequent print pages to the bottom. */
@@ -91,31 +91,26 @@ trait XPrintAreas
 object XPrintAreas {
   @scala.inline
   def apply(
-    PrintAreas: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    PrintAreas: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
     PrintTitleColumns: scala.Boolean,
     PrintTitleRows: scala.Boolean,
     TitleColumns: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
     TitleRows: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
-    acquire: js.Function0[scala.Unit],
-    getPrintAreas: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
-    ],
-    getPrintTitleColumns: js.Function0[scala.Boolean],
-    getPrintTitleRows: js.Function0[scala.Boolean],
-    getTitleColumns: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
-    getTitleRows: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setPrintAreas: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress], 
-      scala.Unit
-    ],
-    setPrintTitleColumns: js.Function1[scala.Boolean, scala.Unit],
-    setPrintTitleRows: js.Function1[scala.Boolean, scala.Unit],
-    setTitleColumns: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit],
-    setTitleRows: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit]
+    acquire: () => scala.Unit,
+    getPrintAreas: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    getPrintTitleColumns: () => scala.Boolean,
+    getPrintTitleRows: () => scala.Boolean,
+    getTitleColumns: () => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
+    getTitleRows: () => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setPrintAreas: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress] => scala.Unit,
+    setPrintTitleColumns: scala.Boolean => scala.Unit,
+    setPrintTitleRows: scala.Boolean => scala.Unit,
+    setTitleColumns: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress => scala.Unit,
+    setTitleRows: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress => scala.Unit
   ): XPrintAreas = {
-    val __obj = js.Dynamic.literal(PrintAreas = PrintAreas, PrintTitleColumns = PrintTitleColumns, PrintTitleRows = PrintTitleRows, TitleColumns = TitleColumns, TitleRows = TitleRows, acquire = acquire, getPrintAreas = getPrintAreas, getPrintTitleColumns = getPrintTitleColumns, getPrintTitleRows = getPrintTitleRows, getTitleColumns = getTitleColumns, getTitleRows = getTitleRows, queryInterface = queryInterface, release = release, setPrintAreas = setPrintAreas, setPrintTitleColumns = setPrintTitleColumns, setPrintTitleRows = setPrintTitleRows, setTitleColumns = setTitleColumns, setTitleRows = setTitleRows)
+    val __obj = js.Dynamic.literal(PrintAreas = PrintAreas, PrintTitleColumns = PrintTitleColumns, PrintTitleRows = PrintTitleRows, TitleColumns = TitleColumns, TitleRows = TitleRows, acquire = js.Any.fromFunction0(acquire), getPrintAreas = js.Any.fromFunction0(getPrintAreas), getPrintTitleColumns = js.Any.fromFunction0(getPrintTitleColumns), getPrintTitleRows = js.Any.fromFunction0(getPrintTitleRows), getTitleColumns = js.Any.fromFunction0(getTitleColumns), getTitleRows = js.Any.fromFunction0(getTitleRows), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setPrintAreas = js.Any.fromFunction1(setPrintAreas), setPrintTitleColumns = js.Any.fromFunction1(setPrintTitleColumns), setPrintTitleRows = js.Any.fromFunction1(setPrintTitleRows), setTitleColumns = js.Any.fromFunction1(setTitleColumns), setTitleRows = js.Any.fromFunction1(setTitleRows))
   
     __obj.asInstanceOf[XPrintAreas]
   }

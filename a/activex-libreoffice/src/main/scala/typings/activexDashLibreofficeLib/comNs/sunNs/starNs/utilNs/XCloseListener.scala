@@ -55,18 +55,14 @@ trait XCloseListener
 object XCloseListener {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    notifyClosing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
-    queryClosing: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, 
-      scala.Boolean, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    disposing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    notifyClosing: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject => scala.Unit,
+    queryClosing: (activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Boolean) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCloseListener = {
-    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, notifyClosing = notifyClosing, queryClosing = queryClosing, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), notifyClosing = js.Any.fromFunction1(notifyClosing), queryClosing = js.Any.fromFunction2(queryClosing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCloseListener]
   }

@@ -27,22 +27,14 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    dataToFeatures: js.Function1[/* obj */ js.Any, js.Array[Feature]] = null,
+    dataToFeatures: /* obj */ js.Any => js.Array[Feature] = null,
     dataUrl: java.lang.String = null,
-    featuresToRows: js.Function6[
-      /* features */ js.Array[Feature], 
-      /* x */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.X, 
-      /* y */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Y, 
-      /* z */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, 
-      /* tileSize */ TileSize, 
-      /* helpers */ Helpers, 
-      js.Array[heredatalensLib.HNs.datalensNs.ObjectLayerNs.Row]
-    ] = null
+    featuresToRows: (/* features */ js.Array[Feature], /* x */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.X, /* y */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Y, /* z */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, /* tileSize */ TileSize, /* helpers */ Helpers) => js.Array[heredatalensLib.HNs.datalensNs.ObjectLayerNs.Row] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (dataToFeatures != null) __obj.updateDynamic("dataToFeatures")(dataToFeatures)
+    if (dataToFeatures != null) __obj.updateDynamic("dataToFeatures")(js.Any.fromFunction1(dataToFeatures))
     if (dataUrl != null) __obj.updateDynamic("dataUrl")(dataUrl)
-    if (featuresToRows != null) __obj.updateDynamic("featuresToRows")(featuresToRows)
+    if (featuresToRows != null) __obj.updateDynamic("featuresToRows")(js.Any.fromFunction6(featuresToRows))
     __obj.asInstanceOf[Options]
   }
 }

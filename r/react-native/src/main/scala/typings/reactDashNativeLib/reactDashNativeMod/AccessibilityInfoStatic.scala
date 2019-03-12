@@ -50,21 +50,13 @@ trait AccessibilityInfoStatic extends js.Object {
 object AccessibilityInfoStatic {
   @scala.inline
   def apply(
-    addEventListener: js.Function2[
-      reactDashNativeLib.AccessibilityEventName, 
-      js.Function1[/* event */ reactDashNativeLib.AccessibilityEvent, scala.Unit], 
-      scala.Unit
-    ],
-    announceForAccessibility: js.Function1[java.lang.String, scala.Unit],
-    fetch: js.Function0[js.Promise[scala.Boolean]],
-    removeEventListener: js.Function2[
-      reactDashNativeLib.AccessibilityEventName, 
-      js.Function1[/* event */ reactDashNativeLib.AccessibilityEvent, scala.Unit], 
-      scala.Unit
-    ],
-    setAccessibilityFocus: js.Function1[scala.Double, scala.Unit]
+    addEventListener: (reactDashNativeLib.AccessibilityEventName, js.Function1[/* event */ reactDashNativeLib.AccessibilityEvent, scala.Unit]) => scala.Unit,
+    announceForAccessibility: java.lang.String => scala.Unit,
+    fetch: () => js.Promise[scala.Boolean],
+    removeEventListener: (reactDashNativeLib.AccessibilityEventName, js.Function1[/* event */ reactDashNativeLib.AccessibilityEvent, scala.Unit]) => scala.Unit,
+    setAccessibilityFocus: scala.Double => scala.Unit
   ): AccessibilityInfoStatic = {
-    val __obj = js.Dynamic.literal(addEventListener = addEventListener, announceForAccessibility = announceForAccessibility, fetch = fetch, removeEventListener = removeEventListener, setAccessibilityFocus = setAccessibilityFocus)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), announceForAccessibility = js.Any.fromFunction1(announceForAccessibility), fetch = js.Any.fromFunction0(fetch), removeEventListener = js.Any.fromFunction2(removeEventListener), setAccessibilityFocus = js.Any.fromFunction1(setAccessibilityFocus))
   
     __obj.asInstanceOf[AccessibilityInfoStatic]
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PivotCache protected () extends js.Object {
   val ADOConnection: activexDashAdodbLib.ADODBNs.Connection = js.native
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   var BackgroundQuery: scala.Boolean = js.native
   var CommandText: java.lang.String = js.native
   var CommandType: XlCmdType = js.native
@@ -30,21 +30,21 @@ class PivotCache protected () extends js.Object {
   val RecordCount: scala.Double = js.native
   @JSName("Recordset")
   var Recordset_Original: activexDashAdodbLib.ADODBNs.Recordset = js.native
-  val RefreshDate: activexDashInteropLib.VarDate = js.native
+  val RefreshDate: stdLib.VarDate = js.native
   val RefreshName: java.lang.String = js.native
   var RefreshOnFileOpen: scala.Boolean = js.native
   var RefreshPeriod: scala.Double = js.native
   var RobustConnect: XlRobustConnect = js.native
   var SavePassword: scala.Boolean = js.native
   var SourceConnectionFile: java.lang.String = js.native
-  var SourceData: java.lang.String | activexDashInteropLib.SafeArray[java.lang.String] | PivotTable = js.native
+  var SourceData: java.lang.String | stdLib.SafeArray[java.lang.String] | PivotTable = js.native
   val SourceDataFile: java.lang.String = js.native
   val SourceType: XlPivotTableSourceType = js.native
   var Sql: js.Any = js.native
   var UpgradeOnRefresh: scala.Boolean = js.native
   var UseLocalConnection: scala.Boolean = js.native
   val Version: XlPivotTableVersionList = js.native
-  val WorkbookConnection: WorkbookConnection = js.native
+  val WorkbookConnection: activexDashExcelLib.ExcelNs.WorkbookConnection = js.native
   def CreatePivotTable(TableDestination: Range): PivotTable = js.native
   def CreatePivotTable(TableDestination: Range, TableName: java.lang.String): PivotTable = js.native
   def CreatePivotTable(TableDestination: Range, TableName: java.lang.String, ReadData: scala.Boolean): PivotTable = js.native

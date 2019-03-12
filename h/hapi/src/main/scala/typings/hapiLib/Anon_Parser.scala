@@ -16,12 +16,9 @@ trait Anon_Parser extends js.Object {
 object Anon_Parser {
   @scala.inline
   def apply(
-    parser: js.Function1[
-      hapiLib.hapiMod.UtilNs.Dictionary[java.lang.String], 
-      hapiLib.hapiMod.UtilNs.Dictionary[_]
-    ]
+    parser: hapiLib.hapiMod.UtilNs.Dictionary[java.lang.String] => hapiLib.hapiMod.UtilNs.Dictionary[_]
   ): Anon_Parser = {
-    val __obj = js.Dynamic.literal(parser = parser)
+    val __obj = js.Dynamic.literal(parser = js.Any.fromFunction1(parser))
   
     __obj.asInstanceOf[Anon_Parser]
   }

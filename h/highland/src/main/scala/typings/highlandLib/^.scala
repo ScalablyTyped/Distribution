@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var highland: highlandLib.HighlandStatic = js.native
+  var highland: HighlandStatic = js.native
 }
 

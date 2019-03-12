@@ -25,7 +25,7 @@ trait XResourceId extends js.Object {
     * Return the, possibly empty, list of anchor URLs. The URLs are ordered so that the one in position 0 is the direct anchor of the resource, while the
     * one in position i+1 is the direct anchor of the one in position i.
     */
-  val AnchorURLs: activexDashInteropLib.SafeArray[java.lang.String]
+  val AnchorURLs: stdLib.SafeArray[java.lang.String]
   /** Return an URL object of the resource URL that may contain arguments. */
   val FullResourceURL: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL
   /** Return the type prefix of the resource URL. This includes all up to and including the second slash. */
@@ -52,7 +52,7 @@ trait XResourceId extends js.Object {
     * Return the, possibly empty, list of anchor URLs. The URLs are ordered so that the one in position 0 is the direct anchor of the resource, while the
     * one in position i+1 is the direct anchor of the one in position i.
     */
-  def getAnchorURLs(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getAnchorURLs(): stdLib.SafeArray[java.lang.String]
   /** Return an URL object of the resource URL that may contain arguments. */
   def getFullResourceURL(): activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL
   /** Return the type prefix of the resource URL. This includes all up to and including the second slash. */
@@ -83,22 +83,22 @@ object XResourceId {
   @scala.inline
   def apply(
     Anchor: XResourceId,
-    AnchorURLs: activexDashInteropLib.SafeArray[java.lang.String],
+    AnchorURLs: stdLib.SafeArray[java.lang.String],
     FullResourceURL: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL,
     ResourceTypePrefix: java.lang.String,
     ResourceURL: java.lang.String,
-    clone: js.Function0[XResourceId],
-    compareTo: js.Function1[XResourceId, scala.Double],
-    getAnchor: js.Function0[XResourceId],
-    getAnchorURLs: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getFullResourceURL: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL],
-    getResourceTypePrefix: js.Function0[java.lang.String],
-    getResourceURL: js.Function0[java.lang.String],
-    hasAnchor: js.Function0[scala.Boolean],
-    isBoundTo: js.Function2[XResourceId, AnchorBindingMode, scala.Boolean],
-    isBoundToURL: js.Function2[java.lang.String, AnchorBindingMode, scala.Boolean]
+    clone: () => XResourceId,
+    compareTo: XResourceId => scala.Double,
+    getAnchor: () => XResourceId,
+    getAnchorURLs: () => stdLib.SafeArray[java.lang.String],
+    getFullResourceURL: () => activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL,
+    getResourceTypePrefix: () => java.lang.String,
+    getResourceURL: () => java.lang.String,
+    hasAnchor: () => scala.Boolean,
+    isBoundTo: (XResourceId, AnchorBindingMode) => scala.Boolean,
+    isBoundToURL: (java.lang.String, AnchorBindingMode) => scala.Boolean
   ): XResourceId = {
-    val __obj = js.Dynamic.literal(Anchor = Anchor, AnchorURLs = AnchorURLs, FullResourceURL = FullResourceURL, ResourceTypePrefix = ResourceTypePrefix, ResourceURL = ResourceURL, clone = clone, compareTo = compareTo, getAnchor = getAnchor, getAnchorURLs = getAnchorURLs, getFullResourceURL = getFullResourceURL, getResourceTypePrefix = getResourceTypePrefix, getResourceURL = getResourceURL, hasAnchor = hasAnchor, isBoundTo = isBoundTo, isBoundToURL = isBoundToURL)
+    val __obj = js.Dynamic.literal(Anchor = Anchor, AnchorURLs = AnchorURLs, FullResourceURL = FullResourceURL, ResourceTypePrefix = ResourceTypePrefix, ResourceURL = ResourceURL, clone = js.Any.fromFunction0(clone), compareTo = js.Any.fromFunction1(compareTo), getAnchor = js.Any.fromFunction0(getAnchor), getAnchorURLs = js.Any.fromFunction0(getAnchorURLs), getFullResourceURL = js.Any.fromFunction0(getFullResourceURL), getResourceTypePrefix = js.Any.fromFunction0(getResourceTypePrefix), getResourceURL = js.Any.fromFunction0(getResourceURL), hasAnchor = js.Any.fromFunction0(hasAnchor), isBoundTo = js.Any.fromFunction2(isBoundTo), isBoundToURL = js.Any.fromFunction2(isBoundToURL))
   
     __obj.asInstanceOf[XResourceId]
   }

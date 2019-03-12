@@ -10,9 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   /** Gets an array of all available voices. */
   def getVoices(): scala.Unit = js.native
-  def getVoices(
-    callback: js.Function1[/* voices */ js.Array[chromeDashAppsLib.chromeNs.ttsNs.TtsVoice], scala.Unit]
-  ): scala.Unit = js.native
+  def getVoices(callback: js.Function1[/* voices */ js.Array[TtsVoice], scala.Unit]): scala.Unit = js.native
   /** Checks whether the engine is currently speaking. On Mac OS X, the result is true whenever the system speech engine is speaking, even if the speech wasn't initiated by Chrome. */
   def isSpeaking(): scala.Unit = js.native
   def isSpeaking(callback: js.Function1[/* speaking */ scala.Boolean, scala.Unit]): scala.Unit = js.native
@@ -39,12 +37,8 @@ object ^ extends js.Object {
     * @param options The speech options.
     * @param callback Called right away, before speech finishes. Check chrome.runtime.lastError to make sure there were no errors. Use options.onEvent to get more detailed feedback.
     */
-  def speak(utterance: java.lang.String, options: chromeDashAppsLib.chromeNs.ttsNs.SpeakOptions): scala.Unit = js.native
-  def speak(
-    utterance: java.lang.String,
-    options: chromeDashAppsLib.chromeNs.ttsNs.SpeakOptions,
-    callback: js.Function
-  ): scala.Unit = js.native
+  def speak(utterance: java.lang.String, options: SpeakOptions): scala.Unit = js.native
+  def speak(utterance: java.lang.String, options: SpeakOptions, callback: js.Function): scala.Unit = js.native
   /** Stops any current speech and flushes the queue of any pending utterances. In addition, if speech was paused, it will now be un-paused for the next call to speak. */
   def stop(): scala.Unit = js.native
 }

@@ -14,13 +14,13 @@ trait Loader extends js.Object {
 object Loader {
   @scala.inline
   def apply(
-    getSource: js.Function1[java.lang.String, LoaderSource],
+    getSource: java.lang.String => LoaderSource,
     async: js.UndefOr[scala.Boolean] = js.undefined,
-    extend: js.Function1[Loader, Loader] = null
+    extend: Loader => Loader = null
   ): Loader = {
-    val __obj = js.Dynamic.literal(getSource = getSource)
+    val __obj = js.Dynamic.literal(getSource = js.Any.fromFunction1(getSource))
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (extend != null) __obj.updateDynamic("extend")(js.Any.fromFunction1(extend))
     __obj.asInstanceOf[Loader]
   }
 }

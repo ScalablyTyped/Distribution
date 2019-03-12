@@ -533,8 +533,8 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    actionBegin: js.Function1[/* e */ ActionBeginEventArgs, scala.Unit] = null,
-    actionComplete: js.Function1[/* e */ ActionCompleteEventArgs, scala.Unit] = null,
+    actionBegin: /* e */ ActionBeginEventArgs => scala.Unit = null,
+    actionComplete: /* e */ ActionCompleteEventArgs => scala.Unit = null,
     addDialogFields: js.Array[AddDialogField] = null,
     allowColumnResize: js.UndefOr[scala.Boolean] = js.undefined,
     allowDragAndDrop: js.UndefOr[scala.Boolean] = js.undefined,
@@ -548,18 +548,18 @@ object Model {
     baselineColor: java.lang.String = null,
     baselineEndDateMapping: java.lang.String = null,
     baselineStartDateMapping: java.lang.String = null,
-    beginEdit: js.Function1[/* e */ BeginEditEventArgs, scala.Unit] = null,
-    cellSelected: js.Function1[/* e */ CellSelectedEventArgs, scala.Unit] = null,
-    cellSelecting: js.Function1[/* e */ CellSelectingEventArgs, scala.Unit] = null,
+    beginEdit: /* e */ BeginEditEventArgs => scala.Unit = null,
+    cellSelected: /* e */ CellSelectedEventArgs => scala.Unit = null,
+    cellSelecting: /* e */ CellSelectingEventArgs => scala.Unit = null,
     cellTooltipTemplate: java.lang.String = null,
     childMapping: java.lang.String = null,
-    collapsed: js.Function1[/* e */ CollapsedEventArgs, scala.Unit] = null,
-    collapsing: js.Function1[/* e */ CollapsingEventArgs, scala.Unit] = null,
+    collapsed: /* e */ CollapsedEventArgs => scala.Unit = null,
+    collapsing: /* e */ CollapsingEventArgs => scala.Unit = null,
     columnDialogFields: js.Array[_] = null,
     connectorLineBackground: java.lang.String = null,
     connectorlineWidth: scala.Int | scala.Double = null,
-    contextMenuOpen: js.Function1[/* e */ ContextMenuOpenEventArgs, scala.Unit] = null,
-    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    contextMenuOpen: /* e */ ContextMenuOpenEventArgs => scala.Unit = null,
+    create: /* e */ CreateEventArgs => scala.Unit = null,
     cssClass: java.lang.String = null,
     dataSource: js.Array[_] = null,
     dateFormat: java.lang.String = null,
@@ -583,10 +583,10 @@ object Model {
     enableWBS: js.UndefOr[scala.Boolean] = js.undefined,
     enableWBSPredecessor: js.UndefOr[scala.Boolean] = js.undefined,
     endDateMapping: java.lang.String = null,
-    endEdit: js.Function1[/* e */ EndEditEventArgs, scala.Unit] = null,
+    endEdit: /* e */ EndEditEventArgs => scala.Unit = null,
     expandStateMapping: java.lang.String = null,
-    expanded: js.Function1[/* e */ ExpandedEventArgs, scala.Unit] = null,
-    expanding: js.Function1[/* e */ ExpandingEventArgs, scala.Unit] = null,
+    expanded: /* e */ ExpandedEventArgs => scala.Unit = null,
+    expanding: /* e */ ExpandingEventArgs => scala.Unit = null,
     filterSettings: FilterSettings = null,
     groupCollection: js.Array[_] = null,
     groupIdMapping: java.lang.String = null,
@@ -598,7 +598,7 @@ object Model {
     isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
     leftTaskLabelMapping: java.lang.String = null,
     leftTaskLabelTemplate: java.lang.String = null,
-    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    load: /* e */ LoadEventArgs => scala.Unit = null,
     locale: java.lang.String = null,
     milestoneMapping: java.lang.String = null,
     milestoneTemplate: java.lang.String = null,
@@ -616,8 +616,8 @@ object Model {
     progressbarTooltipTemplate: java.lang.String = null,
     progressbarTooltipTemplateId: java.lang.String = null,
     query: js.Any = null,
-    queryCellInfo: js.Function1[/* e */ QueryCellInfoEventArgs, scala.Unit] = null,
-    queryTaskbarInfo: js.Function1[/* e */ QueryTaskbarInfoEventArgs, scala.Unit] = null,
+    queryCellInfo: /* e */ QueryCellInfoEventArgs => scala.Unit = null,
+    queryTaskbarInfo: /* e */ QueryTaskbarInfoEventArgs => scala.Unit = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     renderBaseline: js.UndefOr[scala.Boolean] = js.undefined,
     resourceCollectionMapping: java.lang.String = null,
@@ -629,13 +629,13 @@ object Model {
     rightTaskLabelMapping: java.lang.String = null,
     rightTaskLabelTemplate: java.lang.String = null,
     roundOffDayworkingTime: js.UndefOr[scala.Boolean] = js.undefined,
-    rowDataBound: js.Function1[/* e */ RowDataBoundEventArgs, scala.Unit] = null,
-    rowDrag: js.Function1[/* e */ RowDragEventArgs, scala.Unit] = null,
-    rowDragStart: js.Function1[/* e */ RowDragStartEventArgs, scala.Unit] = null,
-    rowDragStop: js.Function1[/* e */ RowDragStopEventArgs, scala.Unit] = null,
+    rowDataBound: /* e */ RowDataBoundEventArgs => scala.Unit = null,
+    rowDrag: /* e */ RowDragEventArgs => scala.Unit = null,
+    rowDragStart: /* e */ RowDragStartEventArgs => scala.Unit = null,
+    rowDragStop: /* e */ RowDragStopEventArgs => scala.Unit = null,
     rowHeight: scala.Int | scala.Double = null,
-    rowSelected: js.Function1[/* e */ RowSelectedEventArgs, scala.Unit] = null,
-    rowSelecting: js.Function1[/* e */ RowSelectingEventArgs, scala.Unit] = null,
+    rowSelected: /* e */ RowSelectedEventArgs => scala.Unit = null,
+    rowSelecting: /* e */ RowSelectingEventArgs => scala.Unit = null,
     scheduleEndDate: java.lang.String = null,
     scheduleHeaderSettings: ScheduleHeaderSettings = null,
     scheduleStartDate: java.lang.String = null,
@@ -653,7 +653,7 @@ object Model {
     sizeSettings: SizeSettings = null,
     sortSettings: SortSettings = null,
     splitterPosition: java.lang.String = null,
-    splitterResized: js.Function1[/* e */ SplitterResizedEventArgs, scala.Unit] = null,
+    splitterResized: /* e */ SplitterResizedEventArgs => scala.Unit = null,
     splitterSettings: SplitterSettings = null,
     startDateMapping: java.lang.String = null,
     stripLines: js.Array[StripLine] = null,
@@ -664,16 +664,16 @@ object Model {
     taskSchedulingModeMapping: java.lang.String = null,
     taskType: TaskType | java.lang.String = null,
     taskbarBackground: java.lang.String = null,
-    taskbarClick: js.Function1[/* e */ TaskbarClickEventArgs, scala.Unit] = null,
-    taskbarEdited: js.Function1[/* e */ TaskbarEditedEventArgs, scala.Unit] = null,
-    taskbarEditing: js.Function1[/* e */ TaskbarEditingEventArgs, scala.Unit] = null,
+    taskbarClick: /* e */ TaskbarClickEventArgs => scala.Unit = null,
+    taskbarEdited: /* e */ TaskbarEditedEventArgs => scala.Unit = null,
+    taskbarEditing: /* e */ TaskbarEditingEventArgs => scala.Unit = null,
     taskbarEditingTooltipTemplate: java.lang.String = null,
     taskbarEditingTooltipTemplateId: java.lang.String = null,
     taskbarHeight: scala.Int | scala.Double = null,
     taskbarTemplate: java.lang.String = null,
     taskbarTooltipTemplate: java.lang.String = null,
     taskbarTooltipTemplateId: java.lang.String = null,
-    toolbarClick: js.Function1[/* e */ ToolbarClickEventArgs, scala.Unit] = null,
+    toolbarClick: /* e */ ToolbarClickEventArgs => scala.Unit = null,
     toolbarSettings: ToolbarSettings = null,
     treeColumnIndex: scala.Int | scala.Double = null,
     validateManualTasksOnLinking: js.UndefOr[scala.Boolean] = js.undefined,
@@ -685,8 +685,8 @@ object Model {
     workingTimeScale: workingTimeScale | java.lang.String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (actionBegin != null) __obj.updateDynamic("actionBegin")(actionBegin)
-    if (actionComplete != null) __obj.updateDynamic("actionComplete")(actionComplete)
+    if (actionBegin != null) __obj.updateDynamic("actionBegin")(js.Any.fromFunction1(actionBegin))
+    if (actionComplete != null) __obj.updateDynamic("actionComplete")(js.Any.fromFunction1(actionComplete))
     if (addDialogFields != null) __obj.updateDynamic("addDialogFields")(addDialogFields)
     if (!js.isUndefined(allowColumnResize)) __obj.updateDynamic("allowColumnResize")(allowColumnResize)
     if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop)
@@ -700,18 +700,18 @@ object Model {
     if (baselineColor != null) __obj.updateDynamic("baselineColor")(baselineColor)
     if (baselineEndDateMapping != null) __obj.updateDynamic("baselineEndDateMapping")(baselineEndDateMapping)
     if (baselineStartDateMapping != null) __obj.updateDynamic("baselineStartDateMapping")(baselineStartDateMapping)
-    if (beginEdit != null) __obj.updateDynamic("beginEdit")(beginEdit)
-    if (cellSelected != null) __obj.updateDynamic("cellSelected")(cellSelected)
-    if (cellSelecting != null) __obj.updateDynamic("cellSelecting")(cellSelecting)
+    if (beginEdit != null) __obj.updateDynamic("beginEdit")(js.Any.fromFunction1(beginEdit))
+    if (cellSelected != null) __obj.updateDynamic("cellSelected")(js.Any.fromFunction1(cellSelected))
+    if (cellSelecting != null) __obj.updateDynamic("cellSelecting")(js.Any.fromFunction1(cellSelecting))
     if (cellTooltipTemplate != null) __obj.updateDynamic("cellTooltipTemplate")(cellTooltipTemplate)
     if (childMapping != null) __obj.updateDynamic("childMapping")(childMapping)
-    if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed)
-    if (collapsing != null) __obj.updateDynamic("collapsing")(collapsing)
+    if (collapsed != null) __obj.updateDynamic("collapsed")(js.Any.fromFunction1(collapsed))
+    if (collapsing != null) __obj.updateDynamic("collapsing")(js.Any.fromFunction1(collapsing))
     if (columnDialogFields != null) __obj.updateDynamic("columnDialogFields")(columnDialogFields)
     if (connectorLineBackground != null) __obj.updateDynamic("connectorLineBackground")(connectorLineBackground)
     if (connectorlineWidth != null) __obj.updateDynamic("connectorlineWidth")(connectorlineWidth.asInstanceOf[js.Any])
-    if (contextMenuOpen != null) __obj.updateDynamic("contextMenuOpen")(contextMenuOpen)
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (contextMenuOpen != null) __obj.updateDynamic("contextMenuOpen")(js.Any.fromFunction1(contextMenuOpen))
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
@@ -735,10 +735,10 @@ object Model {
     if (!js.isUndefined(enableWBS)) __obj.updateDynamic("enableWBS")(enableWBS)
     if (!js.isUndefined(enableWBSPredecessor)) __obj.updateDynamic("enableWBSPredecessor")(enableWBSPredecessor)
     if (endDateMapping != null) __obj.updateDynamic("endDateMapping")(endDateMapping)
-    if (endEdit != null) __obj.updateDynamic("endEdit")(endEdit)
+    if (endEdit != null) __obj.updateDynamic("endEdit")(js.Any.fromFunction1(endEdit))
     if (expandStateMapping != null) __obj.updateDynamic("expandStateMapping")(expandStateMapping)
-    if (expanded != null) __obj.updateDynamic("expanded")(expanded)
-    if (expanding != null) __obj.updateDynamic("expanding")(expanding)
+    if (expanded != null) __obj.updateDynamic("expanded")(js.Any.fromFunction1(expanded))
+    if (expanding != null) __obj.updateDynamic("expanding")(js.Any.fromFunction1(expanding))
     if (filterSettings != null) __obj.updateDynamic("filterSettings")(filterSettings)
     if (groupCollection != null) __obj.updateDynamic("groupCollection")(groupCollection)
     if (groupIdMapping != null) __obj.updateDynamic("groupIdMapping")(groupIdMapping)
@@ -750,7 +750,7 @@ object Model {
     if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
     if (leftTaskLabelMapping != null) __obj.updateDynamic("leftTaskLabelMapping")(leftTaskLabelMapping)
     if (leftTaskLabelTemplate != null) __obj.updateDynamic("leftTaskLabelTemplate")(leftTaskLabelTemplate)
-    if (load != null) __obj.updateDynamic("load")(load)
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (milestoneMapping != null) __obj.updateDynamic("milestoneMapping")(milestoneMapping)
     if (milestoneTemplate != null) __obj.updateDynamic("milestoneTemplate")(milestoneTemplate)
@@ -768,8 +768,8 @@ object Model {
     if (progressbarTooltipTemplate != null) __obj.updateDynamic("progressbarTooltipTemplate")(progressbarTooltipTemplate)
     if (progressbarTooltipTemplateId != null) __obj.updateDynamic("progressbarTooltipTemplateId")(progressbarTooltipTemplateId)
     if (query != null) __obj.updateDynamic("query")(query)
-    if (queryCellInfo != null) __obj.updateDynamic("queryCellInfo")(queryCellInfo)
-    if (queryTaskbarInfo != null) __obj.updateDynamic("queryTaskbarInfo")(queryTaskbarInfo)
+    if (queryCellInfo != null) __obj.updateDynamic("queryCellInfo")(js.Any.fromFunction1(queryCellInfo))
+    if (queryTaskbarInfo != null) __obj.updateDynamic("queryTaskbarInfo")(js.Any.fromFunction1(queryTaskbarInfo))
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (!js.isUndefined(renderBaseline)) __obj.updateDynamic("renderBaseline")(renderBaseline)
     if (resourceCollectionMapping != null) __obj.updateDynamic("resourceCollectionMapping")(resourceCollectionMapping)
@@ -781,13 +781,13 @@ object Model {
     if (rightTaskLabelMapping != null) __obj.updateDynamic("rightTaskLabelMapping")(rightTaskLabelMapping)
     if (rightTaskLabelTemplate != null) __obj.updateDynamic("rightTaskLabelTemplate")(rightTaskLabelTemplate)
     if (!js.isUndefined(roundOffDayworkingTime)) __obj.updateDynamic("roundOffDayworkingTime")(roundOffDayworkingTime)
-    if (rowDataBound != null) __obj.updateDynamic("rowDataBound")(rowDataBound)
-    if (rowDrag != null) __obj.updateDynamic("rowDrag")(rowDrag)
-    if (rowDragStart != null) __obj.updateDynamic("rowDragStart")(rowDragStart)
-    if (rowDragStop != null) __obj.updateDynamic("rowDragStop")(rowDragStop)
+    if (rowDataBound != null) __obj.updateDynamic("rowDataBound")(js.Any.fromFunction1(rowDataBound))
+    if (rowDrag != null) __obj.updateDynamic("rowDrag")(js.Any.fromFunction1(rowDrag))
+    if (rowDragStart != null) __obj.updateDynamic("rowDragStart")(js.Any.fromFunction1(rowDragStart))
+    if (rowDragStop != null) __obj.updateDynamic("rowDragStop")(js.Any.fromFunction1(rowDragStop))
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (rowSelected != null) __obj.updateDynamic("rowSelected")(rowSelected)
-    if (rowSelecting != null) __obj.updateDynamic("rowSelecting")(rowSelecting)
+    if (rowSelected != null) __obj.updateDynamic("rowSelected")(js.Any.fromFunction1(rowSelected))
+    if (rowSelecting != null) __obj.updateDynamic("rowSelecting")(js.Any.fromFunction1(rowSelecting))
     if (scheduleEndDate != null) __obj.updateDynamic("scheduleEndDate")(scheduleEndDate)
     if (scheduleHeaderSettings != null) __obj.updateDynamic("scheduleHeaderSettings")(scheduleHeaderSettings)
     if (scheduleStartDate != null) __obj.updateDynamic("scheduleStartDate")(scheduleStartDate)
@@ -805,7 +805,7 @@ object Model {
     if (sizeSettings != null) __obj.updateDynamic("sizeSettings")(sizeSettings)
     if (sortSettings != null) __obj.updateDynamic("sortSettings")(sortSettings)
     if (splitterPosition != null) __obj.updateDynamic("splitterPosition")(splitterPosition)
-    if (splitterResized != null) __obj.updateDynamic("splitterResized")(splitterResized)
+    if (splitterResized != null) __obj.updateDynamic("splitterResized")(js.Any.fromFunction1(splitterResized))
     if (splitterSettings != null) __obj.updateDynamic("splitterSettings")(splitterSettings)
     if (startDateMapping != null) __obj.updateDynamic("startDateMapping")(startDateMapping)
     if (stripLines != null) __obj.updateDynamic("stripLines")(stripLines)
@@ -816,16 +816,16 @@ object Model {
     if (taskSchedulingModeMapping != null) __obj.updateDynamic("taskSchedulingModeMapping")(taskSchedulingModeMapping)
     if (taskType != null) __obj.updateDynamic("taskType")(taskType.asInstanceOf[js.Any])
     if (taskbarBackground != null) __obj.updateDynamic("taskbarBackground")(taskbarBackground)
-    if (taskbarClick != null) __obj.updateDynamic("taskbarClick")(taskbarClick)
-    if (taskbarEdited != null) __obj.updateDynamic("taskbarEdited")(taskbarEdited)
-    if (taskbarEditing != null) __obj.updateDynamic("taskbarEditing")(taskbarEditing)
+    if (taskbarClick != null) __obj.updateDynamic("taskbarClick")(js.Any.fromFunction1(taskbarClick))
+    if (taskbarEdited != null) __obj.updateDynamic("taskbarEdited")(js.Any.fromFunction1(taskbarEdited))
+    if (taskbarEditing != null) __obj.updateDynamic("taskbarEditing")(js.Any.fromFunction1(taskbarEditing))
     if (taskbarEditingTooltipTemplate != null) __obj.updateDynamic("taskbarEditingTooltipTemplate")(taskbarEditingTooltipTemplate)
     if (taskbarEditingTooltipTemplateId != null) __obj.updateDynamic("taskbarEditingTooltipTemplateId")(taskbarEditingTooltipTemplateId)
     if (taskbarHeight != null) __obj.updateDynamic("taskbarHeight")(taskbarHeight.asInstanceOf[js.Any])
     if (taskbarTemplate != null) __obj.updateDynamic("taskbarTemplate")(taskbarTemplate)
     if (taskbarTooltipTemplate != null) __obj.updateDynamic("taskbarTooltipTemplate")(taskbarTooltipTemplate)
     if (taskbarTooltipTemplateId != null) __obj.updateDynamic("taskbarTooltipTemplateId")(taskbarTooltipTemplateId)
-    if (toolbarClick != null) __obj.updateDynamic("toolbarClick")(toolbarClick)
+    if (toolbarClick != null) __obj.updateDynamic("toolbarClick")(js.Any.fromFunction1(toolbarClick))
     if (toolbarSettings != null) __obj.updateDynamic("toolbarSettings")(toolbarSettings)
     if (treeColumnIndex != null) __obj.updateDynamic("treeColumnIndex")(treeColumnIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(validateManualTasksOnLinking)) __obj.updateDynamic("validateManualTasksOnLinking")(validateManualTasksOnLinking)

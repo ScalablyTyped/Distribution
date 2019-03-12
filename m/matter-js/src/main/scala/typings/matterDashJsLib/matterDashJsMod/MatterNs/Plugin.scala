@@ -15,12 +15,12 @@ trait Plugin extends js.Object {
 object Plugin {
   @scala.inline
   def apply(
-    install: js.Function0[scala.Unit],
+    install: () => scala.Unit,
     name: java.lang.String,
     version: java.lang.String,
     `for`: java.lang.String = null
   ): Plugin = {
-    val __obj = js.Dynamic.literal(install = install, name = name, version = version)
+    val __obj = js.Dynamic.literal(install = js.Any.fromFunction0(install), name = name, version = version)
     if (`for` != null) __obj.updateDynamic("for")(`for`)
     __obj.asInstanceOf[Plugin]
   }

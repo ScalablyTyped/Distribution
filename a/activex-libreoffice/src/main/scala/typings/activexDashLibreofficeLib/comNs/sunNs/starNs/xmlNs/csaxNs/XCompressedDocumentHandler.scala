@@ -36,23 +36,19 @@ trait XCompressedDocumentHandler
 object XCompressedDocumentHandler {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    compressedCharacters: js.Function1[java.lang.String, scala.Unit],
-    compressedEndDocument: js.Function0[scala.Unit],
-    compressedEndElement: js.Function1[java.lang.String, scala.Unit],
-    compressedIgnorableWhitespace: js.Function1[java.lang.String, scala.Unit],
-    compressedProcessingInstruction: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    compressedSetDocumentLocator: js.Function4[scala.Double, scala.Double, java.lang.String, java.lang.String, scala.Unit],
-    compressedStartDocument: js.Function0[scala.Unit],
-    compressedStartElement: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XMLAttribute], 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    compressedCharacters: java.lang.String => scala.Unit,
+    compressedEndDocument: () => scala.Unit,
+    compressedEndElement: java.lang.String => scala.Unit,
+    compressedIgnorableWhitespace: java.lang.String => scala.Unit,
+    compressedProcessingInstruction: (java.lang.String, java.lang.String) => scala.Unit,
+    compressedSetDocumentLocator: (scala.Double, scala.Double, java.lang.String, java.lang.String) => scala.Unit,
+    compressedStartDocument: () => scala.Unit,
+    compressedStartElement: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XMLAttribute]) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCompressedDocumentHandler = {
-    val __obj = js.Dynamic.literal(acquire = acquire, compressedCharacters = compressedCharacters, compressedEndDocument = compressedEndDocument, compressedEndElement = compressedEndElement, compressedIgnorableWhitespace = compressedIgnorableWhitespace, compressedProcessingInstruction = compressedProcessingInstruction, compressedSetDocumentLocator = compressedSetDocumentLocator, compressedStartDocument = compressedStartDocument, compressedStartElement = compressedStartElement, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), compressedCharacters = js.Any.fromFunction1(compressedCharacters), compressedEndDocument = js.Any.fromFunction0(compressedEndDocument), compressedEndElement = js.Any.fromFunction1(compressedEndElement), compressedIgnorableWhitespace = js.Any.fromFunction1(compressedIgnorableWhitespace), compressedProcessingInstruction = js.Any.fromFunction2(compressedProcessingInstruction), compressedSetDocumentLocator = js.Any.fromFunction4(compressedSetDocumentLocator), compressedStartDocument = js.Any.fromFunction0(compressedStartDocument), compressedStartElement = js.Any.fromFunction2(compressedStartElement), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCompressedDocumentHandler]
   }

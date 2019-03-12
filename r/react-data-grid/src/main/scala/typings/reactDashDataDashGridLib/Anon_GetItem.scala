@@ -13,12 +13,8 @@ trait Anon_GetItem extends js.Object {
 
 object Anon_GetItem {
   @scala.inline
-  def apply(
-    getItem: js.Function0[js.Any],
-    getPosition: js.Function0[js.Any],
-    hideMenu: js.Function0[scala.Unit]
-  ): Anon_GetItem = {
-    val __obj = js.Dynamic.literal(getItem = getItem, getPosition = getPosition, hideMenu = hideMenu)
+  def apply(getItem: () => js.Any, getPosition: () => js.Any, hideMenu: () => scala.Unit): Anon_GetItem = {
+    val __obj = js.Dynamic.literal(getItem = js.Any.fromFunction0(getItem), getPosition = js.Any.fromFunction0(getPosition), hideMenu = js.Any.fromFunction0(hideMenu))
   
     __obj.asInstanceOf[Anon_GetItem]
   }

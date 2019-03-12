@@ -28,7 +28,7 @@ object IButtonGroup {
     defaultType: java.lang.String = null,
     frame: js.UndefOr[scala.Boolean] = js.undefined,
     layout: js.Any = null,
-    onBeforeAdd: js.Function1[/* component */ js.UndefOr[js.Any], scala.Unit] = null,
+    onBeforeAdd: /* component */ js.UndefOr[js.Any] => scala.Unit = null,
     titleAlign: java.lang.String = null
   ): IButtonGroup = {
     val __obj = js.Dynamic.literal()
@@ -39,7 +39,7 @@ object IButtonGroup {
     if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
     if (!js.isUndefined(frame)) __obj.updateDynamic("frame")(frame)
     if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (onBeforeAdd != null) __obj.updateDynamic("onBeforeAdd")(onBeforeAdd)
+    if (onBeforeAdd != null) __obj.updateDynamic("onBeforeAdd")(js.Any.fromFunction1(onBeforeAdd))
     if (titleAlign != null) __obj.updateDynamic("titleAlign")(titleAlign)
     __obj.asInstanceOf[IButtonGroup]
   }

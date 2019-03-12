@@ -12,8 +12,8 @@ trait Recase extends js.Object {
 
 object Recase {
   @scala.inline
-  def apply(camelCopy: js.Function1[js.Any, js.Any], snakeCopy: js.Function1[js.Any, js.Any]): Recase = {
-    val __obj = js.Dynamic.literal(camelCopy = camelCopy, snakeCopy = snakeCopy)
+  def apply(camelCopy: js.Any => js.Any, snakeCopy: js.Any => js.Any): Recase = {
+    val __obj = js.Dynamic.literal(camelCopy = js.Any.fromFunction1(camelCopy), snakeCopy = js.Any.fromFunction1(snakeCopy))
   
     __obj.asInstanceOf[Recase]
   }

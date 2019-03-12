@@ -20,14 +20,14 @@ object TableUserConfig {
     columnCount: scala.Int | scala.Double = null,
     columnDefault: ColumnConfig = null,
     columns: org.scalablytyped.runtime.NumberDictionary[ColumnConfig] = null,
-    drawHorizontalLine: js.Function2[/* index */ scala.Double, /* size */ scala.Double, scala.Boolean] = null
+    drawHorizontalLine: (/* index */ scala.Double, /* size */ scala.Double) => scala.Boolean = null
   ): TableUserConfig = {
     val __obj = js.Dynamic.literal()
     if (border != null) __obj.updateDynamic("border")(border)
     if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
     if (columnDefault != null) __obj.updateDynamic("columnDefault")(columnDefault)
     if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (drawHorizontalLine != null) __obj.updateDynamic("drawHorizontalLine")(drawHorizontalLine)
+    if (drawHorizontalLine != null) __obj.updateDynamic("drawHorizontalLine")(js.Any.fromFunction2(drawHorizontalLine))
     __obj.asInstanceOf[TableUserConfig]
   }
 }

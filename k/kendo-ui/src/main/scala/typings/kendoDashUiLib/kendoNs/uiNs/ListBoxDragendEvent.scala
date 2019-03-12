@@ -14,14 +14,14 @@ trait ListBoxDragendEvent extends ListBoxEvent {
 object ListBoxDragendEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: ListBox,
     dataItems: js.Any = null,
     draggableEvent: js.Any = null,
     items: js.Any = null
   ): ListBoxDragendEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (dataItems != null) __obj.updateDynamic("dataItems")(dataItems)
     if (draggableEvent != null) __obj.updateDynamic("draggableEvent")(draggableEvent)
     if (items != null) __obj.updateDynamic("items")(items)

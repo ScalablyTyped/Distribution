@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def calculatePrecision(value: java.lang.String): scala.Double = js.native
   def calculatePrecision(value: scala.Double): scala.Double = js.native
-  def fitContentToBounds(options: atUifabricUtilitiesLib.libMathMod.IFitContentToBoundsOptions): atUifabricUtilitiesLib.libISizeMod.ISize = js.native
+  def fitContentToBounds(options: IFitContentToBoundsOptions): atUifabricUtilitiesLib.libISizeMod.ISize = js.native
   def getDistanceBetweenPoints(
     point1: atUifabricUtilitiesLib.libIPointMod.IPoint,
     point2: atUifabricUtilitiesLib.libIPointMod.IPoint

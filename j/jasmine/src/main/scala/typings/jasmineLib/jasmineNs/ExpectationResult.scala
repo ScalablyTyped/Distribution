@@ -21,11 +21,11 @@ object ExpectationResult {
     expected: js.Any,
     matcherName: java.lang.String,
     message: java.lang.String,
-    passed: js.Function0[scala.Boolean],
+    passed: () => scala.Boolean,
     trace: Trace,
     `type`: java.lang.String
   ): ExpectationResult = {
-    val __obj = js.Dynamic.literal(actual = actual, expected = expected, matcherName = matcherName, message = message, passed = passed, trace = trace)
+    val __obj = js.Dynamic.literal(actual = actual, expected = expected, matcherName = matcherName, message = message, passed = js.Any.fromFunction0(passed), trace = trace)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ExpectationResult]
   }

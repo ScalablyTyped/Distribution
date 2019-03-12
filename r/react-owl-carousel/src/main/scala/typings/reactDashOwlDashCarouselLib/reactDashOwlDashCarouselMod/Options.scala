@@ -326,7 +326,7 @@ trait Options extends js.Object {
     * Set on any DOM element.
     * If you care about non responsive browser (like ie8) then use it on main wrapper. This will prevent from crazy resizing.
     */
-  var responsiveBaseElement: js.UndefOr[reactLib.Element] = js.undefined
+  var responsiveBaseElement: js.UndefOr[stdLib.Element] = js.undefined
   /**
     * Default: false
     * Optional helper class.
@@ -473,7 +473,7 @@ object Options {
     pullDrag: js.UndefOr[scala.Boolean] = js.undefined,
     refreshClass: java.lang.String = null,
     responsive: org.scalablytyped.runtime.StringDictionary[Options] = null,
-    responsiveBaseElement: reactLib.Element = null,
+    responsiveBaseElement: stdLib.Element = null,
     responsiveClass: java.lang.String | scala.Boolean = null,
     responsiveRefreshRate: scala.Int | scala.Double = null,
     rewind: js.UndefOr[scala.Boolean] = js.undefined,

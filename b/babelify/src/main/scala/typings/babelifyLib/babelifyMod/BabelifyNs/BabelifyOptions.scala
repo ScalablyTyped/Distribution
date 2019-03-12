@@ -33,7 +33,7 @@ object BabelifyOptions {
     filename: java.lang.String = null,
     filenameRelative: java.lang.String = null,
     generatorOpts: babelDashGeneratorLib.babelDashGeneratorMod.GeneratorOptions = null,
-    getModuleId: js.Function1[/* moduleName */ java.lang.String, java.lang.String] = null,
+    getModuleId: /* moduleName */ java.lang.String => java.lang.String = null,
     highlightCode: js.UndefOr[scala.Boolean] = js.undefined,
     ignore: js.Array[java.lang.String] = null,
     inputSourceMap: js.Object = null,
@@ -45,28 +45,23 @@ object BabelifyOptions {
     parserOpts: babylonLib.babylonMod.BabylonOptions = null,
     plugins: js.Array[_] = null,
     presets: js.Array[_] = null,
-    resolveModuleSource: js.Function2[/* source */ java.lang.String, /* filename */ java.lang.String, java.lang.String] = null,
+    resolveModuleSource: (/* source */ java.lang.String, /* filename */ java.lang.String) => java.lang.String = null,
     retainLines: js.UndefOr[scala.Boolean] = js.undefined,
-    shouldPrintComment: js.Function1[/* comment */ java.lang.String, scala.Boolean] = null,
+    shouldPrintComment: /* comment */ java.lang.String => scala.Boolean = null,
     sourceFileName: java.lang.String = null,
     sourceMapTarget: java.lang.String = null,
     sourceMaps: scala.Boolean | babelDashCoreLib.babelDashCoreLibStrings.`inline` | babelDashCoreLib.babelDashCoreLibStrings.both = null,
     sourceMapsAbsolute: js.UndefOr[scala.Boolean] = js.undefined,
     sourceRoot: java.lang.String = null,
     sourceType: babelDashCoreLib.babelDashCoreLibStrings.script | babelDashCoreLib.babelDashCoreLibStrings.module = null,
-    wrapPluginVisitorMethod: js.Function3[
-      /* pluginAlias */ java.lang.String, 
-      /* visitorType */ babelDashCoreLib.babelDashCoreLibStrings.enter | babelDashCoreLib.babelDashCoreLibStrings.exit, 
-      /* callback */ js.Function2[
-        /* path */ babelDashTraverseLib.babelDashTraverseMod.NodePath[babelDashTraverseLib.babelDashTraverseMod.Node], 
-        /* state */ js.Any, 
-        scala.Unit
-      ], 
-      js.Function2[
-        /* path */ babelDashTraverseLib.babelDashTraverseMod.NodePath[babelDashTraverseLib.babelDashTraverseMod.Node], 
-        /* state */ _, 
-        scala.Unit
-      ]
+    wrapPluginVisitorMethod: (/* pluginAlias */ java.lang.String, /* visitorType */ babelDashCoreLib.babelDashCoreLibStrings.enter | babelDashCoreLib.babelDashCoreLibStrings.exit, /* callback */ js.Function2[
+      /* path */ babelDashTraverseLib.babelDashTraverseMod.NodePath[babelDashTraverseLib.babelDashTraverseMod.Node], 
+      /* state */ js.Any, 
+      scala.Unit
+    ]) => js.Function2[
+      /* path */ babelDashTraverseLib.babelDashTraverseMod.NodePath[babelDashTraverseLib.babelDashTraverseMod.Node], 
+      /* state */ _, 
+      scala.Unit
     ] = null
   ): BabelifyOptions = {
     val __obj = js.Dynamic.literal()
@@ -83,7 +78,7 @@ object BabelifyOptions {
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (filenameRelative != null) __obj.updateDynamic("filenameRelative")(filenameRelative)
     if (generatorOpts != null) __obj.updateDynamic("generatorOpts")(generatorOpts)
-    if (getModuleId != null) __obj.updateDynamic("getModuleId")(getModuleId)
+    if (getModuleId != null) __obj.updateDynamic("getModuleId")(js.Any.fromFunction1(getModuleId))
     if (!js.isUndefined(highlightCode)) __obj.updateDynamic("highlightCode")(highlightCode)
     if (ignore != null) __obj.updateDynamic("ignore")(ignore)
     if (inputSourceMap != null) __obj.updateDynamic("inputSourceMap")(inputSourceMap)
@@ -95,16 +90,16 @@ object BabelifyOptions {
     if (parserOpts != null) __obj.updateDynamic("parserOpts")(parserOpts)
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)
     if (presets != null) __obj.updateDynamic("presets")(presets)
-    if (resolveModuleSource != null) __obj.updateDynamic("resolveModuleSource")(resolveModuleSource)
+    if (resolveModuleSource != null) __obj.updateDynamic("resolveModuleSource")(js.Any.fromFunction2(resolveModuleSource))
     if (!js.isUndefined(retainLines)) __obj.updateDynamic("retainLines")(retainLines)
-    if (shouldPrintComment != null) __obj.updateDynamic("shouldPrintComment")(shouldPrintComment)
+    if (shouldPrintComment != null) __obj.updateDynamic("shouldPrintComment")(js.Any.fromFunction1(shouldPrintComment))
     if (sourceFileName != null) __obj.updateDynamic("sourceFileName")(sourceFileName)
     if (sourceMapTarget != null) __obj.updateDynamic("sourceMapTarget")(sourceMapTarget)
     if (sourceMaps != null) __obj.updateDynamic("sourceMaps")(sourceMaps.asInstanceOf[js.Any])
     if (!js.isUndefined(sourceMapsAbsolute)) __obj.updateDynamic("sourceMapsAbsolute")(sourceMapsAbsolute)
     if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot)
     if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
-    if (wrapPluginVisitorMethod != null) __obj.updateDynamic("wrapPluginVisitorMethod")(wrapPluginVisitorMethod)
+    if (wrapPluginVisitorMethod != null) __obj.updateDynamic("wrapPluginVisitorMethod")(js.Any.fromFunction3(wrapPluginVisitorMethod))
     __obj.asInstanceOf[BabelifyOptions]
   }
 }

@@ -65,18 +65,18 @@ import scala.scalajs.js.annotation._
 object Instance {
   @scala.inline
   def apply(
-    TYPE: js.Function0[java.lang.String],
-    getHeight: js.Function0[scala.Double],
-    getLength: js.Function0[scala.Double],
-    getName: js.Function0[java.lang.String],
-    getVolume: js.Function0[scala.Double],
-    getWidth: js.Function0[scala.Double],
-    setHeight: js.Function1[scala.Double, scala.Unit],
-    setLength: js.Function1[scala.Double, scala.Unit],
-    setName: js.Function1[java.lang.String, scala.Unit],
-    setWidth: js.Function1[scala.Double, scala.Unit]
+    TYPE: () => java.lang.String,
+    getHeight: () => scala.Double,
+    getLength: () => scala.Double,
+    getName: () => java.lang.String,
+    getVolume: () => scala.Double,
+    getWidth: () => scala.Double,
+    setHeight: scala.Double => scala.Unit,
+    setLength: scala.Double => scala.Unit,
+    setName: java.lang.String => scala.Unit,
+    setWidth: scala.Double => scala.Unit
   ): Instance = {
-    val __obj = js.Dynamic.literal(TYPE = TYPE, getHeight = getHeight, getLength = getLength, getName = getName, getVolume = getVolume, getWidth = getWidth, setHeight = setHeight, setLength = setLength, setName = setName, setWidth = setWidth)
+    val __obj = js.Dynamic.literal(TYPE = js.Any.fromFunction0(TYPE), getHeight = js.Any.fromFunction0(getHeight), getLength = js.Any.fromFunction0(getLength), getName = js.Any.fromFunction0(getName), getVolume = js.Any.fromFunction0(getVolume), getWidth = js.Any.fromFunction0(getWidth), setHeight = js.Any.fromFunction1(setHeight), setLength = js.Any.fromFunction1(setLength), setName = js.Any.fromFunction1(setName), setWidth = js.Any.fromFunction1(setWidth))
   
     __obj.asInstanceOf[Instance]
   }

@@ -35,22 +35,16 @@ trait RemoteConsole extends Remote {
 object RemoteConsole {
   @scala.inline
   def apply(
-    attach: js.Function1[IConnection, scala.Unit],
+    attach: IConnection => scala.Unit,
     connection: IConnection,
-    error: js.Function1[java.lang.String, scala.Unit],
-    fillServerCapabilities: js.Function1[
-      vscodeDashLanguageserverDashProtocolLib.libProtocolMod.ServerCapabilities, 
-      scala.Unit
-    ],
-    info: js.Function1[java.lang.String, scala.Unit],
-    initialize: js.Function1[
-      vscodeDashLanguageserverDashProtocolLib.libProtocolMod.ClientCapabilities, 
-      scala.Unit
-    ],
-    log: js.Function1[java.lang.String, scala.Unit],
-    warn: js.Function1[java.lang.String, scala.Unit]
+    error: java.lang.String => scala.Unit,
+    fillServerCapabilities: vscodeDashLanguageserverDashProtocolLib.libProtocolMod.ServerCapabilities => scala.Unit,
+    info: java.lang.String => scala.Unit,
+    initialize: vscodeDashLanguageserverDashProtocolLib.libProtocolMod.ClientCapabilities => scala.Unit,
+    log: java.lang.String => scala.Unit,
+    warn: java.lang.String => scala.Unit
   ): RemoteConsole = {
-    val __obj = js.Dynamic.literal(attach = attach, connection = connection, error = error, fillServerCapabilities = fillServerCapabilities, info = info, initialize = initialize, log = log, warn = warn)
+    val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach), connection = connection, error = js.Any.fromFunction1(error), fillServerCapabilities = js.Any.fromFunction1(fillServerCapabilities), info = js.Any.fromFunction1(info), initialize = js.Any.fromFunction1(initialize), log = js.Any.fromFunction1(log), warn = js.Any.fromFunction1(warn))
   
     __obj.asInstanceOf[RemoteConsole]
   }

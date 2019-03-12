@@ -26,16 +26,10 @@ trait NamespacesResource extends js.Object {
 object NamespacesResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListNamespacesResponse]
-    ],
-    update: js.Function1[
-      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBearertokenCallbackFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Namespace]
-    ]
+    list: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[ListNamespacesResponse],
+    update: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBearertokenCallbackFields => gapiDotClientLib.gapiNs.clientNs.Request[Namespace]
   ): NamespacesResource = {
-    val __obj = js.Dynamic.literal(list = list, update = update)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[NamespacesResource]
   }

@@ -36,7 +36,7 @@ trait XAccessibleTextMarkup extends XAccessibleText {
     * @param TextMarkupType This specifies the type of the text markups to be returned - see TextMarkupType.
     * @returns If character index is in range [0..number of characters in the text-1], a sequence of TextSegments of the text markups at given character index o
     */
-  def getTextMarkupAtIndex(CharIndex: scala.Double, TextMarkupType: scala.Double): activexDashInteropLib.SafeArray[TextSegment]
+  def getTextMarkupAtIndex(CharIndex: scala.Double, TextMarkupType: scala.Double): stdLib.SafeArray[TextSegment]
   /**
     * Returns the number of text markup of the given text markup type of a text.
     *
@@ -56,35 +56,31 @@ object XAccessibleTextMarkup {
     SelectionEnd: scala.Double,
     SelectionStart: scala.Double,
     Text: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    copyText: js.Function2[scala.Double, scala.Double, scala.Boolean],
-    getCaretPosition: js.Function0[scala.Double],
-    getCharacter: js.Function1[scala.Double, java.lang.String],
-    getCharacterAttributes: js.Function2[
-      scala.Double, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
-    ],
-    getCharacterBounds: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
-    getCharacterCount: js.Function0[scala.Double],
-    getIndexAtPoint: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Double],
-    getSelectedText: js.Function0[java.lang.String],
-    getSelectionEnd: js.Function0[scala.Double],
-    getSelectionStart: js.Function0[scala.Double],
-    getText: js.Function0[java.lang.String],
-    getTextAtIndex: js.Function2[scala.Double, scala.Double, TextSegment],
-    getTextBeforeIndex: js.Function2[scala.Double, scala.Double, TextSegment],
-    getTextBehindIndex: js.Function2[scala.Double, scala.Double, TextSegment],
-    getTextMarkup: js.Function2[scala.Double, scala.Double, TextSegment],
-    getTextMarkupAtIndex: js.Function2[scala.Double, scala.Double, activexDashInteropLib.SafeArray[TextSegment]],
-    getTextMarkupCount: js.Function1[scala.Double, scala.Double],
-    getTextRange: js.Function2[scala.Double, scala.Double, java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setCaretPosition: js.Function1[scala.Double, scala.Boolean],
-    setSelection: js.Function2[scala.Double, scala.Double, scala.Boolean]
+    acquire: () => scala.Unit,
+    copyText: (scala.Double, scala.Double) => scala.Boolean,
+    getCaretPosition: () => scala.Double,
+    getCharacter: scala.Double => java.lang.String,
+    getCharacterAttributes: (scala.Double, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]) => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    getCharacterBounds: scala.Double => activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    getCharacterCount: () => scala.Double,
+    getIndexAtPoint: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point => scala.Double,
+    getSelectedText: () => java.lang.String,
+    getSelectionEnd: () => scala.Double,
+    getSelectionStart: () => scala.Double,
+    getText: () => java.lang.String,
+    getTextAtIndex: (scala.Double, scala.Double) => TextSegment,
+    getTextBeforeIndex: (scala.Double, scala.Double) => TextSegment,
+    getTextBehindIndex: (scala.Double, scala.Double) => TextSegment,
+    getTextMarkup: (scala.Double, scala.Double) => TextSegment,
+    getTextMarkupAtIndex: (scala.Double, scala.Double) => stdLib.SafeArray[TextSegment],
+    getTextMarkupCount: scala.Double => scala.Double,
+    getTextRange: (scala.Double, scala.Double) => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setCaretPosition: scala.Double => scala.Boolean,
+    setSelection: (scala.Double, scala.Double) => scala.Boolean
   ): XAccessibleTextMarkup = {
-    val __obj = js.Dynamic.literal(CaretPosition = CaretPosition, CharacterCount = CharacterCount, SelectedText = SelectedText, SelectionEnd = SelectionEnd, SelectionStart = SelectionStart, Text = Text, acquire = acquire, copyText = copyText, getCaretPosition = getCaretPosition, getCharacter = getCharacter, getCharacterAttributes = getCharacterAttributes, getCharacterBounds = getCharacterBounds, getCharacterCount = getCharacterCount, getIndexAtPoint = getIndexAtPoint, getSelectedText = getSelectedText, getSelectionEnd = getSelectionEnd, getSelectionStart = getSelectionStart, getText = getText, getTextAtIndex = getTextAtIndex, getTextBeforeIndex = getTextBeforeIndex, getTextBehindIndex = getTextBehindIndex, getTextMarkup = getTextMarkup, getTextMarkupAtIndex = getTextMarkupAtIndex, getTextMarkupCount = getTextMarkupCount, getTextRange = getTextRange, queryInterface = queryInterface, release = release, setCaretPosition = setCaretPosition, setSelection = setSelection)
+    val __obj = js.Dynamic.literal(CaretPosition = CaretPosition, CharacterCount = CharacterCount, SelectedText = SelectedText, SelectionEnd = SelectionEnd, SelectionStart = SelectionStart, Text = Text, acquire = js.Any.fromFunction0(acquire), copyText = js.Any.fromFunction2(copyText), getCaretPosition = js.Any.fromFunction0(getCaretPosition), getCharacter = js.Any.fromFunction1(getCharacter), getCharacterAttributes = js.Any.fromFunction2(getCharacterAttributes), getCharacterBounds = js.Any.fromFunction1(getCharacterBounds), getCharacterCount = js.Any.fromFunction0(getCharacterCount), getIndexAtPoint = js.Any.fromFunction1(getIndexAtPoint), getSelectedText = js.Any.fromFunction0(getSelectedText), getSelectionEnd = js.Any.fromFunction0(getSelectionEnd), getSelectionStart = js.Any.fromFunction0(getSelectionStart), getText = js.Any.fromFunction0(getText), getTextAtIndex = js.Any.fromFunction2(getTextAtIndex), getTextBeforeIndex = js.Any.fromFunction2(getTextBeforeIndex), getTextBehindIndex = js.Any.fromFunction2(getTextBehindIndex), getTextMarkup = js.Any.fromFunction2(getTextMarkup), getTextMarkupAtIndex = js.Any.fromFunction2(getTextMarkupAtIndex), getTextMarkupCount = js.Any.fromFunction1(getTextMarkupCount), getTextRange = js.Any.fromFunction2(getTextRange), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setCaretPosition = js.Any.fromFunction1(setCaretPosition), setSelection = js.Any.fromFunction2(setSelection))
   
     __obj.asInstanceOf[XAccessibleTextMarkup]
   }

@@ -11,7 +11,7 @@ trait IPortalProps
     * The HTML element that children will be mounted to.
     * @default document.body
     */
-  var container: js.UndefOr[reactLib.HTMLElement] = js.undefined
+  var container: js.UndefOr[stdLib.HTMLElement] = js.undefined
   /**
     * Callback invoked when the children of this `Portal` have been added to the DOM.
     */
@@ -22,13 +22,13 @@ object IPortalProps {
   @scala.inline
   def apply(
     className: java.lang.String = null,
-    container: reactLib.HTMLElement = null,
-    onChildrenMount: js.Function0[scala.Unit] = null
+    container: stdLib.HTMLElement = null,
+    onChildrenMount: () => scala.Unit = null
   ): IPortalProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
     if (container != null) __obj.updateDynamic("container")(container)
-    if (onChildrenMount != null) __obj.updateDynamic("onChildrenMount")(onChildrenMount)
+    if (onChildrenMount != null) __obj.updateDynamic("onChildrenMount")(js.Any.fromFunction0(onChildrenMount))
     __obj.asInstanceOf[IPortalProps]
   }
 }

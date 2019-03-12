@@ -110,11 +110,11 @@ object TextSection {
   def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
-    AnchorTypes: activexDashInteropLib.SafeArray[TextContentAnchorType],
+    AnchorTypes: stdLib.SafeArray[TextContentAnchorType],
     BackGraphicFilter: java.lang.String,
     BackGraphicLocation: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.GraphicLocation,
     BackGraphicURL: java.lang.String,
-    ChildSections: activexDashInteropLib.SafeArray[XTextSection],
+    ChildSections: stdLib.SafeArray[XTextSection],
     Condition: java.lang.String,
     DDECommandElement: java.lang.String,
     DDECommandFile: java.lang.String,
@@ -146,53 +146,31 @@ object TextSection {
     TextColumns: XTextColumns,
     TextWrap: WrapTextMode,
     UserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
-    acquire: js.Function0[scala.Unit],
-    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    addPropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    addVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    attach: js.Function1[XTextRange, scala.Unit],
-    dispose: js.Function0[scala.Unit],
-    getAnchor: js.Function0[XTextRange],
-    getChildSections: js.Function0[activexDashInteropLib.SafeArray[XTextSection]],
-    getName: js.Function0[java.lang.String],
-    getParentSection: js.Function0[XTextSection],
-    getPropertyDefault: js.Function1[java.lang.String, js.Any],
-    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
-    getPropertyState: js.Function1[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState
-    ],
-    getPropertyStates: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState]
-    ],
-    getPropertyValue: js.Function1[java.lang.String, js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
-    removePropertyChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
-      scala.Unit
-    ],
-    removeVetoableChangeListener: js.Function2[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
-      scala.Unit
-    ],
-    setName: js.Function1[java.lang.String, scala.Unit],
-    setPropertyToDefault: js.Function1[java.lang.String, scala.Unit],
-    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+    acquire: () => scala.Unit,
+    addEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    addPropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    addVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    attach: XTextRange => scala.Unit,
+    dispose: () => scala.Unit,
+    getAnchor: () => XTextRange,
+    getChildSections: () => stdLib.SafeArray[XTextSection],
+    getName: () => java.lang.String,
+    getParentSection: () => XTextSection,
+    getPropertyDefault: java.lang.String => js.Any,
+    getPropertySetInfo: () => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    getPropertyState: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState,
+    getPropertyStates: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String] => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState],
+    getPropertyValue: java.lang.String => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeEventListener: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener => scala.Unit,
+    removePropertyChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener) => scala.Unit,
+    removeVetoableChangeListener: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener) => scala.Unit,
+    setName: java.lang.String => scala.Unit,
+    setPropertyToDefault: java.lang.String => scala.Unit,
+    setPropertyValue: (java.lang.String, js.Any) => scala.Unit
   ): TextSection = {
-    val __obj = js.Dynamic.literal(Anchor = Anchor, AnchorType = AnchorType, AnchorTypes = AnchorTypes, BackGraphicFilter = BackGraphicFilter, BackGraphicLocation = BackGraphicLocation, BackGraphicURL = BackGraphicURL, ChildSections = ChildSections, Condition = Condition, DDECommandElement = DDECommandElement, DDECommandFile = DDECommandFile, DDECommandType = DDECommandType, EndnoteIsCollectAtTextEnd = EndnoteIsCollectAtTextEnd, EndnoteIsOwnNumbering = EndnoteIsOwnNumbering, EndnoteIsRestartNumbering = EndnoteIsRestartNumbering, EndnoteNumberingPrefix = EndnoteNumberingPrefix, EndnoteNumberingSuffix = EndnoteNumberingSuffix, EndnoteNumberingType = EndnoteNumberingType, EndnoteRestartNumberingAt = EndnoteRestartNumberingAt, FileLink = FileLink, FootnoteIsCollectAtTextEnd = FootnoteIsCollectAtTextEnd, FootnoteIsOwnNumbering = FootnoteIsOwnNumbering, FootnoteIsRestartNumbering = FootnoteIsRestartNumbering, FootnoteNumberingPrefix = FootnoteNumberingPrefix, FootnoteNumberingSuffix = FootnoteNumberingSuffix, FootnoteNumberingType = FootnoteNumberingType, FootnoteRestartNumberingAt = FootnoteRestartNumberingAt, IsAutomaticUpdate = IsAutomaticUpdate, IsProtected = IsProtected, IsVisible = IsVisible, LinkRegion = LinkRegion, Name = Name, ParentSection = ParentSection, PropertySetInfo = PropertySetInfo, SectionLeftMargin = SectionLeftMargin, SectionRightMargin = SectionRightMargin, TextColumns = TextColumns, TextWrap = TextWrap, UserDefinedAttributes = UserDefinedAttributes, acquire = acquire, addEventListener = addEventListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, attach = attach, dispose = dispose, getAnchor = getAnchor, getChildSections = getChildSections, getName = getName, getParentSection = getParentSection, getPropertyDefault = getPropertyDefault, getPropertySetInfo = getPropertySetInfo, getPropertyState = getPropertyState, getPropertyStates = getPropertyStates, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setName = setName, setPropertyToDefault = setPropertyToDefault, setPropertyValue = setPropertyValue)
+    val __obj = js.Dynamic.literal(Anchor = Anchor, AnchorType = AnchorType, AnchorTypes = AnchorTypes, BackGraphicFilter = BackGraphicFilter, BackGraphicLocation = BackGraphicLocation, BackGraphicURL = BackGraphicURL, ChildSections = ChildSections, Condition = Condition, DDECommandElement = DDECommandElement, DDECommandFile = DDECommandFile, DDECommandType = DDECommandType, EndnoteIsCollectAtTextEnd = EndnoteIsCollectAtTextEnd, EndnoteIsOwnNumbering = EndnoteIsOwnNumbering, EndnoteIsRestartNumbering = EndnoteIsRestartNumbering, EndnoteNumberingPrefix = EndnoteNumberingPrefix, EndnoteNumberingSuffix = EndnoteNumberingSuffix, EndnoteNumberingType = EndnoteNumberingType, EndnoteRestartNumberingAt = EndnoteRestartNumberingAt, FileLink = FileLink, FootnoteIsCollectAtTextEnd = FootnoteIsCollectAtTextEnd, FootnoteIsOwnNumbering = FootnoteIsOwnNumbering, FootnoteIsRestartNumbering = FootnoteIsRestartNumbering, FootnoteNumberingPrefix = FootnoteNumberingPrefix, FootnoteNumberingSuffix = FootnoteNumberingSuffix, FootnoteNumberingType = FootnoteNumberingType, FootnoteRestartNumberingAt = FootnoteRestartNumberingAt, IsAutomaticUpdate = IsAutomaticUpdate, IsProtected = IsProtected, IsVisible = IsVisible, LinkRegion = LinkRegion, Name = Name, ParentSection = ParentSection, PropertySetInfo = PropertySetInfo, SectionLeftMargin = SectionLeftMargin, SectionRightMargin = SectionRightMargin, TextColumns = TextColumns, TextWrap = TextWrap, UserDefinedAttributes = UserDefinedAttributes, acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), attach = js.Any.fromFunction1(attach), dispose = js.Any.fromFunction0(dispose), getAnchor = js.Any.fromFunction0(getAnchor), getChildSections = js.Any.fromFunction0(getChildSections), getName = js.Any.fromFunction0(getName), getParentSection = js.Any.fromFunction0(getParentSection), getPropertyDefault = js.Any.fromFunction1(getPropertyDefault), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyState = js.Any.fromFunction1(getPropertyState), getPropertyStates = js.Any.fromFunction1(getPropertyStates), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setName = js.Any.fromFunction1(setName), setPropertyToDefault = js.Any.fromFunction1(setPropertyToDefault), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
   
     __obj.asInstanceOf[TextSection]
   }

@@ -48,31 +48,21 @@ object XSheetCellCursor {
   @scala.inline
   def apply(
     Spreadsheet: XSpreadsheet,
-    acquire: js.Function0[scala.Unit],
-    collapseToCurrentArray: js.Function0[scala.Unit],
-    collapseToCurrentRegion: js.Function0[scala.Unit],
-    collapseToMergedArea: js.Function0[scala.Unit],
-    collapseToSize: js.Function2[scala.Double, scala.Double, scala.Unit],
-    expandToEntireColumns: js.Function0[scala.Unit],
-    expandToEntireRows: js.Function0[scala.Unit],
-    getCellByPosition: js.Function2[
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCell
-    ],
-    getCellRangeByName: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange],
-    getCellRangeByPosition: js.Function4[
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange
-    ],
-    getSpreadsheet: js.Function0[XSpreadsheet],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    collapseToCurrentArray: () => scala.Unit,
+    collapseToCurrentRegion: () => scala.Unit,
+    collapseToMergedArea: () => scala.Unit,
+    collapseToSize: (scala.Double, scala.Double) => scala.Unit,
+    expandToEntireColumns: () => scala.Unit,
+    expandToEntireRows: () => scala.Unit,
+    getCellByPosition: (scala.Double, scala.Double) => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCell,
+    getCellRangeByName: java.lang.String => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange,
+    getCellRangeByPosition: (scala.Double, scala.Double, scala.Double, scala.Double) => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange,
+    getSpreadsheet: () => XSpreadsheet,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSheetCellCursor = {
-    val __obj = js.Dynamic.literal(Spreadsheet = Spreadsheet, acquire = acquire, collapseToCurrentArray = collapseToCurrentArray, collapseToCurrentRegion = collapseToCurrentRegion, collapseToMergedArea = collapseToMergedArea, collapseToSize = collapseToSize, expandToEntireColumns = expandToEntireColumns, expandToEntireRows = expandToEntireRows, getCellByPosition = getCellByPosition, getCellRangeByName = getCellRangeByName, getCellRangeByPosition = getCellRangeByPosition, getSpreadsheet = getSpreadsheet, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Spreadsheet = Spreadsheet, acquire = js.Any.fromFunction0(acquire), collapseToCurrentArray = js.Any.fromFunction0(collapseToCurrentArray), collapseToCurrentRegion = js.Any.fromFunction0(collapseToCurrentRegion), collapseToMergedArea = js.Any.fromFunction0(collapseToMergedArea), collapseToSize = js.Any.fromFunction2(collapseToSize), expandToEntireColumns = js.Any.fromFunction0(expandToEntireColumns), expandToEntireRows = js.Any.fromFunction0(expandToEntireRows), getCellByPosition = js.Any.fromFunction2(getCellByPosition), getCellRangeByName = js.Any.fromFunction1(getCellRangeByName), getCellRangeByPosition = js.Any.fromFunction4(getCellRangeByPosition), getSpreadsheet = js.Any.fromFunction0(getSpreadsheet), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSheetCellCursor]
   }

@@ -25,14 +25,14 @@ object orientationNs extends js.Object {
     * @description Remove an event listener. If the listener is not specified all listeners for the event type will be removed.
     */
   def off(eventName: java.lang.String): scala.Unit = js.native
-  def off(eventName: java.lang.String, listener: coreDashJsLib.Function): scala.Unit = js.native
+  def off(eventName: java.lang.String, listener: js.Function): scala.Unit = js.native
   /**
     * @description Add an event listener.
     */
-  def on(eventName: java.lang.String, listener: coreDashJsLib.Function): scala.Unit = js.native
+  def on(eventName: java.lang.String, listener: js.Function): scala.Unit = js.native
   /**
     * @description Add an event listener that's only triggered once.
     */
-  def once(eventName: java.lang.String, listener: coreDashJsLib.Function): scala.Unit = js.native
+  def once(eventName: java.lang.String, listener: js.Function): scala.Unit = js.native
 }
 

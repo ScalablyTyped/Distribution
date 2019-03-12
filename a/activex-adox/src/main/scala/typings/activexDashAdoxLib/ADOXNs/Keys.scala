@@ -17,20 +17,6 @@ trait Keys extends js.Object {
     */
   def Append(Item: Key): scala.Unit = js.native
   def Append(Item: Key, Type: KeyTypeEnum): scala.Unit = js.native
-  def Append(Item: Key, Type: KeyTypeEnum, Column: activexDashInteropLib.SafeArray[java.lang.String]): scala.Unit = js.native
-  def Append(
-    Item: Key,
-    Type: KeyTypeEnum,
-    Column: activexDashInteropLib.SafeArray[java.lang.String],
-    RelatedTable: java.lang.String
-  ): scala.Unit = js.native
-  def Append(
-    Item: Key,
-    Type: KeyTypeEnum,
-    Column: activexDashInteropLib.SafeArray[java.lang.String],
-    RelatedTable: java.lang.String,
-    RelatedColumn: java.lang.String
-  ): scala.Unit = js.native
   def Append(Item: Key, Type: KeyTypeEnum, Column: java.lang.String): scala.Unit = js.native
   def Append(Item: Key, Type: KeyTypeEnum, Column: java.lang.String, RelatedTable: java.lang.String): scala.Unit = js.native
   def Append(
@@ -40,26 +26,22 @@ trait Keys extends js.Object {
     RelatedTable: java.lang.String,
     RelatedColumn: java.lang.String
   ): scala.Unit = js.native
-  def Append(Item: java.lang.String): scala.Unit = js.native
-  def Append(Item: java.lang.String, Type: KeyTypeEnum): scala.Unit = js.native
+  def Append(Item: Key, Type: KeyTypeEnum, Column: stdLib.SafeArray[java.lang.String]): scala.Unit = js.native
   def Append(
-    Item: java.lang.String,
+    Item: Key,
     Type: KeyTypeEnum,
-    Column: activexDashInteropLib.SafeArray[java.lang.String]
-  ): scala.Unit = js.native
-  def Append(
-    Item: java.lang.String,
-    Type: KeyTypeEnum,
-    Column: activexDashInteropLib.SafeArray[java.lang.String],
+    Column: stdLib.SafeArray[java.lang.String],
     RelatedTable: java.lang.String
   ): scala.Unit = js.native
   def Append(
-    Item: java.lang.String,
+    Item: Key,
     Type: KeyTypeEnum,
-    Column: activexDashInteropLib.SafeArray[java.lang.String],
+    Column: stdLib.SafeArray[java.lang.String],
     RelatedTable: java.lang.String,
     RelatedColumn: java.lang.String
   ): scala.Unit = js.native
+  def Append(Item: java.lang.String): scala.Unit = js.native
+  def Append(Item: java.lang.String, Type: KeyTypeEnum): scala.Unit = js.native
   def Append(Item: java.lang.String, Type: KeyTypeEnum, Column: java.lang.String): scala.Unit = js.native
   def Append(
     Item: java.lang.String,
@@ -71,6 +53,20 @@ trait Keys extends js.Object {
     Item: java.lang.String,
     Type: KeyTypeEnum,
     Column: java.lang.String,
+    RelatedTable: java.lang.String,
+    RelatedColumn: java.lang.String
+  ): scala.Unit = js.native
+  def Append(Item: java.lang.String, Type: KeyTypeEnum, Column: stdLib.SafeArray[java.lang.String]): scala.Unit = js.native
+  def Append(
+    Item: java.lang.String,
+    Type: KeyTypeEnum,
+    Column: stdLib.SafeArray[java.lang.String],
+    RelatedTable: java.lang.String
+  ): scala.Unit = js.native
+  def Append(
+    Item: java.lang.String,
+    Type: KeyTypeEnum,
+    Column: stdLib.SafeArray[java.lang.String],
     RelatedTable: java.lang.String,
     RelatedColumn: java.lang.String
   ): scala.Unit = js.native

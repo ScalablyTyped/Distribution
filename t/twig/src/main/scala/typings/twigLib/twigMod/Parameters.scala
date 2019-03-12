@@ -29,7 +29,7 @@ object Parameters {
     data: js.Any = null,
     href: js.Any = null,
     id: js.Any = null,
-    load: js.Function1[/* template */ Template, scala.Unit] = null,
+    load: /* template */ Template => scala.Unit = null,
     macros: js.Any = null,
     method: js.Any = null,
     name: js.Any = null,
@@ -43,7 +43,7 @@ object Parameters {
     if (data != null) __obj.updateDynamic("data")(data)
     if (href != null) __obj.updateDynamic("href")(href)
     if (id != null) __obj.updateDynamic("id")(id)
-    if (load != null) __obj.updateDynamic("load")(load)
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (macros != null) __obj.updateDynamic("macros")(macros)
     if (method != null) __obj.updateDynamic("method")(method)
     if (name != null) __obj.updateDynamic("name")(name)

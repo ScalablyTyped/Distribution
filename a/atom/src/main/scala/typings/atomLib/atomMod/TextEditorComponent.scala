@@ -16,12 +16,12 @@ trait TextEditorComponent extends js.Object {
 object TextEditorComponent {
   @scala.inline
   def apply(
-    pixelPositionForMouseEvent: js.Function1[atomLib.Anon_ClientX, PixelPosition],
-    pixelPositionForScreenPosition: js.Function1[PointLike, PixelPosition],
-    screenPositionForMouseEvent: js.Function1[atomLib.Anon_ClientX, Point],
-    screenPositionForPixelPosition: js.Function1[PixelPosition, Point]
+    pixelPositionForMouseEvent: atomLib.Anon_ClientX => PixelPosition,
+    pixelPositionForScreenPosition: PointLike => PixelPosition,
+    screenPositionForMouseEvent: atomLib.Anon_ClientX => Point,
+    screenPositionForPixelPosition: PixelPosition => Point
   ): TextEditorComponent = {
-    val __obj = js.Dynamic.literal(pixelPositionForMouseEvent = pixelPositionForMouseEvent, pixelPositionForScreenPosition = pixelPositionForScreenPosition, screenPositionForMouseEvent = screenPositionForMouseEvent, screenPositionForPixelPosition = screenPositionForPixelPosition)
+    val __obj = js.Dynamic.literal(pixelPositionForMouseEvent = js.Any.fromFunction1(pixelPositionForMouseEvent), pixelPositionForScreenPosition = js.Any.fromFunction1(pixelPositionForScreenPosition), screenPositionForMouseEvent = js.Any.fromFunction1(screenPositionForMouseEvent), screenPositionForPixelPosition = js.Any.fromFunction1(screenPositionForPixelPosition))
   
     __obj.asInstanceOf[TextEditorComponent]
   }

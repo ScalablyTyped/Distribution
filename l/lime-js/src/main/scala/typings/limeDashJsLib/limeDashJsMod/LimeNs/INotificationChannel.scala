@@ -12,11 +12,8 @@ trait INotificationChannel extends js.Object {
 
 object INotificationChannel {
   @scala.inline
-  def apply(
-    onNotification: js.Function1[Notification, js.Any],
-    sendNotification: js.Function1[Notification, scala.Unit]
-  ): INotificationChannel = {
-    val __obj = js.Dynamic.literal(onNotification = onNotification, sendNotification = sendNotification)
+  def apply(onNotification: Notification => js.Any, sendNotification: Notification => scala.Unit): INotificationChannel = {
+    val __obj = js.Dynamic.literal(onNotification = js.Any.fromFunction1(onNotification), sendNotification = js.Any.fromFunction1(sendNotification))
   
     __obj.asInstanceOf[INotificationChannel]
   }

@@ -21,11 +21,11 @@ trait XAnimation extends js.Object {
 object XAnimation {
   @scala.inline
   def apply(
-    isAnimationRunning: js.Function0[scala.Boolean],
-    startAnimation: js.Function0[scala.Unit],
-    stopAnimation: js.Function0[scala.Unit]
+    isAnimationRunning: () => scala.Boolean,
+    startAnimation: () => scala.Unit,
+    stopAnimation: () => scala.Unit
   ): XAnimation = {
-    val __obj = js.Dynamic.literal(isAnimationRunning = isAnimationRunning, startAnimation = startAnimation, stopAnimation = stopAnimation)
+    val __obj = js.Dynamic.literal(isAnimationRunning = js.Any.fromFunction0(isAnimationRunning), startAnimation = js.Any.fromFunction0(startAnimation), stopAnimation = js.Any.fromFunction0(stopAnimation))
   
     __obj.asInstanceOf[XAnimation]
   }

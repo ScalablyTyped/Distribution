@@ -17,14 +17,14 @@ trait Message extends js.Object {
 object Message {
   @scala.inline
   def apply(
-    inspect: js.Function0[java.lang.String],
-    pop: js.Function0[js.UndefOr[nodeLib.Buffer]],
-    push: js.Function1[/* repeated */ nodeLib.Buffer, scala.Double],
-    shift: js.Function0[js.UndefOr[nodeLib.Buffer]],
-    toBuffer: js.Function0[nodeLib.Buffer],
-    unshift: js.Function1[/* repeated */ nodeLib.Buffer, scala.Double]
+    inspect: () => java.lang.String,
+    pop: () => js.UndefOr[nodeLib.Buffer],
+    push: /* repeated */ nodeLib.Buffer => scala.Double,
+    shift: () => js.UndefOr[nodeLib.Buffer],
+    toBuffer: () => nodeLib.Buffer,
+    unshift: /* repeated */ nodeLib.Buffer => scala.Double
   ): Message = {
-    val __obj = js.Dynamic.literal(inspect = inspect, pop = pop, push = push, shift = shift, toBuffer = toBuffer, unshift = unshift)
+    val __obj = js.Dynamic.literal(inspect = js.Any.fromFunction0(inspect), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), shift = js.Any.fromFunction0(shift), toBuffer = js.Any.fromFunction0(toBuffer), unshift = js.Any.fromFunction1(unshift))
   
     __obj.asInstanceOf[Message]
   }

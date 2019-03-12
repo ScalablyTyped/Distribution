@@ -15,7 +15,7 @@ trait PlayMusic extends js.Object {
     */
   def addPlayList(
     playlistName: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* mutateResponses */ MutateResponses, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* mutateResponses */ MutateResponses, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Adds a track to end of a playlist.
@@ -29,36 +29,36 @@ trait PlayMusic extends js.Object {
   def addTrackToPlayList(
     songIds: java.lang.String,
     playlistId: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* mutateResponses */ MutateResponses, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* mutateResponses */ MutateResponses, scala.Unit]
   ): scala.Unit = js.native
   def addTrackToPlayList(
     songIds: java.lang.String,
     playlistId: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* mutateResponses */ MutateResponses, scala.Unit],
+    callback: js.Function2[/* error */ stdLib.Error, /* mutateResponses */ MutateResponses, scala.Unit],
     entryBeforeClientId: java.lang.String
   ): scala.Unit = js.native
   def addTrackToPlayList(
     songIds: java.lang.String,
     playlistId: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* mutateResponses */ MutateResponses, scala.Unit],
+    callback: js.Function2[/* error */ stdLib.Error, /* mutateResponses */ MutateResponses, scala.Unit],
     entryBeforeClientId: java.lang.String,
     entryAfterClientId: java.lang.String
   ): scala.Unit = js.native
   def addTrackToPlayList(
     songIds: js.Array[java.lang.String],
     playlistId: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* mutateResponses */ MutateResponses, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* mutateResponses */ MutateResponses, scala.Unit]
   ): scala.Unit = js.native
   def addTrackToPlayList(
     songIds: js.Array[java.lang.String],
     playlistId: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* mutateResponses */ MutateResponses, scala.Unit],
+    callback: js.Function2[/* error */ stdLib.Error, /* mutateResponses */ MutateResponses, scala.Unit],
     entryBeforeClientId: java.lang.String
   ): scala.Unit = js.native
   def addTrackToPlayList(
     songIds: js.Array[java.lang.String],
     playlistId: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* mutateResponses */ MutateResponses, scala.Unit],
+    callback: js.Function2[/* error */ stdLib.Error, /* mutateResponses */ MutateResponses, scala.Unit],
     entryBeforeClientId: java.lang.String,
     entryAfterClientId: java.lang.String
   ): scala.Unit = js.native
@@ -73,7 +73,7 @@ trait PlayMusic extends js.Object {
     */
   def changeTrackMetadata(
     song: js.Any,
-    callback: js.Function2[/* error */ nodeLib.Error, /* success */ MutateResponses, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* success */ MutateResponses, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Deletes a playlist
@@ -83,14 +83,14 @@ trait PlayMusic extends js.Object {
     */
   def deletePlaylist(
     playlistId: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* mutationStatus */ MutateResponses, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* mutationStatus */ MutateResponses, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Returns list of all tracks.
     *
     * @param callback function(error, response) - success callback
     */
-  def getLibrary(callback: js.Function2[/* error */ nodeLib.Error, /* response */ LibraryResponse, scala.Unit]): scala.Unit = js.native
+  def getLibrary(callback: js.Function2[/* error */ stdLib.Error, /* response */ LibraryResponse, scala.Unit]): scala.Unit = js.native
   /**
     * Returns list of all tracks.
     *
@@ -99,14 +99,14 @@ trait PlayMusic extends js.Object {
     */
   def getLibrary(
     options: LibraryOptions,
-    callback: js.Function2[/* error */ nodeLib.Error, /* response */ LibraryResponse, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* response */ LibraryResponse, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Returns tracks on all playlists.
     *
     * @param callback function(error, response) - success callback
     */
-  def getPlayListEntries(callback: js.Function2[/* error */ nodeLib.Error, /* response */ PlaylistResponse, scala.Unit]): scala.Unit = js.native
+  def getPlayListEntries(callback: js.Function2[/* error */ stdLib.Error, /* response */ PlaylistResponse, scala.Unit]): scala.Unit = js.native
   /**
     * Returns tracks on all playlists.
     *
@@ -115,20 +115,20 @@ trait PlayMusic extends js.Object {
     */
   def getPlayListEntries(
     options: PlaylistOptions,
-    callback: js.Function2[/* error */ nodeLib.Error, /* response */ PlaylistResponse, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* response */ PlaylistResponse, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Returns list of all playlists.
     *
     * @param callback function(error, playlists) - success callback
     */
-  def getPlayLists(callback: js.Function2[/* error */ nodeLib.Error, /* response */ PlaylistListResponse, scala.Unit]): scala.Unit = js.native
+  def getPlayLists(callback: js.Function2[/* error */ stdLib.Error, /* response */ PlaylistListResponse, scala.Unit]): scala.Unit = js.native
   /**
     * Returns settings / device ids authorized for account.
     *
     * @param callback function(error, response) - success callback
     */
-  def getSettings(callback: js.Function2[/* error */ nodeLib.Error, /* response */ js.Any, scala.Unit]): scala.Unit = js.native
+  def getSettings(callback: js.Function2[/* error */ stdLib.Error, /* response */ js.Any, scala.Unit]): scala.Unit = js.native
   /**
     * Opens and returns a stream object
     *
@@ -137,7 +137,7 @@ trait PlayMusic extends js.Object {
     */
   def getStream(
     id: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* stream */ js.Any, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* stream */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Returns stream URL for a track.
@@ -147,7 +147,7 @@ trait PlayMusic extends js.Object {
     */
   def getStreamUrl(
     id: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* streamUrl */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* streamUrl */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Increments track's playcount
@@ -157,12 +157,12 @@ trait PlayMusic extends js.Object {
     */
   def incrementTrackPlaycount(
     songId: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* mutationStatus */ MutateResponses, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* mutationStatus */ MutateResponses, scala.Unit]
   ): scala.Unit = js.native
-  def init(options: InitOptions, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def init(options: InitOptions, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def login(
     options: LoginOptions,
-    callback: js.Function2[/* error */ nodeLib.Error, /* response */ LoginResponse, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* response */ LoginResponse, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Move the specified entry inbetween two specified entries (identified by their clientIds)
@@ -176,7 +176,7 @@ trait PlayMusic extends js.Object {
     entryToMove: java.lang.String,
     entryBeforeClientId: java.lang.String,
     entryAfterClientId: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* mutateResponses */ MutateResponses, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* mutateResponses */ MutateResponses, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Removes given entry ids from playlist entries.
@@ -186,11 +186,11 @@ trait PlayMusic extends js.Object {
     */
   def removePlayListEntry(
     playlistItemIds: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* mutateResponses */ MutateResponses, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* mutateResponses */ MutateResponses, scala.Unit]
   ): scala.Unit = js.native
   def removePlayListEntry(
     playlistItemIds: js.Array[java.lang.String],
-    callback: js.Function2[/* error */ nodeLib.Error, /* mutateResponses */ MutateResponses, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* mutateResponses */ MutateResponses, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Searches for All Access tracks.
@@ -202,7 +202,7 @@ trait PlayMusic extends js.Object {
   def search(
     text: java.lang.String,
     maxResults: scala.Double,
-    callback: js.Function2[/* error */ nodeLib.Error, /* searchResults */ js.Any, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* searchResults */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Updates a playlist's metadata
@@ -214,7 +214,7 @@ trait PlayMusic extends js.Object {
   def updatePlayListMeta(
     playlistId: java.lang.String,
     updates: PlaylistMeta,
-    callback: js.Function2[/* error */ nodeLib.Error, /* mutationStatus */ MutateResponses, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* mutationStatus */ MutateResponses, scala.Unit]
   ): scala.Unit = js.native
 }
 

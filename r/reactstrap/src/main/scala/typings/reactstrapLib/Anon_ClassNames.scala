@@ -29,13 +29,13 @@ object Anon_ClassNames {
     delay: Anon_Hide = null,
     isOpen: js.UndefOr[scala.Boolean] = js.undefined,
     navbar: js.UndefOr[scala.Boolean] = js.undefined,
-    onClosed: js.Function0[scala.Unit] = null,
-    onEntered: js.Function0[scala.Unit] = null,
-    onEntering: js.Function0[scala.Unit] = null,
-    onExit: js.Function0[scala.Unit] = null,
-    onExited: js.Function0[scala.Unit] = null,
-    onExiting: js.Function0[scala.Unit] = null,
-    onOpened: js.Function0[scala.Unit] = null,
+    onClosed: () => scala.Unit = null,
+    onEntered: () => scala.Unit = null,
+    onEntering: () => scala.Unit = null,
+    onExit: () => scala.Unit = null,
+    onExited: () => scala.Unit = null,
+    onExiting: () => scala.Unit = null,
+    onOpened: () => scala.Unit = null,
     tag: reactLib.reactMod.ReactNs.ReactType[_] = null
   ): Anon_ClassNames = {
     val __obj = js.Dynamic.literal()
@@ -44,13 +44,13 @@ object Anon_ClassNames {
     if (delay != null) __obj.updateDynamic("delay")(delay)
     if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
     if (!js.isUndefined(navbar)) __obj.updateDynamic("navbar")(navbar)
-    if (onClosed != null) __obj.updateDynamic("onClosed")(onClosed)
-    if (onEntered != null) __obj.updateDynamic("onEntered")(onEntered)
-    if (onEntering != null) __obj.updateDynamic("onEntering")(onEntering)
-    if (onExit != null) __obj.updateDynamic("onExit")(onExit)
-    if (onExited != null) __obj.updateDynamic("onExited")(onExited)
-    if (onExiting != null) __obj.updateDynamic("onExiting")(onExiting)
-    if (onOpened != null) __obj.updateDynamic("onOpened")(onOpened)
+    if (onClosed != null) __obj.updateDynamic("onClosed")(js.Any.fromFunction0(onClosed))
+    if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction0(onEntered))
+    if (onEntering != null) __obj.updateDynamic("onEntering")(js.Any.fromFunction0(onEntering))
+    if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction0(onExit))
+    if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction0(onExited))
+    if (onExiting != null) __obj.updateDynamic("onExiting")(js.Any.fromFunction0(onExiting))
+    if (onOpened != null) __obj.updateDynamic("onOpened")(js.Any.fromFunction0(onOpened))
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClassNames]
   }

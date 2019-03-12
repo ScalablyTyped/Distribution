@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("d3-hsv", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val hsv: d3DashHsvLib.d3DashHsvMod.HSVColorFactory = js.native
+  val hsv: HSVColorFactory = js.native
   def interpolateHsv(
     a: d3DashColorLib.d3DashColorMod.ColorCommonInstance,
     b: d3DashColorLib.d3DashColorMod.ColorCommonInstance

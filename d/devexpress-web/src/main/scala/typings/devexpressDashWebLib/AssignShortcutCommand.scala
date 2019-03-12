@@ -19,11 +19,8 @@ trait AssignShortcutCommand extends CommandWithSimpleStateBase {
 
 object AssignShortcutCommand {
   @scala.inline
-  def apply(
-    execute: js.Function2[scala.Double, js.Function, scala.Boolean],
-    getState: js.Function0[SimpleCommandState]
-  ): AssignShortcutCommand = {
-    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  def apply(execute: (scala.Double, js.Function) => scala.Boolean, getState: () => SimpleCommandState): AssignShortcutCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction2(execute), getState = js.Any.fromFunction0(getState))
   
     __obj.asInstanceOf[AssignShortcutCommand]
   }

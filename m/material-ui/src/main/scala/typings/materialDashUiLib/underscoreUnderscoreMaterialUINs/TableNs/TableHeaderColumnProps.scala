@@ -32,11 +32,7 @@ object TableHeaderColumnProps {
     colSpan: scala.Int | scala.Double = null,
     columnNumber: scala.Int | scala.Double = null,
     key: java.lang.String = null,
-    onClick: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
-      /* column */ scala.Double, 
-      scala.Unit
-    ] = null,
+    onClick: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* column */ scala.Double) => scala.Unit = null,
     rowSpan: scala.Int | scala.Double = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     tooltip: java.lang.String = null,
@@ -47,7 +43,7 @@ object TableHeaderColumnProps {
     if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
     if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)

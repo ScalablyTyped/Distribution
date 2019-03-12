@@ -17,7 +17,7 @@ trait XConsolidationDescriptor
   /** returns, whether links to the original data are inserted in the output area or not. */
   var InsertLinks: scala.Boolean
   /** returns the cell ranges which are consolidated. */
-  var Sources: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
+  var Sources: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
   /** returns the position of the top left cell of the cell range where the consolidated data are copied. */
   var StartOutputPosition: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress
   /** returns, whether column headers from the cell ranges are used to find matching data or not. */
@@ -29,7 +29,7 @@ trait XConsolidationDescriptor
   /** returns, whether links to the original data are inserted in the output area or not. */
   def getInsertLinks(): scala.Boolean
   /** returns the cell ranges which are consolidated. */
-  def getSources(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
+  def getSources(): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
   /** returns the position of the top left cell of the cell range where the consolidated data are copied. */
   def getStartOutputPosition(): activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress
   /** returns, whether column headers from the cell ranges are used to find matching data or not. */
@@ -57,32 +57,27 @@ object XConsolidationDescriptor {
   def apply(
     Function: GeneralFunction,
     InsertLinks: scala.Boolean,
-    Sources: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    Sources: stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
     StartOutputPosition: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress,
     UseColumnHeaders: scala.Boolean,
     UseRowHeaders: scala.Boolean,
-    acquire: js.Function0[scala.Unit],
-    getFunction: js.Function0[GeneralFunction],
-    getInsertLinks: js.Function0[scala.Boolean],
-    getSources: js.Function0[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
-    ],
-    getStartOutputPosition: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress],
-    getUseColumnHeaders: js.Function0[scala.Boolean],
-    getUseRowHeaders: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setFunction: js.Function1[GeneralFunction, scala.Unit],
-    setInsertLinks: js.Function1[scala.Boolean, scala.Unit],
-    setSources: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress], 
-      scala.Unit
-    ],
-    setStartOutputPosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Unit],
-    setUseColumnHeaders: js.Function1[scala.Boolean, scala.Unit],
-    setUseRowHeaders: js.Function1[scala.Boolean, scala.Unit]
+    acquire: () => scala.Unit,
+    getFunction: () => GeneralFunction,
+    getInsertLinks: () => scala.Boolean,
+    getSources: () => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    getStartOutputPosition: () => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress,
+    getUseColumnHeaders: () => scala.Boolean,
+    getUseRowHeaders: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setFunction: GeneralFunction => scala.Unit,
+    setInsertLinks: scala.Boolean => scala.Unit,
+    setSources: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress] => scala.Unit,
+    setStartOutputPosition: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress => scala.Unit,
+    setUseColumnHeaders: scala.Boolean => scala.Unit,
+    setUseRowHeaders: scala.Boolean => scala.Unit
   ): XConsolidationDescriptor = {
-    val __obj = js.Dynamic.literal(Function = Function, InsertLinks = InsertLinks, Sources = Sources, StartOutputPosition = StartOutputPosition, UseColumnHeaders = UseColumnHeaders, UseRowHeaders = UseRowHeaders, acquire = acquire, getFunction = getFunction, getInsertLinks = getInsertLinks, getSources = getSources, getStartOutputPosition = getStartOutputPosition, getUseColumnHeaders = getUseColumnHeaders, getUseRowHeaders = getUseRowHeaders, queryInterface = queryInterface, release = release, setFunction = setFunction, setInsertLinks = setInsertLinks, setSources = setSources, setStartOutputPosition = setStartOutputPosition, setUseColumnHeaders = setUseColumnHeaders, setUseRowHeaders = setUseRowHeaders)
+    val __obj = js.Dynamic.literal(Function = Function, InsertLinks = InsertLinks, Sources = Sources, StartOutputPosition = StartOutputPosition, UseColumnHeaders = UseColumnHeaders, UseRowHeaders = UseRowHeaders, acquire = js.Any.fromFunction0(acquire), getFunction = js.Any.fromFunction0(getFunction), getInsertLinks = js.Any.fromFunction0(getInsertLinks), getSources = js.Any.fromFunction0(getSources), getStartOutputPosition = js.Any.fromFunction0(getStartOutputPosition), getUseColumnHeaders = js.Any.fromFunction0(getUseColumnHeaders), getUseRowHeaders = js.Any.fromFunction0(getUseRowHeaders), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setFunction = js.Any.fromFunction1(setFunction), setInsertLinks = js.Any.fromFunction1(setInsertLinks), setSources = js.Any.fromFunction1(setSources), setStartOutputPosition = js.Any.fromFunction1(setStartOutputPosition), setUseColumnHeaders = js.Any.fromFunction1(setUseColumnHeaders), setUseRowHeaders = js.Any.fromFunction1(setUseRowHeaders))
   
     __obj.asInstanceOf[XConsolidationDescriptor]
   }

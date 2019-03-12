@@ -26,14 +26,14 @@ trait XBoundComponent extends XUpdateBroadcaster {
 object XBoundComponent {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addUpdateListener: js.Function1[XUpdateListener, scala.Unit],
-    commit: js.Function0[scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeUpdateListener: js.Function1[XUpdateListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addUpdateListener: XUpdateListener => scala.Unit,
+    commit: () => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeUpdateListener: XUpdateListener => scala.Unit
   ): XBoundComponent = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addUpdateListener = addUpdateListener, commit = commit, queryInterface = queryInterface, release = release, removeUpdateListener = removeUpdateListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addUpdateListener = js.Any.fromFunction1(addUpdateListener), commit = js.Any.fromFunction0(commit), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeUpdateListener = js.Any.fromFunction1(removeUpdateListener))
   
     __obj.asInstanceOf[XBoundComponent]
   }

@@ -106,7 +106,7 @@ object ChartToolTipOptions {
     borderColor: java.lang.String = null,
     borderThickness: scala.Int | scala.Double = null,
     content: java.lang.String = null,
-    contentFormatter: js.Function1[/* e */ canvasjsLib.Anon_ChartEntries, java.lang.String] = null,
+    contentFormatter: /* e */ canvasjsLib.Anon_ChartEntries => java.lang.String = null,
     cornerRadius: scala.Int | scala.Double = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     fontColor: java.lang.String = null,
@@ -123,7 +123,7 @@ object ChartToolTipOptions {
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
     if (borderThickness != null) __obj.updateDynamic("borderThickness")(borderThickness.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content)
-    if (contentFormatter != null) __obj.updateDynamic("contentFormatter")(contentFormatter)
+    if (contentFormatter != null) __obj.updateDynamic("contentFormatter")(js.Any.fromFunction1(contentFormatter))
     if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor)

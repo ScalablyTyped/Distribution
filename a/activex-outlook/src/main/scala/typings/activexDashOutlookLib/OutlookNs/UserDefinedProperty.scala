@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.UserDefinedProperty")
 @js.native
 class UserDefinedProperty protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashOutlookLib.OutlookNs.Application = js.native
   val Class: OlObjectClass = js.native
   val DisplayFormat: scala.Double = js.native
   val Formula: java.lang.String = js.native

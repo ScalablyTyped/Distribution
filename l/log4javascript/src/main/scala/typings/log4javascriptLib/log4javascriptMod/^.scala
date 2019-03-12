@@ -11,11 +11,11 @@ object ^ extends js.Object {
   def addEventListener(eventType: java.lang.String, listener: log4javascriptLib.Anon_EventArgs): scala.Unit = js.native
   def dispatchEvent(eventType: java.lang.String, eventArgs: js.Any): scala.Unit = js.native
   def evalInScope(expr: java.lang.String): js.Any = js.native
-  def getDefaultLogger(): log4javascriptLib.log4javascriptMod.Logger = js.native
-  def getLogger(): log4javascriptLib.log4javascriptMod.Logger = js.native
-  def getLogger(loggerName: java.lang.String): log4javascriptLib.log4javascriptMod.Logger = js.native
-  def getNullLogger(): log4javascriptLib.log4javascriptMod.Logger = js.native
-  def getRootLogger(): log4javascriptLib.log4javascriptMod.Logger = js.native
+  def getDefaultLogger(): Logger = js.native
+  def getLogger(): Logger = js.native
+  def getLogger(loggerName: java.lang.String): Logger = js.native
+  def getNullLogger(): Logger = js.native
+  def getRootLogger(): Logger = js.native
   def isEnabled(): scala.Boolean = js.native
   def removeEventListener(eventType: java.lang.String, listener: log4javascriptLib.Anon_EventArgs): scala.Unit = js.native
   def resetConfiguration(): scala.Unit = js.native

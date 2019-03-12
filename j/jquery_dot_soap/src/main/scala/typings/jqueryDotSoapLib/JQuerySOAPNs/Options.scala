@@ -39,21 +39,21 @@ object Options {
     SOAPHeader: js.Object = null,
     appendMethodToURL: js.UndefOr[scala.Boolean] = js.undefined,
     async: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeSend: js.Function1[/* SOAPEnvelope */ SOAPEnvelope, scala.Unit] = null,
+    beforeSend: /* SOAPEnvelope */ SOAPEnvelope => scala.Unit = null,
     context: js.Any = null,
     data: js.Object = null,
     elementName: java.lang.String = null,
     enableLogging: js.UndefOr[scala.Boolean] = js.undefined,
     envAttributes: js.Any = null,
-    error: js.Function1[/* SOAPResponse */ SOAPResponse, scala.Unit] = null,
+    error: /* SOAPResponse */ SOAPResponse => scala.Unit = null,
     method: java.lang.String = null,
     namespaceQualifier: java.lang.String = null,
     namespaceURL: java.lang.String = null,
     noPrefix: js.UndefOr[scala.Boolean] = js.undefined,
-    request: js.Function1[/* SOAPEnvelope */ SOAPEnvelope, scala.Unit] = null,
+    request: /* SOAPEnvelope */ SOAPEnvelope => scala.Unit = null,
     soap12: js.UndefOr[scala.Boolean] = js.undefined,
     statusCode: js.Object = null,
-    success: js.Function1[/* SOAPResponse */ SOAPResponse, scala.Unit] = null,
+    success: /* SOAPResponse */ SOAPResponse => scala.Unit = null,
     timeout: scala.Int | scala.Double = null,
     url: java.lang.String = null,
     wss: js.Object = null
@@ -64,21 +64,21 @@ object Options {
     if (SOAPHeader != null) __obj.updateDynamic("SOAPHeader")(SOAPHeader)
     if (!js.isUndefined(appendMethodToURL)) __obj.updateDynamic("appendMethodToURL")(appendMethodToURL)
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)
+    if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction1(beforeSend))
     if (context != null) __obj.updateDynamic("context")(context)
     if (data != null) __obj.updateDynamic("data")(data)
     if (elementName != null) __obj.updateDynamic("elementName")(elementName)
     if (!js.isUndefined(enableLogging)) __obj.updateDynamic("enableLogging")(enableLogging)
     if (envAttributes != null) __obj.updateDynamic("envAttributes")(envAttributes)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (method != null) __obj.updateDynamic("method")(method)
     if (namespaceQualifier != null) __obj.updateDynamic("namespaceQualifier")(namespaceQualifier)
     if (namespaceURL != null) __obj.updateDynamic("namespaceURL")(namespaceURL)
     if (!js.isUndefined(noPrefix)) __obj.updateDynamic("noPrefix")(noPrefix)
-    if (request != null) __obj.updateDynamic("request")(request)
+    if (request != null) __obj.updateDynamic("request")(js.Any.fromFunction1(request))
     if (!js.isUndefined(soap12)) __obj.updateDynamic("soap12")(soap12)
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url)
     if (wss != null) __obj.updateDynamic("wss")(wss)

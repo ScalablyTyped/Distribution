@@ -19,16 +19,16 @@ trait DataSourceSpecBuilder extends js.Object {
 object DataSourceSpecBuilder {
   @scala.inline
   def apply(
-    asBigQuery: js.Function0[BigQueryDataSourceSpecBuilder],
-    build: js.Function0[DataSourceSpec],
-    copy: js.Function0[DataSourceSpecBuilder],
-    getParameters: js.Function0[js.Array[DataSourceParameter]],
-    getType: js.Function0[DataSourceType],
-    removeAllParameters: js.Function0[DataSourceSpecBuilder],
-    removeParameter: js.Function1[java.lang.String, DataSourceSpecBuilder],
-    setParameterFromCell: js.Function2[java.lang.String, java.lang.String, DataSourceSpecBuilder]
+    asBigQuery: () => BigQueryDataSourceSpecBuilder,
+    build: () => DataSourceSpec,
+    copy: () => DataSourceSpecBuilder,
+    getParameters: () => js.Array[DataSourceParameter],
+    getType: () => DataSourceType,
+    removeAllParameters: () => DataSourceSpecBuilder,
+    removeParameter: java.lang.String => DataSourceSpecBuilder,
+    setParameterFromCell: (java.lang.String, java.lang.String) => DataSourceSpecBuilder
   ): DataSourceSpecBuilder = {
-    val __obj = js.Dynamic.literal(asBigQuery = asBigQuery, build = build, copy = copy, getParameters = getParameters, getType = getType, removeAllParameters = removeAllParameters, removeParameter = removeParameter, setParameterFromCell = setParameterFromCell)
+    val __obj = js.Dynamic.literal(asBigQuery = js.Any.fromFunction0(asBigQuery), build = js.Any.fromFunction0(build), copy = js.Any.fromFunction0(copy), getParameters = js.Any.fromFunction0(getParameters), getType = js.Any.fromFunction0(getType), removeAllParameters = js.Any.fromFunction0(removeAllParameters), removeParameter = js.Any.fromFunction1(removeParameter), setParameterFromCell = js.Any.fromFunction2(setParameterFromCell))
   
     __obj.asInstanceOf[DataSourceSpecBuilder]
   }

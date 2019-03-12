@@ -26,14 +26,14 @@ trait StyleManager extends js.Object {
 object StyleManager {
   @scala.inline
   def apply(
-    getStyleElements: js.Function0[js.Array[stdLib.HTMLStyleElement]],
-    getUserStyleSheetPath: js.Function0[java.lang.String],
-    observeStyleElements: js.Function1[js.Function1[/* styleElement */ StyleElementObservedEvent, scala.Unit], Disposable],
-    onDidAddStyleElement: js.Function1[js.Function1[/* styleElement */ StyleElementObservedEvent, scala.Unit], Disposable],
-    onDidRemoveStyleElement: js.Function1[js.Function1[/* styleElement */ stdLib.HTMLStyleElement, scala.Unit], Disposable],
-    onDidUpdateStyleElement: js.Function1[js.Function1[/* styleElement */ StyleElementObservedEvent, scala.Unit], Disposable]
+    getStyleElements: () => js.Array[stdLib.HTMLStyleElement],
+    getUserStyleSheetPath: () => java.lang.String,
+    observeStyleElements: js.Function1[/* styleElement */ StyleElementObservedEvent, scala.Unit] => Disposable,
+    onDidAddStyleElement: js.Function1[/* styleElement */ StyleElementObservedEvent, scala.Unit] => Disposable,
+    onDidRemoveStyleElement: js.Function1[/* styleElement */ stdLib.HTMLStyleElement, scala.Unit] => Disposable,
+    onDidUpdateStyleElement: js.Function1[/* styleElement */ StyleElementObservedEvent, scala.Unit] => Disposable
   ): StyleManager = {
-    val __obj = js.Dynamic.literal(getStyleElements = getStyleElements, getUserStyleSheetPath = getUserStyleSheetPath, observeStyleElements = observeStyleElements, onDidAddStyleElement = onDidAddStyleElement, onDidRemoveStyleElement = onDidRemoveStyleElement, onDidUpdateStyleElement = onDidUpdateStyleElement)
+    val __obj = js.Dynamic.literal(getStyleElements = js.Any.fromFunction0(getStyleElements), getUserStyleSheetPath = js.Any.fromFunction0(getUserStyleSheetPath), observeStyleElements = js.Any.fromFunction1(observeStyleElements), onDidAddStyleElement = js.Any.fromFunction1(onDidAddStyleElement), onDidRemoveStyleElement = js.Any.fromFunction1(onDidRemoveStyleElement), onDidUpdateStyleElement = js.Any.fromFunction1(onDidUpdateStyleElement))
   
     __obj.asInstanceOf[StyleManager]
   }

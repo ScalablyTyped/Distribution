@@ -24,10 +24,7 @@ object Props {
   @scala.inline
   def apply(
     id: java.lang.String,
-    children: js.Function1[
-      /* repeated */ java.lang.String | reactLib.reactMod.Global.JSXNs.Element, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    children: /* repeated */ java.lang.String | reactLib.reactMod.Global.JSXNs.Element => reactLib.reactMod.ReactNs.ReactNode = null,
     defaultMessage: java.lang.String = null,
     description: java.lang.String = null,
     tagName: reactLib.reactMod.ReactNs.ReactType[_] = null,
@@ -36,7 +33,7 @@ object Props {
     ] = null
   ): Props = {
     val __obj = js.Dynamic.literal(id = id)
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (defaultMessage != null) __obj.updateDynamic("defaultMessage")(defaultMessage)
     if (description != null) __obj.updateDynamic("description")(description)
     if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])

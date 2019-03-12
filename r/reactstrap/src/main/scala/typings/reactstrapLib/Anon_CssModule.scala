@@ -17,10 +17,10 @@ object Anon_CssModule {
   def apply(
     direction: reactstrapLib.reactstrapLibStrings.prev | reactstrapLib.reactstrapLibStrings.next,
     directionText: java.lang.String,
-    onClickHandler: js.Function0[scala.Unit],
+    onClickHandler: () => scala.Unit,
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null
   ): Anon_CssModule = {
-    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], directionText = directionText, onClickHandler = onClickHandler)
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], directionText = directionText, onClickHandler = js.Any.fromFunction0(onClickHandler))
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
     __obj.asInstanceOf[Anon_CssModule]
   }

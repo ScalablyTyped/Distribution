@@ -8,11 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("mssql", "ConnectionError")
 @js.native
 class ConnectionError protected ()
-  extends nodeLib.Error {
+  extends stdLib.Error {
   def this(message: java.lang.String) = this()
   def this(message: java.lang.String, code: js.Any) = this()
   var code: java.lang.String = js.native
-  var message: java.lang.String = js.native
-  var name: java.lang.String = js.native
+  /* CompleteClass */
+  override var message: java.lang.String = js.native
+  /* CompleteClass */
+  override var name: java.lang.String = js.native
 }
 

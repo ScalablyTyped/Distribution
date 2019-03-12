@@ -38,32 +38,14 @@ trait TransferOperationsResource extends js.Object {
 object TransferOperationsResource {
   @scala.inline
   def apply(
-    cancel: js.Function1[
-      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    get: js.Function1[
-      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListOperationsResponse]
-    ],
-    pause: js.Function1[
-      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ],
-    resume: js.Function1[
-      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
-    ]
+    cancel: gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    delete: gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    get: gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter => gapiDotClientLib.gapiNs.clientNs.Request[ListOperationsResponse],
+    pause: gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[js.Object],
+    resume: gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   ): TransferOperationsResource = {
-    val __obj = js.Dynamic.literal(cancel = cancel, delete = delete, get = get, list = list, pause = pause, resume = resume)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), pause = js.Any.fromFunction1(pause), resume = js.Any.fromFunction1(resume))
   
     __obj.asInstanceOf[TransferOperationsResource]
   }

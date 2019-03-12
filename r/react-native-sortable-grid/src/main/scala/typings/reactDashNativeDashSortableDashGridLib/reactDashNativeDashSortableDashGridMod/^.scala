@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-sortable-grid", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var default: reactDashNativeDashSortableDashGridLib.reactDashNativeDashSortableDashGridMod.SortableGridStatic = js.native
+  var default: SortableGridStatic = js.native
 }
 

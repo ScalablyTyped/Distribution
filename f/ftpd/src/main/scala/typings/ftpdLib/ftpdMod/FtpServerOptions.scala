@@ -77,7 +77,7 @@ trait FtpServerOptions extends js.Object {
   def getInitialCwd(connection: FtpConnection): scala.Unit | java.lang.String = js.native
   def getInitialCwd(
     connection: FtpConnection,
-    callback: js.Function2[/* error */ nodeLib.Error, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit | java.lang.String = js.native
   /**
     * Gets the root directory for the user relative to the CWD. Called after getInitialCwd. The user is not able to escape this directory.
@@ -86,7 +86,7 @@ trait FtpServerOptions extends js.Object {
   def getRoot(connection: FtpConnection): scala.Unit | java.lang.String = js.native
   def getRoot(
     connection: FtpConnection,
-    callback: js.Function2[/* error */ nodeLib.Error, /* path */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* path */ java.lang.String, scala.Unit]
   ): scala.Unit | java.lang.String = js.native
 }
 

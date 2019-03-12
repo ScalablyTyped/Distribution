@@ -11,7 +11,7 @@ object ^ extends js.Object {
   /**
     * Map of MakerJs unit system to SVG unit system
     */
-  var svgUnit: makerDotJsLib.MakerJsNs.exporterNs.svgUnitConversion = js.native
+  var svgUnit: svgUnitConversion = js.native
   /**
     * Convert a chain to SVG path data.
     */
@@ -25,35 +25,17 @@ object ^ extends js.Object {
     offset2: makerDotJsLib.MakerJsNs.IPoint
   ): java.lang.String = js.native
   def toDXF(modelToExport: makerDotJsLib.MakerJsNs.IModel): java.lang.String = js.native
-  def toDXF(
-    modelToExport: makerDotJsLib.MakerJsNs.IModel,
-    options: makerDotJsLib.MakerJsNs.exporterNs.IDXFRenderOptions
-  ): java.lang.String = js.native
+  def toDXF(modelToExport: makerDotJsLib.MakerJsNs.IModel, options: IDXFRenderOptions): java.lang.String = js.native
   def toDXF(pathToExport: makerDotJsLib.MakerJsNs.IPath): java.lang.String = js.native
-  def toDXF(
-    pathToExport: makerDotJsLib.MakerJsNs.IPath,
-    options: makerDotJsLib.MakerJsNs.exporterNs.IDXFRenderOptions
-  ): java.lang.String = js.native
+  def toDXF(pathToExport: makerDotJsLib.MakerJsNs.IPath, options: IDXFRenderOptions): java.lang.String = js.native
   def toDXF(pathsToExport: js.Array[makerDotJsLib.MakerJsNs.IPath]): java.lang.String = js.native
-  def toDXF(
-    pathsToExport: js.Array[makerDotJsLib.MakerJsNs.IPath],
-    options: makerDotJsLib.MakerJsNs.exporterNs.IDXFRenderOptions
-  ): java.lang.String = js.native
+  def toDXF(pathsToExport: js.Array[makerDotJsLib.MakerJsNs.IPath], options: IDXFRenderOptions): java.lang.String = js.native
   def toOpenJsCad(modelToExport: makerDotJsLib.MakerJsNs.IModel): java.lang.String = js.native
-  def toOpenJsCad(
-    modelToExport: makerDotJsLib.MakerJsNs.IModel,
-    options: makerDotJsLib.MakerJsNs.exporterNs.IOpenJsCadOptions
-  ): java.lang.String = js.native
+  def toOpenJsCad(modelToExport: makerDotJsLib.MakerJsNs.IModel, options: IOpenJsCadOptions): java.lang.String = js.native
   def toOpenJsCad(pathToExport: makerDotJsLib.MakerJsNs.IPath): java.lang.String = js.native
-  def toOpenJsCad(
-    pathToExport: makerDotJsLib.MakerJsNs.IPath,
-    options: makerDotJsLib.MakerJsNs.exporterNs.IOpenJsCadOptions
-  ): java.lang.String = js.native
+  def toOpenJsCad(pathToExport: makerDotJsLib.MakerJsNs.IPath, options: IOpenJsCadOptions): java.lang.String = js.native
   def toOpenJsCad(pathsToExport: js.Array[makerDotJsLib.MakerJsNs.IPath]): java.lang.String = js.native
-  def toOpenJsCad(
-    pathsToExport: js.Array[makerDotJsLib.MakerJsNs.IPath],
-    options: makerDotJsLib.MakerJsNs.exporterNs.IOpenJsCadOptions
-  ): java.lang.String = js.native
+  def toOpenJsCad(pathsToExport: js.Array[makerDotJsLib.MakerJsNs.IPath], options: IOpenJsCadOptions): java.lang.String = js.native
   /**
     * Injects drawing into a PDFKit document.
     *
@@ -65,7 +47,7 @@ object ^ extends js.Object {
   def toPDF(
     doc: pdfkitLib.PDFKitNs.PDFDocument,
     modelToExport: makerDotJsLib.MakerJsNs.IModel,
-    options: makerDotJsLib.MakerJsNs.exporterNs.IPDFRenderOptions
+    options: IPDFRenderOptions
   ): scala.Unit = js.native
   /**
     * Executes a JavaScript string with the OpenJsCad engine - converts 2D to 3D.
@@ -77,25 +59,13 @@ object ^ extends js.Object {
     * @returns String of STL format of 3D object.
     */
   def toSTL(modelToExport: makerDotJsLib.MakerJsNs.IModel): java.lang.String = js.native
-  def toSTL(
-    modelToExport: makerDotJsLib.MakerJsNs.IModel,
-    options: makerDotJsLib.MakerJsNs.exporterNs.IOpenJsCadOptions
-  ): java.lang.String = js.native
+  def toSTL(modelToExport: makerDotJsLib.MakerJsNs.IModel, options: IOpenJsCadOptions): java.lang.String = js.native
   def toSVG(modelToExport: makerDotJsLib.MakerJsNs.IModel): java.lang.String = js.native
-  def toSVG(
-    modelToExport: makerDotJsLib.MakerJsNs.IModel,
-    options: makerDotJsLib.MakerJsNs.exporterNs.ISVGRenderOptions
-  ): java.lang.String = js.native
+  def toSVG(modelToExport: makerDotJsLib.MakerJsNs.IModel, options: ISVGRenderOptions): java.lang.String = js.native
   def toSVG(pathToExport: makerDotJsLib.MakerJsNs.IPath): java.lang.String = js.native
-  def toSVG(
-    pathToExport: makerDotJsLib.MakerJsNs.IPath,
-    options: makerDotJsLib.MakerJsNs.exporterNs.ISVGRenderOptions
-  ): java.lang.String = js.native
+  def toSVG(pathToExport: makerDotJsLib.MakerJsNs.IPath, options: ISVGRenderOptions): java.lang.String = js.native
   def toSVG(pathsToExport: js.Array[makerDotJsLib.MakerJsNs.IPath]): java.lang.String = js.native
-  def toSVG(
-    pathsToExport: js.Array[makerDotJsLib.MakerJsNs.IPath],
-    options: makerDotJsLib.MakerJsNs.exporterNs.ISVGRenderOptions
-  ): java.lang.String = js.native
+  def toSVG(pathsToExport: js.Array[makerDotJsLib.MakerJsNs.IPath], options: ISVGRenderOptions): java.lang.String = js.native
   /**
     * Convert a model to SVG path data.
     *
@@ -104,13 +74,13 @@ object ^ extends js.Object {
     * @param origin Optional reference origin.
     * @returns String of SVG path data (if byLayers is false) or an object map of path data by layer .
     */
-  def toSVGPathData(modelToExport: makerDotJsLib.MakerJsNs.IModel): makerDotJsLib.MakerJsNs.exporterNs.IPathDataByLayerMap | java.lang.String = js.native
-  def toSVGPathData(modelToExport: makerDotJsLib.MakerJsNs.IModel, byLayers: scala.Boolean): makerDotJsLib.MakerJsNs.exporterNs.IPathDataByLayerMap | java.lang.String = js.native
+  def toSVGPathData(modelToExport: makerDotJsLib.MakerJsNs.IModel): IPathDataByLayerMap | java.lang.String = js.native
+  def toSVGPathData(modelToExport: makerDotJsLib.MakerJsNs.IModel, byLayers: scala.Boolean): IPathDataByLayerMap | java.lang.String = js.native
   def toSVGPathData(
     modelToExport: makerDotJsLib.MakerJsNs.IModel,
     byLayers: scala.Boolean,
     origin: makerDotJsLib.MakerJsNs.IPoint
-  ): makerDotJsLib.MakerJsNs.exporterNs.IPathDataByLayerMap | java.lang.String = js.native
+  ): IPathDataByLayerMap | java.lang.String = js.native
   /**
     * Try to get the unit system from a model
     * @private

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.FillFormat")
 @js.native
 class FillFormat protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val BackColor: ColorFormat = js.native
   val Creator: scala.Double = js.native
   val ForeColor: ColorFormat = js.native

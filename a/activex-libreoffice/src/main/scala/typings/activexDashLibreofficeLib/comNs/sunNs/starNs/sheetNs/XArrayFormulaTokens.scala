@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 /** gives access to an array formula as token sequence. */
 trait XArrayFormulaTokens extends js.Object {
   /** returns the array formula as sequence of tokens. */
-  var ArrayTokens: activexDashInteropLib.SafeArray[FormulaToken]
+  var ArrayTokens: stdLib.SafeArray[FormulaToken]
   /** returns the array formula as sequence of tokens. */
-  def getArrayTokens(): activexDashInteropLib.SafeArray[FormulaToken]
+  def getArrayTokens(): stdLib.SafeArray[FormulaToken]
   /** sets the array formula as sequence of tokens. */
   def setArrayTokens(aTokens: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[FormulaToken]): scala.Unit
 }
@@ -18,11 +18,11 @@ trait XArrayFormulaTokens extends js.Object {
 object XArrayFormulaTokens {
   @scala.inline
   def apply(
-    ArrayTokens: activexDashInteropLib.SafeArray[FormulaToken],
-    getArrayTokens: js.Function0[activexDashInteropLib.SafeArray[FormulaToken]],
-    setArrayTokens: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[FormulaToken], scala.Unit]
+    ArrayTokens: stdLib.SafeArray[FormulaToken],
+    getArrayTokens: () => stdLib.SafeArray[FormulaToken],
+    setArrayTokens: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[FormulaToken] => scala.Unit
   ): XArrayFormulaTokens = {
-    val __obj = js.Dynamic.literal(ArrayTokens = ArrayTokens, getArrayTokens = getArrayTokens, setArrayTokens = setArrayTokens)
+    val __obj = js.Dynamic.literal(ArrayTokens = ArrayTokens, getArrayTokens = js.Any.fromFunction0(getArrayTokens), setArrayTokens = js.Any.fromFunction1(setArrayTokens))
   
     __obj.asInstanceOf[XArrayFormulaTokens]
   }

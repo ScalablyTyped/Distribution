@@ -261,252 +261,157 @@ trait IAbstractMixedCollection extends IObservable {
 object IAbstractMixedCollection {
   @scala.inline
   def apply(
-    add: js.Function2[/* key */ js.UndefOr[js.Any], /* obj */ js.UndefOr[js.Any], _] = null,
-    addAll: js.Function1[/* objs */ js.UndefOr[js.Any], scala.Unit] = null,
-    addEvents: js.Function1[/* eventNames */ js.UndefOr[js.Any], scala.Unit] = null,
-    addListener: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      _
-    ] = null,
-    addManagedListener: js.Function5[
-      /* item */ js.UndefOr[js.Any], 
-      /* ename */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      _
-    ] = null,
+    add: (/* key */ js.UndefOr[js.Any], /* obj */ js.UndefOr[js.Any]) => _ = null,
+    addAll: /* objs */ js.UndefOr[js.Any] => scala.Unit = null,
+    addEvents: /* eventNames */ js.UndefOr[js.Any] => scala.Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
+    addManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     alias: extjsLib.ExtNs.Array = null,
     allowFunctions: js.UndefOr[scala.Boolean] = js.undefined,
     alternateClassName: js.Any = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    clear: js.Function0[scala.Unit] = null,
-    clearListeners: js.Function0[scala.Unit] = null,
-    clearManagedListeners: js.Function0[scala.Unit] = null,
-    clone: js.Function0[IMixedCollection] = null,
-    collect: js.Function3[
-      /* property */ js.UndefOr[java.lang.String], 
-      /* root */ js.UndefOr[java.lang.String], 
-      /* allowBlank */ js.UndefOr[scala.Boolean], 
-      extjsLib.ExtNs.Array
-    ] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
+    clear: () => scala.Unit = null,
+    clearListeners: () => scala.Unit = null,
+    clearManagedListeners: () => scala.Unit = null,
+    clone: () => IMixedCollection = null,
+    collect: (/* property */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[java.lang.String], /* allowBlank */ js.UndefOr[scala.Boolean]) => extjsLib.ExtNs.Array = null,
     config: js.Any = null,
-    contains: js.Function1[/* o */ js.UndefOr[js.Any], scala.Boolean] = null,
-    containsKey: js.Function1[/* key */ js.UndefOr[java.lang.String], scala.Boolean] = null,
-    each: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], scala.Unit] = null,
-    eachKey: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], scala.Unit] = null,
-    enableBubble: js.Function1[/* eventNames */ js.UndefOr[js.Any], scala.Unit] = null,
+    contains: /* o */ js.UndefOr[js.Any] => scala.Boolean = null,
+    containsKey: /* key */ js.UndefOr[java.lang.String] => scala.Boolean = null,
+    each: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    eachKey: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    enableBubble: /* eventNames */ js.UndefOr[js.Any] => scala.Unit = null,
     extend: java.lang.String = null,
-    filter: js.Function4[
-      /* property */ js.UndefOr[js.Any], 
-      /* value */ js.UndefOr[js.Any], 
-      /* anyMatch */ js.UndefOr[scala.Boolean], 
-      /* caseSensitive */ js.UndefOr[scala.Boolean], 
-      IMixedCollection
-    ] = null,
-    filterBy: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], IMixedCollection] = null,
-    find: js.Function0[scala.Unit] = null,
-    findBy: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], _] = null,
-    findIndex: js.Function5[
-      /* property */ js.UndefOr[java.lang.String], 
-      /* value */ js.UndefOr[js.Any], 
-      /* start */ js.UndefOr[scala.Double], 
-      /* anyMatch */ js.UndefOr[scala.Boolean], 
-      /* caseSensitive */ js.UndefOr[scala.Boolean], 
-      scala.Double
-    ] = null,
-    findIndexBy: js.Function3[
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* start */ js.UndefOr[scala.Double], 
-      scala.Double
-    ] = null,
-    fireEvent: js.Function2[/* eventName */ java.lang.String, /* repeated */ js.Any, scala.Boolean] = null,
-    fireEventArgs: js.Function2[
-      /* eventName */ js.UndefOr[java.lang.String], 
-      /* args */ js.UndefOr[extjsLib.ExtNs.Array], 
-      scala.Boolean
-    ] = null,
-    first: js.Function0[_] = null,
-    get: js.Function1[/* key */ js.UndefOr[js.Any], _] = null,
-    getAt: js.Function1[/* index */ js.UndefOr[scala.Double], _] = null,
-    getByKey: js.Function1[/* key */ js.UndefOr[js.Any], _] = null,
-    getCount: js.Function0[scala.Double] = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
-    getKey: js.Function1[/* item */ js.UndefOr[js.Any], _] = null,
-    getRange: js.Function2[
-      /* startIndex */ js.UndefOr[scala.Double], 
-      /* endIndex */ js.UndefOr[scala.Double], 
-      extjsLib.ExtNs.Array
-    ] = null,
-    hasListener: js.Function1[/* eventName */ js.UndefOr[java.lang.String], scala.Boolean] = null,
+    filter: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], /* anyMatch */ js.UndefOr[scala.Boolean], /* caseSensitive */ js.UndefOr[scala.Boolean]) => IMixedCollection = null,
+    filterBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMixedCollection = null,
+    find: () => scala.Unit = null,
+    findBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    findIndex: (/* property */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], /* start */ js.UndefOr[scala.Double], /* anyMatch */ js.UndefOr[scala.Boolean], /* caseSensitive */ js.UndefOr[scala.Boolean]) => scala.Double = null,
+    findIndexBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* start */ js.UndefOr[scala.Double]) => scala.Double = null,
+    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => scala.Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[extjsLib.ExtNs.Array]) => scala.Boolean = null,
+    first: () => _ = null,
+    get: /* key */ js.UndefOr[js.Any] => _ = null,
+    getAt: /* index */ js.UndefOr[scala.Double] => _ = null,
+    getByKey: /* key */ js.UndefOr[js.Any] => _ = null,
+    getCount: () => scala.Double = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getKey: /* item */ js.UndefOr[js.Any] => _ = null,
+    getRange: (/* startIndex */ js.UndefOr[scala.Double], /* endIndex */ js.UndefOr[scala.Double]) => extjsLib.ExtNs.Array = null,
+    hasListener: /* eventName */ js.UndefOr[java.lang.String] => scala.Boolean = null,
     hasListeners: js.Any = null,
-    indexOf: js.Function1[/* o */ js.UndefOr[js.Any], scala.Double] = null,
-    indexOfKey: js.Function1[/* key */ js.UndefOr[java.lang.String], scala.Double] = null,
+    indexOf: /* o */ js.UndefOr[js.Any] => scala.Double = null,
+    indexOfKey: /* key */ js.UndefOr[java.lang.String] => scala.Double = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IAbstractMixedCollection] = null,
-    insert: js.Function3[
-      /* index */ js.UndefOr[scala.Double], 
-      /* key */ js.UndefOr[js.Any], 
-      /* o */ js.UndefOr[js.Any], 
-      _
-    ] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IAbstractMixedCollection = null,
+    insert: (/* index */ js.UndefOr[scala.Double], /* key */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any]) => _ = null,
     isMixedCollection: js.UndefOr[scala.Boolean] = js.undefined,
     isObservable: js.UndefOr[scala.Boolean] = js.undefined,
-    last: js.Function0[_] = null,
+    last: () => _ = null,
     listeners: js.Any = null,
     mixins: js.Any = null,
-    mon: js.Function5[
-      /* item */ js.UndefOr[js.Any], 
-      /* ename */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      _
-    ] = null,
-    mun: js.Function4[
-      /* item */ js.UndefOr[js.Any], 
-      /* ename */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    on: js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      _
-    ] = null,
-    relayEvents: js.Function3[
-      /* origin */ js.UndefOr[js.Any], 
-      /* events */ js.UndefOr[extjsLib.ExtNs.Array], 
-      /* prefix */ js.UndefOr[java.lang.String], 
-      _
-    ] = null,
-    remove: js.Function1[/* o */ js.UndefOr[js.Any], _] = null,
-    removeAll: js.Function1[/* items */ js.UndefOr[extjsLib.ExtNs.Array], IMixedCollection] = null,
-    removeAt: js.Function1[/* index */ js.UndefOr[scala.Double], _] = null,
-    removeAtKey: js.Function1[/* key */ js.UndefOr[java.lang.String], _] = null,
-    removeListener: js.Function3[
-      /* eventName */ js.UndefOr[java.lang.String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    removeManagedListener: js.Function4[
-      /* item */ js.UndefOr[js.Any], 
-      /* ename */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    removeRange: js.Function2[/* index */ js.UndefOr[scala.Double], /* removeCount */ js.UndefOr[scala.Double], _] = null,
-    replace: js.Function2[/* key */ js.UndefOr[java.lang.String], /* o */ js.UndefOr[js.Any], _] = null,
+    mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
+    mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[extjsLib.ExtNs.Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
+    remove: /* o */ js.UndefOr[js.Any] => _ = null,
+    removeAll: /* items */ js.UndefOr[extjsLib.ExtNs.Array] => IMixedCollection = null,
+    removeAt: /* index */ js.UndefOr[scala.Double] => _ = null,
+    removeAtKey: /* key */ js.UndefOr[java.lang.String] => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    removeRange: (/* index */ js.UndefOr[scala.Double], /* removeCount */ js.UndefOr[scala.Double]) => _ = null,
+    replace: (/* key */ js.UndefOr[java.lang.String], /* o */ js.UndefOr[js.Any]) => _ = null,
     requires: extjsLib.ExtNs.Array = null,
-    resumeEvent: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    resumeEvents: js.Function0[scala.Unit] = null,
+    resumeEvent: /* repeated */ js.Any => scala.Unit = null,
+    resumeEvents: () => scala.Unit = null,
     self: extjsLib.ExtNs.IClass = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
-    sum: js.Function4[
-      /* property */ js.UndefOr[java.lang.String], 
-      /* root */ js.UndefOr[java.lang.String], 
-      /* start */ js.UndefOr[scala.Double], 
-      /* end */ js.UndefOr[scala.Double], 
-      scala.Double
-    ] = null,
-    suspendEvent: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
-    suspendEvents: js.Function1[/* queueSuspended */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    un: js.Function3[
-      /* eventName */ js.UndefOr[java.lang.String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    updateKey: js.Function2[/* oldKey */ js.UndefOr[js.Any], /* newKey */ js.UndefOr[js.Any], scala.Unit] = null,
+    sum: (/* property */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[java.lang.String], /* start */ js.UndefOr[scala.Double], /* end */ js.UndefOr[scala.Double]) => scala.Double = null,
+    suspendEvent: /* repeated */ js.Any => scala.Unit = null,
+    suspendEvents: /* queueSuspended */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    updateKey: (/* oldKey */ js.UndefOr[js.Any], /* newKey */ js.UndefOr[js.Any]) => scala.Unit = null,
     uses: extjsLib.ExtNs.Array = null
   ): IAbstractMixedCollection = {
     val __obj = js.Dynamic.literal()
-    if (add != null) __obj.updateDynamic("add")(add)
-    if (addAll != null) __obj.updateDynamic("addAll")(addAll)
-    if (addEvents != null) __obj.updateDynamic("addEvents")(addEvents)
-    if (addListener != null) __obj.updateDynamic("addListener")(addListener)
-    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(addManagedListener)
+    if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction2(add))
+    if (addAll != null) __obj.updateDynamic("addAll")(js.Any.fromFunction1(addAll))
+    if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
+    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction4(addListener))
+    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (!js.isUndefined(allowFunctions)) __obj.updateDynamic("allowFunctions")(allowFunctions)
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
-    if (clear != null) __obj.updateDynamic("clear")(clear)
-    if (clearListeners != null) __obj.updateDynamic("clearListeners")(clearListeners)
-    if (clearManagedListeners != null) __obj.updateDynamic("clearManagedListeners")(clearManagedListeners)
-    if (clone != null) __obj.updateDynamic("clone")(clone)
-    if (collect != null) __obj.updateDynamic("collect")(collect)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
+    if (clear != null) __obj.updateDynamic("clear")(js.Any.fromFunction0(clear))
+    if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
+    if (clearManagedListeners != null) __obj.updateDynamic("clearManagedListeners")(js.Any.fromFunction0(clearManagedListeners))
+    if (clone != null) __obj.updateDynamic("clone")(js.Any.fromFunction0(clone))
+    if (collect != null) __obj.updateDynamic("collect")(js.Any.fromFunction3(collect))
     if (config != null) __obj.updateDynamic("config")(config)
-    if (contains != null) __obj.updateDynamic("contains")(contains)
-    if (containsKey != null) __obj.updateDynamic("containsKey")(containsKey)
-    if (each != null) __obj.updateDynamic("each")(each)
-    if (eachKey != null) __obj.updateDynamic("eachKey")(eachKey)
-    if (enableBubble != null) __obj.updateDynamic("enableBubble")(enableBubble)
+    if (contains != null) __obj.updateDynamic("contains")(js.Any.fromFunction1(contains))
+    if (containsKey != null) __obj.updateDynamic("containsKey")(js.Any.fromFunction1(containsKey))
+    if (each != null) __obj.updateDynamic("each")(js.Any.fromFunction2(each))
+    if (eachKey != null) __obj.updateDynamic("eachKey")(js.Any.fromFunction2(eachKey))
+    if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (filterBy != null) __obj.updateDynamic("filterBy")(filterBy)
-    if (find != null) __obj.updateDynamic("find")(find)
-    if (findBy != null) __obj.updateDynamic("findBy")(findBy)
-    if (findIndex != null) __obj.updateDynamic("findIndex")(findIndex)
-    if (findIndexBy != null) __obj.updateDynamic("findIndexBy")(findIndexBy)
-    if (fireEvent != null) __obj.updateDynamic("fireEvent")(fireEvent)
-    if (fireEventArgs != null) __obj.updateDynamic("fireEventArgs")(fireEventArgs)
-    if (first != null) __obj.updateDynamic("first")(first)
-    if (get != null) __obj.updateDynamic("get")(get)
-    if (getAt != null) __obj.updateDynamic("getAt")(getAt)
-    if (getByKey != null) __obj.updateDynamic("getByKey")(getByKey)
-    if (getCount != null) __obj.updateDynamic("getCount")(getCount)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
-    if (getKey != null) __obj.updateDynamic("getKey")(getKey)
-    if (getRange != null) __obj.updateDynamic("getRange")(getRange)
-    if (hasListener != null) __obj.updateDynamic("hasListener")(hasListener)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction4(filter))
+    if (filterBy != null) __obj.updateDynamic("filterBy")(js.Any.fromFunction2(filterBy))
+    if (find != null) __obj.updateDynamic("find")(js.Any.fromFunction0(find))
+    if (findBy != null) __obj.updateDynamic("findBy")(js.Any.fromFunction2(findBy))
+    if (findIndex != null) __obj.updateDynamic("findIndex")(js.Any.fromFunction5(findIndex))
+    if (findIndexBy != null) __obj.updateDynamic("findIndexBy")(js.Any.fromFunction3(findIndexBy))
+    if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
+    if (fireEventArgs != null) __obj.updateDynamic("fireEventArgs")(js.Any.fromFunction2(fireEventArgs))
+    if (first != null) __obj.updateDynamic("first")(js.Any.fromFunction0(first))
+    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
+    if (getAt != null) __obj.updateDynamic("getAt")(js.Any.fromFunction1(getAt))
+    if (getByKey != null) __obj.updateDynamic("getByKey")(js.Any.fromFunction1(getByKey))
+    if (getCount != null) __obj.updateDynamic("getCount")(js.Any.fromFunction0(getCount))
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
+    if (getKey != null) __obj.updateDynamic("getKey")(js.Any.fromFunction1(getKey))
+    if (getRange != null) __obj.updateDynamic("getRange")(js.Any.fromFunction2(getRange))
+    if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners)
-    if (indexOf != null) __obj.updateDynamic("indexOf")(indexOf)
-    if (indexOfKey != null) __obj.updateDynamic("indexOfKey")(indexOfKey)
+    if (indexOf != null) __obj.updateDynamic("indexOf")(js.Any.fromFunction1(indexOf))
+    if (indexOfKey != null) __obj.updateDynamic("indexOfKey")(js.Any.fromFunction1(indexOfKey))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
-    if (insert != null) __obj.updateDynamic("insert")(insert)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
+    if (insert != null) __obj.updateDynamic("insert")(js.Any.fromFunction3(insert))
     if (!js.isUndefined(isMixedCollection)) __obj.updateDynamic("isMixedCollection")(isMixedCollection)
     if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable)
-    if (last != null) __obj.updateDynamic("last")(last)
+    if (last != null) __obj.updateDynamic("last")(js.Any.fromFunction0(last))
     if (listeners != null) __obj.updateDynamic("listeners")(listeners)
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (mon != null) __obj.updateDynamic("mon")(mon)
-    if (mun != null) __obj.updateDynamic("mun")(mun)
-    if (on != null) __obj.updateDynamic("on")(on)
-    if (relayEvents != null) __obj.updateDynamic("relayEvents")(relayEvents)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (removeAll != null) __obj.updateDynamic("removeAll")(removeAll)
-    if (removeAt != null) __obj.updateDynamic("removeAt")(removeAt)
-    if (removeAtKey != null) __obj.updateDynamic("removeAtKey")(removeAtKey)
-    if (removeListener != null) __obj.updateDynamic("removeListener")(removeListener)
-    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(removeManagedListener)
-    if (removeRange != null) __obj.updateDynamic("removeRange")(removeRange)
-    if (replace != null) __obj.updateDynamic("replace")(replace)
+    if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
+    if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
+    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction4(on))
+    if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction3(relayEvents))
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
+    if (removeAll != null) __obj.updateDynamic("removeAll")(js.Any.fromFunction1(removeAll))
+    if (removeAt != null) __obj.updateDynamic("removeAt")(js.Any.fromFunction1(removeAt))
+    if (removeAtKey != null) __obj.updateDynamic("removeAtKey")(js.Any.fromFunction1(removeAtKey))
+    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction3(removeListener))
+    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
+    if (removeRange != null) __obj.updateDynamic("removeRange")(js.Any.fromFunction2(removeRange))
+    if (replace != null) __obj.updateDynamic("replace")(js.Any.fromFunction2(replace))
     if (requires != null) __obj.updateDynamic("requires")(requires)
-    if (resumeEvent != null) __obj.updateDynamic("resumeEvent")(resumeEvent)
-    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(resumeEvents)
+    if (resumeEvent != null) __obj.updateDynamic("resumeEvent")(js.Any.fromFunction1(resumeEvent))
+    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
     if (self != null) __obj.updateDynamic("self")(self)
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
-    if (sum != null) __obj.updateDynamic("sum")(sum)
-    if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(suspendEvent)
-    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(suspendEvents)
-    if (un != null) __obj.updateDynamic("un")(un)
-    if (updateKey != null) __obj.updateDynamic("updateKey")(updateKey)
+    if (sum != null) __obj.updateDynamic("sum")(js.Any.fromFunction4(sum))
+    if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
+    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))
+    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction3(un))
+    if (updateKey != null) __obj.updateDynamic("updateKey")(js.Any.fromFunction2(updateKey))
     if (uses != null) __obj.updateDynamic("uses")(uses)
     __obj.asInstanceOf[IAbstractMixedCollection]
   }

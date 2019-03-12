@@ -21,30 +21,23 @@ object ContactEquation {
   @scala.inline
   def apply(
     G: js.Tuple2[scala.Double, scala.Double],
-    addToWlambda: js.Function1[scala.Double, scala.Double],
+    addToWlambda: scala.Double => scala.Double,
     bodyA: Body,
     bodyB: Body,
-    computeB: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double],
-    computeGW: js.Function0[scala.Double],
-    computeGWlambda: js.Function0[scala.Double],
-    computeGiMGt: js.Function0[scala.Double],
-    computeGiMf: js.Function0[scala.Double],
-    computeGq: js.Function0[scala.Double],
-    computeInvC: js.Function1[scala.Double, scala.Double],
+    computeB: (scala.Double, scala.Double, scala.Double) => scala.Double,
+    computeGW: () => scala.Double,
+    computeGWlambda: () => scala.Double,
+    computeGiMGt: () => scala.Double,
+    computeGiMf: () => scala.Double,
+    computeGq: () => scala.Double,
+    computeInvC: scala.Double => scala.Double,
     contactPointA: js.Tuple2[scala.Double, scala.Double],
     contactPointB: js.Tuple2[scala.Double, scala.Double],
     enabled: scala.Boolean,
     epsilon: scala.Double,
     firstImpact: scala.Boolean,
-    getVelocityAlongNormal: js.Function0[scala.Double],
-    gmult: js.Function5[
-      js.Tuple2[scala.Double, scala.Double], 
-      js.Tuple2[scala.Double, scala.Double], 
-      js.Tuple2[scala.Double, scala.Double], 
-      js.Tuple2[scala.Double, scala.Double], 
-      js.Tuple2[scala.Double, scala.Double], 
-      scala.Double
-    ],
+    getVelocityAlongNormal: () => scala.Double,
+    gmult: (js.Tuple2[scala.Double, scala.Double], js.Tuple2[scala.Double, scala.Double], js.Tuple2[scala.Double, scala.Double], js.Tuple2[scala.Double, scala.Double], js.Tuple2[scala.Double, scala.Double]) => scala.Double,
     maxForce: scala.Double,
     minForce: scala.Double,
     multiplier: scala.Double,
@@ -58,9 +51,9 @@ object ContactEquation {
     shapeB: Shape,
     stiffness: scala.Double,
     timeStep: scala.Double,
-    update: js.Function0[scala.Unit]
+    update: () => scala.Unit
   ): ContactEquation = {
-    val __obj = js.Dynamic.literal(G = G, addToWlambda = addToWlambda, bodyA = bodyA, bodyB = bodyB, computeB = computeB, computeGW = computeGW, computeGWlambda = computeGWlambda, computeGiMGt = computeGiMGt, computeGiMf = computeGiMf, computeGq = computeGq, computeInvC = computeInvC, contactPointA = contactPointA, contactPointB = contactPointB, enabled = enabled, epsilon = epsilon, firstImpact = firstImpact, getVelocityAlongNormal = getVelocityAlongNormal, gmult = gmult, maxForce = maxForce, minForce = minForce, multiplier = multiplier, needsUpdate = needsUpdate, normalA = normalA, penetrationVec = penetrationVec, relativeVelocity = relativeVelocity, relaxation = relaxation, restitution = restitution, shapeA = shapeA, shapeB = shapeB, stiffness = stiffness, timeStep = timeStep, update = update)
+    val __obj = js.Dynamic.literal(G = G, addToWlambda = js.Any.fromFunction1(addToWlambda), bodyA = bodyA, bodyB = bodyB, computeB = js.Any.fromFunction3(computeB), computeGW = js.Any.fromFunction0(computeGW), computeGWlambda = js.Any.fromFunction0(computeGWlambda), computeGiMGt = js.Any.fromFunction0(computeGiMGt), computeGiMf = js.Any.fromFunction0(computeGiMf), computeGq = js.Any.fromFunction0(computeGq), computeInvC = js.Any.fromFunction1(computeInvC), contactPointA = contactPointA, contactPointB = contactPointB, enabled = enabled, epsilon = epsilon, firstImpact = firstImpact, getVelocityAlongNormal = js.Any.fromFunction0(getVelocityAlongNormal), gmult = js.Any.fromFunction5(gmult), maxForce = maxForce, minForce = minForce, multiplier = multiplier, needsUpdate = needsUpdate, normalA = normalA, penetrationVec = penetrationVec, relativeVelocity = relativeVelocity, relaxation = relaxation, restitution = restitution, shapeA = shapeA, shapeB = shapeB, stiffness = stiffness, timeStep = timeStep, update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[ContactEquation]
   }

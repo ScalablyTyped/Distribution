@@ -24,18 +24,14 @@ object RunLoaderOption {
   def apply(
     context: js.Any,
     loaders: js.Array[_],
-    readResource: js.Function2[
-      java.lang.String, 
-      js.Function2[
-        /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-        /* data */ nodeLib.Buffer | scala.Null, 
-        scala.Unit
-      ], 
+    readResource: (java.lang.String, js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* data */ nodeLib.Buffer | scala.Null, 
       scala.Unit
-    ],
+    ]) => scala.Unit,
     resource: java.lang.String
   ): RunLoaderOption = {
-    val __obj = js.Dynamic.literal(context = context, loaders = loaders, readResource = readResource, resource = resource)
+    val __obj = js.Dynamic.literal(context = context, loaders = loaders, readResource = js.Any.fromFunction2(readResource), resource = resource)
   
     __obj.asInstanceOf[RunLoaderOption]
   }

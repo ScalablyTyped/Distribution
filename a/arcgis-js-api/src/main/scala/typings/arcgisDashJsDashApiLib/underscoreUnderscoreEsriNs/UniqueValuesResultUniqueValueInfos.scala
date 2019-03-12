@@ -26,11 +26,11 @@ object UniqueValuesResultUniqueValueInfos {
   def apply(
     constructor: js.Function,
     count: scala.Double,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     value: java.lang.String | scala.Double
   ): UniqueValuesResultUniqueValueInfos = {
-    val __obj = js.Dynamic.literal(constructor = constructor, count = count, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor, count = count, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UniqueValuesResultUniqueValueInfos]
   }

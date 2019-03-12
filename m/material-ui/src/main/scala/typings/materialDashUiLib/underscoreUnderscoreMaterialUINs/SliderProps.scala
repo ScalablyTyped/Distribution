@@ -48,11 +48,7 @@ object SliderProps {
     min: scala.Int | scala.Double = null,
     name: java.lang.String = null,
     onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onChange: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
-      /* value */ scala.Double, 
-      scala.Unit
-    ] = null,
+    onChange: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* value */ scala.Double) => scala.Unit = null,
     onDragStart: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
     onDragStop: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
     onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
@@ -73,7 +69,7 @@ object SliderProps {
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
     if (onDragStop != null) __obj.updateDynamic("onDragStop")(onDragStop)
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)

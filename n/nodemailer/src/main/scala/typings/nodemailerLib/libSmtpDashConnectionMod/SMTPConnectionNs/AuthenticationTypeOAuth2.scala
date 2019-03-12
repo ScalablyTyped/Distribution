@@ -23,17 +23,12 @@ object AuthenticationTypeOAuth2 {
     clientSecret: java.lang.String = null,
     expires: js.UndefOr[nodemailerLib.libXoauth2Mod.ms] = js.undefined,
     privateKey: java.lang.String | nodemailerLib.Anon_Key = null,
-    provisionCallback: js.Function3[
-      /* user */ java.lang.String, 
-      /* renew */ scala.Boolean, 
-      /* callback */ js.Function3[
-        /* err */ nodeLib.Error | scala.Null, 
-        /* accessToken */ java.lang.String, 
-        /* expires */ scala.Double, 
-        scala.Unit
-      ], 
+    provisionCallback: (/* user */ java.lang.String, /* renew */ scala.Boolean, /* callback */ js.Function3[
+      /* err */ stdLib.Error | scala.Null, 
+      /* accessToken */ java.lang.String, 
+      /* expires */ scala.Double, 
       scala.Unit
-    ] = null,
+    ]) => scala.Unit = null,
     refreshToken: java.lang.String = null,
     timeout: js.UndefOr[nodemailerLib.libXoauth2Mod.s] = js.undefined,
     `type`: nodemailerLib.nodemailerLibStrings.oauth2 | nodemailerLib.nodemailerLibStrings.OAuth2 | nodemailerLib.nodemailerLibStrings.OAUTH2 = null,
@@ -46,7 +41,7 @@ object AuthenticationTypeOAuth2 {
     if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
     if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires)
     if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
-    if (provisionCallback != null) __obj.updateDynamic("provisionCallback")(provisionCallback)
+    if (provisionCallback != null) __obj.updateDynamic("provisionCallback")(js.Any.fromFunction3(provisionCallback))
     if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
     if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

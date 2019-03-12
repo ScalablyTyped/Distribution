@@ -19,16 +19,13 @@ trait TwitterAuthProvider_Instance extends AuthProvider {
     *     in the OAuth request.
     * @return {!firebase.auth.AuthProvider} The provider instance itself.
     */
-  def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): AuthProvider
+  def setCustomParameters(customOAuthParameters: js.Object): AuthProvider
 }
 
 object TwitterAuthProvider_Instance {
   @scala.inline
-  def apply(
-    providerId: java.lang.String,
-    setCustomParameters: js.Function1[coreDashJsLib.Object, AuthProvider]
-  ): TwitterAuthProvider_Instance = {
-    val __obj = js.Dynamic.literal(providerId = providerId, setCustomParameters = setCustomParameters)
+  def apply(providerId: java.lang.String, setCustomParameters: js.Object => AuthProvider): TwitterAuthProvider_Instance = {
+    val __obj = js.Dynamic.literal(providerId = providerId, setCustomParameters = js.Any.fromFunction1(setCustomParameters))
   
     __obj.asInstanceOf[TwitterAuthProvider_Instance]
   }

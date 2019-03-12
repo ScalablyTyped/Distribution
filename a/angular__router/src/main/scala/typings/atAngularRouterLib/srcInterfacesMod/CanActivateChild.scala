@@ -15,13 +15,9 @@ trait CanActivateChild extends js.Object {
 object CanActivateChild {
   @scala.inline
   def apply(
-    canActivateChild: js.Function2[
-      atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot, 
-      atAngularRouterLib.srcRouterUnderscoreStateMod.RouterStateSnapshot, 
-      (rxjsLib.rxjsMod.Observable[scala.Boolean | atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree]) | (js.Promise[scala.Boolean | atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree]) | scala.Boolean | atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree
-    ]
+    canActivateChild: (atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot, atAngularRouterLib.srcRouterUnderscoreStateMod.RouterStateSnapshot) => (rxjsLib.rxjsMod.Observable[scala.Boolean | atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree]) | (js.Promise[scala.Boolean | atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree]) | scala.Boolean | atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree
   ): CanActivateChild = {
-    val __obj = js.Dynamic.literal(canActivateChild = canActivateChild)
+    val __obj = js.Dynamic.literal(canActivateChild = js.Any.fromFunction2(canActivateChild))
   
     __obj.asInstanceOf[CanActivateChild]
   }

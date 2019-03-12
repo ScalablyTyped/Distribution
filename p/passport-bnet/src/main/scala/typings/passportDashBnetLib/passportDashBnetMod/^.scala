@@ -11,7 +11,7 @@ object ^ extends js.Object {
   val Strategy: passportDashBnetLib.Anon_GetHost with (org.scalablytyped.runtime.Instantiable2[
     /* options */ passportDashBnetLib.passportDashBnetMod.BnetStrategyNs.StrategyOptions, 
     /* verify */ passportDashOauth2Lib.passportDashOauth2Mod.OAuth2StrategyNs.VerifyFunction, 
-    passportDashBnetLib.passportDashBnetMod.BnetStrategy
+    BnetStrategy
   ]) = js.native
   def getHost(region: java.lang.String): java.lang.String = js.native
 }

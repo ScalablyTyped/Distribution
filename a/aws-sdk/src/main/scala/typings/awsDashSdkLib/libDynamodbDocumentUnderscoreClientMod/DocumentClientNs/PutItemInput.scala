@@ -42,7 +42,7 @@ trait PutItemInput extends js.Object {
   /**
     * The name of the table to contain the item.
     */
-  var TableName: TableName
+  var TableName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TableName
 }
 
 object PutItemInput {

@@ -92,7 +92,7 @@ trait HighlandStatic extends js.Object {
   def apply[R](
     xs: js.Function2[
       /* push */ js.Function2[
-        /* err */ nodeLib.Error | scala.Null, 
+        /* err */ stdLib.Error | scala.Null, 
         /* x */ js.UndefOr[R | highlandLib.HighlandNs.Nil], 
         scala.Unit
       ], 

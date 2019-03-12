@@ -28,19 +28,19 @@ object AposConstructor {
   {[ K in apostrophe.apostrophe.apostrophe.AposCoreModules & M ]:? apostrophe.apostrophe.apostrophe.AposModuleOptions<{}> | O}
     */ apostropheLib.apostropheLibStrings.AposConstructor with js.Any,
     shortName: java.lang.String,
-    afterInit: js.Function0[scala.Unit] = null,
-    afterListen: js.Function0[scala.Unit] = null,
+    afterInit: () => scala.Unit = null,
+    afterListen: () => scala.Unit = null,
     baseUrl: java.lang.String = null,
-    initFailed: js.Function1[/* error */ js.Any, scala.Unit] = null,
+    initFailed: /* error */ js.Any => scala.Unit = null,
     prefix: java.lang.String = null,
     root: java.lang.String = null,
     rootDir: java.lang.String = null
   ): AposConstructor[M, O] = {
     val __obj = js.Dynamic.literal(modules = modules, shortName = shortName)
-    if (afterInit != null) __obj.updateDynamic("afterInit")(afterInit)
-    if (afterListen != null) __obj.updateDynamic("afterListen")(afterListen)
+    if (afterInit != null) __obj.updateDynamic("afterInit")(js.Any.fromFunction0(afterInit))
+    if (afterListen != null) __obj.updateDynamic("afterListen")(js.Any.fromFunction0(afterListen))
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
-    if (initFailed != null) __obj.updateDynamic("initFailed")(initFailed)
+    if (initFailed != null) __obj.updateDynamic("initFailed")(js.Any.fromFunction1(initFailed))
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (root != null) __obj.updateDynamic("root")(root)
     if (rootDir != null) __obj.updateDynamic("rootDir")(rootDir)

@@ -16,13 +16,13 @@ trait DataValidation extends js.Object {
 object DataValidation {
   @scala.inline
   def apply(
-    copy: js.Function0[DataValidationBuilder],
-    getAllowInvalid: js.Function0[scala.Boolean],
-    getCriteriaType: js.Function0[DataValidationCriteria],
-    getCriteriaValues: js.Function0[js.Array[js.Object]],
-    getHelpText: js.Function0[java.lang.String]
+    copy: () => DataValidationBuilder,
+    getAllowInvalid: () => scala.Boolean,
+    getCriteriaType: () => DataValidationCriteria,
+    getCriteriaValues: () => js.Array[js.Object],
+    getHelpText: () => java.lang.String
   ): DataValidation = {
-    val __obj = js.Dynamic.literal(copy = copy, getAllowInvalid = getAllowInvalid, getCriteriaType = getCriteriaType, getCriteriaValues = getCriteriaValues, getHelpText = getHelpText)
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), getAllowInvalid = js.Any.fromFunction0(getAllowInvalid), getCriteriaType = js.Any.fromFunction0(getCriteriaType), getCriteriaValues = js.Any.fromFunction0(getCriteriaValues), getHelpText = js.Any.fromFunction0(getHelpText))
   
     __obj.asInstanceOf[DataValidation]
   }

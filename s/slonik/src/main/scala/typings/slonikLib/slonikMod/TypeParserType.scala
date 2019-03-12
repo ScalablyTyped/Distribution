@@ -15,8 +15,8 @@ trait TypeParserType[T] extends js.Object {
 
 object TypeParserType {
   @scala.inline
-  def apply[T](name: java.lang.String, parse: js.Function1[java.lang.String, T]): TypeParserType[T] = {
-    val __obj = js.Dynamic.literal(name = name, parse = parse)
+  def apply[T](name: java.lang.String, parse: java.lang.String => T): TypeParserType[T] = {
+    val __obj = js.Dynamic.literal(name = name, parse = js.Any.fromFunction1(parse))
   
     __obj.asInstanceOf[TypeParserType[T]]
   }

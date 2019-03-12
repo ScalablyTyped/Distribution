@@ -53,12 +53,12 @@ object VisualVariableResult {
     colorScheme: ColorScheme,
     constructor: js.Function,
     defaultValuesUsed: scala.Boolean,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     statistics: SummaryStatisticsResult,
     visualVariable: ColorVariable
   ): VisualVariableResult = {
-    val __obj = js.Dynamic.literal(authoringInfo = authoringInfo, basemapId = basemapId, colorScheme = colorScheme, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, statistics = statistics, visualVariable = visualVariable)
+    val __obj = js.Dynamic.literal(authoringInfo = authoringInfo, basemapId = basemapId, colorScheme = colorScheme, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), statistics = statistics, visualVariable = visualVariable)
   
     __obj.asInstanceOf[VisualVariableResult]
   }

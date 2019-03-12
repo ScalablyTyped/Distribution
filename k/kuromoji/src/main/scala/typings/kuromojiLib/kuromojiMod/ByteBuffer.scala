@@ -26,21 +26,21 @@ object ByteBuffer {
   @scala.inline
   def apply(
     buffer: stdLib.Uint8Array,
-    get: js.Function1[scala.Double, scala.Double],
-    getInt: js.Function1[scala.Double, scala.Double],
-    getShort: js.Function1[scala.Double, scala.Double],
-    getString: js.Function1[scala.Double, java.lang.String],
+    get: scala.Double => scala.Double,
+    getInt: scala.Double => scala.Double,
+    getShort: scala.Double => scala.Double,
+    getString: scala.Double => java.lang.String,
     position: scala.Double,
-    put: js.Function1[scala.Double, scala.Unit],
-    putInt: js.Function1[scala.Double, scala.Unit],
-    putShort: js.Function1[scala.Double, scala.Unit],
-    putString: js.Function1[java.lang.String, scala.Unit],
-    readInt: js.Function0[scala.Double],
-    reallocate: js.Function0[scala.Unit],
-    shrink: js.Function0[stdLib.Uint8Array],
-    size: js.Function0[scala.Double]
+    put: scala.Double => scala.Unit,
+    putInt: scala.Double => scala.Unit,
+    putShort: scala.Double => scala.Unit,
+    putString: java.lang.String => scala.Unit,
+    readInt: () => scala.Double,
+    reallocate: () => scala.Unit,
+    shrink: () => stdLib.Uint8Array,
+    size: () => scala.Double
   ): ByteBuffer = {
-    val __obj = js.Dynamic.literal(buffer = buffer, get = get, getInt = getInt, getShort = getShort, getString = getString, position = position, put = put, putInt = putInt, putShort = putShort, putString = putString, readInt = readInt, reallocate = reallocate, shrink = shrink, size = size)
+    val __obj = js.Dynamic.literal(buffer = buffer, get = js.Any.fromFunction1(get), getInt = js.Any.fromFunction1(getInt), getShort = js.Any.fromFunction1(getShort), getString = js.Any.fromFunction1(getString), position = position, put = js.Any.fromFunction1(put), putInt = js.Any.fromFunction1(putInt), putShort = js.Any.fromFunction1(putShort), putString = js.Any.fromFunction1(putString), readInt = js.Any.fromFunction0(readInt), reallocate = js.Any.fromFunction0(reallocate), shrink = js.Any.fromFunction0(shrink), size = js.Any.fromFunction0(size))
   
     __obj.asInstanceOf[ByteBuffer]
   }

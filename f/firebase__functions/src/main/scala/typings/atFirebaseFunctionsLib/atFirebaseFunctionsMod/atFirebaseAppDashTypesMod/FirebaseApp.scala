@@ -17,13 +17,10 @@ trait FirebaseApp extends js.Object {
 object FirebaseApp {
   @scala.inline
   def apply(
-    functions: js.Function1[
-      /* region */ js.UndefOr[java.lang.String], 
-      atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FirebaseFunctions
-    ] = null
+    functions: /* region */ js.UndefOr[java.lang.String] => atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FirebaseFunctions = null
   ): FirebaseApp = {
     val __obj = js.Dynamic.literal()
-    if (functions != null) __obj.updateDynamic("functions")(functions)
+    if (functions != null) __obj.updateDynamic("functions")(js.Any.fromFunction1(functions))
     __obj.asInstanceOf[FirebaseApp]
   }
 }

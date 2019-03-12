@@ -22,19 +22,19 @@ trait MDCIconToggleAdapter extends js.Object {
 object MDCIconToggleAdapter {
   @scala.inline
   def apply(
-    addClass: js.Function1[java.lang.String, scala.Unit],
-    deregisterInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    getAttr: js.Function1[java.lang.String, java.lang.String],
-    getTabIndex: js.Function0[scala.Double],
-    notifyChange: js.Function1[IconToggleEvent, scala.Unit],
-    registerInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
-    removeClass: js.Function1[java.lang.String, scala.Unit],
-    rmAttr: js.Function1[java.lang.String, scala.Unit],
-    setAttr: js.Function2[java.lang.String, java.lang.String, scala.Unit],
-    setTabIndex: js.Function1[scala.Double, scala.Unit],
-    setText: js.Function1[java.lang.String, scala.Unit]
+    addClass: java.lang.String => scala.Unit,
+    deregisterInteractionHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    getAttr: java.lang.String => java.lang.String,
+    getTabIndex: () => scala.Double,
+    notifyChange: IconToggleEvent => scala.Unit,
+    registerInteractionHandler: (java.lang.String, stdLib.EventListener) => scala.Unit,
+    removeClass: java.lang.String => scala.Unit,
+    rmAttr: java.lang.String => scala.Unit,
+    setAttr: (java.lang.String, java.lang.String) => scala.Unit,
+    setTabIndex: scala.Double => scala.Unit,
+    setText: java.lang.String => scala.Unit
   ): MDCIconToggleAdapter = {
-    val __obj = js.Dynamic.literal(addClass = addClass, deregisterInteractionHandler = deregisterInteractionHandler, getAttr = getAttr, getTabIndex = getTabIndex, notifyChange = notifyChange, registerInteractionHandler = registerInteractionHandler, removeClass = removeClass, rmAttr = rmAttr, setAttr = setAttr, setTabIndex = setTabIndex, setText = setText)
+    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), deregisterInteractionHandler = js.Any.fromFunction2(deregisterInteractionHandler), getAttr = js.Any.fromFunction1(getAttr), getTabIndex = js.Any.fromFunction0(getTabIndex), notifyChange = js.Any.fromFunction1(notifyChange), registerInteractionHandler = js.Any.fromFunction2(registerInteractionHandler), removeClass = js.Any.fromFunction1(removeClass), rmAttr = js.Any.fromFunction1(rmAttr), setAttr = js.Any.fromFunction2(setAttr), setTabIndex = js.Any.fromFunction1(setTabIndex), setText = js.Any.fromFunction1(setText))
   
     __obj.asInstanceOf[MDCIconToggleAdapter]
   }

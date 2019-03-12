@@ -43,15 +43,15 @@ trait ICoreWindow extends js.Object {
 object ICoreWindow {
   @scala.inline
   def apply(
-    activate: js.Function0[scala.Unit],
+    activate: () => scala.Unit,
     automationHostProvider: js.Any,
     bounds: winrtLib.WindowsNs.FoundationNs.Rect,
-    close: js.Function0[scala.Unit],
+    close: () => scala.Unit,
     customProperties: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet,
     dispatcher: CoreDispatcher,
     flowDirection: CoreWindowFlowDirection,
-    getAsyncKeyState: js.Function1[winrtLib.WindowsNs.SystemNs.VirtualKey, CoreVirtualKeyStates],
-    getKeyState: js.Function1[winrtLib.WindowsNs.SystemNs.VirtualKey, CoreVirtualKeyStates],
+    getAsyncKeyState: winrtLib.WindowsNs.SystemNs.VirtualKey => CoreVirtualKeyStates,
+    getKeyState: winrtLib.WindowsNs.SystemNs.VirtualKey => CoreVirtualKeyStates,
     isInputEnabled: scala.Boolean,
     onactivated: js.Any,
     onautomationproviderrequested: js.Any,
@@ -72,11 +72,11 @@ object ICoreWindow {
     onvisibilitychanged: js.Any,
     pointerCursor: CoreCursor,
     pointerPosition: winrtLib.WindowsNs.FoundationNs.Point,
-    releasePointerCapture: js.Function0[scala.Unit],
-    setPointerCapture: js.Function0[scala.Unit],
+    releasePointerCapture: () => scala.Unit,
+    setPointerCapture: () => scala.Unit,
     visible: scala.Boolean
   ): ICoreWindow = {
-    val __obj = js.Dynamic.literal(activate = activate, automationHostProvider = automationHostProvider, bounds = bounds, close = close, customProperties = customProperties, dispatcher = dispatcher, flowDirection = flowDirection, getAsyncKeyState = getAsyncKeyState, getKeyState = getKeyState, isInputEnabled = isInputEnabled, onactivated = onactivated, onautomationproviderrequested = onautomationproviderrequested, oncharacterreceived = oncharacterreceived, onclosed = onclosed, oninputenabled = oninputenabled, onkeydown = onkeydown, onkeyup = onkeyup, onpointercapturelost = onpointercapturelost, onpointerentered = onpointerentered, onpointerexited = onpointerexited, onpointermoved = onpointermoved, onpointerpressed = onpointerpressed, onpointerreleased = onpointerreleased, onpointerwheelchanged = onpointerwheelchanged, onsizechanged = onsizechanged, ontouchhittesting = ontouchhittesting, onvisibilitychanged = onvisibilitychanged, pointerCursor = pointerCursor, pointerPosition = pointerPosition, releasePointerCapture = releasePointerCapture, setPointerCapture = setPointerCapture, visible = visible)
+    val __obj = js.Dynamic.literal(activate = js.Any.fromFunction0(activate), automationHostProvider = automationHostProvider, bounds = bounds, close = js.Any.fromFunction0(close), customProperties = customProperties, dispatcher = dispatcher, flowDirection = flowDirection, getAsyncKeyState = js.Any.fromFunction1(getAsyncKeyState), getKeyState = js.Any.fromFunction1(getKeyState), isInputEnabled = isInputEnabled, onactivated = onactivated, onautomationproviderrequested = onautomationproviderrequested, oncharacterreceived = oncharacterreceived, onclosed = onclosed, oninputenabled = oninputenabled, onkeydown = onkeydown, onkeyup = onkeyup, onpointercapturelost = onpointercapturelost, onpointerentered = onpointerentered, onpointerexited = onpointerexited, onpointermoved = onpointermoved, onpointerpressed = onpointerpressed, onpointerreleased = onpointerreleased, onpointerwheelchanged = onpointerwheelchanged, onsizechanged = onsizechanged, ontouchhittesting = ontouchhittesting, onvisibilitychanged = onvisibilitychanged, pointerCursor = pointerCursor, pointerPosition = pointerPosition, releasePointerCapture = js.Any.fromFunction0(releasePointerCapture), setPointerCapture = js.Any.fromFunction0(setPointerCapture), visible = visible)
   
     __obj.asInstanceOf[ICoreWindow]
   }

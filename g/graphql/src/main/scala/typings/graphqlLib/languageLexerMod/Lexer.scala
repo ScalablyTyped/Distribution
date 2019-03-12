@@ -38,16 +38,16 @@ trait Lexer[TOptions] extends js.Object {
 object Lexer {
   @scala.inline
   def apply[TOptions](
-    advance: js.Function0[graphqlLib.languageAstMod.Token],
+    advance: () => graphqlLib.languageAstMod.Token,
     lastToken: graphqlLib.languageAstMod.Token,
     line: scala.Double,
     lineStart: scala.Double,
-    lookahead: js.Function0[graphqlLib.languageAstMod.Token],
+    lookahead: () => graphqlLib.languageAstMod.Token,
     options: TOptions,
     source: graphqlLib.languageSourceMod.Source,
     token: graphqlLib.languageAstMod.Token
   ): Lexer[TOptions] = {
-    val __obj = js.Dynamic.literal(advance = advance, lastToken = lastToken, line = line, lineStart = lineStart, lookahead = lookahead, options = options.asInstanceOf[js.Any], source = source, token = token)
+    val __obj = js.Dynamic.literal(advance = js.Any.fromFunction0(advance), lastToken = lastToken, line = line, lineStart = lineStart, lookahead = js.Any.fromFunction0(lookahead), options = options.asInstanceOf[js.Any], source = source, token = token)
   
     __obj.asInstanceOf[Lexer[TOptions]]
   }

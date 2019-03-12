@@ -15,35 +15,20 @@ object Choice {
   @scala.inline
   def apply[F](
     URI: F,
-    left: js.Function1[
-      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.HKT2[
-        F, 
-        fpDashTsLib.libEitherMod.Either[js.Any, js.Any], 
-        fpDashTsLib.libEitherMod.Either[js.Any, js.Any]
-      ]
+    left: fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any] => fpDashTsLib.libHKTMod.HKT2[
+      F, 
+      fpDashTsLib.libEitherMod.Either[js.Any, js.Any], 
+      fpDashTsLib.libEitherMod.Either[js.Any, js.Any]
     ],
-    map: js.Function2[
-      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any]
-    ],
-    promap: js.Function3[
-      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      js.Function1[js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any]
-    ],
-    right: js.Function1[
-      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any], 
-      fpDashTsLib.libHKTMod.HKT2[
-        F, 
-        fpDashTsLib.libEitherMod.Either[js.Any, js.Any], 
-        fpDashTsLib.libEitherMod.Either[js.Any, js.Any]
-      ]
+    map: (fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any],
+    promap: (fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any],
+    right: fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any] => fpDashTsLib.libHKTMod.HKT2[
+      F, 
+      fpDashTsLib.libEitherMod.Either[js.Any, js.Any], 
+      fpDashTsLib.libEitherMod.Either[js.Any, js.Any]
     ]
   ): Choice[F] = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], left = left, map = map, promap = promap, right = right)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], left = js.Any.fromFunction1(left), map = js.Any.fromFunction2(map), promap = js.Any.fromFunction3(promap), right = js.Any.fromFunction1(right))
   
     __obj.asInstanceOf[Choice[F]]
   }

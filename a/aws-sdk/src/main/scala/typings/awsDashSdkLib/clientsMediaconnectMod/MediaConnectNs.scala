@@ -58,7 +58,7 @@ object MediaConnectNs extends js.Object {
     /**
       * The protocol to use for the output.
       */
-    var Protocol: Protocol
+    var Protocol: awsDashSdkLib.clientsMediaconnectMod.MediaConnectNs.Protocol
     /**
       * The smoothing latency in milliseconds for RTP and RTP-FEC streams.
       */
@@ -134,7 +134,7 @@ object MediaConnectNs extends js.Object {
     /**
       * The type of algorithm that is used for the encryption (such as aes128, aes192, or aes256).
       */
-    var Algorithm: Algorithm
+    var Algorithm: awsDashSdkLib.clientsMediaconnectMod.MediaConnectNs.Algorithm
     /**
       * The type of key that is used for the encryption. If no keyType is provided, the service will use the default setting (static-key).
       */
@@ -201,11 +201,11 @@ object MediaConnectNs extends js.Object {
       * The outputs in this flow.
       */
     var Outputs: __listOfOutput
-    var Source: Source
+    var Source: awsDashSdkLib.clientsMediaconnectMod.MediaConnectNs.Source
     /**
       * The current status of the flow.
       */
-    var Status: Status
+    var Status: awsDashSdkLib.clientsMediaconnectMod.MediaConnectNs.Status
   }
   
   trait GrantEntitlementRequest extends js.Object {
@@ -338,11 +338,11 @@ object MediaConnectNs extends js.Object {
     /**
       * The type of source. This value is either owned (originated somewhere other than an AWS Elemental MediaConnect flow owned by another AWS account) or entitled (originated at an AWS Elemental MediaConnect flow owned by another AWS account).
       */
-    var SourceType: SourceType
+    var SourceType: awsDashSdkLib.clientsMediaconnectMod.MediaConnectNs.SourceType
     /**
       * The current status of the flow.
       */
-    var Status: Status
+    var Status: awsDashSdkLib.clientsMediaconnectMod.MediaConnectNs.Status
   }
   
   trait Messages extends js.Object {
@@ -576,7 +576,7 @@ object MediaConnectNs extends js.Object {
     /**
       * The protocol that is used by the source or output.
       */
-    var Protocol: Protocol
+    var Protocol: awsDashSdkLib.clientsMediaconnectMod.MediaConnectNs.Protocol
     /**
       * The smoothing latency in milliseconds for RTP and RTP-FEC streams.
       */

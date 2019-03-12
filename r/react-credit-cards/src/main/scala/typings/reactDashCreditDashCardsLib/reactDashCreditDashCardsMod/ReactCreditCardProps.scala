@@ -29,7 +29,7 @@ object ReactCreditCardProps {
     name: java.lang.String,
     number: java.lang.String | scala.Double,
     acceptedCards: js.Array[java.lang.String] = null,
-    callback: js.Function2[/* type */ CallbackArgument, /* isValid */ scala.Boolean, scala.Unit] = null,
+    callback: (/* type */ CallbackArgument, /* isValid */ scala.Boolean) => scala.Unit = null,
     focused: Focused = null,
     issuer: java.lang.String = null,
     locale: reactDashCreditDashCardsLib.Anon_Valid = null,
@@ -38,7 +38,7 @@ object ReactCreditCardProps {
   ): ReactCreditCardProps = {
     val __obj = js.Dynamic.literal(cvc = cvc.asInstanceOf[js.Any], expiry = expiry.asInstanceOf[js.Any], name = name, number = number.asInstanceOf[js.Any])
     if (acceptedCards != null) __obj.updateDynamic("acceptedCards")(acceptedCards)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
     if (focused != null) __obj.updateDynamic("focused")(focused)
     if (issuer != null) __obj.updateDynamic("issuer")(issuer)
     if (locale != null) __obj.updateDynamic("locale")(locale)

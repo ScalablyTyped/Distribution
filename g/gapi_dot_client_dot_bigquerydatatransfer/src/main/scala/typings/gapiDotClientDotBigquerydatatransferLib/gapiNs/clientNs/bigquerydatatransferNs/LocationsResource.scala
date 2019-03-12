@@ -20,17 +20,11 @@ object LocationsResource {
   @scala.inline
   def apply(
     dataSources: DataSourcesResource,
-    get: js.Function1[
-      gapiDotClientDotBigquerydatatransferLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Location]
-    ],
-    list: js.Function1[
-      gapiDotClientDotBigquerydatatransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListLocationsResponse]
-    ],
+    get: gapiDotClientDotBigquerydatatransferLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[Location],
+    list: gapiDotClientDotBigquerydatatransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter => gapiDotClientLib.gapiNs.clientNs.Request[ListLocationsResponse],
     transferConfigs: TransferConfigsResource
   ): LocationsResource = {
-    val __obj = js.Dynamic.literal(dataSources = dataSources, get = get, list = list, transferConfigs = transferConfigs)
+    val __obj = js.Dynamic.literal(dataSources = dataSources, get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), transferConfigs = transferConfigs)
   
     __obj.asInstanceOf[LocationsResource]
   }

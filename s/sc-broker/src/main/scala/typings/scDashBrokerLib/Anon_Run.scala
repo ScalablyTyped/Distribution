@@ -11,9 +11,9 @@ trait Anon_Run extends js.Object {
 
 object Anon_Run {
   @scala.inline
-  def apply(run: js.Function0[scala.Unit] = null): Anon_Run = {
+  def apply(run: () => scala.Unit = null): Anon_Run = {
     val __obj = js.Dynamic.literal()
-    if (run != null) __obj.updateDynamic("run")(run)
+    if (run != null) __obj.updateDynamic("run")(js.Any.fromFunction0(run))
     __obj.asInstanceOf[Anon_Run]
   }
 }

@@ -17,14 +17,14 @@ trait Navigation extends js.Object {
 object Navigation {
   @scala.inline
   def apply(
-    popCard: js.Function0[Navigation],
-    popToNamedCard: js.Function1[java.lang.String, Navigation],
-    popToRoot: js.Function0[Navigation],
-    printJson: js.Function0[java.lang.String],
-    pushCard: js.Function1[Card, Navigation],
-    updateCard: js.Function1[Card, Navigation]
+    popCard: () => Navigation,
+    popToNamedCard: java.lang.String => Navigation,
+    popToRoot: () => Navigation,
+    printJson: () => java.lang.String,
+    pushCard: Card => Navigation,
+    updateCard: Card => Navigation
   ): Navigation = {
-    val __obj = js.Dynamic.literal(popCard = popCard, popToNamedCard = popToNamedCard, popToRoot = popToRoot, printJson = printJson, pushCard = pushCard, updateCard = updateCard)
+    val __obj = js.Dynamic.literal(popCard = js.Any.fromFunction0(popCard), popToNamedCard = js.Any.fromFunction1(popToNamedCard), popToRoot = js.Any.fromFunction0(popToRoot), printJson = js.Any.fromFunction0(printJson), pushCard = js.Any.fromFunction1(pushCard), updateCard = js.Any.fromFunction1(updateCard))
   
     __obj.asInstanceOf[Navigation]
   }

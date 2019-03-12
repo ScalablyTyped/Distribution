@@ -45,21 +45,18 @@ object TransitionProps {
   @scala.inline
   def apply(
     styles: js.Array[TransitionStyle] | reactDashMotionLib.InterpolateFunction,
-    children: js.Function1[
-      /* interpolatedStyles */ js.Array[TransitionPlainStyle], 
-      reactLib.reactMod.ReactNs.ReactElement[_]
-    ] = null,
+    children: /* interpolatedStyles */ js.Array[TransitionPlainStyle] => reactLib.reactMod.ReactNs.ReactElement[_] = null,
     defaultStyles: js.Array[TransitionPlainStyle] = null,
-    didLeave: js.Function1[/* styleThatLeft */ TransitionStyle, scala.Unit] = null,
-    willEnter: js.Function1[/* styleThatEntered */ TransitionStyle, PlainStyle] = null,
-    willLeave: js.Function1[/* styleThatLeft */ TransitionStyle, Style | scala.Unit] = null
+    didLeave: /* styleThatLeft */ TransitionStyle => scala.Unit = null,
+    willEnter: /* styleThatEntered */ TransitionStyle => PlainStyle = null,
+    willLeave: /* styleThatLeft */ TransitionStyle => Style | scala.Unit = null
   ): TransitionProps = {
     val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (defaultStyles != null) __obj.updateDynamic("defaultStyles")(defaultStyles)
-    if (didLeave != null) __obj.updateDynamic("didLeave")(didLeave)
-    if (willEnter != null) __obj.updateDynamic("willEnter")(willEnter)
-    if (willLeave != null) __obj.updateDynamic("willLeave")(willLeave)
+    if (didLeave != null) __obj.updateDynamic("didLeave")(js.Any.fromFunction1(didLeave))
+    if (willEnter != null) __obj.updateDynamic("willEnter")(js.Any.fromFunction1(willEnter))
+    if (willLeave != null) __obj.updateDynamic("willLeave")(js.Any.fromFunction1(willLeave))
     __obj.asInstanceOf[TransitionProps]
   }
 }

@@ -766,7 +766,7 @@ object Anon_AccessibilityFeatures {
     clipboardNs: Anon_AdditionalItems,
     commandsNs: Anon_CallbackCommands,
     contextMenusNs: Anon_ACTIONMENUTOPLEVELLIMIT,
-    csi: js.Function0[Anon_OnloadT],
+    csi: () => Anon_OnloadT,
     desktopCaptureNs: Anon_CallbackCancelChooseDesktopMedia,
     diagnosticsNs: Anon_CallbackOptions,
     displaySourceNs: Anon_AuthenticationMethod,
@@ -785,7 +785,7 @@ object Anon_AccessibilityFeatures {
     identityNs: Anon_Account,
     idleNs: Anon_CallbackDetectionIntervalInSeconds,
     instanceIDNs: Anon_CallbackCreationTime,
-    loadTimes: js.Function0[chromeDashAppsLib.chromeNs.deprecatedButUsable],
+    loadTimes: () => chromeDashAppsLib.chromeNs.deprecatedButUsable,
     managementNs: Anon_CallbackExtensionDisabledReason,
     mdnsNs: Anon_CallbackForceDiscovery,
     mediaGalleriesNs: Anon_AddGalleryWatch,
@@ -811,7 +811,7 @@ object Anon_AccessibilityFeatures {
     webRequestNs: js.Any,
     webViewRequestNs: Anon_AddRequestCookie
   ): Anon_AccessibilityFeatures = {
-    val __obj = js.Dynamic.literal(Event = Event, accessibilityFeaturesNs = accessibilityFeaturesNs, alarmsNs = alarmsNs, appNs = appNs, audioNs = audioNs, bluetoothLowEnergyNs = bluetoothLowEnergyNs, bluetoothNs = bluetoothNs, bluetoothSocketNs = bluetoothSocketNs, browserNs = browserNs, certificateProviderNs = certificateProviderNs, clipboardNs = clipboardNs, commandsNs = commandsNs, contextMenusNs = contextMenusNs, csi = csi, desktopCaptureNs = desktopCaptureNs, diagnosticsNs = diagnosticsNs, displaySourceNs = displaySourceNs, dnsNs = dnsNs, documentScanNs = documentScanNs, enterpriseNs = enterpriseNs, eventsNs = eventsNs, experimental = experimental, extensionTypesNs = extensionTypesNs, fileBrowserHandlerNs = fileBrowserHandlerNs, fileSystemNs = fileSystemNs, fileSystemProviderNs = fileSystemProviderNs, gcmNs = gcmNs, hidNs = hidNs, i18nNs = i18nNs, identityNs = identityNs, idleNs = idleNs, instanceIDNs = instanceIDNs, loadTimes = loadTimes, managementNs = managementNs, mdnsNs = mdnsNs, mediaGalleriesNs = mediaGalleriesNs, networkingNs = networkingNs, notificationsNs = notificationsNs, permissionsNs = permissionsNs, platformKeysNs = platformKeysNs, powerNs = powerNs, printerProviderNs = printerProviderNs, runtimeNs = runtimeNs, serial = serial, signedInDevicesNs = signedInDevicesNs, socketsNs = socketsNs, storageNs = storageNs, syncFileSystemNs = syncFileSystemNs, systemNs = systemNs, ttsNs = ttsNs, typesNs = typesNs, usbNs = usbNs, virtualKeyboardNs = virtualKeyboardNs, vpnProviderNs = vpnProviderNs, wallpaperNs = wallpaperNs, webRequestNs = webRequestNs, webViewRequestNs = webViewRequestNs)
+    val __obj = js.Dynamic.literal(Event = Event, accessibilityFeaturesNs = accessibilityFeaturesNs, alarmsNs = alarmsNs, appNs = appNs, audioNs = audioNs, bluetoothLowEnergyNs = bluetoothLowEnergyNs, bluetoothNs = bluetoothNs, bluetoothSocketNs = bluetoothSocketNs, browserNs = browserNs, certificateProviderNs = certificateProviderNs, clipboardNs = clipboardNs, commandsNs = commandsNs, contextMenusNs = contextMenusNs, csi = js.Any.fromFunction0(csi), desktopCaptureNs = desktopCaptureNs, diagnosticsNs = diagnosticsNs, displaySourceNs = displaySourceNs, dnsNs = dnsNs, documentScanNs = documentScanNs, enterpriseNs = enterpriseNs, eventsNs = eventsNs, experimental = experimental, extensionTypesNs = extensionTypesNs, fileBrowserHandlerNs = fileBrowserHandlerNs, fileSystemNs = fileSystemNs, fileSystemProviderNs = fileSystemProviderNs, gcmNs = gcmNs, hidNs = hidNs, i18nNs = i18nNs, identityNs = identityNs, idleNs = idleNs, instanceIDNs = instanceIDNs, loadTimes = js.Any.fromFunction0(loadTimes), managementNs = managementNs, mdnsNs = mdnsNs, mediaGalleriesNs = mediaGalleriesNs, networkingNs = networkingNs, notificationsNs = notificationsNs, permissionsNs = permissionsNs, platformKeysNs = platformKeysNs, powerNs = powerNs, printerProviderNs = printerProviderNs, runtimeNs = runtimeNs, serial = serial, signedInDevicesNs = signedInDevicesNs, socketsNs = socketsNs, storageNs = storageNs, syncFileSystemNs = syncFileSystemNs, systemNs = systemNs, ttsNs = ttsNs, typesNs = typesNs, usbNs = usbNs, virtualKeyboardNs = virtualKeyboardNs, vpnProviderNs = vpnProviderNs, wallpaperNs = wallpaperNs, webRequestNs = webRequestNs, webViewRequestNs = webViewRequestNs)
   
     __obj.asInstanceOf[Anon_AccessibilityFeatures]
   }

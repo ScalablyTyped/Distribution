@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IconSet extends XConditionEntry {
-  var IconSetEntries: activexDashInteropLib.SafeArray[XIconSetEntry]
+  var IconSetEntries: stdLib.SafeArray[XIconSetEntry]
   /** See {@link com.sun.star.sheet.IconSetType} for possible values. */
   var Icons: scala.Double
   var Reverse: scala.Boolean
@@ -16,17 +16,17 @@ trait IconSet extends XConditionEntry {
 object IconSet {
   @scala.inline
   def apply(
-    IconSetEntries: activexDashInteropLib.SafeArray[XIconSetEntry],
+    IconSetEntries: stdLib.SafeArray[XIconSetEntry],
     Icons: scala.Double,
     Reverse: scala.Boolean,
     ShowValue: scala.Boolean,
     Type: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getType: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getType: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): IconSet = {
-    val __obj = js.Dynamic.literal(IconSetEntries = IconSetEntries, Icons = Icons, Reverse = Reverse, ShowValue = ShowValue, Type = Type, acquire = acquire, getType = getType, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(IconSetEntries = IconSetEntries, Icons = Icons, Reverse = Reverse, ShowValue = ShowValue, Type = Type, acquire = js.Any.fromFunction0(acquire), getType = js.Any.fromFunction0(getType), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[IconSet]
   }

@@ -43,7 +43,7 @@ object ^ extends js.Object {
     * @returns {(SubtleCrypto | undefined)}
     */
   def getCrypto(): js.UndefOr[stdLib.SubtleCrypto] = js.native
-  def getEngine(): pkijsLib.srcCommonMod.Engine = js.native
+  def getEngine(): Engine = js.native
   /**
     * Getting hash algorithm by signature algorithm
     * 

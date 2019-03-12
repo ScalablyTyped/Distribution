@@ -13,10 +13,10 @@ trait HandlerInterface
 object HandlerInterface {
   @scala.inline
   def apply(
-    update: js.Function2[RecordSourceProxy, HandleFieldPayload, scala.Unit],
+    update: (RecordSourceProxy, HandleFieldPayload) => scala.Unit,
     StringDictionary: /* functionName */ org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ js.Any, _]] = null
   ): HandlerInterface = {
-    val __obj = js.Dynamic.literal(update = update)
+    val __obj = js.Dynamic.literal(update = js.Any.fromFunction2(update))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[HandlerInterface]
   }

@@ -35,56 +35,56 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    additionalPass: js.Function0[scala.Unit] = null,
-    afterCompile: js.Function0[scala.Unit] = null,
-    afterEmit: js.Function0[scala.Unit] = null,
-    afterEnvironment: js.Function0[scala.Unit] = null,
-    afterPlugins: js.Function0[scala.Unit] = null,
-    afterResolvers: js.Function0[scala.Unit] = null,
-    beforeCompile: js.Function0[scala.Unit] = null,
-    beforeRun: js.Function0[scala.Unit] = null,
-    compilation: js.Function0[scala.Unit] = null,
-    compile: js.Function0[scala.Unit] = null,
-    contextModuleFactory: js.Function0[scala.Unit] = null,
-    done: js.Function0[scala.Unit] = null,
-    emit: js.Function0[scala.Unit] = null,
-    entryOption: js.Function0[scala.Unit] = null,
-    environment: js.Function0[scala.Unit] = null,
-    failed: js.Function0[scala.Unit] = null,
-    invalid: js.Function0[scala.Unit] = null,
-    make: js.Function0[scala.Unit] = null,
-    normalModuleFactory: js.Function0[scala.Unit] = null,
-    run: js.Function0[scala.Unit] = null,
-    shouldEmit: js.Function0[scala.Unit] = null,
-    thisCompilation: js.Function0[scala.Unit] = null,
-    watchClose: js.Function0[scala.Unit] = null,
-    watchRun: js.Function0[scala.Unit] = null
+    additionalPass: () => scala.Unit = null,
+    afterCompile: () => scala.Unit = null,
+    afterEmit: () => scala.Unit = null,
+    afterEnvironment: () => scala.Unit = null,
+    afterPlugins: () => scala.Unit = null,
+    afterResolvers: () => scala.Unit = null,
+    beforeCompile: () => scala.Unit = null,
+    beforeRun: () => scala.Unit = null,
+    compilation: () => scala.Unit = null,
+    compile: () => scala.Unit = null,
+    contextModuleFactory: () => scala.Unit = null,
+    done: () => scala.Unit = null,
+    emit: () => scala.Unit = null,
+    entryOption: () => scala.Unit = null,
+    environment: () => scala.Unit = null,
+    failed: () => scala.Unit = null,
+    invalid: () => scala.Unit = null,
+    make: () => scala.Unit = null,
+    normalModuleFactory: () => scala.Unit = null,
+    run: () => scala.Unit = null,
+    shouldEmit: () => scala.Unit = null,
+    thisCompilation: () => scala.Unit = null,
+    watchClose: () => scala.Unit = null,
+    watchRun: () => scala.Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (additionalPass != null) __obj.updateDynamic("additionalPass")(additionalPass)
-    if (afterCompile != null) __obj.updateDynamic("afterCompile")(afterCompile)
-    if (afterEmit != null) __obj.updateDynamic("afterEmit")(afterEmit)
-    if (afterEnvironment != null) __obj.updateDynamic("afterEnvironment")(afterEnvironment)
-    if (afterPlugins != null) __obj.updateDynamic("afterPlugins")(afterPlugins)
-    if (afterResolvers != null) __obj.updateDynamic("afterResolvers")(afterResolvers)
-    if (beforeCompile != null) __obj.updateDynamic("beforeCompile")(beforeCompile)
-    if (beforeRun != null) __obj.updateDynamic("beforeRun")(beforeRun)
-    if (compilation != null) __obj.updateDynamic("compilation")(compilation)
-    if (compile != null) __obj.updateDynamic("compile")(compile)
-    if (contextModuleFactory != null) __obj.updateDynamic("contextModuleFactory")(contextModuleFactory)
-    if (done != null) __obj.updateDynamic("done")(done)
-    if (emit != null) __obj.updateDynamic("emit")(emit)
-    if (entryOption != null) __obj.updateDynamic("entryOption")(entryOption)
-    if (environment != null) __obj.updateDynamic("environment")(environment)
-    if (failed != null) __obj.updateDynamic("failed")(failed)
-    if (invalid != null) __obj.updateDynamic("invalid")(invalid)
-    if (make != null) __obj.updateDynamic("make")(make)
-    if (normalModuleFactory != null) __obj.updateDynamic("normalModuleFactory")(normalModuleFactory)
-    if (run != null) __obj.updateDynamic("run")(run)
-    if (shouldEmit != null) __obj.updateDynamic("shouldEmit")(shouldEmit)
-    if (thisCompilation != null) __obj.updateDynamic("thisCompilation")(thisCompilation)
-    if (watchClose != null) __obj.updateDynamic("watchClose")(watchClose)
-    if (watchRun != null) __obj.updateDynamic("watchRun")(watchRun)
+    if (additionalPass != null) __obj.updateDynamic("additionalPass")(js.Any.fromFunction0(additionalPass))
+    if (afterCompile != null) __obj.updateDynamic("afterCompile")(js.Any.fromFunction0(afterCompile))
+    if (afterEmit != null) __obj.updateDynamic("afterEmit")(js.Any.fromFunction0(afterEmit))
+    if (afterEnvironment != null) __obj.updateDynamic("afterEnvironment")(js.Any.fromFunction0(afterEnvironment))
+    if (afterPlugins != null) __obj.updateDynamic("afterPlugins")(js.Any.fromFunction0(afterPlugins))
+    if (afterResolvers != null) __obj.updateDynamic("afterResolvers")(js.Any.fromFunction0(afterResolvers))
+    if (beforeCompile != null) __obj.updateDynamic("beforeCompile")(js.Any.fromFunction0(beforeCompile))
+    if (beforeRun != null) __obj.updateDynamic("beforeRun")(js.Any.fromFunction0(beforeRun))
+    if (compilation != null) __obj.updateDynamic("compilation")(js.Any.fromFunction0(compilation))
+    if (compile != null) __obj.updateDynamic("compile")(js.Any.fromFunction0(compile))
+    if (contextModuleFactory != null) __obj.updateDynamic("contextModuleFactory")(js.Any.fromFunction0(contextModuleFactory))
+    if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction0(done))
+    if (emit != null) __obj.updateDynamic("emit")(js.Any.fromFunction0(emit))
+    if (entryOption != null) __obj.updateDynamic("entryOption")(js.Any.fromFunction0(entryOption))
+    if (environment != null) __obj.updateDynamic("environment")(js.Any.fromFunction0(environment))
+    if (failed != null) __obj.updateDynamic("failed")(js.Any.fromFunction0(failed))
+    if (invalid != null) __obj.updateDynamic("invalid")(js.Any.fromFunction0(invalid))
+    if (make != null) __obj.updateDynamic("make")(js.Any.fromFunction0(make))
+    if (normalModuleFactory != null) __obj.updateDynamic("normalModuleFactory")(js.Any.fromFunction0(normalModuleFactory))
+    if (run != null) __obj.updateDynamic("run")(js.Any.fromFunction0(run))
+    if (shouldEmit != null) __obj.updateDynamic("shouldEmit")(js.Any.fromFunction0(shouldEmit))
+    if (thisCompilation != null) __obj.updateDynamic("thisCompilation")(js.Any.fromFunction0(thisCompilation))
+    if (watchClose != null) __obj.updateDynamic("watchClose")(js.Any.fromFunction0(watchClose))
+    if (watchRun != null) __obj.updateDynamic("watchRun")(js.Any.fromFunction0(watchRun))
     __obj.asInstanceOf[Options]
   }
 }

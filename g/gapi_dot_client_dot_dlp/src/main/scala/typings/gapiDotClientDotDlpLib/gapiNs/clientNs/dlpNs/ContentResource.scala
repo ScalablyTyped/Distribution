@@ -26,20 +26,11 @@ trait ContentResource extends js.Object {
 object ContentResource {
   @scala.inline
   def apply(
-    deidentify: js.Function1[
-      gapiDotClientDotDlpLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GooglePrivacyDlpV2beta1DeidentifyContentResponse]
-    ],
-    inspect: js.Function1[
-      gapiDotClientDotDlpLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GooglePrivacyDlpV2beta1InspectContentResponse]
-    ],
-    redact: js.Function1[
-      gapiDotClientDotDlpLib.Anon_Accesstoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GooglePrivacyDlpV2beta1RedactContentResponse]
-    ]
+    deidentify: gapiDotClientDotDlpLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[GooglePrivacyDlpV2beta1DeidentifyContentResponse],
+    inspect: gapiDotClientDotDlpLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[GooglePrivacyDlpV2beta1InspectContentResponse],
+    redact: gapiDotClientDotDlpLib.Anon_Accesstoken => gapiDotClientLib.gapiNs.clientNs.Request[GooglePrivacyDlpV2beta1RedactContentResponse]
   ): ContentResource = {
-    val __obj = js.Dynamic.literal(deidentify = deidentify, inspect = inspect, redact = redact)
+    val __obj = js.Dynamic.literal(deidentify = js.Any.fromFunction1(deidentify), inspect = js.Any.fromFunction1(inspect), redact = js.Any.fromFunction1(redact))
   
     __obj.asInstanceOf[ContentResource]
   }

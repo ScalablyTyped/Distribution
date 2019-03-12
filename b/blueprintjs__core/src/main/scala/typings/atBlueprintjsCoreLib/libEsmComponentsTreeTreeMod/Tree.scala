@@ -23,8 +23,8 @@ class Tree[T] ()
     * This element does not contain the children of the node, only its label and controls.
     * If the node is not currently mounted, `undefined` is returned.
     */
-  def getNodeContentElement(nodeId: java.lang.String): js.UndefOr[reactLib.HTMLElement] = js.native
-  def getNodeContentElement(nodeId: scala.Double): js.UndefOr[reactLib.HTMLElement] = js.native
+  def getNodeContentElement(nodeId: java.lang.String): js.UndefOr[stdLib.HTMLElement] = js.native
+  def getNodeContentElement(nodeId: scala.Double): js.UndefOr[stdLib.HTMLElement] = js.native
   /* private */ def handlerHelper(handlerFromProps: js.Any, node: js.Any, e: js.Any): js.Any = js.native
   /* private */ def renderNodes(treeNodes: js.Any): js.Any = js.native
   /* private */ def renderNodes(treeNodes: js.Any, currentPath: js.Any): js.Any = js.native

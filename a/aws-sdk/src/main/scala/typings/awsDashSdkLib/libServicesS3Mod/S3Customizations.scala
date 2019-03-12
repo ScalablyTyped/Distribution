@@ -19,7 +19,7 @@ class S3Customizations ()
   def createPresignedPost(
     params: awsDashSdkLib.clientsS3Mod.S3Ns.PresignedPostNs.Params,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* data */ awsDashSdkLib.clientsS3Mod.PresignedPost, 
       scala.Unit
     ]
@@ -34,7 +34,7 @@ class S3Customizations ()
   def getSignedUrl(
     operation: java.lang.String,
     params: js.Any,
-    callback: js.Function2[/* err */ nodeLib.Error, /* url */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* url */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Uploads an arbitrarily sized buffer, blob, or stream, using intelligent
@@ -47,7 +47,7 @@ class S3Customizations ()
   def upload(
     params: awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectRequest,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* data */ awsDashSdkLib.libS3ManagedUnderscoreUploadMod.ManagedUploadNs.SendData, 
       scala.Unit
     ]
@@ -60,7 +60,7 @@ class S3Customizations ()
     params: awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectRequest,
     options: awsDashSdkLib.libS3ManagedUnderscoreUploadMod.ManagedUploadNs.ManagedUploadOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ stdLib.Error, 
       /* data */ awsDashSdkLib.libS3ManagedUnderscoreUploadMod.ManagedUploadNs.SendData, 
       scala.Unit
     ]

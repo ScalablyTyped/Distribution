@@ -54,24 +54,18 @@ trait WorkboxPlugin extends js.Object {
 object WorkboxPlugin {
   @scala.inline
   def apply(
-    cacheDidUpdate: js.Function1[/* context */ CacheDidUpdatePluginContext, scala.Unit] = null,
-    cacheWillUpdate: js.Function1[
-      /* context */ CacheWillUpdatePluginContext, 
-      js.Promise[stdLib.Response] | stdLib.Response | scala.Null
-    ] = null,
-    cachedResponseWillBeUsed: js.Function1[
-      /* context */ CacheResponseWillBeUsedPluginContext, 
-      js.Promise[stdLib.Response] | stdLib.Response | scala.Null
-    ] = null,
-    fetchDidFail: js.Function1[/* context */ FetchDidFailPluginContext, scala.Unit] = null,
-    requestWillFetch: js.Function1[/* context */ RequestWillFetchPluginContext, stdLib.Request] = null
+    cacheDidUpdate: /* context */ CacheDidUpdatePluginContext => scala.Unit = null,
+    cacheWillUpdate: /* context */ CacheWillUpdatePluginContext => js.Promise[stdLib.Response] | stdLib.Response | scala.Null = null,
+    cachedResponseWillBeUsed: /* context */ CacheResponseWillBeUsedPluginContext => js.Promise[stdLib.Response] | stdLib.Response | scala.Null = null,
+    fetchDidFail: /* context */ FetchDidFailPluginContext => scala.Unit = null,
+    requestWillFetch: /* context */ RequestWillFetchPluginContext => stdLib.Request = null
   ): WorkboxPlugin = {
     val __obj = js.Dynamic.literal()
-    if (cacheDidUpdate != null) __obj.updateDynamic("cacheDidUpdate")(cacheDidUpdate)
-    if (cacheWillUpdate != null) __obj.updateDynamic("cacheWillUpdate")(cacheWillUpdate)
-    if (cachedResponseWillBeUsed != null) __obj.updateDynamic("cachedResponseWillBeUsed")(cachedResponseWillBeUsed)
-    if (fetchDidFail != null) __obj.updateDynamic("fetchDidFail")(fetchDidFail)
-    if (requestWillFetch != null) __obj.updateDynamic("requestWillFetch")(requestWillFetch)
+    if (cacheDidUpdate != null) __obj.updateDynamic("cacheDidUpdate")(js.Any.fromFunction1(cacheDidUpdate))
+    if (cacheWillUpdate != null) __obj.updateDynamic("cacheWillUpdate")(js.Any.fromFunction1(cacheWillUpdate))
+    if (cachedResponseWillBeUsed != null) __obj.updateDynamic("cachedResponseWillBeUsed")(js.Any.fromFunction1(cachedResponseWillBeUsed))
+    if (fetchDidFail != null) __obj.updateDynamic("fetchDidFail")(js.Any.fromFunction1(fetchDidFail))
+    if (requestWillFetch != null) __obj.updateDynamic("requestWillFetch")(js.Any.fromFunction1(requestWillFetch))
     __obj.asInstanceOf[WorkboxPlugin]
   }
 }

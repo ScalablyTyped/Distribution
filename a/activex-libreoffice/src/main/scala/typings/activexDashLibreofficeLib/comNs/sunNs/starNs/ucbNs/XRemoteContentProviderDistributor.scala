@@ -35,14 +35,14 @@ trait XRemoteContentProviderDistributor
 object XRemoteContentProviderDistributor {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    connectToRemoteAcceptor: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
-    disconnectFromAll: js.Function0[scala.Unit],
-    disconnectFromRemoteAcceptor: js.Function1[java.lang.String, scala.Boolean],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    connectToRemoteAcceptor: (java.lang.String, java.lang.String) => scala.Boolean,
+    disconnectFromAll: () => scala.Unit,
+    disconnectFromRemoteAcceptor: java.lang.String => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XRemoteContentProviderDistributor = {
-    val __obj = js.Dynamic.literal(acquire = acquire, connectToRemoteAcceptor = connectToRemoteAcceptor, disconnectFromAll = disconnectFromAll, disconnectFromRemoteAcceptor = disconnectFromRemoteAcceptor, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), connectToRemoteAcceptor = js.Any.fromFunction2(connectToRemoteAcceptor), disconnectFromAll = js.Any.fromFunction0(disconnectFromAll), disconnectFromRemoteAcceptor = js.Any.fromFunction1(disconnectFromRemoteAcceptor), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XRemoteContentProviderDistributor]
   }

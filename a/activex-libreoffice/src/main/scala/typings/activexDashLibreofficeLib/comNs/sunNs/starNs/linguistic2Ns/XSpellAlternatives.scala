@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait XSpellAlternatives
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
   /** @returns the sequence of suggested spelling alternatives. */
-  val Alternatives: activexDashInteropLib.SafeArray[java.lang.String]
+  val Alternatives: stdLib.SafeArray[java.lang.String]
   /** @returns the number of suggested spelling alternatives available. */
   val AlternativesCount: scala.Double
   /**
@@ -28,7 +28,7 @@ trait XSpellAlternatives
   /** @returns the word that was misspelled. */
   val Word: java.lang.String
   /** @returns the sequence of suggested spelling alternatives. */
-  def getAlternatives(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getAlternatives(): stdLib.SafeArray[java.lang.String]
   /** @returns the number of suggested spelling alternatives available. */
   def getAlternativesCount(): scala.Double
   /**
@@ -45,21 +45,21 @@ trait XSpellAlternatives
 object XSpellAlternatives {
   @scala.inline
   def apply(
-    Alternatives: activexDashInteropLib.SafeArray[java.lang.String],
+    Alternatives: stdLib.SafeArray[java.lang.String],
     AlternativesCount: scala.Double,
     FailureType: scala.Double,
     Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
     Word: java.lang.String,
-    acquire: js.Function0[scala.Unit],
-    getAlternatives: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getAlternativesCount: js.Function0[scala.Double],
-    getFailureType: js.Function0[scala.Double],
-    getLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
-    getWord: js.Function0[java.lang.String],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getAlternatives: () => stdLib.SafeArray[java.lang.String],
+    getAlternativesCount: () => scala.Double,
+    getFailureType: () => scala.Double,
+    getLocale: () => activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    getWord: () => java.lang.String,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSpellAlternatives = {
-    val __obj = js.Dynamic.literal(Alternatives = Alternatives, AlternativesCount = AlternativesCount, FailureType = FailureType, Locale = Locale, Word = Word, acquire = acquire, getAlternatives = getAlternatives, getAlternativesCount = getAlternativesCount, getFailureType = getFailureType, getLocale = getLocale, getWord = getWord, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(Alternatives = Alternatives, AlternativesCount = AlternativesCount, FailureType = FailureType, Locale = Locale, Word = Word, acquire = js.Any.fromFunction0(acquire), getAlternatives = js.Any.fromFunction0(getAlternatives), getAlternativesCount = js.Any.fromFunction0(getAlternativesCount), getFailureType = js.Any.fromFunction0(getFailureType), getLocale = js.Any.fromFunction0(getLocale), getWord = js.Any.fromFunction0(getWord), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSpellAlternatives]
   }

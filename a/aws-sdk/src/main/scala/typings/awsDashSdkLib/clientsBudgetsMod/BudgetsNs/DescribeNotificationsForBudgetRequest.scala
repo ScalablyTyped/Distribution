@@ -9,11 +9,11 @@ trait DescribeNotificationsForBudgetRequest extends js.Object {
   /**
     * The accountId that is associated with the budget whose notifications you want descriptions of.
     */
-  var AccountId: AccountId
+  var AccountId: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.AccountId
   /**
     * The name of the budget whose notifications you want descriptions of.
     */
-  var BudgetName: BudgetName
+  var BudgetName: awsDashSdkLib.clientsBudgetsMod.BudgetsNs.BudgetName
   /**
     * An optional integer that represents how many entries a paginated response contains. The maximum is 100.
     */

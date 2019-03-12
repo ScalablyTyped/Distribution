@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("flatpickr/dist/types/options", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val HOOKS: js.Array[flatpickrLib.distTypesOptionsMod.HookKey] = js.native
-  val defaults: flatpickrLib.distTypesOptionsMod.ParsedOptions = js.native
+  val HOOKS: js.Array[HookKey] = js.native
+  val defaults: ParsedOptions = js.native
 }
 

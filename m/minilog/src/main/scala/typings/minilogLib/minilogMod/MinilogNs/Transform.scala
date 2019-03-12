@@ -15,12 +15,12 @@ trait Transform extends js.Object {
 object Transform {
   @scala.inline
   def apply(
-    mixin: js.Function1[js.Any, scala.Unit],
-    pipe: js.Function1[js.Any, js.Any],
-    unpipe: js.Function1[js.Any, Transform],
-    write: js.Function3[js.Any, js.Any, js.Any, scala.Unit]
+    mixin: js.Any => scala.Unit,
+    pipe: js.Any => js.Any,
+    unpipe: js.Any => Transform,
+    write: (js.Any, js.Any, js.Any) => scala.Unit
   ): Transform = {
-    val __obj = js.Dynamic.literal(mixin = mixin, pipe = pipe, unpipe = unpipe, write = write)
+    val __obj = js.Dynamic.literal(mixin = js.Any.fromFunction1(mixin), pipe = js.Any.fromFunction1(pipe), unpipe = js.Any.fromFunction1(unpipe), write = js.Any.fromFunction3(write))
   
     __obj.asInstanceOf[Transform]
   }

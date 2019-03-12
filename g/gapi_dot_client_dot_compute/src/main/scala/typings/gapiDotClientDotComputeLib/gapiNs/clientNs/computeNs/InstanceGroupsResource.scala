@@ -40,44 +40,17 @@ trait InstanceGroupsResource extends js.Object {
 object InstanceGroupsResource {
   @scala.inline
   def apply(
-    addInstances: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroup, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    aggregatedList: js.Function1[
-      gapiDotClientDotComputeLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupAggregatedList]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroup, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    get: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroup]
-    ],
-    insert: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    list: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupList]
-    ],
-    listInstances: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsFilterInstanceGroup, 
-      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupsListInstances]
-    ],
-    removeInstances: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroup, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ],
-    setNamedPorts: js.Function1[
-      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroup, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
-    ]
+    addInstances: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroup => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    aggregatedList: gapiDotClientDotComputeLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupAggregatedList],
+    delete: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroup => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    get: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupKey => gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroup],
+    insert: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtoken => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    list: gapiDotClientDotComputeLib.Anon_AltFields => gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupList],
+    listInstances: gapiDotClientDotComputeLib.Anon_AltFieldsFilterInstanceGroup => gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupsListInstances],
+    removeInstances: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroup => gapiDotClientLib.gapiNs.clientNs.Request[Operation],
+    setNamedPorts: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroup => gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   ): InstanceGroupsResource = {
-    val __obj = js.Dynamic.literal(addInstances = addInstances, aggregatedList = aggregatedList, delete = delete, get = get, insert = insert, list = list, listInstances = listInstances, removeInstances = removeInstances, setNamedPorts = setNamedPorts)
+    val __obj = js.Dynamic.literal(addInstances = js.Any.fromFunction1(addInstances), aggregatedList = js.Any.fromFunction1(aggregatedList), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), listInstances = js.Any.fromFunction1(listInstances), removeInstances = js.Any.fromFunction1(removeInstances), setNamedPorts = js.Any.fromFunction1(setNamedPorts))
   
     __obj.asInstanceOf[InstanceGroupsResource]
   }

@@ -39,16 +39,16 @@ object IFlashComponent {
   def apply(
     EXPRESS_INSTALL_URL: java.lang.String = null,
     IComponent: IComponent = null,
-    afterRender: js.Function0[scala.Unit] = null,
+    afterRender: () => scala.Unit = null,
     backgroundColor: java.lang.String = null,
-    beforeDestroy: js.Function0[scala.Unit] = null,
+    beforeDestroy: () => scala.Unit = null,
     expressInstall: js.UndefOr[scala.Boolean] = js.undefined,
     flashAttributes: js.Any = null,
     flashParams: js.Any = null,
     flashVars: js.Any = null,
     flashVersion: java.lang.String = null,
-    getSwfId: js.Function0[scala.Unit] = null,
-    initComponent: js.Function0[scala.Unit] = null,
+    getSwfId: () => scala.Unit = null,
+    initComponent: () => scala.Unit = null,
     renderTpl: js.Any = null,
     swf: IElement = null,
     swfHeight: js.Any = null,
@@ -59,16 +59,16 @@ object IFlashComponent {
     val __obj = js.Dynamic.literal()
     if (EXPRESS_INSTALL_URL != null) __obj.updateDynamic("EXPRESS_INSTALL_URL")(EXPRESS_INSTALL_URL)
     js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (afterRender != null) __obj.updateDynamic("afterRender")(afterRender)
+    if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction0(afterRender))
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(beforeDestroy)
+    if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(js.Any.fromFunction0(beforeDestroy))
     if (!js.isUndefined(expressInstall)) __obj.updateDynamic("expressInstall")(expressInstall)
     if (flashAttributes != null) __obj.updateDynamic("flashAttributes")(flashAttributes)
     if (flashParams != null) __obj.updateDynamic("flashParams")(flashParams)
     if (flashVars != null) __obj.updateDynamic("flashVars")(flashVars)
     if (flashVersion != null) __obj.updateDynamic("flashVersion")(flashVersion)
-    if (getSwfId != null) __obj.updateDynamic("getSwfId")(getSwfId)
-    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
+    if (getSwfId != null) __obj.updateDynamic("getSwfId")(js.Any.fromFunction0(getSwfId))
+    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
     if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
     if (swf != null) __obj.updateDynamic("swf")(swf)
     if (swfHeight != null) __obj.updateDynamic("swfHeight")(swfHeight)

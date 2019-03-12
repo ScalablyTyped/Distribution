@@ -129,36 +129,36 @@ object ISlider {
     allowThumbsOverlapping: js.UndefOr[scala.Boolean] = js.undefined,
     animation: js.Any = null,
     animationDuration: js.UndefOr[scala.Boolean] = js.undefined,
-    applyIncrement: js.Function1[/* increment */ js.UndefOr[scala.Double], scala.Double] = null,
+    applyIncrement: /* increment */ js.UndefOr[scala.Double] => scala.Double = null,
     baseCls: java.lang.String = null,
-    getAllowThumbsOverlapping: js.Function0[scala.Boolean] = null,
-    getAnimation: js.Function0[_] = null,
-    getBaseCls: js.Function0[java.lang.String] = null,
-    getIncrement: js.Function0[scala.Double] = null,
-    getMaxValue: js.Function0[scala.Double] = null,
-    getMinValue: js.Function0[scala.Double] = null,
-    getReadOnly: js.Function0[scala.Boolean] = null,
-    getThumb: js.Function1[/* index */ js.UndefOr[scala.Double], IThumb] = null,
-    getThumbConfig: js.Function0[_] = null,
-    getThumbs: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
-    getValue: js.Function0[_] = null,
-    getValues: js.Function0[_] = null,
+    getAllowThumbsOverlapping: () => scala.Boolean = null,
+    getAnimation: () => _ = null,
+    getBaseCls: () => java.lang.String = null,
+    getIncrement: () => scala.Double = null,
+    getMaxValue: () => scala.Double = null,
+    getMinValue: () => scala.Double = null,
+    getReadOnly: () => scala.Boolean = null,
+    getThumb: /* index */ js.UndefOr[scala.Double] => IThumb = null,
+    getThumbConfig: () => _ = null,
+    getThumbs: () => senchaUnderscoreTouchLib.ExtNs.Array = null,
+    getValue: () => _ = null,
+    getValues: () => _ = null,
     increment: scala.Int | scala.Double = null,
     maxValue: scala.Int | scala.Double = null,
     minValue: scala.Int | scala.Double = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
-    setAllowThumbsOverlapping: js.Function1[/* allowThumbsOverlapping */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setAnimation: js.Function1[/* animation */ js.UndefOr[js.Any], scala.Unit] = null,
-    setBaseCls: js.Function1[/* baseCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setIncrement: js.Function1[/* increment */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setMaxValue: js.Function1[/* maxValue */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setMinValue: js.Function1[/* minValue */ js.UndefOr[scala.Double], scala.Unit] = null,
-    setReadOnly: js.Function1[/* readOnly */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setThumbConfig: js.Function1[/* thumbConfig */ js.UndefOr[js.Any], scala.Unit] = null,
-    setValue: js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit] = null,
-    setValues: js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit] = null,
+    setAllowThumbsOverlapping: /* allowThumbsOverlapping */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setAnimation: /* animation */ js.UndefOr[js.Any] => scala.Unit = null,
+    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setIncrement: /* increment */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setMaxValue: /* maxValue */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setMinValue: /* minValue */ js.UndefOr[scala.Double] => scala.Unit = null,
+    setReadOnly: /* readOnly */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setThumbConfig: /* thumbConfig */ js.UndefOr[js.Any] => scala.Unit = null,
+    setValue: /* value */ js.UndefOr[js.Any] => scala.Unit = null,
+    setValues: /* value */ js.UndefOr[js.Any] => scala.Unit = null,
     thumbConfig: js.Any = null,
-    updateValue: js.Function2[/* newValue */ js.UndefOr[js.Any], /* oldValue */ js.UndefOr[js.Any], scala.Unit] = null,
+    updateValue: (/* newValue */ js.UndefOr[js.Any], /* oldValue */ js.UndefOr[js.Any]) => scala.Unit = null,
     value: js.Any = null,
     values: js.Any = null
   ): ISlider = {
@@ -167,36 +167,36 @@ object ISlider {
     if (!js.isUndefined(allowThumbsOverlapping)) __obj.updateDynamic("allowThumbsOverlapping")(allowThumbsOverlapping)
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration)
-    if (applyIncrement != null) __obj.updateDynamic("applyIncrement")(applyIncrement)
+    if (applyIncrement != null) __obj.updateDynamic("applyIncrement")(js.Any.fromFunction1(applyIncrement))
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (getAllowThumbsOverlapping != null) __obj.updateDynamic("getAllowThumbsOverlapping")(getAllowThumbsOverlapping)
-    if (getAnimation != null) __obj.updateDynamic("getAnimation")(getAnimation)
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(getBaseCls)
-    if (getIncrement != null) __obj.updateDynamic("getIncrement")(getIncrement)
-    if (getMaxValue != null) __obj.updateDynamic("getMaxValue")(getMaxValue)
-    if (getMinValue != null) __obj.updateDynamic("getMinValue")(getMinValue)
-    if (getReadOnly != null) __obj.updateDynamic("getReadOnly")(getReadOnly)
-    if (getThumb != null) __obj.updateDynamic("getThumb")(getThumb)
-    if (getThumbConfig != null) __obj.updateDynamic("getThumbConfig")(getThumbConfig)
-    if (getThumbs != null) __obj.updateDynamic("getThumbs")(getThumbs)
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
-    if (getValues != null) __obj.updateDynamic("getValues")(getValues)
+    if (getAllowThumbsOverlapping != null) __obj.updateDynamic("getAllowThumbsOverlapping")(js.Any.fromFunction0(getAllowThumbsOverlapping))
+    if (getAnimation != null) __obj.updateDynamic("getAnimation")(js.Any.fromFunction0(getAnimation))
+    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
+    if (getIncrement != null) __obj.updateDynamic("getIncrement")(js.Any.fromFunction0(getIncrement))
+    if (getMaxValue != null) __obj.updateDynamic("getMaxValue")(js.Any.fromFunction0(getMaxValue))
+    if (getMinValue != null) __obj.updateDynamic("getMinValue")(js.Any.fromFunction0(getMinValue))
+    if (getReadOnly != null) __obj.updateDynamic("getReadOnly")(js.Any.fromFunction0(getReadOnly))
+    if (getThumb != null) __obj.updateDynamic("getThumb")(js.Any.fromFunction1(getThumb))
+    if (getThumbConfig != null) __obj.updateDynamic("getThumbConfig")(js.Any.fromFunction0(getThumbConfig))
+    if (getThumbs != null) __obj.updateDynamic("getThumbs")(js.Any.fromFunction0(getThumbs))
+    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
+    if (getValues != null) __obj.updateDynamic("getValues")(js.Any.fromFunction0(getValues))
     if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (setAllowThumbsOverlapping != null) __obj.updateDynamic("setAllowThumbsOverlapping")(setAllowThumbsOverlapping)
-    if (setAnimation != null) __obj.updateDynamic("setAnimation")(setAnimation)
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(setBaseCls)
-    if (setIncrement != null) __obj.updateDynamic("setIncrement")(setIncrement)
-    if (setMaxValue != null) __obj.updateDynamic("setMaxValue")(setMaxValue)
-    if (setMinValue != null) __obj.updateDynamic("setMinValue")(setMinValue)
-    if (setReadOnly != null) __obj.updateDynamic("setReadOnly")(setReadOnly)
-    if (setThumbConfig != null) __obj.updateDynamic("setThumbConfig")(setThumbConfig)
-    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
-    if (setValues != null) __obj.updateDynamic("setValues")(setValues)
+    if (setAllowThumbsOverlapping != null) __obj.updateDynamic("setAllowThumbsOverlapping")(js.Any.fromFunction1(setAllowThumbsOverlapping))
+    if (setAnimation != null) __obj.updateDynamic("setAnimation")(js.Any.fromFunction1(setAnimation))
+    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
+    if (setIncrement != null) __obj.updateDynamic("setIncrement")(js.Any.fromFunction1(setIncrement))
+    if (setMaxValue != null) __obj.updateDynamic("setMaxValue")(js.Any.fromFunction1(setMaxValue))
+    if (setMinValue != null) __obj.updateDynamic("setMinValue")(js.Any.fromFunction1(setMinValue))
+    if (setReadOnly != null) __obj.updateDynamic("setReadOnly")(js.Any.fromFunction1(setReadOnly))
+    if (setThumbConfig != null) __obj.updateDynamic("setThumbConfig")(js.Any.fromFunction1(setThumbConfig))
+    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
+    if (setValues != null) __obj.updateDynamic("setValues")(js.Any.fromFunction1(setValues))
     if (thumbConfig != null) __obj.updateDynamic("thumbConfig")(thumbConfig)
-    if (updateValue != null) __obj.updateDynamic("updateValue")(updateValue)
+    if (updateValue != null) __obj.updateDynamic("updateValue")(js.Any.fromFunction2(updateValue))
     if (value != null) __obj.updateDynamic("value")(value)
     if (values != null) __obj.updateDynamic("values")(values)
     __obj.asInstanceOf[ISlider]

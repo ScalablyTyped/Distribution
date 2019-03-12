@@ -27,8 +27,8 @@ object Instance {
   @scala.inline
   def apply(
     constructor: js.Function,
-    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
-    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     announce: js.Array[java.lang.String] = null,
     as: java.lang.String | js.Array[java.lang.String] = null,
     dn: java.lang.String | js.Array[java.lang.String] = null,
@@ -44,7 +44,7 @@ object Instance {
     xs: java.lang.String | js.Array[java.lang.String] = null,
     xt: java.lang.String | js.Array[java.lang.String] = null
   ): Instance = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (announce != null) __obj.updateDynamic("announce")(announce)
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (dn != null) __obj.updateDynamic("dn")(dn.asInstanceOf[js.Any])

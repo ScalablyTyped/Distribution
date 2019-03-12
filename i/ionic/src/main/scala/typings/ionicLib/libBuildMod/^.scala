@@ -11,7 +11,7 @@ object ^ extends js.Object {
   val BUILD_SCRIPT: /* ionic:build */ java.lang.String = js.native
   val COMMON_BUILD_COMMAND_OPTIONS: js.Array[ionicLib.definitionsMod.CommandMetadataOption] = js.native
   def build(
-    deps: ionicLib.libBuildMod.BuildRunnerDeps,
+    deps: BuildRunnerDeps,
     inputs: atIonicCliDashFrameworkLib.definitionsMod.CommandLineInputs,
     options: atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions
   ): js.Promise[scala.Unit] = js.native

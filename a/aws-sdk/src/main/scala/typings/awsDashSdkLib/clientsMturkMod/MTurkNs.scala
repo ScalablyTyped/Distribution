@@ -344,7 +344,7 @@ object MTurkNs extends js.Object {
     /**
       * The initial status of the Qualification type. Constraints: Valid values are: Active | Inactive
       */
-    var QualificationTypeStatus: QualificationTypeStatus
+    var QualificationTypeStatus: awsDashSdkLib.clientsMturkMod.MTurkNs.QualificationTypeStatus
     /**
       * The number of seconds that a Worker must wait after requesting a Qualification of the Qualification type before the worker can retry the Qualification request. Constraints: None. If not specified, retries are disabled and Workers can request a Qualification of this type only once, even if the Worker has not been granted the Qualification. It is not possible to disable retries for a Qualification type after it has been created with retries enabled. If you want to disable retries, you must delete existing retry-enabled Qualification type and then create a new Qualification type with retries disabled.
       */
@@ -1055,7 +1055,7 @@ object MTurkNs extends js.Object {
     /**
       * The kind of comparison to make against a Qualification's value. You can compare a Qualification's value to an IntegerValue to see if it is LessThan, LessThanOrEqualTo, GreaterThan, GreaterThanOrEqualTo, EqualTo, or NotEqualTo the IntegerValue. You can compare it to a LocaleValue to see if it is EqualTo, or NotEqualTo the LocaleValue. You can check to see if the value is In or NotIn a set of IntegerValue or LocaleValue values. Lastly, a Qualification requirement can also test if a Qualification Exists or DoesNotExist in the user's profile, regardless of its value. 
       */
-    var Comparator: Comparator
+    var Comparator: awsDashSdkLib.clientsMturkMod.MTurkNs.Comparator
     /**
       *  The integer value to compare against the Qualification's value. IntegerValue must not be present if Comparator is Exists or DoesNotExist. IntegerValue can only be used if the Qualification type has an integer value; it cannot be used with the Worker_Locale QualificationType ID. When performing a set comparison by using the In or the NotIn comparator, you can use up to 15 IntegerValue elements in a QualificationRequirement data structure. 
       */

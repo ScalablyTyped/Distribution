@@ -26,7 +26,7 @@ object ConfigOptions {
     hashtag: scala.Boolean | java.lang.String = null,
     newWindow: js.UndefOr[scala.Boolean] = js.undefined,
     phone: js.UndefOr[scala.Boolean] = js.undefined,
-    replaceFn: js.Function2[/* autolinker */ Autolinker, /* match */ js.Any, java.lang.String] = null,
+    replaceFn: (/* autolinker */ Autolinker, /* match */ js.Any) => java.lang.String = null,
     stripPrefix: js.UndefOr[scala.Boolean] = js.undefined,
     truncate: scala.Double | autolinkerLib.Anon_Length = null,
     twitter: js.UndefOr[scala.Boolean] = js.undefined,
@@ -38,7 +38,7 @@ object ConfigOptions {
     if (hashtag != null) __obj.updateDynamic("hashtag")(hashtag.asInstanceOf[js.Any])
     if (!js.isUndefined(newWindow)) __obj.updateDynamic("newWindow")(newWindow)
     if (!js.isUndefined(phone)) __obj.updateDynamic("phone")(phone)
-    if (replaceFn != null) __obj.updateDynamic("replaceFn")(replaceFn)
+    if (replaceFn != null) __obj.updateDynamic("replaceFn")(js.Any.fromFunction2(replaceFn))
     if (!js.isUndefined(stripPrefix)) __obj.updateDynamic("stripPrefix")(stripPrefix)
     if (truncate != null) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
     if (!js.isUndefined(twitter)) __obj.updateDynamic("twitter")(twitter)

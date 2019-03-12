@@ -13,8 +13,8 @@ trait ICollection extends js.Object {
 
 object ICollection {
   @scala.inline
-  def apply(apply: js.Function2[js.Function, js.Any, js.Any], each: js.Function1[js.Function0[_], js.Any]): ICollection = {
-    val __obj = js.Dynamic.literal(apply = apply, each = each)
+  def apply(apply: (js.Function, js.Any) => js.Any, each: js.Function0[_] => js.Any): ICollection = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction2(apply), each = js.Any.fromFunction1(each))
   
     __obj.asInstanceOf[ICollection]
   }

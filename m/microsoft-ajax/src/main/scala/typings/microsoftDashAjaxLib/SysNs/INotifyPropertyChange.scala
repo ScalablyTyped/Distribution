@@ -26,11 +26,8 @@ trait INotifyPropertyChange extends js.Object {
 
 object INotifyPropertyChange {
   @scala.inline
-  def apply(
-    add_propertyChanged: js.Function1[js.Function, scala.Unit],
-    remove_propertyChanged: js.Function1[js.Function, scala.Unit]
-  ): INotifyPropertyChange = {
-    val __obj = js.Dynamic.literal(add_propertyChanged = add_propertyChanged, remove_propertyChanged = remove_propertyChanged)
+  def apply(add_propertyChanged: js.Function => scala.Unit, remove_propertyChanged: js.Function => scala.Unit): INotifyPropertyChange = {
+    val __obj = js.Dynamic.literal(add_propertyChanged = js.Any.fromFunction1(add_propertyChanged), remove_propertyChanged = js.Any.fromFunction1(remove_propertyChanged))
   
     __obj.asInstanceOf[INotifyPropertyChange]
   }

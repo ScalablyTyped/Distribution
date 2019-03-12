@@ -19,10 +19,10 @@ object CoverageSummary {
     branches: FileCoverageTotal,
     functions: FileCoverageTotal,
     lines: FileCoverageTotal,
-    merge: js.Function1[CoverageSummary, scala.Unit],
+    merge: CoverageSummary => scala.Unit,
     statements: FileCoverageTotal
   ): CoverageSummary = {
-    val __obj = js.Dynamic.literal(branches = branches, functions = functions, lines = lines, merge = merge, statements = statements)
+    val __obj = js.Dynamic.literal(branches = branches, functions = functions, lines = lines, merge = js.Any.fromFunction1(merge), statements = statements)
   
     __obj.asInstanceOf[CoverageSummary]
   }

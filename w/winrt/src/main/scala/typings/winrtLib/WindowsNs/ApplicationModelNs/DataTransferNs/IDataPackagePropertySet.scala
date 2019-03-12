@@ -20,24 +20,22 @@ object IDataPackagePropertySet {
   def apply(
     applicationListingUri: winrtLib.WindowsNs.FoundationNs.Uri,
     applicationName: java.lang.String,
-    clear: js.Function0[scala.Unit],
+    clear: () => scala.Unit,
     description: java.lang.String,
     fileTypes: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[java.lang.String],
-    first: js.Function0[
-      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterator[
-        winrtLib.WindowsNs.FoundationNs.CollectionsNs.IKeyValuePair[java.lang.String, js.Any]
-      ]
+    first: () => winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterator[
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IKeyValuePair[java.lang.String, js.Any]
     ],
-    getView: js.Function0[winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, js.Any]],
-    hasKey: js.Function1[java.lang.String, scala.Boolean],
-    insert: js.Function2[java.lang.String, js.Any, scala.Boolean],
-    lookup: js.Function1[java.lang.String, js.Any],
-    remove: js.Function1[java.lang.String, scala.Unit],
+    getView: () => winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, js.Any],
+    hasKey: java.lang.String => scala.Boolean,
+    insert: (java.lang.String, js.Any) => scala.Boolean,
+    lookup: java.lang.String => js.Any,
+    remove: java.lang.String => scala.Unit,
     size: scala.Double,
     thumbnail: winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStreamReference,
     title: java.lang.String
   ): IDataPackagePropertySet = {
-    val __obj = js.Dynamic.literal(applicationListingUri = applicationListingUri, applicationName = applicationName, clear = clear, description = description, fileTypes = fileTypes, first = first, getView = getView, hasKey = hasKey, insert = insert, lookup = lookup, remove = remove, size = size, thumbnail = thumbnail, title = title)
+    val __obj = js.Dynamic.literal(applicationListingUri = applicationListingUri, applicationName = applicationName, clear = js.Any.fromFunction0(clear), description = description, fileTypes = fileTypes, first = js.Any.fromFunction0(first), getView = js.Any.fromFunction0(getView), hasKey = js.Any.fromFunction1(hasKey), insert = js.Any.fromFunction2(insert), lookup = js.Any.fromFunction1(lookup), remove = js.Any.fromFunction1(remove), size = size, thumbnail = thumbnail, title = title)
   
     __obj.asInstanceOf[IDataPackagePropertySet]
   }

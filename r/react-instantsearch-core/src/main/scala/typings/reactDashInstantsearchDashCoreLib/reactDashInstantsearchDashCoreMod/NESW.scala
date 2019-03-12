@@ -10,3 +10,15 @@ trait NESW extends js.Object {
   var southWest: reactDashInstantsearchDashCoreLib.Anon_Lat
 }
 
+object NESW {
+  @scala.inline
+  def apply(
+    northEast: reactDashInstantsearchDashCoreLib.Anon_Lat,
+    southWest: reactDashInstantsearchDashCoreLib.Anon_Lat
+  ): NESW = {
+    val __obj = js.Dynamic.literal(northEast = northEast, southWest = southWest)
+  
+    __obj.asInstanceOf[NESW]
+  }
+}
+

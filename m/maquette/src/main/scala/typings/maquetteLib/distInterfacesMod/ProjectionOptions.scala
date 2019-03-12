@@ -30,18 +30,13 @@ object ProjectionOptions {
     eventHandlerInterceptor: EventHandlerInterceptor = null,
     namespace: java.lang.String = null,
     performanceLogger: ProjectorPerformanceLogger = null,
-    styleApplyer: js.Function3[
-      /* domNode */ stdLib.HTMLElement, 
-      /* styleName */ java.lang.String, 
-      /* value */ java.lang.String, 
-      scala.Unit
-    ] = null
+    styleApplyer: (/* domNode */ stdLib.HTMLElement, /* styleName */ java.lang.String, /* value */ java.lang.String) => scala.Unit = null
   ): ProjectionOptions = {
     val __obj = js.Dynamic.literal()
     if (eventHandlerInterceptor != null) __obj.updateDynamic("eventHandlerInterceptor")(eventHandlerInterceptor)
     if (namespace != null) __obj.updateDynamic("namespace")(namespace)
     if (performanceLogger != null) __obj.updateDynamic("performanceLogger")(performanceLogger)
-    if (styleApplyer != null) __obj.updateDynamic("styleApplyer")(styleApplyer)
+    if (styleApplyer != null) __obj.updateDynamic("styleApplyer")(js.Any.fromFunction3(styleApplyer))
     __obj.asInstanceOf[ProjectionOptions]
   }
 }

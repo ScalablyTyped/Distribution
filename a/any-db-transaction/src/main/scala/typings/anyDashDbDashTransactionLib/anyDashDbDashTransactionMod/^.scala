@@ -17,7 +17,7 @@ object ^ extends js.Object {
     q: anyDashDbLib.anyDashDbMod.Queryable,
     beginStatement: java.lang.String,
     callback: js.Function2[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* transaction */ anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction, 
       scala.Unit
     ]
@@ -25,7 +25,7 @@ object ^ extends js.Object {
   def apply(
     q: anyDashDbLib.anyDashDbMod.Queryable,
     callback: js.Function2[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* transaction */ anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction, 
       scala.Unit
     ]
@@ -44,7 +44,7 @@ object ^ extends js.Object {
     options: anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.TransactionOptions,
     beginStatement: java.lang.String,
     callback: js.Function2[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* transaction */ anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction, 
       scala.Unit
     ]
@@ -53,7 +53,7 @@ object ^ extends js.Object {
     q: anyDashDbLib.anyDashDbMod.Queryable,
     options: anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.TransactionOptions,
     callback: js.Function2[
-      /* error */ nodeLib.Error, 
+      /* error */ stdLib.Error, 
       /* transaction */ anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction, 
       scala.Unit
     ]

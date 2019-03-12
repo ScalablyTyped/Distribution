@@ -30,7 +30,7 @@ package object mongooseMod {
     */
   type NativeBuffer = nodeLib.Anon_Alloc
   type NativeDate = stdLib.DateConstructor
-  type NativeError = nodeLib.ErrorConstructor
+  type NativeError = stdLib.ErrorConstructor
   /*
     * section query.js
     * http://mongoosejs.com/docs/api.html#query-js

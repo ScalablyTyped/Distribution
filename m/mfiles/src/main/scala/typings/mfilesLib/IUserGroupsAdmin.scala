@@ -12,8 +12,8 @@ trait IUserGroupsAdmin extends js.Object {
 
 object IUserGroupsAdmin {
   @scala.inline
-  def apply(Count: scala.Double, Item: js.Function1[scala.Double, IUserGroupAdmin]): IUserGroupsAdmin = {
-    val __obj = js.Dynamic.literal(Count = Count, Item = Item)
+  def apply(Count: scala.Double, Item: scala.Double => IUserGroupAdmin): IUserGroupsAdmin = {
+    val __obj = js.Dynamic.literal(Count = Count, Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[IUserGroupsAdmin]
   }

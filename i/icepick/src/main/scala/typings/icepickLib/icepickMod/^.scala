@@ -16,7 +16,7 @@ object ^ extends js.Object {
   def assoc[T, V](collection: T, key: java.lang.String, value: V): T = js.native
   def assoc[T, V](collection: T, key: scala.Double, value: V): T = js.native
   def assocIn[T, V](collection: T, path: js.Array[scala.Double | java.lang.String], value: V): T = js.native
-  def chain[T](target: T): icepickLib.icepickMod.IcepickWrapper[T] = js.native
+  def chain[T](target: T): IcepickWrapper[T] = js.native
   def dissoc[T](collection: T, key: java.lang.String): T = js.native
   def dissoc[T](collection: T, key: scala.Double): T = js.native
   def dissocIn[T](collection: T, path: js.Array[scala.Double | java.lang.String]): T = js.native

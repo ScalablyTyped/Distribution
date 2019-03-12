@@ -134,9 +134,9 @@ object ^ extends js.Object {
     topology: topojsonDashSpecificationLib.topojsonDashSpecificationMod.Topology[T],
     transform: topojsonDashSpecificationLib.topojsonDashSpecificationMod.Transform
   ): topojsonDashSpecificationLib.topojsonDashSpecificationMod.Topology[T] = js.native
-  def transform(): topojsonDashClientLib.topojsonDashClientMod.Transformer = js.native
-  def transform(transform: topojsonDashSpecificationLib.topojsonDashSpecificationMod.Transform): topojsonDashClientLib.topojsonDashClientMod.Transformer = js.native
-  def untransform(): topojsonDashClientLib.topojsonDashClientMod.Transformer = js.native
-  def untransform(transform: topojsonDashSpecificationLib.topojsonDashSpecificationMod.Transform): topojsonDashClientLib.topojsonDashClientMod.Transformer = js.native
+  def transform(): Transformer = js.native
+  def transform(transform: topojsonDashSpecificationLib.topojsonDashSpecificationMod.Transform): Transformer = js.native
+  def untransform(): Transformer = js.native
+  def untransform(transform: topojsonDashSpecificationLib.topojsonDashSpecificationMod.Transform): Transformer = js.native
 }
 

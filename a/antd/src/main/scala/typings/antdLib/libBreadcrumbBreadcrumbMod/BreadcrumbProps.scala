@@ -27,13 +27,7 @@ object BreadcrumbProps {
   @scala.inline
   def apply(
     className: java.lang.String = null,
-    itemRender: js.Function4[
-      /* route */ js.Any, 
-      /* params */ js.Any, 
-      /* routes */ js.Array[_], 
-      /* paths */ js.Array[java.lang.String], 
-      reactLib.reactMod.ReactNs.ReactNode
-    ] = null,
+    itemRender: (/* route */ js.Any, /* params */ js.Any, /* routes */ js.Array[_], /* paths */ js.Array[java.lang.String]) => reactLib.reactMod.ReactNs.ReactNode = null,
     params: js.Any = null,
     prefixCls: java.lang.String = null,
     routes: js.Array[Route] = null,
@@ -42,7 +36,7 @@ object BreadcrumbProps {
   ): BreadcrumbProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
-    if (itemRender != null) __obj.updateDynamic("itemRender")(itemRender)
+    if (itemRender != null) __obj.updateDynamic("itemRender")(js.Any.fromFunction4(itemRender))
     if (params != null) __obj.updateDynamic("params")(params)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (routes != null) __obj.updateDynamic("routes")(routes)

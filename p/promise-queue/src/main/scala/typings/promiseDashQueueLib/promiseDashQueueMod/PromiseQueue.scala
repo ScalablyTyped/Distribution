@@ -30,11 +30,11 @@ trait PromiseQueue extends js.Object {
 object PromiseQueue {
   @scala.inline
   def apply(
-    add: js.Function1[js.Function0[js.Promise[js.Any]], js.Promise[js.Any]],
-    getPendingLength: js.Function0[scala.Double],
-    getQueueLength: js.Function0[scala.Double]
+    add: js.Function0[js.Promise[js.Any]] => js.Promise[js.Any],
+    getPendingLength: () => scala.Double,
+    getQueueLength: () => scala.Double
   ): PromiseQueue = {
-    val __obj = js.Dynamic.literal(add = add, getPendingLength = getPendingLength, getQueueLength = getQueueLength)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), getPendingLength = js.Any.fromFunction0(getPendingLength), getQueueLength = js.Any.fromFunction0(getQueueLength))
   
     __obj.asInstanceOf[PromiseQueue]
   }

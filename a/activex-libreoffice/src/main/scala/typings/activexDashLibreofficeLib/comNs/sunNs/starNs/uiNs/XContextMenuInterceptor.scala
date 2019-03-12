@@ -18,12 +18,12 @@ trait XContextMenuInterceptor
 object XContextMenuInterceptor {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    notifyContextMenuExecute: js.Function1[ContextMenuExecuteEvent, ContextMenuInterceptorAction],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    notifyContextMenuExecute: ContextMenuExecuteEvent => ContextMenuInterceptorAction,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XContextMenuInterceptor = {
-    val __obj = js.Dynamic.literal(acquire = acquire, notifyContextMenuExecute = notifyContextMenuExecute, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), notifyContextMenuExecute = js.Any.fromFunction1(notifyContextMenuExecute), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XContextMenuInterceptor]
   }

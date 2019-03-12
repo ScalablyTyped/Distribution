@@ -11,8 +11,8 @@ trait EventSubscription extends js.Object {
 
 object EventSubscription {
   @scala.inline
-  def apply(remove: js.Function0[scala.Unit]): EventSubscription = {
-    val __obj = js.Dynamic.literal(remove = remove)
+  def apply(remove: () => scala.Unit): EventSubscription = {
+    val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove))
   
     __obj.asInstanceOf[EventSubscription]
   }

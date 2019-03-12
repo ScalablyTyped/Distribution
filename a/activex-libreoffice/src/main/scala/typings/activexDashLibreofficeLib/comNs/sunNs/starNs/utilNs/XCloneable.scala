@@ -15,12 +15,12 @@ trait XCloneable
 object XCloneable {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createClone: js.Function0[XCloneable],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createClone: () => XCloneable,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XCloneable = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createClone = createClone, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createClone = js.Any.fromFunction0(createClone), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XCloneable]
   }

@@ -13,17 +13,17 @@ trait Ack extends DeliveryInfo {
 object Ack {
   @scala.inline
   def apply(
-    acknowledge: js.Function1[scala.Boolean, scala.Unit],
+    acknowledge: scala.Boolean => scala.Unit,
     consumerTag: java.lang.String,
     contentType: java.lang.String,
     deliveryTag: stdLib.Uint8Array,
     exchange: java.lang.String,
     queue: java.lang.String,
     redelivered: scala.Boolean,
-    reject: js.Function1[scala.Boolean, scala.Unit],
+    reject: scala.Boolean => scala.Unit,
     routingKey: java.lang.String
   ): Ack = {
-    val __obj = js.Dynamic.literal(acknowledge = acknowledge, consumerTag = consumerTag, contentType = contentType, deliveryTag = deliveryTag, exchange = exchange, queue = queue, redelivered = redelivered, reject = reject, routingKey = routingKey)
+    val __obj = js.Dynamic.literal(acknowledge = js.Any.fromFunction1(acknowledge), consumerTag = consumerTag, contentType = contentType, deliveryTag = deliveryTag, exchange = exchange, queue = queue, redelivered = redelivered, reject = js.Any.fromFunction1(reject), routingKey = routingKey)
   
     __obj.asInstanceOf[Ack]
   }

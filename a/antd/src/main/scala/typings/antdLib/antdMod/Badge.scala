@@ -15,6 +15,6 @@ class Badge ()
 @js.native
 object Badge extends js.Object {
   var defaultProps: antdLib.Anon_CountDot = js.native
-  var propTypes: antdLib.Anon_CountDotOverflowCount = js.native
+  var propTypes: antdLib.Anon_ComponentName = js.native
 }
 

@@ -36,7 +36,7 @@ object ServiceArguments {
     cpu: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     dockerLabels: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = null,
     environment: org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = null,
-    function: js.Function0[scala.Unit] = null,
+    function: () => scala.Unit = null,
     host: HostProperties = null,
     image: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     memory: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
@@ -53,7 +53,7 @@ object ServiceArguments {
     if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
     if (dockerLabels != null) __obj.updateDynamic("dockerLabels")(dockerLabels.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment)
-    if (function != null) __obj.updateDynamic("function")(function)
+    if (function != null) __obj.updateDynamic("function")(js.Any.fromFunction0(function))
     if (host != null) __obj.updateDynamic("host")(host)
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])

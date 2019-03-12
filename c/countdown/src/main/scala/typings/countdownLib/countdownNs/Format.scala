@@ -22,8 +22,8 @@ object Format {
   def apply(
     delim: java.lang.String = null,
     empty: java.lang.String = null,
-    formatNumber: js.Function1[/* value */ scala.Double, java.lang.String] = null,
-    formatter: js.Function2[/* value */ scala.Double, /* unit */ scala.Double, java.lang.String] = null,
+    formatNumber: /* value */ scala.Double => java.lang.String = null,
+    formatter: (/* value */ scala.Double, /* unit */ scala.Double) => java.lang.String = null,
     last: java.lang.String = null,
     plural: java.lang.String | js.Array[java.lang.String] = null,
     singular: java.lang.String | js.Array[java.lang.String] = null
@@ -31,8 +31,8 @@ object Format {
     val __obj = js.Dynamic.literal()
     if (delim != null) __obj.updateDynamic("delim")(delim)
     if (empty != null) __obj.updateDynamic("empty")(empty)
-    if (formatNumber != null) __obj.updateDynamic("formatNumber")(formatNumber)
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (formatNumber != null) __obj.updateDynamic("formatNumber")(js.Any.fromFunction1(formatNumber))
+    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction2(formatter))
     if (last != null) __obj.updateDynamic("last")(last)
     if (plural != null) __obj.updateDynamic("plural")(plural.asInstanceOf[js.Any])
     if (singular != null) __obj.updateDynamic("singular")(singular.asInstanceOf[js.Any])

@@ -12,8 +12,8 @@ trait Anon_Peek[TPeek, TRewind] extends js.Object {
 
 object Anon_Peek {
   @scala.inline
-  def apply[TPeek, TRewind](peek: js.Function0[TPeek], rewind: js.Function0[TRewind]): Anon_Peek[TPeek, TRewind] = {
-    val __obj = js.Dynamic.literal(peek = peek, rewind = rewind)
+  def apply[TPeek, TRewind](peek: () => TPeek, rewind: () => TRewind): Anon_Peek[TPeek, TRewind] = {
+    val __obj = js.Dynamic.literal(peek = js.Any.fromFunction0(peek), rewind = js.Any.fromFunction0(rewind))
   
     __obj.asInstanceOf[Anon_Peek[TPeek, TRewind]]
   }

@@ -11,8 +11,8 @@ trait Anon_Check extends js.Object {
 
 object Anon_Check {
   @scala.inline
-  def apply(check: js.Function1[nodeLib.Buffer, scala.Boolean]): Anon_Check = {
-    val __obj = js.Dynamic.literal(check = check)
+  def apply(check: nodeLib.Buffer => scala.Boolean): Anon_Check = {
+    val __obj = js.Dynamic.literal(check = js.Any.fromFunction1(check))
   
     __obj.asInstanceOf[Anon_Check]
   }

@@ -17,13 +17,13 @@ trait XPersist
 object XPersist {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    read: js.Function1[java.lang.String, scala.Unit],
-    release: js.Function0[scala.Unit],
-    write: js.Function1[java.lang.String, scala.Unit]
+    acquire: () => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    read: java.lang.String => scala.Unit,
+    release: () => scala.Unit,
+    write: java.lang.String => scala.Unit
   ): XPersist = {
-    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, read = read, release = release, write = write)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), read = js.Any.fromFunction1(read), release = js.Any.fromFunction0(release), write = js.Any.fromFunction1(write))
   
     __obj.asInstanceOf[XPersist]
   }

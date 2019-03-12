@@ -1927,7 +1927,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * see _.isObject
     */
-  def isObject(): scala.Boolean = js.native
+  def isObject(): /* is lodash.lodash._.LoDashImplicitWrapper<object> */ scala.Boolean = js.native
   /**
     * see _.isObjectLike
     */

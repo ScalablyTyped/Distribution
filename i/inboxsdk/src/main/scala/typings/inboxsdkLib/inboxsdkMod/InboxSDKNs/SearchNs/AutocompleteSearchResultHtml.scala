@@ -19,14 +19,14 @@ object AutocompleteSearchResultHtml {
     nameHTML: java.lang.String,
     externalURL: java.lang.String = null,
     iconUrl: java.lang.String = null,
-    onClick: js.Function0[scala.Unit] = null,
+    onClick: () => scala.Unit = null,
     routeName: java.lang.String = null,
     routeParams: js.Array[java.lang.String] = null
   ): AutocompleteSearchResultHtml = {
     val __obj = js.Dynamic.literal(descriptionHTML = descriptionHTML, nameHTML = nameHTML)
     if (externalURL != null) __obj.updateDynamic("externalURL")(externalURL)
     if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
     if (routeName != null) __obj.updateDynamic("routeName")(routeName)
     if (routeParams != null) __obj.updateDynamic("routeParams")(routeParams)
     __obj.asInstanceOf[AutocompleteSearchResultHtml]

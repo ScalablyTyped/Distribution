@@ -141,10 +141,10 @@ object CheckBoxProps {
     fontFamily: java.lang.String = null,
     iconRight: js.UndefOr[scala.Boolean] = js.undefined,
     iconType: IconType = null,
-    onIconPress: js.Function0[scala.Unit] = null,
-    onLongIconPress: js.Function0[scala.Unit] = null,
-    onLongPress: js.Function0[scala.Unit] = null,
-    onPress: js.Function0[scala.Unit] = null,
+    onIconPress: () => scala.Unit = null,
+    onLongIconPress: () => scala.Unit = null,
+    onLongPress: () => scala.Unit = null,
+    onPress: () => scala.Unit = null,
     right: js.UndefOr[scala.Boolean] = js.undefined,
     size: scala.Int | scala.Double = null,
     textStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
@@ -166,10 +166,10 @@ object CheckBoxProps {
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
     if (!js.isUndefined(iconRight)) __obj.updateDynamic("iconRight")(iconRight)
     if (iconType != null) __obj.updateDynamic("iconType")(iconType.asInstanceOf[js.Any])
-    if (onIconPress != null) __obj.updateDynamic("onIconPress")(onIconPress)
-    if (onLongIconPress != null) __obj.updateDynamic("onLongIconPress")(onLongIconPress)
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (onIconPress != null) __obj.updateDynamic("onIconPress")(js.Any.fromFunction0(onIconPress))
+    if (onLongIconPress != null) __obj.updateDynamic("onLongIconPress")(js.Any.fromFunction0(onLongIconPress))
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction0(onLongPress))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (!js.isUndefined(right)) __obj.updateDynamic("right")(right)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])

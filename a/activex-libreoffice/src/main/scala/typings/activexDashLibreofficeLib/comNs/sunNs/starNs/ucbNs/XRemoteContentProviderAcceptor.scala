@@ -37,19 +37,13 @@ trait XRemoteContentProviderAcceptor
 object XRemoteContentProviderAcceptor {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addRemoteContentProvider: js.Function4[
-      java.lang.String, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XMultiServiceFactory, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      XRemoteContentProviderDoneListener, 
-      scala.Boolean
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeRemoteContentProvider: js.Function1[java.lang.String, scala.Boolean]
+    acquire: () => scala.Unit,
+    addRemoteContentProvider: (java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XMultiServiceFactory, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], XRemoteContentProviderDoneListener) => scala.Boolean,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeRemoteContentProvider: java.lang.String => scala.Boolean
   ): XRemoteContentProviderAcceptor = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addRemoteContentProvider = addRemoteContentProvider, queryInterface = queryInterface, release = release, removeRemoteContentProvider = removeRemoteContentProvider)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addRemoteContentProvider = js.Any.fromFunction4(addRemoteContentProvider), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeRemoteContentProvider = js.Any.fromFunction1(removeRemoteContentProvider))
   
     __obj.asInstanceOf[XRemoteContentProviderAcceptor]
   }

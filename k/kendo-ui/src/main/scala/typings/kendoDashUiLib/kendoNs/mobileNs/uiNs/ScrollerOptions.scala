@@ -25,11 +25,11 @@ object ScrollerOptions {
     elastic: js.UndefOr[scala.Boolean] = js.undefined,
     messages: ScrollerMessages = null,
     name: java.lang.String = null,
-    pull: js.Function1[/* e */ ScrollerEvent, scala.Unit] = null,
+    pull: /* e */ ScrollerEvent => scala.Unit = null,
     pullOffset: scala.Int | scala.Double = null,
     pullToRefresh: js.UndefOr[scala.Boolean] = js.undefined,
-    resize: js.Function1[/* e */ ScrollerEvent, scala.Unit] = null,
-    scroll: js.Function1[/* e */ ScrollerScrollEvent, scala.Unit] = null,
+    resize: /* e */ ScrollerEvent => scala.Unit = null,
+    scroll: /* e */ ScrollerScrollEvent => scala.Unit = null,
     useNative: js.UndefOr[scala.Boolean] = js.undefined,
     visibleScrollHints: js.UndefOr[scala.Boolean] = js.undefined,
     zoom: js.UndefOr[scala.Boolean] = js.undefined
@@ -38,11 +38,11 @@ object ScrollerOptions {
     if (!js.isUndefined(elastic)) __obj.updateDynamic("elastic")(elastic)
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (pull != null) __obj.updateDynamic("pull")(pull)
+    if (pull != null) __obj.updateDynamic("pull")(js.Any.fromFunction1(pull))
     if (pullOffset != null) __obj.updateDynamic("pullOffset")(pullOffset.asInstanceOf[js.Any])
     if (!js.isUndefined(pullToRefresh)) __obj.updateDynamic("pullToRefresh")(pullToRefresh)
-    if (resize != null) __obj.updateDynamic("resize")(resize)
-    if (scroll != null) __obj.updateDynamic("scroll")(scroll)
+    if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction1(resize))
+    if (scroll != null) __obj.updateDynamic("scroll")(js.Any.fromFunction1(scroll))
     if (!js.isUndefined(useNative)) __obj.updateDynamic("useNative")(useNative)
     if (!js.isUndefined(visibleScrollHints)) __obj.updateDynamic("visibleScrollHints")(visibleScrollHints)
     if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom)

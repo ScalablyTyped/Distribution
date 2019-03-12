@@ -12,7 +12,7 @@ object ^ extends js.Object {
   var Keyboard: phonegapLib.Keyboard = js.native
   var LocalFileSystem: phonegapLib.LocalFileSystem = js.native
   var StatusBar: phonegapLib.StatusBar = js.native
-  var device: phonegapLib.Device = js.native
-  var phoneGapNavigator: phonegapLib.Navigator = js.native
+  var device: Device = js.native
+  var phoneGapNavigator: Navigator = js.native
 }
 

@@ -18,16 +18,10 @@ trait Anon_AddMembersArrayAnErrorString extends js.Object {
 object Anon_AddMembersArrayAnErrorString {
   @scala.inline
   def apply(
-    failure: js.Function4[
-      kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup, 
-      java.lang.String, 
-      js.Array[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser], 
-      js.Array[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser], 
-      js.Any
-    ],
-    success: js.Function1[kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup, js.Any]
+    failure: (kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup, java.lang.String, js.Array[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser], js.Array[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser]) => js.Any,
+    success: kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup => js.Any
   ): Anon_AddMembersArrayAnErrorString = {
-    val __obj = js.Dynamic.literal(failure = failure, success = success)
+    val __obj = js.Dynamic.literal(failure = js.Any.fromFunction4(failure), success = js.Any.fromFunction1(success))
   
     __obj.asInstanceOf[Anon_AddMembersArrayAnErrorString]
   }

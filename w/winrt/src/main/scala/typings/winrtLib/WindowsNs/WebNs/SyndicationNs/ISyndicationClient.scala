@@ -21,15 +21,12 @@ object ISyndicationClient {
     bypassCacheOnRetrieve: scala.Boolean,
     maxResponseBufferSize: scala.Double,
     proxyCredential: winrtLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential,
-    retrieveFeedAsync: js.Function1[
-      winrtLib.WindowsNs.FoundationNs.Uri, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[SyndicationFeed, RetrievalProgress]
-    ],
+    retrieveFeedAsync: winrtLib.WindowsNs.FoundationNs.Uri => winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[SyndicationFeed, RetrievalProgress],
     serverCredential: winrtLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential,
-    setRequestHeader: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    setRequestHeader: (java.lang.String, java.lang.String) => scala.Unit,
     timeout: scala.Double
   ): ISyndicationClient = {
-    val __obj = js.Dynamic.literal(bypassCacheOnRetrieve = bypassCacheOnRetrieve, maxResponseBufferSize = maxResponseBufferSize, proxyCredential = proxyCredential, retrieveFeedAsync = retrieveFeedAsync, serverCredential = serverCredential, setRequestHeader = setRequestHeader, timeout = timeout)
+    val __obj = js.Dynamic.literal(bypassCacheOnRetrieve = bypassCacheOnRetrieve, maxResponseBufferSize = maxResponseBufferSize, proxyCredential = proxyCredential, retrieveFeedAsync = js.Any.fromFunction1(retrieveFeedAsync), serverCredential = serverCredential, setRequestHeader = js.Any.fromFunction2(setRequestHeader), timeout = timeout)
   
     __obj.asInstanceOf[ISyndicationClient]
   }

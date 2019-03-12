@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Theming[C /* <: java.lang.String */] extends js.Object {
-  var ThemeProvider: ThemeProvider = js.native
+  var ThemeProvider: themingLib.themingMod.ThemeProvider = js.native
   var channel: C = js.native
   var themeListener: ThemeListener[C] = js.native
   @JSName("withTheme")

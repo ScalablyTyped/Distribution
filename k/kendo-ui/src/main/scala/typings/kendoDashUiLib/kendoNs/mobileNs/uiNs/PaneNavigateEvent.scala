@@ -12,12 +12,12 @@ trait PaneNavigateEvent extends PaneEvent {
 object PaneNavigateEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Pane,
     url: kendoDashUiLib.JQuery = null
   ): PaneNavigateEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (url != null) __obj.updateDynamic("url")(url)
     __obj.asInstanceOf[PaneNavigateEvent]
   }

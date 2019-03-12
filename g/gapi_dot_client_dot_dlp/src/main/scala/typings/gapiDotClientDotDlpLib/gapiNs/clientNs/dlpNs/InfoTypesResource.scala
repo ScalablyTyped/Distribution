@@ -13,12 +13,9 @@ trait InfoTypesResource extends js.Object {
 object InfoTypesResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotDlpLib.Anon_AccesstokenAltBearertokenCallback, 
-      gapiDotClientLib.gapiNs.clientNs.Request[GooglePrivacyDlpV2beta1ListInfoTypesResponse]
-    ]
+    list: gapiDotClientDotDlpLib.Anon_AccesstokenAltBearertokenCallback => gapiDotClientLib.gapiNs.clientNs.Request[GooglePrivacyDlpV2beta1ListInfoTypesResponse]
   ): InfoTypesResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[InfoTypesResource]
   }

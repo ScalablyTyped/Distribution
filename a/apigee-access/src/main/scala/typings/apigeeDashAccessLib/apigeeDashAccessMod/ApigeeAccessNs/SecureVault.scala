@@ -13,14 +13,10 @@ trait SecureVault extends js.Object {
 object SecureVault {
   @scala.inline
   def apply(
-    get: js.Function2[
-      java.lang.String, 
-      js.Function2[/* err */ js.Any, /* data */ js.Any, scala.Unit], 
-      scala.Unit
-    ],
-    getKeys: js.Function1[js.Function2[/* err */ js.Any, /* data */ js.Any, scala.Unit], scala.Unit]
+    get: (java.lang.String, js.Function2[/* err */ js.Any, /* data */ js.Any, scala.Unit]) => scala.Unit,
+    getKeys: js.Function2[/* err */ js.Any, /* data */ js.Any, scala.Unit] => scala.Unit
   ): SecureVault = {
-    val __obj = js.Dynamic.literal(get = get, getKeys = getKeys)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), getKeys = js.Any.fromFunction1(getKeys))
   
     __obj.asInstanceOf[SecureVault]
   }

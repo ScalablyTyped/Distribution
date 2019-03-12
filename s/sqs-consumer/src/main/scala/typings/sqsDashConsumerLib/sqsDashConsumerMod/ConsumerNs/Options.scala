@@ -22,7 +22,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    handleMessage: js.Function2[awsDashSdkLib.clientsSqsMod.SQSNs.Message, ConsumerDone, js.Any],
+    handleMessage: (awsDashSdkLib.clientsSqsMod.SQSNs.Message, ConsumerDone) => js.Any,
     queueUrl: java.lang.String,
     attributeNames: js.Array[java.lang.String] = null,
     authenticationErrorTimeout: scala.Int | scala.Double = null,
@@ -34,7 +34,7 @@ object Options {
     visibilityTimeout: scala.Int | scala.Double = null,
     waitTimeSeconds: scala.Int | scala.Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal(handleMessage = handleMessage, queueUrl = queueUrl)
+    val __obj = js.Dynamic.literal(handleMessage = js.Any.fromFunction2(handleMessage), queueUrl = queueUrl)
     if (attributeNames != null) __obj.updateDynamic("attributeNames")(attributeNames)
     if (authenticationErrorTimeout != null) __obj.updateDynamic("authenticationErrorTimeout")(authenticationErrorTimeout.asInstanceOf[js.Any])
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])

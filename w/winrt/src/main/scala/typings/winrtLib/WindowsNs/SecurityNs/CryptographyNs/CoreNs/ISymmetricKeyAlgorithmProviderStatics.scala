@@ -11,8 +11,8 @@ trait ISymmetricKeyAlgorithmProviderStatics extends js.Object {
 
 object ISymmetricKeyAlgorithmProviderStatics {
   @scala.inline
-  def apply(openAlgorithm: js.Function1[java.lang.String, SymmetricKeyAlgorithmProvider]): ISymmetricKeyAlgorithmProviderStatics = {
-    val __obj = js.Dynamic.literal(openAlgorithm = openAlgorithm)
+  def apply(openAlgorithm: java.lang.String => SymmetricKeyAlgorithmProvider): ISymmetricKeyAlgorithmProviderStatics = {
+    val __obj = js.Dynamic.literal(openAlgorithm = js.Any.fromFunction1(openAlgorithm))
   
     __obj.asInstanceOf[ISymmetricKeyAlgorithmProviderStatics]
   }

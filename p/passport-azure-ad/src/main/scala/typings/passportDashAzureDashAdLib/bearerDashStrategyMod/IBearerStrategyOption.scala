@@ -9,7 +9,7 @@ trait IBearerStrategyOption
   extends passportDashAzureDashAdLib.commonMod.IBaseStrategyOption {
   var allowMultiAudiencesInToken: js.UndefOr[scala.Boolean] = js.undefined
   var audience: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
-  var policyName: js.UndefOr[nodeLib.String] = js.undefined
+  var policyName: js.UndefOr[java.lang.String] = js.undefined
   var scope: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
@@ -25,7 +25,7 @@ object IBearerStrategyOption {
     issuer: java.lang.String | js.Array[java.lang.String] = null,
     loggingLevel: passportDashAzureDashAdLib.passportDashAzureDashAdLibStrings.info | passportDashAzureDashAdLib.passportDashAzureDashAdLibStrings.warn | passportDashAzureDashAdLib.passportDashAzureDashAdLibStrings.error = null,
     loggingNoPII: js.UndefOr[scala.Boolean] = js.undefined,
-    policyName: nodeLib.String = null,
+    policyName: java.lang.String = null,
     scope: js.Array[java.lang.String] = null,
     validateIssuer: js.UndefOr[scala.Boolean] = js.undefined
   ): IBearerStrategyOption = {

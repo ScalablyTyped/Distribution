@@ -15,12 +15,12 @@ trait TableDefinition extends js.Object {
 object TableDefinition {
   @scala.inline
   def apply(
-    hashes: js.Function0[js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]]],
-    raw: js.Function0[js.Array[js.Array[java.lang.String]]],
-    rows: js.Function0[js.Array[js.Array[java.lang.String]]],
-    rowsHash: js.Function0[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
+    hashes: () => js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]],
+    raw: () => js.Array[js.Array[java.lang.String]],
+    rows: () => js.Array[js.Array[java.lang.String]],
+    rowsHash: () => org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): TableDefinition = {
-    val __obj = js.Dynamic.literal(hashes = hashes, raw = raw, rows = rows, rowsHash = rowsHash)
+    val __obj = js.Dynamic.literal(hashes = js.Any.fromFunction0(hashes), raw = js.Any.fromFunction0(raw), rows = js.Any.fromFunction0(rows), rowsHash = js.Any.fromFunction0(rowsHash))
   
     __obj.asInstanceOf[TableDefinition]
   }

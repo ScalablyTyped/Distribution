@@ -21,18 +21,10 @@ object Anon_CurrentMonth {
   @scala.inline
   def apply(
     month: reactDashDatesLib.reactDashDatesMod.momentPropTypesNs.momentObj,
-    onMonthSelect: js.Function2[
-      reactDashDatesLib.reactDashDatesMod.momentPropTypesNs.momentObj, 
-      java.lang.String, 
-      scala.Unit
-    ],
-    onYearSelect: js.Function2[
-      reactDashDatesLib.reactDashDatesMod.momentPropTypesNs.momentObj, 
-      java.lang.String, 
-      scala.Unit
-    ]
+    onMonthSelect: (reactDashDatesLib.reactDashDatesMod.momentPropTypesNs.momentObj, java.lang.String) => scala.Unit,
+    onYearSelect: (reactDashDatesLib.reactDashDatesMod.momentPropTypesNs.momentObj, java.lang.String) => scala.Unit
   ): Anon_CurrentMonth = {
-    val __obj = js.Dynamic.literal(month = month, onMonthSelect = onMonthSelect, onYearSelect = onYearSelect)
+    val __obj = js.Dynamic.literal(month = month, onMonthSelect = js.Any.fromFunction2(onMonthSelect), onYearSelect = js.Any.fromFunction2(onYearSelect))
   
     __obj.asInstanceOf[Anon_CurrentMonth]
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because var conflicts: className. Inlined  */ trait ITagProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLSpanElement]
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLSpanElement]
      with atBlueprintjsCoreLib.libEsmCommonPropsMod.IIntentProps {
   /**
     * Whether the tag should appear in an active state.
@@ -57,7 +57,7 @@ import scala.scalajs.js.annotation._
   @JSName("onClick")
   var onClick_ITagProps: js.UndefOr[
     js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -67,7 +67,7 @@ import scala.scalajs.js.annotation._
     */
   var onRemove: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
       /* tagProps */ ITagProps, 
       scala.Unit
     ]
@@ -86,7 +86,7 @@ import scala.scalajs.js.annotation._
 object ITagProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLSpanElement] = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLSpanElement] = null,
     IIntentProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.IIntentProps = null,
     IProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps = null,
     active: js.UndefOr[scala.Boolean] = js.undefined,
@@ -96,15 +96,8 @@ object ITagProps {
     large: js.UndefOr[scala.Boolean] = js.undefined,
     minimal: js.UndefOr[scala.Boolean] = js.undefined,
     multiline: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] = null,
-    onRemove: js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
-      /* tagProps */ ITagProps, 
-      scala.Unit
-    ] = null,
+    onClick: /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onRemove: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLButtonElement, reactLib.NativeMouseEvent], /* tagProps */ ITagProps) => scala.Unit = null,
     rightIcon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
     round: js.UndefOr[scala.Boolean] = js.undefined
   ): ITagProps = {
@@ -119,8 +112,8 @@ object ITagProps {
     if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
     if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal)
     if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction2(onRemove))
     if (rightIcon != null) __obj.updateDynamic("rightIcon")(rightIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(round)) __obj.updateDynamic("round")(round)
     __obj.asInstanceOf[ITagProps]

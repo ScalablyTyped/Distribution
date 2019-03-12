@@ -15,12 +15,12 @@ trait IEnum extends js.Object {
 object IEnum {
   @scala.inline
   def apply(
-    contains: js.Function1[js.Any, scala.Boolean],
-    fromName: js.Function1[java.lang.String, EnumSymbol],
-    getNames: js.Function0[js.Array[java.lang.String]],
-    getSymbols: js.Function0[js.Array[EnumSymbol]]
+    contains: js.Any => scala.Boolean,
+    fromName: java.lang.String => EnumSymbol,
+    getNames: () => js.Array[java.lang.String],
+    getSymbols: () => js.Array[EnumSymbol]
   ): IEnum = {
-    val __obj = js.Dynamic.literal(contains = contains, fromName = fromName, getNames = getNames, getSymbols = getSymbols)
+    val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), fromName = js.Any.fromFunction1(fromName), getNames = js.Any.fromFunction0(getNames), getSymbols = js.Any.fromFunction0(getSymbols))
   
     __obj.asInstanceOf[IEnum]
   }

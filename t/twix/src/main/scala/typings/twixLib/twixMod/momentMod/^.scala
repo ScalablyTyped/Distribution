@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val twixClass: twixLib.twixMod.TwixStatic = js.native
-  def twix(start: twixLib.twixMod.momentMod.Moment, end: twixLib.twixMod.momentMod.Moment): twixLib.twixMod.Twix = js.native
+  def twix(start: Moment, end: Moment): twixLib.twixMod.Twix = js.native
 }
 

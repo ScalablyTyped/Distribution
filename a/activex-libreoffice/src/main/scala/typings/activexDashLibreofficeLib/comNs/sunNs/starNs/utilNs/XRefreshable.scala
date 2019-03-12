@@ -19,14 +19,14 @@ trait XRefreshable
 object XRefreshable {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addRefreshListener: js.Function1[XRefreshListener, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    refresh: js.Function0[scala.Unit],
-    release: js.Function0[scala.Unit],
-    removeRefreshListener: js.Function1[XRefreshListener, scala.Unit]
+    acquire: () => scala.Unit,
+    addRefreshListener: XRefreshListener => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    refresh: () => scala.Unit,
+    release: () => scala.Unit,
+    removeRefreshListener: XRefreshListener => scala.Unit
   ): XRefreshable = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addRefreshListener = addRefreshListener, queryInterface = queryInterface, refresh = refresh, release = release, removeRefreshListener = removeRefreshListener)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addRefreshListener = js.Any.fromFunction1(addRefreshListener), queryInterface = js.Any.fromFunction1(queryInterface), refresh = js.Any.fromFunction0(refresh), release = js.Any.fromFunction0(release), removeRefreshListener = js.Any.fromFunction1(removeRefreshListener))
   
     __obj.asInstanceOf[XRefreshable]
   }

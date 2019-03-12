@@ -17,15 +17,9 @@ trait OnGroupClickListener extends js.Object {
 object OnGroupClickListener {
   @scala.inline
   def apply(
-    onGroupClick: js.Function4[
-      androiduixLib.androidNs.widgetNs.ExpandableListView, 
-      androiduixLib.androidNs.viewNs.View, 
-      scala.Double, 
-      scala.Double, 
-      scala.Boolean
-    ]
+    onGroupClick: (androiduixLib.androidNs.widgetNs.ExpandableListView, androiduixLib.androidNs.viewNs.View, scala.Double, scala.Double) => scala.Boolean
   ): OnGroupClickListener = {
-    val __obj = js.Dynamic.literal(onGroupClick = onGroupClick)
+    val __obj = js.Dynamic.literal(onGroupClick = js.Any.fromFunction4(onGroupClick))
   
     __obj.asInstanceOf[OnGroupClickListener]
   }

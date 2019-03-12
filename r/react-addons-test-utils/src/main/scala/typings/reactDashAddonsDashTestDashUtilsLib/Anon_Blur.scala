@@ -81,19 +81,14 @@ trait Anon_Blur extends js.Object {
   var touchStart_Original: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.EventSimulator = js.native
   @JSName("wheel")
   var wheel_Original: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.EventSimulator = js.native
-  def blur(element: reactLib.Element): scala.Unit = js.native
-  def blur(
-    element: reactLib.Element,
-    eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
-  ): scala.Unit = js.native
   def blur(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
   def blur(
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def change(element: reactLib.Element): scala.Unit = js.native
-  def change(
-    element: reactLib.Element,
+  def blur(element: stdLib.Element): scala.Unit = js.native
+  def blur(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def change(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -101,9 +96,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def click(element: reactLib.Element): scala.Unit = js.native
-  def click(
-    element: reactLib.Element,
+  def change(element: stdLib.Element): scala.Unit = js.native
+  def change(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def click(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -111,9 +106,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def contextMenu(element: reactLib.Element): scala.Unit = js.native
-  def contextMenu(
-    element: reactLib.Element,
+  def click(element: stdLib.Element): scala.Unit = js.native
+  def click(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def contextMenu(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -121,9 +116,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def copy(element: reactLib.Element): scala.Unit = js.native
-  def copy(
-    element: reactLib.Element,
+  def contextMenu(element: stdLib.Element): scala.Unit = js.native
+  def contextMenu(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def copy(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -131,9 +126,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def cut(element: reactLib.Element): scala.Unit = js.native
-  def cut(
-    element: reactLib.Element,
+  def copy(element: stdLib.Element): scala.Unit = js.native
+  def copy(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def cut(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -141,9 +136,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def doubleClick(element: reactLib.Element): scala.Unit = js.native
-  def doubleClick(
-    element: reactLib.Element,
+  def cut(element: stdLib.Element): scala.Unit = js.native
+  def cut(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def doubleClick(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -151,9 +146,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def drag(element: reactLib.Element): scala.Unit = js.native
-  def drag(
-    element: reactLib.Element,
+  def doubleClick(element: stdLib.Element): scala.Unit = js.native
+  def doubleClick(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def drag(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -161,9 +156,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def dragEnd(element: reactLib.Element): scala.Unit = js.native
-  def dragEnd(
-    element: reactLib.Element,
+  def drag(element: stdLib.Element): scala.Unit = js.native
+  def drag(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def dragEnd(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -171,9 +166,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def dragEnter(element: reactLib.Element): scala.Unit = js.native
-  def dragEnter(
-    element: reactLib.Element,
+  def dragEnd(element: stdLib.Element): scala.Unit = js.native
+  def dragEnd(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def dragEnter(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -181,9 +176,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def dragExit(element: reactLib.Element): scala.Unit = js.native
-  def dragExit(
-    element: reactLib.Element,
+  def dragEnter(element: stdLib.Element): scala.Unit = js.native
+  def dragEnter(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def dragExit(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -191,9 +186,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def dragLeave(element: reactLib.Element): scala.Unit = js.native
-  def dragLeave(
-    element: reactLib.Element,
+  def dragExit(element: stdLib.Element): scala.Unit = js.native
+  def dragExit(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def dragLeave(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -201,9 +196,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def dragOver(element: reactLib.Element): scala.Unit = js.native
-  def dragOver(
-    element: reactLib.Element,
+  def dragLeave(element: stdLib.Element): scala.Unit = js.native
+  def dragLeave(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def dragOver(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -211,9 +206,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def dragStart(element: reactLib.Element): scala.Unit = js.native
-  def dragStart(
-    element: reactLib.Element,
+  def dragOver(element: stdLib.Element): scala.Unit = js.native
+  def dragOver(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def dragStart(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -221,9 +216,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def drop(element: reactLib.Element): scala.Unit = js.native
-  def drop(
-    element: reactLib.Element,
+  def dragStart(element: stdLib.Element): scala.Unit = js.native
+  def dragStart(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def drop(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -231,9 +226,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def error(element: reactLib.Element): scala.Unit = js.native
-  def error(
-    element: reactLib.Element,
+  def drop(element: stdLib.Element): scala.Unit = js.native
+  def drop(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def error(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -241,9 +236,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def focus(element: reactLib.Element): scala.Unit = js.native
-  def focus(
-    element: reactLib.Element,
+  def error(element: stdLib.Element): scala.Unit = js.native
+  def error(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def focus(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -251,9 +246,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def input(element: reactLib.Element): scala.Unit = js.native
-  def input(
-    element: reactLib.Element,
+  def focus(element: stdLib.Element): scala.Unit = js.native
+  def focus(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def input(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -261,9 +256,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def keyDown(element: reactLib.Element): scala.Unit = js.native
-  def keyDown(
-    element: reactLib.Element,
+  def input(element: stdLib.Element): scala.Unit = js.native
+  def input(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def keyDown(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -271,9 +266,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def keyPress(element: reactLib.Element): scala.Unit = js.native
-  def keyPress(
-    element: reactLib.Element,
+  def keyDown(element: stdLib.Element): scala.Unit = js.native
+  def keyDown(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def keyPress(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -281,9 +276,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def keyUp(element: reactLib.Element): scala.Unit = js.native
-  def keyUp(
-    element: reactLib.Element,
+  def keyPress(element: stdLib.Element): scala.Unit = js.native
+  def keyPress(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def keyUp(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -291,9 +286,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def load(element: reactLib.Element): scala.Unit = js.native
-  def load(
-    element: reactLib.Element,
+  def keyUp(element: stdLib.Element): scala.Unit = js.native
+  def keyUp(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def load(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -301,9 +296,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def mouseDown(element: reactLib.Element): scala.Unit = js.native
-  def mouseDown(
-    element: reactLib.Element,
+  def load(element: stdLib.Element): scala.Unit = js.native
+  def load(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def mouseDown(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -311,9 +306,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def mouseEnter(element: reactLib.Element): scala.Unit = js.native
-  def mouseEnter(
-    element: reactLib.Element,
+  def mouseDown(element: stdLib.Element): scala.Unit = js.native
+  def mouseDown(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def mouseEnter(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -321,9 +316,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def mouseLeave(element: reactLib.Element): scala.Unit = js.native
-  def mouseLeave(
-    element: reactLib.Element,
+  def mouseEnter(element: stdLib.Element): scala.Unit = js.native
+  def mouseEnter(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def mouseLeave(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -331,9 +326,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def mouseMove(element: reactLib.Element): scala.Unit = js.native
-  def mouseMove(
-    element: reactLib.Element,
+  def mouseLeave(element: stdLib.Element): scala.Unit = js.native
+  def mouseLeave(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def mouseMove(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -341,9 +336,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def mouseOut(element: reactLib.Element): scala.Unit = js.native
-  def mouseOut(
-    element: reactLib.Element,
+  def mouseMove(element: stdLib.Element): scala.Unit = js.native
+  def mouseMove(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def mouseOut(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -351,9 +346,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def mouseOver(element: reactLib.Element): scala.Unit = js.native
-  def mouseOver(
-    element: reactLib.Element,
+  def mouseOut(element: stdLib.Element): scala.Unit = js.native
+  def mouseOut(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def mouseOver(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -361,9 +356,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def mouseUp(element: reactLib.Element): scala.Unit = js.native
-  def mouseUp(
-    element: reactLib.Element,
+  def mouseOver(element: stdLib.Element): scala.Unit = js.native
+  def mouseOver(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def mouseUp(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -371,9 +366,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def paste(element: reactLib.Element): scala.Unit = js.native
-  def paste(
-    element: reactLib.Element,
+  def mouseUp(element: stdLib.Element): scala.Unit = js.native
+  def mouseUp(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def paste(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -381,9 +376,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def scroll(element: reactLib.Element): scala.Unit = js.native
-  def scroll(
-    element: reactLib.Element,
+  def paste(element: stdLib.Element): scala.Unit = js.native
+  def paste(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def scroll(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -391,9 +386,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def submit(element: reactLib.Element): scala.Unit = js.native
-  def submit(
-    element: reactLib.Element,
+  def scroll(element: stdLib.Element): scala.Unit = js.native
+  def scroll(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def submit(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -401,9 +396,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def touchCancel(element: reactLib.Element): scala.Unit = js.native
-  def touchCancel(
-    element: reactLib.Element,
+  def submit(element: stdLib.Element): scala.Unit = js.native
+  def submit(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def touchCancel(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -411,9 +406,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def touchEnd(element: reactLib.Element): scala.Unit = js.native
-  def touchEnd(
-    element: reactLib.Element,
+  def touchCancel(element: stdLib.Element): scala.Unit = js.native
+  def touchCancel(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def touchEnd(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -421,9 +416,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def touchMove(element: reactLib.Element): scala.Unit = js.native
-  def touchMove(
-    element: reactLib.Element,
+  def touchEnd(element: stdLib.Element): scala.Unit = js.native
+  def touchEnd(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def touchMove(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -431,9 +426,9 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def touchStart(element: reactLib.Element): scala.Unit = js.native
-  def touchStart(
-    element: reactLib.Element,
+  def touchMove(element: stdLib.Element): scala.Unit = js.native
+  def touchMove(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def touchStart(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
@@ -441,14 +436,19 @@ trait Anon_Blur extends js.Object {
     element: reactLib.reactMod.Component[_, js.Object, _],
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
-  def wheel(element: reactLib.Element): scala.Unit = js.native
-  def wheel(
-    element: reactLib.Element,
+  def touchStart(element: stdLib.Element): scala.Unit = js.native
+  def touchStart(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
   def wheel(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
   def wheel(
     element: reactLib.reactMod.Component[_, js.Object, _],
+    eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
+  ): scala.Unit = js.native
+  def wheel(element: stdLib.Element): scala.Unit = js.native
+  def wheel(
+    element: stdLib.Element,
     eventData: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.SyntheticEventData
   ): scala.Unit = js.native
 }

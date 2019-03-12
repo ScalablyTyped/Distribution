@@ -170,23 +170,18 @@ object JQueryAjaxSettings {
   def apply(
     accepts: js.Any = null,
     async: js.UndefOr[scala.Boolean] = js.undefined,
-    beforeSend: js.Function2[/* jqXHR */ JQueryXHR, JQueryAjaxSettings, _] = null,
+    beforeSend: (/* jqXHR */ JQueryXHR, JQueryAjaxSettings) => _ = null,
     cache: js.UndefOr[scala.Boolean] = js.undefined,
-    complete: js.Function2[/* jqXHR */ JQueryXHR, /* textStatus */ java.lang.String, _] = null,
+    complete: (/* jqXHR */ JQueryXHR, /* textStatus */ java.lang.String) => _ = null,
     contentType: js.Any = null,
     contents: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any = null,
     context: js.Any = null,
     converters: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any = null,
     crossDomain: js.UndefOr[scala.Boolean] = js.undefined,
     data: js.Any = null,
-    dataFilter: js.Function2[/* data */ js.Any, /* ty */ js.Any, _] = null,
+    dataFilter: (/* data */ js.Any, /* ty */ js.Any) => _ = null,
     dataType: java.lang.String = null,
-    error: js.Function3[
-      /* jqXHR */ JQueryXHR, 
-      /* textStatus */ java.lang.String, 
-      /* errorThrown */ java.lang.String, 
-      _
-    ] = null,
+    error: (/* jqXHR */ JQueryXHR, /* textStatus */ java.lang.String, /* errorThrown */ java.lang.String) => _ = null,
     global: js.UndefOr[scala.Boolean] = js.undefined,
     headers: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any = null,
     ifModified: js.UndefOr[scala.Boolean] = js.undefined,
@@ -199,7 +194,7 @@ object JQueryAjaxSettings {
     processData: js.UndefOr[scala.Boolean] = js.undefined,
     scriptCharset: java.lang.String = null,
     statusCode: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any = null,
-    success: js.Function3[/* data */ js.Any, /* textStatus */ java.lang.String, /* jqXHR */ JQueryXHR, _] = null,
+    success: (/* data */ js.Any, /* textStatus */ java.lang.String, /* jqXHR */ JQueryXHR) => _ = null,
     timeout: scala.Int | scala.Double = null,
     traditional: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: java.lang.String = null,
@@ -211,18 +206,18 @@ object JQueryAjaxSettings {
     val __obj = js.Dynamic.literal()
     if (accepts != null) __obj.updateDynamic("accepts")(accepts)
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)
+    if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction2(beforeSend))
     if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction2(complete))
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
     if (contents != null) __obj.updateDynamic("contents")(contents)
     if (context != null) __obj.updateDynamic("context")(context)
     if (converters != null) __obj.updateDynamic("converters")(converters)
     if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain)
     if (data != null) __obj.updateDynamic("data")(data)
-    if (dataFilter != null) __obj.updateDynamic("dataFilter")(dataFilter)
+    if (dataFilter != null) __obj.updateDynamic("dataFilter")(js.Any.fromFunction2(dataFilter))
     if (dataType != null) __obj.updateDynamic("dataType")(dataType)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction3(error))
     if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (!js.isUndefined(ifModified)) __obj.updateDynamic("ifModified")(ifModified)
@@ -235,7 +230,7 @@ object JQueryAjaxSettings {
     if (!js.isUndefined(processData)) __obj.updateDynamic("processData")(processData)
     if (scriptCharset != null) __obj.updateDynamic("scriptCharset")(scriptCharset)
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction3(success))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (!js.isUndefined(traditional)) __obj.updateDynamic("traditional")(traditional)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

@@ -14,9 +14,9 @@ object IAjaxFileStatic {
   @scala.inline
   def apply(
     DataType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ js.Any,
-    send: js.Function1[IOption, IAjaxFilePromise[js.Any]]
+    send: IOption => IAjaxFilePromise[js.Any]
   ): IAjaxFileStatic = {
-    val __obj = js.Dynamic.literal(DataType = DataType, send = send)
+    val __obj = js.Dynamic.literal(DataType = DataType, send = js.Any.fromFunction1(send))
   
     __obj.asInstanceOf[IAjaxFileStatic]
   }

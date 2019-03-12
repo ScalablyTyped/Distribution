@@ -23,18 +23,14 @@ object Options {
   def apply[C /* <: Context */, R](
     baseUrl: java.lang.String = null,
     context: C = null,
-    errorHandler: js.Function2[
-      /* error */ stdLib.Error with universalDashRouterLib.Anon_Status, 
-      /* context */ C with (RouteContext[C, R]), 
-      _
-    ] = null,
-    resolveRoute: js.Function2[/* context */ C with (RouteContext[C, R]), /* params */ Params, _] = null
+    errorHandler: (/* error */ stdLib.Error with universalDashRouterLib.Anon_Status, /* context */ C with (RouteContext[C, R])) => _ = null,
+    resolveRoute: (/* context */ C with (RouteContext[C, R]), /* params */ Params) => _ = null
   ): Options[C, R] = {
     val __obj = js.Dynamic.literal()
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (errorHandler != null) __obj.updateDynamic("errorHandler")(errorHandler)
-    if (resolveRoute != null) __obj.updateDynamic("resolveRoute")(resolveRoute)
+    if (errorHandler != null) __obj.updateDynamic("errorHandler")(js.Any.fromFunction2(errorHandler))
+    if (resolveRoute != null) __obj.updateDynamic("resolveRoute")(js.Any.fromFunction2(resolveRoute))
     __obj.asInstanceOf[Options[C, R]]
   }
 }

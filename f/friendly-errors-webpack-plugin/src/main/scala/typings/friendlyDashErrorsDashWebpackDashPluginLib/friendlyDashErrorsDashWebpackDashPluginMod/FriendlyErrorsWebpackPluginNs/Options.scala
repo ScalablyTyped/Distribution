@@ -26,14 +26,14 @@ object Options {
     additionalTransformers: js.Array[js.Function1[/* error */ _, _]] = null,
     clearConsole: js.UndefOr[scala.Boolean] = js.undefined,
     compilationSuccessInfo: friendlyDashErrorsDashWebpackDashPluginLib.Anon_Messages = null,
-    onErrors: js.Function2[/* severity */ Severity, /* errors */ java.lang.String, scala.Unit] = null
+    onErrors: (/* severity */ Severity, /* errors */ java.lang.String) => scala.Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (additionalFormatters != null) __obj.updateDynamic("additionalFormatters")(additionalFormatters)
     if (additionalTransformers != null) __obj.updateDynamic("additionalTransformers")(additionalTransformers)
     if (!js.isUndefined(clearConsole)) __obj.updateDynamic("clearConsole")(clearConsole)
     if (compilationSuccessInfo != null) __obj.updateDynamic("compilationSuccessInfo")(compilationSuccessInfo)
-    if (onErrors != null) __obj.updateDynamic("onErrors")(onErrors)
+    if (onErrors != null) __obj.updateDynamic("onErrors")(js.Any.fromFunction2(onErrors))
     __obj.asInstanceOf[Options]
   }
 }

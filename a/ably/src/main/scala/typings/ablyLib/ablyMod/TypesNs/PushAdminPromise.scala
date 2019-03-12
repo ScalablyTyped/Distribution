@@ -16,9 +16,9 @@ object PushAdminPromise {
   def apply(
     channelSubscriptions: PushChannelSubscriptionsPromise,
     deviceRegistrations: PushDeviceRegistrationsPromise,
-    publish: js.Function2[js.Any, js.Any, js.Promise[scala.Unit]]
+    publish: (js.Any, js.Any) => js.Promise[scala.Unit]
   ): PushAdminPromise = {
-    val __obj = js.Dynamic.literal(channelSubscriptions = channelSubscriptions, deviceRegistrations = deviceRegistrations, publish = publish)
+    val __obj = js.Dynamic.literal(channelSubscriptions = channelSubscriptions, deviceRegistrations = deviceRegistrations, publish = js.Any.fromFunction2(publish))
   
     __obj.asInstanceOf[PushAdminPromise]
   }

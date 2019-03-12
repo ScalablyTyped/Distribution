@@ -13,7 +13,7 @@ trait XListBox
   /** returns the number of items in the listbox. */
   val ItemCount: scala.Double
   /** returns all items of the list box. */
-  val Items: activexDashInteropLib.SafeArray[java.lang.String]
+  val Items: stdLib.SafeArray[java.lang.String]
   /**
     * returns the currently selected item. When multiple items are selected, the first one is returned. When nothing is selected, an empty string is
     * returned.
@@ -25,9 +25,9 @@ trait XListBox
     */
   val SelectedItemPos: scala.Double
   /** returns all currently selected items. */
-  val SelectedItems: activexDashInteropLib.SafeArray[java.lang.String]
+  val SelectedItems: stdLib.SafeArray[java.lang.String]
   /** returns the positions of all currently selected items. */
-  val SelectedItemsPos: activexDashInteropLib.SafeArray[scala.Double]
+  val SelectedItemsPos: stdLib.SafeArray[scala.Double]
   /** registers a listener for action events. */
   def addActionListener(l: XActionListener): scala.Unit
   /** adds an item at the specified position. */
@@ -43,7 +43,7 @@ trait XListBox
   /** returns the number of items in the listbox. */
   def getItemCount(): scala.Double
   /** returns all items of the list box. */
-  def getItems(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getItems(): stdLib.SafeArray[java.lang.String]
   /**
     * returns the currently selected item. When multiple items are selected, the first one is returned. When nothing is selected, an empty string is
     * returned.
@@ -55,9 +55,9 @@ trait XListBox
     */
   def getSelectedItemPos(): scala.Double
   /** returns all currently selected items. */
-  def getSelectedItems(): activexDashInteropLib.SafeArray[java.lang.String]
+  def getSelectedItems(): stdLib.SafeArray[java.lang.String]
   /** returns the positions of all currently selected items. */
-  def getSelectedItemsPos(): activexDashInteropLib.SafeArray[scala.Double]
+  def getSelectedItemsPos(): stdLib.SafeArray[scala.Double]
   /** returns `TRUE` if multiple items can be selected, `FALSE` if only one item can be selected. */
   def isMutipleMode(): scala.Boolean
   /** makes the item at the specified position visible by scrolling. */
@@ -85,46 +85,38 @@ object XListBox {
   def apply(
     DropDownLineCount: scala.Double,
     ItemCount: scala.Double,
-    Items: activexDashInteropLib.SafeArray[java.lang.String],
+    Items: stdLib.SafeArray[java.lang.String],
     SelectedItem: java.lang.String,
     SelectedItemPos: scala.Double,
-    SelectedItems: activexDashInteropLib.SafeArray[java.lang.String],
-    SelectedItemsPos: activexDashInteropLib.SafeArray[scala.Double],
-    acquire: js.Function0[scala.Unit],
-    addActionListener: js.Function1[XActionListener, scala.Unit],
-    addItem: js.Function2[java.lang.String, scala.Double, scala.Unit],
-    addItemListener: js.Function1[XItemListener, scala.Unit],
-    addItems: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
-      scala.Double, 
-      scala.Unit
-    ],
-    getDropDownLineCount: js.Function0[scala.Double],
-    getItem: js.Function1[scala.Double, java.lang.String],
-    getItemCount: js.Function0[scala.Double],
-    getItems: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getSelectedItem: js.Function0[java.lang.String],
-    getSelectedItemPos: js.Function0[scala.Double],
-    getSelectedItems: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
-    getSelectedItemsPos: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    isMutipleMode: js.Function0[scala.Boolean],
-    makeVisible: js.Function1[scala.Double, scala.Unit],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeActionListener: js.Function1[XActionListener, scala.Unit],
-    removeItemListener: js.Function1[XItemListener, scala.Unit],
-    removeItems: js.Function2[scala.Double, scala.Double, scala.Unit],
-    selectItem: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
-    selectItemPos: js.Function2[scala.Double, scala.Boolean, scala.Unit],
-    selectItemsPos: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
-      scala.Boolean, 
-      scala.Unit
-    ],
-    setDropDownLineCount: js.Function1[scala.Double, scala.Unit],
-    setMultipleMode: js.Function1[scala.Boolean, scala.Unit]
+    SelectedItems: stdLib.SafeArray[java.lang.String],
+    SelectedItemsPos: stdLib.SafeArray[scala.Double],
+    acquire: () => scala.Unit,
+    addActionListener: XActionListener => scala.Unit,
+    addItem: (java.lang.String, scala.Double) => scala.Unit,
+    addItemListener: XItemListener => scala.Unit,
+    addItems: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Double) => scala.Unit,
+    getDropDownLineCount: () => scala.Double,
+    getItem: scala.Double => java.lang.String,
+    getItemCount: () => scala.Double,
+    getItems: () => stdLib.SafeArray[java.lang.String],
+    getSelectedItem: () => java.lang.String,
+    getSelectedItemPos: () => scala.Double,
+    getSelectedItems: () => stdLib.SafeArray[java.lang.String],
+    getSelectedItemsPos: () => stdLib.SafeArray[scala.Double],
+    isMutipleMode: () => scala.Boolean,
+    makeVisible: scala.Double => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeActionListener: XActionListener => scala.Unit,
+    removeItemListener: XItemListener => scala.Unit,
+    removeItems: (scala.Double, scala.Double) => scala.Unit,
+    selectItem: (java.lang.String, scala.Boolean) => scala.Unit,
+    selectItemPos: (scala.Double, scala.Boolean) => scala.Unit,
+    selectItemsPos: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Boolean) => scala.Unit,
+    setDropDownLineCount: scala.Double => scala.Unit,
+    setMultipleMode: scala.Boolean => scala.Unit
   ): XListBox = {
-    val __obj = js.Dynamic.literal(DropDownLineCount = DropDownLineCount, ItemCount = ItemCount, Items = Items, SelectedItem = SelectedItem, SelectedItemPos = SelectedItemPos, SelectedItems = SelectedItems, SelectedItemsPos = SelectedItemsPos, acquire = acquire, addActionListener = addActionListener, addItem = addItem, addItemListener = addItemListener, addItems = addItems, getDropDownLineCount = getDropDownLineCount, getItem = getItem, getItemCount = getItemCount, getItems = getItems, getSelectedItem = getSelectedItem, getSelectedItemPos = getSelectedItemPos, getSelectedItems = getSelectedItems, getSelectedItemsPos = getSelectedItemsPos, isMutipleMode = isMutipleMode, makeVisible = makeVisible, queryInterface = queryInterface, release = release, removeActionListener = removeActionListener, removeItemListener = removeItemListener, removeItems = removeItems, selectItem = selectItem, selectItemPos = selectItemPos, selectItemsPos = selectItemsPos, setDropDownLineCount = setDropDownLineCount, setMultipleMode = setMultipleMode)
+    val __obj = js.Dynamic.literal(DropDownLineCount = DropDownLineCount, ItemCount = ItemCount, Items = Items, SelectedItem = SelectedItem, SelectedItemPos = SelectedItemPos, SelectedItems = SelectedItems, SelectedItemsPos = SelectedItemsPos, acquire = js.Any.fromFunction0(acquire), addActionListener = js.Any.fromFunction1(addActionListener), addItem = js.Any.fromFunction2(addItem), addItemListener = js.Any.fromFunction1(addItemListener), addItems = js.Any.fromFunction2(addItems), getDropDownLineCount = js.Any.fromFunction0(getDropDownLineCount), getItem = js.Any.fromFunction1(getItem), getItemCount = js.Any.fromFunction0(getItemCount), getItems = js.Any.fromFunction0(getItems), getSelectedItem = js.Any.fromFunction0(getSelectedItem), getSelectedItemPos = js.Any.fromFunction0(getSelectedItemPos), getSelectedItems = js.Any.fromFunction0(getSelectedItems), getSelectedItemsPos = js.Any.fromFunction0(getSelectedItemsPos), isMutipleMode = js.Any.fromFunction0(isMutipleMode), makeVisible = js.Any.fromFunction1(makeVisible), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeActionListener = js.Any.fromFunction1(removeActionListener), removeItemListener = js.Any.fromFunction1(removeItemListener), removeItems = js.Any.fromFunction2(removeItems), selectItem = js.Any.fromFunction2(selectItem), selectItemPos = js.Any.fromFunction2(selectItemPos), selectItemsPos = js.Any.fromFunction2(selectItemsPos), setDropDownLineCount = js.Any.fromFunction1(setDropDownLineCount), setMultipleMode = js.Any.fromFunction1(setMultipleMode))
   
     __obj.asInstanceOf[XListBox]
   }

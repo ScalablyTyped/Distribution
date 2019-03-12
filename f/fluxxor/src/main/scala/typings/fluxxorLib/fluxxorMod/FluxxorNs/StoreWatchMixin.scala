@@ -11,8 +11,8 @@ trait StoreWatchMixin[StoreState] extends js.Object {
 
 object StoreWatchMixin {
   @scala.inline
-  def apply[StoreState](getStateFromFlux: js.Function0[StoreState]): StoreWatchMixin[StoreState] = {
-    val __obj = js.Dynamic.literal(getStateFromFlux = getStateFromFlux)
+  def apply[StoreState](getStateFromFlux: () => StoreState): StoreWatchMixin[StoreState] = {
+    val __obj = js.Dynamic.literal(getStateFromFlux = js.Any.fromFunction0(getStateFromFlux))
   
     __obj.asInstanceOf[StoreWatchMixin[StoreState]]
   }

@@ -17,18 +17,14 @@ trait SceneRendererProps[T /* <: RouteBase */] extends js.Object {
 object SceneRendererProps {
   @scala.inline
   def apply[T /* <: RouteBase */](
-    getLastPosition: js.Function0[scala.Double],
-    jumpTo: js.Function1[java.lang.String, scala.Unit],
+    getLastPosition: () => scala.Double,
+    jumpTo: java.lang.String => scala.Unit,
     layout: Layout with reactDashNativeDashTabDashViewLib.Anon_Measured,
     navigationState: NavigationState[T],
     position: reactDashNativeLib.reactDashNativeMod.AnimatedNs.Value,
-    subscribe: js.Function2[
-      SubscriptionName, 
-      js.Function0[scala.Unit], 
-      reactDashNativeDashTabDashViewLib.Anon_Remove
-    ]
+    subscribe: (SubscriptionName, js.Function0[scala.Unit]) => reactDashNativeDashTabDashViewLib.Anon_Remove
   ): SceneRendererProps[T] = {
-    val __obj = js.Dynamic.literal(getLastPosition = getLastPosition, jumpTo = jumpTo, layout = layout, navigationState = navigationState, position = position, subscribe = subscribe)
+    val __obj = js.Dynamic.literal(getLastPosition = js.Any.fromFunction0(getLastPosition), jumpTo = js.Any.fromFunction1(jumpTo), layout = layout, navigationState = navigationState, position = position, subscribe = js.Any.fromFunction2(subscribe))
   
     __obj.asInstanceOf[SceneRendererProps[T]]
   }

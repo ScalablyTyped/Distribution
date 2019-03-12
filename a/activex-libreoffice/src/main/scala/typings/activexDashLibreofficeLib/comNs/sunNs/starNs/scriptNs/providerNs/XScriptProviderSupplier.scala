@@ -24,12 +24,12 @@ object XScriptProviderSupplier {
   @scala.inline
   def apply(
     ScriptProvider: XScriptProvider,
-    acquire: js.Function0[scala.Unit],
-    getScriptProvider: js.Function0[XScriptProvider],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getScriptProvider: () => XScriptProvider,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XScriptProviderSupplier = {
-    val __obj = js.Dynamic.literal(ScriptProvider = ScriptProvider, acquire = acquire, getScriptProvider = getScriptProvider, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(ScriptProvider = ScriptProvider, acquire = js.Any.fromFunction0(acquire), getScriptProvider = js.Any.fromFunction0(getScriptProvider), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XScriptProviderSupplier]
   }

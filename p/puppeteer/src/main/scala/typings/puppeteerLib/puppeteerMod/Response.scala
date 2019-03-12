@@ -40,21 +40,21 @@ trait Response extends js.Object {
 object Response {
   @scala.inline
   def apply(
-    buffer: js.Function0[js.Promise[nodeLib.Buffer]],
-    frame: js.Function0[Frame | scala.Null],
-    fromCache: js.Function0[scala.Boolean],
-    fromServiceWorker: js.Function0[scala.Boolean],
-    headers: js.Function0[Headers],
-    json: js.Function0[js.Promise[_]],
-    ok: js.Function0[scala.Boolean],
-    remoteAddress: js.Function0[RemoteInfo],
-    request: js.Function0[Request],
-    status: js.Function0[scala.Double],
-    statusText: js.Function0[java.lang.String],
-    text: js.Function0[js.Promise[java.lang.String]],
-    url: js.Function0[java.lang.String]
+    buffer: () => js.Promise[nodeLib.Buffer],
+    frame: () => Frame | scala.Null,
+    fromCache: () => scala.Boolean,
+    fromServiceWorker: () => scala.Boolean,
+    headers: () => Headers,
+    json: () => js.Promise[_],
+    ok: () => scala.Boolean,
+    remoteAddress: () => RemoteInfo,
+    request: () => Request,
+    status: () => scala.Double,
+    statusText: () => java.lang.String,
+    text: () => js.Promise[java.lang.String],
+    url: () => java.lang.String
   ): Response = {
-    val __obj = js.Dynamic.literal(buffer = buffer, frame = frame, fromCache = fromCache, fromServiceWorker = fromServiceWorker, headers = headers, json = json, ok = ok, remoteAddress = remoteAddress, request = request, status = status, statusText = statusText, text = text, url = url)
+    val __obj = js.Dynamic.literal(buffer = js.Any.fromFunction0(buffer), frame = js.Any.fromFunction0(frame), fromCache = js.Any.fromFunction0(fromCache), fromServiceWorker = js.Any.fromFunction0(fromServiceWorker), headers = js.Any.fromFunction0(headers), json = js.Any.fromFunction0(json), ok = js.Any.fromFunction0(ok), remoteAddress = js.Any.fromFunction0(remoteAddress), request = js.Any.fromFunction0(request), status = js.Any.fromFunction0(status), statusText = js.Any.fromFunction0(statusText), text = js.Any.fromFunction0(text), url = js.Any.fromFunction0(url))
   
     __obj.asInstanceOf[Response]
   }

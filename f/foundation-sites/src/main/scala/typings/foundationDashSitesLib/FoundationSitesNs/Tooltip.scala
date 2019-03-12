@@ -16,12 +16,12 @@ trait Tooltip extends js.Object {
 object Tooltip {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
-    hide: js.Function0[scala.Unit],
-    show: js.Function0[scala.Unit],
-    toggle: js.Function0[scala.Unit]
+    destroy: () => scala.Unit,
+    hide: () => scala.Unit,
+    show: () => scala.Unit,
+    toggle: () => scala.Unit
   ): Tooltip = {
-    val __obj = js.Dynamic.literal(destroy = destroy, hide = hide, show = show, toggle = toggle)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
   
     __obj.asInstanceOf[Tooltip]
   }

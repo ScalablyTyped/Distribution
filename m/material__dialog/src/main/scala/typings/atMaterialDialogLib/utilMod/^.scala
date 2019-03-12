@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def createFocusTrapInstance(surfaceEl: stdLib.Element, acceptButtonEl: stdLib.Element): js.Any = js.native
-  def createFocusTrapInstance(
-    surfaceEl: stdLib.Element,
-    acceptButtonEl: stdLib.Element,
-    focusTrapFactory: atMaterialDialogLib.utilMod.MDCFocusTrapFactory
-  ): js.Any = js.native
+  def createFocusTrapInstance(surfaceEl: stdLib.Element, acceptButtonEl: stdLib.Element, focusTrapFactory: MDCFocusTrapFactory): js.Any = js.native
 }
 

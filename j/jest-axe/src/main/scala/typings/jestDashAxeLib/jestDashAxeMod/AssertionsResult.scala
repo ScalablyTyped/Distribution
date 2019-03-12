@@ -24,10 +24,10 @@ object AssertionsResult {
   @scala.inline
   def apply(
     actual: js.Array[axeDashCoreLib.axeDashCoreMod.axeNs.Result],
-    message: js.Function0[java.lang.String],
+    message: () => java.lang.String,
     pass: scala.Boolean
   ): AssertionsResult = {
-    val __obj = js.Dynamic.literal(actual = actual, message = message, pass = pass)
+    val __obj = js.Dynamic.literal(actual = actual, message = js.Any.fromFunction0(message), pass = pass)
   
     __obj.asInstanceOf[AssertionsResult]
   }

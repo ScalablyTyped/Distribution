@@ -25,13 +25,13 @@ object XStyleSupplier {
   @scala.inline
   def apply(
     Style: XStyle,
-    acquire: js.Function0[scala.Unit],
-    getStyle: js.Function0[XStyle],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setStyle: js.Function1[XStyle, scala.Unit]
+    acquire: () => scala.Unit,
+    getStyle: () => XStyle,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setStyle: XStyle => scala.Unit
   ): XStyleSupplier = {
-    val __obj = js.Dynamic.literal(Style = Style, acquire = acquire, getStyle = getStyle, queryInterface = queryInterface, release = release, setStyle = setStyle)
+    val __obj = js.Dynamic.literal(Style = Style, acquire = js.Any.fromFunction0(acquire), getStyle = js.Any.fromFunction0(getStyle), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setStyle = js.Any.fromFunction1(setStyle))
   
     __obj.asInstanceOf[XStyleSupplier]
   }

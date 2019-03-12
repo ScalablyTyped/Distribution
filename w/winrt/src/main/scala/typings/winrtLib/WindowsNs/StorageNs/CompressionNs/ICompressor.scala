@@ -14,16 +14,13 @@ trait ICompressor
 object ICompressor {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
-    detachStream: js.Function0[winrtLib.WindowsNs.StorageNs.StreamsNs.IOutputStream],
-    finishAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[scala.Boolean]],
-    flushAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[scala.Boolean]],
-    writeAsync: js.Function1[
-      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[scala.Double, scala.Double]
-    ]
+    close: () => scala.Unit,
+    detachStream: () => winrtLib.WindowsNs.StorageNs.StreamsNs.IOutputStream,
+    finishAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[scala.Boolean],
+    flushAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[scala.Boolean],
+    writeAsync: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer => winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[scala.Double, scala.Double]
   ): ICompressor = {
-    val __obj = js.Dynamic.literal(close = close, detachStream = detachStream, finishAsync = finishAsync, flushAsync = flushAsync, writeAsync = writeAsync)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), detachStream = js.Any.fromFunction0(detachStream), finishAsync = js.Any.fromFunction0(finishAsync), flushAsync = js.Any.fromFunction0(flushAsync), writeAsync = js.Any.fromFunction1(writeAsync))
   
     __obj.asInstanceOf[ICompressor]
   }

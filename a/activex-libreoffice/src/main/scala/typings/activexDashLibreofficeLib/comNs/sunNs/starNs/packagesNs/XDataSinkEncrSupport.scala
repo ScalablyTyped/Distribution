@@ -85,16 +85,16 @@ object XDataSinkEncrSupport {
     DataStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
     PlainRawStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
     RawStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
-    acquire: js.Function0[scala.Unit],
-    getDataStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
-    getPlainRawStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
-    getRawStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setDataStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Unit],
-    setRawStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Unit]
+    acquire: () => scala.Unit,
+    getDataStream: () => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    getPlainRawStream: () => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    getRawStream: () => activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setDataStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream => scala.Unit,
+    setRawStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream => scala.Unit
   ): XDataSinkEncrSupport = {
-    val __obj = js.Dynamic.literal(DataStream = DataStream, PlainRawStream = PlainRawStream, RawStream = RawStream, acquire = acquire, getDataStream = getDataStream, getPlainRawStream = getPlainRawStream, getRawStream = getRawStream, queryInterface = queryInterface, release = release, setDataStream = setDataStream, setRawStream = setRawStream)
+    val __obj = js.Dynamic.literal(DataStream = DataStream, PlainRawStream = PlainRawStream, RawStream = RawStream, acquire = js.Any.fromFunction0(acquire), getDataStream = js.Any.fromFunction0(getDataStream), getPlainRawStream = js.Any.fromFunction0(getPlainRawStream), getRawStream = js.Any.fromFunction0(getRawStream), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDataStream = js.Any.fromFunction1(setDataStream), setRawStream = js.Any.fromFunction1(setRawStream))
   
     __obj.asInstanceOf[XDataSinkEncrSupport]
   }

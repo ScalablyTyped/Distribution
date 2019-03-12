@@ -57,22 +57,22 @@ object AjaxChainConfiguration {
   @scala.inline
   def apply(
     ajaxSettings: jqueryLib.JQueryAjaxSettings,
-    appendToUrl: js.Function1[/* response */ js.Any, java.lang.String] = null,
-    hasCache: js.Function1[/* response */ js.Any, _] = null,
-    hasErrors: js.Function1[/* response */ js.Any, _] = null,
-    hasHaltingCapabilities: js.Function1[/* response */ js.Any, scala.Boolean] = null,
-    isSkippable: js.Function1[/* response */ js.Any, scala.Boolean] = null,
+    appendToUrl: /* response */ js.Any => java.lang.String = null,
+    hasCache: /* response */ js.Any => _ = null,
+    hasErrors: /* response */ js.Any => _ = null,
+    hasHaltingCapabilities: /* response */ js.Any => scala.Boolean = null,
+    isSkippable: /* response */ js.Any => scala.Boolean = null,
     label: java.lang.String = null,
-    transform: js.Function1[/* response */ js.Any, java.lang.String | js.Object | js.Array[js.Object]] = null
+    transform: /* response */ js.Any => java.lang.String | js.Object | js.Array[js.Object] = null
   ): AjaxChainConfiguration = {
     val __obj = js.Dynamic.literal(ajaxSettings = ajaxSettings)
-    if (appendToUrl != null) __obj.updateDynamic("appendToUrl")(appendToUrl)
-    if (hasCache != null) __obj.updateDynamic("hasCache")(hasCache)
-    if (hasErrors != null) __obj.updateDynamic("hasErrors")(hasErrors)
-    if (hasHaltingCapabilities != null) __obj.updateDynamic("hasHaltingCapabilities")(hasHaltingCapabilities)
-    if (isSkippable != null) __obj.updateDynamic("isSkippable")(isSkippable)
+    if (appendToUrl != null) __obj.updateDynamic("appendToUrl")(js.Any.fromFunction1(appendToUrl))
+    if (hasCache != null) __obj.updateDynamic("hasCache")(js.Any.fromFunction1(hasCache))
+    if (hasErrors != null) __obj.updateDynamic("hasErrors")(js.Any.fromFunction1(hasErrors))
+    if (hasHaltingCapabilities != null) __obj.updateDynamic("hasHaltingCapabilities")(js.Any.fromFunction1(hasHaltingCapabilities))
+    if (isSkippable != null) __obj.updateDynamic("isSkippable")(js.Any.fromFunction1(isSkippable))
     if (label != null) __obj.updateDynamic("label")(label)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     __obj.asInstanceOf[AjaxChainConfiguration]
   }
 }

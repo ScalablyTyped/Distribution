@@ -74,10 +74,10 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    cellMouseEnter: js.Function1[/* e */ CellMouseEnterEventArgs, scala.Unit] = null,
-    cellMouseLeave: js.Function1[/* e */ CellMouseLeaveEventArgs, scala.Unit] = null,
-    cellMouseOver: js.Function1[/* e */ CellMouseOverEventArgs, scala.Unit] = null,
-    cellSelected: js.Function1[/* e */ CellSelectedEventArgs, scala.Unit] = null,
+    cellMouseEnter: /* e */ CellMouseEnterEventArgs => scala.Unit = null,
+    cellMouseLeave: /* e */ CellMouseLeaveEventArgs => scala.Unit = null,
+    cellMouseOver: /* e */ CellMouseOverEventArgs => scala.Unit = null,
+    cellSelected: /* e */ CellSelectedEventArgs => scala.Unit = null,
     colorMappingCollection: js.Array[ColorMappingCollection] = null,
     defaultColumnStyle: DefaultColumnStyle = null,
     enableVirtualization: js.UndefOr[scala.Boolean] = js.undefined,
@@ -93,10 +93,10 @@ object Model {
     width: js.Any = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (cellMouseEnter != null) __obj.updateDynamic("cellMouseEnter")(cellMouseEnter)
-    if (cellMouseLeave != null) __obj.updateDynamic("cellMouseLeave")(cellMouseLeave)
-    if (cellMouseOver != null) __obj.updateDynamic("cellMouseOver")(cellMouseOver)
-    if (cellSelected != null) __obj.updateDynamic("cellSelected")(cellSelected)
+    if (cellMouseEnter != null) __obj.updateDynamic("cellMouseEnter")(js.Any.fromFunction1(cellMouseEnter))
+    if (cellMouseLeave != null) __obj.updateDynamic("cellMouseLeave")(js.Any.fromFunction1(cellMouseLeave))
+    if (cellMouseOver != null) __obj.updateDynamic("cellMouseOver")(js.Any.fromFunction1(cellMouseOver))
+    if (cellSelected != null) __obj.updateDynamic("cellSelected")(js.Any.fromFunction1(cellSelected))
     if (colorMappingCollection != null) __obj.updateDynamic("colorMappingCollection")(colorMappingCollection)
     if (defaultColumnStyle != null) __obj.updateDynamic("defaultColumnStyle")(defaultColumnStyle)
     if (!js.isUndefined(enableVirtualization)) __obj.updateDynamic("enableVirtualization")(enableVirtualization)

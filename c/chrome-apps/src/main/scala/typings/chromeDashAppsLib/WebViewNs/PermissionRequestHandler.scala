@@ -14,8 +14,8 @@ trait PermissionRequestHandler extends js.Object {
 
 object PermissionRequestHandler {
   @scala.inline
-  def apply(allow: js.Function0[scala.Unit], deny: js.Function0[scala.Unit]): PermissionRequestHandler = {
-    val __obj = js.Dynamic.literal(allow = allow, deny = deny)
+  def apply(allow: () => scala.Unit, deny: () => scala.Unit): PermissionRequestHandler = {
+    val __obj = js.Dynamic.literal(allow = js.Any.fromFunction0(allow), deny = js.Any.fromFunction0(deny))
   
     __obj.asInstanceOf[PermissionRequestHandler]
   }

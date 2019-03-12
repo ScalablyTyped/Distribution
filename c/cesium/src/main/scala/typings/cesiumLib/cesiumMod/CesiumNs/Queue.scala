@@ -18,15 +18,15 @@ trait Queue extends js.Object {
 object Queue {
   @scala.inline
   def apply(
-    clear: js.Function0[scala.Unit],
-    contains: js.Function1[js.Any, scala.Boolean],
-    dequeue: js.Function0[js.Any],
-    enqueue: js.Function1[js.Any, scala.Unit],
+    clear: () => scala.Unit,
+    contains: js.Any => scala.Boolean,
+    dequeue: () => js.Any,
+    enqueue: js.Any => scala.Unit,
     length: scala.Double,
-    peek: js.Function0[js.Any],
-    sort: js.Function1[cesiumLib.cesiumMod.CesiumNs.QueueNs.Comparator, scala.Unit]
+    peek: () => js.Any,
+    sort: cesiumLib.cesiumMod.CesiumNs.QueueNs.Comparator => scala.Unit
   ): Queue = {
-    val __obj = js.Dynamic.literal(clear = clear, contains = contains, dequeue = dequeue, enqueue = enqueue, length = length, peek = peek, sort = sort)
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), contains = js.Any.fromFunction1(contains), dequeue = js.Any.fromFunction0(dequeue), enqueue = js.Any.fromFunction1(enqueue), length = length, peek = js.Any.fromFunction0(peek), sort = js.Any.fromFunction1(sort))
   
     __obj.asInstanceOf[Queue]
   }

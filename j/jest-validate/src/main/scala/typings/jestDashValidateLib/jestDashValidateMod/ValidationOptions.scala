@@ -69,39 +69,21 @@ object ValidationOptions {
   def apply(
     exampleConfig: js.Object,
     comment: java.lang.String = null,
-    condition: js.Function2[/* value */ js.Any, /* exampleValue */ js.Any, scala.Boolean] = null,
-    deprecate: js.Function4[
-      /* config */ js.Object, 
-      /* key */ java.lang.String, 
-      /* deprecatedConfig */ DeprecatedConfig, 
-      ValidationOptions, 
-      scala.Boolean
-    ] = null,
+    condition: (/* value */ js.Any, /* exampleValue */ js.Any) => scala.Boolean = null,
+    deprecate: (/* config */ js.Object, /* key */ java.lang.String, /* deprecatedConfig */ DeprecatedConfig, ValidationOptions) => scala.Boolean = null,
     deprecatedConfig: DeprecatedConfig = null,
-    error: js.Function4[
-      /* key */ java.lang.String, 
-      /* received */ js.Any, 
-      /* exampleValue */ js.Any, 
-      ValidationOptions, 
-      scala.Unit
-    ] = null,
+    error: (/* key */ java.lang.String, /* received */ js.Any, /* exampleValue */ js.Any, ValidationOptions) => scala.Unit = null,
     title: Title = null,
-    unknown: js.Function4[
-      /* config */ js.Object, 
-      /* exampleConfig */ js.Object, 
-      /* key */ java.lang.String, 
-      ValidationOptions, 
-      scala.Unit
-    ] = null
+    unknown: (/* config */ js.Object, /* exampleConfig */ js.Object, /* key */ java.lang.String, ValidationOptions) => scala.Unit = null
   ): ValidationOptions = {
     val __obj = js.Dynamic.literal(exampleConfig = exampleConfig)
     if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (condition != null) __obj.updateDynamic("condition")(condition)
-    if (deprecate != null) __obj.updateDynamic("deprecate")(deprecate)
+    if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction2(condition))
+    if (deprecate != null) __obj.updateDynamic("deprecate")(js.Any.fromFunction4(deprecate))
     if (deprecatedConfig != null) __obj.updateDynamic("deprecatedConfig")(deprecatedConfig)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction4(error))
     if (title != null) __obj.updateDynamic("title")(title)
-    if (unknown != null) __obj.updateDynamic("unknown")(unknown)
+    if (unknown != null) __obj.updateDynamic("unknown")(js.Any.fromFunction4(unknown))
     __obj.asInstanceOf[ValidationOptions]
   }
 }

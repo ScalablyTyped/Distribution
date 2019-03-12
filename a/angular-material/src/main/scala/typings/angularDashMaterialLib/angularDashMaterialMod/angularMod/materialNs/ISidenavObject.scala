@@ -17,14 +17,14 @@ trait ISidenavObject extends js.Object {
 object ISidenavObject {
   @scala.inline
   def apply(
-    close: js.Function0[angularLib.angularMod.angularNs.IPromise[scala.Unit]],
-    isLockedOpen: js.Function0[scala.Boolean],
-    isOpen: js.Function0[scala.Boolean],
-    onClose: js.Function1[js.Function0[scala.Unit], scala.Unit],
-    open: js.Function0[angularLib.angularMod.angularNs.IPromise[scala.Unit]],
-    toggle: js.Function0[angularLib.angularMod.angularNs.IPromise[scala.Unit]]
+    close: () => angularLib.angularMod.angularNs.IPromise[scala.Unit],
+    isLockedOpen: () => scala.Boolean,
+    isOpen: () => scala.Boolean,
+    onClose: js.Function0[scala.Unit] => scala.Unit,
+    open: () => angularLib.angularMod.angularNs.IPromise[scala.Unit],
+    toggle: () => angularLib.angularMod.angularNs.IPromise[scala.Unit]
   ): ISidenavObject = {
-    val __obj = js.Dynamic.literal(close = close, isLockedOpen = isLockedOpen, isOpen = isOpen, onClose = onClose, open = open, toggle = toggle)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), isLockedOpen = js.Any.fromFunction0(isLockedOpen), isOpen = js.Any.fromFunction0(isOpen), onClose = js.Any.fromFunction1(onClose), open = js.Any.fromFunction0(open), toggle = js.Any.fromFunction0(toggle))
   
     __obj.asInstanceOf[ISidenavObject]
   }

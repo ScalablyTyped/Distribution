@@ -21,14 +21,14 @@ object LinkProps {
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     href: java.lang.String = null,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: js.Function1[/* args */ gestaltLib.Anon_Event, scala.Unit] = null,
+    onClick: /* args */ gestaltLib.Anon_Event => scala.Unit = null,
     target: gestaltLib.gestaltLibStrings.`null` | gestaltLib.gestaltLibStrings.self | gestaltLib.gestaltLibStrings.blank = null
   ): LinkProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href)
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkProps]
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line:interface-name
 @js.native
 trait IconSet extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Count: scala.Double = js.native
   val Creator: XlCreator = js.native
   val ID: XlIconSet = js.native

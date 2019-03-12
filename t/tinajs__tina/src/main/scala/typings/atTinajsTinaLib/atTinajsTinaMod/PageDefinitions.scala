@@ -16,31 +16,28 @@ trait PageDefinitions
 object PageDefinitions {
   @scala.inline
   def apply(
-    attached: js.Function0[scala.Unit],
-    beforeLoad: js.Function1[Page, scala.Unit],
-    compute: js.Function1[
-      org.scalablytyped.runtime.StringDictionary[js.Any], 
-      org.scalablytyped.runtime.StringDictionary[js.Any]
-    ],
-    created: js.Function0[scala.Unit],
+    attached: () => scala.Unit,
+    beforeLoad: Page => scala.Unit,
+    compute: org.scalablytyped.runtime.StringDictionary[js.Any] => org.scalablytyped.runtime.StringDictionary[js.Any],
+    created: () => scala.Unit,
     data: org.scalablytyped.runtime.StringDictionary[js.Any],
-    detached: js.Function0[scala.Unit],
+    detached: () => scala.Unit,
     methods: org.scalablytyped.runtime.StringDictionary[js.ThisFunction0[/* this */ Component, _]],
     mixins: js.Array[stdLib.Partial[PageDefinitions]],
-    moved: js.Function0[scala.Unit],
-    onHide: js.Function1[Page, scala.Unit],
-    onLoad: js.Function1[Page, scala.Unit],
-    onPageScroll: js.Function1[Page, scala.Unit],
-    onPullDownRefresh: js.Function1[Page, scala.Unit],
-    onReachBottom: js.Function1[Page, scala.Unit],
-    onReady: js.Function1[Page, scala.Unit],
-    onShareAppMessage: js.Function1[Page, scala.Unit],
-    onShow: js.Function1[Page, scala.Unit],
-    onUnload: js.Function1[Page, scala.Unit],
+    moved: () => scala.Unit,
+    onHide: Page => scala.Unit,
+    onLoad: Page => scala.Unit,
+    onPageScroll: Page => scala.Unit,
+    onPullDownRefresh: Page => scala.Unit,
+    onReachBottom: Page => scala.Unit,
+    onReady: Page => scala.Unit,
+    onShareAppMessage: Page => scala.Unit,
+    onShow: Page => scala.Unit,
+    onUnload: Page => scala.Unit,
     properties: ComponentProperties,
-    ready: js.Function0[scala.Unit]
+    ready: () => scala.Unit
   ): PageDefinitions = {
-    val __obj = js.Dynamic.literal(attached = attached, beforeLoad = beforeLoad, compute = compute, created = created, data = data, detached = detached, methods = methods, mixins = mixins, moved = moved, onHide = onHide, onLoad = onLoad, onPageScroll = onPageScroll, onPullDownRefresh = onPullDownRefresh, onReachBottom = onReachBottom, onReady = onReady, onShareAppMessage = onShareAppMessage, onShow = onShow, onUnload = onUnload, properties = properties, ready = ready)
+    val __obj = js.Dynamic.literal(attached = js.Any.fromFunction0(attached), beforeLoad = js.Any.fromFunction1(beforeLoad), compute = js.Any.fromFunction1(compute), created = js.Any.fromFunction0(created), data = data, detached = js.Any.fromFunction0(detached), methods = methods, mixins = mixins, moved = js.Any.fromFunction0(moved), onHide = js.Any.fromFunction1(onHide), onLoad = js.Any.fromFunction1(onLoad), onPageScroll = js.Any.fromFunction1(onPageScroll), onPullDownRefresh = js.Any.fromFunction1(onPullDownRefresh), onReachBottom = js.Any.fromFunction1(onReachBottom), onReady = js.Any.fromFunction1(onReady), onShareAppMessage = js.Any.fromFunction1(onShareAppMessage), onShow = js.Any.fromFunction1(onShow), onUnload = js.Any.fromFunction1(onUnload), properties = properties, ready = js.Any.fromFunction0(ready))
   
     __obj.asInstanceOf[PageDefinitions]
   }

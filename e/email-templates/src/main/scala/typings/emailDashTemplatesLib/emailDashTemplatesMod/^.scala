@@ -22,6 +22,6 @@ object ^ extends js.Object {
   /**
     * Send the Email
     */
-  def send(options: emailDashTemplatesLib.emailDashTemplatesMod.EmailOptions): js.Any = js.native
+  def send(options: EmailOptions): js.Any = js.native
 }
 

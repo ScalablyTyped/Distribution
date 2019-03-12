@@ -27,6 +27,6 @@ object ^ extends js.Object {
   def parse(dateString: java.lang.String, formatString: java.lang.String): stdLib.Date | scala.Double = js.native
   def parse(dateString: java.lang.String, formatString: java.lang.String, utc: scala.Boolean): stdLib.Date | scala.Double = js.native
   def setLocales(code: java.lang.String, options: js.Any): scala.Unit = js.native
-  def subtract(date1: stdLib.Date, date2: stdLib.Date): dateDashAndDashTimeLib.dateDashAndDashTimeMod.Subtract = js.native
+  def subtract(date1: stdLib.Date, date2: stdLib.Date): Subtract = js.native
 }
 

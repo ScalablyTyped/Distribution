@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Column ()
   extends reactLib.reactMod.Component[
-      ColumnProps with reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLElement], 
+      ColumnProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement], 
       js.Object, 
       js.Any
     ]

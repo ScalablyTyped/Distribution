@@ -14,11 +14,11 @@ trait RealtimeLoader extends js.Object {
 object RealtimeLoader {
   @scala.inline
   def apply(
-    handleErrors: js.Function1[googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Error, scala.Unit],
-    load: js.Function0[scala.Unit],
-    start: js.Function0[scala.Unit]
+    handleErrors: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Error => scala.Unit,
+    load: () => scala.Unit,
+    start: () => scala.Unit
   ): RealtimeLoader = {
-    val __obj = js.Dynamic.literal(handleErrors = handleErrors, load = load, start = start)
+    val __obj = js.Dynamic.literal(handleErrors = js.Any.fromFunction1(handleErrors), load = js.Any.fromFunction0(load), start = js.Any.fromFunction0(start))
   
     __obj.asInstanceOf[RealtimeLoader]
   }

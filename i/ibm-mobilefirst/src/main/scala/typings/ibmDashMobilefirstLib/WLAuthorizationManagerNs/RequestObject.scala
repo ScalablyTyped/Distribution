@@ -11,8 +11,8 @@ trait RequestObject extends js.Object {
 
 object RequestObject {
   @scala.inline
-  def apply(setRequestHeader: js.Function2[java.lang.String, java.lang.String, scala.Unit]): RequestObject = {
-    val __obj = js.Dynamic.literal(setRequestHeader = setRequestHeader)
+  def apply(setRequestHeader: (java.lang.String, java.lang.String) => scala.Unit): RequestObject = {
+    val __obj = js.Dynamic.literal(setRequestHeader = js.Any.fromFunction2(setRequestHeader))
   
     __obj.asInstanceOf[RequestObject]
   }

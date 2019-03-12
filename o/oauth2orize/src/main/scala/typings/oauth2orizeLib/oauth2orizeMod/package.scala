@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 package object oauth2orizeMod {
   type DecisionParseFunction = js.Function2[
     /* req */ MiddlewareRequest, 
-    /* done */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* params */ js.Any, scala.Unit], 
+    /* done */ js.Function2[/* err */ stdLib.Error | scala.Null, /* params */ js.Any, scala.Unit], 
     scala.Unit
   ]
   type DeserializeClientDoneFunction = js.Function2[
-    /* err */ nodeLib.Error | scala.Null, 
+    /* err */ stdLib.Error | scala.Null, 
     /* client */ js.UndefOr[js.Any | scala.Boolean], 
     scala.Unit
   ]
   type DeserializeClientFunction = js.Function2[/* id */ java.lang.String, /* done */ DeserializeClientDoneFunction, scala.Unit]
   type ExchangeDoneFunction = js.Function4[
-    /* err */ nodeLib.Error | scala.Null, 
+    /* err */ stdLib.Error | scala.Null, 
     /* accessToken */ js.UndefOr[java.lang.String | scala.Boolean], 
     /* refreshToken */ js.UndefOr[java.lang.String], 
     /* params */ js.UndefOr[js.Any], 
@@ -31,7 +31,7 @@ package object oauth2orizeMod {
     /* type */ java.lang.String, 
     /* areq */ js.Any, 
     /* done */ js.Function4[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* allow */ scala.Boolean, 
       /* info */ js.Any, 
       /* locals */ js.Any, 
@@ -52,7 +52,7 @@ package object oauth2orizeMod {
     /* user */ js.Any, 
     /* res */ js.Any, 
     /* issued */ js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* code */ js.UndefOr[java.lang.String], 
       scala.Unit
     ], 
@@ -63,7 +63,7 @@ package object oauth2orizeMod {
     /* user */ js.Any, 
     /* ares */ js.Any, 
     /* issued */ js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* code */ js.UndefOr[java.lang.String], 
       /* params */ js.UndefOr[js.Any], 
       scala.Unit
@@ -71,7 +71,7 @@ package object oauth2orizeMod {
     scala.Unit
   ]
   type MiddlewareErrorFunction = js.Function4[
-    /* err */ nodeLib.Error, 
+    /* err */ stdLib.Error, 
     /* req */ MiddlewareRequest, 
     /* res */ nodeLib.httpMod.ServerResponse, 
     /* next */ MiddlewareNextFunction, 
@@ -83,14 +83,14 @@ package object oauth2orizeMod {
     /* next */ MiddlewareNextFunction, 
     scala.Unit
   ]
-  type MiddlewareNextFunction = js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
-  type SerializeClientDoneFunction = js.Function2[/* err */ nodeLib.Error | scala.Null, /* id */ java.lang.String, scala.Unit]
+  type MiddlewareNextFunction = js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
+  type SerializeClientDoneFunction = js.Function2[/* err */ stdLib.Error | scala.Null, /* id */ java.lang.String, scala.Unit]
   type SerializeClientFunction = js.Function2[/* client */ js.Any, /* done */ SerializeClientDoneFunction, scala.Unit]
   type ValidateFunction = js.Function3[
     /* clientId */ java.lang.String, 
     /* redirectURI */ java.lang.String, 
     /* validated */ js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ stdLib.Error | scala.Null, 
       /* client */ js.UndefOr[js.Any], 
       /* redirectURI */ js.UndefOr[java.lang.String], 
       scala.Unit

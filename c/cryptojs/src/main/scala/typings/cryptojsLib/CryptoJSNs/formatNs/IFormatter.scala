@@ -13,10 +13,10 @@ trait IFormatter extends js.Object {
 object IFormatter {
   @scala.inline
   def apply(
-    parse: js.Function1[java.lang.String, cryptojsLib.CryptoJSNs.libNs.CipherParams],
-    stringify: js.Function1[cryptojsLib.CryptoJSNs.libNs.CipherParamsData, java.lang.String]
+    parse: java.lang.String => cryptojsLib.CryptoJSNs.libNs.CipherParams,
+    stringify: cryptojsLib.CryptoJSNs.libNs.CipherParamsData => java.lang.String
   ): IFormatter = {
-    val __obj = js.Dynamic.literal(parse = parse, stringify = stringify)
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), stringify = js.Any.fromFunction1(stringify))
   
     __obj.asInstanceOf[IFormatter]
   }

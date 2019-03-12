@@ -20,10 +20,10 @@ trait ModuleController extends XModuleController {
 object ModuleController {
   @scala.inline
   def apply(
-    create: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, scala.Unit],
-    requestResource: js.Function1[java.lang.String, scala.Unit]
+    create: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController => scala.Unit,
+    requestResource: java.lang.String => scala.Unit
   ): ModuleController = {
-    val __obj = js.Dynamic.literal(create = create, requestResource = requestResource)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), requestResource = js.Any.fromFunction1(requestResource))
   
     __obj.asInstanceOf[ModuleController]
   }

@@ -25,11 +25,11 @@ trait Cloud extends js.Object {
 object Cloud {
   @scala.inline
   def apply(
-    collection: js.Function1[java.lang.String, js.Object],
-    database: js.Function1[baiduDashAppLib.Anon_Env, js.Object],
-    init: js.Function1[InitCloudOptions, scala.Unit]
+    collection: java.lang.String => js.Object,
+    database: baiduDashAppLib.Anon_Env => js.Object,
+    init: InitCloudOptions => scala.Unit
   ): Cloud = {
-    val __obj = js.Dynamic.literal(collection = collection, database = database, init = init)
+    val __obj = js.Dynamic.literal(collection = js.Any.fromFunction1(collection), database = js.Any.fromFunction1(database), init = js.Any.fromFunction1(init))
   
     __obj.asInstanceOf[Cloud]
   }

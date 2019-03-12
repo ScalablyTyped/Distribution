@@ -42,22 +42,15 @@ trait XSearchable
 object XSearchable {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createSearchDescriptor: js.Function0[XSearchDescriptor],
-    findAll: js.Function1[
-      XSearchDescriptor, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
-    ],
-    findFirst: js.Function1[XSearchDescriptor, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
-    findNext: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
-      XSearchDescriptor, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createSearchDescriptor: () => XSearchDescriptor,
+    findAll: XSearchDescriptor => activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    findFirst: XSearchDescriptor => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    findNext: (activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, XSearchDescriptor) => activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSearchable = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createSearchDescriptor = createSearchDescriptor, findAll = findAll, findFirst = findFirst, findNext = findNext, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createSearchDescriptor = js.Any.fromFunction0(createSearchDescriptor), findAll = js.Any.fromFunction1(findAll), findFirst = js.Any.fromFunction1(findFirst), findNext = js.Any.fromFunction2(findNext), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSearchable]
   }

@@ -41,7 +41,7 @@ object IGeoXmlReadOptions {
     allowKmlScreenOverlays: js.UndefOr[scala.Boolean] = js.undefined,
     captureGpxPathWaypoints: js.UndefOr[scala.Boolean] = js.undefined,
     defaultStyles: IStylesOptions = null,
-    error: js.Function1[/* msg */ java.lang.String, scala.Unit] = null,
+    error: /* msg */ java.lang.String => scala.Unit = null,
     ignoreVisibility: js.UndefOr[scala.Boolean] = js.undefined,
     maxNetworkLinkDepth: scala.Int | scala.Double = null,
     maxNetworkLinks: scala.Int | scala.Double = null,
@@ -51,7 +51,7 @@ object IGeoXmlReadOptions {
     if (!js.isUndefined(allowKmlScreenOverlays)) __obj.updateDynamic("allowKmlScreenOverlays")(allowKmlScreenOverlays)
     if (!js.isUndefined(captureGpxPathWaypoints)) __obj.updateDynamic("captureGpxPathWaypoints")(captureGpxPathWaypoints)
     if (defaultStyles != null) __obj.updateDynamic("defaultStyles")(defaultStyles)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (!js.isUndefined(ignoreVisibility)) __obj.updateDynamic("ignoreVisibility")(ignoreVisibility)
     if (maxNetworkLinkDepth != null) __obj.updateDynamic("maxNetworkLinkDepth")(maxNetworkLinkDepth.asInstanceOf[js.Any])
     if (maxNetworkLinks != null) __obj.updateDynamic("maxNetworkLinks")(maxNetworkLinks.asInstanceOf[js.Any])

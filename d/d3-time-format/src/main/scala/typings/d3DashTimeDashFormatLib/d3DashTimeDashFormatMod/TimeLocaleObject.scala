@@ -96,18 +96,12 @@ trait TimeLocaleObject extends js.Object {
 object TimeLocaleObject {
   @scala.inline
   def apply(
-    format: js.Function1[java.lang.String, js.Function1[/* date */ stdLib.Date, java.lang.String]],
-    parse: js.Function1[
-      java.lang.String, 
-      js.Function1[/* dateString */ java.lang.String, stdLib.Date | scala.Null]
-    ],
-    utcFormat: js.Function1[java.lang.String, js.Function1[/* date */ stdLib.Date, java.lang.String]],
-    utcParse: js.Function1[
-      java.lang.String, 
-      js.Function1[/* dateString */ java.lang.String, stdLib.Date | scala.Null]
-    ]
+    format: java.lang.String => js.Function1[/* date */ stdLib.Date, java.lang.String],
+    parse: java.lang.String => js.Function1[/* dateString */ java.lang.String, stdLib.Date | scala.Null],
+    utcFormat: java.lang.String => js.Function1[/* date */ stdLib.Date, java.lang.String],
+    utcParse: java.lang.String => js.Function1[/* dateString */ java.lang.String, stdLib.Date | scala.Null]
   ): TimeLocaleObject = {
-    val __obj = js.Dynamic.literal(format = format, parse = parse, utcFormat = utcFormat, utcParse = utcParse)
+    val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format), parse = js.Any.fromFunction1(parse), utcFormat = js.Any.fromFunction1(utcFormat), utcParse = js.Any.fromFunction1(utcParse))
   
     __obj.asInstanceOf[TimeLocaleObject]
   }

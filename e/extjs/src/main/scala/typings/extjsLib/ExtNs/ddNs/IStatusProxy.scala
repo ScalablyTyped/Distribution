@@ -53,32 +53,27 @@ object IStatusProxy {
     IComponent: extjsLib.ExtNs.IComponent = null,
     dropAllowed: java.lang.String = null,
     dropNotAllowed: java.lang.String = null,
-    getGhost: js.Function0[extjsLib.ExtNs.IElement] = null,
+    getGhost: () => extjsLib.ExtNs.IElement = null,
     renderTpl: js.Any = null,
-    repair: js.Function3[
-      /* xy */ js.UndefOr[extjsLib.ExtNs.Array], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      scala.Unit
-    ] = null,
-    reset: js.Function1[/* clearGhost */ js.UndefOr[scala.Boolean], scala.Unit] = null,
-    setStatus: js.Function1[/* cssClass */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    stop: js.Function0[scala.Unit] = null,
-    sync: js.Function0[scala.Unit] = null,
-    update: js.Function1[/* html */ js.UndefOr[js.Any], scala.Unit] = null
+    repair: (/* xy */ js.UndefOr[extjsLib.ExtNs.Array], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => scala.Unit = null,
+    reset: /* clearGhost */ js.UndefOr[scala.Boolean] => scala.Unit = null,
+    setStatus: /* cssClass */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    stop: () => scala.Unit = null,
+    sync: () => scala.Unit = null,
+    update: /* html */ js.UndefOr[js.Any] => scala.Unit = null
   ): IStatusProxy = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IComponent)
     if (dropAllowed != null) __obj.updateDynamic("dropAllowed")(dropAllowed)
     if (dropNotAllowed != null) __obj.updateDynamic("dropNotAllowed")(dropNotAllowed)
-    if (getGhost != null) __obj.updateDynamic("getGhost")(getGhost)
+    if (getGhost != null) __obj.updateDynamic("getGhost")(js.Any.fromFunction0(getGhost))
     if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
-    if (repair != null) __obj.updateDynamic("repair")(repair)
-    if (reset != null) __obj.updateDynamic("reset")(reset)
-    if (setStatus != null) __obj.updateDynamic("setStatus")(setStatus)
-    if (stop != null) __obj.updateDynamic("stop")(stop)
-    if (sync != null) __obj.updateDynamic("sync")(sync)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (repair != null) __obj.updateDynamic("repair")(js.Any.fromFunction3(repair))
+    if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction1(reset))
+    if (setStatus != null) __obj.updateDynamic("setStatus")(js.Any.fromFunction1(setStatus))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction0(stop))
+    if (sync != null) __obj.updateDynamic("sync")(js.Any.fromFunction0(sync))
+    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction1(update))
     __obj.asInstanceOf[IStatusProxy]
   }
 }

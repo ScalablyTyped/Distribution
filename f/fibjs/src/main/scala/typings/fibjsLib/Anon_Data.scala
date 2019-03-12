@@ -13,12 +13,8 @@ trait Anon_Data extends js.Object {
 
 object Anon_Data {
   @scala.inline
-  def apply(
-    decode: js.Function1[java.lang.String, Class_Buffer],
-    encode: js.Function1[Class_Buffer, java.lang.String],
-    hexNs: js.Any
-  ): Anon_Data = {
-    val __obj = js.Dynamic.literal(decode = decode, encode = encode, hexNs = hexNs)
+  def apply(decode: java.lang.String => Class_Buffer, encode: Class_Buffer => java.lang.String, hexNs: js.Any): Anon_Data = {
+    val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode), hexNs = hexNs)
   
     __obj.asInstanceOf[Anon_Data]
   }

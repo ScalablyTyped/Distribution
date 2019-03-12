@@ -5,20 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Text extends js.Object {
-  var editor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Text]
-  var renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Text
-}
-
-object Text {
-  @scala.inline
-  def apply(
-    editor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Text],
-    renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Text
-  ): Text = {
-    val __obj = js.Dynamic.literal(editor = editor, renderer = renderer)
-  
-    __obj.asInstanceOf[Text]
-  }
+  var editor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Text] = js.native
+  @JSName("renderer")
+  var renderer_Original: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Text = js.native
+  def renderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: java.lang.String,
+    value: handsontableLib.handsontableMod.HandsontableNs.CellValue,
+    cellProperties: handsontableLib.handsontableMod.HandsontableNs.CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
+  def renderer(
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    TD: stdLib.HTMLTableCellElement,
+    row: scala.Double,
+    col: scala.Double,
+    prop: scala.Double,
+    value: handsontableLib.handsontableMod.HandsontableNs.CellValue,
+    cellProperties: handsontableLib.handsontableMod.HandsontableNs.CellProperties
+  ): stdLib.HTMLTableCellElement | scala.Unit = js.native
 }
 

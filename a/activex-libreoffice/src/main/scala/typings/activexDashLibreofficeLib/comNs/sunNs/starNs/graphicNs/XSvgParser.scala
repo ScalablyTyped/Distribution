@@ -20,22 +20,18 @@ trait XSvgParser
   def getDecomposition(
     xSvgStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
     aAbsolutePath: java.lang.String
-  ): activexDashInteropLib.SafeArray[XPrimitive2D]
+  ): stdLib.SafeArray[XPrimitive2D]
 }
 
 object XSvgParser {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    getDecomposition: js.Function2[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      java.lang.String, 
-      activexDashInteropLib.SafeArray[XPrimitive2D]
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    getDecomposition: (activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, java.lang.String) => stdLib.SafeArray[XPrimitive2D],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XSvgParser = {
-    val __obj = js.Dynamic.literal(acquire = acquire, getDecomposition = getDecomposition, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDecomposition = js.Any.fromFunction2(getDecomposition), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XSvgParser]
   }

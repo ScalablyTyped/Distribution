@@ -23,8 +23,8 @@ object RotateOptions {
     className: java.lang.String = null,
     duration: scala.Int | scala.Double = null,
     label: java.lang.String | stdLib.Element = null,
-    render: js.Function1[/* event */ openlayersLib.openlayersMod.MapEvent, _] = null,
-    resetNorth: js.Function0[_] = null,
+    render: /* event */ openlayersLib.openlayersMod.MapEvent => _ = null,
+    resetNorth: () => _ = null,
     target: stdLib.Element = null,
     tipLabel: java.lang.String = null
   ): RotateOptions = {
@@ -33,8 +33,8 @@ object RotateOptions {
     if (className != null) __obj.updateDynamic("className")(className)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(render)
-    if (resetNorth != null) __obj.updateDynamic("resetNorth")(resetNorth)
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
+    if (resetNorth != null) __obj.updateDynamic("resetNorth")(js.Any.fromFunction0(resetNorth))
     if (target != null) __obj.updateDynamic("target")(target)
     if (tipLabel != null) __obj.updateDynamic("tipLabel")(tipLabel)
     __obj.asInstanceOf[RotateOptions]

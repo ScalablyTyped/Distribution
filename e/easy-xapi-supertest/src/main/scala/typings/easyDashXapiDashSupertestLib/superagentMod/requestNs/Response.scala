@@ -13,7 +13,7 @@ trait Response
   var body: js.Any = js.native
   var charset: java.lang.String = js.native
   var clientError: scala.Boolean = js.native
-  var error: nodeLib.Error = js.native
+  var error: stdLib.Error = js.native
   var files: js.Any = js.native
   var forbidden: scala.Boolean = js.native
   var header: js.Any = js.native

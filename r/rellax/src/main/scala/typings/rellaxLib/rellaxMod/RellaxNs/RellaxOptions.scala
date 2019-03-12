@@ -40,7 +40,7 @@ trait RellaxOptions extends js.Object {
 object RellaxOptions {
   @scala.inline
   def apply(
-    callback: js.Function1[/* positions */ rellaxLib.Anon_X, scala.Unit] = null,
+    callback: /* positions */ rellaxLib.Anon_X => scala.Unit = null,
     center: js.UndefOr[scala.Boolean] = js.undefined,
     horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     round: js.UndefOr[scala.Boolean] = js.undefined,
@@ -49,7 +49,7 @@ object RellaxOptions {
     wrapper: java.lang.String = null
   ): RellaxOptions = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
     if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
     if (!js.isUndefined(round)) __obj.updateDynamic("round")(round)

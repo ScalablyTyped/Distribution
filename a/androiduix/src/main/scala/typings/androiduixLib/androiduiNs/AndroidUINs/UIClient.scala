@@ -11,9 +11,9 @@ trait UIClient extends js.Object {
 
 object UIClient {
   @scala.inline
-  def apply(shouldShowAppClosed: js.Function1[/* androidUI */ androiduixLib.androiduiNs.AndroidUI, _] = null): UIClient = {
+  def apply(shouldShowAppClosed: /* androidUI */ androiduixLib.androiduiNs.AndroidUI => _ = null): UIClient = {
     val __obj = js.Dynamic.literal()
-    if (shouldShowAppClosed != null) __obj.updateDynamic("shouldShowAppClosed")(shouldShowAppClosed)
+    if (shouldShowAppClosed != null) __obj.updateDynamic("shouldShowAppClosed")(js.Any.fromFunction1(shouldShowAppClosed))
     __obj.asInstanceOf[UIClient]
   }
 }

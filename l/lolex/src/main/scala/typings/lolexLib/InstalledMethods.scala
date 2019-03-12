@@ -19,8 +19,8 @@ trait InstalledMethods extends js.Object {
 
 object InstalledMethods {
   @scala.inline
-  def apply(methods: js.Array[FakeMethod], uninstall: js.Function0[scala.Unit]): InstalledMethods = {
-    val __obj = js.Dynamic.literal(methods = methods, uninstall = uninstall)
+  def apply(methods: js.Array[FakeMethod], uninstall: () => scala.Unit): InstalledMethods = {
+    val __obj = js.Dynamic.literal(methods = methods, uninstall = js.Any.fromFunction0(uninstall))
   
     __obj.asInstanceOf[InstalledMethods]
   }

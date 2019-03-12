@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<react.HTMLElement>, 'classes' | never> ]: react.react.HTMLAttributes<react.HTMLElement>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLElement>, @material-ui/core.@material-ui/core/Typography/Typography.TypographyClassKey, never>) */ trait TypographyProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLElement>[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLElement>, @material-ui/core.@material-ui/core/Typography/Typography.TypographyClassKey, never>) */ trait TypographyProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TypographyClassKey] {
   var align: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Alignment] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait UnsignedProperties
   extends xmlDashCoreLib.xmlDashCoreMod.XmlObject {
   var Id: java.lang.String = js.native
-  var UnsignedDataObjectProperties: UnsignedDataObjectProperties = js.native
-  var UnsignedSignatureProperties: UnsignedSignatureProperties = js.native
+  var UnsignedDataObjectProperties: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.UnsignedDataObjectProperties = js.native
+  var UnsignedSignatureProperties: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.UnsignedSignatureProperties = js.native
 }
 

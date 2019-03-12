@@ -13,10 +13,10 @@ trait CellFormatter extends js.Object {
 object CellFormatter {
   @scala.inline
   def apply(
-    fromRaw: js.Function2[js.Any, backboneLib.backboneMod.Model, js.Any],
-    toRaw: js.Function2[js.Any, backboneLib.backboneMod.Model, js.Any]
+    fromRaw: (js.Any, backboneLib.backboneMod.Model) => js.Any,
+    toRaw: (js.Any, backboneLib.backboneMod.Model) => js.Any
   ): CellFormatter = {
-    val __obj = js.Dynamic.literal(fromRaw = fromRaw, toRaw = toRaw)
+    val __obj = js.Dynamic.literal(fromRaw = js.Any.fromFunction2(fromRaw), toRaw = js.Any.fromFunction2(toRaw))
   
     __obj.asInstanceOf[CellFormatter]
   }

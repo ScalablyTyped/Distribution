@@ -18,15 +18,15 @@ trait Persistor extends js.Object {
 object Persistor {
   @scala.inline
   def apply(
-    dispatch: js.Function1[PersistorAction, PersistorAction],
-    flush: js.Function0[js.Promise[_]],
-    getState: js.Function0[PersistorState],
-    pause: js.Function0[scala.Unit],
-    persist: js.Function0[scala.Unit],
-    purge: js.Function0[js.Promise[_]],
-    subscribe: js.Function1[PersistorSubscribeCallback, js.Function0[_]]
+    dispatch: PersistorAction => PersistorAction,
+    flush: () => js.Promise[_],
+    getState: () => PersistorState,
+    pause: () => scala.Unit,
+    persist: () => scala.Unit,
+    purge: () => js.Promise[_],
+    subscribe: PersistorSubscribeCallback => js.Function0[_]
   ): Persistor = {
-    val __obj = js.Dynamic.literal(dispatch = dispatch, flush = flush, getState = getState, pause = pause, persist = persist, purge = purge, subscribe = subscribe)
+    val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), flush = js.Any.fromFunction0(flush), getState = js.Any.fromFunction0(getState), pause = js.Any.fromFunction0(pause), persist = js.Any.fromFunction0(persist), purge = js.Any.fromFunction0(purge), subscribe = js.Any.fromFunction1(subscribe))
   
     __obj.asInstanceOf[Persistor]
   }

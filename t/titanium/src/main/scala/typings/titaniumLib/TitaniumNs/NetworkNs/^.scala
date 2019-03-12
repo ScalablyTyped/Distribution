@@ -105,7 +105,7 @@ object ^ extends js.Object {
   /**
   		 * A list of all cookies in the cookie storage.
   		 */
-  val allHTTPCookies: js.Array[titaniumLib.TitaniumNs.NetworkNs.Cookie] = js.native
+  val allHTTPCookies: js.Array[Cookie] = js.native
   /**
   		 * The name of the API that this proxy corresponds to.
   		 */
@@ -155,11 +155,11 @@ object ^ extends js.Object {
   /**
   		 * Adds a cookie to the HTTP client cookie store.
   		 */
-  def addHTTPCookie(cookie: titaniumLib.TitaniumNs.NetworkNs.Cookie): scala.Unit = js.native
+  def addHTTPCookie(cookie: Cookie): scala.Unit = js.native
   /**
   		 * Adds a cookie to the system cookie store.
   		 */
-  def addSystemCookie(cookie: titaniumLib.TitaniumNs.NetworkNs.Cookie): scala.Unit = js.native
+  def addSystemCookie(cookie: Cookie): scala.Unit = js.native
   /**
   		 * Applies the properties to the proxy.
   		 */
@@ -167,27 +167,27 @@ object ^ extends js.Object {
   /**
   		 * Creates and returns a `BonjourBrowser` object.
   		 */
-  def createBonjourBrowser(serviceType: java.lang.String, domain: java.lang.String): titaniumLib.TitaniumNs.NetworkNs.BonjourBrowser = js.native
-  def createBonjourBrowser(serviceType: java.lang.String, domain: java.lang.String, parameters: js.Any): titaniumLib.TitaniumNs.NetworkNs.BonjourBrowser = js.native
+  def createBonjourBrowser(serviceType: java.lang.String, domain: java.lang.String): BonjourBrowser = js.native
+  def createBonjourBrowser(serviceType: java.lang.String, domain: java.lang.String, parameters: js.Any): BonjourBrowser = js.native
   /**
   		 * Creates and returns a `BonjourService` object.
   		 */
-  def createBonjourService(name: java.lang.String, `type`: java.lang.String, domain: java.lang.String): titaniumLib.TitaniumNs.NetworkNs.BonjourService = js.native
-  def createBonjourService(name: java.lang.String, `type`: java.lang.String, domain: java.lang.String, parameters: js.Any): titaniumLib.TitaniumNs.NetworkNs.BonjourService = js.native
+  def createBonjourService(name: java.lang.String, `type`: java.lang.String, domain: java.lang.String): BonjourService = js.native
+  def createBonjourService(name: java.lang.String, `type`: java.lang.String, domain: java.lang.String, parameters: js.Any): BonjourService = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Network.Cookie>.
   		 */
-  def createCookie(): titaniumLib.TitaniumNs.NetworkNs.Cookie = js.native
-  def createCookie(parameters: js.Any): titaniumLib.TitaniumNs.NetworkNs.Cookie = js.native
+  def createCookie(): Cookie = js.native
+  def createCookie(parameters: js.Any): Cookie = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Network.HTTPClient>.
   		 */
-  def createHTTPClient(): titaniumLib.TitaniumNs.NetworkNs.HTTPClient = js.native
-  def createHTTPClient(parameters: js.Any): titaniumLib.TitaniumNs.NetworkNs.HTTPClient = js.native
+  def createHTTPClient(): HTTPClient = js.native
+  def createHTTPClient(parameters: js.Any): HTTPClient = js.native
   /**
   		 * Legacy method to create and return an instance of <Titanium.Network.TCPSocket>.
   		 */
-  def createTCPSocket(hostName: java.lang.String, port: scala.Double, mode: scala.Double, parameters: js.Any): titaniumLib.TitaniumNs.NetworkNs.TCPSocket = js.native
+  def createTCPSocket(hostName: java.lang.String, port: scala.Double, mode: scala.Double, parameters: js.Any): TCPSocket = js.native
   /**
   		 * Returns a decoded version of a URI encoded value.
   		 */
@@ -203,7 +203,7 @@ object ^ extends js.Object {
   /**
   		 * Gets the value of the <Titanium.Network.allHTTPCookies> property.
   		 */
-  def getAllHTTPCookies(): js.Array[titaniumLib.TitaniumNs.NetworkNs.Cookie] = js.native
+  def getAllHTTPCookies(): js.Array[Cookie] = js.native
   /**
   		 * Gets the value of the <Titanium.Network.apiName> property.
   		 */
@@ -215,11 +215,11 @@ object ^ extends js.Object {
   /**
   		 * Gets all the cookies with the domain, path and name matched with the given values from the HTTP client cookie store.
   		 */
-  def getHTTPCookies(domain: java.lang.String, path: java.lang.String, name: java.lang.String): js.Array[titaniumLib.TitaniumNs.NetworkNs.Cookie] = js.native
+  def getHTTPCookies(domain: java.lang.String, path: java.lang.String, name: java.lang.String): js.Array[Cookie] = js.native
   /**
   		 * Gets all the cookies with the domain matched with the given values from the HTTP client cookie store.
   		 */
-  def getHTTPCookiesForDomain(domain: java.lang.String): js.Array[titaniumLib.TitaniumNs.NetworkNs.Cookie] = js.native
+  def getHTTPCookiesForDomain(domain: java.lang.String): js.Array[Cookie] = js.native
   /**
   		 * Gets the value of the <Titanium.Network.lifecycleContainer> property.
   		 */
@@ -251,7 +251,7 @@ object ^ extends js.Object {
   /**
   		 * Gets all the cookies with the domain, path and name matched with the given values from the system cookie store.
   		 */
-  def getSystemCookies(domain: java.lang.String, path: java.lang.String, name: java.lang.String): js.Array[titaniumLib.TitaniumNs.NetworkNs.Cookie] = js.native
+  def getSystemCookies(domain: java.lang.String, path: java.lang.String, name: java.lang.String): js.Array[Cookie] = js.native
   /**
   		 * Registers for push notifications with the Apple Push Notification Service.
   		 */

@@ -15,13 +15,13 @@ trait Anon_Collation extends js.Object {
 object Anon_Collation {
   @scala.inline
   def apply(
-    collation: js.Function0[java.lang.String],
-    column: js.Function0[java.lang.String],
-    engine: js.Function0[java.lang.String],
-    `type`: js.Function0[java.lang.String]
+    collation: () => java.lang.String,
+    column: () => java.lang.String,
+    engine: () => java.lang.String,
+    `type`: () => java.lang.String
   ): Anon_Collation = {
-    val __obj = js.Dynamic.literal(collation = collation, column = column, engine = engine)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(collation = js.Any.fromFunction0(collation), column = js.Any.fromFunction0(column), engine = js.Any.fromFunction0(engine))
+    __obj.updateDynamic("type")(js.Any.fromFunction0(`type`))
     __obj.asInstanceOf[Anon_Collation]
   }
 }

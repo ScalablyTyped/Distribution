@@ -53,37 +53,16 @@ trait SendAsResource extends js.Object {
 object SendAsResource {
   @scala.inline
   def apply(
-    create: js.Function1[
-      gapiDotClientDotGmailLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SendAs]
-    ],
-    delete: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ],
-    get: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SendAs]
-    ],
-    list: js.Function1[
-      gapiDotClientDotGmailLib.Anon_Alt, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListSendAsResponse]
-    ],
-    patch: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SendAs]
-    ],
+    create: gapiDotClientDotGmailLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[SendAs],
+    delete: gapiDotClientDotGmailLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit],
+    get: gapiDotClientDotGmailLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[SendAs],
+    list: gapiDotClientDotGmailLib.Anon_Alt => gapiDotClientLib.gapiNs.clientNs.Request[ListSendAsResponse],
+    patch: gapiDotClientDotGmailLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[SendAs],
     smimeInfo: SmimeInfoResource,
-    update: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SendAs]
-    ],
-    verify: js.Function1[
-      gapiDotClientDotGmailLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
-    ]
+    update: gapiDotClientDotGmailLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[SendAs],
+    verify: gapiDotClientDotGmailLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   ): SendAsResource = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, patch = patch, smimeInfo = smimeInfo, update = update, verify = verify)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), smimeInfo = smimeInfo, update = js.Any.fromFunction1(update), verify = js.Any.fromFunction1(verify))
   
     __obj.asInstanceOf[SendAsResource]
   }

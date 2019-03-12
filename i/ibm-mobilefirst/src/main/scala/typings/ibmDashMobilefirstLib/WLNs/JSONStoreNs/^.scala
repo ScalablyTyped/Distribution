@@ -11,7 +11,7 @@ object ^ extends js.Object {
   /**
     * Creates a query for advanced find. See WL.JSONStore.QueryPart for more information.
     */
-  def QueryPart(): ibmDashMobilefirstLib.WLNs.JSONStoreNs.QueryPartObj = js.native
+  def QueryPart(): QueryPartObj = js.native
   /**
     * Changes the password for the internal storage. You must have an initialized collection before calling WL.JSONStore.changePassword.
     */
@@ -54,22 +54,18 @@ object ^ extends js.Object {
   /**
     * Provides an accessor to the collection if the collection exists, otherwise it returns undefined.
     */
-  def get(collectionName: java.lang.String): ibmDashMobilefirstLib.WLNs.JSONStoreNs.JSONStoreInstance = js.native
+  def get(collectionName: java.lang.String): JSONStoreInstance = js.native
   /**
     * Returns the message that is associated with a JSONStore error code.
     */
   def getErrorMessage(errorCode: scala.Double): java.lang.String = js.native
   def init(collections: js.Any): jqueryLib.JQueryDeferred[_] = js.native
-  def init(collections: js.Any, options: ibmDashMobilefirstLib.WLNs.JSONStoreNs.InitOptions): jqueryLib.JQueryDeferred[_] = js.native
+  def init(collections: js.Any, options: InitOptions): jqueryLib.JQueryDeferred[_] = js.native
   /**
     * @deprecated since version 5.0.6, it is no longer needed if you use WL.JSONStore.init
     */
-  def initCollection(name: java.lang.String, searchFields: js.Any): ibmDashMobilefirstLib.WLNs.JSONStoreNs.JSONStoreInstance = js.native
-  def initCollection(
-    name: java.lang.String,
-    searchFields: js.Any,
-    options: ibmDashMobilefirstLib.WLNs.JSONStoreNs.InitOptions
-  ): ibmDashMobilefirstLib.WLNs.JSONStoreNs.JSONStoreInstance = js.native
+  def initCollection(name: java.lang.String, searchFields: js.Any): JSONStoreInstance = js.native
+  def initCollection(name: java.lang.String, searchFields: js.Any, options: InitOptions): JSONStoreInstance = js.native
   /**
     * Roll back a transaction
     */

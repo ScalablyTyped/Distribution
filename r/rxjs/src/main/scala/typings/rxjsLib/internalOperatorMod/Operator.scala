@@ -12,13 +12,9 @@ trait Operator[T, R] extends js.Object {
 object Operator {
   @scala.inline
   def apply[T, R](
-    call: js.Function2[
-      rxjsLib.internalSubscriberMod.Subscriber[R], 
-      js.Any, 
-      rxjsLib.internalTypesMod.TeardownLogic
-    ]
+    call: (rxjsLib.internalSubscriberMod.Subscriber[R], js.Any) => rxjsLib.internalTypesMod.TeardownLogic
   ): Operator[T, R] = {
-    val __obj = js.Dynamic.literal(call = call)
+    val __obj = js.Dynamic.literal(call = js.Any.fromFunction2(call))
   
     __obj.asInstanceOf[Operator[T, R]]
   }

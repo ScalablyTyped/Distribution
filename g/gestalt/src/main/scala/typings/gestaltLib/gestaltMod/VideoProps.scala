@@ -56,16 +56,16 @@ object VideoProps {
     accessibilityUnmuteLabel: java.lang.String = null,
     controls: js.UndefOr[scala.Boolean] = js.undefined,
     loop: js.UndefOr[scala.Boolean] = js.undefined,
-    onDurationChange: js.Function1[/* args */ gestaltLib.Anon_Duration, scala.Unit] = null,
-    onEnded: js.Function1[/* args */ gestaltLib.Anon_EventHTMLVideoElement, scala.Unit] = null,
-    onFullscreenChange: js.Function1[/* args */ gestaltLib.Anon_EventFullscreen, scala.Unit] = null,
-    onLoadedChange: js.Function1[/* args */ gestaltLib.Anon_EventLoaded, scala.Unit] = null,
-    onPause: js.Function1[/* args */ gestaltLib.Anon_EventHTMLDivElementSyntheticEvent, scala.Unit] = null,
-    onPlay: js.Function1[/* args */ gestaltLib.Anon_EventHTMLDivElementSyntheticEvent, scala.Unit] = null,
-    onReady: js.Function1[/* args */ gestaltLib.Anon_EventHTMLVideoElement, scala.Unit] = null,
-    onSeek: js.Function1[/* args */ gestaltLib.Anon_EventHTMLVideoElement, scala.Unit] = null,
-    onTimeChange: js.Function1[/* args */ gestaltLib.Anon_EventTime, scala.Unit] = null,
-    onVolumeChange: js.Function1[/* args */ gestaltLib.Anon_EventVolume, scala.Unit] = null,
+    onDurationChange: /* args */ gestaltLib.Anon_Duration => scala.Unit = null,
+    onEnded: /* args */ gestaltLib.Anon_EventHTMLVideoElement => scala.Unit = null,
+    onFullscreenChange: /* args */ gestaltLib.Anon_EventFullscreen => scala.Unit = null,
+    onLoadedChange: /* args */ gestaltLib.Anon_EventLoaded => scala.Unit = null,
+    onPause: /* args */ gestaltLib.Anon_EventHTMLDivElementSyntheticEvent => scala.Unit = null,
+    onPlay: /* args */ gestaltLib.Anon_EventHTMLDivElementSyntheticEvent => scala.Unit = null,
+    onReady: /* args */ gestaltLib.Anon_EventHTMLVideoElement => scala.Unit = null,
+    onSeek: /* args */ gestaltLib.Anon_EventHTMLVideoElement => scala.Unit = null,
+    onTimeChange: /* args */ gestaltLib.Anon_EventTime => scala.Unit = null,
+    onVolumeChange: /* args */ gestaltLib.Anon_EventVolume => scala.Unit = null,
     playbackRate: scala.Int | scala.Double = null,
     playing: js.UndefOr[scala.Boolean] = js.undefined,
     playsInline: js.UndefOr[scala.Boolean] = js.undefined,
@@ -81,16 +81,16 @@ object VideoProps {
     if (accessibilityUnmuteLabel != null) __obj.updateDynamic("accessibilityUnmuteLabel")(accessibilityUnmuteLabel)
     if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls)
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
-    if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(onDurationChange)
-    if (onEnded != null) __obj.updateDynamic("onEnded")(onEnded)
-    if (onFullscreenChange != null) __obj.updateDynamic("onFullscreenChange")(onFullscreenChange)
-    if (onLoadedChange != null) __obj.updateDynamic("onLoadedChange")(onLoadedChange)
-    if (onPause != null) __obj.updateDynamic("onPause")(onPause)
-    if (onPlay != null) __obj.updateDynamic("onPlay")(onPlay)
-    if (onReady != null) __obj.updateDynamic("onReady")(onReady)
-    if (onSeek != null) __obj.updateDynamic("onSeek")(onSeek)
-    if (onTimeChange != null) __obj.updateDynamic("onTimeChange")(onTimeChange)
-    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(onVolumeChange)
+    if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(js.Any.fromFunction1(onDurationChange))
+    if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1(onEnded))
+    if (onFullscreenChange != null) __obj.updateDynamic("onFullscreenChange")(js.Any.fromFunction1(onFullscreenChange))
+    if (onLoadedChange != null) __obj.updateDynamic("onLoadedChange")(js.Any.fromFunction1(onLoadedChange))
+    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction1(onPause))
+    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction1(onPlay))
+    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction1(onReady))
+    if (onSeek != null) __obj.updateDynamic("onSeek")(js.Any.fromFunction1(onSeek))
+    if (onTimeChange != null) __obj.updateDynamic("onTimeChange")(js.Any.fromFunction1(onTimeChange))
+    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
     if (playbackRate != null) __obj.updateDynamic("playbackRate")(playbackRate.asInstanceOf[js.Any])
     if (!js.isUndefined(playing)) __obj.updateDynamic("playing")(playing)
     if (!js.isUndefined(playsInline)) __obj.updateDynamic("playsInline")(playsInline)

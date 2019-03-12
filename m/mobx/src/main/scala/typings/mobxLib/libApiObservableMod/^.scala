@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val deepDecorator: mobxLib.libApiObservabledecoratorMod.IObservableDecorator = js.native
-  val defaultCreateObservableOptions: mobxLib.libApiObservableMod.CreateObservableOptions = js.native
-  val observable: mobxLib.libApiObservableMod.IObservableFactory with mobxLib.libApiObservableMod.IObservableFactories with mobxLib.Anon_Enhancer = js.native
+  val defaultCreateObservableOptions: CreateObservableOptions = js.native
+  val observable: IObservableFactory with IObservableFactories with mobxLib.Anon_Enhancer = js.native
   val refDecorator: mobxLib.libApiObservabledecoratorMod.IObservableDecorator = js.native
-  def asCreateObservableOptions(thing: js.Any): mobxLib.libApiObservableMod.CreateObservableOptions = js.native
+  def asCreateObservableOptions(thing: js.Any): CreateObservableOptions = js.native
 }
 

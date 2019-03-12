@@ -16,13 +16,13 @@ trait Listener extends js.Object {
 object Listener {
   @scala.inline
   def apply(
-    onConnect: js.Function1[Controller, scala.Unit],
-    onDisconnect: js.Function1[Controller, scala.Unit],
-    onExit: js.Function1[Controller, scala.Unit],
-    onFrame: js.Function2[Controller, Frame, scala.Unit],
-    onInit: js.Function1[Controller, scala.Unit]
+    onConnect: Controller => scala.Unit,
+    onDisconnect: Controller => scala.Unit,
+    onExit: Controller => scala.Unit,
+    onFrame: (Controller, Frame) => scala.Unit,
+    onInit: Controller => scala.Unit
   ): Listener = {
-    val __obj = js.Dynamic.literal(onConnect = onConnect, onDisconnect = onDisconnect, onExit = onExit, onFrame = onFrame, onInit = onInit)
+    val __obj = js.Dynamic.literal(onConnect = js.Any.fromFunction1(onConnect), onDisconnect = js.Any.fromFunction1(onDisconnect), onExit = js.Any.fromFunction1(onExit), onFrame = js.Any.fromFunction2(onFrame), onInit = js.Any.fromFunction1(onInit))
   
     __obj.asInstanceOf[Listener]
   }

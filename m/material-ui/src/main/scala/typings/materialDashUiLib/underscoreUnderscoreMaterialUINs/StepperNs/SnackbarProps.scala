@@ -29,7 +29,7 @@ object SnackbarProps {
   @scala.inline
   def apply(
     message: java.lang.String | reactLib.reactMod.Global.JSXNs.Element,
-    onRequestClose: js.Function1[java.lang.String, scala.Unit],
+    onRequestClose: java.lang.String => scala.Unit,
     open: scala.Boolean,
     action: java.lang.String = null,
     autoHideDuration: scala.Int | scala.Double = null,
@@ -38,12 +38,12 @@ object SnackbarProps {
     className: java.lang.String = null,
     key: reactLib.reactMod.ReactNs.Key = null,
     onActionClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onDismiss: js.Function0[scala.Unit] = null,
-    onShow: js.Function0[scala.Unit] = null,
+    onDismiss: () => scala.Unit = null,
+    onShow: () => scala.Unit = null,
     openOnMount: js.UndefOr[scala.Boolean] = js.undefined,
     ref: reactLib.reactMod.ReactNs.LegacyRef[materialDashUiLib.underscoreUnderscoreMaterialUINs.Snackbar] = null
   ): SnackbarProps = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], onRequestClose = onRequestClose, open = open)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], onRequestClose = js.Any.fromFunction1(onRequestClose), open = open)
     if (action != null) __obj.updateDynamic("action")(action)
     if (autoHideDuration != null) __obj.updateDynamic("autoHideDuration")(autoHideDuration.asInstanceOf[js.Any])
     if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle)
@@ -51,8 +51,8 @@ object SnackbarProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onActionClick != null) __obj.updateDynamic("onActionClick")(onActionClick)
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     if (!js.isUndefined(openOnMount)) __obj.updateDynamic("openOnMount")(openOnMount)
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnackbarProps]

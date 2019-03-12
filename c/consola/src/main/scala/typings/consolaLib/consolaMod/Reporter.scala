@@ -11,8 +11,8 @@ trait Reporter extends js.Object {
 
 object Reporter {
   @scala.inline
-  def apply(log: js.Function1[js.Any, scala.Unit]): Reporter = {
-    val __obj = js.Dynamic.literal(log = log)
+  def apply(log: js.Any => scala.Unit): Reporter = {
+    val __obj = js.Dynamic.literal(log = js.Any.fromFunction1(log))
   
     __obj.asInstanceOf[Reporter]
   }

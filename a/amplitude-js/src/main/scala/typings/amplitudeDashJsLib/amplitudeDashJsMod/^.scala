@@ -9,25 +9,21 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val __VERSION__ : java.lang.String = js.native
-  var options: amplitudeDashJsLib.amplitudeDashJsMod.Config = js.native
+  var options: Config = js.native
   def clearUserProperties(): scala.Unit = js.native
-  def getInstance(): amplitudeDashJsLib.amplitudeDashJsMod.AmplitudeClient = js.native
-  def getInstance(instanceName: java.lang.String): amplitudeDashJsLib.amplitudeDashJsMod.AmplitudeClient = js.native
+  def getInstance(): AmplitudeClient = js.native
+  def getInstance(instanceName: java.lang.String): AmplitudeClient = js.native
   def getSessionId(): scala.Double = js.native
-  def identify(identify: amplitudeDashJsLib.amplitudeDashJsMod.Identify): scala.Unit = js.native
-  def identify(identify: amplitudeDashJsLib.amplitudeDashJsMod.Identify, callback: amplitudeDashJsLib.Callback): scala.Unit = js.native
+  def identify(identify: Identify): scala.Unit = js.native
+  def identify(identify: Identify, callback: amplitudeDashJsLib.Callback): scala.Unit = js.native
   def init(apiKey: java.lang.String): scala.Unit = js.native
   def init(apiKey: java.lang.String, userId: java.lang.String): scala.Unit = js.native
+  def init(apiKey: java.lang.String, userId: java.lang.String, options: Config): scala.Unit = js.native
   def init(
     apiKey: java.lang.String,
     userId: java.lang.String,
-    options: amplitudeDashJsLib.amplitudeDashJsMod.Config
-  ): scala.Unit = js.native
-  def init(
-    apiKey: java.lang.String,
-    userId: java.lang.String,
-    options: amplitudeDashJsLib.amplitudeDashJsMod.Config,
-    callback: js.Function1[/* client */ amplitudeDashJsLib.amplitudeDashJsMod.AmplitudeClient, scala.Unit]
+    options: Config,
+    callback: js.Function1[/* client */ AmplitudeClient, scala.Unit]
   ): scala.Unit = js.native
   def isNewSession(): scala.Boolean = js.native
   def logEvent(event: java.lang.String): amplitudeDashJsLib.LogReturn = js.native
@@ -47,7 +43,7 @@ object ^ extends js.Object {
     callback: amplitudeDashJsLib.Callback
   ): amplitudeDashJsLib.LogReturn = js.native
   def logRevenue(pric: scala.Double, quantity: scala.Double, product: java.lang.String): amplitudeDashJsLib.LogReturn = js.native
-  def logRevenueV2(revenue_obj: amplitudeDashJsLib.amplitudeDashJsMod.Revenue): amplitudeDashJsLib.LogReturn = js.native
+  def logRevenueV2(revenue_obj: Revenue): amplitudeDashJsLib.LogReturn = js.native
   def regenerateDeviceId(): scala.Unit = js.native
   def setDeviceId(id: java.lang.String): scala.Unit = js.native
   def setDomain(domain: java.lang.String): scala.Unit = js.native

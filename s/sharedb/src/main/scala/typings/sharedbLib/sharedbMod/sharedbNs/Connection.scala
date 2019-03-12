@@ -24,23 +24,11 @@ trait Connection extends js.Object {
 object Connection {
   @scala.inline
   def apply(
-    createFetchQuery: js.Function4[
-      java.lang.String, 
-      java.lang.String, 
-      sharedbLib.Anon_Results, 
-      js.Function2[/* err */ Error, /* results */ js.Any, _], 
-      sharedbLib.libSharedbMod.Query
-    ],
-    createSubscribeQuery: js.Function4[
-      java.lang.String, 
-      java.lang.String, 
-      sharedbLib.Anon_Results, 
-      js.Function2[/* err */ Error, /* results */ js.Any, _], 
-      sharedbLib.libSharedbMod.Query
-    ],
-    get: js.Function2[java.lang.String, java.lang.String, sharedbLib.libSharedbMod.Doc]
+    createFetchQuery: (java.lang.String, java.lang.String, sharedbLib.Anon_Results, js.Function2[/* err */ Error, /* results */ js.Any, _]) => sharedbLib.libSharedbMod.Query,
+    createSubscribeQuery: (java.lang.String, java.lang.String, sharedbLib.Anon_Results, js.Function2[/* err */ Error, /* results */ js.Any, _]) => sharedbLib.libSharedbMod.Query,
+    get: (java.lang.String, java.lang.String) => sharedbLib.libSharedbMod.Doc
   ): Connection = {
-    val __obj = js.Dynamic.literal(createFetchQuery = createFetchQuery, createSubscribeQuery = createSubscribeQuery, get = get)
+    val __obj = js.Dynamic.literal(createFetchQuery = js.Any.fromFunction4(createFetchQuery), createSubscribeQuery = js.Any.fromFunction4(createSubscribeQuery), get = js.Any.fromFunction2(get))
   
     __obj.asInstanceOf[Connection]
   }

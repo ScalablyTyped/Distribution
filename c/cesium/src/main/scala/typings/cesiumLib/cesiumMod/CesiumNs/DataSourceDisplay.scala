@@ -19,12 +19,12 @@ object DataSourceDisplay {
   def apply(
     dataSources: DataSourceCollection,
     defaultDataSource: CustomDataSource,
-    destroy: js.Function0[scala.Unit],
-    isDestroyed: js.Function0[scala.Boolean],
+    destroy: () => scala.Unit,
+    isDestroyed: () => scala.Boolean,
     scene: Scene,
-    update: js.Function1[JulianDate, scala.Boolean]
+    update: JulianDate => scala.Boolean
   ): DataSourceDisplay = {
-    val __obj = js.Dynamic.literal(dataSources = dataSources, defaultDataSource = defaultDataSource, destroy = destroy, isDestroyed = isDestroyed, scene = scene, update = update)
+    val __obj = js.Dynamic.literal(dataSources = dataSources, defaultDataSource = defaultDataSource, destroy = js.Any.fromFunction0(destroy), isDestroyed = js.Any.fromFunction0(isDestroyed), scene = scene, update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[DataSourceDisplay]
   }

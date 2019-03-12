@@ -21,13 +21,13 @@ trait Frustum extends js.Object {
 object Frustum {
   @scala.inline
   def apply(
-    computeCullingVolume: js.Function3[Cartesian3, Cartesian3, Cartesian3, CullingVolume],
+    computeCullingVolume: (Cartesian3, Cartesian3, Cartesian3) => CullingVolume,
     far: scala.Double,
-    getPixelDimensions: js.Function4[scala.Double, scala.Double, scala.Double, Cartesian2, Cartesian2],
+    getPixelDimensions: (scala.Double, scala.Double, scala.Double, Cartesian2) => Cartesian2,
     near: scala.Double,
     projectionMatrix: Matrix4
   ): Frustum = {
-    val __obj = js.Dynamic.literal(computeCullingVolume = computeCullingVolume, far = far, getPixelDimensions = getPixelDimensions, near = near, projectionMatrix = projectionMatrix)
+    val __obj = js.Dynamic.literal(computeCullingVolume = js.Any.fromFunction3(computeCullingVolume), far = far, getPixelDimensions = js.Any.fromFunction4(getPixelDimensions), near = near, projectionMatrix = projectionMatrix)
   
     __obj.asInstanceOf[Frustum]
   }

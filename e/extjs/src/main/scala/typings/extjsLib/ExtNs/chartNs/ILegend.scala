@@ -50,14 +50,14 @@ object ILegend {
     boxStroke: java.lang.String = null,
     boxStrokeWidth: java.lang.String = null,
     boxZIndex: scala.Int | scala.Double = null,
-    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
-    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
+    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
+    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     extend: java.lang.String = null,
-    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], ILegend] = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => ILegend = null,
     isVertical: js.UndefOr[scala.Boolean] = js.undefined,
     itemSpacing: scala.Int | scala.Double = null,
     labelColor: java.lang.String = null,
@@ -69,7 +69,7 @@ object ILegend {
     self: extjsLib.ExtNs.IClass = null,
     singleton: js.UndefOr[scala.Boolean] = js.undefined,
     statics: js.Any = null,
-    toggle: js.Function1[/* show */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    toggle: /* show */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     update: js.UndefOr[scala.Boolean] = js.undefined,
     uses: extjsLib.ExtNs.Array = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined,
@@ -83,14 +83,14 @@ object ILegend {
     if (boxStroke != null) __obj.updateDynamic("boxStroke")(boxStroke)
     if (boxStrokeWidth != null) __obj.updateDynamic("boxStrokeWidth")(boxStrokeWidth)
     if (boxZIndex != null) __obj.updateDynamic("boxZIndex")(boxZIndex.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
-    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
-    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
+    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
+    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config)
     if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (!js.isUndefined(isVertical)) __obj.updateDynamic("isVertical")(isVertical)
     if (itemSpacing != null) __obj.updateDynamic("itemSpacing")(itemSpacing.asInstanceOf[js.Any])
     if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor)
@@ -102,7 +102,7 @@ object ILegend {
     if (self != null) __obj.updateDynamic("self")(self)
     if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
     if (statics != null) __obj.updateDynamic("statics")(statics)
-    if (toggle != null) __obj.updateDynamic("toggle")(toggle)
+    if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction1(toggle))
     if (!js.isUndefined(update)) __obj.updateDynamic("update")(update)
     if (uses != null) __obj.updateDynamic("uses")(uses)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)

@@ -113,30 +113,30 @@ trait ASPxClientChartPrintOptions extends js.Object {
 object ASPxClientChartPrintOptions {
   @scala.inline
   def apply(
-    GetCustomPaperHeight: js.Function0[scala.Double],
-    GetCustomPaperName: js.Function0[java.lang.String],
-    GetCustomPaperWidth: js.Function0[scala.Double],
-    GetLandscape: js.Function0[scala.Boolean],
-    GetMarginBottom: js.Function0[scala.Double],
-    GetMarginLeft: js.Function0[scala.Double],
-    GetMarginRight: js.Function0[scala.Double],
-    GetMarginTop: js.Function0[scala.Double],
-    GetPaperKind: js.Function0[java.lang.String],
-    GetPrintCrosshair: js.Function0[scala.Boolean],
-    GetSizeMode: js.Function0[java.lang.String],
-    SetCustomPaperHeight: js.Function1[scala.Double, scala.Unit],
-    SetCustomPaperName: js.Function1[java.lang.String, scala.Unit],
-    SetCustomPaperWidth: js.Function1[scala.Double, scala.Unit],
-    SetLandscape: js.Function1[scala.Boolean, scala.Unit],
-    SetMarginBottom: js.Function1[scala.Double, scala.Unit],
-    SetMarginLeft: js.Function1[scala.Double, scala.Unit],
-    SetMarginRight: js.Function1[scala.Double, scala.Unit],
-    SetMarginTop: js.Function1[scala.Double, scala.Unit],
-    SetPaperKind: js.Function1[java.lang.String, scala.Unit],
-    SetPrintCrosshair: js.Function1[scala.Boolean, scala.Unit],
-    SetSizeMode: js.Function1[java.lang.String, scala.Unit]
+    GetCustomPaperHeight: () => scala.Double,
+    GetCustomPaperName: () => java.lang.String,
+    GetCustomPaperWidth: () => scala.Double,
+    GetLandscape: () => scala.Boolean,
+    GetMarginBottom: () => scala.Double,
+    GetMarginLeft: () => scala.Double,
+    GetMarginRight: () => scala.Double,
+    GetMarginTop: () => scala.Double,
+    GetPaperKind: () => java.lang.String,
+    GetPrintCrosshair: () => scala.Boolean,
+    GetSizeMode: () => java.lang.String,
+    SetCustomPaperHeight: scala.Double => scala.Unit,
+    SetCustomPaperName: java.lang.String => scala.Unit,
+    SetCustomPaperWidth: scala.Double => scala.Unit,
+    SetLandscape: scala.Boolean => scala.Unit,
+    SetMarginBottom: scala.Double => scala.Unit,
+    SetMarginLeft: scala.Double => scala.Unit,
+    SetMarginRight: scala.Double => scala.Unit,
+    SetMarginTop: scala.Double => scala.Unit,
+    SetPaperKind: java.lang.String => scala.Unit,
+    SetPrintCrosshair: scala.Boolean => scala.Unit,
+    SetSizeMode: java.lang.String => scala.Unit
   ): ASPxClientChartPrintOptions = {
-    val __obj = js.Dynamic.literal(GetCustomPaperHeight = GetCustomPaperHeight, GetCustomPaperName = GetCustomPaperName, GetCustomPaperWidth = GetCustomPaperWidth, GetLandscape = GetLandscape, GetMarginBottom = GetMarginBottom, GetMarginLeft = GetMarginLeft, GetMarginRight = GetMarginRight, GetMarginTop = GetMarginTop, GetPaperKind = GetPaperKind, GetPrintCrosshair = GetPrintCrosshair, GetSizeMode = GetSizeMode, SetCustomPaperHeight = SetCustomPaperHeight, SetCustomPaperName = SetCustomPaperName, SetCustomPaperWidth = SetCustomPaperWidth, SetLandscape = SetLandscape, SetMarginBottom = SetMarginBottom, SetMarginLeft = SetMarginLeft, SetMarginRight = SetMarginRight, SetMarginTop = SetMarginTop, SetPaperKind = SetPaperKind, SetPrintCrosshair = SetPrintCrosshair, SetSizeMode = SetSizeMode)
+    val __obj = js.Dynamic.literal(GetCustomPaperHeight = js.Any.fromFunction0(GetCustomPaperHeight), GetCustomPaperName = js.Any.fromFunction0(GetCustomPaperName), GetCustomPaperWidth = js.Any.fromFunction0(GetCustomPaperWidth), GetLandscape = js.Any.fromFunction0(GetLandscape), GetMarginBottom = js.Any.fromFunction0(GetMarginBottom), GetMarginLeft = js.Any.fromFunction0(GetMarginLeft), GetMarginRight = js.Any.fromFunction0(GetMarginRight), GetMarginTop = js.Any.fromFunction0(GetMarginTop), GetPaperKind = js.Any.fromFunction0(GetPaperKind), GetPrintCrosshair = js.Any.fromFunction0(GetPrintCrosshair), GetSizeMode = js.Any.fromFunction0(GetSizeMode), SetCustomPaperHeight = js.Any.fromFunction1(SetCustomPaperHeight), SetCustomPaperName = js.Any.fromFunction1(SetCustomPaperName), SetCustomPaperWidth = js.Any.fromFunction1(SetCustomPaperWidth), SetLandscape = js.Any.fromFunction1(SetLandscape), SetMarginBottom = js.Any.fromFunction1(SetMarginBottom), SetMarginLeft = js.Any.fromFunction1(SetMarginLeft), SetMarginRight = js.Any.fromFunction1(SetMarginRight), SetMarginTop = js.Any.fromFunction1(SetMarginTop), SetPaperKind = js.Any.fromFunction1(SetPaperKind), SetPrintCrosshair = js.Any.fromFunction1(SetPrintCrosshair), SetSizeMode = js.Any.fromFunction1(SetSizeMode))
   
     __obj.asInstanceOf[ASPxClientChartPrintOptions]
   }

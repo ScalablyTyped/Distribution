@@ -14,14 +14,11 @@ trait IOutputStream
 object IOutputStream {
   @scala.inline
   def apply(
-    close: js.Function0[scala.Unit],
-    flushAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[scala.Boolean]],
-    writeAsync: js.Function1[
-      IBuffer, 
-      winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[scala.Double, scala.Double]
-    ]
+    close: () => scala.Unit,
+    flushAsync: () => winrtLib.WindowsNs.FoundationNs.IAsyncOperation[scala.Boolean],
+    writeAsync: IBuffer => winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[scala.Double, scala.Double]
   ): IOutputStream = {
-    val __obj = js.Dynamic.literal(close = close, flushAsync = flushAsync, writeAsync = writeAsync)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), flushAsync = js.Any.fromFunction0(flushAsync), writeAsync = js.Any.fromFunction1(writeAsync))
   
     __obj.asInstanceOf[IOutputStream]
   }

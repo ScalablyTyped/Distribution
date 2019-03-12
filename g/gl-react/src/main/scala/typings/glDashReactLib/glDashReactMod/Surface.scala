@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Surface[T] ()
   extends reactLib.reactMod.Component[SurfaceProps, SurfaceState, js.Any] {
   var buffer: stdLib.WebGLBuffer = js.native
-  var gl: js.UndefOr[reactLib.WebGLRenderingContext] = js.native
+  var gl: js.UndefOr[stdLib.WebGLRenderingContext] = js.native
   var glView: T = js.native
   var id: scala.Double = js.native
   var loaderResolver: js.UndefOr[js.Any] = js.native

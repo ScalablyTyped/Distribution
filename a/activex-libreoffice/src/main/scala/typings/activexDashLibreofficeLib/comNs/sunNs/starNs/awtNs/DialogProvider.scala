@@ -19,20 +19,14 @@ trait DialogProvider extends XDialogProvider {
 object DialogProvider {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    createDialog: js.Function1[java.lang.String, XDialog],
-    createWithModel: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel, scala.Unit],
-    createWithModelAndScripting: js.Function4[
-      activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer, 
-      activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.XScriptListener, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createDialog: java.lang.String => XDialog,
+    createWithModel: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel => scala.Unit,
+    createWithModelAndScripting: (activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer, activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.XScriptListener) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): DialogProvider = {
-    val __obj = js.Dynamic.literal(acquire = acquire, createDialog = createDialog, createWithModel = createWithModel, createWithModelAndScripting = createWithModelAndScripting, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createDialog = js.Any.fromFunction1(createDialog), createWithModel = js.Any.fromFunction1(createWithModel), createWithModelAndScripting = js.Any.fromFunction4(createWithModelAndScripting), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[DialogProvider]
   }

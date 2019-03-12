@@ -64,52 +64,25 @@ trait FunctionCallArgsAny extends js.Object {
 object FunctionCallArgsAny {
   @scala.inline
   def apply(
-    addListener_callback: js.Function2[
-      backoffLib.backoffLibStrings.callback, 
-      js.Function1[/* results */ js.Array[_], scala.Unit], 
-      FunctionCallArgsAny
-    ],
-    emit_callback: js.Function2[backoffLib.backoffLibStrings.callback, js.Array[_], scala.Boolean],
-    getLastResult: js.Function0[js.Array[_]],
-    listeners_callback: js.Function1[
-      backoffLib.backoffLibStrings.callback, 
-      js.Array[js.Function1[/* results */ js.Array[_], scala.Unit]]
-    ],
-    on_callback: js.Function2[
-      backoffLib.backoffLibStrings.callback, 
-      js.Function1[/* results */ js.Array[_], scala.Unit], 
-      FunctionCallArgsAny
-    ],
-    once_callback: js.Function2[
-      backoffLib.backoffLibStrings.callback, 
-      js.Function1[/* results */ js.Array[_], scala.Unit], 
-      FunctionCallArgsAny
-    ],
-    prependListener_callback: js.Function2[
-      backoffLib.backoffLibStrings.callback, 
-      js.Function1[/* results */ js.Array[_], scala.Unit], 
-      FunctionCallArgsAny
-    ],
-    prependOnceListener_callback: js.Function2[
-      backoffLib.backoffLibStrings.callback, 
-      js.Function1[/* results */ js.Array[_], scala.Unit], 
-      FunctionCallArgsAny
-    ],
-    removeListener_callback: js.Function2[
-      backoffLib.backoffLibStrings.callback, 
-      js.Function1[/* results */ js.Array[_], scala.Unit], 
-      FunctionCallArgsAny
-    ]
+    addListener_callback: (backoffLib.backoffLibStrings.callback, js.Function1[/* results */ js.Array[_], scala.Unit]) => FunctionCallArgsAny,
+    emit_callback: (backoffLib.backoffLibStrings.callback, js.Array[_]) => scala.Boolean,
+    getLastResult: () => js.Array[_],
+    listeners_callback: backoffLib.backoffLibStrings.callback => js.Array[js.Function1[/* results */ js.Array[_], scala.Unit]],
+    on_callback: (backoffLib.backoffLibStrings.callback, js.Function1[/* results */ js.Array[_], scala.Unit]) => FunctionCallArgsAny,
+    once_callback: (backoffLib.backoffLibStrings.callback, js.Function1[/* results */ js.Array[_], scala.Unit]) => FunctionCallArgsAny,
+    prependListener_callback: (backoffLib.backoffLibStrings.callback, js.Function1[/* results */ js.Array[_], scala.Unit]) => FunctionCallArgsAny,
+    prependOnceListener_callback: (backoffLib.backoffLibStrings.callback, js.Function1[/* results */ js.Array[_], scala.Unit]) => FunctionCallArgsAny,
+    removeListener_callback: (backoffLib.backoffLibStrings.callback, js.Function1[/* results */ js.Array[_], scala.Unit]) => FunctionCallArgsAny
   ): FunctionCallArgsAny = {
-    val __obj = js.Dynamic.literal(getLastResult = getLastResult)
-    __obj.updateDynamic("addListener")(addListener_callback)
-    __obj.updateDynamic("emit")(emit_callback)
-    __obj.updateDynamic("listeners")(listeners_callback)
-    __obj.updateDynamic("on")(on_callback)
-    __obj.updateDynamic("once")(once_callback)
-    __obj.updateDynamic("prependListener")(prependListener_callback)
-    __obj.updateDynamic("prependOnceListener")(prependOnceListener_callback)
-    __obj.updateDynamic("removeListener")(removeListener_callback)
+    val __obj = js.Dynamic.literal(getLastResult = js.Any.fromFunction0(getLastResult))
+    __obj.updateDynamic("addListener")(js.Any.fromFunction2(addListener_callback))
+    __obj.updateDynamic("emit")(js.Any.fromFunction2(emit_callback))
+    __obj.updateDynamic("listeners")(js.Any.fromFunction1(listeners_callback))
+    __obj.updateDynamic("on")(js.Any.fromFunction2(on_callback))
+    __obj.updateDynamic("once")(js.Any.fromFunction2(once_callback))
+    __obj.updateDynamic("prependListener")(js.Any.fromFunction2(prependListener_callback))
+    __obj.updateDynamic("prependOnceListener")(js.Any.fromFunction2(prependOnceListener_callback))
+    __obj.updateDynamic("removeListener")(js.Any.fromFunction2(removeListener_callback))
     __obj.asInstanceOf[FunctionCallArgsAny]
   }
 }

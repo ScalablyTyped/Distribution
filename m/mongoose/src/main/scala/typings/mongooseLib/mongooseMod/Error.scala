@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Error
-  extends nodeLib.ErrorConstructor {
+  extends stdLib.ErrorConstructor {
   // "MongooseError" for instances of the current class,
   // an other string for instances of derived classes.
   var name: mongooseLib.mongooseLibStrings.MongooseError | java.lang.String = js.native

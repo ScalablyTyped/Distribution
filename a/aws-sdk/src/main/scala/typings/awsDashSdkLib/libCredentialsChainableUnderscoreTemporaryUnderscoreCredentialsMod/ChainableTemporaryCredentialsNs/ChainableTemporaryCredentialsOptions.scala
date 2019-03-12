@@ -14,7 +14,7 @@ trait ChainableTemporaryCredentialsOptions extends js.Object {
     js.Function2[
       /* serialNumber */ java.lang.String, 
       /* callback */ js.Function2[
-        /* err */ js.UndefOr[nodeLib.Error], 
+        /* err */ js.UndefOr[stdLib.Error], 
         /* token */ js.UndefOr[java.lang.String], 
         scala.Unit
       ], 
@@ -28,20 +28,16 @@ object ChainableTemporaryCredentialsOptions {
   def apply(
     masterCredentials: awsDashSdkLib.libCredentialsMod.Credentials = null,
     params: awsDashSdkLib.clientsStsMod.STSNs.AssumeRoleRequest | awsDashSdkLib.clientsStsMod.STSNs.GetSessionTokenRequest = null,
-    tokenCodeFn: js.Function2[
-      /* serialNumber */ java.lang.String, 
-      /* callback */ js.Function2[
-        /* err */ js.UndefOr[nodeLib.Error], 
-        /* token */ js.UndefOr[java.lang.String], 
-        scala.Unit
-      ], 
+    tokenCodeFn: (/* serialNumber */ java.lang.String, /* callback */ js.Function2[
+      /* err */ js.UndefOr[stdLib.Error], 
+      /* token */ js.UndefOr[java.lang.String], 
       scala.Unit
-    ] = null
+    ]) => scala.Unit = null
   ): ChainableTemporaryCredentialsOptions = {
     val __obj = js.Dynamic.literal()
     if (masterCredentials != null) __obj.updateDynamic("masterCredentials")(masterCredentials)
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (tokenCodeFn != null) __obj.updateDynamic("tokenCodeFn")(tokenCodeFn)
+    if (tokenCodeFn != null) __obj.updateDynamic("tokenCodeFn")(js.Any.fromFunction2(tokenCodeFn))
     __obj.asInstanceOf[ChainableTemporaryCredentialsOptions]
   }
 }

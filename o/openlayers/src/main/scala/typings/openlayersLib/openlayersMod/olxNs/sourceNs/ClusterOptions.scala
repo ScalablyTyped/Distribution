@@ -30,10 +30,7 @@ object ClusterOptions {
     distance: scala.Int | scala.Double = null,
     extent: openlayersLib.openlayersMod.Extent = null,
     format: openlayersLib.openlayersMod.formatNs.Feature = null,
-    geometryFunction: js.Function1[
-      /* feature */ openlayersLib.openlayersMod.Feature, 
-      openlayersLib.openlayersMod.geomNs.Point
-    ] = null,
+    geometryFunction: /* feature */ openlayersLib.openlayersMod.Feature => openlayersLib.openlayersMod.geomNs.Point = null,
     logo: java.lang.String = null,
     projection: openlayersLib.openlayersMod.ProjectionLike = null,
     wrapX: js.UndefOr[scala.Boolean] = js.undefined
@@ -43,7 +40,7 @@ object ClusterOptions {
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent)
     if (format != null) __obj.updateDynamic("format")(format)
-    if (geometryFunction != null) __obj.updateDynamic("geometryFunction")(geometryFunction)
+    if (geometryFunction != null) __obj.updateDynamic("geometryFunction")(js.Any.fromFunction1(geometryFunction))
     if (logo != null) __obj.updateDynamic("logo")(logo)
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)

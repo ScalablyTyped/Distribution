@@ -35,14 +35,14 @@ object IMouseEvent {
     middleButton: scala.Boolean,
     posx: scala.Double,
     posy: scala.Double,
-    preventDefault: js.Function0[scala.Unit],
+    preventDefault: () => scala.Unit,
     rightButton: scala.Boolean,
     shiftKey: scala.Boolean,
-    stopPropagation: js.Function0[scala.Unit],
+    stopPropagation: () => scala.Unit,
     target: stdLib.HTMLElement,
     timestamp: scala.Double
   ): IMouseEvent = {
-    val __obj = js.Dynamic.literal(altKey = altKey, browserEvent = browserEvent, ctrlKey = ctrlKey, detail = detail, leftButton = leftButton, metaKey = metaKey, middleButton = middleButton, posx = posx, posy = posy, preventDefault = preventDefault, rightButton = rightButton, shiftKey = shiftKey, stopPropagation = stopPropagation, target = target, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(altKey = altKey, browserEvent = browserEvent, ctrlKey = ctrlKey, detail = detail, leftButton = leftButton, metaKey = metaKey, middleButton = middleButton, posx = posx, posy = posy, preventDefault = js.Any.fromFunction0(preventDefault), rightButton = rightButton, shiftKey = shiftKey, stopPropagation = js.Any.fromFunction0(stopPropagation), target = target, timestamp = timestamp)
   
     __obj.asInstanceOf[IMouseEvent]
   }

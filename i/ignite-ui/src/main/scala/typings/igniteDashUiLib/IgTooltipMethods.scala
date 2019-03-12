@@ -11,8 +11,8 @@ trait IgTooltipMethods extends js.Object {
 
 object IgTooltipMethods {
   @scala.inline
-  def apply(destroy: js.Function0[scala.Unit]): IgTooltipMethods = {
-    val __obj = js.Dynamic.literal(destroy = destroy)
+  def apply(destroy: () => scala.Unit): IgTooltipMethods = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
   
     __obj.asInstanceOf[IgTooltipMethods]
   }

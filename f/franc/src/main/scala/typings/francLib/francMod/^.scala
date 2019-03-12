@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(text: java.lang.String): francLib.ISO6393 = js.native
-  def apply(text: java.lang.String, options: francLib.francMod.Options): francLib.ISO6393 = js.native
+  def apply(text: java.lang.String, options: Options): francLib.ISO6393 = js.native
   def all(text: java.lang.String): js.Tuple2[francLib.ISO6393, scala.Double] = js.native
-  def all(text: java.lang.String, options: francLib.francMod.Options): js.Tuple2[francLib.ISO6393, scala.Double] = js.native
+  def all(text: java.lang.String, options: Options): js.Tuple2[francLib.ISO6393, scala.Double] = js.native
 }
 

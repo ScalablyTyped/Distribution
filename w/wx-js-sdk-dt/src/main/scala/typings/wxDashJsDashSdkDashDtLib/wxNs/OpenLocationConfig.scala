@@ -30,27 +30,27 @@ object OpenLocationConfig {
   @scala.inline
   def apply(
     address: java.lang.String = null,
-    cancel: js.Function0[scala.Unit] = null,
-    complete: js.Function1[/* res */ js.UndefOr[js.Any], scala.Unit] = null,
-    fail: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit] = null,
+    cancel: () => scala.Unit = null,
+    complete: /* res */ js.UndefOr[js.Any] => scala.Unit = null,
+    fail: /* error */ js.UndefOr[js.Any] => scala.Unit = null,
     infoUrl: java.lang.String = null,
     latitude: scala.Int | scala.Double = null,
     longitude: scala.Int | scala.Double = null,
     name: java.lang.String = null,
     scale: scala.Int | scala.Double = null,
-    success: js.Function1[/* res */ js.UndefOr[js.Any], scala.Unit] = null
+    success: /* res */ js.UndefOr[js.Any] => scala.Unit = null
   ): OpenLocationConfig = {
     val __obj = js.Dynamic.literal()
     if (address != null) __obj.updateDynamic("address")(address)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (infoUrl != null) __obj.updateDynamic("infoUrl")(infoUrl)
     if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
     if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[OpenLocationConfig]
   }
 }

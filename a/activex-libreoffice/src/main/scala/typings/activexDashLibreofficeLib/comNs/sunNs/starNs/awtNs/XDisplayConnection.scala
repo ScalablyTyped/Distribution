@@ -47,16 +47,16 @@ object XDisplayConnection {
   @scala.inline
   def apply(
     Identifier: js.Any,
-    acquire: js.Function0[scala.Unit],
-    addErrorHandler: js.Function1[XEventHandler, scala.Unit],
-    addEventHandler: js.Function3[js.Any, XEventHandler, scala.Double, scala.Unit],
-    getIdentifier: js.Function0[js.Any],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeErrorHandler: js.Function1[XEventHandler, scala.Unit],
-    removeEventHandler: js.Function2[js.Any, XEventHandler, scala.Unit]
+    acquire: () => scala.Unit,
+    addErrorHandler: XEventHandler => scala.Unit,
+    addEventHandler: (js.Any, XEventHandler, scala.Double) => scala.Unit,
+    getIdentifier: () => js.Any,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeErrorHandler: XEventHandler => scala.Unit,
+    removeEventHandler: (js.Any, XEventHandler) => scala.Unit
   ): XDisplayConnection = {
-    val __obj = js.Dynamic.literal(Identifier = Identifier, acquire = acquire, addErrorHandler = addErrorHandler, addEventHandler = addEventHandler, getIdentifier = getIdentifier, queryInterface = queryInterface, release = release, removeErrorHandler = removeErrorHandler, removeEventHandler = removeEventHandler)
+    val __obj = js.Dynamic.literal(Identifier = Identifier, acquire = js.Any.fromFunction0(acquire), addErrorHandler = js.Any.fromFunction1(addErrorHandler), addEventHandler = js.Any.fromFunction3(addEventHandler), getIdentifier = js.Any.fromFunction0(getIdentifier), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeErrorHandler = js.Any.fromFunction1(removeErrorHandler), removeEventHandler = js.Any.fromFunction2(removeEventHandler))
   
     __obj.asInstanceOf[XDisplayConnection]
   }

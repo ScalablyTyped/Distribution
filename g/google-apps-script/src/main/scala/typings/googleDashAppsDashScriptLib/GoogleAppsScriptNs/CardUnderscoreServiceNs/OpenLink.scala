@@ -14,11 +14,11 @@ trait OpenLink extends js.Object {
 object OpenLink {
   @scala.inline
   def apply(
-    setOnClose: js.Function1[OnClose, OpenLink],
-    setOpenAs: js.Function1[OpenAs, OpenLink],
-    setUrl: js.Function1[java.lang.String, OpenLink]
+    setOnClose: OnClose => OpenLink,
+    setOpenAs: OpenAs => OpenLink,
+    setUrl: java.lang.String => OpenLink
   ): OpenLink = {
-    val __obj = js.Dynamic.literal(setOnClose = setOnClose, setOpenAs = setOpenAs, setUrl = setUrl)
+    val __obj = js.Dynamic.literal(setOnClose = js.Any.fromFunction1(setOnClose), setOpenAs = js.Any.fromFunction1(setOpenAs), setUrl = js.Any.fromFunction1(setUrl))
   
     __obj.asInstanceOf[OpenLink]
   }

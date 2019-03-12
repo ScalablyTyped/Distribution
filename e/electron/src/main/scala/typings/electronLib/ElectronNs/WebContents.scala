@@ -1392,7 +1392,7 @@ class WebContents () extends EventEmitter {
     */
   def printToPDF(
     options: PrintToPDFOptions,
-    callback: js.Function2[/* error */ nodeLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* error */ stdLib.Error, /* data */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Executes the editing command redo in web page.
@@ -1734,19 +1734,19 @@ class WebContents () extends EventEmitter {
   def savePage_HTMLComplete(
     fullPath: java.lang.String,
     saveType: electronLib.electronLibStrings.HTMLComplete,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Boolean = js.native
   @JSName("savePage")
   def savePage_HTMLOnly(
     fullPath: java.lang.String,
     saveType: electronLib.electronLibStrings.HTMLOnly,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Boolean = js.native
   @JSName("savePage")
   def savePage_MHTML(
     fullPath: java.lang.String,
     saveType: electronLib.electronLibStrings.MHTML,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Boolean = js.native
   /**
     * Executes the editing command selectAll in web page.

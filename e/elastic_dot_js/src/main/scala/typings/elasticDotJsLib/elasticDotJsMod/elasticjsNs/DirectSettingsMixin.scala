@@ -69,18 +69,18 @@ trait DirectSettingsMixin extends js.Object {
 object DirectSettingsMixin {
   @scala.inline
   def apply(
-    accuracy: js.Function1[scala.Double, DirectSettingsMixin],
-    maxEdits: js.Function1[scala.Double, DirectSettingsMixin],
-    maxInspections: js.Function1[scala.Double, DirectSettingsMixin],
-    maxTermFreq: js.Function1[scala.Double, DirectSettingsMixin],
-    minDocFreq: js.Function1[scala.Double, DirectSettingsMixin],
-    minWordLen: js.Function1[scala.Double, DirectSettingsMixin],
-    prefixLen: js.Function1[scala.Double, DirectSettingsMixin],
-    sort: js.Function1[java.lang.String, DirectSettingsMixin],
-    stringDistance: js.Function1[java.lang.String, DirectSettingsMixin],
-    suggestMode: js.Function1[java.lang.String, DirectSettingsMixin]
+    accuracy: scala.Double => DirectSettingsMixin,
+    maxEdits: scala.Double => DirectSettingsMixin,
+    maxInspections: scala.Double => DirectSettingsMixin,
+    maxTermFreq: scala.Double => DirectSettingsMixin,
+    minDocFreq: scala.Double => DirectSettingsMixin,
+    minWordLen: scala.Double => DirectSettingsMixin,
+    prefixLen: scala.Double => DirectSettingsMixin,
+    sort: java.lang.String => DirectSettingsMixin,
+    stringDistance: java.lang.String => DirectSettingsMixin,
+    suggestMode: java.lang.String => DirectSettingsMixin
   ): DirectSettingsMixin = {
-    val __obj = js.Dynamic.literal(accuracy = accuracy, maxEdits = maxEdits, maxInspections = maxInspections, maxTermFreq = maxTermFreq, minDocFreq = minDocFreq, minWordLen = minWordLen, prefixLen = prefixLen, sort = sort, stringDistance = stringDistance, suggestMode = suggestMode)
+    val __obj = js.Dynamic.literal(accuracy = js.Any.fromFunction1(accuracy), maxEdits = js.Any.fromFunction1(maxEdits), maxInspections = js.Any.fromFunction1(maxInspections), maxTermFreq = js.Any.fromFunction1(maxTermFreq), minDocFreq = js.Any.fromFunction1(minDocFreq), minWordLen = js.Any.fromFunction1(minWordLen), prefixLen = js.Any.fromFunction1(prefixLen), sort = js.Any.fromFunction1(sort), stringDistance = js.Any.fromFunction1(stringDistance), suggestMode = js.Any.fromFunction1(suggestMode))
   
     __obj.asInstanceOf[DirectSettingsMixin]
   }

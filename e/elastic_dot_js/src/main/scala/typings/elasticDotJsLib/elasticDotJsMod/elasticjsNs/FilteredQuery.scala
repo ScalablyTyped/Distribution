@@ -53,16 +53,16 @@ trait FilteredQuery extends Query {
 object FilteredQuery {
   @scala.inline
   def apply(
-    _type: js.Function0[java.lang.String],
-    boost: js.Function1[scala.Double, FilteredQuery],
-    cache: js.Function1[scala.Boolean, FilteredQuery],
-    cacheKey: js.Function1[java.lang.String, FilteredQuery],
-    filter: js.Function1[js.Object, FilteredQuery],
-    query: js.Function1[js.Object, FilteredQuery],
-    strategy: js.Function1[java.lang.String, FilteredQuery],
-    toJSON: js.Function0[js.Any]
+    _type: () => java.lang.String,
+    boost: scala.Double => FilteredQuery,
+    cache: scala.Boolean => FilteredQuery,
+    cacheKey: java.lang.String => FilteredQuery,
+    filter: js.Object => FilteredQuery,
+    query: js.Object => FilteredQuery,
+    strategy: java.lang.String => FilteredQuery,
+    toJSON: () => js.Any
   ): FilteredQuery = {
-    val __obj = js.Dynamic.literal(_type = _type, boost = boost, cache = cache, cacheKey = cacheKey, filter = filter, query = query, strategy = strategy, toJSON = toJSON)
+    val __obj = js.Dynamic.literal(_type = js.Any.fromFunction0(_type), boost = js.Any.fromFunction1(boost), cache = js.Any.fromFunction1(cache), cacheKey = js.Any.fromFunction1(cacheKey), filter = js.Any.fromFunction1(filter), query = js.Any.fromFunction1(query), strategy = js.Any.fromFunction1(strategy), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[FilteredQuery]
   }

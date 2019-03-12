@@ -13,11 +13,11 @@ trait ModifyingQuery extends Executable {
 object ModifyingQuery {
   @scala.inline
   def apply(
-    returning: js.Function1[/* repeated */ js.Any, Query[js.Any]],
-    toQuery: js.Function0[QueryLike],
-    where: js.Function1[/* repeated */ js.Any, ModifyingQuery]
+    returning: /* repeated */ js.Any => Query[js.Any],
+    toQuery: () => QueryLike,
+    where: /* repeated */ js.Any => ModifyingQuery
   ): ModifyingQuery = {
-    val __obj = js.Dynamic.literal(returning = returning, toQuery = toQuery, where = where)
+    val __obj = js.Dynamic.literal(returning = js.Any.fromFunction1(returning), toQuery = js.Any.fromFunction0(toQuery), where = js.Any.fromFunction1(where))
   
     __obj.asInstanceOf[ModifyingQuery]
   }

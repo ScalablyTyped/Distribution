@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Sheets[TSheet] extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashExcelLib.ExcelNs.Application = js.native
   val Count: scala.Double = js.native
   val Creator: XlCreator = js.native
   @JSName("HPageBreaks")
@@ -16,7 +16,7 @@ trait Sheets[TSheet] extends js.Object {
   @JSName("VPageBreaks")
   val VPageBreaks_Original: VPageBreaks = js.native
   var Visible: js.Any = js.native
-  def apply(Indexes: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): Sheets[TSheet] = js.native
+  def apply(Indexes: stdLib.SafeArray[java.lang.String | scala.Double]): Sheets[TSheet] = js.native
   def apply(Index: java.lang.String): TSheet = js.native
   def apply(Index: scala.Double): TSheet = js.native
   def Add[T](): AddSheetResult[T] = js.native
@@ -32,7 +32,7 @@ trait Sheets[TSheet] extends js.Object {
   def FillAcrossSheets(Range: Range): scala.Unit = js.native
   def FillAcrossSheets(Range: Range, Type: XlFillWith): scala.Unit = js.native
   def HPageBreaks(Index: scala.Double): HPageBreak = js.native
-  def Item(Indexes: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): Sheets[TSheet] = js.native
+  def Item(Indexes: stdLib.SafeArray[java.lang.String | scala.Double]): Sheets[TSheet] = js.native
   def Item(Index: java.lang.String): TSheet = js.native
   def Item(Index: scala.Double): TSheet = js.native
   def Move(): scala.Unit = js.native

@@ -22,12 +22,9 @@ trait BasesResource extends js.Object {
 object BasesResource {
   @scala.inline
   def apply(
-    list: js.Function1[
-      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackEndFields, 
-      gapiDotClientLib.gapiNs.clientNs.Request[ListBasesResponse]
-    ]
+    list: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackEndFields => gapiDotClientLib.gapiNs.clientNs.Request[ListBasesResponse]
   ): BasesResource = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[BasesResource]
   }

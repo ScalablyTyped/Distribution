@@ -14,11 +14,11 @@ trait MediaDevices extends js.Object {
 object MediaDevices {
   @scala.inline
   def apply(
-    enumerateDevices: js.Function0[js.Promise[js.Array[MediaDeviceInfo]]],
-    getSupportedConstraints: js.Function0[MediaTrackSupportedConstraints],
-    getUserMedia: js.Function1[MediaStreamConstraints, js.Promise[MediaStream]]
+    enumerateDevices: () => js.Promise[js.Array[MediaDeviceInfo]],
+    getSupportedConstraints: () => MediaTrackSupportedConstraints,
+    getUserMedia: MediaStreamConstraints => js.Promise[MediaStream]
   ): MediaDevices = {
-    val __obj = js.Dynamic.literal(enumerateDevices = enumerateDevices, getSupportedConstraints = getSupportedConstraints, getUserMedia = getUserMedia)
+    val __obj = js.Dynamic.literal(enumerateDevices = js.Any.fromFunction0(enumerateDevices), getSupportedConstraints = js.Any.fromFunction0(getSupportedConstraints), getUserMedia = js.Any.fromFunction1(getUserMedia))
   
     __obj.asInstanceOf[MediaDevices]
   }

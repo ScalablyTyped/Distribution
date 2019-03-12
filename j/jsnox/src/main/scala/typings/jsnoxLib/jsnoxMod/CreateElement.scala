@@ -45,7 +45,7 @@ trait CreateElement extends js.Object {
     * @param children A single React node (string or ReactElement) or array of nodes.
     * Note that unlike with React itself, multiple children must be placed into an array.
     */
-  def apply[P](specString: java.lang.String): reactLib.reactMod.ReactNs.DOMElement[P, reactLib.Element] = js.native
+  def apply[P](specString: java.lang.String): reactLib.reactMod.ReactNs.DOMElement[P, stdLib.Element] = js.native
   /**
     * Renders an HTML element from the given spec string, with children but without
     * extra props.
@@ -54,12 +54,12 @@ trait CreateElement extends js.Object {
     * @param children A single React node (string or ReactElement) or array of nodes.
     * Note that unlike with React itself, multiple children must be placed into an array.
     */
-  def apply[P](specString: java.lang.String, children: reactLib.reactMod.ReactNs.ReactNode): reactLib.reactMod.ReactNs.DOMElement[P, reactLib.Element] = js.native
-  def apply[P](specString: java.lang.String, props: reactLib.reactMod.ReactNs.HTMLAttributes[js.Object]): reactLib.reactMod.ReactNs.DOMElement[P, reactLib.Element] = js.native
+  def apply[P](specString: java.lang.String, children: reactLib.reactMod.ReactNs.ReactNode): reactLib.reactMod.ReactNs.DOMElement[P, stdLib.Element] = js.native
+  def apply[P](specString: java.lang.String, props: reactLib.reactMod.ReactNs.HTMLAttributes[js.Object]): reactLib.reactMod.ReactNs.DOMElement[P, stdLib.Element] = js.native
   def apply[P](
     specString: java.lang.String,
     props: reactLib.reactMod.ReactNs.HTMLAttributes[js.Object],
     children: reactLib.reactMod.ReactNs.ReactNode
-  ): reactLib.reactMod.ReactNs.DOMElement[P, reactLib.Element] = js.native
+  ): reactLib.reactMod.ReactNs.DOMElement[P, stdLib.Element] = js.native
 }
 

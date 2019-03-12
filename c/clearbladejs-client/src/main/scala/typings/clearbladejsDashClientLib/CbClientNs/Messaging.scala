@@ -44,37 +44,21 @@ object Messaging {
     URI: java.lang.String,
     callTimeout: scala.Double,
     client: pahoDashMqttLib.pahoDashMqttMod.Global.PahoNs.MQTTNs.Client,
-    currentTopics: js.Function1[CbCallback, scala.Unit],
-    disconnect: js.Function0[scala.Unit],
+    currentTopics: CbCallback => scala.Unit,
+    disconnect: () => scala.Unit,
     endpoint: java.lang.String,
-    getAndDeleteMessageHistory: js.Function6[
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      CbCallback, 
-      scala.Unit
-    ],
-    getMessageHistory: js.Function4[java.lang.String, scala.Double, scala.Double, CbCallback, scala.Unit],
-    getMessageHistoryWithTimeFrame: js.Function6[
-      java.lang.String, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      scala.Double, 
-      CbCallback, 
-      scala.Unit
-    ],
-    publish: js.Function2[java.lang.String, js.Object, scala.Unit],
-    publishREST: js.Function3[java.lang.String, js.Object, CbCallback, scala.Unit],
-    subscribe: js.Function3[java.lang.String, MessagingSubscribeOptions, MessageCallback, scala.Unit],
+    getAndDeleteMessageHistory: (java.lang.String, scala.Double, scala.Double, scala.Double, scala.Double, CbCallback) => scala.Unit,
+    getMessageHistory: (java.lang.String, scala.Double, scala.Double, CbCallback) => scala.Unit,
+    getMessageHistoryWithTimeFrame: (java.lang.String, scala.Double, scala.Double, scala.Double, scala.Double, CbCallback) => scala.Unit,
+    publish: (java.lang.String, js.Object) => scala.Unit,
+    publishREST: (java.lang.String, js.Object, CbCallback) => scala.Unit,
+    subscribe: (java.lang.String, MessagingSubscribeOptions, MessageCallback) => scala.Unit,
     systemKey: java.lang.String,
     systemSecret: java.lang.String,
-    unsubscribe: js.Function2[java.lang.String, MessagingSubscribeOptions, scala.Unit],
+    unsubscribe: (java.lang.String, MessagingSubscribeOptions) => scala.Unit,
     user: APIUser
   ): Messaging = {
-    val __obj = js.Dynamic.literal(URI = URI, callTimeout = callTimeout, client = client, currentTopics = currentTopics, disconnect = disconnect, endpoint = endpoint, getAndDeleteMessageHistory = getAndDeleteMessageHistory, getMessageHistory = getMessageHistory, getMessageHistoryWithTimeFrame = getMessageHistoryWithTimeFrame, publish = publish, publishREST = publishREST, subscribe = subscribe, systemKey = systemKey, systemSecret = systemSecret, unsubscribe = unsubscribe, user = user)
+    val __obj = js.Dynamic.literal(URI = URI, callTimeout = callTimeout, client = client, currentTopics = js.Any.fromFunction1(currentTopics), disconnect = js.Any.fromFunction0(disconnect), endpoint = endpoint, getAndDeleteMessageHistory = js.Any.fromFunction6(getAndDeleteMessageHistory), getMessageHistory = js.Any.fromFunction4(getMessageHistory), getMessageHistoryWithTimeFrame = js.Any.fromFunction6(getMessageHistoryWithTimeFrame), publish = js.Any.fromFunction2(publish), publishREST = js.Any.fromFunction3(publishREST), subscribe = js.Any.fromFunction3(subscribe), systemKey = systemKey, systemSecret = systemSecret, unsubscribe = js.Any.fromFunction2(unsubscribe), user = user)
   
     __obj.asInstanceOf[Messaging]
   }

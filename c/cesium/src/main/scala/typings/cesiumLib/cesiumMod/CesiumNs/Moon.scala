@@ -17,14 +17,14 @@ trait Moon extends js.Object {
 object Moon {
   @scala.inline
   def apply(
-    destroy: js.Function0[scala.Unit],
+    destroy: () => scala.Unit,
     ellipsoid: Ellipsoid,
-    isDestroyed: js.Function0[scala.Boolean],
+    isDestroyed: () => scala.Boolean,
     onlySunLighting: scala.Boolean,
     show: scala.Boolean,
     textureUrl: java.lang.String
   ): Moon = {
-    val __obj = js.Dynamic.literal(destroy = destroy, ellipsoid = ellipsoid, isDestroyed = isDestroyed, onlySunLighting = onlySunLighting, show = show, textureUrl = textureUrl)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), ellipsoid = ellipsoid, isDestroyed = js.Any.fromFunction0(isDestroyed), onlySunLighting = onlySunLighting, show = show, textureUrl = textureUrl)
   
     __obj.asInstanceOf[Moon]
   }

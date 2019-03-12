@@ -26,7 +26,7 @@ trait XToolkit
   /** creates a new window using the given descriptor. */
   def createWindow(Descriptor: WindowDescriptor): XWindowPeer
   /** returns a sequence of windows which are newly created using the given descriptors. */
-  def createWindows(Descriptors: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[WindowDescriptor]): activexDashInteropLib.SafeArray[XWindowPeer]
+  def createWindows(Descriptors: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[WindowDescriptor]): stdLib.SafeArray[XWindowPeer]
   /** returns the desktop window. */
   def getDesktopWindow(): XWindowPeer
   /**
@@ -41,20 +41,17 @@ object XToolkit {
   def apply(
     DesktopWindow: XWindowPeer,
     WorkArea: Rectangle,
-    acquire: js.Function0[scala.Unit],
-    createRegion: js.Function0[XRegion],
-    createScreenCompatibleDevice: js.Function2[scala.Double, scala.Double, XDevice],
-    createWindow: js.Function1[WindowDescriptor, XWindowPeer],
-    createWindows: js.Function1[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[WindowDescriptor], 
-      activexDashInteropLib.SafeArray[XWindowPeer]
-    ],
-    getDesktopWindow: js.Function0[XWindowPeer],
-    getWorkArea: js.Function0[Rectangle],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    createRegion: () => XRegion,
+    createScreenCompatibleDevice: (scala.Double, scala.Double) => XDevice,
+    createWindow: WindowDescriptor => XWindowPeer,
+    createWindows: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[WindowDescriptor] => stdLib.SafeArray[XWindowPeer],
+    getDesktopWindow: () => XWindowPeer,
+    getWorkArea: () => Rectangle,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XToolkit = {
-    val __obj = js.Dynamic.literal(DesktopWindow = DesktopWindow, WorkArea = WorkArea, acquire = acquire, createRegion = createRegion, createScreenCompatibleDevice = createScreenCompatibleDevice, createWindow = createWindow, createWindows = createWindows, getDesktopWindow = getDesktopWindow, getWorkArea = getWorkArea, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(DesktopWindow = DesktopWindow, WorkArea = WorkArea, acquire = js.Any.fromFunction0(acquire), createRegion = js.Any.fromFunction0(createRegion), createScreenCompatibleDevice = js.Any.fromFunction2(createScreenCompatibleDevice), createWindow = js.Any.fromFunction1(createWindow), createWindows = js.Any.fromFunction1(createWindows), getDesktopWindow = js.Any.fromFunction0(getDesktopWindow), getWorkArea = js.Any.fromFunction0(getWorkArea), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XToolkit]
   }

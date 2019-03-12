@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("soupbintcp", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def formatLoginAccepted(payload: soupbintcpLib.soupbintcpMod.LoginAcceptedPayload): nodeLib.Buffer = js.native
-  def formatLoginRejected(payload: soupbintcpLib.soupbintcpMod.LoginRejectedPayload): nodeLib.Buffer = js.native
-  def formatLoginRequest(payload: soupbintcpLib.soupbintcpMod.LoginRequestPayload): nodeLib.Buffer = js.native
-  def parseLoginAccepted(payload: nodeLib.Buffer): soupbintcpLib.soupbintcpMod.LoginAcceptedPayload = js.native
-  def parseLoginRejected(payload: nodeLib.Buffer): soupbintcpLib.soupbintcpMod.LoginRejectedPayload = js.native
-  def parseLoginRequest(payload: nodeLib.Buffer): soupbintcpLib.soupbintcpMod.LoginRequestPayload = js.native
+  def formatLoginAccepted(payload: LoginAcceptedPayload): nodeLib.Buffer = js.native
+  def formatLoginRejected(payload: LoginRejectedPayload): nodeLib.Buffer = js.native
+  def formatLoginRequest(payload: LoginRequestPayload): nodeLib.Buffer = js.native
+  def parseLoginAccepted(payload: nodeLib.Buffer): LoginAcceptedPayload = js.native
+  def parseLoginRejected(payload: nodeLib.Buffer): LoginRejectedPayload = js.native
+  def parseLoginRequest(payload: nodeLib.Buffer): LoginRequestPayload = js.native
 }
 

@@ -12,20 +12,14 @@ object ^ extends js.Object {
   val onGetCapabilityRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function2[
       /* printerId */ java.lang.String, 
-      /* resultCallback */ js.Function1[
-        /* capabilities */ chromeDashAppsLib.chromeNs.printerProviderNs.PrinterCapabilities, 
-        scala.Unit
-      ], 
+      /* resultCallback */ js.Function1[/* capabilities */ PrinterCapabilities, scala.Unit], 
       scala.Unit
     ]
   ] = js.native
   /** Event fired when print manager requests printers provided by extensions. */
   val onGetPrintersRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function1[
-      /* resultCallback */ js.Function1[
-        /* printerInfo */ js.Array[chromeDashAppsLib.chromeNs.printerProviderNs.PrinterInfo], 
-        scala.Unit
-      ], 
+      /* resultCallback */ js.Function1[/* printerInfo */ js.Array[PrinterInfo], scala.Unit], 
       scala.Unit
     ]
   ] = js.native
@@ -37,17 +31,14 @@ object ^ extends js.Object {
   val onGetUsbPrinterInfoRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function2[
       /* device */ js.Any, 
-      /* resultCallback */ js.Function1[
-        /* printerInfo */ js.UndefOr[chromeDashAppsLib.chromeNs.printerProviderNs.PrinterInfo], 
-        scala.Unit
-      ], 
+      /* resultCallback */ js.Function1[/* printerInfo */ js.UndefOr[PrinterInfo], scala.Unit], 
       scala.Unit
     ]
   ] = js.native
   /** Event fired when print manager requests printing. */
   val onPrintRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function2[
-      /* printJob */ chromeDashAppsLib.chromeNs.printerProviderNs.PrintJob, 
+      /* printJob */ PrintJob, 
       /* resultCallback */ js.Function1[/* result */ java.lang.String, scala.Unit], 
       scala.Unit
     ]

@@ -18,15 +18,15 @@ trait DeveloperMetadataFinder extends js.Object {
 object DeveloperMetadataFinder {
   @scala.inline
   def apply(
-    find: js.Function0[js.Array[DeveloperMetadata]],
-    onIntersectingLocations: js.Function0[DeveloperMetadataFinder],
-    withId: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, DeveloperMetadataFinder],
-    withKey: js.Function1[java.lang.String, DeveloperMetadataFinder],
-    withLocationType: js.Function1[DeveloperMetadataLocationType, DeveloperMetadataFinder],
-    withValue: js.Function1[java.lang.String, DeveloperMetadataFinder],
-    withVisibility: js.Function1[DeveloperMetadataVisibility, DeveloperMetadataFinder]
+    find: () => js.Array[DeveloperMetadata],
+    onIntersectingLocations: () => DeveloperMetadataFinder,
+    withId: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => DeveloperMetadataFinder,
+    withKey: java.lang.String => DeveloperMetadataFinder,
+    withLocationType: DeveloperMetadataLocationType => DeveloperMetadataFinder,
+    withValue: java.lang.String => DeveloperMetadataFinder,
+    withVisibility: DeveloperMetadataVisibility => DeveloperMetadataFinder
   ): DeveloperMetadataFinder = {
-    val __obj = js.Dynamic.literal(find = find, onIntersectingLocations = onIntersectingLocations, withId = withId, withKey = withKey, withLocationType = withLocationType, withValue = withValue, withVisibility = withVisibility)
+    val __obj = js.Dynamic.literal(find = js.Any.fromFunction0(find), onIntersectingLocations = js.Any.fromFunction0(onIntersectingLocations), withId = js.Any.fromFunction1(withId), withKey = js.Any.fromFunction1(withKey), withLocationType = js.Any.fromFunction1(withLocationType), withValue = js.Any.fromFunction1(withValue), withVisibility = js.Any.fromFunction1(withVisibility))
   
     __obj.asInstanceOf[DeveloperMetadataFinder]
   }

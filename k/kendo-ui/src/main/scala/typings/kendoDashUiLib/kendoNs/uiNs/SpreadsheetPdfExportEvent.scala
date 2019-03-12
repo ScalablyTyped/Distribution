@@ -12,12 +12,12 @@ trait SpreadsheetPdfExportEvent extends SpreadsheetEvent {
 object SpreadsheetPdfExportEvent {
   @scala.inline
   def apply(
-    isDefaultPrevented: js.Function0[scala.Boolean],
+    isDefaultPrevented: () => scala.Boolean,
     preventDefault: js.Function,
     sender: Spreadsheet,
     promise: kendoDashUiLib.JQueryPromise[_] = null
   ): SpreadsheetPdfExportEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
     if (promise != null) __obj.updateDynamic("promise")(promise)
     __obj.asInstanceOf[SpreadsheetPdfExportEvent]
   }

@@ -65,7 +65,7 @@ object ^ extends js.Object {
     *
     * - _Only supported in the browser._
     */
-  val mocha: mochaLib.BrowserMocha = js.native
+  val mocha: BrowserMocha = js.native
   /**
     * Execute before each test case.
     *

@@ -12,12 +12,9 @@ trait IColorPalette extends js.Object {
 object IColorPalette {
   @scala.inline
   def apply(
-    getColor: js.Function1[
-      java.lang.String, 
-      powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.IColorInfo
-    ]
+    getColor: java.lang.String => powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.IColorInfo
   ): IColorPalette = {
-    val __obj = js.Dynamic.literal(getColor = getColor)
+    val __obj = js.Dynamic.literal(getColor = js.Any.fromFunction1(getColor))
   
     __obj.asInstanceOf[IColorPalette]
   }

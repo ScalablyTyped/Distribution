@@ -14,11 +14,11 @@ trait WidgetsInstance extends js.Object {
 object WidgetsInstance {
   @scala.inline
   def apply(
-    showDrawerView: js.Function1[DrawerOptions, DrawerView],
-    showModalView: js.Function1[ModalOptions, ModalView],
-    showMoleView: js.Function1[MoleOptions, MoleView]
+    showDrawerView: DrawerOptions => DrawerView,
+    showModalView: ModalOptions => ModalView,
+    showMoleView: MoleOptions => MoleView
   ): WidgetsInstance = {
-    val __obj = js.Dynamic.literal(showDrawerView = showDrawerView, showModalView = showModalView, showMoleView = showMoleView)
+    val __obj = js.Dynamic.literal(showDrawerView = js.Any.fromFunction1(showDrawerView), showModalView = js.Any.fromFunction1(showModalView), showMoleView = js.Any.fromFunction1(showMoleView))
   
     __obj.asInstanceOf[WidgetsInstance]
   }

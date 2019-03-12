@@ -33,26 +33,26 @@ object Anon_A1 {
   def apply(
     DEG2RAD: scala.Double,
     RAD2DEG: scala.Double,
-    ceilPowerOfTwo: js.Function1[scala.Double, scala.Double],
-    clamp: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double],
-    degToRad: js.Function1[scala.Double, scala.Double],
-    euclideanModulo: js.Function2[scala.Double, scala.Double, scala.Double],
-    floorPowerOfTwo: js.Function1[scala.Double, scala.Double],
-    generateUUID: js.Function0[java.lang.String],
-    isPowerOfTwo: js.Function1[scala.Double, scala.Boolean],
-    lerp: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double],
-    mapLinear: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
-    nearestPowerOfTwo: js.Function1[scala.Double, scala.Double],
-    nextPowerOfTwo: js.Function1[scala.Double, scala.Double],
-    radToDeg: js.Function1[scala.Double, scala.Double],
-    randFloat: js.Function2[scala.Double, scala.Double, scala.Double],
-    randFloatSpread: js.Function1[scala.Double, scala.Double],
-    randInt: js.Function2[scala.Double, scala.Double, scala.Double],
-    random16: js.Function0[scala.Double],
-    smootherstep: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double],
-    smoothstep: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double]
+    ceilPowerOfTwo: scala.Double => scala.Double,
+    clamp: (scala.Double, scala.Double, scala.Double) => scala.Double,
+    degToRad: scala.Double => scala.Double,
+    euclideanModulo: (scala.Double, scala.Double) => scala.Double,
+    floorPowerOfTwo: scala.Double => scala.Double,
+    generateUUID: () => java.lang.String,
+    isPowerOfTwo: scala.Double => scala.Boolean,
+    lerp: (scala.Double, scala.Double, scala.Double) => scala.Double,
+    mapLinear: (scala.Double, scala.Double, scala.Double, scala.Double, scala.Double) => scala.Double,
+    nearestPowerOfTwo: scala.Double => scala.Double,
+    nextPowerOfTwo: scala.Double => scala.Double,
+    radToDeg: scala.Double => scala.Double,
+    randFloat: (scala.Double, scala.Double) => scala.Double,
+    randFloatSpread: scala.Double => scala.Double,
+    randInt: (scala.Double, scala.Double) => scala.Double,
+    random16: () => scala.Double,
+    smootherstep: (scala.Double, scala.Double, scala.Double) => scala.Double,
+    smoothstep: (scala.Double, scala.Double, scala.Double) => scala.Double
   ): Anon_A1 = {
-    val __obj = js.Dynamic.literal(DEG2RAD = DEG2RAD, RAD2DEG = RAD2DEG, ceilPowerOfTwo = ceilPowerOfTwo, clamp = clamp, degToRad = degToRad, euclideanModulo = euclideanModulo, floorPowerOfTwo = floorPowerOfTwo, generateUUID = generateUUID, isPowerOfTwo = isPowerOfTwo, lerp = lerp, mapLinear = mapLinear, nearestPowerOfTwo = nearestPowerOfTwo, nextPowerOfTwo = nextPowerOfTwo, radToDeg = radToDeg, randFloat = randFloat, randFloatSpread = randFloatSpread, randInt = randInt, random16 = random16, smootherstep = smootherstep, smoothstep = smoothstep)
+    val __obj = js.Dynamic.literal(DEG2RAD = DEG2RAD, RAD2DEG = RAD2DEG, ceilPowerOfTwo = js.Any.fromFunction1(ceilPowerOfTwo), clamp = js.Any.fromFunction3(clamp), degToRad = js.Any.fromFunction1(degToRad), euclideanModulo = js.Any.fromFunction2(euclideanModulo), floorPowerOfTwo = js.Any.fromFunction1(floorPowerOfTwo), generateUUID = js.Any.fromFunction0(generateUUID), isPowerOfTwo = js.Any.fromFunction1(isPowerOfTwo), lerp = js.Any.fromFunction3(lerp), mapLinear = js.Any.fromFunction5(mapLinear), nearestPowerOfTwo = js.Any.fromFunction1(nearestPowerOfTwo), nextPowerOfTwo = js.Any.fromFunction1(nextPowerOfTwo), radToDeg = js.Any.fromFunction1(radToDeg), randFloat = js.Any.fromFunction2(randFloat), randFloatSpread = js.Any.fromFunction1(randFloatSpread), randInt = js.Any.fromFunction2(randInt), random16 = js.Any.fromFunction0(random16), smootherstep = js.Any.fromFunction3(smootherstep), smoothstep = js.Any.fromFunction3(smoothstep))
   
     __obj.asInstanceOf[Anon_A1]
   }

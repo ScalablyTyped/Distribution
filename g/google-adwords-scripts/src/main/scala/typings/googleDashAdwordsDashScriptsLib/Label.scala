@@ -24,22 +24,22 @@ trait Label extends AdWordsEntity {
 object Label {
   @scala.inline
   def apply(
-    adGroups: js.Function0[AdWordsSelector[AdGroup]],
-    ads: js.Function0[AdWordsSelector[Ad]],
-    campaigns: js.Function0[AdWordsSelector[Campaign]],
-    getColor: js.Function0[java.lang.String],
-    getDescription: js.Function0[java.lang.String],
-    getId: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    keywords: js.Function0[AdWordsSelector[Keyword]],
-    remove: js.Function0[scala.Unit],
-    setColor: js.Function1[java.lang.String, scala.Unit],
-    setDescription: js.Function1[java.lang.String, scala.Unit],
-    setName: js.Function1[java.lang.String, scala.Unit],
-    getEntityType: js.Function0[java.lang.String] = null
+    adGroups: () => AdWordsSelector[AdGroup],
+    ads: () => AdWordsSelector[Ad],
+    campaigns: () => AdWordsSelector[Campaign],
+    getColor: () => java.lang.String,
+    getDescription: () => java.lang.String,
+    getId: () => java.lang.String,
+    getName: () => java.lang.String,
+    keywords: () => AdWordsSelector[Keyword],
+    remove: () => scala.Unit,
+    setColor: java.lang.String => scala.Unit,
+    setDescription: java.lang.String => scala.Unit,
+    setName: java.lang.String => scala.Unit,
+    getEntityType: () => java.lang.String = null
   ): Label = {
-    val __obj = js.Dynamic.literal(adGroups = adGroups, ads = ads, campaigns = campaigns, getColor = getColor, getDescription = getDescription, getId = getId, getName = getName, keywords = keywords, remove = remove, setColor = setColor, setDescription = setDescription, setName = setName)
-    if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
+    val __obj = js.Dynamic.literal(adGroups = js.Any.fromFunction0(adGroups), ads = js.Any.fromFunction0(ads), campaigns = js.Any.fromFunction0(campaigns), getColor = js.Any.fromFunction0(getColor), getDescription = js.Any.fromFunction0(getDescription), getId = js.Any.fromFunction0(getId), getName = js.Any.fromFunction0(getName), keywords = js.Any.fromFunction0(keywords), remove = js.Any.fromFunction0(remove), setColor = js.Any.fromFunction1(setColor), setDescription = js.Any.fromFunction1(setDescription), setName = js.Any.fromFunction1(setName))
+    if (getEntityType != null) __obj.updateDynamic("getEntityType")(js.Any.fromFunction0(getEntityType))
     __obj.asInstanceOf[Label]
   }
 }

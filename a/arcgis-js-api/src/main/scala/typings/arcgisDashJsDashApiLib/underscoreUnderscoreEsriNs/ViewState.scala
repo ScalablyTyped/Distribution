@@ -90,18 +90,18 @@ object ViewState {
   @scala.inline
   def apply(
     center: js.Array[scala.Double],
-    clone: js.Function0[ViewState],
-    copy: js.Function1[ViewState, ViewState],
+    clone: () => ViewState,
+    copy: ViewState => ViewState,
     extent: Extent,
     resolution: scala.Double,
     rotation: scala.Double,
     scale: scala.Double,
     size: js.Array[scala.Double],
-    toMap: js.Function3[js.Array[scala.Double], scala.Double, scala.Double, js.Array[scala.Double]],
-    toScreen: js.Function3[js.Array[scala.Double], scala.Double, scala.Double, js.Array[scala.Double]],
-    toScreenNoRotation: js.Function3[js.Array[scala.Double], scala.Double, scala.Double, js.Array[scala.Double]]
+    toMap: (js.Array[scala.Double], scala.Double, scala.Double) => js.Array[scala.Double],
+    toScreen: (js.Array[scala.Double], scala.Double, scala.Double) => js.Array[scala.Double],
+    toScreenNoRotation: (js.Array[scala.Double], scala.Double, scala.Double) => js.Array[scala.Double]
   ): ViewState = {
-    val __obj = js.Dynamic.literal(center = center, clone = clone, copy = copy, extent = extent, resolution = resolution, rotation = rotation, scale = scale, size = size, toMap = toMap, toScreen = toScreen, toScreenNoRotation = toScreenNoRotation)
+    val __obj = js.Dynamic.literal(center = center, clone = js.Any.fromFunction0(clone), copy = js.Any.fromFunction1(copy), extent = extent, resolution = resolution, rotation = rotation, scale = scale, size = size, toMap = js.Any.fromFunction3(toMap), toScreen = js.Any.fromFunction3(toScreen), toScreenNoRotation = js.Any.fromFunction3(toScreenNoRotation))
   
     __obj.asInstanceOf[ViewState]
   }

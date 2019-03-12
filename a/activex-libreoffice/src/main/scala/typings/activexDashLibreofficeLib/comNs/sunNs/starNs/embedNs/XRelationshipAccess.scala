@@ -19,8 +19,8 @@ trait XRelationshipAccess
     * @returns sequence of entries, each entry is represented by sequence, each element of the sequence represents tag, {@link com.sun.star.beans.StringPair.Fir
     * @throws com::sun::star::io::IOException in case there is a problem reading the relations info
     */
-  val AllRelationships: activexDashInteropLib.SafeArray[
-    activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
+  val AllRelationships: stdLib.SafeArray[
+    stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
   ]
   /**
     * allows to clear the set of entries.
@@ -32,8 +32,8 @@ trait XRelationshipAccess
     * @returns sequence of entries, each entry is represented by sequence, each element of the sequence represents tag, {@link com.sun.star.beans.StringPair.Fir
     * @throws com::sun::star::io::IOException in case there is a problem reading the relations info
     */
-  def getAllRelationships(): activexDashInteropLib.SafeArray[
-    activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
+  def getAllRelationships(): stdLib.SafeArray[
+    stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
   ]
   /**
     * retrieves the sequence containing all the tags from the entry with specified value of "ID" tag.
@@ -42,15 +42,15 @@ trait XRelationshipAccess
     * @throws com::sun::star::container::NoSuchElementException in case there is no entry with specified tag
     * @throws com::sun::star::io::IOException in case there is a problem reading the relations info
     */
-  def getRelationshipByID(sID: java.lang.String): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
+  def getRelationshipByID(sID: java.lang.String): stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
   /**
     * retrieves the sequence containing all the entries which "Type" tag takes the specified value.
     * @param sType specified value of "Type" tag, the parameter can contain an empty string, in this case all the entries that have empty "Type" tag or no suc
     * @returns sequence of entries, each entry is represented by sequence, each element of the sequence represents tag, {@link com.sun.star.beans.StringPair.Fir
     * @throws com::sun::star::io::IOException in case there is a problem reading the relations info
     */
-  def getRelationshipsByType(sType: java.lang.String): activexDashInteropLib.SafeArray[
-    activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
+  def getRelationshipsByType(sType: java.lang.String): stdLib.SafeArray[
+    stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
   ]
   /**
     * retrieves the value of "Target" tag from the entry with specified "ID" tag.
@@ -114,47 +114,30 @@ trait XRelationshipAccess
 object XRelationshipAccess {
   @scala.inline
   def apply(
-    AllRelationships: activexDashInteropLib.SafeArray[
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
+    AllRelationships: stdLib.SafeArray[
+      stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
     ],
-    acquire: js.Function0[scala.Unit],
-    clearRelationships: js.Function0[scala.Unit],
-    getAllRelationships: js.Function0[
-      activexDashInteropLib.SafeArray[
-        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
-      ]
+    acquire: () => scala.Unit,
+    clearRelationships: () => scala.Unit,
+    getAllRelationships: () => stdLib.SafeArray[
+      stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
     ],
-    getRelationshipByID: js.Function1[
-      java.lang.String, 
-      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
+    getRelationshipByID: java.lang.String => stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair],
+    getRelationshipsByType: java.lang.String => stdLib.SafeArray[
+      stdLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
     ],
-    getRelationshipsByType: js.Function1[
-      java.lang.String, 
-      activexDashInteropLib.SafeArray[
-        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
-      ]
-    ],
-    getTargetByID: js.Function1[java.lang.String, java.lang.String],
-    getTypeByID: js.Function1[java.lang.String, java.lang.String],
-    hasByID: js.Function1[java.lang.String, scala.Boolean],
-    insertRelationshipByID: js.Function3[
-      java.lang.String, 
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair], 
-      scala.Boolean, 
-      scala.Unit
-    ],
-    insertRelationships: js.Function2[
-      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
-        activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
-      ], 
-      scala.Boolean, 
-      scala.Unit
-    ],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    removeRelationshipByID: js.Function1[java.lang.String, scala.Unit]
+    getTargetByID: java.lang.String => java.lang.String,
+    getTypeByID: java.lang.String => java.lang.String,
+    hasByID: java.lang.String => scala.Boolean,
+    insertRelationshipByID: (java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair], scala.Boolean) => scala.Unit,
+    insertRelationships: (activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
+    ], scala.Boolean) => scala.Unit,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    removeRelationshipByID: java.lang.String => scala.Unit
   ): XRelationshipAccess = {
-    val __obj = js.Dynamic.literal(AllRelationships = AllRelationships, acquire = acquire, clearRelationships = clearRelationships, getAllRelationships = getAllRelationships, getRelationshipByID = getRelationshipByID, getRelationshipsByType = getRelationshipsByType, getTargetByID = getTargetByID, getTypeByID = getTypeByID, hasByID = hasByID, insertRelationshipByID = insertRelationshipByID, insertRelationships = insertRelationships, queryInterface = queryInterface, release = release, removeRelationshipByID = removeRelationshipByID)
+    val __obj = js.Dynamic.literal(AllRelationships = AllRelationships, acquire = js.Any.fromFunction0(acquire), clearRelationships = js.Any.fromFunction0(clearRelationships), getAllRelationships = js.Any.fromFunction0(getAllRelationships), getRelationshipByID = js.Any.fromFunction1(getRelationshipByID), getRelationshipsByType = js.Any.fromFunction1(getRelationshipsByType), getTargetByID = js.Any.fromFunction1(getTargetByID), getTypeByID = js.Any.fromFunction1(getTypeByID), hasByID = js.Any.fromFunction1(hasByID), insertRelationshipByID = js.Any.fromFunction3(insertRelationshipByID), insertRelationships = js.Any.fromFunction2(insertRelationships), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeRelationshipByID = js.Any.fromFunction1(removeRelationshipByID))
   
     __obj.asInstanceOf[XRelationshipAccess]
   }

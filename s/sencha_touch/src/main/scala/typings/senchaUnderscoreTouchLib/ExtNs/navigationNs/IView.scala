@@ -75,50 +75,50 @@ object IView {
     IContainer: senchaUnderscoreTouchLib.ExtNs.IContainer = null,
     baseCls: java.lang.String = null,
     defaultBackButtonText: java.lang.String = null,
-    getBaseCls: js.Function0[java.lang.String] = null,
-    getDefaultBackButtonText: js.Function0[java.lang.String] = null,
-    getItems: js.Function0[_] = null,
-    getLayout: js.Function0[_] = null,
-    getNavigationBar: js.Function0[_] = null,
-    getPreviousItem: js.Function0[_] = null,
-    getUseTitleForBackButtonText: js.Function0[scala.Boolean] = null,
+    getBaseCls: () => java.lang.String = null,
+    getDefaultBackButtonText: () => java.lang.String = null,
+    getItems: () => _ = null,
+    getLayout: () => _ = null,
+    getNavigationBar: () => _ = null,
+    getPreviousItem: () => _ = null,
+    getUseTitleForBackButtonText: () => scala.Boolean = null,
     items: js.Any = null,
     layout: js.Any = null,
     navigationBar: js.Any = null,
-    pop: js.Function1[/* count */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.IComponent] = null,
-    push: js.Function1[/* view */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.IComponent] = null,
-    reset: js.Function0[senchaUnderscoreTouchLib.ExtNs.IComponent] = null,
-    setBaseCls: js.Function1[/* baseCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setDefaultBackButtonText: js.Function1[/* defaultBackButtonText */ js.UndefOr[java.lang.String], scala.Unit] = null,
-    setItems: js.Function1[/* items */ js.UndefOr[js.Any], scala.Unit] = null,
-    setLayout: js.Function1[/* layout */ js.UndefOr[js.Any], scala.Unit] = null,
-    setNavigationBar: js.Function1[/* navigationBar */ js.UndefOr[js.Any], scala.Unit] = null,
-    setUseTitleForBackButtonText: js.Function1[/* useTitleForBackButtonText */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    pop: /* count */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.IComponent = null,
+    push: /* view */ js.UndefOr[js.Any] => senchaUnderscoreTouchLib.ExtNs.IComponent = null,
+    reset: () => senchaUnderscoreTouchLib.ExtNs.IComponent = null,
+    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setDefaultBackButtonText: /* defaultBackButtonText */ js.UndefOr[java.lang.String] => scala.Unit = null,
+    setItems: /* items */ js.UndefOr[js.Any] => scala.Unit = null,
+    setLayout: /* layout */ js.UndefOr[js.Any] => scala.Unit = null,
+    setNavigationBar: /* navigationBar */ js.UndefOr[js.Any] => scala.Unit = null,
+    setUseTitleForBackButtonText: /* useTitleForBackButtonText */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     useTitleForBackButtonText: js.UndefOr[scala.Boolean] = js.undefined
   ): IView = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IContainer)
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
     if (defaultBackButtonText != null) __obj.updateDynamic("defaultBackButtonText")(defaultBackButtonText)
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(getBaseCls)
-    if (getDefaultBackButtonText != null) __obj.updateDynamic("getDefaultBackButtonText")(getDefaultBackButtonText)
-    if (getItems != null) __obj.updateDynamic("getItems")(getItems)
-    if (getLayout != null) __obj.updateDynamic("getLayout")(getLayout)
-    if (getNavigationBar != null) __obj.updateDynamic("getNavigationBar")(getNavigationBar)
-    if (getPreviousItem != null) __obj.updateDynamic("getPreviousItem")(getPreviousItem)
-    if (getUseTitleForBackButtonText != null) __obj.updateDynamic("getUseTitleForBackButtonText")(getUseTitleForBackButtonText)
+    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
+    if (getDefaultBackButtonText != null) __obj.updateDynamic("getDefaultBackButtonText")(js.Any.fromFunction0(getDefaultBackButtonText))
+    if (getItems != null) __obj.updateDynamic("getItems")(js.Any.fromFunction0(getItems))
+    if (getLayout != null) __obj.updateDynamic("getLayout")(js.Any.fromFunction0(getLayout))
+    if (getNavigationBar != null) __obj.updateDynamic("getNavigationBar")(js.Any.fromFunction0(getNavigationBar))
+    if (getPreviousItem != null) __obj.updateDynamic("getPreviousItem")(js.Any.fromFunction0(getPreviousItem))
+    if (getUseTitleForBackButtonText != null) __obj.updateDynamic("getUseTitleForBackButtonText")(js.Any.fromFunction0(getUseTitleForBackButtonText))
     if (items != null) __obj.updateDynamic("items")(items)
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (navigationBar != null) __obj.updateDynamic("navigationBar")(navigationBar)
-    if (pop != null) __obj.updateDynamic("pop")(pop)
-    if (push != null) __obj.updateDynamic("push")(push)
-    if (reset != null) __obj.updateDynamic("reset")(reset)
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(setBaseCls)
-    if (setDefaultBackButtonText != null) __obj.updateDynamic("setDefaultBackButtonText")(setDefaultBackButtonText)
-    if (setItems != null) __obj.updateDynamic("setItems")(setItems)
-    if (setLayout != null) __obj.updateDynamic("setLayout")(setLayout)
-    if (setNavigationBar != null) __obj.updateDynamic("setNavigationBar")(setNavigationBar)
-    if (setUseTitleForBackButtonText != null) __obj.updateDynamic("setUseTitleForBackButtonText")(setUseTitleForBackButtonText)
+    if (pop != null) __obj.updateDynamic("pop")(js.Any.fromFunction1(pop))
+    if (push != null) __obj.updateDynamic("push")(js.Any.fromFunction1(push))
+    if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
+    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
+    if (setDefaultBackButtonText != null) __obj.updateDynamic("setDefaultBackButtonText")(js.Any.fromFunction1(setDefaultBackButtonText))
+    if (setItems != null) __obj.updateDynamic("setItems")(js.Any.fromFunction1(setItems))
+    if (setLayout != null) __obj.updateDynamic("setLayout")(js.Any.fromFunction1(setLayout))
+    if (setNavigationBar != null) __obj.updateDynamic("setNavigationBar")(js.Any.fromFunction1(setNavigationBar))
+    if (setUseTitleForBackButtonText != null) __obj.updateDynamic("setUseTitleForBackButtonText")(js.Any.fromFunction1(setUseTitleForBackButtonText))
     if (!js.isUndefined(useTitleForBackButtonText)) __obj.updateDynamic("useTitleForBackButtonText")(useTitleForBackButtonText)
     __obj.asInstanceOf[IView]
   }

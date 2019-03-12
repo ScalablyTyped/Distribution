@@ -17,12 +17,12 @@ object TokenContext {
   @scala.inline
   def apply(
     active: scala.Boolean,
-    onBlur: js.Function1[js.Any, scala.Unit],
-    onClick: js.Function1[js.Any, scala.Unit],
-    onFocus: js.Function1[js.Any, scala.Unit],
-    onKeyDown: js.Function1[js.Any, scala.Unit]
+    onBlur: js.Any => scala.Unit,
+    onClick: js.Any => scala.Unit,
+    onFocus: js.Any => scala.Unit,
+    onKeyDown: js.Any => scala.Unit
   ): TokenContext = {
-    val __obj = js.Dynamic.literal(active = active, onBlur = onBlur, onClick = onClick, onFocus = onFocus, onKeyDown = onKeyDown)
+    val __obj = js.Dynamic.literal(active = active, onBlur = js.Any.fromFunction1(onBlur), onClick = js.Any.fromFunction1(onClick), onFocus = js.Any.fromFunction1(onFocus), onKeyDown = js.Any.fromFunction1(onKeyDown))
   
     __obj.asInstanceOf[TokenContext]
   }

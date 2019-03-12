@@ -19,24 +19,12 @@ trait PeopleResource extends js.Object {
 object PeopleResource {
   @scala.inline
   def apply(
-    get: js.Function1[
-      gapiDotClientDotPlusdomainsLib.Anon_AltFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[Person]
-    ],
-    list: js.Function1[
-      gapiDotClientDotPlusdomainsLib.Anon_AltCollectionFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PeopleFeed]
-    ],
-    listByActivity: js.Function1[
-      gapiDotClientDotPlusdomainsLib.Anon_ActivityIdAltCollection, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PeopleFeed]
-    ],
-    listByCircle: js.Function1[
-      gapiDotClientDotPlusdomainsLib.Anon_AltCircleIdFieldsKey, 
-      gapiDotClientLib.gapiNs.clientNs.Request[PeopleFeed]
-    ]
+    get: gapiDotClientDotPlusdomainsLib.Anon_AltFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[Person],
+    list: gapiDotClientDotPlusdomainsLib.Anon_AltCollectionFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[PeopleFeed],
+    listByActivity: gapiDotClientDotPlusdomainsLib.Anon_ActivityIdAltCollection => gapiDotClientLib.gapiNs.clientNs.Request[PeopleFeed],
+    listByCircle: gapiDotClientDotPlusdomainsLib.Anon_AltCircleIdFieldsKey => gapiDotClientLib.gapiNs.clientNs.Request[PeopleFeed]
   ): PeopleResource = {
-    val __obj = js.Dynamic.literal(get = get, list = list, listByActivity = listByActivity, listByCircle = listByCircle)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), listByActivity = js.Any.fromFunction1(listByActivity), listByCircle = js.Any.fromFunction1(listByCircle))
   
     __obj.asInstanceOf[PeopleResource]
   }

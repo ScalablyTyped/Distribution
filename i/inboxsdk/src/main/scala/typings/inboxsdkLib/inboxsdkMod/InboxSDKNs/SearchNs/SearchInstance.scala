@@ -18,16 +18,13 @@ trait SearchInstance extends js.Object {
 object SearchInstance {
   @scala.inline
   def apply(
-    registerSearchQueryRewriter: js.Function1[SearchQueryRewriter, scala.Unit],
+    registerSearchQueryRewriter: SearchQueryRewriter => scala.Unit,
     registerSearchSuggestionsProvider: js.Function1[
-      js.Function1[
-        /* query */ java.lang.String, 
-        js.Array[AutocompleteSearchResult] | js.Promise[js.Array[AutocompleteSearchResult]]
-      ], 
-      scala.Unit
-    ]
+      /* query */ java.lang.String, 
+      js.Array[AutocompleteSearchResult] | js.Promise[js.Array[AutocompleteSearchResult]]
+    ] => scala.Unit
   ): SearchInstance = {
-    val __obj = js.Dynamic.literal(registerSearchQueryRewriter = registerSearchQueryRewriter, registerSearchSuggestionsProvider = registerSearchSuggestionsProvider)
+    val __obj = js.Dynamic.literal(registerSearchQueryRewriter = js.Any.fromFunction1(registerSearchQueryRewriter), registerSearchSuggestionsProvider = js.Any.fromFunction1(registerSearchSuggestionsProvider))
   
     __obj.asInstanceOf[SearchInstance]
   }

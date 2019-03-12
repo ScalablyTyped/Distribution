@@ -28,20 +28,20 @@ trait XPreparedBatchExecution
     * @returns an array of update counts containing one element for each command in the batch. The array is ordered according to the order in which commands wer
     * @throws SQLException if a database access error occurs.
     */
-  def executeBatch(): activexDashInteropLib.SafeArray[scala.Double]
+  def executeBatch(): stdLib.SafeArray[scala.Double]
 }
 
 object XPreparedBatchExecution {
   @scala.inline
   def apply(
-    acquire: js.Function0[scala.Unit],
-    addBatch: js.Function0[scala.Unit],
-    clearBatch: js.Function0[scala.Unit],
-    executeBatch: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit]
+    acquire: () => scala.Unit,
+    addBatch: () => scala.Unit,
+    clearBatch: () => scala.Unit,
+    executeBatch: () => stdLib.SafeArray[scala.Double],
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit
   ): XPreparedBatchExecution = {
-    val __obj = js.Dynamic.literal(acquire = acquire, addBatch = addBatch, clearBatch = clearBatch, executeBatch = executeBatch, queryInterface = queryInterface, release = release)
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addBatch = js.Any.fromFunction0(addBatch), clearBatch = js.Any.fromFunction0(clearBatch), executeBatch = js.Any.fromFunction0(executeBatch), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
   
     __obj.asInstanceOf[XPreparedBatchExecution]
   }

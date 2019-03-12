@@ -16,12 +16,9 @@ trait SheetsResource extends js.Object {
 object SheetsResource {
   @scala.inline
   def apply(
-    copyTo: js.Function1[
-      gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertoken, 
-      gapiDotClientLib.gapiNs.clientNs.Request[SheetProperties]
-    ]
+    copyTo: gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertoken => gapiDotClientLib.gapiNs.clientNs.Request[SheetProperties]
   ): SheetsResource = {
-    val __obj = js.Dynamic.literal(copyTo = copyTo)
+    val __obj = js.Dynamic.literal(copyTo = js.Any.fromFunction1(copyTo))
   
     __obj.asInstanceOf[SheetsResource]
   }

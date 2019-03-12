@@ -47,20 +47,20 @@ object NamedRange {
     ReferredCells: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange,
     TokenIndex: scala.Double,
     Type: scala.Double,
-    acquire: js.Function0[scala.Unit],
-    getContent: js.Function0[java.lang.String],
-    getName: js.Function0[java.lang.String],
-    getReferencePosition: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress],
-    getReferredCells: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange],
-    getType: js.Function0[scala.Double],
-    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
-    release: js.Function0[scala.Unit],
-    setContent: js.Function1[java.lang.String, scala.Unit],
-    setName: js.Function1[java.lang.String, scala.Unit],
-    setReferencePosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Unit],
-    setType: js.Function1[scala.Double, scala.Unit]
+    acquire: () => scala.Unit,
+    getContent: () => java.lang.String,
+    getName: () => java.lang.String,
+    getReferencePosition: () => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress,
+    getReferredCells: () => activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange,
+    getType: () => scala.Double,
+    queryInterface: activexDashLibreofficeLib.`type` => js.Any,
+    release: () => scala.Unit,
+    setContent: java.lang.String => scala.Unit,
+    setName: java.lang.String => scala.Unit,
+    setReferencePosition: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress => scala.Unit,
+    setType: scala.Double => scala.Unit
   ): NamedRange = {
-    val __obj = js.Dynamic.literal(Content = Content, IsSharedFormula = IsSharedFormula, Name = Name, ReferencePosition = ReferencePosition, ReferredCells = ReferredCells, TokenIndex = TokenIndex, Type = Type, acquire = acquire, getContent = getContent, getName = getName, getReferencePosition = getReferencePosition, getReferredCells = getReferredCells, getType = getType, queryInterface = queryInterface, release = release, setContent = setContent, setName = setName, setReferencePosition = setReferencePosition, setType = setType)
+    val __obj = js.Dynamic.literal(Content = Content, IsSharedFormula = IsSharedFormula, Name = Name, ReferencePosition = ReferencePosition, ReferredCells = ReferredCells, TokenIndex = TokenIndex, Type = Type, acquire = js.Any.fromFunction0(acquire), getContent = js.Any.fromFunction0(getContent), getName = js.Any.fromFunction0(getName), getReferencePosition = js.Any.fromFunction0(getReferencePosition), getReferredCells = js.Any.fromFunction0(getReferredCells), getType = js.Any.fromFunction0(getType), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setContent = js.Any.fromFunction1(setContent), setName = js.Any.fromFunction1(setName), setReferencePosition = js.Any.fromFunction1(setReferencePosition), setType = js.Any.fromFunction1(setType))
   
     __obj.asInstanceOf[NamedRange]
   }

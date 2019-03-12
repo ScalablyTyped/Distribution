@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.ListTemplate")
 @js.native
 class ListTemplate protected () extends js.Object {
-  val Application: Application = js.native
+  val Application: activexDashWordLib.WordNs.Application = js.native
   val Creator: scala.Double = js.native
-  val ListLevels: ListLevels = js.native
+  val ListLevels: activexDashWordLib.WordNs.ListLevels = js.native
   var Name: java.lang.String = js.native
   var OutlineNumbered: scala.Boolean = js.native
   val Parent: js.Any = js.native

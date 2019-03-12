@@ -16,11 +16,11 @@ object FlashContour {
   @scala.inline
   def apply(
     fill: FlashFill,
-    getHalfEdge: js.Function0[FlashHalfEdge],
+    getHalfEdge: () => FlashHalfEdge,
     interior: scala.Boolean,
     orientation: scala.Double
   ): FlashContour = {
-    val __obj = js.Dynamic.literal(fill = fill, getHalfEdge = getHalfEdge, interior = interior, orientation = orientation)
+    val __obj = js.Dynamic.literal(fill = fill, getHalfEdge = js.Any.fromFunction0(getHalfEdge), interior = interior, orientation = orientation)
   
     __obj.asInstanceOf[FlashContour]
   }

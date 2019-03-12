@@ -11,8 +11,8 @@ trait FromableQueryBuilder extends js.Object {
 
 object FromableQueryBuilder {
   @scala.inline
-  def apply(from: js.Function1[java.lang.String, FromableQueryBuilder]): FromableQueryBuilder = {
-    val __obj = js.Dynamic.literal(from = from)
+  def apply(from: java.lang.String => FromableQueryBuilder): FromableQueryBuilder = {
+    val __obj = js.Dynamic.literal(from = js.Any.fromFunction1(from))
   
     __obj.asInstanceOf[FromableQueryBuilder]
   }
